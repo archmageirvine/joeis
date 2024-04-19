@@ -12,11 +12,11 @@ import irvine.oeis.a000.A000796;
 public class A099297 extends AbstractSequence {
 
   private long mK;
-  private Sequence mSeq;
-  private Z mDigit;
+  private final Sequence mSeq;
+  private final Z mDigit;
   private long mCount;
   private long mPow;
-  private long mBase;
+  private final long mBase;
   private long mStart;
 
 

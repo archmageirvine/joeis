@@ -77,7 +77,7 @@ public class A006841 extends Sequence1 {
     for (int d = 1; d <= mN; d++) {
       if (mN % d == 0) {
         final int i = mN / d;
-        final Z t = Z.valueOf(Functions.PHI.l(i)).square().multiply(Z.valueOf(i).pow(d)).multiply(mF.factorial(d));
+        final Z t = Z.valueOf(Functions.PHI.l(i)).square().multiply(Z.valueOf(i).pow(d)).multiply(Functions.FACTORIAL.z(d));
         wk1 = wk1.add(t);
       }
     }
@@ -85,9 +85,9 @@ public class A006841 extends Sequence1 {
 
     // Compute nrCoset [idxNw2], i.e. 180 degrees rotation.
     if (rmd4 == 0 || rmd4 == 2) {
-      nrCoset[idxNw2] = mF.factorial(h + 1).multiply(h).shiftLeft(h);
+      nrCoset[idxNw2] = Functions.FACTORIAL.z(h + 1).multiply(h).shiftLeft(h);
     } else {
-      nrCoset[idxNw2] = Z.TWO.multiply(h).add(Z.ONE).square().multiply(mF.factorial(h)).shiftLeft(h);
+      nrCoset[idxNw2] = Z.TWO.multiply(h).add(Z.ONE).square().multiply(Functions.FACTORIAL.z(h)).shiftLeft(h);
     }
 
     // Compute nrCoset [idxNw],   i.e. 90 degrees rotation (or 270 degrees).
@@ -118,13 +118,13 @@ public class A006841 extends Sequence1 {
     wk1 = Z.ZERO;
     for (int d = 1; d <= mN; d++) {
       if (mN % d == 0) {   // Take only factors of n
-        final Z numerator = mF.factorial(d).multiply(mN).multiply(Functions.PHI.l((long) (mN / d)));
+        final Z numerator = Functions.FACTORIAL.z(d).multiply(mN).multiply(Functions.PHI.l((long) (mN / d)));
         if (((mN / d) & 1) == 1) {
           Z subSum = Z.ZERO;
           for (int l = 0; 2 * l <= d; l++) {
             final Z denominator = Z.valueOf(2L * d).pow(l)
-              .multiply(mF.factorial(l))
-              .multiply(mF.factorial(d - 2 * l));
+              .multiply(Functions.FACTORIAL.z(l))
+              .multiply(Functions.FACTORIAL.z(d - 2 * l));
             final Z wk3 = numerator.multiply(bigN.pow(l));
             final Z[] divisionResult = wk3.divideAndRemainder(denominator);
             if (!divisionResult[1].isZero()) {
@@ -137,7 +137,7 @@ public class A006841 extends Sequence1 {
           if (rmd4 == 0) {
             if (d % 2 == 0) {
               final int h2 = d / 2;
-              final Z denominator = Z.valueOf(2L * d).pow(h2).multiply(mF.factorial(h2));
+              final Z denominator = Z.valueOf(2L * d).pow(h2).multiply(Functions.FACTORIAL.z(h2));
               final Z[] divisionResult = numerator.multiply(bigN.pow(h2)).divideAndRemainder(denominator);
               if (!divisionResult[1].isZero()) {
                 throw new RuntimeException("Error: division results in a mRemainder");
@@ -153,7 +153,7 @@ public class A006841 extends Sequence1 {
     // No nrCoset [idxNw2x],    i.e. reflection plus 180 it is the same as reflection only!
     // Compute nrCoset [idxNwx],   i.e. reflection plus 90 rotation.
     if (rmd4 == 0 || rmd4 == 2) {
-      nrCoset[idxNwx] = mF.factorial(h).multiply(h).shiftLeft(h);
+      nrCoset[idxNwx] = Functions.FACTORIAL.z(h).multiply(h).shiftLeft(h);
     } else {
       nrCoset[idxNwx] = Z.ZERO;
     }

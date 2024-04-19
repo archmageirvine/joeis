@@ -1,6 +1,6 @@
 package irvine.oeis.a180;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
@@ -18,6 +18,6 @@ public class A180397 extends UpperLeftTriangle {
 
   @Override
   public Z matrixElement(final int n, final int k) {
-    return Binomial.binomial(MemoryFactorial.SINGLETON.factorial(k), Z.valueOf(n));
+    return Binomial.binomial(Functions.FACTORIAL.z(k), Z.valueOf(n));
   }
 }

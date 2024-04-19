@@ -9,7 +9,7 @@ import irvine.oeis.memory.MemorySequence;
  */
 public class A051295 extends MemorySequence {
 
-  private int mMult;
+  private final int mMult;
 
   /** Construct the sequence. */
   public A051295() {

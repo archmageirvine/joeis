@@ -1,7 +1,7 @@
 package irvine.oeis.a355;
 // manually andiv 
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -32,6 +32,6 @@ public class A355372 extends AbstractSequence {
       sum = sum.add(new Q(Z.ONE.shiftLeft(k).subtract(1).multiply(mN - k + 2).multiply(mN - k + 1),
         Z.valueOf(2L * k)));
     }
-    return sum.multiply(MemoryFactorial.SINGLETON.factorial(mN)).num();
+    return sum.multiply(Functions.FACTORIAL.z(mN)).num();
   }
 }

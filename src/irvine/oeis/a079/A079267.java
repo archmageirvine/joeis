@@ -1,6 +1,7 @@
 package irvine.oeis.a079;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
@@ -31,9 +32,9 @@ public class A079267 extends MemoryFunction2Sequence<Integer, Z> {
   protected Z compute(final Integer n, final Integer s) {
     Z sum = Z.ZERO;
     for (int h = s; h <= n; ++h) {
-      sum = sum.signedAdd(((h - s) & 1) == 0, mF.factorial(2 * n - h).shiftRight(n - h).divide(mF.factorial(n - h)).divide(mF.factorial(h - s)));
+      sum = sum.signedAdd(((h - s) & 1) == 0, Functions.FACTORIAL.z(2 * n - h).shiftRight(n - h).divide(Functions.FACTORIAL.z(n - h)).divide(Functions.FACTORIAL.z(h - s)));
     }
-    return sum.divide(mF.factorial(s));
+    return sum.divide(Functions.FACTORIAL.z(s));
   }
 
   @Override

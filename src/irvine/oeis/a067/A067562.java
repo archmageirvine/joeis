@@ -2,7 +2,6 @@ package irvine.oeis.a067;
 
 import irvine.factor.factor.PrimeDivision;
 import irvine.factor.util.FactorSequence;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -26,7 +25,7 @@ public class A067562 extends Sequence1 {
         mFactorSequence.add(mN - 1, FactorSequence.UNKNOWN);
         mFactor.factor(mFactorSequence);
       }
-      if (mFactorSequence.phi().mod(MemoryFactorial.SINGLETON.factorial(Functions.PHI.z(mN))).isZero()) {
+      if (mFactorSequence.phi().mod(Functions.FACTORIAL.z(Functions.PHI.z(mN))).isZero()) {
         return Z.valueOf(mN);
       }
     }

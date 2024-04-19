@@ -10,8 +10,8 @@ import irvine.oeis.Sequence0;
 public class A033962 extends Sequence0 {
 
   private Z mA;
-  private Z mStart;
-  private Z mFactor;
+  private final Z mStart;
+  private final Z mFactor;
 
   /** 
    * Empty constructor

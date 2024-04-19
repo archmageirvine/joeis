@@ -17,7 +17,6 @@ public class A093211 extends AbstractSequence {
   protected Z mDivz;
   protected Z mLast;
   protected long mN;
-  private static int sDebug = 0;
 
   /** Construct the sequence. */
   public A093211() {

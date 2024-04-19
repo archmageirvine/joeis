@@ -1,6 +1,7 @@
 package irvine.oeis.a048;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
@@ -22,6 +23,6 @@ public class A048743 extends Sequence1 {
       ++mN;
       mM = 1;
     }
-    return mF.factorial(mM).multiply(Binomial.binomial(mN - 1, mM - 1)).multiply(Stirling.secondKind(mN, mM));
+    return Functions.FACTORIAL.z(mM).multiply(Binomial.binomial(mN - 1, mM - 1)).multiply(Stirling.secondKind(mN, mM));
   }
 }

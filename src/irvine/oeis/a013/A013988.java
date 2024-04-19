@@ -1,6 +1,7 @@
 package irvine.oeis.a013;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a049.A049224;
 
@@ -20,6 +21,6 @@ public class A013988 extends A049224 {
       ++mN;
       mM = 1;
     }
-    return get((long) mN, (long) mM).multiply(mF.factorial(mN).divide(mF.factorial(mM))).divide(Z.SIX.pow(mN - mM));
+    return get((long) mN, (long) mM).multiply(Functions.FACTORIAL.z(mN).divide(Functions.FACTORIAL.z(mM))).divide(Z.SIX.pow(mN - mM));
   }
 }

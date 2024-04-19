@@ -11,7 +11,7 @@ import irvine.oeis.Sequence0;
  */
 public class A013636 extends Sequence0 {
 
-  private Prime mPrime = new Fast();
+  private final Prime mPrime = new Fast();
   private long mN = -1;
 
   @Override

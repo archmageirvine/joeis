@@ -20,7 +20,7 @@ public class A002887 extends Sequence1 implements GraphProcessor {
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 0;
   protected int mM = 0;
-  private DynamicIntArray mFirstCuttingCenter = new DynamicIntArray();
+  private final DynamicIntArray mFirstCuttingCenter = new DynamicIntArray();
   protected DynamicIntArray mFirstCuttingNumber = new DynamicIntArray();
 
   private int[] cuttingCenter(final Graph graph) {

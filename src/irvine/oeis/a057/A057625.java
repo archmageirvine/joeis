@@ -1,7 +1,7 @@
 package irvine.oeis.a057;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -18,8 +18,8 @@ public class A057625 extends Sequence1 {
   public Z next() {
     Q sum = Q.ZERO;
     for (final Z d : Jaguar.factor(++mN).divisors()) {
-      sum = sum.add(new Q(Z.ONE, MemoryFactorial.SINGLETON.factorial(d.intValue())));
+      sum = sum.add(new Q(Z.ONE, Functions.FACTORIAL.z(d.intValue())));
     }
-    return sum.multiply(MemoryFactorial.SINGLETON.factorial(mN)).toZ();
+    return sum.multiply(Functions.FACTORIAL.z(mN)).toZ();
   }
 }

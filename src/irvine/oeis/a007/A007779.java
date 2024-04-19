@@ -1,6 +1,7 @@
 package irvine.oeis.a007;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -32,7 +33,7 @@ public class A007779 extends Sequence0 {
     Polynomial<Q> v = RING.one();
     Polynomial<Q> sum = RING.zero();
     for (int k = 0; k <= mN; ++k) {
-      sum = RING.add(sum, RING.multiply(v, new Q(euler.next(), mF.factorial(k))));
+      sum = RING.add(sum, RING.multiply(v, new Q(euler.next(), Functions.FACTORIAL.z(k))));
       v = RING.multiply(v, log, mN);
     }
     return RING.multiply(m, sum, mN).coeff(mN).toZ();

@@ -3,6 +3,7 @@ package irvine.oeis.a007;
 import java.io.Serializable;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
@@ -22,7 +23,7 @@ public class A007151 extends Sequence1 implements Serializable {
     Q sum = Q.ZERO;
     for (int m = 0; m <= j; ++m) {
       final Q t = new Q(Stirling.secondKind(n - m + j - i - 1, j - m).shiftLeft(m),
-        mF.factorial(m).multiply(mF.factorial(n - m + j - i - 1)));
+        Functions.FACTORIAL.z(m).multiply(Functions.FACTORIAL.z(n - m + j - i - 1)));
       sum = sum.signedAdd(((m + i) & 1) == 0, t);
     }
     return sum;
@@ -44,9 +45,9 @@ public class A007151 extends Sequence1 implements Serializable {
     Z sum = Z.ZERO;
     for (int k = 1; k < mN; ++k) {
       Q t = Q.ZERO;
-      final Z s = mF.factorial(mN + k - 1);
+      final Z s = Functions.FACTORIAL.z(mN + k - 1);
       for (int j = 1; j <= k; ++j) {
-        t = t.add(sum2(mN, j).divide(mF.factorial(k - j)));
+        t = t.add(sum2(mN, j).divide(Functions.FACTORIAL.z(k - j)));
       }
       sum = sum.add(t.multiply(s).toZ());
     }

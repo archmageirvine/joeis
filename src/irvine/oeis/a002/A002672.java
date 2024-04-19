@@ -1,6 +1,7 @@
 package irvine.oeis.a002;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
@@ -44,7 +45,7 @@ public class A002672 extends MemoryFunction2Sequence<Integer, Q> {
   }
 
   protected Q bigM(final int k, final int q) {
-    return get(k, q).multiply(mF.factorial(k)).divide(mF.factorial(q));
+    return get(k, q).multiply(Functions.FACTORIAL.z(k)).divide(Functions.FACTORIAL.z(q));
   }
 
   private int mN = 1;

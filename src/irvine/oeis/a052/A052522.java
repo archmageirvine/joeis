@@ -1,6 +1,7 @@
 package irvine.oeis.a052;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
@@ -25,11 +26,11 @@ public class A052522 extends Sequence0 {
         for (int l = 0; l <= j; ++l) {
           Z u = Z.ZERO;
           for (int i = 0; i <= l; ++i) {
-            u = u.signedAdd(((i + mN + l - 1) & 1) == 0, mF.factorial(mN + k - 1).multiply(Binomial.binomial(l, i)).multiply(Stirling.firstKind(mN + j - i - l - 1, j - l)).shiftLeft(l - 2L * i).divide(mF.factorial(mN + j - i - l - 1)));
+            u = u.signedAdd(((i + mN + l - 1) & 1) == 0, Functions.FACTORIAL.z(mN + k - 1).multiply(Binomial.binomial(l, i)).multiply(Stirling.firstKind(mN + j - i - l - 1, j - l)).shiftLeft(l - 2L * i).divide(Functions.FACTORIAL.z(mN + j - i - l - 1)));
           }
-          t = t.add(u.divide(mF.factorial(l)));
+          t = t.add(u.divide(Functions.FACTORIAL.z(l)));
         }
-        sum = sum.add(t.divide(mF.factorial(k - j)));
+        sum = sum.add(t.divide(Functions.FACTORIAL.z(k - j)));
       }
     }
     return sum;

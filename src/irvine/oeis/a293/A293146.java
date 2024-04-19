@@ -1,7 +1,7 @@
 package irvine.oeis.a293;
 // manually hygeom at 2022-08-06 15:16
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
@@ -19,10 +19,12 @@ public class A293146 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return mN == 0 ? Z.ONE : Integers.SINGLETON.sum(1, mN, k -> Z.valueOf(mN).pow(mN - k)
-      .multiply(MemoryFactorial.SINGLETON.factorial(mN))
-      .divide(MemoryFactorial.SINGLETON.factorial(k))
-      .multiply(Binomial.binomial(mN - 1, k - 1))
+    return mN == 0 ? Z.ONE : Integers.SINGLETON.sum(1, mN, k -> {
+      return Z.valueOf(mN).pow(mN - k)
+          .multiply(Functions.FACTORIAL.z(mN))
+          .divide(Functions.FACTORIAL.z(k))
+          .multiply(Binomial.binomial(mN - 1, k - 1));
+      }
     );
   }
 }

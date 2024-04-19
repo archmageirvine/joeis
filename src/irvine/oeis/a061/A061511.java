@@ -10,8 +10,8 @@ import irvine.oeis.Sequence0;
 public class A061511 extends Sequence0 {
 
   private Z mA0;
-  private int mIncr;
-  private StringBuilder mSb;
+  private final int mIncr;
+  private final StringBuilder mSb;
 
   /** Construct the sequence. */
   public A061511() {
@@ -36,7 +36,7 @@ public class A061511 extends Sequence0 {
     final String sa = mA0.toString();
     final int sal = sa.length();
     for (int pos = 0; pos < sal; ++pos) {
-      mSb.append(String.valueOf(sa.charAt(pos) - '0' + mIncr));
+      mSb.append(sa.charAt(pos) - '0' + mIncr);
     }
     mA0 = new Z(mSb.toString());
     return result;

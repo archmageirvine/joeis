@@ -100,11 +100,11 @@ public class A003442 extends AbstractSequence {
         final int start = (Math.max(3, sumA) + dp - 1) / dp;
         for (int m = start; m <= n; ++m) {
           if (sumA <= m) {
-            Q c = new Q(mF.factorial(m - 1).multiply(Functions.PHI.l((long) dp)), mF.factorial(m - sumA).multiply(dp));
+            Q c = new Q(Functions.FACTORIAL.z(m - 1).multiply(Functions.PHI.l((long) dp)), Functions.FACTORIAL.z(m - sumA).multiply(dp));
             Polynomial<Q> v = RING.one();
             for (int i = 1; i < a.length; ++i) {
               if (a[i] > 0) {
-                c = c.divide(mF.factorial(a[i]));
+                c = c.divide(Functions.FACTORIAL.z(a[i]));
                 v = RING.multiply(v, power(mV.get(i, n), a[i], n).substitutePower(dp, n));
               }
             }

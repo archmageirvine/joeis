@@ -13,8 +13,8 @@ public class A007693 extends Sequence1 {
   private final Fast mPrime = new Fast();
   private Z mP = Z.ONE;
 
-  private long mMul;
-  private long mAdd;
+  private final long mMul;
+  private final long mAdd;
 
   /** Construct the sequence. */
   public A007693() {

@@ -1,6 +1,7 @@
 package irvine.oeis.a067;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -22,7 +23,7 @@ public class A067147 extends Sequence0 {
     }
     return ((mN - mM) & 1) == 1
       ? Z.ZERO
-      : F.factorial(mN).divide(F.factorial(mM)).divide(F.factorial((mN - mM) / 2));
+      : Functions.FACTORIAL.z(mN).divide(Functions.FACTORIAL.z(mM)).divide(Functions.FACTORIAL.z((mN - mM) / 2));
   }
 }
 

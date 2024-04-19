@@ -1,6 +1,7 @@
 package irvine.oeis.a000;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -32,7 +33,7 @@ public class A000670 extends AbstractSequence {
     ++mN;
     Z s = Z.ZERO;
     for (int k = 0; k <= mN; ++k) {
-      s = s.add(mF.factorial(k).multiply(Stirling.secondKind(mN, k)));
+      s = s.add(Functions.FACTORIAL.z(k).multiply(Stirling.secondKind(mN, k)));
     }
     return s;
   }

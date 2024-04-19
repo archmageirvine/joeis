@@ -1,6 +1,7 @@
 package irvine.oeis.a052;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 
@@ -22,12 +23,12 @@ public class A052318 extends A052316 {
       final int e = (mN + k) / 2 - 2;
       final Q s;
       if (e >= 0) {
-        s = new Q(Z.valueOf(k).pow(e), mF.factorial(t));
+        s = new Q(Z.valueOf(k).pow(e), Functions.FACTORIAL.z(t));
       } else {
-        s = new Q(Z.ONE, Z.valueOf(k).pow(-e).multiply(mF.factorial(t)));
+        s = new Q(Z.ONE, Z.valueOf(k).pow(-e).multiply(Functions.FACTORIAL.z(t)));
       }
-      sum = sum.signedAdd((t & 1) == 0, s.divide(mF.factorial(k - 1)));
+      sum = sum.signedAdd((t & 1) == 0, s.divide(Functions.FACTORIAL.z(k - 1)));
     }
-    return sum.multiply(mF.factorial(mN)).toZ();
+    return sum.multiply(Functions.FACTORIAL.z(mN)).toZ();
   }
 }

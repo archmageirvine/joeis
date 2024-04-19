@@ -29,7 +29,7 @@ public class A004307 extends AbstractSequence {
       Y.add(RING.multiply(Y.get(k - 1), y));
     }
   }
-  private ArrayList<Polynomial<Z>> mHitPolynomials = new ArrayList<>();
+  private final ArrayList<Polynomial<Z>> mHitPolynomials = new ArrayList<>();
   {
     mHitPolynomials.add(RING.zero());
     mHitPolynomials.add(RING.zero());

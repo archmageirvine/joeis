@@ -13,7 +13,7 @@ import irvine.oeis.Sequence1;
 public class A258774 extends Sequence1 {
 
   private int mN;
-  private Function<Z, Z> mLambda;
+  private final Function<Z, Z> mLambda;
 
   /** Construct the sequence. */
   public A258774() {

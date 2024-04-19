@@ -2,7 +2,7 @@ package irvine.math.polynomial;
 
 import java.util.Map;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.util.Pair;
 
@@ -34,7 +34,7 @@ public final class RedfieldMultiply implements MultivariateMonomialOperation {
         //final Z ik = a.getValue(); // same as jk
         final int jk = j.intValueExact();
         res.add(k, jk);
-        res.multiply(MemoryFactorial.SINGLETON.factorial(jk).multiply(Z.valueOf(k).pow(jk)));
+        res.multiply(Functions.FACTORIAL.z(jk).multiply(Z.valueOf(k).pow(jk)));
       }
     }
     res.multiply(alpha.getCoefficient().multiply(beta.getCoefficient()));

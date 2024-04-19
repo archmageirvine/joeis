@@ -15,7 +15,7 @@ public class A004143 extends Sequence1 {
   private int mN = 0;
   private int mM1 = 0;
 
-  private ArrayList<Z> mPrimePowers = new ArrayList<>();
+  private final ArrayList<Z> mPrimePowers = new ArrayList<>();
 
   @Override
   public Z next() {

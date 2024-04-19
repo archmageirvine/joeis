@@ -14,7 +14,7 @@ public class A248365 extends LambdaSequence {
   public A248365() {
     super(1, n -> {
       final Z v = Z.valueOf(4 * n);
-      return new Z(v.toString() + v.toString());
+      return new Z(v.toString() + v);
     });
   }
 }

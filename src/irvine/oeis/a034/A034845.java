@@ -13,7 +13,7 @@ import irvine.util.string.StringUtils;
 public class A034845 extends Sequence1 {
 
   private static final char[] SUFFIX = {'1', '3', '7', '9'};
-  private TreeSet<Z> mA = new TreeSet<>();
+  private final TreeSet<Z> mA = new TreeSet<>();
   private int mLength = 1;
 
   @Override

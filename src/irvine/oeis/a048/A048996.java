@@ -5,6 +5,7 @@ import java.util.TreeSet;
 
 import irvine.math.Comparators;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -51,9 +52,9 @@ public class A048996 extends AbstractSequence {
     Z sum = Z.ZERO;
     for (final int c : mC) {
       sum = sum.add(c);
-      prod = prod.multiply(mF.factorial(c));
+      prod = prod.multiply(Functions.FACTORIAL.z(c));
     }
-    return mF.factorial(sum).divide(prod);
+    return Functions.FACTORIAL.z(sum).divide(prod);
   }
 }
 

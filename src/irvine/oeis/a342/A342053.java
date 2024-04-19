@@ -3,7 +3,6 @@ package irvine.oeis.a342;
 import java.util.Arrays;
 import java.util.function.BiFunction;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.IntegerField;
@@ -62,7 +61,6 @@ public class A342053 extends AbstractSequence {
 
   private static final PolynomialRingField<Z> INNER = new PolynomialRingField<>("y", IntegerField.SINGLETON);
   static final PolynomialRingField<Polynomial<Z>> RING = new PolynomialRingField<>(INNER);
-  private static final MemoryFactorial F = MemoryFactorial.SINGLETON;
   private static final Polynomial<Polynomial<Z>> X3 = RING.monomial(INNER.one(), 3);
   private static final Polynomial<Z> NEG_ONE = INNER.negate(INNER.one());
   private static final Polynomial<Z> TWO = INNER.monomial(Z.TWO, 0);
@@ -75,22 +73,22 @@ public class A342053 extends AbstractSequence {
   // Rooted disk triangulations
 
   // A146305: Biconnected with n internal nodes and m+3 external nodes.
-  final BiFunction<Integer, Integer, Z> mD = (n, m) -> F.factorial(2 * m + 3).multiply(F.factorial(4 * n + 2 * m + 1)).multiply2()
-    .divide(F.factorial(m).multiply(F.factorial(m + 2)).multiply(F.factorial(n)).multiply(F.factorial(3 * n + 2 * m + 3)));
+  final BiFunction<Integer, Integer, Z> mD = (n, m) -> Functions.FACTORIAL.z(2 * m + 3).multiply(Functions.FACTORIAL.z(4 * n + 2 * m + 1)).multiply2()
+    .divide(Functions.FACTORIAL.z(m).multiply(Functions.FACTORIAL.z(m + 2)).multiply(Functions.FACTORIAL.z(n)).multiply(Functions.FACTORIAL.z(3 * n + 2 * m + 3)));
 
   // A341856: 3-connected
   final BiFunction<Integer, Integer, Z> mW = (n, m) -> m == 0
-    ? F.factorial(4 * n + 1).multiply2().divide(F.factorial(3 * n + 2).multiply(F.factorial(n + 1)))
-    : F.factorial(m + 2).multiply(F.factorial(m - 1).multiply(3))
-    .multiply(Integers.SINGLETON.sum(0, Math.min(m, n - 1), j -> F.factorial(4 * n + 3 * m - j + 1).multiply(m + j + 2).multiply(m - 3L * j).divide(F.factorial(j).multiply(F.factorial(j + 1)).multiply(F.factorial(m - j)).multiply(F.factorial(m - j + 2)).multiply(F.factorial(n - j - 1))))).divide(F.factorial(3 * n + 3 * m + 3));
+    ? Functions.FACTORIAL.z(4 * n + 1).multiply2().divide(Functions.FACTORIAL.z(3 * n + 2).multiply(Functions.FACTORIAL.z(n + 1)))
+    : Functions.FACTORIAL.z(m + 2).multiply(Functions.FACTORIAL.z(m - 1).multiply(3))
+    .multiply(Integers.SINGLETON.sum(0, Math.min(m, n - 1), j -> Functions.FACTORIAL.z(4 * n + 3 * m - j + 1).multiply(m + j + 2).multiply(m - 3L * j).divide(Functions.FACTORIAL.z(j).multiply(Functions.FACTORIAL.z(j + 1)).multiply(Functions.FACTORIAL.z(m - j)).multiply(Functions.FACTORIAL.z(m - j + 2)).multiply(Functions.FACTORIAL.z(n - j - 1))))).divide(Functions.FACTORIAL.z(3 * n + 3 * m + 3));
 
   // Triangulations with Rotational Symmetry
-  final BiFunction<Integer, Integer, Z> mEr = (s, p) -> F.factorial(2 * p + 2).multiply(F.factorial(4 * s + 2 * p + 1))
-    .divide(F.factorial(p).multiply(F.factorial(p + 1)).multiply(F.factorial(s)).multiply(F.factorial(3 * s + 2 * p + 2)));
+  final BiFunction<Integer, Integer, Z> mEr = (s, p) -> Functions.FACTORIAL.z(2 * p + 2).multiply(Functions.FACTORIAL.z(4 * s + 2 * p + 1))
+    .divide(Functions.FACTORIAL.z(p).multiply(Functions.FACTORIAL.z(p + 1)).multiply(Functions.FACTORIAL.z(s)).multiply(Functions.FACTORIAL.z(3 * s + 2 * p + 2)));
 
   // E3(s,p)={(2*p+1)!*(4*s+2*p)!/(p!*p!*s!*(3*s+2*p+1)!)}
-  final BiFunction<Integer, Integer, Z> mE3 = (s, p) -> F.factorial(2 * p + 1).multiply(F.factorial(4 * s + 2 * p))
-    .divide(F.factorial(p).square().multiply(F.factorial(s)).multiply(F.factorial(3 * s + 2 * p + 1)));
+  final BiFunction<Integer, Integer, Z> mE3 = (s, p) -> Functions.FACTORIAL.z(2 * p + 1).multiply(Functions.FACTORIAL.z(4 * s + 2 * p))
+    .divide(Functions.FACTORIAL.z(p).square().multiply(Functions.FACTORIAL.z(s)).multiply(Functions.FACTORIAL.z(3 * s + 2 * p + 1)));
 
   @FunctionalInterface
   interface TriFunction<A, B, C, R> {
@@ -98,8 +96,8 @@ public class A342053 extends AbstractSequence {
   }
 
   // E2(s,j,p)=2*(2*p)!*(4*s+2*p+2*j-1)!/(p!*(p-1)!*s!*(3*s+2*p+2*j)!)
-  final TriFunction<Integer, Integer, Integer, Z> mE2 = (s, j, p) -> F.factorial(2 * p).multiply(F.factorial(4 * s + 2 * p + 2 * j - 1)).multiply2()
-    .divide(F.factorial(p).multiply(F.factorial(p - 1)).multiply(F.factorial(s)).multiply(F.factorial(3 * s + 2 * p + 2 * j)));
+  final TriFunction<Integer, Integer, Integer, Z> mE2 = (s, j, p) -> Functions.FACTORIAL.z(2 * p).multiply(Functions.FACTORIAL.z(4 * s + 2 * p + 2 * j - 1)).multiply2()
+    .divide(Functions.FACTORIAL.z(p).multiply(Functions.FACTORIAL.z(p - 1)).multiply(Functions.FACTORIAL.z(s)).multiply(Functions.FACTORIAL.z(3 * s + 2 * p + 2 * j)));
 
 // // Oriented triangulations.
 // // See 6.3 in Brown.

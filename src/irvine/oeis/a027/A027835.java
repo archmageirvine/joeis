@@ -31,7 +31,7 @@ public class A027835 extends A027834 {
           s = s.signedAdd(mu == 1, Z.valueOf(d2).pow((r - 1) * (long) m + 1));
         }
       }
-      sum = sum.add(s.multiply(mS.get(r, m)).divide(mF.factorial(m - 1)));
+      sum = sum.add(s.multiply(mS.get(r, m)).divide(Functions.FACTORIAL.z(m - 1)));
     }
     return sum.divide(mN);
   }

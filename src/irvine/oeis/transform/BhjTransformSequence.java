@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -35,20 +36,20 @@ public class BhjTransformSequence extends Sequence1 {
       IntegerPartition.toCountForm(p, q);
       int odd = 0;
       Z d = Z.ONE;
-      Z t1 = FACTORIAL.factorial(p.length);
-      Z t2 = FACTORIAL.factorial(p.length / 2);
+      Z t1 = Functions.FACTORIAL.z(p.length);
+      Z t2 = Functions.FACTORIAL.z(p.length / 2);
       for (int i = 1; i < q.length; ++i) {
         if (q[i] != 0) {
           if ((q[i] & 1) == 1) {
             ++odd;
           }
-          t1 = t1.multiply(a.get(i - 1).pow(q[i])).divide(FACTORIAL.factorial(q[i]));
-          t2 = t2.multiply(a.get(i - 1).pow((q[i] + 1) / 2)).divide(FACTORIAL.factorial(q[i] / 2));
-          d = d.multiply(FACTORIAL.factorial(i).pow(q[i]));
+          t1 = t1.multiply(a.get(i - 1).pow(q[i])).divide(Functions.FACTORIAL.z(q[i]));
+          t2 = t2.multiply(a.get(i - 1).pow((q[i] + 1) / 2)).divide(Functions.FACTORIAL.z(q[i] / 2));
+          d = d.multiply(Functions.FACTORIAL.z(i).pow(q[i]));
         }
       }
       final Z t3 = odd > 1 ? t1 : t1.subtract(t2);
-      final Z t = t3.multiply(FACTORIAL.factorial(n)).divide(d);
+      final Z t = t3.multiply(Functions.FACTORIAL.z(n)).divide(d);
       //System.out.println(n + " " + Arrays.toString(p) + " " + Arrays.toString(q) + " k=" + p.length + " t=" + t + " t3=" + t3+ " t1=" + t1 + " t2=" + t2 + " #odd=" + odd);
       sum = sum.add(t);
     }

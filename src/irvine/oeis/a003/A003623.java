@@ -10,7 +10,7 @@ import irvine.oeis.a001.A001950;
  */
 public class A003623 extends A000201 {
 
-  private A001950 mB = new A001950();
+  private final A001950 mB = new A001950();
 
   @Override
   public Z next() {

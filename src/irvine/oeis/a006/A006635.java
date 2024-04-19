@@ -14,7 +14,7 @@ import irvine.oeis.a002.A002293;
 public class A006635 extends A002293 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
-  private ArrayList<Z> mA = new ArrayList<>();
+  private final ArrayList<Z> mA = new ArrayList<>();
   private int mN = -1;
 
   @Override

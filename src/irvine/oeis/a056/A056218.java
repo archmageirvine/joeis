@@ -2,7 +2,7 @@ package irvine.oeis.a056;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -17,10 +17,10 @@ public class A056218 extends Sequence0 {
   @Override
   public Z next() {
     final FactorSequence fs = Jaguar.factor(++mN);
-    Z res = MemoryFactorial.SINGLETON.factorial(mN);
+    Z res = Functions.FACTORIAL.z(mN);
     for (final Z p : fs.toZArray()) {
       final int e = fs.getExponent(p);
-      res = res.divide(MemoryFactorial.SINGLETON.factorial(p).pow(e));
+      res = res.divide(Functions.FACTORIAL.z(p).pow(e));
     }
     return res;
   }

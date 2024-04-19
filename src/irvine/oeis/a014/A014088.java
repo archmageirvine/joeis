@@ -2,6 +2,7 @@ package irvine.oeis.a014;
 
 import irvine.math.MemoryFunctionInt3;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.a050.A050255;
@@ -22,7 +23,7 @@ public class A014088 extends A050255 {
     @Override
     protected Q compute(final int k, final int n, final int d) {
       if (k == 1) {
-        return new Q(mF.factorial(d), mF.factorial(d - n).multiply(Z.valueOf(d).pow(n)));
+        return new Q(Functions.FACTORIAL.z(d), Functions.FACTORIAL.z(d - n).multiply(Z.valueOf(d).pow(n)));
       }
       Q sum = Q.ZERO;
       for (int i = 1; i < n / k; ++i) {
@@ -32,10 +33,10 @@ public class A014088 extends A050255 {
         }
         s = s.multiply(Z.valueOf(d - i).pow(n - (long) i * k))
           .divide(Z.valueOf(d).pow(n - i * (long) k))
-          .divide(mF.factorial(i).multiply(Z.valueOf(d).pow(i * (long) k).multiply(mF.factorial(k).pow(i)).multiply(mF.factorial(n - i * k)).multiply(mF.factorial(d - i))));
+          .divide(Functions.FACTORIAL.z(i).multiply(Z.valueOf(d).pow(i * (long) k).multiply(Functions.FACTORIAL.z(k).pow(i)).multiply(Functions.FACTORIAL.z(n - i * k)).multiply(Functions.FACTORIAL.z(d - i))));
         sum = sum.add(s);
       }
-      return sum.multiply(mF.factorial(n).multiply(mF.factorial(d)));
+      return sum.multiply(Functions.FACTORIAL.z(n).multiply(Functions.FACTORIAL.z(d)));
     }
 
     private Q p(final int k, final Z n, final int d) {

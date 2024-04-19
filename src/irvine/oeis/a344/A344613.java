@@ -14,7 +14,7 @@ import irvine.oeis.a085.A085748;
 public class A344613 extends A001190 {
 
   private int mN;
-  private Sequence mA085748;
+  private final Sequence mA085748;
   
   /** Construct the sequence. */
   public A344613() {

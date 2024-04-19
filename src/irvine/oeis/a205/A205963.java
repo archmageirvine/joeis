@@ -11,9 +11,9 @@ import irvine.oeis.a000.A000118;
  */
 public class A205963 extends A000045 {
 
-  private Sequence mSeq;
+  private final Sequence mSeq;
   private int mN;
-  private int mOfs;
+  private final int mOfs;
 
   /** Construct the sequence. */
   public A205963() {

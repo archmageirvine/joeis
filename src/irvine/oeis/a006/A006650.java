@@ -12,7 +12,7 @@ import irvine.oeis.a048.A048180;
 public class A006650 extends A048179 {
 
   private boolean mFirst = true;
-  private Sequence mA = new A048180();
+  private final Sequence mA = new A048180();
 
   @Override
   public Z next() {

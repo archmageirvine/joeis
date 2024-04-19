@@ -1,7 +1,7 @@
 package irvine.oeis.a144;
 
 import irvine.math.MemoryFunctionInt3;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -13,7 +13,7 @@ import irvine.oeis.Sequence0;
 public class A144416 extends Sequence0 {
 
   private int mN;
-  private int mParm;
+  private final int mParm;
 
   /** Construct the sequence. */
   public A144416() {
@@ -56,7 +56,7 @@ public class A144416 extends Sequence0 {
         for (int l = 1; l <= j; ++l) {
           list[l] = i;
         }
-        sum = sum.add(get(n - i * j, i - 1, t - j).multiply(Binomial.multinomial(n, list)).divide(MemoryFactorial.SINGLETON.factorial(j)));
+        sum = sum.add(get(n - i * j, i - 1, t - j).multiply(Binomial.multinomial(n, list)).divide(Functions.FACTORIAL.z(j)));
       }
       return sum;
     }

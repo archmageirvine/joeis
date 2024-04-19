@@ -14,8 +14,8 @@ public class A034415 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -1;
-  private Polynomial<Z> mF = RING.pow(Polynomial.create(1, 14, 1), 3);
-  private Polynomial<Z> mG = RING.pow(RING.oneMinusXToTheN(1), 4).shift(1);
+  private final Polynomial<Z> mF = RING.pow(Polynomial.create(1, 14, 1), 3);
+  private final Polynomial<Z> mG = RING.pow(RING.oneMinusXToTheN(1), 4).shift(1);
 
   @Override
   public Z next() {

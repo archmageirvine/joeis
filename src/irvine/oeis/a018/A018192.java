@@ -28,11 +28,11 @@ public class A018192 extends A081054 {
         if (i > 0) {
           zc = zc.multiply(c);
         }
-        sum = sum.add(Binomial.binomial(d, 2L * i).multiply(zc).multiply(mF.doubleFactorial(2 * i - 1)));
+        sum = sum.add(Binomial.binomial(d, 2L * i).multiply(zc).multiply(Functions.MULTIFACTORIAL.z(2 * i - 1)));
       }
       return sum;
     } else if ((d & 1) == 0) {
-      return Z.valueOf(c).pow(d / 2).multiply(mF.doubleFactorial(d - 1));
+      return Z.valueOf(c).pow(d / 2).multiply(Functions.MULTIFACTORIAL.z(d - 1));
     } else {
       return Z.ZERO;
     }
@@ -84,7 +84,7 @@ public class A018192 extends A081054 {
   }
 
   protected Z lambda(final int n) {
-    return mF.doubleFactorial(2 * n - 1);
+    return Functions.MULTIFACTORIAL.z(2 * n - 1);
   }
 
   private Z psi(final int n) {

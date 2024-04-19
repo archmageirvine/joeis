@@ -1,6 +1,7 @@
 package irvine.oeis.a000;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
@@ -20,7 +21,7 @@ public class A000557 extends Sequence0 {
     ++mN;
     Z s = Z.ZERO;
     for (int k = 0; k <= mN; ++k) {
-      s = s.add(mF.factorial(k)
+      s = s.add(Functions.FACTORIAL.z(k)
                 .multiply(Fibonacci.fibonacci(k + 2))
                 .multiply(Stirling.secondKind(mN, k)));
     }

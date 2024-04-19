@@ -9,7 +9,7 @@ import irvine.oeis.a008.A008300;
  */
 public class A058528 extends A008300 {
 
-  private int mCol;
+  private final int mCol;
   private int mN;
 
   /** Construct the sequence. */

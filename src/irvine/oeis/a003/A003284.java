@@ -43,7 +43,7 @@ public class A003284 extends Sequence0 {
     }
   }
 
-  private B003284 mSeq = new B003284(b0(), b1());
+  private final B003284 mSeq = new B003284(b0(), b1());
 
   protected Q b0() {
     return Q.ONE;

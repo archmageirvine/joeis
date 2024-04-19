@@ -15,6 +15,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.api.Group;
 import irvine.math.api.Set;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.set.FiniteSet;
 import irvine.math.set.IntegerSet;
@@ -486,8 +487,8 @@ public class SymmetricGroupTest extends TestCase {
       final SymmetricGroup<Integer> h = SymmetricGroup.create(k);
       for (int j = 0; j <= k; ++j) {
         final Set<Integer> s = j == 0 ? new FiniteSet<>() : new IntegerSet(1, j);
-        assertEquals(fact.factorial(k - j), h.elementwiseSubgroup(s).size());
-        assertEquals(fact.factorial(k - j).multiply(fact.factorial(j)), h.invariantSubgroup(s).size());
+        assertEquals(Functions.FACTORIAL.z(k - j), h.elementwiseSubgroup(s).size());
+        assertEquals(Functions.FACTORIAL.z(k - j).multiply(Functions.FACTORIAL.z(j)), h.invariantSubgroup(s).size());
       }
     }
   }

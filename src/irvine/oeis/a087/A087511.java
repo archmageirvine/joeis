@@ -13,9 +13,9 @@ import irvine.oeis.a031.A031443;
 public class A087511 extends AbstractSequence {
 
   private final A031443 mSeq = new A031443();
-  private char mD1; // first digit
-  private char mD2; // second, higher digit
-  private TreeSet<Z> mPrimes; // sorted queue for primes
+  private final char mD1; // first digit
+  private final char mD2; // second, higher digit
+  private final TreeSet<Z> mPrimes; // sorted queue for primes
   private String mPaired; // result of mSeq.next() with replacements '0' -> 'a', '1' -> 'b'
   private int mWidth; // number of digits in mPaired
 

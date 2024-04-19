@@ -3,6 +3,7 @@ package irvine.oeis.a131;
 import java.util.HashMap;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -51,7 +52,7 @@ public class A131235 extends Sequence0 {
         RING_X.sqrt1m(XY, n), n);
       mGf.put(n, gf);
     }
-    return gf.coeff(n).coeff(m).multiply(mF.factorial(m)).multiply(mF.factorial(n)).toZ();
+    return gf.coeff(n).coeff(m).multiply(Functions.FACTORIAL.z(m)).multiply(Functions.FACTORIAL.z(n)).toZ();
   }
 
   @Override

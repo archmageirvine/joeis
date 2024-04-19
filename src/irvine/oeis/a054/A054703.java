@@ -12,7 +12,7 @@ import irvine.oeis.Sequence1;
 public class A054703 extends Sequence1 {
 
   private int mN = 0;
-  private int mBase;
+  private final int mBase;
 
   /** Construct the sequence. */
   public A054703() {

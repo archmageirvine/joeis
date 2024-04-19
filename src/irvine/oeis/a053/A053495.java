@@ -1,7 +1,7 @@
 package irvine.oeis.a053;
 // manually at 2023-07-13
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
@@ -23,8 +23,8 @@ public class A053495 extends BaseTriangle {
     return (r == 0)
       ? Z.ONE
       : Binomial.binomial((r + c) / 2, (r - c) / 2)
-        .multiply(MemoryFactorial.SINGLETON.factorial((r + c + 1) / 2))
-        .divide(MemoryFactorial.SINGLETON.factorial((r - c + 1) / 2))
+        .multiply(Functions.FACTORIAL.z((r + c + 1) / 2))
+        .divide(Functions.FACTORIAL.z((r - c + 1) / 2))
         .multiply((((r + c + 1) & 1) == 0) ? 1 : -1);
   }
 }

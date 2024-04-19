@@ -1,7 +1,7 @@
 package irvine.oeis.a261;
 
 import irvine.math.MemoryFunctionInt4;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
@@ -34,7 +34,7 @@ public class A261835 extends UpperLeftTriangle {
         return Z.ZERO;
       }
       if (n == 0) {
-        return MemoryFactorial.SINGLETON.factorial(p);
+        return Functions.FACTORIAL.z(p);
       }
       Z sum = get(n, i - 1, p, k);
       if (i <= n) {

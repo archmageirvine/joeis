@@ -16,6 +16,6 @@ public class A110414 extends Sequence1 {
   public Z next() {
     ++mN;
     mF = mF.multiply(mN);
-    return new Z(mF.toString() + String.valueOf(mN)).divide(mN);
+    return new Z(mF.toString() + mN).divide(mN);
   }
 }

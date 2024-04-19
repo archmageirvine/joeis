@@ -1,6 +1,7 @@
 package irvine.oeis.a001;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
@@ -27,7 +28,7 @@ public class A001258 extends Sequence2 {
         return Z.ZERO;
       }
     }
-    return Stirling.secondKind(n - 2, n - k).multiply(mFactorial.factorial(n).divide(mFactorial.factorial(k)));
+    return Stirling.secondKind(n - 2, n - k).multiply(Functions.FACTORIAL.z(n).divide(Functions.FACTORIAL.z(k)));
   }
 
   // This is actually A213262
@@ -36,7 +37,7 @@ public class A001258 extends Sequence2 {
       if (n <= 4) {
         return Z.ONE;
       } else {
-        return mFactorial.factorial(n - 2).divide2();
+        return Functions.FACTORIAL.z(n - 2).divide2();
       }
     }
     if (k <= n - 2) {

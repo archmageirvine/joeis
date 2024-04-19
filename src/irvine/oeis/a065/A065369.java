@@ -10,7 +10,7 @@ import irvine.oeis.AbstractSequence;
 public class A065369 extends AbstractSequence {
 
   private int mN;
-  private int mDigit;
+  private final int mDigit;
 
   /** Construct the sequence. */
   public A065369() {

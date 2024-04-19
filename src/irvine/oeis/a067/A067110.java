@@ -11,8 +11,8 @@ import irvine.oeis.a007.A007504;
  */
 public class A067110 extends A000040 {
 
-  private Sequence mSeq = new A007504();
-  private StringBuilder mSb = new StringBuilder();
+  private final Sequence mSeq = new A007504();
+  private final StringBuilder mSb = new StringBuilder();
 
   {
     mSeq.next(); // skip the leading 0

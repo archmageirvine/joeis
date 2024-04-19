@@ -1,6 +1,7 @@
 package irvine.oeis.a005;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
@@ -30,7 +31,7 @@ public class A005946 extends MemoryFunction2Sequence<Integer, Z> {
   protected static Z per(final int[] a) {
     Z c = Z.ONE;
     for (int i = 1; i < a.length; ++i) {
-      c = c.multiply(FACTORIAL.factorial(a[i])).multiply(FACTORIAL.factorial(i).pow(a[i]));
+      c = c.multiply(Functions.FACTORIAL.z(a[i])).multiply(Functions.FACTORIAL.z(i).pow(a[i]));
     }
     return c;
   }
@@ -54,7 +55,7 @@ public class A005946 extends MemoryFunction2Sequence<Integer, Z> {
       for (int k = 1; k < lambda.length; ++k) {
         t = t.multiply(get(k, m - 1).pow(lambda[k]));
       }
-      t = t.multiply(FACTORIAL.factorial(n));
+      t = t.multiply(Functions.FACTORIAL.z(n));
       t = t.divide(per(lambda));
       sum = sum.add(t);
     }

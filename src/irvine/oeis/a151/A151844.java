@@ -12,7 +12,7 @@ public class A151844 extends Sequence0 {
   private int mISeq; // index in mSeq
   private int mLo; // lower bound of range
   private int mHi; // higher bound of range
-  private A151843 mSeq;
+  private final A151843 mSeq;
 
   /** Construct the sequence. */
   public A151844() {

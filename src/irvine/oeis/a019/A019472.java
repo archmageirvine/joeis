@@ -1,5 +1,6 @@
 package irvine.oeis.a019;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000670;
 
@@ -11,6 +12,6 @@ public class A019472 extends A000670 {
 
   @Override
   public Z next() {
-    return super.next().subtract(mF.factorial(mN));
+    return super.next().subtract(Functions.FACTORIAL.z(mN));
   }
 }

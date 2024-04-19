@@ -15,7 +15,7 @@ public class A025759 extends A004996 {
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> NUM = RING.monomial(Z.SIX, 0);
   private int mN = -1;
-  private Polynomial<Z> mD = RING.monomial(super.next().add(Z.FIVE), 0);
+  private final Polynomial<Z> mD = RING.monomial(super.next().add(Z.FIVE), 0);
 
   @Override
   public Z next() {

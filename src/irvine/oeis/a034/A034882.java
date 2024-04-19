@@ -3,6 +3,7 @@ package irvine.oeis.a034;
 import java.util.TreeSet;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -51,12 +52,13 @@ public class A034882 extends Sequence1 {
   public Z next() {
     while (true) {
       while (mA.isEmpty() || mA.first().mValue.compareTo(mF) >= 0) {
-        mF = mFactorial.factorial(++mN);
+        final int n = ++mN;
+        mF = Functions.FACTORIAL.z(n);
         mA.add(new State(mF, mN));
       }
       final State s = mA.pollFirst();
       final int next = s.mLast + 1;
-      mA.add(new State(s.mValue.multiply(mFactorial.factorial(next)), next));
+      mA.add(new State(s.mValue.multiply(Functions.FACTORIAL.z(next)), next));
       if (s.mValue.equals(mPrev)) {
         continue;
       }

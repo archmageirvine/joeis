@@ -10,8 +10,8 @@ import irvine.oeis.a000.A000041;
  */
 public class A278196 extends Sequence1 {
 
-  private int mExpon;
-  private A000041 mSeq1 = new A000041();
+  private final int mExpon;
+  private final A000041 mSeq1 = new A000041();
 
   /** Construct the sequence. */
   public A278196() {

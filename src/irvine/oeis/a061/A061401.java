@@ -1,6 +1,7 @@
 package irvine.oeis.a061;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -24,7 +25,7 @@ public class A061401 extends Sequence1 {
     final Q[] c = new Q[mN + 1];
     c[0] = Q.ZERO;
     for (int k = 1; k <= mN; ++k) {
-      final Q t = new Q(F.factorial(3 * k), F.factorial(k).pow(3).multiply(k));
+      final Q t = new Q(Functions.FACTORIAL.z(3 * k), Functions.FACTORIAL.z(k).pow(3).multiply(k));
       c[k] = (k & 1) == 1 ? t : t.negate();
     }
     final Polynomial<Q> f = Polynomial.create(c);

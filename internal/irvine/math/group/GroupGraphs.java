@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 import irvine.math.api.Group;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.q.Q;
 import irvine.math.set.FiniteSet;
@@ -69,7 +69,7 @@ public final class GroupGraphs {
   private static List<Permutation<Integer>> makeGeneratorsForSymmetricGroup(final int n) {
     assert n >= 3;
     final ArrayList<Permutation<Integer>> gens = new ArrayList<>();
-    final int m = MemoryFactorial.SINGLETON.factorial(n).intValueExact();
+    final int m = Functions.FACTORIAL.z(n).intValueExact();
     for (int k = 1; k < n; ++k) {
       final int[] p = new int[m];
       for (int j = 0; j < m; ++j) {

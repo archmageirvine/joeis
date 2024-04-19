@@ -1,7 +1,7 @@
 package irvine.oeis.a080;
 
 import irvine.math.MemoryFunction2;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
@@ -36,10 +36,10 @@ public class A080510 extends Triangle {
       Z sum = Z.ZERO;
       final int jmax = n / i;
       for (int j = 0; j <= jmax; ++j) {
-        sum = sum.add(get(n - i * j, i - 1).multiply(MemoryFactorial.SINGLETON.factorial(n))
-          .divide(MemoryFactorial.SINGLETON.factorial(i).pow(j))
-          .divide(MemoryFactorial.SINGLETON.factorial(n - i * j))
-          .divide(MemoryFactorial.SINGLETON.factorial(j)));
+        sum = sum.add(get(n - i * j, i - 1).multiply(Functions.FACTORIAL.z(n))
+          .divide(Functions.FACTORIAL.z(i).pow(j))
+          .divide(Functions.FACTORIAL.z(n - i * j))
+          .divide(Functions.FACTORIAL.z(j)));
       }
       return sum;
     }

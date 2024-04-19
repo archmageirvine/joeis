@@ -9,7 +9,7 @@ import irvine.oeis.AbstractSequence;
  */
 public class A067472 extends AbstractSequence {
 
-  private int mDigit;
+  private final int mDigit;
   private Z mPow10;
 
   /** Construct the sequence. */

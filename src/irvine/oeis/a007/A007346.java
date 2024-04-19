@@ -1,6 +1,7 @@
 package irvine.oeis.a007;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -41,9 +42,9 @@ public class A007346 extends AbstractSequence {
         break;
     }
     if ((mN & 1) == 1) {
-      return mF.factorial(mN).shiftLeft(mN - 1);
+      return Functions.FACTORIAL.z(mN).shiftLeft(mN - 1);
     } else if ((mN & 3) == 2) {
-      return mF.factorial(mN).shiftLeft(mN);
+      return Functions.FACTORIAL.z(mN).shiftLeft(mN);
     } else {
       int np = mN;
       int k = 1;
@@ -54,7 +55,7 @@ public class A007346 extends AbstractSequence {
       if (mN == 1 << (k - 1)) {
         return Z.valueOf(k).shiftLeft(k);
       } else {
-        return mF.factorial(mN).shiftLeft(mN - 2);
+        return Functions.FACTORIAL.z(mN).shiftLeft(mN - 2);
       }
     }
   }

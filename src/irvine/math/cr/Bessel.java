@@ -1,6 +1,6 @@
 package irvine.math.cr;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 
@@ -47,7 +47,7 @@ public final class Bessel  {
       protected Z approximate(final int precision) {
         final int p = precision - EXTRA_PRECISION;
         final Z z2approx = z.multiply(z).divide(CR.FOUR).getApprox(p);
-        Z term = CR.ONE.getApprox(p).divide(MemoryFactorial.SINGLETON.factorial(v)); // k = 0
+        Z term = CR.ONE.getApprox(p).divide(Functions.FACTORIAL.z(v)); // k = 0
         Z sum = term;
         long k = 0;
         while (true) {
@@ -114,7 +114,7 @@ public final class Bessel  {
     CR sum1 = CR.ZERO;
     CR zp = CR.ONE;
     for (int k = 0; k < v; ++k, zp = zp.multiply(z2fn)) {
-      sum1 = sum1.add(zp.multiply(MemoryFactorial.SINGLETON.factorial(v - k - 1)).divide(CR.valueOf(MemoryFactorial.SINGLETON.factorial(k))));
+      sum1 = sum1.add(zp.multiply(Functions.FACTORIAL.z(v - k - 1)).divide(CR.valueOf(Functions.FACTORIAL.z(k))));
     }
     sum1 = sum1.multiply(CR.HALF).multiply(CR.TWO.divide(z).pow(v));
 
@@ -123,8 +123,8 @@ public final class Bessel  {
       protected Z approximate(final int precision) {
         final int p = precision - EXTRA_PRECISION;
         final Z z2approx = z2f.getApprox(p);
-        Z sum = Psi.psi(1).add(Psi.psi(v + 1)).getApprox(p).divide(MemoryFactorial.SINGLETON.factorial(v)); // k = 0
-        Z term = scale(Z.ONE, -p).divide(MemoryFactorial.SINGLETON.factorial(v));
+        Z sum = Psi.psi(1).add(Psi.psi(v + 1)).getApprox(p).divide(Functions.FACTORIAL.z(v)); // k = 0
+        Z term = scale(Z.ONE, -p).divide(Functions.FACTORIAL.z(v));
         int k = 0;
         while (!term.isZero()) {
           term = scale(term.multiply(z2approx), p).divide(++k).divide(v + k);

@@ -13,7 +13,7 @@ import irvine.oeis.a000.A000568;
 public class A051337 extends A000568 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
-  private Polynomial<Z> mB = RING.empty();
+  private final Polynomial<Z> mB = RING.empty();
 
   @Override
   public Z next() {

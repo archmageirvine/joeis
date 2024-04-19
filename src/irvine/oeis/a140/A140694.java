@@ -10,7 +10,7 @@ import irvine.oeis.a063.A063659;
  */
 public class A140694 extends A014963 {
 
-  private A063659 mSeq2 = new A063659();
+  private final A063659 mSeq2 = new A063659();
 
   @Override
   public Z next() {

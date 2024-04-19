@@ -1,6 +1,7 @@
 package irvine.oeis.a054;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -22,7 +23,7 @@ public class A054255 extends Sequence1 {
       mK = ++mN;
       mSum = Z.ZERO;
     }
-    mSum = mSum.add(Stirling.secondKind(mN, mK).multiply(mF.factorial(mK - 1)));
+    mSum = mSum.add(Stirling.secondKind(mN, mK).multiply(Functions.FACTORIAL.z(mK - 1)));
     return mSum;
   }
 }

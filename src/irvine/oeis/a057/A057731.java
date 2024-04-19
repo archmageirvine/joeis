@@ -1,7 +1,7 @@
 package irvine.oeis.a057;
 
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Binomial;
@@ -32,10 +32,12 @@ public class A057731 extends MemoryFunctionInt2Sequence<Polynomial<Z>> {
     if (n == 0) {
       return RING.monomial(Z.ONE, g);
     }
-    return RING.sum(1, n, j -> RING.multiply(
-      get(n - j, IntegerUtils.lcm(g, j)),
-      Binomial.binomial(n - 1, j - 1).multiply(MemoryFactorial.SINGLETON.factorial(j - 1))
-    ));
+    return RING.sum(1, n, j -> {
+      return RING.multiply(
+        get(n - j, IntegerUtils.lcm(g, j)),
+        Binomial.binomial(n - 1, j - 1).multiply(Functions.FACTORIAL.z(j - 1))
+      );
+    });
   }
 
   @Override

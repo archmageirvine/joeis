@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -18,7 +18,7 @@ public class A051459 extends Sequence0 {
     ++mN;
     Z prod = Z.ONE;
     for (long k = 0; k <= mN; ++k) {
-      prod = prod.multiply(MemoryFactorial.SINGLETON.factorial(Binomial.binomial(mN, k)));
+      prod = prod.multiply(Functions.FACTORIAL.z(Binomial.binomial(mN, k)));
     }
     return prod;
   }

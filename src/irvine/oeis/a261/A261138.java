@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 public class A261138 extends Sequence1 {
 
   private long mN = 0;
-  private final StringBuilder mSb = new StringBuilder("");
+  private final StringBuilder mSb = new StringBuilder();
 
   /** Construct the sequence. */
   public A261138() {
@@ -20,7 +20,7 @@ public class A261138 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    mSb.append(String.valueOf(mN));
+    mSb.append(mN);
     final Z result = new Z(mSb.toString() + mSb.reverse());
     mSb.reverse();
     return result;

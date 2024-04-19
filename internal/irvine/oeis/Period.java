@@ -50,7 +50,7 @@ public final class Period {
           out.append(r2);
           out.append("), ");
           final String preperiod = sb.substring(0, k).replace("", ", ");
-          out.append(preperiod.substring(2, preperiod.length() - 2));
+          out.append(preperiod, 2, preperiod.length() - 2);
           out.append(");");
         } else {
           out.append("    super(");

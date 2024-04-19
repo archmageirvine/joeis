@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Map;
 
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -37,7 +37,7 @@ public final class RedfieldExponentiation {
       d.add(d(r, k, i));
     }
     final CycleIndex jr = SymmetricGroup.create(j).cycleIndex().apply(StandardMultiply.OP, d);
-    jr.multiply(new Q(MemoryFactorial.SINGLETON.factorial(j).multiply(Z.valueOf(k).pow(j))));
+    jr.multiply(new Q(Functions.FACTORIAL.z(j).multiply(Z.valueOf(k).pow(j))));
     return jr;
   }
 

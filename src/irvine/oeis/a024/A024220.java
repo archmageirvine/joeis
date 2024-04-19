@@ -10,7 +10,7 @@ import irvine.oeis.a000.A000326;
  */
 public class A024220 extends A024213 {
 
-  private Sequence mA = new A000326().skip(3);
+  private final Sequence mA = new A000326().skip(3);
 
   @Override
   public Z next() {

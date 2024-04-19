@@ -23,7 +23,7 @@ public class A002985 extends Sequence1 {
   private static final class Tree implements Comparable<Tree> {
 
     private final List<Tree> mChildren = new ArrayList<>();
-    private int mChildCount;
+    private final int mChildCount;
 
     private Tree(final Graph graph, final int root, final boolean[] used) {
       assert !used[root];

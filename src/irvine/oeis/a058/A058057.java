@@ -3,6 +3,7 @@ package irvine.oeis.a058;
 import java.util.ArrayList;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -45,7 +46,7 @@ public class A058057 extends AbstractSequence {
       final int nn = CACHE.size();
       for (int k = 0; k <= nn; ++k) {
         s = RING.add(s, RING.multiply(RING.pow(Polynomial.create(-1, 1), k),
-                  FACTORIAL.factorial(nn - k).multiply(Binomial.binomial(2L * nn - k, k))));
+                  Functions.FACTORIAL.z(nn - k).multiply(Binomial.binomial(2L * nn - k, k))));
       }
       CACHE.add(s);
     }

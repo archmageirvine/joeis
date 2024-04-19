@@ -11,6 +11,6 @@ public class A347589 extends FoldedContinuedFraction {
 
   /** Construct the sequence */
   public A347589() {
-    super(0, k -> Z.TWO.pow(Z.THREE.pow(k)), new long[] {0, 1, 1, 1, 2});
+    super(0, k -> Z.TWO.pow(Z.THREE.pow(k)), 0, 1, 1, 1, 2);
   }
 }

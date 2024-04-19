@@ -14,7 +14,7 @@ import irvine.oeis.memory.MemorySequence;
 public class A180249 extends Sequence1 {
 
   private int mN = 0;
-  private MemorySequence mSeq = MemorySequence.cache(1, new A056493());
+  private final MemorySequence mSeq = MemorySequence.cache(1, new A056493());
 
   @Override
   public Z next() {

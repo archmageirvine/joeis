@@ -24,7 +24,7 @@ public class A341555 extends ConvolutionProduct {
    * @param exponent exponents for F_{3A}
    */
   public A341555(final int exponent) {
-    super(0, "-1,1/2," + String.valueOf(exponent),
+    super(0, "-1,1/2," + exponent,
       new A030197(), // this is 1/t_{3A}
       new RootSequence(0, new A030197().skip(1), -1, 1) { // this is (1 - 108/t_{3A})
         private int mN = -1;

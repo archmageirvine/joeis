@@ -32,9 +32,7 @@ public class A064050 extends Sequence1 {
     if (col <= row - 2) {
       final boolean rightDiagonalIncreasing = mT[row - 2][col] < mT[row - 1][col];
       final boolean rightDiagonalProposed = mT[row - 1][col] < k;
-      if (rightDiagonalIncreasing != rightDiagonalProposed) {
-        return false;
-      }
+      return rightDiagonalIncreasing == rightDiagonalProposed;
     }
     return true;
   }

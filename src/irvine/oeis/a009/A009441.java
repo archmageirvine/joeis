@@ -13,6 +13,6 @@ public class A009441 extends Sequence1 {
 
   @Override
   public Z next() {
-    return new Z(String.valueOf(++mN) + String.valueOf(7 * mN));
+    return new Z(String.valueOf(++mN) + 7 * mN);
   }
 }

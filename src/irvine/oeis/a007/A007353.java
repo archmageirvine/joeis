@@ -12,7 +12,7 @@ public class A007353 extends Sequence1 {
 
   private Z mP = Z.ONE;
   private final Fast mPrime = new Fast();
-  private long[] mCount = new long[size()];
+  private final long[] mCount = new long[size()];
   private int mTop = 0;
 
   protected int size() {

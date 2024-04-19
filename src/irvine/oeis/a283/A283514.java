@@ -14,7 +14,7 @@ public class A283514 extends Sequence3 {
 
   @Override
   public Z next() {
-    mSb.insert(0, String.valueOf(++mN));
+    mSb.insert(0, ++mN);
     return new Z(mSb.toString());
   }
 }

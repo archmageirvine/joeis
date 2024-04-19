@@ -9,7 +9,7 @@ import irvine.oeis.a275.A275043;
  */
 public class A061684 extends A275043 {
 
-  private int mCol; // column index
+  private final int mCol; // column index
   private int mN; // row index
   private int mTri; // current index of triangle element
   private int mStop; // sequenctial index of relevant triangle element

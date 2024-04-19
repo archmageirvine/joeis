@@ -177,7 +177,7 @@ public final class AbstractInspector {
     } else if (mode.startsWith("morph")) {
       return;
     } else if (mode.startsWith("noabs")) {
-      subset = " do not extend AbstractSequence";;
+      subset = " do not extend AbstractSequence";
     } else if (mode.startsWith("offin")) {
       total -= miss;
       subset = " with defined, but wrong offset";

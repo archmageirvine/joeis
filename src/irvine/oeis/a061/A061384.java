@@ -11,7 +11,7 @@ import irvine.oeis.Sequence1;
 public class A061384 extends Sequence1 {
 
   private Z mK;
-  private long mMult;
+  private final long mMult;
 
   /** Construct the sequence. */
   public A061384() {

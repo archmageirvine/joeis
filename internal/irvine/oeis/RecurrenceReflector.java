@@ -50,7 +50,7 @@ public class RecurrenceReflector {
   /**
    * Encoding of the input file
    */
-  private String mSrcEncoding;
+  private final String mSrcEncoding;
 
   /**
    * No-args Constructor
@@ -325,7 +325,7 @@ public class RecurrenceReflector {
                 }
                 buffer.append(',');
                 buffer.append(den[0].toString());
-                parts[ipart++] = "[0" + buffer.toString() + "]"; // MATRIX
+                parts[ipart++] = "[0" + buffer + "]"; // MATRIX
                 buffer.setLength(0);
                 for (int iterm = Math.max(dlen, mlen); iterm >= 1; --iterm) {
                   buffer.append(',');

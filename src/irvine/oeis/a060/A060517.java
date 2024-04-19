@@ -3,6 +3,7 @@ package irvine.oeis.a060;
 import java.util.Arrays;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -40,7 +41,7 @@ public class A060517 extends Sequence0 {
       final Polynomial<Polynomial<Q>> g = ring.monomial(inner.monomial(new Q(k, 2), 2), 1); // (k/2)y^2x
       final Polynomial<Polynomial<Q>> e = ring.exp(ring.subtract(g, f), n - k);
       final Polynomial<Polynomial<Q>> a = ring.multiply(e, inner.pow(Y1, (long) k * (k + 1) / 2));
-      final Q invkf = new Q(Z.ONE, F.factorial(k)); // 1/k!
+      final Q invkf = new Q(Z.ONE, Functions.FACTORIAL.z(k)); // 1/k!
       final Polynomial<Polynomial<Q>> c = ring.multiply(a.shift(k), inner.monomial(invkf, 0));
       sum = ring.add(sum, c);
     }
@@ -54,6 +55,6 @@ public class A060517 extends Sequence0 {
       mM = 0;
       mEgf = t(mN);
     }
-    return mEgf.coeff(mN).coeff(mM).multiply(F.factorial(mN)).toZ();
+    return mEgf.coeff(mN).coeff(mM).multiply(Functions.FACTORIAL.z(mN)).toZ();
   }
 }

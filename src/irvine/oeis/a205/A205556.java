@@ -12,8 +12,8 @@ import irvine.oeis.a204.A204922;
 public class A205556 extends Sequence1 {
 
   private int mK;
-  private Sequence mSeq;
-  private Z mMult;
+  private final Sequence mSeq;
+  private final Z mMult;
 
   /** Construct the sequence. */
   public A205556() {

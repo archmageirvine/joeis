@@ -1,6 +1,7 @@
 package irvine.oeis.a002;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -26,7 +27,7 @@ public class A002195 extends Sequence0 {
   private Q b(final int k, final int n) {
     Q s = Q.ZERO;
     for (int j = 1; j <= k; ++j) {
-      s = s.add(new Q(c(j, n).multiply(Binomial.binomial(k, j)), mF.factorial(2 * n + j).shiftLeft(j)));
+      s = s.add(new Q(c(j, n).multiply(Binomial.binomial(k, j)), Functions.FACTORIAL.z(2 * n + j).shiftLeft(j)));
     }
     return s;
   }

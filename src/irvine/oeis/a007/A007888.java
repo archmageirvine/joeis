@@ -43,16 +43,16 @@ public class A007888 extends Sequence1 {
       if (s <= 3) {
         return Q.ONE;
       }
-      final Q f = new Q(mF.factorial(s - 3));
+      final Q f = new Q(Functions.FACTORIAL.z(s - 3));
       return (s & 1) == 0 ? f.negate() : f;
     } else if (g == 1) {
       if (s <= 1) {
         return Q12;
       }
-      final Z f = mF.factorial(s - 1);
+      final Z f = Functions.FACTORIAL.z(s - 1);
       return new Q((s & 1) == 0 ? f : f.negate(), Z12);
     } else {
-      final Q t = bern(g).multiply(mF.factorial(2 * g + s - 3)).divide(2L * g).divide(mF.factorial(2 * g - 2));
+      final Q t = bern(g).multiply(Functions.FACTORIAL.z(2 * g + s - 3)).divide(2L * g).divide(Functions.FACTORIAL.z(2 * g - 2));
       return (s & 1) == 0 ? t : t.negate();
     }
   }
@@ -101,7 +101,7 @@ public class A007888 extends Sequence1 {
                 final int mobius = Functions.MOBIUS.i((long) m);
                 if (mobius != 0) {
                   final Polynomial<Q> betaPow = RING.pow(beta, s, mN - k * pow);
-                  final Q chi = chi(h, s).divide(mF.factorial(s)).multiply(mobius);
+                  final Q chi = chi(h, s).divide(Functions.FACTORIAL.z(s)).multiply(mobius);
                   final Q u = new Q(k, m).pow(pow);
                   final Q c = chi.divide(m * (long) m).multiply(Functions.PHI.l((long) d)).multiply(u);
                   final Polynomial<Q> t = RING.multiply(betaPow, c).shift(k * pow).truncate(mN);

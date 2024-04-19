@@ -33,11 +33,11 @@ public class A051636 extends Sequence1 {
         for (int k = 1; k < c.length; ++k) {
           if (c[k] > 0) {
             final Z zk = Z.valueOf(k);
-            den = den.multiply(mF.factorial(c[k])).multiply(zk.pow(c[k]));
+            den = den.multiply(Functions.FACTORIAL.z(c[k])).multiply(zk.pow(c[k]));
             lcm = lcm.lcm(zk);
           }
         }
-        sum = sum.add(mF.factorial(mN).divide(den.multiply(Functions.PHI.z(lcm))));
+        sum = sum.add(Functions.FACTORIAL.z(mN).divide(den.multiply(Functions.PHI.z(lcm))));
       }
     }
     return sum;

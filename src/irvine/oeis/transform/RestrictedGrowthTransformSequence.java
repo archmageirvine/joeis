@@ -19,9 +19,8 @@ public class RestrictedGrowthTransformSequence extends AbstractSequence {
   private final Sequence[] mSeqs;
   private final HashMap<String, Integer> mMap;
   private int mStart;
-  private int mSeqLen; // = mSeqs.length
+  private final int mSeqLen; // = mSeqs.length
   private final StringBuilder mKey = new StringBuilder(32);
-  ;
 
   /**
    * Constructor with parameters

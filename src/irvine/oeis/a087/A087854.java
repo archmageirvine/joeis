@@ -34,6 +34,6 @@ public class A087854 extends Triangle {
       final int d = zd.intValue();
       sum = sum.add(Stirling.secondKind(n / d, k).multiply(Functions.PHI.l((long) d)));
     }
-    return sum.multiply(FACTORIAL.factorial(k)).divide(n);
+    return sum.multiply(Functions.FACTORIAL.z(k)).divide(n);
   }
 }

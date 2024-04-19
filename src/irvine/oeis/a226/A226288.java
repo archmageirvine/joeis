@@ -1,6 +1,7 @@
 package irvine.oeis.a226;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
@@ -21,6 +22,6 @@ public class A226288 extends UpperLeftTriangle {
 
   @Override
   public Z matrixElement(final int n, final int k) {
-    return FACTORIAL.factorial(n / 2).multiply(FACTORIAL.factorial((n + 1) / 2)).multiply(Binomial.binomial(n / 2, k - 1)).multiply(Binomial.binomial((n + 1) / 2, k - 1));
+    return Functions.FACTORIAL.z(n / 2).multiply(Functions.FACTORIAL.z((n + 1) / 2)).multiply(Binomial.binomial(n / 2, k - 1)).multiply(Binomial.binomial((n + 1) / 2, k - 1));
   }
 }

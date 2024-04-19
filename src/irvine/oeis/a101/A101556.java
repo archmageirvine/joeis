@@ -13,7 +13,7 @@ import irvine.oeis.a010.A010060;
 public class A101556 extends Sequence0 {
 
   private final A010060 mSeq = new A010060();
-  private StringBuilder mSb = new StringBuilder();
+  private final StringBuilder mSb = new StringBuilder();
 
   @Override
   public Z next() {

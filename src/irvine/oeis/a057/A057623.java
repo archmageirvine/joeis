@@ -1,6 +1,6 @@
 package irvine.oeis.a057;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunctionInt2Sequence;
@@ -39,6 +39,6 @@ public class A057623 extends MemoryFunctionInt2Sequence<Pair<Q, Q>> {
 
   @Override
   public Z next() {
-    return get(++mN, mN).right().multiply(MemoryFactorial.SINGLETON.factorial(mN)).toZ();
+    return get(++mN, mN).right().multiply(Functions.FACTORIAL.z(mN)).toZ();
   }
 }

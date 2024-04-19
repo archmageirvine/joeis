@@ -1,6 +1,6 @@
 package irvine.oeis.a277;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -37,8 +37,8 @@ public class A277391 extends AbstractSequence {
     ++mN;
     Q sum = Q.ZERO;
     for (int k = 0; k <= mN; ++k) {
-      sum = sum.add(new Q(Binomial.binomial(mN, k).multiply(Z.valueOf(mParm * mN).pow(k)), MemoryFactorial.SINGLETON.factorial(k)));
+      sum = sum.add(new Q(Binomial.binomial(mN, k).multiply(Z.valueOf(mParm * mN).pow(k)), Functions.FACTORIAL.z(k)));
     }
-    return sum.multiply(MemoryFactorial.SINGLETON.factorial(mN)).num();
+    return sum.multiply(Functions.FACTORIAL.z(mN)).num();
   }
 }

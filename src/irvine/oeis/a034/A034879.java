@@ -1,6 +1,7 @@
 package irvine.oeis.a034;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -18,7 +19,7 @@ public class A034879 extends Sequence1 {
     final int[] cnts = ZUtils.digitCounts(f);
     Z prod = Z.ONE;
     for (int k = 0; k < cnts.length; ++k) {
-      prod = prod.multiply(mF.factorial(k).pow(cnts[k]));
+      prod = prod.multiply(Functions.FACTORIAL.z(k).pow(cnts[k]));
     }
     return prod;
   }

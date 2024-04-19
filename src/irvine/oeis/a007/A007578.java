@@ -14,7 +14,7 @@ public class A007578 extends Sequence0 {
   private static final Z Z34 = Z.valueOf(34);
   private static final Z Z38 = Z.valueOf(38);
 
-  private Z[] mA = {Z.ONE, Z.ONE, Z.TWO, Z.FOUR};
+  private final Z[] mA = {Z.ONE, Z.ONE, Z.TWO, Z.FOUR};
   private int mN = -1;
 
   @Override

@@ -1,7 +1,7 @@
 package irvine.oeis.a059;
 
 import irvine.math.cr.CR;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
@@ -17,6 +17,6 @@ public class A059586 extends Sequence0 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sum(0, ++mN, k -> Stirling.firstKind(mN, k).abs().multiply(CR.E.multiply(MemoryFactorial.SINGLETON.factorial(Z.ONE.shiftLeft(k))).floor())).divide(MemoryFactorial.SINGLETON.factorial(mN));
+    return Integers.SINGLETON.sum(0, ++mN, k -> Stirling.firstKind(mN, k).abs().multiply(CR.E.multiply(Functions.FACTORIAL.z(Z.ONE.shiftLeft(k))).floor())).divide(Functions.FACTORIAL.z(mN));
   }
 }

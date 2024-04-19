@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.Nauty;
@@ -18,7 +18,7 @@ public class A007134 extends A048192 {
   private long labellings(final Graph graph) {
     final StatsBlk stats = new StatsBlk();
     new Nauty(graph, new int[mN], new int[mN], new NautySet(mN), new int[mN], new OptionBlk(), stats, new long[100]);
-    return MemoryFactorial.SINGLETON.factorial(graph.order()).divide(stats.groupSize()).longValue();
+    return Functions.FACTORIAL.z(graph.order()).divide(stats.groupSize()).longValue();
   }
 
   @Override

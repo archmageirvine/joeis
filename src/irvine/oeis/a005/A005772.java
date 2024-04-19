@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
@@ -24,22 +25,22 @@ public class A005772 extends Sequence3 {
     ++mN;
     Z sum = Z.ZERO;
     for (int i = 2; i < mN; ++i) {
-      final Z fi = mF.factorial(i - 1);
+      final Z fi = Functions.FACTORIAL.z(i - 1);
       Z fij = Z.ONE;
       for (int j = 1; i * j < mN; ++j) {
         fij = fij.multiply(fi);
         final int nij = mN - i * j;
-        final Z fj = mF.factorial(j);
+        final Z fj = Functions.FACTORIAL.z(j);
         for (final Z dd : Jaguar.factor(nij).divisors()) {
           final int d = dd.intValueExact();
           if (d < i) {
             final int nijd = nij / d;
-            final Z fdp = mF.factorial(d - 1).pow(nijd);
+            final Z fdp = Functions.FACTORIAL.z(d - 1).pow(nijd);
             final int[] multinomialCoeffs = new int[j + nijd];
             Arrays.fill(multinomialCoeffs, 0, j, i);
             Arrays.fill(multinomialCoeffs, j, multinomialCoeffs.length, d);
             final Z m = Binomial.multinomial(mN, multinomialCoeffs);
-            final Z t = fij.multiply(fdp).multiply(m).divide(fj).divide(mF.factorial(nijd));
+            final Z t = fij.multiply(fdp).multiply(m).divide(fj).divide(Functions.FACTORIAL.z(nijd));
             sum = sum.add(t);
           }
         }

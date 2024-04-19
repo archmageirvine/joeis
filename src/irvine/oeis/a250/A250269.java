@@ -25,9 +25,9 @@ public class A250269 extends Sequence1 {
       final int d = dd.intValue();
       final int mu = Functions.MOBIUS.i((long) (mN / d));
       if (mu == -1) {
-        prod = prod.divide(FACTORIAL.factorial(d));
+        prod = prod.divide(Functions.FACTORIAL.z(d));
       } else if (mu == 1) {
-        prod = prod.multiply(FACTORIAL.factorial(d));
+        prod = prod.multiply(Functions.FACTORIAL.z(d));
       } // else mu == 0: multiply by 1
     }
     return prod.num();

@@ -10,7 +10,7 @@ import irvine.util.array.DynamicArray;
  */
 public class A018802 extends Sequence1 {
 
-  private DynamicArray<String> mCache = new DynamicArray<>();
+  private final DynamicArray<String> mCache = new DynamicArray<>();
   private int mM = -1;
   private int mN = 0;
 

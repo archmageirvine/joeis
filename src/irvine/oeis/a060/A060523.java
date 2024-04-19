@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import java.util.Arrays;
 
 import irvine.math.MemoryFunctionInt2;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -37,7 +37,7 @@ public class A060523 extends Sequence0 {
         final int[] bottom = new int[j + 1];
         Arrays.fill(bottom, m);
         bottom[0] = n - m * j;
-        final Z mul = Binomial.multinomial(n, bottom).multiply(MemoryFactorial.SINGLETON.factorial(m - 1).pow(j)).divide(MemoryFactorial.SINGLETON.factorial(j));
+        final Z mul = Binomial.multinomial(n, bottom).multiply(Functions.FACTORIAL.z(m - 1).pow(j)).divide(Functions.FACTORIAL.z(j));
         final Polynomial<Z> t = RING.multiply(get(n - m * j, m - 1), mul).shift((m & 1) == 0 ? j : 0);
         sum = RING.add(sum, t);
       }

@@ -12,7 +12,7 @@ import irvine.oeis.a057.A057834;
 public class A228065 extends Sequence1 {
 
   private int mN = 0;
-  private DifferenceSequence mSeq1 = new DifferenceSequence(new A057834());
+  private final DifferenceSequence mSeq1 = new DifferenceSequence(new A057834());
 
   @Override
   public Z next() {

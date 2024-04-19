@@ -1,6 +1,6 @@
 package irvine.oeis.a068;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.a007.A007770;
@@ -51,7 +51,7 @@ public class A068571 extends A007770 {
         d[k] = (k > 7 ? mN : v[k + 1]) - v[k];
       }
       if (isHappy(Z.valueOf(f(d)))) {
-        sum = sum.add(Binomial.multinomial(mN, d).divide(MemoryFactorial.SINGLETON.factorial(v[0])));
+        sum = sum.add(Binomial.multinomial(mN, d).divide(Functions.FACTORIAL.z(v[0])));
       }
     } while (bump(v, mN));
     return sum.add(1);

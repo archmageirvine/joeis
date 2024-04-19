@@ -1,6 +1,7 @@
 package irvine.oeis.a067;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Integers;
@@ -18,8 +19,11 @@ public class A067228 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Z nf = F.factorial(++mN);
-    return Integers.SINGLETON.sumdiv(mN, d -> Rationals.SINGLETON.product(0, mN / d - 1, k -> new Q(F.factorial(k), F.factorial(d + k))).multiply(nf).toZ());
+    final int n = ++mN;
+    final Z nf = Functions.FACTORIAL.z(n);
+    return Integers.SINGLETON.sumdiv(mN, d -> Rationals.SINGLETON.product(0, mN / d - 1, k -> {
+      return new Q(Functions.FACTORIAL.z(k), Functions.FACTORIAL.z(d + k));
+    }).multiply(nf).toZ());
   }
 }
 

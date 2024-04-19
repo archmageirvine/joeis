@@ -3,6 +3,7 @@ package irvine.oeis.a097;
 import java.util.HashMap;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.util.Point;
 
@@ -21,7 +22,7 @@ public class A097749 extends A097474 {
   private Z b(final int n, final int k) {
     final int h = (k + 3) / 2;
     if (n == k) {
-      return mF.factorial(2 * n + 1).divide(mF.factorial(n)).shiftLeft(h - n).divide(t(k, k));
+      return Functions.FACTORIAL.z(2 * n + 1).divide(Functions.FACTORIAL.z(n)).shiftLeft(h - n).divide(t(k, k));
     }
     final Point key = new Point(n, k);
     final Z v = mB.get(key);

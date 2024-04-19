@@ -2,6 +2,7 @@ package irvine.oeis.a002;
 
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
@@ -96,7 +97,7 @@ public class A002499 extends AbstractSequence {
    * @return <code>h(j)</code>
    */
   public static Z h(final int[] j) {
-    return FACTORIAL.factorial(j.length - 1).divide(SymmetricGroup.per(j));
+    return Functions.FACTORIAL.z(j.length - 1).divide(SymmetricGroup.per(j));
   }
 
   @Override
@@ -109,6 +110,6 @@ public class A002499 extends AbstractSequence {
       IntegerPartition.toCountForm(p, j);
       s = s.add(h(j).shiftLeft(epsilon(mN, j)));
     }
-    return s.divide(FACTORIAL.factorial(mN));
+    return s.divide(Functions.FACTORIAL.z(mN));
   }
 }

@@ -12,8 +12,8 @@ public class A122780 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;
-  private Z mBase;
-  private Z mRes;
+  private final Z mBase;
+  private final Z mRes;
 
   /** Construct the sequence. */
   public A122780() {

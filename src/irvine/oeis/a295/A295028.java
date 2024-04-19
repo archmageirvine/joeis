@@ -1,7 +1,7 @@
 package irvine.oeis.a295;
 
 import irvine.math.MemoryFunction2;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
@@ -43,7 +43,7 @@ public class A295028 extends UpperLeftTriangle {
           sumi = sumi.add(Binomial.binomial(n - j, i)
             .multiply(((i & 1) == 0) ? 1 : -1)
             .multiply(get(n - j - i, k - 1))
-            .multiply(MemoryFactorial.SINGLETON.factorial(i - 1)));
+            .multiply(Functions.FACTORIAL.z(i - 1)));
         }
         sumj = sumj.add(Binomial.binomial(n - 1, j)
           .multiply(get(j, k))

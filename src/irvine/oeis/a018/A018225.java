@@ -10,7 +10,7 @@ import irvine.oeis.a317.A317184;
  */
 public class A018225 extends A317184 {
 
-  private A007769 mA = new A007769();
+  private final A007769 mA = new A007769();
   {
     mA.next(); // skip 0th
   }

@@ -1,6 +1,7 @@
 package irvine.oeis.a035;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -23,7 +24,7 @@ public class A035309 extends Sequence0 {
   protected Z t(final int n, final int g) {
     final int g2 = 2 * g;
     final Polynomial<Q> c = RING.pow(RING.series(HALF_X, RING.tanh(HALF_X, n + 1), n + 1), n + 1, n + 1);
-    return c.coeff(g2).multiply(mF.factorial(2 * n)).divide(mF.factorial(n + 1)).divide(mF.factorial(n - g2)).toZ();
+    return c.coeff(g2).multiply(Functions.FACTORIAL.z(2 * n)).divide(Functions.FACTORIAL.z(n + 1)).divide(Functions.FACTORIAL.z(n - g2)).toZ();
   }
 
   @Override

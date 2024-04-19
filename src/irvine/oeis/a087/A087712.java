@@ -14,7 +14,7 @@ import irvine.oeis.DirectSequence;
 public class A087712 extends AbstractSequence implements DirectSequence {
 
   private int mN;
-  private StringBuilder mSb = new StringBuilder();
+  private final StringBuilder mSb = new StringBuilder();
 
   /** Construct the sequence. */
   public A087712() {

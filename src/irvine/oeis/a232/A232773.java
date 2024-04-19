@@ -1,6 +1,6 @@
 package irvine.oeis.a232;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -28,8 +28,8 @@ public class A232773 extends Sequence0 {
       sum = sum.add(Z.valueOf(mN).pow(k)
         .multiply(Stirling.firstKind(mN, mN - k))
         .multiply(Stirling.firstKind(mN + 1, k + 1))
-        .multiply(MemoryFactorial.SINGLETON.factorial(mN - k))
-        .multiply(MemoryFactorial.SINGLETON.factorial(k))
+        .multiply(Functions.FACTORIAL.z(mN - k))
+        .multiply(Functions.FACTORIAL.z(k))
         .multiply(((mN & 1) == 0) ? 1 : -1));
     }
     return sum;

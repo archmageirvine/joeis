@@ -31,7 +31,7 @@ public class A002849 extends AbstractSequence {
 
   private int mN = 0;
 
-  private HashMap<Pair<List<Long>, Integer>, Z> mCache = new HashMap<>();
+  private final HashMap<Pair<List<Long>, Integer>, Z> mCache = new HashMap<>();
 
   private Z nxyz(final List<Long> v, final int t) {
     if (t == 0) {

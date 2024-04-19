@@ -16,7 +16,7 @@ public class A249373 extends A000040 {
       final Z prime = super.next();
       final String primeStr = prime.toString();
       for (int middle = 1; middle <= 9; ++middle) {
-        if (new Z(primeStr + String.valueOf(middle) + primeStr).isProbablePrime()) {
+        if (new Z(primeStr + middle + primeStr).isProbablePrime()) {
           return prime;
         }
       }

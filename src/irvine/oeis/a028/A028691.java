@@ -1,6 +1,7 @@
 package irvine.oeis.a028;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -16,7 +17,8 @@ public class A028691 extends A028689 {
     final Z a = super.next();
     int k = 0;
     while (true) {
-      if (mF.factorial(++k).mod(a).isZero()) {
+      final int n = ++k;
+      if (Functions.FACTORIAL.z(n).mod(a).isZero()) {
         return Z.valueOf(k);
       }
     }

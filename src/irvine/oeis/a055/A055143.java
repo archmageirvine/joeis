@@ -10,8 +10,8 @@ import irvine.oeis.Sequence1;
 public class A055143 extends Sequence1 {
 
   private int mN;
-  private int mBase;
-  private StringBuilder mStr; // the concatenation
+  private final int mBase;
+  private final StringBuilder mStr; // the concatenation
   private int mS; // the number to be appended
 
   /** Construct the sequence. */

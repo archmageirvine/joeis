@@ -1,6 +1,7 @@
 package irvine.oeis.a008;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -22,7 +23,7 @@ public class A008969 extends Sequence1 {
       return Z.ZERO;
     }
     Z sum = Z.ZERO;
-    final Z a = mF.factorial(n - k + 2).pow(k);
+    final Z a = Functions.FACTORIAL.z(n - k + 2).pow(k);
     for (int j = 1; j <= n - k + 2; ++j) {
       sum = sum.signedAdd((j & 1) == 1, a.multiply(Binomial.binomial(n - k + 2, j)).divide(Z.valueOf(j).pow(k)));
     }

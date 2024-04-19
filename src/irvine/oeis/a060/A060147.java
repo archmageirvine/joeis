@@ -14,7 +14,7 @@ public class A060147 extends Sequence0 {
 
   private int mN;
   private long mP2; // powers of 2
-  private Sequence mSeq;
+  private final Sequence mSeq;
 
   /** Construct the sequence. */
   public A060147() {

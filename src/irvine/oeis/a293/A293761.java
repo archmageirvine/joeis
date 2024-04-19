@@ -12,10 +12,10 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 public class A293761 extends Sequence1 {
 
   private int mN;
-  private Z mD0;
-  private Z mD1;
+  private final Z mD0;
+  private final Z mD1;
   private Z mPrev;
-  private int mState = 0; // of finite automaton 
+  private final int mState = 0; // of finite automaton
   private final DecimalExpansionSequence mSeq;
 
   /** Construct the sequence. */

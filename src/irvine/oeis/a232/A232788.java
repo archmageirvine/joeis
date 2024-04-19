@@ -1,6 +1,6 @@
 package irvine.oeis.a232;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -14,6 +14,6 @@ public class A232788 extends A232773 {
   @Override
   public Z next() {
     ++mN;
-    return super.next().divide(MemoryFactorial.SINGLETON.doubleFactorial(mN));
+    return super.next().divide(Functions.MULTIFACTORIAL.z(mN));
   }
 }

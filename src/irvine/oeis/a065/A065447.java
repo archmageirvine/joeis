@@ -11,7 +11,7 @@ import irvine.util.string.StringUtils;
 public class A065447 extends Sequence1 {
 
   private int mN = 0;
-  private StringBuffer mA = new StringBuffer();
+  private final StringBuffer mA = new StringBuffer();
 
   @Override
   public Z next() {

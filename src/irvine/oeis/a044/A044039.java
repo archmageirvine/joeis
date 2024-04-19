@@ -11,8 +11,8 @@ import irvine.oeis.Sequence1;
  */
 public class A044039 extends Sequence1 {
 
-  private static final String P12 = String.valueOf(7) + String.valueOf(9);
-  private static final String P21 = String.valueOf(9) + String.valueOf(7);
+  private static final String P12 = String.valueOf(7) + 9;
+  private static final String P21 = String.valueOf(9) + 7;
   private int mN = 1;
   private Z mK = Z.ZERO;
 

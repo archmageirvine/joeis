@@ -10,7 +10,7 @@ import irvine.oeis.a192.A192895;
  */
 public class A292257 extends A192895 {
 
-  private A000120 mSeq = new A000120();
+  private final A000120 mSeq = new A000120();
 
   {
     mSeq.next();

@@ -3,6 +3,7 @@ package irvine.oeis.a000;
 import java.util.Collections;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -42,6 +43,6 @@ public class A000314 extends Sequence0 {
       mPrev = RING.shift(exp(mPrev, mN - 1), 1);
     }
     //System.out.println(mPrev);
-    return mPrev.coeff(mN).multiply(mF.factorial(mN - 1)).toZ();
+    return mPrev.coeff(mN).multiply(Functions.FACTORIAL.z(mN - 1)).toZ();
   }
 }

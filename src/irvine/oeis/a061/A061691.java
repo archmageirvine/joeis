@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
 import irvine.math.MemoryFunction1;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -27,14 +27,16 @@ public class A061691 extends Sequence1 {
     protected Polynomial<Q> compute(final int n) {
       return n == 0
         ? RING.one()
-        : RING.sum(1, n, i -> RING.multiply(get(n - i).shift(1), new Q(Binomial.binomial(n, i), MemoryFactorial.SINGLETON.factorial(i))));
+        : RING.sum(1, n, i -> {
+        return RING.multiply(get(n - i).shift(1), new Q(Binomial.binomial(n, i), Functions.FACTORIAL.z(i)));
+      });
     }
   };
 
   protected Z t(final int n, final int m) {
     return mB.get(n).coeff(m)
-      .multiply(MemoryFactorial.SINGLETON.factorial(n))
-      .divide(MemoryFactorial.SINGLETON.factorial(m))
+      .multiply(Functions.FACTORIAL.z(n))
+      .divide(Functions.FACTORIAL.z(m))
       .toZ();
   }
 

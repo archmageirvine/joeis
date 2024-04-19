@@ -1,6 +1,7 @@
 package irvine.oeis.a000;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -23,7 +24,7 @@ public class A000222 extends Sequence0 {
     Polynomial<Z> p = RING.zero();
     for (int k = 0; k <= n; ++k) {
       final long u = 2L * n - k;
-      final Z m = Binomial.binomial(u, k).multiply(mFactorial.factorial(n - k));
+      final Z m = Binomial.binomial(u, k).multiply(Functions.FACTORIAL.z(n - k));
       p = RING.add(p, RING.multiply(RING.pow(BASE, k), m));
     }
     return p;

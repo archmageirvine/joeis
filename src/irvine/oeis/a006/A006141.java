@@ -15,7 +15,7 @@ public class A006141 extends A003114 {
     super(1);
   }
 
-  private A003106 mOther = new A003106();
+  private final A003106 mOther = new A003106();
 
   {
     next();

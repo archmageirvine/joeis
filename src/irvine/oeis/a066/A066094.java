@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -33,6 +33,6 @@ public class A066094 extends Sequence0 {
       mGf = ring.series(num, den, mN);
       mM = 0;
     }
-    return mGf.coeff(mN).coeff(mM).multiply(MemoryFactorial.SINGLETON.factorial(mN)).toZ().max(Z.ONE);
+    return mGf.coeff(mN).coeff(mM).multiply(Functions.FACTORIAL.z(mN)).toZ().max(Z.ONE);
   }
 }

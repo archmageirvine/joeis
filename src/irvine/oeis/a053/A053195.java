@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunctionInt3Sequence;
@@ -32,7 +33,7 @@ public class A053195 extends MemoryFunctionInt3Sequence<Z> {
       final int[] bottom = new int[j + 1];
       Arrays.fill(bottom, i);
       bottom[0] = n - i * j;
-      sum = sum.add(Binomial.multinomial(n, bottom).multiply(mF.factorial(i - 1).pow(j)).multiply(get(n - i * j, i - 2 * p, p)).divide(mF.factorial(j)));
+      sum = sum.add(Binomial.multinomial(n, bottom).multiply(Functions.FACTORIAL.z(i - 1).pow(j)).multiply(get(n - i * j, i - 2 * p, p)).divide(Functions.FACTORIAL.z(j)));
     }
     return sum;
   }

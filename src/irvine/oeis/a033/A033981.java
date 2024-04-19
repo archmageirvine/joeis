@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
  */
 public class A033981 extends Sequence1 {
 
-  private Z mExp2; // exponent of 2
+  private final Z mExp2; // exponent of 2
   private Z mN = Z.ZERO;
 
   /** Construct the sequence. */

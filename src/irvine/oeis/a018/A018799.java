@@ -10,7 +10,7 @@ import irvine.util.array.DynamicArray;
  */
 public class A018799 extends Sequence1 {
 
-  private DynamicArray<String> mCache = new DynamicArray<>();
+  private final DynamicArray<String> mCache = new DynamicArray<>();
   {
     mCache.set(0, "1");
   }

@@ -16,7 +16,7 @@ public class A049085 extends Sequence0 {
 
   private int mN = 0;
   private int mM = -1;
-  private List<int[]> mA = new ArrayList<>();
+  private final List<int[]> mA = new ArrayList<>();
   {
     mA.add(new int[] {0});
   }

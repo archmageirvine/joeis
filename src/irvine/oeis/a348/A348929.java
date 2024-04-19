@@ -12,7 +12,7 @@ import irvine.oeis.a003.A003959;
 public class A348929 extends AbstractSequence {
 
   private int mN;
-  private A003959 mSeq1 = new A003959();
+  private final A003959 mSeq1 = new A003959();
 
   /** Construct the sequence. */
   public A348929() {

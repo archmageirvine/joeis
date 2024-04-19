@@ -18,7 +18,7 @@ public class A163807 extends Sequence1 {
     final int len = s.length();
     final StringBuilder sb = new StringBuilder(s).reverse();
     if (s.length() > 3) {
-      return new Z(s.substring(0, 1) + sb.substring(1, len - 1) + s.substring(len - 1), 2);
+      return new Z(s.charAt(0) + sb.substring(1, len - 1) + s.substring(len - 1), 2);
     } else {
       return Z.valueOf(mN);
     }

@@ -13,7 +13,7 @@ public class A053623 extends Sequence1 {
 
   private long mN = 0;
   private long mCount = 0;
-  private TreeSet<Long> mSeen = new TreeSet<>();
+  private final TreeSet<Long> mSeen = new TreeSet<>();
 
   private void search() {
     boolean foundExtension = false;

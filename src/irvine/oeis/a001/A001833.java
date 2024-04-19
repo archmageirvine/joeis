@@ -3,6 +3,7 @@ package irvine.oeis.a001;
 import java.util.ArrayList;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -29,7 +30,7 @@ public class A001833 extends Sequence0 {
     final ArrayList<Q> cp = mCCoeff.get(h);
     while (n >= cp.size()) {
       final int m = cp.size();
-      cp.add(new Q(A001827.c(h, m), mF.factorial(m)));
+      cp.add(new Q(A001827.c(h, m), Functions.FACTORIAL.z(m)));
     }
     return RING.create(cp);
   }
@@ -39,7 +40,7 @@ public class A001833 extends Sequence0 {
     if (h <= 1 || n <= 1) {
       return Z.ONE;
     }
-    return RING.coeff(cPoly(h, n), cPoly(h - 1, n), n).multiply(mF.factorial(n)).toZ();
+    return RING.coeff(cPoly(h, n), cPoly(h - 1, n), n).multiply(Functions.FACTORIAL.z(n)).toZ();
   }
 
   @Override

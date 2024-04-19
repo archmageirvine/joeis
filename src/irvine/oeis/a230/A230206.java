@@ -14,7 +14,7 @@ public class A230206 extends AbstractSequence {
 
   private int mN;
   private int mK;
-  private int mM;
+  private final int mM;
 
   /** Construct the sequence. */
   public A230206() {

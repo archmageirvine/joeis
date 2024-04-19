@@ -1,6 +1,6 @@
 package irvine.oeis.a067;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Binomial;
@@ -21,6 +21,8 @@ public class A067654 extends Sequence1 {
 
   @Override
   public Z next() {
-    return select(Rationals.SINGLETON.sum(1, ++mN, k -> new Q(Binomial.binomial(mN - 1, k - 1).shiftLeft(k), MemoryFactorial.SINGLETON.factorial(k))));
+    return select(Rationals.SINGLETON.sum(1, ++mN, k -> {
+      return new Q(Binomial.binomial(mN - 1, k - 1).shiftLeft(k), Functions.FACTORIAL.z(k));
+    }));
   }
 }

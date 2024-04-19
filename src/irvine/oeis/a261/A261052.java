@@ -2,6 +2,7 @@ package irvine.oeis.a261;
 // manually genetm/genetfg at 2022-02-20 19:58
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.transform.GeneralizedEulerTransform;
 
@@ -21,7 +22,7 @@ public class A261052 extends GeneralizedEulerTransform {
 
   @Override
   protected Z[] advanceF(final long k) {
-    return new Z[] {FACTORIAL.factorial((int) k).negate()};
+    return new Z[] {Functions.FACTORIAL.z((int) k).negate()};
   }
 
   @Override

@@ -13,7 +13,7 @@ public class A032591 extends A000040 {
     setOffset(0);
   }
 
-  private Z[] mQueue = new Z[3];
+  private final Z[] mQueue = new Z[3];
   private int mIndex = mQueue.length;
 
   @Override

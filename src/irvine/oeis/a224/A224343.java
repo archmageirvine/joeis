@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000796;
  */
 public class A224343 extends A000796 {
 
-  private Z[] mTab = new Z[]
+  private final Z[] mTab = new Z[]
     {Z.valueOf(64) // 0
       , Z.valueOf(34) // 1
       , Z.valueOf(58) // 2

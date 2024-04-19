@@ -14,7 +14,7 @@ public class A178664 extends LambdaSequence {
   public A178664() {
     super(0, n -> {
       final Z v = Z.TWO.pow(n);
-      return new Z(v.toString() + v.toString());
+      return new Z(v.toString() + v);
     });
   }
 }

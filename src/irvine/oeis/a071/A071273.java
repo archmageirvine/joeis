@@ -14,6 +14,6 @@ public class A071273 extends Sequence1 {
   @Override
   public Z next() {
     final String sn = String.valueOf(++mN);
-    return new Z(new StringBuilder(sn).reverse().toString() + sn);
+    return new Z(new StringBuilder(sn).reverse() + sn);
   }
 }

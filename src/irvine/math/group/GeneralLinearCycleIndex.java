@@ -131,10 +131,10 @@ public final class GeneralLinearCycleIndex {
     int s = a;
     for (final int j : b) {
       s -= j;
-      den = den.multiply(FACTORIAL.factorial(j));
+      den = den.multiply(Functions.FACTORIAL.z(j));
     }
-    den = den.multiply(FACTORIAL.factorial(s));
-    return FACTORIAL.factorial(a).divide(den);
+    den = den.multiply(Functions.FACTORIAL.z(s));
+    return Functions.FACTORIAL.z(a).divide(den);
   }
 
   /*

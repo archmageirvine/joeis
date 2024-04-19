@@ -2,6 +2,7 @@ package irvine.oeis.a038;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +20,7 @@ public class A038041 extends Sequence1 {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(++mN).divisors()) {
       final int d = dd.intValue();
-      sum = sum.add(mF.factorial(mN).divide(mF.factorial(d)).divide(mF.factorial(mN / d).pow(d)));
+      sum = sum.add(Functions.FACTORIAL.z(mN).divide(Functions.FACTORIAL.z(d)).divide(Functions.FACTORIAL.z(mN / d).pow(d)));
     }
     return sum;
   }

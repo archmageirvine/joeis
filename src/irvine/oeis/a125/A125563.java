@@ -1,6 +1,6 @@
 package irvine.oeis.a125;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -16,6 +16,6 @@ public class A125563 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return new Q(MemoryFactorial.SINGLETON.factorial(4 * mN + 1), Z.FIVE.pow(mN)).den();
+    return new Q(Functions.FACTORIAL.z(4 * mN + 1), Z.FIVE.pow(mN)).den();
   }
 }

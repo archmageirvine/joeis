@@ -2,6 +2,7 @@ package irvine.oeis.a327;
 
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
@@ -66,7 +67,7 @@ public class A327371 extends AbstractSequence {
         final Polynomial<Polynomial<Z>> t = ring.multiply(ring.series(num, den, n - k), innerRing.monomial(IntegerPartition.permCount(p).shiftLeft(edges(p)), 0));
         gp = ring.add(gp, t);
       }
-      g = ring.add(g, ring.divide(gp, innerRing.monomial(mF.factorial(k), 0)).shift(k));
+      g = ring.add(g, ring.divide(gp, innerRing.monomial(Functions.FACTORIAL.z(k), 0)).shift(k));
     }
     g = ring.multiply(g, ring.oneMinusXToTheN(innerRing.x(), 2));
     return ring.series(g, ring.oneMinusXToTheN(C1, 2), n);

@@ -1,6 +1,7 @@
 package irvine.oeis.a100;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
@@ -29,7 +30,7 @@ public class A100640 extends Sequence0 {
         m = m.multiply(n);
         s = s.add(new Q(Stirling.firstKind(n, a).multiply(m), Z.valueOf(a + 1)));
       }
-      return s.divide(F.factorial(n));
+      return s.divide(Functions.FACTORIAL.z(n));
     } else {
       Q s = Q.ZERO;
       Z m = Z.ONE;
@@ -44,7 +45,7 @@ public class A100640 extends Sequence0 {
         }
         s = s.add(u);
       }
-      return s.multiply(Binomial.binomial(n, k)).divide(F.factorial(n));
+      return s.multiply(Binomial.binomial(n, k)).divide(Functions.FACTORIAL.z(n));
     }
   }
 

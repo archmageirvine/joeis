@@ -12,7 +12,7 @@ import irvine.oeis.a000.A000045;
 public class A079899 extends Sequence1 {
 
   private int mN = 0;
-  private Sequence mSeq = new A000045();
+  private final Sequence mSeq = new A000045();
   private Z mFib;
   private Z mA;
 

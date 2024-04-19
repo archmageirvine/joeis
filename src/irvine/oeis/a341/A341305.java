@@ -22,7 +22,7 @@ public class A341305 extends ConvolutionProduct {
    * @param exponent exponents for F_{3A}
    */
   public A341305(final int exponent) {
-    super(0, "1/2," + String.valueOf(exponent),
+    super(0, "1/2," + exponent,
       new RootSequence(0, new A030197().skip(1), -1, 1) { // this is (1 - 108/t_{3A})
         private int mN = -1;
 

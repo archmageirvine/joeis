@@ -1,6 +1,6 @@
 package irvine.oeis.a059;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -53,7 +53,7 @@ public class A059082 extends Sequence0 {
   private static Z f(final int k, final int n) {
     return k + 1 <= n
       ? Z.ZERO
-      : MemoryFactorial.SINGLETON.factorial(k).divide(MemoryFactorial.SINGLETON.factorial(k - n));
+      : Functions.FACTORIAL.z(k).divide(Functions.FACTORIAL.z(k - n));
   }
 
   @Override

@@ -11,7 +11,7 @@ import irvine.oeis.Sequence1;
 public class A028965 extends Sequence1 {
 
   private long mN = 36721680;
-  private Z[] mA = new Z[6];
+  private final Z[] mA = new Z[6];
 
   @Override
   public Z next() {

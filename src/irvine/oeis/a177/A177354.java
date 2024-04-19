@@ -1,6 +1,6 @@
 package irvine.oeis.a177;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
@@ -14,9 +14,9 @@ public class A177354 extends MemorySequence {
   @Override
   public Z computeNext() {
     final int n = size();
-    Z sum = MemoryFactorial.SINGLETON.factorial(n + 6).subtract(MemoryFactorial.SINGLETON.factorial(n + 5).multiply(5));
+    Z sum = Functions.FACTORIAL.z(n + 6).subtract(Functions.FACTORIAL.z(n + 5).multiply(5));
     for (int i = 0; i < n; ++i) {
-      sum = sum.subtract(MemoryFactorial.SINGLETON.factorial(n + 4 - i).multiply(a(i)));
+      sum = sum.subtract(Functions.FACTORIAL.z(n + 4 - i).multiply(a(i)));
     }
     return sum.divide(24);
   }

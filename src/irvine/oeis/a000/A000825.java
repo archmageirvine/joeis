@@ -3,6 +3,7 @@ package irvine.oeis.a000;
 import java.util.Arrays;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -28,6 +29,6 @@ public class A000825 extends Sequence0 {
     final Polynomial<Q> cos = RING.cos(RING.x(), mN);
     final Polynomial<Q> cos2 = RING.cos(TWO, mN);
     final Polynomial<Q> egf = RING.series(RING.multiply(cos, RING.add(RING.one(), sin), mN), cos2, mN);
-    return egf.coeff(mN).multiply(mF.factorial(mN)).toZ();
+    return egf.coeff(mN).multiply(Functions.FACTORIAL.z(mN)).toZ();
   }
 }

@@ -1,6 +1,6 @@
 package irvine.oeis.a109;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
@@ -14,6 +14,8 @@ public class A109892 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A109892() {
-    super(1, n -> Binomial.binomial(MemoryFactorial.SINGLETON.factorial(n).add(n), Z.valueOf(n)));
+    super(1, n -> {
+      return Binomial.binomial(Functions.FACTORIAL.z(n).add(n), Z.valueOf(n));
+    });
   }
 }

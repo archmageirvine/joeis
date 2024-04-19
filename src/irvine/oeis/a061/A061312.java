@@ -1,6 +1,6 @@
 package irvine.oeis.a061;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
@@ -17,7 +17,7 @@ public class A061312 extends Triangle {
 
   @Override
   public Z compute(final int n, final int k) {
-    return n == 0 ? Z.ZERO : (k == 0 ? MemoryFactorial.SINGLETON.factorial(n).multiply(n)
+    return n == 0 ? Z.ZERO : (k == 0 ? Functions.FACTORIAL.z(n).multiply(n)
       : get(n, k - 1).subtract(get(n - 1, k - 1)));
   }
 }

@@ -13,7 +13,7 @@ public class A005655 extends A005654 {
     super(0);
   }
 
-  private A005648 mA5648 = new A005648();
+  private final A005648 mA5648 = new A005648();
   private boolean mFirst = true;
 
   @Override

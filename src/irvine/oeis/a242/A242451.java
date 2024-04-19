@@ -1,7 +1,7 @@
 package irvine.oeis.a242;
 
 import irvine.math.MemoryFunctionInt4;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
@@ -24,7 +24,7 @@ public class A242451 extends Triangle {
     @Override
     protected Q compute(final int n, final int i, final int p, final int k) {
       if (n == 0) {
-        return new Q(MemoryFactorial.SINGLETON.factorial(p));
+        return new Q(Functions.FACTORIAL.z(p));
       }
       if (i < 1) {
         return Q.ZERO;
@@ -32,7 +32,7 @@ public class A242451 extends Triangle {
       Q sum = get(n, i - 1, p, k);
       final int jmax = n / i;
       for (int j = Math.max(1, k); j <= jmax; ++j) {
-        sum = sum.add(get(n - i * j, i - 1, p + j, k).divide(MemoryFactorial.SINGLETON.factorial(j)));
+        sum = sum.add(get(n - i * j, i - 1, p + j, k).divide(Functions.FACTORIAL.z(j)));
       }
       return sum;
     }

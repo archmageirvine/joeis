@@ -1,6 +1,7 @@
 package irvine.oeis.a068;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
@@ -19,9 +20,9 @@ public class A068182 extends Sequence0 {
   private int mN = 0;
 
   private Z tauPlus3(final int g) {
-    return F.factorial(6 * g - 3).multiply2()
-      .divide(F.factorial(g))
-      .divide(F.factorial(3 * g - 2))
+    return Functions.FACTORIAL.z(6 * g - 3).multiply2()
+      .divide(Functions.FACTORIAL.z(g))
+      .divide(Functions.FACTORIAL.z(3 * g - 2))
       .divide(Z12.pow(g));
   }
 
@@ -32,12 +33,14 @@ public class A068182 extends Sequence0 {
   private Q innerSum(final int k) {
     final Z a = Z.TWO.pow(2L * mN - 1 - 3L * k).add(Z.NEG_ONE.pow(k));
     return Rationals.SINGLETON.sum(0, k - mN / 2,
-      g -> new Q(
-        a.multiply(F.factorial(2 * k - 2 * g)),
-        F.factorial(g)
-          .multiply(F.factorial(k - g))
-          .multiply(F.factorial(4 * k + 3 - 2 * mN - 4 * g))
-      ).multiply(pow3(g - 2)).divide(F.factorial(2 * mN - 1 - 3 * k)));
+      g -> {
+        return new Q(
+          a.multiply(Functions.FACTORIAL.z(2 * k - 2 * g)),
+          Functions.FACTORIAL.z(g)
+            .multiply(Functions.FACTORIAL.z(k - g))
+            .multiply(Functions.FACTORIAL.z(4 * k + 3 - 2 * mN - 4 * g))
+        ).multiply(pow3(g - 2)).divide(Functions.FACTORIAL.z(2 * mN - 1 - 3 * k));
+      });
   }
 
   private Q pow34(final int g) {
@@ -46,21 +49,25 @@ public class A068182 extends Sequence0 {
 
   private Q sum1(final int n) {
     return Rationals.SINGLETON.sum(0, n / 2,
-      g -> new Q(
-        F.factorial(4 * n - 2 - 2 * g),
-        F.factorial(g)
-          .multiply(F.factorial(2 * n - 1 - g))
-          .multiply(F.factorial(2 * n - 4 * g + 1))
-          .multiply(Z.THREE.pow(g))
-          .multiply2()));
+      g -> {
+        return new Q(
+          Functions.FACTORIAL.z(4 * n - 2 - 2 * g),
+          Functions.FACTORIAL.z(g)
+            .multiply(Functions.FACTORIAL.z(2 * n - 1 - g))
+            .multiply(Functions.FACTORIAL.z(2 * n - 4 * g + 1))
+            .multiply(Z.THREE.pow(g))
+            .multiply2());
+      });
   }
 
   private Q sum2(final int n) {
     return Rationals.SINGLETON.sum(0, (n + 1) / 3,
-        g -> new Q(
-          Z.TWO.pow(n + 1 - 3L * g).add(Z.NEG_ONE.pow(n - g)),
-          F.factorial(g).multiply(F.factorial(n + 1 - 3 * g))).multiply(pow34(g - 1)))
-      .multiply(new Q(F.factorial(2 * n - 2), F.factorial(n - 1).multiply(6)));
+        g -> {
+          return new Q(
+            Z.TWO.pow(n + 1 - 3L * g).add(Z.NEG_ONE.pow(n - g)),
+            Functions.FACTORIAL.z(g).multiply(Functions.FACTORIAL.z(n + 1 - 3 * g))).multiply(pow34(g - 1));
+        })
+      .multiply(new Q(Functions.FACTORIAL.z(2 * n - 2), Functions.FACTORIAL.z(n - 1).multiply(6)));
   }
 
   @Override

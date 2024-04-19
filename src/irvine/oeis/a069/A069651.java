@@ -1,7 +1,7 @@
 package irvine.oeis.a069;
 // manually anopan 0,0
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a005.A005249;
 
@@ -21,6 +21,6 @@ public class A069651 extends A005249 {
   @Override
   public Z next() {
     ++mN;
-    return (mN == 1) ? Z.ONE : super.next().divide(MemoryFactorial.SINGLETON.factorial(mN * 2 - 1));
+    return (mN == 1) ? Z.ONE : super.next().divide(Functions.FACTORIAL.z(mN * 2 - 1));
   }
 }

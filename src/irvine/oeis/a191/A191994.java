@@ -12,7 +12,7 @@ import irvine.oeis.a003.A003266;
  */
 public class A191994 extends A000071 {
 
-  private Sequence mSeq = new A003266();
+  private final Sequence mSeq = new A003266();
 
   {
     setOffset(1);

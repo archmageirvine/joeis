@@ -13,7 +13,7 @@ public class A104088 extends Sequence1 {
   private final Fast mPrime = new Fast();
   private int mN = 0;
 
-  private Z mBase; // base
+  private final Z mBase; // base
 
   /** Construct the sequence. */
   public A104088() {

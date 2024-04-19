@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeSet;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.util.Pair;
@@ -23,7 +23,7 @@ public final class CycleIndexReadBigN {
     for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
       final int d = e.getKey().right();
       final Z j = e.getValue();
-      fix = fix.multiply(MemoryFactorial.SINGLETON.factorial(j)).multiply(Z.valueOf(d).pow(j));
+      fix = fix.multiply(Functions.FACTORIAL.z(j)).multiply(Z.valueOf(d).pow(j));
     }
     return fix;
   }

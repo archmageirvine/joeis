@@ -9,7 +9,7 @@ import irvine.oeis.transform.InverseMobiusTransformSequence;
  */
 public class A318446 extends InverseMobiusTransformSequence {
 
-  private int mN = 0;
+  private final int mN = 0;
 
   /** Construct the sequence. */
   public A318446() {

@@ -11,11 +11,11 @@ import irvine.oeis.Sequence1;
  */
 public class A190016 extends Sequence1 {
 
-  private long mN;
-  private int mMode;
-  private int mBase;
-  private long mLimit;
-  private TreeMap<String, String> mMap;
+  private final long mN;
+  private final int mMode;
+  private final int mBase;
+  private final long mLimit;
+  private final TreeMap<String, String> mMap;
   private static final String SPACES = "                                "; // 32 spaces
 
   /** Construct the sequence. */

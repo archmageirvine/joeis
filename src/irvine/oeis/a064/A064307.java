@@ -1,6 +1,6 @@
 package irvine.oeis.a064;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
@@ -24,7 +24,7 @@ public class A064307 extends A064308 {
       if (++mN > 2) {
         mRow = RING.pow(C, mN - 1);
         for (int k = 1; k < mN; ++k) {
-          mRow = RING.add(mRow, RING.multiply(RING.pow(C, mN - 1 - k), t(mN - 1, k).multiply(MemoryFactorial.SINGLETON.factorial(k))).shift(k));
+          mRow = RING.add(mRow, RING.multiply(RING.pow(C, mN - 1 - k), t(mN - 1, k).multiply(Functions.FACTORIAL.z(k))).shift(k));
         }
       }
       mM = 0;

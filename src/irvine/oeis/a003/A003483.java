@@ -3,6 +3,7 @@ package irvine.oeis.a003;
 import java.util.Arrays;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
@@ -31,7 +32,7 @@ public class A003483 extends MemoryFunction2Sequence<Integer, Z> {
         indices[0] = n - i * j;
         Arrays.fill(indices, 1, indices.length, i);
         final Z m = Binomial.multinomial(n, indices);
-        s = s.add(mF.factorial(i - 1).pow(j).multiply(m).divide(mF.factorial(j)).multiply(get(n - i * j, i - 1)));
+        s = s.add(Functions.FACTORIAL.z(i - 1).pow(j).multiply(m).divide(Functions.FACTORIAL.z(j)).multiply(get(n - i * j, i - 1)));
       }
     }
     return s;

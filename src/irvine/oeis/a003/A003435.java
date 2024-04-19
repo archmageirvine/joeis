@@ -1,6 +1,7 @@
 package irvine.oeis.a003;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
@@ -22,7 +23,7 @@ public class A003435 extends Sequence2 {
       final Z t = Binomial.binomial(mN, k)
         .multiply(2L * mN)
         .multiply(Z.ONE.shiftLeft(k))
-        .multiply(mF.factorial(2 * mN - k))
+        .multiply(Functions.FACTORIAL.z(2 * mN - k))
         .divide(2L * mN - k);
       s = s.signedAdd((k & 1) == 0, t);
     }

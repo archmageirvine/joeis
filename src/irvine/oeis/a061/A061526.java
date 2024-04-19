@@ -1,6 +1,7 @@
 package irvine.oeis.a061;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
@@ -171,7 +172,7 @@ public class A061526 extends Sequence1 {
 
   // The number of dumb games that had p x's, q o's and k n-in-a-rows at some point.
   private Z dg(final int n, final int p, final int q, final int k) {
-    return F.factorial(n * n - p - q).multiply(F.factorial(p)).multiply(F.factorial(q)).multiply(bp(n, p, q, k));
+    return Functions.FACTORIAL.z(n * n - p - q).multiply(Functions.FACTORIAL.z(p)).multiply(Functions.FACTORIAL.z(q)).multiply(bp(n, p, q, k));
   }
 
   private Z dg(final int n, final int p, final int q) {
@@ -190,12 +191,12 @@ public class A061526 extends Sequence1 {
 
   // The number of games won on x's t^th move.
   private Z gxt(final int n, final int t) {
-    return dgxt(n, t).divide(F.factorial(n * n - (2 * t - 1)));
+    return dgxt(n, t).divide(Functions.FACTORIAL.z(n * n - (2 * t - 1)));
   }
 
   // The number of games won on o's t^th move.
   private Z got(final int n, final int t) {
-    return dgot(n, t).divide(F.factorial(n * n - 2 * t));
+    return dgot(n, t).divide(Functions.FACTORIAL.z(n * n - 2 * t));
   }
 
   // The number of games of n x n tic-tac-toe won by x

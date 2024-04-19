@@ -5,6 +5,7 @@ import java.io.Serializable;
 import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction1;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
@@ -46,7 +47,7 @@ public class A007838 extends MemorySequence {
     }
     Z sum = Z.ZERO;
     for (int k = 1; k <= n; ++k) {
-      sum = sum.add(getB().get(k).multiply(mF.factorial(n - 1).divide(mF.factorial(n - k)).multiply(a(n - k))).toZ());
+      sum = sum.add(getB().get(k).multiply(Functions.FACTORIAL.z(n - 1).divide(Functions.FACTORIAL.z(n - k)).multiply(a(n - k))).toZ());
     }
     return sum;
   }

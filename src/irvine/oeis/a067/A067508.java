@@ -10,7 +10,7 @@ import irvine.oeis.AbstractSequence;
  */
 public class A067508 extends AbstractSequence {
 
-  private int mBase;
+  private final int mBase;
   private Z mPow;
 
   /** Construct the sequence. */

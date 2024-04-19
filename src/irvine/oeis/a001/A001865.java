@@ -1,6 +1,7 @@
 package irvine.oeis.a001;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -35,7 +36,8 @@ public class A001865 extends AbstractSequence {
       if (k > 1) {
         m = m.multiply(mN);
       }
-      final Z t = mF.factorial(k == 0 ? mN - 1 : mN).multiply(m).divide(mF.factorial(k));
+      final int n = k == 0 ? mN - 1 : mN;
+      final Z t = Functions.FACTORIAL.z(n).multiply(m).divide(Functions.FACTORIAL.z(k));
       s = s.add(t);
     }
     return s;

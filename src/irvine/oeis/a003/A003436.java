@@ -1,5 +1,6 @@
 package irvine.oeis.a003;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.PrependSequence;
 
@@ -14,7 +15,7 @@ public class A003436 extends PrependSequence {
     super(new A003435() {
       @Override
       public Z next() {
-        return super.next().shiftRight(mN).divide(mF.factorial(mN));
+        return super.next().shiftRight(mN).divide(Functions.FACTORIAL.z(mN));
       }
     }, Z.ONE, Z.ZERO);
   }

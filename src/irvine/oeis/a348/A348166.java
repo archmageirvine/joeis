@@ -13,6 +13,6 @@ public class A348166 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A348166() {
-    super(1, (n, s) -> new Z(n.toString() + n.toString()).subtract(s[0]).abs(), "", new A338754().skip(1));
+    super(1, (n, s) -> new Z(n.toString() + n).subtract(s[0]).abs(), "", new A338754().skip(1));
   }
 }

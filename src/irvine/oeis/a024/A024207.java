@@ -10,7 +10,7 @@ import irvine.oeis.memory.MemoryFunction2Sequence;
  */
 public class A024207 extends MemoryFunction2Sequence<Long, Z> {
 
-  private A008284 mPartitions = new A008284();
+  private final A008284 mPartitions = new A008284();
   protected long mN = -1;
 
   @Override

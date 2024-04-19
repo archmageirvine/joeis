@@ -10,7 +10,7 @@ import irvine.oeis.AbstractSequence;
 public class A121810 extends AbstractSequence {
 
   private int mN;
-  private Z[] mA;
+  private final Z[] mA;
   private static final int MASK = 0b11;
 
   /** Construct the sequence. */

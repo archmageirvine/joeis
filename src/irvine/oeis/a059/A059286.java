@@ -1,6 +1,6 @@
 package irvine.oeis.a059;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -32,6 +32,6 @@ public class A059286 extends Sequence0 {
       }
       mM = 0;
     }
-    return mEgf.coeff(mM).coeff(mN - mM).multiply(MemoryFactorial.SINGLETON.factorial(mN - mM)).multiply(MemoryFactorial.SINGLETON.factorial(mM)).toZ();
+    return mEgf.coeff(mM).coeff(mN - mM).multiply(Functions.FACTORIAL.z(mN - mM)).multiply(Functions.FACTORIAL.z(mM)).toZ();
   }
 }

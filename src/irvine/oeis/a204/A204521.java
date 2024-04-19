@@ -11,8 +11,8 @@ import irvine.oeis.a055.A055812;
  */
 public class A204521 extends Sequence1 {
 
-  private Sequence mSeq;
-  private int mBase;
+  private final Sequence mSeq;
+  private final int mBase;
 
   /** Construct the sequence. */
   public A204521() {

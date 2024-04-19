@@ -1,6 +1,7 @@
 package irvine.oeis.a028;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
@@ -33,7 +34,7 @@ public class A028338 extends MemoryFunction2Sequence<Integer, Z> {
       return Z.ONE;
     }
     if (m == 0) {
-      return mF.doubleFactorial(2 * n - 1);
+      return Functions.MULTIFACTORIAL.z(2 * n - 1);
     }
     return get(n - 1, m).multiply(2L * n - 1).add(get(n - 1, m - 1));
   }

@@ -13,8 +13,8 @@ import irvine.oeis.a003.A003415;
 public class A157037 extends AbstractSequence {
 
   private long mN;
-  private AbstractSequence mSeq;
-  private BiFunction<Long, Z, Boolean> mLambda; // (n, t) -> condition
+  private final AbstractSequence mSeq;
+  private final BiFunction<Long, Z, Boolean> mLambda; // (n, t) -> condition
 
   /** Construct the sequence. */
   public A157037() {

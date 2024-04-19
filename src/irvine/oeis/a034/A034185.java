@@ -22,7 +22,7 @@ public class A034185 extends Sequence1 {
   private final int mEdgeMask = (1 << (height() - 1)) + 1;
   private int mN = 0;
   private long mCount = 0;
-  private boolean[] mWorkspace = new boolean[height() + 1];
+  private final boolean[] mWorkspace = new boolean[height() + 1];
 
   protected int height() {
     return 3;

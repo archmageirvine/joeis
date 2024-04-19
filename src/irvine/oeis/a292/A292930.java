@@ -1,7 +1,7 @@
 package irvine.oeis.a292;
 // manually at 2024-03-28
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.oeis.triangle.LambdaTriangle;
 
@@ -13,6 +13,8 @@ public class A292930 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A292930() {
-    super(1, 1, 1, (n, k) -> Binomial.binomial(k + 2, 3).multiply(MemoryFactorial.SINGLETON.factorial(n)).divide(MemoryFactorial.SINGLETON.factorial(n - k)));
+    super(1, 1, 1, (n, k) -> {
+      return Binomial.binomial(k + 2, 3).multiply(Functions.FACTORIAL.z(n)).divide(Functions.FACTORIAL.z(n - k));
+    });
   }
 }

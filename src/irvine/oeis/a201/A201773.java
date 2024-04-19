@@ -25,6 +25,6 @@ public class A201773 extends A000045 {
       mPiDigit = mPi.next().intValue();
       ++mPiPos;
     }
-    return new Z(String.valueOf(f) + String.valueOf(mPiDigit));
+    return new Z(String.valueOf(f) + mPiDigit);
   }
 }

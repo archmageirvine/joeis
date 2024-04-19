@@ -1,6 +1,6 @@
 package irvine.oeis.a139;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -35,6 +35,6 @@ public class A139160 extends A000040 {
 
   @Override
   public Z next() {
-    return MemoryFactorial.SINGLETON.factorial(super.next()).add(mParm).divide(mAbsParm);
+    return Functions.FACTORIAL.z(super.next()).add(mParm).divide(mAbsParm);
   }
 }

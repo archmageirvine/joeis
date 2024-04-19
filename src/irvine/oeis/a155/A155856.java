@@ -1,6 +1,6 @@
 package irvine.oeis.a155;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
@@ -19,6 +19,6 @@ public class A155856 extends BaseTriangle {
 
   @Override
   public Z triangleElement(final int n, final int k) {
-    return Binomial.binomial(2L * n - k, k).multiply(MemoryFactorial.SINGLETON.factorial(n - k));
+    return Binomial.binomial(2L * n - k, k).multiply(Functions.FACTORIAL.z(n - k));
   }
 }

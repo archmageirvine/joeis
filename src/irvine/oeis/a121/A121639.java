@@ -1,7 +1,7 @@
 package irvine.oeis.a121;
 // manually 2023-12-24/tuptraf at 2023-12-26 12:51
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -33,7 +33,7 @@ public class A121639 extends AbstractSequence {
       mA = Z.FIVE;
       return mA;
     }
-    mA = mA.multiply(mN).add(MemoryFactorial.SINGLETON.factorial(mN - 1)).subtract(MemoryFactorial.SINGLETON.factorial(mN - 3));
+    mA = mA.multiply(mN).add(Functions.FACTORIAL.z(mN - 1)).subtract(Functions.FACTORIAL.z(mN - 3));
     return mA;
   }
 }

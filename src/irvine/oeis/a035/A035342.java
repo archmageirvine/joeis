@@ -1,6 +1,7 @@
 package irvine.oeis.a035;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -33,7 +34,7 @@ public class A035342 extends AbstractSequence {
     for (int j = 0; j <= n - k; ++j) {
       sum = sum.add(Binomial.binomial(j + k - 1, k - 1).multiply(Binomial.binomial(2L * n - j - k - 1, n - 1)).multiply(j + k).shiftLeft(j));
     }
-    return sum.multiply(mF.factorial(n - 1)).divide(mF.factorial(k)).shiftRight(n - k);
+    return sum.multiply(Functions.FACTORIAL.z(n - 1)).divide(Functions.FACTORIAL.z(k)).shiftRight(n - k);
   }
 
   @Override

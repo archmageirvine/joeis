@@ -11,7 +11,7 @@ import irvine.oeis.triangle.UpperLeftTriangle;
  */
 public class A068906 extends UpperLeftTriangle {
 
-  private MemorySequence mSeq = MemorySequence.cachedSequence(new A000041());
+  private final MemorySequence mSeq = MemorySequence.cachedSequence(new A000041());
 
   /** Construct the sequence. */
   public A068906() {

@@ -1,6 +1,6 @@
 package irvine.oeis.a068;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -53,7 +53,7 @@ public class A068214 extends Sequence0 {
     for (int k = 1; k <= n; ++k) {
       prod = prod.multiply(a(k));
     }
-    return prod.multiply(MemoryFactorial.SINGLETON.factorial(n)).multiply(Z.ONE.shiftLeft(n));
+    return prod.multiply(Functions.FACTORIAL.z(n)).multiply(Z.ONE.shiftLeft(n));
   }
 
   protected Z select(final Q n) {

@@ -21,7 +21,7 @@ public class A024528 extends AbstractSequence {
   }
 
   private Q mSum = Q.ZERO;
-  private Sequence mA2110 = new A002110();
+  private final Sequence mA2110 = new A002110();
 
   @Override
   public Z next() {

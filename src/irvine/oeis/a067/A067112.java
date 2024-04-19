@@ -11,9 +11,9 @@ import irvine.oeis.a000.A000040;
  */
 public class A067112 extends PrependSequence {
 
-  private Sequence mSeq; // underlying sequence
+  private final Sequence mSeq; // underlying sequence
   private Z mSum; // current sum
-  private StringBuilder mStr; // the concatenation
+  private final StringBuilder mStr; // the concatenation
   private int mPos; // position in mStr
 
   /** Construct the sequence. */

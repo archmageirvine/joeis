@@ -3,6 +3,7 @@ package irvine.oeis.a000;
 import java.io.Serializable;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -20,13 +21,13 @@ public class A000186 extends Sequence0 implements Serializable {
   public Z next() {
     ++mN;
     Z s = Z.ZERO;
-    final Z nf = mF.factorial(mN);
+    final Z nf = Functions.FACTORIAL.z(mN);
     for (int j = 0; j <= mN; ++j) {
       Z t = Z.ZERO;
       for (int k = 0; k <= mN - j; ++k) {
-        t = t.add(mF.factorial(k).multiply(Binomial.binomial(-3L * (k + 1), mN - k - j)));
+        t = t.add(Functions.FACTORIAL.z(k).multiply(Binomial.binomial(-3L * (k + 1), mN - k - j)));
       }
-      s = s.add(t.multiply(nf.divide(mF.factorial(j))).shiftLeft(j));
+      s = s.add(t.multiply(nf.divide(Functions.FACTORIAL.z(j))).shiftLeft(j));
     }
     return s;
   }

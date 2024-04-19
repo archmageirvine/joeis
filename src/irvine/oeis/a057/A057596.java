@@ -1,6 +1,6 @@
 package irvine.oeis.a057;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -33,7 +33,8 @@ public class A057596 extends AbstractSequence {
 
   @Override
   public Z next() {
-    mE.add(new Q(mSeq1.next().abs(), MemoryFactorial.SINGLETON.factorial(++mN)));
-    return RING.coeff(RING.one(), mE, mN).multiply(MemoryFactorial.SINGLETON.factorial(mN)).toZ();
+    final int n = ++mN;
+    mE.add(new Q(mSeq1.next().abs(), Functions.FACTORIAL.z(n)));
+    return RING.coeff(RING.one(), mE, mN).multiply(Functions.FACTORIAL.z(mN)).toZ();
   }
 }

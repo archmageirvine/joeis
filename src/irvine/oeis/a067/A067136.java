@@ -2,7 +2,7 @@ package irvine.oeis.a067;
 
 import java.util.Arrays;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -32,7 +32,7 @@ public class A067136 extends Sequence0 {
         prod = prod.multiply(gt(p, k, j) + p[k] - j - 1);
       }
     }
-    return MemoryFactorial.SINGLETON.factorial(n).divide(prod);
+    return Functions.FACTORIAL.z(n).divide(prod);
   }
 
   @Override

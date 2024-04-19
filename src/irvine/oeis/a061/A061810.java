@@ -10,7 +10,7 @@ import irvine.oeis.AbstractSequence;
 public class A061810 extends AbstractSequence {
 
   private long mN;
-  private Z mDigit;
+  private final Z mDigit;
   private final String mPattern;
 
   /** Construct the sequence. */

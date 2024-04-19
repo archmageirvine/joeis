@@ -9,7 +9,7 @@ import irvine.oeis.a046.A046079;
  */
 public class A056137 extends A046079 {
 
-  private A056138 mA = new A056138();
+  private final A056138 mA = new A056138();
 
   @Override
   public Z next() {

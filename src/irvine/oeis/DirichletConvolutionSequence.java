@@ -23,7 +23,7 @@ public class DirichletConvolutionSequence extends AbstractSequence {
    * @param offset1 offset of <code>seq1</code>
    */
   public DirichletConvolutionSequence(final Sequence seq1, final int offset1) {
-    this(DEFOFF, seq1, offset1);;
+    this(DEFOFF, seq1, offset1);
   }
 
   /**
@@ -34,7 +34,7 @@ public class DirichletConvolutionSequence extends AbstractSequence {
    * @param offset2 offset of <code>seq2</code>
    */
   public DirichletConvolutionSequence(final Sequence seq1, final int offset1, final Sequence seq2, final int offset2) {
-    this(DEFOFF, seq1, offset1, seq2, offset2);;
+    this(DEFOFF, seq1, offset1, seq2, offset2);
   }
 
   /**

@@ -12,10 +12,10 @@ import irvine.oeis.a000.A000040;
  */
 public class A133524 extends Sequence1 {
 
-  private int mExpon;
+  private final int mExpon;
   private Z mSum;
-  private Sequence mHead;
-  private Sequence mTail;
+  private final Sequence mHead;
+  private final Sequence mTail;
 
   /** Construct the sequence. */
   public A133524() {

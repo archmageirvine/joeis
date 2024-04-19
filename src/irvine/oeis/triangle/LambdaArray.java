@@ -17,9 +17,9 @@ public class LambdaArray extends AbstractSequence implements DirectArray {
   private static final int DEFOFF = 0;
   protected int mRow; // current row index n
   protected int mCol; // current column index k
-  private int mRowMin; // first row index
-  private int mColMin; // first columns index 
-  private int mDir; // direction: +1 = ascending, -1 = descending antidiagonals
+  private final int mRowMin; // first row index
+  private final int mColMin; // first columns index
+  private final int mDir; // direction: +1 = ascending, -1 = descending antidiagonals
   private BiFunction<Integer, Integer, Z> mLambda; // expression for A[n, k]
 
   /**

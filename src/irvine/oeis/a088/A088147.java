@@ -17,6 +17,6 @@ public class A088147 extends A000040 {
     final Z nextPrime = super.next();
     final String sNP = nextPrime.toString(2);
 
-    return new Z(sNP.substring(1) + sNP.substring(0, 1), 2);
+    return new Z(sNP.substring(1) + sNP.charAt(0), 2);
   }
 }

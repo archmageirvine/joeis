@@ -1,6 +1,5 @@
 package irvine.oeis.a004;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
@@ -19,7 +18,7 @@ public class A004153 extends A000142 implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    return Functions.REVERSE.z(MemoryFactorial.SINGLETON.factorial(n));
+    return Functions.REVERSE.z(Functions.FACTORIAL.z(n));
   }
 
   @Override

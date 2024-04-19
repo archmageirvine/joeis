@@ -9,7 +9,7 @@ import irvine.oeis.Sequence0;
  */
 public class A023427 extends Sequence0 {
 
-  private Z[] mA = {Z.ONE, Z.ONE, Z.ONE, Z.ONE, Z.ONE, Z.TWO, Z.FOUR, Z.SEVEN};
+  private final Z[] mA = {Z.ONE, Z.ONE, Z.ONE, Z.ONE, Z.ONE, Z.TWO, Z.FOUR, Z.SEVEN};
   private int mN = -1;
 
   @Override

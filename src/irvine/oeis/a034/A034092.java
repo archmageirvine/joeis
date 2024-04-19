@@ -9,7 +9,7 @@ import irvine.oeis.Sequence0;
  */
 public class A034092 extends Sequence0 {
 
-  private int[] mC = count();
+  private final int[] mC = count();
   private int mN = 0;
 
   private int[] count() {

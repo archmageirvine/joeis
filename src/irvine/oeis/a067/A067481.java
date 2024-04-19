@@ -9,8 +9,8 @@ import irvine.oeis.Sequence1;
  */
 public class A067481 extends Sequence1 {
 
-  private int mBase;
-  private int mDigit;
+  private final int mBase;
+  private final int mDigit;
   protected int mN;
   private Z mPow;
 

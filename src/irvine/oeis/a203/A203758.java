@@ -11,7 +11,7 @@ import irvine.oeis.memory.MemorySequence;
 public class A203758 extends Sequence1 {
 
   private int mN = 0;
-  private MemorySequence mSeq = MemorySequence.cachedSequence(new A203755());
+  private final MemorySequence mSeq = MemorySequence.cachedSequence(new A203755());
 
   @Override
   public Z next() {

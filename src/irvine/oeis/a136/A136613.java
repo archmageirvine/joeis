@@ -17,6 +17,6 @@ public class A136613 extends Sequence0 {
   public Z next() {
     ++mN;
     final Z n = Z.valueOf(mN);
-    return new Z(String.valueOf(Functions.DIGIT_SUM.l(n)) + String.valueOf(mN));
+    return new Z(String.valueOf(Functions.DIGIT_SUM.l(n)) + mN);
   }
 }

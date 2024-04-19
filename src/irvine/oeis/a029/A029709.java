@@ -14,7 +14,7 @@ public class A029709 extends Sequence1 {
   private Z mP0;
   private Z mP1;
   private long mN = 0;
-  private int mDist;
+  private final int mDist;
 
   /** Construct the sequence. */
   public A029709() {

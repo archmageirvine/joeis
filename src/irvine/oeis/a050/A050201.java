@@ -10,10 +10,10 @@ import irvine.oeis.a000.A000796;
  */
 public class A050201 extends A000796 {
 
-  private int mN = 0;
-  private long mM = -1;
-  private int mLast = 0;
-  private long mLastPos = 0;
+  private final int mN = 0;
+  private final long mM = -1;
+  private final int mLast = 0;
+  private final long mLastPos = 0;
 
   protected Z digit() {
     return Z.ONE;

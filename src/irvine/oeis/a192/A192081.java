@@ -28,7 +28,6 @@ public class A192081 extends Sequence0 {
     if (++mN == 0) {
       return Z.ONE;
     }
-    ;
     final Z result = mAn1;
     mOddFact = mOddFact.multiply(2L * mN).multiply(2L * mN + 1);
     mAn1 = mAn1.multiply(mOddFact.square().divide(mN + 1));

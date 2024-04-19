@@ -12,7 +12,7 @@ import irvine.oeis.a344.A344005;
 public class A345993 extends AbstractSequence {
 
   private int mN;
-  private A344005 mSeq1 = new A344005() {
+  private final A344005 mSeq1 = new A344005() {
     @Override
     public Z next() {
       return super.next().add(1);

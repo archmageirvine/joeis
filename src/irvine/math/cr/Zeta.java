@@ -174,7 +174,7 @@ public final class Zeta {
         r = zeta4p(n / 4);
       }
     } else {
-      final Q q = BERNOULLI.get(n).divide(2).divide(FACTORIAL.factorial(n));
+      final Q q = BERNOULLI.get(n).divide(2).divide(Functions.FACTORIAL.z(n));
       final CR cr = REALS.pow(CR.PI.multiply(CR.TWO), n).multiply(q);
       r = (n & 2) == 0 ? cr.negate() : cr;
     }

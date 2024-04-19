@@ -14,8 +14,8 @@ import irvine.oeis.Sequence1;
 public class A103123 extends Sequence1 {
 
   private Z mN;
-  private int mNum; // numerator of factor
-  private int mDen; // denominator of factor
+  private final int mNum; // numerator of factor
+  private final int mDen; // denominator of factor
 
   /** Construct the sequence. */
   public A103123() {

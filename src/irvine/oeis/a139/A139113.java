@@ -20,6 +20,6 @@ public class A139113 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return new Z(String.valueOf(mN) + mSeq.next().toString());
+    return new Z(mN + mSeq.next().toString());
   }
 }

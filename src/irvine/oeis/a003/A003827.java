@@ -1,6 +1,7 @@
 package irvine.oeis.a003;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -153,9 +154,9 @@ public class A003827 extends MemorySequence {
   @Override
   protected Z computeNext() {
     final int n = size();
-    Z r = mAll.next().subtract(mF.factorial(n));
+    Z r = mAll.next().subtract(Functions.FACTORIAL.z(n));
     for (int k = 1; k <= n - 3; ++k) {
-      final Z t = Binomial.binomial(n, k).square().multiply(mF.factorial(k)).multiply(a(n - k));
+      final Z t = Binomial.binomial(n, k).square().multiply(Functions.FACTORIAL.z(k)).multiply(a(n - k));
       r = r.subtract(t);
     }
     return r;

@@ -6,6 +6,7 @@ import irvine.factor.factor.PrimeDivision;
 import irvine.factor.util.FactorSequence;
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.a025.A025487;
@@ -23,10 +24,10 @@ public class A035796 extends A025487 {
 
   private Z c(final int[] sig) {
     final int s = (int) IntegerUtils.sum(sig);
-    Z t = Binomial.binomial(s, sig.length).multiply(mF.factorial(sig.length)).multiply(mF.factorial(s));
+    Z t = Binomial.binomial(s, sig.length).multiply(Functions.FACTORIAL.z(sig.length)).multiply(Functions.FACTORIAL.z(s));
     final HashSet<Integer> seen = new HashSet<>();
     for (final int v : sig) {
-      t = t.divide(mF.factorial(v));
+      t = t.divide(Functions.FACTORIAL.z(v));
       seen.add(v);
     }
     for (final int v : seen) {
@@ -36,7 +37,7 @@ public class A035796 extends A025487 {
           ++c;
         }
       }
-      t = t.divide(mF.factorial(c));
+      t = t.divide(Functions.FACTORIAL.z(c));
     }
     return t;
   }

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
@@ -152,7 +153,7 @@ public class A259976 extends MemoryFunction1Sequence<CycleIndex> {
     final IntegerPartition ppp = new IntegerPartition(p);
     int[] pp;
     while ((pp = ppp.next()) != null) {
-      final Q t = new Q(IntegerPartition.permCount(pp), mF.factorial(p));
+      final Q t = new Q(IntegerPartition.permCount(pp), Functions.FACTORIAL.z(p));
       final long[] sigma = cycles(edges(fromCycles(pp)));
       r = r.add(xiq.eval(sigma).multiply(t));
     }

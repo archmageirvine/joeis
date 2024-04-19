@@ -1,7 +1,7 @@
 package irvine.oeis.a215;
 
 import irvine.math.MemoryFunctionInt2;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
@@ -39,7 +39,7 @@ public class A215861 extends Triangle {
       for (int i = 0; i <= imax; ++i) {
         Z term = get(n - 1 - i, k - 1).multiply(Binomial.binomial(n - 1, i));
         if (i >= 2) {
-          term = term.multiply(MemoryFactorial.SINGLETON.factorial(i).divide2().add(Z.valueOf(i + 1).pow(i - 1)));
+          term = term.multiply(Functions.FACTORIAL.z(i).divide2().add(Z.valueOf(i + 1).pow(i - 1)));
         }
         sum = sum.add(term);
       }

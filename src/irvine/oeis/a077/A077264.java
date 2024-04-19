@@ -13,7 +13,7 @@ public class A077264 extends UpperLeftTriangle {
 
   private long mTrix; // index of current triangular number
   private long mStart; // value of T(n, 0)
-  private ArrayList<Z> mTrin = new ArrayList<>(); // increment for row n
+  private final ArrayList<Z> mTrin = new ArrayList<>(); // increment for row n
 
   /** Construct the sequence. */
   public A077264() {

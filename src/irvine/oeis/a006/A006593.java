@@ -10,7 +10,7 @@ import irvine.util.array.LongDynamicLongArray;
  */
 public class A006593 extends A046081 {
 
-  private LongDynamicLongArray mFirst = new LongDynamicLongArray();
+  private final LongDynamicLongArray mFirst = new LongDynamicLongArray();
   private long mN = 0;
   private long mM = 0;
 

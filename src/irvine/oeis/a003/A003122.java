@@ -4,6 +4,7 @@ import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunction1;
 import irvine.math.MemoryFunction2;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -19,13 +20,13 @@ public class A003122 extends MemoryFunction2Sequence<Integer, Z> {
   private int mN = -1;
 
   private static Z p(final int n, final int k) {
-    return FACTORIAL.factorial(2 * n + 2 * k - 4)
-      .divide(FACTORIAL.factorial(n + k - 2))
-      .multiply(FACTORIAL.factorial(2 * n + k - 1))
-      .divide(FACTORIAL.factorial(n + k - 1))
+    return Functions.FACTORIAL.z(2 * n + 2 * k - 4)
+      .divide(Functions.FACTORIAL.z(n + k - 2))
+      .multiply(Functions.FACTORIAL.z(2 * n + k - 1))
+      .divide(Functions.FACTORIAL.z(n + k - 1))
       .multiply(k)
-      .divide(FACTORIAL.factorial(n))
-      .divide(FACTORIAL.factorial(n + k));
+      .divide(Functions.FACTORIAL.z(n))
+      .divide(Functions.FACTORIAL.z(n + k));
   }
 
   private static class RFunction extends MemoryFunction1<Z> {
@@ -44,12 +45,12 @@ public class A003122 extends MemoryFunction2Sequence<Integer, Z> {
       while ((p = part.next()) != null) {
         IntegerPartition.toCountForm(p, a);
         if (IntegerUtils.sum(a) == m) {
-          Z t = FACTORIAL.factorial(m);
+          Z t = Functions.FACTORIAL.z(m);
           for (int k = 1; k < a.length; ++k) {
             final int mk = a[k];
             t = t.multiply(mR.get(k).pow(mk));
             if (mk > 1) {
-              t = t.divide(FACTORIAL.factorial(mk));
+              t = t.divide(Functions.FACTORIAL.z(mk));
             }
           }
           b = b.add(t);

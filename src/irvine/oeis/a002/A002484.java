@@ -23,7 +23,7 @@ public class A002484 extends Sequence3 {
     final Q tm = t.subtract(Q.ONE);
     for (int k = 0; k <= m; ++k) {
       final Z b = Binomial.binomial(2L * m - k, k);
-      final Z f = mF.factorial(m - k);
+      final Z f = Functions.FACTORIAL.z(m - k);
       s = s.add(new Q(b.multiply(2L * m).multiply(f), 2L * m - k).multiply(tp));
       tp = tp.multiply(tm);
     }

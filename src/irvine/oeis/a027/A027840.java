@@ -1,6 +1,7 @@
 package irvine.oeis.a027;
 
 import irvine.math.MemoryFunction2;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -29,7 +30,7 @@ public class A027840 extends A060240 {
       final IntegerPartition partition = new IntegerPartition(k);
       int[] p;
       while ((p = partition.next()) != null) {
-        sum = sum.add(mF.factorial(k).divide(degree(k, p)).pow(e));
+        sum = sum.add(Functions.FACTORIAL.z(k).divide(degree(k, p)).pow(e));
       }
       return sum;
     }

@@ -2,6 +2,7 @@ package irvine.oeis.a304;
 
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
@@ -33,7 +34,7 @@ public class A304942 extends Sequence0 {
       m = m.multiply(t).multiply(k);
       sum += t;
     }
-    return mF.factorial(sum).divide(m);
+    return Functions.FACTORIAL.z(sum).divide(m);
   }
 
   private Q k(final int[] q, final int t, final int k) {
@@ -59,7 +60,7 @@ public class A304942 extends Sequence0 {
       }
       sum = sum.add(RING.exp(s, n).coeff(n).multiply(permcount(q)));
     }
-    return sum.divide(mF.factorial(m)).toZ();
+    return sum.divide(Functions.FACTORIAL.z(m)).toZ();
   }
 
   @Override

@@ -1,6 +1,6 @@
 package irvine.oeis.a262;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
@@ -24,7 +24,7 @@ public class A262189 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Z result = MemoryFactorial.SINGLETON.factorial(mB.intValue()).divide(mA);
+    final Z result = Functions.FACTORIAL.z(mB.intValue()).divide(mA);
     mA = mB;
     mB = mSeq.next();
     return result;

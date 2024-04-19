@@ -13,8 +13,8 @@ import irvine.oeis.memory.MemorySequence;
 public class ReluctantSequence extends BaseTriangle {
 
   private final MemorySequence mSeq; // the underlying sequence
-  private int mRow = -1;
-  private int mCol = 0;
+  private final int mRow = -1;
+  private final int mCol = 0;
 
   /**
    * Constructor with offset and a row sequence

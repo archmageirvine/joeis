@@ -13,7 +13,7 @@ import irvine.oeis.triangle.UpperLeftTriangle;
  */
 public class A346520 extends UpperLeftTriangle {
 
-  private MemorySequence mA000009;
+  private final MemorySequence mA000009;
 
   /** Construct the sequence. */
   public A346520() {

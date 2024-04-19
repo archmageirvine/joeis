@@ -11,8 +11,8 @@ import irvine.oeis.a000.A000041;
 public class A237276 extends Sequence1 {
 
   private int mN;
-  private Z mRes;
-  private Z mMod;
+  private final Z mRes;
+  private final Z mMod;
   private final A000041 mSeq = new A000041();
 
   /** Construct the sequence. */

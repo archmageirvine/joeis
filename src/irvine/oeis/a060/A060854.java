@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000178;
@@ -17,7 +17,7 @@ public class A060854 extends Sequence1 {
   private int mM = 0;
 
   protected Z t(final int n, final int m) {
-    return MemoryFactorial.SINGLETON.factorial(n * m).multiply(mA.a(m - 1)).multiply(mA.a(n - 1)).divide(mA.a(m + n - 1));
+    return Functions.FACTORIAL.z(n * m).multiply(mA.a(m - 1)).multiply(mA.a(n - 1)).divide(mA.a(m + n - 1));
   }
 
   @Override

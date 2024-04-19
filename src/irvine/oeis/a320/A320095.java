@@ -15,7 +15,7 @@ import irvine.oeis.triangle.UpperLeftTriangle;
 public class A320095 extends Sequence1 {
 
   private int mN;
-  private UpperLeftTriangle mULT;
+  private final UpperLeftTriangle mULT;
 
   /** Construct the sequence. */
   public A320095() {

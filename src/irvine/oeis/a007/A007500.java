@@ -13,7 +13,7 @@ public class A007500 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.ONE;
-  private int mBase;
+  private final int mBase;
 
   /** Construct the sequence. */
   public A007500() {

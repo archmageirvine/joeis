@@ -3,6 +3,7 @@ package irvine.oeis.a246;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +18,8 @@ public class A246137 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Z nf = mF.factorial(++mN - 1);
+    final int n = ++mN - 1;
+    final Z nf = Functions.FACTORIAL.z(n);
     final FactorSequence fs = Jaguar.factor(mN);
     final Z[] z = fs.toZArray();
     if (z.length != 1 || Z.ONE.equals(z[0])) {

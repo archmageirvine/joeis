@@ -1,7 +1,7 @@
 package irvine.oeis.a072;
 // manually andiv 
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -24,7 +24,7 @@ public class A072529 extends AbstractSequence {
     // a(n) = n^n * [n(n+1)/2]! / [n(n-1)/2]!
     ++mN;
     return Z.valueOf(mN).pow(mN)
-      .multiply(MemoryFactorial.SINGLETON.factorial(mN * (mN + 1) / 2))
-      .divide(MemoryFactorial.SINGLETON.factorial(mN * (mN - 1) / 2));
+      .multiply(Functions.FACTORIAL.z(mN * (mN + 1) / 2))
+      .divide(Functions.FACTORIAL.z(mN * (mN - 1) / 2));
   }
 }

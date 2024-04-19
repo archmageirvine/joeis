@@ -1,6 +1,6 @@
 package irvine.oeis.a086;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a068.A068106;
 
@@ -14,6 +14,6 @@ public class A086764 extends A068106 {
   public Z next() {
     return mCol < 1
       ? super.next()
-      : super.next().divide(MemoryFactorial.SINGLETON.factorial(mCol));
+      : super.next().divide(Functions.FACTORIAL.z(mCol));
   }
 }

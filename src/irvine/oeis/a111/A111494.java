@@ -10,7 +10,7 @@ import irvine.oeis.a107.A107665;
  */
 public class A111494 extends A107665 {
 
-  private int mCount;
+  private final int mCount;
 
   /** Construct the sequence. */
   public A111494() {

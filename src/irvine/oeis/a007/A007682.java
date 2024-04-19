@@ -1,6 +1,7 @@
 package irvine.oeis.a007;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
@@ -20,7 +21,7 @@ public class A007682 extends MemorySequence {
     }
     Z sum = Z.ZERO;
     for (int k = 0; k < n; ++k) {
-      sum = sum.add(a(k).multiply(mF.factorial(n + k)).divide(mF.factorial(2 * k)));
+      sum = sum.add(a(k).multiply(Functions.FACTORIAL.z(n + k)).divide(Functions.FACTORIAL.z(2 * k)));
     }
     return sum.negate();
   }

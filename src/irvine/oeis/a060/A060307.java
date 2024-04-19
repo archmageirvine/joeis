@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -34,9 +35,9 @@ public class A060307 extends Sequence0 {
           Arrays.fill(v, i);
           v[0] = n - i * j;
           final Z t = Binomial.multinomial(n, v)
-            .multiply(mF.factorial(i - 1).pow(j))
+            .multiply(Functions.FACTORIAL.z(i - 1).pow(j))
             .multiply(get(n - i * j, i - 1))
-            .divide(mF.factorial(j));
+            .divide(Functions.FACTORIAL.z(j));
           sum = sum.add(t);
         }
       }

@@ -38,7 +38,7 @@ public class A030052 extends Sequence1 {
   }
 
   //private Map<Z, Integer> mPrecomputedValues = new TreeMap<>();
-  private Map<Z, Integer> mPrecomputedValues = new HashMap<>();
+  private final Map<Z, Integer> mPrecomputedValues = new HashMap<>();
 
   private boolean searchWithTree(final Z target, final int prev, final int isSum) {
     final Integer cnt = mPrecomputedValues.get(target);

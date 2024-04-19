@@ -1,6 +1,7 @@
 package irvine.oeis.a036;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -30,7 +31,7 @@ public class A036064 extends Sequence0 {
       if ((mM & 1) == 0) {
         return select(new Q(Binomial.binomial(mN, mM), Binomial.binomial(mN / 2, mM / 2)));
       } else {
-        return select(new Q(mF.factorial(mN), mF.factorial(mM / 2).multiply(mF.factorial(mN / 2)).multiply(mF.factorial(mN / 2 - mM / 2 - 1)).shiftLeft(mN)));
+        return select(new Q(Functions.FACTORIAL.z(mN), Functions.FACTORIAL.z(mM / 2).multiply(Functions.FACTORIAL.z(mN / 2)).multiply(Functions.FACTORIAL.z(mN / 2 - mM / 2 - 1)).shiftLeft(mN)));
       }
     } else {
       if ((mM & 1) == 0) {

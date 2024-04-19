@@ -1,7 +1,7 @@
 package irvine.oeis.a337;
 // manually andiv 
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -16,6 +16,7 @@ public class A337303 extends Sequence0 {
 
   @Override
   public Z next() {
-    return mSeq1.next().multiply(MemoryFactorial.SINGLETON.factorial(++mN));
+    final int n = ++mN;
+    return mSeq1.next().multiply(Functions.FACTORIAL.z(n));
   }
 }

@@ -11,8 +11,8 @@ import irvine.oeis.AbstractSequence;
 public class A269241 extends AbstractSequence {
 
   private long mN;
-  private int mDigit;
-  private int mExpon;
+  private final int mDigit;
+  private final int mExpon;
 
   /** Construct the sequence. */
   public A269241() {

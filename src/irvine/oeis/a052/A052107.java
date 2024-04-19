@@ -2,6 +2,7 @@ package irvine.oeis.a052;
 
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -57,7 +58,7 @@ public class A052107 extends AbstractSequence {
         final Z t = IntegerPartition.permCount(p, 4).shiftLeft(2L * edges(p));
         sum = sum.add(t.multiply((mN & 1) == 1 ? Z.valueOf(mN).shiftLeft(2L * p.length) : Z.ONE));
       }
-      return sum.divide(mF.factorial(mN));
+      return sum.divide(Functions.FACTORIAL.z(mN));
     } else {
       return Z.ZERO;
     }

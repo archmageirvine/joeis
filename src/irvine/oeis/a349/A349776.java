@@ -1,7 +1,7 @@
 package irvine.oeis.a349;
 // manually 2022-12-26
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
@@ -21,8 +21,10 @@ public class A349776 extends BaseTriangle {
   @Override
   public Z triangleElement(final int n, final int k) {
     // Sum_{j=0..k} binomial(n-1, n-j)*n!/j!.
-    return Integers.SINGLETON.sum(0, k, j -> Binomial.binomial(n - 1, n - j)
-      .multiply(MemoryFactorial.SINGLETON.factorial(n))
-      .divide(MemoryFactorial.SINGLETON.factorial(j)));
+    return Integers.SINGLETON.sum(0, k, j -> {
+      return Binomial.binomial(n - 1, n - j)
+        .multiply(Functions.FACTORIAL.z(n))
+        .divide(Functions.FACTORIAL.z(j));
+    });
   }
 }

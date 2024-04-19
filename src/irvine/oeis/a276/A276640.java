@@ -1,6 +1,6 @@
 package irvine.oeis.a276;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
@@ -32,10 +32,10 @@ public class A276640 extends A276639 {
     for (int k = 0; k <= lim; ++k) {
       sum = sum.signedAdd((k & 1) == 0,
         Binomial.binomial(n, 2L * k)
-          .multiply(MemoryFactorial.SINGLETON.factorial(2 * k))
+          .multiply(Functions.FACTORIAL.z(2 * k))
           .multiply(super.t(n - 2 * k, m - k))
           .shiftRight(k)
-          .divide(MemoryFactorial.SINGLETON.factorial(k)));
+          .divide(Functions.FACTORIAL.z(k)));
     }
     return sum;
   }

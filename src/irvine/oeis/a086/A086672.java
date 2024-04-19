@@ -13,7 +13,7 @@ import irvine.oeis.transform.Stirling1TransformSequence;
 public class A086672 extends Sequence0 {
 
   private int mN = -1;
-  private Sequence mSeq1 = new Stirling1TransformSequence(new A000108(), 0);
+  private final Sequence mSeq1 = new Stirling1TransformSequence(new A000108(), 0);
 
   @Override
   public Z next() {

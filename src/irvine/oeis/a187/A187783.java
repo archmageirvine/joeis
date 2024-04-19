@@ -1,6 +1,6 @@
 package irvine.oeis.a187;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
@@ -18,6 +18,6 @@ public class A187783 extends UpperLeftTriangle {
 
   @Override
   public Z matrixElement(final int m, final int n) {
-    return MemoryFactorial.SINGLETON.factorial(m * n).divide(MemoryFactorial.SINGLETON.factorial(n).pow(m));
+    return Functions.FACTORIAL.z(m * n).divide(Functions.FACTORIAL.z(n).pow(m));
   }
 }

@@ -12,7 +12,7 @@ import java.util.Random;
 import irvine.math.Shuffle;
 import irvine.math.api.Group;
 import irvine.math.api.Set;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.partition.MurnaghanNakayama;
 import irvine.math.polynomial.CycleIndex;
@@ -58,7 +58,7 @@ public class SymmetricGroup<T> extends AbstractGroup<Permutation<T>> {
     mSet = set;
     mName = name;
     mZero = new Permutation<>(set, new HashMap<>());
-    mSize = MemoryFactorial.SINGLETON.factorial(mSet.size());
+    mSize = Functions.FACTORIAL.z(mSet.size());
   }
 
   /**
@@ -180,7 +180,7 @@ public class SymmetricGroup<T> extends AbstractGroup<Permutation<T>> {
   public static Z per(final int[] a) {
     Z c = Z.ONE;
     for (int i = 1; i < a.length; ++i) {
-      c = c.multiply(MemoryFactorial.SINGLETON.factorial(a[i])).multiply(Z.valueOf(i).pow(a[i]));
+      c = c.multiply(Functions.FACTORIAL.z(a[i])).multiply(Z.valueOf(i).pow(a[i]));
     }
     return c;
   }

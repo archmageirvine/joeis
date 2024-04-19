@@ -16,7 +16,7 @@ public class A025760 extends Sequence0 {
   private static final Polynomial<Z> NUM = RING.monomial(Z.SEVEN, 0);
   private int mN = -1;
   private Z mA = Z.ONE;
-  private Polynomial<Z> mD = RING.monomial(mA.add(Z.SIX), 0);
+  private final Polynomial<Z> mD = RING.monomial(mA.add(Z.SIX), 0);
 
   @Override
   public Z next() {

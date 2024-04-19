@@ -1,6 +1,6 @@
 package irvine.oeis.a065;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
@@ -16,6 +16,6 @@ public class A065974 extends Sequence0 {
 
   @Override
   public Z next() {
-    return new Q(Stirling.secondKind(++mN, 3).multiply(6), MemoryFactorial.SINGLETON.factorial(mN)).num();
+    return new Q(Stirling.secondKind(++mN, 3).multiply(6), Functions.FACTORIAL.z(mN)).num();
   }
 }

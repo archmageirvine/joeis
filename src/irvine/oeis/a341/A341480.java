@@ -10,8 +10,8 @@ import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 public class A341480 extends MemoryFunctionInt2Sequence<Z> {
 
   private int mN;
-  private int mParts;
-  private int mDist;
+  private final int mParts;
+  private final int mDist;
 
   /** Construct the sequence. */
   public A341480() {

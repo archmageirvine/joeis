@@ -2,7 +2,7 @@ package irvine.oeis.a060;
 
 import java.util.Arrays;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -35,7 +35,7 @@ public class A060492 extends Sequence3 {
       final Polynomial<Q> b = inner.series(inner.one(), inner.pow(inner.oneMinusXToTheN(1), Binomial.binomial(k, 3).intValueExact(), m), m);
       final Polynomial<Q> c = inner.series(inner.one(), inner.multiply(inner.pow(inner.oneMinusXToTheN(1), k, m), Q.TWO), m);
       final Polynomial<Polynomial<Q>> e = ring.exp(ring.monomial(inner.negate(c), 2), m);
-      sum = ring.add(sum, ring.multiply(ring.multiply(e, b), inner.monomial(new Q(Z.ONE, MemoryFactorial.SINGLETON.factorial(k)), 0)).shift(k));
+      sum = ring.add(sum, ring.multiply(ring.multiply(e, b), inner.monomial(new Q(Z.ONE, Functions.FACTORIAL.z(k)), 0)).shift(k));
     }
     return ring.serlaplace(ring.multiply(exp, sum, m));
   }

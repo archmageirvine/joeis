@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -14,6 +14,6 @@ public class A060696 extends Sequence0 {
 
   @Override
   public Z next() {
-    return ++mN < 0 ? Z.ONE : MemoryFactorial.SINGLETON.doubleFactorial(mN).add(MemoryFactorial.SINGLETON.doubleFactorial(mN + 1));
+    return ++mN < 0 ? Z.ONE : Functions.MULTIFACTORIAL.z(mN).add(Functions.MULTIFACTORIAL.z(mN + 1));
   }
 }

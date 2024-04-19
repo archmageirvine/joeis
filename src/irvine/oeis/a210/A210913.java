@@ -2,6 +2,7 @@ package irvine.oeis.a210;
 
 import irvine.math.MemoryFunction2;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
@@ -27,7 +28,7 @@ public class A210913 extends ExponentialGeneratingFunction {
       }
       Polynomial<Q> sum = RING.zero();
       for (int m = 1; m <= k; ++m) {
-        sum = RING.add(sum, RING.divide(get(k - m, n), new Q(mFactorial.factorial(m))).shift(m));
+        sum = RING.add(sum, RING.divide(get(k - m, n), new Q(Functions.FACTORIAL.z(m))).shift(m));
       }
       return RING.exp(sum.truncate(n), n);
     }

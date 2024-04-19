@@ -1,6 +1,7 @@
 package irvine.oeis.a005;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
@@ -20,7 +21,7 @@ public class A005415 extends MemorySequence {
     if (r == 2) {
       return Z.ONE;
     }
-    return mF.factorial(2 * r - 4).divide(mF.factorial(r - 2));
+    return Functions.FACTORIAL.z(2 * r - 4).divide(Functions.FACTORIAL.z(r - 2));
   }
 
   @Override

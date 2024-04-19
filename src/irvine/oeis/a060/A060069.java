@@ -1,5 +1,6 @@
 package irvine.oeis.a060;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a059.A059530;
 
@@ -24,7 +25,7 @@ public class A060069 extends A059530 {
       int k = 2;
       while (true) {
         ++k;
-        final Z t = get(k, mN).coeff(mN).coeff(k).multiply(F.factorial(k)).toZ();
+        final Z t = get(k, mN).coeff(mN).coeff(k).multiply(Functions.FACTORIAL.z(k)).toZ();
         if (!sum.isZero() && t.isZero()) {
           break;
         }

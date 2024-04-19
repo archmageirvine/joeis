@@ -3,6 +3,7 @@ package irvine.oeis.a094;
 import java.util.Arrays;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -28,7 +29,7 @@ public class A094351 extends Sequence0 {
     int k = 0;
     while (true) {
       if (!isUsed(k)) {
-        final Z p = mProd.multiply(mF.factorial(k));
+        final Z p = mProd.multiply(Functions.FACTORIAL.z(k));
         if (p.add(1).isProbablePrime()) {
           mUsed[k] = true;
           mProd = p;

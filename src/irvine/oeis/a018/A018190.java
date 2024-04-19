@@ -177,7 +177,7 @@ public class A018190 extends Sequence1 {
 
   private int mGlobalInit; /* a marker whether the canonLabel() routine is called for a new skeleton or the same one as before */
   //private int just_skeletons = 0; /* shall just skeletons be generated */
-  private int mModulo = 0;
+  private final int mModulo = 0;
   //private int part;   /* shall the generation be split -- which part is to be generated */
   private int mModuloCounter = 0;
   //private int pl_code_out = 0;
@@ -185,7 +185,7 @@ public class A018190 extends Sequence1 {
   //  private char logfilename[100];
   //private int just_count = 0; /* by default all isomers are really formed in the memory of the computer -- this can be switched off */
   private boolean mBenzenoids = false; /* shall just benzenoid structures be generated ? */
-  private boolean mDetailed = false; /* shall additional data like the mGroupName and the formula be computed and
+  private final boolean mDetailed = false; /* shall additional data like the mGroupName and the formula be computed and
        displayed ? Option: d */
   //FILE *outfile; /* The file to write data to -- default: stdout */
 

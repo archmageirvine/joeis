@@ -1,6 +1,7 @@
 package irvine.oeis.a067;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.HarmonicSequence;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
@@ -17,8 +18,12 @@ public class A067857 extends CachedSequence {
 
   /** Construct the sequence. */
   public A067857() {
-    super(1, Integer.class, (self, n) -> H.nextQ()
-      .subtract(Rationals.SINGLETON.sumdiv(n, k -> k.equals(n) ? Q.ZERO : new Q(self.a(k), F.factorial(k))))
-      .multiply(F.factorial(n)).toZ());
+    super(1, Integer.class, (self, n) -> {
+      return H.nextQ()
+        .subtract(Rationals.SINGLETON.sumdiv(n, k -> {
+          return k.equals(n) ? Q.ZERO : new Q(self.a(k), Functions.FACTORIAL.z(k));
+        }))
+        .multiply(Functions.FACTORIAL.z(n)).toZ();
+    });
   }
 }

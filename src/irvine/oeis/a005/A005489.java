@@ -3,6 +3,7 @@ package irvine.oeis.a005;
 import java.util.Arrays;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
@@ -51,7 +52,7 @@ public class A005489 extends MemoryFunctionSequence<Integer, Polynomial<Q>> {
     }
     Q sum = Q.ZERO;
     for (int k = 0; k < gamma.size(); ++k) {
-      sum = sum.add(gamma.coeff(k).multiply(mF.factorial(mp + k)).divide(mF.factorial(m + k)));
+      sum = sum.add(gamma.coeff(k).multiply(Functions.FACTORIAL.z(mp + k)).divide(Functions.FACTORIAL.z(m + k)));
     }
     // Strictly there should be a multiplier applied to the sum as below, but
     // because we only care if the sum if 0 and the multiplier is never 0, then

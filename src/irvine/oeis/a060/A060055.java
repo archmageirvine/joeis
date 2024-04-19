@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.FilterSequence;
@@ -16,7 +16,7 @@ public class A060055 extends FilterSequence {
     super(new A060054() {
       @Override
       protected Z select(final Q n) {
-        return n.isZero() ? Z.ZERO : n.den().multiply(MemoryFactorial.SINGLETON.factorial(mN));
+        return n.isZero() ? Z.ZERO : n.den().multiply(Functions.FACTORIAL.z(mN));
       }
     }, NONZERO);
   }

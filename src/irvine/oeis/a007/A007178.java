@@ -1,6 +1,7 @@
 package irvine.oeis.a007;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
@@ -25,13 +26,13 @@ public class A007178 extends MemoryFunctionInt3Sequence<Z> {
     }
     if (r == 0) {
       if (n == 0) {
-        return mF.factorial(p);
+        return Functions.FACTORIAL.z(p);
       }
       return Z.ZERO;
     }
     Z sum = Z.ZERO;
     for (int j = 0; j <= Math.min(n, r); ++j) {
-      sum = sum.add(get(n - j, 2 * (r - j), p + j).divide(mF.factorial(j)));
+      sum = sum.add(get(n - j, 2 * (r - j), p + j).divide(Functions.FACTORIAL.z(j)));
     }
     return sum;
   }

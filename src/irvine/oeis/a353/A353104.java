@@ -11,7 +11,7 @@ import irvine.oeis.a007.A007908;
  */
 public class A353104 extends Sequence1 {
 
-  private int mBase;
+  private final int mBase;
   private final Sequence mSeq;
 
   /** Construct the sequence. */

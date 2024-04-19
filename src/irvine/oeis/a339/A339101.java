@@ -1,7 +1,7 @@
 package irvine.oeis.a339;
 
 import irvine.math.MemoryFunctionInt3;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -42,7 +42,7 @@ public class A339101 extends AbstractSequence {
     @Override
     protected Z compute(final int n, final int i, final int p) {
       if (n == 0) {
-        return MemoryFactorial.SINGLETON.factorial(p);
+        return Functions.FACTORIAL.z(p);
       }
       if ((i - mNpart + 1) * (i + mNpart) / 2 < n) {
         return Z.ZERO;

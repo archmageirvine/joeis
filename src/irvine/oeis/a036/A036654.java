@@ -3,6 +3,7 @@ package irvine.oeis.a036;
 import java.util.ArrayList;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -41,20 +42,20 @@ public class A036654 extends Sequence0 {
         sum = RING.add(sum, RING.multiply(RING.diff(mS.get(n - k)), new Q(mD.a(k))));
       }
       final Z t = mA.next();
-      Polynomial<Q> u = RING.add(sum, RING.add(RING.monomial(new Q(t, mF.factorial(n)), n), RING.monomial(new Q(t, mF.factorial(n - 1)), n - 1)));
+      Polynomial<Q> u = RING.add(sum, RING.add(RING.monomial(new Q(t, Functions.FACTORIAL.z(n)), n), RING.monomial(new Q(t, Functions.FACTORIAL.z(n - 1)), n - 1)));
       Polynomial<Q> prev;
       do {
         prev = u;
         final Polynomial<Q> v = RING.divide(RING.add(sum, RING.multiply(Y1, RING.diff(u))), new Q(n));
         u = RING.empty();
         for (int k = 0; k <= v.degree(); ++k) {
-          final Z f = mF.factorial(k);
+          final Z f = Functions.FACTORIAL.z(k);
           u.add(new Q(v.get(k).multiply(f).ceiling(), f));
         }
       } while (!prev.equals(u));
       mS.add(u);
       mM = 0;
     }
-    return mS.get(mS.size() - 1).coeff(mM).multiply(mF.factorial(mM)).toZ();
+    return mS.get(mS.size() - 1).coeff(mM).multiply(Functions.FACTORIAL.z(mM)).toZ();
   }
 }

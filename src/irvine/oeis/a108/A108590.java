@@ -16,8 +16,8 @@ public class A108590 extends Sequence1 {
   private int mN;
   private int mI1; // index in mSeqLo
   private int mI2; // index in mSeqHi
-  private MemorySequence mSeq1;
-  private MemorySequence mSeq2;
+  private final MemorySequence mSeq1;
+  private final MemorySequence mSeq2;
 
   /** Construct the sequence. */
   public A108590() {

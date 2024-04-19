@@ -1,7 +1,7 @@
 package irvine.oeis.a253;
 
 import irvine.math.MemoryFunctionInt3;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -13,7 +13,7 @@ import irvine.oeis.Sequence0;
 public class A253095 extends Sequence0 {
 
   private int mN;
-  private int mStep;
+  private final int mStep;
 
   /** Construct the sequence. */
   public A253095() {
@@ -57,10 +57,10 @@ public class A253095 extends Sequence0 {
       for (int j = 0; j <= k; ++j) {
         sum = sum.add(get(n - 1, nu, 2 * j)
           .multiply(Binomial.binomial(k, j))
-          .multiply(MemoryFactorial.SINGLETON.factorial(k + nu))
-          .multiply(MemoryFactorial.SINGLETON.factorial(nu))
-          .divide(MemoryFactorial.SINGLETON.factorial(k - j + nu))
-          .divide(MemoryFactorial.SINGLETON.factorial(j + nu)));
+          .multiply(Functions.FACTORIAL.z(k + nu))
+          .multiply(Functions.FACTORIAL.z(nu))
+          .divide(Functions.FACTORIAL.z(k - j + nu))
+          .divide(Functions.FACTORIAL.z(j + nu)));
       }
       return sum;
     }

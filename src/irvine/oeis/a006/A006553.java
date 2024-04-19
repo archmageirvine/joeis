@@ -11,7 +11,7 @@ public class A006553 extends Sequence1 {
 
   private long mN = 0;
   private Z mT = Z.ONE;
-  private int mBase;
+  private final int mBase;
 
   /** Construct the sequence. */
   public A006553() {

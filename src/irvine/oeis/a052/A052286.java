@@ -1,7 +1,7 @@
 package irvine.oeis.a052;
 
 import irvine.math.LongUtils;
-import irvine.math.factorial.Factorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -21,7 +21,7 @@ public class A052286 extends A000040 {
       long sum = 0;
       while (!m.isZero()) {
         final Z[] qr = m.divideAndRemainder(Z.TEN);
-        sum += Factorial.FACTORIAL[qr[1].intValue()];
+        sum += Functions.FACTORIAL.l(qr[1]);
         m = qr[0];
       }
       final long s = LongUtils.sqrt(sum);

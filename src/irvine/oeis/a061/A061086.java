@@ -15,6 +15,6 @@ public class A061086 extends Sequence1 {
   public Z next() {
     ++mN;
     final Z n3 = Z.valueOf(mN).multiply(mN).multiply(mN);
-    return new Z(String.valueOf(mN) + n3.toString());
+    return new Z(mN + n3.toString());
   }
 }

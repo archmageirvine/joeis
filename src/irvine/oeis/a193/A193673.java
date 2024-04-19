@@ -11,7 +11,7 @@ import irvine.oeis.triangle.Triangle;
 public class A193673 extends Sequence0 {
 
   private Z[] mLine = new Z[0];
-  private Triangle mTri = new Triangle();
+  private final Triangle mTri = new Triangle();
   private int mR = -1; // current row
   private int mC = -1; // current column
 

@@ -11,7 +11,7 @@ public class A270406 extends A269920 {
 
   private int mN; // edges
   private int mG; // genus
-  private int mF; // faces
+  private final int mF; // faces
 
   /** Construct the sequence. */
   public A270406() {

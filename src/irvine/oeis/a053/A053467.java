@@ -1,6 +1,7 @@
 package irvine.oeis.a053;
 
 import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.a052.A052107;
@@ -38,6 +39,6 @@ public class A053467 extends A052107 {
       final Z t = IntegerPartition.permCount(p, 1).multiply(Z.THREE.pow(edges(p)));
       sum = sum.add(t);
     }
-    return sum.divide(mF.factorial(mN));
+    return sum.divide(Functions.FACTORIAL.z(mN));
   }
 }

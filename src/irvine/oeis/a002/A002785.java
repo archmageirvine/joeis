@@ -2,6 +2,7 @@ package irvine.oeis.a002;
 
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -47,7 +48,7 @@ public class A002785 extends Sequence1 {
     Z p = Z.ONE;
     // all even terms are 0
     for (int k = 1; k < j.length; k += 2) {
-      p = p.multiply(mF.factorial(j[k]).multiply(Z.valueOf(k).pow(j[k])));
+      p = p.multiply(Functions.FACTORIAL.z(j[k]).multiply(Z.valueOf(k).pow(j[k])));
     }
     return p;
   }

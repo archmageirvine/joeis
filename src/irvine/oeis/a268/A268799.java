@@ -13,10 +13,10 @@ public class A268799 extends AbstractSequence {
   private final Fast mPrime = new Fast();
   private Z mS;
   private Z mP;
-  private long mMod;
-  private long mRes;
+  private final long mMod;
+  private final long mRes;
   private Z mRecordGap;
-  private int mVariant;
+  private final int mVariant;
 
   /** Construct the sequence. */
   public A268799() {

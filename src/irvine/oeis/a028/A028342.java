@@ -20,9 +20,9 @@ public class A028342 extends MemorySequence {
       return Z.ONE;
     }
     Z sum = Z.ZERO;
-    final Z f = mF.factorial(n - 1);
+    final Z f = Functions.FACTORIAL.z(n - 1);
     for (int k = 0; k < n; ++k) {
-      sum = sum.add(f.multiply(Functions.SIGMA0.z(k + 1)).multiply(a(n - k - 1)).divide(mF.factorial(n - k - 1)));
+      sum = sum.add(f.multiply(Functions.SIGMA0.z(k + 1)).multiply(a(n - k - 1)).divide(Functions.FACTORIAL.z(n - k - 1)));
     }
     return sum;
   }

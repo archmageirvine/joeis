@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.math.factorial.Factorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
@@ -16,16 +16,8 @@ public class A055881 extends Sequence1 implements DirectSequence {
   @Override
   public Z a(final Z n) {
     int k = 0;
-    final int flen = Factorial.FACTORIAL.length;
-    while (k < flen && n.modZ(Factorial.FACTORIAL[k]).isZero()) {
+    while (n.mod(Functions.FACTORIAL.z(k)).isZero()) {
       ++k;
-    }
-    if (k >= flen) {
-      Z fk = Z.valueOf(Factorial.FACTORIAL[flen - 1]).multiply(k);
-      while (n.mod(fk).isZero()) {
-        ++k;
-        fk = fk.multiply(k);
-      }
     }
     return Z.valueOf(k - 1);
   }

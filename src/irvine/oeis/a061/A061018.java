@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
 import irvine.math.MemoryFunctionInt2;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -22,14 +22,14 @@ public class A061018 extends Sequence1 {
         return Z.ZERO;
       }
       if (m == 0) {
-        return MemoryFactorial.SINGLETON.factorial(n).multiply(n);
+        return Functions.FACTORIAL.z(n).multiply(n);
       }
       return get(n, m - 1).subtract(get(n - 1, m - 1));
     }
   };
 
   private Z a(final int n, final int m) {
-    return MemoryFactorial.SINGLETON.factorial(n - 1)
+    return Functions.FACTORIAL.z(n - 1)
       .add(Integers.SINGLETON.sum(0, m - 2, k -> mT.get(n - 2, k)));
   }
 

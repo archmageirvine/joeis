@@ -2,6 +2,7 @@ package irvine.oeis.a034;
 
 import java.util.Collections;
 
+import irvine.math.function.Functions;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -27,7 +28,7 @@ public class A034800 extends A008295 {
       updateR();
       mT = RING_X.add(RING_X.subtract(mRR, RING_X.multiply(RING_X.pow(mRR, 2), HALF)), RING_X.multiply(mR.substitutePower(2), HALF));
     }
-    return mT.coeff(mN).coeff(mM).multiply(mF.factorial(mM)).toZ();
+    return mT.coeff(mN).coeff(mM).multiply(Functions.FACTORIAL.z(mM)).toZ();
   }
 }
 

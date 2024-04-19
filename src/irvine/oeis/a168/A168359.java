@@ -1,6 +1,6 @@
 package irvine.oeis.a168;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -17,7 +17,7 @@ public class A168359 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    final Z result = MemoryFactorial.SINGLETON.factorial(Fibonacci.fibonacci(mF).intValue());
+    final Z result = Functions.FACTORIAL.z(Fibonacci.fibonacci(mF).intValue());
     mF *= mN;
     return result;
   }

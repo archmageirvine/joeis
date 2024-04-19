@@ -29,7 +29,6 @@ public class AllTests extends TestSuite {
     suite.addTest(irvine.math.cyclotomic.AllTests.suite());
     suite.addTest(irvine.math.elliptic.AllTests.suite());
     suite.addTest(irvine.math.expression.AllTests.suite());
-    suite.addTest(irvine.math.factorial.AllTests.suite());
     suite.addTest(irvine.math.function.AllTests.suite());
     suite.addTest(irvine.math.generic.AllTests.suite());
     suite.addTest(irvine.math.graph.AllTests.suite());
@@ -47,9 +46,5 @@ public class AllTests extends TestSuite {
     suite.addTest(irvine.math.z.AllTests.suite());
     suite.addTest(irvine.math.zi.AllTests.suite());
     return suite;
-  }
-
-  public static void main(final String[] args) {
-    junit.textui.TestRunner.run(suite());
   }
 }

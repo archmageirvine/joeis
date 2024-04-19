@@ -13,7 +13,7 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A055140 extends Triangle {
 
-  private MemorySequence mSeq;
+  private final MemorySequence mSeq;
 
   /** Construct the sequence. */
   public A055140() {

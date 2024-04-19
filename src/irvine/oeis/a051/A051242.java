@@ -11,7 +11,7 @@ import irvine.util.array.DynamicLongArray;
  */
 public class A051242 extends Sequence1 {
 
-  private DynamicArray<DynamicLongArray> mA = new DynamicArray<>();
+  private final DynamicArray<DynamicLongArray> mA = new DynamicArray<>();
   private int mN = -1;
   private int mM = 0;
   private long mR = 0;

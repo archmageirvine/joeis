@@ -2,6 +2,7 @@ package irvine.oeis.a005;
 
 import irvine.math.MemoryFunction1;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -23,12 +24,12 @@ public class A005640 extends AbstractSequence {
   }
 
   static Z r(final int n, final int[] cntForm) {
-    Z res = FACTORIAL.factorial(n);
+    Z res = Functions.FACTORIAL.z(n);
     for (int k = 1; k < cntForm.length; ++k) {
       final int v = cntForm[k];
       if (v > 0) {
-        res = res.divide(FACTORIAL.factorial(v));
-        res = res.divide(FACTORIAL.factorial(k).pow(v));
+        res = res.divide(Functions.FACTORIAL.z(v));
+        res = res.divide(Functions.FACTORIAL.z(k).pow(v));
       }
     }
     return res;

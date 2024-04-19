@@ -12,7 +12,7 @@ import irvine.oeis.DirectSequence;
 public class A005063 extends AbstractSequence implements DirectSequence {
 
   private int mN;
-  private int mE; // exponent for p
+  private final int mE; // exponent for p
 
   /** Construct the sequence. */
   public A005063() {

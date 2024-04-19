@@ -1,6 +1,6 @@
 package irvine.oeis.a137;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
@@ -18,6 +18,6 @@ public class A137267 extends BaseTriangle {
 
   @Override
   public Z triangleElement(final int n, final int k) {
-    return (k == 1) ? ((n == 1) ? Z.ONE : Z.valueOf(n - 1)) : MemoryFactorial.SINGLETON.factorial(k - 1).multiply(n - k + 1);
+    return (k == 1) ? ((n == 1) ? Z.ONE : Z.valueOf(n - 1)) : Functions.FACTORIAL.z(k - 1).multiply(n - k + 1);
   }
 }

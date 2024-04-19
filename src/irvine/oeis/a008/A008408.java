@@ -19,8 +19,8 @@ import irvine.oeis.a004.A004009;
 public class A008408 extends A004009 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
-  private Sequence mA = new PrependSequence(new A000594(), Z.ZERO);
-  private List<Z> mA004009 = new ArrayList<>();
+  private final Sequence mA = new PrependSequence(new A000594(), Z.ZERO);
+  private final List<Z> mA004009 = new ArrayList<>();
 
   @Override
   public Z next() {

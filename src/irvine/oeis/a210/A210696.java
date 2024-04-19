@@ -32,9 +32,9 @@ public class A210696 extends Sequence0 {
       final int s = n / 2;
       final int p = (m + 1) / 2;
       if (p > 0 && s >= 0) {
-        return mF.factorial(2 * p).multiply2().multiply(mF.factorial(4 * s + 2 * p + 2 * j - 1))
-          .divide(mF.factorial(p)).divide(mF.factorial(p - 1))
-          .divide(mF.factorial(s)).divide(mF.factorial(3 * s + 2 * p + 2 * j));
+        return Functions.FACTORIAL.z(2 * p).multiply2().multiply(Functions.FACTORIAL.z(4 * s + 2 * p + 2 * j - 1))
+          .divide(Functions.FACTORIAL.z(p)).divide(Functions.FACTORIAL.z(p - 1))
+          .divide(Functions.FACTORIAL.z(s)).divide(Functions.FACTORIAL.z(3 * s + 2 * p + 2 * j));
       } else {
         return Z.ZERO;
       }
@@ -42,9 +42,9 @@ public class A210696 extends Sequence0 {
       final int s = n / 3;
       final int p = m / 3;
       if (p >= 0 && s >= 0) {
-        return mF.factorial(2 * p + 1).multiply(mF.factorial(4 * s + 2 * p))
-          .divide(mF.factorial(p)).divide(mF.factorial(p))
-          .divide(mF.factorial(s)).divide(mF.factorial(3 * s + 2 * p + 1));
+        return Functions.FACTORIAL.z(2 * p + 1).multiply(Functions.FACTORIAL.z(4 * s + 2 * p))
+          .divide(Functions.FACTORIAL.z(p)).divide(Functions.FACTORIAL.z(p))
+          .divide(Functions.FACTORIAL.z(s)).divide(Functions.FACTORIAL.z(3 * s + 2 * p + 1));
       } else {
         return Z.ZERO;
       }
@@ -54,9 +54,9 @@ public class A210696 extends Sequence0 {
         final int s = (n - 1) / r;
         final int p = (m + 3) / r - 1;
         if (p >= 0 && s >= 0) {
-          return mF.factorial(2 * p + 2).multiply(mF.factorial(4 * s + 2 * p + 1))
-            .divide(mF.factorial(p)).divide(mF.factorial(p + 1))
-            .divide(mF.factorial(s)).divide(mF.factorial(3 * s + 2 * p + 2));
+          return Functions.FACTORIAL.z(2 * p + 2).multiply(Functions.FACTORIAL.z(4 * s + 2 * p + 1))
+            .divide(Functions.FACTORIAL.z(p)).divide(Functions.FACTORIAL.z(p + 1))
+            .divide(Functions.FACTORIAL.z(s)).divide(Functions.FACTORIAL.z(3 * s + 2 * p + 2));
         }
       }
       return Z.ZERO;

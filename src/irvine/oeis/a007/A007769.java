@@ -20,11 +20,11 @@ public class A007769 extends Sequence0 {
     if (q.isEven()) {
       Z sum = Z.ZERO;
       for (int k = 0; 2 * k <= p; ++k) {
-        sum = sum.add(Binomial.binomial(p, 2L * k).multiply(q.pow(k)).multiply(mF.doubleFactorial(2 * k - 1)));
+        sum = sum.add(Binomial.binomial(p, 2L * k).multiply(q.pow(k)).multiply(Functions.MULTIFACTORIAL.z(2 * k - 1)));
       }
       return sum;
     } else {
-      return q.pow(p / 2).multiply(mF.doubleFactorial(p - 1));
+      return q.pow(p / 2).multiply(Functions.MULTIFACTORIAL.z(p - 1));
     }
   }
 

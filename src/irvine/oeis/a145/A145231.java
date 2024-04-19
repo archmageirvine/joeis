@@ -10,7 +10,7 @@ import irvine.oeis.AbstractSequence;
  */
 public class A145231 extends AbstractSequence {
 
-  private int mOffset;
+  private final int mOffset;
   private final int mBase;
   private int mProd;
 

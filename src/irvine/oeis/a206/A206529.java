@@ -14,7 +14,7 @@ public class A206529 extends LambdaSequence {
   public A206529() {
     super(0, n -> {
       final Z v = Z.SEVEN.pow(n);
-      return new Z(v.toString() + v.toString());
+      return new Z(v.toString() + v);
     });
   }
 }

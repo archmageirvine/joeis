@@ -14,7 +14,7 @@ import irvine.oeis.transform.LogarithmicTransformSequence;
 public class A318815 extends AbstractSequence {
 
   private final LogarithmicTransformSequence mSeq1 = new LogarithmicTransformSequence(new Sequence0() {
-    private A000110 mBell = new A000110();
+    private final A000110 mBell = new A000110();
 
     @Override
     public Z next() {

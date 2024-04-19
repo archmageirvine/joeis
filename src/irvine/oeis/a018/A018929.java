@@ -8,7 +8,7 @@ import irvine.math.z.Z;
  */
 public class A018929 extends A018928 {
 
-  private A018930 mA = new A018930();
+  private final A018930 mA = new A018930();
   {
     next(); // skip 0th
   }

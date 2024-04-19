@@ -54,21 +54,21 @@ public class ChjTransformSequence extends Sequence1 {
         if (isDivisor(q, d)) {
           final int mu = Functions.MOBIUS.i((long) d);
           if (mu != 0) {
-            Z u = FACTORIAL.factorial(k / d);
+            Z u = Functions.FACTORIAL.z(k / d);
             for (int i = 1; i < q.length; ++i) {
               if (q[i] != 0) {
                 u = u.multiply(a.get(i - 1).pow(q[i] / d));
-                u = u.divide(FACTORIAL.factorial(q[i] / d));
+                u = u.divide(Functions.FACTORIAL.z(q[i] / d));
               }
             }
             t2 = t2.signedAdd(mu == 1, u);
           }
         }
       }
-      t2 = t2.multiply(FACTORIAL.factorial(n));
+      t2 = t2.multiply(Functions.FACTORIAL.z(n));
       for (int i = 1; i < q.length; ++i) {
         if (q[i] != 0) {
-          t2 = t2.divide(FACTORIAL.factorial(i).pow(q[i]));
+          t2 = t2.divide(Functions.FACTORIAL.z(i).pow(q[i]));
         }
       }
       assert t2.mod(k) == 0;

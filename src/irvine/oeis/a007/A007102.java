@@ -12,7 +12,7 @@ import irvine.oeis.a004.A004109;
  */
 public class A007102 extends A002829 {
 
-  private Sequence mConnected = new PrependSequence(new A004109().skip(1), Z.ZERO);
+  private final Sequence mConnected = new PrependSequence(new A004109().skip(1), Z.ZERO);
 
   @Override
   public Z next() {

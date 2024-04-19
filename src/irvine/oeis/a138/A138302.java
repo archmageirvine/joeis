@@ -31,7 +31,6 @@ public class A138302 extends AbstractSequence {
         if (Integer.bitCount(fs.getExponent(p)) != 1) {
           busy = false;
         }
-        ;
       }
       if (busy) {
         return Z.valueOf(mN);

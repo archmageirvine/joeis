@@ -12,7 +12,7 @@ import irvine.oeis.Sequence1;
  */
 public class A007603 extends Sequence1 {
 
-  private ArrayList<long[]> mPowers = new ArrayList<>();
+  private final ArrayList<long[]> mPowers = new ArrayList<>();
   {
     final long[] ones = new long[10];
     Arrays.fill(ones, 1);

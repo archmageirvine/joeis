@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 import irvine.math.api.Set;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
@@ -50,7 +50,7 @@ public class AlternatingGroup<T> extends AbstractGroup<Permutation<T>> {
     mSet = set;
     mName = name;
     mZero = new Permutation<>(set, new HashMap<>());
-    mSize = MemoryFactorial.SINGLETON.factorial(mSet.size()).divide2();
+    mSize = Functions.FACTORIAL.z(mSet.size()).divide2();
   }
 
   /**

@@ -2,7 +2,7 @@ package irvine.oeis.a069;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence2;
@@ -20,7 +20,7 @@ public class A069098 extends Sequence2 {
   private int mN = 1;
 
   private int b(final Z p, final int q, final int j) {
-    Z jf = MemoryFactorial.SINGLETON.factorial(j);
+    Z jf = Functions.FACTORIAL.z(j);
     int cnt = 0;
     while (cnt < q && jf.mod(p).isZero()) {
       ++cnt;

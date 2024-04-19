@@ -51,7 +51,7 @@ public class A027686 extends Sequence0 {
     return r;
   }
 
-  private Map<String, Z> mCache = new HashMap<>();
+  private final Map<String, Z> mCache = new HashMap<>();
 
   @SuppressWarnings("unchecked")
   private Z p(final List<Object> l) {

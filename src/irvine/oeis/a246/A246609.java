@@ -1,7 +1,7 @@
 package irvine.oeis.a246;
 
 import irvine.math.MemoryFunctionInt3;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
@@ -43,8 +43,8 @@ public class A246609 extends Triangle {
         for (int l = 1; l <= j; ++l) {
           list[l] = i;
         }
-        sum = sum.add(MemoryFactorial.SINGLETON.factorial(i - 1).pow(j)
-          .multiply(Binomial.multinomial(n, list)).divide(MemoryFactorial.SINGLETON.factorial(j))
+        sum = sum.add(Functions.FACTORIAL.z(i - 1).pow(j)
+          .multiply(Binomial.multinomial(n, list)).divide(Functions.FACTORIAL.z(j))
           .multiply(get(n - i * j, i + k, k)));
       }
       return sum;

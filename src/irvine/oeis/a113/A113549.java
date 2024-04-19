@@ -1,6 +1,6 @@
 package irvine.oeis.a113;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,7 @@ public class A113549 extends Sequence1 {
   public Z next() {
     // a(1) = 1, a(2n) = (2n)!, a(2n-1) = (4n-3)!/(2n-2)!.
     ++mN;
-    return mN == 1 ? Z.ONE : (((mN & 1) == 0) ? MemoryFactorial.SINGLETON.factorial(mN)
-      : MemoryFactorial.SINGLETON.factorial(2 * mN - 1).divide(MemoryFactorial.SINGLETON.factorial(mN - 1)));
+    return mN == 1 ? Z.ONE : (((mN & 1) == 0) ? Functions.FACTORIAL.z(mN)
+      : Functions.FACTORIAL.z(2 * mN - 1).divide(Functions.FACTORIAL.z(mN - 1)));
   }
 }

@@ -74,7 +74,7 @@ public class A002845 extends Sequence1 {
   }
 
   // A map from an expression size to the set of all expressions of that size
-  private ArrayList<Set<SparseInteger>> mExpressionsOfSize = new ArrayList<>();
+  private final ArrayList<Set<SparseInteger>> mExpressionsOfSize = new ArrayList<>();
 
   {
     mExpressionsOfSize.add(null); // 0th

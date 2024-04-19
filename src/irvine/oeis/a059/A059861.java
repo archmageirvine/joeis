@@ -13,7 +13,7 @@ import irvine.oeis.memory.MemorySequence;
 public class A059861 extends Sequence1 {
 
   private int mN;
-  private MemorySequence mSeq;
+  private final MemorySequence mSeq;
   private Z mAn1;
   protected long mSub;
 

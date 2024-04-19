@@ -1,6 +1,7 @@
 package irvine.oeis.a077;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
@@ -27,6 +28,8 @@ public class A077607 extends MemorySequence {
     if (mN == 1) {
       return Z.ONE;
     }
-    return Integers.SINGLETON.sum(1, mN - 1, k -> FACTORIAL.factorial(mN + 1 - k).multiply(a(k))).negate();
+    return Integers.SINGLETON.sum(1, mN - 1, k -> {
+      return Functions.FACTORIAL.z(mN + 1 - k).multiply(a(k));
+    }).negate();
   }
 }

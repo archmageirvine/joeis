@@ -14,7 +14,7 @@ public class A137869 extends AbstractSequence {
   private long mA;
   private long mB;
   private long mC;
-  private long mDist; // minimum distance to previous and next prime
+  private final long mDist; // minimum distance to previous and next prime
 
   /** Construct the sequence. */
   public A137869() {

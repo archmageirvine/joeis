@@ -34,7 +34,7 @@ public class A082810 extends A266279 {
     }
     if (mState == 1) {
       if (mLeft.length() == mLen) {
-        mTerm = new Z(mLeft.toString() + mLeft.reverse().toString());
+        mTerm = new Z(mLeft.toString() + mLeft.reverse());
         mLeft = new StringBuilder(super.next().toString());
       } else {
         mState = 2;

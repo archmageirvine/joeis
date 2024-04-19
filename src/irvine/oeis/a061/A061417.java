@@ -1,6 +1,5 @@
 package irvine.oeis.a061;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
@@ -18,7 +17,7 @@ public class A061417 extends Sequence1 {
   public Z next() {
     return Integers.SINGLETON.sumdiv(++mN, d -> {
       final Z t = Z.valueOf(mN / d);
-      return Functions.PHI.z(t).multiply(t.pow(d)).multiply(MemoryFactorial.SINGLETON.factorial(d));
+      return Functions.PHI.z(t).multiply(t.pow(d)).multiply(Functions.FACTORIAL.z(d));
     }).divide(mN);
   }
 }

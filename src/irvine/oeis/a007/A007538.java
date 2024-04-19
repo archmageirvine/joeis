@@ -23,7 +23,7 @@ public class A007538 extends AbstractSequence {
     super(1);
   }
 
-  private LongDynamicByteArray mSeq = new LongDynamicByteArray();
+  private final LongDynamicByteArray mSeq = new LongDynamicByteArray();
   private int mN = -1;
 
   {

@@ -1,6 +1,7 @@
 package irvine.oeis.a088;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -30,6 +31,6 @@ public class A088020 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return FACTORIAL.factorial(mN * mN);
+    return Functions.FACTORIAL.z(mN * mN);
   }
 }

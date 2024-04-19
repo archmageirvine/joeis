@@ -15,7 +15,7 @@ public class A026418 extends A000108 {
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> X2 = RING.monomial(Z.ONE, 2);
   private static final Polynomial<Z> XD = Polynomial.create(1, -1, 1);
-  private Polynomial<Z> mC = RING.empty();
+  private final Polynomial<Z> mC = RING.empty();
   private int mN = -1;
 
   @Override

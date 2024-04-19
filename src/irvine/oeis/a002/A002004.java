@@ -93,6 +93,6 @@ public class A002004 extends Sequence1 {
    */
   public static void main(final String[] args) {
     final A002004 s = new A002004();
-    System.out.println(String.valueOf(s.davenportSchinzel(Integer.parseInt(args[0]), Integer.parseInt(args[1]))));
+    System.out.println(s.davenportSchinzel(Integer.parseInt(args[0]), Integer.parseInt(args[1])));
   }
 }

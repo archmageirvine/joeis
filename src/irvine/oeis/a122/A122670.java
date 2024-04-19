@@ -1,6 +1,7 @@
 package irvine.oeis.a122;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -21,7 +22,7 @@ public class A122670 extends Sequence0 {
       return Z.ZERO;
     }
     final int m = mN >>> 2;
-    return mF.factorial(2 * m).divide(mF.factorial(m));
+    return Functions.FACTORIAL.z(2 * m).divide(Functions.FACTORIAL.z(m));
   }
 }
 

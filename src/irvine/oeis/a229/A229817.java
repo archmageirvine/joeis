@@ -13,7 +13,7 @@ import irvine.oeis.DirectSequence;
 public class A229817 extends AbstractSequence implements DirectSequence {
 
   private int mN; // current index
-  private int mR; // factor in formula
+  private final int mR; // factor in formula
 
   /** Construct the sequence. */
   public A229817() {

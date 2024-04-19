@@ -10,8 +10,8 @@ import irvine.oeis.Sequence1;
 public class A256326 extends Sequence1 {
 
   private int mK; // current number to be returned
-  private int mFR; // the factor before <code>R_(k+2)</code>
-  private int mF10; // the factor before <code>10^k</code>
+  private final int mFR; // the factor before <code>R_(k+2)</code>
+  private final int mF10; // the factor before <code>10^k</code>
   private Z mRk2; // R_(k+2)
   private Z mP10; // 10^k
 

@@ -1,6 +1,7 @@
 package irvine.oeis.a246;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -28,7 +29,7 @@ public class A246417 extends Sequence1 {
         for (int l = 1; l <= hm; ++l) {
           t = t.signedAdd((l & 1) == 0, Binomial.binomial(hm, l).multiply(Z.valueOf(l).pow(mN)));
         }
-        s = s.signedAdd((h & 1) == 0, new Q(t, mF.factorial(m).multiply(mF.factorial(h).pow(m))));
+        s = s.signedAdd((h & 1) == 0, new Q(t, Functions.FACTORIAL.z(m).multiply(Functions.FACTORIAL.z(h).pow(m))));
       }
     }
     return s.toZ();

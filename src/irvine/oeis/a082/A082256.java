@@ -14,6 +14,6 @@ public class A082256 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return new Z(String.valueOf(9 * mN - 8) + String.valueOf(9 * mN - 7) + String.valueOf(9 * mN - 6) + String.valueOf(9 * mN - 5) + String.valueOf(9 * mN - 4) + String.valueOf(9 * mN - 3) + String.valueOf(9 * mN - 2) + String.valueOf(9 * mN - 1) + String.valueOf(9 * mN)).divide(9);
+    return new Z(String.valueOf(9 * mN - 8) + (9 * mN - 7) + (9 * mN - 6) + (9 * mN - 5) + (9 * mN - 4) + (9 * mN - 3) + (9 * mN - 2) + (9 * mN - 1) + 9 * mN).divide(9);
   }
 }

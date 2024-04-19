@@ -13,8 +13,8 @@ import irvine.oeis.a014.A014664;
 public class A240657 extends Sequence1 {
 
   private int mN;
-  private Sequence mSeq;
-  private int mOrder;
+  private final Sequence mSeq;
+  private final int mOrder;
 
   /** Construct the sequence. */
   public A240657() {

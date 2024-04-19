@@ -2,7 +2,7 @@ package irvine.oeis.a066;
 
 import java.util.TreeSet;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -17,10 +17,10 @@ public class A066847 extends Sequence0 {
 
   @Override
   public Z next() {
-    final Z f = MemoryFactorial.SINGLETON.factorial(mN);
+    final Z f = Functions.FACTORIAL.z(mN);
     if (mA.isEmpty() || mA.first().compareTo(f) > 0) {
       for (int k = 1; k <= mN; ++k) {
-        mA.add(f.add(MemoryFactorial.SINGLETON.factorial(k)));
+        mA.add(f.add(Functions.FACTORIAL.z(k)));
       }
       ++mN;
     }

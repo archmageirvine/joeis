@@ -3,6 +3,7 @@ package irvine.oeis.a047;
 import java.util.ArrayList;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -32,7 +33,7 @@ public class A047874 extends AbstractSequence {
     for (final int v : l) {
       s += v;
     }
-    final Z f = mFactorial.factorial(s);
+    final Z f = Functions.FACTORIAL.z(s);
     Z p = Z.ONE;
     for (int i = 0; i < l.size(); ++i) {
       for (int j = 1; j <= l.get(i); ++j) {

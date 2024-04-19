@@ -6,6 +6,7 @@ import org.apfloat.Apfloat;
 import org.apfloat.ApfloatMath;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -38,7 +39,7 @@ public class A000691 extends Sequence0 {
     for (int m = 1; m < TERMS; ++m) {
       final Apfloat old = sum;
       final int n = 2 * m - 1;
-      final BigInteger den = FACTORIAL.factorial(m - 1).multiply(n).bigIntegerValue();
+      final BigInteger den = Functions.FACTORIAL.z(m - 1).multiply(n).bigIntegerValue();
       final Apfloat t = ApfloatMath.pow(ApfloatMath.sqrt(a), n).multiply(TWO.divide(new Apfloat(den)));
       sum = sum.add(t);
       if (sum.subtract(old).compareTo(TOLERANCE) < 0) {

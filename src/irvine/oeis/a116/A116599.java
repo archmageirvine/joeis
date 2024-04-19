@@ -11,7 +11,7 @@ import irvine.oeis.triangle.DoubleRowTriangle;
  */
 public class A116599 extends DoubleRowTriangle {
 
-  private Sequence mSeq = new A027336();
+  private final Sequence mSeq = new A027336();
 
   @Override
   public Z compute(final int n, final int k) {

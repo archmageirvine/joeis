@@ -23,7 +23,7 @@ public class A004137 extends Sequence1 {
   private int mLimit;           // l - binomial(m, 2)
   private int[] mPerm = null;
   private boolean mStop = false;
-  private int[] mMark = new int[0x100000];
+  private final int[] mMark = new int[0x100000];
   //private double[] mSanz = new double[100];
   //private int mRepeatedSolutions;
 

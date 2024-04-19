@@ -1,6 +1,7 @@
 package irvine.oeis.a067;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
@@ -17,7 +18,9 @@ public class A067000 extends CachedSequence {
   public A067000() {
     super(1, Integer.class, (self, k) -> k == 1
       ? Z.ONE
-      : Integers.SINGLETON.sum(1, k - 1, j -> self.a(j).multiply(F.factorial(k + j)).divide(F.factorial(2 * j))));
+      : Integers.SINGLETON.sum(1, k - 1, j -> {
+      return self.a(j).multiply(Functions.FACTORIAL.z(k + j)).divide(Functions.FACTORIAL.z(2 * j));
+    }));
   }
 }
 

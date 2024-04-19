@@ -10,7 +10,7 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A166960 extends Triangle {
 
-  private int mM;
+  private final int mM;
 
   /** Construct the sequence. */
   public A166960() {

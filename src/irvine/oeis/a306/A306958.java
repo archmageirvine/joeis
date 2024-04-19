@@ -1,6 +1,6 @@
 package irvine.oeis.a306;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -31,7 +31,7 @@ public class A306958 extends AbstractSequence implements DirectSequence {
     final String s = n.toString();
     for (int i = 0; i < s.length(); ++i) {
       final int digit = s.charAt(i) - '0';
-      sum = sum.add(MemoryFactorial.SINGLETON.factorial(digit).multiply(Binomial.binomial(10, digit)));
+      sum = sum.add(Functions.FACTORIAL.z(digit).multiply(Binomial.binomial(10, digit)));
     }
     return sum;
   }

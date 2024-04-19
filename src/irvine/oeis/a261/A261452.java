@@ -15,6 +15,6 @@ public class A261452 extends EulerTransform {
 
   /** Construct the sequence. */
   public A261452() {
-    super(new GeneratingFunctionSequence(0, "[2, 5, 6, 1]", "[1, 0,-2, 0, 1]"), new long[]{1});
+    super(new GeneratingFunctionSequence(0, "[2, 5, 6, 1]", "[1, 0,-2, 0, 1]"), 1);
   }
 }

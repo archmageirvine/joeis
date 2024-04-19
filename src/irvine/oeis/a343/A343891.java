@@ -13,7 +13,7 @@ public class A343891 extends Sequence1 {
   private int mN = -1;
   private long mA = 3;
   private long mB = 4;
-  private long mC = 0;
+  private final long mC = 0;
   private static final int LAST = 2;
   private final Z[] mTuple = new Z[LAST + 1];
 

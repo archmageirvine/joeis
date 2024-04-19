@@ -11,8 +11,8 @@ import irvine.oeis.AbstractSequence;
 public class A119682 extends AbstractSequence {
 
   private int mN = 0;
-  private int mExpon; // exponent of k in the denominator
-  private boolean mNumer; // whether to yield the numerator
+  private final int mExpon; // exponent of k in the denominator
+  private final boolean mNumer; // whether to yield the numerator
   private Q mSum = Q.ZERO;
 
   /** Construct the sequence. */

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
@@ -42,7 +43,7 @@ public class A047884 extends Sequence1 {
         den = den.multiply(c);
       }
     }
-    return mF.factorial(num).divide(den);
+    return Functions.FACTORIAL.z(num).divide(den);
   }
 
   protected Polynomial<Z> g(final int n, final int i, final ArrayList<Integer> l) {

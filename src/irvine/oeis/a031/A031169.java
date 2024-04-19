@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000040;
  */
 public class A031169 extends A000040 {
 
-  private Z[] mA = new Z[shift()];
+  private final Z[] mA = new Z[shift()];
   {
     for (int k = 0; k < mA.length; ++k) {
       mA[k] = super.next();

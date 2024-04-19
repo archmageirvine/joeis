@@ -1,7 +1,7 @@
 package irvine.oeis.a100;
 // manually trecpas
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.DoubleRowTriangle;
@@ -19,6 +19,6 @@ public class A100861 extends DoubleRowTriangle {
 
   @Override
   protected Z compute(final int n, final int k) {
-    return n <= 1 ? Z.ONE : Binomial.binomial(n, 2L * k).multiply(MemoryFactorial.SINGLETON.doubleFactorial(2 * k - 1));
+    return n <= 1 ? Z.ONE : Binomial.binomial(n, 2L * k).multiply(Functions.MULTIFACTORIAL.z(2 * k - 1));
   }
 }

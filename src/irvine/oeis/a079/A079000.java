@@ -13,11 +13,11 @@ import irvine.oeis.AbstractSequence;
 public class A079000 extends AbstractSequence {
 
   private int mN;
-  private int mOffset;
-  private Function<Z, Boolean> mCondition;
-  private int mOptions;
+  private final int mOffset;
+  private final Function<Z, Boolean> mCondition;
+  private final int mOptions;
   private Z mC; // candidate
-  private TreeSet<Z> mMembers;
+  private final TreeSet<Z> mMembers;
 
   /** Construct the sequence. */
   public A079000() {

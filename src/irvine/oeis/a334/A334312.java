@@ -14,7 +14,7 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A334312 extends Triangle {
 
-  private MemorySequence mSeq = MemorySequence.cachedSequence(new PrependSequence(new A023900(), 1));
+  private final MemorySequence mSeq = MemorySequence.cachedSequence(new PrependSequence(new A023900(), 1));
 
   /** Construct the sequence. */
   public A334312() {

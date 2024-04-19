@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 public class A293870 extends Sequence1 {
 
   private Z mN = Z.NINE;
-  private String mSubstr;
+  private final String mSubstr;
 
   /** Construct the sequence. */
   public A293870() {

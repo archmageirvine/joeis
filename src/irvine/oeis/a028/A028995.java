@@ -13,7 +13,7 @@ public class A028995 extends A028609 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = -1;
-  private Polynomial<Z> mA028609 = RING.empty();
+  private final Polynomial<Z> mA028609 = RING.empty();
 
   @Override
   public Z next() {

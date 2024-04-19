@@ -12,8 +12,8 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A204890 extends Triangle {
 
-  private int mDist;
-  private MemorySequence mSeq;
+  private final int mDist;
+  private final MemorySequence mSeq;
 
   /** Construct the sequence. */
   public A204890() {

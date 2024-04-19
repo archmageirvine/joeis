@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
  */
 public class A005679 extends Sequence1 {
 
-  private StringBuilder mSeq = new StringBuilder("213");
+  private final StringBuilder mSeq = new StringBuilder("213");
   private int mPos = -1;
   private int mRepPos = 0;
 

@@ -1,6 +1,7 @@
 package irvine.oeis.a307;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -15,13 +16,14 @@ public class A307102 extends Sequence1 {
 
   Z compute(final Z n) {
     int b = 1;
-    while (mF.doubleFactorial(b).compareTo(n) <= 0) {
+    while (Functions.MULTIFACTORIAL.z(b).compareTo(n) <= 0) {
       ++b;
     }
     final StringBuilder sb = new StringBuilder();
     Z m = n;
     do {
-      final Z[] qr = m.divideAndRemainder(mF.doubleFactorial(--b));
+      final int n1 = --b;
+      final Z[] qr = m.divideAndRemainder(Functions.MULTIFACTORIAL.z(n1));
       if (qr[0].compareTo(Z.TEN) >= 0) {
         throw new UnsupportedOperationException();
       }

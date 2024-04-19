@@ -15,7 +15,7 @@ import irvine.util.array.LongDynamicByteArray;
 public class A005240 extends Sequence1 {
 
   // loop = 0, p = 1, n = -1
-  private LongDynamicByteArray mState = new LongDynamicByteArray();
+  private final LongDynamicByteArray mState = new LongDynamicByteArray();
   private long mN = -1;
 
   private int determineState(final Set<Long> visited, final long n, final boolean p) {

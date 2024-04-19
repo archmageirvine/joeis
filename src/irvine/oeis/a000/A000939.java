@@ -32,7 +32,7 @@ public class A000939 extends AbstractSequence {
     for (int d = 1; d <= mN; ++d) {
       if (mN % d == 0) {
         final Z r = Z.valueOf(mN / d);
-        t = t.add(Functions.PHI.z(r).square().multiply(mF.factorial(d)).multiply(r.pow(d)));
+        t = t.add(Functions.PHI.z(r).square().multiply(Functions.FACTORIAL.z(d)).multiply(r.pow(d)));
       }
     }
     return t.divide(2L * mN * mN);
@@ -40,7 +40,7 @@ public class A000939 extends AbstractSequence {
 
   private Z even() {
     final int m = mN / 2;
-    return sum(mF.factorial(m).multiply(m).shiftLeft(m));
+    return sum(Functions.FACTORIAL.z(m).multiply(m).shiftLeft(m));
   }
 
   private Z odd() {

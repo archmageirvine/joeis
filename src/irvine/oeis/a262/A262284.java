@@ -12,7 +12,7 @@ public class A262284 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP;
-  private String mStart;
+  private final String mStart;
 
   /** Construct the sequence. */
   public A262284() {

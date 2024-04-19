@@ -1,6 +1,7 @@
 package irvine.oeis.a034;
 
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a322.A322583;
 
@@ -21,7 +22,7 @@ public class A034876 extends A322583 {
     }
     long sum = 0;
     for (int k = m; k >= p; --k) {
-      final Z f = mF.factorial(k);
+      final Z f = Functions.FACTORIAL.z(k);
       sum += a(n.divide(f).intValueExact()).longValueExact();
     }
     return sum;
@@ -29,6 +30,6 @@ public class A034876 extends A322583 {
 
   @Override
   public Z next() {
-    return ++mN == 1 ? Z.ZERO : Z.valueOf(calculate(mF.factorial(mN), mN - 1, (int) mPrime.prevPrime(mN + 1)));
+    return ++mN == 1 ? Z.ZERO : Z.valueOf(calculate(Functions.FACTORIAL.z(mN), mN - 1, (int) mPrime.prevPrime(mN + 1)));
   }
 }

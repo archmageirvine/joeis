@@ -14,6 +14,6 @@ public class A248556 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return new Z(String.valueOf(3 * mN - 2) + String.valueOf(3 * mN - 1) + String.valueOf(3 * mN));
+    return new Z(String.valueOf(3 * mN - 2) + (3 * mN - 1) + 3 * mN);
   }
 }

@@ -1,6 +1,7 @@
 package irvine.oeis.a146;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -20,9 +21,9 @@ public class A146305 extends Sequence0 {
    * @return sequence values
    */
   public Z brownD(final int n, final int m) {
-    return mF.factorial(2 * m + 3).multiply2().multiply(mF.factorial(4 * n + 2 * m + 1))
-      .divide(mF.factorial(m)).divide(mF.factorial(m + 2))
-      .divide(mF.factorial(n)).divide(mF.factorial(3 * n + 2 * m + 3));
+    return Functions.FACTORIAL.z(2 * m + 3).multiply2().multiply(Functions.FACTORIAL.z(4 * n + 2 * m + 1))
+      .divide(Functions.FACTORIAL.z(m)).divide(Functions.FACTORIAL.z(m + 2))
+      .divide(Functions.FACTORIAL.z(n)).divide(Functions.FACTORIAL.z(3 * n + 2 * m + 3));
   }
 
   private int mN = -1;

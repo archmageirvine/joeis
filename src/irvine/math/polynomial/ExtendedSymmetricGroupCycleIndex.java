@@ -1,7 +1,6 @@
 package irvine.math.polynomial;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.q.Q;
@@ -75,7 +74,7 @@ public final class ExtendedSymmetricGroupCycleIndex {
     Z d = Z.ONE;
     for (int i = 1; i < j.length; ++i) {
       if (j[i] > 0) {
-        d = d.multiply(MemoryFactorial.SINGLETON.factorial(j[i]).multiply(Z.valueOf(i).pow(j[i])));
+        d = d.multiply(Functions.FACTORIAL.z(j[i]).multiply(Z.valueOf(i).pow(j[i])));
       }
     }
     return new Q(Z.ONE, d);

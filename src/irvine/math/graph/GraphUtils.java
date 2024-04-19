@@ -18,7 +18,6 @@ import java.util.function.Function;
 import irvine.graph.Vertex;
 import irvine.math.IntegerUtils;
 import irvine.math.api.Field;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.MatrixRing;
@@ -718,7 +717,7 @@ public final class GraphUtils {
       for (int d = 1; d <= n; ++d) {
         if (n % d == 0) {
           final int i = n / d;
-          final E r = fld.coerce(MemoryFactorial.SINGLETON.factorial(n).divide(MemoryFactorial.SINGLETON.factorial(i)).divide(d).multiply(Functions.MOBIUS.i((long) d)));
+          final E r = fld.coerce(Functions.FACTORIAL.z(n).divide(Functions.FACTORIAL.z(i)).divide(d).multiply(Functions.MOBIUS.i((long) d)));
           final List<E> ui = lg.get(i);
           int xi = -1;
           final IntegerPartition partI = new IntegerPartition(n / d);

@@ -1,7 +1,7 @@
 package irvine.oeis.a088;
 // manually andiv 
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.a055.A055165;
@@ -12,7 +12,7 @@ import irvine.oeis.a055.A055165;
  */
 public class A088389 extends AbstractSequence {
 
-  private A055165 mSeq1 = new A055165();
+  private final A055165 mSeq1 = new A055165();
   private int mN;
 
   /** Construct the sequence. */
@@ -23,6 +23,7 @@ public class A088389 extends AbstractSequence {
 
   @Override
   public Z next() {
-    return mSeq1.next().divide(MemoryFactorial.SINGLETON.factorial(++mN));
+    final int n = ++mN;
+    return mSeq1.next().divide(Functions.FACTORIAL.z(n));
   }
 }

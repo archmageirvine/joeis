@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
  */
 public class A067507 extends Sequence1 {
 
-  private int mBase = 2;
+  private final int mBase = 2;
   private Z mPow = Z.ONE;
 
   @Override

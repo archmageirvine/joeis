@@ -13,8 +13,8 @@ import irvine.oeis.Sequence0;
 public class A251583 extends Sequence0 {
 
   private int mN;
-  private int mBase;
-  private Z[] mPoly;
+  private final int mBase;
+  private final Z[] mPoly;
 
   /** Construct the sequence. */
   public A251583() {

@@ -1,6 +1,7 @@
 package irvine.oeis.a018;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,8 +19,9 @@ public class A018854 extends Sequence1 {
     final String target = String.valueOf(++mN);
     int b = -1;
     while (true) {
-      if (mF.factorial(++b).toString().startsWith(target)) {
-        return mF.factorial(b);
+      final int n = ++b;
+      if (Functions.FACTORIAL.z(n).toString().startsWith(target)) {
+        return Functions.FACTORIAL.z(b);
       }
     }
   }

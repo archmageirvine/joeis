@@ -1,6 +1,6 @@
 package irvine.oeis.a061;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -15,7 +15,10 @@ public class A061095 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Z f = MemoryFactorial.SINGLETON.factorial(++mN);
-    return Integers.SINGLETON.sumdiv(mN, d -> f.divide(MemoryFactorial.SINGLETON.factorial(mN / d).pow(d)));
+    final int n = ++mN;
+    final Z f = Functions.FACTORIAL.z(n);
+    return Integers.SINGLETON.sumdiv(mN, d -> {
+      return f.divide(Functions.FACTORIAL.z(mN / d).pow(d));
+    });
   }
 }

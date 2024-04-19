@@ -77,4 +77,6 @@ public final class Functions {
   public static final Function2 DIGIT_SORT_DESCENDING = new DigitSortDescending();
   /** Rotate right by one digit. */
   public static final Function2 ROTATE_RIGHT = new RotateRight();
+  /** Multifactorial (including double factorial). */
+  public static final Function2 MULTIFACTORIAL = new Multifactorial();
 }

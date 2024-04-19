@@ -1,6 +1,6 @@
 package irvine.oeis.a291;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
@@ -22,6 +22,6 @@ public class A291556 extends UpperLeftTriangle {
   public Z matrixElement(final int n, final int k) {
     // A(0, k) = 0, A(1, k) = 1, A(n+1, k) = (n^k+(n+1)^k)*A(n, k) - n^(2*k)*A(n-1, k)
     return (n == 0) ? Z.ZERO : ((k == 0) ? Z.valueOf(n) : Rationals.SINGLETON.sum(1, n, i
-      -> new Q(Z.ONE, Z.valueOf(i).pow(k))).multiply(MemoryFactorial.SINGLETON.factorial(n).pow(k)).num());
+      -> new Q(Z.ONE, Z.valueOf(i).pow(k))).multiply(Functions.FACTORIAL.z(n).pow(k)).num());
   }
 }

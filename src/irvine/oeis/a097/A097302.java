@@ -1,6 +1,6 @@
 package irvine.oeis.a097;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.BernoulliSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -23,7 +23,7 @@ public class A097302 extends Sequence0 {
   public Z next() {
     // a(n)=denominator(B(n)) with B(n):=Bernoulli(2*n+2)*(2*n)!/(2*n+2)
     ++mN;
-    final Z result = mBSeq.nextQ().multiply(MemoryFactorial.SINGLETON.factorial(mN)).divide(mN + 2).den();
+    final Z result = mBSeq.nextQ().multiply(Functions.FACTORIAL.z(mN)).divide(mN + 2).den();
     ++mN;
     mBSeq.nextQ();
     return result;

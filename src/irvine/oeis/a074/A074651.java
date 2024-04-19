@@ -27,7 +27,7 @@ public class A074651 extends Sequence1 {
       final int d = dd.intValueExact();
       final int mobius = Functions.MOBIUS.i((long) (mN / d));
       if (mobius != 0) {
-        sum = sum.signedAdd(mobius > 0, mF.factorial(scale() * d).divide(mF.factorial(d).pow(scale())));
+        sum = sum.signedAdd(mobius > 0, Functions.FACTORIAL.z(scale() * d).divide(Functions.FACTORIAL.z(d).pow(scale())));
       }
     }
     return sum.divide(mN);

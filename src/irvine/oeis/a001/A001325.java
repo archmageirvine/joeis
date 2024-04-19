@@ -75,7 +75,7 @@ public class A001325 extends Sequence1 {
     Z d = Z.ONE;
     for (int i = 1; i < j.length; ++i) {
       if (j[i] > 0) {
-        d = d.multiply(FACTORIAL.factorial(j[i]).multiply(Z.valueOf(2L * i).pow(j[i])));
+        d = d.multiply(Functions.FACTORIAL.z(j[i]).multiply(Z.valueOf(2L * i).pow(j[i])));
       }
     }
     return new Q(Z.ONE, d);

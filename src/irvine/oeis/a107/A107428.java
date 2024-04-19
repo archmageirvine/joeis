@@ -1,7 +1,7 @@
 package irvine.oeis.a107;
 
 import irvine.math.MemoryFunctionInt3;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -23,7 +23,7 @@ public class A107428 extends Sequence1 {
     @Override
     protected Z compute(final int n, final int i, final int t) {
       if (n == 0) {
-        return MemoryFactorial.SINGLETON.factorial(t);
+        return Functions.FACTORIAL.z(t);
       }
       if (i < 1 || n < i) {
         return Z.ZERO;
@@ -31,7 +31,7 @@ public class A107428 extends Sequence1 {
       Z sum = Z.ZERO;
       final int jmax = n / i;
       for (int j = 1; j <= jmax; ++j) {
-        sum = sum.add(get(n - i * j, i - 1, t + j).divide(MemoryFactorial.SINGLETON.factorial(j)));
+        sum = sum.add(get(n - i * j, i - 1, t + j).divide(Functions.FACTORIAL.z(j)));
       }
       return sum;
     }

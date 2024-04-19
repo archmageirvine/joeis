@@ -1,6 +1,7 @@
 package irvine.oeis.a000;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,11 +20,11 @@ public class A000724 extends Sequence1 {
       throw new UnsupportedOperationException();
     }
     Z sum = Z.ZERO;
-    final Z fn = mF.factorial(mN);
+    final Z fn = Functions.FACTORIAL.z(mN);
     for (int k = 0; k <= (mN - 1) / 2; ++k) {
-      sum = sum.add(fn.multiply(Z.ONE.shiftLeft(mN - 2L * k).subtract(1)).divide(mF.factorial(mN - 2 * k)).divide(mF.factorial(k)));
+      sum = sum.add(fn.multiply(Z.ONE.shiftLeft(mN - 2L * k).subtract(1)).divide(Functions.FACTORIAL.z(mN - 2 * k)).divide(Functions.FACTORIAL.z(k)));
     }
-    sum = sum.multiply(Z.ONE.shiftLeft(mN).subtract(1)).multiply(mF.factorial(1 << (mN - 1))).shiftLeft(1L << (mN - 1));
-    return sum.add(mF.factorial(1 << mN)).shiftRight(2L * mN).divide(mF.factorial(mN));
+    sum = sum.multiply(Z.ONE.shiftLeft(mN).subtract(1)).multiply(Functions.FACTORIAL.z(1 << (mN - 1))).shiftLeft(1L << (mN - 1));
+    return sum.add(Functions.FACTORIAL.z(1 << mN)).shiftRight(2L * mN).divide(Functions.FACTORIAL.z(mN));
   }
 }

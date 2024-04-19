@@ -5,6 +5,7 @@ import java.util.List;
 
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.partition.IntegerPartition;
@@ -91,7 +92,7 @@ public class A123301 extends AbstractSequence {
         Polynomial<Q> prod = RING_Y.one();
         for (int i = 1; i < j.length; ++i) {
           if (j[i] > 0) {
-            prod = RING_Y.divide(RING_Y.multiply(prod, RING_Y.pow(aa.get(i - 1), j[i], degree), degree), new Q(mF.factorial(j[i])));
+            prod = RING_Y.divide(RING_Y.multiply(prod, RING_Y.pow(aa.get(i - 1), j[i], degree), degree), new Q(Functions.FACTORIAL.z(j[i])));
           }
         }
         Z pr = Z.ONE;
@@ -135,7 +136,7 @@ public class A123301 extends AbstractSequence {
     if (mB.degree() <= n) {
       mB = b(n);
     }
-    return mB.coeff(n).coeff(m).multiply(mF.factorial(n)).multiply(mF.factorial(m)).toZ();
+    return mB.coeff(n).coeff(m).multiply(Functions.FACTORIAL.z(n)).multiply(Functions.FACTORIAL.z(m)).toZ();
 
   }
 

@@ -1,6 +1,6 @@
 package irvine.oeis.a058;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -33,7 +33,7 @@ public class A058087 extends AbstractSequence {
     }
     Z sum = Z.ZERO;
     for (int j = 0; j <= k; ++j) {
-      final Z t = Binomial.binomial(n - k + j, n - k).multiply(Binomial.binomial(n + k - j, n - k + j)).multiply(MemoryFactorial.SINGLETON.factorial(k - j)).multiply(2L * n).divide(n + k - j);
+      final Z t = Binomial.binomial(n - k + j, n - k).multiply(Binomial.binomial(n + k - j, n - k + j)).multiply(Functions.FACTORIAL.z(k - j)).multiply(2L * n).divide(n + k - j);
       sum = sum.signedAdd((j & 1) == 0, t);
     }
     return sum;

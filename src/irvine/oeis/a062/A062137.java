@@ -1,6 +1,7 @@
 package irvine.oeis.a062;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
@@ -31,9 +32,9 @@ public class A062137 extends Triangle {
 
   @Override
   public Z compute(final int n, final int m) {
-    return n == 0 ? Z.ONE : FACTORIAL.factorial(n)
+    return n == 0 ? Z.ONE : Functions.FACTORIAL.z(n)
       .multiply(Binomial.binomial(n + mParm, n - m))
-      .divide(FACTORIAL.factorial(m))
+      .divide(Functions.FACTORIAL.z(m))
       .multiply(((m & 1) == 0) ? 1 : -1);
   }
 }

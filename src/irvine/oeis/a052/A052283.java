@@ -1,6 +1,7 @@
 package irvine.oeis.a052;
 
 import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.partition.IntegerPartition;
@@ -46,7 +47,7 @@ public class A052283 extends A052107 {
     while ((p = part.next()) != null) {
       row = RING.add(row, RING.multiply(edgesPoly(p), IntegerPartition.permCount(p, 1)));
     }
-    return RING.divide(row, mF.factorial(n));
+    return RING.divide(row, Functions.FACTORIAL.z(n));
   }
 
   @Override

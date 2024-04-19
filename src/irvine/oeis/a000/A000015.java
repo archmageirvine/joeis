@@ -18,10 +18,6 @@ public class A000015 extends Sequence1 {
   private long mP = 1;
   private int mLastPrimeIndex = 0;
 
-  protected int lastPrimeIndex() {
-    return mLastPrimeIndex;
-  }
-
   protected long nextLong() {
     if (++mN <= 1) {
       return 1;

@@ -9,8 +9,8 @@ import irvine.oeis.a000.A000142;
  */
 public class A127109 extends A000142 {
 
-  private int mN;
-  private int mBase;
+  private final int mN;
+  private final int mBase;
 
   /** Construct the sequence. */
   public A127109() {

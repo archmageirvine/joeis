@@ -1,6 +1,5 @@
 package irvine.oeis.a061;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
@@ -18,7 +17,7 @@ public class A061860 extends Sequence0 {
   @Override
   public Z next() {
     return Integers.SINGLETON.sumdiv(++mN, d -> {
-      return Binomial.binomial(mN, d).multiply(Functions.PHI.l((long) (mN / d))).multiply(MemoryFactorial.SINGLETON.factorial(d));
+      return Binomial.binomial(mN, d).multiply(Functions.PHI.l((long) (mN / d))).multiply(Functions.FACTORIAL.z(d));
     }).divide(mN);
   }
 }

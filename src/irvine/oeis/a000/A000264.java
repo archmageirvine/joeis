@@ -3,6 +3,7 @@ package irvine.oeis.a000;
 import java.util.ArrayList;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -26,14 +27,14 @@ public class A000264 extends Sequence1 {
   private int mN = 0;
 
   private Z u(final int n) {
-    final Z t = mF.factorial(n + 1);
-    return mF.factorial(2 * n)
-      .multiply(mF.factorial(2 * n + 2))
+    final Z t = Functions.FACTORIAL.z(n + 1);
+    return Functions.FACTORIAL.z(2 * n)
+      .multiply(Functions.FACTORIAL.z(2 * n + 2))
       .divide2()
-      .divide(mF.factorial(n))
+      .divide(Functions.FACTORIAL.z(n))
       .divide(t)
       .divide(t)
-      .divide(mF.factorial(n + 2));
+      .divide(Functions.FACTORIAL.z(n + 2));
   }
 
 

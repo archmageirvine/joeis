@@ -1,6 +1,7 @@
 package irvine.oeis.a048;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -25,7 +26,7 @@ public class A048602 extends MemoryFunction2Sequence<Integer, Q> {
       for (int k = 0; k <= m / 2; ++k) {
         sum = sum.signedAdd((((n + m) / 2 - k) & 1) == 0, new Q(Binomial.binomial(m, k).multiply(Z.valueOf(2L * k - m).pow(n))));
       }
-      sum = sum.divide(mF.factorial(n).shiftLeft(m));
+      sum = sum.divide(Functions.FACTORIAL.z(n).shiftLeft(m));
       sum = sum.multiply(2);
     }
     for (int k = m + 1; k < n; ++k) {

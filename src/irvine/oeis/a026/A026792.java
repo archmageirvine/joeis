@@ -16,7 +16,7 @@ public class A026792 extends Sequence1 {
   private int mN = 0;
   private int mL = 0;
   private int mM = 0;
-  private List<int[]> mPart = new ArrayList<>();
+  private final List<int[]> mPart = new ArrayList<>();
 
   @Override
   public Z next() {

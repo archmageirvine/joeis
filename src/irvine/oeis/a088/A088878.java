@@ -10,10 +10,10 @@ import irvine.oeis.a000.A000040;
  */
 public class A088878 extends A000040 {
 
-  private int mSign;
-  private boolean mParent;
-  private int mOrder2;
-  private Z mOrder21;
+  private final int mSign;
+  private final boolean mParent;
+  private final int mOrder2;
+  private final Z mOrder21;
 
   /** Construct the sequence. */
   public A088878() {

@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
 import irvine.math.MemoryFunction3;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
@@ -22,7 +22,7 @@ public class A061889 extends Sequence2 {
       if (m.compareTo(Z.ONE) <= 0 || n.compareTo(k) < 0) {
         return Z.ZERO;
       }
-      final Z mf = MemoryFactorial.SINGLETON.factorial(m.intValueExact());
+      final Z mf = Functions.FACTORIAL.z(m.intValueExact());
       if (n.compareTo(mf.multiply(k)) > 0) {
         return Z.ZERO;
       }
@@ -33,6 +33,8 @@ public class A061889 extends Sequence2 {
   @Override
   public Z next() {
     final Z n = Z.valueOf(++mN);
-    return Integers.SINGLETON.sum(2, mN, r -> mB.get(MemoryFactorial.SINGLETON.factorial(r), n, Z.valueOf(r - 1)));
+    return Integers.SINGLETON.sum(2, mN, r -> {
+      return mB.get(Functions.FACTORIAL.z(r), n, Z.valueOf(r - 1));
+    });
   }
 }

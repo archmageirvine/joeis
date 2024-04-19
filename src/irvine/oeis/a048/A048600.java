@@ -31,7 +31,7 @@ public class A048600 extends MemoryFunction2Sequence<Integer, Z> {
         for (int j = 1; j <= k; ++j) {
           prod = prod.multiply(d.add(j));
         }
-        sum = sum.signedAdd(mobius == 1, prod.divide(mF.factorial(k)));
+        sum = sum.signedAdd(mobius == 1, prod.divide(Functions.FACTORIAL.z(k)));
       }
     }
     return sum;

@@ -11,7 +11,7 @@ import irvine.oeis.triangle.BaseTriangle;
  */
 public class A137423 extends BaseTriangle {
 
-  private BaseTriangle mSeq = new A053120();
+  private final BaseTriangle mSeq = new A053120();
 
   /** Construct the sequence. */
   public A137423() {

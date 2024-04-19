@@ -1,6 +1,7 @@
 package irvine.oeis.a064;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000110;
@@ -16,6 +17,8 @@ public class A064312 extends A000110 {
 
   @Override
   public Z next() {
-    return super.next().multiply(Integers.SINGLETON.sum(0, ++mN, k -> F.factorial(mN).divide(F.factorial(k))));
+    return super.next().multiply(Integers.SINGLETON.sum(0, ++mN, k -> {
+      return Functions.FACTORIAL.z(mN).divide(Functions.FACTORIAL.z(k));
+    }));
   }
 }

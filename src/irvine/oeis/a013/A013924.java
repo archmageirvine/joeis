@@ -1,6 +1,7 @@
 package irvine.oeis.a013;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.PrependSequence;
@@ -34,7 +35,7 @@ public class A013924 extends MemoryFunction2Sequence<Integer, Z> {
   private Q coeffSmnq(final int m, final int n, final int q) {
     assert q >= 1;
     if (q == 1) {
-      return new Q(get(m, n).multiply(m).add(get(m - 1, n).multiply(n - m + 1)), mF.factorial(n));
+      return new Q(get(m, n).multiply(m).add(get(m - 1, n).multiply(n - m + 1)), Functions.FACTORIAL.z(n));
     }
     Q u = Q.ZERO;
     for (int k = 1; k < n; ++k) {
@@ -59,13 +60,13 @@ public class A013924 extends MemoryFunction2Sequence<Integer, Z> {
       Q t = Q.ZERO;
       for (int q = 1; q <= Math.min(k - 1, m); ++q) {
         final Q u = coeffSmnq(m, n + q - k, q)
-          .divide(mF.factorial(q))
-          .divide(mF.factorial(k - 1 - q));
+          .divide(Functions.FACTORIAL.z(q))
+          .divide(Functions.FACTORIAL.z(k - 1 - q));
         t = t.add(u);
       }
       smn = smn.add(t.multiply(mB.a(k)));
     }
-    return smn.multiply(mF.factorial(n)).divide(n - m).toZ();
+    return smn.multiply(Functions.FACTORIAL.z(n)).divide(n - m).toZ();
   }
 
   private int mN = 3;

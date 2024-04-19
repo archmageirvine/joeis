@@ -1,6 +1,7 @@
 package irvine.oeis.a081;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Binomial;
@@ -34,7 +35,7 @@ public class A081054 extends AbstractSequence {
   private int mPsiBarCacheIndex = -1;
 
   protected Z lambda(final int d, final int k) {
-    return Binomial.binomial(2L * d + k - 1, 2L * d).multiply(mF.doubleFactorial(2 * d - 1));
+    return Binomial.binomial(2L * d + k - 1, 2L * d).multiply(Functions.MULTIFACTORIAL.z(2 * d - 1));
   }
 
   private Polynomial<Polynomial<Z>> lambdaSeries(final int n) {

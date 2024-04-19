@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
  */
 public class A018800 extends Sequence1 {
 
-  private Fast mPrime = new Fast();
+  private final Fast mPrime = new Fast();
   private long mN = 0;
 
   @Override

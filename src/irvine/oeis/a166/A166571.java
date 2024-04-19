@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000040;
  */
 public class A166571 extends A000040 {
 
-  private String mString;
+  private final String mString;
 
   /** Construct the sequence. */
   public A166571() {

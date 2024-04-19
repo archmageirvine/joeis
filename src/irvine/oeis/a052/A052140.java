@@ -1,6 +1,7 @@
 package irvine.oeis.a052;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -15,10 +16,11 @@ public class A052140 extends Sequence0 {
 
   @Override
   public Z next() {
-    final Z nf = mF.factorial(++mN);
+    final int n = ++mN;
+    final Z nf = Functions.FACTORIAL.z(n);
     Z sum = Z.ZERO;
     for (int k = 0; k <= mN; ++k) {
-      sum = sum.add(nf.divide(mF.factorial(k)));
+      sum = sum.add(nf.divide(Functions.FACTORIAL.z(k)));
     }
     return sum.multiply(nf).shiftLeft(2L * mN);
   }

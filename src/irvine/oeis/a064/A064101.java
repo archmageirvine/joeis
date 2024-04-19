@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000040;
  */
 public class A064101 extends A000040 {
 
-  private Z[] mA;
+  private final Z[] mA;
 
   protected A064101(final int n) {
     mA = new Z[n];

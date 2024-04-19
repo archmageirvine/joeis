@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.util.Permutation;
 
@@ -299,7 +299,7 @@ public class IntegerPermutation implements Comparable<IntegerPermutation> {
     if (n <= 1) {
       return Z.ZERO;
     }
-    final Z t = MemoryFactorial.SINGLETON.factorial(n - 1).multiply(n - p.image(n - 1) - 1);
+    final Z t = Functions.FACTORIAL.z(n - 1).multiply(n - p.image(n - 1) - 1);
     return t.add(permRank3Aux(n - 1, p.swap(n - 1, q.image(n - 1)), q.swap(n - 1, p.image(n - 1))));
   }
 
@@ -323,7 +323,7 @@ public class IntegerPermutation implements Comparable<IntegerPermutation> {
     }
     Z r = Z.ZERO;
     for (int j = n - 1; j >= 0; --j) {
-      r = r.add(MemoryFactorial.SINGLETON.factorial(j).multiply(j + 1 - p[j]));
+      r = r.add(Functions.FACTORIAL.z(j).multiply(j + 1 - p[j]));
       for (int i = 0; i < j; ++i) {
         if (p[i] > p[j]) {
           --p[i];
@@ -389,7 +389,7 @@ public class IntegerPermutation implements Comparable<IntegerPermutation> {
     if (r == 0) {
       return p;
     }
-    final int f = MemoryFactorial.SINGLETON.factorial(n - 1).intValueExact();
+    final int f = Functions.FACTORIAL.z(n - 1).intValueExact();
     final int s = r / f;
     final int[] q = IntegerUtils.identity(new int[n]);
     q[n - 1] = n - s - 1;

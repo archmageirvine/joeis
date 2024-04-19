@@ -16,7 +16,7 @@ public class A052817 extends A004111 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;
-  private Polynomial<Q> mA = RING.empty();
+  private final Polynomial<Q> mA = RING.empty();
 
   @Override
   public Z next() {

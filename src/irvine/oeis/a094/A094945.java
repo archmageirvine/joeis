@@ -12,7 +12,7 @@ import irvine.oeis.a023.A023532;
 public class A094945 extends Sequence0 {
 
   private final A023532 mSeq = new A023532();
-  private StringBuilder mSb = new StringBuilder();
+  private final StringBuilder mSb = new StringBuilder();
 
   @Override
   public Z next() {

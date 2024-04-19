@@ -1,6 +1,7 @@
 package irvine.oeis.a062;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -28,9 +29,9 @@ public class A062735 extends Sequence1 {
     final PolynomialRingField<Polynomial<Q>> ring = new PolynomialRingField<>(inner);
     Polynomial<Polynomial<Q>> sum = ring.zero();
     for (int k = 0; k <= n; ++k) {
-      sum = ring.add(sum, ring.monomial(inner.divide(inner.pow(Y1, k * (k - 1L)), new Q(F.factorial(k))), k));
+      sum = ring.add(sum, ring.monomial(inner.divide(inner.pow(Y1, k * (k - 1L)), new Q(Functions.FACTORIAL.z(k))), k));
     }
-    return ring.log(sum, n).coeff(n).coeff(m).multiply(F.factorial(n)).toZ();
+    return ring.log(sum, n).coeff(n).coeff(m).multiply(Functions.FACTORIAL.z(n)).toZ();
   }
 
   @Override

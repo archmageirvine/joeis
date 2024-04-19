@@ -18,6 +18,6 @@ public class A143473 extends Sequence0 {
       return Z.TEN;
     }
     final String nstr = String.valueOf(mN);
-    return new Z(String.valueOf(10 - (nstr.charAt(0) - '0')) + nstr.substring(1));
+    return new Z(10 - (nstr.charAt(0) - '0') + nstr.substring(1));
   }
 }

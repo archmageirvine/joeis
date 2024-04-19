@@ -11,7 +11,7 @@ import irvine.oeis.Sequence0;
  */
 public class A034966 extends Sequence0 {
 
-  private TreeSet<Long> mSeen = new TreeSet<>();
+  private final TreeSet<Long> mSeen = new TreeSet<>();
   private long mN = -1;
 
   @Override

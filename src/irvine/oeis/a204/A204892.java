@@ -13,9 +13,9 @@ import irvine.oeis.memory.MemorySequence;
 public class A204892 extends Sequence1 {
 
   private Z mNz;
-  private int mDist;
-  private int mVariant;
-  private MemorySequence mSeq;
+  private final int mDist;
+  private final int mVariant;
+  private final MemorySequence mSeq;
 
   /** Construct the sequence. */
   public A204892() {

@@ -3,6 +3,7 @@ package irvine.oeis.a052;
 import java.util.Arrays;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -36,11 +37,11 @@ public class A052121 extends Sequence1 {
       Polynomial<Polynomial<Q>> sum = xRing.zero(); // omit 1+ because we want log1p
       for (int k = 1; k <= mN; ++k) {
         final Polynomial<Q> y = yRing.series(yRing.one().shift(k * (k - 1) / 2), yRing.pow(y1, k, max), max);
-        sum = xRing.add(sum, xRing.monomial(yRing.divide(y, new Q(mF.factorial(k))), k));
+        sum = xRing.add(sum, xRing.monomial(yRing.divide(y, new Q(Functions.FACTORIAL.z(k))), k));
       }
       final Polynomial<Polynomial<Q>> log = xRing.log1p(sum, mN + 1);
       mRow = xRing.multiply(log, y1).coeff(mN);
     }
-    return mRow.coeff(mM).multiply(mF.factorial(mN)).toZ();
+    return mRow.coeff(mM).multiply(Functions.FACTORIAL.z(mN)).toZ();
   }
 }

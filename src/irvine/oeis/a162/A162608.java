@@ -2,6 +2,7 @@ package irvine.oeis.a162;
 // manually triman/trian at 2021-10-31 19:06
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
@@ -17,7 +18,7 @@ public class A162608 extends Triangle {
   @Override
   protected Z compute(final int n, final int k) {
     if (k == 0) {
-      mFact = FACTORIAL.factorial(n);
+      mFact = Functions.FACTORIAL.z(n);
       return mFact;
     } else {
       return get(n, k - 1).add(mFact);

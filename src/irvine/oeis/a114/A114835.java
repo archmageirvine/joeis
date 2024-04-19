@@ -12,7 +12,7 @@ public class A114835 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A114835() {
-    super(1, FINITE, new Z[] {Z.TWO, Z.THREE, Z.FIVE, Z.SEVEN,
+    super(1, FINITE, Z.TWO, Z.THREE, Z.FIVE, Z.SEVEN,
       new Z("11"), new Z("919"), new Z("94049"), new Z("94649"), new Z("94849"), new Z("94949"),
       new Z("96469"), new Z("98689"), new Z("9809089"), new Z("9888889"), new Z("9889889"), new Z("9908099"), new Z("9980899"), new Z("9989899"),
       new Z("900808009"), new Z("906686609"), new Z("906989609"), new Z("908000809"), new Z("908444809"), new Z("908808809"), new Z("909848909"),
@@ -35,7 +35,6 @@ public class A114835 extends FiniteSequence {
       new Z("9999999999990004000999999999999"),
       new Z("900000000999999949999999000000009"),
       new Z("989999999999998444899999999999989"),
-      new Z("9000000999999999994999999999990000009")
-    });
+      new Z("9000000999999999994999999999990000009"));
   }
 }

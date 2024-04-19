@@ -1,6 +1,6 @@
 package irvine.oeis.a065;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -20,7 +20,7 @@ public class A065952 extends Sequence0 {
   private static Polynomial<Q> e(final int n) {
     final Q[] c = new Q[n + 1];
     for (int k = 0; k < c.length; ++k) {
-      c[k] = new Q(Z.NEG_ONE.pow(k), MemoryFactorial.SINGLETON.factorial(k));
+      c[k] = new Q(Z.NEG_ONE.pow(k), Functions.FACTORIAL.z(k));
     }
     return Polynomial.create(c);
   }
@@ -32,6 +32,6 @@ public class A065952 extends Sequence0 {
   @Override
   public Z next() {
     final Polynomial<Q> e = e(++mN);
-    return select(RING.eval(e, Q.TWO).subtract(RING.eval(e, Q.ONE).multiply(RING.eval(e.truncate(mN - 1), Q.ONE))).multiply(MemoryFactorial.SINGLETON.factorial(mN)).multiply(Z.NEG_ONE.pow(mN)));
+    return select(RING.eval(e, Q.TWO).subtract(RING.eval(e, Q.ONE).multiply(RING.eval(e.truncate(mN - 1), Q.ONE))).multiply(Functions.FACTORIAL.z(mN)).multiply(Z.NEG_ONE.pow(mN)));
   }
 }

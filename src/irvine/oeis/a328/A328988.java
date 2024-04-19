@@ -12,7 +12,7 @@ import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 public class A328988 extends MemoryFunctionInt3Sequence<Z> {
 
   private int mN;
-  private Function<Integer, Boolean> mRank;
+  private final Function<Integer, Boolean> mRank;
 
   /** Construct the sequence. */
   public A328988() {

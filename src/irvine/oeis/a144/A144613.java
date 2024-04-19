@@ -10,7 +10,7 @@ import irvine.oeis.a000.A000203;
 public class A144613 extends A000203 {
 
   protected int mN = 0;
-  private int mMult;
+  private final int mMult;
 
   /** Construct the sequence. */
   public A144613() {

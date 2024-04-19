@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Collections;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -46,7 +47,7 @@ public class A008295 extends A000081 {
       //System.out.println("r(x)=" + mR);
       //System.out.println("r(x,y)=" + mRR);
     }
-    return mRR.coeff(mN).coeff(mM).multiply(mF.factorial(mM)).toZ();
+    return mRR.coeff(mN).coeff(mM).multiply(Functions.FACTORIAL.z(mM)).toZ();
   }
 
 }

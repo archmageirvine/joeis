@@ -12,7 +12,7 @@ import irvine.oeis.Sequence0;
  */
 public class A010906 extends Sequence0 {
 
-  private LinkedList<Z> mList = new LinkedList<>();
+  private final LinkedList<Z> mList = new LinkedList<>();
   private long mN = -1;
 
   @Override

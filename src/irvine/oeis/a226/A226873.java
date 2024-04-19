@@ -1,7 +1,7 @@
 package irvine.oeis.a226;
 
 import irvine.math.MemoryFunctionInt3;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
@@ -30,11 +30,11 @@ public class A226873 extends UpperLeftTriangle {
     @Override
     protected Q compute(final int n, final int i, final int t) {
       if (t == 1) {
-        return new Q(Z.ONE, MemoryFactorial.SINGLETON.factorial(n));
+        return new Q(Z.ONE, Functions.FACTORIAL.z(n));
       }
       Q sum = Q.ZERO;
       for (int j = i; j <= n / t; ++j) {
-        sum = sum.add(get(n - j, j, t - 1).divide(MemoryFactorial.SINGLETON.factorial(j)));
+        sum = sum.add(get(n - j, j, t - 1).divide(Functions.FACTORIAL.z(j)));
       }
       return sum;
     }
@@ -45,6 +45,6 @@ public class A226873 extends UpperLeftTriangle {
     if (k == 0) {
       return n == 0 ? Z.ONE : Z.ZERO;
     }
-    return mB.get(n, 0, k).multiply(MemoryFactorial.SINGLETON.factorial(n)).num();
+    return mB.get(n, 0, k).multiply(Functions.FACTORIAL.z(n)).num();
   }
 }

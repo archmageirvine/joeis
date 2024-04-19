@@ -24,7 +24,7 @@ public class A037040 extends AbstractSequence {
     super(0);
   }
 
-  private Prime mPrime = new Fast();
+  private final Prime mPrime = new Fast();
   private long mM = -1;
   private long mN = -1;
   private long mCount = 0;

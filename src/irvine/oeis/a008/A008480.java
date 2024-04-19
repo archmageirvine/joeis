@@ -3,6 +3,7 @@ package irvine.oeis.a008;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -23,8 +24,8 @@ public class A008480 extends Sequence1 {
     for (final Z p : fs.toZArray()) {
       final int e = fs.getExponent(p);
       sum = sum.add(e);
-      prod = prod.multiply(mF.factorial(e));
+      prod = prod.multiply(Functions.FACTORIAL.z(e));
     }
-    return mF.factorial(sum).divide(prod);
+    return Functions.FACTORIAL.z(sum).divide(prod);
   }
 }

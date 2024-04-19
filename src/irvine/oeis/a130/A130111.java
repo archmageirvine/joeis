@@ -13,7 +13,7 @@ public class A130111 extends Sequence1 {
 
   private final LongDynamicBooleanArray mUsed = new LongDynamicBooleanArray();
   private long mLeastUnused = 1;
-  private long[] mNext = new long[5];
+  private final long[] mNext = new long[5];
   private int mM = 5;
 
   @Override

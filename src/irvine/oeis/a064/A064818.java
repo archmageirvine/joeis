@@ -2,7 +2,7 @@ package irvine.oeis.a064;
 
 import java.util.ArrayList;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerComposition;
 import irvine.math.z.Z;
 import irvine.oeis.Conjectural;
@@ -75,7 +75,7 @@ public class A064818 extends Sequence1 implements Conjectural {
               if (usedOps != 0 && a == 1) {
                 break; // 1! pointless if already have done something
               }
-              stack[sp] = MemoryFactorial.SINGLETON.factorial((int) a).doubleValue();
+              stack[sp] = Functions.FACTORIAL.z((int) a).doubleValue();
               proof.add("!");
               if (is(stack, sp, usedOps | bit, proof)) {
                 return true;

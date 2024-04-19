@@ -2,6 +2,7 @@ package irvine.oeis.a126;
 
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.CycleIndex;
@@ -90,7 +91,7 @@ public class A126067 extends AbstractSequence {
       //System.out.println(Arrays.toString(j));
       ci.add(i(n, j, A002499.h(j)));
     }
-    ci.multiply(new Q(Z.ONE, FACTORIAL.factorial(n)));
+    ci.multiply(new Q(Z.ONE, Functions.FACTORIAL.z(n)));
     return ci;
   }
 

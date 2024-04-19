@@ -11,7 +11,7 @@ import irvine.oeis.Sequence0;
 public class A165471 extends Sequence0 {
 
   private int mN = -1;
-  private long mParm;
+  private final long mParm;
 
   /** Construct the sequence. */
   public A165471() {

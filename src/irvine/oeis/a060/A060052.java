@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a276.A276640;
 
@@ -19,7 +19,7 @@ public class A060052 extends A276640 {
 
   @Override
   protected Z t(final int n, final int m) {
-    return super.t(m, n).multiply(MemoryFactorial.SINGLETON.factorial(n)).divide(MemoryFactorial.SINGLETON.factorial(m));
+    return super.t(m, n).multiply(Functions.FACTORIAL.z(n)).divide(Functions.FACTORIAL.z(m));
   }
 
   @Override

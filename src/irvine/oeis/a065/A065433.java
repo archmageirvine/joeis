@@ -1,6 +1,7 @@
 package irvine.oeis.a065;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.r.DoubleUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -24,10 +25,10 @@ public class A065433 extends Sequence1 {
         ++mN;
         mM = 1;
         if (mVerbose) {
-          StringUtils.message("n >= 10^" + DoubleUtils.NF3.format(F.factorial(mN).log(10)));
+          StringUtils.message("n >= 10^" + DoubleUtils.NF3.format(Functions.FACTORIAL.z(mN).log(10)));
         }
       }
-      final Z sum = F.factorial(mN).add(F.factorial(mM));
+      final Z sum = Functions.FACTORIAL.z(mN).add(Functions.FACTORIAL.z(mM));
       if (sum.isSquare()) {
         return sum.sqrt();
       }

@@ -1,6 +1,7 @@
 package irvine.oeis.a008;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a001.A001790;
 
@@ -24,9 +25,9 @@ public class A008317 extends A001790 {
     }
     final int s = (mN - mM) / 2;
     return mDen.multiply(2L * mM + 1)
-      .multiply(mF.factorial(mN))
+      .multiply(Functions.FACTORIAL.z(mN))
       .shiftRight(s)
-      .divide(mF.factorial(s))
-      .divide(mF.doubleFactorial(mN + mM + 1));
+      .divide(Functions.FACTORIAL.z(s))
+      .divide(Functions.MULTIFACTORIAL.z(mN + mM + 1));
   }
 }

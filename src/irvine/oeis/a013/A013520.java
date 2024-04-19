@@ -1,6 +1,7 @@
 package irvine.oeis.a013;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -23,7 +24,7 @@ public class A013520 extends Sequence0 {
     Z sum = Z.ZERO;
     Z nn = Z.ONE;
     for (int k = 0; k < n; ++k, nn = nn.multiply(n)) {
-      sum = sum.add(mF.factorial(n - 1).divide(mF.factorial(k)).multiply(nn));
+      sum = sum.add(Functions.FACTORIAL.z(n - 1).divide(Functions.FACTORIAL.z(k)).multiply(nn));
     }
     return sum.subtract(Z.valueOf(n - 1).pow(n - 1).multiply2());
   }
@@ -31,8 +32,8 @@ public class A013520 extends Sequence0 {
   @Override
   public Z next() {
     if (++mN >= 3) {
-      mB = RING.add(mB, RING.monomial(new Q(a(mN), mF.factorial(mN)), mN));
+      mB = RING.add(mB, RING.monomial(new Q(a(mN), Functions.FACTORIAL.z(mN)), mN));
     }
-    return RING.exp(mB, mN).coeff(mN).multiply(mF.factorial(mN)).toZ();
+    return RING.exp(mB, mN).coeff(mN).multiply(Functions.FACTORIAL.z(mN)).toZ();
   }
 }

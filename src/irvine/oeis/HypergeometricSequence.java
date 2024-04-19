@@ -26,7 +26,7 @@ public class HypergeometricSequence extends AbstractSequence implements DirectSe
   private final int mOffset; // first index
   private final Z[] mInits; // initial terms
   private final int mInitNo; // mInits.length
-  private int mIn; // index for mInits
+  private final int mIn; // index for mInits
   private final BiFunction<Integer, Q, Z> mLambdaQ; // (n, v) -> f(n, v)
 /* for later optimization:
   private boolean[] mIsVarPoch; // whether the Pochhammer symbol (or the trailing variable) contains the variable <code>n</code>.

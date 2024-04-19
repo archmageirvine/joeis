@@ -1,6 +1,7 @@
 package irvine.oeis.a059;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
@@ -22,10 +23,10 @@ public class A059057 extends Sequence0 {
 
   // p := (x, k)->k!^2*sum(x^j/((k-j)!^2*j!), j=0..k);
   private Polynomial<Z> p(final int k) {
-    final Z kf2 = F.factorial(k).square();
+    final Z kf2 = Functions.FACTORIAL.z(k).square();
     final Polynomial<Z> res = RING.empty();
     for (int j = 0; j <= k; ++j) {
-      res.add(kf2.divide(F.factorial(k - j).square().multiply(F.factorial(j))));
+      res.add(kf2.divide(Functions.FACTORIAL.z(k - j).square().multiply(Functions.FACTORIAL.z(j))));
     }
     return res;
   }
@@ -40,7 +41,7 @@ public class A059057 extends Sequence0 {
     Polynomial<Z> sum = RING.zero();
     final Polynomial<Z> r = rook(n, k);
     for (int j = 0; j <= n * k; ++j) {
-      final Z c = r.coeff(j).multiply(F.factorial(n * k - j));
+      final Z c = r.coeff(j).multiply(Functions.FACTORIAL.z(n * k - j));
       sum = RING.add(sum, RING.multiply(RING.pow(C1, j), c));
     }
     return sum;

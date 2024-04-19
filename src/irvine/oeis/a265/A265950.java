@@ -1,6 +1,7 @@
 package irvine.oeis.a265;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.transform.GeneralizedEulerTransform;
 
@@ -24,6 +25,6 @@ public class A265950 extends GeneralizedEulerTransform {
 
   @Override
   protected Z advanceG(final long k) {
-    return FACTORIAL.factorial((int) k).negate();
+    return Functions.FACTORIAL.z((int) k).negate();
   }
 }

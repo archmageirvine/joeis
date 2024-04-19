@@ -1,6 +1,7 @@
 package irvine.oeis.a127;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -10,7 +11,7 @@ import irvine.oeis.AbstractSequence;
  */
 public class A127223 extends AbstractSequence {
 
-  private int mExpon;
+  private final int mExpon;
   private int mN;
   private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
@@ -36,6 +37,6 @@ public class A127223 extends AbstractSequence {
     for (int i = 2; i <= mExpon; ++i) {
       nPow *= mN;
     }
-    return FACTORIAL.factorial(nPow).divide(FACTORIAL.factorial(mN));
+    return Functions.FACTORIAL.z(nPow).divide(Functions.FACTORIAL.z(mN));
   }
 }

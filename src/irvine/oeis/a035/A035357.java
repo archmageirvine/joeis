@@ -18,7 +18,7 @@ import irvine.oeis.transform.BhjTransformSequence;
 public class A035357 extends Sequence1 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
-  private Polynomial<Z> mA = RING.empty();
+  private final Polynomial<Z> mA = RING.empty();
   {
     mA.add(Z.ZERO);
   }

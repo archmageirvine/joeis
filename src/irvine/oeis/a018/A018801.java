@@ -15,7 +15,7 @@ public class A018801 extends A000217 {
     super(1);
   }
 
-  private DynamicArray<String> mCache = new DynamicArray<>();
+  private final DynamicArray<String> mCache = new DynamicArray<>();
   private int mN = 0;
 
   private String triangular(final int n) {

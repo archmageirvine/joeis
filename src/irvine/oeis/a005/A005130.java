@@ -3,6 +3,7 @@ package irvine.oeis.a005;
 import java.io.Serializable;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -21,8 +22,8 @@ public class A005130 extends Sequence0 implements Serializable {
     Z num = Z.ONE;
     Z den = Z.ONE;
     for (int k = 0; k < mN; ++k) {
-      num = num.multiply(mF.factorial(3 * k + 1));
-      den = den.multiply(mF.factorial(mN + k));
+      num = num.multiply(Functions.FACTORIAL.z(3 * k + 1));
+      den = den.multiply(Functions.FACTORIAL.z(mN + k));
     }
     return num.divide(den);
   }

@@ -1,6 +1,7 @@
 package irvine.oeis.a274;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
@@ -36,7 +37,7 @@ public class A274447 extends MemoryFunction2Sequence<Integer, Z> {
       final Z t = get(mN - 1, k);
       s = s.signedAdd((k & 1) == 0, t);
     }
-    return new Q(s, mF.factorial(mN).shiftLeft(2L * mN - 1)).num();
+    return new Q(s, Functions.FACTORIAL.z(mN).shiftLeft(2L * mN - 1)).num();
   }
 
 }

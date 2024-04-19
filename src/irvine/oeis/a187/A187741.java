@@ -1,6 +1,6 @@
 package irvine.oeis.a187;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -19,6 +19,6 @@ public class A187741 extends Sequence0 {
     if (mN == 0) {
       return Z.ONE;
     }
-    return ((mN & 1) == 1) ? MemoryFactorial.SINGLETON.factorial((mN + 1) / 2) : MemoryFactorial.SINGLETON.factorial(mN / 2 + 1).divide2();
+    return ((mN & 1) == 1) ? Functions.FACTORIAL.z((mN + 1) / 2) : Functions.FACTORIAL.z(mN / 2 + 1).divide2();
   }
 }

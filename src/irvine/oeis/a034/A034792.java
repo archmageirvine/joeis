@@ -15,7 +15,7 @@ public class A034792 extends MemorySequence {
     setOffset(1);
   }
 
-  private Sequence mT = new A000217().skip(1);
+  private final Sequence mT = new A000217().skip(1);
 
   private boolean isCoprime(final Z t) {
     for (final Z m : this) {

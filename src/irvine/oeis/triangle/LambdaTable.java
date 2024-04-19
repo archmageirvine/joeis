@@ -13,7 +13,7 @@ import irvine.oeis.AbstractSequence;
  */
 public abstract class LambdaTable extends AbstractSequence implements DirectArray {
 
-  private int mRowMin; // starting row index
+  private final int mRowMin; // starting row index
   private int mColMax; // ending column index
   private int mRow; // current row index
   private int mCol; // current column index

@@ -3,6 +3,7 @@ package irvine.oeis.a034;
 import java.util.ArrayList;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -56,7 +57,7 @@ public class A034855 extends AbstractSequence {
 
   private Z a(final int n, final int k) {
     final Q c = gf(k, n).coeff(n);
-    return c.multiply(mF.factorial(n)).toZ();
+    return c.multiply(Functions.FACTORIAL.z(n)).toZ();
   }
 
   protected Z r(final int n, final int d) {

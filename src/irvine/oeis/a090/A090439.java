@@ -1,6 +1,6 @@
 package irvine.oeis.a090;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Binomial;
@@ -16,7 +16,9 @@ public class A090439 extends LambdaSequence {
   /** Construct the sequence. */
   public A090439() {
     // seq(add((-1)^k*(2*n)!/k!*binomial(2*(n-1), k-2), k=2..2*n),n=1..10);
-    super(1, n -> Rationals.SINGLETON.sum(2, 2 * n, k -> new Q(Z.NEG_ONE.pow(k).multiply(MemoryFactorial.SINGLETON.factorial(2 * n)), MemoryFactorial.SINGLETON.factorial(k)).multiply(Binomial.binomial(2 * (n - 1), k - 2))).num());
+    super(1, n -> Rationals.SINGLETON.sum(2, 2 * n, k -> {
+      return new Q(Z.NEG_ONE.pow(k).multiply(Functions.FACTORIAL.z(2 * n)), Functions.FACTORIAL.z(k)).multiply(Binomial.binomial(2 * (n - 1), k - 2));
+    }).num());
   }
 
 }

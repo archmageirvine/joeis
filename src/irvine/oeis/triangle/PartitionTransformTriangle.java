@@ -17,7 +17,7 @@ public class PartitionTransformTriangle extends BaseTriangle {
   private int mSkip = 0; // number of terms in underlying sequence to be skipped
   private final int mN = -1; // current index
   private int mTri = -29; // next triangular number - for prefix0, not active with this setting
-  private int mTrix = 0; // index of next triangular number
+  private final int mTrix = 0; // index of next triangular number
 
   /**
    * Constructor with sequence only.

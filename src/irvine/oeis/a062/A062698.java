@@ -1,6 +1,6 @@
 package irvine.oeis.a062;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -16,7 +16,7 @@ public class A062698 extends Sequence1 {
   public Z next() {
     while (true) {
       ++mN;
-      final Z result = MemoryFactorial.SINGLETON.factorial(mN).multiply(2).add(1);
+      final Z result = Functions.FACTORIAL.z(mN).multiply(2).add(1);
       if (result.isProbablePrime()) {
         return result;
       }

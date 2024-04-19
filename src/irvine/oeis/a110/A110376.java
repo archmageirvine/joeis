@@ -3,6 +3,7 @@ package irvine.oeis.a110;
 
 import irvine.math.LongUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -22,7 +23,7 @@ public class A110376 extends Sequence1 {
     for (int k = 1; k <= mN; ++k) {
       final long gd = LongUtils.gcd(mN, k);
       if (gd == 1) {
-        sum = sum.add(FACTORIAL.factorial(mN).divide(k));
+        sum = sum.add(Functions.FACTORIAL.z(mN).divide(k));
       }
     }
     return sum;

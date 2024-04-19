@@ -11,7 +11,7 @@ import irvine.oeis.memory.MemorySequence;
  */
 public class A038028 extends InverseSequence {
 
-  private MemorySequence mA038026 = MemorySequence.cachedSequence(new A038026());
+  private final MemorySequence mA038026 = MemorySequence.cachedSequence(new A038026());
   private final Fast mPrime = new Fast();
 
   /** Construct the sequence. */

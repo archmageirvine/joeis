@@ -2,6 +2,7 @@ package irvine.oeis.a047;
 
 import irvine.math.MemoryFunctionInt5;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -19,21 +20,21 @@ public class A047909 extends Sequence1 {
     @Override
     protected Q compute(final int k, final int p, final int j, final int l, final int t) {
       if (k == 0) {
-        return new Q(Z.ONE, (t & 1) == 0 ? mF.factorial(l) : mF.factorial(l).negate());
+        return new Q(Z.ONE, (t & 1) == 0 ? Functions.FACTORIAL.z(l) : Functions.FACTORIAL.z(l).negate());
       }
       if (p < 0) {
         return Q.ZERO;
       }
       Q sum = Q.ZERO;
       for (int i = 0; i <= k; ++i) {
-        sum = sum.add(get(k - i, p - 1, j + 1, l + i * j, (t + i * j) & 1).divide(mF.factorial(i).multiply(mF.factorial(p).pow(i))));
+        sum = sum.add(get(k - i, p - 1, j + 1, l + i * j, (t + i * j) & 1).divide(Functions.FACTORIAL.z(i).multiply(Functions.FACTORIAL.z(p).pow(i))));
       }
       return sum;
     }
   };
 
   private Z h(final int p, final int k) {
-    return mB.get(k, p - 1, 1, 0, k & 1).multiply(mF.factorial(k)).multiply(mF.factorial(p * k)).toZ();
+    return mB.get(k, p - 1, 1, 0, k & 1).multiply(Functions.FACTORIAL.z(k)).multiply(Functions.FACTORIAL.z(p * k)).toZ();
   }
 
   @Override

@@ -38,7 +38,7 @@ public class A003282 extends Sequence0 {
     }
   }
 
-  private B003282 mSeq = new B003282();
+  private final B003282 mSeq = new B003282();
 
   protected Z toZ(final Q q) {
     return q.num();

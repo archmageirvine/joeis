@@ -1,7 +1,7 @@
 package irvine.oeis.a068;
 
 import irvine.factor.prime.Fast;
-import irvine.math.factorial.Factorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -15,8 +15,8 @@ public class A068370 extends Sequence1 {
   private long mN = 1;
 
   private boolean is(final long n) {
-    for (int k = 2; Factorial.FACTORIAL[k] < n; ++k) {
-      if (!mFast.isPrime(n - Factorial.FACTORIAL[k])) {
+    for (int k = 2; Functions.FACTORIAL.l(k) < n; ++k) {
+      if (!mFast.isPrime(n - Functions.FACTORIAL.l(k))) {
         return false;
       }
     }

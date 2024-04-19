@@ -1,6 +1,6 @@
 package irvine.oeis.a067;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -27,7 +27,7 @@ public class A067146 extends Sequence1 {
     } else {
       final Q coeff = RING.reversion(mGf, mN).coeff(mN - 1);
       mGf.add(coeff.divide(mN));
-      return coeff.multiply(MemoryFactorial.SINGLETON.factorial(mN - 1)).toZ();
+      return coeff.multiply(Functions.FACTORIAL.z(mN - 1)).toZ();
     }
   }
 }

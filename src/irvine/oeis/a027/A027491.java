@@ -1,5 +1,6 @@
 package irvine.oeis.a027;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -22,7 +23,8 @@ public class A027491 extends A027478 {
   @Override
   public Z next() {
     step();
-    final Z f = mF.factorial(++mN).pow(power());
+    final int n = ++mN;
+    final Z f = Functions.FACTORIAL.z(n).pow(power());
     return mMatrix.get(mN - 1, 2).multiply(f).toZ();
   }
 }

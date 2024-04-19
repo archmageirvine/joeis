@@ -59,7 +59,7 @@ public class A043001 extends Sequence1 {
       ++mWidth;
       mInner = Z.ZERO;
       mRadixPower = mRadixPower.multiply(mRadix);
-      return new Z(String.valueOf(mStart) + String.valueOf(mStart), mRadix);
+      return new Z(String.valueOf(mStart) + mStart, mRadix);
     } else {
       final Z left = mRadixPower.multiply(mStart).add(mInner);
       final Z result = mirror(left.toString(mRadix), mWidth);

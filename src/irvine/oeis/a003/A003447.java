@@ -1,5 +1,6 @@
 package irvine.oeis.a003;
 
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -38,11 +39,11 @@ public class A003447 extends A003442 {
       for (int k = 1; k < a.length; ++k) {
         if (a[k] > 0) {
           sumA += a[k];
-          den = den.multiply(mF.factorial(a[k]));
+          den = den.multiply(Functions.FACTORIAL.z(a[k]));
           prod = RING.multiply(prod, RING.pow(r(k, n), a[k], n), n);
         }
       }
-      prod = RING.multiply(prod, new Q(mF.factorial(sumA), den));
+      prod = RING.multiply(prod, new Q(Functions.FACTORIAL.z(sumA), den));
       rPrime = RING.add(rPrime, prod);
     }
     return rPrime;

@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -35,7 +36,7 @@ public class A060240 extends AbstractSequence {
 
   protected Z degree(final int n, final int[] a) {
     final int k = a.length;
-    Z d = mF.factorial(n);
+    Z d = Functions.FACTORIAL.z(n);
     for (int i = 0; i < k; ++i) {
       final int b = a[i] + k - i - 1;
       for (int j = i + 1; j < k; ++j) {
@@ -43,7 +44,7 @@ public class A060240 extends AbstractSequence {
       }
     }
     for (int i = 0; i < k; ++i) {
-      d = d.divide(mF.factorial(a[i] + k - i - 1));
+      d = d.divide(Functions.FACTORIAL.z(a[i] + k - i - 1));
     }
     return d;
   }

@@ -1,6 +1,7 @@
 package irvine.oeis.a038;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.a024.A024462;
@@ -16,7 +17,7 @@ public class A038766 extends A024462 {
   private int mM = 0;
 
   private Z factorial(final int n) {
-    return n < 0 ? Z.ONE : mF.factorial(n);
+    return n < 0 ? Z.ONE : Functions.FACTORIAL.z(n);
   }
 
   private Z h(final int r, final int eta) {

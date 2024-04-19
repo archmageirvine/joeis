@@ -1,7 +1,7 @@
 package irvine.oeis.a111;
 
 import irvine.math.MemoryFunctionInt2;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
@@ -27,7 +27,7 @@ public class A111528 extends UpperLeftTriangle {
         return Z.ONE;
       }
       if (n == 0) {
-        return MemoryFactorial.SINGLETON.factorial(k);
+        return Functions.FACTORIAL.z(k);
       }
       Z sum = get(n - 1, k + 1).subtract(get(n - 1, k)).divide(n);
       for (int j = 1; j < k; ++j) {

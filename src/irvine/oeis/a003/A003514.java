@@ -3,6 +3,7 @@ package irvine.oeis.a003;
 import java.util.Arrays;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -30,7 +31,7 @@ public class A003514 extends Sequence0 {
       final Polynomial<Q> e1 = RING.pow(RING.multiply(RING.exp(s1, n), Q.TWO), b, n);
       final Polynomial<Q> e2 = RING.pow(RING.exp(s2, n), k, n);
       final Polynomial<Q> e1e2 = RING.multiply(e1, e2, n);
-      final Polynomial<Q> t = RING.shift(RING.multiply(e1e2, new Q(Z.ONE, mF.factorial(k))), k);
+      final Polynomial<Q> t = RING.shift(RING.multiply(e1e2, new Q(Z.ONE, Functions.FACTORIAL.z(k))), k);
       egf = RING.add(egf, t);
     }
     egf = RING.multiply(egf, RING.exp(P, n), n);
@@ -40,6 +41,6 @@ public class A003514 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return egf(mN).coeff(mN).multiply(mF.factorial(mN)).toZ();
+    return egf(mN).coeff(mN).multiply(Functions.FACTORIAL.z(mN)).toZ();
   }
 }

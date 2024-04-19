@@ -3,6 +3,7 @@ package irvine.oeis.a068;
 import java.util.TreeSet;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -23,12 +24,12 @@ public class A068514 extends Sequence1 {
   @Override
   public Z next() {
     while (mA.isEmpty() || mA.first().compareTo(mLim) >= 0) {
-      final Z t = F.factorial(2 * mN).divide(F.factorial(mN));
+      final Z t = Functions.FACTORIAL.z(2 * mN).divide(Functions.FACTORIAL.z(mN));
       for (int k = 1; k <= mN; ++k) {
-        mA.add(t.multiply(F.factorial(2 * k).divide(F.factorial(k))).divide(F.factorial(mN + k)));
+        mA.add(t.multiply(Functions.FACTORIAL.z(2 * k).divide(Functions.FACTORIAL.z(k))).divide(Functions.FACTORIAL.z(mN + k)));
       }
       final int m = (++mN + 2) / 3;
-      mLim = F.factorial(2 * mN).divide(F.factorial(mN)).multiply(F.factorial(2 * m).divide(F.factorial(m))).divide(F.factorial(mN + m));
+      mLim = Functions.FACTORIAL.z(2 * mN).divide(Functions.FACTORIAL.z(mN)).multiply(Functions.FACTORIAL.z(2 * m).divide(Functions.FACTORIAL.z(m))).divide(Functions.FACTORIAL.z(mN + m));
     }
     return mA.pollFirst();
   }

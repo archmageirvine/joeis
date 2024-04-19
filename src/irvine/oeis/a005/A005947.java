@@ -1,6 +1,7 @@
 package irvine.oeis.a005;
 
 import irvine.math.MemoryFunction2;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -48,7 +49,7 @@ public class A005947 extends A005946 {
           t = t.multiply(A005947.this.get(k, m - 1).pow(lambda[k]));
         }
         t = t.multiply(lambdaPar(lambda, n, m));
-        t = t.multiply(FACTORIAL.factorial(n));
+        t = t.multiply(Functions.FACTORIAL.z(n));
         t = t.divide(per(lambda));
         sum = sum.add(t);
       }

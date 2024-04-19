@@ -16,7 +16,7 @@ public class A006651 extends A001430 {
     super(4);
   }
 
-  private Sequence mA = new A048180();
+  private final Sequence mA = new A048180();
 
   @Override
   public Z next() {

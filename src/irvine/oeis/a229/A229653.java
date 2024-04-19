@@ -10,7 +10,7 @@ import irvine.oeis.memory.MemorySequence;
  */
 public class A229653 extends MemorySequence {
 
-  private int mSect;
+  private final int mSect;
 
   /** Construct the sequence. */
   public A229653() {

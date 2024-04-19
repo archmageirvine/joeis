@@ -16,7 +16,7 @@ import irvine.oeis.a004.A004601;
  */
 public class A159959 extends AbstractSequence {
 
-  private int mN;
+  private final int mN;
   private final Sequence mSeq;
   private final Z mK;
   private final HashSet<Z> mSet;

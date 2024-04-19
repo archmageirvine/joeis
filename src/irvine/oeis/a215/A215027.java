@@ -12,6 +12,6 @@ public class A215027 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A215027() {
-    super(0, (n, s) -> new Z(String.valueOf(n - 1) + String.valueOf(n)).subtract(s[0]), "0", PREVIOUS);
+    super(0, (n, s) -> new Z(String.valueOf(n - 1) + n).subtract(s[0]), "0", PREVIOUS);
   }
 }

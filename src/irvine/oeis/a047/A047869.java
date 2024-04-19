@@ -12,7 +12,7 @@ import irvine.oeis.Sequence1;
  */
 public class A047869 extends Sequence1 {
 
-  private Z[] mA = new Z[256];
+  private final Z[] mA = new Z[256];
   {
     for (int k = 0; k < mA.length; ++k) {
       mA[k] = Z.valueOf(k);

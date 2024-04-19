@@ -15,7 +15,7 @@ public class A006716 extends Sequence1 {
 
   private Z mN = Z.ZERO;
   // Precomputed table of accepted values allows us to look at more than 1 digit at a time
-  private boolean[] mAccept = new boolean[TAB_SIZE];
+  private final boolean[] mAccept = new boolean[TAB_SIZE];
   {
     for (final int a : DIGITS) {
       for (final int b : DIGITS) {

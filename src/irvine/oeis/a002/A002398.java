@@ -1,6 +1,7 @@
 package irvine.oeis.a002;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Binomial;
@@ -42,7 +43,7 @@ public class A002398 extends AbstractSequence {
   }
 
   private Z lfac(final int n) {
-    return mF.factorial(n).multiply(l(n));
+    return Functions.FACTORIAL.z(n).multiply(l(n));
   }
 
   Z bigA(final int n, final int m) {

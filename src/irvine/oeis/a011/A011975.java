@@ -12,8 +12,8 @@ import irvine.oeis.DirectSequence;
 public class A011975 extends AbstractSequence implements DirectSequence {
 
   private int mN;
-  private int mP2; // second parameter
-  private int mP3; // third parameter
+  private final int mP2; // second parameter
+  private final int mP3; // third parameter
 
   /** Construct the sequence. */
   public A011975() {

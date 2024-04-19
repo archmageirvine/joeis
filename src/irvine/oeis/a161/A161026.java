@@ -55,7 +55,7 @@ public class A161026 extends AbstractSequence {
     a:= n-> b(n, 2):
     seq(a(n), n=0..80);
   */
-  private MemoryFunction1<Integer> mF = new MemoryFunction1<>() {
+  private final MemoryFunction1<Integer> mF = new MemoryFunction1<>() {
     @Override
     protected Integer compute(final int n) {
       return mLambda.apply(n);

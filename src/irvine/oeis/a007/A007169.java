@@ -22,7 +22,7 @@ public class A007169 extends A003168 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;
-  private CycleIndex mCycleIndexSum = new CycleIndex("C");
+  private final CycleIndex mCycleIndexSum = new CycleIndex("C");
   private Polynomial<Q> mB = RING.monomial(new Q(super.next()), 1);
 
   @Override

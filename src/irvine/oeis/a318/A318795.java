@@ -2,6 +2,7 @@ package irvine.oeis.a318;
 
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.partition.IntegerPartition;
@@ -59,7 +60,7 @@ public class A318795 extends A052107 {
       s = fld.exp(s, n);
       sum = sum.add(s.coeff(n).coeff(k).multiply(IntegerPartition.permCount(q, 1)));
     }
-    return sum.divide(mF.factorial(m)).toZ();
+    return sum.divide(Functions.FACTORIAL.z(m)).toZ();
   }
 
   @Override

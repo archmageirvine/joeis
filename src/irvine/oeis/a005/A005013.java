@@ -12,8 +12,8 @@ import irvine.oeis.a000.A000045;
  */
 public class A005013 extends Sequence0 {
 
-  private Sequence mFibo = new A000045();
-  private Sequence mLucas = new A000032();
+  private final Sequence mFibo = new A000045();
+  private final Sequence mLucas = new A000032();
   private boolean mS = false;
 
   @Override

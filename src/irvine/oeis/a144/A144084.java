@@ -1,6 +1,6 @@
 package irvine.oeis.a144;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
@@ -14,6 +14,6 @@ public class A144084 extends Triangle {
 
   @Override
   public Z compute(final int n, final int k) {
-    return Binomial.binomial(n, k).square().multiply(MemoryFactorial.SINGLETON.factorial(k));
+    return Binomial.binomial(n, k).square().multiply(Functions.FACTORIAL.z(k));
   }
 }

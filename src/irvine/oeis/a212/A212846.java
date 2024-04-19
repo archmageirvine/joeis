@@ -15,8 +15,8 @@ import irvine.oeis.AbstractSequence;
 public class A212846 extends AbstractSequence {
 
   private final ArrayList<Z> mArr;
-  private int mPQ;
-  private int mQ;
+  private final int mPQ;
+  private final int mQ;
   private int mN;
 
   /** Construct the sequence. */

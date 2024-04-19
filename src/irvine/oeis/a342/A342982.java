@@ -1,6 +1,7 @@
 package irvine.oeis.a342;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -20,11 +21,11 @@ public class A342982 extends AbstractSequence {
   private int mM = 0;
 
   protected Z t(final int n, final int m) {
-    return mF.factorial(2 * n)
-      .divide(mF.factorial(m))
-      .divide(mF.factorial(m + 1))
-      .divide(mF.factorial(n - m))
-      .divide(mF.factorial(n - m + 1));
+    return Functions.FACTORIAL.z(2 * n)
+      .divide(Functions.FACTORIAL.z(m))
+      .divide(Functions.FACTORIAL.z(m + 1))
+      .divide(Functions.FACTORIAL.z(n - m))
+      .divide(Functions.FACTORIAL.z(n - m + 1));
 
   }
 

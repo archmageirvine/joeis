@@ -1,6 +1,6 @@
 package irvine.oeis.a262;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -19,10 +19,10 @@ public class A262776 extends Sequence0 {
     if (++mN < 6) {
       return Z.ZERO;
     }
-    final Z mod = MemoryFactorial.SINGLETON.factorial(Fibonacci.fibonacci(mN).intValue());
+    final Z mod = Functions.FACTORIAL.z(Fibonacci.fibonacci(mN).intValue());
     Z a = Z.ZERO;
     Z b = Z.ONE;
-    final long fn = MemoryFactorial.SINGLETON.factorial(mN).longValueExact();
+    final long fn = Functions.FACTORIAL.z(mN).longValueExact();
     for (long k = 1; k < fn; ++k) {
       final Z t = a.add(b).mod(mod);
       a = b;

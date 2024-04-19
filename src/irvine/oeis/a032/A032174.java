@@ -15,7 +15,7 @@ public class A032174 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> TWO = RING.monomial(Q.TWO, 1);
-  private Polynomial<Q> mA = TWO;
+  private final Polynomial<Q> mA = TWO;
   private int mN = 0;
 
   @Override

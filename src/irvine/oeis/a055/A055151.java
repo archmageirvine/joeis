@@ -1,6 +1,7 @@
 package irvine.oeis.a055;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.DoubleRowTriangle;
 
@@ -20,6 +21,6 @@ public class A055151 extends DoubleRowTriangle {
 
   @Override
   public Z compute(final int n, final int k) {
-    return FACTORIAL.factorial(n).divide(FACTORIAL.factorial(n - 2 * k).multiply(FACTORIAL.factorial(k)).multiply(FACTORIAL.factorial(k + 1)));
+    return Functions.FACTORIAL.z(n).divide(Functions.FACTORIAL.z(n - 2 * k).multiply(Functions.FACTORIAL.z(k)).multiply(Functions.FACTORIAL.z(k + 1)));
   }
 }

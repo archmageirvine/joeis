@@ -11,7 +11,6 @@ import irvine.oeis.memory.MemorySequence;
  */
 public class NumericalAronsonSequence extends AbstractSequence {
 
-  private static int sDebug = 0;
   protected MemorySequence mSeq; // underlying sequence
   protected int mN; // current index
   protected int mAttribs; // bit mask for features; low nibble may be start value

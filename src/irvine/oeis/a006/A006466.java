@@ -11,7 +11,7 @@ public class A006466 extends FoldedContinuedFraction {
 
   /** Construct the sequence */
   public A006466() {
-    super(0, k -> Z.TWO, new long[] {1, 1, 1});
+    super(0, k -> Z.TWO, 1, 1, 1);
     setStart(2);
   }
 }

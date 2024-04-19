@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.partition.IntegerPartition;
@@ -53,7 +52,7 @@ public class A060041 extends AbstractSequence {
         Q prod = Q.ONE;
         for (int i = 1; i < j.length; ++i) {
           if (j[i] > 0) {
-            prod = prod.multiply(aa.get(i - 1).pow(j[i])).divide(MemoryFactorial.SINGLETON.factorial(j[i]));
+            prod = prod.multiply(aa.get(i - 1).pow(j[i])).divide(Functions.FACTORIAL.z(j[i]));
           }
         }
         Z pr = Z.ONE;
@@ -75,14 +74,14 @@ public class A060041 extends AbstractSequence {
     }
     final Q[] c1 = new Q[mN + 1];
     for (int k = 0; k < c1.length; ++k) {
-      final Q t = new Q(MemoryFactorial.SINGLETON.factorial(5 * k), MemoryFactorial.SINGLETON.factorial(k).pow(5));
+      final Q t = new Q(Functions.FACTORIAL.z(5 * k), Functions.FACTORIAL.z(k).pow(5));
       c1[k] = (k & 1) == 0 ? t : t.negate();
     }
     final Polynomial<Q> a1 = Polynomial.create(c1);
     final Q[] c2 = new Q[mN + 1];
     for (int k = 0; k < c2.length; ++k) {
       final Q t0 = Rationals.SINGLETON.sum(k + 1, 5 * k, j -> new Q(1, j));
-      final Q t = t0.multiply(new Q(MemoryFactorial.SINGLETON.factorial(5 * k), MemoryFactorial.SINGLETON.factorial(k).pow(5)));
+      final Q t = t0.multiply(new Q(Functions.FACTORIAL.z(5 * k), Functions.FACTORIAL.z(k).pow(5)));
       c2[k] = (k & 1) == 0 ? t : t.negate();
     }
     final Polynomial<Q> a2a = RING.multiply(Polynomial.create(c2), Q.FIVE);

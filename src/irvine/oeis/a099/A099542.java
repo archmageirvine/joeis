@@ -11,7 +11,7 @@ import irvine.oeis.Sequence1;
  */
 public class A099542 extends Sequence1 {
 
-  private int mBase;
+  private final int mBase;
   protected Z mSopfr;
   private long mN = 0;
 
@@ -38,9 +38,7 @@ public class A099542 extends Sequence1 {
     final long digProd = Functions.DIGIT_PRODUCT.l(mBase, n);
     if (digProd != 0 && digProd % mBase == 0) {
       mSopfr = Jaguar.factor(n).sopfr();
-      if (mSopfr.multiply(mBase).equals(digProd)) {
-        return true;
-      }
+      return mSopfr.multiply(mBase).equals(digProd);
     }
     return false;
   }

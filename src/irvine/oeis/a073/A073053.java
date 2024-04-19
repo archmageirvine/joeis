@@ -34,7 +34,7 @@ public class A073053 extends AbstractSequence {
         odd += counts[i];
       }
     }
-    return new Z(String.valueOf(even) + String.valueOf(odd) + String.valueOf(even + odd));
+    return new Z(String.valueOf(even) + odd + (even + odd));
   }
 
   @Override

@@ -1,7 +1,7 @@
 package irvine.oeis.a237;
 // manually A258293/parmof3 at 2023-12-22 16:16
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a258.A258293;
 
@@ -15,7 +15,9 @@ public class A237512 extends A258293 {
 
   /** Construct the sequence. */
   public A237512() {
-    super(0, 0, n -> MemoryFactorial.SINGLETON.factorial(n).subtract(Z.valueOf((long) n * (n + 1) / 2)));
+    super(0, 0, n -> {
+      return Functions.FACTORIAL.z(n).subtract(Z.valueOf((long) n * (n + 1) / 2));
+    });
   }
 
   @Override

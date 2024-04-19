@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -21,7 +21,7 @@ public class A066324 extends Sequence1 {
     }
     return Z.valueOf(mN).pow(mN - mM)
       .multiply(mM)
-      .multiply(MemoryFactorial.SINGLETON.factorial(mN - 1))
-      .divide(MemoryFactorial.SINGLETON.factorial(mN - mM));
+      .multiply(Functions.FACTORIAL.z(mN - 1))
+      .divide(Functions.FACTORIAL.z(mN - mM));
   }
 }

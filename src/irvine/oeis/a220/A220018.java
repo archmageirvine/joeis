@@ -14,7 +14,7 @@ import irvine.oeis.AbstractSequence;
 public class A220018 extends AbstractSequence {
 
   private Z mTen;
-  private Z mOrder;
+  private final Z mOrder;
 
   /** Construct the sequence. */
   public A220018() {

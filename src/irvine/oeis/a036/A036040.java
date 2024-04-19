@@ -5,6 +5,7 @@ import java.util.TreeSet;
 
 import irvine.math.Comparators;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -33,9 +34,9 @@ public class A036040 extends Sequence1 {
     IntegerPartition.toCountForm(mA.pollFirst(), mC);
     Z prod = Z.ONE;
     for (int k = 1; k < mC.length; ++k) {
-      prod = prod.multiply(mF.factorial(k).pow(mC[k]).multiply(mF.factorial(mC[k])));
+      prod = prod.multiply(Functions.FACTORIAL.z(k).pow(mC[k]).multiply(Functions.FACTORIAL.z(mC[k])));
     }
-    return mF.factorial(mN).divide(prod);
+    return Functions.FACTORIAL.z(mN).divide(prod);
   }
 }
 

@@ -14,8 +14,8 @@ import irvine.oeis.Sequence0;
 public class A085748 extends Sequence0 {
 
   private int mN;
-  private ArrayList<Z> mA;
-  private ArrayList<Z> mB;
+  private final ArrayList<Z> mA;
+  private final ArrayList<Z> mB;
   
   /** Construct the sequence. */
   public A085748() {

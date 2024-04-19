@@ -23,7 +23,7 @@ public class A002619 extends Sequence1 {
       final int d = dd.intValueExact();
       final long m = mN / d;
       final long phi = Functions.PHI.l(m);
-      final Z t = Z.valueOf(m).pow(d).multiply(phi * phi).multiply(mF.factorial(d));
+      final Z t = Z.valueOf(m).pow(d).multiply(phi * phi).multiply(Functions.FACTORIAL.z(d));
       sum = sum.add(t);
     }
     return sum.divide(mN * mN);

@@ -10,7 +10,7 @@ import irvine.oeis.a000.A000110;
  */
 public class A060996 extends Sequence0 {
 
-  private A000110 mSeq1 = new A000110();
+  private final A000110 mSeq1 = new A000110();
 
   /** Construct the sequence. */
   public A060996() {

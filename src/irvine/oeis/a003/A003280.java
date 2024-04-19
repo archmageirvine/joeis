@@ -57,7 +57,7 @@ public class A003280 extends Sequence0 {
     return new Q(9, 32);
   }
 
-  private B003280 mSeq = new B003280(b0(), b1());
+  private final B003280 mSeq = new B003280(b0(), b1());
 
   @Override
   public Z next() {

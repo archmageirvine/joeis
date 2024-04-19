@@ -1,6 +1,7 @@
 package irvine.oeis.a061;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.partition.DistinctPartsPartition;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
@@ -18,7 +19,9 @@ public class A061343 extends Sequence1 {
   private int mN = 0;
 
   private Z productFactorials(final int[] v) {
-    return Integers.SINGLETON.product(0, v.length - 1, k -> F.factorial(v[k]));
+    return Integers.SINGLETON.product(0, v.length - 1, k -> {
+      return Functions.FACTORIAL.z(v[k]);
+    });
   }
 
   // Return product of differences of distinct pairs
@@ -45,7 +48,7 @@ public class A061343 extends Sequence1 {
 
   // Thrall's formula (4) at page 83:
   private Z ntab(final int[] v) {
-    return dm(v).multiply(F.factorial(mN)).divide(productFactorials(v).multiply(dp(v)));
+    return dm(v).multiply(Functions.FACTORIAL.z(mN)).divide(productFactorials(v).multiply(dp(v)));
   }
 
   @Override

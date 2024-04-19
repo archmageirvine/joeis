@@ -16,6 +16,6 @@ public class A105814 extends Sequence1 {
   public Z next() {
     ++mN;
     final Z n = Z.valueOf(mN);
-    return n.square().add(new Z(n.toString() + n.toString()));
+    return n.square().add(new Z(n.toString() + n));
   }
 }

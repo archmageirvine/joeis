@@ -1,6 +1,7 @@
 package irvine.oeis.a038;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -23,7 +24,7 @@ public class A038667 extends Sequence0 {
     Z mm = m;
     Z bb = b;
     for (int k = 1; k <= 2 && mm.compareTo(mP) < 0; ++k) {
-      if (j == 2 || k == 2 || mF.factorial(j - 1).multiply(mm).compareTo(bb) > 0) {
+      if (j == 2 || k == 2 || Functions.FACTORIAL.z(j - 1).multiply(mm).compareTo(bb) > 0) {
         bb = bb.max(g(mm, j - 1, bb));
       }
       mm = mm.multiply(j);
@@ -36,8 +37,8 @@ public class A038667 extends Sequence0 {
     if (++mN == 0) {
       return Z.ZERO;
     }
-    mP = mF.factorial(mN).sqrt().add(1);
+    mP = Functions.FACTORIAL.z(mN).sqrt().add(1);
     final Z gg = g(Z.ONE, mN, Z.ONE);
-    return mF.factorial(mN).divide(gg).subtract(gg);
+    return Functions.FACTORIAL.z(mN).divide(gg).subtract(gg);
   }
 }

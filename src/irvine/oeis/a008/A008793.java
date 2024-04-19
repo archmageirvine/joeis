@@ -1,6 +1,7 @@
 package irvine.oeis.a008;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -18,7 +19,7 @@ public class A008793 extends Sequence0 {
     ++mN;
     Z prod = Z.ONE;
     for (int k = 1; k <= mN; ++k) {
-      prod = prod.multiply(mF.factorial(2 * mN + k - 1).multiply(mF.factorial(k - 1))).divide(mF.factorial(mN + k - 1).square());
+      prod = prod.multiply(Functions.FACTORIAL.z(2 * mN + k - 1).multiply(Functions.FACTORIAL.z(k - 1))).divide(Functions.FACTORIAL.z(mN + k - 1).square());
     }
     return prod;
   }

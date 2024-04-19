@@ -1,6 +1,7 @@
 package irvine.oeis.a002;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -19,7 +20,7 @@ public class A002868 extends Sequence0 {
     ++mN;
     Z res = Z.ONE;
     for (int m = 1; m <= mN; ++m) {
-      res = res.max(mF.factorial(mN).multiply(Binomial.binomial(mN - 1, m - 1)).divide(mF.factorial(m)));
+      res = res.max(Functions.FACTORIAL.z(mN).multiply(Binomial.binomial(mN - 1, m - 1)).divide(Functions.FACTORIAL.z(m)));
     }
     return res;
   }

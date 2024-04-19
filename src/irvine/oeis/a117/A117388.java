@@ -49,7 +49,7 @@ public class A117388 extends Sequence2 {
       if (sb.length() != 0) {
         sb.append('+');
       }
-      sb.append(s.substring(0, k))
+      sb.append(s, 0, k)
         .append('^')
         .append(s.substring(k));
     }

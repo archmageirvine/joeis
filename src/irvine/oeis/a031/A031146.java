@@ -14,7 +14,7 @@ public class A031146 extends AbstractSequence {
   private int mN = -1;
   private Z mA = null;
   private int mM = 0; // actually one larger than power of 2, as 0 is "unknown" in array
-  private int mBase; // number base
+  private final int mBase; // number base
 
   /** Construct the sequence. */
   public A031146() {

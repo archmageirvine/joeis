@@ -12,7 +12,7 @@ import irvine.oeis.a036.A036449;
  */
 public class A189475 extends AbstractSequence {
 
-  private DifferenceSequence mSeq1 = new DifferenceSequence(new A036449());
+  private final DifferenceSequence mSeq1 = new DifferenceSequence(new A036449());
 
   /** Construct the sequence. */
   public A189475() {

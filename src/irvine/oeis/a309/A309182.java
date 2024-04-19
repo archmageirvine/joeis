@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 public class A309182 extends A309148 {
 
   private int mN;
-  private int mNumber;
+  private final int mNumber;
 
   /** Construct the sequence. */
   public A309182() {

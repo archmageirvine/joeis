@@ -12,9 +12,9 @@ import irvine.oeis.Sequence1;
 public class A062634 extends Sequence1 {
 
   private int mN;
-  private int mDigit;
-  private char mDigitChar;
-  private boolean mComposite;
+  private final int mDigit;
+  private final char mDigitChar;
+  private final boolean mComposite;
 
   /** Construct the sequence. */
   public A062634() {

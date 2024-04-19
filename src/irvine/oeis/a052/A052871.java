@@ -1,6 +1,7 @@
 package irvine.oeis.a052;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -19,7 +20,7 @@ public class A052871 extends Sequence0 {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 1; k <= mN; ++k) {
-      sum = sum.add(mF.factorial(mN).divide(mF.factorial(k)).multiply(Binomial.binomial(mN - 1, k - 1)).multiply(Z.valueOf(k).pow(k - 1)));
+      sum = sum.add(Functions.FACTORIAL.z(mN).divide(Functions.FACTORIAL.z(k)).multiply(Binomial.binomial(mN - 1, k - 1)).multiply(Z.valueOf(k).pow(k - 1)));
     }
     return sum;
   }

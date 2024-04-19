@@ -14,8 +14,8 @@ public class A203568 extends AbstractSequence {
 
   private int mN = -1;
 
-  private A026837 mSeq1 = new A026837();
-  private A026838 mSeq2 = new A026838();
+  private final A026837 mSeq1 = new A026837();
+  private final A026838 mSeq2 = new A026838();
 
   /** Construct the sequence. */
   public A203568() {

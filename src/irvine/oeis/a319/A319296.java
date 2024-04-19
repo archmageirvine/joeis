@@ -12,8 +12,8 @@ import irvine.oeis.a007.A007429;
  */
 public class A319296 extends Sequence1 {
 
-  private A007429 mA007429 = new A007429();
-  private A000203 mA000203 = new A000203();
+  private final A007429 mA007429 = new A007429();
+  private final A000203 mA000203 = new A000203();
 
   /** Construct the sequence. */
   public A319296() {

@@ -13,8 +13,8 @@ import irvine.oeis.a006.A006512;
 public class A077800 extends Sequence1 {
 
   private int mN = -1;
-  private Sequence mSeqA = new A001359();
-  private Sequence mSeqB = new A006512();
+  private final Sequence mSeqA = new A001359();
+  private final Sequence mSeqB = new A006512();
 
   @Override
   public Z next() {

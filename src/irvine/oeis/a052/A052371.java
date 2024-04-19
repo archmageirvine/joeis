@@ -2,6 +2,7 @@ package irvine.oeis.a052;
 
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
@@ -59,7 +60,7 @@ for(n=1, 5, print(row(n)))
         sum = RING.add(sum, RING.multiply(c(p, q), new Q(IntegerPartition.permCount(p, 1).multiply(pcq))));
       }
     }
-    return RING.multiply(sum, new Q(Z.ONE, mF.factorial(n).square()));
+    return RING.multiply(sum, new Q(Z.ONE, Functions.FACTORIAL.z(n).square()));
   }
 
   @Override

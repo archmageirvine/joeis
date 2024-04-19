@@ -13,8 +13,8 @@ import irvine.oeis.triangle.BaseTriangle;
  */
 public class A130162 extends BaseTriangle {
 
-  private MemorySequence mSeq;
-  private int mOffset2; // offset of underlying sequence
+  private final MemorySequence mSeq;
+  private final int mOffset2; // offset of underlying sequence
 
   /** Construct the sequence. */
   public A130162() {
@@ -30,7 +30,7 @@ public class A130162 extends BaseTriangle {
     super(offset, seq.getOffset(), seq.getOffset());
     hasRAM(true);
     mOffset2 = seq.getOffset();
-    mSeq = MemorySequence.cache(mOffset2, seq, new long[0]);
+    mSeq = MemorySequence.cache(mOffset2, seq);
   }
 
   @Override

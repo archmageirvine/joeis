@@ -13,7 +13,7 @@ public class A007579 extends Sequence0 {
 
   private static final Z Z20 = Z.valueOf(20);
 
-  private Z[] mA = {Z.ONE, Z.ONE, Z.TWO, Z.FOUR};
+  private final Z[] mA = {Z.ONE, Z.ONE, Z.TWO, Z.FOUR};
   private int mN = -1;
 
   @Override

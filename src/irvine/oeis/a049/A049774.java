@@ -2,6 +2,7 @@ package irvine.oeis.a049;
 
 import irvine.math.MemoryFunctionInt4;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -17,7 +18,7 @@ public class A049774 extends Sequence0 {
     @Override
     protected Z compute(final int u, final int o, final int t, final int k) {
       if (t == k) {
-        return mF.factorial(u + o);
+        return Functions.FACTORIAL.z(u + o);
       }
       if (Math.max(t, u) + o < k) {
         return Z.ZERO;

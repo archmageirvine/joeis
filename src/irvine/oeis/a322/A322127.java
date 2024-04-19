@@ -1,6 +1,7 @@
 package irvine.oeis.a322;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.oeis.triangle.RationalTriangle;
@@ -23,6 +24,6 @@ public class A322127 extends RationalTriangle {
   protected Q compute(int n, int k) {
     ++n;
     ++k;
-    return new Q(Binomial.binomial(n - 1, n - k), FACTORIAL.factorial(k));
+    return new Q(Binomial.binomial(n - 1, n - k), Functions.FACTORIAL.z(k));
   }
 }

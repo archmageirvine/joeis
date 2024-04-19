@@ -2,6 +2,7 @@ package irvine.oeis.a000;
 
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -19,7 +20,7 @@ public class A000171 extends Sequence1 {
   private Z period(final int[] k) {
     Z c = Z.ONE;
     for (int j = 1; j < k.length; ++j) {
-      c = c.multiply(mFactorial.factorial(k[j])).multiply(Z.valueOf(4L * j).pow(k[j]));
+      c = c.multiply(Functions.FACTORIAL.z(k[j])).multiply(Z.valueOf(4L * j).pow(k[j]));
     }
     return c;
   }

@@ -1,6 +1,6 @@
 package irvine.oeis.a058;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.cons.FoldedContinuedFraction;
 
@@ -20,6 +20,8 @@ public class A058304 extends FoldedContinuedFraction {
    * @param m base for Liouville&apos;s number
    */
   public A058304(final int m) {
-    super(0, k -> Z.valueOf(m).pow(MemoryFactorial.SINGLETON.factorial(k + 1).multiply(k)), new long[] {0, m - 1, m + 1});
+    super(0, k -> {
+      return Z.valueOf(m).pow(Functions.FACTORIAL.z(k + 1).multiply(k));
+    }, 0, m - 1, m + 1);
   }
 }

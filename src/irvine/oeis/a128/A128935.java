@@ -10,7 +10,7 @@ import irvine.oeis.Sequence0;
  */
 public class A128935 extends Sequence0 {
 
-  private int mBase = 5;
+  private final int mBase = 5;
   private int mProd = 1;
 
   @Override

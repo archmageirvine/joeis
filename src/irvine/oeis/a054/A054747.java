@@ -2,6 +2,7 @@ package irvine.oeis.a054;
 
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
@@ -64,7 +65,7 @@ public class A054747 extends Sequence1 {
     int[] p;
     while ((p = jp.next()) != null) {
       IntegerPartition.toCountForm(p, j);
-      s = s.add(FACTORIAL.factorial(mN).multiply(innerSum(j)).divide(SymmetricGroup.per(j)));
+      s = s.add(Functions.FACTORIAL.z(mN).multiply(innerSum(j)).divide(SymmetricGroup.per(j)));
     }
     return s;
   }
@@ -72,6 +73,6 @@ public class A054747 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return outerSum().divide(FACTORIAL.factorial(mN).multiply2());
+    return outerSum().divide(Functions.FACTORIAL.z(mN).multiply2());
   }
 }

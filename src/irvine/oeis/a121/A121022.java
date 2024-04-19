@@ -10,8 +10,8 @@ import irvine.oeis.Sequence1;
 public class A121022 extends Sequence1 {
 
   private Z mN;
-  private String mMultS;
-  private int mMult;
+  private final String mMultS;
+  private final int mMult;
 
   /** Construct the sequence. */
   public A121022() {

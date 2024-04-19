@@ -22,17 +22,17 @@ public class A046650 extends Sequence2 {
     Z sum = Z.ZERO;
     if (m >= 2 && n >= m) {
       for (int j = m; j <= Math.min(n, 2 * m); ++j) {
-        final Z t = mF.factorial(j - 2)
-          .multiply(mF.factorial(3 * n - j - m - 1))
+        final Z t = Functions.FACTORIAL.z(j - 2)
+          .multiply(Functions.FACTORIAL.z(3 * n - j - m - 1))
           .multiply(2L * j - m)
           .multiply(3L * m - 2L * j - 1)
-          .divide(mF.factorial(n - j))
-          .divide(mF.factorial(j - m))
-          .divide(mF.factorial(j - m + 1))
-          .divide(mF.factorial(2 * m - j));
+          .divide(Functions.FACTORIAL.z(n - j))
+          .divide(Functions.FACTORIAL.z(j - m))
+          .divide(Functions.FACTORIAL.z(j - m + 1))
+          .divide(Functions.FACTORIAL.z(2 * m - j));
         sum = sum.add(t);
       }
-      sum = sum.multiply(m).divide(mF.factorial(2 * n - m));
+      sum = sum.multiply(m).divide(Functions.FACTORIAL.z(2 * n - m));
     }
     return sum;
   }
@@ -42,16 +42,16 @@ public class A046650 extends Sequence2 {
     Z sum = Z.ZERO;
     if (w >= j && j >= 1 /* && w >= 1*/) {
       for (int k = j; k <= Math.min(w, 2 * j - 1); ++k) {
-        final Z t = mF.factorial(k - 1)
-          .multiply(mF.factorial(3 * w - k - j))
+        final Z t = Functions.FACTORIAL.z(k - 1)
+          .multiply(Functions.FACTORIAL.z(3 * w - k - j))
           .multiply(2L * k - j + 1)
-          .divide(mF.factorial(k - j + 1))
-          .divide(mF.factorial(k - j))
-          .divide(mF.factorial(2 * j - k - 1))
-          .divide(mF.factorial(w - k));
+          .divide(Functions.FACTORIAL.z(k - j + 1))
+          .divide(Functions.FACTORIAL.z(k - j))
+          .divide(Functions.FACTORIAL.z(2 * j - k - 1))
+          .divide(Functions.FACTORIAL.z(w - k));
         sum = sum.add(t);
       }
-      sum = sum.multiply(j).divide(mF.factorial(2 * w - j + 1));
+      sum = sum.multiply(j).divide(Functions.FACTORIAL.z(2 * w - j + 1));
     }
     return sum;
   }
@@ -61,15 +61,15 @@ public class A046650 extends Sequence2 {
     Z sum = Z.ZERO;
     if (w >= j && j >= 1 /*&& w >= 1*/ && r > 1) {
       for (int k = j; k <= Math.min(w, 2 * j); ++k) {
-        final Z t = mF.factorial(k - 1)
-          .multiply(mF.factorial(3 * w - k - j - 1))
+        final Z t = Functions.FACTORIAL.z(k - 1)
+          .multiply(Functions.FACTORIAL.z(3 * w - k - j - 1))
           .multiply(2L * k - j)
-          .divide(mF.factorial(k - j).square())
-          .divide(mF.factorial(2 * j - k))
-          .divide(mF.factorial(w - k));
+          .divide(Functions.FACTORIAL.z(k - j).square())
+          .divide(Functions.FACTORIAL.z(2 * j - k))
+          .divide(Functions.FACTORIAL.z(w - k));
         sum = sum.add(t);
       }
-      sum = sum.multiply(j).divide(mF.factorial(2 * w - j));
+      sum = sum.multiply(j).divide(Functions.FACTORIAL.z(2 * w - j));
     }
     return sum;
   }

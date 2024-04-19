@@ -14,7 +14,7 @@ import irvine.util.array.LongDynamicLongArray;
 public class A006016 extends Sequence0 {
 
   // Use bit 0 to track if the value has been computed
-  private LongDynamicLongArray mCache = new LongDynamicLongArray();
+  private final LongDynamicLongArray mCache = new LongDynamicLongArray();
   {
     mCache.set(0, 1);
   }

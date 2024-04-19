@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Map;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.MultivariatePolynomialField;
 import irvine.math.group.PolynomialRingField;
@@ -30,7 +31,7 @@ public class A043546 extends Sequence0 {
     final ArrayList<Q> coeff = new ArrayList<>();
     final int[][] terms = new int[n + 1][2];
     for (int k = 0; k <= n; ++k) {
-      coeff.add(new Q(Z.ONE, mF.factorial(k).square()));
+      coeff.add(new Q(Z.ONE, Functions.FACTORIAL.z(k).square()));
       terms[k][0] = k;
     }
     return new MultivariatePolynomial<>(Rationals.SINGLETON, 2, terms, coeff);
@@ -62,7 +63,7 @@ public class A043546 extends Sequence0 {
       final int k = t.get(0);
       final int w = t.get(1);
       if (w <= n) {
-        coeffs[w] = coeffs[w].add(e.getValue().multiply(mF.factorial(2 * k)).toZ());
+        coeffs[w] = coeffs[w].add(e.getValue().multiply(Functions.FACTORIAL.z(2 * k)).toZ());
       }
     }
     return Polynomial.create(coeffs);

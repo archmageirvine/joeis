@@ -15,7 +15,7 @@ public class A046761 extends Sequence0 {
 
   private int mN = -1;
   private Z mMax = Z.ZERO;
-  private Z[] mDigitPowers = new Z[10];
+  private final Z[] mDigitPowers = new Z[10];
   {
     Arrays.fill(mDigitPowers, Z.ONE);
   }

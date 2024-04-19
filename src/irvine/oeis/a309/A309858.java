@@ -6,6 +6,7 @@ import java.util.List;
 
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -87,13 +88,13 @@ public class A309858 extends MemoryFunction2Sequence<Integer, Z> {
       }
       final Z h = h(l, v);
       l.subList(l.size() - n, l.size()).clear(); // reset list
-      return new Q(Z.ONE.shiftLeft(h.longValueExact()), mF.factorial(n));
+      return new Q(Z.ONE.shiftLeft(h.longValueExact()), Functions.FACTORIAL.z(n));
     } else {
       Q sum = Q.ZERO;
       Z ij = Z.ONE;
       final int origSize = l.size();
       for (int j = 0; j <= n / i; ++j, l.add(i), ij = ij.multiply(i)) {
-        sum = sum.add(b(n - i * j, i - 1, l, v).divide(mF.factorial(j)).divide(ij));
+        sum = sum.add(b(n - i * j, i - 1, l, v).divide(Functions.FACTORIAL.z(j)).divide(ij));
       }
       l.subList(origSize, l.size()).clear(); // reset list
       return sum;

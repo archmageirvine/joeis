@@ -1,6 +1,7 @@
 package irvine.oeis.a047;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
@@ -19,7 +20,7 @@ public class A047922 extends MemoryFunction2Sequence<Integer, Z> {
   @Override
   protected Z compute(final Integer n, final Integer m) {
     if (m == 0) {
-      return mF.factorial(n);
+      return Functions.FACTORIAL.z(n);
     }
     if (n.equals(m)) {
       return n < 3

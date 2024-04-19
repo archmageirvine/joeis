@@ -1,6 +1,7 @@
 package irvine.oeis.a047;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -27,7 +28,7 @@ public class A047921 extends Sequence0 {
     if (n >= k) {
       for (int j = 0; j < k; ++j) {
         if (n - 2 * k + j >= 0) {
-          sum = sum.add(binomial(k - 1, j).multiply(binomial(n - k - 1, k - j)).multiply(mF.factorial(n - 2 * k + j)));
+          sum = sum.add(binomial(k - 1, j).multiply(binomial(n - k - 1, k - j)).multiply(Functions.FACTORIAL.z(n - 2 * k + j)));
         }
       }
     }

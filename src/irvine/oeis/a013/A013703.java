@@ -1,6 +1,7 @@
 package irvine.oeis.a013;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -31,7 +32,7 @@ public class A013703 extends Sequence0 {
           final Z zl = Z.valueOf(l);
           Q isum = Q.ZERO;
           for (int i = 0; i <= l; ++i) {
-            isum = isum.add(new Q(Binomial.binomial(l, i).multiply(zl.pow(mN + j - i - 1)), mF.factorial(mN + j - i - 1)));
+            isum = isum.add(new Q(Binomial.binomial(l, i).multiply(zl.pow(mN + j - i - 1)), Functions.FACTORIAL.z(mN + j - i - 1)));
           }
           lsum = lsum.signedAdd((l & 1) == 0, isum.multiply(Binomial.binomial(j, l)));
         }
@@ -39,6 +40,6 @@ public class A013703 extends Sequence0 {
       }
       ksum = ksum.add(jsum.multiply(Binomial.binomial(mN + k - 1, mN - 1)));
     }
-    return ksum.multiply(mF.factorial(mN - 1)).multiply(2).toZ();
+    return ksum.multiply(Functions.FACTORIAL.z(mN - 1)).multiply(2).toZ();
   }
 }

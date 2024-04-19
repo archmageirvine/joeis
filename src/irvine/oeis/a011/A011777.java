@@ -1,6 +1,7 @@
 package irvine.oeis.a011;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -20,7 +21,7 @@ public class A011777 extends Sequence1 {
     while (true) {
       final Z q = k.pow(mN);
       final int ki = k.intValueExact();
-      if (mF.factorial(ki).mod(q).isZero() && !mF.factorial(ki).mod(q.multiply(k)).isZero()) {
+      if (Functions.FACTORIAL.z(ki).mod(q).isZero() && !Functions.FACTORIAL.z(ki).mod(q.multiply(k)).isZero()) {
         return k;
       }
       k = k.add(1);

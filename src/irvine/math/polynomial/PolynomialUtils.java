@@ -7,7 +7,6 @@ import java.util.Set;
 import irvine.math.api.Field;
 import irvine.math.c.C;
 import irvine.math.c.ComplexField;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRing;
@@ -402,7 +401,7 @@ public final class PolynomialUtils {
   public static Polynomial<Q> besselY(final int n) {
     final Q[] c = new Q[n + 1];
     for (int k = 0; k <= n; ++k) {
-      c[k] = new Q(Binomial.binomial(n + k, 2L * k).multiply(MemoryFactorial.SINGLETON.factorial(2 * k)), MemoryFactorial.SINGLETON.factorial(k).shiftLeft(k));
+      c[k] = new Q(Binomial.binomial(n + k, 2L * k).multiply(Functions.FACTORIAL.z(2 * k)), Functions.FACTORIAL.z(k).shiftLeft(k));
     }
     return Polynomial.create(c);
   }

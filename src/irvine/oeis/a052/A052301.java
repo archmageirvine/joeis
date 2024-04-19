@@ -18,7 +18,7 @@ public class A052301 extends MemorySequence {
     add(Z.ZERO);
   }
 
-  private MemoryFunction2<Integer, Z> mB = new MemoryFunction2<>() {
+  private final MemoryFunction2<Integer, Z> mB = new MemoryFunction2<>() {
 
     @Override
     protected Z compute(final Integer n, final Integer m) {

@@ -12,7 +12,7 @@ import irvine.oeis.a018.A018252;
 public class A073846 extends A018252 {
 
   private int mN = 0;
-  private Sequence mPrime = new A000040();
+  private final Sequence mPrime = new A000040();
 
   @Override
   public Z next() {

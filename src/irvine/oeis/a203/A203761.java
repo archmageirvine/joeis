@@ -10,10 +10,10 @@ import irvine.oeis.Sequence1;
 public class A203761 extends Sequence1 {
 
   private int mN;
-  private int mAdd1;
-  private int mAdd2;
-  private int mAdd3;
-  private Z[] mA;
+  private final int mAdd1;
+  private final int mAdd2;
+  private final int mAdd3;
+  private final Z[] mA;
   private static final int MASK = 0b11;
 
   /** Construct the sequence. */

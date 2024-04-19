@@ -11,9 +11,9 @@ import irvine.oeis.recur.HolonomicRecurrence;
 public class A104238 extends Sequence1 {
 
   private int mN;
-  private int mExpon;
-  private HolonomicRecurrence mSeq1;
-  private HolonomicRecurrence mSeq2;
+  private final int mExpon;
+  private final HolonomicRecurrence mSeq1;
+  private final HolonomicRecurrence mSeq2;
 
   /** Construct the sequence. */
   public A104238() {

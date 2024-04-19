@@ -1,6 +1,7 @@
 package irvine.oeis.a007;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -22,7 +23,7 @@ public class A007746 extends AbstractSequence {
   public Z next() {
     ++mN;
     final Z a = Z.valueOf(mN).add(20).multiply(mN).add(107).multiply(mN).subtract(107).multiply(mN).add(15);
-    return a.multiply(mF.factorial(2 * mN)).divide(3).divide(mF.factorial(mN - 4)).shiftLeft(2).divide(mF.factorial(mN + 6));
+    return a.multiply(Functions.FACTORIAL.z(2 * mN)).divide(3).divide(Functions.FACTORIAL.z(mN - 4)).shiftLeft(2).divide(Functions.FACTORIAL.z(mN + 6));
   }
 }
 

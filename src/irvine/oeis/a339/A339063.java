@@ -3,6 +3,7 @@ package irvine.oeis.a339;
 import java.util.Arrays;
 
 import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.partition.IntegerPartition;
@@ -56,7 +57,7 @@ public class A339063 extends A052107 {
       final Polynomial<Z> t = RING.multiply(edgesPoly(q, degreeLimit), IntegerPartition.permCount(p, 1));
       sum = RING.add(sum, t);
     }
-    return RING.divide(sum, mF.factorial(n));
+    return RING.divide(sum, Functions.FACTORIAL.z(n));
   }
 
   protected int[] getPrefix() {

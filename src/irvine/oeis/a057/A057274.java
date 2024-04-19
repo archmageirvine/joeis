@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import java.util.ArrayList;
 import java.util.List;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -44,7 +44,7 @@ public class A057274 extends A057273 {
     }
     for (int k = 1; k <= n; ++k) {
       final List<Polynomial<Q>> u = lambda(k, n - k, e, m);
-      final Polynomial<Q> sk = inner.multiply(s.coeff(k), new Q(MemoryFactorial.SINGLETON.factorial(k)));
+      final Polynomial<Q> sk = inner.multiply(s.coeff(k), new Q(Functions.FACTORIAL.z(k)));
       for (int j = k; j <= n; ++j) {
         final Polynomial<Q> t = inner.multiply(inner.multiply(sk, u.get(j - k), m), new Q(Binomial.binomial(j, k)));
         v.set(j, inner.add(v.get(j), t));

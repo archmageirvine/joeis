@@ -10,7 +10,7 @@ import irvine.oeis.prime.CongruenceForm;
  */
 public class A141179 extends CongruenceForm {
 
-  private int mN = 0;
+  private final int mN = 0;
 
   {
     // super.next();

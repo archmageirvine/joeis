@@ -13,7 +13,7 @@ public class A118385 extends AbstractSequence {
 
   protected int mN;
   protected Sequence mSeq;
-  private int mBase;
+  private final int mBase;
   private final StringBuilder mS = new StringBuilder();
 
   /** Construct the sequence. */

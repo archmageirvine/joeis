@@ -11,7 +11,7 @@ import irvine.oeis.memory.MemorySequence;
  */
 public class A063895 extends Sequence1 {
 
-  private MemorySequence mSeq = new MemorySequence() {
+  private final MemorySequence mSeq = new MemorySequence() {
     {
       add(null);
     }

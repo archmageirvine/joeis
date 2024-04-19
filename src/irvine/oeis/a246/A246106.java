@@ -6,6 +6,7 @@ import java.util.List;
 
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
@@ -45,7 +46,7 @@ public class A246106 extends MemoryFunction2Sequence<Integer, List<List<int[]>>>
   private Z per(final List<int[]> s) {
     Z prod = Z.ONE;
     for (final int[] i : s) {
-      prod = prod.multiply(Z.valueOf(i[0]).pow(i[1]).multiply(mF.factorial(i[1])));
+      prod = prod.multiply(Z.valueOf(i[0]).pow(i[1]).multiply(Functions.FACTORIAL.z(i[1])));
     }
     return prod;
   }

@@ -8,6 +8,7 @@ import java.util.Map;
 
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.util.array.LongDynamicLongArray;
 
@@ -199,7 +200,7 @@ public final class IntegerPartition {
    * @return number of standard Young tableaux
    */
   public static Z numStandardYoungTableaux(final int[] l) {
-    final Z f = FACTORIAL.factorial((int) IntegerUtils.sum(l));
+    final Z f = Functions.FACTORIAL.z((int) IntegerUtils.sum(l));
     Z d = Z.ONE;
     for (int i = 0; i < l.length; ++i) {
       Z t = Z.ONE;
@@ -295,7 +296,7 @@ public final class IntegerPartition {
       m = m.multiply(u * (long) k);
       s += u;
     }
-    return FACTORIAL.factorial(s).divide(m);
+    return Functions.FACTORIAL.z(s).divide(m);
   }
 
   /**

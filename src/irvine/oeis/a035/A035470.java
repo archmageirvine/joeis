@@ -5,6 +5,7 @@ import java.util.HashMap;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -62,7 +63,7 @@ public class A035470 extends Sequence1 {
         final int[] a = new int[m / d + 1];
         Arrays.fill(a, d);
         a[m / d] = mN;
-        sum = sum.add(b(a).divide(mF.factorial(m / d)));
+        sum = sum.add(b(a).divide(Functions.FACTORIAL.z(m / d)));
       }
     }
     return sum;

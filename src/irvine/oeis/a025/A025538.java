@@ -17,7 +17,7 @@ public class A025538 extends A002944 {
     super(0);
   }
 
-  private Sequence mA = new A003418();
+  private final Sequence mA = new A003418();
   private Q mSum = Q.ZERO;
   private boolean mSign = false;
 

@@ -1,5 +1,6 @@
 package irvine.oeis.a060;
 
+import irvine.math.function.Functions;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -27,7 +28,7 @@ public class A060070 extends A059530 {
       final Polynomial<Polynomial<Q>> egf = get(mN, 2 * mN);
       while (true) {
         ++k;
-        final Z t = egf.coeff(k).coeff(mN).multiply(F.factorial(mN)).toZ();
+        final Z t = egf.coeff(k).coeff(mN).multiply(Functions.FACTORIAL.z(mN)).toZ();
         if (!sum.isZero() && t.isZero()) {
           break;
         }

@@ -16,7 +16,7 @@ public class A202670 extends UpperLeftTriangle {
 
   protected final MemorySequence mSeq;
   protected final int mSkip;
-  private int mOffset;
+  private final int mOffset;
 
   /** Construct the sequence. */
   public A202670() {

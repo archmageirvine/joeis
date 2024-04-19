@@ -8,7 +8,7 @@ import irvine.oeis.recur.GeneralRecurrence;
  */
 public class A342611 extends GeneralRecurrence {
 
-  private int mParm;
+  private final int mParm;
 
   /** Construct the sequence. */
   public A342611() {

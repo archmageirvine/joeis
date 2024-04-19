@@ -11,8 +11,8 @@ import irvine.oeis.AbstractSequence;
 public class A015323 extends AbstractSequence {
 
   private int mN; // current index
-  private int mP;
-  private int mQ;
+  private final int mP;
+  private final int mQ;
 
   /** Construct the sequence. */
   public A015323() {

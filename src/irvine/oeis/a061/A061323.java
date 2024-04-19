@@ -14,7 +14,7 @@ public class A061323 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.TWO;
-  private Z mRoot;
+  private final Z mRoot;
 
   /** Construct the sequence. */
   public A061323() {

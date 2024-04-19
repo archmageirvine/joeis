@@ -39,7 +39,7 @@ public class A296171 extends A296170 {
     final A296171 seq = new A296171();
     final int limit = Integer.parseInt(args[0]);
     for (int k = 0; k < limit; ++k) {
-      System.out.println(String.valueOf(k));
+      System.out.println(k);
       seq.stepEgf();
     }
     seq.mA.set(0, Q.ZERO);

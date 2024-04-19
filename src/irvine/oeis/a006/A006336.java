@@ -11,7 +11,7 @@ import irvine.oeis.memory.MemorySequence;
  */
 public class A006336 extends MemorySequence {
 
-  private Sequence mSeq = new A060143();
+  private final Sequence mSeq = new A060143();
   {
     setOffset(1);
     mSeq.next();

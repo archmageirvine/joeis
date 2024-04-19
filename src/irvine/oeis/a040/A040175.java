@@ -1,6 +1,6 @@
 package irvine.oeis.a040;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 
@@ -18,6 +18,6 @@ public class A040175 extends A040173 {
 
   @Override
   protected Z select(final Q n) {
-    return n.multiply(MemoryFactorial.SINGLETON.factorial(mN)).toZ();
+    return n.multiply(Functions.FACTORIAL.z(mN)).toZ();
   }
 }

@@ -2,6 +2,7 @@ package irvine.oeis.a034;
 
 import java.util.ArrayList;
 
+import irvine.math.function.Functions;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -23,7 +24,7 @@ public class A034854 extends A034855 {
     }
     final ArrayList<Q> coeff = new ArrayList<>();
     for (int k = 0; k <= n; ++k) {
-      coeff.add(new Q(r(k, d), mF.factorial(k)));
+      coeff.add(new Q(r(k, d), Functions.FACTORIAL.z(k)));
     }
     return RING.create(coeff);
   }
@@ -32,10 +33,10 @@ public class A034854 extends A034855 {
     final int dd = d / 2;
     if ((d & 1) == 0) {
       final Polynomial<Q> t0 = RING.subtract(r0(dd, p), RING.multiply(gf(dd - 1, p), r0(dd - 1, p), p));
-      return t0.coeff(p).multiply(mF.factorial(p)).toZ();
+      return t0.coeff(p).multiply(Functions.FACTORIAL.z(p)).toZ();
     } else {
       final Polynomial<Q> t0 = RING.pow(r0(dd, p), 2, p);
-      return t0.coeff(p).multiply(mF.factorial(p)).toZ().divide2();
+      return t0.coeff(p).multiply(Functions.FACTORIAL.z(p)).toZ().divide2();
     }
   }
 

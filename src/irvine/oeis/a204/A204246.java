@@ -1,6 +1,6 @@
 package irvine.oeis.a204;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
@@ -20,6 +20,6 @@ public class A204246 extends UpperLeftTriangle {
     if (n == 1 || k == 1) {
       return Z.ONE;
     }
-    return n == k ? MemoryFactorial.SINGLETON.factorial(n - 1) : Z.ZERO;
+    return n == k ? Functions.FACTORIAL.z(n - 1) : Z.ZERO;
   }
 }

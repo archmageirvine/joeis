@@ -1,5 +1,6 @@
 package irvine.oeis.a052;
 
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 
@@ -11,6 +12,6 @@ public class A052123 extends A052104 {
 
   @Override
   protected Z select(final Q n) {
-    return Z.valueOf(n.multiply(mF.factorial(mN)).den().bitLength() - 1);
+    return Z.valueOf(n.multiply(Functions.FACTORIAL.z(mN)).den().bitLength() - 1);
   }
 }

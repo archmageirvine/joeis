@@ -1,7 +1,7 @@
 package irvine.oeis.a136;
 // manually trecpas/trecpas1
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
@@ -22,6 +22,6 @@ public class A136125 extends Triangle {
   protected Z compute(int n, int k) {
     ++n;
     ++k;
-    return k < n ? MemoryFactorial.SINGLETON.factorial(n).divide((long) k * (k + 1)) : (k == n ? MemoryFactorial.SINGLETON.factorial(n - 1) : Z.ZERO);
+    return k < n ? Functions.FACTORIAL.z(n).divide((long) k * (k + 1)) : (k == n ? Functions.FACTORIAL.z(n - 1) : Z.ZERO);
   }
 }

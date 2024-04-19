@@ -57,7 +57,7 @@ public class A018940 extends AbstractSequence {
   private int mD;
   private int mNodeMask;
   private int mOrigin;
-  private int mStep;
+  private final int mStep;
 
   // Minimum distance from origin + 1 (uses 0 as sentinel)
   private byte[] mDistance;

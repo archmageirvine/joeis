@@ -12,9 +12,9 @@ import irvine.oeis.memory.FunctionInt3ZSequence;
 public class A328429 extends FunctionInt3ZSequence {
 
   private int mN;
-  private int mB2;
-  private BiFunction<Integer, Integer, Integer> mCond1;
-  private BiFunction<Integer, Integer, Integer> mCond2;
+  private final int mB2;
+  private final BiFunction<Integer, Integer, Integer> mCond1;
+  private final BiFunction<Integer, Integer, Integer> mCond2;
 
   /** Construct the sequence. */
   public A328429() {

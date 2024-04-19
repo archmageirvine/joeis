@@ -9,8 +9,8 @@ import irvine.oeis.a000.A000040;
  */
 public class A249350 extends A000040 {
 
-  private int mOffset;
-  private String mMiddle;
+  private final int mOffset;
+  private final String mMiddle;
 
   /** Construct the sequence. */
   public A249350() {

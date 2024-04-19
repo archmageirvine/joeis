@@ -9,7 +9,7 @@ import irvine.oeis.a008.A008963;
  */
 public class A105511 extends A008963 {
 
-  private Z mDigit;
+  private final Z mDigit;
   private Z mCount;
 
   /** Construct the sequence. */

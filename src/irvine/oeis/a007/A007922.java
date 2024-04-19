@@ -1,6 +1,7 @@
 package irvine.oeis.a007;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,7 +19,8 @@ public class A007922 extends Sequence1 {
     ++mN;
     int k = 0;
     while (true) {
-      final Z df = mF.doubleFactorial(++k);
+      final int n = ++k;
+      final Z df = Functions.MULTIFACTORIAL.z(n);
       if (df.mod(mN) == 0) {
         return Z.valueOf(k);
       }

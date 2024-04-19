@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -54,7 +54,7 @@ public class A057275 extends A057273 {
             sum = inner.add(sum, inner.multiply(inner.multiply(ep, ep1, m), getOrZero(u.get(n - k), j - 1)));
           }
         }
-        final Polynomial<Q> sk = inner.multiply(s.coeff(k), new Q(MemoryFactorial.SINGLETON.factorial(k)));
+        final Polynomial<Q> sk = inner.multiply(s.coeff(k), new Q(Functions.FACTORIAL.z(k)));
         un.add(inner.multiply(inner.multiply(sum, sk, m), new Q(Binomial.binomial(n, k))));
       }
       u.add(un);

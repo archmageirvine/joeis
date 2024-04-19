@@ -2,6 +2,7 @@ package irvine.oeis.a051;
 
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
@@ -32,7 +33,7 @@ public class A051685 extends MemoryFunction2Sequence<Integer, Z> {
           s = s.add(get(n - k, l));
         }
       }
-      sum = sum.signedAdd((k & 1) == 1, s.multiply(mF.factorial(n - 1).divide(mF.factorial(n - k))));
+      sum = sum.signedAdd((k & 1) == 1, s.multiply(Functions.FACTORIAL.z(n - 1).divide(Functions.FACTORIAL.z(n - k))));
     }
     return sum;
   }

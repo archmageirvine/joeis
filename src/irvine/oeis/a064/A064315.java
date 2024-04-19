@@ -2,7 +2,7 @@ package irvine.oeis.a064;
 
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.MemoryFunctionInt3;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -24,11 +24,11 @@ public class A064315 extends Sequence1 {
         @Override
         protected Z compute(final int u, final int o, final int t) {
           if (t + o <= k) {
-            return MemoryFactorial.SINGLETON.factorial(u + o);
+            return Functions.FACTORIAL.z(u + o);
           }
           final Z v = Integers.SINGLETON.sum(1, o, i -> get(u + i - 1, o - i, Math.min(k, t) + 1));
           if (t <= k) {
-            return v.add(MemoryFactorial.SINGLETON.factorial(u + o - 1).multiply(u));
+            return v.add(Functions.FACTORIAL.z(u + o - 1).multiply(u));
           } else {
             return v.add(Integers.SINGLETON.sum(1, u, i -> get(u - i, o + i - 1, 1)));
           }

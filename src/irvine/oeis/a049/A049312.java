@@ -7,6 +7,7 @@ import java.util.Set;
 import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunction2;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -50,7 +51,7 @@ public class A049312 extends MemoryFunction2Sequence<Integer, Z> {
     Z prod = Z.ONE;
     for (int i = 1; i <= p.degree(); ++i) {
       final int c = p.coeff(i).intValueExact();
-      prod = prod.multiply(Z.valueOf(i).pow(c).multiply(mF.factorial(c)));
+      prod = prod.multiply(Z.valueOf(i).pow(c).multiply(Functions.FACTORIAL.z(c)));
     }
     return prod;
   }

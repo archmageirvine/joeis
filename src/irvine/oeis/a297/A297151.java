@@ -12,7 +12,7 @@ import irvine.oeis.LambdaSequence;
  */
 public class A297151 extends LambdaSequence {
 
-  private int mN = -1;
+  private final int mN = -1;
 
   /** Construct the sequence. */
   public A297151() {

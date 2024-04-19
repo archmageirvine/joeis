@@ -10,7 +10,7 @@ import irvine.oeis.Sequence0;
 public class A109345 extends Sequence0 {
 
   private int mN = -1;
-  private Z mBase;
+  private final Z mBase;
 
   /** Construct the sequence. */
   public A109345() {

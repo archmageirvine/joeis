@@ -1,6 +1,7 @@
 package irvine.oeis.a014;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -17,9 +18,9 @@ public class A014185 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return mF.factorial(Binomial.binomial(mN + 1, 2))
-      .multiply(mF.factorial(mN))
+    return Functions.FACTORIAL.z(Binomial.binomial(mN + 1, 2))
+      .multiply(Functions.FACTORIAL.z(mN))
       .shiftLeft(2L * mN)
-      .divide(mF.factorial(2 * mN));
+      .divide(Functions.FACTORIAL.z(2 * mN));
   }
 }

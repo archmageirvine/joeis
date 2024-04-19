@@ -3,6 +3,7 @@ package irvine.oeis.a050;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -19,7 +20,7 @@ public class A050255 extends Sequence1 {
   private int mN = 0;
 
   private CR right(final int n, final int k) {
-    final Q a = Q.ONE.subtract(new Q(n, 365L * (k + 1L))).multiply(mF.factorial(k).multiply(Z.valueOf(365).pow(k - 1)));
+    final Q a = Q.ONE.subtract(new Q(n, 365L * (k + 1L))).multiply(Functions.FACTORIAL.z(k).multiply(Z.valueOf(365).pow(k - 1)));
     return ComputableReals.SINGLETON.pow(CR.valueOf(a).multiply(LN2), CR.valueOf(new Q(1, k)));
   }
 

@@ -12,6 +12,6 @@ public class A103853 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A103853() {
-    super(1, 0, n -> new Z("1000" + String.valueOf(n)).isProbablePrime());
+    super(1, 0, n -> new Z("1000" + n).isProbablePrime());
   }
 }

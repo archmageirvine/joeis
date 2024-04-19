@@ -3,6 +3,7 @@ package irvine.oeis.a002;
 import java.util.Arrays;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -28,7 +29,7 @@ public class A002689 extends Sequence0 {
     }
     f = RING.integrate(f);
     final Q definite = RING.eval(f, Q.ONE);
-    return definite.divide(mF.factorial(n - 1));
+    return definite.divide(Functions.FACTORIAL.z(n - 1));
   }
   
   @Override

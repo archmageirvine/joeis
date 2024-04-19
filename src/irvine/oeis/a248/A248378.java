@@ -14,6 +14,6 @@ public class A248378 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return ((mN & 1) == 0) ? new Z(String.valueOf(mN / 2 + 1) + String.valueOf(mN / 2 + 2)) : new Z(String.valueOf(mN / 2 + 2) + String.valueOf(mN / 2 + 1));
+    return ((mN & 1) == 0) ? new Z(String.valueOf(mN / 2 + 1) + (mN / 2 + 2)) : new Z(String.valueOf(mN / 2 + 2) + (mN / 2 + 1));
   }
 }

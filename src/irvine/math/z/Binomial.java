@@ -1,8 +1,9 @@
 package irvine.math.z;
 
-import irvine.math.q.Q;
 import irvine.math.LongUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
+import irvine.math.q.Q;
 
 /**
  * Compute binomial coefficients.
@@ -147,9 +148,9 @@ public final class Binomial {
     if (bottom.length == 0) {
       return Z.ONE; // special case
     }
-    Z m = FACTORIAL.factorial(top);
+    Z m = Functions.FACTORIAL.z(top);
     for (final int b : bottom) {
-      m = m.divide(FACTORIAL.factorial(b));
+      m = m.divide(Functions.FACTORIAL.z(b));
     }
     return m;
   }

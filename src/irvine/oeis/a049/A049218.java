@@ -1,6 +1,7 @@
 package irvine.oeis.a049;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
@@ -19,7 +20,7 @@ public class A049218 extends Sequence1 {
   private Z t(final int n, final int k) {
     Z sum = Z.ZERO;
     for (int i = k; i <= n; ++i) {
-      sum = sum.add(Binomial.binomial(n - 1, i - 1).multiply(Stirling.firstKind(i, k)).shiftLeft(i).multiply(mF.factorial(n).divide(mF.factorial(i))));
+      sum = sum.add(Binomial.binomial(n - 1, i - 1).multiply(Stirling.firstKind(i, k)).shiftLeft(i).multiply(Functions.FACTORIAL.z(n).divide(Functions.FACTORIAL.z(i))));
     }
     sum = sum.shiftRight(k);
     if ((((3 * n + k) / 2) & 1) == 1) {

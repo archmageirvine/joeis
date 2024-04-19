@@ -71,7 +71,7 @@ public class A055187 extends AbstractSequence {
   private final String mMethod;
   private final int mParm;
   private final int mRow; // count in both rows,    output both; default
-  private int mStart;
+  private final int mStart;
   private final int mWith0;
   private int mSegNo;
   private final ArrayList<Integer> mSegment;

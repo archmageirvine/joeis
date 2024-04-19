@@ -7,6 +7,7 @@ import java.util.List;
 import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunction2;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -38,7 +39,7 @@ public class A028657 extends MemoryFunction2Sequence<Integer, Z> {
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
-  private MemoryFunction2<Integer, List<Polynomial<Z>>> mB = new MemoryFunction2<>() {
+  private final MemoryFunction2<Integer, List<Polynomial<Z>>> mB = new MemoryFunction2<>() {
     @Override
     protected List<Polynomial<Z>> compute(final Integer n, final Integer m) {
       if (n == 0) {
@@ -60,7 +61,7 @@ public class A028657 extends MemoryFunction2Sequence<Integer, Z> {
   private Z prod(final Polynomial<Z> p) {
     Z prod = Z.ONE;
     for (int k = 1; k <= p.degree(); ++k) {
-      prod = prod.multiply(Z.valueOf(k).pow(p.coeff(k))).multiply(mF.factorial(p.coeff(k)));
+      prod = prod.multiply(Z.valueOf(k).pow(p.coeff(k))).multiply(Functions.FACTORIAL.z(p.coeff(k)));
     }
     return prod;
   }

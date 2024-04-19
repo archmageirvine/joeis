@@ -3,6 +3,7 @@ package irvine.oeis.a001;
 import java.util.ArrayList;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -31,7 +32,7 @@ public class A001163 extends Sequence0 {
       }
       mSeq.add(t.divide(k + 1));
     }
-    return mSeq.get(m).multiply(mF.factorial(m)).divide(mF.factorial(mN)).divide(Z.ONE.shiftLeft(mN));
+    return mSeq.get(m).multiply(Functions.FACTORIAL.z(m)).divide(Functions.FACTORIAL.z(mN)).divide(Z.ONE.shiftLeft(mN));
   }
 
   @Override

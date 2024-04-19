@@ -25,7 +25,7 @@ public class A083758 extends Sequence1 {
     while (true) {
       p = mPrime.nextPrime(p);
       if (!mUsed.contains(p)) {
-        final String s = mConcatenation + String.valueOf(p);
+        final String s = mConcatenation + p;
         final Z candidate = new Z(s);
         if (mPrime.isPrime(candidate)) {
           mConcatenation = s;

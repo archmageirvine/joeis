@@ -1,6 +1,7 @@
 package irvine.oeis.a032;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunctionInt3Sequence;
@@ -22,7 +23,7 @@ public class A032011 extends MemoryFunctionInt3Sequence<Z> {
       return Z.ZERO;
     }
     if (n == 0) {
-      return mF.factorial(p);
+      return Functions.FACTORIAL.z(p);
     }
     Z res = get(n, k - 1, p);
     if (k <= n) {

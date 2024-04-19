@@ -1,6 +1,7 @@
 package irvine.oeis.a000;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -38,7 +39,7 @@ public class A000159 extends AbstractSequence {
       final long u = 2L * n - k;
       final Z m = Binomial.binomial(u, k)
         .multiply(2L * n)
-        .multiply(mFactorial.factorial(n - k))
+        .multiply(Functions.FACTORIAL.z(n - k))
         .divide(u);
       p = RING.add(p, RING.multiply(RING.pow(BASE, k), m));
     }

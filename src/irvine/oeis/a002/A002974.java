@@ -22,7 +22,7 @@ public class A002974 extends Sequence1 {
   private int mN = 0;
   private Z mR = Z.ONE;
 
-  private Map<List<Integer>, Z> mCountRsp = new HashMap<>();
+  private final Map<List<Integer>, Z> mCountRsp = new HashMap<>();
 
   private boolean valid(final Map<Triple<Integer>, Integer> rsp, final Triple<Integer> coords, final int value) {
     if (coords.left() < 0 || coords.mid() < 0 || coords.right() < 0) {

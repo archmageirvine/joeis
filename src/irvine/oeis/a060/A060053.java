@@ -2,6 +2,7 @@ package irvine.oeis.a060;
 
 import irvine.math.cr.CR;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -22,7 +23,7 @@ public class A060053 extends Sequence0 {
     Q sum = Q.ZERO;
     Q h = Q.ONE;
     for (int k = 0; k <= n; ++k, h = h.multiply(NEG_HALF)) {
-      final Q t = h.multiply(new Q(Binomial.binomial(top, n - k), mF.factorial(k)));
+      final Q t = h.multiply(new Q(Binomial.binomial(top, n - k), Functions.FACTORIAL.z(k)));
       sum = sum.add(t);
     }
     return sum;
@@ -31,7 +32,7 @@ public class A060053 extends Sequence0 {
   private Q outerSum(final int n) {
     Q sum = Q.ZERO;
     for (int m = 0; m <= 3 * n + 1; ++m) {
-      sum = sum.add(innerSum(n, m).divide(mF.factorial(m)));
+      sum = sum.add(innerSum(n, m).divide(Functions.FACTORIAL.z(m)));
     }
     return sum;
   }
@@ -39,7 +40,7 @@ public class A060053 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    final Q sum = outerSum(mN).multiply(mF.factorial(mN));
+    final Q sum = outerSum(mN).multiply(Functions.FACTORIAL.z(mN));
     final CR x = CR.valueOf(sum.toZ()).divide(CR.E);
     return x.round();
   }

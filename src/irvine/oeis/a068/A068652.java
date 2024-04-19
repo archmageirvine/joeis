@@ -21,7 +21,7 @@ public class A068652 extends Sequence1 {
       String s = mP.toString();
       boolean ok = true;
       for (int k = 1; k < s.length(); ++k) {
-        s = s.substring(1) + s.substring(0, 1);
+        s = s.substring(1) + s.charAt(0);
         if (!mPrime.isPrime(new Z(s))) {
           ok = false;
           break;

@@ -13,7 +13,7 @@ import irvine.oeis.memory.MemorySequence;
 public class A082480 extends Sequence0 {
 
   private int mN = -1;
-  private MemorySequence mSeq = MemorySequence.cachedSequence(new A000045());
+  private final MemorySequence mSeq = MemorySequence.cachedSequence(new A000045());
 
   @Override
   public Z next() {

@@ -2,6 +2,7 @@ package irvine.oeis.a003;
 
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -34,13 +35,13 @@ public class A003086 extends Sequence1 {
   private Z product(final int[] j) {
     Z p = Z.ONE;
     for (int k = 1; k < j.length; ++k) {
-      p = p.multiply(mF.factorial(j[k]).multiply(Z.valueOf(k).pow(j[k])));
+      p = p.multiply(Functions.FACTORIAL.z(j[k]).multiply(Z.valueOf(k).pow(j[k])));
     }
     return p;
   }
 
   private Z v(final int n, final int[] j, final boolean even) {
-    return mF.factorial(n).shiftLeft(c(n, j, even)).divide(product(j));
+    return Functions.FACTORIAL.z(n).shiftLeft(c(n, j, even)).divide(product(j));
   }
 
   @Override
@@ -58,6 +59,6 @@ public class A003086 extends Sequence1 {
       IntegerPartition.toCountForm(p, j);
       sum = sum.add(v(d, j, even));
     }
-    return sum.divide(mF.factorial(d));
+    return sum.divide(Functions.FACTORIAL.z(d));
   }
 }

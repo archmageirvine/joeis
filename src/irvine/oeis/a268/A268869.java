@@ -12,8 +12,8 @@ import irvine.oeis.a239.A239295;
  */
 public class A268869 extends AbstractSequence {
 
-  private A239295 mSeq1 = new A239295();
-  private A088218 mSeq2 = new A088218();
+  private final A239295 mSeq1 = new A239295();
+  private final A088218 mSeq2 = new A088218();
 
   /** Construct the sequence. */
   public A268869() {

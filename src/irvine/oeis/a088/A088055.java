@@ -1,7 +1,7 @@
 package irvine.oeis.a088;
 // manually anopan 
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -16,6 +16,6 @@ public class A088055 extends Sequence1 {
   @Override
   public Z next() {
     final Z n = Z.valueOf(++mN);
-    return (mN == 1) ? Z.ZERO : n.pow(mN + 1).subtract(1).divide(mN - 1).subtract(1).subtract(MemoryFactorial.SINGLETON.factorial(mN).multiply(n.pow(mN))).negate();
+    return (mN == 1) ? Z.ZERO : n.pow(mN + 1).subtract(1).divide(mN - 1).subtract(1).subtract(Functions.FACTORIAL.z(mN).multiply(n.pow(mN))).negate();
   }
 }

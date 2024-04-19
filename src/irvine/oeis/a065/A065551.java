@@ -1,6 +1,6 @@
 package irvine.oeis.a065;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -32,7 +32,7 @@ public class A065551 extends Sequence0 {
     final Polynomial<Polynomial<Q>> b = ring.subtract(a, cosh);
     final Polynomial<Polynomial<Q>> sinh = ring.sinh(halfX, m);
     final Polynomial<Polynomial<Q>> c = ring.series(b, ring.multiply(ring.monomial(inner.x(), 0), sinh), m);
-    return c.coeff(n).coeff(k).multiply(MemoryFactorial.SINGLETON.factorial(n));
+    return c.coeff(n).coeff(k).multiply(Functions.FACTORIAL.z(n));
   }
 
   protected Z select(final Q n) {

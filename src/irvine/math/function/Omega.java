@@ -37,8 +37,8 @@ public class Omega extends AbstractFunction1 {
       // Rather than grow to exactly n, compute out to 2*n to avoid too many resize events
       final long prev = mMax - 1;
       mMax = mMax == 0 ? INITIAL_SIZE : 2 * n;
-      for (long k = 2; k < mMax; k = mPrime.nextPrime(k)) {
-        for (long j = prev + k - prev % k; j < mMax; j += k) {
+      for (long p = 2; p < mMax; p = mPrime.nextPrime(p)) {
+        for (long j = prev + p - prev % p; j < mMax; j += p) {
           mOmega.increment(j);
         }
       }

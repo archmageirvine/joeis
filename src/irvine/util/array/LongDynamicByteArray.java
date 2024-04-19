@@ -102,6 +102,19 @@ public class LongDynamicByteArray implements Serializable {
   }
 
   /**
+   * Negate the entry at the specified index, returning the new value.
+   * @param index index of entry
+   * @return new value
+   * @exception ArrayIndexOutOfBoundsException if the index is negative.
+   */
+  public byte negate(final long index) {
+    final byte[] chunk = getChunk(index);
+    final int t = (int) (index & CHUNK_MASK);
+    chunk[t] = (byte) -chunk[t];
+    return chunk[t];
+  }
+
+  /**
    * Truncate the array to specified length.  Entries beyond
    * this position are lost.  This method can release memory.
    * Calling <code>truncate(0);</code> empties the entire array.

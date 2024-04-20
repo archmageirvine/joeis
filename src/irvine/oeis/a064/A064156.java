@@ -1,6 +1,6 @@
 package irvine.oeis.a064;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -36,7 +36,7 @@ public class A064156 extends Sequence1 {
     ++mN;
 
     // We can never achieve a product that requires a prime factor > 7
-    if (Jaguar.factor(mN).largestPrimeFactor().compareTo(Z.SEVEN) > 0) {
+    if (Functions.GPF.z(mN).compareTo(Z.SEVEN) > 0) {
       return Z.ZERO;
     }
 

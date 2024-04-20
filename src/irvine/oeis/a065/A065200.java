@@ -2,8 +2,8 @@ package irvine.oeis.a065;
 
 import java.util.TreeSet;
 
-import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a005.A005117;
 
@@ -55,7 +55,7 @@ public class A065200 extends A005117 {
       }
       final State s = mA.pollFirst();
       if (s.mP == 0) {
-        final long p = mPrime.nextPrime(Jaguar.factor(s.mN).largestPrimeFactor().longValueExact());
+        final long p = mPrime.nextPrime(Functions.GPF.l(s.mN));
         if (p > 1) {
           mA.add(new State(s.mN.multiply(p), p, true));
         }

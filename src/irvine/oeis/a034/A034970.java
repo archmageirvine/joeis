@@ -1,6 +1,6 @@
 package irvine.oeis.a034;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -24,7 +24,7 @@ public class A034970 extends Sequence0 {
         return Z.THREE;
       }
     }
-    final Z lpf = Jaguar.factor(mA.multiply(mB).subtract(1)).largestPrimeFactor();
+    final Z lpf = Functions.GPF.z(mA.multiply(mB).subtract(1));
     mA = mB;
     mB = lpf;
     return lpf;

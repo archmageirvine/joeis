@@ -1,6 +1,6 @@
 package irvine.oeis.a002;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -18,6 +18,6 @@ public class A002583 extends Sequence0 {
     if (++mN > 1) {
       mF = mF.multiply(mN);
     }
-    return Jaguar.factor(mF.add(1)).largestPrimeFactor();
+    return Functions.GPF.z(mF.add(1));
   }
 }

@@ -1,6 +1,6 @@
 package irvine.oeis.a074;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -33,7 +33,7 @@ public class A074477 extends AbstractSequence {
 
   @Override
   public Z next() {
-    final Z result = Jaguar.factor(mN.add(mAdd)).largestPrimeFactor();
+    final Z result = Functions.GPF.z(mN.add(mAdd));
     mN = mN.multiply(mBase);
     return result;
   }

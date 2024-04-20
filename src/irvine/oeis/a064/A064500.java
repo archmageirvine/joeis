@@ -1,6 +1,5 @@
 package irvine.oeis.a064;
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -19,7 +18,7 @@ public class A064500 extends Sequence1 {
     if (++mN > 1) {
       mA = mA.multiply(10).add(1);
     }
-    if (Jaguar.factor(mN).largestPrimeFactor().compareTo(Z.TEN) > 0) {
+    if (Functions.GPF.z(mN).compareTo(Z.TEN) > 0) {
       return Z.ZERO;
     }
     Z t = mA;

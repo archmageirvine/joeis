@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -15,7 +15,7 @@ public class A005266 extends Sequence1 {
 
   @Override
   public Z next() {
-    mA = mA == null ? Z.THREE : Jaguar.factor(mProd.subtract(1)).largestPrimeFactor();
+    mA = mA == null ? Z.THREE : Functions.GPF.z(mProd.subtract(1));
     mProd = mProd.multiply(mA);
     return mA;
   }

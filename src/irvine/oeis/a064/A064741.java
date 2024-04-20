@@ -1,7 +1,7 @@
 package irvine.oeis.a064;
 
-import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -13,7 +13,7 @@ public class A064741 extends A064413 {
   @Override
   public Z next() {
     final Z k = super.next();
-    return k.isZero() ? Z.ZERO : Puma.primePiZ(Jaguar.factor(k).largestPrimeFactor());
+    return k.isZero() ? Z.ZERO : Puma.primePiZ(Functions.GPF.z(k));
   }
 }
 

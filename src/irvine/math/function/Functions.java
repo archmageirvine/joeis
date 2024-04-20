@@ -40,6 +40,8 @@ public final class Functions {
   public static final Function1 MOEBIUS = MOBIUS;
   /** Mertens function. */
   public static final Function1 MERTENS = new Mertens();
+  /** Greatest prime factor. */
+  public static final Function1 GPF = new GreatestPrimeFactor();
   /** Ceiling square root. */
   public static final Function1 CEIL_SQRT = new CeilSqrt();
   /** Bitset indicating which digits are present in a number. */

@@ -12,7 +12,6 @@ import java.util.List;
 
 import org.apfloat.ApfloatRuntimeException;
 
-import irvine.factor.factor.Jaguar;
 import irvine.factor.factor.LeastPrimeFactorizer;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
@@ -142,7 +141,7 @@ public final class SequenceFactory {
         case "gilbreath":
           return new GilbreathTransformSequence(1, sequence(inner));
         case "gpf":
-          return new SimpleTransformSequence(sequence(inner), k -> Jaguar.factor(k).largestPrimeFactor());
+          return new SimpleTransformSequence(sequence(inner), k -> Functions.GPF.z(k));
         case "ieuler":
           return new InverseEulerTransform(1, sequence(inner));
         case "imobius":

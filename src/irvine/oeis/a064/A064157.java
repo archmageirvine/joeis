@@ -1,6 +1,5 @@
 package irvine.oeis.a064;
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
@@ -18,7 +17,7 @@ public class A064157 extends A000040 {
       final Z prod = Functions.DIGIT_PRODUCT.z(p);
       if (!prod.isZero()) {
         final long sum = Functions.DIGIT_SUM.l(p);
-        if (Jaguar.factor(sum).largestPrimeFactor().longValue() > 7) {
+        if (Functions.GPF.l(sum) > 7) {
           continue;
         }
         if (Math.abs(prod.ln() * sum - Math.log(sum) * prod.longValue()) > 3) {

@@ -1,7 +1,7 @@
 package irvine.oeis.a057;
 
-import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A057602 extends Sequence1 {
     if (mA == null) {
       mA = Z.TWO;
     } else {
-      final Z lpf = Jaguar.factor(mA).largestPrimeFactor();
+      final Z lpf = Functions.GPF.z(mA);
       final Z t = lpf.square();
       if (t.compareTo(mA) > 0) {
         mA = t;

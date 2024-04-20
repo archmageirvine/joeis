@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
-import irvine.factor.factor.Jaguar;
-import irvine.math.z.Z;
 import irvine.math.cyclotomic.Cyclotomic;
+import irvine.math.function.Functions;
+import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
@@ -36,7 +36,7 @@ public class A002589 extends Sequence0 {
       System.out.println("Doing: 2^" + mN + "+1 Phi(" + 2 * mN + ",2)=" + n);
     }
     while (true) {
-      final Z lpf = Jaguar.factor(n).largestPrimeFactor();
+      final Z lpf = Functions.GPF.z(n);
       if (!isIntrinsic(lpf, 2 * mN)) {
         return lpf;
       }

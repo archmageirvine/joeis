@@ -1,6 +1,5 @@
 package irvine.oeis.a064;
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -20,7 +19,7 @@ public class A064158 extends Sequence1 {
       final long prod = Functions.DIGIT_PRODUCT.l(v);
       if (prod != 0) {
         final long sum = Functions.DIGIT_SUM.l(mN);
-        if (Jaguar.factor(sum).largestPrimeFactor().longValue() > 7) {
+        if (Functions.GPF.l(sum) > 7) {
           continue;
         }
         if (Z.valueOf(prod).pow(sum).equals(Z.valueOf(sum).pow(prod))) {

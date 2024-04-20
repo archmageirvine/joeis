@@ -1,7 +1,7 @@
 package irvine.oeis.a079;
 // manually knest/jaguar at 2023-03-01 16:41
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000032;
 
@@ -16,6 +16,6 @@ public class A079451 extends A000032 {
   @Override
   public Z next() {
     final Z t = super.next();
-    return (++mN == 1) ? Z.ZERO : Jaguar.factor(t).largestPrimeFactor();
+    return (++mN == 1) ? Z.ZERO : Functions.GPF.z(t);
   }
 }

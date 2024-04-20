@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a001.A001359;
 
@@ -12,7 +12,7 @@ public class A060210 extends A001359 {
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next().add(1)).largestPrimeFactor();
+    return Functions.GPF.z(super.next().add(1));
   }
 }
 

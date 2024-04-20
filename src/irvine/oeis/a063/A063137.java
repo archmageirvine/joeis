@@ -1,7 +1,7 @@
 package irvine.oeis.a063;
 
-import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -20,7 +20,7 @@ public class A063137 extends Sequence1 {
     while (true) {
       mAdd = 6 - mAdd;
       mN += mAdd;
-      if (mN % 5 != 0 && !mPrime.isPrime(mN) && Long.toBinaryString(mN).contains(Jaguar.factor(mN).largestPrimeFactor().toString(2))) {
+      if (mN % 5 != 0 && !mPrime.isPrime(mN) && Long.toBinaryString(mN).contains(Functions.GPF.z(mN).toString(2))) {
         return Z.valueOf(mN);
       }
     }

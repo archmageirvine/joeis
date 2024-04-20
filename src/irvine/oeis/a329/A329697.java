@@ -1,6 +1,6 @@
 package irvine.oeis.a329;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
@@ -23,7 +23,7 @@ public class A329697 extends AbstractSequence implements DirectSequence {
   public Z a(Z n) {
     long count = 0;
     while (n.bitCount() > 1) {
-      n = n.subtract(n.divide(Jaguar.factor(n).largestPrimeFactor()));
+      n = n.subtract(n.divide(Functions.GPF.z(n)));
       ++count;
     }
     return Z.valueOf(count);

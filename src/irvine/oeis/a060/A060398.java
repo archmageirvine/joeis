@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -28,7 +28,7 @@ public class A060398 extends A060380 {
       long bestK = 0;
       long k = -1;
       while (++k <= kMax) {
-        final long lpf = Jaguar.factor(mN + k * k + k).leastPrimeFactor().longValue();
+        final long lpf = Functions.LPF.l(mN + k * k + k);
         if (lpf < smallestLpf) {
           smallestLpf = lpf;
           kMax *= 2;

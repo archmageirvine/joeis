@@ -1,6 +1,6 @@
 package irvine.oeis.a064;
 
-import irvine.factor.factor.LeastPrimeFactorizer;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
@@ -15,7 +15,7 @@ public class A064916 extends Sequence2 {
   @Override
   public Z next() {
     mN = mN.add(1);
-    final Z lpf = LeastPrimeFactorizer.lpf(mN);
+    final Z lpf = Functions.LPF.z(mN);
     return mN.divide(lpf).add(lpf).subtract(1);
   }
 }

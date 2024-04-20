@@ -1,8 +1,8 @@
 package irvine.oeis.a067;
 
 import irvine.factor.factor.Jaguar;
-import irvine.factor.factor.LeastPrimeFactorizer;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
@@ -37,7 +37,7 @@ public class A067029 extends AbstractSequence implements DirectSequence {
     if (++mN == 1) {
       return Z.ZERO;
     }
-    final long lpf = LeastPrimeFactorizer.lpf(Z.valueOf(mN)).longValueExact();
+    final long lpf = Functions.LPF.l(Z.valueOf(mN));
     long m = mN / lpf;
     long c = 1;
     while (m % lpf == 0) {

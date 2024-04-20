@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
@@ -20,6 +20,6 @@ public class A056110 extends Sequence2 {
     }
     mF = mF.multiply(mN);
     final Z t = mF.subtract(1);
-    return t.divide(Jaguar.factor(t).leastPrimeFactor());
+    return t.divide(Functions.LPF.z(t));
   }
 }

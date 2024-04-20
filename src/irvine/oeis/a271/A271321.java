@@ -1,6 +1,6 @@
 package irvine.oeis.a271;
 
-import irvine.factor.factor.LeastPrimeFactorizer;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
@@ -21,6 +21,6 @@ public class A271321 extends AbstractSequence {
 
   @Override
   public Z next() {
-    return LeastPrimeFactorizer.lpf(mSeq1.next());
+    return Functions.LPF.z(mSeq1.next());
   }
 }

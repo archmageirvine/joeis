@@ -1,6 +1,6 @@
 package irvine.oeis.a209;
 
-import irvine.factor.factor.LeastPrimeFactorizer;
+import irvine.math.function.Functions;
 import irvine.oeis.a097.A097942;
 import irvine.oeis.transform.SimpleTransformSequence;
 
@@ -12,6 +12,6 @@ public class A209195 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A209195() {
-    super(1, new A097942(), v -> LeastPrimeFactorizer.lpf(v.add(1)));
+    super(1, new A097942(), v -> Functions.LPF.z(v.add(1)));
   }
 }

@@ -1,6 +1,6 @@
 package irvine.oeis.a068;
 
-import irvine.factor.factor.LeastPrimeFactorizer;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
@@ -21,7 +21,7 @@ public class A068319 extends Sequence1 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    final Z lpf = LeastPrimeFactorizer.lpf(n);
+    final Z lpf = Functions.LPF.z(n);
     return n.compareTo(lpf.square()) <= 0 ? lpf : a(lpf.add(n.divide(lpf)));
   }
 

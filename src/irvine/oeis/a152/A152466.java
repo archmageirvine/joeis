@@ -1,6 +1,6 @@
 package irvine.oeis.a152;
 
-import irvine.factor.factor.LeastPrimeFactorizer;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,7 @@ public class A152466 extends Sequence1 {
     if (mA == null) {
       mA = Z.valueOf(252);
     } else {
-      mA = mA.multiply(LeastPrimeFactorizer.lpf(mA.add(1)));
+      mA = mA.multiply(Functions.LPF.z(mA.add(1)));
     }
     return mA;
   }

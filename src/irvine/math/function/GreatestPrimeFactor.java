@@ -47,7 +47,7 @@ public class GreatestPrimeFactor extends AbstractFunction1 {
   @Override
   public Z z(final Z n) {
     if (n.signum() < 0) {
-      return Z.ZERO;
+      return z(n.negate());
     }
     return n.bitLength() < Long.SIZE ? Z.valueOf(l(n.longValue())) : Jaguar.factor(n).largestPrimeFactor();
   }

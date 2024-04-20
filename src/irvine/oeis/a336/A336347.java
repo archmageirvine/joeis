@@ -1,6 +1,6 @@
 package irvine.oeis.a336;
 
-import irvine.factor.factor.LeastPrimeFactorizer;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
@@ -14,6 +14,6 @@ public class A336347 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A336347() {
-    super(0, n -> LeastPrimeFactorizer.lpf(C.multiply(Z.TWO.pow(4L * n + 2)).add(1)));
+    super(0, n -> Functions.LPF.z(C.multiply(Z.TWO.pow(4L * n + 2)).add(1)));
   }
 }

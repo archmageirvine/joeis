@@ -1,6 +1,6 @@
 package irvine.oeis.a214;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -43,7 +43,7 @@ public class A214674 extends AbstractSequence {
     }
     Z result = mA1.add(mA2);
     if (!result.isProbablePrime()) {
-      result = result.divide(Jaguar.factor(result).leastPrimeFactor());
+      result = result.divide(Functions.LPF.z(result));
     }
     mA1 = mA2;
     mA2 = result;

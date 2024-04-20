@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 import java.util.ArrayList;
 import java.util.List;
 
-import irvine.factor.factor.LeastPrimeFactorizer;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence2;
@@ -29,7 +29,7 @@ public class A063248 extends Sequence2 {
 
   private boolean is(final Z c, final long base) {
     final Z b = Z.valueOf(base);
-    final Z largestProperFactor = c.divide(LeastPrimeFactorizer.lpf(c));
+    final Z largestProperFactor = c.divide(Functions.LPF.z(c));
     final List<Long> x = baseExpansion(c, b);
     final List<Long> y = baseExpansion(largestProperFactor, b);
     for (int k = 0; k <= x.size() - y.size(); ++k) {

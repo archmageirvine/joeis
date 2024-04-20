@@ -1,6 +1,6 @@
 package irvine.oeis.a288;
 
-import irvine.factor.factor.LeastPrimeFactorizer;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
@@ -23,7 +23,7 @@ public class A288212 extends Sequence1 {
     Z t = mN;
     Z u;
     while (!(u = t.add(1)).isProbablePrime()) {
-      t = t.multiply(LeastPrimeFactorizer.lpf(u));
+      t = t.multiply(Functions.LPF.z(u));
     }
     return u;
   }

@@ -1,7 +1,7 @@
 package irvine.oeis.a016;
 
-import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -30,6 +30,6 @@ public class A016047 extends AbstractSequence {
   @Override
   public Z next() {
     mP = mPrime.nextPrime(mP);
-    return Jaguar.factor(Z.ONE.shiftLeft(mP).subtract(1)).leastPrimeFactor();
+    return Functions.LPF.z(Z.ONE.shiftLeft(mP).subtract(1));
   }
 }

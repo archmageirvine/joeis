@@ -1,7 +1,7 @@
 package irvine.oeis.a063;
 
-import irvine.factor.factor.LeastPrimeFactorizer;
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
@@ -20,7 +20,7 @@ public class A063041 extends Sequence2 {
     }
     return mPrime.isPrime(n)
       ? n.multiply(mPrime.prevPrime(n)).add(1)
-      : n.divide(LeastPrimeFactorizer.lpf(n));
+      : n.divide(Functions.LPF.z(n));
   }
 
   @Override

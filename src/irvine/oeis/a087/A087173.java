@@ -1,6 +1,6 @@
 package irvine.oeis.a087;
 
-import irvine.factor.factor.LeastPrimeFactorizer;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000041;
 
@@ -18,6 +18,6 @@ public class A087173 extends A000041 {
 
   @Override
   public Z next() {
-    return LeastPrimeFactorizer.lpf(super.next());
+    return Functions.LPF.z(super.next());
   }
 }

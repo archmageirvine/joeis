@@ -1,7 +1,7 @@
 package irvine.oeis.a063;
 
-import irvine.factor.factor.LeastPrimeFactorizer;
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,7 +18,7 @@ public class A063163 extends Sequence1 {
   public Z next() {
     while (true) {
       mN += 2;
-      if (!mPrime.isPrime(mN) && Long.toString(mN, 7).contains(Long.toString(mN / LeastPrimeFactorizer.lpf(Z.valueOf(mN)).longValue(), 7))) {
+      if (!mPrime.isPrime(mN) && Long.toString(mN, 7).contains(Long.toString(mN / Functions.LPF.l(mN), 7))) {
         return Z.valueOf(mN);
       }
     }

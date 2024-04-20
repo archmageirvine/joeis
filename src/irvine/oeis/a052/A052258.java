@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a031.A031930;
 
@@ -17,7 +17,7 @@ public class A052258 extends A031930 {
     Z s = p.add(1);
     Z max = Z.ONE;
     while (!s.equals(q)) {
-      max = max.max(Jaguar.factor(s).leastPrimeFactor());
+      max = max.max(Functions.LPF.z(s));
       s = s.add(1);
     }
     return max;

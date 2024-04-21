@@ -59,6 +59,8 @@ public final class Functions {
 
   /** Reverse the digits of a number. */
   public static final Function2 REVERSE = new Reverse();
+  /** Number of digits in a number. */
+  public static final Function2 DIGIT_LENGTH = new DigitLength();
   /** Sum of digits in a number. */
   public static final Function2 DIGIT_SUM = new DigitSum();
   /** Sum of the squares of the digits in a number. */

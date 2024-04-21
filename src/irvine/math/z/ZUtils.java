@@ -11,7 +11,6 @@ import java.util.Random;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
-import irvine.math.cr.CR;
 import irvine.math.function.Functions;
 import irvine.util.CollectionUtils;
 import irvine.util.array.DynamicArray;
@@ -771,21 +770,6 @@ public final class ZUtils {
    */
   public static boolean isCube(final Z n) {
     return n.root(3).auxiliary() == 1;
-  }
-
-  private static final CR INV_LOG_10 = CR.valueOf(10).log().inverse();
-
-  /**
-   * Return the length of a number in decimal digits.
-   * @param n number
-   * @return length of number
-   */
-  public static int decimalLength(final Z n) {
-    if (n.bitLength() < 1000) {
-      return n.toString().length();
-    } else {
-      return CR.valueOf(n).log().multiply(INV_LOG_10).floor().intValueExact() + 1;
-    }
   }
 
   /**

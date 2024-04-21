@@ -311,7 +311,7 @@ public class A069295 extends Sequence2 {
       if (bk >= 1) {
         // e.g., 2 -> 1
         if (ak == 1) {
-          if(remap[bk] != 1) {
+          if (remap[bk] != 1) {
             return false;
           }
         } else if (ak > 1) {
@@ -353,6 +353,7 @@ public class A069295 extends Sequence2 {
       if (a.get(0) == 1) {
         vec.set(0, r, Z.ONE);
       }
+      ++r;
     }
     return vec;
   }

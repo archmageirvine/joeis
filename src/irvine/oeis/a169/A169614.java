@@ -1,8 +1,8 @@
 package irvine.oeis.a169;
 // manually 2024-03-28
 
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
-import irvine.math.z.Fibonacci;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
@@ -13,6 +13,8 @@ public class A169614 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A169614() {
-    super(1, 3, 3, (n, k) -> new Q(Fibonacci.fibonacci(n), Fibonacci.fibonacci(n - k + 2)).round());
+    super(1, 3, 3, (n, k) -> {
+      return new Q(Functions.FIBONACCI.z((long) n), Functions.FIBONACCI.z((long) (n - k + 2))).round();
+    });
   }
 }

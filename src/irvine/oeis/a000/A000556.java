@@ -1,7 +1,6 @@
 package irvine.oeis.a000;
 
 import irvine.math.function.Functions;
-import irvine.math.z.Fibonacci;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -20,7 +19,7 @@ public class A000556 extends Sequence0 {
     Z s = Z.ZERO;
     for (int k = 0; k <= mN; ++k) {
       s = s.add(Functions.FACTORIAL.z(k)
-                .multiply(Fibonacci.fibonacci(k + 1))
+                .multiply(Functions.FIBONACCI.z((long) (k + 1)))
                 .multiply(Stirling.secondKind(mN, k)));
     }
     return s;

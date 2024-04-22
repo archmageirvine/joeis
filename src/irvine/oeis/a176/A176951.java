@@ -1,6 +1,6 @@
 package irvine.oeis.a176;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -16,11 +16,11 @@ public class A176951 extends A000040 {
   public Z next() {
     final Z p = super.next();
     final int ip = p.intValue();
-    Z an = Fibonacci.fibonacci(ip + 1);
+    Z an = Functions.FIBONACCI.z((long) (ip + 1));
     if (an.mod(p).isZero()) {
       return an.divide(ip);
     }
-    an = Fibonacci.fibonacci(ip - 1);
+    an = Functions.FIBONACCI.z((long) (ip - 1));
     if (an.mod(p).isZero()) {
       return an.divide(ip);
     }

@@ -1,6 +1,6 @@
 package irvine.oeis.a351;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
@@ -11,7 +11,9 @@ public class A351219 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A351219() {
-    super(1, (p, e) -> Fibonacci.fibonacci(e + 1));
+    super(1, (p, e) -> {
+      return Functions.FIBONACCI.z((long) (e + 1));
+    });
   }
 
 }

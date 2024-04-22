@@ -1,7 +1,7 @@
 package irvine.oeis.a056;
 
 import irvine.math.IntegerUtils;
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a003.A003714;
 
@@ -17,7 +17,7 @@ public class A056017 extends A003714 {
     Z sum = Z.ZERO;
     while (m != 0) {
       if ((m & 1) == 1) {
-        sum = sum.add(Fibonacci.fibonacci(k));
+        sum = sum.add(Functions.FIBONACCI.z((long) k));
       }
       m >>>= 1;
       ++k;
@@ -31,6 +31,7 @@ public class A056017 extends A003714 {
     if (n == 0) {
       return Z.ZERO;
     }
-    return Fibonacci.fibonacci(IntegerUtils.log2(n) + ((n & 1) == 0 ? -1 : 1)).add(zeckendorf(n / ((n & 1) == 0 ? 2 : 4)));
+    final long n1 = IntegerUtils.log2(n) + ((n & 1) == 0 ? -1 : 1);
+    return Functions.FIBONACCI.z(n1).add(zeckendorf(n / ((n & 1) == 0 ? 2 : 4)));
   }
 }

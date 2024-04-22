@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -27,6 +27,6 @@ public class A007570 extends AbstractSequence {
 
   @Override
   public Z next() {
-    return Fibonacci.fibonacci(Fibonacci.fibonacci(++mN).intValueExact());
+    return Functions.FIBONACCI.z(Functions.FIBONACCI.z(++mN));
   }
 }

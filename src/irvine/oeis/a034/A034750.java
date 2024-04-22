@@ -1,8 +1,8 @@
 package irvine.oeis.a034;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.BellNumbers;
-import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A034750 extends Sequence1 {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(++mN).divisors()) {
       final int d = dd.intValue();
-      sum = sum.add(BellNumbers.bell(mN / d - 1).multiply(Fibonacci.fibonacci(d)));
+      sum = sum.add(BellNumbers.bell(mN / d - 1).multiply(Functions.FIBONACCI.z((long) d)));
     }
     return sum;
   }

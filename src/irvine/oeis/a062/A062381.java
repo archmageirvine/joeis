@@ -1,10 +1,10 @@
 package irvine.oeis.a062;
 
+import irvine.math.function.Functions;
 import irvine.math.group.MatrixField;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
-import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -22,7 +22,7 @@ public class A062381 extends Sequence1 {
     final DefaultMatrix<Q> mat = new DefaultMatrix<>(mN, mN, Q.ZERO);
     for (int r = 0; r < mN; ++r) {
       for (int c = 0; c < mN; ++c) {
-        mat.set(r, c, new Q(Z.ONE, Fibonacci.fibonacci(r + c + 1)));
+        mat.set(r, c, new Q(Z.ONE, Functions.FIBONACCI.z((long) (r + c + 1))));
       }
     }
     return fld.det(mat).reciprocal().toZ();

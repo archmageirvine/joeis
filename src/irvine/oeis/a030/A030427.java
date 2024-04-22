@@ -1,6 +1,6 @@
 package irvine.oeis.a030;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -16,7 +16,8 @@ public class A030427 extends A000040 {
 
   @Override
   public Z next() {
-    final long f = Fibonacci.fibonacci(++mN).longValueExact();
+    final long n = ++mN;
+    final long f = Functions.FIBONACCI.l(n);
     while (mPrimeNumber < f) {
       mP = super.next();
       ++mPrimeNumber;

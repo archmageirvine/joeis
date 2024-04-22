@@ -1,6 +1,6 @@
 package irvine.oeis.a250;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -15,6 +15,6 @@ public class A250495 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Fibonacci.fibonacci(Z.valueOf(mN).pow(mN).intValueExact());
+    return Functions.FIBONACCI.z(Z.valueOf(mN).pow(mN));
   }
 }

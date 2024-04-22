@@ -1,6 +1,6 @@
 package irvine.oeis.a114;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
@@ -15,6 +15,6 @@ public class A114185 extends Sequence2 {
   @Override
   public Z next() {
     ++mN;
-    return Fibonacci.fibonacci(2L * mN).subtract(mN + 1);
+    return Functions.FIBONACCI.z(2L * mN).subtract(mN + 1);
   }
 }

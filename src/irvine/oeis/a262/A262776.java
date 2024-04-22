@@ -1,7 +1,6 @@
 package irvine.oeis.a262;
 
 import irvine.math.function.Functions;
-import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -19,7 +18,7 @@ public class A262776 extends Sequence0 {
     if (++mN < 6) {
       return Z.ZERO;
     }
-    final Z mod = Functions.FACTORIAL.z(Fibonacci.fibonacci(mN));
+    final Z mod = Functions.FACTORIAL.z(Functions.FIBONACCI.z((long) mN));
     Z a = Z.ZERO;
     Z b = Z.ONE;
     final long fn = Functions.FACTORIAL.l(mN);

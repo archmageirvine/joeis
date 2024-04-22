@@ -1,6 +1,6 @@
 package irvine.oeis.a053;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a003.A003266;
 
@@ -20,7 +20,7 @@ public class A053412 extends A003266 {
     while (true) {
       ++mN;
       if (super.next().add(1).isProbablePrime()) {
-        return Fibonacci.fibonacci(mN);
+        return Functions.FIBONACCI.z((long) mN);
       }
     }
   }

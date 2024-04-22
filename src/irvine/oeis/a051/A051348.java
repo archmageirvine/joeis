@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -15,9 +15,10 @@ public class A051348 extends Sequence1 {
 
   @Override
   public Z next() {
-    Z f = Fibonacci.fibonacci(++mN);
+    final long n = ++mN;
+    Z f = Functions.FIBONACCI.z(n);
     for (final Z p : Jaguar.factor(mN).toZArray()) {
-      f = f.divide(Fibonacci.fibonacci(p.intValue()));
+      f = f.divide(Functions.FIBONACCI.z(p));
     }
     return f;
   }

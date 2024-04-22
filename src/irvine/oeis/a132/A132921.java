@@ -1,6 +1,6 @@
 package irvine.oeis.a132;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
@@ -18,6 +18,6 @@ public class A132921 extends BaseTriangle {
 
   @Override
   public Z triangleElement(final int n, final int k) {
-    return Fibonacci.fibonacci(k).add(n - 1);
+    return Functions.FIBONACCI.z((long) k).add(n - 1);
   }
 }

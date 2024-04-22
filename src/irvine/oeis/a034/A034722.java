@@ -2,7 +2,7 @@ package irvine.oeis.a034;
 
 import java.util.TreeSet;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -50,12 +50,13 @@ public class A034722 extends Sequence1 {
   public Z next() {
     while (true) {
       while (mA.isEmpty() || mA.first().mValue.compareTo(mF) >= 0) {
-        mF = Fibonacci.fibonacci(++mN);
+        final long n = ++mN;
+        mF = Functions.FIBONACCI.z(n);
         mA.add(new State(mF, mN));
       }
       final State s = mA.pollFirst();
       final int next = s.mLast + 1;
-      mA.add(new State(s.mValue.multiply(Fibonacci.fibonacci(next)), next));
+      mA.add(new State(s.mValue.multiply(Functions.FIBONACCI.z((long) next)), next));
       if (s.mValue.equals(mPrev)) {
         continue;
       }

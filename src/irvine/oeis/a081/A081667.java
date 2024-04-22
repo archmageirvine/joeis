@@ -1,7 +1,7 @@
 package irvine.oeis.a081;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
-import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -16,6 +16,6 @@ public class A081667 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Fibonacci.fibonacci(Binomial.binomial(mN + 2, 2).intValue());
+    return Functions.FIBONACCI.z(Binomial.binomial(mN + 2, 2));
   }
 }

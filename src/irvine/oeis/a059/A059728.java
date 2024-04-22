@@ -1,6 +1,6 @@
 package irvine.oeis.a059;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002426;
 
@@ -20,7 +20,7 @@ public class A059728 extends A002426 {
     if (mN == 1) {
       return Z.THREE;
     }
-    final Z f = Fibonacci.fibonacci((int) mN - 2);
+    final Z f = Functions.FIBONACCI.z((long) ((int) mN - 2));
     return t.add(f.multiply(f.add(1)));
   }
 }

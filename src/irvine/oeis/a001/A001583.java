@@ -1,7 +1,7 @@
 package irvine.oeis.a001;
 
 import irvine.factor.prime.Fast;
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -21,7 +21,7 @@ public class A001583 extends Sequence1 {
       if (mP > Integer.MAX_VALUE) {
         throw new UnsupportedOperationException();
       }
-      if (mP % 5 == 1 && Fibonacci.fibonacci((int) (mP / 5)).mod(mP) == 0) {
+      if (mP % 5 == 1 && Functions.FIBONACCI.z((long) (int) (mP / 5)).mod(mP) == 0) {
         return Z.valueOf(mP);
       }
     }

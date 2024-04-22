@@ -2,7 +2,6 @@ package irvine.oeis.a020;
 
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerComposition;
-import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
@@ -67,7 +66,7 @@ public class A020879 extends Sequence2 {
   private int mN = 1;
 
   protected Z delta(final int n) {
-    return Fibonacci.fibonacci(n);
+    return Functions.FIBONACCI.z((long) n);
   }
 
   protected Z zeroCase(final int n) {

@@ -1,9 +1,6 @@
 package irvine.oeis.a115;
 
-import irvine.factor.factor.Jaguar;
-import irvine.factor.util.FactorSequence;
 import irvine.math.function.Functions;
-import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -18,13 +15,7 @@ public class A115101 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    final Z n = Functions.LUCAS.z(Fibonacci.fibonacci(mN).intValue() + mN);
-    final FactorSequence fs = Jaguar.factor(n);
-    if (!fs.isComplete()) {
-      System.out.println(mN + " " + n + " -> " + fs);
-      throw new UnsupportedOperationException();
-    }
-    return Z.valueOf(fs.omega());
+    return Functions.OMEGA.z(Functions.LUCAS.z(Functions.FIBONACCI.l(mN) + mN));
   }
 }
 

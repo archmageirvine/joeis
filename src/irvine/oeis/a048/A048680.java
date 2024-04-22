@@ -1,6 +1,6 @@
 package irvine.oeis.a048;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -21,7 +21,8 @@ public class A048680 extends Sequence0 {
     Z s = Z.ZERO;
     while (m != 0) {
       if ((m & 1) == 1) {
-        s = s.add(Fibonacci.fibonacci(k++));
+        final long n = k++;
+        s = s.add(Functions.FIBONACCI.z(n));
       }
       ++k;
       m >>>= 1;

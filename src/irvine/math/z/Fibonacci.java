@@ -1,8 +1,6 @@
 package irvine.math.z;
 
 import java.util.Arrays;
-import java.util.LinkedHashMap;
-import java.util.Map;
 
 import irvine.math.LongUtils;
 import irvine.math.api.Matrix;
@@ -19,76 +17,8 @@ public final class Fibonacci  {
 
   private Fibonacci() { }
 
-  private static final int SMALL_LIMIT = 100;
-  private static final Z[] FIBONACCI = new Z[SMALL_LIMIT];
-  static {
-    // These ones explicitly initialized so that constants from Z used
-    FIBONACCI[0] = Z.ZERO;
-    FIBONACCI[1] = Z.ONE;
-    FIBONACCI[2] = Z.ONE;
-    FIBONACCI[3] = Z.TWO;
-    FIBONACCI[4] = Z.THREE;
-    FIBONACCI[5] = Z.FIVE;
-    FIBONACCI[6] = Z.EIGHT;
-    // Initialize remainder of small cases
-    for (int k = 7; k < FIBONACCI.length; ++k) {
-      FIBONACCI[k] = FIBONACCI[k - 1].add(FIBONACCI[k - 2]);
-    }
-  }
-
   private static final long[] FIBONACCI_PRIMES = LongUtils.suckInNumbers("irvine/math/z/fibonacci/fibonacci-primes.dat");
   private static final long[] LUCAS_PRIMES = LongUtils.suckInNumbers("irvine/math/z/fibonacci/lucas-primes.dat");
-
-  /** Cache of recently requested values. */
-  private static final Map<Long, Z> FIBO_MAP = new LinkedHashMap<>() {
-    @Override
-    protected boolean removeEldestEntry(final Map.Entry<Long, Z> eldest) {
-      return size() > 100;
-    }
-  };
-
-  /**
-   * Returns the nth Fibonacci number.
-   * @param n index
-   * @return F(n)
-   */
-  public static Z fibonacci(long n) {
-    // handle negatives
-    if (n < 0) {
-      n = -n;
-      final Z r = fibonacci(n);
-      return (n & 1) == 1 ? r : r.negate();
-    }
-    // handle small cases
-    if (n < FIBONACCI.length) {
-      return FIBONACCI[(int) n];
-    }
-
-    // examine cache
-    final Long nn = n;
-    final Z mapResult = FIBO_MAP.get(nn);
-    if (mapResult != null) {
-      return mapResult;
-    }
-
-    // handle even cases
-    if ((n & 1) == 0) {
-      n >>>= 1;
-      final Z fnp = fibonacci(n + 1);
-      final Z fnm = fibonacci(n - 1);
-      final Z r = fnp.multiply(fnp).subtract(fnm.multiply(fnm));
-      FIBO_MAP.put(nn, r);
-      return r;
-    }
-
-    // handle odd cases
-    n >>>= 1;
-    final Z fnpo = fibonacci(n + 1);
-    final Z fno = fibonacci(n);
-    final Z ro = fnpo.multiply(fnpo).add(fno.multiply(fno));
-    FIBO_MAP.put(nn, ro);
-    return ro;
-  }
 
   /**
    * Test if the Fibonacci number of given index is a prime.
@@ -150,7 +80,7 @@ public final class Fibonacci  {
 
     // handle general case
     int estimatedIndex = (int) (1.440420090412556479017551499657 * (n.bitLength() + 1.160964047443681173935159714711));
-    final Z f = fibonacci(estimatedIndex);
+    final Z f = Functions.FIBONACCI.z((long) estimatedIndex);
     if (f.equals(n)) {
       return estimatedIndex;
     } else if (f.compareTo(n) < 0) {
@@ -158,7 +88,8 @@ public final class Fibonacci  {
     }
 
     // try reducing estimate by 1
-    return fibonacci(--estimatedIndex).equals(n) ? estimatedIndex : -estimatedIndex;
+    final long n1 = --estimatedIndex;
+    return Functions.FIBONACCI.z(n1).equals(n) ? estimatedIndex : -estimatedIndex;
   }
 
   /**
@@ -225,11 +156,11 @@ public final class Fibonacci  {
   public static void main(final String[] args) {
     if (args.length > 1 && "-l".equals(args[0])) {
       for (int k = 1; k < args.length; ++k) {
-        System.out.println(Functions.LUCAS.z((long) Integer.parseInt(args[k])));
+        System.out.println(Functions.LUCAS.z(Long.parseLong(args[k])));
       }
     } else {
       for (final String s : args) {
-        System.out.println(fibonacci(Integer.parseInt(s)));
+        System.out.println(Functions.FIBONACCI.z(Long.parseLong(s)));
       }
     }
   }

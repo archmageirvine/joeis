@@ -1,6 +1,6 @@
 package irvine.oeis.a061;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -16,7 +16,7 @@ public class A061443 extends A061447 {
     while (true) {
       mN += 5;
       final Z lucasStar = lucasStar(mN);
-      final Z f = Fibonacci.fibonacci(mN / 5);
+      final Z f = Functions.FIBONACCI.z((long) (mN / 5));
       final Z a = f.multiply(f.add(1)).multiply(5).add(1);
       final Z g = lucasStar.gcd(a);
       if (g.isProbablePrime()) {

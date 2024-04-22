@@ -1,7 +1,7 @@
 package irvine.oeis.a119;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
-import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -16,6 +16,6 @@ public class A119697 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Fibonacci.fibonacci(mN).multiply(mN).multiply(Binomial.binomial(2L * mN, mN)).divide(mN + 1);
+    return Functions.FIBONACCI.z(mN).multiply(mN).multiply(Binomial.binomial(2L * mN, mN)).divide(mN + 1);
   }
 }

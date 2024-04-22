@@ -1,7 +1,6 @@
 package irvine.oeis.a261;
 
 import irvine.math.function.Functions;
-import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -17,8 +16,8 @@ public class A261626 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    final Z result = Fibonacci.fibonacci(mF)
-      .subtract(Functions.FACTORIAL.z(Fibonacci.fibonacci(mN)));
+    final Z result = Functions.FIBONACCI.z((long) mF)
+      .subtract(Functions.FACTORIAL.z(Functions.FIBONACCI.z((long) mN)));
     mF = mF * (mN + 1);
     return result;
   }

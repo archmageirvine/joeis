@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 import irvine.util.array.DynamicIntArray;
@@ -22,7 +22,7 @@ public class A060390 extends A000045 {
       final int c = mDownCounters.get(k) - 1;
       mDownCounters.set(k, c);
       if (c <= 0) {
-        mDownCounters.set(k, Fibonacci.fibonacci(k + 3).intValueExact());
+        mDownCounters.set(k, Functions.FIBONACCI.i(k + 3));
         return true;
       }
     }
@@ -35,7 +35,8 @@ public class A060390 extends A000045 {
       final Z f = super.next();
       if (mNumbersOutput == mNextCounterStart) {
         ++mMaxCounter;
-        mNextCounterStart = Fibonacci.fibonacci(++mFiboPos).intValueExact() - 1;
+        final long n = ++mFiboPos;
+        mNextCounterStart = Functions.FIBONACCI.i(n) - 1;
       }
       if (!isSkipped()) {
         ++mNumbersOutput;

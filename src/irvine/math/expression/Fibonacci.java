@@ -1,5 +1,6 @@
 package irvine.math.expression;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -20,9 +21,9 @@ public class Fibonacci extends UnaryFunction {
   public Expression performEval() {
     final Expression expr = arg().eval();
     if (expr instanceof Literal<?, ?>) {
-      final Literal<?, ?> lit = (Literal) expr;
+      final Literal<?, ?> lit = (Literal<?, ?>) expr;
       if (lit.value() instanceof Z) {
-        return new LiteralZ(irvine.math.z.Fibonacci.fibonacci(((Z) lit.value()).intValueExact()));
+        return new LiteralZ(Functions.FIBONACCI.z((Z) lit.value()));
       }
       throw new UnsupportedOperationException("Fibonacci on " + lit.ring());
     }

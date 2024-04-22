@@ -1,6 +1,6 @@
 package irvine.oeis.a047;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002144;
 
@@ -14,7 +14,7 @@ public class A047272 extends A002144 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      final Z f = Fibonacci.fibonacci(p.subtract(1).divide(4).intValueExact());
+      final Z f = Functions.FIBONACCI.z(p.subtract(1).divide(4));
       if (f.mod(p).isZero()) {
         return p;
       }

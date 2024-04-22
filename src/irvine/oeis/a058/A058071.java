@@ -1,6 +1,6 @@
 package irvine.oeis.a058;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -14,7 +14,7 @@ public class A058071 extends Sequence0 {
   private int mM = 0;
 
   private Z t(final int n, final int k) {
-    return Fibonacci.fibonacci(k + 1).multiply(Fibonacci.fibonacci(n - k + 1));
+    return Functions.FIBONACCI.z((long) (k + 1)).multiply(Functions.FIBONACCI.z((long) (n - k + 1)));
   }
 
   @Override

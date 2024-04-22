@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a010.A010048;
 
@@ -24,9 +24,9 @@ public class A056588 extends A010048 {
     }
     Z sum = Z.ZERO;
     for (int j = 1; j <= mM; ++j) {
-      sum = sum.signedAdd((((j + 1) / 2) & 1) == 0, Fibonacci.fibonacci(mM + 1 - j).pow(mN + 1).multiply(get(mN + 2, j)));
+      sum = sum.signedAdd((((j + 1) / 2) & 1) == 0, Functions.FIBONACCI.z((long) (mM + 1 - j)).pow(mN + 1).multiply(get(mN + 2, j)));
     }
-    return sum.add(Fibonacci.fibonacci(mM + 1).pow(mN + 1));
+    return sum.add(Functions.FIBONACCI.z((long) (mM + 1)).pow(mN + 1));
   }
 }
 

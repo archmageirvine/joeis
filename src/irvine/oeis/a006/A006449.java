@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
-import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -18,7 +18,7 @@ public class A006449 extends Sequence0 {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 0; k <= mN; ++k) {
-      sum = sum.add(Fibonacci.fibonacci(Binomial.binomial(mN, k).intValueExact()));
+      sum = sum.add(Functions.FIBONACCI.z(Binomial.binomial(mN, k)));
     }
     return sum;
   }

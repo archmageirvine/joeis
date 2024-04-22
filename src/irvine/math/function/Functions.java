@@ -16,6 +16,8 @@ public final class Functions {
   public static final Function1 FACTORIAL_BASE = new FactorialBase();
   /** Product of the specified number of primes. */
   public static final Function1 PRIMORIAL_COUNT = new PrimorialCount();
+  /** Fibonacci function. */
+  public static final Function1 FIBONACCI = new Fibonacci();
   /** Lucas function. */
   public static final Function1 LUCAS = new Lucas();
   /** Euler totient function. */

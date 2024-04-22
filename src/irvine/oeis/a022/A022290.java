@@ -1,6 +1,6 @@
 package irvine.oeis.a022;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -13,7 +13,7 @@ public class A022290 extends Sequence0 {
   private static final Z[] FIBONACCI = new Z[Long.SIZE];
   static {
     for (int k = 0; k < FIBONACCI.length; ++k) {
-      FIBONACCI[k] = Fibonacci.fibonacci(k + 2);
+      FIBONACCI[k] = Functions.FIBONACCI.z((long) (k + 2));
     }
   }
 

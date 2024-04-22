@@ -1,6 +1,6 @@
 package irvine.oeis.a250;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
@@ -18,6 +18,6 @@ public class A250486 extends UpperLeftTriangle {
 
   @Override
   public Z matrixElement(final int n, final int k) {
-    return Fibonacci.fibonacci(Z.valueOf(n).pow(k).intValueExact());
+    return Functions.FIBONACCI.z(Z.valueOf(n).pow(k));
   }
 }

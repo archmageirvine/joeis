@@ -1,5 +1,6 @@
 package irvine.oeis.a110;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
 import irvine.oeis.a007.A007908;
@@ -26,11 +27,12 @@ public class A110486 extends A007908 {
       if (i >= 0) {
         return Z.valueOf(i);
       }
-      final Z t1 = Fibonacci.fibonacci(-i);
+      final long n = -i;
+      final Z t1 = Functions.FIBONACCI.z(n);
       if (t1.compareTo(lo) > 0 && t1.compareTo(hi) <= 0) {
         return Z.valueOf(-i);
       }
-      final Z t2 = Fibonacci.fibonacci(1 - i);
+      final Z t2 = Functions.FIBONACCI.z((long) (1 - i));
       if (t2.compareTo(hi) <= 0) {
         return Z.valueOf(1 - i);
       }

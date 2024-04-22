@@ -1,7 +1,7 @@
 package irvine.oeis.a185;
 // manually knest at 2023-03-13
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000201;
@@ -17,6 +17,6 @@ public class A185381 extends Sequence0 {
 
   @Override
   public Z next() {
-    return (++mN == 0) ? Z.ZERO : Fibonacci.fibonacci(mSeq.next().intValue());
+    return (++mN == 0) ? Z.ZERO : Functions.FIBONACCI.z(mSeq.next());
   }
 }

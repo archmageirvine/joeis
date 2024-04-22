@@ -1,7 +1,7 @@
 package irvine.oeis.a084;
 
 import irvine.math.cr.CR;
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
@@ -20,7 +20,8 @@ public class A084119 extends DecimalExpansionSequence {
         Z sum = Z.ZERO;
         int k = 0;
         while (true) {
-          final int shift = Fibonacci.fibonacci(++k).intValueExact();
+          final long n = ++k;
+          final int shift = Functions.FIBONACCI.i(n);
           if (shift > -precision) {
             break;
           }

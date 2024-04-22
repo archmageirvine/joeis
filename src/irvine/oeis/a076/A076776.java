@@ -1,6 +1,6 @@
 package irvine.oeis.a076;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
@@ -12,6 +12,6 @@ public class A076776 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A076776() {
-    super(0, n -> (n < 2) ? Z.valueOf(n + 1) : Z.TWO.pow(Fibonacci.fibonacci(n - 2)).multiply(Z.FIVE.pow(Fibonacci.fibonacci(n - 1))));
+    super(0, n -> (n < 2) ? Z.valueOf(n + 1) : Z.TWO.pow(Functions.FIBONACCI.z(n - 2)).multiply(Z.FIVE.pow(Functions.FIBONACCI.z(n - 1))));
   }
 }

@@ -1,7 +1,7 @@
 package irvine.oeis.a130;
 // manually triprod at 2023-06-05 09:05
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -18,6 +18,8 @@ public class A130095 extends Sequence1 {
   public Z next() {
     // a(n) = sum {d | n} Fibonacci(2*d - 1).
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> Fibonacci.fibonacci(2L * d - 1));
+    return Integers.SINGLETON.sumdiv(mN, d -> {
+      return Functions.FIBONACCI.z(2L * d - 1);
+    });
   }
 }

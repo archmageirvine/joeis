@@ -1,7 +1,7 @@
 package irvine.oeis.a094;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
-import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
@@ -19,6 +19,6 @@ public class A094440 extends BaseTriangle {
 
   @Override
   public Z triangleElement(final int n, final int k) {
-    return Fibonacci.fibonacci(n + 1 - k).multiply(Binomial.binomial(n, k - 1));
+    return Functions.FIBONACCI.z((long) (n + 1 - k)).multiply(Binomial.binomial(n, k - 1));
   }
 }

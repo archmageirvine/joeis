@@ -5,7 +5,7 @@ import java.util.HashSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -20,7 +20,8 @@ public class A001578 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Z f = Fibonacci.fibonacci(++mN);
+    final long n = ++mN;
+    final Z f = Functions.FIBONACCI.z(n);
     final FactorSequence fs = Jaguar.factor(f);
     final Z[] factors = fs.toZArray();
     for (final Z p : factors) {

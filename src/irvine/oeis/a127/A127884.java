@@ -1,6 +1,6 @@
 package irvine.oeis.a127;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
@@ -20,6 +20,6 @@ public class A127884 extends A000045 {
   @Override
   public Z next() {
     ++mN;
-    return Fibonacci.fibonacci(mN).divide(mN);
+    return Functions.FIBONACCI.z((long) mN).divide(mN);
   }
 }

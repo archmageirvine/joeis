@@ -4,7 +4,7 @@ import java.util.function.Function;
 
 import irvine.math.MemoryFunction1;
 import irvine.math.MemoryFunctionInt2;
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -30,7 +30,7 @@ public class A161026 extends AbstractSequence {
    * @param appears how often every part appears
    */
   public A161026(final int offset, final int appears) {
-    this(offset, appears, 2, n -> Fibonacci.fibonacci(n).intValue());
+    this(offset, appears, 2, Functions.FIBONACCI::i);
   }
 
   /**

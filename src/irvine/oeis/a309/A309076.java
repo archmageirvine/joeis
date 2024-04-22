@@ -1,7 +1,7 @@
 package irvine.oeis.a309;
 
 import irvine.math.cr.CR;
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -21,8 +21,8 @@ public class A309076 extends Sequence0 {
     long n = ++mN;
     while (n > 0) {
       final int k = SQRT5.multiply(n).add(CR.HALF).log().divide(LN_PHI).floor().intValueExact();
-      n -= Fibonacci.fibonacci(k).longValueExact();
-      sum = sum.add(Fibonacci.fibonacci(1 - k));
+      n -= Functions.FIBONACCI.l(k);
+      sum = sum.add(Functions.FIBONACCI.z(1 - k));
     }
     return sum;
   }

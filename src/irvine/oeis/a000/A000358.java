@@ -2,7 +2,6 @@ package irvine.oeis.a000;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
-import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -20,7 +19,7 @@ public class A000358 extends Sequence1 {
     Z sum = Z.ZERO;
     for (final Z d : Jaguar.factor(mN).divisors()) {
       final int dd = d.intValue();
-      sum = sum.add(Fibonacci.fibonacci(dd - 1).add(Fibonacci.fibonacci(dd + 1))
+      sum = sum.add(Functions.FIBONACCI.z((long) (dd - 1)).add(Functions.FIBONACCI.z((long) (dd + 1)))
                     .multiply(Functions.PHI.l((long) (mN / dd))));
     }
     return sum.divide(mN);

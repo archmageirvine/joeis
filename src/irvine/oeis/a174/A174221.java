@@ -1,6 +1,6 @@
 package irvine.oeis.a174;
 
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
@@ -38,11 +38,11 @@ public class A174221 extends AbstractSequence implements DirectSequence {
     if (!n.testBit(0)) {
       return n.divide(2);
     }
-    Z t = Puma.nextPrimeZ(n);
+    Z t = Functions.NEXT_PRIME.z(n);
     Z result = n.add(t);
-    t = Puma.nextPrimeZ(t);
+    t = Functions.NEXT_PRIME.z(t);
     result = result.add(t);
-    t = Puma.nextPrimeZ(t);
+    t = Functions.NEXT_PRIME.z(t);
     return result.add(t);
   }
 

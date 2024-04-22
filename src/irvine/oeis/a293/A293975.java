@@ -1,6 +1,6 @@
 package irvine.oeis.a293;
 
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence0;
@@ -23,7 +23,7 @@ public class A293975 extends Sequence0 implements DirectSequence {
     if (!n.testBit(0)) {
       return n.divide(2);
     }
-    return n.add(Puma.nextPrimeZ(n));
+    return n.add(Functions.NEXT_PRIME.z(n));
   }
 
   @Override

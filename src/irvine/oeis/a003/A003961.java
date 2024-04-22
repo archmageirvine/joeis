@@ -2,8 +2,8 @@ package irvine.oeis.a003;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
-import irvine.factor.prime.Puma;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
@@ -50,7 +50,7 @@ public class A003961 extends AbstractSequence implements DirectSequence {
     final FactorSequence fs = Jaguar.factor(n);
     Z prod = Z.ONE;
     for (final Z p : fs.toZArray()) {
-      prod = prod.multiply(Puma.nextPrimeZ(p).pow(fs.getExponent(p)));
+      prod = prod.multiply(Functions.NEXT_PRIME.z(p).pow(fs.getExponent(p)));
     }
     return prod;
   }

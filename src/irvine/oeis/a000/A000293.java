@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002836;
 
@@ -18,7 +18,7 @@ public class A000293 extends A002836 {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 0; k < mN; ++k) {
-      sum = sum.add(IntegerPartition.partitions(k).multiply(mD[mN - k - 1]));
+      sum = sum.add(Functions.PARTITIONS.z(k).multiply(mD[mN - k - 1]));
     }
     return sum;
   }

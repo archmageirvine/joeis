@@ -1,6 +1,6 @@
 package irvine.oeis.a213;
 
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -15,6 +15,6 @@ public class A213256 extends Sequence0 {
   @Override
   public Z next() {
     mN += 11;
-    return IntegerPartition.partitions(mN);
+    return Functions.PARTITIONS.z(mN);
   }
 }

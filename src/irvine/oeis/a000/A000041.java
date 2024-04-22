@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -27,7 +27,8 @@ public class A000041 extends AbstractSequence {
 
   @Override
   public Z next() {
-    return IntegerPartition.partitions(++mN);
+    final int index = ++mN;
+    return Functions.PARTITIONS.z(index);
   }
 }
 

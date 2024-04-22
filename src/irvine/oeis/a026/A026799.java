@@ -1,6 +1,6 @@
 package irvine.oeis.a026;
 
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -15,17 +15,17 @@ public class A026799 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return IntegerPartition.partitions(mN - 6)
-      .subtract(IntegerPartition.partitions(mN - 7))
-      .subtract(IntegerPartition.partitions(mN - 8))
-      .add(IntegerPartition.partitions(mN - 11))
-      .add(IntegerPartition.partitions(mN - 12))
-      .add(IntegerPartition.partitions(mN - 13))
-      .subtract(IntegerPartition.partitions(mN - 14))
-      .subtract(IntegerPartition.partitions(mN - 15))
-      .subtract(IntegerPartition.partitions(mN - 16))
-      .add(IntegerPartition.partitions(mN - 19))
-      .add(IntegerPartition.partitions(mN - 20))
-      .subtract(IntegerPartition.partitions(mN - 21));
+    return Functions.PARTITIONS.z(mN - 6)
+      .subtract(Functions.PARTITIONS.z(mN - 7))
+      .subtract(Functions.PARTITIONS.z(mN - 8))
+      .add(Functions.PARTITIONS.z(mN - 11))
+      .add(Functions.PARTITIONS.z(mN - 12))
+      .add(Functions.PARTITIONS.z(mN - 13))
+      .subtract(Functions.PARTITIONS.z(mN - 14))
+      .subtract(Functions.PARTITIONS.z(mN - 15))
+      .subtract(Functions.PARTITIONS.z(mN - 16))
+      .add(Functions.PARTITIONS.z(mN - 19))
+      .add(Functions.PARTITIONS.z(mN - 20))
+      .subtract(Functions.PARTITIONS.z(mN - 21));
   }
 }

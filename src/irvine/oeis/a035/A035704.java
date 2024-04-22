@@ -1,6 +1,6 @@
 package irvine.oeis.a035;
 
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000009;
 
@@ -19,7 +19,8 @@ public class A035704 extends A000009 {
   @Override
   public Z next() {
     while (true) {
-      if (Z.TWO.compareTo(super.next().gcd(IntegerPartition.partitions(++mN))) < 0) {
+      final int index = ++mN;
+      if (Z.TWO.compareTo(super.next().gcd(Functions.PARTITIONS.z(index))) < 0) {
         return Z.valueOf(mN);
       }
     }

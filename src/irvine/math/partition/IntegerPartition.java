@@ -176,22 +176,6 @@ public final class IntegerPartition {
   }
 
   /**
-   * Number of partitions.
-   * @param index index to compute number of partitions for
-   * @return number of partitions
-   */
-  public static Z partitions(final int index) {
-    if (index < 0) {
-      return Z.ZERO;
-    }
-    while (PARTITIONS.size() <= index) {
-      computeNext();
-    }
-    return PARTITIONS.get(index);
-  }
-
-
-  /**
    * Return the number of standard Young tableaux corresponding to the given
    * row lengths (i.e., partition).
    * @param l row lengths

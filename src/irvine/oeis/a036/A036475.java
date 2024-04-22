@@ -1,7 +1,7 @@
 package irvine.oeis.a036;
 // manually, copied from A000041, 2020-10-30
 
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -36,6 +36,6 @@ public class A036475 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return IntegerPartition.partitions(mBase * mN + mIncr).mod(mZBase);
+    return Functions.PARTITIONS.z(mBase * mN + mIncr).mod(mZBase);
   }
 }

@@ -1,6 +1,6 @@
 package irvine.oeis.a239;
 
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
@@ -14,10 +14,12 @@ public class A239736 extends Sequence2 {
 
   @Override
   public Z next() {
-    final Z pn = IntegerPartition.partitions(++mN);
+    final int index1 = ++mN;
+    final Z pn = Functions.PARTITIONS.z(index1);
     int k = 0;
     while (true) {
-      if (pn.add(IntegerPartition.partitions(++k)).subtract(1).isProbablePrime()) {
+      final int index = ++k;
+      if (pn.add(Functions.PARTITIONS.z(index)).subtract(1).isProbablePrime()) {
         return Z.valueOf(k);
       }
     }

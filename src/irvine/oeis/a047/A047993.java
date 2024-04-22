@@ -1,6 +1,6 @@
 package irvine.oeis.a047;
 
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -24,7 +24,7 @@ public class A047993 extends Sequence1 {
         break;
       }
       final int t = mN - (3 * k * k + k) / 2;
-      sum = sum.signedAdd((k & 1) == 0, IntegerPartition.partitions(u).subtract(IntegerPartition.partitions(t)));
+      sum = sum.signedAdd((k & 1) == 0, Functions.PARTITIONS.z(u).subtract(Functions.PARTITIONS.z(t)));
     }
     return sum.abs();
   }

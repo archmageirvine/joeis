@@ -1,6 +1,6 @@
 package irvine.oeis.a058;
 
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000041;
 
@@ -16,9 +16,9 @@ public class A058702 extends A000041 {
   @Override
   public Z next() {
     if (++mN <= 4) {
-      mA = IntegerPartition.partitions(mN);
+      mA = Functions.PARTITIONS.z(mN);
     } else {
-      mA = IntegerPartition.partitions(mA.intValueExact());
+      mA = Functions.PARTITIONS.z(mA);
     }
     return mA;
   }

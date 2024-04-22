@@ -1,7 +1,7 @@
 package irvine.oeis.a038;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -16,7 +16,8 @@ public class A038630 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Z p = IntegerPartition.partitions(++mN);
+      final int index = ++mN;
+      final Z p = Functions.PARTITIONS.z(index);
       if (!Jaguar.factor(p).isSquareFree()) {
         return Z.valueOf(mN);
       }

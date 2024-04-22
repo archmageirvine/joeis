@@ -1,6 +1,6 @@
 package irvine.oeis.a027;
 
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A027293 extends Sequence1 {
       ++mN;
       mM = 1;
     }
-    return IntegerPartition.partitions(mN - mM);
+    return Functions.PARTITIONS.z(mN - mM);
   }
 }
 

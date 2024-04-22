@@ -1,6 +1,6 @@
 package irvine.oeis.a067;
 
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
@@ -20,7 +20,8 @@ public class A067569 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (mB.next().mod(IntegerPartition.partitions(++mN)).isZero()) {
+      final int index = ++mN;
+      if (mB.next().mod(Functions.PARTITIONS.z(index)).isZero()) {
         return Z.valueOf(mN);
       }
       if (mVerbose && mN % 1000 == 0) {

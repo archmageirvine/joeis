@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -23,7 +23,8 @@ public class A003964 extends Sequence1 {
     if (pi != null) {
       return pi;
     }
-    final Z res = IntegerPartition.partitions(++mP);
+    final int index = ++mP;
+    final Z res = Functions.PARTITIONS.z(index);
     mPrimeToIndex.put(p, res);
     return res;
   }

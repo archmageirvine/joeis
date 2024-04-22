@@ -1,7 +1,7 @@
 package irvine.oeis.a055;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -16,10 +16,11 @@ public class A055977 extends Sequence0 {
   @Override
   public Z next() {
     while (true) {
-      final Z pn = IntegerPartition.partitions(++mN);
+      final int index = ++mN;
+      final Z pn = Functions.PARTITIONS.z(index);
       Z prod = Z.ONE;
       for (final Z p : Jaguar.factor(mN).toZArray()) {
-        prod = prod.multiply(IntegerPartition.partitions(p.intValue()));
+        prod = prod.multiply(Functions.PARTITIONS.z(p));
       }
       if (pn.mod(prod).isZero()) {
         return Z.valueOf(mN);

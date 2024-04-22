@@ -1,7 +1,6 @@
 package irvine.oeis.a037;
 
 import irvine.math.function.Functions;
-import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,7 +17,7 @@ public class A037032 extends Sequence1 {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 1; k <= mN; ++k) {
-      sum = sum.add(IntegerPartition.partitions(mN - k).multiply(Functions.OMEGA.i(k)));
+      sum = sum.add(Functions.PARTITIONS.z(mN - k).multiply(Functions.OMEGA.i(k)));
     }
     return sum;
   }

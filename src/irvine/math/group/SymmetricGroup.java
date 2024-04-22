@@ -300,7 +300,7 @@ public class SymmetricGroup<T> extends AbstractGroup<Permutation<T>> {
    * @return character table
    */
   public Z[][] characterTable() {
-    final int t = IntegerPartition.partitions(mSet.size().intValueExact()).intValueExact();
+    final int t = Functions.PARTITIONS.i(mSet.size());
     final Z[][] res = new Z[t][t];
     int[] lambda;
     int[] mu;

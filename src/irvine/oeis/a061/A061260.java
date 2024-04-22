@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
 import irvine.math.MemoryFunctionInt3;
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
@@ -31,7 +31,7 @@ public class A061260 extends Sequence1 {
         return Z.ZERO;
       }
       return Integers.SINGLETON.sum(0, Math.min(n / i, p),
-        j -> mB.get(n - i * j, i - 1, p - j).multiply(Binomial.binomial(IntegerPartition.partitions(i).add(j - 1), Z.valueOf(j)))
+        j -> mB.get(n - i * j, i - 1, p - j).multiply(Binomial.binomial(Functions.PARTITIONS.z(i).add(j - 1), Z.valueOf(j)))
       );
     }
   };

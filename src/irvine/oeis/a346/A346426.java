@@ -1,7 +1,7 @@
 package irvine.oeis.a346;
 
 import irvine.math.MemoryFunction2;
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
@@ -36,7 +36,7 @@ public class A346426 extends UpperLeftTriangle {
         return Z.ONE;
       }
       if (i == 0) {
-        return IntegerPartition.partitions(n);
+        return Functions.PARTITIONS.z(n);
       }
       Z sum = Z.ZERO;
       for (int j = 0; j <= n; ++j) {

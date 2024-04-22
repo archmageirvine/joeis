@@ -1,7 +1,7 @@
 package irvine.oeis.a059;
 
 import irvine.math.IntegerUtils;
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicIntArray;
@@ -25,6 +25,6 @@ public class A059982 extends Sequence0 {
     if (mM <= 0) {
       mColIndex.set(-mM, mColIndex.get(-mM) + 1);
     }
-    return IntegerPartition.partitions(mColIndex.get(Math.abs(mM)) - 1);
+    return Functions.PARTITIONS.z(mColIndex.get(Math.abs(mM)) - 1);
   }
 }

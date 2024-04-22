@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
@@ -16,7 +16,7 @@ public class A008951 extends MemoryFunction2Sequence<Integer, Z> {
   @Override
   protected Z compute(final Integer n, final Integer m) {
     if (m == 0) {
-      return IntegerPartition.partitions(n);
+      return Functions.PARTITIONS.z(n);
     }
     if (n >= m * (m + 1) / 2) {
       return get(n - m, m - 1).add(get(n - m, m));

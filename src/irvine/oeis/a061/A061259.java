@@ -1,6 +1,6 @@
 package irvine.oeis.a061;
 
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,7 +18,7 @@ public class A061259 extends Sequence1 {
     Z s = Z.ZERO;
     for (int d = 1; d <= mN; ++d) {
       if (mN % d == 0) {
-        s = s.add(IntegerPartition.partitions(d).multiply(d));
+        s = s.add(Functions.PARTITIONS.z(d).multiply(d));
       }
     }
     return s;

@@ -1,7 +1,7 @@
 package irvine.oeis.a063;
 
 import irvine.math.MemoryFunctionInt2;
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -21,7 +21,7 @@ public class A063834 extends Sequence0 {
       if (n == 0 || i == 1) {
         return Z.ONE;
       }
-      return get(n, i - 1).add(i > n ? Z.ZERO : get(n - i, i).multiply(IntegerPartition.partitions(i)));
+      return get(n, i - 1).add(i > n ? Z.ZERO : get(n - i, i).multiply(Functions.PARTITIONS.z(i)));
     }
   };
 

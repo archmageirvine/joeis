@@ -1,6 +1,6 @@
 package irvine.oeis.a038;
 
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -18,7 +18,7 @@ public class A038601 extends A000040 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (IntegerPartition.partitions(p.intValue()).isProbablePrime()) {
+      if (Functions.PARTITIONS.z(p).isProbablePrime()) {
         return p;
       }
     }

@@ -1,9 +1,9 @@
 package irvine.oeis.a027;
 
 import irvine.math.api.Matrix;
+import irvine.math.function.Functions;
 import irvine.math.group.MatrixField;
 import irvine.math.matrix.DefaultMatrix;
-import irvine.math.partition.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
@@ -29,7 +29,7 @@ public class A027516 extends A008284 {
     final Matrix<Q> m = new DefaultMatrix<>(mN, mN, Q.ZERO);
     for (int k = 0; k < mN; ++k) {
       for (int j = 0; j <= k; ++j) {
-        m.set(k, j, new Q(get((long) k + 1, (long) j + 1), IntegerPartition.partitions(k + 1)));
+        m.set(k, j, new Q(get((long) k + 1, (long) j + 1), Functions.PARTITIONS.z(k + 1)));
       }
     }
     mMatrix = field.pow(m, power());

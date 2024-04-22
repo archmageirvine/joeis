@@ -62,6 +62,8 @@ public final class Functions {
   public static final Function1 LOOK_AND_SAY = new LookAndSay();
   /** Catalan function. */
   public static final Function1 CATALAN = new Catalan();
+  /** Number of partitions. */
+  public static final Function1 PARTITIONS = new Partitions();
 
   /** Reverse the digits of a number. */
   public static final Function2 REVERSE = new Reverse();

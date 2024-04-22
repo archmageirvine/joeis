@@ -1,8 +1,8 @@
 package irvine.oeis.a060;
 
 import irvine.math.MemoryFunction1;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
-import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
@@ -24,7 +24,7 @@ public class A060850 extends Sequence1 {
       if (n == 0) {
         return RING.one();
       }
-      return RING.sum(1, n, k -> RING.multiply(get(n - k), IntegerPartition.partitions(k - 1)).shift(k - 1));
+      return RING.sum(1, n, k -> RING.multiply(get(n - k), Functions.PARTITIONS.z(k - 1)).shift(k - 1));
     }
   };
 

@@ -2,7 +2,7 @@ package irvine.oeis.a008;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A008481 extends Sequence1 {
     Z sum = Z.ZERO;
     final FactorSequence fs = Jaguar.factor(++mN);
     for (final Z p : fs.toZArray()) {
-      sum = sum.add(IntegerPartition.partitions(fs.getExponent(p)));
+      sum = sum.add(Functions.PARTITIONS.z(fs.getExponent(p)));
     }
     return sum;
   }

@@ -1,6 +1,6 @@
 package irvine.oeis.a026;
 
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -15,24 +15,24 @@ public class A026801 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return IntegerPartition.partitions(mN)
-      .subtract(IntegerPartition.partitions(mN - 1))
-      .subtract(IntegerPartition.partitions(mN - 2))
-      .add(IntegerPartition.partitions(mN - 5))
-      .add(IntegerPartition.partitions(mN - 7))
-      .add(IntegerPartition.partitions(mN - 8))
-      .subtract(IntegerPartition.partitions(mN - 10))
-      .subtract(IntegerPartition.partitions(mN - 11))
-      .subtract(IntegerPartition.partitions(mN - 12).multiply2())
-      .add(IntegerPartition.partitions(mN - 16).multiply2())
-      .add(IntegerPartition.partitions(mN - 17))
-      .add(IntegerPartition.partitions(mN - 18))
-      .subtract(IntegerPartition.partitions(mN - 20))
-      .subtract(IntegerPartition.partitions(mN - 21))
-      .subtract(IntegerPartition.partitions(mN - 23))
-      .add(IntegerPartition.partitions(mN - 26))
-      .add(IntegerPartition.partitions(mN - 27))
-      .subtract(IntegerPartition.partitions(mN - 28));
+    return Functions.PARTITIONS.z(mN)
+      .subtract(Functions.PARTITIONS.z(mN - 1))
+      .subtract(Functions.PARTITIONS.z(mN - 2))
+      .add(Functions.PARTITIONS.z(mN - 5))
+      .add(Functions.PARTITIONS.z(mN - 7))
+      .add(Functions.PARTITIONS.z(mN - 8))
+      .subtract(Functions.PARTITIONS.z(mN - 10))
+      .subtract(Functions.PARTITIONS.z(mN - 11))
+      .subtract(Functions.PARTITIONS.z(mN - 12).multiply2())
+      .add(Functions.PARTITIONS.z(mN - 16).multiply2())
+      .add(Functions.PARTITIONS.z(mN - 17))
+      .add(Functions.PARTITIONS.z(mN - 18))
+      .subtract(Functions.PARTITIONS.z(mN - 20))
+      .subtract(Functions.PARTITIONS.z(mN - 21))
+      .subtract(Functions.PARTITIONS.z(mN - 23))
+      .add(Functions.PARTITIONS.z(mN - 26))
+      .add(Functions.PARTITIONS.z(mN - 27))
+      .subtract(Functions.PARTITIONS.z(mN - 28));
   }
 }
 

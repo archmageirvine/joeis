@@ -1,6 +1,6 @@
 package irvine.oeis.a027;
 
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -14,6 +14,7 @@ public class A027339 extends Sequence0 {
 
   @Override
   public Z next() {
-    return IntegerPartition.partitions(++mN).subtract(IntegerPartition.partitions(mN - 5));
+    final int index = ++mN;
+    return Functions.PARTITIONS.z(index).subtract(Functions.PARTITIONS.z(mN - 5));
   }
 }

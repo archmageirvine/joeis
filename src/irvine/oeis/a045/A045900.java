@@ -1,6 +1,6 @@
 package irvine.oeis.a045;
 
-import irvine.math.partition.IntegerPartition;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -24,10 +24,10 @@ public class A045900 extends Sequence0 {
     final Z t = mA
       .subtract(mB.multiply(3))
       .add(mC.multiply(3))
-      .subtract(IntegerPartition.partitions(mN - 3))
-      .add(IntegerPartition.partitions(mN - 2).multiply(3))
-      .subtract(IntegerPartition.partitions(mN - 1).multiply(3))
-      .add(IntegerPartition.partitions(mN))
+      .subtract(Functions.PARTITIONS.z(mN - 3))
+      .add(Functions.PARTITIONS.z(mN - 2).multiply(3))
+      .subtract(Functions.PARTITIONS.z(mN - 1).multiply(3))
+      .add(Functions.PARTITIONS.z(mN))
       .add(Z.ONE.shiftLeft(2L * (mN - 3) + 1));
     mA = mB;
     mB = mC;

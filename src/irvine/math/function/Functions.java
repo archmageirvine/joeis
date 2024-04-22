@@ -56,6 +56,8 @@ public final class Functions {
   public static final Function1 SWIZZLE = new Swizzle();
   /** Least primitive root of a modulus. */
   public static final Function1 LEAST_PRIMITIVE_ROOT = new LeastPrimitiveRoot();
+  /** Triangular function. */
+  public static final Function1 TRIANGULAR = new Triangular();
   /** Index of the smallest triangular number greater than or equal to the given number. */
   public static final Function1 TRINV = new TriangularInverse();
   /** Describe the number. For example, 3445, is one 3, two 4s, one 5 to give 132415. */

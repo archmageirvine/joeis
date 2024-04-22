@@ -1,5 +1,6 @@
 package irvine.oeis.a000;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
@@ -25,28 +26,20 @@ public class A000217 extends AbstractSequence implements DirectSequence {
 
   protected long mN = -1;
 
-  /**
-   * Return the nth triangular number.
-   * @param n index
-   * @return triangular number
-   */
-  public static Z triangular(final long n) {
-    return Z.valueOf(n).multiply(n + 1).divide2();
-  }
-
   @Override
   public Z a(final Z n) {
-    return n.multiply(n.add(1)).divide2();
+    return Functions.TRIANGULAR.z(n);
   }
 
   @Override
   public Z a(final int n) {
-    return triangular(n);
+    return Functions.TRIANGULAR.z(n);
   }
 
   @Override
   public Z next() {
-    return triangular(++mN);
+    final long n = ++mN;
+    return Functions.TRIANGULAR.z(n);
   }
 }
 

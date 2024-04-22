@@ -1,8 +1,8 @@
 package irvine.oeis.a049;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.oeis.a000.A000217;
 
 /**
  * A049777 Triangular array read by rows: T(m,n) = n + n+1 + ... + m = (m+n)(m-n+1)/2.
@@ -19,6 +19,6 @@ public class A049777 extends Sequence1 {
       ++mN;
       mM = 0;
     }
-    return A000217.triangular(mN).subtract(A000217.triangular(mM));
+    return Functions.TRIANGULAR.z(mN).subtract(Functions.TRIANGULAR.z(mM));
   }
 }

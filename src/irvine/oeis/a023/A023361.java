@@ -1,7 +1,7 @@
 package irvine.oeis.a023;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000217;
 import irvine.oeis.memory.MemorySequence;
 
 /**
@@ -17,7 +17,7 @@ public class A023361 extends MemorySequence {
       return Z.ONE;
     }
     Z sum = Z.ZERO;
-    for (int t, k = 1; (t = A000217.triangular(k).intValueExact()) <= n; ++k) {
+    for (int t, k = 1; (t = Functions.TRIANGULAR.i(k)) <= n; ++k) {
       sum = sum.add(a(n - t));
     }
     return sum;

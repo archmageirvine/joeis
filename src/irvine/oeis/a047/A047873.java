@@ -1,8 +1,8 @@
 package irvine.oeis.a047;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.oeis.a000.A000217;
 
 /**
  * A047873 a(n) = max_{r=1..n-1} ceiling(t(t(n)-t(r-1))/(n-r+1)), where t() = triangular numbers A000217.
@@ -15,9 +15,10 @@ public class A047873 extends Sequence1 {
   @Override
   public Z next() {
     Z max = Z.ONE;
-    final long tn = A000217.triangular(++mN).longValueExact();
+    final long n = ++mN;
+    final long tn = Functions.TRIANGULAR.l(n);
     for (long r = 1; r < mN; ++r) {
-      max = max.max(A000217.triangular(tn - A000217.triangular(r - 1).longValue()).add(mN - r).divide(mN - r + 1));
+      max = max.max(Functions.TRIANGULAR.z(tn - Functions.TRIANGULAR.l(r - 1)).add(mN - r).divide(mN - r + 1));
     }
     return max;
   }

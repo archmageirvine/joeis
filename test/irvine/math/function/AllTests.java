@@ -31,6 +31,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(LeastPrimeFactorTest.class);
     suite.addTestSuite(LeastPrimitiveRootTest.class);
     suite.addTestSuite(LookAndSayTest.class);
+    suite.addTestSuite(LucasTest.class);
     suite.addTestSuite(MertensTest.class);
     suite.addTestSuite(MobiusTest.class);
     suite.addTestSuite(OmegaTest.class);

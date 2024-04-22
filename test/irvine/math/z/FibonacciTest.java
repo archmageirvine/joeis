@@ -1,5 +1,6 @@
 package irvine.math.z;
 
+import irvine.math.function.Functions;
 import junit.framework.TestCase;
 
 /**
@@ -21,21 +22,6 @@ public class FibonacciTest extends TestCase {
     assertEquals(new Z("22334640661774067356412331900038009953045351020683823507202893507476314037053"), Fibonacci.fibonacci(-367));
     for (int i = 2; i < 1000; ++i) {
       assertEquals(b, Fibonacci.fibonacci(i));
-      final Z c = b.add(a);
-      a = b;
-      b = c;
-    }
-  }
-
-  public void testLucas() {
-    Z a = Z.ONE;
-    Z b = Z.THREE;
-    assertEquals(Z.TWO, Fibonacci.lucas(0));
-    assertEquals(Z.ONE, Fibonacci.lucas(1));
-    assertEquals(new Z("-49941774772757703300470707773688236620346480720862218592914831305649185180429"), Fibonacci.lucas(-367));
-    assertEquals(new Z("80807489040814020041266183636939143192786617912140668064464649421515377682847"), Fibonacci.lucas(-368));
-    for (int i = 2; i < 1000; ++i) {
-      assertEquals(b, Fibonacci.lucas(i));
       final Z c = b.add(a);
       a = b;
       b = c;
@@ -87,11 +73,11 @@ public class FibonacciTest extends TestCase {
 
     for (int i = 0; i < 1000; ++i) {
       if (i != 2) {
-        assertEquals(i, Fibonacci.inverseLucas(Fibonacci.lucas(i)));
+        assertEquals(i, Fibonacci.inverseLucas(Functions.LUCAS.z((long) i)));
       }
     }
     for (int i = 5; i < 1000; ++i) {
-      final int j = -Fibonacci.inverseLucas(Fibonacci.lucas(i).subtract(Z.ONE));
+      final int j = -Fibonacci.inverseLucas(Functions.LUCAS.z((long) i).subtract(Z.ONE));
       if (i != j && i - 1 != j && i != j - 1) {
         fail("Estimate is off the mark by more than 1: " + i + " " + j);
       }
@@ -101,8 +87,8 @@ public class FibonacciTest extends TestCase {
     assertEquals(-3, Fibonacci.inverseLucas(Z.SIX));
     assertEquals(-367, Fibonacci.inverseLucas(new Z("49941774772757703300470707773688236620346480720862218592914831305649185180430")));
     assertEquals(-366, Fibonacci.inverseLucas(new Z("49941774772757703300470707773688236620346480720862218592914831305649185180428")));
-    assertEquals(5000, Fibonacci.inverseLucas(Fibonacci.lucas(5000)));
-    assertEquals(10000, Fibonacci.inverseLucas(Fibonacci.lucas(10000)));
-    assertEquals(50000, Fibonacci.inverseLucas(Fibonacci.lucas(50000)));
+    assertEquals(5000, Fibonacci.inverseLucas(Functions.LUCAS.z((long) 5000)));
+    assertEquals(10000, Fibonacci.inverseLucas(Functions.LUCAS.z((long) 10000)));
+    assertEquals(50000, Fibonacci.inverseLucas(Functions.LUCAS.z((long) 50000)));
   }
 }

@@ -9,9 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 import irvine.math.api.Matrix;
-import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
-import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
@@ -132,7 +130,7 @@ public class A069295 extends Sequence2 {
                   remap[u] = p;
                   // Now associating u with p, replace all earlier settings
                   // todo this is possibly unnecessary but leaving until more cases are getting the right answer
-                  for (int j = r - 1; j >= 0; --j) {
+                  for (int j = lst.size() - 1; j >= 0; --j) {
                     if (lst.get(j) == l) {
                       lst.set(j, p);
                     }
@@ -192,13 +190,29 @@ public class A069295 extends Sequence2 {
   
   @Override
   public Z next() {
-    final Collection<List<Byte>> states = buildStates(mN);
+    if (mN == 1) {
+      System.out.println("5-by-5 : " + count5By5());
+      System.out.println("Code:    " + count(5, 5));
+    }
+    ++mN;
+    final Collection<List<Byte>> states = buildStates(4);
     final Matrix<Z> transitions = buildTransitionMatrix(states);
     writeMatrix(states, transitions);
-    final MatrixRing<Z> ring = new MatrixRing<>(states.size(), Integers.SINGLETON);
-    final Matrix<Z> t = ring.multiply(vector(states), ring.pow(transitions, 4));
-    System.out.println(t);
-    return count(++mN, 4);
+    writeGraph(states, transitions);
+//    final MatrixRing<Z> ring = new MatrixRing<>(states.size(), Integers.SINGLETON);
+//    final Matrix<Z> pow = ring.pow(transitions, mN);
+//    System.out.println("Powered matrix");
+//    writeMatrix(states, pow);
+//    //final Matrix<Z> t = ring.multiply(vector(states), pow);
+//    final Matrix<Z> t = ring.multiply(vector(states), ring.transpose(pow));
+//    //final Matrix<Z> t = ring.multiply(pow, ring.transpose(vector(states)));
+//    System.out.println(t);
+//    Z sum = Z.ZERO;
+//    for (int k = 0; k < t.cols(); ++k) {
+//      sum = sum.add(t.get(0, k));
+//    }
+//    System.out.println("Tsum: " + sum);
+    return count(mN, 4);
   }
 
   private int countBlocks(final long n) {
@@ -291,6 +305,7 @@ public class A069295 extends Sequence2 {
     if (!saw11) {
       return false;
     }
+
     // todo the following is not right it mistakenly says 2,0,1 -> 1,0,1 is allowed
     // Deeper consistency checking
     final byte[] remap = new byte[a.size()]; // more than enough space
@@ -328,20 +343,91 @@ public class A069295 extends Sequence2 {
     return true;
   }
 
+  private void buildTransitionMatrix(final Map<List<Byte>, Integer> stateMap, final Matrix<Z> m, final List<Byte> state, final int stateNumber) {
+    final int rows = state.size();
+    final byte max = max(state); // maximum clump used so far
+    for (long s = 1; s < 1L << rows; ++s) {
+      final byte[] remap = new byte[max + 1];
+      remap[1] = 1;
+      final List<Byte> lst = new ArrayList<>(rows);
+      byte adj = 1;
+      long t = s;
+      byte p = 0;
+      for (int r = 0; r < rows; ++r, t >>>= 1) {
+        final byte u = state.get(r);
+        byte l = remap[u];
+        if ((t & 1) == 1) {
+          if (u == 0) {
+            if (p == 0) {
+              p = ++adj;
+            }
+          } else {
+            // assert u != 0;
+            if (p == 0) {
+              if (l != 0) {
+                p = l;
+              } else {
+                // allocate next available clump code
+                p = ++adj;
+                remap[u] = p;
+              }
+            } else {
+              // assert p != 0 && u != 0;
+              if (l == 0) {
+                // allocate next available clump code
+                l = ++adj;
+                remap[u] = l;
+              }
+              if (l < p) {
+                p = l;
+              } else {
+                remap[u] = p;
+                // Now associating u with p, replace all earlier settings
+                // todo this is possibly unnecessary but leaving until more cases are getting the right answer
+                for (int j = r - 1; j >= 0; --j) {
+                  if (lst.get(j) == l) {
+                    lst.set(j, p);
+                  }
+                }
+              }
+            }
+          }
+        } else {
+          p = 0;
+        }
+        lst.add(p);
+      }
+      adjust(lst);
+      if (hasOne(lst)) {
+        m.set(stateNumber, stateMap.get(lst), Z.ONE);
+      }
+    }
+  }
+
+
   private Matrix<Z> buildTransitionMatrix(final Collection<List<Byte>> states) {
     final int len = states.size();
     final Matrix<Z> m = new DefaultMatrix<>(len, len, Z.ZERO);
-    int r = 0;
-    for (final List<Byte> a : states) {
-      int c = 0;
-      for (final List<Byte> b : states) {
-        if (isTransition(a, b)) {
-          m.set(r, c, Z.ONE);
-        }
-        ++c;
-      }
-      ++r;
+    final HashMap<List<Byte>, Integer> stateMap = new HashMap<>();
+    int k = 0;
+    for (final List<Byte> s : states) {
+      stateMap.put(s, k++);
     }
+    k = 0;
+    for (final List<Byte> s : states) {
+      buildTransitionMatrix(stateMap, m, s, k++);
+    }
+//    int r = 0;
+//    for (final List<Byte> a : states) {
+//      int c = 0;
+//      for (final List<Byte> b : states) {
+//        if (isTransition(a, b)) {
+//          m.set(r, c, Z.ONE);
+//        }
+//        ++c;
+//      }
+//      ++r;
+//    }
     return m;
   }
 
@@ -350,7 +436,7 @@ public class A069295 extends Sequence2 {
     final Matrix<Z> vec = new DefaultMatrix<>(1, len, Z.ZERO);
     int r = 0;
     for (final List<Byte> a : states) {
-      if (a.get(0) == 1) {
+      if (a.get(a.size() - 1) == 1) {
         vec.set(0, r, Z.ONE);
       }
       ++r;
@@ -369,5 +455,82 @@ public class A069295 extends Sequence2 {
       System.out.println(sb);
       ++k;
     }
+  }
+
+  private String pack(final List<Byte> lst) {
+    final StringBuilder sb = new StringBuilder();
+    for (final Byte b : lst) {
+      sb.append(b);
+    }
+    return sb.toString();
+  }
+
+  private void writeGraph(final Collection<List<Byte>> states, final Matrix<Z> m) {
+    System.out.println("digraph G {");
+    System.out.println("node [shape=none];");
+    int k = 0;
+    for (final List<Byte> a : states) {
+      int j = 0;
+      for (final List<Byte> b : states) {
+        if (k == j) {
+          continue; // don't bother with the loops
+        }
+        if (m.get(k, j).equals(Z.ONE)) {
+          if (m.get(j, k).equals(Z.ONE)) {
+            if (j < k) {
+              System.out.println(pack(a) + " -> " + pack(b) + " [dir=both];");
+            }
+          } else {
+            System.out.println(pack(a) + " -> " + pack(b) + " [color=blue];");
+          }
+        }
+        ++j;
+      }
+      ++k;
+    }
+    System.out.println("}");
+  }
+
+  private boolean is5By5(final boolean[][] mat, final boolean[][] searched, final int r, final int c) {
+    if (!mat[r][c]) {
+      return false;
+    }
+    if (c == 4) {
+      return true;
+    }
+    searched[r][c] = true;
+    if (!searched[r][c + 1] && is5By5(mat, searched, r, c + 1)) {
+      return true;
+    }
+    if (r < 4 && !searched[r + 1][c] && is5By5(mat, searched, r + 1, c)) {
+      return true;
+    }
+    if (r > 0 && !searched[r - 1][c] && is5By5(mat, searched, r - 1, c)) {
+      return true;
+    }
+    if (c > 0 && !searched[r][c - 1] && is5By5(mat, searched, r, c - 1)) {
+      return true;
+    }
+    searched[r][c] = false;
+    return false;
+  }
+
+  private long count5By5() {
+    long cnt = 0;
+    final boolean[][] mat = new boolean[5][5];
+    for (long m = 1;  m < 1L << 25; m += 2) {
+      long k = m;
+      for (int r = 0; r < mat.length; ++r) {
+        for (int c = 0; c < mat[0].length; ++c) {
+          mat[r][c] = (k & 1) == 1;
+          k >>>= 1;
+        }
+      }
+      if (is5By5(mat, new boolean[5][5], 0, 0)) {
+        //System.out.println("Yes: " + Arrays.deepToString(mat).replace("true", "1").replace("false", "0"));
+        ++cnt;
+      }
+    }
+    return cnt;
   }
 }

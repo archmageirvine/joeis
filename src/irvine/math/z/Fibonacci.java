@@ -6,6 +6,7 @@ import java.util.Map;
 
 import irvine.math.LongUtils;
 import irvine.math.api.Matrix;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegersMod;
 import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
@@ -87,15 +88,6 @@ public final class Fibonacci  {
     final Z ro = fnpo.multiply(fnpo).add(fno.multiply(fno));
     FIBO_MAP.put(nn, ro);
     return ro;
-  }
-
-  /**
-   * Return the nth Lucas number.
-   * @param n index
-   * @return L(n)
-   */
-  public static Z lucas(final long n) {
-    return fibonacci(n - 1).add(fibonacci(n + 1));
   }
 
   /**
@@ -199,7 +191,7 @@ public final class Fibonacci  {
 
     // handle general case
     int estimatedIndex = (int) (1.440420090412556479017551499657 * (double) n.bitLength());
-    final Z l = lucas(estimatedIndex);
+    final Z l = Functions.LUCAS.z((long) estimatedIndex);
     if (l.equals(n)) {
       return estimatedIndex;
     } else if (l.compareTo(n) < 0) {
@@ -207,7 +199,8 @@ public final class Fibonacci  {
     }
 
     // try reducing estimate by 1
-    return lucas(--estimatedIndex).equals(n) ? estimatedIndex : -estimatedIndex;
+    final long n1 = --estimatedIndex;
+    return Functions.LUCAS.z(n1).equals(n) ? estimatedIndex : -estimatedIndex;
   }
 
   /**
@@ -232,7 +225,7 @@ public final class Fibonacci  {
   public static void main(final String[] args) {
     if (args.length > 1 && "-l".equals(args[0])) {
       for (int k = 1; k < args.length; ++k) {
-        System.out.println(lucas(Integer.parseInt(args[k])));
+        System.out.println(Functions.LUCAS.z((long) Integer.parseInt(args[k])));
       }
     } else {
       for (final String s : args) {

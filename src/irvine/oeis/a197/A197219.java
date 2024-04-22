@@ -1,7 +1,6 @@
 package irvine.oeis.a197;
 
 import irvine.math.function.Functions;
-import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -19,6 +18,6 @@ public class A197219 extends Sequence0 {
     if (mN == 0) {
       return Z.TWO;
     }
-    return Fibonacci.lucas(Functions.PHI.i(mN));
+    return Functions.LUCAS.z((long) Functions.PHI.i(mN));
   }
 }

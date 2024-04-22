@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -16,7 +16,7 @@ public class A005845 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      final Z lucas = Fibonacci.lucas(mN.intValueExact());
+      final Z lucas = Functions.LUCAS.z(mN);
       if (!mN.isProbablePrime(30) && Z.ONE.equals(lucas.mod(mN))) {
         return mN;
       }

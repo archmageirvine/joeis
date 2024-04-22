@@ -1,6 +1,6 @@
 package irvine.oeis.a219;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -14,7 +14,7 @@ public class A219010 extends Sequence0 {
 
   @Override
   public Z next() {
-    final Z result = Fibonacci.lucas(mA5);
+    final Z result = Functions.LUCAS.z((long) mA5);
     mA5 *= 5;
     return result;
   }

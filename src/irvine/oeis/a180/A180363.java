@@ -1,6 +1,6 @@
 package irvine.oeis.a180;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -12,6 +12,6 @@ public class A180363 extends A000040 {
 
   @Override
   public Z next() {
-    return Fibonacci.lucas(super.next().intValue());
+    return Functions.LUCAS.z(super.next());
   }
 }

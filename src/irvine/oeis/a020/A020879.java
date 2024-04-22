@@ -1,5 +1,6 @@
 package irvine.oeis.a020;
 
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerComposition;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
@@ -70,7 +71,7 @@ public class A020879 extends Sequence2 {
   }
 
   protected Z zeroCase(final int n) {
-    return Fibonacci.lucas(2L * n).add(1);
+    return Functions.LUCAS.z(2L * n).add(1);
   }
 
   static boolean isNonConsecutiveCyclic(final int k, final long n) {

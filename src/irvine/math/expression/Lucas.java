@@ -1,6 +1,6 @@
 package irvine.math.expression;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -21,9 +21,9 @@ public class Lucas extends UnaryFunction {
   public Expression performEval() {
     final Expression expr = arg().eval();
     if (expr instanceof Literal<?, ?>) {
-      final Literal<?, ?> lit = (Literal) expr;
+      final Literal<?, ?> lit = (Literal<?, ?>) expr;
       if (lit.value() instanceof Z) {
-        return new LiteralZ(Fibonacci.lucas(((Z) lit.value()).intValueExact()));
+        return new LiteralZ(Functions.LUCAS.z((Z) lit.value()));
       }
       throw new UnsupportedOperationException("Lucas on " + lit.ring());
     }

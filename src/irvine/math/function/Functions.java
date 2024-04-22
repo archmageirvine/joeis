@@ -12,6 +12,8 @@ public final class Functions {
   public static final Function1 PRIME_PI = new PrimePi();
   /** Next prime function. */
   public static final Function1 NEXT_PRIME = new NextPrime();
+  /** Previous prime function. */
+  public static final Function1 PREV_PRIME = new PrevPrime();
   /** Factorial. */
   public static final Function1 FACTORIAL = new Factorial();
   /** Primorial, product of all primes up to and including the parameter. */

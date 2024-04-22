@@ -21,6 +21,6 @@ public class A168138 extends A000045 {
 
   @Override
   public Z next() {
-    return super.next().pow(mSeq.next().intValue());
+    return super.next().pow(mSeq.next());
   }
 }

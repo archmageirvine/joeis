@@ -24,6 +24,6 @@ public class A113905 extends AbstractSequence {
 
   @Override
   public Z next() {
-    return (++mN == 0) ? Z.ONE : mSeq1.next().pow(mSeq2.next().intValue());
+    return (++mN == 0) ? Z.ONE : mSeq1.next().pow(mSeq2.next());
   }
 }

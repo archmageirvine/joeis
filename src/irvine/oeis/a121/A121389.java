@@ -11,6 +11,6 @@ public class A121389 extends A000045 {
 
   @Override
   public Z next() {
-    return Z.TEN.pow(super.next().intValue()).subtract(1);
+    return Z.TEN.pow(super.next()).subtract(1);
   }
 }

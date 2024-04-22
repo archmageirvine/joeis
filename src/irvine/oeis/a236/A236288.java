@@ -22,6 +22,6 @@ public class A236288 extends AbstractSequence {
 
   @Override
   public Z next() {
-    return mSeq1.next().pow(mSeq2.next().intValue());
+    return mSeq1.next().pow(mSeq2.next());
   }
 }

@@ -1,7 +1,7 @@
 package irvine.oeis.a005;
 
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
-import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.a022.A022553;
 
@@ -22,9 +22,9 @@ public class A005354 extends A022553 {
     if (++mN <= 1) {
       return Z.ONE;
     }
-    Q a = new Q(super.next()).subtract(new Q(Binomial.catalan(mN - 1), Z.TWO));
+    Q a = new Q(super.next()).subtract(new Q(Functions.CATALAN.z(mN - 1), Z.TWO));
     if ((mN & 1) == 0) {
-      a = a.subtract(new Q(Binomial.catalan(mN / 2 - 1), Z.TWO));
+      a = a.subtract(new Q(Functions.CATALAN.z(mN / 2 - 1), Z.TWO));
     }
     return a.toZ();
   }

@@ -1,6 +1,6 @@
 package irvine.oeis.a038;
 
-import irvine.math.z.Binomial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -15,7 +15,8 @@ public class A038775 extends A038774 {
 
   @Override
   public Z next() {
-    final Z target = Binomial.catalan(++mN);
+    final long n = ++mN;
+    final Z target = Functions.CATALAN.z(n);
     do {
       mSum = mSum.add(super.next());
       ++mM;

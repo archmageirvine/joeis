@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.math.z.Binomial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
@@ -25,7 +25,7 @@ public class A055633 extends MemoryFunction2Sequence<Integer, Z> {
       if (m <= 1) {
         return Z.ONE;
       }
-      Z prod = Binomial.catalan(m);
+      Z prod = Functions.CATALAN.z((long) m);
       for (int k = 1; k < m; ++k) {
         prod = prod.multiply(get(0, k));
       }
@@ -34,7 +34,7 @@ public class A055633 extends MemoryFunction2Sequence<Integer, Z> {
     if (m < n) {
       return Z.ZERO;
     }
-    Z prod = Binomial.catalan(n - 1);
+    Z prod = Functions.CATALAN.z((long) (n - 1));
     for (int k = 1; k <= n; ++k) {
       prod = prod.multiply(get(0, m - k));
     }

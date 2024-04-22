@@ -24,9 +24,9 @@ public class A002995 extends Sequence0 {
       s = s.add(Binomial.binomial(d.multiply2(), d).multiply(Functions.PHI.l((mN - 1) / d.longValue())));
     }
     s = s.divide(2 * (mN - 1));
-    s = s.subtract(Binomial.catalan(mN - 1).divide2());
+    s = s.subtract(Functions.CATALAN.z(mN - 1).divide2());
     if ((mN & 1) == 0) {
-      s = s.add(Binomial.catalan(mN / 2 - 1).divide2());
+      s = s.add(Functions.CATALAN.z(mN / 2 - 1).divide2());
     }
     return s;
   }

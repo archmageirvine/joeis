@@ -126,16 +126,6 @@ public final class Binomial {
   }
 
   /**
-   * Catalan numbers.
-   * @param n index
-   * @return Catalan number
-   */
-  public static Z catalan(final long n) {
-    return binomial(2 * n, n).divide(n + 1);
-  }
-
-
-  /**
    * Compute a multinomial coefficient.
    * @param top top index
    * @param bottom bottom indices

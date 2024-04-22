@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
-import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -21,15 +21,15 @@ public class A003449 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    Q t1 = new Q(mN - 3, 4 * mN).multiply(Binomial.catalan(mN - 2));
+    Q t1 = new Q(mN - 3, 4 * mN).multiply(Functions.CATALAN.z(mN - 2));
     if ((mN & 1) == 0) {
-      t1 = t1.add(new Q(3, 8).multiply(Binomial.catalan(mN / 2 - 1)))
-        .add(new Q(mN - 3, mN).multiply(Binomial.catalan(mN / 2 - 2)));
+      t1 = t1.add(new Q(3, 8).multiply(Functions.CATALAN.z(mN / 2 - 1)))
+        .add(new Q(mN - 3, mN).multiply(Functions.CATALAN.z(mN / 2 - 2)));
       if ((mN & 3) == 0) {
-        t1 = t1.add(new Q(Binomial.catalan(mN / 4 - 1), Z.FOUR));
+        t1 = t1.add(new Q(Functions.CATALAN.z(mN / 4 - 1), Z.FOUR));
       }
     } else {
-      t1 = t1.add(new Q(Binomial.catalan((mN - 3) / 2), Z.TWO));
+      t1 = t1.add(new Q(Functions.CATALAN.z((mN - 3) / 2), Z.TWO));
     }
     return t1.toZ();
   }

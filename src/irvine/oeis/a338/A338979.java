@@ -1,6 +1,7 @@
 package irvine.oeis.a338;
 // manually simple/simbinom at 2023-03-20 17:26
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
@@ -22,6 +23,6 @@ public class A338979 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sum(0, mN, k -> Z.valueOf(mN).pow(k).multiply(Binomial.binomial(mN, k)).multiply(Binomial.catalan(k)));
+    return Integers.SINGLETON.sum(0, mN, k -> Z.valueOf(mN).pow(k).multiply(Binomial.binomial(mN, k)).multiply(Functions.CATALAN.z(k)));
   }
 }

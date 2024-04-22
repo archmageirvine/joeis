@@ -27,7 +27,7 @@ public class A057121 extends A057119 {
       y += a.isOdd() ? 1 : -1;
       a = a.divide2();
     }
-    return Binomial.catalan(n).subtract(lo.add(1));
+    return Functions.CATALAN.z(n).subtract(lo.add(1));
   }
 
   @Override

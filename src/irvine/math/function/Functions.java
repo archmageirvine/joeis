@@ -60,6 +60,8 @@ public final class Functions {
   public static final Function1 TRINV = new TriangularInverse();
   /** Describe the number. For example, 3445, is one 3, two 4s, one 5 to give 132415. */
   public static final Function1 LOOK_AND_SAY = new LookAndSay();
+  /** Catalan function. */
+  public static final Function1 CATALAN = new Catalan();
 
   /** Reverse the digits of a number. */
   public static final Function2 REVERSE = new Reverse();

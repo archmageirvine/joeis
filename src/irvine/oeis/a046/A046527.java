@@ -1,5 +1,6 @@
 package irvine.oeis.a046;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -15,7 +16,7 @@ public class A046527 extends Sequence0 {
 
   protected Z t(final int n, final int m) {
     if (m == 0) {
-      return Binomial.catalan(n);
+      return Functions.CATALAN.z((long) n);
     }
     final Z b = Binomial.binomial(n, m - 1);
     return b.shiftLeft(2L * (n - m + 1))

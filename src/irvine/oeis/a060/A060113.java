@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.math.z.Binomial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a038.A038776;
@@ -31,8 +31,9 @@ public class A060113 extends Sequence0 {
 
   @Override
   public Z next() {
-    final int start = mN == -1 ? 1 : Binomial.catalan(mN).intValueExact();
-    final int end = Binomial.catalan(++mN).intValueExact();
+    final int start = mN == -1 ? 1 : Functions.CATALAN.i(mN);
+    final long n = ++mN;
+    final int end = Functions.CATALAN.i(n);
     for (int k = start; k < end; ++k) {
       if (!mMarks.isSet(k)) {
         mLcm = mLcm.lcm(Z.valueOf(cycleLength(k)));

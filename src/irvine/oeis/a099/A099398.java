@@ -1,8 +1,8 @@
 package irvine.oeis.a099;
 // manually simple/simbinom at 2023-03-20 17:26
 
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
-import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -23,6 +23,6 @@ public class A099398 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return new Q(Binomial.catalan(mN), (mN == 0) ? Z.ONE : Z.ONE.shiftLeft(2L * mN - 1).multiply(mN + 2)).num();
+    return new Q(Functions.CATALAN.z((long) mN), (mN == 0) ? Z.ONE : Z.ONE.shiftLeft(2L * mN - 1).multiply(mN + 2)).num();
   }
 }

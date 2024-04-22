@@ -1,6 +1,6 @@
 package irvine.oeis.a046;
 
-import irvine.math.z.Binomial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.PrependSequence;
 
@@ -19,6 +19,7 @@ public class A046814 extends PrependSequence {
 
   @Override
   public Z next() {
-    return super.next().add(Binomial.catalan(++mN));
+    final long n = ++mN;
+    return super.next().add(Functions.CATALAN.z(n));
   }
 }

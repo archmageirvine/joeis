@@ -1,6 +1,6 @@
 package irvine.oeis.a024;
 
-import irvine.math.z.Binomial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -15,6 +15,6 @@ public class A024492 extends Sequence0 {
   @Override
   public Z next() {
     mN += 2;
-    return Binomial.catalan(mN);
+    return Functions.CATALAN.z((long) mN);
   }
 }

@@ -1,5 +1,6 @@
 package irvine.oeis.a025;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -17,7 +18,7 @@ public class A025227 extends Sequence0 {
     Z sum = Z.ZERO;
     if (++mN > 0) {
       for (long k = 0; k <= mN / 2; ++k) {
-        sum = sum.add(Binomial.catalan(mN - k - 1).multiply(Binomial.binomial(mN - k, k)));
+        sum = sum.add(Functions.CATALAN.z(mN - k - 1).multiply(Binomial.binomial(mN - k, k)));
       }
     }
     return sum;

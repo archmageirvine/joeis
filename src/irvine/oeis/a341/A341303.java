@@ -22,6 +22,6 @@ public class A341303 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Functions.FACTORIAL.z(mN).subtract(Binomial.catalan(mN).multiply(6)).add(Z.ONE.shiftLeft(mN).multiply(5)).add(Binomial.binomial(mN, 2).multiply(4)).subtract(Functions.FIBONACCI.z(mN).multiply2()).add(Z.valueOf(-14L * mN + 20));
+    return Functions.FACTORIAL.z(mN).subtract(Functions.CATALAN.z(mN).multiply(6)).add(Z.ONE.shiftLeft(mN).multiply(5)).add(Binomial.binomial(mN, 2).multiply(4)).subtract(Functions.FIBONACCI.z(mN).multiply2()).add(Z.valueOf(-14L * mN + 20));
   }
 }

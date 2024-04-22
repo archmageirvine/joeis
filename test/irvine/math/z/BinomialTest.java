@@ -1,5 +1,6 @@
 package irvine.math.z;
 
+import irvine.math.function.Functions;
 import junit.framework.TestCase;
 
 /**
@@ -27,6 +28,6 @@ public class BinomialTest extends TestCase {
   }
 
   public void testCatalan() {
-    assertEquals(Z.FIVE, Binomial.catalan(3));
+    assertEquals(Z.FIVE, Functions.CATALAN.z((long) 3));
   }
 }

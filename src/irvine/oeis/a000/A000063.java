@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.math.z.Binomial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -28,12 +28,12 @@ public class A000063 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    Z t = Binomial.catalan(mN / 2 - 1);
+    Z t = Functions.CATALAN.z(mN / 2 - 1);
     if ((mN & 3) == 0) {
-      t = t.subtract(Binomial.catalan(mN / 4 - 1));
+      t = t.subtract(Functions.CATALAN.z(mN / 4 - 1));
     }
     if (mN % 6 == 0) {
-      t = t.subtract(Binomial.catalan(mN / 6 - 1));
+      t = t.subtract(Functions.CATALAN.z(mN / 6 - 1));
     }
     return t;
   }

@@ -1,7 +1,7 @@
 package irvine.oeis.a035;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.z.Binomial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
@@ -20,11 +20,11 @@ public class A035010 extends MemorySequence {
   @Override
   protected Z computeNext() {
     final int n = size();
-    Z res = Binomial.catalan(n - 1);
+    Z res = Functions.CATALAN.z((long) (n - 1));
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
       if (d > 1 && d < n) {
-        res = res.subtract(a(d).multiply(Binomial.catalan(n / d - 1)));
+        res = res.subtract(a(d).multiply(Functions.CATALAN.z((long) (n / d - 1))));
       }
     }
     return res;

@@ -2,7 +2,6 @@ package irvine.oeis.a062;
 // manually simple/simbinom at 2023-03-20 17:26
 
 import irvine.math.function.Functions;
-import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -22,6 +21,6 @@ public class A062627 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return (mN == 0) ? Z.ONE : Binomial.catalan(mN).multiply(Functions.MOBIUS.i((long) mN));
+    return (mN == 0) ? Z.ONE : Functions.CATALAN.z((long) mN).multiply(Functions.MOBIUS.i((long) mN));
   }
 }

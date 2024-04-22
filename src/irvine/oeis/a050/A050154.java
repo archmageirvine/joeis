@@ -1,6 +1,6 @@
 package irvine.oeis.a050;
 
-import irvine.math.z.Binomial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002057;
 import irvine.oeis.memory.MemoryFunction2Sequence;
@@ -26,19 +26,19 @@ public class A050154 extends MemoryFunction2Sequence<Integer, Z> {
     } else if (m == 1) {
       Z sum = Z.ZERO;
       for (int j = 0; j < n; ++j) {
-        sum = sum.add(get(n - 1 - j, 0).multiply(Binomial.catalan(j + 1)));
+        sum = sum.add(get(n - 1 - j, 0).multiply(Functions.CATALAN.z((long) (j + 1))));
       }
       return sum;
     } else if (m == 2) {
       Z sum = Z.ZERO;
       for (int j = 0; j <= n; ++j) {
-        sum = sum.add(get(n - j, 1).multiply(Binomial.catalan(j)));
+        sum = sum.add(get(n - j, 1).multiply(Functions.CATALAN.z((long) j)));
       }
       return sum;
     } else {
       Z sum = Z.ZERO;
       for (int j = 0; j < n; ++j) {
-        sum = sum.add(get(n - 1 - j, m - 1).multiply(Binomial.catalan(j + 1)));
+        sum = sum.add(get(n - 1 - j, m - 1).multiply(Functions.CATALAN.z((long) (j + 1))));
       }
       return sum;
     }

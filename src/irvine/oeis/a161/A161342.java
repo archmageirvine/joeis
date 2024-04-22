@@ -18,7 +18,7 @@ public class A161342 extends A000120 {
     if (p.bitLength() > 30) {
       throw new UnsupportedOperationException();
     }
-    mPrev = mPrev.add(Z.SEVEN.pow(p.intValue()));
+    mPrev = mPrev.add(Z.SEVEN.pow(p));
     return r;
   }
 }

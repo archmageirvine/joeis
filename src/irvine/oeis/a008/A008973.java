@@ -12,7 +12,7 @@ public class A008973 extends A000045 {
   @Override
   public Z next() {
     final Z f = super.next();
-    return f.pow(f.intValueExact());
+    return f.pow(f);
   }
 }
 

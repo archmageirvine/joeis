@@ -13,6 +13,6 @@ public class A097059 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A097059() {
-    super(1, new A000040(), t -> Z.THREE.pow(t.intValue()).add(t.pow(3)));
+    super(1, new A000040(), t -> Z.THREE.pow(t).add(t.pow(3)));
   }
 }

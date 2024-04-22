@@ -27,6 +27,6 @@ public class A002488 extends AbstractSequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    return mN.pow(mN.pow(mN.intValueExact()).intValueExact());
+    return mN.pow(mN.pow(mN));
   }
 }

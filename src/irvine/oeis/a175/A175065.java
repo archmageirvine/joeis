@@ -13,6 +13,6 @@ public class A175065 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A175065() {
-    super(2, new A005179().skip(1), v -> Z.TWO.pow(v.longValueExact()));
+    super(2, new A005179().skip(1), v -> Z.TWO.pow(v));
   }
 }

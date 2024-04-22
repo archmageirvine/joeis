@@ -20,7 +20,7 @@ public class A259799 extends Sequence1 {
       if (n == 0 || i == 1) {
         return Z.ONE;
       }
-      final long ik = Z.valueOf(i).pow(k.intValue()).longValueExact();
+      final long ik = Z.valueOf(i).pow(k).longValueExact();
       if (i == 2) {
         return Z.ONE.add(n / ik);
       }

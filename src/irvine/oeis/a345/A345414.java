@@ -19,7 +19,7 @@ public class A345414 extends Sequence0 {
     if (mN == 0) {
       return mA;
     }
-    mA = Z.valueOf(mN).pow(mA.intValue()).mod(Z100);
+    mA = Z.valueOf(mN).pow(mA).mod(Z100);
     return mA;
   }
 }

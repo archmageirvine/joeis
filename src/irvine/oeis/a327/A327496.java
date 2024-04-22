@@ -12,6 +12,6 @@ public class A327496 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A327496() {
-    super(0, new A327492(), v -> Z.FOUR.pow(v.longValueExact()));
+    super(0, new A327492(), v -> Z.FOUR.pow(v));
   }
 }

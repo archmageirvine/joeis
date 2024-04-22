@@ -15,6 +15,6 @@ public class A004217 extends Sequence1 {
   public Z next() {
     ++mN;
     final Z n2 = Z.valueOf(mN).pow(mN);
-    return n2.pow(n2.intValueExact());
+    return n2.pow(n2);
   }
 }

@@ -35,6 +35,6 @@ public class A132638 extends AbstractSequence {
   @Override
   public Z next() {
     final Z t = mSeq.next();
-    return t.pow(t.intValue());
+    return t.pow(t);
   }
 }

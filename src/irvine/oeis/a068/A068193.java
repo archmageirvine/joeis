@@ -1,6 +1,6 @@
 package irvine.oeis.a068;
 
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -15,6 +15,6 @@ public class A068193 extends A068192 {
     if (!t.isProbablePrime()) {
       throw new UnsupportedOperationException("Found non-prime in A068192: " + t);
     }
-    return Puma.primePiZ(t);
+    return Functions.PRIME_PI.z(t);
   }
 }

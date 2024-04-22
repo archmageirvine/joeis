@@ -3,6 +3,7 @@ package irvine.oeis.a048;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Puma;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -21,7 +22,7 @@ public class A048768 extends Sequence1 {
       final FactorSequence fs = Jaguar.factor(mN);
       Z prod = Z.ONE;
       for (final Z p : fs.toZArray()) {
-        prod = prod.multiply(Puma.primeZ(fs.getExponent(p)).pow(Puma.primePi(p)));
+        prod = prod.multiply(Puma.primeZ(fs.getExponent(p)).pow(Functions.PRIME_PI.l(p)));
       }
       if (prod.equals(mN)) {
         return mN;

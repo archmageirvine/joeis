@@ -1,8 +1,8 @@
 package irvine.oeis.a048;
 
 import irvine.factor.factor.Jaguar;
-import irvine.factor.prime.Puma;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A048676 extends Sequence1 {
     Z sum = Z.ZERO;
     final FactorSequence fs = Jaguar.factor(++mN);
     for (final Z p : fs.toZArray()) {
-      sum = sum.add(Z.ONE.shiftLeft(fs.getExponent(p) + Puma.primePi(p)));
+      sum = sum.add(Z.ONE.shiftLeft(fs.getExponent(p) + Functions.PRIME_PI.l(p)));
     }
     return sum.divide(4);
   }

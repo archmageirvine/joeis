@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
@@ -29,7 +29,7 @@ public class A000720 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return Puma.primePiZ(n);
+    return Functions.PRIME_PI.z(n);
   }
 
   @Override

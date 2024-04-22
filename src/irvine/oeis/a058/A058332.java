@@ -1,6 +1,6 @@
 package irvine.oeis.a058;
 
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -18,7 +18,7 @@ public class A058332 extends A000040 {
       long p = pp.longValueExact();
       do {
         ++cnt;
-        p = Puma.primePi(p);
+        p = Functions.PRIME_PI.l(p);
       } while (mPrime.isPrime(p) && cnt < 11);
       if (cnt >= 11) {
         return pp;

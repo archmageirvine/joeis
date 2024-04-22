@@ -1,7 +1,7 @@
 package irvine.oeis.a067;
 
 import irvine.factor.factor.PrimeDivision;
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000142;
 
@@ -18,7 +18,7 @@ public class A067393 extends A000142 {
   public Z next() {
     final Z f = super.next();
     final Z phi = mFactor.factorize(f).phi();
-    return phi.subtract(Puma.primePiZ(f)).add(Puma.primePi(++mN));
+    return phi.subtract(Functions.PRIME_PI.z(f)).add(Functions.PRIME_PI.l(++mN));
   }
 }
 

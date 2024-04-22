@@ -1,8 +1,8 @@
 package irvine.oeis.a036;
 
 import irvine.factor.prime.Fast;
-import irvine.factor.prime.Puma;
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -22,8 +22,8 @@ public class A036352 extends Sequence1 {
     final long sqrt = LongUtils.sqrt(mLimit);
     long sum = 0;
     for (long p = 2; p <= sqrt; p = mPrime.nextPrime(p)) {
-      sum += Puma.primePi(mLimit / p);
+      sum += Functions.PRIME_PI.l(mLimit / p);
     }
-    return Z.valueOf(sum).subtract(Binomial.binomial(Puma.primePi(sqrt), 2));
+    return Z.valueOf(sum).subtract(Binomial.binomial(Functions.PRIME_PI.l(sqrt), 2));
   }
 }

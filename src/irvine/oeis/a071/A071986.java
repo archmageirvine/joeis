@@ -1,7 +1,7 @@
 package irvine.oeis.a071;
 // manually 2024-02-22
 
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.a000.A000720;
@@ -21,7 +21,7 @@ public class A071986 extends SimpleTransformSequence implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return Puma.primePiZ(n).and(Z.ONE);
+    return Functions.PRIME_PI.z(n).and(Z.ONE);
   }
 
   @Override

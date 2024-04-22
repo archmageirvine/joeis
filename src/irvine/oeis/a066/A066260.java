@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.oeis.MultiplicativeSequence;
 import irvine.oeis.a018.A018252;
 import irvine.oeis.memory.MemorySequence;
@@ -15,6 +15,6 @@ public class A066260 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A066260() {
-    super(1, (p, e) -> COMPOSITES.a((int) Puma.primePi(p)).pow(e));
+    super(1, (p, e) -> COMPOSITES.a((int) Functions.PRIME_PI.l(p)).pow(e));
   }
 }

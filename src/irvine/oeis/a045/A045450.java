@@ -1,6 +1,7 @@
 package irvine.oeis.a045;
 
 import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
@@ -41,7 +42,7 @@ public class A045450 extends MemoryFunction2Sequence<Integer, Polynomial<Z>> {
 
   @Override
   public Z next() {
-    final Polynomial<Z> p = get(++mN, (int) Puma.primePi(mN - 1));
+    final Polynomial<Z> p = get(++mN, (int) Functions.PRIME_PI.l(mN - 1));
     Z sum = Z.ZERO;
     int pr;
     for (int k = 1; (pr = (int) Puma.prime(k)) <= p.degree(); ++k) {

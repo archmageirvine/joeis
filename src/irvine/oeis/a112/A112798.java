@@ -1,8 +1,8 @@
 package irvine.oeis.a112;
 
 import irvine.factor.factor.Jaguar;
-import irvine.factor.prime.Puma;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -36,7 +36,7 @@ public class A112798 extends AbstractSequence {
     }
     if (mFi < mFz.length) {
       mP = mFz[mFi++];
-      mPi = Puma.primePiZ(mP);
+      mPi = Functions.PRIME_PI.z(mP);
       mK = mFs.getExponent(mP);
       return mPi;
     }
@@ -44,7 +44,7 @@ public class A112798 extends AbstractSequence {
     mFz = mFs.toZArray();
     mFi = 0;
     mP = mFz[mFi++];
-    mPi = Puma.primePiZ(mP);
+    mPi = Functions.PRIME_PI.z(mP);
     mK = mFs.getExponent(mP);
     return mPi;
   }

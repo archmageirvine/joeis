@@ -1,8 +1,8 @@
 package irvine.oeis.a087;
 
 import irvine.factor.factor.Jaguar;
-import irvine.factor.prime.Puma;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
@@ -34,12 +34,12 @@ public class A087712 extends AbstractSequence implements DirectSequence {
     }
     final FactorSequence fs = Jaguar.factor(n);
     if (fs.sigma0AsLong() == 2) {
-      return Puma.primePiZ(n);
+      return Functions.PRIME_PI.z(n);
     }
     // composite
     mSb.setLength(0);
     for (final Z p : fs.toZArray()) {
-      final String pis = String.valueOf(Puma.primePi(p));
+      final String pis = String.valueOf(Functions.PRIME_PI.l(p));
       for (int k = fs.getExponent(p) - 1; k >= 0; --k) {
         mSb.append(pis);
       }

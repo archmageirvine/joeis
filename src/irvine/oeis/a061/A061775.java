@@ -2,8 +2,8 @@ package irvine.oeis.a061;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
-import irvine.factor.prime.Puma;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
@@ -26,7 +26,7 @@ public class A061775 extends MemorySequence {
       return Z.ONE;
     }
     if (mPrime.isPrime(n)) {
-      return a((int) Puma.primePi(n)).add(1);
+      return a((int) Functions.PRIME_PI.l(n)).add(1);
     }
     final FactorSequence fs = Jaguar.factor(n);
     Z sum = Z.ONE;

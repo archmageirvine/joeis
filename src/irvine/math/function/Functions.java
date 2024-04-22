@@ -8,6 +8,8 @@ public final class Functions {
 
   private Functions() { }
 
+  /** Prime counting function. */
+  public static final Function1 PRIME_PI = new PrimePi();
   /** Factorial. */
   public static final Function1 FACTORIAL = new Factorial();
   /** Primorial, product of all primes up to and including the parameter. */

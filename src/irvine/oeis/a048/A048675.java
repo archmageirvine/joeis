@@ -1,8 +1,8 @@
 package irvine.oeis.a048;
 
 import irvine.factor.factor.Jaguar;
-import irvine.factor.prime.Puma;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
@@ -25,7 +25,7 @@ public class A048675 extends AbstractSequence implements DirectSequence {
     Z sum = Z.ZERO;
     final FactorSequence fs = Jaguar.factor(++mN);
     for (final Z p : fs.toZArray()) {
-      sum = sum.add(Z.valueOf(fs.getExponent(p)).shiftLeft(Puma.primePi(p)));
+      sum = sum.add(Z.valueOf(fs.getExponent(p)).shiftLeft(Functions.PRIME_PI.l(p)));
     }
     return sum.divide2();
   }
@@ -40,7 +40,7 @@ public class A048675 extends AbstractSequence implements DirectSequence {
     Z sum = Z.ZERO;
     final FactorSequence fs = Jaguar.factor(n);
     for (final Z p : fs.toZArray()) {
-      sum = sum.add(Z.valueOf(fs.getExponent(p)).shiftLeft(Puma.primePi(p)));
+      sum = sum.add(Z.valueOf(fs.getExponent(p)).shiftLeft(Functions.PRIME_PI.l(p)));
     }
     return sum.divide2();
   }

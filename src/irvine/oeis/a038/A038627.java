@@ -1,6 +1,6 @@
 package irvine.oeis.a038;
 
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -27,7 +27,7 @@ public class A038627 extends Sequence1 {
     mMin = Double.POSITIVE_INFINITY;
     mMax = 0;
     while (x <= x1) {
-      if (x == Puma.primePi((long) mN * x)) {
+      if (x == Functions.PRIME_PI.l((long) mN * x)) {
         ++cnt;
         if (x < mMin) {
           mMin = x;

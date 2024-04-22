@@ -1,8 +1,8 @@
 package irvine.oeis.a067;
 
 import irvine.factor.factor.Jaguar;
-import irvine.factor.prime.Puma;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
@@ -20,7 +20,7 @@ public class A067787 extends Sequence1 {
   public Z next() {
     while (true) {
       final FactorSequence fs = Jaguar.factor(++mN);
-      if (fs.phi().equals(Puma.primePiZ(fs.sigma()))) {
+      if (fs.phi().equals(Functions.PRIME_PI.z(fs.sigma()))) {
         return Z.valueOf(mN);
       }
       if (mVerbose && mN % 1000000 == 0) {

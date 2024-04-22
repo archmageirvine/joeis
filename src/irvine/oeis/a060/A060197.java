@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A060197 extends Sequence1 {
     long t = mN;
     while (t != 0) {
       ++cnt;
-      t = Puma.primePi(t);
+      t = Functions.PRIME_PI.l(t);
     }
     return Z.valueOf(cnt);
   }

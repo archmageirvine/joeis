@@ -2,8 +2,8 @@ package irvine.oeis.a061;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
-import irvine.factor.prime.Puma;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -22,7 +22,7 @@ public class A061898 extends Sequence1 {
     Z prod = Z.ONE;
     for (final Z p : fs.toZArray()) {
       final int e = fs.getExponent(p);
-      if ((Puma.primePi(p) & 1) == 1) {
+      if ((Functions.PRIME_PI.l(p) & 1) == 1) {
         prod = prod.multiply(mPrime.nextPrime(p).pow(e));
       } else {
         prod = prod.multiply(mPrime.prevPrime(p).pow(e));

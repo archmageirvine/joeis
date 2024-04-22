@@ -1,7 +1,7 @@
 package irvine.oeis.a048;
 
 import irvine.factor.factor.Jaguar;
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a005.A005117;
 
@@ -19,7 +19,7 @@ public class A048640 extends A005117 {
       return Z.ONE;
     }
     for (final Z p : Jaguar.factor(t).toZArray()) {
-      res = res.or(Z.ONE.shiftLeft(Puma.primePi(p)));
+      res = res.or(Z.ONE.shiftLeft(Functions.PRIME_PI.l(p)));
     }
     return res;
   }

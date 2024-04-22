@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000040;
@@ -26,7 +26,7 @@ public class A052229 extends A000040 {
     final Sequence seq = new A031924();
     while (true) {
       final Z p = seq.next();
-      final int pi = (int) Puma.primePi(p.intValueExact());
+      final int pi = (int) Functions.PRIME_PI.l(p.intValueExact());
       if (mA052180.a(pi - 2).equals(targetPrime)) {
         return p;
       }

@@ -16,7 +16,7 @@ public class A071309 extends LambdaSequence {
     super(1, n -> {
       final Z p = Z.valueOf(11);
       final int k = n / 2;
-      return p.pow(k).add((n & 1) == 1 ? Z.ZERO : Z.NEG_ONE.pow(k + 1)).multiply(Integers.SINGLETON.product(((n & 1) == 1 ? 0 : 1), k - 1, i -> p.pow(2 * k).subtract(p.pow(2 * i))));
+      return p.pow(k).add((n & 1) == 1 ? Z.ZERO : Z.NEG_ONE.pow(k + 1)).multiply(Integers.SINGLETON.product((n & 1) == 1 ? 0 : 1, k - 1, i -> p.pow(2 * k).subtract(p.pow(2L * i))));
     });
   }
 }

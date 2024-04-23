@@ -1,6 +1,6 @@
 package irvine.oeis.a030;
 
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
@@ -18,7 +18,7 @@ public class A030018 extends MemorySequence {
     }
     Z sum = Z.ZERO;
     for (int k = 0; k < n; ++k) {
-      sum = sum.subtract(Puma.primeZ(n - k).multiply(a(k)));
+      sum = sum.subtract(Functions.PRIME.z(n - k).multiply(a(k)));
     }
     return sum;
   }

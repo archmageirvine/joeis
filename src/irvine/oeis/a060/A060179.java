@@ -1,9 +1,9 @@
 package irvine.oeis.a060;
 
 import irvine.factor.prime.Fast;
-import irvine.factor.prime.Puma;
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.cr.CR;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -25,7 +25,7 @@ public class A060179 extends Sequence0 {
       if (i * n == 0) {
         return Z.ONE;
       }
-      final int p = i == 0 ? 0 : (int) Puma.prime(i);
+      final int p = i == 0 ? 0 : (int) Functions.PRIME.l(i);
       final int logp = CR.valueOf(n).log().divide(CR.valueOf(p).log()).floor().intValueExact();
       Z sum = get(n, i - 1);
       int pj = p;

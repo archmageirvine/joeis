@@ -1,7 +1,7 @@
 package irvine.oeis.a060;
 
-import irvine.factor.prime.Puma;
 import irvine.math.MemoryFunctionInt2;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.AntidiagonalSequence;
 
@@ -17,7 +17,7 @@ public class A060175 extends AntidiagonalSequence {
       @Override
       protected Z compute(int n, final int m) {
         int cnt = 0;
-        final int p = (int) Puma.prime(m);
+        final int p = (int) Functions.PRIME.l(m);
         while (n % p == 0) {
           n /= p;
           ++cnt;

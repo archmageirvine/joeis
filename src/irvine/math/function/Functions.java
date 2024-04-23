@@ -8,6 +8,8 @@ public final class Functions {
 
   private Functions() { }
 
+  /** Nth prime function. */
+  public static final Function1 PRIME = new Prime();
   /** Prime counting function. */
   public static final Function1 PRIME_PI = new PrimePi();
   /** Next prime function. */

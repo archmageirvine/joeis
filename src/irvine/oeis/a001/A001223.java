@@ -1,7 +1,7 @@
 package irvine.oeis.a001;
 
 import irvine.factor.prime.Fast;
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
@@ -37,12 +37,12 @@ public class A001223 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return Puma.primeZ(n.add(1)).subtract(Puma.primeZ(n));
+    return Functions.PRIME.z(n.add(1)).subtract(Functions.PRIME.z(n));
   }
 
   @Override
   public Z a(final int n) {
-    return Puma.primeZ(n + 1).subtract(Puma.primeZ(n));
+    return Functions.PRIME.z(n + 1).subtract(Functions.PRIME.z(n));
   }
 }
 

@@ -4,8 +4,8 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import irvine.factor.factor.Jaguar;
-import irvine.factor.prime.Puma;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -38,7 +38,7 @@ public class A045974 extends Sequence1 {
       final int e = fs.getExponent(p);
       final int i = inverseP(p);
       for (final Z q : fs.toZArray()) {
-        prod = prod.multiply(Puma.primeZ(i + inverseP(q)).pow((long) e * fs.getExponent(q)));
+        prod = prod.multiply(Functions.PRIME.z(i + inverseP(q)).pow((long) e * fs.getExponent(q)));
       }
     }
     return prod;

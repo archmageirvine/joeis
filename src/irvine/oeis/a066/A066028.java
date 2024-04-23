@@ -2,7 +2,7 @@ package irvine.oeis.a066;
 
 import java.util.TreeSet;
 
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -36,7 +36,7 @@ public class A066028 extends Sequence1 {
 
   @Override
   public Z next() {
-    mSum = mSum.add(Puma.prime(++mN));
+    mSum = mSum.add(Functions.PRIME.l(++mN));
     final TreeSet<State> states = new TreeSet<>();
     states.add(new State(mSum, Z.ONE.shiftLeft(mN).subtract(1)));
     while (true) {
@@ -46,7 +46,7 @@ public class A066028 extends Sequence1 {
       }
       for (int k = 0; k < mN; ++k) {
         if (s.mBitSet.testBit(k)) {
-          states.add(new State(s.mN.subtract(Puma.prime(k + 1)), s.mBitSet.clearBit(k)));
+          states.add(new State(s.mN.subtract(Functions.PRIME.l(k + 1)), s.mBitSet.clearBit(k)));
         }
       }
     }

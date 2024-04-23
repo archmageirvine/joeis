@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.InverseSequence;
 import irvine.oeis.a006.A006556;
@@ -18,7 +18,7 @@ public class A054471 extends InverseSequence {
 
   @Override
   public Z next() {
-    final Z res = Puma.primeZ(super.next());
+    final Z res = Functions.PRIME.z(super.next());
     return Z.FIVE.equals(res) ? Z.THREE : res;
   }
 }

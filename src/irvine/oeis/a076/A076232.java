@@ -16,7 +16,7 @@ public class A076232 extends LambdaSequence {
   /** Construct the sequence. */
   public A076232() {
     super(1, n -> {
-      return Puma.primeZ(Functions.FACTORIAL.z(n).add(Z.ONE)).subtract(Puma.primeZ(Functions.FACTORIAL.z(n)));
+      return Functions.PRIME.z(Functions.FACTORIAL.z(n).add(Z.ONE)).subtract(Puma.primeZ(Functions.FACTORIAL.z(n)));
     });
   }
 }

@@ -1,7 +1,7 @@
 package irvine.oeis.a066;
 
-import irvine.factor.prime.Puma;
 import irvine.math.MemoryFunctionInt2;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,7 @@ public class A066119 extends Sequence1 {
     @Override
     protected Z compute(final int n, final int m) {
       if (m == 1) {
-        return Puma.primeZ(n);
+        return Functions.PRIME.z(n);
       }
       if (m == n) {
         return Z.TWO;

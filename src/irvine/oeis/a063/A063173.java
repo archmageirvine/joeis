@@ -1,6 +1,6 @@
 package irvine.oeis.a063;
 
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -23,6 +23,6 @@ public class A063173 extends Sequence1 {
       ++mN;
       mM = 0;
     }
-    return Z.valueOf(ZUtils.valuation(mC.a(mN - mM), Puma.primeZ(mM + 1)));
+    return Z.valueOf(ZUtils.valuation(mC.a(mN - mM), Functions.PRIME.z(mM + 1)));
   }
 }

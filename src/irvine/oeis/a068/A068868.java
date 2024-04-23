@@ -1,6 +1,6 @@
 package irvine.oeis.a068;
 
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.oeis.FilterSequence;
 
 /**
@@ -11,6 +11,6 @@ public class A068868 extends FilterSequence {
 
   /** Construct the sequence. */
   public A068868() {
-    super(1, new A068863(), (k, v) -> v.equals(Puma.primeZ(k)));
+    super(1, new A068863(), (k, v) -> v.equals(Functions.PRIME.z(k)));
   }
 }

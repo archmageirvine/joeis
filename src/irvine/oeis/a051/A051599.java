@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
@@ -19,7 +19,7 @@ public class A051599 extends MemoryFunction2Sequence<Integer, Z> {
       return Z.ZERO;
     }
     if (m == 0 || m.equals(n)) {
-      return Puma.primeZ(mN + 1);
+      return Functions.PRIME.z(mN + 1);
     }
     return get(n - 1, m - 1).add(get(n - 1, m));
   }

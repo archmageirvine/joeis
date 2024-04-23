@@ -15,7 +15,7 @@ public class A093309 extends LambdaSequence {
   /** Construct the sequence. */
   public A093309() {
     super(1, n -> {
-      return Puma.primeZ(Puma.primeZ(Functions.FIBONACCI.z((long) n)));
+      return Functions.PRIME.z(Puma.primeZ(Functions.FIBONACCI.z((long) n)));
     });
   }
 }

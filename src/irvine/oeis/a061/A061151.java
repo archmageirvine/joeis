@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
-import irvine.factor.prime.Puma;
 import irvine.math.MemoryFunction1;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
@@ -15,7 +15,7 @@ public class A061151 extends MemorySequence {
   private final MemoryFunction1<Z> mB = new MemoryFunction1<>() {
     @Override
     protected Z compute(final int n) {
-      return Integers.SINGLETON.sumdiv(n, d -> Puma.primeZ(d).multiply(d).multiply(((n / d) & 1) == 0 ? 1 : -1));
+      return Integers.SINGLETON.sumdiv(n, d -> Functions.PRIME.z(d).multiply(d).multiply(((n / d) & 1) == 0 ? 1 : -1));
     }
   };
 

@@ -1,7 +1,7 @@
 package irvine.oeis.a080;
 // manually prodsi2 at 2021-11-25
 
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -19,7 +19,7 @@ public class A080358 extends Sequence0 {
     Z prod = Z.ONE;
     for (int k = 2; k <= mN; ++k) {
       for (int j = 1; j <= k - 1; ++j) {
-        prod = prod.multiply(Puma.prime(k) - Puma.prime(j));
+        prod = prod.multiply(Functions.PRIME.l(k) - Functions.PRIME.l(j));
       }
     }
     return prod;

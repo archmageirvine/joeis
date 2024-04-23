@@ -1,6 +1,5 @@
 package irvine.oeis.a048;
 
-import irvine.factor.prime.Puma;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -16,6 +15,6 @@ public class A048849 extends Sequence0 {
   @Override
   public Z next() {
     final Z n = Z.valueOf(++mN);
-    return Puma.primeZ(Functions.PHI.z(n).intValueExact()).add(Functions.PHI.z(Puma.prime(mN)));
+    return Functions.PRIME.z(Functions.PHI.z(n).intValueExact()).add(Functions.PHI.z(Functions.PRIME.l(mN)));
   }
 }

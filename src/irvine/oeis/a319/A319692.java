@@ -1,7 +1,6 @@
 package irvine.oeis.a319;
 
 import irvine.factor.factor.Jaguar;
-import irvine.factor.prime.Puma;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -26,7 +25,7 @@ public class A319692 extends AbstractSequence implements DirectSequence {
     Z prod = Z.ONE;
     for (final Z dd : Jaguar.factor(n).divisors()) {
       if (!dd.equals(n)) {
-        prod = prod.multiply(Puma.primeZ(Functions.SOPFR.z(dd).add(1)));
+        prod = prod.multiply(Functions.PRIME.z(Functions.SOPFR.z(dd).add(1)));
       }
     }
     return prod;

@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -25,7 +25,7 @@ public class A066740 extends Sequence0 {
       return Z.ONE;
     }
     final Set<List<Integer>> res = new HashSet<>();
-    final int p = (int) Puma.prime(mN);
+    final int p = (int) Functions.PRIME.l(mN);
     for (final List<Integer> x : mB) {
       final ArrayList<Integer> y = new ArrayList<>(x);
       y.add(p);

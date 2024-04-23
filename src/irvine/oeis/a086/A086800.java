@@ -1,6 +1,6 @@
 package irvine.oeis.a086;
 
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
@@ -18,6 +18,6 @@ public class A086800 extends Triangle {
 
   @Override
   public Z compute(final int n, final int k) {
-    return n == k ? Z.ZERO : Puma.primeZ(n + 1).subtract(Puma.prime(k + 1));
+    return n == k ? Z.ZERO : Functions.PRIME.z(n + 1).subtract(Functions.PRIME.l(k + 1));
   }
 }

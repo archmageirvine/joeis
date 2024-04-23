@@ -1,6 +1,6 @@
 package irvine.oeis.a057;
 
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000120;
 
@@ -12,6 +12,6 @@ public class A057334 extends A000120 {
 
   @Override
   public Z next() {
-    return Puma.primeZ(super.next());
+    return Functions.PRIME.z(super.next());
   }
 }

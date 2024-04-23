@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000081;
@@ -60,7 +60,7 @@ public class A061773 extends Sequence1 {
       }
       // Planted trees
       for (int i = 0; i < mNumTrees.a(n - 1).intValueExact(); ++i) {
-        row.add(Puma.primeZ(mRows.get(n - 1).get(i)));
+        row.add(Functions.PRIME.z(mRows.get(n - 1).get(i)));
         bigs.add(++mBigIdx);
       }
       final ArrayList<Z> sort = new ArrayList<>(row);

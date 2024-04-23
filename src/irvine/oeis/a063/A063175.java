@@ -1,6 +1,6 @@
 package irvine.oeis.a063;
 
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -18,7 +18,7 @@ public class A063175 extends Sequence1 {
 
   private boolean is(final int n) {
     for (int k = 0; k <= n; ++k) {
-      if (ZUtils.valuation(mC.a(n + k), Puma.primeZ(k + 1)) > 0) {
+      if (ZUtils.valuation(mC.a(n + k), Functions.PRIME.z(k + 1)) > 0) {
         return false;
       }
     }

@@ -1,6 +1,6 @@
 package irvine.oeis.a024;
 
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -16,9 +16,9 @@ public class A024527 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    final Z pn = Puma.primeZ(mN);
+    final Z pn = Functions.PRIME.z(mN);
     for (int k = 0; k < mN; ++k) {
-      mSum = mSum.add(pn.subtract(Puma.prime(k)).pow(3));
+      mSum = mSum.add(pn.subtract(Functions.PRIME.l(k)).pow(3));
     }
     return mSum;
   }

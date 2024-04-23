@@ -3,9 +3,9 @@ package irvine.oeis.a066;
 import java.util.function.Function;
 
 import irvine.factor.factor.Jaguar;
-import irvine.factor.prime.Puma;
 import irvine.factor.util.FactorSequence;
 import irvine.math.MemoryFunction1;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
@@ -26,7 +26,7 @@ public class A066367 extends Sequence1 {
 
   /** Construct the sequence. */
   public A066367() {
-    this(k -> k == 0 ? 0 : Puma.prime(k) / k);
+    this(k -> k == 0 ? 0 : Functions.PRIME.l(k) / k);
   }
 
   private final MemoryFunction1<Long> mF = new MemoryFunction1<>() {

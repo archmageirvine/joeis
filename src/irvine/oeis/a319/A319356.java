@@ -3,7 +3,7 @@ package irvine.oeis.a319;
 import java.util.function.BiFunction;
 
 import irvine.factor.factor.Jaguar;
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
@@ -21,7 +21,7 @@ public class A319356 extends AbstractSequence implements DirectSequence {
 
   /** Construct the sequence. */
   public A319356() {
-    this(1, (d, v) -> Puma.primeZ(v.add(1)), new A003415());
+    this(1, (d, v) -> Functions.PRIME.z(v.add(1)), new A003415());
   }
 
   /**

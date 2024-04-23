@@ -3,7 +3,7 @@ package irvine.oeis.a219;
 import java.util.Arrays;
 
 import irvine.factor.prime.Fast;
-import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
@@ -35,7 +35,7 @@ public class A219180 extends MemoryFunction2Sequence<Integer, Z[]> {
       return EMPTY;
     }
     final Z[] b = get(n, i - 1);
-    final Z[] c = Puma.prime(i + 1) > n ? EMPTY : get(n - (int) Puma.prime(i + 1), i - 1);
+    final Z[] c = Functions.PRIME.l(i + 1) > n ? EMPTY : get(n - (int) Functions.PRIME.l(i + 1), i - 1);
     final Z[] res = new Z[Math.max(b.length, c.length + 1)];
     for (int k = 0; k < res.length; ++k) {
       res[k] = get(b, k).add(get(c, k - 1));

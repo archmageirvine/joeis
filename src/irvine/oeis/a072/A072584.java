@@ -12,6 +12,6 @@ public class A072584 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A072584() {
-    super(1, new A072583(), v -> Functions.PRIME.z(v.intValueExact()));
+    super(1, new A072583(), v -> Functions.PRIME.z(v));
   }
 }

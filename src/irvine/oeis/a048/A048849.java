@@ -15,6 +15,6 @@ public class A048849 extends Sequence0 {
   @Override
   public Z next() {
     final Z n = Z.valueOf(++mN);
-    return Functions.PRIME.z(Functions.PHI.z(n).intValueExact()).add(Functions.PHI.z(Functions.PRIME.l(mN)));
+    return Functions.PRIME.z(Functions.PHI.i(n)).add(Functions.PHI.z(Functions.PRIME.l(mN)));
   }
 }

@@ -13,6 +13,6 @@ public class A155990 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A155990() {
-    super(1, new A046034(), v -> Functions.PRIME.z(v.intValueExact()));
+    super(1, new A046034(), v -> Functions.PRIME.z(v));
   }
 }

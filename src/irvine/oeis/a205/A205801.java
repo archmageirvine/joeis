@@ -15,6 +15,6 @@ public class A205801 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A205801() {
-    super(0, (self, n) -> Rationals.SINGLETON.sum(1, IntegerUtils.sqrt(n), k -> new Q(self.a(n - k * k), (Functions.FACTORIAL.z(n - k * k)))).multiply(Functions.FACTORIAL.z(n - 1)).num(), "1");
+    super(0, (self, n) -> Rationals.SINGLETON.sum(1, IntegerUtils.sqrt(n), k -> new Q(self.a(n - k * k), Functions.FACTORIAL.z(n - k * k))).multiply(Functions.FACTORIAL.z(n - 1)).num(), "1");
   }
 }

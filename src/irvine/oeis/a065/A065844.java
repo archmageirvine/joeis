@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.HashMap;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -32,7 +32,7 @@ public class A065844 extends Sequence1 {
     final long lim = Z.valueOf(mBase).pow(++mN).longValueExact();
     final HashMap<Long, Long> cnts = new HashMap<>();
     for (long p = lim / mBase; p < lim; p = mPrime.nextPrime(p)) {
-      cnts.merge(LongUtils.sortDigitsAscending(p, mBase), 1L, Long::sum);
+      cnts.merge(Functions.DIGIT_SORT_ASCENDING.l(mBase, p), 1L, Long::sum);
     }
     return Z.valueOf(Collections.max(cnts.values()));
   }

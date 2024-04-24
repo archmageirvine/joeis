@@ -7,7 +7,6 @@ import java.util.Collection;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.util.CollectionUtils;
 import irvine.util.io.IOUtils;
 import irvine.util.string.StringUtils;
@@ -743,36 +742,6 @@ public final class LongUtils {
    */
   public static long n2z(final long n) {
     return (n & 1) == 0 ? n / 2 : (1 - n) / 2;
-  }
-
-  /**
-   * Sort the digits of a number.
-   * @param n number
-   * @param base base to use
-   * @return sorted number
-   */
-  public static long sortDigitsAscending(final long n, final int base) {
-    if (n == 0) {
-      return 0;
-    }
-    final int[] counts = ZUtils.digitCounts(n, base);
-    long res = 0;
-    for (int k = 1; k < counts.length; ++k) {
-      for (int j = counts[k]; j > 0; --j) {
-        res *= base;
-        res += k;
-      }
-    }
-    return res;
-  }
-
-  /**
-   * Sort the digits of a number.
-   * @param n number
-   * @return sorted number
-   */
-  public static long sortDigitsAscending(final long n) {
-    return sortDigitsAscending(n, 10);
   }
 
   /**

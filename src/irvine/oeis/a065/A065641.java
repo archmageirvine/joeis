@@ -1,6 +1,6 @@
 package irvine.oeis.a065;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicLongArray;
@@ -24,7 +24,7 @@ public class A065641 extends Sequence0 {
       int cnt = 0;
       long m = ++mM;
       do {
-        m -= LongUtils.sortDigitsAscending(m);
+        m -= Functions.DIGIT_SORT_ASCENDING.l(m);
         ++cnt;
       } while (m != 0);
       if (mFirsts.get(cnt) == 0) {

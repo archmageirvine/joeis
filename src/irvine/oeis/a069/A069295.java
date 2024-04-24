@@ -91,9 +91,8 @@ public class A069295 extends Sequence2 {
     for (final Map.Entry<List<Byte>, Z> e : left.entrySet()) {
       final List<Byte> state = e.getKey();
       final Z cnt = e.getValue();
-      final byte max = max(state); // maximum clump used so far
       for (long s = 1; s < 1L << rows; ++s) {
-        final byte[] remap = new byte[max + 1];
+        final byte[] remap = new byte[rows + 1];
         remap[1] = 1;
         final List<Byte> lst = new ArrayList<>(rows);
         byte adj = 1;
@@ -146,10 +145,26 @@ public class A069295 extends Sequence2 {
         adjust(lst);
         if (hasOne(lst)) {
 
-          // debug
-          if (mVerbose && state.equals(DEBUG)) {
-            System.out.println(state + " -> " + lst + " with multiplicity " + cnt);
+          if (mVerbose && mN == 5) {
+            if (hasTwo(lst)) {
+
+              boolean print = false;
+              for (int k = 0; k < state.size(); ++k) {
+                if (state.get(k) == 1 && lst.get(k) > 1) {
+                  print = true;
+                  break;
+                }
+              }
+              if (print) {
+                System.out.println(pack(state) + " -> " + pack(lst) + " with multiplicity " + cnt);
+              }
+            }
           }
+
+//          // debug
+//          if (mVerbose && lst.equals(DEBUG)) {
+//            System.out.println(state + " -> " + lst + " with multiplicity " + cnt);
+//          }
 
           res.merge(lst, cnt, Z::add);
         }
@@ -158,7 +173,7 @@ public class A069295 extends Sequence2 {
     return res;
   }
 
-  private static final List<Byte> DEBUG = Arrays.asList((byte) 2, (byte) 0, (byte) 2, (byte) 0, (byte) 1);
+  private static final List<Byte> DEBUG = Arrays.asList((byte) 2, (byte) 2, (byte) 2, (byte) 0, (byte) 1);
 
   private boolean hasOne(final List<Byte> lst) {
     for (final byte b : lst) {
@@ -167,6 +182,40 @@ public class A069295 extends Sequence2 {
       }
     }
     return false;
+  }
+
+  private boolean hasTwo(final List<Byte> lst) {
+    for (final byte b : lst) {
+      if (b == 2) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  private void dumpState(final Map<List<Byte>, Z> state) {
+    final long[] byTypeCount = new long[1 << mN];
+    long special = 0;
+    for (final Map.Entry<List<Byte>, Z> e : state.entrySet()) {
+      final List<Byte> s = e.getKey();
+      int v = 0;
+      for (int h = 0; h < s.size(); ++h) {
+        v *= 2;
+        if (s.get(h) != 0) {
+          v += 1;
+        }
+      }
+      final long contrib = e.getValue().longValueExact();
+      if (s.get(0) == 1) {
+        System.out.println("SPC: " + pack(s) + " " + e.getValue());
+        special += contrib;
+      }
+      byTypeCount[v] += contrib;
+    }
+    for (int k = 0; k < byTypeCount.length; ++k) {
+      System.out.println(Long.toBinaryString(k) + " : " + byTypeCount[k]);
+    }
+    System.out.println("Special contrib " + special);
   }
 
   protected Z count(final int rows, final int cols) {
@@ -178,27 +227,29 @@ public class A069295 extends Sequence2 {
     for (int c = 1; c < cols; ++c) {
       state = update(state, rows);
       if (mVerbose) {
-        System.out.println(state);
+        System.out.println("col=" + c + ": " + state);
       }
     }
     Z sum = Z.ZERO;
     for (final Map.Entry<List<Byte>, Z> e : state.entrySet()) {
       sum = sum.add(e.getValue());
     }
+    dumpState(state);
     return sum;
   }
   
   @Override
   public Z next() {
     if (mN == 1) {
-      System.out.println("5-by-5 : " + count5By5());
-      System.out.println("Code:    " + count(5, 5));
+      System.out.println("5-by-4 : " + countByBruteForce(5, 4));
+      System.out.println("5-by-5 : " + countByBruteForce(5, 5));
+      //System.out.println("Code:    " + count(5, 5));
     }
     ++mN;
-    final Collection<List<Byte>> states = buildStates(4);
-    final Matrix<Z> transitions = buildTransitionMatrix(states);
-    writeMatrix(states, transitions);
-    writeGraph(states, transitions);
+//    final Collection<List<Byte>> states = buildStates(4);
+//    final Matrix<Z> transitions = buildTransitionMatrix(states);
+//    writeMatrix(states, transitions);
+//    writeGraph(states, transitions);
 //    final MatrixRing<Z> ring = new MatrixRing<>(states.size(), Integers.SINGLETON);
 //    final Matrix<Z> pow = ring.pow(transitions, mN);
 //    System.out.println("Powered matrix");
@@ -491,34 +542,36 @@ public class A069295 extends Sequence2 {
     System.out.println("}");
   }
 
-  private boolean is5By5(final boolean[][] mat, final boolean[][] searched, final int r, final int c) {
+  private boolean isAdjacent1(final boolean[][] mat, final boolean[][] searched, final int r, final int c) {
     if (!mat[r][c]) {
       return false;
     }
-    if (c == 4) {
+    if (c == mat[0].length - 1) {
       return true;
     }
     searched[r][c] = true;
-    if (!searched[r][c + 1] && is5By5(mat, searched, r, c + 1)) {
+    if (!searched[r][c + 1] && isAdjacent1(mat, searched, r, c + 1)) {
       return true;
     }
-    if (r < 4 && !searched[r + 1][c] && is5By5(mat, searched, r + 1, c)) {
+    if (r < 4 && !searched[r + 1][c] && isAdjacent1(mat, searched, r + 1, c)) {
       return true;
     }
-    if (r > 0 && !searched[r - 1][c] && is5By5(mat, searched, r - 1, c)) {
+    if (r > 0 && !searched[r - 1][c] && isAdjacent1(mat, searched, r - 1, c)) {
       return true;
     }
-    if (c > 0 && !searched[r][c - 1] && is5By5(mat, searched, r, c - 1)) {
+    if (c > 0 && !searched[r][c - 1] && isAdjacent1(mat, searched, r, c - 1)) {
       return true;
     }
     searched[r][c] = false;
     return false;
   }
 
-  private long count5By5() {
+  // This explicit computation verifies Hardin value is correct in small cases
+  private long countByBruteForce(final int rows, final int cols) {
     long cnt = 0;
-    final boolean[][] mat = new boolean[5][5];
-    for (long m = 1;  m < 1L << 25; m += 2) {
+    final long[] byTypeCount = new long[1 << rows];
+    final boolean[][] mat = new boolean[rows][cols];
+    for (long m = 1; m < 1L << (rows * cols); m += 2) {
       long k = m;
       for (int r = 0; r < mat.length; ++r) {
         for (int c = 0; c < mat[0].length; ++c) {
@@ -526,10 +579,20 @@ public class A069295 extends Sequence2 {
           k >>>= 1;
         }
       }
-      if (is5By5(mat, new boolean[5][5], 0, 0)) {
-        //System.out.println("Yes: " + Arrays.deepToString(mat).replace("true", "1").replace("false", "0"));
+      if (isAdjacent1(mat, new boolean[rows][cols], 0, 0)) {
         ++cnt;
+        int v = 0;
+        for (int h = 0; h < rows; ++h) {
+          v *= 2;
+          if (mat[h][cols - 1]) {
+            v += 1;
+          }
+        }
+        ++byTypeCount[v];
       }
+    }
+    for (int k = 0; k < byTypeCount.length; ++k) {
+      System.out.println(Long.toBinaryString(k) + " : " + byTypeCount[k]);
     }
     return cnt;
   }

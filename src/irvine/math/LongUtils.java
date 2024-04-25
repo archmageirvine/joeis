@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.util.CollectionUtils;
 import irvine.util.io.IOUtils;
@@ -283,33 +284,6 @@ public final class LongUtils {
    */
   public static long lcm(final long a, final long b) {
     return a == 0 ? 0 : (a / gcd(a, b)) * b;
-  }
-
-  /**
-   * Return the smallest power of 2 which is larger than <code>x</code>.
-   * If <code>x</code> &gt;= 2<sup>62</sup>, then the result is
-   * <code>Long.MIN_VALUE</code> (which is the correct result if
-   * the result is considered to be unsigned). If <code>x &lt; 0</code>,
-   * then the result is 0.
-   *
-   * @param x value to round up
-   * @return a power of 2
-   */
-  public static long nextPowerOf2(final long x) {
-    if (x > 0) {
-      final long t = 1L << ((Double.doubleToLongBits(x) >> 52) - 1023);
-      return t > 0 && t <= x ? t << 1 : t;
-    }
-    return x == 0 ? 1 : 0;
-    /* // alternative implementation
-    x |= x >> 1;
-    x |= x >> 2;
-    x |= x >> 4;
-    x |= x >> 8;
-    x |= x >> 16;
-    x |= x >> 32;
-    return x + 1;
-    */
   }
 
   /**
@@ -599,7 +573,7 @@ public final class LongUtils {
    * @return rotated value
    */
   public static long rotateLeft(final long n) {
-    return ((n << 1) + 1) & (LongUtils.nextPowerOf2(n) - 1);
+    return ((n << 1) + 1) & (Functions.NEXT_POWER_OF_2.l(n) - 1);
   }
 
   /**

@@ -357,33 +357,6 @@ public class LongUtilsTest extends TestCase {
     assertEquals(24, LongUtils.lcm(12, 8));
   }
 
-  public void testNextPowerOf2() {
-    long x = 0;
-    for (int k = 0; k < 64; ++k) {
-      x = LongUtils.nextPowerOf2(x);
-      assertEquals(String.valueOf(k), 1L << k, x);
-    }
-    assertEquals(0, LongUtils.nextPowerOf2(Long.MIN_VALUE));
-    final Random r = new Random();
-    for (int j = 0; j < 1000; ++j) {
-      final long k = r.nextLong();
-      final long z = LongUtils.nextPowerOf2(k);
-      if (k < 0) {
-        assertEquals(0, z);
-      } else {
-        assertEquals(0, z & (z - 1));
-        if (z != Long.MIN_VALUE) {
-          assertTrue(z > k);
-          if (k > 0) {
-            assertTrue(z >>> 1 <= k);
-          } else {
-            assertTrue(z >> 1 <= k);
-          }
-        }
-      }
-    }
-  }
-
   public void testLg() {
     for (int k = 0; k < 63; ++k) {
       assertEquals(k, LongUtils.log2(1L << k));

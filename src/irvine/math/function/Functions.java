@@ -74,6 +74,8 @@ public final class Functions {
   public static final Function1 CATALAN = new Catalan();
   /** Number of partitions. */
   public static final Function1 PARTITIONS = new Partitions();
+  /** Next power of two larger than the given number. */
+  public static final Function1 NEXT_POWER_OF_2 = new NextPowerOf2();
 
   /** Reverse the digits of a number. */
   public static final Function2 REVERSE = new Reverse();

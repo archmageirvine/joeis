@@ -3,6 +3,7 @@ package irvine.oeis.a287;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.a001.A001511;
 import irvine.oeis.a002.A002487;
 
@@ -10,19 +11,30 @@ import irvine.oeis.a002.A002487;
  * A287896 a(n) = A002487(n)*A001511(n).
  * @author Georg Fischer
  */
-public class A287896 extends AbstractSequence {
+public class A287896 extends AbstractSequence implements DirectSequence {
 
-  private final A002487 mSeq1 = new A002487();
-  private final A001511 mSeq2 = new A001511();
+  private int mN;
+  private static final A001511 SEQ2 = new A001511();
+  private static final A002487 SEQ1 = new A002487();
 
   /** Construct the sequence. */
   public A287896() {
     super(1);
-    mSeq1.next();
+    mN = 0;
   }
 
   @Override
   public Z next() {
-    return mSeq1.next().multiply(mSeq2.next());
+    return a(++mN);
+  }
+
+  @Override
+  public Z a(final int n) {
+    return SEQ1.a(n).multiply(SEQ2.a(n));
+  }
+
+  @Override
+  public Z a(final Z n) {
+    return SEQ1.a(n).multiply(SEQ2.a(n));
   }
 }

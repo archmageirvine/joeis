@@ -5,7 +5,7 @@ import irvine.oeis.a079.A079458;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A218147 Degree of minimal polynomial satisfied by exp(8*Pi*phi_2(1/n, 1/n)), where phi_2 is defined in the Comments.
+ * A218147 Degree of minimal polynomial satisfied by exp(8*Pi*phi_2(1/n,1/n)), where phi_2 is defined in the Comments.
  * @author Georg Fischer
  */
 public class A218147 extends MultiTransformSequence {

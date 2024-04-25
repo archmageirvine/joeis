@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A071309 a(n) = (1/2) * (number of n X n 0..10 matrices with MM&apos; mod 11 = I).
+ * A071309 a(n) = (1/2) * (number of n X n 0..10 matrices with MM' mod 11 = I).
  * @author Georg Fischer
  */
 public class A071309 extends LambdaSequence {

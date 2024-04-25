@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A071306 a(n) = (1/2) * (number of n X n 0..6 matrices M with MM&apos; mod 7 = I, where M&apos; is the transpose of M and I is the n X n identity matrix).
+ * A071306 a(n) = (1/2) * (number of n X n 0..6 matrices M with MM' mod 7 = I, where M' is the transpose of M and I is the n X n identity matrix).
  * @author Georg Fischer
  */
 public class A071306 extends LambdaSequence {

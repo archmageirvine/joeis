@@ -5,7 +5,7 @@ import irvine.oeis.a006.A006577;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A112695 Number of steps needed to reach 4, 2, 1 in Collatz&apos; 3*n+1 conjecture.
+ * A112695 Number of steps needed to reach 4,2,1 in Collatz' 3*n+1 conjecture.
  * @author Georg Fischer
  */
 public class A112695 extends MultiTransformSequence {

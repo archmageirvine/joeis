@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a034.A034836;
 
 /**
- * A331072 a(n) = Sum_{k &lt;= n} u_3(k), where u_3 = A034836.
+ * A331072 a(n) = Sum_{k = 1..n} u_3(k), where u_3 = A034836.
  * @author Sean A. Irvine
  */
 public class A331072 extends PartialSumSequence {

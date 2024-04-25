@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067825 Even values of n such that sigma(n + 1) &gt; sigma(n).
+ * A067825 Even values of k such that sigma(k + 1) &gt; sigma(k).
  * @author Sean A. Irvine
  */
 public class A067825 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.a055.A055653;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A143869 An integer k is called regular (mod n) if there is an integer x such that k^2 x == k (mod n). Then these numbers are the sum of regular integers k (mod n) such that 1 &lt;= k &lt;= n for n=1, 2,... .
+ * A143869 An integer k is called regular (mod n) if there is an integer x such that k^2 x == k (mod n). Then these numbers are the sum of regular integers k (mod n) such that 1 &lt;= k &lt;= n for n=1,2,... .
  * @author Georg Fischer
  */
 public class A143869 extends MultiTransformSequence {

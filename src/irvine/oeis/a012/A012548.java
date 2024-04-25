@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012548 arctan(sinh(x)*tan(x))=2/2!*x^2+12/4!*x^4-98/6!*x^6-16968/8!*x^8...
+ * A012548 Expansion of e.g.f. arctan(sinh(x)*tan(x)) (even powers only).
  * @author Sean A. Irvine
  */
 public class A012548 extends Sequence0 {

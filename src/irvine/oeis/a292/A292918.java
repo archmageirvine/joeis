@@ -5,7 +5,7 @@ import irvine.oeis.a069.A069879;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A292918 Let A_n be a square n X n matrix with entries A_n(i,j)=1 if i+j is prime, and A_n(i,j)=0 otherwise. Then a(n) counts the 1&apos;s in A_n.
+ * A292918 Let A_n be a square n X n matrix with entries A_n(i,j)=1 if i+j is prime, and A_n(i,j)=0 otherwise. Then a(n) counts the 1's in A_n.
  * @author Georg Fischer
  */
 public class A292918 extends SimpleTransformSequence {

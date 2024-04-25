@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A113477 Decimal expansion of Gamma(1/3)^3/2^(4/3)/Pi.
+ * A113477 Decimal expansion of Gamma(1/3)^3/(2^(4/3)*Pi).
  * Formula: Gamma(1/3)^3/2^(4/3)/Pi
  * @author Georg Fischer
  */

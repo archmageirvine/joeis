@@ -5,7 +5,7 @@ package irvine.oeis.a177;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A177056 Decimal expansion of 7^3/6^3.
+ * A177056 Decimal expansion of (7/6)^3.
  * @author Georg Fischer
  */
 public class A177056 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001567;
 import irvine.oeis.a006.A006005;
 
 /**
- * A176997 Integers n such that 2^(n-1) == 1 (mod n).
+ * A176997 Integers k such that 2^(k-1) == 1 (mod k).
  * @author Georg Fischer
  */
 public class A176997 extends UnionSequence {

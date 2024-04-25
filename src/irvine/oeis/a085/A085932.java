@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A085932 Numbers n such that the digits sorted in ascending order + the digital sum of n is a palindrome. Or, sortdigits(n)+digit sum(n) is a palindrome.
+ * A085932 Numbers k such that (digits of k sorted in ascending order) + (digital sum of k) is a palindrome.
  * @author Georg Fischer
  */
 public class A085932 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A160357 Sign of first differences of Recam√°n&apos;s sequence A005132.
+ * A160357 Sign of first differences of Recam\u00e1n's sequence A005132.
  * @author Georg Fischer
  */
 public class A160357 extends MultiTransformSequence {

@@ -8,15 +8,15 @@ import java.util.Map;
 
 import irvine.math.MemoryFunction;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence2;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A069295.
+ * A069295 Number of n X 4 binary arrays with a path of adjacent 1's from upper left corner to anywhere in right hand column.
  * @author Sean A. Irvine
  */
-public class A069295 extends Sequence2 {
+public class A069295 extends AbstractSequence {
 
-  private static final class State {
+  static final class State {
     private final byte[] mState;
 
     private State(final byte[] state) {
@@ -27,7 +27,7 @@ public class A069295 extends Sequence2 {
       return mState.length;
     }
 
-    private byte get(final int k) {
+    byte get(final int k) {
       return mState[k];
     }
 
@@ -67,6 +67,15 @@ public class A069295 extends Sequence2 {
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 1;
   private int mPrevRows = 0;
+
+  protected A069295(final int offset) {
+    super(offset);
+  }
+
+  /** Construct the sequence. */
+  public A069295() {
+    this(2);
+  }
 
   private final MemoryFunction<State, List<State>> mTransitions = new MemoryFunction<>() {
 
@@ -207,6 +216,14 @@ public class A069295 extends Sequence2 {
     return res;
   }
 
+  protected Z getResult(final Map<State, Z> states) {
+    Z sum = Z.ZERO;
+    for (final Z v : states.values()) {
+      sum = sum.add(v);
+    }
+    return sum;
+  }
+
   protected Z count(final int rows, final int cols) {
     if (rows != mPrevRows) {
       // Reclaim space when we are working in a different size
@@ -228,7 +245,7 @@ public class A069295 extends Sequence2 {
     for (final Map.Entry<State, Z> e : states.entrySet()) {
       sum = sum.add(e.getValue());
     }
-    return sum;
+    return getResult(states);
   }
   
   @Override

@@ -4,7 +4,7 @@ package irvine.oeis.a167;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A167996 Numbers n with property that first digit of 3*n = last digit of n.
+ * A167996 Positive numbers n with property that first digit of 3*n = last digit of n.
  * @author Georg Fischer
  */
 public class A167996 extends FilterNumberSequence {

@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A104805 &quot;Ceiling of hypotenuses&quot;: a(n) = ceiling(sqrt(a(n-1)^2 + a(n-2)^2)), a(1)=1, a(2)=3.
+ * A104805 "Ceiling of hypotenuses": a(n) = ceiling(sqrt(a(n-1)^2 + a(n-2)^2)), a(1)=1, a(2)=3.
  * @author Georg Fischer
  */
 public class A104805 extends MultiTransformSequence {

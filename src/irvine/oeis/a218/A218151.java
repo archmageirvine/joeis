@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A218151 a(n) = 2*3^n*5^(n(n-1)/2).
+ * A218151 a(n) = 2*3^n*5^(n*(n-1)/2).
  * <code>a(n) = a(n-1)*3*5^(n-1)</code>
  * @author Georg Fischer
  */

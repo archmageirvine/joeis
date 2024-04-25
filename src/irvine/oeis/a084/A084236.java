@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A084236 a(n) = M(2^n), where M(n) is Mertens&apos;s function, A002321.
+ * A084236 a(n) = M(2^n), where M(n) is Mertens's function, A002321.
  * @author Georg Fischer
  */
 public class A084236 extends LambdaSequence {

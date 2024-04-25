@@ -5,7 +5,7 @@ import irvine.oeis.a037.A037031;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A369854 a(n) = number of nonempty subsets S of {1, 2,...,n} such that (number of nonprimes in S) = (number of primes in S).
+ * A369854 a(n) = number of nonempty subsets S of {1,2,...,n} such that (number of nonprimes in S) = (number of primes in S).
  * @author Georg Fischer
  */
 public class A369854 extends SimpleTransformSequence {

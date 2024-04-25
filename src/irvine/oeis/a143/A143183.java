@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A143183 Triangle t(n,m) = 1 + (2+n)*abs(n-2m) read by rows, 0&lt;=m&lt;=n.
+ * A143183 Triangle T(n,k) = 1 + (2+n)*abs(n-2*k), read by rows, for 0 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A143183 extends BaseTriangle {

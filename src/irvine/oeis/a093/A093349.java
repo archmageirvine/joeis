@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A093349 A 7-fractal &quot;castle&quot; starting with 0.
+ * A093349 A 7-fractal "castle" starting with 0.
  * @author Georg Fischer
  */
 public class A093349 extends LambdaSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a117.A117630;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A368131 a(n) = floor(n * log(4/3) / log(3/2))
+ * A368131 a(n) = floor(n * log(4/3) / log(3/2)).
  * @author Georg Fischer
  */
 public class A368131 extends MultiTransformSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A071302 a(n) = (1/2) * (number of n X n 0..2 matrices M with MM&apos; mod 3 = I,
+ * A071302 a(n) = (1/2) * (number of n X n 0..2 matrices M with MM' mod 3 = I, where M' is the transpose of M and I is the n X n identity matrix).
  * where M&apos; is the transpose of M and I is the n X n identity matrix).
  * @author Georg Fischer
  */

@@ -6,7 +6,7 @@ import irvine.oeis.a003.A003415;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A369049 a(n) = n mod n&apos;, where n&apos; is the arithmetic derivative of n, A003415.
+ * A369049 a(n) = n mod n', where n' is the arithmetic derivative of n, A003415.
  * @author Georg Fischer
  */
 public class A369049 extends MultiTransformSequence {

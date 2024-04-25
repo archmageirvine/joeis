@@ -6,7 +6,7 @@ import irvine.math.z.Stirling;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A355205 E.g.f. A(x) satisfies A&apos;(x) = 1 + 2 * A(-log(1-x)).
+ * A355205 E.g.f. A(x) satisfies A'(x) = 1 + 2 * A(-log(1-x)).
  * @author Georg Fischer
  */
 public class A355205 extends MultiTransformSequence {

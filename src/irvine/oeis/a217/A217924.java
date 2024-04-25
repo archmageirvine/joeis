@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A217924 Row sums of triangle A217537.
+ * A217924 a(n) = n! * [x^n] exp(2*exp(x) - x - 2). Row sums of triangle A217537.
  * E.g.f.: exp(2*exp(x) - x - 2)
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A355210 E.g.f. A(x) satisfies A&apos;(x) = 1 + A(2 * (exp(x) - 1)).
+ * A355210 E.g.f. A(x) satisfies A'(x) = 1 + A(2 * (exp(x) - 1)).
  * @author Georg Fischer
  */
 public class A355210 extends MultiTransformSequence {

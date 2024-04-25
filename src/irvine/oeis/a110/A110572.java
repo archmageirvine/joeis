@@ -5,7 +5,7 @@ package irvine.oeis.a110;
 import irvine.oeis.a103.A103603;
 
 /**
- * A110572 Numbers n such that the string 555n is prime.
+ * A110572 Numbers k such that the string 555k is prime.
  * @author Georg Fischer
  */
 public class A110572 extends A103603 {

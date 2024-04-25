@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a349.A349562;
 
 /**
- * A201595 E.g.f. satisfies: A(x) = exp(x*A(x)) * cosh(x*A(x)).
+ * A201595 E.g.f. satisfies A(x) = exp(x*A(x)) * cosh(x*A(x)).
  * @author Georg Fischer
  */
 public class A201595 extends AbstractSequence {

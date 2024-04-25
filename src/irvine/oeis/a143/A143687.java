@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A143687 Consider pairs m,n such that 1/(UnitaryPhi(m))^(1/2)=1/(UnitaryPhi(n))^(1/2)=k^(1/2)*(1/m^(1/2)-1/n^(1/2)), n&lt;m; sequence gives values of n.
+ * A143687 Consider pairs m,n such that 1/(UnitaryPhi(m))^(1/2) = 1/(UnitaryPhi(n))^(1/2) = k^(1/2)*(1/m^(1/2)-1/n^(1/2)), n&lt;m; sequence gives values of n.
  *
  * @author Georg Fischer
  */

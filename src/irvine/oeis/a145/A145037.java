@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A145037 Number of 1&apos;s minus number of 0&apos;s in the binary representation of n.
+ * A145037 Number of 1's minus number of 0's in the binary representation of n.
  * @author Georg Fischer
  */
 public class A145037 extends LambdaSequence {

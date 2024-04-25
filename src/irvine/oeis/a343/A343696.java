@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002860;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A343696 a(n) is the number of preference profiles in the stable marriage problem with n men and n women, such that the men&apos;s preference profiles form a Latin square.
+ * A343696 a(n) is the number of preference profiles in the stable marriage problem with n men and n women, such that the men's preference profiles form a Latin square.
  * @author Georg Fischer
  */
 public class A343696 extends MultiTransformSequence {

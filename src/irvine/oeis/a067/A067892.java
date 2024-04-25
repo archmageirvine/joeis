@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A067892 Numbers n such that tau(n)*phi(n) &gt; prime(n) where tau(n) = A000005(n).
+ * A067892 Numbers k such that tau(k)*phi(k) &gt; prime(k) where tau(k) = A000005(k).
  * @author Sean A. Irvine
  */
 public class A067892 extends A000040 {

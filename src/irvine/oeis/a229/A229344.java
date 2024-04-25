@@ -6,7 +6,7 @@ import irvine.oeis.a003.A003415;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A229344 Mertens&apos;s function of the arithmetic derivative of n: a(n) = M(n&apos;), a(1) = 0.
+ * A229344 Mertens's function of the arithmetic derivative of n: a(n) = M(n'), a(1) = 0.
  * @author Georg Fischer
  */
 public class A229344 extends MultiTransformSequence {

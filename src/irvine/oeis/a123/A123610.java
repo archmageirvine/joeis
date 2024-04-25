@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A123610 Triangle read by rows, where T(n,k) = (1/n)*Sum_{d|(n,k)} phi(d) * binomial(n/d,k/d)^2 for n &gt;= k &gt; 0, with T(n, 0) = 1 for n &gt;= 0.
+ * A123610 Triangle read by rows, where T(n,k) = (1/n)*Sum_{d|(n,k)} phi(d) * binomial(n/d,k/d)^2 for n &gt;= k &gt; 0, with T(n,0) = 1 for n &gt;= 0.
  * @author Georg Fischer
  */
 public class A123610 extends LambdaTriangle {

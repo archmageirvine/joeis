@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A293352 Greatest integer k such that k/2^n &lt; Euler&apos;s constant (0.577216...).
+ * A293352 Greatest integer k such that k/2^n &lt; Euler's constant (0.577216...).
  * @author Georg Fischer
  */
 public class A293352 extends LambdaSequence {

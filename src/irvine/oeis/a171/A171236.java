@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A171236 Solutions to the equation M(n) = -5 (M = Mertens&apos;s function A002321).
+ * A171236 Solutions to the equation M(n) = -5 (M = Mertens's function A002321).
  * @author Georg Fischer
  */
 public class A171236 extends FilterNumberSequence {

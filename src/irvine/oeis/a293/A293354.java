@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A293354 The integer k that minimizes |k/2^n - r|, where r = Euler&apos;s constant (0.577216...).
+ * A293354 The integer k that minimizes |k/2^n - r|, where r = Euler's constant (0.577216...).
  * @author Georg Fischer
  */
 public class A293354 extends LambdaSequence {

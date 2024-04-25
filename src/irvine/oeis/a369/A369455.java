@@ -8,7 +8,7 @@ import irvine.oeis.a055.A055615;
 import irvine.oeis.a083.A083345;
 
 /**
- * A369455 Dirichlet convolution of A083345 with A055615 (Dirichlet inverse of n), where A083345(n) = (n&apos;/gcd(n,n&apos;)) and n&apos; is the arithmetic derivative of n.
+ * A369455 Dirichlet convolution of A083345 with A055615 (Dirichlet inverse of n), where A083345(n) = (n'/gcd(n,n')) and n' is the arithmetic derivative of n.
  * @author Georg Fischer
  */
 public class A369455 extends AbstractSequence {

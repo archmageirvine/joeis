@@ -5,7 +5,7 @@ import irvine.oeis.a007.A007359;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A337485 Number of pairwise coprime integer partitions of n with no 1&apos;s, where a singleton is not considered coprime unless it is (1).
+ * A337485 Number of pairwise coprime integer partitions of n with no 1's, where a singleton is not considered coprime unless it is (1).
  * @author Georg Fischer
  */
 public class A337485 extends MultiTransformSequence {

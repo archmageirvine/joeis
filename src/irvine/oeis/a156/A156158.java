@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A156158 a(n) = 6*a(n-1)-a(n-2) for n &gt; 2; a(1) = 25, a(2) = 137.
+ * A156158 a(n) = 6*a(n-1) - a(n-2) for n &gt; 2; a(1) = 25, a(2) = 137.
  * @author Sean A. Irvine
  */
 public class A156158 extends LinearRecurrence {

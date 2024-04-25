@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A293353 Least integer k such that k/2^n &gt; Euler&apos;s constant (0.577216...).
+ * A293353 Least integer k such that k/2^n &gt; Euler's constant (0.577216...).
  * @author Georg Fischer
  */
 public class A293353 extends LambdaSequence {

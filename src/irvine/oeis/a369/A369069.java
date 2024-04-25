@@ -8,7 +8,7 @@ import irvine.oeis.a008.A008836;
 import irvine.oeis.a083.A083345;
 
 /**
- * A369069 Dirichlet convolution of Liouville&apos;s lambda (A008836) with A083345, where A083345(n) = n&apos; / gcd(n,n&apos;), and n&apos; stands for the arithmetic derivative of n, A003415.
+ * A369069 Dirichlet convolution of Liouville's lambda (A008836) with A083345, where A083345(n) = n' / gcd(n,n'), and n' stands for the arithmetic derivative of n, A003415.
  * @author Georg Fischer
  */
 public class A369069 extends AbstractSequence {

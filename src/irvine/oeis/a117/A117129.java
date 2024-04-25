@@ -6,7 +6,7 @@ import irvine.oeis.a112.A112877;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A117129 Primes not occurring as |differences| in Cald&apos;s sequence A006509.
+ * A117129 Primes not occurring as |differences| in Cald's sequence A006509.
  * @author Georg Fischer
  */
 public class A117129 extends MultiTransformSequence {

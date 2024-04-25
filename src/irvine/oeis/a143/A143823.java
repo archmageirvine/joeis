@@ -5,7 +5,7 @@ import irvine.oeis.a054.A054578;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A143823 Number of subsets {x(1),x(2),...,x(k)} of {1, 2,...,n} such that all differences |x(i)-x(j)| are distinct.
+ * A143823 Number of subsets {x(1),x(2),...,x(k)} of {1,2,...,n} such that all differences |x(i)-x(j)| are distinct.
  * @author Georg Fischer
  */
 public class A143823 extends MultiTransformSequence {

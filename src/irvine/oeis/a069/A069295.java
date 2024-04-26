@@ -67,6 +67,8 @@ public class A069295 extends AbstractSequence {
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 1;
   private int mPrevRows = 0;
+  private int mPrevCols = 0;
+  private Map<State, Z> mStates = null;
 
   protected A069295(final int offset) {
     super(offset);
@@ -221,19 +223,24 @@ public class A069295 extends AbstractSequence {
       // Reclaim space when we are working in a different size
       mTransitions.clear();
       mPrevRows = rows;
+      mStates = null;
     }
-    Map<State, Z> states = initial(rows);
-    if (mVerbose) {
-      System.out.println(states);
-    }
-    // Now work across updating the counts
-    for (int c = 1; c < cols; ++c) {
-      states = update(states);
+    if (mStates == null) {
+      mStates = initial(rows);
+      mPrevCols = 1;
       if (mVerbose) {
-        System.out.println("col=" + c + ": " + states);
+        System.out.println(mStates);
       }
     }
-    return getResult(states);
+    // Now work across updating the counts
+    while (mPrevCols < cols) {
+      mStates = update(mStates);
+      ++mPrevCols;
+      if (mVerbose) {
+        System.out.println("col=" + mPrevCols + ": " + mStates);
+      }
+    }
+    return getResult(mStates);
   }
   
   @Override

@@ -19,11 +19,11 @@ public class A069295 extends AbstractSequence {
   static final class State {
     private final byte[] mState;
 
-    private State(final byte[] state) {
+    State(final byte[] state) {
       mState = state;
     }
 
-    private int size() {
+    int size() {
       return mState.length;
     }
 
@@ -40,7 +40,7 @@ public class A069295 extends AbstractSequence {
       return false;
     }
 
-    private boolean has1() {
+    boolean has1() {
       return has((byte) 1);
     }
 
@@ -84,7 +84,7 @@ public class A069295 extends AbstractSequence {
       final List<State> states = new ArrayList<>();
       final int rows = state.size();
       for (long s = 1; s < 1L << rows; ++s) {
-        final byte[] remap = new byte[rows + 1];
+        final byte[] remap = new byte[rows];
         remap[1] = 1;
         final byte[] lst = new byte[rows];
         byte adj = 1;
@@ -116,7 +116,6 @@ public class A069295 extends AbstractSequence {
                   remap[u] = l;
                 }
                 if (l < p) {
-
                   // Now associating l with p, replace all earlier settings
                   remap[u] = l;
                   for (int j = r - 1; j >= 0; --j) {
@@ -127,13 +126,6 @@ public class A069295 extends AbstractSequence {
                   p = l;
                 } else {
                   remap[u] = p;
-                  // Now associating u with p, replace all earlier settings
-                  // todo this is possibly unnecessary but leaving until more cases are getting the right answer
-//                  for (int j = r - 1; j >= 0; --j) {
-//                    if (lst[j] == l) {
-//                      lst[j] = p;
-//                    }
-//                  }
                 }
               }
             }
@@ -240,10 +232,6 @@ public class A069295 extends AbstractSequence {
       if (mVerbose) {
         System.out.println("col=" + c + ": " + states);
       }
-    }
-    Z sum = Z.ZERO;
-    for (final Map.Entry<State, Z> e : states.entrySet()) {
-      sum = sum.add(e.getValue());
     }
     return getResult(states);
   }

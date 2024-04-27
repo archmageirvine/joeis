@@ -85,8 +85,9 @@ public class A069295 extends AbstractSequence {
     protected List<State> compute(final State state) {
       final List<State> states = new ArrayList<>();
       final int rows = state.size();
+      final int rs = Math.max(2, rows);
       for (long s = 1; s < 1L << rows; ++s) {
-        final byte[] remap = new byte[rows];
+        final byte[] remap = new byte[rs];
         remap[1] = 1;
         final byte[] lst = new byte[rows];
         byte adj = 1;

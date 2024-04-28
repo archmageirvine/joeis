@@ -260,7 +260,7 @@ public class A069295 extends AbstractSequence {
 //    if (!searched[r][c + 1] && isAdjacent1(mat, searched, r, c + 1)) {
 //      return true;
 //    }
-//    if (r < 4 && !searched[r + 1][c] && isAdjacent1(mat, searched, r + 1, c)) {
+//    if (r < mat.length - 1 && !searched[r + 1][c] && isAdjacent1(mat, searched, r + 1, c)) {
 //      return true;
 //    }
 //    if (r > 0 && !searched[r - 1][c] && isAdjacent1(mat, searched, r - 1, c)) {

@@ -1,14 +1,16 @@
 package irvine.oeis.a034;
 
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A034386 Primorial numbers (second definition): n# = product of primes &lt;= n.
  * @author Sean A. Irvine
  */
-public class A034386 extends AbstractSequence {
+public class A034386 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -34,4 +36,15 @@ public class A034386 extends AbstractSequence {
     }
     return mPrimorial;
   }
+
+  @Override
+  public Z a(final Z n) {
+    return Functions.PRIMORIAL.z(n);
+  }
+
+  @Override
+  public Z a(final int n) {
+    return Functions.PRIMORIAL.z(n);
+  }
+
 }

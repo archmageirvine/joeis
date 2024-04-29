@@ -3,12 +3,13 @@ package irvine.oeis.a000;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A000041 a(n) is the number of partitions of n (the partition numbers).
  * @author Sean A. Irvine
  */
-public class A000041 extends AbstractSequence {
+public class A000041 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -30,5 +31,16 @@ public class A000041 extends AbstractSequence {
     final int index = ++mN;
     return Functions.PARTITIONS.z(index);
   }
+
+  @Override
+  public Z a(final Z n) {
+    return Functions.PARTITIONS.z(n);
+  }
+
+  @Override
+  public Z a(final int n) {
+    return Functions.PARTITIONS.z(n);
+  }
+
 }
 

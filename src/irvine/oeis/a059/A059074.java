@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.math.z.Z;
 
 /**
- * A059074 Card-matching numbers (Dinner-Diner matching numbers).
+ * A059074 Number of derangements of a multiset comprising 4 repeats of an n-element set.
  * @author Sean A. Irvine
  */
 public class A059074 extends A059057 {

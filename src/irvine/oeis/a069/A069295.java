@@ -152,7 +152,7 @@ public class A069295 extends AbstractSequence {
   // are used to represent different connected sets of bits.
   // When we update we merge connected sets as required.
 
-  private Map<State, Z> initial(final int rows) {
+  protected Map<State, Z> initial(final int rows) {
     final HashMap<State, Z> res = new HashMap<>();
     // s loops over possible sets of 1 bits
     // We require top left bit to be a 1, hence step by 2

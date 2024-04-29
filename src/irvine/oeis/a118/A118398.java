@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A118398 Eigenvector of the triangle defined by T(n,k) = 2^k*C(n, 2*k) for 0&lt;=k&lt;=[n/2], n&gt;=0.
+ * A118398 Eigenvector of the triangle defined by T(n,k) = 2^k*C(n,2*k) for 0&lt;=k&lt;=[n/2], n&gt;=0.
  * @author Georg Fischer
  */
 public class A118398 extends MultiTransformSequence {

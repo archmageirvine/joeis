@@ -5,7 +5,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A138779 Triangle read by rows: T(n,k)=k*binomial(n-2k, 3k+1) (n&gt;=6, 0&lt;=k&lt;=(n-1)/5).
+ * A138779 Triangle read by rows: T(n,k)=k*binomial(n-2k,3k+1) (n&gt;=6, 0&lt;=k&lt;=(n-1)/5).
  * @author Georg Fischer
  */
 public class A138779 extends LambdaTable {

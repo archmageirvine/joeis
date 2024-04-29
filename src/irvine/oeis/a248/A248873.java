@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A248873 a(n) = floor(e^(n+1)-e^n).
+ * A248873 a(n) = floor(e^(n+1) - e^n).
  * @author Georg Fischer
  */
 public class A248873 extends FloorSequence {

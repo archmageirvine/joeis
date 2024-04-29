@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a003.A003601;
 
 /**
- * A049642 Number of divisors of n does not divide sum of divisors of n.
+ * A049642 Numbers k such that the number of divisors of k does not divide the sum of divisors of k.
  * @author Sean A. Irvine
  */
 public class A049642 extends ComplementSequence {

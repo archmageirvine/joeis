@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a002.A002487;
 
 /**
- * A071911 Numbers m such that Stern&apos;s diatomic A002487(m) is divisible by 3.
+ * A071911 Numbers m such that Stern's diatomic A002487(m) is divisible by 3.
  * @author Georg Fischer
  */
 public class A071911 extends FilterPositionSequence {

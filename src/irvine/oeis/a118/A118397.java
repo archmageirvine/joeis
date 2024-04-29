@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A118397 Eigenvector of triangle A105070, where A105070(n,k) = 2^k*C(n+1, 2*k+1) for 0&lt;=k&lt;=[n/2], n&gt;=0.
+ * A118397 Eigenvector of triangle A105070, where A105070(n,k) = 2^k*C(n+1,2*k+1) for 0&lt;=k&lt;=[n/2], n&gt;=0.
  * @author Georg Fischer
  */
 public class A118397 extends MultiTransformSequence {

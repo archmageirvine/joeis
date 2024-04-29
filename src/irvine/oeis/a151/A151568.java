@@ -4,7 +4,7 @@ package irvine.oeis.a151;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A151568 a(0)=1, a(1)=1; a(2^i+j)=2*a(j)+a(j+1) for 0 <= j < 2^i.
+ * A151568 a(0)=1, a(1)=1; a(2^i+j)=2*a(j)+a(j+1) for 0 &lt;= j &lt; 2^i.
  * @author Georg Fischer
  */
 public class A151568 extends MultiTransformSequence {

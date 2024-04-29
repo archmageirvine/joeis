@@ -1,7 +1,7 @@
 package irvine.oeis.a346;
 
 import irvine.math.MemoryFunction2;
-import irvine.math.z.BellNumbers;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
@@ -48,7 +48,7 @@ public class A346517 extends UpperLeftTriangle {
         return get(k, n);
       }
       if (k == 0) {
-        return BellNumbers.bell(n);
+        return Functions.BELL.z(n);
       }
       Z sum = get(n + 1, k - 1);
       for (int j = 0; j < k; ++j) {

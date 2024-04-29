@@ -2,7 +2,7 @@ package irvine.oeis.a104;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.z.BellNumbers;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -64,7 +64,7 @@ public class A104725 extends Sequence0 {
         final Z term = Binomial.binomial(k, i).multiply(prodJ);
         sumI = (i & 1) == 0 ? sumI.add(term) : sumI.subtract(term);
       } // for i
-      sumK = sumK.add(sumI.multiply(BellNumbers.bell(k - 1)));
+      sumK = sumK.add(sumI.multiply(Functions.BELL.z(k - 1)));
     } // for k
     return sumK;
   }

@@ -1,11 +1,11 @@
 package irvine.oeis.a027;
 
 import irvine.math.api.Matrix;
+import irvine.math.function.Functions;
 import irvine.math.group.MatrixField;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
-import irvine.math.z.BellNumbers;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -43,7 +43,7 @@ public class A027495 extends AbstractSequence {
     final Matrix<Q> m = new DefaultMatrix<>(mN, mN, Q.ZERO);
     for (int k = 0; k < mN; ++k) {
       for (int j = 0; j <= k; ++j) {
-        m.set(k, j, new Q(Stirling.secondKind(k + 1, j + 1), BellNumbers.bell(k + 1)));
+        m.set(k, j, new Q(Stirling.secondKind(k + 1, j + 1), Functions.BELL.z(k + 1)));
       }
     }
     mMatrix = field.pow(m, power());

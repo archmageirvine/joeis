@@ -1,6 +1,6 @@
 package irvine.oeis.a020;
 
-import irvine.math.z.BellNumbers;
+import irvine.math.function.Functions;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -18,7 +18,7 @@ public class A020561 extends Sequence0 {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 0; k <= mN; ++k) {
-      sum = sum.add(BellNumbers.bell(2 * k).multiply(Stirling.firstKind(mN, k)).abs());
+      sum = sum.add(Functions.BELL.z(2 * k).multiply(Stirling.firstKind(mN, k)).abs());
     }
     return sum;
   }

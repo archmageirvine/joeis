@@ -2,7 +2,6 @@ package irvine.oeis.a034;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
-import irvine.math.z.BellNumbers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +18,7 @@ public class A034767 extends Sequence1 {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(++mN).divisors()) {
       final int d = dd.intValue();
-      sum = sum.add(Functions.PHI.z((long) mN / d).multiply(BellNumbers.bell(d - 1)));
+      sum = sum.add(Functions.PHI.z((long) mN / d).multiply(Functions.BELL.z(d - 1)));
     }
     return sum;
   }

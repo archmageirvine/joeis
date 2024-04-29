@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.math.z.BellNumbers;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -15,6 +15,6 @@ public class A055882 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return BellNumbers.bell(mN).multiply(Z.ONE.shiftLeft(mN));
+    return Functions.BELL.z(mN).multiply(Z.ONE.shiftLeft(mN));
   }
 }

@@ -2,7 +2,6 @@ package irvine.math.set;
 
 import irvine.math.api.Set;
 import irvine.math.function.Functions;
-import irvine.math.z.BellNumbers;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 
@@ -208,7 +207,7 @@ public final class FunctionUtils {
     if (domainSize == null) {
       return null;
     }
-    return BellNumbers.bell(domainSize.intValueExact());
+    return Functions.BELL.z(domainSize);
   }
 
   /**

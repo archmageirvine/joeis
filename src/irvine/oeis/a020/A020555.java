@@ -1,6 +1,6 @@
 package irvine.oeis.a020;
 
-import irvine.math.z.BellNumbers;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
@@ -16,7 +16,7 @@ public class A020555 extends MemoryFunction2Sequence<Integer, Z>  {
   @Override
   protected Z compute(final Integer m, final Integer n) {
     if (n == 0) {
-      return BellNumbers.bell(m);
+      return Functions.BELL.z(m);
     }
     Z sum = get(m + 2, n - 1).add(get(m + 1, n - 1));
     for (int k = 0; k < n; ++k) {

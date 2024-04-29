@@ -1,6 +1,6 @@
 package irvine.oeis.a193;
 
-import irvine.math.z.BellNumbers;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -16,6 +16,6 @@ public class A193274 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Binomial.binomial(BellNumbers.bell(mN), Z.TWO);
+    return Binomial.binomial(Functions.BELL.z(mN), Z.TWO);
   }
 }

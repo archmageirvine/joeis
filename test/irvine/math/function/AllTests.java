@@ -11,6 +11,7 @@ public class AllTests extends TestSuite {
 
   public static Test suite() {
     final TestSuite suite = new TestSuite();
+    suite.addTestSuite(BellNumbersTest.class);
     suite.addTestSuite(BigOmegaTest.class);
     suite.addTestSuite(CatalanTest.class);
     suite.addTestSuite(CeilSqrtTest.class);

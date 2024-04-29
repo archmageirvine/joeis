@@ -1,6 +1,6 @@
 package irvine.oeis.a105;
 
-import irvine.math.z.BellNumbers;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -38,6 +38,6 @@ public class A105479 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return mN - mR <= 0 ? Z.ZERO : Binomial.binomial(mN - mDecr, mR).multiply(BellNumbers.bell(mN - mR - 1));
+    return mN - mR <= 0 ? Z.ZERO : Binomial.binomial(mN - mDecr, mR).multiply(Functions.BELL.z(mN - mR - 1));
   }
 }

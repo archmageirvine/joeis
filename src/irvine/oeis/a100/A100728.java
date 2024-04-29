@@ -1,6 +1,6 @@
 package irvine.oeis.a100;
 
-import irvine.math.z.BellNumbers;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -19,7 +19,8 @@ public class A100728 extends AbstractSequence {
 
   @Override
   public Z next() {
-    return BellNumbers.bell(++mN + 1).subtract(Z.valueOf((long) mN * mN + mN + 4).shiftLeft(mN - 2)).add(Z.valueOf(3L * mN * mN - mN + 10).multiply(mN + 1).multiply(mN).divide(24));
+    final int index = ++mN + 1;
+    return Functions.BELL.z(index).subtract(Z.valueOf((long) mN * mN + mN + 4).shiftLeft(mN - 2)).add(Z.valueOf(3L * mN * mN - mN + 10).multiply(mN + 1).multiply(mN).divide(24));
   }
 }
 

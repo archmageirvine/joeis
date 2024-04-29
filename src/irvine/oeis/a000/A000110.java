@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.math.z.BellNumbers;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence0;
@@ -15,7 +15,8 @@ public class A000110 extends Sequence0 implements DirectSequence {
 
   @Override
   public Z next() {
-    return BellNumbers.bell(++mN);
+    final int index = ++mN;
+    return Functions.BELL.z(index);
   }
 
   @Override
@@ -25,7 +26,7 @@ public class A000110 extends Sequence0 implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    return BellNumbers.bell(n);
+    return Functions.BELL.z(n);
   }
 
 }

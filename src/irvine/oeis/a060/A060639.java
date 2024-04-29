@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.math.z.BellNumbers;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
@@ -18,8 +18,10 @@ public class A060639 extends MemorySequence {
     if (n == 0) {
       return Z.ONE;
     }
-    final Z s = Integers.SINGLETON.sum(1, n - 1, k -> Binomial.binomial(n, k).multiply(BellNumbers.bell(n - k).square().multiply(k).multiply(a(k))));
-    return BellNumbers.bell(n).square().subtract(s.divide(n));
+    final Z s = Integers.SINGLETON.sum(1, n - 1, k -> {
+      return Binomial.binomial(n, k).multiply(Functions.BELL.z(n - k).square().multiply(k).multiply(a(k)));
+    });
+    return Functions.BELL.z(n).square().subtract(s.divide(n));
   }
 }
 

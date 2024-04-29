@@ -72,6 +72,8 @@ public final class Functions {
   public static final Function1 LOOK_AND_SAY = new LookAndSay();
   /** Catalan function. */
   public static final Function1 CATALAN = new Catalan();
+  /** Bell numbers. */
+  public static final Function1 BELL = new BellNumbers();
   /** Number of partitions. */
   public static final Function1 PARTITIONS = new Partitions();
   /** Next power of two larger than the given number. */

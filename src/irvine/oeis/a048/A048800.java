@@ -1,6 +1,6 @@
 package irvine.oeis.a048;
 
-import irvine.math.z.BellNumbers;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -21,6 +21,6 @@ public class A048800 extends Sequence0 {
     if (mN > 0) {
       mF = mF.multiply(mN + 1);
     }
-    return BellNumbers.bell(mN).multiply(mF);
+    return Functions.BELL.z(mN).multiply(mF);
   }
 }

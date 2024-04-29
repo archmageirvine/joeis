@@ -1,6 +1,6 @@
 package irvine.oeis.a288;
 
-import irvine.math.z.BellNumbers;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
@@ -30,6 +30,8 @@ public class A288785 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sum(0, mN - mParm, j -> Binomial.binomial(mN, j).multiply(BellNumbers.bell(j)));
+    return Integers.SINGLETON.sum(0, mN - mParm, j -> {
+      return Binomial.binomial(mN, j).multiply(Functions.BELL.z(j));
+    });
   }
 }

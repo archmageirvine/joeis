@@ -13,6 +13,11 @@ public class A069363 extends A069295 {
 
   private int mN = 0;
 
+  /** Construct the sequence. */
+  public A069363() {
+    super(1);
+  }
+
   @Override
   protected Map<State, Z> initial(final int rows) {
     final HashMap<State, Z> res = new HashMap<>();

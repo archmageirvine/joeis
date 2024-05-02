@@ -1,6 +1,6 @@
 package irvine.oeis.a099;
 
-import irvine.math.EulerTotientSieve;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -16,7 +16,7 @@ public class A099957 extends Sequence1 {
   @Override
   public Z next() {
     mN += 2;
-    mA = mA.add(EulerTotientSieve.phi(mN));
+    mA = mA.add(Functions.PHI.l(mN));
     return mA;
   }
 }

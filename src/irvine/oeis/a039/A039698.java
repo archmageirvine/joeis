@@ -17,8 +17,7 @@ public class A039698 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      if (mPrime.isPrime(Functions.PHI.l(n) + 1)) {
+      if (mPrime.isPrime(Functions.PHI.l(++mN) + 1)) {
         return Z.valueOf(mN);
       }
     }

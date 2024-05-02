@@ -17,11 +17,10 @@ public class A044924 extends Sequence1 {
 
   @Override
   public Z next() {
-    final long n = ++mN;
     long prev = -1;
     int len = 0;
     final int[] sum = new int[2];
-    long m = n;
+    long m = ++mN;
     while (m != 0) {
       final long r = m % base();
       if (r == prev) {

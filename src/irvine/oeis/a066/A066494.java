@@ -20,8 +20,7 @@ public class A066494 extends Sequence1 {
     while (true) {
       final long q = mP;
       mP = mPrime.nextPrime(mP);
-      final long n = ++mN;
-      if (mP - q == Functions.PHI.l(n)) {
+      if (mP - q == Functions.PHI.l(++mN)) {
         return Z.valueOf(mN);
       }
     }

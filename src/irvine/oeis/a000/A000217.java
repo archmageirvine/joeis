@@ -38,8 +38,7 @@ public class A000217 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    return Functions.TRIANGULAR.z(n);
+    return Functions.TRIANGULAR.z(++mN);
   }
 }
 

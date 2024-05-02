@@ -23,8 +23,7 @@ public class A028890 extends A000045 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      final long u = Functions.DIGIT_PRODUCT.l(n);
+      final long u = Functions.DIGIT_PRODUCT.l(++mN);
       while (u > mFibo.last()) {
         mFibo.add(super.next().longValueExact());
       }

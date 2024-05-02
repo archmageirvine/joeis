@@ -15,8 +15,7 @@ public class A069215 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      if (Functions.PHI.l(n) == Functions.REVERSE.l(mN)) {
+      if (Functions.PHI.l(++mN) == Functions.REVERSE.l(mN)) {
         return Z.valueOf(mN);
       }
     }

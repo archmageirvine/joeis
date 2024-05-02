@@ -20,8 +20,7 @@ public class A000092 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      final Z c = Functions.HYPERSPHERE_POINTS.z(3, n);
+      final Z c = Functions.HYPERSPHERE_POINTS.z(3, ++mN);
       final double dev = Math.abs(c.doubleValue() - v(mN));
       if (dev > mDeviation) {
         mDeviation = dev;

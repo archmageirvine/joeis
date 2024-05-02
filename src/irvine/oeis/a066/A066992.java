@@ -18,8 +18,7 @@ public class A066992 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      mSum = mSum.add(new Q(Z.ONE, Functions.PHI.z(n)));
+      mSum = mSum.add(new Q(Z.ONE, Functions.PHI.z(++mN)));
       final Q t = mSum.multiply(Binomial.binomial(2 * mN, mN).square());
       if (t.isInteger()) {
         return t.toZ();

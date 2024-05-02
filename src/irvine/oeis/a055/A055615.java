@@ -14,7 +14,6 @@ public class A055615 extends Sequence1 {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    return Z.valueOf(Functions.MOBIUS.i(n) * mN);
+    return Z.valueOf(Functions.MOBIUS.i(++mN) * mN);
   }
 }

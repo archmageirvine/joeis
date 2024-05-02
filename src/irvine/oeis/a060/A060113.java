@@ -32,8 +32,7 @@ public class A060113 extends Sequence0 {
   @Override
   public Z next() {
     final int start = mN == -1 ? 1 : Functions.CATALAN.i(mN);
-    final long n = ++mN;
-    final int end = Functions.CATALAN.i(n);
+    final int end = Functions.CATALAN.i((long) ++mN);
     for (int k = start; k < end; ++k) {
       if (!mMarks.isSet(k)) {
         mLcm = mLcm.lcm(Z.valueOf(cycleLength(k)));

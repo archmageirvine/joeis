@@ -16,8 +16,7 @@ public class A063078 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      if (Functions.MOBIUS.i(n) == 1) {
+      if (Functions.MOBIUS.i(++mN) == 1) {
         final Z phi = Functions.PHI.z(mN);
         if (phi.compareTo(mBest) > 0) {
           mBest = phi;

@@ -15,8 +15,7 @@ public class A066498 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      if (Functions.PHI.z(n).mod(3) == 0) {
+      if (Functions.PHI.z(++mN).mod(3) == 0) {
         return Z.valueOf(mN);
       }
     }

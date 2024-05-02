@@ -15,7 +15,6 @@ public class A063475 extends Sequence3 {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    return Jaguar.factor(Functions.PHI.z(n).divide2()).sigma2();
+    return Jaguar.factor(Functions.PHI.z(++mN).divide2()).sigma2();
   }
 }

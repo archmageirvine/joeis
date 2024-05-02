@@ -189,25 +189,6 @@ public final class IntegerUtils {
   }
 
   /**
-   * Return the smallest power of 2 which is larger than <code>x</code>.
-   * If <code>x</code> &gt;= 2<sup>30</sup>, then the result is
-   * <code>Integer.MIN_VALUE</code> (which is the correct result if
-   * the result is considered to be unsigned). If <code>x &lt; 0</code>,
-   * then the result is 0.
-   *
-   * @param x value to round up
-   * @return a power of 2
-   */
-  public static int nextPowerOf2(int x) {
-    x |= x >> 1;
-    x |= x >> 2;
-    x |= x >> 4;
-    x |= x >> 8;
-    x |= x >> 16;
-    return x + 1;
-  }
-
-  /**
    * Maximum of an array of values.
    * @param values the possible values
    * @return the maximum

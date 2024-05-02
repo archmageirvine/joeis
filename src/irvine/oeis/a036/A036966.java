@@ -11,10 +11,16 @@ import irvine.oeis.Sequence1;
  */
 public class A036966 extends Sequence1 {
 
+  private final int mMinExponent;
   private long mN = 0;
 
-  protected int minExponent() {
-    return 3;
+  protected A036966(final int minExponent) {
+    mMinExponent = minExponent;
+  }
+
+  /** Construct the sequence. */
+  public A036966() {
+    this(3);
   }
 
   private boolean is(final long n) {
@@ -23,7 +29,7 @@ public class A036966 extends Sequence1 {
     }
     final FactorSequence fs = Jaguar.factor(n);
     for (final Z p : fs.toZArray()) {
-      if (fs.getExponent(p) < minExponent()) {
+      if (fs.getExponent(p) < mMinExponent) {
         return false;
       }
     }

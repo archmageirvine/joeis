@@ -14,8 +14,7 @@ public class A061249 extends Sequence0 {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    final Z f = Functions.FIBONACCI.z(n);
+    final Z f = Functions.FIBONACCI.z((long) ++mN);
     final Z f9 = f.divide(9);
     return f.add(1).subtract(f9.multiply(9)).multiply(Z.TEN.pow(f9)).subtract(1);
   }

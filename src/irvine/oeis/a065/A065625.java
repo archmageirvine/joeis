@@ -41,8 +41,7 @@ public class A065625 extends Sequence0 {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    final long t = Functions.TRINV.l(n);
+    final long t = Functions.TRINV.l(++mN);
     return Z.valueOf(rotateNodeRight(1 + (mN - ((t * (t + 1)) / 2)), ((t * (t + 3) / 2) - mN) + 1));
   }
 }

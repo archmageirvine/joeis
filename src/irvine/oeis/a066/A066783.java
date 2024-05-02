@@ -19,8 +19,7 @@ public class A066783 extends Sequence1 {
   public Z next() {
     while (true) {
       mP = mPrime.nextPrime(mP);
-      final long n = ++mN;
-      final long phi = Functions.PHI.l(n);
+      final long phi = Functions.PHI.l(++mN);
       if ((mP + 1) % phi == 0) {
         return Z.valueOf((mP + 1) / phi);
       }

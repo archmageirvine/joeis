@@ -16,8 +16,7 @@ public class A039767 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      if (LongUtils.gcd(Functions.PHI.l(n), mN - 1) == Functions.OMEGA.i(mN - 1)) {
+      if (LongUtils.gcd(Functions.PHI.l(++mN), mN - 1) == Functions.OMEGA.i(mN - 1)) {
         return Z.valueOf(mN);
       }
     }

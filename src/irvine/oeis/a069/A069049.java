@@ -16,8 +16,7 @@ public class A069049 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      final long phi = Functions.PHI.l(n);
+      final long phi = Functions.PHI.l(++mN);
       if (LongUtils.modPow(2, mN, mN) == LongUtils.modPow(2, phi, phi)) {
         return Z.valueOf(mN);
       }

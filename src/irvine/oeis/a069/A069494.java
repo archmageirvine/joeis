@@ -1,21 +1,21 @@
-package irvine.oeis.a066;
+package irvine.oeis.a069;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066765 Numbers k such that phi(k) &lt; k/5.
+ * A069457.
  * @author Sean A. Irvine
  */
-public class A066765 extends Sequence1 {
+public class A069494 extends Sequence1 {
 
-  private long mN = 30029;
+  private long mN = -1;
 
   @Override
   public Z next() {
     while (true) {
-      if (Functions.PHI.z(++mN).multiply(5).longValueExact() < mN) {
+      if (Functions.REVERSE.z(++mN).pow(3).equals(Functions.REVERSE.z(Z.valueOf(mN).pow(3)))) {
         return Z.valueOf(mN);
       }
     }

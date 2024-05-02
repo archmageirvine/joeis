@@ -18,8 +18,7 @@ public class A071758 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      mSum = mSum.add(new Q(Functions.MOBIUS.i(n), mN));
+      mSum = mSum.add(new Q(Functions.MOBIUS.i(++mN), mN));
       if (mSum.abs().compareTo(mBest.abs()) < 0) {
         mBest = mSum;
         return mSum.reciprocal().floor();

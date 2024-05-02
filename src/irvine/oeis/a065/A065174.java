@@ -27,7 +27,6 @@ public class A065174 extends Sequence1 {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    return Z.valueOf(LongUtils.z2n(LongUtils.n2z(n) + tz2(Math.abs(LongUtils.n2z(mN)))));
+    return Z.valueOf(LongUtils.z2n(LongUtils.n2z(++mN) + tz2(Math.abs(LongUtils.n2z(mN)))));
   }
 }

@@ -20,8 +20,7 @@ public class A046147 extends Sequence2 {
   @Override
   public Z next() {
     while (mA.isEmpty()) {
-      final long n = ++mN;
-      final Z phi = Functions.PHI.z(n);
+      final Z phi = Functions.PHI.z(++mN);
       final IntegersModMul rn = new IntegersModMul(mN);
       for (long q = 1; q <= mN; ++q) {
         if (LongUtils.gcd(q, mN) == 1 && rn.order(Z.valueOf(q)).equals(phi)) {

@@ -27,8 +27,7 @@ public class A004086 extends AbstractSequence {
 
   @Override
   public Z next() {
-    final Z n = Z.valueOf(++mN);
-    return Functions.REVERSE.z(n);
+    return Functions.REVERSE.z(++mN);
   }
 }
 

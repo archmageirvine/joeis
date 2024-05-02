@@ -14,8 +14,7 @@ public class A062789 extends Sequence1 {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    final Z phi = Functions.PHI.z(n);
+    final Z phi = Functions.PHI.z(++mN);
     return phi.multiply(phi.add(1)).gcd(Z.valueOf(mN));
   }
 }

@@ -16,8 +16,7 @@ public class A015126 extends Sequence1 {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    final long phi = Functions.PHI.l(n);
+    final long phi = Functions.PHI.l(++mN);
     if (mLeast.get(phi) == 0) {
       mLeast.set(phi, mN);
     }

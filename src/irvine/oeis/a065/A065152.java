@@ -14,8 +14,7 @@ public class A065152 extends Sequence1 {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    final Z phi = Functions.PHI.z(n);
+    final Z phi = Functions.PHI.z(++mN);
     return phi.subtract(Functions.PHI.z(phi)).subtract(Functions.PHI.z(mN - phi.longValueExact()));
   }
 }

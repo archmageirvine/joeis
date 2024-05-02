@@ -15,8 +15,7 @@ public class A051348 extends Sequence1 {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    Z f = Functions.FIBONACCI.z(n);
+    Z f = Functions.FIBONACCI.z((long) ++mN);
     for (final Z p : Jaguar.factor(mN).toZArray()) {
       f = f.divide(Functions.FIBONACCI.z(p));
     }

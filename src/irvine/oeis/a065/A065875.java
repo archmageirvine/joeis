@@ -16,8 +16,7 @@ public class A065875 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      if (Jaguar.factor(Functions.PHI.z(n)).unitarySigma().isProbablePrime()) {
+      if (Jaguar.factor(Functions.PHI.z(++mN)).unitarySigma().isProbablePrime()) {
         return Z.valueOf(mN);
       }
     }

@@ -17,8 +17,7 @@ public class A067573 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      final Q a = new Q(Functions.SIGMA.z(Functions.PHI.z(n)), Functions.SIGMA.z(mN));
+      final Q a = new Q(Functions.SIGMA.z(Functions.PHI.z(++mN)), Functions.SIGMA.z(mN));
       if (a.compareTo(mRecord) > 0) {
         mRecord = a;
         return Z.valueOf(mN);

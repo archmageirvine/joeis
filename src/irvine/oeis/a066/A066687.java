@@ -15,8 +15,7 @@ public class A066687 extends A000040 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      final long mod = Functions.PHI.l(n);
+      final long mod = Functions.PHI.l(++mN);
       if (super.next().mod(mod) == mN % mod) {
         return Z.valueOf(mN);
       }

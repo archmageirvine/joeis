@@ -19,8 +19,7 @@ public class A065557 extends Sequence1 {
     while (true) {
       final Z t = mA.add(mB);
       mA = mB;
-      final long n = ++mN;
-      mB = Functions.PHI.z(n);
+      mB = Functions.PHI.z(++mN);
       if (mB.equals(t)) {
         return Z.valueOf(mN);
       }

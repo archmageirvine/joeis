@@ -14,7 +14,6 @@ public class A055734 extends Sequence1 {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    return Z.valueOf(Functions.OMEGA.i(Functions.PHI.z(n)));
+    return Functions.OMEGA.z(Functions.PHI.z(++mN));
   }
 }

@@ -17,8 +17,7 @@ public class A062958 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z prev = mPhi;
-      final long n = ++mN;
-      mPhi = Functions.PHI.z(n);
+      mPhi = Functions.PHI.z(++mN);
       if (mPhi.compareTo(prev.multiply2()) < 0) {
         return Z.valueOf(mN - 1);
       }

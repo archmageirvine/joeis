@@ -14,7 +14,6 @@ public class A062007 extends A000040 {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    return super.next().multiply(Functions.MOBIUS.i(n));
+    return super.next().multiply(Functions.MOBIUS.i(++mN));
   }
 }

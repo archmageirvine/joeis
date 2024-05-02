@@ -16,8 +16,7 @@ public class A067196 extends A002321 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      mSum = mSum.add(Functions.MOBIUS.i(Functions.PHI.l(n)));
+      mSum = mSum.add(Functions.MOBIUS.i(Functions.PHI.l(++mN)));
       if (mSum.equals(super.next())) {
         return Z.valueOf(mN);
       }

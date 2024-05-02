@@ -15,8 +15,7 @@ public class A064020 extends A013928 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      if (super.next().equals(Functions.PHI.z(n))) {
+      if (super.next().equals(Functions.PHI.z(++mN))) {
         return Z.valueOf(mN);
       }
     }

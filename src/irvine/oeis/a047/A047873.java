@@ -15,8 +15,7 @@ public class A047873 extends Sequence1 {
   @Override
   public Z next() {
     Z max = Z.ONE;
-    final long n = ++mN;
-    final long tn = Functions.TRIANGULAR.l(n);
+    final long tn = Functions.TRIANGULAR.l(++mN);
     for (long r = 1; r < mN; ++r) {
       max = max.max(Functions.TRIANGULAR.z(tn - Functions.TRIANGULAR.l(r - 1)).add(mN - r).divide(mN - r + 1));
     }

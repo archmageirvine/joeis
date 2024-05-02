@@ -18,8 +18,7 @@ public class A039774 extends Sequence1 {
   public Z next() {
     while (true) {
       final FactorSequence fs = Jaguar.factor(mN);
-      final long n = ++mN;
-      final long phi = Functions.PHI.l(n);
+      final long phi = Functions.PHI.l(++mN);
       long s1 = 0;
       long s2 = 0;
       for (final Z p : fs.toZArray()) {

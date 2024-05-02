@@ -15,8 +15,7 @@ public class A066705 extends Sequence1 {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    final Z t = InverseEuler.inversePhi(Functions.PHI.z(n)).floor(Z.valueOf(mN - 1));
+    final Z t = InverseEuler.inversePhi(Functions.PHI.z(++mN)).floor(Z.valueOf(mN - 1));
     return t == null ? Z.ZERO : t;
   }
 }

@@ -15,8 +15,7 @@ public class A039770 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      if (Functions.PHI.z(n).isSquare()) {
+      if (Functions.PHI.z(++mN).isSquare()) {
         return Z.valueOf(mN);
       }
     }

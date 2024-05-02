@@ -16,8 +16,7 @@ public class A000036 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      final Z c = Functions.HYPERSPHERE_POINTS.z(2, n);
+      final Z c = Functions.HYPERSPHERE_POINTS.z(2, ++mN);
       final double dev = c.doubleValue() - Math.PI * mN;
       final double adev = Math.abs(dev);
       if (adev > mBiggestDeviation) {

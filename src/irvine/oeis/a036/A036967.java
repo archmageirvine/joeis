@@ -6,8 +6,8 @@ package irvine.oeis.a036;
  */
 public class A036967 extends A036966 {
 
-  @Override
-  protected int minExponent() {
-    return 4;
+  /** Construct the sequence. */
+  public A036967() {
+    super(4);
   }
 }

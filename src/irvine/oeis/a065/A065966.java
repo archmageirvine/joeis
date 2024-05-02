@@ -15,8 +15,7 @@ public class A065966 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      if (Functions.PHI.z(n).divide2().isProbablePrime()) {
+      if (Functions.PHI.z(++mN).divide2().isProbablePrime()) {
         return Z.valueOf(mN);
       }
     }

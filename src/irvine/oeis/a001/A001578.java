@@ -20,8 +20,7 @@ public class A001578 extends Sequence1 {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    final Z f = Functions.FIBONACCI.z(n);
+    final Z f = Functions.FIBONACCI.z(++mN);
     final FactorSequence fs = Jaguar.factor(f);
     final Z[] factors = fs.toZArray();
     for (final Z p : factors) {

@@ -16,8 +16,7 @@ public class A122254 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      final Z[] p = Jaguar.factor(Functions.PHI.z(n)).toZArray();
+      final Z[] p = Jaguar.factor(Functions.PHI.z(++mN)).toZArray();
       if (p.length == 0 || p[p.length - 1].compareTo(Z.THREE) <= 0) {
         return Z.valueOf(mN);
       }

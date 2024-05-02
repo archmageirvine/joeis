@@ -15,8 +15,7 @@ public class A058161 extends Sequence1 {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    final Z res = mF.divide(Functions.PHI.z(n));
+    final Z res = mF.divide(Functions.PHI.z(++mN));
     mF = mF.multiply(mN);
     return res;
   }

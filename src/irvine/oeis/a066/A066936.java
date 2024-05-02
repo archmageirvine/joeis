@@ -15,8 +15,7 @@ public class A066936 extends A000040 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      if (super.next().subtract(1).mod(Functions.PHI.z(n)).isZero()) {
+      if (super.next().subtract(1).mod(Functions.PHI.z(++mN)).isZero()) {
         return Z.valueOf(mN);
       }
     }

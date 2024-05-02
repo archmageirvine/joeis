@@ -20,8 +20,7 @@ public class A028415 extends Sequence1 {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    mSum = mSum.add(new Q(1L, Functions.PHI.l(n)));
+    mSum = mSum.add(new Q(1L, Functions.PHI.l(++mN)));
     return select(mSum);
   }
 }

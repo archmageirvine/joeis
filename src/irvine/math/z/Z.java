@@ -535,6 +535,18 @@ public class Z extends Number implements Comparable<Z> {
   }
 
   /**
+   * Compute the quotient and remainder of this integer divided by <code>n</code>.
+   * The first element of the returned array is the quotient and the second
+   * element is the remainder.
+   * @param n number to divide by
+   * @return quotient and remainder
+   * @exception ArithmeticException if <code>n</code> is 0.
+   */
+  public Z[] divideAndRemainder(final long n) {
+    return Div.divideAndRemainder(this, Z.valueOf(n));
+  }
+
+  /**
    * Divide this integer by the specified long and return the
    * quotient. After this call, it is possible to call <code>auxiliary()</code>
    * to retrieve the corresponding remainder.

@@ -16,8 +16,7 @@ public class A062820 extends A000040 {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    mSum = ZUtils.mobiusAdd(Functions.MOBIUS.i(n), mSum, super.next());
+    mSum = ZUtils.mobiusAdd(Functions.MOBIUS.i(++mN), mSum, super.next());
     return mSum;
   }
 }

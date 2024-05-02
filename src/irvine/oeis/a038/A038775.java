@@ -15,8 +15,7 @@ public class A038775 extends A038774 {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    final Z target = Functions.CATALAN.z(n);
+    final Z target = Functions.CATALAN.z(++mN);
     do {
       mSum = mSum.add(super.next());
       ++mM;

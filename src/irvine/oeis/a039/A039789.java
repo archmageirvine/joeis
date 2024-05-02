@@ -17,8 +17,7 @@ public class A039789 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      final Z phi = Functions.PHI.z(n);
+      final Z phi = Functions.PHI.z(++mN);
       final FactorSequence fs = Jaguar.factor(mN + 1);
       long s1 = 0;
       long s2 = 0;

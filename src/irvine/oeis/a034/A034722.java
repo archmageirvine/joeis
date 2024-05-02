@@ -50,8 +50,7 @@ public class A034722 extends Sequence1 {
   public Z next() {
     while (true) {
       while (mA.isEmpty() || mA.first().mValue.compareTo(mF) >= 0) {
-        final long n = ++mN;
-        mF = Functions.FIBONACCI.z(n);
+        mF = Functions.FIBONACCI.z(++mN);
         mA.add(new State(mF, mN));
       }
       final State s = mA.pollFirst();

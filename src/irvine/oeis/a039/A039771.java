@@ -16,8 +16,7 @@ public class A039771 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      if (ZUtils.isCube(Functions.PHI.z(n))) {
+      if (ZUtils.isCube(Functions.PHI.z(++mN))) {
         return Z.valueOf(mN);
       }
     }

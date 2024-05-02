@@ -15,8 +15,7 @@ public class A065528 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      if (Functions.PHI.z(n).isPower() != null) {
+      if (Functions.PHI.z(++mN).isPower() != null) {
         return Z.valueOf(mN);
       }
     }

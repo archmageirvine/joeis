@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.math.Hypersphere;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -16,7 +16,8 @@ public class A000099 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Z c = Hypersphere.countPoints(2, ++mN);
+      final long n = ++mN;
+      final Z c = Functions.HYPERSPHERE_POINTS.z(2, n);
       final double dev = Math.abs(c.doubleValue() - Math.PI * mN);
       if (dev > mDeviation) {
         mDeviation = dev;

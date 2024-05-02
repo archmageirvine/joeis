@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
-import irvine.math.Hypersphere;
 import irvine.math.cr.CR;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -30,7 +30,7 @@ public class A000223 extends Sequence1 {
   public Z next() {
     final Z nz = mSeq.next();
     final int n = nz.intValue();
-    final Z c = Hypersphere.countPoints(3, n);
+    final Z c = Functions.HYPERSPHERE_POINTS.z(3, n);
     final Q cr = new Q(c, Z.ONE).subtract(v(n));
     return cr.add(Q.HALF).toZ();
   }

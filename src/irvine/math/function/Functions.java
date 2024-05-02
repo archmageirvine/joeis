@@ -109,4 +109,6 @@ public final class Functions {
   public static final Function2 ROTATE_RIGHT = new RotateRight();
   /** Multifactorial (including double factorial). */
   public static final Function2 MULTIFACTORIAL = new Multifactorial();
+  /** Number of points in a hypersphere of given radius in a given number of dimensions. */
+  public static final Function2 HYPERSPHERE_POINTS = new HyperspherePoints();
 }

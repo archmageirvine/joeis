@@ -3,7 +3,7 @@ package irvine.oeis.a039;
 import irvine.math.z.Z;
 
 /**
- * A039994 Primes embedded in prime(n) as subsequences.
+ * A039994 Number of primes embedded in prime(n) as subsequences.
  * @author Sean A. Irvine
  */
 public class A039994 extends A039995 {

@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 import irvine.math.z.Z;
 
 /**
- * A069370 12 X n binary arrays with a path of adjacent 1's from top row to bottom row.
+ * A069370 Number of 12 X n binary arrays with a path of adjacent 1's from top row to bottom row.
  * @author Sean A. Irvine
  */
 public class A069370 extends A069363 {

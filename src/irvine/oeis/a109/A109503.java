@@ -5,7 +5,7 @@ package irvine.oeis.a109;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A109503 Numbers n such that 66 * 10^n + 1 is prime.
+ * A109503 Numbers k such that 66 * 10^k + 1 is prime.
  * @author Georg Fischer
  */
 public class A109503 extends PowerFactorPrimeSequence {

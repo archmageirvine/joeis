@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a028.A028834;
 
 /**
- * A129630 Numbers n such that sum of digits of n+1 is a prime.
+ * A129630 Numbers k such that sum of digits of (k+1) is a prime.
  * @author Georg Fischer
  */
 public class A129630 extends Sequence1 {

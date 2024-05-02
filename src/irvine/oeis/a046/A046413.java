@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000042;
 
 /**
- * A046413 Numbers n such that the repunit of length n (11...11, with n 1's) has exactly 2 prime factors.
+ * A046413 Numbers k such that the repunit of length k (11...11, with k 1's) has exactly 2 prime factors.
  * @author Sean A. Irvine
  */
 public class A046413 extends FilterPositionSequence {

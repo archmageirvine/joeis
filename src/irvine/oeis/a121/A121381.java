@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A121381 a(n) = Ceiling(n*Pi).
+ * A121381 a(n) = ceiling(n*Pi).
  * @author Georg Fischer
  */
 public class A121381 extends FloorSequence {

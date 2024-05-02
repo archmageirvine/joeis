@@ -4,7 +4,7 @@ import irvine.oeis.a000.A000930;
 import irvine.oeis.a064.A064105;
 
 /**
- * A020942 First column of 3rd-order Zeckendorf array.
+ * A020942 First column of 3rd-order Zeckendorf array A136189.
  * @author Sean A. Irvine
  */
 public class A020942 extends A064105 {

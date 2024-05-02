@@ -11,7 +11,7 @@ public class A069344 extends Sequence1 {
 
   // Brute force, only good for a few terms
 
-  // Note axis of symmetry is at right angles to what set ones.
+  // Note axis of symmetry is at right angles to the required path.
   // It should be possible to do something like A069295 here, but the details are tricky.
   // One could try constructing a diagonal at a time, but the rules for connectedness of the 1s are hard to handle
 
@@ -65,6 +65,4 @@ public class A069344 extends Sequence1 {
   public Z next() {
     return Z.valueOf(countByBruteForce(++mN));
   }
-
-
 }

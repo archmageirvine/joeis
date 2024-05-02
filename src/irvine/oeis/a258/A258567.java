@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001694;
 
 /**
- * A258567 Smallest prime factors of powerful numbers (A001694).
+ * A258567 a(1) = 1; thereafter a(n) = smallest prime factor of the powerful number A001694(n).
  * @author Georg Fischer
  */
 public class A258567 extends A001694 {

@@ -5,7 +5,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a005.A005195;
 
 /**
- * A144958 A005195(n) - A005195(n-1).
+ * A144958 Number of unlabeled acyclic graphs covering n vertices.
  * @author Georg Fischer
  */
 public class A144958 extends DifferenceSequence {

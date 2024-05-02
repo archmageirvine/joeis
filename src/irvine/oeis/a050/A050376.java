@@ -2,9 +2,9 @@ package irvine.oeis.a050;
 
 import java.util.Map;
 
-import irvine.math.PrimePowers;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.a000.A000961;
 import irvine.util.Pair;
 
 /**
@@ -26,19 +26,18 @@ public class A050376 extends AbstractSequence {
     super(1);
   }
 
-  private final PrimePowers mPP = new PrimePowers();
-
+  private final A000961 mPP = new A000961();
   {
-    mPP.next(); // skip 1
+    mPP.nextEntry(); // skip 1
   }
 
   @Override
   public Z next() {
     while (true) {
-      final Map.Entry<Long, Pair<Long, Long>> e = mPP.next();
+      final Map.Entry<Z, Pair<Long, Long>> e = mPP.nextEntry();
       final long exponent = e.getValue().right();
       if ((exponent & (exponent - 1)) == 0) {
-        return Z.valueOf(e.getKey());
+        return e.getKey();
       }
     }
   }

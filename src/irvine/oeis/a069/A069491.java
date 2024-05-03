@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003418;
 
 /**
- * A069457.
+ * A069491 a(n) = lcm(1..n) / ((n+1)(n+2)...(n+k)) where k is the largest number which gives an integral value.
  * @author Sean A. Irvine
  */
 public class A069491 extends Sequence1 {

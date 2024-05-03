@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a030.A030078;
 
 /**
- * A069457.
+ * A069487 Areas of Pythagorean triangles (A069482, A069484, A069486).
  * @author Sean A. Irvine
  */
 public class A069487 extends Sequence1 {

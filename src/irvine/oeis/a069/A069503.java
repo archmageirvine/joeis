@@ -3,25 +3,25 @@ package irvine.oeis.a069;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
-import irvine.oeis.a002.A002779;
+import irvine.oeis.a002.A002385;
 
 /**
- * A069500 a(1) = 1; a(n) = smallest multiple of a(n-1) which is a palindromic square.
+ * A069503 a(1) = 2; a(n) = smallest palindromic prime of the form k*a(n-1) + 1.
  * @author Sean A. Irvine
  */
-public class A069500 extends Sequence1 {
+public class A069503 extends Sequence1 {
 
   private Z mA = null;
-  private final Sequence mPalindromicSquares = new A002779().skip(2);
+  private final Sequence mPalindromicPrimes = new A002385().skip();
 
   @Override
   public Z next() {
     if (mA == null) {
-      mA = Z.ONE;
+      mA = Z.TWO;
     } else {
       while (true) {
-        final Z t = mPalindromicSquares.next();
-        if (t.mod(mA).isZero()) {
+        final Z t = mPalindromicPrimes.next();
+        if (t.mod(mA).equals(Z.ONE)) {
           mA = t;
           break;
         }

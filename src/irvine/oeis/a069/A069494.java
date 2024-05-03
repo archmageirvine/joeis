@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069457.
+ * A069494 Numbers n such that (reversal(n))^3 = reversal(n^3). Ignore leading 0's.
  * @author Sean A. Irvine
  */
 public class A069494 extends Sequence1 {

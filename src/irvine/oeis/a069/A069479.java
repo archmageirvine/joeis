@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069457.
+ * A069479 Smallest n-tuply-lonely non-twin prime.
  * @author Sean A. Irvine
  */
 public class A069479 extends Sequence1 {

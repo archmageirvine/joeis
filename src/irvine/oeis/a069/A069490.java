@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069457.
+ * A069490 Primes &gt; 1000 in which every substring of lengths 2 and 3 are also prime.
  * @author Sean A. Irvine
  */
 public class A069490 extends Sequence1 {

@@ -6,18 +6,18 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002779;
 
 /**
- * A069500 a(1) = 1; a(n) = smallest multiple of a(n-1) which is a palindromic square.
+ * A069501 a(1) = 9; a(n) = smallest multiple of a(n-1) which is a palindromic square.
  * @author Sean A. Irvine
  */
-public class A069500 extends Sequence1 {
+public class A069501 extends Sequence1 {
 
   private Z mA = null;
-  private final Sequence mPalindromicSquares = new A002779().skip(2);
+  private final Sequence mPalindromicSquares = new A002779().skip(4);
 
   @Override
   public Z next() {
     if (mA == null) {
-      mA = Z.ONE;
+      mA = Z.NINE;
     } else {
       while (true) {
         final Z t = mPalindromicSquares.next();

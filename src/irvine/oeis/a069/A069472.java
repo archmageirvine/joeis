@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001359;
 
 /**
- * A069457 Lowest primes in twin packs.
+ * A069472 Smallest twin prime in a sequence of exactly n disjoint twin pairs, sandwiched between non-twins.
  * @author Sean A. Irvine
  */
 public class A069472 extends Sequence1 {

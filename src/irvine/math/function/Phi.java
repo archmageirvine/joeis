@@ -34,7 +34,7 @@ public class Phi extends AbstractFunction1 {
     }
     if (n >= mMax) {
       // With more effort this could be made incremental
-      mPhi.truncate(0);
+      mPhi.truncate(2);
       mMax = mMax == 0 ? INITIAL_SIZE : 2 * n;
       for (long k = 2; k < mMax; ++k) {
         if (mPhi.get(k) == 0) {

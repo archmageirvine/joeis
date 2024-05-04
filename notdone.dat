@@ -2394,3 +2394,4 @@ A069450 Half the number of 5 X n binary arrays with no path of adjacent 1's or a
 A069451 Half the number of 6 X n binary arrays with no path of adjacent 1's or adjacent 0's from top to bottom or side to side.
 A069452 Half the number of 7 X n binary arrays with no path of adjacent 1's or adjacent 0's from top to bottom or side to side.
 A069481 Number of conjugacy classes of irreducible maximal finite subgroups of GL_n(Q) (the group of invertible rational n X n matrices).
+A069544 Continued fraction for Feigenbaum's constant - 4 = 0.6692...

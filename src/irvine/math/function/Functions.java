@@ -46,6 +46,8 @@ public final class Functions {
   public static final Function1 SOPF = new Sopf();
   /** Sum of prime divisors counted with multiplicity function. */
   public static final Function1 SOPFR = new Sopfr();
+  /** The unique square free integer dividing a number. */
+  public static final Function1 CORE = new Core();
   /** Mobius function. */
   public static final Function1 MOBIUS = new Mobius();
   /** Moebius function. */

@@ -24,7 +24,7 @@ public class Sigma extends AbstractFunction1 {
     if (n < 0) {
       return 0;
     }
-    if (n >= 2 * mMax) {
+    if (n >= INITIAL_SIZE && n >= 2 * mMax) {
       // Request value is much larger than the current table, use factorization
       return Jaguar.factor(n).sigma().longValueExact();
     }

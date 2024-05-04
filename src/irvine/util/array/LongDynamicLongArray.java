@@ -93,6 +93,28 @@ public class LongDynamicLongArray implements Serializable {
   }
 
   /**
+   * Multiple a value to the entry at the specified index, returning the new value.
+   * @param index index of entry
+   * @param value value to multiply
+   * @return the value after multiplication
+   * @exception ArrayIndexOutOfBoundsException if the index is negative.
+   */
+  public long multiply(final long index, final long value) {
+    return getChunk(index)[(int) (index & CHUNK_MASK)] *= value;
+  }
+
+  /**
+   * Divide a value into the entry at the specified index, returning the new value.
+   * @param index index of entry
+   * @param value value to divide by
+   * @return the value after division
+   * @exception ArrayIndexOutOfBoundsException if the index is negative.
+   */
+  public long divide(final long index, final long value) {
+    return getChunk(index)[(int) (index & CHUNK_MASK)] /= value;
+  }
+
+  /**
    * Increment the entry at the specified index returning the new value.
    * @param index index of entry
    * @return the value after incrementing

@@ -23,7 +23,7 @@ public class Sopfr extends AbstractFunction1 {
     if (n < 2) {
       return 0;
     }
-    if (n >= 2 * mMax) {
+    if (n >= INITIAL_SIZE && n >= 2 * mMax) {
       // Request value is much larger than the current table, use factorization
       return Jaguar.factor(n).sopfr().longValueExact();
     }
@@ -32,10 +32,10 @@ public class Sopfr extends AbstractFunction1 {
       // Rather than grow to exactly n, compute out to 2*n to avoid too many resize events
       final long prev = mMax - 1;
       mMax = mMax == 0 ? INITIAL_SIZE : 2 * n;
-      for (long k = 2; k < mMax; k = mPrime.nextPrime(k)) {
-        for (long q = k; q < mMax; q *= k) {
+      for (long p = 2; p < mMax; p = mPrime.nextPrime(p)) {
+        for (long q = p; q < mMax; q *= p) {
           for (long j = prev + q - prev % q; j < mMax; j += q) {
-            mSopfr.add(j, k);
+            mSopfr.add(j, p);
           }
         }
       }

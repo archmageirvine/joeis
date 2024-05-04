@@ -14,9 +14,10 @@ public class Phi extends AbstractFunction1 {
 
   private static final long INITIAL_SIZE = 1024;
   private final LongDynamicLongArray mPhi = new LongDynamicLongArray();
-  private long mMax = 0;
+  private long mMax = 2;
   {
     mPhi.set(0, 1L); // Convention
+    mPhi.set(1, 1L); // Convention
   }
 
   @Override
@@ -27,22 +28,23 @@ public class Phi extends AbstractFunction1 {
       }
       return l(-n);
     }
-    if (n >= 2 * mMax) {
+    if (n >= INITIAL_SIZE && n >= 2 * mMax) {
       // Request value is much larger than the current table, use factorization
       return Jaguar.factor(n).phi().longValueExact();
     }
     if (n >= mMax) {
-      // We need to resize the table to accommodate n.
-      // Rather than grow to exactly n, compute out to 2*n to avoid too many resize events
-      for (long k = mMax; k < 2 * mMax; ++k) {
-        mPhi.set(k, k);
-      }
-      final long prev = mMax - 1;
+      // With more effort this could be made incremental
+      mPhi.truncate(0);
       mMax = mMax == 0 ? INITIAL_SIZE : 2 * n;
-      for (long k = 1; k < mMax; ++k) {
-        final long pd = -mPhi.get(k);
-        for (long j = prev + 2 * k - prev % k; j < mMax; j += k) {
-          mPhi.add(j, pd);
+      for (long k = 2; k < mMax; ++k) {
+        if (mPhi.get(k) == 0) {
+          mPhi.set(k, k - 1);
+          for (long j = 2 * k; j < mMax; j += k) {
+            if (mPhi.get(j) == 0) {
+              mPhi.set(j, j);
+            }
+            mPhi.set(j, mPhi.get(j) / k * (k - 1));
+          }
         }
       }
     }

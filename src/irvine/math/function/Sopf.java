@@ -23,7 +23,7 @@ public class Sopf extends AbstractFunction1 {
     if (n < 2) {
       return 0;
     }
-    if (n >= 2 * mMax) {
+    if (n >= INITIAL_SIZE && n >= 2 * mMax) {
       // Request value is much larger than the current table, use factorization
       return Jaguar.factor(n).sopf().longValueExact();
     }
@@ -32,9 +32,9 @@ public class Sopf extends AbstractFunction1 {
       // Rather than grow to exactly n, compute out to 2*n to avoid too many resize events
       final long prev = mMax - 1;
       mMax = mMax == 0 ? INITIAL_SIZE : 2 * n;
-      for (long k = 2; k < mMax; k = mPrime.nextPrime(k)) {
-        for (long j = prev + k - prev % k; j < mMax; j += k) {
-          mSopf.increment(k);
+      for (long p = 2; p < mMax; p = mPrime.nextPrime(p)) {
+        for (long j = prev + p - prev % p; j < mMax; j += p) {
+          mSopf.add(j, p);
         }
       }
     }

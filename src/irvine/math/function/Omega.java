@@ -28,7 +28,7 @@ public class Omega extends AbstractFunction1 {
     if (n < 2) {
       return 0;
     }
-    if (n >= 2 * mMax) {
+    if (n >= INITIAL_SIZE && n >= 2 * mMax) {
       // Request value is much larger than the current table, use factorization
       return Jaguar.factor(n).omega();
     }

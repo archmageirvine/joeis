@@ -14,6 +14,7 @@ import irvine.util.array.LongDynamicLongArray;
 public class GreatestPrimeFactor extends AbstractFunction1 {
 
   private static final long INITIAL_SIZE = 1024;
+  private static final long MAX_SIZE = 1L << 24;
   private final Fast mPrime = new Fast();
   private final LongDynamicLongArray mGpf = new LongDynamicLongArray();
   private long mMax = 0;
@@ -26,7 +27,7 @@ public class GreatestPrimeFactor extends AbstractFunction1 {
       }
       return 1;
     }
-    if (n >= INITIAL_SIZE && n >= 2 * mMax) {
+    if (n >= MAX_SIZE || (n >= INITIAL_SIZE && n >= 2 * mMax)) {
       // Request value is much larger than the current table, use factorization
       return Jaguar.factor(n).largestPrimeFactor().longValueExact();
     }
@@ -34,7 +35,7 @@ public class GreatestPrimeFactor extends AbstractFunction1 {
       // We need to resize the table to accommodate n.
       // Rather than grow to exactly n, compute out to 2*n to avoid too many resize events
       final long prev = mMax - 1;
-      mMax = mMax == 0 ? INITIAL_SIZE : 2 * n;
+      mMax = Math.min(mMax == 0 ? INITIAL_SIZE : 2 * n, MAX_SIZE);
       for (long p = 2; p < mMax; p = mPrime.nextPrime(p)) {
         for (long j = prev + p - prev % p; j < mMax; j += p) {
           mGpf.set(j, p);

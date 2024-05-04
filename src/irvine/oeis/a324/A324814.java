@@ -14,6 +14,6 @@ public class A324814 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A324814() {
-    super(1, 1, new A156552(), (k, v) -> Functions.SIGMA.z(v).and(Z.THREE).equals(Z.TWO));
+    super(1, 2, new A156552().skip(), (k, v) -> Functions.SIGMA.z(v).and(Z.THREE).equals(Z.TWO));
   }
 }

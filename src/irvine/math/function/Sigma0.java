@@ -16,9 +16,6 @@ public class Sigma0 extends AbstractFunction1 {
   private static final long MAX_SIZE = 1L << 24;
   private final LongDynamicLongArray mSigma0 = new LongDynamicLongArray();
   private long mMax = 0;
-  {
-    mSigma0.set(0, 1L); // Convention
-  }
 
   @Override
   public long l(final long n) {

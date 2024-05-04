@@ -32,23 +32,14 @@ public class Phi extends AbstractFunction1 {
       // Request value is much larger than the current table, use factorization
       return Jaguar.factor(n).phi().longValueExact();
     }
-    if (n >= mMax) {
-      // With more effort this could be made incremental
-      mPhi.truncate(2);
-      mMax = mMax == 0 ? INITIAL_SIZE : 2 * n;
-      for (long k = 2; k < mMax; ++k) {
-        if (mPhi.get(k) == 0) {
-          mPhi.set(k, k - 1);
-          for (long j = 2 * k; j < mMax; j += k) {
-            if (mPhi.get(j) == 0) {
-              mPhi.set(j, j);
-            }
-            mPhi.set(j, mPhi.get(j) / k * (k - 1));
-          }
-        }
-      }
+    final long phi = mPhi.get(n);
+    if (phi != 0) {
+      return phi;
     }
-    return mPhi.get(n);
+    final long t = Jaguar.factor(n).phi().longValueExact();
+    mPhi.set(n, t);
+    mMax = Math.max(mMax, 2 * n);
+    return t;
   }
 
   @Override

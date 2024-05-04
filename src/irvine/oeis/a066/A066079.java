@@ -2,7 +2,7 @@ package irvine.oeis.a066;
 
 import java.util.HashSet;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
@@ -21,7 +21,7 @@ public class A066079 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z n = mA.next();
-      if (mSquareFreeParts.add(Jaguar.factor(n).core())) {
+      if (mSquareFreeParts.add(Functions.CORE.z(n))) {
         return n;
       }
     }

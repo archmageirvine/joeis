@@ -1,6 +1,6 @@
 package irvine.oeis.a069;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002808;
 
@@ -12,7 +12,7 @@ public class A069116 extends FilterSequence {
 
   /** Construct the sequence. */
   public A069116() {
-    super(1, new A002808(), k -> Jaguar.factor(k).core().square().compareTo(k) > 0);
+    super(1, new A002808(), k -> Functions.CORE.z(k).square().compareTo(k) > 0);
   }
 }
 

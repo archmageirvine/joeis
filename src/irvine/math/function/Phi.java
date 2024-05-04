@@ -6,15 +6,14 @@ import irvine.util.array.LongDynamicLongArray;
 
 /**
  * Compute the Euler totient function.
- * For small values it will consult a table (which can grow as required),
+ * For small values it will consult a table,
  * for large specific values it will use factorization.
  * @author Sean A. Irvine
  */
 public class Phi extends AbstractFunction1 {
 
-  private static final long INITIAL_SIZE = 1024;
+  private static final long MAX_REMEMBER = 1L << 24;
   private final LongDynamicLongArray mPhi = new LongDynamicLongArray();
-  private long mMax = 2;
   {
     mPhi.set(0, 1L); // Convention
     mPhi.set(1, 1L); // Convention
@@ -28,7 +27,7 @@ public class Phi extends AbstractFunction1 {
       }
       return l(-n);
     }
-    if (n >= INITIAL_SIZE && n >= 2 * mMax) {
+    if (n >= MAX_REMEMBER) {
       // Request value is much larger than the current table, use factorization
       return Jaguar.factor(n).phi().longValueExact();
     }
@@ -38,7 +37,6 @@ public class Phi extends AbstractFunction1 {
     }
     final long t = Jaguar.factor(n).phi().longValueExact();
     mPhi.set(n, t);
-    mMax = Math.max(mMax, 2 * n);
     return t;
   }
 

@@ -1,6 +1,5 @@
 package irvine.oeis.a069;
 
-import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -8,15 +7,17 @@ import irvine.oeis.Sequence1;
  * A069522.
  * @author Sean A. Irvine
  */
-public class A069550 extends Sequence1 {
+public class A069562 extends Sequence1 {
 
-  private long mN = 11;
+  private Z mN = Z.EIGHT;
 
   @Override
   public Z next() {
     while (true) {
-      if (Functions.CORE.l(++mN) == Functions.BIG_OMEGA.l(mN)) {
-        return Z.valueOf(mN);
+      mN = mN.add(1);
+      final Z t = mN.makeOdd();
+      if (t.compareTo(Z.ONE) > 0 && t.isSquare()) {
+        return mN;
       }
     }
   }

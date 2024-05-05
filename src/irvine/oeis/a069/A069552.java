@@ -8,14 +8,14 @@ import irvine.oeis.Sequence1;
  * A069522.
  * @author Sean A. Irvine
  */
-public class A069550 extends Sequence1 {
+public class A069552 extends Sequence1 {
 
-  private long mN = 11;
+  private long mN = 0;
 
   @Override
   public Z next() {
     while (true) {
-      if (Functions.CORE.l(++mN) == Functions.BIG_OMEGA.l(mN)) {
+      if (Functions.PHI.z(++mN).equals(Functions.SIGMA.z(Functions.CORE.l(mN)))) {
         return Z.valueOf(mN);
       }
     }

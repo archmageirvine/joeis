@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
- * A069522.
+ * A069556 Primes in which the k-th digit (counting from the right) is either a nonzero multiple of k or a divisor of k; furthermore the digit 1 is allowed only when k has no other divisors &lt; 10.
  * @author Sean A. Irvine
  */
 public class A069556 extends Sequence1 {

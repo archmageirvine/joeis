@@ -5,7 +5,7 @@ package irvine.oeis.a275;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A275323 Numbers n such that (19*10^n + 161)/9 is prime.
+ * A275323 Numbers k such that (19*10^k + 161)/9 is prime.
  * @author Georg Fischer
  */
 public class A275323 extends PowerFactorPrimeSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A189373 Perfect numbers n such that n+1 is prime.
+ * A189373 Perfect numbers k such that k+1 is prime.
  *
  * @author Georg Fischer
  */

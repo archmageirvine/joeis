@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A069522.
+ * A069563 a(1) = 1, a(2) = 4; for n &gt; 2, a(n) = k*a(n-1) + 1 where k is smallest number &gt; 1 such that k*a(n-1) + 1 is a multiple of n.
  * @author Sean A. Irvine
  */
 public class A069563 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069522.
+ * A069562 Numbers, m, whose odd part (largest odd divisor, A000265(m)) is a nontrivial square.
  * @author Sean A. Irvine
  */
 public class A069562 extends Sequence1 {

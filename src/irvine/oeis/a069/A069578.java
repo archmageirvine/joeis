@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069522.
+ * A069578 Numbers n such that n - A001414(n) = reversal of n + A001414(n).
  * @author Sean A. Irvine
  */
 public class A069578 extends Sequence1 {

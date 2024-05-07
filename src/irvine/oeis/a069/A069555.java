@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A069522.
+ * A069555 a(n) = smallest non-palindromic number k such that k and its digit reversal are divisible by n, or 0 if n is a multiple of 10.
  * @author Sean A. Irvine
  */
 public class A069555 extends Sequence1 {

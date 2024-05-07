@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A130732 Floor(Fibonacci(n)/Prime(n)).
+ * A130732 a(n) = floor(Fibonacci(n)/prime(n)).
  * a(n)=floor(fibonacci(n)/prime(n))
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a052.A052218;
 
 /**
- * A069522.
+ * A069523 Smallest multiple of n with digit sum = 4, or 0 if no such number exists, e.g. a(3k)= 0.
  * @author Sean A. Irvine
  */
 public class A069523 extends Sequence1 implements Conjectural {

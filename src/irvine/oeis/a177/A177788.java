@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A177788 binomial(n^2,n+1)/(n-1).
+ * A177788 a(n) = binomial(n^2, n+1)/(n-1).
  * @author Georg Fischer
  */
 public class A177788 extends AbstractSequence {

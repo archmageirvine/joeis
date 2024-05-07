@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A069522.
+ * A069581 Triangle T(m,n) giving number of unit fractions (with odd denominators) needed to represent m/n, rational (n odd), using the greedy algorithm.
  * @author Sean A. Irvine
  */
 public class A069581 extends Sequence3 {

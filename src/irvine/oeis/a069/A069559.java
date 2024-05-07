@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000217;
 
 /**
- * A069522.
+ * A069559 Triangular numbers in which the k-th significant digit either divides k or is a multiple of k.
  * @author Sean A. Irvine
  */
 public class A069559 extends Sequence1 {

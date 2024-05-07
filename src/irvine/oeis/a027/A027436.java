@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
- * A027436 f(x) = Sum a(n)*x^n, n = 1..inf satisfies f(f(x)) = x*(1 + 4*x).
+ * A027436 G.f. f(x) = Sum_{n&gt;=1} a(n)*x^n satisfies f(f(x)) = x*(1 + 4*x).
  * @author Sean A. Irvine
  */
 public class A027436 extends MemoryFunction2Sequence<Integer, Z> {

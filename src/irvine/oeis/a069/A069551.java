@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a062.A062799;
 
 /**
- * A007913.
+ * A069551 Numbers k such that the squarefree part of k equals A062799(k).
  * @author Sean A. Irvine
  */
 public class A069551 extends FilterPositionSequence {

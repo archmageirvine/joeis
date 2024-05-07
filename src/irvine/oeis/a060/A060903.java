@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A060903 Floor(6*n*sqrt(n)/Pi^2).
+ * A060903 a(n) = floor(6*n*sqrt(n)/Pi^2).
  * @author Georg Fischer
  */
 public class A060903 extends FloorSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008836;
 
 /**
- * A069522.
+ * A069545 Liouville clusters: the number of successive occurrences of signs in Liouville function lambda(k); a(2n-1) is number of successive positive signs, while a(2n) is number of successive negative signs.
  * @author Sean A. Irvine
  */
 public class A069545 extends A008836 {

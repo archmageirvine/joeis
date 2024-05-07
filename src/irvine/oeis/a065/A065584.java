@@ -24,6 +24,6 @@ public class A065584 extends Sequence0 {
 
   @Override
   public Z next() {
-    return Puma.smallestPrimeBeginningWith(mDigit.repeat(++mN), mDigit);
+    return Puma.smallestPrimeBeginningWith(mDigit.repeat(++mN), mDigit, true);
   }
 }

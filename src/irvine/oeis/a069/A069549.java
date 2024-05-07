@@ -5,7 +5,7 @@ import irvine.oeis.a007.A007918;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A069522.
+ * A069549 Smallest composite k such that phi(k) &gt; k*(1-1/n).
  * @author Sean A. Irvine
  */
 public class A069549 extends SimpleTransformSequence {

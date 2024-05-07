@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A069522.
+ * A069561 Start of a run of n consecutive positive numbers divisible respectively by first n primes.
  * @author Sean A. Irvine
  */
 public class A069561 extends Sequence1 {

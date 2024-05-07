@@ -5,7 +5,7 @@ package irvine.oeis.a242;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A242570 Multiples of 252.
+ * A242570 a(n) = 252 * n.
  * @author Georg Fischer
  */
 public class A242570 extends HolonomicRecurrence {

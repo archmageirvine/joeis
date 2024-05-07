@@ -178,9 +178,10 @@ public final class Puma {
    * the additional part does not start with the prohibited value.
    * @param n prefix
    * @param prohibited prohibited extension
+   * @param allowEmpty don't extend if <code>n</code> is already prime
    * @return smallest such prime
    */
-  public static Z smallestPrimeBeginningWith(final String n, final String prohibited) {
+  public static Z smallestPrimeBeginningWith(final String n, final String prohibited, final boolean allowEmpty) {
     if (n.isEmpty()) {
       return "2".equals(prohibited) ? Z.THREE : Z.TWO;
     }
@@ -188,10 +189,10 @@ public final class Puma {
     if (t.isZero() && !"2".equals(prohibited)) {
       return Z.TWO; // only possible even case
     }
-    if (t.isProbablePrime()) {
+    if (allowEmpty && t.isProbablePrime()) {
       return t;
     }
-    long k = 0;
+    long k = -1;
     long oldLim = 1;
     long lim = 1;
     while (true) {
@@ -199,8 +200,10 @@ public final class Puma {
       if (k >= lim) {
         oldLim = lim;
         lim *= 10;
-        k = 1;
         t = t.multiply(10);
+        if (!"0".equals(prohibited)) {
+          k = 1;
+        }
       }
       final Z u = t.add(k);
       if (u.isProbablePrime() && (k < oldLim || !String.valueOf(k).startsWith(prohibited))) {
@@ -212,10 +215,11 @@ public final class Puma {
   /**
    * Smallest prime ending with a given value
    * @param n suffix
+   * @param allowEmpty don't extend if the suffix is already prime
    * @return smallest such prime
    */
-  public static Z smallestPrimeEndingWith(final Z n) {
-    if (n.isProbablePrime()) {
+  public static Z smallestPrimeEndingWith(final Z n, final boolean allowEmpty) {
+    if (allowEmpty && n.isProbablePrime()) {
       return n;
     }
     if (n.isEven() || n.mod(10) == 5) {

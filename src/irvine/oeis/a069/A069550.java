@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069522.
+ * A069550 Squarefree part of n equals bigomega(n).
  * @author Sean A. Irvine
  */
 public class A069550 extends Sequence1 {

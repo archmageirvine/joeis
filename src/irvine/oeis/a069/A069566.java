@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069522.
+ * A069566 a(1)=0; for n &gt;= 2, a(n) = smallest value of k such that the concatenation 1,n,n^2,..., n^(k-1), n^k,n^(k-1),...n^2,n,1 is a prime.
  * @author Sean A. Irvine
  */
 public class A069566 extends Sequence1 {

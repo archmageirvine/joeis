@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A069522.
+ * A069554 Smallest k &gt; 0 with gcd(k, rev(k)) = n, where rev(k) is digit reversal of k, or 0 if no such k exists.
  * @author Sean A. Irvine
  */
 public class A069554 extends Sequence1 {

@@ -5,7 +5,7 @@ package irvine.oeis.a275;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A275287 Numbers n such that (26*10^n - 107)/9 is prime.
+ * A275287 Numbers k such that (26*10^k - 107)/9 is prime.
  * @author Georg Fischer
  */
 public class A275287 extends PowerFactorPrimeSequence {

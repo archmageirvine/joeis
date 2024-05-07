@@ -5,7 +5,7 @@ package irvine.oeis.a273;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A273002 Numbers n such that 16*10^n+1 is prime.
+ * A273002 Numbers k such that 16*10^k + 1 is prime.
  * @author Georg Fischer
  */
 public class A273002 extends PowerFactorPrimeSequence {

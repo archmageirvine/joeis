@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A069522.
+ * A069569 a(n) = smallest prime that can be written in base 10 using just n n's.
  * @author Sean A. Irvine
  */
 public class A069569 extends Sequence0 {

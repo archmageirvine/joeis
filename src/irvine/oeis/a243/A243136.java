@@ -6,7 +6,7 @@ package irvine.oeis.a243;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A243136 512*n^10 - 1280*n^8 + 1120*n^6 - 400*n^4 + 50*n^2 - 1.
+ * A243136 a(n) = 512*n^10 - 1280*n^8 + 1120*n^6 - 400*n^4 + 50*n^2 - 1.
  * @author Georg Fischer
  */
 public class A243136 extends HolonomicRecurrence {

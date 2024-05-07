@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069522.
+ * A069568 a(n) = smallest number m &gt; 0 such that n followed by m 1's yields a prime, or -1 if no such m exists.
  * @author Sean A. Irvine
  */
 public class A069568 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069522.
+ * A069573 Largest n-digit number in which the k-th digit is a divisor or a multiple of k.
  * @author Sean A. Irvine
  */
 public class A069573 extends Sequence1 {

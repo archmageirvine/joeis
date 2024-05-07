@@ -5,7 +5,7 @@ package irvine.oeis.a276;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A276118 Numbers n such that 42 * 10^n + 1 is prime.
+ * A276118 Numbers k such that 42 * 10^k + 1 is prime.
  * @author Georg Fischer
  */
 public class A276118 extends PowerFactorPrimeSequence {

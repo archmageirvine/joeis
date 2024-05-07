@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069522.
+ * A069552 Numbers k such that phi(k) = sigma(core(k)) where phi(k) is the Euler totient function, sigma(k) the sum of divisors of k and core(k) the squarefree part of k (the smallest integer such that k*core(k) is a square).
  * @author Sean A. Irvine
  */
 public class A069552 extends Sequence1 {

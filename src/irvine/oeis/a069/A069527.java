@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a052.A052222;
 
 /**
- * A069522.
+ * A069527 Smallest multiple of n with digit sum = 8, or 0 if no such number exists, e.g. a(3k)= 0.
  * @author Sean A. Irvine
  */
 public class A069527 extends Sequence1 {

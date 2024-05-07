@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069522.
+ * A069572 Smallest n-digit number in which the k-th digit (from the right!) is a divisor of k, greater than 1 unless k has no single-digit divisor &gt; 1.
  * @author Sean A. Irvine
  */
 public class A069572 extends Sequence1 {

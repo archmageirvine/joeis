@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A278470 Numbers n such that 10^n - 201 is prime.
+ * A278470 Numbers k such that 10^k - 201 is prime.
  * @author Georg Fischer
  */
 public class A278470 extends PrimePositionSubsequence {

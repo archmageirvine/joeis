@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A068921 Number of ways to tile a 2 X n room with 1x2 Tatami mats. At most 3 Tatami mats may meet at a point.
+ * A068921 Number of ways to tile a 2 X n room with 1 X 2 Tatami mats. At most 3 Tatami mats may meet at a point.
  * @author Sean A. Irvine
  */
 public class A068921 extends LinearRecurrence {

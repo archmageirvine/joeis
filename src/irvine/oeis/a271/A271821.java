@@ -5,7 +5,7 @@ package irvine.oeis.a271;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A271821 Numbers n such that (5*10^n-143)/3 is prime.
+ * A271821 Numbers k such that (5*10^k - 143)/3 is prime.
  * @author Georg Fischer
  */
 public class A271821 extends PowerFactorPrimeSequence {

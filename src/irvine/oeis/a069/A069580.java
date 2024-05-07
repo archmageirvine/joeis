@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a065.A065128;
 
 /**
- * A069522.
+ * A069580 Noninvertible n X n matrices mod 4 (i.e., over the ring Z_4).
  * @author Sean A. Irvine
  */
 public class A069580 extends Sequence1 {

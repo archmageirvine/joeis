@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A069522.
+ * A069567 Smaller of two consecutive primes which are anagrams of each other.
  * @author Sean A. Irvine
  */
 public class A069567 extends A000040 {

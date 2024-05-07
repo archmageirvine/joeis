@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062283 Table by antidiagonals of floor[ n^k / k^n ].
+ * A062283 Square array read by descending antidiagonals: T(n,k) = floor(n^k/k^n).
  * @author Sean A. Irvine
  */
 public class A062283 extends Sequence1 {

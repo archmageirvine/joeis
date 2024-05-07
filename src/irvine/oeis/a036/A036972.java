@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A036972 n-th prime is a Fibonacci number reversed.
+ * A036972 Numbers k suct that the k-th prime is a Fibonacci number reversed.
  * @author Sean A. Irvine
  */
 public class A036972 extends A000045 {

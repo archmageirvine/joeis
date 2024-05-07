@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A069522.
+ * A069577 Smallest prime p such that pi(n) &lt;= pi(p)*2, where pi(n) is the number of primes &lt;= n, A000720.
  * @author Sean A. Irvine
  */
 public class A069577 extends Sequence2 {

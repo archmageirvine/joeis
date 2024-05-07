@@ -4,7 +4,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
- * A059028 Row sums of A059026: a(n) = sum( lcm(n,m)/n + lcm(n,m)/m - 1, m = 1..n ).
+ * A059028 Row sums of A059026: a(n) = Sum_{m=1..n} (lcm(n,m)/n + lcm(n,m)/m - 1).
  * @author Sean A. Irvine
  */
 public class A059028 extends A059026 {

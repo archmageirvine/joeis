@@ -12,6 +12,6 @@ public class A068135 extends A000422 {
 
   @Override
   public Z next() {
-    return Puma.smallestPrimeEndingWith(super.next());
+    return Puma.smallestPrimeEndingWith(super.next(), true);
   }
 }

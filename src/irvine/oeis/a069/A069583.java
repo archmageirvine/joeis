@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069522.
+ * A069583 Smallest prime of the form 1,n,2n,...(k-1)n,kn,(k-1)n,...2n,n,1 for some k.
  * @author Sean A. Irvine
  */
 public class A069583 extends Sequence1 {

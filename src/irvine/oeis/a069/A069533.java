@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069522.
+ * A069533 a(n) = Sum_{p prime} floor(n^2/p^2) where the sum is over all the primes.
  * @author Sean A. Irvine
  */
 public class A069533 extends Sequence1 {

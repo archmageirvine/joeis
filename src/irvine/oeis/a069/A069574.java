@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069522.
+ * A069574 Smallest n-digit prime in which the k-th digit is a divisor or a multiple of k, or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A069574 extends Sequence1 {

@@ -6,7 +6,7 @@ package irvine.oeis.a136;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A136576 Series reversion of x*c(x)/(1-2x), c(x) the g.f. of A000108.
+ * A136576 Series reversion of x*c(x)/(1 - 2*x), c(x) the g.f. of A000108.
  * @author Georg Fischer
  */
 public class A136576 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A069522.
+ * A069565 a(0) = 1, a(n) = k*a(n-1) + 1 is a multiple of n-th prime. If no such number exists then a(n) = 0 and a(n+1) = k*a(n-1) + 1 is a multiple of (n+1)-th prime; i.e., a(r) = smallest multiple of the r-th prime = k* a(s) + 1 where a(s) is the last nonzero term.
  * @author Sean A. Irvine
  */
 public class A069565 extends Sequence0 {

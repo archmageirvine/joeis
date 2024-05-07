@@ -4,7 +4,7 @@ package irvine.oeis.a185;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A185182 a(n) = 2^n*A185181(n).
+ * A185182 a(n) = 2^n*A122705(n).
  * @author Georg Fischer
  */
 public class A185182 extends NoncomputableSequence {

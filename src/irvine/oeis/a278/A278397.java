@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A278397 Numbers n such that 10^n - 20001 is prime.
+ * A278397 Numbers k such that 10^k - 20001 is prime.
  * @author Georg Fischer
  */
 public class A278397 extends PrimePositionSubsequence {

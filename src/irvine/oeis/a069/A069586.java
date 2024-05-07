@@ -7,7 +7,7 @@ import irvine.oeis.a025.A025475;
 import irvine.util.array.DynamicArray;
 
 /**
- * A069522.
+ * A069586 Smallest prime power p^k (k &gt;= 2) such that there is a difference of exactly n between p^k and some other prime power q^m (m &gt;= 2); or 0 if no such q^m exists.
  * @author Sean A. Irvine
  */
 public class A069586 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A271882 Numbers n such that (10^n + 101)/3 is prime.
+ * A271882 Numbers k such that (10^k + 101)/3 is prime.
  * @author Georg Fischer
  */
 public class A271882 extends PrimePositionSubsequence {

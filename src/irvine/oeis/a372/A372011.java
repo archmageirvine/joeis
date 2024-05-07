@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A372011 allocated for Miles Englezou.
+ * A372011 Orders of finite groups for which there is at least one group G such that |Aut(G)| = |G|.
  * @author Sean A. Irvine
  */
 public class A372011 extends Sequence2 {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069522.
+ * A069548 Primes of the form sum 6d/(2 + mu(d)) for some k and all d dividing k.
  * @author Sean A. Irvine
  */
 public class A069548 extends Sequence1 {

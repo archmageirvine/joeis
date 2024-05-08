@@ -113,6 +113,7 @@ public final class SequenceFactory {
    * The <code>expression</code> is usually an A-number, but other various transformation are also supported.
    * For example, to compute the Euler transform of the integers: <code>euler(A000027)</code>.
    * Functions can be chained to arbitrary depth: <code>euler(lpf(A000027))</code>.
+   * It is also possible to skip some initial portion of a sequence: <code>A000027.skip(5)</code>.
    * Finally, the <code>expression</code> can be "-" indicating sequence terms should be read from standard
    * input, one term per line.
    * @param expression description of sequence to be generated

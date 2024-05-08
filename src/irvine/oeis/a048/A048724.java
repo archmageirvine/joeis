@@ -2,12 +2,13 @@ package irvine.oeis.a048;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A048724 Write n and 2n in binary and add them mod 2.
  * @author Georg Fischer
  */
-public class A048724 extends AbstractSequence {
+public class A048724 extends AbstractSequence implements DirectSequence {
 
   private int mN;
   private final long mMult;
@@ -33,4 +34,15 @@ public class A048724 extends AbstractSequence {
     ++mN;
     return Z.valueOf(mN ^ (mN * mMult));
   }
+
+  @Override
+  public Z a(final Z n) {
+    return n.xor(n.multiply(mMult));
+  }
+
+  @Override
+  public Z a(final int n) {
+    return a(Z.valueOf(n));
+  }
+
 }

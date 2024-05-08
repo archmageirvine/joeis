@@ -2,12 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A006519 Highest power of 2 dividing n.
  * @author Sean A. Irvine
  */
-public class A006519 extends AbstractSequence {
+public class A006519 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -27,7 +28,17 @@ public class A006519 extends AbstractSequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    mN.makeOdd();
+    return a(mN);
+  }
+
+  @Override
+  public Z a(final Z n) {
+    n.makeOdd();
     return Z.ONE.shiftLeft(mN.auxiliary());
+  }
+
+  @Override
+  public Z a(final int n) {
+    return Z.ONE.shiftLeft(Integer.numberOfTrailingZeros(n));
   }
 }

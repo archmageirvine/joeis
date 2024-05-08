@@ -2,12 +2,15 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
- * A000120 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+ * A000120 1&apos;s-counting sequence: number of 1&apos;s in binary expansion of n (or the binary weight of n).
  * @author Sean A. Irvine
  */
-public class A000120 extends AbstractSequence {
+public class A000120 extends AbstractSequence implements DirectSequence {
+
+  private Z mN = Z.NEG_ONE;
 
   /**
    * Constructor with offset.
@@ -22,12 +25,20 @@ public class A000120 extends AbstractSequence {
     super(0);
   }
 
-  private Z mN = Z.NEG_ONE;
+  @Override
+  public Z a(final Z n) {
+    return Z.valueOf(n.bitCount());
+  }
+
+  @Override
+  public Z a(final int n) {
+    return Z.valueOf(Integer.bitCount(n));
+  }
 
   @Override
   public Z next() {
     mN = mN.add(1);
-    return Z.valueOf(mN.bitCount());
+    return a(mN);
   }
 }
 

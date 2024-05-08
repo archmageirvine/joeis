@@ -12,7 +12,6 @@ import java.util.List;
 
 import org.apfloat.ApfloatRuntimeException;
 
-import irvine.factor.factor.LeastPrimeFactorizer;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.producer.MetaProducer;
@@ -111,7 +110,12 @@ public final class SequenceFactory {
 
   /**
    * Return the sequence for the specified A-number or expression.
-   * @param expression description of sequence to be generated, typically an A-number of the form <code>A000001</code>
+   * The <code>expression</code> is usually an A-number, but other various transformation are also supported.
+   * For example, to compute the Euler transform of the integers: <code>euler(A000027)</code>.
+   * Functions can be chained to arbitrary depth: <code>euler(lpf(A000027))</code>.
+   * Finally, the <code>expression</code> can be "-" indicating sequence terms should be read from standard
+   * input, one term per line.
+   * @param expression description of sequence to be generated
    * @return sequence for A-number
    * @exception UnimplementedException for an unknown A-number.
    * @exception IllegalArgumentException if the supplied expression could not be interpreted.
@@ -141,7 +145,7 @@ public final class SequenceFactory {
         case "gilbreath":
           return new GilbreathTransformSequence(1, sequence(inner));
         case "gpf":
-          return new SimpleTransformSequence(sequence(inner), k -> Functions.GPF.z(k));
+          return new SimpleTransformSequence(sequence(inner), Functions.GPF::z);
         case "ieuler":
           return new InverseEulerTransform(1, sequence(inner));
         case "imobius":
@@ -149,17 +153,17 @@ public final class SequenceFactory {
         case "iweigh":
           return new InverseWeighTransform(sequence(inner));
         case "lpf":
-          return new SimpleTransformSequence(sequence(inner), LeastPrimeFactorizer::lpf);
+          return new SimpleTransformSequence(sequence(inner), Functions.LPF::z);
         case "mobius":
           return new MobiusTransformSequence(sequence(inner), 0);
         case "mu":
-          return new SimpleTransformSequence(sequence(inner), k -> Z.valueOf(Functions.MOBIUS.i(k)));
+          return new SimpleTransformSequence(sequence(inner), Functions.MOBIUS::z);
         case "omega":
-          return new SimpleTransformSequence(sequence(inner), k -> Z.valueOf(Functions.OMEGA.i(k)));
+          return new SimpleTransformSequence(sequence(inner), Functions.OMEGA::z);
         case "Omega":
-          return new SimpleTransformSequence(sequence(inner), k -> Functions.BIG_OMEGA.z(k));
+          return new SimpleTransformSequence(sequence(inner), Functions.BIG_OMEGA::z);
         case "phi":
-          return new SimpleTransformSequence(sequence(inner), k -> Functions.PHI.z(k));
+          return new SimpleTransformSequence(sequence(inner), Functions.PHI::z);
         case "prime":
           return new FilterSequence(sequence(inner), FilterSequence.PRIME);
         case "record":
@@ -167,9 +171,9 @@ public final class SequenceFactory {
         case "semiprime":
           return new FilterSequence(sequence(inner), FilterSequence.SEMIPRIME);
         case "sigma":
-          return new SimpleTransformSequence(sequence(inner), k -> Functions.SIGMA.z(k));
+          return new SimpleTransformSequence(sequence(inner), Functions.SIGMA::z);
         case "sigma0":
-          return new SimpleTransformSequence(sequence(inner), k -> Functions.SIGMA0.z(k));
+          return new SimpleTransformSequence(sequence(inner), Functions.SIGMA0::z);
         case "stirling1":
           return new Stirling1TransformSequence(1, sequence(inner));
         case "stirling2":

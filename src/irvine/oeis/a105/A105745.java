@@ -5,7 +5,7 @@ package irvine.oeis.a105;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A105745 For n&gt;2, a(n) &gt; 0 is such that a(n-1)^2+4*a(n-2)*a(n) is a minimal square, a(1)=1,a(2)=12.
+ * A105745 For n&gt;2, a(n) &gt; 0 is such that a(n-1)^2+4*a(n-2)*a(n) is a minimal square, a(1)=1, a(2)=12.
  * Recurrence: a(n)=a(n-5)
  * @author Georg Fischer
  */

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a048.A048724;
 
 /**
- * A065621 Reversing binary representation of n. Converting sum of powers of 2
+ * A065621 Reversing binary representation of n. Converting sum of powers of 2 in binary representation of a(n) to alternating sum gives n.
  * in binary representation of a(n) to alternating sum gives n.
  * @author Georg Fischer
  */

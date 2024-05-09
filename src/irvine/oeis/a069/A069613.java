@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069613 a(1) = 1; a(2n) = smallest prime starting ( the most significant digits) with a(2n-1). and a(2n+1) = smallest prime ending in ( the least significant digits) a(2n-1). Alternate left and right concatenation yielding primes.
+ * A069613 a(1) = 1; a(2n) is smallest prime starting with a(2n-1) and a number with no insignificant zeros, and a(2n+1) is smallest prime ending in a(2n-1). Alternate left and right concatenation yielding primes.
  * @author Sean A. Irvine
  */
 public class A069613 extends Sequence1 {

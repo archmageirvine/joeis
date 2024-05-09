@@ -5,7 +5,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
 
 /**
- * A000120 1&apos;s-counting sequence: number of 1&apos;s in binary expansion of n (or the binary weight of n).
+ * A000120 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
  * @author Sean A. Irvine
  */
 public class A000120 extends AbstractSequence implements DirectSequence {

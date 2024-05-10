@@ -5,7 +5,7 @@ import irvine.oeis.a003.A003053;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A071305 a(n) = (1/2) * (number of n X n 0..5 matrices M with MM&apos; mod 6 = I, where M&apos; is the transpose of M and I is the n X n identity matrix).
+ * A071305 a(n) = (1/2) * (number of n X n 0..5 matrices M with MM' mod 6 = I, where M' is the transpose of M and I is the n X n identity matrix).
  * @author Georg Fischer
  */
 public class A071305 extends MultiTransformSequence {

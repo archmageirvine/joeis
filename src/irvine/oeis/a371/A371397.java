@@ -6,7 +6,7 @@ import irvine.oeis.a038.A038119;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A371397 Number of chiral pairs of polyominoes with n cubical cells of the regular tiling with Schl√§fli symbol {4, 3, 4}.
+ * A371397 Number of chiral pairs of polyominoes with n cubical cells of the regular tiling with Schl\u00e4fli symbol {4,3,4}.
  * @author Georg Fischer
  */
 public class A371397 extends MultiTransformSequence {

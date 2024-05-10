@@ -5,7 +5,7 @@ import irvine.oeis.a089.A089242;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A104106 a(1) = 1; thereafter, if A(k) = sequence of first 2^k -1 terms, then A(k+1) = A(k), 1,A(k) if a(k) = 0, and A(k+1) = A(k), 0,A(k) if a(k) = 1.
+ * A104106 a(1) = 1; thereafter, if A(k) = sequence of first 2^k -1 terms, then A(k+1) = A(k),1,A(k) if a(k) = 0, and A(k+1) = A(k),0,A(k) if a(k) = 1.
  * @author Georg Fischer
  */
 public class A104106 extends SimpleTransformSequence {

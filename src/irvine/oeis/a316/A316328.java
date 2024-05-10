@@ -4,7 +4,7 @@ package irvine.oeis.a316;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A316328 Lexicographically earliest knight&apos;s path on spiral on infinite chessboard.
+ * A316328 Lexicographically earliest knight's path on spiral on infinite chessboard.
  * @author Georg Fischer
  */
 public class A316328 extends SimpleTransformSequence {

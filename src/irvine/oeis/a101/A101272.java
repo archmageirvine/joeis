@@ -6,7 +6,7 @@ package irvine.oeis.a101;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A101272 a(n)=n, n &lt;=6; a(n)=6, n &gt; 6.
+ * A101272 a(n) = n, n &lt;= 6; a(n) = 6, n &gt; 6.
  * @author Georg Fischer
  */
 public class A101272 extends GeneratingFunctionSequence {

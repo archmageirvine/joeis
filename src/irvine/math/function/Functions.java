@@ -1,5 +1,9 @@
 package irvine.math.function;
 
+import java.util.Locale;
+
+import irvine.math.z.Z;
+
 /**
  * Convenience class collecting together available functions.
  * @author Sean A. Irvine
@@ -113,4 +117,32 @@ public final class Functions {
   public static final Function2 MULTIFACTORIAL = new Multifactorial();
   /** Number of points in a hypersphere of given radius in a given number of dimensions. */
   public static final Function2 HYPERSPHERE_POINTS = new HyperspherePoints();
+
+  /**
+   * Get a function from its name.
+   * @param name function name
+   * @return the function
+   * @throws NoSuchFieldException if the function was not found
+   */
+  public static Function1 getFunction(final String name) throws NoSuchFieldException {
+    try {
+      return (Function1) Functions.class.getField(name.toUpperCase(Locale.getDefault())).get(null);
+    } catch (IllegalAccessException e) {
+      throw new RuntimeException("Could not access " + name);
+    }
+  }
+
+  /**
+   * Apply a function or chain of functions in postfix form.
+   * For example, <code>Functions 42 lpf catalan</code> returns
+   * <code>catalan(lpf(42))</code>
+   * @param args expression
+   */
+  public static void main(final String[] args) throws NoSuchFieldException {
+    Z value = new Z(args[0]);
+    for (int k = 1; k < args.length; ++k) {
+      value = getFunction(args[k]).z(value);
+    }
+    System.out.println(value);
+  }
 }

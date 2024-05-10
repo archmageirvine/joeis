@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001358;
 import irvine.oeis.a214.A214584;
 
 /**
- * A217124 Semiprimes whose decimal representation has only digits in {4, 5, 7}.
+ * A217124 Semiprimes whose decimal representation has only digits in {4,5,7}.
  * @author Georg Fischer
  */
 public class A217124 extends IntersectionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a169.A169707;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A255263 Differences between the total number of ON cells at stage n of two-dimensional cellular automaton defined by &quot;Rule 750&quot; using the von Neumann neighborhood and the total number of toothpicks in the toothpick structure A139250 that are parallel to the initia
+ * A255263 Differences between the total number of ON cells at stage n of two-dimensional cellular automaton defined by "Rule 750" using the von Neumann neighborhood and the total number of toothpicks in the toothpick structure A139250 that are parallel to the initial toothpick, after n odd rounds.
  * @author Georg Fischer
  */
 public class A255263 extends MultiTransformSequence {

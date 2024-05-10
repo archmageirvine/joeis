@@ -6,7 +6,7 @@ import irvine.oeis.a358.A358773;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A369667 a(n) = 1 if n&apos; == 3 (mod 4) and n has an even number of prime factors with multiplicity, otherwise 0. Here n&apos; stands for the arithmetic derivative of n, A003415(n).
+ * A369667 a(n) = 1 if n' == 3 (mod 4) and n has an even number of prime factors with multiplicity, otherwise 0. Here n' stands for the arithmetic derivative of n, A003415(n).
  * @author Georg Fischer
  */
 public class A369667 extends MultiTransformSequence {

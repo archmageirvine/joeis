@@ -5,7 +5,7 @@ import irvine.oeis.a006.A006046;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A116593 a(n) = b(n+2) + b(n), where b(n) = A006046(n) is the sequence defined by b(0)=0, b(1)=1, b(n) = 2*b((n-1)/2) + b((n+1)/2) for n =3, 5, 7,... and b(n) = 3*b(n/2) for n =2, 4, 6,....
+ * A116593 a(n) = b(n+2) + b(n), where b(n) = A006046(n) is the sequence defined by b(0)=0, b(1)=1, b(n) = 2*b((n-1)/2) + b((n+1)/2) for n =3,5,7,... and b(n) = 3*b(n/2) for n =2,4,6,....
  * @author Georg Fischer
  */
 public class A116593 extends MultiTransformSequence {

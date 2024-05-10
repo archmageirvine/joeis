@@ -6,7 +6,7 @@ import irvine.oeis.a162.A162795;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A288775 Difference between the total number of toothpicks in the toothpick structure of A139250 that are parallel to the initial toothpick after n odd stages, and the total number of &quot;ON&quot; cells at n-th stage in the &quot;Ulam-Warburton&quot; two-dimensional cellular automat
+ * A288775 Difference between the total number of toothpicks in the toothpick structure of A139250 that are parallel to the initial toothpick after n odd stages, and the total number of "ON" cells at n-th stage in the "Ulam-Warburton" two-dimensional cellular automaton of A147562.
  * @author Georg Fischer
  */
 public class A288775 extends MultiTransformSequence {

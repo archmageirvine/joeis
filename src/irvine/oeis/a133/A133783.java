@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a057.A057436;
 
 /**
- * A133783 Primes containing only digits from set (1, 2, 3, 4, 5, 6).
+ * A133783 Primes containing only digits from set (1,2,3,4,5,6).
  * @author Georg Fischer
  */
 public class A133783 extends IntersectionSequence {

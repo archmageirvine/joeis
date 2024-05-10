@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a214.A214584;
 
 /**
- * A217039 Primes whose decimal representation has only digits in {4, 5, 7}.
+ * A217039 Primes whose decimal representation has only digits in {4,5,7}.
  * @author Georg Fischer
  */
 public class A217039 extends IntersectionSequence {

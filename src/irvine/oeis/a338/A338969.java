@@ -7,7 +7,7 @@ import irvine.oeis.a225.A225596;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A338969 a(n) is the sum of the lengths of all the segments used to draw a rectangle of height partition(n) and width n divided into partition(n) rectangles of unit height, in turn, divided into rectangles of unit height and lengths corresponding to the parts of th
+ * A338969 a(n) is the sum of the lengths of all the segments used to draw a rectangle of height partition(n) and width n divided into partition(n) rectangles of unit height, in turn, divided into rectangles of unit height and lengths corresponding to the parts of the partitions of n.
  * @author Georg Fischer
  */
 public class A338969 extends MultiTransformSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a110.A110706;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A365511 Number of ways to travel from (0, 0, 0) to (2*n, 2*n, 2*n) with n positive integer steps in each direction, changing directions at each step.
+ * A365511 Number of ways to travel from (0,0,0) to (2*n,2*n,2*n) with n positive integer steps in each direction, changing directions at each step.
  * @author Georg Fischer
  */
 public class A365511 extends MultiTransformSequence {

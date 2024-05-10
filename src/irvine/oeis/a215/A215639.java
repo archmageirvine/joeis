@@ -4,7 +4,7 @@ package irvine.oeis.a215;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A215639 E.g.f. satisfies: A(x) = cos(x*A(x)) + sin(x*A(x)).
+ * A215639  E.g.f. satisfies: A(x) = cos(x*A(x)) + sin(x*A(x)).
  * @author Georg Fischer
  */
 public class A215639 extends SimpleTransformSequence {

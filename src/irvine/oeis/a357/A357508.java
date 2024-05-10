@@ -6,7 +6,7 @@ import irvine.oeis.a005.A005810;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A357508 a(n) = binomial(4*n, 2*n) - 2*binomial(4*n,n).
+ * A357508 a(n) = binomial(4*n,2*n) - 2*binomial(4*n,n).
  * @author Georg Fischer
  */
 public class A357508 extends MultiTransformSequence {

@@ -2,14 +2,14 @@ package irvine.oeis.a069;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a003.A003098;
 
 /**
  * A069502 a(1) = 1; a(n) = smallest multiple of a(n-1) which is a palindromic triangular number.
  * @author Sean A. Irvine
  */
-public class A069502 extends Sequence1 {
+public class A069502 extends Sequence0 {
 
   private Z mA = null;
   private final Sequence mPalindromicTriangular = new A003098().skip(2);

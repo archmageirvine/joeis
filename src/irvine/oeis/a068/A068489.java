@@ -12,7 +12,7 @@ public class A068489 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A068489() {
-    super(1, new A057713().skip(), Puma::primePiZ);
+    super(2, new A057713().skip(), Puma::primePiZ);
   }
 }
 

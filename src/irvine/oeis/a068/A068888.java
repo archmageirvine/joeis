@@ -1,13 +1,13 @@
 package irvine.oeis.a068;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A068888 Squares with property that digits alternate in parity individually as well as in concatenation with previous terms.
  * @author Sean A. Irvine
  */
-public class A068888 extends Sequence1 {
+public class A068888 extends Sequence0 {
 
   protected Z mN = Z.ZERO;
   protected Z mPrev = Z.ZERO;

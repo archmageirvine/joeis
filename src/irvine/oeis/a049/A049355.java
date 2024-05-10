@@ -8,7 +8,7 @@ public class A049355 extends A049354 {
 
   /** Construct the sequence. */
   public A049355() {
-    super(0);
+    super(1);
   }
 
   @Override

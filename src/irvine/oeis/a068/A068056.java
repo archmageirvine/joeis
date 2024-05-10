@@ -13,5 +13,10 @@ public class A068056 extends DistinctAdditiveClosureSequence {
   public A068056() {
     super(new A066425());
   }
+
+  {
+    setOffset(0);
+  }
+
 }
 

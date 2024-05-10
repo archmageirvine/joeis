@@ -13,7 +13,7 @@ public class A141671 extends PrependColumn {
 
   /** Construct the sequence. */
   public A141671() {
-    super(1, new A126988(), new A000027());
+    super(0, new A126988(), new A000027());
   }
 }
 

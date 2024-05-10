@@ -1,13 +1,13 @@
 package irvine.oeis.a068;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A068714 Primes formed from a concatenation of 2 and 3^k for some k.
  * @author Sean A. Irvine
  */
-public class A068714 extends Sequence1 {
+public class A068714 extends Sequence0 {
 
   private Z mT = Z.ONE;
 

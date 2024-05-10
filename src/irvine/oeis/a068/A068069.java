@@ -2,13 +2,13 @@ package irvine.oeis.a068;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A068069 a(n) is the least k which is the start of n consecutive integers each with a different number, 1 through n, of distinct prime factors.
  * @author Sean A. Irvine
  */
-public class A068069 extends Sequence1 {
+public class A068069 extends Sequence0 {
 
   private int mN = -1;
   private long mF = 1;

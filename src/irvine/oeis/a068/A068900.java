@@ -2,13 +2,13 @@ package irvine.oeis.a068;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A068900 Digit reversal of n = 11 times digit reversal of n/11.
  * @author Sean A. Irvine
  */
-public class A068900 extends Sequence1 {
+public class A068900 extends Sequence0 {
 
   private long mN = 0;
 

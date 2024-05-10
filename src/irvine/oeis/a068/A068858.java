@@ -11,6 +11,10 @@ public class A068858 extends Sequence0 {
 
   private Z mA = null;
 
+  {
+    setOffset(1);
+  }
+
   @Override
   public Z next() {
     if (mA == null) {

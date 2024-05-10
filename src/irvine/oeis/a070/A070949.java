@@ -11,7 +11,7 @@ public class A070949 extends LittleHankelTransform {
 
   /** Construct the sequence. */
   public A070949() {
-    super(new A002487());
+    super(0, new A002487());
     next();
   }
 }

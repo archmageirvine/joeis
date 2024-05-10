@@ -4,14 +4,14 @@ import java.util.HashSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002808;
 
 /**
  * A068632 a(1) = 2; a(n+1) = smallest composite number not in the sequence such that the sum of all the terms is prime.
  * @author Sean A. Irvine
  */
-public class A068632 extends Sequence1 {
+public class A068632 extends Sequence0 {
 
   private final HashSet<Z> mSeen = new HashSet<>();
   private Z mSum = null;

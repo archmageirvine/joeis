@@ -2,14 +2,14 @@ package irvine.oeis.a069;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000217;
 
 /**
  * A069559 Triangular numbers in which the k-th significant digit either divides k or is a multiple of k.
  * @author Sean A. Irvine
  */
-public class A069559 extends Sequence1 {
+public class A069559 extends Sequence0 {
 
   private final Sequence mA;
 

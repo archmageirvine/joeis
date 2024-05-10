@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A003590 Rows of Pascal's triangle written as a single number.
  * @author Sean A. Irvine
  */
-public class A003590 extends Sequence1 {
+public class A003590 extends Sequence0 {
 
   private long mN = -1;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a069;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A069019 Smallest square k &gt; 1 such that n*k + 1 is also a square or 0 if no such term exists, i.e., when n is a square.
  * @author Sean A. Irvine
  */
-public class A069019 extends Sequence1 {
+public class A069019 extends Sequence0 {
 
   private long mN = 0;
 

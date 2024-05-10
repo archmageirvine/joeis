@@ -2,13 +2,13 @@ package irvine.oeis.a048;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A048849 a(n) = prime(phi(n)) + phi(prime(n)).
  * @author Sean A. Irvine
  */
-public class A048849 extends Sequence0 {
+public class A048849 extends Sequence1 {
 
   private int mN = 0;
 

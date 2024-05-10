@@ -12,6 +12,6 @@ public class A188499 extends IntersectionSequence {
 
   /** Construct the sequence. */
   public A188499() {
-    super(new A089633(), new A188341());
+    super(0, new A089633(), new A188341());
   }
 }

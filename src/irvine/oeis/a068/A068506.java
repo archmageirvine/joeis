@@ -11,6 +11,10 @@ public class A068506 extends A002182 {
 
   private long mN = -1;
 
+  {
+    setOffset(0);
+  }
+
   @Override
   public Z next() {
     ++mN;

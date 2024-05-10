@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A068561 Numerators of coefficients in (1+x)^(1/3)-(1-x)^(1/3) power series.
  * @author Sean A. Irvine
  */
-public class A068561 extends Sequence0 {
+public class A068561 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

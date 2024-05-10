@@ -6,13 +6,13 @@ import java.util.TreeMap;
 import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A068910 a(n) is the unique k such that palindrome A068065(n) = k + reverse(k).
  * @author Sean A. Irvine
  */
-public class A068910 extends Sequence1 {
+public class A068910 extends Sequence0 {
 
   private final TreeMap<Long, Integer> mValues = new TreeMap<>();
   private final TreeMap<Long, Long> mK = new TreeMap<>();

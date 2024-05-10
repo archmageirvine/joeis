@@ -2,24 +2,19 @@ package irvine.oeis.a068;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.AbstractSequence;
+import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000217;
 
 /**
  * A068642 Index of the smallest n-digit palindromic triangular number, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
-public class A068642 extends AbstractSequence {
+public class A068642 extends Sequence1 {
 
   private Z mLim = Z.ONE;
-  private Z mA;
-  private final A000217 mSeq = new A000217();
-
-  public A068642() {
-    super(1);
-    mSeq.next(); // skip 0
-    mA = mSeq.next();
-  }
+  private final Sequence mSeq = new A000217().skip();
+  private Z mA = mSeq.next();
 
   private long mM = 1;
 

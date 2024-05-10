@@ -127,7 +127,7 @@ public final class Functions {
   public static Function1 getFunction(final String name) throws NoSuchFieldException {
     try {
       return (Function1) Functions.class.getField(name.toUpperCase(Locale.getDefault())).get(null);
-    } catch (IllegalAccessException e) {
+    } catch (final IllegalAccessException e) {
       throw new RuntimeException("Could not access " + name);
     }
   }

@@ -134,8 +134,8 @@ public final class Functions {
 
   /**
    * Apply a function or chain of functions in postfix form.
-   * For example, <code>Functions 42 lpf catalan</code> returns
-   * <code>catalan(lpf(42))</code>
+   * For example, <code>Functions 42 catalan phi</code> returns
+   * <code>phi(catalan(42))</code>
    * @param args expression
    */
   public static void main(final String[] args) throws NoSuchFieldException {

@@ -3,6 +3,7 @@ package irvine.math.function;
 import java.util.HashMap;
 
 import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 
 /**
@@ -30,7 +31,7 @@ public final class HyperspherePoints extends AbstractFunction2 {
         c = Z.ONE;
       } else {
         c = z(1, n - 1);
-        if (LongUtils.isSquare(n)) {
+        if (Predicates.SQUARE.is(n)) {
           c = c.add(2);
         }
       }

@@ -5,8 +5,8 @@ import java.util.Map;
 
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
-import irvine.math.LongUtils;
 import irvine.math.partition.IntegerPartition;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -43,7 +43,7 @@ public class A061708 extends Sequence1 {
         final Z sigma0z = fs.sigma0();
         if (sigma0z.bitLength() <= 63) { // unlikely we will generate this far
           final long sigma0 = sigma0z.longValue();
-          if (LongUtils.isSquare(sigma0)) {
+          if (Predicates.SQUARE.is(sigma0)) {
             final Z f = mFirsts.get(sigma0);
             if (f == null) {
               mFirsts.put(sigma0, fs.product());

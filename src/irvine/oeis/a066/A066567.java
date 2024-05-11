@@ -1,7 +1,7 @@
 package irvine.oeis.a066;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -16,7 +16,8 @@ public class A066567 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (LongUtils.isSquare(++mN + Functions.DIGIT_PRODUCT.l(mN))) {
+      final long n = ++mN + Functions.DIGIT_PRODUCT.l(mN);
+      if (Predicates.SQUARE.is(n)) {
         return Z.valueOf(mN);
       }
     }

@@ -3,6 +3,7 @@ package irvine.oeis.a102;
 
 import irvine.math.IntegerUtils;
 import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -23,6 +24,6 @@ public class A102448 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> (1 == LongUtils.gcd(d, mN / d) && LongUtils.isSquare(d) && IntegerUtils.sqrt(d) >= mN / d) ? Z.ONE : Z.ZERO);
+    return Integers.SINGLETON.sumdiv(mN, d -> (1 == LongUtils.gcd(d, mN / d) && Predicates.SQUARE.is((long) d) && IntegerUtils.sqrt(d) >= mN / d) ? Z.ONE : Z.ZERO);
   }
 }

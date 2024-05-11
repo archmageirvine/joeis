@@ -2,7 +2,7 @@ package irvine.oeis.a064;
 
 import java.util.HashSet;
 
-import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -16,7 +16,7 @@ public class A064776 extends Sequence1 {
   private long mN = 2;
 
   private boolean is(final long n) {
-    if (LongUtils.isSquare(n)) {
+    if (Predicates.SQUARE.is(n)) {
       return false;
     }
     for (final Z v : mSums) {

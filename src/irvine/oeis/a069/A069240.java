@@ -2,6 +2,7 @@ package irvine.oeis.a069;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -21,7 +22,8 @@ public class A069240 extends Sequence1 {
   private long b(final long p) {
     long b = 0;
     while (true) {
-      if (LongUtils.isSquare(p - 2 * ++b * b)) {
+      final long n = p - 2 * ++b * b;
+      if (Predicates.SQUARE.is(n)) {
         return b;
       }
     }

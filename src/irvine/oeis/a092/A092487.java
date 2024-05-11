@@ -3,7 +3,7 @@ package irvine.oeis.a092;
 import java.util.ArrayList;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -23,7 +23,7 @@ public class A092487 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    if (LongUtils.isSquare(mN)) {
+    if (Predicates.SQUARE.is(mN)) {
       return Z.ZERO;
     }
     if (mPrime.isPrime(mN)) {

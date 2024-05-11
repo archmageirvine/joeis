@@ -1,7 +1,7 @@
 package irvine.oeis.a066;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -22,7 +22,8 @@ public class A066689 extends Sequence1 {
     while (true) {
       q = mPrime.nextPrime(q);
       final long u = q - mP;
-      if (LongUtils.isSquare(++k * k + u * u)) {
+      final long n = ++k * k + u * u;
+      if (Predicates.SQUARE.is(n)) {
         return Z.valueOf(k);
       }
     }

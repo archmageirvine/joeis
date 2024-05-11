@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,7 +18,8 @@ public class A066662 extends Sequence1 {
     final long n2 = mN * mN;
     long k = 0;
     while (true) {
-      if (LongUtils.isSquare(n2 - ++k * k)) {
+      final long n = n2 - ++k * k;
+      if (Predicates.SQUARE.is(n)) {
         return Z.valueOf(k);
       }
     }

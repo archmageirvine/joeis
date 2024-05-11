@@ -2,6 +2,7 @@ package irvine.oeis.a067;
 
 import irvine.math.LongUtils;
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
@@ -31,7 +32,7 @@ public class A067069 extends Sequence1 implements Conjectural {
           }
         }
         final long d = Functions.SIGMA0.l(q);
-        final long s = (LongUtils.isSquare(q) ? d + 1 : d) / 2;
+        final long s = (Predicates.SQUARE.is(q) ? d + 1 : d) / 2;
         if (r != s) {
           ok = false;
           break;

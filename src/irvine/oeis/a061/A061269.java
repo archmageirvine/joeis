@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterSequence;
 import irvine.oeis.a006.A006716;
 
@@ -13,6 +13,6 @@ public class A061269 extends FilterSequence {
 
   /** Construct the sequence. */
   public A061269() {
-    super(new A006716(), k -> LongUtils.isSquare(Functions.DIGIT_SUM.l(k)));
+    super(new A006716(), k -> Predicates.SQUARE.is(Functions.DIGIT_SUM.l(k)));
   }
 }

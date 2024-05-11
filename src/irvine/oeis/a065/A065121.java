@@ -2,8 +2,8 @@ package irvine.oeis.a065;
 
 import java.util.List;
 
-import irvine.math.LongUtils;
 import irvine.math.cr.Convergents;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -45,7 +45,7 @@ public class A065121 extends Sequence0 {
     long m = 1;
     while (true) {
       ++m;
-      if (!LongUtils.isSquare(m)) {
+      if (!Predicates.SQUARE.is(m)) {
         final List<Z> conv = Convergents.continuedFractionConvergentsSqrt(m);
         if (is(row, conv)) {
           return Z.valueOf(m);

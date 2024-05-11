@@ -1,6 +1,6 @@
 package irvine.oeis.a064;
 
-import irvine.math.IntegerUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -26,7 +26,7 @@ public class A064817 extends Sequence1 {
     }
     for (int k = 1; k < mUsed.length; ++k) {
       if (!mUsed[k]) {
-        final int p = IntegerUtils.isSquare(v + k) ? -1 : 0;
+        final int p = Predicates.SQUARE.is(v + k) ? -1 : 0;
         mUsed[k] = true;
         search(k, sum + p, used + 1);
         mUsed[k] = false;

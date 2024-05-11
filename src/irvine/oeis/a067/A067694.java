@@ -1,6 +1,6 @@
 package irvine.oeis.a067;
 
-import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -17,7 +17,7 @@ public class A067694 extends Sequence0 {
     if (++mN == 0 || mN == 2) {
       return Z.ZERO;
     }
-    if (LongUtils.isSquare(mN)) {
+    if (Predicates.SQUARE.is(mN)) {
       return Z.ONE;
     }
     if ((mN & 3) == 2) {

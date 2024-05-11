@@ -1,7 +1,7 @@
 package irvine.oeis.a065;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,7 +18,7 @@ public class A065988 extends Sequence1 {
   public Z next() {
     long p = mPrime.prevPrime(++mN);
     while (p >= 2) {
-      if (LongUtils.isSquare(mN % p)) {
+      if (Predicates.SQUARE.is(mN % p)) {
         return Z.valueOf(p);
       }
       p = mPrime.prevPrime(p);

@@ -2,6 +2,7 @@ package irvine.oeis.a061;
 
 import irvine.math.LongUtils;
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 
 /**
@@ -16,7 +17,7 @@ public class A061911 extends A061910 {
   public Z next() {
     while (true) {
       final long t = Functions.DIGIT_SUM.l(Z.valueOf(++mN).square());
-      if (LongUtils.isSquare(t)) {
+      if (Predicates.SQUARE.is(t)) {
         return Z.valueOf(LongUtils.sqrt(t));
       }
     }

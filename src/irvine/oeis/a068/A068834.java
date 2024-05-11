@@ -1,7 +1,7 @@
 package irvine.oeis.a068;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,13 +17,13 @@ public class A068834 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z p = Z.valueOf(++mN).square();
-      if (LongUtils.isSquare(Functions.DIGIT_SUM.l(p))) {
+      if (Predicates.SQUARE.is(Functions.DIGIT_SUM.l(p))) {
         final Z q = Z.valueOf(mN + 1).square();
-        if (LongUtils.isSquare(Functions.DIGIT_SUM.l(q))) {
+        if (Predicates.SQUARE.is(Functions.DIGIT_SUM.l(q))) {
           final Z r = Z.valueOf(mN + 2).square();
-          if (LongUtils.isSquare(Functions.DIGIT_SUM.l(r))) {
+          if (Predicates.SQUARE.is(Functions.DIGIT_SUM.l(r))) {
             final Z s = Z.valueOf(mN + 3).square();
-            if (LongUtils.isSquare(Functions.DIGIT_SUM.l(s))) {
+            if (Predicates.SQUARE.is(Functions.DIGIT_SUM.l(s))) {
               return p;
             }
           }

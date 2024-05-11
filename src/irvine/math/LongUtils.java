@@ -7,6 +7,7 @@ import java.util.Collection;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.util.CollectionUtils;
 import irvine.util.io.IOUtils;
@@ -213,16 +214,6 @@ public final class LongUtils {
       }
       a = na;
     }
-  }
-
-  /**
-   * Test if the given value is a square.
-   * @param n number to test
-   * @return true iff the number is a square
-   */
-  public static boolean isSquare(final long n) {
-    final long s = sqrt(n);
-    return s * s == n;
   }
 
   /**
@@ -697,7 +688,7 @@ public final class LongUtils {
    * @return true iff the number is triangular
    */
   public static boolean isTriangular(final long n) {
-    return isSquare((n << 3) + 1);
+    return Predicates.SQUARE.is((n << 3) + 1);
   }
 
   /**

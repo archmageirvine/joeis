@@ -58,16 +58,6 @@ public final class IntegerUtils {
   }
 
   /**
-   * Test if the given value is a square.
-   * @param n number to test
-   * @return true iff the number is a square
-   */
-  public static boolean isSquare(final int n) {
-    final int s = sqrt(n);
-    return s * s == n;
-  }
-
-  /**
    * Convert a digit character to a value, returns <code>-1</code> if not a valid digit.
    * Understands about use of letters in higher bases.
    * @param c a character

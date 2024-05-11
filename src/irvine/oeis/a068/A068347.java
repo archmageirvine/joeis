@@ -7,6 +7,7 @@ import java.util.List;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.a066.A066925;
@@ -46,7 +47,7 @@ public class A068347 extends A066925 {
     mSolutions.clear();
     final long[] terms = ZUtils.toLong(Jaguar.factor(t).divisorsSorted());
     findSolutions(t, t, terms, 0, new ArrayList<>());
-    if (LongUtils.isSquare(t)) {
+    if (Predicates.SQUARE.is(t)) {
       final long s = LongUtils.sqrt(t);
       final List<Long> s1 = new ArrayList<>();
       long q = t;

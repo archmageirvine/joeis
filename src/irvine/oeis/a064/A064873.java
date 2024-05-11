@@ -1,6 +1,7 @@
 package irvine.oeis.a064;
 
 import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -25,7 +26,7 @@ public class A064873 extends Sequence0 {
         final long v = u - b * b;
         for (long c = b; 2 * c * c <= v; ++c) {
           final long w = v - c * c;
-          if (LongUtils.isSquare(w)) {
+          if (Predicates.SQUARE.is(w)) {
             return select(mN, a, b, c, LongUtils.sqrt(w));
           }
         }

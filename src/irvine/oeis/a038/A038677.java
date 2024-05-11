@@ -1,7 +1,7 @@
 package irvine.oeis.a038;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -24,7 +24,7 @@ public class A038677 extends Sequence1 {
       final String s = n3.toString();
       for (int k = s.length() - 2; k > 0; --k) {
         final Z t = new Z(s.substring(k));
-        if (!t.isZero() && ZUtils.isCube(t)) {
+        if (!t.isZero() && Predicates.CUBE.is(t)) {
           return n3;
         }
       }

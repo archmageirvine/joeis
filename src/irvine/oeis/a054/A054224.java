@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.math.z.ZUtils;
+import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterSequence;
 
 /**
@@ -11,6 +11,6 @@ public class A054224 extends FilterSequence {
 
   /** Construct the sequence. */
   public A054224() {
-    super(new A054221(), k -> !ZUtils.isCube(k));
+    super(new A054221(), k -> !Predicates.CUBE.is(k));
   }
 }

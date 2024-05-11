@@ -1,7 +1,7 @@
 package irvine.oeis.a030;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000578;
 
 /**
@@ -31,7 +31,7 @@ public class A030697 extends A000578 {
         v = 1; // to allow for leading 0s in what is appended
       }
       final Z u = t.add(v);
-      if (ZUtils.isCube(u)) {
+      if (Predicates.CUBE.is(u)) {
         return u;
       }
     }

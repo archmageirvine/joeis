@@ -1,8 +1,8 @@
 package irvine.oeis.a045;
 
 import irvine.factor.prime.Fast;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -18,10 +18,10 @@ public class A045911 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (!mPrime.isPrime(mN) && !ZUtils.isCube(mN)) {
+      if (!mPrime.isPrime(mN) && !Predicates.CUBE.is(mN)) {
         boolean ok = true;
         for (Z p = Z.TWO; p.compareTo(mN) < 0; p = mPrime.nextPrime(p)) {
-          if (ZUtils.isCube(mN.subtract(p))) {
+          if (Predicates.CUBE.is(mN.subtract(p))) {
             ok = false;
             break;
           }

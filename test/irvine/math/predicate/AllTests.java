@@ -12,6 +12,7 @@ public class AllTests extends TestSuite {
   public static Test suite() {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(SquareTest.class);
+    suite.addTestSuite(CubeTest.class);
     return suite;
   }
 }

@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000578;
 
 /**
@@ -24,7 +24,7 @@ public class A061460 extends A000578 {
     while (true) {
       final Z t = super.next();
       final String s = t.toString();
-      if (ZUtils.isCube(new Z(s.substring(1) + s.charAt(0)))) {
+      if (Predicates.CUBE.is(new Z(s.substring(1) + s.charAt(0)))) {
         return t;
       }
     }

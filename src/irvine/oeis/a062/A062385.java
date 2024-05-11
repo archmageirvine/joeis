@@ -2,8 +2,8 @@ package irvine.oeis.a062;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -18,7 +18,7 @@ public class A062385 extends Sequence1 {
   public Z next() {
     while (true) {
       final FactorSequence fs = Jaguar.factor(++mN);
-      if (ZUtils.isCube(fs.sigma().subtract(fs.phi()))) {
+      if (Predicates.CUBE.is(fs.sigma().subtract(fs.phi()))) {
         return Z.valueOf(mN);
       }
     }

@@ -10,4 +10,6 @@ public final class Predicates {
 
   /** Test if a number is a square. */
   public static final Predicate SQUARE = new Square();
+  /** Test if a number is a cube. */
+  public static final Predicate CUBE = new Cube();
 }

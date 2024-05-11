@@ -8,7 +8,7 @@ import irvine.math.z.Z;
  * Test if a number is a square.
  * @author Sean A. Irvine
  */
-class Square implements Predicate {
+class Square extends AbstractPredicate {
 
   @Override
   public boolean is(final Z n) {

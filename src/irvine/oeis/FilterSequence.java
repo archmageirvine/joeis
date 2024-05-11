@@ -4,6 +4,7 @@ import java.util.function.BiPredicate;
 import java.util.function.Predicate;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 
@@ -36,7 +37,7 @@ public class FilterSequence extends AbstractSequence {
   /** Square terms. */
   public static final Predicate<Z> SQUARE = Z::isSquare;
   /** Cube terms. */
-  public static final Predicate<Z> CUBE = ZUtils::isCube;
+  public static final Predicate<Z> CUBE = n -> Predicates.CUBE.is(n);
   /** Triangular terms. */
   public static final Predicate<Z> TRIANGULAR = ZUtils::isTriangular;
   /** Squarefree terms. */

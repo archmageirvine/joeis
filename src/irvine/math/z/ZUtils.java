@@ -764,15 +764,6 @@ public final class ZUtils {
   }
 
   /**
-   * Test if a number is a cube.
-   * @param n number to test
-   * @return true iff the number is a cube
-   */
-  public static boolean isCube(final Z n) {
-    return n.root(3).auxiliary() == 1;
-  }
-
-  /**
    * Test for a <code>k</code>-gonal number.
    * @param n number to test
    * @param k shape

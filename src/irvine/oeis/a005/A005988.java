@@ -2,8 +2,8 @@ package irvine.oeis.a005;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -89,11 +89,11 @@ public class A005988 extends Sequence1 {
     for (long x = 1; x < 2 * bigD; ++x) {
       final long x3 = x * x * x;
       final long v = 1 - x3;
-      if (v != 0 && v % bigD == 0 && ZUtils.isCube(Z.valueOf(v / bigD))) {
+      if (v != 0 && v % bigD == 0 && Predicates.CUBE.is(v / bigD)) {
         return Z.valueOf(x);
       }
       final long w = 1 + x3;
-      if (w % bigD == 0 && ZUtils.isCube(Z.valueOf(w / bigD))) {
+      if (w % bigD == 0 && Predicates.CUBE.is(w / bigD)) {
         return Z.valueOf(-x);
       }
     }

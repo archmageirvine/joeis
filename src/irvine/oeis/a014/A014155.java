@@ -1,7 +1,7 @@
 package irvine.oeis.a014;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -18,7 +18,7 @@ public class A014155 extends Sequence1 {
       ++mN;
       long t;
       for (long k = 0; (t = k * (k + 1) / 2) <= mN; ++k) {
-        if (ZUtils.isCube(Z.valueOf(mN - t))) {
+        if (Predicates.CUBE.is(mN - t)) {
           return Z.valueOf(mN);
         }
       }

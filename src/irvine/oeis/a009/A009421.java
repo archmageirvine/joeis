@@ -1,7 +1,7 @@
 package irvine.oeis.a009;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -18,7 +18,7 @@ public class A009421 extends Sequence1 {
     }
     for (int k = 1; k <= (multipart ? s.length() : s.length() - 1); ++k) {
       final Z v = new Z(s.substring(0, k));
-      if (ZUtils.isCube(v) && isCubeDecomposable(s.substring(k), true)) {
+      if (Predicates.CUBE.is(v) && isCubeDecomposable(s.substring(k), true)) {
         return true;
       }
     }

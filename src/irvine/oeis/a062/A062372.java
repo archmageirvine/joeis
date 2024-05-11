@@ -1,6 +1,6 @@
 package irvine.oeis.a062;
 
-import irvine.math.z.ZUtils;
+import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a051.A051801;
 
@@ -12,6 +12,6 @@ public class A062372 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A062372() {
-    super(0, 1, new A051801().skip(1), ZUtils::isCube);
+    super(0, 1, new A051801().skip(1), n -> Predicates.CUBE.is(n));
   }
 }

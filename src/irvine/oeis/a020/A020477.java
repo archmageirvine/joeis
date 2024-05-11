@@ -1,8 +1,8 @@
 package irvine.oeis.a020;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -16,7 +16,8 @@ public class A020477 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (ZUtils.isCube(Functions.SIGMA.z(++mN))) {
+      final Z n = Functions.SIGMA.z(++mN);
+      if (Predicates.CUBE.is(n)) {
         return Z.valueOf(mN);
       }
     }

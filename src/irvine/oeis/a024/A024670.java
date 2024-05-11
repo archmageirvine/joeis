@@ -1,7 +1,7 @@
 package irvine.oeis.a024;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 
 /**
@@ -30,7 +30,7 @@ public class A024670 extends AbstractSequence {
     while (true) {
       ++mN;
       for (long k = 1; k * k * k * 2 < mN; ++k) {
-        if (ZUtils.isCube(Z.valueOf(mN - k * k * k))) {
+        if (Predicates.CUBE.is(mN - k * k * k)) {
           return Z.valueOf(mN);
         }
       }

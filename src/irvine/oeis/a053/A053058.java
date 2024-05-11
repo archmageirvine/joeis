@@ -1,8 +1,8 @@
 package irvine.oeis.a053;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000578;
 
 /**
@@ -21,7 +21,7 @@ public class A053058 extends A000578 {
     while (true) {
       final Z cube = super.next();
       final long d = Functions.DIGIT_SUM.l(cube);
-      if (ZUtils.isCube(Z.valueOf(d))) {
+      if (Predicates.CUBE.is(d)) {
         return cube;
       }
     }

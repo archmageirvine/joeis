@@ -1,8 +1,8 @@
 package irvine.oeis.a048;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a018.A018252;
 
 /**
@@ -15,7 +15,7 @@ public class A048698 extends A018252 {
   public Z next() {
     while (true) {
       final Z a = super.next();
-      if (ZUtils.isCube(Functions.SIGMA.z(a).subtract(a))) {
+      if (Predicates.CUBE.is(Functions.SIGMA.z(a).subtract(a))) {
         return a;
       }
     }

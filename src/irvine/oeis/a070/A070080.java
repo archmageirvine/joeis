@@ -3,8 +3,8 @@ package irvine.oeis.a070;
 import java.util.function.Function;
 
 import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 
 /**
@@ -227,7 +227,7 @@ public class A070080 extends AbstractSequence {
   protected static boolean hasTrigonalArea(final Long[] s) {
     final double area = getArea(s);
     if (area % 1 == 0) {
-      return ZUtils.isTriangular(Z.valueOf((long) area));
+      return Predicates.TRIANGULAR.is((long) area);
     } else {
       return false;
     }

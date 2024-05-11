@@ -2,8 +2,8 @@ package irvine.oeis.a061;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -26,7 +26,7 @@ public class A061336 extends Sequence0 {
         return Z.THREE;
       }
     }
-    if (ZUtils.isTriangular(Z.valueOf(mN))) {
+    if (Predicates.TRIANGULAR.is(mN)) {
       return mN > 0 ? Z.ONE : Z.ZERO;
     }
     return Z.TWO;

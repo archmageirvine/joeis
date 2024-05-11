@@ -1,8 +1,8 @@
 package irvine.oeis.a062;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000217;
 
 /**
@@ -20,7 +20,7 @@ public class A062099 extends A000217 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (ZUtils.isTriangular(Functions.DIGIT_SUM.z(t))) {
+      if (Predicates.TRIANGULAR.is(Functions.DIGIT_SUM.z(t))) {
         return t;
       }
     }

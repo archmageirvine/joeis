@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000217;
 
 /**
@@ -23,7 +23,7 @@ public class A061380 extends A000217 {
       for (Z m = t; !m.isZero(); m = m.divide(10)) {
         prod = prod.multiply(m.mod(10));
       }
-      if (ZUtils.isTriangular(prod)) {
+      if (Predicates.TRIANGULAR.is(prod)) {
         return t;
       }
     }

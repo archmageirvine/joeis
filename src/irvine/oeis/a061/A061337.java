@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -20,11 +20,11 @@ public class A061337 extends Sequence0 {
     if (mN == 20) {
       return Z.FOUR;
     }
-    if (ZUtils.isTriangular(Z.valueOf(mN))) {
+    if (Predicates.TRIANGULAR.is(mN)) {
       return Z.ONE;
     }
     for (long j, k = 1; 2 * (j = k * (k + 1) / 2) < mN; ++k) {
-      if (ZUtils.isTriangular(Z.valueOf(mN - j))) {
+      if (Predicates.TRIANGULAR.is(mN - j)) {
         return Z.TWO;
       }
     }
@@ -32,7 +32,7 @@ public class A061337 extends Sequence0 {
       final long t = mN - a;
       for (long b, j = k + 1; (b = j * (j + 1) / 2) < t; ++j) {
         final long s = t - b;
-        if (s > b && ZUtils.isTriangular(Z.valueOf(s))) {
+        if (s > b && Predicates.TRIANGULAR.is(s)) {
           return Z.THREE;
         }
       }

@@ -1,8 +1,8 @@
 package irvine.oeis.a066;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000217;
@@ -21,7 +21,7 @@ public class A066528 extends Sequence1 {
       final Z t = mT.next();
       if (t.mod(10) != 0) {
         final Z r = Functions.REVERSE.z(t);
-        if (!r.equals(t) && ZUtils.isTriangular(r)) {
+        if (!r.equals(t) && Predicates.TRIANGULAR.is(r)) {
           return t;
         }
       }

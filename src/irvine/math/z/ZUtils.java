@@ -755,15 +755,6 @@ public final class ZUtils {
   }
 
   /**
-   * Test if the given number is triangular.
-   * @param n number
-   * @return true iff the number is triangular
-   */
-  public static boolean isTriangular(final Z n) {
-    return n.shiftLeft(3).add(1).isSquare();
-  }
-
-  /**
    * Test for a <code>k</code>-gonal number.
    * @param n number to test
    * @param k shape

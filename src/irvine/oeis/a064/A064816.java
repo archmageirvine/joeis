@@ -1,6 +1,6 @@
 package irvine.oeis.a064;
 
-import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -30,7 +30,7 @@ public class A064816 extends Sequence1 {
       if (2 * t > n) {
         break;
       }
-      if (LongUtils.isTriangular(n - t) && ++cnt > mWays) {
+      if (Predicates.TRIANGULAR.is(n - t) && ++cnt > mWays) {
         break;
       }
     }

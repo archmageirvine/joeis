@@ -1,7 +1,7 @@
 package irvine.oeis.a067;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000217;
 
 /**
@@ -23,7 +23,7 @@ public class A067269 extends A000217 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (ZUtils.isTriangular(rotate(t))) {
+      if (Predicates.TRIANGULAR.is(rotate(t))) {
         return t;
       }
     }

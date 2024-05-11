@@ -10,7 +10,7 @@ import junit.framework.TestCase;
 public class SquareTest extends TestCase {
 
   public void test() {
-    final Square p = new Square();
+    final Predicate p = new Square();
     assertTrue(p.is(0));
     assertTrue(p.is(1));
     assertFalse(p.is(2));

@@ -1,8 +1,8 @@
 package irvine.oeis.a061;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000217;
 
 /**
@@ -20,7 +20,7 @@ public class A061455 extends A000217 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (ZUtils.isTriangular(Functions.REVERSE.z(t))) {
+      if (Predicates.TRIANGULAR.is(Functions.REVERSE.z(t))) {
         return t;
       }
     }

@@ -1,7 +1,7 @@
 package irvine.oeis.a036;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -20,7 +20,7 @@ public class A036449 extends Sequence1 {
       Z b = mA.sqrt();
       do {
         b = b.add(1);
-      } while (!ZUtils.isTriangular(b.square().subtract(mA)));
+      } while (!Predicates.TRIANGULAR.is(b.square().subtract(mA)));
       mA = b.square();
     }
     return mA;

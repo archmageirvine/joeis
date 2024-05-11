@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -17,7 +17,8 @@ public class A061782 extends Sequence1 {
     mN = mN.add(1);
     long k = 0;
     while (true) {
-      if (ZUtils.isTriangular(mN.multiply(++k))) {
+      final Z n = mN.multiply(++k);
+      if (Predicates.TRIANGULAR.is(n)) {
         return Z.valueOf(k);
       }
     }

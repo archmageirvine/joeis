@@ -39,7 +39,7 @@ public class FilterSequence extends AbstractSequence {
   /** Cube terms. */
   public static final Predicate<Z> CUBE = n -> Predicates.CUBE.is(n);
   /** Triangular terms. */
-  public static final Predicate<Z> TRIANGULAR = ZUtils::isTriangular;
+  public static final Predicate<Z> TRIANGULAR = n -> Predicates.TRIANGULAR.is(n);
   /** Squarefree terms. */
   public static final Predicate<Z> SQUAREFREE = k -> Jaguar.factor(k).isSquareFree();
   /** Nonsquarefree terms. */

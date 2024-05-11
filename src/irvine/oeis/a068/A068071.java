@@ -1,7 +1,7 @@
 package irvine.oeis.a068;
 
 import irvine.math.function.Functions;
-import irvine.math.z.ZUtils;
+import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000217;
 
@@ -13,7 +13,7 @@ public class A068071 extends FilterSequence {
 
   /** Construct the sequence. */
   public A068071() {
-    super(1, new A000217().skip(), k -> ZUtils.isTriangular(Functions.ROTATE_RIGHT.z(k)));
+    super(1, new A000217().skip(), k -> Predicates.TRIANGULAR.is(Functions.ROTATE_RIGHT.z(k)));
   }
 }
 

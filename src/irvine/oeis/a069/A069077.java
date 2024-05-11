@@ -1,8 +1,8 @@
 package irvine.oeis.a069;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000217;
 
@@ -16,7 +16,7 @@ public class A069077 extends FilterSequence {
   public A069077() {
     super(1, new A000217().skip(), k -> {
       final Z prod = Functions.DIGIT_PRODUCT.z(k);
-      return !prod.isZero() && ZUtils.isTriangular(prod);
+      return !prod.isZero() && Predicates.TRIANGULAR.is(prod);
     });
   }
 }

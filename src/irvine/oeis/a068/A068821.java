@@ -1,7 +1,7 @@
 package irvine.oeis.a068;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000217;
 
@@ -16,7 +16,7 @@ public class A068821 extends FilterSequence {
     super(1, new A000217().skip(), t -> {
       final String s = t.toString();
       final int k = s.length() / 2;
-      return k == 0 || ZUtils.isTriangular(new Z(s.substring(0, k))) && ZUtils.isTriangular(new Z(s.substring(k)));
+      return k == 0 || Predicates.TRIANGULAR.is(new Z(s.substring(0, k))) && Predicates.TRIANGULAR.is(new Z(s.substring(k)));
     });
   }
 }

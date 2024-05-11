@@ -3,8 +3,8 @@ package irvine.oeis.a068;
 import java.util.Map;
 import java.util.TreeMap;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 
 /**
@@ -45,7 +45,7 @@ public class A068127 extends AbstractSequence {
       for (int k = 0; k <= Math.min(mSum - sum, 9); ++k) {
         mA.put(t10.add(k), sum + k);
       }
-      if (sum == mSum && ZUtils.isTriangular(t)) {
+      if (sum == mSum && Predicates.TRIANGULAR.is(t)) {
         return t;
       }
     }

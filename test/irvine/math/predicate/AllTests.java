@@ -13,6 +13,7 @@ public class AllTests extends TestSuite {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(SquareTest.class);
     suite.addTestSuite(CubeTest.class);
+    suite.addTestSuite(TriangularTest.class);
     return suite;
   }
 }

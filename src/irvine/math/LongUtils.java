@@ -7,7 +7,6 @@ import java.util.Collection;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
-import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.util.CollectionUtils;
 import irvine.util.io.IOUtils;
@@ -680,15 +679,6 @@ public final class LongUtils {
         return h;
       }
     }
-  }
-
-  /**
-   * Test if the given number is triangular.
-   * @param n number
-   * @return true iff the number is triangular
-   */
-  public static boolean isTriangular(final long n) {
-    return Predicates.SQUARE.is((n << 3) + 1);
   }
 
   /**

@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.math.z.Fibonacci;
+import irvine.math.predicate.Fibonacci;
 import irvine.math.z.Z;
 
 /**

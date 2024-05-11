@@ -1,7 +1,7 @@
 package irvine.oeis.a053;
 
 import irvine.math.function.Functions;
-import irvine.math.z.Fibonacci;
+import irvine.math.predicate.Fibonacci;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 

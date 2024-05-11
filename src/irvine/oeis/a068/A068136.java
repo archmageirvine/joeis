@@ -1,7 +1,7 @@
 package irvine.oeis.a068;
 
 import irvine.math.function.Functions;
-import irvine.math.z.Fibonacci;
+import irvine.math.predicate.Fibonacci;
 import irvine.math.z.Z;
 import irvine.oeis.a007.A007908;
 
@@ -14,7 +14,7 @@ public class A068136 extends A007908 {
   @Override
   public Z next() {
     final Z c = super.next();
-    if (Fibonacci.inverseFibonacci(c) >= 0) {
+    if (irvine.math.predicate.Fibonacci.inverseFibonacci(c) >= 0) {
       return c;
     }
     Z lo = c;

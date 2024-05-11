@@ -1,7 +1,7 @@
 package irvine.oeis.a020;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence2;
 
 /**
@@ -25,7 +25,7 @@ public class A020665 extends Sequence2 {
     Z t = Z.ONE;
     for (int m = 1; m <= HEURISTIC_LIMIT; ++m) {
       t = t.multiply(mN);
-      if (!ZUtils.containsZero(t)) {
+      if (!Predicates.DIGIT_CONTAINS_ZERO.is(t)) {
         best = m;
       }
     }

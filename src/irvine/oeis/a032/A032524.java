@@ -4,8 +4,8 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -21,7 +21,7 @@ public class A032524 extends Sequence1 {
 
   private Z sortDigits(final long p) {
     final Z pp = Z.valueOf(p);
-    if (ZUtils.containsZero(pp)) {
+    if (Predicates.DIGIT_CONTAINS_ZERO.is(pp)) {
       return null;
     }
     return Functions.DIGIT_SORT_ASCENDING.z(p);

@@ -512,61 +512,6 @@ public final class ZUtils {
   }
 
   /**
-   * Test if the supplied integers has non-decreasing digits.
-   * @param n number to test
-   * @return true iff digits are non-decreasing
-   */
-  public static boolean isNondecreasingDigits(Z n) {
-    Z t = Z.TEN;
-    while (!n.isZero()) {
-      final Z[] qr = n.divideAndRemainder(Z.TEN);
-      if (qr[1].compareTo(t) > 0) {
-        return false;
-      }
-      t = qr[1];
-      n = qr[0];
-    }
-    return true;
-  }
-
-  /**
-   * Test if the supplied integers has non-increasing digits.
-   * @param n number to test
-   * @return true iff digits are non-decreasing
-   */
-  public static boolean isNonincreasingDigits(Z n) {
-    Z t = Z.ZERO;
-    while (!n.isZero()) {
-      final Z[] qr = n.divideAndRemainder(Z.TEN);
-      if (qr[1].compareTo(t) < 0) {
-        return false;
-      }
-      t = qr[1];
-      n = qr[0];
-    }
-    return true;
-  }
-
-  /**
-   * Test if the decimal expansion of n contain a 0.
-   * @param n number to test
-   * @return true iff and n contains a zero
-   */
-  public static boolean containsZero(Z n) {
-    if (n.isZero()) {
-      return true;
-    }
-    while (!n.isZero()) {
-      final Z[] qr = n.divideAndRemainder(Z.TEN);
-      if (qr[1].isZero()) {
-        return true;
-      }
-      n = qr[0];
-    }
-    return false;
-  }
-
-  /**
    * Chinese remainder theorem (CRT).
    * @param divs arguments
    * @param mods moduli

@@ -1,6 +1,6 @@
 package irvine.oeis.a028;
 
-import irvine.math.z.ZUtils;
+import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000290;
 
@@ -12,6 +12,6 @@ public class A028822 extends FilterSequence {
 
   /** Construct the sequence. */
   public A028822() {
-    super(1, new A000290(), ZUtils::isNonincreasingDigits);
+    super(1, new A000290(), n -> Predicates.DIGIT_NONINCREASAING.is(n));
   }
 }

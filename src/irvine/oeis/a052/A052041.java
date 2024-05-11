@@ -1,7 +1,7 @@
 package irvine.oeis.a052;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000290;
 
 /**
@@ -18,7 +18,7 @@ public class A052041 extends A000290 {
   public Z next() {
     while (true) {
       final Z square = super.next();
-      if (!ZUtils.containsZero(square)) {
+      if (!Predicates.DIGIT_CONTAINS_ZERO.is(square)) {
         return square;
       }
     }

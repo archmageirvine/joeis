@@ -1,7 +1,7 @@
 package irvine.oeis.a028;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -16,7 +16,7 @@ public class A028819 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (ZUtils.isNondecreasingDigits(mN.square())) {
+      if (Predicates.DIGIT_NONDECREASAING.is(mN.square())) {
         return mN;
       }
     }

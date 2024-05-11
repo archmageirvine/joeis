@@ -1,7 +1,7 @@
 package irvine.oeis.a030;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -19,7 +19,7 @@ public class A030706 extends Sequence1 {
       if (++mN > 0) {
         mA = mA.multiply(11);
       }
-      if (!ZUtils.containsZero(mA)) {
+      if (!Predicates.DIGIT_CONTAINS_ZERO.is(mA)) {
         return Z.valueOf(mN);
       }
     }

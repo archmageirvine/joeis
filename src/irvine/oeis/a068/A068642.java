@@ -1,7 +1,7 @@
 package irvine.oeis.a068;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000217;
@@ -24,7 +24,7 @@ public class A068642 extends Sequence1 {
       do {
         mA = mSeq.next();
         ++mM;
-      } while (!ZUtils.isPalindrome(mA, 10));
+      } while (!Predicates.PALINDROME.is(10, mA));
     }
     mLim = mLim.multiply(10);
     return mA.compareTo(mLim) >= 0 ? Z.ZERO : Z.valueOf(mM);

@@ -1,7 +1,7 @@
 package irvine.oeis.a066;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 import irvine.oeis.base.RaddSequence;
@@ -22,7 +22,7 @@ public class A066059 extends Sequence1 implements Conjectural {
       long k = 0;
       while (true) {
         final Z m = s.next();
-        if (ZUtils.isPalindrome(m, 2)) {
+        if (Predicates.PALINDROME.is(2, m)) {
           break;
         }
         if (++k >= HEURISITC_STEPS) {

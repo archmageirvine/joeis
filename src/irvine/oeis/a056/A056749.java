@@ -1,7 +1,7 @@
 package irvine.oeis.a056;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence2;
 import irvine.oeis.a006.A006995;
@@ -20,7 +20,7 @@ public class A056749 extends Sequence2 {
     final Sequence binaryPalindromes = new A006995();
     while (true) {
       final Z palin = binaryPalindromes.next();
-      if (palin.compareTo(n) > 0 && ZUtils.isPalindrome(palin, mN)) {
+      if (palin.compareTo(n) > 0 && Predicates.PALINDROME.is(mN, palin)) {
         return palin;
       }
     }

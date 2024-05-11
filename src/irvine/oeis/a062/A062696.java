@@ -2,8 +2,8 @@ package irvine.oeis.a062;
 
 import java.util.ArrayList;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a002.A002113;
 
 /**
@@ -28,7 +28,7 @@ public class A062696 extends A002113 {
             break;
           }
           final Z r = p.subtract(q);
-          if (ZUtils.isPalindrome(r, 10) && r.toString().length() < len) {
+          if (Predicates.PALINDROME.is(10, r) && r.toString().length() < len) {
             mPalindromes.add(p);
             return p;
           }

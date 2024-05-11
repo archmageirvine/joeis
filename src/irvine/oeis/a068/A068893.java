@@ -1,6 +1,6 @@
 package irvine.oeis.a068;
 
-import irvine.math.z.ZUtils;
+import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterSequence;
 import irvine.oeis.a085.A085869;
 
@@ -12,6 +12,6 @@ public class A068893 extends FilterSequence {
 
   /** Construct the sequence. */
   public A068893() {
-    super(1, new A085869(), k -> !ZUtils.isPalindrome(k, 10));
+    super(1, new A085869(), k -> !Predicates.PALINDROME.is(10, k));
   }
 }

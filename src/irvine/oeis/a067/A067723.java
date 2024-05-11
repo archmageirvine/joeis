@@ -1,8 +1,8 @@
 package irvine.oeis.a067;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002113;
@@ -19,7 +19,7 @@ public class A067723 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z t = mA.next();
-      if (ZUtils.isPalindrome(Functions.PHI.z(t), 10)) {
+      if (Predicates.PALINDROME.is(10, Functions.PHI.z(t))) {
         return t;
       }
     }

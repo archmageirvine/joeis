@@ -1,8 +1,8 @@
 package irvine.oeis.a023;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicArray;
 import irvine.util.array.LongDynamicIntArray;
@@ -40,7 +40,7 @@ public class A023109 extends Sequence0 {
       if (it == 0) {
         // Just starting with this number
         final Z v = Z.valueOf(k);
-        if (ZUtils.isPalindrome(v, mBase)) {
+        if (Predicates.PALINDROME.is(mBase, v)) {
           // Handle case where number is already a palindrome, mark as -1 so we don't ever consider it again
           mIterations.set(k, -1);
         } else {
@@ -52,7 +52,7 @@ public class A023109 extends Sequence0 {
         while (it < mN) {
           v = v.add(Functions.REVERSE.z(mBase, v));
           ++it;
-          if (ZUtils.isPalindrome(v, mBase)) {
+          if (Predicates.PALINDROME.is(mBase, v)) {
             // Finish this number, save space by storing null (also indicates it is complete)
             v = null;
             break;

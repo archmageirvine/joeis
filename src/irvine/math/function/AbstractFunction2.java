@@ -8,7 +8,7 @@ import irvine.math.z.Z;
  * Classes extending this, must implement at least one of the <code>z(t, n)</code> methods.
  * @author Sean A. Irvine
  */
-public abstract class AbstractFunction2 implements Function1, Function2 {
+public abstract class AbstractFunction2 implements Function2 {
 
   @Override
   public Z z(final long t, final Z n) {

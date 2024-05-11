@@ -3,8 +3,8 @@ package irvine.oeis.a063;
 import java.util.HashSet;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -23,7 +23,7 @@ public class A063048 extends Sequence1 {
       if (!mSeen.add(n)) {
         return true;
       }
-      if (ZUtils.isPalindrome(n, 10)) {
+      if (Predicates.PALINDROME.is(10, n)) {
         return true;
       }
       n = n.add(Functions.REVERSE.z(n));

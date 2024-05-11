@@ -2,8 +2,8 @@ package irvine.oeis.a066;
 
 import java.util.TreeSet;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
@@ -39,7 +39,7 @@ public class A066055 extends Sequence1 implements Conjectural {
         if (mA.contains(m)) {
           return Z.valueOf(mN);
         }
-        if (++k >= HEURISITC_STEPS || ZUtils.isPalindrome(m, 10)) {
+        if (++k >= HEURISITC_STEPS || Predicates.PALINDROME.is(10, m)) {
           break;
         }
       }

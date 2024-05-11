@@ -1,8 +1,8 @@
 package irvine.oeis.a065;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -31,12 +31,12 @@ public class A065206 extends Sequence1 {
 
   private boolean is(Z n) {
     for (int k = 0; k < mSteps; ++k) {
-      if (ZUtils.isPalindrome(n, mBase)) {
+      if (Predicates.PALINDROME.is(mBase, n)) {
         return false;
       }
       n = n.add(Functions.REVERSE.z(mBase, n));
     }
-    return ZUtils.isPalindrome(n, mBase);
+    return Predicates.PALINDROME.is(mBase, n);
   }
 
   @Override

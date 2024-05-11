@@ -1,7 +1,7 @@
 package irvine.oeis.a065;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -20,7 +20,7 @@ public class A065531 extends Sequence1 {
     final Z n = Z.valueOf(mN);
     long cnt = 0;
     for (long k = 2; k <= mN; ++k) {
-      if (ZUtils.isPalindrome(n, k)) {
+      if (Predicates.PALINDROME.is(k, n)) {
         ++cnt;
       }
     }

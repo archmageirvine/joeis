@@ -24,4 +24,7 @@ public final class Predicates {
   public static final Predicate DIGIT_NONINCREASAING = new DigitNonincreasing();
   /** Test if a number contains a zero digit. */
   public static final Predicate DIGIT_CONTAINS_ZERO = new DigitContainsZero();
+
+  /** Test if a number is a palindrome. */
+  public static final Predicate2 PALINDROME = new Palindrome();
 }

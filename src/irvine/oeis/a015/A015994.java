@@ -1,8 +1,8 @@
 package irvine.oeis.a015;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicArray;
 import irvine.util.array.LongDynamicIntArray;
@@ -37,7 +37,7 @@ public class A015994 extends Sequence1 {
         while (it < mN) {
           v = v.add(Functions.REVERSE.z(v));
           ++it;
-          if (ZUtils.isPalindrome(v, 10)) {
+          if (Predicates.PALINDROME.is(10, v)) {
             // Finish this number, save space by storing null (also indicates it is complete)
             v = null;
             break;

@@ -1,8 +1,8 @@
 package irvine.oeis.a066;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence2;
 
 /**
@@ -16,7 +16,7 @@ public class A066450 extends Sequence2 {
 
   private boolean is(final int base, Z m) {
     while (true) {
-      if (ZUtils.isPalindrome(m, base)) {
+      if (Predicates.PALINDROME.is(base, m)) {
         return false;
       }
       if (m.bitLength() > HEURISTIC_BIT_LENGTH) {

@@ -1,8 +1,8 @@
 package irvine.oeis.a062;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a002.A002113;
 
 /**
@@ -17,7 +17,7 @@ public class A062687 extends A002113 {
 
   private boolean is(final Z p) {
     for (final Z d : Jaguar.factor(p).divisors()) {
-      if (!ZUtils.isPalindrome(d, 10)) {
+      if (!Predicates.PALINDROME.is(10, d)) {
         return false;
       }
     }

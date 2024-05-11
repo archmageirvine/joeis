@@ -22,7 +22,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(EuclidTest.class);
     suite.addTestSuite(Eulerian2Test.class);
     suite.addTestSuite(ExtendedEuclidTest.class);
-    suite.addTestSuite(FibonacciTest.class);
     suite.addTestSuite(GcdTest.class);
     suite.addTestSuite(IntegersTest.class);
     suite.addTestSuite(InverseEulerTest.class);

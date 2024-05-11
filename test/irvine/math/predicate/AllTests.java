@@ -13,6 +13,7 @@ public class AllTests extends TestSuite {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(CubeTest.class);
     suite.addTestSuite(FibonacciTest.class);
+    suite.addTestSuite(LucasTest.class);
     suite.addTestSuite(SquareTest.class);
     suite.addTestSuite(TriangularTest.class);
     return suite;

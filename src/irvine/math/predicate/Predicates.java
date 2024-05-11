@@ -16,4 +16,6 @@ public final class Predicates {
   public static final Predicate TRIANGULAR = new Triangular();
   /** Test if a number is a Fibonacci number. */
   public static final Predicate FIBONACCI = new Fibonacci();
+  /** Test if a number is a Lucas number. */
+  public static final Predicate LUCAS = new Lucas();
 }

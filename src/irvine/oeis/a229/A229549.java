@@ -1,9 +1,9 @@
 package irvine.oeis.a229;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A229549 Numbers k such that k*(sum of digits of k) is a palindrome.
@@ -17,7 +17,7 @@ public class A229549 extends Sequence1 {
   public Z next() {
     while (true) {
       mK = mK.add(1);
-      if (StringUtils.isPalindrome(mK.multiply(Functions.DIGIT_SUM.l(mK)).toString())) {
+      if (Predicates.PALINDROME.is(mK.multiply(Functions.DIGIT_SUM.l(mK)))) {
         return mK;
       }
     }

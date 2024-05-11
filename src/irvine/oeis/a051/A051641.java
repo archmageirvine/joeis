@@ -4,10 +4,10 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import irvine.math.MutableInteger;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A051641 Palindromic binomial coefficients C(n,k) for k &gt;= 2.
@@ -26,7 +26,7 @@ public class A051641 extends Sequence1 {
     while (mPriority.isEmpty() || Binomial.binomial(mN, 2).compareTo(mPriority.firstKey()) <= 0) {
       for (long k = 2; k <= mN / 2; ++k) {
         final Z t = Binomial.binomial(mN, k);
-        if (StringUtils.isPalindrome(t.toString())) {
+        if (Predicates.PALINDROME.is(t)) {
           final MutableInteger cnt = mPriority.get(t);
           if (cnt != null) {
             cnt.postIncrement();

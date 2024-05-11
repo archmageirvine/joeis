@@ -1,8 +1,8 @@
 package irvine.oeis.a029;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A029991 Squares which are palindromes in base 6.
@@ -17,7 +17,7 @@ public class A029991 extends Sequence1 {
     while (true) {
       mN = mN.add(1);
       final Z t = mN.square();
-      if (StringUtils.isPalindrome(t.toString(6))) {
+      if (Predicates.PALINDROME.is(6, t)) {
         return t;
       }
     }

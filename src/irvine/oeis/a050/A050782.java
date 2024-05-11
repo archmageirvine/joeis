@@ -1,8 +1,8 @@
 package irvine.oeis.a050;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
-import irvine.util.string.StringUtils;
 
 /**
  * A050782 Smallest positive multiplier m such that m*n is palindromic (or zero if no such m exists).
@@ -20,7 +20,7 @@ public class A050782 extends Sequence0 {
     final Z n = Z.valueOf(mN);
     long k = 0;
     while (true) {
-      if (StringUtils.isPalindrome(n.multiply(++k).toString())) {
+      if (Predicates.PALINDROME.is(n.multiply(++k))) {
         return Z.valueOf(k);
       }
     }

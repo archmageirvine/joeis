@@ -1,7 +1,7 @@
 package irvine.oeis.a045;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.util.string.StringUtils;
 
 /**
  * A045960 Palindromic even lucky numbers.
@@ -13,7 +13,7 @@ public class A045960 extends A045954 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (StringUtils.isPalindrome(t.toString())) {
+      if (Predicates.PALINDROME.is(t)) {
         return t;
       }
     }

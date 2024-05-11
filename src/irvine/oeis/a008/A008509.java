@@ -1,8 +1,8 @@
 package irvine.oeis.a008;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000217;
-import irvine.util.string.StringUtils;
 
 /**
  * A008509 Positive integers k such that k-th triangular number is palindromic.
@@ -20,7 +20,7 @@ public class A008509 extends A000217 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (StringUtils.isPalindrome(t.toString())) {
+      if (Predicates.PALINDROME.is(t)) {
         return Z.valueOf(mN);
       }
     }

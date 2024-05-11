@@ -1,8 +1,8 @@
 package irvine.oeis.a054;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000384;
-import irvine.util.string.StringUtils;
 
 /**
  * A054970 Index numbers for palindromic hexagonal numbers.
@@ -19,7 +19,7 @@ public class A054970 extends A000384 {
   public Z next() {
     while (true) {
       final Z hex = super.next();
-      if (StringUtils.isPalindrome(hex.toString())) {
+      if (Predicates.PALINDROME.is(hex)) {
         return mN;
       }
     }

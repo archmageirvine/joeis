@@ -2,8 +2,8 @@ package irvine.oeis.a068;
 
 import java.util.TreeMap;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -21,7 +21,7 @@ public class A068064 extends Sequence1 {
     while (mValues.isEmpty() || mN < mValues.firstKey()) {
       ++mN;
       final long s = mN + Functions.REVERSE.l(mN);
-      if (LongUtils.isPalindrome(s, 10)) {
+      if (Predicates.PALINDROME.is(10, s)) {
         mValues.merge(s, 1, Integer::sum);
       }
     }

@@ -1,8 +1,8 @@
 package irvine.oeis.a029;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A029952 Palindromic in base 5.
@@ -15,7 +15,7 @@ public class A029952 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (StringUtils.isPalindrome(Long.toString(++mN, 5))) {
+      if (Predicates.PALINDROME.is(5, ++mN)) {
         return Z.valueOf(mN);
       }
     }

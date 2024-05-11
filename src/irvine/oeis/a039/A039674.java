@@ -1,7 +1,7 @@
 package irvine.oeis.a039;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.util.string.StringUtils;
 
 /**
  * A039674 Palindromic Fibonacci-lucky numbers.
@@ -13,7 +13,7 @@ public class A039674 extends A039672 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (StringUtils.isPalindrome(t.toString())) {
+      if (Predicates.PALINDROME.is(t)) {
         return t;
       }
     }

@@ -1,8 +1,8 @@
 package irvine.oeis.a020;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
-import irvine.util.string.StringUtils;
 
 /**
  * A020485 Least positive palindromic multiple of n, or 0 if none exists.
@@ -21,7 +21,7 @@ public class A020485 extends Sequence0 {
     long m = 0;
     while (true) {
       final Z c = mN.multiply(++m);
-      if (StringUtils.isPalindrome(c.toString())) {
+      if (Predicates.PALINDROME.is(c)) {
         return c;
       }
     }

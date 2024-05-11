@@ -1,7 +1,7 @@
 package irvine.oeis.a046;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.util.string.StringUtils;
 
 /**
  * A046408 Palindromes with exactly 2 distinct palindromic prime factors.
@@ -13,7 +13,7 @@ public class A046408 extends A046400 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (StringUtils.isPalindrome(t.toString())) {
+      if (Predicates.PALINDROME.is(t)) {
         return t;
       }
     }

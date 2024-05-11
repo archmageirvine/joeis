@@ -1,8 +1,8 @@
 package irvine.oeis.a030;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
-import irvine.util.string.StringUtils;
 
 /**
  * A030094 Product of n with 666 is palindromic.
@@ -16,7 +16,7 @@ public class A030094 extends Sequence0 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (StringUtils.isPalindrome(mN.multiply(666).toString())) {
+      if (Predicates.PALINDROME.is(mN.multiply(666))) {
         return mN;
       }
     }

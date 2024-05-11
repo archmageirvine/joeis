@@ -1,8 +1,8 @@
 package irvine.oeis.a014;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A014190 Palindromes in base 3 (written in base 10).
@@ -15,7 +15,7 @@ public class A014190 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (StringUtils.isPalindrome(Long.toString(++mN, 3))) {
+      if (Predicates.PALINDROME.is(3, ++mN)) {
         return Z.valueOf(mN);
       }
     }

@@ -1,8 +1,8 @@
 package irvine.oeis.a058;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a262.A262044;
-import irvine.util.string.StringUtils;
 
 /**
  * A058848 Numbers k such that the sum of the first k odd composites is palindromic.
@@ -17,7 +17,7 @@ public class A058848 extends A262044 {
     while (true) {
       ++mN;
       final Z t = super.next();
-      if (StringUtils.isPalindrome(t.toString())) {
+      if (Predicates.PALINDROME.is(t)) {
         return Z.valueOf(mN);
       }
     }

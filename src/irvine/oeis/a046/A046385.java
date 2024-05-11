@@ -1,10 +1,10 @@
 package irvine.oeis.a046;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a033.A033620;
 import irvine.util.array.LongDynamicArray;
-import irvine.util.string.StringUtils;
 
 /**
  * A046385 Smallest palindrome with exactly n palindromic prime factors (counted with multiplicity), and no other prime factors.
@@ -24,7 +24,7 @@ public class A046385 extends A033620 {
     ++mN;
     while (mA.get(mN) == null) {
       final Z t = super.next();
-      if (StringUtils.isPalindrome(t.toString())) {
+      if (Predicates.PALINDROME.is(t)) {
         final long omega = Functions.BIG_OMEGA.l(t);
         if (mA.get(omega) == null) {
           mA.set(omega, t);

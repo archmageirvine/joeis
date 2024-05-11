@@ -3,9 +3,9 @@ package irvine.oeis.a163;
 import java.util.ArrayList;
 
 import irvine.factor.prime.Fast;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A163410 A positive integer is included if it is a palindrome when written in binary, and it is not divisible by any primes that are not binary palindromes.
@@ -37,8 +37,7 @@ public class A163410 extends Sequence1 {
       if (mN == 1) {
         return Z.ONE;
       }
-      if (StringUtils.isPalindrome(Long.toBinaryString(mN))
-          && (mPrime.isPrime(mN) || divisibleByKnownPalindromes(mN))) {
+      if (Predicates.PALINDROME.is(2, mN) && (mPrime.isPrime(mN) || divisibleByKnownPalindromes(mN))) {
         mSeq.add(mN);
         return Z.valueOf(mN);
       }

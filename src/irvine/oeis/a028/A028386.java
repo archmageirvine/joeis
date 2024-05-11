@@ -1,8 +1,8 @@
 package irvine.oeis.a028;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A028386 Numbers k such that k*(3k-1)/2 is a pentagonal palindrome.
@@ -16,7 +16,7 @@ public class A028386 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (StringUtils.isPalindrome(mN.multiply(mN.multiply(3).subtract(1)).divide2().toString())) {
+      if (Predicates.PALINDROME.is(mN.multiply(mN.multiply(3).subtract(1)).divide2())) {
         return mN;
       }
     }

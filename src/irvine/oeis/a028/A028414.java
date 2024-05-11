@@ -1,8 +1,8 @@
 package irvine.oeis.a028;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A028414 Palindromes of form k^2 + k + 1.
@@ -17,7 +17,7 @@ public class A028414 extends Sequence1 {
     while (true) {
       mN = mN.add(1);
       final Z p = mN.square().add(mN).add(1);
-      if (StringUtils.isPalindrome(p.toString())) {
+      if (Predicates.PALINDROME.is(p)) {
         return p;
       }
     }

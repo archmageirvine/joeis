@@ -1,9 +1,9 @@
 package irvine.oeis.a062;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
-import irvine.util.string.StringUtils;
 
 /**
  * A062129 In base 2: start with n; add to itself with digits reversed; if palindrome, stop; otherwise repeat; a(n) gives palindrome at which it stops, or -1 if no palindrome is ever reached.
@@ -22,7 +22,7 @@ public class A062129 extends Sequence0 {
     boolean busy = true;
     while (--loopCheck >= 0 && busy) {
       s = s.add(Functions.REVERSE.z(2, s));
-      busy = !StringUtils.isPalindrome(s.toString(2));
+      busy = !Predicates.PALINDROME.is(2, s);
     }
     if (loopCheck < 0) {
       return Z.NEG_ONE;

@@ -1,6 +1,6 @@
 package irvine.oeis.a064;
 
-import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -16,7 +16,7 @@ public class A064844 extends Sequence1 {
   public Z next() {
     long k = 0;
     long m = ++mN;
-    while (!LongUtils.isPalindrome(m, 10)) {
+    while (!Predicates.PALINDROME.is(10, m)) {
       m += A064834.count(m);
       ++k;
     }

@@ -1,8 +1,8 @@
 package irvine.oeis.a029;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A029986 Numbers k such that k^2 is palindromic in base 4.
@@ -16,7 +16,7 @@ public class A029986 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (StringUtils.isPalindrome(mN.square().toString(4))) {
+      if (Predicates.PALINDROME.is(4, mN.square())) {
         return mN;
       }
     }

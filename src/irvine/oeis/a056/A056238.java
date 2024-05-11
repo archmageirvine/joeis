@@ -1,8 +1,8 @@
 package irvine.oeis.a056;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a007.A007622;
-import irvine.util.string.StringUtils;
 
 /**
  * A056238 Nontrivial palindromic denominators in Leibniz's harmonic triangle.
@@ -14,7 +14,7 @@ public class A056238 extends A007622 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (StringUtils.isPalindrome(t.toString())) {
+      if (Predicates.PALINDROME.is(t)) {
         return t;
       }
     }

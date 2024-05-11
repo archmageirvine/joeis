@@ -1,8 +1,8 @@
 package irvine.oeis.a029;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A029736 Palindromic cubes in base 16.
@@ -17,7 +17,7 @@ public class A029736 extends Sequence1 {
     while (true) {
       mN = mN.add(1);
       final Z t = mN.pow(3);
-      if (StringUtils.isPalindrome(t.toString(16))) {
+      if (Predicates.PALINDROME.is(16, t)) {
         return t;
       }
     }

@@ -1,8 +1,8 @@
 package irvine.oeis.a027;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A027729 Numbers k such that k^2+k+6 is a palindrome.
@@ -16,7 +16,7 @@ public class A027729 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (StringUtils.isPalindrome(mN.square().add(mN).add(6).toString())) {
+      if (Predicates.PALINDROME.is(mN.square().add(mN).add(6))) {
         return mN;
       }
     }

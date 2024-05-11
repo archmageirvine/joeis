@@ -1,8 +1,8 @@
 package irvine.oeis.a003;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A003166 Numbers whose square in base 2 is a palindrome.
@@ -16,7 +16,7 @@ public class A003166 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (StringUtils.isPalindrome(mN.square().toString(2))) {
+      if (Predicates.PALINDROME.is(2, mN.square())) {
         return mN;
       }
     }

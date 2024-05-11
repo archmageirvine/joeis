@@ -1,8 +1,8 @@
 package irvine.oeis.a029;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A029735 Numbers k such that k^3 is palindromic in base 16.
@@ -16,7 +16,7 @@ public class A029735 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (StringUtils.isPalindrome(mN.pow(3).toString(16))) {
+      if (Predicates.PALINDROME.is(16, mN.pow(3))) {
         return mN;
       }
     }

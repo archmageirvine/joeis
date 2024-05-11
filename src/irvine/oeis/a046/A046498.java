@@ -1,8 +1,8 @@
 package irvine.oeis.a046;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002113;
-import irvine.util.string.StringUtils;
 
 /**
  * A046498 Palindromes expressible as the sum of 3 consecutive palindromes.
@@ -24,7 +24,7 @@ public class A046498 extends A002113 {
       mA = mB;
       mB = super.next();
       final Z s = t.add(mA).add(mB);
-      if (StringUtils.isPalindrome(s.toString())) {
+      if (Predicates.PALINDROME.is(s)) {
         return s;
       }
     }

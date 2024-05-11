@@ -1,6 +1,6 @@
 package irvine.oeis.a065;
 
-import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -15,7 +15,8 @@ public class A065437 extends A000040 {
     final long p = super.next().longValueExact();
     int base = 1;
     while (true) {
-      if (LongUtils.isPalindrome(p, ++base)) {
+      final int base1 = ++base;
+      if (Predicates.PALINDROME.is(base1, p)) {
         return Z.valueOf(base);
       }
     }

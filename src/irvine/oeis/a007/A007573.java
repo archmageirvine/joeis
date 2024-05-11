@@ -1,5 +1,6 @@
 package irvine.oeis.a007;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.util.string.StringUtils;
@@ -43,7 +44,7 @@ public class A007573 extends AbstractSequence {
         final Z root = buildRoot(str(x, xLen), zeros);
         final Z sqr = root.square();
         //System.out.println(root + " " + sqr);
-        if (StringUtils.isPalindrome(sqr.toString())) {
+        if (Predicates.PALINDROME.is(sqr)) {
           ++count;
         }
       }

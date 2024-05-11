@@ -1,8 +1,8 @@
 package irvine.oeis.a058;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a262.A262044;
-import irvine.util.string.StringUtils;
 
 /**
  * A058850 Palindromes that are the sum of consecutive initial odd composites.
@@ -14,7 +14,7 @@ public class A058850 extends A262044 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (StringUtils.isPalindrome(t.toString())) {
+      if (Predicates.PALINDROME.is(t)) {
         return t;
       }
     }

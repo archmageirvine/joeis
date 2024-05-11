@@ -1,8 +1,8 @@
 package irvine.oeis.a083;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A083458 Numbers n such that n^5 + 1 is a palindrome.
@@ -16,7 +16,7 @@ public class A083458 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (StringUtils.isPalindrome(mN.pow(5).add(1).toString())) {
+      if (Predicates.PALINDROME.is(mN.pow(5).add(1))) {
         return mN;
       }
     }

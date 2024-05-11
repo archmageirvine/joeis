@@ -1,9 +1,9 @@
 package irvine.oeis.a062;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
-import irvine.util.string.StringUtils;
 
 /**
  * A062130 A062128 written in base 10.
@@ -18,7 +18,7 @@ public class A062130 extends Sequence0 {
   public Z next() {
     Z s = Z.valueOf(++mN);
     int loopCheck = 1024;
-    while (--loopCheck >= 0 && !StringUtils.isPalindrome(s.toString(2))) {
+    while (--loopCheck >= 0 && !Predicates.PALINDROME.is(2, s)) {
       s = s.add(Functions.REVERSE.z(2, s));
     }
     if (loopCheck < 0) {

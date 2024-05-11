@@ -1,8 +1,8 @@
 package irvine.oeis.a029;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
-import irvine.util.string.StringUtils;
 
 /**
  * A029971 Palindromic primes in base 3.
@@ -14,7 +14,7 @@ public class A029971 extends A000040 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (StringUtils.isPalindrome(t.toString(3))) {
+      if (Predicates.PALINDROME.is(3, t)) {
         return t;
       }
     }

@@ -1,8 +1,8 @@
 package irvine.oeis.a028;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A028568 Palindromes of the form k*(k+8).
@@ -17,7 +17,7 @@ public class A028568 extends Sequence1 {
     while (true) {
       mN = mN.add(1);
       final Z u = mN.multiply(mN.add(8));
-      if (StringUtils.isPalindrome(u.toString())) {
+      if (Predicates.PALINDROME.is(u)) {
         return u;
       }
     }

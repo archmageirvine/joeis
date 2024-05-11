@@ -1,8 +1,8 @@
 package irvine.oeis.a028;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A028504 Palindromes of form k*(k+2); or palindromes 1 less than a square.
@@ -17,7 +17,7 @@ public class A028504 extends Sequence1 {
     while (true) {
       mN = mN.add(1);
       final Z t = mN.multiply(mN.add(2));
-      if (StringUtils.isPalindrome(t.toString())) {
+      if (Predicates.PALINDROME.is(t)) {
         return t;
       }
     }

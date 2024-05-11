@@ -1,7 +1,7 @@
 package irvine.oeis.a046;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.util.string.StringUtils;
 
 /**
  * A046409 Palindromes with exactly 3 distinct palindromic prime factors.
@@ -13,7 +13,7 @@ public class A046409 extends A046401 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (StringUtils.isPalindrome(t.toString())) {
+      if (Predicates.PALINDROME.is(t)) {
         return t;
       }
     }

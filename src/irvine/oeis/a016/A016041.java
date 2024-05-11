@@ -1,9 +1,9 @@
 package irvine.oeis.a016;
 
 import irvine.factor.prime.Fast;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A016041 Primes that are palindromic in base 2 (but written here in base 10).
@@ -18,7 +18,7 @@ public class A016041 extends Sequence1 {
   public Z next() {
     while (true) {
       mP = mPrime.nextPrime(mP);
-      if (StringUtils.isPalindrome(mP.toString(2))) {
+      if (Predicates.PALINDROME.is(2, mP)) {
         return mP;
       }
     }

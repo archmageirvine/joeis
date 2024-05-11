@@ -1,9 +1,9 @@
 package irvine.oeis.a177;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A177856 Numbers m such that m*reversal(m)+1 is a palindrome.
@@ -17,7 +17,7 @@ public class A177856 extends Sequence1 {
   public Z next() {
     while (true) {
       mK = mK.add(1);
-      if (StringUtils.isPalindrome(mK.multiply(Functions.REVERSE.z(mK)).add(1).toString())) {
+      if (Predicates.PALINDROME.is(mK.multiply(Functions.REVERSE.z(mK)).add(1))) {
         return mK;
       }
     }

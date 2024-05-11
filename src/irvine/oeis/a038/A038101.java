@@ -1,10 +1,10 @@
 package irvine.oeis.a038;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000796;
 import irvine.oeis.a002.A002113;
-import irvine.util.string.StringUtils;
 
 /**
  * A038101 First location of palindrome a(n) in decimal expansion of Pi is palindromic.
@@ -29,7 +29,7 @@ public class A038101 extends A000796 {
           mPi.append(super.next());
         }
       }
-      if (StringUtils.isPalindrome(String.valueOf(pos + 1))) {
+      if (Predicates.PALINDROME.is(pos + 1)) {
         return p;
       }
     }

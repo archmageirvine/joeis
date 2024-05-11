@@ -1,8 +1,8 @@
 package irvine.oeis.a035;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a033.A033294;
-import irvine.util.string.StringUtils;
 
 /**
  * A035090 Non-palindromic squares which when written backwards remain square (and still have the same number of digits).
@@ -14,7 +14,7 @@ public class A035090 extends A033294 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (!StringUtils.isPalindrome(t.toString())) {
+      if (!Predicates.PALINDROME.is(t)) {
         return t;
       }
     }

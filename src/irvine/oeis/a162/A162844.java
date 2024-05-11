@@ -1,8 +1,8 @@
 package irvine.oeis.a162;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A162844 Let b(n) be the n-th positive integer that is a palindrome in base 2. Then a(n) = A162843(n)/b(n).
@@ -14,7 +14,7 @@ public class A162844 extends Sequence1 {
 
   @Override
   public Z next() {
-    while (!StringUtils.isPalindrome(Long.toBinaryString(++mN))) {
+    while (!Predicates.PALINDROME.is(2, ++mN)) {
       // do nothing
     }
     final Z v = Z.valueOf(mN);
@@ -23,7 +23,7 @@ public class A162844 extends Sequence1 {
     do {
       q = q.add(v);
       ++c;
-    } while (!StringUtils.isPalindrome(q.toString(2)));
+    } while (!Predicates.PALINDROME.is(2, q));
     return Z.valueOf(c);
   }
 }

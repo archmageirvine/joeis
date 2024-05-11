@@ -1,8 +1,8 @@
 package irvine.oeis.a233;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A233007 Numbers k such that (k-1)^2 + k^2 + (k+1)^2 is a palindrome.
@@ -16,7 +16,7 @@ public class A233007 extends Sequence1 {
   public Z next() {
     while (true) {
       mK = mK.add(1);
-      if (StringUtils.isPalindrome(mK.subtract(1).square().add(mK.square()).add(mK.add(1).square()).toString())) {
+      if (Predicates.PALINDROME.is(mK.subtract(1).square().add(mK.square()).add(mK.add(1).square()))) {
         return mK;
       }
     }

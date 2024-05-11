@@ -1,9 +1,9 @@
 package irvine.oeis.a015;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.util.string.StringUtils;
 
 /**
  * A015977 Two iterations of Reverse and Add are needed to reach a palindrome.
@@ -37,7 +37,7 @@ public class A015977 extends AbstractSequence {
       Z a = Z.valueOf(++mN);
       for (int k = iterations(); k > 0; --k) {
         a = Functions.REVERSE.z(a).add(a);
-        if (StringUtils.isPalindrome(a.toString())) {
+        if (Predicates.PALINDROME.is(a)) {
           if (k == 1) {
             return Z.valueOf(mN);
           }

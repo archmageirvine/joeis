@@ -1,6 +1,6 @@
 package irvine.oeis.a016;
 
-import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,8 @@ public class A016026 extends Sequence1 {
     ++mN;
     int base = 1;
     while (true) {
-      if (LongUtils.isPalindrome(mN, ++base)) {
+      final int base1 = ++base;
+      if (Predicates.PALINDROME.is(base1, mN)) {
         return Z.valueOf(base);
       }
     }

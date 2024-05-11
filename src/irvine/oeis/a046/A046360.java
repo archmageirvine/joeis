@@ -1,7 +1,7 @@
 package irvine.oeis.a046;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.util.string.StringUtils;
 
 /**
  * A046360 Composite palindromes divisible by the palindromic sum of their prime factors (counted with multiplicity).
@@ -13,7 +13,7 @@ public class A046360 extends A046358 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (StringUtils.isPalindrome(t.toString())) {
+      if (Predicates.PALINDROME.is(t)) {
         return t;
       }
     }

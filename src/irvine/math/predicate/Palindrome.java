@@ -32,4 +32,18 @@ class Palindrome extends AbstractPredicate2 {
     }
     return CollectionUtils.isPalindrome(digits);
   }
+
+  @Override
+  public boolean is(final long base, final long n) {
+    if (base <= 36) {
+      return StringUtils.isPalindrome(Long.toString(n, (int) base));
+    }
+    final ArrayList<Long> digits = new ArrayList<>();
+    long t = n;
+    while (t != 0) {
+      digits.add(t % base);
+      t /= base;
+    }
+    return CollectionUtils.isPalindrome(digits);
+  }
 }

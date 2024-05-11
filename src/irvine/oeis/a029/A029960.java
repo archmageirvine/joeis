@@ -1,8 +1,8 @@
 package irvine.oeis.a029;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A029960 Numbers that are palindromic in base 15.
@@ -15,7 +15,7 @@ public class A029960 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (StringUtils.isPalindrome(Long.toString(++mN, 15))) {
+      if (Predicates.PALINDROME.is(15, ++mN)) {
         return Z.valueOf(mN);
       }
     }

@@ -2,6 +2,7 @@ package irvine.oeis.a046;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.util.string.StringUtils;
 
@@ -19,7 +20,7 @@ public class A046450 extends A046447 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (StringUtils.isPalindrome(t.toString())) {
+      if (Predicates.PALINDROME.is(t)) {
         final StringBuilder sb = new StringBuilder();
         final FactorSequence fs = Jaguar.factor(t);
         for (final Z p : fs.toZArray()) {

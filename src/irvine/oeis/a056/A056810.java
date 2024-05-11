@@ -1,8 +1,8 @@
 package irvine.oeis.a056;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A056810 Numbers whose fourth power is a palindrome.
@@ -16,7 +16,7 @@ public class A056810 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (StringUtils.isPalindrome(mN.pow(4).toString())) {
+      if (Predicates.PALINDROME.is(mN.pow(4))) {
         return mN;
       }
     }

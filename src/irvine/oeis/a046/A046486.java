@@ -1,7 +1,7 @@
 package irvine.oeis.a046;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.util.string.StringUtils;
 
 /**
  * A046486 Numbers k such that the sum of the first k palindromes is a palindrome.
@@ -18,7 +18,7 @@ public class A046486 extends A046489 {
   public Z next() {
     while (true) {
       ++mN;
-      if (StringUtils.isPalindrome(super.next().toString())) {
+      if (Predicates.PALINDROME.is(super.next())) {
         return Z.valueOf(mN);
       }
     }

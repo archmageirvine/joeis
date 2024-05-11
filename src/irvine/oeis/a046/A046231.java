@@ -1,8 +1,8 @@
 package irvine.oeis.a046;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A046231 Numbers whose cube is palindromic in base 4.
@@ -19,7 +19,7 @@ public class A046231 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (StringUtils.isPalindrome(Z.valueOf(++mN).pow(3).toString(base()))) {
+      if (Predicates.PALINDROME.is(base(), Z.valueOf(++mN).pow(3))) {
         return Z.valueOf(mN);
       }
     }

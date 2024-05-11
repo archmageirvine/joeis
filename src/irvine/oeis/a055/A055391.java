@@ -1,8 +1,8 @@
 package irvine.oeis.a055;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000032;
-import irvine.util.string.StringUtils;
 
 /**
  * A055391 Palindromic Lucas numbers.
@@ -18,7 +18,7 @@ public class A055391 extends A000032 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (StringUtils.isPalindrome(t.toString())) {
+      if (Predicates.PALINDROME.is(t)) {
         return t;
       }
     }

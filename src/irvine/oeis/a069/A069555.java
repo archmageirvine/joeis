@@ -1,8 +1,8 @@
 package irvine.oeis.a069;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
@@ -23,7 +23,8 @@ public class A069555 extends Sequence1 {
       return Z.ZERO;
     }
     while (mFirsts.get(mN) == 0) {
-      if (!LongUtils.isPalindrome(++mM, 10)) {
+      final long n = ++mM;
+      if (!Predicates.PALINDROME.is(10, n)) {
         final long r = Functions.REVERSE.l(mM);
         for (final Z dd : Jaguar.factor(mM).divisors()) {
           final long d = dd.longValue();

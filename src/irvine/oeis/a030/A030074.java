@@ -1,8 +1,8 @@
 package irvine.oeis.a030;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A030074 Squares which are palindromes in base 14.
@@ -17,7 +17,7 @@ public class A030074 extends Sequence1 {
     while (true) {
       mN = mN.add(1);
       final Z s = mN.square();
-      if (StringUtils.isPalindrome(s.toString(14))) {
+      if (Predicates.PALINDROME.is(14, s)) {
         return s;
       }
     }

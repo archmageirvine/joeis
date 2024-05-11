@@ -1,8 +1,8 @@
 package irvine.oeis.a060;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a006.A006995;
-import irvine.util.string.StringUtils;
 
 /**
  * A060792 Numbers that are palindromic in bases 2 and 3.
@@ -14,7 +14,7 @@ public class A060792 extends A006995 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (StringUtils.isPalindrome(p.toString(3))) {
+      if (Predicates.PALINDROME.is(3, p)) {
         return p;
       }
     }

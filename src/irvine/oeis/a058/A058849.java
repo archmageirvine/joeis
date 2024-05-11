@@ -1,10 +1,10 @@
 package irvine.oeis.a058;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a071.A071904;
-import irvine.util.string.StringUtils;
 
 /**
  * A058849 Sum of odd composites up to n is palindromic.
@@ -20,7 +20,7 @@ public class A058849 extends Sequence1 {
     while (true) {
       final Z t = mA.next();
       mN = mN.add(t);
-      if (StringUtils.isPalindrome(mN.toString())) {
+      if (Predicates.PALINDROME.is(mN)) {
         return t;
       }
     }

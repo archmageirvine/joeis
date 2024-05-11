@@ -1,8 +1,8 @@
 package irvine.oeis.a029;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
-import irvine.util.string.StringUtils;
 
 /**
  * A029981 Primes that are palindromic in base 14.
@@ -14,7 +14,7 @@ public class A029981 extends A000040 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (StringUtils.isPalindrome(t.toString(14))) {
+      if (Predicates.PALINDROME.is(14, t)) {
         return t;
       }
     }

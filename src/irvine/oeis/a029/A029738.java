@@ -1,8 +1,8 @@
 package irvine.oeis.a029;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A029738 Palindromic squares in base 12.
@@ -17,7 +17,7 @@ public class A029738 extends Sequence1 {
     while (true) {
       mN = mN.add(1);
       final Z t = mN.square();
-      if (StringUtils.isPalindrome(t.toString(12))) {
+      if (Predicates.PALINDROME.is(12, t)) {
         return t;
       }
     }

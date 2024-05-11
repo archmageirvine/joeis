@@ -1,8 +1,8 @@
 package irvine.oeis.a046;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
-import irvine.util.string.StringUtils;
 
 /**
  * A046942 Numbers n such that n and prime(n) are both palindromes.
@@ -17,7 +17,7 @@ public class A046942 extends A000040 {
     while (true) {
       ++mN;
       final Z p = super.next();
-      if (StringUtils.isPalindrome(p.toString()) && StringUtils.isPalindrome(String.valueOf(mN))) {
+      if (Predicates.PALINDROME.is(p) && Predicates.PALINDROME.is(mN)) {
         return Z.valueOf(mN);
       }
     }

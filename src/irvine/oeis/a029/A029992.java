@@ -1,8 +1,8 @@
 package irvine.oeis.a029;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A029992 Numbers k such that k^2 is palindromic in base 7.
@@ -16,7 +16,7 @@ public class A029992 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (StringUtils.isPalindrome(mN.square().toString(7))) {
+      if (Predicates.PALINDROME.is(7, mN.square())) {
         return mN;
       }
     }

@@ -1,8 +1,8 @@
 package irvine.oeis.a052;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
-import irvine.util.string.StringUtils;
 
 /**
  * A052036 Smallest number that must be added to n to make or keep n palindromic.
@@ -16,7 +16,7 @@ public class A052036 extends Sequence0 {
   public Z next() {
     ++mN;
     long k = 0;
-    while (!StringUtils.isPalindrome(String.valueOf(mN + k))) {
+    while (!Predicates.PALINDROME.is(mN + k)) {
       ++k;
     }
     return Z.valueOf(k);

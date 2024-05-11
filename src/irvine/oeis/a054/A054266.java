@@ -1,9 +1,9 @@
 package irvine.oeis.a054;
 
 import irvine.factor.prime.Fast;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A054266 Sum of composite numbers between prime p and nextprime(p) is palindromic.
@@ -22,7 +22,7 @@ public class A054266 extends Sequence1 {
       while (!mPrime.isPrime(++mN)) {
         sum += mN;
       }
-      if (StringUtils.isPalindrome(String.valueOf(sum))) {
+      if (Predicates.PALINDROME.is(sum)) {
         return Z.valueOf(p);
       }
     }

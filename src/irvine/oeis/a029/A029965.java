@@ -1,8 +1,8 @@
 package irvine.oeis.a029;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002113;
-import irvine.util.string.StringUtils;
 
 /**
  * A029965 Palindromic in bases 9 and 10.
@@ -14,7 +14,7 @@ public class A029965 extends A002113 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (StringUtils.isPalindrome(t.toString(9))) {
+      if (Predicates.PALINDROME.is(9, t)) {
         return t;
       }
     }

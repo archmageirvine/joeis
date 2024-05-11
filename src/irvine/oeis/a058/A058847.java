@@ -1,8 +1,8 @@
 package irvine.oeis.a058;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a071.A071148;
-import irvine.util.string.StringUtils;
 
 /**
  * A058847 Palindromes that are the sum of consecutive initial odd primes.
@@ -17,7 +17,7 @@ public class A058847 extends A071148 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (StringUtils.isPalindrome(t.toString())) {
+      if (Predicates.PALINDROME.is(t)) {
         return t;
       }
     }

@@ -1,8 +1,8 @@
 package irvine.oeis.a038;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a007.A007504;
-import irvine.util.string.StringUtils;
 
 /**
  * A038582 Numbers k such that sum of the first k primes is a palindrome.
@@ -20,7 +20,7 @@ public class A038582 extends A007504 {
   public Z next() {
     while (true) {
       ++mN;
-      if (StringUtils.isPalindrome(super.next().toString())) {
+      if (Predicates.PALINDROME.is(super.next())) {
         return Z.valueOf(mN);
       }
     }

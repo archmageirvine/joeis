@@ -1,8 +1,8 @@
 package irvine.oeis.a048;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a005.A005114;
-import irvine.util.string.StringUtils;
 
 /**
  * A048187 Palindromic untouchable numbers.
@@ -14,7 +14,7 @@ public class A048187 extends A005114 {
   public Z next() {
     while (true) {
       final Z untouchable = super.next();
-      if (StringUtils.isPalindrome(untouchable.toString())) {
+      if (Predicates.PALINDROME.is(untouchable)) {
         return untouchable;
       }
     }

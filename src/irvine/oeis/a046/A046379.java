@@ -1,7 +1,7 @@
 package irvine.oeis.a046;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.util.string.StringUtils;
 
 /**
  * A046379 Palindromes with exactly 5 palindromic prime factors (counted with multiplicity).
@@ -17,7 +17,7 @@ public class A046379 extends A046371 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (StringUtils.isPalindrome(t.toString())) {
+      if (Predicates.PALINDROME.is(t)) {
         return t;
       }
     }

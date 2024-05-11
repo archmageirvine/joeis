@@ -1,8 +1,8 @@
 package irvine.oeis.a052;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
-import irvine.util.string.StringUtils;
 
 /**
  * A052037 Smallest positive number that must be added to n to reach a palindrome.
@@ -16,7 +16,7 @@ public class A052037 extends Sequence0 {
   public Z next() {
     ++mN;
     long k = 1;
-    while (!StringUtils.isPalindrome(String.valueOf(mN + k))) {
+    while (!Predicates.PALINDROME.is(mN + k)) {
       ++k;
     }
     return Z.valueOf(k);

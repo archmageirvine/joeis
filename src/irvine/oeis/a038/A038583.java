@@ -1,8 +1,8 @@
 package irvine.oeis.a038;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a007.A007504;
-import irvine.util.string.StringUtils;
 
 /**
  * A038583 Palindromes that are the sum of consecutive initial primes.
@@ -19,7 +19,7 @@ public class A038583 extends A007504 {
   public Z next() {
     while (true) {
       final Z sum = super.next();
-      if (StringUtils.isPalindrome(sum.toString())) {
+      if (Predicates.PALINDROME.is(sum)) {
         return sum;
       }
     }

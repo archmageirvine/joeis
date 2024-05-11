@@ -1,7 +1,7 @@
 package irvine.oeis.a035;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.util.string.StringUtils;
 
 /**
  * A035068 Palindromic prime lengths of factorials: see A035067.
@@ -13,7 +13,7 @@ public class A035068 extends A035066 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (StringUtils.isPalindrome(t.toString())) {
+      if (Predicates.PALINDROME.is(t)) {
         return t;
       }
     }

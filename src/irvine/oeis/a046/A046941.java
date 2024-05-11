@@ -1,8 +1,8 @@
 package irvine.oeis.a046;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
-import irvine.util.string.StringUtils;
 
 /**
  * A046941 Palindromic primes whose indices n are also palindromes.
@@ -17,7 +17,7 @@ public class A046941 extends A000040 {
     while (true) {
       ++mN;
       final Z p = super.next();
-      if (StringUtils.isPalindrome(p.toString()) && StringUtils.isPalindrome(String.valueOf(mN))) {
+      if (Predicates.PALINDROME.is(p) && Predicates.PALINDROME.is(mN)) {
         return p;
       }
     }

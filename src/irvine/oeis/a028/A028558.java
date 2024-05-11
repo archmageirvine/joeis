@@ -1,8 +1,8 @@
 package irvine.oeis.a028;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A028558 Numbers k such that k*(k+5) is a palindrome.
@@ -16,7 +16,7 @@ public class A028558 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (StringUtils.isPalindrome(mN.multiply(mN.add(5)).toString())) {
+      if (Predicates.PALINDROME.is(mN.multiply(mN.add(5)))) {
         return mN;
       }
     }

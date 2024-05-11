@@ -1,8 +1,8 @@
 package irvine.oeis.a029;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A029951 Even palindromes.
@@ -16,7 +16,7 @@ public class A029951 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(2);
-      if (StringUtils.isPalindrome(mN.toString())) {
+      if (Predicates.PALINDROME.is(mN)) {
         return mN;
       }
     }

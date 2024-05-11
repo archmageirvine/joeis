@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 import java.util.ArrayList;
 import java.util.List;
 
-import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
@@ -31,7 +31,7 @@ public class A037183 extends Sequence1 {
       mM += mAdd;
       int cnt = 0;
       for (int base = 2; base < mM; ++base) {
-        if (LongUtils.isPalindrome(mM, base)) {
+        if (Predicates.PALINDROME.is(base, mM)) {
           ++cnt;
         }
       }

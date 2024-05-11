@@ -1,8 +1,8 @@
 package irvine.oeis.a032;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A032790 Palindromic quotients (k*(k+1)*(k+2)) / (k+(k+1)+(k+2)).
@@ -25,7 +25,7 @@ public class A032790 extends Sequence1 {
         a = a.multiply(mN + k);
       }
       final Z[] qr = a.divideAndRemainder(Z.valueOf((t() + 1) * mN + t() * (t() + 1) / 2));
-      if (qr[1].isZero() && StringUtils.isPalindrome(qr[0].toString())) {
+      if (qr[1].isZero() && Predicates.PALINDROME.is(qr[0])) {
         return qr[0];
       }
     }

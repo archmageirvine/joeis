@@ -1,8 +1,8 @@
 package irvine.oeis.a053;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
-import irvine.util.string.StringUtils;
 
 /**
  * A053780 Palindromes arising in A053779.
@@ -16,7 +16,7 @@ public class A053780 extends A002808 {
   public Z next() {
     while (true) {
       mA = mA.add(super.next());
-      if (StringUtils.isPalindrome(mA.toString())) {
+      if (Predicates.PALINDROME.is(mA)) {
         return mA;
       }
     }

@@ -1,8 +1,8 @@
 package irvine.oeis.a028;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
-import irvine.util.string.StringUtils;
 
 /**
  * A028888 Smaller of two successive primes with a palindromic product.
@@ -17,7 +17,7 @@ public class A028888 extends A000040 {
     while (true) {
       final Z p = mPrev;
       mPrev = super.next();
-      if (StringUtils.isPalindrome(p.multiply(mPrev).toString())) {
+      if (Predicates.PALINDROME.is(p.multiply(mPrev))) {
         return p;
       }
     }

@@ -1,9 +1,9 @@
 package irvine.oeis.a046;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
-import irvine.util.string.StringUtils;
 
 /**
  * A046358 Composite numbers divisible by the palindromic sum of their prime factors (counted with multiplicity).
@@ -16,7 +16,7 @@ public class A046358 extends A002808 {
     while (true) {
       final Z c = super.next();
       final Z sopfr = Functions.SOPFR.z(c);
-      if (StringUtils.isPalindrome(sopfr.toString()) && c.mod(sopfr).isZero()) {
+      if (Predicates.PALINDROME.is(sopfr) && c.mod(sopfr).isZero()) {
         return c;
       }
     }

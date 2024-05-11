@@ -1,8 +1,8 @@
 package irvine.oeis.a057;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002113;
-import irvine.util.string.StringUtils;
 
 /**
  * A057136 Palindromes whose square root is a palindrome.
@@ -14,7 +14,7 @@ public class A057136 extends A002113 {
   public Z next() {
     while (true) {
       final Z palin = super.next().square();
-      if (StringUtils.isPalindrome(palin.toString())) {
+      if (Predicates.PALINDROME.is(palin)) {
         return palin;
       }
     }

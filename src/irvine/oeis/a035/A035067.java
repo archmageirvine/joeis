@@ -1,8 +1,8 @@
 package irvine.oeis.a035;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a034.A034886;
-import irvine.util.string.StringUtils;
 
 /**
  * A035067 n! has a palindromic prime number of digits.
@@ -22,7 +22,7 @@ public class A035067 extends A034886 {
     while (true) {
       ++mN;
       final Z t = super.next();
-      if (t.isProbablePrime() && StringUtils.isPalindrome(t.toString())) {
+      if (t.isProbablePrime() && Predicates.PALINDROME.is(t)) {
         return Z.valueOf(mN);
       }
     }

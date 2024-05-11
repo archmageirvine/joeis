@@ -1,8 +1,8 @@
 package irvine.oeis.a028;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
  * A028336 Positive numbers k such that k*(k+1) is a palindrome.
@@ -17,7 +17,7 @@ public class A028336 extends Sequence1 {
     while (true) {
       final Z t = mN;
       mN = mN.add(1);
-      if (StringUtils.isPalindrome(mN.multiply(t).toString())) {
+      if (Predicates.PALINDROME.is(mN.multiply(t))) {
         return t;
       }
     }

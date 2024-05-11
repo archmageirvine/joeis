@@ -1,7 +1,7 @@
 package irvine.oeis.a057;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
@@ -20,7 +20,7 @@ public class A057199 extends Sequence2 {
     long p = mN + 2;
     while (true) {
       p = mPrime.nextPrime(p);
-      if (LongUtils.isPalindrome(p, mN) && LongUtils.isPalindrome(p, mN + 2)) {
+      if (Predicates.PALINDROME.is(mN, p) && Predicates.PALINDROME.is(mN + 2, p)) {
         return Z.valueOf(p);
       }
     }

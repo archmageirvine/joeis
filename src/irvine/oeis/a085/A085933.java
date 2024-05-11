@@ -1,7 +1,7 @@
 package irvine.oeis.a085;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.util.string.StringUtils;
 
 /**
  * A085933 Palindromes in A085932.
@@ -13,7 +13,7 @@ public class A085933 extends A085932 {
   public Z next() {
     while (true) {
       final Z mK = super.next();
-      if (StringUtils.isPalindrome(mK.toString())) {
+      if (Predicates.PALINDROME.is(mK)) {
         return mK;
       }
     }

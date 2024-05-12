@@ -1,6 +1,6 @@
 package irvine.oeis.a035;
 
-import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a003.A003285;
 
@@ -19,7 +19,7 @@ public class A035015 extends A003285 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (LongUtils.isSquareFree(mN) && !t.isZero()) {
+      if (Predicates.SQUARE_FREE.is(mN) && !t.isZero()) {
         return t;
       }
     }

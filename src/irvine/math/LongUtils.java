@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.util.io.IOUtils;
@@ -382,15 +381,6 @@ public final class LongUtils {
       }
     }
     return m;
-  }
-
-  /**
-   * Test if the given value is square free.
-   * @param n value to test
-   * @return true if the number is square free
-   */
-  public static boolean isSquareFree(final long n) {
-    return Jaguar.factor(n).maxExponent() <= 1;
   }
 
   private static final String PADDING = StringUtils.rep('0', Long.SIZE);

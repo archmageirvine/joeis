@@ -1,8 +1,8 @@
 package irvine.oeis.a005;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
@@ -45,7 +45,7 @@ public class A005782 extends Sequence3 {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValueExact();
-      if (LongUtils.isSquareFree(d)) {
+      if (Predicates.SQUARE_FREE.is((long) d)) {
         sum = sum.add(either(mN, mN / d, d));
       }
     }

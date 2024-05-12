@@ -1,7 +1,7 @@
 package irvine.oeis.a046;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,8 @@ public class A046026 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (LongUtils.isSquareFree(++mN)) {
+      final long n = ++mN;
+      if (Predicates.SQUARE_FREE.is(n)) {
         int k = 0;
         long p = 1;
         long pr = 1;

@@ -1,6 +1,7 @@
 package irvine.oeis.a007;
 
 import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,9 +18,9 @@ public class A007457 extends Sequence1 {
     ++mN;
     long count = 0;
     for (long j = 1; j < mN; ++j) {
-      if (LongUtils.gcd(j, mN) == 1 && LongUtils.isSquareFree(j)) {
+      if (LongUtils.gcd(j, mN) == 1 && Predicates.SQUARE_FREE.is(j)) {
         final long k = mN - j;
-        if (LongUtils.gcd(k, mN) == 1 && LongUtils.isSquareFree(k)) {
+        if (LongUtils.gcd(k, mN) == 1 && Predicates.SQUARE_FREE.is(k)) {
           ++count;
         }
       }

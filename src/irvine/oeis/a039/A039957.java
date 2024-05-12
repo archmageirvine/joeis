@@ -1,6 +1,6 @@
 package irvine.oeis.a039;
 
-import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -29,7 +29,7 @@ public class A039957 extends AbstractSequence {
   public Z next() {
     while (true) {
       mN += 4;
-      if (LongUtils.isSquareFree(mN)) {
+      if (Predicates.SQUARE_FREE.is(mN)) {
         return Z.valueOf(mN);
       }
     }

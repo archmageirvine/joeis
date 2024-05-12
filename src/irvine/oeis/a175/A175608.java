@@ -1,7 +1,7 @@
 package irvine.oeis.a175;
 // manually deris/charfun at 2022-07-01 23:08
 
-import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -16,6 +16,6 @@ public class A175608 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return LongUtils.isSquareFree(mN * (mN + 1) / 2) ? Z.ONE : Z.ZERO;
+    return Predicates.SQUARE_FREE.is(mN * (mN + 1) / 2) ? Z.ONE : Z.ZERO;
   }
 }

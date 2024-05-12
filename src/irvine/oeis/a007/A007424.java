@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -14,6 +14,7 @@ public class A007424 extends Sequence1 {
 
   @Override
   public Z next() {
-    return LongUtils.isSquareFree(++mN) ? Z.ONE : Z.TWO;
+    final long n = ++mN;
+    return Predicates.SQUARE_FREE.is(n) ? Z.ONE : Z.TWO;
   }
 }

@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a019.A019554;
 
@@ -13,6 +13,6 @@ public class A056134 extends A019554 {
   @Override
   public Z next() {
     final Z t = super.next();
-    return LongUtils.isSquareFree(mN) ? Z.valueOf(2L * mN) : t;
+    return Predicates.SQUARE_FREE.is(mN) ? Z.valueOf(2L * mN) : t;
   }
 }

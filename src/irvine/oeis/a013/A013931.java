@@ -1,7 +1,7 @@
 package irvine.oeis.a013;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,8 @@ public class A013931 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (LongUtils.isSquareFree(++mN)) {
+      final long n = ++mN;
+      if (Predicates.SQUARE_FREE.is(n)) {
         mSum = mSum.add(mN);
         if (Jaguar.factor(mSum).isSquareFree()) {
           return Z.valueOf(mN);

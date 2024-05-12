@@ -2,7 +2,7 @@ package irvine.oeis.a003;
 
 import java.util.List;
 
-import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A003643 extends Sequence1 {
     while (true) {
       --mN;
       final long n = -mN;
-      if (LongUtils.isSquareFree(n)) {
+      if (Predicates.SQUARE_FREE.is(n)) {
         final long d = (mN & 3) == 1 ? mN : 4 * mN;
         final List<A003636.ReducedPositiveDefiniteForm> forms = A003636.forms(d);
         final long classNumber = A003636.classNumber(forms);

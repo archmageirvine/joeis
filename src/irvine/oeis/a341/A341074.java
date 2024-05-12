@@ -1,7 +1,7 @@
 package irvine.oeis.a341;
 
-import irvine.math.LongUtils;
 import irvine.math.MemoryFunctionInt3;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -47,7 +47,7 @@ public class A341074 extends AbstractSequence {
         return Z.ZERO;
       }
       Z sum = get(n, i - 1, t);
-      if (LongUtils.isSquareFree(i)) {
+      if (Predicates.SQUARE_FREE.is((long) i)) {
         final int ni = n - i;
         sum = sum.add(get(ni, Math.min(ni, i - 1), t - 1));
       }

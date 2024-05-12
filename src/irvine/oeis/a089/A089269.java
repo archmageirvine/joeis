@@ -1,6 +1,6 @@
 package irvine.oeis.a089;
 
-import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,7 +18,7 @@ public class A089269 extends Sequence1 {
       ++mN;
       final long r = mN & 3;
       if (r == 1 || r == 2) {
-        if (LongUtils.isSquareFree(mN)) {
+        if (Predicates.SQUARE_FREE.is(mN)) {
           return Z.valueOf(mN);
         }
       }

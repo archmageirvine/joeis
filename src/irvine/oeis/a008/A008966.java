@@ -1,7 +1,7 @@
 package irvine.oeis.a008;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
@@ -26,12 +26,13 @@ public class A008966 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    return LongUtils.isSquareFree(n) ? Z.ONE : Z.ZERO;
+    return Predicates.SQUARE_FREE.is((long) n) ? Z.ONE : Z.ZERO;
   }
 
   @Override
   public Z next() {
-    return LongUtils.isSquareFree(++mN) ? Z.ONE : Z.ZERO;
+    final long n = ++mN;
+    return Predicates.SQUARE_FREE.is(n) ? Z.ONE : Z.ZERO;
   }
 }
 

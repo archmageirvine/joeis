@@ -1,7 +1,7 @@
 package irvine.oeis.a005;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -15,7 +15,8 @@ public class A005153 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (ZUtils.isPractical(++mN)) {
+      final long n = ++mN;
+      if (Predicates.PRACTICAL.is(n)) {
         return Z.valueOf(mN);
       }
     }

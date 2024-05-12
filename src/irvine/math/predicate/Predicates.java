@@ -18,6 +18,8 @@ public final class Predicates {
   public static final Predicate FIBONACCI = new Fibonacci();
   /** Test if a number is a Lucas number. */
   public static final Predicate LUCAS = new Lucas();
+  /** Test if a number is practical. */
+  public static final Predicate PRACTICAL = new Practical();
   /** Test if a number has non-decreasing digits in base 10. */
   public static final Predicate DIGIT_NONDECREASAING = new DigitNondecreasing();
   /** Test if a number has non-increasing digits in base 10. */

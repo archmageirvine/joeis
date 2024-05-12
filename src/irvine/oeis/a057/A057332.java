@@ -1,7 +1,7 @@
 package irvine.oeis.a057;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a056.A056525;
 
 /**
@@ -23,7 +23,7 @@ public class A057332 extends A056525 {
     mLimit = mLimit.multiply(100);
     long cnt = 0;
     while (mPalin.compareTo(mLimit) < 0) {
-      if (mPalin.isProbablePrime() && ZUtils.isUndulate(mPalin)) {
+      if (mPalin.isProbablePrime() && Predicates.DIGIT_UNDULATE.is(mPalin)) {
         ++cnt;
       }
       mPalin = super.next();

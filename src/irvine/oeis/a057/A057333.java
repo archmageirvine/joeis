@@ -1,7 +1,7 @@
 package irvine.oeis.a057;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
@@ -18,7 +18,7 @@ public class A057333 extends A000040 {
     mLimit = mLimit.multiply(10);
     long cnt = 0;
     while (mP.compareTo(mLimit) < 0) {
-      if (ZUtils.isUndulate(mP)) {
+      if (Predicates.DIGIT_UNDULATE.is(mP)) {
         ++cnt;
       }
       mP = super.next();

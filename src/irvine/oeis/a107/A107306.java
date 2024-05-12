@@ -12,6 +12,6 @@ public class A107306 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A107306() {
-    super(1, 0, n -> Z.valueOf((17 * n - 19)).isProbablePrime());
+    super(1, 0, n -> Z.valueOf(17L * n - 19).isProbablePrime());
   }
 }

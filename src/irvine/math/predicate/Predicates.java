@@ -29,4 +29,6 @@ public final class Predicates {
 
   /** Test if a number is a palindrome in a base. */
   public static final Predicate2 PALINDROME = new Palindrome();
+  /** Test if a number is <code>t</code>-polygonal. */
+  public static final Predicate2 POLYGONAL = new Polygonal();
 }

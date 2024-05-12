@@ -1,8 +1,8 @@
 package irvine.oeis.a066;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000290;
@@ -24,7 +24,7 @@ public class A066742 extends Sequence1 {
       }
       if (s.mod(10) != 0) {
         final Z r = Functions.REVERSE.z(s);
-        if (ZUtils.isPolygonal(r, 5)) {
+        if (Predicates.POLYGONAL.is(5, r)) {
           return s;
         }
       }

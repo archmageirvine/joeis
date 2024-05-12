@@ -644,24 +644,6 @@ public final class ZUtils {
   }
 
   /**
-   * Test for a <code>k</code>-gonal number.
-   * @param n number to test
-   * @param k shape
-   * @return true iff the number is <code>k</code>-gonal
-   */
-  public static boolean isPolygonal(final Z n, final long k) {
-    if (n.isZero()) {
-      return true;
-    }
-    final Z t = n.multiply(8 * (k - 2)).add((k - 4) * (k - 4));
-    final Z[] s = t.sqrtAndRemainder();
-    if (!s[1].isZero()) {
-      return false;
-    }
-    return s[0].add(k - 4).mod(2 * (k - 2)) == 0;
-  }
-
-  /**
    * Test if a number is a practical number.
    * @param n number to test
    * @return true iff the number is practical

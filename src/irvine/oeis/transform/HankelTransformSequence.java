@@ -38,7 +38,7 @@ public class HankelTransformSequence extends AbstractSequence {
   public HankelTransformSequence(final int offset, final Sequence seq, int skip) {
     super(offset);
     mN = offset - 1;
-    mSeq = DirectSequence.create(seq);
+    mSeq = seq instanceof DirectSequence ? (DirectSequence) seq : DirectSequence.create(seq);
     while (--skip >= 0) {
       next();
     }

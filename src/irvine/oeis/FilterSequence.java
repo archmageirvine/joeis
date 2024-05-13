@@ -28,7 +28,7 @@ public class FilterSequence extends AbstractSequence {
   /** Negative terms. */
   public static final Predicate<Z> NEGATIVE = k -> k.compareTo(Z.ZERO) < 0;
   /** Palindromic terms. */
-  public static final Predicate<Z> PALINDROME = k -> Predicates.PALINDROME.is(10, k);
+  public static final Predicate<Z> PALINDROME = Predicates.PALINDROME::is;
   /** Odd terms. */
   public static final Predicate<Z> ODD = Z::isOdd;
   /** Even terms. */
@@ -36,11 +36,11 @@ public class FilterSequence extends AbstractSequence {
   /** Square terms. */
   public static final Predicate<Z> SQUARE = Z::isSquare;
   /** Cube terms. */
-  public static final Predicate<Z> CUBE = n -> Predicates.CUBE.is(n);
+  public static final Predicate<Z> CUBE = Predicates.CUBE::is;
   /** Triangular terms. */
-  public static final Predicate<Z> TRIANGULAR = n -> Predicates.TRIANGULAR.is(n);
+  public static final Predicate<Z> TRIANGULAR = Predicates.TRIANGULAR::is;
   /** Squarefree terms. */
-  public static final Predicate<Z> SQUAREFREE = k -> Jaguar.factor(k).isSquareFree();
+  public static final Predicate<Z> SQUAREFREE = Predicates.SQUARE_FREE::is;
   /** Nonsquarefree terms. */
   public static final Predicate<Z> NONSQUAREFREE = k -> !Jaguar.factor(k).isSquareFree();
   /** Power of 2 terms. */

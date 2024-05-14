@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a001.A001006;
 
 /**
- * A266969 Integers n such that A001006(n) is divisible by n.
+ * A266969 Integers k such that A001006(k) is divisible by k.
  * @author Georg Fischer
  */
 public class A266969 extends FilterPositionSequence {

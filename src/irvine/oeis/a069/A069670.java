@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069055.
+ * A069670 Largest n-digit triangular number with maximum digit sum.
  * @author Sean A. Irvine
  */
 public class A069670 extends Sequence1 {

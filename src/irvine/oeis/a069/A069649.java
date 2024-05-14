@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069644 Let M_n be the n X n matrix with M_n(i,j)=1/(i+j+5); then a(n)=1/det(M_n).
+ * A069649 Let M_n be the n X n matrix with M_n(i,j)=i^3/(i+j); then a(n)=1/det(M_n).
  * @author Sean A. Irvine
  */
 public class A069649 extends Sequence1 {

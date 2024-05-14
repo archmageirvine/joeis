@@ -4,7 +4,7 @@ package irvine.oeis.a079;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A079750 Operation count to create all permutations of n distinct elements using the &quot;streamlined&quot; version of Algorithm L (lexicographic permutation generation) from Knuth&apos;s The Art of Computer Programming, Vol. 4, chapter 7.2.1.2. Sequence gives number of compari
+ * A079750 Operation count to create all permutations of n distinct elements using the "streamlined" version of Algorithm L (lexicographic permutation generation) from Knuth's The Art of Computer Programming, Vol. 4, chapter 7.2.1.2. Sequence gives number of comparisons required to find j in step L2.2'.
  * @author Georg Fischer
  */
 public class A079750 extends MultiTransformSequence {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000217;
 
 /**
- * A066528.
+ * A069673 Nonpalindromic triangular numbers whose digit reversal is also a triangular number (possibly with fewer digits).
  * @author Sean A. Irvine
  */
 public class A069673 extends Sequence1 {

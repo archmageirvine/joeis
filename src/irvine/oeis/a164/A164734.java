@@ -4,7 +4,7 @@ package irvine.oeis.a164;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A164734 Number of n-digit cycles of length 2 under the Kaprekar map A151949
+ * A164734 Number of n-digit cycles of length 2 under the Kaprekar map A151949.
  * @author Georg Fischer
  */
 public class A164734 extends GeneratingFunctionSequence {

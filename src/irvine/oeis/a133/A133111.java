@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A133111 a(n) = 1/(1!*2!*3!*4!)*sum {1 &lt;= x_1, x_2, x_3, x_4 &lt;= n} |det V(x_1,x_2,x_3,x_4)|, where V(x_1,x_2,x_3,x_4) is the Vandermonde matrix of order 4.
+ * A133111 a(n) = (1/(1!*2!*3!*4!))*Sum_{1 &lt;= x_1, x_2, x_3, x_4 &lt;= n} |det V(x_1,x_2,x_3,x_4)|, where V(x_1,x_2,x_3,x_4) is the Vandermonde matrix of order 4.
  * @author Georg Fischer
  */
 public class A133111 extends GeneratingFunctionSequence {

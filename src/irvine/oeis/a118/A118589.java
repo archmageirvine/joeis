@@ -6,7 +6,7 @@ package irvine.oeis.a118;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A118589 E.g.f.: A(x) = exp(x + x^2 + x^3).
+ * A118589 Expansion of e.g.f. exp(x + x^2 + x^3).
  * @author Georg Fischer
  */
 public class A118589 extends HolonomicRecurrence {

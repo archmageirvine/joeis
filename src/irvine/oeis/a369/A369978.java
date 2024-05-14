@@ -8,7 +8,7 @@ import irvine.oeis.a083.A083345;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A369978 Dirichlet inverse of sequence b(n) = 1+A083345(n), where A083345(n) = n&apos; / gcd(n,n&apos;), and n&apos; stands for the arithmetic derivative of n, A003415.
+ * A369978 Dirichlet inverse of sequence b(n) = 1+A083345(n), where A083345(n) = n' / gcd(n,n'), and n' stands for the arithmetic derivative of n, A003415.
  * @author Georg Fischer
  */
 public class A369978 extends AbstractSequence {

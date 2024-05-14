@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A069055.
+ * A069672 Largest n-digit triangular number with minimum digit sum.
  * @author Sean A. Irvine
  */
 public class A069672 extends Sequence1 {

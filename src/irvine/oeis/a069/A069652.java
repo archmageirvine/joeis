@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A066151.
+ * A069652 GCD of all the numbers obtained by permuting the digits of n.
  * @author Sean A. Irvine
  */
 public class A069652 extends Sequence1 {

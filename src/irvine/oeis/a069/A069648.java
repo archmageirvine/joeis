@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A069647 a(1) = 1; for n &gt; 1, the smallest n-th power with the digit sum also a nontrivial n-th power, i.e., 10^n is not a member.
+ * A069648 a(1) = 1, otherwise smallest m &gt; 1 such that the sum of digits of m^n is k^n for some k &gt; 1.
  * @author Sean A. Irvine
  */
 public class A069648 extends Sequence1 {

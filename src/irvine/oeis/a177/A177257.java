@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A177257 a(n) = Sum((binomial(n,j)-j-1)*B(j), j=0..n-1), where B(j)=A000110(j) are the Bell numbers.
+ * A177257 a(n) = Sum_{j=0..n-1} (binomial(n,j) - (j+1))*A000110(j).
  * a(n)=sum(j=0, n-1, (binom(n, j)-j-1)*bell(j))
  * @author Georg Fischer
  */

@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A171753 Expansion of 1/(1-3x-x^2/(1-3x-x^2/(1-3x))).
+ * A171753 Expansion of g.f. 1/(1-3*x-x^2/(1-3*x-x^2/(1-3*x))).
  * @author Sean A. Irvine
  */
 public class A171753 extends LinearRecurrence {

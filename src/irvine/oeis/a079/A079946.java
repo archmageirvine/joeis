@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a004.A004755;
 
 /**
- * A079946 Binary expansion of n has form 11**...*0.
+ * A079946 Numbers k whose binary expansion begins with two or more 1's and ends with at least one 0.
  * @author Georg Fischer
  */
 public class A079946 extends AbstractSequence {

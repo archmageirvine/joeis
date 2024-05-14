@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A051126 Table T(n,k) = n mod k read by antidiagonals (n &gt;= 1, k &gt;= 1).
+ * A051126 Table T(n,k) = n mod k read by downward antidiagonals (n &gt;= 1, k &gt;= 1).
  * @author Sean A. Irvine
  */
 public class A051126 extends Sequence1 {

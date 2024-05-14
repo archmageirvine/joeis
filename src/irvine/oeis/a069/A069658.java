@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a017.A017934;
 
 /**
- * A069055.
+ * A069658 a(1) = 1; a(n) = smallest nontrivial n-digit perfect power.
  * @author Sean A. Irvine
  */
 public class A069658 extends Sequence1 {

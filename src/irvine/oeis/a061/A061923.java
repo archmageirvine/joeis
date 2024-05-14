@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061923 Difference between n and its reversal is a nonzero cube.
+ * A061923 Numbers k such that the difference between k and its reversal is a nonzero cube.
  * @author Sean A. Irvine
  */
 public class A061923 extends Sequence1 {

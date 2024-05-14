@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A171552 a(n)=2^n*floor((5-2n)/3).
+ * A171552 a(n) = 2^n*floor((5-2n)/3).
  * @author Sean A. Irvine
  */
 public class A171552 extends LinearRecurrence {

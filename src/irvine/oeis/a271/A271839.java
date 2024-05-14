@@ -4,7 +4,7 @@ package irvine.oeis.a271;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A271839 Somos&apos;s sequence {a(9,n)} defined in comment in A018896: a(0)= a(1) = ... = a(19) = 1; for n &gt;= 20, a(n) = (a(n-1)*a(n-19) + a(n-10)^2)/a(n-20).
+ * A271839 Somos's sequence {a(9,n)} defined in comment in A018896: a(0)= a(1) = ... = a(19) = 1; for n &gt;= 20, a(n) = (a(n-1)*a(n-19) + a(n-10)^2)/a(n-20).
  * @author Georg Fischer
  */
 public class A271839 extends MultiTransformSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a246.A246547;
 
 /**
- * A031218 Largest prime power &lt;= n.
+ * A167185 Largest prime power &lt;= n that is not prime.
  * @author Sean A. Irvine
  */
 public class A167185 extends A246547 {

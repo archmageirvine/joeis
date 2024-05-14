@@ -6,7 +6,7 @@ package irvine.oeis.a054;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A054113 T(2n,n), array T as in A054110.
+ * A054113 T(2*n,n), array T as in A054110.
  * @author Georg Fischer
  */
 public class A054113 extends HolonomicRecurrence {

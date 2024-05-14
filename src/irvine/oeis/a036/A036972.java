@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.a004.A004170;
 
 /**
- * A036972 Numbers k suct that the k-th prime is a Fibonacci number reversed.
+ * A036972 Numbers k such that the k-th prime is a Fibonacci number reversed.
  * @author Sean A. Irvine
  */
 public class A036972 extends Sequence1 {

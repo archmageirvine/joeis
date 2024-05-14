@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007691;
 import irvine.oeis.a054.A054030;
 
 /**
- * A307741 Sum of divisors of multiply-perfect numbers.
+ * A307741 Sum of divisors of the multiply-perfect numbers.
  * @author Georg Fischer
  */
 public class A307741 extends AbstractSequence {

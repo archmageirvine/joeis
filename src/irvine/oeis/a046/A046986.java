@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A046986 Multiply perfect numbers whose average divisor divides the number but is not an integer.
+ * A046986 Multiply perfect numbers that are also harmonic numbers but are not arithmetic numbers.
  * @author Sean A. Irvine
  */
 public class A046986 extends Sequence1 {

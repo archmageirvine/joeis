@@ -24,7 +24,7 @@ public class A057534 extends Sequence0 {
     } else if (mN % 7 == 0) {
       mN /= 7;
     } else if (mN % 11 == 0) {
-      mN /= 10;
+      mN /= 11;
     } else if (mN % 13 == 0) {
       mN /= 13;
     } else {

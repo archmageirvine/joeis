@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069055.
+ * A069669 Smallest n-digit triangular number with maximum digit sum.
  * @author Sean A. Irvine
  */
 public class A069669 extends Sequence1 {

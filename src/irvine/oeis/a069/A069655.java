@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069055.
+ * A069655 Maximum element in the simple continued fraction expansion for (1+1/n)^n.
  * @author Sean A. Irvine
  */
 public class A069655 extends Sequence1 {

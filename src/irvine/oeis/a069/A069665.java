@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069055.
+ * A069665 Smallest n-digit square with maximum digit sum.
  * @author Sean A. Irvine
  */
 public class A069665 extends Sequence1 {

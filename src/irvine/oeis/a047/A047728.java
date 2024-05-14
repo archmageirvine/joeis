@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A047728 Intersection of A046985 and A007691: multiply perfect, refactorable numbers with integer average divisor dividing the number.
+ * A047728 Intersection of A046985 and A033950: multiply perfect, refactorable numbers with integer average divisor dividing the number.
  * @author Sean A. Irvine
  */
 public class A047728 extends Sequence1 {

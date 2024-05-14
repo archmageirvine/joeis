@@ -4,7 +4,7 @@ package irvine.oeis.a091;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A091103 Expansion of (1-3x+12x^2)/((1-3x)(1+3x)).
+ * A091103 Expansion of (1-3*x+12*x^2)/((1-3*x)*(1+3*x)).
  * @author Georg Fischer
  */
 public class A091103 extends GeneratingFunctionSequence {

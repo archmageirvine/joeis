@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A112369 -1 + Sum_{i=0..n} 2^i*i!.
+ * A112369 a(n) = -1 + Sum_{i=0..n} 2^i*i!.
  * @author Georg Fischer
  */
 public class A112369 extends AbstractSequence {

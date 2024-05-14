@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069055.
+ * A069654 a(1) = 1; for n &gt; 1, a(n) = smallest number &gt; a(n-1) having exactly n divisors.
  * @author Sean A. Irvine
  */
 public class A069654 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007691;
 
 /**
- * A098203 EulerPhi of multiperfect numbers.
+ * A098203 Euler totient function phi values of multiperfect numbers.
  * @author Georg Fischer
  */
 public class A098203 extends A007691 {

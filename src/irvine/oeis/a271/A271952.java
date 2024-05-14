@@ -4,7 +4,7 @@ package irvine.oeis.a271;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A271952 Somos&apos;s sequence {b(6,n)} defined in comment in A078495: a(0)=a(1)=...=a(14)=1; for n&gt;=15, a(n)=(a(n-1)*a(n-14)+a(n-7)*a(n-8))/a(n-15).
+ * A271952 Somos's sequence {b(6,n)} defined in comment in A078495: a(0)=a(1)=...=a(14)=1; for n&gt;=15, a(n)=(a(n-1)*a(n-14)+a(n-7)*a(n-8))/a(n-15).
  * @author Georg Fischer
  */
 public class A271952 extends MultiTransformSequence {

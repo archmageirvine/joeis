@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001597;
 import irvine.util.Permutation;
 
 /**
- * A069055.
+ * A069656 Perfect powers that can be permuted into another perfect power (in base 10).
  * @author Sean A. Irvine
  */
 public class A069656 extends A001597 {

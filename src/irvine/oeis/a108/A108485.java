@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A108485 Sum binomial(2n-2k,2k)2^(n-k), k=0..floor(n/2).
+ * A108485 a(n) = Sum_{k=0..floor(n/2)} binomial(2n-2k,2k)2^(n-k).
  * @author Sean A. Irvine
  */
 public class A108485 extends LinearRecurrence {

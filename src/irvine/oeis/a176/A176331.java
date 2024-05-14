@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A176331 Number triangle T(n,k) = Sum_{j=0..n} C(j,n-k)*C(j,k)*(-1)^(n-j).
+ * A176331 Triangle read by rows: T(n, k) = Sum_{j=0..n} C(j, n-k) * C(j, k) * (-1)^(n - j).
  * @author Georg Fischer
  */
 public class A176331 extends LambdaTriangle {

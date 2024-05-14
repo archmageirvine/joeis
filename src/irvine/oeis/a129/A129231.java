@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A129231 a(n)=Floor(n*r)-a(n-1), where r=2^(1/2).
+ * A129231 a(n) = floor(n*r) - a(n-1), where r = sqrt(2) and a(0) = 0.
  * @author Georg Fischer
  */
 public class A129231 extends MultiTransformSequence {

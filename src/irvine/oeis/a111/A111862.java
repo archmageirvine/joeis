@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A111862 Second digit after decimal point of square root of n.
+ * A111862 Second digit after decimal point of square root of n in decimal representation.
  * @author GEorg Fischer
  */
 public class A111862 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069055.
+ * A069659 Largest n-digit perfect power.
  * @author Sean A. Irvine
  */
 public class A069659 extends Sequence1 {

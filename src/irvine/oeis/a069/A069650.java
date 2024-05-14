@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a066.A066150;
 
 /**
- * A066151.
+ * A069650 Largest n-digit number with maximal number of divisors.
  * @author Sean A. Irvine
  */
 public class A069650 extends A066150 {

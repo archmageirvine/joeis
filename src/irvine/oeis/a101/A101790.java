@@ -4,7 +4,7 @@ package irvine.oeis.a101;
 import irvine.oeis.prime.PrimeConditionListSequence;
 
 /**
- * A101790 Numbers n such that 4n-1, 8n-1 and 16n-1 are primes.
+ * A101790 Numbers k such that 4*k-1, 8*k-1 and 16*k-1 are all primes.
  * @author Georg Fischer
  */
 public class A101790 extends PrimeConditionListSequence {

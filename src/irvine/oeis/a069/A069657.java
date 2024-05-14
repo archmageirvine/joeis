@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001006;
 
 /**
- * A069055.
+ * A069657 Sum( S(n,k) * M(k-1), k=1..n), where S(n,k) = Stirling numbers of the second kind, M(n) = Motzkin numbers, A001006.
  * @author Sean A. Irvine
  */
 public class A069657 extends Sequence0 {

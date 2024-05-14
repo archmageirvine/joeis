@@ -4,7 +4,7 @@ package irvine.oeis.a164;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A164733 Number of n-digit fixed points under the Kaprekar map A151949
+ * A164733 Number of n-digit fixed points under the Kaprekar map A151949.
  * @author Georg Fischer
  */
 public class A164733 extends GeneratingFunctionSequence {

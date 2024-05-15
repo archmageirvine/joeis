@@ -2,23 +2,15 @@ package irvine.oeis.a069;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000217;
-
+import irvine.oeis.LambdaSequence;
 
 /**
- * A069902 Largest prime factor of n(n+1)/2, the n-th triangular number.
+ * A069902 Largest prime factor of n*(n+1)/2, the n-th triangular number.
  * @author Georg Fischer
- * @author Sean A. Irvine
  */
-public class A069902 extends A000217 {
+public class A069902 extends LambdaSequence {
 
-  {
-    super.next();
-    setOffset(1);
-  }
-
-  @Override
-  public Z next() {
-    return Functions.GPF.z(super.next());
+  public A069902() {
+    super(1, n -> Functions.GPF.z(Z.valueOf(n).multiply(n + 1).divide2()));
   }
 }

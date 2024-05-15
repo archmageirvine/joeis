@@ -1,9 +1,7 @@
 package irvine.math.partition;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import irvine.math.IntegerUtils;
@@ -145,34 +143,6 @@ public final class IntegerPartition {
       }
     }
     return ord;
-  }
-
-  private static final List<Z> PARTITIONS = new ArrayList<>();
-
-  private static void computeNext() {
-    final int n = PARTITIONS.size();
-    if (n <= 1) {
-      PARTITIONS.add(Z.ONE);
-      PARTITIONS.add(Z.ONE);
-      return;
-    }
-    Z p = Z.ZERO;
-    long k = 1;
-    boolean sign = true;
-    while (true) {
-      final long delta = k * (3 * k - 1) / 2;
-      if (n - delta < 0) {
-        break;
-      }
-      p = p.signedAdd(sign, PARTITIONS.get(n - (int) delta));
-      if (n - delta - k < 0) {
-        break;
-      }
-      p = p.signedAdd(sign, PARTITIONS.get(n - (int) (delta + k)));
-      ++k;
-      sign = !sign;
-    }
-    PARTITIONS.add(p);
   }
 
   /**

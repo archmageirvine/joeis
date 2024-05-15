@@ -11,6 +11,7 @@ public final class FixedLengthPartition {
   private final int mN;
   private final int mParts;
   private final int mLo;
+  private final int mHi;
   private final int mMax;
   private boolean mFirst = true;
   private FixedLengthPartition mP = null;
@@ -27,6 +28,7 @@ public final class FixedLengthPartition {
     mN = n;
     mParts = parts;
     mLo = lo;
+    mHi = hi;
     if (parts >= 2) {
       mI = IntegerUtils.max(lo, (n + parts - 1) / parts, n - hi * (parts - 1));
       mMax = Math.min(hi, n - (parts - 1) * lo);
@@ -67,7 +69,7 @@ public final class FixedLengthPartition {
     } else if (mParts == 1 && mN >= mLo) {
       if (mFirst) {
         mFirst = false;
-        return new int[] {mN};
+        return mN <= mHi ? new int[] {mN} : null;
       }
     } else if (mParts >= 2) {
       if (mI > mMax) {

@@ -45,6 +45,10 @@ public class A056600 extends Sequence1 {
     return prod;
   }
 
+  protected Z select(final Z a, final Z b) {
+    return a;
+  }
+
   @Override
   public Z next() {
     mProducts.clear();
@@ -69,7 +73,7 @@ public class A056600 extends Sequence1 {
           if (mVerbose) {
             StringUtils.message(prod + " = " + b + " + " + c);
           }
-          return prod;
+          return select(prod, b);
         }
       }
       // Update product in all possible ways

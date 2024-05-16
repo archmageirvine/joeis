@@ -1,33 +1,18 @@
 package irvine.oeis.a098;
-// manually concatf/concatb at 2022-12-30 21:09
 
-import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000040;
-import irvine.oeis.a066.A066621;
+import irvine.oeis.a019.A019518;
 
 /**
  * A098130 Concatenation of consecutive primes in the forward and reverse order.
  * @author Georg Fischer
+ * @author Sean A. Irvine
  */
-public class A098130 extends A066621 {
-
-  /** Construct the sequence. */
-  public A098130() {
-    super(1, new A000040(), 10);
-  }
+public class A098130 extends A019518 {
 
   @Override
   public Z next() {
-    ++mN;
-    final String term = mSeq.a(mN - 1).toString(mBase);
-    final StringBuilder result = new StringBuilder(mS.toString());
-    mS.append(term);
-    result.append(term);
-    result.append(Functions.REVERSE.z(mBase, mSeq.a(mN - 1)));
-    for (int i = mN - 1; i >= 1; --i) {
-      result.append(Functions.REVERSE.z(mBase, mSeq.a(i - 1)));
-    }
-    return new Z(result.toString());
+    final String t = super.next().toString();
+    return new Z(t + new StringBuilder(t).reverse());
   }
 }

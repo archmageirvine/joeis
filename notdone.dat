@@ -19,7 +19,7 @@ A000637 Simple dependency on A000638
 A000638 Number of permutation groups of degree n
 A000663 Insufficient detail, pos. similar to A000662, cf. A000595, cycle index, have paper in German, depends A046858
 A000679 Subset of A000001, hard
-A000758 Insufficient detail, mailed author (he no longer knows what it is)
+A000758 Related to cumulative height of rooted plane trees (insufficient detail, author no longer knows what it is)
 A000769 No 3 in a line problem, hard
 A000785 Depends on A048142
 A000786 Depends on A000784, A000785
@@ -155,7 +155,6 @@ A002773 Matroids, calculation estimated to be hard
 A002786 Semigroups, hard, some code for GAP might be available
 A002787 Semigroups, hard, some code for GAP might be available
 A002788 Semigroups, hard, some code for GAP might be available
-A002810 English syllables, some formulas exist, dumb
 A002823 Metropolis sequence, fractal like, paper available not obvious
 A002827 Unitary perfect, difficult to make a useful implementation
 A002833 Boolean fns, have paper, seq. is in table, but origin unclear
@@ -1150,8 +1149,8 @@ A032257 Number of dyslexic rooted compound windmills with n nodes and leaves of 
 A032258 Shifts left 2 places under "DHK" (bracelet, identity, unlabeled) transform, terms don't match definition?
 A032259 Number of series-reduced dyslexic planted compound windmills with n leaves of 2 colors with no symmetries, terms don't match definition?
 A032355 Number of connected transitive trivalent (or cubic) graphs with 2n nodes
-A032435 Triangle of second-to-last man to survive in Josephus problem of n men in a circle with every k-th killed, with k<=n, data doesn't matched definition?
-A032436 Triangle of third-to-last man to survive in the Josephus problem of n men in a circle with every k-th killed, with k<=n, data doesn't matched definition?
+A032435 Triangle of second-to-last man to survive in Josephus problem of n men in a circle with every k-th killed, with k<=n, data doesn't match definition?
+A032436 Triangle of third-to-last man to survive in the Josephus problem of n men in a circle with every k-th killed, with k<=n, data doesn't match definition?
 A032800 If there were a 9-dimensional unimodular lattice with minimal norm 2, this would be its theta series; however, no such lattice exists
 A032802 Theta series of extremal odd unimodular lattice D_8^{+2} with minimal norm 2 in dimension 16
 A033188 Minimal difference of any increasing arithmetic progression of n primes
@@ -1388,7 +1387,6 @@ A038021 Triangle: T(n,k), k<=n: commutative groupoids with n elements and k idem
 A038022 Triangle: T(n,k), k<=n: commutative groupoids with no symmetry with n elements and k idempotents
 A038023 Triangle: T(n,k), k<=n: commutative groupoids with a nontrivial symmetry with n elements and k idempotents
 A038031 Position reached by frog in A038029. A038026(A038029(n)), suspect sequence if buggy, message sent
-A038034 Number of compositions (ordered partitions) of 1 into {1/1, 1/2, 1/3, ..., 1/n}
 A038036 Number of nonisomorphic and nonantiisomorphic rings with n elements
 A038047 Shifts left under transform T where Ta is a EXP-DCONV a, insufficient detail, incorrect?
 A038123 Beatty sequence for Feigenbaum's constant, depends A006890

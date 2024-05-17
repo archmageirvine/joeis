@@ -7,11 +7,11 @@ import irvine.oeis.a056.A056600;
  * A068418.
  * @author Sean A. Irvine
  */
-public class A069717 extends A056600 {
+public class A069718 extends A056600 {
 
   @Override
   protected Z select(final Z a, final Z b, final Z c) {
-    return b;
+    return c;
   }
 }
 

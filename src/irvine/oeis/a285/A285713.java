@@ -13,6 +13,6 @@ public class A285713 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A285713() {
-    super(0, new A245612(), v -> FactorUtils.leastPrimeSignature(v));
+    super(0, new A245612(), FactorUtils::leastPrimeSignature);
   }
 }

@@ -1,27 +1,29 @@
 package irvine.oeis.a245;
 
-import irvine.oeis.a003.A003961;
+import irvine.math.z.Z;
+import irvine.oeis.CachedSequence;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.a254.A254049;
-import irvine.oeis.recur.GeneralRecurrence;
 
 /**
  * A245612 Permutation of natural numbers: a(0) = 1, a(1) = 2, a(2n) = 3*a(n)-1, a(2n+1) = A254049(a(n)); composition of A048673 and A163511.
  * @author Georg Fischer
+ * @author Sean A. Irvine
  */
-public class A245612 extends GeneralRecurrence {
+public class A245612 extends CachedSequence {
 
-  private final A254049 mSeq2 = new A254049();
-  private final A003961 mSeq3 = new A003961();
+  private static final DirectSequence SEQ = new A254049();
 
   /** Construct the sequence. */
   public A245612() {
-    super(0, 1, 2, 5);
-  }
-
-  @Override
-  protected void initialize() {
-    mLambda.add(n -> a(n).multiply(3).add(-1));
-    mLambda.add(n -> mSeq2.a(a(n)));
-//  mLambda.add(n -> mSeq3.a(2*n - 1).add(1).divide2());
+    super(0, Integer.class, (self, n) -> {
+      if (n <= 1) {
+        return n == 0 ? Z.ONE : Z.TWO;
+      } else if ((n & 1) == 0) {
+        return self.a(n / 2).multiply(3).subtract(1);
+      } else {
+        return SEQ.a(self.a(n / 2));
+      }
+    });
   }
 }

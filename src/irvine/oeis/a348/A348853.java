@@ -7,7 +7,7 @@ import irvine.oeis.a019.A019586;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A348853 Delete any least significant 0&apos;s from the Zeckendorf representation of n, leaving its &quot;odd&quot; part.
+ * A348853 Delete any least significant 0's from the Zeckendorf representation of n, leaving its "odd" part.
  * @author Georg Fischer
  */
 public class A348853 extends MultiTransformSequence {

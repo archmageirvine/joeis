@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000142;
 
 /**
- * A069692.
+ * A069703 a(n) = n! - n^k where n^(k+1) &gt; n! &gt;= n^k.
  * @author Sean A. Irvine
  */
 public class A069703 extends Sequence1 {

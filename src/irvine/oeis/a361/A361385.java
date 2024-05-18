@@ -8,7 +8,7 @@ import irvine.oeis.a064.A064547;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A361385 a(n) is the number of &quot;Fermi-Dirac prime&quot; factors (or I-components) of the n-th infinitary harmonic number.
+ * A361385 a(n) is the number of "Fermi-Dirac prime" factors (or I-components) of the n-th infinitary harmonic number.
  * @author Georg Fischer
  */
 public class A361385 extends MultiTransformSequence {

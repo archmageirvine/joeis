@@ -5,7 +5,7 @@ import java.util.Set;
 
 import irvine.math.LongUtils;
 import irvine.math.api.Matrix;
-import irvine.math.group.MatrixRing;
+import irvine.math.group.MatrixField;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
@@ -19,7 +19,7 @@ import irvine.oeis.Sequence1;
 public class A013588 extends Sequence1 {
 
   private int mN = 0;
-  private MatrixRing<Q> mRing;
+  private MatrixField<Q> mRing;
   private final Set<Long> mDeterminants = new HashSet<>();
   private Matrix<Q> mMatrix;
 
@@ -43,7 +43,7 @@ public class A013588 extends Sequence1 {
 
   @Override
   public Z next() {
-    mRing = new MatrixRing<>(++mN, Rationals.SINGLETON);
+    mRing = new MatrixField<>(++mN, Rationals.SINGLETON);
     mDeterminants.clear();
     mMatrix = new DefaultMatrix<>(mN, mN, Q.ZERO);
     search(0, 1L << mN);

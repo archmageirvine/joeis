@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A069692.
+ * A069706 Primes with property that swapping first and last digits also gives a prime.
  * @author Sean A. Irvine
  */
 public class A069706 extends A000040 {

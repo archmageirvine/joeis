@@ -1,7 +1,7 @@
 package irvine.oeis.a069;
 
 import irvine.math.api.Matrix;
-import irvine.math.group.MatrixRing;
+import irvine.math.group.MatrixField;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
@@ -18,7 +18,7 @@ public class A069641 extends Sequence1 {
 
   @Override
   public Z next() {
-    final MatrixRing<Q> ring = new MatrixRing<>(++mN, Rationals.SINGLETON);
+    final MatrixField<Q> ring = new MatrixField<>(++mN, Rationals.SINGLETON);
     final Matrix<Q> mat = new DefaultMatrix<>(mN, mN, Q.ZERO);
     for (int k = 0; k < mN; ++k) {
       for (int j = 0; j < mN; ++j) {

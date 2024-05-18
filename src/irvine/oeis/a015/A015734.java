@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A015734 Odd n such that d(n) does not divide phi(n).
+ * A015734 Odd numbers k such that d(k) does not divide phi(k).
  * @author Sean A. Irvine
  */
 public class A015734 extends Sequence0 {

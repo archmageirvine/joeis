@@ -9,7 +9,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A068418.
+ * A069716 Smallest number such that the LCM of the digits equals n, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A069716 extends Sequence1 {

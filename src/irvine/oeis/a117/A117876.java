@@ -7,7 +7,7 @@ import irvine.oeis.a066.A066495;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A117876 Primes p=prime(k) of level (1, 2), i.e., such that A118534(k) = prime(k-2).
+ * A117876 Primes p=prime(k) of level (1,2), i.e., such that A118534(k) = prime(k-2).
  * @author Georg Fischer
  */
 public class A117876 extends MultiTransformSequence {

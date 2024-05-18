@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A372710 a(n) = Sum_{k=1..n} sigma(n*k),
+ * A372710 a(n) = Sum_{k=1..n} sigma(n*k),.
  * @author Georg Fischer
  */
 public class A372710 extends LambdaSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a045.A045920;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A144486 Triangular numbers n*(n+1)/2 with n and n+1 composite, where number of prime factors in n = number of prime factors in n+1. (Prime factors are counted with multiplicity.)
+ * A144486 Triangular numbers n*(n+1)/2 with n and n+1 composite, where number of prime factors in n = number of prime factors in n+1. (Prime factors are counted with multiplicity.).
  * @author Georg Fischer
  */
 public class A144486 extends MultiTransformSequence {

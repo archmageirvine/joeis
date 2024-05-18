@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a051.A051193;
 
 /**
- * A064951 Sum of lcm(x, y) for 1 &lt;= x, y &lt;= n.
+ * A064951 a(n) = Sum_{1 &lt;= x, y &lt;= n} lcm(x, y).
  * @author Sean A. Irvine
  */
 public class A064951 extends A051193 {

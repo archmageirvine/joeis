@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A002810.
+ * A002810 Smallest number containing n syllables in UK English.
  * @author Sean A. Irvine
  */
 public class A002810 extends Sequence1 {

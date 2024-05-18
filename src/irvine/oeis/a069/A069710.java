@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A069692.
+ * A069710 Primes with arithmetic mean of digits = 1 (sum of digits = number of digits).
  * @author Sean A. Irvine
  */
 public class A069710 extends A000040 {

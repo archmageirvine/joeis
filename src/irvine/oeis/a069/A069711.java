@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000290;
 
 /**
- * A069692.
+ * A069711 Squares whose arithmetic mean of digits is an integer (i.e., the sum of digits is a multiple of the number of digits).
  * @author Sean A. Irvine
  */
 public class A069711 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000217;
 
 /**
- * A069692.
+ * A069702 Triangular numbers with internal digits also forming a triangular number.
  * @author Sean A. Irvine
  */
 public class A069702 extends Sequence1 {

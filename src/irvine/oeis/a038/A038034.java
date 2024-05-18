@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A002810.
+ * A038034 Number of compositions (ordered partitions) of 1 into {1/1, 1/2, 1/3, ..., 1/n}.
  * @author Sean A. Irvine
  */
 public class A038034 extends Sequence1 {

@@ -10,7 +10,7 @@ import irvine.oeis.a002.A002808;
 import irvine.util.array.DynamicArray;
 
 /**
- * A068418.
+ * A069714 Least integer k such that (sigma(k)-k)/(k-phi(k)) = n.
  * @author Sean A. Irvine
  */
 public class A069714 extends Sequence1 {

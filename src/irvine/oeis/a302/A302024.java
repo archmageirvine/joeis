@@ -7,7 +7,7 @@ import irvine.oeis.a052.A052331;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A302024 Permutation of natural numbers mapping &quot;Fermi-Dirac factorization&quot; to ordinary factorization: a(1) = 1, a(2*A300841(n)) = 2*a(n), a(A300841(n)) = A003961(a(n)).
+ * A302024 Permutation of natural numbers mapping "Fermi-Dirac factorization" to ordinary factorization: a(1) = 1, a(2*A300841(n)) = 2*a(n), a(A300841(n)) = A003961(a(n)).
  * @author Georg Fischer
  */
 public class A302024 extends MultiTransformSequence {

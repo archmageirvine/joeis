@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000217;
 
 /**
- * A069692.
+ * A069712 Triangular numbers with arithmetic mean of digits = integer (sum of digits = A multiple of the number of digits).
  * @author Sean A. Irvine
  */
 public class A069712 extends Sequence0 {

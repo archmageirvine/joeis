@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A068418.
+ * A069715 GCD of digits of n is 1.
  * @author Sean A. Irvine
  */
 public class A069715 extends Sequence1 {

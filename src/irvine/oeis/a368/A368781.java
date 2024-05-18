@@ -7,7 +7,7 @@ import irvine.oeis.a053.A053644;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A368781 The maximal exponent in the unique factorization of n in terms of distinct &quot;Fermi-Dirac primes&quot;.
+ * A368781 The maximal exponent in the unique factorization of n in terms of distinct "Fermi-Dirac primes".
  * @author Georg Fischer
  */
 public class A368781 extends MultiTransformSequence {

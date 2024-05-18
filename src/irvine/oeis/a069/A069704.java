@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069692.
+ * A069704 Let M_2n be the 2n X 2n matrix M_(i,j)=C(2i,j)-C(2j,i) where C(k,l) denotes the binomial coefficients; then a(n)=det(M_2n).
  * @author Sean A. Irvine
  */
 public class A069704 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.a018.A018252;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A161777 n-th nonprime*(n-th nonprime-1)/2
+ * A161777 n-th nonprime*(n-th nonprime-1)/2.
  * @author Georg Fischer
  */
 public class A161777 extends MultiTransformSequence {

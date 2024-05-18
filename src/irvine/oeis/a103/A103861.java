@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000010;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A103861 Euler&apos;s totient of prime(n)! - prime(n)# + 1.
+ * A103861 Euler's totient of prime(n)! - prime(n)# + 1.
  * @author Georg Fischer
  */
 public class A103861 extends MultiTransformSequence {

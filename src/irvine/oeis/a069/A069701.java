@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000290;
 
 /**
- * A069692.
+ * A069701 Squares with internal digits also forming a square &gt; 0.
  * @author Sean A. Irvine
  */
 public class A069701 extends Sequence1 {

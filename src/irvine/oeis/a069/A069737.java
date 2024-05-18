@@ -6,10 +6,10 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A069719 Integer quotients arising in A068418: sum of proper divisors is divided by cototient of terms of A068418.
+ * A069737 Integer quotient defining A068418 is 3.
  * @author Sean A. Irvine
  */
-public class A069719 extends A002808 {
+public class A069737 extends A002808 {
 
   @Override
   public Z next() {
@@ -17,8 +17,8 @@ public class A069719 extends A002808 {
       final Z k = super.next();
       final FactorSequence fs = Jaguar.factor(k);
       final Z[] qr = fs.sigma().subtract(k).divideAndRemainder(k.subtract(fs.phi()));
-      if (qr[1].isZero()) {
-        return qr[0];
+      if (qr[1].isZero() && Z.THREE.equals(qr[0])) {
+        return k;
       }
     }
   }

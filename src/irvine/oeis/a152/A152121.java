@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A152121 a(0) = 4; for n&gt;0, a(n) = a(n-1)^2 - 2^(1+2^(n-1))
+ * A152121 a(0) = 4; for n&gt;0, a(n) = a(n-1)^2 - 2^(1+2^(n-1)).
  * @author Georg Fischer
  */
 public class A152121 extends MultiTransformSequence {

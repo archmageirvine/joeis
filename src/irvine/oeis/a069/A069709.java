@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A069692.
+ * A069709 Primes with arithmetic mean of digits an integer (sum of digits = a multiple of number of digits).
  * @author Sean A. Irvine
  */
 public class A069709 extends A000040 {

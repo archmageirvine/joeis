@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000290;
 
 /**
- * A069692.
+ * A069707 Squares with property that swapping first and last digits also gives a square.
  * @author Sean A. Irvine
  */
 public class A069707 extends Sequence1 {

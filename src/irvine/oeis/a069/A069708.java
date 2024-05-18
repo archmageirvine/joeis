@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000217;
 
 /**
- * A069692.
+ * A069708 Triangular numbers with property that swapping first and last digits also gives a triangular number.
  * @author Sean A. Irvine
  */
 public class A069708 extends Sequence1 {

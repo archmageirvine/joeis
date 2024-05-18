@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000041;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A078392 Sum of GCD&apos;s of parts in all partitions of n.
+ * A078392 Sum of GCD's of parts in all partitions of n.
  * @author Georg Fischer
  */
 public class A078392 extends MultiTransformSequence {

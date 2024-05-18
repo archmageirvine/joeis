@@ -1,13 +1,15 @@
 package irvine.oeis.a006;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A006882 Double factorials n!!: a(n) = n*a(n-2) for n &gt; 1, a(0) = a(1) = 1.
  * @author Sean A. Irvine
  */
-public class A006882 extends AbstractSequence {
+public class A006882 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -35,4 +37,15 @@ public class A006882 extends AbstractSequence {
     }
     return mB;
   }
+
+  @Override
+  public Z a(final Z n) {
+    return Functions.MULTIFACTORIAL.z(2, n);
+  }
+
+  @Override
+  public Z a(final int n) {
+    return Functions.MULTIFACTORIAL.z(2, n);
+  }
+
 }

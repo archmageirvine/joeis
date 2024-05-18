@@ -1,13 +1,15 @@
 package irvine.oeis.a007;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A007662 Quadruple factorial numbers n!!!!: a(n) = n*a(n-4).
  * @author Sean A. Irvine
  */
-public class A007662 extends AbstractSequence {
+public class A007662 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -41,4 +43,15 @@ public class A007662 extends AbstractSequence {
     }
     return mD;
   }
+
+  @Override
+  public Z a(final Z n) {
+    return Functions.MULTIFACTORIAL.z(4, n);
+  }
+
+  @Override
+  public Z a(final int n) {
+    return Functions.MULTIFACTORIAL.z(4, n);
+  }
+
 }

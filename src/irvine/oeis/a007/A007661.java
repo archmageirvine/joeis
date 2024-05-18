@@ -1,13 +1,15 @@
 package irvine.oeis.a007;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A007661 Triple factorial numbers a(n) = n!!!, defined by a(n) = n*a(n-3), a(0) = a(1) = 1, a(2) = 2. Sometimes written n!3.
  * @author Sean A. Irvine
  */
-public class A007661 extends AbstractSequence {
+public class A007661 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -39,4 +41,16 @@ public class A007661 extends AbstractSequence {
     }
     return mC;
   }
+
+
+  @Override
+  public Z a(final Z n) {
+    return Functions.MULTIFACTORIAL.z(3, n);
+  }
+
+  @Override
+  public Z a(final int n) {
+    return Functions.MULTIFACTORIAL.z(3, n);
+  }
+
 }

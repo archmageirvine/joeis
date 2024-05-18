@@ -11,10 +11,10 @@ import irvine.oeis.triangle.LambdaTriangle;
  */
 public class A176505 extends LambdaTriangle {
 
-  private final static DirectSequence mSeq = new A000931();
+  private static final DirectSequence SEQ = new A000931();
 
   /** Construct the sequence. */
   public A176505() {
-    super(0, 0, 0, (n, m) -> mSeq.a(n + 4).subtract(mSeq.a(4 + m)).subtract(mSeq.a(n + 4 - m)).add(1));
+    super(0, 0, 0, (n, m) -> SEQ.a(n + 4).subtract(SEQ.a(4 + m)).subtract(SEQ.a(n + 4 - m)).add(1));
   }
 }

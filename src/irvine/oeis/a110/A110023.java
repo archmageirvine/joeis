@@ -12,10 +12,10 @@ import irvine.oeis.triangle.LambdaTriangle;
  */
 public class A110023 extends LambdaTriangle {
 
-  private final static DirectSequence mSeq = new A000931();
+  private static final DirectSequence SEQ = new A000931();
 
   /** Construct the sequence. */
   public A110023() {
-    super(1, 0, 0, (n, m) -> mSeq.a(m + 6).multiply(mSeq.a(n + 6 - m)).multiply(Binomial.binomial(n, m)));
+    super(1, 0, 0, (n, m) -> SEQ.a(m + 6).multiply(SEQ.a(n + 6 - m)).multiply(Binomial.binomial(n, m)));
   }
 }

@@ -22,10 +22,11 @@ public class A254049 extends AbstractSequence implements DirectSequence {
 
   @Override
   public final Z a(final int n) {
-    if (2 * n - 1 < 0) {
+    final int m = 2 * n - 1;
+    if (m < 0) {
       throw new UnsupportedOperationException();
     }
-    return mSeq.a(2 * n - 1).add(1).divide2();
+    return mSeq.a(m).add(1).divide2();
   }
 
   @Override

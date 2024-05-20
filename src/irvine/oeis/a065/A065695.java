@@ -1,6 +1,7 @@
 package irvine.oeis.a065;
 
-import irvine.math.z.Carmichael;
+
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -31,7 +32,7 @@ public class A065695 extends A000040 {
       final Z m1, m2;
       if ((m1 = m.multiply(mB).add(1)).isProbablePrime() && (m2 = m.multiply(mC).add(1)).isProbablePrime()) {
         final Z n = p.multiply(m1).multiply(m2);
-        final Z lambda = Carmichael.lambda(n);
+        final Z lambda = Functions.CARMICHAEL_LAMBDA.z(n);
         if (n.mod(lambda).equals(Z.ONE)) {
           return m;
         }

@@ -3,7 +3,7 @@ package irvine.math.function;
 import irvine.math.z.Z;
 
 /**
- * Pentagonal function.
+ * Pentagonal numbers.
  * @author Sean A. Irvine
  */
 class Pentagonal extends AbstractFunction1 {

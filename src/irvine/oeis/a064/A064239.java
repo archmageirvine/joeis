@@ -1,7 +1,7 @@
 package irvine.oeis.a064;
 
 import irvine.factor.prime.Fast;
-import irvine.math.z.Carmichael;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -39,7 +39,7 @@ public class A064239 extends Sequence1 {
           final Z c = Z.valueOf(mC * mN + 1);
           if (mPrime.isPrime(c)) {
             final Z t = a.multiply(b).multiply(c);
-            if (t.mod(Carmichael.lambda(t)).equals(Z.ONE)) {
+            if (t.mod(Functions.CARMICHAEL_LAMBDA.z(t)).equals(Z.ONE)) {
               return Z.valueOf(6 * mN);
             }
           }

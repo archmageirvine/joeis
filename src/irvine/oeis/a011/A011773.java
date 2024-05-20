@@ -1,6 +1,7 @@
 package irvine.oeis.a011;
 
-import irvine.math.z.Carmichael;
+
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -15,6 +16,6 @@ public class A011773 extends Sequence1 {
   @Override
   public Z next() {
     mN += 2;
-    return mN == 4 ? Z.ONE : Carmichael.lambda(mN);
+    return mN == 4 ? Z.ONE : Functions.CARMICHAEL_LAMBDA.z(mN);
   }
 }

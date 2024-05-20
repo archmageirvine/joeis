@@ -3,7 +3,7 @@ package irvine.math.function;
 import irvine.math.z.Z;
 
 /**
- * Triangular function.
+ * Triangular numbers.
  * @author Sean A. Irvine
  */
 class Triangular extends AbstractFunction1 {

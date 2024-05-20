@@ -1,7 +1,8 @@
 package irvine.oeis.a278;
 // manually robots/union2 at 2023-08-23 09:55
 
-import irvine.math.z.Carmichael;
+
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +18,7 @@ public class A278021 extends Sequence1 {
   public Z next() {
     while (true) {
       ++mK;
-      if (Z.valueOf(mK).subtract(Carmichael.lambda(mK)).isProbablePrime()) {
+      if (Z.valueOf(mK).subtract(Functions.CARMICHAEL_LAMBDA.z(mK)).isProbablePrime()) {
         return Z.valueOf(mK);
       }
     }

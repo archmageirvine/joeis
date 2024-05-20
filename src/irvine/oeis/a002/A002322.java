@@ -1,6 +1,7 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Carmichael;
+
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
@@ -29,16 +30,16 @@ public class A002322 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    return Carmichael.lambda(n);
+    return Functions.CARMICHAEL_LAMBDA.z(n);
   }
 
   @Override
   public Z a(final Z n) {
-    return Carmichael.lambda(n.intValueExact());
+    return Functions.CARMICHAEL_LAMBDA.z(n);
   }
 
   @Override
   public Z next() {
-    return Carmichael.lambda(++mN);
+    return Functions.CARMICHAEL_LAMBDA.z(++mN);
   }
 }

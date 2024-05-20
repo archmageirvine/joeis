@@ -1,7 +1,7 @@
 package irvine.oeis.a062;
 
+
 import irvine.math.function.Functions;
-import irvine.math.z.Carmichael;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -28,7 +28,7 @@ public class A062373 extends Sequence1 {
     while (true) {
       mN = mN.add(1);
       final Z phi = Functions.PHI.z(mN);
-      final Z c = Carmichael.lambda(mN);
+      final Z c = Functions.CARMICHAEL_LAMBDA.z(mN);
       if (phi.equals(c.multiply(mTarget))) {
         return mN;
       }

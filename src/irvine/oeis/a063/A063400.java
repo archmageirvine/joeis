@@ -1,6 +1,7 @@
 package irvine.oeis.a063;
 
-import irvine.math.z.Carmichael;
+
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
@@ -18,7 +19,7 @@ public class A063400 extends Sequence3 {
     Z m = mN;
     while (true) {
       m = m.subtract(1);
-      if (!m.isProbablePrime() && m.mod(Carmichael.lambda(m)).equals(Z.ONE)) {
+      if (!m.isProbablePrime() && m.mod(Functions.CARMICHAEL_LAMBDA.z(m)).equals(Z.ONE)) {
         return m;
       }
     }

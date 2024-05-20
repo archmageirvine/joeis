@@ -3,7 +3,7 @@ package irvine.math.function;
 import irvine.math.z.Z;
 
 /**
- * Tetrahedral function.
+ * Tetrahedral numbers.
  * @author Sean A. Irvine
  */
 class Tetrahedral extends AbstractFunction1 {

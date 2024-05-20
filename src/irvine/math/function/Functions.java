@@ -63,12 +63,14 @@ public final class Functions {
   public static final Function1 LPF = new LeastPrimeFactor(); // =A020639
   /** Greatest prime factor. */
   public static final Function1 GPF = new GreatestPrimeFactor(); // =A006530
+  /** Carmichael lambda function. */
+  public static final Function1 CARMICHAEL_LAMBDA = new CarmichaelLambda(); // =A002322
   /** Ceiling square root. */
   public static final Function1 CEIL_SQRT = new CeilSqrt(); // =A003059
   /** Bitset indicating which digits are present in a number. */
   public static final Function1 SYNDROME = new Syndrome();
   /** Step to the next number with the same number of set bits. */
-  public static final Function1 SWIZZLE = new Swizzle();
+  public static final Function1 SWIZZLE = new Swizzle(); // =A057168
   /** Least primitive root of a modulus. */
   public static final Function1 LEAST_PRIMITIVE_ROOT = new LeastPrimitiveRoot(); // =A001918
   /** Triangular numbers. */
@@ -77,6 +79,10 @@ public final class Functions {
   public static final Function1 TETRAHEDRAL = new Tetrahedral(); // =A000292
   /** Pentagonal numbers. */
   public static final Function1 PENTAGONAL = new Pentagonal(); // =A000326
+  /** Hexagonal numbers. */
+  public static final Function1 HEXAGONAL = new Hexagonal(); // =A000384
+  /** Pyramidal numbers. */
+  public static final Function1 PYRAMIDAL = new Pyramidal(); // =A000330
   /** Index of the smallest triangular number greater than or equal to the given number. */
   public static final Function1 TRINV = new TriangularInverse();
   /** Describe the number. For example, 3445, is one 3, two 4s, one 5 to give 132415. */

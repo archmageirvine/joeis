@@ -10,9 +10,12 @@ import irvine.oeis.a064.A064848;
  */
 public class A065029 extends FilterPositionSequence {
 
+  private final static A064848 mSeq = new A064848();
+
   /** Construct the sequence. */
   public A065029() {
-    super(1, new A064848(), Z.TWO::equals);
+    super(1, mSeq, Z.TWO::equals);
+    mSeq.setPeriodLimit(3);
   }
 }
 

@@ -145,7 +145,7 @@ public class ContinuedFractionOfSqrtSequence extends AbstractSequence {
    * Set a limit for the period length where to give up filling.
    * @param limit maximum length of period to be computed
    */
-  public void setPeriodLimit(int limit) {
+  public void setPeriodLimit(final int limit) {
     mPeriodLimit = limit;
   }
 

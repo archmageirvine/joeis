@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A096396 a(n) = #{1&lt;=i&lt;=n: k(n,i) = +1} where k(n,i) is the Kronecker symbol.
+ * A096396 a(n) = #{ 0 &lt;= i &lt;= n: K(n, i) = +1 } where K(n, i) is the Kronecker symbol.
  * @author Georg Fischer
  */
 public class A096396 extends LambdaSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069743.
+ * A069750 a(1)=1; a(n+1) is the smallest integer such that 1/a(n+1) = 0.0...00a(n)xxxxx...
  * @author Sean A. Irvine
  */
 public class A069750 extends Sequence1 {

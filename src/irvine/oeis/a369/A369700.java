@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A369700 M√∂bius transform of reduced totient function (A002322).
+ * A369700 M\u00f6bius transform of reduced totient function (A002322).
  * @author Georg Fischer
  */
 public class A369700 extends LambdaSequence {

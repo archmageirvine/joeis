@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A055088 Triangle of generalized Legendre symbols L(a/b), with 1's for quadratic residues and 0's for quadratic non-residues.
+ * A055088 Triangle of generalized Legendre symbols L(a/b) read by rows, with 1's for quadratic residues and 0's for quadratic non-residues.
  * @author Sean A. Irvine
  */
 public class A055088 extends Sequence1 {

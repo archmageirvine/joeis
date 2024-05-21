@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.a069.A069768;
 
 /**
- * A069743.
+ * A073297 Permutation A069768 applied five times or composition of the permutations A073291 &amp; A073293.
  * @author Sean A. Irvine
  */
 public class A073297 extends A069768 {

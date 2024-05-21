@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A108223 a(n) = sigma_{2n}(n^2)/sigma_n(n^2), where sigma_n(m) = Sum_{k|m} k^n.
+ * A108223 a(n) = sigma_{2n}(n^2)/sigma_n(n^2), where sigma_n(m) = Sum_{d|m} d^n.
  * @author Georg Fischer
  */
 public class A108223 extends AbstractSequence {

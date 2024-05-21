@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A324050 Numbers satisfying Korselt&apos;s criterion: squarefree numbers n such that for every prime divisor p of n, p-1 divides n-1.
+ * A324050 Numbers satisfying Korselt's criterion: squarefree numbers n such that for every prime divisor p of n, p-1 divides n-1.
  * @author Georg Fischer
  */
 public class A324050 extends FilterNumberSequence {

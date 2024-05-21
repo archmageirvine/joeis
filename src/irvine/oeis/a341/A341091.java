@@ -4,7 +4,7 @@ package irvine.oeis.a341;
 import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
- * A341091 Triangle read by rows: Coefficients for calculation of the sum of all the finite differences from order zero to order k. Sum_{n=0..k} T(n,k)*b(n) = b(0) + b(1) + ... + b(k) + (b(1) - b(0)) + ... + (b(k) - b(k-1)) + ((b(2) - b(1))-(b(1) - b(0))) + ... .
+ * A341091 Triangle read by rows: Coefficients for calculation of the sum of all the finite differences from order zero to order k. Sum_{n=0..k} T(n, k)*b(n) = b(0) + b(1) + ... + b(k) + (b(1) - b(0)) + ... + (b(k) - b(k-1)) + ((b(2) - b(1)) - (b(1) - b(0))) + ... .
  * @author Georg Fischer
  */
 public class A341091 extends GeneratingFunctionTriangle {

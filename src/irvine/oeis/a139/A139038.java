@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000931;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A139038 Centrally symmetric triangle read by rows: t(n,m) = A000931(m+1) if m &lt;= floor(n/2), A000931(n - m+1) otherwise.
+ * A139038 Triangle read by rows: T(n,m) = A000931(m+6) if m &lt;= floor(n/2), A000931(n+6-m) otherwise, for 0 &lt;= m &lt;= n.
  * @author Georg Fischer
  */
 public class A139038 extends LambdaTriangle {

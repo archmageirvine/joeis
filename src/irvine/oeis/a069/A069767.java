@@ -6,7 +6,7 @@ import irvine.oeis.a014.A014486;
 import irvine.oeis.a057.A057120;
 
 /**
- * A069743.
+ * A069767 Signature-permutation of Catalan bijection "Knick".
  * @author Sean A. Irvine
  */
 public class A069767 extends A014486 {

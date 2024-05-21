@@ -6,7 +6,7 @@ import irvine.oeis.a014.A014486;
 import irvine.oeis.a057.A057120;
 
 /**
- * A069743.
+ * A069768 Signature-permutation of Catalan bijection "Knack".
  * @author Sean A. Irvine
  */
 public class A069768 extends A014486 {

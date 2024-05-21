@@ -12,7 +12,7 @@ import irvine.oeis.transform.MultiTransformSequence;
  */
 public class A242424 extends MultiTransformSequence {
 
-  private final static DirectSequence SEQ = new A064989();
+  private static final DirectSequence SEQ = new A064989();
 
   /** Construct the sequence. */
   public A242424() {

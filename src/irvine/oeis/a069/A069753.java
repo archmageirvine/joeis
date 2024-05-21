@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069743.
+ * A069753 Smallest k&gt;n such that the tetrahedral number n*(n+1)*(n+2)/6 divides the tetrahedral number k*(k+1)*(k+2)/6.
  * @author Sean A. Irvine
  */
 public class A069753 extends Sequence1 {

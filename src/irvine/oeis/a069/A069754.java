@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069743.
+ * A069754 Counts transitions between prime and nonprime to reach the number n.
  * @author Sean A. Irvine
  */
 public class A069754 extends Sequence1 {

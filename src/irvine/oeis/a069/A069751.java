@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069743.
+ * A069751 Smallest k&gt;n such that floor((11/10)^k)/floor((11/10)^n) is an integer.
  * @author Sean A. Irvine
  */
 public class A069751 extends Sequence1 {

@@ -18,8 +18,7 @@ public class A067281 extends Sequence0 {
 
   @Override
   public Z next() {
-    int n = ++mN;
-    final int t = Functions.MAKE_ODD.i(n);
+    final int t = Functions.MAKE_ODD.i(++mN);
     if (t >= mA.length) {
       mA = Arrays.copyOf(mA, t + 1);
     }

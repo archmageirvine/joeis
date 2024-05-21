@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000203;
 
 /**
- * A180937 Sigma-decagonal numbers: numbers n such that sigma(n) is a decagonal number, that is, sigma(n)=4*m^2-3m for some nonnegative integer m.
+ * A180937 Sigma-decagonal numbers: numbers k such that sigma(k) is a decagonal number, that is, sigma(k) = 4*m^2 - 3*m for some nonnegative integer m.
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

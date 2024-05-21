@@ -9,7 +9,7 @@ import irvine.oeis.a057.A057120;
 import irvine.oeis.a057.A057501;
 
 /**
- * A069743.
+ * A069772 Self-inverse permutation of natural numbers induced by the automorphism xReflectHandshakes acting on the parenthesizations encoded by A014486.
  * @author Sean A. Irvine
  */
 public class A069772 extends Sequence0 {

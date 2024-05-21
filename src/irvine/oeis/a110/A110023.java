@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000931;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A110023 A triangle of coefficients based on A000931 and Pascal&apos;s triangle: a(n)=a(n-2)+a(n-3); t(n,m)=a(n - m + 1)*a(m + 1)*Binomial[n, m].
+ * A110023 A triangle of coefficients based on A000931 and Pascal's triangle: a(n)=a(n-2)+a(n-3); t(n,m)=a(n - m + 1)*a(m + 1)*Binomial[n, m].
  * @author Georg Fischer
  */
 public class A110023 extends LambdaTriangle {

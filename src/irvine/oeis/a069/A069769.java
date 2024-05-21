@@ -7,7 +7,7 @@ import irvine.oeis.a057.A057120;
 import irvine.oeis.a057.A057162;
 
 /**
- * A057163.
+ * A069769 Self-inverse permutation of natural numbers induced by the automorphism Rev1CarSide! acting on the parenthesizations encoded by A014486.
  * @author Sean A. Irvine
  */
 public class A069769 extends A014486 {

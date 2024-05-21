@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069743.
+ * A069765 Number of distinct values obtained using n ones and the operations of sum, product and quotient.
  * @author Sean A. Irvine
  */
 public class A069765 extends Sequence1 {

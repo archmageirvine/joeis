@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051953;
 
 /**
- * A062830 a(n) = n - phi(n) + 1.
+ * A062830 a(n) = #{ 0 &lt;= k &lt;= n : K(n, k) = 0 } where K(n, k) is the Kronecker symbol. This is the number of integers 0 &lt;= k &lt;= n that are not coprime to n.
  * @author Georg Fischer
  */
 public class A062830 extends Sequence1 {

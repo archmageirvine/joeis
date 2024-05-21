@@ -1,8 +1,8 @@
 package irvine.oeis.a019;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.a001.A001615;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
@@ -46,7 +46,7 @@ public class A019268 extends AbstractSequence {
   protected int count(final long n) {
     if (n > TABLE_LIMIT) {
       // For large values recompute to avoid excessive table size
-      return isTerminal(n) ? 0 : count(A001615.dedekindPsi(n).longValueExact()) + 1;
+      return isTerminal(n) ? 0 : count(Functions.DEDEKIND_PSI.l(n)) + 1;
     }
     final int res = mCache.get(n);
     if (res != 0) {
@@ -56,7 +56,7 @@ public class A019268 extends AbstractSequence {
       mCache.set(n, (byte) 1);
       return 0;
     }
-    final int r = count(A001615.dedekindPsi(n).longValue()) + 1;
+    final int r = count(Functions.DEDEKIND_PSI.l(n)) + 1;
     mCache.set(n, (byte) (r + 1));
     return r;
   }

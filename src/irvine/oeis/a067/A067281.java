@@ -2,7 +2,7 @@ package irvine.oeis.a067;
 
 import java.util.Arrays;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -18,7 +18,8 @@ public class A067281 extends Sequence0 {
 
   @Override
   public Z next() {
-    final int t = IntegerUtils.makeOdd(++mN);
+    int n = ++mN;
+    final int t = Functions.MAKE_ODD.i(n);
     if (t >= mA.length) {
       mA = Arrays.copyOf(mA, t + 1);
     }

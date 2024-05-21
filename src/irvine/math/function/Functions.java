@@ -33,6 +33,8 @@ public final class Functions {
   public static final Function1 FIBONACCI = new Fibonacci(); // =A000045
   /** Lucas function. */
   public static final Function1 LUCAS = new Lucas(); // =A000032
+  /** Make odd (remove all powers of 2). */
+  public static final Function1 MAKE_ODD = new MakeOdd(); // =A000265
   /** Euler totient function. */
   public static final Function1 PHI = new Phi(); // =A000010
   /** Euler co-totient function. */
@@ -65,6 +67,8 @@ public final class Functions {
   public static final Function1 GPF = new GreatestPrimeFactor(); // =A006530
   /** Carmichael lambda function. */
   public static final Function1 CARMICHAEL_LAMBDA = new CarmichaelLambda(); // =A002322
+  /** Dedekind psi function. */
+  public static final Function1 DEDEKIND_PSI = new DedekindPsi(); // =A001615
   /** Ceiling square root. */
   public static final Function1 CEIL_SQRT = new CeilSqrt(); // =A003059
   /** Bitset indicating which digits are present in a number. */

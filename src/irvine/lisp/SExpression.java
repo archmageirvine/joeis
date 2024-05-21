@@ -118,7 +118,6 @@ public final class SExpression extends ArrayList<SExpression> {
     return s;
   }
 
-  // deepreverse := proc(a) if 0 = nops(a) or list <> whattype(a) then (a) else [op(deepreverse(cdr(a))), deepreverse(a[1])]; fi; end;
   /**
    * Reverse of the expression.
    * @return reverse
@@ -161,6 +160,49 @@ public final class SExpression extends ArrayList<SExpression> {
       s.add(t.deepRotateLeft());
     }
     return s.rotateLeft();
+  }
+
+  /**
+   * Perform the knick operation described in A069767.
+   * @return S expression.
+   */
+  public SExpression knick() {
+    if (isEmpty()) {
+      return this;
+    }
+    final SExpression res = new SExpression();
+    res.add(cdr());
+    final SExpression car = car();
+    res.addAll(car.knick());
+    return res;
+  }
+
+  /**
+   * Perform the knack operation described in A069768.
+   * @return S expression.
+   */
+  public SExpression knack() {
+    if (isEmpty()) {
+      return this;
+    }
+    final SExpression res = new SExpression();
+    res.add(cdr().knack());
+    res.addAll(car());
+    return res;
+  }
+
+  /**
+   * Exchange left and right branches of the S expression
+   * @return S expression.
+   */
+  public SExpression exch() {
+    if (isEmpty()) {
+      return this;
+    }
+    final SExpression res = new SExpression();
+    res.add(cdr());
+    res.addAll(car());
+    return res;
   }
 
   /**

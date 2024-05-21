@@ -10,7 +10,12 @@ import irvine.oeis.a014.A014486;
  */
 public class A057501 extends A014486 {
 
-  private static SExpression rotateHandshakesP(final SExpression h) {
+  /**
+   * Rotate handshakes by one position.
+   * @param h S-expression
+   * @return rotated version
+   */
+  public static SExpression rotateHandshakesP(final SExpression h) {
     if (h.isEmpty()) {
       return h;
     } else {

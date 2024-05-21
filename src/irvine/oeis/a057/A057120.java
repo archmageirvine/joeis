@@ -10,7 +10,12 @@ import irvine.math.z.Z;
  */
 public class A057120 extends A057119 {
 
-  static Z catalanGlobalRank(final Z a) {
+  /**
+   * Return the global rank.
+   * @param a parameter
+   * @return the rank
+   */
+  public static Z catalanGlobalRank(final Z a) {
     final int n = a.bitLength() / 2;
     return Integers.SINGLETON.sum(0, n - 1, Functions.CATALAN::z).add(A057121.catalanRank(n, a));
   }

@@ -1,6 +1,6 @@
 package irvine.oeis.a047;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
@@ -17,6 +17,6 @@ public class A047726 extends Sequence1 {
   @Override
   public Z next() {
     final int[] cnts = ZUtils.digitCounts(++mN);
-    return Binomial.multinomial((int) IntegerUtils.sum(cnts), cnts);
+    return Binomial.multinomial(Functions.SUM.i(cnts), cnts);
   }
 }

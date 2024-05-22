@@ -1,7 +1,7 @@
 package irvine.oeis.a058;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -29,7 +29,7 @@ public class A058257 extends Sequence0 {
             next[k + 1] = next[k].add(mRow[k]);
           }
         } else {
-          final Z sum = ZUtils.sum(mRow);
+          final Z sum = Functions.SUM.z(mRow);
           next[0] = sum;
           for (int k = 0; k < mRow.length; ++k) {
             next[k + 1] = next[k].subtract(mRow[k]);

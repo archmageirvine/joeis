@@ -2,8 +2,8 @@ package irvine.oeis.a066;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -18,7 +18,7 @@ public class A066038 extends Sequence1 {
   public Z next() {
     while (true) {
       final FactorSequence fs = Jaguar.factor(++mN);
-      if (fs.omega() > 1 && ZUtils.sum(fs.toZArray()).isProbablePrime()) {
+      if (fs.omega() > 1 && Functions.SUM.z(fs.toZArray()).isProbablePrime()) {
         return Z.valueOf(mN);
       }
     }

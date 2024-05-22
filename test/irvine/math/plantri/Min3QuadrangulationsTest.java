@@ -1,7 +1,7 @@
 package irvine.math.plantri;
 
+import irvine.math.function.Functions;
 import junit.framework.TestCase;
-import irvine.math.IntegerUtils;
 
 /**
  * Test the corresponding class.
@@ -15,7 +15,7 @@ public class Min3QuadrangulationsTest extends TestCase {
     assertEquals(8, g.mNumVertices);
     assertEquals(24, g.mNumEdges);
     assertEquals(35377, AbstractExtenderReducerTest.sumStarts(g.mEdges));
-    assertEquals(24, IntegerUtils.sum(g.mDegree));
+    assertEquals(24, Functions.SUM.l(g.mDegree));
     Min5Test.checkGraphConsistency(g);
   }
 }

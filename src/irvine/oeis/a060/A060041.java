@@ -3,7 +3,6 @@ package irvine.oeis.a060;
 import java.util.ArrayList;
 import java.util.List;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.partition.IntegerPartition;
@@ -48,7 +47,7 @@ public class A060041 extends AbstractSequence {
       Q term = Q.ZERO;
       while ((p = part.next()) != null) {
         IntegerPartition.toCountForm(p, j);
-        final int sum = (int) IntegerUtils.sum(j);
+        final int sum = Functions.SUM.i(j);
         Q prod = Q.ONE;
         for (int i = 1; i < j.length; ++i) {
           if (j[i] > 0) {

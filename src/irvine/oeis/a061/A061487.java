@@ -2,8 +2,8 @@ package irvine.oeis.a061;
 
 import java.util.HashSet;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
@@ -27,7 +27,7 @@ public class A061487 extends Sequence1 {
         set.add(res);
       }
     }
-    return ZUtils.sum(set);
+    return Functions.SUM.z(set);
   }
 }
 

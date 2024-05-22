@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 
 /**
@@ -357,7 +356,7 @@ public abstract class AbstractGraph implements Graph {
   public long wienerIndex() {
     long sum = 0;
     for (int v = 0; v < order(); ++v) {
-      sum += IntegerUtils.sum(distanceVector(v));
+      sum += Functions.SUM.l(distanceVector(v));
     }
     return sum;
   }

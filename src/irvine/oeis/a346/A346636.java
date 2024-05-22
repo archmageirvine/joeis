@@ -1,6 +1,6 @@
 package irvine.oeis.a346;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -17,7 +17,7 @@ public class A346636 extends Sequence0 {
 
   private void fill(final int[] sides, final int pos) {
     if (pos >= sides.length) {
-      final long total = IntegerUtils.sum(sides);
+      final long total = Functions.SUM.l(sides);
       for (final int s : sides) {
         if (total - s <= s) {
           return;

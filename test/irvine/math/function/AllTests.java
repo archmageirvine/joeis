@@ -50,6 +50,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(Sigma1Test.class);
     suite.addTestSuite(SopfrTest.class);
     suite.addTestSuite(SopfTest.class);
+    suite.addTestSuite(SumTest.class);
     suite.addTestSuite(SwizzleTest.class);
     suite.addTestSuite(SyndromeTest.class);
     suite.addTestSuite(TriangularInverseTest.class);

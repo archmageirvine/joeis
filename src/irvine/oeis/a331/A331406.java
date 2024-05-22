@@ -2,8 +2,8 @@ package irvine.oeis.a331;
 
 import java.util.Arrays;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -54,7 +54,7 @@ public class A331406 extends Sequence0 {
     for (int j = 1; j < n; ++j) {
       v = step2(step1(v));
     }
-    return ZUtils.sum(v);
+    return Functions.SUM.z(v);
   }
 
   @Override

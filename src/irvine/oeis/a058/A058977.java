@@ -2,9 +2,9 @@ package irvine.oeis.a058;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -23,7 +23,7 @@ public class A058977 extends Sequence1 {
         final Q prev = f;
         final Z g = f.num().add(f.den());
         final FactorSequence fs = Jaguar.factor(g);
-        f = new Q(ZUtils.sum(fs.toZArray()), Z.valueOf(fs.omega()));
+        f = new Q(Functions.SUM.z(fs.toZArray()), Z.valueOf(fs.omega()));
         if (f.isInteger()) {
           return f.toZ();
         }

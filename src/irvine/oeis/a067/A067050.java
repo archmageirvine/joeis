@@ -1,6 +1,6 @@
 package irvine.oeis.a067;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -37,7 +37,7 @@ public class A067050 extends Sequence0 {
         sum[k] = k + 1;
       }
       do {
-        prod = prod.multiply(IntegerUtils.sum(sum));
+        prod = prod.multiply(Functions.SUM.l(sum));
       } while (bump(sum));
     }
     return prod;

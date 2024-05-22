@@ -176,8 +176,8 @@ Change History:
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import irvine.math.LongUtils;
 import irvine.math.MutableInteger;
+import irvine.math.function.Functions;
 import irvine.math.graph.Graph;
 import irvine.math.graph.GraphFactory;
 
@@ -3372,7 +3372,7 @@ public final class Plantri {
     } else {
       new SimpleDispatcher(this, mNumbering, mMaxNV).simpleDispatch();
     }
-    return mOuterPlanarSwitch ? LongUtils.sum(mNOutOp).longValueExact() : LongUtils.sum(mNOut).longValueExact();
+    return mOuterPlanarSwitch ? Functions.SUM.l(mNOutOp) : Functions.SUM.l(mNOut);
   }
 
   /**

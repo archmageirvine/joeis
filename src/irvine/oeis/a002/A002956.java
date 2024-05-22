@@ -1,6 +1,6 @@
 package irvine.oeis.a002;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a082.A082641;
 
@@ -14,6 +14,6 @@ public class A002956 extends A082641 {
 
   @Override
   public Z next() {
-    return Z.valueOf(IntegerUtils.sum(A082641.count(++mN)));
+    return Functions.SUM.z(A082641.count(++mN));
   }
 }

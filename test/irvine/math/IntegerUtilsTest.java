@@ -139,14 +139,6 @@ public class IntegerUtilsTest extends TestCase {
     assertEquals(24, IntegerUtils.lcm(12, 8));
   }
 
-  public void testSum() {
-    assertEquals(42, IntegerUtils.sum(42));
-    assertEquals(42, IntegerUtils.sum(new int[] {20, 22}));
-    assertEquals(42, IntegerUtils.sum(new int[][] {{20}, {20, 2}}));
-    assertEquals(42, IntegerUtils.sum(new Integer[] {20, 22}));
-    assertEquals(42, IntegerUtils.sum(new Integer[][] {{20}, {20, 2}}));
-  }
-
   public void testIdentity() {
     final int[] a = new int[3];
     IntegerUtils.identity(a);

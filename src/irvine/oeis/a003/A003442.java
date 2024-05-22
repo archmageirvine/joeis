@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunction2;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
@@ -94,7 +93,7 @@ public class A003442 extends AbstractSequence {
       int[] p;
       while ((p = part.next()) != null) {
         IntegerPartition.toCountForm(p, a);
-        final int sumA = (int) IntegerUtils.sum(a);
+        final int sumA = Functions.SUM.i(a);
         final int start = (Math.max(3, sumA) + dp - 1) / dp;
         for (int m = start; m <= n; ++m) {
           if (sumA <= m) {

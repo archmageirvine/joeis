@@ -3,6 +3,7 @@ package irvine.util;
 import java.util.Arrays;
 
 import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 
@@ -142,7 +143,7 @@ public class Permutation {
    */
   public static Permutation permuter(final Z n) {
     final int[] cnts = ZUtils.digitCounts(n);
-    final int sum = (int) IntegerUtils.sum(cnts);
+    final int sum = Functions.SUM.i(cnts);
     final int[] digits = new int[sum];
     for (int k = 0, i = 0; k < cnts.length; ++k) {
       for (int j = 0; j < cnts[k]; ++j) {

@@ -11,7 +11,7 @@ import java.util.function.ToIntFunction;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.partition.FixedLengthPartition;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -92,7 +92,7 @@ public class A066572 extends Sequence1 {
   }
 
   private Z compute(final int[] sig) {
-    final int b = (int) IntegerUtils.sum(sig);
+    final int b = Functions.SUM.i(sig);
     final int c = sig.length;
     final int limit = Binomial.binomial(b + c, c + 1).intValueExact();
     final boolean hasRepeatedValue = hasRepeatedValues(sig);

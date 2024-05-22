@@ -209,30 +209,6 @@ public final class IntegerUtils {
   }
 
   /**
-   * Sum the contents of an arbitrary dimensioned primitive int or Integer array.
-   * @param structure array
-   * @return sum of the array
-   */
-  public static long sum(final Object structure) {
-    long sum = 0;
-    if (structure.getClass().isArray()) {
-      if (structure.getClass().isAssignableFrom(int[].class)) {
-        for (final int v : (int[]) structure) {
-          sum += v;
-        }
-      } else {
-        final Object[] array = (Object[]) structure;
-        for (final Object o : array) {
-          sum += sum(o);
-        }
-      }
-    } else {
-      sum += (Integer) structure;
-    }
-    return sum;
-  }
-
-  /**
    * Make the array an identity map up to entry <code>n</code>.
    * @param a array
    * @param n maximum entry

@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
@@ -48,7 +48,7 @@ public class A005272 extends Sequence2 {
     }
 
     int sum() {
-      return (int) IntegerUtils.sum(mState);
+      return Functions.SUM.i(mState);
     }
 
     // Masks tracks entries of mState that are forbidden

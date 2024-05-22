@@ -2,7 +2,7 @@ package irvine.oeis.a052;
 
 import java.util.ArrayList;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.a002.A002385;
@@ -24,7 +24,7 @@ public class A052480 extends A002385 {
 
   private Permutation permuter(final Z prime) {
     final int[] cnts = ZUtils.digitCounts(prime);
-    final int sum = (int) IntegerUtils.sum(cnts);
+    final int sum = Functions.SUM.i(cnts);
     final int[] digits = new int[sum];
     for (int k = 0, i = 0; k < cnts.length; ++k) {
       for (int j = 0; j < cnts[k]; ++j) {

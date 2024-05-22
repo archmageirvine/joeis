@@ -1,6 +1,6 @@
 package irvine.oeis.a029;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 
 /**
  * A029890 Number of odd graphical partitions.
@@ -19,6 +19,6 @@ public class A029890 extends A029889 {
 
   @Override
   protected boolean accept(final int[] rowSums) {
-    return (IntegerUtils.sum(rowSums) & 1) == 1;
+    return (Functions.SUM.l(rowSums) & 1) == 1;
   }
 }

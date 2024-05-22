@@ -1,8 +1,8 @@
 package irvine.oeis.a058;
 
+import irvine.math.function.Functions;
 import irvine.math.z.InverseEuler;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -16,7 +16,7 @@ public class A058214 extends Sequence0 {
   @Override
   public Z next() {
     mN = mN == null ? Z.ONE : mN.multiply2();
-    return ZUtils.sum(InverseEuler.inversePhi(mN));
+    return Functions.SUM.z(InverseEuler.inversePhi(mN));
   }
 }
 

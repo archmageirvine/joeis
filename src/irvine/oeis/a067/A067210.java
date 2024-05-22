@@ -8,9 +8,9 @@ import java.util.Map;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ForkJoinPool;
 
+import irvine.math.function.Functions;
 import irvine.math.partition.FixedLengthPartition;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 import irvine.util.Permutation;
 import irvine.util.string.StringUtils;
@@ -114,7 +114,7 @@ public class A067210 extends AbstractSequence {
       cnts = combineList(cnts, c, lo, k);
     }
     assert cnts.size() == 1;
-    return ZUtils.sum(cnts.values());
+    return Functions.SUM.z(cnts.values());
   }
 
   @Override

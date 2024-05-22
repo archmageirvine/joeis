@@ -2,7 +2,7 @@ package irvine.oeis.a033;
 
 import java.util.Arrays;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -39,7 +39,7 @@ public class A033178 extends AbstractSequence {
   private boolean bump(final int[] v) {
     for (int k = v.length - 1; k >= 0; --k) {
       Arrays.fill(v, k, v.length, v[k] + 1);
-      final Z sum = Z.valueOf(IntegerUtils.sum(v));
+      final Z sum = Functions.SUM.z(v);
       final Z prod = prod(v);
       final int c = prod.compareTo(sum);
       if (c == 0) {

@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -32,7 +32,7 @@ public class A056734 extends Sequence1 {
       final int[] tc = mCnts;
       mA = mA.multiply2();
       mCnts = ZUtils.digitCounts(mA, 3);
-      if (tc[mDigit] == mCnts[mDigit] && IntegerUtils.sum(tc) == IntegerUtils.sum(mCnts)) {
+      if (tc[mDigit] == mCnts[mDigit] && Functions.SUM.l(tc) == Functions.SUM.l(mCnts)) {
         return Z.valueOf(mN - 1);
       }
     }

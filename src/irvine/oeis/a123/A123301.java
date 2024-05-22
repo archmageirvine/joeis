@@ -3,7 +3,6 @@ package irvine.oeis.a123;
 import java.util.ArrayList;
 import java.util.List;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.PolynomialRingField;
@@ -86,7 +85,7 @@ public class A123301 extends AbstractSequence {
       Polynomial<Q> term = RING_Y.zero();
       while ((p = part.next()) != null) {
         IntegerPartition.toCountForm(p, j);
-        final int sum = (int) IntegerUtils.sum(j);
+        final int sum = Functions.SUM.i(j);
         Polynomial<Q> prod = RING_Y.one();
         for (int i = 1; i < j.length; ++i) {
           if (j[i] > 0) {

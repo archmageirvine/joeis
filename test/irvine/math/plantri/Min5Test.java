@@ -1,7 +1,7 @@
 package irvine.math.plantri;
 
+import irvine.math.function.Functions;
 import junit.framework.TestCase;
-import irvine.math.IntegerUtils;
 
 /**
  * Test the corresponding class.
@@ -36,7 +36,7 @@ public class Min5Test extends TestCase {
     assertEquals(12, g.mNumVertices);
     assertEquals(60, g.mNumEdges);
     assertEquals(83711, AbstractExtenderReducerTest.sumStarts(g.mEdges));
-    assertEquals(60, IntegerUtils.sum(g.mDegree));
+    assertEquals(60, Functions.SUM.l(g.mDegree));
     checkGraphConsistency(g);
   }
 }

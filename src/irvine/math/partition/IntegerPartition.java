@@ -152,7 +152,7 @@ public final class IntegerPartition {
    * @return number of standard Young tableaux
    */
   public static Z numStandardYoungTableaux(final int[] l) {
-    final Z f = Functions.FACTORIAL.z((int) IntegerUtils.sum(l));
+    final Z f = Functions.FACTORIAL.z(Functions.SUM.l(l));
     Z d = Z.ONE;
     for (int i = 0; i < l.length; ++i) {
       Z t = Z.ONE;
@@ -266,7 +266,7 @@ public final class IntegerPartition {
    * @return true iff the partition is even
    */
   public static boolean isEven(final int[] c) {
-    return (IntegerUtils.sum(c) & 1) != (c.length & 1);
+    return (Functions.SUM.l(c) & 1) != (c.length & 1);
   }
 
   /**

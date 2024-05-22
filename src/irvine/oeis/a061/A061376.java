@@ -2,8 +2,8 @@ package irvine.oeis.a061;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -19,7 +19,7 @@ public class A061376 extends Sequence1 {
     if (n <= 1 || mPrime.isPrime(n)) {
       return 0;
     }
-    return ZUtils.sum(Jaguar.factor(n).toZArray()).longValueExact();
+    return Functions.SUM.z(Jaguar.factor(n).toZArray()).longValueExact();
   }
 
   @Override

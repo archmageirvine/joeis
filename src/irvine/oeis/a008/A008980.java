@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -98,7 +98,7 @@ public class A008980 extends Sequence0 {
      * @return sum
      */
     public Z getNoOrientsSum(final int n) {
-      return LongUtils.sum(mNoOrient[n]);
+      return Functions.SUM.z(mNoOrient[n]);
     }
 
     private AllCurves(final int maxCross) {
@@ -404,7 +404,7 @@ public class A008980 extends Sequence0 {
       System.out.println("                          CLOSED CURVES                       LONG");
       System.out.println("           both        plane       circle      nothing       CURVES");
       for (int i = 0; i <= mMaxCross; ++i) {
-        final String sb = String.valueOf(i) + '\t' + sum(mR2S[i]) + '\t' + sum(mR2[i]) + '\t' + sum(mS[i]) + '\t' + sum(mNoOrient[i]) + '\t' + LongUtils.sum(mNoOrient[i]);
+        final String sb = String.valueOf(i) + '\t' + sum(mR2S[i]) + '\t' + sum(mR2[i]) + '\t' + sum(mS[i]) + '\t' + sum(mNoOrient[i]) + '\t' + Functions.SUM.z(mNoOrient[i]);
         System.out.println(sb);
       }
     }

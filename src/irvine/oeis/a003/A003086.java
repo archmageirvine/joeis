@@ -27,7 +27,7 @@ public class A003086 extends Sequence1 {
       }
     }
     s1 *= 4;
-    return even ? s0 + s1 : s0 + s1 + (int) (2 * IntegerUtils.sum(j));
+    return even ? s0 + s1 : s0 + s1 + 2 * Functions.SUM.i(j);
   }
 
   private Z product(final int[] j) {

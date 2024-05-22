@@ -2,8 +2,8 @@ package irvine.oeis.a058;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.memory.MemorySequence;
 
 /**
@@ -19,7 +19,7 @@ public class A058974 extends MemorySequence {
   }
 
   private Z sumDistrinctPrimeFactors(final int n) {
-    return ZUtils.sum(Jaguar.factor(n).toZArray());
+    return Functions.SUM.z(Jaguar.factor(n).toZArray());
   }
 
   @Override

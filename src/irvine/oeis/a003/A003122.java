@@ -1,6 +1,5 @@
 package irvine.oeis.a003;
 
-import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunction1;
 import irvine.math.MemoryFunction2;
 import irvine.math.function.Functions;
@@ -42,7 +41,7 @@ public class A003122 extends MemoryFunction2Sequence<Integer, Z> {
       final int[] a = new int[s + 1];
       while ((p = part.next()) != null) {
         IntegerPartition.toCountForm(p, a);
-        if (IntegerUtils.sum(a) == m) {
+        if (Functions.SUM.l(a) == m) {
           Z t = Functions.FACTORIAL.z(m);
           for (int k = 1; k < a.length; ++k) {
             final int mk = a[k];

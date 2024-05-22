@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 
 /**
  * Provides an object useful for representing factorizations or partial
@@ -789,7 +789,7 @@ public final class FactorSequence {
    */
   public Z sopf() {
     completeOrException();
-    return ZUtils.sum(mFactors.keySet());
+    return Functions.SUM.z(mFactors.keySet());
   }
 
   /**

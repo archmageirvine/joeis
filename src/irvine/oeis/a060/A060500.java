@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.set.IntegerPermutation;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -19,6 +19,6 @@ public class A060500 extends Sequence0 {
       return Z.ZERO;
     }
     final int[] ss = IntegerPermutation.permUnrank3R(mN).toSiteSwap();
-    return Z.valueOf(IntegerUtils.sum(ss) / ss.length);
+    return Functions.SUM.z(ss).divide(ss.length);
   }
 }

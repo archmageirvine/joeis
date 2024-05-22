@@ -2,7 +2,6 @@ package irvine.oeis.a003;
 
 import java.util.Arrays;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -18,7 +17,7 @@ public class A003316 extends Sequence1 {
   private int mN = 0;
 
   private Z h(final int[] l) {
-    final long sum = IntegerUtils.sum(l);
+    final long sum = Functions.SUM.l(l);
     if (sum > Integer.MAX_VALUE) {
       throw new UnsupportedOperationException();
     }

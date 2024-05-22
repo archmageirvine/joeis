@@ -3,9 +3,9 @@ package irvine.oeis.a060;
 import java.util.HashSet;
 
 import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -28,6 +28,6 @@ public class A060180 extends Sequence1 {
         seen.add(IntegerUtils.lcm(p));
       }
     }
-    return ZUtils.sum(seen);
+    return Functions.SUM.z(seen);
   }
 }

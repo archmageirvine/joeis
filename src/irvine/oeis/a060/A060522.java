@@ -2,8 +2,8 @@ package irvine.oeis.a060;
 
 import java.util.Arrays;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -61,6 +61,6 @@ public class A060522 extends Sequence1 {
       }
       mCounts = next;
     }
-    return ZUtils.sum(mCounts);
+    return Functions.SUM.z(mCounts);
   }
 }

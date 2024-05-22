@@ -329,30 +329,6 @@ public final class LongUtils {
     }
   }
 
-  /**
-   * Sum the contents of an arbitrary dimensioned primitive int or Integer array.
-   * @param structure array
-   * @return sum of the array
-   */
-  public static Z sum(final Object structure) {
-    Z sum = Z.ZERO;
-    if (structure.getClass().isArray()) {
-      if (structure.getClass().isAssignableFrom(long[].class)) {
-        for (final long v : (long[]) structure) {
-          sum = sum.add(v);
-        }
-      } else {
-        final Object[] array = (Object[]) structure;
-        for (final Object o : array) {
-          sum = sum.add(sum(o));
-        }
-      }
-    } else {
-      sum = sum.add((Long) structure);
-    }
-    return sum;
-  }
-
   private static final String PADDING = StringUtils.rep('0', Long.SIZE);
 
   /**

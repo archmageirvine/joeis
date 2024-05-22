@@ -1,6 +1,6 @@
 package irvine.math.plantri;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import junit.framework.TestCase;
 
 /**
@@ -15,7 +15,7 @@ public class BipartiteTest extends TestCase {
     assertEquals(6, g.mNumVertices);
     assertEquals(24, g.mNumEdges);
     assertEquals(17856, AbstractExtenderReducerTest.sumStarts(g.mEdges));
-    assertEquals(24, IntegerUtils.sum(g.mDegree));
+    assertEquals(24, Functions.SUM.l(g.mDegree));
     Min5Test.checkGraphConsistency(g);
   }
 }

@@ -1,7 +1,7 @@
 package irvine.oeis.a059;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 
 /**
  * A059726 Row sums of A059720.
@@ -13,7 +13,8 @@ public class A059726 extends A059720 {
 
   @Override
   public Z next() {
-    return ZUtils.sum(step(++mN));
+    final Z[] values = step(++mN);
+    return Functions.SUM.z(values);
   }
 }
 

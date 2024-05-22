@@ -3,12 +3,12 @@ package irvine.oeis.a008;
 import java.util.HashMap;
 import java.util.Map;
 
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 
 /**
@@ -63,7 +63,7 @@ public class A008300 extends AbstractSequence {
       }
       m = res;
     }
-    return ZUtils.sum(m.values());
+    return Functions.SUM.z(m.values());
   }
 
   @Override

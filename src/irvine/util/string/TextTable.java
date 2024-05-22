@@ -1,9 +1,9 @@
 package irvine.util.string;
 
-import irvine.math.IntegerUtils;
-
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import irvine.math.function.Functions;
 
 /**
  * A class to format a table of data using aligned columns.
@@ -154,7 +154,7 @@ public class TextTable {
 
   // Takes care to handle case of empty columns at end of table
   private long getTotalWidth() {
-    long totalWidth = IntegerUtils.sum(mColumnWidths) + mTabWidth * (mColumnWidths.length - 1L);
+    long totalWidth = Functions.SUM.l(mColumnWidths) + mTabWidth * (mColumnWidths.length - 1L);
     for (int j = mColumnWidths.length - 1; j >= 0 && mColumnWidths[j] == 0; --j) {
       totalWidth -= mTabWidth;
     }

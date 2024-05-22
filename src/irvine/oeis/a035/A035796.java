@@ -4,7 +4,6 @@ import java.util.HashSet;
 
 import irvine.factor.factor.PrimeDivision;
 import irvine.factor.util.FactorSequence;
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -21,7 +20,7 @@ public class A035796 extends A025487 {
   private final PrimeDivision mFactor = new PrimeDivision();
 
   private Z c(final int[] sig) {
-    final int s = (int) IntegerUtils.sum(sig);
+    final int s = Functions.SUM.i(sig);
     Z t = Binomial.binomial(s, sig.length).multiply(Functions.FACTORIAL.z(sig.length)).multiply(Functions.FACTORIAL.z(s));
     final HashSet<Integer> seen = new HashSet<>();
     for (final int v : sig) {

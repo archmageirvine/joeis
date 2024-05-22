@@ -1,6 +1,7 @@
 package irvine.oeis.a060;
 
 import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -14,7 +15,7 @@ public class A060178 extends Sequence1 {
   private int mN = 0;
 
   private boolean isOdd(final int[] p) {
-    return (IntegerUtils.sum(p) & 1) == (p.length & 1);
+    return (Functions.SUM.l(p) & 1) == (p.length & 1);
   }
 
   @Override

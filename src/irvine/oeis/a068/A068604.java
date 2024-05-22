@@ -8,8 +8,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
@@ -69,7 +69,7 @@ public class A068604 extends Sequence1 {
       mS = map;
     }
     if (mVerbose) {
-      StringUtils.message("Number of coefficients: " + mS.size() + " sum of coefficients " + ZUtils.sum(mS.values()));
+      StringUtils.message("Number of coefficients: " + mS.size() + " sum of coefficients " + Functions.SUM.z(mS.values()));
     }
     return Z.valueOf(new HashSet<>(mS.values()).size());
   }

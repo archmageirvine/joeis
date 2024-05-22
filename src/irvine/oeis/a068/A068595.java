@@ -2,7 +2,7 @@ package irvine.oeis.a068;
 
 import java.util.Arrays;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -39,7 +39,7 @@ public class A068595 extends Sequence1 {
     final int[] c = new int[v.length + 1];
     Arrays.fill(v, 1);
     do {
-      if (IntegerUtils.sum(v) % 3 == 0) {
+      if (Functions.SUM.l(v) % 3 == 0) {
         IntegerPartition.toCountForm(v, c);
         sum = sum.add(Binomial.multinomial(mN, c));
       }

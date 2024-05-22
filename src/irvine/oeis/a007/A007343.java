@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.util.Pair;
@@ -95,7 +95,7 @@ public class A007343 extends MemoryFunction2Sequence<Integer, Integer> {
     getPartitions(parts, new int[0], maxPart, degree);
     final long[] sums = new long[parts.size()];
     for (int k = 0; k < sums.length; ++k) {
-      sums[k] = IntegerUtils.sum(parts.get(k));
+      sums[k] = Functions.SUM.l(parts.get(k));
     }
     int count = 0;
     for (int k = 0; k < sums.length; ++k) {

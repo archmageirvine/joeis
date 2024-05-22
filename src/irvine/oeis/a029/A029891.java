@@ -1,6 +1,6 @@
 package irvine.oeis.a029;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 
 /**
  * A029891 Number of even graphical partitions.
@@ -19,6 +19,6 @@ public class A029891 extends A029889 {
 
   @Override
   protected boolean accept(final int[] rowSums) {
-    return (IntegerUtils.sum(rowSums) & 1) == 0;
+    return (Functions.SUM.l(rowSums) & 1) == 0;
   }
 }

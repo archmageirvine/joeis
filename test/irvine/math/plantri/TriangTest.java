@@ -1,6 +1,6 @@
 package irvine.math.plantri;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import junit.framework.TestCase;
 
 /**
@@ -15,7 +15,7 @@ public class TriangTest extends TestCase {
     assertEquals(3, g.mNumVertices);
     assertEquals(6, g.mNumEdges);
     assertEquals(24198, AbstractExtenderReducerTest.sumStarts(g.mEdges));
-    assertEquals(6, IntegerUtils.sum(g.mDegree));
+    assertEquals(6, Functions.SUM.l(g.mDegree));
     Min5Test.checkGraphConsistency(g);
   }
 }

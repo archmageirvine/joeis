@@ -1,7 +1,7 @@
 package irvine.oeis.a050;
 
 import irvine.math.LongUtils;
-import irvine.math.group.IntegersModMul;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,6 +18,6 @@ public class A050978 extends Sequence1 {
     while (LongUtils.gcd(++mN, 6) > 1) {
       // do nothing
     }
-    return new IntegersModMul(mN).order(Z.SIX);
+    return Functions.ORDER.z(mN, Z.SIX);
   }
 }

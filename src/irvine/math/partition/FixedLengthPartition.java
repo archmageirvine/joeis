@@ -1,6 +1,6 @@
 package irvine.math.partition;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 
 /**
  * Generated fixed length partitions.
@@ -30,7 +30,7 @@ public final class FixedLengthPartition {
     mLo = lo;
     mHi = hi;
     if (parts >= 2) {
-      mI = IntegerUtils.max(lo, (n + parts - 1) / parts, n - hi * (parts - 1));
+      mI = Functions.MAX.i(lo, (n + parts - 1) / parts, n - hi * (parts - 1));
       mMax = Math.min(hi, n - (parts - 1) * lo);
     } else {
       mMax = 0;

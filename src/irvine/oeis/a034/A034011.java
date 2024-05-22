@@ -2,7 +2,7 @@ package irvine.oeis.a034;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
-import irvine.math.group.IntegersModMul;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -29,7 +29,7 @@ public class A034011 extends Sequence1 {
   }
 
   private boolean isEvenOrder(final long l, final long p) {
-    return new IntegersModMul(p).order(Z.valueOf(l)).isEven();
+    return Functions.ORDER.z(p, l).isEven();
   }
 
   private boolean isOk(final long a) {

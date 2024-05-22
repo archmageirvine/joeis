@@ -1,7 +1,7 @@
 package irvine.oeis.a054;
 
 import irvine.factor.prime.Fast;
-import irvine.math.group.IntegersModMul;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -26,7 +26,7 @@ public class A054639 extends Sequence1 {
     if (!mPrime.isPrime(p)) {
       return false;
     }
-    final long r = new IntegersModMul(p).order(Z.TWO).longValueExact();
+    final long r = Functions.ORDER.l(p, Z.TWO);
     return m == 3 && r == n || r == 2 * n;
   }
 

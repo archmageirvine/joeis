@@ -4,7 +4,7 @@ import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
-import irvine.math.group.IntegersModMul;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -35,7 +35,7 @@ public class A066364 extends Sequence1 {
     }
     while (true) {
       mP = mPrime.nextPrime(mP);
-      final Z[] v = Jaguar.factor(new IntegersModMul(mP).order(Z.TEN)).toZArray();
+      final Z[] v = Jaguar.factor(Functions.ORDER.z(mP, Z.TEN)).toZArray();
       if (is(v)) {
         final Z p = Z.valueOf(mP);
         mA.add(p);

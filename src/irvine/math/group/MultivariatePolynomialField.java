@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Map;
 
-import irvine.math.IntegerUtils;
 import irvine.math.api.Field;
+import irvine.math.function.Functions;
 import irvine.math.polynomial.MultivariatePolynomial;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
@@ -233,7 +233,7 @@ public class MultivariatePolynomialField<E> extends AbstractField<MultivariatePo
     final RingFactorial<E> f = RingFactorial.instance(mCoefficientField);
     MultivariatePolynomial<E> s = one();
     if (!zero().equals(p)) {
-      final int lim = IntegerUtils.max(n);
+      final int lim = Functions.MAX.i(n);
       for (int k = 1; k <= lim; ++k) {
         s = add(s, divide(pow(p, k, n), f.factorial(k)));
       }
@@ -250,7 +250,7 @@ public class MultivariatePolynomialField<E> extends AbstractField<MultivariatePo
   public MultivariatePolynomial<E> log1p(final MultivariatePolynomial<E> p, final int[] n) {
     MultivariatePolynomial<E> s = zero();
     if (!zero().equals(p)) {
-      final int lim = IntegerUtils.max(n);
+      final int lim = Functions.MAX.i(n);
       E kk = mCoefficientField.one();
       for (int k = 1; k <= lim; ++k, kk = mCoefficientField.add(kk, mCoefficientField.one())) {
         s = signedAdd((k & 1) == 1, s, divide(pow(p, k, n), kk));

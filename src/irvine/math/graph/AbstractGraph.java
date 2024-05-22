@@ -6,6 +6,7 @@ import java.util.Collection;
 import java.util.Collections;
 
 import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 
 /**
  * Implementation of common graph functions.
@@ -376,7 +377,7 @@ public abstract class AbstractGraph implements Graph {
           return -1;
         }
       }
-      final int m = IntegerUtils.max(dv);
+      final int m = Functions.MAX.i(dv);
       diameter = Math.max(diameter, m);
     }
     return diameter;

@@ -347,7 +347,7 @@ public final class GraphUtils {
       c[pa[i]] += (d[el[i]] + 1) * (p - 2 - d[el[i]]);
       c[el[i]] += (p - 1 - d[el[i]]) * d[el[i]];
     }
-    return IntegerUtils.max(c) / 2;
+    return Functions.MAX.i(c) / 2;
   }
 
   /**

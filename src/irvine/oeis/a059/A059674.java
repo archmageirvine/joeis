@@ -1,6 +1,7 @@
 package irvine.oeis.a059;
 
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
@@ -18,6 +19,6 @@ public class A059674 extends UpperLeftTriangle {
 
   @Override
   public Z matrixElement(final int n, final int k) {
-    return Binomial.binomial(LongUtils.max(n, k), LongUtils.min(n, k));
+    return Binomial.binomial(Functions.MAX.l(new long[] {n, k}), LongUtils.min(n, k));
   }
 }

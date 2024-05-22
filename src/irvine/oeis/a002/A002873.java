@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import java.util.Arrays;
 import java.util.HashSet;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -82,7 +82,7 @@ public class A002873 extends Sequence0 {
     } while (stepPartition(s, m, n, mN));
 
     //System.out.println(Arrays.toString(cnt));
-    final long best = LongUtils.max(cnt);
+    final long best = Functions.MAX.l(cnt);
     return Z.valueOf(best);
   }
 

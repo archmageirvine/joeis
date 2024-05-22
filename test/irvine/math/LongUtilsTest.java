@@ -384,10 +384,10 @@ public class LongUtilsTest extends TestCase {
   }
 
   public void testMax() {
-    assertEquals(10, LongUtils.max(10, 1));
-    assertEquals(10, LongUtils.max(10, 10));
-    assertEquals(10, LongUtils.max(1, 10));
-    assertEquals(-1, LongUtils.max(-1, -10, -20, -18));
+    assertEquals(10, Functions.MAX.l(new long[] {10, 1}));
+    assertEquals(10, Functions.MAX.l(new long[] {10, 10}));
+    assertEquals(10, Functions.MAX.l(new long[] {1, 10}));
+    assertEquals(-1, Functions.MAX.l(new long[] {-1, -10, -20, -18}));
   }
 
   public void testToLongFromString() {

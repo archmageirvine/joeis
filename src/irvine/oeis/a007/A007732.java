@@ -1,5 +1,6 @@
 package irvine.oeis.a007;
 
+import irvine.math.function.Functions;
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
@@ -34,7 +35,7 @@ public class A007732 extends Sequence1 implements DirectSequence {
     while (n % 5 == 0) {
       n /= 5;
     }
-    return n == 1 ? Z.ONE : new IntegersModMul(n).order(Z.TEN);
+    return Functions.ORDER.z(n, Z.TEN);
   }
 
   @Override

@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -35,7 +35,7 @@ public class A364242 extends Sequence1 {
       final Map.Entry<Z, long[]> e = state.pollFirstEntry();
       final Z m = e.getKey();
       final long[] v = e.getValue();
-      final long nextPrime = mPrime.nextPrime(LongUtils.max(v));
+      final long nextPrime = mPrime.nextPrime(Functions.MAX.l(v));
       final Z nextValue = m.multiply(nextPrime);
       for (int k = 0; k < v.length; ++k) {
         final long oldPrime = v[k];

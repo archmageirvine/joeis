@@ -10,7 +10,12 @@ import irvine.oeis.a014.A014486;
  */
 public class A057509 extends A014486 {
 
-  private static Z rotateBottomBranchesLeft(final Z n) {
+  /**
+   * Rotate bottom branches left.
+   * @param n tree
+   * @return rotated tree
+   */
+  public static Z rotateBottomBranchesLeft(final Z n) {
     return SExpression.binexp2pars(n).rotateLeft().toZ();
   }
 

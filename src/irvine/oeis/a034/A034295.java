@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
@@ -26,7 +27,7 @@ public class A034295 extends Sequence1 {
   private int mN = 0;
 
   private Set<Polynomial<Z>> computeB(final long n, final long[] l) {
-    if (LongUtils.max(l) > n) {
+    if (Functions.MAX.l(l) > n) {
       return Collections.emptySet();
     } else if (n == 0) {
       return Collections.singleton(RING.zero());

@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Random;
 
+import irvine.math.function.Functions;
 import junit.framework.TestCase;
 
 /**
@@ -12,10 +13,10 @@ import junit.framework.TestCase;
 public class ZUtilsTest extends TestCase {
 
   public void testMax() {
-    assertEquals(Z.ONE, ZUtils.max(Z.ZERO, Z.ZERO, Z.NEG_ONE, Z.ONE));
-    assertEquals(Z.ONE, ZUtils.max(Z.ONE, Z.ZERO, Z.NEG_ONE, Z.ONE));
-    assertEquals(Z.ONE, ZUtils.max(Z.ONE));
-    assertNull(ZUtils.max());
+    assertEquals(Z.ONE, Functions.MAX.z(Z.ZERO, Z.ZERO, Z.NEG_ONE, Z.ONE));
+    assertEquals(Z.ONE, Functions.MAX.z(Z.ONE, Z.ZERO, Z.NEG_ONE, Z.ONE));
+    assertEquals(Z.ONE, Functions.MAX.z(Z.ONE));
+    assertNull(Functions.MAX.z(new Z[] {}));
   }
 
   public void testMin() {

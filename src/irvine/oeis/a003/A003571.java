@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.math.group.IntegersModMul;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -15,6 +15,6 @@ public class A003571 extends Sequence0 {
   @Override
   public Z next() {
     mN += 3;
-    return mN == 1 ? Z.ONE : new IntegersModMul(mN).order(Z.THREE);
+    return Functions.ORDER.z(mN, Z.THREE);
   }
 }

@@ -354,21 +354,6 @@ public final class LongUtils {
   }
 
   /**
-   * Maximum of an array of values.
-   * @param values the possible values
-   * @return the maximum
-   */
-  public static long max(final long... values) {
-    long m = Long.MIN_VALUE;
-    for (final long v : values) {
-      if (v > m) {
-        m = v;
-      }
-    }
-    return m;
-  }
-
-  /**
    * Minimum of an array of values.
    * @param values the possible values
    * @return the minimum

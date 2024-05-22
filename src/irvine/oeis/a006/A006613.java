@@ -1,6 +1,5 @@
 package irvine.oeis.a006;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
@@ -121,7 +120,7 @@ public class A006613 extends AbstractSequence {
     while ((p = part.next()) != null) {
       // Only consider partitions with n parts and each part <= n
       // (i.e. fitting within n x n matrix)
-      if (p.length == n && IntegerUtils.max(p) <= cols()) {
+      if (p.length == n && Functions.MAX.i(p) <= cols()) {
         //System.out.println("Partition: " + Arrays.toString(p));
         if (checkMin(p, j())) {
           //System.out.println("Accepted for matrix generation");

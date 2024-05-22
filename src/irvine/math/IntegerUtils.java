@@ -179,21 +179,6 @@ public final class IntegerUtils {
   }
 
   /**
-   * Maximum of an array of values.
-   * @param values the possible values
-   * @return the maximum
-   */
-  public static int max(final int... values) {
-    int m = Integer.MIN_VALUE;
-    for (final int v : values) {
-      if (v > m) {
-        m = v;
-      }
-    }
-    return m;
-  }
-
-  /**
    * Return a string representation of a two-dimensional integer array.
    * @param array array to get in string form
    * @return string representation
@@ -505,6 +490,19 @@ public final class IntegerUtils {
       // do nothing
     }
     return m;
+  }
+
+  /**
+   * Convert an array of <code>int</code> to an array of <code>long</code>.
+   * @param a array
+   * @return converted array
+   */
+  public static long[] toLong(final int... a) {
+    final long[] res = new long[a.length];
+    for (int k = 0; k < res.length; ++k) {
+      res[k] = a[k];
+    }
+    return res;
   }
 
 }

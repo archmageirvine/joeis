@@ -2,7 +2,7 @@ package irvine.oeis.a294;
 
 import java.util.Arrays;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
@@ -22,7 +22,7 @@ public class A294525 extends Sequence1 implements GraphProcessor {
   protected long[] mCount = null;
 
   private int max(final Graph graph, final int v) {
-    return IntegerUtils.max(graph.distanceVector(v));
+    return Functions.MAX.i(graph.distanceVector(v));
   }
 
   @Override

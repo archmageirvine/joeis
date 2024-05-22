@@ -6,7 +6,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
@@ -48,7 +47,7 @@ public class ChjTransformSequence extends Sequence1 {
       final int k = p.length; // number of parts
       IntegerPartition.toCountForm(p, q);
       Z t2 = Z.ZERO;
-      for (int d = 1; d <= IntegerUtils.max(q); ++d) {
+      for (int d = 1; d <= Functions.MAX.i(q); ++d) {
         if (isDivisor(q, d)) {
           final int mu = Functions.MOBIUS.i((long) d);
           if (mu != 0) {

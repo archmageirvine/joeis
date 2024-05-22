@@ -104,8 +104,11 @@ public final class Functions {
   /** Next power of two larger than the given number. */
   public static final Function1 NEXT_POWER_OF_2 = new NextPowerOf2(); // =A062383
 
-  /** Reverse the digits of a number. */
+  // Developer note: SIGMA must be initialized after SIGMA1 and SIGMA0
+  /** Generalized sum of divisors function. */
   public static final Function2 SIGMA = new Sigma(); // =A000005(0, =A000203(1,
+  /** Multiplicative order in <code>Z_base</code>. */
+  public static final Function2 ORDER = new MultiplicativeOrder();
   /** Reverse the digits of a number. */
   public static final Function2 REVERSE = new Reverse(); // =A004086(10, = A305989(2,
   /** Number of digits in a number. */
@@ -138,6 +141,10 @@ public final class Functions {
   public static final Function2 MULTIFACTORIAL = new Multifactorial(); // =A006882(2, =A007661(3, =A007662(4, =A085157(5, =A085158(6,
   /** Number of points in a hypersphere of given radius in a given number of dimensions. */
   public static final Function2 HYPERSPHERE_POINTS = new HyperspherePoints();
+
+  /** Maximum of values. */
+  public static final FunctionN MAX = new Max();
+
 
   /**
    * Get a function from its name.

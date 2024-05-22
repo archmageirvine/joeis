@@ -2,7 +2,7 @@ package irvine.oeis.a006;
 
 import java.util.Arrays;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -23,7 +23,7 @@ public class A006920 extends Sequence1 {
       mCounts = new int[] {1};
       return Z.ONE;
     }
-    final int max = IntegerUtils.max(mCounts);
+    final int max = Functions.MAX.i(mCounts);
     final int[] newCounts = Arrays.copyOf(mCounts, max);
     for (final int v : mCounts) {
       if (v > 0) {

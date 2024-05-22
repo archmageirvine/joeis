@@ -1,7 +1,7 @@
 package irvine.oeis.a065;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -24,7 +24,7 @@ public class A065843 extends Sequence1 {
     for (long p = 1L << (mN - 1); p < lim; p = mPrime.nextPrime(p)) {
       ++cnts[Long.bitCount(p)];
     }
-    return Z.valueOf(LongUtils.max(cnts));
+    return Z.valueOf(Functions.MAX.l(cnts));
   }
 }
 

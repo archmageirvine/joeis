@@ -324,39 +324,6 @@ public final class ZUtils {
   }
 
   /**
-   * Return the maximum value in a collection.
-   * @param s collection
-   * @return maximum value or null if the collection is empty
-   */
-  public static Z max(final Collection<Z> s) {
-    Z m = null;
-    for (final Z z : s) {
-      if (m == null || z.compareTo(m) > 0) {
-        m = z;
-      }
-    }
-    return m;
-  }
-
-  /**
-   * Return the maximum value if an array.
-   * @param v values
-   * @return maximum
-   */
-  public static Z max(final Z... v) {
-    if (v == null || v.length == 0) {
-      return null;
-    }
-    Z m = v[0];
-    for (int k = 1; k < v.length; ++k) {
-      if (v[k].compareTo(m) > 0) {
-        m = v[k];
-      }
-    }
-    return m;
-  }
-
-  /**
    * Return the minimum value if an array.
    * @param v values
    * @return minimum

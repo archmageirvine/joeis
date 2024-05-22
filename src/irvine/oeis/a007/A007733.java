@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.math.group.IntegersModMul;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
@@ -23,7 +23,7 @@ public class A007733 extends Sequence1 implements DirectSequence {
     while ((n & 1) == 0) {
       n >>>= 1;
     }
-    return n == 1 ? Z.ONE : new IntegersModMul(n).order(Z.TWO);
+    return Functions.ORDER.z(n, Z.TWO);
   }
 
   @Override
@@ -32,6 +32,6 @@ public class A007733 extends Sequence1 implements DirectSequence {
     while ((n & 1) == 0) {
       n >>>= 1;
     }
-    return n == 1 ? Z.ONE : new IntegersModMul(n).order(Z.TWO);
+    return Functions.ORDER.z(n, Z.TWO);
   }
 }

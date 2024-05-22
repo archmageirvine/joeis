@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -63,7 +63,7 @@ public class A034880 extends Sequence1 {
     final IntegerPartition part = new IntegerPartition(n);
     int[] p;
     while ((p = part.next()) != null) {
-      if (p.length >= minNumParts && IntegerUtils.max(p) <= maxPart) {
+      if (p.length >= minNumParts && Functions.MAX.i(p) <= maxPart) {
         partitions.add(Arrays.copyOf(p, p.length));
       }
     }

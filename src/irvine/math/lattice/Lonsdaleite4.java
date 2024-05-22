@@ -2,7 +2,7 @@ package irvine.math.lattice;
 
 import java.util.HashSet;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 
 /**
  * Four-dimensional londsdaleite.
@@ -51,7 +51,7 @@ class Lonsdaleite4 extends Z4Lattice {
     final long x = Math.abs(ordinate(point, 1));
     final long y = Math.abs(ordinate(point, 2));
     final long z = Math.abs(ordinate(point, 3));
-    return LongUtils.max(t, x / 2, y / 2, z / 2);
+    return Functions.MAX.l(t, x / 2, y / 2, z / 2);
   }
 
   public static void main(final String... args) {

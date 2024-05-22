@@ -15,8 +15,8 @@ class Sigma extends AbstractFunction2 {
   }
 
   @Override
-  public Z z(final long base, Z n) {
-    // These special cases handled here because non-factorization strategy sometimes used
+  public Z z(final long base, final Z n) {
+    // These special cases handled here because a non-factorization strategy sometimes used
     if (base == 0) {
       return Functions.SIGMA0.z(n);
     } else if (base == 1) {
@@ -27,8 +27,8 @@ class Sigma extends AbstractFunction2 {
   }
 
   @Override
-  public long l(final long base, long n) {
-    // These special cases handled here because non-factorization strategy sometimes used
+  public long l(final long base, final long n) {
+    // These special cases handled here because a non-factorization strategy sometimes used
     if (base == 0) {
       return Functions.SIGMA0.l(n);
     } else if (base == 1) {

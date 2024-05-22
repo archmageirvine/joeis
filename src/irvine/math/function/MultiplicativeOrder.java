@@ -15,7 +15,7 @@ class MultiplicativeOrder extends AbstractFunction2 {
   }
 
   @Override
-  public Z z(final long base, Z n) {
+  public Z z(final long base, final Z n) {
     return base == 1 ? Z.ONE : new IntegersModMul(base).order(n);
   }
 }

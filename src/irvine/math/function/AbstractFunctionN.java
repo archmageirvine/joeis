@@ -25,12 +25,12 @@ public abstract class AbstractFunctionN implements FunctionN {
 
   @Override
   public Z z(final long... values) {
-    return z(ZUtils.toZ(values));
+    return Z.valueOf(l(values));
   }
 
   @Override
   public Z z(final int... values) {
-    return z(IntegerUtils.toLong(values));
+    return Z.valueOf(i(values));
   }
 
   @Override

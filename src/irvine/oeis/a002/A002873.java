@@ -82,8 +82,6 @@ public class A002873 extends Sequence0 {
     } while (stepPartition(s, m, n, mN));
 
     //System.out.println(Arrays.toString(cnt));
-    final long best = Functions.MAX.l(cnt);
-    return Z.valueOf(best);
+    return Functions.MAX.z(cnt);
   }
-
 }

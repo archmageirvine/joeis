@@ -24,7 +24,7 @@ public class A065843 extends Sequence1 {
     for (long p = 1L << (mN - 1); p < lim; p = mPrime.nextPrime(p)) {
       ++cnts[Long.bitCount(p)];
     }
-    return Z.valueOf(Functions.MAX.l(cnts));
+    return Functions.MAX.z(cnts);
   }
 }
 

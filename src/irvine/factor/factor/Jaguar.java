@@ -90,6 +90,7 @@ public final class Jaguar {
       return res;
     }
     CHEETAH.factor(fs);
+    TRIAL.factor(fs);
     if (!fs.isComplete()) {
       if (maxBitLength(fs) <= TILLMAN_CUTOFF_BITS) {
         TILLMAN.factor(fs);

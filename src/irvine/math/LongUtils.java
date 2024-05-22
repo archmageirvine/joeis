@@ -353,21 +353,6 @@ public final class LongUtils {
     return sum;
   }
 
-  /**
-   * Minimum of an array of values.
-   * @param values the possible values
-   * @return the minimum
-   */
-  public static long min(final long... values) {
-    long m = Long.MAX_VALUE;
-    for (final long v : values) {
-      if (v < m) {
-        m = v;
-      }
-    }
-    return m;
-  }
-
   private static final String PADDING = StringUtils.rep('0', Long.SIZE);
 
   /**

@@ -1,7 +1,6 @@
 package irvine.math.z;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Random;
 
 import irvine.math.function.Functions;
@@ -17,20 +16,6 @@ public class ZUtilsTest extends TestCase {
     assertEquals(Z.ONE, Functions.MAX.z(Z.ONE, Z.ZERO, Z.NEG_ONE, Z.ONE));
     assertEquals(Z.ONE, Functions.MAX.z(Z.ONE));
     assertNull(Functions.MAX.z(new Z[] {}));
-  }
-
-  public void testMin() {
-    assertEquals(Z.ZERO, ZUtils.min(Z.ZERO, Z.ZERO, Z.TWO, Z.ONE));
-    assertEquals(Z.ONE, ZUtils.min(Z.TWO, Z.TWO, Z.TWO, Z.ONE));
-    assertEquals(Z.ONE, ZUtils.min(Z.ONE));
-    assertNull(ZUtils.min());
-  }
-
-  public void testMinCollection() {
-    assertNull(ZUtils.min(Collections.emptyList()));
-    assertEquals(Z.ONE, ZUtils.min(Collections.singleton(Z.ONE)));
-    assertEquals(Z.ONE, ZUtils.min(Arrays.asList(Z.ONE, Z.TWO)));
-    assertEquals(Z.ONE, ZUtils.min(Arrays.asList(Z.TWO, Z.FIVE, Z.ONE)));
   }
 
   public void testOrd() {

@@ -142,6 +142,8 @@ public final class Functions {
   /** Number of points in a hypersphere of given radius in a given number of dimensions. */
   public static final Function2 HYPERSPHERE_POINTS = new HyperspherePoints();
 
+  /** Minium of values. */
+  public static final FunctionN MIN = new Min();
   /** Maximum of values. */
   public static final FunctionN MAX = new Max();
 

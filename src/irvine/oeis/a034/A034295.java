@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
@@ -32,7 +31,7 @@ public class A034295 extends Sequence1 {
     } else if (n == 0) {
       return Collections.singleton(RING.zero());
     } else {
-      final long t = LongUtils.min(l);
+      final long t = Functions.MIN.l(l);
       if (t > 0) {
         final long[] tl = new long[l.length];
         for (int k = 0; k < l.length; ++k) {

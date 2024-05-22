@@ -5,9 +5,9 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Set;
 
+import irvine.math.function.Functions;
 import irvine.math.z.InverseEuler;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -20,7 +20,7 @@ public class A002181 extends Sequence1 {
   private Z mN = null;
 
   protected Z select(final Collection<Z> c) {
-    return ZUtils.min(c);
+    return Functions.MIN.z(c);
   }
 
   @Override

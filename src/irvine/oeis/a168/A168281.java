@@ -1,6 +1,5 @@
 package irvine.oeis.a168;
 
-import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
@@ -18,6 +17,6 @@ public class A168281 extends Triangle {
 
   @Override
   public Z compute(final int n, final int k) {
-    return Z.valueOf(LongUtils.min(n - k + 1, k + 1)).square().multiply2();
+    return Z.valueOf(Integer.min(n - k + 1, k + 1)).square().multiply2();
   }
 }

@@ -309,39 +309,6 @@ public final class ZUtils {
   }
 
   /**
-   * Return the minimum value in a collection.
-   * @param s collection
-   * @return minimum value or null if the collection is empty
-   */
-  public static Z min(final Collection<Z> s) {
-    Z m = null;
-    for (final Z z : s) {
-      if (m == null || z.compareTo(m) < 0) {
-        m = z;
-      }
-    }
-    return m;
-  }
-
-  /**
-   * Return the minimum value if an array.
-   * @param v values
-   * @return minimum
-   */
-  public static Z min(final Z... v) {
-    if (v == null || v.length == 0) {
-      return null;
-    }
-    Z m = v[0];
-    for (int k = 1; k < v.length; ++k) {
-      if (v[k].compareTo(m) < 0) {
-        m = v[k];
-      }
-    }
-    return m;
-  }
-
-  /**
    * Read numbers from a stream into an array.  Empty lines or lines starting
    * with <code>#</code> are ignored. Behaviour on out of range numbers is
    * undefined.

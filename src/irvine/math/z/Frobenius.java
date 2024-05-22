@@ -3,7 +3,7 @@ package irvine.math.z;
 import java.util.ArrayList;
 import java.util.List;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
@@ -97,7 +97,7 @@ public final class Frobenius {
     }
     // General solver
     final long[] x = ZUtils.toLong(a);
-    final long min = LongUtils.min(x);
+    final long min = Functions.MIN.l(x);
     final LongDynamicBooleanArray seen = new LongDynamicBooleanArray();
     seen.set(0);
     long m = -1;

@@ -3,8 +3,8 @@ package irvine.oeis.a061;
 import java.util.HashSet;
 import java.util.Set;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
@@ -17,7 +17,7 @@ public class A061497 extends Sequence1 {
   private long mN = 0;
 
   protected Z select(final Set<Z> set) {
-    return ZUtils.product(set);
+    return Functions.PRODUCT.z(set);
   }
 
   @Override

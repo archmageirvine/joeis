@@ -392,21 +392,6 @@ public final class IntegerUtils {
   }
 
   /**
-   * Return the product of the supplied values.
-   * @param a array
-   * @return product
-   */
-  public static Z product(final int... a) {
-    Z prod = Z.ONE;
-    if (a != null) {
-      for (final int b : a) {
-        prod = prod.multiply(b);
-      }
-    }
-    return prod;
-  }
-
-  /**
    * Convert a collection to a primitive array.
    * @param c collection
    * @return long array

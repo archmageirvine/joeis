@@ -7,6 +7,7 @@ import java.util.List;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
@@ -35,7 +36,7 @@ public class A068142 extends Sequence0 {
     }
     final Z a = lst.get(0);
     final List<Z> rest = lst.subList(1, lst.size());
-    final Z m = ZUtils.product(rest);
+    final Z m = Functions.PRODUCT.z(rest);
     final List<Z> v = pm(rest);
     final List<Z> res = new ArrayList<>();
     final Z[] mods = {a, m};

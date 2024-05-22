@@ -1,6 +1,6 @@
 package irvine.oeis.a067;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -14,7 +14,7 @@ public class A067554 extends Sequence0 {
   private int mN = -1;
 
   private boolean is(final int[] p) {
-    Z prod = IntegerUtils.product(p);
+    Z prod = Functions.PRODUCT.z(p);
     while (!Z.ONE.equals(prod)) {
       if (prod.mod(mN) != 0) {
         return false;

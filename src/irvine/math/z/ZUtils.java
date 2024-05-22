@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 import java.util.Random;
 
@@ -517,38 +516,6 @@ public final class ZUtils {
       }
     }
     return true;
-  }
-
-  /**
-   * Return the product of the values.
-   * @param values numbers to multiply
-   * @return product
-   */
-  public static Z product(final Collection<Z> values) {
-    Z prod = Z.ONE;
-    for (final Z v : values) {
-      prod = prod.multiply(v);
-      if (prod.isZero()) {
-        return Z.ZERO;
-      }
-    }
-    return prod;
-  }
-
-  /**
-   * Return the product of the values
-   * @param values numbers to multiply
-   * @return product
-   */
-  public static Z product(final Z... values) {
-    Z prod = Z.ONE;
-    for (final Z v : values) {
-      prod = prod.multiply(v);
-      if (prod.isZero()) {
-        return Z.ZERO;
-      }
-    }
-    return prod;
   }
 
   /**

@@ -2,8 +2,8 @@ package irvine.oeis.a061;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -29,7 +29,7 @@ public class A061592 extends Sequence1 {
     }
     long m = mN;
     while (true) {
-      final Z dp = ZUtils.product(Jaguar.factor(m).divisors());
+      final Z dp = Functions.PRODUCT.z(Jaguar.factor(m).divisors());
       dp.root(mN);
       if (dp.auxiliary() == 1) {
         return Z.valueOf(m);

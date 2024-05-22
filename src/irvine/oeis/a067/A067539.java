@@ -1,6 +1,6 @@
 package irvine.oeis.a067;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -14,7 +14,7 @@ public class A067539 extends Sequence1 {
   private int mN = 0;
 
   private boolean isGeometric(final int[] p) {
-    return IntegerUtils.product(p).root(p.length).auxiliary() == 1;
+    return Functions.PRODUCT.z(p).root(p.length).auxiliary() == 1;
   }
 
   @Override

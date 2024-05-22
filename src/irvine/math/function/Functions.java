@@ -148,6 +148,8 @@ public final class Functions {
   public static final FunctionN MAX = new Max();
   /** Sum of the values. */
   public static final FunctionN SUM = new Sum();
+  /** Product of the values. */
+  public static final FunctionN PRODUCT = new Product();
 
 
   /**

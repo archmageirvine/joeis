@@ -17,7 +17,7 @@ public class A019285 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (Functions.SIGMA.z(Jaguar.factor(mN).sigma()).equals(mN.shiftLeft(3))) {
+      if (Functions.SIGMA1.z(Jaguar.factor(mN).sigma()).equals(mN.shiftLeft(3))) {
         return mN;
       }
     }

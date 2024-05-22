@@ -17,8 +17,8 @@ public class A067171 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z s = mS;
-      mS = Functions.SIGMA.z(++mN + 1);
-      if (s.add(mS).equals(Functions.SIGMA.z(2 * mN + 1))) {
+      mS = Functions.SIGMA1.z(++mN + 1);
+      if (s.add(mS).equals(Functions.SIGMA1.z(2 * mN + 1))) {
         return Z.valueOf(mN);
       }
     }

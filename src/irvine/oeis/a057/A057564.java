@@ -20,9 +20,9 @@ public class A057564 extends Sequence1 {
       final FactorSequence fs = Jaguar.factor(++mN);
       if (Functions.PHI.z(fs.sigma()).equals(fs.phi().multiply2())) {
         final FactorSequence fsp = Jaguar.factor(mN + 2);
-        if (fsp.sigma().equals(Functions.SIGMA.z(fsp.phi()).multiply2())) {
+        if (fsp.sigma().equals(Functions.SIGMA1.z(fsp.phi()).multiply2())) {
           final FactorSequence fsm = Jaguar.factor(mN - 2);
-          if (fsm.sigma().equals(Functions.SIGMA.z(fsm.phi()).multiply2())) {
+          if (fsm.sigma().equals(Functions.SIGMA1.z(fsm.phi()).multiply2())) {
             return Z.valueOf(mN);
           }
         }

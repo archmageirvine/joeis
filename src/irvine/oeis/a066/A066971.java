@@ -12,6 +12,6 @@ import irvine.oeis.a051.A051027;
 public class A066971 extends A051027 {
   @Override
   public Z next() {
-    return Functions.SIGMA.z(super.next());
+    return Functions.SIGMA1.z(super.next());
   }
 }

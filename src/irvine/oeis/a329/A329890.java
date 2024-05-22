@@ -20,6 +20,6 @@ public class A329890 extends AbstractSequence {
 
   @Override
   public Z next() {
-    return (++mN == 1) ? Z.ONE : Functions.SIGMA.z(Z.ONE.shiftLeft(mN).subtract(1)).subtract(Functions.SIGMA.z(Z.ONE.shiftLeft(mN - 1).subtract(1)));
+    return (++mN == 1) ? Z.ONE : Functions.SIGMA1.z(Z.ONE.shiftLeft(mN).subtract(1)).subtract(Functions.SIGMA1.z(Z.ONE.shiftLeft(mN - 1).subtract(1)));
   }
 }

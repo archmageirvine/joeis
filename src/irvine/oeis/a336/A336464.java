@@ -16,8 +16,8 @@ public class A336464 extends FilterLambdaSequence {
   public A336464() {
     super(1, 1, k -> {
       final A335915 seq = new A335915();
-      final Z sig = Functions.SIGMA.z(k);
-      final Z sig2 = Functions.SIGMA.z(sig);
+      final Z sig = Functions.SIGMA1.z(k);
+      final Z sig2 = Functions.SIGMA1.z(sig);
       return seq.a(k).equals(seq.a(sig)) && seq.a(sig).equals(seq.a(sig2));
     });
   }

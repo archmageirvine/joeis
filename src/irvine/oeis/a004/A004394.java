@@ -17,7 +17,7 @@ public class A004394 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Z sigma = Functions.SIGMA.z(++mN);
+      final Z sigma = Functions.SIGMA1.z(++mN);
       if (sigma.multiply(mBestN).compareTo(mBestSigma.multiply(mN)) > 0) {
         mBestN = mN;
         mBestSigma = sigma;

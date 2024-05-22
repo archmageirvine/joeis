@@ -15,8 +15,8 @@ public class A074754 extends LambdaSequence {
   /** Construct the sequence. */
   public A074754() {
     super(1, n -> {
-      final int s = Functions.SIGMA.i(n);
-      return Integers.SINGLETON.sum(1, s, k -> Z.valueOf(n).mod(Functions.SIGMA.z(k)).isZero() ? Z.ONE : Z.ZERO);
+      final int s = Functions.SIGMA1.i(n);
+      return Integers.SINGLETON.sum(1, s, k -> Z.valueOf(n).mod(Functions.SIGMA1.z(k)).isZero() ? Z.ONE : Z.ZERO);
     });
   }
 }

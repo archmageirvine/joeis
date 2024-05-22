@@ -19,7 +19,7 @@ public class A063824 extends Sequence1 {
     while (true) {
       mN = mN.add(1);
       final FactorSequence fs = Jaguar.factor(mN.pow(3));
-      if (Functions.SIGMA.z(fs.phi()).equals(Functions.PHI.z(fs.sigma()))) {
+      if (Functions.SIGMA1.z(fs.phi()).equals(Functions.PHI.z(fs.sigma()))) {
         return mN;
       }
     }

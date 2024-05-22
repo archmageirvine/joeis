@@ -14,7 +14,7 @@ public class A049208 extends A018252 {
   public Z next() {
     while (true) {
       final Z a = super.next();
-      final Z t = Functions.SIGMA.z(a).subtract(a);
+      final Z t = Functions.SIGMA1.z(a).subtract(a);
       if (t.isSquare()) {
         return t;
       }

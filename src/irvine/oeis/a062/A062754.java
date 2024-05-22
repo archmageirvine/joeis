@@ -14,7 +14,7 @@ public class A062754 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Functions.SIGMA.z(++mN + 1).gcd(Z.valueOf(mN));
+    return Functions.SIGMA1.z(++mN + 1).gcd(Z.valueOf(mN));
   }
 }
 

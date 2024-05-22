@@ -18,7 +18,7 @@ public class A007539 extends Sequence1 {
   public Z next() {
     ++mN;
     long k = 0;
-    while (!Functions.SIGMA.z(++k).equals(mN * k)) {
+    while (!Functions.SIGMA1.z(++k).equals(mN * k)) {
       // do nothing
     }
     return Z.valueOf(k);

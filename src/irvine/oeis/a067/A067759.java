@@ -15,7 +15,7 @@ public class A067759 extends A000040 {
   @Override
   public Z next() {
     while (true) {
-      if (Functions.SIGMA.z(super.next().add(1)).mod(++mN) == 0) {
+      if (Functions.SIGMA1.z(super.next().add(1)).mod(++mN) == 0) {
         return Z.valueOf(mN);
       }
     }

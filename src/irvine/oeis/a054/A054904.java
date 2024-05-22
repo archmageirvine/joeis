@@ -17,7 +17,7 @@ public class A054904 extends Sequence1 {
     mN += 6;
     long c = 3;
     while (true) {
-      if (Functions.SIGMA.z(++c).add(mN).equals(Functions.SIGMA.z(c + mN))) {
+      if (Functions.SIGMA1.z(++c).add(mN).equals(Functions.SIGMA1.z(c + mN))) {
         final Z a = Z.valueOf(c);
         if (!a.isProbablePrime()) {
           return a;

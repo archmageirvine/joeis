@@ -38,7 +38,7 @@ public class A060043 extends A003056 {
       mM = super.next().intValueExact();
     }
     if (mM == 1) {
-      return Functions.SIGMA.z(mN);
+      return Functions.SIGMA1.z(mN);
     }
     mSum = Z.ZERO;
     search(mN, mM, Z.ONE, 0);

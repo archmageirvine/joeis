@@ -34,7 +34,7 @@ public class AliquotSequence extends Sequence0 {
     } else if (n.isProbablePrime()) {
       return Z.ONE;
     }
-    return Functions.SIGMA.z(n).subtract(n);
+    return Functions.SIGMA1.z(n).subtract(n);
   }
 
   @Override

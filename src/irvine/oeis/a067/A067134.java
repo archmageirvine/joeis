@@ -19,7 +19,7 @@ public class A067134 extends Sequence1 {
     while (true) {
       final Z s = mSigmaA;
       mSigmaA = mSigmaB;
-      mSigmaB = Functions.SIGMA.z(++mN);
+      mSigmaB = Functions.SIGMA1.z(++mN);
       if (mSigmaB.equals(s.multiply2())) {
         return Z.valueOf(mN - 1);
       }

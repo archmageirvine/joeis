@@ -15,7 +15,7 @@ public class A054902 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (Functions.SIGMA.z(++mN).add(12).equals(Functions.SIGMA.z(mN + 12))) {
+      if (Functions.SIGMA1.z(++mN).add(12).equals(Functions.SIGMA1.z(mN + 12))) {
         final Z n = Z.valueOf(mN);
         if (!n.isProbablePrime()) {
           return n;

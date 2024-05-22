@@ -14,10 +14,10 @@ public class A066790 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Z phi = Functions.SIGMA.z(++mN);
+    final Z phi = Functions.SIGMA1.z(++mN);
     long k = 0;
     while (true) {
-      if (Functions.SIGMA.z(mN + ++k).subtract(phi).square().add(k * k).isSquare()) {
+      if (Functions.SIGMA1.z(mN + ++k).subtract(phi).square().add(k * k).isSquare()) {
         return Z.valueOf(k);
       }
     }

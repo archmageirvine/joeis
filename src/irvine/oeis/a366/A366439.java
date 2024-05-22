@@ -13,6 +13,6 @@ public class A366439 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A366439() {
-    super(1, new A268335(), v -> Functions.SIGMA.z(v));
+    super(1, new A268335(), v -> Functions.SIGMA1.z(v));
   }
 }

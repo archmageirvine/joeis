@@ -16,7 +16,7 @@ public class A006872 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (Functions.PHI.z(mN).equals(Functions.PHI.z(Functions.SIGMA.z(mN)))) {
+      if (Functions.PHI.z(mN).equals(Functions.PHI.z(Functions.SIGMA1.z(mN)))) {
         return mN;
       }
     }

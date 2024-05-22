@@ -18,7 +18,7 @@ public class A068474 extends A000040 {
   @Override
   public Z next() {
     while (true) {
-      if (Functions.PHI.z(super.next().subtract(1).divide2()).equals(Functions.SIGMA.z(++mN))) {
+      if (Functions.PHI.z(super.next().subtract(1).divide2()).equals(Functions.SIGMA1.z(++mN))) {
         return Z.valueOf(mN);
       }
     }

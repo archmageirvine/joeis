@@ -16,7 +16,7 @@ public class A063729 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Z t = Functions.SIGMA.z(++mN).add(1);
+      final Z t = Functions.SIGMA1.z(++mN).add(1);
       if (t.compareTo(mRecord) > 0 && t.isSquare()) {
         mRecord = t;
         return Z.valueOf(mN);

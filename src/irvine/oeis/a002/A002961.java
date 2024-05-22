@@ -16,7 +16,7 @@ public class A002961 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Z sum = Functions.SIGMA.z(++mN);
+      final Z sum = Functions.SIGMA1.z(++mN);
       final boolean res = sum.equals(mPrev);
       mPrev = sum;
       if (res) {

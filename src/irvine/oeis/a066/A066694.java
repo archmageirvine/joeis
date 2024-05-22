@@ -16,7 +16,7 @@ public class A066694 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (Functions.PHI.z(Functions.SIGMA.z(mN)).compareTo(mN) > 0) {
+      if (Functions.PHI.z(Functions.SIGMA1.z(mN)).compareTo(mN) > 0) {
         return mN;
       }
     }

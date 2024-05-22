@@ -23,6 +23,6 @@ public class A124316 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> Functions.SIGMA.z(LongUtils.gcd(d, mN / d)));
+    return Integers.SINGLETON.sumdiv(mN, d -> Functions.SIGMA1.z(LongUtils.gcd(d, mN / d)));
   }
 }

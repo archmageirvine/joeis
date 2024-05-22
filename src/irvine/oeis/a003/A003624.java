@@ -20,7 +20,7 @@ public class A003624 extends Sequence1 {
     while (true) {
       ++mN;
       if (!mPrime.isPrime(mN)) {
-        final Z sigma = Functions.SIGMA.z(mN);
+        final Z sigma = Functions.SIGMA1.z(mN);
         if (LongUtils.gcd(mN, sigma.longValueExact()) == 1) {
           return Z.valueOf(mN);
         }

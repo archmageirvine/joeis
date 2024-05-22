@@ -27,7 +27,7 @@ public class A066437 extends Sequence1 {
         return max;
       }
       max = max.max(t);
-      t = Functions.SIGMA.z(t);
+      t = Functions.SIGMA1.z(t);
       if (!sigmaSeen.add(t)) {
         return max;
       }

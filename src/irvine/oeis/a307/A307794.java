@@ -14,6 +14,6 @@ public class A307794 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A307794() {
-    super(1, (self, n) -> n == 1 ? Z.ONE : Integers.SINGLETON.sumdiv(n - 1, d -> Functions.SIGMA.z(d).multiply(self.a(d))), "");
+    super(1, (self, n) -> n == 1 ? Z.ONE : Integers.SINGLETON.sumdiv(n - 1, d -> Functions.SIGMA1.z(d).multiply(self.a(d))), "");
   }
 }

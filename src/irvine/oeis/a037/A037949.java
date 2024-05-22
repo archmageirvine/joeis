@@ -19,9 +19,9 @@ public class A037949 extends A000040 {
     long sum = 0;
     for (int k = 1; k < n; ++k) {
       long t = LongUtils.modPow(k, 6, n);
-      t *= Functions.SIGMA.l(k);
+      t *= Functions.SIGMA1.l(k);
       t %= n;
-      t *= Functions.SIGMA.l(n - k);
+      t *= Functions.SIGMA1.l(n - k);
       t %= n;
       sum += t;
       sum %= n;

@@ -12,6 +12,6 @@ public class A173942 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A173942() {
-    super(1, 1, k -> Functions.SIGMA.z(Functions.CARMICHAEL_LAMBDA.z(k)).equals(Functions.CARMICHAEL_LAMBDA.z(Functions.SIGMA.z(k))));
+    super(1, 1, k -> Functions.SIGMA1.z(Functions.CARMICHAEL_LAMBDA.z(k)).equals(Functions.CARMICHAEL_LAMBDA.z(Functions.SIGMA1.z(k))));
   }
 }

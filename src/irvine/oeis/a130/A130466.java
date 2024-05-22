@@ -21,7 +21,7 @@ public class A130466 extends Sequence1 {
       // Starting a new row
       ++mRow;
       mPositionInRow = 0;
-      mCurrentSigma = Functions.SIGMA.z(mRow);
+      mCurrentSigma = Functions.SIGMA1.z(mRow);
       mCurrentIndex = 0;
     }
     ++mPositionInRow;

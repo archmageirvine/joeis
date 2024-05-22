@@ -15,7 +15,7 @@ public class A057533 extends Sequence1 {
   private long mN = 47;
 
   private Z step(final Z n) {
-    return Functions.SIGMA.z(n).subtract(n).subtract(1);
+    return Functions.SIGMA1.z(n).subtract(n).subtract(1);
   }
 
   @Override

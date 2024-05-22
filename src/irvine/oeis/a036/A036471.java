@@ -33,7 +33,7 @@ public class A036471 extends Sequence1 {
     if (mVerbose && n % 1000000 == 0) {
       StringUtils.message("Scan has reached: " + n);
     }
-    return Functions.SIGMA.l(n);
+    return Functions.SIGMA1.l(n);
   }
 
   @Override

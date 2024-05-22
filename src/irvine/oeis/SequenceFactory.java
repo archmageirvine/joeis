@@ -172,7 +172,7 @@ public final class SequenceFactory {
         case "semiprime":
           return new FilterSequence(sequence(inner), FilterSequence.SEMIPRIME);
         case "sigma":
-          return new SimpleTransformSequence(sequence(inner), Functions.SIGMA::z);
+          return new SimpleTransformSequence(sequence(inner), Functions.SIGMA1::z);
         case "sigma0":
           return new SimpleTransformSequence(sequence(inner), Functions.SIGMA0::z);
         case "stirling1":

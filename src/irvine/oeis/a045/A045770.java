@@ -15,7 +15,7 @@ public class A045770 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (++mN == 1 || Functions.SIGMA.z(mN).mod(mN) == 8) {
+      if (++mN == 1 || Functions.SIGMA1.z(mN).mod(mN) == 8) {
         return Z.valueOf(mN);
       }
     }

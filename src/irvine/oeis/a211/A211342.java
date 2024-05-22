@@ -31,7 +31,7 @@ public class A211342 extends DecimalExpansionSequence {
             if (zxk.isZero()) {
               break;
             }
-            final Z sigma = Functions.SIGMA.z(++k);
+            final Z sigma = Functions.SIGMA1.z(++k);
             sum = sum.add(zxk.multiply(sigma));
           }
           return sum;

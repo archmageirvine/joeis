@@ -19,7 +19,7 @@ public class A065900 extends Sequence1 {
     while (true) {
       final Z t = mA;
       mA = mB;
-      mB = Functions.SIGMA.z(++mN);
+      mB = Functions.SIGMA1.z(++mN);
       if (mB.equals(mA.add(t))) {
         return Z.valueOf(mN);
       }

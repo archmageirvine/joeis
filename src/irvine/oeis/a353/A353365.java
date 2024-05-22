@@ -14,8 +14,8 @@ public class A353365 extends FilterLambdaSequence {
   /** Construct the sequence. */
   public A353365() {
     super(1, 1, k -> {
-      final Z sig = Functions.SIGMA.z(k);
-      return sig.makeOdd().equals(Functions.SIGMA.z(sig).makeOdd());
+      final Z sig = Functions.SIGMA1.z(k);
+      return sig.makeOdd().equals(Functions.SIGMA1.z(sig).makeOdd());
     });
   }
 }

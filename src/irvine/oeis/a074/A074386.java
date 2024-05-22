@@ -20,7 +20,7 @@ public class A074386 extends Sequence1 {
       if (mVerbose && mN % 1000000 == 0) {
         System.err.println("[" + mN + "]");
       }
-      final Z sigma = Functions.SIGMA.z(mN);
+      final Z sigma = Functions.SIGMA1.z(mN);
       final Z[] p = sigma.sqrtAndRemainder();
       if (p[1].isZero() && p[0].isPrime()) {
         return Z.valueOf(mN);

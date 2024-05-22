@@ -1,5 +1,6 @@
 package irvine.oeis.a001;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
@@ -44,13 +45,11 @@ public class A001045 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    // seq((2^n - (-1)^n)/3,n=0..20);
-    return Z.TWO.pow(n).subtract(n.testBit(0) ? Z.NEG_ONE : Z.ONE).divide(3);
+    return Functions.JACOBSTHAL.z(n);
   }
 
   @Override
   public Z a(final int n) {
-    return Z.ONE.shiftLeft(n).subtract((n & 1) == 1 ? Z.NEG_ONE : Z.ONE).divide(3);
+    return Functions.JACOBSTHAL.z(n);
   }
-
 }

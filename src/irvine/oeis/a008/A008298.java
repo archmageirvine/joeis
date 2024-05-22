@@ -37,7 +37,7 @@ public class A008298 extends MemoryFunction1Sequence<Polynomial<Z>> {
     }
     Polynomial<Z> sum = RING.zero();
     for (int k = 1; k <= n; ++k) {
-      sum = RING.add(sum, RING.multiply(get(n - k).shift(1), Functions.FACTORIAL.z(n - 1).divide(Functions.FACTORIAL.z(n - k)).multiply(Functions.SIGMA.z(k))));
+      sum = RING.add(sum, RING.multiply(get(n - k).shift(1), Functions.FACTORIAL.z(n - 1).divide(Functions.FACTORIAL.z(n - k)).multiply(Functions.SIGMA1.z(k))));
     }
     return sum;
   }

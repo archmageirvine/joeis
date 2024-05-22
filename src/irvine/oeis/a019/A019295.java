@@ -18,7 +18,7 @@ public class A019295 extends Sequence1 {
     Z m = mN;
     Z[] qr;
     do {
-      m = Functions.SIGMA.z(m);
+      m = Functions.SIGMA1.z(m);
       qr = m.divideAndRemainder(mN);
     } while (!qr[1].isZero());
     return qr[0];

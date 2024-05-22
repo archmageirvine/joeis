@@ -16,7 +16,7 @@ public class A066871 extends Sequence1 {
   private Z mU = null;
 
   private static Z aliquot(final Z n) {
-    return Functions.SIGMA.z(n).subtract(n);
+    return Functions.SIGMA1.z(n).subtract(n);
   }
 
   private boolean isHarshad(final Z n) {

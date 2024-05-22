@@ -21,6 +21,6 @@ public class A295012 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Functions.SIGMA.z(12L * mN - 1).divide(12);
+    return Functions.SIGMA1.z(12L * mN - 1).divide(12);
   }
 }

@@ -14,6 +14,6 @@ public class A062835 extends Sequence1 {
 
   @Override
   public Z next() {
-    return ++mN == 1 ? Z.ZERO : Functions.SIGMA.z(mN * mN - 1);
+    return ++mN == 1 ? Z.ZERO : Functions.SIGMA1.z(mN * mN - 1);
   }
 }

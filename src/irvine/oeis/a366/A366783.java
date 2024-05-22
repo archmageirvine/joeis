@@ -18,6 +18,6 @@ public class A366783 extends A000073 {
 
   @Override
   public Z next() {
-    return Functions.SIGMA.z(super.next());
+    return Functions.SIGMA1.z(super.next());
   }
 }

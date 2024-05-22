@@ -16,7 +16,7 @@ public class A020477 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Z n = Functions.SIGMA.z(++mN);
+      final Z n = Functions.SIGMA1.z(++mN);
       if (Predicates.CUBE.is(n)) {
         return Z.valueOf(mN);
       }

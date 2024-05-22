@@ -16,7 +16,7 @@ public class A069169 extends A018252 {
   private final MemoryFunction1<Z> mSigma = new MemoryFunction1<>() {
     @Override
     protected Z compute(final int key) {
-      return Functions.SIGMA.z(key);
+      return Functions.SIGMA1.z(key);
     }
   };
 

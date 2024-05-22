@@ -15,7 +15,7 @@ public class A067685 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (Functions.SIGMA.l(4 * ++mN + 1) == 6 * mN) {
+      if (Functions.SIGMA1.l(4 * ++mN + 1) == 6 * mN) {
         return Z.valueOf(mN);
       }
     }

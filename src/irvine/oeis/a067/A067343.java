@@ -17,7 +17,7 @@ public class A067343 extends Sequence1 {
     while (true) {
       final long v = ++mN;
       final long sum = Functions.DIGIT_SUM.l(v);
-      final long dsum = Functions.DIGIT_SUM.l(Functions.SIGMA.z(mN));
+      final long dsum = Functions.DIGIT_SUM.l(Functions.SIGMA1.z(mN));
       if (dsum == sum) {
         return Z.valueOf(mN);
       }

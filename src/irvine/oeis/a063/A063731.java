@@ -17,7 +17,7 @@ public class A063731 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Z sigma = Functions.SIGMA.z(++mN);
+      final Z sigma = Functions.SIGMA1.z(++mN);
       mSum = mSum.add(sigma);
       mProd = mProd.multiply(sigma);
       if (mProd.mod(mSum).isZero()) {

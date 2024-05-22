@@ -27,7 +27,7 @@ public class A037160 extends Sequence1 {
         if (m.isZero()) {
           return s;
         }
-        m = m.multiply(3).subtract(Functions.SIGMA.z(m));
+        m = m.multiply(3).subtract(Functions.SIGMA1.z(m));
       }
     }
   }

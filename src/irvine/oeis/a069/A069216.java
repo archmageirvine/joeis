@@ -16,7 +16,7 @@ public class A069216 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (Functions.SIGMA.z(mN).equals(Functions.REVERSE.z(mN))) {
+      if (Functions.SIGMA1.z(mN).equals(Functions.REVERSE.z(mN))) {
         return mN;
       }
     }

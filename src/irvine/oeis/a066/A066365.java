@@ -10,6 +10,6 @@ public class A066365 extends A066367 {
 
   /** Construct the sequence. */
   public A066365() {
-    super(k -> Functions.SIGMA.z(k).subtract(k).abs().longValueExact());
+    super(k -> Functions.SIGMA1.z(k).subtract(k).abs().longValueExact());
   }
 }

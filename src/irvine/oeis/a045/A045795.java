@@ -17,7 +17,7 @@ public class A045795 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (Jaguar.factor(Functions.SIGMA.z(mN)).unitarySigma().mod(mN).isZero()) {
+      if (Jaguar.factor(Functions.SIGMA1.z(mN)).unitarySigma().mod(mN).isZero()) {
         return mN;
       }
     }

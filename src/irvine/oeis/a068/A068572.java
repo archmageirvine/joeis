@@ -22,7 +22,7 @@ public class A068572 extends Sequence1 {
         m /= 10;
         prod = prod.multiply(r * r);
       }
-      if (!prod.isZero() && Functions.SIGMA.z(mN).equals(prod)) {
+      if (!prod.isZero() && Functions.SIGMA1.z(mN).equals(prod)) {
         return Z.valueOf(mN);
       }
     }

@@ -21,7 +21,7 @@ public class A058652 extends Sequence1 {
       if (fs.isSquareFree()) {
         final Z sigma = fs.sigma();
         final Z phi = fs.phi();
-        if (Functions.SIGMA.z(phi).equals(Functions.PHI.z(sigma))) {
+        if (Functions.SIGMA1.z(phi).equals(Functions.PHI.z(sigma))) {
           return Z.valueOf(mN);
         }
       }

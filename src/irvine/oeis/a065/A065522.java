@@ -15,7 +15,7 @@ public class A065522 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (Functions.SIGMA.z(++mN).isPower() != null && Functions.SIGMA.z(mN + 1).isPower() != null) {
+      if (Functions.SIGMA1.z(++mN).isPower() != null && Functions.SIGMA1.z(mN + 1).isPower() != null) {
         return Z.valueOf(mN);
       }
     }

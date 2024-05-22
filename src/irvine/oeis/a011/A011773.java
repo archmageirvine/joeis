@@ -15,18 +15,16 @@ public class A011773 extends Sequence1 implements DirectSequence {
 
   @Override
   public Z next() {
-    mN += 2;
-    return mN == 4 ? Z.ONE : Functions.CARMICHAEL_LAMBDA.z(mN);
+    return Functions.CARMICHAEL_LAMBDA_VARIANT.z(++mN);
   }
 
   @Override
   public Z a(final Z n) {
-    return n.equals(Z.TWO) ? Z.ONE : Functions.CARMICHAEL_LAMBDA.z(n.multiply2());
+    return Functions.CARMICHAEL_LAMBDA_VARIANT.z(n);
   }
 
   @Override
   public Z a(final int n) {
-    return n == 2 ? Z.ONE : Functions.CARMICHAEL_LAMBDA.z(n * 2);
+    return Functions.CARMICHAEL_LAMBDA_VARIANT.z(n);
   }
-
 }

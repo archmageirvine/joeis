@@ -14,7 +14,7 @@ public class A058545 extends Sequence0 {
 
   @Override
   public Z next() {
-    mA = mA == null ? Z.valueOf(23) : mA.multiply(3).subtract(Functions.SIGMA.z(mA.abs()));
+    mA = mA == null ? Z.valueOf(23) : mA.multiply(3).subtract(Functions.SIGMA1.z(mA.abs()));
     return mA;
   }
 }

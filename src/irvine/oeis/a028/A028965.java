@@ -17,12 +17,12 @@ public class A028965 extends Sequence1 {
   public Z next() {
     if (mA[0] == null) {
       for (int k = 0; k < mA.length; ++k) {
-        mA[k] = Functions.SIGMA.z(mN + k);
+        mA[k] = Functions.SIGMA1.z(mN + k);
       }
     }
     while (true) {
       System.arraycopy(mA, 1, mA, 0, 5);
-      mA[5] = Functions.SIGMA.z(++mN + 5);
+      mA[5] = Functions.SIGMA1.z(++mN + 5);
       if (mA[4].compareTo(mA[5]) < 0
         && mA[3].compareTo(mA[4]) < 0
         && mA[2].compareTo(mA[3]) < 0

@@ -17,7 +17,7 @@ public class A064162 extends Sequence1 {
     mN = mN.add(1);
     Z k = mN;
     while (true) {
-      if (Functions.SIGMA.z(k).subtract(k).compareTo(k) > 0) {
+      if (Functions.SIGMA1.z(k).subtract(k).compareTo(k) > 0) {
         return k;
       }
       k = k.add(mN);

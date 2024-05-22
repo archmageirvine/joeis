@@ -22,7 +22,7 @@ public class A067062 extends A000040 {
       mP = super.next();
       final Z s = mS;
       mS = mT;
-      mT = Functions.SIGMA.z(++mN);
+      mT = Functions.SIGMA1.z(++mN);
       if (mT.subtract(s).equals(mP.subtract(q))) {
         return Z.valueOf(mN - 2);
       }

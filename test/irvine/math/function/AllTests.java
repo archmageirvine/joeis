@@ -46,7 +46,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(ReverseTest.class);
     suite.addTestSuite(RotateRightTest.class);
     suite.addTestSuite(Sigma0Test.class);
-    suite.addTestSuite(SigmaTest.class);
+    suite.addTestSuite(Sigma1Test.class);
     suite.addTestSuite(SopfrTest.class);
     suite.addTestSuite(SopfTest.class);
     suite.addTestSuite(SwizzleTest.class);

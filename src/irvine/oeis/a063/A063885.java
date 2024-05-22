@@ -22,7 +22,7 @@ public class A063885 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (z(Functions.SIGMA.z(++mN)).equals(2 * mN)) {
+      if (z(Functions.SIGMA1.z(++mN)).equals(2 * mN)) {
         return Z.valueOf(mN);
       }
     }

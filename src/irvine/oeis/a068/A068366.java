@@ -15,7 +15,7 @@ public class A068366 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Z s = Functions.SIGMA.z(++mN);
+      final Z s = Functions.SIGMA1.z(++mN);
       if (Functions.PHI.z(s.add(mN)).equals(s)) {
         return Z.valueOf(mN);
       }

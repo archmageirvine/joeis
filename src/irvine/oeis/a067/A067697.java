@@ -16,7 +16,7 @@ public class A067697 extends A000040 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (p.subtract(1).mod(Functions.SIGMA.z(++mN)).isZero()) {
+      if (p.subtract(1).mod(Functions.SIGMA1.z(++mN)).isZero()) {
         return Z.valueOf(mN);
       }
     }

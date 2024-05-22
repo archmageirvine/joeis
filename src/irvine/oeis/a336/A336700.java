@@ -12,6 +12,6 @@ public class A336700 extends FilterLambdaSequence {
 
   /** Construct the sequence. */
   public A336700() {
-    super(1, 1, k -> Functions.SIGMA.z(k).makeOdd().add(1).mod(k.add(1).makeOdd()).isZero());
+    super(1, 1, k -> Functions.SIGMA1.z(k).makeOdd().add(1).mod(k.add(1).makeOdd()).isZero());
   }
 }

@@ -13,6 +13,6 @@ public class A295298 extends FilterLambdaSequence {
 
   /** Construct the sequence. */
   public A295298() {
-    super(1, 1, k -> Functions.SIGMA.z(k).and(Z.ONE).equals(Z.valueOf(k.bitCount() & 1)));
+    super(1, 1, k -> Functions.SIGMA1.z(k).and(Z.ONE).equals(Z.valueOf(k.bitCount() & 1)));
   }
 }

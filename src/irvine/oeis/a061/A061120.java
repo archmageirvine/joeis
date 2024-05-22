@@ -18,13 +18,13 @@ public class A061120 extends A000040 {
   @Override
   public Z next() {
     Z t = super.next().add(1);
-    Z min = Functions.SIGMA.z(t);
+    Z min = Functions.SIGMA1.z(t);
     while (true) {
       t = t.add(1);
       if (mPrime.isPrime(t)) {
         return min;
       }
-      min = min.min(Functions.SIGMA.z(t));
+      min = min.min(Functions.SIGMA1.z(t));
     }
   }
 }

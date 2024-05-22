@@ -20,7 +20,7 @@ public class A344863 extends AbstractSequence {
 
   @Override
   public Z next() {
-    final long n = Functions.SIGMA.l(++mN);
+    final long n = Functions.SIGMA1.l(++mN);
     return Z.valueOf(Functions.MOBIUS.i(n));
   }
 }

@@ -17,7 +17,7 @@ public class A300447 extends FilterSequence {
   public A300447() {
     super(1, new A000027(), x -> {
       final Z y = new A055120().a(x);
-      return !x.equals(y) && Functions.SIGMA.z(x).equals(Functions.SIGMA.z(y));
+      return !x.equals(y) && Functions.SIGMA1.z(x).equals(Functions.SIGMA1.z(y));
     });
   }
 }

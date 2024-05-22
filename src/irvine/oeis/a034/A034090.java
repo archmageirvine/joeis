@@ -16,7 +16,7 @@ public class A034090 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Z sigmaProper = Functions.SIGMA.z(++mN).subtract(mN);
+      final Z sigmaProper = Functions.SIGMA1.z(++mN).subtract(mN);
       if (sigmaProper.compareTo(mMax) > 0) {
         mMax = sigmaProper;
         return Z.valueOf(mN);

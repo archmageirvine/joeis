@@ -19,7 +19,7 @@ public class A015791 extends Sequence0 {
     while (true) {
       final long n = ++k;
       final Z phi = Functions.PHI.z(n).add(mN);
-      final Z sigma = Functions.SIGMA.z(k + mN);
+      final Z sigma = Functions.SIGMA1.z(k + mN);
       if (sigma.mod(phi).isZero()) {
         return Z.valueOf(k);
       }

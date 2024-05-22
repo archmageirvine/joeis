@@ -12,6 +12,6 @@ public class A326043 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A326043() {
-    super(1, (p, e) -> Functions.SIGMA.z(p.pow(e)).add(e - 1).divide(e));
+    super(1, (p, e) -> Functions.SIGMA1.z(p.pow(e)).add(e - 1).divide(e));
   }
 }

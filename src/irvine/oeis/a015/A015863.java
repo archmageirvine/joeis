@@ -10,10 +10,10 @@ import irvine.oeis.Sequence1;
  */
 public class A015863 extends Sequence1 {
 
-  private Z mSigmaA = Functions.SIGMA.z(1);
-  private Z mSigmaB = Functions.SIGMA.z(2);
-  private Z mSigmaC = Functions.SIGMA.z(3);
-  private Z mSigmaD = Functions.SIGMA.z(4);
+  private Z mSigmaA = Functions.SIGMA1.z(1);
+  private Z mSigmaB = Functions.SIGMA1.z(2);
+  private Z mSigmaC = Functions.SIGMA1.z(3);
+  private Z mSigmaD = Functions.SIGMA1.z(4);
   private long mN = 4;
 
   @Override
@@ -23,7 +23,7 @@ public class A015863 extends Sequence1 {
       mSigmaA = mSigmaB;
       mSigmaB = mSigmaC;
       mSigmaC = mSigmaD;
-      mSigmaD = Functions.SIGMA.z(++mN);
+      mSigmaD = Functions.SIGMA1.z(++mN);
       if (mSigmaD.equals(sigma)) {
         return Z.valueOf(mN - 4);
       }

@@ -20,7 +20,7 @@ public class A003606 extends MemorySequence {
       Z s = Z.ZERO;
       for (final Z dd : Jaguar.factor(n).divisors()) {
         final int d = dd.intValue();
-        s = s.add(Functions.SIGMA.z(n / d).multiply(Functions.PARTITIONS.z(d).multiply(d)));
+        s = s.add(Functions.SIGMA1.z(n / d).multiply(Functions.PARTITIONS.z(d).multiply(d)));
       }
       return s;
     }

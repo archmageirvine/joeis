@@ -17,10 +17,10 @@ public class A061796 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Z s = Functions.SIGMA.z(++mN);
+    final Z s = Functions.SIGMA1.z(++mN);
     mSums.add(s.multiply2());
     for (long q = 1; q < mN; ++q) {
-      mSums.add(s.add(Functions.SIGMA.z(q)));
+      mSums.add(s.add(Functions.SIGMA1.z(q)));
     }
     return Z.valueOf(mSums.size());
   }

@@ -14,6 +14,6 @@ public class A353802 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A353802() {
-    super(1, (p, e) -> Functions.SIGMA.z(Jaguar.factor(p.pow(e)).sigma()));
+    super(1, (p, e) -> Functions.SIGMA1.z(Jaguar.factor(p.pow(e)).sigma()));
   }
 }

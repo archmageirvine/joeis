@@ -16,7 +16,7 @@ public class A066226 extends Sequence1 {
   private final MemoryFunction1<Long> mF = new MemoryFunction1<>() {
     @Override
     protected Long compute(final int n) {
-      return Functions.SIGMA.l(Functions.PHI.z((long) n));
+      return Functions.SIGMA1.l(Functions.PHI.z((long) n));
     }
   };
 

@@ -31,7 +31,7 @@ public class A258774 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Z s = Functions.SIGMA.z(++mN);
+    final Z s = Functions.SIGMA1.z(++mN);
     return mLambda.apply(s);
 
   }

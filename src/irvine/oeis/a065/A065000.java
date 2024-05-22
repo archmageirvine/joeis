@@ -16,7 +16,7 @@ public class A065000 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n = Functions.SIGMA.l(++mN);
+      final long n = Functions.SIGMA1.l(++mN);
       mSum += Functions.MOBIUS.i(n);
       if (mSum == 0) {
         return Z.valueOf(mN);

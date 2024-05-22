@@ -13,6 +13,6 @@ public class A259309 extends FilterSequence {
 
   /** Construct the sequence. */
   public A259309() {
-    super(1, new A000027(), (k, v) -> Functions.SIGMA.z(k).pow(4).add(1).isProbablePrime());
+    super(1, new A000027(), (k, v) -> Functions.SIGMA1.z(k).pow(4).add(1).isProbablePrime());
   }
 }

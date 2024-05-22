@@ -21,6 +21,6 @@ public class A153824 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Functions.SIGMA.z(Functions.FACTORIAL.z(mN)).subtract(Functions.FACTORIAL.z(mN));
+    return Functions.SIGMA1.z(Functions.FACTORIAL.z(mN)).subtract(Functions.FACTORIAL.z(mN));
   }
 }

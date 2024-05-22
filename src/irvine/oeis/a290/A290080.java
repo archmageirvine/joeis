@@ -16,7 +16,7 @@ public class A290080 extends A001222 {
   @Override
   public Z next() {
     ++mN;
-    final Z result = Functions.SIGMA.z(super.next());
+    final Z result = Functions.SIGMA1.z(super.next());
     return (mN == 1) ? Z.ZERO : result;
   }
 }

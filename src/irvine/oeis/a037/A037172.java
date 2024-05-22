@@ -13,7 +13,7 @@ public class A037172 extends A000720 {
   @Override
   public Z next() {
     while (true) {
-      if (super.next().equals(Functions.SIGMA.z(mN).subtract(mN))) {
+      if (super.next().equals(Functions.SIGMA1.z(mN).subtract(mN))) {
         return mN;
       }
     }

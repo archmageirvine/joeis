@@ -23,7 +23,7 @@ public class A066421 extends Sequence1 {
       ++k;
       try {
         //t = mFactor.factorize(t).sigma();
-        t = Functions.SIGMA.z(t);
+        t = Functions.SIGMA1.z(t);
       } catch (final RuntimeException e) {
         System.err.println("Failed with k=" + k);
         throw e;

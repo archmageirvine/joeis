@@ -23,6 +23,6 @@ public class A294614 extends AbstractSequence {
 
   @Override
   public Z next() {
-    return Functions.SIGMA.z(mSeq1.next()).divide(12).subtract(++mN);
+    return Functions.SIGMA1.z(mSeq1.next()).divide(12).subtract(++mN);
   }
 }

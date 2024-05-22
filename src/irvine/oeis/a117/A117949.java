@@ -13,6 +13,6 @@ public class A117949 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A117949() {
-    super(1, 1, new A000326().skip(1), v -> Functions.SIGMA.z(v).isSquare());
+    super(1, 1, new A000326().skip(1), v -> Functions.SIGMA1.z(v).isSquare());
   }
 }

@@ -16,7 +16,7 @@ public class A002025 extends Sequence1 {
     if (n.isProbablePrime()) {
       return Z.ONE;
     }
-    return Functions.SIGMA.z(n).subtract(n);
+    return Functions.SIGMA1.z(n).subtract(n);
   }
 
   protected Z select(final Z n, final Z a) {

@@ -13,7 +13,7 @@ public class A066919 extends Sequence1 {
   private Z mN = Z.ZERO;
 
   private Z f(final Z n) {
-    return n.isEven() ? Functions.PHI.z(n) : Functions.SIGMA.z(n);
+    return n.isEven() ? Functions.PHI.z(n) : Functions.SIGMA1.z(n);
   }
 
   @Override

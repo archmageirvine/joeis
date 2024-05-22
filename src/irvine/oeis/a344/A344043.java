@@ -14,6 +14,6 @@ public class A344043 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A344043() {
-    super(1, n -> Rationals.SINGLETON.sumdiv(n, d -> new Q(Functions.SIGMA.z(d).pow(3), d)).multiply(n).num());
+    super(1, n -> Rationals.SINGLETON.sumdiv(n, d -> new Q(Functions.SIGMA1.z(d).pow(3), d)).multiply(n).num());
   }
 }

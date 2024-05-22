@@ -37,6 +37,6 @@ public class A002133 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return d(mN).add(tau(mN)).subtract(Functions.SIGMA.z(mN)).divide2();
+    return d(mN).add(tau(mN)).subtract(Functions.SIGMA1.z(mN)).divide2();
   }
 }

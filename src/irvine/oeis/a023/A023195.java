@@ -29,7 +29,7 @@ public class A023195 extends Sequence1 {
     }
     while (mA.size() < REORDER_BUFFER) {
       final Z n2 = Z.valueOf(++mN).square();
-      final Z sigma = Functions.SIGMA.z(n2);
+      final Z sigma = Functions.SIGMA1.z(n2);
       if (sigma.isProbablePrime()) {
         mA.add(sigma);
       }

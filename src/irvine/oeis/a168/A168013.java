@@ -19,7 +19,7 @@ public class A168013 extends Sequence1 {
     ++mN;
     final long limit = mN * mN;
     while (mNext < limit) {
-      mSum = mSum.add(Functions.SIGMA.z(mNext++));
+      mSum = mSum.add(Functions.SIGMA1.z(mNext++));
     }
     return mSum;
   }

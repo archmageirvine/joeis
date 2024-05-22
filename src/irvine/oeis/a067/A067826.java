@@ -14,7 +14,7 @@ public class A067826 extends A000040 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (Functions.SIGMA.z(p.multiply2().add(1)).compareTo(p.multiply(3).add(3)) > 0) {
+      if (Functions.SIGMA1.z(p.multiply2().add(1)).compareTo(p.multiply(3).add(3)) > 0) {
         return p;
       }
     }

@@ -13,6 +13,6 @@ public class A332208 extends FilterLambdaSequence {
 
   /** Construct the sequence. */
   public A332208() {
-    super(1, 1, k -> Jaguar.factor(Functions.SIGMA.z(k)).squareFreeKernel().equals(Jaguar.factor(k.multiply(2)).squareFreeKernel()));
+    super(1, 1, k -> Jaguar.factor(Functions.SIGMA1.z(k)).squareFreeKernel().equals(Jaguar.factor(k.multiply(2)).squareFreeKernel()));
   }
 }

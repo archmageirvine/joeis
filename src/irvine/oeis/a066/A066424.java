@@ -19,7 +19,7 @@ public class A066424 extends Sequence0 {
     long m = mLim;
     mLim *= 10;
     while (m < mLim) {
-      final Z s = Functions.SIGMA.z(m);
+      final Z s = Functions.SIGMA1.z(m);
       if (s.compareTo(max) > 0) {
         max = s;
         maxM = m;

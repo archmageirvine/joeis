@@ -17,7 +17,7 @@ public class A037138 extends Sequence1 {
     while (true) {
       mN = mN.add(1);
       final Z phi = Functions.PHI.z(mN);
-      if (Functions.SIGMA.z(phi).add(Functions.SIGMA.z(mN.subtract(phi))).equals(mN.multiply2())) {
+      if (Functions.SIGMA1.z(phi).add(Functions.SIGMA1.z(mN.subtract(phi))).equals(mN.multiply2())) {
         return mN;
       }
     }

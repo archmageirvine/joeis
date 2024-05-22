@@ -15,7 +15,7 @@ public class A068762 extends Sequence1 {
 
   @Override
   public Z next() {
-    mSum = mSum.signedAdd((++mN & 1) == 1, Functions.SIGMA.z(mN));
+    mSum = mSum.signedAdd((++mN & 1) == 1, Functions.SIGMA1.z(mN));
     return mSum;
   }
 }

@@ -15,7 +15,7 @@ public class A053814 extends Sequence2 {
   @Override
   public Z next() {
     mN = mN.add(1);
-    return mN.mod(Functions.SIGMA.z(mN).subtract(mN));
+    return mN.mod(Functions.SIGMA1.z(mN).subtract(mN));
   }
 }
 

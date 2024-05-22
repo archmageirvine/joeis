@@ -14,7 +14,7 @@ public class A353752 extends MultiplicativeSequence {
   /** Construct the sequence. */
   public A353752() {
     super(1, (p, e) -> {
-      return Functions.PHI.z(Functions.SIGMA.z(p.pow(e)));
+      return Functions.PHI.z(Functions.SIGMA1.z(p.pow(e)));
     });
   }
 }

@@ -14,7 +14,7 @@ public class A067579 extends Sequence1 {
   private Z mN = Z.ZERO;
 
   private Z f(final Z n) {
-    return Functions.SIGMA.z(n).add(n);
+    return Functions.SIGMA1.z(n).add(n);
   }
 
   @Override

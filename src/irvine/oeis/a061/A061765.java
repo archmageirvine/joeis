@@ -15,6 +15,6 @@ public class A061765 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Jaguar.factor(Functions.SIGMA.z(++mN)).unitarySigma();
+    return Jaguar.factor(Functions.SIGMA1.z(++mN)).unitarySigma();
   }
 }

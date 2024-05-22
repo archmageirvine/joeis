@@ -14,6 +14,6 @@ public class A074801 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A074801() {
-    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Functions.SIGMA.z(Binomial.binomial(n, k))));
+    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Functions.SIGMA1.z(Binomial.binomial(n, k))));
   }
 }

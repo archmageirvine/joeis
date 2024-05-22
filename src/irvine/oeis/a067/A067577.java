@@ -17,7 +17,7 @@ public class A067577 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Z s = Functions.SIGMA.z(++mN);
+    final Z s = Functions.SIGMA1.z(++mN);
     mSum = mSum.add(new Q(Z.ONE, s));
     mProd = mProd.multiply(s);
     return mSum.multiply(mProd).toZ();

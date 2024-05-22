@@ -15,7 +15,7 @@ public class A038048 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Z res = Functions.SIGMA.z(++mN).multiply(mF);
+    final Z res = Functions.SIGMA1.z(++mN).multiply(mF);
     mF = mF.multiply(mN);
     return res;
   }

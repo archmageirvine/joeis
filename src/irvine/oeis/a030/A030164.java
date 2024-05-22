@@ -17,7 +17,7 @@ public class A030164 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (Jaguar.factor(Functions.SIGMA.z(mN)).unitaryPhi().equals(mN)) {
+      if (Jaguar.factor(Functions.SIGMA1.z(mN)).unitaryPhi().equals(mN)) {
         return mN;
       }
     }

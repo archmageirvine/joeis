@@ -20,6 +20,6 @@ public class A097022 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Functions.SIGMA.z(mSeq.next()).subtract(3).divide(6);
+    return Functions.SIGMA1.z(mSeq.next()).subtract(3).divide(6);
   }
 }

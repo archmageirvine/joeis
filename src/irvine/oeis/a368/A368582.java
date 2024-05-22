@@ -12,6 +12,6 @@ public class A368582 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A368582() {
-    super(1, n -> Functions.SIGMA.z(n).add(1).divide(2));
+    super(1, n -> Functions.SIGMA1.z(n).add(1).divide(2));
   }
 }

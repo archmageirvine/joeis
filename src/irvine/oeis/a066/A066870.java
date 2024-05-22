@@ -16,7 +16,7 @@ public class A066870 extends A007770 {
   private Z mU = null;
 
   private static Z aliquot(final Z n) {
-    return Functions.SIGMA.z(n).subtract(n);
+    return Functions.SIGMA1.z(n).subtract(n);
   }
 
   @Override

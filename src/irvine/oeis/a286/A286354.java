@@ -31,7 +31,7 @@ public class A286354 extends UpperLeftTriangle {
       }
       Z sum = Z.ZERO;
       for (int j = 1; j <= n; ++j) {
-        sum = sum.add(get(n - j, k).multiply(Functions.SIGMA.z(j)));
+        sum = sum.add(get(n - j, k).multiply(Functions.SIGMA1.z(j)));
       }
       return sum.multiply(-k).divide(n);
     }

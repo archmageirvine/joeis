@@ -19,6 +19,6 @@ public class A221529 extends BaseTriangle {
 
   @Override
   public Z triangleElement(final int n, final int k) {
-    return Functions.SIGMA.z(k).multiply(Functions.PARTITIONS.z(n - k));
+    return Functions.SIGMA1.z(k).multiply(Functions.PARTITIONS.z(n - k));
   }
 }

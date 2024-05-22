@@ -15,6 +15,6 @@ public class A009242 extends Sequence1 {
   @Override
   public Z next() {
     mN = mN.add(1);
-    return mN.lcm(Functions.SIGMA.z(mN));
+    return mN.lcm(Functions.SIGMA1.z(mN));
   }
 }

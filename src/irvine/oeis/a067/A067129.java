@@ -18,7 +18,7 @@ public class A067129 extends Sequence1 {
     while (true) {
       final Z s = mSigma[0];
       System.arraycopy(mSigma, 1, mSigma, 0, mSigma.length - 1);
-      mSigma[5] = Functions.SIGMA.z(++mN);
+      mSigma[5] = Functions.SIGMA1.z(++mN);
       if (s.add(mSigma[5]).equals(mSigma[2].multiply(3))) {
         return Z.valueOf(mN - 3);
       }

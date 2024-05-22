@@ -13,6 +13,6 @@ public class A365648 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A365648() {
-    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> Functions.CARMICHAEL_LAMBDA.z(n / d).multiply(Functions.SIGMA.z(d))));
+    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> Functions.CARMICHAEL_LAMBDA.z(n / d).multiply(Functions.SIGMA1.z(d))));
   }
 }

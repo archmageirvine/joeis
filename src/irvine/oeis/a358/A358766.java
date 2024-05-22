@@ -14,6 +14,6 @@ public class A358766 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A358766() {
-    super(1, n -> Z.valueOf(Jaguar.factor(Functions.SIGMA.z(n)).lambda()));
+    super(1, n -> Z.valueOf(Jaguar.factor(Functions.SIGMA1.z(n)).lambda()));
   }
 }

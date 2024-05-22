@@ -22,7 +22,7 @@ public class A054982 extends A000142 {
     Z k = Z.THREE;
     while (true) {
       k = k.add(1);
-      if (!k.isProbablePrime() && Functions.SIGMA.z(f.add(k)).equals(Functions.SIGMA.z(k).add(f))) {
+      if (!k.isProbablePrime() && Functions.SIGMA1.z(f.add(k)).equals(Functions.SIGMA1.z(k).add(f))) {
         return k;
       }
     }

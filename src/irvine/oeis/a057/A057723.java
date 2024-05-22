@@ -16,6 +16,6 @@ public class A057723 extends Sequence1 {
   @Override
   public Z next() {
     final Z rad = Jaguar.factor(++mN).squareFreeKernel();
-    return rad.multiply(Functions.SIGMA.z(mN / rad.longValue()));
+    return rad.multiply(Functions.SIGMA1.z(mN / rad.longValue()));
   }
 }

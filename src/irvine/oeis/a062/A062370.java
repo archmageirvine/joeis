@@ -13,6 +13,6 @@ public class A062370 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A062370() {
-    super(1, (p, e) -> Integers.SINGLETON.sum(1, e, k -> Functions.SIGMA.z(p.pow(k)).multiply(2L * k + 1)).add(1));
+    super(1, (p, e) -> Integers.SINGLETON.sum(1, e, k -> Functions.SIGMA1.z(p.pow(k)).multiply(2L * k + 1)).add(1));
   }
 }

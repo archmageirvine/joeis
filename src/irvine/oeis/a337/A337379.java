@@ -13,6 +13,6 @@ public class A337379 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A337379() {
-    super(1, 1, new A003961(), (k, v) -> v.compareTo(Functions.SIGMA.z(k).multiply(2)) < 0);
+    super(1, 1, new A003961(), (k, v) -> v.compareTo(Functions.SIGMA1.z(k).multiply(2)) < 0);
   }
 }

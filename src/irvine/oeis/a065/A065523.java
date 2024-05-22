@@ -15,7 +15,7 @@ public class A065523 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Z base = Functions.SIGMA.z(++mN).isPower();
+      final Z base = Functions.SIGMA1.z(++mN).isPower();
       if (base != null && base.isProbablePrime()) {
         return Z.valueOf(mN);
       }

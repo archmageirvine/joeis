@@ -17,8 +17,8 @@ public class A037135 extends Sequence1 {
     ++mN;
     long cnt = 0;
     for (long k = 1; k <= mN / 2; ++k) {
-      final long sa = Functions.SIGMA.l(k) - k;
-      final long sb = Functions.SIGMA.l(mN - k) - (mN - k);
+      final long sa = Functions.SIGMA1.l(k) - k;
+      final long sb = Functions.SIGMA1.l(mN - k) - (mN - k);
       if (Math.abs(sa - k) == Math.abs(mN - k - sb)) {
         ++cnt;
       }

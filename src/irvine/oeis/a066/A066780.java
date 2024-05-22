@@ -13,6 +13,6 @@ public class A066780 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A066780() {
-    super(1, n -> Integers.SINGLETON.product(1, n, k -> Functions.SIGMA.z(k)));
+    super(1, n -> Integers.SINGLETON.product(1, n, k -> Functions.SIGMA1.z(k)));
   }
 }

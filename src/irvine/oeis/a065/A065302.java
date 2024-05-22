@@ -13,6 +13,6 @@ public class A065302 extends FilterSequence {
 
   /** Construct the sequence. */
   public A065302() {
-    super(1, new A005117(), k -> !k.isProbablePrime() && Jaguar.factor(Functions.SIGMA.z(k)).isSquareFree());
+    super(1, new A005117(), k -> !k.isProbablePrime() && Jaguar.factor(Functions.SIGMA1.z(k)).isSquareFree());
   }
 }

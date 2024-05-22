@@ -20,7 +20,7 @@ public class A007369 extends Sequence1 {
     while (true) {
       ++mN;
       while (mN >= mS || mN >= mA.length()) {
-        final long sigma = Functions.SIGMA.l(++mS);
+        final long sigma = Functions.SIGMA1.l(++mS);
         mA.set(sigma);
       }
       if (!mA.isSet(mN)) {

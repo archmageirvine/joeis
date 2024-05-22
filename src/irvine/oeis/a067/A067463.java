@@ -14,7 +14,7 @@ public class A067463 extends A000040 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (p.add(Functions.SIGMA.z(p.add(1))).isProbablePrime()) {
+      if (p.add(Functions.SIGMA1.z(p.add(1))).isProbablePrime()) {
         return p;
       }
     }

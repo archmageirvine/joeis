@@ -20,7 +20,7 @@ public class A055153 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    while (!Functions.SIGMA.z(mN).equals(Z.SEVEN.multiply(mN).divide2())) {
+    while (!Functions.SIGMA1.z(mN).equals(Z.SEVEN.multiply(mN).divide2())) {
       ++mN;
     }
     return Z.valueOf(mN);

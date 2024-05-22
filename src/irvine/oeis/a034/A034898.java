@@ -15,7 +15,7 @@ public class A034898 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Z s = Functions.SIGMA.z(++mN).subtract(mN + 1);
+      final Z s = Functions.SIGMA1.z(++mN).subtract(mN + 1);
       if (s.signum() != 0 && Z.valueOf(mN - 1).mod(s).isZero()) {
         return Z.valueOf(mN - 1).divide(s);
       }

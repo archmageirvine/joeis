@@ -14,7 +14,7 @@ public class A058062 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Functions.OMEGA.z(Functions.SIGMA.z(++mN));
+    return Functions.OMEGA.z(Functions.SIGMA1.z(++mN));
   }
 }
 

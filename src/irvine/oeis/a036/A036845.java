@@ -26,7 +26,7 @@ public class A036845 extends Sequence1 {
         m = Functions.PHI.z(m);
         phi = false;
       } else {
-        m = Functions.SIGMA.z(m);
+        m = Functions.SIGMA1.z(m);
         phi = true;
       }
     }

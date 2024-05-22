@@ -14,6 +14,6 @@ public class A111934 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A111934() {
-    super(1, n -> Rationals.SINGLETON.product(1, n, k -> new Q(Functions.SIGMA.z(k), k)).den());
+    super(1, n -> Rationals.SINGLETON.product(1, n, k -> new Q(Functions.SIGMA1.z(k), k)).den());
   }
 }

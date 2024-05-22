@@ -12,6 +12,6 @@ public class A247821 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A247821() {
-    super(1, 1, k -> Functions.SIGMA.z(Functions.SIGMA.z(2 * k - 1)).isProbablePrime());
+    super(1, 1, k -> Functions.SIGMA1.z(Functions.SIGMA1.z(2 * k - 1)).isProbablePrime());
   }
 }

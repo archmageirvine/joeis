@@ -27,7 +27,7 @@ public class A015810 extends Sequence0 {
 
   private long findIt(final long n) {
     long k = 1;
-    while ((Functions.SIGMA.l(k) + n) % phi(n + k) != 0) {
+    while ((Functions.SIGMA1.l(k) + n) % phi(n + k) != 0) {
       ++k;
     }
     return k;

@@ -19,7 +19,7 @@ public class A067253 extends A000040 {
   @Override
   public Z next() {
     while (true) {
-      if (super.next().equals(CR.valueOf(Functions.OMEGA.i(Functions.SIGMA.z(++mN)) * mN).log().multiply(mN).floor())) {
+      if (super.next().equals(CR.valueOf(Functions.OMEGA.i(Functions.SIGMA1.z(++mN)) * mN).log().multiply(mN).floor())) {
         return Z.valueOf(mN);
       }
     }

@@ -16,7 +16,7 @@ public class A064161 extends A000040 {
     Z k = p;
     while (true) {
       k = k.add(p);
-      if (Functions.SIGMA.z(k).subtract(k).compareTo(k) > 0) {
+      if (Functions.SIGMA1.z(k).subtract(k).compareTo(k) > 0) {
         return k;
       }
     }

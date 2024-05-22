@@ -12,6 +12,6 @@ public class A325637 extends FilterLambdaSequence {
 
   /** Construct the sequence. */
   public A325637() {
-    super(1, 1, k -> k.multiply(2).gcd(Functions.SIGMA.z(k)).equals(k.multiply(2)));
+    super(1, 1, k -> k.multiply(2).gcd(Functions.SIGMA1.z(k)).equals(k.multiply(2)));
   }
 }

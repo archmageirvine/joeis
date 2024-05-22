@@ -14,7 +14,7 @@ public class A066731 extends Sequence1 {
   private Z mN = Z.ZERO;
 
   protected Z f(final Z n) {
-    return Functions.SIGMA.z(n);
+    return Functions.SIGMA1.z(n);
   }
 
   private Z d(final Z n) {

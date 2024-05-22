@@ -15,7 +15,7 @@ public class A054030 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Z[] qr = Functions.SIGMA.z(++mN).divideAndRemainder(Z.valueOf(mN));
+      final Z[] qr = Functions.SIGMA1.z(++mN).divideAndRemainder(Z.valueOf(mN));
       if (qr[1].isZero()) {
         return qr[0];
       }

@@ -23,7 +23,7 @@ public class A008850 extends Sequence1 {
       if (Z.ONE.equals(mN)) {
         return Z.ONE;
       }
-      final Z sum = Functions.SIGMA.z(mN.square());
+      final Z sum = Functions.SIGMA1.z(mN.square());
       final Z r = sum.root(3);
       if (sum.auxiliary() == 1) {
         return select(mN, r);

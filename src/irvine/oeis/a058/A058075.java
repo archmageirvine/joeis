@@ -17,7 +17,7 @@ public class A058075 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z s = mSigma;
-      mSigma = Functions.SIGMA.z(++mN + 1);
+      mSigma = Functions.SIGMA1.z(++mN + 1);
       if (Z.ONE.equals(s.gcd(mSigma))) {
         return Z.valueOf(mN);
       }

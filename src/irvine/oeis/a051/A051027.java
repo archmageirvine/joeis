@@ -13,7 +13,7 @@ public class A051027 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A051027() {
-    super(1, n -> Functions.SIGMA.z(Functions.SIGMA.z(n)));
+    super(1, n -> Functions.SIGMA1.z(Functions.SIGMA1.z(n)));
   }
 
 }

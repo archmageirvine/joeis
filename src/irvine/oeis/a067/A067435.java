@@ -19,7 +19,7 @@ public class A067435 extends Sequence1 {
   @Override
   public Z next() {
     if (++mN > 2) {
-      mA = mA.add(4L * mN - 3).subtract(Functions.SIGMA.z(2L * mN - 1)).subtract(mSigmaOdd.a(mN - 1));
+      mA = mA.add(4L * mN - 3).subtract(Functions.SIGMA1.z(2L * mN - 1)).subtract(mSigmaOdd.a(mN - 1));
     }
     return mA;
   }

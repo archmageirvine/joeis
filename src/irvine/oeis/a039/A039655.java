@@ -17,7 +17,7 @@ public class A039655 extends Sequence2 {
     long c = 0;
     Z m = Z.valueOf(++mN);
     while (!m.isProbablePrime()) {
-      m = Functions.SIGMA.z(m).subtract(1);
+      m = Functions.SIGMA1.z(m).subtract(1);
       ++c;
     }
     return Z.valueOf(c);

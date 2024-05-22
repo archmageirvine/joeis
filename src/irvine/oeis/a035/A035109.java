@@ -27,7 +27,7 @@ public class A035109 extends Sequence0 {
         ecnt = ecnt.add(e);
       }
     }
-    return Functions.SIGMA.z(d).multiply(ecnt).multiply(m);
+    return Functions.SIGMA1.z(d).multiply(ecnt).multiply(m);
   }
 
   @Override

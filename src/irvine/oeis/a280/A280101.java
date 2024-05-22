@@ -23,6 +23,6 @@ public class A280101 extends AbstractSequence {
 
   @Override
   public Z next() {
-    return (++mN == 1) ? Z.ONE : Functions.SIGMA.z(mSeq1.next());
+    return (++mN == 1) ? Z.ONE : Functions.SIGMA1.z(mSeq1.next());
   }
 }

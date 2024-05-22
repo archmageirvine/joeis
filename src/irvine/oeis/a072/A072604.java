@@ -12,6 +12,6 @@ public class A072604 extends FilterLambdaSequence {
 
   /** Construct the sequence. */
   public A072604() {
-    super(1, 1, v -> v.mod(10) == 0 && Functions.PHI.z(v).mod(10) == 0 && Functions.SIGMA.z(v).mod(10) == 0);
+    super(1, 1, v -> v.mod(10) == 0 && Functions.PHI.z(v).mod(10) == 0 && Functions.SIGMA1.z(v).mod(10) == 0);
   }
 }

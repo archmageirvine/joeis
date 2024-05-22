@@ -33,6 +33,8 @@ public final class Functions {
   public static final Function1 FIBONACCI = new Fibonacci(); // =A000045
   /** Lucas function. */
   public static final Function1 LUCAS = new Lucas(); // =A000032
+  /** Jacobsthal function. */
+  public static final Function1 JACOBSTHAL = new Jacobsthal(); // =A001045
   /** Make odd (remove all powers of 2). */
   public static final Function1 MAKE_ODD = new MakeOdd(); // =A000265
   /** Euler totient function. */
@@ -40,7 +42,7 @@ public final class Functions {
   /** Euler co-totient function. */
   public static final Function1 COTOTIENT = new Cototient(); // =A051953
   /** Sum of divisors function. */
-  public static final Function1 SIGMA = new Sigma(); // =A000203
+  public static final Function1 SIGMA1 = new Sigma1(); // =A000203
   /** Number of divisors function. */
   public static final Function1 SIGMA0 = new Sigma0(); // =A000005
   /** Number of divisors function. */
@@ -67,6 +69,8 @@ public final class Functions {
   public static final Function1 GPF = new GreatestPrimeFactor(); // =A006530
   /** Carmichael lambda function. */
   public static final Function1 CARMICHAEL_LAMBDA = new CarmichaelLambda(); // =A002322
+  /** Variant of the Carmichael lambda function. */
+  public static final Function1 CARMICHAEL_LAMBDA_VARIANT = new CarmichaelLambdaVariant(); // =A011773
   /** Dedekind psi function. */
   public static final Function1 DEDEKIND_PSI = new DedekindPsi(); // =A001615
   /** Ceiling square root. */
@@ -100,6 +104,8 @@ public final class Functions {
   /** Next power of two larger than the given number. */
   public static final Function1 NEXT_POWER_OF_2 = new NextPowerOf2(); // =A062383
 
+  /** Reverse the digits of a number. */
+  public static final Function2 SIGMA = new Sigma(); // =A000005(0, =A000203(1,
   /** Reverse the digits of a number. */
   public static final Function2 REVERSE = new Reverse(); // =A004086(10, = A305989(2,
   /** Number of digits in a number. */

@@ -15,7 +15,7 @@ public class A028501 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long sigma = Functions.SIGMA.l(++mN);
+      final long sigma = Functions.SIGMA1.l(++mN);
       final long s = sigma - mN - 1;
       if (18 * s == mN - 1) {
         return Z.valueOf(mN);

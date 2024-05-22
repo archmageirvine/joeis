@@ -12,6 +12,6 @@ public class A071138 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A071138() {
-    super(1, (n, s) -> s[0].multiply(Functions.SIGMA.z(n)).add(s[1]), "1, 4", PREVIOUS, PREVIOUS);
+    super(1, (n, s) -> s[0].multiply(Functions.SIGMA1.z(n)).add(s[1]), "1, 4", PREVIOUS, PREVIOUS);
   }
 }

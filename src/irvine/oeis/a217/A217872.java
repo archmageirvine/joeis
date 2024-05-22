@@ -21,6 +21,6 @@ public class A217872 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Functions.SIGMA.z(mN).pow(mN);
+    return Functions.SIGMA1.z(mN).pow(mN);
   }
 }

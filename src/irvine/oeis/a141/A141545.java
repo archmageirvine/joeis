@@ -13,6 +13,6 @@ public class A141545 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A141545() {
-    super(1, 0, n -> Functions.SIGMA.z(n).equals(Z.TWO.multiply(n).add(12)));
+    super(1, 0, n -> Functions.SIGMA1.z(n).equals(Z.TWO.multiply(n).add(12)));
   }
 }

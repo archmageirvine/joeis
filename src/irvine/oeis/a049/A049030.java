@@ -18,7 +18,7 @@ public class A049030 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z res = mSum;
-      mSum = mSum.add(Functions.SIGMA.z(++mN).subtract(mN + 1));
+      mSum = mSum.add(Functions.SIGMA1.z(++mN).subtract(mN + 1));
       if (mN == mT) {
         mT *= 10;
         return res;

@@ -10,15 +10,15 @@ import irvine.oeis.Sequence1;
  */
 public class A015877 extends Sequence1 {
 
-  private Z mSigmaA = Functions.SIGMA.z(1);
-  private Z mSigmaB = Functions.SIGMA.z(2);
-  private Z mSigmaC = Functions.SIGMA.z(3);
-  private Z mSigmaD = Functions.SIGMA.z(4);
-  private Z mSigmaE = Functions.SIGMA.z(5);
-  private Z mSigmaF = Functions.SIGMA.z(6);
-  private Z mSigmaG = Functions.SIGMA.z(7);
-  private Z mSigmaH = Functions.SIGMA.z(8);
-  private Z mSigmaI = Functions.SIGMA.z(9);
+  private Z mSigmaA = Functions.SIGMA1.z(1);
+  private Z mSigmaB = Functions.SIGMA1.z(2);
+  private Z mSigmaC = Functions.SIGMA1.z(3);
+  private Z mSigmaD = Functions.SIGMA1.z(4);
+  private Z mSigmaE = Functions.SIGMA1.z(5);
+  private Z mSigmaF = Functions.SIGMA1.z(6);
+  private Z mSigmaG = Functions.SIGMA1.z(7);
+  private Z mSigmaH = Functions.SIGMA1.z(8);
+  private Z mSigmaI = Functions.SIGMA1.z(9);
   private long mN = 9;
 
   @Override
@@ -33,7 +33,7 @@ public class A015877 extends Sequence1 {
       mSigmaF = mSigmaG;
       mSigmaG = mSigmaH;
       mSigmaH = mSigmaI;
-      mSigmaI = Functions.SIGMA.z(++mN);
+      mSigmaI = Functions.SIGMA1.z(++mN);
       if (mSigmaI.equals(sigma)) {
         return Z.valueOf(mN - 9);
       }

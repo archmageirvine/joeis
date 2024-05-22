@@ -17,7 +17,7 @@ public class A063900 extends Sequence1 {
     while (true) {
       final Z n = Z.valueOf(++mN);
       final Z n2 = n.square();
-      if (Functions.SIGMA.z(n2).subtract(n2).subtract(1).isSquare()) {
+      if (Functions.SIGMA1.z(n2).subtract(n2).subtract(1).isSquare()) {
         return n;
       }
     }

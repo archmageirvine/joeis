@@ -14,11 +14,11 @@ public class A063680 extends A028982 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      final Z s = Functions.SIGMA.z(t);
-      if (Functions.SIGMA.z(t.add(7)).equals(s.add(7))) {
+      final Z s = Functions.SIGMA1.z(t);
+      if (Functions.SIGMA1.z(t.add(7)).equals(s.add(7))) {
         return t;
       }
-      if (Functions.SIGMA.z(t.subtract(7)).add(7).equals(s) && t.compareTo(Z.SEVEN) > 0) {
+      if (Functions.SIGMA1.z(t.subtract(7)).add(7).equals(s) && t.compareTo(Z.SEVEN) > 0) {
         return t.subtract(7);
       }
     }

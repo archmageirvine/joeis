@@ -14,7 +14,7 @@ public class A325312 extends FilterLambdaSequence {
   /** Construct the sequence. */
   public A325312() {
     super(1, 1, k -> {
-      final Z sikk = Functions.SIGMA.z(k.square());
+      final Z sikk = Functions.SIGMA1.z(k.square());
       return k.testBit(0) && sikk.and(Z.THREE).equals(Z.THREE) && sikk.compareTo(k.square().multiply(2)) > 0;
     });
   }

@@ -28,16 +28,16 @@ public class A000203 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z next() {
-    return Functions.SIGMA.z(++mN);
+    return Functions.SIGMA1.z(++mN);
   }
 
   @Override
   public Z a(final int n) {
-    return Functions.SIGMA.z(n);
+    return Functions.SIGMA1.z(n);
   }
 
   @Override
   public Z a(final Z n) {
-    return Functions.SIGMA.z(n);
+    return Functions.SIGMA1.z(n);
   }
 }

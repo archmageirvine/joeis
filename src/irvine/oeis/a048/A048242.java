@@ -19,7 +19,7 @@ public class A048242 extends FiniteSequence {
   private static long[] build() {
     final TreeSet<Integer> s = new TreeSet<>();
     for (int k = 1; k <= 16695; ++k) {
-      if (Functions.SIGMA.l(k) > 2L * k) {
+      if (Functions.SIGMA1.l(k) > 2L * k) {
         s.add(k);
       }
     }

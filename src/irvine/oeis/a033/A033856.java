@@ -14,7 +14,7 @@ public class A033856 extends A033831 {
     while (true) {
       final Z j = super.next();
       final Z phi = mFactorSequence.phi();
-      if (j.multiply(phi).equals(Functions.SIGMA.z(phi))) {
+      if (j.multiply(phi).equals(Functions.SIGMA1.z(phi))) {
         return Z.valueOf(mN);
       }
     }

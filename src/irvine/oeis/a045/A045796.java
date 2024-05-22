@@ -17,7 +17,7 @@ public class A045796 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      final Z[] qr = Jaguar.factor(Functions.SIGMA.z(mN)).unitarySigma().divideAndRemainder(mN);
+      final Z[] qr = Jaguar.factor(Functions.SIGMA1.z(mN)).unitarySigma().divideAndRemainder(mN);
       if (qr[1].isZero()) {
         return qr[0];
       }

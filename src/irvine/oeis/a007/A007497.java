@@ -21,7 +21,7 @@ public class A007497 extends Sequence1 {
     if (mA == null) {
       mA = start();
     } else {
-      mA = Functions.SIGMA.z(mA);
+      mA = Functions.SIGMA1.z(mA);
     }
     return mA;
   }

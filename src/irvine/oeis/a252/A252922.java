@@ -30,6 +30,6 @@ public class A252922 extends AbstractSequence {
     if (mN == 3) {
       return Z.FOUR;
     }
-    return Functions.SIGMA.z(mN - 1).add(Functions.SIGMA.z(mN - 2)).add(Functions.SIGMA.z(mN - 3));
+    return Functions.SIGMA1.z(mN - 1).add(Functions.SIGMA1.z(mN - 2)).add(Functions.SIGMA1.z(mN - 3));
   }
 }

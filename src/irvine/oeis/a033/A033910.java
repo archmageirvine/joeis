@@ -13,7 +13,7 @@ public class A033910 extends Sequence1 {
   private long mN = 0;
 
   private Z s(final long n) {
-    return Functions.SIGMA.z(n).subtract(n);
+    return Functions.SIGMA1.z(n).subtract(n);
   }
 
   protected long m() {

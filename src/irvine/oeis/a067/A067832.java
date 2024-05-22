@@ -18,7 +18,7 @@ public class A067832 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z p = mPrimes.next();
-      if (Functions.SIGMA.z(p.subtract(6)).compareTo(p) > 0) {
+      if (Functions.SIGMA1.z(p.subtract(6)).compareTo(p) > 0) {
         return p;
       }
     }

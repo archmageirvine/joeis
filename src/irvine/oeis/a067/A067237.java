@@ -16,7 +16,7 @@ public class A067237 extends Sequence1 {
   public Z next() {
     while (true) {
       final long k = 5 * ++mN;
-      if (Functions.SIGMA.z(k).gcd(k).longValueExact() == mN) {
+      if (Functions.SIGMA1.z(k).gcd(k).longValueExact() == mN) {
         return Z.valueOf(k);
       }
     }

@@ -17,7 +17,7 @@ public class A058072 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z s = mSigma;
-      mSigma = Functions.SIGMA.z(++mN + 1);
+      mSigma = Functions.SIGMA1.z(++mN + 1);
       if (mSigma.mod(s).isZero()) {
         return Z.valueOf(mN);
       }

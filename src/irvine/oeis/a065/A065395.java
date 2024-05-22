@@ -17,6 +17,6 @@ public class A065395 extends Sequence1 {
   @Override
   public Z next() {
     final FactorSequence fs = Jaguar.factor(++mN);
-    return Functions.SIGMA.z(fs.phi()).subtract(Functions.PHI.z(fs.sigma()));
+    return Functions.SIGMA1.z(fs.phi()).subtract(Functions.PHI.z(fs.sigma()));
   }
 }

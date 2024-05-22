@@ -18,7 +18,7 @@ public class A007365 extends Sequence0 {
     long k = 0;
     while (true) {
       ++k;
-      if (Functions.SIGMA.z(k).equals(Functions.SIGMA.z(mN + k))) {
+      if (Functions.SIGMA1.z(k).equals(Functions.SIGMA1.z(mN + k))) {
         return Z.valueOf(k);
       }
     }

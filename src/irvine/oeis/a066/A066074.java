@@ -11,6 +11,6 @@ public class A066074 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A066074() {
-    super(1, new A066073(), k -> Functions.SIGMA.z(k).subtract(1));
+    super(1, new A066073(), k -> Functions.SIGMA1.z(k).subtract(1));
   }
 }

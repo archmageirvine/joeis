@@ -22,6 +22,6 @@ public class A065018 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> Functions.SIGMA.z(d).square());
+    return Integers.SINGLETON.sumdiv(mN, d -> Functions.SIGMA1.z(d).square());
   }
 }

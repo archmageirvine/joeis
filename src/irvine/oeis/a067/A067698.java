@@ -17,7 +17,7 @@ public class A067698 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final CR sigma = CR.valueOf(Functions.SIGMA.z(++mN));
+      final CR sigma = CR.valueOf(Functions.SIGMA1.z(++mN));
       if (sigma.compareTo(EXP_GAMMA.multiply(mN).multiply(CR.valueOf(mN).log().log())) >= 0) {
         return Z.valueOf(mN);
       }

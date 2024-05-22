@@ -18,7 +18,7 @@ public class A034753 extends Sequence1 {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(++mN).divisors()) {
       final int d = dd.intValue();
-      sum = sum.add(Functions.SIGMA.z(mN / d).multiply(Z.THREE.pow(d - 1)));
+      sum = sum.add(Functions.SIGMA1.z(mN / d).multiply(Z.THREE.pow(d - 1)));
     }
     return sum;
   }

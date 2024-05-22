@@ -12,7 +12,7 @@ public class A366710 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A366710() {
-    super(1, new A024140().skip(), k -> Functions.SIGMA.z(k));
+    super(1, new A024140().skip(), k -> Functions.SIGMA1.z(k));
   }
 }
 

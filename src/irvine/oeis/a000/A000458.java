@@ -21,7 +21,7 @@ public class A000458 extends Sequence0 {
     } else if (mA == null) {
       mA = Z.ONE;
     } else {
-      final Z s = Functions.SIGMA.z(mB);
+      final Z s = Functions.SIGMA1.z(mB);
       final Z t = mASigma.add(s);
       mA = mB;
       mB = t;

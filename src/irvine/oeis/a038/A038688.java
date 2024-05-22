@@ -21,7 +21,7 @@ public class A038688 extends Sequence1 {
   public Z next() {
     while (mA.isEmpty() || mA.first().multiply2().compareTo(mN) >= 0) {
       mN = mN.add(1);
-      final Z sigma = Functions.SIGMA.z(mN);
+      final Z sigma = Functions.SIGMA1.z(mN);
       if (sigma.isSquare()) {
         if (sigma.compareTo(mPrev) < 0 && mSeen.add(sigma)) {
           throw new RuntimeException("Heuristic failed: " + sigma + " should have been output earlier");

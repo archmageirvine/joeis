@@ -21,7 +21,7 @@ public class A068365 extends Sequence1 {
     while (true) {
       final Z q = mP;
       mP = mA.next();
-      if (Functions.PHI.z(q.add(mP).divide2()).equals(Functions.SIGMA.z(++mN))) {
+      if (Functions.PHI.z(q.add(mP).divide2()).equals(Functions.SIGMA1.z(++mN))) {
         return Z.valueOf(mN);
       }
     }

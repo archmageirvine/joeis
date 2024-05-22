@@ -15,7 +15,7 @@ public class A066767 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sum(1, ++mN, k -> Functions.SIGMA.z(k).shiftLeft(mN - k));
+    return Integers.SINGLETON.sum(1, ++mN, k -> Functions.SIGMA1.z(k).shiftLeft(mN - k));
   }
 }
 

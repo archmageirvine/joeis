@@ -17,6 +17,6 @@ public class A062359 extends A000142 {
 
   @Override
   public Z next() {
-    return super.next().divide(Functions.SIGMA.z(mN));
+    return super.next().divide(Functions.SIGMA1.z(mN));
   }
 }

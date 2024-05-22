@@ -15,7 +15,7 @@ public class A048698 extends A018252 {
   public Z next() {
     while (true) {
       final Z a = super.next();
-      if (Predicates.CUBE.is(Functions.SIGMA.z(a).subtract(a))) {
+      if (Predicates.CUBE.is(Functions.SIGMA1.z(a).subtract(a))) {
         return a;
       }
     }

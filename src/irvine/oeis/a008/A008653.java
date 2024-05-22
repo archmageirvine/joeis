@@ -14,6 +14,6 @@ public class A008653 extends Sequence0 {
 
   @Override
   public Z next() {
-    return ++mN == 0 ? Z.ONE : Functions.SIGMA.z(3 * mN).subtract(Functions.SIGMA.z(mN).multiply(3)).multiply(12);
+    return ++mN == 0 ? Z.ONE : Functions.SIGMA1.z(3 * mN).subtract(Functions.SIGMA1.z(mN).multiply(3)).multiply(12);
   }
 }

@@ -18,7 +18,7 @@ public class A054905 extends Sequence1 {
     mN += 2;
     long c = 3;
     while (true) {
-      if (Functions.SIGMA.z(++c).add(mN).equals(Jaguar.factor(c + mN).sigma())) {
+      if (Functions.SIGMA1.z(++c).add(mN).equals(Jaguar.factor(c + mN).sigma())) {
         final Z a = Z.valueOf(c);
         if (!a.isProbablePrime()) {
           return a;

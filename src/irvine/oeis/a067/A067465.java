@@ -15,7 +15,7 @@ public class A067465 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (Functions.SIGMA.z(++mN * mN + 1).isSquare()) {
+      if (Functions.SIGMA1.z(++mN * mN + 1).isSquare()) {
         return Z.valueOf(mN);
       }
     }

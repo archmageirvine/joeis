@@ -15,7 +15,7 @@ public class A017665 extends Sequence1 {
   @Override
   public Z next() {
     mN = mN.add(1);
-    final Z sigma = Functions.SIGMA.z(mN);
+    final Z sigma = Functions.SIGMA1.z(mN);
     return sigma.divide(sigma.gcd(mN));
   }
 }

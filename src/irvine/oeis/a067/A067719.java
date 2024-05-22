@@ -16,7 +16,7 @@ public class A067719 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z n = Z.valueOf(++mN);
-      if (Functions.SIGMA.z(n.square().add(1)).mod(mN) == 0) {
+      if (Functions.SIGMA1.z(n.square().add(1)).mod(mN) == 0) {
         return n;
       }
     }

@@ -17,7 +17,7 @@ public class A063869 extends Sequence1 {
     ++mN;
     long k = 1;
     while (true) {
-      final Z sigma = Functions.SIGMA.z(++k);
+      final Z sigma = Functions.SIGMA1.z(++k);
       if (sigma.root(mN).auxiliary() == 1) {
         return Z.valueOf(k);
       }

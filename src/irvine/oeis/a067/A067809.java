@@ -16,7 +16,7 @@ public class A067809 extends A000040 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (!mPrime.isPrime(++mN) && Functions.SIGMA.z(3 * mN).compareTo(p) < 0) {
+      if (!mPrime.isPrime(++mN) && Functions.SIGMA1.z(3 * mN).compareTo(p) < 0) {
         return Z.valueOf(mN);
       }
     }

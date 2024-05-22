@@ -15,7 +15,7 @@ public class A351549 extends FilterPositionSequence {
   /** Construct the sequence. */
   public A351549() {
     super(1, 0, new A019565(), (k, v) -> {
-      final Z sig = Functions.SIGMA.z(k);
+      final Z sig = Functions.SIGMA1.z(k);
       return v.gcd(sig).multiply(k).equals(v.gcd(Z.valueOf(k)).multiply(sig));
     });
   }

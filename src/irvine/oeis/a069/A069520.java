@@ -16,7 +16,7 @@ public class A069520 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (Integers.SINGLETON.sumdiv(++mN, d -> Functions.SIGMA.z(d).multiply(d)).mod(mN) == 0) {
+      if (Integers.SINGLETON.sumdiv(++mN, d -> Functions.SIGMA1.z(d).multiply(d)).mod(mN) == 0) {
         return Z.valueOf(mN);
       }
     }

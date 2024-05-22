@@ -14,6 +14,6 @@ public class A369740 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A369740() {
-    super(1, n -> Integers.SINGLETON.sopf(n, p -> Z.valueOf(p).pow(Functions.SIGMA.l(n / p))));
+    super(1, n -> Integers.SINGLETON.sopf(n, p -> Z.valueOf(p).pow(Functions.SIGMA1.l(n / p))));
   }
 }

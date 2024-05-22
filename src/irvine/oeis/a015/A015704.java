@@ -33,7 +33,7 @@ public class A015704 extends Sequence2 {
     long m = 0;
     while (true) {
       ++m;
-      if (Functions.SIGMA.l(m) + phi(m) == mN * m) {
+      if (Functions.SIGMA1.l(m) + phi(m) == mN * m) {
         return Z.valueOf(m);
       }
     }

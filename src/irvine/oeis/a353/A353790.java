@@ -14,6 +14,6 @@ public class A353790 extends DirectTransformSequence {
 
   /** Construct the sequence. */
   public A353790() {
-    super(1, new A353749(), new SimpleTransformSequence(1, new A003961(), (n, v) -> Functions.SIGMA.z(v)));
+    super(1, new A353749(), new SimpleTransformSequence(1, new A003961(), (n, v) -> Functions.SIGMA1.z(v)));
   }
 }

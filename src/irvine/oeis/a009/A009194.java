@@ -26,12 +26,12 @@ public class A009194 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return n.gcd(Functions.SIGMA.z(n));
+    return n.gcd(Functions.SIGMA1.z(n));
   }
 
   @Override
   public Z next() {
     mN = mN.add(1);
-    return mN.gcd(Functions.SIGMA.z(mN));
+    return mN.gcd(Functions.SIGMA1.z(mN));
   }
 }

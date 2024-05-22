@@ -19,7 +19,7 @@ public class A055020 extends Sequence2 {
     long c = 0;
     Z m = mN;
     while (m.compareTo(lim) < 0) {
-      m = Functions.SIGMA.z(m);
+      m = Functions.SIGMA1.z(m);
       ++c;
     }
     return Z.valueOf(c);

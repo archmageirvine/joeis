@@ -16,9 +16,9 @@ public class A003502 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      final Z s = Functions.SIGMA.z(mN).subtract(mN).subtract(1);
+      final Z s = Functions.SIGMA1.z(mN).subtract(mN).subtract(1);
       if (s.compareTo(mN) > 0) {
-        final Z t = Functions.SIGMA.z(s).subtract(s).subtract(1);
+        final Z t = Functions.SIGMA1.z(s).subtract(s).subtract(1);
         if (t.equals(mN)) {
           return mN;
         }

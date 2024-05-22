@@ -13,6 +13,6 @@ public class A074216 extends FilterSequence {
 
   /** Construct the sequence. */
   public A074216() {
-    super(1, new A000290(), (n, v) -> Functions.SIGMA.z(v).mod(3) == 0);
+    super(1, new A000290(), (n, v) -> Functions.SIGMA1.z(v).mod(3) == 0);
   }
 }

@@ -20,7 +20,7 @@ public class A023194 extends Sequence1 {
     }
     while (true) {
       final Z n2 = Z.valueOf(++mN).square();
-      if (Functions.SIGMA.z(n2).isProbablePrime()) {
+      if (Functions.SIGMA1.z(n2).isProbablePrime()) {
         return n2;
       }
     }

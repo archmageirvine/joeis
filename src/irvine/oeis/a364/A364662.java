@@ -12,6 +12,6 @@ public class A364662 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A364662() {
-    super(1, 0, k -> Functions.SIGMA.z(k).compareTo(Functions.SIGMA.z(k + 1)) < 0 && Functions.SIGMA.z(k + 1).compareTo(Functions.SIGMA.z(k + 2)) < 0 && Functions.SIGMA.z(k + 2).compareTo(Functions.SIGMA.z(k + 3)) < 0);
+    super(1, 0, k -> Functions.SIGMA1.z(k).compareTo(Functions.SIGMA1.z(k + 1)) < 0 && Functions.SIGMA1.z(k + 1).compareTo(Functions.SIGMA1.z(k + 2)) < 0 && Functions.SIGMA1.z(k + 2).compareTo(Functions.SIGMA1.z(k + 3)) < 0);
   }
 }

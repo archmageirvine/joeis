@@ -16,7 +16,7 @@ public class A014567 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (mN.gcd(Functions.SIGMA.z(mN)).equals(Z.ONE)) {
+      if (mN.gcd(Functions.SIGMA1.z(mN)).equals(Z.ONE)) {
         return mN;
       }
     }

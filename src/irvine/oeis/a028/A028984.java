@@ -19,7 +19,7 @@ public class A028984 extends A002113 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (Functions.SIGMA.z(p).isOdd()) {
+      if (Functions.SIGMA1.z(p).isOdd()) {
         return p;
       }
     }

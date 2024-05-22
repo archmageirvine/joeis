@@ -13,6 +13,6 @@ public class A062825 extends A018252 {
   @Override
   public Z next() {
     final Z t = super.next();
-    return Functions.SIGMA.z(t).subtract(t.add(1)).max(Z.ZERO);
+    return Functions.SIGMA1.z(t).subtract(t.add(1)).max(Z.ZERO);
   }
 }

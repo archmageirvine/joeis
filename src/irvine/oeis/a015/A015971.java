@@ -17,7 +17,7 @@ public class A015971 extends Sequence0 {
     ++mN;
     long k = 0;
     while (true) {
-      if (Functions.SIGMA.z(++k).mod(Functions.PHI.z(mN + k)).isZero()) {
+      if (Functions.SIGMA1.z(++k).mod(Functions.PHI.z(mN + k)).isZero()) {
         return Z.valueOf(k);
       }
     }

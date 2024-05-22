@@ -23,9 +23,9 @@ public class A066417 extends Sequence1 {
       m >>>= 1;
       ++k;
     }
-    return Functions.SIGMA.z(2 * mN + 1)
-      .add(Functions.SIGMA.z(2 * mN - 1))
-      .add(Functions.SIGMA.z(m).shiftLeft(k + 1))
+    return Functions.SIGMA1.z(2 * mN + 1)
+      .add(Functions.SIGMA1.z(2 * mN - 1))
+      .add(Functions.SIGMA1.z(m).shiftLeft(k + 1))
       .subtract(6 * mN + 2);
   }
 }

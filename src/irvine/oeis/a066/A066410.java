@@ -18,7 +18,7 @@ public class A066410 extends Sequence1 {
     long m = mLim;
     mLim *= 10;
     while (m < mLim) {
-      final Z s = Functions.SIGMA.z(m);
+      final Z s = Functions.SIGMA1.z(m);
       max = max.max(s);
       ++m;
     }

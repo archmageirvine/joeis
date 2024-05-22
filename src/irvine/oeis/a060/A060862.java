@@ -15,7 +15,7 @@ public class A060862 extends Sequence1 {
   @Override
   public Z next() {
     mN = mN.add(1);
-    final int sign = mN.multiply2().subtract(Functions.SIGMA.z(mN)).signum();
+    final int sign = mN.multiply2().subtract(Functions.SIGMA1.z(mN)).signum();
     switch (sign) {
       case 0:
         return Z.TWO;

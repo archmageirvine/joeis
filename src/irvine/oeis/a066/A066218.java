@@ -19,7 +19,7 @@ public class A066218 extends Sequence1 {
     Z sigma = fs.sigma();
     for (final Z d : fs.divisors()) {
       if (d.longValue() != n) {
-        sigma = sigma.subtract(Functions.SIGMA.z(d));
+        sigma = sigma.subtract(Functions.SIGMA1.z(d));
         if (sigma.signum() < 0) {
           return false;
         }

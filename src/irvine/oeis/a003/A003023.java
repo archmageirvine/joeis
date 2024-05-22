@@ -24,7 +24,7 @@ public class A003023 extends Sequence1 {
       if (n.isProbablePrime()) {
         return step + 1;
       }
-      n = Functions.SIGMA.z(n).subtract(n);
+      n = Functions.SIGMA1.z(n).subtract(n);
       ++step;
     }
     return step;

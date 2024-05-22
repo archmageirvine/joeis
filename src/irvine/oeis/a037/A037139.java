@@ -13,7 +13,7 @@ public class A037139 extends Sequence1 {
   private Z mN = Z.valueOf(122);
 
   private Z s(final Z n) {
-    return Functions.SIGMA.z(n.abs()).subtract(n);
+    return Functions.SIGMA1.z(n.abs()).subtract(n);
   }
 
   @Override

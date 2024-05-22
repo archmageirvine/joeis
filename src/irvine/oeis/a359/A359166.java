@@ -13,6 +13,6 @@ public class A359166 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A359166() {
-    super(1, n -> Z.NEG_ONE.pow(Functions.BIG_OMEGA.l(n) + Functions.BIG_OMEGA.l(Functions.SIGMA.z(n))));
+    super(1, n -> Z.NEG_ONE.pow(Functions.BIG_OMEGA.l(n) + Functions.BIG_OMEGA.l(Functions.SIGMA1.z(n))));
   }
 }

@@ -38,7 +38,7 @@ public class A059447 extends Sequence0 {
     long solved = 0;
     mActiveNumbers = new TreeMap<>();
     for (final Map.Entry<Long, Z> e : t.entrySet()) {
-      final Z s = Functions.SIGMA.z(e.getValue()).subtract(e.getValue());
+      final Z s = Functions.SIGMA1.z(e.getValue()).subtract(e.getValue());
       if (Z.ONE.equals(s)) {
         // This number completed on step n, but unless it is the first we don't need it
         if (solved == 0) {
@@ -62,7 +62,7 @@ public class A059447 extends Sequence0 {
       final HashSet<Z> seen = new HashSet<>();
       seen.add(s);
       for (int k = 1; k < mN; ++k) {
-        s = Functions.SIGMA.z(s).subtract(s);
+        s = Functions.SIGMA1.z(s).subtract(s);
         if (Z.ONE.equals(s) || !seen.add(s)) {
           if (mVerbose) {
             StringUtils.message("n=" + mN + " Rejecting " + mM + " cycled or completed in " + k + " steps");
@@ -70,7 +70,7 @@ public class A059447 extends Sequence0 {
           continue outer; // Terminates before step n or enters a cycle
         }
       }
-      s = Functions.SIGMA.z(s).subtract(s);
+      s = Functions.SIGMA1.z(s).subtract(s);
       if (Z.ONE.equals(s)) {
         return Z.valueOf(mM);
       }

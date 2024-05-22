@@ -15,7 +15,7 @@ public class A330725 extends TupleTransformSequence {
   public A330725() {
     super(0, (n, s) -> {
       final Z u = s[0];
-      final Z t = Functions.SIGMA.z(n);
+      final Z t = Functions.SIGMA1.z(n);
       return u.add(u.compareTo(t) < 0 ? t : t.negate());
     }, "0", PREVIOUS);
   }

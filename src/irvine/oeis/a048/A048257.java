@@ -15,7 +15,7 @@ public class A048257 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Z sigma = Functions.SIGMA.z(++mN);
+      final Z sigma = Functions.SIGMA1.z(++mN);
       sigma.root(7);
       if (sigma.auxiliary() == 1) {
         return Z.valueOf(mN);

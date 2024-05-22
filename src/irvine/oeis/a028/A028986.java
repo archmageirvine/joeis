@@ -19,7 +19,7 @@ public class A028986 extends A002113 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (Predicates.PALINDROME.is(Functions.SIGMA.z(p))) {
+      if (Predicates.PALINDROME.is(Functions.SIGMA1.z(p))) {
         return p;
       }
     }

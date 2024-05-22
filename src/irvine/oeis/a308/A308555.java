@@ -14,6 +14,6 @@ public class A308555 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A308555() {
-    super(1, (self, n) -> Integers.SINGLETON.sum(1, n, k -> Stirling.secondKind(n, k).multiply(Functions.SIGMA.z(k))), "1");
+    super(1, (self, n) -> Integers.SINGLETON.sum(1, n, k -> Stirling.secondKind(n, k).multiply(Functions.SIGMA1.z(k))), "1");
   }
 }

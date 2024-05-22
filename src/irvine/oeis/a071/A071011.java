@@ -14,6 +14,6 @@ public class A071011 extends FilterSequence {
 
   /** Construct the sequence. */
   public A071011() {
-    super(1, new A001481(), v -> Functions.SIGMA.z(v).and(Z.THREE).isZero());
+    super(1, new A001481(), v -> Functions.SIGMA1.z(v).and(Z.THREE).isZero());
   }
 }

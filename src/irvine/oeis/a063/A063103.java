@@ -16,7 +16,7 @@ public class A063103 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (Functions.SIGMA.z(Jaguar.factor(++mN).unitarySigma()).isProbablePrime()) {
+      if (Functions.SIGMA1.z(Jaguar.factor(++mN).unitarySigma()).isProbablePrime()) {
         return Z.valueOf(mN);
       }
     }

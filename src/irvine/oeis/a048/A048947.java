@@ -12,7 +12,7 @@ public class A048947 extends A046528 {
 
   @Override
   public Z next() {
-    return Z.valueOf(Functions.SIGMA.z(super.next()).bitLength() - 1);
+    return Z.valueOf(Functions.SIGMA1.z(super.next()).bitLength() - 1);
   }
 }
 

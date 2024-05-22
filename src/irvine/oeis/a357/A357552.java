@@ -22,6 +22,6 @@ public class A357552 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Functions.SIGMA.z(mN).multiply(Binomial.binomial(2L * mN - 1, mN));
+    return Functions.SIGMA1.z(mN).multiply(Binomial.binomial(2L * mN - 1, mN));
   }
 }

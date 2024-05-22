@@ -17,7 +17,7 @@ public class A028980 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (Predicates.PALINDROME.is(Functions.SIGMA.z(mN))) {
+      if (Predicates.PALINDROME.is(Functions.SIGMA1.z(mN))) {
         return mN;
       }
     }

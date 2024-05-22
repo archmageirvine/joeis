@@ -17,7 +17,7 @@ public class A067651 extends A000040 {
   @Override
   public Z next() {
     while (true) {
-      if (Functions.SIGMA.z(++mN).equals(Functions.PHI.z(super.next().subtract(1)))) {
+      if (Functions.SIGMA1.z(++mN).equals(Functions.PHI.z(super.next().subtract(1)))) {
         return Z.valueOf(mN);
       }
       if (mVerbose && mN % 1000000 == 0) {

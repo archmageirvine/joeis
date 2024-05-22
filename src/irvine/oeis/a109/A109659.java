@@ -16,7 +16,7 @@ public class A109659 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final String s = Functions.SIGMA.z(++mN).pow(mN).toString();
+      final String s = Functions.SIGMA1.z(++mN).pow(mN).toString();
       int digitSum = 0;
       for (int k = 0; k < s.length(); ++k) {
         digitSum += s.charAt(k) - '0';

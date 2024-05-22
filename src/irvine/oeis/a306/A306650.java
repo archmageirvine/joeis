@@ -15,6 +15,6 @@ public class A306650 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A306650() {
-    super(1, n -> Rationals.SINGLETON.sumdiv(n, d -> new Q(Z.valueOf(d), Functions.SIGMA.z(d))).den());
+    super(1, n -> Rationals.SINGLETON.sumdiv(n, d -> new Q(Z.valueOf(d), Functions.SIGMA1.z(d))).den());
   }
 }

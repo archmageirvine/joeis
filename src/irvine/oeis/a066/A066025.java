@@ -18,7 +18,7 @@ public class A066025 extends Sequence1 {
     while (true) {
       final Z t = mS;
       final Z n = Z.valueOf(mN);
-      mS = Functions.SIGMA.z(++mN);
+      mS = Functions.SIGMA1.z(++mN);
       if (t.gcd(mS).compareTo(n) > 0) {
         return n;
       }

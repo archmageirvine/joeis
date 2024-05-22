@@ -21,7 +21,7 @@ public class A066075 extends Sequence1 {
   public Z next() {
     mP = mPrime.nextPrime(mP);
     while (mM <= mP) {
-      mA.increment(Functions.SIGMA.i(mM) - 1);
+      mA.increment(Functions.SIGMA1.i(mM) - 1);
       ++mM;
     }
     return Z.valueOf(mA.get(mP));

@@ -19,7 +19,7 @@ public class A019294 extends Sequence1 {
     Z m = mN;
     do {
       ++c;
-      m = Functions.SIGMA.z(m);
+      m = Functions.SIGMA1.z(m);
     } while (!m.mod(mN).isZero());
     return Z.valueOf(c);
   }

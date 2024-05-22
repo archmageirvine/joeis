@@ -12,6 +12,6 @@ public class A103895 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A103895() {
-    super(1, new A103890(), v -> Functions.SIGMA.z(v));
+    super(1, new A103890(), v -> Functions.SIGMA1.z(v));
   }
 }

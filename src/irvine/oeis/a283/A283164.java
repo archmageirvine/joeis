@@ -13,6 +13,6 @@ public class A283164 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A283164() {
-    super(0, (self, n) -> Integers.SINGLETON.sum(1, n, k -> Functions.SIGMA.z(6 * k).multiply(self.a(n - k))).divide(-n), "1");
+    super(0, (self, n) -> Integers.SINGLETON.sum(1, n, k -> Functions.SIGMA1.z(6 * k).multiply(self.a(n - k))).divide(-n), "1");
   }
 }

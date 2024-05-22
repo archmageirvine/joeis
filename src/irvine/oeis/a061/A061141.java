@@ -24,7 +24,7 @@ public class A061141 extends A000040 {
       if (mPrime.isPrime(t)) {
         return max;
       }
-      max = max.max(Functions.SIGMA.z(t));
+      max = max.max(Functions.SIGMA1.z(t));
     }
   }
 }

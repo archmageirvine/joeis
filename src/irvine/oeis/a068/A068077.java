@@ -11,13 +11,13 @@ import irvine.oeis.Sequence1;
 public class A068077 extends Sequence1 {
 
   private long mN = 0;
-  private Z mSigma = Functions.SIGMA.z(1);
+  private Z mSigma = Functions.SIGMA1.z(1);
 
   @Override
   public Z next() {
     while (true) {
       final Z t = mSigma;
-      mSigma = Functions.SIGMA.z(++mN + 1);
+      mSigma = Functions.SIGMA1.z(++mN + 1);
       if (t.add(mSigma).equals(4 * mN)) {
         return Z.valueOf(mN);
       }

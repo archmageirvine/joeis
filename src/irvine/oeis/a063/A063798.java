@@ -17,7 +17,7 @@ public class A063798 extends Sequence1 {
     while (true) {
       mN = mN.add(1);
       final Z n3 = mN.pow(3);
-      if (Functions.PHI.z(Functions.SIGMA.z(n3).subtract(n3)).isSquare()) {
+      if (Functions.PHI.z(Functions.SIGMA1.z(n3).subtract(n3)).isSquare()) {
         return mN;
       }
     }

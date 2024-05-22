@@ -16,7 +16,7 @@ public class A074918 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Z d = Functions.SIGMA.z(++mN).subtract(2L * mN).abs();
+      final Z d = Functions.SIGMA1.z(++mN).subtract(2L * mN).abs();
       if (d.compareTo(mA) > 0) {
         mA = d;
         return Z.valueOf(mN);

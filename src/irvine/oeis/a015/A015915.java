@@ -10,14 +10,14 @@ import irvine.oeis.Sequence1;
  */
 public class A015915 extends Sequence1 {
 
-  private Z mSigmaA = Functions.SIGMA.z(1);
-  private Z mSigmaB = Functions.SIGMA.z(2);
-  private Z mSigmaC = Functions.SIGMA.z(3);
-  private Z mSigmaD = Functions.SIGMA.z(4);
-  private Z mSigmaE = Functions.SIGMA.z(5);
-  private Z mSigmaF = Functions.SIGMA.z(6);
-  private Z mSigmaG = Functions.SIGMA.z(7);
-  private Z mSigmaH = Functions.SIGMA.z(8);
+  private Z mSigmaA = Functions.SIGMA1.z(1);
+  private Z mSigmaB = Functions.SIGMA1.z(2);
+  private Z mSigmaC = Functions.SIGMA1.z(3);
+  private Z mSigmaD = Functions.SIGMA1.z(4);
+  private Z mSigmaE = Functions.SIGMA1.z(5);
+  private Z mSigmaF = Functions.SIGMA1.z(6);
+  private Z mSigmaG = Functions.SIGMA1.z(7);
+  private Z mSigmaH = Functions.SIGMA1.z(8);
   private long mN = 8;
 
   @Override
@@ -31,7 +31,7 @@ public class A015915 extends Sequence1 {
       mSigmaE = mSigmaF;
       mSigmaF = mSigmaG;
       mSigmaG = mSigmaH;
-      mSigmaH = Functions.SIGMA.z(++mN);
+      mSigmaH = Functions.SIGMA1.z(++mN);
       if (mSigmaH.equals(sigma.add(8))) {
         return Z.valueOf(mN - 8);
       }

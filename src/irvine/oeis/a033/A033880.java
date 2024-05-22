@@ -27,6 +27,6 @@ public class A033880 extends AbstractSequence {
 
   @Override
   public Z next() {
-    return Functions.SIGMA.z(++mN).subtract(2 * mN);
+    return Functions.SIGMA1.z(++mN).subtract(2 * mN);
   }
 }

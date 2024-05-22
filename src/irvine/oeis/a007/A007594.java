@@ -17,7 +17,7 @@ public class A007594 extends Sequence1 {
     ++mN;
     long m = 1;
     while (true) {
-      final long sigma = Functions.SIGMA.l(++m);
+      final long sigma = Functions.SIGMA1.l(++m);
       final long s = sigma - m - 1;
       if (mN * s == m - 1) {
         return Z.valueOf(m);

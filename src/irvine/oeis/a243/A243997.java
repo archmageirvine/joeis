@@ -21,7 +21,7 @@ public class A243997 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    final Z t = Functions.SIGMA.z(mN).subtract(Functions.PHI.z(mN)).subtract(Functions.SIGMA0.z(mN));
+    final Z t = Functions.SIGMA1.z(mN).subtract(Functions.PHI.z(mN)).subtract(Functions.SIGMA0.z(mN));
     return t.isZero() ? Z.ZERO : Functions.PHI.z(t.abs());
   }
 }

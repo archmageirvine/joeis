@@ -16,7 +16,7 @@ public class A067195 extends A002321 {
   @Override
   public Z next() {
     while (true) {
-      final long n = Functions.SIGMA.l(++mN);
+      final long n = Functions.SIGMA1.l(++mN);
       mSum = mSum.add(Functions.MOBIUS.i(n));
       if (mSum.equals(super.next())) {
         return Z.valueOf(mN);

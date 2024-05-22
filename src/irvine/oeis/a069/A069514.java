@@ -15,7 +15,7 @@ public class A069514 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (Functions.REVERSE.z(Functions.SIGMA.z(++mN)).equals(Functions.SIGMA.z(Functions.REVERSE.z(mN)))) {
+      if (Functions.REVERSE.z(Functions.SIGMA1.z(++mN)).equals(Functions.SIGMA1.z(Functions.REVERSE.z(mN)))) {
         return Z.valueOf(mN);
       }
     }

@@ -54,7 +54,7 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
     Z result = mPoly[mColNo];
     // now some patches
     if (iPoly == 1 && (mRowNo & 1) == 1) {
-        result = result.negate();
+      result = result.negate();
     } else if ("D".equals(latticeType)) {
       result = result.abs();
     }
@@ -84,10 +84,10 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
       for (int k = 0; k <= 2 * d; ++k) { // denominator
         switch (k % 4) {
           case 0:
-            mDen[k] = binomial(d, k / 2);
+            mDen[k] = Binomial.binomial(d, k / 2);
             break;
           case 2:
-            mDen[k] = binomial(d, k / 2).negate();
+            mDen[k] = Binomial.binomial(d, k / 2).negate();
             break;
           case 1:
           case 3:
@@ -98,10 +98,10 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
       } // for denominator
 
       for (int n = 0; n <= 2 * d; ++n) { // initial terms
-        Z coeff = Z.TWO.pow(d - 1).multiply(binomial((d + 2L * n) / 2L - 1L, d - 1L));
+        Z coeff = Z.TWO.pow(d - 1).multiply(Binomial.binomial((d + 2L * n) / 2L - 1L, d - 1L));
         if ((n & 1) == 0) { // even
           for (int k = 0; k <= d; ++k) {
-            coeff = coeff.add(Z.TWO.pow(k).multiply(binomial(d, k)).multiply(binomial(n - 1L, k - 1L)));
+            coeff = coeff.add(Z.TWO.pow(k).multiply(Binomial.binomial(d, k)).multiply(Binomial.binomial(n - 1L, k - 1L)));
           } // for k
         }
         initTerms[n] = coeff;
@@ -111,27 +111,27 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
       for (int k = 0; k <= 2 * d; ++k) { // numerator
         Z sum = Z.ZERO;
         for (int j = 0; j <= k; ++j) {
-           sum = sum.add(mDen[j].multiply(initTerms[k - j]));
+          sum = sum.add(mDen[j].multiply(initTerms[k - j]));
         } // for j
         mNum[k] = sum;
       } // for numerator
-  //  if (false) {
-  //    System.out.println();
-  //    System.out.print("denominator");
-  //    for (int k = 0; k < mDen.length; ++k) {
-  //      System.out.print("," + mDen[k]);
-  //    }
-  //    System.out.println();
-  //    System.out.print("initial terms");
-  //    for (int k = 0; k < initTerms.length; ++k) {
-  //      System.out.print("," + initTerms[k]);
-  //    }
-  //    System.out.println();
-  //    System.out.print("numerator");
-  //    for (int k = 0; k < mNum.length; ++k) {
-  //      System.out.print("," + mNum[k]);
-  //    }
-  //  }
+      //  if (false) {
+      //    System.out.println();
+      //    System.out.print("denominator");
+      //    for (int k = 0; k < mDen.length; ++k) {
+      //      System.out.print("," + mDen[k]);
+      //    }
+      //    System.out.println();
+      //    System.out.print("initial terms");
+      //    for (int k = 0; k < initTerms.length; ++k) {
+      //      System.out.print("," + initTerms[k]);
+      //    }
+      //    System.out.println();
+      //    System.out.print("numerator");
+      //    for (int k = 0; k < mNum.length; ++k) {
+      //      System.out.print("," + mNum[k]);
+      //    }
+      //  }
 
     } else { // normal lattice
       if (latticeType.length() > 1) { // Dual: "A*" or "Ds" ...
@@ -142,17 +142,17 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
       for (int k = 0; k <= d; ++k) { // denominator
         switch (((d & 1) << 1) | (k & 1)) {
           case 0: // d even, k even
-            mDen[k] = binomial(d, k);
+            mDen[k] = Binomial.binomial(d, k);
             break;
           case 1: // d even, k odd
-            mDen[k] = binomial(d, k).negate();
+            mDen[k] = Binomial.binomial(d, k).negate();
             break;
           case 2: // d odd,  k even
-            mDen[k] = binomial(d, k);
+            mDen[k] = Binomial.binomial(d, k);
             break;
           default:
           case 3: // d odd,  k odd
-            mDen[k] = binomial(d, k).negate();
+            mDen[k] = Binomial.binomial(d, k).negate();
             break;
         } // switch
       } // for denominator
@@ -163,7 +163,7 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
             //  A, A103881
             //  d:= 4; CoefficientList[Series[Sum[(Binomial[d,k])^2*x^k, {k, 0, d}]/(1 - x)^d, {x,0,11}],x]
             //  {1, 20, 110, 340, 780, 1500, 2570, 4060, 6040, 8580, 11750, 15620}
-            coeff = binomial(d, k).square();
+            coeff = Binomial.binomial(d, k).square();
             break;
           case 'a':
             //  A*, A008535 (A204621 = coordinator triangle)
@@ -172,7 +172,7 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
             Z sumj = Z.ZERO;
             final int mink = Math.min(k, d - k);
             for (int j = 0; j <= mink; ++j) {
-              sumj = sumj.add(binomial(d + 1, j));
+              sumj = sumj.add(Binomial.binomial(d + 1, j));
             } // for j
             coeff = sumj;
             break;
@@ -180,26 +180,26 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
             //  B, A103883
             //  d:= 4; CoefficientList[Series[(Sum[(Binomial[2d + 1, 2k] - 2*k*Binomial[d, k])*x^k, {k, 0, d}])/(1 - x)^d, {x,0,11}],x]
             //  {1, 32, 224, 768, 1856, 3680, 6432, 10304, 15488, 22176, 30560, 40832}
-            coeff = binomial(2L * d + 1, 2L * k).subtract(Z.valueOf(2L * k).multiply(binomial(d, k)));
+            coeff = Binomial.binomial(2L * d + 1, 2L * k).subtract(Z.valueOf(2L * k).multiply(Binomial.binomial(d, k)));
             break;
           case 'C':
             //  C, A103884
             //  d:= 4; CoefficientList[Series[(Sum[Binomial[2n,2k]*x^k, {k, 0, d}])/(1-x)^d, {x,0,11}],x]
             //  {1, 32, 192, 608, 1408, 2720, 4672, 7392, 11008, 15648, 21440, 28512}
             //  a(k)=(2*n-2*k+1)*(n-(k-1))/(k*(2*k-1))*a(k-1),a(0)=1 for numerator
-            coeff = binomial(2L * d, 2L * k);
+            coeff = Binomial.binomial(2L * d, 2L * k);
             break;
           case 'D':
             //  D, A103903
             //  d:= 4; CoefficientList[Series[(Sum[(Binomial[2n,2k]-2*d*Binomial[d-2,k-1])*x^k, {k, 0, d}])/(1-x)^d, {x,0,11}],x]
             //  {1, 24, 144, 456, 1056, 2040, 3504, 5544, 8256, 11736, 16080, 21384}
-            coeff = binomial(2L * d, 2L * k).subtract(Z.valueOf(2L * d).multiply(binomial(d - 2, k - 1)));
+            coeff = Binomial.binomial(2L * d, 2L * k).subtract(Z.valueOf(2L * d).multiply(Binomial.binomial(d - 2, k - 1)));
             break;
           case 'd':
             //  D*, A035706
             //  d:= 12; CoefficientList[Series[(Sum[Binomial[d,k]*x^k, {k, 0, d}] + 2^d*x^(d/2))/(1 - x)^d, {x,0,11}],x]
             //  {1, 24, 288, 2312, 14016, 68664, 288096, 1071912, 3600768, 11036504, 31125408, 81412680}
-            coeff = binomial(d, k);
+            coeff = Binomial.binomial(d, k);
             if (k == d / 2) {
               coeff = coeff.add(Z.TWO.pow(d));
             }
@@ -208,33 +208,14 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
             //  Q, A035706
             //  d:= 11; CoefficientList[Series[Sum[Binomial[d,k]*x^k, {k, 0, d}]/(1 - x)^d, {x,0,11}],x]
             //  {1, 22, 242, 1782, 9922, 44726, 170610, 568150, 1690370, 4573910, 11414898, 26572086}
-            coeff = binomial(d, k);
+            coeff = Binomial.binomial(d, k);
             break;
           default:
             throw new RuntimeException("Unexpected typeCode " + typeCode);
         } // switch typeCode
         mNum[k] = coeff;
       } // for numerator
-   } // not D^+
-  }
-
-  /**
-   * Binomial coefficients: variant negative parameters which agrees with Maple and Mathematica for k &lt;= n.
-   * Cf. M.J. Kronenburg: "<a href="https://arxiv.org/pdf/1105.3689.pdf">The Binomial Coefficient for Negative Arguments</a>", Mar 30 2015
-   * and Wolfram, <a href="https://mathworld.wolfram.com/BinomialCoefficient.html">Binomial Coefficient</a>
-   * @param n upper index
-   * @param k lower index
-   * @return binomial coefficient
-   */
-  public static Z binomial(final long n, final long k) {
-    Z result = Binomial.binomial(n, k);
-    if (k < 0 && n < 0) {
-      result = Binomial.binomial(-k - 1, n - k);
-      if (-k % 2 != -n % 2) {
-        result = result.negate();
-      }
-    }
-    return result;
+    } // not D^+
   }
 
   @Override

@@ -17,16 +17,12 @@ public class A047921 extends Sequence0 {
   private int mN = 0;
   private int mM = -1;
 
-  private Z binomial(final int n, final int m) {
-    return m >= 0 && m <= n ? Binomial.binomial(n, m) : Z.ZERO;
-  }
-
   private Z a(final int n, final int k) {
     Z sum = Z.ZERO;
     if (n >= k) {
       for (int j = 0; j < k; ++j) {
         if (n - 2 * k + j >= 0) {
-          sum = sum.add(binomial(k - 1, j).multiply(binomial(n - k - 1, k - j)).multiply(Functions.FACTORIAL.z(n - 2 * k + j)));
+          sum = sum.add(Binomial.binomial(k - 1, j).multiply(Binomial.binomial(n - k - 1, k - j)).multiply(Functions.FACTORIAL.z(n - 2 * k + j)));
         }
       }
     }
@@ -42,7 +38,7 @@ public class A047921 extends Sequence0 {
     }
     Z sum = Z.ZERO;
     for (int k = 0; k <= n - 2; ++k) {
-      sum = sum.signedAdd(((k + n) & 1) == 0, binomial(k, m).multiply(a(n, k)));
+      sum = sum.signedAdd(((k + n) & 1) == 0, Binomial.binomial(k, m).multiply(a(n, k)));
     }
     return sum.abs();
   }

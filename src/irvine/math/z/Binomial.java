@@ -25,6 +25,9 @@ public final class Binomial {
     }
     Z r = Z.ONE;
     if (n < 0) {
+      if (m > n && m < 0) {
+        return Z.ZERO;
+      }
       for (long k = n - m + 1; k <= n; ++k) {
         r = r.multiply(k);
       }

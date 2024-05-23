@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A069773.
+ * A069782 Numbers k such that gcd(d(k^3), d(k)) = 2^w for some w.
  * @author Sean A. Irvine
  */
 public class A069782 extends FilterPositionSequence {

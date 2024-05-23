@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000142;
 
 /**
- * A069773.
+ * A069783 a(n) = gcd(d(n!^3), d(n!)) = A069780(n!), where d() is the number of divisors function.
  * @author Sean A. Irvine
  */
 public class A069783 extends Sequence1 {

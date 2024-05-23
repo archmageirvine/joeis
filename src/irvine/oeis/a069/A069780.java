@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069773.
+ * A069780 a(n) = gcd(d(n^3), d(n)).
  * @author Sean A. Irvine
  */
 public class A069780 extends Sequence1 {

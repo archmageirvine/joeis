@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068142.
+ * A069786 Smallest k&gt;n such that C(n+3,n)=A000332(n) divides A000332(k).
  * @author Sean A. Irvine
  */
 public class A069786 extends Sequence1 {

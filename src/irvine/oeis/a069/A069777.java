@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a104.A104878;
 
 /**
- * A069773.
+ * A069777 Array of q-factorial numbers n!_q, read by ascending antidiagonals.
  * @author Sean A. Irvine
  */
 public class A069777 extends A104878 {

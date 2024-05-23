@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A127103 Numbers n such that n^2 divides 3^n-1. 
+ * A127103 Numbers k such that k^2 divides 3^k-1.
  * @author Georg Fischer
  */
 public class A127103 extends Sequence1 {

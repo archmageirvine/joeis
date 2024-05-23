@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 import irvine.oeis.InverseSequence;
 
 /**
- * A069773.
+ * A069774 Permutation of natural numbers induced by the automorphism RoblDownCar_et_SwapInv! acting on the parenthesizations encoded by A014486.
  * @author Sean A. Irvine
  */
 public class A069774 extends InverseSequence {

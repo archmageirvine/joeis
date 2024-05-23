@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A069773.
+ * A104878 A sum-of-powers number triangle.
  * @author Sean A. Irvine
  */
 public class A104878 extends Sequence0 {

@@ -7,7 +7,7 @@ import irvine.oeis.a057.A057162;
 import irvine.oeis.a057.A057509;
 
 /**
- * A069773.
+ * A069775 Permutation of natural numbers induced by the automorphism gma069775! acting on the parenthesizations encoded by A014486.
  * @author Sean A. Irvine
  */
 public class A069775 extends A014486 {

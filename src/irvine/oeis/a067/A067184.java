@@ -1,7 +1,7 @@
 package irvine.oeis.a067;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -20,7 +20,7 @@ public class A067184 extends Sequence1 {
       for (final Z p : Jaguar.factor(++mN).toZArray()) {
         a = a.add(p.square());
       }
-      a = a.subtract(LongUtils.digitSumSquares(mN));
+      a = a.subtract(Functions.DIGIT_SUM_SQUARES.l(mN));
       if (a.isZero()) {
         return Z.valueOf(mN);
       }

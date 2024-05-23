@@ -275,22 +275,6 @@ public final class LongUtils {
   }
 
   /**
-   * Return the sums of the squares of the digits of a number
-   * @param n the number
-   * @return sum of squares of digits of <code>n</code>
-   */
-  public static long digitSumSquares(final long n) {
-    long m = Math.abs(n);
-    long sum = 0;
-    while (m != 0) {
-      final long r = m % 10;
-      sum += r * r;
-      m /= 10;
-    }
-    return sum;
-  }
-
-  /**
    * Read numbers from a stream into an array.  Empty lines or lines starting
    * with <code>#</code> are ignored. Behaviour on out of range numbers is
    * undefined.

@@ -1,6 +1,6 @@
 package irvine.oeis.a031;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -18,13 +18,13 @@ public class A031176 extends Sequence0 {
     long a = mN;
     long b = mN;
     do {
-      a = LongUtils.digitSumSquares(a);
-      b = LongUtils.digitSumSquares(LongUtils.digitSumSquares(b));
+      a = Functions.DIGIT_SUM_SQUARES.l(a);
+      b = Functions.DIGIT_SUM_SQUARES.l(Functions.DIGIT_SUM_SQUARES.l(b));
     } while (a != b);
     // a is definitely inside the period, so now count until we see it again
     long c = 0;
     do {
-      a = LongUtils.digitSumSquares(a);
+      a = Functions.DIGIT_SUM_SQUARES.l(a);
       ++c;
     } while (a != b);
     return Z.valueOf(c);

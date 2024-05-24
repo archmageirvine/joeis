@@ -25,7 +25,7 @@ public class A002729 extends AbstractSequence {
     super(0);
   }
 
-  // After maple program by Pab Ter
+  // After Maple program by Pab Ter
 
   private int mN = -1;
 

@@ -2394,3 +2394,5 @@ A069452 Half the number of 7 X n binary arrays with no path of adjacent 1's or a
 A069481 Number of conjugacy classes of irreducible maximal finite subgroups of GL_n(Q) (the group of invertible rational n X n matrices).
 A069544 Continued fraction for Feigenbaum's constant - 4 = 0.6692...
 A069738 Number of isomorphism classes of minimal n-extensions of a kind of homeomorphism of the circle.
+A069815 Decimal expansion of (negative of) real solution -1<x<1 to zeta(x)=sin(x).
+A069818 Let x = 1.757739951145463... be smallest real number that satisfies gcd(floor(x^m),m)=1 for all integers m>0; sequence gives floor(x^n).

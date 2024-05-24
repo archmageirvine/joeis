@@ -25,9 +25,9 @@ public final class Predicates {
   /** Test if a number is practical. */
   public static final Predicate PRACTICAL = new Practical();
   /** Test if a number has non-decreasing digits in base 10. */
-  public static final Predicate DIGIT_NONDECREASAING = new DigitNondecreasing();
+  public static final Predicate DIGIT_NONDECREASING = new DigitNondecreasing();
   /** Test if a number has non-increasing digits in base 10. */
-  public static final Predicate DIGIT_NONINCREASAING = new DigitNonincreasing();
+  public static final Predicate DIGIT_NONINCREASING = new DigitNonincreasing();
   /** Test if a number contains a zero digit. */
   public static final Predicate DIGIT_CONTAINS_ZERO = new DigitContainsZero();
   /** Test if a number contains undulating digits. */

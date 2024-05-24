@@ -13,6 +13,6 @@ public class A273045 extends FilterSequence {
 
   /** Construct the sequence. */
   public A273045() {
-    super(1, new A000045(), v -> Predicates.DIGIT_NONDECREASAING.is(v));
+    super(1, new A000045(), v -> Predicates.DIGIT_NONDECREASING.is(v));
   }
 }

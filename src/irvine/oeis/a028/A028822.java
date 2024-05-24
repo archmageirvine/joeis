@@ -12,6 +12,6 @@ public class A028822 extends FilterSequence {
 
   /** Construct the sequence. */
   public A028822() {
-    super(1, new A000290(), n -> Predicates.DIGIT_NONINCREASAING.is(n));
+    super(1, new A000290(), n -> Predicates.DIGIT_NONINCREASING.is(n));
   }
 }

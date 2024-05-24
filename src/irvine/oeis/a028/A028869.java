@@ -14,7 +14,7 @@ public class A028869 extends A000040 {
   public Z next() {
     while (true) {
       final Z p = super.next().square();
-      if (Predicates.DIGIT_NONINCREASAING.is(p)) {
+      if (Predicates.DIGIT_NONINCREASING.is(p)) {
         return p;
       }
     }

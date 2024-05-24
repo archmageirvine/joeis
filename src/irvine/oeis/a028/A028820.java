@@ -17,7 +17,7 @@ public class A028820 extends Sequence1 {
     while (true) {
       mN = mN.add(1);
       final Z n2 = mN.square();
-      if (Predicates.DIGIT_NONDECREASAING.is(n2)) {
+      if (Predicates.DIGIT_NONDECREASING.is(n2)) {
         return n2;
       }
     }

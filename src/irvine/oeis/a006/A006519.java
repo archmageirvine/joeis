@@ -34,7 +34,7 @@ public class A006519 extends AbstractSequence implements DirectSequence {
   @Override
   public Z a(final Z n) {
     n.makeOdd();
-    return Z.ONE.shiftLeft(mN.auxiliary());
+    return Z.ONE.shiftLeft(n.auxiliary());
   }
 
   @Override

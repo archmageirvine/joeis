@@ -15,7 +15,7 @@ import irvine.util.string.StringUtils;
 public class FilterPositionSequence extends FilterSequence {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
-  private long mN; // current index
+  private Integer mN; // current index
 
   /**
    * Creates a sequence of the positions where a condition is met.
@@ -35,7 +35,7 @@ public class FilterPositionSequence extends FilterSequence {
    * @param seq underlying sequence
    * @param predicate predicate used for filtering
    */
-  public FilterPositionSequence(final int offset, final int start, final Sequence seq, final BiPredicate<Long, Z> predicate) {
+  public FilterPositionSequence(final int offset, final int start, final Sequence seq, final BiPredicate<Integer, Z> predicate) {
     super(offset, seq, predicate);
     mN = start - 1;
   }

@@ -18,6 +18,9 @@ import irvine.oeis.Sequence0;
  */
 public class A069831 extends Sequence0 {
 
+  // todo this misses K_5 for 10 edges
+  // todo is there a direct way from allowed partitions
+
   private static final Comparator<Integer> COMPARATOR = (a, b) -> Integer.compare(b, a);
 
   private Set<Graph> mA = Collections.emptySet();

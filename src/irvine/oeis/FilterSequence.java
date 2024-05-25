@@ -49,12 +49,12 @@ public class FilterSequence extends AbstractSequence {
   public static final Predicate<Z> SEMIPRIME = k -> Jaguar.factor(k).isSemiprime();
 
   /** Divisible by index. */
-  public static final BiPredicate<Long, Z> DIVISIBLE_BY_INDEX = (k, v) -> v.mod(k) == 0;
+  public static final BiPredicate<Integer, Z> DIVISIBLE_BY_INDEX = (k, v) -> v.mod(k) == 0;
 
   protected final Sequence mSeq;
   protected final Predicate<Z> mPredicate;
-  protected final BiPredicate<Long, Z> mBiPredicate;
-  private long mN = 0;
+  protected final BiPredicate<Integer, Z> mBiPredicate;
+  private Integer mN = 0;
 
   /**
    * Filter with both the index and sequence value.
@@ -62,7 +62,7 @@ public class FilterSequence extends AbstractSequence {
    * @param seq underlying sequence
    * @param predicate predicate used for filtering
    */
-  public FilterSequence(final int offset, final Sequence seq, final BiPredicate<Long, Z> predicate) {
+  public FilterSequence(final int offset, final Sequence seq, final BiPredicate<Integer, Z> predicate) {
     super(offset);
     mSeq = seq;
     mPredicate = null;

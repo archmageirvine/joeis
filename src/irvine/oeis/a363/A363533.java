@@ -3,22 +3,34 @@ package irvine.oeis.a363;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.LambdaSequence;
+import irvine.oeis.DirectSequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A363533 Least k such that n*F(k)+1 is prime, where F = A000045 is the Fibonacci sequence, or -1 if no such k exists.
  * @author Georg Fischer
+ * @author Sean A. Irvine
  */
-public class A363533 extends LambdaSequence {
+public class A363533 extends Sequence1 implements DirectSequence {
 
-  /** Construct the sequence. */
-  public A363533() {
-    super(1, n -> {
-      int k = 1;
-      while (!Functions.FIBONACCI.z(k).multiply(n).add(1).isProbablePrime()) {
-        k++;
-      }
-      return Z.valueOf(k);
-    });
+  private int mN = 0;
+
+  @Override
+  public Z a(final Z n) {
+    int k = 1;
+    while (!Functions.FIBONACCI.z(k).multiply(n).add(1).isProbablePrime()) {
+      k++;
+    }
+    return Z.valueOf(k);
+  }
+
+  @Override
+  public Z a(final int n) {
+    return a(Z.valueOf(n));
+  }
+
+  @Override
+  public Z next() {
+    return a(++mN);
   }
 }

@@ -13,6 +13,6 @@ public class A122691 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A122691() {
-    super(1, n -> LeastPrimeFactorizer.lpf(Z.TEN.pow(6 * n - 4).multiply(9).subtract(11).divide(7)));
+    super(1, n -> LeastPrimeFactorizer.lpf(Z.TEN.pow(6L * n - 4).multiply(9).subtract(11).divide(7)));
   }
 }

@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
@@ -20,16 +20,16 @@ public class A007947 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    return Jaguar.factor(n).squareFreeKernel();
+    return Functions.SQUARE_FREE_KERNEL.z(n);
   }
 
   @Override
   public Z a(final Z n) {
-    return Jaguar.factor(n).squareFreeKernel();
+    return Functions.SQUARE_FREE_KERNEL.z(n);
   }
 
   @Override
   public Z next() {
-    return Jaguar.factor(++mN).squareFreeKernel();
+    return Functions.SQUARE_FREE_KERNEL.z(++mN);
   }
 }

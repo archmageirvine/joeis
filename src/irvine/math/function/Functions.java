@@ -67,6 +67,10 @@ public final class Functions {
   public static final Function1 LPF = new LeastPrimeFactor(); // =A020639
   /** Greatest prime factor. */
   public static final Function1 GPF = new GreatestPrimeFactor(); // =A006530
+  /** Square free kernel. */
+  public static final Function1 SQUARE_FREE_KERNEL = new SquareFreeKernel(); // =A007947
+  /** Square free kernel. */
+  public static final Function1 RAD = SQUARE_FREE_KERNEL; // =A007947, convenient synonym
   /** Carmichael lambda function. */
   public static final Function1 CARMICHAEL_LAMBDA = new CarmichaelLambda(); // =A002322
   /** Variant of the Carmichael lambda function. */

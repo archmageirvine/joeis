@@ -52,11 +52,11 @@ public final class Functions {
   /** Number of distinct prime divisors counted with multiplicity function. */
   public static final Function1 BIG_OMEGA = new BigOmega(); // =A001222
   /** Sum of distinct prime divisors function. */
-  public static final Function1 SOPF = new Sopf(); // A008472
+  public static final Function1 SOPF = new Sopf(); // =A008472
   /** Sum of prime divisors counted with multiplicity function. */
   public static final Function1 SOPFR = new Sopfr(); // =A001414
   /** The unique square free integer dividing a number. */
-  public static final Function1 CORE = new Core(); // A007913
+  public static final Function1 CORE = new Core(); // =A007913
   /** Mobius function. */
   public static final Function1 MOBIUS = new Mobius(); // =A008683 
   /** Moebius function. */

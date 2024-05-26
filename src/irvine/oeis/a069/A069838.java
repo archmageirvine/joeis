@@ -7,6 +7,7 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
+import irvine.util.string.StringUtils;
 
 /**
  * A069831.
@@ -14,6 +15,7 @@ import irvine.oeis.Sequence1;
  */
 public class A069838 extends Sequence1 {
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 0;
   private final DefaultMatrix<Q> mM = new DefaultMatrix<>(0, 0, Q.ZERO);
 
@@ -32,6 +34,9 @@ public class A069838 extends Sequence1 {
       }
       if (new MatrixField<>(mN, Rationals.SINGLETON).det(mM).isZero()) {
         return Z.valueOf(mN);
+      }
+      if (mVerbose && mN % 100 == 0) {
+        StringUtils.message("Search completed to " + mN);
       }
     }
   }

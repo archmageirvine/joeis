@@ -1,7 +1,5 @@
 package irvine.oeis.a069;
 
-import java.util.ArrayList;
-
 import irvine.math.graph.GraphUtils;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
@@ -25,11 +23,10 @@ public class A069831 extends Sequence0 {
     int[] p;
     while ((p = part.next()) != null) {
       // Compute 2 * p, so that every "vertex" is even
-      final ArrayList<Integer> v = new ArrayList<>();
-      for (final int t : p) {
-        v.add(2 * t);
+      for (int k = 0; k < p.length; ++k) {
+        p[k] *= 2;
       }
-      if (GraphUtils.isGraph(v)) {
+      if (GraphUtils.isGraph(p)) {
         ++cnt;
       }
     }

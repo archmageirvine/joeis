@@ -1125,10 +1125,31 @@ public final class GraphUtils {
 
   /**
    * Test if a given vector of vertex degrees could be that of a simple graph.
+   * WARNING: This method is destructive on the content of the vector.
    * @param degreeVector degree vector
    * @return true if this vector could be from a graph.
    */
-  public static boolean isGraph(ArrayList<Integer> degreeVector) {
+  public static boolean isGraph(final int[] degreeVector) {
+    int s = degreeVector.length;
+    while (true) {
+      Arrays.sort(degreeVector, 0, s);
+      // Check if all the elements are equal to 0, we are done
+      if (degreeVector[s - 1] == 0) {
+        return true;
+      }
+      final int v = degreeVector[--s];
+      if (v > s) {
+        return false; // There are not enough remaining vertices
+      }
+      for (int k = 1; k <= v; ++k) {
+        if (--degreeVector[s - k] < 0) {
+          return false; // There is not enough free connections
+        }
+      }
+    }
+  }
+  /*
+    public static boolean isGraph(ArrayList<Integer> degreeVector) {
     while (true) {
       degreeVector.sort(Collections.reverseOrder());
       // Check if all the elements are equal to 0, we are done
@@ -1150,4 +1171,6 @@ public final class GraphUtils {
       }
     }
   }
+
+   */
 }

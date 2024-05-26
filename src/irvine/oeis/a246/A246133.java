@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A246133 Binomial(2n, n) - 2 mod n^3.
+ * A246133 a(n) = (binomial(2n, n) - 2) mod n^3.
  * @author Georg Fischer
  */
 public class A246133 extends Sequence1 {

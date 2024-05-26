@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A138412 a(n) = p^5*(p-1) where p =prime(n).
+ * A138412 a(n) = p^5*(p-1) where p = prime(n).
  * @author Georg Fischer
  */
 public class A138412 extends A000040 {

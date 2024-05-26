@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069831.
+ * A069832 Prefixing, suffixing or inserting a 7 in the number anywhere gives a prime.
  * @author Sean A. Irvine
  */
 public class A069832 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.triangle.LambdaArray;
 
 /**
- * A372968 Square array T(n,k), n &gt;= 1, k &gt;= 1, read by antidiagonals, where T(n,k) = Sum_{1 &lt;= x_1, x_2, ... , x_k &lt;= n} n/gcd(x_1, x_2, ... , x_k, n).
+ * A372968 Square array T(n,k), n &gt;= 1, k &gt;= 1, read by antidiagonals, where T(n,k) = Sum_{1 &lt;= x_1, x_2, ..., x_k &lt;= n} n/gcd(x_1, x_2, ..., x_k, n).
  * @author Georg Fischer
  */
 public class A372968 extends LambdaArray {

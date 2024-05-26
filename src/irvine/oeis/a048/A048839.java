@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A048839 Numbers n dividing P(n)!, where P(n) is the largest prime factor of n.
+ * A048839 Numbers k dividing P(k)!, where P(k) is the largest prime factor of k.
  * @author Sean A. Irvine
  */
 public class A048839 extends Sequence1 {

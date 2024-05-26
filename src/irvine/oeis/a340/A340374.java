@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A340374 a(n) = 1 if the odd part of n satisfies Korselt&apos;s criterion (is in A324050), 0 otherwise.
+ * A340374 a(n) = 1 if the odd part of n satisfies Korselt's criterion (is in A324050), 0 otherwise.
  * @author Georg Fischer
  */
 public class A340374 extends LambdaSequence {

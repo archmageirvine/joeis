@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A075543 a[n] = a[n-1] + digit sum(n) - 1.
+ * A075543 a(n) = a(n-1) + digit sum(n + 2) with a(0) = 2.
  * @author Georg Fischer
  */
 public class A075543 extends MultiTransformSequence {

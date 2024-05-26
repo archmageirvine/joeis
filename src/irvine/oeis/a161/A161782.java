@@ -8,7 +8,7 @@ import irvine.oeis.a031.A031131;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A161782 a(n) = sum of all numbers from and including (prime(n+1)-prime(n)) to and including (prime(n+2)-prime(n).)
+ * A161782 a(n) = sum of all numbers from and including (prime(n+1)-prime(n)) to and including (prime(n+2)-prime(n).).
  * @author Georg Fischer
  */
 public class A161782 extends MultiTransformSequence {

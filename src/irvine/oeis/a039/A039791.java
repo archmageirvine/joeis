@@ -15,7 +15,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A039791.
+ * A039791 Sequence arising in search for Legendre sequences.
  * @author Sean A. Irvine
  */
 public class A039791 extends Sequence1 {

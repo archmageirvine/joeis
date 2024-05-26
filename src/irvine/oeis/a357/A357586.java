@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002467;
 import irvine.oeis.triangle.PartitionTransformTriangle;
 
 /**
- * A357586 Triangle read by rows. Convolution triangle of A002467 (number of permutations with fixpoints).
+ * A357586 Triangle read by rows. Convolution triangle of A002467 (number of permutations with fixed points).
  * @author Georg Fischer
  */
 public class A357586 extends PartitionTransformTriangle {

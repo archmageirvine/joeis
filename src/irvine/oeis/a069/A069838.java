@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A069831.
+ * A069838 Let M_k be the k X k matrix, M_(i,j) = 1 if i^2 + j^2 is squarefree, M_(i,j) = 0 otherwise; sequence gives values of k such that det(M_k) = 0.
  * @author Sean A. Irvine
  */
 public class A069838 extends Sequence1 {

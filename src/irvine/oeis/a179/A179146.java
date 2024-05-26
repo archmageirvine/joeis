@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a081.A081119;
 
 /**
- * A179146 Numbers n such that Mordell&apos;s equation y^2 = x^3 + n has exactly 2 integral solutions.
+ * A179146 Numbers n such that Mordell's equation y^2 = x^3 + n has exactly 2 integral solutions.
  * @author Georg Fischer
  */
 public class A179146 extends FilterPositionSequence {

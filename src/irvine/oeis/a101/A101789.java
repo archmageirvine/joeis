@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a002.A002515;
 
 /**
- * A101789 8n-1 such that 4n-1 and 8n-1 are primes.
+ * A101789 Safe primes of the form 8*k-1: primes of the form 8*k-1 such that 4*k-1 is also a prime.
  * @author Georg Fischer
  */
 public class A101789 extends AbstractSequence {

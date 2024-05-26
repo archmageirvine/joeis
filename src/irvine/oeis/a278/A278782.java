@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000041;
 
 /**
- * A278782 Numbers n such that A000041(n) is of the form 2^5 * k for odd k.
+ * A278782 Numbers m such that A000041(m) is of the form 2^5 * k for odd k.
  * @author Georg Fischer
  */
 public class A278782 extends FilterPositionSequence {

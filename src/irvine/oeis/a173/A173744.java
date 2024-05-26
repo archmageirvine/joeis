@@ -6,7 +6,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A173744 Numbers n such that tau(phi(n))= phi(rad(n))
+ * A173744 Numbers n such that tau(phi(n))= phi(rad(n)).
  * @author Georg Fischer
  */
 public class A173744 extends FilterNumberSequence {

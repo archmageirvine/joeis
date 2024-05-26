@@ -6,7 +6,7 @@ import irvine.oeis.a277.A277324;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A284267 Number of terms with coefficient 1 in the Stern polynomial B(2n+1,x): a(n) = A056169(A277324(n))
+ * A284267 Number of terms with coefficient 1 in the Stern polynomial B(2n+1,x): a(n) = A056169(A277324(n)).
  * @author Georg Fischer
  */
 public class A284267 extends DirectTransformSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A069831.
+ * A069831 Number of graphical partitions of simple Eulerian graphs (partitions given by the degrees of vertices of simple (no loops or multiple edges) graphs having only vertices of even degrees) having n edges.
  * @author Sean A. Irvine
  */
 public class A069831 extends Sequence0 {

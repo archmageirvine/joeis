@@ -6,7 +6,7 @@ import irvine.oeis.PartialProductSequence;
 import irvine.oeis.a001.A001122;
 
 /**
- * A108975 Product of all primes with primitive root 2 less than or equal to some prime with primitive root 2.
+ * A108975 Partial products of primes with primitive root 2.
  * @author Georg Fischer
  */
 public class A108975 extends PartialProductSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A122691 a(n)=least prime factor of (9*10^m-11)/7, m=6n-4.
+ * A122691 a(n) is the least prime factor of (9 * 10^(6*n-4) - 11) / 7.
  * @author Georg Fischer
  */
 public class A122691 extends LambdaSequence {

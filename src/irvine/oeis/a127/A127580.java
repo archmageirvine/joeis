@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A127580 Numbers n for which 64n+63 is prime.
+ * A127580 Numbers k such that 64k+63 is prime.
  * @author Georg Fischer
  */
 public class A127580 extends PrimePositionSubsequence {

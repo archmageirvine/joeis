@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000041;
 
 /**
- * A278779 Numbers n such that A000041(n) is of the form 2^2 * k for odd k.
+ * A278779 Numbers m such that A000041(m) is of the form 2^2 * k for odd k.
  * @author Georg Fischer
  */
 public class A278779 extends Sequence1 {

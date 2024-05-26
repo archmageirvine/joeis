@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A128829 Numbers n such that 6*n^2 + 17 is prime.
+ * A128829 Numbers k such that 6*k^2 + 17 is prime.
  * @author Georg Fischer
  */
 public class A128829 extends PrimePositionSubsequence {

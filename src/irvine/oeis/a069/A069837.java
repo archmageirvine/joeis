@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069831.
+ * A069837 Smallest prime which is a concatenation of n primes.
  * @author Sean A. Irvine
  */
 public class A069837 extends Sequence1 {

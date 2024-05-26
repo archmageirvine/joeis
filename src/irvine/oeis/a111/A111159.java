@@ -4,7 +4,7 @@ package irvine.oeis.a111;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A111159 Numbers n such that A111075(n) is odd.
+ * A111159 Numbers k such that A111075(k) is odd.
  * @author Georg Fischer
  */
 public class A111159 extends FilterPositionSequence {

@@ -2,12 +2,13 @@ package irvine.oeis.a023;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A023416 Number of 0's in binary expansion of n.
  * @author Sean A. Irvine
  */
-public class A023416 extends AbstractSequence {
+public class A023416 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -27,6 +28,17 @@ public class A023416 extends AbstractSequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    return mN.isZero() ? Z.ONE : Z.valueOf(mN.bitLength() - mN.bitCount());
+    return a(mN);
   }
+
+  @Override
+  public Z a(final Z n) {
+    return n.isZero() ? Z.ONE : Z.valueOf(n.bitLength() - n.bitCount());
+  }
+
+  @Override
+  public Z a(final int n) {
+    return a(Z.valueOf(n));
+  }
+
 }

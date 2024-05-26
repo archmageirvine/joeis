@@ -9,6 +9,7 @@ import irvine.oeis.AbstractSequence;
 /**
  * Generate the rows of a triangle T[n,k] directly from a lambda expression for each element.
  * In contrast to {@link Triangle}, this class handles offsets, and starting values for row and column indexes.
+ * If the upper index in the range is smaller than the lower index, that row is silently skipped.
  * @author Georg Fischer
  */
 public abstract class LambdaTable extends AbstractSequence implements DirectArray {
@@ -32,9 +33,8 @@ public abstract class LambdaTable extends AbstractSequence implements DirectArra
     mRowMin = rowMin;
     mRow = mRowMin - 1;
     mColRange = colRange;
-    final Integer[] range = mColRange.apply(mRow);
-    mColMax = range[1];
-    mCol = mColMax;
+    mColMax = 0;
+    mCol = 0; // forces a row increment in next()
     mLambda = lambda;
   }
 
@@ -59,11 +59,11 @@ public abstract class LambdaTable extends AbstractSequence implements DirectArra
    */
   @Override
   public Z next() {
-    if (++mCol > mColMax) {
+    while (++mCol > mColMax) {
       ++mRow;
       final Integer[] range = mColRange.apply(mRow);
       mColMax = range[1];
-      mCol = range[0];
+      mCol = range[0] - 1;
     }
     return mLambda.apply(mRow, mCol);
   }

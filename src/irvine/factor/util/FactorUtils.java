@@ -32,17 +32,27 @@ public final class FactorUtils {
   }
 
   /**
-   * Return the smallest number have the same prime signature as the given number.
-   * @param n number to get corresponding least prime signature for
+   * Return the prime signature of the number.
+   * @param n number to get prime signature for
    * @return least number with same prime signature
    */
-  public static Z leastPrimeSignature(final Z n) {
+  public static int[] primeSignature(final Z n) {
     final FactorSequence fs = Jaguar.factor(n);
     final int[] signature = new int[fs.omega()];
     int j = 0;
     for (final Z p : fs.toZArray()) {
       signature[j++] = fs.getExponent(p);
     }
+    return signature;
+  }
+
+  /**
+   * Return the smallest number have the same prime signature as the given number.
+   * @param n number to get corresponding least prime signature for
+   * @return least number with same prime signature
+   */
+  public static Z leastPrimeSignature(final Z n) {
+    final int[] signature = primeSignature(n);
     Arrays.sort(signature);
     return signatureToZ(signature);
   }

@@ -29,8 +29,8 @@ public class A069832 extends Sequence1 {
       // Handle cases where appending 7 leads to a prime
       return false;
     }
-    if (mN %10 == 5) {
-      // All even numbers and multiples of 5 are excluded
+    if (mN % 10 == 5) {
+      // All multiples of 5 are excluded
       return false;
     }
     // The existing last digit could conceivably lead to a prime

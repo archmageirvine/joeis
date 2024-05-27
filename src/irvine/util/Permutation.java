@@ -161,7 +161,11 @@ public class Permutation {
   public static Z permToZ(final int[] p) {
     Z t = Z.ZERO;
     for (final int v : p) {
-      t = t.multiply(10).add(v);
+      long m = 10;
+      while (v >= m) {
+        m *= 10;
+      }
+      t = t.multiply(m).add(v);
     }
     return t;
   }

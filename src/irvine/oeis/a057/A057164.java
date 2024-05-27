@@ -10,7 +10,12 @@ import irvine.oeis.a014.A014486;
  */
 public class A057164 extends A014486 {
 
-  private static Z bcr(final Z n) {
+  /**
+   * Reverse.
+   * @param n parameter
+   * @return reverse
+   */
+  public static Z bcr(final Z n) {
     final Z mask = Z.ONE.shiftLeft(n.bitLength()).subtract(1);
     return Functions.REVERSE.z(2, n).xor(mask);
   }

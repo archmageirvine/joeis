@@ -71,6 +71,8 @@ public final class Functions {
   public static final Function1 SQUARE_FREE_KERNEL = new SquareFreeKernel(); // =A007947
   /** Square free kernel. */
   public static final Function1 RAD = SQUARE_FREE_KERNEL; // =A007947, convenient synonym
+  /** Chowla function. */
+  public static final Function1 CHOWLA = new Chowla(); // =A048050
   /** Carmichael lambda function. */
   public static final Function1 CARMICHAEL_LAMBDA = new CarmichaelLambda(); // =A002322
   /** Variant of the Carmichael lambda function. */

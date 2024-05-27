@@ -26,7 +26,12 @@ public class A057501 extends A014486 {
     }
   }
 
-  private static Z rotateHandshakes(final Z n) {
+  /**
+   * Rotate handshakes by one position.
+   * @param h S-expression
+   * @return rotated version
+   */
+  public static Z rotateHandshakes(final Z n) {
     return rotateHandshakesP(SExpression.binexp2pars(n)).toZ();
   }
 

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069917.
+ * A069917 In base 6, the reversal of n equals the sum of the reversals of the proper divisors of n.
  * @author Sean A. Irvine
  */
 public class A069917 extends Sequence1 {

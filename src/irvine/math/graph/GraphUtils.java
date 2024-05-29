@@ -1148,29 +1148,4 @@ public final class GraphUtils {
       }
     }
   }
-  /*
-    public static boolean isGraph(ArrayList<Integer> degreeVector) {
-    while (true) {
-      degreeVector.sort(Collections.reverseOrder());
-      // Check if all the elements are equal to 0, we are done
-      if (degreeVector.get(0) == 0) {
-        return true;
-      }
-
-      final int v = degreeVector.remove(0);
-      if (v > degreeVector.size()) {
-        return false; // There are not enough remaining vertices
-      }
-
-      for (int k = 0; k < v; k++) {
-        final int t = degreeVector.get(k) - 1;
-        if (t < 0) {
-          return false; // There is not enough free connections
-        }
-        degreeVector.set(k, t);
-      }
-    }
-  }
-
-   */
 }

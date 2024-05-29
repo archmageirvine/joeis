@@ -71,6 +71,8 @@ public final class Functions {
   public static final Function1 SQUARE_FREE_KERNEL = new SquareFreeKernel(); // =A007947
   /** Square free kernel. */
   public static final Function1 RAD = SQUARE_FREE_KERNEL; // =A007947, convenient synonym
+  /** Product of divisors. */
+  public static final Function1 POD = new ProductOfDivisors();
   /** Chowla function. */
   public static final Function1 CHOWLA = new Chowla(); // =A048050
   /** Carmichael lambda function. */
@@ -123,6 +125,8 @@ public final class Functions {
   public static final Function2 DIGIT_SUM =  new DigitSum(); // =A001370(10, = A000120(2,
   /** Sum of the squares of the digits in a number. */
   public static final Function2 DIGIT_SUM_SQUARES = new DigitSumSquares();
+  /** Sum of the cubes of the digits in a number. */
+  public static final Function2 DIGIT_SUM_CUBES = new DigitSumCubes();
   /** Digit sum root. */
   public static final Function2 DIGIT_SUM_ROOT = new DigitSumRoot();
   /** Product of digits. */

@@ -10,7 +10,7 @@ import junit.framework.TestCase;
 public class DigitNonzeroProductTest extends TestCase {
 
   public void test() {
-    final Function2 f = new DigitNonzeroProduct();
+    final Function2D f = new DigitNonzeroProduct();
     assertEquals(Z.ONE, f.z(Z.ZERO));
     assertEquals(Z.FOUR, f.z(Z.FOUR));
     assertEquals(Z.EIGHT, f.z(24));

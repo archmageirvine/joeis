@@ -6,7 +6,7 @@ import irvine.math.z.Z;
  * Digit product persistence (number of steps in digit product root).
  * @author Sean A. Irvine
  */
-class DigitProductPersistence extends AbstractFunction2 {
+class DigitProductPersistence extends AbstractFunction2D {
 
   @Override
   public long getDefault() {

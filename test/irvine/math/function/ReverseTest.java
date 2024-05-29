@@ -10,7 +10,7 @@ import junit.framework.TestCase;
 public class ReverseTest extends TestCase {
 
   public void testReverse() {
-    final Function2 f = new Reverse();
+    final Function2D f = new Reverse();
     assertEquals(Z.ZERO, f.z(Z.ZERO));
     assertEquals(987654321, f.l(new Z("123456789")));
     assertEquals(0, f.l(0));

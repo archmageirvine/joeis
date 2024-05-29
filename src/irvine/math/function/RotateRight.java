@@ -6,7 +6,7 @@ import irvine.math.z.Z;
  * Rotate a number by one digit to the right.
  * @author Sean A. Irvine
  */
-class RotateRight extends AbstractFunction2 {
+class RotateRight extends AbstractFunction2D {
 
   @Override
   public long getDefault() {

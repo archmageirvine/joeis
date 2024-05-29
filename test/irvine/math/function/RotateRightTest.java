@@ -9,7 +9,7 @@ import junit.framework.TestCase;
 public class RotateRightTest extends TestCase {
 
   public void test() {
-    final Function2 f = new RotateRight();
+    final Function2D f = new RotateRight();
     assertEquals(0, f.l(0));
     assertEquals(1, f.l(1));
     assertEquals(1, f.l(10));

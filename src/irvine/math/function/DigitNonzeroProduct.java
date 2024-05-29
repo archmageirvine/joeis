@@ -6,7 +6,7 @@ import irvine.math.z.Z;
  * Product of nonzero digits.
  * @author Sean A. Irvine
  */
-class DigitNonzeroProduct extends AbstractFunction2 {
+class DigitNonzeroProduct extends AbstractFunction2D {
 
   @Override
   public long getDefault() {

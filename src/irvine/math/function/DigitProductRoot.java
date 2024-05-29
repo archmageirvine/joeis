@@ -6,7 +6,7 @@ import irvine.math.z.Z;
  * Digit product root.
  * @author Sean A. Irvine
  */
-class DigitProductRoot extends AbstractFunction2 {
+class DigitProductRoot extends AbstractFunction2D {
 
   @Override
   public long getDefault() {

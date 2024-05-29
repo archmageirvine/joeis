@@ -7,7 +7,7 @@ import irvine.math.z.Z;
  * Multiplicative order of a number in the integers modulo a small number.
  * @author Sean A. Irvine
  */
-class MultiplicativeOrder extends AbstractFunction2 {
+class MultiplicativeOrder extends AbstractFunction2D {
 
   @Override
   public long getDefault() {

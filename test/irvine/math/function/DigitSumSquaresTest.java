@@ -9,7 +9,7 @@ import junit.framework.TestCase;
 public class DigitSumSquaresTest extends TestCase {
 
   public void test() {
-    final Function2 f = new DigitSumSquares();
+    final Function2D f = new DigitSumSquares();
     assertEquals(0, f.l(0));
     assertEquals(1, f.l(1));
     assertEquals(1, f.l(10));

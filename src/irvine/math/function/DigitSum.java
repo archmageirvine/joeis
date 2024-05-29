@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
  * Sum of digits.
  * @author Sean A. Irvine
  */
-class DigitSum extends AbstractFunction2 {
+class DigitSum extends AbstractFunction2D {
 
   @Override
   public long getDefault() {

@@ -9,7 +9,7 @@ import irvine.math.z.ZUtils;
  * Sort the digits of a number into ascending order.
  * @author Sean A. Irvine
  */
-public class DigitSortAscending extends AbstractFunction2 {
+public class DigitSortAscending extends AbstractFunction2D {
 
   /**
    * Sort the digits of a number.

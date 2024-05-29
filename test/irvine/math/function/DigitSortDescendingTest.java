@@ -9,7 +9,7 @@ import junit.framework.TestCase;
 public class DigitSortDescendingTest extends TestCase {
 
   public void test() {
-    final Function2 f = new DigitSortDescending();
+    final Function2D f = new DigitSortDescending();
     assertEquals(0, f.l(0));
     assertEquals(1, f.l(1));
     assertEquals(10, f.l(10));

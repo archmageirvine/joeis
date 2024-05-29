@@ -9,7 +9,7 @@ import irvine.math.z.ZUtils;
  * Sort the digits of a number into descending order.
  * @author Sean A. Irvine
  */
-public class DigitSortDescending extends AbstractFunction2 {
+public class DigitSortDescending extends AbstractFunction2D {
 
   @Override
   public long getDefault() {

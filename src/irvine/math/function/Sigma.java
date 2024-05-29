@@ -7,7 +7,7 @@ import irvine.math.z.Z;
  * Generalized sum of divisors function.
  * @author Sean A. Irvine
  */
-class Sigma extends AbstractFunction2 {
+class Sigma extends AbstractFunction2D {
 
   @Override
   public long getDefault() {

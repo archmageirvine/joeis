@@ -7,7 +7,7 @@ import irvine.math.z.Z;
  * Rotate a number by one digit to the right.
  * @author Sean A. Irvine
  */
-class Multifactorial extends AbstractFunction2 {
+class Multifactorial extends AbstractFunction2D {
 
   private final MemoryFunction2<Long, Z> mF = new MemoryFunction2<>() {
     @Override

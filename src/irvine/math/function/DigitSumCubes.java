@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
  * Sum of the cubes of the digits in a number.
  * @author Sean A. Irvine
  */
-class DigitSumCubes extends AbstractFunction2 {
+class DigitSumCubes extends AbstractFunction2D {
 
   @Override
   public long getDefault() {

@@ -114,43 +114,43 @@ public final class Functions {
 
   // Developer note: SIGMA must be initialized after SIGMA1 and SIGMA0
   /** Generalized sum of divisors function. */
-  public static final Function2 SIGMA = new Sigma(); // =A000005(0, =A000203(1,
+  public static final Function2D SIGMA = new Sigma(); // =A000005(0, =A000203(1,
   /** Multiplicative order in <code>Z_base</code>. */
-  public static final Function2 ORDER = new MultiplicativeOrder();
+  public static final Function2D ORDER = new MultiplicativeOrder();
   /** Reverse the digits of a number. */
-  public static final Function2 REVERSE = new Reverse(); // =A004086(10, = A305989(2,
+  public static final Function2D REVERSE = new Reverse(); // =A004086(10, = A305989(2,
   /** Number of digits in a number. */
-  public static final Function2 DIGIT_LENGTH = new DigitLength(); // =A055642(10, =A070939(2,
+  public static final Function2D DIGIT_LENGTH = new DigitLength(); // =A055642(10, =A070939(2,
   /** Sum of digits in a number. */
-  public static final Function2 DIGIT_SUM =  new DigitSum(); // =A001370(10, = A000120(2,
+  public static final Function2D DIGIT_SUM =  new DigitSum(); // =A001370(10, = A000120(2,
   /** Sum of the squares of the digits in a number. */
-  public static final Function2 DIGIT_SUM_SQUARES = new DigitSumSquares();
+  public static final Function2D DIGIT_SUM_SQUARES = new DigitSumSquares();
   /** Sum of the cubes of the digits in a number. */
-  public static final Function2 DIGIT_SUM_CUBES = new DigitSumCubes();
+  public static final Function2D DIGIT_SUM_CUBES = new DigitSumCubes();
   /** Digit sum root. */
-  public static final Function2 DIGIT_SUM_ROOT = new DigitSumRoot();
+  public static final Function2D DIGIT_SUM_ROOT = new DigitSumRoot();
   /** Product of digits. */
-  public static final Function2 DIGIT_PRODUCT = new DigitProduct();
+  public static final Function2D DIGIT_PRODUCT = new DigitProduct();
   /** Digit product root. */
-  public static final Function2 DIGIT_PRODUCT_ROOT = new DigitProductRoot();
+  public static final Function2D DIGIT_PRODUCT_ROOT = new DigitProductRoot();
   /** Digit product persistence. */
-  public static final Function2 DIGIT_PRODUCT_PERSISTENCE = new DigitProductPersistence();
+  public static final Function2D DIGIT_PRODUCT_PERSISTENCE = new DigitProductPersistence();
   /** Product of nonzero digits. */
-  public static final Function2 DIGIT_NZ_PRODUCT = new DigitNonzeroProduct(); // =A000012(2, =A117592(3, =A338854(4, =A338803(5, =A338863(6, =A338880(7, =A338881(8, =A338882(9, =A051801(10,
+  public static final Function2D DIGIT_NZ_PRODUCT = new DigitNonzeroProduct(); // =A000012(2, =A117592(3, =A338854(4, =A338803(5, =A338863(6, =A338880(7, =A338881(8, =A338882(9, =A051801(10,
   /** Digit root of nonzero digits. */
-  public static final Function2 DIGIT_NZ_PRODUCT_ROOT = new DigitNonzeroProductRoot();
+  public static final Function2D DIGIT_NZ_PRODUCT_ROOT = new DigitNonzeroProductRoot();
   /** Count of distinct digits. */
-  public static final Function2 DISTINCT_DIGIT_COUNT = new DistinctDigitCount(); // =A043537(10, =A043529(2,
+  public static final Function2D DISTINCT_DIGIT_COUNT = new DistinctDigitCount(); // =A043537(10, =A043529(2,
   /** Sort the digits of a number into ascending order. */
-  public static final Function2 DIGIT_SORT_ASCENDING = new DigitSortAscending();
+  public static final Function2D DIGIT_SORT_ASCENDING = new DigitSortAscending();
   /** Sort the digits of a number into descending order. */
-  public static final Function2 DIGIT_SORT_DESCENDING = new DigitSortDescending();
+  public static final Function2D DIGIT_SORT_DESCENDING = new DigitSortDescending();
   /** Rotate right by one digit. */
-  public static final Function2 ROTATE_RIGHT = new RotateRight();
+  public static final Function2D ROTATE_RIGHT = new RotateRight();
   /** Multifactorial (including double factorial). */
-  public static final Function2 MULTIFACTORIAL = new Multifactorial(); // =A006882(2, =A007661(3, =A007662(4, =A085157(5, =A085158(6,
+  public static final Function2D MULTIFACTORIAL = new Multifactorial(); // =A006882(2, =A007661(3, =A007662(4, =A085157(5, =A085158(6,
   /** Number of points in a hypersphere of given radius in a given number of dimensions. */
-  public static final Function2 HYPERSPHERE_POINTS = new HyperspherePoints();
+  public static final Function2D HYPERSPHERE_POINTS = new HyperspherePoints();
 
   /** Minimum of the values. */
   public static final FunctionN MIN = new Min();

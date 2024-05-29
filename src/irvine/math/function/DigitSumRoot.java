@@ -6,7 +6,7 @@ import irvine.math.z.Z;
  * Digit sum root.
  * @author Sean A. Irvine
  */
-class DigitSumRoot extends AbstractFunction2 {
+class DigitSumRoot extends AbstractFunction2D {
 
   @Override
   public long getDefault() {

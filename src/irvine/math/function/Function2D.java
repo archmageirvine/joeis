@@ -3,7 +3,7 @@ package irvine.math.function;
 import irvine.math.z.Z;
 
 /**
- * A two argument integer function.
+ * A two argument integer function with a default for the first parameter.
  * Several methods are defined but all should return the exact same function
  * (apart with differences in supported range of inputs and output).
  * The return type can be <code>Z</code>, <code>long</code>, or <code>int</code>
@@ -16,7 +16,7 @@ import irvine.math.z.Z;
  * directly implementing all methods of this interface.
  * @author Sean A. Irvine
  */
-public interface Function2 extends Function1 {
+public interface Function2D extends Function1 {
 
   /**
    * Two argument function.

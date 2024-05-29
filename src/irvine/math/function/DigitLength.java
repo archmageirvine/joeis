@@ -6,7 +6,7 @@ import irvine.math.z.Z;
  * Number of digits in the number.
  * @author Sean A. Irvine
  */
-class DigitLength extends AbstractFunction2 {
+class DigitLength extends AbstractFunction2D {
 
   @Override
   public long getDefault() {

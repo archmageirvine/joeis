@@ -6,7 +6,7 @@ import irvine.math.z.Z;
  * Reverse the digits of a number.
  * @author Sean A. Irvine
  */
-class Reverse extends AbstractFunction2 {
+class Reverse extends AbstractFunction2D {
 
   @Override
   public long getDefault() {

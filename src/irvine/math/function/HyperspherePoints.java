@@ -10,7 +10,7 @@ import irvine.math.z.Z;
  * Count number of points in a hypersphere of given radius in a given number of dimensions.
  * @author Sean A. Irvine
  */
-public final class HyperspherePoints extends AbstractFunction2 {
+public final class HyperspherePoints extends AbstractFunction2D {
 
   private final HashMap<String, Z> mCache = new HashMap<>();
 

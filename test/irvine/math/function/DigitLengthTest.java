@@ -9,7 +9,7 @@ import junit.framework.TestCase;
 public class DigitLengthTest extends TestCase {
 
   public void test() {
-    final Function2 f = new DigitLength();
+    final Function2D f = new DigitLength();
     assertEquals(1, f.l(0));
     assertEquals(1, f.l(1));
     assertEquals(2, f.l(10));

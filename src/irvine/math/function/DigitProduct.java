@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
  * Product of digits.
  * @author Sean A. Irvine
  */
-class DigitProduct extends AbstractFunction2 {
+class DigitProduct extends AbstractFunction2D {
 
   @Override
   public long getDefault() {

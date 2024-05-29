@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
  * Sum of the squares of the digits in a number.
  * @author Sean A. Irvine
  */
-class DigitSumSquares extends AbstractFunction2 {
+class DigitSumSquares extends AbstractFunction2D {
 
   @Override
   public long getDefault() {

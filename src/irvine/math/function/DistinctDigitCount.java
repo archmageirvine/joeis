@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
  * Count of the number of distinct digits in the number when written in a particular base.
  * @author Sean A. Irvine
  */
-class DistinctDigitCount extends AbstractFunction2 {
+class DistinctDigitCount extends AbstractFunction2D {
 
   @Override
   public long getDefault() {

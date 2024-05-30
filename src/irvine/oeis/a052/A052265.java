@@ -3,7 +3,6 @@ package irvine.oeis.a052;
 import java.util.ArrayList;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.partition.IntegerPartition;
@@ -31,7 +30,7 @@ public class A052265 extends A052107 {
   private Polynomial<Z> mRow = RING.onePlusXToTheN(1);
 
   private Polynomial<Z> fix(final int[] q) {
-    final Z lcm = IntegerUtils.lcm(q);
+    final Z lcm = Functions.LCM.z(q);
     final ArrayList<Z> u = new ArrayList<>();
     final Z[] v = Jaguar.factor(lcm).divisors();
     for (final Z d : v) {

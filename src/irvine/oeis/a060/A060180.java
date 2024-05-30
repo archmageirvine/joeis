@@ -2,7 +2,6 @@ package irvine.oeis.a060;
 
 import java.util.HashSet;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
@@ -25,7 +24,7 @@ public class A060180 extends Sequence1 {
     while ((p = part.next()) != null) {
       IntegerPartition.toCountForm(p, c);
       if (IntegerPartition.isEven(c)) {
-        seen.add(IntegerUtils.lcm(p));
+        seen.add(Functions.LCM.z(p));
       }
     }
     return Functions.SUM.z(seen);

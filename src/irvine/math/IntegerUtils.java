@@ -7,8 +7,6 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
-import irvine.math.function.Functions;
-import irvine.math.z.Z;
 import irvine.util.io.IOUtils;
 import irvine.util.string.StringUtils;
 
@@ -123,32 +121,6 @@ public final class IntegerUtils {
       e >>>= 1;
     }
     return r;
-  }
-
-  /**
-   * Compute the greatest common divisor of an array of values.
-   * @param a list of values
-   * @return greatest common divisor
-   */
-  public static int gcd(final int... a) {
-    int g = a[0];
-    for (int k = 1; k < a.length; ++k) {
-      g = Functions.GCD.i(g, a[k]);
-    }
-    return g;
-  }
-
-  /**
-   * Return the least common multiple of a list of integers.
-   * @param lst elements
-   * @return least common multiple
-   */
-  public static Z lcm(final int... lst) {
-    Z lcm = Z.ONE;
-    for (final int v : lst) {
-      lcm = lcm.lcm(Z.valueOf(v));
-    }
-    return lcm;
   }
 
   /**

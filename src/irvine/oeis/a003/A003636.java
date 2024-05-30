@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
@@ -32,7 +31,7 @@ public class A003636 extends Sequence3 {
     }
 
     boolean isPrimitive() {
-      return Math.abs(LongUtils.gcd(mA, mB, mC)) == 1;
+      return Math.abs(Functions.GCD.l(mA, mB, mC)) == 1;
     }
 
     @Override

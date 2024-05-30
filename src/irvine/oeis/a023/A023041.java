@@ -1,6 +1,5 @@
 package irvine.oeis.a023;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -26,7 +25,7 @@ public class A023041 extends Sequence1 {
           if (z3s.signum() >= 0) {
             final Z zs = z3s.root(3);
             if (z3s.auxiliary() == 1 && zs.longValueExact() < y) {
-              final long gcd = Functions.GCD.l(LongUtils.gcd(mN, x, y), zs.longValueExact());
+              final long gcd = Functions.GCD.l(Functions.GCD.l(mN, x, y), zs.longValueExact());
               if (gcd == 1) {
                 return Z.valueOf(mN);
               }

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
  * Least common multiple function.
  * @author Sean A. Irvine
  */
-class LeastCommonMultiple extends AbstractFunction2 {
+public class LeastCommonMultiple extends AbstractFunction2N {
 
   @Override
   public Z z(final Z n, final Z m) {

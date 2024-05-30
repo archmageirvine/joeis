@@ -1,6 +1,5 @@
 package irvine.oeis.a060;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
@@ -27,7 +26,7 @@ public class A060178 extends Sequence1 {
     while ((p = part.next()) != null) {
       IntegerPartition.toCountForm(p, c);
       if (isOdd(c)) {
-        res = res.add(IntegerPartition.permCount(p, 1).multiply(IntegerUtils.lcm(p)));
+        res = res.add(IntegerPartition.permCount(p, 1).multiply(Functions.LCM.z(p)));
       }
     }
     return res;

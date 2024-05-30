@@ -163,10 +163,6 @@ public final class Functions {
   public static final Function2D HYPERSPHERE_POINTS = new HyperspherePoints();
 
   // Two argument functions
-  /** Greatest common divisor. */
-  public static final Function2 GCD = new GreatCommonDivisor();
-  /** Least common multiple. */
-  public static final Function2 LCM = new LeastCommonMultiple();
   /** Valuation function. */
   public static final Function2 VALUATION = new Valuation();
   /** Valuation function. */
@@ -186,6 +182,12 @@ public final class Functions {
   /** Product of the values. */
   public static final FunctionN PRODUCT = new Product();
 
+  // Functions supporting both two arguments and aggregation
+
+  /** Greatest common divisor. */
+  public static final GreatCommonDivisor GCD = new GreatCommonDivisor();
+  /** Least common multiple. */
+  public static final LeastCommonMultiple LCM = new LeastCommonMultiple();
 
   /**
    * Get a function from its name.

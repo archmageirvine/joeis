@@ -3,6 +3,7 @@ package irvine.oeis.a061;
 import java.util.Arrays;
 
 import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
@@ -23,7 +24,7 @@ public class A061559 extends Sequence1 {
     Arrays.fill(tuple, 1);
     long cnt = 0;
     do {
-      if (IntegerUtils.gcd(tuple) == 1) {
+      if (Functions.GCD.i(tuple) == 1) {
         ++cnt;
       }
     } while (IntegerUtils.bump(tuple, 1, m));

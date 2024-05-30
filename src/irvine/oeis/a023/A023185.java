@@ -2,7 +2,7 @@ package irvine.oeis.a023;
 
 import java.util.TreeSet;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -29,7 +29,7 @@ public class A023185 extends Sequence1 {
         b2c2.sqrt();
         if (b2c2.auxiliary() == 1) {
           for (long a = 1; a <= b; ++a) {
-            if (LongUtils.gcd(a, b, mC) == 1) {
+            if (Functions.GCD.l(a, b, mC) == 1) {
               final Z a2 = Z.valueOf(a).square();
               final Z a2c2 = c2.add(a2);
               a2c2.sqrt();

@@ -1,6 +1,6 @@
 package irvine.oeis.a343;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -39,7 +39,7 @@ public class A343891 extends Sequence1 {
       final long ab = mA * mB;
       final long ba2 = 2 * mB - mA;
       final long c = ab / ba2;
-      if (c * ba2 == ab && LongUtils.gcd(mA, mB, c) == 1 && c - mB < mA) {
+      if (c * ba2 == ab && Functions.GCD.l(mA, mB, c) == 1 && c - mB < mA) {
         mTuple[0] = Z.valueOf(mA);
         mTuple[1] = Z.valueOf(mB);
         mTuple[2] = Z.valueOf(c);

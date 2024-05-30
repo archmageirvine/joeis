@@ -6,7 +6,7 @@ import irvine.math.z.Z;
  * Greatest common divisor function.
  * @author Sean A. Irvine
  */
-class GreatCommonDivisor extends AbstractFunction2 {
+public class GreatCommonDivisor extends AbstractFunction2N {
 
   @Override
   public Z z(final Z n, final Z m) {

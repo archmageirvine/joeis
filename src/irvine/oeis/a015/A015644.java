@@ -1,6 +1,5 @@
 package irvine.oeis.a015;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -42,7 +41,7 @@ public class A015644 extends AbstractSequence {
           if (Functions.GCD.l(g, e) == 1) { // (a,b,c,n) != 1
             for (long d = c + 1; d < n; ++d) {
               final long h = Functions.GCD.l(c, d);
-              if (Functions.GCD.l(e, h) == 1 && LongUtils.gcd(e, b, d) == 1 && LongUtils.gcd(h, b, n) == 1 && Functions.GCD.l(h, f) == 1) {
+              if (Functions.GCD.l(e, h) == 1 && Functions.GCD.l(e, b, d) == 1 && Functions.GCD.l(h, b, n) == 1 && Functions.GCD.l(h, f) == 1) {
                 ++count;
               }
             }

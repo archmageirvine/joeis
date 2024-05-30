@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -21,7 +21,7 @@ public class A066958 extends Sequence1 {
         final long t = mN - x * y;
         if (t % (y + x) == 0) {
           final long z = t / (y + x);
-          if (z >= 1 && LongUtils.gcd(x, y, z) == 1) {
+          if (z >= 1 && Functions.GCD.l(x, y, z) == 1) {
             cnt += x == y ? 1 : 2;
           }
         }

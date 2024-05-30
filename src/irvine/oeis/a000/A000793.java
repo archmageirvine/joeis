@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -35,7 +35,7 @@ public class A000793 extends AbstractSequence {
     int[] v;
     Z best = Z.ZERO;
     while ((v = p.next()) != null) {
-      final Z lcm = IntegerUtils.lcm(v);
+      final Z lcm = Functions.LCM.z(v);
       if (lcm.compareTo(best) > 0) {
         best = lcm;
       }

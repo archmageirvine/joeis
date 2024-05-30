@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -41,7 +41,7 @@ public class A028492 extends Sequence0 {
           final long s0 = (long) (bx - ax) * (bx - ax) + (long) (by - ay) * (by - ay);
           final long s1 = (long) (cx - ax) * (cx - ax) + (long) (cy - ay) * (cy - ay);
           final long s2 = (long) (bx - cx) * (bx - cx) + (long) (by - cy) * (by - cy);
-          final long gcd = LongUtils.gcd(s0, s1, s2);
+          final long gcd = Functions.GCD.l(s0, s1, s2);
           final ArrayList<Long> ss = new ArrayList<>(3);
           ss.add(s0 / gcd);
           ss.add(s1 / gcd);

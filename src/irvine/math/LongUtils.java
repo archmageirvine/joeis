@@ -138,18 +138,6 @@ public final class LongUtils {
     return (f >>> 32) + (f << 32);
   }
 
-
-  /**
-   * Greatest common divisor of three integers.
-   * @param a first number
-   * @param b second number
-   * @param c third number
-   * @return great common divisor
-   */
-  public static long gcd(final long a, final long b, final long c) {
-    return Functions.GCD.l(a, Functions.GCD.l(b, c));
-  }
-
   /**
    * Read numbers from a stream into an array.  Empty lines or lines starting
    * with <code>#</code> are ignored. Behaviour on out of range numbers is
@@ -395,7 +383,7 @@ public final class LongUtils {
     for (long b = discriminant & 1; b <= bLimit; b += 2) {
       final long q = (b * b - discriminant) / 4;
       for (long a = b <= 1 ? 2 : b; a * a <= q; ++a) {
-        if (q % a == 0 && gcd(q / a, a, b) == 1) {
+        if (q % a == 0 && Functions.GCD.l(q / a, a, b) == 1) {
           h += a == b || b == 0 || a * a == q ? 1 : 2;
         }
       }

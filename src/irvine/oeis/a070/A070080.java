@@ -2,7 +2,7 @@ package irvine.oeis.a070;
 
 import java.util.function.Function;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -154,7 +154,7 @@ public class A070080 extends AbstractSequence {
             case PERIMETER:
               return Z.valueOf(mPeri);
             case GCD:
-              return Z.valueOf(LongUtils.gcd(mA, mB, mC));
+              return Z.valueOf(Functions.GCD.l(mA, mB, mC));
             case SHAPE:
               return Z.valueOf(mA * mA + mB * mB - mC * mC);
             case AREA:
@@ -213,7 +213,7 @@ public class A070080 extends AbstractSequence {
     final long a = s[0].longValue();
     final long b = s[1].longValue();
     final long c = s[2].longValue();
-    return LongUtils.gcd(a, b, c) == 1;
+    return Functions.GCD.l(a, b, c) == 1;
   }
 
   protected static boolean hasIntArea(final Long[] s) {
@@ -333,7 +333,7 @@ public class A070080 extends AbstractSequence {
         final StringBuilder sb = new StringBuilder(128);
         final Long[] s = {mA, mB, mC};
         sb.append(String.format("| %5d | %5d |%4d%4d%4d |", n, mPeri, mA, mB, mC));
-        sb.append(String.format("%6d |%6d |", LongUtils.gcd(mA, mB, mC), mA * mA + mB * mB - mC * mC));
+        sb.append(String.format("%6d |%6d |", Functions.GCD.l(mA, mB, mC), mA * mA + mB * mB - mC * mC));
         final String h = String.format("%12.6f", getArea(s)).replace(',', '.');
         final String i = String.format("%8.6f", getInRadius(s)).replace(',', '.');
         if (isScalene(s)) {

@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -26,7 +26,7 @@ public class A060465 extends AbstractSequence {
     if (Math.abs(lx) > y) {
       return null;
     }
-    final long d = Math.abs(LongUtils.gcd(lx, y, z));
+    final long d = Math.abs(Functions.GCD.l(lx, y, z));
     return d == 1 || n.mod(d) != 0 ? x : null;
   }
 

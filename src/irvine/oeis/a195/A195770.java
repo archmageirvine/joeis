@@ -1,6 +1,5 @@
 package irvine.oeis.a195;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -87,7 +86,7 @@ public class A195770 extends Sequence1 {
               System.out.println("a=" + mA + ", b=" + mB + ", c=" + mC + ", mLimB=" + mLimB + ", c2Pot=" + c2Pot);
             }
             if (mC * mC == c2Pot) { // c2Pot was a square 
-              if (!mPrimitive || (LongUtils.gcd(mA, mB, mC) == 1)) {
+              if (!mPrimitive || (Functions.GCD.l(mA, mB, mC) == 1)) {
                 busy = false; // solution found
                 // mState = 1; // next b
               }

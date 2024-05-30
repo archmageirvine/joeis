@@ -1,6 +1,6 @@
 package irvine.oeis.a061;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -26,7 +26,7 @@ public class A061721 extends Sequence1 {
     long numZeros = mN - 2;
     final long np = mN / 4;
     for (long m = 1; m < mN / 2; ++m) {
-      final long t = LongUtils.lcm(m, np);
+      final long t = Functions.LCM.l(m, np);
       if (((t / np) & 1) == 1) {
         final long maxmul = m * mN / 2;
         numZeros += maxmul / t - maxmul / (2 * t);

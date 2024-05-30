@@ -165,6 +165,8 @@ public final class Functions {
   // Two argument functions
   /** Greatest common divisor. */
   public static final Function2 GCD = new GreatCommonDivisor();
+  /** Least common multiple. */
+  public static final Function2 LCM = new LeastCommonMultiple();
   /** Valuation function. */
   public static final Function2 VALUATION = new Valuation();
   /** Valuation function. */

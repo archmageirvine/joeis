@@ -1,7 +1,6 @@
 package irvine.oeis.a006;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
@@ -22,7 +21,7 @@ public class A006448 extends Sequence1 {
     for (int i = 1; i < s.length; ++i) {
       for (int j = 1; j < s.length; ++j) {
         Z sum = Z.ZERO;
-        for (final Z dd : Jaguar.factor(IntegerUtils.lcm(i, j)).divisors()) {
+        for (final Z dd : Jaguar.factor(Functions.LCM.i(i, j)).divisors()) {
           final int d = dd.intValueExact();
           if (d < s.length) {
             sum = sum.add(dd.multiply(s[d]));

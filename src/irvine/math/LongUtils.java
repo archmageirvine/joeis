@@ -151,16 +151,6 @@ public final class LongUtils {
   }
 
   /**
-   * Compute the least common multiple of two integers.
-   * @param a first integer
-   * @param b second integer
-   * @return <code>lcm(a,b)</code>
-   */
-  public static long lcm(final long a, final long b) {
-    return a == 0 ? 0 : (a / Functions.GCD.l(a, b)) * b;
-  }
-
-  /**
    * Read numbers from a stream into an array.  Empty lines or lines starting
    * with <code>#</code> are ignored. Behaviour on out of range numbers is
    * undefined.

@@ -1,7 +1,7 @@
 package irvine.oeis.a019;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -23,7 +23,7 @@ public class A019508 extends Sequence0 {
           if (mN % (ap - 1) == 0) {
             for (long b = a + 1, bp = ap * p; bp < mN; bp *= p, ++b) {
               if (mN % (bp - 1) == 0) {
-                final long lcm = LongUtils.lcm(a, b);
+                final long lcm = Functions.LCM.l(a, b);
                 long cp = bp;
                 for (long c = b; c < lcm; ++c) {
                   cp *= p;

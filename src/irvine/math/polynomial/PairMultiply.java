@@ -1,6 +1,5 @@
 package irvine.math.polynomial;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.util.Pair;
@@ -38,7 +37,7 @@ public final class PairMultiply implements MultivariateMonomialOperation {
       final Z di = alpha.get(iKey);
       if (di.signum() > 0) {
         for (int j = i + 1; j <= maxIn; ++j) {
-          ans.add(IntegerUtils.lcm(i, j), di.multiply(Functions.GCD.i(i, j)).multiply(alpha.get(new Pair<>(MultivariateMonomial.DEFAULT_VARIABLE, j))));
+          ans.add(Functions.LCM.i(i, j), di.multiply(Functions.GCD.i(i, j)).multiply(alpha.get(new Pair<>(MultivariateMonomial.DEFAULT_VARIABLE, j))));
         }
       }
     }

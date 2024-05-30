@@ -1,6 +1,5 @@
 package irvine.oeis.a001;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
@@ -51,7 +50,7 @@ public class A001329 extends AbstractSequence {
     Z prod = Z.ONE;
     for (int r = 1; r < j.length; ++r) {
       for (int s = 1; s < j.length; ++s) {
-        prod = prod.multiply(innerSum(j, IntegerUtils.lcm(r, s)).pow((long) scale() * j[r] * j[s] * Functions.GCD.i(r, s)));
+        prod = prod.multiply(innerSum(j, Functions.LCM.i(r, s)).pow((long) scale() * j[r] * j[s] * Functions.GCD.i(r, s)));
       }
     }
     return prod;

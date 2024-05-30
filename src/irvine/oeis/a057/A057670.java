@@ -1,6 +1,6 @@
 package irvine.oeis.a057;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -15,6 +15,6 @@ public class A057670 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sumdiv(++mN, k -> Z.valueOf(IntegerUtils.lcm(k, mN / k)));
+    return Integers.SINGLETON.sumdiv(++mN, k -> Functions.LCM.z(k, mN / k));
   }
 }

@@ -2,7 +2,6 @@ package irvine.oeis.a069;
 
 import java.util.HashMap;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
@@ -39,7 +38,7 @@ public class A069716 extends Sequence1 {
         long lcm = 0;
         for (int k = 2; k < d.length; ++k) {
           if (d[k] > 0) {
-            lcm = lcm == 0 ? k : LongUtils.lcm(lcm, k);
+            lcm = lcm == 0 ? k : Functions.LCM.l(lcm, k);
           }
         }
         if (!mFirsts.containsKey(lcm)) {

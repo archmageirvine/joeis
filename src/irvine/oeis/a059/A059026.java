@@ -1,6 +1,6 @@
 package irvine.oeis.a059;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A059026 extends Sequence1 {
       ++mN;
       mM = 1;
     }
-    final long lcm = LongUtils.lcm(mN, mM);
+    final long lcm = Functions.LCM.l(mN, mM);
     return Z.valueOf(lcm / mN + lcm / mM - 1);
   }
 }

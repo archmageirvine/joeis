@@ -2,7 +2,7 @@ package irvine.oeis.transform;
 
 import java.util.Arrays;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -82,7 +82,7 @@ public class EtaProductSequence extends AbstractSequence {
         mEpowers[ip] = Integer.parseInt(pair[1]);
       } catch (final NumberFormatException exc) { // take default 1
       }
-      lcm = LongUtils.lcm(lcm, mQpowers[ip]);
+      lcm = Functions.LCM.l(lcm, mQpowers[ip]);
     }
     lcm = lcm > 0x80000 ? 0x80000 : lcm; // limit it to 19 bits = 524288
     mPeriod = new long[(int) lcm];

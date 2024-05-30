@@ -1,6 +1,5 @@
 package irvine.oeis.a051;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
@@ -40,7 +39,7 @@ public class A051839 extends Sequence1 {
         if (!containsForward(p, Functions.GCD.i(p[j], p[k]), j)) {
           return false;
         }
-        if (!containsBackward(p, IntegerUtils.lcm(p[j], p[k]), j)) {
+        if (!containsBackward(p, Functions.LCM.i(p[j], p[k]), j)) {
           return false;
         }
       }

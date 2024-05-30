@@ -1,6 +1,6 @@
 package irvine.oeis.a068;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,7 +18,7 @@ public class A068509 extends Sequence1 {
       mMaxLength = terms;
     }
     for (int k = prev + 1; k <= mN; ++k) {
-      final int l = IntegerUtils.lcm(lcm, k);
+      final int l = Functions.LCM.i(lcm, k);
       if (l <= mN) {
         search(l, terms + 1, k);
       }

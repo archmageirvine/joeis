@@ -3,7 +3,6 @@ package irvine.math;
 import java.math.BigInteger;
 import java.util.Arrays;
 
-import irvine.math.function.Functions;
 import junit.framework.TestCase;
 
 /**
@@ -71,76 +70,6 @@ public class LongUtilsTest extends TestCase {
     assertEquals(0x1234567890ABCDEFL, LongUtils.endian4(0xEFCDAB9078563412L));*/
   }
 
-  /*
-  private static final int LIMIT = Integer.MAX_VALUE;
-
-  public void testEndianTiming() {
-    final Timer timer = new Timer();
-    timer.start();
-    long k = 1;
-    long s = 0;
-    for (int j = 0; j < LIMIT; ++j) {
-      s += LongUtils.endian(k);
-      k *= 3;
-    }
-    System.err.println("endian " + s + " took " + timer.getElapsed() + " ms");
-  }
-
-  public void testEndian1Timing() {
-    final Timer timer = new Timer();
-    timer.start();
-    long k = 1;
-    long s = 0;
-    for (int j = 0; j < LIMIT; ++j) {
-      s += LongUtils.endian1(k);
-      k *= 3;
-    }
-    System.err.println("endian1 " + s + " took " + timer.getElapsed() + " ms");
-  }
-
-  public void testEndian2Timing() {
-    final Timer timer = new Timer();
-    timer.start();
-    long k = 1;
-    long s = 0;
-    for (int j = 0; j < LIMIT; ++j) {
-      s += LongUtils.endian2(k);
-      k *= 3;
-    }
-    System.err.println("endian2 " + s + " took " + timer.getElapsed() + " ms");
-  }
-
-  public void testEndian3Timing() {
-    final Timer timer = new Timer();
-    timer.start();
-    long k = 1;
-    long s = 0;
-    for (int j = 0; j < LIMIT; ++j) {
-      s += LongUtils.endian3(k);
-      k *= 3;
-    }
-    System.err.println("endian3 " + s + " took " + timer.getElapsed() + " ms");
-  }
-
-  public void testEndian4Timing() {
-    final Timer timer = new Timer();
-    timer.start();
-    long k = 1;
-    long s = 0;
-    for (int j = 0; j < LIMIT; ++j) {
-      s += LongUtils.endian4(k);
-      k *= 3;
-    }
-    System.err.println("endian4 " + s + " took " + timer.getElapsed() + " ms");
-  }
-  */
-
-  public void testLcm() {
-    assertEquals(2, LongUtils.lcm(2, 2));
-    assertEquals(6, LongUtils.lcm(2, 3));
-    assertEquals(24, LongUtils.lcm(12, 8));
-  }
-
   public void testLg() {
     for (int k = 0; k < 63; ++k) {
       assertEquals(k, LongUtils.log2(1L << k));
@@ -148,30 +77,11 @@ public class LongUtilsTest extends TestCase {
     }
   }
 
-  public void testDigitProduct() {
-    assertEquals(0, Functions.DIGIT_PRODUCT.l((long) 0));
-    assertEquals(1, Functions.DIGIT_PRODUCT.l((long) 1));
-    assertEquals(0, Functions.DIGIT_PRODUCT.l((long) 10));
-    assertEquals(1, Functions.DIGIT_PRODUCT.l((long) 11));
-    assertEquals(2, Functions.DIGIT_PRODUCT.l((long) 21));
-    assertEquals(2, Functions.DIGIT_PRODUCT.l((long) 12));
-    assertEquals(2, Functions.DIGIT_PRODUCT.l((long) 2));
-    assertEquals(362880, Functions.DIGIT_PRODUCT.l((long) 123456789));
-    assertEquals(362880, Functions.DIGIT_PRODUCT.l((long) -123456789));
-  }
-  
   public void testSuckInNumbers() {
     final long[] suck = LongUtils.suckInNumbers("irvine/math/long-suck.dat");
     assertEquals(2, suck.length);
     assertEquals(42, suck[0]);
     assertEquals(-23, suck[1]);
-  }
-
-  public void testMax() {
-    assertEquals(10, Functions.MAX.l(new long[] {10, 1}));
-    assertEquals(10, Functions.MAX.l(new long[] {10, 10}));
-    assertEquals(10, Functions.MAX.l(new long[] {1, 10}));
-    assertEquals(-1, Functions.MAX.l(new long[] {-1, -10, -20, -18}));
   }
 
   public void testToLongFromString() {

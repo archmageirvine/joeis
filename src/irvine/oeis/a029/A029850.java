@@ -2,7 +2,7 @@ package irvine.oeis.a029;
 
 import static irvine.oeis.a001.A001425.sum;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.q.Q;
@@ -28,7 +28,7 @@ public class A029850 extends Sequence0 {
         return sum(i, s).pow((long) i * s[i] * s[i] - s[i]).multiply(sum(i / 2, s).pow(2L * s[i]));
       }
     } else {
-      final int lcm = IntegerUtils.lcm(IntegerUtils.lcm(i, j), 2);
+      final int lcm = Functions.LCM.i(Functions.LCM.i(i, j), 2);
       return sum(lcm, s).pow(2L * i * j * s[i] * s[j] / lcm);
     }
   }

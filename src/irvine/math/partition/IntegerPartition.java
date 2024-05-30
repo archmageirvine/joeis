@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.util.array.LongDynamicLongArray;
@@ -139,7 +138,7 @@ public final class IntegerPartition {
     int ord = 1;
     for (int k = 1; k < counts.length; ++k) {
       if (counts[k] > 0) {
-        ord = IntegerUtils.lcm(ord, k);
+        ord = Functions.LCM.i(ord, k);
       }
     }
     return ord;

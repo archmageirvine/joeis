@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
@@ -26,7 +25,7 @@ public class A309858 extends MemoryFunction2Sequence<Integer, Z> {
     int lcm = 1;
     for (int i = 0; i < q; ++i) {
       if (k.get(i) > 0) {
-        lcm = IntegerUtils.lcm(lcm, p.get(i));
+        lcm = Functions.LCM.i(lcm, p.get(i));
       }
     }
     return lcm;

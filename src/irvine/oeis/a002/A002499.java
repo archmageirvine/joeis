@@ -1,6 +1,5 @@
 package irvine.oeis.a002;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
@@ -41,7 +40,7 @@ public class A002499 extends AbstractSequence {
     for (int r = 1; r <= p; ++r) {
       for (int t = r + 1; t <= p; ++t) {
         final int gcd = Functions.GCD.i(r, t);
-        final int lcm = IntegerUtils.lcm(r, t);
+        final int lcm = Functions.LCM.i(r, t);
         s += Functions.GCD.i(2, lcm) * gcd * j[r] * j[t];
       }
     }

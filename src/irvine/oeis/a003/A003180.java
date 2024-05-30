@@ -1,6 +1,5 @@
 package irvine.oeis.a003;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000595;
@@ -27,7 +26,7 @@ public class A003180 extends A000595 {
   private int lcm(final int n) {
     int lcm = 1;
     for (int k = 1; k <= n; ++k) {
-      lcm = IntegerUtils.lcm(lcm, k);
+      lcm = Functions.LCM.i(lcm, k);
     }
     return lcm;
   }

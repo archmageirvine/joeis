@@ -3,7 +3,7 @@ package irvine.oeis.a222;
 import java.util.HashSet;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
@@ -49,7 +49,7 @@ public class A222208 extends Sequence1 {
       for (final Z dd : Jaguar.factor(mN).divisors()) {
         final long d = dd.longValue();
         if (d > 1 && d < mN) {
-          h = LongUtils.lcm(h, mA.get(d));
+          h = Functions.LCM.l(h, mA.get(d));
         }
       }
     }

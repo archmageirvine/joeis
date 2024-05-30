@@ -107,9 +107,9 @@ public class IntegerUtilsTest extends TestCase {
   }
 
   public void testLcm() {
-    assertEquals(2, IntegerUtils.lcm(2, 2));
-    assertEquals(6, IntegerUtils.lcm(2, 3));
-    assertEquals(24, IntegerUtils.lcm(12, 8));
+    assertEquals(2, Functions.LCM.i(2, 2));
+    assertEquals(6, Functions.LCM.i(2, 3));
+    assertEquals(24, Functions.LCM.i(12, 8));
   }
 
   public void testIdentity() {

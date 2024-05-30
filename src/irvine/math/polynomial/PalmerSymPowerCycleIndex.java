@@ -3,8 +3,6 @@ package irvine.math.polynomial;
 import java.util.Map;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.IntegerUtils;
-import irvine.math.LongUtils;
 import irvine.math.MemoryFunction2;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
@@ -61,10 +59,10 @@ public final class PalmerSymPowerCycleIndex extends MemoryFunction2<Integer, Q> 
           final int jm = f.getValue().intValueExact();
           final int jj = jk * jm;
           if ((k & 1) == 1) {
-            r.add(IntegerUtils.lcm(k, m), jj * Functions.GCD.i(k, m) * (k - 1L) / 2);
+            r.add(Functions.LCM.i(k, m), jj * Functions.GCD.i(k, m) * (k - 1L) / 2);
           } else {
-            r.add(IntegerUtils.lcm(k / 2, m), jj * (long) Functions.GCD.i(k / 2, m));
-            r.add(IntegerUtils.lcm(k, m), jj * Functions.GCD.i(k, m) * (k - 2L) / 2);
+            r.add(Functions.LCM.i(k / 2, m), jj * (long) Functions.GCD.i(k / 2, m));
+            r.add(Functions.LCM.i(k, m), jj * Functions.GCD.i(k, m) * (k - 2L) / 2);
           }
         }
       }
@@ -84,14 +82,14 @@ public final class PalmerSymPowerCycleIndex extends MemoryFunction2<Integer, Q> 
           final int jm = f.getValue().intValueExact();
           final int km = k * m;
           final int gcdkm = Functions.GCD.i(k, m);
-          final int lcmkm = IntegerUtils.lcm(k, m);
+          final int lcmkm = Functions.LCM.i(k, m);
           r.add(lcmkm, (long) m * gcdkm * b(jm, 2) * jk);
           if (k < m) {
             for (final Map.Entry<Pair<String, Integer>, Z> g : a.entrySet()) {
               final int t = g.getKey().right();
               if (m < t) {
                 final int jt = g.getValue().intValueExact();
-                final int lcm = IntegerUtils.lcm(lcmkm, t);
+                final int lcm = Functions.LCM.i(lcmkm, t);
                 r.add(lcm, (long) jk * jm * jt * km * t / lcm);
               }
             }
@@ -124,7 +122,7 @@ public final class PalmerSymPowerCycleIndex extends MemoryFunction2<Integer, Q> 
     long lcm = 1;
     for (int k = 1; k < c.length; ++k) {
       if (c[k] != 0) {
-        lcm = LongUtils.lcm(lcm, k);
+        lcm = Functions.LCM.l(lcm, k);
         if (lcm > Integer.MAX_VALUE) {
           throw new UnsupportedOperationException();
         }

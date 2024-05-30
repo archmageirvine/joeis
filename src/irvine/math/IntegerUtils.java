@@ -139,16 +139,6 @@ public final class IntegerUtils {
   }
 
   /**
-   * Compute the least common multiple of two integers.
-   * @param a first integer
-   * @param b second integer
-   * @return <code>lcm(a,b)</code>
-   */
-  public static int lcm(final int a, final int b) {
-    return (a / Functions.GCD.i(a, b)) * b;
-  }
-
-  /**
    * Return the least common multiple of a list of integers.
    * @param lst elements
    * @return least common multiple

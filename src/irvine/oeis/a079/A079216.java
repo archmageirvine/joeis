@@ -1,6 +1,5 @@
 package irvine.oeis.a079;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerComposition;
 import irvine.math.z.Integers;
@@ -26,7 +25,7 @@ public class A079216 extends Sequence0 {
       while ((c = comp.next()) != null) {
         Z prod = Z.ONE;
         for (final int i : c) {
-          prod = prod.multiply(t(i - 1, IntegerUtils.lcm(r, k)));
+          prod = prod.multiply(t(i - 1, Functions.LCM.i(r, k)));
         }
         sum = sum.add(prod);
       }

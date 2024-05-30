@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.TreeSet;
 
 import irvine.math.Comparators;
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
@@ -33,7 +33,7 @@ public class A055092 extends Sequence0 {
           seen[j] = true;
           j = p[j];
         } while (!seen[j]);
-        lcm = IntegerUtils.lcm(lcm, len);
+        lcm = Functions.LCM.i(lcm, len);
       }
     }
     return lcm;

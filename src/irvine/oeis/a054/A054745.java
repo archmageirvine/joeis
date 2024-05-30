@@ -1,6 +1,5 @@
 package irvine.oeis.a054;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -31,7 +30,7 @@ public class A054745 extends A002854 {
         Z prod = Z.ONE;
         for (int r = 1; r < p.length; ++r) {
           for (int s = 1; s < t.length; ++s) {
-            final int lcm = IntegerUtils.lcm(r, s);
+            final int lcm = Functions.LCM.i(r, s);
             int s1 = 0;
             for (int d = 1; d < p.length; ++d) {
               if (lcm % d == 0) {

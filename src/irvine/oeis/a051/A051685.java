@@ -1,6 +1,5 @@
 package irvine.oeis.a051;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
@@ -27,7 +26,7 @@ public class A051685 extends MemoryFunction2Sequence<Integer, Z> {
     for (int k = 1; k <= n; ++k) {
       Z s = Z.ZERO;
       for (int l = 1; l <= m; ++l) {
-        if (IntegerUtils.lcm(l, k) == m) {
+        if (Functions.LCM.i(l, k) == m) {
           s = s.add(get(n - k, l));
         }
       }

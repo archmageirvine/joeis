@@ -1,6 +1,5 @@
 package irvine.oeis.a057;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
@@ -34,7 +33,7 @@ public class A057731 extends MemoryFunctionInt2Sequence<Polynomial<Z>> {
     }
     return RING.sum(1, n, j -> {
       return RING.multiply(
-        get(n - j, IntegerUtils.lcm(g, j)),
+        get(n - j, Functions.LCM.i(g, j)),
         Binomial.binomial(n - 1, j - 1).multiply(Functions.FACTORIAL.z(j - 1))
       );
     });

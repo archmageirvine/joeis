@@ -17,4 +17,17 @@ public class DigitProductTest extends TestCase {
     assertEquals(Z.ZERO, f.z(401));
     assertEquals(Z.ZERO, f.z(5035588244943512881L));
   }
+
+  public void testDigitProduct() {
+    assertEquals(0, Functions.DIGIT_PRODUCT.l((long) 0));
+    assertEquals(1, Functions.DIGIT_PRODUCT.l((long) 1));
+    assertEquals(0, Functions.DIGIT_PRODUCT.l((long) 10));
+    assertEquals(1, Functions.DIGIT_PRODUCT.l((long) 11));
+    assertEquals(2, Functions.DIGIT_PRODUCT.l((long) 21));
+    assertEquals(2, Functions.DIGIT_PRODUCT.l((long) 12));
+    assertEquals(2, Functions.DIGIT_PRODUCT.l((long) 2));
+    assertEquals(362880, Functions.DIGIT_PRODUCT.l((long) 123456789));
+    assertEquals(362880, Functions.DIGIT_PRODUCT.l((long) -123456789));
+  }
+
 }

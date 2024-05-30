@@ -1,6 +1,5 @@
 package irvine.math.polynomial;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
@@ -30,7 +29,7 @@ public final class DigraphCycleIndex {
       if (j[r] > 0) {
         for (int t = r + 1; t < j.length; ++t) {
           if (j[t] > 0) {
-            mm.add(IntegerUtils.lcm(r, t), 2 * Functions.GCD.i(r, t) * j[r] * j[t]);
+            mm.add(Functions.LCM.i(r, t), 2 * Functions.GCD.i(r, t) * j[r] * j[t]);
           }
         }
       }

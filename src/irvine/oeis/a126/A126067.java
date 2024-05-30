@@ -1,6 +1,5 @@
 package irvine.oeis.a126;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.partition.IntegerPartition;
@@ -51,16 +50,16 @@ public class A126067 extends AbstractSequence {
     final MultivariateMonomial powers = new MultivariateMonomial();
     for (int k = 1; k <= p; ++k) {
       if (j[k] != 0) { // efficiency only
-        final int lcm = IntegerUtils.lcm(2, k);
+        final int lcm = Functions.LCM.i(2, k);
         final int gcd = Functions.GCD.i(2, k);
         powers.add(lcm, gcd * k * ((long) j[k] * j[k] - j[k]) / 2);
       }
     }
     for (int r = 1; r <= p; ++r) {
       for (int t = r + 1; t <= p; ++t) {
-        final int k = IntegerUtils.lcm(r, t);
+        final int k = Functions.LCM.i(r, t);
         final int gcd = Functions.GCD.i(r, t);
-        powers.add(IntegerUtils.lcm(2, k), (long) Functions.GCD.i(2, k) * gcd * j[r] * j[t]);
+        powers.add(Functions.LCM.i(2, k), (long) Functions.GCD.i(2, k) * gcd * j[r] * j[t]);
       }
     }
     for (int k = 1; k <= p; k += 2) {

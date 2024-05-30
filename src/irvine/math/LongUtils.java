@@ -426,25 +426,6 @@ public final class LongUtils {
   }
 
   /**
-   * Return the number of times a number divides into another.
-   * @param n number
-   * @param m divisor
-   * @return valuation
-   */
-  public static int valuation(final long n, final long m) {
-    if (m == 2) {
-      return Long.numberOfTrailingZeros(n);
-    }
-    long t = n;
-    int k = 0;
-    while (t % m == 0) {
-      ++k;
-      t /= m;
-    }
-    return k;
-  }
-
-  /**
    * Return the mex of a collection.
    * @param mex collection
    * @return mex value

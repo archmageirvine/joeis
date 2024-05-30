@@ -1,7 +1,7 @@
 package irvine.oeis.a062;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a141.A141900;
 
 /**
@@ -20,7 +20,7 @@ public class A062247 extends A141900 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      final int v = ZUtils.valuation(t, Z.THREE);
+      final int v = Functions.VALUATION.i(t, Z.THREE);
       if (v > mThrees) {
         mThrees = v;
         return Z.valueOf(mN);

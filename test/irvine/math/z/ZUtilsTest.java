@@ -18,13 +18,6 @@ public class ZUtilsTest extends TestCase {
     assertNull(Functions.MAX.z(new Z[] {}));
   }
 
-  public void testOrd() {
-    assertEquals(3, ZUtils.valuation(Z.EIGHT, Z.TWO));
-    assertEquals(1, ZUtils.valuation(Z.SEVEN, Z.SEVEN));
-    assertEquals(1, ZUtils.valuation(Z.TEN, Z.FIVE));
-    assertEquals(0, ZUtils.valuation(Z.FOUR, Z.THREE));
-  }
-
   public void testRandom() {
     final Random r = new Random();
     for (int k = 0; k < 20; ++k) {

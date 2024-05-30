@@ -1,6 +1,5 @@
 package irvine.oeis.a050;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
@@ -20,7 +19,7 @@ public class A050293 extends MemorySequence {
     if (n == 1) {
       return Z.TWO;
     }
-    final int k = LongUtils.valuation(n, 3);
+    final int k = Functions.VALUATION.i(n, 3);
     return a(n - 1).multiply(Functions.FIBONACCI.z((long) (k + 3))).divide(Functions.FIBONACCI.z((long) (k + 2)));
   }
 }

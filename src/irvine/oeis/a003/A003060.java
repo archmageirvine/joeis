@@ -1,8 +1,8 @@
 package irvine.oeis.a003;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -23,7 +23,7 @@ public class A003060 extends Sequence0 {
     final Z[] divisors = Jaguar.factor(mTen.subtract(1)).divisorsSorted();
     // skip 1 | 10^n-1
     for (int k = 1; k < divisors.length; ++k) {
-      ZUtils.valuation(Z.TEN, divisors[k]);
+      Functions.VALUATION.i(Z.TEN, divisors[k]);
       boolean ok = true;
       Z t = Z.ONE;
       for (int j = 1; j < mN; ++j) {

@@ -55,6 +55,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(SwizzleTest.class);
     suite.addTestSuite(SyndromeTest.class);
     suite.addTestSuite(TriangularInverseTest.class);
+    suite.addTestSuite(ValuationTest.class);
     return suite;
   }
 }

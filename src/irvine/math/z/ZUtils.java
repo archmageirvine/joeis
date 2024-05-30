@@ -262,25 +262,6 @@ public final class ZUtils {
     return m == 0 ? s : s.signedAdd(m > 0, a);
   }
 
-  /**
-   * The valuation of a number in another.
-   * @param n number to be divided
-   * @param div divisor
-   * @return the largest <code>k</code> such that <code>div^k</code> divides <code>n</code>
-   */
-  public static int valuation(Z n, final Z div) {
-    if (n.isZero()) {
-      return 0; // convention
-    }
-    int d = 0;
-    Z[] qr;
-    while ((qr = n.divideAndRemainder(div))[1].isZero()) {
-      ++d;
-      n = qr[0];
-    }
-    return d;
-  }
-
   // Based on LiDIA
   /**
    * The smallest remainder of <code>b.mod(mod)</code>.

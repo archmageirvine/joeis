@@ -157,6 +157,10 @@ public final class Functions {
   public static final Function2D HYPERSPHERE_POINTS = new HyperspherePoints();
 
   // Two argument functions
+  /** Valuation function. */
+  public static final Function2 VALUATION = new Valuation();
+  /** Valuation function. */
+  public static final Function2 ORD = VALUATION; // Convenient synonym
   /** Jacobi function. */
   public static final Function2 JACOBI = new Jacobi();
 

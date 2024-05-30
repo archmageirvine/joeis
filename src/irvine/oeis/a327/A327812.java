@@ -4,7 +4,6 @@ package irvine.oeis.a327;
 import irvine.math.function.Functions;
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
 
@@ -40,7 +39,7 @@ public class A327812 extends AbstractSequence implements DirectSequence {
   public Z a(final Z n) {
     // Let n = 3^e*s, gcd(3,s) = 1, then a(n) = phi(n)/ord(3,s)
     // a(n) = my(s=n/3^valuation(n, 3)); eulerphi(n)/znorder(Mod(3, s))
-    final int e = ZUtils.valuation(n, mBase1);
+    final int e = Functions.VALUATION.i(n, mBase1);
     final Z s = n.divide(mBase1.pow(e));
     return Functions.PHI.z(n).divide(new IntegersModMul(s).order(mBase2));
   }

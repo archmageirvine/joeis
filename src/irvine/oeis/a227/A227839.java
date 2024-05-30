@@ -1,8 +1,8 @@
 package irvine.oeis.a227;
 // manually valuation/valuat at 2022-03-16 18:05
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.a005.A005132;
 
@@ -22,6 +22,6 @@ public class A227839 extends AbstractSequence {
 
   @Override
   public Z next() {
-    return Z.valueOf(ZUtils.valuation(mSeq1.next(), Z.THREE));
+    return Functions.VALUATION.z(mSeq1.next(), Z.THREE);
   }
 }

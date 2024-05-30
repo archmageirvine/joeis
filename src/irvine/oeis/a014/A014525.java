@@ -1,6 +1,6 @@
 package irvine.oeis.a014;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence0;
@@ -30,7 +30,7 @@ public class A014525 extends Sequence0 implements Conjectural {
     mF = mF.multiply(m).multiply(m - 1).multiply(m - 2);
     if (mN > 1) {
       if (isPowerOf3(mN)) {
-        final int ord = IntegerUtils.ord(mN, 3);
+        final int ord = Functions.VALUATION.i(mN, 3);
         return Z.SIX.pow(ord + 1).multiply(ord + 1);
       }
       if ((mN & 3) == 0) {

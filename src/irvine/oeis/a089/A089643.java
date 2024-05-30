@@ -1,8 +1,8 @@
 package irvine.oeis.a089;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -12,16 +12,11 @@ import irvine.oeis.Sequence0;
  */
 public class A089643 extends Sequence0 {
 
-  private int mN;
-
-  /** Construct the sequence. */
-  public A089643() {
-    mN = -1;
-  }
+  private int mN = -1;
 
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(ZUtils.valuation(Binomial.binomial(3L * mN, mN), Z.THREE));
+    return Functions.VALUATION.z(Binomial.binomial(3L * mN, mN), Z.THREE);
   }
 }

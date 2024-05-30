@@ -1,7 +1,7 @@
 package irvine.oeis.a091;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
@@ -13,6 +13,6 @@ public class A091282 extends A000040 {
 
   @Override
   public Z next() {
-    return Z.valueOf(ZUtils.valuation(super.next().square().subtract(1), Z.TWO));
+    return Functions.VALUATION.z(super.next().square().subtract(1), Z.TWO);
   }
 }

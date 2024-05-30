@@ -1,7 +1,7 @@
 package irvine.oeis.a001;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
@@ -25,11 +25,11 @@ public class A001511 extends Sequence1 implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    return Z.valueOf(Integer.numberOfTrailingZeros(2 * n));
+    return Functions.VALUATION.z(2L * n, 2);
   }
 
   @Override
   public Z a(final Z n) {
-    return Z.valueOf(ZUtils.valuation(n.multiply2(), Z.TWO));
+    return Functions.VALUATION.z(n.multiply2(), Z.TWO);
   }
 }

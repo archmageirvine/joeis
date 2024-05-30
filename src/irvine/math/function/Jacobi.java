@@ -9,12 +9,12 @@ import irvine.math.z.Z;
 class Jacobi extends AbstractFunction2 {
 
   @Override
-  public long l(final long n, long m) {
+  public long l(final long n, final long m) {
     return i(n, m);
   }
 
   @Override
-  public int i(final long n, long m) {
+  public int i(final long n, final long m) {
     if ((m & 1) == 0) {
       throw new ArithmeticException();
     }

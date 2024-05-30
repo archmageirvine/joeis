@@ -1,7 +1,7 @@
 package irvine.oeis.a087;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
@@ -10,12 +10,8 @@ import irvine.oeis.a000.A000040;
  */
 public class A087963 extends A000040 {
 
-  /** Construct the sequence. */
-  public A087963() {
-  }
-
   @Override
   public Z next() {
-    return Z.valueOf(ZUtils.valuation(super.next().multiply(3).add(1), Z.TWO));
+    return Functions.VALUATION.z(super.next().multiply(3).add(1), Z.TWO);
   }
 }

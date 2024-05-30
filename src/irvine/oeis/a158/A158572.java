@@ -3,7 +3,6 @@ package irvine.oeis.a158;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.LambdaSequence;
 
 /**
@@ -14,6 +13,6 @@ public class A158572 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A158572() {
-    super(2, n -> Z.valueOf(ZUtils.valuation(Functions.MULTIFACTORIAL.z(2 * n - 1).subtract(1), Z.TWO)));
+    super(2, n -> Functions.VALUATION.z(Functions.MULTIFACTORIAL.z(2 * n - 1).subtract(1), Z.TWO));
   }
 }

@@ -1,7 +1,7 @@
 package irvine.oeis.a089;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -11,12 +11,7 @@ import irvine.oeis.Sequence0;
  */
 public class A089309 extends Sequence0 {
 
-  private int mN;
-
-  /** Construct the sequence. */
-  public A089309() {
-    mN = -1;
-  }
+  private int mN = -1;
 
   @Override
   public Z next() {
@@ -24,7 +19,7 @@ public class A089309 extends Sequence0 {
     if (mN == 0) {
       return Z.ZERO;
     }
-    final long v2 = ZUtils.valuation(Z.valueOf(mN), Z.TWO);
-    return Z.valueOf(ZUtils.valuation(Z.valueOf(mN / (1L << v2) + 1), Z.TWO));
+    final int v2 = Functions.VALUATION.i(mN, Z.TWO);
+    return Functions.VALUATION.z(mN / (1L << v2) + 1, 2);
   }
 }

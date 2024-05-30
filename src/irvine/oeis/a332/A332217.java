@@ -3,7 +3,6 @@ package irvine.oeis.a332;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.FilterLambdaSequence;
 
 /**
@@ -16,7 +15,7 @@ public class A332217 extends FilterLambdaSequence {
   public A332217() {
     super(1, 0, n -> {
       final Z v = Functions.SIGMA1.z(n);
-      return (v.testBit(0) ? Z.ONE : Z.ZERO).multiply(Z.valueOf(ZUtils.valuation(v, Z.THREE))).equals(Z.ONE);
+      return (v.testBit(0) ? Z.ONE : Z.ZERO).multiply(Functions.VALUATION.z(v, Z.THREE)).equals(Z.ONE);
     });
   }
 }

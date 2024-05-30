@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import irvine.factor.factor.PrimeDivision;
+import irvine.math.function.Functions;
 import irvine.util.Pair;
 
 /**
@@ -76,7 +77,7 @@ public final class InverseSigma {
       }
       for (final Z p : FACTOR.factorize(d.subtract(1)).toZArray()) {
         final Z q = p.pow(k).subtract(1).multiply(d).add(1);
-        final long t = ZUtils.valuation(q, p);
+        final long t = Functions.VALUATION.i(q, p);
         if (t <= k || t % k != 0 || !q.equals(p.pow(t))) {
           continue;
         }

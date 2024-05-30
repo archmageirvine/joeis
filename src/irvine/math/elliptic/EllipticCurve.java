@@ -9,6 +9,7 @@ import java.util.List;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.factor.PrimeDivision;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.group.AbstractGroup;
 import irvine.math.polynomial.PolynomialUtils;
 import irvine.math.q.Q;
@@ -496,7 +497,7 @@ public class EllipticCurve extends AbstractGroup<EllipticCurvePoint> {
     if (!isIntegral()) {
       throw new UnsupportedOperationException();
     }
-    final int n = ZUtils.valuation(discriminant().toZ(), p);
+    final int n = Functions.VALUATION.i(discriminant().toZ(), p);
     if (n == 0) {
       original.mKodaira.put(p, "I0");
       original.mExponentInConductor.put(p, 0L);

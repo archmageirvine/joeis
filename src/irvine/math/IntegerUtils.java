@@ -285,22 +285,6 @@ public final class IntegerUtils {
   }
 
   /**
-   * The order of m in n.
-   * @param n base
-   * @param m factor
-   * @return number of times p divides n
-   */
-  public static int ord(final int n, final int m) {
-    int nn = n;
-    int c = 0;
-    while (nn % m == 0) {
-      nn /= m;
-      ++c;
-    }
-    return c;
-  }
-
-  /**
    * Test if the array is zero.
    * @param a array
    * @return true iff every element is 0

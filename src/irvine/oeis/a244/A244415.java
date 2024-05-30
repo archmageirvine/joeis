@@ -1,8 +1,8 @@
 package irvine.oeis.a244;
 // manually valuation/valuat at 2022-03-16 18:05
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a005.A005843;
 
 /**
@@ -19,6 +19,6 @@ public class A244415 extends A005843 {
 
   @Override
   public Z next() {
-    return Z.valueOf(ZUtils.valuation(super.next(), Z.FOUR));
+    return Functions.VALUATION.z(super.next(), Z.FOUR);
   }
 }

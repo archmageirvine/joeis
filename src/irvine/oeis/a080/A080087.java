@@ -3,7 +3,6 @@ package irvine.oeis.a080;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.transform.SimpleTransformSequence;
 
@@ -15,6 +14,6 @@ public class A080087 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A080087() {
-    super(1, new A000040(), p -> Z.valueOf(ZUtils.valuation(Functions.FACTORIAL.z(p), Z.FIVE)));
+    super(1, new A000040(), p -> Functions.VALUATION.z(Functions.FACTORIAL.z(p), Z.FIVE));
   }
 }

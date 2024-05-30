@@ -1,7 +1,7 @@
 package irvine.oeis.a181;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -40,10 +40,10 @@ public class A181447 extends Sequence1 {
     int ip = 0;
     while (PRIMES[ip] < mPrime) {
       final Z pz = Z.valueOf(PRIMES[ip]);
-      n2 = n2.divide(pz.pow(ZUtils.valuation(n2, pz)));
+      n2 = n2.divide(pz.pow(Functions.VALUATION.i(n2, pz)));
       ++ip;
     }
-    return n2.compareTo(Z.ONE) > 0 && mPrimeZ.pow(ZUtils.valuation(n2, mPrimeZ)).equals(n2);
+    return n2.compareTo(Z.ONE) > 0 && mPrimeZ.pow(Functions.VALUATION.i(n2, mPrimeZ)).equals(n2);
   }
 
   @Override

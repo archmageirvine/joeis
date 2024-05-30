@@ -1,7 +1,7 @@
 package irvine.oeis.a280;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a057.A057889;
 
 /**
@@ -10,12 +10,9 @@ import irvine.oeis.a057.A057889;
  */
 public class A280509 extends A057889 {
 
-  {
-    setOffset(1);
-  }
-
   /** Construct the sequence. */
   public A280509() {
+    setOffset(1);
     super.next();
   }
 
@@ -23,6 +20,6 @@ public class A280509 extends A057889 {
   public Z next() {
     super.next();
     super.next();
-    return Z.valueOf(ZUtils.valuation(super.next(), Z.THREE));
+    return Functions.VALUATION.z(super.next(), Z.THREE);
   }
 }

@@ -2,7 +2,6 @@ package irvine.oeis.a063;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002808;
 import irvine.oeis.memory.MemorySequence;
@@ -23,6 +22,6 @@ public class A063173 extends Sequence1 {
       ++mN;
       mM = 0;
     }
-    return Z.valueOf(ZUtils.valuation(mC.a(mN - mM), Functions.PRIME.z(mM + 1)));
+    return Functions.VALUATION.z(mC.a(mN - mM), Functions.PRIME.z(mM + 1));
   }
 }

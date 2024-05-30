@@ -149,11 +149,4 @@ public class IntegerUtilsTest extends TestCase {
     assertEquals("[42, 1]", Arrays.toString(IntegerUtils.toArray(Arrays.asList(42, 1))));
   }
 
-  public void testOrd() {
-    assertEquals(1, IntegerUtils.ord(3, 3));
-    assertEquals(2, IntegerUtils.ord(9, 3));
-    assertEquals(3, IntegerUtils.ord(27, 3));
-    assertEquals(0, IntegerUtils.ord(27, 2));
-    assertEquals(1, IntegerUtils.ord(6, 2));
-  }
 }

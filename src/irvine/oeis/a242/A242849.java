@@ -1,8 +1,8 @@
 package irvine.oeis.a242;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
@@ -18,7 +18,7 @@ public class A242849 extends BaseTriangle {
 
   @Override
   public Z triangleElement(final int n, final int k) {
-    final int val = ZUtils.valuation(Binomial.binomial(n, k), Z.THREE);
+    final int val = Functions.VALUATION.i(Binomial.binomial(n, k), Z.THREE);
     return (val == 0) ? Z.ONE : Z.THREE.pow(val);
   }
 }

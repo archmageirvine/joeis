@@ -1,7 +1,7 @@
 package irvine.oeis.a007;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
 
@@ -39,7 +39,7 @@ public class A007949 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return Z.valueOf(ZUtils.valuation(n, Z.THREE));
+    return Functions.VALUATION.z(n, Z.THREE);
   }
 
   @Override

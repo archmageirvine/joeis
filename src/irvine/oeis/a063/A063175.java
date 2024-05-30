@@ -2,7 +2,6 @@ package irvine.oeis.a063;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002808;
 import irvine.oeis.memory.MemorySequence;
@@ -18,7 +17,7 @@ public class A063175 extends Sequence1 {
 
   private boolean is(final int n) {
     for (int k = 0; k <= n; ++k) {
-      if (ZUtils.valuation(mC.a(n + k), Functions.PRIME.z(k + 1)) > 0) {
+      if (Functions.VALUATION.i(mC.a(n + k), Functions.PRIME.z(k + 1)) > 0) {
         return false;
       }
     }

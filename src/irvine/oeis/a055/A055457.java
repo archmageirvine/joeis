@@ -1,7 +1,7 @@
 package irvine.oeis.a055;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -15,6 +15,6 @@ public class A055457 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(ZUtils.valuation(Z.FIVE.multiply(mN), Z.FIVE));
+    return Functions.VALUATION.z(Z.FIVE.multiply(mN), Z.FIVE);
   }
 }

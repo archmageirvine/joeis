@@ -1,8 +1,8 @@
 package irvine.oeis.a339;
 // manually valuation/valuat at 2022-03-16 13:50
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 
 /**
  * A339813 The exponent of the highest power of 2 dividing (A019565(n) - 1).
@@ -18,6 +18,6 @@ public class A339813 extends A339809 {
 
   @Override
   public Z next() {
-    return Z.valueOf(ZUtils.valuation(super.next(), Z.TWO));
+    return Functions.VALUATION.z(super.next(), Z.TWO);
   }
 }

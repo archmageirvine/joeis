@@ -1,7 +1,7 @@
 package irvine.oeis.a054;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -33,7 +33,7 @@ public class A054861 extends Sequence0 {
   public Z next() {
     ++mN;
     if (mN % mBase == 0) {
-      mResult = mResult.add(ZUtils.valuation(Z.valueOf(mN), Z.valueOf(mBase)));
+      mResult = mResult.add(Functions.VALUATION.i(mN, mBase));
     }
     return mResult;
   }

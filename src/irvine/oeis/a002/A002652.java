@@ -1,6 +1,6 @@
 package irvine.oeis.a002;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -13,7 +13,7 @@ public class A002652 extends Sequence0 {
   private long mN = -1;
 
   private long isSquare(final long n) {
-    final long s = LongUtils.sqrt(n);
+    final long s = Functions.SQRT.l(n);
     return s * s == n ? 2 : 0;
   }
 
@@ -23,7 +23,7 @@ public class A002652 extends Sequence0 {
       return Z.ONE;
     }
     Z s = Z.ZERO;
-    for (long y = 1; y <= LongUtils.sqrt(4 * mN / 7); ++y) {
+    for (long y = 1; y <= Functions.SQRT.l(4 * mN / 7); ++y) {
       final long t = 4 * mN - 7 * y * y;
       s = s.add(isSquare(t));
       if (t == 0) {

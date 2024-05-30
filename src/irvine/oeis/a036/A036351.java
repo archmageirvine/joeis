@@ -1,7 +1,6 @@
 package irvine.oeis.a036;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -19,7 +18,7 @@ public class A036351 extends Sequence1 {
   @Override
   public Z next() {
     mLimit *= 10;
-    final long sqrt = LongUtils.sqrt(mLimit);
+    final long sqrt = Functions.SQRT.l(mLimit);
     long sum = 0;
     for (long p = 2; p <= sqrt; p = mPrime.nextPrime(p)) {
       sum += Functions.PRIME_PI.l(mLimit / p);

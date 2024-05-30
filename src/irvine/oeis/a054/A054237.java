@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -18,7 +18,7 @@ public class A054237 extends Sequence0 {
   }
 
   private long[] decode(final long n) {
-    final long s = (LongUtils.sqrt(8 * n + 1) - 1) / 2;
+    final long s = (Functions.SQRT.l(8 * n + 1) - 1) / 2;
     //final long s = CR.valueOf(8 * n + 1).sqrt().subtract(CR.ONE).divide(CR.TWO).floor().longValueExact();
     final long u = encode(s, 0);
     final long r = n - u;

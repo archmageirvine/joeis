@@ -18,7 +18,7 @@ public class A058305 extends Sequence0 {
 
   private Q h(final long n) {
     Q sum = Q.ZERO;
-    for (final Z d : Jaguar.factor(LongUtils.sqrt(n / Functions.CORE.l(n))).divisors()) {
+    for (final Z d : Jaguar.factor(Functions.SQRT.l(n / Functions.CORE.l(n))).divisors()) {
       final long bigD = -n / d.square().longValueExact();
       if ((bigD & 3) < 2) {
         sum = sum.add(new Q(LongUtils.classNumber(bigD), Long.max(1, bigD + 6)));

@@ -1,6 +1,6 @@
 package irvine.factor.prime;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -14,7 +14,7 @@ public abstract class AbstractPrime implements Prime {
   public static final long MAX_LONG_PRIME = 9223372036854775783L;
 
   /** largest number we can square within a long */
-  public static final long SQRT_MAX_VALUE = LongUtils.sqrt(Long.MAX_VALUE);
+  public static final long SQRT_MAX_VALUE = Functions.SQRT.l(Long.MAX_VALUE);
 
   @Override
   public long nextPrime(long n) {

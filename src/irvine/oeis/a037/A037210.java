@@ -1,7 +1,7 @@
 package irvine.oeis.a037;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,8 +18,8 @@ public class A037210 extends Sequence1 {
   public Z next() {
     while (true) {
       final long p = mPrime.nextPrime(++mN);
-      final long q = mPrime.nextPrime(LongUtils.sqrt(mN));
-      final long r = mPrime.nextPrime(LongUtils.sqrt(p));
+      final long q = mPrime.nextPrime(Functions.SQRT.l(mN));
+      final long r = mPrime.nextPrime(Functions.SQRT.l(p));
       if (p - mN == r - q) {
         return Z.valueOf(mN);
       }

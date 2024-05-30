@@ -1,6 +1,6 @@
 package irvine.oeis.a030;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a008.A008289;
 
@@ -16,7 +16,7 @@ public class A030699 extends A008289 {
   public Z next() {
     ++mN;
     Z m = Z.ZERO;
-    for (long k = 1; k <= (LongUtils.sqrt(8 * mN + 1) - 1) / 2; ++k) {
+    for (long k = 1; k <= (Functions.SQRT.l(8 * mN + 1) - 1) / 2; ++k) {
       m = m.max(get(mN, k));
     }
     return m;

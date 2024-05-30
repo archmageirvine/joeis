@@ -1,6 +1,6 @@
 package irvine.oeis.a020;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -20,7 +20,7 @@ public class A020687 extends Sequence1 {
         final long t = mN - 5 * s * s;
         if ((t & 7) == 0) {
           final long u = t >> 3;
-          final long v = LongUtils.sqrt(u);
+          final long v = Functions.SQRT.l(u);
           if (v * v == u) {
             return Z.valueOf(mN);
           }

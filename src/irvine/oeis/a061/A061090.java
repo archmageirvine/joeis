@@ -1,6 +1,5 @@
 package irvine.oeis.a061;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -18,7 +17,7 @@ public class A061090 extends Sequence1 {
     while (true) {
       final Z t = Z.valueOf(++mN).square();
       final long ss = Functions.DIGIT_SUM_SQUARES.l(t);
-      final long s = LongUtils.sqrt(ss);
+      final long s = Functions.SQRT.l(ss);
       if (s * s == ss) {
         return t;
       }

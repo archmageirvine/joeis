@@ -2,7 +2,7 @@ package irvine.oeis.a061;
 
 import java.util.TreeSet;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.Sequence2;
@@ -44,7 +44,7 @@ public class A061390 extends RecordPositionSequence {
             if (v > 2) {
               next.add(v - 1);
             }
-            for (long s = LongUtils.sqrt(v); s >= 2; --s) {
+            for (long s = Functions.SQRT.l(v); s >= 2; --s) {
               if (v % s == 0) {
                 next.add(v / s);
               }

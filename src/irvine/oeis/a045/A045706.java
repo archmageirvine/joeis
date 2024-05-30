@@ -2,7 +2,7 @@ package irvine.oeis.a045;
 
 import java.util.TreeSet;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence0;
@@ -37,7 +37,7 @@ public class A045706 extends Sequence0 {
     long cnt = 0;
     long f;
     for (int k = 0; (f = mN - mFibo.a(k).pow(3).longValueExact()) >= 0; ++k) {
-      final long q = LongUtils.sqrt(f);
+      final long q = Functions.SQRT.l(f);
       if (q * q == f && isFibo(q)) {
         ++cnt;
       }

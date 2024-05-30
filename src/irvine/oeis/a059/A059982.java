@@ -1,6 +1,5 @@
 package irvine.oeis.a059;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -20,7 +19,7 @@ public class A059982 extends Sequence0 {
   public Z next() {
     if (++mM * mM > mN) {
       ++mN;
-      mM = -IntegerUtils.sqrt(mN);
+      mM = -Functions.SQRT.i(mN);
     }
     if (mM <= 0) {
       mColIndex.set(-mM, mColIndex.get(-mM) + 1);

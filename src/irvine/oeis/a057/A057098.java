@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.Triple;
@@ -34,7 +34,7 @@ public class A057098 extends Sequence1 {
         final long c2 = ++mC * mC;
         for (long b = 2; b < mC; ++b) {
           final long a2 = c2 - b * b;
-          final long a = LongUtils.sqrt(a2);
+          final long a = Functions.SQRT.l(a2);
           if (a <= b && a * a == a2) {
             final Z prod = Z.valueOf(a).multiply(b).multiply(mC);
             final Triple<Long> t = new Triple<>(a, b, mC);

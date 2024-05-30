@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -17,7 +17,7 @@ public class A003099 extends Sequence0 {
   public Z next() {
     ++mN;
     Z s = Z.ZERO;
-    for (long k = 0; k <= LongUtils.sqrt(mN); ++k) {
+    for (long k = 0; k <= Functions.SQRT.l(mN); ++k) {
       s = s.add(Binomial.binomial(mN, k * k));
     }
     return s;

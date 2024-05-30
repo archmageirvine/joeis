@@ -2,7 +2,7 @@ package irvine.oeis;
 
 import java.util.Arrays;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.util.array.LongDynamicLongArray;
 import irvine.util.string.StringUtils;
@@ -119,7 +119,7 @@ public class GramMatrixThetaSeries extends AbstractSequence {
    * @param args the matrix (space separated numbers, assumed to be a square matrix)
    */
   public static void main(final String[] args) {
-    final int s = IntegerUtils.sqrt(args.length);
+    final int s = Functions.SQRT.i(args.length);
     if (s * s != args.length) {
       throw new IllegalArgumentException("Not a square matrix");
     }

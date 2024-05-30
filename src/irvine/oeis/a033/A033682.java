@@ -1,6 +1,6 @@
 package irvine.oeis.a033;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A033682 extends Sequence1 {
       if (mN % 10 == 7) {
         continue; // all terms = 1,3,5,9 (mod 10)
       }
-      final long sn = LongUtils.sqrt(mN);
+      final long sn = Functions.SQRT.l(mN);
       long q = 0;
       while (true) {
         final long s = ++q * q + (q + 1) * (q + 1);
@@ -29,7 +29,7 @@ public class A033682 extends Sequence1 {
         if (mN % s == 0) {
           final long m = mN / s;
           final long disc = 2 * m - 1;
-          final long sq = LongUtils.sqrt(disc);
+          final long sq = Functions.SQRT.l(disc);
           if (sq * sq == disc && ((sq - 1) & 1) == 0) {
             //System.out.println(mN + " " + s + " disc=" + disc + " q=" + q + " r=" + (sq - 1) / 2);
             return Z.valueOf(mN);

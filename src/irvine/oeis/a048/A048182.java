@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.TreeSet;
 import java.util.function.ToLongFunction;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 import irvine.util.Pair;
@@ -35,7 +35,7 @@ public class A048182 extends Sequence2 {
         if (v > 2) {
           set.add(new Pair<>(v - 1, cost + 1));
         }
-        for (long s = LongUtils.sqrt(v); s >= 2; --s) {
+        for (long s = Functions.SQRT.l(v); s >= 2; --s) {
           if (v % s == 0) {
             set.add(new Pair<>(v / s, cost + s));
           }

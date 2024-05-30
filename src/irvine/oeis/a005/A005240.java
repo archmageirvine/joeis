@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import java.util.HashSet;
 import java.util.Set;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicByteArray;
@@ -26,7 +26,7 @@ public class A005240 extends Sequence1 {
     if (c != 0) {
       return c;
     }
-    final long s = LongUtils.sqrt(n);
+    final long s = Functions.SQRT.l(n);
     final long a = s * s;
     if (n - a == 0) {
       return -1;

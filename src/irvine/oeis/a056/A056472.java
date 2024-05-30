@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -24,7 +24,7 @@ public class A056472 extends Sequence1 {
     lst.add(Collections.singletonList(n));
     for (final Z dd : Jaguar.factor(n).divisorsSorted()) {
       final long d = dd.longValue();
-      if (d >= min && d <= LongUtils.sqrt(n)) {
+      if (d >= min && d <= Functions.SQRT.l(n)) {
         for (final List<Long> t : factor(n / d, d)) {
           final ArrayList<Long> u = new ArrayList<>();
           u.add(d);

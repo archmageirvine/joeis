@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.util.array.LongDynamicBooleanArray;
@@ -35,7 +35,7 @@ public class A000394 extends AbstractSequence {
   private void update(final long n) {
     // Updates x^2 + y^2 + 7z^2
     // Note symmetric in x and y, so only need to do 1 loop for them
-    final long x = LongUtils.sqrt(n);
+    final long x = Functions.SQRT.l(n);
     if (x > mDone) {
       final long xx = x * x;
       for (long y = 0; y <= x; ++y) {

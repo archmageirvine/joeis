@@ -1,6 +1,5 @@
 package irvine.oeis.a067;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
@@ -24,8 +23,8 @@ public class A067069 extends Sequence1 implements Conjectural {
       for (int k = 1; k <= HEURISTIC; ++k) {
         long r = 0;
         final long q = mN * k * k + 1;
-        for (long x = 0; x <= LongUtils.sqrt(q); ++x) {
-          for (long y = 0; y <= LongUtils.sqrt((q - x * x) / mN); ++y) {
+        for (long x = 0; x <= Functions.SQRT.l(q); ++x) {
+          for (long y = 0; y <= Functions.SQRT.l((q - x * x) / mN); ++y) {
             if (x * x + mN * y * y == q) {
               ++r;
             }

@@ -1,6 +1,6 @@
 package irvine.oeis.a046;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000005;
 
@@ -12,7 +12,7 @@ public class A046522 extends A000005 {
 
   @Override
   public Z next() {
-    return super.next().subtract(2 * LongUtils.sqrt(mN)).negate();
+    return super.next().subtract(2 * Functions.SQRT.l(mN)).negate();
   }
 }
 

@@ -2,6 +2,7 @@ package irvine.oeis.a057;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
@@ -26,7 +27,7 @@ public class A057246 extends Sequence1 {
         }
       }
     }
-    final long g = LongUtils.sqrt(n);
+    final long g = Functions.SQRT.l(n);
     if (g * g == n) {
       s += g;
     }

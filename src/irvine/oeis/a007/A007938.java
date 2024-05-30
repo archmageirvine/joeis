@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.util.Permutation;
 
@@ -21,7 +21,7 @@ public class A007938 extends A007936 {
         v *= 10;
         v += s.charAt(t) - '0';
       }
-      final long sqrt = LongUtils.sqrt(v);
+      final long sqrt = Functions.SQRT.l(v);
       if (sqrt * sqrt == v) {
         return true;
       }

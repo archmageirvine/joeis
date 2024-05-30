@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
@@ -24,7 +24,7 @@ public class A000448 extends Sequence1 {
       }
       final long d = n - bsq;
       if (d <= bsq) {
-        final long r = LongUtils.sqrt(d);
+        final long r = Functions.SQRT.l(d);
         if (r * r == d) {
           ++c;
         }

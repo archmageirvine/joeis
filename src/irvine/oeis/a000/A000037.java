@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -28,7 +28,8 @@ public class A000037 extends AbstractSequence {
   @Override
   public Z next() {
     while (true) {
-      final long s = LongUtils.sqrt(++mN);
+      final long n = ++mN;
+      final long s = Functions.SQRT.l(n);
       if (s * s != mN) {
         break;
       }

@@ -2,7 +2,7 @@ package irvine.oeis.a001;
 
 import java.util.HashMap;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -57,7 +57,7 @@ public class A001130 extends Sequence1 {
   public Z next() {
     mN += 2;
     Z t = Z.ZERO;
-    for (long d = 0; d <= LongUtils.sqrt(mN); ++d) {
+    for (long d = 0; d <= Functions.SQRT.l(mN); ++d) {
       t = t.add(h(mN, d, 0, 0));
     }
     return t;

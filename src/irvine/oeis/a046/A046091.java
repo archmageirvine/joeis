@@ -1,6 +1,6 @@
 package irvine.oeis.a046;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.z.Z;
@@ -45,7 +45,7 @@ public class A046091 extends Sequence0 {
   public Z next() {
     ++mN;
     Z sum = Z.ZERO;
-    for (int v = (int) (1 + LongUtils.sqrt(1 + 8L * mN)) / 2; v <= mN + 1; ++v) {
+    for (int v = (int) (1 + Functions.SQRT.l(1 + 8L * mN)) / 2; v <= mN + 1; ++v) {
       final Sequence seq = new MySequence(v, mN);
       sum = sum.add(seq.next());
     }

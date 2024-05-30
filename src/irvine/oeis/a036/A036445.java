@@ -2,7 +2,7 @@ package irvine.oeis.a036;
 
 import java.util.Arrays;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 import irvine.util.string.StringUtils;
@@ -82,7 +82,7 @@ public class A036445 extends Sequence2 {
   @Override
   public Z next() {
     ++mN;
-    mLowerBound = Math.max(1, IntegerUtils.sqrt(mN / 2));
+    mLowerBound = Math.max(1, Functions.SQRT.i(mN / 2));
     if (mVerbose) {
       StringUtils.message("a(" + mN + ") >= " + mLowerBound);
     }

@@ -1,6 +1,6 @@
 package irvine.oeis.a018;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -32,7 +32,7 @@ public class A018935 extends Sequence1 {
   public Z next() {
     ++mN;
     mSumSquares += (long) mN * mN;
-    long m = LongUtils.sqrt(mSumSquares);
+    long m = Functions.SQRT.l(mSumSquares);
     while (true) {
       if (isSolvable(m * m, mN, 0)) {
         return Z.valueOf(m);

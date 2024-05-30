@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
@@ -19,13 +19,13 @@ public class A055525 extends Sequence3 {
     while (true) {
       final long k2 = ++k * k;
       final long a = s + k2;
-      final long as = LongUtils.sqrt(a);
+      final long as = Functions.SQRT.l(a);
       if (as * as == a) {
         return Z.valueOf(k);
       }
       final long b = s - k2;
       if (b > 0) {
-        final long bs = LongUtils.sqrt(b);
+        final long bs = Functions.SQRT.l(b);
         if (bs * bs == b) {
           return Z.valueOf(k);
         }

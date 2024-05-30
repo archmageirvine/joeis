@@ -2,7 +2,7 @@ package irvine.oeis.a060;
 
 import java.util.Arrays;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
@@ -195,7 +195,7 @@ public class A060655 extends Sequence1 {
       for (int k = 0; k < mN; ++k) {
         totalArea += (k + 1) * (2 * mN - p[k]);
       }
-      int side = IntegerUtils.sqrt(totalArea);
+      int side = Functions.SQRT.i(totalArea);
       if (side * side < totalArea) {
         ++side;
       }

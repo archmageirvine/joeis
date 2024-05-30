@@ -1,6 +1,6 @@
 package irvine.oeis.a028;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -22,7 +22,7 @@ public class A028961 extends Sequence0 {
       final long t = mN - 8 * y * y;
       final long d = 12 * t + 4 * y * y;
       if (d >= 0) {
-        final long s = LongUtils.sqrt(d);
+        final long s = Functions.SQRT.l(d);
         if (s * s == d) {
           if ((-2 * y + s) % 6 == 0) {
             cnt += y == 0 ? 1 : 2;

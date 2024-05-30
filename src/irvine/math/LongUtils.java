@@ -114,36 +114,6 @@ public final class LongUtils {
     return Functions.JACOBI.i(m, n);
   }
 
-  private static final int BITS = Long.SIZE - 2;
-
-  /**
-   * Return the integer square root of a positive long. If <code>n&lt;0</code> then an
-   * arithmetic exception is thrown.
-   * @param n number
-   * @return <code>floor(sqrt(n))</code>
-   * @throws ArithmeticException if <code>n&lt;0</code>.
-   */
-  public static long sqrt(final long n) {
-    // WARNING: Simply doing (long) Math.sqrt(n) does not work for n > ~2^52.
-    if (n < 1L << 52) {
-      return (long) Math.sqrt(n);
-    }
-    long na = 3L << (2 * ((BITS >>> 1) - 1));
-    long a = 1L << (BITS >>> 1);
-    while ((n & na) == 0L) {
-      na >>>= 2;
-      a >>>= 1;
-    }
-    while (true) {
-      final long ndiva = n / a;
-      na = (ndiva + a) >>> 1;
-      if (na - ndiva <= 1) {
-        return na * na <= n ? na : ndiva;
-      }
-      a = na;
-    }
-  }
-
   /**
    * Compute the number of bits in <code>|n|</code>.
    * @param n number to take logarithm of.
@@ -445,7 +415,8 @@ public final class LongUtils {
    */
   public static long classNumber(final long discriminant) {
     long h = 1;
-    final long bLimit = sqrt(-discriminant / 3);
+    final long n = -discriminant / 3;
+    final long bLimit = Functions.SQRT.l(n);
     for (long b = discriminant & 1; b <= bLimit; b += 2) {
       final long q = (b * b - discriminant) / 4;
       for (long a = b <= 1 ? 2 : b; a * a <= q; ++a) {

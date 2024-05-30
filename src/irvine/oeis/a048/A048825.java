@@ -2,7 +2,7 @@ package irvine.oeis.a048;
 
 import java.util.TreeSet;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
@@ -34,7 +34,7 @@ public class A048825 extends Sequence2 {
       }
       if (expanded.add(v)) {
         next.add(v + 1);
-        for (long s = LongUtils.sqrt(v); s >= 2; --s) {
+        for (long s = Functions.SQRT.l(v); s >= 2; --s) {
           if (v % s == 0) {
             currentCost.add(v / s);
           }

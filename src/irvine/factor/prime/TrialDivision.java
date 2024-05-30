@@ -1,6 +1,6 @@
 package irvine.factor.prime;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -38,7 +38,7 @@ public class TrialDivision implements Prime {
 
     // n is odd
     long f = 3L;
-    final long limit = LongUtils.sqrt(n);
+    final long limit = Functions.SQRT.l(n);
     while (f <= limit) {
       if (n % f == 0L) {
         return false;

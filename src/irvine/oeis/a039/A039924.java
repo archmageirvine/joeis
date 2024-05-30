@@ -2,7 +2,7 @@ package irvine.oeis.a039;
 
 import java.util.Arrays;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -23,7 +23,7 @@ public class A039924 extends Sequence0 {
     ++mN;
     Polynomial<Z> prod = RING.one();
     Polynomial<Z> sum = RING.one();
-    for (int k = 1; k <= IntegerUtils.sqrt(mN); ++k) {
+    for (int k = 1; k <= Functions.SQRT.i(mN); ++k) {
       // Construct x^k-1
       final Z[] t = new Z[k + 1];
       Arrays.fill(t, Z.ZERO);

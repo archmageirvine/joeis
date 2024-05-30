@@ -49,15 +49,6 @@ public final class IntegerUtils {
   }
 
   /**
-   * Compute the floor of the square root of the given integer.
-   * @param n integer to take the square root of
-   * @return an <code>int</code> value
-   */
-  public static int sqrt(final int n) {
-    return (int) Math.sqrt(n);
-  }
-
-  /**
    * Convert a digit character to a value, returns <code>-1</code> if not a valid digit.
    * Understands about use of letters in higher bases.
    * @param c a character
@@ -85,7 +76,8 @@ public final class IntegerUtils {
     return -1;
   }
 
-  private static final int N_LIMIT = sqrt(Integer.MAX_VALUE);
+  // Use system sqrt here to avoid circular dependency
+  private static final int N_LIMIT = (int) Math.sqrt(Integer.MAX_VALUE);
 
   /**
    * Compute <code>a^e mod n</code> for non-negative <code>a</code> and

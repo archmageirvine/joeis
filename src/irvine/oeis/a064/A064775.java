@@ -1,6 +1,5 @@
 package irvine.oeis.a064;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -16,7 +15,7 @@ public class A064775 extends Sequence1 {
 
   @Override
   public Z next() {
-    if (Functions.GPF.l(++mN) <= LongUtils.sqrt(mN)) {
+    if (Functions.GPF.l(++mN) <= Functions.SQRT.l(mN)) {
       ++mCount;
     }
     return Z.valueOf(mCount);

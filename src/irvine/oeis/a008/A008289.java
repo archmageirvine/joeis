@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
@@ -31,7 +31,7 @@ public class A008289 extends MemoryFunction2Sequence<Long, Z> {
 
   @Override
   public Z next() {
-    if (++mM > (LongUtils.sqrt(8 * mN + 1) - 1) / 2) {
+    if (++mM > (Functions.SQRT.l(8 * mN + 1) - 1) / 2) {
       ++mN;
       mM = 1;
     }

@@ -2,7 +2,6 @@ package irvine.math.function;
 
 import java.util.HashMap;
 
-import irvine.math.LongUtils;
 import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 
@@ -37,7 +36,7 @@ public final class HyperspherePoints extends AbstractFunction2D {
       }
     } else {
       c = Z.ZERO;
-      for (long j = 1; j <= LongUtils.sqrt(n); ++j) {
+      for (long j = 1; j <= Functions.SQRT.l(n); ++j) {
         c = c.add(z(k - 1, n - j * j));
       }
       c = c.multiply2().add(z(k - 1, n));

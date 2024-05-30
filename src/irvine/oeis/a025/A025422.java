@@ -1,6 +1,6 @@
 package irvine.oeis.a025;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
@@ -35,7 +35,7 @@ public class A025422 extends MemoryFunctionInt3Sequence<Z> {
 
   @Override
   public Z next() {
-    return get(++mN, IntegerUtils.sqrt(mN), numSquares());
+    return get(++mN, Functions.SQRT.i(mN), numSquares());
   }
 }
 

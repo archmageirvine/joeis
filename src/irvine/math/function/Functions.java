@@ -13,8 +13,16 @@ public final class Functions {
 
   private Functions() { }
 
+  // WARNING: There is a certain amount of trickiness here in that the order in which
+  // these functions are initialized matters.
+
   // One argument functions
 
+  // SQRT must be initialized before PRIME
+  /** Floor square root (truncating square root). */
+  public static final Function1 SQRT = new Sqrt(); // =A000196
+  /** Ceiling square root. */
+  public static final Function1 CEIL_SQRT = new CeilSqrt(); // =A003059
   /** Nth prime function. */
   public static final Function1 PRIME = new Prime(); // =A000040
   /** Prime counting function. */
@@ -83,8 +91,6 @@ public final class Functions {
   public static final Function1 CARMICHAEL_LAMBDA_VARIANT = new CarmichaelLambdaVariant(); // =A011773
   /** Dedekind psi function. */
   public static final Function1 DEDEKIND_PSI = new DedekindPsi(); // =A001615
-  /** Ceiling square root. */
-  public static final Function1 CEIL_SQRT = new CeilSqrt(); // =A003059
   /** Bitset indicating which digits are present in a number. */
   public static final Function1 SYNDROME = new Syndrome();
   /** Step to the next number with the same number of set bits. */

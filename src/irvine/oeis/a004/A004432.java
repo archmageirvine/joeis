@@ -1,6 +1,6 @@
 package irvine.oeis.a004;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -35,7 +35,7 @@ public class A004432 extends AbstractSequence {
         final long u = mN - x * x;
         for (long y = x + 1; 2 * y * y < u; ++y) {
           final long z2 = u - y * y;
-          final long z = LongUtils.sqrt(z2);
+          final long z = Functions.SQRT.l(z2);
           if (z * z == z2) {
             return Z.valueOf(mN);
           }

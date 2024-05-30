@@ -1,6 +1,5 @@
 package irvine.oeis.a053;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000290;
@@ -20,7 +19,7 @@ public class A053057 extends A000290 {
     while (true) {
       final Z square = super.next();
       final long d = Functions.DIGIT_SUM.l(square);
-      final long s = LongUtils.sqrt(d);
+      final long s = Functions.SQRT.l(d);
       if (s * s == d) {
         return square;
       }

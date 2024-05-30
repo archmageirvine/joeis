@@ -1,7 +1,6 @@
 package irvine.math.predicate;
 
-import irvine.math.IntegerUtils;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -17,13 +16,13 @@ class Square extends AbstractPredicate {
 
   @Override
   public boolean is(final long n) {
-    final long s = LongUtils.sqrt(n);
+    final long s = Functions.SQRT.l(n);
     return s * s == n;
   }
 
   @Override
   public boolean is(final int n) {
-    final int s = IntegerUtils.sqrt(n);
+    final int s = Functions.SQRT.i(n);
     return s * s == n;
   }
 }

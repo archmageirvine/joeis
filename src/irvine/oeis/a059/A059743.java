@@ -42,7 +42,7 @@ public class A059743 extends Sequence0 {
       sum = sum.add(Functions.PHI.l(k));
     }
     for (long k = t.ceil().longValueExact(); k < mN; ++k) {
-      sum = sum.add(b(k, LongUtils.sqrt(mN * mN - k * k)));
+      sum = sum.add(b(k, Functions.SQRT.l(mN * mN - k * k)));
     }
     return sum.multiply(8).add(1);
   }

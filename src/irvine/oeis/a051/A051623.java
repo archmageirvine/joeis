@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -16,7 +16,7 @@ public class A051623 extends Sequence1 {
   public Z next() {
     ++mN;
     Z sum = Z.ZERO;
-    for (long k = 1 + LongUtils.sqrt(mN); k <= LongUtils.sqrt(2 * mN); ++k) {
+    for (long k = 1 + Functions.SQRT.l(mN); k <= Functions.SQRT.l(2 * mN); ++k) {
       sum = sum.add(k * k - mN);
     }
     return sum;

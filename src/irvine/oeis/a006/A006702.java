@@ -1,8 +1,8 @@
 package irvine.oeis.a006;
 
-import irvine.math.LongUtils;
 import irvine.math.cr.CR;
 import irvine.math.cr.Convergents;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -17,7 +17,7 @@ public class A006702 extends Sequence1 {
 
   // solve x^2 - n * y^2 = +/- 1
   protected Q solve(final long n) {
-    final long s = LongUtils.sqrt(n);
+    final long s = Functions.SQRT.l(n);
     if (s * s == n) {
       return Q.ONE;
     }

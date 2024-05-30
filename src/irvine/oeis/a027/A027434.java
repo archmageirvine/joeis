@@ -1,6 +1,6 @@
 package irvine.oeis.a027;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -28,6 +28,6 @@ public class A027434 extends AbstractSequence {
   @Override
   public Z next() {
     mN += 4;
-    return Z.ONE.add(LongUtils.sqrt(mN));
+    return Z.ONE.add(Functions.SQRT.l(mN));
   }
 }

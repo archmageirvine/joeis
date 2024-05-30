@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -34,7 +34,7 @@ public class A000025 extends AbstractSequence {
     if (++mN == 0) {
       return Z.ONE;
     }
-    final int h = IntegerUtils.sqrt(mN);
+    final int h = Functions.SQRT.i(mN);
     Z c = Z.ZERO;
     for (int k = 1; k <= h; ++k) {
       Polynomial<Z> den = RING.add(RING.one(), RING.monomial(Z.ONE, mN - k * k + 1));

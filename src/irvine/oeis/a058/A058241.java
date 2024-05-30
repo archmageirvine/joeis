@@ -2,7 +2,7 @@ package irvine.oeis.a058;
 
 import java.util.Arrays;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
@@ -104,7 +104,7 @@ public class A058241 extends Sequence1 {
     }
     for (int k = 0; k * k <= q / 2; ++k) {
       final int j2 = q - k * k;
-      final int j = IntegerUtils.sqrt(j2);
+      final int j = Functions.SQRT.i(j2);
       if (j * j == j2) {
         return false;
       }

@@ -1,6 +1,6 @@
 package irvine.math.z;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 
 /**
  * Square root.
@@ -35,14 +35,14 @@ final class Sqrt {
     Z r, diff;
     if (n.getSize() == 1) {
       // fits easily in an int
-      final int s = IntegerUtils.sqrt(n.mValue[0]);
+      final int s = Functions.SQRT.i(n.mValue[0]);
       r = Z.valueOf(s);
       diff = Z.valueOf(s * s);
     } else {
       final int[] av = new int[n.getSize()];
       int sa = (n.getSize() + 1) >>> 1;
       final int aa = sa - 1;
-      av[aa] = IntegerUtils.sqrt(n.mValue[n.getSize() - 1]) + 1;
+      av[aa] = Functions.SQRT.i(n.mValue[n.getSize() - 1]) + 1;
       if ((n.getSize() & 1) == 0) {
         av[aa] <<= Z.BASE_BITS_SH;
       }

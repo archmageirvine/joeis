@@ -1,6 +1,5 @@
 package irvine.math.function;
 
-import irvine.math.LongUtils;
 import irvine.math.z.Z;
 
 /**
@@ -18,6 +17,6 @@ class TriangularInverse extends AbstractFunction1 {
 
   @Override
   public long l(final long n) {
-    return n >= MAX ? z(n).longValueExact() : (LongUtils.sqrt(8L * n + 1) - 1) / 2;
+    return n >= MAX ? z(n).longValueExact() : (Functions.SQRT.l(8L * n + 1) - 1) / 2;
   }
 }

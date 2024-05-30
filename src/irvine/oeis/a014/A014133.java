@@ -1,6 +1,6 @@
 package irvine.oeis.a014;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -19,7 +19,7 @@ public class A014133 extends Sequence0 {
       long t;
       for (long k = 0; (t = k * (k + 1) / 2) <= mN; ++k) {
         final long m = mN - t;
-        final long s = LongUtils.sqrt(m);
+        final long s = Functions.SQRT.l(m);
         if (s * s == m) {
           return Z.valueOf(mN);
         }

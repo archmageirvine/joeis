@@ -1,6 +1,6 @@
 package irvine.oeis.a014;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -21,7 +21,7 @@ public class A014439 extends Sequence1 {
   public Z next() {
     while (true) {
       ++mN;
-      final long lim = LongUtils.sqrt(mN / 3) + 1;
+      final long lim = Functions.SQRT.l(mN / 3) + 1;
       int c = 0;
       for (long x = Z.valueOf(mN).root(3).longValueExact(); x <= lim; ++x) {
         final long x3 = x * x * x;

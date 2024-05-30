@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
@@ -31,7 +31,7 @@ public class A000009 extends MemorySequence {
     }
     sum = sum.multiply2();
     final long nn = 2L * n;
-    final long d = LongUtils.sqrt(1 + 24L * n);
+    final long d = Functions.SQRT.l(1 + 24L * n);
     final long j0 = (d - 1) / 6;
     final long tj0 = 3 * j0;
     final long sigma;

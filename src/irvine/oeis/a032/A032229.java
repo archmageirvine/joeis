@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -24,7 +24,7 @@ public class A032229 extends Sequence0 {
     Polynomial<Z> sum = RING.one();
     Polynomial<Z> den = RING.one();
     Z kf = Z.ONE;
-    for (int k = 1; k <= IntegerUtils.sqrt(mN); kf = kf.multiply(k++)) {
+    for (int k = 1; k <= Functions.SQRT.i(mN); kf = kf.multiply(k++)) {
       final int r = k * k;
       final Polynomial<Z> num = RING.monomial(k > 2 ? kf : Z.TWO, r);
       den = RING.multiply(den, RING.oneMinusXToTheN(2 * k));

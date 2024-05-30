@@ -1,6 +1,6 @@
 package irvine.oeis.a009;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -20,7 +20,7 @@ public class A009000 extends Sequence1 {
       long a2;
       for (long a = 1; (a2 = a * a) <= c2 / 2; ++a) {
         final long b2 = c2 - a2;
-        final long b = LongUtils.sqrt(b2);
+        final long b = Functions.SQRT.l(b2);
         if (b * b == b2) {
           ++mC;
         }

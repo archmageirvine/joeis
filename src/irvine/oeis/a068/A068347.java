@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
@@ -48,7 +48,7 @@ public class A068347 extends A066925 {
     final long[] terms = ZUtils.toLong(Jaguar.factor(t).divisorsSorted());
     findSolutions(t, t, terms, 0, new ArrayList<>());
     if (Predicates.SQUARE.is(t)) {
-      final long s = LongUtils.sqrt(t);
+      final long s = Functions.SQRT.l(t);
       final List<Long> s1 = new ArrayList<>();
       long q = t;
       while (q - s >= 0) {

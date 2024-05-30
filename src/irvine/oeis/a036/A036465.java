@@ -1,6 +1,6 @@
 package irvine.oeis.a036;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
@@ -33,7 +33,7 @@ public class A036465 extends Sequence2 {
   @Override
   public Z next() {
     ++mN;
-    mLowerBound = Math.max(1, IntegerUtils.sqrt(mN / 2));
+    mLowerBound = Math.max(1, Functions.SQRT.i(mN / 2));
     final int s = mN * mN;
     final int[] parts = new int[s];
     search(s, parts, 0, mN - 1);

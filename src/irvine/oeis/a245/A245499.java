@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,7 +18,7 @@ public class A245499 extends Sequence1 {
   protected final TreeSet<Z> mA = new TreeSet<>();
 
   private boolean isSquare(final long n) {
-    final long s = LongUtils.sqrt(n);
+    final long s = Functions.SQRT.l(n);
     return s * s == n;
   }
 

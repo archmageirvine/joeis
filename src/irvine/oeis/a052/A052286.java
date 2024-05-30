@@ -1,6 +1,5 @@
 package irvine.oeis.a052;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
@@ -24,7 +23,7 @@ public class A052286 extends A000040 {
         sum += Functions.FACTORIAL.l(qr[1]);
         m = qr[0];
       }
-      final long s = LongUtils.sqrt(sum);
+      final long s = Functions.SQRT.l(sum);
       if (s * s == sum && s > mMax && Z.valueOf(s).isProbablePrime()) {
         mMax = s;
         return p;

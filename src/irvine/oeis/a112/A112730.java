@@ -4,7 +4,7 @@ import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -20,7 +20,7 @@ public class A112730 extends Sequence1 {
 
   @Override
   public Z next() {
-    while (mA.isEmpty() || mA.first().compareTo(Z.valueOf(1 + 2 * LongUtils.sqrt(mN))) >= 0) {
+    while (mA.isEmpty() || mA.first().compareTo(Z.valueOf(1 + 2 * Functions.SQRT.l(mN))) >= 0) {
       final FactorSequence fs = Jaguar.factor(++mN);
       final Z t = fs.sigma().subtract(fs.phi());
       if (t.compareTo(mPrev) > 0) {

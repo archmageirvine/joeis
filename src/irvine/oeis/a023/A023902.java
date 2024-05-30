@@ -1,6 +1,6 @@
 package irvine.oeis.a023;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -23,7 +23,7 @@ public class A023902 extends Sequence0 {
   private Polynomial<Polynomial<Z>> theta3(final int k, final int n, final int prec) {
     final Polynomial<Z> f = Cyclotomic.cyclotomic(n);
     Polynomial<Polynomial<Z>> sum = RING2.one();
-    for (int m = 1; m <= IntegerUtils.sqrt(prec); ++m) {
+    for (int m = 1; m <= Functions.SQRT.i(prec); ++m) {
       final Polynomial<Z> x = RING.add(RING.monomial(Z.ONE, (m * k) % n), RING.monomial(Z.ONE, (m * (n - k)) % n));
       final Polynomial<Z> r = RING.mod(x, f);
       sum = RING2.add(sum, RING2.monomial(r, m * m));
@@ -48,7 +48,7 @@ public class A023902 extends Sequence0 {
     // At this point we can reduce sum to a single variate polynomial
     final Polynomial<Z> num = modEval(sum, Cyclotomic.cyclotomic(n));
     Polynomial<Z> den = RING.one();
-    for (int m = 1; m <= IntegerUtils.sqrt(prec / n); ++m) {
+    for (int m = 1; m <= Functions.SQRT.i(prec / n); ++m) {
       den = RING.add(den, RING.monomial(Z.TWO, n * m * m));
     }
     return RING.divide(RING.series(num, den, prec), Z.valueOf(n));

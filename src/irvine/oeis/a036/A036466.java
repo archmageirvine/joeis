@@ -1,6 +1,6 @@
 package irvine.oeis.a036;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -57,7 +57,7 @@ public class A036466 extends Sequence1 {
   public Z next() {
     mUpperBound = ++mN;
     final int[] parts = new int[mN];
-    search(mN, parts, 0, IntegerUtils.sqrt(mN));
+    search(mN, parts, 0, Functions.SQRT.i(mN));
     return Z.valueOf(mUpperBound);
   }
 }

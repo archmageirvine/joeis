@@ -1,7 +1,7 @@
 package irvine.oeis.a211;
 // manually 2022-09-10
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A211791 extends Sequence1 {
     Z sum = Z.ZERO;
     for (int x = 1; x <= mN; ++x) {
       for (int y = 1; y <= mN; ++y) {
-        sum = sum.add(LongUtils.sqrt((long) x * x + (long) y * y));
+        sum = sum.add(Functions.SQRT.l((long) x * x + (long) y * y));
       }
     }
     return sum;

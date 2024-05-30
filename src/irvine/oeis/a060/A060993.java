@@ -2,7 +2,7 @@ package irvine.oeis.a060;
 
 import java.util.TreeSet;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -28,7 +28,7 @@ public class A060993 extends Sequence1 {
             final long t = a2 + b2 + c2;
             if ((t & 7) == 0) {
               final long t8 = t / 8;
-              final long s = LongUtils.sqrt(t8);
+              final long s = Functions.SQRT.l(t8);
               if (s * s == t8) {
                 //System.out.println("(" + a + "," + b + "," + mC + ") -> " + s);
                 mA.add(s);

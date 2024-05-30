@@ -1,6 +1,7 @@
 package irvine.oeis.a046;
 
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -22,7 +23,7 @@ public class A046087 extends Sequence1 {
       }
       if (LongUtils.gcd(mC, mB) == 1) {
         final long a2 = mC * mC - mB * mB;
-        final long s = LongUtils.sqrt(a2);
+        final long s = Functions.SQRT.l(a2);
         if (s < mB && s * s == a2 && LongUtils.gcd(s, mC) == 1 && LongUtils.gcd(s, mB) == 1) {
           return Z.valueOf(mB);
         }

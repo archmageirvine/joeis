@@ -1,7 +1,7 @@
 package irvine.oeis.a007;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -29,7 +29,7 @@ public class A007968 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    final long s = LongUtils.sqrt(mN);
+    final long s = Functions.SQRT.l(mN);
     if (s * s == mN) {
       return Z.ZERO;
     }

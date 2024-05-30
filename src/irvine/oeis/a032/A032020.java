@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
@@ -26,7 +26,7 @@ public class A032020 extends MemoryFunction2Sequence<Long, Z> {
   public Z next() {
     ++mN;
     Z sum = Z.ZERO;
-    for (long k = 0; k <= (LongUtils.sqrt(8 * mN + 1) - 1) / 2; ++k) {
+    for (long k = 0; k <= (Functions.SQRT.l(8 * mN + 1) - 1) / 2; ++k) {
       sum = sum.add(get(mN, k));
     }
     return sum;

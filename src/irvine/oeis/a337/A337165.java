@@ -1,7 +1,7 @@
 package irvine.oeis.a337;
 
-import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunction1;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -36,7 +36,7 @@ public class A337165 extends Triangle {
         return RING.one();
       }
       Polynomial<Z> sum = RING.zero();
-      final int jmax = IntegerUtils.sqrt(n);
+      final int jmax = Functions.SQRT.i(n);
       for (int j = 1; j <= jmax; ++j) {
         final int s = j * j;
         if (s <= n) {

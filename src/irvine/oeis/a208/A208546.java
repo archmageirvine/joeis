@@ -1,7 +1,7 @@
 package irvine.oeis.a208;
 // manually etman at 2023-02-06 12:43
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -18,7 +18,7 @@ public class A208546 extends Sequence0 {
   public Z next() {
     ++mN;
     final long n121 = 120 * mN + 1;
-    final long m = LongUtils.sqrt(n121);
+    final long m = Functions.SQRT.l(n121);
     if (m * m == n121) {
       return Z.NEG_ONE.pow(m / 40 + m / 12);
     } else {

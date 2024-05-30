@@ -1,6 +1,6 @@
 package irvine.oeis.a020;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
@@ -23,7 +23,7 @@ public class A020903 extends MemorySequence {
     if (n <= 2) {
       return Z.valueOf(n);
     }
-    final long t = (LongUtils.sqrt(8L * n + 1) - 1) / 2;
+    final long t = (Functions.SQRT.l(8L * n + 1) - 1) / 2;
     return a((int) (n + 1 - t * (t + 1) / 2));
   }
 }

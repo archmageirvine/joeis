@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001617;
@@ -23,7 +23,7 @@ public class A054728 extends Sequence0 {
 
   @Override
   public Z next() {
-    final int bnd = 12 * ++mN + 18 * IntegerUtils.sqrt(mN) + 100;
+    final int bnd = 12 * ++mN + 18 * Functions.SQRT.i(mN) + 100;
     while (mM <= bnd) {
       final int g = mA.a(mM).intValueExact();
       if (mInv.get(g) == 0) {

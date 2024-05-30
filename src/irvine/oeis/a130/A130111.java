@@ -1,6 +1,6 @@
 package irvine.oeis.a130;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
@@ -34,7 +34,7 @@ public class A130111 extends Sequence1 {
       while (true) {
         if (!mUsed.isSet(pos)) {
           final long t = s + pos;
-          final long sqrt = LongUtils.sqrt(t);
+          final long sqrt = Functions.SQRT.l(t);
           if (sqrt * sqrt == t) {
             mNext[4] = pos;
             mUsed.set(pos);

@@ -1,6 +1,6 @@
 package irvine.oeis.a001;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a007.A007645;
 
@@ -18,7 +18,7 @@ public class A001479 extends A007645 {
     while (true) {
       final long y2 = 3 * y * y;
       final long r = pp - y2;
-      final long s = LongUtils.sqrt(r);
+      final long s = Functions.SQRT.l(r);
       if (s * s == r) {
         return Z.valueOf(s);
       }

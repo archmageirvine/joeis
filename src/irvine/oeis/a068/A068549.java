@@ -1,7 +1,7 @@
 package irvine.oeis.a068;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -21,6 +21,7 @@ public class A068549 extends AbstractSequence {
 
   @Override
   public Z next() {
-    return Z.valueOf(mPrime.prevPrime(LongUtils.sqrt(2 * ++mN - 4) - 1));
+    final long n = 2 * ++mN - 4;
+    return Z.valueOf(mPrime.prevPrime(Functions.SQRT.l(n) - 1));
   }
 }

@@ -1,7 +1,7 @@
 package irvine.oeis.a066;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
@@ -22,7 +22,7 @@ public class A066925 extends Sequence1 {
     if (x == 0) {
       return true;
     }
-    if (Predicates.SQUARE.is(n) && isSelfInverse(n, x - LongUtils.sqrt(n), terms, pos)) {
+    if (Predicates.SQUARE.is(n) && isSelfInverse(n, x - Functions.SQRT.l(n), terms, pos)) {
       return true;
     }
     if (n % terms[pos] == 0 && isSelfInverse(n, x - terms[pos] - n / terms[pos], terms, pos)) {

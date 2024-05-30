@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 import irvine.util.array.DynamicArray;
@@ -34,7 +34,7 @@ public class A000148 extends Sequence2 {
   }
 
   private long count(final long n) {
-    final int max = (int) LongUtils.sqrt(n * n * n);
+    final int max = (int) Functions.SQRT.l(n * n * n);
     final double[] x = new double[max];
     for (int k = 0; k < max; ++k) {
       x[k] = Math.pow((k + 1) * (k + 1), THIRD);

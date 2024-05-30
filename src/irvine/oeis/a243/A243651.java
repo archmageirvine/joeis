@@ -1,6 +1,6 @@
 package irvine.oeis.a243;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -20,7 +20,7 @@ public class A243651 extends Sequence0 {
         final long t = mN - s * s;
         if (t % 11 == 0) {
           final long u = t / 11;
-          final long v = LongUtils.sqrt(u);
+          final long v = Functions.SQRT.l(u);
           if (v * v == u) {
             return Z.valueOf(mN);
           }

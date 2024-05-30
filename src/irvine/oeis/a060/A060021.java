@@ -1,7 +1,7 @@
 package irvine.oeis.a060;
 
-import irvine.math.IntegerUtils;
 import irvine.math.api.Group;
+import irvine.math.function.Functions;
 import irvine.math.group.GroupFactory;
 import irvine.math.z.Z;
 import irvine.util.string.StringUtils;
@@ -19,7 +19,7 @@ public class A060021 extends A060020 {
       return Z.valueOf(mN / 2 - 1); // Theorem Griggs
     }
     if (mN > 2 && mPrime.isPrime(mN)) {
-      return Z.valueOf(IntegerUtils.sqrt(4 * mN - 8) - 1); // Theorem Griggs
+      return Z.valueOf(Functions.SQRT.i(4 * mN - 8) - 1); // Theorem Griggs
     }
     // There are other applicable Theorems that could handle many other cases,
     // but here we use an explicit construction of the relevant spanning sets.

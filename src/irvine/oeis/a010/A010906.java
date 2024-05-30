@@ -2,7 +2,7 @@ package irvine.oeis.a010;
 
 import java.util.LinkedList;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -23,7 +23,7 @@ public class A010906 extends Sequence0 {
     if (++mN == 2) {
       return Z.THREE;
     }
-    final long s = LongUtils.sqrt(mN);
+    final long s = Functions.SQRT.l(mN);
     if (s * s == mN) {
       return Z.valueOf(mN).square();
     }

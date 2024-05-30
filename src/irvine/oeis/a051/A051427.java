@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.graph.Graph;
 import irvine.math.graph.GraphUtils;
 import irvine.math.nauty.GenerateGraphs;
@@ -88,7 +88,7 @@ public class A051427 extends Sequence1 {
     ++mN;
     Z sum = Z.ZERO;
     // We can bound r somewhat because of diameter 2 bound
-    for (int r = IntegerUtils.sqrt(mN - 1); r < mN; ++r) {
+    for (int r = Functions.SQRT.i(mN - 1); r < mN; ++r) {
       sum = sum.add(new StrictlyDeza(mN, r).next());
     }
     return sum;

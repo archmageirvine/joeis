@@ -1,6 +1,6 @@
 package irvine.oeis.a036;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -25,8 +25,8 @@ public class A036697 extends Sequence0 {
       if (x2 == 0) {
         ++cnt;
       } else {
-        final long xHi = LongUtils.sqrt(Math.abs(x2));
-        final long xLo = LongUtils.sqrt(Math.abs(lo - y * y));
+        final long xHi = Functions.SQRT.l(Math.abs(x2));
+        final long xLo = Functions.SQRT.l(Math.abs(lo - y * y));
         cnt += xHi - xLo;
       }
     }

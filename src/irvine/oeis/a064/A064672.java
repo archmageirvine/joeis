@@ -1,6 +1,6 @@
 package irvine.oeis.a064;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
@@ -16,7 +16,7 @@ public class A064672 extends MemorySequence {
     if (n <= 2) {
       return Z.valueOf(n);
     }
-    final int s = IntegerUtils.sqrt(n);
+    final int s = Functions.SQRT.i(n);
     return a(s).add(a(n - s * s));
   }
 }

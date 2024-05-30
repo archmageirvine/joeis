@@ -1,7 +1,7 @@
 package irvine.oeis.a045;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A045701 extends Sequence1 {
     ++mN;
     long cnt = 0;
     for (long q2, p = 2; (q2 = mN - p * p * p) >= 4; p = mPrime.nextPrime(p)) {
-      final long q = LongUtils.sqrt(q2);
+      final long q = Functions.SQRT.l(q2);
       if (q * q == q2 && mPrime.isPrime(q)) {
         ++cnt;
       }

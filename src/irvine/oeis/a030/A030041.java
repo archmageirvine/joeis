@@ -1,6 +1,6 @@
 package irvine.oeis.a030;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
@@ -17,7 +17,7 @@ public class A030041 extends MemorySequence {
       return Z.ONE;
     }
     Z sum = Z.ZERO;
-    for (int k = 0; k <= IntegerUtils.sqrt(n - 1); ++k) {
+    for (int k = 0; k <= Functions.SQRT.i(n - 1); ++k) {
       sum = sum.add(a(k).multiply(a(n - 1 - k)));
     }
     return sum;

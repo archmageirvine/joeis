@@ -1,6 +1,6 @@
 package irvine.oeis.a050;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -15,7 +15,7 @@ public class A050273 extends Sequence1 {
   private long mA = 1;
 
   private boolean isSquare(final long n) {
-    final long s = LongUtils.sqrt(n);
+    final long s = Functions.SQRT.l(n);
     return s * s == n;
   }
 

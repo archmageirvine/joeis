@@ -1,7 +1,7 @@
 package irvine.oeis.a028;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,7 +18,7 @@ public class A028372 extends Sequence1 {
   private boolean isRepresentable(final long p, final long k) {
     long t;
     for (long j = 1; (t = p - k * j * j) >= 0; ++j) {
-      final long s = LongUtils.sqrt(t);
+      final long s = Functions.SQRT.l(t);
       if (s * s == t) {
         return true;
       }

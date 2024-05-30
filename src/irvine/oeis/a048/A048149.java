@@ -1,6 +1,6 @@
 package irvine.oeis.a048;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
@@ -22,8 +22,8 @@ public class A048149 extends MemoryFunction2Sequence<Long, Z> {
     }
     Z c = Z.ZERO;
     final long sq = n * n + m * m;
-    for (long x = 0; x <= LongUtils.sqrt(sq); ++x) {
-      c = c.add(LongUtils.sqrt(sq - x * x) + 1);
+    for (long x = 0; x <= Functions.SQRT.l(sq); ++x) {
+      c = c.add(Functions.SQRT.l(sq - x * x) + 1);
     }
     return c;
   }

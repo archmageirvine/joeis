@@ -8,6 +8,7 @@ import java.util.Map;
 import irvine.factor.prime.Fast;
 import irvine.math.IntegerUtils;
 import irvine.math.api.Group;
+import irvine.math.function.Functions;
 import irvine.math.group.GroupFactory;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
@@ -97,7 +98,7 @@ public class A060020 extends Sequence2 {
     }
     if (mN > 2 && mPrime.isPrime(mN)) {
       // There is only one group for p=mN prime, Z_p which has w(Z_p)=floor(2*sqrt(p-2))
-      return Z.valueOf(IntegerUtils.sqrt(4 * mN - 8));
+      return Functions.SQRT.z(4 * mN - 8);
     }
     // There are other applicable Theorems that could handle many other cases,
     // but here we use an explicit construction of the relevant spanning sets.

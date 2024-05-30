@@ -1,6 +1,6 @@
 package irvine.oeis.a028;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -13,7 +13,7 @@ public class A028968 extends Sequence1 {
   private long mN = -1;
 
   private boolean isRepresentable(final long n) {
-    final long lim = LongUtils.sqrt(n);
+    final long lim = Functions.SQRT.l(n);
     for (long z = -lim; z <= lim; ++z) {
       final long a = 3 * z * z;
       for (long y = -lim; y <= lim; ++y) {

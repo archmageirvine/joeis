@@ -2,9 +2,9 @@ package irvine.oeis.a008;
 
 import java.util.ArrayList;
 
-import irvine.math.LongUtils;
 import irvine.math.cr.CR;
 import irvine.math.cr.Convergents;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -54,11 +54,11 @@ public class A008783 extends Sequence1 {
   public Z next() {
     ++mN;
     final long m = 4 * mN + 1;
-    final long s = LongUtils.sqrt(m);
+    final long s = Functions.SQRT.l(m);
     if (s * s == m) {
       return Z.ZERO;
     }
-    final long t = LongUtils.sqrt(m - 4);
+    final long t = Functions.SQRT.l(m - 4);
     if (t * t == m - 4) {
       return Z.ONE;
     }

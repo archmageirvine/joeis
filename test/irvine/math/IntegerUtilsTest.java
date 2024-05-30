@@ -3,6 +3,7 @@ package irvine.math;
 import java.util.Arrays;
 import java.util.Random;
 
+import irvine.math.function.Functions;
 import junit.framework.TestCase;
 
 /**
@@ -50,16 +51,6 @@ public class IntegerUtilsTest extends TestCase {
     assertEquals(-1, IntegerUtils.charToValue('\u0080'));
   }
 
-  public void testSqrtCorrectness() {
-    final Random r = new Random();
-    for (int k = 0; k < 10000; ++k) {
-      final int n = r.nextInt(Integer.MAX_VALUE);
-      assertEquals(String.valueOf(n), (int) Math.sqrt(n), IntegerUtils.sqrt(n));
-    }
-    assertEquals(317, IntegerUtils.sqrt(101123));
-    assertEquals(318, IntegerUtils.sqrt(101124));
-  }
-
   public void testModPow() {
     try {
       IntegerUtils.modPow(2, 1, 0);
@@ -86,7 +77,7 @@ public class IntegerUtilsTest extends TestCase {
     assertEquals(0, IntegerUtils.modPow(42, 42, 42));
     assertEquals(12, IntegerUtils.modPow(12, 1, 42));
     assertEquals(12, IntegerUtils.modPow(54, 1, 42));
-    final int limit = IntegerUtils.sqrt(Integer.MAX_VALUE);
+    final int limit = Functions.SQRT.i(Integer.MAX_VALUE);
     assertEquals(8, IntegerUtils.modPow(2, 3, limit));
     assertEquals(8, IntegerUtils.modPow(2, 3, 9));
     assertEquals(4313, IntegerUtils.modPow(37, 3, limit));

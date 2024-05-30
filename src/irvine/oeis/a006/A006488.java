@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
@@ -20,7 +20,7 @@ public class A006488 extends Sequence1 {
     while (true) {
       ++mN;
       final int len = mF.next().toString().length();
-      final int s = IntegerUtils.sqrt(len);
+      final int s = Functions.SQRT.i(len);
       if (s * s == len) {
         return Z.valueOf(mN);
       }

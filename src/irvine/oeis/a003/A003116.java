@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -22,7 +22,7 @@ public class A003116 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    if (mN > 0 && IntegerUtils.sqrt(mN) >= mLast) {
+    if (mN > 0 && Functions.SQRT.i(mN) >= mLast) {
       mGF = RING.one();
       Polynomial<Q> den = RING.one();
       ++mLast;

@@ -1,5 +1,6 @@
 package irvine.oeis.a000;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence0;
@@ -25,7 +26,7 @@ public class A000196 extends Sequence0 implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    return Z.valueOf((int) Math.sqrt(n));
+    return Functions.SQRT.z(n);
   }
 
 }

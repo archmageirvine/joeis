@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.partition.DistinctPartsPartition;
@@ -46,7 +46,7 @@ public class A060184 extends Sequence1 {
   public Z next() {
     if (--mM < 1) {
       ++mN;
-      mM = (IntegerUtils.sqrt(8 * mN + 1) - 1) / 2;
+      mM = (Functions.SQRT.i(8 * mN + 1) - 1) / 2;
     }
     return getGf(mN, mM).coeff(mN);
   }

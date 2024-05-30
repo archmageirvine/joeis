@@ -1,7 +1,7 @@
 package irvine.oeis.a048;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -20,7 +20,7 @@ public class A048098 extends Sequence1 {
         return Z.ONE;
       }
       final Z[] p = Jaguar.factor(mN).toZArray();
-      if (p[p.length - 1].longValueExact() <= LongUtils.sqrt(mN)) {
+      if (p[p.length - 1].longValueExact() <= Functions.SQRT.l(mN)) {
         return Z.valueOf(mN);
       }
     }

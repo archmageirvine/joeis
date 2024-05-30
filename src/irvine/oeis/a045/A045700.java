@@ -1,6 +1,6 @@
 package irvine.oeis.a045;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -16,7 +16,7 @@ public class A045700 extends A000040 {
       final Z prime = super.next();
       final long n = prime.longValueExact();
       for (long q2, p = 2; (q2 = n - p * p * p) >= 4; p = mPrime.nextPrime(p)) {
-        final long q = LongUtils.sqrt(q2);
+        final long q = Functions.SQRT.l(q2);
         if (q * q == q2 && mPrime.isPrime(q)) {
           return prime;
         }

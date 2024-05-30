@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -18,7 +18,7 @@ public class A054435 extends A054436 {
     final long n2 = ++mN * mN;
     for (long a = 1; a < mN; ++a) {
       final long b2 = n2 - a * a;
-      final long b = LongUtils.sqrt(b2);
+      final long b = Functions.SQRT.l(b2);
       if (b * b == b2) {
         min = min.min(Z.valueOf(a * b / 2));
       }

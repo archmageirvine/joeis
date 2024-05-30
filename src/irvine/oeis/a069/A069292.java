@@ -1,7 +1,7 @@
 package irvine.oeis.a069;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -20,7 +20,7 @@ public class A069292 extends Sequence1 {
       if (dd.isSquare()) {
         final long d = dd.longValue();
         if (d * d <= mN) {
-          sum += LongUtils.sqrt(dd.longValue());
+          sum += Functions.SQRT.l(d);
         }
       }
     }

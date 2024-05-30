@@ -63,34 +63,6 @@ public class LongUtilsTest extends TestCase {
     }
   }
 
-  public void testSqrt() {
-    // compare with system sqrt
-    for (long i = 0; i < 50000; ++i) {
-      assertEquals("sqrt(" + i + ")", (long) Math.floor(Math.sqrt((double) i)), LongUtils.sqrt(i));
-    }
-
-    for (long i = 50000; i < 1L << 60; i = i * 3 + 1) {
-      assertEquals("sqrt(" + i + ")", (long) Math.floor(Math.sqrt((double) i)), LongUtils.sqrt(i));
-    }
-
-    /*
-    // perform timing test
-    long time1 = System.currentTimeMillis();
-    long sum1 = 0;
-    for (long i = 0L; i < 500000000L; i += 70L) {
-      sum1 ^= (long) Math.floor(Math.sqrt((double) i));
-    }
-    time1 = System.currentTimeMillis() - time1;
-
-    long time2 = System.currentTimeMillis();
-    long sum2 = 0;
-    for (long i = 0L; i < 500000000L; i += 70L) {
-      sum2 ^= LongUtils.sqrt(i);
-    }
-    time2 = System.currentTimeMillis() - time2;
-    assertEquals("System sqrt time = " + time1 + " ms, LongUtils.sqrt time = " + time2 + " ms", sum1, sum2);
-    */
-  }
 
   public void testEndian() {
     assertEquals(0x1234567890ABCDEFL, LongUtils.endian(0xEFCDAB9078563412L));

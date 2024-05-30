@@ -2,8 +2,8 @@ package irvine.oeis.a003;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.LongUtils;
 import irvine.math.cr.Convergents;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A003814 extends Sequence1 {
   public Z next() {
     while (true) {
       ++mN;
-      final long s = LongUtils.sqrt(mN);
+      final long s = Functions.SQRT.l(mN);
       if (s * s != mN) {
         final FactorSequence fs = Jaguar.factor(mN);
         boolean ok = true;

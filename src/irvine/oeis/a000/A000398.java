@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
@@ -22,7 +22,7 @@ public class A000398 extends Sequence1 {
       // This could in theory be made more efficient by only computing
       // additional entries
       mDone = Math.max(mDone * 2, n);
-      final long limit = LongUtils.sqrt(mDone);
+      final long limit = Functions.SQRT.l(mDone);
       for (long x = 0; x <= limit; ++x) {
         final long xx = x * x;
         for (long y = -limit; y <= limit; ++y) {

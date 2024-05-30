@@ -1,6 +1,7 @@
 package irvine.oeis.a195;
 
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -81,7 +82,7 @@ public class A195770 extends Sequence1 {
           ++mB;
           final long c2Pot = mA2 + mB * mB + (mA * mB * mNum / mDen); // potential c^2
           if (c2Pot > 0 && (mA * mB * mNum) % mDen == 0) {
-            mC = LongUtils.sqrt(c2Pot); // maximum c such that c^2 <= a^2 + b^2 + k*a*b
+            mC = Functions.SQRT.l(c2Pot); // maximum c such that c^2 <= a^2 + b^2 + k*a*b
             if (DEBUG >= 1) {
               System.out.println("a=" + mA + ", b=" + mB + ", c=" + mC + ", mLimB=" + mLimB + ", c2Pot=" + c2Pot);
             }

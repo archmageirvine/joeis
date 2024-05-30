@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -27,7 +27,7 @@ public class A002144 extends AbstractSequence {
         final long lim = mP / 2;
         for (long x = 1; x * x <= lim; ++x) {
           final long d = mP - x * x;
-          final long s = LongUtils.sqrt(d);
+          final long s = Functions.SQRT.l(d);
           if (s * s == d) {
             return Z.valueOf(mP);
           }

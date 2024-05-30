@@ -1,7 +1,7 @@
 package irvine.oeis.a069;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.predicate.Predicates;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -39,7 +39,7 @@ public class A069240 extends Sequence1 {
       final long p = pp.longValue();
       final long pm1 = p - 1;
       final long b = b(p);
-      final long a = LongUtils.sqrt(p - 2 * b * b);
+      final long a = Functions.SQRT.l(p - 2 * b * b);
       e = e.signedAdd(p % 4 != 3, new Q(Z.valueOf(2 * a).pow(2 * mN / pm1), pp));
     }
     return e.toZ();

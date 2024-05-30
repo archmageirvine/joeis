@@ -1,6 +1,6 @@
 package irvine.oeis.a034;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicBooleanArray;
@@ -31,7 +31,7 @@ public class A034175 extends Sequence0 {
         continue;
       }
       final long t = mPrev + k;
-      final long s = LongUtils.sqrt(t);
+      final long s = Functions.SQRT.l(t);
       if (s * s == t) {
         mUsed.set(k);
         mPrev = k;

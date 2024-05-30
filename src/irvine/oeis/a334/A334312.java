@@ -1,6 +1,6 @@
 package irvine.oeis.a334;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.a023.A023900;
@@ -28,7 +28,7 @@ public class A334312 extends Triangle {
     ++k;
     Z sum = Z.ZERO;
     for (int i = k; i <= n; ++i) {
-      sum = sum.add(mSeq.a(IntegerUtils.gcd(i, k)));
+      sum = sum.add(mSeq.a(Functions.GCD.i(i, k)));
     }
     return sum;
   }

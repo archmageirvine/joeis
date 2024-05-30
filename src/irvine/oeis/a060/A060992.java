@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -16,6 +16,6 @@ public class A060992 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sum(1, mN / 2, k -> Z.valueOf(IntegerUtils.gcd(mN - k, k)));
+    return Integers.SINGLETON.sum(1, mN / 2, k -> Functions.GCD.z(mN - k, k));
   }
 }

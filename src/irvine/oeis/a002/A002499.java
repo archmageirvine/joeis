@@ -40,9 +40,9 @@ public class A002499 extends AbstractSequence {
     int s = 0;
     for (int r = 1; r <= p; ++r) {
       for (int t = r + 1; t <= p; ++t) {
-        final int gcd = IntegerUtils.gcd(r, t);
+        final int gcd = Functions.GCD.i(r, t);
         final int lcm = IntegerUtils.lcm(r, t);
-        s += IntegerUtils.gcd(2, lcm) * gcd * j[r] * j[t];
+        s += Functions.GCD.i(2, lcm) * gcd * j[r] * j[t];
       }
     }
     return s;
@@ -52,7 +52,7 @@ public class A002499 extends AbstractSequence {
   private int sum1(final int p, final int[] j) {
     int s = 0;
     for (int k = 1; k <= p; ++k) {
-      final int gcd = IntegerUtils.gcd(2, k);
+      final int gcd = Functions.GCD.i(2, k);
       final int a = (k - 1) * j[k];
       final int b = k * (j[k] * j[k] - j[k]);
       s += gcd * (a + b) / 2;

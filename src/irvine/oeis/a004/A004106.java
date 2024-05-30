@@ -1,6 +1,7 @@
 package irvine.oeis.a004;
 
 import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.q.Q;
@@ -20,7 +21,7 @@ public class A004106 extends Sequence0 {
     for (int t = 1; t < j.length; ++t) {
       for (int r = 1; r < t; ++r) {
         if ((IntegerUtils.lcm(r, t) & 1) == 0) {
-          e3 += IntegerUtils.gcd(r, t) * j[r] * j[t];
+          e3 += Functions.GCD.i(r, t) * j[r] * j[t];
         }
       }
     }

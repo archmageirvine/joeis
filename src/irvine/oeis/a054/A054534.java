@@ -1,6 +1,5 @@
 package irvine.oeis.a054;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
@@ -21,7 +20,7 @@ public class A054534 extends Sequence1 {
       mM = ++mN;
     }
     final int k = mN - mM + 1;
-    return Integers.SINGLETON.sumdiv(IntegerUtils.gcd(mM, k), d -> Z.valueOf((long) d * Functions.MOBIUS.i((long) (k / d))));
+    return Integers.SINGLETON.sumdiv(Functions.GCD.i(mM, k), d -> Z.valueOf((long) d * Functions.MOBIUS.i(k / d)));
   }
 }
 

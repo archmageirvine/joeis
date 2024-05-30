@@ -1,7 +1,7 @@
 package irvine.oeis.a080;
 // manually 2021-08-15
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -32,7 +32,7 @@ public class A080672 extends Sequence1 {
   public Z next() {
     while (true) {
       ++mN;
-      if (LongUtils.gcd(mN, mParm) > 1) {
+      if (Functions.GCD.l(mN, mParm) > 1) {
         return Z.valueOf(mN);
       }
     }

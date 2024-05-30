@@ -1,6 +1,6 @@
 package irvine.oeis.a138;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.a333.A333361;
@@ -18,7 +18,7 @@ public class A138107 extends A333361 {
     Polynomial<Z> prod = RING.one();
     for (int i = 1; i < v.length; ++i) {
       for (int j = 0; j < i; ++j) {
-        final int g = IntegerUtils.gcd(v[i], v[j]);
+        final int g = Functions.GCD.i(v[i], v[j]);
         final int u = v[i] * v[j] / g;
         prod = RING.multiply(prod, RING.pow(RING.oneMinusXToTheN(u), 2 * g, degree), degree);
       }

@@ -2,7 +2,7 @@ package irvine.oeis.a075;
 
 import java.util.HashSet;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.util.Permutation;
@@ -39,7 +39,7 @@ public class A075603 extends AbstractSequence {
     }
     long cnt = 0;
     for (final Long l : hash) {
-      if (LongUtils.gcd(v, l) == 1) {
+      if (Functions.GCD.l(v, l) == 1) {
         ++cnt;
       }
     }
@@ -51,7 +51,7 @@ public class A075603 extends AbstractSequence {
     ++mN;
     if (mN < 100) {
       final long t = (mN % 10) * 10 + (mN / 10);
-      return LongUtils.gcd(mN, t) == 1 ? Z.ONE : Z.ZERO;
+      return Functions.GCD.l(mN, t) == 1 ? Z.ONE : Z.ZERO;
     }
     int len = 3;
     long q = mN / 1000;

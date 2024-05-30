@@ -1,6 +1,6 @@
 package irvine.oeis.a046;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,6 +19,6 @@ public class A046143 extends Sequence1 {
       ++mN;
       mM = 1;
     }
-    return Z.ONE.shiftLeft(IntegerUtils.gcd(mN, mM)).subtract(1);
+    return Z.ONE.shiftLeft(Functions.GCD.i(mN, mM)).subtract(1);
   }
 }

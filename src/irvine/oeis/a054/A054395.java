@@ -3,7 +3,6 @@ package irvine.oeis.a054;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -23,12 +22,12 @@ public class A054395 extends Sequence1 {
   public Z next() {
     while (true) {
       ++mN;
-      final long p = LongUtils.gcd(mN, Functions.PHI.l(mN));
+      final long p = Functions.GCD.l(mN, Functions.PHI.l(mN));
       if (!mPrime.isPrime(p)) {
         continue;
       }
       if (mN % (p * p) == 0) {
-        if (LongUtils.gcd(p + 1, mN) == 1) {
+        if (Functions.GCD.l(p + 1, mN) == 1) {
           return Z.valueOf(mN);
         }
         continue;

@@ -1,6 +1,5 @@
 package irvine.oeis.a050;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -15,7 +14,7 @@ public class A050981 extends Sequence1 {
 
   @Override
   public Z next() {
-    while (LongUtils.gcd(++mN, 9) > 1) {
+    while (Functions.GCD.l(++mN, 9) > 1) {
       // do nothing
     }
     return Functions.ORDER.z(mN, Z.NINE);

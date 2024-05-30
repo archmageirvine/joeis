@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,7 @@ public class A052157 extends Sequence1 {
   private boolean is(final long s, final long r, final long n) {
     for (int i = 0; i < n; ++i) {
       for (int j = 0; j < n; ++j) {
-        if (LongUtils.gcd(r - i, s - j) <= 1) {
+        if (Functions.GCD.l(r - i, s - j) <= 1) {
           return false;
         }
       }

@@ -1,7 +1,6 @@
 package irvine.oeis.a211;
 // manually sumsi/sumgcd at 2021-11-20 20:50
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -19,7 +18,7 @@ public class A211932 extends Sequence1 {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 1; k <= mN; ++k) {
-      final long gd = LongUtils.gcd(mN, k);
+      final long gd = Functions.GCD.l(mN, k);
       if (gd > 1) {
         sum = sum.add(Functions.SIGMA0.z(k));
       }

@@ -1,6 +1,6 @@
 package irvine.oeis.a133;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
@@ -18,7 +18,7 @@ public class A133922 extends Sequence1 {
       return false;
     }
     for (int k = 0, j = p.length - 1; k < p.length / 2; ++k, --j) {
-      if (IntegerUtils.gcd(p[k] + 1, p[j] + 1) != 1) {
+      if (Functions.GCD.i(p[k] + 1, p[j] + 1) != 1) {
         return false;
       }
     }

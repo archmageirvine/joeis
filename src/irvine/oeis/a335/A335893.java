@@ -1,6 +1,6 @@
 package irvine.oeis.a335;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -40,7 +40,7 @@ end do;
      // if (true || bb4cc3 >= 0) {
         final Z expr = Z.valueOf(bb4cc3).abs();
         final long a = mC - expr.sqrt().longValue();
-        if (((a & 1) == 0) && LongUtils.gcd(a >> 1, mB) == 1 && expr.isSquare()) {
+      if (((a & 1) == 0) && Functions.GCD.l(a >> 1, mB) == 1 && expr.isSquare()) {
           mTuple[0] = Z.valueOf(a >> 1);
           mTuple[1] = Z.valueOf(mB);
           mTuple[2] = Z.valueOf(mC);

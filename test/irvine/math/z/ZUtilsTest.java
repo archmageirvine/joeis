@@ -3,20 +3,12 @@ package irvine.math.z;
 import java.util.Arrays;
 import java.util.Random;
 
-import irvine.math.function.Functions;
 import junit.framework.TestCase;
 
 /**
  * @author Sean A. Irvine
  */
 public class ZUtilsTest extends TestCase {
-
-  public void testMax() {
-    assertEquals(Z.ONE, Functions.MAX.z(Z.ZERO, Z.ZERO, Z.NEG_ONE, Z.ONE));
-    assertEquals(Z.ONE, Functions.MAX.z(Z.ONE, Z.ZERO, Z.NEG_ONE, Z.ONE));
-    assertEquals(Z.ONE, Functions.MAX.z(Z.ONE));
-    assertNull(Functions.MAX.z(new Z[] {}));
-  }
 
   public void testRandom() {
     final Random r = new Random();

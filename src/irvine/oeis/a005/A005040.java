@@ -1,7 +1,6 @@
 package irvine.oeis.a005;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
@@ -27,7 +26,7 @@ public class A005040 extends Sequence1 {
     } else {
       a = a.add(new Q(Binomial.binomial(4L * mN / 2, mN / 2), Z.valueOf(3L * mN + 2)).multiply(3));
     }
-    final long d = LongUtils.gcd(5, mN - 1);
+    final long d = Functions.GCD.l(5, mN - 1);
     for (final Z s : Jaguar.factor(d).divisors()) {
       final long ss = s.longValueExact();
       if (ss > 2) {

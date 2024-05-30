@@ -1,6 +1,6 @@
 package irvine.math.polynomial;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.q.Q;
@@ -24,7 +24,7 @@ public final class GraphCycleIndex {
         powersOfTwo += k * (long) v[k] * (v[k] - 1) / 2;
         powersOfTwo += ((k - 1) / 2L) * v[k];
         for (int j = k + 1; j < v.length; ++j) {
-          powersOfTwo += LongUtils.gcd(j, k) * v[j] * v[k];
+          powersOfTwo += Functions.GCD.l(j, k) * v[j] * v[k];
         }
       }
       if (2 * k < v.length) {

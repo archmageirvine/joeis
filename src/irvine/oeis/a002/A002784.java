@@ -1,6 +1,5 @@
 package irvine.oeis.a002;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -18,7 +17,7 @@ public class A002784 extends Sequence1 {
     ++mN;
     long s = 0;
     for (int k = 1; k <= mN; ++k) {
-      if (LongUtils.gcd(mN, k) == 1) {
+      if (Functions.GCD.l(mN, k) == 1) {
         s += Functions.FACTORIAL.z(mN + k - 1).divide(Functions.FACTORIAL.z(mN)).divide(Functions.FACTORIAL.z(k)).mod(2);
       }
     }

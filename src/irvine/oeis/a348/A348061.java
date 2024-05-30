@@ -1,6 +1,6 @@
 package irvine.oeis.a348;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,8 +17,8 @@ public class A348061 extends Sequence1 {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 1; k <= mN; ++k) {
-      if (LongUtils.gcd(k, mN) == 1) {
-        sum = sum.add(mN / LongUtils.gcd(mN, k - 1));
+      if (Functions.GCD.l(k, mN) == 1) {
+        sum = sum.add(mN / Functions.GCD.l(mN, k - 1));
       }
     }
     return sum;

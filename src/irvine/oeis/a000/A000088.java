@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 
 /**
  * A000088 Number of graphs on n unlabeled nodes.
@@ -11,7 +11,7 @@ public class A000088 extends A000273 {
   private int y(final int d, final int k, final int[] a) {
     int r = 0;
     for (int s = 1; s <= d; ++s) {
-      if (k * s <= mN && d % s == 0 && IntegerUtils.gcd(k, d / s) == 1) {
+      if (k * s <= mN && d % s == 0 && Functions.GCD.i(k, d / s) == 1) {
         r += s * a[k * s];
       }
     }

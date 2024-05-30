@@ -3,7 +3,6 @@ package irvine.oeis.a001;
 import java.util.ArrayList;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunction1;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
@@ -55,7 +54,7 @@ public class A001435 extends A001430 {
       return Z.ZERO;
     }
     Z sum = Z.ZERO;
-    for (final Z dd : Jaguar.factor(IntegerUtils.gcd(nodes, edges)).divisors()) {
+    for (final Z dd : Jaguar.factor(Functions.GCD.i(nodes, edges)).divisors()) {
       final int d = dd.intValue();
       sum = sum.add(b(nodes / d, edges / d).multiply(Functions.MOBIUS.i((long) d)).divide(d));
     }

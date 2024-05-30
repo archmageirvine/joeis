@@ -1,7 +1,6 @@
 package irvine.oeis.a050;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -34,7 +33,7 @@ public class A050186 extends AbstractSequence {
       return n <= 1 ? Z.ONE : Z.ZERO;
     }
     Z sum = Z.ZERO;
-    for (final Z dd : Jaguar.factor(LongUtils.gcd(n, m)).divisors()) {
+    for (final Z dd : Jaguar.factor(Functions.GCD.l(n, m)).divisors()) {
       final long d = dd.longValue();
       final int mobius = Functions.MOBIUS.i(d);
       if (mobius != 0) {

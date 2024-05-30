@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 
 import irvine.factor.prime.Fast;
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -40,7 +40,7 @@ public class A051704 extends Sequence0 {
         boolean ok = true;
         for (int k = 1; ok && k < p.length; ++k) {
           for (int j = 0; j < k; ++j) {
-            if (IntegerUtils.gcd(p[k], p[j]) != 1) {
+            if (Functions.GCD.i(p[k], p[j]) != 1) {
               ok = false;
               break;
             }

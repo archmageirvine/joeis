@@ -1,6 +1,5 @@
 package irvine.oeis.a054;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -18,7 +17,7 @@ public class A054433 extends Sequence1 {
     mN += 2;
     Z sum = Z.ZERO;
     for (int k = 1; k <= mN; k += 2) {
-      if (IntegerUtils.gcd(mN, k) == 1) {
+      if (Functions.GCD.i(mN, k) == 1) {
         sum = sum.add(Functions.FIBONACCI.z((long) (mN + 1 - k)));
       }
     }

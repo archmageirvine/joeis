@@ -1,7 +1,7 @@
 package irvine.oeis.a159;
 // manually sumsi/sumgcd at 2021-11-20 19:26
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -20,7 +20,7 @@ public class A159553 extends Sequence1 {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 0; k <= mN; ++k) {
-      final long gd = k == 0 ? mN : LongUtils.gcd(mN, k);
+      final long gd = k == 0 ? mN : Functions.GCD.l(mN, k);
       sum = sum.add(Binomial.binomial(mN, k).multiply(gd));
     }
     return sum;

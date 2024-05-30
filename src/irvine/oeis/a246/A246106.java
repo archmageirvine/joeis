@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -57,7 +56,7 @@ public class A246106 extends MemoryFunction2Sequence<Integer, List<List<int[]>>>
         int e = 0;
         for (final int[] i : s) {
           for (final int[] j : t) {
-            e += i[1] * j[1] * IntegerUtils.gcd(i[0], j[0]);
+            e += i[1] * j[1] * Functions.GCD.i(i[0], j[0]);
           }
         }
         sum = sum.add(new Q(zk.pow(e), per(s).multiply(per(t))));

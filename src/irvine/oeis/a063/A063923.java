@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 import java.util.ArrayList;
 import java.util.HashSet;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -30,7 +30,7 @@ public class A063923 extends Sequence1 {
       if (r.compareTo(v) < 0) {
         break;
       }
-      if (is(r, j, cnt + 1, gcd == -1 ? j + 1 : LongUtils.gcd(gcd, j + 1))) {
+      if (is(r, j, cnt + 1, gcd == -1 ? j + 1 : Functions.GCD.l(gcd, j + 1))) {
         return true;
       }
     }

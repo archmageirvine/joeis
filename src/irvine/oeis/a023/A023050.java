@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import java.util.Map;
 import java.util.TreeMap;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -23,7 +23,7 @@ public class A023050 extends Sequence1 {
       while (mCounts.isEmpty() || mCounts.firstKey().compareTo(x3) > 0) {
         x3 = Z.valueOf(++mX).pow(3);
         for (long y = 1; y < mX; ++y) {
-          if (LongUtils.gcd(mX, y) == 1) {
+          if (Functions.GCD.l(mX, y) == 1) {
             final Z z = x3.add(Z.valueOf(y).pow(3));
             final Integer c = mCounts.get(z);
             mCounts.put(z, c == null ? 1 : c + 1);

@@ -1,7 +1,6 @@
 package irvine.oeis.a056;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
@@ -20,7 +19,7 @@ public class A056372 extends Sequence1 {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 1; k <= mN; ++k) {
-      if (IntegerUtils.gcd(k, mN) == 1) {
+      if (Functions.GCD.i(k, mN) == 1) {
         long s = 0;
         for (final Z dd : Jaguar.factor(mN).divisors()) {
           s += Functions.PHI.z(dd).divide(new IntegersModMul(dd).order(Z.valueOf(k))).intValueExact();

@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.util.io.IOUtils;
 import irvine.util.string.StringUtils;
@@ -125,16 +126,6 @@ public final class IntegerUtils {
   }
 
   /**
-   * Compute the greatest common denominator of two integers.
-   * @param a first integer
-   * @param b second integer
-   * @return <code>gcd(a,b)</code>
-   */
-  public static int gcd(final int a, final int b) {
-    return b == 0 ? a : gcd(b, a % b);
-  }
-
-  /**
    * Compute the greatest common divisor of an array of values.
    * @param a list of values
    * @return greatest common divisor
@@ -142,7 +133,7 @@ public final class IntegerUtils {
   public static int gcd(final int... a) {
     int g = a[0];
     for (int k = 1; k < a.length; ++k) {
-      g = gcd(g, a[k]);
+      g = Functions.GCD.i(g, a[k]);
     }
     return g;
   }
@@ -154,7 +145,7 @@ public final class IntegerUtils {
    * @return <code>lcm(a,b)</code>
    */
   public static int lcm(final int a, final int b) {
-    return (a / gcd(a, b)) * b;
+    return (a / Functions.GCD.i(a, b)) * b;
   }
 
   /**

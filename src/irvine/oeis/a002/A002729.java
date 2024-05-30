@@ -1,6 +1,5 @@
 package irvine.oeis.a002;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -46,7 +45,7 @@ public class A002729 extends AbstractSequence {
   private int c(final long k, final long t, final long p) {
     Q s = Q.ZERO;
     for (long u = 0; u < p; ++u) {
-      s = s.add(new Q(1, m(k, p / LongUtils.gcd(p, u * (k - 1) + t))));
+      s = s.add(new Q(1, m(k, p / Functions.GCD.l(p, u * (k - 1) + t))));
     }
     return s.toZ().intValueExact();
   }
@@ -58,7 +57,7 @@ public class A002729 extends AbstractSequence {
     Z s = Z.ZERO;
     for (long t = 0; t < p; ++t) {
       for (long k = 1; k < p; ++k) {
-        if (LongUtils.gcd(p, k) == 1) {
+        if (Functions.GCD.l(p, k) == 1) {
           s = s.add(Z.ONE.shiftLeft(c(k, t, p)));
         }
       }

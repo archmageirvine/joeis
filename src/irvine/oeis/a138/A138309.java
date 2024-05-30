@@ -2,7 +2,7 @@ package irvine.oeis.a138;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -23,7 +23,7 @@ public class A138309 extends Sequence1 {
       boolean ok = true;
       for (final Z f : fs.toZArray()) {
         final int e = fs.getExponent(f);
-        if (LongUtils.gcd(mT, e) != 1) {
+        if (Functions.GCD.l(mT, e) != 1) {
           ok = false;
           break;
         }

@@ -1,6 +1,5 @@
 package irvine.oeis.a069;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -22,7 +21,7 @@ public class A069554 extends Sequence1 {
       return Z.ZERO;
     }
     while (mFirsts.get(mN) == 0) {
-      final long g = LongUtils.gcd(++mM, Functions.REVERSE.l(mM));
+      final long g = Functions.GCD.l(++mM, Functions.REVERSE.l(mM));
       if (mFirsts.get(g) == 0) {
         mFirsts.set(g, mM);
       }

@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -20,7 +20,7 @@ public class A049695 extends Sequence0 {
     long cnt = 1;
     for (long k = 1; k <= n; ++k) {
       for (long j = 1; j <= m; ++j) {
-        if (LongUtils.gcd(k, j) == 1) {
+        if (Functions.GCD.l(k, j) == 1) {
           ++cnt;
         }
       }

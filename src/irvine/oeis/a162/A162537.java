@@ -1,6 +1,6 @@
 package irvine.oeis.a162;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -21,14 +21,14 @@ public class A162537 extends Sequence1 {
       if (d == c) {
         ++cnt;
       } else {
-        if (LongUtils.gcd(n, cnt) != 1) {
+        if (Functions.GCD.l(n, cnt) != 1) {
           return false;
         }
         c = d;
         cnt = 1;
       }
     }
-    return LongUtils.gcd(n, cnt) == 1;
+    return Functions.GCD.l(n, cnt) == 1;
   }
 
   @Override

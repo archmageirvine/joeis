@@ -1,6 +1,6 @@
 package irvine.oeis.a341;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
@@ -12,6 +12,6 @@ public class A341315 extends Triangle {
 
   @Override
   public Z compute(final int n, final int k) {
-    return n == 0 ? Z.ZERO : (k == 0 ? Z.ONE : Z.valueOf(n + k).divide(LongUtils.gcd(n, k)));
+    return n == 0 ? Z.ZERO : (k == 0 ? Z.ONE : Z.valueOf(n + k).divide(Functions.GCD.l(n, k)));
   }
 }

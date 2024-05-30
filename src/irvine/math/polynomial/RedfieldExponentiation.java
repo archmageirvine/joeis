@@ -3,7 +3,6 @@ package irvine.math.polynomial;
 import java.util.ArrayList;
 import java.util.Map;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.q.Q;
@@ -22,7 +21,7 @@ public final class RedfieldExponentiation {
   private RedfieldExponentiation() { }
 
   private static CycleIndex d(final int r, final int k, final int i) {
-    if (r % i == 0 && IntegerUtils.gcd(r / i, k) == 1) {
+    if (r % i == 0 && Functions.GCD.i(r / i, k) == 1) {
       return new CycleIndex("d_" + i, MultivariateMonomial.create(k * i, Z.ONE, new Q(1, k)));
     } else {
       return CycleIndex.ZERO;

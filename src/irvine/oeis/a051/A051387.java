@@ -2,7 +2,7 @@ package irvine.oeis.a051;
 
 import java.util.HashSet;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -30,9 +30,9 @@ public class A051387 extends Sequence1 {
           mC = Z.valueOf(++mM).pow(3);
         }
         if (mCubes.contains(t)) {
-          final long g = LongUtils.gcd(mN, k);
+          final long g = Functions.GCD.l(mN, k);
           final long u = t.root(3).longValue();
-          if (LongUtils.gcd(u, g) != mN) {
+          if (Functions.GCD.l(u, g) != mN) {
             return Z.valueOf(mN);
           }
         }

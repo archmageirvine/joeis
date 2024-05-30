@@ -1,6 +1,6 @@
 package irvine.oeis.a364;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,7 @@ public class A364237 extends Sequence1 {
   private boolean isMinimal(final int[] perm) {
     // Check multiplication by coprime with reversal
     for (int k = 1; k <= perm.length; ++k) {
-      if (IntegerUtils.gcd(k, mMod) == 1) {
+      if (Functions.GCD.i(k, mMod) == 1) {
         for (int j = 0; j < perm.length; ++j) {
           final int c = Integer.compare(perm[j], (perm[perm.length - 1 - j] * k) % mMod);
           if (c < 0) {
@@ -30,7 +30,7 @@ public class A364237 extends Sequence1 {
     }
     // Check multiplication by coprime
     for (int k = 2; k <= perm.length; ++k) {
-      if (IntegerUtils.gcd(k, mMod) == 1) {
+      if (Functions.GCD.i(k, mMod) == 1) {
         for (final int i : perm) {
           final int c = Integer.compare(i, (i * k) % mMod);
           if (c < 0) {
@@ -55,7 +55,7 @@ public class A364237 extends Sequence1 {
 
   private boolean isMinimalElement(final int k) {
     for (int j = 2; j < mMod; ++j) {
-      if (IntegerUtils.gcd(j, mMod) == 1 && (k * j) % mMod < k) {
+      if (Functions.GCD.i(j, mMod) == 1 && (k * j) % mMod < k) {
         return false;
       }
     }

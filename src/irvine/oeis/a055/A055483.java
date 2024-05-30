@@ -1,6 +1,5 @@
 package irvine.oeis.a055;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -15,6 +14,6 @@ public class A055483 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Z.valueOf(LongUtils.gcd(++mN, Functions.REVERSE.l(mN)));
+    return Functions.GCD.z(++mN, Functions.REVERSE.l(mN));
   }
 }

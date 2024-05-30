@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunction2;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
@@ -74,7 +73,7 @@ public class A028657 extends MemoryFunction2Sequence<Integer, Z> {
         Z u = Z.ZERO;
         for (int j = 1; j <= t.degree(); ++j) {
           for (int i = 1; i <= s.degree(); ++i) {
-            final int g = IntegerUtils.gcd(i, j);
+            final int g = Functions.GCD.i(i, j);
             u = u.add(s.coeff(i).multiply(t.coeff(j)).multiply(g));
           }
         }

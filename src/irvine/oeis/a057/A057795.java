@@ -1,6 +1,5 @@
 package irvine.oeis.a057;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -18,7 +17,7 @@ public class A057795 extends Sequence1 {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 1; k <= mN; ++k) {
-      if (IntegerUtils.gcd(mN, k) == 1) {
+      if (Functions.GCD.i(mN, k) == 1) {
         sum = sum.add(Functions.FACTORIAL.z(k));
       }
     }

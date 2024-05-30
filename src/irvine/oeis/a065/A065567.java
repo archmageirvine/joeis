@@ -1,6 +1,5 @@
 package irvine.oeis.a065;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -24,7 +23,7 @@ public class A065567 extends Sequence1 {
       while (j != 0 && gcd != 1) {
         ++i;
         if ((j & 1) == 1) {
-          gcd = gcd == 0 ? i : IntegerUtils.gcd(gcd, i);
+          gcd = gcd == 0 ? i : Functions.GCD.i(gcd, i);
         }
         j >>>= 1;
       }

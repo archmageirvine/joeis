@@ -1,7 +1,7 @@
 package irvine.oeis.a038;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -35,7 +35,7 @@ public class A038025 extends Sequence1 {
     long phimax = 0;
     long a = 0;
     for (long k = 1; k <= mN; ++k) {
-      if (LongUtils.gcd(k, mN) == 1) {
+      if (Functions.GCD.l(k, mN) == 1) {
         final long phi = p(mN, k);
         if (phi >= phimax) {
           a = k;

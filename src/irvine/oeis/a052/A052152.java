@@ -1,6 +1,5 @@
 package irvine.oeis.a052;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
@@ -16,7 +15,7 @@ public class A052152 extends A052107 {
     int sum = 0;
     for (int i = 1; i < v.length; ++i) {
       for (int j = 0; j < i; ++j) {
-        sum += IntegerUtils.gcd(v[i], v[j]);
+        sum += Functions.GCD.i(v[i], v[j]);
       }
     }
     sum *= 4;

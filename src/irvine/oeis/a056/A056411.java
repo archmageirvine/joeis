@@ -1,6 +1,5 @@
 package irvine.oeis.a056;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -31,7 +30,7 @@ public class A056411 extends Sequence1 {
   private long c(final long j, final long t, final long n) {
     Q s = Q.ZERO;
     for (long u = 0; u < n; ++u) {
-      s = s.add(new Q(1, m(j, n / LongUtils.gcd(n, u * (j - 1) + t))));
+      s = s.add(new Q(1, m(j, n / Functions.GCD.l(n, u * (j - 1) + t))));
     }
     return s.toZ().longValueExact();
   }
@@ -43,7 +42,7 @@ public class A056411 extends Sequence1 {
     Z sum = Z.ZERO;
     for (long t = 0; t < n; ++t) {
       for (long j = 1; j < n; ++j) {
-        if (LongUtils.gcd(n, j) == 1) {
+        if (Functions.GCD.l(n, j) == 1) {
           sum = sum.add(Z.valueOf(k).pow(c(j, t, n)));
         }
       }

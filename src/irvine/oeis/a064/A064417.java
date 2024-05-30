@@ -1,6 +1,6 @@
 package irvine.oeis.a064;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
@@ -31,7 +31,7 @@ public class A064417 extends Sequence1 {
     } else {
       long k = mRunUp;
       while (true) {
-        if (!mSeen.isSet(++k) && LongUtils.gcd(mA, k) >= mRunUp) {
+        if (!mSeen.isSet(++k) && Functions.GCD.l(mA, k) >= mRunUp) {
           mA = k;
           break;
         }

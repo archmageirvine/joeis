@@ -1,7 +1,7 @@
 package irvine.oeis.a057;
 
-import irvine.math.LongUtils;
 import irvine.math.cr.CR;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -33,7 +33,7 @@ public class A057082 extends Sequence0 {
         az = az.subtract(1);
       }
       final long b = mN - a;
-      if (LongUtils.gcd(a, b) == 1) { // Otherwise we would have achieved this accuracy with smaller n
+      if (Functions.GCD.l(a, b) == 1) { // Otherwise we would have achieved this accuracy with smaller n
         final CR diff = CR.PI.subtract(CR.valueOf(az).divide(CR.valueOf(b))).abs();
         if (diff.compareTo(mBest) < 0) {
           mBest = diff;

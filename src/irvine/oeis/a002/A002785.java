@@ -1,6 +1,5 @@
 package irvine.oeis.a002;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.q.Q;
@@ -36,7 +35,7 @@ public class A002785 extends Sequence1 {
     // all even terms are 0
     for (int t = 1; t < j.length; t += 2) {
       for (int r = 1; r < t; r += 2) {
-        s += 2 * IntegerUtils.gcd(r, t) * j[r] * j[t];
+        s += 2 * Functions.GCD.i(r, t) * j[r] * j[t];
       }
     }
     return Z.ONE.shiftLeft(s);
@@ -56,7 +55,7 @@ public class A002785 extends Sequence1 {
     // all even terms are 0
     for (int t = 1; t < j.length; t += 2) {
       for (int r = 1; r < j.length; r += 2) {
-        s += IntegerUtils.gcd(r, t) * j[r] * j[t];
+        s += Functions.GCD.i(r, t) * j[r] * j[t];
       }
     }
     return Z.ONE.shiftLeft(s);

@@ -1,7 +1,7 @@
 package irvine.oeis.a085;
 
-import irvine.math.LongUtils;
 import irvine.math.api.Matrix;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
@@ -38,7 +38,7 @@ public class A085244 extends AbstractSequence {
   protected void fillMatrix(final int n, final Matrix<Z> mat) {
     for (int i = 0; i < mN; ++i) {
       for (int j = 0; j < mN; ++j) {
-        mat.set(i, j, Z.valueOf(LongUtils.gcd(i + 1, j + 1)));
+        mat.set(i, j, Functions.GCD.z(i + 1, j + 1));
       }
     }
   }

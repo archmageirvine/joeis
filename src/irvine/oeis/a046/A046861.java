@@ -2,7 +2,7 @@ package irvine.oeis.a046;
 
 import irvine.graph.Graph;
 import irvine.graph.Vertex;
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -37,7 +37,7 @@ public class A046861 extends Sequence1 {
     }
     //System.out.println("Testing: n=" + n + " m=" + m + " (4 OK)");
     // de Bruijn, condition (5)
-    if (IntegerUtils.gcd(m, n) != 1) {
+    if (Functions.GCD.i(m, n) != 1) {
       return false;
     }
     //System.out.println("Testing: n=" + n + " m=" + m + " (5 OK)");

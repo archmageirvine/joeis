@@ -1,6 +1,6 @@
 package irvine.oeis.a069;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -23,7 +23,7 @@ public class A069715 extends Sequence1 {
       int g = 0;
       for (int k = 2; k < cnts.length; ++k) {
         if (cnts[k] > 0) {
-          g = g == 0 ? k : IntegerUtils.gcd(g, k);
+          g = g == 0 ? k : Functions.GCD.i(g, k);
           if (g == 1) {
             return Z.valueOf(mN);
           }

@@ -1,6 +1,7 @@
 package irvine.oeis.a051;
 
 import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -36,7 +37,7 @@ public class A051839 extends Sequence1 {
   private boolean is(final int[] p) {
     for (int k = p[0] == 1 ? 1 : 0; k < p.length - 1; ++k) {
       for (int j = k + 1; j < p.length; ++j) {
-        if (!containsForward(p, IntegerUtils.gcd(p[j], p[k]), j)) {
+        if (!containsForward(p, Functions.GCD.i(p[j], p[k]), j)) {
           return false;
         }
         if (!containsBackward(p, IntegerUtils.lcm(p[j], p[k]), j)) {

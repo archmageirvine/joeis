@@ -2,7 +2,6 @@ package irvine.oeis.a053;
 
 import java.util.TreeSet;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -20,7 +19,7 @@ public class A053570 extends Sequence1 {
     ++mN;
     final TreeSet<Long> a = new TreeSet<>();
     for (long m = 1; m <= mN; ++m) {
-      if (LongUtils.gcd(mN, m) == 1) {
+      if (Functions.GCD.l(mN, m) == 1) {
         a.add(m);
       }
     }

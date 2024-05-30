@@ -1,6 +1,6 @@
 package irvine.oeis.a002;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunctionInt3Sequence;
@@ -21,7 +21,7 @@ public class A002704 extends MemoryFunctionInt3Sequence<Z> {
     if (s < 0) {
       return Z.ZERO;
     }
-    if (IntegerUtils.gcd(s, 2 * k + 1) > 1) {
+    if (Functions.GCD.i(s, 2 * k + 1) > 1) {
       return get(r, s - 1, k);
     } else {
       return get(r, s - 1, k).add(get(r - s, s - 1, k));

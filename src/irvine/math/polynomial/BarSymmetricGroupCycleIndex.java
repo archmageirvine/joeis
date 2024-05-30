@@ -1,6 +1,7 @@
 package irvine.math.polynomial;
 
 import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.q.Q;
 
@@ -31,7 +32,7 @@ public final class BarSymmetricGroupCycleIndex {
     for (int t = 1; t < j.length; ++t) {
       for (int r = 1; r < t; ++r) {
         if (j[r] != 0 && j[t] != 0) {
-          mm.add(2 * IntegerUtils.lcm(r, t), IntegerUtils.gcd(r, t) * j[r] * j[t]);
+          mm.add(2 * IntegerUtils.lcm(r, t), Functions.GCD.i(r, t) * j[r] * j[t]);
         }
       }
     }

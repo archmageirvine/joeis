@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -23,7 +23,7 @@ public class A069064 extends Sequence1 {
       return mCounts.merge(sum, 1, Integer::sum) > 1;
     }
     for (int k = pos; k < d.length; ++k) {
-      if (d[k] * prod <= mN && LongUtils.gcd(d[k], prod) == 1 && search(d, k + 1, d[k] * prod, sum + d[k])) {
+      if (d[k] * prod <= mN && Functions.GCD.l(d[k], prod) == 1 && search(d, k + 1, d[k] * prod, sum + d[k])) {
         return true; // A solution was found, no need to search further
       }
     }

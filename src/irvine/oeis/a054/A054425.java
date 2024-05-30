@@ -2,7 +2,7 @@ package irvine.oeis.a054;
 
 import java.util.HashMap;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -29,7 +29,7 @@ public class A054425 extends Sequence1 {
       ++mN;
       mM = 1;
     }
-    if (LongUtils.gcd(mM, mN - mM + 1) != 1) {
+    if (Functions.GCD.l(mM, mN - mM + 1) != 1) {
       return Z.ZERO;
     }
     final Q q = new Q(mM, mN - mM + 1);

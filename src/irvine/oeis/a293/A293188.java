@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -33,7 +33,7 @@ public class A293188 extends Sequence1 {
     final ArrayList<Z> res = new ArrayList<>();
     for (final Z dd : Jaguar.factor(n).divisorsSorted()) {
       final long d = dd.longValue();
-      if (LongUtils.gcd(d, n / d) == 1) {
+      if (Functions.GCD.l(d, n / d) == 1) {
         res.add(dd);
       }
     }

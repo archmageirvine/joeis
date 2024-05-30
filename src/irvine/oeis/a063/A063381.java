@@ -3,7 +3,6 @@ package irvine.oeis.a063;
 import java.util.HashMap;
 import java.util.HashSet;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -35,7 +34,7 @@ public class A063381 extends AbstractSequence {
     ++mN;
     final int[] u = new int[(int) Functions.PHI.l((long) mN)];
     for (int k = 0, t = 1; t < mN; ++t) {
-      if (IntegerUtils.gcd(t, mN) == 1) {
+      if (Functions.GCD.i(t, mN) == 1) {
         u[k++] = t;
       }
     }

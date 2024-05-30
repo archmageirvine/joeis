@@ -4,7 +4,6 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunction2;
 import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
@@ -64,7 +63,7 @@ public class A049312 extends MemoryFunction2Sequence<Integer, Z> {
         for (int i = 1; i <= s.degree(); ++i) {
           final int cs = s.coeff(i).intValueExact();
           for (int j = 1; j <= t.degree(); ++j) {
-            shift += IntegerUtils.gcd(i, j) * cs * t.coeff(j).intValueExact();
+            shift += Functions.GCD.i(i, j) * cs * t.coeff(j).intValueExact();
           }
         }
         sum = sum.add(new Q(Z.ONE.shiftLeft(shift), mul(s).multiply(mul(t))));

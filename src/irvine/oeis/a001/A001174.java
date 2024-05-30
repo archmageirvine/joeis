@@ -1,6 +1,6 @@
 package irvine.oeis.a001;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.q.Q;
@@ -22,7 +22,7 @@ public class A001174 extends Sequence1 {
     }
     for (int s = 1; s < j.length; ++s) {
       for (int r = 1; r < s; ++r) {
-        sum += j[r] * j[s] * IntegerUtils.gcd(r, s);
+        sum += j[r] * j[s] * Functions.GCD.i(r, s);
       }
     }
     return sum;

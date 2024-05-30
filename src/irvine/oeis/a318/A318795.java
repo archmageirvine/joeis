@@ -39,7 +39,7 @@ public class A318795 extends A052107 {
   private Polynomial<Q> k(final int[] q, final int t, final int k) {
     Polynomial<Q> prod = RING_Y.one();
     for (final int j : q) {
-      final Polynomial<Q> f = RING_Y.pow(RING_Y.oneMinusXToTheN(IntegerUtils.lcm(t, j)), IntegerUtils.gcd(t, j), k);
+      final Polynomial<Q> f = RING_Y.pow(RING_Y.oneMinusXToTheN(IntegerUtils.lcm(t, j)), Functions.GCD.i(t, j), k);
       prod = RING_Y.multiply(prod, f, k);
     }
     return RING_Y.series(RING_Y.one(), prod, k);

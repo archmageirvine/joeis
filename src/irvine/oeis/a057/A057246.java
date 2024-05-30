@@ -1,7 +1,6 @@
 package irvine.oeis.a057;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -21,7 +20,7 @@ public class A057246 extends Sequence1 {
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final long d = dd.longValueExact();
       if (d * d < n) {
-        final long g = LongUtils.gcd(d, n / d);
+        final long g = Functions.GCD.l(d, n / d);
         if (g == 1 || g == d) {
           s += d + n / d;
         }

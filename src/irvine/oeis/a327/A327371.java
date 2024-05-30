@@ -1,6 +1,5 @@
 package irvine.oeis.a327;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.IntegerField;
@@ -38,7 +37,7 @@ public class A327371 extends AbstractSequence {
     int cnt = 0;
     for (int i = 1; i < partition.length; ++i) {
       for (int j = 0; j < i; ++j) {
-        cnt += IntegerUtils.gcd(partition[i], partition[j]);
+        cnt += Functions.GCD.i(partition[i], partition[j]);
       }
     }
     for (final int j : partition) {

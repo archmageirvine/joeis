@@ -2,7 +2,7 @@ package irvine.oeis.a037;
 
 import java.util.TreeSet;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -28,7 +28,7 @@ public class A037161 extends Sequence0 {
       } else {
         for (long k = 1; k < mN; ++k) {
           final long q = mN - k;
-          if (LongUtils.gcd(k, q) == 1) {
+          if (Functions.GCD.l(k, q) == 1) {
             final Q t = new Q(k, q);
             mA.add(t);
             mA.add(t.negate());

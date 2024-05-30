@@ -2,7 +2,7 @@ package irvine.oeis.a002;
 
 import java.io.Serializable;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.q.Q;
@@ -33,7 +33,7 @@ public class A002854 extends AbstractSequence implements Serializable {
     int s = 0;
     for (int t = 1; t < j.length; ++t) {
       for (int r = 1; r < t; ++r) {
-        s += IntegerUtils.gcd(r, t) * j[r] * j[t];
+        s += Functions.GCD.i(r, t) * j[r] * j[t];
       }
     }
     for (int k = 1; k < j.length; ++k) {

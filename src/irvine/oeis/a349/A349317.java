@@ -1,7 +1,7 @@
 package irvine.oeis.a349;
 // manually inverse at 2023-07-24 10:20
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
@@ -19,6 +19,6 @@ public class A349317 extends BaseTriangle {
 
   @Override
   public Z triangleElement(final int n, final int k) {
-    return (IntegerUtils.gcd(n, k) > 1) ? Z.ONE : Z.ZERO;
+    return (Functions.GCD.i(n, k) > 1) ? Z.ONE : Z.ZERO;
   }
 }

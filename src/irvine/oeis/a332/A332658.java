@@ -19,7 +19,7 @@ public class A332658 extends Sequence1 {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 1; k <= mN; ++k) {
-      final long gd = LongUtils.gcd(mN, k);
+      final long gd = Functions.GCD.l(mN, k);
       sum = sum.add(Z.valueOf(Functions.MOBIUS.i(gd)).multiply(LongUtils.lcm(mN, k) / gd));
     }
     return sum;

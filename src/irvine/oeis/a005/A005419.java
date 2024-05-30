@@ -1,6 +1,5 @@
 package irvine.oeis.a005;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
@@ -24,7 +23,7 @@ public class A005419 extends Sequence1 {
     } else {
       sum = sum.add(new Q(Binomial.binomial(3 * mN, mN / 2).multiply(3), Z.valueOf(5 * mN + 2)));
     }
-    final long g = LongUtils.gcd(7, mN - 1);
+    final long g = Functions.GCD.l(7, mN - 1);
     for (long k = 3; k <= g; ++k) {
       if (g % k == 0) {
         sum = sum.add(new Q(Binomial.binomial((6 * mN + 1) / k, (mN - 1) / k).multiply(Functions.PHI.l(k)), Z.valueOf(6 * mN + 1)));

@@ -52,15 +52,15 @@ public class A126067 extends AbstractSequence {
     for (int k = 1; k <= p; ++k) {
       if (j[k] != 0) { // efficiency only
         final int lcm = IntegerUtils.lcm(2, k);
-        final int gcd = IntegerUtils.gcd(2, k);
+        final int gcd = Functions.GCD.i(2, k);
         powers.add(lcm, gcd * k * ((long) j[k] * j[k] - j[k]) / 2);
       }
     }
     for (int r = 1; r <= p; ++r) {
       for (int t = r + 1; t <= p; ++t) {
         final int k = IntegerUtils.lcm(r, t);
-        final int gcd = IntegerUtils.gcd(r, t);
-        powers.add(IntegerUtils.lcm(2, k), (long) IntegerUtils.gcd(2, k) * gcd * j[r] * j[t]);
+        final int gcd = Functions.GCD.i(r, t);
+        powers.add(IntegerUtils.lcm(2, k), (long) Functions.GCD.i(2, k) * gcd * j[r] * j[t]);
       }
     }
     for (int k = 1; k <= p; k += 2) {

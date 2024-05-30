@@ -1,6 +1,5 @@
 package irvine.oeis.a003;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
@@ -23,7 +22,7 @@ public class A003086 extends Sequence1 {
     int s1 = 0;
     for (int r = 1; r <= n; ++r) {
       for (int t = r + 1; t <= n; ++t) {
-        s1 += IntegerUtils.gcd(r, t) * j[r] * j[t];
+        s1 += Functions.GCD.i(r, t) * j[r] * j[t];
       }
     }
     s1 *= 4;

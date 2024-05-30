@@ -2,7 +2,6 @@ package irvine.oeis.a288;
 
 import java.util.Map;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
@@ -33,12 +32,12 @@ public class A288627 extends A288620 {
   protected CycleIndex compute(final Integer n) {
     final CycleIndex ci = new CycleIndex();
     for (long k = 0; k < n; ++k) {
-      if (LongUtils.gcd(n, k) == 1) {
-        final Q mmc = new Q(n, LongUtils.gcd(n, k - 1));
-        for (long c = 1; c <= LongUtils.gcd(n, k - 1); ++c) {
+      if (Functions.GCD.l((long) n, k) == 1) {
+        final Q mmc = new Q(n, Functions.GCD.l((long) n, k - 1));
+        for (long c = 1; c <= Functions.GCD.l((long) n, k - 1); ++c) {
           final MultivariateMonomial mm = new MultivariateMonomial();
           for (int i = 1; i <= n; ++i) {
-            final long mi = m(k, n / LongUtils.gcd(n, i * (k - 1) + c));
+            final long mi = m(k, n / Functions.GCD.l((long) n, i * (k - 1) + c));
             mm.add((int) mi, 1);
           }
           mm.setCoefficient(mmc);

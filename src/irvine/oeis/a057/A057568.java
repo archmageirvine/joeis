@@ -1,7 +1,7 @@
 package irvine.oeis.a057;
 
 import irvine.factor.prime.Fast;
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
@@ -30,7 +30,7 @@ public class A057568 extends MemoryFunctionInt3Sequence<Z> {
       return Z.ZERO;
     }
     final Z b = get(n, i - 1, t);
-    return i > n ? b : b.add(get(n - i, Math.min(i, n - i), t / IntegerUtils.gcd(i, t)));
+    return i > n ? b : b.add(get(n - i, Math.min(i, n - i), t / Functions.GCD.i(i, t)));
   }
 
   @Override

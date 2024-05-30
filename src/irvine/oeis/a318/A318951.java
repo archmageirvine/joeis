@@ -1,6 +1,5 @@
 package irvine.oeis.a318;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
@@ -51,7 +50,7 @@ public class A318951 extends AbstractSequence {
   private Z k(final int[] q, final int t, final int k) {
     Polynomial<Z> product = RINGZ.one();
     for (final int v : q) {
-      final int g = IntegerUtils.gcd(t, v);
+      final int g = Functions.GCD.i(t, v);
       product = RINGZ.multiply(product, RINGZ.pow(RINGZ.oneMinusXToTheN(v / g), g, k), k);
     }
     return RINGZ.coeff(RINGZ.one(), product, k);

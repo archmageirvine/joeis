@@ -1,6 +1,6 @@
 package irvine.oeis.a227;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
@@ -22,6 +22,6 @@ public class A227041 extends Triangle {
   public Z compute(int n, int m) {
     ++n;
     ++m;
-    return n == 1 ? Z.ONE : new Q(2L * m * n, LongUtils.gcd(n + m, 2L * n * m)).num();
+    return n == 1 ? Z.ONE : new Q(2L * m * n, Functions.GCD.l(n + m, 2L * n * m)).num();
   }
 }

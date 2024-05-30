@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import java.util.Map;
 import java.util.TreeMap;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -29,7 +29,7 @@ public class A036668 extends Sequence0 {
       mPriority.put(r.multiply(6), 1L);
       mPriority.put(r.multiply(9), 1L);
     }
-    while (LongUtils.gcd(++v, 6) != 1) {
+    while (Functions.GCD.l(++v, 6) != 1) {
       // do nothing
     }
     mPriority.put(r.divide(u).multiply(v), v);

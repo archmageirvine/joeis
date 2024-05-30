@@ -61,10 +61,10 @@ public final class PalmerSymPowerCycleIndex extends MemoryFunction2<Integer, Q> 
           final int jm = f.getValue().intValueExact();
           final int jj = jk * jm;
           if ((k & 1) == 1) {
-            r.add(IntegerUtils.lcm(k, m), jj * IntegerUtils.gcd(k, m) * (k - 1L) / 2);
+            r.add(IntegerUtils.lcm(k, m), jj * Functions.GCD.i(k, m) * (k - 1L) / 2);
           } else {
-            r.add(IntegerUtils.lcm(k / 2, m), jj * (long) IntegerUtils.gcd(k / 2, m));
-            r.add(IntegerUtils.lcm(k, m), jj * IntegerUtils.gcd(k, m) * (k - 2L) / 2);
+            r.add(IntegerUtils.lcm(k / 2, m), jj * (long) Functions.GCD.i(k / 2, m));
+            r.add(IntegerUtils.lcm(k, m), jj * Functions.GCD.i(k, m) * (k - 2L) / 2);
           }
         }
       }
@@ -83,7 +83,7 @@ public final class PalmerSymPowerCycleIndex extends MemoryFunction2<Integer, Q> 
         if (m != k) {
           final int jm = f.getValue().intValueExact();
           final int km = k * m;
-          final int gcdkm = IntegerUtils.gcd(k, m);
+          final int gcdkm = Functions.GCD.i(k, m);
           final int lcmkm = IntegerUtils.lcm(k, m);
           r.add(lcmkm, (long) m * gcdkm * b(jm, 2) * jk);
           if (k < m) {
@@ -143,7 +143,7 @@ public final class PalmerSymPowerCycleIndex extends MemoryFunction2<Integer, Q> 
     }
     Z sum = Z.ZERO;
     for (int t = 0; s + u[k] * t <= n; ++t) {
-      final Z b = Binomial.binomial((long) c[k] * IntegerUtils.gcd(k, d), t);
+      final Z b = Binomial.binomial((long) c[k] * Functions.GCD.i(k, d), t);
       sum = sum.add(search(n, d, c, u, s + u[k] * t, k, prod.multiply(b)));
     }
     return sum;
@@ -152,7 +152,7 @@ public final class PalmerSymPowerCycleIndex extends MemoryFunction2<Integer, Q> 
   private Z f(final int n, final int d, final int[] c) {
     final int[] u = new int[c.length]; // u[0] unused
     for (int k = 1; k < u.length; ++k) {
-      u[k] = k / IntegerUtils.gcd(k, d);
+      u[k] = k / Functions.GCD.i(k, d);
     }
     return search(n, d, c, u, 0, 0, Z.ONE);
   }

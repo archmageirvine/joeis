@@ -1,7 +1,7 @@
 package irvine.oeis.a053;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,12 +18,12 @@ public class A053674 extends Sequence1 {
   public Z next() {
     ++mN;
     long p = 7;
-    while (LongUtils.gcd(mN, p) != 1
-      || LongUtils.gcd(mN + 1, p) != 1
-      || LongUtils.gcd(mN + 2, p) != 1
-      || LongUtils.gcd(mN + 3, p) != 1
-      || LongUtils.gcd(mN + 4, p) != 1
-      || LongUtils.gcd(mN + 5, p) != 1
+    while (Functions.GCD.l(mN, p) != 1
+      || Functions.GCD.l(mN + 1, p) != 1
+      || Functions.GCD.l(mN + 2, p) != 1
+      || Functions.GCD.l(mN + 3, p) != 1
+      || Functions.GCD.l(mN + 4, p) != 1
+      || Functions.GCD.l(mN + 5, p) != 1
     ) {
       p = mPrime.nextPrime(p);
     }

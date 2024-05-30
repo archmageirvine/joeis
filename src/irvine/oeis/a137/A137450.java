@@ -1,6 +1,6 @@
 package irvine.oeis.a137;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,7 +18,7 @@ public class A137450 extends Sequence1 {
     // compute lcm of coprime values
     Z lcm = Z.ONE;
     for (long k = 2; k < mN; ++k) {
-      if (LongUtils.gcd(k, mN) == 1) {
+      if (Functions.GCD.l(k, mN) == 1) {
         lcm = lcm.lcm(Z.valueOf(k));
       }
     }
@@ -32,7 +32,7 @@ public class A137450 extends Sequence1 {
       if (l == ++q) {
         return Z.valueOf(c);
       }
-      if (LongUtils.gcd(mN, q) == 1) {
+      if (Functions.GCD.l(mN, q) == 1) {
         ++c;
       }
     }

@@ -1,6 +1,5 @@
 package irvine.oeis.a054;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
@@ -32,7 +31,7 @@ public class A054747 extends Sequence1 {
         s2 += (long) t * j[t];
       }
     }
-    final Z sB = Z.valueOf(s2).multiply2().pow((long) j[r] * l[2] * IntegerUtils.gcd(r, 2));
+    final Z sB = Z.valueOf(s2).multiply2().pow((long) j[r] * l[2] * Functions.GCD.i(r, 2));
     return sA.multiply(sB);
   }
 

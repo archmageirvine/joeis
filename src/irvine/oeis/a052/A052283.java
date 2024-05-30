@@ -1,6 +1,5 @@
 package irvine.oeis.a052;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
@@ -30,7 +29,7 @@ public class A052283 extends A052107 {
     Polynomial<Z> prod = RING.one();
     for (int i = 1; i < v.length; ++i) {
       for (int j = 0; j < i; ++j) {
-        final int g = IntegerUtils.gcd(v[i], v[j]);
+        final int g = Functions.GCD.i(v[i], v[j]);
         prod = RING.multiply(prod, RING.pow(RING.onePlusXToTheN(v[i] * v[j] / g), 2L * g));
       }
     }

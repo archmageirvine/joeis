@@ -1,6 +1,5 @@
 package irvine.oeis.a056;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -25,10 +24,10 @@ public class A056901 extends Sequence1 {
         ++mC;
         mB = 1;
       }
-      if (LongUtils.gcd(mC, mB) == 1) {
+      if (Functions.GCD.l(mC, mB) == 1) {
         final long a2 = mC * mC - mB * mB;
         final long a = Functions.SQRT.l(a2);
-        if (a < mB && a * a == a2 && LongUtils.gcd(a, mC) == 1 && LongUtils.gcd(a, mB) == 1) {
+        if (a < mB && a * a == a2 && Functions.GCD.l(a, mC) == 1 && Functions.GCD.l(a, mB) == 1) {
           final long inradius = (a + mB - mC) / 2;
           final long sp = (a + mB + mC) / 2;
           final long existing = mSemiperimeter.get(inradius);

@@ -2,8 +2,8 @@ package irvine.oeis.a005;
 
 import java.util.Arrays;
 
-import irvine.math.LongUtils;
 import irvine.math.api.Matrix;
+import irvine.math.function.Functions;
 import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.q.Q;
@@ -24,7 +24,7 @@ public class A005326 extends Sequence1 {
     final Matrix<Z> comprimeMatrix = new DefaultMatrix<>(ring.zero(), Z.ZERO);
     for (int k = 1; k <= n; ++k) {
       for (int j = k; j <= n; ++j) {
-        final Z d = LongUtils.gcd(j, k) == 1 ? Z.ONE : Z.ZERO;
+        final Z d = Functions.GCD.l(j, k) == 1 ? Z.ONE : Z.ZERO;
         comprimeMatrix.set(k - 1, j - 1, d);
         comprimeMatrix.set(j - 1, k - 1, d);
       }

@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.Pair;
@@ -26,7 +26,7 @@ public class A048211 extends Sequence1 {
     final long d = y.right();
     final long e = a * d + b * c;
     final long f = b * d;
-    final long g = LongUtils.gcd(e, f);
+    final long g = Functions.GCD.l(e, f);
     return new Pair<>(e / g, f / g);
   }
 
@@ -38,7 +38,7 @@ public class A048211 extends Sequence1 {
     final long d = y.right();
     final long e = b * c + a * d;
     final long f = a * c;
-    final long g = LongUtils.gcd(e, f);
+    final long g = Functions.GCD.l(e, f);
     return new Pair<>(f / g, e / g);
   }
 

@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
@@ -33,7 +33,7 @@ public class A049239 extends Sequence1 implements Conjectural {
   }
 
   protected long f(final long p, final long q, final long limit) {
-    final long d = LongUtils.gcd(p, q);
+    final long d = Functions.GCD.l(p, q);
     long z = 0;
     while (true) {
       if (isSolution(p, q, z, limit)) {

@@ -1,6 +1,5 @@
 package irvine.oeis.a059;
 
-import irvine.math.LongUtils;
 import irvine.math.cr.CR;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
@@ -17,7 +16,7 @@ public class A059743 extends Sequence0 {
   private long b(final long n, final long m) {
     long s = 0;
     for (long k = 1; k <= m; ++k) {
-      if (LongUtils.gcd(n, k) == 1) {
+      if (Functions.GCD.l(n, k) == 1) {
         ++s;
       }
     }

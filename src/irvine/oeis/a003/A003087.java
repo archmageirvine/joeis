@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import java.util.ArrayList;
 import java.util.Map;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
@@ -45,7 +45,7 @@ public class A003087 extends Sequence0 {
         for (final Map.Entry<Pair<String, Integer>, Z> e : alpha.entrySet()) {
           final Pair<String, Integer> kKey = e.getKey();
           final int k = kKey.right();
-          final int d = e.getValue().multiply(IntegerUtils.gcd(k, r)).intValueExact();
+          final int d = e.getValue().multiply(Functions.GCD.i(k, r)).intValueExact();
           s += d;
           shift += d * mr;
         }

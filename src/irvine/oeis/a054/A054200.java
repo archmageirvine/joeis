@@ -1,7 +1,6 @@
 package irvine.oeis.a054;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
@@ -23,7 +22,7 @@ public class A054200 extends Sequence0 {
     Z sum = Z.ZERO;
     for (final Z d : Jaguar.factor(mN).divisors()) {
       final int dd = d.intValue();
-      final int g = IntegerUtils.gcd(dd, 3);
+      final int g = Functions.GCD.i(dd, 3);
       final int dg = dd / g;
       if ((dd & 1) == 1) {
         final Z t = Z.valueOf(Functions.PHI.l(dd) / Functions.PHI.l(dg)).shiftLeft(mN / dd);

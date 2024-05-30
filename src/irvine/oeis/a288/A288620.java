@@ -1,7 +1,6 @@
 package irvine.oeis.a288;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunction;
 import irvine.math.function.Functions;
 import irvine.math.group.IntegersModMul;
@@ -38,7 +37,7 @@ public class A288620 extends MemoryFunctionSequence<Integer, CycleIndex> {
   protected CycleIndex compute(final Integer n) {
     final CycleIndex ci = new CycleIndex("H(" + n + ")");
     for (int k = 1; k <= n; ++k) {
-      if (IntegerUtils.gcd(k, n) == 1) {
+      if (Functions.GCD.i(k, n) == 1) {
         final MultivariateMonomial mm = new MultivariateMonomial();
         for (final Z dd : Jaguar.factor(n).divisors()) {
           final int ord = new IntegersModMul(dd).order(Z.valueOf(k)).intValueExact();

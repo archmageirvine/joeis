@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
@@ -36,7 +35,7 @@ public class A039791 extends Sequence1 {
   private MultivariateMonomial cycleIndex(final int l, final int k, final int j) {
     final Map<Integer, Q> monomial = new HashMap<>();
     for (int i = 1; i <= l; ++i) {
-      final int g = l / IntegerUtils.gcd(l, (k - 1) * i + j);
+      final int g = l / Functions.GCD.i(l, (k - 1) * i + j);
       final int v = order(g, k);
       monomial.merge(v, new Q(1, v), Q::add);
     }
@@ -49,7 +48,7 @@ public class A039791 extends Sequence1 {
 
   private CycleIndex cycleIndex(final int l, final int k) {
     final CycleIndex ci = new CycleIndex();
-    final int d = IntegerUtils.gcd(l, k - 1);
+    final int d = Functions.GCD.i(l, k - 1);
     for (int j = 1; j <= d; ++j) {
       ci.add(cycleIndex(l, k, j));
     }
@@ -60,7 +59,7 @@ public class A039791 extends Sequence1 {
   private CycleIndex cycleIndex(final int l) {
     final CycleIndex ci = new CycleIndex();
     for (int k = 1; k <= l; ++k) {
-      if (IntegerUtils.gcd(k, l) == 1) {
+      if (Functions.GCD.i(k, l) == 1) {
         ci.add(cycleIndex(l, k));
       }
     }

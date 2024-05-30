@@ -1,8 +1,8 @@
 package irvine.oeis.a006;
 
-import irvine.math.LongUtils;
 import irvine.math.cr.CR;
 import irvine.math.cr.Convergents;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -22,7 +22,7 @@ public class A006839 extends Sequence1 {
     }
     Z minOfMax = null;
     for (long k = 1; k < mN && !Z.ONE.equals(minOfMax); ++k) {
-      if (LongUtils.gcd(k, mN) == 1) {
+      if (Functions.GCD.l(k, mN) == 1) {
         final Q f = new Q(k, mN);
         Z max = Z.ZERO;
         final Convergents conv = new Convergents(CR.valueOf(f));

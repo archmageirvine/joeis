@@ -2,7 +2,7 @@ package irvine.oeis.a061;
 
 import java.util.HashSet;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -20,7 +20,7 @@ public class A061498 extends Sequence1 {
     final HashSet<Long> set = new HashSet<>();
     long a = 1;
     for (long k = 2; k < mN; ++k) {
-      if (LongUtils.gcd(k, mN) == 1) {
+      if (Functions.GCD.l(k, mN) == 1) {
         set.add(k - a);
         a = k;
       }

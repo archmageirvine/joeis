@@ -1,6 +1,6 @@
 package irvine.oeis.a165;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,7 +18,7 @@ public class A165430 extends Sequence1 {
    */
   public static long gcud(final long m, final long n) {
     for (long k = Math.min(m, n); k > 0; --k) {
-      if (m % k == 0 && n % k == 0 && LongUtils.gcd(k, m / k) == 1 && LongUtils.gcd(k, n / k) == 1) {
+      if (m % k == 0 && n % k == 0 && Functions.GCD.l(k, m / k) == 1 && Functions.GCD.l(k, n / k) == 1) {
         return k;
       }
     }

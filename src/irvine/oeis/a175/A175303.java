@@ -1,7 +1,7 @@
 package irvine.oeis.a175;
 
 import irvine.factor.prime.Fast;
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A175303 extends Sequence1 {
     long c = 0;
     boolean extended = false;
     for (int k = 1; k < used.length; ++k) {
-      if (!used[k] && IntegerUtils.gcd(k, prev) != 1) {
+      if (!used[k] && Functions.GCD.i(k, prev) != 1) {
         extended = true;
         used[k] = true;
         c += count(k, used);

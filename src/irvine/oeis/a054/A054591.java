@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -40,7 +40,7 @@ public class A054591 extends Sequence1 {
       }
       final Z q = Z.valueOf(mN);
       for (long p = 1; p < mN; ++p) {
-        if (LongUtils.gcd(p, mN) == 1 && isCantor(Z.valueOf(p), q)) {
+        if (Functions.GCD.l(p, mN) == 1 && isCantor(Z.valueOf(p), q)) {
           return q;
         }
       }

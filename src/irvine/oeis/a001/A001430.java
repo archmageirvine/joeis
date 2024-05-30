@@ -2,7 +2,7 @@ package irvine.oeis.a001;
 
 import java.util.Map;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
@@ -49,7 +49,7 @@ public class A001430 extends MemoryFunction1Sequence<Polynomial<Q>> {
       // Handle all other composition terms; i.e. a_j^k o a_i^d
       for (int i = j + 1; i <= mm; ++i) {
         final Z d = t.get(new Pair<>(MultivariateMonomial.DEFAULT_VARIABLE, i));
-        final int gcd = IntegerUtils.gcd(i, j);
+        final int gcd = Functions.GCD.i(i, j);
         m.add(i * j / gcd, d.multiply(k).multiply(gcd));
       }
     }

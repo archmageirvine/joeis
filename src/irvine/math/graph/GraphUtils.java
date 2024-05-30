@@ -603,7 +603,7 @@ public final class GraphUtils {
           for (int s = 1; s <= i; ++s) {
             E qs = fld.one();
             for (final int k : pj) {
-              final int g = IntegerUtils.gcd(s, k);
+              final int g = Functions.GCD.i(s, k);
               qs = fld.multiply(qs, fld.pow(yf.apply(s * k / g), g));
             }
             q.add(qs);
@@ -826,7 +826,7 @@ public final class GraphUtils {
           for (int s = 1; s <= i; ++s) {
             E prod = fld.one();
             for (final int t : pj) {
-              final int g = IntegerUtils.gcd(s, t);
+              final int g = Functions.GCD.i(s, t);
               prod = fld.multiply(prod, fld.pow(yf.apply(s * t / g), g));
             }
             q.add(prod);

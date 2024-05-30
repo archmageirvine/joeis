@@ -2,7 +2,7 @@ package irvine.oeis.a057;
 
 import java.util.TreeSet;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
@@ -16,7 +16,7 @@ public class A057593 extends Sequence2 {
   private long mM = 0;
 
   protected long t(final long n, final long m) {
-    if (LongUtils.gcd(n, m) == 1) {
+    if (Functions.GCD.l(n, m) == 1) {
       // no preperiod in this case
       long cnt = 0;
       long k = 1;

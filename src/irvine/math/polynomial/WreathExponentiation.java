@@ -3,7 +3,6 @@ package irvine.math.polynomial;
 import java.util.ArrayList;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.util.Pair;
@@ -26,7 +25,7 @@ public final class WreathExponentiation {
       final long w = ww.longValueExact();
       final long mu = Functions.MOBIUS.i(v / w);
       if (mu != 0) {
-        final long g = LongUtils.gcd(w, r); // actually an int since v was
+        final long g = Functions.GCD.l(w, r); // actually an int since v was
         Z sum = Z.ZERO;
         for (final Z kk : Jaguar.factor(w / g).divisors()) {
           final int k = kk.intValue();

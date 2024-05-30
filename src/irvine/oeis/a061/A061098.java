@@ -1,6 +1,6 @@
 package irvine.oeis.a061;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A061098 extends Sequence1 {
     }
     final StringBuilder sb = new StringBuilder();
     for (long k = 2; k <= mN; ++k) {
-      if (LongUtils.gcd(k, mN) != 1) {
+      if (Functions.GCD.l(k, mN) != 1) {
         sb.append(k);
       }
     }

@@ -1,6 +1,7 @@
 package irvine.oeis.a079;
 
 import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerComposition;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
@@ -16,7 +17,7 @@ public class A079216 extends Sequence0 {
   private int mM = 0;
 
   private Z pFixedByA057511(final int n, final int k, final int r) {
-    final int ncycles = IntegerUtils.gcd(r, k);
+    final int ncycles = Functions.GCD.i(r, k);
     final int cyclen = r / ncycles;
     Z sum = Z.ZERO;
     if (n % cyclen == 0) {

@@ -1,6 +1,5 @@
 package irvine.oeis.a304;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.partition.IntegerPartition;
@@ -38,7 +37,7 @@ public class A304942 extends Sequence0 {
   private Q k(final int[] q, final int t, final int k) {
     Polynomial<Q> prod = RING.one();
     for (final int v : q) {
-      final int g = IntegerUtils.gcd(t, v);
+      final int g = Functions.GCD.i(t, v);
       prod = RING.multiply(prod, RING.pow(RING.onePlusXToTheN(v / g), g, k), k);
     }
     return prod.coeff(k);

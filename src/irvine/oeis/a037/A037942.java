@@ -1,6 +1,5 @@
 package irvine.oeis.a037;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -22,7 +21,7 @@ public class A037942 extends Sequence1 {
         break;
       }
       final long y = Functions.SQRT.l(y2);
-      if (y * y == y2 && LongUtils.gcd(x, y) == 1) {
+      if (y * y == y2 && Functions.GCD.l(x, y) == 1) {
         ++cnt;
       }
     }

@@ -3,7 +3,7 @@ package irvine.oeis.a039;
 import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -22,7 +22,7 @@ public class A039775 extends Sequence1 {
     ++mN;
     long cnt = 0;
     for (long p = 2; p < mN; p = mPrime.nextPrime(p)) {
-      if (LongUtils.gcd(p, mN) == 1) {
+      if (Functions.GCD.l(p, mN) == 1) {
         final long pn = p * mN;
         if (mSeen.add(pn)) {
           ++cnt;

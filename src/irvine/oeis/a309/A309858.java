@@ -34,7 +34,7 @@ public class A309858 extends MemoryFunction2Sequence<Integer, Z> {
 
   private boolean and(final List<Integer> p, final List<Integer> k, final int q, final int t) {
     for (int i = 0; i < q; ++i) {
-      final int g = IntegerUtils.gcd(t, p.get(i));
+      final int g = Functions.GCD.i(t, p.get(i));
       if (k.get(i) % (p.get(i) / g) != 0) {
         return false;
       }
@@ -68,7 +68,7 @@ public class A309858 extends MemoryFunction2Sequence<Integer, Z> {
         if (and(p, k, q, t)) {
           Z prod = Z.ONE;
           for (int i = 0; i < q; ++i) {
-            final int m = IntegerUtils.gcd(t, p.get(i));
+            final int m = Functions.GCD.i(t, p.get(i));
             prod = prod.multiply(Binomial.binomial(m, (long) k.get(i) * m / p.get(i)));
           }
           s2 = s2.add(prod);

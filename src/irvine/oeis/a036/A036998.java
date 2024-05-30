@@ -1,6 +1,6 @@
 package irvine.oeis.a036;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
@@ -21,7 +21,7 @@ public class A036998 extends Sequence1 {
     ++mN;
     Polynomial<Z> prod = RING.one();
     for (int k = 1; k <= mN; ++k) {
-      if (LongUtils.gcd(k, mN) == 1) {
+      if (Functions.GCD.l(k, mN) == 1) {
         prod = RING.multiply(prod, RING.onePlusXToTheN(k), mN);
       }
     }

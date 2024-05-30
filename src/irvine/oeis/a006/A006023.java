@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
@@ -26,7 +26,7 @@ public class A006023 extends Sequence0 {
         powersOfTwo += (long) (k - 1) * v[k];
         powersOfTwo += (long) k * v[k] * (v[k] - 1);
         for (int j = k + 1; j < v.length; ++j) {
-          powersOfTwo += 2 * LongUtils.gcd(j, k) * v[j] * v[k];
+          powersOfTwo += 2 * Functions.GCD.l(j, k) * v[j] * v[k];
         }
       }
     }

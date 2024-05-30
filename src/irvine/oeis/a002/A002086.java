@@ -1,6 +1,5 @@
 package irvine.oeis.a002;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -55,7 +54,7 @@ public class A002086 extends Sequence1 {
     final long m = 2 * ++mN + 1;
     Z sum = Z.ZERO;
     for (long k = 1; k <= m; ++k) {
-      if (LongUtils.gcd(m, k) == 1 && isC(m, k)) {
+      if (Functions.GCD.l(m, k) == 1 && isC(m, k)) {
         sum = sum.add(Z.ONE.shiftLeft(c(m, k)));
       }
     }

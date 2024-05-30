@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
@@ -17,6 +17,6 @@ public class A056188 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sum(1, mN, k -> LongUtils.gcd(mN, k) == 1 ? Binomial.binomial(mN, k) : Z.ZERO);
+    return Integers.SINGLETON.sum(1, mN, k -> Functions.GCD.l(mN, (long) k) == 1 ? Binomial.binomial(mN, k) : Z.ZERO);
   }
 }

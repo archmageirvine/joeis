@@ -1,6 +1,7 @@
 package irvine.oeis.a054;
 
 import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002854;
@@ -35,7 +36,7 @@ public class A054732 extends A002854 {
                 s2 += d * qq[d];
               }
             }
-            final int exponent = p[r] * q[s] * IntegerUtils.gcd(r, s);
+            final int exponent = p[r] * q[s] * Functions.GCD.i(r, s);
             prod = prod.multiply(Z.valueOf(s1).multiply(s2).pow(exponent));
           }
         }

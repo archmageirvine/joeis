@@ -1,7 +1,6 @@
 package irvine.oeis.a039;
 
-import irvine.math.IntegerUtils;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.oeis.a003.A003294;
 
 /**
@@ -12,14 +11,14 @@ public class A039664 extends A003294 {
 
   @Override
   protected boolean isOk(final int a, final int b, final int c, final long u) {
-    final int d = IntegerUtils.gcd(a, b);
+    final int d = Functions.GCD.i(a, b);
     if (d == 1) {
       return true;
     }
-    final int e = IntegerUtils.gcd(d, c);
+    final int e = Functions.GCD.i(d, c);
     if (e == 1) {
       return true;
     }
-    return LongUtils.gcd(e, u) == 1;
+    return Functions.GCD.l(e, u) == 1;
   }
 }

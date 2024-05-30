@@ -1,6 +1,5 @@
 package irvine.oeis.a054;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -20,7 +19,7 @@ public class A054532 extends Sequence1 {
       ++mN;
       mM = 1;
     }
-    final long g = mM / LongUtils.gcd(mN, mM);
+    final long g = mM / Functions.GCD.l(mN, mM);
     return Z.valueOf(Functions.PHI.l(mM) * Functions.MOBIUS.i(g) / Functions.PHI.l(g));
   }
 }

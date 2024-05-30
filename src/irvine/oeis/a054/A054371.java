@@ -1,6 +1,5 @@
 package irvine.oeis.a054;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
@@ -23,7 +22,7 @@ public class A054371 extends Sequence0 {
     final Z a = Integers.SINGLETON.sumdiv(mN, d -> {
       return Binomial.binomial(7L * d, d).multiply(Functions.PHI.l((long) (mN / d)));
     });
-    final Z b = Integers.SINGLETON.sumdiv(IntegerUtils.gcd(mN - 1, 7), d -> {
+    final Z b = Integers.SINGLETON.sumdiv(Functions.GCD.i(mN - 1, 7), d -> {
       return Binomial.binomial(7L * mN / d, (mN - 1) / d).multiply(Functions.PHI.l((long) d));
     });
     return a.add(b).divide(7L * mN).subtract(Binomial.binomial(7L * mN, mN).divide(6L * mN + 1));

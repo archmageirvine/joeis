@@ -3,6 +3,7 @@ package irvine.math.polynomial;
 import java.util.Map;
 
 import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.util.Pair;
 
@@ -32,7 +33,7 @@ public final class HararyMultiply implements MultivariateMonomialOperation {
             final int u = b.getKey().right();
             final Z du = b.getValue();
             if (du.signum() != 0) {
-              res.add(IntegerUtils.lcm(s, u), ds.multiply(du).multiply(IntegerUtils.gcd(s, u)));
+              res.add(IntegerUtils.lcm(s, u), ds.multiply(du).multiply(Functions.GCD.i(s, u)));
             }
           }
         }

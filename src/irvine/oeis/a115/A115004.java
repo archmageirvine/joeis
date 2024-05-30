@@ -1,6 +1,6 @@
 package irvine.oeis.a115;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -31,7 +31,7 @@ public class A115004 extends AbstractSequence {
     Z sum = Z.ZERO;
     for (int i = 1; i <= mN; ++i) {
       for (int j = 1; j <= mN; ++j) {
-        if (LongUtils.gcd(i, j) == 1) {
+        if (Functions.GCD.l(i, j) == 1) {
           sum = sum.add((long) (mN + 1 - i) * (mN + 1 - j));
         }
       }

@@ -1,6 +1,6 @@
 package irvine.oeis.a015;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -20,13 +20,13 @@ public class A015663 extends Sequence1 {
   private long count(final long n) {
     long count = 0;
     for (long a = start(); a <= n; ++a) {
-      if (LongUtils.gcd(a, n) == 1) {
+      if (Functions.GCD.l(a, n) == 1) {
         for (long b = a; b <= n; ++b) {
-          if (LongUtils.gcd(a, b) == 1 && LongUtils.gcd(b, n) == 1) {
+          if (Functions.GCD.l(a, b) == 1 && Functions.GCD.l(b, n) == 1) {
             for (long c = b; c <= n; ++c) {
-              if (LongUtils.gcd(c, b) == 1 && LongUtils.gcd(c, a) == 1 && LongUtils.gcd(c, n) == 1) {
+              if (Functions.GCD.l(c, b) == 1 && Functions.GCD.l(c, a) == 1 && Functions.GCD.l(c, n) == 1) {
                 for (long d = c; d <= n; ++d) {
-                  if (LongUtils.gcd(d, c) == 1 && LongUtils.gcd(d, b) == 1 && LongUtils.gcd(d, a) == 1 && LongUtils.gcd(d, n) == 1) {
+                  if (Functions.GCD.l(d, c) == 1 && Functions.GCD.l(d, b) == 1 && Functions.GCD.l(d, a) == 1 && Functions.GCD.l(d, n) == 1) {
                     ++count;
                   }
                 }

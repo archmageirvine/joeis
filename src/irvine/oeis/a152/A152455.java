@@ -1,7 +1,6 @@
 package irvine.oeis.a152;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
@@ -36,7 +35,7 @@ public class A152455 extends MemorySequence {
       s *= p;
     }
     // (p, q) == 1
-    assert IntegerUtils.gcd(s, t) == 1;
+    assert Functions.GCD.i(s, t) == 1;
     return s == 2 ? a(t) : a(s).add(a(t));
   }
 }

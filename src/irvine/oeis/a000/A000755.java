@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -29,7 +29,7 @@ public class A000755 extends Sequence1 {
           final int bx = b % mN;
           final int ty = ay - by;
           final int tx = ax - bx;
-          final int d = IntegerUtils.gcd(tx, ty);
+          final int d = Functions.GCD.i(tx, ty);
           final int dx = tx / d;
           final int dy = ty / d;
           mLines[a][b][0] = ax;

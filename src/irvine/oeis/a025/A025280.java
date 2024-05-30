@@ -2,7 +2,7 @@ package irvine.oeis.a025;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a005.A005245;
 
@@ -25,7 +25,7 @@ public class A025280 extends A005245 {
     int gcd = -1;
     for (final Z p : fs.toZArray()) {
       final int e = fs.getExponent(p);
-      gcd = gcd == -1 ? e : IntegerUtils.gcd(gcd, e);
+      gcd = gcd == -1 ? e : Functions.GCD.i(gcd, e);
       if (gcd <= 1) {
         break;
       }

@@ -1,7 +1,7 @@
 package irvine.oeis.a058;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
@@ -23,7 +23,7 @@ public class A058264 extends Sequence1 {
     while (mFirsts.get(mN) == 0) {
       final long p = mQ;
       mQ = mPrime.nextPrime(mQ);
-      final long d = LongUtils.gcd(p - 1, mQ - 1) / 2;
+      final long d = Functions.GCD.l(p - 1, mQ - 1) / 2;
       if (mFirsts.get(d) == 0) {
         mFirsts.set(d, p);
       }

@@ -1,6 +1,5 @@
 package irvine.oeis.a005;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
@@ -38,7 +37,7 @@ public class A005747 extends Sequence1 {
         for (int a : alpha) {
           int power = 0;
           for (int b : beta) {
-            power += IntegerUtils.gcd(a, b);
+            power += Functions.GCD.i(a, b);
           }
           prod = prod.multiply(Z.ONE.shiftLeft(power).subtract(1));
         }

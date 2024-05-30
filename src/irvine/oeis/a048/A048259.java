@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import java.util.Arrays;
 import java.util.HashSet;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 import irvine.util.Triple;
@@ -22,7 +22,7 @@ public class A048259 extends Sequence0 {
     long sy = y;
     long sz = z;
     for (long k = 2; k < mN; ++k) {
-      if (LongUtils.gcd(k, mN) == 1) {
+      if (Functions.GCD.l(k, mN) == 1) {
         final long[] abs = {(x * k) % mN, (y * k) % mN, (z * k) % mN};
         Arrays.sort(abs); // sorts ascending!
         if (abs[2] > sx || (abs[2] == sx && (abs[1] > sy || (abs[1] == sy && abs[0] > z)))) {

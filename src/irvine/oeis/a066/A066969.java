@@ -1,6 +1,5 @@
 package irvine.oeis.a066;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
@@ -19,7 +18,7 @@ public class A066969 extends Sequence1 {
   public Z next() {
     while (true) {
       if (Rationals.SINGLETON.sum(1, ++mN, k -> {
-        return new Q(Functions.PHI.l((long) k), LongUtils.gcd(mN, k));
+        return new Q(Functions.PHI.l((long) k), Functions.GCD.l(mN, (long) k));
       }).isInteger()) {
         return Z.valueOf(mN);
       }

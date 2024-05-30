@@ -2,6 +2,7 @@ package irvine.oeis.a036;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -26,7 +27,7 @@ public class A036382 extends Sequence1 {
         final long d = dd.longValue();
         if (d != 1 && d != mN) {
           final long e = mN / d;
-          if (LongUtils.gcd(d, e) == 1 && l(d) + l(e) <= lgn) {
+          if (Functions.GCD.l(d, e) == 1 && l(d) + l(e) <= lgn) {
             return Z.valueOf(mN);
           }
         }

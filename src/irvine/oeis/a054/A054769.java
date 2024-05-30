@@ -2,7 +2,7 @@ package irvine.oeis.a054;
 
 import java.util.TreeSet;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -22,7 +22,7 @@ public class A054769 extends Sequence1 {
       return;
     }
     for (long k = prev; k <= 2 * prev; ++k) {
-      if (LongUtils.gcd(k, prev) == 1) {
+      if (Functions.GCD.l(k, prev) == 1) {
         final long d = k - prev;
         if (d == k || mA.contains(d)) {
           mA.add(k);

@@ -2,7 +2,6 @@ package irvine.math;
 
 import java.math.BigInteger;
 import java.util.Arrays;
-import java.util.Random;
 
 import irvine.math.function.Functions;
 import junit.framework.TestCase;
@@ -135,24 +134,6 @@ public class LongUtilsTest extends TestCase {
     System.err.println("endian4 " + s + " took " + timer.getElapsed() + " ms");
   }
   */
-
-  public void testGcd() {
-    assertEquals(0, LongUtils.gcd(0, 0));
-    assertEquals(42, LongUtils.gcd(0, 42));
-    assertEquals(42, LongUtils.gcd(42, 0));
-    assertEquals(1, LongUtils.gcd(2, 3));
-    assertEquals(4, LongUtils.gcd(4, 8));
-    assertEquals(12, LongUtils.gcd(12 * 7, 12 * 11));
-    final Random r = new Random();
-    for (int k = 1; k < 100; ++k) {
-      final long a = r.nextLong();
-      final long b = r.nextLong();
-      assertEquals(a, LongUtils.gcd(a, a));
-      final long g = LongUtils.gcd(a, b);
-      assertEquals(0, a % g);
-      assertEquals(0, b % g);
-    }
-  }
 
   public void testLcm() {
     assertEquals(2, LongUtils.lcm(2, 2));

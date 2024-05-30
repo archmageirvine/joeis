@@ -1,6 +1,6 @@
 package irvine.oeis.a075;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
@@ -20,6 +20,6 @@ public class A075195 extends UpperLeftTriangle {
   @Override
   public Z matrixElement(final int n, final int k) {
     // A(n,k) = 1/n * Sum_{i=1..n} k^gcd(n,i).
-    return Integers.SINGLETON.sum(1, n, i -> Z.valueOf(k).pow(IntegerUtils.gcd(n, i))).divide(n);
+    return Integers.SINGLETON.sum(1, n, i -> Z.valueOf(k).pow(Functions.GCD.i(n, i))).divide(n);
   }
 }

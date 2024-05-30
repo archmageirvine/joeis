@@ -1,6 +1,6 @@
 package irvine.oeis.a020;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -20,9 +20,9 @@ public class A020889 extends Sequence1 {
       for (long a = 1; a < mN; ++a) {
         final long bc = mN + a;
         for (long b = a + 1; b <= bc / 2; ++b) {
-          if (LongUtils.gcd(a, b) == 1) {
+          if (Functions.GCD.l(a, b) == 1) {
             final long c = bc - b;
-            if (c > b && a * a + b * b == c * c && LongUtils.gcd(a, c) == 1 && LongUtils.gcd(b, c) == 1) {
+            if (c > b && a * a + b * b == c * c && Functions.GCD.l(a, c) == 1 && Functions.GCD.l(b, c) == 1) {
               ++mM;
             }
           }

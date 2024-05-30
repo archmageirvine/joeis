@@ -1,6 +1,5 @@
 package irvine.oeis.a066;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.group.IntegersModMul;
 import irvine.math.q.Q;
@@ -20,7 +19,7 @@ public class A066589 extends Sequence1 {
     final IntegersModMul ring = new IntegersModMul(++mN);
     Q sum = Q.ZERO;
     for (long k = 1; k <= mN; ++k) {
-      if (LongUtils.gcd(k, mN) == 1) {
+      if (Functions.GCD.l(k, mN) == 1) {
         sum = sum.add(new Q(Z.ONE, Functions.PHI.z(ring.order(Z.valueOf(k)))));
       }
     }

@@ -81,8 +81,8 @@ public class A068596 extends Sequence1 {
       final int nd = n / d;
       final int mobius = Functions.MOBIUS.i((long) nd);
       if (mobius != 0) {
-        final int g1 = IntegerUtils.gcd(nd, m);
-        final int g2 = IntegerUtils.gcd(nd, m2);
+        final int g1 = Functions.GCD.i(nd, m);
+        final int g2 = Functions.GCD.i(nd, m2);
         if (trace % g1 == 0 && s2 % g2 == 0) {
           final int n1 = nd / g1;
           final int n2 = nd / g2;

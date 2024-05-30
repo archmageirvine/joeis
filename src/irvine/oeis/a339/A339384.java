@@ -1,7 +1,7 @@
 package irvine.oeis.a339;
 // manually andiv 
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -24,9 +24,8 @@ public class A339384 extends AbstractSequence {
 
   @Override
   public Z next() {
-    // a(n) = A056789(n) - n * Sum_{k=1..n} (floor(k / gcd(n,k)^2)).
     ++mN;
     return mSeq1.next().subtract(Integers.SINGLETON.sum(1, mN,
-      k -> Z.valueOf(k).divide(Z.valueOf(LongUtils.gcd(mN, k)).square())).multiply(mN));
+      k -> Z.valueOf(k).divide(Z.valueOf(Functions.GCD.l(mN, k)).square())).multiply(mN));
   }
 }

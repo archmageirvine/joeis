@@ -2,7 +2,7 @@ package irvine.oeis.a039;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,7 +18,7 @@ public class A039743 extends Sequence1 {
   public Z next() {
     while (true) {
       final FactorSequence fs = Jaguar.factor(++mN);
-      if (LongUtils.gcd(fs.phi().longValueExact(), mN - 1) == fs.omega()) {
+      if (Functions.GCD.l(fs.phi(), mN - 1) == fs.omega()) {
         return Z.valueOf(mN);
       }
     }

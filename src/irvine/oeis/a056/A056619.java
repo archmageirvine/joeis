@@ -1,7 +1,6 @@
 package irvine.oeis.a056;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -30,7 +29,7 @@ public class A056619 extends Sequence1 {
     final Z n = Z.valueOf(mN);
     while (true) {
       p = mPrime.nextPrime(p);
-      if (LongUtils.gcd(mN, p) == 1 && Functions.ORDER.l(p, n) == p - 1) {
+      if (Functions.GCD.l(mN, p) == 1 && Functions.ORDER.l(p, n) == p - 1) {
         return Z.valueOf(p);
       }
     }

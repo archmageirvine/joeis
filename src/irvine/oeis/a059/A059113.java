@@ -7,7 +7,7 @@ import java.util.TreeMap;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -43,7 +43,7 @@ public class A059113 extends Sequence1 {
       if (values.size() > 1) {
         for (long u : values) {
           for (long v : values) {
-            if (LongUtils.gcd(u, v) == 1) {
+            if (Functions.GCD.l(u, v) == 1) {
               return e.getKey();
             }
             if (u == v) {

@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -34,7 +34,7 @@ public class A027413 extends Sequence1 {
       }
       long c = 0;
       for (long k = 2; k < mN; ++k) {
-        if (LongUtils.gcd(k, prod) != prod) {
+        if (Functions.GCD.l(k, prod) != prod) {
           for (final long p : pp) {
             if (p > k) {
               break;

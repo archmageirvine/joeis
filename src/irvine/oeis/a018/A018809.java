@@ -1,6 +1,6 @@
 package irvine.oeis.a018;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
@@ -17,7 +17,7 @@ public class A018809 extends MemoryFunction2Sequence<Integer, Z> {
     Z sum = Z.ZERO;
     for (int x = 1; k * x < n; ++x) {
       for (int y = 1; k * y < n; ++y) {
-        if (IntegerUtils.gcd(x, y) == 1) {
+        if (Functions.GCD.i(x, y) == 1) {
           sum = sum.add(Z.valueOf(n - (long) k * x).multiply(n - (long) k * y));
         }
       }

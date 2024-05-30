@@ -3,6 +3,7 @@ package irvine.oeis.a029;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -29,7 +30,7 @@ public class A029827 extends Sequence1 {
     boolean bpf = false;
     for (final Z dd : fs.divisors()) {
       final long d = dd.longValue();
-      if (d != 1 && d != n && LongUtils.gcd(d, n / d) == 1) {
+      if (d != 1 && d != n && Functions.GCD.l(d, n / d) == 1) {
         bpf = true;
         if (gn >= g(d) + g(n / d)) {
           return false;

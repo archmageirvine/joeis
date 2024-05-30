@@ -1,6 +1,6 @@
 package irvine.oeis.a053;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 
 /**
  * A053514 Number of 3-multigraphs with loops on n nodes.
@@ -15,7 +15,7 @@ public class A053514 extends A053468 {
     int sum = 0;
     for (int i = 1; i < v.length; ++i) {
       for (int j = 0; j < i; ++j) {
-        sum += IntegerUtils.gcd(v[i], v[j]);
+        sum += Functions.GCD.i(v[i], v[j]);
       }
     }
     for (final int j : v) {

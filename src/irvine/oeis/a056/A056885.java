@@ -2,7 +2,7 @@ package irvine.oeis.a056;
 
 import java.util.ArrayList;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
@@ -29,7 +29,7 @@ public class A056885 extends MemoryFunction2Sequence<Integer, Polynomial<Q>> {
     final int m = k.length - 1;
     int e = 0;
     for (int i = 1; i <= m; ++i) {
-      e += IntegerUtils.gcd(j, i) * k[i];
+      e += Functions.GCD.i(j, i) * k[i];
     }
     long s = 0;
     for (int i = 1; i <= Math.min(j, k.length - 1); ++i) {

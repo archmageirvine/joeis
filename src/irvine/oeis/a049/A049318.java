@@ -29,7 +29,7 @@ public class A049318 extends Sequence1 {
               continue;
             }
           } else if (b != 0) {
-            if (LongUtils.gcd(b, c) != 1) {
+            if (Functions.GCD.l(b, c) != 1) {
               continue;
             }
           } else if (c != 1) {

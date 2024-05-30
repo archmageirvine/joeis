@@ -1,7 +1,7 @@
 package irvine.oeis.a067;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -21,7 +21,7 @@ public class A067604 extends Sequence1 {
     while (true) {
       final long q = p;
       p = mPrime.nextPrime(p);
-      if (LongUtils.gcd(p + 1, q + 1) == mN) {
+      if (Functions.GCD.l(p + 1, q + 1) == mN) {
         return Z.valueOf(q);
       }
     }

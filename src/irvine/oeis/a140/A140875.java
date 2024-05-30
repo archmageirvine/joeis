@@ -1,7 +1,7 @@
 package irvine.oeis.a140;
 // manually trisumm/trisimple at 2023-06-08 11:44
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
@@ -19,7 +19,7 @@ public class A140875 extends BaseTriangle {
 
   @Override
   public Z triangleElement(final int n, final int k) {
-    return (k + 2 > n) ? Z.ONE : Z.valueOf(IntegerUtils.gcd(n, k + 2)).subtract(2L * IntegerUtils.gcd(n, k + 1)).subtract(IntegerUtils.gcd(n, k));
+    return (k + 2 > n) ? Z.ONE : Z.valueOf(Functions.GCD.i(n, k + 2)).subtract(2L * Functions.GCD.i(n, k + 1)).subtract(Functions.GCD.i(n, k));
   }
 
   @Override

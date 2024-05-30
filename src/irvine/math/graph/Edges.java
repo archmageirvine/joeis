@@ -2,8 +2,8 @@ package irvine.math.graph;
 
 import java.util.function.Function;
 
-import irvine.math.IntegerUtils;
 import irvine.math.api.Field;
+import irvine.math.function.Functions;
 
 /**
  * Defines a function used for enumerating counts of edges.
@@ -28,7 +28,7 @@ public interface Edges {
       E prod = fld.one();
       for (int i = 1; i < partition.length; ++i) {
         for (int j = 0; j < i; ++j) {
-          final int g = IntegerUtils.gcd(partition[i], partition[j]);
+          final int g = Functions.GCD.i(partition[i], partition[j]);
           prod = fld.multiply(prod, fld.pow(yf.apply(partition[i] * partition[j] / g), 2L * g));
         }
       }
@@ -46,7 +46,7 @@ public interface Edges {
       E prod = fld.one();
       for (int i = 1; i < partition.length; ++i) {
         for (int j = 0; j < i; ++j) {
-          final int g = IntegerUtils.gcd(partition[i], partition[j]);
+          final int g = Functions.GCD.i(partition[i], partition[j]);
           prod = fld.multiply(prod, yf.apply(g));
         }
       }
@@ -64,7 +64,7 @@ public interface Edges {
       E prod = fld.one();
       for (int i = 1; i < partition.length; ++i) {
         for (int j = 0; j < i; ++j) {
-          final int g = IntegerUtils.gcd(partition[i], partition[j]);
+          final int g = Functions.GCD.i(partition[i], partition[j]);
           prod = fld.multiply(prod, fld.pow(yf.apply(partition[i] * partition[j] / g), g));
         }
       }

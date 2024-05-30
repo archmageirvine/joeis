@@ -1,6 +1,5 @@
 package irvine.oeis.a046;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
@@ -23,7 +22,7 @@ public class A046144 extends Sequence1 {
     final IntegersModMul rn = new IntegersModMul(mN);
     long cnt = 0;
     for (long q = 1; q <= mN; ++q) {
-      if (LongUtils.gcd(q, mN) == 1 && rn.order(Z.valueOf(q)).equals(phi)) {
+      if (Functions.GCD.l(q, mN) == 1 && rn.order(Z.valueOf(q)).equals(phi)) {
         ++cnt;
       }
     }

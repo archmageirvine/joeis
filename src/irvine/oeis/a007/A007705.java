@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -107,7 +107,7 @@ public class A007705 extends AbstractSequence {
   @Override
   public Z next() {
     mBoardSize += 2;
-    if (IntegerUtils.gcd(mBoardSize, 6) != 1) {
+    if (Functions.GCD.i(mBoardSize, 6) != 1) {
       return Z.ZERO; // Ahrens theorem
     }
     mCount = 0;

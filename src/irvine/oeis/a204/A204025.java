@@ -1,6 +1,6 @@
 package irvine.oeis.a204;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a203.A203991;
 import irvine.oeis.triangle.UpperLeftTriangle;
@@ -16,7 +16,7 @@ public class A204025 extends A203991 {
     super(1, new UpperLeftTriangle(1, 1, -1) {
       @Override
       public Z matrixElement(final int i, final int j) {
-        return Z.valueOf(LongUtils.gcd(i, j));
+        return Functions.GCD.z(i, j);
       }
     });
   }

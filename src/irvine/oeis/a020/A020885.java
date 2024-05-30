@@ -1,7 +1,6 @@
 package irvine.oeis.a020;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -25,10 +24,10 @@ public class A020885 extends Sequence1 {
         if (a > b) {
           break;
         }
-        if (LongUtils.gcd(a, b) == 1) {
+        if (Functions.GCD.l(a, b) == 1) {
           final long c2 = a * a + b * b;
           final long s = Functions.SQRT.l(c2);
-          if (s * s == c2 && LongUtils.gcd(s, a) == 1 && LongUtils.gcd(s, b) == 1) {
+          if (s * s == c2 && Functions.GCD.l(s, a) == 1 && Functions.GCD.l(s, b) == 1) {
             ++mM;
           }
         }

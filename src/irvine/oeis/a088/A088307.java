@@ -1,6 +1,7 @@
 package irvine.oeis.a088;
 // manually tresimple at 2023-07-12
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
@@ -18,6 +19,6 @@ public class A088307 extends Triangle {
 
   @Override
   public Z compute(final int n, final int k) {
-    return (n == 0) ? Z.TWO : irvine.math.LongUtils.gcd(n + 1, k + 1) == 1 ? Z.valueOf((n + 1L) * (n + 1) + (k + 1L) * (k + 1)) : Z.ZERO;
+    return (n == 0) ? Z.TWO : Functions.GCD.l(n + 1, k + 1) == 1 ? Z.valueOf((n + 1L) * (n + 1) + (k + 1L) * (k + 1)) : Z.ZERO;
   }
 }

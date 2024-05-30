@@ -2,6 +2,7 @@ package irvine.oeis.a006;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.q.Q;
@@ -27,7 +28,7 @@ public class A006448 extends Sequence1 {
             sum = sum.add(dd.multiply(s[d]));
           }
         }
-        prod = prod.multiply(sum.pow((long) IntegerUtils.gcd(i, j) * s[i] * s[j]));
+        prod = prod.multiply(sum.pow((long) Functions.GCD.i(i, j) * s[i] * s[j]));
       }
     }
     return prod;

@@ -138,21 +138,6 @@ public final class LongUtils {
     return (f >>> 32) + (f << 32);
   }
 
-  /**
-   * Compute the greatest common denominator of two integers.
-   * @param a first integer
-   * @param b second integer
-   * @return <code>gcd(a,b)</code>
-   */
-  public static long gcd(long a, long b) {
-    while (a != 0) {
-      final long t = a;
-      a = b % a;
-      b = t;
-    }
-    return b;
-  }
-
 
   /**
    * Greatest common divisor of three integers.
@@ -162,7 +147,7 @@ public final class LongUtils {
    * @return great common divisor
    */
   public static long gcd(final long a, final long b, final long c) {
-    return gcd(a, gcd(b, c));
+    return Functions.GCD.l(a, Functions.GCD.l(b, c));
   }
 
   /**
@@ -172,7 +157,7 @@ public final class LongUtils {
    * @return <code>lcm(a,b)</code>
    */
   public static long lcm(final long a, final long b) {
-    return a == 0 ? 0 : (a / gcd(a, b)) * b;
+    return a == 0 ? 0 : (a / Functions.GCD.l(a, b)) * b;
   }
 
   /**

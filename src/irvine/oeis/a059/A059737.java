@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
@@ -76,7 +76,7 @@ public class A059737 extends Sequence0 {
       long k = state.mK;
       do {
         ++k;
-      } while (LongUtils.gcd(state.mBase, k) != 1);
+      } while (Functions.GCD.l(state.mBase, k) != 1);
       contenders.add(new State(state.mBase, k, state.mVE));
     }
   }

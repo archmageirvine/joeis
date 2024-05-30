@@ -2,7 +2,6 @@ package irvine.oeis.a057;
 
 import java.util.TreeSet;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -21,10 +20,10 @@ public class A057229 extends Sequence0 {
     while (mA.isEmpty()) {
       ++mC;
       for (long b = 1; b < mC; ++b) {
-        if (LongUtils.gcd(mC, b) == 1) {
+        if (Functions.GCD.l(mC, b) == 1) {
           final long a2 = mC * mC - b * b;
           final long a = Functions.SQRT.l(a2);
-          if (a < b && a * a == a2 && LongUtils.gcd(a, mC) == 1 && LongUtils.gcd(a, b) == 1) {
+          if (a < b && a * a == a2 && Functions.GCD.l(a, mC) == 1 && Functions.GCD.l(a, b) == 1) {
             mA.add(Z.valueOf(a).multiply(b).divide2());
           }
         }

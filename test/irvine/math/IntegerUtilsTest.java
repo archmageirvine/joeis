@@ -106,24 +106,6 @@ public class IntegerUtilsTest extends TestCase {
     }
   }
 
-  public void testGcd() {
-    assertEquals(0, IntegerUtils.gcd(0, 0));
-    assertEquals(42, IntegerUtils.gcd(0, 42));
-    assertEquals(42, IntegerUtils.gcd(42, 0));
-    assertEquals(1, IntegerUtils.gcd(2, 3));
-    assertEquals(4, IntegerUtils.gcd(4, 8));
-    assertEquals(12, IntegerUtils.gcd(12 * 7, 12 * 11));
-    final Random r = new Random();
-    for (int k = 1; k < 100; ++k) {
-      final int a = r.nextInt();
-      final int b = r.nextInt();
-      assertEquals(a, IntegerUtils.gcd(a, a));
-      final int g = IntegerUtils.gcd(a, b);
-      assertEquals(0, a % g);
-      assertEquals(0, b % g);
-    }
-  }
-
   public void testLcm() {
     assertEquals(2, IntegerUtils.lcm(2, 2));
     assertEquals(6, IntegerUtils.lcm(2, 3));

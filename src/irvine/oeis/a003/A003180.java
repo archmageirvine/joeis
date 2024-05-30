@@ -19,7 +19,7 @@ public class A003180 extends A000595 {
   private int innerSum(final int[] j, final int d) {
     int s = 0;
     for (int k = 1; k < j.length; ++k) {
-      s += IntegerUtils.gcd(k, d) * j[k];
+      s += Functions.GCD.i(k, d) * j[k];
     }
     return s;
   }

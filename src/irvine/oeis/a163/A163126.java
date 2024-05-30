@@ -1,6 +1,6 @@
 package irvine.oeis.a163;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
@@ -22,7 +22,7 @@ public class A163126 extends Sequence1 {
     final long n = mSeq.length();
     long c = 0;
     for (long k = 1, j = n - 1; k < n; ++k, --j) {
-      if (LongUtils.gcd(mSeq.get(k), j) == 1) {
+      if (Functions.GCD.l(mSeq.get(k), j) == 1) {
         ++c;
       }
     }

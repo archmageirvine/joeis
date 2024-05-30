@@ -37,7 +37,7 @@ public class A052265 extends A052107 {
     for (final Z d : v) {
       int w = 0;
       for (final int j : q) {
-        final int g = IntegerUtils.gcd(d.intValueExact(), j);
+        final int g = Functions.GCD.i(d, j);
         w += g;
       }
       u.add(Z.ONE.shiftLeft(w));

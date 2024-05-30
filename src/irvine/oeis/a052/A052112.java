@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 
 /**
  * A052112 Number of self-complementary directed 2-multigraphs on n nodes.
@@ -14,7 +14,7 @@ public class A052112 extends A052111 {
     for (int i = 1; i < v.length; ++i) {
       for (int j = 0; j < i; ++j) {
         if (((v[i] * v[j]) & 1) == 0) {
-          sum += IntegerUtils.gcd(v[i], v[j]);
+          sum += Functions.GCD.i(v[i], v[j]);
         }
       }
     }

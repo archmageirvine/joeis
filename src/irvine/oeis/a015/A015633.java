@@ -1,6 +1,6 @@
 package irvine.oeis.a015;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
@@ -20,9 +20,9 @@ public class A015633 extends Sequence2 {
   private long count(final long n) {
     long count = 0;
     for (long a = start(); a <= n; ++a) {
-      final long d = LongUtils.gcd(a, n);
+      final long d = Functions.GCD.l(a, n);
       for (long b = a; b <= n; ++b) {
-        if (LongUtils.gcd(d, b) == 1) {
+        if (Functions.GCD.l(d, b) == 1) {
             ++count;
         }
       }

@@ -1,6 +1,5 @@
 package irvine.oeis.a014;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
@@ -18,7 +17,7 @@ public class A014840 extends Sequence3 {
     ++mN;
     long sum = 0;
     for (long base = 2; base < mN; ++base) {
-      if (LongUtils.gcd(mN, base) == 1) {
+      if (Functions.GCD.l(mN, base) == 1) {
         sum += Functions.DIGIT_SUM.l(base, mN);
       }
     }

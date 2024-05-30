@@ -1,6 +1,7 @@
 package irvine.oeis.a001;
 
 import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.q.Q;
@@ -42,7 +43,7 @@ public class A001425 extends Sequence0 {
       }
     } else {
       final int lcm = IntegerUtils.lcm(i, j);
-      return sum(lcm, s).pow((long) IntegerUtils.gcd(i, j) * s[i] * s[j]);
+      return sum(lcm, s).pow((long) Functions.GCD.i(i, j) * s[i] * s[j]);
     }
   }
 

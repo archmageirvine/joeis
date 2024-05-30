@@ -3,7 +3,6 @@ package irvine.oeis.a055;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -30,9 +29,9 @@ public class A055561 extends Sequence1 {
   }
 
   private boolean is(final long n) {
-    final long p = LongUtils.gcd(n, Functions.PHI.l(n));
+    final long p = Functions.GCD.l(n, Functions.PHI.l(n));
     if (mPrime.isPrime(p)) {
-      return n % (p * p) == 0 && mPrime.isPrime(LongUtils.gcd(p + 1, n));
+      return n % (p * p) == 0 && mPrime.isPrime(Functions.GCD.l(p + 1, n));
     }
     final FactorSequence g = Jaguar.factor(p);
     if (g.omega() != 2) {

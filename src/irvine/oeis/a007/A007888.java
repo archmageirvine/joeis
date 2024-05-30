@@ -3,7 +3,6 @@ package irvine.oeis.a007;
 import java.util.ArrayList;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -60,7 +59,7 @@ public class A007888 extends Sequence1 {
     for (final Z ll : Jaguar.factor(k).divisors()) {
       final int l = ll.intValue();
       if (l != k) {
-        final int dp = d / IntegerUtils.gcd(d, l);
+        final int dp = d / Functions.GCD.i(d, l);
         final int mobius = Functions.MOBIUS.i((long) dp);
         if (mobius != 0) {
           final Q phi = new Q(Functions.PHI.l((long) (k / l)), Functions.PHI.l((long) dp));
@@ -91,7 +90,7 @@ public class A007888 extends Sequence1 {
       final int[] dk = down(Jaguar.factor(k).divisors());
       for (final int m : dk) {
         for (final int d : dk) {
-          final Polynomial<Q> beta = beta(k / m, d / IntegerUtils.gcd(d, m)).substitutePower(m);
+          final Polynomial<Q> beta = beta(k / m, d / Functions.GCD.i(d, m)).substitutePower(m);
           for (int h = 0; k * (2 * h - 2) <= mN; ++h) {
             final int pow = 2 * h - 2;
             for (int s = 0; s * m <= 3 * mN; ++s) {

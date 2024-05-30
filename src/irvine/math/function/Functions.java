@@ -163,6 +163,8 @@ public final class Functions {
   public static final Function2D HYPERSPHERE_POINTS = new HyperspherePoints();
 
   // Two argument functions
+  /** Greatest common divisor. */
+  public static final Function2 GCD = new GreatCommonDivisor();
   /** Valuation function. */
   public static final Function2 VALUATION = new Valuation();
   /** Valuation function. */

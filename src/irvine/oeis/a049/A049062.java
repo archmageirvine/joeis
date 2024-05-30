@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
@@ -23,7 +23,7 @@ public class A049062 extends A002808 {
           a = b;
           b = t;
         }
-        final int j = LongUtils.jacobi(n, 5);
+        final int j = Functions.JACOBI.i(n, 5);
         if (b == j || (j == -1 && b == n - 1)) {
           return comp;
         }

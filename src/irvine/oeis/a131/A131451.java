@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A131451 Product of the nonzero digital products of all the numbers 1 to n (a &apos;total digital-product factorial&apos; in base 10).
+ * A131451 Product of the nonzero digital products of all the numbers 1 to n (a 'total digital-product factorial' in base 10).
  * @author Georg Fischer
  */
 public class A131451 extends LambdaSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a112;
 import irvine.oeis.triangle.Inverse;
 
 /**
- * A112477 Riordan array ((1-x+sqrt(1+6x+x^2))/2, (sqrt(1+6x+x^2)-x-1)/2).
+ * A112477 Riordan array ((1-x+sqrt(1+6*x+x^2))/2, (sqrt(1+6*x+x^2)-x-1)/2).
  * @author Georg Fischer
  */
 public class A112477 extends Inverse {

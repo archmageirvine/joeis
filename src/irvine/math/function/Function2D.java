@@ -12,7 +12,7 @@ import irvine.math.z.Z;
  * The first argument can select a specific version of the function and the second
  * argument is the general parameter. A typical use case would be where the
  * first parameter is the base of the function.
- * Usually it makes sense to extend from <code>AbstractFunction2</code> rather than
+ * Usually it makes sense to extend from <code>AbstractFunction2D</code> rather than
  * directly implementing all methods of this interface.
  * @author Sean A. Irvine
  */

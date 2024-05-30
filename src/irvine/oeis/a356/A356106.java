@@ -7,7 +7,7 @@ import irvine.oeis.a022.A022839;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A356106 a(n) = A000201(A108598(n)).
+ * A356106 a(n) = A001950(A022839(n)).
  * @author Georg Fischer
  */
 public class A356106 extends SimpleTransformSequence {

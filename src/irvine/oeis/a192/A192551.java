@@ -7,7 +7,7 @@ import irvine.math.z.Stirling;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A192551 a(n) = sum(abs(stirling1(n+1,k+1))*k!^2,k=0..n)
+ * A192551 a(n) = sum(abs(stirling1(n+1,k+1))*k!^2,k=0..n).
  * @author Georg Fischer
  */
 public class A192551 extends LambdaSequence {

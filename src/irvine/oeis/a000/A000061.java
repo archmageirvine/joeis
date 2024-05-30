@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -39,12 +39,12 @@ public class A000061 extends AbstractSequence {
     Z sum = Z.ZERO;
     if ((b & 3) == 1) {
       for (long k = 1; k <= (b - 1) / 2; ++k) {
-        sum = sum.add(Z.valueOf(b - 4 * k).pow(2 * n - 1).multiply(LongUtils.jacobi(k, b)));
+        sum = sum.add(Z.valueOf(b - 4 * k).pow(2 * n - 1).multiply(Functions.JACOBI.i(k, b)));
       }
     } else {
       long k = 1;
       while (k < b) {
-        sum = sum.add(Z.valueOf(b - k).pow(2 * n - 1).multiply(LongUtils.jacobi(b, k)));
+        sum = sum.add(Z.valueOf(b - k).pow(2 * n - 1).multiply(Functions.JACOBI.i(b, k)));
         k += 2;
       }
     }
@@ -79,7 +79,7 @@ public class A000061 extends AbstractSequence {
         if (b == 1) {
           prod2 = prod2.multiply(piz.pow(2 * n).subtract(Z.ONE));
         } else {
-          prod2 = prod2.multiply(piz.pow(2 * n).subtract(LongUtils.jacobi(b, pi)));
+          prod2 = prod2.multiply(piz.pow(2 * n).subtract(Functions.JACOBI.i(b, pi)));
         }
       }
     }

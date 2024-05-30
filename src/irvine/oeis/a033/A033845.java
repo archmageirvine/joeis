@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A033845 Numbers n of the form 2^i*3^j, i and j &gt;= 1.
+ * A033845 Numbers k of the form 2^i*3^j, where i and j &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A033845 extends Sequence1 {

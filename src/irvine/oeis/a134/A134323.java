@@ -1,7 +1,8 @@
 package irvine.oeis.a134;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
@@ -11,16 +12,12 @@ import irvine.oeis.a000.A000040;
  */
 public class A134323 extends Sequence1 {
 
-  private final A000040 mSeq = new A000040();
+  private final Sequence mSeq = new A000040().skip();
   private int mN = 0;
-
-  {
-    mSeq.skip(1);
-  }
 
   @Override
   public Z next() {
     ++mN;
-    return (mN <= 1) ? Z.valueOf(mN - 2) : Z.valueOf(LongUtils.jacobi(-3, mSeq.next().intValue()));
+    return (mN <= 1) ? Z.valueOf(mN - 2) : Z.valueOf(Functions.JACOBI.i(-3, mSeq.next()));
   }
 }

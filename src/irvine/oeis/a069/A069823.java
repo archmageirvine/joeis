@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A069823 Nonprime numbers k such there is no x &lt; k such that phi(x) = phi(k).
+ * A069823 Nonprime numbers k for which there is no x &lt; k such that phi(x) = phi(k).
  * @author Sean A. Irvine
  */
 public class A069823 extends Sequence1 {

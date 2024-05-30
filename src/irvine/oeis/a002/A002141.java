@@ -2,6 +2,7 @@ package irvine.oeis.a002;
 
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
@@ -23,7 +24,7 @@ public class A002141 extends Sequence3 {
       boolean ok = true;
       for (int k = 0; k < mN; ++k) {
         q = mPrime.nextPrime(q);
-        if (LongUtils.jacobi(mNp, q) != -LongUtils.jacobi(-1, q)) {
+        if (Functions.JACOBI.i(mNp, q) != -Functions.JACOBI.i(-1, q)) {
           ok = false;
           break;
         }

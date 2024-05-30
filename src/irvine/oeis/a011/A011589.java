@@ -1,6 +1,6 @@
 package irvine.oeis.a011;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -14,6 +14,6 @@ public class A011589 extends Sequence0 {
 
   @Override
   public Z next() {
-    return Z.valueOf(LongUtils.jacobi(++mN, 37));
+    return Functions.JACOBI.z(++mN, 37);
   }
 }

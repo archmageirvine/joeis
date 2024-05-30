@@ -1,7 +1,7 @@
 package irvine.oeis.a063;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -26,7 +26,7 @@ public class A063987 extends Sequence1 {
         mP = mPrime.nextPrime(mP);
         mM = 1;
       }
-      if (LongUtils.jacobi(mM, mP) == 1) {
+      if (Functions.JACOBI.i(mM, mP) == 1) {
         return Z.valueOf(mM);
       }
     }

@@ -4,7 +4,7 @@ package irvine.oeis.a134;
 import irvine.math.z.Z;
 import irvine.oeis.a022.A022329;
 /**
- * A134583 Signature sequence of the Hausdorff dimension of the Cantor set log(2)/log(3).
+ * A134583 Duplicate of A191476.
  * @author Georg Fischer
  */
 public class A134583 extends A022329 {

@@ -1,7 +1,7 @@
 package irvine.oeis.a001;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -23,7 +23,8 @@ public class A001390 extends Sequence1 {
     final long numQR = (mP + 1) / 2;
     long g = 1;
     while (true) {
-      if (LongUtils.jacobi(++g, mP) == 1) {
+      final long m = ++g;
+      if (Functions.JACOBI.i(m, mP) == 1) {
         long c = 2; // Allow for 0 and 1
         long s = g;
         do {

@@ -1,7 +1,7 @@
 package irvine.oeis.a028;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -24,7 +24,7 @@ public class A028572 extends Sequence0 {
     Z sum = Z.ZERO;
     for (final Z d : Jaguar.factor(mN).divisors()) {
       if (d.isOdd()) {
-        sum = sum.add(LongUtils.jacobi(-2, d.longValue()));
+        sum = sum.add(Functions.JACOBI.i(-2, d));
       }
     }
     return sum.multiply2();

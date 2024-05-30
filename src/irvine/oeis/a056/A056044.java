@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a055.A055772;
 
 /**
- * A056044 Let k be largest number such that k^2 divides n! and let m be largest number such that m! divides k; a(n) = k/m!.
+ * A056044 Let k be the largest number such that k^2 divides n! and let m be the largest number such that m!^2 divides n!; a(n) = k/m!.
  * @author Sean A. Irvine
  */
 public class A056044 extends A055772 {

@@ -1,6 +1,6 @@
 package irvine.math.z;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 
 /**
  * Square root modulo.
@@ -50,7 +50,7 @@ final class ModSqrt {
     final Z q = qq.makeOdd();
     int r = (int) qq.mAuxiliary;
     // Find n such that (n|p)=-1
-    int m = LongUtils.jacobi(p.mod(3L), 3);
+    int m = Functions.JACOBI.i(p.mod(3L), 3);
     int z = 3;
     while (m != -1) {
       loop:
@@ -70,7 +70,7 @@ final class ModSqrt {
         }
         break;
       }
-      m = LongUtils.jacobi(p.mod(z), z);
+      m = Functions.JACOBI.i(p.mod(z), z);
     }
     Z y = Z.valueOf(z).modPow(q, p);
     Z b = a.modPow(q.subtract(Z.ONE).divide2(), p);

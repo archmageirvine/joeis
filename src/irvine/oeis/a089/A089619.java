@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A089619 Greatest prime factor of n^2 + (n+1)^2.
+ * A089619 a(n) = Greatest prime factor of n^2 + (n+1)^2 for n &gt;= 1.
  * @author Georg Fischer
  */
 public class A089619 extends LambdaSequence {

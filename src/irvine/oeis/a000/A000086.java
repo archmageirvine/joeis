@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -23,7 +23,7 @@ public class A000086 extends Sequence1 {
     for (final Z t : Jaguar.factor(mN).toZArray()) {
       final long h = t.longValue();
       if (h != 2) {
-        s *= 1 + LongUtils.jacobi(-3, h);
+        s *= 1 + Functions.JACOBI.i(-3, h);
       }
     }
     return Z.valueOf(s);

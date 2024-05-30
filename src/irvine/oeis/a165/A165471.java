@@ -1,6 +1,6 @@
 package irvine.oeis.a165;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -23,12 +23,11 @@ public class A165471 extends Sequence0 {
    * @param parm compute the Legendre symbol for this number
    */
   public A165471(final long parm) {
-    mN = -1;
     mParm = parm;
   }
 
   @Override
   public Z next() {
-    return Z.valueOf(LongUtils.jacobi(++mN, mParm));
+    return Functions.JACOBI.z(++mN, mParm);
   }
 }

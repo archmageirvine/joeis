@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.math.z.Z;
 
 /**
- * A134763 A000718^(-2) * A134762.
+ * A134763 a(n) = (1/2)*( (1+(-1)^n)*A134762(n/2) + 2*(1-(-1)^n) ).
  * @author Georg Fischer
  */
 public class A134763 extends A134762 {

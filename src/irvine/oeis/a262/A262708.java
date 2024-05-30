@@ -1,7 +1,7 @@
 package irvine.oeis.a262;
 // manually primen/primenp at 2022-04-05 20:54
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a060.A060822;
 
@@ -13,6 +13,6 @@ public class A262708 extends A060822 {
 
   /** Construct the sequence. */
   public A262708() {
-    super(4, (n, p) -> Z.valueOf(p).subtract(LongUtils.jacobi(p, 5)));
+    super(4, (n, p) -> Z.valueOf(p).subtract(Functions.JACOBI.i(p, 5)));
   }
 }

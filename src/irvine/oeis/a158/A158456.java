@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a022.A022328;
 
 /**
- * A158456 Signature sequence for log(3)/log(2).
+ * A158456 Duplicate of A191475.
  * @author Georg Fischer
  */
 public class A158456 extends A022328 {

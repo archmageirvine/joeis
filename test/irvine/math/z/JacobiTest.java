@@ -1,10 +1,9 @@
 package irvine.math.z;
 
-import irvine.math.LongUtils;
-
 import java.math.BigInteger;
 import java.util.Random;
 
+import irvine.math.function.Functions;
 import junit.framework.TestCase;
 
 /**
@@ -21,7 +20,7 @@ public class JacobiTest extends TestCase {
     // check correspondence with long version
     for (int i = 1; i < 500; ++i) {
       for (int j = 1; j < 500; j += 2) {
-        assertEquals("i=" + i + " j=" + j, LongUtils.jacobi(i, j), Z.valueOf(i).jacobi(Z.valueOf(j)));
+        assertEquals("i=" + i + " j=" + j, Functions.JACOBI.i(i, j), Z.valueOf(i).jacobi(Z.valueOf(j)));
       }
     }
     // check for +1, 0, -1 on random arguments

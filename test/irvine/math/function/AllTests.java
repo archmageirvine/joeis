@@ -32,6 +32,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(FactorialTest.class);
     suite.addTestSuite(FibonacciTest.class);
     suite.addTestSuite(GreatestPrimeFactorTest.class);
+    suite.addTestSuite(JacobiTest.class);
     suite.addTestSuite(LeastPrimeFactorTest.class);
     suite.addTestSuite(LeastPrimitiveRootTest.class);
     suite.addTestSuite(LookAndSayTest.class);

@@ -1,6 +1,6 @@
 package irvine.oeis.a048;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -22,7 +22,7 @@ public class A048593 extends Sequence1 {
       mA = mB;
       mB = t.add(mB);
       // System.err.println("mN=" + mN + ", mB=" + mB + ", legend=" + LongUtils.jacobi(mN, 5) + ", diff=" + mB.subtract(LongUtils.jacobi(mN, 5) % mN));
-      if (mB.subtract(LongUtils.jacobi(mN, 5)).mod(Z.valueOf(mN)).isZero() && !mB.isProbablePrime()) {
+      if (mB.subtract(Functions.JACOBI.i(mN, 5)).mod(Z.valueOf(mN)).isZero() && !mB.isProbablePrime()) {
         return mB;
       }
     }

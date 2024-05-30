@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A054399 Decimal expansion of the constant Product_{i=1..inf} (1-3/(2*(i+1)))^(1/2^i).
+ * A054399 Decimal expansion of the constant Product_{i=1..infinity} (1-3/(2*(i+1)))^(1/2^i).
  * @author Sean A. Irvine
  */
 public class A054399 extends DecimalExpansionSequence {

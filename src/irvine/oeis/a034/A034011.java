@@ -25,7 +25,7 @@ public class A034011 extends Sequence1 {
   }
 
   private boolean isSquare(final long a, final long mod) {
-    return LongUtils.jacobi(a, mod) == 1;
+    return Functions.JACOBI.i(a, mod) == 1;
   }
 
   private boolean isEvenOrder(final long l, final long p) {

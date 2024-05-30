@@ -129,6 +129,8 @@ public final class Functions {
   public static final Function2D ORDER = new MultiplicativeOrder();
   /** Reverse the digits of a number. */
   public static final Function2D REVERSE = new Reverse(); // =A004086(10, = A305989(2,
+  /** Reverse the digits of a number and add the original number. */
+  public static final Function2D REVERSE_AND_ADD = new ReverseAndAdd();
   /** Number of digits in a number. */
   public static final Function2D DIGIT_LENGTH = new DigitLength(); // =A055642(10, =A070939(2,
   /** Sum of digits in a number. */

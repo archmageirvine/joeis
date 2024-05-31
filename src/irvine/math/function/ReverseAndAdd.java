@@ -14,12 +14,12 @@ class ReverseAndAdd extends AbstractFunction2D {
   }
 
   @Override
-  public Z z(final long base, Z n) {
+  public Z z(final long base, final Z n) {
     return Functions.REVERSE.z(base, n).add(n);
   }
 
   @Override
-  public long l(final long base, long n) {
+  public long l(final long base, final long n) {
     return Functions.REVERSE.l(base, n) + n;
   }
 }

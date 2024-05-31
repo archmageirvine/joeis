@@ -479,4 +479,22 @@ public class Q implements Comparable<Q>, Serializable {
   public Q min(final Q other) {
     return num().multiply(other.den()).compareTo(other.num().multiply(den())) <= 0 ? this : other;
   }
+
+  /**
+   * Return a rational number with the same value as the specified long.
+   * @param val a long value
+   * @return a rational number with the value <code>val</code>
+   */
+  public static Q valueOf(final long val) {
+    return new Q(val);
+  }
+
+  /**
+   * Return a rational number with the same value as the specified integer.
+   * @param val an integer.
+   * @return a rational number with the value <code>val</code>
+   */
+  public static Q valueOf(final Z val) {
+    return new Q(val);
+  }
 }

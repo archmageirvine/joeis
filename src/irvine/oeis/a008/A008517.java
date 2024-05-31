@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.math.z.Eulerian2;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A008517 extends Sequence1 {
       ++mN;
       mM = 0;
     }
-    return Eulerian2.SINGLETON.get(mN, mM);
+    return Functions.EULERIAN2.z(mN, mM);
   }
 }
 

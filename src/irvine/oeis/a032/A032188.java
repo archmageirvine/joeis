@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.math.z.Eulerian2;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,7 @@ public class A032188 extends Sequence1 {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 0; k <= mN; ++k) {
-      sum = sum.add(Eulerian2.SINGLETON.get((long) mN, (long) k).shiftLeft(k));
+      sum = sum.add(Functions.EULERIAN2.z(mN, k).shiftLeft(k));
     }
     return sum;
   }

@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.math.z.Eulerian2;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
@@ -14,7 +14,7 @@ public class A006260 extends Sequence3 {
 
   @Override
   public Z next() {
-    return Eulerian2.SINGLETON.get(++mN, 3L);
+    return Functions.EULERIAN2.z(++mN, 3L);
   }
 }
 

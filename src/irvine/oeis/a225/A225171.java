@@ -2,7 +2,7 @@ package irvine.oeis.a225;
 
 import java.util.ArrayList;
 
-import irvine.math.z.Eulerian2;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.transform.BellMatrixTransformSequence;
@@ -37,7 +37,7 @@ public class A225171 extends AbstractSequence {
     }
     Z sum = Z.ZERO;
     for (int k = 0; k < n; ++k) {
-      sum = sum.add(Eulerian2.SINGLETON.get((long) n, (long) k).shiftLeft(2L * n - k));
+      sum = sum.add(Functions.EULERIAN2.z(n, k).shiftLeft(2L * n - k));
     }
     return sum;
   }

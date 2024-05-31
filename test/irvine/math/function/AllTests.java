@@ -29,6 +29,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(DigitSumSquaresTest.class);
     suite.addTestSuite(DigitSumTest.class);
     suite.addTestSuite(DistinctDigitCountTest.class);
+    suite.addTestSuite(Eulerian2Test.class);
     suite.addTestSuite(FactorialTest.class);
     suite.addTestSuite(FibonacciTest.class);
     suite.addTestSuite(GreatestCommonDivisorTest.class);

@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.math.z.Eulerian2;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -17,7 +17,7 @@ public class A007347 extends Sequence0 {
     ++mN;
     Z max = Z.ONE;
     for (long m = 1; m < mN; ++m) {
-      max = max.max(Eulerian2.SINGLETON.get(mN, m));
+      max = max.max(Functions.EULERIAN2.z(mN, m));
     }
     return max;
   }

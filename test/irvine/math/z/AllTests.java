@@ -20,7 +20,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(DivTest.class);
     suite.addTestSuite(Div2Test.class);
     suite.addTestSuite(EuclidTest.class);
-    suite.addTestSuite(Eulerian2Test.class);
     suite.addTestSuite(ExtendedEuclidTest.class);
     suite.addTestSuite(GcdTest.class);
     suite.addTestSuite(IntegersTest.class);

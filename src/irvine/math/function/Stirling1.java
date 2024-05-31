@@ -5,7 +5,7 @@ import java.util.HashMap;
 import irvine.math.z.Z;
 
 /**
- * Stirling function of the first kind.
+ * Stirling numbers of the first kind.
  * @author Sean A. Irvine
  */
 class Stirling1 extends AbstractFunction2 {

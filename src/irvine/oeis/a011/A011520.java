@@ -1,6 +1,6 @@
 package irvine.oeis.a011;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
@@ -13,7 +13,7 @@ public class A011520 extends FiniteSequence {
   private static Z[] buildRow(final int row) {
     final Z[] res = new Z[row];
     for (int k = 0; k < row; ++k) {
-      res[k] = Stirling.firstKind(row, k + 1);
+      res[k] = Functions.STIRLING1.z(row, k + 1);
     }
     return res;
   }

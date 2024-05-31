@@ -2,7 +2,6 @@ package irvine.oeis.a285;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.a304.A304972;
 import irvine.oeis.memory.MemoryFunction2Sequence;
@@ -39,7 +38,7 @@ public class A285037 extends MemoryFunction2Sequence<Integer, Z> {
       final int d = dd.intValue();
       final int m = Functions.MOBIUS.i((long) d);
       if (m != 0) {
-        Z s = Stirling.secondKind((n / d + 1) / 2, k).add(Stirling.secondKind(n / d / 2 + 1, k));
+        Z s = Functions.STIRLING2.z((n / d + 1) / 2, (long) k).add(Functions.STIRLING2.z(n / d / 2 + 1, (long) k));
         if (((n - d) & 1) == 1) {
           s = s.add(mAch.get((n / d + 1) / 2, k).add(mAch.get(n / d / 2 + 1, k)));
         }

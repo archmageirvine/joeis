@@ -4,7 +4,6 @@ package irvine.oeis.a240;
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
@@ -18,7 +17,7 @@ public class A240956 extends LambdaSequence {
   /** Construct the sequence. */
   public A240956() {
     super(0, n -> Integers.SINGLETON.sum(0, n / 2, k -> {
-      return Functions.FACTORIAL.z(n - k).multiply(Stirling.secondKind(n, n - k)).multiply(Binomial.binomial(n - k, k)).multiply(Z.ONE.shiftLeft(n - 2L * k));
+      return Functions.FACTORIAL.z(n - k).multiply(Functions.STIRLING2.z((long) n, n - k)).multiply(Binomial.binomial(n - k, k)).multiply(Z.ONE.shiftLeft(n - 2L * k));
     }));
   }
 }

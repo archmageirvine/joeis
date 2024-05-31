@@ -1,8 +1,8 @@
 package irvine.oeis.a340;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
@@ -20,6 +20,6 @@ public class A340264 extends BaseTriangle {
   @Override
   public Z triangleElement(final int n, final int k) {
     return Integers.SINGLETON.sum(0, k, j -> Binomial.binomial(n, k - j)
-      .multiply(Stirling.secondKind(n - k + j, j)));
+      .multiply(Functions.STIRLING2.z(n - k + j, (long) j)));
   }
 }

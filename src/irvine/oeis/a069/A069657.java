@@ -1,6 +1,6 @@
 package irvine.oeis.a069;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
@@ -20,7 +20,7 @@ public class A069657 extends Sequence0 {
     Z sum = Z.ZERO;
     final Sequence motzkin = new A001006();
     for (long k = 1; k <= mN; ++k) {
-      sum = sum.add(Stirling.secondKind(mN, k).multiply(motzkin.next()));
+      sum = sum.add(Functions.STIRLING2.z(mN, k).multiply(motzkin.next()));
     }
     return sum;
   }

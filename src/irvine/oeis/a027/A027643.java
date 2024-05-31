@@ -1,7 +1,7 @@
 package irvine.oeis.a027;
 
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -30,7 +30,7 @@ public class A027643 extends Sequence0 {
       if (k > 1) {
         f = f.multiply(k);
       }
-      sum = sum.signedAdd((k & 1) == 0, new Q(Stirling.secondKind(mN, k).multiply(f), Z.valueOf(k + 1).pow(power())));
+      sum = sum.signedAdd((k & 1) == 0, new Q(Functions.STIRLING2.z(mN, k).multiply(f), Z.valueOf(k + 1).pow(power())));
     }
     if ((mN & 1) == 1) {
       sum = sum.negate();

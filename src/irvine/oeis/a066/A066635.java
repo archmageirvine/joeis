@@ -14,8 +14,7 @@ public class A066635 extends Sequence1 {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    final long s = Functions.SQRT.l(n);
+    final long s = Functions.SQRT.l(++mN);
     if (s * s == mN) {
       return Z.valueOf(mN - (s - 1) * (s - 1));
     }

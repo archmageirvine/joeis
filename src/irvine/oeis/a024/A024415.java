@@ -1,6 +1,6 @@
 package irvine.oeis.a024;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -19,7 +19,7 @@ public class A024415 extends A024412 {
     }
     Z max = Z.ONE;
     for (long k = 2; k <= mN; ++k) {
-      max = max.max(Stirling.secondKind(mN + 1, k));
+      max = max.max(Functions.STIRLING2.z(mN + 1, k));
     }
     Z t;
     do {

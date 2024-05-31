@@ -3,7 +3,6 @@ package irvine.oeis.a288;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -23,6 +22,6 @@ public class A288312 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Stirling.secondKind(2L * mN, mN).multiply(Functions.FACTORIAL.z(mN)).multiply(Binomial.binomial(2L * mN, mN));
+    return Functions.STIRLING2.z(2L * mN, mN).multiply(Functions.FACTORIAL.z(mN)).multiply(Binomial.binomial(2L * mN, mN));
   }
 }

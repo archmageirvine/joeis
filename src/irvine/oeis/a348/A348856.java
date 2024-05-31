@@ -1,8 +1,8 @@
 package irvine.oeis.a348;
 
 
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,6 +17,6 @@ public class A348856 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> Stirling.secondKind(mN, d).mod(Z.TWO));
+    return Integers.SINGLETON.sumdiv(mN, d -> Functions.STIRLING2.z(mN, (long) d).mod(Z.TWO));
   }
 }

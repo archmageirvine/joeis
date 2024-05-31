@@ -1,8 +1,8 @@
 package irvine.oeis.a059;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -22,6 +22,6 @@ public class A059584 extends Sequence0 {
       mM = 0;
     }
     final Z n = Z.valueOf(mN);
-    return Integers.SINGLETON.sum(0, mM, k -> Stirling.firstKind(mM, k).multiply(Binomial.binomial(Z.ONE.shiftLeft(k).add(mN - 1), n)));
+    return Integers.SINGLETON.sum(0, mM, k -> Functions.STIRLING1.z(mM, (long) k).multiply(Binomial.binomial(Z.ONE.shiftLeft(k).add(mN - 1), n)));
   }
 }

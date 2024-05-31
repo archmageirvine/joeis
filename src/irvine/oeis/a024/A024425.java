@@ -1,7 +1,7 @@
 package irvine.oeis.a024;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A024425 extends Sequence1 {
     Z maxS = Z.ZERO;
     Z maxC = Z.ZERO;
     for (int k = 1; k <= mN; ++k) {
-      maxS = maxS.max(Stirling.secondKind(mN, k));
+      maxS = maxS.max(Functions.STIRLING2.z(mN, k));
       maxC = maxC.max(Binomial.binomial(mN - 1, k - 1));
     }
     return maxS.divide(maxC);

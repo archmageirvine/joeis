@@ -1,6 +1,6 @@
 package irvine.oeis.a050;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.a000.A000045;
@@ -34,7 +34,7 @@ public class A050946 extends AbstractSequence {
     Z sum = Z.ZERO;
     Z f = Z.ONE;
     for (int k = 1; k <= mN; ++k, f = f.multiply(k)) {
-      sum = sum.signedAdd(((mN - k) & 1) == 0, Stirling.secondKind(mN, k).multiply(f).multiply(mFibo.a(k)));
+      sum = sum.signedAdd(((mN - k) & 1) == 0, Functions.STIRLING2.z(mN, k).multiply(f).multiply(mFibo.a(k)));
     }
     return sum;
   }

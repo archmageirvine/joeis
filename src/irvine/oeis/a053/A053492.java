@@ -1,7 +1,7 @@
 package irvine.oeis.a053;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -35,7 +35,7 @@ public class A053492 extends AbstractSequence {
     Z f = Z.ONE;
     for (int k = 1; k < mN; ++k) {
       f = f.multiply(k);
-      s = s.add(f.multiply(Stirling.secondKind(mN - 1, k)).multiply(Binomial.binomial(mN + k - 1, mN - 1)));
+      s = s.add(f.multiply(Functions.STIRLING2.z(mN - 1, k)).multiply(Binomial.binomial(mN + k - 1, mN - 1)));
     }
     return s;
   }

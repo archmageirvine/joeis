@@ -1,7 +1,7 @@
 package irvine.oeis.a346;
 
 import irvine.math.MemoryFunction2;
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000009;
 import irvine.oeis.memory.MemorySequence;
@@ -57,7 +57,7 @@ public class A346520 extends UpperLeftTriangle {
   public Z matrixElement(final int n, final int k) {
     Z sum = Z.ZERO;
     for (int j = 0; j <= k; ++j) {
-      sum = sum.add(Stirling.secondKind(k, j).multiply(mB.get(n, j)));
+      sum = sum.add(Functions.STIRLING2.z(k, j).multiply(mB.get(n, j)));
     }
     return sum;
   }

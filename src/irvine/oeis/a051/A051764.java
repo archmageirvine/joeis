@@ -16,8 +16,7 @@ public class A051764 extends Sequence1 {
   @Override
   public Z next() {
     long cnt = 0;
-    final long n = ++mN;
-    final long s = Functions.SQRT.l(n);
+    final long s = Functions.SQRT.l(++mN);
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       final long d = dd.longValue();
       if (d > s && Functions.GCD.l(d, 1 + mN / d) == 1) {

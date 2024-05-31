@@ -2,7 +2,7 @@ package irvine.oeis.a024;
 
 import java.util.TreeSet;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -29,7 +29,7 @@ public class A024412 extends Sequence1 {
       // (the smallest is 1 and we ignore that)
       mLimit = Z.valueOf(++mN).multiply(mN + 1).divide2();
       for (long k = 2; k <= mN; ++k) {
-        mA.add(Stirling.secondKind(mN + 1, k));
+        mA.add(Functions.STIRLING2.z(mN + 1, k));
       }
     }
     return res;

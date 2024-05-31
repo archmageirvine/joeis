@@ -2,7 +2,7 @@ package irvine.oeis.a020;
 
 import java.util.ArrayList;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a014.A014505;
 
@@ -20,7 +20,7 @@ public class A020564 extends A014505 {
     mA.add(super.next());
     Z sum = Z.ZERO;
     for (int k = 0; k <= n; ++k) {
-      sum = sum.signedAdd(((n - k) & 1) == 0, mA.get(k).multiply(Stirling.firstKind(n, k)));
+      sum = sum.signedAdd(((n - k) & 1) == 0, mA.get(k).multiply(Functions.STIRLING1.z(n, k)));
     }
     return sum;
   }

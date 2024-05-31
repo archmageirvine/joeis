@@ -1,9 +1,9 @@
 package irvine.oeis.a055;
 
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -36,7 +36,7 @@ public class A055105 extends AbstractSequence {
     for (int i = 1; i <= n; ++i) {
       c[i] = Z.ZERO;
       for (int j = 1; j <= k; ++j) {
-        c[i] = c[i].add(Stirling.secondKind(i, j));
+        c[i] = c[i].add(Functions.STIRLING2.z(i, j));
       }
     }
     return Polynomial.create(c);

@@ -1,7 +1,7 @@
 package irvine.oeis.a067;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -20,6 +20,6 @@ public class A067176 extends Sequence0 {
       ++mN;
       mM = 1;
     }
-    return Integers.SINGLETON.sum(1, mN - mM, k -> Z.valueOf(mM).pow(k - 1).multiply(k).multiply(Stirling.firstKind(mN - mM, k).abs()));
+    return Integers.SINGLETON.sum(1, mN - mM, k -> Z.valueOf(mM).pow(k - 1).multiply(k).multiply(Functions.STIRLING1.z(mN - mM, (long) k).abs()));
   }
 }

@@ -4,7 +4,6 @@ package irvine.oeis.a356;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
@@ -18,7 +17,7 @@ public class A356892 extends LambdaSequence {
   public A356892() {
     super(0, n -> {
       return Rationals.SINGLETON.sum(0, n / 4, k -> {
-        return new Q(Z.valueOf(n - 2 * k + 1)).pow(k - 1).multiply(Stirling.secondKind(n - 3 * k, k)).divide(Functions.FACTORIAL.z(n - 3 * k));
+        return new Q(Z.valueOf(n - 2 * k + 1)).pow(k - 1).multiply(Functions.STIRLING2.z(n - 3 * k, (long) k)).divide(Functions.FACTORIAL.z(n - 3 * k));
       }).multiply(Functions.FACTORIAL.z(n)).num();
     });
   }

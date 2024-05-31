@@ -1,7 +1,7 @@
 package irvine.oeis.a321;
 // manually trecpas
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
@@ -18,6 +18,6 @@ public class A321331 extends Triangle {
 
   @Override
   protected Z compute(final int n, final int k) {
-    return k == 0 ? Z.ONE : Stirling.secondKind(n + 1, k + 1).multiply(k + 1);
+    return k == 0 ? Z.ONE : Functions.STIRLING2.z(n + 1, k + 1).multiply(k + 1);
   }
 }

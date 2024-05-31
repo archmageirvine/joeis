@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,7 @@ public class A007833 extends Sequence1 {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 1; k <= mN; ++k) {
-      sum = sum.add(Stirling.firstKind(mN, k).shiftLeft((long) (k - 1) * (k - 2) / 2));
+      sum = sum.add(Functions.STIRLING1.z(mN, k).shiftLeft((long) (k - 1) * (k - 2) / 2));
     }
     return sum;
   }

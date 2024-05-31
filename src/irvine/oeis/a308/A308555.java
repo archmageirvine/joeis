@@ -3,7 +3,6 @@ package irvine.oeis.a308;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Integers;
-import irvine.math.z.Stirling;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
@@ -14,6 +13,6 @@ public class A308555 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A308555() {
-    super(1, (self, n) -> Integers.SINGLETON.sum(1, n, k -> Stirling.secondKind(n, k).multiply(Functions.SIGMA1.z(k))), "1");
+    super(1, (self, n) -> Integers.SINGLETON.sum(1, n, k -> Functions.STIRLING2.z((long) n, (long) k).multiply(Functions.SIGMA1.z(k))), "1");
   }
 }

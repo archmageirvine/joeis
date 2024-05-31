@@ -1,8 +1,8 @@
 package irvine.oeis.a273;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -37,6 +37,6 @@ public class A273652 extends AbstractSequence {
   public Z next() {
     ++mN;
     return Binomial.binomial(mN, mParm).multiply(Integers.SINGLETON.sum(0, mParm,
-      j -> Stirling.secondKind(mParm, j).multiply(j == 0 && mN - mParm == 0 ? Z.ONE : Z.valueOf(j).pow(mN - mParm))));
+      j -> Functions.STIRLING2.z(mParm, (long) j).multiply(j == 0 && mN - mParm == 0 ? Z.ONE : Z.valueOf(j).pow(mN - mParm))));
   }
 }

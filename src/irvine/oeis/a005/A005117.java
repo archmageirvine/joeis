@@ -15,8 +15,7 @@ public class A005117 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      if (Predicates.SQUARE_FREE.is(n)) {
+      if (Predicates.SQUARE_FREE.is(++mN)) {
         return Z.valueOf(mN);
       }
     }

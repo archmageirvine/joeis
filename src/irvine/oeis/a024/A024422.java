@@ -1,8 +1,8 @@
 package irvine.oeis.a024;
 
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A024422 extends Sequence1 {
     ++mN;
     Q sum = Q.ZERO;
     for (int k = 1; k <= mN; ++k) {
-      sum = sum.add(new Q(Stirling.secondKind(mN, k), Binomial.binomial(mN - 1, k - 1)));
+      sum = sum.add(new Q(Functions.STIRLING2.z(mN, k), Binomial.binomial(mN - 1, k - 1)));
     }
     return sum.toZ();
   }

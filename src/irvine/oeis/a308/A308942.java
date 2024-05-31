@@ -18,7 +18,7 @@ public class A308942 extends Sequence0 {
     ++mN;
     Z prod = Z.ONE;
     for (int k = 1; k <= mN; ++k) {
-      prod = prod.multiply(irvine.math.z.Stirling.secondKind(mN, k).multiply(Functions.FACTORIAL.z(k)));
+      prod = prod.multiply(Functions.STIRLING2.z(mN, k).multiply(Functions.FACTORIAL.z(k)));
     }
     return prod;
   }

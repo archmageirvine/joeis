@@ -5,7 +5,6 @@ import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Binomial;
-import irvine.math.z.Stirling;
 import irvine.oeis.LambdaSequence;
 
 /**
@@ -18,7 +17,7 @@ public class A371157 extends LambdaSequence {
   public A371157() {
     super(0, n -> Rationals.SINGLETON.sum(0, n, j -> {
       return Rationals.SINGLETON.sum(0, j / 2, k -> {
-        return new Q(Binomial.binomial(j - k, n - j - k).multiply(Stirling.firstKind(j - k, k).abs()), Functions.FACTORIAL.z(j - k));
+        return new Q(Binomial.binomial(j - k, n - j - k).multiply(Functions.STIRLING1.z(j - k, (long) k).abs()), Functions.FACTORIAL.z(j - k));
       }).multiply(Functions.FACTORIAL.z(n));
     }).num());
   }

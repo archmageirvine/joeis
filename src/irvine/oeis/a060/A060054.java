@@ -1,7 +1,7 @@
 package irvine.oeis.a060;
 
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -31,7 +31,7 @@ public class A060054 extends AbstractSequence {
       if (k > 1) {
         kf = kf.multiply(k);
       }
-      final Q t = new Q(kf.multiply(Stirling.secondKind(mN, k)), Z.ONE.shiftLeft(k + 1));
+      final Q t = new Q(kf.multiply(Functions.STIRLING2.z(mN, k)), Z.ONE.shiftLeft(k + 1));
       sum = sum.signedAdd((k & 1) == 1, t);
     }
     return select(sum.divide(Z.ONE.shiftLeft(mN + 1).subtract(1)));

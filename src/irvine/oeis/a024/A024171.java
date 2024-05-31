@@ -1,6 +1,6 @@
 package irvine.oeis.a024;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000217;
 
@@ -24,6 +24,6 @@ public class A024171 extends A000217 {
       super.next();
       return Z.ZERO;
     }
-    return Stirling.firstKind(mN + 1, mN - 3).divide(super.next());
+    return Functions.STIRLING1.z(mN + 1, mN - 3).divide(super.next());
   }
 }

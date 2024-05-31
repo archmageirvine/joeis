@@ -1,7 +1,7 @@
 package irvine.oeis.a057;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
@@ -20,6 +20,6 @@ public class A057964 extends Sequence3 {
       ++mN;
       mM = 3;
     }
-    return Binomial.binomial(mN, mM).multiply(Stirling.secondKind(mM, 3)).shiftLeft(2L * (mN - mM));
+    return Binomial.binomial(mN, mM).multiply(Functions.STIRLING2.z(mM, 3)).shiftLeft(2L * (mN - mM));
   }
 }

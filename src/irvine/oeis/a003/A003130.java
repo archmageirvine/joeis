@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
@@ -38,7 +38,7 @@ public class A003130 extends Sequence2 {
     ++mN;
     Z s = Z.ZERO;
     for (long k = 1; k <= mN; ++k) {
-      s = s.add(u(k).multiply(Stirling.secondKind(mN, k)));
+      s = s.add(u(k).multiply(Functions.STIRLING2.z(mN, k)));
     }
     return s.add(mD.next()).add(mT.next().multiply2());
   }

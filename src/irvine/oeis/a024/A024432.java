@@ -2,7 +2,7 @@ package irvine.oeis.a024;
 
 import java.util.Arrays;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A024432 extends Sequence1 {
     ++mN;
     final Z[] s2 = new Z[mN];
     for (int k = 1; k <= mN; ++k) {
-      s2[k - 1] = Stirling.secondKind(mN, k);
+      s2[k - 1] = Functions.STIRLING2.z(mN, k);
     }
     Arrays.sort(s2);
     Z sum = Z.ZERO;

@@ -1,7 +1,7 @@
 package irvine.oeis.a046;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -21,7 +21,7 @@ public class A046165 extends Sequence0 {
     Z sum = Z.ZERO;
     for (int k = 1; k <= mN; ++k) {
       for (int j = k; j <= mN; ++j) {
-        sum = sum.add(Binomial.binomial(mN, j).multiply(Stirling.secondKind(j, k)).multiply(Z.ONE.shiftLeft(k).subtract(k + 1).pow(mN - j)));
+        sum = sum.add(Binomial.binomial(mN, j).multiply(Functions.STIRLING2.z(j, k)).multiply(Z.ONE.shiftLeft(k).subtract(k + 1).pow(mN - j)));
       }
     }
     return sum;

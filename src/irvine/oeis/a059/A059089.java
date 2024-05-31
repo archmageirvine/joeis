@@ -3,7 +3,6 @@ package irvine.oeis.a059;
 import irvine.math.cr.CR;
 import irvine.math.function.Functions;
 import irvine.math.z.Integers;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -19,7 +18,7 @@ public class A059089 extends Sequence0 {
   public Z next() {
     return Integers.SINGLETON.sum(1, ++mN + 1,
         k -> {
-          return Stirling.firstKind(mN + 1, k).multiply(CR.E.multiply(Functions.FACTORIAL.z(1 << (k - 1))).floor());
+          return Functions.STIRLING1.z(mN + 1, (long) k).multiply(CR.E.multiply(Functions.FACTORIAL.z(1 << (k - 1))).floor());
         })
       .divide(Functions.FACTORIAL.z(mN));
   }

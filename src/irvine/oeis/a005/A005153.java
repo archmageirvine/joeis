@@ -15,8 +15,7 @@ public class A005153 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      if (Predicates.PRACTICAL.is(n)) {
+      if (Predicates.PRACTICAL.is(++mN)) {
         return Z.valueOf(mN);
       }
     }

@@ -1,7 +1,7 @@
 package irvine.oeis.a057;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -26,6 +26,6 @@ public class A057965 extends AbstractSequence {
       ++mN;
       mM = 4;
     }
-    return Binomial.binomial(mN, mM).multiply(Stirling.secondKind(mM, 4)).multiply(Z11.pow(mN - mM));
+    return Binomial.binomial(mN, mM).multiply(Functions.STIRLING2.z(mM, 4)).multiply(Z11.pow(mN - mM));
   }
 }

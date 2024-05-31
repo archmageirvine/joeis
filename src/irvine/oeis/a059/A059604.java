@@ -4,7 +4,6 @@ import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -29,7 +28,7 @@ public class A059604 extends Sequence1 {
         if (k > 1) {
           prod = RING.multiply(prod, Polynomial.create(k - 1, 1));
         }
-        final Polynomial<Z> t = RING.multiply(prod, Stirling.secondKind(mN, k).multiply(Functions.FACTORIAL.z(mN - 1)).divide(Functions.FACTORIAL.z(Math.max(k - 1, 0))));
+        final Polynomial<Z> t = RING.multiply(prod, Functions.STIRLING2.z(mN, k).multiply(Functions.FACTORIAL.z(mN - 1)).divide(Functions.FACTORIAL.z(Math.max(k - 1, 0))));
         sum = RING.add(sum, t);
       }
       mGf = sum;

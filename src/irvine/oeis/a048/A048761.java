@@ -14,8 +14,7 @@ public class A048761 extends Sequence0 {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    final long s = Functions.SQRT.l(n);
+    final long s = Functions.SQRT.l(++mN);
     return s * s == mN ? Z.valueOf(s * s) : Z.valueOf((s + 1) * (s + 1));
   }
 }

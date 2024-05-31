@@ -4,7 +4,6 @@ package irvine.oeis.a305;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Integers;
-import irvine.math.z.Stirling;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
@@ -15,6 +14,6 @@ public class A305541 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A305541() {
-    super(1, 1, 1, (n, k) -> new Q(Integers.SINGLETON.sumdiv(n, d -> Stirling.secondKind(n / d, k).multiply(Functions.PHI.z(d))), 2 * n).subtract(new Q(Stirling.secondKind((n + 1) / 2, k).add(Stirling.secondKind(n / 2 + 1, k)), 4)).multiply(Functions.FACTORIAL.z(k)).num());
+    super(1, 1, 1, (n, k) -> new Q(Integers.SINGLETON.sumdiv(n, d -> Functions.STIRLING2.z(n / d, k).multiply(Functions.PHI.z(d))), 2L * n).subtract(new Q(Functions.STIRLING2.z((n + 1) / 2, k).add(Functions.STIRLING2.z(n / 2 + 1, k)), 4)).multiply(Functions.FACTORIAL.z(k)).num());
   }
 }

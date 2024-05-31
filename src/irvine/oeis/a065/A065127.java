@@ -17,8 +17,7 @@ public class A065127 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      if (!Predicates.SQUARE.is(n)) {
+      if (!Predicates.SQUARE.is(++mN)) {
         final FactorSequence fs = Jaguar.factor(mN);
         if (fs.bigOmega() == 2L * fs.omega()) {
           return Z.valueOf(mN);

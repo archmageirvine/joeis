@@ -14,7 +14,6 @@ public class A007424 extends Sequence1 {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    return Predicates.SQUARE_FREE.is(n) ? Z.ONE : Z.TWO;
+    return Predicates.SQUARE_FREE.is(++mN) ? Z.ONE : Z.TWO;
   }
 }

@@ -1,7 +1,7 @@
 package irvine.oeis.a007;
 
 import irvine.factor.prime.Fast;
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -21,7 +21,7 @@ public class A007190 extends Sequence1 {
     Z p = Z.ONE;
     for (long k = 1; k <= mN; ++k) {
       p = mPrime.nextPrime(p);
-      prod = prod.multiply(p.pow(Stirling.secondKind(mN, k)));
+      prod = prod.multiply(p.pow(Functions.STIRLING2.z(mN, k)));
     }
     return prod;
   }

@@ -1,7 +1,7 @@
 package irvine.oeis.a059;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -15,6 +15,6 @@ public class A059201 extends Sequence0 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sum(0, ++mN, k -> Stirling.firstKind(mN, k).shiftLeft((1L << (k - 1)) - 1));
+    return Integers.SINGLETON.sum(0, ++mN, k -> Functions.STIRLING1.z(mN, (long) k).shiftLeft((1L << (k - 1)) - 1));
   }
 }

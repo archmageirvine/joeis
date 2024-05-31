@@ -2,7 +2,7 @@ package irvine.oeis.transform;
 
 import java.util.List;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
@@ -28,7 +28,7 @@ public class StirlingBernoulliTransform extends Sequence0 {
       if (k > 1) {
         fk = fk.multiply(k);
       }
-      sum = sum.signedAdd((k & 1) == 0, fk.multiply(Stirling.secondKind(n + 1, k + 1)).multiply(seq.get(k)));
+      sum = sum.signedAdd((k & 1) == 0, fk.multiply(Functions.STIRLING2.z(n + 1, k + 1)).multiply(seq.get(k)));
     }
     return sum;
   }
@@ -59,7 +59,7 @@ public class StirlingBernoulliTransform extends Sequence0 {
       if (k > 1) {
         fk = fk.multiply(k);
       }
-      sum = sum.signedAdd((k & 1) == 0, fk.multiply(Stirling.secondKind(mN + 1, k + 1)).multiply(mSeq.a(k)));
+      sum = sum.signedAdd((k & 1) == 0, fk.multiply(Functions.STIRLING2.z(mN + 1, k + 1)).multiply(mSeq.a(k)));
     }
     return sum;
   }

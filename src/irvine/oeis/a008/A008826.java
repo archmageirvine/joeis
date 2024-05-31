@@ -1,9 +1,9 @@
 package irvine.oeis.a008;
 
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction1Sequence;
 
@@ -40,7 +40,7 @@ public class A008826 extends MemoryFunction1Sequence<Polynomial<Z>> {
     }
     Polynomial<Z> sum = RING.zero();
     for (int k = 1; k < n; ++k) {
-      sum = RING.add(sum, RING.multiply(get(k).shift(1), Stirling.secondKind(n, k)));
+      sum = RING.add(sum, RING.multiply(get(k).shift(1), Functions.STIRLING2.z(n, k)));
     }
     return sum;
   }

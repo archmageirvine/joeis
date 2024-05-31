@@ -5,7 +5,6 @@ import java.io.Serializable;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -20,7 +19,7 @@ public class A007151 extends Sequence1 implements Serializable {
   private Q sum1(final int n, final int j, final int i) {
     Q sum = Q.ZERO;
     for (int m = 0; m <= j; ++m) {
-      final Q t = new Q(Stirling.secondKind(n - m + j - i - 1, j - m).shiftLeft(m),
+      final Q t = new Q(Functions.STIRLING2.z(n - m + j - i - 1, j - m).shiftLeft(m),
         Functions.FACTORIAL.z(m).multiply(Functions.FACTORIAL.z(n - m + j - i - 1)));
       sum = sum.signedAdd(((m + i) & 1) == 0, t);
     }

@@ -11,8 +11,7 @@ public class A006703 extends A006702 {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    final long s = Functions.SQRT.l(n);
+    final long s = Functions.SQRT.l(++mN);
     if (s * s == mN) {
       return Z.ZERO;
     }

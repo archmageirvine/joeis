@@ -19,13 +19,10 @@ public class A046026 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      if (Predicates.SQUARE_FREE.is(n)) {
-        int k = 0;
+      if (Predicates.SQUARE_FREE.is(++mN)) {
         long p = 1;
         long pr = 1;
         while (true) {
-          ++k;
           p = mPrime.nextPrime(p);
           pr *= p;
           pr %= mN;

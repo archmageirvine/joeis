@@ -3,7 +3,6 @@ package irvine.oeis.a100;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -26,7 +25,7 @@ public class A100640 extends Sequence0 {
       Z m = Z.ONE;
       for (int a = 1; a <= n + 1; ++a) {
         m = m.multiply(n);
-        s = s.add(new Q(Stirling.firstKind(n, a).multiply(m), Z.valueOf(a + 1)));
+        s = s.add(new Q(Functions.STIRLING1.z(n, a).multiply(m), Z.valueOf(a + 1)));
       }
       return s.divide(Functions.FACTORIAL.z(n));
     } else {
@@ -38,7 +37,7 @@ public class A100640 extends Sequence0 {
         Z v = m;
         for (int b = 1; b <= n - k + 1; ++b) {
           v = v.multiply(n);
-          final Q t = new Q(Stirling.firstKind(k, a).multiply(Stirling.firstKind(n - k, b)).multiply(v), Binomial.binomial(a + b + 1, b + 1).multiply(b + 1));
+          final Q t = new Q(Functions.STIRLING1.z(k, a).multiply(Functions.STIRLING1.z(n - k, b)).multiply(v), Binomial.binomial(a + b + 1, b + 1).multiply(b + 1));
           u = u.add(t);
         }
         s = s.add(u);

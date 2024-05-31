@@ -3,8 +3,8 @@ package irvine.oeis.transform;
 import java.util.ArrayList;
 import java.util.List;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
@@ -24,7 +24,7 @@ public class Stirling1TransformSequence extends AbstractSequence {
    * @return the next term in the transformed sequence
    */
   public static Z stirling1(final List<Z> seq, final int n) {
-    return Integers.SINGLETON.sum(1, n, k -> Stirling.firstKind(n, k).multiply(seq.get(k)));
+    return Integers.SINGLETON.sum(1, n, k -> Functions.STIRLING1.z(n, (long) k).multiply(seq.get(k)));
   }
 
   /**

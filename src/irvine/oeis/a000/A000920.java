@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -14,6 +14,6 @@ public class A000920 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Stirling.secondKind(++mN, 6).multiply(720);
+    return Functions.STIRLING2.z(++mN, 6).multiply(720);
   }
 }

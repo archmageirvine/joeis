@@ -2,7 +2,6 @@ package irvine.math.set;
 
 import irvine.math.api.Set;
 import irvine.math.function.Functions;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 
 /**
@@ -78,7 +77,7 @@ public final class FunctionUtils {
     }
     final long n = domainSize.longValueExact();
     final long m = codomainSize.longValue();
-    return Stirling.secondKind(n, m).multiply(Functions.FACTORIAL.z(m));
+    return Functions.STIRLING2.z(n, m).multiply(Functions.FACTORIAL.z(m));
   }
 
   /**

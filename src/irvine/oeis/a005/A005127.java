@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -19,7 +19,7 @@ public class A005127 extends Sequence0 {
     }
     long c = 0;
     for (long k = 1; k <= mN; ++k) {
-      if (Stirling.firstKind(mN, k).mod(mN) != 0) {
+      if (Functions.STIRLING1.z(mN, k).mod(mN) != 0) {
         ++c;
       }
     }

@@ -2,7 +2,6 @@ package irvine.oeis.a087;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
@@ -30,7 +29,7 @@ public class A087854 extends Triangle {
     Z sum = Z.ZERO;
     for (final Z zd : Jaguar.factor(n).divisors()) {
       final int d = zd.intValue();
-      sum = sum.add(Stirling.secondKind(n / d, k).multiply(Functions.PHI.l((long) d)));
+      sum = sum.add(Functions.STIRLING2.z(n / d, k).multiply(Functions.PHI.l((long) d)));
     }
     return sum.multiply(Functions.FACTORIAL.z(k)).divide(n);
   }

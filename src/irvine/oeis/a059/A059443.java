@@ -1,7 +1,7 @@
 package irvine.oeis.a059;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.a060.A060052;
 
@@ -17,6 +17,6 @@ public class A059443 extends A060052 {
 
   @Override
   protected Z t(final int n, final int m) {
-    return Integers.SINGLETON.sum(0, n, k -> Stirling.secondKind(n, k).multiply(super.t(k, m)));
+    return Integers.SINGLETON.sum(0, n, k -> Functions.STIRLING2.z(n, (long) k).multiply(super.t(k, m)));
   }
 }

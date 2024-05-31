@@ -4,7 +4,6 @@ package irvine.oeis.a307;
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
@@ -18,11 +17,11 @@ public class A307650 extends LambdaSequence {
   /** Construct the sequence. */
   public A307650() {
     super(0, n -> Integers.SINGLETON.sum(0, n, j -> {
-      return Binomial.binomial(2L * j + 1, j).multiply(Functions.FACTORIAL.z(j)).multiply(Z.NEG_ONE.pow(n - j)).multiply(Stirling.secondKind(n, j));
+      return Binomial.binomial(2L * j + 1, j).multiply(Functions.FACTORIAL.z(j)).multiply(Z.NEG_ONE.pow(n - j)).multiply(Functions.STIRLING2.z((long) n, (long) j));
     }).add(Z.TWO.multiply(n).multiply(Integers.SINGLETON.sum(0, n - 1, j -> {
-      return Binomial.binomial(2L * j + 2, j).multiply(Functions.FACTORIAL.z(j)).multiply(Z.NEG_ONE.pow(n - j)).multiply(Stirling.secondKind(n - 1, j));
+      return Binomial.binomial(2L * j + 2, j).multiply(Functions.FACTORIAL.z(j)).multiply(Z.NEG_ONE.pow(n - j)).multiply(Functions.STIRLING2.z(n - 1, (long) j));
     }))).add(Z.valueOf(n).multiply(Z.valueOf(n - 1)).multiply(Integers.SINGLETON.sum(0, n - 2, j -> {
-      return Binomial.binomial(2L * j + 3, j).multiply(Functions.FACTORIAL.z(j)).multiply(Z.NEG_ONE.pow(n - j)).multiply(Stirling.secondKind(n - 2, j));
+      return Binomial.binomial(2L * j + 3, j).multiply(Functions.FACTORIAL.z(j)).multiply(Z.NEG_ONE.pow(n - j)).multiply(Functions.STIRLING2.z(n - 2, (long) j));
     }))));
   }
 }

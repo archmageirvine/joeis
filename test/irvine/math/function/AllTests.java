@@ -55,6 +55,8 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(SopfrTest.class);
     suite.addTestSuite(SopfTest.class);
     suite.addTestSuite(SqrtTest.class);
+    suite.addTestSuite(Stirling1Test.class);
+    suite.addTestSuite(Stirling2Test.class);
     suite.addTestSuite(SumTest.class);
     suite.addTestSuite(SwizzleTest.class);
     suite.addTestSuite(SyndromeTest.class);

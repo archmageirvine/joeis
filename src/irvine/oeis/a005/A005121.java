@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
@@ -22,7 +22,7 @@ public class A005121 extends MemorySequence {
     }
     Z s = Z.ZERO;
     for (int k = 1; k < n; ++k) {
-      s = s.add(Stirling.secondKind(n, k).multiply(a(k - 1)));
+      s = s.add(Functions.STIRLING2.z(n, k).multiply(a(k - 1)));
     }
     return s;
   }

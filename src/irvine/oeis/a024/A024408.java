@@ -17,8 +17,7 @@ public class A024408 extends Sequence1 {
   public Z next() {
     while (true) {
       long c = 0;
-      final long n = ++mN;
-      final long lower = Functions.SQRT.l(n);
+      final long lower = Functions.SQRT.l(++mN);
       final long upper = Functions.SQRT.l(2 * mN - 1);
       for (final Z dd : Jaguar.factor(mN).divisors()) {
         final long d = dd.longValueExact();

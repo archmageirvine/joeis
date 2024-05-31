@@ -1,7 +1,6 @@
 package irvine.oeis.a055;
 
 import irvine.math.function.Functions;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
@@ -21,6 +20,6 @@ public class A055302 extends Triangle {
 
   @Override
   public Z compute(final int n, final int k) {
-    return Functions.FACTORIAL.z(n + 1).divide(Functions.FACTORIAL.z(k + 1)).multiply(Stirling.secondKind(n, n - k));
+    return Functions.FACTORIAL.z(n + 1).divide(Functions.FACTORIAL.z(k + 1)).multiply(Functions.STIRLING2.z(n, n - k));
   }
 }

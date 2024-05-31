@@ -2,7 +2,6 @@ package irvine.oeis.a001;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
@@ -26,7 +25,7 @@ public class A001258 extends Sequence2 {
         return Z.ZERO;
       }
     }
-    return Stirling.secondKind(n - 2, n - k).multiply(Functions.FACTORIAL.z(n).divide(Functions.FACTORIAL.z(k)));
+    return Functions.STIRLING2.z(n - 2, n - k).multiply(Functions.FACTORIAL.z(n).divide(Functions.FACTORIAL.z(k)));
   }
 
   // This is actually A213262

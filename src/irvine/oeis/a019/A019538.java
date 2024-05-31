@@ -1,6 +1,6 @@
 package irvine.oeis.a019;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -35,6 +35,6 @@ public class A019538 extends AbstractSequence {
       mFactorialK = Z.ONE;
     }
     mFactorialK = mFactorialK.multiply(mK);
-    return mFactorialK.multiply(Stirling.secondKind(mN, mK));
+    return mFactorialK.multiply(Functions.STIRLING2.z(mN, mK));
   }
 }

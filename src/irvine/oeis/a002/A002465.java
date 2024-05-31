@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,7 +18,7 @@ public class A002465 extends Sequence1 {
     final int lim = (n + 1) / 2;
     final int l2 = n / 2;
     for (int j = 0; j <= lim; ++j) {
-      s = s.add(Binomial.binomial(lim, j).multiply(Stirling.secondKind(j + l2, n - i)));
+      s = s.add(Binomial.binomial(lim, j).multiply(Functions.STIRLING2.z(j + l2, n - i)));
     }
     return s;
   }
@@ -28,7 +28,7 @@ public class A002465 extends Sequence1 {
     final int lim = n / 2;
     final int l2 = (n + 1) / 2;
     for (int j = 0; j <= lim; ++j) {
-      s = s.add(Binomial.binomial(lim, j).multiply(Stirling.secondKind(j + l2, i)));
+      s = s.add(Binomial.binomial(lim, j).multiply(Functions.STIRLING2.z(j + l2, i)));
     }
     return s;
   }

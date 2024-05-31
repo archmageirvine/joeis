@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -32,7 +32,7 @@ public class A008277 extends AbstractSequence {
       ++mN;
       mM = 1;
     }
-    return Stirling.secondKind(mN, mM);
+    return Functions.STIRLING2.z(mN, mM);
   }
 }
 

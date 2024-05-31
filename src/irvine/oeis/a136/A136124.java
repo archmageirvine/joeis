@@ -1,6 +1,6 @@
 package irvine.oeis.a136;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
@@ -27,7 +27,7 @@ public class A136124 extends Triangle {
     ++k;
     Z sum = Z.ZERO;
     for (int j = 1; j <= k; ++j) {
-      sum = sum.add(Stirling.firstKind(n + 1, j).multiply((((n + 1 - k) & 1) == 0) ? 1 : -1));
+      sum = sum.add(Functions.STIRLING1.z(n + 1, j).multiply((((n + 1 - k) & 1) == 0) ? 1 : -1));
     }
     return sum;
   }

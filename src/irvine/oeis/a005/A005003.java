@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
@@ -22,7 +22,7 @@ public class A005003 extends Sequence1 {
 
   @Override
   public Z next() {
-    mA = mA.multiply(3).add(mBell.next()).subtract(Stirling.secondKind(++mN, 1));
+    mA = mA.multiply(3).add(mBell.next()).subtract(Functions.STIRLING2.z(++mN, 1));
     return mA;
   }
 }

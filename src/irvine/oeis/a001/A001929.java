@@ -2,7 +2,7 @@ package irvine.oeis.a001;
 
 import java.util.ArrayList;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -19,7 +19,7 @@ public class A001929 extends A001927 {
     mPosets.add(super.next());
     Z s = Z.ZERO;
     for (int k = 0; k <= n; ++k) {
-      s = s.add(mPosets.get(k).multiply(Stirling.secondKind(n, k)));
+      s = s.add(mPosets.get(k).multiply(Functions.STIRLING2.z(n, k)));
     }
     return s;
   }

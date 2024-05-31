@@ -1,6 +1,6 @@
 package irvine.oeis.a001;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -19,6 +19,6 @@ public class A001234 extends AbstractSequence {
 
   @Override
   public Z next() {
-    return Stirling.firstKind(++mN, 7).abs();
+    return Functions.STIRLING1.z(++mN, 7).abs();
   }
 }

@@ -171,6 +171,10 @@ public final class Functions {
   public static final Function2 ORD = VALUATION; // Convenient synonym
   /** Jacobi function. */
   public static final Function2 JACOBI = new Jacobi();
+  /** Stirling function of the first kind. */
+  public static final Function2 STIRLING1 = new Stirling1();
+  /** Stirling function of the second kind. */
+  public static final Function2 STIRLING2 = new Stirling2();
 
 
   // Aggregating functions

@@ -26,13 +26,12 @@ public class A008966 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    return Predicates.SQUARE_FREE.is((long) n) ? Z.ONE : Z.ZERO;
+    return Predicates.SQUARE_FREE.is(n) ? Z.ONE : Z.ZERO;
   }
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    return Predicates.SQUARE_FREE.is(n) ? Z.ONE : Z.ZERO;
+    return Predicates.SQUARE_FREE.is(++mN) ? Z.ONE : Z.ZERO;
   }
 }
 

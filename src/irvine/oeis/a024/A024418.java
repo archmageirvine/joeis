@@ -1,6 +1,6 @@
 package irvine.oeis.a024;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,8 +17,8 @@ public class A024418 extends Sequence1 {
     ++mN;
     Z max = Z.ONE;
     for (long k = 2; k <= mN; ++k) {
-      max = max.max(Stirling.secondKind(mN, k));
+      max = max.max(Functions.STIRLING2.z(mN, k));
     }
-    return max.mod(Stirling.secondKind(mN, mN - 1));
+    return max.mod(Functions.STIRLING2.z(mN, mN - 1));
   }
 }

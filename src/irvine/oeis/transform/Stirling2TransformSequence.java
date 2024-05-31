@@ -3,7 +3,7 @@ package irvine.oeis.transform;
 import java.util.ArrayList;
 import java.util.List;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
@@ -25,7 +25,7 @@ public class Stirling2TransformSequence extends AbstractSequence {
   public static Z stirling2(final List<Z> seq, final int n) {
     Z sum = Z.ZERO;
     for (int k = 0; k <= n; ++k) {
-      sum = sum.add(Stirling.secondKind(n, k).multiply(seq.get(k)));
+      sum = sum.add(Functions.STIRLING2.z(n, k).multiply(seq.get(k)));
     }
     return sum;
   }

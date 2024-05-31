@@ -3,7 +3,6 @@ package irvine.oeis.a002;
 import java.util.ArrayList;
 
 import irvine.math.function.Functions;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -25,7 +24,7 @@ public class A002050 extends Sequence0 {
     }
     Z s = Z.ZERO;
     for (int k = 0; k <= mN; ++k) {
-      final Z t = Stirling.secondKind(mN, k).multiply(Functions.FACTORIAL.z(k)).multiply(mS.get(k));
+      final Z t = Functions.STIRLING2.z(mN, k).multiply(Functions.FACTORIAL.z(k)).multiply(mS.get(k));
       s = s.signedAdd((k & 1) == 0, t);
     }
     return s.abs();

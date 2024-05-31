@@ -1,7 +1,6 @@
 package irvine.oeis.a058;
 
 import irvine.math.function.Functions;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -18,7 +17,7 @@ public class A058583 extends Sequence0 {
     ++mN;
     Z max = Z.ZERO;
     for (int k = 0; k <= mN; ++k) {
-      max = max.max(Functions.FACTORIAL.z(k).multiply(Stirling.firstKind(mN, k).abs()));
+      max = max.max(Functions.FACTORIAL.z(k).multiply(Functions.STIRLING1.z(mN, k).abs()));
     }
     return max;
   }

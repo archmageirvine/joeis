@@ -1,7 +1,7 @@
 package irvine.oeis.a133;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
@@ -29,7 +29,7 @@ public class A133709 extends MemoryFunction2Sequence<Integer, Z> {
       sum = sum.signedAdd((i & 1) == 0, Binomial.binomial(l, i).multiply(Binomial.binomial((1L << (l - i)) + m - 2, m)));
     }
     for (int i = 1; i < l; ++i) {
-      sum = sum.subtract(Stirling.secondKind(l, i).multiply(get(m, i)));
+      sum = sum.subtract(Functions.STIRLING2.z((long) l, i).multiply(get(m, i)));
     }
     return sum;
   }

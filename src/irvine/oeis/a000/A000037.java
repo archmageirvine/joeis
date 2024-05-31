@@ -28,8 +28,7 @@ public class A000037 extends AbstractSequence {
   @Override
   public Z next() {
     while (true) {
-      final long n = ++mN;
-      final long s = Functions.SQRT.l(n);
+      final long s = Functions.SQRT.l(++mN);
       if (s * s != mN) {
         break;
       }

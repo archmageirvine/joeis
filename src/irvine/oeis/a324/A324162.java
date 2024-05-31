@@ -1,8 +1,8 @@
 package irvine.oeis.a324;
 
 import irvine.math.MemoryFunction2;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
@@ -34,7 +34,7 @@ public class A324162 extends Triangle {
       }
       Z sum = Z.ZERO;
       for (int j = k; j <= n; ++j) {
-        sum = sum.add(get(n - j, k).multiply(Binomial.binomial(n - 1, j - 1)).multiply(Stirling.secondKind(j, k)));
+        sum = sum.add(get(n - j, k).multiply(Binomial.binomial(n - 1, j - 1)).multiply(Functions.STIRLING2.z(j, (long) k)));
       }
       return sum;
     }

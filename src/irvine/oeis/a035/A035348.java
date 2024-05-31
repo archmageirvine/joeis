@@ -2,7 +2,6 @@ package irvine.oeis.a035;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -25,7 +24,7 @@ public class A035348 extends AbstractSequence {
     final Z top = Z.ONE.shiftLeft(k).subtract(k + 1);
     final int lim = Z.valueOf(n).min(Z.ONE.shiftLeft(k).subtract(1)).intValueExact();
     for (int m = k; m <= lim; ++m) {
-      sum = sum.add(Stirling.secondKind(n, m).multiply(Functions.FACTORIAL.z(m)).multiply(Binomial.binomial(top, Z.valueOf(m - k))));
+      sum = sum.add(Functions.STIRLING2.z(n, m).multiply(Functions.FACTORIAL.z(m)).multiply(Binomial.binomial(top, Z.valueOf(m - k))));
     }
     return sum.divide(Functions.FACTORIAL.z(k));
   }

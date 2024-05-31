@@ -3,8 +3,8 @@ package irvine.oeis.a003;
 import java.util.ArrayList;
 
 import irvine.math.api.RationalSequence;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -25,7 +25,7 @@ public class A003633 extends Sequence1 implements RationalSequence {
       final int n = mTerms.size();
       Q a = Q.ZERO;
       for (int k = 1; k < n; ++k) {
-        a = a.add(mTerms.get(k).multiply(Stirling.secondKind(n, k)));
+        a = a.add(mTerms.get(k).multiply(Functions.STIRLING2.z(n, k)));
       }
       mTerms.add(a.divide(Q.TWO).negate());
     }

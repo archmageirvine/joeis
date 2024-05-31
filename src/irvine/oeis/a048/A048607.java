@@ -2,7 +2,6 @@ package irvine.oeis.a048;
 
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
@@ -19,7 +18,7 @@ public class A048607 extends MemoryFunction2Sequence<Integer, Q> {
     if (n.equals(m)) {
       return Q.ONE;
     }
-    Q sum = new Q(Stirling.firstKind(n, m).multiply(Functions.FACTORIAL.z(m)), Functions.FACTORIAL.z(n));
+    Q sum = new Q(Functions.STIRLING1.z((long) n, (long) m).multiply(Functions.FACTORIAL.z(m)), Functions.FACTORIAL.z(n));
     for (int k = m + 1; k < n; ++k) {
       sum = sum.subtract(get(n, k).multiply(get(k, m)));
     }

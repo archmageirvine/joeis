@@ -1,6 +1,6 @@
 package irvine.oeis.a063;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,7 @@ public class A063039 extends Sequence1 {
     ++mN;
     Z lcm = Z.ONE;
     for (long k = 1; k <= mN; ++k) {
-      lcm = lcm.lcm(Stirling.firstKind(mN, k).abs());
+      lcm = lcm.lcm(Functions.STIRLING1.z(mN, k).abs());
     }
     return lcm;
   }

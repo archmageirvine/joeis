@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -30,7 +30,7 @@ public class A002547 extends AbstractSequence {
   protected Q step() {
     ++mN;
     mF = mF.multiply(mN + 2);
-    return new Q(Stirling.firstKind(mN + 2, 2).multiply2(), mF).abs();
+    return new Q(Functions.STIRLING1.z(mN + 2, 2).multiply2(), mF).abs();
   }
 
   @Override

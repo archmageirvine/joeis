@@ -2,8 +2,8 @@ package irvine.oeis.a006;
 
 import java.util.ArrayList;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
-import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.a001.A001035;
 
@@ -23,7 +23,7 @@ public class A006905 extends A001035 {
     for (int k = 0; k <= n; ++k) {
       Z t = Z.ZERO;
       for (int s = 0; s <= k; ++s) {
-        t = t.add(Binomial.binomial(n, s).multiply(Stirling.secondKind(n - s, k - s)));
+        t = t.add(Binomial.binomial(n, s).multiply(Functions.STIRLING2.z(n - s, k - s)));
       }
       sum = sum.add(t.multiply(mA.get(k)));
     }

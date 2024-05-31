@@ -14,6 +14,8 @@ public final class Predicates {
   public static final Predicate CUBE = new Cube();
   /** Test if a number is a non-trivial power. */
   public static final Predicate POWER = new Power();
+  /** Test if a number is a power of 2. */
+  public static final Predicate POWER_OF_TWO = new PowerOfTwo();
   /** Test if a number is triangular. */
   public static final Predicate TRIANGULAR = new Triangular();
   /** Test if a number is square free. */

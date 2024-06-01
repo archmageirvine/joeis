@@ -22,8 +22,7 @@ public class A028840 extends A000045 {
   @Override
   public Z next() {
     while (true) {
-      final long v = ++mN;
-      final long u = Functions.DIGIT_SUM.l(v);
+      final long u = Functions.DIGIT_SUM.l(++mN);
       while (u > mFibo.last()) {
         mFibo.add(super.next().longValueExact());
       }

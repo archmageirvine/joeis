@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069970.
+ * A070002 Numbers k such that phi(P(k)) - P(phi(k)) = 1, where P(k) is the largest prime factor of k.
  * @author Sean A. Irvine
  */
 public class A070002 extends Sequence1 {

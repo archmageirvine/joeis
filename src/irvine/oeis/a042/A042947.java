@@ -24,8 +24,7 @@ public class A042947 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long v = ++mN;
-      final long b = Functions.DIGIT_SUM.l(v);
+      final long b = Functions.DIGIT_SUM.l(++mN);
       long m = mN;
       long a = 0;
       while (m != 0) {

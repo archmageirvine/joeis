@@ -15,8 +15,7 @@ public class A067453 extends Sequence0 {
 
   @Override
   public Z next() {
-    final long v = ++mN;
-    final long sum = Functions.DIGIT_SUM.l(v);
+    final long sum = Functions.DIGIT_SUM.l(++mN);
     final long prod = Functions.DIGIT_NZ_PRODUCT.l(10, mN);
     return Binomial.binomial(Math.max(sum, prod), Math.min(sum, prod));
   }

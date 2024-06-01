@@ -15,8 +15,7 @@ public class A066613 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long v = ++mN;
-      if (Functions.DIGIT_NZ_PRODUCT.l(10, v) == Functions.SIGMA0.l(mN)) {
+      if (Functions.DIGIT_NZ_PRODUCT.l(++mN) == Functions.SIGMA0.l(mN)) {
         return Z.valueOf(mN);
       }
     }

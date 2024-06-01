@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069970.
+ * A070003 Numbers divisible by the square of their largest prime factor.
  * @author Sean A. Irvine
  */
 public class A070003 extends Sequence1 {

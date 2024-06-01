@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A078923.
+ * A070017 Least numbers m such that GCD of two consecutive values of cototients, i.e., gcd(cototient(m+1), cototient(m)) equals 2n - 1.
  * @author Sean A. Irvine
  */
 public class A070017 extends Sequence1 {

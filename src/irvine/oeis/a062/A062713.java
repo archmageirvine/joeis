@@ -17,8 +17,7 @@ public class A062713 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long v = ++mN;
-      final long d = Functions.DIGIT_SUM.l(v);
+      final long d = Functions.DIGIT_SUM.l(++mN);
       if (mN % d == 0 && mPrime.isPrime(d)) {
         return Z.valueOf(mN);
       }

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069970.
+ * A070011 Numbers n such that number of prime factors divided by the number of distinct prime factors is not an integer.
  * @author Sean A. Irvine
  */
 public class A070011 extends Sequence1 {

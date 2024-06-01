@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069970.
+ * A070006 Composite numbers that are not a prime power and whose distinct prime divisors' arithmetic mean is a prime.
  * @author Sean A. Irvine
  */
 public class A070006 extends Sequence1 {

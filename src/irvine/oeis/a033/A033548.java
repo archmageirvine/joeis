@@ -16,8 +16,7 @@ public class A033548 extends A000040 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      final long v = ++mN;
-      if (Functions.DIGIT_SUM.l(p) == Functions.DIGIT_SUM.l(v)) {
+      if (Functions.DIGIT_SUM.l(p) == Functions.DIGIT_SUM.l(++mN)) {
         return p;
       }
     }

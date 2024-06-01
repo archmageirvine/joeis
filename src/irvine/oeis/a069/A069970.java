@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069970 Numbers n such that sigma(reverse(n)) = sigma(reverse(n-1)) + sigma(reverse(n-2)).
+ * A069970 Numbers k such that sigma(reverse(k)) = sigma(reverse(k-1)) + sigma(reverse(k-2)).
  * @author Sean A. Irvine
  */
 public class A069970 extends Sequence1 {

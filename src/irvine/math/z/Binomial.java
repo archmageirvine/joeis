@@ -15,7 +15,7 @@ public final class Binomial {
 
   /**
    * Compute binomial coefficients.
-   * @param n upper index (may be negative)
+   * @param n upper index (can be negative)
    * @param m lower index
    * @return binomial coefficient
    */
@@ -52,7 +52,7 @@ public final class Binomial {
 
   /**
    * Compute binomial coefficients of non-negative values.
-   * @param n upper index
+   * @param n upper index (can be negative)
    * @param m lower index
    * @return binomial coefficient
    */

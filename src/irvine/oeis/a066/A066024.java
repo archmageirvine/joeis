@@ -17,8 +17,7 @@ public class A066024 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long v = ++mN;
-      if (mPrime.isPrime(Functions.DIGIT_PRODUCT.l(v) - Functions.DIGIT_SUM.l(mN))) {
+      if (mPrime.isPrime(Functions.DIGIT_PRODUCT.l(++mN) - Functions.DIGIT_SUM.l(mN))) {
         return Z.valueOf(mN);
       }
     }

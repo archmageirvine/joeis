@@ -17,5 +17,4 @@ public class A070030 extends Sequence1 {
   public Z next() {
     return mA158074.next().divide(Z.TWO);
   }
-
 }

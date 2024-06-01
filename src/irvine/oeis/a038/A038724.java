@@ -15,8 +15,7 @@ public class A038724 extends Sequence0 {
   @Override
   public Z next() {
     final StringBuilder sb = new StringBuilder();
-    final long v = ++mN;
-    sb.append(Functions.DIGIT_SUM.l(v));
+    sb.append(Functions.DIGIT_SUM.l(++mN));
     final String s = String.valueOf(mN);
     for (int k = 1; k < s.length(); ++k) {
       sb.append(Math.abs(s.charAt(k) - s.charAt(k - 1)));

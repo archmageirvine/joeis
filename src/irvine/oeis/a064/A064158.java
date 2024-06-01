@@ -15,8 +15,7 @@ public class A064158 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long v = ++mN;
-      final long prod = Functions.DIGIT_PRODUCT.l(v);
+      final long prod = Functions.DIGIT_PRODUCT.l(++mN);
       if (prod != 0) {
         final long sum = Functions.DIGIT_SUM.l(mN);
         if (Functions.GPF.l(sum) > 7) {

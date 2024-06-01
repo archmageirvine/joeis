@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A003592.
+ * A070021 1/n has period 1 in base 10 (but not terminating).
  * @author Sean A. Irvine
  */
 public class A070021 extends Sequence1 {

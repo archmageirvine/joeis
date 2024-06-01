@@ -15,8 +15,7 @@ public class A050626 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long v = ++mN;
-      final long p = Functions.DIGIT_PRODUCT.l(v);
+      final long p = Functions.DIGIT_PRODUCT.l(++mN);
       if (p != 0) {
         final long s = Functions.SQRT.l(p);
         if (s * s == p) {

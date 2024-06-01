@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069970.
+ * A070008 Arithmetic mean of distinct primes dividing n is a power of 2 (powers of 2 are not left out).
  * @author Sean A. Irvine
  */
 public class A070008 extends Sequence1 {

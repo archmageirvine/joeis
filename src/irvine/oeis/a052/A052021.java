@@ -16,8 +16,7 @@ public class A052021 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long v = ++mN;
-      final long sum = Functions.DIGIT_SUM.l(v);
+      final long sum = Functions.DIGIT_SUM.l(++mN);
       if (mN % sum == 0) {
         final Z[] p = Jaguar.factor(mN).toZArray();
         if (p[p.length - 1].equals(sum)) {

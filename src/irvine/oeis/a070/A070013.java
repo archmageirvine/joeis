@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A069970.
+ * A070013 Number of prime factors of n divided by the number of n's distinct prime factors (rounded).
  * @author Sean A. Irvine
  */
 public class A070013 extends Sequence2 {

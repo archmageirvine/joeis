@@ -15,8 +15,7 @@ public class A064003 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long v = ++mN;
-      if (Functions.DIGIT_PRODUCT.l(v) == Long.bitCount(mN)) {
+      if (Functions.DIGIT_PRODUCT.l(++mN) == Long.bitCount(mN)) {
         return Z.valueOf(mN);
       }
     }

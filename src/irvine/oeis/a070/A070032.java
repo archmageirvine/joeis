@@ -14,8 +14,6 @@ public class A070032 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A070032() {
-    super(1, n -> {
-      return Jaguar.factor(n).sigma(1).divide(Functions.PHI.l((long) n));
-    });
+    super(1, n -> Jaguar.factor(n).sigma(1).divide(Functions.PHI.l(n)));
   }
 }

@@ -15,8 +15,7 @@ public class A065774 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long v = ++mN;
-      final long prod = Functions.DIGIT_PRODUCT.l(v);
+      final long prod = Functions.DIGIT_PRODUCT.l(++mN);
       if (prod > 1 && Functions.SOPFR.z(mN).equals(prod)) {
         return Z.valueOf(mN);
       }

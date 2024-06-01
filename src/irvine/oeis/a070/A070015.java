@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A078923.
+ * A070015 Least m such that the sum of the aliquot parts of m (A001065) equals n, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A070015 extends Sequence1 {

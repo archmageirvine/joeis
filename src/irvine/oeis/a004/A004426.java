@@ -16,8 +16,7 @@ public class A004426 extends Sequence0 {
 
   @Override
   public Z next() {
-    final long v = ++mN;
-    final long s = Functions.DIGIT_SUM.l(v);
+    final long s = Functions.DIGIT_SUM.l(++mN);
     if (mN >= mLim) {
       mLim *= 10;
       ++mDiv;

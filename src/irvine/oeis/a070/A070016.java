@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A078923.
+ * A070016 Least m such that Chowla's function value of m [A048050(m)] equals n or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A070016 extends Sequence1 {

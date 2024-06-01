@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069970.
+ * A070005 Arithmetic mean of prime factors of n is an integer and n is neither a prime nor power of a prime.
  * @author Sean A. Irvine
  */
 public class A070005 extends Sequence1 {

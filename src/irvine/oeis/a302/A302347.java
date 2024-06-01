@@ -7,7 +7,7 @@ import irvine.oeis.transform.EulerTransform;
 
 
 /**
- * A302347 a(n) = Sum of (Y(2,p)^2) over the partitions p of n, Y(2,p)= number of part sizes with multiplicity 2 or greater in p.
+ * A302347 a(n) = Sum of (Y(2,p)^2) over the partitions p of n, Y(2,p) = number of part sizes with multiplicity 2 or greater in p.
  * ET(ogf=-(x^8-x^7-2*x^4+2*x^3-x^2+x+1)/(x-1), order=2)
  * @author Georg Fischer
  */

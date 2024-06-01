@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002113;
 
 /**
- * A069970.
+ * A070001 Palindromic integers &gt; 0, whose 'Reverse and Add!' trajectory (presumably) does not lead to another palindrome.
  * @author Sean A. Irvine
  */
 public class A070001 extends A002113 {

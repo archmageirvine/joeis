@@ -19,8 +19,7 @@ public class A067455 extends Sequence1 {
   @Override
   public Z next() {
     final Z f = mF.next();
-    final long v = ++mN;
-    final long prod = Functions.DIGIT_PRODUCT.l(v);
+    final long prod = Functions.DIGIT_PRODUCT.l(++mN);
     return prod == 0 ? Z.ZERO : f.divide(prod);
   }
 }

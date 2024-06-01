@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A069970.
+ * A070009 Least number m such that the arithmetic mean of the distinct prime divisors of m is equal to 2^n.
  * @author Sean A. Irvine
  */
 public class A070009 extends Sequence1 {

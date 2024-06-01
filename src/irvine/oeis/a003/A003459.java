@@ -18,7 +18,7 @@ public class A003459 extends Sequence1 {
   // If not a repunit the length must divide 11088.
 
   private static final int MASK = (1 << 1) + (1 << 3) + (1 << 7) + (1 << 9);
-  private final Fast mPrime = new Fast();
+  protected final Fast mPrime = new Fast();
   private long mP = 1;
   private Z mR = new Z("111111111111111111");
 

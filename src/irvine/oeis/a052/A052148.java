@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A052148 Integers n &lt; (reversal of n) such that (reversal of n) + 1 is divisible by n-1.
+ * A052148 Integers k &lt; (reversal of k) such that (reversal of k) + 1 is divisible by k-1.
  * @author Sean A. Irvine
  */
 public class A052148 extends Sequence1 {

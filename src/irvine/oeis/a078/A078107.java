@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A078107 Numbers n such that it is not possible to arrange the numbers from 1 to n in a chain with adjacent links summing to a square.
+ * A078107 Numbers k such that it is not possible to arrange the numbers from 1 to k in a chain with adjacent links summing to a square.
  * @author Georg Fischer
  */
 public class A078107 extends FiniteSequence {

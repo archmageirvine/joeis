@@ -21,8 +21,7 @@ public class A004427 extends AbstractSequence {
 
   @Override
   public Z next() {
-    final long v = ++mN;
-    final long s = Functions.DIGIT_SUM.l(v);
+    final long s = Functions.DIGIT_SUM.l(++mN);
     if (mN >= mLim) {
       mLim *= 10;
       ++mDiv;

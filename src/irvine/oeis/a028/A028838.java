@@ -15,8 +15,7 @@ public class A028838 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long v = ++mN;
-      final long u = Functions.DIGIT_SUM.l(v);
+      final long u = Functions.DIGIT_SUM.l(++mN);
       if ((u & (u - 1)) == 0) {
         return Z.valueOf(mN);
       }

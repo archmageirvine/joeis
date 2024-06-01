@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A069970.
+ * A070014 Ceiling of number of prime factors of n divided by the number of n's distinct prime factors.
  * @author Sean A. Irvine
  */
 public class A070014 extends Sequence2 {

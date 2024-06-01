@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069970.
+ * A070007 Arithmetic mean of distinct primes dividing n is a square number.
  * @author Sean A. Irvine
  */
 public class A070007 extends Sequence1 {

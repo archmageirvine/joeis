@@ -16,8 +16,7 @@ public class A067173 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long v = ++mN;
-      long t = Functions.DIGIT_PRODUCT.l(v);
+      long t = Functions.DIGIT_PRODUCT.l(++mN);
       if (t != 0) {
         for (final Z p : Jaguar.factor(mN).toZArray()) {
           t -= p.longValue();

@@ -16,12 +16,11 @@ public class A101651 extends LambdaSequence {
   private static final MemorySequence A010060 = new A010060();
 
   /** Construct the sequence. */
-
   public A101651() {
     this(0, 0);
   }
 
-  /*
+  /**
    * Generic constructor with parameters
    * @param offset first index
    * @param base raise this to the power of A010060

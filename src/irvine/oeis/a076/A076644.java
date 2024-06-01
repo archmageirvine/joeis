@@ -12,6 +12,6 @@ public class A076644 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A076644() {
-    super(1, (self, n) -> self.a(n - Functions.SQRT.i((n))).add(n), "1");
+    super(1, (self, n) -> self.a(n - Functions.SQRT.i(n)).add(n), "1");
   }
 }

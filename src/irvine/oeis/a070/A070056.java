@@ -1,7 +1,7 @@
 package irvine.oeis.a070;
 
 /**
- * A070044.
+ * A070056 Number of Bottleneck-Monge matrices with 8 rows.
  * @author Sean A. Irvine
  */
 public class A070056 extends A070051 {

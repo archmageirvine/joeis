@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A369004 a(n) = 1 if n&apos; / gcd(n,n&apos;) is a multiple of 4, otherwise 0, where n&apos; stands for the arithmetic derivative of n, A003415(n).
+ * A369004 a(n) = 1 if n' / gcd(n,n') is a multiple of 4, otherwise 0, where n' stands for the arithmetic derivative of n, A003415(n).
  * @author Georg Fischer
  */
 public class A369004 extends LambdaSequence {

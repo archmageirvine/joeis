@@ -7,7 +7,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A192574 a(n) = sum(binomial(n,k)*floor(sqrt(Bell(k)))*floor(sqrt(Bell(n-k))),k=0..n).
+ * A192574  a(n) = sum(binomial(n,k)*floor(sqrt(Bell(k)))*floor(sqrt(Bell(n-k))),k=0..n).
  * @author Georg Fischer
  */
 public class A192574 extends LambdaSequence {

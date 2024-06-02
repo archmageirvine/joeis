@@ -5,18 +5,17 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070045 Primes of the form ceiling(k^1.5) for some integer k.
+ * A070163 Primes arising in A070162(n).
  * @author Sean A. Irvine
  */
-public class A070045 extends Sequence1 {
+public class A070163 extends Sequence1 {
 
-  private Z mN = Z.ONE;
+  private long mN = 5;
 
   @Override
   public Z next() {
     while (true) {
-      mN = mN.add(1);
-      final Z t = Functions.CEIL_SQRT.z(mN.pow(3));
+      final Z t = Functions.COTOTIENT.z(++mN).subtract(1);
       if (t.isProbablePrime()) {
         return t;
       }

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070044.
+ * A070051 Number of Bottleneck-Monge matrices with 3 rows. In the formula below, P=3.
  * @author Sean A. Irvine
  */
 public class A070051 extends Sequence1 {

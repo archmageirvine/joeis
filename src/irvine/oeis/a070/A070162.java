@@ -5,19 +5,18 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070044 Numbers k such that ceiling(k^1.5) is prime.
+ * A070162 Numbers k such that k - phi(k) - 1 is a prime.
  * @author Sean A. Irvine
  */
-public class A070044 extends Sequence1 {
+public class A070162 extends Sequence1 {
 
-  private Z mN = Z.ONE;
+  private long mN = 5;
 
   @Override
   public Z next() {
     while (true) {
-      mN = mN.add(1);
-      if (Functions.CEIL_SQRT.z(mN.pow(3)).isProbablePrime()) {
-        return mN;
+      if (Functions.COTOTIENT.z(++mN).subtract(1).isProbablePrime()) {
+        return Z.valueOf(mN);
       }
     }
   }

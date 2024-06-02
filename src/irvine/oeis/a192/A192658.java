@@ -7,7 +7,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A192658 Binomial convolution of the Floor-Sqrt transform of central binomial coefficients.
+ * A192658  Binomial convolution of the Floor-Sqrt transform of central binomial coefficients.
  * @author Georg Fischer
  */
 public class A192658 extends LambdaSequence {

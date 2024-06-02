@@ -7,7 +7,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A192653 Binomial convolution of the Floor-Sqrt transform of Catalan numbers.
+ * A192653  Binomial convolution of the Floor-Sqrt transform of Catalan numbers.
  * @author Georg Fischer
  */
 public class A192653 extends LambdaSequence {

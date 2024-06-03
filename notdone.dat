@@ -2397,3 +2397,4 @@ A069815 Decimal expansion of (negative of) real solution -1<x<1 to zeta(x)=sin(x
 A069818 Let x = 1.757739951145463... be smallest real number that satisfies gcd(floor(x^m),m)=1 for all integers m>0; sequence gives floor(x^n).
 A069857 Decimal expansion of -C, where C = -0.2959050055752... is the real solution < 0 to zeta(x) = x.
 A069995 Decimal expansion of the real positive solution to zeta(x)=x.
+A070214 Maximal number of occupied cells in all monotonic matrices of order n

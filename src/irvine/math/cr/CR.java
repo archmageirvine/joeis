@@ -566,9 +566,8 @@ public abstract class CR extends Number implements Comparable<CR> {
   /**
    * Return a textual representation accurate to <code>n</code> places
    * to the right of the decimal point.  <code>n</code> must be nonnegative.
-   *
    * @param n number of digits (&gt;= 0) included to the right of decimal point
-   * @param radix base (&gt;= 2, &lt;=16) for the resulting representation
+   * @param radix base (&gt;= 2, &lt;=36) for the resulting representation
    * @return string representation
    */
   public String toString(final int n, final int radix) {

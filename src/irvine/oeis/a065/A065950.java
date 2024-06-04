@@ -1,7 +1,7 @@
 package irvine.oeis.a065;
 
 import irvine.math.group.PolynomialRingField;
-import irvine.math.polynomial.PolynomialUtils;
+import irvine.math.polynomial.Series;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
@@ -18,6 +18,6 @@ public class A065950 extends Sequence0 {
 
   @Override
   public Z next() {
-    return RING.eval(RING.diff(RING.diff(RING.diff(PolynomialUtils.besselY(++mN)))), Q.ONE).toZ();
+    return RING.eval(RING.diff(RING.diff(RING.diff(Series.BESSEL_Y.s(++mN, mN)))), Q.ONE).toZ();
   }
 }

@@ -13,7 +13,6 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
-import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 
@@ -391,39 +390,6 @@ public final class PolynomialUtils {
    */
   public static Z height(final Polynomial<Z> poly) {
     return poly.aggregate(Z.ZERO, (a, c) -> a.max(c.abs()));
-  }
-
-  /**
-   * Return Bessel polynomial <code>y_n(x)</code>.
-   * @param n index
-   * @return Bessel polynomial
-   */
-  public static Polynomial<Q> besselY(final int n) {
-    final Q[] c = new Q[n + 1];
-    for (int k = 0; k <= n; ++k) {
-      c[k] = new Q(Binomial.binomial(n + k, 2L * k).multiply(Functions.FACTORIAL.z(2 * k)), Functions.FACTORIAL.z(k).shiftLeft(k));
-    }
-    return Polynomial.create(c);
-  }
-
-  /**
-   * Return Bessel polynomial <code>I_n(x)</code> without leading <code>(x/2)^n/n!</code> factor.
-   * This function is a match for the Pari <code>besseli</code> function.
-   * @param n index
-   * @param m degree limit
-   * @return Bessel polynomial
-   */
-  public static Polynomial<Q> besselI(final int n, final int m) {
-    final Q[] c = new Q[m + 1];
-    final Z nf = Functions.FACTORIAL.z(n);
-    for (int k = 0; k <= m; ++k) {
-      if ((k & 1) == 0) {
-        c[k] = new Q(nf, Functions.FACTORIAL.z(k / 2).multiply(Functions.FACTORIAL.z(n + k / 2)).shiftLeft(k));
-      } else {
-        c[k] = Q.ZERO;
-      }
-    }
-    return Polynomial.create(c);
   }
 
   /**

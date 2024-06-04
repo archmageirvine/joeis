@@ -168,11 +168,11 @@ public abstract class MemorySequence extends AbstractSequence implements Iterabl
    */
   public static MemorySequence cache(final int offset, final AbstractSequence seq, final long... initialTerms) {
     return seq instanceof MemorySequence ? (MemorySequence) seq : new MemorySequence(offset, initialTerms) {
-          @Override
-          protected Z computeNext() {
-            return seq.next();
-          }
-        };
+      @Override
+      protected Z computeNext() {
+        return seq.next();
+      }
+    };
   }
 }
 

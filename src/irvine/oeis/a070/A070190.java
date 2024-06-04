@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
-import irvine.math.polynomial.PolynomialUtils;
+import irvine.math.polynomial.Series;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
@@ -24,7 +24,7 @@ public class A070190 extends Sequence0 {
     ++mN;
     Polynomial<Q> sum = RING.zero();
     for (int k = 0; k <= mN; ++k) {
-      final Polynomial<Q> besselI = RING.divide(RING.substitute(PolynomialUtils.besselI(k, mN - k), X2, mN - k).shift(k), Q.valueOf(Functions.FACTORIAL.z(k)));
+      final Polynomial<Q> besselI = RING.divide(Series.BESSEL_I.s(k, mN - k, X2).shift(k), Q.valueOf(Functions.FACTORIAL.z(k)));
       sum = RING.add(sum, RING.multiply(RING.pow(besselI, 5, mN), k > 0 ? Q.TWO : Q.ONE));
     }
     return RING.serlaplace(sum).coeff(mN).toZ();

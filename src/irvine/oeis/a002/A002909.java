@@ -3,8 +3,8 @@ package irvine.oeis.a002;
 import java.util.Arrays;
 
 import irvine.math.group.PolynomialRingField;
-import irvine.math.polynomial.Elliptic;
 import irvine.math.polynomial.Polynomial;
+import irvine.math.polynomial.Series;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
@@ -28,7 +28,7 @@ public class A002909 extends Sequence0 {
   private Polynomial<Q> getU(final int n) {
     final Polynomial<Q> z = RING.series(NUM, DEN, n);
     final Polynomial<Q> x = RING.series(RING.oneMinusXToTheN(1), RING.onePlusXToTheN(1), n);
-    final Polynomial<Q> ek = Elliptic.ellipticK(z, n);
+    final Polynomial<Q> ek = Series.ELLIPTIC_K.s(n, z);
     final Polynomial<Q> c1 = RING.substitute(C1, x, n);
     final Polynomial<Q> c2 = RING.substitute(C2, x, n);
     final Polynomial<Q> den = RING.substitute(DEN, x, n);

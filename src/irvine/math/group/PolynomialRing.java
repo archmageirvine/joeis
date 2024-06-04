@@ -334,29 +334,32 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
    * @param degreeLimit degree limit
    * @return <code>p^n</code>
    */
-  public Polynomial<E> pow(final Polynomial<E> p, final int n, final int degreeLimit) {
+  public Polynomial<E> pow(final Polynomial<E> p, final long n, final int degreeLimit) {
     if (zero().equals(p)) {
       return n == 0 ? one() : zero();
     }
     if (n < 0) {
       throw new IllegalArgumentException();
     }
-    switch (n) {
-      case 0:
-        return one();
-      case 1:
-        return p.truncate(degreeLimit);
-      case 2:
-        return multiply(p, p, degreeLimit);
-      case 3:
-        return multiply(multiply(p, p, degreeLimit), p, degreeLimit);
-      case 4:
-        final Polynomial<E> s = multiply(p, p, degreeLimit);
-        return multiply(s, s, degreeLimit);
-      default:
-        final Polynomial<E> u = pow(p, n / 2, degreeLimit);
-        final Polynomial<E> t = multiply(u, u, degreeLimit);
-        return (n & 1) == 0 ? t : multiply(t, p, degreeLimit);
+    if (n <= 4) {
+      switch ((int) n) {
+        case 0:
+          return one();
+        case 1:
+          return p.truncate(degreeLimit);
+        case 2:
+          return multiply(p, p, degreeLimit);
+        case 3:
+          return multiply(multiply(p, p, degreeLimit), p, degreeLimit);
+        case 4:
+        default:
+          final Polynomial<E> s = multiply(p, p, degreeLimit);
+          return multiply(s, s, degreeLimit);
+      }
+    } else {
+      final Polynomial<E> u = pow(p, n / 2, degreeLimit);
+      final Polynomial<E> t = multiply(u, u, degreeLimit);
+      return (n & 1) == 0 ? t : multiply(t, p, degreeLimit);
     }
   }
 

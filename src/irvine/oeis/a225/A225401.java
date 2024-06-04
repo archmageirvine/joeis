@@ -36,7 +36,7 @@ public class A225401 extends AbstractSequence {
    * @param pa additive constant
    * @param base compute mod <code>base^n</code>
    */
-  public A225401(final int offset, final int b1, final int pm1, final int pm2, final int exp, final int pa, final int base) {
+  public A225401(final int offset, final long b1, final long pm1, final long pm2, final int exp, final long pa, final int base) {
     super(offset);
     mN = -1;
     mBn0 = Z.ZERO;
@@ -81,34 +81,35 @@ public class A225401 extends AbstractSequence {
    */
   public static void main(final String[] args) {
     int iarg = 0;
-    int b1 = 3;
-    int pm1 = 3;
-    int pm2 = 9;
+    long b1 = 3;
+    long pm1 = 3;
+    long pm2 = 9;
     int exp = 3;
-    int pa = 7;
+    long pa = 7;
     int base = 10;
     try {
       if (iarg < args.length) {
-        b1 = Integer.parseInt(args[iarg++]);
+        b1 = Long.parseLong(args[iarg++]);
       }
       if (iarg < args.length) {
-        pm1 = Integer.parseInt(args[iarg++]);
+        pm1 = Long.parseLong(args[iarg++]);
       }
       if (iarg < args.length) {
-        pm2 = Integer.parseInt(args[iarg++]);
+        pm2 = Long.parseLong(args[iarg++]);
       }
       if (iarg < args.length) {
         exp = Integer.parseInt(args[iarg++]);
       }
       if (iarg < args.length) {
-        pa = Integer.parseInt(args[iarg++]);
+        pa = Long.parseLong(args[iarg++]);
       }
       if (iarg < args.length) {
         base = Integer.parseInt(args[iarg++]);
       }
     } catch (final RuntimeException exc) {
-      // ignored
+      System.err.print("bad input");
     }
+    System.out.println(" b1=" + b1 + ", pm1=" + pm1 + ", pm2=" + pm2 + ", exp=" + exp + ", pa=" + pa + ", base=" + base);
     final Sequence seq = new A225401(0, b1, pm1, pm2, exp, pa, base);
     for (int ix = 0; ix < 32; ++ix) {
       System.out.print(seq.next() + ", ");

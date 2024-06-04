@@ -157,7 +157,7 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
     return create(b);
   }
 
-  @SuppressWarnings({"unchecked", "rawtypes"})
+  @SuppressWarnings({"unchecked"})
   private Polynomial<E>[] makeDivisionResult(final Polynomial<E> q, final Polynomial<E> r) {
     return (Polynomial<E>[]) new Polynomial[] {q, r};
   }

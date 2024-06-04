@@ -26,6 +26,6 @@ public class A101651 extends LambdaSequence {
    * @param base raise this to the power of A010060
    */
   public A101651(final int offset, final int base) {
-    super(0, n -> Integers.SINGLETON.product(0, n, k -> Z.ONE.add(Z.valueOf(base).pow(A010060.a(k).intValueExact()))).divide(2));
+    super(offset, n -> Integers.SINGLETON.product(0, n, k -> Z.ONE.add(Z.valueOf(base).pow(A010060.a(k).intValueExact()))).divide(2));
   }
 }

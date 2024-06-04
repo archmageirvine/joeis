@@ -8,7 +8,7 @@ import java.util.Locale;
  */
 public final class Series {
 
-  private Series() {}
+  private Series() { }
 
   /** Elliptic K function multiplied by 2/pi. */
   public static final Series1 ELLIPTIC_K = new EllipticK();

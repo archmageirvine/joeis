@@ -12,7 +12,7 @@ public class BesselY extends AbstractSeries2 {
 
   @Override
   protected Polynomial<Q> compute(final Polynomial<Q> current, final long v, final int minDegree) {
-    for (int k = current.degree()+ 1; k <= minDegree; ++k) {
+    for (int k = current.degree() + 1; k <= minDegree; ++k) {
       current.add(new Q(Binomial.binomial(v + k, 2L * k).multiply(Functions.FACTORIAL.z(2 * k)), Functions.FACTORIAL.z(k).shiftLeft(k)));
     }
     return current;

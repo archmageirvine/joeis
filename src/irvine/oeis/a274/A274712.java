@@ -14,6 +14,6 @@ public class A274712 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A274712() {
-    super(1, n -> Functions.STIRLING2.z(3L * n - 1, (long) n).divide(Z.valueOf(n).multiply(Z.valueOf(n + 1)).divide(Z.TWO)).abs());
+    super(1, n -> Functions.STIRLING2.z(3L * n - 1, n).divide(Z.valueOf(n).multiply(Z.valueOf(n + 1)).divide(Z.TWO)).abs());
   }
 }

@@ -20,6 +20,6 @@ public class A340264 extends BaseTriangle {
   @Override
   public Z triangleElement(final int n, final int k) {
     return Integers.SINGLETON.sum(0, k, j -> Binomial.binomial(n, k - j)
-      .multiply(Functions.STIRLING2.z(n - k + j, (long) j)));
+      .multiply(Functions.STIRLING2.z(n - k + j, j)));
   }
 }

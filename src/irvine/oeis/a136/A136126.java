@@ -14,6 +14,6 @@ public class A136126 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A136126() {
-    super(1, 1, 0, (n, k) -> Integers.SINGLETON.sum(1, k + 1, i -> Z.NEG_ONE.pow(k + 1 - i).multiply(Functions.FACTORIAL.z(i)).multiply(Z.valueOf(i).pow(n - 1 - k)).multiply(Functions.STIRLING2.z(k + 1, (long) i))));
+    super(1, 1, 0, (n, k) -> Integers.SINGLETON.sum(1, k + 1, i -> Z.NEG_ONE.pow(k + 1 - i).multiply(Functions.FACTORIAL.z(i)).multiply(Z.valueOf(i).pow(n - 1 - k)).multiply(Functions.STIRLING2.z(k + 1, i))));
   }
 }

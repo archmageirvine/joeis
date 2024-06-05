@@ -18,7 +18,7 @@ public class A064368 extends Sequence0 {
   @Override
   public Z next() {
     if (++mN > 0) {
-      mSum = mSum.add(Integers.SINGLETON.sumdiv(mN, d -> Predicates.SQUARE.is((long) d) ? Functions.PHI.z(Functions.SQRT.l(d)) : Z.ZERO).multiply2());
+      mSum = mSum.add(Integers.SINGLETON.sumdiv(mN, d -> Predicates.SQUARE.is(d) ? Functions.PHI.z(Functions.SQRT.l(d)) : Z.ZERO).multiply2());
     }
     return mSum.add(mN + 1);
   }

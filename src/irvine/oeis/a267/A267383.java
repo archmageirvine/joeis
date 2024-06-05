@@ -47,7 +47,7 @@ public class A267383 extends UpperLeftTriangle {
           if (j == 1) {
             return Z.valueOf(q - n).pow(l[1]).multiply(Integers.SINGLETON.product(0, n - 1, i -> Z.valueOf(q - i)));
           }
-          return Integers.SINGLETON.sum(0, l[j], m -> get(n + m, j - 1).multiply(Functions.STIRLING2.z(l[j], (long) m)));
+          return Integers.SINGLETON.sum(0, l[j], m -> get(n + m, j - 1).multiply(Functions.STIRLING2.z(l[j], m)));
         }
       };
       return mB.get(0, k).abs();

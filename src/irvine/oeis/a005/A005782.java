@@ -45,7 +45,7 @@ public class A005782 extends Sequence3 {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValueExact();
-      if (Predicates.SQUARE_FREE.is((long) d)) {
+      if (Predicates.SQUARE_FREE.is(d)) {
         sum = sum.add(either(mN, mN / d, d));
       }
     }

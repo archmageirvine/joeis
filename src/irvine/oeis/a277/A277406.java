@@ -15,6 +15,6 @@ public class A277406 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A277406() {
-    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Functions.FACTORIAL.z(k).multiply(Functions.FACTORIAL.z(n - k)).multiply(Integers.SINGLETON.sum(0, n - k + 1, i -> (((n - i + 1 & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(Functions.STIRLING2.z(i, n - k + 1)).multiply(Functions.STIRLING1.z(n + 1, (long) i))))));
+    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Functions.FACTORIAL.z(k).multiply(Functions.FACTORIAL.z(n - k)).multiply(Integers.SINGLETON.sum(0, n - k + 1, i -> (((n - i + 1 & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(Functions.STIRLING2.z(i, n - k + 1)).multiply(Functions.STIRLING1.z(n + 1, i))))));
   }
 }

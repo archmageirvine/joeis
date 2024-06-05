@@ -14,6 +14,6 @@ public class A124103 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A124103() {
-    super(0, n -> Binomial.binomial(2L * n, n).multiply(Functions.STIRLING2.z(2L * n, (long) n)));
+    super(0, n -> Binomial.binomial(2L * n, n).multiply(Functions.STIRLING2.z(2L * n, n)));
   }
 }

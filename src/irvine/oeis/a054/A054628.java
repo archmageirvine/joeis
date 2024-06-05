@@ -15,6 +15,6 @@ public class A054628 extends Sequence0 {
 
   @Override
   public Z next() {
-    return ++mN == 0 ? Z.ONE : Integers.SINGLETON.sum(1, mN, k -> Z.NINE.pow(Functions.GCD.l(mN, (long) k))).divide(mN);
+    return ++mN == 0 ? Z.ONE : Integers.SINGLETON.sum(1, mN, k -> Z.NINE.pow(Functions.GCD.l(mN, k))).divide(mN);
   }
 }

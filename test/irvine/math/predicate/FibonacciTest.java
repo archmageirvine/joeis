@@ -20,11 +20,11 @@ public class FibonacciTest extends TestCase {
 
     for (int i = 0; i < 1000; ++i) {
       if (i != 2) {
-        assertEquals(i, Fibonacci.inverseFibonacci(Functions.FIBONACCI.z((long) i)));
+        assertEquals(i, Fibonacci.inverseFibonacci(Functions.FIBONACCI.z(i)));
       }
     }
     for (int i = 5; i < 1000; ++i) {
-      final int j = -Fibonacci.inverseFibonacci(Functions.FIBONACCI.z((long) i).subtract(Z.ONE));
+      final int j = -Fibonacci.inverseFibonacci(Functions.FIBONACCI.z(i).subtract(Z.ONE));
       if (i != j && i - 1 != j && i != j - 1) {
         fail("Estimate is off the mark by more than 1: " + i + " " + j);
       }
@@ -34,9 +34,9 @@ public class FibonacciTest extends TestCase {
     assertEquals(-5, Fibonacci.inverseFibonacci(Z.SEVEN));
     assertEquals(-367, Fibonacci.inverseFibonacci(new Z("22334640661774067356412331900038009953045351020683823507202893507476314037054")));
     assertEquals(-366, Fibonacci.inverseFibonacci(new Z("22334640661774067356412331900038009953045351020683823507202893507476314037052")));
-    assertEquals(5000, Fibonacci.inverseFibonacci(Functions.FIBONACCI.z((long) 5000)));
-    assertEquals(10000, Fibonacci.inverseFibonacci(Functions.FIBONACCI.z((long) 10000)));
-    assertEquals(50000, Fibonacci.inverseFibonacci(Functions.FIBONACCI.z((long) 50000)));
+    assertEquals(5000, Fibonacci.inverseFibonacci(Functions.FIBONACCI.z(5000)));
+    assertEquals(10000, Fibonacci.inverseFibonacci(Functions.FIBONACCI.z(10000)));
+    assertEquals(50000, Fibonacci.inverseFibonacci(Functions.FIBONACCI.z(50000)));
   }
 
   public void testIs() {

@@ -47,7 +47,7 @@ public class A341074 extends AbstractSequence {
         return Z.ZERO;
       }
       Z sum = get(n, i - 1, t);
-      if (Predicates.SQUARE_FREE.is((long) i)) {
+      if (Predicates.SQUARE_FREE.is(i)) {
         final int ni = n - i;
         sum = sum.add(get(ni, Math.min(ni, i - 1), t - 1));
       }

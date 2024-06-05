@@ -16,7 +16,7 @@ public class A030427 extends A000040 {
 
   @Override
   public Z next() {
-    final long f = Functions.FIBONACCI.l((long) ++mN);
+    final long f = Functions.FIBONACCI.l(++mN);
     while (mPrimeNumber < f) {
       mP = super.next();
       ++mPrimeNumber;

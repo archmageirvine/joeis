@@ -31,6 +31,6 @@ public class A184271 extends UpperLeftTriangle {
   public Z matrixElement(final int n, final int k) {
     final long t = (long) n * k;
     return Integers.SINGLETON.sumdiv(n, c -> Functions.PHI.z(c).multiply(
-      Integers.SINGLETON.sumdiv(k, d -> Functions.PHI.z(d).multiply(mDim.pow(t / Functions.LCM.l(c, (long) d)))))).divide(t);
+      Integers.SINGLETON.sumdiv(k, d -> Functions.PHI.z(d).multiply(mDim.pow(t / Functions.LCM.l(c, d)))))).divide(t);
   }
 }

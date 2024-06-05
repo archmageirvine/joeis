@@ -10,8 +10,8 @@ import irvine.oeis.a049.A049224;
  */
 public class A013988 extends A049224 {
 
-  private int mN = 0;
-  private int mM = 0;
+  private long mN = 0;
+  private long mM = 0;
 
   @Override
   public Z next() {
@@ -19,6 +19,6 @@ public class A013988 extends A049224 {
       ++mN;
       mM = 1;
     }
-    return get((long) mN, (long) mM).multiply(Functions.FACTORIAL.z(mN).divide(Functions.FACTORIAL.z(mM))).divide(Z.SIX.pow(mN - mM));
+    return get(mN, mM).multiply(Functions.FACTORIAL.z(mN).divide(Functions.FACTORIAL.z(mM))).divide(Z.SIX.pow(mN - mM));
   }
 }

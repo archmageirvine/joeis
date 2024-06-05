@@ -1,6 +1,5 @@
 package irvine.math.z;
 
-import irvine.math.function.Functions;
 import junit.framework.TestCase;
 
 /**
@@ -25,9 +24,5 @@ public class BinomialTest extends TestCase {
 
   public void testMultinomial() {
     assertEquals(Z.valueOf(151200), Binomial.multinomial(10, 2, 3, 2));
-  }
-
-  public void testCatalan() {
-    assertEquals(Z.FIVE, Functions.CATALAN.z((long) 3));
   }
 }

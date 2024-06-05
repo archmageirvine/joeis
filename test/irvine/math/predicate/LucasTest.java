@@ -26,11 +26,11 @@ public class LucasTest extends TestCase {
 
     for (int i = 0; i < 1000; ++i) {
       if (i != 2) {
-        assertEquals(i, Lucas.inverseLucas(Functions.LUCAS.z((long) i)));
+        assertEquals(i, Lucas.inverseLucas(Functions.LUCAS.z(i)));
       }
     }
     for (int i = 5; i < 1000; ++i) {
-      final int j = -Lucas.inverseLucas(Functions.LUCAS.z((long) i).subtract(Z.ONE));
+      final int j = -Lucas.inverseLucas(Functions.LUCAS.z(i).subtract(Z.ONE));
       if (i != j && i - 1 != j && i != j - 1) {
         fail("Estimate is off the mark by more than 1: " + i + " " + j);
       }
@@ -40,9 +40,9 @@ public class LucasTest extends TestCase {
     assertEquals(-3, Lucas.inverseLucas(Z.SIX));
     assertEquals(-367, Lucas.inverseLucas(new Z("49941774772757703300470707773688236620346480720862218592914831305649185180430")));
     assertEquals(-366, Lucas.inverseLucas(new Z("49941774772757703300470707773688236620346480720862218592914831305649185180428")));
-    assertEquals(5000, Lucas.inverseLucas(Functions.LUCAS.z((long) 5000)));
-    assertEquals(10000, Lucas.inverseLucas(Functions.LUCAS.z((long) 10000)));
-    assertEquals(50000, Lucas.inverseLucas(Functions.LUCAS.z((long) 50000)));
+    assertEquals(5000, Lucas.inverseLucas(Functions.LUCAS.z(5000)));
+    assertEquals(10000, Lucas.inverseLucas(Functions.LUCAS.z(10000)));
+    assertEquals(50000, Lucas.inverseLucas(Functions.LUCAS.z(50000)));
   }
 
   public void testIs() {

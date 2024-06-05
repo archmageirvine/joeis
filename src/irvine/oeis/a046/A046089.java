@@ -13,6 +13,6 @@ public class A046089 extends A030523 {
 
   @Override
   public Z next() {
-    return super.next().multiply(Functions.FACTORIAL.z((int) mN)).shiftRight(mN - mM).divide(Functions.FACTORIAL.z((int) mM));
+    return super.next().multiply(Functions.FACTORIAL.z(mN)).shiftRight(mN - mM).divide(Functions.FACTORIAL.z(mM));
   }
 }

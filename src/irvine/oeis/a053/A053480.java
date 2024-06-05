@@ -19,7 +19,7 @@ public class A053480 extends MemoryFunction1Sequence<Long> {
 
   @Override
   protected Long compute(final int n) {
-    return n <= 1 ? 1L : n + get(n - (int) Functions.PHI.l((long) n));
+    return n <= 1 ? 1L : n + get(n - Functions.PHI.i(n));
   }
 
   @Override

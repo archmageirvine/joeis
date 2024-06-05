@@ -17,7 +17,7 @@ public class A066459 extends Sequence0 {
     long m = ++mN;
     Z prod = Z.ONE;
     do {
-      prod = prod.multiply(Functions.FACTORIAL.z((int) (m % 10)));
+      prod = prod.multiply(Functions.FACTORIAL.z(m % 10));
       m /= 10;
     } while (m != 0);
     return prod;

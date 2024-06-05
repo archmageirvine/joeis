@@ -25,7 +25,7 @@ public class A060179 extends Sequence0 {
       if (i * n == 0) {
         return Z.ONE;
       }
-      final int p = i == 0 ? 0 : (int) Functions.PRIME.l(i);
+      final int p = i == 0 ? 0 : Functions.PRIME.i(i);
       final int logp = CR.valueOf(n).log().divide(CR.valueOf(p).log()).floor().intValueExact();
       Z sum = get(n, i - 1);
       int pj = p;

@@ -21,7 +21,7 @@ public class A003316 extends Sequence1 {
     if (sum > Integer.MAX_VALUE) {
       throw new UnsupportedOperationException();
     }
-    final Z r = Functions.FACTORIAL.z((int) sum);
+    final Z r = Functions.FACTORIAL.z(sum);
     final int n = l.length;
     Z p = Z.ONE;
     for (int i = 0; i < n; ++i) {

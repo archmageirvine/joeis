@@ -35,7 +35,7 @@ public class A219180 extends MemoryFunction2Sequence<Integer, Z[]> {
       return EMPTY;
     }
     final Z[] b = get(n, i - 1);
-    final Z[] c = Functions.PRIME.l(i + 1) > n ? EMPTY : get(n - (int) Functions.PRIME.l(i + 1), i - 1);
+    final Z[] c = Functions.PRIME.l(i + 1) > n ? EMPTY : get(n - Functions.PRIME.i(i + 1), i - 1);
     final Z[] res = new Z[Math.max(b.length, c.length + 1)];
     for (int k = 0; k < res.length; ++k) {
       res[k] = get(b, k).add(get(c, k - 1));

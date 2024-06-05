@@ -20,7 +20,7 @@ public class A059728 extends A002426 {
     if (mN == 1) {
       return Z.THREE;
     }
-    final Z f = Functions.FIBONACCI.z((long) ((int) mN - 2));
+    final Z f = Functions.FIBONACCI.z(mN - 2);
     return t.add(f.multiply(f.add(1)));
   }
 }

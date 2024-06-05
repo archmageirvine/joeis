@@ -28,7 +28,7 @@ public class A060181 extends Sequence1 {
       }
       long q = p;
       for (int k = 1; k <= mN / p; ++k, q *= p) {
-        t = t.add(Functions.FACTORIAL.z(mN).divide(Functions.FACTORIAL.z((int) (mN - k * p)).multiply(q).multiply(Functions.FACTORIAL.z(k))));
+        t = t.add(Functions.FACTORIAL.z(mN).divide(Functions.FACTORIAL.z(mN - k * p).multiply(q).multiply(Functions.FACTORIAL.z(k))));
       }
     }
   }

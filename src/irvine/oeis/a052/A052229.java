@@ -26,7 +26,7 @@ public class A052229 extends A000040 {
     final Sequence seq = new A031924();
     while (true) {
       final Z p = seq.next();
-      final int pi = (int) Functions.PRIME_PI.l(p.intValueExact());
+      final int pi = Functions.PRIME_PI.i(p);
       if (mA052180.a(pi - 2).equals(targetPrime)) {
         return p;
       }

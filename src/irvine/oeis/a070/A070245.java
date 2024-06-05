@@ -1,27 +1,24 @@
-package irvine.oeis.a062;
+package irvine.oeis.a070;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.a002.A002113;
+import irvine.oeis.a002.A002385;
 import irvine.util.array.DynamicArray;
 
 /**
- * A062388 Smallest palindrome with digit sum = n.
+ * A062388.
  * @author Sean A. Irvine
  */
-public class A062388 extends A002113 {
+public class A070245 extends A002385 {
 
   private final DynamicArray<Z> mA = new DynamicArray<>();
-  private int mN = -1;
-
-  /** Construct the sequence. */
-  public A062388() {
-    setOffset(0);
-  }
+  private int mN = 0;
 
   @Override
   public Z next() {
-    ++mN;
+    if (++mN == 1 || mN == 4 || (mN > 3 && mN % 3 == 0)) {
+      return Z.ZERO;
+    }
     while (mA.get(mN) == null) {
       final Z p = super.next();
       final int digitSum = Functions.DIGIT_SUM.i(p);

@@ -17,7 +17,7 @@ public class A061602 extends Sequence0 {
     long m = ++mN;
     Z sum = Z.ZERO;
     do {
-      sum = sum.add(Functions.FACTORIAL.z((int) (m % 10)));
+      sum = sum.add(Functions.FACTORIAL.z(m % 10));
       m /= 10;
     } while (m != 0);
     return sum;

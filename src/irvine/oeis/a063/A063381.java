@@ -32,7 +32,7 @@ public class A063381 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    final int[] u = new int[(int) Functions.PHI.l((long) mN)];
+    final int[] u = new int[Functions.PHI.i(mN)];
     for (int k = 0, t = 1; t < mN; ++t) {
       if (Functions.GCD.i(t, mN) == 1) {
         u[k++] = t;

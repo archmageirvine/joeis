@@ -19,6 +19,6 @@ public class A341153 extends GeneralizedEulerTransform {
 
   @Override
   protected Z advanceG(final long k) {
-    return Z.valueOf(Functions.MOBIUS.i((long) (int) (k + 1))).square();
+    return Z.valueOf(Functions.MOBIUS.i(k + 1)).square();
   }
 }

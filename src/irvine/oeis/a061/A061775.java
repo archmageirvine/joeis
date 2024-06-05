@@ -26,7 +26,7 @@ public class A061775 extends MemorySequence {
       return Z.ONE;
     }
     if (mPrime.isPrime(n)) {
-      return a((int) Functions.PRIME_PI.l(n)).add(1);
+      return a(Functions.PRIME_PI.i(n)).add(1);
     }
     final FactorSequence fs = Jaguar.factor(n);
     Z sum = Z.ONE;

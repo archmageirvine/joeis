@@ -26,7 +26,7 @@ public class A062537 extends MemorySequence {
     final FactorSequence fs = Jaguar.factor(n);
     Z sum = Z.ZERO;
     for (final Z p : fs.toZArray()) {
-      sum = sum.add(a((int) Functions.PRIME_PI.l(p))).add(a(fs.getExponent(p)).add(1));
+      sum = sum.add(a(Functions.PRIME_PI.i(p))).add(a(fs.getExponent(p)).add(1));
     }
     return sum;
   }

@@ -75,7 +75,7 @@ public class A064818 extends Sequence1 implements Conjectural {
               if (usedOps != 0 && a == 1) {
                 break; // 1! pointless if already have done something
               }
-              stack[sp] = Functions.FACTORIAL.z((int) a).doubleValue();
+              stack[sp] = Functions.FACTORIAL.z((long) a).doubleValue();
               proof.add("!");
               if (is(stack, sp, usedOps | bit, proof)) {
                 return true;

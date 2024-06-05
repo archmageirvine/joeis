@@ -35,16 +35,16 @@ public class A045450 extends MemoryFunction2Sequence<Integer, Polynomial<Z>> {
       return RING.zero();
     }
     final Polynomial<Z> b = get(n, m - 1);
-    final int pi = (int) Functions.PRIME.l(m);
+    final int pi = Functions.PRIME.i(m);
     return pi > n ? b : RING.add(b, get(n - pi, m - 1).shift(1));
   }
 
   @Override
   public Z next() {
-    final Polynomial<Z> p = get(++mN, (int) Functions.PRIME_PI.l(mN - 1));
+    final Polynomial<Z> p = get(++mN, Functions.PRIME_PI.i(mN - 1));
     Z sum = Z.ZERO;
     int pr;
-    for (int k = 1; (pr = (int) Functions.PRIME.l(k)) <= p.degree(); ++k) {
+    for (int k = 1; (pr = Functions.PRIME.i(k)) <= p.degree(); ++k) {
       sum = sum.add(p.coeff(pr));
     }
     return sum;

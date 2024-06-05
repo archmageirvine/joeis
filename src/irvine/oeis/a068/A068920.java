@@ -63,7 +63,7 @@ public class A068920 extends Sequence1 {
 
   @Override
   public Z next() {
-    final int m = (int) Functions.TRINV.l(++mN);
+    final int m = Functions.TRINV.i(++mN);
     return t(mN + 1 - m * (m + 1) / 2, (m + 1) * (m + 2) / 2 - mN);
   }
 }

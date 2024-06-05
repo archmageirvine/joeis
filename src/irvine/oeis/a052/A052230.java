@@ -21,7 +21,7 @@ public class A052230 extends A031924 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      final int pi = (int) Functions.PRIME_PI.l(p.intValueExact());
+      final int pi = Functions.PRIME_PI.i(p);
       if (mA052180.a(pi - 2).equals(target())) {
         return p;
       }

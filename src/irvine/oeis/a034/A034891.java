@@ -22,7 +22,7 @@ public class A034891 extends MemoryFunction2Sequence<Integer, Z> {
     if (m < 0) {
       return Z.ZERO;
     }
-    final int p = (int) Functions.PRIME.l(m);
+    final int p = Functions.PRIME.i(m);
     if (p > n) {
       return get(n, m - 1);
     } else {
@@ -32,6 +32,6 @@ public class A034891 extends MemoryFunction2Sequence<Integer, Z> {
 
   @Override
   public Z next() {
-    return get(++mN, (int) Functions.PRIME.l(mN));
+    return get(++mN, Functions.PRIME.i(mN));
   }
 }

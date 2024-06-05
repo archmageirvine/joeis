@@ -32,10 +32,10 @@ public class A024937 extends MemoryFunction2Sequence<Integer, Z[]> {
       return C2;
     }
     final Z[] b = get(n, m - 1);
-    if ((int) Functions.PRIME.l(m) > n) {
+    if (Functions.PRIME.i(m) > n) {
       return b;
     }
-    final Z[] g = get(n - (int) Functions.PRIME.l(m), m - 1);
+    final Z[] g = get(n - Functions.PRIME.i(m), m - 1);
     return new Z[] {
       b[0].add(g[0]),
       b[1].add(g[1]).add(m == target() ? g[0] : Z.ZERO)

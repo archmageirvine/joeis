@@ -25,7 +25,7 @@ public class A066740 extends Sequence0 {
       return Z.ONE;
     }
     final Set<List<Integer>> res = new HashSet<>();
-    final int p = (int) Functions.PRIME.l(mN);
+    final int p = Functions.PRIME.i(mN);
     for (final List<Integer> x : mB) {
       final ArrayList<Integer> y = new ArrayList<>(x);
       y.add(p);

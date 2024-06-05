@@ -32,15 +32,15 @@ public class A059871 extends MemoryFunctionInt2Sequence<Z> {
     if (m < 0) {
       return Z.ONE;
     }
-    final int pm = (int) Functions.PRIME.l(m);
+    final int pm = Functions.PRIME.i(m);
     return get(n + pm, m - 1).add(get(Math.abs(n - pm), m - 1));
   }
 
   @Override
   public Z next() {
     ++mN;
-    final int pn = (int) Functions.PRIME.l(mN);
-    final int pnm1 = (int) Functions.PRIME.l(mN - 1);
+    final int pn = Functions.PRIME.i(mN);
+    final int pnm1 = Functions.PRIME.i(mN - 1);
     return get(pn - pnm1 * (1 + (mN & 1)), mN - 2);
   }
 }

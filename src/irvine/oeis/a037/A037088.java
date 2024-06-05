@@ -20,7 +20,7 @@ public class A037088 extends Sequence1 {
       mCounts = new long[++mN];
       mM = 0;
       for (long k = 1L << mN; k < 1L << (mN + 1); ++k) {
-        ++mCounts[(int) Functions.BIG_OMEGA.l(k) - 1];
+        ++mCounts[Functions.BIG_OMEGA.i(k) - 1];
       }
     }
     return Z.valueOf(mCounts[mM]);

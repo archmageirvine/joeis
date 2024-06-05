@@ -41,7 +41,7 @@ public class A003180 extends A000595 {
         if (shift > 32) {
           throw new UnsupportedOperationException();
         }
-        sum += (int) Functions.PHI.l((long) (ord / i)) * (1 << shift);
+        sum += Functions.PHI.i(ord / i) * (1 << shift);
       }
     }
     return sum / ord;

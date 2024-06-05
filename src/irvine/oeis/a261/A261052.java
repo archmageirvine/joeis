@@ -20,7 +20,7 @@ public class A261052 extends GeneralizedEulerTransform {
 
   @Override
   protected Z[] advanceF(final long k) {
-    return new Z[] {Functions.FACTORIAL.z((int) k).negate()};
+    return new Z[] {Functions.FACTORIAL.z(k).negate()};
   }
 
   @Override

@@ -40,7 +40,7 @@ public class A007896 extends Sequence1 {
   }
 
   protected int power(final int k) {
-    return (int) Functions.PHI.l((long) k);
+    return Functions.PHI.i(k);
   }
 
   @Override

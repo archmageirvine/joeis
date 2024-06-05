@@ -26,7 +26,7 @@ public class A051703 extends MemoryFunction2Sequence<Integer, Z> {
     if (m < 1 || n < 0) {
       return Z.ZERO;
     }
-    final int p = (int) Functions.PRIME.l(m);
+    final int p = Functions.PRIME.i(m);
     Z b = get(n, m - 1);
     final int plog = (int) (Math.log(n) / Math.log(p));
     for (int j = 1, pj = p; j <= plog; ++j, pj *= p) {

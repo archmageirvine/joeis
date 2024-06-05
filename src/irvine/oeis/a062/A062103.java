@@ -28,7 +28,7 @@ public class A062103 extends Sequence1 {
 
   @Override
   public Z next() {
-    final int t = (int) Functions.TRINV.l((long) mN);
+    final int t = Functions.TRINV.i(mN);
     ++mN;
     return mB.get(t, mN - t * (t + 1) / 2 - 1);
   }

@@ -16,7 +16,7 @@ public class A055399 extends Sequence3 {
 
   @Override
   public Z next() {
-    final long t = mPrime.isPrime(++mN) ? mPrime.nextPrime((int) Functions.SQRT.l(mN)) : Functions.LPF.l(mN);
+    final long t = mPrime.isPrime(++mN) ? mPrime.nextPrime(Functions.SQRT.l(mN)) : Functions.LPF.l(mN);
     return Functions.PRIME_PI.z(t);
   }
 }

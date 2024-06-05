@@ -34,7 +34,7 @@ public class A000148 extends Sequence2 {
   }
 
   private long count(final long n) {
-    final int max = (int) Functions.SQRT.l(n * n * n);
+    final int max = Functions.SQRT.i(n * n * n);
     final double[] x = new double[max];
     for (int k = 0; k < max; ++k) {
       x[k] = Math.pow((k + 1) * (k + 1), THIRD);

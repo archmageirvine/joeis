@@ -15,6 +15,6 @@ public class A208184 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A208184() {
-    super(0, n -> (n == 0) ? Z.ONE : Rationals.SINGLETON.sumdiv(3, d -> new Q((Functions.PHI.z((long) (3 / d))).multiply(Functions.FACTORIAL.z(n * d)), Functions.FACTORIAL.z(d).pow(n).multiply(3 * n))).num());
+    super(0, n -> (n == 0) ? Z.ONE : Rationals.SINGLETON.sumdiv(3, d -> new Q((Functions.PHI.z(3 / d)).multiply(Functions.FACTORIAL.z(n * d)), Functions.FACTORIAL.z(d).pow(n).multiply(3 * n))).num());
   }
 }

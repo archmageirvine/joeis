@@ -14,7 +14,7 @@ public class A058071 extends Sequence0 {
   private int mM = 0;
 
   private Z t(final int n, final int k) {
-    return Functions.FIBONACCI.z((long) (k + 1)).multiply(Functions.FIBONACCI.z((long) (n - k + 1)));
+    return Functions.FIBONACCI.z(k + 1).multiply(Functions.FIBONACCI.z(n - k + 1));
   }
 
   @Override

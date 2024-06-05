@@ -37,7 +37,7 @@ public class A007146 extends Sequence1 {
     Q sum = Q.ZERO;
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
-      sum = sum.add(u.coeff(d).multiply(Functions.MOBIUS.i((long) (n / d)))); // differs from paper!
+      sum = sum.add(u.coeff(d).multiply(Functions.MOBIUS.i(n / d))); // differs from paper!
     }
     return sum.divide(n);
   }

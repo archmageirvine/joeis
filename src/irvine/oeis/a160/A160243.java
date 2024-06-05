@@ -15,6 +15,6 @@ public class A160243 extends A000040 {
   @Override
   public Z next() {
     ++mN;
-    return Functions.LUCAS.z((long) (mN + 1)).add(super.next());
+    return Functions.LUCAS.z(mN + 1).add(super.next());
   }
 }

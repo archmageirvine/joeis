@@ -16,11 +16,11 @@ public class A176951 extends A000040 {
   public Z next() {
     final Z p = super.next();
     final int ip = p.intValue();
-    Z an = Functions.FIBONACCI.z((long) (ip + 1));
+    Z an = Functions.FIBONACCI.z(ip + 1);
     if (an.mod(p).isZero()) {
       return an.divide(ip);
     }
-    an = Functions.FIBONACCI.z((long) (ip - 1));
+    an = Functions.FIBONACCI.z(ip - 1);
     if (an.mod(p).isZero()) {
       return an.divide(ip);
     }

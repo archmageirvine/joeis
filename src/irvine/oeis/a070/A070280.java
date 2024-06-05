@@ -12,6 +12,6 @@ public class A070280 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A070280() {
-    super(1, (n, s) -> s[0].add(Functions.DIGIT_PRODUCT.l((long) (n - 1))), "1", PREVIOUS);
+    super(1, (n, s) -> s[0].add(Functions.DIGIT_PRODUCT.l(n - 1)), "1", PREVIOUS);
   }
 }

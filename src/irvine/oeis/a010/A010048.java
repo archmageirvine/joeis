@@ -21,7 +21,7 @@ public class A010048 extends Triangle {
     if (k == 0 || k == n) {
       return Z.ONE;
     }
-    return get(n - 1, k - 1).multiply(Functions.FIBONACCI.z((long) (n - k - 1))).add(get(n - 1, k).multiply(Functions.FIBONACCI.z((long) (k + 1))));
+    return get(n - 1, k - 1).multiply(Functions.FIBONACCI.z(n - k - 1)).add(get(n - 1, k).multiply(Functions.FIBONACCI.z(k + 1)));
   }
 }
 

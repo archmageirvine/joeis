@@ -46,7 +46,7 @@ public class A006384 extends AbstractSequence {
     for (int k = 1; k < mN; ++k) {
       three = three.multiply(Z.THREE);
       if (mN % k == 0) {
-        s = s.add(three.multiply(Functions.PHI.l((long) (mN / k))).multiply(Binomial.binomial(2L * k, k)));
+        s = s.add(three.multiply(Functions.PHI.l(mN / k)).multiply(Binomial.binomial(2L * k, k)));
       }
     }
     s = s.add(three.multiply(Z.THREE).multiply(Binomial.binomial(2L * mN, mN)).multiply2().divide((mN + 1L) * (mN + 2L)));

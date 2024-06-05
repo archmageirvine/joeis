@@ -11,6 +11,6 @@ public class A000687 extends A000674 {
 
   @Override
   protected Z a(final int n) {
-    return n == 0 ? Z.ONE : Functions.FIBONACCI.z((long) (n - 1));
+    return n == 0 ? Z.ONE : Functions.FIBONACCI.z(n - 1);
   }
 }

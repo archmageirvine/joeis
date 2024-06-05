@@ -14,6 +14,6 @@ public class A067962 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A067962() {
-    super(0, n -> Functions.FIBONACCI.z((long) (n + 2)).multiply(Integers.SINGLETON.product(0, n, i -> Functions.FIBONACCI.z((long) (i + 1))).square()));
+    super(0, n -> Functions.FIBONACCI.z(n + 2).multiply(Integers.SINGLETON.product(0, n, i -> Functions.FIBONACCI.z(i + 1)).square()));
   }
 }

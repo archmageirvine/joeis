@@ -38,7 +38,7 @@ public class A285037 extends MemoryFunction2Sequence<Integer, Z> {
       final int d = dd.intValue();
       final int m = Functions.MOBIUS.i(d);
       if (m != 0) {
-        Z s = Functions.STIRLING2.z((n / d + 1) / 2, (long) k).add(Functions.STIRLING2.z(n / d / 2 + 1, (long) k));
+        Z s = Functions.STIRLING2.z((n / d + 1) / 2, k).add(Functions.STIRLING2.z(n / d / 2 + 1, k));
         if (((n - d) & 1) == 1) {
           s = s.add(mAch.get((n / d + 1) / 2, k).add(mAch.get(n / d / 2 + 1, k)));
         }

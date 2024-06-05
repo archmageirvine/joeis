@@ -13,6 +13,6 @@ public class A180272 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A180272() {
-    super(0, n -> Binomial.binomial(n, (Functions.SQRT.l((long) (8 * n + 1)) - 1) / 2));
+    super(0, n -> Binomial.binomial(n, (Functions.SQRT.l(8 * n + 1) - 1) / 2));
   }
 }

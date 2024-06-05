@@ -12,6 +12,6 @@ public class A165990 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A165990() {
-    super(0, n -> Functions.LUCAS.z((long) (2 * n)).xor(Functions.LUCAS.z((long) (2 * n + 1))));
+    super(0, n -> Functions.LUCAS.z(2 * n).xor(Functions.LUCAS.z(2 * n + 1)));
   }
 }

@@ -26,7 +26,7 @@ public class A276550 extends UpperLeftTriangle {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
-      final Z term = mA081720.compute(d - 1, k - 1).multiply(Functions.MOBIUS.i((long) (n / d)));
+      final Z term = mA081720.compute(d - 1, k - 1).multiply(Functions.MOBIUS.i(n / d));
       sum = sum.add(term);
     }
     return sum;

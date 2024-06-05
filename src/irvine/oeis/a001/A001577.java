@@ -17,7 +17,7 @@ public class A001577 extends Sequence1 {
     ++mN;
     Z p = Z.ONE;
     for (int k = 1; k < mN; ++k) {
-      p = p.multiply(Functions.FIBONACCI.z(k).pow(Functions.FIBONACCI.z((long) (mN - k))));
+      p = p.multiply(Functions.FIBONACCI.z(k).pow(Functions.FIBONACCI.z(mN - k)));
     }
     return p;
   }

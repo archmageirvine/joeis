@@ -13,6 +13,6 @@ public class A351348 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A351348() {
-    super(1, (p, e) -> Functions.LUCAS.z((long) (e + 1)));
+    super(1, (p, e) -> Functions.LUCAS.z(e + 1));
   }
 }

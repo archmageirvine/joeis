@@ -22,7 +22,7 @@ public class A062381 extends Sequence1 {
     final DefaultMatrix<Q> mat = new DefaultMatrix<>(mN, mN, Q.ZERO);
     for (int r = 0; r < mN; ++r) {
       for (int c = 0; c < mN; ++c) {
-        mat.set(r, c, new Q(Z.ONE, Functions.FIBONACCI.z((long) (r + c + 1))));
+        mat.set(r, c, new Q(Z.ONE, Functions.FIBONACCI.z(r + c + 1)));
       }
     }
     return fld.det(mat).reciprocal().toZ();

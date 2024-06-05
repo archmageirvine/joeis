@@ -14,6 +14,6 @@ public class A210342 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A210342() {
-    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Functions.FIBONACCI.z((long) (n - k + 2)).pow(k)));
+    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Functions.FIBONACCI.z(n - k + 2).pow(k)));
   }
 }

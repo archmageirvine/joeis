@@ -116,7 +116,7 @@ public class A006841 extends Sequence1 {
     wk1 = Z.ZERO;
     for (int d = 1; d <= mN; d++) {
       if (mN % d == 0) {   // Take only factors of n
-        final Z numerator = Functions.FACTORIAL.z(d).multiply(mN).multiply(Functions.PHI.l((long) (mN / d)));
+        final Z numerator = Functions.FACTORIAL.z(d).multiply(mN).multiply(Functions.PHI.l(mN / d));
         if (((mN / d) & 1) == 1) {
           Z subSum = Z.ZERO;
           for (int l = 0; 2 * l <= d; l++) {

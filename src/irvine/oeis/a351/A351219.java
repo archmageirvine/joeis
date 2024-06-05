@@ -11,7 +11,7 @@ public class A351219 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A351219() {
-    super(1, (p, e) -> Functions.FIBONACCI.z((long) (e + 1)));
+    super(1, (p, e) -> Functions.FIBONACCI.z(e + 1));
   }
 
 }

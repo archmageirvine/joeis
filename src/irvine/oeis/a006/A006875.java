@@ -23,7 +23,7 @@ public class A006875 extends MemoryFunction1Sequence<Z> {
     Z sum = Z.ZERO;
     for (final Z cc : Jaguar.factor(n).divisors()) {
       final int c = cc.intValueExact();
-      sum = sum.add(Z.ONE.shiftLeft(c - 1).multiply(Functions.MOBIUS.i((long) (n / c))));
+      sum = sum.add(Z.ONE.shiftLeft(c - 1).multiply(Functions.MOBIUS.i(n / c)));
     }
     return sum;
   }
@@ -35,7 +35,7 @@ public class A006875 extends MemoryFunction1Sequence<Z> {
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValueExact();
       if (d < mN) {
-        sum = sum.add(get(d).multiply(Functions.PHI.l((long) (mN / d))));
+        sum = sum.add(get(d).multiply(Functions.PHI.l(mN / d)));
       }
     }
     return sum;

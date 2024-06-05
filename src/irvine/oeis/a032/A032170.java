@@ -23,7 +23,7 @@ public class A032170 extends Sequence1 {
     Z s = Z.ZERO;
     for (final Z d : Jaguar.factor(mN).divisors()) {
       final int dd = d.intValue();
-      s = ZUtils.mobiusAdd(Functions.MOBIUS.i((long) (mN / dd)), s, mA.a(dd));
+      s = ZUtils.mobiusAdd(Functions.MOBIUS.i(mN / dd), s, mA.a(dd));
     }
     return s.divide(mN);
   }

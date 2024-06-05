@@ -144,7 +144,7 @@ public final class CombinatorialSpecies {
     // Substitutions y -> y^k, x_i -> x_{i*k} (up to existing limits)
     Polynomial<CycleIndex> res = RING.zero();
     for (int k = 1; k <= p.degree(); ++k) {
-      final int mobius = Functions.MOBIUS.i((long) k);
+      final int mobius = Functions.MOBIUS.i(k);
       if (mobius != 0) {
         final Polynomial<CycleIndex> subs = divide(innerSubs(log.substitutePower(k, p.degree()), k , p.degree() / k), k);
         res = RING.signedAdd(mobius == 1, res, subs);

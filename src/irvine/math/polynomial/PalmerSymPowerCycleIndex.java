@@ -61,7 +61,7 @@ public final class PalmerSymPowerCycleIndex extends MemoryFunction2<Integer, Q> 
           if ((k & 1) == 1) {
             r.add(Functions.LCM.i(k, m), jj * Functions.GCD.i(k, m) * (k - 1L) / 2);
           } else {
-            r.add(Functions.LCM.i(k / 2, m), jj * (long) Functions.GCD.i(k / 2, m));
+            r.add(Functions.LCM.i(k / 2, m), jj * Functions.GCD.l(k / 2, m));
             r.add(Functions.LCM.i(k, m), jj * Functions.GCD.i(k, m) * (k - 2L) / 2);
           }
         }
@@ -141,7 +141,7 @@ public final class PalmerSymPowerCycleIndex extends MemoryFunction2<Integer, Q> 
     }
     Z sum = Z.ZERO;
     for (int t = 0; s + u[k] * t <= n; ++t) {
-      final Z b = Binomial.binomial((long) c[k] * Functions.GCD.i(k, d), t);
+      final Z b = Binomial.binomial(c[k] * Functions.GCD.l(k, d), t);
       sum = sum.add(search(n, d, c, u, s + u[k] * t, k, prod.multiply(b)));
     }
     return sum;
@@ -160,7 +160,7 @@ public final class PalmerSymPowerCycleIndex extends MemoryFunction2<Integer, Q> 
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(i).divisors()) {
       final int d = dd.intValue();
-      final int mobius = Functions.MOBIUS.i((long) (i / d));
+      final int mobius = Functions.MOBIUS.i(i / d);
       if (mobius != 0) {
         final Z f = f(n, d, c);
         sum = sum.signedAdd(mobius == 1, f);

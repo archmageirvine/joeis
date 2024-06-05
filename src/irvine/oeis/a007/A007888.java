@@ -62,7 +62,7 @@ public class A007888 extends Sequence1 {
         final int dp = d / Functions.GCD.i(d, l);
         final int mobius = Functions.MOBIUS.i(dp);
         if (mobius != 0) {
-          final Q phi = new Q(Functions.PHI.l((long) (k / l)), Functions.PHI.l(dp));
+          final Q phi = new Q(Functions.PHI.l(k / l), Functions.PHI.l(dp));
           res = RING.signedAdd(mobius > 0, res, RING.monomial(phi, k - l));
         }
       }

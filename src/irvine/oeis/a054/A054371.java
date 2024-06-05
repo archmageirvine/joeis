@@ -19,7 +19,7 @@ public class A054371 extends Sequence0 {
     if (++mN == 0) {
       return Z.ONE;
     }
-    final Z a = Integers.SINGLETON.sumdiv(mN, d -> Binomial.binomial(7L * d, d).multiply(Functions.PHI.l((long) (mN / d))));
+    final Z a = Integers.SINGLETON.sumdiv(mN, d -> Binomial.binomial(7L * d, d).multiply(Functions.PHI.l(mN / d)));
     final Z b = Integers.SINGLETON.sumdiv(Functions.GCD.i(mN - 1, 7), d -> Binomial.binomial(7L * mN / d, (mN - 1) / d).multiply(Functions.PHI.l(d)));
     return a.add(b).divide(7L * mN).subtract(Binomial.binomial(7L * mN, mN).divide(6L * mN + 1));
   }

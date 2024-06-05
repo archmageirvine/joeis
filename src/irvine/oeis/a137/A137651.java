@@ -28,7 +28,7 @@ public class A137651 extends Triangle {
     Z sum = Z.ZERO;
     for (final Z zd : Jaguar.factor(n).divisors()) {
       final int d = zd.intValue();
-      sum = sum.add(Functions.STIRLING2.z(d, k).multiply(Functions.MOBIUS.i((long) (n / d))));
+      sum = sum.add(Functions.STIRLING2.z(d, k).multiply(Functions.MOBIUS.i(n / d)));
     }
     return sum;
   }

@@ -36,7 +36,7 @@ public class A027376 extends AbstractSequence {
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValue();
       final Z z = Z.THREE.pow(d);
-      sum = ZUtils.mobiusAdd(Functions.MOBIUS.i((long) (mN / d)), sum, z);
+      sum = ZUtils.mobiusAdd(Functions.MOBIUS.i(mN / d), sum, z);
     }
     return sum.divide(mN);
   }

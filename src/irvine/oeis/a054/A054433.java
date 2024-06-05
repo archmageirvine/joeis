@@ -18,7 +18,7 @@ public class A054433 extends Sequence1 {
     Z sum = Z.ZERO;
     for (int k = 1; k <= mN; k += 2) {
       if (Functions.GCD.i(mN, k) == 1) {
-        sum = sum.add(Functions.FIBONACCI.z((long) (mN + 1 - k)));
+        sum = sum.add(Functions.FIBONACCI.z(mN + 1 - k));
       }
     }
     return sum;

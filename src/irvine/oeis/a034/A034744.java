@@ -18,7 +18,7 @@ public class A034744 extends Sequence1 {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(++mN).divisors()) {
       final int d = dd.intValue();
-      sum = sum.add(Functions.FIBONACCI.z(d).multiply(Functions.FIBONACCI.z((long) (mN / d))));
+      sum = sum.add(Functions.FIBONACCI.z(d).multiply(Functions.FIBONACCI.z(mN / d)));
     }
     return sum;
   }

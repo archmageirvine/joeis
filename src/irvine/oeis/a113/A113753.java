@@ -15,6 +15,6 @@ public class A113753 extends A000040 {
   @Override
   public Z next() {
     ++mN;
-    return Functions.FIBONACCI.z((long) (mN - 1)).add(super.next());
+    return Functions.FIBONACCI.z(mN - 1).add(super.next());
   }
 }

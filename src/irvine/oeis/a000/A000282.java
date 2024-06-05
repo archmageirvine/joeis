@@ -22,7 +22,7 @@ public class A000282 extends Sequence1 {
 
   private int mob(final int m, final int n) {
     if (m % n == 0) {
-      return Functions.MOBIUS.i((long) (m / n));
+      return Functions.MOBIUS.i(m / n);
     }
     return 0;
   }

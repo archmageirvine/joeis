@@ -12,6 +12,6 @@ public class A138859 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A138859() {
-    super(2, n -> Functions.LPF.z(Functions.FIBONACCI.z((long) (3 * n)).subtract(1)));
+    super(2, n -> Functions.LPF.z(Functions.FIBONACCI.z(3 * n).subtract(1)));
   }
 }

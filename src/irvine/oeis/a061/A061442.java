@@ -16,7 +16,7 @@ public class A061442 extends A061447 {
     while (true) {
       mN += 5;
       final Z lucasStar = lucasStar(mN);
-      final Z f = Functions.FIBONACCI.z((long) (mN / 5));
+      final Z f = Functions.FIBONACCI.z(mN / 5);
       final Z a = f.multiply(f.subtract(1)).multiply(5).add(1);
       final Z g = lucasStar.gcd(a);
       if (g.isProbablePrime()) {

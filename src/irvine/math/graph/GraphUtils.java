@@ -448,7 +448,7 @@ public final class GraphUtils {
     final Polynomial<Polynomial<Q>> p = RING2.log1p(RING2.create(g).shift(1), n);
     Polynomial<Polynomial<Q>> sum = RING2.zero();
     for (int k = 1; k <= n; ++k) {
-      final int mobius = Functions.MOBIUS.i((long) k);
+      final int mobius = Functions.MOBIUS.i(k);
       if (mobius != 0) {
         final Polynomial<Polynomial<Q>> t = p.substitutePower(k, n);
         final Polynomial<Polynomial<Q>> u = RING2.empty();
@@ -717,7 +717,7 @@ public final class GraphUtils {
       for (int d = 1; d <= n; ++d) {
         if (n % d == 0) {
           final int i = n / d;
-          final E r = fld.coerce(Functions.FACTORIAL.z(n).divide(Functions.FACTORIAL.z(i)).divide(d).multiply(Functions.MOBIUS.i((long) d)));
+          final E r = fld.coerce(Functions.FACTORIAL.z(n).divide(Functions.FACTORIAL.z(i)).divide(d).multiply(Functions.MOBIUS.i(d)));
           final List<E> ui = lg.get(i);
           int xi = -1;
           final IntegerPartition partI = new IntegerPartition(n / d);

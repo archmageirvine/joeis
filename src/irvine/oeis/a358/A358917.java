@@ -21,6 +21,6 @@ public class A358917 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Functions.FIBONACCI.z((long) (mN + 1)).pow(4).subtract(Functions.FIBONACCI.z((long) (mN - 1)).pow(4));
+    return Functions.FIBONACCI.z(mN + 1).pow(4).subtract(Functions.FIBONACCI.z(mN - 1).pow(4));
   }
 }

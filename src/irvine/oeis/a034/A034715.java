@@ -15,6 +15,6 @@ public class A034715 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sumdiv(++mN, d -> Functions.TRIANGULAR.z(d).multiply(Functions.TRIANGULAR.z((long) (mN / d))));
+    return Integers.SINGLETON.sumdiv(++mN, d -> Functions.TRIANGULAR.z(d).multiply(Functions.TRIANGULAR.z(mN / d)));
   }
 }

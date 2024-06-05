@@ -33,7 +33,7 @@ public class A006402 extends A000139 {
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
       if (d != n) {
-        sum = sum.add(mB.get(d).multiply(Functions.PHI.l((long) (n / d))).multiply(9L * d * d - 9L * d + 2L));
+        sum = sum.add(mB.get(d).multiply(Functions.PHI.l(n / d)).multiply(9L * d * d - 9L * d + 2L));
       }
     }
     sum = sum.add(mB.get(n).multiply2()).divide(n);

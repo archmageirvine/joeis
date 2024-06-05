@@ -26,7 +26,7 @@ public class A001325 extends Sequence1 {
     for (final Z dd : Jaguar.factor(t2).divisors()) {
       final int d = dd.intValue();
       if (t % d != 0) {
-        sum = sum.add(mm.pow(d / 2).subtract(m & 1).multiply(Functions.MOBIUS.i((long) (t2 / d))));
+        sum = sum.add(mm.pow(d / 2).subtract(m & 1).multiply(Functions.MOBIUS.i(t2 / d)));
       }
     }
     return sum.divide(t2).intValueExact();

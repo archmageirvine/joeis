@@ -21,7 +21,7 @@ public class A253901 extends Sequence1 {
     Q prod = Q.ONE;
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValue();
-      final int mu = Functions.MOBIUS.i((long) (mN / d));
+      final int mu = Functions.MOBIUS.i(mN / d);
       if (mu == -1) {
         prod = prod.divide(Functions.FACTORIAL.z(d - 1));
       } else if (mu == 1) {

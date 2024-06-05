@@ -45,7 +45,7 @@ public class A000721 extends AbstractSequence {
     Z s = Z.ZERO;
     for (final Z dd : Jaguar.factor(v).divisors()) {
       final int d = dd.intValue();
-      final int m = Functions.MOBIUS.i((long) (v / d));
+      final int m = Functions.MOBIUS.i(v / d);
       if (m != 0) {
         s = s.signedAdd(m == 1, Z.ONE.shiftLeft(d));
       }
@@ -62,7 +62,7 @@ public class A000721 extends AbstractSequence {
     for (final Z dd : Jaguar.factor(v).divisors()) {
       final int d = dd.intValue();
       if (m % d != 0) {
-        final int t = Functions.MOBIUS.i((long) (v / d));
+        final int t = Functions.MOBIUS.i(v / d);
         if (t != 0) {
           s = s.signedAdd(t == 1, Z.ONE.shiftLeft(d / 2));
         }

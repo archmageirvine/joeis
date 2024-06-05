@@ -14,6 +14,6 @@ public class A355214 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A355214() {
-    super(1, (self, n) -> Integers.SINGLETON.sum(1, n - 1, k -> Z.TWO.pow(k - 1).multiply(Functions.STIRLING1.z(n - 1, (long) k)).multiply(self.a(k))), "1");
+    super(1, (self, n) -> Integers.SINGLETON.sum(1, n - 1, k -> Z.TWO.pow(k - 1).multiply(Functions.STIRLING1.z(n - 1, k)).multiply(self.a(k))), "1");
   }
 }

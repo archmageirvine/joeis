@@ -31,7 +31,7 @@ public class MobiusTransformSequence extends AbstractSequence {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
-      final int m = Functions.MOBIUS.i((long) (n / d));
+      final int m = Functions.MOBIUS.i(n / d);
       if (m != 0) {
         sum = sum.signedAdd(m == 1, seq.get(d));
       }
@@ -94,7 +94,7 @@ public class MobiusTransformSequence extends AbstractSequence {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
-      final int m = Functions.MOBIUS.i((long) (n / d));
+      final int m = Functions.MOBIUS.i(n / d);
       if (m != 0) {
         final Z t = mSeq.a(mOffset + d);
         if (t == null) {

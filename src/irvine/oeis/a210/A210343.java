@@ -15,6 +15,6 @@ public class A210343 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Functions.FIBONACCI.z((long) (mN + 1)).pow(mN);
+    return Functions.FIBONACCI.z(mN + 1).pow(mN);
   }
 }

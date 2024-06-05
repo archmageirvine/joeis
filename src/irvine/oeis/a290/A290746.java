@@ -33,7 +33,7 @@ public class A290746 extends Sequence1 {
      vector(100, i, Lyndon(2, i))
   */
   private Z inner(final int m, final int s) {
-    return Integers.SINGLETON.sumdiv(m, d -> Z.valueOf(mS).pow(d).multiply(Functions.MOBIUS.i((long) (m / d))));
+    return Integers.SINGLETON.sumdiv(m, d -> Z.valueOf(mS).pow(d).multiply(Functions.MOBIUS.i(m / d)));
   }
 
   protected Z lyndon(final int s, final int n) {

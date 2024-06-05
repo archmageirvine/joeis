@@ -17,6 +17,6 @@ public class A050291 extends MemorySequence {
       return Z.ONE;
     }
     final int k = Long.numberOfTrailingZeros(n);
-    return a(n - 1).multiply(Functions.FIBONACCI.z((long) (k + 3))).divide(Functions.FIBONACCI.z((long) (k + 2)));
+    return a(n - 1).multiply(Functions.FIBONACCI.z(k + 3)).divide(Functions.FIBONACCI.z(k + 2));
   }
 }

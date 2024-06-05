@@ -20,7 +20,7 @@ public class A059203 extends Sequence0 {
       return Z.ONE;
     }
     return Integers.SINGLETON.sum(2, mN + 1,
-        k -> Functions.STIRLING1.z(mN + 1, (long) k).multiply(CR.E.multiply(Functions.FACTORIAL.z((1 << (k - 1)) - 1)).floor()))
+        k -> Functions.STIRLING1.z(mN + 1, k).multiply(CR.E.multiply(Functions.FACTORIAL.z((1 << (k - 1)) - 1)).floor()))
       .divide(Functions.FACTORIAL.z(mN))
       .add((mN & 1) == 0 ? 1 : -1);
   }

@@ -34,7 +34,7 @@ public class A055633 extends MemoryFunction2Sequence<Integer, Z> {
     if (m < n) {
       return Z.ZERO;
     }
-    Z prod = Functions.CATALAN.z((long) (n - 1));
+    Z prod = Functions.CATALAN.z(n - 1);
     for (int k = 1; k <= n; ++k) {
       prod = prod.multiply(get(0, m - k));
     }

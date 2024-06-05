@@ -21,7 +21,7 @@ public class A032198 extends Sequence1 {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(++mN).divisors()) {
       final int d = dd.intValueExact();
-      sum = sum.add(mA.a(d).multiply(Functions.PHI.l((long) (mN / d))));
+      sum = sum.add(mA.a(d).multiply(Functions.PHI.l(mN / d)));
     }
     return sum.divide(mN);
   }

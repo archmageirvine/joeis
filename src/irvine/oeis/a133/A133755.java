@@ -20,6 +20,6 @@ public class A133755 extends Sequence1 {
     if (mN == 3) {
       return Z.ZERO;
     }
-    return Integers.SINGLETON.sumdiv(mN, d -> Z.valueOf(Functions.MOBIUS.i((long) (mN / d)) * (long) d / 3));
+    return Integers.SINGLETON.sumdiv(mN, d -> Z.valueOf(Functions.MOBIUS.i(mN / d) * (long) d / 3));
   }
 }

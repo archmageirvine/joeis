@@ -334,7 +334,7 @@ public final class PolynomialUtils {
     final int n = p.degree();
     final PolynomialRingField<E> r = new PolynomialRingField<>(fld);
     final Polynomial<E> q = r.log(p, n);
-    return r.sum(1, n, i -> r.divide(r.multiply(r.deepSubstitute(q.truncate(n / i), i), fld.coerce(Functions.MOBIUS.i((long) i))), fld.coerce(i)));
+    return r.sum(1, n, i -> r.divide(r.multiply(r.deepSubstitute(q.truncate(n / i), i), fld.coerce(Functions.MOBIUS.i(i))), fld.coerce(i)));
   }
 
   /**

@@ -21,6 +21,6 @@ public class A160680 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Functions.SIGMA0.z(Functions.FIBONACCI.z((long) (mN - 1))).add(Functions.SIGMA0.z(Functions.FIBONACCI.z((long) (mN - 2))));
+    return Functions.SIGMA0.z(Functions.FIBONACCI.z(mN - 1)).add(Functions.SIGMA0.z(Functions.FIBONACCI.z(mN - 2)));
   }
 }

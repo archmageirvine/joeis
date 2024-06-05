@@ -39,7 +39,7 @@ public class Fibonacci extends AbstractPredicate {
 
     // handle general case
     int estimatedIndex = (int) (1.440420090412556479017551499657 * (n.bitLength() + 1.160964047443681173935159714711));
-    final Z f = Functions.FIBONACCI.z((long) estimatedIndex);
+    final Z f = Functions.FIBONACCI.z(estimatedIndex);
     if (f.equals(n)) {
       return estimatedIndex;
     } else if (f.compareTo(n) < 0) {

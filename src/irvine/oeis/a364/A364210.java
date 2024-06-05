@@ -15,6 +15,6 @@ public class A364210 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A364210() {
-    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> Z.THREE.pow(n / d - 1).multiply(Functions.PHI.l((long) (3 * d)))).divide(2 * n));
+    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> Z.THREE.pow(n / d - 1).multiply(Functions.PHI.l(3 * d))).divide(2 * n));
   }
 }

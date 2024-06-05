@@ -19,11 +19,11 @@ public class A050144 extends MemoryFunction2Sequence<Integer, Z> {
       return Z.ZERO;
     }
     if (m == 0) {
-      return n == 0 ? Z.ZERO : Functions.CATALAN.z((long) (n - 1));
+      return n == 0 ? Z.ZERO : Functions.CATALAN.z(n - 1);
     } else if (m == 1) {
       Z sum = Z.ZERO;
       for (int j = 0; j < n; ++j) {
-        sum = sum.add(get(n - 1 - j, 0).multiply(Functions.CATALAN.z((long) (j + 1))));
+        sum = sum.add(get(n - 1 - j, 0).multiply(Functions.CATALAN.z(j + 1)));
       }
       return sum;
     } else if (m == 2) {
@@ -35,7 +35,7 @@ public class A050144 extends MemoryFunction2Sequence<Integer, Z> {
     } else {
       Z sum = Z.ZERO;
       for (int j = 0; j < n; ++j) {
-        sum = sum.add(get(n - 1 - j, m - 1).multiply(Functions.CATALAN.z((long) (j + 1))));
+        sum = sum.add(get(n - 1 - j, m - 1).multiply(Functions.CATALAN.z(j + 1)));
       }
       return sum;
     }

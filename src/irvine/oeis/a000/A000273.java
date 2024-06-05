@@ -39,7 +39,7 @@ public class A000273 extends AbstractSequence {
             g1 += del * a[del];
           }
         }
-        g += g1 * Functions.PHI.l((long) (ord / d)) * (g1 - 1);
+        g += g1 * Functions.PHI.l(ord / d) * (g1 - 1);
       }
     }
     return g;

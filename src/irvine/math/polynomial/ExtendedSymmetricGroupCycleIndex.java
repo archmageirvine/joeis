@@ -22,7 +22,7 @@ public final class ExtendedSymmetricGroupCycleIndex {
       final Z mm = Z.valueOf(m);
       Z sum = Z.ZERO;
       for (final Z d : Jaguar.factor(s).divisors()) {
-        sum = sum.add(mm.pow(d).multiply(Functions.MOBIUS.i((long) (s / d.intValue()))));
+        sum = sum.add(mm.pow(d).multiply(Functions.MOBIUS.i(s / d.intValue())));
       }
       return sum.divide(s).intValueExact();
     } else {

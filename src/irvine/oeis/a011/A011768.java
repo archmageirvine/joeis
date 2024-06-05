@@ -56,7 +56,7 @@ public class A011768 extends Sequence1 {
     Z sum = Z.ZERO;
     for (int d = 1; d <= mN; ++d) {
       if (mN % d == 0) {
-        sum = sum.add(t1[d].multiply(Functions.MOBIUS.i((long) (mN / d))));
+        sum = sum.add(t1[d].multiply(Functions.MOBIUS.i(mN / d)));
       }
     }
     return sum;

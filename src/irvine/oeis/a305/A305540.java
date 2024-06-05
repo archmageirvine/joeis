@@ -12,6 +12,6 @@ public class A305540 extends LambdaTable {
 
   /** Construct the sequence. */
   public A305540() {
-    super(1, 1, n -> new Integer[] {1, n / 2 + 1}, (n, k) -> Functions.STIRLING2.z((n + 1) / 2, (long) k).add(Functions.STIRLING2.z(n / 2 + 1, (long) k)).multiply(Functions.FACTORIAL.z(k)).divide(2));
+    super(1, 1, n -> new Integer[] {1, n / 2 + 1}, (n, k) -> Functions.STIRLING2.z((n + 1) / 2, k).add(Functions.STIRLING2.z(n / 2 + 1, k)).multiply(Functions.FACTORIAL.z(k)).divide(2));
   }
 }

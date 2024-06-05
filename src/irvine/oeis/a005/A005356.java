@@ -30,7 +30,7 @@ public class A005356 extends Sequence1 {
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
       final Z z = power(d);
-      sum = ZUtils.mobiusAdd(Functions.MOBIUS.i((long) (n / d)), sum, z);
+      sum = ZUtils.mobiusAdd(Functions.MOBIUS.i(n / d), sum, z);
     }
     return sum.divide(n);
   }

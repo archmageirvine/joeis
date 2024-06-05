@@ -13,6 +13,6 @@ public class A354210 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A354210() {
-    super(0, n -> Functions.FIBONACCI.z((long) (n + 1)).multiply(Functions.FIBONACCI.z(n)).sqrt());
+    super(0, n -> Functions.FIBONACCI.z(n + 1).multiply(Functions.FIBONACCI.z(n)).sqrt());
   }
 }

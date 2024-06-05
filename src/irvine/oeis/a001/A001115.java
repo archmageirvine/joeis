@@ -24,7 +24,7 @@ public class A001115 extends Sequence0 {
       Z p = Z.ZERO;
       for (final Z dd : Jaguar.factor(mN).divisors()) {
         final int d = dd.intValue();
-        p = p.add(Z.valueOf(Functions.MOBIUS.i((long) (mN / d))).shiftLeft(d));
+        p = p.add(Z.valueOf(Functions.MOBIUS.i(mN / d)).shiftLeft(d));
       }
       mP.add(p.divide(mN));
     }

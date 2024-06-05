@@ -156,7 +156,7 @@ public class InverseEulerTransform extends AbstractSequence {
     final int idiv2 = i >> 1;
     for (int d = 1; d <= i; ++d) { // compute c[k] = sum ...
       if (d == 1 || d == i || (d <= idiv2 && (i % d == 0))) {
-        aSum = aSum.add(mCs.get(d).multiply(Functions.MOBIUS.i((long) (i / d)))); // "mob(i,d)"
+        aSum = aSum.add(mCs.get(d).multiply(Functions.MOBIUS.i(i / d))); // "mob(i,d)"
       }
     } // for d
     return aSum.divide(Z.valueOf(i));

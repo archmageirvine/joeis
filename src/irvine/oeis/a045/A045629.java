@@ -22,7 +22,7 @@ public class A045629 extends Sequence0 {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValueExact();
-      sum = sum.add(Binomial.binomial(2L * d - 1, d - 1).multiply(Functions.PHI.l((long) (mN / d))));
+      sum = sum.add(Binomial.binomial(2L * d - 1, d - 1).multiply(Functions.PHI.l(mN / d)));
       sum = sum.add(Z.ONE.shiftLeft(d - 1).multiply(Functions.PHI.l(2L * (mN / d))));
     }
     return sum.divide(2L * mN);

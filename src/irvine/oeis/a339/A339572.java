@@ -17,6 +17,6 @@ public class A339572 extends Sequence0 {
     // a(n) = Fibonacci(k+2) + Fibonacci(k)*(n mod 2) - 1, where k = floor(n/2).
     ++mN;
     final int k = mN / 2;
-    return Functions.FIBONACCI.z((long) (k + 2)).add(Functions.FIBONACCI.z(k).multiply(mN & 1)).subtract(1);
+    return Functions.FIBONACCI.z(k + 2).add(Functions.FIBONACCI.z(k).multiply(mN & 1)).subtract(1);
   }
 }

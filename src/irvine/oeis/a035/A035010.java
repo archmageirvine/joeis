@@ -20,11 +20,11 @@ public class A035010 extends MemorySequence {
   @Override
   protected Z computeNext() {
     final int n = size();
-    Z res = Functions.CATALAN.z((long) (n - 1));
+    Z res = Functions.CATALAN.z(n - 1);
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
       if (d > 1 && d < n) {
-        res = res.subtract(a(d).multiply(Functions.CATALAN.z((long) (n / d - 1))));
+        res = res.subtract(a(d).multiply(Functions.CATALAN.z(n / d - 1)));
       }
     }
     return res;

@@ -14,6 +14,6 @@ public class A111420 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A111420() {
-    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Functions.STIRLING2.z(n + 1, (long) k).square().multiply(Functions.FACTORIAL.z(k))));
+    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Functions.STIRLING2.z(n + 1, k).square().multiply(Functions.FACTORIAL.z(k))));
   }
 }

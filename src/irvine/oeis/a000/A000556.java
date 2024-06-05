@@ -18,7 +18,7 @@ public class A000556 extends Sequence0 {
     Z s = Z.ZERO;
     for (int k = 0; k <= mN; ++k) {
       s = s.add(Functions.FACTORIAL.z(k)
-                .multiply(Functions.FIBONACCI.z((long) (k + 1)))
+                .multiply(Functions.FIBONACCI.z(k + 1))
                 .multiply(Functions.STIRLING2.z(mN, k)));
     }
     return s;

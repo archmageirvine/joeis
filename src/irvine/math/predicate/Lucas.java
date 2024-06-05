@@ -40,7 +40,7 @@ public class Lucas extends AbstractPredicate {
 
     // handle general case
     int estimatedIndex = (int) (1.440420090412556479017551499657 * (double) n.bitLength());
-    final Z l = Functions.LUCAS.z((long) estimatedIndex);
+    final Z l = Functions.LUCAS.z(estimatedIndex);
     if (l.equals(n)) {
       return estimatedIndex;
     } else if (l.compareTo(n) < 0) {

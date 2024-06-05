@@ -18,9 +18,9 @@ public class A053633 extends Sequence0 {
     for (int d = 1; d <= n; d += 2) {
       if (n % d == 0) {
         final int g = Functions.GCD.i(d, k);
-        final int mu = Functions.MOBIUS.i((long) (d / g));
+        final int mu = Functions.MOBIUS.i(d / g);
         if (mu != 0) {
-          final long t1 = mu * Functions.PHI.l(d) / Functions.PHI.l((long) (d / g));
+          final long t1 = mu * Functions.PHI.l(d) / Functions.PHI.l(d / g);
           t = t.add(Z.valueOf(t1).shiftLeft(n / d));
         }
       }

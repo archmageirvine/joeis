@@ -20,6 +20,6 @@ public class A050293 extends MemorySequence {
       return Z.TWO;
     }
     final int k = Functions.VALUATION.i(n, 3);
-    return a(n - 1).multiply(Functions.FIBONACCI.z((long) (k + 3))).divide(Functions.FIBONACCI.z((long) (k + 2)));
+    return a(n - 1).multiply(Functions.FIBONACCI.z(k + 3)).divide(Functions.FIBONACCI.z(k + 2));
   }
 }

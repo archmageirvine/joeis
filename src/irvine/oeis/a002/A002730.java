@@ -30,7 +30,7 @@ public class A002730 extends A002729 {
     Z s = Z.ZERO;
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValueExact();
-      s = s.add(mA2729.get(d).multiply(Functions.MOBIUS.i((long) (n / d))));
+      s = s.add(mA2729.get(d).multiply(Functions.MOBIUS.i(n / d)));
     }
     return s;
   }

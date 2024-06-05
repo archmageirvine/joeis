@@ -23,7 +23,7 @@ public class A074651 extends Sequence1 {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValueExact();
-      final int mobius = Functions.MOBIUS.i((long) (mN / d));
+      final int mobius = Functions.MOBIUS.i(mN / d);
       if (mobius != 0) {
         sum = sum.signedAdd(mobius > 0, Functions.FACTORIAL.z(scale() * d).divide(Functions.FACTORIAL.z(d).pow(scale())));
       }

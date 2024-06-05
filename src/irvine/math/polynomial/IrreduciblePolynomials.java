@@ -14,7 +14,6 @@ import irvine.util.AbstractIterator;
 
 /**
  * Irreducible polynomials over <code>GF(2)</code>.
- *
  * @author Sean A. Irvine
  */
 public final class IrreduciblePolynomials {
@@ -33,7 +32,7 @@ public final class IrreduciblePolynomials {
     Z s = Z.ZERO;
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
-      final int m = Functions.MOBIUS.i((long) (n / d));
+      final int m = Functions.MOBIUS.i(n / d);
       if (m == 1) {
         s = s.add(Z.ONE.shiftLeft(d));
       } else if (m == -1) {

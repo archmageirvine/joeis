@@ -16,6 +16,6 @@ public class A268592 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A268592() {
-    super(1, n -> Z.SIX.multiply(Integers.SINGLETON.sumdiv(n, d -> Z.valueOf(Functions.MOBIUS.i((long) (n / d))).multiply(Binomial.binomial(2 * d, d)))).divide(Z.valueOf(n).pow(3)));
+    super(1, n -> Z.SIX.multiply(Integers.SINGLETON.sumdiv(n, d -> Z.valueOf(Functions.MOBIUS.i(n / d)).multiply(Binomial.binomial(2 * d, d)))).divide(Z.valueOf(n).pow(3)));
   }
 }

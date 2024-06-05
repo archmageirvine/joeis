@@ -15,9 +15,9 @@ public class A066426 extends Sequence1 {
 
   @Override
   public Z next() {
-    final long phi = Functions.PHI.l((long) ++mN);
+    final long phi = Functions.PHI.l(++mN);
     for (int k = 1; k < HEURISTIC_MAX; ++k) {
-      if (phi + Functions.PHI.l(k) == Functions.PHI.l((long) (mN + k))) {
+      if (phi + Functions.PHI.l(k) == Functions.PHI.l(mN + k)) {
         return Z.valueOf(k);
       }
     }

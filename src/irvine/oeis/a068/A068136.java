@@ -31,7 +31,7 @@ public class A068136 extends A007908 {
       if (t1.compareTo(lo) > 0 && t1.compareTo(hi) <= 0) {
         return t1;
       }
-      final Z t2 = Functions.FIBONACCI.z((long) (1 - i));
+      final Z t2 = Functions.FIBONACCI.z(1 - i);
       if (t2.compareTo(hi) <= 0) {
         return t2;
       }

@@ -15,6 +15,6 @@ public class A005817 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Functions.CATALAN.z((long) ((mN + 1) / 2)).multiply(Functions.CATALAN.z((long) (mN / 2 + 1)));
+    return Functions.CATALAN.z((mN + 1) / 2).multiply(Functions.CATALAN.z(mN / 2 + 1));
   }
 }

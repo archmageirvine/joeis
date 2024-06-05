@@ -15,7 +15,7 @@ public class A094416 extends LambdaArray {
   /** Construct the sequence. */
   public A094416() {
     super(1, 1, 1, 1, (r, n) -> Integers.SINGLETON.sum(0, n, k -> {
-      return Functions.FACTORIAL.z(k).multiply(Z.valueOf(r).pow(k)).multiply(Functions.STIRLING2.z((long) n, (long) k));
+      return Functions.FACTORIAL.z(k).multiply(Z.valueOf(r).pow(k)).multiply(Functions.STIRLING2.z(n, k));
     }));
   }
 }

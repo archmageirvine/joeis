@@ -18,7 +18,7 @@ public class A061447 extends Sequence1 {
     Z den = Z.ONE;
     for (final Z dd : Jaguar.factor(2L * n).divisors()) {
       final int d = dd.intValueExact();
-      final int m = Functions.MOBIUS.i((long) d);
+      final int m = Functions.MOBIUS.i(d);
       if (m == 1) {
         num = num.multiply(Functions.FIBONACCI.z(2L * n / d));
       } else if (m == -1) {

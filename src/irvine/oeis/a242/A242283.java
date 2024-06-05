@@ -16,7 +16,7 @@ public class A242283 extends LambdaSequence {
   /** Construct the sequence. */
   public A242283() {
     super(0, n -> Integers.SINGLETON.sum(0, n, k -> {
-      return Functions.FACTORIAL.z(k).pow(Z.SIX).multiply(Functions.STIRLING2.z((long) n, (long) k).pow(Z.THREE));
+      return Functions.FACTORIAL.z(k).pow(Z.SIX).multiply(Functions.STIRLING2.z(n, k).pow(Z.THREE));
     }));
   }
 }

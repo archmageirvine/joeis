@@ -15,6 +15,6 @@ public class A024492 extends Sequence0 {
   @Override
   public Z next() {
     mN += 2;
-    return Functions.CATALAN.z((long) mN);
+    return Functions.CATALAN.z(mN);
   }
 }

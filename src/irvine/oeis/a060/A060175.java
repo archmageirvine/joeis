@@ -17,7 +17,7 @@ public class A060175 extends AntidiagonalSequence {
       @Override
       protected Z compute(int n, final int m) {
         int cnt = 0;
-        final int p = (int) Functions.PRIME.l(m);
+        final int p = Functions.PRIME.i(m);
         while (n % p == 0) {
           n /= p;
           ++cnt;

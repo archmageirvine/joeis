@@ -18,7 +18,7 @@ public class A001581 extends Sequence1 {
   private void augment(final Z v) {
     // We will run out of RAM way before we hit F(50)=12586269025
     for (int k = 0; k < 50; ++k) {
-      mLosers.add(Functions.FIBONACCI.z((long) k).add(v));
+      mLosers.add(Functions.FIBONACCI.z(k).add(v));
     }
   }
 

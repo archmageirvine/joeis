@@ -15,6 +15,6 @@ public class A308842 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A308842() {
-    super(0, n -> Integers.SINGLETON.sum(1, n / 5, l -> Integers.SINGLETON.sum(l, (n - l) / 4, k -> Integers.SINGLETON.sum(k, (n - k - l) / 3, j -> Integers.SINGLETON.sum(j, (n - j - k - l) / 2, i -> Z.valueOf(k).multiply(Z.valueOf(Functions.MOBIUS.i((long) l)).square()).multiply(Z.valueOf(Functions.MOBIUS.i((long) k)).square()).multiply(Z.valueOf(Functions.MOBIUS.i((long) j)).square()).multiply(Z.valueOf(Functions.MOBIUS.i((long) i)).square()).multiply(Z.valueOf(Functions.MOBIUS.i((long) (n - i - j - k - l))).square()))))));
+    super(0, n -> Integers.SINGLETON.sum(1, n / 5, l -> Integers.SINGLETON.sum(l, (n - l) / 4, k -> Integers.SINGLETON.sum(k, (n - k - l) / 3, j -> Integers.SINGLETON.sum(j, (n - j - k - l) / 2, i -> Z.valueOf(k).multiply(Z.valueOf(Functions.MOBIUS.i(l)).square()).multiply(Z.valueOf(Functions.MOBIUS.i(k)).square()).multiply(Z.valueOf(Functions.MOBIUS.i(j)).square()).multiply(Z.valueOf(Functions.MOBIUS.i(i)).square()).multiply(Z.valueOf(Functions.MOBIUS.i((long) (n - i - j - k - l))).square()))))));
   }
 }

@@ -22,7 +22,7 @@ public class A052821 extends Sequence0 {
     ++mN;
     Polynomial<Q> sum = RING.zero();
     for (int j = 1; j <= mN; ++j) {
-      sum = RING.add(sum, RING.multiply(RING.log(RING.series(RING.oneMinusXToTheN(j), RING.oneMinusXToTheN(Q.TWO, j), mN), mN), new Q(Functions.PHI.l((long) j), j)));
+      sum = RING.add(sum, RING.multiply(RING.log(RING.series(RING.oneMinusXToTheN(j), RING.oneMinusXToTheN(Q.TWO, j), mN), mN), new Q(Functions.PHI.l(j), j)));
     }
     return RING.pow(sum, 2, mN).coeff(mN).toZ();
   }

@@ -15,6 +15,6 @@ public class A143395 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A143395() {
-    super(0, 0, 0, (n, k) -> Integers.SINGLETON.sum(k, n, t -> Binomial.binomial(n, t).multiply(Functions.STIRLING2.z((long) t, (long) k)).multiply(Z.valueOf(k).pow(n - t))));
+    super(0, 0, 0, (n, k) -> Integers.SINGLETON.sum(k, n, t -> Binomial.binomial(n, t).multiply(Functions.STIRLING2.z(t, k)).multiply(Z.valueOf(k).pow(n - t))));
   }
 }

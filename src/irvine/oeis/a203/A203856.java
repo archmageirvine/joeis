@@ -22,6 +22,6 @@ public class A203856 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> Functions.LUCAS.z((long) d).pow(5).multiply(Functions.MOBIUS.i((long) (mN / d)))).divide(mN);
+    return Integers.SINGLETON.sumdiv(mN, d -> Functions.LUCAS.z(d).pow(5).multiply(Functions.MOBIUS.i((long) (mN / d)))).divide(mN);
   }
 }

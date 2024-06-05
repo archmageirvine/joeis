@@ -13,6 +13,6 @@ public class A161187 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A161187() {
-    super(1, n -> Functions.PRIME_PI.z((long) n * n - 1).add(n));
+    super(1, n -> Functions.PRIME_PI.z(n * n - 1).add(n));
   }
 }

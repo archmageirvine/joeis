@@ -16,7 +16,7 @@ public class A063374 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    final Z result = Functions.FIBONACCI.z((long) mF);
+    final Z result = Functions.FIBONACCI.z(mF);
     mF *= mN;
     return result;
   }

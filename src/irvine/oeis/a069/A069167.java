@@ -17,7 +17,7 @@ public class A069167 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Q s = Rationals.SINGLETON.sumdiv(++mN, d -> new Q(Z.ONE, Functions.PHI.z((long) d)));
+      final Q s = Rationals.SINGLETON.sumdiv(++mN, d -> new Q(Z.ONE, Functions.PHI.z(d)));
       if (s.multiply(mN).isInteger()) {
         return Z.valueOf(mN);
       }

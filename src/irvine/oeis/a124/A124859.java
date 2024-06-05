@@ -13,6 +13,6 @@ public class A124859 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A124859() {
-    super(1, (p, e) -> Functions.PRIMORIAL_COUNT.z((long) e));
+    super(1, (p, e) -> Functions.PRIMORIAL_COUNT.z(e));
   }
 }

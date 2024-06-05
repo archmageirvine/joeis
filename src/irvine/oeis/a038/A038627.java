@@ -27,7 +27,7 @@ public class A038627 extends Sequence1 {
     mMin = Double.POSITIVE_INFINITY;
     mMax = 0;
     while (x <= x1) {
-      if (x == Functions.PRIME_PI.l((long) mN * x)) {
+      if (x == Functions.PRIME_PI.l(mN * x)) {
         ++cnt;
         if (x < mMin) {
           mMin = x;

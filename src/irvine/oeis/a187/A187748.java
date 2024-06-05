@@ -15,6 +15,6 @@ public class A187748 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A187748() {
-    super(1, n -> Integers.SINGLETON.product(1, n, k -> Integers.SINGLETON.sumdiv(k, d -> Z.valueOf(Functions.MOBIUS.i((long) d)).multiply(Z.ONE.shiftLeft(k / d)))).divide2());
+    super(1, n -> Integers.SINGLETON.product(1, n, k -> Integers.SINGLETON.sumdiv(k, d -> Z.valueOf(Functions.MOBIUS.i(d)).multiply(Z.ONE.shiftLeft(k / d)))).divide2());
   }
 }

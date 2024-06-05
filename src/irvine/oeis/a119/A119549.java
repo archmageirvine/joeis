@@ -22,6 +22,6 @@ public class A119549 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Binomial.binomial(Functions.CATALAN.z((long) mN), Z.FOUR);
+    return Binomial.binomial(Functions.CATALAN.z(mN), Z.FOUR);
   }
 }

@@ -15,6 +15,6 @@ public class A362021 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A362021() {
-    super(1, n -> Rationals.SINGLETON.sum(1, n, k -> ((((n - k) & 1) == 0) ? Q.ONE : Q.NEG_ONE).multiply(k).multiply(Functions.MOBIUS.i((long) k))).num());
+    super(1, n -> Rationals.SINGLETON.sum(1, n, k -> ((((n - k) & 1) == 0) ? Q.ONE : Q.NEG_ONE).multiply(k).multiply(Functions.MOBIUS.i(k))).num());
   }
 }

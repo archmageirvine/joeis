@@ -13,8 +13,6 @@ public class A270403 extends A269993 {
 
   /** Construct the sequence. */
   public A270403() {
-    super(1, CR.TWO.log(), k -> {
-      return Functions.FIBONACCI.z((long) (k + 1));
-    });
+    super(1, CR.TWO.log(), k -> Functions.FIBONACCI.z(k + 1));
   }
 }

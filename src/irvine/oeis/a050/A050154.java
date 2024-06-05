@@ -32,7 +32,7 @@ public class A050154 extends MemoryFunction2Sequence<Integer, Z> {
     } else if (m == 2) {
       Z sum = Z.ZERO;
       for (int j = 0; j <= n; ++j) {
-        sum = sum.add(get(n - j, 1).multiply(Functions.CATALAN.z((long) j)));
+        sum = sum.add(get(n - j, 1).multiply(Functions.CATALAN.z(j)));
       }
       return sum;
     } else {

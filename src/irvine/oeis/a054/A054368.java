@@ -23,7 +23,7 @@ public class A054368 extends Sequence0 {
       return Binomial.binomial(6L * d, d).multiply(Functions.PHI.l((long) (mN / d)));
     });
     final Z b = Integers.SINGLETON.sumdiv(Functions.GCD.i(mN - 1, 6), d -> {
-      return Binomial.binomial(6L * mN / d, (mN - 1) / d).multiply(Functions.PHI.l((long) d));
+      return Binomial.binomial(6L * mN / d, (mN - 1) / d).multiply(Functions.PHI.l(d));
     });
     return a.add(b).divide(6L * mN).subtract(Binomial.binomial(6L * mN, mN).divide(5L * mN + 1));
   }

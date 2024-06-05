@@ -79,7 +79,7 @@ public class A068596 extends Sequence1 {
     assert s2 >= 0;
     return Integers.SINGLETON.sumdiv(n, d -> {
       final int nd = n / d;
-      final int mobius = Functions.MOBIUS.i((long) nd);
+      final int mobius = Functions.MOBIUS.i(nd);
       if (mobius != 0) {
         final int g1 = Functions.GCD.i(nd, m);
         final int g2 = Functions.GCD.i(nd, m2);

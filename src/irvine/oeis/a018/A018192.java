@@ -133,7 +133,7 @@ public class A018192 extends A081054 {
     for (final Z dd : Jaguar.factor(n2).divisors()) {
       final int d = dd.intValue();
       final int c = n2 / d;
-      sum = sum.add(gammaTilde(d, c).multiply(Functions.PHI.l((long) c)));
+      sum = sum.add(gammaTilde(d, c).multiply(Functions.PHI.l(c)));
     }
     return sum.divide(n2);
   }

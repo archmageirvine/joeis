@@ -71,7 +71,7 @@ public class A210696 extends Sequence0 {
     Z sum = Z.ZERO;
     for (final Z d : Jaguar.factor(m + 3).divisors()) {
       final int s = d.intValueExact();
-      sum = sum.add(brownE(s, n, m).multiply(Functions.PHI.l((long) s)));
+      sum = sum.add(brownE(s, n, m).multiply(Functions.PHI.l(s)));
     }
     return sum.divide(m + 3);
   }

@@ -16,7 +16,7 @@ public class A214885 extends LambdaSequence {
   /** Construct the sequence. */
   public A214885() {
     super(0, n -> Integers.SINGLETON.sum(0, n, k -> {
-      return Z.NEG_ONE.pow(k).multiply(Functions.FIBONACCI.z((long) k)).multiply(Functions.FIBONACCI.z((long) (k + 3)));
+      return Z.NEG_ONE.pow(k).multiply(Functions.FIBONACCI.z(k)).multiply(Functions.FIBONACCI.z((long) (k + 3)));
     }));
   }
 }

@@ -1,6 +1,5 @@
 package irvine.oeis.a034;
 
-import irvine.factor.prime.Fast;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a322.A322583;
@@ -14,7 +13,6 @@ public class A034876 extends A322583 {
   // After Antti Karttunen
 
   private int mN = 0;
-  private final Fast mPrime = new Fast();
 
   private long calculate(final Z n, final int m, final int p) {
     if (Z.ONE.equals(n)) {
@@ -30,6 +28,6 @@ public class A034876 extends A322583 {
 
   @Override
   public Z next() {
-    return ++mN == 1 ? Z.ZERO : Z.valueOf(calculate(Functions.FACTORIAL.z(mN), mN - 1, (int) mPrime.prevPrime(mN + 1)));
+    return ++mN == 1 ? Z.ZERO : Z.valueOf(calculate(Functions.FACTORIAL.z(mN), mN - 1, Functions.PREV_PRIME.i(mN + 1)));
   }
 }

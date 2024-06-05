@@ -20,6 +20,6 @@ public class A125101 extends BaseTriangle {
 
   @Override
   public Z triangleElement(final int n, final int k) {
-    return Binomial.binomial(n - 1, k - 1).multiply(k).add(Functions.FIBONACCI.z((long) k).multiply(Binomial.binomial(n - 1, k)));
+    return Binomial.binomial(n - 1, k - 1).multiply(k).add(Functions.FIBONACCI.z(k).multiply(Binomial.binomial(n - 1, k)));
   }
 }

@@ -25,7 +25,7 @@ public class A048605 extends MemoryFunction2Sequence<Integer, Q> {
     final int c = a + b;
     if (((n + m) & 1) == 0 && c != 0) {
       for (int k = m; k <= n; ++k) {
-        sum = sum.add(new Q(Binomial.binomial(n - 1, k - 1).multiply(Functions.STIRLING1.z(k, (long) m)).shiftLeft(k), Functions.FACTORIAL.z(k)));
+        sum = sum.add(new Q(Binomial.binomial(n - 1, k - 1).multiply(Functions.STIRLING1.z(k, m)).shiftLeft(k), Functions.FACTORIAL.z(k)));
       }
       sum = sum.multiply(c).multiply(Functions.FACTORIAL.z(m));
       sum = sum.divide(Z.ONE.shiftLeft(m + 1));

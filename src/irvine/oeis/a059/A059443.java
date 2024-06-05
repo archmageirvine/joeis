@@ -17,6 +17,6 @@ public class A059443 extends A060052 {
 
   @Override
   protected Z t(final int n, final int m) {
-    return Integers.SINGLETON.sum(0, n, k -> Functions.STIRLING2.z(n, (long) k).multiply(super.t(k, m)));
+    return Integers.SINGLETON.sum(0, n, k -> Functions.STIRLING2.z(n, k).multiply(super.t(k, m)));
   }
 }

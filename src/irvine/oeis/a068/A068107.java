@@ -18,7 +18,7 @@ public class A068107 extends Sequence1 {
     final int n = ++mN;
     final Z fn = Functions.FACTORIAL.z(n);
     return Integers.SINGLETON.sum(1, mN, k -> {
-      return fn.divide(Functions.FACTORIAL.z(k)).multiply(Functions.MOBIUS.i((long) k));
+      return fn.divide(Functions.FACTORIAL.z(k)).multiply(Functions.MOBIUS.i(k));
     });
   }
 }

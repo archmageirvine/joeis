@@ -48,7 +48,7 @@ public class A052265 extends A052107 {
       for (int j = 0; j <= i; ++j) {
         if (v[i].mod(v[j]).isZero()) {
           final int d = v[i].divide(v[j]).intValueExact();
-          final int mu = Functions.MOBIUS.i((long) d);
+          final int mu = Functions.MOBIUS.i(d);
           sum += mu * u.get(j).intValueExact();
         }
       }

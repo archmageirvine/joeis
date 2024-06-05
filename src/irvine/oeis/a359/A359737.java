@@ -10,6 +10,6 @@ public class A359737 extends A359734 {
 
   /** Construct the sequence. */
   public A359737() {
-    super(n -> Functions.FIBONACCI.z((long) n), 0);
+    super(n -> Functions.FIBONACCI.z(n), 0);
   }
 }

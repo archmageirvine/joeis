@@ -14,6 +14,6 @@ public class A358821 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A358821() {
-    super(2, n -> Z.valueOf((long) n * n - 1).divide(Functions.CORE.z((long) n * n - 1)));
+    super(2, n -> Z.valueOf((long) n * n - 1).divide(Functions.CORE.z(n * n - 1)));
   }
 }

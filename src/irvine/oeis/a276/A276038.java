@@ -14,7 +14,7 @@ public class A276038 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A276038() {
     super(1, 0, n -> {
-      final long prod = Functions.DIGIT_PRODUCT.l((long) n);
+      final long prod = Functions.DIGIT_PRODUCT.l(n);
       if (prod == 1 || prod == 6) {
         return true;
       } else {

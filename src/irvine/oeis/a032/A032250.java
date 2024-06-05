@@ -40,7 +40,7 @@ public class A032250 extends Sequence1 {
     Polynomial<Z> sum = RING.zero();
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValue();
-      final int mu = Functions.MOBIUS.i((long) d);
+      final int mu = Functions.MOBIUS.i(d);
       if (mu != 0) {
         sum = RING.signedAdd(mu == 1, sum, f(mN / d, d, 2 * mN));
       }

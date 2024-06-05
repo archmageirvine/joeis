@@ -12,6 +12,6 @@ public class A075181 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A075181() {
-    super(1, 1, 0, (n, m) -> Functions.STIRLING1.z((long) n, n - m).abs().multiply(Functions.FACTORIAL.z(n - m)));
+    super(1, 1, 0, (n, m) -> Functions.STIRLING1.z(n, n - m).abs().multiply(Functions.FACTORIAL.z(n - m)));
   }
 }

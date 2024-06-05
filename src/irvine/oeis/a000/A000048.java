@@ -37,7 +37,7 @@ public class A000048 extends AbstractSequence {
       final int dd = d.intValue();
       if ((dd & 1) == 1) {
         final Z t = Z.ONE.shiftLeft(mN / dd);
-        sum = ZUtils.mobiusAdd(Functions.MOBIUS.i((long) dd), sum, t);
+        sum = ZUtils.mobiusAdd(Functions.MOBIUS.i(dd), sum, t);
       }
     }
     return sum.divide(2L * mN);

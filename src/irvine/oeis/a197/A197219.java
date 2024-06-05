@@ -18,6 +18,6 @@ public class A197219 extends Sequence0 {
     if (mN == 0) {
       return Z.TWO;
     }
-    return Functions.LUCAS.z((long) Functions.PHI.i(mN));
+    return Functions.LUCAS.z(Functions.PHI.i(mN));
   }
 }

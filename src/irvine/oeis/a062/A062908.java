@@ -33,8 +33,8 @@ public class A062908 extends AbstractSequence {
   public Z next() {
     while (true) {
       ++mN;
-      final long nm = Functions.REVERSE.l((long) mN);
-      if (mN != nm && mN % mMult == 0 && Functions.REVERSE.l((long) mN) % mMult == 0) {
+      final long nm = Functions.REVERSE.l(mN);
+      if (mN != nm && mN % mMult == 0 && Functions.REVERSE.l(mN) % mMult == 0) {
         return Z.valueOf(mN);
       }
     }

@@ -21,6 +21,6 @@ public class A142472 extends BaseTriangle {
 
   @Override
   public Z triangleElement(final int n, final int k) {
-    return Binomial.binomial(n, k).multiply(Integers.SINGLETON.sum(k, n, j -> Functions.STIRLING1.z(n, (long) j).multiply(Functions.STIRLING1.z((long) j, k))));
+    return Binomial.binomial(n, k).multiply(Integers.SINGLETON.sum(k, n, j -> Functions.STIRLING1.z(n, j).multiply(Functions.STIRLING1.z(j, k))));
   }
 }

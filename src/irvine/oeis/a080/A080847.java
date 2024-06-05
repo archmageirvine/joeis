@@ -21,6 +21,6 @@ public class A080847 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(Functions.MOBIUS.i((long) mN)).add(2);
+    return Z.valueOf(Functions.MOBIUS.i(mN)).add(2);
   }
 }

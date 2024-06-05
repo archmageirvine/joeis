@@ -21,6 +21,6 @@ public class A246846 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Functions.CATALAN.z((long) mN).mod(Functions.FIBONACCI.z((long) mN));
+    return Functions.CATALAN.z(mN).mod(Functions.FIBONACCI.z(mN));
   }
 }

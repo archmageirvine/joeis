@@ -15,6 +15,6 @@ public class A068098 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Functions.LUCAS.z(Functions.FIBONACCI.z((long) mN));
+    return Functions.LUCAS.z(Functions.FIBONACCI.z(mN));
   }
 }

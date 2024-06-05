@@ -24,7 +24,7 @@ public class A013980 extends Sequence3 {
     res = res.add(Functions.CATALAN.z((long) (mN - 1)));
     res = res.subtract(Functions.FIBONACCI.z(2L * mN - 1).multiply2());
     res = res.subtract(Functions.FIBONACCI.z(2L * mN - 3).multiply2());
-    res = res.add(Functions.FIBONACCI.z((long) mN));
+    res = res.add(Functions.FIBONACCI.z(mN));
     return res.subtract(1);
   }
 }

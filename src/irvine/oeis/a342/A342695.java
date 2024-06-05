@@ -14,6 +14,6 @@ public class A342695 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A342695() {
-    super(1, n -> Functions.PRIME_PI.z((long) n * n - n).subtract(Functions.PRIME_PI.z(n)).subtract(Integers.SINGLETON.sum(1, n - 2, k -> Functions.PRIME_PI.z((long) n * k + 1).subtract(Functions.PRIME_PI.z((long) n * k)))));
+    super(1, n -> Functions.PRIME_PI.z(n * n - n).subtract(Functions.PRIME_PI.z(n)).subtract(Integers.SINGLETON.sum(1, n - 2, k -> Functions.PRIME_PI.z(n * k + 1).subtract(Functions.PRIME_PI.z(n * k)))));
   }
 }

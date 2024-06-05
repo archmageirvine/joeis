@@ -18,6 +18,6 @@ public class A338657 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> Binomial.binomial(d + mN / d - 1, d).multiply(Functions.MOBIUS.i((long) d)));
+    return Integers.SINGLETON.sumdiv(mN, d -> Binomial.binomial(d + mN / d - 1, d).multiply(Functions.MOBIUS.i(d)));
   }
 }

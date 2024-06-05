@@ -31,7 +31,7 @@ public class A061827 extends Sequence1 {
 
   @Override
   public Z next() {
-    return mB.get(++mN, Functions.SYNDROME.i((long) mN), 1);
+    return mB.get(++mN, Functions.SYNDROME.i(mN), 1);
   }
 }
 

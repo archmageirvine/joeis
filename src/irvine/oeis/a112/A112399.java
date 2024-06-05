@@ -20,7 +20,7 @@ public class A112399 extends Sequence1 {
     for (int k = 1; k <= mN; ++k) {
       final long gd = Functions.GCD.l(mN, k);
       if (gd == 1) {
-        sum = sum.add(Functions.MOBIUS.i((long) k));
+        sum = sum.add(Functions.MOBIUS.i(k));
       }
     }
     return sum;

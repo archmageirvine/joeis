@@ -13,8 +13,6 @@ public class A169613 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A169613() {
-    super(3, 3, 3, (n, k) -> {
-      return new Q(Functions.FIBONACCI.z((long) n), Functions.FIBONACCI.z((long) (n - k + 2))).floor();
-    });
+    super(3, 3, 3, (n, k) -> new Q(Functions.FIBONACCI.z(n), Functions.FIBONACCI.z(n - k + 2)).floor());
   }
 }

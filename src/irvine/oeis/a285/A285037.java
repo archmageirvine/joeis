@@ -36,7 +36,7 @@ public class A285037 extends MemoryFunction2Sequence<Integer, Z> {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
-      final int m = Functions.MOBIUS.i((long) d);
+      final int m = Functions.MOBIUS.i(d);
       if (m != 0) {
         Z s = Functions.STIRLING2.z((n / d + 1) / 2, (long) k).add(Functions.STIRLING2.z(n / d / 2 + 1, (long) k));
         if (((n - d) & 1) == 1) {

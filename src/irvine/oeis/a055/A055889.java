@@ -54,7 +54,7 @@ public class A055889 extends Sequence1 {
       mGf = RING.zero();
       for (int s = 1; s <= mN; ++s) {
         final Polynomial<Polynomial<Q>> subs = PolynomialUtils.innerSubstitute(RING, mA.substitutePower(s, mN), s, mN);
-        mGf = RING.add(mGf, RING.multiply(RING.log1p(subs, mN), RING_Y.monomial(new Q(Functions.PHI.l((long) s), s), 0)));
+        mGf = RING.add(mGf, RING.multiply(RING.log1p(subs, mN), RING_Y.monomial(new Q(Functions.PHI.l(s), s), 0)));
       }
       //System.out.println("a:" + mA);
       //System.out.println("g:" + mGf);

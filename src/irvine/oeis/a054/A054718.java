@@ -29,7 +29,7 @@ public class A054718 extends Sequence0 {
    */
   public A054718(final int base) {
     mBase = Z.valueOf(base);
-    mF = d -> mBase.pow(mN / d).multiply(Functions.MOBIUS.i((long) d));
+    mF = d -> mBase.pow(mN / d).multiply(Functions.MOBIUS.i(d));
     mN = -1;
   }
 

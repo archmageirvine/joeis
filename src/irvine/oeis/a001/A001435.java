@@ -56,7 +56,7 @@ public class A001435 extends A001430 {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(Functions.GCD.i(nodes, edges)).divisors()) {
       final int d = dd.intValue();
-      sum = sum.add(b(nodes / d, edges / d).multiply(Functions.MOBIUS.i((long) d)).divide(d));
+      sum = sum.add(b(nodes / d, edges / d).multiply(Functions.MOBIUS.i(d)).divide(d));
     }
     return sum;
   }

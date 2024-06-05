@@ -15,6 +15,6 @@ public class A105586 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A105586() {
-    super(0, 0, 0, (n, k) -> (k != 0 || Jaguar.factor(n).isSquareFree()) ? Binomial.binomial(Math.abs(Functions.MOBIUS.i((long) n)), Math.abs(Functions.MOBIUS.i((long) k))) : Z.ZERO);
+    super(0, 0, 0, (n, k) -> (k != 0 || Jaguar.factor(n).isSquareFree()) ? Binomial.binomial(Math.abs(Functions.MOBIUS.i(n)), Math.abs(Functions.MOBIUS.i(k))) : Z.ZERO);
   }
 }

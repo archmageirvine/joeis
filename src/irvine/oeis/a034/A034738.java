@@ -15,6 +15,6 @@ public class A034738 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sumdiv(++mN, d -> Functions.PHI.z((long) mN / d).shiftLeft(d - 1));
+    return Integers.SINGLETON.sumdiv(++mN, d -> Functions.PHI.z(mN / d).shiftLeft(d - 1));
   }
 }

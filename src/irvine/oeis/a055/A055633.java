@@ -25,7 +25,7 @@ public class A055633 extends MemoryFunction2Sequence<Integer, Z> {
       if (m <= 1) {
         return Z.ONE;
       }
-      Z prod = Functions.CATALAN.z((long) m);
+      Z prod = Functions.CATALAN.z(m);
       for (int k = 1; k < m; ++k) {
         prod = prod.multiply(get(0, k));
       }

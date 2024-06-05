@@ -42,7 +42,7 @@ public class A011768 extends Sequence1 {
       Z sum = Z.ZERO;
       for (int d = 1; d <= k; ++d) {
         if (k % d == 0) {
-          sum = sum.add(a(k, d).multiply(Functions.PHI.l((long) d)));
+          sum = sum.add(a(k, d).multiply(Functions.PHI.l(d)));
         }
       }
       t[k] = sum.add(e(k)).divide(4L * k);

@@ -15,6 +15,6 @@ public class A016098 extends Sequence0 {
   @Override
   public Z next() {
     final int index = ++mN;
-    return Functions.BELL.z(index).subtract(Functions.CATALAN.z((long) mN));
+    return Functions.BELL.z(index).subtract(Functions.CATALAN.z(mN));
   }
 }

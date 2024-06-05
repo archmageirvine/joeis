@@ -14,7 +14,7 @@ public class A333125 extends LambdaSequence {
   /** Construct the sequence. */
   public A333125() {
     super(0, n -> {
-      return Binomial.binomial(Functions.FIBONACCI.z((long) n), n);
+      return Binomial.binomial(Functions.FIBONACCI.z(n), n);
     });
   }
 }

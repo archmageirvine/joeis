@@ -15,6 +15,6 @@ public class A157658 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return mN == 1 ? Z.ZERO : Z.valueOf(-Functions.MOBIUS.i((long) mN));
+    return mN == 1 ? Z.ZERO : Z.valueOf(-Functions.MOBIUS.i(mN));
   }
 }

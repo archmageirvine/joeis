@@ -23,7 +23,7 @@ public class A033985 extends Sequence1 {
     for (int k = 1; k * k <= mN; ++k) {
       prod = RING.multiply(prod, RING.onePlusXToTheN(k * k), mN);
     }
-    final long s = Functions.SQRT.l((long) mN);
+    final long s = Functions.SQRT.l(mN);
     return prod.coeff(mN).subtract(s * s == mN ? 1 : 0);
   }
 }

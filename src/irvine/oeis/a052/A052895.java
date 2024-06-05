@@ -21,7 +21,7 @@ public class A052895 extends Sequence0 {
       if (k > 1) {
         kf = kf.multiply(k);
       }
-      sum = sum.add(Functions.STIRLING2.z(mN, k).multiply(Functions.CATALAN.z((long) k)).multiply(kf));
+      sum = sum.add(Functions.STIRLING2.z(mN, k).multiply(Functions.CATALAN.z(k)).multiply(kf));
     }
     return sum;
   }

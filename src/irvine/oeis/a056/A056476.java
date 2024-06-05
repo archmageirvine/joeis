@@ -33,7 +33,7 @@ public class A056476 extends AbstractSequence {
     if (mN == 0) {
       return Z.ONE;
     }
-    return Integers.SINGLETON.sumdiv(mN, d -> Z.ONE.shiftLeft((mN / d - 1) / 2).multiply(Functions.MOBIUS.i((long) d)));
+    return Integers.SINGLETON.sumdiv(mN, d -> Z.ONE.shiftLeft((mN / d - 1) / 2).multiply(Functions.MOBIUS.i(d)));
   }
 
 }

@@ -23,7 +23,7 @@ public class A052815 extends Sequence0 {
     Polynomial<Q> res = RING.zero();
     for (int d = 1; d <= n; ++d) {
       final Polynomial<Q> s = RING.log(t.substitutePower(d, n), n);
-      res = RING.add(res, RING.multiply(s, new Q(Functions.PHI.l((long) d), d)));
+      res = RING.add(res, RING.multiply(s, new Q(Functions.PHI.l(d), d)));
     }
     return res;
   }

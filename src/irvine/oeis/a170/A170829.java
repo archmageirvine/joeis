@@ -21,6 +21,6 @@ public class A170829 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Functions.CATALAN.z((long) mN).gcd(Functions.FACTORIAL.z(mN));
+    return Functions.CATALAN.z(mN).gcd(Functions.FACTORIAL.z(mN));
   }
 }

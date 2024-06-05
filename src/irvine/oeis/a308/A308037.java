@@ -22,6 +22,6 @@ public class A308037 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> Functions.STIRLING2.z(mN, (long) d));
+    return Integers.SINGLETON.sumdiv(mN, d -> Functions.STIRLING2.z(mN, d));
   }
 }

@@ -12,6 +12,6 @@ public class A292524 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A292524() {
-    super(0, (n, s) -> s[0].multiply(3).add(Functions.MOBIUS.i((long) n)), "0", PREVIOUS);
+    super(0, (n, s) -> s[0].multiply(3).add(Functions.MOBIUS.i(n)), "0", PREVIOUS);
   }
 }

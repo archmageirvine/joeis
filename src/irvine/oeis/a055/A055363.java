@@ -25,7 +25,7 @@ public class A055363 extends Sequence1 {
   private void step() {
     Polynomial<Polynomial<Q>> sum = RING.zero();
     for (int k = 1; k <= mN; ++k) {
-      final int m = Functions.MOBIUS.i((long) k);
+      final int m = Functions.MOBIUS.i(k);
       if (m != 0) {
         sum = RING.add(sum, RING.multiply(RING.log1p(RING.negate(PolynomialUtils.innerSubstitute(RING, mGf.substitutePower(k, mN), k, mN)), mN), RING_Y.monomial(new Q(m, k), 0)));
       }

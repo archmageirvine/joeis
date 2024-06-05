@@ -17,7 +17,7 @@ public class A064852 extends A047916 {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValue();
-      sum = sum.add(t(mN, mN / d).multiply(Functions.MOBIUS.i((long) d)));
+      sum = sum.add(t(mN, mN / d).multiply(Functions.MOBIUS.i(d)));
     }
     return sum.divide((long) mN * mN);
   }

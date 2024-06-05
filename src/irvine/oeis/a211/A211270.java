@@ -16,6 +16,6 @@ public class A211270 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Functions.SIGMA0.z((long) mN << 1).subtract(1).divide2();
+    return Functions.SIGMA0.z(mN << 1).subtract(1).divide2();
   }
 }

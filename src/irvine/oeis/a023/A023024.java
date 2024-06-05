@@ -46,7 +46,7 @@ public class A023024 extends AbstractSequence {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 1; parts() * k <= mN; ++k) {
-      final int m = Functions.MOBIUS.i((long) k);
+      final int m = Functions.MOBIUS.i(k);
       if (m != 0) {
         final int t = mN - parts() * k;
         sum = sum.signedAdd(m > 0, RING.coeff(RING.one(), den(k, t), t));

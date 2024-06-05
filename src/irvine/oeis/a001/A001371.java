@@ -34,7 +34,7 @@ public class A001371 extends Sequence0 {
     Z s = Z.ZERO;
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValue();
-      s = s.add(a29(mN / d).multiply(Functions.MOBIUS.i((long) d)));
+      s = s.add(a29(mN / d).multiply(Functions.MOBIUS.i(d)));
     }
     return s;
   }

@@ -28,7 +28,7 @@ public class A004124 extends Sequence1 {
       }
       prod = prod.multiply(t.pow(Functions.PHI.l(mN / p.pow(e).longValueExact())));
     }
-    final long phi = Functions.PHI.l((long) mN);
+    final long phi = Functions.PHI.l(mN);
     if (Z.valueOf(phi).multiply(phi - 1).divide2().isOdd()) {
       prod = prod.negate();
     }

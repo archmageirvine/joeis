@@ -14,7 +14,7 @@ public class A354097 extends LambdaSequence {
   /** Construct the sequence. */
   public A354097() {
     super(1, n -> {
-      return ((n - Functions.PHI.l((long) n)) & 3) == 0 ? Z.ONE : Z.ZERO;
+      return ((n - Functions.PHI.l(n)) & 3) == 0 ? Z.ONE : Z.ZERO;
     });
   }
 }

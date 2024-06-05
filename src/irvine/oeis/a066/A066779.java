@@ -17,6 +17,6 @@ public class A066779 extends Sequence1 {
   public Z next() {
     // a(n) = Sum_{i=1..n} mu(i)^2*i.
     ++mN;
-    return Integers.SINGLETON.sum(1, mN, i -> Z.valueOf(Functions.MOBIUS.i((long) i)).square().multiply(i));
+    return Integers.SINGLETON.sum(1, mN, i -> Z.valueOf(Functions.MOBIUS.i(i)).square().multiply(i));
   }
 }

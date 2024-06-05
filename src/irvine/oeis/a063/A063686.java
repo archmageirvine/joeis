@@ -59,7 +59,7 @@ public class A063686 extends A048887 {
       final int r = row;
       for (int col = 1; col <= n; ++col) {
         final int c = col;
-        final Z s = Integers.SINGLETON.sumdiv(r, d -> c < d ? m.get(d - 1, c - 1).multiply(Functions.PHI.z((long) r / d)) : Z.ZERO).divide(r);
+        final Z s = Integers.SINGLETON.sumdiv(r, d -> c < d ? m.get(d - 1, c - 1).multiply(Functions.PHI.z(r / d)) : Z.ZERO).divide(r);
         mat.set(row - 1, col - 1, row == col ? s.add(1) : s);
       }
     }

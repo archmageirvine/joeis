@@ -15,7 +15,7 @@ public class A119692 extends LambdaSequence {
   /** Construct the sequence. */
   public A119692() {
     super(0, n -> {
-      return Binomial.binomial(2L * n, n).multiply(Functions.FIBONACCI.z((long) n));
+      return Binomial.binomial(2L * n, n).multiply(Functions.FIBONACCI.z(n));
     });
   }
 }

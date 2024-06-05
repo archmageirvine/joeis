@@ -13,7 +13,7 @@ public class A176343 extends TupleTransformSequence {
   /** Construct the sequence. */
   public A176343() {
     super(0, (n, s) -> {
-      return s[0].multiply(Functions.FIBONACCI.z((long) n)).add(1);
+      return s[0].multiply(Functions.FIBONACCI.z(n)).add(1);
     }, "0,1", PREVIOUS, PREVIOUS);
   }
 }

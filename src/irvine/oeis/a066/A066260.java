@@ -15,6 +15,6 @@ public class A066260 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A066260() {
-    super(1, (p, e) -> COMPOSITES.a((int) Functions.PRIME_PI.l(p)).pow(e));
+    super(1, (p, e) -> COMPOSITES.a(Functions.PRIME_PI.i(p)).pow(e));
   }
 }

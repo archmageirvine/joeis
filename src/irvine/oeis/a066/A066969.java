@@ -18,7 +18,7 @@ public class A066969 extends Sequence1 {
   public Z next() {
     while (true) {
       if (Rationals.SINGLETON.sum(1, ++mN, k -> {
-        return new Q(Functions.PHI.l((long) k), Functions.GCD.l(mN, (long) k));
+        return new Q(Functions.PHI.l(k), Functions.GCD.l(mN, (long) k));
       }).isInteger()) {
         return Z.valueOf(mN);
       }

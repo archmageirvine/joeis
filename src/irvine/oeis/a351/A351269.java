@@ -23,6 +23,6 @@ public class A351269 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> Z.valueOf(d).pow(6).multiply(LongUtils.pow(Functions.MOBIUS.i((long) d), 2)));
+    return Integers.SINGLETON.sumdiv(mN, d -> Z.valueOf(d).pow(6).multiply(LongUtils.pow(Functions.MOBIUS.i(d), 2)));
   }
 }

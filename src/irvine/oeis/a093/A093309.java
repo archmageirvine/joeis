@@ -12,6 +12,6 @@ public class A093309 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A093309() {
-    super(1, n -> Functions.PRIME.z(Functions.PRIME.z(Functions.FIBONACCI.z((long) n))));
+    super(1, n -> Functions.PRIME.z(Functions.PRIME.z(Functions.FIBONACCI.z(n))));
   }
 }

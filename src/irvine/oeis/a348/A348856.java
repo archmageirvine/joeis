@@ -17,6 +17,6 @@ public class A348856 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> Functions.STIRLING2.z(mN, (long) d).mod(Z.TWO));
+    return Integers.SINGLETON.sumdiv(mN, d -> Functions.STIRLING2.z(mN, d).mod(Z.TWO));
   }
 }

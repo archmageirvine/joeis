@@ -12,8 +12,6 @@ public class A119432 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A119432() {
-    super(1, 1, k -> {
-      return Functions.PHI.l((long) k) * 2 <= k;
-    });
+    super(1, 1, k -> Functions.PHI.l(k) * 2 <= k);
   }
 }

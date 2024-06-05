@@ -16,7 +16,7 @@ public class A046527 extends Sequence0 {
 
   protected Z t(final int n, final int m) {
     if (m == 0) {
-      return Functions.CATALAN.z((long) n);
+      return Functions.CATALAN.z(n);
     }
     final Z b = Binomial.binomial(n, m - 1);
     return b.shiftLeft(2L * (n - m + 1))

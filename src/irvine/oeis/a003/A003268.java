@@ -17,10 +17,10 @@ public class A003268 extends Sequence0 {
     ++mN;
     Z p = Z.ONE;
     for (int k = mN / 2 + 1; k <= mN; ++k) {
-      p = p.multiply(Functions.FIBONACCI.z((long) k));
+      p = p.multiply(Functions.FIBONACCI.z(k));
     }
     for (int k = 1; k <= (mN + 1) / 2; ++k) {
-      p = p.divide(Functions.FIBONACCI.z((long) k));
+      p = p.divide(Functions.FIBONACCI.z(k));
     }
     return p;
   }

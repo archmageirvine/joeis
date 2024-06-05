@@ -20,6 +20,6 @@ public class A127884 extends A000045 {
   @Override
   public Z next() {
     ++mN;
-    return Functions.FIBONACCI.z((long) mN).divide(mN);
+    return Functions.FIBONACCI.z(mN).divide(mN);
   }
 }

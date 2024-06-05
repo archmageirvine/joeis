@@ -12,6 +12,6 @@ public class A070268 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A070268() {
-    super(1, 0, k -> Functions.MOBIUS.i((long) k) + Functions.MOBIUS.i((long) (k + 1)) + Functions.MOBIUS.i((long) (k + 2)) == -3);
+    super(1, 0, k -> Functions.MOBIUS.i(k) + Functions.MOBIUS.i((long) (k + 1)) + Functions.MOBIUS.i((long) (k + 2)) == -3);
   }
 }

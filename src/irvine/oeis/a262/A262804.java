@@ -14,6 +14,6 @@ public class A262804 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A262804() {
-    super(1, n -> Z.valueOf(Functions.MOBIUS.i((long) n)).multiply(Z.valueOf(Functions.MOBIUS.i((long) n)).add(Z.THREE)).divide2());
+    super(1, n -> Z.valueOf(Functions.MOBIUS.i(n)).multiply(Z.valueOf(Functions.MOBIUS.i(n)).add(Z.THREE)).divide2());
   }
 }

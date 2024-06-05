@@ -16,7 +16,7 @@ public class A331761 extends LambdaSequence {
   /** Construct the sequence. */
   public A331761() {
     super(1, n -> Z.valueOf(n - 1).square().add(Z.TWO.multiply(Integers.SINGLETON.sum(2, n / 2, i -> {
-      return Z.valueOf(n + 1 - 2 * i).multiply(Z.valueOf(n + 1 - i)).multiply(Functions.PHI.l((long) i));
+      return Z.valueOf(n + 1 - 2 * i).multiply(Z.valueOf(n + 1 - i)).multiply(Functions.PHI.l(i));
     }))));
   }
 }

@@ -14,6 +14,6 @@ public class A305819 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A305819() {
-    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Z.valueOf(k).pow(k).multiply(Functions.STIRLING1.z((long) n, (long) k))));
+    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Z.valueOf(k).pow(k).multiply(Functions.STIRLING1.z(n, k))));
   }
 }

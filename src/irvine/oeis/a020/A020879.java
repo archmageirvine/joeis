@@ -66,7 +66,7 @@ public class A020879 extends Sequence2 {
   private int mN = 1;
 
   protected Z delta(final int n) {
-    return Functions.FIBONACCI.z((long) n);
+    return Functions.FIBONACCI.z(n);
   }
 
   protected Z zeroCase(final int n) {

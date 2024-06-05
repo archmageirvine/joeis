@@ -31,7 +31,7 @@ public class A052853 extends A050383 {
     mC.add(new Q(super.next().negate()));
     Q sum = Q.ZERO;
     for (int j = 1; j <= mN; ++j) {
-      sum = sum.add(RING.log1p(mC.substitutePower(j, mN), mN).coeff(mN).multiply(new Q(Functions.PHI.l((long) j), j)));
+      sum = sum.add(RING.log1p(mC.substitutePower(j, mN), mN).coeff(mN).multiply(new Q(Functions.PHI.l(j), j)));
     }
     return sum.negate().toZ();
   }

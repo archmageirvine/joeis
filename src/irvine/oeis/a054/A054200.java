@@ -26,7 +26,7 @@ public class A054200 extends Sequence0 {
       final int dg = dd / g;
       if ((dd & 1) == 1) {
         final Z t = Z.valueOf(Functions.PHI.l(dd) / Functions.PHI.l(dg)).shiftLeft(mN / dd);
-        sum = ZUtils.mobiusAdd(Functions.MOBIUS.i((long) dg), sum, t);
+        sum = ZUtils.mobiusAdd(Functions.MOBIUS.i(dg), sum, t);
       }
     }
     return sum.divide(2L * mN);

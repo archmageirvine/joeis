@@ -38,7 +38,7 @@ public class DhkTransformSequence extends AbstractSequence {
       RING.one()), Q.TWO);
     Polynomial<Q> sum = RING.subtract(RING.pow(p, 2, n), px2);
     for (int d = 1; d <= n; ++d) {
-      final int m = Functions.MOBIUS.i((long) d);
+      final int m = Functions.MOBIUS.i(d);
       if (m != 0) {
         final Polynomial<Q> s = RING.series(RING.one(), RING.subtract(RING.one(), p), n / d).substitutePower(d, n);
         final Polynomial<Q> log = RING.log(s, n);

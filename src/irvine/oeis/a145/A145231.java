@@ -33,7 +33,7 @@ public class A145231 extends AbstractSequence {
 
   @Override
   public Z next() {
-    final Z result = Functions.FIBONACCI.z((long) mProd);
+    final Z result = Functions.FIBONACCI.z(mProd);
     mProd *= mBase;
     return result;
   }

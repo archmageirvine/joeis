@@ -20,7 +20,7 @@ public class A046211 extends Sequence1 {
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValue();
       if (Functions.GCD.i(d, 3) == 1) {
-        sum = sum.add(Z.THREE.pow(mN / d).multiply(Functions.MOBIUS.i((long) d)));
+        sum = sum.add(Z.THREE.pow(mN / d).multiply(Functions.MOBIUS.i(d)));
       }
     }
     return sum.divide(3L * mN);

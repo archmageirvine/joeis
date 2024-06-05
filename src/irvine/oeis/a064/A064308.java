@@ -20,7 +20,7 @@ public class A064308 extends Sequence1 {
   }
 
   protected Z t(final int n, final int m) {
-    return Integers.SINGLETON.sum(m, n, k -> catalan(n, k).multiply(Functions.STIRLING2.z((long) k, m)));
+    return Integers.SINGLETON.sum(m, n, k -> catalan(n, k).multiply(Functions.STIRLING2.z(k, m)));
   }
 
   @Override

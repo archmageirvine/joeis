@@ -14,7 +14,7 @@ public class A219010 extends Sequence0 {
 
   @Override
   public Z next() {
-    final Z result = Functions.LUCAS.z((long) mA5);
+    final Z result = Functions.LUCAS.z(mA5);
     mA5 *= 5;
     return result;
   }

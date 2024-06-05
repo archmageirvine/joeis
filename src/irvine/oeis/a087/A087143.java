@@ -22,7 +22,7 @@ public class A087143 extends Sequence1 {
   public Z next() {
     while (true) {
       ++mN;
-      if (Functions.DIGIT_SUM.l((long) mN) % Functions.DIGIT_SUM_ROOT.l((long) mN) == 0) {
+      if (Functions.DIGIT_SUM.l(mN) % Functions.DIGIT_SUM_ROOT.l(mN) == 0) {
         return Z.valueOf(mN);
       }
     }

@@ -65,7 +65,7 @@ public class Phi2TransformSequence extends AbstractSequence {
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
       if ((d & 1) == 1) {
-        a = ZUtils.mobiusAdd(Functions.MOBIUS.i((long) d), a, mTerms.get(n / d));
+        a = ZUtils.mobiusAdd(Functions.MOBIUS.i(d), a, mTerms.get(n / d));
       }
     }
     return a;

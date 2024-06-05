@@ -21,6 +21,6 @@ public class A140588 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Functions.BELL.z(mN).multiply(Functions.FIBONACCI.z((long) mN));
+    return Functions.BELL.z(mN).multiply(Functions.FIBONACCI.z(mN));
   }
 }

@@ -22,6 +22,6 @@ public class A203838 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Jaguar.factor(mN).sigma(3).multiply(Functions.FIBONACCI.z((long) mN));
+    return Jaguar.factor(mN).sigma(3).multiply(Functions.FIBONACCI.z(mN));
   }
 }

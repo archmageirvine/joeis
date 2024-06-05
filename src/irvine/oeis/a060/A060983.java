@@ -24,7 +24,7 @@ public class A060983 extends Sequence1 {
       final int d = dd.intValue();
       final int d3 = d * d * d;
       if (mN % d3 == 0) {
-        sum = ZUtils.mobiusAdd(Functions.MOBIUS.i((long) d), sum, mA.a(mN / d3 - 1));
+        sum = ZUtils.mobiusAdd(Functions.MOBIUS.i(d), sum, mA.a(mN / d3 - 1));
       }
     }
     return sum;

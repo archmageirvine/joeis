@@ -46,7 +46,7 @@ public class A288620 extends MemoryFunctionSequence<Integer, CycleIndex> {
         ci.add(mm);
       }
     }
-    ci.multiply(new Q(1, Functions.PHI.l((long) n)));
+    ci.multiply(new Q(1, Functions.PHI.l(n)));
     return ci;
   }
 

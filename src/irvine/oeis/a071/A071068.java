@@ -15,6 +15,6 @@ public class A071068 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A071068() {
-    super(1, n -> Integers.SINGLETON.sum(1, n / 2, i -> Z.valueOf(Functions.MOBIUS.i((long) i)).multiply(Z.valueOf(Functions.MOBIUS.i((long) (n - i)))).abs()));
+    super(1, n -> Integers.SINGLETON.sum(1, n / 2, i -> Z.valueOf(Functions.MOBIUS.i(i)).multiply(Z.valueOf(Functions.MOBIUS.i((long) (n - i)))).abs()));
   }
 }

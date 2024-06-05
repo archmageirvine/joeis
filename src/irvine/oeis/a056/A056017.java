@@ -17,7 +17,7 @@ public class A056017 extends A003714 {
     Z sum = Z.ZERO;
     while (m != 0) {
       if ((m & 1) == 1) {
-        sum = sum.add(Functions.FIBONACCI.z((long) k));
+        sum = sum.add(Functions.FIBONACCI.z(k));
       }
       m >>>= 1;
       ++k;

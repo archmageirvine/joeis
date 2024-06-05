@@ -13,6 +13,6 @@ public class A141084 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A141084() {
-    super(1, n -> Functions.PRIME.z(Functions.PRIME.z(Z.ONE.shiftLeft(n)).subtract(Functions.PRIME.z(n + 1)).add(Functions.PRIME.z(2L * n)).subtract(Functions.PRIME.z((long) n * n))).subtract(Z.ONE));
+    super(1, n -> Functions.PRIME.z(Functions.PRIME.z(Z.ONE.shiftLeft(n)).subtract(Functions.PRIME.z(n + 1)).add(Functions.PRIME.z(2L * n)).subtract(Functions.PRIME.z(n * n))).subtract(Z.ONE));
   }
 }

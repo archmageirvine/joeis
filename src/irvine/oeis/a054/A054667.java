@@ -21,7 +21,7 @@ public class A054667 extends Sequence1 {
       final int d = dd.intValue();
       final int g = Functions.GCD.i(d, 6);
       if (2 % g == 0) {
-        sum = sum.add(Z.SIX.pow(mN / d).multiply(g).multiply(Functions.MOBIUS.i((long) d)));
+        sum = sum.add(Z.SIX.pow(mN / d).multiply(g).multiply(Functions.MOBIUS.i(d)));
       }
     }
     return sum.divide(6L * mN);

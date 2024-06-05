@@ -56,7 +56,7 @@ public class A002075 extends AbstractSequence {
     Z s = Z.ZERO;
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValue();
-      final int mu = Functions.MOBIUS.i((long) d);
+      final int mu = Functions.MOBIUS.i(d);
       if (mu != 0) {
         final Z t = Z.THREE.pow(mN / d).multiply((long) hprime(d) * mu);
         s = s.add(t);

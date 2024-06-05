@@ -24,7 +24,7 @@ public class A052814 extends Sequence0 {
       Polynomial<Q> c = RING.zero();
       for (int k = 1; k <= mN; ++k) {
         final Polynomial<Q> log = RING.log(RING.series(RING.one(), RING.subtract(RING.one(), mS.substitutePower(k, mN)), mN), mN);
-        c = RING.add(c, RING.multiply(log, new Q(Functions.PHI.l((long) k), k)));
+        c = RING.add(c, RING.multiply(log, new Q(Functions.PHI.l(k), k)));
       }
       Polynomial<Q> b = RING.zero();
       for (int k = 1; k <= mN; ++k) {

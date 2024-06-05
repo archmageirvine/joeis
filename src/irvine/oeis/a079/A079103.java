@@ -21,6 +21,6 @@ public class A079103 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Functions.CATALAN.z((long) mN).pow(2L * mN - 2);
+    return Functions.CATALAN.z(mN).pow(2L * mN - 2);
   }
 }

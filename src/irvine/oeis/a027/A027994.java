@@ -15,6 +15,6 @@ public class A027994 extends Sequence0 {
   @Override
   public Z next() {
     final long n = 2L * ++mN + 3;
-    return Functions.FIBONACCI.z(n).subtract(Functions.FIBONACCI.z((long) mN)).divide2();
+    return Functions.FIBONACCI.z(n).subtract(Functions.FIBONACCI.z(mN)).divide2();
   }
 }

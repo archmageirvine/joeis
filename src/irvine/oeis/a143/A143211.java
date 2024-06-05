@@ -18,6 +18,6 @@ public class A143211 extends BaseTriangle {
 
   @Override
   public Z triangleElement(final int n, final int k) {
-    return Functions.FIBONACCI.z((long) n).multiply(Functions.FIBONACCI.z((long) k));
+    return Functions.FIBONACCI.z(n).multiply(Functions.FIBONACCI.z(k));
   }
 }

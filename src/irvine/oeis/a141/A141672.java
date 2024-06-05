@@ -12,6 +12,6 @@ public class A141672 extends Triangle {
 
   @Override
   public Z compute(final int n, final int k) {
-    return k == 0 ? Z.valueOf(n + 1) : (n % k == 0 ? Z.valueOf((long) Functions.MOBIUS.i((long) n) * n / k) : Z.ZERO);
+    return k == 0 ? Z.valueOf(n + 1) : (n % k == 0 ? Z.valueOf((long) Functions.MOBIUS.i(n) * n / k) : Z.ZERO);
   }
 }

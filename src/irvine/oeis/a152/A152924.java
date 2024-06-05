@@ -12,6 +12,6 @@ public class A152924 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A152924() {
-    super(0, 0, 0, (n, k) -> Functions.STIRLING2.z((long) n, k + 1).add(Functions.STIRLING1.z((long) n, (long) k).abs()));
+    super(0, 0, 0, (n, k) -> Functions.STIRLING2.z(n, k + 1).add(Functions.STIRLING1.z(n, k).abs()));
   }
 }

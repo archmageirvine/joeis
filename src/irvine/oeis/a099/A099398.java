@@ -23,6 +23,6 @@ public class A099398 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return new Q(Functions.CATALAN.z((long) mN), (mN == 0) ? Z.ONE : Z.ONE.shiftLeft(2L * mN - 1).multiply(mN + 2)).num();
+    return new Q(Functions.CATALAN.z(mN), (mN == 0) ? Z.ONE : Z.ONE.shiftLeft(2L * mN - 1).multiply(mN + 2)).num();
   }
 }

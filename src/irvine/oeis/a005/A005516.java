@@ -38,7 +38,7 @@ public class A005516 extends AbstractSequence {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(Functions.GCD.l(mN, mK)).divisors()) {
       final int d = dd.intValueExact();
-      sum = sum.add(Binomial.binomial(mN / d, mK / d).multiply(Functions.PHI.l((long) d)));
+      sum = sum.add(Binomial.binomial(mN / d, mK / d).multiply(Functions.PHI.l(d)));
     }
     sum = sum.divide(mN);
     sum = sum.add(Binomial.binomial(((mN & 1) == 1 ? mN - 1 : mN - ((mK & 1) == 1 ? 2 : 0)) / 2, mK / 2));

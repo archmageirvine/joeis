@@ -16,6 +16,6 @@ public class A059586 extends Sequence0 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sum(0, ++mN, k -> Functions.STIRLING1.z(mN, (long) k).abs().multiply(CR.E.multiply(Functions.FACTORIAL.z(Z.ONE.shiftLeft(k))).floor())).divide(Functions.FACTORIAL.z(mN));
+    return Integers.SINGLETON.sum(0, ++mN, k -> Functions.STIRLING1.z(mN, k).abs().multiply(CR.E.multiply(Functions.FACTORIAL.z(Z.ONE.shiftLeft(k))).floor())).divide(Functions.FACTORIAL.z(mN));
   }
 }

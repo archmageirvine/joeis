@@ -25,7 +25,7 @@ public class A052817 extends A004111 {
     Polynomial<Q> s = RING.zero();
     for (int k = 1; k <= mN; ++k) {
       final Polynomial<Q> log = RING.log(RING.series(RING.one(), RING.subtract(RING.one(), mA.substitutePower(k, mN)), mN), mN);
-      s = RING.add(s, RING.multiply(log, new Q(Functions.PHI.l((long) k), k)));
+      s = RING.add(s, RING.multiply(log, new Q(Functions.PHI.l(k), k)));
     }
     return s.coeff(mN).toZ();
   }

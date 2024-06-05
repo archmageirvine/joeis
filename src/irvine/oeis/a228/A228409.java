@@ -14,6 +14,6 @@ public class A228409 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A228409() {
-    super(1, n -> (Z.FOUR).multiply(Functions.MOBIUS.i((long) n)).add(Z.FIVE));
+    super(1, n -> (Z.FOUR).multiply(Functions.MOBIUS.i(n)).add(Z.FIVE));
   }
 }

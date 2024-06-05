@@ -26,7 +26,7 @@ public class A001693 extends Sequence0 {
     Z s = Z.ZERO;
     for (final Z d : Jaguar.factor(mN).divisors()) {
       final int dd = d.intValue();
-      s = s.add(mPowers.get(mN / dd).multiply(Functions.MOBIUS.i((long) dd)));
+      s = s.add(mPowers.get(mN / dd).multiply(Functions.MOBIUS.i(dd)));
     }
     return s.divide(mN);
   }

@@ -14,6 +14,6 @@ public class A322857 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A322857() {
-    super(1, (p, e) -> Integers.SINGLETON.sumdiv(e, d -> Functions.GCD.l((long) d, e / d) == 1 ? p.pow(d) : Z.ZERO));
+    super(1, (p, e) -> Integers.SINGLETON.sumdiv(e, d -> Functions.GCD.l(d, e / d) == 1 ? p.pow(d) : Z.ZERO));
   }
 }

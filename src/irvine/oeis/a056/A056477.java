@@ -40,6 +40,6 @@ public class A056477 extends AbstractSequence {
     if (mN == 0) {
       return Z.ONE;
     }
-    return Integers.SINGLETON.sumdiv(mN, d -> mSeq.a(new Q(mN, 2L * d).ceiling().intValue()).multiply(Functions.MOBIUS.i((long) d)));
+    return Integers.SINGLETON.sumdiv(mN, d -> mSeq.a(new Q(mN, 2L * d).ceiling().intValue()).multiply(Functions.MOBIUS.i(d)));
   }
 }

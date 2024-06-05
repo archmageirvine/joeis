@@ -24,7 +24,7 @@ public class Stirling1TransformSequence extends AbstractSequence {
    * @return the next term in the transformed sequence
    */
   public static Z stirling1(final List<Z> seq, final int n) {
-    return Integers.SINGLETON.sum(1, n, k -> Functions.STIRLING1.z(n, (long) k).multiply(seq.get(k)));
+    return Integers.SINGLETON.sum(1, n, k -> Functions.STIRLING1.z(n, k).multiply(seq.get(k)));
   }
 
   /**

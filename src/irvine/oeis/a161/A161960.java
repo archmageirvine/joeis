@@ -15,6 +15,6 @@ public class A161960 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A161960() {
-    super(2, n -> new Q(Functions.PRIME_PI.z((long) n * n), Z.valueOf(n).multiply(Functions.PRIME_PI.z(n))).num());
+    super(2, n -> new Q(Functions.PRIME_PI.z(n * n), Z.valueOf(n).multiply(Functions.PRIME_PI.z(n))).num());
   }
 }

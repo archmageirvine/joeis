@@ -22,7 +22,7 @@ public class A032171 extends Sequence1 {
     final Polynomial<Q> s = RING.series(RING.one(), RING.subtract(RING.one(), p), n);
     Polynomial<Q> sum = RING.zero();
     for (int d = 1; d <= n; ++d) {
-      final int m = Functions.MOBIUS.i((long) d);
+      final int m = Functions.MOBIUS.i(d);
       if (m != 0) {
         final Polynomial<Q> t = RING.log(s.substitutePower(d, n), n);
         sum = RING.signedAdd(m == 1, sum, RING.divide(t, new Q(d)));

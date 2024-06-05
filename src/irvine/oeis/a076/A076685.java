@@ -14,7 +14,7 @@ public class A076685 extends LambdaSequence {
   /** Construct the sequence. */
   public A076685() {
     super(1, n -> {
-      return Functions.CORE.z(n).max(Functions.PHI.l((long) n));
+      return Functions.CORE.z(n).max(Functions.PHI.l(n));
     });
   }
 }

@@ -18,7 +18,7 @@ public class A062362 extends Sequence1 {
   public Z next() {
     ++mN;
     return Rationals.SINGLETON.sumdiv(mN, d -> {
-      return new Q(Functions.PHI.l((long) d), d);
+      return new Q(Functions.PHI.l(d), d);
     }).toZ();
   }
 }

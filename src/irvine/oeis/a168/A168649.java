@@ -15,6 +15,6 @@ public class A168649 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A168649() {
-    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> Z.valueOf(Functions.MOBIUS.i((long) d)).multiply(Z.ONE.shiftLeft(n * n / d))).divide(n));
+    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> Z.valueOf(Functions.MOBIUS.i(d)).multiply(Z.ONE.shiftLeft(n * n / d))).divide(n));
   }
 }

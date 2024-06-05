@@ -21,6 +21,6 @@ public class A197191 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Functions.PHI.z(Functions.LUCAS.z((long) mN * mN));
+    return Functions.PHI.z(Functions.LUCAS.z(mN * mN));
   }
 }

@@ -17,7 +17,7 @@ public class A088310 extends LambdaSequence {
   /** Construct the sequence. */
   public A088310() {
     super(0, n -> {
-      return Functions.FACTORIAL.z(n).multiply(Integers.SINGLETON.sum(0, n, k -> Functions.STIRLING1.z((long) n, (long) k).multiply(Binomial.binomial(Z.ONE.shiftLeft(k), n))));
+      return Functions.FACTORIAL.z(n).multiply(Integers.SINGLETON.sum(0, n, k -> Functions.STIRLING1.z(n, k).multiply(Binomial.binomial(Z.ONE.shiftLeft(k), n))));
     });
   }
 }

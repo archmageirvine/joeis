@@ -16,7 +16,7 @@ public class A324913 extends LambdaSequence {
   /** Construct the sequence. */
   public A324913() {
     super(1, n -> Integers.SINGLETON.sum(1, n, k -> {
-      return Z.ONE.shiftLeft(k).multiply(Functions.PHI.l((long) k));
+      return Z.ONE.shiftLeft(k).multiply(Functions.PHI.l(k));
     }));
   }
 }

@@ -15,6 +15,6 @@ public class A071404 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A071404() {
-    super(2, n -> Z.valueOf((long) n * n).subtract(Integers.SINGLETON.sum(1, n, k -> Z.valueOf((long) n * n).divide((long) k * k).multiply(Functions.MOBIUS.i((long) k)))));
+    super(2, n -> Z.valueOf((long) n * n).subtract(Integers.SINGLETON.sum(1, n, k -> Z.valueOf((long) n * n).divide((long) k * k).multiply(Functions.MOBIUS.i(k)))));
   }
 }

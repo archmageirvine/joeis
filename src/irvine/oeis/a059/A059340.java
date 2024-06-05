@@ -21,6 +21,6 @@ public class A059340 extends Sequence1 {
       ++mN;
       mM = 0;
     }
-    return Integers.SINGLETON.sum(0, mN, k -> Functions.STIRLING2.z(mN, (long) k).multiply(Binomial.binomial(mN - k, mM)));
+    return Integers.SINGLETON.sum(0, mN, k -> Functions.STIRLING2.z(mN, k).multiply(Binomial.binomial(mN - k, mM)));
   }
 }

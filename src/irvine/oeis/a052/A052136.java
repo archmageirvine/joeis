@@ -23,7 +23,7 @@ public class A052136 extends MemoryFunction2Sequence<Integer, Q> {
     if (((n - m) & 1) == 0) {
       Q s0 = Q.ZERO;
       for (int i = m; i <= n; ++i) {
-        s0 = s0.add(new Q(Functions.STIRLING1.z(i, (long) m).multiply(Binomial.binomial(n - 1, i - 1)).shiftLeft(i), Functions.FACTORIAL.z(i)));
+        s0 = s0.add(new Q(Functions.STIRLING1.z(i, m).multiply(Binomial.binomial(n - 1, i - 1)).shiftLeft(i), Functions.FACTORIAL.z(i)));
       }
       final int v = (3 * n + m) / 2;
       sum = sum.signedAdd((v & 1) == 0, s0.multiply(Functions.FACTORIAL.z(m)).divide(Z.ONE.shiftLeft(m)));

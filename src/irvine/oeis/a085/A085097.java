@@ -31,6 +31,6 @@ public class A085097 extends Sequence1 {
   public Z next() {
     ++mN;
     final long g = mN / Functions.GCD.l(mN, mM);
-    return Z.valueOf(Functions.PHI.l((long) mN) * Functions.MOBIUS.i(g) / Functions.PHI.l(g));
+    return Z.valueOf(Functions.PHI.l(mN) * Functions.MOBIUS.i(g) / Functions.PHI.l(g));
   }
 }

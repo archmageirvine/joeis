@@ -18,6 +18,6 @@ public class A205505 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Functions.FIBONACCI.z((long) mN * (mN + 1)).divide(mSeq.next());
+    return Functions.FIBONACCI.z(mN * (mN + 1)).divide(mSeq.next());
   }
 }

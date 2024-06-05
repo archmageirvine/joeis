@@ -17,6 +17,6 @@ public class A056275 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> Z.ONE.shiftLeft(mN / d - 1).add(1).multiply(Z.ONE.shiftLeft(mN / d - 1).add(2)).divide(6).multiply(Functions.MOBIUS.i((long) d)));
+    return Integers.SINGLETON.sumdiv(mN, d -> Z.ONE.shiftLeft(mN / d - 1).add(1).multiply(Z.ONE.shiftLeft(mN / d - 1).add(2)).divide(6).multiply(Functions.MOBIUS.i(d)));
   }
 }

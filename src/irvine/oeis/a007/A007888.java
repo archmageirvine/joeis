@@ -60,9 +60,9 @@ public class A007888 extends Sequence1 {
       final int l = ll.intValue();
       if (l != k) {
         final int dp = d / Functions.GCD.i(d, l);
-        final int mobius = Functions.MOBIUS.i((long) dp);
+        final int mobius = Functions.MOBIUS.i(dp);
         if (mobius != 0) {
-          final Q phi = new Q(Functions.PHI.l((long) (k / l)), Functions.PHI.l((long) dp));
+          final Q phi = new Q(Functions.PHI.l((long) (k / l)), Functions.PHI.l(dp));
           res = RING.signedAdd(mobius > 0, res, RING.monomial(phi, k - l));
         }
       }
@@ -95,12 +95,12 @@ public class A007888 extends Sequence1 {
             final int pow = 2 * h - 2;
             for (int s = 0; s * m <= 3 * mN; ++s) {
               if (s + 2 * h >= 3 && (s == 0 || !RING.zero().equals(beta))) {
-                final int mobius = Functions.MOBIUS.i((long) m);
+                final int mobius = Functions.MOBIUS.i(m);
                 if (mobius != 0) {
                   final Polynomial<Q> betaPow = RING.pow(beta, s, mN - k * pow);
                   final Q chi = chi(h, s).divide(Functions.FACTORIAL.z(s)).multiply(mobius);
                   final Q u = new Q(k, m).pow(pow);
-                  final Q c = chi.divide(m * (long) m).multiply(Functions.PHI.l((long) d)).multiply(u);
+                  final Q c = chi.divide(m * (long) m).multiply(Functions.PHI.l(d)).multiply(u);
                   final Polynomial<Q> t = RING.multiply(betaPow, c).shift(k * pow).truncate(mN);
                   gf = RING.add(gf, t);
                 }

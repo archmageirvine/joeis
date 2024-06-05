@@ -17,6 +17,6 @@ public class A321236 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> Z.valueOf(Functions.MOBIUS.i((long) d)).square().multiply(Z.valueOf(d).pow(mN)));
+    return Integers.SINGLETON.sumdiv(mN, d -> Z.valueOf(Functions.MOBIUS.i(d)).square().multiply(Z.valueOf(d).pow(mN)));
   }
 }

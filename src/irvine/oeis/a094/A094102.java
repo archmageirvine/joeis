@@ -13,7 +13,7 @@ public class A094102 extends LambdaTable {
   /** Construct the sequence. */
   public A094102() {
     super(1, 1, n -> new Integer[]{1, 2 * n - 1}, (n, k) -> {
-      return (k <= n) ? Functions.FIBONACCI.z((long) k) : Functions.FIBONACCI.z((long) (2 * n - k));
+      return (k <= n) ? Functions.FIBONACCI.z(k) : Functions.FIBONACCI.z((long) (2 * n - k));
     });
   }
 }

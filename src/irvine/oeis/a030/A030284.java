@@ -26,7 +26,7 @@ public class A030284 extends Sequence1 {
     // increment leading digit
     int r = digits.get(digits.size() - 1) + 1;
     // There are extra constraints, e.g. 0 might be already used
-    while ((Functions.SYNDROME.i((long) r) & syndrome) != 0) {
+    while ((Functions.SYNDROME.i(r) & syndrome) != 0) {
       ++r;
     }
 

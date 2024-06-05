@@ -14,7 +14,7 @@ public class A182212 extends LambdaSequence {
   /** Construct the sequence. */
   public A182212() {
     super(1, n -> {
-      return Functions.FACTORIAL.z(n).divide(Functions.FIBONACCI.z((long) n));
+      return Functions.FACTORIAL.z(n).divide(Functions.FIBONACCI.z(n));
     });
   }
 }

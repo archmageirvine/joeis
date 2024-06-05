@@ -15,6 +15,6 @@ public class A058808 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.product(1, ++mN, k -> Functions.STIRLING2.z(mN, (long) k));
+    return Integers.SINGLETON.product(1, ++mN, k -> Functions.STIRLING2.z(mN, k));
   }
 }

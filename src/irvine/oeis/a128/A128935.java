@@ -15,7 +15,7 @@ public class A128935 extends Sequence0 {
 
   @Override
   public Z next() {
-    final Z result = Functions.FIBONACCI.z((long) mProd).divide(mProd);
+    final Z result = Functions.FIBONACCI.z(mProd).divide(mProd);
     mProd *= mBase;
     return result;
   }

@@ -23,7 +23,7 @@ public class A052138 extends MemoryFunction2Sequence<Integer, Q> {
     if (n.equals(m)) {
       return Q.ONE;
     }
-    Q sum = new Q(Functions.STIRLING1.z((long) n, (long) m).multiply(Functions.FACTORIAL.z(m)), Functions.FACTORIAL.z(n));
+    Q sum = new Q(Functions.STIRLING1.z(n, m).multiply(Functions.FACTORIAL.z(m)), Functions.FACTORIAL.z(n));
     for (int k = m + 1; k < n; ++k) {
       Q s1 = Q.ZERO;
       for (int i = k; i <= n; ++i) {

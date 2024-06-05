@@ -13,6 +13,6 @@ public class A213926 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A213926() {
-    super(1, n -> Functions.PRIME.z((long) n * n).subtract(Functions.PRIME.z(n)));
+    super(1, n -> Functions.PRIME.z(n * n).subtract(Functions.PRIME.z(n)));
   }
 }

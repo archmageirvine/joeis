@@ -47,7 +47,7 @@ public class A001004 extends A001003 {
       Z q = Z.ZERO;
       for (int d = 1; d <= k; ++d) {
         if (k % d == 0) {
-          q = q.add(RING.pow(f.substitutePower(d, mN), k / d, mN).coeff(mN).multiply(Functions.PHI.l((long) d)));
+          q = q.add(RING.pow(f.substitutePower(d, mN), k / d, mN).coeff(mN).multiply(Functions.PHI.l(d)));
         }
       }
       r = r.add(q.divide(k));

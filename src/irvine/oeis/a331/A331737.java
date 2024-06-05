@@ -12,6 +12,6 @@ public class A331737 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A331737() {
-    super(1, (p, e) -> p.pow(e >> Functions.VALUATION.i((long) e, 2)));
+    super(1, (p, e) -> p.pow(e >> Functions.VALUATION.i(e, 2)));
   }
 }

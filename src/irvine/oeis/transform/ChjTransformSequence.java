@@ -49,7 +49,7 @@ public class ChjTransformSequence extends Sequence1 {
       Z t2 = Z.ZERO;
       for (int d = 1; d <= Functions.MAX.i(q); ++d) {
         if (isDivisor(q, d)) {
-          final int mu = Functions.MOBIUS.i((long) d);
+          final int mu = Functions.MOBIUS.i(d);
           if (mu != 0) {
             Z u = Functions.FACTORIAL.z(k / d);
             for (int i = 1; i < q.length; ++i) {

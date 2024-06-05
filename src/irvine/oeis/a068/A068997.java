@@ -16,7 +16,7 @@ public class A068997 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Z t = Integers.SINGLETON.sumdiv(++mN, d -> Z.valueOf(d * Functions.MOBIUS.i((long) d)));
+      final Z t = Integers.SINGLETON.sumdiv(++mN, d -> Z.valueOf(d * Functions.MOBIUS.i(d)));
       if (mN % t.longValueExact() == 0) {
         return Z.valueOf(mN);
       }

@@ -14,7 +14,7 @@ public class A354210 extends LambdaSequence {
   /** Construct the sequence. */
   public A354210() {
     super(0, n -> {
-      return Functions.FIBONACCI.z((long) (n + 1)).multiply(Functions.FIBONACCI.z((long) n)).sqrt();
+      return Functions.FIBONACCI.z((long) (n + 1)).multiply(Functions.FIBONACCI.z(n)).sqrt();
     });
   }
 }

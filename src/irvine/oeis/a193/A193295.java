@@ -13,6 +13,6 @@ public class A193295 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A193295() {
-    super(2, n -> Functions.BIG_OMEGA.z((long) n * n - 1));
+    super(2, n -> Functions.BIG_OMEGA.z(n * n - 1));
   }
 }

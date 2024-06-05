@@ -14,6 +14,6 @@ public class A062777 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Z.ONE.shiftLeft(++mN).subtract(Functions.MOBIUS.i((long) mN));
+    return Z.ONE.shiftLeft(++mN).subtract(Functions.MOBIUS.i(mN));
   }
 }

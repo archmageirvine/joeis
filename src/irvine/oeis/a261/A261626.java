@@ -16,8 +16,8 @@ public class A261626 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    final Z result = Functions.FIBONACCI.z((long) mF)
-      .subtract(Functions.FACTORIAL.z(Functions.FIBONACCI.z((long) mN)));
+    final Z result = Functions.FIBONACCI.z(mF)
+      .subtract(Functions.FACTORIAL.z(Functions.FIBONACCI.z(mN)));
     mF = mF * (mN + 1);
     return result;
   }

@@ -19,7 +19,7 @@ public class A050145 extends MemoryFunction2Sequence<Integer, Z> {
       return Z.ZERO;
     }
     if (m == 0) {
-      return n == 0 ? Z.ZERO : Functions.CATALAN.z((long) n);
+      return n == 0 ? Z.ZERO : Functions.CATALAN.z(n);
     } else if (m == 1) {
       Z sum = Z.ZERO;
       for (int j = 0; j < n; ++j) {
@@ -29,7 +29,7 @@ public class A050145 extends MemoryFunction2Sequence<Integer, Z> {
     } else if (m == 2) {
       Z sum = Z.ZERO;
       for (int j = 0; j <= n; ++j) {
-        sum = sum.add(get(n - j, 1).multiply(Functions.CATALAN.z((long) j)));
+        sum = sum.add(get(n - j, 1).multiply(Functions.CATALAN.z(j)));
       }
       return sum;
     } else {

@@ -13,6 +13,6 @@ public class A292779 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A292779() {
-    super(1, (n, s) -> s[0].add(Z.THREE.pow(n - 1).multiply(Functions.MOBIUS.i((long) n))), "1", PREVIOUS);
+    super(1, (n, s) -> s[0].add(Z.THREE.pow(n - 1).multiply(Functions.MOBIUS.i(n))), "1", PREVIOUS);
   }
 }

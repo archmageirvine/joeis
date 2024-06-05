@@ -20,7 +20,7 @@ public class A053412 extends A003266 {
     while (true) {
       ++mN;
       if (super.next().add(1).isProbablePrime()) {
-        return Functions.FIBONACCI.z((long) mN);
+        return Functions.FIBONACCI.z(mN);
       }
     }
   }

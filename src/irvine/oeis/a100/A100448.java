@@ -15,6 +15,6 @@ public class A100448 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A100448() {
-    super(1, n -> Z.NEG_ONE.add(Integers.SINGLETON.sum(1, n, k -> Z.valueOf(Functions.MOBIUS.i((long) k)).multiply(Z.valueOf(n / k).pow(3)))).divide(6));
+    super(1, n -> Z.NEG_ONE.add(Integers.SINGLETON.sum(1, n, k -> Z.valueOf(Functions.MOBIUS.i(k)).multiply(Z.valueOf(n / k).pow(3)))).divide(6));
   }
 }

@@ -55,7 +55,7 @@ public class A034722 extends Sequence1 {
       }
       final State s = mA.pollFirst();
       final int next = s.mLast + 1;
-      mA.add(new State(s.mValue.multiply(Functions.FIBONACCI.z((long) next)), next));
+      mA.add(new State(s.mValue.multiply(Functions.FIBONACCI.z(next)), next));
       if (s.mValue.equals(mPrev)) {
         continue;
       }

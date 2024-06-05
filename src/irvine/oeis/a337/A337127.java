@@ -14,6 +14,6 @@ public class A337127 extends LambdaTable {
 
   /** Construct the sequence. */
   public A337127() {
-    super(1, 1, n -> new Integer[] {1, 10}, (n, k) -> Integers.SINGLETON.product(0, k - 2, j -> Z.valueOf(j + 11 - k)).multiply(9).multiply(Functions.STIRLING2.z((long) n, (long) k)));
+    super(1, 1, n -> new Integer[] {1, 10}, (n, k) -> Integers.SINGLETON.product(0, k - 2, j -> Z.valueOf(j + 11 - k)).multiply(9).multiply(Functions.STIRLING2.z(n, k)));
   }
 }

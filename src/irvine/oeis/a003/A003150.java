@@ -18,11 +18,11 @@ public class A003150 extends Sequence0 {
     if (++mN == 0) {
       return Z.ONE;
     }
-    final Z f = Functions.FIBONACCI.z((long) mN);
+    final Z f = Functions.FIBONACCI.z(mN);
     mDen = mDen.multiply(f);
     Z num = Z.ONE;
     for (int k = mN + 2; k <= 2 * mN; ++k) {
-      num = num.multiply(Functions.FIBONACCI.z((long) k));
+      num = num.multiply(Functions.FIBONACCI.z(k));
     }
     return num.divide(mDen);
   }

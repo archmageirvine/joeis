@@ -13,6 +13,6 @@ public class A291440 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A291440() {
-    super(1, n -> Functions.PRIME_PI.z((long) n * n).subtract(Functions.PRIME_PI.z(n).square()));
+    super(1, n -> Functions.PRIME_PI.z(n * n).subtract(Functions.PRIME_PI.z(n).square()));
   }
 }

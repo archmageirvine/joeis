@@ -32,12 +32,12 @@ public class A288627 extends A288620 {
   protected CycleIndex compute(final Integer n) {
     final CycleIndex ci = new CycleIndex();
     for (long k = 0; k < n; ++k) {
-      if (Functions.GCD.l((long) n, k) == 1) {
-        final Q mmc = new Q(n, Functions.GCD.l((long) n, k - 1));
-        for (long c = 1; c <= Functions.GCD.l((long) n, k - 1); ++c) {
+      if (Functions.GCD.l(n, k) == 1) {
+        final Q mmc = new Q(n, Functions.GCD.l(n, k - 1));
+        for (long c = 1; c <= Functions.GCD.l(n, k - 1); ++c) {
           final MultivariateMonomial mm = new MultivariateMonomial();
           for (int i = 1; i <= n; ++i) {
-            final long mi = m(k, n / Functions.GCD.l((long) n, i * (k - 1) + c));
+            final long mi = m(k, n / Functions.GCD.l(n, i * (k - 1) + c));
             mm.add((int) mi, 1);
           }
           mm.setCoefficient(mmc);
@@ -58,7 +58,7 @@ public class A288627 extends A288620 {
       rmm.setCoefficient(mm.getCoefficient());
       res.add(rmm);
     }
-    res.multiply(new Q(1, Functions.PHI.l((long) n) * n));
+    res.multiply(new Q(1, Functions.PHI.l(n) * n));
     return res;
   }
 }

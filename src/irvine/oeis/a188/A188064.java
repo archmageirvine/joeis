@@ -13,8 +13,6 @@ public class A188064 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A188064() {
-    super(0, n -> Integers.SINGLETON.sum(0, n, k -> {
-      return Functions.FACTORIAL.z(Integer.bitCount(k));
-    }));
+    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Functions.FACTORIAL.z(Integer.bitCount(k))));
   }
 }

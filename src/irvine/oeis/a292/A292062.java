@@ -13,8 +13,6 @@ public class A292062 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A292062() {
-    super(1, n -> {
-      return Functions.FACTORIAL.z(n).multiply(Z.valueOf(n).multiply(Functions.FACTORIAL.z(n)).subtract(Functions.STIRLING1.z(n + 1, 2).abs())).divide(Z.TWO);
-    });
+    super(1, n -> Functions.FACTORIAL.z(n).multiply(Z.valueOf(n).multiply(Functions.FACTORIAL.z(n)).subtract(Functions.STIRLING1.z(n + 1, 2).abs())).divide(Z.TWO));
   }
 }

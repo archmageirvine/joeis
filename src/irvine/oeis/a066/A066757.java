@@ -13,9 +13,7 @@ public class A066757 extends FilterSequence {
 
   /** Construct the sequence. */
   public A066757() {
-    super(1, new A000326(), k -> {
-      return k.isZero() || (k.mod(10) != 0 && Predicates.TRIANGULAR.is(Functions.REVERSE.z(k)));
-    });
+    super(1, new A000326(), k -> k.isZero() || (k.mod(10) != 0 && Predicates.TRIANGULAR.is(Functions.REVERSE.z(k))));
   }
 }
 

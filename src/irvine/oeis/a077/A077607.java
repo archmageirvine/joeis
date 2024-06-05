@@ -26,8 +26,6 @@ public class A077607 extends MemorySequence {
     if (mN == 1) {
       return Z.ONE;
     }
-    return Integers.SINGLETON.sum(1, mN - 1, k -> {
-      return Functions.FACTORIAL.z(mN + 1 - k).multiply(a(k));
-    }).negate();
+    return Integers.SINGLETON.sum(1, mN - 1, k -> Functions.FACTORIAL.z(mN + 1 - k).multiply(a(k))).negate();
   }
 }

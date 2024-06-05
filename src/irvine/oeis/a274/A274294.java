@@ -16,10 +16,6 @@ public class A274294 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A274294() {
-    super(0, n -> {
-      return Z.ONE.add(Z.valueOf(n + 1).square()).add(Functions.FACTORIAL.z(n)).add(Integers.SINGLETON.sum(1, n - 1, k -> {
-        return Binomial.binomial(n, k).multiply(Functions.FACTORIAL.z(n)).divide(Functions.FACTORIAL.z(n - k));
-      }));
-    });
+    super(0, n -> Z.ONE.add(Z.valueOf(n + 1).square()).add(Functions.FACTORIAL.z(n)).add(Integers.SINGLETON.sum(1, n - 1, k -> Binomial.binomial(n, k).multiply(Functions.FACTORIAL.z(n)).divide(Functions.FACTORIAL.z(n - k)))));
   }
 }

@@ -14,8 +14,6 @@ public class A352058 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A352058() {
-    super(1, n -> Rationals.SINGLETON.sopf(n, p -> {
-      return new Q(Functions.FACTORIAL.z(n), Functions.FACTORIAL.z(p).multiply(Functions.FACTORIAL.z(n / p)));
-    }).num());
+    super(1, n -> Rationals.SINGLETON.sopf(n, p -> new Q(Functions.FACTORIAL.z(n), Functions.FACTORIAL.z(p).multiply(Functions.FACTORIAL.z(n / p)))).num());
   }
 }

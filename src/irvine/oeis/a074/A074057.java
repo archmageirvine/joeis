@@ -14,8 +14,6 @@ public class A074057 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A074057() {
-    super(3, n -> {
-      return Z.TWO.multiply(Functions.PHI.l((long) (n - 2))).subtract(n - 1);
-    });
+    super(3, n -> Z.TWO.multiply(Functions.PHI.l((long) (n - 2))).subtract(n - 1));
   }
 }

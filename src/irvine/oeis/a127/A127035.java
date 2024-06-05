@@ -13,8 +13,6 @@ public class A127035 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A127035() {
-    super(1, n -> {
-      return CR.valueOf(Functions.FACTORIAL.z(n)).log().divide(CR.valueOf(13).log()).floor();
-    });
+    super(1, n -> CR.valueOf(Functions.FACTORIAL.z(n)).log().divide(CR.valueOf(13).log()).floor());
   }
 }

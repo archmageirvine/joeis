@@ -14,8 +14,6 @@ public class A181857 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A181857() {
-    super(0, n -> {
-      return Functions.FACTORIAL.z(n).lcm(Z.valueOf(n).multiply(n));
-    });
+    super(0, n -> Functions.FACTORIAL.z(n).lcm(Z.valueOf(n).multiply(n)));
   }
 }

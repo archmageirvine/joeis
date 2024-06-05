@@ -13,8 +13,6 @@ public class A302944 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A302944() {
-    super(1, (n, s) -> {
-      return Z.FOUR.multiply(Z.valueOf(2 * n - 1).multiply(s[0]).add(Z.NEG_ONE.pow(n).multiply(Functions.FACTORIAL.z(n - 2))));
-    }, "8", PREVIOUS);
+    super(1, (n, s) -> Z.FOUR.multiply(Z.valueOf(2 * n - 1).multiply(s[0]).add(Z.NEG_ONE.pow(n).multiply(Functions.FACTORIAL.z(n - 2)))), "8", PREVIOUS);
   }
 }

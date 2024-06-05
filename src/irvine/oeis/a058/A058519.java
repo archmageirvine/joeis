@@ -23,9 +23,7 @@ public class A058519 extends Sequence0 {
   public Z next() {
     ++mN;
     mB = RING.add(RING.x(), RING.substitute(mB, M, mN));
-    final Polynomial<Q> c = RING.sum(1, mN, k -> {
-      return RING.multiply(RING.log1p(RING.negate(mB.substitutePower(k, mN)), mN), new Q(-Functions.PHI.l(k), k));
-    });
+    final Polynomial<Q> c = RING.sum(1, mN, k -> RING.multiply(RING.log1p(RING.negate(mB.substitutePower(k, mN)), mN), new Q(-Functions.PHI.l(k), k)));
     return c.coeff(mN).toZ();
   }
 }

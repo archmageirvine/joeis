@@ -15,8 +15,6 @@ public class A174782 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A174782() {
-    super(1, n -> Integers.SINGLETON.sum(0, n / 2, k -> {
-      return Z.valueOf(k).pow(4).multiply(Functions.FACTORIAL.z(n)).divide(Functions.FACTORIAL.z(n - 2 * k).multiply(Z.ONE.shiftLeft(k)).multiply(Functions.FACTORIAL.z(k)));
-    }));
+    super(1, n -> Integers.SINGLETON.sum(0, n / 2, k -> Z.valueOf(k).pow(4).multiply(Functions.FACTORIAL.z(n)).divide(Functions.FACTORIAL.z(n - 2 * k).multiply(Z.ONE.shiftLeft(k)).multiply(Functions.FACTORIAL.z(k)))));
   }
 }

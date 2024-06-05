@@ -14,8 +14,6 @@ public class A115711 extends FilterSequence {
 
   /** Construct the sequence. */
   public A115711() {
-    super(1, new A000290(), v -> {
-      return Jaguar.factor(Functions.REVERSE.z(v)).isSemiprime();
-    });
+    super(1, new A000290(), v -> Jaguar.factor(Functions.REVERSE.z(v)).isSemiprime());
   }
 }

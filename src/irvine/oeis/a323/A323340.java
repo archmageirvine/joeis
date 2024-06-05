@@ -14,8 +14,6 @@ public class A323340 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A323340() {
-    super(0, new A007840(), (n, v) -> {
-      return new Q(v, Functions.FACTORIAL.z(n)).den();
-    });
+    super(0, new A007840(), (n, v) -> new Q(v, Functions.FACTORIAL.z(n)).den());
   }
 }

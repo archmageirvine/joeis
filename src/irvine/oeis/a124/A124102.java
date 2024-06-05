@@ -14,8 +14,6 @@ public class A124102 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A124102() {
-    super(0, n -> {
-      return Binomial.binomial(2L * n, n).multiply(Functions.BELL.z(n));
-    });
+    super(0, n -> Binomial.binomial(2L * n, n).multiply(Functions.BELL.z(n)));
   }
 }

@@ -13,8 +13,6 @@ public class A364932 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A364932() {
-    super(1, new A001615(), v -> {
-      return Functions.PHI.z(v);
-    });
+    super(1, new A001615(), v -> Functions.PHI.z(v));
   }
 }

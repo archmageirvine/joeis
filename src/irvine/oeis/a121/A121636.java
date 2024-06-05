@@ -12,8 +12,6 @@ public class A121636 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A121636() {
-    super(1, (n, s) -> {
-      return s[0].multiply(n - 1).add(Functions.FACTORIAL.z(n - 2).multiply(n));
-    }, "0,1", PREVIOUS, PREVIOUS);
+    super(1, (n, s) -> s[0].multiply(n - 1).add(Functions.FACTORIAL.z(n - 2).multiply(n)), "0,1", PREVIOUS, PREVIOUS);
   }
 }

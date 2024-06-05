@@ -15,8 +15,6 @@ public class A349741 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A349741() {
-    super(1, n -> Integers.SINGLETON.product(1, n - 1, k -> {
-      return Functions.PHI.z(Z.valueOf(n).gcd(k));
-    }));
+    super(1, n -> Integers.SINGLETON.product(1, n - 1, k -> Functions.PHI.z(Z.valueOf(n).gcd(k))));
   }
 }

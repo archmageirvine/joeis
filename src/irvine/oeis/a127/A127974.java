@@ -14,8 +14,6 @@ public class A127974 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A127974() {
-    super(0, (self, n) -> {
-      return new Q(Functions.FACTORIAL.z(n), self.s(0)).den();
-    }, "", new A008544());
+    super(0, (self, n) -> new Q(Functions.FACTORIAL.z(n), self.s(0)).den(), "", new A008544());
   }
 }

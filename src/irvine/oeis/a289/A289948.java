@@ -17,8 +17,6 @@ public class A289948 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sum(0, mN, k -> {
-      return Functions.FACTORIAL.z(k).pow(3);
-    });
+    return Integers.SINGLETON.sum(0, mN, k -> Functions.FACTORIAL.z(k).pow(3));
   }
 }

@@ -13,8 +13,6 @@ public class A234365 extends HypergeometricSequence {
 
   /** Construct the sequence. */
   public A234365() {
-    super(1, 3, 2, "[[0, 1],[1/2,-1/2],[0,-1/2],[1],[1],[1]]", "", (n, v) -> {
-      return v.multiply(Functions.FACTORIAL.z(n).square()).multiply(Functions.FACTORIAL.z(n - 1)).multiply(Z.ONE.shiftLeft(n)).num();
-    });
+    super(1, 3, 2, "[[0, 1],[1/2,-1/2],[0,-1/2],[1],[1],[1]]", "", (n, v) -> v.multiply(Functions.FACTORIAL.z(n).square()).multiply(Functions.FACTORIAL.z(n - 1)).multiply(Z.ONE.shiftLeft(n)).num());
   }
 }

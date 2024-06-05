@@ -13,8 +13,6 @@ public class A066084 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A066084() {
-    super(0, n -> {
-      return Functions.FACTORIAL.z(n).square().add(Functions.FACTORIAL.z(n)).add(n);
-    });
+    super(0, n -> Functions.FACTORIAL.z(n).square().add(Functions.FACTORIAL.z(n)).add(n));
   }
 }

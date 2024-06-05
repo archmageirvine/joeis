@@ -13,9 +13,7 @@ public class A076157 extends FoldedContinuedFraction {
 
   /** Construct the sequence */
   public A076157() {
-    super(0, k -> {
-      return Z.TWO.pow(Functions.FACTORIAL.z(k).multiply(k - 1));
-    }, 1, 3, 1, 3, 4);
+    super(0, k -> Z.TWO.pow(Functions.FACTORIAL.z(k).multiply(k - 1)), 1, 3, 1, 3, 4);
     setOffset(1);
     setStart(2);
   }

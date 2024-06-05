@@ -13,8 +13,6 @@ public class A270524 extends A269993 {
 
   /** Construct the sequence. */
   public A270524() {
-    super(1, CR.E.inverse(), k -> {
-      return Functions.FACTORIAL.z(k);
-    });
+    super(1, CR.E.inverse(), k -> Functions.FACTORIAL.z(k));
   }
 }

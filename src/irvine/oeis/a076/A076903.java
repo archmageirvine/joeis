@@ -13,8 +13,6 @@ public class A076903 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A076903() {
-    super(0, new A000110(), (n, v) -> {
-      return v.divide(v.gcd(Functions.FACTORIAL.z(n)));
-    });
+    super(0, new A000110(), (n, v) -> v.divide(v.gcd(Functions.FACTORIAL.z(n))));
   }
 }

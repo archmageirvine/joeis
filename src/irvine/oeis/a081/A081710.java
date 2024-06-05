@@ -13,8 +13,6 @@ public class A081710 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A081710() {
-    super(1, 1, new LambdaSequence(1, k -> {
-      return Functions.FACTORIAL.z(k).add(Functions.PRIMORIAL.z(k)).add(+1);
-    }), PRIME);
+    super(1, 1, new LambdaSequence(1, k -> Functions.FACTORIAL.z(k).add(Functions.PRIMORIAL.z(k)).add(+1)), PRIME);
   }
 }

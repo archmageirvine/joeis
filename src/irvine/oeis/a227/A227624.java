@@ -15,8 +15,6 @@ public class A227624 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A227624() {
-    super(0, n -> {
-      return new Q(Functions.FACTORIAL.z(4 * n + 2), Functions.FACTORIAL.z(3 * n).multiply(Z.ONE.shiftLeft(n))).num();
-    });
+    super(0, n -> new Q(Functions.FACTORIAL.z(4 * n + 2), Functions.FACTORIAL.z(3 * n).multiply(Z.ONE.shiftLeft(n))).num());
   }
 }

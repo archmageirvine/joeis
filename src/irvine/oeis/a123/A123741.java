@@ -13,8 +13,6 @@ public class A123741 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A123741() {
-    super(1, n -> Integers.SINGLETON.product(1, n, j -> {
-      return Functions.FIBONACCI.z((long) (n + 2)).subtract(Functions.FIBONACCI.z((long) (j + 1)));
-    }));
+    super(1, n -> Integers.SINGLETON.product(1, n, j -> Functions.FIBONACCI.z((long) (n + 2)).subtract(Functions.FIBONACCI.z((long) (j + 1)))));
   }
 }

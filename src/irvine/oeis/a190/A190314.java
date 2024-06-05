@@ -16,8 +16,6 @@ public class A190314 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A190314() {
-    super(0, n -> Integers.SINGLETON.sum(1, n, k -> {
-      return Functions.FACTORIAL.z(k - 1).multiply(Binomial.binomial(n, k)).multiply(Z.valueOf(n).pow(n - k));
-    }));
+    super(0, n -> Integers.SINGLETON.sum(1, n, k -> Functions.FACTORIAL.z(k - 1).multiply(Binomial.binomial(n, k)).multiply(Z.valueOf(n).pow(n - k))));
   }
 }

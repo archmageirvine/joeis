@@ -13,8 +13,6 @@ public class A115704 extends FilterSequence {
 
   /** Construct the sequence. */
   public A115704() {
-    super(1, new A000217(), v -> {
-      return Functions.REVERSE.z(v).isProbablePrime();
-    });
+    super(1, new A000217(), v -> Functions.REVERSE.z(v).isProbablePrime());
   }
 }

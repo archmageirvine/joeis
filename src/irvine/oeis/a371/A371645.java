@@ -13,8 +13,6 @@ public class A371645 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A371645() {
-    super(0, n -> Integers.SINGLETON.product(0, n, k -> {
-      return Functions.FACTORIAL.z(2 * k * k);
-    }));
+    super(0, n -> Integers.SINGLETON.product(0, n, k -> Functions.FACTORIAL.z(2 * k * k)));
   }
 }

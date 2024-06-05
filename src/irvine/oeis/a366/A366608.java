@@ -12,9 +12,7 @@ public class A366608 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A366608() {
-    super(0, new A052539(), k -> {
-      return Functions.PHI.z(k);
-    });
+    super(0, new A052539(), k -> Functions.PHI.z(k));
   }
 }
 

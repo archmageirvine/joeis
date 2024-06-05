@@ -12,8 +12,6 @@ public class A103676 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A103676() {
-    super(1, 1, k -> {
-      return Functions.FACTORIAL.z(k).toString(2).indexOf("1111000") >= 0;
-    });
+    super(1, 1, k -> Functions.FACTORIAL.z(k).toString(2).indexOf("1111000") >= 0);
   }
 }

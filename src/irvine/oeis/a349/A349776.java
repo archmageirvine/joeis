@@ -21,10 +21,8 @@ public class A349776 extends BaseTriangle {
   @Override
   public Z triangleElement(final int n, final int k) {
     // Sum_{j=0..k} binomial(n-1, n-j)*n!/j!.
-    return Integers.SINGLETON.sum(0, k, j -> {
-      return Binomial.binomial(n - 1, n - j)
-        .multiply(Functions.FACTORIAL.z(n))
-        .divide(Functions.FACTORIAL.z(j));
-    });
+    return Integers.SINGLETON.sum(0, k, j -> Binomial.binomial(n - 1, n - j)
+      .multiply(Functions.FACTORIAL.z(n))
+      .divide(Functions.FACTORIAL.z(j)));
   }
 }

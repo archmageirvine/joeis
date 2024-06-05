@@ -15,10 +15,6 @@ public class A120014 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A120014() {
-    super(1, n -> {
-      return Z.valueOf(n).pow(n - 1).subtract(Integers.SINGLETON.sum(2, n - 2, k -> {
-        return Z.valueOf(n).pow(k - 1).multiply(k).multiply(Z.valueOf(k - 1)).multiply(Z.valueOf(n - k - 1)).multiply(Functions.FACTORIAL.z(2 * n - k - 2)).divide(Functions.FACTORIAL.z(n - k));
-      }).divide(Functions.FACTORIAL.z(n)));
-    });
+    super(1, n -> Z.valueOf(n).pow(n - 1).subtract(Integers.SINGLETON.sum(2, n - 2, k -> Z.valueOf(n).pow(k - 1).multiply(k).multiply(Z.valueOf(k - 1)).multiply(Z.valueOf(n - k - 1)).multiply(Functions.FACTORIAL.z(2 * n - k - 2)).divide(Functions.FACTORIAL.z(n - k))).divide(Functions.FACTORIAL.z(n))));
   }
 }

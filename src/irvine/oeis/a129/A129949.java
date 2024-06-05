@@ -14,8 +14,6 @@ public class A129949 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A129949() {
-    super(0, n -> {
-      return Functions.FACTORIAL.z(n).subtract(Binomial.binomial(n, 3));
-    });
+    super(0, n -> Functions.FACTORIAL.z(n).subtract(Binomial.binomial(n, 3)));
   }
 }

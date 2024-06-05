@@ -12,8 +12,6 @@ public class A085866 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A085866() {
-    super(1, (n, s) -> {
-      return s[0].multiply(Functions.PHI.z(s[0]));
-    }, "3", PREVIOUS);
+    super(1, (n, s) -> s[0].multiply(Functions.PHI.z(s[0])), "3", PREVIOUS);
   }
 }

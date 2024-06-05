@@ -15,8 +15,6 @@ public class A352013 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A352013() {
-    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> {
-      return (((n / d + 1 & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(Functions.FACTORIAL.z(n - 1)).divide(Functions.FACTORIAL.z(d - 1));
-    }));
+    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> (((n / d + 1 & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(Functions.FACTORIAL.z(n - 1)).divide(Functions.FACTORIAL.z(d - 1))));
   }
 }

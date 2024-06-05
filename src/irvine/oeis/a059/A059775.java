@@ -17,12 +17,8 @@ public class A059775 extends Sequence0 {
   public Z next() {
     final Z n = Z.valueOf(++mN);
     return n.multiply(mN - 1).multiply(n.square().subtract(mN + 1))
-      .add(Integers.SINGLETON.sum(2, Functions.SQRT.i(mN), k -> {
-        return Z.valueOf(Functions.PHI.l(k) * (mN / ((long) k * k)));
-      }).multiply(4))
-      .subtract(Integers.SINGLETON.sum(2, mN, k -> {
-        return Z.valueOf(Functions.PHI.l(k) * (mN / k) * (mN / k));
-      }).multiply2());
+      .add(Integers.SINGLETON.sum(2, Functions.SQRT.i(mN), k -> Z.valueOf(Functions.PHI.l(k) * (mN / ((long) k * k)))).multiply(4))
+      .subtract(Integers.SINGLETON.sum(2, mN, k -> Z.valueOf(Functions.PHI.l(k) * (mN / k) * (mN / k))).multiply2());
   }
 }
 

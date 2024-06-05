@@ -14,9 +14,7 @@ public class A120307 extends FilterSequence {
 
   /** Construct the sequence. */
   public A120307() {
-    super(1, new SimpleTransformSequence(0, new A163085(), (n, v) -> {
-      return v.divide(Functions.FACTORIAL.z(n));
-    }), (k, v) -> (k & 1) == 0);
+    super(1, new SimpleTransformSequence(0, new A163085(), (n, v) -> v.divide(Functions.FACTORIAL.z(n))), (k, v) -> (k & 1) == 0);
     next();
   }
 }

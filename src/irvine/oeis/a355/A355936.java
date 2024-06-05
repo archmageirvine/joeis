@@ -14,8 +14,6 @@ public class A355936 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A355936() {
-    super(1, (p, e) -> {
-      return (((e & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(Functions.FIBONACCI.z(e));
-    });
+    super(1, (p, e) -> (((e & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(Functions.FIBONACCI.z(e)));
   }
 }

@@ -17,9 +17,7 @@ public class A131445 extends LambdaSequence {
   public A131445() {
     super(1, n -> {
       final A075874 mSeq = new A075874();
-      return Rationals.SINGLETON.sum(1, n, k -> {
-        return new Q(mSeq.next(), Functions.FACTORIAL.z(k));
-      }).num();
+      return Rationals.SINGLETON.sum(1, n, k -> new Q(mSeq.next(), Functions.FACTORIAL.z(k))).num();
     });
   }
 }

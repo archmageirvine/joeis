@@ -13,8 +13,6 @@ public class A332960 extends HypergeometricSequence {
 
   /** Construct the sequence. */
   public A332960() {
-    super(1, 2, 1, "[[1/2,-1/2],[0,-1/2],[1],[8]]", "", (n, v) -> {
-      return v.subtract(1).multiply(Functions.FACTORIAL.z(2 * n)).divide(Functions.FACTORIAL.z(n)).divide(Z.ONE.shiftLeft(n)).num();
-    });
+    super(1, 2, 1, "[[1/2,-1/2],[0,-1/2],[1],[8]]", "", (n, v) -> v.subtract(1).multiply(Functions.FACTORIAL.z(2 * n)).divide(Functions.FACTORIAL.z(n)).divide(Z.ONE.shiftLeft(n)).num());
   }
 }

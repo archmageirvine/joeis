@@ -13,8 +13,6 @@ public class A358732 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A358732() {
-    super(1, n -> {
-      return Functions.STIRLING2.z(2L * n - 2, (long) n).multiply(Functions.FACTORIAL.z(2 * n)).divide(Functions.FACTORIAL.z(n));
-    });
+    super(1, n -> Functions.STIRLING2.z(2L * n - 2, (long) n).multiply(Functions.FACTORIAL.z(2 * n)).divide(Functions.FACTORIAL.z(n)));
   }
 }

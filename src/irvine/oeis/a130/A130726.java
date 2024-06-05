@@ -13,8 +13,6 @@ public class A130726 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A130726() {
-    super(1, new A007917(), v -> {
-      return Functions.FACTORIAL.z(v);
-    });
+    super(1, new A007917(), v -> Functions.FACTORIAL.z(v));
   }
 }

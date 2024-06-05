@@ -18,8 +18,6 @@ public class A059760 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sum(2, mN, k -> {
-      return Binomial.binomial(mN, k).multiply(Functions.FACTORIAL.z(k - 1));
-    }).multiply(Functions.FACTORIAL.z(mN)).divide2();
+    return Integers.SINGLETON.sum(2, mN, k -> Binomial.binomial(mN, k).multiply(Functions.FACTORIAL.z(k - 1))).multiply(Functions.FACTORIAL.z(mN)).divide2();
   }
 }

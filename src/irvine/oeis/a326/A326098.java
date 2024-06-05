@@ -16,8 +16,6 @@ public class A326098 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A326098() {
-    super(0, n -> (n == 0) ? Z.ONE : Integers.SINGLETON.sumdiv(n, d -> {
-      return Z.valueOf(d + 1).multiply(Binomial.binomial(d, n / d - 1)).multiply(Functions.FACTORIAL.z(n)).divide(Functions.FACTORIAL.z(d));
-    }));
+    super(0, n -> (n == 0) ? Z.ONE : Integers.SINGLETON.sumdiv(n, d -> Z.valueOf(d + 1).multiply(Binomial.binomial(d, n / d - 1)).multiply(Functions.FACTORIAL.z(n)).divide(Functions.FACTORIAL.z(d))));
   }
 }

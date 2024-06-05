@@ -20,8 +20,6 @@ public class A303505 extends Sequence2 {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sum(2, new Q(mN, 2).ceiling().intValue() - 1, k -> {
-      return Binomial.binomial(mN, 2L * k + 1).multiply(Functions.FACTORIAL.z(2 * k)).divide2();
-    });
+    return Integers.SINGLETON.sum(2, new Q(mN, 2).ceiling().intValue() - 1, k -> Binomial.binomial(mN, 2L * k + 1).multiply(Functions.FACTORIAL.z(2 * k)).divide2());
   }
 }

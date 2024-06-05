@@ -33,8 +33,6 @@ public class A061889 extends Sequence2 {
   @Override
   public Z next() {
     final Z n = Z.valueOf(++mN);
-    return Integers.SINGLETON.sum(2, mN, r -> {
-      return mB.get(Functions.FACTORIAL.z(r), n, Z.valueOf(r - 1));
-    });
+    return Integers.SINGLETON.sum(2, mN, r -> mB.get(Functions.FACTORIAL.z(r), n, Z.valueOf(r - 1)));
   }
 }

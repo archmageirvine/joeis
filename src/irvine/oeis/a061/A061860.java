@@ -16,8 +16,6 @@ public class A061860 extends Sequence0 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sumdiv(++mN, d -> {
-      return Binomial.binomial(mN, d).multiply(Functions.PHI.l((long) (mN / d))).multiply(Functions.FACTORIAL.z(d));
-    }).divide(mN);
+    return Integers.SINGLETON.sumdiv(++mN, d -> Binomial.binomial(mN, d).multiply(Functions.PHI.l((long) (mN / d))).multiply(Functions.FACTORIAL.z(d))).divide(mN);
   }
 }

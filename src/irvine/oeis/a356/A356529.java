@@ -15,8 +15,6 @@ public class A356529 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A356529() {
-    super(1, n -> {
-      return Functions.FACTORIAL.z(n - 1).multiply(Integers.SINGLETON.sumdiv(n, d -> Z.valueOf(d).pow(n - d + 1)));
-    });
+    super(1, n -> Functions.FACTORIAL.z(n - 1).multiply(Integers.SINGLETON.sumdiv(n, d -> Z.valueOf(d).pow(n - d + 1))));
   }
 }

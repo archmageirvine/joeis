@@ -31,14 +31,12 @@ public class A068182 extends Sequence0 {
   private Q innerSum(final int k) {
     final Z a = Z.TWO.pow(2L * mN - 1 - 3L * k).add(Z.NEG_ONE.pow(k));
     return Rationals.SINGLETON.sum(0, k - mN / 2,
-      g -> {
-        return new Q(
-          a.multiply(Functions.FACTORIAL.z(2 * k - 2 * g)),
-          Functions.FACTORIAL.z(g)
-            .multiply(Functions.FACTORIAL.z(k - g))
-            .multiply(Functions.FACTORIAL.z(4 * k + 3 - 2 * mN - 4 * g))
-        ).multiply(pow3(g - 2)).divide(Functions.FACTORIAL.z(2 * mN - 1 - 3 * k));
-      });
+      g -> new Q(
+        a.multiply(Functions.FACTORIAL.z(2 * k - 2 * g)),
+        Functions.FACTORIAL.z(g)
+          .multiply(Functions.FACTORIAL.z(k - g))
+          .multiply(Functions.FACTORIAL.z(4 * k + 3 - 2 * mN - 4 * g))
+      ).multiply(pow3(g - 2)).divide(Functions.FACTORIAL.z(2 * mN - 1 - 3 * k)));
   }
 
   private Q pow34(final int g) {
@@ -47,24 +45,20 @@ public class A068182 extends Sequence0 {
 
   private Q sum1(final int n) {
     return Rationals.SINGLETON.sum(0, n / 2,
-      g -> {
-        return new Q(
-          Functions.FACTORIAL.z(4 * n - 2 - 2 * g),
-          Functions.FACTORIAL.z(g)
-            .multiply(Functions.FACTORIAL.z(2 * n - 1 - g))
-            .multiply(Functions.FACTORIAL.z(2 * n - 4 * g + 1))
-            .multiply(Z.THREE.pow(g))
-            .multiply2());
-      });
+      g -> new Q(
+        Functions.FACTORIAL.z(4 * n - 2 - 2 * g),
+        Functions.FACTORIAL.z(g)
+          .multiply(Functions.FACTORIAL.z(2 * n - 1 - g))
+          .multiply(Functions.FACTORIAL.z(2 * n - 4 * g + 1))
+          .multiply(Z.THREE.pow(g))
+          .multiply2()));
   }
 
   private Q sum2(final int n) {
     return Rationals.SINGLETON.sum(0, (n + 1) / 3,
-        g -> {
-          return new Q(
-            Z.TWO.pow(n + 1 - 3L * g).add(Z.NEG_ONE.pow(n - g)),
-            Functions.FACTORIAL.z(g).multiply(Functions.FACTORIAL.z(n + 1 - 3 * g))).multiply(pow34(g - 1));
-        })
+        g -> new Q(
+          Z.TWO.pow(n + 1 - 3L * g).add(Z.NEG_ONE.pow(n - g)),
+          Functions.FACTORIAL.z(g).multiply(Functions.FACTORIAL.z(n + 1 - 3 * g))).multiply(pow34(g - 1)))
       .multiply(new Q(Functions.FACTORIAL.z(2 * n - 2), Functions.FACTORIAL.z(n - 1).multiply(6)));
   }
 

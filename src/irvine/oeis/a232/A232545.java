@@ -14,8 +14,6 @@ public class A232545 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A232545() {
-    super(2, n -> {
-      return Z.valueOf(n).pow(n - 2).multiply(Functions.FACTORIAL.z(n - 2).pow(n));
-    });
+    super(2, n -> Z.valueOf(n).pow(n - 2).multiply(Functions.FACTORIAL.z(n - 2).pow(n)));
   }
 }

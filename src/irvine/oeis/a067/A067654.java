@@ -21,8 +21,6 @@ public class A067654 extends Sequence1 {
 
   @Override
   public Z next() {
-    return select(Rationals.SINGLETON.sum(1, ++mN, k -> {
-      return new Q(Binomial.binomial(mN - 1, k - 1).shiftLeft(k), Functions.FACTORIAL.z(k));
-    }));
+    return select(Rationals.SINGLETON.sum(1, ++mN, k -> new Q(Binomial.binomial(mN - 1, k - 1).shiftLeft(k), Functions.FACTORIAL.z(k))));
   }
 }

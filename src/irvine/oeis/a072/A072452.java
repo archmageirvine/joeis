@@ -12,8 +12,6 @@ public class A072452 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A072452() {
-    super(0, (n, s) -> {
-      return Functions.REVERSE.z(s[0].add(n));
-    }, "0", PREVIOUS);
+    super(0, (n, s) -> Functions.REVERSE.z(s[0].add(n)), "0", PREVIOUS);
   }
 }

@@ -13,8 +13,6 @@ public class A076686 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A076686() {
-    super(1, n -> {
-      return Functions.CORE.z(n).min(Functions.PHI.l(n));
-    });
+    super(1, n -> Functions.CORE.z(n).min(Functions.PHI.l(n)));
   }
 }

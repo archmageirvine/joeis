@@ -15,8 +15,6 @@ public class A262016 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A262016() {
-    super(1, n -> {
-      return Integers.SINGLETON.sum(1, n, k -> Z.TWO.pow(Functions.PRIME.z(k).subtract(Z.ONE))).mod(Functions.FACTORIAL.z(n)).divide2();
-    });
+    super(1, n -> Integers.SINGLETON.sum(1, n, k -> Z.TWO.pow(Functions.PRIME.z(k).subtract(Z.ONE))).mod(Functions.FACTORIAL.z(n)).divide2());
   }
 }

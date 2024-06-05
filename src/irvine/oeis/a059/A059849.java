@@ -15,9 +15,7 @@ public class A059849 extends Sequence0 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sum(0, ++mN, k -> {
-      return Functions.STIRLING1.z(mN, k).multiply(Functions.BELL.z(k).square());
-    });
+    return Integers.SINGLETON.sum(0, ++mN, k -> Functions.STIRLING1.z(mN, k).multiply(Functions.BELL.z(k).square()));
   }
 }
 

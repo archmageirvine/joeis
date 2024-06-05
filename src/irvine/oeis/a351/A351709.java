@@ -13,8 +13,6 @@ public class A351709 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A351709() {
-    super(1, n -> Integers.SINGLETON.sopf(n, p -> {
-      return Functions.FACTORIAL.z(p);
-    }));
+    super(1, n -> Integers.SINGLETON.sopf(n, p -> Functions.FACTORIAL.z(p)));
   }
 }

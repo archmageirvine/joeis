@@ -14,8 +14,6 @@ public class A277168 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A277168() {
-    super(1, n -> {
-      return Binomial.binomial(2L * n - 1, n - 1).multiply(Z.valueOf(2L * n - 1).pow(n - 2)).multiply(Functions.FACTORIAL.z(n));
-    });
+    super(1, n -> Binomial.binomial(2L * n - 1, n - 1).multiply(Z.valueOf(2L * n - 1).pow(n - 2)).multiply(Functions.FACTORIAL.z(n)));
   }
 }

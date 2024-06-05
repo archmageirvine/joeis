@@ -14,8 +14,6 @@ public class A194130 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A194130() {
-    super(1, n -> {
-      return Functions.FACTORIAL.z(n).divide(Z.valueOf(n).gcd(3));
-    });
+    super(1, n -> Functions.FACTORIAL.z(n).divide(Z.valueOf(n).gcd(3)));
   }
 }

@@ -12,8 +12,6 @@ public class A123316 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A123316() {
-    super(1, 1, 1, (n, k) -> {
-      return Functions.FACTORIAL.z(n).multiply(k + 1).divide(2);
-    });
+    super(1, 1, 1, (n, k) -> Functions.FACTORIAL.z(n).multiply(k + 1).divide(2));
   }
 }

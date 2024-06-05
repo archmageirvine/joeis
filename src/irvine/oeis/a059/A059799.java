@@ -12,8 +12,6 @@ public class A059799 extends FilterSequence {
 
   /** Construct the sequence. */
   public A059799() {
-    super(new A000040(), k -> {
-      return Functions.REVERSE.z(k).add(k).isSquare();
-    });
+    super(new A000040(), k -> Functions.REVERSE.z(k).add(k).isSquare());
   }
 }

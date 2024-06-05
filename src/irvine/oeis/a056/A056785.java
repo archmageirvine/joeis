@@ -22,9 +22,7 @@ public class A056785 extends Sequence1 {
 
   private final Hunter mHunter = new Hunter(Lattices.Z2, false) {
     {
-      setKeeper((animal, forbidden) -> {
-        mCanons.add(Lattices.Z2.freeCanonical(Canons.translate(Lattices.Z2, animal)));
-      });
+      setKeeper((animal, forbidden) -> mCanons.add(Lattices.Z2.freeCanonical(Canons.translate(Lattices.Z2, animal))));
     }
 
     @Override

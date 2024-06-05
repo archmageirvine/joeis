@@ -12,8 +12,6 @@ public class A118394 extends LambdaTable {
 
   /** Construct the sequence. */
   public A118394() {
-    super(0, 0, n -> new Integer[]{0, n / 3}, (n, k) -> {
-      return Functions.FACTORIAL.z(n).divide(Functions.FACTORIAL.z(k).multiply(Functions.FACTORIAL.z(n - 3 * k)));
-    });
+    super(0, 0, n -> new Integer[]{0, n / 3}, (n, k) -> Functions.FACTORIAL.z(n).divide(Functions.FACTORIAL.z(k).multiply(Functions.FACTORIAL.z(n - 3 * k))));
   }
 }

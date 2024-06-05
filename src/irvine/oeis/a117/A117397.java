@@ -15,10 +15,6 @@ public class A117397 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A117397() {
-    super(0, n -> {
-      return (Z.ONE).add(Integers.SINGLETON.sum(4, n + 3, k -> {
-        return Functions.FACTORIAL.z(k);
-      }).multiply(Z.THREE).divide(Functions.FACTORIAL.z(4)));
-    });
+    super(0, n -> (Z.ONE).add(Integers.SINGLETON.sum(4, n + 3, k -> Functions.FACTORIAL.z(k)).multiply(Z.THREE).divide(Functions.FACTORIAL.z(4))));
   }
 }

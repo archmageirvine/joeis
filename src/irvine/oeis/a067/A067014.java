@@ -12,8 +12,6 @@ public class A067014 extends CachedSequence {
 
   /** Construct the sequence. */
   public A067014() {
-    super(1, Integer.class, (self, k) -> {
-      return k == 1 ? Z.ONE : Functions.PHI.z(self.a(k - 1)).add(self.a(Functions.PHI.z(k - 1L)));
-    });
+    super(1, Integer.class, (self, k) -> k == 1 ? Z.ONE : Functions.PHI.z(self.a(k - 1)).add(self.a(Functions.PHI.z(k - 1L))));
   }
 }

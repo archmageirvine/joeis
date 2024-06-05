@@ -14,10 +14,6 @@ public class A108078 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A108078() {
-    super(0, n -> {
-      return Functions.FACTORIAL.z(n + 1).multiply(Integers.SINGLETON.product(1, n - 1, i -> {
-        return Functions.FACTORIAL.z(i + 1).multiply(Functions.FACTORIAL.z(n - i));
-      }));
-    });
+    super(0, n -> Functions.FACTORIAL.z(n + 1).multiply(Integers.SINGLETON.product(1, n - 1, i -> Functions.FACTORIAL.z(i + 1).multiply(Functions.FACTORIAL.z(n - i)))));
   }
 }

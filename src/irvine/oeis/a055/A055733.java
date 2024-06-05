@@ -25,9 +25,7 @@ public class A055733 extends MemoryFunction2Sequence<Integer, Q> {
     if (m < 1) {
       return Q.ZERO;
     }
-    return Rationals.SINGLETON.sum(0, n, k -> {
-      return get(n - k, m - 1).multiply(Binomial.binomial(n, k).square()).divide(Functions.FACTORIAL.z(k));
-    });
+    return Rationals.SINGLETON.sum(0, n, k -> get(n - k, m - 1).multiply(Binomial.binomial(n, k).square()).divide(Functions.FACTORIAL.z(k)));
   }
 
   @Override

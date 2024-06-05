@@ -26,9 +26,7 @@ public class A061692 extends Sequence1 {
     protected Polynomial<Q> compute(final int n) {
       return n == 0
         ? RING.one()
-        : RING.sum(1, n, i -> {
-        return RING.multiply(get(n - i).shift(1), new Q(Z.ONE, Functions.FACTORIAL.z(i).pow(3)));
-      });
+        : RING.sum(1, n, i -> RING.multiply(get(n - i).shift(1), new Q(Z.ONE, Functions.FACTORIAL.z(i).pow(3))));
     }
   };
 

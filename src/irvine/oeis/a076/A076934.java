@@ -14,8 +14,6 @@ public class A076934 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A076934() {
-    super(1, new A055881(), (n, v) -> {
-      return Z.valueOf(n).divide(Functions.FACTORIAL.z(v));
-    });
+    super(1, new A055881(), (n, v) -> Z.valueOf(n).divide(Functions.FACTORIAL.z(v)));
   }
 }

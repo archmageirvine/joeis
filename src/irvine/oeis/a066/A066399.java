@@ -17,8 +17,6 @@ public class A066399 extends Sequence0 {
   @Override
   public Z next() {
     final Z n = Z.valueOf(++mN + 1);
-    return Z.NEG_ONE.pow(mN).multiply(Integers.SINGLETON.sum(0, mN, k -> {
-      return n.pow(k).multiply(Functions.FACTORIAL.z(mN)).multiply(Binomial.binomial(2L * mN - k, mN)).divide(Functions.FACTORIAL.z(k));
-    }));
+    return Z.NEG_ONE.pow(mN).multiply(Integers.SINGLETON.sum(0, mN, k -> n.pow(k).multiply(Functions.FACTORIAL.z(mN)).multiply(Binomial.binomial(2L * mN - k, mN)).divide(Functions.FACTORIAL.z(k))));
   }
 }

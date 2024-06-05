@@ -13,8 +13,6 @@ public class A103161 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A103161() {
-    super(1, n -> {
-      return Functions.REVERSE.z(Z.TWO.pow(n)).gcd(Functions.REVERSE.z(Z.TWO.pow(n + 1)));
-    });
+    super(1, n -> Functions.REVERSE.z(Z.TWO.pow(n)).gcd(Functions.REVERSE.z(Z.TWO.pow(n + 1))));
   }
 }

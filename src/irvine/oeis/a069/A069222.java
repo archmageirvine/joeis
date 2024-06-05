@@ -13,8 +13,6 @@ public class A069222 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A069222() {
-    super(1, (n, s) -> {
-      return new Z(s[0].toString() + Functions.REVERSE.z(s[0]).toString()).add(new Z(s[1].toString() + Functions.REVERSE.z(s[1]).toString()));
-    }, "1,1", PREVIOUS, PREVIOUS);
+    super(1, (n, s) -> new Z(s[0].toString() + Functions.REVERSE.z(s[0]).toString()).add(new Z(s[1].toString() + Functions.REVERSE.z(s[1]).toString())), "1,1", PREVIOUS, PREVIOUS);
   }
 }

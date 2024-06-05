@@ -13,8 +13,6 @@ public class A352060 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A352060() {
-    super(1, n -> {
-      return Functions.FACTORIAL.z(n - 1).multiply(Functions.OMEGA.i(n));
-    });
+    super(1, n -> Functions.FACTORIAL.z(n - 1).multiply(Functions.OMEGA.i(n)));
   }
 }

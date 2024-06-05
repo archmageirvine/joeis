@@ -15,11 +15,7 @@ public class A143415 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A143415() {
-    super(0, n -> {
-      return Integers.SINGLETON.sum(0, n - 1, k -> {
-          return Binomial.binomial(n - 1, k).multiply(Functions.FACTORIAL.z(2 * n - k));
-        })
-        .divide(Functions.FACTORIAL.z(n + 1));
-    });
+    super(0, n -> Integers.SINGLETON.sum(0, n - 1, k -> Binomial.binomial(n - 1, k).multiply(Functions.FACTORIAL.z(2 * n - k)))
+      .divide(Functions.FACTORIAL.z(n + 1)));
   }
 }

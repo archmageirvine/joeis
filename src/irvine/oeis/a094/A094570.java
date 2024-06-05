@@ -12,8 +12,6 @@ public class A094570 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A094570() {
-    super(0, 0, 0, (n, k) -> {
-      return Functions.FIBONACCI.z(k).add(Functions.FIBONACCI.z((long) (n - k)));
-    });
+    super(0, 0, 0, (n, k) -> Functions.FIBONACCI.z(k).add(Functions.FIBONACCI.z((long) (n - k))));
   }
 }

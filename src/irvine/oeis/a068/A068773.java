@@ -15,8 +15,6 @@ public class A068773 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A068773() {
-    super(1, n -> Integers.SINGLETON.sum(1, n, k -> {
-      return ((((k + 1) & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(Functions.PHI.l(k));
-    }));
+    super(1, n -> Integers.SINGLETON.sum(1, n, k -> ((((k + 1) & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(Functions.PHI.l(k))));
   }
 }

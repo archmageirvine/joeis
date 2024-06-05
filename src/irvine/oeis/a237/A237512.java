@@ -15,9 +15,7 @@ public class A237512 extends A258293 {
 
   /** Construct the sequence. */
   public A237512() {
-    super(0, 0, n -> {
-      return Functions.FACTORIAL.z(n).subtract(Z.valueOf((long) n * (n + 1) / 2));
-    });
+    super(0, 0, n -> Functions.FACTORIAL.z(n).subtract(Z.valueOf((long) n * (n + 1) / 2)));
   }
 
   @Override

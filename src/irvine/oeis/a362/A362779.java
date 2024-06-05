@@ -12,8 +12,6 @@ public class A362779 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A362779() {
-    super(1, 1, 1, (n, k) -> {
-      return Functions.GPF.z(Functions.FACTORIAL.z(n).multiply(k).add(1));
-    });
+    super(1, 1, 1, (n, k) -> Functions.GPF.z(Functions.FACTORIAL.z(n).multiply(k).add(1)));
   }
 }

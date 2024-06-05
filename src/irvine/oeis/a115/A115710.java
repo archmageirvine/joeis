@@ -13,8 +13,6 @@ public class A115710 extends FilterSequence {
 
   /** Construct the sequence. */
   public A115710() {
-    super(1, new A001358(), v -> {
-      return Functions.REVERSE.z(v).isSquare();
-    });
+    super(1, new A001358(), v -> Functions.REVERSE.z(v).isSquare());
   }
 }

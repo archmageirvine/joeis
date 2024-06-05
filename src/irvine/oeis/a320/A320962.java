@@ -14,8 +14,6 @@ public class A320962 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A320962() {
-    super(0, n -> {
-      return (n <= 0) ? Z.ZERO : Z.NEG_ONE.pow(n - 1).multiply(Functions.FACTORIAL.z(n - 1)).multiply(Integers.SINGLETON.sum(0, n, i -> Functions.STIRLING2.z(n, i)));
-    });
+    super(0, n -> (n <= 0) ? Z.ZERO : Z.NEG_ONE.pow(n - 1).multiply(Functions.FACTORIAL.z(n - 1)).multiply(Integers.SINGLETON.sum(0, n, i -> Functions.STIRLING2.z(n, i))));
   }
 }

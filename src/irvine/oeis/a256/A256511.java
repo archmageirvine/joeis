@@ -12,8 +12,6 @@ public class A256511 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A256511() {
-    super(1, n -> {
-      return Functions.FACTORIAL.z(n * n - 1);
-    });
+    super(1, n -> Functions.FACTORIAL.z(n * n - 1));
   }
 }

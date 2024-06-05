@@ -12,8 +12,6 @@ public class A370055 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A370055() {
-    super(0, n -> {
-      return Functions.FACTORIAL.z(3 * n + 2).multiply(3).divide(Functions.FACTORIAL.z(2 * n + 3));
-    });
+    super(0, n -> Functions.FACTORIAL.z(3 * n + 2).multiply(3).divide(Functions.FACTORIAL.z(2 * n + 3)));
   }
 }

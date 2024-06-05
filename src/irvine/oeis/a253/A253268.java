@@ -14,8 +14,6 @@ public class A253268 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A253268() {
-    super(1, n -> Integers.SINGLETON.product(1, n, k -> {
-      return Functions.FIBONACCI.z(k).pow(k);
-    }));
+    super(1, n -> Integers.SINGLETON.product(1, n, k -> Functions.FIBONACCI.z(k).pow(k)));
   }
 }

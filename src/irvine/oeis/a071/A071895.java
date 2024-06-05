@@ -12,8 +12,6 @@ public class A071895 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A071895() {
-    super(1, (n, s) -> {
-      return s[0].multiply(Functions.FIBONACCI.z((long) (n + 1))).add(s[1]);
-    }, "1, 3", PREVIOUS, PREVIOUS);
+    super(1, (n, s) -> s[0].multiply(Functions.FIBONACCI.z((long) (n + 1))).add(s[1]), "1, 3", PREVIOUS, PREVIOUS);
   }
 }

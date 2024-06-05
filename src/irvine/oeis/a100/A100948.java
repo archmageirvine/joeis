@@ -13,8 +13,6 @@ public class A100948 extends LambdaTable {
 
   /** Construct the sequence. */
   public A100948() {
-    super(2, 2, n -> new Integer[]{1, 3}, (n, k) -> {
-      return k == 1 ? (n <= 2 ? Z.ONE : Functions.FACTORIAL.z(n).divide(3)) : (k == 2 ? (n <= 2 ? Z.ONE : Functions.FACTORIAL.z(n).divide(2)) : (Functions.FACTORIAL.z(n)));
-    });
+    super(2, 2, n -> new Integer[]{1, 3}, (n, k) -> k == 1 ? (n <= 2 ? Z.ONE : Functions.FACTORIAL.z(n).divide(3)) : (k == 2 ? (n <= 2 ? Z.ONE : Functions.FACTORIAL.z(n).divide(2)) : (Functions.FACTORIAL.z(n))));
   }
 }

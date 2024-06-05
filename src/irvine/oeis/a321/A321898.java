@@ -12,8 +12,6 @@ public class A321898 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A321898() {
-    super(1, (p, e) -> {
-      return Functions.FACTORIAL.z(Math.toIntExact(Functions.PRIME_PI.l(p))).pow(e);
-    });
+    super(1, (p, e) -> Functions.FACTORIAL.z(Math.toIntExact(Functions.PRIME_PI.l(p))).pow(e));
   }
 }

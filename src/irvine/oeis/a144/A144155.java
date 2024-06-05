@@ -12,8 +12,6 @@ public class A144155 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A144155() {
-    super(0, 0, 0, (n, k) -> {
-      return Functions.BELL.z(n - k).multiply(Functions.BELL.z(k));
-    });
+    super(0, 0, 0, (n, k) -> Functions.BELL.z(n - k).multiply(Functions.BELL.z(k)));
   }
 }

@@ -14,8 +14,6 @@ public class A370201 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A370201() {
-    super(2, n -> {
-      return new Q(Functions.FACTORIAL.z(n).square(), Functions.FACTORIAL.z(n - 2).multiply(2).multiply(Z.valueOf(n).pow(n))).den();
-    });
+    super(2, n -> new Q(Functions.FACTORIAL.z(n).square(), Functions.FACTORIAL.z(n - 2).multiply(2).multiply(Z.valueOf(n).pow(n))).den());
   }
 }

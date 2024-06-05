@@ -15,8 +15,6 @@ public class A263026 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A263026() {
-    super(1, n -> Integers.SINGLETON.sum(1, n, k -> {
-      return Functions.STIRLING2.z(n, k).multiply(Functions.FACTORIAL.z(k + 1).pow(Z.THREE)).divide(Z.EIGHT);
-    }));
+    super(1, n -> Integers.SINGLETON.sum(1, n, k -> Functions.STIRLING2.z(n, k).multiply(Functions.FACTORIAL.z(k + 1).pow(Z.THREE)).divide(Z.EIGHT)));
   }
 }

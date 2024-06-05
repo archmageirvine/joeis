@@ -12,8 +12,6 @@ public class A259212 extends HypergeometricSequence {
 
   /** Construct the sequence. */
   public A259212() {
-    super(1, 3, 1, "[[1],[1,-1],[0, 1],[1/2],[1/4]]", "0", (n, v) -> {
-      return v.multiply(((n & 1) == 1) ? 1 : -1).multiply(Functions.FACTORIAL.z(n - 1)).num();
-    });
+    super(1, 3, 1, "[[1],[1,-1],[0, 1],[1/2],[1/4]]", "0", (n, v) -> v.multiply(((n & 1) == 1) ? 1 : -1).multiply(Functions.FACTORIAL.z(n - 1)).num());
   }
 }

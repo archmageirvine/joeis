@@ -13,9 +13,7 @@ public class A035124 extends FilterSequence {
 
   /** Construct the sequence. */
   public A035124() {
-    super(1, new A000578(), cube -> {
-      return cube.mod(10) != 0 && !Predicates.PALINDROME.is(cube) && Predicates.CUBE.is(Functions.REVERSE.z(cube));
-    });
+    super(1, new A000578(), cube -> cube.mod(10) != 0 && !Predicates.PALINDROME.is(cube) && Predicates.CUBE.is(Functions.REVERSE.z(cube)));
   }
 }
 

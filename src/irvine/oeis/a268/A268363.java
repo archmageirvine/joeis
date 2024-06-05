@@ -14,8 +14,6 @@ public class A268363 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A268363() {
-    super(0, n -> {
-      return Z.ONE.shiftLeft(n / 2).multiply(Functions.FACTORIAL.z(n));
-    });
+    super(0, n -> Z.ONE.shiftLeft(n / 2).multiply(Functions.FACTORIAL.z(n)));
   }
 }

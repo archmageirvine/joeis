@@ -13,8 +13,6 @@ public class A248423 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A248423() {
-    super(0, n -> {
-      return Functions.REVERSE.z(Z.valueOf(n).multiply(4));
-    });
+    super(0, n -> Functions.REVERSE.z(Z.valueOf(n).multiply(4)));
   }
 }

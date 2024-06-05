@@ -14,8 +14,6 @@ public class A115705 extends FilterSequence {
 
   /** Construct the sequence. */
   public A115705() {
-    super(1, new A000040(), v -> {
-      return Predicates.TRIANGULAR.is(Functions.REVERSE.z(v));
-    });
+    super(1, new A000040(), v -> Predicates.TRIANGULAR.is(Functions.REVERSE.z(v)));
   }
 }

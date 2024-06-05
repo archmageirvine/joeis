@@ -14,8 +14,6 @@ public class A092145 extends HypergeometricSequence {
 
   /** Construct the sequence. */
   public A092145() {
-    super(0, 2, 1, "[[1/2],[0,-1],[3/2],[-1/4]]", "", (n, v) -> {
-      return v.multiply(Functions.FACTORIAL.z(2 * n + 2)).multiply(n == 0 ? new Q(1, 2) : new Q(Z.ONE.shiftLeft(n - 1))).divide(Functions.FACTORIAL.z(n + 1)).num();
-    });
+    super(0, 2, 1, "[[1/2],[0,-1],[3/2],[-1/4]]", "", (n, v) -> v.multiply(Functions.FACTORIAL.z(2 * n + 2)).multiply(n == 0 ? new Q(1, 2) : new Q(Z.ONE.shiftLeft(n - 1))).divide(Functions.FACTORIAL.z(n + 1)).num());
   }
 }

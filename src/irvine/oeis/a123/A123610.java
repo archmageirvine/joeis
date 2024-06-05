@@ -15,8 +15,6 @@ public class A123610 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A123610() {
-    super(0, 0, 0, (n, k) -> k == 0 ? Z.ONE : Integers.SINGLETON.sumdiv(n, d -> {
-      return k % d != 0 ? Z.ZERO : Binomial.binomial(n / d, k / d).square().multiply(Functions.PHI.l(d));
-    }).divide(n));
+    super(0, 0, 0, (n, k) -> k == 0 ? Z.ONE : Integers.SINGLETON.sumdiv(n, d -> k % d != 0 ? Z.ZERO : Binomial.binomial(n / d, k / d).square().multiply(Functions.PHI.l(d))).divide(n));
   }
 }

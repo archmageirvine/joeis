@@ -12,8 +12,6 @@ public class A261809 extends A060822 {
 
   /** Construct the sequence. */
   public A261809() {
-    super(1, (n, p) -> {
-      return Functions.FACTORIAL.z(n).subtract(p);
-    });
+    super(1, (n, p) -> Functions.FACTORIAL.z(n).subtract(p));
   }
 }

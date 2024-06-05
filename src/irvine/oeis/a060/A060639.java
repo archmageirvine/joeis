@@ -18,9 +18,7 @@ public class A060639 extends MemorySequence {
     if (n == 0) {
       return Z.ONE;
     }
-    final Z s = Integers.SINGLETON.sum(1, n - 1, k -> {
-      return Binomial.binomial(n, k).multiply(Functions.BELL.z(n - k).square().multiply(k).multiply(a(k)));
-    });
+    final Z s = Integers.SINGLETON.sum(1, n - 1, k -> Binomial.binomial(n, k).multiply(Functions.BELL.z(n - k).square().multiply(k).multiply(a(k))));
     return Functions.BELL.z(n).square().subtract(s.divide(n));
   }
 }

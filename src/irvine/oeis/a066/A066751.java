@@ -12,9 +12,7 @@ public class A066751 extends FilterSequence {
 
   /** Construct the sequence. */
   public A066751() {
-    super(1, new A000217(), k -> {
-      return k.mod(10) != 0 && Functions.REVERSE.z(k).isProbablePrime();
-    });
+    super(1, new A000217(), k -> k.mod(10) != 0 && Functions.REVERSE.z(k).isProbablePrime());
   }
 }
 

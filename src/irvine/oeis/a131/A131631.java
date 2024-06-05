@@ -16,10 +16,6 @@ public class A131631 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A131631() {
-    super(2, n -> Rationals.SINGLETON.product(2, n, k -> {
-      return Rationals.SINGLETON.sum(0, k, j -> {
-        return new Q((j & 1) == 0 ? Z.ONE : Z.NEG_ONE, Functions.FACTORIAL.z(j));
-      }).multiply(Functions.FACTORIAL.z(k));
-    }).num());
+    super(2, n -> Rationals.SINGLETON.product(2, n, k -> Rationals.SINGLETON.sum(0, k, j -> new Q((j & 1) == 0 ? Z.ONE : Z.NEG_ONE, Functions.FACTORIAL.z(j))).multiply(Functions.FACTORIAL.z(k))).num());
   }
 }

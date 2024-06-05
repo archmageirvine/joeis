@@ -13,8 +13,6 @@ public class A070804 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A070804() {
-    super(1, n -> {
-      return Functions.PRIME_PI.z(Functions.PHI.l(n));
-    });
+    super(1, n -> Functions.PRIME_PI.z(Functions.PHI.l(n)));
   }
 }

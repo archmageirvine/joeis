@@ -13,8 +13,6 @@ public class A070907 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A070907() {
-    super(0, n -> {
-      return Functions.BELL.z(4 * n);
-    });
+    super(0, n -> Functions.BELL.z(4 * n));
   }
 }

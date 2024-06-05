@@ -17,8 +17,6 @@ public class A061095 extends Sequence1 {
   public Z next() {
     final int n = ++mN;
     final Z f = Functions.FACTORIAL.z(n);
-    return Integers.SINGLETON.sumdiv(mN, d -> {
-      return f.divide(Functions.FACTORIAL.z(mN / d).pow(d));
-    });
+    return Integers.SINGLETON.sumdiv(mN, d -> f.divide(Functions.FACTORIAL.z(mN / d).pow(d)));
   }
 }

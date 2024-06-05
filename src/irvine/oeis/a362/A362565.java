@@ -13,8 +13,6 @@ public class A362565 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A362565() {
-    super(0, n -> {
-      return Functions.FACTORIAL.z(6 * n).divide(Z.valueOf(30).pow(n));
-    });
+    super(0, n -> Functions.FACTORIAL.z(6 * n).divide(Z.valueOf(30).pow(n)));
   }
 }

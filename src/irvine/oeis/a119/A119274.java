@@ -13,8 +13,6 @@ public class A119274 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A119274() {
-    super(0, 0, 0, (n, k) -> {
-      return Binomial.binomial(n, k).multiply(Functions.FACTORIAL.z(2 * n - k)).divide(Functions.FACTORIAL.z(n));
-    });
+    super(0, 0, 0, (n, k) -> Binomial.binomial(n, k).multiply(Functions.FACTORIAL.z(2 * n - k)).divide(Functions.FACTORIAL.z(n)));
   }
 }

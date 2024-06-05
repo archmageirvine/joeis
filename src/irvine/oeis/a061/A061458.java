@@ -13,9 +13,7 @@ public class A061458 extends FilterSequence {
 
   /** Construct the sequence. */
   public A061458() {
-    super(0, new A000578(), k -> {
-      return Predicates.CUBE.is(Functions.REVERSE.z(k));
-    });
+    super(0, new A000578(), k -> Predicates.CUBE.is(Functions.REVERSE.z(k)));
   }
 }
 

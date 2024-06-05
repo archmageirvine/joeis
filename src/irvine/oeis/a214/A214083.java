@@ -13,8 +13,6 @@ public class A214083 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A214083() {
-    super(0, n -> {
-      return Functions.FACTORIAL.z(n).root(3);
-    });
+    super(0, n -> Functions.FACTORIAL.z(n).root(3));
   }
 }

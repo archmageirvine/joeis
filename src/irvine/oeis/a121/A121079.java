@@ -15,10 +15,6 @@ public class A121079 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A121079() {
-    super(0, n -> {
-      return Z.ONE.shiftLeft(n).multiply(Functions.FACTORIAL.z(n)).add(Integers.SINGLETON.sum(0, n, i -> {
-        return Binomial.binomial(n, i).square().multiply(Functions.FACTORIAL.z(i)).multiply(Z.FOUR.pow(i));
-      }));
-    });
+    super(0, n -> Z.ONE.shiftLeft(n).multiply(Functions.FACTORIAL.z(n)).add(Integers.SINGLETON.sum(0, n, i -> Binomial.binomial(n, i).square().multiply(Functions.FACTORIAL.z(i)).multiply(Z.FOUR.pow(i)))));
   }
 }

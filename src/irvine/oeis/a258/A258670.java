@@ -11,8 +11,6 @@ public class A258670 extends A258293 {
 
   /** Construct the sequence. */
   public A258670() {
-    super(0, 0, n -> {
-      return Functions.FACTORIAL.z(2 * n);
-    });
+    super(0, 0, n -> Functions.FACTORIAL.z(2 * n));
   }
 }

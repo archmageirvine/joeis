@@ -13,8 +13,6 @@ public class A254503 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A254503() {
-    super(1, (p, e) -> {
-      return e == 1 ? p : Z.valueOf(Functions.PHI.l(p.pow(e).longValue()));
-    });
+    super(1, (p, e) -> e == 1 ? p : Z.valueOf(Functions.PHI.l(p.pow(e).longValue())));
   }
 }

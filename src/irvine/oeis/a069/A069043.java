@@ -12,9 +12,7 @@ public class A069043 extends FilterSequence {
 
   /** Construct the sequence. */
   public A069043() {
-    super(1, new A038509(), k -> {
-      return Functions.PHI.z(k).multiply(3).compareTo(k.multiply2()) < 0;
-    });
+    super(1, new A038509(), k -> Functions.PHI.z(k).multiply(3).compareTo(k.multiply2()) < 0);
   }
 }
 

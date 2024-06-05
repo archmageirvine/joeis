@@ -12,8 +12,6 @@ public class A071424 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A071424() {
-    super(1, (n, s) -> {
-      return s[0].add(Functions.FACTORIAL.z(n).toString().length());
-    }, "1", PREVIOUS);
+    super(1, (n, s) -> s[0].add(Functions.FACTORIAL.z(n).toString().length()), "1", PREVIOUS);
   }
 }

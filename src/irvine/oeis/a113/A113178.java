@@ -13,8 +13,6 @@ public class A113178 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A113178() {
-    super(1, n -> Integers.SINGLETON.sopf(n, p -> {
-      return Functions.FIBONACCI.z(p);
-    }));
+    super(1, n -> Integers.SINGLETON.sopf(n, p -> Functions.FIBONACCI.z(p)));
   }
 }

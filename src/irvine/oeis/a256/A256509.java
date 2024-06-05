@@ -14,10 +14,8 @@ public class A256509 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A256509() {
-    super(0, n -> {
-      return Functions.FACTORIAL.z(Functions.FACTORIAL.z(n))
-        .subtract(Functions.FACTORIAL.z(n))
-        .subtract(Z.ONE);
-    });
+    super(0, n -> Functions.FACTORIAL.z(Functions.FACTORIAL.z(n))
+      .subtract(Functions.FACTORIAL.z(n))
+      .subtract(Z.ONE));
   }
 }

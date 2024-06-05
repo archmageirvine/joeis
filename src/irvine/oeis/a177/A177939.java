@@ -12,8 +12,6 @@ public class A177939 extends LambdaArray {
 
   /** Construct the sequence. */
   public A177939() {
-    super(1, 1, 1, -1, (n, m) -> {
-      return Functions.FACTORIAL.z(n * m).divide(Functions.FACTORIAL.z(n + m - 1));
-    });
+    super(1, 1, 1, -1, (n, m) -> Functions.FACTORIAL.z(n * m).divide(Functions.FACTORIAL.z(n + m - 1)));
   }
 }

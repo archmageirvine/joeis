@@ -23,8 +23,6 @@ public class A060090 extends A060092 {
       return Z.ONE;
     }
     final Polynomial<Polynomial<Q>> egf = egf(mN + mN / 2, mN);
-    return Integers.SINGLETON.sum(3, mN + mN / 2, k -> {
-      return egf.coeff(k).coeff(mN).multiply(Functions.FACTORIAL.z(k)).toZ();
-    });
+    return Integers.SINGLETON.sum(3, mN + mN / 2, k -> egf.coeff(k).coeff(mN).multiply(Functions.FACTORIAL.z(k)).toZ());
   }
 }

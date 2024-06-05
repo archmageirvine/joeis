@@ -13,8 +13,6 @@ public class A214709 extends A060035 {
 
   /** Construct the sequence. */
   public A214709() {
-    super(1, 1, (n, m) -> {
-      return Functions.FACTORIAL.z(n).subtract(m).gcd(Z.ONE.shiftLeft(n).subtract(m)).equals(Z.ONE);
-    });
+    super(1, 1, (n, m) -> Functions.FACTORIAL.z(n).subtract(m).gcd(Z.ONE.shiftLeft(n).subtract(m)).equals(Z.ONE));
   }
 }

@@ -14,8 +14,6 @@ public class A084950 extends LambdaTable {
 
   /** Construct the sequence. */
   public A084950() {
-    super(0, 0, n -> new Integer[]{0, n / 2}, (n, k) -> {
-      return n <= 1 ? Z.ONE : Functions.FACTORIAL.z(n - k).multiply(Binomial.binomial(n - k, k)).divide(Functions.FACTORIAL.z(k));
-    });
+    super(0, 0, n -> new Integer[]{0, n / 2}, (n, k) -> n <= 1 ? Z.ONE : Functions.FACTORIAL.z(n - k).multiply(Binomial.binomial(n - k, k)).divide(Functions.FACTORIAL.z(k)));
   }
 }

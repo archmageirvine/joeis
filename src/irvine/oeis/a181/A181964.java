@@ -13,8 +13,6 @@ public class A181964 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A181964() {
-    super(1, (self, n) -> {
-      return Functions.FACTORIAL.z(n).divide(2).multiply(self.s(0));
-    }, "1", new A046682());
+    super(1, (self, n) -> Functions.FACTORIAL.z(n).divide(2).multiply(self.s(0)), "1", new A046682());
   }
 }

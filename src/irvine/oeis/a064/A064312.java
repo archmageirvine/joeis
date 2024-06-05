@@ -15,8 +15,6 @@ public class A064312 extends A000110 {
 
   @Override
   public Z next() {
-    return super.next().multiply(Integers.SINGLETON.sum(0, ++mN, k -> {
-      return Functions.FACTORIAL.z(mN).divide(Functions.FACTORIAL.z(k));
-    }));
+    return super.next().multiply(Integers.SINGLETON.sum(0, ++mN, k -> Functions.FACTORIAL.z(mN).divide(Functions.FACTORIAL.z(k))));
   }
 }

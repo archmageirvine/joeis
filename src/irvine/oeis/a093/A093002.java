@@ -14,8 +14,6 @@ public class A093002 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A093002() {
-    super(1, n -> Integers.SINGLETON.product(n, 2 * n - 2, i -> {
-      return Functions.FACTORIAL.z(i);
-    }));
+    super(1, n -> Integers.SINGLETON.product(n, 2 * n - 2, i -> Functions.FACTORIAL.z(i)));
   }
 }

@@ -15,8 +15,6 @@ public class A354121 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A354121() {
-    super(0, n -> Integers.SINGLETON.sum(0, n, k -> {
-      return Functions.FACTORIAL.z(k + 3).multiply(Functions.STIRLING1.z(n, k));
-    }).divide(Z.SIX));
+    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Functions.FACTORIAL.z(k + 3).multiply(Functions.STIRLING1.z(n, k))).divide(Z.SIX));
   }
 }

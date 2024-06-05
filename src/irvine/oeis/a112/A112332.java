@@ -14,8 +14,6 @@ public class A112332 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A112332() {
-    super(0, n -> Integers.SINGLETON.product(0, n - 1, k -> {
-      return Functions.FACTORIAL.z(2 * k).divide(Functions.FACTORIAL.z(k));
-    }));
+    super(0, n -> Integers.SINGLETON.product(0, n - 1, k -> Functions.FACTORIAL.z(2 * k).divide(Functions.FACTORIAL.z(k))));
   }
 }

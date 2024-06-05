@@ -14,8 +14,6 @@ public class A181186 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A181186() {
-    super(1, n -> {
-      return Functions.BIG_OMEGA.z(Z.ONE.shiftLeft(n).subtract(Z.ONE).multiply(Functions.FACTORIAL.z(n)).add(Z.ONE));
-    });
+    super(1, n -> Functions.BIG_OMEGA.z(Z.ONE.shiftLeft(n).subtract(Z.ONE).multiply(Functions.FACTORIAL.z(n)).add(Z.ONE)));
   }
 }

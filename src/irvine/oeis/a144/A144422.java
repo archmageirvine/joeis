@@ -12,8 +12,6 @@ public class A144422 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A144422() {
-    super(0, new A144416(), (n, v) -> {
-      return v.multiply(Functions.FACTORIAL.z(n));
-    });
+    super(0, new A144416(), (n, v) -> v.multiply(Functions.FACTORIAL.z(n)));
   }
 }

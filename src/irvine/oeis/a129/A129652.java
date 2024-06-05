@@ -15,10 +15,6 @@ public class A129652 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A129652() {
-    super(0, 0, 0, (n, k) -> {
-      return Rationals.SINGLETON.sum(0, n - k, i -> {
-        return new Q(Binomial.binomial(n - k - 1, i), Functions.FACTORIAL.z(n - k - i));
-      }).multiply(Functions.FACTORIAL.z(n)).divide(Functions.FACTORIAL.z(k)).num();
-    });
+    super(0, 0, 0, (n, k) -> Rationals.SINGLETON.sum(0, n - k, i -> new Q(Binomial.binomial(n - k - 1, i), Functions.FACTORIAL.z(n - k - i))).multiply(Functions.FACTORIAL.z(n)).divide(Functions.FACTORIAL.z(k)).num());
   }
 }

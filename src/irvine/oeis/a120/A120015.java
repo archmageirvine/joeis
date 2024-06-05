@@ -15,8 +15,6 @@ public class A120015 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A120015() {
-    super(1, n -> Rationals.SINGLETON.sum(1, n, j -> {
-      return new Q(n + 1).pow(j - 2).multiply(new Q(n - j + 2)).multiply(j).multiply(new Q(Functions.FACTORIAL.z(2 * n - j - 1))).divide(Functions.FACTORIAL.z(n - j)).divide(Functions.FACTORIAL.z(n));
-    }).num());
+    super(1, n -> Rationals.SINGLETON.sum(1, n, j -> new Q(n + 1).pow(j - 2).multiply(new Q(n - j + 2)).multiply(j).multiply(new Q(Functions.FACTORIAL.z(2 * n - j - 1))).divide(Functions.FACTORIAL.z(n - j)).divide(Functions.FACTORIAL.z(n))).num());
   }
 }

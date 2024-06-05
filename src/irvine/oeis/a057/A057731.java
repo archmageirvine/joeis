@@ -31,12 +31,10 @@ public class A057731 extends MemoryFunctionInt2Sequence<Polynomial<Z>> {
     if (n == 0) {
       return RING.monomial(Z.ONE, g);
     }
-    return RING.sum(1, n, j -> {
-      return RING.multiply(
-        get(n - j, Functions.LCM.i(g, j)),
-        Binomial.binomial(n - 1, j - 1).multiply(Functions.FACTORIAL.z(j - 1))
-      );
-    });
+    return RING.sum(1, n, j -> RING.multiply(
+      get(n - j, Functions.LCM.i(g, j)),
+      Binomial.binomial(n - 1, j - 1).multiply(Functions.FACTORIAL.z(j - 1))
+    ));
   }
 
   @Override

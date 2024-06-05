@@ -13,8 +13,6 @@ public class A171729 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A171729() {
-    super(1, 1, 1, (n, k) -> {
-      return Functions.FIBONACCI.z((long) (n + 1)).subtract((k == n) ? Z.ZERO : Functions.FIBONACCI.z((long) (n - k + 1)));
-    });
+    super(1, 1, 1, (n, k) -> Functions.FIBONACCI.z((long) (n + 1)).subtract((k == n) ? Z.ZERO : Functions.FIBONACCI.z((long) (n - k + 1))));
   }
 }

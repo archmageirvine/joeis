@@ -13,8 +13,6 @@ public class A270517 extends A269993 {
 
   /** Construct the sequence. */
   public A270517() {
-    super(1, CR.HALF.sqrt(), k -> {
-      return Functions.FACTORIAL.z(k);
-    });
+    super(1, CR.HALF.sqrt(), k -> Functions.FACTORIAL.z(k));
   }
 }

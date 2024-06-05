@@ -16,12 +16,8 @@ public class A067857 extends CachedSequence {
 
   /** Construct the sequence. */
   public A067857() {
-    super(1, Integer.class, (self, n) -> {
-      return H.nextQ()
-        .subtract(Rationals.SINGLETON.sumdiv(n, k -> {
-          return k.equals(n) ? Q.ZERO : new Q(self.a(k), Functions.FACTORIAL.z(k));
-        }))
-        .multiply(Functions.FACTORIAL.z(n)).toZ();
-    });
+    super(1, Integer.class, (self, n) -> H.nextQ()
+      .subtract(Rationals.SINGLETON.sumdiv(n, k -> k.equals(n) ? Q.ZERO : new Q(self.a(k), Functions.FACTORIAL.z(k))))
+      .multiply(Functions.FACTORIAL.z(n)).toZ());
   }
 }

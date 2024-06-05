@@ -17,9 +17,7 @@ public class A061343 extends Sequence1 {
   private int mN = 0;
 
   private Z productFactorials(final int[] v) {
-    return Integers.SINGLETON.product(0, v.length - 1, k -> {
-      return Functions.FACTORIAL.z(v[k]);
-    });
+    return Integers.SINGLETON.product(0, v.length - 1, k -> Functions.FACTORIAL.z(v[k]));
   }
 
   // Return product of differences of distinct pairs

@@ -16,8 +16,6 @@ public class A276080 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A276080() {
-    super(0, n -> (n == 0) ? Z.ZERO : Integers.SINGLETON.sum(0, (n - 1) / 2, k -> {
-      return Functions.FACTORIAL.z(n - 2 * k).multiply(Binomial.binomial(n - k - 1, k));
-    }));
+    super(0, n -> (n == 0) ? Z.ZERO : Integers.SINGLETON.sum(0, (n - 1) / 2, k -> Functions.FACTORIAL.z(n - 2 * k).multiply(Binomial.binomial(n - k - 1, k))));
   }
 }

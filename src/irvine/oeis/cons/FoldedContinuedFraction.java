@@ -32,9 +32,7 @@ public class FoldedContinuedFraction extends AbstractSequence {
    * @param m Liouville's constant base number (see section III of the paper)
    */
   public FoldedContinuedFraction(final int offset, final int m) {
-    this(offset, k -> {
-      return Z.valueOf(m).pow(Functions.FACTORIAL.z(k + 1).multiply(k));
-    }, 0, m - 1, m + 1);
+    this(offset, k -> Z.valueOf(m).pow(Functions.FACTORIAL.z(k + 1).multiply(k)), 0, m - 1, m + 1);
   }
 
   /**

@@ -23,9 +23,7 @@ public class A059114 extends Sequence0 {
     }
     final Z t = Functions.FACTORIAL.z(mN);
     return Integers.SINGLETON.sum(0, mN,
-      k -> {
-        return t.multiply(Binomial.binomial(k, mM)).multiply(Binomial.binomial(mN - 1, k - 1)).divide(Functions.FACTORIAL.z(k));
-      }
+      k -> t.multiply(Binomial.binomial(k, mM)).multiply(Binomial.binomial(mN - 1, k - 1)).divide(Functions.FACTORIAL.z(k))
     ).multiply(Functions.FACTORIAL.z(mM));
   }
 }

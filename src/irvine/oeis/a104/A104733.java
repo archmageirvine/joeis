@@ -20,8 +20,6 @@ public class A104733 extends BaseTriangle {
 
   @Override
   public Z triangleElement(final int n, final int k) {
-    return Integers.SINGLETON.sum(k, n, j -> {
-      return Functions.FIBONACCI.z((long) (n - j + 1)).multiply(Functions.FIBONACCI.z((long) (k + 1)));
-    });
+    return Integers.SINGLETON.sum(k, n, j -> Functions.FIBONACCI.z((long) (n - j + 1)).multiply(Functions.FIBONACCI.z((long) (k + 1))));
   }
 }

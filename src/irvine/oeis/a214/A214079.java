@@ -16,9 +16,7 @@ public class A214079 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A214079() {
-    super(0, new A134914(), v -> {
-      return Functions.FACTORIAL.z(v);
-    });
+    super(0, new A134914(), v -> Functions.FACTORIAL.z(v));
   }
 
   @Override

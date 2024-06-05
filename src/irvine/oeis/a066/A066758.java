@@ -13,9 +13,7 @@ public class A066758 extends FilterSequence {
 
   /** Construct the sequence. */
   public A066758() {
-    super(1, new A000217(), k -> {
-      return k.isZero() || (k.mod(10) != 0 && Predicates.POLYGONAL.is(5, Functions.REVERSE.z(k)));
-    });
+    super(1, new A000217(), k -> k.isZero() || (k.mod(10) != 0 && Predicates.POLYGONAL.is(5, Functions.REVERSE.z(k))));
   }
 }
 

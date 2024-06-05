@@ -13,8 +13,6 @@ public class A277063 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A277063() {
-    super(0, n -> {
-      return Functions.PRIME_PI.z(Functions.BELL.z(n));
-    });
+    super(0, n -> Functions.PRIME_PI.z(Functions.BELL.z(n)));
   }
 }

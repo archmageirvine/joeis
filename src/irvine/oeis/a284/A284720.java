@@ -14,10 +14,6 @@ public class A284720 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A284720() {
-    super(1, n -> {
-      return Functions.BELL.z(n).subtract(Integers.SINGLETON.sum(0, n - 2, k -> {
-        return Functions.BELL.z(k);
-      }));
-    });
+    super(1, n -> Functions.BELL.z(n).subtract(Integers.SINGLETON.sum(0, n - 2, k -> Functions.BELL.z(k))));
   }
 }

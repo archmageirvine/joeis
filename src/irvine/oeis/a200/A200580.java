@@ -14,8 +14,6 @@ public class A200580 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A200580() {
-    super(1, n -> {
-      return Z.ZERO.subtract(Z.TWO.multiply(Functions.BELL.z(n + 3))).add(Z.valueOf(n + 5).multiply(Functions.BELL.z(n + 2)));
-    });
+    super(1, n -> Z.ZERO.subtract(Z.TWO.multiply(Functions.BELL.z(n + 3))).add(Z.valueOf(n + 5).multiply(Functions.BELL.z(n + 2))));
   }
 }

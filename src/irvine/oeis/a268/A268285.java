@@ -13,8 +13,6 @@ public class A268285 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A268285() {
-    super(1, n -> {
-      return Functions.PRIME.z(Functions.BELL.z(n));
-    });
+    super(1, n -> Functions.PRIME.z(Functions.BELL.z(n)));
   }
 }

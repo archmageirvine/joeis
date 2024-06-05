@@ -19,12 +19,10 @@ public class A293146 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return mN == 0 ? Z.ONE : Integers.SINGLETON.sum(1, mN, k -> {
-      return Z.valueOf(mN).pow(mN - k)
-          .multiply(Functions.FACTORIAL.z(mN))
-          .divide(Functions.FACTORIAL.z(k))
-          .multiply(Binomial.binomial(mN - 1, k - 1));
-      }
+    return mN == 0 ? Z.ONE : Integers.SINGLETON.sum(1, mN, k -> Z.valueOf(mN).pow(mN - k)
+        .multiply(Functions.FACTORIAL.z(mN))
+        .divide(Functions.FACTORIAL.z(k))
+        .multiply(Binomial.binomial(mN - 1, k - 1))
     );
   }
 }

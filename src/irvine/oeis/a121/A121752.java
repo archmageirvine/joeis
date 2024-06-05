@@ -12,8 +12,6 @@ public class A121752 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A121752() {
-    super(1, (n, s) -> {
-      return s[0].multiply(2 * n - 3).subtract(s[1].multiply((n - 1) * (n - 3))).add(Functions.FACTORIAL.z(n - 2).multiply(n * (n / 2) - (n - 2) * ((n - 1) / 2) - 1));
-    }, "1, 2", PREVIOUS, PREVIOUS);
+    super(1, (n, s) -> s[0].multiply(2 * n - 3).subtract(s[1].multiply((n - 1) * (n - 3))).add(Functions.FACTORIAL.z(n - 2).multiply(n * (n / 2) - (n - 2) * ((n - 1) / 2) - 1)), "1, 2", PREVIOUS, PREVIOUS);
   }
 }

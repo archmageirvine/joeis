@@ -13,8 +13,6 @@ public class A103673 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A103673() {
-    super(0, n -> {
-      return Functions.FACTORIAL.z(n).toString(2).indexOf("1111000") >= 0 ? Z.ONE : Z.ZERO;
-    });
+    super(0, n -> Functions.FACTORIAL.z(n).toString(2).indexOf("1111000") >= 0 ? Z.ONE : Z.ZERO);
   }
 }

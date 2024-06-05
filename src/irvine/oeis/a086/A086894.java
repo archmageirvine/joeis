@@ -15,8 +15,6 @@ public class A086894 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A086894() {
-    super(0, n -> (Z.ONE).add(Integers.SINGLETON.sum(0, 2 * n, k -> {
-      return Functions.FACTORIAL.z(2 * n).divide(Functions.FACTORIAL.z(k));
-    })).divide(Z.TWO));
+    super(0, n -> (Z.ONE).add(Integers.SINGLETON.sum(0, 2 * n, k -> Functions.FACTORIAL.z(2 * n).divide(Functions.FACTORIAL.z(k)))).divide(Z.TWO));
   }
 }

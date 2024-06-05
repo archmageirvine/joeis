@@ -15,10 +15,6 @@ public class A271477 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A271477() {
-    super(1, n -> {
-      return Z.valueOf(n).multiply(Z.ONE.shiftLeft(n)).multiply(Functions.FACTORIAL.z(n)).divide(Z.TWO).add(Integers.SINGLETON.sum(1, n - 1, k -> {
-        return Z.valueOf(2L * k + 1).multiply(k).multiply(Z.ONE.shiftLeft(k)).multiply(Functions.FACTORIAL.z(k)).divide(Z.TWO);
-      }));
-    });
+    super(1, n -> Z.valueOf(n).multiply(Z.ONE.shiftLeft(n)).multiply(Functions.FACTORIAL.z(n)).divide(Z.TWO).add(Integers.SINGLETON.sum(1, n - 1, k -> Z.valueOf(2L * k + 1).multiply(k).multiply(Z.ONE.shiftLeft(k)).multiply(Functions.FACTORIAL.z(k)).divide(Z.TWO))));
   }
 }

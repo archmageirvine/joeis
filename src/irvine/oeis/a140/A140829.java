@@ -13,8 +13,6 @@ public class A140829 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A140829() {
-    super(0, (n, s) -> {
-      return new Q(Functions.FIBONACCI.z(n), s[0]).ceiling();
-    }, "1", PREVIOUS);
+    super(0, (n, s) -> new Q(Functions.FIBONACCI.z(n), s[0]).ceiling(), "1", PREVIOUS);
   }
 }

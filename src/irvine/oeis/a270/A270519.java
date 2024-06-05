@@ -13,8 +13,6 @@ public class A270519 extends A269993 {
 
   /** Construct the sequence. */
   public A270519() {
-    super(1, CR.SQRT2.subtract(1L), k -> {
-      return Functions.FACTORIAL.z(k);
-    });
+    super(1, CR.SQRT2.subtract(1L), k -> Functions.FACTORIAL.z(k));
   }
 }

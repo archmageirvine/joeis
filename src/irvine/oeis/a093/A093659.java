@@ -13,8 +13,6 @@ public class A093659 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A093659() {
-    super(0, n -> {
-      return Functions.FACTORIAL.z(Z.valueOf(n).bitCount());
-    });
+    super(0, n -> Functions.FACTORIAL.z(Z.valueOf(n).bitCount()));
   }
 }

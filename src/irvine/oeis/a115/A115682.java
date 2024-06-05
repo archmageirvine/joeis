@@ -14,8 +14,6 @@ public class A115682 extends FilterSequence {
 
   /** Construct the sequence. */
   public A115682() {
-    super(1, new A000217().skip(), v -> {
-      return Predicates.POLYGONAL.is(5, Functions.REVERSE.z(v));
-    });
+    super(1, new A000217().skip(), v -> Predicates.POLYGONAL.is(5, Functions.REVERSE.z(v)));
   }
 }

@@ -12,8 +12,6 @@ public class A071786 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A071786() {
-    super(1, (p, e) -> {
-      return Functions.REVERSE.z(p).pow(e);
-    });
+    super(1, (p, e) -> Functions.REVERSE.z(p).pow(e));
   }
 }

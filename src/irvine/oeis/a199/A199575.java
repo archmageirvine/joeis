@@ -13,8 +13,6 @@ public class A199575 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A199575() {
-    super(0, n -> {
-      return Functions.FIBONACCI.z(n).root(4);
-    });
+    super(0, n -> Functions.FIBONACCI.z(n).root(4));
   }
 }

@@ -13,8 +13,6 @@ public class A361528 extends HypergeometricSequence {
 
   /** Construct the sequence. */
   public A361528() {
-    super(0, 1, 1, "[[1,-1],[3],[-3]]", "", (n, v) -> {
-      return (n == 0) ? Z.ONE : v.multiply(Functions.FACTORIAL.z(n + 2)).divide(6).num();
-    });
+    super(0, 1, 1, "[[1,-1],[3],[-3]]", "", (n, v) -> (n == 0) ? Z.ONE : v.multiply(Functions.FACTORIAL.z(n + 2)).divide(6).num());
   }
 }

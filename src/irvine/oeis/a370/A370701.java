@@ -15,10 +15,6 @@ public class A370701 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A370701() {
-    super(0, n -> {
-      return Rationals.SINGLETON.sum(0, n / 3, k -> {
-        return new Q(Z.NEG_ONE.pow(k), Functions.FACTORIAL.z(k));
-      }).multiply(Functions.FACTORIAL.z(n)).num();
-    });
+    super(0, n -> Rationals.SINGLETON.sum(0, n / 3, k -> new Q(Z.NEG_ONE.pow(k), Functions.FACTORIAL.z(k))).multiply(Functions.FACTORIAL.z(n)).num());
   }
 }

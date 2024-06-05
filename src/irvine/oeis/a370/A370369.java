@@ -13,10 +13,6 @@ public class A370369 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A370369() {
-    super(1, n -> {
-      return Functions.FACTORIAL.z(n).add(Integers.SINGLETON.sum(1, n - 1, k -> {
-        return Functions.FACTORIAL.z(k).multiply(n - k);
-      }));
-    });
+    super(1, n -> Functions.FACTORIAL.z(n).add(Integers.SINGLETON.sum(1, n - 1, k -> Functions.FACTORIAL.z(k).multiply(n - k))));
   }
 }

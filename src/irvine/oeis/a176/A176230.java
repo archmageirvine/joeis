@@ -13,8 +13,6 @@ public class A176230 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A176230() {
-    super(0, 0, 0, (n, k) -> {
-      return Functions.FACTORIAL.z(2 * n).divide(Functions.FACTORIAL.z(2 * k).multiply(Functions.FACTORIAL.z(n - k)).multiply(Z.TWO.pow(n - k)));
-    });
+    super(0, 0, 0, (n, k) -> Functions.FACTORIAL.z(2 * n).divide(Functions.FACTORIAL.z(2 * k).multiply(Functions.FACTORIAL.z(n - k)).multiply(Z.TWO.pow(n - k))));
   }
 }

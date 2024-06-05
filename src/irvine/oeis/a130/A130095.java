@@ -18,8 +18,6 @@ public class A130095 extends Sequence1 {
   public Z next() {
     // a(n) = sum {d | n} Fibonacci(2*d - 1).
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> {
-      return Functions.FIBONACCI.z(2L * d - 1);
-    });
+    return Integers.SINGLETON.sumdiv(mN, d -> Functions.FIBONACCI.z(2L * d - 1));
   }
 }

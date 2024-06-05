@@ -14,8 +14,6 @@ public class A200905 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A200905() {
-    super(1, n -> {
-      return Z.THREE.multiply(Functions.PHI.l(n));
-    });
+    super(1, n -> Z.THREE.multiply(Functions.PHI.l(n)));
   }
 }

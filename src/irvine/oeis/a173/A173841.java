@@ -36,8 +36,6 @@ public class A173841 extends AbstractSequence {
   public Z next() {
     ++mN;
     final int m = mN >= mK ? (mN - mK + 1) / 2 : 0;
-    return Integers.SINGLETON.sum(0, m, j -> {
-      return Z.valueOf(-2).pow(j).multiply(Binomial.binomial(m, j)).multiply(Functions.FACTORIAL.z(mN - j));
-    });
+    return Integers.SINGLETON.sum(0, m, j -> Z.valueOf(-2).pow(j).multiply(Binomial.binomial(m, j)).multiply(Functions.FACTORIAL.z(mN - j)));
   }
 }

@@ -18,8 +18,6 @@ public class A337155 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Q.FIVE.pow(mN).multiply(Functions.FACTORIAL.z(mN).square()).multiply(Rationals.SINGLETON.sum(0, mN, k -> {
-      return new Q(Z.ONE, Z.valueOf(-5).pow(k).multiply(Functions.FACTORIAL.z(k).square()));
-    })).num();
+    return Q.FIVE.pow(mN).multiply(Functions.FACTORIAL.z(mN).square()).multiply(Rationals.SINGLETON.sum(0, mN, k -> new Q(Z.ONE, Z.valueOf(-5).pow(k).multiply(Functions.FACTORIAL.z(k).square())))).num();
   }
 }

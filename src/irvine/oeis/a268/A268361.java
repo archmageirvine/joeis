@@ -13,8 +13,6 @@ public class A268361 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A268361() {
-    super(1, (p, e) -> {
-      return p.equals(Z.TWO) ? Functions.FIBONACCI.z((long) (2 + e)) : Z.ONE;
-    });
+    super(1, (p, e) -> p.equals(Z.TWO) ? Functions.FIBONACCI.z((long) (2 + e)) : Z.ONE);
   }
 }

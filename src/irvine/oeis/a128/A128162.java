@@ -14,8 +14,6 @@ public class A128162 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A128162() {
-    super(1, n -> {
-      return Z.THREE.pow(n).mod(Functions.FIBONACCI.z(n));
-    });
+    super(1, n -> Z.THREE.pow(n).mod(Functions.FIBONACCI.z(n)));
   }
 }

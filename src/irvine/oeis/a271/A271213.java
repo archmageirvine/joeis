@@ -14,8 +14,6 @@ public class A271213 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A271213() {
-    super(0, n -> {
-      return (n <= 1) ? Z.ONE : Z.ONE.shiftLeft(n - 2).multiply(Functions.FACTORIAL.z(n).add(Functions.FACTORIAL.z(n / 2)));
-    });
+    super(0, n -> (n <= 1) ? Z.ONE : Z.ONE.shiftLeft(n - 2).multiply(Functions.FACTORIAL.z(n).add(Functions.FACTORIAL.z(n / 2))));
   }
 }

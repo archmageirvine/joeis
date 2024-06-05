@@ -15,10 +15,6 @@ public class A114320 extends LambdaTable {
 
   /** Construct the sequence. */
   public A114320() {
-    super(0, 0, n -> new Integer[]{0, n / 2}, (n, k) -> {
-      return Rationals.SINGLETON.sum(0, n / 2 - k, j -> {
-        return new Q(-1, 2).pow(j).divide(Functions.FACTORIAL.z(j));
-      }).multiply(Functions.FACTORIAL.z(n)).divide(Z.TWO.pow(k).multiply(Functions.FACTORIAL.z(k))).num();
-    });
+    super(0, 0, n -> new Integer[]{0, n / 2}, (n, k) -> Rationals.SINGLETON.sum(0, n / 2 - k, j -> new Q(-1, 2).pow(j).divide(Functions.FACTORIAL.z(j))).multiply(Functions.FACTORIAL.z(n)).divide(Z.TWO.pow(k).multiply(Functions.FACTORIAL.z(k))).num());
   }
 }

@@ -14,8 +14,6 @@ public class A166389 extends FilterSequence {
 
   /** Construct the sequence. */
   public A166389() {
-    super(1, new LambdaSequence(0, n -> Z.valueOf(n).multiply(7)), v -> {
-      return Functions.REVERSE.z(v).add(1).mod(7) == 0;
-    });
+    super(1, new LambdaSequence(0, n -> Z.valueOf(n).multiply(7)), v -> Functions.REVERSE.z(v).add(1).mod(7) == 0);
   }
 }

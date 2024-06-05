@@ -20,8 +20,6 @@ public class A143122 extends BaseTriangle {
 
   @Override
   public Z triangleElement(final int n, final int k) {
-    return Integers.SINGLETON.sum(k, n, j -> {
-      return Functions.FACTORIAL.z(j);
-    });
+    return Integers.SINGLETON.sum(k, n, j -> Functions.FACTORIAL.z(j));
   }
 }

@@ -22,8 +22,6 @@ public class A121860 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> {
-      return Functions.FACTORIAL.z(mN).divide(Functions.FACTORIAL.z(d).multiply(Functions.FACTORIAL.z(mN / d)));
-    });
+    return Integers.SINGLETON.sumdiv(mN, d -> Functions.FACTORIAL.z(mN).divide(Functions.FACTORIAL.z(d).multiply(Functions.FACTORIAL.z(mN / d))));
   }
 }

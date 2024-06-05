@@ -14,8 +14,6 @@ public class A226507 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A226507() {
-    super(0, n -> {
-      return Z.FOUR.multiply(Functions.BELL.z(n + 4)).subtract(Z.valueOf(4L * n + 15).multiply(Functions.BELL.z(n + 3))).add(Z.valueOf((long) n * n + 8L * n + 9).multiply(Functions.BELL.z(n + 2))).subtract(Z.valueOf(4L * n + 3).multiply(Functions.BELL.z(n + 1))).add(Z.valueOf(n).multiply(Functions.BELL.z(n)));
-    });
+    super(0, n -> Z.FOUR.multiply(Functions.BELL.z(n + 4)).subtract(Z.valueOf(4L * n + 15).multiply(Functions.BELL.z(n + 3))).add(Z.valueOf((long) n * n + 8L * n + 9).multiply(Functions.BELL.z(n + 2))).subtract(Z.valueOf(4L * n + 3).multiply(Functions.BELL.z(n + 1))).add(Z.valueOf(n).multiply(Functions.BELL.z(n))));
   }
 }

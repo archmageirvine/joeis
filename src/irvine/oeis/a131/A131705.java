@@ -15,8 +15,6 @@ public class A131705 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A131705() {
-    super(0, n -> {
-      return Functions.PHI.z(Binomial.binomial(2L * n, n).multiply(Z.valueOf(n).pow(3)));
-    });
+    super(0, n -> Functions.PHI.z(Binomial.binomial(2L * n, n).multiply(Z.valueOf(n).pow(3))));
   }
 }

@@ -14,8 +14,6 @@ public class A259264 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A259264() {
-    super(0, n -> {
-      return Cyclotomic.cyclotomic(5, Functions.FACTORIAL.z(n));
-    });
+    super(0, n -> Cyclotomic.cyclotomic(5, Functions.FACTORIAL.z(n)));
   }
 }

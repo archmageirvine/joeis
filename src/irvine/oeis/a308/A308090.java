@@ -14,8 +14,6 @@ public class A308090 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A308090() {
-    super(1, n -> {
-      return Z.TWO.pow(n).add(Functions.FACTORIAL.z(n)).gcd(Z.THREE.pow(n).add(Functions.FACTORIAL.z(n)).gcd(Z.valueOf(n).add(Z.ONE)));
-    });
+    super(1, n -> Z.TWO.pow(n).add(Functions.FACTORIAL.z(n)).gcd(Z.THREE.pow(n).add(Functions.FACTORIAL.z(n)).gcd(Z.valueOf(n).add(Z.ONE))));
   }
 }

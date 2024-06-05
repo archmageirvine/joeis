@@ -30,8 +30,6 @@ public class A288785 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sum(0, mN - mParm, j -> {
-      return Binomial.binomial(mN, j).multiply(Functions.BELL.z(j));
-    });
+    return Integers.SINGLETON.sum(0, mN - mParm, j -> Binomial.binomial(mN, j).multiply(Functions.BELL.z(j)));
   }
 }

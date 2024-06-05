@@ -15,10 +15,6 @@ public class A334155 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A334155() {
-    super(0, n -> {
-      return Functions.FACTORIAL.z(n).add(Integers.SINGLETON.sum(0, n - 1, j -> {
-        return Z.valueOf(j + 1).multiply(Functions.FACTORIAL.z(j));
-      }));
-    });
+    super(0, n -> Functions.FACTORIAL.z(n).add(Integers.SINGLETON.sum(0, n - 1, j -> Z.valueOf(j + 1).multiply(Functions.FACTORIAL.z(j)))));
   }
 }

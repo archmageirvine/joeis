@@ -15,8 +15,6 @@ public class A353545 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A353545() {
-    super(1, n -> Rationals.SINGLETON.sum(1, n, k -> {
-      return new Q(Z.ONE, Functions.FACTORIAL.z(k).multiply(k));
-    }).num());
+    super(1, n -> Rationals.SINGLETON.sum(1, n, k -> new Q(Z.ONE, Functions.FACTORIAL.z(k).multiply(k))).num());
   }
 }

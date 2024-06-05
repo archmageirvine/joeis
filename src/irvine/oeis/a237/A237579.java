@@ -12,8 +12,6 @@ public class A237579 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A237579() {
-    super(1, n -> {
-      return Functions.LPF.z(Functions.FACTORIAL.z(2 * n).subtract(Functions.FACTORIAL.z(n)).add(1));
-    });
+    super(1, n -> Functions.LPF.z(Functions.FACTORIAL.z(2 * n).subtract(Functions.FACTORIAL.z(n)).add(1)));
   }
 }

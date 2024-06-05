@@ -13,8 +13,6 @@ public class A094439 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A094439() {
-    super(0, 0, 0, (n, k) -> {
-      return Functions.FIBONACCI.z((long) (k + 4)).multiply(Binomial.binomial(n, k));
-    });
+    super(0, 0, 0, (n, k) -> Functions.FIBONACCI.z((long) (k + 4)).multiply(Binomial.binomial(n, k)));
   }
 }

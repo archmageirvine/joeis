@@ -14,6 +14,6 @@ public class A221209 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A221209() {
-    super(1, CR.TWO.multiply(A006752.CATALAN_CONSTANT));
+    super(1, CR.TWO.multiply(new A006752().getCR()));
   }
 }

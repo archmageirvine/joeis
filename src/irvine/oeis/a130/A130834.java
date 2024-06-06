@@ -14,6 +14,6 @@ public class A130834 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A130834() {
-    super(1, A006752.CATALAN_CONSTANT.multiply(2).divide(CR.PI).exp());
+    super(1, new A006752().getCR().multiply(2).divide(CR.PI).exp());
   }
 }

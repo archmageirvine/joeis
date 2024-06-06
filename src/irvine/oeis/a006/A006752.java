@@ -34,7 +34,6 @@ public class A006752 extends DecimalExpansionSequence {
       return sum;
     }
   };
-  public static final CR CATALAN_CONSTANT = SCALED_G.multiply(D).add(C);
 
   /** Construct the sequence. */
   public A006752() {

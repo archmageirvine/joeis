@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070224.
+ * A070229 Next m&gt;n such that m is divisible by lpf(n), lpf=A006530 largest prime factor.
  * @author Sean A. Irvine
  */
 public class A070229 extends Sequence1 {

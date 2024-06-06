@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A160930 a(n)= n + reversal(n-1) + reversal(n+1)
+ * A160930 a(n)= n + reversal(n-1) + reversal(n+1).
  * @author Georg Fischer
  */
 public class A160930 extends LambdaSequence {

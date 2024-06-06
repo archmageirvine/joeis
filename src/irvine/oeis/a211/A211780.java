@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007429;
 
 /**
- * A211780 a(n) = Sum_{d_&lt;n | n} (d_&lt;n) * tau(n / d_&lt;n), where d_&lt;n = divisors of n that are less than n, tau(x) = A000005(x).
+ * A211780 a(n) = Sum_{d|n, d&lt;n} d * tau(n / d), where tau = A000005 is the number of divisors.
  * @author Georg Fischer
  */
 public class A211780 extends Sequence1 {

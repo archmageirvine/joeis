@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070250.
+ * A070250 Palindromic primes with digit sum 10.
  * @author Sean A. Irvine
  */
 public class A070250 extends Sequence1 {

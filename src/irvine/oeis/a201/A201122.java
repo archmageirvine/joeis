@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A201122 Differences between odd powers of 6 and the next smaller square
+ * A201122 Differences between odd powers of 6 and the next smaller square.
  * @author Georg Fischer
  */
 public class A201122 extends LambdaSequence {

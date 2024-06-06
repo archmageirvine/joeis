@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A348304 a(n) = Sum_{d|n} d&apos;&apos;, where d&apos;&apos; is the second arithmetic derivative of d (A068346).
+ * A348304 a(n) = Sum_{d|n} d'', where d'' is the second arithmetic derivative of d (A068346).
  * @author Georg Fischer
  */
 public class A348304 extends LambdaSequence {

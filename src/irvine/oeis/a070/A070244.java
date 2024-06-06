@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002113;
 import irvine.util.array.DynamicArray;
 
 /**
- * A062388.
+ * A070244 Largest palindrome using minimum number of digits with a digit sum = n.
  * @author Sean A. Irvine
  */
 public class A070244 extends A002113 {

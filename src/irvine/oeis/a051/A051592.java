@@ -8,7 +8,7 @@ import irvine.oeis.transform.SimpleTransformSequence;
 
 
 /**
- * A051592 Numbers n such that n!!!!!!-1 is prime.
+ * A051592 Numbers k such that k!!!!!! - 1 is prime.
  * @author Georg Fischer
  */
 public class A051592 extends PrimePositionSubsequence {

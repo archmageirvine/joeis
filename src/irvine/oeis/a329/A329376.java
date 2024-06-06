@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A329376 Multiplicative with a(p^e) = p when e == 2, otherwise a(p^e) = 1.
+ * A329376 Multiplicative with a(p^e) = p when e = 2, otherwise a(p^e) = 1.
  * @author Georg Fischer
  */
 public class A329376 extends MultiplicativeSequence {

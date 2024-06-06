@@ -5,7 +5,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A348431 a(n) = (n&apos;)^(n&apos;), where &apos; is the arithmetic derivative of n.
+ * A348431 a(n) = (n')^(n'), where ' is the arithmetic derivative of n.
  * @author Georg Fischer
  */
 public class A348431 extends LambdaSequence {

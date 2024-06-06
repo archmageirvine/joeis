@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A191561 a(n) = 2^n mod 3*n
+ * A191561 a(n) = 2^n mod 3*n.
  * @author Georg Fischer
  */
 public class A191561 extends LambdaSequence {

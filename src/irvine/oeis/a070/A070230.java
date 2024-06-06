@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070224.
+ * A070230 Let S_n ={p_n + q : p_n is the n-th odd prime and q runs through odd primes not greater than p_n}; sequence gives size of S_n intersect S_(n+1).
  * @author Sean A. Irvine
  */
 public class A070230 extends Sequence1 {

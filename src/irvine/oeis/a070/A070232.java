@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070218.
+ * A070232 a(1) = 4; a(n) = smallest composite number greater than the sum of all previous terms.
  * @author Sean A. Irvine
  */
 public class A070232 extends Sequence1 {

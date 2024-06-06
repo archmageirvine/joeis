@@ -6,7 +6,7 @@ import irvine.oeis.a051.A051064;
 import irvine.oeis.transform.GeneralizedEulerTransform;
 
 /**
- * A327726 Expansion of Product_{i&gt;=1, j&gt;=0}  (1 + x^(i*3^j)).
+ * A327726 Expansion of Product_{i&gt;=1, j&gt;=0}  (1 + x^(i * 3^j)).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^A051064(k))</code>
  * @author Georg Fischer
  */

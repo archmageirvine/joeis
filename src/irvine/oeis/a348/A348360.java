@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A348360 a(n) = Product_{d|n} d^(d&apos;), where &apos; is the arithmetic derivative.
+ * A348360 a(n) = Product_{d|n} d^(d'), where ' is the arithmetic derivative.
  * @author Georg Fischer
  */
 public class A348360 extends LambdaSequence {

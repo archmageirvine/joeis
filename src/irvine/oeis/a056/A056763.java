@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.math.z.Z;
 
 /**
- * A056763 Number of x integers between 2^(n-1) and 2^n for which d(x)^3 &gt; x holds, i.e., cube of number of divisors of x exceeds the number x and binary size of x is n.
+ * A056763 Number of integers in the range (2^(n-1), 2^n] for which d(k)^3 &gt; k holds, i.e., the cube of the number of divisors of k exceeds the number k.
  * @author Sean A. Irvine
  */
 public class A056763 extends A056757 {

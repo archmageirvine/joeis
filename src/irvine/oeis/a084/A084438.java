@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A084438 Positive integers n such that n!!! - 1 = A007661(n) - 1 is prime.
+ * A084438 Positive integers k such that k!!! - 1 = A007661(k) - 1 is prime.
  * @author Georg Fischer
  */
 public class A084438 extends FilterNumberSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a135;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A135836 Column three of the triangular matrix listed by rows in A135835.
+ * A135836 Column three of the triangular matrix in A135835.
  * @author Georg Fischer
  */
 public class A135836 extends HolonomicRecurrence {

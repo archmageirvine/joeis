@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a090.A090210;
 
 /**
- * A070224.
+ * A070227 a(n) = Sum_{k&gt;=0} (k+n)!^n/((k+n)!*(k!^n)*exp(1)).
  * @author Sean A. Irvine
  */
 public class A070227 extends A090210 {

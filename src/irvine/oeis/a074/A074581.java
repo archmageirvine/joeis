@@ -4,7 +4,7 @@ package irvine.oeis.a074;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A074581 a(n)=T(3n+1), where T(n) are tribonacci numbers A000073.
+ * A074581 a(n) = T(3n+1), where T(n) are tribonacci numbers A000073.
  * @author Georg Fischer
  */
 public class A074581 extends HolonomicRecurrence {

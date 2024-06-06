@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070160 Nonprime numbers n such that q = phi(n)/(sigma(n) - n - 1) is an integer.
+ * A070160 Nonprime numbers k such that phi(k)/(sigma(k) - k - 1) is an integer.
  * @author Sean A. Irvine
  */
 public class A070160 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A115304 a(n) = if n&lt;4 then n else 4*a(floor(n/4)) + 3 - n mod 4.
+ * A115304 a(n) = n if n &lt; 4, otherwise 4*a(floor(n/4)) + 3 - n mod 4.
  * @author Georg Fischer
  */
 public class A115304 extends MultiTransformSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a054.A054973;
 
 /**
- * A070224.
+ * A070242 Card( k&gt;0 : sigma(k)=sigma(n) ).
  * @author Sean A. Irvine
  */
 public class A070242 extends Sequence1 {

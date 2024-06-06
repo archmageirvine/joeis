@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a034.A034287;
 
 /**
- * A067128 Ramanujan's largely composite numbers, defined to be numbers m such that d(n) &gt;= d(k) for k = 1 to m-1.
+ * A067128 Ramanujan's largely composite numbers, defined to be numbers m such that d(m) &gt;= d(k) for k = 1 to m-1.
  * Identical to A034287 for the 105834 terms less than 10^150.
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A070224.
+ * A090210 Triangle of certain generalized Bell numbers.
  * @author Sean A. Irvine
  */
 public class A090210 extends AbstractSequence {

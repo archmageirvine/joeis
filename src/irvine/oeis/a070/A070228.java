@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A070224.
+ * A070228 Number of perfect powers (A001597) not exceeding 2^n.
  * @author Sean A. Irvine
  */
 public class A070228 extends Sequence0 {

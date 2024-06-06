@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a036.A036691;
 
 /**
- * A053982 Numbers n such that 1 + product of first n composite numbers is prime.
+ * A053982 Numbers k such that 1 + product of first k composite numbers is prime.
  * @author Sean A. Irvine
  */
 public class A053982 extends A036691 {

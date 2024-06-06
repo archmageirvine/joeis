@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A085147 n!!!!-1 is prime.
+ * A085147 Numbers k such that k!!!! - 1 is prime.
  * @author Georg Fischer
  */
 public class A085147 extends FilterNumberSequence {

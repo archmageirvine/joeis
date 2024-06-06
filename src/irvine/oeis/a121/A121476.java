@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a070.A070250;
 
 /**
- * A070250.
+ * A121476 Palindromes with digit sum 9.
  * @author Sean A. Irvine
  */
 public class A121476 extends A070250 {

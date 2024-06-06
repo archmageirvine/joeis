@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a039.A039716;
 
 /**
- * A055929 EulerPhi of the factorial of prime(n).
+ * A055929 Euler totient function of the factorial of prime(n).
  * @author Sean A. Irvine
  */
 public class A055929 extends A039716 {

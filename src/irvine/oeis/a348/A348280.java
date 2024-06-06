@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A348280 a(n) = Sum_{d|n} n^(d&apos;).
+ * A348280 a(n) = Sum_{d|n} n^(d').
  * @author Georg Fischer
  */
 public class A348280 extends LambdaSequence {

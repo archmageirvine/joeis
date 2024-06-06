@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A348282 a(n) = Sum_{d|n, d&gt;1} mu(d&apos;)^2.
+ * A348282 a(n) = Sum_{d|n, d&gt;1} mu(d')^2.
  * @author Georg Fischer
  */
 public class A348282 extends LambdaSequence {

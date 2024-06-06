@@ -5,7 +5,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.a000.A000009;
 
 /**
- * A070224.
+ * A070235 Number of partitions of 3^n into distinct terms.
  * @author Sean A. Irvine
  */
 public class A070235 extends A070231 {

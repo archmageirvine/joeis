@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070224.
+ * A070225 Numbers k such that (sigma(k)-k) - Sum_{p|k} p^2 = -1.
  * @author Sean A. Irvine
  */
 public class A070225 extends Sequence1 {

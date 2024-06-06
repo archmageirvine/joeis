@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A256853 Decimal expansion of area of a regular 9-gon with unit edge length.
+ * A256853 Decimal expansion of the area of a unit 9-gon.
  * @author Georg Fischer
  */
 public class A256853 extends DecimalExpansionSequence {

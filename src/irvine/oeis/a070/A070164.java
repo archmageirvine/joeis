@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070164 Least m such that cototient[m]-1=p[n].
+ * A070164 Least m such that cototient(m)-1 = p(n).
  * @author Sean A. Irvine
  */
 public class A070164 extends Sequence1 {

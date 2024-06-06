@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070224.
+ * A070224 Numbers k such that the sum of p^2, where p are the prime divisors of k, divides the sum of d^2, where d are the divisors of k.
  * @author Sean A. Irvine
  */
 public class A070224 extends Sequence1 {

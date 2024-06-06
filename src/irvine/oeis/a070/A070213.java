@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A070213 Numbers n such that a(n)=n*a(n-1)+1 with a(1)=0 is prime.
+ * A070213 Numbers k such that A056542(k) is prime.
  * @author Sean A. Irvine
  */
 public class A070213 extends Sequence1 {

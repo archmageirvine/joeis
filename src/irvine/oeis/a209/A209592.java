@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A209592 Number of n X n 0..7 arrays with every element equal to a diagonal or antidiagonal reflection
+ * A209592 Number of n X n 0..7 arrays with every element equal to a diagonal or antidiagonal reflection.
  * @author Georg Fischer
  */
 public class A209592 extends LambdaSequence {

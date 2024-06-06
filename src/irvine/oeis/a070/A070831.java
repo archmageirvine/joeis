@@ -1,7 +1,7 @@
 package irvine.oeis.a070;
 
 /**
- * A070250.
+ * A070831 Palindromic primes with digit sum = 11.
  * @author Sean A. Irvine
  */
 public class A070831 extends A070250 {

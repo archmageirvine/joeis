@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A049535 Starts for strings of exactly 6 consecutive nonsquarefree numbers.
+ * A049535 Starts of runs of exactly 6 consecutive nonsquarefree numbers.
  * @author Sean A. Irvine
  */
 public class A049535 extends Sequence1 {

@@ -10,6 +10,6 @@ public class A030797 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A030797() {
-    super(A030178.N.inverse());
+    super(new A030178().getCR().inverse());
   }
 }

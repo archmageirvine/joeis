@@ -13,6 +13,6 @@ public class A364806 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A364806() {
-    super(45, A359187.build().subtract(1).inverse());
+    super(45, new A359187().getCR().subtract(1).inverse());
   }
 }

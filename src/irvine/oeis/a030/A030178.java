@@ -20,11 +20,9 @@ public class A030178 extends DecimalExpansionSequence {
     }
   }
 
-  public static final CR N = new MyFunction().inverseMonotone(CR.ZERO, CR.ONE).execute(CR.ZERO);
-
   /** Construct the sequence. */
   public A030178() {
-    super(0, N);
+    super(0, new MyFunction().inverseMonotone(CR.ZERO, CR.ONE).execute(CR.ZERO));
   }
 }
 

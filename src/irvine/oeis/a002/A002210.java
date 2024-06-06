@@ -12,10 +12,9 @@ import irvine.oeis.cons.DecimalExpansionSequence;
  */
 public class A002210 extends DecimalExpansionSequence {
 
-  private static final CR LN2 = CR.TWO.log();
-
   // sum_{n=1}^\infty {(\zeta(2n)-1)/(n)} * sum_{k=1}^{2n-1} (-)^{k+1}/k
-  private static final CR SCALED_KHINTCHINE = new CR() {
+  /** Scaled Khintchine value. */
+  public static final CR SCALED_KHINTCHINE = new CR() {
     @Override
     protected Z approximate(final int precision) {
       if (precision >= 0) {
@@ -40,6 +39,6 @@ public class A002210 extends DecimalExpansionSequence {
   /** Construct the sequence. */
   public A002210() {
     // Computed using ln K_0 = (1/ln(2)) * sum_{n=1}^\infty {(\zeta(2n)-1)/(n)} * sum_{k=1}^{2n-1} (-)^{k+1}/k
-    super(SCALED_KHINTCHINE.divide(LN2).exp());
+    super(SCALED_KHINTCHINE.divide(CR.LOG2).exp());
   }
 }

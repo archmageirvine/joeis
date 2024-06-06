@@ -10,7 +10,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
  */
 public class A013706 extends DecimalExpansionSequence {
 
-  private static CR build5() {
+  public static CR build5() {
     // It is actually quite hard to construct this number quickly with arbitrary precision.
     // Simple construction in Q is too slow.
     // Simple constriction in CR runs out of stack space and is slow.

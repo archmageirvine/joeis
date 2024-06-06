@@ -11,7 +11,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
  */
 public class A359187 extends DecimalExpansionSequence {
 
-  private static CR build() {
+  public static CR build() {
     final CC s = new CC(CR.SQRT2.negate());
     CC t = s;
     for (int k = 0; k < 8; ++k) {

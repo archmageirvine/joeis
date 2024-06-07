@@ -4,7 +4,7 @@ package irvine.oeis.a368;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A368114 Trajectory of 11 under the &apos;11x+1&apos; map.
+ * A368114 Trajectory of 11 under the '11x+1' map.
  * @author Georg Fischer
  */
 public class A368114 extends HolonomicRecurrence {

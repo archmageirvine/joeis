@@ -6,7 +6,7 @@ import irvine.oeis.a019.A019309;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A094559 Number of words of length n over an alphabet of size 4 that are not &quot;bifix-free&quot;.
+ * A094559 Number of words of length n over an alphabet of size 4 that are not "bifix-free".
  * @author Georg Fischer
  */
 public class A094559 extends SimpleTransformSequence {

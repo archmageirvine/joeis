@@ -6,7 +6,7 @@ import irvine.oeis.a006.A006752;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A098459 Decimal expansion of G/2 + (1/8)*Pi*log(2), where G is Catalan&apos;s constant (often also denoted K).
+ * A098459 Decimal expansion of G/2 + (1/8)*Pi*log(2), where G is Catalan's constant (often also denoted K).
  * Formula:
  * @author Georg Fischer
  */

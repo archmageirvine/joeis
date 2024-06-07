@@ -6,7 +6,7 @@ import irvine.oeis.a019.A019308;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A094538 Number of ternary words of length n that are not &quot;bifix-free&quot;.
+ * A094538 Number of ternary words of length n that are not "bifix-free".
  * @author Georg Fischer
  */
 public class A094538 extends SimpleTransformSequence {

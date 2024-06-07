@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002210;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A163243 Decimal expansion of the natural logarithm of Khintchine&apos;s constant.
+ * A163243 Decimal expansion of the natural logarithm of Khintchine's constant.
  * @author Georg Fischer
  */
 public class A163243 extends DecimalExpansionSequence {

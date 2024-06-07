@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A093341 Decimal expansion of &quot;lemniscate case&quot;.
+ * A093341 Decimal expansion of "lemniscate case".
  * Formula:
  * @author Georg Fischer
  */

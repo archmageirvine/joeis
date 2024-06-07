@@ -4,7 +4,7 @@ package irvine.oeis.a368;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A368115 Trajectory of 17 under the &apos;17x+1&apos; map.
+ * A368115 Trajectory of 17 under the '17x+1' map.
  * @author Georg Fischer
  */
 public class A368115 extends HolonomicRecurrence {

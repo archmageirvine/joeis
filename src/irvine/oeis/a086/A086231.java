@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A086231 Decimal expansion of value of Watson&apos;s integral.
+ * A086231 Decimal expansion of value of Watson's integral.
  * Formula:
  * @author Georg Fischer
  */

@@ -1,11 +1,14 @@
 package irvine.math.z;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
 
-import irvine.factor.factor.PrimeDivision;
+import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.util.Pair;
 
@@ -22,13 +25,17 @@ public final class InverseSigma {
   // Journal of Integer Sequences 19 (2016), Article 16.5.2
   // https://cs.uwaterloo.ca/journals/JIS/VOL19/Alekseyev/alek5.html
 
-  // For now, we assume all integers occurring here are "easy" to factor.
-  // If this turns out not to be case then we could provide a mechanism to pass
-  // in an appropriate factorizer.
-
   private InverseSigma() { }
 
-  private static final PrimeDivision FACTOR = new PrimeDivision();
+  /**
+   * Return all solutions to <code>sigma_k(x) = n</code>.
+   * @param n number
+   * @param k parameter
+   * @return solutions.
+   */
+  public static Set<Z> inverseSigma(final Z n, final long k) {
+    return Z.ONE.equals(n) ? Collections.singleton(Z.ONE) : dynamicSet(n, k, cookSigma(n, k));
+  }
 
   /**
    * Return number of solutions to <code>sigma_k(x) = n</code>.
@@ -71,11 +78,11 @@ public final class InverseSigma {
 
   private static Map<Z, List<Pair<Z, Z>>> cookSigma(final Z n, final long k) {
     final Map<Z, List<Pair<Z, Z>>> lst = new TreeMap<>();
-    for (final Z d : FACTOR.factorize(n).divisors()) {
+    for (final Z d : Jaguar.factor(n).divisors()) {
       if (Z.ONE.equals(d)) {
         continue;
       }
-      for (final Z p : FACTOR.factorize(d.subtract(1)).toZArray()) {
+      for (final Z p : Jaguar.factor(d.subtract(1)).toZArray()) {
         final Z q = p.pow(k).subtract(1).multiply(d).add(1);
         final long t = Functions.VALUATION.i(q, p);
         if (t <= k || t % k != 0 || !q.equals(p.pow(t))) {
@@ -103,7 +110,7 @@ public final class InverseSigma {
     for (final List<Pair<Z, Z>> l : lst.values()) {
       final TreeMap<Z, Z> t = new TreeMap<>(r);
       for (final Pair<Z, Z> pair : l) {
-        for (final Z d : FACTOR.factorize(n.divide(pair.left())).divisors()) {
+        for (final Z d : Jaguar.factor(n.divide(pair.left())).divisors()) {
           final Z key = d.multiply(pair.left());
           t.put(key, t.getOrDefault(key, Z.ZERO).add(r.getOrDefault(d, Z.ZERO)));
         }
@@ -120,7 +127,7 @@ public final class InverseSigma {
     for (final List<Pair<Z, Z>> l : lst.values()) {
       final TreeMap<Z, Z> t = new TreeMap<>(r);
       for (final Pair<Z, Z> pair : l) {
-        for (final Z d : FACTOR.factorize(n.divide(pair.left())).divisors()) {
+        for (final Z d : Jaguar.factor(n.divide(pair.left())).divisors()) {
           final Z key = d.multiply(pair.left());
           final Z p = r.getOrDefault(d, Z.NEG_ONE).multiply(pair.right());
           final Z cur = t.getOrDefault(key, Z.NEG_ONE);
@@ -140,7 +147,7 @@ public final class InverseSigma {
     for (final List<Pair<Z, Z>> l : lst.values()) {
       final TreeMap<Z, Z> t = new TreeMap<>(r);
       for (final Pair<Z, Z> pair : l) {
-        for (final Z d : FACTOR.factorize(n.divide(pair.left())).divisors()) {
+        for (final Z d : Jaguar.factor(n.divide(pair.left())).divisors()) {
           final Z key = d.multiply(pair.left());
           final Z p = r.getOrDefault(d, Z.ZERO).multiply(pair.right());
           final Z cur = t.getOrDefault(key, Z.ZERO);
@@ -150,6 +157,46 @@ public final class InverseSigma {
       r = t;
     }
     return r.get(n);
+  }
+
+  // todo k parameter here should really not be needed
+  private static Set<Z> dynamicSet(final Z n, final long k, final Map<Z, List<Pair<Z, Z>>> lst) {
+    TreeMap<Z, Set<Z>> r = new TreeMap<>();
+    r.put(Z.ONE, Collections.singleton(Z.ONE));
+    for (final List<Pair<Z, Z>> l : lst.values()) {
+      final TreeMap<Z, Set<Z>> t = new TreeMap<>(r);
+      for (final Pair<Z, Z> pair : l) {
+        final Z left = pair.left();
+        final Z right = pair.right();
+        for (final Z d : Jaguar.factor(n.divide(left)).divisors()) {
+          final Set<Z> s = r.get(d);
+          if (s != null) {
+            final Z key = d.multiply(left);
+            final Set<Z> res = t.getOrDefault(key, new HashSet<>());
+            for (final Z v : s) {
+              res.add(v.multiply(right));
+            }
+            t.put(key, res);
+          }
+        }
+      }
+      r = t;
+    }
+
+    // todo the above is somehow broken e.g. invSigma on 144 returns 121 for which sigma(121)=133
+    // todo the other 5 answers for 144 are correct
+    // todo note that the counting function gets the right answer
+    // so check all the answers!
+
+    final Set<Z> soln = r.getOrDefault(n, Collections.emptySet());
+//    return soln;
+    final Set<Z> res = new HashSet<>();
+    for (final Z v : soln) {
+      if (Functions.SIGMA.z(k, v).equals(n)) {
+        res.add(v);
+      }
+    }
+    return res;
   }
 }
 

@@ -1,68 +1,50 @@
 package irvine.oeis.a070;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
- * A070258 Smallest of 3 consecutive numbers each divisible by a square.
+ * A070263 Triangle T(n,k), n&gt;=0, 1 &lt;= k &lt;= 2^n, read by rows, giving minimal distance-sum of any set of k binary vectors of length n.
  * @author Sean A. Irvine
  */
-public class A070263 extends Sequence1 {
+public class A070263 extends Sequence0 {
 
   // Brute force
 
-  private int mN = 0;
-  private long mM = 0;
-  private Map<Set<Long>, Integer> mState = new HashMap<>();
+  private int mLim = 1;
+  private int mM = 0;
+  private long[] mVectors = new long[1];
+  private int[] mMinDistance = new int[2];
+
+  private void search(final int n, final int distance, final long v) {
+    final int d = mMinDistance[n];
+    if (distance < d) {
+      mMinDistance[n] = distance;
+    }
+    if (v < mLim) {
+      search(n, distance, v + 1); // do not include v
+      // include v
+      int f = distance;
+      for (int k = 0; k < n; ++k) {
+        f += Long.bitCount(mVectors[k] ^ v);
+      }
+      mVectors[n] = v;
+      search(n + 1, f, v + 1);
+    }
+  }
 
   @Override
   public Z next() {
-    long lim = 1L << mN;
-    if (++mM > lim) {
-      ++mN;
+    if (++mM > mLim) {
       mM = 1;
-      lim <<= 1;
-      mState = new HashMap<>();
+      mLim <<= 1;
+      mVectors = new long[mLim];
+      mMinDistance = new int[mLim + 1];
+      Arrays.fill(mMinDistance, Integer.MAX_VALUE);
+      search(0, 0, 0);
     }
-    if (mState.isEmpty()) {
-      // i.e. mM = 1
-      for (long v = 0; v < lim; ++v) {
-        mState.put(Collections.singleton(v), 0);
-      }
-    } else {
-      final HashMap<Set<Long>, Integer> newState = new HashMap<>();
-      // Try adding one more vector to each existing state and update the distance sum
-      for (final Map.Entry<Set<Long>, Integer> e : mState.entrySet()) {
-        final Set<Long> s = e.getKey();
-        final int dist = e.getValue();
-        for (long u = 0; u < lim; ++u) {
-          if (!s.contains(u)) {
-            final HashSet<Long> ns = new HashSet<>(s);
-            ns.add(u);
-            if (!newState.containsKey(ns)) {
-              int t = dist;
-              for (final long w : s) {
-                t += Long.bitCount(w ^ u);
-              }
-              newState.put(ns, t);
-            }
-          }
-        }
-      }
-      mState = newState;
-    }
-    int min = Integer.MAX_VALUE;
-    for (final int v : mState.values()) {
-      if (v < min) {
-        min = v;
-      }
-    }
-    return Z.valueOf(min);
+    return Z.valueOf(mMinDistance[mM]);
   }
 }

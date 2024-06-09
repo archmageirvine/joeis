@@ -14,7 +14,6 @@ public class A020519 extends Sequence0 {
 
   @Override
   public Z next() {
-    Z x = Z.ONE.shiftLeft(++mN);
-    return Functions.CYCLOTOMIC.z(11, x);
+    return Functions.CYCLOTOMIC.z(11, Z.ONE.shiftLeft(++mN));
   }
 }

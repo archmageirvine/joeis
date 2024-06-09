@@ -32,7 +32,7 @@ public class A070278 extends Sequence0 {
     while (true) {
       if (++insert == lim) {
         t = t.multiply(10);
-        lim *=10;
+        lim *= 10;
         //insert = 0; // Insignificant leading 0s apparently not permitted.
       }
       final Z u = t.add(Z.valueOf(insert).multiply(mMod)).add(mN);

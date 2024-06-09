@@ -1,8 +1,8 @@
 package irvine.oeis.a088;
 // manually 2023-09-07/filtpos at 2023-09-07 21:05
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.cyclotomic.Cyclotomic;
 import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.LambdaSequence;
 
@@ -16,7 +16,10 @@ public class A088875 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A088875() {
-    super(1, 1, new LambdaSequence(1, n -> Cyclotomic.cyclotomic(n, -n)), PRIME);
+    super(1, 1, new LambdaSequence(1, n -> {
+      final long x = -n;
+      return Functions.CYCLOTOMIC.z(n, Z.valueOf(x));
+    }), PRIME);
   }
 
   @Override

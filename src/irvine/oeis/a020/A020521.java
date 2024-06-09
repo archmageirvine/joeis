@@ -1,7 +1,7 @@
 package irvine.oeis.a020;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence0;
 
 /**
@@ -14,6 +14,7 @@ public class A020521 extends Sequence0 {
 
   @Override
   public Z next() {
-    return Cyclotomic.cyclotomic(13, Z.ONE.shiftLeft(++mN));
+    Z x = Z.ONE.shiftLeft(++mN);
+    return Functions.CYCLOTOMIC.z(13, x);
   }
 }

@@ -15,9 +15,9 @@ public class A048865 extends Sequence1 {
 
   final Sequence mA000720 = new A000720();
   final Sequence mA001221 = new A001221();
+
   @Override
   public Z next() {
     return mA000720.next().subtract(mA001221.next());
   }
-
 }

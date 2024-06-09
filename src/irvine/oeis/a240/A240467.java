@@ -1,6 +1,6 @@
 package irvine.oeis.a240;
 
-import irvine.math.cyclotomic.Cyclotomic;
+import irvine.math.cyclotomic.CyclotomicPolynomials;
 import irvine.oeis.recur.PeriodicSequence;
 
 /**
@@ -11,6 +11,6 @@ public class A240467 extends PeriodicSequence {
 
   /** Construct the sequence. */
   public A240467() {
-    super(Cyclotomic.inverse(152));
+    super(CyclotomicPolynomials.inverse(152));
   }
 }

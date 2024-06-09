@@ -1,6 +1,5 @@
 package irvine.oeis.a002;
 
-import irvine.math.cyclotomic.Cyclotomic;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -31,7 +30,7 @@ public class A002589 extends Sequence0 {
   @Override
   public Z next() {
     mN += 2;
-    Z n = Cyclotomic.cyclotomic(2 * mN, 2);
+    Z n = Functions.CYCLOTOMIC.z(2 * mN, Z.valueOf(2));
     if (mVerbose) {
       System.out.println("Doing: 2^" + mN + "+1 Phi(" + 2 * mN + ",2)=" + n);
     }

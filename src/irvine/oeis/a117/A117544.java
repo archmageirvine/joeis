@@ -1,10 +1,10 @@
 package irvine.oeis.a117;
 
+import irvine.math.cyclotomic.CyclotomicPolynomials;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.math.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence1;
 
 /**
@@ -18,7 +18,7 @@ public class A117544 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Polynomial<Z> cp = Cyclotomic.cyclotomic(++mN);
+    final Polynomial<Z> cp = CyclotomicPolynomials.cyclotomic(++mN);
     long m = 0;
     while (true) {
       final Z a = Z.valueOf(++m);

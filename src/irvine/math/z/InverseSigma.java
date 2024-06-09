@@ -159,7 +159,7 @@ public final class InverseSigma {
     return r.get(n);
   }
 
-  // todo k parameter here should really not be needed
+  // todo k parameter here only used for extra check that should really not be needed
   private static Set<Z> dynamicSet(final Z n, final long k, final Map<Z, List<Pair<Z, Z>>> lst) {
     TreeMap<Z, Set<Z>> r = new TreeMap<>();
     r.put(Z.ONE, Collections.singleton(Z.ONE));
@@ -174,7 +174,10 @@ public final class InverseSigma {
             final Z key = d.multiply(left);
             final Set<Z> res = t.getOrDefault(key, new HashSet<>());
             for (final Z v : s) {
-              res.add(v.multiply(right));
+              final Z w = v.multiply(right);
+              if (Functions.SIGMA.z(k, w).equals(key)) { // it would be nice to avoid the need for this test
+                res.add(w);
+              }
             }
             t.put(key, res);
           }
@@ -182,21 +185,7 @@ public final class InverseSigma {
       }
       r = t;
     }
-
-    // todo the above is somehow broken e.g. invSigma on 144 returns 121 for which sigma(121)=133
-    // todo the other 5 answers for 144 are correct
-    // todo note that the counting function gets the right answer
-    // so check all the answers!
-
-    final Set<Z> soln = r.getOrDefault(n, Collections.emptySet());
-//    return soln;
-    final Set<Z> res = new HashSet<>();
-    for (final Z v : soln) {
-      if (Functions.SIGMA.z(k, v).equals(n)) {
-        res.add(v);
-      }
-    }
-    return res;
+    return r.getOrDefault(n, Collections.emptySet());
   }
 }
 

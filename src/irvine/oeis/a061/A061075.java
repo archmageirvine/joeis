@@ -1,8 +1,8 @@
 package irvine.oeis.a061;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence1;
 
 /**
@@ -15,7 +15,8 @@ public class A061075 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Z[] f = Jaguar.factor(Cyclotomic.cyclotomic(++mN, 10)).toZArray();
+    final int n = ++mN;
+    final Z[] f = Jaguar.factor(Functions.CYCLOTOMIC.z(n, Z.valueOf(10))).toZArray();
     return f[f.length - 1];
   }
 }

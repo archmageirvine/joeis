@@ -2399,3 +2399,4 @@ A069857 Decimal expansion of -C, where C = -0.2959050055752... is the real solut
 A069995 Decimal expansion of the real positive solution to zeta(x)=x.
 A070214 Maximal number of occupied cells in all monotonic matrices of order n
 A070259 Array f(m,n) read by antidiagonals: f(m,n) = minimal number of 0's in a 2m X 2n (0,1) matrix that contains no m X n submatrix of 1's (m >= 1, n >= 1).
+A070300 Minimal number of 0's in a 2n X 2n (0,1) matrix that contains no n X n submatrix of 1's

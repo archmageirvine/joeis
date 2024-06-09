@@ -26,6 +26,8 @@ public final class Predicates {
   public static final Predicate FIBONACCI = new Fibonacci();
   /** Test if a number is a Lucas number. */
   public static final Predicate LUCAS = new Lucas();
+  /** Test if a number is perfect. */
+  public static final Predicate PERFECT = new Perfect();
   /** Test if a number is practical. */
   public static final Predicate PRACTICAL = new Practical();
   /** Test if a number has non-decreasing digits in base 10. */

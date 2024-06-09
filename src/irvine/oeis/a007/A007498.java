@@ -1,7 +1,7 @@
 package irvine.oeis.a007;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence1;
 
 /**
@@ -18,7 +18,7 @@ public class A007498 extends Sequence1 {
       if (++mN == 1) {
         return Z.ONE;
       }
-      final Z c = Cyclotomic.cyclotomic(mN, 10);
+      final Z c = Functions.CYCLOTOMIC.z(mN, 10);
       final Z n = Z.valueOf(mN);
       final Z p = c.divide(n.gcd(c));
       if (p.isProbablePrime()) {

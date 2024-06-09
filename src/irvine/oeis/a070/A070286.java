@@ -16,8 +16,6 @@ public class A070286 extends Sequence1 {
 
   @Override
   public Z next() {
-//    final Z t = Z.valueOf(144);
-//    System.out.println(t + " " + InverseSigma.countInverseSigma(t, 1) + " " + InverseSigma.inverseSigma(t, 1));
     while (true) {
       ++mN;
       final Set<Z> invSigma = InverseSigma.inverseSigma(Z.valueOf(mN), 1);

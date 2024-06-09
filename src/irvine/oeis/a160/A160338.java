@@ -1,8 +1,8 @@
 package irvine.oeis.a160;
 
+import irvine.math.cyclotomic.CyclotomicPolynomials;
 import irvine.math.polynomial.PolynomialUtils;
 import irvine.math.z.Z;
-import irvine.math.cyclotomic.Cyclotomic;
 import irvine.oeis.AbstractSequence;
 
 /**
@@ -20,6 +20,6 @@ public class A160338 extends AbstractSequence {
 
   @Override
   public Z next() {
-    return PolynomialUtils.height(Cyclotomic.cyclotomic(++mN));
+    return PolynomialUtils.height(CyclotomicPolynomials.cyclotomic(++mN));
   }
 }

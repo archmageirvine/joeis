@@ -16,4 +16,8 @@ public class CyclotomicPolynomialsTest extends TestCase {
     assertEquals("1+x^2", cp.get(4).toString());
     assertEquals("1-x^2+x^4", cp.get(12).toString());
   }
+
+  public void testPolys2() {
+    assertEquals("1-x^2+x^4", CyclotomicPolynomials.cyclotomic(12).toString());
+  }
 }

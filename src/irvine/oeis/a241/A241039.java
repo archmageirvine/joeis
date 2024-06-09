@@ -1,8 +1,8 @@
 package irvine.oeis.a241;
 // manually 2023-09-07/lambda at 2023-09-07 19:13
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.cyclotomic.Cyclotomic;
 import irvine.oeis.LambdaSequence;
 
 /**
@@ -15,6 +15,6 @@ public class A241039 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A241039() {
-    super(0, n -> (n == 0) ? Z.ONE : Cyclotomic.cyclotomic(n, Z.valueOf(2048)));
+    super(0, n -> (n == 0) ? Z.ONE : Functions.CYCLOTOMIC.z(n, Z.valueOf(2048)));
   }
 }

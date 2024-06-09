@@ -1,8 +1,8 @@
 package irvine.oeis.a013;
 
+import irvine.math.cyclotomic.CyclotomicPolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.math.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence1;
 
 /**
@@ -23,7 +23,7 @@ public class A013594 extends Sequence1 {
       return Z.ZERO;
     }
     while (mFirstOccurrence[mN] == 0) {
-      final Polynomial<Z> cyclo = Cyclotomic.cyclotomic(++mM);
+      final Polynomial<Z> cyclo = CyclotomicPolynomials.cyclotomic(++mM);
       for (final Z c : cyclo) {
         final Z coeff = c.abs();
         if (coeff.compareTo(ZMAX_COEFF) < 0) {

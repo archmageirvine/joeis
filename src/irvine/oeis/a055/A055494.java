@@ -1,8 +1,8 @@
 package irvine.oeis.a055;
 
+import irvine.math.cyclotomic.CyclotomicPolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.math.cyclotomic.Cyclotomic;
 import irvine.oeis.prime.PrimePositionSubsequence;
 
 /**
@@ -34,7 +34,7 @@ public class A055494 extends PrimePositionSubsequence {
    * @return matrix of recurrence coefficients, for example "[[1,-1, 1],[-1]]"
    */
   protected static String buildCyclotomicMatrix(final int n) {
-    final Polynomial<Z> poly = Cyclotomic.cyclotomic(n);
+    final Polynomial<Z> poly = CyclotomicPolynomials.cyclotomic(n);
     final StringBuilder sb = new StringBuilder("[");
     for (int k = 0; k <= poly.degree(); ++k) {
       sb.append(k == 0 ? '[' : ',');

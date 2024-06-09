@@ -1,7 +1,7 @@
 package irvine.oeis.a152;
 
+import irvine.math.cyclotomic.CyclotomicPolynomials;
 import irvine.math.polynomial.PolynomialUtils;
-import irvine.math.cyclotomic.Cyclotomic;
 import irvine.oeis.FilterSequence;
 import irvine.oeis.a056.A056911;
 
@@ -22,7 +22,7 @@ public class A152940 extends FilterSequence {
    * @param h desired heigth = absolute maximum value of coefficients
    */
   public A152940(final int offset, final int h) {
-    super(offset, new A056911(), t -> PolynomialUtils.height(Cyclotomic.cyclotomic(t.intValue())).equals(h));
+    super(offset, new A056911(), t -> PolynomialUtils.height(CyclotomicPolynomials.cyclotomic(t.intValue())).equals(h));
   }
 
 }

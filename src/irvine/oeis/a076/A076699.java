@@ -1,8 +1,8 @@
 package irvine.oeis.a076;
 
+import irvine.math.cyclotomic.CyclotomicPolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.math.cyclotomic.Cyclotomic;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
@@ -21,7 +21,7 @@ public class A076699 extends BaseTriangle {
   @Override
   protected void addRow() {
     super.addRow();
-    final Polynomial<Z> cyclo = Cyclotomic.cyclotomic(mRow);
+    final Polynomial<Z> cyclo = CyclotomicPolynomials.cyclotomic(mRow);
     for (int icoeff = 0; icoeff < mLastRow.length; ++icoeff) {
       mLastRow[icoeff] = cyclo.coeff(icoeff);
     }

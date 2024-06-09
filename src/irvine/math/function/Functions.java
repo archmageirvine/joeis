@@ -177,6 +177,8 @@ public final class Functions {
   public static final Function2 STIRLING2 = new Stirling2();
   /** Eulerian numbers of the second kind. */
   public static final Function2 EULERIAN2 = new Eulerian2();
+  /** Cyclotomic function. */
+  public static final Function2 CYCLOTOMIC = new Cyclotomic();
 
 
   // Aggregating functions

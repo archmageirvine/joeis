@@ -1,8 +1,8 @@
 package irvine.oeis.a011;
 
+import irvine.math.cyclotomic.CyclotomicPolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.math.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence0;
 
 /**
@@ -16,7 +16,7 @@ public class A011632 extends Sequence0 {
   private int mM = 0;
 
   private static Z[] build(final int n) {
-    final Polynomial<Z> poly = Cyclotomic.cyclotomic(n);
+    final Polynomial<Z> poly = CyclotomicPolynomials.cyclotomic(n);
     return poly.toArray(new Z[0]);
   }
 

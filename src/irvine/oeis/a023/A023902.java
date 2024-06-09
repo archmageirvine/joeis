@@ -1,11 +1,11 @@
 package irvine.oeis.a023;
 
+import irvine.math.cyclotomic.CyclotomicPolynomials;
 import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.math.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence0;
 
 /**
@@ -21,7 +21,7 @@ public class A023902 extends Sequence0 {
   private int mN = -2;
 
   private Polynomial<Polynomial<Z>> theta3(final int k, final int n, final int prec) {
-    final Polynomial<Z> f = Cyclotomic.cyclotomic(n);
+    final Polynomial<Z> f = CyclotomicPolynomials.cyclotomic(n);
     Polynomial<Polynomial<Z>> sum = RING2.one();
     for (int m = 1; m <= Functions.SQRT.i(prec); ++m) {
       final Polynomial<Z> x = RING.add(RING.monomial(Z.ONE, (m * k) % n), RING.monomial(Z.ONE, (m * (n - k)) % n));
@@ -46,7 +46,7 @@ public class A023902 extends Sequence0 {
       sum = RING2.add(sum, RING2.pow(t3, n, prec));
     }
     // At this point we can reduce sum to a single variate polynomial
-    final Polynomial<Z> num = modEval(sum, Cyclotomic.cyclotomic(n));
+    final Polynomial<Z> num = modEval(sum, CyclotomicPolynomials.cyclotomic(n));
     Polynomial<Z> den = RING.one();
     for (int m = 1; m <= Functions.SQRT.i(prec / n); ++m) {
       den = RING.add(den, RING.monomial(Z.TWO, n * m * m));

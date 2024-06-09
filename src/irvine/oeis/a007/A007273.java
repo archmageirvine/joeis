@@ -1,8 +1,8 @@
 package irvine.oeis.a007;
 
+import irvine.math.cyclotomic.CyclotomicPolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.math.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence0;
 
 /**
@@ -27,7 +27,7 @@ public class A007273 extends Sequence0 {
   @Override
   public Z next() {
     if (mA == null) {
-      mA = Cyclotomic.inverse(mN);
+      mA = CyclotomicPolynomials.inverse(mN);
     }
     if (++mM > mA.degree()) {
       mM = 0;

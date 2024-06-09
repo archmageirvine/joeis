@@ -2,9 +2,9 @@ package irvine.oeis.a230;
 
 import java.util.TreeSet;
 
+import irvine.math.cyclotomic.CyclotomicPolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.math.cyclotomic.Cyclotomic;
 import irvine.oeis.AbstractSequence;
 
 /**
@@ -24,7 +24,7 @@ public class A230799 extends AbstractSequence {
 
   @Override
   public Z next() {
-    final Polynomial<Z> cyclo = Cyclotomic.cyclotomic(++mN);
+    final Polynomial<Z> cyclo = CyclotomicPolynomials.cyclotomic(++mN);
     mSet.clear();
     for (int icoeff = cyclo.degree(); icoeff >= 0; --icoeff) {
       final Z co = cyclo.coeff(icoeff);

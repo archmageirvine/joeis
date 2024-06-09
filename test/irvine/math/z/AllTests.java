@@ -24,6 +24,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(GcdTest.class);
     suite.addTestSuite(IntegersTest.class);
     suite.addTestSuite(InverseEulerTest.class);
+    suite.addTestSuite(InverseSigmaTest.class);
     suite.addTestSuite(IsPowerTest.class);
     suite.addTestSuite(JacobiTest.class);
     suite.addTestSuite(LogicalTest.class);

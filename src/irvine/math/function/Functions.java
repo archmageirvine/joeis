@@ -169,8 +169,12 @@ public final class Functions {
   public static final Function2 VALUATION = new Valuation();
   /** Valuation function. */
   public static final Function2 ORD = VALUATION; // Convenient synonym
-  /** Jacobi function. */
+  /** Jacobi symbol. */
   public static final Function2 JACOBI = new Jacobi();
+  /** Pochhammer symbol. */
+  public static final Function2 POCHHAMMER = new Pochhammer();
+  /** Falling factorial function. */
+  public static final Function2 FALLING_FACTORIAL = new FallingFactorial(); // =A008279
   /** Stirling numbers of the first kind. */
   public static final Function2 STIRLING1 = new Stirling1();
   /** Stirling numbers of the second kind. */

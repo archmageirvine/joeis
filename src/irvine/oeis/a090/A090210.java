@@ -24,12 +24,8 @@ public class A090210 extends AbstractSequence {
     this(1);
   }
 
-  private Z fallfac(final int n, final int m) {
-    return Functions.FACTORIAL.z(n).divide(Functions.FACTORIAL.z(n - m));
-  }
-
   private Z s2(final int m, final int k, final int p) {
-    final Z sum = Integers.SINGLETON.sum(m, p, r -> Z.NEG_ONE.pow(r).multiply(Binomial.binomial(p, r)).multiply(fallfac(r, m).pow(k)))
+    final Z sum = Integers.SINGLETON.sum(m, p, r -> Z.NEG_ONE.pow(r).multiply(Binomial.binomial(p, r)).multiply(Functions.FALLING_FACTORIAL.z(r, m).pow(k)))
       .multiply(Z.NEG_ONE.pow(p));
     final Z den = Functions.FACTORIAL.z(p);
     return sum.divide(den);

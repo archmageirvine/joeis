@@ -17,8 +17,7 @@ public class A067228 extends Sequence1 {
 
   @Override
   public Z next() {
-    final int n = ++mN;
-    final Z nf = Functions.FACTORIAL.z(n);
+    final Z nf = Functions.FACTORIAL.z(++mN);
     return Integers.SINGLETON.sumdiv(mN, d -> Rationals.SINGLETON.product(0, mN / d - 1, k -> new Q(Functions.FACTORIAL.z(k), Functions.FACTORIAL.z(d + k))).multiply(nf).toZ());
   }
 }

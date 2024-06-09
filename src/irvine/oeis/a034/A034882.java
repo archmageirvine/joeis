@@ -50,8 +50,7 @@ public class A034882 extends Sequence1 {
   public Z next() {
     while (true) {
       while (mA.isEmpty() || mA.first().mValue.compareTo(mF) >= 0) {
-        final int n = ++mN;
-        mF = Functions.FACTORIAL.z(n);
+        mF = Functions.FACTORIAL.z(++mN);
         mA.add(new State(mF, mN));
       }
       final State s = mA.pollFirst();

@@ -14,7 +14,6 @@ public class A020505 extends Sequence0 {
 
   @Override
   public Z next() {
-    final int n = ++mN;
-    return Functions.CYCLOTOMIC.z(n, Z.valueOf(-6));
+    return Functions.CYCLOTOMIC.z(++mN, -6);
   }
 }

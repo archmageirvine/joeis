@@ -33,8 +33,7 @@ public class A057596 extends AbstractSequence {
 
   @Override
   public Z next() {
-    final int n = ++mN;
-    mE.add(new Q(mSeq1.next().abs(), Functions.FACTORIAL.z(n)));
+    mE.add(new Q(mSeq1.next().abs(), Functions.FACTORIAL.z(++mN)));
     return RING.coeff(RING.one(), mE, mN).multiply(Functions.FACTORIAL.z(mN)).toZ();
   }
 }

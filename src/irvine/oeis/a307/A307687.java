@@ -1,6 +1,6 @@
 package irvine.oeis.a307;
 
-import irvine.math.cyclotomic.CyclotomicPolynomials;
+import irvine.math.polynomial.CyclotomicPolynomials;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;

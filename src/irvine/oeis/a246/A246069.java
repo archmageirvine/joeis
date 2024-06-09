@@ -15,8 +15,7 @@ public class A246069 extends Sequence1 {
 
   @Override
   public Z next() {
-    final int n = ++mN;
-    final Z nf = Functions.FACTORIAL.z(n);
+    final Z nf = Functions.FACTORIAL.z(++mN);
     Z s = Z.ZERO;
     for (final Z p : Jaguar.factor(mN).toZArray()) {
       final int m = mN / p.intValueExact();

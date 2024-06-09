@@ -2,7 +2,7 @@ package irvine.oeis.a230;
 
 import java.util.TreeSet;
 
-import irvine.math.cyclotomic.CyclotomicPolynomials;
+import irvine.math.polynomial.CyclotomicPolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;

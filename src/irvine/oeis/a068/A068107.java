@@ -15,8 +15,7 @@ public class A068107 extends Sequence1 {
 
   @Override
   public Z next() {
-    final int n = ++mN;
-    final Z fn = Functions.FACTORIAL.z(n);
+    final Z fn = Functions.FACTORIAL.z(++mN);
     return Integers.SINGLETON.sum(1, mN, k -> fn.divide(Functions.FACTORIAL.z(k)).multiply(Functions.MOBIUS.i(k)));
   }
 }

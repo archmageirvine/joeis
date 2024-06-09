@@ -2,7 +2,7 @@ package irvine.oeis.a051;
 
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.math.cyclotomic.CyclotomicPolynomials;
+import irvine.math.polynomial.CyclotomicPolynomials;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.a000.A000045;
 import irvine.oeis.memory.MemorySequence;

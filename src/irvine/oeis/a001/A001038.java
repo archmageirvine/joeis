@@ -16,8 +16,7 @@ public class A001038 extends Sequence1 {
 
   @Override
   public Z next() {
-    final int n = ++mN;
-    final CycleIndex domain = new GeneralLinearGroup<>(n, new GaloisField(2)).cycleIndex();
+    final CycleIndex domain = new GeneralLinearGroup<>(++mN, new GaloisField(2)).cycleIndex();
     return domain.invertible(domain);
   }
 }

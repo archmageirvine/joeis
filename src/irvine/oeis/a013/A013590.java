@@ -1,6 +1,6 @@
 package irvine.oeis.a013;
 
-import irvine.math.cyclotomic.CyclotomicPolynomials;
+import irvine.math.polynomial.CyclotomicPolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;

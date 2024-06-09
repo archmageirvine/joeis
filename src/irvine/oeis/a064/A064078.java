@@ -14,8 +14,7 @@ public class A064078 extends Sequence1 {
 
   @Override
   public Z next() {
-    final int n = ++mN;
-    final Z c = Functions.CYCLOTOMIC.z(n, Z.valueOf(2));
+    final Z c = Functions.CYCLOTOMIC.z(++mN, 2);
     return c.divide(c.gcd(Z.valueOf(mN)));
   }
 }

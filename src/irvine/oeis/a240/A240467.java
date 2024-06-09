@@ -1,6 +1,6 @@
 package irvine.oeis.a240;
 
-import irvine.math.cyclotomic.CyclotomicPolynomials;
+import irvine.math.polynomial.CyclotomicPolynomials;
 import irvine.oeis.recur.PeriodicSequence;
 
 /**

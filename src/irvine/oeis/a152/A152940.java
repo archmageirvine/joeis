@@ -1,6 +1,6 @@
 package irvine.oeis.a152;
 
-import irvine.math.cyclotomic.CyclotomicPolynomials;
+import irvine.math.polynomial.CyclotomicPolynomials;
 import irvine.math.polynomial.PolynomialUtils;
 import irvine.oeis.FilterSequence;
 import irvine.oeis.a056.A056911;

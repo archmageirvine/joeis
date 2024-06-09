@@ -33,8 +33,7 @@ public class A064645 extends Sequence0 {
 
   @Override
   public Z next() {
-    final int n = ++mN;
-    final int t = Functions.TRINV.i(n) + 1;
+    final int t = Functions.TRINV.i(++mN) + 1;
     return mpw((t - 1) * (t + 2) / 2 - mN, mN - t * (t - 1) / 2);
   }
 }

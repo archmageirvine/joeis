@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.math.cyclotomic.CyclotomicPolynomials;
+import irvine.math.polynomial.CyclotomicPolynomials;
 import irvine.oeis.Sequence0;
 
 /**

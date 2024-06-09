@@ -15,8 +15,7 @@ public class A056042 extends Sequence1 {
 
   @Override
   public Z next() {
-    final int n = ++mN;
-    final Z f = Functions.FACTORIAL.z(n);
+    final Z f = Functions.FACTORIAL.z(++mN);
     while (f.mod(Functions.FACTORIAL.z(mK).square()).isZero()) {
       ++mK;
     }

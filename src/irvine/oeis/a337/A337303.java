@@ -16,7 +16,6 @@ public class A337303 extends Sequence0 {
 
   @Override
   public Z next() {
-    final int n = ++mN;
-    return mSeq1.next().multiply(Functions.FACTORIAL.z(n));
+    return mSeq1.next().multiply(Functions.FACTORIAL.z(++mN));
   }
 }

@@ -13,8 +13,7 @@ public class A008274 extends A008270 {
 
   @Override
   public Z next() {
-    final int n = ++mN;
-    final Z nf = Functions.FACTORIAL.z(n);
+    final Z nf = Functions.FACTORIAL.z(++mN);
     Z sum = super.next();
     for (int k = 1; k <= mN; ++k) {
       sum = sum.subtract(nf.multiply(k).divide(Functions.FACTORIAL.z(mN - k)));

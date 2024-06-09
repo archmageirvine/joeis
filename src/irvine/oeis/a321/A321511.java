@@ -23,7 +23,6 @@ public class A321511 extends AbstractSequence {
 
   @Override
   public Z next() {
-    final int n = ++mN;
-    return mSeq1.next().subtract(Functions.FACTORIAL.z(n));
+    return mSeq1.next().subtract(Functions.FACTORIAL.z(++mN));
   }
 }

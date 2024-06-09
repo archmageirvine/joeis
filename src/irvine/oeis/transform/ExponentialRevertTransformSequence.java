@@ -45,8 +45,7 @@ public class ExponentialRevertTransformSequence extends AbstractSequence {
 
   @Override
   public Z next() {
-    final int n = ++mN;
-    mPoly.add(new Q(mSeq.next(), Functions.FACTORIAL.z(n)));
+    mPoly.add(new Q(mSeq.next(), Functions.FACTORIAL.z(++mN)));
     return RING.reversion(mPoly, mN).coeff(mN).multiply(Functions.FACTORIAL.z(mN)).toZ();
   }
 }

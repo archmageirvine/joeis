@@ -1,4 +1,4 @@
-package irvine.math.cyclotomic;
+package irvine.math.polynomial;
 
 import junit.framework.TestCase;
 

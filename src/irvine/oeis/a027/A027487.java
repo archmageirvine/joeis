@@ -12,19 +12,15 @@ public class A027487 extends A027477 {
   /** Construct the sequence. */
   public A027487() {
     super(2);
+    step();
   }
 
   private int mN = 1;
 
-  {
-    step();
-  }
-
   @Override
   public Z next() {
     step();
-    final int n = ++mN;
-    final Z f = Functions.FACTORIAL.z(n).pow(power());
+    final Z f = Functions.FACTORIAL.z(++mN).pow(power());
     return mMatrix.get(mN - 1, 1).multiply(f).toZ();
   }
 }

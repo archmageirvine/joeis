@@ -16,8 +16,7 @@ public class A000833 extends Sequence1 {
 
   @Override
   public Z next() {
-    final int n = ++mN;
-    final CycleIndex ans = new GeneralLinearGroup<>(n, new GaloisField(2)).cycleIndex();
+    final CycleIndex ans = new GeneralLinearGroup<>(++mN, new GaloisField(2)).cycleIndex();
     return ans.apply(3)
       .add(ans.apply(2, 3).multiply(3))
       .add(ans.apply(1, 1, 3).multiply(2))

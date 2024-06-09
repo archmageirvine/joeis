@@ -14,8 +14,7 @@ public class A019328 extends Sequence1 {
 
   @Override
   public Z next() {
-    final int n = ++mN;
-    return Functions.CYCLOTOMIC.z(n, Z.valueOf(10));
+    return Functions.CYCLOTOMIC.z(++mN, 10);
   }
 }
 

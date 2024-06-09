@@ -23,7 +23,6 @@ public class A088389 extends AbstractSequence {
 
   @Override
   public Z next() {
-    final int n = ++mN;
-    return mSeq1.next().divide(Functions.FACTORIAL.z(n));
+    return mSeq1.next().divide(Functions.FACTORIAL.z(++mN));
   }
 }

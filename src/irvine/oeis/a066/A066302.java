@@ -23,8 +23,7 @@ public class A066302 extends Sequence0 {
 
   @Override
   public Z next() {
-    final int n = ++mN;
-    mB.add(new Q(mA.next(), Functions.FACTORIAL.z(n)));
+    mB.add(new Q(mA.next(), Functions.FACTORIAL.z(++mN)));
     final Polynomial<Q> s = RING.series(RING.x(), RING.onePlusXToTheN(1), mN);
     return RING.substitute(mB, s, mN).coeff(mN).multiply(Functions.FACTORIAL.z(mN)).toZ();
   }

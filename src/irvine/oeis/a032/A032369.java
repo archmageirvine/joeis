@@ -15,8 +15,7 @@ public class A032369 extends Sequence1 {
 
   @Override
   public Z next() {
-    final int n = ++mN;
-    mBarnesG = mBarnesG.multiply(Functions.FACTORIAL.z(n));
+    mBarnesG = mBarnesG.multiply(Functions.FACTORIAL.z(++mN));
     final int n2 = mN * mN;
     if ((mN & 1) == 0) {
       return Functions.FACTORIAL.z(n2 / 2 - 1).shiftLeft(n2 - mN).divide(mBarnesG);

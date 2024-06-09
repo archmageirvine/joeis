@@ -1,10 +1,9 @@
-package irvine.math.cyclotomic;
+package irvine.math.polynomial;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction1;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
-import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**

@@ -24,8 +24,7 @@ public class A027481 extends A027477 {
   @Override
   public Z next() {
     step();
-    final int n = ++mN;
-    final Z f = Functions.FACTORIAL.z(n).pow(power());
+    final Z f = Functions.FACTORIAL.z(++mN).pow(power());
     return mMatrix.get(mN - 1, mN - 3).multiply(f).toZ();
   }
 }

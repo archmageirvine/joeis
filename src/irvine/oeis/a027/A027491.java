@@ -11,20 +11,16 @@ public class A027491 extends A027478 {
 
   {
     setOffset(3);
+    step();
+    step();
   }
 
   private int mN = 2;
 
-  {
-    step();
-    step();
-  }
-
   @Override
   public Z next() {
     step();
-    final int n = ++mN;
-    final Z f = Functions.FACTORIAL.z(n).pow(power());
+    final Z f = Functions.FACTORIAL.z(++mN).pow(power());
     return mMatrix.get(mN - 1, 2).multiply(f).toZ();
   }
 }

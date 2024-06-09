@@ -14,8 +14,7 @@ public class A052140 extends Sequence0 {
 
   @Override
   public Z next() {
-    final int n = ++mN;
-    final Z nf = Functions.FACTORIAL.z(n);
+    final Z nf = Functions.FACTORIAL.z(++mN);
     Z sum = Z.ZERO;
     for (int k = 0; k <= mN; ++k) {
       sum = sum.add(nf.divide(Functions.FACTORIAL.z(k)));

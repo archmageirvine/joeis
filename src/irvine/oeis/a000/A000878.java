@@ -18,7 +18,6 @@ public class A000878 extends Sequence1 {
 
   @Override
   public Z next() {
-    final int n = ++mN;
-    return new GeneralLinearGroup<>(n, new GaloisField(2)).cycleIndex().deBruijn(ZGL3);
+    return new GeneralLinearGroup<>(++mN, new GaloisField(2)).cycleIndex().deBruijn(ZGL3);
   }
 }

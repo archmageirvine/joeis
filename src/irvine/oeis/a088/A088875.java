@@ -16,10 +16,7 @@ public class A088875 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A088875() {
-    super(1, 1, new LambdaSequence(1, n -> {
-      final long x = -n;
-      return Functions.CYCLOTOMIC.z(n, Z.valueOf(x));
-    }), PRIME);
+    super(1, 1, new LambdaSequence(1, n -> Functions.CYCLOTOMIC.z(n, -n)), PRIME);
   }
 
   @Override

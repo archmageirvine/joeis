@@ -6,7 +6,7 @@ import irvine.oeis.a076.A076390;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A243340 Decimal expansion of 4*L/(3*Pi), a constant related to the asymptotic evaluation of the number of primes of the form a^2+b^4, where L is Gauss&apos; lemniscate constant.
+ * A243340 Decimal expansion of 4*L/(3*Pi), a constant related to the asymptotic evaluation of the number of primes of the form a^2+b^4, where L is Gauss' lemniscate constant.
  * Formula:
  * @author Georg Fischer
  */

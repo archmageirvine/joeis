@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070287.
+ * A070299 Numbers n such that sigma(n+x) = sigma(n-x) for some 0 &lt; x &lt; n.
  * @author Sean A. Irvine
  */
 public class A070299 extends Sequence1 {

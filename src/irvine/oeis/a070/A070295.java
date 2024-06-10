@@ -7,7 +7,7 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A070287.
+ * A070295 Smallest composite number such that there are exactly n primes less than it (and coprime to it) which do not divide it, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A070295 extends A048865 {

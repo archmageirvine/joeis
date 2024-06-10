@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070287.
+ * A070326 Upper triangular array giving for each (x,y) the minimum modulus m such that x^3+y^3 is not congruent to a cube (mod m).
  * @author Sean A. Irvine
  */
 public class A070326 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070287.
+ * A070311 Numbers n such that sopfr(n) and d(n) are both perfect numbers.
  * @author Sean A. Irvine
  */
 public class A070311 extends Sequence1 {

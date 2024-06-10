@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterSequence;
 
 /**
- * A070287.
+ * A070330 Nontrivial numbers in which suffixing or inserting a 0 anywhere yields only composite numbers.
  * @author Sean A. Irvine
  */
 public class A070330 extends FilterSequence {

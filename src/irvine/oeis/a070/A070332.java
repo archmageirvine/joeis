@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A070287.
+ * A070332 Smallest nontrivial power of n ending in n and greater than n; or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A070332 extends Sequence2 {

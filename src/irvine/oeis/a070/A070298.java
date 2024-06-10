@@ -8,7 +8,7 @@ import irvine.oeis.a045.A045763;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A070287.
+ * A070298 Let Unrel(m) = number of unrelated numbers less than m; then a(n) = number of values of m for which Unrel(m) = n.
  * @author Sean A. Irvine
  */
 public class A070298 extends Sequence1 implements Conjectural {

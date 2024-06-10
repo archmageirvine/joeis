@@ -6,7 +6,7 @@ import irvine.oeis.a062.A062089;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A241017 Decimal expansion of SierpiŇĄski&apos;s S constant, which appears in a series involving the function r(n), defined as the number of representations of the positive integer n as a sum of two squares. This S constant is the usual SierpiŇĄski K constant divided by
+ * A241017 Decimal expansion of Sierpi\u0144ski's S constant, which appears in a series involving the function r(n), defined as the number of representations of the positive integer n as a sum of two squares. This S constant is the usual Sierpi\u0144ski K constant divided by Pi.
  * Formula:
  * @author Georg Fischer
  */

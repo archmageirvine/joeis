@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000010;
 
 /**
- * A070287.
+ * A070320 Max( phi(k) : k=1,2,3,...,n ).
  * @author Sean A. Irvine
  */
 public class A070320 extends A000010 {

@@ -7,7 +7,7 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A070287.
+ * A070297 Smallest number with n unrelated numbers (numbers which are neither coprime nor a divisor), or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A070297 extends Sequence0 {

@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A070520.
+ * A070527 Numbers k such that cyclotomic(k, 2^k) is a prime number.
  * @author Sean A. Irvine
  */
 public class A070527 extends FilterPositionSequence {

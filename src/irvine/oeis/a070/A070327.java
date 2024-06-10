@@ -6,7 +6,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a051.A051248;
 
 /**
- * A070287.
+ * A070327 Smallest nontrivial power of n starting with n and greater than n.
  * @author Sean A. Irvine
  */
 public class A070327 extends Sequence2 {

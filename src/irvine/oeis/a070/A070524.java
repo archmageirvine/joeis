@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070520.
+ * A070524 Value of n-th cyclotomic polynomial at phi(n).
  * @author Sean A. Irvine
  */
 public class A070524 extends Sequence1 {

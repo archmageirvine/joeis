@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070520.
+ * A070526 Value of n-th cyclotomic polynomial at 2^n.
  * @author Sean A. Irvine
  */
 public class A070526 extends Sequence1 {

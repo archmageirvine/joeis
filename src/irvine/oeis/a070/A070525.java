@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A070520.
+ * A070525 Numbers n such that n-th cyclotomic polynomial evaluated at phi(n) is a prime number.
  * @author Sean A. Irvine
  */
 public class A070525 extends FilterPositionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a005.A005597;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A271780 Decimal expansion of Product_{p odd prime} 1-2/(p*(p-1)), a constant related to Artin&apos;s conjecture in the context of quadratic fields.
+ * A271780 Decimal expansion of Product_{p odd prime} 1-2/(p*(p-1)), a constant related to Artin's conjecture in the context of quadratic fields.
  * Formula:
  * @author Georg Fischer
  */

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070287.
+ * A070328 Numbers in which inserting, prefixing or suffixing a 1 anywhere yields only composite numbers.
  * @author Sean A. Irvine
  */
 public class A070328 extends Sequence1 {

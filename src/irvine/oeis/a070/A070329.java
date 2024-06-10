@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.FilterSequence;
 
 /**
- * A070287.
+ * A070329 Nontrivial numbers in which inserting, prefixing or suffixing a 1 anywhere yields only composite numbers.
  * @author Sean A. Irvine
  */
 public class A070329 extends FilterSequence {

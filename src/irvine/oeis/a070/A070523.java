@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A070520.
+ * A070523 Numbers k such that cyclotomic(k, prime(k)) is a prime number.
  * @author Sean A. Irvine
  */
 public class A070523 extends FilterPositionSequence {

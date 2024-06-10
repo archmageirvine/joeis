@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A070287.
+ * A070322 Number of primitive n X n real (0,1)-matrices.
  * @author Sean A. Irvine
  */
 public class A070322 extends Sequence0 {

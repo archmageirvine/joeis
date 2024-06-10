@@ -7,7 +7,7 @@ import irvine.oeis.a048.A048865;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A070287.
+ * A070296 Let sphi(k) = number of primes less than k and coprime to it (A048865); then a(n) = number of integers m with sphi(m) = n.
  * @author Sean A. Irvine
  */
 public class A070296 extends Sequence0 {

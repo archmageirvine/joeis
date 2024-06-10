@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.FilterSequence;
 
 /**
- * A070520.
+ * A070520 Prime numbers of form p=Cyclotomic[n,n].
  * @author Sean A. Irvine
  */
 public class A070520 extends FilterSequence {

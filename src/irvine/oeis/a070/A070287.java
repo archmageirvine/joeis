@@ -10,7 +10,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**
- * A070287.
+ * A070287 Numbers n such that the equation lcm(sigma(x),phi(x))=n has solutions.
  * @author Sean A. Irvine
  */
 public class A070287 extends Sequence1 implements Conjectural {

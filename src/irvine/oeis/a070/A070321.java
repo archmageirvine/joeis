@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005117;
 
 /**
- * A070287.
+ * A070321 Greatest squarefree number &lt;= n.
  * @author Sean A. Irvine
  */
 public class A070321 extends A005117 {

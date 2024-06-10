@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070287.
+ * A070306 a(n) = 2*phi(n)/2^omega(n).
  * @author Sean A. Irvine
  */
 public class A070306 extends Sequence1 {

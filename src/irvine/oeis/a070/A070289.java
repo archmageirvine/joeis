@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A070287.
+ * A070289 Number of distinct values of multinomial coefficients ( n / (p1, p2, p3, ...) ) where (p1, p2, p3, ...) runs over all partitions of n.
  * @author Sean A. Irvine
  */
 public class A070289 extends Sequence0 {

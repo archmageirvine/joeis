@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A070287.
+ * A070301 Numbers n such that sum of first 2n primes is prime.
  * @author Sean A. Irvine
  */
 public class A070301 extends A000040 {

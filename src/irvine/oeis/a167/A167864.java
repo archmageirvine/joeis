@@ -5,7 +5,7 @@ import irvine.oeis.a005.A005597;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A167864 Decimal expansion of Selberg-Delange constant Product_{prime p &gt; 2} (1 + 1/(p(p-2)))
+ * A167864 Decimal expansion of Selberg-Delange constant Product_{prime p &gt; 2} (1 + 1/(p(p-2))).
  * Formula:
  * @author Georg Fischer
  */

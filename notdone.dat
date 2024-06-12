@@ -2401,3 +2401,5 @@ A070214 Maximal number of occupied cells in all monotonic matrices of order n
 A070259 Array f(m,n) read by antidiagonals: f(m,n) = minimal number of 0's in a 2m X 2n (0,1) matrix that contains no m X n submatrix of 1's (m >= 1, n >= 1).
 A070300 Minimal number of 0's in a 2n X 2n (0,1) matrix that contains no n X n submatrix of 1's
 A070731 Size of largest conjugacy class in the group GL(n,2).
+A070735 Let r, s, t be three permutations of the set { 1, 2, 3, ..., n }; a(n) = minimal value of Sum_{i=1..n} r(i)*s(i)*t(i)
+A070736 Let r, s, t, u be four permutations of the set { 1, 2, 3, ..., n }; a(n) = minimal value of Sum_{i=1..n} r(i)*s(i)*t(i)*u(i).

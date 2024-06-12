@@ -69,7 +69,7 @@ public class Polytriamond extends PolyGen<Triangle, CoordSet2T> {
     for (int k = 0; k < dx.length; ++k) {
       final int x = mCs.getX(i) + dx[k];
       final int y = mCs.getY(i) + dy[k] * d;
-      if (((CoordSet2T) mCs).exists(x, y)) {
+      if (((CoordSet2T) mCs).contains(x, y)) {
         return;
       }
     }

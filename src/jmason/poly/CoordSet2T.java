@@ -19,10 +19,10 @@ import irvine.util.Pair;
  */
 public class CoordSet2T extends CoordSetGen<Triangle> {
 
-  private int mMinX;
-  private int mMinY;
-  private int mMaxX;
-  private int mMaxY;
+  int mMinX;
+  int mMinY;
+  int mMaxX;
+  int mMaxY;
   private int mWidth;
   private int mHeight;
   private final boolean mFlagFree;
@@ -205,8 +205,8 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
     }
   }
 
-  boolean exists(final int x, final int y) {
-    return ((TriangleSet) mSet).exists(x, y);
+  boolean contains(final int x, final int y) {
+    return ((TriangleSet) mSet).contains(x, y);
   }
 
   @Override

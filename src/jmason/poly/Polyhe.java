@@ -68,7 +68,7 @@ public class Polyhe extends PolyGen<Triangle, CoordSet2T> {
     for (int k = 0; k < deltas[0].length; ++k) {
       final int x = xi + deltas[0][k];
       final int y = yi + deltas[1][k] * d;
-      if (((CoordSet2T) mCs).exists(x, y)) {
+      if (((CoordSet2T) mCs).contains(x, y)) {
         //System.out.println("Failed on collision");
         return;
       }

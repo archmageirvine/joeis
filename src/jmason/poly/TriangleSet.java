@@ -37,7 +37,7 @@ public class TriangleSet extends ElementSet<Triangle> {
     }
   }
 
-  boolean exists(final int x, final int y) {
+  boolean contains(final int x, final int y) {
     for (int i = 0; i < mSize; ++i) {
       if (mSet[i].getX() == x && mSet[i].getY() == y) {
         return true;

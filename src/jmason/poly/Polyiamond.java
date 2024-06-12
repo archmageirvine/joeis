@@ -1,7 +1,11 @@
 package jmason.poly;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+
+import irvine.util.Point;
 
 /**
  * An integral polyiamond.
@@ -67,7 +71,7 @@ public class Polyiamond extends PolyGen<Triangle, CoordSet2T> {
     final int x = mCs.getX(i) + dx;
     final int y = mCs.getY(i) + dy;
 
-    if (((CoordSet2T) mCs).exists(x, y)) {
+    if (((CoordSet2T) mCs).contains(x, y)) {
       return;
     }
     final String t = x + " " + y;
@@ -100,6 +104,70 @@ public class Polyiamond extends PolyGen<Triangle, CoordSet2T> {
     final CoordSet2T rot120 = rot60.rotate60();
     final String c120s = rot120.makeString();
     return rot120.mirrorVert().makeString().equals(c120s) || rot120.mirrorHoriz().makeString().equals(c120s);
+  }
+
+  private boolean up(final int x, final int y) {
+    return ((x + (y + 1) / 2) & 1) == 0;
+  }
+
+  private boolean canEscape(final Set<Point> knownEscapes, final HashSet<Point> tried, final CoordSet2T coords, final int minX, final int maxX, final int minY, final int maxY, final int x, final int y) {
+    if (x < minX || x > maxX || y < minY || y > maxY) {
+      return true;
+    }
+    if (coords.contains(x, y)) {
+      return false; // this point is part of the animal, search no further
+    }
+    final Point p = new Point(x, y);
+    if (knownEscapes.contains(p)) {
+      return true;
+    }
+    if (tried.add(p)) {
+      // We are considering a new point
+      if (canEscape(knownEscapes, tried, coords, minX, maxX, minY, maxY, x - 1, y)) {
+        knownEscapes.addAll(tried);
+        tried.remove(p);
+        return true;
+      }
+      if (canEscape(knownEscapes, tried, coords, minX, maxX, minY, maxY, x + 1, y)) {
+        knownEscapes.addAll(tried);
+        tried.remove(p);
+        return true;
+      }
+      if (canEscape(knownEscapes, tried, coords, minX, maxX, minY, maxY, x, y + (up(x, y) ? -2 : 2))) {
+        knownEscapes.addAll(tried);
+        tried.remove(p);
+        return true;
+      }
+      tried.remove(p);
+    }
+    return false;
+  }
+
+  /**
+   * Test if this polyiamond contains one or more holes.
+   * @return true if the polyiamond contains a hole
+   */
+  public boolean isHoly() {
+    if (mCs.mSize < 9) {
+      return false;
+    }
+    final CoordSet2T coords = (CoordSet2T) mCs;
+    final int minX = coords.mMinX;
+    final int maxX = coords.mMaxX;
+    final int minY = coords.mMinY;
+    final int maxY = coords.mMaxY;
+    final Set<Point> knownEscapes = new HashSet<>();
+    for (int x = minX + 1; x < maxX; ++x) {
+      for (int y = minY; y <= maxY; y += 2) {
+        if (!coords.contains(x, y)) {
+          // (x, y) is vacant, so test if we can escape to outside the animal
+          if (!canEscape(knownEscapes, new HashSet<>(), coords, minX, maxX, minY, maxY, x, y)) {
+            return true;
+          }
+        }
+      }
+    }
+    return false;
   }
 
   /**

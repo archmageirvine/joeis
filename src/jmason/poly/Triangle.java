@@ -24,12 +24,4 @@ public class Triangle extends Element<Triangle> {
   protected Triangle copy(final boolean flip) {
     return flip ? new Triangle(getX(), getY(), -mColour) : new Triangle(getX(), getY(), mColour);
   }
-
-  int compare(final Triangle s) {
-    final int c = Integer.compare(getX(), s.getX());
-    if (c != 0) {
-      return c;
-    }
-    return Integer.compare(getY(), s.getY());
-  }
 }

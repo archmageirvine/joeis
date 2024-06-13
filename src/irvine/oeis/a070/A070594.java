@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
- * A070566.
+ * A070594 Numbers in A070938 that set a new record for digital sums and ending digits.
  * @author Sean A. Irvine
  */
 public class A070594 extends A070938 {

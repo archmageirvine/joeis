@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070566.
+ * A070566 "Compact" numbers: see reference for definition.
  * @author Sean A. Irvine
  */
 public class A070566 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070763.
+ * A070763 Numbers n such that sigma(n) is a power of prime (of the form p^a, p prime, a&gt;=1).
  * @author Sean A. Irvine
  */
 public class A070763 extends Sequence1 {

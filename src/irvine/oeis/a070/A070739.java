@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070655.
+ * A070739 Primes of form 2^x + 2^y + 1.
  * @author Sean A. Irvine
  */
 public class A070739 extends Sequence1 {

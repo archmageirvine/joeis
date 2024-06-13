@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070655.
+ * A070737 Smallest number x such that the first n cyclotomic polynomials evaluated at x are primes.
  * @author Sean A. Irvine
  */
 public class A070737 extends Sequence1 {

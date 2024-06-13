@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069828.
+ * A070555 Sum of positive integers k, where k &lt;= n and gcd(k,2n+1) = gcd(k+1,2n+1).
  * @author Sean A. Irvine
  */
 public class A070555 extends Sequence1 {

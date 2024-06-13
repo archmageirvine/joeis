@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070655.
+ * A070742 a(n) = index of the (presumably) last palindrome in the 'Reverse and Add' trajectory of n, or -1 if this number is not finite, or 0 if no palindrome exists.
  * @author Sean A. Irvine
  */
 public class A070742 extends Sequence1 {

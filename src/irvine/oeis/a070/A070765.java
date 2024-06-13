@@ -8,7 +8,7 @@ import jmason.poly.Polyiamond;
 import jmason.poly.PolyiamondCounter;
 
 /**
- * A030223.
+ * A070765 Number of polyiamonds with n cells, without holes.
  * @author Sean A. Irvine
  */
 public class A070765 extends Sequence1 {

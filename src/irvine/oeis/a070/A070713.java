@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a028.A028839;
 
 /**
- * A070655.
+ * A070713 Integers whose sum of digits as well as product of digits is a nonzero square.
  * @author Sean A. Irvine
  */
 public class A070713 extends FilterSequence {

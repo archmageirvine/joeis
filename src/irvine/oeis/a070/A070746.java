@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070655.
+ * A070746 Numbers k such that k 1's followed by k is a prime.
  * @author Sean A. Irvine
  */
 public class A070746 extends Sequence1 {

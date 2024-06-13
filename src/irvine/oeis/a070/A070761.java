@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A046038 Numbers k for which [ (4/3)^k ] is composite.
+ * A070761 Values of floor((4/3)^n) that are composite.
  * @author Sean A. Irvine
  */
 public class A070761 extends Sequence1 {

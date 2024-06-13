@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070655.
+ * A070760 Numbers k such that k*rev(k) is a square different from k^2, where rev=A004086, decimal reversal.
  * @author Sean A. Irvine
  */
 public class A070760 extends Sequence1 {

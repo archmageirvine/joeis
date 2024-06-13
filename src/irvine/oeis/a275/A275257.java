@@ -14,6 +14,6 @@ public class A275257 extends LambdaArray {
 
   /** Construct the sequence. */
   public A275257() {
-    super(1, 1, 1, 1, (x, n) -> Integers.SINGLETON.sum(1, x, k -> Z.valueOf(Functions.GCD.i(n, k) == 1 ? 1 : 0)));
+    super(1, 1, 1, 1, (x, n) -> Integers.SINGLETON.sum(1, x, k -> Functions.GCD.l(n, k) == 1 ? Z.ONE : Z.ZERO));
   }
 }

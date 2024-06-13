@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070655.
+ * A070756 Numbers n such that the Diophantine equation x^4+y^5=n^4 has solutions.
  * @author Sean A. Irvine
  */
 public class A070756 extends Sequence1 {

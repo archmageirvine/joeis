@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A070655.
+ * A070749 Nearest integer to sin(prime(n)), prime=A000040.
  * @author Sean A. Irvine
  */
 public class A070749 extends A000040 {

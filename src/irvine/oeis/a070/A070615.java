@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A070566.
+ * A070615 Minimal difference between any two digits of n in base 10.
  * @author Sean A. Irvine
  */
 public class A070615 extends AbstractSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070655.
+ * A070733 Size of largest conjugacy class in A_n, the alternating group on n symbols.
  * @author Sean A. Irvine
  */
 public class A070733 extends Sequence1 {

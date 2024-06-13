@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A046038 Numbers k for which [ (4/3)^k ] is composite.
+ * A070762 n for which floor((4/3)^n) is prime.
  * @author Sean A. Irvine
  */
 public class A070762 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A070655.
+ * A070729 Common British Royal Mint coinage (in pence) from smallest physical size to largest, as of May 13 2002.
  * @author Sean A. Irvine
  */
 public class A070729 extends FiniteSequence {

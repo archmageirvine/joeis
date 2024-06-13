@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002379;
 
 /**
- * A070655.
+ * A070758 Values of floor((3/2)^n) that are composite.
  * @author Sean A. Irvine
  */
 public class A070758 extends FilterSequence {

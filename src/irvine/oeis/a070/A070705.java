@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000961;
 import irvine.oeis.a051.A051451;
 
 /**
- * A070655.
+ * A070705 LCM of first n prime powers modulo next prime power.
  * @author Sean A. Irvine
  */
 public class A070705 extends Combiner {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000292;
 
 /**
- * A070655.
+ * A070755 Squarefree tetrahedral numbers.
  * @author Sean A. Irvine
  */
 public class A070755 extends FilterSequence {

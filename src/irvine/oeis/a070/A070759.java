@@ -7,7 +7,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a002.A002379;
 
 /**
- * A070655.
+ * A070759 n for which floor((3/2)^n) is prime.
  * @author Sean A. Irvine
  */
 public class A070759 extends FilterPositionSequence {

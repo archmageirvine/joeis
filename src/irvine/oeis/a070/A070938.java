@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a005.A005349;
 
 /**
- * A070566.
+ * A070938 Harshad numbers which terminate in their digital sum.
  * @author Sean A. Irvine
  */
 public class A070938 extends FilterSequence {

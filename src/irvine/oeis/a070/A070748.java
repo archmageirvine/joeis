@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A070655.
+ * A070748 a(n) = signum(sin(prime(n))), where signum=A057427, prime=A000040.
  * @author Sean A. Irvine
  */
 public class A070748 extends A000040 {

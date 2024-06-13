@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070655.
+ * A070757 Number of ways to write 4n as a sum of 4 primes.
  * @author Sean A. Irvine
  */
 public class A070757 extends Sequence1 {

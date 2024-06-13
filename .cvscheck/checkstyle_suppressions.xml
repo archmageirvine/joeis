@@ -70,6 +70,7 @@
     <suppress checks="ParameterNumber" files=".*QuadrangulationMin3Scanner.java"/>
     <suppress checks="ParameterNumber" files=".*QuadrangulationNf4Scanner.java"/>
     <suppress checks="ParameterNumber" files=".*UserLevelProc.java"/>
+    <suppress checks="ParameterNumber" files=".*Polyiamond.java"/>
     <suppress checks="" files=".*GrammarLexer.java"/>
     <suppress checks="" files=".*GrammarParser.java"/>
     <suppress checks="" files="org/teherba/*"/>

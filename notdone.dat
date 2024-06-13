@@ -2403,3 +2403,6 @@ A070300 Minimal number of 0's in a 2n X 2n (0,1) matrix that contains no n X n s
 A070731 Size of largest conjugacy class in the group GL(n,2).
 A070735 Let r, s, t be three permutations of the set { 1, 2, 3, ..., n }; a(n) = minimal value of Sum_{i=1..n} r(i)*s(i)*t(i)
 A070736 Let r, s, t, u be four permutations of the set { 1, 2, 3, ..., n }; a(n) = minimal value of Sum_{i=1..n} r(i)*s(i)*t(i)*u(i).
+A070766 Number of polyhexes with n cells that tile the plane.
+A070767 Number of polyhexes with n cells that do not tile the plane
+A070768 Number of polyhexes with n cells without holes that do not tile the plane

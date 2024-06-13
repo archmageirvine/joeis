@@ -5,6 +5,8 @@ import java.util.Set;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
+import irvine.util.bumper.Bumper;
+import irvine.util.bumper.BumperFactory;
 
 /**
  * A058961 Number of possible sets {sum(T) : T contained in S}, where S is a multiset of elements of Z/nZ.
@@ -14,18 +16,6 @@ public class A058961 extends Sequence1 {
 
   private final Set<Z> mSubsetSums = new HashSet<>();
   private int mN = 0;
-
-  private boolean bump(final int[] set) {
-    for (int k = set.length - 1; k >= 0; --k) {
-      if (++set[k] < mN) {
-        for (int j = k + 1; j < set.length; ++j) {
-          set[j] = set[k];
-        }
-        return true;
-      }
-    }
-    return false;
-  }
 
   private Z search(final int[] multiset, final int pos, final int sum) {
     if (pos >= multiset.length) {
@@ -42,10 +32,11 @@ public class A058961 extends Sequence1 {
   @Override
   public Z next() {
     final int[] multiset = new int[mN++];
+    final Bumper bumper = BumperFactory.weaklyIncreasing(mN - 1);
     mSubsetSums.clear();
     do {
       mSubsetSums.add(search(multiset, 0, 0));
-    } while (bump(multiset));
+    } while (bumper.bump(multiset));
     return Z.valueOf(mSubsetSums.size());
   }
 }

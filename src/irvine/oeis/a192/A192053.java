@@ -4,6 +4,8 @@ import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.oeis.a013.A013560;
 import irvine.util.array.LongDynamicLongArray;
+import irvine.util.bumper.Bumper;
+import irvine.util.bumper.BumperFactory;
 
 /**
  * A192053 Maximum probability of permutation from bad "shuffle" times n^n.
@@ -25,6 +27,7 @@ public class A192053 extends A013560 {
     final LongDynamicLongArray counts = new LongDynamicLongArray();
     final int[] deck = new int[++mN];
     final int[] p = new int[mN];
+    final Bumper bumper = BumperFactory.range(0, mN - 1);
     do {
       // Apply Phi shuffle
       IntegerUtils.identity(deck);
@@ -44,7 +47,7 @@ public class A192053 extends A013560 {
       } else {
         counts.increment(packed);
       }
-    } while (bump(p, mN));
+    } while (bumper.bump(p));
     long maxCount = 0;
     for (long k = 0; k < counts.length(); ++k) {
       maxCount = Math.max(maxCount, counts.get(k));

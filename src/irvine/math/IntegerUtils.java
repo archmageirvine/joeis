@@ -304,23 +304,6 @@ public final class IntegerUtils {
   }
 
   /**
-   * Increment an array of values up to a maximum value.
-   * @param a array
-   * @param min minimum value
-   * @param max maximum value
-   * @return true if incrementing was successful
-   */
-  public static boolean bump(final int[] a, final int min, final int max) {
-    for (int k = a.length - 1; k >= 0; --k) {
-      if (++a[k] <= max) {
-        return true;
-      }
-      a[k] = min;
-    }
-    return false;
-  }
-
-  /**
    * Convert a collection to a primitive array.
    * @param c collection
    * @return long array

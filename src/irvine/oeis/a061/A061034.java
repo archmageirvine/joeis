@@ -8,6 +8,8 @@ import irvine.math.IntegerUtils;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
+import irvine.util.bumper.Bumper;
+import irvine.util.bumper.BumperFactory;
 
 /**
  * A061034 Maximal number of subgroups in an Abelian group with n elements.
@@ -20,28 +22,15 @@ public class A061034 extends Sequence1 {
   // Subgroups calculation after Max Alekseyev
   // See: http://home.gwu.edu/~maxal/gpscripts/
 
-  private boolean bump(final int[] c, final int[] limits) {
-    assert limits.length == c.length;
-    for (int k = c.length - 1; k >= 0; --k) {
-      if (++c[k] <= limits[k]) {
-        for (int j = k + 1; j < c.length; ++j) {
-          c[j] = c[k];
-        }
-        return true;
-      }
-      c[k] = 0;
-    }
-    return false;
-  }
-
   // Number of subgroups of the group C_{p^a1} x C_{p^a2} x ... C_{p^ak} where
   // p is prime and a=[a1,a2,...,ak] with 1 <= a1 <= a2 <= ... <= ak
   private Z countSubgroups(final Z p, final int[] a, int[] b) {
     Arrays.sort(a);
+    final Bumper bumper = BumperFactory.range(a);
     Z r = Z.ZERO;
     if (IntegerUtils.isZero(b)) {
       final int[] c = new int[a.length];
-      while (bump(c, a)) {
+      while (bumper.bump(c)) {
         r = r.add(countSubgroups(p, a, c));
       }
       return r.add(1);

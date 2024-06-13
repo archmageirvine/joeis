@@ -4,6 +4,8 @@ import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.a007.A007770;
+import irvine.util.bumper.Bumper;
+import irvine.util.bumper.BumperFactory;
 
 /**
  * A068571 Number of happy numbers &lt;= 10^n.
@@ -28,23 +30,12 @@ public class A068571 extends A007770 {
     return s;
   }
 
-  private boolean bump(final int[] v, final int max) {
-    for (int k = v.length - 1; k >= 0; --k) {
-      if (++v[k] <= max) {
-        for (int j = k + 1; j < v.length; ++j) {
-          v[j] = v[k];
-        }
-        return true;
-      }
-    }
-    return false;
-  }
-
   @Override
   public Z next() {
     ++mN;
     Z sum = Z.ZERO;
     final int[] v = new int[9];
+    final Bumper bumper = BumperFactory.weaklyIncreasing(mN);
     do {
       final int[] d = new int[9];
       for (int k = 0; k < d.length; ++k) {
@@ -53,7 +44,7 @@ public class A068571 extends A007770 {
       if (isHappy(Z.valueOf(f(d)))) {
         sum = sum.add(Binomial.multinomial(mN, d).divide(Functions.FACTORIAL.z(v[0])));
       }
-    } while (bump(v, mN));
+    } while (bumper.bump(v));
     return sum.add(1);
   }
 }

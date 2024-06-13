@@ -9,6 +9,8 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
+import irvine.util.bumper.Bumper;
+import irvine.util.bumper.BumperFactory;
 
 /**
  * A068596 Number of 4-ary Lyndon words whose trace and subtrace are both 0 mod 4.
@@ -35,21 +37,10 @@ public class A068596 extends Sequence1 {
     this(4, 0, 0);
   }
 
-  private boolean bump(final int[] v, final int max) {
-    for (int k = v.length - 1; k >= 0; --k) {
-      if (++v[k] <= max) {
-        for (int j = k + 1; j < v.length; ++j) {
-          v[j] = v[k];
-        }
-        return true;
-      }
-    }
-    return false;
-  }
-
   // Max has a different way of computing this in Pari
   private Z s(final int n, final int m, final int t, final int s, final int tm, final int sm) {
     Z sum = Z.ZERO;
+    final Bumper bumper = BumperFactory.weaklyIncreasing(m);
     final int[] v = new int[n];
     final int[] c = new int[m + 1];
     Arrays.fill(v, 1);
@@ -64,7 +55,7 @@ public class A068596 extends Sequence1 {
         IntegerPartition.toCountForm(v, c);
         sum = sum.add(Binomial.multinomial(n, c));
       }
-    } while (bump(v, m));
+    } while (bumper.bump(v));
     return sum;
   }
 

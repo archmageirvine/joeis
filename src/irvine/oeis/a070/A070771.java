@@ -10,7 +10,7 @@ import irvine.util.bumper.BumperFactory;
  * A070771.
  * @author Sean A. Irvine
  */
-public class A070770 extends Sequence0 {
+public class A070771 extends Sequence0 {
 
   private final Bumper mBumper = BumperFactory.weaklyDecreasing();
   private int[] mA = null;
@@ -18,7 +18,7 @@ public class A070770 extends Sequence0 {
   @Override
   public Z next() {
     if (mA == null) {
-      mA = new int[3];
+      mA = new int[4];
     } else {
       mBumper.bump(mA);
     }

@@ -2,12 +2,13 @@ package irvine.oeis.a061;
 
 import java.util.Arrays;
 
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
+import irvine.util.bumper.Bumper;
+import irvine.util.bumper.BumperFactory;
 
 /**
  * A061559 Array read by antidiagonals: T(k,d) = number of different hyperplanes in d-space with integer coefficients in set {-k,...,-1,0,1,...,k}.
@@ -20,6 +21,7 @@ public class A061559 extends Sequence1 {
 
   // Number of n-tuples (a,b,...) with 1<=a,b,...<=k and gcd(a,b,...)=1
   private Z m(final int n, final int m) {
+    final Bumper bumper = BumperFactory.range(1, m);
     final int[] tuple = new int[n];
     Arrays.fill(tuple, 1);
     long cnt = 0;
@@ -27,7 +29,7 @@ public class A061559 extends Sequence1 {
       if (Functions.GCD.i(tuple) == 1) {
         ++cnt;
       }
-    } while (IntegerUtils.bump(tuple, 1, m));
+    } while (bumper.bump(tuple));
     return Z.valueOf(cnt);
   }
 

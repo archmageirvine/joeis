@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
+import irvine.util.bumper.Bumper;
+import irvine.util.bumper.BumperFactory;
 
 /**
  * Factory for the creation of graph objects.
@@ -276,6 +278,8 @@ public final class GraphFactory {
     if (nodes.bitLength() >= Integer.SIZE - 1) {
       throw new UnsupportedOperationException();
     }
+    final Bumper bumper = BumperFactory.range(0, n - 1);
+    final Bumper signBumper = BumperFactory.range(-1, 1);
     final Graph g = create(nodes.intValueExact());
     //System.out.println(g.order() + " vertices");
     final int[] k = new int[dimensions]; // nodes
@@ -299,8 +303,8 @@ public final class GraphFactory {
             g.addEdge(v, u);
           }
         }
-      } while (IntegerUtils.bump(delta, -1, 1));
-    } while (IntegerUtils.bump(k, 0, n - 1));
+      } while (signBumper.bump(delta));
+    } while (bumper.bump(k));
     return g;
   }
 }

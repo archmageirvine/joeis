@@ -6,6 +6,8 @@ import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
+import irvine.util.bumper.Bumper;
+import irvine.util.bumper.BumperFactory;
 
 /**
  * A069671 Smallest n-digit triangular number with minimum digit sum.
@@ -18,21 +20,10 @@ public class A069671 extends Sequence1 {
   private static final int[] S = {1, 3, 6, 9};
   private int mD = 0;
 
-  private boolean bump(final int[] a, final int max) {
-    for (int k = a.length - 1, i = 0; k >= 0; --k, ++i) {
-      if (++a[k] + i < max) {
-        for (int j = k + 1; j < a.length; ++j) {
-          a[j] = a[j - 1] + 1;
-        }
-        return true;
-      }
-    }
-    return false;
-  }
-
   @Override
   public Z next() {
     ++mD;
+    final Bumper bumper = BumperFactory.increasing(mD);
     for (final int s : S) {
       final IntegerPartition part = new IntegerPartition(s);
       int[] q;
@@ -52,7 +43,7 @@ public class A069671 extends Sequence1 {
                 best = x;
               }
             }
-          } while (bump(pos, mD));
+          } while (bumper.bump(pos));
         }
       }
       if (!best.isZero()) {

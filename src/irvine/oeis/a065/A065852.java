@@ -4,6 +4,8 @@ import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 import irvine.util.Permutation;
+import irvine.util.bumper.Bumper;
+import irvine.util.bumper.BumperFactory;
 
 /**
  * A065852 Let u be any string of 3 digits from {0,...,n-1}; let f(u) = number of distinct primes, not beginning with 0, formed by permuting the digits of u; then a(n) = max_u f(u).
@@ -24,25 +26,14 @@ public class A065852 extends Sequence2 {
     this(3);
   }
 
-  private boolean bump(final int[] a, final int max) {
-    for (int k = a.length - 1; k >= 0; --k) {
-      if (++a[k] <= max) {
-        for (int j = k + 1; j < a.length; ++j) {
-          a[j] = a[k];
-        }
-        return true;
-      }
-    }
-    return false;
-  }
-
   @Override
   public Z next() {
     ++mN;
     long max = 0;
+    final Bumper bumper = BumperFactory.weaklyIncreasing(mN - 1);
     final int[] digits = new int[mDigits];
     // can immediately start with a bump as all 0s is never prime
-    while (bump(digits, mN - 1)) {
+    while (bumper.bump(digits)) {
       long cnt = 0;
       final Permutation perm = new Permutation(digits, false);
       int[] p;

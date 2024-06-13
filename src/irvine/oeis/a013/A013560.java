@@ -5,6 +5,8 @@ import java.util.Arrays;
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
+import irvine.util.bumper.Bumper;
+import irvine.util.bumper.BumperFactory;
 
 /**
  * A013560 Cardinality of the permutation (k, k-1, ..., 2, 1)(n, n-1, ..., k+1) in an exchange shuffle applied in all n^n possible ways to (1,2,...,n).
@@ -28,21 +30,12 @@ public class A013560 extends Sequence1 {
     return deck;
   }
 
-  protected boolean bump(final int[] p, final int n) {
-    for (int k = 0; k < p.length; ++k) {
-      if (++p[k] < n) {
-        return true;
-      }
-      p[k] = 0;
-    }
-    return false;
-  }
-
   @Override
   public Z next() {
     final int[] expected = rho(++mN);
     final int[] deck = new int[mN];
     final int[] p = new int[mN];
+    final Bumper bumper = BumperFactory.range(0, mN - 1);
     long cnt = 0;
     do {
       // Apply Phi shuffle
@@ -55,7 +48,7 @@ public class A013560 extends Sequence1 {
       if (Arrays.equals(deck, expected)) {
         ++cnt;
       }
-    } while (bump(p, mN));
+    } while (bumper.bump(p));
     return Z.valueOf(cnt);
   }
 }

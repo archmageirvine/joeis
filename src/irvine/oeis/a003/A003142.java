@@ -9,6 +9,8 @@ import java.util.List;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 import irvine.util.Triple;
+import irvine.util.bumper.Bumper;
+import irvine.util.bumper.BumperFactory;
 
 /**
  * A003142 Largest subset of 3 X 3 X ... X 3 cube (in n dimensions) with no 3 points collinear.
@@ -20,6 +22,7 @@ public class A003142 extends Sequence0 {
   private int mLimit = 1;
   private int mMax = 0;
   private List<List<Triple<Integer>>> mPointToLines = null;
+  private final Bumper mSignBumper = BumperFactory.range(-1, 1);
 
   private Triple<Integer> line(int p, int q, int r) {
     if (q < p) {
@@ -50,16 +53,6 @@ public class A003142 extends Sequence0 {
       }
     }
     return new Triple<>(p, q, r);
-  }
-
-  private boolean bump(final int[] delta) {
-    for (int k = 0; k < delta.length; ++k) {
-      if (++delta[k] <= 1) {
-        return true;
-      }
-      delta[k] = -1;
-    }
-    return false;
   }
 
   private void pointToCoords(final int[] coords, int point) {
@@ -120,7 +113,7 @@ public class A003142 extends Sequence0 {
           }
         }
         subtract(coords, delta);
-      } while (bump(delta));
+      } while (mSignBumper.bump(delta));
     }
     //System.out.println("Total lines " + lines.size());
     return lines;

@@ -5,6 +5,8 @@ import java.util.Arrays;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicByteArray;
+import irvine.util.bumper.Bumper;
+import irvine.util.bumper.BumperFactory;
 
 /**
  * A004147 Number of n-state Turing machines which halt.
@@ -77,17 +79,6 @@ public class A004147 extends Sequence1 {
     return state == 0;
   }
 
-  private static boolean bump(final int[] machine, final int limit) {
-    int pos = machine.length - 1;
-    while (pos >= 0) {
-      if (++machine[pos] < limit) {
-        return true;
-      }
-      machine[pos--] = 0;
-    }
-    return false;
-  }
-
   @Override
   public Z next() {
     ++mN;
@@ -95,12 +86,12 @@ public class A004147 extends Sequence1 {
     mQueueWorkspace = new int[mN + 1];
     long c = 0;
     final int[] machine = new int[2 * mN];
-    final int limit = 4 * (mN + 1);
+    final Bumper bumper = BumperFactory.range(0, 4 * (mN + 1) - 1);
     do {
       if (halts(machine, 1000)) { // heuristic, 1000 is definitely large enough for a(3)
         ++c;
       }
-    } while (bump(machine, limit));
+    } while (bumper.bump(machine));
     return Z.valueOf(c);
   }
 }

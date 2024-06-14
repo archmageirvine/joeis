@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000111;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A373433 a(n) = A000111(n) * A000142(n). Row sums of A373434.
+ * A373433 allocated for Peter Luschny.
  * @author Georg Fischer
  */
 public class A373433 extends SimpleTransformSequence {

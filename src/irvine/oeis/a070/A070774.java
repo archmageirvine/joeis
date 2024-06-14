@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A069890.
+ * A070774 Odd numbers n such that p(2m)-2p(m)=n has no solution (p(m) = m-th prime).
  * @author Sean A. Irvine
  */
 public class A070774 extends FilterPositionSequence {

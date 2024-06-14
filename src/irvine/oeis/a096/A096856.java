@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A096855 a(n) = A062401(2^n + 1).
+ * A096856 a(n) = A062402(2^n+1).
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

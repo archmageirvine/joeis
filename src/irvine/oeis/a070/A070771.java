@@ -7,7 +7,7 @@ import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
 
 /**
- * A070771.
+ * A070771 b+c+d+e where b&gt;=c&gt;=d&gt;=e&gt;=0 ordered by b then c then d then e.
  * @author Sean A. Irvine
  */
 public class A070771 extends Sequence0 {

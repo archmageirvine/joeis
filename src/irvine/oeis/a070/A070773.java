@@ -8,7 +8,7 @@ import irvine.oeis.a066.A066066;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A069890.
+ * A070773 Number of solutions to p(2m)-2p(m)=2n-1, where p(m) = m-th prime.
  * @author Sean A. Irvine
  */
 public class A070773 extends Sequence1 implements Conjectural {

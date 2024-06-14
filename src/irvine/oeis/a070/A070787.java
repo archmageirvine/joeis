@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.a054.A054875;
 
 /**
- * A054875.
+ * A070787 Number of triangles with sides whose squares are integers and with positive integer area and longest side of length sqrt(n).
  * @author Sean A. Irvine
  */
 public class A070787 extends A054875 {

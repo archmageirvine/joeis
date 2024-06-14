@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Triple;
 
 /**
- * A055592.
+ * A070783 Square of longest side of triangles with sides whose squares are integers and with positive integer area, ordered by longest side, then second longest side and finally shortest side.
  * @author Sean A. Irvine
  */
 public class A070783 extends Sequence1 {

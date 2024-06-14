@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A337166 Sum_{n&gt;=0} a(n) * x^n / (n!)^2 = exp(1 + x - BesselI(0, 2*sqrt(x))).
+ * A337166 Sum_{n&gt;=0} a(n) * x^n / (n!)^2 = exp(1 + x - BesselI(0,2*sqrt(x))).
  * @author Georg Fischer
  */
 public class A337166 extends MultiTransformSequence {

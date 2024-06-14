@@ -2406,3 +2406,4 @@ A070736 Let r, s, t, u be four permutations of the set { 1, 2, 3, ..., n }; a(n)
 A070766 Number of polyhexes with n cells that tile the plane.
 A070767 Number of polyhexes with n cells that do not tile the plane
 A070768 Number of polyhexes with n cells without holes that do not tile the plane
+A070822 Number of Cayley graphs isomorphic to the graph of the n-dimensional cube.

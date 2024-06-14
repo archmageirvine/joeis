@@ -29,7 +29,7 @@ public class A070788 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      Z t = Z.valueOf(++mN);
+      final Z t = Z.valueOf(++mN);
       mSeen.remove(t);
       if (is(t)) {
         return t;

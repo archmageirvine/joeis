@@ -11,9 +11,9 @@ import irvine.oeis.DirectSequence;
 public class A276086 extends AbstractSequence implements DirectSequence {
 
   private int mN;
-  //                                   ip = 0   1   2    3     4
-  private long[] mPrimes = new long[] {2L, 3L, 5L, 7L, 11L, 13L, 17L, 19L, 23L, 29L, 31L, 37L, 41L};
-  private long[] mPrimorials = new long[] {1L, 2L, 6L, 30L, 210L, 2310L, 30030L, 510510L, 9699690L, 223092870L, 6469693230L, 200560490130L, 7420738134810L}; // primorial base cannot unambigously represent n &gt;= 2100 = 10*7*5*3*2
+  //                         ip = 0   1   2    3     4
+  private final long[] mPrimes = {2L, 3L, 5L, 7L, 11L, 13L, 17L, 19L, 23L, 29L, 31L, 37L, 41L};
+  private final long[] mPrimorials = {1L, 2L, 6L, 30L, 210L, 2310L, 30030L, 510510L, 9699690L, 223092870L, 6469693230L, 200560490130L, 7420738134810L}; // primorial base cannot unambigously represent n &gt;= 2100 = 10*7*5*3*2
 
   /** Construct the sequence. */
   public A276086() {
@@ -34,14 +34,14 @@ public class A276086 extends AbstractSequence implements DirectSequence {
     if (n <= 2) {
       return Z.valueOf(n + 1);
     }
-    if (n >= 7420738134810L) {
-      throw new UnsupportedOperationException("Ambiguous primorial base representation");
-    }
+//    if (n >= 7420738134810L) {
+//      throw new UnsupportedOperationException("Ambiguous primorial base representation");
+//    }
     Z result = Z.ONE;
     int ip = mPrimorials.length;
     while (n > 0) {
       final long pm = mPrimorials[--ip];
-      long digit = n / pm;
+      final long digit = n / pm;
       n -= pm * digit;
       // System.out.println("ip=" + ip + ", n=" + n + ", pm=" + pm + ", digit=" + digit + ", mPrimes[" + ip + "]=" + mPrimes[ip] + ", result=" + result);
       if (digit != 0) {

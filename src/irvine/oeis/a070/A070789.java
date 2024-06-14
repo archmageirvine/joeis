@@ -48,7 +48,7 @@ public class A070789 extends Sequence1 {
       return mTargetTrajectory;
     }
     while (true) {
-      Z t = Z.valueOf(++mN);
+      final Z t = Z.valueOf(++mN);
       if (is(t)) {
         return t;
       }

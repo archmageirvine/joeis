@@ -37,6 +37,10 @@ public final class Functions {
   public static final Function1 PRIMORIAL = new Primorial(); // =A034386
   /** Factorial base representation. */
   public static final Function1 FACTORIAL_BASE = new FactorialBase(); // =A007623
+  /** Primorial base log representation. */
+  public static final Function1 PRIMORIAL_BASE_LOG = new PrimorialBaseLog(); // =A276085
+  /** Primorial base exp representation. */
+  public static final Function1 PRIMORIAL_BASE_EXP = new PrimorialBaseExp(); // =A276086
   /** Product of the specified number of primes. */
   public static final Function1 PRIMORIAL_COUNT = new PrimorialCount();  // =A002110
   /** Fibonacci function. */

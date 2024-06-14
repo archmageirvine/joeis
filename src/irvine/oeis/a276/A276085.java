@@ -1,7 +1,5 @@
 package irvine.oeis.a276;
 
-import irvine.factor.factor.Jaguar;
-import irvine.factor.util.FactorSequence;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -23,25 +21,16 @@ public class A276085 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    if (n.equals(Z.ONE)) {
-      return Z.ZERO;
-    }
-    Z sum = Z.ZERO;
-    final FactorSequence fs = Jaguar.factor(n);
-    for (final Z p : fs.toZArray()) {
-      final int iz = Functions.PRIME_PI.i(p);
-      sum = sum.add(Functions.PRIMORIAL_COUNT.z(iz - 1).multiply(fs.getExponent(p)));
-    }
-    return sum;
+    return Functions.PRIMORIAL_BASE_LOG.z(n);
   }
 
   @Override
   public Z a(final int n) {
-    return a(Z.valueOf(n));
+    return Functions.PRIMORIAL_BASE_LOG.z(n);
   }
 
   @Override
   public Z next() {
-    return a(Z.valueOf(++mN));
+    return Functions.PRIMORIAL_BASE_LOG.z(++mN);
   }
 }

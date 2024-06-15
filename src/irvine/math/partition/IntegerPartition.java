@@ -189,6 +189,25 @@ public final class IntegerPartition {
   }
 
   /**
+   * Test if the first partition majorizes the second partition.
+   * @param u partition
+   * @param v partition
+   * @return true if <code>u &gt;= v</code>
+   */
+  public static boolean ge(final int[] u, final int[] v) {
+    int su = 0;
+    int sv = 0;
+    for (int k = 0; k < Math.min(u.length, v.length); ++k) {
+      su += u[k];
+      sv += v[k];
+      if (su < sv) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  /**
    * Build an index from partitions to index in the default ordering.
    * @param n number to partition
    * @return mapping

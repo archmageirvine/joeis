@@ -1,5 +1,6 @@
 package irvine.oeis.a003;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence0;
@@ -14,17 +15,17 @@ public class A003188 extends Sequence0 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return n.xor(n.divide2());
+    return Functions.GRAY_ENCODE.z(n);
   }
 
   @Override
   public Z a(final int n) {
-    return a(Z.valueOf(n));
+    return a(n);
   }
 
   @Override
   public Z next() {
     mN = mN.add(1);
-    return mN.xor(mN.divide2());
+    return Functions.GRAY_ENCODE.z(mN);
   }
 }

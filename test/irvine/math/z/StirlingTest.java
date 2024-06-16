@@ -16,10 +16,6 @@ public class StirlingTest extends TestCase {
     assertEquals(Z.valueOf(-7), Stirling.generalizedFirstKind(3, 2, 1));
   }
 
-  public void testAssociatedFirstKind() {
-    assertEquals(Z.valueOf(183783600), Stirling.associatedFirstKind(17, 8));
-  }
-
   public void testAssociatedSecondKind() {
     assertEquals(Z.valueOf(20415995028L), Stirling.associatedSecondKind(1, 17, 8));
     assertEquals(Z.valueOf(91891800), Stirling.associatedSecondKind(2, 17, 8));

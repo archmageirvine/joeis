@@ -37,6 +37,8 @@ public final class Functions {
   public static final Function1 PRIMORIAL = new Primorial(); // =A034386
   /** Factorial base representation. */
   public static final Function1 FACTORIAL_BASE = new FactorialBase(); // =A007623
+  /** Primorial base representation. */
+  public static final Function1 PRIMORIAL_BASE = new PrimorialBase(); // =A049345
   /** Primorial base log representation. */
   public static final Function1 PRIMORIAL_BASE_LOG = new PrimorialBaseLog(); // =A276085
   /** Primorial base exp representation. */
@@ -61,6 +63,10 @@ public final class Functions {
   public static final Function1 SIGMA0 = new Sigma0(); // =A000005
   /** Number of divisors function. */
   public static final Function1 TAU = SIGMA0; // =A000005; Convenient synonym
+  /** Number of unitary divisors function. */
+  public static final Function1 USIGMA0 = new UnitarySigma0(); // =A034444
+  /** Sum of unitary divisors function. */
+  public static final Function1 USIGMA1 = new UnitarySigma(); // =A034448
   /** Number of distinct prime divisors function. */
   public static final Function1 OMEGA = new Omega(); // =A001221
   /** Number of distinct prime divisors counted with multiplicity function. */
@@ -89,6 +95,10 @@ public final class Functions {
   public static final Function1 POD = new ProductOfDivisors();
   /** Chowla function. */
   public static final Function1 CHOWLA = new Chowla(); // =A048050
+  /** Arithmetic derivative. */
+  public static final Function1 ARD = new ArithmeticDerivative(); // =A003415
+  /** Liouville lambda function. */
+  public static final Function1 LIOUVILLE_LAMBDA = new LiouvilleLambda(); // =A008836
   /** Carmichael lambda function. */
   public static final Function1 CARMICHAEL_LAMBDA = new CarmichaelLambda(); // =A002322
   /** Variant of the Carmichael lambda function. */
@@ -123,6 +133,10 @@ public final class Functions {
   public static final Function1 PARTITIONS = new Partitions(); // =A000041
   /** Next power of two larger than the given number. */
   public static final Function1 NEXT_POWER_OF_2 = new NextPowerOf2(); // =A062383
+  /** Gray encoding of a number. */
+  public static final Function1 GRAY_ENCODE = new GrayEncode(); // =A003188
+  /** Gray decoding of a number. */
+  public static final Function1 GRAY_DECODE = new GrayDecode(); // =A006068
 
   // Two argument functions with default first parameter
 
@@ -183,10 +197,14 @@ public final class Functions {
   public static final Function2 STIRLING1 = new Stirling1();
   /** Stirling numbers of the second kind. */
   public static final Function2 STIRLING2 = new Stirling2();
+  /** Associated Stirling numbers of the first kind. */
+  public static final Function2 ASSOCIATED_STIRLING1 = new AssociatedStirling1(); // =A000276
   /** Eulerian numbers of the second kind. */
   public static final Function2 EULERIAN2 = new Eulerian2();
   /** Cyclotomic function. */
   public static final Function2 CYCLOTOMIC = new Cyclotomic();
+  /** Lah numbers. */
+  public static final Function2 LAH = new Lah(); // =A008297
 
 
   // Aggregating functions

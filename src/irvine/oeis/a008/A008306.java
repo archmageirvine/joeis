@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.math.z.Stirling;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
@@ -19,7 +19,7 @@ public class A008306 extends Sequence2 {
       ++mN;
       mM = 1;
     }
-    return Stirling.associatedFirstKind(mN, mM);
+    return Functions.ASSOCIATED_STIRLING1.z(mN, mM);
   }
 }
 

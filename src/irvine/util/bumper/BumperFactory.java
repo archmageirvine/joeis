@@ -103,6 +103,16 @@ public final class BumperFactory {
   }
 
   /**
+   * Like <code>range</code> but incrementing the 0th element first.
+   * @param min minimum element value
+   * @param max maximum element value
+   * @return bumper
+   */
+  public static Bumper leftRange(final int min, final int max) {
+    return new LeftRangeBumper(min, max);
+  }
+
+  /**
    * Strictly increasing bumper.
    * @param max maximum element value
    * @return bumper

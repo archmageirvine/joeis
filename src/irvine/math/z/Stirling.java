@@ -11,11 +11,7 @@ public final class Stirling {
   private Stirling() { }
 
   private static final HashMap<String, Z> G_FIRST_KIND = new HashMap<>();
-  private static final HashMap<String, Z> A_FIRST_KIND = new HashMap<>();
   private static final HashMap<String, Z> A_SECOND_KIND = new HashMap<>();
-  static {
-    A_FIRST_KIND.put("1_1", Z.ZERO);
-  }
 
   /**
    * Compute generalized Stirling numbers of the first kind.
@@ -40,34 +36,6 @@ public final class Stirling {
     }
     final Z r = generalizedFirstKind(l, n - 1, m).subtract(generalizedFirstKind(l, n - 1, m - 1).multiply(l + n - 1));
     G_FIRST_KIND.put(key, r);
-    return r;
-  }
-
-
-  /**
-   * Return the associated Stirling number of the first kind.
-   * Uses cached recursion.
-   *
-   * @param n upper index
-   * @param m lower index
-   * @return associated Stirling number of the first kind
-   */
-  public static Z associatedFirstKind(final long n, final long m) {
-    if (m < 0 || m > n) {
-      return Z.ZERO;
-    }
-    if (m == 0) {
-      return n == 0 ? Z.ONE : Z.ZERO;
-    }
-    final String key = n + "_" + m;
-    final Z d = A_FIRST_KIND.get(key);
-    if (d != null) {
-      return d;
-    }
-    final long a = n - 1;
-    final Z r = associatedFirstKind(a, m).add(associatedFirstKind(a - 1, m - 1))
-      .multiply(a);
-    A_FIRST_KIND.put(key, r);
     return r;
   }
 

@@ -512,8 +512,7 @@ public final class ZUtils {
     final List<Z> res = new ArrayList<>();
     Z m = n;
     do {
-      final int n1 = --b;
-      final Z[] qr = m.divideAndRemainder(Functions.FACTORIAL.z(n1));
+      final Z[] qr = m.divideAndRemainder(Functions.FACTORIAL.z(--b));
       res.add(qr[0]);
       m = qr[1];
     } while (b > 1);

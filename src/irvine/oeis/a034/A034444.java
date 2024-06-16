@@ -1,6 +1,6 @@
 package irvine.oeis.a034;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
@@ -15,7 +15,7 @@ public class A034444 extends Sequence1 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return Jaguar.factor(n).unitarySigma0();
+    return Functions.USIGMA0.z(n);
   }
 
   @Override

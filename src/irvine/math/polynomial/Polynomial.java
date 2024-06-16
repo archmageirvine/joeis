@@ -21,6 +21,19 @@ public class Polynomial<E> extends ArrayList<E> {
    * @param coeffs integer coefficients
    * @return polynomial over integers
    */
+  public static Polynomial<Z> create(final int... coeffs) {
+    final Polynomial<Z> res = new Polynomial<>("x", Z.ZERO, Z.ONE);
+    for (final long v : coeffs) {
+      res.add(Z.valueOf(v));
+    }
+    return res;
+  }
+
+  /**
+   * Helper convenience method for the common task of creating an integer polynomial.
+   * @param coeffs integer coefficients
+   * @return polynomial over integers
+   */
   public static Polynomial<Z> create(final long... coeffs) {
     final Polynomial<Z> res = new Polynomial<>("x", Z.ZERO, Z.ONE);
     for (final long v : coeffs) {

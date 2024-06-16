@@ -1,5 +1,6 @@
 package irvine.oeis.a006;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
@@ -19,35 +20,17 @@ public class A006068 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z next() {
-    long t = ++mN;
-    long r = 0;
-    while (t != 0) {
-      r ^= t;
-      t >>>= 1;
-    }
-    return Z.valueOf(r);
+    return Functions.GRAY_DECODE.z(++mN);
   }
 
   @Override
   public Z a(final int n) {
-    long t = n;
-    long r = 0;
-    while (t != 0) {
-      r ^= t;
-      t >>>= 1;
-    }
-    return Z.valueOf(r);
+    return Functions.GRAY_DECODE.z(n);
   }
 
   @Override
   public Z a(final Z n) {
-    Z t = n;
-    Z r = Z.ZERO;
-    while (!t.isZero()) {
-      r = r.xor(t);
-      t = t.shiftRight(1);
-    }
-    return r;
+    return Functions.GRAY_DECODE.z(n);
   }
 }
 

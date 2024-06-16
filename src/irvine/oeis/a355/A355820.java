@@ -17,6 +17,6 @@ public class A355820 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A355820() {
-    super(1, n -> (Z.ONE.equals(Functions.GCD.z(A003961.a(n), Functions.PRIMORIAL_BASE_EXP.z(n))) ? Z.ONE : Z.ZERO));
+    super(1, n -> Z.ONE.equals(Functions.GCD.z(A003961.a(n), Functions.PRIMORIAL_BASE_EXP.z(n))) ? Z.ONE : Z.ZERO);
   }
 }

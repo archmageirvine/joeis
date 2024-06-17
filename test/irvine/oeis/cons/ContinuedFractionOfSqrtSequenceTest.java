@@ -35,7 +35,7 @@ public class ContinuedFractionOfSqrtSequenceTest extends TestCase {
     assertEquals(Z.ONE, seq.next());
     assertEquals(Z.TWO, seq.next());
     assertEquals(Z.ONE, seq.next());
-    assertEquals("[1, 2, 1, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]", Arrays.toString(seq.mPeriod));
+    assertEquals("[1, 2, 1, 10, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]", Arrays.toString(seq.mPeriod));
     assertTrue(seq.isOk());
     assertEquals(Z.ONE, seq.getDenominator());
     assertEquals(Z.FIVE, seq.getNumerator());

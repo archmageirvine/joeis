@@ -34,11 +34,11 @@ public class A000384 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return Functions.HEXAGONAL.z(mN);
+    return Functions.HEXAGONAL.z(n);
   }
 
   @Override
   public Z a(final int n) {
-    return Functions.HEXAGONAL.z(mN);
+    return Functions.HEXAGONAL.z(n);
   }
 }

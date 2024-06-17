@@ -90,7 +90,7 @@ public class AbstractSequenceTest extends TestCase {
               if (term == null) {
                 throw new NullPointerException("Unexpected null returned at position " + k);
               }
-              assertEquals("a(" + (k + 1) + ")", parts[k], term.toString());
+              assertEquals("a(" + (k + seq.getOffset()) + ")", parts[k], term.toString());
               final long timeSoFar = System.currentTimeMillis() - start;
               if (timeSoFar > TIMEOUT) {
                 System.out.println("A" + seqId + " Aborting computation at " + k + " terms due to timeout");

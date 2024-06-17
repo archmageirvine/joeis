@@ -5,8 +5,6 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.bumper.Bumper;
-import irvine.util.bumper.BumperFactory;
 import irvine.util.string.StringUtils;
 
 /**
@@ -33,11 +31,21 @@ public class A107689 extends Sequence1 {
     mDigits = Arrays.copyOf(digits, digits.length);
   }
 
+  private boolean bump(final int[] pos, final int max) {
+    for (int k = 0; k < pos.length; ++k) {
+      if (++pos[k] <= max + k) {
+        return true;
+      }
+      pos[k] = 0;
+    }
+    return false;
+  }
+
+
   @Override
   public Z next() {
     while (mA.isEmpty()) {
       ++mNumberOfOnes;
-      final Bumper bumper = BumperFactory.range(0, mNumberOfOnes);
       final int[] pos = new int[mDigits.length];
       do {
         String rep = StringUtils.rep('1', mNumberOfOnes);
@@ -48,7 +56,7 @@ public class A107689 extends Sequence1 {
         if (candidate.isProbablePrime()) {
           mA.add(candidate);
         }
-      } while (bumper.bump(pos));
+      } while (bump(pos, mNumberOfOnes));
     }
     return mA.pollFirst();
   }

@@ -20,12 +20,12 @@ public class A000330 extends Sequence0 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return Functions.PYRAMIDAL.z(mN);
+    return Functions.PYRAMIDAL.z(n);
   }
 
   @Override
   public Z a(final int n) {
-    return Functions.PYRAMIDAL.z(mN);
+    return Functions.PYRAMIDAL.z(n);
   }
 }
 

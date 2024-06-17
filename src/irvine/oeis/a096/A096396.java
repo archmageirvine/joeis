@@ -14,6 +14,6 @@ public class A096396 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A096396() {
-    super(1, n -> Integers.SINGLETON.sum(1, n, i -> LongUtils.kronecker(n, i) == +1 ? Z.ONE : Z.ZERO));
+    super(0, n -> Integers.SINGLETON.sum(0, n, i -> LongUtils.kronecker(n, i) == 1 ? Z.ONE : Z.ZERO));
   }
 }

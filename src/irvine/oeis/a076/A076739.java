@@ -15,10 +15,19 @@ public class A076739 extends AbstractSequence implements DirectSequence {
 
   private int mN;
   private final DirectSequence mSeq;
+  private final int mSeqOffset;
 
-  /** Construct the sequence. */
-  public A076739() {
-    this(0, new A000045().skip(2));
+  /**
+   * Generic constructor with parameter
+   * @param offset first index
+   * @param seq sequence
+   * @param seqOffset extra offset to apply to <code>seq</code>
+   */
+  public A076739(final int offset, final Sequence seq, final int seqOffset) {
+    super(offset);
+    mN = offset - 1;
+    mSeq = DirectSequence.create(seq);
+    mSeqOffset = seqOffset;
   }
 
   /**
@@ -27,9 +36,12 @@ public class A076739 extends AbstractSequence implements DirectSequence {
    * @param seq sequence
    */
   public A076739(final int offset, final Sequence seq) {
-    super(offset);
-    mN = offset - 1;
-    mSeq = DirectSequence.create(0, seq);
+    this(offset, seq, 0);
+  }
+
+  /** Construct the sequence. */
+  public A076739() {
+    this(0, new A000045(), 2);
   }
 
   private final MemoryFunction1<Z> mF = new MemoryFunction1<>() {
@@ -39,8 +51,16 @@ public class A076739 extends AbstractSequence implements DirectSequence {
         return Z.ONE;
       }
       Z sum = Z.ZERO;
-      for (int k = 0, term; (term = mSeq.a(k).intValueExact()) <= n; ++k) {
-        sum = sum.add(get(n - term));
+      int k = 0;
+      while (true) {
+        final int term = mSeq.a(k + mSeqOffset).intValueExact();
+        if (term > n) {
+          break;
+        }
+        if (term > 0) {
+          sum = sum.add(get(n - term));
+        }
+        ++k;
       }
       return sum;
     }

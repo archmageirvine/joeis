@@ -12,6 +12,6 @@ public class A282582 extends A076739 {
 
   /** Construct the sequence. */
   public A282582() {
-    super(0, new A000292().skip(1));
+    super(0, new A000292(), 1);
   }
 }

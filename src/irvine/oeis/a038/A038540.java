@@ -1,6 +1,7 @@
 package irvine.oeis.a038;
 
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -30,7 +31,7 @@ public class A038540 extends Sequence1 {
     final DirichletSeries ds2 = new DirichletSeries();
     for (int k = 1; k <= mN; ++k) {
       ds1.put(Z.valueOf(k), Z.ONE);
-      final int kronecker = LongUtils.kronecker(mD, k);
+      final int kronecker = Functions.KRONECKER.i(mD, k);
       if (kronecker != 0) {
         ds2.put(Z.valueOf(k), Z.valueOf(kronecker));
       }

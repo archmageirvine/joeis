@@ -93,28 +93,6 @@ public final class LongUtils {
   }
 
   /**
-   * Kronecker symbol.
-   * @param m first argument
-   * @param n second argument
-   * @return Kronecker symbol
-   */
-  public static int kronecker(final long m, final long n) {
-    if (n == -1) {
-      return m >= 0 ? 1 : -1;
-    } else if (n == 0) {
-      return m == 1 || m == -1 ? 1 : 0;
-    } else if (n == 2) {
-      if ((m & 1) == 0) {
-        return 0;
-      }
-      return (m & 7) == 1 || (m & 7) == 7 ? 1 : -1;
-    } else if ((n & 1) == 0) {
-      return kronecker(m, 2) * kronecker(m, n / 2);
-    }
-    return Functions.JACOBI.i(m, n);
-  }
-
-  /**
    * Compute the number of bits in <code>|n|</code>.
    * @param n number to take logarithm of.
    * @return base 2 logarithm of <code>|n|</code>

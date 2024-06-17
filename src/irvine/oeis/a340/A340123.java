@@ -1,6 +1,5 @@
 package irvine.oeis.a340;
 
-import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -46,7 +45,7 @@ public class A340123 extends A014076 {
     while (true) {
       final Z m = super.next();
       final int k = m.intValueExact();
-      final int js = LongUtils.kronecker(k, mJp2);
+      final int js = Functions.KRONECKER.i(k, mJp2);
       final Z val = mSeq.a(mMult * k - js);
       if (val.subtract(mMod.multiply(js)).remainder(m).isZero() && Functions.GCD.l(k, mJp2) == 1) {
         return m;

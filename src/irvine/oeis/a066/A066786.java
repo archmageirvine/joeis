@@ -14,8 +14,7 @@ public class A066786 extends Sequence1 {
 
   @Override
   public Z next() {
-    final long n1 = ++mN;
-    final Z phi = Functions.PHI.z(n1);
+    final Z phi = Functions.PHI.z(++mN);
     long k = 0;
     while (true) {
       final long n = mN + ++k;

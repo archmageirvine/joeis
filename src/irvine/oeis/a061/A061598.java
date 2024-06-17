@@ -14,8 +14,7 @@ public class A061598 extends Sequence1 {
 
   @Override
   public Z next() {
-    final long n1 = ++mN;
-    final Z c = Functions.CATALAN.z(n1);
+    final Z c = Functions.CATALAN.z(++mN);
     long k = mN;
     while (true) {
       final long n = --k;

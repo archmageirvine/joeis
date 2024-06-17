@@ -189,6 +189,8 @@ public final class Functions {
   public static final Function2 ORD = VALUATION; // Convenient synonym
   /** Jacobi symbol. */
   public static final Function2 JACOBI = new Jacobi();
+  /** Kronecker symbol. */
+  public static final Function2 KRONECKER = new Kronecker();
   /** Pochhammer symbol. */
   public static final Function2 POCHHAMMER = new Pochhammer();
   /** Falling factorial function. */

@@ -1,7 +1,7 @@
 package irvine.oeis.a226;
 // manually mult at 2022-08-01 10:35
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -15,6 +15,6 @@ public class A226162 extends Sequence0 {
 
   @Override
   public Z next() {
-    return Z.valueOf(LongUtils.kronecker(-5, ++mN));
+    return Functions.KRONECKER.z(-5, ++mN);
   }
 }

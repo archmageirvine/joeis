@@ -1,7 +1,7 @@
 package irvine.oeis.a038;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -37,7 +37,7 @@ public class A038873 extends Sequence1 {
   public Z next() {
     while (true) {
       mP = mPrime.nextPrime(mP);
-      if ((LongUtils.kronecker(mSquare, mP) == -1) ^ mPolar) {
+      if ((Functions.KRONECKER.i(mSquare, mP) == -1) ^ mPolar) {
         return Z.valueOf(mP);
       }
     }

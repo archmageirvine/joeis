@@ -3,6 +3,7 @@ package irvine.math;
 import java.math.BigInteger;
 import java.util.Arrays;
 
+import irvine.math.function.Functions;
 import junit.framework.TestCase;
 
 /**
@@ -94,10 +95,10 @@ public class LongUtilsTest extends TestCase {
   }
 
   public void testKronecker() {
-    assertEquals(0, LongUtils.kronecker(15, 15));
-    assertEquals(1, LongUtils.kronecker(-15, 2));
-    assertEquals(-1, LongUtils.kronecker(5, 2));
-    assertEquals(-1, LongUtils.kronecker(5, 3));
+    assertEquals(0, Functions.KRONECKER.i(15, 15));
+    assertEquals(1, Functions.KRONECKER.i(-15, 2));
+    assertEquals(-1, Functions.KRONECKER.i(5, 2));
+    assertEquals(-1, Functions.KRONECKER.i(5, 3));
   }
 
   public void testHurwitzClassNumber() {

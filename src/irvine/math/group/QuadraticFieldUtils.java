@@ -1,8 +1,8 @@
 package irvine.math.group;
 
-import irvine.math.LongUtils;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -130,7 +130,7 @@ public final class QuadraticFieldUtils {
       final CR a = scrd.multiply(erfc).divide(CR.valueOf(k));
       final CR b = e1(CR.PI.multiply(CR.valueOf(k * (long) k)).divide(crd));
       final CR c = a.add(b);
-      sum = sum.add(c.multiply(LongUtils.kronecker(dl, k)));
+      sum = sum.add(c.multiply(Functions.KRONECKER.i(dl, k)));
       final CR cn = sum.divide(regulator(discriminant)).divide(CR.TWO);
       if (k >= minTerms && cn.subtract(CR.valueOf(cn.floor())).compareTo(threshold) < 0) {
         return cn.round().longValueExact();

@@ -1,7 +1,7 @@
 package irvine.oeis.prime;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -36,7 +36,7 @@ public class KroneckerForm extends AbstractSequence {
   public Z next() {
     while (true) {
       mP = mFast.nextPrime(mP);
-      if (LongUtils.kronecker(mP, mModulus) == mPolar) {
+      if (Functions.KRONECKER.i(mP, mModulus) == mPolar) {
         return Z.valueOf(mP);
       }
     }

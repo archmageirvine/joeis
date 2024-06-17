@@ -1,7 +1,7 @@
 package irvine.oeis.a028;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -24,13 +24,13 @@ public class A028928 extends Sequence0 {
     while (t % 7 == 0) {
       t /= 7;
     }
-    final int kronecker = LongUtils.kronecker(-7, t);
+    final int kronecker = Functions.KRONECKER.i(-7, t);
     if (kronecker != -1) {
       return Z.ZERO;
     }
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(mN).divisors()) {
-      sum = sum.add(LongUtils.kronecker(-14, dd.longValue()));
+      sum = sum.add(Functions.KRONECKER.i(-14, dd));
     }
     return sum;
   }

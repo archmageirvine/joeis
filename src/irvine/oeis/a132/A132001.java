@@ -1,7 +1,7 @@
 package irvine.oeis.a132;
 // manually mult at 2022-07-31 10:58
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
@@ -20,7 +20,7 @@ public class A132001 extends MultiplicativeSequence {
       } else if (p.equals(Z.THREE)) {
         return Z.ONE;
       } else {
-        final Z q = p.square().multiply(LongUtils.kronecker(-3, p.longValue()));
+        final Z q = p.square().multiply(Functions.KRONECKER.i(-3, p));
         return q.pow(e + 1).subtract(1).divide(q.subtract(1));
       }
     });

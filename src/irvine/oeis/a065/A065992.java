@@ -15,8 +15,7 @@ public class A065992 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long n1 = ++mN;
-      final long m = Functions.SQRT.l(n1);
+      final long m = Functions.SQRT.l(++mN);
       final Z n = Z.valueOf(mN);
       if (n.multiply(mN + 1).divide2().subtract(Z.valueOf(m * (m + 1)).multiply(2 * m + 1).divide(6)).isSquare()) {
         return n;

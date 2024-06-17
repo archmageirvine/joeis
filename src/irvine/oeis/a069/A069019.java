@@ -14,8 +14,7 @@ public class A069019 extends Sequence0 {
 
   @Override
   public Z next() {
-    final long n1 = ++mN;
-    if (Predicates.SQUARE.is(n1)) {
+    if (Predicates.SQUARE.is(++mN)) {
       return Z.ZERO;
     }
     final Z n = Z.valueOf(mN);

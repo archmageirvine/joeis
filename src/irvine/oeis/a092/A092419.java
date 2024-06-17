@@ -1,7 +1,7 @@
 package irvine.oeis.a092;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000037;
 
@@ -19,7 +19,7 @@ public class A092419 extends A000037 {
     long p = 1;
     while (true) {
       p = mPrime.nextPrime(p);
-      if (LongUtils.kronecker(t, p) == -1) {
+      if (Functions.KRONECKER.i(t, p) == -1) {
         return Z.valueOf(p);
       }
     }

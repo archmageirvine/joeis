@@ -3,6 +3,7 @@ package irvine.oeis.a341;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.Sequence;
 import irvine.oeis.a059.A059975;
 
 /**
@@ -12,7 +13,7 @@ import irvine.oeis.a059.A059975;
 public class A341865 extends AbstractSequence {
 
   private int mN = 0;
-  private final A059975 mSeq = new A059975();
+  private final Sequence mSeq = new A059975();
 
   /** Construct the sequence. */
   public A341865() {
@@ -21,7 +22,6 @@ public class A341865 extends AbstractSequence {
 
   @Override
   public Z next() {
-    ++mN;
-    return (mN == 1) ? Z.ONE : Z.valueOf(mN).subtract(mSeq.next());
+    return Z.valueOf(++mN).subtract(mSeq.next());
   }
 }

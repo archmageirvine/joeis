@@ -13,6 +13,6 @@ public class A340094 extends DirichletInverseSequence {
 
   /** Construct the sequence. */
   public A340094() {
-    super(new A062830());
+    super(new A062830().skip());
   }
 }

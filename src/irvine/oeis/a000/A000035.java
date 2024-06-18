@@ -1,5 +1,6 @@
 package irvine.oeis.a000;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence0;
@@ -14,17 +15,17 @@ public class A000035 extends Sequence0 implements DirectSequence {
 
   @Override
   public Z next() {
-    return (++mN & 1) == 0 ? Z.ZERO : Z.ONE;
+    return Functions.PARITY.z(++mN);
   }
 
   @Override
   public Z a(final Z n) {
-    return n.testBit(0) ? Z.ONE : Z.ZERO;
+    return Functions.PARITY.z(n);
   }
 
   @Override
   public Z a(final int n) {
-    return (n & 1) == 0 ? Z.ZERO : Z.ONE;
+    return Functions.PARITY.z(n);
   }
 
 }

@@ -13,6 +13,6 @@ public class A356162 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A356162() {
-    super(0, n -> (Functions.GCD.z(n, Functions.PRIMORIAL_BASE_EXP.z(n)).equals(Z.ONE) ? Z.ONE : Z.ZERO));
+    super(0, n -> Functions.GCD.z(n, Functions.PRIMORIAL_BASE_EXP.z(n)).equals(Z.ONE) ? Z.ONE : Z.ZERO);
   }
 }

@@ -13,6 +13,6 @@ public class A373489 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A373489() {
-    super(1, n -> (n == 1 || Functions.ARD.z(n).mod(Functions.PRIMORIAL_BASE_LOG.z(n)).isZero() ? Z.ONE : Z.ZERO));
+    super(1, n -> n == 1 || Functions.ARD.z(n).mod(Functions.PRIMORIAL_BASE_LOG.z(n)).isZero() ? Z.ONE : Z.ZERO);
   }
 }

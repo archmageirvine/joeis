@@ -53,6 +53,8 @@ public final class Functions {
   public static final Function1 JACOBSTHAL = new Jacobsthal(); // =A001045
   /** Make odd (remove all powers of 2). */
   public static final Function1 MAKE_ODD = new MakeOdd(); // =A000265
+  /** Parity (0 for even, 1 for odd). */
+  public static final Function1 PARITY = new Parity(); // =A000035
   /** Euler totient function. */
   public static final Function1 PHI = new Phi(); // =A000010
   /** Euler co-totient function. */

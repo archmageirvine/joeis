@@ -14,12 +14,16 @@ public class A059678 extends Sequence2 {
   private int mN = 1;
   private int mM = 1;
 
+  Z b(final int n, final int q) {
+    return Integers.SINGLETON.sum(0, q, k -> Binomial.binomial(n - q + 1, 2L * q - n - k).multiply(Binomial.binomial(n - q + k, n - q)));
+  }
+
   @Override
   public Z next() {
     if (++mM >= mN) {
       ++mN;
       mM = 1;
     }
-    return Integers.SINGLETON.sum(0, mM, k -> Binomial.binomial(mN - mM + 1, 2L * mM - mN - k).multiply(Binomial.binomial(mN - mM + k, mN - mM)));
+    return b(mN, mM);
   }
 }

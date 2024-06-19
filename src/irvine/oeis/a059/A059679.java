@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A070837.
+ * A059679 Triangle T(n,k) giving number of fixed 3 X k polyominoes with n cells (n &gt;= 3, 1&lt;=k&lt;=n-2).
  * @author Sean A. Irvine
  */
 public class A059679 extends Sequence3 {

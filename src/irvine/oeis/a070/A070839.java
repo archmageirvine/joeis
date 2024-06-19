@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070837.
+ * A070839 Smallest number k such that k + R(k) is a multiple of 11 different from all previous cases, where R(k) is digit reversal of k (A004086).
  * @author Sean A. Irvine
  */
 public class A070839 extends Sequence1 {

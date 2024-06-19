@@ -40,14 +40,14 @@ class Partitions extends AbstractFunction1 {
   }
 
   @Override
-  public Z z(final int index) {
-    if (index < 0) {
+  public Z z(final int n) {
+    if (n < 0) {
       return Z.ZERO;
     }
-    while (mPartitions.size() <= index) {
+    while (mPartitions.size() <= n) {
       computeNext();
     }
-    return mPartitions.get(index);
+    return mPartitions.get(n);
   }
 
   @Override

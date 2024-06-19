@@ -1,7 +1,7 @@
 package irvine.oeis.a070;
 
 /**
- * A070837.
+ * A070849 Smallest prime == 1 mod (5n).
  * @author Sean A. Irvine
  */
 public class A070849 extends A070846 {

@@ -9,7 +9,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.closure.DistinctMultiplicativeClosureSequence;
 
 /**
- * A070837.
+ * A070861 Triangle of all possible distinct numbers obtained as a product of distinct numbers from 1..n.
  * @author Sean A. Irvine
  */
 public class A070861 extends Sequence0 {

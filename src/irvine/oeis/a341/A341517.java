@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A341517 a(n) = mu(A327859(n)), where mu is the M√∂bius function, A008683.
+ * A341517 a(n) = mu(A327859(n)), where mu is the M\u00f6bius function, A008683.
  * @author Georg Fischer
  */
 public class A341517 extends LambdaSequence {

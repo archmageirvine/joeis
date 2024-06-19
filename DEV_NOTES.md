@@ -115,7 +115,7 @@ the Sun Java style guide, with the following specifics:
 
 ## Implementation Hints
 
-The best option is probably to find a similar already implemented sequence
+The best option is to find a similar already implemented sequence
 as a starting point.  Simply copy the class, update the documentation
 and change the implementation.  Make sure the right package is being used;
 that is, make sure the implementation of `Axxxyyy.java` is in the `axxx`
@@ -148,25 +148,28 @@ if you're wanting to work over polynomials:
 private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 ```
 
-Actually the above variable would be better called `FIELD` rather than `RING`, but
-the above is way more common idiom in the current code.
+Actually the above variable would be better called `FIELD` rather than
+`RING`, but the above is way more common idiom in the current code.
+
+There is a set of convenient integer functions and predictates
+provided in `Functions` and `Predicates`, respectively. These provide
+a consistent interface for parameters and return value of types `int`,
+`long`, and `Z`. This makes it easier to chain functions together
+without the need for type casts.
 
 For sequences requiring stepping over primes, the `Fast` class
 provides a sieve-backed sequence of primes.  For factorization use the
 `Jaguar` class which uses a variety of strategies and will consult
 `factordb.com` in harder cases.
 
-Some sequences support verbose output.  The recommended mechanism is using the
-property `oeis.verbose` which can be accessed as
-
-```
-private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
-```
-
 Often sequences are based on triangles or other functions with
 multiple arguments.  Sometimes it is desirable to cache results of
 such functions (equivalent to Maple `remember`).  There are various
 classes like `MemoryFunction2` that can assist with this.
+
+There is a set of classes like `Dynamic<type>Array` that allow for
+dynamically increasing array lengths and `LongDynamic<type>Array`
+supporting long indices.
 
 A number of other idioms are used in the implementation of `next()`
 for a given sequence.  A common task might be to search for the next
@@ -187,4 +190,11 @@ Z next() {
 
 where depending on the complexity of the `is` test, it might be
 directly inlined into the `next()` function.
+
+Some sequences support verbose output.  The recommended mechanism is using the
+property `oeis.verbose` which can be accessed as
+
+```
+private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+```
 

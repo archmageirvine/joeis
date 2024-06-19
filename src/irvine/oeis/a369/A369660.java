@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A369660 a(n) = 1 if n&apos; is of the form 4k+2, and n&apos; has an even number of prime factors, otherwise a(n) = 0, where n&apos; stands for the arithmetic derivative of n, A003415.
+ * A369660 a(n) = 1 if n' is of the form 4k+2, and n' has an even number of prime factors, otherwise a(n) = 0, where n' stands for the arithmetic derivative of n, A003415.
  * @author Georg Fischer
  */
 public class A369660 extends LambdaSequence {

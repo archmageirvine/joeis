@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070837.
+ * A070855 Smallest prime of the form k*n^n + 1.
  * @author Sean A. Irvine
  */
 public class A070855 extends Sequence1 {

@@ -9,7 +9,7 @@ import irvine.oeis.a006.A006519;
 import irvine.oeis.a046.A046523;
 
 /**
- * A097272 Least integer with same &quot;mod 2 prime signature&quot; as n.
+ * A097272 Least integer with same "mod 2 prime signature" as n.
  * @author Georg Fischer
  */
 public class A097272 extends LambdaSequence {

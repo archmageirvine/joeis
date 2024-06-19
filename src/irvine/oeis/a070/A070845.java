@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070837.
+ * A070845 Largest n-digit number with exactly n divisors, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A070845 extends Sequence1 {

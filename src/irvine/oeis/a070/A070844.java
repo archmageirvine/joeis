@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070837.
+ * A070844 a(n) = smallest n-digit number with exactly n divisors, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A070844 extends Sequence1 {

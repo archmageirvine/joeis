@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a156.A156552;
 
 /**
- * A277022 Primorial base representation of n is rewritten as a base-2 number with each nonzero digit k replaced by a run of k 1&apos;s (followed by one extra zero if not the rightmost run of 1&apos;s) and with each 0 kept as 0.
+ * A277022 Primorial base representation of n is rewritten as a base-2 number with each nonzero digit k replaced by a run of k 1's (followed by one extra zero if not the rightmost run of 1's) and with each 0 kept as 0.
  * @author Georg Fischer
  */
 public class A277022 extends LambdaSequence {

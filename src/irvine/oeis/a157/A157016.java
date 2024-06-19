@@ -4,7 +4,7 @@ package irvine.oeis.a157;
 import irvine.oeis.transform.EulerTransform;
 
 /**
- * A157016 Number of graphs with n vertices such that a bipartite connected component doesn&apos;t exist.
+ * A157016 Number of graphs with n vertices such that a bipartite connected component doesn't exist.
  * @author Georg Fischer
  */
 public class A157016 extends EulerTransform {

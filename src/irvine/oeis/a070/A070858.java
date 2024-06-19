@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003418;
 
 /**
- * A070837.
+ * A070858 Smallest prime == 1 mod L, where L = LCM of 1 to n.
  * @author Sean A. Irvine
  */
 public class A070858 extends Sequence1 {

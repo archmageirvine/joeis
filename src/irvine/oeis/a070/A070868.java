@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A070837.
+ * A070868 a(1) = a(2) = 1; a(n) = a(a(n-1)) + a(n+1 - 2*a(n-1)).
  * @author Sean A. Irvine
  */
 public class A070868 extends CachedSequence {

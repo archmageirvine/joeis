@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A328571 Primorial base expansion of n converted into its prime product form, but with all nonzero digits replaced by 1&apos;s: a(n) = A007947(A276086(n)).
+ * A328571 Primorial base expansion of n converted into its prime product form, but with all nonzero digits replaced by 1's: a(n) = A007947(A276086(n)).
  * @author Georg Fischer
  */
 public class A328571 extends LambdaSequence {

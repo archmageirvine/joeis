@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A226385 Numbers n such that rad(phi(n)) &gt; phi(rad(n)), where rad(n) is the squarefree kernel of n, and phi is Euler&apos;s totient function.
+ * A226385 Numbers n such that rad(phi(n)) &gt; phi(rad(n)), where rad(n) is the squarefree kernel of n, and phi is Euler's totient function.
  * @author Georg Fischer
  */
 public class A226385 extends FilterNumberSequence {

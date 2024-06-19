@@ -133,6 +133,8 @@ public final class Functions {
   public static final Function1 BELL = new BellNumbers(); // =A000110
   /** Number of partitions. */
   public static final Function1 PARTITIONS = new Partitions(); // =A000041
+  /** Number of partitions into distinct parts. */
+  public static final Function1 DISTINCT_PARTITIONS = new DistinctPartsPartitions(); // =A000009
   /** Next power of two larger than the given number. */
   public static final Function1 NEXT_POWER_OF_2 = new NextPowerOf2(); // =A062383
   /** Gray encoding of a number. */

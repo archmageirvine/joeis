@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070837.
+ * A070838 Smallest prime p such that |p - R(p)| = 9n, where R(n) is digit reversal of n, A004086; or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A070838 extends Sequence1 {

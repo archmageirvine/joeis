@@ -8,7 +8,7 @@ import irvine.oeis.a156.A156552;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A302023 Permutation of natural numbers mapping ordinary factorization to &quot;Fermi-Dirac factorization&quot;: a(1) = 1, a(2n) = 2*A300841(a(n)), a(A003961(n)) = A300841(a(n)).
+ * A302023 Permutation of natural numbers mapping ordinary factorization to "Fermi-Dirac factorization": a(1) = 1, a(2n) = 2*A300841(a(n)), a(A003961(n)) = A300841(a(n)).
  * @author Georg Fischer
  */
 public class A302023 extends LambdaSequence {

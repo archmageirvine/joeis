@@ -9,7 +9,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.closure.DistinctMultiplicativeClosureSequence;
 
 /**
- * A070837.
+ * A070863 Sum of numbers in n-th row of A070861.
  * @author Sean A. Irvine
  */
 public class A070863 extends Sequence0 {

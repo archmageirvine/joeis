@@ -6,7 +6,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a369.A369004;
 
 /**
- * A373258 a(n) = 1 if n&apos; / gcd(n,n&apos;) is a multiple of 4 and A276085(n) is a multiple of 8, otherwise 0, where n&apos; stands for the arithmetic derivative of n, A003415, and A276085 is the primorial base log-function.
+ * A373258 a(n) = 1 if n' / gcd(n,n') is a multiple of 4 and A276085(n) is a multiple of 8, otherwise 0, where n' stands for the arithmetic derivative of n, A003415, and A276085 is the primorial base log-function.
  * @author Georg Fischer
  */
 public class A373258 extends LambdaSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a003.A003557;
 
 /**
- * A342002 ńĆiurlionis sequence: Arithmetic derivative without its inherited divisor applied to the primorial base exp-function: a(n) = A342001(A276086(n)).
+ * A342002 \u010ciurlionis sequence: Arithmetic derivative without its inherited divisor applied to the primorial base exp-function: a(n) = A342001(A276086(n)).
  * @author Georg Fischer
  */
 public class A342002 extends LambdaSequence {

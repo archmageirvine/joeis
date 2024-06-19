@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070829 Array showing which primes divide n &gt;= 2.
+ * A070835 Numbers n such that phi(reverse(n)) = sigma(n).
  * @author Sean A. Irvine
  */
 public class A070835 extends Sequence1 {

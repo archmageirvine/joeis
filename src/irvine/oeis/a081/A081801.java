@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A081801.
+ * A081801 Decimal expansion of electron mass in kg.
  * @author Sean A. Irvine
  */
 public class A081801 extends NoncomputableSequence {

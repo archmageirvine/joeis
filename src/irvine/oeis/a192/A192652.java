@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A192652 Convolution of the Floor-Sqrt transform of Catalan numbers.
+ * A192652  Convolution of the Floor-Sqrt transform of Catalan numbers.
  * @author Georg Fischer
  */
 public class A192652 extends LambdaSequence {

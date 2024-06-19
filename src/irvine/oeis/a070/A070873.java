@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A070837.
+ * A070873 A070871(n) &gt; n.
  * @author Sean A. Irvine
  */
 public class A070873 extends FilterPositionSequence {

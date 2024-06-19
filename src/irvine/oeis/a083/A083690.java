@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A083690 a(n) = number of partitions of n wherein the sum of the 1&apos;s is no more than the sum of the other parts.
+ * A083690 a(n) = number of partitions of n wherein the sum of the 1's is no more than the sum of the other parts.
  * @author Georg Fischer
  */
 public class A083690 extends LambdaSequence {

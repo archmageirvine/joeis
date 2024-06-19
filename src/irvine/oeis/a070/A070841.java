@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070837.
+ * A070841 Repdigits (A010785), excluding repunits (A002275), ordered by product of digits (A007954).
  * @author Sean A. Irvine
  */
 public class A070841 extends Sequence1 {

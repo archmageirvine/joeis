@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070829 Array showing which primes divide n &gt;= 2.
+ * A070830 Number of wide partitions of n.
  * @author Sean A. Irvine
  */
 public class A070830 extends Sequence1 {

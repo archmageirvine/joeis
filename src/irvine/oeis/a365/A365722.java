@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a007.A007949;
 
 /**
- * A365722 The number of prime factors (with multiplicity) in A356867(1+n), where A356867 is Sycamore&apos;s Doudna variant D(3).
+ * A365722 The number of prime factors (with multiplicity) in A356867(1+n), where A356867 is Sycamore's Doudna variant D(3).
  * @author Georg Fischer
  */
 public class A365722 extends LambdaSequence {

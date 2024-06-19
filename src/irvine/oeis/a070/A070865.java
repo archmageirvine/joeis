@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070837.
+ * A070865 Smallest prime such that the difference of successive terms is strictly increasing.
  * @author Sean A. Irvine
  */
 public class A070865 extends Sequence1 {

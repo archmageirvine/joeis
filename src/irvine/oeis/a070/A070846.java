@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070837.
+ * A070846 Smallest prime == 1 (mod 2n).
  * @author Sean A. Irvine
  */
 public class A070846 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.EulerTransform;
 
 /**
- * A262803 Expansion of Product_{k&gt;=1} (1+x^k) / (1-x^k)^k.
+ * A262803 Expansion of Product_{k&gt;=1} (1 + x^k) / (1 - x^k)^k.
  * @author Georg Fischer
  */
 public class A262803 extends EulerTransform {

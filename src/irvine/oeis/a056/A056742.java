@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A056742 phi[(2^n - 1)]/2.
+ * A056742 a(n) = phi(2^n - 1)/2.
  * @author Sean A. Irvine
  */
 public class A056742 extends Sequence2 {

@@ -7,7 +7,7 @@ import irvine.math.q.Q;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A079120 a(n) = floor[(1/n) sum_{k=1..n} a(k)^(n/k)], given a(0)=1, a(1)=3, a(2)=7.
+ * A079120 a(n) = floor(1/(n-1) * Sum_{k=1..n-1} a(k)^(n/k)), given a(0)=1, a(1)=3, a(2)=7.
  * @author Georg Fischer
  */
 public class A079120 extends MultiTransformSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a248;
 import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 /**
- * A248191 Decimal expansion of Dedekind eta(2*I).
+ * A248191 Decimal expansion of Dedekind eta(2*i).
  * Formula: Gamma(1/4)/(2^(11/8)*Pi^(3/4))
  * @author Georg Fischer
  */

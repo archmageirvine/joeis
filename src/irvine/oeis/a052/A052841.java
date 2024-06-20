@@ -7,7 +7,7 @@ import irvine.oeis.transform.Stirling2TransformSequence;
 
 
 /**
- * A052841 E.g.f.: 1/(exp(x)*(2-exp(x))).
+ * A052841 Expansion of e.g.f.: 1/(exp(x)*(2-exp(x))).
  * @author Georg Fischer
  */
 public class A052841 extends Stirling2TransformSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A046871 Numbers k such that sigma(2,k) divides sigma(4,k).
+ * A046871 Numbers k such that sigma_2(k) divides sigma_4(k).
  * @author Sean A. Irvine
  */
 public class A046871 extends Sequence1 {

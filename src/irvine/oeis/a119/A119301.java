@@ -5,7 +5,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A119301 Number triangle binomial(3n-k,n-k).
+ * A119301 Triangle read by rows: T(n,k) = binomial(3*n-k,n-k).
  * @author Georg Fischer
  */
 public class A119301 extends LambdaTriangle {

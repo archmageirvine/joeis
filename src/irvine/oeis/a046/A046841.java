@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A046841 Sum of divisors divides sum of cubes of divisors.
+ * A046841 Numbers whose sum of divisors divides their sum of cubes of divisors.
  * @author Sean A. Irvine
  */
 public class A046841 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A143199 Triangle read by rows: T(n, m) =  if m &lt;= floor(n/2) then (n + 1)*a(m) + n otherwise (n + 1)*a(n - m) + n, where a(m) is A000096.
+ * A143199 Triangle read by rows: T(n, k) = (n+1)*A000096(k-1) + n if k &lt;= floor(n/2), otherwise T(n, k) = (n+1)*A000096(n-k-1) + n.
  * t(n,m)=If[m &lt;= Floor[n/2], (n + 1)*a[m] + n, (n + 1)*a[n - m] + n].
  * @author Georg Fischer
  */

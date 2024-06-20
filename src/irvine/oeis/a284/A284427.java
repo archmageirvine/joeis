@@ -5,7 +5,7 @@ package irvine.oeis.a284;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A284427 Numbers k such that (206*10^k-17)/9 is prime.
+ * A284427 Numbers k such that (206*10^k - 17)/9 is prime.
  * @author Georg Fischer
  */
 public class A284427 extends PowerFactorPrimeSequence {

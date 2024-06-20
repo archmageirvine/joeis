@@ -4,7 +4,7 @@ package irvine.oeis.a119;
 import irvine.oeis.a006.A006988;
 
 /**
- * A119772 (4^n)-th prime.
+ * A119772 a(n) = prime(4^n).
  * @author Georg Fischer
  */
 public class A119772 extends A006988 {

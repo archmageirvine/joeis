@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002113;
 
 /**
- * A046397 Palindromes with exactly 7 distinct prime factors.
+ * A046397 Palindromes which are the product of exactly 7 distinct primes.
  * @author Sean A. Irvine
  */
 public class A046397 extends A002113 {

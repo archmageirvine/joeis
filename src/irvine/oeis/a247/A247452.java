@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000110;
 
 /**
- * A247452 a(n)=3^n*Bell(n).
+ * A247452 a(n) = 3^n*Bell(n).
  * @author Georg Fischer
  */
 public class A247452 extends Sequence0 {

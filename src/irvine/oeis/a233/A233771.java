@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000041;
 import irvine.oeis.a025.A025065;
 
 /**
- * A233771 Number of nonpalindromic partitions of n.
+ * A233771 Duplicate of A210249.
  * @author Georg Fischer
  */
 public class A233771 extends AbstractSequence {

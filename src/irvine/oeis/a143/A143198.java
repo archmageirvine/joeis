@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A143198 Triangle t(n,m) = n +(n+1)*(m-1)*(m+2)/2 read by rows, 0&lt;=m&lt;=n.
+ * A143198 Triangle read by rows T(n, k) = n + (n+1)*(k-1)*(k+2)/2.
  * @author Georg Fischer
  */
 public class A143198 extends BaseTriangle {

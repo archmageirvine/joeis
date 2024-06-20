@@ -13,13 +13,14 @@ import irvine.oeis.Sequence1;
 public class A055265 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
-  private final TreeSet<Z> mSeen = new TreeSet<>();
+  protected final TreeSet<Z> mSeen = new TreeSet<>();
   private Z mPrev = null;
 
   @Override
   public Z next() {
     final Z t;
     if (mSeen.isEmpty()) {
+      mSeen.add(Z.ONE); // For A070942
       t = Z.ONE;
     } else {
       Z p = mPrev;

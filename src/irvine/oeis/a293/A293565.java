@@ -6,7 +6,7 @@ package irvine.oeis.a293;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A293565 E.g.f.: Product_{m&gt;=0} exp(-x^(3*m+1)).
+ * A293565 Expansion of e.g.f. Product_{k&gt;=0} exp(-x^(3*k+1)).
  * @author Georg Fischer
  */
 public class A293565 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a160;
 import irvine.oeis.FilterSequence;
 
 /**
- * A160670 Primes in A160668 in order of appearance.
+ * A160670 Duplicate of A145985.
  * @author Georg Fischer
  */
 public class A160670 extends FilterSequence {

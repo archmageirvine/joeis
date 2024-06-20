@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A184942 E.g.f.: 1/( cos(log(1-x)) + sin(log(1-x)) ).
+ * A184942 Expansion of e.g.f. 1/( cos(log(1-x)) + sin(log(1-x)) ).
  * E.g.f.: 1/( cos(log(1-x)) + sin(log(1-x)) )
  * @author Georg Fischer
  */

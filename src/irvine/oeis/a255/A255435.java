@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A255435 Product_{k=0..n} (k^5+1).
+ * A255435 Product_{k=0..n} (k^5 + 1).
  * a(n) = prod(k=1,n,1+k^5);
  * @author Georg Fischer
  */

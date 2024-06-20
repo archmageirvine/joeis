@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A070263 Triangle T(n,k), n&gt;=0, 1 &lt;= k &lt;= 2^n, read by rows, giving minimal distance-sum of any set of k binary vectors of length n.
+ * A070263 Triangle T(n,k), n &gt;= 0, 1 &lt;= k &lt;= 2^n, read by rows, giving minimal distance-sum of any set of k binary vectors of length n.
  * @author Sean A. Irvine
  */
 public class A070263 extends Sequence0 {

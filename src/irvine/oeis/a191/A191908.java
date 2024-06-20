@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A191908 Sum_{k=0..n} (k+1)^(n-1)*k!*StirlingS2(n,k).
+ * A191908 a(n) = Sum_{k=0..n} (k+1)^(n-1)*k!*StirlingS2(n,k).
  * a(n)=sum(k=0,n,(k+1)^(n-1)*k!*stirl2(n,k))
  * @author Georg Fischer
  */

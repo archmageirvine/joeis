@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002779;
 
 /**
- * A034822 Numbers n such that there are no palindromic squares of length n.
+ * A034822 Numbers k such that there are no palindromic squares of length k.
  * @author Sean A. Irvine
  */
 public class A034822 extends A002779 {

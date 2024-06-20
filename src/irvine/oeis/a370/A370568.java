@@ -4,7 +4,7 @@ package irvine.oeis.a370;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A370568 Expansion of (1-x) / (1-9*x+28*x^2-35*x^3+15*x^4-x^5).
+ * A370568 Expansion of g.f. (1-x) / (1-9*x+28*x^2-35*x^3+15*x^4-x^5).
  * @author Georg Fischer
  */
 public class A370568 extends HolonomicRecurrence {

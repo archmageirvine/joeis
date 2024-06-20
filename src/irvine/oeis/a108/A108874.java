@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A108874 Numbers n such that 41*n + 43 is prime.
+ * A108874 Numbers k such that 41*k + 43 is prime.
  * @author Georg Fischer
  */
 public class A108874 extends PrimePositionSubsequence {

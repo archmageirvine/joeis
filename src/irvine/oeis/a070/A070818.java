@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A070818 Smallest argument m such that commutator[phi(n), gpf(n)] = 2n-1, where phi(n) = A000010(n) and gpf(n) = A006530(n), the largest prime factor of n.
+ * A070818 Smallest argument m such that commutator[phi(m), gpf(m)] = 2n-1, where phi(m) = A000010(m) and gpf(m) = A006530(m), the largest prime factor of m.
  * @author Sean A. Irvine
  */
 public class A070818 extends Sequence1 {

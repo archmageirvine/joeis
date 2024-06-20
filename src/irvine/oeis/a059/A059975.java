@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A059975 a(n) is the least number of prime factors (counted with multiplicity) of any integer with n divisors.
+ * A059975 For n &gt; 1, a(n) is the least number of prime factors (counted with multiplicity) of any integer with n divisors; fully additive with a(p) = p-1.
  * @author Sean A. Irvine
  */
 public class A059975 extends Sequence1 {

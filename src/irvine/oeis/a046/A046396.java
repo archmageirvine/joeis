@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002113;
 
 /**
- * A046396 Palindromes with exactly 6 distinct prime factors.
+ * A046396 Palindromes which are the product of 6 distinct primes.
  * @author Sean A. Irvine
  */
 public class A046396 extends A002113 {

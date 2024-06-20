@@ -5,7 +5,7 @@ package irvine.oeis.a265;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A265938 Numbers k such that 6*10^k+91 is prime.
+ * A265938 Numbers k such that 6*10^k + 91 is prime.
  * @author Georg Fischer
  */
 public class A265938 extends PowerFactorPrimeSequence {

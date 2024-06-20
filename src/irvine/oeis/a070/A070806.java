@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A070806 Cototient(totient(n))=A070556(n) is a power of 2 and n is a prime number.
+ * A070806 Primes p such that cototient(totient(p)) = A070556(p) is a power of 2.
  * @author Sean A. Irvine
  */
 public class A070806 extends FilterSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a129;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A129847 b(n) = number of set partitions of {1, 2, ..., n} whose blocks consist only of elements that differ by two or less (that is, have only the forms {i}, {i,i+1}, {i,i+2}, or {i,i+1,i+2}).
+ * A129847 a(n) = number of set partitions of {1, 2, ..., n} whose blocks consist only of elements that differ by two or less (that is, have only the forms {i}, {i,i+1}, {i,i+2}, or {i,i+1,i+2}).
  * @author Georg Fischer
  */
 public class A129847 extends GeneratingFunctionSequence {

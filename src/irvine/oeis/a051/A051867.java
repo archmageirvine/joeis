@@ -6,7 +6,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A051867 15-gonal (or pentadecagonal) numbers: n(13n-11)/2.
+ * A051867 15-gonal (or pentadecagonal) numbers: n*(13n-11)/2.
  * @author Georg Fischer
  */
 public class A051867 extends LinearRecurrence implements DirectSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
- * A050446 Table T(n,m) giving total degree of n-th-order elementary symmetric polynomials in m variables, -1 &lt;= n, 1 &lt;= m, read by upward antidiagonals.
+ * A050446 Table read by ascending antidiagonals: T(n, m) giving total degree of n-th-order elementary symmetric polynomials in m variables.
  * @author Sean A. Irvine
  */
 public class A050446 extends MemoryFunction2Sequence<Long, Z> {

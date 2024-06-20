@@ -6,7 +6,7 @@ import irvine.oeis.a049.A049690;
 import irvine.oeis.a099.A099957;
 
 /**
- * A106481 An Euler phi transform of 1/(1-x^2).
+ * A106481 An Euler phi transform of 1/(1 - x^2).
  * @author Georg Fischer
  */
 public class A106481 extends Sequence0 {

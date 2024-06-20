@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A068182 Number of combinatorially non-equivalent "triangulations" of a compact genus n surface which have only 1 vertex (all vertices of the triangles are identified). Also the number of combinatorially distinct identifications of pairs of edges of a polygone P having 12g-6 sides leading to a compact oriented genus g surface containing the boundary of P as a 3-regular graph.
+ * A068182 Number of combinatorially non-equivalent "triangulations" of a compact genus n surface which have only 1 vertex (all vertices of the triangles are identified). Also the number of combinatorially distinct identifications of pairs of edges of a polygon P having 12g-6 sides leading to a compact oriented genus g surface containing the boundary of P as a 3-regular graph.
  * @author Sean A. Irvine
  */
 public class A068182 extends Sequence0 {

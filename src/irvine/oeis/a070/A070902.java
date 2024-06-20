@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070899.
+ * A070902 a(1)=1, a(n) is the smallest integer &gt; a(n-1) such that the largest element in the simple continued fraction for S(n)=1/a(1)+1/a(2)+...+1/a(n) equals n^2.
  * @author Sean A. Irvine
  */
 public class A070902 extends Sequence1 {

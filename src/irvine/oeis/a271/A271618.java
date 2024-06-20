@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A271618 Numbers k such that 10^k-801 is prime.
+ * A271618 Numbers k such that 10^k - 801 is prime.
  * @author Georg Fischer
  */
 public class A271618 extends PrimePositionSubsequence {

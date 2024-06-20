@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053662 Numbers n such that 2n+1 divides n!+1.
+ * A053662 Numbers k such that 2k+1 divides k!+1.
  * @author Sean A. Irvine
  */
 public class A053662 extends Sequence1 {

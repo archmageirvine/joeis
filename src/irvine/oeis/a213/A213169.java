@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A213169 n!+n+1.
+ * A213169 a(n) = n! + n + 1.
  * a(n)=n!+n+1
  * @author Georg Fischer
  */

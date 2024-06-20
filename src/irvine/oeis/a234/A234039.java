@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A234039 (2^(3^(n-1)) + 1)/3^n, n &gt;= 1.
+ * A234039 a(n) = (2^(3^(n-1)) + 1)/3^n, n &gt;= 1.
  * a(n)=(2^(3^(n-1))+1)/3^n
  * @author Georg Fischer
  */

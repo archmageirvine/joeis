@@ -16,9 +16,9 @@ public class A070885 extends Sequence1 {
     if (mA == null) {
       mA = Z.ONE;
     } else if (mA.isEven()) {
-      mA = mA.shiftRight(1).multiply(3);
+      mA = mA.divide2().multiply(3);
     } else {
-      mA = mA.add(1).shiftRight(1).multiply(3);
+      mA = mA.add(1).divide2().multiply(3);
     }
     return mA;
   }

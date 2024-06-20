@@ -37,7 +37,7 @@ public class A049502 extends Sequence0 implements DirectSequence {
         sum = sum.add(k);
       }
       ++k;
-      m = m.shiftRight(1);
+      m = m.divide2();
     }
     return sum;
   }

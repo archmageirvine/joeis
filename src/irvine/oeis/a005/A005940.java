@@ -58,7 +58,7 @@ public class A005940 extends AbstractSequence implements DirectSequence {
       } else {
         p = mPrime.nextPrime(p);
       }
-      m = m.shiftRight(1);
+      m = m.divide2();
     } while (m.compareTo(Z.ZERO) > 0);
     return prod;
   }

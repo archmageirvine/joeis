@@ -38,7 +38,7 @@ public class A357274 extends Sequence1 {
       if (expr.isSquare()) {
         final Z b2 = expr.sqrt().subtract(mA);
         if (b2.isEven()) {
-          final Z bz = b2.shiftRight(1);
+          final Z bz = b2.divide2();
           final Z az = Z.valueOf(mA);
           if (az.gcd(bz).equals(Z.ONE) && az.compareTo(bz) < 0) {
             mTuple[0] = az;

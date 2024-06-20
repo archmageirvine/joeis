@@ -14,7 +14,7 @@ class GrayDecode extends AbstractFunction1 {
     Z r = Z.ZERO;
     while (!t.isZero()) {
       r = r.xor(t);
-      t = t.shiftRight(1);
+      t = t.divide2();
     }
     return r;
   }

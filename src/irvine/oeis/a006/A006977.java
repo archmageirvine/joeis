@@ -42,7 +42,7 @@ public class A006977 extends AbstractSequence {
           mA = mA.or(bit);
         }
         bit = bit.shiftLeft(1);
-        t = t.shiftRight(1);
+        t = t.divide2();
       }
     }
     mA = mA.makeOdd();

@@ -22,7 +22,7 @@ public class A103528 extends Sequence1 {
     for (int k = 1; k < mN; ++k) {
       final Z k2 = Z.ONE.shiftLeft(k);
       if (Z.valueOf(mN).mod(k2).equals(k)) {
-        t1 = t1.add(k2.shiftRight(1));
+        t1 = t1.add(k2.divide2());
       }
     }
     return t1;

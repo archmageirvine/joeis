@@ -36,14 +36,14 @@ public class A005811 extends AbstractSequence implements DirectSequence {
       return Z.ZERO;
     }
     Z r = Z.ONE;
-    Z m = n.shiftRight(1);
+    Z m = n.divide2();
     Z c = n.and(Z.ONE);
     while (!m.isZero()) {
       if (!m.and(Z.ONE).equals(c)) {
         r = r.add(1);
         c = Z.ONE.subtract(c);
       }
-      m = m.shiftRight(1);
+      m = m.divide2();
     }
     return r;
   }

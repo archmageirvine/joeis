@@ -18,7 +18,7 @@ public class A007732 extends Sequence1 implements DirectSequence {
   public Z a(final Z k) {
     Z n = k;
     while (!n.testBit(0)) {
-      n = n.shiftRight(1);
+      n = n.divide2();
     }
     while (n.mod(5) == 0) {
       n = n.divide(5);

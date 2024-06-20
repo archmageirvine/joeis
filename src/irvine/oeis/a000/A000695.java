@@ -25,7 +25,7 @@ public class A000695 extends Sequence0 implements DirectSequence {
       if (n.testBit(0)) {
         sum = sum.add(Z.ONE.shiftLeft(j));
       }
-      n = n.shiftRight(1);
+      n = n.divide2();
       j += 2;
     }
     return sum;

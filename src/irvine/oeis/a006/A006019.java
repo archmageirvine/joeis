@@ -34,7 +34,7 @@ public class A006019 extends MemoryFunctionSequence<Z, Integer> {
    * @return n*(n+1)/2 .
    */
   private static Z a000217(final Z n) {
-    return n.multiply(n.add(Z.ONE)).shiftRight(1);
+    return n.multiply(n.add(Z.ONE)).divide2();
   }
 
   /*

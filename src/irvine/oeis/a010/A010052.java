@@ -2,12 +2,13 @@ package irvine.oeis.a010;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A010052 Characteristic function of squares: a(n) = 1 if n is a square, otherwise 0.
  * @author Sean A. Irvine
  */
-public class A010052 extends AbstractSequence {
+public class A010052 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -34,5 +35,16 @@ public class A010052 extends AbstractSequence {
     }
     return Z.ZERO;
   }
+
+  @Override
+  public Z a(final Z n) {
+    return n.isSquare() ? Z.ONE : Z.ZERO;
+  }
+
+  @Override
+  public Z a(final int n) {
+    return Z.valueOf(n).isSquare() ? Z.ONE : Z.ZERO;
+  }
+
 }
 

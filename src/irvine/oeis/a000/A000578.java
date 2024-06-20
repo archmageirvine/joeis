@@ -2,12 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A000578 The cubes: a(n) = n^3.
  * @author Sean A. Irvine
  */
-public class A000578 extends AbstractSequence {
+public class A000578 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -28,4 +29,15 @@ public class A000578 extends AbstractSequence {
   public Z next() {
     return Z.valueOf(++mN).pow(3);
   }
+
+  @Override
+  public Z a(final Z n) {
+    return n.pow(3);
+  }
+
+  @Override
+  public Z a(final int n) {
+    return Z.valueOf(n).pow(3);
+  }
+
 }

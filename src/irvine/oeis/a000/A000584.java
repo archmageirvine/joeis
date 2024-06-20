@@ -2,12 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A000584 Fifth powers: a(n) = n^5.
  * @author Sean A. Irvine
  */
-public class A000584 extends AbstractSequence {
+public class A000584 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -28,5 +29,16 @@ public class A000584 extends AbstractSequence {
   public Z next() {
     return Z.valueOf(++mN).pow(5);
   }
+
+  @Override
+  public Z a(final Z n) {
+    return n.pow(5);
+  }
+
+  @Override
+  public Z a(final int n) {
+    return Z.valueOf(n).pow(5);
+  }
+
 }
 

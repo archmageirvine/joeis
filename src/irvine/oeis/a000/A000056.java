@@ -3,7 +3,6 @@ package irvine.oeis.a000;
 import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -21,7 +20,7 @@ public class A000056 extends Sequence1 {
       final long dd = d.longValue();
       final long v = mN / dd;
       final Z s = Z.valueOf(v).square();
-      sum = ZUtils.mobiusAdd(Functions.MOBIUS.i(dd), sum, s);
+      sum = sum.add(s.multiply(Functions.MOBIUS.i(dd)));
     }
     return sum.multiply(mN);
   }

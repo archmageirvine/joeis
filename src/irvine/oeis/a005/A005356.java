@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -30,7 +29,7 @@ public class A005356 extends Sequence1 {
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
       final Z z = power(d);
-      sum = ZUtils.mobiusAdd(Functions.MOBIUS.i(n / d), sum, z);
+      sum = sum.add(z.multiply(Functions.MOBIUS.i(n / d)));
     }
     return sum.divide(n);
   }

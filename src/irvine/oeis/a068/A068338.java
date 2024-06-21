@@ -19,7 +19,7 @@ public class A068338 extends Sequence1 {
     mF2 = mF2.multiply(++mN * mN);
     Z sum = Z.ZERO;
     for (long k = 1; k <= mN; ++k) {
-      sum = ZUtils.mobiusAdd(Functions.MOBIUS.i(k), sum, mF2.divide(k * k));
+      sum = sum.add(mF2.divide(k * k).multiply(Functions.MOBIUS.i(k)));
     }
     return sum;
   }

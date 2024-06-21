@@ -3,7 +3,6 @@ package irvine.oeis.a000;
 import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 
 /**
@@ -37,7 +36,7 @@ public class A000048 extends AbstractSequence {
       final int dd = d.intValue();
       if ((dd & 1) == 1) {
         final Z t = Z.ONE.shiftLeft(mN / dd);
-        sum = ZUtils.mobiusAdd(Functions.MOBIUS.i(dd), sum, t);
+        sum = sum.add(t.multiply(Functions.MOBIUS.i(dd)));
       }
     }
     return sum.divide(2L * mN);

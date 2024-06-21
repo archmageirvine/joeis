@@ -249,19 +249,6 @@ public final class ZUtils {
     return sprpTest(Z.valueOf(b), n);
   }
 
-  /**
-   * Convenience method for summing with respect to a Mobius value.  In particular,
-   * if <code>m&gt;0</code> then compute <code>s+a</code>, if <code>m&lt;0</code>
-   * then compute <code>s-a</code>; otherwise return <code>s</code>
-   * @param m Mobius value
-   * @param s base
-   * @param a addend or subtrahend
-   * @return Mobius sum
-   */
-  public static Z mobiusAdd(final int m, final Z s, final Z a) {
-    return m == 0 ? s : s.signedAdd(m > 0, a);
-  }
-
   // Based on LiDIA
   /**
    * The smallest remainder of <code>b.mod(mod)</code>.

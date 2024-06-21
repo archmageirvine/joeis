@@ -2,7 +2,6 @@ package irvine.oeis.a068;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -19,7 +18,7 @@ public class A068339 extends Sequence1 {
     mF2 = mF2.multiply(++mN * mN * mN);
     Z sum = Z.ZERO;
     for (long k = 1; k <= mN; ++k) {
-      sum = ZUtils.mobiusAdd(Functions.MOBIUS.i(k), sum, mF2.divide(k * k * k));
+      sum = sum.add(mF2.divide(k * k * k).multiply(Functions.MOBIUS.i(k)));
     }
     return sum;
   }

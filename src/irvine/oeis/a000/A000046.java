@@ -4,7 +4,6 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicArray;
@@ -51,7 +50,7 @@ public class A000046 extends AbstractSequence {
       if (dd == 1) {
         continue;
       }
-      sum = ZUtils.mobiusAdd(Functions.MOBIUS.i(dd), sum, a11(mN / dd));
+      sum = sum.add(a11(mN / dd).multiply(Functions.MOBIUS.i(dd)));
     }
     return sum;
   }

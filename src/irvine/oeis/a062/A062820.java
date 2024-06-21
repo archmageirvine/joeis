@@ -2,7 +2,6 @@ package irvine.oeis.a062;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
@@ -16,7 +15,7 @@ public class A062820 extends A000040 {
 
   @Override
   public Z next() {
-    mSum = ZUtils.mobiusAdd(Functions.MOBIUS.i(++mN), mSum, super.next());
+    mSum = mSum.add(super.next().multiply(Functions.MOBIUS.i(++mN)));
     return mSum;
   }
 }

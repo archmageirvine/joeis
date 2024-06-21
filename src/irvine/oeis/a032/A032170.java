@@ -3,7 +3,6 @@ package irvine.oeis.a032;
 import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004146;
 import irvine.oeis.memory.MemorySequence;
@@ -23,7 +22,7 @@ public class A032170 extends Sequence1 {
     Z s = Z.ZERO;
     for (final Z d : Jaguar.factor(mN).divisors()) {
       final int dd = d.intValue();
-      s = ZUtils.mobiusAdd(Functions.MOBIUS.i(mN / dd), s, mA.a(dd));
+      s = s.add(mA.a(dd).multiply(Functions.MOBIUS.i(mN / dd)));
     }
     return s.divide(mN);
   }

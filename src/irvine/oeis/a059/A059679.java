@@ -16,11 +16,12 @@ import irvine.oeis.Sequence3;
  */
 public class A059679 extends Sequence3 {
 
+  private static final int ANIMALS = 6; // Actually reduced set of values in this case
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
-  private static final MatrixRing<Polynomial<Z>> MAT_RING = new MatrixRing<>(6, RING);
-  private static final Matrix<Polynomial<Z>> PSI = new DefaultMatrix<>(6, 6, RING.zero());
-  private static final Matrix<Polynomial<Z>> S = new DefaultMatrix<>(6, 1, RING.zero());
-  private static final Matrix<Polynomial<Z>> P = new DefaultMatrix<>(1, 6, RING.zero());
+  private static final MatrixRing<Polynomial<Z>> MAT_RING = new MatrixRing<>(ANIMALS, RING);
+  private static final Matrix<Polynomial<Z>> PSI = new DefaultMatrix<>(ANIMALS, ANIMALS, RING.zero());
+  private static final Matrix<Polynomial<Z>> S = new DefaultMatrix<>(ANIMALS, 1, RING.zero());
+  private static final Matrix<Polynomial<Z>> P = new DefaultMatrix<>(1, ANIMALS, RING.zero());
   static {
     final Polynomial<Z> xt = Polynomial.create(0, 2);
     final Polynomial<Z> x2 = Polynomial.create(0, 0, 1);
@@ -73,12 +74,16 @@ public class A059679 extends Sequence3 {
     }
   };
 
+  Z c(final int n, final int m) {
+    return mCStar.get(m).coeff(n).subtract(mB.b(n, m).multiply2()).subtract(n == m ? 3 : 0);
+  }
+
   @Override
   public Z next() {
     if (++mM + 1 >= mN) {
       ++mN;
       mM = 1;
     }
-    return mCStar.get(mM).coeff(mN).subtract(mB.b(mN, mM).multiply2()).subtract(mN == mM ? 3 : 0);
+    return c(mN, mM);
   }
 }

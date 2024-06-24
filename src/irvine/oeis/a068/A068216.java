@@ -10,7 +10,7 @@ import irvine.oeis.Sequence3;
  */
 public class A068216 extends Sequence3 {
 
-  private Z mN = Z.valueOf(10);
+  private Z mN = Z.TEN;
   private final Fast mPrime = new Fast();
 
   @Override

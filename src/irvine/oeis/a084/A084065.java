@@ -12,6 +12,6 @@ public class A084065 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A084065() {
-    super(0, n -> CR.valueOf(n).subtract(CR.valueOf(3).sqrt()).pow(n).add(CR.valueOf(n).add(CR.valueOf(3).sqrt()).pow(n)).divide(2).floor());
+    super(0, n -> CR.valueOf(n).subtract(CR.THREE.sqrt()).pow(n).add(CR.valueOf(n).add(CR.THREE.sqrt()).pow(n)).divide(2).floor());
   }
 }

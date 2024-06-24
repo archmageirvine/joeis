@@ -11,6 +11,6 @@ public class A194177 extends A194161 {
 
   /** Construct the sequence. */
   public A194177() {
-    super(1, CR.valueOf(8).sqrt());
+    super(1, CR.EIGHT.sqrt());
   }
 }

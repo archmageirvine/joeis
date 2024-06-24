@@ -27,6 +27,6 @@ public class A367876 extends AbstractSequence {
     if (++mN != 0) {
       mF = mF.multiply(mN);
     }
-    return RING.exp(RING.multiply(RING.x(), RING.subtract(RING.monomial(new Q(2), 0), RING.exp(RING.x(), mN)), mN), mN).coeff(mN).multiply(mF).toZ();
+    return RING.exp(RING.multiply(RING.x(), RING.subtract(RING.monomial(Q.TWO, 0), RING.exp(RING.x(), mN)), mN), mN).coeff(mN).multiply(mF).toZ();
   }
 }

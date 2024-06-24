@@ -11,6 +11,6 @@ public class A194175 extends A194161 {
 
   /** Construct the sequence. */
   public A194175() {
-    super(1, CR.valueOf(7).sqrt());
+    super(1, CR.SEVEN.sqrt());
   }
 }

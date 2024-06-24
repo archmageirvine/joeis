@@ -17,7 +17,7 @@ public class A083010 extends LambdaSequence {
   public A083010() {
     super(0, n -> {
       final BernoulliSequence bs = new BernoulliSequence(0);
-      return Rationals.SINGLETON.sum(0, n - 1, k -> new Q(6).pow(k).multiply(Binomial.binomial(n, k)).multiply(bs.nextQ())).num();
+      return Rationals.SINGLETON.sum(0, n - 1, k -> Q.SIX.pow(k).multiply(Binomial.binomial(n, k)).multiply(bs.nextQ())).num();
     });
   }
 }

@@ -26,7 +26,7 @@ public class A059680 extends AbstractSequence {
   //      uvuvuu  u uu    u
   //        uvu uvuu uuvuv
   //   12345678901234567890
-  public static final String TRANSITIONS =
+  private static final String TRANSITIONS =
       "#.##.#...#.#.....#.#" + // 1
       ".##....##..#...#.#.#" + // 2
       "####.#.###.#...#.#.#" + // 3

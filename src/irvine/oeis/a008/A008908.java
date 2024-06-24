@@ -14,6 +14,7 @@ public class A008908 extends AbstractSequence implements DirectSequence {
   private int mN = 0;
   private static final DirectSequence A006577 = new A006577();
 
+  /** Construct the sequence. */
   public A008908() {
     super(1);
     mN = 0;

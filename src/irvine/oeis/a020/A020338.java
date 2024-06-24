@@ -40,13 +40,13 @@ public class A020338 extends Sequence1 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    String s = n.toString(mIBase);
+    final String s = n.toString(mIBase);
     return new Z(s + s);
   }
 
   @Override
   public Z a(final int n) {
-    String s = Integer.toString(n, mIBase);
+    final String s = Integer.toString(n, mIBase);
     return new Z(s + s);
   }
 

@@ -19,7 +19,7 @@ public class A070995 extends A000040 {
   }
 
   // Definition 2.5
-  private int lcmStar(int d, int e) {
+  private int lcmStar(final int d, final int e) {
     final int lcm = Functions.LCM.i(d, e);
 //    return lcm;
     return (d & 1) == 0 && (e & 1) == 0 ? lcm / 2 : lcm;

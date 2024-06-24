@@ -43,7 +43,7 @@ public class A059680 extends AbstractSequence {
       "...#.#.##..#.##....#" + // 14
       "...#.#.###.#####.#.#" + // 15
       ".......#...#...#.#.." + // 16
-      ".##..#..#...#.#.#.##" + // 17
+      ".##..#..##..#.#.#.##" + // 17
       ".....#.#.#.#...#.#.." + // 18
       "####..#.#.#.#.#.#.##" + // 19
       "##########.#.###.#.#";  // 20
@@ -70,12 +70,10 @@ public class A059680 extends AbstractSequence {
         }
       }
     }
-    System.out.println("PSI=" + PSI);
-    System.out.println("P=" + P);
-    System.out.println("S=" + S);
+//    System.out.println("PSI=" + PSI);
+//    System.out.println("P=" + P);
+//    System.out.println("S=" + S);
   }
-
-  // todo could be errors in PSI
 
   private int mN = 3;
   private int mM = 1;
@@ -85,7 +83,7 @@ public class A059680 extends AbstractSequence {
     @Override
     protected Polynomial<Z> compute(final int n) {
       final Matrix<Polynomial<Z>> p = MAT_RING.multiply(MAT_RING.multiply(P, MAT_RING.pow(PSI, Math.max(0, n - 1))), S);
-      System.out.println("Poly for q=" + n + ": " + p.get(0, 0));
+      //System.out.println("Poly for q=" + n + ": " + p.get(0, 0));
       return p.get(0, 0);
     }
   };
@@ -102,7 +100,6 @@ public class A059680 extends AbstractSequence {
       mM = 1;
     }
     // Apply equation (5.1) of Read
-    //System.out.println("n=" + mN + " m=" + mM + " [x^" + mN + "] " + mDStar.get(mM));
     return mDStar.get(mM).coeff(mN).subtract(mC.c(mN, mM).multiply2()).subtract(mB.b(mN, mM).multiply(3)).subtract(mN == mM ? 4 : 0);
   }
 }

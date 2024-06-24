@@ -1,6 +1,7 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence0;
 
 /**
@@ -8,7 +9,7 @@ import irvine.oeis.Sequence0;
  * Also cellular 1D automaton, rule 175.
  * @author Georg Fischer
  */
-public class A057427 extends Sequence0 {
+public class A057427 extends Sequence0 implements DirectSequence {
 
   private int mN = -1;
 
@@ -16,4 +17,15 @@ public class A057427 extends Sequence0 {
   public Z next() {
     return (++mN == 0) ? Z.ZERO : Z.ONE;
   }
+
+  @Override
+  public Z a(final Z n) {
+    return n.isZero() ? Z.ZERO : Z.ONE;
+  }
+
+  @Override
+  public Z a(final int n) {
+    return (n == 0) ? Z.ZERO : Z.ONE;
+  }
+
 }

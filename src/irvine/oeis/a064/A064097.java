@@ -3,6 +3,7 @@ package irvine.oeis.a064;
 import irvine.factor.prime.Fast;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.memory.MemorySequence;
 
@@ -10,7 +11,7 @@ import irvine.oeis.memory.MemorySequence;
  * A064097 A quasi-logarithm defined inductively by a(1) = 0 and a(p) = 1 + a(p-1) if p is prime and a(n*m) = a(n) + a(m) if m,n &gt; 1.
  * @author Sean A. Irvine
  */
-public class A064097 extends Sequence1 {
+public class A064097 extends Sequence1 implements DirectSequence {
 
   private final MemorySequence mSeq = new MemorySequence() {
 
@@ -38,4 +39,15 @@ public class A064097 extends Sequence1 {
   public Z next() {
     return mSeq.next();
   }
+
+  @Override
+  public Z a(final Z n) {
+    return mSeq.a(n);
+  }
+
+  @Override
+  public Z a(final int n) {
+    return mSeq.a(n);
+  }
+
 }

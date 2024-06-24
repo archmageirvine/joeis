@@ -3,12 +3,13 @@ package irvine.oeis.a001;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A001065 Sum of proper divisors (or aliquot parts) of n: sum of divisors of n that are less than n.
  * @author Sean A. Irvine
  */
-public class A001065 extends AbstractSequence {
+public class A001065 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -29,4 +30,15 @@ public class A001065 extends AbstractSequence {
   public Z next() {
     return Functions.SIGMA1.z(++mN).subtract(mN);
   }
+
+  @Override
+  public Z a(final Z n) {
+    return Functions.SIGMA1.z(n).subtract(n);
+  }
+
+  @Override
+  public Z a(final int n) {
+    return Functions.SIGMA1.z(n).subtract(n);
+  }
+
 }

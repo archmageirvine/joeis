@@ -1,13 +1,15 @@
 package irvine.oeis.a001;
 
+import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A001405 a(n) = binomial(n, floor(n/2)).
  * @author Sean A. Irvine
  */
-public class A001405 extends AbstractSequence {
+public class A001405 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -35,4 +37,15 @@ public class A001405 extends AbstractSequence {
     }
     return mB;
   }
+
+  @Override
+  public Z a(final Z n) {
+    return Binomial.binomial(n, n.divide2());
+  }
+
+  @Override
+  public Z a(final int n) {
+    return Binomial.binomial(n, n / 2);
+  }
+
 }

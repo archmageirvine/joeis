@@ -69,7 +69,8 @@ public class A059679 extends Sequence3 {
   private final MemoryFunction1<Polynomial<Z>> mCStar = new MemoryFunction1<>() {
     @Override
     protected Polynomial<Z> compute(final int n) {
-      final Matrix<Polynomial<Z>> p = MAT_RING.multiply(MAT_RING.multiply(P, MAT_RING.pow(PSI, mM - 1)), S);
+      final Matrix<Polynomial<Z>> p = MAT_RING.multiply(MAT_RING.multiply(P, MAT_RING.pow(PSI, Math.max(0, n - 1))), S);
+      //System.out.println("Poly: " + n + " : " + p.get(0, 0));
       return p.get(0, 0);
     }
   };

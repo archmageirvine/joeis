@@ -2407,3 +2407,4 @@ A070767 Number of polyhexes with n cells that do not tile the plane
 A070768 Number of polyhexes with n cells without holes that do not tile the plane
 A070822 Number of Cayley graphs isomorphic to the graph of the n-dimensional cube.
 A070862 Number of path covers of an n X n grid.
+A070979 Triangle read by rows giving size of minimal asymmetric covering code of length n and radius R

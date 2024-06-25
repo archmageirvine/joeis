@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A166312 Number of 1&apos;s in binary expansion of A000326(n).
+ * A166312 Number of 1's in binary expansion of A000326(n).
  * @author Georg Fischer
  */
 public class A166312 extends LambdaSequence {

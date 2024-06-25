@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070964.
+ * A070964 a(n) = Sum_{1&lt;=k&lt;=n, gcd(k,n)=1} Fibonacci(k).
  * @author Sean A. Irvine
  */
 public class A070964 extends Sequence1 {

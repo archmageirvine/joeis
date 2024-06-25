@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A229342 a(n) = sigma(n&apos;), the sum of divisors of the arithmetic derivative of n.
+ * A229342 a(n) = sigma(n'), the sum of divisors of the arithmetic derivative of n.
  * @author Georg Fischer
  */
 public class A229342 extends LambdaSequence {

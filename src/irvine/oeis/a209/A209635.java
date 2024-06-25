@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A209635 M√∂bius mu-function applied to the odd part of n: a(n) = A008683(A000265(n)).
+ * A209635 M\u00f6bius mu-function applied to the odd part of n: a(n) = A008683(A000265(n)).
  * @author Georg Fischer
  */
 public class A209635 extends LambdaSequence {

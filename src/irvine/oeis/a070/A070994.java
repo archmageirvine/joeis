@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070165.
+ * A070994 Numbers k such that the trajectory of k under the 3x+1 map reaches phi(k).
  * @author Sean A. Irvine
  */
 public class A070994 extends Sequence1 {

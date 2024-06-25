@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A092846 a(n) = 100...001^n, where there are just enough zeros for the result to display the terms in the n-th row of Pascal&apos;s triangle.
+ * A092846 a(n) = 100...001^n, where there are just enough zeros for the result to display the terms in the n-th row of Pascal's triangle.
  * @author Georg Fischer
  */
 public class A092846 extends LambdaSequence {

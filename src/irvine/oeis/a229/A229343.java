@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A229343 Moebius function of the arithmetic derivative of n: a(n) = mu(n&apos;).
+ * A229343 Moebius function of the arithmetic derivative of n: a(n) = mu(n').
  * @author Georg Fischer
  */
 public class A229343 extends LambdaSequence {

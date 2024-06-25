@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a065.A065422;
 
 /**
- * A070964.
+ * A070970 Smallest number k such that A065422(k)/A065422(k+1) = k^n, where k&gt;1.
  * @author Sean A. Irvine
  */
 public class A070970 extends Sequence1 {

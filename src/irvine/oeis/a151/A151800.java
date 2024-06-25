@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A151800 Least prime &gt; n (version 2 of the &quot;next prime&quot; function).
+ * A151800 Least prime &gt; n (version 2 of the "next prime" function).
  * @author Georg Fischer
  */
 public class A151800 extends LambdaSequence {

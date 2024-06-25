@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070964.
+ * A070982 Smallest integer k such that n divides sigma(k).
  * @author Sean A. Irvine
  */
 public class A070982 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A081459 Consider the mapping f(r) = (1/2)*(r + N/r) from rationals to rationals where N = 5. Starting with r = 2 and applying the mapping to each new (reduced) rational number gives 2, 9/4, 161/72, 51841/23184, ..., tending to N^(1/2). Sequence gives values of the
+ * A081459 Consider the mapping f(r) = (1/2)*(r + N/r) from rationals to rationals where N = 5. Starting with r = 2 and applying the mapping to each new (reduced) rational number gives 2, 9/4, 161/72, 51841/23184, ..., tending to N^(1/2). Sequence gives values of the numerators.
  * @author Georg Fischer
  */
 public class A081459 extends LambdaSequence {

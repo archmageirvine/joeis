@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A151799 Version 2 of the &quot;previous prime&quot; function: largest prime &lt; n.
+ * A151799 Version 2 of the "previous prime" function: largest prime &lt; n.
  * @author Georg Fischer
  */
 public class A151799 extends LambdaSequence {

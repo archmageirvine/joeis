@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A229340 Euler totient function of the arithmetic derivative of n: a(n) = phi(n&apos;), a(1) = 0.
+ * A229340 Euler totient function of the arithmetic derivative of n: a(n) = phi(n'), a(1) = 0.
  * @author Georg Fischer
  */
 public class A229340 extends LambdaSequence {

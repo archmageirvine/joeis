@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A249664 In the n-th row of Pascal&apos;s triangle, an odious entry is replaced by 1, an evil entry is replaced by 0 and the n-th row is converted to decimal.
+ * A249664 In the n-th row of Pascal's triangle, an odious entry is replaced by 1, an evil entry is replaced by 0 and the n-th row is converted to decimal.
  * @author Georg Fischer
  */
 public class A249664 extends LambdaSequence {

@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A229341 a(n) = tau(n&apos;), the number of divisors of the arithmetic derivative of n.
+ * A229341 a(n) = tau(n'), the number of divisors of the arithmetic derivative of n.
  * @author Georg Fischer
  */
 public class A229341 extends LambdaSequence {

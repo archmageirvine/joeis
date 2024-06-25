@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a064.A064628;
 
 /**
- * A070964.
+ * A070981 Smallest integer k such that n divides floor((4/3)^k).
  * @author Sean A. Irvine
  */
 public class A070981 extends Sequence1 {

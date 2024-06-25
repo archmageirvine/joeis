@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A070961 Card{ k&lt;=n | bigomega(k)=bigomega(n) }.
+ * A070961 a(n) = Card{ k&lt;=n | bigomega(k) != bigomega(n) }.
  * @author Sean A. Irvine
  */
 public class A070961 extends Sequence1 {

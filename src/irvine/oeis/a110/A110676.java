@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A110676 Number of prime factors with multiplicity of 1 + (n^(n+1)).
+ * A110676 Number of prime factors with multiplicity of 1 + n^(n+1).
  * @author Georg Fischer
  */
 public class A110676 extends LambdaSequence {

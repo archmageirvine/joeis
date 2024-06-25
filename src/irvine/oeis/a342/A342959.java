@@ -7,7 +7,7 @@ import irvine.oeis.a005.A005206;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A342959 Number of 1&apos;s within a sample word of length 10^n of the infinite Fibonacci word A003842 where n is the sequence index.
+ * A342959 Number of 1's within a sample word of length 10^n of the infinite Fibonacci word A003842 where n is the sequence index.
  * @author Georg Fischer
  */
 public class A342959 extends LambdaSequence {

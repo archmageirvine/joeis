@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002379;
 
 /**
- * A070964.
+ * A070973 Smallest integer k such that n divides floor((3/2)^k).
  * @author Sean A. Irvine
  */
 public class A070973 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070165.
+ * A070991 Numbers n such that the trajectory of n under the `3x+1' map reaches n - 1.
  * @author Sean A. Irvine
  */
 public class A070991 extends Sequence1 {

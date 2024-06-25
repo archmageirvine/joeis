@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a087.A087156;
 
 /**
- * A163300 Zero together with the even nonprimes.
+ * A163300 Even numbers without 2.
  * @author Georg Fischer
  */
 public class A163300 extends Sequence1 {

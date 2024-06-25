@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070165.
+ * A070999 Numbers n such that the denominator of Sum_{k=1..n} 1/gcd(n,k) is not equal to n.
  * @author Sean A. Irvine
  */
 public class A070999 extends Sequence1 {

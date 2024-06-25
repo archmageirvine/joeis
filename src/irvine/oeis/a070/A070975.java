@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a006.A006577;
 
 /**
- * A070975 Number of steps to reach 1 in `3x+1&apos; (or Collatz) problem starting with prime(n).
+ * A070975 Number of steps to reach 1 in `3x+1' (or Collatz) problem starting with prime(n).
  * @author Georg Fischer
  */
 public class A070975 extends LambdaSequence {

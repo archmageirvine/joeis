@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006577;
 
 /**
- * A070964.
+ * A070974 Number of steps to reach 1 in `3x+1' (or Collatz) problem starting with n!.
  * @author Sean A. Irvine
  */
 public class A070974 extends A006577 {

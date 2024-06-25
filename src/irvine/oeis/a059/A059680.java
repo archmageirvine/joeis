@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A059680.
+ * A059680 Triangle T(n,k) read by rows giving number of fixed 4 X k polyominoes with n cells (n &gt;= 4, 1&lt;=k&lt;=n-3).
  * @author Sean A. Irvine
  */
 public class A059680 extends AbstractSequence {

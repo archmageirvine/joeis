@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A082482 Floor of (2^n-1)/n.
+ * A082482 a(n) = floor of (2^n-1)/n.
  * @author Georg Fischer
  */
 public class A082482 extends FloorSequence {

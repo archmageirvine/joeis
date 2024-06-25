@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070964.
+ * A070987 Number of terms in simple continued fraction for sum(k=1,n,1/k^4).
  * @author Sean A. Irvine
  */
 public class A070987 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a145;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A145487 Numbers k such that 6k+5 is prime and 12k+5 is also prime
+ * A145487 Numbers k such that 6k+5 is prime and 12k+5 is also prime.
  * @author Georg Fischer
  */
 public class A145487 extends SingleTransformSequence {

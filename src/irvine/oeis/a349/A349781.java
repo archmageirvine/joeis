@@ -7,7 +7,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a000.A000262;
 
 /**
- * A349781 a(n) = n! * (hypergeom([1 - n], [2], -1]) - 1) for n &gt;= 1 and a(0) = 0.
+ * A349781 a(n) = n! * (hypergeom([1 - n], [2], -1) - 1) for n &gt;= 1 and a(0) = 0.
  * @author Georg Fischer
  */
 public class A349781 extends AbstractSequence {

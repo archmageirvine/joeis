@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a023.A023416;
 
 /**
- * A139329 a(n) = (factorial of the number of 0&apos;s in the binary expansion of n).
+ * A139329 a(n) = (factorial of the number of 0's in the binary expansion of n).
  * @author Georg Fischer
  */
 public class A139329 extends LambdaSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012748 sec(arctanh(x)*cos(x))=1+1/2!*x^2+1/4!*x^4+25/6!*x^6+3617/8!*x^8...
+ * A012748 Expansion of e.g.f. sec(arctanh(x)*cos(x)), only even powers.
  * @author Sean A. Irvine
  */
 public class A012748 extends Sequence0 {

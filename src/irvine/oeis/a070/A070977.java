@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070964.
+ * A070977 Smallest k such that zeta(3)-sum(i=1,k,1/i^3) &lt;= zeta(4)-sum(i=1,n,1/i^4).
  * @author Sean A. Irvine
  */
 public class A070977 extends Sequence1 {

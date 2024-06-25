@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070165.
+ * A071000 Numbers m such that the denominator of Sum_{k=1..m} 1/gcd(m,k) equals m.
  * @author Sean A. Irvine
  */
 public class A071000 extends Sequence1 {

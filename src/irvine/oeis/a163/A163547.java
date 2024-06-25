@@ -8,7 +8,7 @@ import irvine.oeis.a059.A059253;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A163547 The square of the distance from the origin to the n-th term in the type I Hilbert&apos;s Hamiltonian walk A163357.
+ * A163547 The square of the distance from the origin to the n-th term in the type I Hilbert's Hamiltonian walk A163357.
  * @author Georg Fischer
  */
 public class A163547 extends MultiTransformSequence {

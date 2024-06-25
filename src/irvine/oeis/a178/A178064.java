@@ -7,7 +7,7 @@ import irvine.oeis.a023.A023416;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A178064 Number of 0&apos;s in binary representation of n-th semiprime.
+ * A178064 Number of 0's in binary representation of n-th semiprime.
  * @author Georg Fischer
  */
 public class A178064 extends SingleTransformSequence {

@@ -8,7 +8,7 @@ import irvine.oeis.a359.A359550;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A369006 a(n) = 1 if there is no prime p such that p^p divides n&apos; / gcd(n,n&apos;), and 0 otherwise, where n&apos; stands for the arithmetic derivative of n, A003415(n).
+ * A369006 a(n) = 1 if there is no prime p such that p^p divides n' / gcd(n,n'), and 0 otherwise, where n' stands for the arithmetic derivative of n, A003415(n).
  * @author Georg Fischer
  */
 public class A369006 extends SimpleTransformSequence {

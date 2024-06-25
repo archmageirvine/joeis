@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A070165.
+ * A070995 Number of nonisomorphic (undirected) Cayley graphs for the group Zp x Zp, where Zp is the elementary Abelian group of order p and p is prime. The sequence is index by primes, though starts with 1.
  * @author Sean A. Irvine
  */
 public class A070995 extends A000040 {

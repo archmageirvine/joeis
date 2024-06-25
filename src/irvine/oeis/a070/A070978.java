@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070964.
+ * A070978 Smallest k such that zeta(4)-sum(i=1,k,1/i^4) &lt;= zeta(5)-sum(i=1,n,1/i^5).
  * @author Sean A. Irvine
  */
 public class A070978 extends Sequence1 {

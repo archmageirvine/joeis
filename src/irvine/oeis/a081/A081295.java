@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A081295 a(n) = (-1)^(n+1)* coefficient of x^n in Sum_{k&gt;=1} x^k/(1+2*x^k).
+ * A081295 a(n) = (-1)^(n+1) * coefficient of x^n in Sum_{k&gt;=1} x^k/(1+2*x^k).
  * a(n)=(-1)^(n+1) * sumdiv(n,d,(-2)^(d-1))
  * @author Georg Fischer
  */

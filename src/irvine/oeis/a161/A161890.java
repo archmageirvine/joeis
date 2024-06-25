@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A161890 Numbers such that A010060(n) = A010060(n+9)
+ * A161890 Numbers such that A010060(n) = A010060(n+9).
  * @author Georg Fischer
  */
 public class A161890 extends FilterNumberSequence {

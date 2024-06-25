@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a010.A010873;
 
 /**
- * A179868 (Number of 1&apos;s in the binary expansion of n) mod 4.
+ * A179868 (Number of 1's in the binary expansion of n) mod 4.
  * @author Georg Fischer
  */
 public class A179868 extends LambdaSequence {

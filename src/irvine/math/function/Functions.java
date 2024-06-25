@@ -23,6 +23,8 @@ public final class Functions {
   public static final Function1 SQRT = new Sqrt(); // =A000196
   /** Ceiling square root. */
   public static final Function1 CEIL_SQRT = new CeilSqrt(); // =A003059
+  /** Floor cube root (truncating cube root). */
+  public static final Function1 CBRT = new CubeRoot(); // =A048766
   /** Nth prime function. */
   public static final Function1 PRIME = new Prime(); // =A000040
   /** Prime counting function. */
@@ -69,6 +71,8 @@ public final class Functions {
   public static final Function1 USIGMA0 = new UnitarySigma0(); // =A034444
   /** Sum of unitary divisors function. */
   public static final Function1 USIGMA1 = new UnitarySigma(); // =A034448
+  /** Unitary phi function. */
+  public static final Function1 UPHI = new UnitaryPhi(); // =A047994
   /** Number of distinct prime divisors function. */
   public static final Function1 OMEGA = new Omega(); // =A001221
   /** Number of distinct prime divisors counted with multiplicity function. */

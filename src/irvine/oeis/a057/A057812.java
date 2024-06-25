@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000720;
 
 /**
- * A057812 pi(n) is odd.
+ * A057812 Numbers k such that pi(k) is odd.
  * @author Georg Fischer
  */
 public class A057812 extends A000720 {

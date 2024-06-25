@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A115303 a(n) = n if n < 3, otherwise 3*a(floor(n/3)) + 2 - n mod 3.
+ * A115303 a(n) = n if n &lt; 3, otherwise 3*a(floor(n/3)) + 2 - n mod 3.
  * @author Georg Fischer
  */
 public class A115303 extends MultiTransformSequence {

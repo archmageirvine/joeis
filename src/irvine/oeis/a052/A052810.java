@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000041;
 
 /**
- * A052810 1 + number of partitions of n, n&gt;0.
+ * A052810 a(n) = 1 + (number of partitions of n, n&gt;0).
  * @author Georg Fischer
  */
 public class A052810 extends A000041 {

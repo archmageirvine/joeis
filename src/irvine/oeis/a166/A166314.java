@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000124;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A166314 Number of 1&apos;s in binary expansion of A000124(n).
+ * A166314 Number of 1's in binary expansion of A000124(n).
  * @author Georg Fischer
  */
 public class A166314 extends SingleTransformSequence {

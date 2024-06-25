@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A371372 a(n) = Sum_{d|2*n} binomial(4*n/d-1, 2*n/d)*phi(d))/(4*n) for n&gt;0 with a(0)=0.
+ * A371372 a(n) = Sum_{d|2*n} binomial(4*n/d-1, 2*n/d)*phi(d)/(4*n) for n&gt;0 with a(0)=0.
  * @author Georg Fischer
  */
 public class A371372 extends LambdaSequence {

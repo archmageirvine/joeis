@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070165.
+ * A070996 Numbers n whose sum of divisors and number of divisors are both triangular numbers.
  * @author Sean A. Irvine
  */
 public class A070996 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a010.A010879;
 
 /**
- * A105853 a(n) = sigma(n) (mod 10), i.e., unit&apos;s digit of sigma(n).
+ * A105853 a(n) = sigma(n) (mod 10), i.e., unit's digit of sigma(n).
  * @author Georg Fischer
  */
 public class A105853 extends LambdaSequence {

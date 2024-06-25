@@ -6,7 +6,7 @@ import irvine.oeis.a005.A005352;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A320642 Number of 1&apos;s in the base-(-2) expansion of -n.
+ * A320642 Number of 1's in the base-(-2) expansion of -n.
  * @author Georg Fischer
  */
 public class A320642 extends SingleTransformSequence {

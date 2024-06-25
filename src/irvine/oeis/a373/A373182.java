@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A373182 allocated for Enrique Navarrete.
+ * A373182 Number of ways that people can sit in n linearly arranged seats such that there are one or two empty seats between any two persons, zero or one empty seats at the start and end, and at least one person gets seated.
  * @author Sean A. Irvine
  */
 public class A373182 extends Sequence1 {

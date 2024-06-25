@@ -7,7 +7,7 @@ import irvine.oeis.a010.A010873;
 import irvine.oeis.a342.A342002;
 
 /**
- * A353640 ńĆiurlionis sequence A342002, reduced modulo 4.
+ * A353640 \u010ciurlionis sequence A342002, reduced modulo 4.
  * @author Georg Fischer
  */
 public class A353640 extends LambdaSequence {

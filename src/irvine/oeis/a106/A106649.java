@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A106649 a(n) = if n&lt;10 then n else 2*a(floor(n/2)) + 9 - n mod 10.
+ * A106649 Replace each digit d (except the leading one) of n with 9-d.
  * @author Georg Fischer
  */
 public class A106649 extends MultiTransformSequence {

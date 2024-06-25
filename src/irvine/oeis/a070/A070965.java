@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A070964.
+ * A070965 a(1) = 1; a(n+1) = sum{k|n} a(k) * mu(k), where the sum is over the positive divisors, k, of n; and mu(k) is the Moebius function.
  * @author Sean A. Irvine
  */
 public class A070965 extends CachedSequence {

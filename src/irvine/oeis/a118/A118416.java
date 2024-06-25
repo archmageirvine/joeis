@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A118416 Triangle read by rows: T(n,k) = (2*k-1)*2^(n-1), 0&lt;k&lt;=n.
+ * A118416 Triangle read by rows: T(n,k) = (2*k-1)*2^(n-1), 0 &lt; k &lt;= n.
  * @author Georg Fischer
  */
 public class A118416 extends Triangle {

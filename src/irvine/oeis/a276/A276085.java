@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
 
 /**
- * A276085 Primorial base log-function: a(1) = 0, a(n) = (e1*A002110(i1-1) + ... + ez*A002110(iz-1)) for n = prime(i1)^e1 * ... * prime(iz)^ez, where prime(k) is the k-th prime, A000040(k) and A002110(k) (the k-th primorial) is the product of first k primes.
+ * A276085 Primorial base log-function: fully additive with a(p) = p#/p, where p# = A034386(p).
  * @author Georg Fischer
  */
 public class A276085 extends AbstractSequence implements DirectSequence {

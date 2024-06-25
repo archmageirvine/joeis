@@ -7,7 +7,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a257.A257993;
 
 /**
- * A328589 Numbers n that are multiples of 6 and for which A257993(A276086(A276086(n))) is larger than A257993(n), where A276086 converts the primorial base expansion of n into its prime product form, and A257993 returns the index of the least prime not present in it
+ * A328589 Numbers n that are multiples of 6 and for which A257993(A276086(A276086(n))) is larger than A257993(n), where A276086 converts the primorial base expansion of n into its prime product form, and A257993 returns the index of the least prime not present in its argument.
  * @author Georg Fischer
  */
 public class A328589 extends FilterNumberSequence {

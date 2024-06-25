@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026632 T(n,[ n/2 ]), T given by A026626.
+ * A026632 a(n) = A026626(n, floor(n/2)).
  * @author Sean A. Irvine
  */
 public class A026632 extends A026626 {

@@ -7,7 +7,7 @@ import irvine.oeis.a014.A014963;
 import irvine.oeis.a064.A064097;
 
 /**
- * A307742 Quasi-logarithm A064097(n) of von Mangoldt&apos;s exponential function A014963(n).
+ * A307742 Quasi-logarithm A064097(n) of von Mangoldt's exponential function A014963(n).
  * @author Georg Fischer
  */
 public class A307742 extends LambdaSequence {

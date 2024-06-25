@@ -1,5 +1,7 @@
 package irvine.oeis.a055;
 
+import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -16,7 +18,7 @@ public class A055401 extends Sequence0 {
     long m = ++mN;
     long cnt = 0;
     while (m != 0) {
-      m -= Math.pow(Math.floor(Math.cbrt(m)), 3);
+      m -= LongUtils.pow(Functions.CBRT.l(m), 3);
       ++cnt;
     }
     return Z.valueOf(cnt);

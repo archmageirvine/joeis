@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A070964.
+ * A070972 Length of longest run of consecutive 1's in binary expansion of 3^n (A004656).
  * @author Sean A. Irvine
  */
 public class A070972 extends Sequence0 {

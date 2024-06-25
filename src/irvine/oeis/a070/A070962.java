@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A070962 Card{ k&lt;=n | omega(k)!=omega(n) }, where omega(n) = A001221(n).
+ * A070962 a(n) = Card{ k&lt;=n | omega(k)!=omega(n) }, where omega(n) = A001221(n).
  * @author Sean A. Irvine
  */
 public class A070962 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.a010.A010051;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A346529 a(n) is the number of primes that are nearest neighbors of the n-th Ramanujan&apos;s highly composite number A002182.
+ * A346529 a(n) is the number of primes that are nearest neighbors of the n-th Ramanujan's highly composite number A002182.
  * @author Georg Fischer
  */
 public class A346529 extends SimpleTransformSequence {

@@ -1,6 +1,7 @@
 package irvine.math.function;
 
 import java.util.Locale;
+import java.util.function.BiFunction;
 
 import irvine.math.z.Z;
 
@@ -236,6 +237,15 @@ public final class Functions {
   public static final GreatCommonDivisor GCD = new GreatCommonDivisor();
   /** Least common multiple. */
   public static final LeastCommonMultiple LCM = new LeastCommonMultiple();
+
+  /**
+   * Create an arbitrary two agument function over the integers defined by a lambda.
+   * @param lambda function lambda
+   * @return function
+   */
+  public static Function2 create(final BiFunction<Z, Z, Z> lambda) {
+    return new FunctionLambda(lambda);
+  }
 
   /**
    * Get a function from its name.

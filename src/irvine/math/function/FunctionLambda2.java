@@ -8,11 +8,11 @@ import irvine.math.z.Z;
  * Wrap a two argument lambda as a function.
  * @author Sean A. Irvine
  */
-class FunctionLambda extends AbstractFunction2 {
+class FunctionLambda2 extends AbstractFunction2 {
 
   private final BiFunction<Z, Z, Z> mLambda;
 
-  FunctionLambda(final BiFunction<Z, Z, Z> lambda) {
+  FunctionLambda2(final BiFunction<Z, Z, Z> lambda) {
     mLambda = lambda;
   }
 

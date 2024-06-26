@@ -34,7 +34,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(Eulerian2Test.class);
     suite.addTestSuite(FactorialTest.class);
     suite.addTestSuite(FibonacciTest.class);
-    suite.addTestSuite(FunctionLambdaTest.class);
+    suite.addTestSuite(FunctionLambda2Test.class);
     suite.addTestSuite(GreatestCommonDivisorTest.class);
     suite.addTestSuite(GreatestPrimeFactorTest.class);
     suite.addTestSuite(JacobiTest.class);

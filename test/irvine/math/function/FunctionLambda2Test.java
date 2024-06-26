@@ -7,7 +7,7 @@ import junit.framework.TestCase;
  * Tests the corresponding class.
  * @author Sean A. Irvine
  */
-public class FunctionLambdaTest extends TestCase {
+public class FunctionLambda2Test extends TestCase {
 
   public void test() {
     assertEquals(5, Functions.create(Z::or).l(1, 4));

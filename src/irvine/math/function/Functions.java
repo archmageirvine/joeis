@@ -2,6 +2,7 @@ package irvine.math.function;
 
 import java.util.Locale;
 import java.util.function.BiFunction;
+import java.util.function.Function;
 
 import irvine.math.z.Z;
 
@@ -29,11 +30,11 @@ public final class Functions {
   /** Nth prime function. */
   public static final Function1 PRIME = new Prime(); // =A000040
   /** Prime counting function. */
-  public static final Function1 PRIME_PI = new PrimePi(); // =A049084 
+  public static final Function1 PRIME_PI = new PrimePi(); // =A049084, =A000720
   /** Next prime function. */
-  public static final Function1 NEXT_PRIME = new NextPrime();
+  public static final Function1 NEXT_PRIME = new NextPrime(); // =A007918, =A151800
   /** Previous prime function. */
-  public static final Function1 PREV_PRIME = new PrevPrime();
+  public static final Function1 PREV_PRIME = new PrevPrime(); // =A007919, =A151799
   /** Factorial. */
   public static final Function1 FACTORIAL = new Factorial(); // =A000142
   /** Primorial, product of all primes up to and including the parameter. */
@@ -66,8 +67,8 @@ public final class Functions {
   public static final Function1 SIGMA1 = new Sigma1(); // =A000203
   /** Number of divisors function. */
   public static final Function1 SIGMA0 = new Sigma0(); // =A000005
-  /** Number of divisors function. */
-  public static final Function1 TAU = SIGMA0; // =A000005; Convenient synonym
+  /** Number of divisors function, convenient synonym. */
+  public static final Function1 TAU = SIGMA0; // =A000005
   /** Number of unitary divisors function. */
   public static final Function1 USIGMA0 = new UnitarySigma0(); // =A034444
   /** Sum of unitary divisors function. */
@@ -85,7 +86,7 @@ public final class Functions {
   /** The unique square free integer dividing a number. */
   public static final Function1 CORE = new Core(); // =A007913
   /** Mobius function. */
-  public static final Function1 MOBIUS = new Mobius(); // =A008683 
+  public static final Function1 MOBIUS = new Mobius(); // =A008683
   /** Moebius function. */
   public static final Function1 MOEBIUS = MOBIUS; // =A008683
   /** Mertens function. */
@@ -96,10 +97,10 @@ public final class Functions {
   public static final Function1 GPF = new GreatestPrimeFactor(); // =A006530
   /** Square free kernel. */
   public static final Function1 SQUARE_FREE_KERNEL = new SquareFreeKernel(); // =A007947
-  /** Square free kernel. */
-  public static final Function1 RAD = SQUARE_FREE_KERNEL; // =A007947, convenient synonym
+  /** Square free kernel, convenient synonym. */
+  public static final Function1 RAD = SQUARE_FREE_KERNEL; // =A007947
   /** Product of divisors. */
-  public static final Function1 POD = new ProductOfDivisors();
+  public static final Function1 POD = new ProductOfDivisors(); //=A007955
   /** Chowla function. */
   public static final Function1 CHOWLA = new Chowla(); // =A048050
   /** Arithmetic derivative. */
@@ -153,39 +154,41 @@ public final class Functions {
 
   // Developer note: SIGMA must be initialized after SIGMA1 and SIGMA0
   /** Generalized sum of divisors function. */
-  public static final Function2D SIGMA = new Sigma(); // =A000005(0, =A000203(1,
+  public static final Function2D SIGMA = new Sigma(); // =A000005(0, =A000203(1, =A001157(2, =A001158(3,
   /** Multiplicative order in <code>Z_base</code>. */
   public static final Function2D ORDER = new MultiplicativeOrder();
   /** Reverse the digits of a number. */
   public static final Function2D REVERSE = new Reverse(); // =A004086(10, = A305989(2,
   /** Reverse the digits of a number and add the original number. */
   public static final Function2D REVERSE_AND_ADD = new ReverseAndAdd();
+  /** Leading (first, initial, most significant digit) of a number. */
+  public static final Function2D LEADING_DIGIT = new LeadingDigit(); // =A000030(10, =A057427(2, =A122586(3, =A122587(4, =A339255(5, =A339256(6,
   /** Number of digits in a number. */
   public static final Function2D DIGIT_LENGTH = new DigitLength(); // =A055642(10, =A070939(2,
   /** Sum of digits in a number. */
-  public static final Function2D DIGIT_SUM =  new DigitSum(); // =A001370(10, = A000120(2,
+  public static final Function2D DIGIT_SUM = new DigitSum(); // =A001370(10, =A007953(10, =A000120(2, =A053735(3,
   /** Sum of the squares of the digits in a number. */
-  public static final Function2D DIGIT_SUM_SQUARES = new DigitSumSquares();
+  public static final Function2D DIGIT_SUM_SQUARES = new DigitSumSquares(); // =A003132(10,
   /** Sum of the cubes of the digits in a number. */
-  public static final Function2D DIGIT_SUM_CUBES = new DigitSumCubes();
+  public static final Function2D DIGIT_SUM_CUBES = new DigitSumCubes(); // =A055012(10,
   /** Digit sum root. */
-  public static final Function2D DIGIT_SUM_ROOT = new DigitSumRoot();
+  public static final Function2D DIGIT_SUM_ROOT = new DigitSumRoot(); // =A010888(10,
   /** Product of digits. */
-  public static final Function2D DIGIT_PRODUCT = new DigitProduct();
+  public static final Function2D DIGIT_PRODUCT = new DigitProduct(); // =A007954(10,
   /** Digit product root. */
-  public static final Function2D DIGIT_PRODUCT_ROOT = new DigitProductRoot();
+  public static final Function2D DIGIT_PRODUCT_ROOT = new DigitProductRoot(); // =A031347(10,
   /** Digit product persistence. */
-  public static final Function2D DIGIT_PRODUCT_PERSISTENCE = new DigitProductPersistence();
+  public static final Function2D DIGIT_PRODUCT_PERSISTENCE = new DigitProductPersistence(); // =A031346(10,
   /** Product of nonzero digits. */
   public static final Function2D DIGIT_NZ_PRODUCT = new DigitNonzeroProduct(); // =A000012(2, =A117592(3, =A338854(4, =A338803(5, =A338863(6, =A338880(7, =A338881(8, =A338882(9, =A051801(10,
   /** Digit root of nonzero digits. */
-  public static final Function2D DIGIT_NZ_PRODUCT_ROOT = new DigitNonzeroProductRoot();
+  public static final Function2D DIGIT_NZ_PRODUCT_ROOT = new DigitNonzeroProductRoot(); // =A051802(10,
   /** Count of distinct digits. */
   public static final Function2D DISTINCT_DIGIT_COUNT = new DistinctDigitCount(); // =A043537(10, =A043529(2,
   /** Sort the digits of a number into ascending order. */
-  public static final Function2D DIGIT_SORT_ASCENDING = new DigitSortAscending();
+  public static final Function2D DIGIT_SORT_ASCENDING = new DigitSortAscending(); // =A004185(10,
   /** Sort the digits of a number into descending order. */
-  public static final Function2D DIGIT_SORT_DESCENDING = new DigitSortDescending();
+  public static final Function2D DIGIT_SORT_DESCENDING = new DigitSortDescending(); // =A004186(10,
   /** Rotate right by one digit. */
   public static final Function2D ROTATE_RIGHT = new RotateRight();
   /** Multifactorial (including double factorial). */
@@ -207,11 +210,11 @@ public final class Functions {
   /** Falling factorial function. */
   public static final Function2 FALLING_FACTORIAL = new FallingFactorial(); // =A008279
   /** Stirling numbers of the first kind. */
-  public static final Function2 STIRLING1 = new Stirling1();
+  public static final Function2 STIRLING1 = new Stirling1(); // =A008275
   /** Stirling numbers of the second kind. */
-  public static final Function2 STIRLING2 = new Stirling2();
+  public static final Function2 STIRLING2 = new Stirling2(); // =A008277
   /** Associated Stirling numbers of the first kind. */
-  public static final Function2 ASSOCIATED_STIRLING1 = new AssociatedStirling1(); // =A000276
+  public static final Function2 ASSOCIATED_STIRLING1 = new AssociatedStirling1(); // =A000276, =A008306
   /** Eulerian numbers of the second kind. */
   public static final Function2 EULERIAN2 = new Eulerian2();
   /** Cyclotomic function. */
@@ -223,28 +226,37 @@ public final class Functions {
   // Aggregating functions
 
   /** Minimum of the values. */
-  public static final FunctionN MIN = new Min();
+  public static final FunctionN MIN = new Min(); // =A003983
   /** Maximum of the values. */
-  public static final FunctionN MAX = new Max();
+  public static final FunctionN MAX = new Max(); // =A051125
   /** Sum of the values. */
-  public static final FunctionN SUM = new Sum();
+  public static final FunctionN SUM = new Sum(); // =A051162, =A108872
   /** Product of the values. */
-  public static final FunctionN PRODUCT = new Product();
+  public static final FunctionN PRODUCT = new Product(); // =A075362, =A079904
 
   // Functions supporting both two arguments and aggregation
 
   /** Greatest common divisor. */
-  public static final GreatCommonDivisor GCD = new GreatCommonDivisor();
+  public static final GreatCommonDivisor GCD = new GreatCommonDivisor(); // =A050873
   /** Least common multiple. */
-  public static final LeastCommonMultiple LCM = new LeastCommonMultiple();
+  public static final LeastCommonMultiple LCM = new LeastCommonMultiple(); // =A051173
 
   /**
-   * Create an arbitrary two agument function over the integers defined by a lambda.
+   * Create an arbitrary one argument function over the integers defined by a lambda.
+   * @param lambda function lambda
+   * @return function
+   */
+  public static Function1 create(final Function<Z, Z> lambda) {
+    return new FunctionLambda1(lambda);
+  }
+
+  /**
+   * Create an arbitrary two argument function over the integers defined by a lambda.
    * @param lambda function lambda
    * @return function
    */
   public static Function2 create(final BiFunction<Z, Z, Z> lambda) {
-    return new FunctionLambda(lambda);
+    return new FunctionLambda2(lambda);
   }
 
   /**

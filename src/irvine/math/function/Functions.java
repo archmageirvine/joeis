@@ -15,8 +15,8 @@ public final class Functions {
 
   private Functions() { }
 
-  // WARNING: There is a certain amount of trickiness here in that the order in which
-  // these functions are initialized matters.
+  // WARNING: There is a certain amount of trickiness here:
+  // The order in which these functions are initialized matters.
 
   // One argument functions
 
@@ -27,6 +27,8 @@ public final class Functions {
   public static final Function1 CEIL_SQRT = new CeilSqrt(); // =A003059
   /** Floor cube root (truncating cube root). */
   public static final Function1 CBRT = new CubeRoot(); // =A048766
+  /** Ceiling cube root. */
+  public static final Function1 CEIL_CBRT = new CeilCubeRoot();
   /** Nth prime function. */
   public static final Function1 PRIME = new Prime(); // =A000040
   /** Prime counting function. */
@@ -199,8 +201,6 @@ public final class Functions {
   // Two argument functions
   /** Valuation function. */
   public static final Function2 VALUATION = new Valuation();
-  /** Valuation function. */
-  public static final Function2 ORD = VALUATION; // Convenient synonym
   /** Jacobi symbol. */
   public static final Function2 JACOBI = new Jacobi();
   /** Kronecker symbol. */
@@ -240,6 +240,7 @@ public final class Functions {
   public static final GreatCommonDivisor GCD = new GreatCommonDivisor(); // =A050873
   /** Least common multiple. */
   public static final LeastCommonMultiple LCM = new LeastCommonMultiple(); // =A051173
+
 
   /**
    * Create an arbitrary one argument function over the integers defined by a lambda.

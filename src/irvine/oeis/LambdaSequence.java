@@ -24,8 +24,8 @@ public class LambdaSequence extends AbstractSequence implements DirectSequence {
 
   private int mN; // current index
   private final Function<Integer, Z> mLambda; // lambda expression n -> f(n)
-  private Z[] mInits; // initial terms
-  private int mInitNo; // mInits.length
+  private final Z[] mInits; // initial terms
+  private final int mInitNo; // mInits.length
   private int mIn; // index for mInits
   /**
    * Construct the sequence with offset 0 and no initial terms.

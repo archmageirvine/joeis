@@ -1,8 +1,8 @@
 package irvine.math.group;
 
+import irvine.math.api.Matrix;
 import irvine.math.api.Ring;
 import irvine.math.api.Sqrt;
-import irvine.math.api.Matrix;
 
 /**
  * A row vector space where individuals elements are drawn from a ring.
@@ -13,7 +13,6 @@ public class VectorSpace<E> extends MatrixGroupRing<E> {
 
   /**
    * Construct a new vector space for vectors of a specified length.
-   *
    * @param cols number of columns
    * @param elementRing ring of underlying elements
    */

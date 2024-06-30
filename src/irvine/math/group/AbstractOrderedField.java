@@ -3,6 +3,7 @@ package irvine.math.group;
 
 import irvine.math.api.Field;
 import irvine.math.api.Group;
+import irvine.math.z.Z;
 
 /**
  * Default implementation of certain field methods.
@@ -27,4 +28,11 @@ public abstract class AbstractOrderedField<E> extends AbstractOrderedIntegralDom
   public Group<E> multiplicativeGroup() {
     return new MultiplicativeGroup<>(this);
   }
+
+  /**
+   * Round the specified element to the nearest integer.
+   * @param n value to round
+   * @return integer
+   */
+  public abstract Z round(final E n);
 }

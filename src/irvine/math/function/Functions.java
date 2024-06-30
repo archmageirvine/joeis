@@ -41,6 +41,8 @@ public final class Functions {
   public static final Function1 FACTORIAL = new Factorial(); // =A000142
   /** Primorial, product of all primes up to and including the parameter. */
   public static final Function1 PRIMORIAL = new Primorial(); // =A034386
+  /** Superfactorial (product of factorials). */
+  public static final Function1 SUPERFACTORIAL = new Superfactorial(); // =A000178
   /** Factorial base representation. */
   public static final Function1 FACTORIAL_BASE = new FactorialBase(); // =A007623
   /** Primorial base representation. */

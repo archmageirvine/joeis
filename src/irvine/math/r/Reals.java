@@ -273,4 +273,9 @@ public final class Reals extends AbstractOrderedField<Double> implements Exp<Dou
   public Double coerce(final long n) {
     return (double) n;
   }
+
+  @Override
+  public Z round(final Double n) {
+    return Z.valueOf(Math.round(n));
+  }
 }

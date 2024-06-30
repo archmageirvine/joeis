@@ -3,7 +3,7 @@ package irvine.math.function;
 import irvine.math.z.Z;
 
 /**
- * Pochhamer symbol (rising factorials).
+ * Pochhammer symbol (rising factorials).
  * @author Sean A. Irvine
  */
 class Pochhammer extends AbstractFunction2 {

@@ -2,12 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A005408 The odd numbers: a(n) = 2*n + 1.
  * @author Sean A. Irvine
  */
-public class A005408 extends AbstractSequence {
+public class A005408 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -29,4 +30,15 @@ public class A005408 extends AbstractSequence {
     mN = mN.add(2);
     return mN;
   }
+
+  @Override
+  public Z a(final Z n) {
+    return n.multiply(2).add(1);
+  }
+
+  @Override
+  public Z a(final int n) {
+    return Z.valueOf(n * 2 + 1);
+  }
+
 }

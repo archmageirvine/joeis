@@ -1,13 +1,15 @@
 package irvine.oeis.a000;
 
+import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A000984 Central binomial coefficients: binomial(2*n,n) = (2*n)!/(n!)^2.
  * @author Sean A. Irvine
  */
-public class A000984 extends AbstractSequence {
+public class A000984 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -32,5 +34,16 @@ public class A000984 extends AbstractSequence {
     }
     return mV;
   }
+
+  @Override
+  public Z a(final Z n) {
+    return Binomial.binomial(n.multiply2(), n);
+  }
+
+  @Override
+  public Z a(final int n) {
+    return Binomial.binomial(2 * n, n);
+  }
+
 }
 

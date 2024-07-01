@@ -23,12 +23,14 @@ import irvine.math.z.ZUtils;
 public class LambdaSequence extends AbstractSequence implements DirectSequence {
 
   private int mN; // current index
+  private int mOffset; // first index
   private final Function<Integer, Z> mLambda; // lambda expression n -> f(n)
   private final Z[] mInits; // initial terms
   private final int mInitNo; // mInits.length
   private int mIn; // index for mInits
+
   /**
-   * Construct the sequence with offset 0 and no initial terms.
+   * Construct the sequence with default offset 0 and no initial terms.
    * @param lambda lambda expression for an index variable starting at <code>offset</code>.
    */
   public LambdaSequence(final Function<Integer, Z> lambda) {
@@ -42,6 +44,7 @@ public class LambdaSequence extends AbstractSequence implements DirectSequence {
    */
   public LambdaSequence(final int offset, final Function<Integer, Z> lambda) {
     super(offset);
+    mOffset = offset;
     mN = offset - 1;
     mLambda = lambda;
     mInitNo = 0;
@@ -57,6 +60,7 @@ public class LambdaSequence extends AbstractSequence implements DirectSequence {
    */
   public LambdaSequence(final int offset, final Function<Integer, Z> lambda, final long... initTerms) {
     super(offset);
+    mOffset = offset;
     mN = offset - 1;
     mLambda = lambda;
     mIn = -1;
@@ -72,6 +76,7 @@ public class LambdaSequence extends AbstractSequence implements DirectSequence {
    */
   public LambdaSequence(final int offset, final Function<Integer, Z> lambda, final String initTerms) {
     super(offset);
+    mOffset = offset;
     mN = offset - 1;
     mLambda = lambda;
     mIn = -1;
@@ -97,8 +102,8 @@ public class LambdaSequence extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    if (n < mInitNo) {
-      return mInits[n];
+    if (n < mInitNo - mOffset) {
+      return mInits[n - mOffset];
     } else {
       return mLambda.apply(n);
     }

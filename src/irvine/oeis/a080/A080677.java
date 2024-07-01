@@ -3,27 +3,39 @@ package irvine.oeis.a080;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004001;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A080677 a(n) = n + 1 - A004001(n).
  * @author Georg Fischer
  */
-public class A080677 extends Sequence1 {
+public class A080677 extends Sequence1 implements DirectSequence {
 
-  final Sequence mA004001 = new A004001();
-  protected long mN;
+  private static final MemorySequence A004001 = new A004001();
+  private int mN;
+
   /** Construct the sequence. */
   public A080677() {
     mN = 0;
   }
-  
+
   @Override
   public Z next() {
-    ++mN;
-    return Z.valueOf(mN).add(Z.ONE).subtract(mA004001.next());
+    return a(++mN);
+  }
+
+
+  @Override
+  public Z a(final Z n) {
+    return n.add(1).subtract(A004001.a(n.subtract(1)));
+  }
+
+  @Override
+  public Z a(final int n) {
+    return Z.valueOf(n + 1).subtract(A004001.a(n - 1));
   }
 
 }

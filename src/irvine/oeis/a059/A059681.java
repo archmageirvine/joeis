@@ -230,12 +230,26 @@ public class A059681 extends AbstractSequence {
   }
 
   private static boolean isAllowed1(final String a, final String b) {
-    // Checks for u <- u and . <- v
+    // Checks for u <- u and (. <- v or v <- v)
     for (int k = 0; k < a.length(); ++k) {
       if (a.charAt(k) == 'u' && b.charAt(k) != 'u') {
         return false;
       }
-      if (a.charAt(k) == 'v' && b.charAt(k) != '.') {
+      if (a.charAt(k) == 'v' && b.charAt(k) != '.' && b.charAt(k) != 'v') {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  private static boolean isAllowed2(final String a, final String b) {
+    // Checks for u <- v and . <- u
+    // Effectively this is a swap of the roles of u and v in isAllowed1
+    for (int k = 0; k < a.length(); ++k) {
+      if (a.charAt(k) == 'u' && b.charAt(k) != '.') {
+        return false;
+      }
+      if (a.charAt(k) == 'v' && b.charAt(k) != 'u') {
         return false;
       }
     }
@@ -266,7 +280,7 @@ public class A059681 extends AbstractSequence {
         if (transitions[k][j] == '?') {
           if (isForbidden1(a, b) || isForbidden2(a, b)) {
             transitions[k][j] = '.';
-          } else if (isAllowed1(a, b)) {
+          } else if (isAllowed1(a, b) || isAllowed2(a, b)) {
             transitions[k][j] = '#';
           }
         }

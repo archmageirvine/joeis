@@ -75,6 +75,7 @@ public class SingleTransformSequence extends AbstractSequence {
     Z result = null;
     if (mIn < mInitNo) {
       result = mInits[mIn];
+      mSeq.next();
     } else {
       final Z term = mSeq.next();
       result = term == null ? null : mLambda.apply(term, mN);

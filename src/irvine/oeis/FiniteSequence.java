@@ -13,10 +13,11 @@ import irvine.math.z.ZUtils;
  * @author Sean A. Irvine
  * @author Georg Fischer
  */
-public class FiniteSequence extends AbstractSequence implements Serializable {
+public class FiniteSequence extends AbstractSequence implements Serializable, DirectSequence {
 
   /** Default offset. */
   public static final int DEFOFF = 0;
+  private int mOffset = DEFOFF;
   private int mN = 0;
   private final ArrayList<Z> mList;
   protected String mAttr; // attribute: one of the following
@@ -42,6 +43,7 @@ public class FiniteSequence extends AbstractSequence implements Serializable {
    */
   public FiniteSequence(final int offset, final String attr, final int... seq) {
     super(offset);
+    mOffset = offset;
     mAttr = attr;
     mList = new ArrayList<>();
     for (final long t : seq) {
@@ -57,6 +59,7 @@ public class FiniteSequence extends AbstractSequence implements Serializable {
    */
   public FiniteSequence(final int offset, final String attr, final long... seq) {
     super(offset);
+    mOffset = offset;
     mAttr = attr;
     mList = new ArrayList<>();
     for (final long t : seq) {
@@ -72,6 +75,7 @@ public class FiniteSequence extends AbstractSequence implements Serializable {
    */
   public FiniteSequence(final int offset, final String attr, final Z... seq) {
     super(offset);
+    mOffset = offset;
     mAttr = attr;
     mList = new ArrayList<>(Arrays.asList(seq));
   }
@@ -139,7 +143,16 @@ public class FiniteSequence extends AbstractSequence implements Serializable {
    * @return specified element
    */
   public Z a(final int index) {
-    return mList.get(index);
+    return mList.get(index - mOffset);
+  }
+
+  /**
+   * Directly return the specified element of this sequence.
+   * @param index index (from 0)
+   * @return specified element
+   */
+  public Z a(final Z index) {
+    return mList.get(index.intValueExact() - mOffset);
   }
 
   /**

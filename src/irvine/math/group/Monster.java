@@ -210,7 +210,7 @@ public final class Monster {
    * @return centralizer order
    */
   public static Z centralizerOrder(final int characterNumber) {
-    return CM.a(characterNumber - 1);
+    return CM.a(characterNumber); // for corrected FiniteSequence.a 
   }
 
   private static List<Z> sChi = null;

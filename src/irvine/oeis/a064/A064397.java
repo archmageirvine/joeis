@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064397 Numbers n such that prime(n) + prime(n+1) is a square.
+ * A064397 Numbers k such that prime(k) + prime(k+1) is a square.
  * @author Sean A. Irvine
  */
 public class A064397 extends Sequence1 {

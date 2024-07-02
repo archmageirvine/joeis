@@ -5,7 +5,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A371003 a(n) = binomial(2*n-1,n) - binomial(n, 2)*(binomial(n-1, 2) + 2) - 1.
+ * A371003 a(n) = binomial(2*n-1,n) - binomial(n,2)*(binomial(n-1,2) + 2) - 1.
  * @author Georg Fischer
  */
 public class A371003 extends LambdaSequence {

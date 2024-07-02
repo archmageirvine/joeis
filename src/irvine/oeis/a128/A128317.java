@@ -6,7 +6,7 @@ import irvine.oeis.a130.A130595;
 import irvine.oeis.triangle.Product;
 
 /**
- * A128317 A054523 * signed A007318.
+ * A128317 Triangle read by rows: T = A054523 * A130595, as a lower triangular matrix.
  * @author Georg Fischer
  */
 public class A128317 extends Product {

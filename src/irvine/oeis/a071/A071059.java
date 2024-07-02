@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071013.
+ * A071059 Number of ways of pairing even numbers in the range 1 to n with odd numbers in the range n+1 to 2n such that each pair sums to a prime.
  * @author Sean A. Irvine
  */
 public class A071059 extends Sequence1 {

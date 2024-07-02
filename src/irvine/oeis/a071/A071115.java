@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060316.
+ * A071115 a(1) = 1; a(n+1) is the smallest integer &gt; 0 that cannot be obtained from the integers {a(1), ..., a(n)} using each number at most once and the operators +, -, *, /, where intermediate subexpressions must be integers.
  * @author Sean A. Irvine
  */
 public class A071115 extends Sequence1 {

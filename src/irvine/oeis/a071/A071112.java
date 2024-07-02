@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060316.
+ * A071112 Smallest k such that the number of elements in the continued fraction for (1+1/k)^k is &gt;= n.
  * @author Sean A. Irvine
  */
 public class A071112 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071013.
+ * A071069 a(n) = min { A070923(k) | n^3 &lt; k &lt; (n+1)^3 }.
  * @author Sean A. Irvine
  */
 public class A071069 extends Sequence1 {

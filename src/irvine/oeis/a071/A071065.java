@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071013.
+ * A071065 A permutation of natural numbers: a(1)=2 a(n) is the smallest integer different from a(1), a(2), a(3), ..., a(n-1) such that a(n)+n is prime.
  * @author Sean A. Irvine
  */
 public class A071065 extends Sequence1 {

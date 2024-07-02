@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A308813 Square array A(n,k), n &gt;= 1, k &gt;= 0, read by antidiagonals, where A(n,k) is Sum_{d|n} k^(d-1).
+ * A308813 Square array A(n,k), n &gt;= 1, k &gt;= 0, read by descending antidiagonals, where A(n,k) is Sum_{d|n} k^(d-1).
  * @author Georg Fischer
  */
 public class A308813 extends UpperLeftTriangle {

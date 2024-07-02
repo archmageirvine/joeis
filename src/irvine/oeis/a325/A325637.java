@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterLambdaSequence;
 
 /**
- * A325637 Numbers n for which gcd(2n, sigma(n)) = 2n.
+ * A325637 Numbers k for which gcd(2k, sigma(k)) = 2k.
  * @author Georg Fischer
  */
 public class A325637 extends FilterLambdaSequence {

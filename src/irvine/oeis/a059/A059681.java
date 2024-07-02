@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A059680 Triangle T(n,k) read by rows giving number of fixed 4 X k polyominoes with n cells (n &gt;= 4, 1&lt;=k&lt;=n-3).
+ * A059681 Triangle T(n,k) giving number of fixed 5 X k polyominoes with n cells (n &gt;= 5, 1&lt;=k&lt;=n-4).
  * @author Sean A. Irvine
  */
 public class A059681 extends AbstractSequence {
@@ -229,6 +229,41 @@ public class A059681 extends AbstractSequence {
     return true;
   }
 
+  private static boolean checkIfDies(final String a, final String b, final int k) {
+    final char t = b.charAt(k);
+    if (t == '.') {
+      return false;
+    }
+    if (a.charAt(k) != '.') {
+      return false; // easy case
+    }
+    for (int j = k - 1; j >= 0; --j) {
+      if (b.charAt(j) != '.') {
+        return false; // already determined it does not die
+      }
+    }
+    for (int j = k + 1; j < b.length(); ++j) {
+      if (b.charAt(j) == t && a.charAt(j) != '.') {
+        return false;
+      }
+    }
+    // Found no extension for t != .
+    return true;
+  }
+
+  private static boolean isForbidden3(final String a, final String b) {
+    if (a.indexOf('v') == 0 || b.indexOf('v') == 0) {
+      return false;
+    }
+    // We have u and v in both a and b, check u and v in b does not die
+    for (int k = 0; k < a.length(); ++k) {
+      if (checkIfDies(a, b, k)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
   private static boolean isAllowed1(final String a, final String b) {
     // Checks for u <- u and (. <- v or v <- v)
     for (int k = 0; k < a.length(); ++k) {
@@ -278,7 +313,7 @@ public class A059681 extends AbstractSequence {
       for (int j = 0; j < CASES.length; ++j) {
         final String b = CASES[j];
         if (transitions[k][j] == '?') {
-          if (isForbidden1(a, b) || isForbidden2(a, b)) {
+          if (isForbidden1(a, b) || isForbidden2(a, b) || isForbidden3(a, b)) {
             transitions[k][j] = '.';
           } else if (isAllowed1(a, b) || isAllowed2(a, b)) {
             transitions[k][j] = '#';

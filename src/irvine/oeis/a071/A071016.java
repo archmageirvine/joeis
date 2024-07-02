@@ -4,7 +4,7 @@ import irvine.oeis.a002.A002487;
 import irvine.oeis.transform.Stirling2TransformSequence;
 
 /**
- * A071013.
+ * A071016 Stirling_2 transform of A002487.
  * @author Sean A. Irvine
  */
 public class A071016 extends Stirling2TransformSequence {

@@ -8,7 +8,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a002.A002275;
 
 /**
- * A180039 Combinatorial tetrahedral numbers
+ * A180039 Combinatorial tetrahedral numbers.
  * @author Georg Fischer
  */
 public class A180039 extends LambdaSequence {

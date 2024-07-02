@@ -4,7 +4,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a002.A002371;
 
 /**
- * A060316.
+ * A071126 Length of least repunit which is a multiple of the n-th prime, or 0 if no such multiple exists.
  * @author Sean A. Irvine
  */
 public class A071126 extends PrependSequence {

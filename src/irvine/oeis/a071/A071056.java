@@ -8,7 +8,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A071013.
+ * A071056 Smallest number m such that m = p(i) mod p(i)^2 for 1&lt;=i&lt;=n.
  * @author Sean A. Irvine
  */
 public class A071056 extends Sequence1 {

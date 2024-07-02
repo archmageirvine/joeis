@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000027;
 import irvine.oeis.a001.A001248;
 
 /**
- * A178211 prime(n)^2 mod n.
+ * A178211 a(n) = prime(n)^2 mod n.
  * @author Georg Fischer
  */
 public class A178211 extends Sequence1 {

@@ -11,7 +11,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002808;
 
 /**
- * A071013.
+ * A071081 Determinant of the n X n matrix whose element (i,j) equals the |i-j|-th composite number, or 0 if i=j.
  * @author Sean A. Irvine
  */
 public class A071081 extends Sequence1 {

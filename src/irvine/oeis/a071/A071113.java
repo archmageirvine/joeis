@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060316.
+ * A071113 Numbers k such that the number of terms in the continued fraction for (1 + 1/x)^x equals k for some x.
  * @author Sean A. Irvine
  */
 public class A071113 extends Sequence1 {

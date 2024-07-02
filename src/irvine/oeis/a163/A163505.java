@@ -8,7 +8,7 @@ import irvine.oeis.a005.A005408;
 import irvine.oeis.a014.A014076;
 
 /**
- * A163505 a(n) = n-th odd nonprime mod n-th odd number.
+ * A163505 a(n) = (n-th odd nonprime) mod (n-th odd number).
  * @author Georg Fischer
  */
 public class A163505 extends Sequence1 {

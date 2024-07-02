@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071013.
+ * A071060 Largest n-digit prime with only prime digits.
  * @author Sean A. Irvine
  */
 public class A071060 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A322994 M√∂bius transform of A322993.
+ * A322994 M\u00f6bius transform of A322993.
  * @author Georg Fischer
  */
 public class A322994 extends LambdaSequence {

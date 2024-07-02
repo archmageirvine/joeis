@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A060316.
+ * A071116 Least m such that sigma(n + phi(m)) = sigma(phi(m)).
  * @author Sean A. Irvine
  */
 public class A071116 extends Sequence1 {

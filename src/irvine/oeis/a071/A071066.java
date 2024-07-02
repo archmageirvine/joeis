@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A071013.
+ * A071066 Palindromic prime pyramid with a(1)=2 such that (number of digits in a(n+1)) = (number of digits in a(n)) + 6.
  * @author Sean A. Irvine
  */
 public class A071066 extends NoncomputableSequence {

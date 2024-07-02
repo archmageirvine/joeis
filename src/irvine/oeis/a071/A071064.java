@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a061.A061602;
 
 /**
- * A071013.
+ * A071064 Numbers divisible by the sum of factorials of their digits [A061602(n)] and also terminate in the sum of factorials of their digits.
  * @author Sean A. Irvine
  */
 public class A071064 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a070.A070887;
 
 /**
- * A071013.
+ * A071048 Number of 0's in n-th row of triangle in A070887.
  * @author Sean A. Irvine
  */
 public class A071048 extends Sequence0 {

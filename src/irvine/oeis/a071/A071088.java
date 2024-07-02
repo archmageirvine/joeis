@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071013.
+ * A071088 Number of permutations that avoid the generalized pattern 12345-6.
  * @author Sean A. Irvine
  */
 public class A071088 extends Sequence0 {

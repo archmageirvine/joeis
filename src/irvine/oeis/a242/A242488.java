@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A242488 Numbers n such that the largest prime factor of n^2 - 2 is 17.
+ * A242488 Numbers m such that the largest prime factor of m^2 - 2 is 17.
  * @author Georg Fischer
  */
 public class A242488 extends FilterNumberSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A038371 Smallest prime factor of 10^n+1.
+ * A038371 Smallest prime factor of 10^n + 1.
  * @author Sean A. Irvine
  */
 public class A038371 extends Sequence0 {

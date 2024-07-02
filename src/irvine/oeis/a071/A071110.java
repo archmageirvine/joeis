@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A060316 a(n) is the smallest natural number we cannot obtain from n, n+1, n+2, n+3, n+4, n+5 and the operators +, -, *, /, using each number only once.
+ * A071110 a(n) is the smallest integer &gt;=0 we cannot obtain from n, n+1, n+2, n+3, n+4 and the operators +, -, *, /, using each number only once.
  * @author Sean A. Irvine
  */
 public class A071110 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A247205 Numbers n such that 2*n^2 - 1 divides 2^n - 1.
+ * A247205 Numbers k such that 2*k^2 - 1 divides 2^k - 1.
  *
  * @author Georg Fischer
  */

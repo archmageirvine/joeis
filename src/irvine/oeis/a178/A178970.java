@@ -7,7 +7,7 @@ import irvine.oeis.a005.A005408;
 import irvine.oeis.a081.A081294;
 
 /**
- * A178970 2^(2n-1) mod (2n+1).
+ * A178970 a(n) = 2^(2n-1) mod (2n+1).
  * @author Georg Fischer
  */
 public class A178970 extends AbstractSequence {

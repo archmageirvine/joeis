@@ -4,7 +4,7 @@ package irvine.oeis.a210;
 import irvine.oeis.recur.PaddingSequence;
 
 /**
- * A210032 a(n)=n for n=1,2,3 and 4; a(n)=5 for n&gt;=5.
+ * A210032 a(n)=n for n=1,2,3 and 4; a(n)=5 for n &gt;= 5.
  * @author Georg Fischer
  */
 public class A210032 extends PaddingSequence {

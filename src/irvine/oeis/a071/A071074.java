@@ -4,7 +4,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.recur.PeriodicSequence;
 
 /**
- * A071013.
+ * A071074 Sprague-Grundy values for the game of Double Kayles (octal game .7777).
  * @author Sean A. Irvine
  */
 public class A071074 extends PrependSequence {

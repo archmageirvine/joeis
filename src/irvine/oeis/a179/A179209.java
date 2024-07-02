@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a178.A178970;
 
 /**
- * A179209 n such that 2^(2n-1) mod (2n+1) = 2.
+ * A179209 Numbers k such that 2^(2*k-1) mod (2*k+1) = 2.
  * @author Georg Fischer
  */
 public class A179209 extends FilterPositionSequence {

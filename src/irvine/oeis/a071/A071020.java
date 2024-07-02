@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071013.
+ * A071020 Square array T(i,j) = Bernoulli(2i)*Bernoulli(2j) read by antidiagonals: numerators.
  * @author Sean A. Irvine
  */
 public class A071020 extends Sequence0 {

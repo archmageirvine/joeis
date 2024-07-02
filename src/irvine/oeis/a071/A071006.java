@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071006 Number of positive solutions to the Diophantine equation x^2+y^3=n^2.
+ * A071006 Number of positive solutions to the Diophantine equation x^2+y^3=n^2 with y &lt;= x.
  * @author Sean A. Irvine
  */
 public class A071006 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060316.
+ * A071127 Number of times there is a prime p &lt; n such that 2n+p is prime.
  * @author Sean A. Irvine
  */
 public class A071127 extends Sequence1 {

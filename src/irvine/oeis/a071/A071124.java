@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a067.A067259;
 
 /**
- * A060316.
+ * A071124 Least of five consecutive numbers which are cubefree and not squarefree, i.e., {k, k+1, k+2, k+3, k+4} are in A067259.
  * @author Sean A. Irvine
  */
 public class A071124 extends A067259 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A071013.
+ * A071087 w values for A071352.
  * @author Sean A. Irvine
  */
 public class A071087 extends A000040 {

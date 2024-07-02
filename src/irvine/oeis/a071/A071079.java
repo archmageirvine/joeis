@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071013.
+ * A071079 Determinant of the n X n matrix whose element (i,j) equals the |i-j|-th prime or if i=j, 0.
  * @author Sean A. Irvine
  */
 public class A071079 extends Sequence1 {

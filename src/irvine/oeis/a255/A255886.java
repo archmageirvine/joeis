@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A255886 Number of orderings of the edges of the labeled complete graph K_n such that the graph induced by the first k edges is connected for every k=1, 2,...,binomial(n, 2).
+ * A255886 Number of orderings of the edges of the labeled complete graph K_n such that the graph induced by the first k edges is connected for every k=1,2,...,binomial(n,2).
  * @author Georg Fischer
  */
 public class A255886 extends LambdaSequence {

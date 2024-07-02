@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a015.A015910;
 
 /**
- * A180060 2^(2^n mod n) mod n.
+ * A180060 a(n) = 2^(2^n mod n) mod n.
  * @author Georg Fischer
  */
 public class A180060 extends Sequence1 {

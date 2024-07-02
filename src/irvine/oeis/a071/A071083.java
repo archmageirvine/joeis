@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071013.
+ * A071083 Determinant of the n X n matrix whose element (i,j) equals phi(|i-j|).
  * @author Sean A. Irvine
  */
 public class A071083 extends Sequence1 {

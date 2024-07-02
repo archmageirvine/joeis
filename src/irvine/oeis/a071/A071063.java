@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071013.
+ * A071063 Determinant of n X n matrix defined by m(i,j) = 0 if i+j is a prime, m(i,j) = 1 otherwise.
  * @author Sean A. Irvine
  */
 public class A071063 extends Sequence1 {

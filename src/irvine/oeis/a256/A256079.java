@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a002.A002275;
 
 /**
- * A256079 Increase each (decimal) digit of n by 1, with carry (i.e., &apos;9&apos; becomes &apos;0&apos; and a (further) increment of 1 of the digit to the left).
+ * A256079 Increase each (decimal) digit of n by 1, with carry (i.e., '9' becomes '0' and a (further) increment of 1 of the digit to the left).
  * @author Georg Fischer
  */
 public class A256079 extends LambdaSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A038455 A Jabotinsky-triangle related to A006963.
+ * A038455 Triangle read by rows: T(n, k) = [x^k] x*Pochhammer(n + x, n)/(n + x).
  * @author Sean A. Irvine
  */
 public class A038455 extends Sequence1 {

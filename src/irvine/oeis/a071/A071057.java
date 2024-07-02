@@ -8,7 +8,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A071013.
+ * A071057 Smallest number m such that m = p(i+1) mod p(i) for 1&lt;=i&lt;=n.
  * @author Sean A. Irvine
  */
 public class A071057 extends Sequence1 {

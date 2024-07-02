@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071013.
+ * A071085 Determinant of the n X n matrix whose element (i,j) equals mu(|i-j|) where mu(k) is the moebius function for k &gt; 0 and mu(0) = 0.
  * @author Sean A. Irvine
  */
 public class A071085 extends Sequence0 {

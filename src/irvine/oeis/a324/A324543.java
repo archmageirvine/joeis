@@ -8,7 +8,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a323.A323243;
 
 /**
- * A324543 M√∂bius transform of A323243, where A323243(n) = sigma(A156552(n)).
+ * A324543 M\u00f6bius transform of A323243, where A323243(n) = sigma(A156552(n)).
  * @author Georg Fischer
  */
 public class A324543 extends LambdaSequence {

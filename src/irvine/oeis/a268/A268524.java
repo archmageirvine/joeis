@@ -4,7 +4,7 @@ package irvine.oeis.a268;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A268524 a(n) = r*a(ceiling(n/2))+s*a(floor(n/2)) with a(1)=1 and (r,s)=(3, 1).
+ * A268524 a(n) = r*a(ceiling(n/2))+s*a(floor(n/2)) with a(1)=1 and (r,s)=(3,1).
  * @author Georg Fischer
  */
 public class A268524 extends MultiTransformSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071013.
+ * A071086 Number of integers of the form (nk)^2/(n^2+k^2), k&gt;=1.
  * @author Sean A. Irvine
  */
 public class A071086 extends Sequence1 {

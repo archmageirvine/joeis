@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071013.
+ * A071084 Determinant of the n X n matrix whose element (i,j) equals t(|i-j|) where t(n) is the number of divisors of n and t(0) = 0.
  * @author Sean A. Irvine
  */
 public class A071084 extends Sequence1 {

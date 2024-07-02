@@ -2414,3 +2414,4 @@ A071103 Number of perfect matchings in variant of n X n+2 Aztec rectangle graph.
 A071104 Number of perfect matchings in variant of 2n-1 X 2n Aztec rectangle graph.
 A071105 Number of perfect matchings in variant of right triangle graph with n edges.
 A071106 Number of perfect matchings in variant of right triangle graph with n edges where n runs through numbers congruent to 0 or 3 mod 4.
+A071136 Number of reduced positive-definite ternary forms of determinant -n

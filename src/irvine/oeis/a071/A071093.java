@@ -13,7 +13,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.Pair;
 
 /**
- * A071013.
+ * A071093 Number of perfect matchings in triangle graph with n nodes per side as n runs through numbers congruent to 0 or 3 mod 4.
  * @author Sean A. Irvine
  */
 public class A071093 extends Sequence0 {

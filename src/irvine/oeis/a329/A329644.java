@@ -8,7 +8,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a323.A323244;
 
 /**
- * A329644 M√∂bius transform of A323244, the deficiency of A156552(n).
+ * A329644 M\u00f6bius transform of A323244, the deficiency of A156552(n).
  * @author Georg Fischer
  */
 public class A329644 extends LambdaSequence {

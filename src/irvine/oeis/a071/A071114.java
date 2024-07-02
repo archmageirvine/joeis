@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a246.A246655;
 
 /**
- * A060316.
+ * A071114 Numbers n such that n and sigma(n) are prime powers (of the form p^k, p prime, k&gt;=1).
  * @author Sean A. Irvine
  */
 public class A071114 extends FilterSequence {

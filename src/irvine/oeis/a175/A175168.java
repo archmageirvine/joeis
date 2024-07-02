@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a062.A062173;
 
 /**
- * A175168 Numbers n such that 2^(n-1) mod n is a prime number.
+ * A175168 Numbers k such that 2^(k-1) mod k is a prime number.
  * @author Georg Fischer
  */
 public class A175168 extends FilterPositionSequence {

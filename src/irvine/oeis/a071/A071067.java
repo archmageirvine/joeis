@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A071013.
+ * A071067 First highest palindromic prime pyramid with a(1)=2 such that (number of digits in a(n+1)) = (number of digits in a(n)) + 4.
  * @author Sean A. Irvine
  */
 public class A071067 extends FiniteSequence {

@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002808;
 import irvine.oeis.a158.A158611;
 
 /**
- * A174660 2^A158611(n) mod A002808(n).
+ * A174660 a(n) = 2^A158611(n) mod A002808(n).
  * @author Georg Fischer
  */
 public class A174660 extends Sequence1 {

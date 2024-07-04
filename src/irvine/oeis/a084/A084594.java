@@ -5,7 +5,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A084594 a(n) = Sum_{r=0..2^(n-1)} Binomial(2^n, 2r)*3^r.
+ * A084594 a(n) = Sum_{r=0..2^(n-1)} Binomial(2^n,2r)*3^r.
  * @author Georg Fischer
  */
 public class A084594 extends MultiTransformSequence {

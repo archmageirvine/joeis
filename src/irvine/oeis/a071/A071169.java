@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071153.
+ * A071169 a(n) is the smallest number k such that prime(k) == 2*n-1 (mod phi(k)).
  * @author Sean A. Irvine
  */
 public class A071169 extends Sequence1 {

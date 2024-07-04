@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071153.
+ * A071172 Number of squarefree integers &lt;= 10^n.
  * @author Sean A. Irvine
  */
 public class A071172 extends Sequence0 {

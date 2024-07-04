@@ -4,7 +4,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a143.A143993;
 
 /**
- * A071153.
+ * A071173 Nonprimes which terminate in their sum of prime factors.
  * @author Sean A. Irvine
  */
 public class A071173 extends PrependSequence {

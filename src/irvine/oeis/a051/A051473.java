@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a028.A028321;
 
 /**
- * A051473 (Terms in A028321)/2.
+ * A051473 a(n) = A028321(n)/2.
  * @author Georg Fischer
  */
 public class A051473 extends A028321 {

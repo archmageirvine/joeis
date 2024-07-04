@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071153.
+ * A071160 \u0141ukasiewicz words that are also valid asynchronic siteswap juggling patterns.
  * @author Sean A. Irvine
  */
 public class A071160 extends Sequence0 {

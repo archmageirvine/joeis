@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A071153.
+ * A143993 Composite numbers n such that the sum of prime factors of n (counted with multiplicity) terminates n as a substring.
  * @author Sean A. Irvine
  */
 public class A143993 extends A002808 {

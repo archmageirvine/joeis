@@ -4,7 +4,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
- * A071153.
+ * A071165 Row (or column) sums of A071164.
  * @author Sean A. Irvine
  */
 public class A071165 extends A071164 {

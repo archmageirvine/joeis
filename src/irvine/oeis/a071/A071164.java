@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071153.
+ * A071164 Square array read by antidiagonals of T(n,k)=T(n-1,k-n)+T(n-k,k-1) starting with T(n,k)=0 if either n or k are negative but with T(0,0)=1.
  * @author Sean A. Irvine
  */
 public class A071164 extends Sequence0 {

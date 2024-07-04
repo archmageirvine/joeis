@@ -6,7 +6,7 @@ import irvine.oeis.a003.A003586;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A086420 Euler&apos;s totient of 3-smooth numbers: a(n) = A000010(A003586(n)).
+ * A086420 Euler's totient of 3-smooth numbers: a(n) = A000010(A003586(n)).
  * @author Georg Fischer
  */
 public class A086420 extends SingleTransformSequence {

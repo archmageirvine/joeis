@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a014.A014486;
 
 /**
- * A071153.
+ * A079436 Full \u0141ukasiewicz word for each rooted plane tree (interpretation e in Stanley's exercise 19) encoded by A014486 (or A063171).
  * @author Sean A. Irvine
  */
 public class A079436 extends A014486 {

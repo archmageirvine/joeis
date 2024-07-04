@@ -4,7 +4,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A071153.
+ * A071156 Apart from the initial term (0), lists all integers whose factorial expansion ends with 1 (i.e., are odd numbers), do not contain a digit zero and each successive digit to the left is at most one greater than the preceding digit.
  * @author Sean A. Irvine
  */
 public class A071156 extends SimpleTransformSequence {

@@ -9,7 +9,7 @@ import irvine.oeis.a036.A036044;
 import irvine.oeis.a209.A209642;
 
 /**
- * A071153.
+ * A071162 Simple rewriting of binary expansion of n resulting A014486-codes for rooted binary trees with height equal to number of internal vertices. (Binary trees where at each internal vertex at least the other child is leaf).
  * @author Sean A. Irvine
  */
 public class A071162 extends Sequence0 {

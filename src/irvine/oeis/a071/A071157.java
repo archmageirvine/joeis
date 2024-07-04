@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A071153.
+ * A071157 The zero-free, right-to-left factorial walk encoding for each rooted plane tree encoded by A014486. Sequence A071155 shown with factorial expansion (A007623).
  * @author Sean A. Irvine
  */
 public class A071157 extends PrependSequence {

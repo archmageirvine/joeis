@@ -6,7 +6,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A327965 &quot;Tamed variant&quot; of arithmetic derivative: a(0) = a(1) = 0; for n &gt; 1, a(n) = A327938(A003415(n)).
+ * A327965 "Tamed variant" of arithmetic derivative: a(0) = a(1) = 0; for n &gt; 1, a(n) = A327938(A003415(n)).
  * @author Georg Fischer
  */
 public class A327965 extends LambdaSequence {

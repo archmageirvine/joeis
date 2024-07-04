@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a096.A096268;
 
 /**
- * A182582 a(n) = (A096268(n) + A182581(n)) mod 2.
+ * A182582 a(n) = (A096268(n-1) + A182581(n)) mod 2.
  * @author Georg Fischer
  */
 public class A182582 extends Sequence1 {

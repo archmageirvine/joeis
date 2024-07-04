@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071153.
+ * A071158 Factorial expansion of A071156.
  * @author Sean A. Irvine
  */
 public class A071158 extends Sequence0 {

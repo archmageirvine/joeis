@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A350700 a(n) is the number of 1&apos;s minus the number of 0&apos;s in A004685(n).
+ * A350700 a(n) is the number of 1's minus the number of 0's in A004685(n).
  * @author Georg Fischer
  */
 public class A350700 extends SingleTransformSequence {

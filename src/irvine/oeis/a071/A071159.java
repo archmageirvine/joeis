@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071153.
+ * A071159 Integers whose decimal expansion start with 1, do not contain zeros and each successive digit to the right is at most one greater than the previous digit.
  * @author Sean A. Irvine
  */
 public class A071159 extends Sequence1 {

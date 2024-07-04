@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.prime.PrimeSubsequence;
 
 /**
- * A013918.
+ * A071151 Primes which are the sum of the first k odd primes for some k.
  * @author Sean A. Irvine
  */
 public class A071151 extends PrimeSubsequence {

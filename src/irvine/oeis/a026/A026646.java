@@ -4,7 +4,7 @@ package irvine.oeis.a026;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A026646 a(n) = Sum_{0&lt;=i,j&lt;=n} A026637(i,j).
+ * A026646 a(n) = Sum_{i=0..n} Sum_{j=0..n} A026637(i,j).
  * @author Georg Fischer
  */
 public class A026646 extends GeneratingFunctionSequence {

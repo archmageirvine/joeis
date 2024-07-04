@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066699 Numbers n such that binomial(2n,n)+1 is prime.
+ * A066699 Numbers k such that binomial(2k,k)+1 is prime.
  * @author Georg Fischer
  */
 public class A066699 extends Sequence1 {

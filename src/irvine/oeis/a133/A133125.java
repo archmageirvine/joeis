@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A133125 A133080 * A000244.
+ * A133125 a(n) =  (7*3^n - (-3)^n)/6.
  * @author Sean A. Irvine
  */
 public class A133125 extends LinearRecurrence {

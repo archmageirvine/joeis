@@ -1,7 +1,6 @@
 package irvine.oeis.a007;
 
 import irvine.math.function.Functions;
-import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
@@ -12,7 +11,7 @@ public class A007623 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A007623() {
-    super(0, k -> Functions.FACTORIAL_BASE.z(Z.valueOf(k)));
+    super(0, Functions.FACTORIAL_BASE::z);
   }
 }
 

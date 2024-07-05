@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006991;
 
 /**
- * A071150.
+ * A274403 Number of primitive (squarefree) congruent numbers (A006991) &lt;= 10^n.
  * @author Sean A. Irvine
  */
 public class A274403 extends A006991 {

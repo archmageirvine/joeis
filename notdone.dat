@@ -2407,6 +2407,7 @@ A070768 Number of polyhexes with n cells without holes that do not tile the plan
 A070822 Number of Cayley graphs isomorphic to the graph of the n-dimensional cube.
 A070862 Number of path covers of an n X n grid.
 A070979 Triangle read by rows giving size of minimal asymmetric covering code of length n and radius R
+A070995 Number of nonisomorphic (undirected) Cayley graphs for the group Zp x Zp, where Zp is the elementary Abelian group of order p and p is prime. The sequence is index by primes, though starts with 1.
 A071097 Number of ways to tile Aztec diamond of order n with 2 squares removed with dominoes.
 A071098 Number of ways to tile 4n X 4n square with n squares removed with dominoes
 A071102 Determinant of KK* where K is Kasteleyn-Percus matrix for fool's diamond of order n

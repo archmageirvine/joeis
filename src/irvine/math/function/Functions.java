@@ -217,6 +217,10 @@ public final class Functions {
   public static final Function2 STIRLING2 = new Stirling2(); // =A008277
   /** Associated Stirling numbers of the first kind. */
   public static final Function2 ASSOCIATED_STIRLING1 = new AssociatedStirling1(); // =A000276, =A008306
+  /** Cantor&apos;s pairing function (0-based) */
+  public static final Function2 CANTOR_PAIRING = new CantorPairing();
+  /** One-based pairing function (Hopcroft and Ullman) */
+  public static final Function2 ONE_BASED_PAIRING = new OneBasedPairing();
   /** Eulerian numbers of the second kind. */
   public static final Function2 EULERIAN2 = new Eulerian2();
   /** Cyclotomic function. */

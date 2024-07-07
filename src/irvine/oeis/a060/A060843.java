@@ -10,6 +10,6 @@ public class A060843 extends NoncomputableSequence {
 
   /** Construct the sequence. */
   public A060843() {
-    super(1, NONCOMPUTABLE, 1, 6, 21, 107);
+    super(1, NONCOMPUTABLE, 1, 6, 21, 107, 47176870);
   }
 }

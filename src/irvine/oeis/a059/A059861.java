@@ -12,7 +12,6 @@ import irvine.oeis.memory.MemorySequence;
  */
 public class A059861 extends Sequence1 {
 
-  private int mN;
   private final MemorySequence mSeq;
   private Z mAn1;
   protected long mSub;
@@ -27,7 +26,6 @@ public class A059861 extends Sequence1 {
    * @param sub subtract this value
    */
   protected A059861(final long sub) {
-    mN = 0;
     mSub = sub;
     mSeq = MemorySequence.cachedSequence(new A000040());
     mAn1 = Z.ONE;
@@ -35,7 +33,6 @@ public class A059861 extends Sequence1 {
 
   @Override
   public Z next() {
-    ++mN;
     final Z mR = mSeq.next().subtract(mSub);
     if (mR.compareTo(Z.ZERO) > 0) {
       mAn1 = mAn1.multiply(mR);

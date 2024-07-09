@@ -6,12 +6,12 @@ import irvine.math.z.Z;
  * A071261.
  * @author Sean A. Irvine
  */
-public class A071281 extends A071283 {
+public class A071285 extends A071283 {
 
   private int mN = 0;
 
   @Override
   public Z next() {
-    return select(mB.get(3, ++mN));
+    return select(mB.get(5, ++mN));
   }
 }

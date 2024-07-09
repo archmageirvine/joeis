@@ -37,9 +37,9 @@ public final class ContinuedFractionUtils {
    * @param n number
    * @return expansion
    */
-  public static List<Z> continuedFraction(Q n) {
+  public static List<Z> continuedFraction(Q n, final int maxTerms) {
     final ArrayList<Z> res = new ArrayList<>();
-    while (true) {
+    for (int k = 0; k < maxTerms; ++k) {
       final Z t = n.toZ();
       res.add(t);
       n = n.subtract(t);
@@ -48,5 +48,15 @@ public final class ContinuedFractionUtils {
       }
       n = n.reciprocal();
     }
+    return res;
+  }
+
+  /**
+   * Return the continued fraction expansion of a rational number.
+   * @param n number
+   * @return expansion
+   */
+  public static List<Z> continuedFraction(final Q n) {
+    return continuedFraction(n, Integer.MAX_VALUE);
   }
 }

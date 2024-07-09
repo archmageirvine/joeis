@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A071147.
+ * A071218 Numbers k such that the largest prime factor of the sum of the two consecutive primes prime(k) + prime(k+1) is at most k.
  * @author Sean A. Irvine
  */
 public class A071218 extends FilterPositionSequence {

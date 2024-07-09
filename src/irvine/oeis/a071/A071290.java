@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a067.A067836;
 
 /**
- * A071261.
+ * A071290 The sequence f(1), f(2), ... as defined in A067836.
  * @author Sean A. Irvine
  */
 public class A071290 extends PartialProductSequence {

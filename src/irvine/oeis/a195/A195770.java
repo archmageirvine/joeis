@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A195770 Positive integers a for which there is a 1-Pythagorean triple (a,b,c) satisfying a&lt;=b.
+ * A195770 Positive integer a is repeated m times, where m is the number of 1-Pythagorean triples (a,b,c) satisfying a&lt;=b.
  * Cf. the definition and list of related sequences in A195770.
  * k-Pythagorean triples are defined by <code>c^2 = a^2 + b^2 + k*a*b</code>.
  * @author Georg Fischer

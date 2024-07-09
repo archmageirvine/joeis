@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007504;
 
 /**
- * A071261.
+ * A071292 Call f(n) the sum of the first n primes then a(n) is the number of squares between f(n) and f(n+1).
  * @author Sean A. Irvine
  */
 public class A071292 extends Sequence1 {

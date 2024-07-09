@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A216685 a(n) is the number of 1&apos;s in binary expansion of n + a(n-1), with a(0)=0.
+ * A216685 a(n) is the number of 1's in binary expansion of n + a(n-1), with a(0)=0.
  * @author Georg Fischer
  */
 public class A216685 extends MultiTransformSequence {

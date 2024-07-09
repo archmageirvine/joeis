@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 import irvine.math.z.Z;
 
 /**
- * A071261.
+ * A071285 Numerators of Peirce sequence of order 5.
  * @author Sean A. Irvine
  */
 public class A071285 extends A071283 {

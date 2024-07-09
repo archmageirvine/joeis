@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A071013.
+ * A071294 Number of witnesses for strong pseudoprimality of 2n+1, i.e., number of bases b, 1 &lt;= b &lt;= 2n, in which 2n+1 is a strong pseudoprime.
  * @author Sean A. Irvine
  */
 public class A071294 extends Sequence1 {

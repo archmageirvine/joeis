@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071147.
+ * A071249 Numbers k such that gcd(k, R(k)) &gt; 1, where R(k) (A004086) is the digit reversal of k.
  * @author Sean A. Irvine
  */
 public class A071249 extends Sequence1 {

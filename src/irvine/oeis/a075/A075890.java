@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a001.A001405;
 
 /**
- * A075890 Largest term in the prime(n)-th row of Pascal&apos;s triangle, prime(n) being the n-th prime.
+ * A075890 Largest term in the prime(n)-th row of Pascal's triangle, prime(n) being the n-th prime.
  * @author Georg Fischer
  */
 public class A075890 extends LambdaSequence {

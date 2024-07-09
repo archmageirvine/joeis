@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A071261.
+ * A071268 Sum of all digit permutations of the concatenation of first n numbers.
  * @author Sean A. Irvine
  */
 public class A071268 extends Sequence1 {

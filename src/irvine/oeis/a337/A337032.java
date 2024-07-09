@@ -6,7 +6,7 @@ import irvine.oeis.a282.A282254;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A337032 a(n) = (n*sigma_9(n) - tau(n))/7 = (A282254(n) - A000594(n))/7, where tau is Ramanujan&apos;s tau, sigma_9(n) = Sum_{d divides n} d^9.
+ * A337032 a(n) = (n*sigma_9(n) - tau(n))/7 = (A282254(n) - A000594(n))/7, where tau is Ramanujan's tau, sigma_9(n) = Sum_{d divides n} d^9.
  * @author Georg Fischer
  */
 public class A337032 extends MultiTransformSequence {

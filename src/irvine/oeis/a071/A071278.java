@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002113;
 
 /**
- * A071261.
+ * A071278 Sorted list of numbers b(i)*b(j), 2 &lt; i &lt; j, where b = A002113 = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 22, 33 ... is a list of the decimal palindromes.
  * @author Sean A. Irvine
  */
 public class A071278 extends Sequence1 {

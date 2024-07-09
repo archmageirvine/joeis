@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071013.
+ * A071300 Numerator of b(n) where b(n+1) = Sum_{k=0..n} b'((n^2-k^2)/n), b(0) = b(1) = 1, and b'(x) = b(x) if x is an integer and is linearly interpolated otherwise.
  * @author Sean A. Irvine
  */
 public class A071300 extends Sequence0 {

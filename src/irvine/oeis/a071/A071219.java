@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A071147.
+ * A071219 Numbers m such that the largest prime factor of prime(m) + prime(m+1) equals m.
  * @author Sean A. Irvine
  */
 public class A071219 extends FilterPositionSequence {

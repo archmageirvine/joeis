@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A034011 Related to curves y^2=x^5-n.
+ * A034011 Positive integers k corresponding to certain genus 2 curves y^2 = x^5 - k.
  * @author Sean A. Irvine
  */
 public class A034011 extends Sequence1 {

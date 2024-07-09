@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002362 Numerators of convergents to fifth root of 2.
+ * A002362 Numerators of continued fraction convergents to fifth root of 2.
  * @author Sean A. Irvine
  */
 public class A002362 extends A002950 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a033.A033950;
 
 /**
- * A071147.
+ * A071227 Number of solutions 1&lt;=x&lt;=m to gcd(m,x) = tau(m) where m = A033950(n).
  * @author Sean A. Irvine
  */
 public class A071227 extends A033950 {

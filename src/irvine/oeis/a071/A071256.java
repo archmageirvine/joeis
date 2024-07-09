@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071147.
+ * A071256 Smallest multiple of n sandwiched between twin primes.
  * @author Sean A. Irvine
  */
 public class A071256 extends Sequence1 {

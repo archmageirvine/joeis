@@ -6,7 +6,7 @@ import irvine.oeis.a005.A005940;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A153013 Starting with input 0, find the binary value of the input. Then interpret resulting string of 1&apos;s and 0&apos;s as prime-based numbers, as follows: 0&apos;s are separators, uninterrupted strings of 1&apos;s are interpreted from right to left as exponents of the prime
+ * A153013 Starting with input 0, find the binary value of the input. Then interpret resulting string of 1's and 0's as prime-based numbers, as follows: 0's are separators, uninterrupted strings of 1's are interpreted from right to left as exponents of the prime numbers. Output is returned as input for the next number in sequence.
  * @author Georg Fischer
  */
 public class A153013 extends MultiTransformSequence {

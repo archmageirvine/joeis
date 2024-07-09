@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002359 Denominators of convergents to cube root of 6.
+ * A002359 Denominators of continued fraction convergents to cube root of 6.
  * @author Sean A. Irvine
  */
 public class A002359 extends A002949 {

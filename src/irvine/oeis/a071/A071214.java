@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A071147.
+ * A071214 Number of labeled ordered trees with n nodes such that the root is smaller than all its children.
  * @author Sean A. Irvine
  */
 public class A071214 extends Sequence2 {

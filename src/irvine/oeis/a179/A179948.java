@@ -5,7 +5,7 @@ import irvine.oeis.a182.A182547;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
- * A179948 Continued fraction for Pi^gamma.
+ * A179948 Continued fraction for Pi^gamma, where gamma is the Euler-Mascheroni constant.
  * @author Georg Fischer
  */
 public class A179948 extends ContinuedFractionSequence {

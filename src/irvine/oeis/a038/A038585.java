@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a002.A002275;
 
 /**
- * A038585 Write n in binary, delete 0&apos;s.
+ * A038585 Write n in binary, delete 0's.
  * @author Georg Fischer
  */
 public class A038585 extends LambdaSequence {

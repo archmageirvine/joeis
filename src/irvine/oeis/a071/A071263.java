@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071261.
+ * A071263 Smallest nontrivial composite number beginning with n.
  * @author Sean A. Irvine
  */
 public class A071263 extends Sequence1 {

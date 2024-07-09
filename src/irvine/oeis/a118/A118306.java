@@ -8,7 +8,7 @@ import irvine.oeis.a055.A055396;
 import irvine.oeis.a064.A064989;
 
 /**
- * A118306 If n = product{k&gt;=1} p(k)^b(n,k), where p(k) is the k-th prime and where each b(n,k) is a nonnegative integer, then: If n occurs earlier in the sequence, then a(n) = product{k&gt;=2} p(k-1)^b(n,k); If n does not occur earlier in the sequence, then a(n) = prod
+ * A118306 If n = product{k&gt;=1} p(k)^b(n,k), where p(k) is the k-th prime and where each b(n,k) is a nonnegative integer, then: If n occurs earlier in the sequence, then a(n) = product{k&gt;=2} p(k-1)^b(n,k); If n does not occur earlier in the sequence, then a(n) = product{k&gt;=1} p(k+1)^b(n,k).
  * @author Georg Fischer
  */
 public class A118306 extends LambdaSequence {

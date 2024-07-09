@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.math.z.Z;
 
 /**
- * A031534 that the continued fraction for sqrt(k) has even period and if the last term of the periodic part is deleted the central term is 36.
+ * A031534 Numbers k such that the continued fraction for sqrt(k) has even period and if the last term of the periodic part is deleted the central term is 36.
  * @author Sean A. Irvine
  */
 public class A031534 extends A031404 {

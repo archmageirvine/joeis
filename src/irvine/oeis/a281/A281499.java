@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a036.A036044;
 
 /**
- * A281499 Write n in binary reflected Gray code, interchange the 1&apos;s and 0&apos;s, reverse the code and convert it back to decimal.
+ * A281499 Write n in binary reflected Gray code, interchange the 1's and 0's, reverse the code and convert it back to decimal.
  * @author Georg Fischer
  */
 public class A281499 extends LambdaSequence {

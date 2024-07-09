@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a068.A068311;
 
 /**
- * A189100 a(n) = lcm(n!,n!&apos;)/gcd(n!,n!&apos;), where n!&apos; is the arithmetic derivative of n! (A068311).
+ * A189100 a(n) = lcm(n!,n!')/gcd(n!,n!'), where n!' is the arithmetic derivative of n! (A068311).
  * @author Georg Fischer
  */
 public class A189100 extends LambdaSequence {

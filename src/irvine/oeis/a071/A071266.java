@@ -10,7 +10,7 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A071261.
+ * A071266 Smallest numbers which can be written in exactly n different ways as k + R(k) where R(k) is k reversed (A004086).
  * @author Sean A. Irvine
  */
 public class A071266 extends Sequence0 {

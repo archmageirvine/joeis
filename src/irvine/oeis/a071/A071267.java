@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A071261.
+ * A071267 Numbers which can be expressed as the sum of all distinct digit permutations of some number k.
  * @author Sean A. Irvine
  */
 public class A071267 extends Sequence1 {

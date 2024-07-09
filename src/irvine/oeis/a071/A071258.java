@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071147.
+ * A071258 a(1) = 4; a(n) = smallest composite number of form k*a(n-1) + 1 with k &gt; 1.
  * @author Sean A. Irvine
  */
 public class A071258 extends Sequence1 {

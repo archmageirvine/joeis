@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A071147.
+ * A071223 Triangle T(n,k) (n &gt;= 2, 1 &lt;= k &lt;= n) read by rows: number of linearly inducible orderings of n points in k-dimensional Euclidean space.
  * @author Sean A. Irvine
  */
 public class A071223 extends Sequence2 {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A090669 Numbers n such that 7^n - 2 is a prime.
+ * A090669 Numbers k such that 7^k - 2 is a prime.
  * @author Georg Fischer
  */
 public class A090669 extends PrimePositionSubsequence {

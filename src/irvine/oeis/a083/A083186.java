@@ -6,7 +6,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a006.A006450;
 
 /**
- * A083186 Sum of first n primes whose indices are primes.
+ * A083186 Sum of the first n primes whose indices are primes.
  * @author Georg Fischer
  */
 public class A083186 extends PartialSumSequence {

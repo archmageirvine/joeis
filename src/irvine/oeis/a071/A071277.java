@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002113;
 
 /**
- * A071261.
+ * A071277 a(1) = 1; a(n) = smallest palindrome which is a nontrivial multiple of n palindromes (repetitions allowed).
  * @author Sean A. Irvine
  */
 public class A071277 extends Sequence1 {

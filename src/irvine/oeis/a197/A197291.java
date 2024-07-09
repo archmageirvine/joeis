@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A197291 Decimal expansion of least x&gt;0 having sin(6x)=(sin(2x))^2.
+ * A197291 Decimal expansion of least x&gt;0 having sin(6x) = sin(2x)^2.
  * Formula: 5*asin(3/4)
  * @author Georg Fischer
  */

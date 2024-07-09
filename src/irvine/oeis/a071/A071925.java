@@ -7,7 +7,7 @@ import irvine.oeis.a031.A031443;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A071925 Digitally balanced numbers: binary numbers which have the same number of 0&apos;s as 1&apos;s; decimal representation: A031443.
+ * A071925 Digitally balanced numbers: binary numbers which have the same number of 0's as 1's; decimal representation: A031443.
  * @author Georg Fischer
  */
 public class A071925 extends SingleTransformSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a070.A070153;
 
 /**
- * A071013.
+ * A071297 Number of n-digit terms of A070153.
  * @author Sean A. Irvine
  */
 public class A071297 extends A070153 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071261.
+ * A071262 Smallest composite number ending in n.
  * @author Sean A. Irvine
  */
 public class A071262 extends Sequence1 {

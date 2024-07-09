@@ -5,7 +5,7 @@ import irvine.oeis.a014.A014263;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A071147.
+ * A071241 Arithmetic mean of k and R(k) where k is the n-th nonnegative number using only even digits and R(k) is its digit reversal (A004086).
  * @author Sean A. Irvine
  */
 public class A071241 extends SimpleTransformSequence {

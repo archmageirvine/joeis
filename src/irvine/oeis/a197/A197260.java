@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A197260 Decimal expansion of least x&gt;0 having sin(3x)=(sin x)^2.
+ * A197260 Decimal expansion of least x&gt;0 having sin(3x) = sin(x)^2.
  * Formula: asin(6/8)
  * @author Georg Fischer
  */

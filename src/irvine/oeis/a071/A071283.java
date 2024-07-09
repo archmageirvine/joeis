@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A071261.
+ * A071283 Numerators of Peirce sequence of order 4.
  * @author Sean A. Irvine
  */
 public class A071283 extends Sequence1 {

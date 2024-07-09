@@ -5,7 +5,7 @@ import irvine.oeis.a073.A073018;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
- * A179950 Continued fraction for gamma^e.
+ * A179950 Continued fraction for gamma^e, where gamma is the Euler-Mascheroni constant.
  * @author Georg Fischer
  */
 public class A179950 extends ContinuedFractionSequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071261.
+ * A071291 Second term of the continued fraction expansion of (3/2)^n; or 0 if no term is present.
  * @author Sean A. Irvine
  */
 public class A071291 extends Sequence1 {

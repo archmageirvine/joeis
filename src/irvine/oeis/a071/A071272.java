@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a066.A066492;
 
 /**
- * A071261.
+ * A071272 Palindromes in A066492.
  * @author Sean A. Irvine
  */
 public class A071272 extends FilterSequence {

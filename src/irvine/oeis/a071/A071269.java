@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a007.A007908;
 
 /**
- * A071261.
+ * A071269 Terms of A007908 which are divisible by their index.
  * @author Sean A. Irvine
  */
 public class A071269 extends FilterSequence {

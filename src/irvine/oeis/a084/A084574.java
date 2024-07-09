@@ -5,7 +5,7 @@ import irvine.oeis.a073.A073229;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
- * A084574 Partial quotients of the continued fraction of e^(1/e).
+ * A084574 Continued fraction expansion of e^(1/e).
  * @author Georg Fischer
  */
 public class A084574 extends ContinuedFractionSequence {

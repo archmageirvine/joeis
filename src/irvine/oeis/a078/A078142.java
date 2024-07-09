@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071147.
+ * A078142 a(n) is the sum of the differences of the distinct prime factors p of n and the next square larger than p.
  * @author Sean A. Irvine
  */
 public class A078142 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.cons.ContinuedFractionDenominatorSequence;
 
 /**
- * A005485 Denominators of convergents to cube root of 7.
+ * A005485 Denominators of continued fraction convergents to cube root of 7.
  * @author Sean A. Irvine
  */
 public class A005485 extends ContinuedFractionDenominatorSequence {

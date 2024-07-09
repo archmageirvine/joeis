@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071013.
+ * A071298 Numerators of a(n+1) = Sum_{k=0..n} a'(k^2/n), where a(0) = a(1) = 1; and a'(x) = a(x) if x is an integer and is linearly interpolated otherwise.
  * @author Sean A. Irvine
  */
 public class A071298 extends Sequence0 {

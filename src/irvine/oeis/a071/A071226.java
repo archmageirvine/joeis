@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071147.
+ * A071226 n-th power of the product of next n natural numbers.
  * @author Sean A. Irvine
  */
 public class A071226 extends Sequence1 {

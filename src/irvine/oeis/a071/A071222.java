@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071147.
+ * A071222 Smallest k such that gcd(n,k) = gcd(n+1,k+1).
  * @author Sean A. Irvine
  */
 public class A071222 extends Sequence0 {

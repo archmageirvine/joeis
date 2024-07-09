@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002113;
 
 /**
- * A071147.
+ * A071250 Palindromes with successive increasing difference: a(k)-a(k-1) &gt; a(k+1)- a(k).
  * @author Sean A. Irvine
  */
 public class A071250 extends A002113 {

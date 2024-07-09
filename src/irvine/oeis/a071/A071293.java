@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071013.
+ * A071293 a(0)=1, a(n) is the smallest integer &gt; a(n-1) such that the continued fraction for 1/a(0)+1/a(1)+1/a(2)+...+1/a(n) contains exactly 2^n elements.
  * @author Sean A. Irvine
  */
 public class A071293 extends Sequence0 {

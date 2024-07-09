@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.util.Pair;
 
 /**
- * A071261.
+ * A071286 Denominators of Peirce sequence of order 5.
  * @author Sean A. Irvine
  */
 public class A071286 extends A071285 {

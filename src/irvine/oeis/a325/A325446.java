@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a000.A000670;
 
 /**
- * A325446 The unitary version of Kalm√°r&apos;s function: number of ordered factorizations of n into powers of distinct primes.
+ * A325446 The unitary version of Kalm\u00e1r's function: number of ordered factorizations of n into powers of distinct primes.
  * @author Georg Fischer
  */
 public class A325446 extends LambdaSequence {

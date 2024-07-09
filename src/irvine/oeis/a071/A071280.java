@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002113;
 
 /**
- * A071261.
+ * A071280 Numbers which are nontrivial multiples of 3 palindromes (need not be distinct).
  * @author Sean A. Irvine
  */
 public class A071280 extends Sequence1 {

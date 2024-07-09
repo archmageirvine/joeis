@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.transform.ConvolutionProduct;
 
 /**
- * A117209 G.f. A(x) satisfies 1/(1-x) = product_{n&gt;=1} A(x^n).
+ * A117209 G.f. A(x) satisfies 1/(1-x) = Product_{k&gt;=1} A(x^k).
  * @author Georg Fischer
  */
 public class A117209 extends ConvolutionProduct {

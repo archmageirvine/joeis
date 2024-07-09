@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071147.
+ * A071234 Smallest prime beginning and ending in 2n+1 or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A071234 extends Sequence0 {

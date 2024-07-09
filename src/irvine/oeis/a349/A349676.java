@@ -6,7 +6,7 @@ import irvine.oeis.a018.A018804;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A349676 Iterated Pillai&apos;s arithmetical function: a(1) = 2, for n &gt;= 2, a(n) = A018804(a(n-1)).
+ * A349676 Iterated Pillai's arithmetical function: a(1) = 2, for n &gt;= 2, a(n) = A018804(a(n-1)).
  * @author Georg Fischer
  */
 public class A349676 extends MultiTransformSequence {

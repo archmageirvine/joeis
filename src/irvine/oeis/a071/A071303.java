@@ -1,0 +1,82 @@
+package irvine.oeis.a071;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import irvine.math.function.Functions;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
+import irvine.util.bumper.Bumper;
+import irvine.util.bumper.BumperFactory;
+
+/**
+ * A071211.
+ * @author Sean A. Irvine
+ */
+public class A071303 extends Sequence1 {
+
+  // We avoid need for transpose as M*M^T is equivalent to various products of rows alone.
+  // This means we can first compute all permissible rows (they must have dot product of 1).
+  // Then combination of permissible rows (rows must have pairwise dot products of 0).
+  // All rows need to be distinct and the order of the rows is irrelevant, therefore we can
+  // generate with increasing row indexes and multiply by n! to get the count.
+
+  private int mN = 0;
+  private long mCount = 0;
+
+  // Build all vectors where dot product is 1
+  private List<int[]> build(final int n) {
+    final ArrayList<int[]> res = new ArrayList<>();
+    final Bumper bump = BumperFactory.range(0, 3);
+    final int[] t = new int[n];
+    while (bump.bump(t)) {
+      int s = 0;
+      for (final int v : t) {
+        s += v * v;
+      }
+      if ((s & 3) == 1) {
+        res.add(Arrays.copyOf(t, t.length));
+      }
+    }
+    return res;
+  }
+
+  private boolean isOk(final int[][] chosen, final int[] t, final int k) {
+    // Check that dot products with every other row is 0
+    for (int j = 0; j < k; ++j) {
+      int s = 0;
+      for (int i = 0; i < t.length; ++i) {
+        s += chosen[j][i] * t[i];
+      }
+      if ((s & 3) != 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  private void search(final List<int[]> vecs, final int[][] chosen, final int k, final int m) {
+    if (k == chosen.length) {
+      ++mCount;
+      return;
+    }
+    for (int j = m; j < vecs.size(); ++j) {
+      final int[] t = vecs.get(j);
+      if (isOk(chosen, t, k)) {
+        chosen[k] = t;
+        search(vecs, chosen, k + 1, j + 1);
+      }
+    }
+  }
+
+  @Override
+  public Z next() {
+    // Compute the set of permissible rows
+    final List<int[]> vecs = build(++mN);
+    // Try all possible combinations of permissible rows
+    mCount = 0;
+    search(vecs, new int[mN][], 0, 0);
+    return Z.valueOf(mCount).multiply(Functions.FACTORIAL.z(mN)).divide2();
+  }
+}

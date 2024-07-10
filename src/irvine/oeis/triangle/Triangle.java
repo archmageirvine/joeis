@@ -74,7 +74,7 @@ public class Triangle extends AbstractSequence {
    * Determine whether <code>compute(n,k)</code> can be called without obeying the usual row-by-row order
    * @return true for random access, false if the usual increasing columns, row-by-row calling order must be obeyed
    */
-  protected boolean hasRAM() {
+  public boolean hasRAM() {
     return mHasRAM;
   }
 

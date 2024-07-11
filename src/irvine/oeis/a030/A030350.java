@@ -15,10 +15,6 @@ public class A030350 extends A030341 {
 
   private Z mSum = Z.ZERO;
 
-  {
-    super.next();
-  }
-
   @Override
   public Z next() {
     final int t = super.next().intValue();

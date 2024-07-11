@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
  */
 public class A373182 extends Sequence1 {
 
-  private int mN = 0;
+  private int mN = 3;
   private long mCount = 0;
 
   private void search(final boolean[] used) {

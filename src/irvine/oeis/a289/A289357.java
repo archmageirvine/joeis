@@ -16,6 +16,7 @@ public class A289357 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A289357() {
-    super(1, (term, n) -> A049711.a(term), "0", new A002378().skip(1));
+    super(0, (term, n) -> A049711.a(term), "0", new A002378().skip());
+    setOffset(1);
   }
 }

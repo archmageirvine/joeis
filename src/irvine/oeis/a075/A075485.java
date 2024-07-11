@@ -16,6 +16,6 @@ public class A075485 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A075485() {
-    super(1, n -> SEQ.a(Z.TWO.pow(n).subtract(1)).add(1));
+    super(1, n -> SEQ.a(Z.TWO.pow(n).subtract(1)));
   }
 }

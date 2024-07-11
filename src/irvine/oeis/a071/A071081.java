@@ -7,17 +7,17 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002808;
 
 /**
  * A071081 Determinant of the n X n matrix whose element (i,j) equals the |i-j|-th composite number, or 0 if i=j.
  * @author Sean A. Irvine
  */
-public class A071081 extends Sequence1 {
+public class A071081 extends Sequence0 {
 
   private final DirectSequence mComposites = DirectSequence.create(new A002808());
-  private long mN = 0;
+  private long mN = -1;
 
   @Override
   public Z next() {

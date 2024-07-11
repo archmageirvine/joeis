@@ -13,6 +13,6 @@ public class A272899 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A272899() {
-    super(1, n -> Functions.PRIMORIAL_COUNT.z(Z.valueOf(n).add(Functions.PRIME_PI.z(n))).divide(Functions.PRIMORIAL.z(n)));
+    super(0, n -> Functions.PRIMORIAL_COUNT.z(Z.valueOf(n).add(Functions.PRIME_PI.z(n))).divide(Functions.PRIMORIAL.z(n)));
   }
 }

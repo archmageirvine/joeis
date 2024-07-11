@@ -9,6 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
+import irvine.util.string.StringUtils;
 
 /**
  * A071303 1/2 times the number of n X n 0..3 matrices M with MM' mod 4 = I, where M' is the transpose of M and I is the n X n identity matrix.
@@ -22,6 +23,7 @@ public class A071303 extends Sequence1 {
   // All rows need to be distinct and the order of the rows is irrelevant, therefore we can
   // generate with increasing row indexes and multiply by n! to get the count.
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 0;
   private long mCount = 0;
 
@@ -42,30 +44,47 @@ public class A071303 extends Sequence1 {
     return res;
   }
 
-  private boolean isOk(final int[][] chosen, final int[] t, final int k) {
+  private boolean isOk(final int[] a, final int[] b) {
+    int s = 0;
+    for (int i = 0; i < b.length; ++i) {
+      s += a[i] * b[i];
+    }
+    return (s & 3) == 0;
+  }
+
+  // Precompute validity of each possible pair
+  private boolean[][] checkPairs(final List<int[]> vecs) {
+    final boolean[][] res = new boolean[vecs.size()][];
+    for (int k = 0; k < vecs.size(); ++k) {
+      res[k] = new boolean[k];
+      for (int j = 0; j < k; ++j) {
+        if (isOk(vecs.get(j), vecs.get(k))) {
+          res[k][j] = true;
+        }
+      }
+    }
+    return res;
+  }
+
+  private boolean isOk(final boolean[][] pairs, final int[] chosen, final int t, final int k) {
     // Check that dot products with every other row is 0
     for (int j = 0; j < k; ++j) {
-      int s = 0;
-      for (int i = 0; i < t.length; ++i) {
-        s += chosen[j][i] * t[i];
-      }
-      if ((s & 3) != 0) {
+      if (!pairs[t][chosen[j]]) {
         return false;
       }
     }
     return true;
   }
 
-  private void search(final List<int[]> vecs, final int[][] chosen, final int k, final int m) {
+  private void search(final List<int[]> vecs, final boolean[][] pairs, final int[] chosen, final int k, final int m) {
     if (k == chosen.length) {
       ++mCount;
       return;
     }
     for (int j = m; j < vecs.size(); ++j) {
-      final int[] t = vecs.get(j);
-      if (isOk(chosen, t, k)) {
-        chosen[k] = t;
-        search(vecs, chosen, k + 1, j + 1);
+      if (isOk(pairs, chosen, j, k)) {
+        chosen[k] = j;
+        search(vecs, pairs, chosen, k + 1, j + 1);
       }
     }
   }
@@ -74,9 +93,14 @@ public class A071303 extends Sequence1 {
   public Z next() {
     // Compute the set of permissible rows
     final List<int[]> vecs = build(++mN);
+    if (mVerbose) {
+      StringUtils.message("Number of permissible vectors: " + vecs.size());
+    }
+    // Precompute which vectors can combine together
+    final boolean[][] pairs = checkPairs(vecs);
     // Try all possible combinations of permissible rows
     mCount = 0;
-    search(vecs, new int[mN][], 0, 0);
+    search(vecs, pairs, new int[mN], 0, 0);
     return Z.valueOf(mCount).multiply(Functions.FACTORIAL.z(mN)).divide2();
   }
 }

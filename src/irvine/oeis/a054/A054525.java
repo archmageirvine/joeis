@@ -1,24 +1,19 @@
 package irvine.oeis.a054;
+// manually 2024-07-11
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.triangle.LambdaTriangle;
 
 /**
  * A054525 Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n &gt;= 1, 1 &lt;= k &lt;= n).
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A054525 extends Sequence1 {
+public class A054525 extends LambdaTriangle {
 
-  private long mN = 0;
-  private long mM = 0;
-
-  @Override
-  public Z next() {
-    if (++mM > mN) {
-      ++mN;
-      mM = 1;
-    }
-    return Z.valueOf(mN % mM == 0 ? Functions.MOBIUS.i(mN / mM) : 0);
+  /** Construct the sequence. */
+  public A054525() {
+    super(1, 1, 1, (n, k) -> (n % k == 0) ? Functions.MOEBIUS.z(n / k) : Z.ZERO);
   }
+
 }

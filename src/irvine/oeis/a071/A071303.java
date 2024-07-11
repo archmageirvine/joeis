@@ -96,7 +96,7 @@ public class A071303 extends Sequence1 {
     if (mVerbose) {
       StringUtils.message("Number of permissible vectors: " + vecs.size());
     }
-    // Precompute which vectors can combine together
+    // Precompute which vectors can appear together
     final boolean[][] pairs = checkPairs(vecs);
     // Try all possible combinations of permissible rows
     mCount = 0;

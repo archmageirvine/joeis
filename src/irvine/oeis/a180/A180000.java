@@ -7,7 +7,7 @@ import irvine.oeis.a003.A003418;
 import irvine.oeis.a056.A056040;
 
 /**
- * A180000 a(n) = lcm{1, 2,...,n} / swinging_factorial(n) = A003418(n) / A056040(n).
+ * A180000 a(n) = lcm{1,2,...,n} / swinging_factorial(n) = A003418(n) / A056040(n).
  * @author Georg Fischer
  */
 public class A180000 extends LambdaSequence {

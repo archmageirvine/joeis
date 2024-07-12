@@ -6,7 +6,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a056.A056040;
 
 /**
- * A163077 Numbers k such that k$ + 1 is prime. Here &apos;$&apos; denotes the swinging factorial function (A056040).
+ * A163077 Numbers k such that k$ + 1 is prime. Here '$' denotes the swinging factorial function (A056040).
  * @author Georg Fischer
  */
 public class A163077 extends FilterNumberSequence {

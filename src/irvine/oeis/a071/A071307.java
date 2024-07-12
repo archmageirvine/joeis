@@ -12,7 +12,7 @@ import irvine.util.bumper.BumperFactory;
 import irvine.util.string.StringUtils;
 
 /**
- * A071303 1/2 times the number of n X n 0..3 matrices M with MM' mod 4 = I, where M' is the transpose of M and I is the n X n identity matrix.
+ * A071307 1/2 number of n X n 0..8 matrices with MM' mod 9 = I.
  * @author Sean A. Irvine
  */
 public class A071307 extends Sequence1 {

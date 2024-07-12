@@ -5,7 +5,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A101916 G.f. satisfies: A(x) = 1/(1 + x*A(x^6)) and also the continued fraction: 1+x*A(x^7) = [1;1/x, 1/x^6, 1/x^36, 1/x^216,..., 1/x^(6^(n-1)),...].
+ * A101916 G.f. satisfies: A(x) = 1/(1 + x*A(x^6)) and also the continued fraction: 1+x*A(x^7) = [1;1/x,1/x^6,1/x^36,1/x^216,...,1/x^(6^(n-1)),...].
  * @author Georg Fischer
  */
 public class A101916 extends MultiTransformSequence {

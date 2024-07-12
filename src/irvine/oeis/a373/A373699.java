@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a024.A024675;
 
 /**
- * A373699 a(n) is the area of the (n+1)-gon having vertices coordinates (2, 0), (2,prime(2)), ..., (n,prime(n)), (n, 0).
+ * A373699 a(n) is the area of the (n+1)-gon having vertices coordinates (2,0), (2,prime(2)), ..., (n,prime(n)), (n,0).
  * @author Georg Fischer
  */
 public class A373699 extends PartialSumSequence {

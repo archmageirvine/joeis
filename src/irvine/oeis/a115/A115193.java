@@ -7,7 +7,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A115193 Generalized Catalan triangle of Riordan type, called C(1, 2).
+ * A115193 Generalized Catalan triangle of Riordan type, called C(1,2).
  * @author Georg Fischer
  */
 public class A115193 extends LambdaTriangle {

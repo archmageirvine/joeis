@@ -7,7 +7,7 @@ import irvine.oeis.a134.A134459;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A298410 Unique least common multiples for {1, 2,...,n}.
+ * A298410 Unique least common multiples for {1,2,...,n}.
  * @author Georg Fischer
  */
 public class A298410 extends SingleTransformSequence {

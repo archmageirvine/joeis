@@ -8,7 +8,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A178059 Triangle read by rows: Number of 1&apos;s in the Gray code of Eulerian(n,m), 1&lt;=m&lt;=n.
+ * A178059 Triangle read by rows: Number of 1's in the Gray code of Eulerian(n,m), 1&lt;=m&lt;=n.
  * @author Georg Fischer
  */
 public class A178059 extends LambdaTriangle {

@@ -6,7 +6,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A346521 Total number of partitions of all n-multisets {0,..., 0, 1, 2,...,j} into distinct multisets for 0 &lt;= j &lt;= n.
+ * A346521 Total number of partitions of all n-multisets {0,...,0,1,2,...,j} into distinct multisets for 0 &lt;= j &lt;= n.
  * @author Georg Fischer
  */
 public class A346521 extends LambdaSequence {

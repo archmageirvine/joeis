@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirichletInverseSequence;
 
 /**
- * A342417 Dirichlet inverse of ńĆiurlionis sequence, A342002.
+ * A342417 Dirichlet inverse of \u010ciurlionis sequence, A342002.
  * @author Georg Fischer
  */
 public class A342417 extends AbstractSequence {

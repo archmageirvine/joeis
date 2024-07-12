@@ -6,7 +6,7 @@ import irvine.oeis.a373.A373138;
 import irvine.oeis.a373.A373267;
 
 /**
- * A369002 Numbers k for which k&apos; / gcd(k,k&apos;) is even, where k&apos; stands for the arithmetic derivative of k, A003415.
+ * A369002 Numbers k for which k' / gcd(k,k') is even, where k' stands for the arithmetic derivative of k, A003415.
  * @author Georg Fischer
  */
 public class A369002 extends UnionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A209634 Triangle with (1, 4, 7, 10, 13, 16...,(3*n-2),...) in every column, shifted down twice.
+ * A209634 Triangle with (1,4,7,10,13,16...,(3*n-2),...) in every column, shifted down twice.
  * @author Georg Fischer
  */
 public class A209634 extends LambdaTable {

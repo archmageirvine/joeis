@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A283334 G.f.: 1/(1 - x*d/dx log(eta(x))), where eta(x) is Dedekind&apos;s eta(q) function without the q^(1/24) factor.
+ * A283334 G.f.: 1/(1 - x*d/dx log(eta(x))), where eta(x) is Dedekind's eta(q) function without the q^(1/24) factor.
  * @author Georg Fischer
  */
 public class A283334 extends MultiTransformSequence {

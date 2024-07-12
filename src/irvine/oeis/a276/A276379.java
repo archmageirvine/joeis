@@ -7,7 +7,7 @@ import irvine.oeis.a087.A087207;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A276379 Write a &quot;1&quot; for each distinct prime divisor p of n in the (pi(p) - 1)-th place, ignoring multiplicity.
+ * A276379 Write a "1" for each distinct prime divisor p of n in the (pi(p) - 1)-th place, ignoring multiplicity.
  * @author Georg Fischer
  */
 public class A276379 extends SingleTransformSequence {

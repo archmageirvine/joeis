@@ -8,7 +8,7 @@ import irvine.oeis.triangle.LambdaTriangle;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A319498 Number T(n,k) of sets of nonempty words with a total of n letters over k-ary alphabet such that for k&gt;0 the k-th letter occurs at least once and within each word every letter of the alphabet is at least as frequent as the subsequent alphabet letter; triang
+ * A319498 Number T(n,k) of sets of nonempty words with a total of n letters over k-ary alphabet such that for k&gt;0 the k-th letter occurs at least once and within each word every letter of the alphabet is at least as frequent as the subsequent alphabet letter; triangle T(n,k), n&gt;=0, 0&lt;=k&lt;=n, read by rows.
  * @author Georg Fischer
  */
 public class A319498 extends LambdaTriangle {

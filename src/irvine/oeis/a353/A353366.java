@@ -7,7 +7,7 @@ import irvine.oeis.DirichletInverseSequence;
 import irvine.oeis.a110.A110963;
 
 /**
- * A353366 Dirichlet inverse of A110963, which is a fractalization of Kimberling&apos;s paraphrases sequence (A003602).
+ * A353366 Dirichlet inverse of A110963, which is a fractalization of Kimberling's paraphrases sequence (A003602).
  * @author Georg Fischer
  */
 public class A353366 extends AbstractSequence {

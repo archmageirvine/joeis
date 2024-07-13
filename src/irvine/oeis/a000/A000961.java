@@ -3,7 +3,6 @@ package irvine.oeis.a000;
 import java.util.Map;
 import java.util.TreeMap;
 
-import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.util.Pair;
 
@@ -14,7 +13,6 @@ import irvine.util.Pair;
 public class A000961 extends A000040 {
 
   private final TreeMap<Z, Pair<Long, Long>> mMap = new TreeMap<>();
-  protected final Fast mPrime = new Fast();
   private long mP = 1;
   {
     mMap.put(Z.ONE, new Pair<>(1L, 1L));

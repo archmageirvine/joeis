@@ -5,12 +5,13 @@ import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A095112 a(n) is the sum of n/k over all prime powers k &gt; 1 which divide n.
  * @author Georg Fischer
  */
-public class A095112 extends AbstractSequence {
+public class A095112 extends AbstractSequence implements DirectSequence {
 
   private int mN = 0;
 
@@ -21,7 +22,17 @@ public class A095112 extends AbstractSequence {
 
   @Override
   public Z next() {
-    ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> (1 == Functions.OMEGA.i(d)) ? Z.valueOf(mN / d) : Z.ZERO);
+    return a(++mN);
   }
+
+  @Override
+  public Z a(final Z n) {
+    return a(n.intValueExact());
+  }
+
+  @Override
+  public Z a(final int n) {
+    return Integers.SINGLETON.sumdiv(n, d -> (1 == Functions.OMEGA.i(d)) ? Z.valueOf(n / d) : Z.ZERO);
+  }
+
 }

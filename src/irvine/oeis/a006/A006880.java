@@ -1,14 +1,16 @@
 package irvine.oeis.a006;
 
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A006880 Number of primes &lt; 10^n.
  * @author Sean A. Irvine
  */
-public class A006880 extends AbstractSequence {
+public class A006880 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -37,4 +39,15 @@ public class A006880 extends AbstractSequence {
     mLimit *= 10;
     return Z.valueOf(mCount - 1);
   }
+
+  @Override
+  public Z a(final Z n) {
+    return Functions.PRIME_PI.z(Z.TEN.pow(n));
+  }
+
+  @Override
+  public Z a(final int n) {
+    return Functions.PRIME_PI.z(Z.TEN.pow(n));
+  }
+
 }

@@ -31,15 +31,15 @@ public class A019565 extends Sequence0 implements DirectSequence {
 
   @Override
   public final Z a(final Z n) {
-    long m = n.longValue();
+    Z m = n;
     Z prod = Z.ONE;
     long p = 1;
-    while (m != 0) {
+    while (!m.isZero()) {
       p = mPrime.nextPrime(p);
-      if ((m & 1) == 1) {
+      if (m.testBit(0)) {
         prod = prod.multiply(p);
       }
-      m >>>= 1;
+      m = m.shiftRight(1);
     }
     return prod;
   }

@@ -1,0 +1,15 @@
+package irvine.oeis.a071;
+
+import irvine.oeis.FilterPositionSequence;
+
+/**
+ * A071328.
+ * @author Sean A. Irvine
+ */
+public class A071331 extends FilterPositionSequence {
+
+  /** Construct the sequence. */
+  public A071331() {
+    super(1, new A071330(), ZERO);
+  }
+}

@@ -18,6 +18,6 @@ public class A354036 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A354036() {
-    super(1, (term, n) -> Functions.PARITY.z(n).multiply((A010873.a(term).equals(Z.ONE) ? Z.ONE : Z.ZERO)), "", new A065764());
+    super(1, (term, n) -> Functions.PARITY.z(n).multiply(A010873.a(term).equals(Z.ONE) ? Z.ONE : Z.ZERO), "", new A065764());
   }
 }

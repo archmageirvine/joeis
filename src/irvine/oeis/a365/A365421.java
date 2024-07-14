@@ -17,6 +17,6 @@ public class A365421 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A365421() {
-    super(1, (term, n) -> (A046523.a(term).equals(A046523.a(n)) ? Z.ONE : Z.ZERO), "", new A163511());
+    super(1, (term, n) -> A046523.a(term).equals(A046523.a(n)) ? Z.ONE : Z.ZERO, "", new A163511());
   }
 }

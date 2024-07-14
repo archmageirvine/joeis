@@ -2416,3 +2416,6 @@ A071104 Number of perfect matchings in variant of 2n-1 X 2n Aztec rectangle grap
 A071105 Number of perfect matchings in variant of right triangle graph with n edges.
 A071106 Number of perfect matchings in variant of right triangle graph with n edges where n runs through numbers congruent to 0 or 3 mod 4.
 A071136 Number of reduced positive-definite ternary forms of determinant -n
+A071332 Number of polyiamonds with n cells that tile the plane.
+A071333 Number of polyiamonds with n cells that do not tile the plane
+A071334 Number of polyiamonds with n cells without holes that do not tile the plane.

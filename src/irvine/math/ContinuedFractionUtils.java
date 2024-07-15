@@ -33,6 +33,26 @@ public final class ContinuedFractionUtils {
   }
 
   /**
+   * The product of the non-zero terms in the continued fraction expansion of a rational number.
+   * @param n number
+   * @return sum
+   */
+  public static Z continuedFractionProduct(Q n) {
+    Z prod = Z.ONE;
+    while (true) {
+      final Z t = n.toZ();
+      if (!t.isZero()) {
+        prod = prod.multiply(t);
+      }
+      n = n.subtract(t);
+      if (n.isZero()) {
+        return prod;
+      }
+      n = n.reciprocal();
+    }
+  }
+
+  /**
    * Return the continued fraction expansion of a rational number.
    * @param n number
    * @return expansion

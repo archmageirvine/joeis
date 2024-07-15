@@ -18,6 +18,6 @@ public class A300831 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A300831() {
-    super(1, n -> Integers.SINGLETON.productdiv(n, d -> (d >= n) ? Z.ONE : A019565.a(d).pow((Functions.MOEBIUS.i(n / d) == 1 ? Z.ONE : Z.ZERO))));
+    super(1, n -> Integers.SINGLETON.productdiv(n, d -> d >= n ? Z.ONE : A019565.a(d).pow(Functions.MOEBIUS.i(n / d) == 1 ? Z.ONE : Z.ZERO)));
   }
 }

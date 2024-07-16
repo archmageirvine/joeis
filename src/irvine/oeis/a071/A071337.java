@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071337.
+ * A071337 Product of terms of continued fraction expansion of (3/2)^n.
  * @author Sean A. Irvine
  */
 public class A071337 extends Sequence1 {

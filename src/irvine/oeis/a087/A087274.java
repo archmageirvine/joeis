@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A087274 Prime index of largest prime factor of 3*prime(n)+1.
+ * A087274 Prime index of the largest prime factor of 3*prime(n)+1.
  * @author Georg Fischer
  */
 public class A087274 extends LambdaSequence {

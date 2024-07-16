@@ -6,7 +6,7 @@ import irvine.oeis.a061.A061358;
 import irvine.oeis.a068.A068307;
 
 /**
- * A071328.
+ * A071335 Number of partitions of n into sum of at most three primes.
  * @author Sean A. Irvine
  */
 public class A071335 extends Combiner {

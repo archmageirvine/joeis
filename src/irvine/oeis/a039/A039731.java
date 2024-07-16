@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A039731 a(n)=MAX{p(n) mod q, where prime q &lt; p(n)=n-th prime}.
+ * A039731 a(n) = max{p(n) mod q, where prime q &lt; p(n) = n-th prime}.
  * @author Sean A. Irvine
  */
 public class A039731 extends AbstractSequence {

@@ -8,7 +8,7 @@ import irvine.oeis.a004.A004526;
 import irvine.oeis.a030.A030101;
 
 /**
- * A079944 A run of 2^n 0&apos;s followed by a run of 2^n 1&apos;s, for n=0, 1, 2, ...
+ * A079944 A run of 2^n 0's followed by a run of 2^n 1's, for n=0, 1, 2, ...
  * @author Georg Fischer
  */
 public class A079944 extends LambdaSequence {

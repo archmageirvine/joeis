@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A089620 n^3 + n-th prime.
+ * A089620 a(n) = n^3 + prime(n).
  * @author Georg Fischer
  */
 public class A089620 extends A000040 {

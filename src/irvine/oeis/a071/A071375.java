@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a048.A048250;
 
 /**
- * A071291.
+ * A071375 Smallest m such that sum of squarefree divisors of m equals n; a(n) = 0 if no solution to A048250(x) = n exists.
  * @author Sean A. Irvine
  */
 public class A071375 extends A048250 {

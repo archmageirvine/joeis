@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a002.A002210;
 
 /**
- * A175819 Partial sums of digits of decimal expansion of Khintchine's constant (sequence A002210).
+ * A175819 Partial sums of digits of decimal expansion of Khinchin's constant (sequence A002210).
  * @author Sean A. Irvine
  */
 public class A175819 extends PartialSumSequence {

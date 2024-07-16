@@ -4,7 +4,7 @@ package irvine.oeis.a226;
 import irvine.math.z.Z;
 
 /**
- * A226282 [n/2]!*[(n+1)/2]!*C([n/2],1)*C([(n+1)/2],1).
+ * A226282 a(n) = [n/2]!*[(n+1)/2]!*C([n/2],1)*C([(n+1)/2],1).
  * @author Georg Fischer
  */
 public class A226282 extends A226288 {

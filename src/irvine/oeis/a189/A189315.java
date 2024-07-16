@@ -4,7 +4,7 @@ package irvine.oeis.a189;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A189315 Expansion of 5*(1-3*x+x^2)/(1-5*x+5*x^2).
+ * A189315 Expansion of g.f. 5*(1-3*x+x^2)/(1-5*x+5*x^2).
  * @author Georg Fischer
  */
 public class A189315 extends GeneratingFunctionSequence {

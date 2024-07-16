@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a090.A090210;
 
 /**
- * A071291.
+ * A071379 a(n) = (1/e) * Sum_{k&gt;=0} ((k+4)!/k!)^(n-1)/k!.
  * @author Sean A. Irvine
  */
 public class A071379 extends A090210 {

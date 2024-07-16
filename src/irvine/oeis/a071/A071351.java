@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a154.A154831;
 
 /**
- * A068017.
+ * A071351 Numbers n such that both n^4 + 2 and n^4 - 2 are prime.
  * @author Sean A. Irvine
  */
 public class A071351 extends FilterSequence {

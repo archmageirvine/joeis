@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a068.A068019;
 
 /**
- * A068017 Composite n such that sigma(n) - 1 and sigma(n) + 1 are twin primes.
+ * A071348 Intersection of A068017 and A068019: numbers n such that both sigma(n) and phi(n) are middle terms between (different) twin prime pairs.
  * @author Sean A. Irvine
  */
 public class A071348 extends A068019 {

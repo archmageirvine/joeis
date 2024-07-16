@@ -5,7 +5,7 @@ import irvine.oeis.a005.A005384;
 import irvine.oeis.a005.A005385;
 
 /**
- * A059452 Safe primes (A005385) which are not Sophie Germain primes.
+ * A059452 Safe primes (A005385) that are not Sophie Germain primes.
  * @author Sean A. Irvine
  */
 public class A059452 extends SetDifferenceSequence {

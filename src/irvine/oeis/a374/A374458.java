@@ -7,7 +7,7 @@ import irvine.oeis.a268.A268335;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A374458 allocated for Amiram Eldar.
+ * A374458 Squares of exponentially odd numbers (A268335).
  * @author Georg Fischer
  */
 public class A374458 extends SingleTransformSequence {

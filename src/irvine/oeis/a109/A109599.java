@@ -6,7 +6,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a070.A070864;
 
 /**
- * A109599 a(n) = A070864(n+8) - 4.
+ * A109599 a(n) = A070864(n+7) - 4.
  * @author Georg Fischer
  */
 public class A109599 extends LambdaSequence {

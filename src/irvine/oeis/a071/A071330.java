@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000961;
 
 /**
- * A071328.
+ * A071330 Number of decompositions of n into sum of two prime powers.
  * @author Sean A. Irvine
  */
 public class A071330 extends Sequence1 {

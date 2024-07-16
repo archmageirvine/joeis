@@ -5,7 +5,7 @@ package irvine.oeis.a181;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A181069 Expansion of l.g.f.: Sum_{n&gt;=1} [ Sum_{k&gt;=0} C(n+k-1,k)^4 *x^k ] *x^n/n.
+ * A181069 Expansion of l.g.f. Sum_{n&gt;=1} [ Sum_{k&gt;=0} C(n+k-1,k)^4 *x^k ] *x^n/n.
  * @author Georg Fischer
  */
 public class A181069 extends HolonomicRecurrence {

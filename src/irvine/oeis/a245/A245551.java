@@ -6,7 +6,7 @@ package irvine.oeis.a245;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A245551 G.f.: 1/(1-2*x-3*x^2)^(5/2).
+ * A245551 Expansion of 1/(1 - 2*x - 3*x^2)^(5/2).
  * @author Georg Fischer
  */
 public class A245551 extends HolonomicRecurrence {

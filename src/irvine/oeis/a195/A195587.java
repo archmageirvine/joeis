@@ -6,7 +6,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a163.A163659;
 
 /**
- * A195587 a(n) = A163659(n^2), where A163659 is the logarithmic derivative of Stern&apos;s diatomic series (A002487).
+ * A195587 a(n) = A163659(n^2), where A163659 is the logarithmic derivative of Stern's diatomic series (A002487).
  * @author Georg Fischer
  */
 public class A195587 extends LambdaSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A108479 Anti-diagonal sums of number triangle A086645.
+ * A108479 Antidiagonal sums of number triangle A086645.
  * @author Sean A. Irvine
  */
 public class A108479 extends LinearRecurrence {

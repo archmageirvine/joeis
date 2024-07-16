@@ -7,7 +7,7 @@ import irvine.oeis.a373.A373137;
 import irvine.oeis.a373.A373266;
 
 /**
- * A369001 a(n) = 1 if n&apos; / gcd(n,n&apos;) is even, otherwise 0, where n&apos; stands for the arithmetic derivative of n, A003415.
+ * A369001 a(n) = 1 if n' / gcd(n,n') is even, otherwise 0, where n' stands for the arithmetic derivative of n, A003415.
  * @author Georg Fischer
  */
 public class A369001 extends LambdaSequence {

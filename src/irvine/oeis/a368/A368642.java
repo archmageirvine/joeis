@@ -9,7 +9,7 @@ import irvine.oeis.a064.A064608;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A368642 a(n) = Sum_{k=1..n} mu(k)^2 * ceiling(n/k), where mu is the M√∂bius function (A008683).
+ * A368642 a(n) = Sum_{k=1..n} mu(k)^2 * ceiling(n/k), where mu is the M\u00f6bius function (A008683).
  * @author Georg Fischer
  */
 public class A368642 extends SingleTransformSequence {

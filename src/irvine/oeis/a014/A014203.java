@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A014203 Sum {i^2+j^2+k^2}, i^2+j^2+k^2 &lt;= n.
+ * A014203 a(n) = Sum_{i,j,k in Z and i^2 + j^2 + k^2 &lt;= n} i^2 + j^2 + k^2.
  * @author Sean A. Irvine
  */
 public class A014203 extends Sequence0 {

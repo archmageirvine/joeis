@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a046.A046523;
 
 /**
- * A071291.
+ * A071366 Numbers n such that A046523(n) &lt;&gt; A071364(n) and A071364(n) &lt;&gt; n.
  * @author Sean A. Irvine
  */
 public class A071366 extends Sequence1 {

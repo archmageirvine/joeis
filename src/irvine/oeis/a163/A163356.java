@@ -8,7 +8,7 @@ import irvine.oeis.a059.A059253;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A163356 Inverse permutation to A163355, related to Hilbert&apos;s curve in N x N grid.
+ * A163356 Inverse permutation to A163355, related to Hilbert's curve in N x N grid.
  * @author Georg Fischer
  */
 public class A163356 extends MultiTransformSequence {

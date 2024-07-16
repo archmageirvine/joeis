@@ -5,7 +5,7 @@ package irvine.oeis.a134;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A134306 Shapes of height-balanced AVL trees of height at most 6 with n nodes.
+ * A134306 Number of shapes of height-balanced AVL trees of height at most 6 with n nodes.
  * @author Georg Fischer
  */
 public class A134306 extends FiniteSequence {

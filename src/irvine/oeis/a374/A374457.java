@@ -6,7 +6,7 @@ import irvine.oeis.a268.A268335;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A374457 allocated for Amiram Eldar.
+ * A374457 The Dedekind psi function values of the exponentially odd numbers (A268335).
  * @author Georg Fischer
  */
 public class A374457 extends SingleTransformSequence {

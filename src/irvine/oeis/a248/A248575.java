@@ -3,7 +3,7 @@ package irvine.oeis.a248;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A248575 Rounded sums of the non-integer cube roots of n, as partitioned by the integer roots: round[sum(j from n^3+1 to (n+1)^3-1, j^(1/3))].
+ * A248575 Rounded sums of the non-integer cube roots of n, as partitioned by the integer roots: round(Sum_{j=n^3+1..(n+1)^3-1} j^(1/3)).
  * @author Sean A. Irvine
  */
 public class A248575 extends LinearRecurrence {

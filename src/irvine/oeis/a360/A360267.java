@@ -4,7 +4,7 @@ package irvine.oeis.a360;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A360267 a(n) = Sum_{k=0..floor(n/3)} binomial(n-3*k,k) * binomial(2*(n-3*k),n-3*k).
+ * A360267 a(n) = Sum_{k=0..floor(n/4)} binomial(n-3*k,k) * binomial(2*(n-3*k),n-3*k).
  * @author Georg Fischer
  */
 public class A360267 extends HolonomicRecurrence {

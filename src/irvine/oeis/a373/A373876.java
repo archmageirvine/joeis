@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a098.A098097;
 
 /**
- * A071291.
+ * A373876 allocated for Edward Krogius.
  * @author Sean A. Irvine
  */
 public class A373876 extends A098097 {

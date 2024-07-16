@@ -6,7 +6,7 @@ import irvine.oeis.a086.A086271;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A139601 Square array T(n,k) = (n+1)*(k-1)*k/2+k, of polygonal numbers, read by antidiagonals upwards.
+ * A139601 Square array of polygonal numbers read by ascending antidiagonals: T(n, k) = (n + 1)*(k - 1)*k/2 + k.
  * @author Georg Fischer
  */
 public class A139601 extends PrependColumn {

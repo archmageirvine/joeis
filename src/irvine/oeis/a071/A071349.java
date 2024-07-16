@@ -4,7 +4,7 @@ import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.a058.A058250;
 
 /**
- * A068017.
+ * A071349 Numbers k for which the GCD of the k-th primorial number and its totient (A058250) sets record.
  * @author Sean A. Irvine
  */
 public class A071349 extends RecordPositionSequence {

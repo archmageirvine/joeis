@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A280797 a(n) = (n^n - 1)(n^n + 1)/(n + 1).
+ * A280797 a(n) = (n^n - 1)*(n^n + 1)/(n + 1).
  * @author Georg Fischer
  */
 public class A280797 extends LambdaSequence {

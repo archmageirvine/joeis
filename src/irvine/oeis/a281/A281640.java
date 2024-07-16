@@ -6,7 +6,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a260.A260649;
 
 /**
- * A281640 Expansion of x * f(x, x) * f(x^5, x^25) in powers of x where f(, ) is Ramanujan&apos;s general theta function.
+ * A281640 Expansion of x * f(x, x) * f(x^5, x^25) in powers of x where f(, ) is Ramanujan's general theta function.
  * @author Georg Fischer
  */
 public class A281640 extends LambdaSequence {

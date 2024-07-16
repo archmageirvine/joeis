@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 import irvine.math.z.Z;
 
 /**
- * A071291.
+ * A090209 Generalized Bell numbers (from (5,5)-Stirling2 array A090216).
  * @author Sean A. Irvine
  */
 public class A090209 extends A090210 {

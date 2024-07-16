@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000118;
 
 /**
- * A071337.
+ * A071347 a(n) = greatest positive r &lt;= n, such that the origin-centered 4d-sphere of radius sqrt(r) touches A071345(n) lattice points.
  * @author Sean A. Irvine
  */
 public class A071347 extends Sequence1 {

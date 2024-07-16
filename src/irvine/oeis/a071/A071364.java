@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071291.
+ * A071364 Smallest number with same sequence of exponents in canonical prime factorization as n.
  * @author Sean A. Irvine
  */
 public class A071364 extends Sequence1 {

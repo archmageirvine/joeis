@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004018;
 
 /**
- * A071337.
+ * A071341 a(n) = greatest positive r &lt;= n, such that the origin-centered circle of radius sqrt(r) touches A071339(n) lattice points.
  * @author Sean A. Irvine
  */
 public class A071341 extends Sequence0 {

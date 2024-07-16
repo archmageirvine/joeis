@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002210;
 import irvine.oeis.cons.BeattySequence;
 
 /**
- * A064995 A Beatty sequence from Khintchine's constant (A002210).
+ * A064995 A Beatty sequence from Khintchin's constant (A002210).
  * @author Sean A. Irvine
  */
 public class A064995 extends BeattySequence {

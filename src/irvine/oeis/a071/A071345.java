@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000118;
 
 /**
- * A071337.
+ * A071345 a(n) = the maximum number of lattice points touched by an origin-centered 4d-sphere with radius &lt;= n.
  * @author Sean A. Irvine
  */
 public class A071345 extends Sequence1 {

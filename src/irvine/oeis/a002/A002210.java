@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A002210 Decimal expansion of Khintchine's constant.
+ * A002210 Decimal expansion of Khinchin's constant.
  * @author Sean A. Irvine
  */
 public class A002210 extends DecimalExpansionSequence {

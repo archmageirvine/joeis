@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000166;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A344665 a(n) is the number of preference profiles in the stable marriage problem with n men and n women, where both the men&apos;s preferences and women&apos;s preferences form a Latin square when arranged in a matrix, with no paired man and woman who rank each other firs
+ * A344665 a(n) is the number of preference profiles in the stable marriage problem with n men and n women, where both the men's preferences and women's preferences form a Latin square when arranged in a matrix, with no paired man and woman who rank each other first.
  * @author Georg Fischer
  */
 public class A344665 extends SingleTransformSequence {

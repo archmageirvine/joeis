@@ -6,7 +6,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A324828 a(n) = A324543(n) read modulo 2, where A324543 is the M√∂bius-transform of sigma(A156552(n)).
+ * A324828 a(n) = A324543(n) read modulo 2, where A324543 is the M\u00f6bius-transform of sigma(A156552(n)).
  * @author Georg Fischer
  */
 public class A324828 extends LambdaSequence {

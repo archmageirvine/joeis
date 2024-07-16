@@ -7,7 +7,7 @@ import irvine.oeis.recur.HolonomicRecurrence;
 
 
 /**
- * A061504 a(n+1) = le nombre des lettres dans a(n).
+ * A061504 a(1) = 1; for n&gt;1, a(n) = numbers of letters in French name for a(n-1).
  * @author Georg Fischer
  */
 public class A061504 extends HolonomicRecurrence {

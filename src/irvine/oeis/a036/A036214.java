@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A036214 Bit-reversing masks for 2n bits.
+ * A036214 Bit-reversing masks for 2*n bits.
  * @author Sean A. Irvine
  */
 public class A036214 extends Sequence0 {

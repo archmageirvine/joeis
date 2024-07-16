@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A094587 Triangle of permutation coefficients arranged with 1's on the diagonal.
+ * A094587 Triangle of permutation coefficients arranged with 1's on the diagonal. Also, triangle of permutations on n letters with exactly k+1 cycles and with the first k+1 letters in separate cycles.
  * Also, triangle of permutations on n letters with exactly k+1 cycles and with the first k+1 letters in separate cycles.
  * @author Georg Fischer
  */

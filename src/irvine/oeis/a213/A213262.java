@@ -8,7 +8,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A213262 Triangle read by rows: R*(n,k) (n&gt;=2, k from 2 to n-1 or to 2 if n = 2),
+ * A213262 Triangle read by rows: R*(n,k) (n&gt;=2, k from 2 to n-1 or to 2 if n = 2), where R*(n,k) = number of trees with n nodes and k unlabeled end-nodes.
  * where R*(n,k) = number of trees with n nodes and k unlabeled end-nodes.
  * @author Georg Fischer
  */

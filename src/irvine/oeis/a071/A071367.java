@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071291.
+ * A071367 Numbers n such that n+0, n+1, n+2, n+3 and n+4 are, in some order, 1 * a prime, 2 * a prime, 3 * a prime, 4 * a prime and 5 * a prime.
  * @author Sean A. Irvine
  */
 public class A071367 extends Sequence1 {

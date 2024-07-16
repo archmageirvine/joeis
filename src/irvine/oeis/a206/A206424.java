@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A206424 The number of 1&apos;s in row n of Pascal&apos;s Triangle (mod 3)
+ * A206424 The number of 1's in row n of Pascal's Triangle (mod 3).
  * @author Georg Fischer
  */
 public class A206424 extends LambdaSequence {

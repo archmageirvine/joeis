@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071291.
+ * A071354 Floor(2^n/n) is odd.
  * @author Sean A. Irvine
  */
 public class A071354 extends Sequence1 {

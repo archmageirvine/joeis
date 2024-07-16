@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005875;
 
 /**
- * A071337.
+ * A071343 a(n) = least positive r &lt;= n, such that the origin-centered sphere of radius sqrt(r) touches A071342(n) lattice points.
  * @author Sean A. Irvine
  */
 public class A071343 extends Sequence1 {

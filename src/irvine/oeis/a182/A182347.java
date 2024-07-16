@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A182347 Primes of the form n^4 - 2.
+ * A182347 Primes of the form k^4 - 2.
  * @author Georg Fischer
  */
 public class A182347 extends PrimeSubsequence {

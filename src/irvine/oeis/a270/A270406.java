@@ -30,17 +30,13 @@ public class A270406 extends A269920 {
     mG = -1;
   }
 
-  //  protected Z compute(final int n, final int g, final int f) {
-
   @Override
   public Z next() {
     if (++mG > (mN + 3 - mF) / 2 - 1) {
       ++mN;
       mG = 0;
     }
-    final Z result = get(mN, mG, mF);
-    // System.out.println("get(" + mN + ", " + mG + ", " + mF + ") -> " + result);
-    return result;
+    return get(mN, mG, mF);
   }
 
 }

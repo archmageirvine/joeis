@@ -6,16 +6,16 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A369002 Numbers k for which k&apos; / gcd(k,k&apos;) is even, where k&apos; stands for the arithmetic derivative of k, A003415.
+ * A369007 Numbers k for which k&apos; / gcd(k,k&apos;) is a multiple of 27, where k&apos; stands for the arithmetic derivative of k, A003415(k).
  * @author Georg Fischer
  */
-public class A369002 extends FilterNumberSequence {
+public class A369007 extends FilterNumberSequence {
 
   /** Construct the sequence. */
-  public A369002() {
+  public A369007() {
     super(1, 1, k -> {
       final Z ardk = Functions.ARD.z(k);
-      return !ardk.divide(Functions.GCD.z(k, ardk)).testBit(0);
+      return ardk.divide(Functions.GCD.z(k, ardk)).mod(27) == 0;
     });
   }
 }

@@ -6,16 +6,16 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A369002 Numbers k for which k&apos; / gcd(k,k&apos;) is even, where k&apos; stands for the arithmetic derivative of k, A003415.
+ * A369003 Numbers k for which k&apos; / gcd(k,k&apos;) is odd, where k&apos; stands for the arithmetic derivative of k, A003415.
  * @author Georg Fischer
  */
-public class A369002 extends FilterNumberSequence {
+public class A369003 extends FilterNumberSequence {
 
   /** Construct the sequence. */
-  public A369002() {
+  public A369003() {
     super(1, 1, k -> {
       final Z ardk = Functions.ARD.z(k);
-      return !ardk.divide(Functions.GCD.z(k, ardk)).testBit(0);
+      return ardk.divide(Functions.GCD.z(k, ardk)).testBit(0);
     });
   }
 }

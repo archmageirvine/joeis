@@ -12,6 +12,6 @@ public class A370980 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A370980() {
-    super(0, n -> Z.valueOf((n & 1) == 0 ? (n * n - 2 * n + 2) / 2 : (n * n - n + 2) / 2));
+    super(0, n -> Z.valueOf((n & 1) == 0 ? ((long) n * n - 2L * n + 2) / 2 : ((long) n * n - n + 2) / 2));
   }
 }

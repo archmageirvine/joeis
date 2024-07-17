@@ -13,6 +13,6 @@ public class A085611 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A085611() {
-    super(1, new FilterSequence(0, new A007678(), (k, v) -> (k & 1) == 0), (n, v) -> v.divide(2 * n).subtract((n - 1) * (n - 1)));
+    super(1, new FilterSequence(0, new A007678(), (k, v) -> (k & 1) == 0), (n, v) -> v.divide(2L * n).subtract((long) (n - 1) * (n - 1)));
   }
 }

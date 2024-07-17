@@ -14,7 +14,7 @@ public class A079531 extends LambdaSequence {
   /** Construct the sequence. */
   public A079531() {
     super(1, n -> {
-      Z r = Z.valueOf(n * n).root(3);
+      Z r = Z.valueOf((long) n * n).root(3);
       r = r.add(1 - r.auxiliary());
       return Functions.PHI.z(n).subtract(r);
     });

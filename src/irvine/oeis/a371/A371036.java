@@ -13,6 +13,6 @@ public class A371036 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A371036() {
-    super(1, n -> (n == 1) ? Z.ZERO : Binomial.binomial(2 * n - 1, n).subtract(n + 1));
+    super(1, n -> (n == 1) ? Z.ZERO : Binomial.binomial(2L * n - 1, n).subtract(n + 1));
   }
 }

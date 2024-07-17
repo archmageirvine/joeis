@@ -13,6 +13,6 @@ public class A129343 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A129343() {
-    super(0, n -> (n == 0) ? Z.ZERO : Z.valueOf(2 * n).divide(Z.TWO.pow(Functions.VALUATION.i(n, Z.TWO))).subtract(1));
+    super(0, n -> (n == 0) ? Z.ZERO : Z.valueOf(2L * n).divide(Z.TWO.pow(Functions.VALUATION.i(n, Z.TWO))).subtract(1));
   }
 }

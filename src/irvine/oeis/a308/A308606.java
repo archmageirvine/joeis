@@ -13,6 +13,6 @@ public class A308606 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A308606() {
-    super(1, n -> Z.ONE.add(Z.valueOf(n * n - n + 4).multiply(Functions.FACTORIAL.z(n)).divide(4)));
+    super(1, n -> Z.ONE.add(Z.valueOf((long) n * n - n + 4).multiply(Functions.FACTORIAL.z(n)).divide(4)));
   }
 }

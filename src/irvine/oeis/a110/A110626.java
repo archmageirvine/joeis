@@ -14,6 +14,6 @@ public class A110626 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A110626() {
-    super(1, n -> Rationals.SINGLETON.sum(1, n, k -> new Q(2 * Integer.bitCount(k) - IntegerUtils.floorLog2(k) - 1, 2 * k * (2 * k + 1))).den());
+    super(1, n -> Rationals.SINGLETON.sum(1, n, k -> new Q(2 * Integer.bitCount(k) - IntegerUtils.floorLog2(k) - 1, 2 * k * (2L * k + 1))).den());
   }
 }

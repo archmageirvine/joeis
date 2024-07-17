@@ -13,6 +13,6 @@ public class A362292 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A362292() {
-    super(0, n -> new Q(3 * n + 1, 3).pow(n).multiply(Functions.FACTORIAL.z(3 * n)).divide(Functions.FACTORIAL.z(n)).num());
+    super(0, n -> new Q(3L * n + 1, 3).pow(n).multiply(Functions.FACTORIAL.z(3 * n)).divide(Functions.FACTORIAL.z(n)).num());
   }
 }

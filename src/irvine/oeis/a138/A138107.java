@@ -20,7 +20,7 @@ public class A138107 extends A333361 {
       for (int j = 0; j < i; ++j) {
         final int g = Functions.GCD.i(v[i], v[j]);
         final int u = v[i] * v[j] / g;
-        prod = RING.multiply(prod, RING.pow(RING.oneMinusXToTheN(u), 2 * g, degree), degree);
+        prod = RING.multiply(prod, RING.pow(RING.oneMinusXToTheN(u), 2L * g, degree), degree);
       }
     }
     for (final int j : v) {

@@ -14,6 +14,6 @@ public class A086228 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A086228() {
-    super(0, n -> (n <= 2) ? Z.valueOf(new int[] {1, 3, 15}[n]) : Z.TWO.pow(Z.valueOf(n).multiply(Z.valueOf(n - 3)).divide2()).multiply(Z.valueOf(n + 1)).multiply(Binomial.binomial(2 * n + 1, n)));
+    super(0, n -> (n <= 2) ? Z.valueOf(new int[] {1, 3, 15}[n]) : Z.TWO.pow(Z.valueOf(n).multiply(Z.valueOf(n - 3)).divide2()).multiply(Z.valueOf(n + 1)).multiply(Binomial.binomial(2L * n + 1, n)));
   }
 }

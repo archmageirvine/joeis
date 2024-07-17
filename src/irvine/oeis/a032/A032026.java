@@ -13,7 +13,7 @@ public class A032026 extends A032023 {
   protected Polynomial<Polynomial<Q>> product(final int n) {
     Polynomial<Polynomial<Q>> prod = RING.one();
     for (int k = 1; k <= n; ++k) {
-      final Polynomial<Polynomial<Q>> u = RING.pow(RING.onePlusXToTheN(Y_RING.x(), k), 2 * k - 1, n);
+      final Polynomial<Polynomial<Q>> u = RING.pow(RING.onePlusXToTheN(Y_RING.x(), k), 2L * k - 1, n);
       prod = RING.multiply(prod, u, n);
     }
     return RING.subtract(prod, RING.one());

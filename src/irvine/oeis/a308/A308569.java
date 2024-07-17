@@ -18,6 +18,6 @@ public class A308569 extends UpperLeftTriangle {
 
   @Override
   public Z matrixElement(final int n, final int k) {
-    return Integers.SINGLETON.sumdiv(n, d -> Z.valueOf(d).pow(k * n));
+    return Integers.SINGLETON.sumdiv(n, d -> Z.valueOf(d).pow((long) k * n));
   }
 }

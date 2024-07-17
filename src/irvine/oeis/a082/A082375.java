@@ -12,6 +12,6 @@ public class A082375 extends LambdaTable {
 
   /** Construct the sequence. */
   public A082375() {
-    super(0, 0, n -> new Integer[]{0, n / 2}, (n, k) -> Z.valueOf(n).subtract(2 * k));
+    super(0, 0, n -> new Integer[]{0, n / 2}, (n, k) -> Z.valueOf(n).subtract(2L * k));
   }
 }

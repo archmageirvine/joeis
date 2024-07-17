@@ -14,7 +14,7 @@ public class A365958 extends LambdaSequence {
   public A365958() {
     super(1, n -> {
       int k = 1;
-      while (!Z.valueOf(8 * n * k + 1).isProbablePrime()) {
+      while (!Z.valueOf(8L * n * k + 1).isProbablePrime()) {
         k++;
       }
       return Z.valueOf(k);

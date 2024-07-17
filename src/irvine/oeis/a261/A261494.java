@@ -16,6 +16,6 @@ public class A261494 extends LambdaArray {
 
   /** Construct the sequence. */
   public A261494() {
-    super(0, (n, k) -> (n < 1) ? Z.ONE : Rationals.SINGLETON.sumdiv(n, d -> new Q(Binomial.binomial((k + 1) * (n / d), n / d).multiply(Functions.PHI.z(d)), Z.valueOf((k + 1) * n))).num());
+    super(0, (n, k) -> (n < 1) ? Z.ONE : Rationals.SINGLETON.sumdiv(n, d -> new Q(Binomial.binomial((long) (k + 1) * (n / d), n / d).multiply(Functions.PHI.z(d)), Z.valueOf((long) (k + 1) * n))).num());
   }
 }

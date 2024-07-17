@@ -12,6 +12,6 @@ public class A337373 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A337373() {
-    super(1, 1, new A003961(), (k, v) -> v.compareTo(3 * k) > 0);
+    super(1, 1, new A003961(), (k, v) -> v.compareTo(3L * k) > 0);
   }
 }

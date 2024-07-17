@@ -13,6 +13,6 @@ public class A238737 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A238737() {
-    super(0, (self, n) -> Z.valueOf(2 * n + 2).subtract(self.s(0)), "", new A224911());
+    super(0, (self, n) -> Z.valueOf(2L * n + 2).subtract(self.s(0)), "", new A224911());
   }
 }

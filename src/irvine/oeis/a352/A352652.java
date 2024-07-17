@@ -14,6 +14,6 @@ public class A352652 extends HypergeometricSequence {
 
   /** Construct the sequence. */
   public A352652() {
-    super(0, 3, 2, "[[0,-1],[0,5],[0,5],[1],[1,6],[1]]", "1", (n, v) -> v.multiply(new Q(5, 3)).multiply(Z.NEG_ONE.pow(n)).multiply(Binomial.binomial(7 * n, n)).num());
+    super(0, 3, 2, "[[0,-1],[0,5],[0,5],[1],[1,6],[1]]", "1", (n, v) -> v.multiply(new Q(5, 3)).multiply(Z.NEG_ONE.pow(n)).multiply(Binomial.binomial(7L * n, n)).num());
   }
 }

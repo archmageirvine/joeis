@@ -12,6 +12,6 @@ public class A128196 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A128196() {
-    super(0, (self, n) -> Z.valueOf(2 * n - 1).multiply(self.a(n - 1)).add(Z.TWO.pow(n)), "1");
+    super(0, (self, n) -> Z.valueOf(2L * n - 1).multiply(self.a(n - 1)).add(Z.TWO.pow(n)), "1");
   }
 }

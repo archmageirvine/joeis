@@ -13,6 +13,6 @@ public class A353897 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A353897() {
-    super(1, (p, e) -> p.pow(1 << IntegerUtils.floorLog2(e)));
+    super(1, (p, e) -> p.pow(1L << IntegerUtils.floorLog2(e)));
   }
 }

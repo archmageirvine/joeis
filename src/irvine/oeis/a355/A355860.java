@@ -12,6 +12,6 @@ public class A355860 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A355860() {
-    super(1, 1, 1, (n, k) -> (n * k) % (n + k) == 0 ? Z.valueOf(n * k / (n + k)) : Z.ZERO);
+    super(1, 1, 1, (n, k) -> (n * k) % (n + k) == 0 ? Z.valueOf((long) n * k / (n + k)) : Z.ZERO);
   }
 }

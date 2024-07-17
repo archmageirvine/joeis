@@ -14,6 +14,6 @@ public class A144186 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A144186() {
-    super(0, n -> new Q(Binomial.binomial(2 * n, n), Functions.FACTORIAL.z(n + 1)).num());
+    super(0, n -> new Q(Binomial.binomial(2L * n, n), Functions.FACTORIAL.z(n + 1)).num());
   }
 }

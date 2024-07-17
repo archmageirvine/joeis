@@ -15,6 +15,6 @@ public class A353162 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A353162() {
-    super(0, (self, n) -> Rationals.SINGLETON.sum(1, n, k -> new Q((Z.valueOf(k).isProbablePrime() ? Z.ONE : Z.ZERO).multiply(k * k).multiply(self.a(n - k)), Functions.FACTORIAL.z(n - k))).multiply(Functions.FACTORIAL.z(n - 1)).num(), "1");
+    super(0, (self, n) -> Rationals.SINGLETON.sum(1, n, k -> new Q((Z.valueOf(k).isProbablePrime() ? Z.ONE : Z.ZERO).multiply((long) k * k).multiply(self.a(n - k)), Functions.FACTORIAL.z(n - k))).multiply(Functions.FACTORIAL.z(n - 1)).num(), "1");
   }
 }

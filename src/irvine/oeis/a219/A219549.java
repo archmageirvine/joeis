@@ -13,6 +13,6 @@ public class A219549 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A219549() {
-    super(1, n -> Functions.LPF.z(Z.TWO.pow(8 * n).add(1)));
+    super(1, n -> Functions.LPF.z(Z.TWO.pow(8L * n).add(1)));
   }
 }

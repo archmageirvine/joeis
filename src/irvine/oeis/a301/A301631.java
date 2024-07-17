@@ -14,6 +14,6 @@ public class A301631 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A301631() {
-    super(0, n -> new Q(Binomial.binomial(2 * n, n), Z.valueOf(n + 1)).subtract(new Q(Z.FOUR.pow(n), Z.valueOf(n + 1).multiply(n + 1))).num());
+    super(0, n -> new Q(Binomial.binomial(2L * n, n), Z.valueOf(n + 1)).subtract(new Q(Z.FOUR.pow(n), Z.valueOf(n + 1).multiply(n + 1))).num());
   }
 }

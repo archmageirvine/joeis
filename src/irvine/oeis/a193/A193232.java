@@ -12,6 +12,6 @@ public class A193232 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A193232() {
-    super(0, (n, s) -> s[0].xor(Z.valueOf(n * (n + 1) / 2)), "0", PREVIOUS);
+    super(0, (n, s) -> s[0].xor(Z.valueOf((long) n * (n + 1) / 2)), "0", PREVIOUS);
   }
 }

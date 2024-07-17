@@ -42,7 +42,7 @@ public class A000264 extends Sequence1 {
     mU = RING.add(mU, RING.monomial(u.multiply2(), mN));
     Z v = u;
     for (int k = 1; k < mN; ++k) {
-      final Z w = RING.pow(RING.add(mU, RING.one()), 2 * k, mN - k).coeff(mN - k);
+      final Z w = RING.pow(RING.add(mU, RING.one()), 2L * k, mN - k).coeff(mN - k);
       v = v.subtract(w.multiply(mV.get(k)));
     }
     mV.add(v);

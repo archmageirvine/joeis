@@ -30,7 +30,7 @@ public class A002589 extends Sequence0 {
   @Override
   public Z next() {
     mN += 2;
-    Z n = Functions.CYCLOTOMIC.z(2 * mN, 2);
+    Z n = Functions.CYCLOTOMIC.z(2L * mN, 2);
     if (mVerbose) {
       System.out.println("Doing: 2^" + mN + "+1 Phi(" + 2 * mN + ",2)=" + n);
     }

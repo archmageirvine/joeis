@@ -12,6 +12,6 @@ public class A091535 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A091535() {
-    super(1, n -> Functions.MULTIFACTORIAL.z(3, 3 * n - 2).multiply(Functions.MULTIFACTORIAL.z(3, 3 * n - 1)).divide(2));
+    super(1, n -> Functions.MULTIFACTORIAL.z(3, 3L * n - 2).multiply(Functions.MULTIFACTORIAL.z(3, 3L * n - 1)).divide(2));
   }
 }

@@ -15,6 +15,6 @@ public class A345128 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A345128() {
-    super(1, n -> Integers.SINGLETON.sum(1, n / 2, k -> Z.valueOf(Functions.MOBIUS.i(k * n - (long) k * k)).square()));
+    super(1, n -> Integers.SINGLETON.sum(1, n / 2, k -> Z.valueOf(Functions.MOBIUS.i((long) k * n - (long) k * k)).square()));
   }
 }

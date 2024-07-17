@@ -13,6 +13,6 @@ public class A159783 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A159783() {
-    super(1, (n, s) -> s[1].multiply(Z.TWO.pow((n - 1) * n / 2)).multiply(s[0]), "", new A000178(), PREVIOUS);
+    super(1, (n, s) -> s[1].multiply(Z.TWO.pow((long) (n - 1) * n / 2)).multiply(s[0]), "", new A000178(), PREVIOUS);
   }
 }

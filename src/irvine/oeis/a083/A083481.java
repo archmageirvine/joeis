@@ -13,6 +13,6 @@ public class A083481 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A083481() {
-    super(1, n -> Functions.CORE.z(n * n + n * 1L));
+    super(1, n -> Functions.CORE.z((long) n * n + n * 1L));
   }
 }

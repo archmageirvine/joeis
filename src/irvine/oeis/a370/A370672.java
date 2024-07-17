@@ -15,6 +15,6 @@ public class A370672 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A370672() {
-    super(0, n -> A123565.a(2 * n + 1).multiply(2 * n + 1));
+    super(0, n -> A123565.a(2 * n + 1).multiply(2L * n + 1));
   }
 }

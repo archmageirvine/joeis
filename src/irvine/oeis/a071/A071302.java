@@ -29,7 +29,7 @@ public class A071302 extends LambdaSequence {
       return baze.pow(k).add((n & 1) == 1
         ? Z.ZERO
         : Z.NEG_ONE.pow(k + 1)).multiply(
-        Integers.SINGLETON.product((n & 1) == 0 ? 1 : 0, k - 1, i -> baze.pow(2 * k).subtract(baze.pow(2 * i))));
+        Integers.SINGLETON.product((n & 1) == 0 ? 1 : 0, k - 1, i -> baze.pow(2 * k).subtract(baze.pow(2L * i))));
     });
   }
 }

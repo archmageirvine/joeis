@@ -13,6 +13,6 @@ public class A072848 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A072848() {
-    super(1, n -> Functions.GPF.z(Z.TEN.pow(6 * n).add(1)));
+    super(1, n -> Functions.GPF.z(Z.TEN.pow(6L * n).add(1)));
   }
 }

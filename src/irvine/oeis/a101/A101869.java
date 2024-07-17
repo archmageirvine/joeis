@@ -12,6 +12,6 @@ public class A101869 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A101869() {
-    super(1, n -> CR.PHI.multiply(n).ceil().multiply(4).add(2 * n));
+    super(1, n -> CR.PHI.multiply(n).ceil().multiply(4).add(2L * n));
   }
 }

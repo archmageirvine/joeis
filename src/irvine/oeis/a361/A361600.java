@@ -21,6 +21,6 @@ public class A361600 extends UpperLeftTriangle {
 
   @Override
   public Z matrixElement(final int n, final int k) {
-    return Rationals.SINGLETON.sum(0, n, j -> new Q(Binomial.binomial(n + (k - 1) * j, k * j), Functions.FACTORIAL.z(j)).multiply(Functions.FACTORIAL.z(n))).num();
+    return Rationals.SINGLETON.sum(0, n, j -> new Q(Binomial.binomial(n + (long) (k - 1) * j, (long) k * j), Functions.FACTORIAL.z(j)).multiply(Functions.FACTORIAL.z(n))).num();
   }
 }

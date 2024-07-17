@@ -14,6 +14,6 @@ public class A290949 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A290949() {
-    super(1, n -> (n == 1) ? Z.ONE : Z.ONE.shiftLeft(n * n).subtract(Z.TWO.multiply(n).multiply(Z.ONE.shiftLeft(n).subtract(Z.ONE))).add(Z.valueOf(n).multiply(n)).subtract(Z.TWO.multiply(n).multiply(n).multiply(Z.ONE.shiftLeft(n - 1).subtract(Z.ONE).square())).add(Z.valueOf(n).multiply(n).multiply(Z.valueOf(n - 1).square())).subtract(Z.THREE.multiply(Binomial.binomial(n, 2).square())).subtract(Z.ONE));
+    super(1, n -> (n == 1) ? Z.ONE : Z.ONE.shiftLeft((long) n * n).subtract(Z.TWO.multiply(n).multiply(Z.ONE.shiftLeft(n).subtract(Z.ONE))).add(Z.valueOf(n).multiply(n)).subtract(Z.TWO.multiply(n).multiply(n).multiply(Z.ONE.shiftLeft(n - 1).subtract(Z.ONE).square())).add(Z.valueOf(n).multiply(n).multiply(Z.valueOf(n - 1).square())).subtract(Z.THREE.multiply(Binomial.binomial(n, 2).square())).subtract(Z.ONE));
   }
 }

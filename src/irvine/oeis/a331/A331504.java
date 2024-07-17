@@ -12,6 +12,6 @@ public class A331504 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A331504() {
-    super(1, n -> Binomial.binomial(Binomial.binomial(n, 2), n * (n - 1) / 4));
+    super(1, n -> Binomial.binomial(Binomial.binomial(n, 2), (long) n * (n - 1) / 4));
   }
 }

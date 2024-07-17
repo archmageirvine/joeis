@@ -13,6 +13,6 @@ public class A367514 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A367514() {
-    super(1, (p, e) -> p.pow(Functions.THUE_MORSE.z(e).intValueExact() * e));
+    super(1, (p, e) -> p.pow((long) Functions.THUE_MORSE.z(e).intValueExact() * e));
   }
 }

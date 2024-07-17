@@ -14,6 +14,6 @@ public class A066888 extends LambdaSequence {
   /** Construct the sequence. */
   public A066888() {
     // Table[PrimePi[(n^2 + 3*n+2)/2] - PrimePi[(n^2 + n)/2], {n,0, 96}]
-    super(0, n -> Functions.PRIME_PI.z(Z.valueOf((long) n * n + 3 * n + 2).divide2()).subtract(Functions.PRIME_PI.z(Z.valueOf((long) n * n + n).divide2())));
+    super(0, n -> Functions.PRIME_PI.z(Z.valueOf((long) n * n + 3L * n + 2).divide2()).subtract(Functions.PRIME_PI.z(Z.valueOf((long) n * n + n).divide2())));
   }
 }

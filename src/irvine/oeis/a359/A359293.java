@@ -13,6 +13,6 @@ public class A359293 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A359293() {
-    super(2, n -> Functions.PREV_PRIME.z(Binomial.binomial(2 * n, n)));
+    super(2, n -> Functions.PREV_PRIME.z(Binomial.binomial(2L * n, n)));
   }
 }

@@ -13,6 +13,6 @@ public class A293405 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A293405() {
-    super(0, n -> CR.PHI.add(1).multiply(Z.valueOf(n * n)).round());
+    super(0, n -> CR.PHI.add(1).multiply(Z.valueOf((long) n * n)).round());
   }
 }

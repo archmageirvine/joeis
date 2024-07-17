@@ -12,7 +12,7 @@ public class A325655 extends LambdaTable {
 
   /** Construct the sequence. */
   public A325655() {
-    super(1, 1, n -> new Integer[] {0, n - 1}, (n, k) -> (Z.TWO.multiply(Z.NEG_ONE.add(Z.NEG_ONE.pow(n))).multiply(k).subtract(Z.valueOf(k).square().multiply(2 * n)).add(Z.valueOf(n).multiply(Z.TWO.subtract(Z.NEG_ONE.pow(k)).subtract(Z.NEG_ONE.pow(n)).add(Z.valueOf(n).square().multiply(2))))).divide(4));
+    super(1, 1, n -> new Integer[] {0, n - 1}, (n, k) -> (Z.TWO.multiply(Z.NEG_ONE.add(Z.NEG_ONE.pow(n))).multiply(k).subtract(Z.valueOf(k).square().multiply(2L * n)).add(Z.valueOf(n).multiply(Z.TWO.subtract(Z.NEG_ONE.pow(k)).subtract(Z.NEG_ONE.pow(n)).add(Z.valueOf(n).square().multiply(2))))).divide(4));
   }
 }
 

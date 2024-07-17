@@ -18,7 +18,7 @@ public class A177890 extends HolonomicRecurrence implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    return Z.valueOf(n).multiply(n + 1).multiply(n * 13 - 10).divide(6);
+    return Z.valueOf(n).multiply(n + 1).multiply(n * 13L - 10).divide(6);
   }
 
   @Override

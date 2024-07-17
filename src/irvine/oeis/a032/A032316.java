@@ -15,7 +15,7 @@ public class A032316 extends A032312 {
     Polynomial<Q> egj = RING.one();
     for (int k = 1; k <= n; ++k) {
       f = f.divide(k);
-      egj = RING.multiply(egj, RING.pow(RING.onePlusXToTheN(f, k), 2 * k - 1, n), n);
+      egj = RING.multiply(egj, RING.pow(RING.onePlusXToTheN(f, k), 2L * k - 1, n), n);
     }
     return egj;
   }

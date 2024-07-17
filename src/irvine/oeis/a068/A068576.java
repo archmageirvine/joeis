@@ -19,7 +19,7 @@ public class A068576 extends Sequence1 {
   public Z next() {
     while (true) {
       final int m = Functions.MOBIUS.i(++mN);
-      mSum += m * m;
+      mSum += (long) m * m;
       if (mSum == CR.valueOf(6 * mN).divide(PI2).floor().longValueExact()) {
         return Z.valueOf(mN);
       }

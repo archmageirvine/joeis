@@ -14,7 +14,7 @@ public class A368203 extends LambdaSequence {
   public A368203() {
     super(1, n -> {
       int k = 1;
-      while (!Z.valueOf(7 * n * k + 1).isProbablePrime()) {
+      while (!Z.valueOf(7L * n * k + 1).isProbablePrime()) {
         k++;
       }
       return Z.valueOf(k);

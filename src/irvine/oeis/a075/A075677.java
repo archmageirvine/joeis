@@ -12,6 +12,6 @@ public class A075677 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A075677() {
-    super(1, n -> Z.valueOf(3 * n - 1).makeOdd());
+    super(1, n -> Z.valueOf(3L * n - 1).makeOdd());
   }
 }

@@ -15,6 +15,6 @@ public class A373172 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A373172() {
-    super(1, (self, n) -> A004719.a(self.a(n - 1).add(4 * n - 3)), "1");
+    super(1, (self, n) -> A004719.a(self.a(n - 1).add(4L * n - 3)), "1");
   }
 }

@@ -11,6 +11,6 @@ public class A069266 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A069266() {
-    super(1, 1, new A068976(), (k, v) -> v.compareTo(2 * k) > 0);
+    super(1, 1, new A068976(), (k, v) -> v.compareTo(2L * k) > 0);
   }
 }

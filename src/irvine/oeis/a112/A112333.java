@@ -13,6 +13,6 @@ public class A112333 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A112333() {
-    super(0, 0, 0, (n, k) -> Integers.SINGLETON.product(1, n, m -> Z.valueOf(3 * m - 1)).divide(Integers.SINGLETON.product(1, k, j -> Z.valueOf(3 * j - 1))));
+    super(0, 0, 0, (n, k) -> Integers.SINGLETON.product(1, n, m -> Z.valueOf(3L * m - 1)).divide(Integers.SINGLETON.product(1, k, j -> Z.valueOf(3L * j - 1))));
   }
 }

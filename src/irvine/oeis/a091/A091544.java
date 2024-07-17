@@ -13,6 +13,6 @@ public class A091544 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A091544() {
-    super(1, n -> Q.TWO.pow(4 * n - 1).multiply(Rationals.SINGLETON.product(0, n - 1, j -> new Q(4 * j + 1, 4))).multiply(Rationals.SINGLETON.product(0, n - 1, j -> new Q(2 * j + 1, 2))).num());
+    super(1, n -> Q.TWO.pow(4L * n - 1).multiply(Rationals.SINGLETON.product(0, n - 1, j -> new Q(4L * j + 1, 4))).multiply(Rationals.SINGLETON.product(0, n - 1, j -> new Q(2L * j + 1, 2))).num());
   }
 }

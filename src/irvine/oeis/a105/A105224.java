@@ -12,6 +12,6 @@ public class A105224 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A105224() {
-    super(1, n -> Z.valueOf(2 * n).sqrt().subtract(Z.valueOf(n - 1).sqrt()));
+    super(1, n -> Z.valueOf(2L * n).sqrt().subtract(Z.valueOf(n - 1).sqrt()));
   }
 }

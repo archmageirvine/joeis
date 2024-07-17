@@ -12,6 +12,6 @@ public class A340573 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A340573() {
-    super(1, new A052350(), (n, v) -> v.add(6 * n));
+    super(1, new A052350(), (n, v) -> v.add(6L * n));
   }
 }

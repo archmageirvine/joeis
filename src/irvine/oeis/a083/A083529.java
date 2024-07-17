@@ -12,6 +12,6 @@ public class A083529 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A083529() {
-    super(1, n -> Z.FIVE.pow(n).modZ(3 * n));
+    super(1, n -> Z.FIVE.pow(n).modZ(3L * n));
   }
 }

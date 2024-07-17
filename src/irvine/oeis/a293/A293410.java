@@ -13,6 +13,6 @@ public class A293410 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A293410() {
-    super(0, n -> CR.THREE.sqrt().multiply(Z.valueOf(n * n)).ceil());
+    super(0, n -> CR.THREE.sqrt().multiply(Z.valueOf((long) n * n)).ceil());
   }
 }

@@ -15,6 +15,6 @@ public class A261500 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A261500() {
-    super(0, n -> (n == 0) ? Z.ONE : Integers.SINGLETON.sumdiv(n, d -> Binomial.binomial(7 * n / d, n / d).multiply(Functions.PHI.z(d))).divide(7 * n));
+    super(0, n -> (n == 0) ? Z.ONE : Integers.SINGLETON.sumdiv(n, d -> Binomial.binomial(7L * n / d, n / d).multiply(Functions.PHI.z(d))).divide(7L * n));
   }
 }

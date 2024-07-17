@@ -13,6 +13,6 @@ public class A091552 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A091552() {
-    super(2, n -> (Integers.SINGLETON.product(0, n - 1, j -> Z.valueOf(6 * j + 1)).multiply(-3).add(Integers.SINGLETON.product(0, n - 1, j -> Z.valueOf(6 * j + 3)))).multiply(Integers.SINGLETON.product(0, n - 1, j -> Z.valueOf(3 * j + 1))).multiply(Z.TWO.pow(n)).divide(96));
+    super(2, n -> (Integers.SINGLETON.product(0, n - 1, j -> Z.valueOf(6L * j + 1)).multiply(-3).add(Integers.SINGLETON.product(0, n - 1, j -> Z.valueOf(6L * j + 3)))).multiply(Integers.SINGLETON.product(0, n - 1, j -> Z.valueOf(3L * j + 1))).multiply(Z.TWO.pow(n)).divide(96));
   }
 }

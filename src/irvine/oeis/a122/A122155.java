@@ -15,7 +15,7 @@ public class A122155 extends LambdaSequence {
     super(0, n -> {
       final int m = Integer.highestOneBit(n);
       final int j = n - m;
-      return (j == 0) ? Z.valueOf(n) : Z.valueOf(2 * m - j);
+      return (j == 0) ? Z.valueOf(n) : Z.valueOf(2L * m - j);
     });
   }
 }

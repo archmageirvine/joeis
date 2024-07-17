@@ -12,6 +12,6 @@ public class A123554 extends LambdaTable {
 
   /** Construct the sequence. */
   public A123554() {
-    super(1, 1, n -> new Integer[]{0, (n - 1) * n}, (n, k) -> Binomial.binomial(n * (n - 1), k));
+    super(1, 1, n -> new Integer[]{0, (n - 1) * n}, (n, k) -> Binomial.binomial((long) n * (n - 1), k));
   }
 }

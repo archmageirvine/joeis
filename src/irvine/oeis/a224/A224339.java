@@ -13,6 +13,6 @@ public class A224339 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A224339() {
-    super(1, (p, e) -> is2(p) ? Z.TWO.pow(2 * e + 1).subtract(3) : sigmaP(p, 2 * e));
+    super(1, (p, e) -> is2(p) ? Z.TWO.pow(2L * e + 1).subtract(3) : sigmaP(p, 2 * e));
   }
 }

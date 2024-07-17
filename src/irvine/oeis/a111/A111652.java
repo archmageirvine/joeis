@@ -12,6 +12,6 @@ public class A111652 extends LambdaTable {
 
   /** Construct the sequence. */
   public A111652() {
-    super(1, 1, n -> new Integer[] {1, n}, (n, k) -> Z.valueOf(3 * n));
+    super(1, 1, n -> new Integer[] {1, n}, (n, k) -> Z.valueOf(3L * n));
   }
 }

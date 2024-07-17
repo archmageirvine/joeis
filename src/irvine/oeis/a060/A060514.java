@@ -39,7 +39,7 @@ public class A060514 extends Sequence0 {
     Polynomial<Polynomial<Q>> sum = ring.zero();
     for (int k = 0; k <= n; ++k) {
       final Q invkf = new Q(Z.ONE, Functions.FACTORIAL.z(k)); // 1/k!
-      final Polynomial<Polynomial<Q>> a = ring.pow(t, k * (k - 1) / 2, n);
+      final Polynomial<Polynomial<Q>> a = ring.pow(t, (long) k * (k - 1) / 2, n);
       final Polynomial<Polynomial<Q>> b = ring.exp(ring.series(HY3X2, OPYX, n), n).shift(1);
       final Polynomial<Polynomial<Q>> c = ring.multiply(ring.pow(b, k, n), inner.monomial(invkf, 0));
       sum = ring.add(sum, ring.multiply(a, c, n));

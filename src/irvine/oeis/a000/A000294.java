@@ -21,7 +21,7 @@ public class A000294 extends Sequence0 {
     // Do the run up each time rather than remembering in extended precision
     Polynomial<Z> t = RING.one();
     for (int k = 1; k <= mN; ++k) {
-      t = RING.multiply(t, RING.pow(RING.oneMinusXToTheN(k), k * (k + 1) / 2, mN), mN);
+      t = RING.multiply(t, RING.pow(RING.oneMinusXToTheN(k), (long) k * (k + 1) / 2, mN), mN);
     }
     return RING.coeff(RING.one(), t, mN);
   }

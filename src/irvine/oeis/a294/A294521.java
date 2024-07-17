@@ -13,6 +13,6 @@ public class A294521 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A294521() {
-    super(0, n -> Rationals.SINGLETON.sum(0, n, k -> new Q(1, (k + 1) * (5 * k + 1))).den());
+    super(0, n -> Rationals.SINGLETON.sum(0, n, k -> new Q(1, (k + 1) * (5L * k + 1))).den());
   }
 }

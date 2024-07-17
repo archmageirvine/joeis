@@ -19,6 +19,6 @@ public class A143199 extends BaseTriangle {
   @Override
   public Z triangleElement(final int n, final int m) {
     // Maple: seq(print(seq((n + 1) * (if m <= n/2 then (m - 1) * (m + 2) / 2 else (n - m + 2) * (n - (m + 1)) / 2 fi) + n, m=0..n)), n=0..10);
-    return Z.valueOf(n + 1).multiply(m <= n / 2 ? (m - 1) * (m + 2) / 2 : (n - m + 2) * (n - m - 1) / 2).add(n);
+    return Z.valueOf(n + 1).multiply(m <= n / 2 ? (long) (m - 1) * (m + 2) / 2 : (long) (n - m + 2) * (n - m - 1) / 2).add(n);
   }
 }

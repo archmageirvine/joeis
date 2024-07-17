@@ -12,6 +12,6 @@ public class A108767 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A108767() {
-    super(1, 1, 1, (n, k) -> Binomial.binomial(n, k).multiply(Binomial.binomial(2 * n, k - 1)).divide(n));
+    super(1, 1, 1, (n, k) -> Binomial.binomial(n, k).multiply(Binomial.binomial(2L * n, k - 1)).divide(n));
   }
 }

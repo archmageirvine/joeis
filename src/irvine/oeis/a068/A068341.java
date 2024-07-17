@@ -17,7 +17,7 @@ public class A068341 extends Sequence1 {
     ++mN;
     long sum = 0;
     for (long k = 1; k <= mN; ++k) {
-      sum += Functions.MOBIUS.i(k) * Functions.MOBIUS.i(mN + 1 - k);
+      sum += (long) Functions.MOBIUS.i(k) * Functions.MOBIUS.i(mN + 1 - k);
     }
     return Z.valueOf(sum);
   }

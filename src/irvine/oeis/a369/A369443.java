@@ -17,7 +17,7 @@ public class A369443 extends LambdaSequence {
       final int s = 3;
       final int t = 1;
       final int u = 2;
-      return Integers.SINGLETON.sum(0, n / s, k -> Binomial.binomial(t * (n + 1), k).multiply(Binomial.binomial(u * (n + 1), n - s * k))).divide(n + 1);
+      return Integers.SINGLETON.sum(0, n / s, k -> Binomial.binomial(t * (n + 1), k).multiply(Binomial.binomial((long) u * (n + 1), n - (long) s * k))).divide(n + 1);
     });
   }
 }

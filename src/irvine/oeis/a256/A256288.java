@@ -11,6 +11,6 @@ public class A256288 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A256288() {
-    super(0, (self, n) -> self.s(0).multiply(7 * n), "", new A256287());
+    super(0, (self, n) -> self.s(0).multiply(7L * n), "", new A256287());
   }
 }

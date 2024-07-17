@@ -13,6 +13,6 @@ public class A370284 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A370284() {
-    super(0, n -> Integers.SINGLETON.sum(0, n / 3, k -> Binomial.binomial(n + k - 1, k).multiply(Binomial.binomial(4 * n - 1, n - 3 * k))));
+    super(0, n -> Integers.SINGLETON.sum(0, n / 3, k -> Binomial.binomial(n + k - 1, k).multiply(Binomial.binomial(4L * n - 1, n - 3L * k))));
   }
 }

@@ -20,7 +20,7 @@ public class A027999 extends Sequence0 {
     ++mN;
     Polynomial<Z> gf = RING.one();
     for (int k = 2; k <= mN; ++k) {
-      gf = RING.multiply(gf, RING.pow(RING.onePlusXToTheN(k), k * (k - 1) / 2, mN), mN);
+      gf = RING.multiply(gf, RING.pow(RING.onePlusXToTheN(k), (long) k * (k - 1) / 2, mN), mN);
     }
     return gf.coeff(mN);
   }

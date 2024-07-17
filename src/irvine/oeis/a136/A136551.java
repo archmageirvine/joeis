@@ -14,7 +14,7 @@ public class A136551 extends LambdaSequence {
   /** Construct the sequence. */
   public A136551() {
     super(0, n -> {
-      final Z n2n1 = Z.TWO.pow(n).add(2 * n + 1);
+      final Z n2n1 = Z.TWO.pow(n).add(2L * n + 1);
       return Binomial.binomial(n2n1, Z.valueOf(n)).multiply(Z.TWO.pow(n).add(1)).divide(n2n1);
     });
   }

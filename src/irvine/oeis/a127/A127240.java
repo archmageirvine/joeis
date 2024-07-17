@@ -14,6 +14,6 @@ public class A127240 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A127240() {
-    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Functions.THUE_MORSE.z(Binomial.binomial(2 * k, k))));
+    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Functions.THUE_MORSE.z(Binomial.binomial(2L * k, k))));
   }
 }

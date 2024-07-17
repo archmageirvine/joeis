@@ -38,7 +38,7 @@ public class A357970 extends AbstractSequence implements DirectSequence {
       return Z.valueOf(24); // (2 left, 2 right, 1 top, 1 bottom) * 4
     }
     final String babyln = n.toTwoDigits(60);
-    return mSeq.a(new Z(babyln)).add(6 * (4 - babyln.length())); // add the segments of the leading zeros needed to fill 4 digits
+    return mSeq.a(new Z(babyln)).add(6L * (4 - babyln.length())); // add the segments of the leading zeros needed to fill 4 digits
   }
 
   @Override

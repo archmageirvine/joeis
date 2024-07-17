@@ -14,6 +14,6 @@ public class A087397 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A087397() {
-    super(1, n -> (n <= 2) ? Z.valueOf(7 * n - 4) : Functions.PRIME.z(n).subtract(Z.TWO).multiply(Functions.PRIME.z(n).subtract(Z.ONE)).divide2());
+    super(1, n -> (n <= 2) ? Z.valueOf(7L * n - 4) : Functions.PRIME.z(n).subtract(Z.TWO).multiply(Functions.PRIME.z(n).subtract(Z.ONE)).divide2());
   }
 }

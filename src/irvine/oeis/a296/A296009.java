@@ -12,6 +12,6 @@ public class A296009 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A296009() {
-    super(1, (term, n) -> term.divide(2 * n - 1), "", new A061808());
+    super(1, (term, n) -> term.divide(2L * n - 1), "", new A061808());
   }
 }

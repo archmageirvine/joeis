@@ -12,6 +12,6 @@ public class A118013 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A118013() {
-    super(1, 1, 1, (n, k) -> Z.valueOf(n * n).divide(k));
+    super(1, 1, 1, (n, k) -> Z.valueOf((long) n * n).divide(k));
   }
 }

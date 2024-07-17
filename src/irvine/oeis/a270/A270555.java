@@ -13,6 +13,6 @@ public class A270555 extends A269993 {
 
   /** Construct the sequence. */
   public A270555() {
-    super(1, CR.TWO.log(), k -> Z.valueOf(2 * k - 1));
+    super(1, CR.TWO.log(), k -> Z.valueOf(2L * k - 1));
   }
 }

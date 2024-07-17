@@ -14,6 +14,6 @@ public class A339049 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A339049() {
-    super(0, n -> Functions.PHI.z(2 * n + 1).divide(new IntegersModMul(Z.valueOf(2 * n + 1)).order(Z.FOUR)));
+    super(0, n -> Functions.PHI.z(2 * n + 1).divide(new IntegersModMul(Z.valueOf(2L * n + 1)).order(Z.FOUR)));
   }
 }

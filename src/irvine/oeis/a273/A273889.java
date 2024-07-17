@@ -12,6 +12,6 @@ public class A273889 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A273889() {
-    super(1, n -> Functions.MULTIFACTORIAL.z(4 * n - 3).add(Functions.MULTIFACTORIAL.z(4 * n - 2)).divide(4 * n - 1));
+    super(1, n -> Functions.MULTIFACTORIAL.z(4 * n - 3).add(Functions.MULTIFACTORIAL.z(4 * n - 2)).divide(4L * n - 1));
   }
 }

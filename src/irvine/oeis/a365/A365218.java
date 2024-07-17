@@ -15,6 +15,6 @@ public class A365218 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A365218() {
-    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Z.NEG_ONE.pow(k).multiply(Z.ONE.shiftLeft(n - k)).multiply(Binomial.binomial(n, k)).multiply(Binomial.binomial(6 * n + k + 1, n)).divide(Z.valueOf(6 * n + k + 1))));
+    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Z.NEG_ONE.pow(k).multiply(Z.ONE.shiftLeft(n - k)).multiply(Binomial.binomial(n, k)).multiply(Binomial.binomial(6L * n + k + 1, n)).divide(Z.valueOf(6L * n + k + 1))));
   }
 }

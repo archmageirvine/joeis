@@ -12,6 +12,6 @@ public class A103642 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A103642() {
-    super(0, (n, s) -> s[5].multiply(Z.valueOf(13).pow(4 * n - 8)), "1, 26, 2197, 371293, 1631461442, 23298085122481", PREVIOUS, PREVIOUS, PREVIOUS, PREVIOUS, PREVIOUS, PREVIOUS);
+    super(0, (n, s) -> s[5].multiply(Z.valueOf(13).pow(4L * n - 8)), "1, 26, 2197, 371293, 1631461442, 23298085122481", PREVIOUS, PREVIOUS, PREVIOUS, PREVIOUS, PREVIOUS, PREVIOUS);
   }
 }

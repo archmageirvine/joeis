@@ -42,7 +42,7 @@ public class A000984 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    return Binomial.binomial(2 * n, n);
+    return Binomial.binomial(2L * n, n);
   }
 
 }

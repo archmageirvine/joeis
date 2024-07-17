@@ -12,6 +12,6 @@ public class A371388 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A371388() {
-    super(1, n -> CR.PHI.multiply(n).floor().multiply(2 * n).subtract(n * n));
+    super(1, n -> CR.PHI.multiply(n).floor().multiply(2L * n).subtract((long) n * n));
   }
 }

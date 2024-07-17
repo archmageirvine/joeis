@@ -13,6 +13,6 @@ public class A208895 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A208895() {
-    super(1, (p, e) -> is2(p) ? Z.EIGHT.pow(e) : p.pow(3 * e).subtract(p.pow(3 * e - 2)));
+    super(1, (p, e) -> is2(p) ? Z.EIGHT.pow(e) : p.pow(3L * e).subtract(p.pow(3L * e - 2)));
   }
 }

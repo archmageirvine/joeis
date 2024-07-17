@@ -12,6 +12,6 @@ public class A109446 extends LambdaTable {
 
   /** Construct the sequence. */
   public A109446() {
-    super(0, 0, n -> new Integer[]{0, n / 2}, (n, k) -> Binomial.binomial(n, 2 * k + (n & 1)));
+    super(0, 0, n -> new Integer[]{0, n / 2}, (n, k) -> Binomial.binomial(n, 2L * k + (n & 1)));
   }
 }

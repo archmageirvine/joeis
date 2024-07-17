@@ -21,7 +21,7 @@ public class A064848 extends ContinuedFractionOfSqrtSequence {
  
   @Override
   public Z next() {
-    mK = Z.valueOf(mN2).multiply(2 * mN2);
+    mK = Z.valueOf(mN2).multiply(2L * mN2);
     fillPeriod();
     // System.out.println("perlen=" + getPeriodLength());
     mN2++;

@@ -12,6 +12,6 @@ public class A338467 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A338467() {
-    super(1, (n, s) -> Functions.PRIME.z(n - 1).subtract(s[0]).add(2 * n - 2), "1", PREVIOUS);
+    super(1, (n, s) -> Functions.PRIME.z(n - 1).subtract(s[0]).add(2L * n - 2), "1", PREVIOUS);
   }
 }

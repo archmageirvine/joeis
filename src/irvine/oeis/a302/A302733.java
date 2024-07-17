@@ -13,6 +13,6 @@ public class A302733 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A302733() {
-    super(0, (n, s) -> Z.valueOf(4 * n).multiply(2 * n - 1).multiply(s[0]).add(Integers.SINGLETON.product(0, n, k -> Z.valueOf(2 * k - 3).square()).multiply(4 * n).divide(Z.NINE)), "0", PREVIOUS);
+    super(0, (n, s) -> Z.valueOf(4L * n).multiply(2L * n - 1).multiply(s[0]).add(Integers.SINGLETON.product(0, n, k -> Z.valueOf(2L * k - 3).square()).multiply(4L * n).divide(Z.NINE)), "0", PREVIOUS);
   }
 }

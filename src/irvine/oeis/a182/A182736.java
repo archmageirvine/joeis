@@ -14,6 +14,6 @@ public class A182736 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A182736() {
-    super(0, n -> A182746.a(n).multiply(2 * n));
+    super(0, n -> A182746.a(n).multiply(2L * n));
   }
 }

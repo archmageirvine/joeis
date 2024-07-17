@@ -40,7 +40,7 @@ public class A057889 extends AbstractSequence implements DirectSequence {
     final int tail0 = Integer.numberOfTrailingZeros(n);
     final int nOrg = n >> tail0;
     final int nRev = ((Integer.reverse(nOrg) >> head0) & ((1 << (32 - head0)) - 1)) >> tail0;
-    return Z.valueOf(nOrg != nRev ? (nRev << tail0) : n);
+    return Z.valueOf(nOrg != nRev ? ((long) nRev << tail0) : n);
   }
 
   @Override

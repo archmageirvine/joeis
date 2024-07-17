@@ -11,6 +11,6 @@ public class A181044 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A181044() {
-    super(1, (n, s) -> s[0].pow(n).multiply(2 * n), "1", PREVIOUS);
+    super(1, (n, s) -> s[0].pow(n).multiply(2L * n), "1", PREVIOUS);
   }
 }

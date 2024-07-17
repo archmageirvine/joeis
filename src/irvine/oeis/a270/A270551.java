@@ -13,6 +13,6 @@ public class A270551 extends A269993 {
 
   /** Construct the sequence. */
   public A270551() {
-    super(1, CR.PI.inverse(), k -> Z.valueOf(2 * k - 1));
+    super(1, CR.PI.inverse(), k -> Z.valueOf(2L * k - 1));
   }
 }

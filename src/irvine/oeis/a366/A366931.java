@@ -14,7 +14,7 @@ public class A366931 extends LambdaSequence {
   public A366931() {
     super(1, n -> {
       int k = 1;
-      while (!Z.valueOf(3 * n * k + 1).isProbablePrime()) {
+      while (!Z.valueOf(3L * n * k + 1).isProbablePrime()) {
         k++;
       }
       return Z.valueOf(k);

@@ -13,6 +13,6 @@ public class A119798 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A119798() {
-    super(1, 0, k -> Functions.DISTINCT_DIGIT_COUNT.i(10, Z.valueOf(k)) == Functions.DISTINCT_DIGIT_COUNT.i(10, Z.valueOf(2 * k)));
+    super(1, 0, k -> Functions.DISTINCT_DIGIT_COUNT.i(10, Z.valueOf(k)) == Functions.DISTINCT_DIGIT_COUNT.i(10, Z.valueOf(2L * k)));
   }
 }

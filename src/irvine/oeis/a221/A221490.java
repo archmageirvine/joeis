@@ -13,6 +13,6 @@ public class A221490 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A221490() {
-    super(1, n -> Integers.SINGLETON.sum(1, n, k -> Z.valueOf(k * n + k - n).isProbablePrime() ? Z.ONE : Z.ZERO));
+    super(1, n -> Integers.SINGLETON.sum(1, n, k -> Z.valueOf((long) k * n + k - n).isProbablePrime() ? Z.ONE : Z.ZERO));
   }
 }

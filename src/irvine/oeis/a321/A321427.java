@@ -12,6 +12,6 @@ public class A321427 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A321427() {
-    super(0, (term, n) -> Z.valueOf(2 * n + 1).multiply(term), "", new A321426());
+    super(0, (term, n) -> Z.valueOf(2L * n + 1).multiply(term), "", new A321426());
   }
 }

@@ -24,9 +24,9 @@ public class A057274 extends A057273 {
   protected List<Polynomial<Q>> lambda(final int t, final int n, final Polynomial<Q> e, final int m) {
     final List<Polynomial<Q>> v = new ArrayList<>();
     for (int k = 0; k <= n; ++k) {
-      Polynomial<Q> ep = RING_Y.pow(e, k * (k + t - 1), m);
+      Polynomial<Q> ep = RING_Y.pow(e, (long) k * (k + t - 1), m);
       for (int j = 0; j < k; ++j) {
-        ep = RING_Y.subtract(ep, RING_Y.multiply(RING_Y.multiply(RING_Y.pow(e, (k - 1) * (k - j), m), new Q(Binomial.binomial(k, j))), v.get(j), m));
+        ep = RING_Y.subtract(ep, RING_Y.multiply(RING_Y.multiply(RING_Y.pow(e, (long) (k - 1) * (k - j), m), new Q(Binomial.binomial(k, j))), v.get(j), m));
       }
       v.add(ep);
     }

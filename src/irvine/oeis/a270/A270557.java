@@ -13,6 +13,6 @@ public class A270557 extends A269993 {
 
   /** Construct the sequence. */
   public A270557() {
-    super(1, CR.HALF.pow(CR.ONE_THIRD), k -> Z.valueOf(2 * k - 1));
+    super(1, CR.HALF.pow(CR.ONE_THIRD), k -> Z.valueOf(2L * k - 1));
   }
 }

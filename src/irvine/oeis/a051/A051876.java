@@ -18,7 +18,7 @@ public class A051876 extends LinearRecurrence implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    return Z.valueOf(n).multiply(n * 22 - 20).divide2();
+    return Z.valueOf(n).multiply(n * 22L - 20).divide2();
   }
 
   @Override

@@ -16,7 +16,7 @@ public class A032017 extends A032000 {
     for (int k = 1; k <= n; ++k) {
       kf = kf.divide(k);
       final Polynomial<Q> t1 = Y_RING.monomial(kf, 1);
-      final Polynomial<Polynomial<Q>> u = RING.pow(RING.onePlusXToTheN(t1, k), 2 * k - 1, n);
+      final Polynomial<Polynomial<Q>> u = RING.pow(RING.onePlusXToTheN(t1, k), 2L * k - 1, n);
       prod = RING.multiply(prod, u, n);
     }
     return prod;

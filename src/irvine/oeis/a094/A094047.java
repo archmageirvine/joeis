@@ -12,6 +12,6 @@ public class A094047 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A094047() {
-    super(1, new A059375().skip(1), (n, v) -> v.divide(2 * n));
+    super(1, new A059375().skip(1), (n, v) -> v.divide(2L * n));
   }
 }

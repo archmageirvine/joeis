@@ -16,6 +16,6 @@ public class A346315 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A346315() {
-    super(0, (self, n) -> Rationals.SINGLETON.sum(1, n, k -> Rationals.SINGLETON.sumdiv(k, d -> new Q(Z.NEG_ONE.pow(d), Z.valueOf(d).multiply(Functions.FACTORIAL.z(k / d).pow(2 * d)))).multiply(Z.NEG_ONE.pow(k).multiply(Binomial.binomial(n, k).multiply(Functions.FACTORIAL.z(k)).square())).multiply(k).multiply(self.a(n - k))).divide(n).num(), "1");
+    super(0, (self, n) -> Rationals.SINGLETON.sum(1, n, k -> Rationals.SINGLETON.sumdiv(k, d -> new Q(Z.NEG_ONE.pow(d), Z.valueOf(d).multiply(Functions.FACTORIAL.z(k / d).pow(2L * d)))).multiply(Z.NEG_ONE.pow(k).multiply(Binomial.binomial(n, k).multiply(Functions.FACTORIAL.z(k)).square())).multiply(k).multiply(self.a(n - k))).divide(n).num(), "1");
   }
 }

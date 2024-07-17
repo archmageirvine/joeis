@@ -12,6 +12,6 @@ public class A371099 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A371099() {
-    super(0, n -> Functions.GCD.z(36 * n + 9, Functions.PRIMORIAL_BASE_EXP.z(36 * n + 9)));
+    super(0, n -> Functions.GCD.z(36L * n + 9, Functions.PRIMORIAL_BASE_EXP.z(36 * n + 9)));
   }
 }

@@ -13,6 +13,6 @@ public class A347802 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A347802() {
-    super(0, n -> Integers.SINGLETON.sum(1, n, i -> Integers.SINGLETON.sum(1, n, j -> Integers.SINGLETON.sum(1, n, k -> Z.valueOf(i * i + j * j + k * k == n ? 1 : 0).multiply(Z.valueOf(i * j * k).square())))));
+    super(0, n -> Integers.SINGLETON.sum(1, n, i -> Integers.SINGLETON.sum(1, n, j -> Integers.SINGLETON.sum(1, n, k -> Z.valueOf(i * i + j * j + k * k == n ? 1 : 0).multiply(Z.valueOf((long) i * j * k).square())))));
   }
 }

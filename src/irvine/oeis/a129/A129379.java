@@ -13,6 +13,6 @@ public class A129379 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A129379() {
-    super(1, (self, n) -> n <= 4 ? Binomial.binomial(n, n / 2) : self.a(n - 1).multiply(n - 2).multiply(Z.valueOf(n).square().add(-7 * n + 14)).divide(2 * (n - 4)), "1, 2, 3");
+    super(1, (self, n) -> n <= 4 ? Binomial.binomial(n, n / 2) : self.a(n - 1).multiply(n - 2).multiply(Z.valueOf(n).square().add(-7L * n + 14)).divide(2L * (n - 4)), "1, 2, 3");
   }
 }

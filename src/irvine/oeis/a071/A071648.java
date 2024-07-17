@@ -15,7 +15,7 @@ public class A071648 extends LambdaSequence {
   public A071648() {
     super(1, n -> {
       final int[] c = ZUtils.digitCounts(n);
-      return Z.valueOf(c[2] * 2 + c[4] * 4 + c[6] * 6 + c[8] * 8);
+      return Z.valueOf(c[2] * 2L + c[4] * 4L + c[6] * 6L + c[8] * 8L);
     });
   }
 }

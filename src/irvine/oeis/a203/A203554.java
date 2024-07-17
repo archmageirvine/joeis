@@ -18,6 +18,6 @@ public class A203554 extends BaseTriangle {
   @Override
   public Z triangleElement(final int n, final int k) {
     final int n2 = n / 2;
-    return Z.valueOf(n2 * (n2 + 1) + (((n & 1) == 0) ? 0 : 1) + 2 * k);
+    return Z.valueOf((long) n2 * (n2 + 1) + (((n & 1) == 0) ? 0 : 1) + 2L * k);
   }
 }

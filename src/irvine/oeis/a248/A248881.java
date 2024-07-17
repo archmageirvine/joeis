@@ -17,7 +17,7 @@ public class A248881 extends FilterSequence {
   /** Construct the sequence. */
   public A248881() {
     super(1, new A000027(), (n, v) -> {
-      final Z n2 = Z.valueOf(2 * n);
+      final Z n2 = Z.valueOf(2L * n);
       return new A002322().a(new A000593().a(n2)).equals(new A002322().a(new A146076().a(n2)));
     });
   }

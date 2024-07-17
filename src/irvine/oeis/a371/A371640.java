@@ -13,6 +13,6 @@ public class A371640 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A371640() {
-    super(1, n -> Z.THREE.pow(2 * n + Functions.VALUATION.i(n, Z.THREE)));
+    super(1, n -> Z.THREE.pow(2L * n + Functions.VALUATION.i(n, Z.THREE)));
   }
 }

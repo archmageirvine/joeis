@@ -15,6 +15,6 @@ public class A122264 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A122264() {
-    super(1, n -> Z.valueOf(n).add(Z.ONE).add(Z.TWO.multiply(Integers.SINGLETON.sum(0, n - 2, j -> Z.valueOf(j).multiply(Functions.PRIME.z(n - j + 2)).subtract(Z.valueOf(2 * j - 1).multiply(Functions.PRIME.z(n - j + 1))).add(Z.valueOf(j - 1).multiply(Functions.PRIME.z(n - j)))))));
+    super(1, n -> Z.valueOf(n).add(Z.ONE).add(Z.TWO.multiply(Integers.SINGLETON.sum(0, n - 2, j -> Z.valueOf(j).multiply(Functions.PRIME.z(n - j + 2)).subtract(Z.valueOf(2L * j - 1).multiply(Functions.PRIME.z(n - j + 1))).add(Z.valueOf(j - 1).multiply(Functions.PRIME.z(n - j)))))));
   }
 }

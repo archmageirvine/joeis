@@ -18,7 +18,7 @@ public class A032159 extends A032153 {
   protected Polynomial<Polynomial<Q>> product() {
     Polynomial<Polynomial<Q>> prod = RING.one();
     for (int k = 1; k < size(); ++k) {
-      final Polynomial<Polynomial<Q>> u = RING.pow(RING.onePlusXToTheN(Y_RING.x(), k), 2 * k - 1, size());
+      final Polynomial<Polynomial<Q>> u = RING.pow(RING.onePlusXToTheN(Y_RING.x(), k), 2L * k - 1, size());
       prod = RING.multiply(prod, u, size());
     }
     return prod;

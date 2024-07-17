@@ -12,6 +12,6 @@ public class A293413 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A293413() {
-    super(0, n -> CR.E.multiply(n * n).ceil());
+    super(0, n -> CR.E.multiply((long) n * n).ceil());
   }
 }

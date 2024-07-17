@@ -12,6 +12,6 @@ public class A185055 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A185055() {
-    super(0, n -> (Z.FIVE.pow(n).subtract(4 * n + 1)).divide(8));
+    super(0, n -> (Z.FIVE.pow(n).subtract(4L * n + 1)).divide(8));
   }
 }

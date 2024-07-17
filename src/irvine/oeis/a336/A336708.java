@@ -19,6 +19,6 @@ public class A336708 extends UpperLeftTriangle {
 
   @Override
   public Z matrixElement(final int n, final int k) {
-    return n == 0 ? Z.ONE : Integers.SINGLETON.sum(1, n, j -> Z.NEG_ONE.pow(n - j).multiply(Binomial.binomial(n, j)).multiply(Binomial.binomial(n + (k - 1) * j, j - 1))).divide(n);
+    return n == 0 ? Z.ONE : Integers.SINGLETON.sum(1, n, j -> Z.NEG_ONE.pow(n - j).multiply(Binomial.binomial(n, j)).multiply(Binomial.binomial(n + (long) (k - 1) * j, j - 1))).divide(n);
   }
 }

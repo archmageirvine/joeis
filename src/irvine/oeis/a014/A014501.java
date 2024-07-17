@@ -32,7 +32,7 @@ public class A014501 extends Sequence0 {
       if (k > 1) {
         f = f.multiply(k);
       }
-      sum = RING.add(sum, RING.multiply(RING.pow(RING.onePlusXToTheN(1), k * (k + 1) / 2, 2 * mN), new Q(Z.ONE, f)));
+      sum = RING.add(sum, RING.multiply(RING.pow(RING.onePlusXToTheN(1), (long) k * (k + 1) / 2, 2 * mN), new Q(Z.ONE, f)));
     }
     final Polynomial<Q> egf = RING.multiply(sum, RING.exp(A, 2 * mN), mN);
     //System.out.println(egf);

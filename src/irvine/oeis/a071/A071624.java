@@ -13,6 +13,6 @@ public class A071624 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A071624() {
-    super(1, 0, n -> InverseEuler.inversePhi(Z.valueOf(96 * n + 2)).size() > 0);
+    super(1, 0, n -> InverseEuler.inversePhi(Z.valueOf(96L * n + 2)).size() > 0);
   }
 }

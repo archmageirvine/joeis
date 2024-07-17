@@ -12,6 +12,6 @@ public class A187879 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A187879() {
-    super(0, n -> Z.THREE.pow(n * n * n));
+    super(0, n -> Z.THREE.pow((long) n * n * n));
   }
 }

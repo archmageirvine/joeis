@@ -13,7 +13,7 @@ public class A282011 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A282011() {
-    super(0, (n, k) -> Integers.SINGLETON.sum(0, (n + 1) / 4, j -> Binomial.binomial(((n & 1) == 0) ? n / 2 : n / 2 + 1, 2 * j)
-      .multiply(Binomial.binomial(n / 2, k - 2 * j))));
+    super(0, (n, k) -> Integers.SINGLETON.sum(0, (n + 1) / 4, j -> Binomial.binomial(((n & 1) == 0) ? n / 2 : n / 2 + 1, 2L * j)
+      .multiply(Binomial.binomial(n / 2, k - 2L * j))));
   }
 }

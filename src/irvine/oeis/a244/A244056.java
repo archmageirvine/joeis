@@ -12,6 +12,6 @@ public class A244056 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A244056() {
-    super(1, n -> Z.valueOf(4 * (n * n - 1)).multiply(Z.TWO.pow(n * n).subtract(1)));
+    super(1, n -> Z.valueOf(4 * ((long) n * n - 1)).multiply(Z.TWO.pow((long) n * n).subtract(1)));
   }
 }

@@ -14,6 +14,6 @@ public class A171080 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A171080() {
-    super(0, new FilterSequence(0, new A091137(), (k, v) -> (k & 1) == 0), (n, v) -> v.divide(Z.TWO.pow(2 * n)));
+    super(0, new FilterSequence(0, new A091137(), (k, v) -> (k & 1) == 0), (n, v) -> v.divide(Z.TWO.pow(2L * n)));
   }
 }

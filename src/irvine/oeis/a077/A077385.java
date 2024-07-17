@@ -12,6 +12,6 @@ public class A077385 extends LambdaTable {
 
   /** Construct the sequence. */
   public A077385() {
-    super(1, 1, n -> new Integer[]{0, 2 * n - 2}, (n, k) -> (k < n) ? Z.valueOf(n).pow(k) : Z.valueOf(n).pow(2 * n - k - 2));
+    super(1, 1, n -> new Integer[]{0, 2 * n - 2}, (n, k) -> (k < n) ? Z.valueOf(n).pow(k) : Z.valueOf(n).pow(2L * n - k - 2));
   }
 }

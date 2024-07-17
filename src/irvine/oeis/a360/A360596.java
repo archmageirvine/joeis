@@ -15,6 +15,6 @@ public class A360596 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A360596() {
-    super(0, n -> Rationals.SINGLETON.sum(0, n, k -> new Q(Z.valueOf(2 * k).pow(k), Functions.FACTORIAL.z(k))).multiply(Functions.FACTORIAL.z(n)).num());
+    super(0, n -> Rationals.SINGLETON.sum(0, n, k -> new Q(Z.valueOf(2L * k).pow(k), Functions.FACTORIAL.z(k))).multiply(Functions.FACTORIAL.z(n)).num());
   }
 }

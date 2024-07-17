@@ -14,6 +14,6 @@ public class A120983 extends LambdaTable {
 
   /** Construct the sequence. */
   public A120983() {
-    super(0, 0, n -> new Integer[]{0, n / 3}, (n, k) -> Binomial.binomial(n + 1, k).multiply(Integers.SINGLETON.sum(0, n + 1 - k, j -> Z.THREE.pow(j).multiply(Binomial.binomial(n + 1 - k, j)).multiply(Binomial.binomial(j, n - 3 * k - j)))).divide(n + 1));
+    super(0, 0, n -> new Integer[]{0, n / 3}, (n, k) -> Binomial.binomial(n + 1, k).multiply(Integers.SINGLETON.sum(0, n + 1 - k, j -> Z.THREE.pow(j).multiply(Binomial.binomial(n + 1 - k, j)).multiply(Binomial.binomial(j, n - 3L * k - j)))).divide(n + 1));
   }
 }

@@ -14,6 +14,6 @@ public class A091546 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A091546() {
-    super(1, n -> Q.SIX.pow(2 * n).multiply(Rationals.SINGLETON.product(0, n - 1, j -> new Q(6 * j + 1, 6))).multiply(Rationals.SINGLETON.product(0, n - 1, j -> new Q(3 * j + 1, 3))).divide(Z.TWO).num());
+    super(1, n -> Q.SIX.pow(2L * n).multiply(Rationals.SINGLETON.product(0, n - 1, j -> new Q(6L * j + 1, 6))).multiply(Rationals.SINGLETON.product(0, n - 1, j -> new Q(3L * j + 1, 3))).divide(Z.TWO).num());
   }
 }

@@ -14,6 +14,6 @@ public class A318678 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A318678() {
-    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> 2 * d - Functions.SIGMA1.i(d) > 0 ? Z.valueOf(2 * d - Functions.SIGMA1.i(d)) : Z.ZERO));
+    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> 2 * d - Functions.SIGMA1.i(d) > 0 ? Z.valueOf(2L * d - Functions.SIGMA1.i(d)) : Z.ZERO));
   }
 }

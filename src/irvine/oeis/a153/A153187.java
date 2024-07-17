@@ -13,6 +13,6 @@ public class A153187 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A153187() {
-    super(0, 0, 0, (n, k) -> Integers.SINGLETON.product(0, k + 1, j -> Z.valueOf(j * (n + 1) - 1)).negate());
+    super(0, 0, 0, (n, k) -> Integers.SINGLETON.product(0, k + 1, j -> Z.valueOf((long) j * (n + 1) - 1)).negate());
   }
 }

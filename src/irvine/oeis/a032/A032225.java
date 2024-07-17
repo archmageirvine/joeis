@@ -15,7 +15,7 @@ public class A032225 extends A032209 {
     Q f = Q.ONE;
     for (int k = 1; k <= n; ++k) {
       f = f.divide(new Q(k));
-      final Polynomial<Polynomial<Q>> u = RING.pow(RING.onePlusXToTheN(Y_RING.monomial(f, 1), k), 2 * k - 1, n);
+      final Polynomial<Polynomial<Q>> u = RING.pow(RING.onePlusXToTheN(Y_RING.monomial(f, 1), k), 2L * k - 1, n);
       prod = RING.multiply(prod, u, n);
     }
     return prod;

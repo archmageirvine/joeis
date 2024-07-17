@@ -20,7 +20,7 @@ public class A064862 extends ContinuedFractionOfSqrtSequence {
  
   @Override
   public Z next() {
-    mK = Z.valueOf(10 * mN2).multiply(mN2);
+    mK = Z.valueOf(10L * mN2).multiply(mN2);
     fillPeriod();
     mN2++;
     return Z.valueOf(getPeriodLength());

@@ -16,6 +16,6 @@ public class A212553 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A212553() {
-    super(1, n -> A000699.a(n + 1).multiply(Z.valueOf(2 * n + 1)).multiply(Z.valueOf(n + 1)).divide(Z.valueOf(2 * n)));
+    super(1, n -> A000699.a(n + 1).multiply(Z.valueOf(2L * n + 1)).multiply(Z.valueOf(n + 1)).divide(Z.valueOf(2L * n)));
   }
 }

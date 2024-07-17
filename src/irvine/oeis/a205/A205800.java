@@ -14,6 +14,6 @@ public class A205800 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A205800() {
-    super(0, (self, n) -> Rationals.SINGLETON.sum(1, Functions.SQRT.i(n), k -> new Q(self.a(n - k * k).multiply(k * k), Functions.FACTORIAL.z(n - k * k))).multiply(Functions.FACTORIAL.z(n - 1)).num(), "1");
+    super(0, (self, n) -> Rationals.SINGLETON.sum(1, Functions.SQRT.i(n), k -> new Q(self.a(n - k * k).multiply((long) k * k), Functions.FACTORIAL.z(n - k * k))).multiply(Functions.FACTORIAL.z(n - 1)).num(), "1");
   }
 }

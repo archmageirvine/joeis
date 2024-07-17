@@ -28,8 +28,8 @@ public class A054669 extends Sequence0 {
       final int lim = limit(++mN);
       mM = 0;
       final Polynomial<Z> t = RING.series(RING.oneMinusXToTheN(1), RING.onePlusXToTheN(1), lim);
-      final Polynomial<Z> sum = RING.sum(0, mN, s -> RING.multiply(RING.pow(t, s * (mN - s), lim), Binomial.binomial(mN, s)));
-      mA = RING.multiply(sum, RING.pow(RING.onePlusXToTheN(1), mN * (mN - 1) / 2, lim), lim);
+      final Polynomial<Z> sum = RING.sum(0, mN, s -> RING.multiply(RING.pow(t, (long) s * (mN - s), lim), Binomial.binomial(mN, s)));
+      mA = RING.multiply(sum, RING.pow(RING.onePlusXToTheN(1), (long) mN * (mN - 1) / 2, lim), lim);
     }
     return mA.coeff(mM).shiftRight(mN);
   }

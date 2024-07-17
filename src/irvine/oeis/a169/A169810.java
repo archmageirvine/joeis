@@ -12,6 +12,6 @@ public class A169810 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A169810() {
-    super(0, n -> Z.valueOf(n).xor(Z.valueOf(n * n)));
+    super(0, n -> Z.valueOf(n).xor(Z.valueOf((long) n * n)));
   }
 }

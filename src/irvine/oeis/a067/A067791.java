@@ -29,7 +29,7 @@ public class A067791 extends Sequence1 {
     if (cur.size() < HEURISTIC_MAX_NON_ONE_DIGITS) {
       for (int digit = prev; digit <= 9; ++digit) {
         cur.add(digit);
-        build(lst, products, sums, cur, prod * digit, sum + digit * digit, digit);
+        build(lst, products, sums, cur, prod * digit, sum + (long) digit * digit, digit);
         cur.remove(cur.size() - 1);
       }
     }

@@ -12,6 +12,6 @@ public class A306185 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A306185() {
-    super(1, n -> Functions.MULTIFACTORIAL.z(2, 2 * n + 1).add(Functions.MULTIFACTORIAL.z(2, 2 * n)));
+    super(1, n -> Functions.MULTIFACTORIAL.z(2, 2L * n + 1).add(Functions.MULTIFACTORIAL.z(2, 2L * n)));
   }
 }

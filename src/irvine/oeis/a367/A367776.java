@@ -13,6 +13,6 @@ public class A367776 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A367776() {
-    super(0, n -> Binomial.binomial(2 * n, n - 1).multiply(Functions.FACTORIAL.z(2 * n + 1)).divide(Functions.FACTORIAL.z(n)));
+    super(0, n -> Binomial.binomial(2L * n, n - 1).multiply(Functions.FACTORIAL.z(2 * n + 1)).divide(Functions.FACTORIAL.z(n)));
   }
 }

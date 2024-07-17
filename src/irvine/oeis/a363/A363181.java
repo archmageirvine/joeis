@@ -11,6 +11,6 @@ public class A363181 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A363181() {
-    super(0, (n, s) -> s[0].multiply(3).add(s[1].multiply(2 * n - 3)).subtract(s[2].multiply(2 * n - 5)).add(s[3].multiply(2 * n - 8)).divide(2), "1, 0, 2, 2", PREVIOUS, PREVIOUS, PREVIOUS, PREVIOUS);
+    super(0, (n, s) -> s[0].multiply(3).add(s[1].multiply(2L * n - 3)).subtract(s[2].multiply(2L * n - 5)).add(s[3].multiply(2L * n - 8)).divide(2), "1, 0, 2, 2", PREVIOUS, PREVIOUS, PREVIOUS, PREVIOUS);
   }
 }

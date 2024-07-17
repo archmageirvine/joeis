@@ -14,6 +14,6 @@ public class A257365 extends LambdaTriangle {
   /** Construct the sequence. */
   public A257365() {
     // T(n, k):=sum(binomial(k, m)*binomial(n-2*m, k), m, 0, (n-k)/2);
-    super(0, 0, 0, (n, k) -> Integers.SINGLETON.sum(0, (n - k) / 2, m -> Binomial.binomial(k, m).multiply(Binomial.binomial(n - 2 * m, k))));
+    super(0, 0, 0, (n, k) -> Integers.SINGLETON.sum(0, (n - k) / 2, m -> Binomial.binomial(k, m).multiply(Binomial.binomial(n - 2L * m, k))));
   }
 }

@@ -15,7 +15,7 @@ public class A324639 extends FilterNumberSequence {
   public A324639() {
     super(1, 1, k -> {
       final Z sk = Functions.SIGMA1.z(k);
-      return sk.and(Z.valueOf(2 * k)).equals(sk.subtract(k).and(Z.valueOf(k)).multiply(2));
+      return sk.and(Z.valueOf(2L * k)).equals(sk.subtract(k).and(Z.valueOf(k)).multiply(2));
     });
   }
 }

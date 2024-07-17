@@ -14,6 +14,6 @@ public class A081066 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A081066() {
-    super(0, new A055882(), (n, v) -> Rationals.SINGLETON.product(0, n - 1, j -> new Q(2 * j + 1, 2)).multiply(v).num());
+    super(0, new A055882(), (n, v) -> Rationals.SINGLETON.product(0, n - 1, j -> new Q(2L * j + 1, 2)).multiply(v).num());
   }
 }

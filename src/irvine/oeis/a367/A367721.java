@@ -15,6 +15,6 @@ public class A367721 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A367721() {
-    super(0, (self, n) -> Rationals.SINGLETON.sum(0, (n - 1) / 2, k -> new Q(Z.NEG_ONE.pow(k).multiply(2 * k + 1).multiply(self.a(k)).multiply(self.a(n - 1 - 2 * k)), Functions.FACTORIAL.z(k).multiply(Functions.FACTORIAL.z(n - 1 - 2 * k)))).multiply(Functions.FACTORIAL.z(n - 1)).num(), "1");
+    super(0, (self, n) -> Rationals.SINGLETON.sum(0, (n - 1) / 2, k -> new Q(Z.NEG_ONE.pow(k).multiply(2L * k + 1).multiply(self.a(k)).multiply(self.a(n - 1 - 2 * k)), Functions.FACTORIAL.z(k).multiply(Functions.FACTORIAL.z(n - 1 - 2 * k)))).multiply(Functions.FACTORIAL.z(n - 1)).num(), "1");
   }
 }

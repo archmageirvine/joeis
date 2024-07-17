@@ -14,6 +14,6 @@ public class A106519 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A106519() {
-    super(1, n -> (Binomial.binomial(2 * n - 2, n - 1).multiply(2).subtract(Integers.SINGLETON.sumdiv(n, d -> Binomial.binomial(2 * n / d, n / d).multiply(Functions.MOEBIUS.z(d))).divide(2))).divide(n));
+    super(1, n -> (Binomial.binomial(2L * n - 2, n - 1).multiply(2).subtract(Integers.SINGLETON.sumdiv(n, d -> Binomial.binomial(2L * n / d, n / d).multiply(Functions.MOEBIUS.z(d))).divide(2))).divide(n));
   }
 }

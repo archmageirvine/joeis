@@ -12,6 +12,6 @@ public class A340562 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A340562() {
-    super(1, new A212800(), (n, v) -> v.divide(n * n));
+    super(1, new A212800(), (n, v) -> v.divide((long) n * n));
   }
 }

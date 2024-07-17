@@ -14,6 +14,6 @@ public class A350125 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A350125() {
-    super(1, n -> Rationals.SINGLETON.sum(1, n, k -> Rationals.SINGLETON.sumdiv(k, d -> new Q(Z.valueOf(d).pow(n).subtract(Z.valueOf(d - 1).pow(n)), d * d)).multiply(Z.valueOf(k * k))).num());
+    super(1, n -> Rationals.SINGLETON.sum(1, n, k -> Rationals.SINGLETON.sumdiv(k, d -> new Q(Z.valueOf(d).pow(n).subtract(Z.valueOf(d - 1).pow(n)), (long) d * d)).multiply(Z.valueOf((long) k * k))).num());
   }
 }

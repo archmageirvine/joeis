@@ -37,7 +37,7 @@ public class A065621 extends Sequence1 implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    return Z.valueOf((n - 1) ^ (2 * n - 1));
+    return Z.valueOf((n - 1) ^ (2L * n - 1));
   }
 
 }

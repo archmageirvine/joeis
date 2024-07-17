@@ -15,6 +15,6 @@ public class A143570 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A143570() {
-    super(0, (self, n) -> Rationals.SINGLETON.sum(0, (n - 1) / 6, k -> new Q(Z.valueOf(6 * k + 1).multiply(self.a(k)).multiply(self.a(n - 1 - 6 * k)), Z.valueOf(720).pow(k).multiply(Functions.FACTORIAL.z(k)).multiply(Functions.FACTORIAL.z(n - 1 - 6 * k)))).multiply(Functions.FACTORIAL.z(n - 1)).num(), "1");
+    super(0, (self, n) -> Rationals.SINGLETON.sum(0, (n - 1) / 6, k -> new Q(Z.valueOf(6L * k + 1).multiply(self.a(k)).multiply(self.a(n - 1 - 6 * k)), Z.valueOf(720).pow(k).multiply(Functions.FACTORIAL.z(k)).multiply(Functions.FACTORIAL.z(n - 1 - 6 * k)))).multiply(Functions.FACTORIAL.z(n - 1)).num(), "1");
   }
 }

@@ -13,6 +13,6 @@ public class A346220 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A346220() {
-    super(0, (self, n) -> Integers.SINGLETON.sum(0, (n - 1) / 2, k -> Binomial.binomial(n, 2 * k + 1).square().multiply(2 * k + 1).multiply(self.a(n - 2 * k - 1))).divide(n), "1");
+    super(0, (self, n) -> Integers.SINGLETON.sum(0, (n - 1) / 2, k -> Binomial.binomial(n, 2L * k + 1).square().multiply(2L * k + 1).multiply(self.a(n - 2 * k - 1))).divide(n), "1");
   }
 }

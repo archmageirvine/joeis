@@ -36,11 +36,11 @@ public class A057273 extends Sequence1 {
   }
 
   protected Polynomial<Polynomial<Q>> g(final Polynomial<Q> e, final Polynomial<Polynomial<Q>> p, final int m) {
-    return z(p, k -> RING_Y.series(RING_Y.one(), RING_Y.pow(e, k * (k - 1) / 2, m), m));
+    return z(p, k -> RING_Y.series(RING_Y.one(), RING_Y.pow(e, (long) k * (k - 1) / 2, m), m));
   }
 
   protected Polynomial<Polynomial<Q>> u(final Polynomial<Q> e, final Polynomial<Polynomial<Q>> p, final int m) {
-    return z(p, k -> RING_Y.pow(e, k * (k - 1) / 2, m));
+    return z(p, k -> RING_Y.pow(e, (long) k * (k - 1) / 2, m));
   }
 
   protected Polynomial<Polynomial<Q>> digraphEgf(final int n, final int m, final Polynomial<Q> e) {
@@ -50,7 +50,7 @@ public class A057273 extends Sequence1 {
       if (k > 1) {
         kf = kf.multiply(k);
       }
-      sum.add(RING_Y.divide(RING_Y.pow(e, k * (k - 1), m), kf));
+      sum.add(RING_Y.divide(RING_Y.pow(e, (long) k * (k - 1), m), kf));
     }
     return sum;
   }

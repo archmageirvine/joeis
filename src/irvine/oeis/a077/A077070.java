@@ -12,6 +12,6 @@ public class A077070 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A077070() {
-    super(0, 0, 0, (n, k) -> Z.valueOf(2 * n - Integer.bitCount(n - k) - Integer.bitCount(k)));
+    super(0, 0, 0, (n, k) -> Z.valueOf(2L * n - Integer.bitCount(n - k) - Integer.bitCount(k)));
   }
 }

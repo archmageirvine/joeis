@@ -12,6 +12,6 @@ public class A339531 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A339531() {
-    super(1, n -> Z.valueOf(((9 * n) / 2) * 4 + 1));
+    super(1, n -> Z.valueOf(((9L * n) / 2) * 4 + 1));
   }
 }

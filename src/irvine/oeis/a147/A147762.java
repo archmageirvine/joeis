@@ -12,6 +12,6 @@ public class A147762 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A147762() {
-    super(1, n -> Integer.bitCount(n) == 1 ? Z.TWO.pow(2 * n - 1).add(Z.TWO.pow(n - 1)).subtract(1) : Z.TWO.pow(2 * n - 1).add(Z.valueOf(n + 1).multiply(Z.TWO.pow(n - 1 - Integer.bitCount(n)))).subtract(1));
+    super(1, n -> Integer.bitCount(n) == 1 ? Z.TWO.pow(2L * n - 1).add(Z.TWO.pow(n - 1)).subtract(1) : Z.TWO.pow(2L * n - 1).add(Z.valueOf(n + 1).multiply(Z.TWO.pow(n - 1 - Integer.bitCount(n)))).subtract(1));
   }
 }

@@ -15,8 +15,8 @@ public class A123516 extends LambdaTriangle {
   /** Construct the sequence. */
   public A123516() {
     super(0, 0, 0, (n, k) -> {
-      final Z t = Binomial.binomial(n, k).multiply(Binomial.binomial(2 * k, k)).multiply(Functions.FACTORIAL.z(n)).multiply(Z.NEG_ONE.pow(k));
-      return n >= 2 * k ? t.multiply(Z.TWO.pow(n - 2 * k)) : t.divide(Z.TWO.pow(2 * k - n));
+      final Z t = Binomial.binomial(n, k).multiply(Binomial.binomial(2L * k, k)).multiply(Functions.FACTORIAL.z(n)).multiply(Z.NEG_ONE.pow(k));
+      return n >= 2 * k ? t.multiply(Z.TWO.pow(n - 2L * k)) : t.divide(Z.TWO.pow(2L * k - n));
     });
   }
 }

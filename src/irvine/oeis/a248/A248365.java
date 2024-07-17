@@ -13,7 +13,7 @@ public class A248365 extends LambdaSequence {
   /** Construct the sequence. */
   public A248365() {
     super(1, n -> {
-      final Z v = Z.valueOf(4 * n);
+      final Z v = Z.valueOf(4L * n);
       return new Z(v.toString() + v);
     });
   }

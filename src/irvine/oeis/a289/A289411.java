@@ -14,6 +14,6 @@ public class A289411 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A289411() {
-    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Z.valueOf(Functions.DIGIT_SUM.z(10, 5 * k).subtract(Functions.DIGIT_SUM.z(10, k)).signum())));
+    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Z.valueOf(Functions.DIGIT_SUM.z(10, 5L * k).subtract(Functions.DIGIT_SUM.z(10, k)).signum())));
   }
 }

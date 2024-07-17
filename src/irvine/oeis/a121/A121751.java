@@ -11,6 +11,6 @@ public class A121751 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A121751() {
-    super(1, (n, s) -> s[0].multiply((n - 1) / 2).multiply(2).subtract(s[1].multiply((n - 1) / 2 * ((n - 2) / 2) - 1)), "0, 1", PREVIOUS, PREVIOUS);
+    super(1, (n, s) -> s[0].multiply((n - 1) / 2).multiply(2).subtract(s[1].multiply((long) (n - 1) / 2 * ((n - 2) / 2) - 1)), "0, 1", PREVIOUS, PREVIOUS);
   }
 }

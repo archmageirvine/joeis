@@ -12,6 +12,6 @@ public class A309740 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A309740() {
-    super(1, 0, k -> Z.FIVE.multiply(Z.TEN.pow(2 * k)).add(Z.FIVE.multiply(Z.TEN.pow(k))).add(1).isProbablePrime());
+    super(1, 0, k -> Z.FIVE.multiply(Z.TEN.pow(2L * k)).add(Z.FIVE.multiply(Z.TEN.pow(k))).add(1).isProbablePrime());
   }
 }

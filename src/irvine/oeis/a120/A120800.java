@@ -12,6 +12,6 @@ public class A120800 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A120800() {
-    super(0, n -> Z.THREE.pow(n * n).add(Z.TWO.pow(n * n)));
+    super(0, n -> Z.THREE.pow((long) n * n).add(Z.TWO.pow((long) n * n)));
   }
 }

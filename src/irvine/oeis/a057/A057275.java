@@ -49,8 +49,8 @@ public class A057275 extends A057273 {
         } else {
           sum = inner.zero();
           for (int j = 1; j <= n - k; ++j) {
-            final Polynomial<Q> ep = inner.pow(e, k * (n - k - j), m);
-            final Polynomial<Q> ep1 = inner.subtract(inner.pow(e, k * j, m), inner.one());
+            final Polynomial<Q> ep = inner.pow(e, (long) k * (n - k - j), m);
+            final Polynomial<Q> ep1 = inner.subtract(inner.pow(e, (long) k * j, m), inner.one());
             sum = inner.add(sum, inner.multiply(inner.multiply(ep, ep1, m), getOrZero(u.get(n - k), j - 1)));
           }
         }

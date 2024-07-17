@@ -15,6 +15,6 @@ public class A353180 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A353180() {
-    super(0, (self, n) -> n == 0 ? Z.ONE : Integers.SINGLETON.sum(1, Functions.SQRT.i(n), k -> Binomial.binomial(n, k * k).multiply(self.a(n - k * k))), "1");
+    super(0, (self, n) -> n == 0 ? Z.ONE : Integers.SINGLETON.sum(1, Functions.SQRT.i(n), k -> Binomial.binomial(n, (long) k * k).multiply(self.a(n - k * k))), "1");
   }
 }

@@ -13,6 +13,6 @@ public class A361987 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A361987() {
-    super(1, (p, e) -> is2(p) ? Z.TWO.pow(3 * e - 1) : ((e == 1) ? p.square().negate() : Z.ZERO));
+    super(1, (p, e) -> is2(p) ? Z.TWO.pow(3L * e - 1) : ((e == 1) ? p.square().negate() : Z.ZERO));
   }
 }

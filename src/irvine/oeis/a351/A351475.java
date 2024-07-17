@@ -16,7 +16,7 @@ public class A351475 extends MultiplicativeSequence {
   public A351475() {
     super(1, (p, e) -> {
       final long k = Functions.PRIME_PI.l(p);
-      return Z.valueOf(k * k + e * e);
+      return Z.valueOf(k * k + (long) e * e);
     });
   }
 }

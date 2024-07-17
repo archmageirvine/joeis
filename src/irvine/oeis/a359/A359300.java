@@ -13,6 +13,6 @@ public class A359300 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A359300() {
-    super(2, (n, s) -> s[0].add(s[1]).subtract(2 * n), "", new A007917(), new A007918().skip(2));
+    super(2, (n, s) -> s[0].add(s[1]).subtract(2L * n), "", new A007917(), new A007918().skip(2));
   }
 }

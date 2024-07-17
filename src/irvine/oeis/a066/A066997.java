@@ -16,7 +16,7 @@ public class A066997 extends LambdaSequence {
     super(2, n -> {
       final int m = IntegerUtils.floorLog2(n);
       final int k = n - (1 << m);
-      return Z.valueOf((k < (1 << (m - 1))) ? 1 + k + (1 << (m - 1)) : (1 << m));
+      return Z.valueOf((k < (1 << (m - 1))) ? 1 + k + (1L << (m - 1)) : (1L << m));
     });
   }
 }

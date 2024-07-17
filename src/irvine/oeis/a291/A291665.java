@@ -13,6 +13,6 @@ public class A291665 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A291665() {
-    super(1, n -> Binomial.binomial(n, 1 << IntegerUtils.floorLog2(n)));
+    super(1, n -> Binomial.binomial(n, 1L << IntegerUtils.floorLog2(n)));
   }
 }

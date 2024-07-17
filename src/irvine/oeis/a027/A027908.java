@@ -19,6 +19,6 @@ public class A027908 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return RING.pow(C, 2 * mN, mN).coeff(mN);
+    return RING.pow(C, 2L * mN, mN).coeff(mN);
   }
 }

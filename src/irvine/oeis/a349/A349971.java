@@ -14,6 +14,6 @@ public class A349971 extends LambdaArray {
 
   /** Construct the sequence. */
   public A349971() {
-    super(1, 1, 1, 1, (n, k) -> Rationals.SINGLETON.product(0, k - 2, j -> new Q(j * n + n - 1, n)).multiply(Z.valueOf(n).pow(k - 1)).num());
+    super(1, 1, 1, 1, (n, k) -> Rationals.SINGLETON.product(0, k - 2, j -> new Q((long) j * n + n - 1, n)).multiply(Z.valueOf(n).pow(k - 1)).num());
   }
 }

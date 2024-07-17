@@ -13,6 +13,6 @@ public class A287317 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A287317() {
-    super(0, (n, s) -> Binomial.binomial(2 * n, n).multiply(s[0]), "", new A169714());
+    super(0, (n, s) -> Binomial.binomial(2L * n, n).multiply(s[0]), "", new A169714());
   }
 }

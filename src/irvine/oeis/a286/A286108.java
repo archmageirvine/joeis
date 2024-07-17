@@ -12,6 +12,6 @@ public class A286108 extends LambdaArray {
 
   /** Construct the sequence. */
   public A286108() {
-    super(0, 0, 0, -1, (n, k) -> Functions.CANTOR_PAIRING.z((n & k) * 2, n ^ k));
+    super(0, 0, 0, -1, (n, k) -> Functions.CANTOR_PAIRING.z((n & k) * 2L, n ^ k));
   }
 }

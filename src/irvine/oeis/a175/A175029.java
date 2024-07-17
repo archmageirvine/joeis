@@ -12,6 +12,6 @@ public class A175029 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A175029() {
-    super(1, n -> Z.valueOf(n).isProbablePrime() ? Z.valueOf(2 * n) : Z.valueOf(3 * n));
+    super(1, n -> Z.valueOf(n).isProbablePrime() ? Z.valueOf(2L * n) : Z.valueOf(3L * n));
   }
 }

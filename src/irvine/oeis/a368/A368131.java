@@ -12,6 +12,6 @@ public class A368131 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A368131() {
-    super(0, (self, n) -> self.s(0).subtract(2 * n), "", new A117630());
+    super(0, (self, n) -> self.s(0).subtract(2L * n), "", new A117630());
   }
 }

@@ -13,6 +13,6 @@ public class A302116 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A302116() {
-    super(0, (self, n) -> Z.valueOf(16 * (n - 1)).multiply(self.a(n - 1).multiply(2 * n - 3).add(Z.NEG_ONE.pow(n).multiply(Integers.SINGLETON.product(0, n - 1, k -> Z.valueOf(2 * k - 3)).square()).divide(9))), "0");
+    super(0, (self, n) -> Z.valueOf(16L * (n - 1)).multiply(self.a(n - 1).multiply(2L * n - 3).add(Z.NEG_ONE.pow(n).multiply(Integers.SINGLETON.product(0, n - 1, k -> Z.valueOf(2L * k - 3)).square()).divide(9))), "0");
   }
 }

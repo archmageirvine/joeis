@@ -12,6 +12,6 @@ public class A191562 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A191562() {
-    super(1, n -> Z.SEVEN.pow(n).modZ(3 * n));
+    super(1, n -> Z.SEVEN.pow(n).modZ(3L * n));
   }
 }

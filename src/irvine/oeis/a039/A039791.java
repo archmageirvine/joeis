@@ -35,7 +35,7 @@ public class A039791 extends Sequence1 {
   private MultivariateMonomial cycleIndex(final int l, final int k, final int j) {
     final Map<Integer, Q> monomial = new HashMap<>();
     for (int i = 1; i <= l; ++i) {
-      final int g = l / Functions.GCD.i(l, (k - 1) * i + j);
+      final int g = l / Functions.GCD.i(l, (long) (k - 1) * i + j);
       final int v = order(g, k);
       monomial.merge(v, new Q(1, v), Q::add);
     }

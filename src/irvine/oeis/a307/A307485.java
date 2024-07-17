@@ -13,6 +13,6 @@ public class A307485 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A307485() {
-    super(0, n -> Z.valueOf(2 * n - (1 << IntegerUtils.floorLog2(4 * n + 1)) / 3));
+    super(0, n -> Z.valueOf(2L * n - (1L << IntegerUtils.floorLog2(4 * n + 1)) / 3));
   }
 }

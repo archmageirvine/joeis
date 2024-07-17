@@ -19,7 +19,7 @@ public class A217899 extends LambdaSequence {
   /** Construct the sequence. */
   public A217899() {
     // seq((1/n!) * add((-1)^(n-k) * binomial(n,k) * (k^2)^(n-1),k=1..n),n=1..10);
-    super(1, n -> Integers.SINGLETON.sum(1, n, k -> Z.NEG_ONE.pow(n - k).multiply(Binomial.binomial(n, k)).multiply(Z.valueOf(k * k).pow(n - 1)))
+    super(1, n -> Integers.SINGLETON.sum(1, n, k -> Z.NEG_ONE.pow(n - k).multiply(Binomial.binomial(n, k)).multiply(Z.valueOf((long) k * k).pow(n - 1)))
       .divide(Functions.FACTORIAL.z(n)));
   }
 }

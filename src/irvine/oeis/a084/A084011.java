@@ -12,6 +12,6 @@ public class A084011 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A084011() {
-    super(1, n -> Functions.REVERSE.z(10, 11 * n).divide(11));
+    super(1, n -> Functions.REVERSE.z(10, 11L * n).divide(11));
   }
 }

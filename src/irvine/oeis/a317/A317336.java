@@ -11,6 +11,6 @@ public class A317336 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A317336() {
-    super(1, new A317333(), (n, v) -> v.subtract(8 * n));
+    super(1, new A317333(), (n, v) -> v.subtract(8L * n));
   }
 }

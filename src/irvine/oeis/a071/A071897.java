@@ -12,6 +12,6 @@ public class A071897 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A071897() {
-    super(1, (n, s) -> s[0].multiply(Binomial.binomial(2 * n, n).divide(n + 1)).add(s[1]), "1, 3", PREVIOUS, PREVIOUS);
+    super(1, (n, s) -> s[0].multiply(Binomial.binomial(2L * n, n).divide(n + 1)).add(s[1]), "1, 3", PREVIOUS, PREVIOUS);
   }
 }

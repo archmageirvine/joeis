@@ -13,6 +13,6 @@ public class A121584 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A121584() {
-    super(1, (n, s) -> s[0].multiply(2 * n - 3).subtract(s[1].multiply(n - 1)).divide(n - 2).add(Z.valueOf(n * (2 * n * n - 9 * n + 17) - 16).multiply(Functions.FACTORIAL.z(n - 1)).divide(2 * n - 4)), "1,4", PREVIOUS, PREVIOUS);
+    super(1, (n, s) -> s[0].multiply(2L * n - 3).subtract(s[1].multiply(n - 1)).divide(n - 2).add(Z.valueOf(n * (2L * n * n - 9L * n + 17) - 16).multiply(Functions.FACTORIAL.z(n - 1)).divide(2L * n - 4)), "1,4", PREVIOUS, PREVIOUS);
   }
 }

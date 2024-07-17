@@ -17,7 +17,7 @@ public class A068522 extends Sequence0 {
     Z res = Z.ZERO;
     for (int k = 0; k < digits.length(); ++k) {
       final int v = digits.charAt(k) - '0';
-      res = res.multiply(10).add(v * v);
+      res = res.multiply(10).add((long) v * v);
     }
     return res;
   }

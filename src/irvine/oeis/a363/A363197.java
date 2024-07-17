@@ -13,6 +13,6 @@ public class A363197 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A363197() {
-    super(1, (n, s) -> Binomial.binomial(Z.TWO.pow(n).subtract(2), Z.TWO.pow(n - 1).subtract(1)).multiply(Z.TWO.pow((n * n - 5 * n + 4) / 2)).multiply(s[0].square()), "1,1,10", PREVIOUS, PREVIOUS, PREVIOUS);
+    super(1, (n, s) -> Binomial.binomial(Z.TWO.pow(n).subtract(2), Z.TWO.pow(n - 1).subtract(1)).multiply(Z.TWO.pow(((long) n * n - 5L * n + 4) / 2)).multiply(s[0].square()), "1,1,10", PREVIOUS, PREVIOUS, PREVIOUS);
   }
 }

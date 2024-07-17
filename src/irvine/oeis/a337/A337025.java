@@ -12,6 +12,6 @@ public class A337025 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A337025() {
-    super(0, n -> Z.valueOf((4 * n) * (4 * n)).pow(n));
+    super(0, n -> Z.valueOf((4L * n) * (4L * n)).pow(n));
   }
 }

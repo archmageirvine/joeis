@@ -21,6 +21,6 @@ public class A218143 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Functions.STIRLING2.z(mN * (mN + 1) / 2, mN);
+    return Functions.STIRLING2.z((long) mN * (mN + 1) / 2, mN);
   }
 }

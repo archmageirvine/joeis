@@ -14,6 +14,6 @@ public class A247416 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A247416() {
-    super(1, n -> Integers.SINGLETON.sum(1, Functions.SQRT.i(n + 1), m -> Binomial.binomial(2 * n - m * m + 1, n)));
+    super(1, n -> Integers.SINGLETON.sum(1, Functions.SQRT.i(n + 1), m -> Binomial.binomial(2L * n - (long) m * m + 1, n)));
   }
 }

@@ -13,6 +13,6 @@ public class A318468 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A318468() {
-    super(1, n -> Functions.SIGMA1.z(n).and(Z.valueOf(2 * n)));
+    super(1, n -> Functions.SIGMA1.z(n).and(Z.valueOf(2L * n)));
   }
 }

@@ -13,6 +13,6 @@ public class A367327 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A367327() {
-    super(0, n -> Integers.SINGLETON.sum(0, n - 1, k -> Z.valueOf(n).mod(n - k) != 0 ? Z.valueOf(k * k) : Z.ZERO));
+    super(0, n -> Integers.SINGLETON.sum(0, n - 1, k -> Z.valueOf(n).mod(n - k) != 0 ? Z.valueOf((long) k * k) : Z.ZERO));
   }
 }

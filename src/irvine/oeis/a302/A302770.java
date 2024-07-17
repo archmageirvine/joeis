@@ -13,6 +13,6 @@ public class A302770 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A302770() {
-    super(1, (n, s) -> Z.valueOf(4 * n - 2).multiply(Z.valueOf(n - 1).multiply(s[0]).add(Functions.FACTORIAL.z(n - 2).square())), "0", PREVIOUS);
+    super(1, (n, s) -> Z.valueOf(4L * n - 2).multiply(Z.valueOf(n - 1).multiply(s[0]).add(Functions.FACTORIAL.z(n - 2).square())), "0", PREVIOUS);
   }
 }

@@ -12,6 +12,6 @@ public class A366872 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A366872() {
-    super(0, n -> Functions.SIGMA.z(0, 8 + 4 * n));
+    super(0, n -> Functions.SIGMA.z(0, 8 + 4L * n));
   }
 }

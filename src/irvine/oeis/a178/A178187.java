@@ -13,6 +13,6 @@ public class A178187 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A178187() {
-    super(1, n -> Rationals.SINGLETON.sum(1, n, k -> new Q(1, 3).pow(k * (k + 3) / 2)).num());
+    super(1, n -> Rationals.SINGLETON.sum(1, n, k -> new Q(1, 3).pow((long) k * (k + 3) / 2)).num());
   }
 }

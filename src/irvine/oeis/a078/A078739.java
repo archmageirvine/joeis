@@ -15,6 +15,6 @@ public class A078739 extends LambdaTable {
 
   /** Construct the sequence. */
   public A078739() {
-    super(1, 1, n -> new Integer[] {2, n * 2}, (n, k) -> Integers.SINGLETON.sum(0, k, i -> Z.NEG_ONE.pow(k - i).multiply(Binomial.binomial(k, i).multiply(Z.valueOf(i * (i - 1) / 2).pow(n)))).multiply(Z.TWO.pow(n)).divide(Functions.FACTORIAL.z(k)));
+    super(1, 1, n -> new Integer[] {2, n * 2}, (n, k) -> Integers.SINGLETON.sum(0, k, i -> Z.NEG_ONE.pow(k - i).multiply(Binomial.binomial(k, i).multiply(Z.valueOf((long) i * (i - 1) / 2).pow(n)))).multiply(Z.TWO.pow(n)).divide(Functions.FACTORIAL.z(k)));
   }
 }

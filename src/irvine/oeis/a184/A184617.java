@@ -12,6 +12,6 @@ public class A184617 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A184617() {
-    super(0, n -> Z.valueOf(n).xor(Z.valueOf(n * 3)).divide2());
+    super(0, n -> Z.valueOf(n).xor(Z.valueOf(n * 3L)).divide2());
   }
 }

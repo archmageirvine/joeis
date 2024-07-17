@@ -15,6 +15,6 @@ public class A365225 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A365225() {
-    super(0, n -> Integers.SINGLETON.sum(0, n, k -> ((((n - k) & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(Binomial.binomial(2 * n + 3 * k + 1, k)).multiply(Binomial.binomial(n - 1, n - k)).divide(Z.valueOf(2 * n + 3 * k + 1))));
+    super(0, n -> Integers.SINGLETON.sum(0, n, k -> ((((n - k) & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(Binomial.binomial(2L * n + 3L * k + 1, k)).multiply(Binomial.binomial(n - 1, n - k)).divide(Z.valueOf(2L * n + 3L * k + 1))));
   }
 }

@@ -12,6 +12,6 @@ public class A370109 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A370109() {
-    super(1, n -> Z.valueOf(n).square().multiply(2 * n * n - 23));
+    super(1, n -> Z.valueOf(n).square().multiply(2L * n * n - 23));
   }
 }

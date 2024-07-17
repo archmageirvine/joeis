@@ -15,6 +15,6 @@ public class A349068 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A349068() {
-    super(0, n -> Integers.SINGLETON.sum(0, n / 2, k -> Z.NEG_ONE.pow(k).multiply(Functions.FACTORIAL.z(n).divide(Functions.FACTORIAL.z(k).multiply(Functions.FACTORIAL.z(n - 2 * k)))).multiply(Z.valueOf(4 * n).pow(n - 2 * k))));
+    super(0, n -> Integers.SINGLETON.sum(0, n / 2, k -> Z.NEG_ONE.pow(k).multiply(Functions.FACTORIAL.z(n).divide(Functions.FACTORIAL.z(k).multiply(Functions.FACTORIAL.z(n - 2 * k)))).multiply(Z.valueOf(4L * n).pow(n - 2L * k))));
   }
 }

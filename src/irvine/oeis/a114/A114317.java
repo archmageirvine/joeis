@@ -11,6 +11,6 @@ public class A114317 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A114317() {
-    super(1, (n, s) -> s[0].square().add(2 * (n - 1)), "1", PREVIOUS);
+    super(1, (n, s) -> s[0].square().add(2L * (n - 1)), "1", PREVIOUS);
   }
 }

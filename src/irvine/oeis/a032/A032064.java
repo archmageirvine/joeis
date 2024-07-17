@@ -23,7 +23,7 @@ public class A032064 extends Sequence0 {
     Polynomial<Polynomial<Q>> prod = RING.one();
     final Polynomial<Q> t1 = Y_RING.monomial(Q.ONE, 1);
     for (int k = 1; k <= n; ++k) {
-      final Polynomial<Polynomial<Q>> u = RING.pow(RING.onePlusXToTheN(t1, k), 2 * k - 1, n);
+      final Polynomial<Polynomial<Q>> u = RING.pow(RING.onePlusXToTheN(t1, k), 2L * k - 1, n);
       prod = RING.multiply(prod, u, n);
     }
     return prod;

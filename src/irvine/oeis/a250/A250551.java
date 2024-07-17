@@ -14,6 +14,6 @@ public class A250551 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A250551() {
-    super(1, n -> new Q(n).divide(Rationals.SINGLETON.sum(1, n, k -> new Q(Z.ONE, Z.valueOf(k * (4 * k - 3))))).den());
+    super(1, n -> new Q(n).divide(Rationals.SINGLETON.sum(1, n, k -> new Q(Z.ONE, Z.valueOf(k * (4L * k - 3))))).den());
   }
 }

@@ -37,7 +37,7 @@ public class A112934 extends MemorySequence {
     Z f = Z.ONE;
     for (int k = 1; k <= n; ++k) {
       if (k > 1) {
-        f = f.multiply(mMult * (k - 1) - 1);
+        f = f.multiply((long) mMult * (k - 1) - 1);
       }
       // System.out.print(" f=" + f + ",sum=" + sum + ",a(n-k)=" + a(n - k));
       sum = sum.add(f.multiply(a(n - k)));

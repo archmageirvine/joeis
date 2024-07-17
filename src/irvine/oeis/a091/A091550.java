@@ -14,6 +14,6 @@ public class A091550 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A091550() {
-    super(2, n -> Q.TWO.pow(4 * n).multiply(Rationals.SINGLETON.product(0, n - 1, j -> new Q(2 * j + 1, 2))).multiply((Rationals.SINGLETON.product(0, n - 1, j -> new Q(4 * j + 1, 4))).multiply(Z.valueOf(-3)).add(Rationals.SINGLETON.product(0, n - 1, j -> new Q(4 * j + 3, 4)))).divide(Z.valueOf(6 * 12)).num());
+    super(2, n -> Q.TWO.pow(4L * n).multiply(Rationals.SINGLETON.product(0, n - 1, j -> new Q(2L * j + 1, 2))).multiply((Rationals.SINGLETON.product(0, n - 1, j -> new Q(4L * j + 1, 4))).multiply(Z.valueOf(-3)).add(Rationals.SINGLETON.product(0, n - 1, j -> new Q(4L * j + 3, 4)))).divide(Z.valueOf(6 * 12)).num());
   }
 }

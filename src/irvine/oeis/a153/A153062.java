@@ -11,6 +11,6 @@ public class A153062 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A153062() {
-    super(0, (n, s) -> s[0].square().subtract(n * n), "1", PREVIOUS);
+    super(0, (n, s) -> s[0].square().subtract((long) n * n), "1", PREVIOUS);
   }
 }

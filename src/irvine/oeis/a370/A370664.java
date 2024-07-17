@@ -12,6 +12,6 @@ public class A370664 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A370664() {
-    super(1, 0, k -> Z.SEVEN.pow(k).add(7 * k + 1).isProbablePrime());
+    super(1, 0, k -> Z.SEVEN.pow(k).add(7L * k + 1).isProbablePrime());
   }
 }

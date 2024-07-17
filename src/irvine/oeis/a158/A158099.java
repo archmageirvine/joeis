@@ -13,6 +13,6 @@ public class A158099 extends EulerTransform {
 
   /** Construct the sequence. */
   public A158099() {
-    super(0, new LambdaSequence(1, n -> Z.TWO.pow(n * n)), 1);
+    super(0, new LambdaSequence(1, n -> Z.TWO.pow((long) n * n)), 1);
   }
 }

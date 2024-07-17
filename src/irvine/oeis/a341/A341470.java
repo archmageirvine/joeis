@@ -19,6 +19,6 @@ public class A341470 extends UpperLeftTriangle {
 
   @Override
   public Z matrixElement(final int n, final int k) {
-    return Integers.SINGLETON.sum(0, n, j -> Binomial.binomial(k * n, n - j).multiply(Binomial.binomial(k * n + j, j)));
+    return Integers.SINGLETON.sum(0, n, j -> Binomial.binomial((long) k * n, n - j).multiply(Binomial.binomial((long) k * n + j, j)));
   }
 }

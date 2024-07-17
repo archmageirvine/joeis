@@ -13,6 +13,6 @@ public class A162550 extends LambdaTable {
 
   /** Construct the sequence. */
   public A162550() {
-    super(0, 0, n -> new Integer[] {1, Functions.CATALAN.i(n)}, (n, k) -> Z.valueOf(2 * n));
+    super(0, 0, n -> new Integer[] {1, Functions.CATALAN.i(n)}, (n, k) -> Z.valueOf(2L * n));
   }
 }

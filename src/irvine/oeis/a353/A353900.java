@@ -14,6 +14,6 @@ public class A353900 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A353900() {
-    super(1, (p, e) -> Integers.SINGLETON.sum(0, IntegerUtils.floorLog2(e), k -> p.pow(1 << k)).add(1));
+    super(1, (p, e) -> Integers.SINGLETON.sum(0, IntegerUtils.floorLog2(e), k -> p.pow(1L << k)).add(1));
   }
 }

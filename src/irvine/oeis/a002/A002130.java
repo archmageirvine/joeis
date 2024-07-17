@@ -18,7 +18,7 @@ public class A002130 extends Sequence3 {
   private Polynomial<Z> t(final int i, final int n) {
     Polynomial<Z> s = RING.zero();
     for (int k = 1; k <= n; ++k) {
-      final Polynomial<Z> t = RING.series(RING.monomial(Z.ONE, k * i), RING.pow(RING.onePlusXToTheN(k), 2 * i, n), n);
+      final Polynomial<Z> t = RING.series(RING.monomial(Z.ONE, k * i), RING.pow(RING.onePlusXToTheN(k), 2L * i, n), n);
       s = RING.add(s, t);
     }
     return s;

@@ -13,6 +13,6 @@ public class A355106 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A355106() {
-    super(0, (self, n) -> Integers.SINGLETON.sum(0, n - 1, k -> Functions.STIRLING1.z(n - 1, k).abs().multiply(self.a(k))).multiply(2 * n), "1");
+    super(0, (self, n) -> Integers.SINGLETON.sum(0, n - 1, k -> Functions.STIRLING1.z(n - 1, k).abs().multiply(self.a(k))).multiply(2L * n), "1");
   }
 }

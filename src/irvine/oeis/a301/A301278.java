@@ -14,6 +14,6 @@ public class A301278 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A301278() {
-    super(0, n -> (n == 0) ? Z.ZERO : new Q(Binomial.binomial(2 * n, n), Z.valueOf(n)).subtract(new Q(Z.FOUR.pow(n), Z.valueOf(n * (n + 1)))).num());
+    super(0, n -> (n == 0) ? Z.ZERO : new Q(Binomial.binomial(2L * n, n), Z.valueOf(n)).subtract(new Q(Z.FOUR.pow(n), Z.valueOf((long) n * (n + 1)))).num());
   }
 }

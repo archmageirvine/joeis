@@ -98,7 +98,7 @@ public class AlternatingSumSequence extends AbstractSequence {
     try {
       seq = (Sequence) Class.forName("irvine.oeis.a" + aSeqNo.substring(1, 4) + '.' + aSeqNo).getDeclaredConstructor().newInstance();
     } catch (final ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException exc) {
-      throw new UnsupportedOperationException("invalid A-number: " + aSeqNo);
+      throw new UnsupportedOperationException("invalid A-number: " + aSeqNo, exc);
     }
 
     final AlternatingSumSequence asu = new AlternatingSumSequence(offset, seq, pattern);

@@ -33,7 +33,7 @@ public final class Series {
     try {
       return (Series1) Series.class.getField(name.toUpperCase(Locale.getDefault())).get(null);
     } catch (final IllegalAccessException e) {
-      throw new RuntimeException("Could not access " + name);
+      throw new RuntimeException("Could not access " + name, e);
     }
   }
 
@@ -47,7 +47,7 @@ public final class Series {
     try {
       return (Series2) Series.class.getField(name.toUpperCase(Locale.getDefault())).get(null);
     } catch (final IllegalAccessException e) {
-      throw new RuntimeException("Could not access " + name);
+      throw new RuntimeException("Could not access " + name, e);
     }
   }
 

@@ -55,7 +55,7 @@ public class PseudoSequence extends AbstractSequence implements Closeable {
         mLineReader = new BufferedReader(new InputStreamReader(new FileInputStream(file), StandardCharsets.UTF_8));
       }
     } catch (final RuntimeException | IOException exc) {
-      throw new RuntimeException("Cannot read b-file for " + aNumber + ": " + exc.getMessage());
+      throw new RuntimeException("Cannot read b-file for " + aNumber, exc);
     }
   }
 

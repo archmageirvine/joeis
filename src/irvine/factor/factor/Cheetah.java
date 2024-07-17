@@ -1,7 +1,5 @@
 package irvine.factor.factor;
 
-import java.util.Random;
-
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.IntegerUtils;
@@ -218,51 +216,5 @@ public class Cheetah extends AbstractFactorizer {
    */
   static FactorSequence factor(final long n) {
     return getFactorSequence(new FactorSequence(n));
-  }
-
-  /**
-   * Attempt to factor each of the supplied arguments, printing a sorted list of factors.
-   * @param args numbers to factor
-   */
-  public static void main(final String[] args) {
-    if (args.length == 0) {
-      System.out.println("USAGE: Cheetah n*");
-    } else if ("-t".equals(args[0])) {
-      final int[] cand = new int[1000000];
-      final Random r = new Random();
-      for (int k = 0; k < cand.length; ++k) {
-        cand[k] = r.nextInt(Integer.MAX_VALUE);
-      }
-      final Cheetah c = new Cheetah();
-      final PrimeDivision p = new PrimeDivision();
-      for (int k = 0; k < 5; ++k) {
-        System.out.println("Cheetah");
-        final long cstart = System.currentTimeMillis();
-        for (final int h : cand) {
-          final FactorSequence fs = new FactorSequence(h);
-          c.factor(fs);
-        }
-        System.out.println("Time = " + (System.currentTimeMillis() - cstart));
-        System.out.println("PrimeDivision");
-        final long pstart = System.currentTimeMillis();
-        for (final int h : cand) {
-          final FactorSequence fs = new FactorSequence(h);
-          p.factor(fs);
-        }
-        System.out.println("Time = " + (System.currentTimeMillis() - pstart));
-      }
-    } else {
-      final Cheetah c = new Cheetah();
-      for (final String arg : args) {
-        System.out.println("Trying: " + arg);
-        try {
-          final FactorSequence fs = new FactorSequence(new Z(arg));
-          c.factor(fs);
-          System.out.println(fs);
-        } catch (final NumberFormatException e) {
-          System.out.println("Could not parse " + arg + " as a number.");
-        }
-      }
-    }
   }
 }

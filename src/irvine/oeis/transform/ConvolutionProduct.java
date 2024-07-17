@@ -104,7 +104,7 @@ public class ConvolutionProduct extends EulerTransform {
           }
         }
       } catch (final ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException exc) {
-        throw new UnsupportedOperationException("invalid A-number: " + seqNo);
+        throw new UnsupportedOperationException("invalid A-number: " + seqNo, exc);
       }
       result[is] = seq;
     }

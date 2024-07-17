@@ -22,6 +22,7 @@ import irvine.oeis.transform.GilbreathTransformSequence;
 import irvine.oeis.transform.InverseEulerTransform;
 import irvine.oeis.transform.InverseMobiusTransformSequence;
 import irvine.oeis.transform.InverseWeighTransform;
+import irvine.oeis.transform.InvertTransform;
 import irvine.oeis.transform.MobiusTransformSequence;
 import irvine.oeis.transform.SimpleTransformSequence;
 import irvine.oeis.transform.Stirling1TransformSequence;
@@ -151,6 +152,8 @@ public final class SequenceFactory {
           return new InverseEulerTransform(1, sequence(inner));
         case "imobius":
           return new InverseMobiusTransformSequence(sequence(inner), 0);
+        case "invert":
+          return new InvertTransform(0, sequence(inner));
         case "iweigh":
           return new InverseWeighTransform(sequence(inner));
         case "lpf":

@@ -227,15 +227,15 @@ public class EtaProductSequence extends AbstractSequence {
     while (iarg < args.length) { // consume all arguments
       final String opt = args[iarg++];
       try {
-        if (opt.equals("-d")) {
+        if ("-d".equals(opt)) {
           debug = Integer.parseInt(args[iarg++]);
-        } else if (opt.equals("-f")) {
+        } else if ("-f".equals(opt)) {
           factor = Integer.parseInt(args[iarg++]);
-        } else if (opt.equals("-n")) {
+        } else if ("-n".equals(opt)) {
           noTerms = Integer.parseInt(args[iarg++]);
-        } else if (opt.equals("-p")) {
+        } else if ("-p".equals(opt)) {
           epsig = args[iarg++].replaceAll("\\s", ""); // remove whitespace
-        } else if (opt.equals("-q")) {
+        } else if ("-q".equals(opt)) {
           pqf = args[iarg++].replaceAll("\\s", ""); // remove whitespace
         } else {
           System.err.println("??? invalid option: \"" + opt + "\"");

@@ -77,15 +77,15 @@ public class AlternatingSumSequence extends AbstractSequence {
     while (iarg < args.length) { // consume all arguments
       final String opt = args[iarg++];
       try {
-        if (opt.equals("-d")) {
+        if ("-d".equals(opt)) {
           debug = Integer.parseInt(args[iarg++]);
-        } else if (opt.equals("-a")) {
+        } else if ("-a".equals(opt)) {
           aSeqNo = args[iarg++];
-        } else if (opt.equals("-n")) {
+        } else if ("-n".equals(opt)) {
           noTerms = Integer.parseInt(args[iarg++]);
-        } else if (opt.equals("-o")) {
+        } else if ("-o".equals(opt)) {
           offset = Integer.parseInt(args[iarg++]);
-        } else if (opt.equals("-p")) {
+        } else if ("-p".equals(opt)) {
           pattern = args[iarg++];
         } else {
           System.err.println("??? invalid option: \"" + opt + "\"");

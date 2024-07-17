@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.SequenceFactory;
 
 /**
  * A sequence comprising the INVERT transform of another sequence.
@@ -79,60 +78,5 @@ public class InvertTransform extends AbstractSequence {
     }
     mTar.set(mN, sum);
     return sum;
-  }
-
-  /**
-   * Main method: compute the INVERT transform of a sequence.
-   * @param args command line arguments:
-   * <ul>
-   * <li>-a A-number</li>
-   * <li>-d debugging mode: 0=none,. 1=some, 2=more</li>
-   * <li>-k start for loop variable <code>k</code></li>
-   * <li>-n number of terms (default 32)</li>
-   * <li>-o offset, first index (default 0) </li>
-   * <li>-s skip this number of terms in the underlying sequence (default 1)</li>
-   * </ul>
-   */
-  public static void main(final String[] args) {
-    int debug = 0;
-    String aSeqNo = null;
-    Sequence mSeq = null;
-    int offset = 0;
-    int noTerms = 32;
-    int skipNo = 0;
-    int kStart = 1;
-    int iarg = 0;
-    while (iarg < args.length) { // consume all arguments
-      final String opt = args[iarg++];
-      try {
-        if (opt.equals("-a")) {
-          aSeqNo = args[iarg++];
-          mSeq = SequenceFactory.sequence(aSeqNo);
-        } else if (opt.equals("-d")) {
-          debug = Integer.parseInt(args[iarg++]);
-        } else if (opt.equals("-k")) {
-          kStart = Integer.parseInt(args[iarg++]);
-        } else if (opt.equals("-n")) {
-          noTerms = Integer.parseInt(args[iarg++]);
-        } else if (opt.equals("-o")) {
-          offset = Integer.parseInt(args[iarg++]);
-        } else if (opt.equals("-s")) {
-          skipNo = Integer.parseInt(args[iarg++]);
-        } else {
-          System.err.println("??? invalid option: \"" + opt + "\"");
-        }
-      } catch (final Exception exc) { // take default
-        System.err.println("wrong option: " + args[iarg - 1] + ", message: " + exc.getMessage());
-      }
-    }
-
-    final InvertTransform invts = new InvertTransform(offset, mSeq, skipNo, kStart);
-    for (int iterm = 0; iterm < noTerms; ++iterm) {
-      if (iterm > 0) {
-        System.out.print(",");
-      }
-      System.out.print(invts.next());
-    }
-    System.out.println();
   }
 }

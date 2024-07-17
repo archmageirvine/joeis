@@ -14,7 +14,7 @@ public class A048549 extends AbstractSequence {
   private final int mBase;
 
   protected A048549(final String start, final int base) {
-    super(start.equals("2") ? 1 : 0);
+    super("2".equals(start) ? 1 : 0);
     mStart = start;
     mBase = base;
   }

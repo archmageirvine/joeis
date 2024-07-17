@@ -326,19 +326,19 @@ public class HypergeometricSequence extends AbstractSequence implements DirectSe
     while (iarg < args.length) { // consume all arguments
       final String opt = args[iarg++];
       try {
-        if (opt.equals("-d")) {
+        if ("-d".equals(opt)) {
           debug = Integer.parseInt(args[iarg++]);
-        } else if (opt.equals("-h")) {
+        } else if ("-h".equals(opt)) {
           polyString = args[iarg++];
-        } else if (opt.equals("-i")) {
+        } else if ("-i".equals(opt)) {
           initString = args[iarg++];
-        } else if (opt.equals("-n")) {
+        } else if ("-n".equals(opt)) {
           noTerms = Integer.parseInt(args[iarg++]);
-        } else if (opt.equals("-o")) {
+        } else if ("-o".equals(opt)) {
           offset = Integer.parseInt(args[iarg++]);
-        } else if (opt.equals("-p")) {
+        } else if ("-p".equals(opt)) {
           p = Integer.parseInt(args[iarg++]);
-        } else if (opt.equals("-q")) {
+        } else if ("-q".equals(opt)) {
           q = Integer.parseInt(args[iarg++]);
         } else {
           System.err.println("??? invalid option: \"" + opt + "\"");

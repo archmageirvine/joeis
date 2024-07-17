@@ -55,19 +55,19 @@ public class RootSequence extends EulerTransform {
     while (iarg < args.length) { // consume all arguments
       final String opt = args[iarg++];
       try {
-        if (opt.equals("-d")) {
+        if ("-d".equals(opt)) {
           debug = Integer.parseInt(args[iarg++]);
-        } else if (opt.equals("-a")) {
+        } else if ("-a".equals(opt)) {
           aSeqNo = args[iarg++];
           seq = (AbstractSequence) Class.forName("irvine.oeis.a" + aSeqNo.substring(1, 4) + '.' + aSeqNo)
             .getDeclaredConstructor().newInstance();
-        } else if (opt.equals("-f")) {
+        } else if ("-f".equals(opt)) {
           factor = Long.parseLong(args[iarg++]);
-        } else if (opt.equals("-n")) {
+        } else if ("-n".equals(opt)) {
           noTerms = Integer.parseInt(args[iarg++]);
-        } else if (opt.equals("-o")) {
+        } else if ("-o".equals(opt)) {
           offset = Integer.parseInt(args[iarg++]);
-        } else if (opt.equals("-q")) {
+        } else if ("-q".equals(opt)) {
           String pqf = args[iarg++].replaceAll("\\s", ""); // remove whitespace
           if (pqf.indexOf('/') < 0) {
             pqf += "/1";

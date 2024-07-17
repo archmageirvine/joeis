@@ -134,7 +134,7 @@ public class FiniteSequence extends AbstractSequence implements Serializable, Di
 
   @Override
   public Z next() {
-    return mN < mList.size() ? mList.get(mN++) : (mAttr.equals(PAD_ZERO) ? Z.ZERO : null);
+    return mN < mList.size() ? mList.get(mN++) : (PAD_ZERO.equals(mAttr) ? Z.ZERO : null);
   }
 
   /**
@@ -165,7 +165,6 @@ public class FiniteSequence extends AbstractSequence implements Serializable, Di
 
   /**
    * Get the number of terms in the finite list.
-   * @return array of terms
    */
   public int size() {
     return mList.size();

@@ -151,7 +151,7 @@ public class A064818 extends Sequence1 implements Conjectural {
             }
             break;
           case EXCHANGE:
-            if (!proof.get(proof.size() - 1).equals("exch")) {
+            if (!"exch".equals(proof.get(proof.size() - 1))) {
               stack[sp] = stack[sp - 1];
               stack[sp - 1] = a;
               proof.add("exch");

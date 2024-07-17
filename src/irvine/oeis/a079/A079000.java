@@ -21,7 +21,7 @@ public class A079000 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A079000() {
-    this(1, 1, 1, n -> n.isOdd());
+    this(1, 1, 1, Z::isOdd);
   }
 
   /**

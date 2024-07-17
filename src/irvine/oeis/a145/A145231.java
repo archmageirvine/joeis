@@ -10,7 +10,6 @@ import irvine.oeis.AbstractSequence;
  */
 public class A145231 extends AbstractSequence {
 
-  private final int mOffset;
   private final int mBase;
   private int mProd;
 
@@ -26,7 +25,6 @@ public class A145231 extends AbstractSequence {
    */
   public A145231(final int offset, final int base) {
     super(offset);
-    mOffset = offset;
     mBase = base;
     mProd = 1;
   }

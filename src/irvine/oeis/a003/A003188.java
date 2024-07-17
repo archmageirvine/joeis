@@ -20,7 +20,7 @@ public class A003188 extends Sequence0 implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    return a(n);
+    return a(Z.valueOf(n));
   }
 
   @Override

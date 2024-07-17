@@ -46,6 +46,16 @@
     </javac>
   </target>
 
+  <target name="compile-src-debug" description="Compile the source with debugging" depends="compile-grammar">
+    <mkdir dir="${build.dir}/classes-debug"/>
+    <javac srcdir="${src.dir}" destdir="${build.dir}/classes-debug" source="1.10" includeantruntime="false" debug="true" debuglevel="lines,vars,source">
+      <classpath>
+        <fileset dir="${lib.dir}" includes="**/*.jar" />
+      </classpath>
+      <compilerarg value="-Xlint:unchecked" />
+    </javac>
+  </target>
+
   <target name="compile-internal" description="Compile the internal">
     <javac srcdir="${internal.dir}" source="1.10" destdir="${build.dir}/classes" includeantruntime="false">
       <classpath>

@@ -18,7 +18,7 @@ public class A328429 extends FunctionInt3ZSequence {
 
   /** Construct the sequence. */
   public A328429() {
-    this(0, -1, (x, i) -> (i != x) ? 1 : 0, (x, i) -> (i < x) ? 1 : 0);
+    this(0, -1, (x, i) -> (!i.equals(x)) ? 1 : 0, (x, i) -> (i < x) ? 1 : 0);
   }
 
   /**

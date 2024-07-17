@@ -13,6 +13,6 @@ public class A285722 extends LambdaArray {
 
   /** Construct the sequence. */
   public A285722() {
-    super(1, 1, 1, -1, (n, k) -> (n == k) ? Z.ZERO : ((n > k) ? Functions.ONE_BASED_PAIRING.z(n - k, k) : Functions.ONE_BASED_PAIRING.z(n, k - n)));
+    super(1, 1, 1, -1, (n, k) -> (n.equals(k)) ? Z.ZERO : ((n > k) ? Functions.ONE_BASED_PAIRING.z(n - k, k) : Functions.ONE_BASED_PAIRING.z(n, k - n)));
   }
 }

@@ -12,7 +12,7 @@ public class A115356 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A115356() {
-    super(0, 0, 0, (n, k) -> (n == k || n == 2 * k + 1) ? Z.ONE : Z.ZERO);
+    super(0, 0, 0, (n, k) -> (n.equals(k) || n == 2 * k + 1) ? Z.ONE : Z.ZERO);
   }
 }
 

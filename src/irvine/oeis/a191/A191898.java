@@ -17,6 +17,6 @@ public class A191898 extends LambdaArray {
 
   /** Construct the sequence. */
   public A191898() {
-    super(1, 1, 1, 1, (n, k) -> (n == 1 || k == 1) ? Z.ONE : (n == k ? A023900.a(n) : A023900.a(Functions.GCD.i(n, k))));
+    super(1, 1, 1, 1, (n, k) -> (n == 1 || k == 1) ? Z.ONE : (n.equals(k) ? A023900.a(n) : A023900.a(Functions.GCD.i(n, k))));
   }
 }

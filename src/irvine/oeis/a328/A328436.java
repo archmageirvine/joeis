@@ -9,6 +9,6 @@ public class A328436 extends A328429 {
 
   /** Construct the sequence. */
   public A328436() {
-    super(0, -1, (x, i) -> (i == x) ? 1 : 0, (x, i) -> (i <= x) ? 1 : 0);
+    super(0, -1, (x, i) -> (i.equals(x)) ? 1 : 0, (x, i) -> (i <= x) ? 1 : 0);
   }
 }

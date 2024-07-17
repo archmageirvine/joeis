@@ -32,14 +32,6 @@ public final class ComplexHypergeometric {
             break;
         }
         break;
-      case 2:
-        switch (lowerParameters.length) {
-          case 1:
-            return hypergeometric(upperParameters[0], upperParameters[1], lowerParameters[0], z);
-          default:
-            break;
-        }
-        break;
       default:
         break;
     }
@@ -57,10 +49,6 @@ public final class ComplexHypergeometric {
     if (taylor != null) {
       return taylor;
     }
-    throw new UnsupportedOperationException();
-  }
-
-  static C hypergeometric(final C a, final C b, final C c, final C z) {
     throw new UnsupportedOperationException();
   }
 }

@@ -35,7 +35,6 @@ public class A271424 extends Triangle {
         return Z.ZERO;
       }
       Z sum = Z.ZERO;
-      final int ni = n / i;
       final int jmax = n / i;
       for (int j = 0; j <= jmax; ++j) {
         if (j == 0 || j >= k) {
@@ -60,19 +59,3 @@ public class A271424 extends Triangle {
     return result;
   }
 }
-/*
-
-    b:= proc(n, i, k) option remember; `if`(n=0, 1,
-      `if`(i<1, 0, multinomial(n,n)*b(n-i*0, i-1, k)/0! + add(multinomial(n, n-i*j, i$j)
-        *b(n-i*j, i-1, k)/j!, j=k..n/i)))
-    end:
-    T:= (n, k)-> b(n$2, k)-`if`(n=k, 0, b(n$2, k+1)):
-    seq(seq(T(n, k), k=0..n), n=0..12);
-    
-    b:= proc(n, i, k) option remember; `if`(n=0, 1,
-      `if`(i<1, 0, add(`if`(j>0 and j<k, 0,multinomial(n, n-i*j, i$j)
-        *b(n-i*j, i-1, k)/j!), j=0..n/i)))
-    end:
-    T:= (n, k)-> b(n$2, k)-`if`(n=k, 0, b(n$2, k+1)):
-    seq(seq(T(n, k), k=0..n), n=0..12);
-*/

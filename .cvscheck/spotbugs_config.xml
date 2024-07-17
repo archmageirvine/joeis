@@ -1,6 +1,5 @@
 <!-- Filter for excluding warnings we are not interested in -->
 <FindBugsFilter>
-
      <!-- Exclude things which are not in our namespace -->
      <Match classregex="java.*"/>
      <Match classregex="junit.*"/>
@@ -20,8 +19,9 @@
      <!-- PZLA is a stupid test about returning null arrays -->
      <!-- SPP is a stupid test about non-standard math constant -->
      <!-- CNT complains about values code to pi -->
+     <!-- CT don't complain about exceptions in constructors -->
      <Match classregex=".*">
-        <BugCode name="SnVI,PZLA,BC,SPP,CNT"/>
+        <BugCode name="SnVI,PZLA,BC,SPP,CNT,CT"/>
      </Match>
 
      <!-- fb-contrib classes we don't want -->

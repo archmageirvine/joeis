@@ -176,9 +176,9 @@ public class A070080 extends AbstractSequence {
    * @return <code>p*(p - 2*a)*(p - 2*b)*(p - 2*c)</code>
    */
   protected static Z getSquare16(final Long[] s) {
-    final long a = s[0].longValue();
-    final long b = s[1].longValue();
-    final long c = s[2].longValue();
+    final long a = s[0];
+    final long b = s[1];
+    final long c = s[2];
     return Z.valueOf(a + b + c).multiply(-a + b + c).multiply(a - b + c).multiply(a + b - c); // (u+v+w)*(-u+v+w)*(u-v+w)*(u+v-w)
   }
 
@@ -210,9 +210,9 @@ public class A070080 extends AbstractSequence {
   }
 
   protected static boolean hasCoPrimeSides(final Long[] s) {
-    final long a = s[0].longValue();
-    final long b = s[1].longValue();
-    final long c = s[2].longValue();
+    final long a = s[0];
+    final long b = s[1];
+    final long c = s[2];
     return Functions.GCD.l(a, b, c) == 1;
   }
 
@@ -244,18 +244,18 @@ public class A070080 extends AbstractSequence {
   }
 
   protected static boolean isHeronian(final Long[] s) {
-    final long a = s[0].longValue();
-    final long b = s[1].longValue();
-    final long c = s[2].longValue();
+    final long a = s[0];
+    final long b = s[1];
+    final long c = s[2];
     final long p = a + b + c;
     final long heron16 = (p - 2 * a) * (p - 2 * b) * (p - 2 * c) * p * 2;
     return heron16 > 0 && Z.valueOf(heron16).isSquare();
   }
 
   protected static boolean isIsosceles(final Long[] s) {
-    final long a = s[0].longValue();
-    final long b = s[1].longValue();
-    final long c = s[2].longValue();
+    final long a = s[0];
+    final long b = s[1];
+    final long c = s[2];
     return a == b || b == c;
   }
 
@@ -268,9 +268,9 @@ public class A070080 extends AbstractSequence {
   }
 
   protected static boolean isScalene(final Long[] s) {
-    final long a = s[0].longValue();
-    final long b = s[1].longValue();
-    final long c = s[2].longValue();
+    final long a = s[0];
+    final long b = s[1];
+    final long c = s[2];
     return a < b && b < c;
   }
 

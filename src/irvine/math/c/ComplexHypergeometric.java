@@ -51,4 +51,8 @@ public final class ComplexHypergeometric {
     }
     throw new UnsupportedOperationException();
   }
+
+  static C hypergeometric(final C a, final C b, final C c, final C z) {
+    throw new UnsupportedOperationException();
+  }
 }

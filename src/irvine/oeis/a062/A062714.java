@@ -75,6 +75,11 @@ public class A062714 extends Sequence1 {
       final State other = (State) obj;
       return mSize == other.mSize && Arrays.equals(mSeq, other.mSeq);
     }
+
+    @Override
+    public int hashCode() {
+      return mSize + Arrays.hashCode(mSeq);
+    }
   }
 
   private int mN = 0;

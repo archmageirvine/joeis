@@ -83,6 +83,11 @@ public class A060655 extends Sequence1 {
       final RectangleSet other = (RectangleSet) obj;
       return Arrays.equals(mX, other.mX) && Arrays.equals(mY, other.mY);
     }
+
+    @Override
+    public int hashCode() {
+      return Arrays.hashCode(mX) + Arrays.hashCode(mY);
+    }
   }
 
   private int mN = 0;

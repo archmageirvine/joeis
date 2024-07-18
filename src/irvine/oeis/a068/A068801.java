@@ -35,6 +35,11 @@ public class A068801 extends Sequence1 {
       final State other = (State) obj;
       return mN.equals(other.mN) && mA.equals(other.mA) && mB.equals(other.mB);
     }
+
+    @Override
+    public int hashCode() {
+      return mN.hashCode() + mA.hashCode() + mB.hashCode();
+    }
   }
 
   private final TreeSet<State> mSet = new TreeSet<>();

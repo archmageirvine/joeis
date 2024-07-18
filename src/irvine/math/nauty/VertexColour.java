@@ -713,11 +713,7 @@ public class VertexColour {
     }
     t = System.currentTimeMillis() - t;
     if (!flags.isSet(GenerateGraphsCli.QUIET_FLAG)) {
-      System.err.println(">Z " + inGraphs +
-        " graphs read from stdin; " +
-        totalCount +
-        " coloured graphs generated" +
-        String.format("; %.2f sec", t / 1000));
+      System.err.println(">Z " + inGraphs + " graphs read from stdin; " + totalCount + " coloured graphs generated" + String.format("; %.2f sec", t / 1000));
     }
   }
 }

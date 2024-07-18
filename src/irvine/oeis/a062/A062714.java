@@ -66,6 +66,15 @@ public class A062714 extends Sequence1 {
       }
       return Arrays.compare(mSeq, state.mSeq);
     }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (!(obj instanceof State)) {
+        return false;
+      }
+      final State other = (State) obj;
+      return mSize == other.mSize && Arrays.equals(mSeq, other.mSeq);
+    }
   }
 
   private int mN = 0;

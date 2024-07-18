@@ -1,7 +1,5 @@
 package irvine.oeis.a064;
 
-import java.util.HashSet;
-
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -12,7 +10,6 @@ import irvine.oeis.Sequence0;
  */
 public class A064130 extends Sequence0 {
 
-  private final HashSet<Z> mSeen = new HashSet<>();
   private final long mBase;
   private Z mT = null;
 

@@ -49,7 +49,7 @@ public class A079000 extends AbstractSequence {
       mMembers.add(mC);
       return mC;
     }
-    final boolean ncond = mCondition.apply(nz);
+    //final boolean ncond = mCondition.apply(nz);
     final boolean ndef = mMembers.contains(nz);
     while (true) {
       mC = mC.add(1);

@@ -24,6 +24,11 @@
         <BugCode name="SnVI,PZLA,BC,SPP,CNT"/>
      </Match>
 
+     <!-- FCBL common pattern where we use fields in inner class in outer class -->
+     <Match classregex=".*\$.*">
+       <BugCode pattern="FCBL_FIELD_COULD_BE_LOCAL"/>
+     </Match>
+
      <!-- fb-contrib classes we don't want -->
      <Match classregex=".*">
         <BugCode name="ACEM,BL,CBX,CC,CFS,CLI,DMC,DSOC,EXS,FCCD,FPL,IMC,ITC,ITU,JVR,MDM,MOM,MRC,NOS,OCP,OPM,PCOA,PIS,PL,PMB,PRMC,PSC,S508C,SCII,SEC,SLS,UMTP,CNC"/>
@@ -70,7 +75,7 @@
        <BugCode name="FE"/>
      </Match>
      <Match classregex="irvine.math.r.Gamma">
-       <BugCode name="FE"/>
+       <BugCode name="FE,FL"/>
      </Match>
      <Match classregex="irvine.math.r.GammaTest">
        <BugCode name="FE"/>

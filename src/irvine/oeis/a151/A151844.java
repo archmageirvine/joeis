@@ -44,7 +44,6 @@ public class A151844 extends Sequence0 {
   public Z next() {
     ++mISeq;
     if (mISeq == mHi - 1) {
-      final int width = mHi - mLo;
       mLo = mHi / 2 * 3;
       mHi *= 2;
       mISeq = mLo - 1;

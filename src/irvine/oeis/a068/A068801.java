@@ -26,6 +26,15 @@ public class A068801 extends Sequence1 {
     public int compareTo(final State state) {
       return mN.compareTo(state.mN);
     }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (!(obj instanceof State)) {
+        return false;
+      }
+      final State other = (State) obj;
+      return mN.equals(other.mN) && mA.equals(other.mA) && mB.equals(other.mB);
+    }
   }
 
   private final TreeSet<State> mSet = new TreeSet<>();

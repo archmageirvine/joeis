@@ -98,7 +98,7 @@ public class VertexColour {
 
   /* Try one solution, accept if maximal. */
   /* Return value is level to return to. */
-  private int trythisone(final GroupRecord group, final Graph g, final boolean digraph, final int n) {
+  private int trythisone(final GroupRecord group, final Graph g, final int n) {
     final boolean accept;
     mNewGroupSize = 1;
     if (group == null || Z.ONE.equals(mGroupSize)) {
@@ -129,7 +129,7 @@ public class VertexColour {
   private int scan(final int level, final Graph g, final boolean digraph, final int[] prev, final int mincols, final int maxcols, final int sofar, final GroupRecord group) {
     final int n = g.order();
     if (level == n) {
-      return trythisone(group, g, digraph, n);
+      return trythisone(group, g, n);
     }
 
     final int left = n - level - 1;
@@ -713,13 +713,11 @@ public class VertexColour {
     }
     t = System.currentTimeMillis() - t;
     if (!flags.isSet(GenerateGraphsCli.QUIET_FLAG)) {
-      final StringBuilder sb = new StringBuilder(">Z ");
-      sb.append(inGraphs)
-        .append(" graphs read from stdin; ")
-        .append(totalCount)
-        .append(" coloured graphs generated")
-        .append(String.format("; %.2f sec", t / 1000));
-      System.err.println(sb);
+      System.err.println(">Z " + inGraphs +
+        " graphs read from stdin; " +
+        totalCount +
+        " coloured graphs generated" +
+        String.format("; %.2f sec", t / 1000));
     }
   }
 }

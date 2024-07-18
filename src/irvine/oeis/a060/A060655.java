@@ -74,6 +74,15 @@ public class A060655 extends Sequence1 {
       }
       return Arrays.compare(mY, rectangleSet.mY);
     }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (!(obj instanceof RectangleSet)) {
+        return false;
+      }
+      final RectangleSet other = (RectangleSet) obj;
+      return Arrays.equals(mX, other.mX) && Arrays.equals(mY, other.mY);
+    }
   }
 
   private int mN = 0;

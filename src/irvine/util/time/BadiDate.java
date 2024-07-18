@@ -44,7 +44,7 @@ public final class BadiDate {
    * @return the Badi date
    * @throws IllegalArgumentException arguments are out of bound
    */
-  public static BadiDate createFromBadiDate(final int badiYear, final int badiMonth, final int badiDay) throws IllegalArgumentException {
+  public static BadiDate createFromBadiDate(final int badiYear, final int badiMonth, final int badiDay) {
     checkBadiDayAndMonthForValidity(badiDay, badiMonth);
     checkBadiYearForValidity(badiYear);
     final int yearIndex = badiYear - 171;
@@ -61,7 +61,7 @@ public final class BadiDate {
     return (Calendar) mGregDate.clone();
   }
 
-  private static void checkBadiDayAndMonthForValidity(final int badiDay, final int badiMonth) throws IllegalArgumentException {
+  private static void checkBadiDayAndMonthForValidity(final int badiDay, final int badiMonth) {
     if (badiDay < 1) {
       throw new IllegalArgumentException(
         "Badi day has to be greater than or equal to 1.");
@@ -80,7 +80,7 @@ public final class BadiDate {
     }
   }
 
-  private static void checkBadiYearForValidity(final int badiYear) throws IllegalArgumentException {
+  private static void checkBadiYearForValidity(final int badiYear) {
     if (badiYear < 1) {
       throw new IllegalArgumentException(
         "Badi year has to be greater than or equal to 1.");

@@ -1,7 +1,6 @@
 package irvine.math.group;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
@@ -36,8 +35,8 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
     mZero = mElementRing.zero();
     mOne = mElementRing.one();
     mZeroPolynomial = new Polynomial<>(mIndeterminate, mZero, mOne);
-    mOnePolynomial = create(Collections.singletonList(mOne));
-    mXPolynomial = create(Arrays.asList(mZero, mOne));
+    mOnePolynomial = create(List.of(mOne));
+    mXPolynomial = create(List.of(mZero, mOne));
   }
 
   /**

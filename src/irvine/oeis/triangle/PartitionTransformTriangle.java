@@ -14,10 +14,10 @@ public class PartitionTransformTriangle extends BaseTriangle {
   private final boolean mInverse; // whether to compute the inversion
   private final boolean mPrefix0; // whether to add a column [1,0,0,0...] at the left
   private final MemorySequence mSeq; // underlying sequence (= first column)
-  private int mSkip = 0; // number of terms in underlying sequence to be skipped
-  private final int mN = -1; // current index
-  private int mTri = -29; // next triangular number - for prefix0, not active with this setting
-  private final int mTrix = 0; // index of next triangular number
+  private int mSkip; // number of terms in underlying sequence to be skipped
+//  private final int mN = -1; // current index
+  private int mTri; // next triangular number - for prefix0, not active with this setting
+//  private final int mTrix = 0; // index of next triangular number
 
   /**
    * Constructor with sequence only.
@@ -161,8 +161,7 @@ public class PartitionTransformTriangle extends BaseTriangle {
     if (mInverse && mRow <= 0) {
       return Z.ONE;
     } else {
-      final Z result = mLastRow[mCol];
-      return result;
+      return mLastRow[mCol];
     }
   }
 }

@@ -16,7 +16,6 @@ public class A339825 extends Sequence0 {
   @Override
   public Z next() {
     mSeq.next();
-    final Z result = mSeq.next();
-    return result;
+    return mSeq.next();
   }
 }

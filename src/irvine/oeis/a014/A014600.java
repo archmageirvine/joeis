@@ -2,18 +2,13 @@ package irvine.oeis.a014;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000003;
+import irvine.oeis.Sequence0;
 
 /**
  * A014600 Class numbers h(D) of imaginary quadratic orders with discriminant D == 0 or 1 mod 4, D&lt;0.
  * @author Sean A. Irvine
  */
-public class A014600 extends A000003 {
-
-  /** Construct the sequence. */
-  public A014600() {
-    super(0);
-  }
+public class A014600 extends Sequence0 {
 
   // Interleave A000003 and A014599
 

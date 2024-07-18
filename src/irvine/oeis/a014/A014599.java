@@ -1,7 +1,5 @@
 package irvine.oeis.a014;
 
-import irvine.math.LongUtils;
-import irvine.math.z.Z;
 import irvine.oeis.a000.A000003;
 
 /**
@@ -10,11 +8,8 @@ import irvine.oeis.a000.A000003;
  */
 public class A014599 extends A000003 {
 
-  private long mD = 1;
-
-  @Override
-  public Z next() {
-    mD -= 4;
-    return Z.valueOf(LongUtils.classNumber(mD));
+  /** Construct the sequence. */
+  public A014599() {
+    super(1, 1);
   }
 }

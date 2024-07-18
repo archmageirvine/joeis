@@ -10,20 +10,21 @@ import irvine.oeis.AbstractSequence;
  */
 public class A000003 extends AbstractSequence {
 
+  private long mD;
+
   /**
    * Constructor with offset.
    * @param offset first index
    */
-  protected A000003(final int offset) {
+  protected A000003(final int offset, final int d) {
     super(offset);
+    mD = d;
   }
 
   /** Construct the sequence. */
   public A000003() {
-    super(1);
+    this(1, 0);
   }
-
-  private long mD = 0;
 
   // Cf. Cohen 5.3.5 and implementation in LongUtils.
   // This one has primitiveness check

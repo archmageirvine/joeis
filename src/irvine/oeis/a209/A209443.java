@@ -15,7 +15,6 @@ public class A209443 extends AbstractSequence {
   private final A000129 mPell = new A000129();
   private final Sequence mSeq;
   private int mN;
-  private final int mOfs;
 
   /** Construct the sequence. */
   public A209443() {
@@ -34,7 +33,6 @@ public class A209443 extends AbstractSequence {
       mPell.next();
     }
     mSeq = seq;
-    mOfs = offset;
   }
 
   @Override

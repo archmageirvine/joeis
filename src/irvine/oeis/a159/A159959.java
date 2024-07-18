@@ -16,7 +16,6 @@ import irvine.oeis.a004.A004601;
  */
 public class A159959 extends AbstractSequence {
 
-  private final int mN;
   private final Sequence mSeq;
   private final Z mK;
   private final HashSet<Z> mSet;
@@ -34,7 +33,6 @@ public class A159959 extends AbstractSequence {
    */
   public A159959(final int offset, final int k, final Sequence seq) {
     super(offset);
-    mN = offset - 1;
     mSeq = seq;
     mK = Z.valueOf(k);
     mSet = new HashSet<>(64);

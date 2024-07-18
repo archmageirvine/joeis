@@ -17,8 +17,6 @@ public class A099297 extends AbstractSequence {
   private long mCount;
   private long mPow;
   private final long mBase;
-  private long mStart;
-
 
   /** Construct the sequence. */
   public A099297() {

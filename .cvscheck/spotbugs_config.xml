@@ -6,6 +6,7 @@
      <Match classregex="org.*"/>
      <Match classregex="de.*"/>
      <Match classregex="io.*"/>
+     <Match classregex="gebhardt.*"/>
      <Match classregex="jmason.*"/>
      <Match classregex="nonapi.*"/>
      <Match classregex="chesspresso.*"/>
@@ -21,13 +22,9 @@
      <!-- CNT complains about values code to pi -->
      <!-- CT don't complain about exceptions in constructors -->
      <Match classregex=".*">
-        <BugCode name="SnVI,PZLA,BC,SPP,CNT,CT"/>
+        <BugCode name="SnVI,PZLA,BC,SPP,CNT,CT,EI,EI2,ACEM,BL,CBX,CC,CFS,CLI,DMC,DSOC,EXS,FCCD,FPL,IMC,ITC,ITU,JVR,MDM,MOM,MRC,NOS,OCP,OPM,PCOA,PIS,PL,PMB,PRMC,PSC,S508C,SCII,SEC,SLS,UMTP,CNC"/>
      </Match>
 
-     <!-- fb-contrib classes we don't want -->
-     <Match classregex=".*">
-        <BugCode name="ACEM,BL,CBX,CC,CFS,CLI,DMC,DSOC,EXS,FCCD,FPL,IMC,ITC,ITU,JVR,MDM,MOM,MRC,NOS,OCP,OPM,PCOA,PIS,PL,PMB,PRMC,PSC,S508C,SCII,SEC,SLS,UMTP,CNC"/>
-     </Match>
      <Match classregex=".*">
         <Bug pattern="IOI_USE_OF_FILE_STREAM_CONSTRUCTORS,MDM_THREAD_YIELD,STT_STRING_PARSING_A_FIELD,STT_TOSTRING_STORED_IN_FIELD,STT_TOSTRING_MAP_KEYING"/>
      </Match>
@@ -150,23 +147,6 @@
        <BugCode name="EI2"/>
      </Match>
 
-     <!-- Special return -->
-     <Match classregex="irvine.math.elliptic.EllipticCurveMod">
-       <BugCode name="EI"/>
-     </Match>
-     <Match classregex="irvine.util.Permutation">
-       <BugCode name="EI"/>
-     </Match>
-     <Match classregex="irvine.math.lattice.Animal">
-       <BugCode name="EI"/>
-     </Match>
-     <Match classregex="irvine.math.factorial.Factorial">
-       <BugCode name="EI"/>
-     </Match>
-     <Match classregex="irvine.oeis.HolonomicRecurrence">
-       <BugCode name="EI"/>
-     </Match>
-
      <!-- Don't care about serialization in the OEIS -->
      <Match classregex="irvine.oeis.*">
        <BugCode name="Se"/>
@@ -252,6 +232,9 @@
      <Match classregex="irvine.oeis.a036.A036382">
        <BugCode name="SEO"/>
      </Match>
+     <Match classregex="irvine.oeis.a036.A036688">
+       <BugCode name="SEO"/>
+     </Match>
      <Match classregex="irvine.oeis.a045.A045913">
        <BugCode name="SEO"/>
      </Match>
@@ -321,6 +304,9 @@
      </Match>
      <Match classregex="irvine.oeis.*">
        <BugCode name="PCAIL"/>
+     </Match>
+     <Match classregex="irvine.math.group.Singleton">
+       <BugCode name="SING"/>
      </Match>
 
      <!-- We have some iterators over infinite sets. -->

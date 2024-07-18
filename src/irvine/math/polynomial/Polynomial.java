@@ -249,7 +249,7 @@ public class Polynomial<E> extends ArrayList<E> {
     for (int k = Math.min(maxDegree, degree() * power); k >= 0; --k) {
       c.add(mZero);
     }
-    for (int k = 0, j = 0; k <= degree() && j <= maxDegree; ++k, j += power) {
+    for (int k = 0, j = 0; j <= maxDegree && k <= degree(); ++k, j += power) {
       c.set(j, coeff(k));
     }
     return c;

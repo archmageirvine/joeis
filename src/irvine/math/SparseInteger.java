@@ -52,7 +52,7 @@ public final class SparseInteger implements Comparable<SparseInteger> {
 
   // This type is an immutable value type.
   //
-  // An value of this type stores its numeric value as a sorted array of positions of 1's in its binary form,
+  // A value of this type stores its numeric value as a sorted array of positions of 1's in its binary form,
   // where each position is stored, recursively, as <see cref="SparseInteger"/>, except that the numeric value
   // is stored verbatim in the field <see cref="value"/> of type <see cref="long"/> if it fits into that type
   // (in the latter case property <see cref="isSmall"/> returns <c>true</c>).
@@ -60,7 +60,7 @@ public final class SparseInteger implements Comparable<SparseInteger> {
   // The numeric value of this value if it fits into long type, otherwise 0.
   private final long mValue;
 
-  // An sorted array of positions of 1's in the binary form of this number,
+  // A sorted array of positions of 1's in the binary form of this number,
   // stored from lowest (least significant) to highest (most significant).
   //
   // If this field is null, then the field value is used
@@ -320,7 +320,7 @@ public final class SparseInteger implements Comparable<SparseInteger> {
    * @return <code>2^this</code>
    */
   public SparseInteger exp2() {
-    return isSmall() && mValue < 63
+    return mValue < 63 && isSmall()
       ? create(1L << mValue)
       : create(this);
   }
@@ -349,7 +349,7 @@ public final class SparseInteger implements Comparable<SparseInteger> {
       return this;
     }
 
-    if (isSmall() && power.isSmall() && power.mValue < 62) {
+    if (power.mValue < 62 && isSmall() && power.isSmall()) {
       final long result = mValue << power.mValue;
       if ((result >> power.mValue) == mValue) { // Use >>> if trying to handle 64 bits here!
         // if no overflow

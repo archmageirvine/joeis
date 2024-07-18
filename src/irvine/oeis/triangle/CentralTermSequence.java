@@ -16,7 +16,6 @@ public class CentralTermSequence extends AbstractSequence {
 
   private final AbstractSequence mSeq;
   private final DirectArray mTriangle; // != null iff mSeq instanceof DirectArray
-  private final int mTriOff; // offset of mTriangle
   private int mRow; // current row number
   private int mTrix; // current triangular number
   private int mN; // current index of target sequence (always starting at 0)
@@ -32,10 +31,9 @@ public class CentralTermSequence extends AbstractSequence {
     mRow = 0;
     mTrix = 0;
     mN = -1;
-    mTriOff = seq.getOffset() - 1;
     if (seq instanceof DirectArray) {
       mTriangle = (DirectArray) seq;
-      mRow = mTriOff;
+      mRow = seq.getOffset() - 1;
     } else {
       mTriangle = null;
     }

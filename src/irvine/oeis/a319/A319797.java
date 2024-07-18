@@ -22,23 +22,10 @@ public class A319797 extends Triangle {
     hasRAM(true);
   }
 
-  /* Maple:
-    h:= proc(n) option remember; `if`(n<1, 0,
-          `if`(issqr(8*n+1), n, h(n-1)))
-        end:
-    b:= proc(n, i) option remember; `if`(n=0 or i=1, x^n,
-          b(n, h(i-1))+expand(x*b(n-i, h(min(n-i, i)))))
-        end:
-    T:= n-> (p-> seq(coeff(p, x, i), i=0..n))(b(n, h(n))):
-    seq(T(n), n=0..20);
-  */
   private final MemoryFunction1<Integer> mH = new MemoryFunction1<>() {
     @Override
     protected Integer compute(final int n) {
-      if (n < 1) {
-        return 0;
-      }
-      return Z.valueOf(8L * n + 1).isSquare() ? n : get(n - 1);
+      return n < 1 ? 0 : Z.valueOf(8L * n + 1).isSquare() ? n : get(n - 1);
     }
   };
 
@@ -48,7 +35,7 @@ public class A319797 extends Triangle {
       if (n == 0 || i == 1) {
         return RING.monomial(Z.ONE, n);
       }
-      return RING.add(get(n, mH.get(i - 1)), RING.shift(get(n - i, mH.get(i < n - i ? i : n - i)), 1));
+      return RING.add(get(n, mH.get(i - 1)), RING.shift(get(n - i, mH.get(Math.min(i, n - i))), 1));
     }
   };
 

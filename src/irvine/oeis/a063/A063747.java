@@ -3,10 +3,7 @@ package irvine.oeis.a063;
 import java.util.ArrayList;
 
 import irvine.math.cr.CR;
-import irvine.math.cr.ComputableReals;
 import irvine.math.cr.Zeta;
-import irvine.math.group.PolynomialRingField;
-import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -18,14 +15,9 @@ public class A063747 extends Sequence0 {
 
   // See https://dlmf.nist.gov/5.7 for expansion of 1/Gamma(z)
 
-  private static final PolynomialRingField<CR> RING = new PolynomialRingField<>(ComputableReals.SINGLETON);
   private int mN = -1;
   private long mSign = -1;
   private final ArrayList<CR> mC = new ArrayList<>();
-  private final Polynomial<CR> mGamma = RING.empty();
-  {
-    mGamma.add(CR.ZERO);
-  }
 
   @Override
   public Z next() {

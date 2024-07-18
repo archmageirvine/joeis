@@ -14,8 +14,6 @@ import irvine.oeis.LambdaSequence;
  */
 public class A217899 extends LambdaSequence {
 
-  private final int mN = 0;
-
   /** Construct the sequence. */
   public A217899() {
     // seq((1/n!) * add((-1)^(n-k) * binomial(n,k) * (k^2)^(n-1),k=1..n),n=1..10);

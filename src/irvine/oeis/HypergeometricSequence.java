@@ -272,20 +272,13 @@ public class HypergeometricSequence extends AbstractSequence implements DirectSe
       result.append(i == 0 ? '[' : ',');
       for (int j = 0; j < poly.length; ++j) {
         result.append(j == 0 ? '[' : ',');
-        result.append(poly[j].toString());
+        result.append(poly[j]);
       } // for j
       result.append(']');
     } // for i
     result.append(']');
     return result.toString();
   }
-
-/*
-  public Q nextQ() {
-    ++mN;
-    return mInitNo > mN - mOffset ? new Q(mInits[mN - mOffset]) : mLambdaQ.apply(mN, getTerm(mN));
-  }
-*/
 
   @Override
   public Z a(final Z n) {

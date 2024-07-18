@@ -177,7 +177,7 @@ public class EtaProductSequence extends AbstractSequence {
       if (j > 0) {
         result.append(',');
       }
-      result.append(mPreTerms[j].toString());
+      result.append(mPreTerms[j]);
     }
     return result.toString();
   }
@@ -252,17 +252,17 @@ public class EtaProductSequence extends AbstractSequence {
     System.out.print("period of length " + period.length + ": [");
     for (int i = 0; i < plen; ++i) {
       if (i > 0) {
-        System.out.print(",");
+        System.out.print(',');
       }
       System.out.print(period[i]);
     }
     if (plen < period.length) {
       System.out.print(" ...");
     }
-    System.out.println("]");
+    System.out.println(']');
     for (int iterm = 0; iterm < noTerms; ++iterm) {
       if (iterm > 0) {
-        System.out.print(",");
+        System.out.print(',');
       }
       System.out.print(eps.next().multiply(factor));
     } // for iterm

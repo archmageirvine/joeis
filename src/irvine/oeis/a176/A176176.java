@@ -10,15 +10,14 @@ import irvine.oeis.Sequence1;
  */
 public class A176176 extends Sequence1 {
 
-  private Z mKm1 = Z.NEG_ONE;
   private Z mK = Z.ZERO;
 
   @Override
   public Z next() {
     while (true) {
-      mKm1 = mK;
+      final Z km1 = mK;
       mK = mK.add(1);
-      if (Z.TWO.modPow(mKm1, mK).equals(Z.FOUR.modPow(mKm1, mK))) {
+      if (Z.TWO.modPow(km1, mK).equals(Z.FOUR.modPow(km1, mK))) {
         return mK;
       }
     }

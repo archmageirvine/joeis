@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071386.
+ * A071409 Determinant of the n X n matrix m(i,j)=i^j+j^i.
  * @author Sean A. Irvine
  */
 public class A071409 extends Sequence1 {

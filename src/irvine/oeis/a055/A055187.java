@@ -17,7 +17,7 @@ public class A055187 extends AbstractSequence {
   // http://faculty.evansville.edu/ck6/integer/unsolved.html, Problem 4
   // @(#) Id
   // 2022-01-13: debug=98 -> seq4 format
-  // 2018-04-20, Georg Fischer (previosu version in cumulcount2.pl)
+  // 2018-04-20, Georg Fischer (previous version in cumulcount2.pl)
   //------------------------------------------------------
   // Comment from A217760:
   //   Write 0 followed by segments defined inductively as follows: each segment
@@ -71,7 +71,6 @@ public class A055187 extends AbstractSequence {
   private final String mMethod;
   private final int mParm;
   private final int mRow; // count in both rows,    output both; default
-  private final int mStart;
   private final int mWith0;
   private int mSegNo;
   private final ArrayList<Integer> mSegment;
@@ -96,8 +95,7 @@ public class A055187 extends AbstractSequence {
                  final int appear, final int row, final int first, final int with0, final int parm) {
     super(offset);
     mMethod = method;
-    mStart = start;
-    mCurMax = mStart - 1;
+    mCurMax = start - 1;
     mAppear = appear;
     mRow = row;
     mFirst = first;
@@ -111,19 +109,19 @@ public class A055187 extends AbstractSequence {
     mSegment = new ArrayList<>();
     mSeqLen = new ArrayList<>();
     // first segment
-    for (int noun = 0; noun < mStart; ++noun) { // fill before mStart
+    for (int noun = 0; noun < start; ++noun) { // fill before mStart
       mSegment.add(0);
       mSegment.add(noun);
     }
     mSegment.add(1);
-    mSegment.add(mStart);
+    mSegment.add(start);
 
     // first b-file entry
     mK = offset;
     mK2 = mK; // copy of k, running as if it were rule A
     if (mMethod.matches("[ABIJKP]")) {
       if ((mRow & 1) != 0) {
-        emit(mStart, -1);
+        emit(start, -1);
       }
     } else if (mMethod.matches("[D]")) {
       // store(mStart); why ??
@@ -135,7 +133,7 @@ public class A055187 extends AbstractSequence {
         store(1);
       }
     }
-    mFirstApp.add(mStart);
+    mFirstApp.add(start);
     mSegNo++;
   }
 

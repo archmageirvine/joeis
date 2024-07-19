@@ -26,7 +26,7 @@ public class A064669 extends Sequence1 implements Conjectural {
       }
       if (!mSeen.isSet(mN)) {
         int m = (int) mN;
-        while (!mSeen.isSet(m) && m < LIMIT) {
+        while (m < LIMIT && !mSeen.isSet(m)) {
           mSeen.set(m);
           m = mA.a(m - 1).intValueExact();
         }

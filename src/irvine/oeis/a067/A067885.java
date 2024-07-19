@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067885 Product of 6 distinct primes.
+ * A067885 Products of exactly 6 distinct primes.
  * @author Sean A. Irvine
  */
 public class A067885 extends Sequence1 {

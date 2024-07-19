@@ -5,7 +5,7 @@ import irvine.oeis.a181.A181155;
 import irvine.oeis.triangle.DispersionArray;
 
 /**
- * A248513 Rectangular array by antidiagonals: the dispersion of A181155 (&quot;odious numbers&quot;).
+ * A248513 Rectangular array by antidiagonals: the dispersion of A181155 ("odious numbers").
  * @author Georg Fischer
  */
 public class A248513 extends DispersionArray {

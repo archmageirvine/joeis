@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A120580 Hankel transform of sum{k=0..n, C(2k,k)}.
+ * A120580 Hankel transform of Sum_{k=0..n} C(2k,k).
  * @author Sean A. Irvine
  */
 public class A120580 extends LinearRecurrence {

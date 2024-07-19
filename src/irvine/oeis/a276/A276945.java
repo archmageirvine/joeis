@@ -4,7 +4,7 @@ package irvine.oeis.a276;
 import irvine.oeis.triangle.DispersionArray;
 
 /**
- * A276945 Square array A(row,col): A(row, 1) = A276155(row), and for col &gt; 1, A(row,col) = A276154(A(row,col-1)); Dispersion of primorial base left shift A276154.
+ * A276945 Square array A(row,col): A(row,1) = A276155(row), and for col &gt; 1, A(row,col) = A276154(A(row,col-1)); Dispersion of primorial base left shift A276154.
  * @author Georg Fischer
  */
 public class A276945 extends DispersionArray {

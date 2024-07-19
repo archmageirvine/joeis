@@ -12,11 +12,8 @@ import irvine.oeis.LambdaSequence;
  */
 public class A325782 extends LambdaSequence {
 
-  private final int mN = 0;
-
   /** Construct the sequence. */
   public A325782() {
-    // Table[Times@@Prime[2^Range[0, n-2]], {n, 1, 10}]
     super(1, n -> Integers.SINGLETON.product(0, n - 2, i -> Functions.PRIME.z(Z.ONE.shiftLeft(i))));
   }
 }

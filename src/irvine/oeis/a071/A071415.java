@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A071386.
+ * A071415 Maximal m such that all numbers in [0,m] are expressible as a*b + c with a + c &lt;= n, b &lt;= n and a,b,c positive integers.
  * @author Sean A. Irvine
  */
 public class A071415 extends Sequence1 {

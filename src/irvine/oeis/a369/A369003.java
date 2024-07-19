@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A369003 Numbers k for which k&apos; / gcd(k,k&apos;) is odd, where k&apos; stands for the arithmetic derivative of k, A003415.
+ * A369003 Numbers k for which k' / gcd(k,k') is odd, where k' stands for the arithmetic derivative of k, A003415.
  * @author Georg Fischer
  */
 public class A369003 extends FilterNumberSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A369005 Numbers k for which k&apos; / gcd(k,k&apos;) is a multiple of four, where k&apos; stands for the arithmetic derivative of k, A003415(k).
+ * A369005 Numbers k for which k' / gcd(k,k') is a multiple of four, where k' stands for the arithmetic derivative of k, A003415(k).
  * @author Georg Fischer
  */
 public class A369005 extends FilterNumberSequence {

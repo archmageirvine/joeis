@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071386.
+ * A071406 a(n) is the smallest multiplier of n! such that -1+a(n)*n! and 1+a(n)*n! are both primes.
  * @author Sean A. Irvine
  */
 public class A071406 extends Sequence1 {

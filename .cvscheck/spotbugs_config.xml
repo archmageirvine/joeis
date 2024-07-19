@@ -136,17 +136,6 @@
        <BugCode name="UCF"/>
      </Match>
 
-     <!-- This is unsafe but an advanced feature -->
-     <Match classregex="irvine.math.z.Z">
-       <BugCode name="EI2"/>
-     </Match>
-     <Match classregex="irvine.math.nauty.Nauty">
-       <BugCode name="EI2"/>
-     </Match>
-     <Match classregex="irvine.math.matrix.SmallDenseMatrix">
-       <BugCode name="EI2"/>
-     </Match>
-
      <!-- Don't care about serialization in the OEIS -->
      <Match classregex="irvine.oeis.*">
        <BugCode name="Se"/>
@@ -236,6 +225,12 @@
        <BugCode name="SEO"/>
      </Match>
      <Match classregex="irvine.oeis.a045.A045913">
+       <BugCode name="SEO"/>
+     </Match>
+     <Match classregex="irvine.oeis.a053.A053432">
+       <BugCode name="SEO"/>
+     </Match>
+     <Match classregex="irvine.oeis.a068.A068569">
        <BugCode name="SEO"/>
      </Match>
      <!-- False positives, these cannot be reordered. -->

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A071386.
+ * A071405 (1/2)*(Sum_{k=0..p} C(p,k)*C(p+k,k)) - 2^p -1 )/p^2 where p runs through the primes.
  * @author Sean A. Irvine
  */
 public class A071405 extends A000040 {

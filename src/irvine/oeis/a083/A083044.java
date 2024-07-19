@@ -5,7 +5,7 @@ import irvine.oeis.a007.A007494;
 import irvine.oeis.triangle.DispersionArray;
 
 /**
- * A083044 Square table read by antidiagonals forms a permutation of the natural numbers: T(n, 0) = floor(n*x/(x-1))+1, T(n,k+1) = ceiling(x*T(n,k)), where x=3/2, n &gt;= 0, k &gt;= 0.
+ * A083044 Square table read by antidiagonals forms a permutation of the natural numbers: T(n,0) = floor(n*x/(x-1))+1, T(n,k+1) = ceiling(x*T(n,k)), where x=3/2, n &gt;= 0, k &gt;= 0.
  * @author Georg Fischer
  */
 public class A083044 extends DispersionArray {

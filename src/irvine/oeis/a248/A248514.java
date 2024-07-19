@@ -4,7 +4,7 @@ package irvine.oeis.a248;
 import irvine.oeis.triangle.RowIndexSequence;
 
 /**
- * A248514 Fractal sequence of the dispersion of the &quot;odious numbers&quot;.
+ * A248514 Fractal sequence of the dispersion of the "odious numbers".
  * @author Georg Fischer
  */
 public class A248514 extends RowIndexSequence {

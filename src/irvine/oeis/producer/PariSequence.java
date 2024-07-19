@@ -21,12 +21,9 @@ public class PariSequence extends AbstractSequence implements Closeable {
   //  - it needs to check the error stream
   //  - it needs to check other error conditions
 
-  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose", "false"));
-  private final String mTimeout = System.getProperty("oeis.timeout", "3600000"); // 1000 hours = almost never
   private final Process mProc;
   private final PrintWriter mOut;
   private final BufferedReader mIn;
-  private final Header mHeader;
 
   /**
    * Construct a sequence backed by a PARI program.
@@ -37,30 +34,33 @@ public class PariSequence extends AbstractSequence implements Closeable {
     final ProcessBuilder pb = new ProcessBuilder(PariProducer.PARI_COMMAND, "--fast", "--quiet");
     try {
       mProc = pb.start();
-      new DrainStreamThread(mProc.getErrorStream(), mVerbose);
+      final boolean verbose = "true".equals(System.getProperty("oeis.verbose", "false"));
+      new DrainStreamThread(mProc.getErrorStream(), verbose);
       mOut = new PrintWriter(mProc.getOutputStream());
       mIn = new BufferedReader(new InputStreamReader(mProc.getInputStream()));
     } catch (final IOException e) {
       throw new RuntimeException(e);
     }
     //System.out.println("Sending: " + pariProgram);
-    mHeader = new Header(pariProgram);
-    final int offset = mHeader.getOffset();
+    final Header header = new Header(pariProgram);
+    final int offset = header.getOffset();
     setOffset(offset);
-    final String programType = mHeader.getType();
+    final String programType = header.getType();
     mOut.println(pariProgram); // Send the program to PARI
+    // 1000 hours = almost never
+    final String timeout = System.getProperty("oeis.timeout", "3600000");
     switch (programType) {
       case "an0":
-        mOut.println("alarm(" + mTimeout + ",for(n=0,+oo,print(a(n))));"); // special for P.H.
+        mOut.println("alarm(" + timeout + ",for(n=0,+oo,print(a(n))));"); // special for P.H.
         break;
       case "an":
-        mOut.println("alarm(" + mTimeout + ",for(n=" + offset + ",+oo,print(a(n))));");
+        mOut.println("alarm(" + timeout + ",for(n=" + offset + ",+oo,print(a(n))));");
         break;
       case "isok0":
-        mOut.println("alarm(" + mTimeout + ",for(n=0,+oo,if(isok(n),print(n))));");
+        mOut.println("alarm(" + timeout + ",for(n=0,+oo,if(isok(n),print(n))));");
         break;
       case "isok":
-        mOut.println("alarm(" + mTimeout + ",for(n=" + offset + ",+oo,if(isok(n),print(n))));");
+        mOut.println("alarm(" + timeout + ",for(n=" + offset + ",+oo,if(isok(n),print(n))));");
         break;
       default:
         throw new RuntimeException("Unknown type of PARI program " + programType + "\n" + pariProgram);

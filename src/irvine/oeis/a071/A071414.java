@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071386.
+ * A071414 Number of times 4n+r and 2n+r are both prime, with 0 &lt; r &lt; 2n.
  * @author Sean A. Irvine
  */
 public class A071414 extends Sequence1 {

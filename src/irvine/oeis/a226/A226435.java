@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A226435 Number of permutations of 1..n with fewer than 2 interior elements having values lying between the values of their neighbors.
+ * A226435 Number of permutations of {1..n} with fewer than 2 interior elements having values lying between the values of their neighbors.
  * lying between the values of their neighbors.
  * E.g.f.: (sec(x) + tan(x)) - (sec(x) + tan(x))^2 + (sec(x) + tan(x))^3
  * @author Georg Fischer

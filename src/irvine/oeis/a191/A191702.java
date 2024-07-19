@@ -5,7 +5,7 @@ import irvine.oeis.a008.A008587;
 import irvine.oeis.triangle.DispersionArray;
 
 /**
- * A191702 Dispersion of A008587 (5, 10, 15, 20, 25, 30,...), by antidiagonals.
+ * A191702 Dispersion of A008587 (5,10,15,20,25,30,...), by antidiagonals.
  * @author Georg Fischer
  */
 public class A191702 extends DispersionArray {

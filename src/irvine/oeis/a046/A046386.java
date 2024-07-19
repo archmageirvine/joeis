@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A046386 Products of four distinct primes.
+ * A046386 Products of exactly four distinct primes.
  * @author Sean A. Irvine
  */
 public class A046386 extends Sequence1 {

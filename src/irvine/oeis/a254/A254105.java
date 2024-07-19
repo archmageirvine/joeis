@@ -5,7 +5,7 @@ import irvine.oeis.a055.A055938;
 import irvine.oeis.triangle.DispersionArray;
 
 /**
- * A254105 Dispersion of A055938; starting from its complementary sequence A005187 as the first column of square array A(row,col), read by antidiagonals A(1, 1), A(1, 2), A(2, 1), A(1, 3), A(2, 2), A(3, 1), ...
+ * A254105 Dispersion of A055938; starting from its complementary sequence A005187 as the first column of square array A(row,col), read by antidiagonals A(1,1), A(1,2), A(2,1), A(1,3), A(2,2), A(3,1), ...
  * @author Georg Fischer
  */
 public class A254105 extends DispersionArray {

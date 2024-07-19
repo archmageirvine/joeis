@@ -13,7 +13,6 @@ public class A137869 extends AbstractSequence {
   private final Fast mPrime = new Fast();
   private long mA;
   private long mB;
-  private long mC;
   private final long mDist; // minimum distance to previous and next prime
 
   /** Construct the sequence. */
@@ -22,7 +21,7 @@ public class A137869 extends AbstractSequence {
   }
 
   /**
-   * Generic constructor with parametes.
+   * Generic constructor with parameters.
    * @param offset first index
    * @param dist (minimum distance to previous and next prime) - 2
    */
@@ -36,15 +35,15 @@ public class A137869 extends AbstractSequence {
   @Override
   public Z next() {
     while (true) {
-      mC = mPrime.nextPrime(mB);
-      if (mB - mA >= mDist && mC - mB >= mDist) {
+      final long c = mPrime.nextPrime(mB);
+      if (mB - mA >= mDist && c - mB >= mDist) {
         final Z result = Z.valueOf(mB);
         mA = mB;
-        mB = mC;
+        mB = c;
         return result;
       }
       mA = mB;
-      mB = mC;
+      mB = c;
     }
   }
 }

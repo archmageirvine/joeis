@@ -20,7 +20,7 @@ public class A070882 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    while (mFirsts.get(mN) == 0 && mM < HEURISTIC * mN) {
+    while (mM < HEURISTIC * mN && mFirsts.get(mN) == 0) {
       ++mM;
       final int v = mA.next().intValueExact();
       if (mFirsts.get(v) == 0) {

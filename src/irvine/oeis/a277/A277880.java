@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001969;
 import irvine.oeis.triangle.DispersionArray;
 
 /**
- * A277880 Dispersion of evil numbers: Square array A(r,c) with A(r, 1) = A000069(r); and for c &gt; 1, A(r,c) = A001969(1+(A(r,c-1))), read by descending antidiagonals as A(1, 1), A(1, 2), A(2, 1), A(1, 3), A(2, 2), A(3, 1), etc.
+ * A277880 Dispersion of evil numbers: Square array A(r,c) with A(r,1) = A000069(r); and for c &gt; 1, A(r,c) = A001969(1+(A(r,c-1))), read by descending antidiagonals as A(1,1), A(1,2), A(2,1), A(1,3), A(2,2), A(3,1), etc.
  * @author Georg Fischer
  */
 public class A277880 extends DispersionArray {

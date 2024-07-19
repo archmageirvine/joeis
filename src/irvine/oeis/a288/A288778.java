@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A288778 Triangle read by rows (1&lt;=k&lt;=n): T(n,k) = (n-k+1)*k! - (k-1)!
+ * A288778 Triangle read by rows (1&lt;=k&lt;=n): T(n,k) = (n-k+1)*k! - (k-1)!.
  * @author Georg Fischer
  */
 public class A288778 extends LambdaTriangle {

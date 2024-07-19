@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071386.
+ * A071410 Determinant of the 2n X 2n matrix m(i,j) = i^j - j^i.
  * @author Sean A. Irvine
  */
 public class A071410 extends Sequence0 {

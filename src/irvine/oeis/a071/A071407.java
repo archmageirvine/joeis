@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A071386.
+ * A071407 Least k such that k*prime(n) + 1 and k*prime(n) - 1 are twin primes.
  * @author Sean A. Irvine
  */
 public class A071407 extends A000040 {

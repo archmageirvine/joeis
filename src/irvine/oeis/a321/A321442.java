@@ -32,12 +32,12 @@ public class A321442 extends Sequence1 {
     while (true) {
       final Set<Z> next = new HashSet<>();
       for (final Z v : live) {
-        if (jacksTurn && !Z.ONE.equals(v) && ((v.isOdd() && v.compareTo(mN) < 0) || isOddPowerOf2(v))) {
+        if (jacksTurn && !Z.ONE.equals(v) && (isOddPowerOf2(v) || (v.isOdd() && v.compareTo(mN) < 0))) {
           return Z.valueOf(c / 2);
         }
         if (v.isEven()) {
           next.add(v.divide2());
-        } else if (!Z.ONE.equals(v) && jacksTurn) {
+        } else if (jacksTurn && !Z.ONE.equals(v)) {
           final Z t = v.multiply(3);
           next.add(t.add(1));
           next.add(t.subtract(1));

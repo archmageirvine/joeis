@@ -21,7 +21,7 @@ public class A068007 extends Sequence0 implements Conjectural {
   @Override
   public Z next() {
     ++mN;
-    while (mFirst.get(mN) == 0 && mM < (mN + 1) * HEURISITIC) {
+    while (mM < (mN + 1) * HEURISITIC && mFirst.get(mN) == 0) {
       ++mM;
       final long t = mA.next().longValueExact();
       if (mFirst.get(t) == 0) {

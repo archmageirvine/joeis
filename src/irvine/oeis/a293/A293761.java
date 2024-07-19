@@ -15,7 +15,6 @@ public class A293761 extends Sequence1 {
   private final Z mD0;
   private final Z mD1;
   private Z mPrev;
-  private final int mState = 0; // of finite automaton
   private final DecimalExpansionSequence mSeq;
 
   /** Construct the sequence. */

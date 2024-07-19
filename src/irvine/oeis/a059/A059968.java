@@ -4,7 +4,7 @@ package irvine.oeis.a059;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A059968 10-ary trees.
+ * A059968 Number of 10-ary trees.
  * 
  * @author Georg Fischer
  */

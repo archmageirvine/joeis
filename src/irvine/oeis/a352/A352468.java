@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A352468 a(0) = 1; a(n) = Sum_{k=1..n} binomial(2*n, 2*k)^3 * a(n-k).
+ * A352468 a(0) = 1; a(n) = Sum_{k=1..n} binomial(2*n,2*k)^3 * a(n-k).
  * @author Georg Fischer
  */
 public class A352468 extends MultiTransformSequence {

@@ -14,7 +14,7 @@ import irvine.util.io.IOUtils;
  */
 public class FactorDbFactorizer extends AbstractFactorizer {
 
-  private static final String ROOT_URL = "http://factordb.com/";
+  private static final String ROOT_URL = "https://factordb.com/";
   private static final String QUERY_URL = ROOT_URL + "index.php?query=";
   private static final String SHOW_URL = ROOT_URL + "index.php?showid=";
   private static final String ID_TAG = "index.php?id=";

@@ -17,13 +17,19 @@ import irvine.oeis.Sequence1;
  */
 public class A071426 extends Sequence1 {
 
+  // This implementation "plays" the octal game caching the Grundy-Sprague values
+  // of each possible game state as it is visited.  This means it gets quite slow
+  // and memory intensive for later value.
+  // Most of these games are known to have a periodic structure (although the
+  // period can be long).
+
   private final int[] mOctalGame;
   private int mN = 0;
 
   protected A071426(final String octalGame) {
     mOctalGame = new int[octalGame.length()];
     assert octalGame.charAt(0) == '.';
-    // skip position 0 which is "."
+    // Skip position 0 which is "."
     for (int k = 1; k < octalGame.length(); ++k) {
       mOctalGame[k] = octalGame.charAt(k) - '0';
       assert mOctalGame[k] <= 7;
@@ -72,7 +78,7 @@ public class A071426 extends Sequence1 {
             if (key.get(k) > take + 1) {
               final int totalHeap = key.get(k) - take;
               // Now split into two heaps in all possible ways
-              for (int split = 1; 2 * split <= totalHeap; ++ split) {
+              for (int split = 1; 2 * split <= totalHeap; ++split) {
                 final List<Integer> t = new ArrayList<>(key.subList(0, k));
                 t.addAll(key.subList(k + 1, key.size()));
                 t.add(split);

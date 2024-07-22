@@ -9,9 +9,9 @@ import irvine.oeis.a000.A000040;
  */
 public class A066542 extends A000040 {
 
-  private long mN = 2;
+  private int mN = 2;
 
-  private boolean is(final long n) {
+  private boolean is(final int n) {
     for (final long d : A066452.antidivisors(n)) {
       if ((d & 1) == 0 && d != 2) {
         return false;

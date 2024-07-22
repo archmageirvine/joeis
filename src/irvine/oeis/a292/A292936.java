@@ -6,7 +6,7 @@ import irvine.oeis.a007.A007814;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A292936 a(n) = the least k &gt;= 0 such that floor(n/(2^k)) is a nonprime; a(n) is degree of the &quot;safeness&quot; of prime, 0 if n is not a prime, 1 for unsafe primes (A059456), and k &gt;= 2 for primes that are (k-1)-safe but not k-safe.
+ * A292936 a(n) = the least k &gt;= 0 such that floor(n/(2^k)) is a nonprime; a(n) is degree of the "safeness" of prime, 0 if n is not a prime, 1 for unsafe primes (A059456), and k &gt;= 2 for primes that are (k-1)-safe but not k-safe.
  * @author Georg Fischer
  */
 public class A292936 extends SingleTransformSequence {

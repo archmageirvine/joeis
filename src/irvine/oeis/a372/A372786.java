@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A372786 a(n) = tau(6*n) = A000005(6*n).
+ * A372786 Number of divisors of 6n; a(n) = tau(6*n) = A000005(6*n).
  * @author Georg Fischer
  */
 public class A372786 extends LambdaSequence {

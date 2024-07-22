@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066523 Crowded numbers: for any n in the sequence, d(n)/n is larger than d(m)/m for all m &gt; n.
+ * A066523 Crowded numbers: for any k in the sequence, d(k)/k is larger than d(m)/m for all m &gt; k.
  * @author Sean A. Irvine
  */
 public class A066523 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000215;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A095150 a(n) = prime(2^(2^n) + 1).
+ * A095150 a(n) = prime(2^(2^n) + 1).	.
  * @author Georg Fischer
  */
 public class A095150 extends SingleTransformSequence {

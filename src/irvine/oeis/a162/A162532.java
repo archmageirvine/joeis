@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a033.A033676;
 
 /**
- * A162532 Numbers k such that their largest divisor &lt;= sqrt(k) equals 12.
+ * A162532 Numbers k whose largest divisor &lt;= sqrt(k) equals 12.
  * @author Georg Fischer
  */
 public class A162532 extends FilterPositionSequence {

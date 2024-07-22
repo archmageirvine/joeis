@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A372713 a(n) = tau(3*n) = A000005(3*n).
+ * A372713 Number of divisors of 3n; a(n) = tau(3*n) = A000005(3*n).
  * @author Georg Fischer
  */
 public class A372713 extends LambdaSequence {

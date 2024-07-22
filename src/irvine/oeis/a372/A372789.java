@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A372789 a(n) = tau(9*n) = A000005(9*n).
+ * A372789 Number of divisors of 9n; a(n) = tau(9*n) = A000005(9*n).
  * @author Georg Fischer
  */
 public class A372789 extends LambdaSequence {

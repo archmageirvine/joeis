@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A177837 Binomial(n^3,n) / (n^2 * (n^2+n+1) ), or binomial(n^3-2,n-2).
+ * A177837 a(n) = binomial(n^3-2, n-2).
  * a(n)=binom(n^3-2,n-2)
  * @author Georg Fischer
  */

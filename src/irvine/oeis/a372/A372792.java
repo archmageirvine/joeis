@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A372792 a(n) = tau(12*n) = A000005(12*n).
+ * A372792 Number of divisors of 12n; a(n) = tau(12*n) = A000005(12*n).
  * @author Georg Fischer
  */
 public class A372792 extends LambdaSequence {

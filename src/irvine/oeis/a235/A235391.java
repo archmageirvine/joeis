@@ -4,7 +4,7 @@ package irvine.oeis.a235;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A235391 Expansion of 2 / (2 - x / sqrt(1 - 4*x)).
+ * A235391 Duplicate of A129775.
  * @author Georg Fischer
  */
 public class A235391 extends HolonomicRecurrence {

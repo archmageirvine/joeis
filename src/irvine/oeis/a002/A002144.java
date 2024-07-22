@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A002144 Pythagorean primes: primes of form 4*k + 1.
+ * A002144 Pythagorean primes: primes of the form 4*k + 1.
  * @author Sean A. Irvine
  */
 public class A002144 extends AbstractSequence {

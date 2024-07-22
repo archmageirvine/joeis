@@ -7,7 +7,7 @@ import irvine.oeis.a065.A065621;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A323908 Reversing binary representation of A004718, Per N?rg?rd&apos;s &quot;infinity sequence&quot;.
+ * A323908 Reversing binary representation of A004718, Per N\u00f8rg\u00e5rd's "infinity sequence".
  * @author Georg Fischer
  */
 public class A323908 extends SingleTransformSequence {

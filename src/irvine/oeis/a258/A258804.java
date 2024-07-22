@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A258804 a(n) = gpf(a(n-3))*gpf(a(n-2)) + gpf(a(n-1)), with a(1)=a(2)=1 and a(3)=2 and where gpf(n) is the greatest prime dividing n, A006530.
+ * A258804 a(n) = gpf(a(n-3))*gpf(a(n-2)) + gpf(a(n-1)), with a(1)=a(2)=1 and a(3)=2 and where gpf(n) is the greatest prime dividing n, A006530(n).
  * @author Georg Fischer
  */
 public class A258804 extends MultiTransformSequence {

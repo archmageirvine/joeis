@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004125;
 
 /**
- * A111490 Antidiagonal sums of the numerical array defined by M(n,k) = 1 + (k-1) mod n.
+ * A111490 a(n) = n + Sum_{k=1..n} (n mod k). Row sums of A372727.
  * @author Georg Fischer
  */
 public class A111490 extends Sequence1 {

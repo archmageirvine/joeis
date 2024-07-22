@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071426.
+ * A071426 Sprague-Grundy values for octal game .11337.
  * @author Sean A. Irvine
  */
 public class A071426 extends Sequence1 {

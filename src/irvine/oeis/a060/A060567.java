@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A060567 Number of binomial coefficients C[n,j] with j=0...n that are divisible by C[n,2].
+ * A060567 Number of binomial coefficients C(n,j) with j=0..n that are divisible by C(n,2).
  * @author Sean A. Irvine
  */
 public class A060567 extends Sequence2 {

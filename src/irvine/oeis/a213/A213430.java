@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A213430.
+ * A213430 The number of n X n upper triangular (0,1)-matrices M with all diagonal entries 1 such that M = f(M^2) and sum(row 1) &gt;= sum(row 2) &gt;= ... &gt;= sum(row n-1) &gt;= sum(row n) = 1 and f maps any nonzero entry to 1.
  * @author Sean A. Irvine
  */
 public class A213430 extends Sequence1 {

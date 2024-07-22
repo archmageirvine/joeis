@@ -7,7 +7,7 @@ import irvine.oeis.a163.A163356;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A302846 Interleave the Gray-coded X and Y-coordinates of 2-dimensional Hilbert&apos;s curve in alternate bit-positions: a(n) = A000695(A003188(A059253(n))) + 2*A000695(A003188(A059252(n))).
+ * A302846 Interleave the Gray-coded X and Y-coordinates of 2-dimensional Hilbert's curve in alternate bit-positions: a(n) = A000695(A003188(A059253(n))) + 2*A000695(A003188(A059252(n))).
  * @author Georg Fischer
  */
 public class A302846 extends SingleTransformSequence {

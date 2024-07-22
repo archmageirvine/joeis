@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A052424 Numbers with no single-digit factors (apart from 1 and n).
+ * A052424 Numbers k with no single-digit factors (apart from 1 and k).
  * @author Sean A. Irvine
  */
 public class A052424 extends Sequence1 {

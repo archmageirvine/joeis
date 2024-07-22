@@ -18,6 +18,6 @@ public class A373136 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A373136() {
-    super(1, n -> (!A007814.a(n).add(A007949.a(n)).testBit(0) ? Z.ONE : Z.ZERO));
+    super(1, n -> !A007814.a(n).add(A007949.a(n)).testBit(0) ? Z.ONE : Z.ZERO);
   }
 }

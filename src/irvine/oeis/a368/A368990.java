@@ -16,6 +16,6 @@ public class A368990 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A368990() {
-    super(0, n -> (A324055.a(n).compareTo(Z.ZERO) <= 0 ? Z.ONE : Z.ZERO));
+    super(0, n -> A324055.a(n).compareTo(Z.ZERO) <= 0 ? Z.ONE : Z.ZERO);
   }
 }

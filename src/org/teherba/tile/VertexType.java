@@ -131,11 +131,8 @@ public class VertexType implements Serializable {
     final String[] parts = sequence.split("\\,");
     final int termNo = parts.length;
     int[] terms = new int[termNo];
-    for (int iterm = 0; iterm < termNo; iterm ++) {
-      try {
-        terms[iterm] = Integer.parseInt(parts[iterm]);
-      } catch (Exception exc) {
-      }
+    for (int iterm = 0; iterm < termNo; ++iterm) {
+      terms[iterm] = Integer.parseInt(parts[iterm]);
     } // for iterm
     return terms;
   } // getSequence
@@ -147,7 +144,7 @@ public class VertexType implements Serializable {
    * @return a String of the form <code>"[elem1,elem2.elem3]"</code>
    */
   private static String join(final String delim, final int[] vector) {
-    StringBuffer result = new StringBuffer(128);
+    final StringBuilder result = new StringBuilder(128);
     result.append('[');
     for (int ind = 0; ind < vector.length; ind ++) {
       if (ind > 0) {
@@ -165,7 +162,7 @@ public class VertexType implements Serializable {
    * of the long call to <code>VertexTypeArray.decodeNotation</code>
    */
   public String toString() {
-    StringBuffer result = new StringBuffer(1024);
+    StringBuilder result = new StringBuilder(1024);
     result.append(aSeqNo);
     result.append("\t");
     result.append(galId);
@@ -199,21 +196,19 @@ public class VertexType implements Serializable {
    * @return JSON for all properties
    */
   public String toJSON() {
-    String result
-        = "{ \"i\": "         + index
-        + ", \"name\": \""    + name  + "\""
-        + ", \"stdnot\": \""  + stdNotation + "\""
-        + ", \"vid\": \""     + vertexId + "\""
-        + ", \"polys\": "     + join(",", polys)
-        + ", \"sweeps\": "    + join(",", sweeps)
-        + ", \"pxTinds\": "   + join(",", pxTinds)
-        + ", \"pxRotas\": "   + join(",", pxRotas)
-        + ", \"pxOrients\": " + join(",", pxOrients)
-        + ", \"pxEdges\": "   + join(",", pxEdges)
-        + ", \"galId\": \""   + galId + "\""
-        + ", \"tiling\": "    + tilingNo 
-        + " }\n";
-    return result;
+    return "{ \"i\": "         + index
+      + ", \"name\": \""    + name  + "\""
+      + ", \"stdnot\": \""  + stdNotation + "\""
+      + ", \"vid\": \""     + vertexId + "\""
+      + ", \"polys\": "     + join(",", polys)
+      + ", \"sweeps\": "    + join(",", sweeps)
+      + ", \"pxTinds\": "   + join(",", pxTinds)
+      + ", \"pxRotas\": "   + join(",", pxRotas)
+      + ", \"pxOrients\": " + join(",", pxOrients)
+      + ", \"pxEdges\": "   + join(",", pxEdges)
+      + ", \"galId\": \""   + galId + "\""
+      + ", \"tiling\": "    + tilingNo
+      + " }\n";
   } // VertexType.toJSON
 
 } // class VertexType

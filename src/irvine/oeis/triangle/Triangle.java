@@ -53,7 +53,7 @@ public class Triangle extends AbstractSequence {
    * Generates a triangle with Pascal's rule.
    */
   public Triangle(final long... inits) {
-    super(Long.valueOf(inits[0]).intValue());
+    super((int) inits[0]);
     initialize(ZUtils.toZ(inits));
   }
 

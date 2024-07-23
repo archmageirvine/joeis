@@ -325,4 +325,18 @@ public class Polynomial<E> extends ArrayList<E> {
      }
      return aggr;
    }
+
+  @Override
+  public boolean equals(final Object o) {
+    if (!(o instanceof Polynomial)) {
+      return false;
+    }
+    final Polynomial<?> other = (Polynomial<?>) o;
+    return mIndeterminate.equals(other.mIndeterminate) && super.equals(o);
+  }
+
+  @Override
+  public int hashCode() {
+    return super.hashCode() + mIndeterminate.hashCode();
+  }
 }

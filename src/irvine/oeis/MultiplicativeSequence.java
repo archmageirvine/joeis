@@ -154,7 +154,7 @@ public class MultiplicativeSequence extends AbstractSequence implements DirectSe
    */
   protected static boolean isMod(final int modulus, final Z p, final int res1, final int res2, final int res3) {
     final int res = p.mod(Z.valueOf(modulus)).intValue();
-    return res == res1 || res == res2;
+    return res == res1 || res == res2 || res == res3;
   }
 
   /**

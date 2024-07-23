@@ -86,7 +86,7 @@ public final class StringUtils {
           }
         }
         final int c = token.charAt(token.length() - 1);
-        return VALID_HEX.indexOf(c) != -1 || c == 'L' || c == 'l';
+        return c == 'L' || c == 'l' || VALID_HEX.indexOf(c) != -1;
       }
     } else {
       boolean sawDigit = false;

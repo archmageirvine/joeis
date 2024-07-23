@@ -22,7 +22,7 @@
      <!-- CNT complains about values code to pi -->
      <!-- CT don't complain about exceptions in constructors -->
      <Match classregex=".*">
-        <BugCode name="SnVI,PZLA,BC,SPP,CNT,CT,EI,EI2,ACEM,BL,CBX,CC,CFS,CLI,DMC,DSOC,EXS,FCCD,FPL,IMC,ITC,ITU,JVR,MDM,MOM,MRC,NOS,OCP,OPM,PCOA,PIS,PL,PMB,PRMC,PSC,S508C,SCII,SEC,SLS,UMTP,CNC"/>
+        <BugCode name="SnVI,PZLA,BC,SPP,CNT,CT,EI,EI2,MS,ACEM,BL,CBX,CC,CFS,CLI,DMC,DSOC,EXS,FCCD,FPL,IMC,ITC,ITU,JVR,MDM,MOM,MRC,NOS,OCP,OPM,PCOA,PIS,PL,PMB,PRMC,PSC,S508C,SCII,SEC,SLS,UMTP,CNC"/>
      </Match>
 
      <Match classregex=".*">
@@ -192,24 +192,6 @@
      </Match>
      <Match classregex="irvine.math.graph.GraphUtils">
        <BugCode name="DMI"/>
-     </Match>
-     <Match classregex="irvine.oeis.a001.A001412">
-       <BugCode name="MS"/>
-     </Match>
-     <Match classregex="irvine.oeis.a010.A010575">
-       <BugCode name="MS"/>
-     </Match>
-     <Match classregex="irvine.oeis.a010.A010576">
-       <BugCode name="MS"/>
-     </Match>
-     <Match classregex="irvine.oeis.a001.A001334">
-       <BugCode name="MS"/>
-     </Match>
-     <Match classregex="irvine.oeis.a001.A001336">
-       <BugCode name="MS"/>
-     </Match>
-     <Match classregex="irvine.oeis.a001.A001666">
-       <BugCode name="MS"/>
      </Match>
      <Match classregex="irvine.oeis.a034.A034011">
        <BugCode name="SEO"/>

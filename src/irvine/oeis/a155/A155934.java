@@ -79,9 +79,8 @@ public class A155934 extends AbstractSequence {
 
   @Override
   public Z next() {
-    int prev;
     if (++mN < 43) {
-      prev = upperBound(mN);
+      return Z.valueOf(upperBound(mN));
     } else {
       throw new UnsupportedOperationException();
 //      int k = Math.max(mPrev, lowerBound(mN));
@@ -90,8 +89,6 @@ public class A155934 extends AbstractSequence {
 //      }
 //      mPrev = k;
     }
-    return Z.valueOf(prev);
   }
-
 }
 

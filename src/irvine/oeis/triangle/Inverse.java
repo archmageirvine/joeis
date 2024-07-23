@@ -2,6 +2,7 @@ package irvine.oeis.triangle;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.SequenceFactory;
 import irvine.oeis.transform.ConvolutionProduct;
 
 /**
@@ -124,16 +125,9 @@ public class Inverse extends Triangle {
     }
 
     Sequence[] ans = ConvolutionProduct.toArray(aSeqNos);
-    Inverse ti = new Inverse(offset, ans[0]);
-    for (int iterm = 0; iterm < noTerms; ++iterm) {
-      if (iterm > 0) {
-        System.out.print(",");
-      }
-      System.out.print(ti.next());
-    }
-    System.out.println();
+    SequenceFactory.printTerms(new Inverse(offset, ans[0]), noTerms);
     ans = ConvolutionProduct.toArray(aSeqNos);
-    ti = new Inverse(offset, ans[0]);
+    final Sequence ti = new Inverse(offset, ans[0]);
     int iterm = 0;
     int n = 0;
     while (iterm < noTerms) {

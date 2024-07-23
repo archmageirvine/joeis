@@ -34,16 +34,14 @@ public class MultiTransformSequence extends AbstractSequence {
 
   private final MultiFunction<MultiTransformSequence, Integer, Z> mLambda; // maps (self, n) to next term
   private final AbstractSequence[] mSeqs; // underlying source sequences 
-  private final int mOffset; // offset of target sequence
   private final int[] mOffsets; // offsets of mSeqs
   private final int mSeqNo; // number of underlying sequences s(i) + 1
-  private final Z[] mTerms; // terms of of the source sequences
+  private final Z[] mTerms; // terms of the source sequences
   private final ArrayList<Z> mA; // existing target sequence elements: a(n-1), a(n-k) etc.
   private final Z[] mInits; // initial terms
   private final int mInitNo; // mInits.length
   private int mIn; // index for mInits
   private int mN; // current index of target sequence a(n)
-  private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
 
   /** seq1 + seq2 */
   public static final MultiFunction<MultiTransformSequence, Integer, Z> ADD = (self, n) -> self.s(0).add(self.s(1));
@@ -64,7 +62,6 @@ public class MultiTransformSequence extends AbstractSequence {
    * @param lambda function mapping (self, n) to the terms of the target sequence
    * @param initTerms initial terms for a(n)
    * @param seqs list underlying source sequences seq0, seq1, seq2 and so on
-   *
    * A typical pattern for the call is:
    * <code>super(1, (self, n) -> f(n, self.s(0), self.s(1), self.s(2)), "1", new A999990(), new A999991(), new A999992())</code>
    * The terms of the source sequences in the lambda expression are accessed by self.s(1), self.s(2) and so on.
@@ -88,10 +85,9 @@ public class MultiTransformSequence extends AbstractSequence {
   public MultiTransformSequence(final int offset, final MultiFunction<MultiTransformSequence, Integer, Z> lambda,
                                 final String initTerms, final AbstractSequence... seqs) {
     super(offset);
-    mOffset = offset;
     mA = new ArrayList<>();
     mN = -1;
-    while (mN < mOffset - 1) {
+    while (mN < offset - 1) {
       ++mN;
       mA.add(Z.ZERO); // adjust a(n)
     }
@@ -114,7 +110,7 @@ public class MultiTransformSequence extends AbstractSequence {
     mInitNo = mInits.length;
     int ix = 0;
     while (ix < mSeqNo) {
-      ix = alignSourceSequence(ix, mOffset + mInitNo);
+      ix = alignSourceSequence(ix, offset + mInitNo);
     }
   }
 
@@ -135,9 +131,6 @@ public class MultiTransformSequence extends AbstractSequence {
    * @return a(n)
    */
   public Z a(final int n) {
-//  if (VERBOSE) {
-//    System.out.println("# a(" + n + ") -> " + mA.get(n));
-//  }
     return mA.get(n);
   }
 
@@ -147,40 +140,30 @@ public class MultiTransformSequence extends AbstractSequence {
    * @return <code>seqs[ix].a(n)</code>
    */
   public Z s(final int ix) {
-//  if (VERBOSE) {
-//    System.out.println("# s(" + ix + ") -> " + mTerms[ix]);
-//  }
     return mTerms[ix];
   }
 
   /**
-   * Align a source sequence mSeqs[ix] (that is call <code>mSeqs[ix].next()</code>)
-   * until <code>mTerms[ix]</code> contains mSeqs[].a(n), and shift into the <code>PREVIOUS</code>
+   * Align a source sequence mSeqs[lo] (that is call <code>mSeqs[lo].next()</code>)
+   * until <code>mTerms[lo]</code> contains mSeqs[].a(n), and shift into the <code>PREVIOUS</code>
    * terms appropriately.
-   * @param ix number of the source sequence
+   * @param lo number of the source sequence
    * @param targetN desired index
    * @return next index (behind any <code>PREVIOUS</code> elements)
    */
-  private int alignSourceSequence(final int ix, final int targetN) {
-    final int lo = ix;
-    int hi = ix + 1;
+  private int alignSourceSequence(final int lo, final int targetN) {
+    int hi = lo + 1;
     while (hi < mSeqNo && mSeqs[hi] == PREVIOUS) {
       ++hi;
     }
-    int soff = mOffsets[ix];
+    int soff = mOffsets[lo];
     while (soff <= targetN) {
       for (int i = hi - 1; i > lo; --i) {
         mTerms[i] = mTerms[i - 1];
       }
-      mTerms[lo] = mSeqs[ix].next();
+      mTerms[lo] = mSeqs[lo].next();
       ++soff;
     }
-//  if (VERBOSE) {
-//    System.out.println("# alignSourceSequence(" + ix + ", " + targetN 
-//        + ") -> lo=" + lo + ", hi=" + hi 
-//        + ", mOffsets[" + ix + "]=" + mOffsets[ix]
-//        + ", mTerms[" + ix   + "]=" +   mTerms[ix]);
-//  }
     return hi;
   }
 
@@ -188,14 +171,11 @@ public class MultiTransformSequence extends AbstractSequence {
   public Z next() {
     ++mN;
     ++mIn;
-    Z result = null;
+    final Z result;
     if (mIn < mInitNo) {
       result = mInits[mIn];
     } else {
       result = mLambda.apply(this, mN);
-//    if (VERBOSE) {
-//      System.out.println("# next() -> mN=" + mN + ", result=" + result);
-//    }
       for (int ix = mSeqNo - 1; ix >= 0; --ix) { // shift into previous source elements
         if (mSeqs[ix] == PREVIOUS) {
           mTerms[ix] = mTerms[ix - 1];

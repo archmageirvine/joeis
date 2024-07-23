@@ -22,11 +22,9 @@ public class HypergeometricSequence extends AbstractSequence implements DirectSe
   private final Q[][] mPolyArray; // polynomials as rational coefficients of <code>n^i, i=0..m</code>
   private final int mPolyLen; // size of <code>mPolyArray</code>
   private boolean mNonZero; // false if one of the Pochhammer symbols became zero, true otherwise
-  private int mExp; // exponent n in the hypergeometric power series
   private final int mOffset; // first index
   private final Z[] mInits; // initial terms
   private final int mInitNo; // mInits.length
-  private final int mIn; // index for mInits
   private final BiFunction<Integer, Q, Z> mLambdaQ; // (n, v) -> f(n, v)
 /* for later optimization:
   private boolean[] mIsVarPoch; // whether the Pochhammer symbol (or the trailing variable) contains the variable <code>n</code>.
@@ -106,7 +104,7 @@ public class HypergeometricSequence extends AbstractSequence implements DirectSe
     mQ = q;
     mPolyArray = polyArray;
     mPolyLen = mPolyArray.length;
-    mIn = -1;
+    // index for mInits
     mInits = (initTerms.isEmpty() || "[]".equals(initTerms)) ? new Z[0] : ZUtils.toZ(initTerms);
     mInitNo = mInits.length;
     if (p + q + 1 != polyArray.length) {
@@ -189,32 +187,32 @@ public class HypergeometricSequence extends AbstractSequence implements DirectSe
    * @return rational value
    */
   public Q getTerm(final int n) {
-    Q sum = Q.ONE; // for mExp = 0
-    mExp = 1;
-    Z fact = Z.ONE; // mExp!
+    Q sum = Q.ONE; // for exp = 0
+    int exp = 1;
+    Z fact = Z.ONE; // exp!
     final Q var = evalPoly(mPolyLen - 1, n); // the trailing variable, evaluated for n
     Q varPow = Q.ONE; // power of var
     mNonZero = true;
-    while (mNonZero && mExp < 8 * n) { // 8 = safety limit; increase mExp as long as no product becomes 0
+    while (mNonZero && exp < 8 * n) { // 8 = safety limit; increase exp as long as no product becomes 0
       varPow = varPow.multiply(var);
-      fact = fact.multiply(mExp);
+      fact = fact.multiply(exp);
       Q prod = Q.ONE;
       int ix = 0;
       while (mNonZero && ix < mPolyLen - 1) { // evaluate all Pochhammer symbols
         if (ix < mP) { // in the "numerator" - multiply
-          prod = prod.multiply(evalPochhammer(ix, mExp));
+          prod = prod.multiply(evalPochhammer(ix, exp));
         } else { // in the "denominator" - divide
-          prod = prod.divide(evalPochhammer(ix, mExp));
+          prod = prod.divide(evalPochhammer(ix, exp));
         }
-        // System.out.println("\tprod, n=" + n + ", mExp=" + mExp + ", ix=" + ix + ", prod=" + prod + (ix < mP ? ", mul" : ", div") + ", sum=" + sum);
+        // System.out.println("\tprod, n=" + n + ", exp=" + exp + ", ix=" + ix + ", prod=" + prod + (ix < mP ? ", mul" : ", div") + ", sum=" + sum);
         ++ix;
       }
       sum = sum.add(prod.multiply(varPow).divide(fact));
-      // System.out.println("nextQ(n=" + mExp + "), varPow=" + varPow + ", fact=" + fact + ", sum=" + sum + "\n");
-      ++mExp;
+      // System.out.println("nextQ(n=" + exp + "), varPow=" + varPow + ", fact=" + fact + ", sum=" + sum + "\n");
+      ++exp;
     }
-    if (mNonZero && mExp > 1) {
-      throw new RuntimeException("probably nonterminating, mExp=" + mExp);
+    if (mNonZero && exp > 1) {
+      throw new RuntimeException("probably nonterminating, exp=" + exp);
     }
     return sum;
   }

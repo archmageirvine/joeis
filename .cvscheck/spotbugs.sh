@@ -17,4 +17,5 @@ function spotbugsall() {
     fi
 }
 
+ant compile-src-debug
 spotbugsall

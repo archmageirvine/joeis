@@ -10,7 +10,6 @@ import irvine.oeis.Sequence0;
 public class A151844 extends Sequence0 {
 
   private int mISeq; // index in mSeq
-  private int mLo; // lower bound of range
   private int mHi; // higher bound of range
   private final A151843 mSeq;
 
@@ -26,8 +25,7 @@ public class A151844 extends Sequence0 {
   public A151844(final A151843 seq) {
     mSeq = seq;
     mHi = 8;
-    mLo = 4; // must be a power of 2
-    mISeq = mLo - 1;
+    mISeq = 3; // one less than a power of 2
   }
 
   /*
@@ -44,10 +42,10 @@ public class A151844 extends Sequence0 {
   public Z next() {
     ++mISeq;
     if (mISeq == mHi - 1) {
-      mLo = mHi / 2 * 3;
+      final int lo = mHi / 2 * 3;
       mHi *= 2;
-      mISeq = mLo - 1;
-      // System.out.println("width=" + width + ", mLo=" + mLo + ", mHi=" + mHi + ", mISeq=" + mISeq);
+      mISeq = lo - 1;
+      // System.out.println("width=" + width + ", lo=" + lo + ", mHi=" + mHi + ", mISeq=" + mISeq);
     }
     return mSeq.a(mISeq);
   }

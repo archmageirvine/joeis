@@ -1,5 +1,4 @@
 package irvine.oeis.a202;
-// manually 2021-10-26
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -16,7 +15,6 @@ public class A202670 extends UpperLeftTriangle {
 
   protected final MemorySequence mSeq;
   protected final int mSkip;
-  private final int mOffset;
 
   /** Construct the sequence. */
   public A202670() {
@@ -32,7 +30,6 @@ public class A202670 extends UpperLeftTriangle {
   public A202670(final int offset, final Sequence seq, final int skip) {
     super(1, 1, -1);
     setOffset(offset);
-    mOffset = offset;
     mSeq = MemorySequence.cachedSequence(seq);
     mSkip = skip;
   }

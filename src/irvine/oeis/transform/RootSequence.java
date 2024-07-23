@@ -1,5 +1,7 @@
 package irvine.oeis.transform;
 
+import java.lang.reflect.InvocationTargetException;
+
 import irvine.math.q.Q;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
@@ -49,7 +51,6 @@ public class RootSequence extends EulerTransform {
     Q pq = new Q(1, 2);
     AbstractSequence seq = null;
     int offset = 0;
-    long factor = 1;
     int noTerms = 32;
     int skip = 1;
     int iarg = 0;
@@ -60,10 +61,7 @@ public class RootSequence extends EulerTransform {
           debug = Integer.parseInt(args[iarg++]);
         } else if ("-a".equals(opt)) {
           aSeqNo = args[iarg++];
-          seq = (AbstractSequence) Class.forName("irvine.oeis.a" + aSeqNo.substring(1, 4) + '.' + aSeqNo)
-            .getDeclaredConstructor().newInstance();
-        } else if ("-f".equals(opt)) {
-          factor = Long.parseLong(args[iarg++]);
+          seq = (AbstractSequence) Class.forName("irvine.oeis.a" + aSeqNo.substring(1, 4) + '.' + aSeqNo).getDeclaredConstructor().newInstance();
         } else if ("-n".equals(opt)) {
           noTerms = Integer.parseInt(args[iarg++]);
         } else if ("-o".equals(opt)) {
@@ -75,20 +73,22 @@ public class RootSequence extends EulerTransform {
           }
           final String[] pqrs = pqf.split("/");
           pq = new Q(Long.parseLong(pqrs[0]), Long.parseLong(pqrs[1]));
-        } else if (opt.equals("-s")) {
+        } else if ("-s".equals(opt)) {
           skip = Integer.parseInt(args[iarg++]);
         } else {
           System.err.println("??? invalid option: \"" + opt + "\"");
         }
-      } catch (final Exception exc) { // take default
-        System.err.println("wrong option: " + args[iarg - 1] + ", message: " + exc.getMessage());
+      } catch (final ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException e) {
+        System.err.println("wrong option: " + args[iarg - 1] + ", message: " + e.getMessage());
       }
     } // while args
 
     if (debug > 0) {
       System.out.println("RootSequence: offset=" + offset + ", aSeqNo=" + ((seq == null) ? "null" : aSeqNo) + ", pq=" + pq);
     }
-    SequenceFactory.printTerms(new RootSequence(offset, seq.skip(skip), pq), noTerms);
+    if (seq != null) {
+      SequenceFactory.printTerms(new RootSequence(offset, seq.skip(skip), pq), noTerms);
+    }
   } // main
 }
 

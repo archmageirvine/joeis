@@ -17,10 +17,6 @@ import irvine.oeis.SequenceFactory;
  */
 public class ConvolutionProduct extends EulerTransform {
 
-  private final Q[] mExponents;
-  private final InverseEulerTransform[] mIETs;
-  private final int mSeqNo;
-
   /**
    * Construct the sequence.
    * @param offset first index
@@ -29,13 +25,13 @@ public class ConvolutionProduct extends EulerTransform {
    */
   public ConvolutionProduct(final int offset, final String exponents, final Sequence... seqs) {
     super(offset);
-    mSeqNo = seqs.length;
+    final int seqNo = seqs.length;
     final String[] exps = exponents.replaceAll("[^\\-\\d\\/\\,\\;]", "").split("[\\,\\;]");
-    mExponents =  new Q[mSeqNo];
-    mIETs = new InverseEulerTransform[mSeqNo];
-    for (int is = 0; is < mSeqNo; ++is) {
+    final Q[] qExponents =  new Q[seqNo];
+    final InverseEulerTransform[] inverseEulerTransforms = new InverseEulerTransform[seqNo];
+    for (int is = 0; is < seqNo; ++is) {
       seqs[is].next(); // skip 1
-      mIETs[is] = new InverseEulerTransform(seqs[is]);
+      inverseEulerTransforms[is] = new InverseEulerTransform(seqs[is]);
       long num = 0;
       long den = 1;
       try {
@@ -50,14 +46,14 @@ public class ConvolutionProduct extends EulerTransform {
       } catch (final NumberFormatException exc) {
         // ignore
       }
-      mExponents[is] = new Q(num, den);
+      qExponents[is] = new Q(num, den);
     }
     mSeq = new AbstractSequence(0) {
         @Override
         public Z next() {
           Q sum = Q.ZERO;
-          for (int is = 0; is < mSeqNo; ++is) {
-            sum = sum.add(new Q(mIETs[is].next()).multiply(mExponents[is]));
+          for (int is = 0; is < seqNo; ++is) {
+            sum = sum.add(new Q(inverseEulerTransforms[is].next()).multiply(qExponents[is]));
           }
           if (!sum.isInteger()) {
             throw new UnsupportedOperationException("resulting term is not integer: " + sum);

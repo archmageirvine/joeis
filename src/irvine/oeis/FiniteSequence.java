@@ -188,7 +188,7 @@ public class FiniteSequence extends AbstractSequence implements Serializable, Di
       if (i > 0) {
         result.append(separator);
       }
-      result.append(mList.get(i).toString());
+      result.append(mList.get(i));
     }
     return result.toString();
   }

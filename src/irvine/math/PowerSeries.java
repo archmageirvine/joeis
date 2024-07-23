@@ -17,6 +17,7 @@ import irvine.math.z.Z;
  * @author Georg Fischer
  */
 public class PowerSeries extends ArrayList<Z> {
+
   private int mIndex;
 
   /**
@@ -209,4 +210,18 @@ public class PowerSeries extends ArrayList<Z> {
 //    System.out.println(s5);
 //  } // main
 
+
+  @Override
+  public boolean equals(final Object o) {
+    if (!(o instanceof PowerSeries)) {
+      return false;
+    }
+    final PowerSeries other = (PowerSeries) o;
+    return mIndex == other.mIndex && super.equals(o);
+  }
+
+  @Override
+  public int hashCode() {
+    return super.hashCode() + mIndex;
+  }
 }

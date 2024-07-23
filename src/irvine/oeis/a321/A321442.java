@@ -16,7 +16,7 @@ public class A321442 extends Sequence1 {
 
   private boolean isOddPowerOf2(final Z n) {
     final Z v = n.makeOdd();
-    return Z.ONE.equals(v) && (n.auxiliary() & 1) == 1;
+    return (n.auxiliary() & 1) == 1 && Z.ONE.equals(v);
   }
 
   @Override

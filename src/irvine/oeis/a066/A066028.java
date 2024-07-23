@@ -32,6 +32,20 @@ public class A066028 extends Sequence1 {
       }
       return mBitSet.compareTo(state.mBitSet);
     }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (!(obj instanceof State)) {
+        return false;
+      }
+      final State other = (State) obj;
+      return mN.equals(other.mN) && mBitSet.equals(other.mBitSet);
+    }
+
+    @Override
+    public int hashCode() {
+      return mN.hashCode() + mBitSet.hashCode();
+    }
   }
 
   @Override

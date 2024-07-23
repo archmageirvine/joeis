@@ -111,6 +111,20 @@ public class A060677 extends Sequence1 {
     }
 
     @Override
+    public boolean equals(final Object obj) {
+      if (!(obj instanceof Line)) {
+        return false;
+      }
+      final Line other = (Line) obj;
+      return mC.equals(other.mC) && mM.equals(other.mM);
+    }
+
+    @Override
+    public int hashCode() {
+      return mC.hashCode() + mM.hashCode();
+    }
+
+    @Override
     public String toString() {
       if (mM == null) {
         return "vertical";

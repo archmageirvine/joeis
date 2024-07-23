@@ -597,7 +597,7 @@ public final class GraphUtils {
         final IntegerPartition partj = new IntegerPartition(j);
         int[] pj;
         while ((pj = partj.next()) != null) {
-          final List<E> q = new ArrayList<>();
+          final List<E> q = new ArrayList<>(i);
           q.add(null); // 0 unused
           ++xj;
           for (int s = 1; s <= i; ++s) {
@@ -821,7 +821,7 @@ public final class GraphUtils {
         final IntegerPartition partJ = new IntegerPartition(j);
         int[] pj;
         while ((pj = partJ.next()) != null) {
-          final List<E> q = new ArrayList<>();
+          final List<E> q = new ArrayList<>(i);
           ++xj;
           for (int s = 1; s <= i; ++s) {
             E prod = fld.one();

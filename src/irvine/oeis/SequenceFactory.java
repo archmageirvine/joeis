@@ -607,6 +607,20 @@ public final class SequenceFactory {
     }
   }
 
+  /**
+   * Convenience method to print the specified number of terms.
+   * @param seq sequence
+   * @param terms number of terms
+   */
+  public static void printTerms(final Sequence seq, final int terms) {
+    for (int t = 0; t < terms; ++t) {
+      if (t > 0) {
+        System.out.print(',');
+      }
+      System.out.print(seq.next());
+    }
+    System.out.println();
+  }
 
   /**
    * Generate terms from specified sequence, writing one term per line.

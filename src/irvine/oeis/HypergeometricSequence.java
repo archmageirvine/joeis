@@ -341,14 +341,7 @@ public class HypergeometricSequence extends AbstractSequence implements DirectSe
       }
     } // while args
 
-    final HypergeometricSequence hgs = new HypergeometricSequence(offset, p, q, polyString);
-    for (int iterm = 0; iterm < noTerms; ++iterm) {
-      if (iterm > 0) {
-        System.out.print(",");
-      }
-      System.out.print(hgs.next());
-    } // for iterm
-    System.out.println();
-  } // main
+    SequenceFactory.printTerms(new HypergeometricSequence(offset, p, q, polyString), noTerms);
+  }
 }
 

@@ -10,20 +10,20 @@ import irvine.oeis.AbstractSequence;
  */
 public class A117078 extends AbstractSequence {
 
-  private int mN;
-  private final Fast mPrime = new Fast();
-  private Z mP1; // current prime
-  private Z mP0; // previous prime
+  protected final Fast mPrime = new Fast();
+  protected Z mP1 = Z.TWO; // current prime
+
+  protected A117078(final int offset) {
+    super(offset);
+  }
 
   /** Construct the sequence. */
   public A117078() {
-    super(1);
-    mN = 0;
-    mP1 = Z.TWO;
+    this(1);
   }
 
   /**
-   * Compute the weigth and the gap of two successive primes.
+   * Compute the weight and the gap of two successive primes.
    * @param p0 a prime
    * @param p1 the least prime &gt; <code>p0</code>
    * @return a pair (weight, gap)
@@ -42,12 +42,11 @@ public class A117078 extends AbstractSequence {
     return new Z[] {Z.valueOf(k), d};
   }
 
-  // {m=78; for(n=1, m, p=prime(n); d=prime(n+1)-p; k=0; j=1; while(k==0&&j<p, if(p%j!=d, j++, k=j)); print1(k, ", "))}
   @Override
   public Z next() {
-    ++mN;
-    mP0 = mP1;
+    // previous prime
+    final Z p0 = mP1;
     mP1 = mPrime.nextPrime(mP1);
-    return compute(mP0, mP1)[0];
+    return compute(p0, mP1)[0];
   }
 }

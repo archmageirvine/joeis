@@ -116,7 +116,7 @@ public class A002564 extends Sequence1 {
       // If we have less than the minimum number of queens, but no solution
       // yet, so try adding a queen at each remaining position.  Note each
       // placement can reduce mMinQueens, so need to check at each iteration
-      for (int p = nextFreePosition; keepLooking(queens) && p < mSquares; ++p) {
+      for (int p = nextFreePosition; p < mSquares && keepLooking(queens); ++p) {
         if (acceptable(state, p)) {
           final Z newState = state.or(mCovers[p]);
           if (!newState.equals(state)) {

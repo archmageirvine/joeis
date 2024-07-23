@@ -13,6 +13,6 @@ public class A353477 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A353477() {
-    super(1, n -> Functions.BIG_OMEGA.z(n).equals(Z.TWO) && n % 4 == 1 ? Z.ONE : Z.ZERO);
+    super(1, n -> (n & 3) == 1 && Functions.BIG_OMEGA.z(n).equals(Z.TWO) ? Z.ONE : Z.ZERO);
   }
 }

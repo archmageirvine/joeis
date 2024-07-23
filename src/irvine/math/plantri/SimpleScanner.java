@@ -39,7 +39,6 @@ class SimpleScanner {
    disks, handing in an edge with the disk on the right outputs the
    "marked" vertex as 1.
   */
-  private Edge mCodeEdge = null;
   private int mOutsideFaceSize;  // Used for polygon triangulations.
 
 
@@ -151,18 +150,17 @@ class SimpleScanner {
   private void polygonTriangTrivial(final boolean[] vmark) {
     for (int v = 0; v < mState.mNumVertices; ++v) {
       if (vmark[v]) {
-        mCodeEdge = removeVertex(v);
+        final Edge codeEdge = removeVertex(v);
         int connec = 2;
         if (mDegree[v] == 3) {
           connec = 3;
         } else if (mPlantri.getMinConnectivity() == 3 || mPlantri.mExactSwitch) {
-          connec += diskThreeConn(mCodeEdge) ? 1 : 0;
+          connec += diskThreeConn(codeEdge) ? 1 : 0;
         }
         if (connec >= mPlantri.getMinConnectivity()) {
           mPlantri.gotOne(1, 1, connec);
         }
         insertVertex(v);
-        mCodeEdge = null;
       }
     }
   }
@@ -196,20 +194,19 @@ class SimpleScanner {
           ++newNbtot;
         }
       }
-      mCodeEdge = removeVertex(v);
+      final Edge codeEdge = removeVertex(v);
 
       int connec = 2;
       if (mDegree[v] == 3 && mState.mNumVertices > 3) {
         connec = 3;
       } else if (mPlantri.getMinConnectivity() == 3 || mPlantri.mExactSwitch) {
-        connec += diskThreeConn(mCodeEdge) ? 1 : 0;
+        connec += diskThreeConn(codeEdge) ? 1 : 0;
       }
 
       if (connec >= mPlantri.getMinConnectivity()) {
         mPlantri.gotOne(newNbtot, newNbop, connec);
       }
       insertVertex(v);
-      mCodeEdge = null;
     }
   }
 

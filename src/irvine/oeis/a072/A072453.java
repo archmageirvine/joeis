@@ -13,7 +13,6 @@ public class A072453 extends AbstractSequence {
 
   private int mN;
   private final MemorySequence mSeq;
-  private final int mOffset;
   private final int mDist;
 
   /** Construct the sequence. */
@@ -31,7 +30,6 @@ public class A072453 extends AbstractSequence {
     super(offset);
     mN = offset - 1;
     mDist = dist;
-    mOffset = offset;
     mSeq = MemorySequence.cache(0, seq);
   }
 

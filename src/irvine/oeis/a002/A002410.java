@@ -242,7 +242,7 @@ public class A002410 extends Sequence1 {
           break;
         }
         --cpt;
-      } while (Math.abs(nz) > 1e-8 && zz1 != zz2 && cpt >= 0);
+      } while (zz1 != zz2 && cpt >= 0 && Math.abs(nz) > 1e-8);
       mYRef = z;
     }
   }

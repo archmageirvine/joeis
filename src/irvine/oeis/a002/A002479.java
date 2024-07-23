@@ -16,7 +16,7 @@ public class A002479 extends Sequence1 {
   private boolean is(final long n) {
     final FactorSequence fs = Jaguar.factor(n);
     for (final Z p : fs.toZArray()) {
-      if (p.mod(8) > 4 && fs.getExponent(p) % 2 != 0) {
+      if ((fs.getExponent(p) & 1) != 0 && p.mod(8) > 4) {
         return false;
       }
     }

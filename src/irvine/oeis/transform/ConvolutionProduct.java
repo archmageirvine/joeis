@@ -6,6 +6,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.SequenceFactory;
 
 /**
  * Compute the convolution product of two or more generating functions.
@@ -149,14 +150,7 @@ public class ConvolutionProduct extends EulerTransform {
       }
     } // while args
 
-    final ConvolutionProduct cp = new ConvolutionProduct(offset, exponents, aSeqNos);
-    for (int iterm = 0; iterm < noTerms; ++iterm) {
-      if (iterm > 0) {
-        System.out.print(",");
-      }
-      System.out.print(cp.next());
-    } // for iterm
-    System.out.println();
+    SequenceFactory.printTerms(new ConvolutionProduct(offset, exponents, aSeqNos), noTerms);
   } // main
 }
 

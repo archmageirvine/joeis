@@ -37,6 +37,20 @@ public class A068537 extends Sequence1 {
       }
       return Long.compare(mY, state.mY);
     }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (!(obj instanceof State)) {
+        return false;
+      }
+      final State other = (State) obj;
+      return mY == other.mY && mX == other.mX && mK == other.mK && mN.equals(other.mN);
+    }
+
+    @Override
+    public int hashCode() {
+      return mN.hashCode();
+    }
   }
 
   private Z mPrev = Z.ZERO;

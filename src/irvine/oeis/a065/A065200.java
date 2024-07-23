@@ -36,6 +36,20 @@ public class A065200 extends A005117 {
       }
       return Boolean.compare(mSinglePrime, state.mSinglePrime);
     }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (!(obj instanceof State)) {
+        return false;
+      }
+      final State other = (State) obj;
+      return mP == other.mP && mSinglePrime == other.mSinglePrime && mN.equals(other.mN);
+    }
+
+    @Override
+    public int hashCode() {
+      return mN.hashCode();
+    }
   }
 
   private final Fast mPrime = new Fast();

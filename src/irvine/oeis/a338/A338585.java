@@ -13,16 +13,6 @@ public class A338585 extends Sequence0 {
 
   protected int mN = -1;
 
-  /* Maple:
-    h:= proc(n) option remember; `if`(n<1, 0,
-          `if`(issqr(8*n+1), n, h(n-1)))
-        end:
-    b:= proc(n, i, k) option remember; `if`(n=0, `if`(k=0, 1, 0),
-          `if`(i*k<n or k>n, 0, b(n, h(i-1), k)+b(n-i, h(min(n-i, i)), k-1)))
-        end:
-    a:= n-> (t-> b(t, h(t), n))(n*(n+1)/2):
-    seq(a(n), n=0..42);  # _Alois P. Heinz_, Nov 10 2020
-  */
   protected final MemoryFunction1<Integer> mH = new MemoryFunction1<>() {
     @Override
     protected Integer compute(final int n) {
@@ -42,7 +32,7 @@ public class A338585 extends Sequence0 {
       if (i * k < n || k > n) {
         return Z.ZERO;
       }
-      return get(n, mH.get(i - 1), k).add(get(n - i, mH.get(i < n - i ? i : n - i), k - 1));
+      return get(n, mH.get(i - 1), k).add(get(n - i, mH.get(Math.min(i, n - i)), k - 1));
     }
   };
 

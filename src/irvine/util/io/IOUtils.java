@@ -17,6 +17,7 @@ import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.Locale;
+import java.util.Objects;
 import java.util.zip.GZIPInputStream;
 
 /**
@@ -217,7 +218,7 @@ public final class IOUtils {
    * @throws IOException if an I/O error occurs.
    */
   public static BufferedReader reader(final String resource) throws IOException {
-    final InputStream is = IOUtils.class.getClassLoader().getResourceAsStream(resource);
+    final InputStream is = Objects.requireNonNull(IOUtils.class.getClassLoader().getResourceAsStream(resource));
     return new BufferedReader(new InputStreamReader(resource.endsWith(".gz") ? new GZIPInputStream(is) : is));
   }
 

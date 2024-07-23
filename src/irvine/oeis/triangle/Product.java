@@ -160,7 +160,7 @@ public class Product extends Triangle {
     Product tp = new Product(offset, ans[0], ans[1]);
     for (int iterm = 0; iterm < noTerms; ++iterm) {
       if (iterm > 0) {
-        System.out.print(",");
+        System.out.print(',');
       }
       System.out.print(tp.next());
     }

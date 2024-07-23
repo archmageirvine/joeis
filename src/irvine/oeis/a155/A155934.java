@@ -15,7 +15,6 @@ public class A155934 extends AbstractSequence {
   }
 
   private int mN = 1;
-  private int mPrev = 2;
 
   // The actual search part of this implementation is next to useless.  The upper bound is
   // already precise for n <= 42 (but not n = 43).  But this search is too slow to be useful
@@ -80,8 +79,9 @@ public class A155934 extends AbstractSequence {
 
   @Override
   public Z next() {
+    int prev;
     if (++mN < 43) {
-      mPrev = upperBound(mN);
+      prev = upperBound(mN);
     } else {
       throw new UnsupportedOperationException();
 //      int k = Math.max(mPrev, lowerBound(mN));
@@ -90,7 +90,7 @@ public class A155934 extends AbstractSequence {
 //      }
 //      mPrev = k;
     }
-    return Z.valueOf(mPrev);
+    return Z.valueOf(prev);
   }
 
 }

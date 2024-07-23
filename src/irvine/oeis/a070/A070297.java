@@ -22,7 +22,7 @@ public class A070297 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    while (mFirsts.get(mN) == 0 && (mN + 1) * HEURISTIC > mM) {
+    while ((mN + 1) * HEURISTIC > mM && mFirsts.get(mN) == 0) {
       ++mM;
       int cnt = 0;
       for (long k = 2; k < mM; ++k) {

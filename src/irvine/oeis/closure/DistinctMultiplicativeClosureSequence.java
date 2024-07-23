@@ -35,7 +35,7 @@ public class DistinctMultiplicativeClosureSequence extends AbstractSequence {
 
     @Override
     public boolean equals(final Object obj) {
-      return obj instanceof State && ((State) obj).mN.equals(mN) && ((State) obj).mIndex == mIndex;
+      return obj instanceof State && ((State) obj).mIndex == mIndex && ((State) obj).mN.equals(mN);
     }
 
     @Override

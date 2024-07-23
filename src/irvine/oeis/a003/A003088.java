@@ -20,12 +20,13 @@ public class A003088 extends Sequence0 implements GraphProcessor {
     private long mCount = 0;
 
     private void markAll(final Graph g, final boolean[] reachable, final int current) {
+      if (reachable[current]) {
+        return;
+      }
       reachable[current] = true;
       int j = -1;
       while ((j = g.nextVertex(current, j)) >= 0) {
-        if (!reachable[j]) {
-          markAll(g, reachable, j);
-        }
+        markAll(g, reachable, j);
       }
     }
 

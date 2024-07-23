@@ -187,8 +187,10 @@
      <Match classregex="irvine.math.r.TrigonometricIntegralTest">
        <BugCode name="CNT"/>
      </Match>
-     <!-- Going straight to a string afterwards so I don't think this is a problem -->
      <Match classregex="irvine.math.polynomial.CycleIndexReadBigN">
+       <BugCode name="DMI"/>
+     </Match>
+     <Match classregex="irvine.math.graph.GraphUtils">
        <BugCode name="DMI"/>
      </Match>
      <Match classregex="irvine.oeis.a001.A001412">
@@ -240,9 +242,11 @@
      <Match classregex="gebhardt.Canonical">
        <BugCode name="SEO"/>
      </Match>
-     <!-- False positives, these are switches. -->
      <Match classregex="irvine.oeis.a055.A055187">
        <BugCode name="LSC"/>
+     </Match>
+     <Match classregex="irvine.oeis.a070.A070566">
+       <BugCode name="DLC"/>
      </Match>
 
      <!-- I am allowed to ignore return values and have absolute paths in a test -->
@@ -258,6 +262,9 @@
        <BugCode name="FCBL"/>
      </Match>
      <Match classregex="irvine.oeis.a000.A000066">
+       <BugCode name="FCBL"/>
+     </Match>
+     <Match classregex="irvine.oeis.a053.A053020">
        <BugCode name="FCBL"/>
      </Match>
 

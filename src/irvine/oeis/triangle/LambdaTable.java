@@ -14,7 +14,6 @@ import irvine.oeis.AbstractSequence;
  */
 public abstract class LambdaTable extends AbstractSequence implements DirectArray {
 
-  private final int mRowMin; // starting row index
   private int mColMax; // ending column index
   private int mRow; // current row index
   private int mCol; // current column index
@@ -25,13 +24,13 @@ public abstract class LambdaTable extends AbstractSequence implements DirectArra
    * Constructor with offset, origin and lambda expression.
    * @param offset first index of the sequence
    * @param rowMin index of first row
-   * @param colMin index of first column
+   * @param colRange index of first column
    * @param lambda function for T[n, k]
    */
   public LambdaTable(final int offset, final int rowMin, final Function<Integer, Integer[]> colRange, final BiFunction<Integer, Integer, Z> lambda) {
     super(offset);
-    mRowMin = rowMin;
-    mRow = mRowMin - 1;
+    // starting row index
+    mRow = rowMin - 1;
     mColRange = colRange;
     mColMax = 0;
     mCol = 0; // forces a row increment in next()

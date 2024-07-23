@@ -38,6 +38,20 @@ public class A064224 extends Sequence1 {
       }
       return Long.compare(mL, state.mL);
     }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (!(obj instanceof State)) {
+        return false;
+      }
+      final State other = (State) obj;
+      return mS == other.mS && mL == other.mL && mV.equals(other.mV);
+    }
+
+    @Override
+    public int hashCode() {
+      return mV.hashCode();
+    }
   }
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));

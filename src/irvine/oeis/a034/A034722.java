@@ -32,7 +32,7 @@ public class A034722 extends Sequence1 {
 
     @Override
     public boolean equals(final Object obj) {
-      return obj instanceof State && mValue.equals(((State) obj).mValue) && mLast == ((State) obj).mLast;
+      return obj instanceof State && mLast == ((State) obj).mLast && mValue.equals(((State) obj).mValue);
     }
 
     @Override

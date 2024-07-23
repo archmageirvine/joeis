@@ -101,14 +101,7 @@ public class AlternatingSumSequence extends AbstractSequence {
       throw new UnsupportedOperationException("invalid A-number: " + aSeqNo, exc);
     }
 
-    final AlternatingSumSequence asu = new AlternatingSumSequence(offset, seq, pattern);
-    for (int iterm = 0; iterm < noTerms; ++iterm) {
-      if (iterm > 0) {
-        System.out.print(",");
-      }
-      System.out.print(asu.next());
-    } 
-    System.out.println();
+    SequenceFactory.printTerms(new AlternatingSumSequence(offset, seq, pattern), noTerms);
   }
 }
 

@@ -21,7 +21,6 @@ public class FoldedContinuedFraction extends AbstractSequence {
   private final ArrayList<Z> mAr = new ArrayList<>(64);
   protected boolean mCompress;
   protected int mN;
-  private final int mOffset;
   protected final Function<Integer, Z> mLambda; // lambda expression k -&gt; u(d(k))
   protected int mNy; // number of folds
   protected int mCfType; // type of the c.f.: 0 = Shallit's theorem, 1 = folded only
@@ -46,7 +45,6 @@ public class FoldedContinuedFraction extends AbstractSequence {
     mNy = 0; // (inits.length - 1) / 2; // initial terms must contain folding #0 and #1
     mCfType = 0;
     mCompress = true;
-    mOffset = offset;
     mLambda = lambda;
     mN = offset - 1;
     while (--offset >= 0) { // prefix with zeros that are not used

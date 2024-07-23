@@ -128,13 +128,11 @@ public class A055187 extends AbstractSequence {
     } else if (mMethod.matches("[N]")) {
       mSeqLen.add(0);
     } else if (mMethod.matches("[S]")) {
-    } else if (mMethod.matches("[T]")) {
-      if (mParm == 240508) {
-        store(1);
-      }
+    } else if (mParm == 240508 && mMethod.matches("[T]")) {
+      store(1);
     }
     mFirstApp.add(start);
-    mSegNo++;
+    ++mSegNo;
   }
 
   private void advance() { // count between 0 && nmax, && store in mCounts[4095]

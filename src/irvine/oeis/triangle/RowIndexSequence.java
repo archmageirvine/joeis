@@ -5,6 +5,7 @@ import java.util.HashMap;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.SequenceFactory;
 
 /**
  * For an underlying source triangle or array, the target sequence gives the row indexes of n in the source.
@@ -16,8 +17,7 @@ public class RowIndexSequence extends AbstractSequence {
   private int mRow; // current row index n
   private int mCol; // current column index k
   private final int mRow0; // first row index
-  private final int mCol0; // first columns index 
-  private int mDir; // direction: +1 = ascending, -1 = descending
+  private final int mDir; // direction: +1 = ascending, -1 = descending
   private final Sequence mSeq; // the underlying sequence s
   private final HashMap<String, Z> mCache; // cache for terms that have a row index that is alredy known
   private int mN; // current index
@@ -44,7 +44,7 @@ public class RowIndexSequence extends AbstractSequence {
     super(offset); 
     mN = offset - 1;
     mRow0 = row0;
-    mCol0 = col0;
+    // first columns index
     mDir = dir;
     mSeq = seq;
     mCache = new HashMap<>(64);
@@ -104,20 +104,16 @@ public class RowIndexSequence extends AbstractSequence {
     int iarg = 0;
     while (iarg < args.length) { // consume all arguments
       final String opt = args[iarg++];
-      try {
-        if (opt.equals("-d")) {
-          debug = Integer.parseInt(args[iarg++]);
-        } else if (opt.equals("-a")) {
-          aSeqNo = args[iarg++];
-        } else if (opt.equals("-n")) {
-          noTerms = Integer.parseInt(args[iarg++]);
-        } else if (opt.equals("-o")) {
-          offset = Integer.parseInt(args[iarg++]);
-        } else {
-          System.err.println("??? invalid option: \"" + opt + "\"");
-        }
-      } catch (final Exception exc) { // take default
-        System.err.println("wrong option: " + args[iarg - 1] + ", message: " + exc.getMessage());
+      if ("-d".equals(opt)) {
+        debug = Integer.parseInt(args[iarg++]);
+      } else if ("-a".equals(opt)) {
+        aSeqNo = args[iarg++];
+      } else if ("-n".equals(opt)) {
+        noTerms = Integer.parseInt(args[iarg++]);
+      } else if ("-o".equals(opt)) {
+        offset = Integer.parseInt(args[iarg++]);
+      } else {
+        System.err.println("??? invalid option: \"" + opt + "\"");
       }
     }
 
@@ -125,17 +121,11 @@ public class RowIndexSequence extends AbstractSequence {
     try {
       seq = (Sequence) Class.forName("irvine.oeis.a" + aSeqNo.substring(1, 4) + '.' + aSeqNo).getDeclaredConstructor().newInstance();
     } catch (final Exception exc) {
-      throw new UnsupportedOperationException("invalid A-number: " + aSeqNo);
+      throw new UnsupportedOperationException("invalid A-number: " + aSeqNo, exc);
     }
 
     final RowIndexSequence ris = new RowIndexSequence(offset, seq);
-    ris.sDebug = debug > 0;
-    for (int iterm = 0; iterm < noTerms; ++iterm) {
-      if (iterm > 0) {
-        System.out.print(",");
-      }
-      System.out.print(ris.next());
-    }
-    System.out.println();
+    RowIndexSequence.sDebug = debug > 0;
+    SequenceFactory.printTerms(ris, noTerms);
   }
 }

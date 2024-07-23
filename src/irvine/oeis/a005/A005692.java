@@ -29,7 +29,7 @@ public class A005692 extends Sequence0 {
       for (final Z v : live) {
         if (v.isEven()) {
           next.add(v.divide2());
-        } else if (!Z.ONE.equals(v) && jacksTurn) {
+        } else if (jacksTurn && !Z.ONE.equals(v)) {
           final Z t = v.multiply(3);
           next.add(t.add(1));
           next.add(t.subtract(1));

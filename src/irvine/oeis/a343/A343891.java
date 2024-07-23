@@ -10,20 +10,12 @@ import irvine.oeis.Sequence1;
  */
 public class A343891 extends Sequence1 {
 
+  private static final int LAST = 2;
   private int mN = -1;
   private long mA = 3;
   private long mB = 4;
-  private static final int LAST = 2;
   private final Z[] mTuple = new Z[LAST + 1];
 
-  /* Maple:
-  for a from 4 to 200 do
-    for b from floor(a/2)+1 to a-1 do
-      c := a*b/(2*b-a);
-      if c=floor(c) and igcd(a, b, c)=1 and c-b<a then print(a, b, c); end if;
-    end do;
-  end do;
-  */
   @Override
   public Z next() {
     while (true) {

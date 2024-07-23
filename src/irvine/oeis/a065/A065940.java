@@ -32,6 +32,20 @@ public class A065940 extends A000408 {
       }
       return mA.compareTo(state.mA);
     }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (!(obj instanceof State)) {
+        return false;
+      }
+      final State other = (State) obj;
+      return mN.equals(other.mN) && mA.equals(other.mA);
+    }
+
+    @Override
+    public int hashCode() {
+      return mN.hashCode() + mA.hashCode();
+    }
   }
 
   private final TreeSet<State> mA = new TreeSet<>();

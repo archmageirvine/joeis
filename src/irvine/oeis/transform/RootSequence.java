@@ -3,6 +3,7 @@ package irvine.oeis.transform;
 import irvine.math.q.Q;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.SequenceFactory;
 
 /**
  * Take the square root (or some other fractional exponent) of another sequence by using Euler and inverse Euler transform.
@@ -87,14 +88,7 @@ public class RootSequence extends EulerTransform {
     if (debug > 0) {
       System.out.println("RootSequence: offset=" + offset + ", aSeqNo=" + ((seq == null) ? "null" : aSeqNo) + ", pq=" + pq);
     }
-    final RootSequence rs = new RootSequence(offset, seq.skip(skip), pq);
-    for (int iterm = 0; iterm < noTerms; ++iterm) {
-      if (iterm > 0) {
-        System.out.print(",");
-      }
-      System.out.print(rs.next().multiply(factor));
-    } // for iterm
-    System.out.println();
+    SequenceFactory.printTerms(new RootSequence(offset, seq.skip(skip), pq), noTerms);
   } // main
 }
 

@@ -20,7 +20,7 @@ public class A060032 extends Sequence0 {
   public Z next() {
     final Z result = new Z(mAn);
     mAn = mAn.replace("1", "ana").replace("2", "ann");
-    mAn = mAn.replace("a", "1").replace("n", "2");
+    mAn = mAn.replace('a', '1').replace('n', '2');
     return result;
   }
 }

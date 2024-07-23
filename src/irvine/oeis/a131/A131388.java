@@ -10,6 +10,7 @@ import irvine.oeis.AbstractSequence;
  * @author Georg Fischer
  */
 public class A131388 extends AbstractSequence {
+
   private final int mRule;
   private final int mSub;
   private final int mVariant;

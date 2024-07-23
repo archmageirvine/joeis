@@ -503,7 +503,7 @@ public final class ComplexField extends AbstractField<C> implements Exp<C>, Hype
 
   @Override
   public C hypergeometric(final C a, final C b, final C c, final C z) {
-    return ComplexHypergeometric.hypergeometric(a, b, c, z);
+    throw new UnsupportedOperationException();
   }
 
   @Override

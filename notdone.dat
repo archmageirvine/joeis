@@ -2418,3 +2418,4 @@ A071136 Number of reduced positive-definite ternary forms of determinant -n
 A071332 Number of polyiamonds with n cells that tile the plane.
 A071333 Number of polyiamonds with n cells that do not tile the plane
 A071334 Number of polyiamonds with n cells without holes that do not tile the plane.
+A071536 Number of extensions to a semigroup of the (categorical) composition of arrows in the complete directed graph on n labeled nodes

@@ -113,7 +113,7 @@ public class MatrixField<E> extends MatrixRing<E> implements Field<Matrix<E>> {
       return zeros;
     }
     // Now do the Jordan step
-    for (long k = a.rows() - 1; k > 0; --k) {
+    for (long k = a.cols() - 1; k > 0; --k) {
       assert mOne.equals(a.get(k, k)); // Note this is not always exactly true in R due to precision problems
       for (long j = k - 1; j >= 0; --j) {
         final E u = a.get(j, k);
@@ -296,7 +296,8 @@ public class MatrixField<E> extends MatrixRing<E> implements Field<Matrix<E>> {
     }
     // Make a copy to avoid disturbing state of the matrix
     final Matrix<E> t = new DefaultMatrix<>(m, mZero);
-    return t.rows() - reduce(t, null, false);
+    // Following max tries to allow for non-square matrices
+    return t.cols() - reduce(t, null, false);
 //    for (long r = t.rows() - 1; r >= 0; --r) {
 //      for (long c = 0; c < t.cols(); ++c) {
 //        if (t.get(r, c).equals(mZero)) {

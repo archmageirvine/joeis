@@ -23,7 +23,7 @@ import irvine.math.z.ZUtils;
 public class LambdaSequence extends AbstractSequence implements DirectSequence {
 
   private int mN; // current index
-  private int mOffset; // first index
+  private final int mOffset; // first index
   private final Function<Integer, Z> mLambda; // lambda expression n -> f(n)
   private final Z[] mInits; // initial terms
   private final int mInitNo; // mInits.length

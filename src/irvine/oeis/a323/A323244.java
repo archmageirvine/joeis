@@ -3,21 +3,33 @@ package irvine.oeis.a323;
 
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
-import irvine.oeis.LambdaSequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033879;
 import irvine.oeis.a156.A156552;
 
 /**
  * A323244 a(1) = 0; and for n &gt; 1, a(n) = A033879(A156552(n)).
  * @author Georg Fischer
+ * @author Sean A. Irvine
  */
-public class A323244 extends LambdaSequence {
+public class A323244 extends Sequence1 implements DirectSequence {
 
-  private static final DirectSequence A033879 = new A033879();
-  private static final DirectSequence A156552 = new A156552();
+  private final DirectSequence mA033879 = new A033879();
+  private final DirectSequence mA156552 = new A156552();
+  private int mN = 0;
 
-  /** Construct the sequence. */
-  public A323244() {
-    super(1, n -> (n == 1) ? Z.ZERO : A033879.a(A156552.a(n)));
+  @Override
+  public Z a(final Z n) {
+    return Z.ONE.equals(n) ? Z.ZERO : mA033879.a(mA156552.a(n));
+  }
+
+  @Override
+  public Z a(final int n) {
+    return a(Z.valueOf(n));
+  }
+
+  @Override
+  public Z next() {
+    return a(++mN);
   }
 }

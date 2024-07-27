@@ -18,7 +18,7 @@ public class A323243 extends Sequence1 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return Z.ONE.equals(n) ? Z.ZERO: Functions.SIGMA.z(1, mA156552.a(n));
+    return Z.ONE.equals(n) ? Z.ZERO : Functions.SIGMA.z(1, mA156552.a(n));
   }
 
   @Override

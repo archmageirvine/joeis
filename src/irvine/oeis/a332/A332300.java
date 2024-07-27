@@ -13,6 +13,6 @@ public class A332300 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A332300() {
-    super(0, (term, n) -> Functions.LPF.z((term).abs()), "", new A000367());
+    super(0, (term, n) -> Functions.LPF.z(term.abs()), "", new A000367());
   }
 }

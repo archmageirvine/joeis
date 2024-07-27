@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
 
 /**
- * A071563.
+ * A071563 Least k such that there are no middle divisors of k (A071090) through k+n.
  * @author Sean A. Irvine
  */
 public class A071563 extends Sequence0 {

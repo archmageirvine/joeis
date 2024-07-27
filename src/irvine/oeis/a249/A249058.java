@@ -6,7 +6,7 @@ import irvine.oeis.a033.A033844;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A249058 a(n) = number of primes less than the square root of the (2^n)-th prime
+ * A249058 a(n) = number of primes less than the square root of the (2^n)-th prime.
  * @author Georg Fischer
  */
 public class A249058 extends SingleTransformSequence {

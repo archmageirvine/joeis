@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071531.
+ * A071564 Smallest k such that n^8+k^8, n^4+k^4, n^2+k^2, n+k are simultaneously prime.
  * @author Sean A. Irvine
  */
 public class A071564 extends Sequence1 {

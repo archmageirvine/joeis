@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071524.
+ * A071524 Determinant of n X n matrix defined by m(i,j)=1 if i^2+j^2 is a prime, m(i,j)=0 otherwise.
  * @author Sean A. Irvine
  */
 public class A071524 extends Sequence1 {

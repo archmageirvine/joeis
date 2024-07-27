@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a083.A083254;
 
 /**
- * A374134 a(n) = 1 if 2*phi(n) &gt; n, otherwise 0, where phi is Euler&apos;s totient function phi, A000010.
+ * A374134 a(n) = 1 if 2*phi(n) &gt; n, otherwise 0, where phi is Euler's totient function phi, A000010.
  * @author Georg Fischer
  */
 public class A374134 extends LambdaSequence {

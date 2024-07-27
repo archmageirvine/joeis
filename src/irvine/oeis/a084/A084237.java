@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A084237 a(n) = M(10^n), where M(n) is Mertens&apos;s function.
+ * A084237 a(n) = M(10^n), where M(n) is Mertens's function.
  * @author Georg Fischer
  */
 public class A084237 extends LambdaSequence {

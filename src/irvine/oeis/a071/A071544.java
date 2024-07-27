@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071531.
+ * A071544 Smallest k such that n+k divides (k+1)!-k!.
  * @author Sean A. Irvine
  */
 public class A071544 extends Sequence1 {

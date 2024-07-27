@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071531.
+ * A071543 a(n) = det M_n where M_n is the n X n matrix m(i,j) = prime(i+j); a(0) = 1 by convention.
  * @author Sean A. Irvine
  */
 public class A071543 extends Sequence0 {

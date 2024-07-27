@@ -10,7 +10,7 @@ import irvine.oeis.a059.A059906;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A163900 Squared distance between n&apos;s location in A054238 array and A163357 array.
+ * A163900 Squared distance between n's location in A054238 array and A163357 array.
  * @author Georg Fischer
  */
 public class A163900 extends MultiTransformSequence {

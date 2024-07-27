@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a005.A005811;
 
 /**
- * A073334 The so-called &quot;rhythmic infinity system&quot; of Danish composer Per N?rg?rd [Noergaard].
+ * A073334 The so-called "rhythmic infinity system" of Danish composer Per N\u00f8rg\u00e5rd [Noergaard].
  * @author Georg Fischer
  */
 public class A073334 extends LambdaSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A084245 a(n) = Mod[n+(Mod[Prime[n],7]-3),10]
+ * A084245 a(n) = Mod[n+(Mod[Prime[n],7]-3),10].
  * @author Georg Fischer
  */
 public class A084245 extends LambdaSequence {

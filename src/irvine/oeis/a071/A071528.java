@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071524.
+ * A071528 Number of 1's among the elements of the simple continued fraction for e(n)=sum(k=1,n,1/k!).
  * @author Sean A. Irvine
  */
 public class A071528 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.oeis.a006.A006862;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A071531.
+ * A071554 Smallest x &gt; 1 such that x^prime(n) == 1 mod(prime(i)) 2&lt;=i&lt;=n.
  * @author Sean A. Irvine
  */
 public class A071554 extends SimpleTransformSequence {

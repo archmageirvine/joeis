@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071531.
+ * A071559 Smallest k such that n + k and n^2 + k^2 are simultaneously primes.
  * @author Sean A. Irvine
  */
 public class A071559 extends Sequence1 {

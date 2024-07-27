@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065876.
+ * A071570 a(n) = 2 * Sum_{d|n} 2^mu(d).
  * @author Sean A. Irvine
  */
 public class A071570 extends Sequence1 {

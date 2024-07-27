@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071531.
+ * A071558 Smallest k such that n*k + 1 and n*k - 1 are twin primes.
  * @author Sean A. Irvine
  */
 public class A071558 extends Sequence1 {

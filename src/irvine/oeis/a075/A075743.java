@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A075743 For all numbers of the form 6 +- 1 starting with 5,7,11,13,..., &apos;1&apos; indicates prime and &apos;0&apos; indicates composite.
+ * A075743 For all numbers of the form 6 +- 1 starting with 5,7,11,13,..., '1' indicates prime and '0' indicates composite.
  * @author Georg Fischer
  */
 public class A075743 extends LambdaSequence {

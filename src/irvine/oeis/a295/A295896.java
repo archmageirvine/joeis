@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a005.A005940;
 
 /**
- * A295896 a(n) = 1 if there are no odd runs of 1&apos;s in the binary expansion of n followed by a 0 to their right, 0 otherwise.
+ * A295896 a(n) = 1 if there are no odd runs of 1's in the binary expansion of n followed by a 0 to their right, 0 otherwise.
  * @author Georg Fischer
  */
 public class A295896 extends LambdaSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A159950 Dividends where Fibonacci products/sums yield integral quotients
+ * A159950 Dividends where Fibonacci products/sums yield integral quotients.
  * @author Georg Fischer
  */
 public class A159950 extends LambdaSequence {

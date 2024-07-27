@@ -5,7 +5,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A342463 a(n) = A342001(A342456(n)); &quot;wild part&quot; of the arithmetic derivative of A342456(n).
+ * A342463 a(n) = A342001(A342456(n)); "wild part" of the arithmetic derivative of A342456(n).
  * @author Georg Fischer
  */
 public class A342463 extends LambdaSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071524.
+ * A071527 Numbers k such that the simple continued fraction for (1+1/k)^k contains k.
  * @author Sean A. Irvine
  */
 public class A071527 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A374605 a(n) = Sum_{k = 0..n} binomial(n, k)^2*binomial(n+k, k)*binomial(3*n+2*k, n).
+ * A374605 allocated for Peter Bala.
  * @author Georg Fischer
  */
 public class A374605 extends LambdaSequence {

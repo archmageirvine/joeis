@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A175766 Greater of &quot;twin numbers&quot;: Omega(n) = Omega(n - 2^Omega(n)), where Omega is A001222.
+ * A175766 Greater of "twin numbers": Omega(n) = Omega(n - 2^Omega(n)), where Omega is A001222.
  * @author Georg Fischer
  */
 public class A175766 extends FilterNumberSequence {

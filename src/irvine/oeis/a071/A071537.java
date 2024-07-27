@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071531.
+ * A071537 Least integer m &gt;= n such that there exist integers k_n, k_n+1, ..., k_m with nonzero k_n, for which n^(k_n) * (n+1)^(k_n+1) * ... * m^(k_m) = 1.
  * @author Sean A. Irvine
  */
 public class A071537 extends Sequence1 {

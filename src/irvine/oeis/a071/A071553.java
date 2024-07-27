@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071531.
+ * A071553 Least x greater than 1 such that x^n == 1 (mod i) for each i=1,2,3,...,n.
  * @author Sean A. Irvine
  */
 public class A071553 extends Sequence1 {

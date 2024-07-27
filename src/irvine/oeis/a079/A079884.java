@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A079884 Number of comparisons required to create all permutations of n distinct elements using the &quot;streamlined&quot; version of Algorithm L (lexicographic permutation generation) from Knuth&apos;s The Art of Computer Programming, Vol. 4, chapter 7.2.1.2.
+ * A079884 Number of comparisons required to create all permutations of n distinct elements using the "streamlined" version of Algorithm L (lexicographic permutation generation) from Knuth's The Art of Computer Programming, Vol. 4, chapter 7.2.1.2.
  * @author Georg Fischer
  */
 public class A079884 extends MultiTransformSequence {

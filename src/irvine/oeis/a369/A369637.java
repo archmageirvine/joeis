@@ -8,7 +8,7 @@ import irvine.oeis.a051.A051903;
 import irvine.oeis.a328.A328390;
 
 /**
- * A369637 a(n) = 1 if the maximal digit in the primorial base representation of n&apos; is less than the maximal exponent in the prime factorization of n, where n&apos; stands for the arithmetic derivative of n, A003415.
+ * A369637 a(n) = 1 if the maximal digit in the primorial base representation of n' is less than the maximal exponent in the prime factorization of n, where n' stands for the arithmetic derivative of n, A003415.
  * @author Georg Fischer
  */
 public class A369637 extends LambdaSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A064825 Numbers which are the sums of three positive triangular numbers in exactly two different ways.
+ * A071530 Numbers that are the sum of 3 triangular numbers in exactly 2 ways.
  * @author Sean A. Irvine
  */
 public class A071530 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001359;
 
 /**
- * A071531.
+ * A071538 Number of twin prime pairs (p, p+2) with p &lt;= n.
  * @author Sean A. Irvine
  */
 public class A071538 extends A001359 {

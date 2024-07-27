@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A190117 a(n) = Sum_{k=1..n} k*k&apos;, where n&apos; is the arithmetic derivative of n.
+ * A190117 a(n) = Sum_{k=1..n} k*k', where n' is the arithmetic derivative of n.
  * @author Georg Fischer
  */
 public class A190117 extends LambdaSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A329638 Sum of A329644(d) for all such divisors d of n for which that value is positive. Here A329644 is the M√∂bius transform of A323244, the deficiency of A156552(n).
+ * A329638 Sum of A329644(d) for all such divisors d of n for which that value is positive. Here A329644 is the M\u00f6bius transform of A323244, the deficiency of A156552(n).
  * @author Georg Fischer
  */
 public class A329638 extends LambdaSequence {

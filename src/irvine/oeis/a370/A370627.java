@@ -6,7 +6,7 @@ import irvine.oeis.a003.A003683;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A370627 a(n) = 2^(n - 1)*((-1)^(n + 1) + 7*2^n)/3 = 2^(n - 1)*A062092(n).
+ * A370627 allocated for Paul Curtz.
  * @author Georg Fischer
  */
 public class A370627 extends SingleTransformSequence {

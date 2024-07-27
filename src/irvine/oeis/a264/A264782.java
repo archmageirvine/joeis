@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A264782 a(n) = Sum_{d|n} m√∂bius(d)^(n/d).
+ * A264782 a(n) = Sum_{d|n} m\u00f6bius(d)^(n/d).
  * @author Georg Fischer
  */
 public class A264782 extends LambdaSequence {

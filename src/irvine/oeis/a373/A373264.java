@@ -7,7 +7,7 @@ import irvine.oeis.a369.A369001;
 import irvine.oeis.a369.A369004;
 
 /**
- * A373264 a(n) = 1 if n&apos; / gcd(n,n&apos;) is of the form 4m+2, otherwise 0, where n&apos; stands for the arithmetic derivative of n, A003415.
+ * A373264 a(n) = 1 if n' / gcd(n,n') is of the form 4m+2, otherwise 0, where n' stands for the arithmetic derivative of n, A003415.
  * @author Georg Fischer
  */
 public class A373264 extends LambdaSequence {

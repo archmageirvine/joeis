@@ -6,7 +6,7 @@ import irvine.oeis.a010.A010873;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A163540 The absolute direction (0=east, 1=south, 2=west, 3=north) taken by the type I Hilbert&apos;s Hamiltonian walk A163357 at the step n.
+ * A163540 The absolute direction (0=east, 1=south, 2=west, 3=north) taken by the type I Hilbert's Hamiltonian walk A163357 at the step n.
  * @author Georg Fischer
  */
 public class A163540 extends MultiTransformSequence {

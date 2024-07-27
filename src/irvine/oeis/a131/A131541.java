@@ -10,28 +10,23 @@ import irvine.util.array.DynamicByteArray;
  */
 public class A131541 extends AbstractSequence {
 
+  private final int mDigit;
+  private long mN;
+  private DynamicByteArray mBuf = null;
+
   /**
    * Constructor with offset.
    * @param offset first index
    */
-  protected A131541(final int offset) {
+  protected A131541(final int offset, final int digit) {
     super(offset);
+    mDigit = digit;
+    mN = offset - 1;
   }
 
   /** Construct the sequence. */
   public A131541() {
-    super(1);
-  }
-
-  private long mN = start();
-  private DynamicByteArray mBuf = null;
-
-  protected int getSpecialDigit() {
-    return 7;
-  }
-
-  protected long start() {
-    return 0;
+    this(1, 7);
   }
 
   private void mul2() {
@@ -53,7 +48,7 @@ public class A131541 extends AbstractSequence {
   }
 
   private boolean bingo() {
-    final int d = getSpecialDigit();
+    final int d = mDigit;
     int c = 0;
     for (int k = 0; k < mBuf.length(); ++k) {
       if (mBuf.get(k) == d) {

@@ -7,7 +7,7 @@ import irvine.oeis.a010.A010051;
 import irvine.oeis.a341.A341517;
 
 /**
- * A369640 a(n) = 1 if n is composite and n&apos; is a sum of distinct primorial numbers, otherwise 0, where n&apos; stands for the arithmetic derivative of n, A003415.
+ * A369640 a(n) = 1 if n is composite and n' is a sum of distinct primorial numbers, otherwise 0, where n' stands for the arithmetic derivative of n, A003415.
  * @author Georg Fischer
  */
 public class A369640 extends LambdaSequence {

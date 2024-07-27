@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071524.
+ * A071529 Number of 1's among the elements of the simple continued fraction for (1+1/n)^n.
  * @author Sean A. Irvine
  */
 public class A071529 extends Sequence1 {

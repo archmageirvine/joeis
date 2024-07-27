@@ -6,7 +6,7 @@ import irvine.oeis.a103.A103025;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A177141 Primes of the form (6*10^k-7)
+ * A177141 Primes of the form (6*10^k-7).
  * @author Georg Fischer
  */
 public class A177141 extends SingleTransformSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a052.A052126;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A171462 Number of hands a bartender needs to have in order to win at the blind bartender&apos;s problem with n glasses in a cycle.
+ * A171462 Number of hands a bartender needs to have in order to win at the blind bartender's problem with n glasses in a cycle.
  * @author Georg Fischer
  */
 public class A171462 extends SingleTransformSequence {

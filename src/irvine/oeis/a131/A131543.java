@@ -6,10 +6,9 @@ package irvine.oeis.a131;
  */
 public class A131543 extends A131541 {
 
-  @Override
-  protected int getSpecialDigit() {
-    return 9;
+  /** Construct the sequence. */
+  public A131543() {
+    super(0, 9);
   }
-
 }
 

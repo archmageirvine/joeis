@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071524.
+ * A071526 Numbers k such that j mod phi(j) &lt; k mod phi(k) for any j &lt; k.
  * @author Sean A. Irvine
  */
 public class A071526 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a065.A065876;
 
 /**
- * A071531.
+ * A071557 Numbers k such that A065876(k) = k^2-k+1.
  * @author Sean A. Irvine
  */
 public class A071557 extends FilterPositionSequence {

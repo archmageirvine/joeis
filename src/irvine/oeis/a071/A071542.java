@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071531.
+ * A071542 Number of steps to reach 0 starting with n and using the iterated process : x -&gt; x - (number of 1's in binary representation of x).
  * @author Sean A. Irvine
  */
 public class A071542 extends Sequence0 {

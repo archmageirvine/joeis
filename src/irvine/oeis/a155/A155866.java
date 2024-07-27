@@ -7,7 +7,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A155866 A &apos;Morgan Voyce&apos; transform of the Bell numbers A000110.
+ * A155866 A 'Morgan Voyce' transform of the Bell numbers A000110.
  * @author Georg Fischer
  */
 public class A155866 extends LambdaSequence {

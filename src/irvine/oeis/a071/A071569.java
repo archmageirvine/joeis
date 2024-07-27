@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065876.
+ * A071569 Det(M_n) where M_n is the n X n matrix m(i,j)=1 if floor(i/j) is even, 0 otherwise.
  * @author Sean A. Irvine
  */
 public class A071569 extends Sequence1 {

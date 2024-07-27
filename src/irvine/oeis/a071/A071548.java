@@ -11,7 +11,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A071531.
+ * A071548 Determinant of the n X n matrix whose element (i,j) equals f(|i-j|) where f(n) is 1 if the sum of middle divisors (A071090) &gt; 0, else 0.
  * @author Sean A. Irvine
  */
 public class A071548 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A065876.
+ * A071572 Least k such that nextprime(k*prime(n)) - k*prime(n) is nonprime.
  * @author Sean A. Irvine
  */
 public class A071572 extends A000040 {

@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a064.A064706;
 
 /**
- * A276273 Replacing every &quot;mixed pair&quot; of integers (as defined in the comments) with the smaller integer of the pair rebuilds the sequence.
+ * A276273 Replacing every "mixed pair" of integers (as defined in the comments) with the smaller integer of the pair rebuilds the sequence.
  * @author Georg Fischer
  */
 public class A276273 extends LambdaSequence {

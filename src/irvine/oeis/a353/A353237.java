@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A353237 a(n) = Sum_{d|n} (-1)^(d&apos;), where d&apos; is the arithmetic derivative of d (A003415).
+ * A353237 a(n) = Sum_{d|n} (-1)^(d'), where d' is the arithmetic derivative of d (A003415).
  * @author Georg Fischer
  */
 public class A353237 extends LambdaSequence {

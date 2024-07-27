@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A071531.
+ * A071531 Smallest exponent r such that n^r contains at least one zero digit (in base 10).
  * @author Sean A. Irvine
  */
 public class A071531 extends Sequence2 {

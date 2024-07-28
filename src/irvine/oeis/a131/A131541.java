@@ -26,7 +26,7 @@ public class A131541 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A131541() {
-    this(1, 7);
+    this(0, 7);
   }
 
   private void mul2() {
@@ -48,10 +48,9 @@ public class A131541 extends AbstractSequence {
   }
 
   private boolean bingo() {
-    final int d = mDigit;
     int c = 0;
     for (int k = 0; k < mBuf.length(); ++k) {
-      if (mBuf.get(k) == d) {
+      if (mBuf.get(k) == mDigit) {
         ++c;
       } else if (c == mN) {
         return true;

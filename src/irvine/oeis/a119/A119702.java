@@ -14,6 +14,6 @@ public class A119702 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A119702() {
-    super(0, n -> Z.valueOf(n).pow(Z.TWO).multiply(Binomial.binomial(2 * n, n)).multiply(Functions.FIBONACCI.z(n)));
+    super(0, n -> Z.valueOf(n).pow(Z.TWO).multiply(Binomial.binomial(2L * n, n)).multiply(Functions.FIBONACCI.z(n)));
   }
 }

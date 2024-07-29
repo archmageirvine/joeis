@@ -16,6 +16,6 @@ public class A182084 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A182084() {
-    super(2, n -> Z.valueOf(3 * n).subtract(A032742.a(n)));
+    super(2, n -> Z.valueOf(3L * n).subtract(A032742.a(n)));
   }
 }

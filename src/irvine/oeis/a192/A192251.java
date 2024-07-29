@@ -14,6 +14,6 @@ public class A192251 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A192251() {
-    super(1, n -> Integers.SINGLETON.sum(0, n - 1, i -> Functions.FIBONACCI.z(i).multiply(Binomial.binomial(2 * i, i))));
+    super(1, n -> Integers.SINGLETON.sum(0, n - 1, i -> Functions.FIBONACCI.z(i).multiply(Binomial.binomial(2L * i, i))));
   }
 }

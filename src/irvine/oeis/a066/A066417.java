@@ -50,7 +50,7 @@ public class A066417 extends Sequence1 implements DirectSequence {
     return Functions.SIGMA1.z(2 * n + 1)
       .add(Functions.SIGMA1.z(2 * n - 1))
       .add(Functions.SIGMA1.z(m).shiftLeft(k + 1))
-      .subtract(6 * n + 2);
+      .subtract(6L * n + 2);
   }
 
 }

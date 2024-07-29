@@ -12,6 +12,6 @@ public class A191545 extends DispersionArray {
 
   /** Construct the sequence. */
   public A191545() {
-    super(1, n -> Z.valueOf(9 * n / 4));
+    super(1, n -> Z.valueOf(9L * n / 4));
   }
 }

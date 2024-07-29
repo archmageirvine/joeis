@@ -13,6 +13,6 @@ public class A133725 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A133725() {
-    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> Functions.MOBIUS.z(n / d).multiply(d).multiply(3 * d - 1).divide(2)));
+    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> Functions.MOBIUS.z(n / d).multiply(d).multiply(3L * d - 1).divide(2)));
   }
 }

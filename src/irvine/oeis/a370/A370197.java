@@ -13,6 +13,6 @@ public class A370197 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A370197() {
-    super(1, n -> Binomial.binomial(2 * n - 1, n).subtract(Binomial.binomial(n, 2).multiply(Binomial.binomial(n - 1, 2))).subtract(Binomial.binomial(n, 3).multiply(Binomial.binomial(n - 1, 3))).subtract(Z.valueOf(n).multiply(Z.valueOf(n - 1))).subtract(Z.ONE));
+    super(1, n -> Binomial.binomial(2L * n - 1, n).subtract(Binomial.binomial(n, 2).multiply(Binomial.binomial(n - 1, 2))).subtract(Binomial.binomial(n, 3).multiply(Binomial.binomial(n - 1, 3))).subtract(Z.valueOf(n).multiply(Z.valueOf(n - 1))).subtract(Z.ONE));
   }
 }

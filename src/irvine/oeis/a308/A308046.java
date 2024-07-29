@@ -13,6 +13,6 @@ public class A308046 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A308046() {
-    super(1, n -> Z.TWO.multiply(Functions.NEXT_PRIME.z(n - 1)).subtract(Z.valueOf(2 * n)));
+    super(1, n -> Z.TWO.multiply(Functions.NEXT_PRIME.z(n - 1)).subtract(Z.valueOf(2L * n)));
   }
 }

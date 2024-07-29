@@ -19,6 +19,6 @@ public class A354346 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A354346() {
-    super(1, n -> Z.valueOf(2 * n).subtract(A064989.a(Functions.SIGMA1.z(Functions.SIGMA1.z(A003961.a(n))))));
+    super(1, n -> Z.valueOf(2L * n).subtract(A064989.a(Functions.SIGMA1.z(Functions.SIGMA1.z(A003961.a(n))))));
   }
 }

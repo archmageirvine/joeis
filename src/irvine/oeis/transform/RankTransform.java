@@ -21,7 +21,6 @@ public class RankTransform extends AbstractSequence {
 
   private final Sequence mSeqA; // underlying sequence
   private Z mA; // a(n)
-  private long mH; // counting function
   private int mN; // current index n
   private final ArrayList<Z> mR; // current rank
 
@@ -46,7 +45,6 @@ public class RankTransform extends AbstractSequence {
     mR.add(Z.ZERO); // [0] is not used
     mR.add(Z.ONE);
     mA = mSeqA.next();
-    mH = mA.intValueExact();
   }
 
   @Override
@@ -57,14 +55,14 @@ public class RankTransform extends AbstractSequence {
     // a(n-1)
     final Z a1 = mA;
     mA = mSeqA.next();
-    mH = 0;
+    long h = 0;
     for (int i = 1; i < mN; ++i) {
       final Z ri = mR.get(i);
       if (a1.compareTo(ri) <= 0 && ri.compareTo(mA) < 0) {
-        ++mH;
+        ++h;
       }
     }
-    final Z result = mR.get(mN - 1).add(mH + 1);
+    final Z result = mR.get(mN - 1).add(h + 1);
     mR.add(result);
     return result;
   }

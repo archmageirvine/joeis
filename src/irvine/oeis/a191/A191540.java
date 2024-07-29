@@ -12,6 +12,6 @@ public class A191540 extends DispersionArray {
 
   /** Construct the sequence. */
   public A191540() {
-    super(1, n -> CR.SQRT2.multiply(2 * n).floor());
+    super(1, n -> CR.SQRT2.multiply(2L * n).floor());
   }
 }

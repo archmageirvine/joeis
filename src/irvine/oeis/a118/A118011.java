@@ -13,6 +13,6 @@ public class A118011 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A118011() {
-    super(1, (term, n) -> Z.valueOf(4 * n).subtract(term), "", new A001614());
+    super(1, (term, n) -> Z.valueOf(4L * n).subtract(term), "", new A001614());
   }
 }

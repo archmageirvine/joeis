@@ -18,7 +18,7 @@ public class HypergeometricSequence extends AbstractSequence implements DirectSe
 
   protected int mN; // index of the next sequence element to be computed
   private final int mP; // number of Pochhammer symbols in the "numerator".
-  private final int mQ; // number of Pochhammer symbols in the "denominator".
+  //private final int mQ; // number of Pochhammer symbols in the "denominator".
   private final Q[][] mPolyArray; // polynomials as rational coefficients of <code>n^i, i=0..m</code>
   private final int mPolyLen; // size of <code>mPolyArray</code>
   private boolean mNonZero; // false if one of the Pochhammer symbols became zero, true otherwise
@@ -101,7 +101,7 @@ public class HypergeometricSequence extends AbstractSequence implements DirectSe
     mOffset = offset;
     mN = offset - 1;
     mP = p;
-    mQ = q;
+    //mQ = q;
     mPolyArray = polyArray;
     mPolyLen = mPolyArray.length;
     // index for mInits
@@ -310,7 +310,6 @@ public class HypergeometricSequence extends AbstractSequence implements DirectSe
     int p = 1; // number of Pochhammer symbols in the "numerator"
     int q = 1; // number of Pochhammer symbols in the "denominator"
     String polyString = "[[-1],[1],[0,1]]"; // A024000
-    String initString = "";
     int offset = 0;
     int noTerms = 32;
     int iarg = 0;
@@ -321,8 +320,6 @@ public class HypergeometricSequence extends AbstractSequence implements DirectSe
           debug = Integer.parseInt(args[iarg++]);
         } else if ("-h".equals(opt)) {
           polyString = args[iarg++];
-        } else if ("-i".equals(opt)) {
-          initString = args[iarg++];
         } else if ("-n".equals(opt)) {
           noTerms = Integer.parseInt(args[iarg++]);
         } else if ("-o".equals(opt)) {

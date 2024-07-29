@@ -13,6 +13,6 @@ public class A191537 extends DispersionArray {
 
   /** Construct the sequence. */
   public A191537() {
-    super(1, n -> Z.valueOf(4 * n).subtract(CR.SQRT2.multiply(n).floor()));
+    super(1, n -> Z.valueOf(4L * n).subtract(CR.SQRT2.multiply(n).floor()));
   }
 }

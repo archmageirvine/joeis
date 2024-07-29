@@ -14,6 +14,6 @@ public class A280316 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A280316() {
-    super(1, n -> Integers.SINGLETON.sum(1, n, i -> Z.valueOf(i).pow(Z.TWO).add(Z.valueOf(2 * n - i).pow(Z.TWO)).multiply(Functions.MOEBIUS.z(i).pow(Z.TWO).multiply(Functions.MOEBIUS.z(2 * n - i).pow(Z.TWO)))));
+    super(1, n -> Integers.SINGLETON.sum(1, n, i -> Z.valueOf(i).pow(Z.TWO).add(Z.valueOf(2L * n - i).pow(Z.TWO)).multiply(Functions.MOEBIUS.z(i).pow(Z.TWO).multiply(Functions.MOEBIUS.z(2 * n - i).pow(Z.TWO)))));
   }
 }

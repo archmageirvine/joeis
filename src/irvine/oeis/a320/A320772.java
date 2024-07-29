@@ -12,6 +12,6 @@ public class A320772 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A320772() {
-    super(1, n -> Z.valueOf(4 * n - 29).square().add(58));
+    super(1, n -> Z.valueOf(4L * n - 29).square().add(58));
   }
 }

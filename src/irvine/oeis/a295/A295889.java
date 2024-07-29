@@ -13,6 +13,6 @@ public class A295889 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A295889() {
-    super(0, n -> Functions.PARITY.z(Z.ONE.add(Functions.DIGIT_SUM.z(2, n)).add(Functions.DIGIT_SUM.z(2, 3 * n))));
+    super(0, n -> Functions.PARITY.z(Z.ONE.add(Functions.DIGIT_SUM.z(2, n)).add(Functions.DIGIT_SUM.z(2, 3L * n))));
   }
 }

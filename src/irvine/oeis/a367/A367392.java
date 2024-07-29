@@ -12,6 +12,6 @@ public class A367392 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A367392() {
-    super(0, n -> Functions.FACTORIAL.z(n).multiply(Functions.STIRLING2.z(2 * n + 1, n)));
+    super(0, n -> Functions.FACTORIAL.z(n).multiply(Functions.STIRLING2.z(2L * n + 1, n)));
   }
 }

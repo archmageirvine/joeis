@@ -13,6 +13,6 @@ public class A183068 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A183068() {
-    super(0, n -> Binomial.binomial(2 * n, n).multiply(Integers.SINGLETON.sum(0, n, k -> Binomial.binomial(n, k).square().multiply(Binomial.binomial(2 * n + 2 * k, 2 * k)).multiply(Binomial.binomial(2 * k, k)))));
+    super(0, n -> Binomial.binomial(2L * n, n).multiply(Integers.SINGLETON.sum(0, n, k -> Binomial.binomial(n, k).square().multiply(Binomial.binomial(2L * n + 2L * k, 2L * k)).multiply(Binomial.binomial(2L * k, k)))));
   }
 }

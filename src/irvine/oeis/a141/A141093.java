@@ -12,6 +12,6 @@ public class A141093 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A141093() {
-    super(1, n -> Functions.PRIME.z(Functions.PRIME.z(2 * n).subtract(2 * n)).subtract(2 * n));
+    super(1, n -> Functions.PRIME.z(Functions.PRIME.z(2 * n).subtract(2L * n)).subtract(2L * n));
   }
 }

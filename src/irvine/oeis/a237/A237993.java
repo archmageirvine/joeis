@@ -12,6 +12,6 @@ public class A237993 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A237993() {
-    super(0, n -> (Functions.STIRLING1.z(3 * n, n)).abs());
+    super(0, n -> (Functions.STIRLING1.z(3L * n, n)).abs());
   }
 }

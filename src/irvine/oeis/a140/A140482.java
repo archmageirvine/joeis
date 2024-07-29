@@ -13,6 +13,6 @@ public class A140482 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A140482() {
-    super(1, n -> Z.valueOf(2 * n).add(Functions.SIGMA0.z(n)));
+    super(1, n -> Z.valueOf(2L * n).add(Functions.SIGMA0.z(n)));
   }
 }

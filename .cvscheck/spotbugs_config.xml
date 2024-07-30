@@ -21,8 +21,9 @@
      <!-- SPP is a stupid test about non-standard math constant -->
      <!-- CNT complains about values code to pi -->
      <!-- CT don't complain about exceptions in constructors -->
+     <!-- DLC only for A070566, but filtering that one class did not work -->
      <Match classregex=".*">
-        <BugCode name="SnVI,PZLA,BC,SPP,CNT,CT,EI,EI2,MS,ACEM,BL,CBX,CC,CFS,CLI,DMC,DSOC,EXS,FCCD,FPL,IMC,ITC,ITU,JVR,MDM,MOM,MRC,NOS,OCP,OPM,PCOA,PIS,PL,PMB,PRMC,PSC,S508C,SCII,SEC,SLS,UMTP,CNC"/>
+        <BugCode name="SnVI,PZLA,BC,SPP,CNT,CT,EI,EI2,MS,ACEM,BL,CBX,CC,CFS,CLI,DMC,DSOC,EXS,FCCD,FPL,IMC,ITC,ITU,JVR,MDM,MOM,MRC,NOS,OCP,OPM,PCOA,PIS,PL,PMB,PRMC,PSC,S508C,SCII,SEC,SLS,UMTP,CNC,DLC"/>
      </Match>
 
      <Match classregex=".*">
@@ -226,9 +227,6 @@
      </Match>
      <Match classregex="irvine.oeis.a055.A055187">
        <BugCode name="LSC"/>
-     </Match>
-     <Match classregex="irvine.oeis.a070.A070566">
-       <BugCode name="DLC"/>
      </Match>
 
      <!-- I am allowed to ignore return values and have absolute paths in a test -->

@@ -6,7 +6,6 @@ import irvine.oeis.a005.A005875;
 
 /**
  * A071609 Squared radii of the spheres around (0,0,0) that contain record numbers of lattice points.
- *
  * @author Georg Fischer
  */
 public class A071609 extends RecordPositionSequence {

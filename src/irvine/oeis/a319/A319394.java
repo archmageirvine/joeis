@@ -5,6 +5,7 @@ import irvine.math.MemoryFunctionInt2;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
@@ -13,10 +14,6 @@ import irvine.oeis.triangle.Triangle;
  * @author Georg Fischer
  */
 public class A319394 extends Triangle {
-
-  {
-    setOffset(0);
-  }
 
   /**
    * Constructor with offset.
@@ -34,16 +31,6 @@ public class A319394 extends Triangle {
     hasRAM(true);
   }
 
-  /* Maple:
-    h:= proc(n) option remember; `if`(n<1, 0, `if`((t->
-          issqr(t+4) or issqr(t-4))(5*n^2), n, h(n-1)))
-        end:
-    b:= proc(n, i) option remember; `if`(n=0 or i=1, x^n,
-          b(n, h(i-1))+expand(x*b(n-i, h(min(n-i, i)))))
-        end:
-    T:= n-> (p-> seq(coeff(p, x, i), i=0..n))(b(n, h(n))):
-    seq(T(n), n=0..20);
-  */
   private final MemoryFunction1<Integer> mH = new MemoryFunction1<>() {
     @Override
     protected Integer compute(final int n) {
@@ -51,7 +38,7 @@ public class A319394 extends Triangle {
         return 0;
       }
       final int t = 5 * n * n;
-      return Z.valueOf(t + 4).isSquare() || Z.valueOf(t - 4).isSquare() ? n : get(n - 1);
+      return Predicates.SQUARE.is(t + 4) || Predicates.SQUARE.is(t - 4) ? Integer.valueOf(n) : get(n - 1);
     }
   };
 

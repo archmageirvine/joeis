@@ -2,6 +2,7 @@ package irvine.oeis.a338;
 
 import irvine.math.MemoryFunction1;
 import irvine.math.MemoryFunctionInt3;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -19,7 +20,7 @@ public class A338585 extends Sequence0 {
       if (n < 1) {
         return 0;
       }
-      return Z.valueOf(8L * n + 1).isSquare() ? n : get(n - 1);
+      return Predicates.SQUARE.is(8L * n + 1) ? Integer.valueOf(n) : get(n - 1);
     }
   };
 

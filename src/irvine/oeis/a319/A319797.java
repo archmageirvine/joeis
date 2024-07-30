@@ -5,6 +5,7 @@ import irvine.math.MemoryFunctionInt2;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
@@ -25,7 +26,7 @@ public class A319797 extends Triangle {
   private final MemoryFunction1<Integer> mH = new MemoryFunction1<>() {
     @Override
     protected Integer compute(final int n) {
-      return n < 1 ? 0 : Z.valueOf(8L * n + 1).isSquare() ? n : get(n - 1);
+      return n < 1 ? 0 : Predicates.SQUARE.is(8L * n + 1) ? Integer.valueOf(n) : get(n - 1);
     }
   };
 

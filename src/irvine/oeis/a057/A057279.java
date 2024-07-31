@@ -1,6 +1,7 @@
 package irvine.oeis.a057;
 
 import irvine.math.graph.Graph;
+import irvine.math.graph.GraphUtils;
 import irvine.math.nauty.DirectedGraph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
@@ -25,16 +26,6 @@ public class A057279 extends Sequence1 implements GraphProcessor {
   private long[] mCounts = {};
 
   private final class DigraphCheck extends DirectedGraph {
-    private void markAll(final Graph g, final boolean[] reachable, final int current) {
-      if (reachable[current]) {
-        return;
-      }
-      reachable[current] = true;
-      int j = -1;
-      while ((j = g.nextVertex(current, j)) >= 0) {
-        markAll(g, reachable, j);
-      }
-    }
 
     private boolean testQuasiInitiallyConnected(final Graph g, final int v, final boolean[][] reachable) {
       for (int k = 0; k < g.order(); ++k) {
@@ -50,7 +41,7 @@ public class A057279 extends Sequence1 implements GraphProcessor {
       // This reachability test is not as low-level as it could be, but we do make checks as we go
       final boolean[][] reachable = new boolean[g.order()][g.order()];
       for (int k = 0; k < g.order(); ++k) {
-        markAll(g, reachable[k], k);
+        GraphUtils.markAll(g, reachable[k], k);
       }
       // Test for quasi-initially connectedness
       for (int k = 0; k < g.order(); ++k) {

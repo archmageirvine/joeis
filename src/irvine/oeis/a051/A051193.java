@@ -1,24 +1,35 @@
 package irvine.oeis.a051;
 
+import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
  * A051193 a(n) = Sum_{k=1..n} lcm(n,k).
  * @author Sean A. Irvine
  */
-public class A051193 extends Sequence1 {
+public class A051193 extends Sequence1 implements DirectSequence {
 
-  protected long mN = 0;
+  protected int mN = 0;
 
   @Override
   public Z next() {
-    ++mN;
-    Z sum = Z.ZERO;
-    for (long k = 1; k <= mN; ++k) {
-      sum = sum.add(Functions.LCM.l(mN, k));
+    return a(++mN);
+  }
+
+  @Override
+  public Z a(final Z n) {
+    Z sum = Z.ONE;
+    for (final Z d : Jaguar.factor(n).divisors()) {
+      sum = sum.add(d.multiply(Functions.PHI.z(d)));
     }
-    return sum;
+    return sum.multiply(n).divide2();
+  }
+
+  @Override
+  public Z a(final int n) {
+    return a(Z.valueOf(n));
   }
 }

@@ -12,7 +12,7 @@ import irvine.oeis.Sequence1;
  */
 public class A018804 extends Sequence1 implements DirectSequence {
 
-  private long mN = 0;
+  private int mN = 0;
 
   @Override
   public Z a(final int n) {
@@ -30,10 +30,6 @@ public class A018804 extends Sequence1 implements DirectSequence {
 
   @Override
   public Z next() {
-    Z sum = Z.ZERO;
-    for (final Z d : Jaguar.factor(++mN).divisors()) {
-      sum = sum.add(Functions.PHI.z(d).multiply(mN / d.longValue()));
-    }
-    return sum;
+    return a(++mN);
   }
 }

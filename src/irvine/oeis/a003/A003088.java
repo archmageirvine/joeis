@@ -1,6 +1,7 @@
 package irvine.oeis.a003;
 
 import irvine.math.graph.Graph;
+import irvine.math.graph.GraphUtils;
 import irvine.math.nauty.DirectedGraph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
@@ -19,24 +20,13 @@ public class A003088 extends Sequence0 implements GraphProcessor {
   private static final class DigraphCheck extends DirectedGraph {
     private long mCount = 0;
 
-    private void markAll(final Graph g, final boolean[] reachable, final int current) {
-      if (reachable[current]) {
-        return;
-      }
-      reachable[current] = true;
-      int j = -1;
-      while ((j = g.nextVertex(current, j)) >= 0) {
-        markAll(g, reachable, j);
-      }
-    }
-
     @Override
     protected void process(final Graph g) {
       //System.out.println(g);
       // This reachability test is not as low-level as it could be, but we do make checks as we go
       final boolean[][] reachable = new boolean[g.order()][g.order()];
       for (int k = 0; k < g.order(); ++k) {
-        markAll(g, reachable[k], k);
+        GraphUtils.markAll(g, reachable[k], k);
         for (int j = 0; j < k; ++j) {
           if (!reachable[k][j] && !reachable[j][k]) {
             return;

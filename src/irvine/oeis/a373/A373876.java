@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a098.A098097;
 
 /**
- * A373876 allocated for Edward Krogius.
+ * A373876 Number of n X n matrices over GF(3) whose permanent is 0.
  * @author Sean A. Irvine
  */
 public class A373876 extends A098097 {

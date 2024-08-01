@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A177876 The number of distinct prime factors in Lucas-Lehmer numbers A003010(k-2) divisible by 2^k-1.
+ * A177876 a(n) is the number of distinct prime factors in Lucas-Lehmer numbers A003010(k-2)/(2^k-1), where k = A000043(n+1).
  *
  * @author Georg Fischer
  */

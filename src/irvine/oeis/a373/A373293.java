@@ -4,7 +4,7 @@ package irvine.oeis.a373;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A373293 Number of edge covers of F_{n,3}.
+ * A373293 Number of edge covers of the fan graph F_{n,3}.
  * @author Georg Fischer
  */
 public class A373293 extends GeneratingFunctionSequence {

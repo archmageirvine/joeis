@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A055977 Product_{q|n} [p(q)] divides p(n), where p(n) is number of unrestricted partitions of n and the product is over all distinct primes q that divide n.
+ * A055977 Numbers k such that Product_{q|k} p(q) divides p(k), where p(k) is number of unrestricted partitions of k and the product is over all distinct primes q that divide k.
  * @author Sean A. Irvine
  */
 public class A055977 extends Sequence0 {

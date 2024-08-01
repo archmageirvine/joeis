@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A368655 Binomial transform of Gould&apos;s sequence (A001316).
+ * A368655 Binomial transform of Gould's sequence (A001316).
  * @author Georg Fischer
  */
 public class A368655 extends LambdaSequence {

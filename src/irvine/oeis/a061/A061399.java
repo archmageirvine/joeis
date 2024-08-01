@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A061399 Number of nonsquarefree integers between primes p(n) and p(n+1).
+ * A061399 Number of nonsquarefree integers between primes prime(n) and prime(n+1).
  * @author Sean A. Irvine
  */
 public class A061399 extends A000040 {

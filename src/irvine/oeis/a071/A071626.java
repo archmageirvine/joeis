@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071532.
+ * A071626 Number of distinct exponents in the prime factorization of n!.
  * @author Sean A. Irvine
  */
 public class A071626 extends Sequence1 {

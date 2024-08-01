@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A275938 Numbers n such that d(n) is prime while sigma(n) is not prime (where d(n) = A000005(n) and sigma(n) = A000203(n)).
+ * A275938 Numbers m such that d(m) is prime while sigma(m) is not prime (where d(m) = A000005(m) and sigma(m) = A000203(m)).
  * @author Georg Fischer
  */
 public class A275938 extends FilterNumberSequence {

@@ -8,7 +8,7 @@ import irvine.oeis.a267.A267116;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A340675 Exponential of Mangoldt function conjugated by Tek&apos;s flip: a(n) = A225546(A014963(A225546(n))).
+ * A340675 Exponential of Mangoldt function conjugated by Tek's flip: a(n) = A225546(A014963(A225546(n))).
  * @author Georg Fischer
  */
 public class A340675 extends SingleTransformSequence {

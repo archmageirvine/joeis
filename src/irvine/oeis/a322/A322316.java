@@ -6,7 +6,7 @@ import irvine.oeis.a244.A244417;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A322316 Lexicographically earliest such sequence a that a(i) = a(j) =&gt; A122841(i) = A122841(j) and A244417(i) = A244417(j), for all i, j,
+ * A322316 Lexicographically earliest such sequence a that a(i) = a(j) =&gt; A122841(i) = A122841(j) and A244417(i) = A244417(j), for all i, j,.
  * @author Georg Fischer
  */
 public class A322316 extends RestrictedGrowthTransformSequence {

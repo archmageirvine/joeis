@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A071624 Numbers n such that the set InvPhi[96n+2] is nonempty.
+ * A071624 Numbers k such that phi(m) = 96*k+2 has no solution.
  * @author Georg Fischer
  */
 public class A071624 extends FilterNumberSequence {

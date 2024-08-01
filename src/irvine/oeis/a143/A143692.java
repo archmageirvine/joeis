@@ -8,7 +8,7 @@ import irvine.oeis.a066.A066829;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A143692 Permutation of natural numbers: If n is k-th number with an odd number of prime divisors (counted with multiplicity) [i.e., n = A026424(k)], a(n) = 2*k, otherwise, when n is k-th number with an even number of prime divisors [i.e., n = A028260(k)], a(n) = (
+ * A143692 Permutation of natural numbers: If n is k-th number with an odd number of prime divisors (counted with multiplicity) [i.e., n = A026424(k)], a(n) = 2*k, otherwise, when n is k-th number with an even number of prime divisors [i.e., n = A028260(k)], a(n) = (2*k)-1.
  * @author Georg Fischer
  */
 public class A143692 extends MultiTransformSequence {

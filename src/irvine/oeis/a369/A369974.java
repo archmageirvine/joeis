@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirichletInverseSequence;
 
 /**
- * A369974 Dirichlet inverse of A369001, where A369001(n) = 1 if n&apos; / gcd(n,n&apos;) is even, otherwise 0, and n&apos; stands for the arithmetic derivative of n, A003415.
+ * A369974 Dirichlet inverse of A369001, where A369001(n) = 1 if n' / gcd(n,n') is even, otherwise 0, and n' stands for the arithmetic derivative of n, A003415.
  * @author Georg Fischer
  */
 public class A369974 extends AbstractSequence {

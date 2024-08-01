@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.FiveNeighbor2DAutomaton;
 
 /**
- * A270275 Number of active (ON,black) cells at stage 2^n-1 of the two-dimensional cellular automaton defined by "Rule 137", based on the 5-celled von Neumann neighborhood.
+ * A270275 Number of active (ON, black) cells at stage 2^n-1 of the two-dimensional cellular automaton defined by "Rule 137", based on the 5-celled von Neumann neighborhood.
  * @author Georg Fischer
  */
 public class A270275 extends FiveNeighbor2DAutomaton {

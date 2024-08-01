@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A375012 A cycle of length 5 when iterating x <- phi(sigma(x)).
+ * A375012 A cycle of length 5 when iterating x &lt;- phi(sigma(x)).
  * @author Georg Fischer
  */
 public class A375012 extends AbstractSequence {

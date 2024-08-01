@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071576 a(n) = least k such that 2ik + 1 is prime for all 1 &lt;= i &lt;= n.
+ * A071577 Smallest k such that 2ik+1 is squarefree for 1&lt;=i&lt;=n.
  * @author Sean A. Irvine
  */
 public class A071577 extends Sequence1 {

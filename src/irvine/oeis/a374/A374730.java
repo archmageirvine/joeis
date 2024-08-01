@@ -8,7 +8,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a000.A000523;
 
 /**
- * A374730 allocated for Dar\u00edo Clavijo.
+ * A374730 a(n) = n * binomial(floor(log_2(n)) + 1, 2).
  * @author Georg Fischer
  */
 public class A374730 extends LambdaSequence {

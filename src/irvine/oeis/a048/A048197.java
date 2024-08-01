@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A048197 Numbers n for which binomial(n, floor(n/2)) has more unitary than non-unitary divisors.
+ * A048197 Numbers k for which binomial(k, floor(k/2)) has more unitary than non-unitary divisors.
  * @author Sean A. Irvine
  */
 public class A048197 extends Sequence1 {

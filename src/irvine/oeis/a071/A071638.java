@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071532.
+ * A071638 Numbers n such that phi(n) = b(n,1)^b(n,0) where b(n,1) is the number of 1's in binary representation of n and b(n,0) the number of 0's.
  * @author Sean A. Irvine
  */
 public class A071638 extends Sequence1 {

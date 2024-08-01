@@ -4,7 +4,7 @@ package irvine.oeis.a271;
 import irvine.oeis.DifferenceSequence;
 
 /**
- * A271413 First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 358", based on the 5-celled von Neumann neighborhood.
+ * A271413 First differences of number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 358", based on the 5-celled von Neumann neighborhood.
  * @author Georg Fischer
  */
 public class A271413 extends DifferenceSequence {

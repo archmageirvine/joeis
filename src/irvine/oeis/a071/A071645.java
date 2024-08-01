@@ -7,7 +7,7 @@ import irvine.oeis.a051.A051193;
 import irvine.oeis.a072.A072109;
 
 /**
- * A071532.
+ * A071645 a(n) = A051193(A072109(n))/A018804(A072109(n)).
  * @author Sean A. Irvine
  */
 public class A071645 extends A072109 {

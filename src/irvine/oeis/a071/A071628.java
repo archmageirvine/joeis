@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071532.
+ * A071628 Smallest m such that (2n-1)*2^m is totient, that is, in A002202, or -1 if (2n-1)*2^m is never a totient.
  * @author Sean A. Irvine
  */
 public class A071628 extends Sequence1 {

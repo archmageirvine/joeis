@@ -5,7 +5,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a272.A272828;
 
 /**
- * A273174 First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 603", based on the 5-celled von Neumann neighborhood.
+ * A273174 First differences of number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 603", based on the 5-celled von Neumann neighborhood.
  * @author Georg Fischer
  */
 public class A273174 extends DifferenceSequence {

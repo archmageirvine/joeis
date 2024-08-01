@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000010;
 
 /**
- * A071576.
+ * A071601 Numbers k such that k and phi(k) have the same number of 1's in their binary representation.
  * @author Sean A. Irvine
  */
 public class A071601 extends FilterPositionSequence {

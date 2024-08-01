@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.FiveNeighbor2DAutomaton;
 
 /**
- * A272787 Number of active (ON,black) cells at stage 2^n-1 of the two-dimensional cellular automaton defined by "Rule 534", based on the 5-celled von Neumann neighborhood.
+ * A272787 Number of active (ON, black) cells at stage 2^n-1 of the two-dimensional cellular automaton defined by "Rule 534", based on the 5-celled von Neumann neighborhood.
  * @author Georg Fischer
  */
 public class A272787 extends FiveNeighbor2DAutomaton {

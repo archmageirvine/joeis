@@ -7,7 +7,7 @@ import irvine.oeis.CachedSequence;
 import irvine.oeis.DirectSequence;
 
 /**
- * A071576.
+ * A071585 Numerator of the continued fraction expansion whose terms are the first-order differences of exponents in the binary representation of 4*n, with the exponents of 2 being listed in descending order.
  * @author Sean A. Irvine
  */
 public class A071585 extends CachedSequence {

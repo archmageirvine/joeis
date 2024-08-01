@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 import irvine.math.z.Z;
 
 /**
- * A071541 Number of k's less than or equal to 10^n such that there are middle divisors of k (A071090).
+ * A071541 Number of k's less than or equal to 10^n such that there are middle divisors of k (A071562).
  * @author Sean A. Irvine
  */
 public class A071541 extends A071090 {

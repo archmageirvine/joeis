@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.FiveNeighbor2DAutomaton;
 
 /**
- * A270019 Number of active (ON,black) cells at stage 2^n-1 of the two-dimensional cellular automaton defined by "Rule 51", based on the 5-celled von Neumann neighborhood.
+ * A270019 Number of active (ON, black) cells at stage 2^n-1 of the two-dimensional cellular automaton defined by "Rule 51", based on the 5-celled von Neumann neighborhood.
  * @author Georg Fischer
  */
 public class A270019 extends FiveNeighbor2DAutomaton {

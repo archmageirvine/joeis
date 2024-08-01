@@ -6,7 +6,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A051903 Maximal exponent in prime factorization of n.
+ * A051903 Maximum exponent in the prime factorization of n.
  * @author Sean A. Irvine
  */
 public class A051903 extends Sequence1 implements DirectSequence {

@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A374171 allocated for Claude H. R. Dequatre.
+ * A374171 Decimal expansion of log(9/5).
  * @author Sean A. Irvine
  */
 public class A374171 extends DecimalExpansionSequence {

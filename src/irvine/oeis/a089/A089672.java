@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A089672 a(n) = S3(n, 4), where S3(n, t) = Sum_{k=0..n} k^t *(Sum_{j=0..k} binomial(n,j))^3.
+ * A089672 a(n) = S3(n,4), where S3(n, t) = Sum_{k=0..n} k^t *(Sum_{j=0..k} binomial(n,j))^3.
  * @author Georg Fischer
  */
 public class A089672 extends LambdaSequence {

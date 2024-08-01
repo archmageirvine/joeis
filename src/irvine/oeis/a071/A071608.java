@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A060315.
+ * A071608 Number of complete mappings f(x) of Z_{2n+1} such that -(-id+f)^(-1)=f.
  * @author Sean A. Irvine
  */
 public class A071608 extends Sequence0 {

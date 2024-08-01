@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A040173.
+ * A001691 Number of two-element generating sets in the symmetric group S_n.
  * @author Sean A. Irvine
  */
 public class A001691 extends Sequence1 {

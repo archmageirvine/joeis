@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002952;
 import irvine.oeis.a002.A002953;
 
 /**
- * A180277 Sum of the two members of the n-th pair of unitary amicable numbers.
+ * A180277 a(n) = A002952(n) + A002953(n).
  * @author Georg Fischer
  */
 public class A180277 extends AbstractSequence {

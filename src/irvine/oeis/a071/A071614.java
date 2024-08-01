@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006567;
 
 /**
- * A071563.
+ * A071614 a(n) is the smallest emirp that is the first of n consecutive emirps with equal digit sum.
  * @author Sean A. Irvine
  */
 public class A071614 extends A006567 {

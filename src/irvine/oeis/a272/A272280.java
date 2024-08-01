@@ -4,7 +4,7 @@ package irvine.oeis.a272;
 import irvine.oeis.ca.FiveNeighbor2DAutomaton;
 
 /**
- * A272280 Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 457", based on the 5-celled von Neumann neighborhood.
+ * A272280 Number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 457", based on the 5-celled von Neumann neighborhood.
  * @author Georg Fischer
  */
 public class A272280 extends FiveNeighbor2DAutomaton {

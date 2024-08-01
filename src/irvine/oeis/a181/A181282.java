@@ -6,7 +6,7 @@ package irvine.oeis.a181;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A181282 a(n) is the number of associate Rota-Baxter words in one idempotent generator x and one idempotent operator P of degree n. Such words are Rota-Baxter words that begin and/or ends with x, and P is applied n times in the word.
+ * A181282 a(n) is the number of associate Rota-Baxter words in one idempotent generator x and one idempotent operator P of degree n. Such words are Rota-Baxter words that begin and/or end with x, and P is applied n times in the word.
  * @author Georg Fischer
  */
 public class A181282 extends HolonomicRecurrence {

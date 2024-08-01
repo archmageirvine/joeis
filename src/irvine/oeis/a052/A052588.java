@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A052588 E.g.f. (1-x)/(1-x-x^2-x^3+x^4).
+ * A052588 Expansion of e..g.f.: (1-x)/(1-x-x^2-x^3+x^4).
  * @author Georg Fischer
  */
 public class A052588 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071576.
+ * A071597 Sum of elements in the simple continued fraction for (1+1/n)^n.
  * @author Sean A. Irvine
  */
 public class A071597 extends Sequence1 {

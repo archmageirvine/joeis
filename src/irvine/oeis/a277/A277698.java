@@ -6,7 +6,7 @@ import irvine.oeis.a008.A008578;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A277698 a(n) = Least unitary prime divisor of n or 1 if no such prime-divisor exists.
+ * A277698 a(n) = least unitary prime divisor of n or 1 if no such prime-divisor exists.
  * @author Georg Fischer
  */
 public class A277698 extends SingleTransformSequence {

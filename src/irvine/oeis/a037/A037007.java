@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000796;
 
 /**
- * A037007 Positions of the digit '9' in the decimal expansion of Pi.
+ * A037007 Positions of the digit '9' in the decimal expansion of Pi, where positions 0, 1, 2,... correspond to digits 3, 1, 4, ....
  * @author Sean A. Irvine
  */
 public class A037007 extends FilterPositionSequence {

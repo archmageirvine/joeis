@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A060315.
+ * A071606 Smallest zero-free palindromic prime of 2n + 1 digits.
  * @author Sean A. Irvine
  */
 public class A071606 extends Sequence0 {

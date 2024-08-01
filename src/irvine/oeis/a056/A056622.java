@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000188;
 import irvine.oeis.a055.A055229;
 
 /**
- * A056622 Square root of largest unitary square divisor of n.
+ * A056622 a(n) = A000188(n)/A055229(n).
  * @author Sean A. Irvine
  */
 public class A056622 extends A000188 {

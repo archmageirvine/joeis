@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A059339 A+B=C for 0&lt;=A, 0&lt;=B, A&lt;=B; if n is a C-almost prime then a(n) = number of decompositions of n into sum of an A-almost prime and a B-almost prime.
+ * A059339 a(n) is the number of representations of n as a sum x+y, such that bigomega(n) = bigomega(x)+bigomega(y) and 1 &lt;= x &lt;= y &lt; n.
  * @author Sean A. Irvine
  */
 public class A059339 extends Sequence1 {

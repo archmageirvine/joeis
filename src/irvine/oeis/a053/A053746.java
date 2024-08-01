@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000796;
 
 
 /**
- * A053746 Positions of 2's in the decimal expansion of Pi.
+ * A053746 Positions of '2's in the decimal expansion of Pi, where positions 1, 2, 3, ... correspond to digits 3, 1, 4, ...
  * @author Georg Fischer
  */
 public class A053746 extends FilterPositionSequence {

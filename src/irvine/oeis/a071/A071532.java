@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002379;
 
 /**
- * A071532 (-1) * Sum[ k =1,n, (-1)^floor((3/2)^k) ].
+ * A071532 a(n) = (-1) * Sum_{k=1..n} (-1)^floor((3/2)^k).
  * @author Sean A. Irvine
  */
 public class A071532 extends Sequence1 {

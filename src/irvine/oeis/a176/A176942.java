@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a033.A033307;
 
 /**
- * A060315.
+ * A176942 Champernowne primes.
  * @author Sean A. Irvine
  */
 public class A176942 extends A033307 {

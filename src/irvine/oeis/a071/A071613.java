@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A071563.
+ * A071613 a(n) is the smallest prime that is the first of n consecutive primes with equal digit sum.
  * @author Sean A. Irvine
  */
 public class A071613 extends A000040 {

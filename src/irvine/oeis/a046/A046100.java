@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A046100 Biquadratefree numbers.
+ * A046100 Biquadratefree numbers: numbers that are not divisible by any 4th power greater than 1.
  * @author Sean A. Irvine
  */
 public class A046100 extends Sequence1 {

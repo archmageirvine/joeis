@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000142;
 
 /**
- * A071532.
+ * A071637 Largest exponent k &gt;=0 such that (n+1)^k divides n!.
  * @author Sean A. Irvine
  */
 public class A071637 extends Sequence1 {

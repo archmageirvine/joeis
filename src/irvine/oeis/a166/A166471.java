@@ -4,7 +4,7 @@ package irvine.oeis.a166;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A166471 2^L(n+1)*3^L(n), where L(n) is the n-th Lucas number (A000032(n)).
+ * A166471 a(n) = 2^L(n+1)*3^L(n), where L(n) is the n-th Lucas number (A000032(n)).
  * @author Georg Fischer
  */
 public class A166471 extends MultiTransformSequence {

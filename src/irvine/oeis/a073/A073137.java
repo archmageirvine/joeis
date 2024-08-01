@@ -8,7 +8,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a023.A023416;
 
 /**
- * A073137 a(n) is the least number whose binary representation has the same number of 0&apos;s and 1&apos;s as n.
+ * A073137 a(n) is the least number whose binary representation has the same number of 0's and 1's as n.
  * @author Georg Fischer
  */
 public class A073137 extends LambdaSequence {

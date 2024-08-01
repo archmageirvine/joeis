@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a100.A100683;
 
 /**
- * A232542 Primes in the tribonacci sequence A100683.
+ * A232542 Primes in A100683.
  * @author Georg Fischer
  */
 public class A232542 extends FilterSequence {

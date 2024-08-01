@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060754.
+ * A060754 Absolute values of a certain cubic form at integer points (see Formula).
  * @author Sean A. Irvine
  */
 public class A060754 extends Sequence1 {

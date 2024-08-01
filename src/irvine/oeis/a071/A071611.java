@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005875;
 
 /**
- * A071563.
+ * A071611 Number of points (i,j,k) on the surface of a sphere around (0,0,0) with squared radius A071609(n).
  * @author Sean A. Irvine
  */
 public class A071611 extends Sequence1 {

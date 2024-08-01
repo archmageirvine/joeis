@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071576.
+ * A071590 Numbers k such that reversal(k) &lt; k.
  * @author Sean A. Irvine
  */
 public class A071590 extends Sequence1 {

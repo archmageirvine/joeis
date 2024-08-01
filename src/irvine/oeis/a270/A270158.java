@@ -4,7 +4,7 @@ package irvine.oeis.a270;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A270158 Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 99", based on the 5-celled von Neumann neighborhood.
+ * A270158 Partial sums of the number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 99", based on the 5-celled von Neumann neighborhood.
  * @author Georg Fischer
  */
 public class A270158 extends PartialSumSequence {

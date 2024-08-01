@@ -9,7 +9,7 @@ import irvine.oeis.a067.A067029;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A277697 a(n) = Index of the least unitary prime divisor of n or 0 if no such prime-divisor exists.
+ * A277697 a(n) = index of the least unitary prime divisor of n or 0 if no such prime-divisor exists.
  * @author Georg Fischer
  */
 public class A277697 extends MultiTransformSequence {

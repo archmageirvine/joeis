@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002144;
 
 /**
- * A071532.
+ * A071636 Numbers n=4*k+2 such that there is no pair of primes p and q of form 4*i+1 with p+q=n; A071635(n)=0.
  * @author Sean A. Irvine
  */
 public class A071636 extends Sequence1 {

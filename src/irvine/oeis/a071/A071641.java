@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071532.
+ * A071641 a(n) defined by recursion in the formula section.
  * @author Sean A. Irvine
  */
 public class A071641 extends Sequence0 {

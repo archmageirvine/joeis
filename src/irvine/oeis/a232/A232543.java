@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a100.A100683;
 
 /**
- * A232543 Indices of prime tribonacci numbers (A100683).
+ * A232543 Indices of primes in A100683.
  * @author Georg Fischer
  */
 public class A232543 extends FilterPositionSequence {

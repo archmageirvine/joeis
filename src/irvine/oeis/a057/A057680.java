@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000796;
 
 /**
- * A057680 Self-locating strings within Pi: numbers n such that the string n is at position n in the decimal digits of Pi, where 1 is the first digit.
+ * A057680 Self-locating strings within Pi: numbers n such that the string n is at position n in the decimal digits of Pi, where the initial digit 3 is at position 0.
  * @author Sean A. Irvine
  */
 public class A057680 extends A000796 {

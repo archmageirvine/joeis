@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A365447 Number of nonempty choice functions on a set of n alternatives
+ * A365447 Number of nonempty choice functions on a set of n alternatives.
  * @author Georg Fischer
  */
 public class A365447 extends LambdaSequence {

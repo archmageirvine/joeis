@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A374169 allocated for Claude H. R. Dequatre.
+ * A374169 Decimal expansion of -(1/2)*log(1-1/e).
  * @author Sean A. Irvine
  */
 public class A374169 extends DecimalExpansionSequence {

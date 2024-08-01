@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071532.
+ * A071625 Number of distinct exponents when n is factorized as a product of primes.
  * @author Sean A. Irvine
  */
 public class A071625 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060315.
+ * A071621 Primes that can be written as "a * b + c * d", where a, b, c and d are also primes.
  * @author Sean A. Irvine
  */
 public class A071621 extends Sequence1 {

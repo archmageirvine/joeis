@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081370 Binomial(n^2, n) reduced mod n^2 is 0.
+ * A081370 Numbers k such that binomial(k^2, k) reduced mod k^2 is 0.
  * @author Georg Fischer
  */
 public class A081370 extends Sequence1 {

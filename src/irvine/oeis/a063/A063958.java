@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063958 Sum of the non-unitary prime factors of n: sum of those prime factors for which the exponent exceeds 1.
+ * A063958 Sum of the non-unitary prime divisors of n: sum of those prime divisors for which the exponent in the prime factorization exceeds 1.
  * @author Sean A. Irvine
  */
 public class A063958 extends Sequence1 {

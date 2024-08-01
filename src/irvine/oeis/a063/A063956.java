@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063956 Sum of unitary prime divisors (A056169, A034444) of n.
+ * A063956 Sum of unitary prime divisors of n.
  * @author Sean A. Irvine
  */
 public class A063956 extends Sequence1 {

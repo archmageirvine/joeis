@@ -5,7 +5,7 @@ import irvine.oeis.a112.A112387;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A374098 allocated for Paul Curtz.
+ * A374098 a(n) = A112387(n)^2.
  * @author Georg Fischer
  */
 public class A374098 extends SingleTransformSequence {

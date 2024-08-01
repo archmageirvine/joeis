@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068940 Maximal number of chess queens that can be placed on a 3-dimensional chessboard of order n so that no two queens attack each other.
+ * A068940 Maximum number of chess queens that can be placed on a 3-dimensional chessboard of order n so that no two queens attack each other.
  * @author Sean A. Irvine
  */
 public class A068940 extends Sequence1 {

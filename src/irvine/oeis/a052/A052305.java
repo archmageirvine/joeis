@@ -8,7 +8,7 @@ import irvine.oeis.a025.A025487;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A052305 Semisimple rings by prime signature: A038538(A025487).
+ * A052305 Number of semisimple rings with A025487(n) elements: a(n) = A038538(A025487(n)).
  * @author Sean A. Irvine
  */
 public class A052305 extends A025487 {

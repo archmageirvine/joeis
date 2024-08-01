@@ -4,7 +4,7 @@ package irvine.oeis.a270;
 import irvine.oeis.ca.FiveNeighbor2DAutomaton;
 
 /**
- * A270725 Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 203", based on the 5-celled von Neumann neighborhood.
+ * A270725 Number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 203", based on the 5-celled von Neumann neighborhood.
  * @author Georg Fischer
  */
 public class A270725 extends FiveNeighbor2DAutomaton {

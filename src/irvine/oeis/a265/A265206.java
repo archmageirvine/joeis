@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A265206 Total number of ON cells after n iterations of the "Rule 73" elementary cellular automaton starting with a single ON cell.
+ * A265206 Total number of ON (black) cells after n iterations of the "Rule 73" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A265206 extends Cellular1DAutomaton {

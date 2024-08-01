@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071576.
+ * A071580 Smallest prime of the form k*a(n-1)*a(n-2)*...*a(1)+1.
  * @author Sean A. Irvine
  */
 public class A071580 extends Sequence1 {

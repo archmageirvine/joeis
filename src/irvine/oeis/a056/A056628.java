@@ -6,7 +6,7 @@ import irvine.oeis.a055.A055071;
 import irvine.oeis.a055.A055230;
 
 /**
- * A056628 Largest unitary square divisor of n!.
+ * A056628 a(n) = A056623(n!).
  * @author Sean A. Irvine
  */
 public class A056628 extends A055071 {

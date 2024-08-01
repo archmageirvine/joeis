@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001405;
 
 /**
- * A064033 Product of non-unitary divisors of central binomial coefficients or a(n)=1 if all divisors are unitary. See A046098.
+ * A064033 Product of non-unitary divisors of binomial(n, floor(n/2)) or a(n) = 1 if all divisors are unitary. See A046098.
  * @author Sean A. Irvine
  */
 public class A064033 extends A001405 {

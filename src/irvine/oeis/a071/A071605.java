@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001691;
 
 /**
- * A060315.
+ * A071605 Number of ordered pairs (a,b) of elements of the symmetric group S_n such that the pair a,b generates S_n.
  * @author Sean A. Irvine
  */
 public class A071605 extends A001691 {

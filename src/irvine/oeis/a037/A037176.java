@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000720;
 
 /**
- * A037176 Numbers n such that us(n) = number of primes &lt;= n, where usigma(n) = sum of unitary divisors of n (A034448), us(n) is usigma(n)-n.
+ * A037176 Numbers k such that us(k) = primepi(k), where us(k) is the sum of the aliquot unitary divisors of k (A034460), and primepi(k) is the number of primes &lt;= k (A000720).
  * @author Sean A. Irvine
  */
 public class A037176 extends A000720 {

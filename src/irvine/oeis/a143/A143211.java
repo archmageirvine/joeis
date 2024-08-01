@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A143211 Triangle read by rows, T(n,k) = F(n)*F(k); 1&lt;=k&lt;=n.
+ * A143211 Triangle read by rows, T(n,k) = Fibonacci(n)*Fibonacci(k).
  * @author Georg Fischer
  */
 public class A143211 extends BaseTriangle {

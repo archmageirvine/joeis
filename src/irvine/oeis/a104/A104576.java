@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a001.A001644;
 
 /**
- * A104576 Indices of prime generalized tribonacci numbers, A001644.
+ * A104576 Indices of primes in A001644 (the Lucas 3-step numbers).
  * @author Georg Fischer
  */
 public class A104576 extends FilterPositionSequence {

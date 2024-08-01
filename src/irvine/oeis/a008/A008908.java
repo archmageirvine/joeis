@@ -6,7 +6,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.a006.A006577;
 
 /**
- * A008908 (1 + number of halving and tripling steps to reach 1 in the Collatz (3x+1) problem), or -1 if 1 is never reached.
+ * A008908 a(n) = (1 + number of halving and tripling steps to reach 1 in the Collatz (3x+1) problem), or -1 if 1 is never reached.
  * @author Sean A. Irvine
  */
 public class A008908 extends AbstractSequence implements DirectSequence {

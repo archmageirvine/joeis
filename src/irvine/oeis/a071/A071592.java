@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071576.
+ * A071592 Numbers m such that Reversal(m) is not squarefree.
  * @author Sean A. Irvine
  */
 public class A071592 extends Sequence1 {

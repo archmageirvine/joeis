@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A063977 Numbers which are sums of unitary divisors, the usigma values: their inverse usigma set is not empty; usigma[]=A034448().
+ * A063977 Numbers which are sums of unitary divisors, the usigma values: their inverse usigma set is not empty; usigma() = A034448().
  * @author Sean A. Irvine
  */
 public class A063977 extends Sequence1 {

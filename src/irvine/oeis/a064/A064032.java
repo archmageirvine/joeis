@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001405;
 
 /**
- * A064032 Product of unitary divisors of central binomial coefficients.
+ * A064032 Product of unitary divisors of binomial(n, floor(n/2)).
  * @author Sean A. Irvine
  */
 public class A064032 extends A001405 {

@@ -4,7 +4,7 @@ package irvine.oeis.a113;
 import irvine.oeis.a000.A000073;
 
 /**
- * A113153 Sum of the first n tribonacci numbers, in ascending order, as bases, with the same, in descending order, as exponents.
+ * A113153 Sum of the first n nonzero tribonacci numbers, in ascending order, as bases, with the same, in descending order, as exponents.
  * @author Georg Fischer
  */
 public class A113153 extends A113122 {

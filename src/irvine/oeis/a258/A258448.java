@@ -4,7 +4,7 @@ package irvine.oeis.a258;
 import irvine.oeis.ca.FiveNeighbor2DAutomaton;
 
 /**
- * A258448 Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 813", based on the 5-celled von Neumann neighborhood.
+ * A258448 Number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 813", based on the 5-celled von Neumann neighborhood.
  * @author Georg Fischer
  */
 public class A258448 extends FiveNeighbor2DAutomaton {

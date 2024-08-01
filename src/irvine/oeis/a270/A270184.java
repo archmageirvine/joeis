@@ -4,7 +4,7 @@ package irvine.oeis.a270;
 import irvine.oeis.DifferenceSequence;
 
 /**
- * A270184 First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 115", based on the 5-celled von Neumann neighborhood.
+ * A270184 First differences of number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 115", based on the 5-celled von Neumann neighborhood.
  * @author Georg Fischer
  */
 public class A270184 extends DifferenceSequence {

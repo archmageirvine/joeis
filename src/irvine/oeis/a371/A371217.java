@@ -7,7 +7,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A371217 The maximum deck size to perform Colm Mulcahy&apos;s n-card trick.
+ * A371217 The maximum deck size to perform Colm Mulcahy's n-card trick.
  * @author Georg Fischer
  */
 public class A371217 extends LambdaSequence {

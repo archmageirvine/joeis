@@ -4,7 +4,7 @@ import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 
 /**
- * A049843 Triangular array T read by rows: T(n,k)=number of nonzero remainders when Euclidean algorithm acts on primes p(n) and p(k), k=1,2,...,n-1; n=2,3,4,...
+ * A049843 Triangular array T read by rows: T(n,k)=number of nonzero remainders when Euclidean algorithm acts on primes prime(n) and prime(k), k=1,2,...,n-1; n=2,3,4,...
  * @author Sean A. Irvine
  */
 public class A049843 extends A049816 {

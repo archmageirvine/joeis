@@ -14,6 +14,6 @@ public class A349489 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A349489() {
-    super(1, n -> Integers.SINGLETON.sum(1, n, k -> Z.valueOf(k).multiply((Functions.SQRT.z(2 * k - 1)))));
+    super(1, n -> Integers.SINGLETON.sum(1, n, k -> Z.valueOf(k).multiply(Functions.SQRT.z(2 * k - 1))));
   }
 }

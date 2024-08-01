@@ -13,6 +13,6 @@ public class A225215 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A225215() {
-    super(1, (term, n) -> (Functions.SQRT.z(term)), "", new A008810());
+    super(1, (term, n) -> Functions.SQRT.z(term), "", new A008810());
   }
 }

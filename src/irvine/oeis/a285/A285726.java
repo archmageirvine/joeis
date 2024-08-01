@@ -14,6 +14,6 @@ public class A285726 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A285726() {
-    super(1, (term, n) -> term.subtract((Z.ONE.subtract(Functions.PARITY.z(n)))), "0, 0", new A252736());
+    super(1, (term, n) -> term.subtract(Z.ONE.subtract(Functions.PARITY.z(n))), "0, 0", new A252736());
   }
 }

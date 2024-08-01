@@ -14,6 +14,6 @@ public class A079311 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A079311() {
-    super(1, (self, n) -> (Functions.SQRT.z(self.s(0).square().add(self.s(1).square()))), "", new A033676(), new A033677());
+    super(1, (self, n) -> Functions.SQRT.z(self.s(0).square().add(self.s(1).square())), "", new A033676(), new A033677());
   }
 }

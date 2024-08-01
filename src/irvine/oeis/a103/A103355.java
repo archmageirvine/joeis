@@ -13,6 +13,6 @@ public class A103355 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A103355() {
-    super(1, n -> Z.valueOf(n).subtract((Functions.SQRT.z(Functions.PRIME.z(n)))));
+    super(1, n -> Z.valueOf(n).subtract(Functions.SQRT.z(Functions.PRIME.z(n))));
   }
 }

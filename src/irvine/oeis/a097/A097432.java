@@ -13,6 +13,6 @@ public class A097432 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A097432() {
-    super(1, n -> (Functions.SQRT.z(Z.valueOf(n).square().add((Z.valueOf(n + 1)).square()))));
+    super(1, n -> Functions.SQRT.z(Z.valueOf(n).square().add((Z.valueOf(n + 1)).square())));
   }
 }

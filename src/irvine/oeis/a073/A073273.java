@@ -12,6 +12,6 @@ public class A073273 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A073273() {
-    super(1, n -> (Functions.SQRT.z(Functions.PRIME.z(n).multiply(Functions.PRIME.z(n + 2)))));
+    super(1, n -> Functions.SQRT.z(Functions.PRIME.z(n).multiply(Functions.PRIME.z(n + 2))));
   }
 }

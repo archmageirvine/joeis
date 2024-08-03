@@ -69,6 +69,19 @@ public final class SExpression extends ArrayList<SExpression> {
     return n.isZero() ? new SExpression() : binexp2parsR(Functions.REVERSE.z(2, n));
   }
 
+  /**
+   * Combine left and right subtrees into a tree.
+   * @param left left subtree
+   * @param right right subtree
+   * @return combined tree
+   */
+  public static SExpression createTree(final SExpression left, final SExpression right) {
+    final SExpression res = new SExpression();
+    res.add(left);
+    res.addAll(right);
+    return res;
+  }
+
   /** Construct an empty S expression. */
   public SExpression() {
   }
@@ -105,6 +118,22 @@ public final class SExpression extends ArrayList<SExpression> {
       res.addAll(subList(1, size()));
       return res;
     }
+  }
+
+  /**
+   * Return the first element of the first element in the expression.
+   * @return first of the first element.
+   */
+  public SExpression caar() {
+    return car().car();
+  }
+
+  /**
+   * Return the tail of the tail.
+   * @return tail of the fail.
+   */
+  public SExpression cddr() {
+    return cdr().cdr();
   }
 
   /**
@@ -235,5 +264,54 @@ public final class SExpression extends ArrayList<SExpression> {
       e += 2 + k.countParens();
     }
     return e;
+  }
+
+  /**
+   * Test if this expression is a pair in Scheme parlance.
+   * @return true iff the expression is a pair
+   */
+  public boolean isPair() {
+    return !isEmpty();
+  }
+
+  /**
+   * Overwrite the tail of the list with a new expression.
+   * Note this modifies in place.
+   * @param s expression
+   * @return list
+   */
+  public SExpression setCdr(final SExpression s) {
+    if (size() > 0) {
+      removeRange(1, size());
+    }
+    addAll(s);
+    return this;
+  }
+
+  /**
+   * Overwrite the head of the list with a new expression.
+   * Note this modifies in place.
+   * @param s expression
+   * @return list
+   */
+  public SExpression setCar(final SExpression s) {
+    if (!isEmpty()) {
+      set(0, s);
+    } else {
+      add(s);
+    }
+    return this;
+  }
+
+  /**
+   * Return a deep copy of this expression.
+   * @return copy
+   */
+  public SExpression copy() {
+    final SExpression s = new SExpression();
+    for (final SExpression e : this) {
+      s.add(e.copy());
+    }
+    return s;
   }
 }

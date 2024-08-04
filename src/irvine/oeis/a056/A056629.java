@@ -7,7 +7,7 @@ import irvine.oeis.a055.A055071;
 import irvine.oeis.a055.A055230;
 
 /**
- * A056629 Number of unitary square divisors of n!.
+ * A056629 a(n) = A034444(A056627(n)).
  * @author Sean A. Irvine
  */
 public class A056629 extends A055071 {

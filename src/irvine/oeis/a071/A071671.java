@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 import irvine.math.z.Z;
 
 /**
- * A071655.
+ * A071671 The binary encoding of parenthesizations given in a "global arithmetic order", using A061579 as the packing bijection N X N -&gt; N.
  * @author Sean A. Irvine
  */
 public class A071671 extends A071652 {

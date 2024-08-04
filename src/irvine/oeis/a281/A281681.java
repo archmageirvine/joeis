@@ -7,7 +7,7 @@ import irvine.oeis.a071.A071904;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A281681 a(n) = A055396(A071904(n))-1.
+ * A281681 a(n) = A055396(A071904(n)) - 1.
  * @author Georg Fischer
  */
 public class A281681 extends SingleTransformSequence {

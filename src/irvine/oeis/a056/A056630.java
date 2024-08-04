@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a055.A055993;
 
 /**
- * A056630 Number of non-unitary square divisors of n!.
+ * A056630 a(n) = A055993(n) - A034444(A056627(n)).
  * @author Sean A. Irvine
  */
 public class A056630 extends A055993 {

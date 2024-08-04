@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A260681 a(1) = a(2) = 1; a(n) = a(n-1) + gpf(1 + Product_{k = 1..n - 2} a(k)), where gpf means &quot;greatest prime factor&quot; (A006530).
+ * A260681 a(1) = a(2) = 1; a(n) = a(n-1) + gpf(1 + Product_{k = 1..n - 2} a(k)), where gpf means "greatest prime factor" (A006530).
  * @author Georg Fischer
  */
 public class A260681 extends MultiTransformSequence {

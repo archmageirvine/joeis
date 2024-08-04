@@ -5,7 +5,7 @@ package irvine.oeis.a089;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A089484 Number of configurations of the sliding block 15-puzzle that require a minimum of n moves to be reached, starting with the empty square in one of the corners.
+ * A089484 Number of positions of the 15-puzzle at a distance of n moves from an initial state with the empty square in one of the corners, in the single-tile metric.
  * @author Georg Fischer
  */
 public class A089484 extends FiniteSequence {

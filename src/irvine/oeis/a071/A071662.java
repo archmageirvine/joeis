@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a057.A057506;
 
 /**
- * A071655.
+ * A071662 Permutation A057506 applied twice ("squared").
  * @author Sean A. Irvine
  */
 public class A071662 extends Sequence0 {

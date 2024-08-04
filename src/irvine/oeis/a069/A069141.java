@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069141 n^2*(n+1)!/(n^tau(n)) where tau(n) is the number of divisors of n.
+ * A069141 a(n) = n^2*(n+1)!/(n^tau(n)) where tau(n) is the number of divisors of n.
  * @author Sean A. Irvine
  */
 public class A069141 extends Sequence1 {

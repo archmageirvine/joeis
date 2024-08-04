@@ -5,7 +5,7 @@ import irvine.oeis.a086.A086751;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A133741 Decimal expansion of offset at which two unit disks overlap by half each&apos;s area.
+ * A133741 Decimal expansion of offset at which two unit disks overlap by half each's area.
  * Formula:
  * @author Georg Fischer
  */

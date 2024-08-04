@@ -8,7 +8,7 @@ import irvine.oeis.a235.A235362;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A355178 Decimal expansion of 2^(-2/3)/L, where L is the conjectured Landau&apos;s constant A081760.
+ * A355178 Decimal expansion of 2^(-2/3)/L, where L is the conjectured Landau's constant A081760.
  * Formula:
  * @author Georg Fischer
  */

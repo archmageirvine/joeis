@@ -4,7 +4,7 @@ package irvine.oeis.a096;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A096422 a(1)=a(2)=a(3)=1, a(n) = 2*a(n-1)*a(n-3) + a(n-2)^2 for n &gt; 3.
+ * A096422 a(1)=a(2)=a(3)=1, a(n) = 2*a(n-1)*a(n-3) + a(n-3)^2 for n &gt; 3.
  * @author Georg Fischer
  */
 public class A096422 extends MultiTransformSequence {

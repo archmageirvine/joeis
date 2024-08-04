@@ -6,7 +6,7 @@ import irvine.oeis.a205.A205885;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A206160 Decimal expansion of the Fresnel Integral int_{x=0..infinity} x*sin(x^3) dx
+ * A206160 Decimal expansion of the Fresnel Integral int_{x=0..infinity} x*sin(x^3) dx.
  * Formula:
  * @author Georg Fischer
  */

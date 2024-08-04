@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a060.A060385;
 
 /**
- * A121170 Largest prime divisor of Fibonacci[5n].
+ * A121170 Largest prime divisor of Fibonacci(5n).
  * @author Georg Fischer
  */
 public class A121170 extends FilterSequence {

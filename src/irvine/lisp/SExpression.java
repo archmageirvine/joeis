@@ -114,6 +114,7 @@ public final class SExpression extends ArrayList<SExpression> {
     if (isEmpty()) {
       return new SExpression();
     } else {
+      // It would be nice not to have to make this copy!
       final SExpression res = new SExpression();
       res.addAll(subList(1, size()));
       return res;

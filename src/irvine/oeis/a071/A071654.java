@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.math.z.Binomial;
 
 /**
- * A071652.
+ * A071654 Inverse permutation to A071653.
  * @author Sean A. Irvine
  */
 public class A071654 extends A071652 {

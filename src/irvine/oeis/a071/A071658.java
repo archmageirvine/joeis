@@ -8,7 +8,7 @@ import irvine.oeis.a014.A014486;
 import irvine.oeis.a057.A057120;
 
 /**
- * A071655.
+ * A071658 Permutation of natural numbers induced by the automorphism cdr_robl_car! acting on the parenthesizations encoded by A014486.
  * @author Sean A. Irvine
  */
 public class A071658 extends Sequence0 {

@@ -4,7 +4,7 @@ package irvine.oeis.a179;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A179854 Number of 0&apos;s (mod 3) in the binary expansion of n.
+ * A179854 Number of 0's (mod 3) in the binary expansion of n.
  * @author Georg Fischer
  */
 public class A179854 extends MultiTransformSequence {

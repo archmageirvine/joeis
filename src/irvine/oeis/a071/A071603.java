@@ -15,7 +15,7 @@ public class A071603 extends Sequence1 {
   // This could be better
 
   private static final long LIMIT = 1L << 29;
-  private int mN = 0;
+  private int mN = 1;
   private long mMask = 0;
   private final LongDynamicBooleanArray mSeen = new LongDynamicBooleanArray();
   private final HashSet<Long> mLarge = new HashSet<>();

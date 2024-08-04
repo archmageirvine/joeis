@@ -5,7 +5,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A081460 Consider the mapping f(r) = (1/2)*(r + N/r) from rationals to rationals where N = 5. Starting with a = 2 and applying the mapping to each new (reduced) rational number gives 2, 9/4, 161/72, 51841/23184, ..., tending to N^(1/2). Sequence gives values of the
+ * A081460 Consider the mapping f(r) = (1/2)*(r + N/r) from rationals to rationals where N = 5. Starting with a = 2 and applying the mapping to each new (reduced) rational number gives 2, 9/4, 161/72, 51841/23184, ..., tending to N^(1/2). Sequence gives values of the denominators.
  * @author Georg Fischer
  */
 public class A081460 extends MultiTransformSequence {

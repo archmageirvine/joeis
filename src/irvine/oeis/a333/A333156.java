@@ -4,7 +4,7 @@ package irvine.oeis.a333;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A333156 Number of Dyck paths with no UUU&apos;s and no DDD&apos;s, of semilength 2n and having exactly n (possibly overlapping) occurrences of the consecutive pattern UDUD, where U=(1,1) and D=(1,-1).
+ * A333156 Number of Dyck paths with no UUU's and no DDD's, of semilength 2n and having exactly n (possibly overlapping) occurrences of the consecutive pattern UDUD, where U=(1,1) and D=(1,-1).
  * @author Georg Fischer
  */
 public class A333156 extends HolonomicRecurrence {

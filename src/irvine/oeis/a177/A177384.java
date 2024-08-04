@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A177384 G.f. satisfies: A(x) = 1 + x/(A(x) + x*A&apos;(x)).
+ * A177384 G.f. satisfies: A(x) = 1 + x/(A(x) + x*A'(x)).
  * @author Georg Fischer
  */
 public class A177384 extends MultiTransformSequence {

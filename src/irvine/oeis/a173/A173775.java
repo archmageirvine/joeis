@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A173775 Number of ways to place 5 nonattacking queens on an n X n toroidal board
+ * A173775 Number of ways to place 5 nonattacking queens on an n X n toroidal board.
  * @author Georg Fischer
  */
 public class A173775 extends HolonomicRecurrence {

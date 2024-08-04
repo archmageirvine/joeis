@@ -13,6 +13,6 @@ public class A308206 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A308206() {
-    super(1, (self, n) -> Integers.SINGLETON.sum(1, n - 1, k -> (Integers.SINGLETON.sumdiv(k, d -> Z.valueOf(d).square().multiply(self.a(d).pow(k / d)).multiply(self.a(n - k))))).divide(n - 1), "1");
+    super(1, (self, n) -> Integers.SINGLETON.sum(1, n - 1, k -> Integers.SINGLETON.sumdiv(k, d -> Z.valueOf(d).square().multiply(self.a(d).pow(k / d)).multiply(self.a(n - k)))).divide(n - 1), "1");
   }
 }

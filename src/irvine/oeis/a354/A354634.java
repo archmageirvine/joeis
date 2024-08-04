@@ -4,7 +4,6 @@ package irvine.oeis.a354;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
-
 /**
  * A354634 Decimal expansion of the negated digamma function at 5/8.
  * Formula: sqrt(2)*arcsinh(1) - 4*log(2) + (sqrt(2)-1)*Pi/2 - gamma

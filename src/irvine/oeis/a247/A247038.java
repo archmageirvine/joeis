@@ -16,6 +16,6 @@ public class A247038 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A247038() {
-    super(0, CR.LOG2.multiply(A002210.getCR().log()));
+    super(0, CR.TWO.log().multiply(A002210.getCR().log()));
   }
 }

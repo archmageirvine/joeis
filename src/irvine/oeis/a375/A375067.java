@@ -4,7 +4,6 @@ package irvine.oeis.a375;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
-
 /**
  * A375067 Decimal expansion of the apothem (inradius) of a regular pentagon of unit edge.
  * Formula:

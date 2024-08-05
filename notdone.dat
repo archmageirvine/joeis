@@ -1683,7 +1683,6 @@ A053043 Number of facets of hypermetric correlation cone
 A053060 Number of n X n invertible binary matrices A such that A^3+I is invertible
 A053071 Number of n X n invertible binary matrices A such that A^5+I is invertible.
 A053168 Hamming weights (or nonlinearity) of degree 4 rotation-symmetric functions.
-A053169 A paradoxical sequence: a positive integer n is in this sequence if and only if n is not in sequence A_n in the database. (depends on A000019)
 A053189 Hamming weights (or nonlinearity) of degree 5 rotation-symmetric functions
 A053346 a(n) = solution to the postage stamp problem with 7 denominations and n stamps.
 A053348 a(n) = solution to the postage stamp problem with 8 denominations and n stamps.
@@ -1694,7 +1693,6 @@ A053617 Number of permutations of length n which avoid the patterns 1234 and 132
 A053620 Nearest integer to R(n) = the Riemann prime number formula [could not reproduce]
 A053740 Prime triangle partitions of order n
 A053870 Acyclic orientations of Hamming graph (K_n) x (K_n)
-A053873 Numbers n such that OEIS sequence A_n contains n
 A053991 Number of distinct residues of generalized Catalan number 1/((n^2-1)*k + 1)*binomial(n^2*k, k) modulo n^2 as k runs through the positive integers.
 A053994 Nonattacking queens on a 2n+1 X 2n+1 toroidal board, solutions which differ only by rotation, reflection or torus shift count only once
 A054246 Non-Cayley-isomorphic circulant p^2-tournaments, indexed by odd primes p.
@@ -2419,3 +2417,4 @@ A071334 Number of polyiamonds with n cells without holes that do not tile the pl
 A071536 Number of extensions to a semigroup of the (categorical) composition of arrows in the complete directed graph on n labeled nodes
 A071581 A003656(n)-prime(n).
 A071643 Optimal Hamming complexity of normal basis for GF(2^n) over GF(2).
+A071713 a(n) = smallest value of |x^n + y^n + z^n| for x,y,z distinct nonzero integers.

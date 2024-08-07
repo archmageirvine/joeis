@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071710.
+ * A071714 Numbers n such that Rd(n) + Ld(n) +/-1 is prime, where Rd and Ld are the right- and left-digital factorial functions.
  * @author Sean A. Irvine
  */
 public class A071714 extends Sequence1 {

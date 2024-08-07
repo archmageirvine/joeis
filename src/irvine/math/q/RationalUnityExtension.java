@@ -11,7 +11,7 @@ import irvine.math.polynomial.Polynomial;
  */
 public final class RationalUnityExtension extends PolynomialRingField<Q> {
 
-  // Note some of the "advanced" operations could be completely bogus here;
+  // Note some "advanced" operations could be completely bogus here;
   // addition and multiplication should work as expected
 
   private final int mPower;

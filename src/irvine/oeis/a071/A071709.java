@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071707 Numbers k that divide tau(k)*sigma(k).
+ * A071709 Array A(i,j)= T(prime(i)^j) read by antidiagonals, where T(x) denote the "type" of the integer x: T(m)=1 or 2 depending on whether 1 or 2 is a descendant of n in the Half-totient tree.
  * @author Sean A. Irvine
  */
 public class A071709 extends Sequence1 {

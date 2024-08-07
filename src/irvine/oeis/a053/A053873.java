@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A071710.
+ * A053873 Numbers n such that OEIS sequence A_n contains n.
  * @author Sean A. Irvine
  */
 public class A053873 extends FiniteSequence {

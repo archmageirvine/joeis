@@ -17,23 +17,24 @@ public abstract class AbstractPrime implements Prime {
   public static final long SQRT_MAX_VALUE = Functions.SQRT.l(Long.MAX_VALUE);
 
   @Override
-  public long nextPrime(long n) {
+  public long nextPrime(final long n) {
     if (n < 2L) {
       return 2L;
     }
+    // Make it odd
+    long m = (n + 1) | 1;
     // make sure the answer is going to fit in a long value
-    if (++n >= MAX_LONG_PRIME) {
-      return 0L;
+    if (m >= MAX_LONG_PRIME) {
+      throw new ArithmeticException("Next prime too large for a long");
     }
-    n |= 1; // make n odd
-    while (n < SQRT_MAX_VALUE) {
-      if (isPrime(n)) {
-        return n;
+    while (m < SQRT_MAX_VALUE) {
+      if (isPrime(m)) {
+        return m;
       }
-      n += 2;
+      m += 2;
     }
     // overflow to Z nextPrime method
-    return nextPrime(Z.valueOf(n - 1)).longValue();
+    return nextPrime(Z.valueOf(n)).longValue();
   }
 
   @Override

@@ -26,8 +26,13 @@ public class Fast extends AbstractPrime implements Serializable {
       return true;
     }
     while (--s > 0) {
-      t *= t;
-      t %= n;
+      // Need to be careful to handle potential overflow on t^2
+      if (t >= Integer.MAX_VALUE) {
+        t = Z.valueOf(t).square().mod(n);
+      } else {
+        t *= t;
+        t %= n;
+      }
       if (t == minusone) {
         return true;
       }

@@ -52,7 +52,12 @@ public abstract class AbstractPrimeTest extends TestCase {
     assertEquals(3L, mP.nextPrime(2L));
     assertEquals(5L, mP.nextPrime(3L));
     assertEquals(5L, mP.nextPrime(4L));
-    assertEquals(0L, mP.nextPrime(9223372036854775783L));
+    try {
+      mP.nextPrime(9223372036854775783L);
+      fail();
+    } catch (final ArithmeticException e) {
+      // expected
+    }
   }
 
   public void testPrevPrime() {

@@ -64,10 +64,16 @@ public class FastTest extends AbstractPrimeTest {
 
   /**
    * Test a number which was a bug in earlier versions.
-   *
    */
   public void testBuggy() {
     assertFalse(new Fast().isPrime(29341L));
+  }
+
+  /**
+   * Test a number which was a bug in earlier versions.
+   */
+  public void testBuggy2() {
+    assertTrue(new Fast().isPrime(3037247273L));
   }
 
 }

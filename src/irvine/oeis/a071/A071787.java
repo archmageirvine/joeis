@@ -31,7 +31,7 @@ public class A071787 extends Sequence1 {
   @Override
   public Z next() {
     if (mDen != null) {
-      Z res = mDen;
+      final Z res = mDen;
       mDen = null;
       return res;
     }

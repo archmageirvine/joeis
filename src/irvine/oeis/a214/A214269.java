@@ -18,17 +18,6 @@ public class A214269 extends Triangle {
     hasRAM(true);
   }
 
-  /* Maple:
-    b:= proc(n, k, s, t, l) option remember;
-          `if`(n<0, 0, `if`(n=0, 1, add(`if`(j=l, 0, b(n-j, k,
-           min(s, j), max(t, j), j)), j=max(1, t-k+1)..s+k-1)))
-        end:
-    A:= proc(n, k) option remember;
-          `if`(n=0, 1, add(b(n-j, k+1, j, j, j), j=1..n))
-        end:
-    T:= (n, k)-> A(n, k) -`if`(k=0, 0, A(n, k-1)):
-    seq(seq(T(n, k), k=0..n-1), n=1..14);
-  */
   private static final MemoryFunctionInt5<Z> B = new MemoryFunctionInt5<>() {
     @Override
     protected Z compute(final int n, final int k, final int s, final int t, final int l) {

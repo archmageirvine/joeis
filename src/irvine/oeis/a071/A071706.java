@@ -1,13 +1,13 @@
 package irvine.oeis.a071;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A071706 Number of complete mappings f(x) of the cyclic group Z_{2n+1} such that -f(-x)=f.
  * @author Sean A. Irvine
  */
-public class A071706 extends Sequence1 {
+public class A071706 extends Sequence0 {
 
   private int mN = -1;
   private long mCount = 0;

@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A032748 Super-8 Numbers (8 * n^8 contains substring '88888888' in its decimal expansion).
  * @author Sean A. Irvine
  */
-public class A032748 extends Sequence0 {
+public class A032748 extends Sequence1 {
 
   private long mN = 185422;
 

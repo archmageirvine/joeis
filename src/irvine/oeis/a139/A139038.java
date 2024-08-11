@@ -15,6 +15,6 @@ public class A139038 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A139038() {
-    super(1, 0, 0, (n, m) -> m <= n / 2 ? SEQ.a(m + 6) : SEQ.a(n + 6 - m));
+    super(0, 0, 0, (n, m) -> m <= n / 2 ? SEQ.a(m + 6) : SEQ.a(n + 6 - m));
   }
 }

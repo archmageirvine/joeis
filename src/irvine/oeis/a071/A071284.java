@@ -9,6 +9,10 @@ import irvine.util.Pair;
  */
 public class A071284 extends A071283 {
 
+  {
+    setOffset(0);
+  }
+
   @Override
   protected Z select(final Pair<Integer, Integer> q) {
     return Z.valueOf(q.right());

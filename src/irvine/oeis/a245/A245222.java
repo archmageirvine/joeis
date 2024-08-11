@@ -13,6 +13,6 @@ public class A245222 extends DifferenceSequence {
 
   /** Construct the sequence. */
   public A245222() {
-    super(1, new PrependSequence(new A188070(), 0));
+    super(0, new PrependSequence(new A188070(), 0));
   }
 }

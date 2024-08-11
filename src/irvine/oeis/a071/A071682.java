@@ -13,6 +13,6 @@ public class A071682 extends PrependSequence {
 
   /** Construct the sequence. */
   public A071682() {
-    super(new SimpleTransformSequence(2, new A007097(), k -> Functions.DIGIT_LENGTH.z(2, k)).skip(2), 0, 1);
+    super(2, new SimpleTransformSequence(2, new A007097(), k -> Functions.DIGIT_LENGTH.z(2, k)).skip(2), 0, 1);
   }
 }

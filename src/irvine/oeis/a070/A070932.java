@@ -14,6 +14,6 @@ public class A070932 extends PrependSequence {
 
   /** Construct the sequence. */
   public A070932() {
-    super(new MultiplicativeClosureSequence(new UnionSequence(new A002202().skip(2), new A181062().skip(2))), 0);
+    super(1, new MultiplicativeClosureSequence(new UnionSequence(new A002202().skip(2), new A181062().skip(2))), 0);
   }
 }

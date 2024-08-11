@@ -16,7 +16,7 @@ public class A013631 extends ContinuedFractionSequence {
 
   /** Construct the sequence. */
   public A013631() {
-    super(new DecimalExpansionSequence(Zeta.zeta(3)));
+    super(0, new DecimalExpansionSequence(Zeta.zeta(3)));
   }
 
   @Override

@@ -11,7 +11,7 @@ public class A013683 extends ContinuedFractionSequence {
 
   /** Construct the sequence. */
   public A013683() {
-    super(new A013665());
+    super(0, new A013665());
   }
 
   @Override

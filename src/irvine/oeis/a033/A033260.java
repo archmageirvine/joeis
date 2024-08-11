@@ -10,6 +10,6 @@ public class A033260 extends ContinuedFractionSequence {
 
   /** Construct the sequence. */
   public A033260() {
-    super(new A033259());
+    super(0, new A033259());
   }
 }

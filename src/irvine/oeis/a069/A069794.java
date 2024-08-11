@@ -5,13 +5,13 @@ import java.util.Arrays;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A069794 Prime(n) and prime(n+2) use the same digits.
  * @author Sean A. Irvine
  */
-public class A069794 extends Sequence0 {
+public class A069794 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 1;

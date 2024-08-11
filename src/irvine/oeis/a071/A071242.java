@@ -2,13 +2,13 @@ package irvine.oeis.a071;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A071242 Arithmetic mean of n and R(n) where n is a number such that the least significant digit and the most significant digits are of same parity and R(n) is its digit reversal (A004086).
  * @author Sean A. Irvine
  */
-public class A071242 extends Sequence1 {
+public class A071242 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 1;

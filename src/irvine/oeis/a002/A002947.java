@@ -9,6 +9,10 @@ import irvine.math.z.Z;
  */
 public class A002947 extends A002945 {
 
+  {
+    setOffset(0);
+  }
+
   @Override
   protected Polynomial<Z> initialPoly() {
     return Polynomial.create(-4, 0, 0, 1);

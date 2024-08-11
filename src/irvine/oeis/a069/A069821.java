@@ -1,13 +1,13 @@
 package irvine.oeis.a069;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence2;
 
 /**
  * A069821 a(n) is the smallest k &gt; n such that (k^3 - 1)/(n^3 - 1) is an integer.
  * @author Sean A. Irvine
  */
-public class A069821 extends Sequence1 {
+public class A069821 extends Sequence2 {
 
   private long mN = 1;
 

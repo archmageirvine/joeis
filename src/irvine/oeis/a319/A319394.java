@@ -27,7 +27,7 @@ public class A319394 extends Triangle {
 
   /** Construct the sequence. */
   public A319394() {
-    super(1, 1, -1);
+    super(0, 1, -1);
     hasRAM(true);
   }
 

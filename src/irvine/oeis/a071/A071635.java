@@ -3,14 +3,14 @@ package irvine.oeis.a071;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002144;
 
 /**
  * A071635 Number of decompositions of 4*n+2 into sum of two primes of form 4*k+1.
  * @author Sean A. Irvine
  */
-public class A071635 extends Sequence1 {
+public class A071635 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = -2;

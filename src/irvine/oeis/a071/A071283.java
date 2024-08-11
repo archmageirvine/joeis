@@ -2,14 +2,14 @@ package irvine.oeis.a071;
 
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.util.Pair;
 
 /**
  * A071283 Numerators of Peirce sequence of order 4.
  * @author Sean A. Irvine
  */
-public class A071283 extends Sequence1 {
+public class A071283 extends Sequence0 {
 
   private int mN = 0;
 
@@ -19,7 +19,7 @@ public class A071283 extends Sequence1 {
     protected Pair<Integer, Integer> compute(final int n, final int m) {
       switch (n) {
         case 1:
-          return  new Pair<>(m - 1, 1);
+          return new Pair<>(m - 1, 1);
         case 2:
           return m % 3 == 2 ? get(n - 1, m / 3 + 1) : new Pair<>(2 * (m - 1) / 3, n);
         case 3:

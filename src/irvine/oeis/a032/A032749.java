@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A032749 Super-9 Numbers (9*n^9 contains substring '999999999' in its decimal expansion).
  * @author Sean A. Irvine
  */
-public class A032749 extends Sequence0 {
+public class A032749 extends Sequence1 {
 
   private long mN = 17546132;
 

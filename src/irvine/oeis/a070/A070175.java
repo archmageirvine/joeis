@@ -5,13 +5,13 @@ import java.util.HashSet;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A070175 The smallest representative of each (bigomega(n),omega(n)) pair.
  * @author Sean A. Irvine
  */
-public class A070175 extends Sequence1 {
+public class A070175 extends Sequence0 {
 
   private final HashSet<String> mSeen = new HashSet<>();
   private long mN = 0;

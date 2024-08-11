@@ -12,7 +12,7 @@ public class A143200 extends BaseTriangle {
 
   /** Construct the sequence. */
   public A143200() {
-    super(1, 0, 0);
+    super(0, 0, 0);
     hasRAM(true);
   }
 

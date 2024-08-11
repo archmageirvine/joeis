@@ -19,7 +19,7 @@ public class A026615 extends MemoryFunction2Sequence<Long, Z> {
 
   /** Construct the sequence. */
   public A026615() {
-    super(1);
+    super(0);
   }
 
   private long mN = -1;

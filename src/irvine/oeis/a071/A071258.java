@@ -1,13 +1,13 @@
 package irvine.oeis.a071;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A071258 a(1) = 4; a(n) = smallest composite number of form k*a(n-1) + 1 with k &gt; 1.
  * @author Sean A. Irvine
  */
-public class A071258 extends Sequence1 {
+public class A071258 extends Sequence0 {
 
   private Z mA = null;
 

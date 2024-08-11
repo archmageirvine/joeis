@@ -12,7 +12,7 @@ public class A178628 extends ConstantOrderRecurrence {
 
   /** Construct the sequence */
   public A178628() {
-    super(0, 4, 0, 1, 1, -1, -4);
+    super(1, 4, 0, 1, 1, -1, -4);
   }
 
   @Override

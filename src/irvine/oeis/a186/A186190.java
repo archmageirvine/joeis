@@ -13,6 +13,6 @@ public class A186190 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A186190() {
-    super(1, new A000213(), v -> Z.valueOf(v.toString().charAt(0) - '0'));
+    super(0, new A000213(), v -> Z.valueOf(v.toString().charAt(0) - '0'));
   }
 }

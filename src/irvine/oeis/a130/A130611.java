@@ -14,6 +14,6 @@ public class A130611 extends DistinctSequence {
 
   /** Construct the sequence. */
   public A130611() {
-    super(new IntersectionSequence(new A000073(), new A009000()));
+    super(1, new IntersectionSequence(new A000073(), new A009000()));
   }
 }

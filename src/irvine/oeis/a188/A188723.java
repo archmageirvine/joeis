@@ -11,6 +11,6 @@ public class A188723 extends ContinuedFractionSequence {
 
   /** Construct the sequence. */
   public A188723() {
-    super(new A188722());
+    super(0, new A188722());
   }
 }

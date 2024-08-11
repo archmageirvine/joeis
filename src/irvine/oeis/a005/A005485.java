@@ -10,6 +10,6 @@ public class A005485 extends ContinuedFractionDenominatorSequence {
 
   /** Construct the sequence. */
   public A005485() {
-    super(new A005482());
+    super(0, new A005482());
   }
 }

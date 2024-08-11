@@ -8,6 +8,10 @@ import irvine.math.z.Z;
  */
 public class A002353 extends A002946 {
 
+  {
+    setOffset(0);
+  }
+
   private Z mQ0 = Z.ONE;
   private Z mQ1 = Z.ZERO;
 

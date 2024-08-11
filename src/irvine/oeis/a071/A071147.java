@@ -2,14 +2,14 @@ package irvine.oeis.a071;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicLongArray;
 
 /**
  * A071147 Smallest squarefree number k with exactly n prime factors such that the sum of the prime factors is divisible by the largest prime dividing k, or 0 if no such k exists.
  * @author Sean A. Irvine
  */
-public class A071147 extends Sequence1 {
+public class A071147 extends Sequence0 {
 
   private final DynamicLongArray mFirsts = new DynamicLongArray();
   private int mN = -1;

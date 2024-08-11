@@ -2,13 +2,13 @@ package irvine.oeis.a071;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A071262 Smallest composite number ending in n.
  * @author Sean A. Irvine
  */
-public class A071262 extends Sequence1 {
+public class A071262 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

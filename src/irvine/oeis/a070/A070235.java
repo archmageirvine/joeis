@@ -10,6 +10,10 @@ import irvine.oeis.a000.A000009;
  */
 public class A070235 extends A070231 {
 
+  {
+    setOffset(0);
+  }
+
   private Z mN = null;
   private final DirectSequence mA = new A000009();
 

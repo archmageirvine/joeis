@@ -12,6 +12,6 @@ public class A071241 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A071241() {
-    super(1, new A014263(), k -> Functions.REVERSE.z(k).add(k).divide2());
+    super(0, new A014263(), k -> Functions.REVERSE.z(k).add(k).divide2());
   }
 }

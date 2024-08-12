@@ -108,7 +108,7 @@
   </target>
 
   <target name="release" description="Make a release of OEIS" depends="jar">
-    <property name="outdir" value="joeis-202205" />
+    <property name="outdir" value="joeis-202408" />
     <zip destfile="${build.dir}/joeis.zip" duplicate="fail" >
       <zipfileset fullpath="${outdir}/joeis.jar" dir="${build.dir}" includes="joeis.jar"/>
       <zipfileset fullpath="${outdir}/joeis" dir="resources" includes="joeis" filemode="755"/>

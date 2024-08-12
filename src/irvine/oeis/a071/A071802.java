@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A058943.
+ * A071802 Table in which n-th row gives exponents (in decreasing order) of lexicographically earliest primitive irreducible polynomial of degree n over GF(2).
  * @author Sean A. Irvine
  */
 public class A071802 extends Sequence1 {

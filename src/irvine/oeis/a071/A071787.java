@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071779.
+ * A071787 Continued exponent expansion of the power series 1/(1-x); odd terms being numerators and even terms being denominators of the rational terms of the expansion: 1/(1-x) = e^[(a(1)/a(2))*x*e^[(a(3)/a(4))*x*e^[(a(5)/a(6))*x*e^[...]]]].
  * @author Sean A. Irvine
  */
 public class A071787 extends Sequence1 {

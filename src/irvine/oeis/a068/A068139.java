@@ -5,7 +5,7 @@ import irvine.oeis.a073.A073742;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
- * A068139 Continued fraction for sinh(1).
+ * A068139 Continued fraction expansion for sinh(1).
  * @author Georg Fischer
  */
 public class A068139 extends ContinuedFractionSequence {

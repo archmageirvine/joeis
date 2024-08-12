@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071779.
+ * A071804 Number of pairs (x,y) such that tau(x^y) = x+y, 1&lt;=x&lt;=n, 1&lt;=y&lt;=n.
  * @author Sean A. Irvine
  */
 public class A071804 extends Sequence1 {

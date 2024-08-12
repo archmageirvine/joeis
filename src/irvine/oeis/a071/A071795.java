@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060315.
+ * A071795 Numerators of a(n+1) = Sum_{k=1..n} a'(n/k), a(1)=1, where a'(x)=a(x) if x integer and is linearly interpolated otherwise.
  * @author Sean A. Irvine
  */
 public class A071795 extends Sequence1 {

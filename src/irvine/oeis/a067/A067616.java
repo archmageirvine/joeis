@@ -4,7 +4,7 @@ import irvine.oeis.a065.A065443;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
- * A067616 Continued fraction for sum(k&gt;=1, (2^k-1)^(-2) ).
+ * A067616 Continued fraction expansion for Sum_{k&gt;=1} 1/(2^k-1)^2.
  * @author Sean A. Irvine
  */
 public class A067616 extends ContinuedFractionSequence {

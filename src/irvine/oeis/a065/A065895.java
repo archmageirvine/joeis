@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A065895 Which composite number is n^n ?.
+ * A065895 Which composite number is n^n ?: a(n) = k such that A002808(k) = n^n, or 0 if n^n is not composite.
  * @author Sean A. Irvine
  */
 public class A065895 extends A002808 {

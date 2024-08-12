@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071771.
+ * A071777 Prime(n) divides F(n)-1 where F(n) are the Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A071777 extends Sequence1 {

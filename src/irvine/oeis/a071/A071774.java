@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a001.A001175;
 
 /**
- * A071771.
+ * A071774 Related to Pisano periods: integers k such that the period of Fibonacci numbers mod k equals 2*(k+1).
  * @author Sean A. Irvine
  */
 public class A071774 extends FilterPositionSequence {

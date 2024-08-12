@@ -5,7 +5,7 @@ import irvine.oeis.a121.A121602;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A375151 Decimal expansion of the circumradius of a regular nonagon with unit side length.
+ * A375151 Decimal expansion of the circumradius of a regular 9-gon with unit side length.
  * Formula:
  * @author Georg Fischer
  */

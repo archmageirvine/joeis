@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A071229 a(n) = n*(14*n^2-21*n+13)/6.
+ * A071229 a(n) = n*(14*n^2 - 21*n + 13)/6.
  * @author Sean A. Irvine
  */
 public class A071229 extends LinearRecurrence {

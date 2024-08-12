@@ -4,7 +4,7 @@ package irvine.oeis.a101;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A101101 a(1)=1, a(2)=5, and a(n)=6 for n&gt;=3.
+ * A101101 a(1)=1, a(2)=5, and a(n)=6 for n &gt;= 3.
  * @author Georg Fischer
  */
 public class A101101 extends GeneratingFunctionSequence {

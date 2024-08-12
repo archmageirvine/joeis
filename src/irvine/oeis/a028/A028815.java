@@ -5,7 +5,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a008.A008578;
 
 /**
- * A028815 a(n) = n-th prime + 1 (starting with 1).
+ * A028815 a(n) = prime(n) + 1 (starting with 1).
  * @author Sean A. Irvine
  */
 public class A028815 extends AbstractSequence {

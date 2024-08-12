@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A032636 [ n^3 / e ].
+ * A032636 a(n) = floor(n^3 / e).
  * @author Sean A. Irvine
  */
 public class A032636 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071779.
+ * A071808 Smallest s such that sk+1 is squarefree for 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A071808 extends Sequence1 {

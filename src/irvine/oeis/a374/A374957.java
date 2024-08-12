@@ -5,7 +5,7 @@ import irvine.oeis.a121.A121598;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A374957 Decimal expansion of the circumradius of a regular heptagon of unit edge.
+ * A374957 Decimal expansion of the circumradius of a regular heptagon with unit side length.
  * Formula:
  * @author Georg Fischer
  */

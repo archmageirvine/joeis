@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
- * A094643 Continued fraction for log Pi/2.
+ * A094643 Continued fraction for log(Pi/2).
  * @author Georg Fischer
  */
 public class A094643 extends ContinuedFractionSequence {

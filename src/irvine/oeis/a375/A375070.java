@@ -5,7 +5,7 @@ import irvine.oeis.a343.A343060;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A375070 Decimal expansion of the sagitta of a regular octagon of unit edge.
+ * A375070 Decimal expansion of the sagitta of a regular octagon with unit side length.
  * Formula:
  * @author Georg Fischer
  */

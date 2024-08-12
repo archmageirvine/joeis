@@ -6,7 +6,7 @@ package irvine.oeis.a246;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A246884 G.f.: Sum_{n&gt;=0} x^n * Sum_{k=0..n} C(n,k)^2 * x^(4*k).
+ * A246884 Expansion of Sum_{n&gt;=0} x^n * Sum_{k=0..n} C(n,k)^2 * x^(4*k).
  * @author Georg Fischer
  */
 public class A246884 extends HolonomicRecurrence {

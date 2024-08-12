@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071779.
+ * A071780 Smallest k &gt; n such that there are exactly n pairs (x,y) (1 &lt;= x &lt;= y &lt;= k) solutions of the equation: phi(xy)=sigma(x)+sigma(y).
  * @author Sean A. Irvine
  */
 public class A071780 extends Sequence0 {

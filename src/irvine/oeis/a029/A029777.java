@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.math.z.Z;
 
 /**
- * A029777 Cubes such that digits of cube root of n appear in n.
+ * A029777 Cubes k such that digits of cube root of k appear in k.
  * @author Sean A. Irvine
  */
 public class A029777 extends A029776 {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A060315.
+ * A071794 a(n) is the smallest integer &gt; 0 that cannot be obtained from the integers {1, ..., n} using each number at most once and the operators +, -, *, /, ^.
  * @author Sean A. Irvine
  */
 public class A071794 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A099627 Triangle read by rows: T(n,k)=2^n+2^k-1 with n&gt;=k&gt;=0.
+ * A099627 Triangle read by rows: T(n,k) = 2^n + 2^k - 1 with n &gt;= k &gt;= 0.
  * @author Georg Fischer
  */
 public class A099627 extends Triangle {

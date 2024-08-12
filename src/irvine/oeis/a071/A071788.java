@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071788.
+ * A071788 Integer quotients arising in A071687.
  * @author Sean A. Irvine
  */
 public class A071788 extends Sequence1 {

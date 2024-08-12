@@ -5,7 +5,7 @@ import irvine.oeis.a179.A179050;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A375068 Decimal expansion of the sagitta of a regular pentagon of unit edge.
+ * A375068 Decimal expansion of the sagitta of a regular pentagon with unit side length.
  * Formula:
  * @author Georg Fischer
  */

@@ -6,7 +6,7 @@ import irvine.oeis.a155.A155603;
 import irvine.oeis.prime.PrimeSubsequence;
 
 /**
- * A277122 Primes of the form 5^n + 3^n - 1.
+ * A277122 Primes of the form 5^k + 3^k - 1.
  *
  * @author Georg Fischer
  */

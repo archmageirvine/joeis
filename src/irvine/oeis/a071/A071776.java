@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a001.A001175;
 
 /**
- * A071771.
+ * A071776 Related to Pisano periods: n such that the period of Fibonacci numbers mod n equals 3*(n+2).
  * @author Sean A. Irvine
  */
 public class A071776 extends FilterPositionSequence {

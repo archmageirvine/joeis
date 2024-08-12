@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A032702 n prefixed by '2' and followed by '1' is a prime.
+ * A032702 k prefixed by '2' and followed by '1' is a prime.
  * @author Sean A. Irvine
  */
 public class A032702 extends Sequence0 {

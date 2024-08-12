@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.math.z.Z;
 
 /**
- * A029799 Cubes such that n^(2/3) and n have same digits.
+ * A029799 Cubes k such that k^(2/3) and k have same digits.
  * @author Sean A. Irvine
  */
 public class A029799 extends A029797 {

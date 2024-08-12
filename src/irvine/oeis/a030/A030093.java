@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.math.z.Z;
 
 /**
- * A030093 Primes such that p, p^2 and p^3 have same digits.
+ * A030093 Primes p such that p, p^2 and p^3 all have the same set of digits.
  * @author Sean A. Irvine
  */
 public class A030093 extends A030091 {

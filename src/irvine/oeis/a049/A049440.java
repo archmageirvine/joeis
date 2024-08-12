@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A049440 Fib(3n)^2 - 2*Fib(3n) + 4*Fib(3n+1) + 5.
+ * A049440 a(n) = Fib(3*n)^2 - 2*Fib(3*n) + 4*Fib(3*n+1) + 5, where Fib = A000045.
  * @author Sean A. Irvine
  */
 public class A049440 extends LinearRecurrence {

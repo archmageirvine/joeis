@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 import irvine.math.z.Z;
 
 /**
- * A071788.
+ * A071792 Decimal expansion of the fourth (of 10) decimal selvage number; the n-th digit of a decimal selvage number, x, is equal to the tenths digit of n*x.
  * @author Sean A. Irvine
  */
 public class A071792 extends A071789 {

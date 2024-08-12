@@ -5,7 +5,7 @@ package irvine.oeis.a120;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A120747 Sequence relating to the hendecagon (11-gon).
+ * A120747 Sequence relating to the 11-gon (or hendecagon).
  * @author Georg Fischer
  */
 public class A120747 extends HolonomicRecurrence {

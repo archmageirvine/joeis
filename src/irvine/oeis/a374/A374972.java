@@ -5,7 +5,7 @@ import irvine.oeis.a343.A343059;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A374972 Decimal expansion of the sagitta of a regular heptagon of unit edge.
+ * A374972 Decimal expansion of the sagitta of a regular heptagon with unit side length.
  * Formula:
  * @author Georg Fischer
  */

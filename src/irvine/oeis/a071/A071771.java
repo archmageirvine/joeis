@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A071771.
+ * A071771 Least k &gt; 0 such that the nextprime(k*primorial(n)) - k*primorial(n) is composite.
  * @author Sean A. Irvine
  */
 public class A071771 extends Sequence1 {

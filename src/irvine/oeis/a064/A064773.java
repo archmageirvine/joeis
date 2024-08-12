@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A064773 Numbers n such that n^n + p(n) is prime.
+ * A064773 Numbers k such that k^k + p(k) is prime.
  * @author Sean A. Irvine
  */
 public class A064773 extends A000040 {

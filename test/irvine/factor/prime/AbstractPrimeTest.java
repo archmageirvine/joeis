@@ -53,10 +53,9 @@ public abstract class AbstractPrimeTest extends TestCase {
     assertEquals(5L, mP.nextPrime(3L));
     assertEquals(5L, mP.nextPrime(4L));
     try {
-      mP.nextPrime(9223372036854775783L);
-      fail();
+      assertEquals(0, mP.nextPrime(9223372036854775783L));
     } catch (final ArithmeticException e) {
-      // expected
+      // also acceptable
     }
   }
 

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071779.
+ * A071782 Sum of distinct squares in Z_n (mod n).
  * @author Sean A. Irvine
  */
 public class A071782 extends Sequence1 {

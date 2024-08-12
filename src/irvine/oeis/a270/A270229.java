@@ -6,7 +6,7 @@ package irvine.oeis.a270;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A270229 Number of matchings (i.e., Hosoya index) in P_{2} X K_{n}.
+ * A270229 Number of matchings in the 2 X n rook graph P_2 X K_n.
  * @author Georg Fischer
  */
 public class A270229 extends HolonomicRecurrence {

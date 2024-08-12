@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000005;
 import irvine.oeis.a010.A010846;
 
 /**
- * A243822 Number of "semidivisors" of n, numbers m &lt; n that do not divide n but divide n^e for some integer e &gt; 1.
+ * A243822 Number of k &lt; n such that rad(k) | n but k does not divide n, where rad = A007947.
  * @author Georg Fischer
  */
 public class A243822 extends Sequence1 {

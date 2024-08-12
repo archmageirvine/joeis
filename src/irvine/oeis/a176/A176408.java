@@ -4,7 +4,7 @@ package irvine.oeis.a176;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A176408 a(n) = (n+1)*(a(n-1) +a(n-2)) n&gt;1, a(0)=1,a(1)=0
+ * A176408 a(n) = (n+1)*(a(n-1) +a(n-2)) n&gt;1, a(0)=1,a(1)=0.
  * @author Georg Fischer
  */
 public class A176408 extends HolonomicRecurrence {

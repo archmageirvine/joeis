@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071779.
+ * A071806 Number of pairs (x,y) such that prime(x) + prime(y) = y*tau(x) + x*tau(y), 1&lt;=x&lt;=y&lt;=n.
  * @author Sean A. Irvine
  */
 public class A071806 extends Sequence1 {

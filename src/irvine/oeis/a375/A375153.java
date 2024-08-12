@@ -5,7 +5,7 @@ import irvine.oeis.a019.A019908;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A375153 Decimal expansion of the sagitta of a regular nonagon with unit side length.
+ * A375153 Decimal expansion of the sagitta of a regular 9-gon with unit side length.
  * Formula:
  * @author Georg Fischer
  */

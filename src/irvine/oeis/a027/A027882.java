@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A027882 a(n) = sum_{k&gt;=1} k^n (2/3)^k.
+ * A027882 a(n) = Sum_{k&gt;=1} k^n (2/3)^k.
  * @author Sean A. Irvine
  */
 public class A027882 extends Sequence0 {

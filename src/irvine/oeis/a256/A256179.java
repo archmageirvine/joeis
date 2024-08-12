@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A256179 Sequence of power towers in ascending order, using all possible permutations of 2s and 3s.
+ * A256179 Sequence of power towers in ascending order, using all possible permutations of 2's and 3's.
  * @author Georg Fischer
  */
 public class A256179 extends MultiTransformSequence {

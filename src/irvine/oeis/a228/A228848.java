@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A228848 Round(3*n^2/Pi^2).
+ * A228848 a(n) = round(3*n^2/Pi^2).
  * @author Georg Fischer
  */
 public class A228848 extends FloorSequence {

@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A147594 a(1)=1, a(n)= sigma_0 (n+a(n-1)).
+ * A147594 a(n) = sigma_0(n + a(n-1)), with a(1) = 1.
  * @author Georg Fischer
  */
 public class A147594 extends TupleTransformSequence {

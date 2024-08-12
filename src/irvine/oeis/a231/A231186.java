@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A231186 Decimal expansion of the ratio (longest diagonal)/side in a regular 11-gon (hendecagon).
+ * A231186 Decimal expansion of the ratio (longest diagonal)/side in a regular 11-gon (or hendecagon).
  * @author Georg Fischer
  */
 public class A231186 extends DecimalExpansionSequence {

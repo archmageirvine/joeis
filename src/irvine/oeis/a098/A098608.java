@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A098608 100^n.
+ * A098608 a(n) = 100^n.
  * @author Georg Fischer
  */
 public class A098608 extends Cellular1DAutomaton {

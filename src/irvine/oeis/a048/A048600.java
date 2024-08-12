@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
- * A048600 Triangle a(n,k) = number of colors that can be produced by n units of paint from k primary colors.
+ * A048600 Array a(n,k) = number of colors that can be produced by n units of paint from k primary colors, read by descending antidiagonals.
  * @author Sean A. Irvine
  */
 public class A048600 extends MemoryFunction2Sequence<Integer, Z> {

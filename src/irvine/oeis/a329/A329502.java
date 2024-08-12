@@ -6,7 +6,7 @@ package irvine.oeis.a329;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A329502 G.f. = (1+x)*(1+2*x)/(1-x).
+ * A329502 Expansion of (1+x)*(1+2*x)/(1-x).
  * @author Georg Fischer
  */
 public class A329502 extends HolonomicRecurrence {

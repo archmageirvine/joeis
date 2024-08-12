@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A375069 Decimal expansion of the sagitta of a regular hexagon of unit edge.
+ * A375069 Decimal expansion of the sagitta of a regular hexagon with unit side length.
  * Formula: 1-sqrt(3)/2=1-J010527
  * @author Georg Fischer
  */

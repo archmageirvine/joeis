@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A071788.
+ * A071789 Decimal expansion of the first (of 10) decimal selvage numbers; the n-th digit of a decimal selvage number, x, is equal to the tenths digit of n*x.
  * @author Sean A. Irvine
  */
 public class A071789 extends CachedSequence {

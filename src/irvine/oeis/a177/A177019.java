@@ -4,7 +4,7 @@ package irvine.oeis.a177;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A177019 a(n) = (3*10^(2*n)+3*10^n+1), (n&gt;=0).
+ * A177019 a(n) = 3*10^(2*n) + 3*10^n + 1.
  * @author Georg Fischer
  */
 public class A177019 extends GeneratingFunctionSequence {

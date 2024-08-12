@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A065898 Which composite number is the product of first n primes (the n-th primorial number)?.
+ * A065898 Which composite number is the product of first n primes (the n-th primorial number)?: a(n) = k such that A002808(k) =  A002110(n), or 0 if A002110(n) is not composite.
  * @author Sean A. Irvine
  */
 public class A065898 extends A002808 {

@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A069575 Numbers n such that n contains the digit 0 in no base b with 2 &lt; b &lt; n.
+ * A069575 Numbers k &gt;= 4 such that k contains the digit 0 in no base b with 2 &lt; b &lt; k.
  * @author Sean A. Irvine
  */
 public class A069575 extends NoncomputableSequence {

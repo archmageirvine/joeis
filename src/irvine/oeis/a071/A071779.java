@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071779.
+ * A071779 Smallest k &gt; n such that F(n) + F(i) divides F(k) + F(i) 1&lt;=i&lt;=n and where F(n) are the Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A071779 extends Sequence1 {

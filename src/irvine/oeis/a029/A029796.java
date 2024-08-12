@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.math.z.Z;
 
 /**
- * A029796 Cubes such that cube root of n and n have same digits.
+ * A029796 Cubes k such that cube root of k and k have the same set of digits.
  * @author Sean A. Irvine
  */
 public class A029796 extends A029795 {

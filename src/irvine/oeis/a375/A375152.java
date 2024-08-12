@@ -5,7 +5,7 @@ import irvine.oeis.a019.A019968;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A375152 Decimal expansion of the apothem (inradius) of a regular nonagon with unit side length.
+ * A375152 Decimal expansion of the apothem (inradius) of a regular 9-gon with unit side length.
  * Formula:
  * @author Georg Fischer
  */

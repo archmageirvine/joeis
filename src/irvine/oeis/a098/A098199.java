@@ -4,7 +4,7 @@ package irvine.oeis.a098;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
- * A098199 List of the partial quotients of the continued fraction for (Pi^4)/36~2.705808084277845, the limiting value of ratio A024916[n]/A002088[n]=SummatorySigma/SummatoryTotient.
+ * A098199 Continued fraction expansion for Pi^4/36, the limiting value of A024916(n)/A002088(n).
  * @author Georg Fischer
  */
 public class A098199 extends ContinuedFractionSequence {

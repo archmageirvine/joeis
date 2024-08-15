@@ -79,4 +79,20 @@ public final class ContinuedFractionUtils {
   public static List<Z> continuedFraction(final Q n) {
     return continuedFraction(n, Integer.MAX_VALUE);
   }
+
+  /**
+   * Convert a finite continued fraction into a rational number.
+   * @param continuedFraction continued fraction
+   * @return rational number
+   */
+  public static Q toQ(final List<Z> continuedFraction) {
+    Z num = continuedFraction.get(continuedFraction.size() - 1);
+    Z den = Z.ONE;
+    for (int k = continuedFraction.size() - 2; k >= 0; --k) {
+      final Z t = num.multiply(continuedFraction.get(k)).add(den);
+      den = num;
+      num = t;
+    }
+    return new Q(num, den);
+  }
 }

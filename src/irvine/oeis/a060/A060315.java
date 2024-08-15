@@ -10,12 +10,12 @@ import irvine.util.array.LongDynamicBooleanArray;
  */
 public class A060315 extends Sequence1 {
 
-  private static final long LIMIT = 1L << 29;
+  protected static final long LIMIT = 1L << 29;
   private int mN = 0;
   private long mMask = 0;
-  private final LongDynamicBooleanArray mSeen = new LongDynamicBooleanArray();
+  protected final LongDynamicBooleanArray mSeen = new LongDynamicBooleanArray();
   private long[] mStack = null;
-  private long mM = 1;
+  protected long mM = 1;
 
   private void mark(final long value) {
     if (value > 0 && value <= LIMIT) {

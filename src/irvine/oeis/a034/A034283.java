@@ -5,13 +5,13 @@ import irvine.math.cr.ComputableReals;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A034283 Decimal part of a(n)^(1/8) starts with a 'nine digits' anagram.
  * @author Sean A. Irvine
  */
-public class A034283 extends Sequence0 {
+public class A034283 extends Sequence1 {
 
   private static final CR C = CR.valueOf(1000000000);
   private static final CR ONE_EIGHTH = CR.valueOf(new Q(1, 8));

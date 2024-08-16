@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A054268 Sum of composite numbers between prime p and nextprime(p) is a repdigit.
  * @author Sean A. Irvine
  */
-public class A054268 extends Sequence0 {
+public class A054268 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 3;

@@ -2,22 +2,21 @@ package irvine.oeis.a054;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000290;
+import irvine.oeis.Sequence1;
 
 /**
  * A054259 Squares having last digit equal to the sum of the other digits.
  * @author Sean A. Irvine
  */
-public class A054259 extends A000290 {
+public class A054259 extends Sequence1 {
 
-  {
-    super.next(); // skip 0
-  }
+  private Z mN = Z.ZERO;
 
   @Override
   public Z next() {
     while (true) {
-      final Z s = super.next();
+      mN = mN.add(1);
+      final Z s = mN.square();
       final long sum = Functions.DIGIT_SUM.l(s);
       final long r = s.mod(10);
       if (sum - r == r) {

@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A032725 n prefixed by '9' and followed by '7' is a prime.
  * @author Sean A. Irvine
  */
-public class A032725 extends Sequence0 {
+public class A032725 extends Sequence1 {
 
   private long mN = -1;
 

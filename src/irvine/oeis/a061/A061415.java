@@ -1,13 +1,13 @@
 package irvine.oeis.a061;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A061415 Coefficient values m resulting from A061414.
  * @author Sean A. Irvine
  */
-public class A061415 extends Sequence0 {
+public class A061415 extends Sequence1 {
 
   private int mN = 7;
 

@@ -9,6 +9,10 @@ import irvine.oeis.a003.A003417;
  */
 public class A342991 extends A003417 {
 
+  {
+    setOffset(1);
+  }
+
   private long mC = super.next().longValueExact();
   private Z mA = Z.ONE;
 

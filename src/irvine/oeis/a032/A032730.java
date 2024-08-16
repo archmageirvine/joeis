@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A032730 n prefixed by '5' and followed by '9' is a prime.
  * @author Sean A. Irvine
  */
-public class A032730 extends Sequence0 {
+public class A032730 extends Sequence1 {
 
   private long mN = -1;
 

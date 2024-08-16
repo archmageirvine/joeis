@@ -14,7 +14,7 @@ public class A030091 extends Sequence1 {
 
   private static final Sequence A000040 = new A000040();
 
-  public static boolean isOk(final Z a, final Z b) {
+  static boolean isOk(final Z a, final Z b) {
     final int[] synA = ZUtils.digitCounts(a);
     final int[] synB = ZUtils.digitCounts(b);
     for (int k = 0; k < synA.length; ++k) {

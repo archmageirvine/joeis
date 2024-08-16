@@ -9,13 +9,13 @@ import irvine.oeis.Sequence1;
  */
 public class A030090 extends Sequence1 {
 
-  private static final A030086 mSeq = new A030086();
+  private final A030086 mSeq = new A030086();
 
   @Override
   public Z next() {
     while (true) {
       final Z p = mSeq.next();
-      if (mSeq.isOk(p, p.pow(3))) {
+      if (A030086.isOk(p, p.pow(3))) {
         return p;
       }
     }

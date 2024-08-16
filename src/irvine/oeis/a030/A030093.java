@@ -15,7 +15,7 @@ public class A030093 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z p = mSeq.next();
-      if (mSeq.isOk(p, p.pow(3))) {
+      if (A030091.isOk(p, p.pow(3))) {
         return p;
       }
     }

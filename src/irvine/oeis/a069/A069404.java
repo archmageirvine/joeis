@@ -13,35 +13,39 @@ import irvine.oeis.Sequence1;
  */
 public class A069404 extends Sequence1 {
 
+  // Note 0101 is a special case, cannot transition into it (effectively union of 01AB and AB01
+
   // @formatter:off
   // Following table indicates the valid transitions
-  //   0000000ABBBB00
-  //   0001111BB000B1
-  //   011AA11001100A
-  //   1A1ABA1111A111
-  //   01234567890123
+  //   0000000ABBBB0000
+  //   0001111BB000B11B
+  //   011AA11001100A0A
+  //   1A1ABA1111A11111
+  //   0123456789012345
   private static final String TRANSITIONS =
-      "#.#...####.###" + // 0
-      ".##..##..##..." + // 1
-      "###..##..#####" + // 2
-      "...####......#" + // 3
-      "...###........" + // 4
-      ".######......#" + // 5
-      "#######....###" + // 6
-      ".......##..#.." + // 7
-      "#......##..##." + // 8
-      "###......###.." + // 9
-      ".##......##..." + // 10
-      "#.#...####.#.." + // 11
-      "#.#.........#." + // 12
-      "......#......#";  // 13
+      "#.#...####.#####" + // 0
+      ".##..##..##....." + // 1
+      "###..##..#######" + // 2
+      "...####......#.." + // 3
+      "...###.........." + // 4
+      ".######......##." + // 5
+      "#######....#####" + // 6
+      ".......##..#...." + // 7
+      "#......##..##.#." + // 8
+      "###......###...." + // 9
+      ".##......##....." + // 10
+      "#.#...####.##.#." + // 11
+      "#...........#..." + // 12
+      "......#......#.." + // 13
+      "..............#." + // 14
+      "..#............#";  // 15
   //   01234567890123
   // @formatter:on
-  private static final String[] NODES = {"0001", "001A", "0011", "01AA", "01AB", "011A", "0111", "AB01", "BB01", "B011", "B01A", "B001", "0B01", "01A1"};
+  private static final String[] NODES = {"0001", "001A", "0011", "01AA", "01AB", "011A", "0111", "AB01", "BB01", "B011", "B01A", "B001", "0B01", "01A1", "0101", "0BA1"};
   // Start vector, 1 means this animal can be in the leftmost column
-  private static final long[] START = {1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0};
+  private static final long[] START = {1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0};
   // Stop vector, 1 means this animal can be in the rightmost column
-  //private static final long[] STOP = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+  //private static final long[] STOP = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
 
   static {
     assert TRANSITIONS.length() == START.length * START.length;

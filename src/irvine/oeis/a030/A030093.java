@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
  */
 public class A030093 extends Sequence1 {
 
-  private static final A030091 mSeq = new A030091();
+  private final A030091 mSeq = new A030091();
 
   @Override
   public Z next() {

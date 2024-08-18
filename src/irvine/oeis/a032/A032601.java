@@ -12,7 +12,7 @@ import irvine.oeis.a000.A000959;
 public class A032601 extends Combiner {
 
   /** Construct the sequence. */
-  public A032601(){
+  public A032601() {
     super(1, new A000040(), new A000959(), MULTIPLY);
   }
 }

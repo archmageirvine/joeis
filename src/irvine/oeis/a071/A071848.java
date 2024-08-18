@@ -30,7 +30,7 @@ public class A071848 extends Sequence1 {
         final Set<Z> out = new HashSet<>();
         for (int j = 1; j <= m / 2; ++j) {
           for (final Z x : get(j)) {
-            for (final Z y : get (m - j)) {
+            for (final Z y : get(m - j)) {
               out.add(x.add(y));
               out.add(x.subtract(y));
               out.add(y.subtract(x));

@@ -7,7 +7,7 @@ package irvine.oeis.a046;
 public class A046402 extends A046401 {
 
   {
-    setOffset(0);
+    setOffset(1);
   }
 
   @Override

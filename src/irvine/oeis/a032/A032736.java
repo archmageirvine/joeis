@@ -8,7 +8,7 @@ public class A032736 extends A032734 {
 
   /** Construct the sequence. */
   public A032736() {
-    super(0);
+    super(1);
   }
 
   private static final String[] PREFIXES = {"", "1", "2", "3", "4", "5", "6", "7", "8", "9"};

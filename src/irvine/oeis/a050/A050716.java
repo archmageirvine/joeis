@@ -9,5 +9,6 @@ public class A050716 extends A050674 {
   /** Construct the sequence. */
   public A050716() {
     super('6');
+    setOffset(1);
   }
 }

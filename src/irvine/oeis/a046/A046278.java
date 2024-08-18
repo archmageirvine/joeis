@@ -11,7 +11,7 @@ public class A046278 extends A000959 {
 
   /** Construct the sequence. */
   public A046278() {
-    super(0);
+    super(1);
   }
 
   private final StringBuilder mA = new StringBuilder();

@@ -8,7 +8,7 @@ public class A032737 extends A032734 {
 
   /** Construct the sequence. */
   public A032737() {
-    super(0);
+    super(1);
   }
 
   private static final String[] SUFFIXES = {"", "1", "3", "7", "9"};

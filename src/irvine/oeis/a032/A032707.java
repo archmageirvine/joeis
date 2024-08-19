@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A032707 n prefixed by '7' and followed by '1' is a prime.
+ * A032707 Numbers k such that k prefixed by '7' and followed by '1' is prime.
  * @author Sean A. Irvine
  */
 public class A032707 extends Sequence1 {

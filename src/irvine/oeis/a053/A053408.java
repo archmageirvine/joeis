@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003266;
 
 /**
- * A053408 Numbers n such that A003266(n) + 1 is prime.
+ * A053408 Numbers k such that A003266(k) + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A053408 extends A003266 {

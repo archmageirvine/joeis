@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A032709 n prefixed by '9' and followed by '1' is a prime.
+ * A032709 Numbers k such that k prefixed by '9' and followed by '1' is prime.
  * @author Sean A. Irvine
  */
 public class A032709 extends Sequence1 {

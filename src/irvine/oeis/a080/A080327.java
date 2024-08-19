@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001605;
 import irvine.oeis.a001.A001606;
 
 /**
- * A080327 Numbers n for which Lucas(n) and Fibonacci(n) are both prime.
+ * A080327 Numbers k for which Lucas(k) and Fibonacci(k) are both prime.
  * @author Georg Fischer
  */
 public class A080327 extends IntersectionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
- * A030080 Primes such that digits of p appear in p^3.
+ * A030080 Primes p such that digits of p appear in p^3.
  * @author Sean A. Irvine
  */
 public class A030080 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a001.A001158;
 
 /**
- * A063784 Primes that are the sum of cubes of divisors of an integer.
+ * A063784 Primes that are the sum of cubes of divisors of some integer.
  * @author Sean A. Irvine
  */
 public class A063784 extends FilterSequence {

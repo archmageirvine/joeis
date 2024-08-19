@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A294172 Maximum value of the cyclic convolution of first n positive integers with themselves.
+ * A294172 Maximum value of the cyclic convolution of the first n positive integers with themselves.
  * @author Georg Fischer
  */
 public class A294172 extends GeneratingFunctionSequence implements Conjectural {

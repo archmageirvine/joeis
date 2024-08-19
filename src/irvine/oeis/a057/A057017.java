@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a036.A036691;
 
 /**
- * A057017 Product of first n composite numbers minus 1 is a prime.
+ * A057017 Numbers k such that the product of the first k composite numbers minus 1 is a prime.
  * @author Sean A. Irvine
  */
 public class A057017 extends A036691 {

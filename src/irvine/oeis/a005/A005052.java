@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A005052 10*3^n.
+ * A005052 a(n) = 10*3^n.
  * @author Sean A. Irvine
  */
 public class A005052 extends Sequence0 {

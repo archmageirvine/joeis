@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A038688 Squares which are the sum of the divisors of some n.
+ * A038688 Squares that are the sum of the divisors of some number.
  * @author Sean A. Irvine
  */
 public class A038688 extends Sequence1 {

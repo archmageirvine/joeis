@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000959;
 
 /**
- * A046278 Concatenate lucky numbers.
+ * A046278 a(n) is the concatenation of the first n lucky numbers.
  * @author Sean A. Irvine
  */
 public class A046278 extends A000959 {

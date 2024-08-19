@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000142;
 import irvine.oeis.a034.A034386;
 
 /**
- * A049420 Composite numbers n such that (n!/n#)+1 is prime, where n# = primorial numbers A034386.
+ * A049420 Composite numbers k such that k!/k# + 1 is prime, where k# = primorial numbers A034386.
  * @author Sean A. Irvine
  */
 public class A049420 extends A000142 {

@@ -4,7 +4,7 @@ package irvine.oeis.a243;
 import irvine.oeis.a062.A062634;
 
 /**
- * A243819 Composite numbers n such that every divisor greater than one of n contains the digit 0.
+ * A243819 Composite numbers n such that every divisor of n greater than one contains the digit 0.
  * @author Georg Fischer
  */
 public class A243819 extends A062634 {

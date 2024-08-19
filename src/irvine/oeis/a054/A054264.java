@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A054264 Concatenation of composite numbers between successive primes.
+ * A054264 Concatenation of composite numbers between the n-th prime and the following prime.
  * @author Sean A. Irvine
  */
 public class A054264 extends Sequence2 {

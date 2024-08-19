@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A038699 Smallest prime of form n*2^m-1, m &gt;= 0, or 0 if no such prime exists.
+ * A038699 Riesel problem: Smallest prime of form n*2^m-1, m &gt;= 0, or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A038699 extends Sequence1 {

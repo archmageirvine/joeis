@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a063.A063784;
 
 /**
- * A066101 Primes of the form q = p^6 + p^3 + 1 = sigma_3(p^2), where p is prime.
+ * A066101 Duplicate of A063784.
  * @author Georg Fischer
  */
 public class A066101 extends AbstractSequence {

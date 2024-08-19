@@ -5,7 +5,7 @@ package irvine.oeis.a248;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A248707 f(3n)/(f(n-1)*f(n)*f(n+1)), where f(k) = k!.
+ * A248707 a(n) = f(3*n)/(f(n-1)*f(n)*f(n+1)), where f(k) = k!.
  * @author Georg Fischer
  */
 public class A248707 extends HolonomicRecurrence {

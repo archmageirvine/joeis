@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053045 EulerPhi is iterated with initial value n!; a(n) = number of powers of 2 among the iterates.
+ * A053045 a(n) is the number of powers of 2 among the iterates of the Euler phi function when it is iterated with initial value n!.
  * @author Sean A. Irvine
  */
 public class A053045 extends Sequence1 {

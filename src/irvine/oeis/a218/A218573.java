@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A218573 Number of partitions p of n such that max(p)-min(p) = 10.
+ * A218573 Number of partitions p of n such that max(p) - min(p) = 10.
  * @author Georg Fischer
  */
 public class A218573 extends AbstractSequence {

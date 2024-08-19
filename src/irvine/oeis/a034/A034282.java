@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A034282 Decimal part of a(n)^(1/7) starts with a 'nine digits' anagram.
+ * A034282 Numbers k such that the decimal part of k^(1/7) starts with a 'nine digits' anagram.
  * @author Sean A. Irvine
  */
 public class A034282 extends Sequence1 {

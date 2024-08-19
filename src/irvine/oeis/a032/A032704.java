@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A032704 n prefixed by '4' and followed by '1' is prime.
+ * A032704 Numbers k such that k prefixed by '4' and followed by '1' is prime.
  * @author Sean A. Irvine
  */
 public class A032704 extends Sequence1 {

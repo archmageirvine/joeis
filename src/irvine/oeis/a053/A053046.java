@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053046 EulerPhi is iterated with initial value n!; a(n) = number of terms that are not powers of 2 among the iterates.
+ * A053046 a(n) is the number of terms that are not powers of 2 among the iterates of the Euler phi function when it is iterated with initial value n!.
  * @author Sean A. Irvine
  */
 public class A053046 extends Sequence1 {

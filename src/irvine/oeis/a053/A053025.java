@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053025 Number of iterations of A000005 required to reach 2 when started at n!.
+ * A053025 Number of iterations of the number of divisors function (A000005) required to reach a fixed point (1 or 2) when started at n!.
  * @author Sean A. Irvine
  */
 public class A053025 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a197;
 // DO NOT EDIT here!
 
 /**
- * A197979 Round((6*n+1/n)^n).
+ * A197979 a(n) = round((6*n+1/n)^n).
  * @author Georg Fischer
  */
 public class A197979 extends A197975 {

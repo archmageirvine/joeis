@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A034810 Concatenation of 'prevprime(n) and n and nextprime(n)' is a prime.
+ * A034810 Concatenation of 'prevprime(k) and k and nextprime(k)' is a prime.
  * @author Sean A. Irvine
  */
 public class A034810 extends Sequence1 {

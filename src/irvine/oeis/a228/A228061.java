@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a038.A038688;
 /**
- * A228061 Numbers n such that n^2 = sigma(m) for some m.
+ * A228061 Numbers k such that k^2 = sigma(m) for some m.
  * @author Georg Fischer
  */
 public class A228061 extends Sequence1 {

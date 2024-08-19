@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A032708 n prefixed by '8' and followed by '1' is a prime.
+ * A032708 Numbers k such that k prefixed by '8' and followed by '1' is prime.
  * @author Sean A. Irvine
  */
 public class A032708 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A046305 Divisible by at least 6 primes (counted with multiplicity).
+ * A046305 Numbers that are divisible by at least 6 primes (counted with multiplicity).
  * @author Sean A. Irvine
  */
 public class A046305 extends Sequence1 {

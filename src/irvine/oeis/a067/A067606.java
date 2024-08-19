@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A067606 Primes p such that p+7==0 (mod phi(p+7)).
+ * A067606 Primes p such that p+7 == 0 (mod phi(p+7)).
  * @author Sean A. Irvine
  */
 public class A067606 extends A000040 {

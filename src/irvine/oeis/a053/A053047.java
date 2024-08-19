@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053047 EulerPhi is iterated with initial value n!; a(n) = first (maximal) power of 2 arising during iteration.
+ * A053047 a(n) is the first (and maximal) power of 2 arising during iterations of the Euler phi function with initial value n!.
  * @author Sean A. Irvine
  */
 public class A053047 extends Sequence1 {

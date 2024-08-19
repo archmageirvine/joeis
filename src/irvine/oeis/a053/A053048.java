@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053048 EulerPhi is iterated with initial value n!; a(n) = number of terminal iterations applied to powers of 2 arising in the iteration.
+ * A053048 a(n) is the number of terminal iterations applied to powers of 2 arising in the iterations of the Euler phi function with initial value n!.
  * @author Sean A. Irvine
  */
 public class A053048 extends Sequence1 {

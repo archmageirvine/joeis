@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A375265 allocated for Paolo Xausa.
+ * A375265 a(n) = n/3 if n mod 3 = 0; otherwise a(n) = n/2 if n mod 2 = 0; otherwise a(n) = 3*n + 1.
  * @author Georg Fischer
  */
 public class A375265 extends LambdaSequence {

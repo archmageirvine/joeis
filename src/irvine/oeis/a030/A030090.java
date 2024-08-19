@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A030090 Primes such that digits of p do not appear in p^2 or p^3 (probably finite).
+ * A030090 Primes p such that digits of p do not appear in p^2 or p^3 (probably finite).
  * @author Sean A. Irvine
  */
 public class A030090 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A057879 Primes with 3 distinct digits that remain prime (no leading zeros allowed) after deleting all occurrences of its digits d.
+ * A057879 Primes with 3 distinct digits that remain prime (no leading zeros allowed) after deleting all occurrences of any one of its distinct digits.
  * @author Sean A. Irvine
  */
 public class A057879 extends A000040 {

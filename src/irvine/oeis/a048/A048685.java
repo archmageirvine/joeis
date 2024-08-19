@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A048685 Consider number of prime divisors counted with multiplicity (A001222). Apply this function to C(n,k)'s. Find maximum and count its occurrence.
+ * A048685 a(n) is the number of times the maximum value of Omega(binomial(n, k)) occurs in the n-th row of Pascal's triangle, where Omega(n) is the number of prime divisors of n counted with multiplicity (A001222).
  * @author Sean A. Irvine
  */
 public class A048685 extends Sequence1 {

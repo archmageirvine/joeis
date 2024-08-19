@@ -5,7 +5,7 @@ package irvine.oeis.a248;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A248710 f(6n+3)/(f(n-2)*f(n-1)*f(n)*f(n+1)*f(n+2)*f(n+3)), where f(k) = k!.
+ * A248710 a(n) = f(6*n+3)/(f(n-2)*f(n-1)*f(n)*f(n+1)*f(n+2)*f(n+3)), where f(k) = k!.
  * @author Georg Fischer
  */
 public class A248710 extends HolonomicRecurrence {

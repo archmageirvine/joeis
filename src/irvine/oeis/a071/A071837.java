@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071829.
+ * A071837 Numbers k with the property that in the prime factorization of k all prime exponents are prime, their sum is also prime and equals the sum of distinct prime factors of k.
  * @author Sean A. Irvine
  */
 public class A071837 extends Sequence1 {

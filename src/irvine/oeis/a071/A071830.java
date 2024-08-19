@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A071829.
+ * A071830 Smallest k &gt; n such that Lpf(n) = Lpf(k) where Lpf(x) denotes the largest prime factor in x factorization.
  * @author Sean A. Irvine
  */
 public class A071830 extends Sequence2 {

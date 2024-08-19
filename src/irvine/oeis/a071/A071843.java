@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071829.
+ * A071843 Gives an LCD representation of n.
  * @author Sean A. Irvine
  */
 public class A071843 extends Sequence0 {

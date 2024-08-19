@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A071829.
+ * A071845 Primes p such that the number of ones in the binary representation of p^p is prime.
  * @author Sean A. Irvine
  */
 public class A071845 extends FilterSequence {

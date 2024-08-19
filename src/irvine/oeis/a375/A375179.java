@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A375179 a(n) = Sum_{k = 0..n-1} (-1)^(n+k+1)*binomial(2*n, k)^3.
+ * A375179 allocated for Peter Bala.
  * @author Georg Fischer
  */
 public class A375179 extends LambdaSequence {

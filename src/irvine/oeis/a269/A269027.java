@@ -7,7 +7,7 @@ import irvine.oeis.a039.A039724;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A269027 Parity of the number of 1&apos;s in A039724(n).
+ * A269027 Parity of the number of 1's in A039724(n).
  * @author Georg Fischer
  */
 public class A269027 extends SingleTransformSequence {

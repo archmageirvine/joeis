@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
- * A030091 Primes such that p and p^2 have same set of digit
+ * A030091 Primes such that p and p^2 have same set of digits.
  * @author Sean A. Irvine
  */
 public class A030091 extends Sequence1 {

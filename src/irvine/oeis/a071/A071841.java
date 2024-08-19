@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071829.
+ * A071841 Number of primes == 5 mod 8 &lt;= n.
  * @author Sean A. Irvine
  */
 public class A071841 extends Sequence1 {

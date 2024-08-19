@@ -1,157 +1,199 @@
 package irvine.oeis.a069;
 
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
+import java.util.List;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A059680.
+ * A069404 Half the number of n X 4 binary arrays with a path of adjacent 1's and a path of adjacent 0's from top row to bottom row.
  * @author Sean A. Irvine
  */
 public class A069404 extends Sequence1 {
 
-  private boolean is(final int side, final int[] v, final int row, final int col, final HashSet<String> tried) {
-    if (row == v.length - 1) {
-      return true;
+  // We first determine a set of possible states for a given row of the array.
+  // We use 0 and 1 denote a 0 and 1 with a path to the top and
+  // A and B for a 0 and 1 without a path to the top.
+  // Clearly, any valid state will contain at least one 0 and at least one 1.
+  // Further, no A will be adjacent to a 0 and no B will be adjacent to a 1.
+  //
+  // Next we determine the set of possible transitions between these states.
+  // Not all transitions are symmetrical. For example, the transition
+  // 1001 -> 1000 is possible, but the other way is not as the final 1 in 1001
+  // cannot be guaranteed to be connected.
+  //
+  // From the transition matrix it is easy to do the required counting.
+
+  private static final char[] BITS = {'0', '1', 'A', 'B'};
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+  private final List<String> mStates = buildStates();
+  private final boolean[][] mTransitions = buildTransitionMatrix(mStates);
+  private int mN = 0;
+  {
+    if (mVerbose) {
+      dumpAsDot(mStates, mTransitions);
     }
-    final String key = row + "," + (col + 1);
-    if (!tried.add(key)) {
+  }
+
+  private static boolean isValidState(final String s) {
+    if (!s.contains("0")) {
       return false;
     }
-    assert (v[row] & (1 << col)) == (side << col);
-    if ((v[row + 1] & (1 << col)) == (side << col) && is(side, v, row + 1, col, tried)) {
-      return true;
+    if (!s.contains("1")) {
+      return false;
     }
-    if (col < 3 && (v[row] & (1 << (col + 1))) == (side << (col + 1))) {
-      if (is(side, v, row, col + 1, tried)) {
-        return true;
+    for (int k = 0; k < s.length(); ++k) {
+      if (s.charAt(k) == 'A') {
+        if (k > 0 && s.charAt(k - 1) == '0') {
+          return false;
+        }
+        if (k < s.length() - 1 && s.charAt(k + 1) == '0') {
+          return false;
+        }
       }
-    }
-    if (col > 0 && (v[row] & (1 << (col - 1))) == (side << (col - 1))) {
-      if (is(side, v, row, col - 1, tried)) {
-        return true;
-      }
-    }
-    tried.remove(key);
-    return false;
-  }
-
-  private boolean is(final int side, final int[] v) {
-    for (int k = 0; k < 4; ++k) {
-      if ((v[0] & (1 << k)) == (side << k) && is(side, v, 0, k, new HashSet<>())) {
-        return true;
-      }
-    }
-    return false;
-  }
-
-  private String bin(final int v) {
-    return String.valueOf((v >> 3) & 1) + ((v >> 2) & 1) + ((v >> 1) & 1) + (v & 1);
-  }
-
-  private void exhaust2() {
-    final HashMap<Integer, Integer> cnts = new HashMap<>();
-    long cnt = 0;
-    final int[] v = new int[2];
-    for (v[0] = 1; v[0] < 15; ++v[0]) {
-      for (v[1] = 1; v[1] < 15; ++v[1]) {
-        if (is(0, v) && is(1, v)) {
-          ++cnt;
-          final int u = Math.min(15 - v[1], v[1]);
-          cnts.merge(u, 1, Integer::sum);
+      if (s.charAt(k) == 'B') {
+        if (k > 0 && s.charAt(k - 1) == '1') {
+          return false;
+        }
+        if (k < s.length() - 1 && s.charAt(k + 1) == '1') {
+          return false;
         }
       }
     }
-    System.out.println("Exhaust direct count of 2x4 gives: " + cnt + " -> " + cnt / 2);
-    for (final Map.Entry<Integer, Integer> e : cnts.entrySet()) {
-      System.out.println(bin(e.getKey()) + " " + e.getValue() / 2);
-    }
+    return true;
   }
 
-  private void exhaust3() {
-    final HashMap<Integer, Integer> cnts = new HashMap<>();
-    long cnt = 0;
-    final int[] v = new int[3];
-    for (v[0] = 1; v[0] < 15; ++v[0]) {
-      for (v[1] = 1; v[1] < 15; ++v[1]) {
-        for (v[2] = 1; v[2] < 15; ++v[2]) {
-          if (is(0, v) && is(1, v)) {
-            ++cnt;
-            final int u = Math.min(15 - v[2], v[2]);
-            cnts.merge(u, 1, Integer::sum);
+  private static List<String> buildStates() {
+    final ArrayList<String> allowedStates = new ArrayList<>();
+    for (final char a : BITS) {
+      for (final char b : BITS) {
+        for (final char c : BITS) {
+          for (final char d : BITS) {
+            final String s = String.valueOf(a) + b + c + d;
+            if (isValidState(s)) {
+              allowedStates.add(s);
+            }
           }
         }
       }
     }
-    System.out.println("Direct count of 3x4 gives: " + cnt + " -> " + cnt / 2);
-    for (final Map.Entry<Integer, Integer> e : cnts.entrySet()) {
-      System.out.println(bin(e.getKey()) + " " + e.getValue() / 2);
-    }
+    return allowedStates;
   }
 
-  // Note 0101 is a special case, cannot transition into it (effectively union of 01AB and AB01
-
-  // @formatter:off
-  // Following table indicates the valid transitions
-  //   0000000ABBBB0000
-  //   0001111BB000B11B
-  //   011AA11001100A0A
-  //   1A1ABA1111A11111
-  //   0123456789012345
-  private static final String TRANSITIONS =
-      "#.#...####.#####" + // 0
-      ".##..##..##....." + // 1
-      "###..##..#######" + // 2
-      "...####......#.#" + // 3
-      "...###.........." + // 4
-      ".######......##." + // 5
-      "#######.....####" + // 6
-      ".......##..#...." + // 7
-      "#......##..##.#." + // 8
-      "###......###...." + // 9
-      ".##......##....." + // 10
-      "#.#....###.##.#." + // 11
-      "#...........#..." + // 12
-      "......#......#.." + // 13
-      "..............#." + // 14
-      "..#............#";  // 15
-  //   01234567890123
-  // @formatter:on
-  private static final String[] NODES = {"0001", "001A", "0011", "01AA", "01AB", "011A", "0111", "AB01", "BB01", "B011", "B01A", "B001", "0B01", "01A1", "0101", "0BA1"};
-  // Start vector, 1 means this animal can be in the leftmost column
-  private static final long[] START = {1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0};
-  // Stop vector, 1 means this animal can be in the rightmost column
-  //private static final long[] STOP = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
-
-  static {
-    assert TRANSITIONS.length() == START.length * START.length;
-    assert NODES.length == START.length;
-    System.out.println("digraph G {");
-    System.out.println("  node [shape=none]");
-    for (int j = 0; j < NODES.length; ++j) {
-      System.out.println("  \"" + NODES[j] + "\" [label=\"" + NODES[j] + "\\n" + j + "\"];");
+  private static boolean isValidTransition(final String from, final String to) {
+    if (from.equals(to)) {
+      return true; // Always can transition to self
     }
-    for (int j = 0; j < NODES.length; ++j) { // Next state
-      for (int i = 0; i < NODES.length; ++i) { // Previous state
+    // An "A" cannot be below a "0" and a "B" cannot be below a "1"
+    for (int k = 0; k < from.length(); ++k) {
+      if (from.charAt(k) == '0' && to.charAt(k) == 'A') {
+        return false;
+      }
+      if (from.charAt(k) == '1' && to.charAt(k) == 'B') {
+        return false;
+      }
+    }
+    // There needs to be at least one place where 0 -> 0 and a place where 1 -> 1
+    boolean saw0 = false;
+    boolean saw1 = false;
+    for (int k = 0; k < from.length(); ++k) {
+      if (from.charAt(k) == '0' && to.charAt(k) == '0') {
+        saw0 = true;
+      }
+      if (from.charAt(k) == '1' && to.charAt(k) == '1') {
+        saw1 = true;
+      }
+      if (from.charAt(k) == '0' && to.charAt(k) == 'A') {
+        return false;
+      }
+      if (from.charAt(k) == '1' && to.charAt(k) == 'B') {
+        return false;
+      }
+    }
+    if (!saw0 || !saw1) {
+      return false;
+    }
+    // Every 0 or 1 in "to" must be connected to a corresponding value in "from"
+    for (int k = 0; k < from.length(); ++k) {
+      if (to.charAt(k) == '0') {
+        boolean ok = false;
+        for (int j = k; j < from.length() && to.charAt(j) == '0'; ++j) {
+          if (from.charAt(j) == '0') {
+            ok = true;
+            break;
+          }
+        }
+        if (!ok) {
+          for (int j = k - 1; j >= 0 && to.charAt(j) == '0'; --j) {
+            if (from.charAt(j) == '0') {
+              ok = true;
+              break;
+            }
+          }
+        }
+        if (!ok) {
+          return false;
+        }
+      } else if (to.charAt(k) == '1') {
+        boolean ok = false;
+        for (int j = k; j < from.length() && to.charAt(j) == '1'; ++j) {
+          if (from.charAt(j) == '1') {
+            ok = true;
+            break;
+          }
+        }
+        if (!ok) {
+          for (int j = k - 1; j >= 0 && to.charAt(j) == '1'; --j) {
+            if (from.charAt(j) == '1') {
+              ok = true;
+              break;
+            }
+          }
+        }
+        if (!ok) {
+          return false;
+        }
+      }
+    }
+    return true;
+  }
+
+  private boolean[][] buildTransitionMatrix(final List<String> states) {
+    final boolean[][] m = new boolean[states.size()][states.size()];
+    for (int from = 0; from < states.size(); ++from) {
+      for (int to = 0; to < states.size(); ++to) {
+        if (isValidTransition(states.get(from), states.get(to))) {
+          m[from][to] = true;
+        }
+      }
+    }
+    return m;
+  }
+
+  private void dumpAsDot(final List<String> states, final boolean[][] m) {
+    System.out.println("digraph G {");
+    System.out.println("  mindist=0.8;");
+    System.out.println("  node [shape=none, margin=0, fontsize=24];");
+    final int len = states.size();
+    for (final String state : states) {
+      System.out.println("  \"" + state + "\";");
+    }
+    for (int j = 0; j < len; ++j) { // Next state
+      for (int i = 0; i < len; ++i) { // Previous state
         if (i == j) {
           continue; // Don't bother showing the loops
         }
-        final int pos1 = j * NODES.length + i;
-        final int pos2 = i * NODES.length + j;
-        if (TRANSITIONS.charAt(pos1) == '#') {
-          final boolean bidirectional = TRANSITIONS.charAt(pos2) == '#';
+        if (m[i][j]) {
+          final boolean bidirectional = m[j][i];
           if (bidirectional) {
             if (j <= i) {
-              System.out.println("  \"" + NODES[i] + "\" -> \"" + NODES[j] + "\" [dir=both color=red];");
+              System.out.println("  \"" + states.get(i) + "\" -> \"" + states.get(j) + "\" [dir=both color=red];");
             }
           } else {
-            System.out.println("  \"" + NODES[i] + "\" -> \"" + NODES[j] + "\" [color=blue];");
+            System.out.println("  \"" + states.get(i) + "\" -> \"" + states.get(j) + "\" [color=blue];");
           }
         }
       }
@@ -160,42 +202,27 @@ public class A069404 extends Sequence1 {
     //System.exit(0);
   }
 
-  private int mN = 0;
-
   @Override
   public Z next() {
-    exhaust2();
-    exhaust3();
+    Z[] v = new Z[mStates.size()];
+    for (int k = 0; k < v.length; ++k) {
+      final String s = mStates.get(k);
+      v[k] = s.contains("A") || s.contains("B") ? Z.ZERO : Z.ONE;
+    }
     ++mN;
-    Z[] v = ZUtils.toZ(START);
     for (int k = 1; k < mN; ++k) {
       final Z[] next = new Z[v.length];
       Arrays.fill(next, Z.ZERO);
-      for (int j = 0; j < v.length; ++j) { // Next animal
-        for (int i = 0; i < v.length; ++i) { // Previous animal
-          final int pos = j * v.length + i; // todo is this really right
-          if (TRANSITIONS.charAt(pos) == '#') {
+      for (int i = 0; i < v.length; ++i) { // Previous state
+        for (int j = 0; j < v.length; ++j) { // Next state
+          if (mTransitions[i][j]) {
             next[j] = next[j].add(v[i]);
           }
         }
       }
       v = next;
-      System.out.println(k + " " + Arrays.toString(v));
     }
-
-    final HashMap<Integer, Integer> cnts = new HashMap<>();
-    for (int k = 0; k < NODES.length; ++k) {
-      //System.out.println(NODES[k] + " " + v[k]);
-      final int u = Integer.parseInt(NODES[k].replace('A', '0').replace('B', '1'), 2);
-      final int w = Math.min(15 - u, u);
-      cnts.merge(w, v[k].intValueExact(), Integer::sum);
-    }
-    System.out.println("State counts");
-    for (final Map.Entry<Integer, Integer> e : cnts.entrySet()) {
-      System.out.println(bin(e.getKey()) + " " + e.getValue());
-    }
-
-    return Functions.SUM.z(v);
+    return Functions.SUM.z(v).divide2();
   }
 }
 

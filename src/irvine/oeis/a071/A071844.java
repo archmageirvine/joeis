@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071829.
+ * A071844 Numbers k such that reverse(gpf(k)) = gpf(k+1), where gpf(n) = A006530(n); a(1)=1.
  * @author Sean A. Irvine
  */
 public class A071844 extends Sequence1 {

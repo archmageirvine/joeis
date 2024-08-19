@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A375178 a(n) = Sum_{k = 0..n-1} binomial(n+k-1, k)^3.
+ * A375178 allocated for Peter Bala.
  * @author Georg Fischer
  */
 public class A375178 extends LambdaSequence {

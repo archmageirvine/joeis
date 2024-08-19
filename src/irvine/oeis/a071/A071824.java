@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 import irvine.math.z.Z;
 
 /**
- * A071777.
+ * A071824 Number of x with largest prime factor of the form 4k+1 less than or equal to n.
  * @author Sean A. Irvine
  */
 public class A071824 extends A071821 {

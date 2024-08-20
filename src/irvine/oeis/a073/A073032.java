@@ -4,7 +4,7 @@ package irvine.oeis.a073;
 import irvine.oeis.recur.PaddingSequence;
 
 /**
- * A073032 A 4-cycle of the n =&gt; sigma(n)-n process, where sigma(n) is the sum of divisors of n (A000203).
+ * A073032 A 4-cycle of the k =&gt; sigma(k)-k process, where sigma(k) is the sum of divisors of k (A000203).
  * @author Georg Fischer
  */
 public class A073032 extends PaddingSequence {

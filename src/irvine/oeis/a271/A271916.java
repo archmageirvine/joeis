@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaArray;
 
 /**
- * A271916 Array read by antidiagonals: T(m,n) (m&gt;=1, n&gt;=1) = f(m,n) if m &lt;= n or f(n,m) if n &lt; n, where f(m,n) = m*(m-1)*(3*n-m-1)/6.
+ * A271916 Array read by antidiagonals: T(m,n) (m&gt;=1, n&gt;=1) = f(m,n) if m &lt;= n or f(n,m) if n &lt; m, where f(m,n) = m*(m-1)*(3*n-m-1)/6.
  * @author Georg Fischer
  */
 public class A271916 extends LambdaArray {

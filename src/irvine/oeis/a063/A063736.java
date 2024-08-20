@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A063736 Patterns of possible squarefree triples of 3 consecutive numbers {4k+1, 4k+2, 4k+3} are coded as follows: compute Abs[mu[x]]=am[x] getting one of {000, 001, 010, 011, 100, 101, 110, 111} and convert to decimal.
+ * A063736 Patterns of possible squarefree triples of 3 consecutive numbers {4k+1, 4k+2, 4k+3} are coded as follows: compute A008966(x) getting one of {000, 001, 010, 011, 100, 101, 110, 111} and convert to decimal.
  * @author Sean A. Irvine
  */
 public class A063736 extends Sequence0 {

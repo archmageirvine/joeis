@@ -27,7 +27,7 @@ public class A069404 extends Sequence1 {
   //
   // From the transition matrix it is easy to do the required counting.
 
-  private static final char[] BITS = {'0', '1', 'A', 'B'};
+  protected static final char[] BITS = {'0', '1', 'A', 'B'};
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final List<String> mStates = buildStates();
   private final boolean[][] mTransitions = buildTransitionMatrix(mStates);
@@ -38,7 +38,7 @@ public class A069404 extends Sequence1 {
     }
   }
 
-  private static boolean isValidState(final String s) {
+  protected static boolean isValidState(final String s) {
     if (!s.contains("0")) {
       return false;
     }
@@ -66,7 +66,7 @@ public class A069404 extends Sequence1 {
     return true;
   }
 
-  private static List<String> buildStates() {
+  protected List<String> buildStates() {
     final ArrayList<String> allowedStates = new ArrayList<>();
     for (final char a : BITS) {
       for (final char b : BITS) {
@@ -83,7 +83,7 @@ public class A069404 extends Sequence1 {
     return allowedStates;
   }
 
-  private static boolean isValidTransition(final String from, final String to) {
+  private boolean isValidTransition(final String from, final String to) {
     if (from.equals(to)) {
       return true; // Always can transition to self
     }

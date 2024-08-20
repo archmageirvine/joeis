@@ -2337,7 +2337,6 @@ A069399 Half the number of 6 X n binary arrays with a path of adjacent 1's and a
 A069400 Half the number of 7 X n binary arrays with a path of adjacent 1's and a path of adjacent 0's from top row to bottom row
 A069401 Half the number of 8 X n binary arrays with a path of adjacent 1's and a path of adjacent 0's from top row to bottom row
 A069402 Half the number of 9 X n binary arrays with a path of adjacent 1's and a path of adjacent 0's from top row to bottom row
-A069405 Half the number of n X 5 binary arrays with a path of adjacent 1's and a path of adjacent 0's from top row to bottom row
 A069406 Half the number of n X 6 binary arrays with a path of adjacent 1's and a path of adjacent 0's from top row to bottom row
 A069407 Half the number of n X 7 binary arrays with a path of adjacent 1's and a path of adjacent 0's from top row to bottom row
 A069408 Half the number of n X 8 binary arrays with a path of adjacent 1's and a path of adjacent 0's from top row to bottom row

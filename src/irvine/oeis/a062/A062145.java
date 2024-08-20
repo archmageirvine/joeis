@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A062145 Triangle read by rows. T{n, k] = [z^k] P(n, z) where P(n, z) = Sum_{k=0..n} binomial(n, k) * Pochhammer(n - k + c, k) * z^k / k! and c = 4.
+ * A062145 Triangle read by rows. T(n, k) = [z^k] P(n, z) where P(n, z) = Sum_{k=0..n} binomial(n, k) * Pochhammer(n - k + c, k) * z^k / k! and c = 4.
  * @author Sean A. Irvine
  */
 public class A062145 extends Sequence0 {

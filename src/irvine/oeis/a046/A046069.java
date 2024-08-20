@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A046069 Smallest m &gt;= 0 such that (2n-1)2^m-1 is prime, or -1 if no such value exists.
+ * A046069 Riesel Problem: Smallest m &gt;= 0 such that (2n-1)2^m-1 is prime, or -1 if no such value exists.
  * @author Sean A. Irvine
  */
 public class A046069 extends Sequence1 {

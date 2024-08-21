@@ -24,20 +24,32 @@ public class A071303 extends Sequence1 {
   // generate with increasing row indexes and multiply by n! to get the count.
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+  private final int mMax;
+  private final long mMod;
   private int mN = 0;
   private long mCount = 0;
+
+  protected A071303(final int max, final long mod) {
+    mMax = max;
+    mMod = mod;
+  }
+
+  /** Construct the sequence. */
+  public A071303() {
+    this(3, 2);
+  }
 
   // Build all vectors where dot product is 1
   private List<int[]> build(final int n) {
     final ArrayList<int[]> res = new ArrayList<>();
-    final Bumper bump = BumperFactory.range(0, 3);
+    final Bumper bump = BumperFactory.range(0, mMax);
     final int[] t = new int[n];
     while (bump.bump(t)) {
       int s = 0;
       for (final int v : t) {
         s += v * v;
       }
-      if ((s & 3) == 1) {
+      if ((s & mMax) == 1) {
         res.add(Arrays.copyOf(t, t.length));
       }
     }
@@ -49,7 +61,7 @@ public class A071303 extends Sequence1 {
     for (int i = 0; i < b.length; ++i) {
       s += a[i] * b[i];
     }
-    return (s & 3) == 0;
+    return (s & mMax) == 0;
   }
 
   // Precompute validity of each possible pair
@@ -101,6 +113,6 @@ public class A071303 extends Sequence1 {
     // Try all possible combinations of permissible rows
     mCount = 0;
     search(vecs, pairs, new int[mN], 0, 0);
-    return Z.valueOf(mCount).multiply(Functions.FACTORIAL.z(mN)).divide2();
+    return Z.valueOf(mCount).multiply(Functions.FACTORIAL.z(mN)).divide(mMod);
   }
 }

@@ -5,7 +5,6 @@ import java.util.Iterator;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Binomial;
-import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
@@ -30,7 +29,14 @@ public class A002487 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    return n == 0 ? Z.ZERO : Integers.SINGLETON.sum(0, (n - 1) / 2, k -> Binomial.binomial(n - k - 1, k).mod(Z.TWO));
+    if (n == 0) {
+      return Z.ZERO;
+    }
+    long sum = 0;
+    for (long k = 0; k <= (n - 1) / 2; ++k) {
+      sum += Binomial.binomial(n - k - 1, k, 2);
+    }
+    return Z.valueOf(sum);
   }
 
   @Override

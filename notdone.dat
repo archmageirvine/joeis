@@ -2416,3 +2416,6 @@ A071536 Number of extensions to a semigroup of the (categorical) composition of 
 A071581 A003656(n)-prime(n).
 A071643 Optimal Hamming complexity of normal basis for GF(2^n) over GF(2).
 A071713 a(n) = smallest value of |x^n + y^n + z^n| for x,y,z distinct nonzero integers.
+A071880 Number of combinatorial types of n-dimensional parallelohedra.
+A071881 Number of different primitive polyhedral types of Voronoi regions of n-dimensional point lattices.
+A071882 fucked against wall, someone else watching on, outside?

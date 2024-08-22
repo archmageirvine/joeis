@@ -53,6 +53,27 @@ public final class ContinuedFractionUtils {
   }
 
   /**
+   * The number of times that the <code>target</code> appears in the continued fraction for <code>n</code>.
+   * @param n number
+   * @param target number to be matched
+   * @return sum
+   */
+  public static long continuedFractionTermCount(Q n, final Z target) {
+    long cnt = 0;
+    while (true) {
+      final Z t = n.toZ();
+      if (t.equals(target)) {
+        ++cnt;
+      }
+      n = n.subtract(t);
+      if (n.isZero()) {
+        return cnt;
+      }
+      n = n.reciprocal();
+    }
+  }
+
+  /**
    * Return the continued fraction expansion of a rational number.
    * @param n number
    * @return expansion

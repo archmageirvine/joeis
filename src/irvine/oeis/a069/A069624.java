@@ -21,9 +21,6 @@ public class A069624 extends Sequence1 {
     while (true) {
       final Z r = mN.root(++k);
       res.add(r);
-      if (Z.EIGHT.equals(mN)) {
-        System.out.println(r + " " + k);
-      }
       if (Z.ONE.equals(r)) {
         return Z.valueOf(res.size());
       }

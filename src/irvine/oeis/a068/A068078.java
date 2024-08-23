@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068078 Numbers n such that (sigma(n)+sigma(n+1))/n is an integer.
+ * A068078 Numbers k such that (sigma(k)+sigma(k+1))/k is an integer.
  * @author Sean A. Irvine
  */
 public class A068078 extends Sequence1 {

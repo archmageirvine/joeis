@@ -1,7 +1,6 @@
 package irvine.oeis.a002;
 
-import irvine.factor.factor.Jaguar;
-import irvine.factor.util.FactorSequence;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,17 +16,7 @@ public class A002312 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      final FactorSequence fs = Jaguar.factor(mN.square().add(1));
-      final Z lim = mN.multiply2();
-      final Z[] f = fs.toZArray();
-      boolean ok = true;
-      for (int k = f.length - 1; k >= 0; --k) {
-        if (f[k].compareTo(lim) >= 0) {
-          ok = false;
-          break;
-        }
-      }
-      if (ok) {
+      if (!Predicates.STORMER.is(mN)) {
         return mN;
       }
     }

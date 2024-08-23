@@ -7,7 +7,7 @@ import irvine.oeis.a026.A026233;
 import irvine.oeis.a049.A049084;
 
 /**
- * A239968 0 unless n is a nonprime A018252(k) when a(n) = k.
+ * A239968 a(n) = 0 unless n is a nonprime A018252(k) then a(n) = k.
  * @author Georg Fischer
  */
 public class A239968 extends AbstractSequence {

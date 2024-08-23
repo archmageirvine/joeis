@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071337.
+ * A071923 Prime such that pi{x^2,(x+1)^2+1}=pi{(x+1)^2,p}.
  * @author Sean A. Irvine
  */
 public class A071923 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A352310 Expansion of e.g.f.: 1/(exp(x) - x^3/6).
+ * A352310 Expansion of e.g.f. 1/(exp(x) - x^3/6).
  * @author Georg Fischer
  */
 public class A352310 extends MultiTransformSequence {

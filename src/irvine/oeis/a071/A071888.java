@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071868.
+ * A071888 a(1)=2 and for n&gt;1 a(n) = least squarefree m &gt; n with gcd(m,n)&gt;1.
  * @author Sean A. Irvine
  */
 public class A071888 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071868.
+ * A071899 a(0)=1 and for n&gt;0: a(n) = least prime&gt;a(n-1) of form 1+k*n.
  * @author Sean A. Irvine
  */
 public class A071899 extends Sequence0 {

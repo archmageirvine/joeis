@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000042;
 
 /**
- * A046430 All the prime factors of repunit a(n) end with the digit 1.
+ * A046430 Lengths of repunits with all prime factors ending with the digit 1.
  * @author Sean A. Irvine
  */
 public class A046430 extends A000042 {

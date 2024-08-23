@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071868.
+ * A071872 Number of positive k such that k*tau(k) &lt; n plus the number of positive k such that k*tau(k) = n-1.
  * @author Sean A. Irvine
  */
 public class A071872 extends Sequence1 {

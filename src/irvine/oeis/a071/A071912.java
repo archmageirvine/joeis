@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A071912.
+ * A071912 a(0) = 0, a(1) = 1; to get a(n+1) for n &gt;= 1, let m = a(n) and consider in turn the numbers k = m-1, m-2, ..., 2, 1, m+1, m+2, m+3, ... until reach a k such that gcd(m,k) = 1 and m/k is different from all a(i)/a(i+1) for i = 0, ..., n-1.
  * @author Sean A. Irvine
  */
 public class A071912 extends CachedSequence {

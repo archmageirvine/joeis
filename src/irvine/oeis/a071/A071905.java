@@ -16,7 +16,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071115.
+ * A071905 a(n) is the smallest positive integer (which is a polynomial of degree 0) that cannot be obtained using the polynomials {x, x+1, ..., x+n} using each polynomial at most once and the operations +, -, *, /.
  * @author Sean A. Irvine
  */
 public class A071905 extends Sequence0 {

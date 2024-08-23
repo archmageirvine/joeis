@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A071866 Number of elements in the continued fraction for prime(n+1)/prime(n).
+ * A071867 Maximum element in the continued fraction for prime(n+1)/prime(n).
  * @author Sean A. Irvine
  */
 public class A071867 extends A000040 {

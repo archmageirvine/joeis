@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071265 Numbers which can be written in exactly two different ways as k + R(k) where R(k) is k reversed (A004086).
+ * A071914 Numbers n of the form k + reverse(k) for exactly three k.
  * @author Sean A. Irvine
  */
 public class A071914 extends Sequence1 {

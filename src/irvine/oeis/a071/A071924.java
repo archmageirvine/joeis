@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a050.A050278;
 
 /**
- * A071337.
+ * A071924 Highest m such that prime(m) divides the n-th pandigital (A050278).
  * @author Sean A. Irvine
  */
 public class A071924 extends A050278 {

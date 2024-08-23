@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004086;
 
 /**
- * A068158 a(n) = floor[ n!/(R(n))! ], where R(n) = Digit reversal of n (A004086).
+ * A068158 a(n) = floor(n!/R(n)!), where R(n) = digit reversal of n (A004086).
  * @author Sean A. Irvine
  */
 public class A068158 extends Sequence1 {

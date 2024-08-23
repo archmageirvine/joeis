@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002487;
 
 /**
- * A071868.
+ * A071884 Trajectory of 37 under map x -&gt; A002487(x)*A002487(x+1).
  * @author Sean A. Irvine
  */
 public class A071884 extends Sequence0 {

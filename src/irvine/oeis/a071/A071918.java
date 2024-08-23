@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000796;
 import irvine.oeis.a001.A001113;
 
 /**
- * A037024 Position of start of first occurrence of prime(n) after the decimal point in expansion of Pi.
+ * A071918 First appearance in the decimal expansion of Pi of the first n digits of the decimal expansion of e.
  * @author Sean A. Irvine
  */
 public class A071918 extends Sequence1 {

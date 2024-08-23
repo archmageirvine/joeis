@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A374984 a(n) = (1/4)*Product_{k=0..n} F(k)+3, where F=A000045 (Fibonacci numbers).
+ * A374984 a(n) = (1/4)*Product_{k=0..n} F(k)+4, where F=A000045 (Fibonacci numbers).
  * @author Georg Fischer
  */
 public class A374984 extends LambdaSequence {

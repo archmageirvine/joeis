@@ -6,7 +6,7 @@ import irvine.oeis.a004.A004648;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A072608 Parity of remainder Mod[p(n),n]=A004648(n).
+ * A072608 Parity of remainder Mod(prime(n),n) = A004648(n).
  * @author Georg Fischer
  */
 public class A072608 extends SingleTransformSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071868.
+ * A071889 a(n) = gcd(A071888(n), n).
  * @author Sean A. Irvine
  */
 public class A071889 extends Sequence1 {

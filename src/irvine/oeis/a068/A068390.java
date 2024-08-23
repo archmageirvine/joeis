@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068390 Numbers n such that sigma(n) = 4*phi(n).
+ * A068390 Numbers k such that sigma(k) = 4*phi(k).
  * @author Sean A. Irvine
  */
 public class A068390 extends Sequence1 {

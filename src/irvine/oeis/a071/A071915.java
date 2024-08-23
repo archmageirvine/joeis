@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071337.
+ * A071915 Number of 1's in the continued fraction expansion of (3/2)^n.
  * @author Sean A. Irvine
  */
 public class A071915 extends Sequence1 {

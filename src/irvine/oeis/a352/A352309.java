@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A352309 Expansion of e.g.f.: 1/(exp(x) - x^2/2).
+ * A352309 Expansion of e.g.f. 1/(exp(x) - x^2/2).
  * @author Georg Fischer
  */
 public class A352309 extends MultiTransformSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a050.A050278;
 
 /**
- * A071337.
+ * A071926 Least m such that m-th pandigital A050278(m) is a multiple of n or -1 if no such m exists.
  * @author Sean A. Irvine
  */
 public class A071926 extends Sequence1 {

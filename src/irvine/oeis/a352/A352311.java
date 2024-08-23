@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A352311 Expansion of e.g.f.: 1/(exp(x) - x^4/24).
+ * A352311 Expansion of e.g.f. 1/(exp(x) - x^4/24).
  * @author Georg Fischer
  */
 public class A352311 extends MultiTransformSequence {

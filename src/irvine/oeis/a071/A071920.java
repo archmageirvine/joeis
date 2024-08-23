@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071337.
+ * A071920 Square array giving number of unimodal functions [n]-&gt;[m] for n&gt;=0, m&gt;=0, with a(0,m)=0 for all m&gt;=0, read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A071920 extends Sequence0 {

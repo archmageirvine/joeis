@@ -3,7 +3,6 @@ package irvine.oeis.a001;
 
 import irvine.oeis.SumOfLikePowersSequence;
 
-
 /**
  * A001481 Numbers that are the sum of 2 squares.
  * @author Sean A. Irvine

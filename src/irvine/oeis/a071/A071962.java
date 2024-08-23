@@ -15,10 +15,10 @@ import irvine.oeis.Sequence0;
  */
 public class A071962 extends Sequence0 {
 
-  private Set<List<Integer>> mA = new HashSet<>();
+  private Set<List<Byte>> mA = new HashSet<>();
 
-  private List<Integer> geq(final List<Integer> t) {
-    final ArrayList<Integer> res = new ArrayList<>(t.size());
+  private List<Byte> geq(final List<Byte> t) {
+    final ArrayList<Byte> res = new ArrayList<>(t.size());
     for (int k = 0; k < t.size(); ++k) {
       final int tk = t.get(k);
       int cnt = 0;
@@ -27,7 +27,7 @@ public class A071962 extends Sequence0 {
           ++cnt;
         }
       }
-      res.add(cnt);
+      res.add((byte) cnt);
     }
     return res;
   }
@@ -35,15 +35,15 @@ public class A071962 extends Sequence0 {
   @Override
   public Z next() {
     if (mA.isEmpty()) {
-      mA.add(Collections.singletonList(0));
+      mA.add(Collections.singletonList((byte) 0));
     } else {
-      final Set<List<Integer>> doublePoints = new HashSet<>();
-      for (final List<Integer> prev : mA) {
-        for (int k = 0; k <= prev.size(); ++k) {
-          final List<Integer> t = new ArrayList<>(prev);
+      final Set<List<Byte>> doublePoints = new HashSet<>();
+      for (final List<Byte> prev : mA) {
+        for (byte k = 0; k <= prev.size(); ++k) {
+          final List<Byte> t = new ArrayList<>(prev);
           t.add(k); // new coordinate
           if (!doublePoints.contains(t)) {
-            final List<Integer> geq = geq(t);
+            final List<Byte> geq = geq(t);
             if (geq(geq).equals(t)) {
               doublePoints.add(t);
               doublePoints.add(geq);

@@ -2353,9 +2353,6 @@ A069419 Number of 5 X n binary arrays with a path of adjacent 1's and no path of
 A069420 Number of 6 X n binary arrays with a path of adjacent 1's and no path of adjacent 0's from top row to bottom row.
 A069421 Number of 7 X n binary arrays with a path of adjacent 1's and no path of adjacent 0's from top row to bottom row.
 A069422 Number of 8 X n binary arrays with a path of adjacent 1's and no path of adjacent 0's from top row to bottom row.
-A069423 Number of n X 3 binary arrays with a path of adjacent 1's and no path of adjacent 0's from top row to bottom row.
-A069424 Number of n X 4 binary arrays with a path of adjacent 1's and no path of adjacent 0's from top row to bottom row.
-A069425 Number of n X 5 binary arrays with a path of adjacent 1's and no path of adjacent 0's from top row to bottom row.
 A069426 Number of n X 6 binary arrays with a path of adjacent 1's and no path of adjacent 0's from top row to bottom row.
 A069427 Number of n X 7 binary arrays with a path of adjacent 1's and no path of adjacent 0's from top row to bottom row.
 A069428 Number of n X 8 binary arrays with a path of adjacent 1's and no path of adjacent 0's from top row to bottom row.
@@ -2369,10 +2366,6 @@ A069436 Half the number of 10 X n binary arrays with no path of adjacent 1's or 
 A069437 Half the number of 11 X n binary arrays with no path of adjacent 1's or adjacent 0's from top row to bottom row.
 A069438 Half the number of 12 X n binary arrays with no path of adjacent 1's or adjacent 0's from top row to bottom row.
 A069439 Half the number of 13 X n binary arrays with no path of adjacent 1's or adjacent 0's from top row to bottom row.
-A069440 Half the number of n X 2 binary arrays with no path of adjacent 1's or adjacent 0's from top row to bottom row.
-A069441 Half the number of n X 3 binary arrays with no path of adjacent 1's or adjacent 0's from top row to bottom row.
-A069442 Half the number of n X 4 binary arrays with no path of adjacent 1's or adjacent 0's from top row to bottom row.
-A069443 Half the number of n X 5 binary arrays with no path of adjacent 1's or adjacent 0's from top row to bottom row.
 A069444 Half the number of n X 6 binary arrays with no path of adjacent 1's or adjacent 0's from top row to bottom row.
 A069445 Half the number of n X 7 binary arrays with no path of adjacent 1's or adjacent 0's from top row to bottom row.
 A069446 Half the number of n X 8 binary arrays with no path of adjacent 1's or adjacent 0's from top row to bottom row.

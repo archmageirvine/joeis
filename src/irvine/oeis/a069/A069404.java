@@ -174,6 +174,7 @@ public class A069404 extends Sequence1 {
   }
 
   private void dumpAsDot(final List<String> states, final boolean[][] m) {
+    System.out.println("# Number of states: " + states.size());
     System.out.println("digraph G {");
     System.out.println("  mindist=0.8;");
     System.out.println("  node [shape=none, margin=0, fontsize=24];");

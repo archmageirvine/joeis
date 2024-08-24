@@ -3,19 +3,19 @@ package irvine.oeis.a069;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
-import irvine.oeis.a001.A001333;
 
 /**
  * A071926.
  * @author Sean A. Irvine
  */
-public class A069440 extends Sequence1 {
+public class A069441 extends Sequence1 {
 
-  private final Sequence mA = new A001333().skip(2);
+  private final Sequence mA = new A069378();
+  private final Sequence mB = new A069403().skip();
   private long mN = 0;
 
   @Override
   public Z next() {
-    return Z.ONE.shiftLeft(2 * ++mN - 1).subtract(mA.next()).add(1);
+    return Z.ONE.shiftLeft(3 * ++mN - 1).subtract(mA.next()).add(mB.next());
   }
 }

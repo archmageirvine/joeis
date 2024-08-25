@@ -2,13 +2,13 @@ package irvine.oeis.a072;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence2;
+import irvine.oeis.Sequence0;
 
 /**
  * A071115.
  * @author Sean A. Irvine
  */
-public class A072005 extends Sequence2 {
+public class A072005 extends Sequence0 {
 
   private Z mA = null;
 

@@ -2,9 +2,8 @@ package irvine.oeis.a071;
 
 import java.util.Iterator;
 
-import irvine.factor.factor.Jaguar;
-import irvine.factor.util.FactorSequence;
 import irvine.math.q.Q;
+import irvine.math.q.QUtils;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -22,16 +21,6 @@ public class A071970 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Q t = mIt.next();
-    Z prod = Z.ONE;
-    final FactorSequence fsNum = Jaguar.factor(t.num());
-    for (final Z p : fsNum.toZArray()) {
-      prod = prod.multiply(p.pow(2L * fsNum.getExponent(p)));
-    }
-    final FactorSequence fsDen = Jaguar.factor(t.den());
-    for (final Z p : fsDen.toZArray()) {
-      prod = prod.multiply(p.pow(2L * fsDen.getExponent(p) - 1));
-    }
-    return prod;
+    return QUtils.sagher(mIt.next());
   }
 }

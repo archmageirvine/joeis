@@ -50,31 +50,26 @@ public class A071985 extends Sequence1 {
                 for (final Z b : r.get(j - 1 - i).get(s2)) {
                   final Z t1 = a.add(b);
                   allowed.add(t1);
-                  reach.add(t1);
                   final Z t2 = a.multiply(b);
                   allowed.add(t2);
-                  reach.add(t2);
                   if (a.compareTo(b) >= 0) {
                     final Z t3 = a.subtract(b);
                     allowed.add(t3);
-                    reach.add(t3);
                   } else {
                     final Z t4 = b.subtract(a);
                     allowed.add(t4);
-                    reach.add(t4);
                   }
                   if (!a.isZero() && b.mod(a).isZero()) {
                     final Z t5 = b.divide(a);
                     allowed.add(t5);
-                    reach.add(t5);
                   }
                   if (!b.isZero() && a.mod(b).isZero()) {
                     final Z t6 = a.divide(b);
                     allowed.add(t6);
-                    reach.add(t6);
                   }
                 }
               }
+              reach.addAll(allowed);
             }
           }
         }

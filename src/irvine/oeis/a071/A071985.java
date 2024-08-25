@@ -16,11 +16,21 @@ import irvine.oeis.Sequence1;
  */
 public class A071985 extends Sequence1 {
 
+  // After Michael S. Branicky
+
   private int mN = 0;
 
-  private Z a(final int n, final List<Z> v) {
+  @Override
+  public Z next() {
+    if (++mN == 1) {
+      return Z.ONE;
+    }
+    final List<Z> start = new ArrayList<>();
+    for (int k = 1; k <= mN; ++k) {
+      start.add(Z.valueOf(k));
+    }
     final List<Map<Long, Set<Z>>> r = new ArrayList<>();
-    for (int k = 0; k < n; ++k) {
+    for (int k = 0; k < mN - 1; ++k) {
       r.add(new HashMap<>());
     }
     for (int k = 1; k <= mN; ++k) {
@@ -28,8 +38,8 @@ public class A071985 extends Sequence1 {
       s.add(Z.valueOf(k));
       r.get(0).put(1L << (k - 1), new HashSet<>(s));
     }
-    final HashSet<Z> reach = new HashSet<>(v);
-    for (int j = 1; j < n; ++j) {
+    final HashSet<Z> reach = new HashSet<>(start);
+    for (int j = 1; j < mN - 1; ++j) {
       for (int i = 0; i < (j + 1) / 2; ++i) {
         for (final long s1 : r.get(i).keySet()) {
           for (final long s2 : r.get(j - 1 - i).keySet()) {
@@ -72,17 +82,5 @@ public class A071985 extends Sequence1 {
       k = k.add(1);
     }
     return k;
-  }
-
-  @Override
-  public Z next() {
-    if (++mN == 1) {
-      return Z.ONE;
-    }
-    final List<Z> start = new ArrayList<>();
-    for (int k = 1; k <= mN; ++k) {
-      start.add(Z.valueOf(k));
-    }
-    return a(mN - 1, start);
   }
 }

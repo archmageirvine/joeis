@@ -54,12 +54,15 @@ public class A071985 extends Sequence1 {
                   final Z t2 = a.multiply(b);
                   allowed.add(t2);
                   reach.add(t2);
-                  final Z t3 = a.subtract(b);
-                  allowed.add(t3);
-                  reach.add(t3);
-                  final Z t4 = b.subtract(a);
-                  allowed.add(t4);
-                  reach.add(t4);
+                  if (a.compareTo(b) >= 0) {
+                    final Z t3 = a.subtract(b);
+                    allowed.add(t3);
+                    reach.add(t3);
+                  } else {
+                    final Z t4 = b.subtract(a);
+                    allowed.add(t4);
+                    reach.add(t4);
+                  }
                   if (!a.isZero() && b.mod(a).isZero()) {
                     final Z t5 = b.divide(a);
                     allowed.add(t5);

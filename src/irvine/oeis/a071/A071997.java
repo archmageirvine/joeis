@@ -27,6 +27,12 @@ public class A071997 extends Sequence1 {
     return false;
   }
 
+  private void update(final Set<Z> s, final Z v) {
+    if (v.compareTo(mMex) >= 0 && !contains(v)) {
+      s.add(v);
+    }
+  }
+
   @Override
   public Z next() {
     if (mA.isEmpty()) {
@@ -36,33 +42,15 @@ public class A071997 extends Sequence1 {
       for (int k = 0; 2 * k < mA.size(); ++k) {
         for (final Z a : mA.get(k)) {
           for (final Z b : mA.get(mA.size() - 1 - k)) {
-            final Z t1 = a.add(b);
-            if (!contains(t1)) {
-              s.add(t1);
-            }
-            final Z t2 = a.multiply(b);
-            if (!contains(t2)) {
-              s.add(t2);
-            }
-            final Z t3 = a.subtract(b);
-            if (!contains(t3)) {
-              s.add(t3);
-            }
-            final Z t4 = b.subtract(a);
-            if (!contains(t4)) {
-              s.add(t4);
-            }
+            update(s, a.add(b));
+            update(s, a.multiply(b));
+            update(s, a.subtract(b));
+            update(s, b.subtract(a));
             if (!a.isZero() && b.mod(a).isZero()) {
-              final Z t5 = b.divide(a);
-              if (!contains(t5)) {
-                s.add(t5);
-              }
+              update(s, b.divide(a));
             }
             if (!b.isZero() && a.mod(b).isZero()) {
-              final Z t6 = a.divide(b);
-              if (!contains(t6)) {
-                s.add(t6);
-              }
+              update(s, a.divide(b));
             }
           }
         }

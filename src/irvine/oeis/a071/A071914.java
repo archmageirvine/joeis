@@ -5,13 +5,13 @@ import java.util.TreeMap;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A071914 Numbers n of the form k + reverse(k) for exactly three k.
  * @author Sean A. Irvine
  */
-public class A071914 extends Sequence1 {
+public class A071914 extends Sequence0 {
 
   private final TreeMap<Long, Integer> mA = new TreeMap<>();
   private final int mTarget;

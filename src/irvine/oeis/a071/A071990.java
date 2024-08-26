@@ -12,6 +12,10 @@ public class A071990 extends A006512 {
 
   private Q mSum = Q.ZERO;
 
+  {
+    setOffset(5);
+  }
+
   @Override
   public Z next() {
     mSum = mSum.add(new Q(Z.ONE, super.next()));

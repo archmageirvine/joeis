@@ -11,6 +11,6 @@ public class A121746 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
   public A121746() {
-    super(1, "[[0],[0, 1,-1],[-2, 1,-1],[2],[4]]", "0, 1, 1, 3", 0);
+    super(0, "[[0],[0, 1,-1],[-2, 1,-1],[2],[4]]", "1, 0", 0);
   }
 }

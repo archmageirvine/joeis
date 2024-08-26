@@ -21,7 +21,7 @@ public class A091534 extends Sequence1 {
       if (n == 1 && k == 2) {
         return Z.ONE;
       }
-      if (n >= 2 && k >= 2 && k <= 2 *n) {
+      if (n >= 2 && k >= 2 && k <= 2 * n) {
         return Integers.SINGLETON.sum(0, 2, p -> Binomial.binomial(2, p).multiply(Functions.FALLING_FACTORIAL.z(3L * (n - 1) + k - p, 2 - p)).multiply(get(n - 1, k - p)));
       }
       return Z.ZERO;

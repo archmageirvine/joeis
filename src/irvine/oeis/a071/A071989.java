@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000037;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A071115.
+ * A071989 a(n) = n-th decimal digit of the fractional part of the square root of the n-th nonsquare number (A000037).
  * @author Sean A. Irvine
  */
 public class A071989 extends A000037 {

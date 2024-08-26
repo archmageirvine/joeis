@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A091534.
+ * A091534 Generalized Stirling2 array (5,2).
  * @author Sean A. Irvine
  */
 public class A091534 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.a093.A093641;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A106844 Exponent of 2 in A093641(n).
+ * A106844 Exponent of 2 in the prime factorization of A093641(n).
  * @author Georg Fischer
  */
 public class A106844 extends SimpleTransformSequence {

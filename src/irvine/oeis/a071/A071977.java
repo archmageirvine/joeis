@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071926.
+ * A071977 Triangle in which first row is {1}; to get n-th row take first n numbers greater than last number in previous row which are relatively prime to n.
  * @author Sean A. Irvine
  */
 public class A071977 extends Sequence1 {

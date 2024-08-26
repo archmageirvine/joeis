@@ -5,7 +5,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A073077 Numbers k that divide C(2k,k) and C(4k, 2k).
+ * A073077 Numbers k that divide C(2k,k) and C(4k,2k).
  * @author Georg Fischer
  */
 public class A073077 extends FilterNumberSequence {

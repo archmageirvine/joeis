@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A071926.
+ * A071983 Square chains: the number of permutations (reversals not counted as different) of the numbers 1 to n such that the sum of any two consecutive numbers is a square.
  * @author Sean A. Irvine
  */
 public class A071983 extends AbstractSequence {

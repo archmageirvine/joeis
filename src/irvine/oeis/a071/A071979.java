@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071926.
+ * A071979 Left diagonal of A071977.
  * @author Sean A. Irvine
  */
 public class A071979 extends Sequence1 {

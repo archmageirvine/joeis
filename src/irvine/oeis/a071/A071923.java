@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071923 Prime such that pi{x^2,(x+1)^2+1}=pi{(x+1)^2,p}.
+ * A071923 a(n) is the prime p such that pi(n^2, (n+1)^2+1) = pi((n+1)^2, p) where pi(s,t) = pi(t) - pi(s) is the number of primes between s and t.
  * @author Sean A. Irvine
  */
 public class A071923 extends Sequence1 {

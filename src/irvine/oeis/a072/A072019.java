@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a091.A091534;
 
 /**
- * A070531 Generalized Bell numbers B_{4,3}.
+ * A072019 Generalized Bell numbers B_{5,2}.
  * @author Sean A. Irvine
  */
 public class A072019 extends A091534 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003159;
 
 /**
- * A071115.
+ * A071992 a(n) = 3*n^2 + 2*n - 4 * Sum_{k=1..n} A003159(k).
  * @author Sean A. Irvine
  */
 public class A071992 extends A003159 {

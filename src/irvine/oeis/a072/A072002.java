@@ -7,7 +7,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a007.A007539;
 
 /**
- * A071115.
+ * A072002 Highest prime dividing the least n-multiperfect number (A007539).
  * @author Sean A. Irvine
  */
 public class A072002 extends Sequence2 {

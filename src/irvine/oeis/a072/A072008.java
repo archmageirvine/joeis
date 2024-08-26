@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A071115.
+ * A072008 a(n)=b(3n+1), where b=A072007.
  * @author Sean A. Irvine
  */
 public class A072008 extends Sequence1 {

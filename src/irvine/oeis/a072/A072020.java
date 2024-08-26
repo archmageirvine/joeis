@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070531 Generalized Bell numbers B_{4,3}.
+ * A072020 Sum of an infinite series: a(n) = Sum_{ k = 0..infinity} ((1/27) * (3^n)^3 * GAMMA(n+1/3*k+1/3) * GAMMA(n+1/3*k+2/3) * GAMMA(n+1/3*k+1)) / (GAMMA(4/3+1/3*k) * GAMMA(5/3+1/3*k) * GAMMA(2+1/3*k) * exp(1) * k!).
  * @author Sean A. Irvine
  */
 public class A072020 extends Sequence1 {

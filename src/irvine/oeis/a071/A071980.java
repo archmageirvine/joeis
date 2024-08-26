@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071926.
+ * A071980 If n = abcd (say) in decimal, then a(n) = a + ab + abc + abcd + bcd + cd + d.
  * @author Sean A. Irvine
  */
 public class A071980 extends Sequence0 {

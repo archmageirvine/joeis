@@ -7,7 +7,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A071115.
+ * A072014 Minima when the mapping of A072010 is applied to n repeatedly.
  * @author Sean A. Irvine
  */
 public class A072014 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A145225 T(n,k) is the number of odd permutations (of an n-set) with exactly k fixed points.
+ * A145225 Triangle read by rows: T(n,k) is the number of odd permutations (of an n-set) with exactly k fixed points.
  * @author Georg Fischer
  */
 public class A145225 extends BaseTriangle {

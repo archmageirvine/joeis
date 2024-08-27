@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071971.
+ * A071971 a(1)=1, a(n) is the smallest integer &gt; a(n-1) such that the sum of elements of the simple continued fraction for S(n)=1/a(1)+1/a(2)+...+1/a(n) equals n^3.
  * @author Sean A. Irvine
  */
 public class A071971 extends Sequence1 {

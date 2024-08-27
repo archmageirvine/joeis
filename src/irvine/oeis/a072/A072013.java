@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterSequence;
 
 /**
- * A071115.
+ * A072013 Numbers k such that A072012(k) = k.
  * @author Sean A. Irvine
  */
 public class A072013 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071115.
+ * A072005 Smallest solution to gcd(k, reverse(k)) = 3^n.
  * @author Sean A. Irvine
  */
 public class A072005 extends Sequence0 {
@@ -18,7 +18,7 @@ public class A072005 extends Sequence0 {
     Z t = mA;
     while (true) {
       final Z r = Functions.REVERSE.z(t);
-      if (r.mod(mA).isZero() && Functions.GCD.z(t, Functions.REVERSE.z(t)).equals(mA)) {
+      if (r.mod(mA).isZero() && Functions.GCD.z(t, r).equals(mA)) {
         return t;
       }
       t = t.add(mA);

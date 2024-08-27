@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A071115.
+ * A374958 allocated for Matthew McMullen.
  * @author Sean A. Irvine
  */
 public class A374958 extends Sequence2 {

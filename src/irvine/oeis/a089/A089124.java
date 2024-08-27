@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A089124 Largest prime factor of numbers of the form A^2 + 3.
+ * A089124 Largest prime factor of n^2 + 3.
  * @author Georg Fischer
  */
 public class A089124 extends LambdaSequence {

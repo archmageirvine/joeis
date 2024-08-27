@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071926.
+ * A071968 Denominators of coefficients of expansion of arctan(x)^2 = x^2-2/3*x^4+23/45*x^6-44/105*x^8+563/1575*x^10-3254/10395*x^12+ ...
  * @author Sean A. Irvine
  */
 public class A071968 extends Sequence0 {

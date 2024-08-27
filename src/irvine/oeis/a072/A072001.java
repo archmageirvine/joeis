@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071115.
+ * A072001 Variant of the factorial base representation of n.
  * @author Sean A. Irvine
  */
 public class A072001 extends Sequence1 {

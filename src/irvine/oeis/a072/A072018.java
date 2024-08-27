@@ -18,7 +18,7 @@ public class A072018 extends Sequence0 {
     while (true) {
       mA = mA.add(C);
       final Z r = Functions.REVERSE.z(mA);
-      if (r.mod(C).isZero() && Functions.GCD.z(mA, Functions.REVERSE.z(mA)).equals(C)) {
+      if (r.mod(C).isZero() && Functions.GCD.z(mA, r).equals(C)) {
         return mA;
       }
     }

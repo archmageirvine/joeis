@@ -10,7 +10,7 @@ import irvine.oeis.a001.A001481;
 import irvine.oeis.a002.A002808;
 
 /**
- * A071962.
+ * A071966 Composite numbers such that smallest prime factor, largest prime factor and sum of prime factors (with repetition) are all a sum of two squares.
  * @author Sean A. Irvine
  */
 public class A071966 extends A002808 {

@@ -524,6 +524,7 @@
       <w>nondeterministic</w>
       <w>nonnegative</w>
       <w>nonpositive</w>
+      <w>nonprime</w>
       <w>nonrandomness</w>
       <w>nonresidue</w>
       <w>nums</w>
@@ -853,6 +854,7 @@
       <w>zhang</w>
       <w>zoghbi</w>
       <w>zonk</w>
+      <w>zorach</w>
       <w>zrange</w>
       <w>zumkeller</w>
     </words>

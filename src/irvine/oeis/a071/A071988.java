@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A071115.
+ * A071988 Triple Peano sequence: a list of triples (x,y,z) starting at (1,1,1); then x'=x+1, y'=y+x, z'=z+y, for x only ranging over the primes.
  * @author Sean A. Irvine
  */
 public class A071988 extends A000040 {

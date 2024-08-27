@@ -6,7 +6,7 @@ import irvine.oeis.a068.A068465;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A206769 Decimal expansion of the Fresnel integral int_{x=0..infinity} sin(x^4) dx.
+ * A206769 Decimal expansion of the Fresnel integral Integral_{x=0..oo} sin(x^4) dx.
  * Formula:
  * @author Georg Fischer
  */

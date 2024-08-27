@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a042.A042996;
 
 /**
- * A067315 Central binomial coefficient C(n, n/2) is not divisible by n.
+ * A067315 Numbers k such that binomial(k, floor(k/2)) is not divisible by k.
  * @author Sean A. Irvine
  */
 public class A067315 extends ComplementSequence {

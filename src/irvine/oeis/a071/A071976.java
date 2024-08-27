@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071926.
+ * A071976 Number of lists of length n from {0..9} summing to n but not beginning with 0.
  * @author Sean A. Irvine
  */
 public class A071976 extends Sequence1 {

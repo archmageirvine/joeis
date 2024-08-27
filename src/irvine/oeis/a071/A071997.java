@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071115.
+ * A071997 a(n) is the smallest positive integer that cannot be obtained by using the number 2 at most n times and the operators +, -, *, /.
  * @author Sean A. Irvine
  */
 public class A071997 extends Sequence1 {

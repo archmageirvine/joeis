@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001333;
 
 /**
- * A071926.
+ * A069440 Half the number of n X 2 binary arrays with no path of adjacent 1's or adjacent 0's from top row to bottom row.
  * @author Sean A. Irvine
  */
 public class A069440 extends Sequence1 {

@@ -13,6 +13,10 @@ public class A071903 extends A004614 {
   private Z mM = Z.ZERO;
   private long mN = 0;
 
+  {
+    setOffset(0);
+  }
+
   @Override
   public Z next() {
     if (++mN == mA) {

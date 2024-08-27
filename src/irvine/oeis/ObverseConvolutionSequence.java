@@ -3,28 +3,22 @@ package irvine.oeis;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 
 import irvine.math.z.Z;
 
 /**
- * Convolution of sequences.
- * @author Sean A. Irvine
+ * Obverse convolution of sequences.
+ * In contrast to the normal convolution, the operators "+" and "*" are swapped.
+ * @author Georg Fischer
  */
-public class ConvolutionSequence extends AbstractSequence {
-
-  protected static final int DEFOFF = 0;
-  protected final Sequence mSeqA;
-  protected final Sequence mSeqB;
-  protected final ArrayList<Z> mTermsA;
-  protected final ArrayList<Z> mTermsB;
+public class ObverseConvolutionSequence extends ConvolutionSequence {
 
   /**
    * Self-convolution of a sequence.
    * @param seq sequence to convolve
    */
-  public ConvolutionSequence(final Sequence seq) {
-    this(DEFOFF, seq);
+  public ObverseConvolutionSequence(final Sequence seq) {
+    super(seq);
   }
 
   /**
@@ -32,8 +26,8 @@ public class ConvolutionSequence extends AbstractSequence {
    * @param a first sequence
    * @param b second sequence
    */
-  public ConvolutionSequence(final Sequence a, final Sequence b) {
-    this(DEFOFF, a, b);
+  public ObverseConvolutionSequence(final Sequence a, final Sequence b) {
+    super(a, b);
   }
 
   /**
@@ -41,12 +35,8 @@ public class ConvolutionSequence extends AbstractSequence {
    * @param offset first index
    * @param seq sequence to convolve
    */
-  public ConvolutionSequence(final int offset, final Sequence seq) {
-    super(offset);
-    mSeqA = seq;
-    mSeqB = null;
-    mTermsA = new ArrayList<>();
-    mTermsB = mTermsA;
+  public ObverseConvolutionSequence(final int offset, final Sequence seq) {
+    super(offset, seq);
   }
 
   /**
@@ -55,12 +45,8 @@ public class ConvolutionSequence extends AbstractSequence {
    * @param a first sequence
    * @param b second sequence
    */
-  public ConvolutionSequence(final int offset, final Sequence a, final Sequence b) {
-    super(offset);
-    mSeqA = a;
-    mSeqB = b;
-    mTermsA = new ArrayList<>();
-    mTermsB = new ArrayList<>();
+  public ObverseConvolutionSequence(final int offset, final Sequence a, final Sequence b) {
+    super(offset, a, b);
   }
 
   @Override
@@ -69,10 +55,10 @@ public class ConvolutionSequence extends AbstractSequence {
     if (mSeqB != null) {
       mTermsB.add(mSeqB.next());
     }
-    Z s = Z.ZERO;
+    Z s = Z.ONE;
     final int n = mTermsA.size() - 1;
     for (int k = 0; k <= n; ++k) {
-      s = s.add(mTermsA.get(k).multiply(mTermsB.get(n - k)));
+      s = s.multiply(mTermsA.get(k).add(mTermsB.get(n - k)));
     }
     return s;
   }
@@ -84,7 +70,7 @@ public class ConvolutionSequence extends AbstractSequence {
    */
   public static void main(final String[] args) throws IOException {
     try (final BufferedReader r = new BufferedReader(new InputStreamReader(System.in))) {
-      final Sequence seq = new ConvolutionSequence(new ReaderSequence(r));
+      final Sequence seq = new ObverseConvolutionSequence(new ReaderSequence(r));
       Z a;
       while ((a = seq.next()) != null) {
         System.out.println(a);

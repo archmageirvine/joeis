@@ -2411,4 +2411,5 @@ A071643 Optimal Hamming complexity of normal basis for GF(2^n) over GF(2).
 A071713 a(n) = smallest value of |x^n + y^n + z^n| for x,y,z distinct nonzero integers.
 A071880 Number of combinatorial types of n-dimensional parallelohedra.
 A071881 Number of different primitive polyhedral types of Voronoi regions of n-dimensional point lattices.
-A071882 fucked against wall, someone else watching on, outside?
+A071882 Number of contraction types of n-dimensional parallelohedra.
+A072080 Number of (nontrivial) zeros of zeta(z) with 0 < Im(z) < 10^n.

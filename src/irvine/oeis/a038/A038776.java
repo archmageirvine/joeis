@@ -5,6 +5,7 @@ import java.util.TreeMap;
 
 import irvine.math.z.Z;
 import irvine.oeis.a014.A014486;
+import irvine.oeis.a057.A057117;
 
 /**
  * A038776 The sequence a[1] to a[ cat[n] ] is the permutation that converts forest[n] of depth-first planar planted binary trees into breadth-first representation.
@@ -15,9 +16,6 @@ public class A038776 extends A014486 {
   /** Construct the sequence. */
   public A038776() {
     super(1);
-  }
-
-  {
     super.next(); // skip 0
   }
 
@@ -53,55 +51,13 @@ public class A038776 extends A014486 {
     return mOrdering.remove(n);
   }
 
-  private static class Node {
-    private Node mLeft = null;
-    private Node mRight = null;
-  }
-
-  private void dfs(final Node node, final StringBuilder sb) {
-    if (node == null) {
-      sb.append('0');
-    } else {
-      sb.append(1);
-      dfs(node.mLeft, sb);
-      dfs(node.mRight, sb);
-    }
-  }
-
-  private Z bfsTodfs(final Z n) {
-    if (n.isZero()) {
-      return Z.ZERO;
-    }
-    final String s = n.toString(2);
-    // Build dfs tree
-    final Node root = new Node();
-    final LinkedList<Node> bfs = new LinkedList<>();
-    bfs.add(root);
-    for (int k = 1; k + 1 < s.length(); k += 2) { // k == 0 is root
-      final Node node = bfs.pollFirst();
-      if (s.charAt(k) == '1') {
-        final Node t = new Node();
-        node.mLeft = t;
-        bfs.add(t);
-      }
-      if (s.charAt(k + 1) == '1') {
-        final Node t = new Node();
-        node.mRight = t;
-        bfs.add(t);
-      }
-    }
-    final StringBuilder sb = new StringBuilder();
-    dfs(root, sb);
-    //System.out.println(s + " -> " + sb);
-    return new Z(sb, 2).divide2(); // Ignore last implicit 0
-  }
-
   @Override
   public Z next() {
     if (mA.isEmpty()) {
       step();
     }
     ++mM;
-    return Z.valueOf(getIndex(bfsTodfs(mA.pollFirst())) + 1);
+    final Z n = mA.pollFirst();
+    return Z.valueOf(getIndex(A057117.bfsTodfs(n)) + 1);
   }
 }

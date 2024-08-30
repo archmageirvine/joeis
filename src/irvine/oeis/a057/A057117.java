@@ -1,7 +1,6 @@
 package irvine.oeis.a057;
 
 import java.util.LinkedList;
-import java.util.TreeMap;
 
 import irvine.math.z.Z;
 import irvine.oeis.a014.A014486;
@@ -11,24 +10,6 @@ import irvine.oeis.a014.A014486;
  * @author Sean A. Irvine
  */
 public class A057117 extends A014486 {
-
-  private final TreeMap<Z, Long> mOrdering = new TreeMap<>();
-  private final LinkedList<Z> mA = new LinkedList<>();
-  private long mN = -1;
-
-  private void step() {
-    final Z t = super.next();
-    mOrdering.put(t, ++mN);
-    mA.add(t);
-  }
-
-  private long getIndex(final Z n) {
-    while (!mOrdering.containsKey(n)) {
-      step();
-    }
-    // We can remove because this is a permutation
-    return mOrdering.remove(n);
-  }
 
   static class Node {
     Node mLeft = null;
@@ -67,7 +48,12 @@ public class A057117 extends A014486 {
     return root;
   }
 
-  static Z bfsTodfs(final Z n) {
+  /**
+   * Convert from breadth first to depth first representation
+   * @param n tree
+   * @return transformed
+   */
+  public static Z bfsTodfs(final Z n) {
     if (n.isZero()) {
       return Z.ZERO;
     }
@@ -80,9 +66,6 @@ public class A057117 extends A014486 {
 
   @Override
   public Z next() {
-    if (mA.isEmpty()) {
-      step();
-    }
-    return Z.valueOf(getIndex(bfsTodfs(mA.pollFirst())));
+    return A057120.catalanGlobalRank(bfsTodfs(super.next()));
   }
 }

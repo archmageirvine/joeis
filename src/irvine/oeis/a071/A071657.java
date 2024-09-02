@@ -18,10 +18,10 @@ public class A071657 extends Sequence0 {
   private SExpression carRobrCdr(final SExpression s) {
     if (s.isPair()) {
       if (!s.car().isPair()) {
-        A071655.swap(s);
+        SExpression.swap(s);
       } else {
         carRobrCdr(s.car());
-        A071655.robr(s);
+        SExpression.robr(s);
         s.setCdr(carRobrCdr(s.cdr()));
       }
     }

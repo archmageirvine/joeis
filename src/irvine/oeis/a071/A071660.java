@@ -18,9 +18,9 @@ public class A071660 extends Sequence0 {
   private SExpression roblCarCdr(final SExpression s) {
     if (s.isPair()) {
       if (!s.cdr().isPair()) {
-        A071655.swap(s);
+        SExpression.swap(s);
       } else {
-        A071656.robl(s);
+        SExpression.robl(s);
         roblCarCdr(s.car());
         s.setCdr(roblCarCdr(s.cdr()));
       }

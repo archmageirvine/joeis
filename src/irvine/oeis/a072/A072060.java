@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072005.
+ * A072060 Smallest prime p such that 2*p+1 has n prime factors (with multiplicity).
  * @author Sean A. Irvine
  */
 public class A072060 extends Sequence1 {

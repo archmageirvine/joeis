@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071115.
+ * A072017 Numbers k such that gcd(k, reverse(k)) = 81 = 3^4, where reverse(x) = A004086(x).
  * @author Sean A. Irvine
  */
 public class A072017 extends Sequence1 {

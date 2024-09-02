@@ -4,7 +4,7 @@ package irvine.oeis.a104;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A104099 n * (10n^2 - 6n + 1), or n*A087348(n).
+ * A104099 a(n) = n * (10*n^2 - 6n + 1) = n * A087348(n).
  * @author Georg Fischer
  */
 public class A104099 extends HolonomicRecurrence {

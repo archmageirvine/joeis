@@ -6,7 +6,7 @@ package irvine.oeis.a079;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A079489 Series reversion of x(1-x^2)/(1+x^2)^2 expanded in odd powers of x.
+ * A079489 a(n) = (2*4^n*binomial(2*n, n) - binomial(4*n + 1, 2*n)) / (n + 1).
  * @author Georg Fischer
  */
 public class A079489 extends HolonomicRecurrence {

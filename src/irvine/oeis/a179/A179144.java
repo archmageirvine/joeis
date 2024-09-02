@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A179144 Numbers n for which the Tate-Shafarevich group \u0428 of the elliptic curve y^2=x^3-n has the structure of the direct product 2x2x2x2.
+ * A179144 Numbers n for which the Tate-Shafarevich group ("shah") of the elliptic curve y^2=x^3-n has the structure of a direct product 2x2x2x2.
  *
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.oeis.a005.A005179;
 import irvine.oeis.a037.A037019;
 
 /**
- * A072005.
+ * A072066 Exceptional (or extraordinary) numbers: m such that A005179(m) &lt; A037019(m).
  * @author Sean A. Irvine
  */
 public class A072066 extends Sequence1 {

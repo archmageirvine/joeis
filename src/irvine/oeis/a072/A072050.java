@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072005.
+ * A072050 Smallest solution to GCD(x,A004086(x))=7^n.
  * @author Sean A. Irvine
  */
 public class A072050 extends Sequence1 {

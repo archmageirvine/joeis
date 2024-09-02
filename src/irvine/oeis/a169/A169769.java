@@ -4,7 +4,7 @@ package irvine.oeis.a169;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A169769 Number of geometrically distinct closed knight&apos;s tours of a 3 X n chessboard.
+ * A169769 Number of geometrically distinct closed knight's tours of a 3 X n chessboard.
  * @author Georg Fischer
  */
 public class A169769 extends GeneratingFunctionSequence {

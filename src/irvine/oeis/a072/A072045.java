@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A071265.
+ * A072045 Denominator of Product{prime(k)^2/(prime(k)^2 - 1) | 0&lt;k&lt;=n}, Numerator: A072044.
  * @author Sean A. Irvine
  */
 public class A072045 extends A072044 {

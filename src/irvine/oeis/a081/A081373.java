@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000010;
 import irvine.oeis.transform.OrdinalTransformSequence;
 
 /**
- * A081373 Number of values of k, 1 &lt;= k &lt;= n, with A000010(k) = A000010(n).
+ * A081373 Number of values of k, 1 &lt;= k &lt;= n, with phi(k) = phi(n), where phi is Euler totient function, A000010.
  * @author Georg Fischer
  */
 public class A081373 extends OrdinalTransformSequence {

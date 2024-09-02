@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A100296 Sequence generated from a symmetric matrix.
+ * A100296 Expansion of g.f. x*(1+2*x-x^2)/(1-4*x-2*x^2+x^3).
  * @author Sean A. Irvine
  */
 public class A100296 extends LinearRecurrence {

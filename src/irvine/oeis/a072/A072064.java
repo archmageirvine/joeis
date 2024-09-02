@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A072005.
+ * A072064 Least k&gt;0 such that prime(n)+k*n is prime.
  * @author Sean A. Irvine
  */
 public class A072064 extends A000040 {

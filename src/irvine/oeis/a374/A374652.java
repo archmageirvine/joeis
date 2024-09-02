@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A374652 a(n) = Sum_{k=1..n+1} (-1)^(k+1) k (n - k + 1)!.
+ * A374652 a(n) = Sum_{k=1..n+1} (-1)^(k - 1)*(k + 1)*(n - k + 1)!.
  * @author Georg Fischer
  */
 public class A374652 extends LambdaSequence {

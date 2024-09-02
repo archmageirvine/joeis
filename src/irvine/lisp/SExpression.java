@@ -94,6 +94,48 @@ public final class SExpression extends ArrayList<SExpression> {
     addAll(Arrays.asList(expressions));
   }
 
+  // (define (swap! s) (let ((ex-car (car s))) (set-car! s (cdr s)) (set-cdr! s ex-car) s))
+  /**
+   * In place exchange.
+   * @param s expression
+   * @return swapped expression
+   */
+  public static SExpression swap(final SExpression s) {
+    final SExpression exCar = s.car();
+    s.setCar(s.cdr());
+    s.setCdr(exCar);
+    return s;
+  }
+
+  // (define (robr! s) (let ((ex-cdr (cdr s))) (set-cdr! s (caar s)) (set-car! (car s) ex-cdr) (swap! (car s)) (swap! s) s))
+  /**
+   * Rob right.
+   * @param s expression
+   * @return rob right
+   */
+  public static SExpression robr(final SExpression s) {
+    final SExpression exCdr = s.cdr();
+    s.setCdr(s.caar());
+    s.car().setCar(exCdr);
+    swap(s.car());
+    swap(s);
+    return s;
+  }
+
+  // (define (robl! s) (let ((ex-car (car s))) (set-car! s (cddr s)) (set-cdr! (cdr s) ex-car) (swap! (cdr s)) (swap! s) s))
+  /**
+   * Rob left.
+   * @param s expression
+   * @return rob left
+   */
+  public static SExpression robl(final SExpression s) {
+    final SExpression exCar = s.car();
+    s.setCar(s.cddr());
+    s.setCdr(swap(s.cdr().setCdr(exCar)));
+    swap(s);
+    return s;
+  }
+
   /**
    * Return the first element of the expression.
    * @return first element.

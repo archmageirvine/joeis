@@ -4,7 +4,7 @@ package irvine.oeis.a169;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A169764 Number of closed Knight&apos;s tours on a 3 X n board.
+ * A169764 Number of closed Knight's tours on a 3 X n board.
  * @author Georg Fischer
  */
 public class A169764 extends GeneratingFunctionSequence {

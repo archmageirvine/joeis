@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A101563 a(n) = (-1)^n * coefficient of x^n in Sum_{k&gt;=1} x^(k-1)/(1+10*x^k)}.
+ * A101563 a(n) = (-1)^n * coefficient of x^n in Sum_{k&gt;=1} x^(k-1)/(1+10*x^k).
  * @author Georg Fischer
  */
 public class A101563 extends LambdaSequence {

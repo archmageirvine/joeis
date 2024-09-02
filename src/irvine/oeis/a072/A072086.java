@@ -5,7 +5,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A072033.
+ * A072086 Number of steps to reach 1, starting with n and applying the A072084-map repeatedly.
  * @author Sean A. Irvine
  */
 public class A072086 extends Sequence1 {

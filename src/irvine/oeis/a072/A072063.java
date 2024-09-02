@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A072005.
+ * A072063 Smallest prime of form prime(n)+k*n, k&gt;0.
  * @author Sean A. Irvine
  */
 public class A072063 extends A000040 {

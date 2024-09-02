@@ -2413,3 +2413,6 @@ A071880 Number of combinatorial types of n-dimensional parallelohedra.
 A071881 Number of different primitive polyhedral types of Voronoi regions of n-dimensional point lattices.
 A071882 Number of contraction types of n-dimensional parallelohedra.
 A072080 Number of (nontrivial) zeros of zeta(z) with 0 < Im(z) < 10^n.
+A072088 Permutation of natural numbers induced by the automorphism gt-bf->df (switch from the Breadth First to the Depth First coding for the general trees/parenthesizations) acting on the parenthesizations encoded by A014486.
+A072089 Permutation of natural numbers induced by the automorphism gt-df->bf (switch from the Depth First to the Breadth First coding for the general trees/parenthesizations) acting on the parenthesizations encoded by A014486.
+A072101 Continued fraction expansion of Product_{p prime} (1 - 1/(p^2-1)).

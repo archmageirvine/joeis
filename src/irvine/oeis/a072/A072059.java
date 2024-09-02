@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.array.DynamicArray;
 
 /**
- * A072005.
+ * A072059 Smallest prime p such that 2*p+1 has n distinct prime factors.
  * @author Sean A. Irvine
  */
 public class A072059 extends A000040 {

@@ -4,7 +4,7 @@ package irvine.oeis.a169;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A169767 Number of closed knight&apos;s tour diagrams of a 3 X n chessboard that have &quot;Eulerian symmetry&quot;.
+ * A169767 Number of closed knight's tour diagrams of a 3 X n chessboard that have "Eulerian symmetry".
  * @author Georg Fischer
  */
 public class A169767 extends GeneratingFunctionSequence {

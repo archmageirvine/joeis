@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 
 import irvine.oeis.prime.PrimeSubsequence;
 /**
- * A103389 Primes in A103379 (= 11-delayed Fibonacci b(n) = b(n-11)+b(n-12) or = 1 for n&lt;12).
+ * A103389 Primes in A103379.
  * @author Georg Fischer
  */
 public class A103389 extends PrimeSubsequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A087298 Exponent of 2 in factorization of (3n)!.
+ * A087298 Exponent of 2 in the prime factorization of (3n)!.
  * @author Sean A. Irvine
  */
 public class A087298 extends Sequence1 {

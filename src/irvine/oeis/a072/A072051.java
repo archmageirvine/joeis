@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072005.
+ * A072051 Smallest k such that gcd(k, reverse(k)) = 11^n.
  * @author Sean A. Irvine
  */
 public class A072051 extends Sequence1 {

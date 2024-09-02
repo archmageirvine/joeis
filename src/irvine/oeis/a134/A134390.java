@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002260;
 import irvine.oeis.a131.A131416;
 
 /**
- * A134390 (A000012 * A002260 + A002260 * A000012) - A000012.
+ * A134390 Duplicate of A131416.
  * @author Georg Fischer
  */
 public class A134390 extends A131416 {

@@ -4,7 +4,7 @@ package irvine.oeis.a169;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A169766 Number of closed knight&apos;s tour diagrams of a 3 X n chessboard that have &quot;Bergholtian symmetry&quot;.
+ * A169766 Number of closed knight's tour diagrams of a 3 X n chessboard that have "Bergholtian symmetry".
  * @author Georg Fischer
  */
 public class A169766 extends GeneratingFunctionSequence {

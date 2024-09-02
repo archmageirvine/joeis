@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a061.A061712;
 
 /**
- * A072033.
+ * A072087 Least k such that A072084(k) = n.
  * @author Sean A. Irvine
  */
 public class A072087 extends Sequence1 {

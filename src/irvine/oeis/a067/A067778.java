@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067778 Numbers n such that gcd(n, numerator(B(2n))) is not squarefree where B(2n) are the Bernoulli numbers.
+ * A067778 Numbers k such that gcd(k, numerator(B(2*k))) is not squarefree where B(2*k) are the Bernoulli numbers.
  * @author Sean A. Irvine
  */
 public class A067778 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A073539 Numbers k such that if p is a prime and divides k then p divides phi(k) (but converse is not a condition for the sequence: phi(k) could have prime factors not dividing k).
+ * A073539 Numbers k such that if p is a prime dividing k then p divides phi(k).
  * @author Georg Fischer
  */
 public class A073539 extends FilterNumberSequence {

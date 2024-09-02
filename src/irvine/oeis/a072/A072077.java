@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005277;
 
 /**
- * A072033.
+ * A072077 Number of even nontotients not exceeding 2^n.
  * @author Sean A. Irvine
  */
 public class A072077 extends Sequence1 {

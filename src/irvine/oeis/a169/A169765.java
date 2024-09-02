@@ -4,7 +4,7 @@ package irvine.oeis.a169;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A169765 Number of closed knight&apos;s tour diagrams of a 3 X n chessboard that are symmetric with respect to left-right reflection about a vertical axis.
+ * A169765 Number of closed knight's tour diagrams of a 3 X n chessboard that are symmetric with respect to left-right reflection about a vertical axis.
  * @author Georg Fischer
  */
 public class A169765 extends GeneratingFunctionSequence {

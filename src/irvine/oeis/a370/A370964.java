@@ -4,7 +4,7 @@ package irvine.oeis.a370;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A370964 a(n) = number of &quot;weakly lonesum&quot; 2 X 2 X n tensors.
+ * A370964 a(n) = number of "weakly lonesum" 2 X 2 X n tensors.
  * @author Georg Fischer
  */
 public class A370964 extends GeneratingFunctionSequence {

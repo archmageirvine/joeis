@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000040;
 
 /**
- * A071265.
+ * A072044 Numerator of Product{prime(k)^2/(prime(k)^2 - 1) | 0&lt;k&lt;=n}, Denominator: A072045.
  * @author Sean A. Irvine
  */
 public class A072044 extends Sequence0 {

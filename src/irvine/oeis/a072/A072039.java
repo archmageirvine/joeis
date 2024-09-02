@@ -7,7 +7,7 @@ import irvine.oeis.a035.A035312;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A072033.
+ * A072039 Row of Zorach additive triangle in which n appears (or 0 in the unlikely event that it does not).
  * @author Sean A. Irvine
  */
 public class A072039 extends Sequence1 {

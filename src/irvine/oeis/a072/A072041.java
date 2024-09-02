@@ -11,7 +11,7 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A071265.
+ * A072041 a(n) is the smallest number of the form k + reverse(k) for exactly n integers k, or -1 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A072041 extends Sequence0 implements Conjectural {

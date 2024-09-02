@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000043;
 
 /**
- * A072005.
+ * A072073 Number of solutions to cototient(x) = A051953(x) = 2^n.
  * @author Sean A. Irvine
  */
 public class A072073 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A013715 a(n) = 10^(2n+1).
+ * A013715 a(n) = 10^(2*n+1).
  * @author Sean A. Irvine
  */
 public class A013715 extends Sequence0 {

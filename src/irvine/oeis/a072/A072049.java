@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A071265.
+ * A072049 a(n) = floor(2^(n/(floor(n*log(2)/log(prime(n)))))).
  * @author Sean A. Irvine
  */
 public class A072049 extends A000040 {

@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A072036.
+ * A072036 An unknown sequence.
  * @author Sean A. Irvine
  */
 public class A072036 extends NoncomputableSequence {

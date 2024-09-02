@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071115.
+ * A072018 Numbers k for which gcd(k, reverse(k)) = 243 = 3^5.
  * @author Sean A. Irvine
  */
 public class A072018 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A072033.
+ * A072074 Number of integers k such that phi(k) = 10^n.
  * @author Sean A. Irvine
  */
 public class A072074 extends Sequence0 {

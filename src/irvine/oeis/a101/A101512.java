@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A101512 Decimal representation of the SinIntegral(2Pi).
+ * A101512 Decimal expansion of the sine integral at 2*Pi.
  * Formula: si(2*Pi)
  * @author Georg Fischer
  */

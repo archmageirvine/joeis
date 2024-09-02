@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A218732 a(n) = (29^n-1)/28.
+ * A218732 a(n) = (29^n - 1)/28.
  * @author Sean A. Irvine
  */
 public class A218732 extends LinearRecurrence {

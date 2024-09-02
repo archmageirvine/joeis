@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.InverseSequence;
 
 /**
- * A072005.
+ * A072062 Inverse permutation to A072061.
  * @author Sean A. Irvine
  */
 public class A072062 extends InverseSequence {

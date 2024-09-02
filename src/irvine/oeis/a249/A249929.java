@@ -4,7 +4,7 @@ package irvine.oeis.a249;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A249929 G.f. A(x) satisfies: 1+x = A(x)^3 + A(x)^4 - A(x)^6.
+ * A249929  G.f. A(x) satisfies: 1+x = A(x)^3 + A(x)^4 - A(x)^6.
  * -A^6+A^4+A^3-x-1
  * @author Georg Fischer
  */

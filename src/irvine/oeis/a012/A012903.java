@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012903 cos(arcsin(x)+log(x+1))=1-4/2!*x^2+6/3!*x^3-11/4!*x^4+10/5!*x^5...
+ * A012903 Expansion of e.g.f.: cos(arcsin(x)+log(x+1))=1-4/2!*x^2+6/3!*x^3-11/4!*x^4+10/5!*x^5...
  * @author Sean A. Irvine
  */
 public class A012903 extends Sequence0 {

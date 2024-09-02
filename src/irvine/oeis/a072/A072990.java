@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A072990 8 expressed in base n.
+ * A072990 a(2) = 1000, a(n) = 18 - n for 3 &lt;= n &lt;= 9, a(n) = 8 for n &gt;= 10.
  * @author Georg Fischer
  */
 public class A072990 extends LambdaSequence {

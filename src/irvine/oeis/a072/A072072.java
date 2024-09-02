@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072005.
+ * A072072 Least number initiating a chain of n consecutive numbers each of which has maximal prime exponent exactly 3.
  * @author Sean A. Irvine
  */
 public class A072072 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A101890 Sum C(n,2k)F(k), k=0..floor(n/2).
+ * A101890 a(n) = Sum_{k=0..floor(n/2)} binomial(n,2*k)*Fibonacci(k).
  * @author Sean A. Irvine
  */
 public class A101890 extends LinearRecurrence {

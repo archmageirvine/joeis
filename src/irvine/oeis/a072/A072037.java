@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002113;
 
 /**
- * A072033.
+ * A072037 Palindromic powers (with positive exponents) of a prime but not a prime (A025475).
  * @author Sean A. Irvine
  */
 public class A072037 extends A002113 {

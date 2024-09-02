@@ -4,7 +4,7 @@ package irvine.oeis.a104;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A104100 First entry of the vector (M^n)v, where M is the 4 x 4 matrix [[0, 1, 3, 8], [0, 0, 1, 5], [0, 0, 0, 1], [1, 2, 1, 1]] and v is the column vector [[0, 1, 1, 2].
+ * A104100 Expansion of g.f. x*(-20-37*x+3*x^2)/(-1+x+19*x^2+10*x^3+x^4).
  * @author Georg Fischer
  */
 public class A104100 extends GeneratingFunctionSequence {

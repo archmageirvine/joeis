@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071115.
+ * A072016 Numbers k such that gcd(k, reverse(k)) = 27 = 3^3, where reverse(x) = A004086(x).
  * @author Sean A. Irvine
  */
 public class A072016 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a169;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A169768 Number of geometrically distinct closed knight&apos;s tours of a 3 X n chessboard that have twofold symmetry.
+ * A169768 Number of geometrically distinct closed knight's tours of a 3 X n chessboard that have twofold symmetry.
  * @author Georg Fischer
  */
 public class A169768 extends GeneratingFunctionSequence {

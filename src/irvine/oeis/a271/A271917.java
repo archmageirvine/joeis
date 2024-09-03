@@ -11,7 +11,7 @@ import irvine.oeis.triangle.LambdaArray;
 public class A271917 extends LambdaArray {
 
   private static Z f(final int m, final int n) {
-    return Z.valueOf(m).pow(3).subtract(m).multiply(2 * n - m).divide(12);
+    return Z.valueOf(m).pow(3).subtract(m).multiply(2L * n - m).divide(12);
   }
 
   /** Construct the sequence. */

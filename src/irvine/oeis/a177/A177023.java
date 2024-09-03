@@ -12,6 +12,6 @@ public class A177023 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A177023() {
-    super(1, n -> Z.TWO.pow(2 * n).modZ(2 * n + 1));
+    super(1, n -> Z.TWO.pow(2L * n).modZ(2L * n + 1));
   }
 }

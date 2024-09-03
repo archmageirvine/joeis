@@ -13,6 +13,6 @@ public class A285008 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A285008() {
-    super(0, (self, n) -> Z.valueOf(6 * n - 3).multiply(self.a(n - 1)).divide(Functions.MAKE_ODD.z(n)), "1");
+    super(0, (self, n) -> Z.valueOf(6L * n - 3).multiply(self.a(n - 1)).divide(Functions.MAKE_ODD.z(n)), "1");
   }
 }

@@ -15,6 +15,6 @@ public class A071951 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A071951() {
-    super(1, 1, 1, (n, k) -> Rationals.SINGLETON.sum(0, k, i -> new Q(2 * i + 1).multiply(Z.NEG_ONE.pow(i + k)).multiply(Z.valueOf(i * i + i).pow(n)).divide(Functions.FACTORIAL.z(k - i)).divide(Functions.FACTORIAL.z(k + i + 1))).num());
+    super(1, 1, 1, (n, k) -> Rationals.SINGLETON.sum(0, k, i -> new Q(2L * i + 1).multiply(Z.NEG_ONE.pow(i + k)).multiply(Z.valueOf((long) i * i + i).pow(n)).divide(Functions.FACTORIAL.z(k - i)).divide(Functions.FACTORIAL.z(k + i + 1))).num());
   }
 }

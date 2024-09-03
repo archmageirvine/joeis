@@ -12,6 +12,6 @@ public class A375265 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A375265() {
-    super(1, n -> Z.valueOf((n % 3 == 0) ? n / 3 : (((n & 1) == 0) ? n >> 1 : 3 * n + 1)));
+    super(1, n -> Z.valueOf((n % 3 == 0) ? n / 3 : (((n & 1) == 0) ? n >> 1 : 3L * n + 1)));
   }
 }

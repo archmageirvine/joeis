@@ -13,6 +13,6 @@ public class A334000 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A334000() {
-    super(0, (self, n) -> self.a(n - 1).multiply(4 * n).subtract(Z.valueOf(2 * n - 1).square().multiply(self.a(n - 2))).add(Functions.MULTIFACTORIAL.z(2, 2 * n - 1)), "0, 1, 11");
+    super(0, (self, n) -> self.a(n - 1).multiply(4L * n).subtract(Z.valueOf(2L * n - 1).square().multiply(self.a(n - 2))).add(Functions.MULTIFACTORIAL.z(2, 2L * n - 1)), "0, 1, 11");
   }
 }

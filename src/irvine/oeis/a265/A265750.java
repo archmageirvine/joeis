@@ -16,6 +16,6 @@ public class A265750 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A265750() {
-    super(0, (self, n) -> A003961.a(self.a(n - 1)).multiply(Z.TWO.pow(4 * n + 2)), "2");
+    super(0, (self, n) -> A003961.a(self.a(n - 1)).multiply(Z.TWO.pow(4L * n + 2)), "2");
   }
 }

@@ -13,6 +13,6 @@ public class A072993 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A072993() {
-    super(1, 1, k -> Binomial.binomial(2 * k, k).mod(Functions.PHI.z(k)).isZero());
+    super(1, 1, k -> Binomial.binomial(2L * k, k).mod(Functions.PHI.z(k)).isZero());
   }
 }

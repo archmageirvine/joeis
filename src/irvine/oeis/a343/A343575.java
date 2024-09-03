@@ -12,6 +12,6 @@ public class A343575 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A343575() {
-    super(1, (term, n) -> ((n & 1) == 1) ? term.modZ(2 * n).multiply(10) : term.modZ(2 * n).multiply(10).subtract(1), "", new A345031());
+    super(1, (term, n) -> ((n & 1) == 1) ? term.modZ(2L * n).multiply(10) : term.modZ(2L * n).multiply(10).subtract(1), "", new A345031());
   }
 }

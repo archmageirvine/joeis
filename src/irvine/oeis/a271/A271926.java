@@ -14,6 +14,6 @@ public class A271926 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A271926() {
-    super(1, n -> Rationals.SINGLETON.product(0, n - 1, j -> new Q(Z.valueOf(2 * j + 1).multiply(3 * j + 4), Z.valueOf(j + 1).multiply(6 * j + 1))).subtract(1).den());
+    super(1, n -> Rationals.SINGLETON.product(0, n - 1, j -> new Q(Z.valueOf(2L * j + 1).multiply(3L * j + 4), Z.valueOf(j + 1).multiply(6L * j + 1))).subtract(1).den());
   }
 }

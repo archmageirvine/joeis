@@ -13,6 +13,6 @@ public class A271919 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A271919() {
-    super(1, n -> Rationals.SINGLETON.product(1, n - 1, j -> new Q(3 * j + 1, 3 * j + 2)).num());
+    super(1, n -> Rationals.SINGLETON.product(1, n - 1, j -> new Q(3L * j + 1, 3L * j + 2)).num());
   }
 }

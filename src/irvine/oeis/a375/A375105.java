@@ -13,6 +13,6 @@ public class A375105 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A375105() {
-    super(1, n -> new Q(2 * n).pow(n - 2).multiply(Functions.FACTORIAL.z(2 * n)).divide(Functions.FACTORIAL.z(n)).num());
+    super(1, n -> new Q(2L * n).pow(n - 2).multiply(Functions.FACTORIAL.z(2 * n)).divide(Functions.FACTORIAL.z(n)).num());
   }
 }

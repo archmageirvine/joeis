@@ -13,6 +13,6 @@ public class A188266 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A188266() {
-    super(0, (self, n) -> Integers.SINGLETON.sum(0, n - 1, k -> Functions.CATALAN.z(k).square().multiply(2 * k + 1).multiply(self.a(n - 1 - k))).multiply(4), "1");
+    super(0, (self, n) -> Integers.SINGLETON.sum(0, n - 1, k -> Functions.CATALAN.z(k).square().multiply(2L * k + 1).multiply(self.a(n - 1 - k))).multiply(4), "1");
   }
 }

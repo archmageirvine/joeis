@@ -10,7 +10,6 @@ import irvine.oeis.AbstractSequence;
  */
 public class A375012 extends AbstractSequence {
 
-  private Z mStart; // lowest term of the cycle
   private Z mA; // current term
 
   /** Construct the sequence. */
@@ -25,8 +24,8 @@ public class A375012 extends AbstractSequence {
    */
   public A375012(final int offset, final String start) {
     super(offset);
-    mStart = new Z(start);
-    mA = mStart;
+    // lowest term of the cycle
+    mA = new Z(start);
   }
 
   @Override

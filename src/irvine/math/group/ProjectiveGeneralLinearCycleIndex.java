@@ -28,6 +28,9 @@ public final class ProjectiveGeneralLinearCycleIndex {
     }
     try {
       try (final BufferedReader r = IOUtils.reader("irvine/math/group/pgl/" + n + ".gz")) {
+        if (r == null) {
+          throw new UnsupportedOperationException("Cycle index PGL_" + n + " not available.");
+        }
         final String s = r.readLine();
         final int space = s.indexOf(' ');
         final Z order = new Z(s.substring(0, space));
@@ -46,7 +49,7 @@ public final class ProjectiveGeneralLinearCycleIndex {
         }
         return ci;
       }
-    } catch (final IOException | NullPointerException e) {
+    } catch (final IOException e) {
       throw new UnsupportedOperationException(e);
     }
   }

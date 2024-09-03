@@ -1,6 +1,7 @@
 package irvine.oeis.a131;
 
 import java.util.HashMap;
+import java.util.Locale;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -11,9 +12,16 @@ import irvine.oeis.AbstractSequence;
  */
 public class A131388 extends AbstractSequence {
 
+  private enum Variant {
+    /** Type "ak". */
+    AK,
+    /** Type "dk". */
+    DK
+  }
+
   private final int mRule;
   private final int mSub;
-  private final int mVariant;
+  private final Variant mVariant;
   private int mK;
   private int mAk;
   private int mDk;
@@ -33,7 +41,7 @@ public class A131388 extends AbstractSequence {
    * @param sub minor rule number
    * @param op operation: ak or dk
    * @param a1 start value of ak
-   * @param d1 start value pf dk
+   * @param d1 start value of dk
    */
   public A131388(final int rule, final int sub, final String op, final int a1, final int d1) {
     super(1);
@@ -41,14 +49,7 @@ public class A131388 extends AbstractSequence {
     mSub = sub;
     mAMap = new HashMap<>(2048);
     mDMap = new HashMap<>(2048);
-    if ("ak".equals(op)) {
-      mVariant = 1;
-    } else if ("dk".equals(op)) {
-      mVariant = 2;
-    } else {
-      mVariant = 0;
-      throw new UnsupportedOperationException("variant \"" + op + "\" not implemented");
-    }
+    mVariant = Variant.valueOf(op.toUpperCase(Locale.getDefault()));
     mK = 1;
     mAk = a1;
     mAk1 = mAk;
@@ -63,10 +64,10 @@ public class A131388 extends AbstractSequence {
     // implemented variants are ak, dk only
     final Z result;
     switch (mVariant) {
-      case 1: // ak
+      case AK:
         result = Z.valueOf(mAk);
         break;
-      case 2: // dk
+      case DK:
         result = Z.valueOf(mDk);
         break;
       default:

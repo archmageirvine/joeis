@@ -26,7 +26,7 @@ public class A319797 extends Triangle {
   private final MemoryFunction1<Integer> mH = new MemoryFunction1<>() {
     @Override
     protected Integer compute(final int n) {
-      return n < 1 ? 0 : Predicates.SQUARE.is(8L * n + 1) ? Integer.valueOf(n) : get(n - 1);
+      return n < 1 ? 0 : Predicates.SQUARE.is(8L * n + 1) ? n : get(n - 1);
     }
   };
 

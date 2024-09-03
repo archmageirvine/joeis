@@ -69,8 +69,8 @@ public class ConcatenatedProductSequence extends AbstractSequence {
               final String his = s.substring(0, half);
               final String los = s.substring(half);
               if (!los.isEmpty() && !his.isEmpty() && los.charAt(0) != '0') {
-                long hi = 0;
-                long lo = 0;
+                long hi;
+                long lo;
                 try {
                   hi = Long.parseLong(his);
                   lo = Long.parseLong(los);

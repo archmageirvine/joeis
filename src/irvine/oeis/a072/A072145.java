@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072099.
+ * A072145 Numbers k such that the period of the 'Reverse and Subtract' trajectory of k is greater than 14.
  * @author Sean A. Irvine
  */
 public class A072145 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003586;
 
 /**
- * A055600 Numbers of form 2^i*3^j+1 with i, j &gt;= 0.
+ * A055600 Numbers of form 2^i*3^j + 1 with i, j &gt;= 0.
  * @author Georg Fischer
  */
 public class A055600 extends A003586 {

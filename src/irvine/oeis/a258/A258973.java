@@ -5,7 +5,7 @@ package irvine.oeis.a258;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A258973 The number of plain lambda terms presented by de Bruijn indices, see Bendkowski et al. where zeros have no weight.
+ * A258973 The number of plain lambda terms presented by de Bruijn indices, see Bendkowski et al., where zeros have no weight.
  * Recurrence: -a(n)*(n+1)+((8*n-3)*a(n-1)-(10*n-13)*a(n-2)+(4*n-11)*a(n-3)-(n-4)*a(n-4))
  * @author Georg Fischer
  */

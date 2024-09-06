@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A321789 Factorials of terms of Pascal&apos;s triangle by row.
+ * A321789 Factorials of terms of Pascal's triangle by row.
  * @author Georg Fischer
  */
 public class A321789 extends LambdaTriangle {

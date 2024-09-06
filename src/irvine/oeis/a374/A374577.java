@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007814;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A374577 Pierpont primes are primes of the form 2^t*3^u+1; this sequence gives the t's in order.
+ * A374577 Pierpont primes are primes of the form 2^t*3^u + 1; this sequence gives the t's in order.
  * @author Georg Fischer
  */
 public class A374577 extends SingleTransformSequence {

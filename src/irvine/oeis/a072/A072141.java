@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072099.
+ * A072141 Numbers n such that two applications of 'Reverse and Subtract' lead to n, whereas one application does not lead to n.
  * @author Sean A. Irvine
  */
 public class A072141 extends Sequence1 {

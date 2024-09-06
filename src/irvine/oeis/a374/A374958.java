@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A374958 allocated for Matthew McMullen.
+ * A374958 Median, as a function of n, of the probability mass function s(k-1,n-1)/k!, where k&gt;=n and s(a,b) denotes the unsigned Stirling number of the first kind.
  * @author Sean A. Irvine
  */
 public class A374958 extends Sequence2 {

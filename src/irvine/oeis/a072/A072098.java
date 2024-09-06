@@ -4,7 +4,7 @@ import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.a033.A033873;
 
 /**
- * A072098 Difference between 10^n and the next prime &gt; 10^n is a record high.
+ * A072098 Numbers k such that the difference between 10^k and the next prime &gt; 10^k is a record high.
  * @author Sean A. Irvine
  */
 public class A072098 extends RecordPositionSequence {

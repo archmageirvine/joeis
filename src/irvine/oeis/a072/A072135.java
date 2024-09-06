@@ -6,7 +6,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.cons.ContinuedFractionOfSqrtSequence;
 
 /**
- * A072099.
+ * A072135 Least m such that sqrt(m) has a period 2n continued fraction expansion whose palindrome part concatenates to a palindromic prime.
  * @author Sean A. Irvine
  */
 public class A072135 extends Sequence2 {

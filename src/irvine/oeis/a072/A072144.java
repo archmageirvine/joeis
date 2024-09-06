@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072099.
+ * A072144 Numbers n such that the period length of the 'Reverse and Subtract' trajectory of n is greater than 2.
  * @author Sean A. Irvine
  */
 public class A072144 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A309719 Numbers k such that 64*10^(2*k) + 8*10^k + 1 are prime.
+ * A309719 Numbers k such that 64*10^(2*k) + 8*10^k + 1 is prime.
  * @author Georg Fischer
  */
 public class A309719 extends FilterNumberSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a374;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A374723 Number of nonisomorphic spanning trees of the nC_4-snake where the distance between cutpoints is 1.
+ * A374723 Numerator of rational number tan(2^(n-1)*arctan(1/A024810(n))).
  * @author Georg Fischer
  */
 public class A374723 extends HolonomicRecurrence {

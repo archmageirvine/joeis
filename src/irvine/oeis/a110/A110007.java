@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A110007 a(n)=n-floor(phi*floor(phi^-1*floor(phi*floor(phi^-1*floor(phi*floor(phi^-1*n)))))) where phi=(1+sqrt(5))/2.
+ * A110007 a(n) = n-F(F(F(n))) where F(x)=A120613(x)=floor(phi*floor(x/phi)) and phi=(1+sqrt(5))/2.
  * @author Georg Fischer
  */
 public class A110007 extends FloorSequence {

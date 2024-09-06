@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A309740 Numbers k such that 5*10^(2*k) + 5*10^k + 1 are prime.
+ * A309740 Numbers k such that 5*10^(2*k) + 5*10^k + 1 is prime.
  * @author Georg Fischer
  */
 public class A309740 extends FilterNumberSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A072099.
+ * A072136 Position of the first zero in the fractional part of the base n expansion of Pi.
  * @author Sean A. Irvine
  */
 public class A072136 extends Sequence2 {

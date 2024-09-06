@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000720;
 
 /**
- * A072111 Partial sum of Pi(k) from 1 to 2^n.
+ * A072111 Partial sum of pi(k) from k = 1 to 2^n.
  * @author Sean A. Irvine
  */
 public class A072111 extends A000720 {

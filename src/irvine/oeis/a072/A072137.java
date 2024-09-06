@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A072099.
+ * A072137 Length of the preperiodic part of the 'Reverse and Subtract' trajectory of n.
  * @author Sean A. Irvine
  */
 public class A072137 extends Sequence0 {

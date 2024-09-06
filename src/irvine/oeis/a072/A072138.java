@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.InverseSequence;
 
 /**
- * A072099.
+ * A072138 Smallest k whose 'Reverse and Subtract' trajectory has a preperiodic part of length n.
  * @author Sean A. Irvine
  */
 public class A072138 extends InverseSequence {

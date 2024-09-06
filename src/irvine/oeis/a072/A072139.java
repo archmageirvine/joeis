@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A072099.
+ * A072139 Last term of the preperiodic part of the 'Reverse and Subtract' trajectory of n, or -1 if the trajectory is completely periodic.
  * @author Sean A. Irvine
  */
 public class A072139 extends Sequence0 {

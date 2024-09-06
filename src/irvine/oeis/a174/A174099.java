@@ -6,7 +6,7 @@ import irvine.oeis.a005.A005109;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A174099 Indices of primes of the form 2^t*3^u+1 in the primes.
+ * A174099 Indices of primes of the form 2^t*3^u + 1 in the primes.
  * @author Georg Fischer
  */
 public class A174099 extends SimpleTransformSequence {

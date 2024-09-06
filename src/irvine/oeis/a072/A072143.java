@@ -1,7 +1,7 @@
 package irvine.oeis.a072;
 
 /**
- * A072099.
+ * A072143 Numbers n such that 22 applications of 'Reverse and Subtract' lead to n, whereas fewer than 22 applications do not lead to n.
  * @author Sean A. Irvine
  */
 public class A072143 extends A072141 {

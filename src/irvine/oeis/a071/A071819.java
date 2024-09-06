@@ -9,6 +9,10 @@ import irvine.oeis.a060.A060315;
  */
 public class A071819 extends A060315 {
 
+  {
+    super.next();
+  }
+
   @Override
   public Z next() {
     super.next(); // Updates mM

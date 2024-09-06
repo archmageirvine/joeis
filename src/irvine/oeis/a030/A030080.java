@@ -11,12 +11,12 @@ import irvine.oeis.a000.A000040;
  */
 public class A030080 extends Sequence1 {
 
-  private static final Sequence A000040 = new A000040();
+  private final Sequence mPrimes = new A000040();
 
   @Override
   public Z next() {
     while (true) {
-      final Z p = A000040.next();
+      final Z p = mPrimes.next();
       if (A030079.isOk(p, p.pow(3))) {
         return p;
       }

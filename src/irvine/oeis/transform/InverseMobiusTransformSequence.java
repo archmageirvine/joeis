@@ -64,7 +64,6 @@ public class InverseMobiusTransformSequence extends AbstractSequence {
   /**
    * Creates a new inverse Mobius transform sequence of the given sequence, skipping
    * the specified number of terms in advance.
-   *
    * @param seq underlying sequence
    * @param skip number of terms to skip
    */

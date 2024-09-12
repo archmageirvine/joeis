@@ -68,12 +68,10 @@ public class ConcatenatedProductSequence extends AbstractSequence {
               final int half = ((slen & 1) == 0) ? slen / 2 : (mIncr1 < mIncr2 ? slen / 2 : (slen + 1) / 2); // half or half - 1
               final String his = s.substring(0, half);
               final String los = s.substring(half);
-              if (!los.isEmpty() && !his.isEmpty() && los.charAt(0) != '0') {
-                long hi;
-                long lo;
+              if (!los.isEmpty() && los.charAt(0) != '0') {
                 try {
-                  hi = Long.parseLong(his);
-                  lo = Long.parseLong(los);
+                  final long hi = Long.parseLong(his);
+                  final long lo = Long.parseLong(los);
                   if (VERBOSE) {
                     System.out.println((mAdditive ? "+ " : "* ") + " mLP=" + mLP + ", conc=" + (hi + mIncr1) + "||" + (lo + mIncr2) + ", prod=" + prod + ", mDist=" + mDist + ", mIncr1=" + mIncr1 + ", mIncr2=" + mIncr2);
                   }

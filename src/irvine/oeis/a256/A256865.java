@@ -39,7 +39,7 @@ public class A256865 extends AbstractSequence {
     while (true) {
       ++mN;
       boolean isOk = true;
-      final int dc[] = ZUtils.digitCounts(mN, mBase);
+      final int[] dc = ZUtils.digitCounts(mN, mBase);
       int idc = 0;
       if (mDist == 0) {
         while (isOk && idc < mBase) {

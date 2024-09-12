@@ -2420,3 +2420,4 @@ A072104 Smallest absolute value of discriminant of a real (not necessarily total
 A072115 Continued fraction expansion of abs(C) where C=-0.2959050055752...is the real negative solution to zeta(x)=x.
 A072127 Number of equivalence classes of pairs of complex Golay sequences of length n.
 A072128 Number of pairs of complex Golay sequences of length n.
+A072187 Number of up-down involutions of length n.

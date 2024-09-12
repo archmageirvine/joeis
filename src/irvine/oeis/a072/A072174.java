@@ -11,7 +11,7 @@ public class A072174 extends Sequence1 {
 
   // Brute force, no good for more than a few terms
 
-  private static final int[] DELTA_X = {2, 2, -2,-2, 1, 1, -1, -1};
+  private static final int[] DELTA_X = {2, 2, -2, -2, 1, 1, -1, -1};
   private static final int[] DELTA_Y = {1, -1, 1, -1, 2, -2, 2, -2};
   private static final int[] DELTA_S = {0, 0, 0, 0, 1, 1, 1, 1}; // Which dimension steps 2
   private static final int[] DELTA_T = {1, 1, -1, -1, 1, -1, 1, -1}; // Half-step in 2 direction

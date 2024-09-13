@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072140.
+ * A072228 Numbers k such that k equals the sum of the reverses of the proper divisors of k.
  * @author Sean A. Irvine
  */
 public class A072228 extends Sequence1 {

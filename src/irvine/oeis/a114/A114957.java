@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A114957 A 4/3-power Fibonacci sequence.
+ * A114957 a(n) = ceiling(a(n-1)^(4/3) + a(n-2)^(4/3)), with a(0) = a(1) = 1.
  * @author Georg Fischer
  */
 public class A114957 extends MultiTransformSequence {

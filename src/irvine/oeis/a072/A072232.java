@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
- * A072145.
+ * A072232 Smallest factorial containing exactly n 9's.
  * @author Sean A. Irvine
  */
 public class A072232 extends A072124 {

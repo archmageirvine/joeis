@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A117280 n^r(n), where r(n) is the digital root of n.
+ * A117280 a(n) = n^r(n), where r(n) is the digital root of n.
  * @author Georg Fischer
  */
 public class A117280 extends LambdaSequence {

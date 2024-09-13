@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.triangle.LambdaArray;
 
 /**
- * A268715 Square array A(i,j) = A003188(A006068(i) + A006068(j)), read by antidiagonals as A(0, 0), A(0, 1), A(1, 0), A(0, 2), A(1, 1), A(2, 0), ...
+ * A268715 Square array A(i,j) = A003188(A006068(i) + A006068(j)), read by antidiagonals as A(0,0), A(0,1), A(1,0), A(0,2), A(1,1), A(2,0), ...
  * @author Georg Fischer
  */
 public class A268715 extends LambdaArray {

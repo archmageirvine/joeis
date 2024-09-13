@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005185;
 
 /**
- * A072140.
+ * A072231 a(n) = floor(n^2/A005185(n-1)), where A005185 is Hofstadter's Q-sequence.
  * @author Sean A. Irvine
  */
 public class A072231 extends Sequence1 {

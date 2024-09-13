@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066694 Numbers n such that phi(sigma(n)) &gt; n.
+ * A066694 Numbers k such that phi(sigma(k)) &gt; k.
  * @author Sean A. Irvine
  */
 public class A066694 extends Sequence1 {

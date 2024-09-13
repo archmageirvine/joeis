@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000162;
 import irvine.oeis.a001.A001931;
 
 /**
- * A066273 Number of 3-dimensional polyominoes (or polycubes) with n cells and symmetry group of order exactly 3.
+ * A066273 Number of 3-dimensional polyominoes (or polycubes) with n cells and rotational symmetry group of order exactly 3.
  * @author Sean A. Irvine
  */
 public class A066273 extends A000162 {

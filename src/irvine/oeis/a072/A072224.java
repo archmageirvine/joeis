@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
- * A060007.
+ * A072224 Continued fraction expansion of constant A072223.
  * @author Sean A. Irvine
  */
 public class A072224 extends ContinuedFractionSequence {

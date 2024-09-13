@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A072140.
+ * A072247 Triangle T(n,k) (n &gt;= 2, 2 &lt;= k &lt;= n-1 if n &gt; 2) giving number of non-crossing trees with n nodes and k endpoints.
  * @author Sean A. Irvine
  */
 public class A072247 extends Sequence2 {

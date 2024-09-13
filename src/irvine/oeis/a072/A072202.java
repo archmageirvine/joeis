@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072140.
+ * A072202 Same numbers of prime factors of forms 4*k+1 and 4*k+3, counted with multiplicity.
  * @author Sean A. Irvine
  */
 public class A072202 extends Sequence1 {

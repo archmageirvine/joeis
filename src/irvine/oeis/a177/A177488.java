@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a086.A086122;
 
 /**
- * A177488 Primes of the form (37*10^n+17)/9
+ * A177488 Primes of the form (37*10^n+17)/9.
  * @author Georg Fischer
  */
 public class A177488 extends A086122 {

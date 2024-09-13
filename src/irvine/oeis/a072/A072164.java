@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072145.
+ * A072164 Numbers k &gt;= 1 such that f(k) = k^k - (k-1)^(k-1) is prime.
  * @author Sean A. Irvine
  */
 public class A072164 extends Sequence1 {

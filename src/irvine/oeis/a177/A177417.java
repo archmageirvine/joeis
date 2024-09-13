@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A177417 Primes of the form (10^n-57)
+ * A177417 Primes of the form (10^n-57).
  * @author Georg Fischer
  */
 public class A177417 extends FilterSequence {

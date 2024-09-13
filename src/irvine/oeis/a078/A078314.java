@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
- * A078314 Total number of prime factors of n*rad(n)+1, where rad=A007947 (squarefree kernel).
+ * A078314 Total number of prime factors of n*rad(n)+1 counted with multiplicity, where rad = A007947 (squarefree kernel).
  * @author Georg Fischer
  */
 public class A078314 extends A078310 {

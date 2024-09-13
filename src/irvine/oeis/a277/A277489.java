@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A277489 E.g.f.: -LambertW(-log(1+x)).
+ * A277489 Expansion of e.g.f. -LambertW(-log(1+x)).
  * a(n)=sum(k=1,n,stirl(n,k)*k^(k-1))
  * @author Georg Fischer
  */

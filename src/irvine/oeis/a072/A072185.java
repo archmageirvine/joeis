@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A072140.
+ * A072185 Primes p = x1x2x3...xn in base 10 such that x1^p1 + x2^p2 + x3^p3 + ... + xn^pn is a prime, where pn is the n-th prime.
  * @author Sean A. Irvine
  */
 public class A072185 extends A000040 {

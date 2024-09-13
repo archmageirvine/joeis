@@ -6,7 +6,7 @@ import irvine.oeis.a051.A051904;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A078572 Minimal exponent in prime factorization of the average of n-th twin prime pair.
+ * A078572 The minimum exponent in prime factorization of the average of n-th twin prime pair.
  * @author Georg Fischer
  */
 public class A078572 extends DirectTransformSequence {

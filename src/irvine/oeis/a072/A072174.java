@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072140.
+ * A072174 Maximum path length of a crippled knight on an n X n board.
  * @author Sean A. Irvine
  */
 public class A072174 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A161506 Number of divisors of n that are greater than phi(n)/2, where phi is Euler&apos;s totient function.
+ * A161506 Number of divisors of n that are greater than phi(n)/2, where phi is Euler's totient function.
  * @author Georg Fischer
  */
 public class A161506 extends LambdaSequence {

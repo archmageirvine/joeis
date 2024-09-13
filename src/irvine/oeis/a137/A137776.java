@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a138.A138569;
 
 /**
- * A137776 Mix A038504, A131577.
+ * A137776 Interleave A038504 with A131577.
  * @author Sean A. Irvine
  */
 public class A137776 extends PartialSumSequence {

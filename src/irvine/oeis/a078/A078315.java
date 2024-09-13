@@ -5,7 +5,7 @@ import irvine.oeis.a051.A051904;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A078315 Minimal exponent in prime factorization of n*rad(n)+1, where rad=A007947 (the radical or squarefree kernel).
+ * A078315 Minimum exponent in prime factorization of n*rad(n)+1, where rad = A007947 (the radical or squarefree kernel).
  * @author Georg Fischer
  */
 public class A078315 extends DirectTransformSequence {

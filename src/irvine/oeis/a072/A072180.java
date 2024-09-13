@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072140.
+ * A072180 Numbers k such that 2^k - k^2 is prime.
  * @author Sean A. Irvine
  */
 public class A072180 extends Sequence1 {

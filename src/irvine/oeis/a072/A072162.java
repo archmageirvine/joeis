@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A072145.
+ * A072162 (Prime(n)+prime(n+1)+prime(n+2))/(n+1) is an integer; sequence gives prime(n).
  * @author Sean A. Irvine
  */
 public class A072162 extends A000040 {

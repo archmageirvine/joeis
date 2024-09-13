@@ -5,7 +5,7 @@ import irvine.oeis.a051.A051903;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A079087 Maximal exponent in prime factorization of (prime(n)+1)*(prime(n+1)+1)/4.
+ * A079087 Maximum exponent in prime factorization of (prime(n)+1)*(prime(n+1)+1)/4.
  * @author Georg Fischer
  */
 public class A079087 extends DirectTransformSequence {

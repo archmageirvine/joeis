@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A294642 a(n) = n! * [x^n] exp(n*x)*BesselI(1, 2*sqrt(2)*x)/(sqrt(2)*x).
+ * A294642 a(n) = n! * [x^n] exp(n*x)*BesselI(1,2*sqrt(2)*x)/(sqrt(2)*x).
  * @author Georg Fischer
  */
 public class A294642 extends LambdaSequence {

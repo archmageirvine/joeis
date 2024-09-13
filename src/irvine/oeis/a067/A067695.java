@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067695 Smallest prime factor with minimal exponent in canonical prime factorization of n, a(1)=1.
+ * A067695 Smallest prime factor with minimum exponent in canonical prime factorization of n, a(1)=1.
  * @author Sean A. Irvine
  */
 public class A067695 extends Sequence1 {

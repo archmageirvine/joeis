@@ -6,7 +6,7 @@ import irvine.oeis.a057.A057622;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A247967 a(n) is the smallest k such that prime(k+i) (mod 6) takes successively the values 5,5,... for i = 0, 1,...,n-1.
+ * A247967 a(n) is the smallest k such that prime(k+i) (mod 6) takes successively the values 5, 5, ... for i = 0, 1, ..., n-1.
  * @author Georg Fischer
  */
 public class A247967 extends SimpleTransformSequence {

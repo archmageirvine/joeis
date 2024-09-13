@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000005;
 
 /**
- * A065985 Numbers n such that d(n) / 2 is prime, where d(n) = number of divisors of n.
+ * A065985 Numbers k such that d(k) / 2 is prime, where d(k) = number of divisors of k.
  * @author Sean A. Irvine
  */
 public class A065985 extends FilterPositionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a361.A361897;
 
 /**
- * A362453 Indices of 0&apos;s in A361897.
+ * A362453 Indices of 0's in A361897.
  * @author Georg Fischer
  */
 public class A362453 extends FilterPositionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a275.A275314;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A329071 a(n) = phi(A275314(n)) - mu(A275314(n)), where A275314(n) is Euler&apos;s gradus function.
+ * A329071 a(n) = phi(A275314(n)) - mu(A275314(n)), where A275314(n) is Euler's gradus function.
  * @author Georg Fischer
  */
 public class A329071 extends SingleTransformSequence {

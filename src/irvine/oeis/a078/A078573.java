@@ -7,7 +7,7 @@ import irvine.oeis.a014.A014574;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A078573 Maximal exponent in prime factorization of the average of n-th twin prime pair.
+ * A078573 The maximum exponent in prime factorization of the average of n-th twin prime pair.
  * @author Georg Fischer
  */
 public class A078573 extends SimpleTransformSequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072140.
+ * A072181 a(1) = 1; for n &gt;= 2, suppose a(n-1) = Product p_i^e_i and n = Product p_i^f_i, then a(n) = Product p_i^(e_i*f_i).
  * @author Sean A. Irvine
  */
 public class A072181 extends Sequence1 {

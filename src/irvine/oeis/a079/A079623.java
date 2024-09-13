@@ -4,7 +4,7 @@ package irvine.oeis.a079;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A079623 a(1)=a(2)=1, a(3)=4, a(n)=abs(a(n-1)-a(n-2)-a(n-3)).
+ * A079623 a(1) = a(2) = 1, a(3)=4, a(n) = abs(a(n-1) - a(n-2) - a(n-3)).
  * @author Georg Fischer
  */
 public class A079623 extends MultiTransformSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072140.
+ * A072227 Numbers n such that reverse(d) divides reverse(n) for all divisors d of n.
  * @author Sean A. Irvine
  */
 public class A072227 extends Sequence1 {

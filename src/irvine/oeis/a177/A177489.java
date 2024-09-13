@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a086.A086122;
 
 /**
- * A177489 Primes of the form (13*10^n+17)/3
+ * A177489 Primes of the form (13*10^n+17)/3.
  * @author Georg Fischer
  */
 public class A177489 extends A086122 {

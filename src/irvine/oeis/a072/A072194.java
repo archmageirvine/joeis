@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072140.
+ * A072194 Replace all prime factors p of n with n-p.
  * @author Sean A. Irvine
  */
 public class A072194 extends Sequence1 {

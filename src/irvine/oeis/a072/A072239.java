@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A072140.
+ * A072239 a(0) = 11; a(n) = number of distinct partitions of the previous term.
  * @author Sean A. Irvine
  */
 public class A072239 extends Sequence0 {

@@ -8,7 +8,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a010.A010052;
 
 /**
- * A158464 Number of distinct squares in row n of Pascal&apos;s triangle.
+ * A158464 Number of distinct squares in row n of Pascal's triangle.
  * @author Georg Fischer
  */
 public class A158464 extends LambdaSequence {

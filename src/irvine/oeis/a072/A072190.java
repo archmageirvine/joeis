@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A072140.
+ * A072190 Indices of primes with primitive root 2.
  * @author Sean A. Irvine
  */
 public class A072190 extends A000040 {

@@ -6,7 +6,7 @@ import irvine.oeis.a016.A016045;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A090870 a(n) is the smallest m such that d(m+k-1)=2k for k=1,...,n where d(t)= prime(t+1)-prime(t)(differences of consecutive primes in arithmetic progression).
+ * A090870 a(n) is the smallest m such that d(m+k-1) = 2k for k = 1, ..., n where d(t)= prime(t+1) - prime(t) (differences of consecutive primes in arithmetic progression).
  * @author Georg Fischer
  */
 public class A090870 extends SingleTransformSequence {

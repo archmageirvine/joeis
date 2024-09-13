@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A072140.
+ * A072207 a(0) = 1; for n&gt;0, a(n) = number of distinct sums of subsets of {1, 1/2, 1/3, 1/4, ..., 1/n} (allowing the empty subset).
  * @author Sean A. Irvine
  */
 public class A072207 extends Sequence0 {

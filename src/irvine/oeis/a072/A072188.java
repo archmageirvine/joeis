@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072140.
+ * A072188 Numbers k that divide sigma(k-1)+sigma(k)+sigma(k+1), where sigma() is the "sum of integer divisors" function.
  * @author Sean A. Irvine
  */
 public class A072188 extends Sequence1 {

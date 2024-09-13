@@ -6,7 +6,7 @@ import irvine.oeis.a107.A107689;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A135048 Indices of primes with digit product=3.
+ * A135048 Indices of primes with digit product = 3.
  * @author Georg Fischer
  */
 public class A135048 extends SimpleTransformSequence {

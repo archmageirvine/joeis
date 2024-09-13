@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072140.
+ * A072183 Sequence arising from factorization of the Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A072183 extends Sequence1 {

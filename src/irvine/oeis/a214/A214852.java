@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A214852 Indices of Fibonacci numbers with the same number of 1&apos;s and 0&apos;s in their binary representation.
+ * A214852 Indices of Fibonacci numbers with the same number of 1's and 0's in their binary representation.
  * @author Georg Fischer
  */
 public class A214852 extends FilterPositionSequence {

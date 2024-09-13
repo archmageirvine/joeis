@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072140.
+ * A072186 A Wallis pair (x,y) satisfies sigma(x^2) = sigma(y^2); sequence gives y's for Wallis pairs with x &lt; y (ordered by values of x).
  * @author Sean A. Irvine
  */
 public class A072186 extends Sequence1 {

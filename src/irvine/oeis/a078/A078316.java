@@ -5,7 +5,7 @@ import irvine.oeis.a051.A051903;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A078316 Maximal exponent in prime factorization of n*rad(n)+1, where rad=A007947 (squarefree kernel).
+ * A078316 Maximum exponent in the prime factorization of n*rad(n)+1, where rad = A007947 (squarefree kernel).
  * @author Georg Fischer
  */
 public class A078316 extends DirectTransformSequence {

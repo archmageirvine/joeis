@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072140.
+ * A072179 Numbers n such that n^(n+1) - (n+1)^n is prime.
  * @author Sean A. Irvine
  */
 public class A072179 extends Sequence1 {

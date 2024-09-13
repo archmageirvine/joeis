@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A052871 E.g.f.: -LambertW(x/(-1+x)).
+ * A052871 Expansion of e.g.f. -LambertW(x/(-1+x)).
  * @author Sean A. Irvine
  */
 public class A052871 extends Sequence0 {

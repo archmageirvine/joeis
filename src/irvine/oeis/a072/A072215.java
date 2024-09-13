@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A072140.
+ * A072215 a(0) = 4; for n &gt;= 0, a(n+1) = number of partitions of a(n).
  * @author Sean A. Irvine
  */
 public class A072215 extends Sequence0 {

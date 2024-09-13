@@ -4,7 +4,7 @@ package irvine.oeis.a077;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A077653 a(1)=1, a(2)=2, a(3)=2, a(n) = abs(a(n-1)-a(n-2)-a(n-3)).
+ * A077653 a(1)=1, a(2)=2, a(3)=2, a(n) = abs(a(n-1) - a(n-2) - a(n-3)).
  * @author Georg Fischer
  */
 public class A077653 extends TupleTransformSequence {

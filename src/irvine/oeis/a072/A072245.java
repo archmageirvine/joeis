@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A072140.
+ * A072245 Smallest m such that number of distinct partitions of m exceeds 10^n.
  * @author Sean A. Irvine
  */
 public class A072245 extends Sequence0 {

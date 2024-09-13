@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001221;
 import irvine.oeis.a051.A051903;
 
 /**
- * A225230 In canonical prime factorization of n: (number of distinct primes) minus (largest prime exponent).
+ * A225230 In the canonical prime factorization of n: (number of distinct primes) minus (largest prime exponent).
  * @author Georg Fischer
  */
 public class A225230 extends AbstractSequence {

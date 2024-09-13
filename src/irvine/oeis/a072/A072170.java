@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A072145.
+ * A072170 Square array T(n,k) (n &gt;= 0, k &gt;= 2) read by antidiagonals, where T(n,k) is the number of ways of writing n as Sum_{i&gt;=0} c_i 2^i, c_i in {0,1,...,k-1}.
  * @author Sean A. Irvine
  */
 public class A072170 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A072145.
+ * A072168 Floor of ratio of volume of n-dimensional cube of side 2 to volume of n-dimensional ball of radius 1.
  * @author Sean A. Irvine
  */
 public class A072168 extends Sequence0 {

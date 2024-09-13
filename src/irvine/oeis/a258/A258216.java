@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A258216 Number of permutations of {1, 2, 3,...,n} such that no multiples of 3 are adjacent.
+ * A258216 Number of permutations of {1,2,3,...,n} such that no multiples of 3 are adjacent.
  * @author Georg Fischer
  */
 public class A258216 extends LambdaSequence {

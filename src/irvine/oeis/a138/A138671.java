@@ -6,13 +6,13 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a116.A116178;
 
 /**
- * A138670 Indices of 0&apos;s in Stewart&apos;s choral sequence.
+ * A138671 Indices of 1&apos;s in Stewart&apos;s choral sequence.
  * @author Georg Fischer
  */
-public class A138670 extends FilterPositionSequence {
+public class A138671 extends FilterPositionSequence {
 
   /** Construct the sequence. */
-  public A138670() {
-    super(0, 0, new A116178(), v -> v.equals(Z.ZERO));
+  public A138671() {
+    super(0, 0, new A116178(), v -> v.equals(Z.ONE));
   }
 }

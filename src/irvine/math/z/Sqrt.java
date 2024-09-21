@@ -37,7 +37,7 @@ final class Sqrt {
       // fits easily in an int
       final int s = Functions.SQRT.i(n.mValue[0]);
       r = Z.valueOf(s);
-      diff = Z.valueOf(s * s);
+      diff = Z.valueOf((long) (long) s * s);
     } else {
       final int[] av = new int[n.getSize()];
       int sa = (n.getSize() + 1) >>> 1;

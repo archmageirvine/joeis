@@ -31,7 +31,7 @@ class PrescaledErf extends CR {
       // currentTerm = currentTerm * x^2 / n
       currentTerm = scale(currentTerm.multiply(x2Appr), p);
       currentTerm = currentTerm.divide(Z.valueOf(k));
-      currentSum = currentSum.signedAdd((k & 1) == 0, currentTerm.divide(2 * k + 1));
+      currentSum = currentSum.signedAdd((k & 1) == 0, currentTerm.divide(2L * k + 1));
     }
     return currentSum;
   }

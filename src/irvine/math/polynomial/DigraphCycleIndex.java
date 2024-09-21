@@ -22,14 +22,14 @@ public final class DigraphCycleIndex {
     final MultivariateMonomial mm = new MultivariateMonomial();
     for (int k = 1; k < j.length; ++k) {
       if (j[k] > 0) {
-        mm.add(k, (k - 1) * j[k] + k * j[k] * (j[k] - 1));
+        mm.add(k, (long) (k - 1) * j[k] + (long) k * j[k] * (j[k] - 1));
       }
     }
     for (int r = 1; r < j.length; ++r) {
       if (j[r] > 0) {
         for (int t = r + 1; t < j.length; ++t) {
           if (j[t] > 0) {
-            mm.add(Functions.LCM.i(r, t), 2 * Functions.GCD.i(r, t) * j[r] * j[t]);
+            mm.add(Functions.LCM.i(r, t), 2L * Functions.GCD.i(r, t) * j[r] * j[t]);
           }
         }
       }

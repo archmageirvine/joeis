@@ -25,13 +25,13 @@ public final class BarSymmetricGroupCycleIndex {
     }
     for (int k = 1; k < j.length; ++k) {
       if (j[k] != 0) {
-        mm.add(2 * k, k * j[k] * (j[k] - 1) / 2 + (k / 2) * j[k]);
+        mm.add(2 * k, (long) k * j[k] * (j[k] - 1) / 2 + (long) (k / 2) * j[k]);
       }
     }
     for (int t = 1; t < j.length; ++t) {
       for (int r = 1; r < t; ++r) {
         if (j[r] != 0 && j[t] != 0) {
-          mm.add(2 * Functions.LCM.i(r, t), Functions.GCD.i(r, t) * j[r] * j[t]);
+          mm.add(2 * Functions.LCM.i(r, t), (long) Functions.GCD.i(r, t) * j[r] * j[t]);
         }
       }
     }

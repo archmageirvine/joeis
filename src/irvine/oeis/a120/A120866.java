@@ -13,6 +13,6 @@ public class A120866 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A120866() {
-    super(1, n -> Z.valueOf(n).multiply(5 * n).subtract(CR.valueOf(n).multiply(CR.FIVE.sqrt()).floor().square()));
+    super(1, n -> Z.valueOf(n).multiply(5L * n).subtract(CR.valueOf(n).multiply(CR.FIVE.sqrt()).floor().square()));
   }
 }

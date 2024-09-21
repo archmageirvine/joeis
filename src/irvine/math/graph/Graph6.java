@@ -54,7 +54,7 @@ public final class Graph6 {
     }
     final long v1 = toInt(n, 1);
     if (v1 <= SMALL_N) {
-      return (v1 << 12) + (toInt(n, 2) << 6) + toInt(n, 3);
+      return (v1 << 12) + ((long) toInt(n, 2) << 6) + toInt(n, 3);
     }
     long r = 0;
     for (int k = 2; k < 8; ++k) {

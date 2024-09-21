@@ -51,7 +51,7 @@ public final class Zeta {
       }
       final int opPrec = EXTRA_PRECISION - precision;
       final Z scale = Z.ONE.shiftLeft(opPrec);
-      final Z ps = Z.valueOf(mP).shiftLeft(2 * opPrec);
+      final Z ps = Z.valueOf(mP).shiftLeft(2L * opPrec);
       Z sum = Z.ZERO;
       long k = 0;
       while (true) {
@@ -87,7 +87,7 @@ public final class Zeta {
       }
       final int opPrec = EXTRA_PRECISION - precision;
       final Z scale = Z.ONE.shiftLeft(opPrec);
-      final Z scale2 = Z.ONE.shiftLeft(2 * opPrec);
+      final Z scale2 = Z.ONE.shiftLeft(2L * opPrec);
       Z sum = Z.ZERO;
       long k = 0;
       while (true) {

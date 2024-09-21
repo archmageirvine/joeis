@@ -71,8 +71,8 @@ final class Sqr {
     final Z a2 = karSqr(a.add(aTopHalf), shi + 1);
     a.mSign = alen;
     final Z c = karSqr(aTopHalf, shi + 1);
-    final Z a0 = Sub.sub(Sub.sub(a2, a1), c).shiftLeft(hlen * Z.BASE_BITS);
-    final Z cc = c.shiftLeft((hlen << 1) * Z.BASE_BITS);
+    final Z a0 = Sub.sub(Sub.sub(a2, a1), c).shiftLeft((long) hlen * Z.BASE_BITS);
+    final Z cc = c.shiftLeft((long) ((long) hlen << 1) * Z.BASE_BITS);
     System.arraycopy(a1.mValue, 0, cc.mValue, 0, a1.mSign);
     return cc.add(a0);
   }

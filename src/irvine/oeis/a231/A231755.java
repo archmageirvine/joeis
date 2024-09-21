@@ -12,6 +12,6 @@ public class A231755 extends A086122 {
 
   /** Construct the sequence. */
   public A231755() {
-    super(1, k -> Z.TWO.pow(k).subtract(1).subtract(3 * k), 3);
+    super(1, k -> Z.TWO.pow(k).subtract(1).subtract(3L * k), 3);
   }
 }

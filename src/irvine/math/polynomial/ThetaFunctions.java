@@ -169,7 +169,7 @@ public final class ThetaFunctions {
     QPolynomial<Z> delta8 = new QPolynomial<>("q", Z.ZERO, Z.ONE);
     delta8.put(Q.ONE, Z.ONE); // q
     for (int m = 1; 2 * m <= n; ++m) {
-      final QPolynomial<Z> t = RING.multiply(RING.oneMinusXToTheN(Z.ONE, new Q(2 * m - 1)), RING.oneMinusXToTheN(Z.ONE, new Q(4 * m)), n);
+      final QPolynomial<Z> t = RING.multiply(RING.oneMinusXToTheN(Z.ONE, new Q(2L * m - 1)), RING.oneMinusXToTheN(Z.ONE, new Q(4L * m)), n);
       delta8 = RING.multiply(delta8, RING.pow(t, 8, n), n);
     }
     return delta8;

@@ -15,6 +15,6 @@ public class A130033 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A130033() {
-    super(0, n -> (new Q(2 * (n + 2)).subtract(Rationals.SINGLETON.sum(1, n + 2, j -> new Q(1, j * j)).multiply(Z.valueOf(n + 3)))).multiply(Z.NEG_ONE.pow(n)).multiply(Functions.FACTORIAL.z(n + 2).square()).num());
+    super(0, n -> (new Q(2L * (n + 2)).subtract(Rationals.SINGLETON.sum(1, n + 2, j -> new Q(1, (long) j * j)).multiply(Z.valueOf(n + 3)))).multiply(Z.NEG_ONE.pow(n)).multiply(Functions.FACTORIAL.z(n + 2).square()).num());
   }
 }

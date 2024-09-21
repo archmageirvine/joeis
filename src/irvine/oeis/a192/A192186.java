@@ -13,6 +13,6 @@ public class A192186 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A192186() {
-    super(0, n -> Binomial.binomial(2 * n, CR.SQRT2.multiply(n).floor().intValueExact()));
+    super(0, n -> Binomial.binomial(2L * n, CR.SQRT2.multiply(n).floor().intValueExact()));
   }
 }

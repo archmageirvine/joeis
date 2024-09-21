@@ -13,6 +13,6 @@ public class A229018 extends FilterSequence {
 
   /** Construct the sequence. */
   public A229018() {
-    super(1, new LambdaSequence(1, k -> Z.valueOf(3 * k + 2).multiply(Z.TWO.pow(k)).subtract(1)), v -> v.isProbablePrime());
+    super(1, new LambdaSequence(1, k -> Z.valueOf(3L * k + 2).multiply(Z.TWO.pow(k)).subtract(1)), v -> v.isProbablePrime());
   }
 }

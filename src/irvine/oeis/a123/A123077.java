@@ -12,6 +12,6 @@ public class A123077 extends A086122 {
 
   /** Construct the sequence. */
   public A123077() {
-    super(1, k -> Z.valueOf(1 + 2 * k).add(Z.valueOf(k).square().multiply(3)).add(Z.valueOf(k).pow(3).multiply(4)), 2);
+    super(1, k -> Z.valueOf(1 + 2L * k).add(Z.valueOf(k).square().multiply(3)).add(Z.valueOf(k).pow(3).multiply(4)), 2);
   }
 }

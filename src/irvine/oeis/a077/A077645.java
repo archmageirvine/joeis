@@ -17,6 +17,6 @@ public class A077645 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A077645() {
-    super(1, n -> A007504.a(Functions.PRIME_PI.z(Z.TEN.pow(n))).subtract(A007504.a(Functions.PRIME_PI.z(Z.TEN.pow((Z.valueOf(n - 1)))))));
+    super(1, n -> A007504.a(Functions.PRIME_PI.z(Z.TEN.pow(n))).subtract(A007504.a(Functions.PRIME_PI.z(Z.TEN.pow(n - 1)))));
   }
 }

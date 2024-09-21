@@ -14,6 +14,6 @@ public class A375806 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A375806() {
-    super(0, n -> Rationals.SINGLETON.sum(0, n / 2, k -> new Q(Functions.FACTORIAL.z(n - 2 * k + 1).multiply(Functions.STIRLING1.z(n - k, n - 2 * k).abs()), Functions.FACTORIAL.z(n - k))).multiply(Functions.FACTORIAL.z(n)).num());
+    super(0, n -> Rationals.SINGLETON.sum(0, n / 2, k -> new Q(Functions.FACTORIAL.z(n - 2 * k + 1).multiply(Functions.STIRLING1.z(n - k, n - 2L * k).abs()), Functions.FACTORIAL.z(n - k))).multiply(Functions.FACTORIAL.z(n)).num());
   }
 }

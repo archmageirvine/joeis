@@ -15,6 +15,6 @@ public class A084762 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A084762() {
-    super(1, n -> Rationals.SINGLETON.product(2, Functions.PRIME_PI.i(2 * n), j -> new Q(Z.valueOf(2 * n).subtract(Functions.PRIME.z(j)), Functions.PRIME.z(j))).num());
+    super(1, n -> Rationals.SINGLETON.product(2, Functions.PRIME_PI.i(2 * n), j -> new Q(Z.valueOf(2L * n).subtract(Functions.PRIME.z(j)), Functions.PRIME.z(j))).num());
   }
 }

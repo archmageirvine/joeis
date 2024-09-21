@@ -13,6 +13,6 @@ public class A123663 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A123663() {
-    super(1, n -> Z.valueOf(2 * n).subtract(Functions.CEIL_SQRT.z(4 * n)));
+    super(1, n -> Z.valueOf(2L * n).subtract(Functions.CEIL_SQRT.z(4 * n)));
   }
 }

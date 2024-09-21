@@ -109,9 +109,9 @@ final class Mul {
     if (bigb) {
       r = Sub.sub(r, c);
     }
-    r = r.shiftLeft(hlen * Z.BASE_BITS);
+    r = r.shiftLeft((long) hlen * Z.BASE_BITS);
     if (bigb) {
-      c = c.shiftLeft((hlen << 1) * Z.BASE_BITS);
+      c = c.shiftLeft((long) ((long) hlen << 1) * Z.BASE_BITS);
       // c = c + abBottom (can do with copy since no overlap)
       System.arraycopy(abBottom.mValue, 0, c.mValue, 0, abBottom.getSize());
     } else {

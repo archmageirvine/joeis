@@ -13,6 +13,6 @@ public class A245291 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A245291() {
-    super(1, (term, n) -> Z.TWO.pow(n * (2 * n - 1)).subtract((Z.TWO.pow(n * (n - 1))).multiply(term)), "", new A229865());
+    super(1, (term, n) -> Z.TWO.pow(n * (2L * n - 1)).subtract((Z.TWO.pow((long) n * (n - 1))).multiply(term)), "", new A229865());
   }
 }

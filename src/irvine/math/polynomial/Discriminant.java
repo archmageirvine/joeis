@@ -32,7 +32,7 @@ public final class Discriminant {
       }
       return coefficientField.zero();
     }
-    final long size = 2 * n - 1;
+    final long size = 2L * n - 1;
     // Build Sylvester matrix
     final Polynomial<E> dp = ring.diff(p);
     final MatrixField<E> field = new MatrixField<>(size, coefficientField);
@@ -48,7 +48,7 @@ public final class Discriminant {
       }
     }
     final E det = field.det(m);
-    final long sign = n * (n - 1) / 2;
+    final long sign = (long) n * (n - 1) / 2;
     final E disc = coefficientField.divide(det, p.coeff(n));
     return (sign & 1) == 0 ? disc : coefficientField.negate(disc);
   }

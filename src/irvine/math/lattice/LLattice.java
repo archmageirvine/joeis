@@ -16,7 +16,7 @@ class LLattice extends SquareLattice {
   @Override
   public long neighbour(final long point, final int neighbourNumber) {
     final long d = (point + (point >> BITS_PER_COORDINATE)) & 1;
-    final long e = 1 - (neighbourNumber << 1); // i.e., 0 -> 1, 1 -> -1
+    final long e = 1 - ((long) neighbourNumber << 1); // i.e., 0 -> 1, 1 -> -1
     return point + (d == 0 ? e : e * Y1);
   }
 }

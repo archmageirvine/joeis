@@ -12,6 +12,6 @@ public class A154616 extends A086122 {
 
   /** Construct the sequence. */
   public A154616() {
-    super(1, k -> Z.valueOf(k).square().multiply(4).subtract(8 * k + 9), 3);
+    super(1, k -> Z.valueOf(k).square().multiply(4).subtract(8L * k + 9), 3);
   }
 }

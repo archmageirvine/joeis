@@ -179,7 +179,7 @@ public class Vertex<V, E> {
   long isomorphismConstant() {
     return (((long) mUndirectedEdges.size()) << 36)
       ^ (((long) mUndirectedLoops.size()) << 32)
-      ^ (mInEdges.size() << 16)
+      ^ ((long) mInEdges.size() << 16)
       ^ mOutEdges.size();
   }
 

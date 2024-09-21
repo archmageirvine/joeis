@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A120264 Numerator of Sum[ (-1)^(k+1)/k^k, {k,1,n} ].
+ * A120264 Numerator of Sum_{k=1..n} (-1)^(k+1)/k^k.
  * @author Georg Fischer
  */
 public class A120264 extends LambdaSequence {

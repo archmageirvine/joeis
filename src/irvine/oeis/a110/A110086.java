@@ -6,7 +6,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A110086 Numbers n such that sigma(n) - phi(n) &lt;= tau(n)^omega(n), where sigma=A000203, phi=A000010, tau=A000005 and omega=A001221.
+ * A110086 Numbers k such that sigma(k) - phi(k) &lt;= tau(k)^omega(k), where sigma = A000203, phi = A000010, tau = A000005 and omega = A001221.
  * @author Georg Fischer
  */
 public class A110086 extends FilterNumberSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a107;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A107841 Series reversion of x(1-3x)/(1-x).
+ * A107841 Series reversion of x*(1-3*x)/(1-x).
  * @author Georg Fischer
  */
 public class A107841 extends HolonomicRecurrence {

@@ -1,8 +1,8 @@
 package irvine.oeis.a062;
 
 import irvine.factor.prime.Fast;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 
 /**
@@ -24,7 +24,7 @@ public class A062852 extends AbstractSequence {
     mT = mT.multiply(10);
     Z n = mT.subtract(1);
     while (true) {
-      if (!mPrime.isPrime(n) && ZUtils.sprpTest(2L, n)) {
+      if (!mPrime.isPrime(n) && Predicates.STRONG_PSEUDOPRIME.is(2L, n)) {
         return n;
       }
       n = n.subtract(2);

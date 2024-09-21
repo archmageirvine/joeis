@@ -5,7 +5,7 @@ import irvine.oeis.a126.A126988;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A127013 Triangle read by rows: reversal of A126988.
+ * A127013 Triangle read by rows: row reversal of A126988.
  * @author Georg Fischer
  */
 public class A127013 extends Transpose {

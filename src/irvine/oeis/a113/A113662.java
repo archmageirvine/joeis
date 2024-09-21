@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000699;
 import irvine.oeis.transform.RootSequence;
 
 /**
- * A113662 Self-convolution of A000699.
+ * A113662 G.f. satisfies: A(x) = (1 + x*(d/dx x*A(x)) )^2.
  * @author Georg Fischer
  */
 public class A113662 extends RootSequence {

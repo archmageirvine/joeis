@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaArray;
 
 /**
- * A376102 Name?
+ * A376102 Array read by ascending antidiagonals: A(n,k) = k*2^(n+1) + 1.
  * @author Georg Fischer
  */
 public class A376102 extends LambdaArray {

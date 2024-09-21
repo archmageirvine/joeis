@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A118014 Sum_{k=1..n} floor(n^2/k).
+ * A118014 a(n) = Sum_{k=1..n} floor(n^2/k).
  * @author Georg Fischer
  */
 public class A118014 extends LambdaSequence {

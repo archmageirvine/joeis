@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A003539 a(n)=3*a(n-1)+16 (the first 11 terms are primes).
+ * A003539 a(0) = 587, a(n) = 3*a(n-1) + 16 for n &gt; 0 (the first 11 terms are primes).
  * @author Sean A. Irvine
  */
 public class A003539 extends Sequence0 {

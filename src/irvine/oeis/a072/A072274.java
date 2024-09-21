@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a069.A069567;
 
 /**
- * A072248.
+ * A072274 List of Ormiston prime pairs.
  * @author Sean A. Irvine
  */
 public class A072274 extends A069567 {

@@ -1,7 +1,7 @@
 package irvine.oeis.a071;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -18,7 +18,7 @@ public class A071294 extends Sequence1 {
     final Z n = Z.valueOf(mN);
     long cnt = 0;
     for (long b = 1; b < mN; ++b) {
-      if (ZUtils.sprpTest(b, n)) {
+      if (Predicates.STRONG_PSEUDOPRIME.is(b, n)) {
         ++cnt;
       }
     }

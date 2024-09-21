@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A111230 Numbers n such that 5*n + 14 is prime.
+ * A111230 Numbers k such that 5*k + 14 is prime.
  * @author Georg Fischer
  */
 public class A111230 extends PrimePositionSubsequence {

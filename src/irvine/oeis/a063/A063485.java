@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A063485 Composites of the form 2^(2^n)+3.
+ * A063485 Composites of the form 2^(2^k)+3.
  * @author Sean A. Irvine
  */
 public class A063485 extends Sequence0 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000005;
 
 /**
- * A053624 Highly composite odd numbers (1): where d(n) increases to a record.
+ * A053624 Highly composite odd numbers: odd numbers where d(n) increases to a record.
  * @author Sean A. Irvine
  */
 public class A053624 extends A000005 {

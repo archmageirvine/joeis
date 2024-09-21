@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A245833 The Szeged index of the triangle-shaped benzenoid T_k (see Fig. 5.7 of the Diudea et al. reference).
+ * A245833 The Szeged index of the triangle-shaped benzenoid T_n (see Fig. 5.7 of the Diudea et al. reference).
  * @author Georg Fischer
  */
 public class A245833 extends GeneratingFunctionSequence {

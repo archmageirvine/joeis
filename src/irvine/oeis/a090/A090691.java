@@ -4,7 +4,7 @@ package irvine.oeis.a090;
 import irvine.oeis.recur.PaddingSequence;
 
 /**
- * A090691 5x - 1 sequence starting at 50.
+ * A090691 5x - 1 sequence starting at 50 (a(n+1) = a(n)/2 if a(n) is even, or 5*a(n)-1 if a(n) is odd).
  * @author Georg Fischer
  */
 public class A090691 extends PaddingSequence {

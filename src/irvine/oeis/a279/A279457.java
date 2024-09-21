@@ -6,7 +6,7 @@ import irvine.oeis.a026.A026424;
 import irvine.oeis.a030.A030230;
 
 /**
- * A279457 Numbers n such that number of distinct primes dividing n is odd and number of prime divisors (counted with multiplicity) of n is odd.
+ * A279457 Numbers k such that number of distinct primes dividing k is odd and number of prime divisors (counted with multiplicity) of k is odd.
  * @author Georg Fischer
  */
 public class A279457 extends IntersectionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004601;
 
 /**
- * A065987 Numbers n such that the first n binary digits of Pi expressed in decimal forms a prime.
+ * A065987 Numbers k such that the first k binary digits of Pi expressed in decimal forms a prime.
  * @author Sean A. Irvine
  */
 public class A065987 extends Sequence1 {

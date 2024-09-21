@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000217;
 import irvine.oeis.a001.A001477;
 
 /**
- * A374892 Name?
+ * A374892 Obverse convolution (n)**(n(n+1)/2); see Comments.
  * @author Georg Fischer
  */
 public class A374892 extends ObverseConvolutionSequence {

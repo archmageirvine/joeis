@@ -1,6 +1,6 @@
 package irvine.oeis.a063;
 
-import irvine.math.z.ZUtils;
+import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002997;
 
@@ -12,6 +12,6 @@ public class A063847 extends FilterSequence {
 
   /** Construct the sequence. */
   public A063847() {
-    super(new A002997(), k -> ZUtils.sprpTest(2L, k));
+    super(new A002997(), k -> Predicates.STRONG_PSEUDOPRIME.is(2L, k));
   }
 }

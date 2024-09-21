@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A114772 Floor[7^(1/3)*10^n]^3.
+ * A114772 a(n) = floor(7^(1/3)*10^n)^3.
  * @author Georg Fischer
  */
 public class A114772 extends FloorSequence {

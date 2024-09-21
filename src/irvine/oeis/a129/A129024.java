@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A129024 The first 8 values are predefined, the remaining set to a(n) =24*prime(n).
+ * A129024 The first 8 values are predefined, the remaining set to a(n) = 24*prime(n).
  * @author Georg Fischer
  */
 public class A129024 extends A000040 {

@@ -49,4 +49,6 @@ public final class Predicates {
   public static final Predicate2 PALINDROME = new Palindrome();
   /** Test if a number is <code>t</code>-polygonal. */
   public static final Predicate2 POLYGONAL = new Polygonal();
+  /** Test if a number is a strong pseudoprime. */
+  public static final Predicate2 STRONG_PSEUDOPRIME = new StrongPseudoprime();
 }

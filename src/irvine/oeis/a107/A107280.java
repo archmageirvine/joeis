@@ -6,7 +6,7 @@ import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 
 /**
- * A107280 Numbers n such that 22446688 * 10^n + 1 is prime.
+ * A107280 Numbers k such that 22446688 * 10^k + 1 is prime.
  * @author Georg Fischer
  */
 public class A107280 extends PowerFactorPrimeSequence {

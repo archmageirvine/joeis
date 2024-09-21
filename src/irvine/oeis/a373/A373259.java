@@ -4,7 +4,7 @@ package irvine.oeis.a373;
 import irvine.oeis.a329.A329963;
 
 /**
- * A373259 Numbers k such that k&apos; / gcd(k,k&apos;) is a multiple of 4 and A276085(k) is a multiple of 8, where k&apos; stands for the arithmetic derivative of k, A003415, and A276085 is the primorial base log-function.
+ * A373259 Numbers k such that k' / gcd(k,k') is a multiple of 4 and A276085(k) is a multiple of 8, where k' stands for the arithmetic derivative of k, A003415, and A276085 is the primorial base log-function.
  * @author Georg Fischer
  */
 public class A373259 extends A329963 {

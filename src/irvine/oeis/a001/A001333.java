@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A001333 Numerators of continued fraction convergents to sqrt(2).
+ * A001333 Pell-Lucas numbers: numerators of continued fraction convergents to sqrt(2).
  * @author Sean A. Irvine
  */
 public class A001333 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A179044 Decimal expansion of (5/18)Pi. Decimal expansion of, asymptotically, the probability that the evolution of a random graph ever simultaneously has two complex components.
+ * A179044 Decimal expansion of (5/18)*Pi.
  * @author Georg Fischer
  */
 public class A179044 extends DecimalExpansionSequence {

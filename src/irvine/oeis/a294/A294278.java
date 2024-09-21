@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A294278 Numbers n such that omega(n) &gt; omega(n+1) (where omega(m) = A001221(m), the number of distinct primes dividing m).
+ * A294278 Numbers k such that omega(k) &gt; omega(k+1) (where omega(m) = A001221(m), the number of distinct primes dividing m).
  * @author Georg Fischer
  */
 public class A294278 extends FilterNumberSequence {

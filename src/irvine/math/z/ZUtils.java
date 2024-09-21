@@ -239,16 +239,6 @@ public final class ZUtils {
     return false;
   }
 
-  /**
-   * Strong probable prime test.
-   * @param b base to try
-   * @param n number to test
-   * @return false if number is definitely composite
-   */
-  public static boolean sprpTest(final long b, final Z n) {
-    return sprpTest(Z.valueOf(b), n);
-  }
-
   // Based on LiDIA
   /**
    * The smallest remainder of <code>b.mod(mod)</code>.

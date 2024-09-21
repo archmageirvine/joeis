@@ -7,7 +7,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A118726 a(n)=sum(k=0,n,F(n+k)*binomial(n+k,k)) where F=A000045.
+ * A118726 a(n) = Sum_{k=0..n} F(n+k)*binomial(n+k,k) where F=A000045.
  * a(n)=sum(k=0,n,binom(n+k,k)*fibonacci(n+k))
  * @author Georg Fischer
  */

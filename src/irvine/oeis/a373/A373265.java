@@ -4,7 +4,7 @@ package irvine.oeis.a373;
 import irvine.oeis.a329.A329963;
 
 /**
- * A373265 Numbers k such that k&apos; / gcd(k,k&apos;) is of the form 4m+2, where k&apos; stands for the arithmetic derivative of k, A003415.
+ * A373265 Numbers k such that k' / gcd(k,k') is of the form 4m+2, where k' stands for the arithmetic derivative of k, A003415.
  * @author Georg Fischer
  */
 public class A373265 extends A329963 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072248.
+ * A072270 A partial product representation of A006131 and A072265.
  * @author Sean A. Irvine
  */
 public class A072270 extends Sequence1 {

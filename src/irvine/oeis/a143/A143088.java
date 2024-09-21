@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A143088 Triangle T(n,m)=( 2^(m+1)-1 ) * ( 2^(n-m+1)-1 ), read by rows, 0&lt;=m&lt;=n.
+ * A143088 Triangle T(n,m) = (2^(m+1) - 1) * (2^(n-m+1) - 1), read by rows, 0 &lt;= m &lt;= n.
  * @author Georg Fischer
  */
 public class A143088 extends Triangle {

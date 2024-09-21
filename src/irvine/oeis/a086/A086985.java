@@ -7,7 +7,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A086985 A000407(n)-A086984(n).
+ * A086985 a(n) = A000407(n) - A086984(n).
  * a(n)=(2*n-1)!/(n-1)!-n!-sum(i=2,n,binom(n-1,n-i)*n*n!)
  * @author Georg Fischer
  */

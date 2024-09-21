@@ -13,6 +13,10 @@ public class A020882 extends Sequence1 {
   private long mC = 4;
   private long mB = 4;
 
+  protected Z select(final long a, final long b, final long c) {
+    return Z.valueOf(c);
+  }
+
   @Override
   public Z next() {
     while (true) {
@@ -24,7 +28,7 @@ public class A020882 extends Sequence1 {
         final long a2 = mC * mC - mB * mB;
         final long a = Functions.SQRT.l(a2);
         if (a < mB && a * a == a2 && Functions.GCD.l(a, mC) == 1 && Functions.GCD.l(a, mB) == 1) {
-          return Z.valueOf(mC);
+          return select(a, mB, mC);
         }
       }
     }

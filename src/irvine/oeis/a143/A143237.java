@@ -6,7 +6,7 @@ import irvine.oeis.a130.A130208;
 import irvine.oeis.triangle.Product;
 
 /**
- * A143237 Triangle read by rows, A130208 * A000012 * A130208; 1&lt;=k&lt;=n.
+ * A143237 Triangle read by rows, T(n, k) = A000203(n)*A000203(k), for n &gt;= 1, 1 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A143237 extends Product {

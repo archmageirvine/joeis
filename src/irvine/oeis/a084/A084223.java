@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A084223 Numerators of successive approximations to zeta(3) = Sum_{k&gt;0} 1/k^3, using Zeilberger&apos;s formula with s=2.
+ * A084223 Numerators of successive approximations to zeta(3) = Sum_{k&gt;0} 1/k^3, using Zeilberger's formula with s=2.
  * @author Georg Fischer
  */
 public class A084223 extends LambdaSequence {

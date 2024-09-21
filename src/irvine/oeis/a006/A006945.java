@@ -1,8 +1,8 @@
 package irvine.oeis.a006;
 
 import irvine.factor.prime.Fast;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -20,7 +20,7 @@ public class A006945 extends Sequence1 {
   private boolean test(final Z m, final int n) {
     long p = 2;
     for (int k = 0; k < n; ++k, p = mPrime.nextPrime(p)) {
-      if (!ZUtils.sprpTest(p, m)) {
+      if (!Predicates.STRONG_PSEUDOPRIME.is(p, m)) {
         return false;
       }
     }

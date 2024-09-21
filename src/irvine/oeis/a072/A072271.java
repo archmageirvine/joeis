@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072248.
+ * A072271 A partial product representation of f(n) = A015523(n) and L(n) = A072263(n).
  * @author Sean A. Irvine
  */
 public class A072271 extends Sequence1 {

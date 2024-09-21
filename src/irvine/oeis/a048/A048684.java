@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A048684 Multiplicity of maximal squarefree kernel numbers applied to C(n,k) coefficients.
+ * A048684 Multiplicity of the maximum squarefree kernel function applied to the binomial coefficients C(n,k).
  * @author Sean A. Irvine
  */
 public class A048684 extends Sequence1 {

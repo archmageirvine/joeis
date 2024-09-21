@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A102657 Numbers n such that 11n^2 + 11n + 1 is prime.
+ * A102657 Numbers k such that 11*k^2 + 11*k + 1 is prime.
  * @author Georg Fischer
  */
 public class A102657 extends PrimePositionSubsequence {

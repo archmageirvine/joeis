@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000203;
 import irvine.oeis.triangle.Diagonal;
 
 /**
- * A130208 Diagonalized matrix of A000203, Sigma(n).
+ * A130208 Diagonalized matrix of A000203, sigma(n).
  * @author Georg Fischer
  */
 public class A130208 extends Diagonal {

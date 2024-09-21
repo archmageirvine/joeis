@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A085904 Numbers n such that n, n+1 and n+2 are highly composite numbers (2), i.e., all prime divisors &lt;= 7 (A002473).
+ * A085904 Numbers k such that k, k+1 and k+2 are 7-smooth, i.e., all prime divisors &lt;= 7 (A002473).
  * @author Georg Fischer
  */
 public class A085904 extends FiniteSequence {

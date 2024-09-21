@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063791 Numbers n such that 2^(n+1) - n - 2 is prime.
+ * A063791 Numbers k such that 2^(k+1) - k - 2 is prime.
  * @author Sean A. Irvine
  */
 public class A063791 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a153.A153975;
 
 /**
- * A097698 Numbers n such that both 4*n^2 - 3 and 4*n^2 + 3 are primes.
+ * A097698 Numbers k such that both 4*k^2 - 3 and 4*k^2 + 3 are primes.
  * @author Georg Fischer
  */
 public class A097698 extends A153975 {

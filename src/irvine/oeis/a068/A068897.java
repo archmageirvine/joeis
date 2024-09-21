@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A068897 Squares containing 2n digits in which the sum of the first n digits = that of the rest.
+ * A068897 Squares containing 2k digits in which the sum of the first k digits = that of the rest.
  * @author Sean A. Irvine
  */
 public class A068897 extends Sequence0 {

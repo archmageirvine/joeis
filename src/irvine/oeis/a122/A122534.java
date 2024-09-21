@@ -6,7 +6,7 @@ import irvine.oeis.a277.A277284;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A122534 Numbers n such that Fibonacci(prime(prime(n))) is prime.
+ * A122534 Numbers k such that Fibonacci(prime(prime(k))) is prime.
  * @author Georg Fischer
  */
 public class A122534 extends SingleTransformSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A039767 Numbers k such that gcd(phi(k), k-1) = number of prime factors of (k-1).
+ * A039767 Numbers k such that gcd(phi(k), k-1) = number of distinct prime factors of (k-1).
  * @author Sean A. Irvine
  */
 public class A039767 extends Sequence1 {

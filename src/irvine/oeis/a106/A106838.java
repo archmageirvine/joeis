@@ -5,7 +5,7 @@ import irvine.oeis.a091.A091067;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A106838 Numbers n such that n, n+1 and n+2 have odd part of form 4k+3.
+ * A106838 Numbers m such that m, m+1 and m+2 have odd part of the form 4*k+3.
  * @author Georg Fischer
  */
 public class A106838 extends SimpleTransformSequence {

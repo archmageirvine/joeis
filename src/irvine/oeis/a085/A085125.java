@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a002.A002473;
 
 /**
- * A085125 Multiples of 2 which are members of A002473. Or multiples of 2 with the largest prime divisor &lt; 10.
+ * A085125 Even numbers which are 7-smooth.
  * @author Georg Fischer
  */
 public class A085125 extends AbstractSequence {

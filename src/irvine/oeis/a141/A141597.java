@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A141597 Triangle T(n,k) = 2*binomial(n,k)^2-1, read by rows, 0&lt;=k&lt;=n.
+ * A141597 Triangle T(n,k) = 2*binomial(n,k)^2 - 1, read by rows, 0&lt;=k&lt;=n.
  * @author Georg Fischer
  */
 public class A141597 extends BaseTriangle {

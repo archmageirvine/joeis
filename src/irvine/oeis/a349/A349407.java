@@ -4,7 +4,7 @@ package irvine.oeis.a349;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A349407 The Farkas map: a(n) = x/3 if x mod 3 = 0; a(n) = (3x+1)/2 if x mod 3 &lt;&gt; 0 and x mod 4 = 3; a(n) = (x+1)/2 if x mod 3 &lt;&gt; 0 and x mod 4 = 1, where x = 2n-1.
+ * A349407 The Farkas map: a(n) = x/3 if x mod 3 = 0; a(n) = (3x+1)/2 if x mod 3 &lt;&gt; 0 and x mod 4 = 3; a(n) = (x+1)/2 if x mod 3 &lt;&gt; 0 and x mod 4 = 1, where x = 2*n-1.
  * @author Georg Fischer
  */
 public class A349407 extends HolonomicRecurrence {

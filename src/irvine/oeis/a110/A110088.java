@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000005;
 import irvine.oeis.a001.A001221;
 
 /**
- * A110088 tau(n)^omega(n), where tau=A000005 and omega=A001221.
+ * A110088 a(n) = tau(n)^omega(n), where tau = A000005 and omega = A001221.
  * @author Georg Fischer
  */
 public class A110088 extends AbstractSequence {

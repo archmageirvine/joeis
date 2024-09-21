@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A037238 x -&gt; 5x - 1 if x odd, else x -&gt; x/2.
+ * A037238 5x - 1 sequence starting at 19 (a(n+1) = a(n)/2 if a(n) is even, or 5*a(n)-1 if a(n) is odd).
  * @author Sean A. Irvine
  */
 public class A037238 extends Sequence1 {

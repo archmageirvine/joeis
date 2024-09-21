@@ -5,7 +5,7 @@ package irvine.oeis.a062;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A062765 n*(n-1)*(n-3)*(n-5).
+ * A062765 a(n) = n*(n-1)*(n-3)*(n-5).
  * @author Georg Fischer
  */
 public class A062765 extends HolonomicRecurrence {

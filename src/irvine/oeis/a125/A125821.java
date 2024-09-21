@@ -4,7 +4,7 @@ package irvine.oeis.a125;
 import irvine.oeis.prime.PrimeConditionListSequence;
 
 /**
- * A125821 Numbers n for which 8n+5 and 8n+7 are twin primes.
+ * A125821 Numbers k for which 8*k+5 and 8*k+7 are twin primes.
  * @author Georg Fischer
  */
 public class A125821 extends PrimeConditionListSequence {

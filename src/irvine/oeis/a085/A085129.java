@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002473;
 
 /**
- * A085129 Multiples of 6 which are members of A002473. Or multiples of 6 with the largest prime divisor &lt; 10.
+ * A085129 Multiples of 6 which are 7-smooth.
  * @author Georg Fischer
  */
 public class A085129 extends FilterSequence {

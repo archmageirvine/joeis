@@ -4,7 +4,7 @@ package irvine.oeis.a125;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A125641 Square of the (3,1)-entry of the 3 X 3 matrix M^n, where M = [1,0,0; 1,1,0, 1,i,1].
+ * A125641 Square of the (3,1)-entry of the 3 X 3 matrix M^n, where M = [1,0,0; 1,1,0; 1,i,1].
  * @author Georg Fischer
  */
 public class A125641 extends GeneratingFunctionSequence {

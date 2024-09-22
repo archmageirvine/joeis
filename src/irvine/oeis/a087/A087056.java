@@ -16,6 +16,6 @@ public class A087056 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A087056() {
-    super(1, n -> Z.TWO.multiply(Z.valueOf(n).pow(Z.TWO)).subtract(A001951.a(n).pow(Z.TWO)));
+    super(1, n -> Z.TWO.multiply(Z.valueOf(n).square()).subtract(A001951.a(n).square()));
   }
 }

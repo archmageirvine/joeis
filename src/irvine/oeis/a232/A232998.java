@@ -12,6 +12,6 @@ public class A232998 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A232998() {
-    super(0, n -> Z.TWO.pow(Z.valueOf(n + 1).pow(Z.TWO)).multiply(Z.THREE.pow(Z.valueOf(n).multiply(Z.valueOf(n + 1)))));
+    super(0, n -> Z.TWO.pow(Z.valueOf(n + 1).square()).multiply(Z.THREE.pow(Z.valueOf(n).multiply(Z.valueOf(n + 1)))));
   }
 }

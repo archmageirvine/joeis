@@ -13,6 +13,6 @@ public class A130119 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A130119() {
-    super(1, n -> Functions.GCD.z(Z.SEVEN.multiply(Z.valueOf(n).pow(Z.TWO)).add(Z.TWO), Z.TWO.multiply(Z.valueOf(n).pow(Z.TWO)).add(Z.SEVEN)));
+    super(1, n -> Functions.GCD.z(Z.SEVEN.multiply(Z.valueOf(n).square()).add(Z.TWO), Z.TWO.multiply(Z.valueOf(n).square()).add(Z.SEVEN)));
   }
 }

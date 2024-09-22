@@ -13,6 +13,6 @@ public class A362812 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A362812() {
-    super(3, (term, n) -> Z.valueOf(2L * n).add(term.pow(Z.TWO)), "", new A300738());
+    super(3, (term, n) -> Z.valueOf(2L * n).add(term.square()), "", new A300738());
   }
 }

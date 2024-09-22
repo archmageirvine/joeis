@@ -13,6 +13,6 @@ public class A105551 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A105551() {
-    super(0, n -> Functions.OMEGA.z(Z.valueOf(n).pow(Z.THREE).add(Z.valueOf(n).pow(Z.TWO)).add(Z.valueOf(71))));
+    super(0, n -> Functions.OMEGA.z(Z.valueOf(n).pow(Z.THREE).add(Z.valueOf(n).square()).add(Z.valueOf(71))));
   }
 }

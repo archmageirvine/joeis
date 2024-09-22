@@ -13,6 +13,6 @@ public class A247395 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A247395() {
-    super(0, n -> (n <= 2) ? Z.valueOf(new int[] {1, 2, 4}[n]) : (Functions.PRIME.z(n - 1)).pow(Z.TWO).add(Z.ONE));
+    super(0, n -> (n <= 2) ? Z.valueOf(new int[] {1, 2, 4}[n]) : (Functions.PRIME.z(n - 1)).square().add(Z.ONE));
   }
 }

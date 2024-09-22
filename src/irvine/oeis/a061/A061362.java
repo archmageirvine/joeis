@@ -9,7 +9,7 @@ import irvine.oeis.Sequence0;
  */
 public class A061362 extends Sequence0 {
 
-  private long mN = 0;
+  private long mN = -1;
 
   private boolean is(final long n) {
     if (n < 10) {

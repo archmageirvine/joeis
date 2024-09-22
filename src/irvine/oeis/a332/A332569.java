@@ -14,6 +14,6 @@ public class A332569 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A332569() {
-    super(1, n -> (n <= 1) ? Z.ONE : Z.ONE.add(Integers.SINGLETON.sum(1, n - 1, k -> (Functions.SIGMA1.z(k).add(Functions.SIGMA1.z(k + 1))))));
+    super(1, n -> (n <= 1) ? Z.ONE : Z.ONE.add(Integers.SINGLETON.sum(1, n - 1, k -> Functions.SIGMA1.z(k).add(Functions.SIGMA1.z(k + 1)))));
   }
 }

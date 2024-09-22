@@ -13,6 +13,6 @@ public class A292438 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A292438() {
-    super(0, n -> (n <= 3) ? Z.valueOf(new int[] {1, 1, 0, 0}[n]) : Z.ONE.subtract((Functions.PRIME_PI.z(n).subtract(Functions.PRIME_PI.z(n - 2))).multiply((Functions.PRIME_PI.z(n + 1).subtract(Functions.PRIME_PI.z(n - 1))))));
+    super(0, n -> (n <= 3) ? Z.valueOf(new int[] {1, 1, 0, 0}[n]) : Z.ONE.subtract((Functions.PRIME_PI.z(n).subtract(Functions.PRIME_PI.z(n - 2))).multiply(Functions.PRIME_PI.z(n + 1).subtract(Functions.PRIME_PI.z(n - 1)))));
   }
 }

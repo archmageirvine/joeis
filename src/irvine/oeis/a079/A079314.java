@@ -13,6 +13,6 @@ public class A079314 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A079314() {
-    super(0, n -> (n <= 0) ? Z.ONE : Z.THREE.pow((Functions.DIGIT_SUM.z(2, n).subtract(Z.ONE))).add(Z.ONE));
+    super(0, n -> (n <= 0) ? Z.ONE : Z.THREE.pow(Functions.DIGIT_SUM.z(2, n).subtract(Z.ONE)).add(Z.ONE));
   }
 }

@@ -17,6 +17,6 @@ public class A073137 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A073137() {
-    super(0, n -> (n <= 0) ? Z.ZERO : (Z.TWO.pow(Functions.DIGIT_SUM.z(2, n).subtract(Z.ONE))).multiply((Z.TWO.pow(A023416.a(n)).add(Z.ONE))).subtract(Z.ONE));
+    super(0, n -> (n <= 0) ? Z.ZERO : (Z.TWO.pow(Functions.DIGIT_SUM.z(2, n).subtract(Z.ONE))).multiply(Z.TWO.pow(A023416.a(n)).add(Z.ONE)).subtract(Z.ONE));
   }
 }

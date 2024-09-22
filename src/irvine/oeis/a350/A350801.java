@@ -13,6 +13,6 @@ public class A350801 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A350801() {
-    super(0, n -> (n <= 0) ? Z.ZERO : Z.valueOf(n).multiply((Functions.SIGMA0.z(n).add(Z.ONE))).subtract(Z.TWO.multiply(Functions.SIGMA1.z(n))));
+    super(0, n -> (n <= 0) ? Z.ZERO : Z.valueOf(n).multiply(Functions.SIGMA0.z(n).add(Z.ONE)).subtract(Z.TWO.multiply(Functions.SIGMA1.z(n))));
   }
 }

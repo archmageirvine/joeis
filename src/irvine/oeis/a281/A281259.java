@@ -14,6 +14,6 @@ public class A281259 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A281259() {
-    super(1, n -> (n <= 8) ? Z.valueOf(new int[] {0, 0, 0, 0, 0, 0, 0, 1080}[n - 1]) : Functions.FACTORIAL.z(n - 6).multiply((Z.valueOf(120).multiply(Binomial.binomial(n - 7, 5)).add(Z.valueOf(576).multiply(Binomial.binomial(n - 7, 4))).add(Z.valueOf(1116).multiply(Binomial.binomial(n - 7, 3))).add(Z.valueOf(1080).multiply(Binomial.binomial(n - 7, 2))).add(Z.valueOf(540).multiply(Binomial.binomial(n - 7, 1))))));
+    super(1, n -> (n <= 8) ? Z.valueOf(new int[] {0, 0, 0, 0, 0, 0, 0, 1080}[n - 1]) : Functions.FACTORIAL.z(n - 6).multiply(Z.valueOf(120).multiply(Binomial.binomial(n - 7, 5)).add(Z.valueOf(576).multiply(Binomial.binomial(n - 7, 4))).add(Z.valueOf(1116).multiply(Binomial.binomial(n - 7, 3))).add(Z.valueOf(1080).multiply(Binomial.binomial(n - 7, 2))).add(Z.valueOf(540).multiply(Binomial.binomial(n - 7, 1)))));
   }
 }

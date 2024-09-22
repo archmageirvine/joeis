@@ -16,6 +16,6 @@ public class A273893 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A273893() {
-    super(0, n -> (n <= 0) ? Z.ONE : Z.THREE.pow((Z.valueOf(n).subtract(A007949.a(n)))));
+    super(0, n -> (n <= 0) ? Z.ONE : Z.THREE.pow(Z.valueOf(n).subtract(A007949.a(n))));
   }
 }

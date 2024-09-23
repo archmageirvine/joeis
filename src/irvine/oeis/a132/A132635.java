@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A132635 Number of primes, 0&apos;s, and 1&apos;s in [0, n^2).
+ * A132635 Number of primes, 0's, and 1's in [0, n^2).
  * @author Georg Fischer
  */
 public class A132635 extends LambdaSequence {

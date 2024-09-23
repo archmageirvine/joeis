@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000594;
 
 /**
- * A296993 Numbers k such that k^3 divides tau(k), where tau(k) = A000594(k) is Ramanujan&apos;s tau function.
+ * A296993 Numbers k such that k^3 divides tau(k), where tau(k) = A000594(k) is Ramanujan's tau function.
  * @author Georg Fischer
  */
 public class A296993 extends FilterPositionSequence {

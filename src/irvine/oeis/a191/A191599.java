@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000594;
 
 /**
- * A191599 Numbers k that do not divide Ramanujan&apos;s tau(k).
+ * A191599 Numbers k that do not divide Ramanujan's tau(k).
  * @author Georg Fischer
  */
 public class A191599 extends FilterPositionSequence {

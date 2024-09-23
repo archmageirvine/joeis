@@ -6,7 +6,7 @@ import irvine.oeis.a259.A259910;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A279135 Coefficients of the &apos;5th-order&apos; mock theta function Phi(q) with a(0)=1.
+ * A279135 Coefficients of the '5th-order' mock theta function Phi(q) with a(0)=1.
  * @author Georg Fischer
  */
 public class A279135 extends MultiTransformSequence {

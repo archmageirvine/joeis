@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a008.A008835;
 
 /**
- * A248764 Greatest 4th power integer that divides n!
+ * A248764 Greatest 4th power integer that divides n!.
  * @author Georg Fischer
  */
 public class A248764 extends LambdaSequence {

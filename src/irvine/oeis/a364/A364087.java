@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000594;
 
 /**
- * A364087 Integers k for which A000594(k)^2 &gt; 4 k^11, where A000594 is Ramanujan&apos;s tau function.
+ * A364087 Integers k for which A000594(k)^2 &gt; 4 k^11, where A000594 is Ramanujan's tau function.
  * @author Georg Fischer
  */
 public class A364087 extends FilterPositionSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a267.A267383;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A372084 Number of acyclic orientations of the Tur√°n graph T(n^2,n).
+ * A372084 Number of acyclic orientations of the Tur\u00e1n graph T(n^2,n).
  * @author Georg Fischer
  */
 public class A372084 extends LambdaSequence {

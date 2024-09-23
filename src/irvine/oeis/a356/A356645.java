@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000594;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A356645 a(n) = tau(n)^2 - 4*n^11 where tau is Ramanujan&apos;s tau function A000594.
+ * A356645 a(n) = tau(n)^2 - 4*n^11 where tau is Ramanujan's tau function A000594.
  * @author Georg Fischer
  */
 public class A356645 extends SingleTransformSequence {

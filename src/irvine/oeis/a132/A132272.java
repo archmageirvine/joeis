@@ -5,7 +5,7 @@ import irvine.oeis.DoubledSequence;
 import irvine.oeis.a002.A002266;
 
 /**
- * A132272 Product{k&gt;0, 1+floor(n/10^k)}.
+ * A132272 a(n) = Product_{k&gt;0} (1 + floor(n/10^k)).
  * @author Georg Fischer
  */
 public class A132272 extends DoubledSequence {

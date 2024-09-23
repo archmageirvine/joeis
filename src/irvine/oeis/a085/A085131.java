@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002473;
 
 /**
- * A085131 Multiples of 8 which are members of A002473. Or multiples of 8 with the largest prime divisor &lt; 10.
+ * A085131 Multiples of 8 which are 7-smooth.
  * @author Georg Fischer
  */
 public class A085131 extends FilterSequence {

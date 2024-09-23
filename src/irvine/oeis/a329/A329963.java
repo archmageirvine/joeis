@@ -12,8 +12,7 @@ import irvine.oeis.a353.A353815;
 public class A329963 extends AbstractSequence {
 
   private int mN;
-  private int mStart;
-  private Sequence mSeq;
+  private final Sequence mSeq;
 
   /** Construct the sequence. */
   public A329963() {
@@ -28,8 +27,7 @@ public class A329963 extends AbstractSequence {
    */
   public A329963(final int offset, final int start, final Sequence seq) {
     super(offset);
-    mStart = start;
-    mN = mStart - 1;
+    mN = start - 1;
     mSeq = seq;
   }
 

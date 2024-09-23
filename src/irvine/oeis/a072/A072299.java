@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072299 Reverse(k) is a prime factor of k.
+ * A072299 Numbers k such that reverse(k) is a prime factor of k.
  * @author Sean A. Irvine
  */
 public class A072299 extends Sequence1 {

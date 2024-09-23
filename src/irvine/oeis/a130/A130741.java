@@ -5,7 +5,7 @@ import irvine.oeis.a137.A137840;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A130741 4^(4^n) + 3.
+ * A130741 a(n) = 4^(4^n) + 3.
  * @author Georg Fischer
  */
 public class A130741 extends SimpleTransformSequence {

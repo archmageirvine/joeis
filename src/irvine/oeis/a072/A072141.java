@@ -39,6 +39,16 @@ public class A072141 extends Sequence1 {
       return mN.compareTo(state.mN);
     }
 
+    @Override
+    public boolean equals(final Object obj) {
+      return obj instanceof State && ((State) obj).mN.equals(mN);
+    }
+
+    @Override
+    public int hashCode() {
+      return mN.hashCode();
+    }
+
     private Set<State> children() {
       final HashSet<State> children = new HashSet<>();
       final int len = mComponents.size();

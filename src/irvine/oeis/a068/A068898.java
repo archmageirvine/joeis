@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A068898 Triangular numbers containing 2n digits in which the sum of the first n digits = that of the rest.
+ * A068898 Triangular numbers containing 2k digits in which the sum of the first k digits = that of the rest.
  * @author Sean A. Irvine
  */
 public class A068898 extends Sequence0 {

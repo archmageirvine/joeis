@@ -29,7 +29,7 @@ public class A071283 extends Sequence0 {
           return r4 == 1 || r4 == 3 || r4 == 4 ? get(n - 1, 3 * m / 5 + 1) : new Pair<>(2 * (m - 1) / 5, n);
         case 5:
           final int r5 = m % 6;
-          return r5 == 1 || r5 == 2 || r5 == 4 || r5 == 5 ? get(n - 1, 4 * m / 6 + 1) : new Pair<>(2 * (m - 1) / 6, n);
+          return r5 == 0 || r5 == 3 ? new Pair<>(2 * (m - 1) / 6, n) : get(n - 1, 4 * m / 6 + 1);
         case 6:
           final int r6 = m % 7;
           return r6 != 0 && r6 != 3 ? get(n - 1, 5 * m / 7 + 1) : new Pair<>(2 * (m - 1) / 7, n);

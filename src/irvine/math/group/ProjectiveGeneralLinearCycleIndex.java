@@ -32,6 +32,9 @@ public final class ProjectiveGeneralLinearCycleIndex {
           throw new UnsupportedOperationException("Cycle index PGL_" + n + " not available.");
         }
         final String s = r.readLine();
+        if (s == null) {
+          throw new UnsupportedOperationException("Cycle index PGL_" + n + " not available.");
+        }
         final int space = s.indexOf(' ');
         final Z order = new Z(s.substring(0, space));
         final CycleIndex ci = new CycleIndex("PGL_" + n + "(Z_2)");

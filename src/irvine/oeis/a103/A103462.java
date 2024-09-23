@@ -12,6 +12,6 @@ public class A103462 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A103462() {
-    super(0, 0, 0, (n, k) -> Z.valueOf(k).pow(n - k).add((n == k) ? 0 : 1));
+    super(0, 0, 0, (n, k) -> Z.valueOf(k).pow(n - k).add(n.equals(k) ? 0 : 1));
   }
 }

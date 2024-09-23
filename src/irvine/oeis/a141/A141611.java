@@ -5,7 +5,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A141611 A symmetrical triangle of coefficients read by rows: t(n,m)=(n - m + 1)*(m + 1)*binomial[n, m].
+ * A141611 Triangle read by rows: T(n, k) = (n-k+1)*(k+1)*binomial(n, k).
  * @author Georg Fischer
  */
 public class A141611 extends LambdaTriangle {

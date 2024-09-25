@@ -2423,3 +2423,5 @@ A072128 Number of pairs of complex Golay sequences of length n.
 A072187 Number of up-down involutions of length n.
 A072249 Related to lollipop graphs.
 A072250 Related to cyclotomic numbers of hypergraphs.
+A072332 Largest eigenvalue, rounded to the nearest integer, of a rank n matrix of 1..n^2 filled successively along antidiagonals (A069480).
+A072333 Largest eigenvalue, rounded to the nearest integer, of a rank n matrix of 1..n^2 filled successively along rows.

@@ -21,7 +21,7 @@ public class A024816 extends Sequence1 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return Functions.TRIANGULAR.z(n).subtract(Functions.SIGMA1.z(n));
+    return Functions.ANTISIGMA.z(n);
   }
 
   @Override

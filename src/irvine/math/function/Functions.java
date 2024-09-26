@@ -195,6 +195,8 @@ public final class Functions {
   public static final Function2D DIGIT_SORT_ASCENDING = new DigitSortAscending(); // =A004185(10,
   /** Sort the digits of a number into descending order. */
   public static final Function2D DIGIT_SORT_DESCENDING = new DigitSortDescending(); // =A004186(10,
+  /** Maximum digit in a number. */
+  public static final Function2D DIGIT_MAX = new DigitMax();
   /** Rotate right by one digit. */
   public static final Function2D ROTATE_RIGHT = new RotateRight();
   /** Multifactorial (including double factorial). */

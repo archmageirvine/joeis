@@ -14,7 +14,7 @@ public class A156753 extends FilterSequence {
   /** Construct the sequence. */
   public A156753() {
     super(1, new A000040(), v -> {
-      final long d = Functions.DIGIT_SORT_ASCENDING.z(v).mod(10);
+      final long d = Functions.DIGIT_MAX.l(v);
       return Functions.DIGIT_SUM.i(v) - d == d;
     });
   }

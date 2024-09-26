@@ -5,7 +5,7 @@ import irvine.oeis.a046.A046161;
 import irvine.oeis.triangle.ToeplitzTriangle;
 
 /**
- * A180956 Denominator in triangle T(n,k)=A180955/A180956 read by rows. A046161(A004736).
+ * A180956 Triangle read by rows T(n,k) = denominators of A180955/A180956.
  * @author Georg Fischer
  */
 public class A180956 extends ToeplitzTriangle {

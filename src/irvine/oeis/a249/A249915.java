@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A249915 Numbers n such that the decimal expansions of both n and n^2 have 2 as smallest digit and 6 as largest digit.
+ * A249915 Numbers k such that the decimal expansions of both k and k^2 have 2 as smallest digit and 6 as largest digit.
  * @author Georg Fischer
  */
 public class A249915 extends FilterNumberSequence {

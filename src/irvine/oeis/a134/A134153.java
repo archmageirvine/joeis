@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A134153 a(n) = 15n^2 + 9n + 1.
+ * A134153 a(n) = 15*n^2 + 9*n + 1.
  * @author Sean A. Irvine
  */
 public class A134153 extends LinearRecurrence {

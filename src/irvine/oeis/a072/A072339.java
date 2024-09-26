@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A072339.
+ * A072339 Any number n can be written (in two ways, one with m even and one with m odd) in the form n = 2^k_1 - 2^k_2 + 2^k_3 - ... + 2^k_m where the signs alternate and k_1 &gt; k_2 &gt; k_3 &gt; ... &gt;k_m &gt;= 0; sequence gives minimal value of m.
  * @author Sean A. Irvine
  */
 public class A072339 extends Sequence1 {

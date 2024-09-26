@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A072339.
+ * A072348 Number of primes whose decimal representation has the form rns where r and s are single digits.
  * @author Sean A. Irvine
  */
 public class A072348 extends Sequence0 {

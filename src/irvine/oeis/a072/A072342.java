@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072339.
+ * A072342 a(n) = the least natural number k such that k*reverse(n) + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A072342 extends Sequence1 {

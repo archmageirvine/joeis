@@ -2425,3 +2425,4 @@ A072249 Related to lollipop graphs.
 A072250 Related to cyclotomic numbers of hypergraphs.
 A072332 Largest eigenvalue, rounded to the nearest integer, of a rank n matrix of 1..n^2 filled successively along antidiagonals (A069480).
 A072333 Largest eigenvalue, rounded to the nearest integer, of a rank n matrix of 1..n^2 filled successively along rows.
+A072361 Number of vertically indecomposable distributive lattices on n nodes.

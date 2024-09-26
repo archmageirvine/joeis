@@ -6,7 +6,7 @@ import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 
 /**
- * A122433 Riordan array ((1+x)^2,x/(1+x)).
+ * A122433 Riordan array ((1 + x)^2, x/(1 + x)).
  *
  * @author Georg Fischer
  */

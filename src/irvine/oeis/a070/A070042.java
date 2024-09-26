@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.FilterSequence;
 
 /**
- * A070042 At these values of n the first, 2nd, 3rd, 4th and 5th cyclotomic polynomials all give prime numbers.
+ * A070042 At these values of k the 1st, 2nd, 3rd, 4th and 5th cyclotomic polynomials all give prime numbers.
  * @author Sean A. Irvine
  */
 public class A070042 extends FilterSequence {

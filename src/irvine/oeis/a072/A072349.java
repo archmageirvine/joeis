@@ -4,7 +4,7 @@ import irvine.oeis.InverseSequence;
 import irvine.oeis.a064.A064388;
 
 /**
- * A072339.
+ * A072349 a(n) = m such that A064388(m) = n, or 0 if no such m exists.
  * @author Sean A. Irvine
  */
 public class A072349 extends InverseSequence {

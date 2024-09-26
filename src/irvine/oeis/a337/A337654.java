@@ -7,7 +7,7 @@ import irvine.oeis.recur.HolonomicRecurrence;
 
 
 /**
- * A337654 G.f. = H(x)*(1+x^5)/(1-x^2-x^3-x^4) where H(x) = g.f. for A249665.
+ * A337654 Expansion of H(x)*(1+x^5)/(1-x^2-x^3-x^4) where H(x) = g.f. for A249665.
  * @author Georg Fischer
  */
 public class A337654 extends HolonomicRecurrence {

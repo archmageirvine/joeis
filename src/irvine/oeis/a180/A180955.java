@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001790;
 import irvine.oeis.triangle.ToeplitzTriangle;
 
 /**
- * A180955 Numerator in triangle T(n,k)=A180955/A180956 read by rows. A001790(A004736).
+ * A180955 Triangle read by rows T(n,k) = numerators of A180955/A180956.
  * @author Georg Fischer
  */
 public class A180955 extends ToeplitzTriangle {

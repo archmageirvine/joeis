@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A133061 5*p^5 - 3*p^3 - 2*p^2, where p = prime(n).
+ * A133061 a(n) = 5*p^5 - 3*p^3 - 2*p^2, where p = prime(n).
  * a(n)=(prime(n))^2*(5*prime(n)^3-3*prime(n)-2)
  * @author Georg Fischer
  */

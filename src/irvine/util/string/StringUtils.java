@@ -103,7 +103,8 @@ public final class StringUtils {
   }
 
   /**
-   * Print a dated message on standard output.
+   * Print a dated message to a stream.
+   * @param out stream to write to
    * @param message message to print
    */
   public static void message(final PrintStream out, final String message) {

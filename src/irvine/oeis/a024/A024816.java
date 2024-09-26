@@ -1,26 +1,32 @@
 package irvine.oeis.a024;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-import irvine.oeis.a000.A000203;
-import irvine.oeis.a000.A000217;
+import irvine.oeis.DirectSequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024816 Antisigma(n): Sum of the numbers less than n that do not divide n.
  * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A024816 extends A000217 {
+public class A024816 extends Sequence1 implements DirectSequence {
 
-  private final Sequence mSigma = new A000203();
-
-  /** Construct the sequence. */
-  public A024816() {
-    super(1);
-    super.next();
-  }
+  private int mN = 0;
 
   @Override
   public Z next() {
-    return super.next().subtract(mSigma.next());
+    return a(Z.valueOf(++mN));
   }
+
+  @Override
+  public Z a(final Z n) {
+    return Functions.TRIANGULAR.z(n).subtract(Functions.SIGMA1.z(n));
+  }
+
+  @Override
+  public Z a(final int n) {
+    return a(Z.valueOf(n));
+  }
+
 }

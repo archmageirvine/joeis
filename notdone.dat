@@ -2426,3 +2426,4 @@ A072250 Related to cyclotomic numbers of hypergraphs.
 A072332 Largest eigenvalue, rounded to the nearest integer, of a rank n matrix of 1..n^2 filled successively along antidiagonals (A069480).
 A072333 Largest eigenvalue, rounded to the nearest integer, of a rank n matrix of 1..n^2 filled successively along rows.
 A072361 Number of vertically indecomposable distributive lattices on n nodes.
+A072377 Number of pairs of orthogonal Latin squares of order n

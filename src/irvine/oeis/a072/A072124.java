@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
 import irvine.util.array.DynamicIntArray;
 import irvine.util.string.StringUtils;
 
@@ -12,19 +12,25 @@ import irvine.util.string.StringUtils;
  * A072124 a(n)-th factorial is the smallest factorial containing exactly n 1's, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
-public class A072124 extends Sequence1 {
+public class A072124 extends AbstractSequence {
 
   private static final long HEURISTIC = 20;
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final DynamicIntArray mCounts = new DynamicIntArray();
   private final HashSet<Integer> mReportedAsZero = new HashSet<>(); // used to detect heuristic failures
   private final int mDigit;
-  private int mN = 0;
+  private int mN;
   private int mC = 0;
   private Z mF = Z.ONE;
 
-  protected A072124(final int digit) {
+  protected A072124(final int offset, final int digit) {
+    super(offset);
     mDigit = digit;
+    mN = offset - 1;
+  }
+
+  protected A072124(final int digit) {
+    this(1, digit);
   }
 
   /** Construct the sequence. */

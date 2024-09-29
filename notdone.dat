@@ -2427,3 +2427,4 @@ A072332 Largest eigenvalue, rounded to the nearest integer, of a rank n matrix o
 A072333 Largest eigenvalue, rounded to the nearest integer, of a rank n matrix of 1..n^2 filled successively along rows.
 A072361 Number of vertically indecomposable distributive lattices on n nodes.
 A072377 Number of pairs of orthogonal Latin squares of order n
+A072407 Canonically 2-indecomposable posets with n antichains

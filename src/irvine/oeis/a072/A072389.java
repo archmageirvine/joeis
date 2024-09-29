@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A056964.
+ * A072389 Numbers of the form x*(x+1) * y*(y+1) ("bipronics") with x and y nonnegative integers.
  * @author Sean A. Irvine
  */
 public class A072389 extends Sequence1 {

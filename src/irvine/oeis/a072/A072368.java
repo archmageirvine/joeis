@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072348.
+ * A072368 Minimal total volume of n bricks with integer sides, all sides being different. Lowest value of sum of products of triples p*q*r chosen from [1,3n].
  * @author Sean A. Irvine
  */
 public class A072368 extends Sequence1 {

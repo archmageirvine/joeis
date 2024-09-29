@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A056964.
+ * A072392 Numbers n such that reverse(n) = phi(n) (mod n).
  * @author Sean A. Irvine
  */
 public class A072392 extends Sequence1 {

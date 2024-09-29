@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A056964.
+ * A072406 Number of values of k for which C(n,k)-C(n-2,k-1) is odd.
  * @author Sean A. Irvine
  */
 public class A072406 extends Sequence0 {

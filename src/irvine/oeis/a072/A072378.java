@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072348.
+ * A072378 Numbers n such that 12*n divides F(12*n), where F(m) is the m-th Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A072378 extends Sequence1 {

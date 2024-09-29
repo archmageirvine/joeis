@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A341300 a(n) = n!+(n-1)!+(n-2)!+(n-3)!+n-3.
+ * A341300 a(n) = n! + (n-1)! + (n-2)! + (n-3)! + n - 3.
  * @author Georg Fischer
  */
 public class A341300 extends LambdaSequence {

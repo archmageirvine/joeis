@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A375837.
+ * A375835 Triangle read by rows: T(n, k) is the number of chains of length k in the poset of permutations of an n-set.
  * @author Sean A. Irvine
  */
 public class A375835 extends Sequence0 {

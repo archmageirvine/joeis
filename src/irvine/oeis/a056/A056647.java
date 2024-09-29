@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A056647 Largest unitary square divisor of central binomial coefficient.
+ * A056647 a(n) = A056623(A001405(n)).
  * @author Sean A. Irvine
  */
 public class A056647 extends A056057 {

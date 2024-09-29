@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A201301 Primes of the form 9n^3+7.
+ * A201301 Primes of the form 9*k^3+7.
  * @author Georg Fischer
  */
 public class A201301 extends PrimeSubsequence {

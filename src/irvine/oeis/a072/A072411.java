@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A056964.
+ * A072411 LCM of exponents in prime factorization of n, a(1) = 1.
  * @author Sean A. Irvine
  */
 public class A072411 extends Sequence1 {

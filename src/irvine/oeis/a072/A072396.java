@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A056964.
+ * A072396 Index of smallest Fibonacci number with n prime factors when counted with multiplicity.
  * @author Sean A. Irvine
  */
 public class A072396 extends Sequence1 {

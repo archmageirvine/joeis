@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a019.A019554;
 
 /**
- * A056964.
+ * A072391 D2(n,n) = Sum_{1&lt;=k&lt;=n} (d_n(k^2)), where d_a(k^2)=card{d: d|k and 1&lt;=d&lt;=a} for real a.
  * @author Sean A. Irvine
  */
 public class A072391 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a259;
 import irvine.oeis.transform.EtaProductSequence;
 
 /**
- * A259896 Expansion of psi(x) * psi(x^6) in powers of x where phi() is a Ramanujan theta function.
+ * A259896 Expansion of psi(x) * psi(x^6) in powers of x where psi() is a Ramanujan theta function.
  * Eta product <code>psi(q) * psi(q^6)</code>
  * @author Georg Fischer
  */

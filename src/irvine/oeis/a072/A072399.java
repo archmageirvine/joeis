@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A056964.
+ * A072399 Denominator of best approximation to Pi with denominator &lt;= 10^n.
  * @author Sean A. Irvine
  */
 public class A072399 extends A072398 {

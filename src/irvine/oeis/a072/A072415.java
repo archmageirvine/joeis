@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005277;
 
 /**
- * A056964.
+ * A072415 a(1) = 2; a(n) = a(n-1)-th even nontotient number.
  * @author Sean A. Irvine
  */
 public class A072415 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000217;
 
 /**
- * A056964.
+ * A072387 Triangular number x such that x + reverse of x is a prime.
  * @author Sean A. Irvine
  */
 public class A072387 extends FilterSequence {

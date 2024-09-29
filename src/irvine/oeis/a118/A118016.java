@@ -7,7 +7,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a016.A016031;
 
 /**
- * A118016 Integers of the form 2^n/(n-1).
+ * A118016 Integers of the form 2^k/(k-1).
  * @author Georg Fischer
  */
 public class A118016 extends Sequence2 {

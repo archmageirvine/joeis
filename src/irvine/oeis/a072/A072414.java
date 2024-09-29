@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A056964.
+ * A072414 Non-Achilles numbers for which LCM of the exponents in the prime factorization of n is not equal to the maximum of the same exponents.
  * @author Sean A. Irvine
  */
 public class A072414 extends Sequence1 {

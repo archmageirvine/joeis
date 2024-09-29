@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A295009 Numbers kn such that the largest digit of k^2 is 9.
+ * A295009 Numbers k such that the largest digit of k^2 is 9.
  * @author Georg Fischer
  */
 public class A295009 extends FilterNumberSequence {

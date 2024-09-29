@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a216.A216604;
 
 /**
- * A346503 G.f. A(x) satisfies: A(x) = 1 + x^3 * A(x)^2 / (1 - x).
+ * A346503 G.f. A(x) satisfies A(x) = 1 + x^3 * A(x)^2 / (1 - x).
  * @author Sean A. Irvine
  */
 public class A346503 extends DifferenceSequence {

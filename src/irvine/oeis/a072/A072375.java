@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.math.z.Z;
 
 /**
- * A072348.
+ * A072375 Number of cubefree numbers &lt;= n which are nonsquares having exactly one square in their factorization.
  * @author Sean A. Irvine
  */
 public class A072375 extends A072357 {

@@ -4,7 +4,7 @@ package irvine.oeis.a120;
 import irvine.oeis.prime.PrimeConditionListSequence;
 
 /**
- * A120222 Numbers n such that a+n and a*n+1 are prime, case a=6.
+ * A120222 Numbers k such that 6+k and 6*k+1 are prime.
  * @author Georg Fischer
  */
 public class A120222 extends PrimeConditionListSequence {

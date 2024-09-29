@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072348.
+ * A072370 Numbers n such that tau(n) = log(n) + 2 * EulerGamma - 1 (rounded off), where tau(n) denotes the number of divisors of n and EulerGamma denotes the Euler-Mascheroni constant (0.5 is rounded to 0).
  * @author Sean A. Irvine
  */
 public class A072370 extends Sequence1 {

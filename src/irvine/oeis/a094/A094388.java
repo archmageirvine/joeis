@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A094388 Expansion of (1- 2x - x^2)/((1-x)*(1-3x)).
+ * A094388 Expansion of (1- 2*x - x^2)/((1-x)*(1-3*x)).
  * @author Georg Fischer
  */
 public class A094388 extends HolonomicRecurrence {

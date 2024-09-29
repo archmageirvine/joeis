@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A056964.
+ * A072382 Primes which can be represented as the sum of a number and its reverse.
  * @author Sean A. Irvine
  */
 public class A072382 extends Sequence1 {

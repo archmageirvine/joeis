@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A056964.
+ * A072413 Numbers k such that the LCM of exponents in the prime factorization of k does not equal the product of the exponents.
  * @author Sean A. Irvine
  */
 public class A072413 extends Sequence1 {

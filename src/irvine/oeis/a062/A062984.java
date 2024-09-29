@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A062984 a(n) = M(C(n)), where M(n) is Mertens&apos;s function (A002321) and C(n) is Chowla&apos;s function (A048050).
+ * A062984 a(n) = M(C(n)), where M(n) is Mertens's function (A002321) and C(n) is Chowla's function (A048050).
  * @author Georg Fischer
  */
 public class A062984 extends LambdaSequence {

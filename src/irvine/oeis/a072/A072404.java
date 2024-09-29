@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A056964.
+ * A072404 Denominator of the Reingold-Tarjan sequence, numerator=A072403.
  * @author Sean A. Irvine
  */
 public class A072404 extends A072403 {

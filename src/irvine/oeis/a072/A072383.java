@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000290;
 
 /**
- * A056964.
+ * A072383 Primes which can be represented as the sum of a square and its reverse.
  * @author Sean A. Irvine
  */
 public class A072383 extends Sequence1 {

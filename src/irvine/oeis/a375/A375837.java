@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A375837.
+ * A375837 allocated for Rajesh Kumar Mohapatra.
  * @author Sean A. Irvine
  */
 public class A375837 extends Sequence0 {

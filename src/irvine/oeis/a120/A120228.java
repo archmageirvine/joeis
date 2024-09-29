@@ -4,7 +4,7 @@ package irvine.oeis.a120;
 import irvine.oeis.prime.PrimeConditionListSequence;
 
 /**
- * A120228 Numbers n such that a+n and a*n+1 are prime, case a=8.
+ * A120228 Numbers k such that 8+k and 8*k+1 are prime.
  * @author Georg Fischer
  */
 public class A120228 extends PrimeConditionListSequence {

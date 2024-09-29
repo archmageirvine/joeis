@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A056648 Number of unitary square divisors of central binomial coefficient.
+ * A056648 a(n) = A034444(A056647(n)).
  * @author Sean A. Irvine
  */
 public class A056648 extends A056057 {

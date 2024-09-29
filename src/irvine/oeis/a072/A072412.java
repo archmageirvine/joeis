@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A056964.
+ * A072412 Numbers k such that the LCM of exponents in the prime factorization of k does not equal the largest exponent.
  * @author Sean A. Irvine
  */
 public class A072412 extends Sequence1 {

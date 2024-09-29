@@ -5,7 +5,7 @@ package irvine.oeis.a129;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A129923 (n+5)! / 5.
+ * A129923 a(n) = (n+5)! / 5.
  * @author Georg Fischer
  */
 public class A129923 extends HolonomicRecurrence {

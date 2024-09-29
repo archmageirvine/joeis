@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
- * A072240.
+ * A072419 Smallest factorial containing exactly n 0's, or 0 if no such factorial exists.
  * @author Sean A. Irvine
  */
 public class A072419 extends A072124 {

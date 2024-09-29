@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A056964.
+ * A072398 Numerator of best approximation to Pi with denominator &lt;= 10^n.
  * @author Sean A. Irvine
  */
 public class A072398 extends Sequence0 {

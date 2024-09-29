@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000578;
 
 /**
- * A056964.
+ * A072384 Primes which can be represented as the sum of a cube and its reverse.
  * @author Sean A. Irvine
  */
 public class A072384 extends Sequence1 {

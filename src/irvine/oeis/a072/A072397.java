@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
- * A056964.
+ * A072397 Smallest Fibonacci number with n prime factors when counted with multiplicity.
  * @author Sean A. Irvine
  */
 public class A072397 extends A072396 {

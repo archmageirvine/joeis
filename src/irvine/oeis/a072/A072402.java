@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A056964.
+ * A072402 a(n) = 6^n * Sum_{k&gt;=1} Gamma(n + k/6)/ (k! * Gamma(k/6) * e).
  * @author Sean A. Irvine
  */
 public class A072402 extends Sequence1 {

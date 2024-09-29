@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a029.A029837;
 
 /**
- * A056964.
+ * A072403 Numerator of the Reingold-Tarjan sequence, denominator=A072404.
  * @author Sean A. Irvine
  */
 public class A072403 extends Sequence1 {

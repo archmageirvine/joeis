@@ -12,7 +12,6 @@ final class Mod {
   /**
    * Compute this integer modulo another integer.  The sign of
    * result is the sign of the modulus unless the result is 0.
-   *
    * @param a number
    * @param n modulus
    * @return <code>this%n</code>

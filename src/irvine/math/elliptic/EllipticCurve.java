@@ -113,7 +113,7 @@ public class EllipticCurve extends AbstractGroup<EllipticCurvePoint> {
     mC4 = new Q(c4z);
     final Z c6z = c6.divide(u4.multiply(u2));
     mC6 = new Q(c6z);
-    mB2 = new Q(c6z.mod(12)).negate();
+    mB2 = new Q(c6z.remainder(Z.valueOf(12))).negate();
     mB4 = mB2.square().subtract(c4z).divide(24);
     mB6 = mB2.multiply(mB4).multiply(36).subtract(mB2.pow(3)).subtract(c6z).divide(216);
     mA1 = mB2.toZ().isEven() ? Q.ZERO : Q.ONE;

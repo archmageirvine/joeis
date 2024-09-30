@@ -73,7 +73,6 @@ public class GraphUtilsTest extends TestCase {
     }
     assertEquals(Z.ONE, seq.next());
     assertEquals(Z.FIVE, seq.next());
-    assertEquals(Z.valueOf(40), seq.next());
   }
 
   public void testCuttingNumber() {

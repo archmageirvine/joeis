@@ -673,20 +673,18 @@ public class Z extends Number implements Comparable<Z> {
   }
 
   /**
-   * Compute this integer modulo another integer.  The sign of
-   * result is the sign of the modulus unless the result is 0.
+   * Compute this integer modulo another integer returning a nonnegative result.
    * @param n modulus
    * @return <code>this%n</code>
    * @exception ArithmeticException if <code>n</code> is 0.
    */
   public long mod(final long n) {
     divide(n);
-    return mAuxiliary;
+    return n > 0 && mAuxiliary < 0 ? n - mAuxiliary : mAuxiliary;
   }
 
   /**
-   * Compute this integer modulo another integer.  The sign of
-   * result is the sign of the modulus unless the result is 0.
+   * Compute this integer modulo another integer returning a nonnegative result.
    * @param n modulus
    * @return <code>this%n</code>
    * @exception ArithmeticException if <code>n</code> is 0.
@@ -696,13 +694,14 @@ public class Z extends Number implements Comparable<Z> {
   }
 
   /**
-   * Compute this integer modulo a long.
+   * Compute this integer modulo another value returning a nonnegative result.
    * @param n modulus
    * @return <code>this%n</code>
    * @exception ArithmeticException if <code>n</code> is 0.
    */
   public Z mod(final Z n) {
-    return Mod.mod(this, n);
+    final Z mod = Mod.mod(this, n);
+    return n.signum() > 0 && mod.signum() < 0 ? n.subtract(mod) : mod;
   }
 
   /**

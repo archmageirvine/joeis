@@ -18,7 +18,7 @@ public class A065796 extends Sequence1 {
     Z m = mSquare.next();
     long sum = 0;
     while (!m.isZero()) {
-      sum += m.mod(10);
+      sum += m.remainder(Z.TEN).longValue();
       m = m.divide(10).negate();
     }
     return Z.valueOf(sum);

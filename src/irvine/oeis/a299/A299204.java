@@ -14,7 +14,7 @@ public class A299204 extends SingleTransformSequence {
   /** Construct the sequence. */
   public A299204() {
     super(2, (term, n) -> {
-      final Z md = term.modZ(n - 1);
+      final Z md = term.remainder(Z.valueOf(n - 1));
       return md.compareTo(Z.ZERO) < 0 ? md.add(n - 1) : md;
     }, "", new A000594());
   }

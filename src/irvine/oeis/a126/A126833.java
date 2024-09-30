@@ -11,10 +11,12 @@ import irvine.oeis.transform.SimpleTransformSequence;
  */
 public class A126833 extends SimpleTransformSequence {
 
+  private static final Z Z25 = Z.valueOf(25);
+
   /** Construct the sequence. */
   public A126833() {
     super(1, new A000594(), v -> {
-      final Z result = v.modZ(25);
+      final Z result = v.remainder(Z25);
       return (!result.isZero() && v.compareTo(Z.ZERO) < 0) ? result.add(25) : result;
     });
   }

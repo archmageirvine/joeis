@@ -6,16 +6,16 @@ import java.util.Map;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.util.Pair;
 
 /**
  * A067968 Number of binary arrangements on n X n array without adjacent three 1's.
  * @author Sean A. Irvine
  */
-public class A067968 extends Sequence1 {
+public class A067968 extends Sequence0 {
 
-  private int mN = 0;
+  private int mN = -1;
 
   private boolean isNoThreeAdjacent(final Pair<Long, Long> bits, final long c) {
     // We already know there are not three consecutive bits in a column anywhere

@@ -14,7 +14,7 @@ public class A126832 extends SimpleTransformSequence {
   /** Construct the sequence. */
   public A126832() {
     super(1, new A000594(), v -> {
-      final Z result = v.modZ(5);
+      final Z result = v.remainder(Z.FIVE);
       return (!result.isZero() && v.compareTo(Z.ZERO) < 0) ? result.add(5) : result;
     });
   }

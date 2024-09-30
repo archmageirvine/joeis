@@ -2428,3 +2428,7 @@ A072333 Largest eigenvalue, rounded to the nearest integer, of a rank n matrix o
 A072361 Number of vertically indecomposable distributive lattices on n nodes.
 A072377 Number of pairs of orthogonal Latin squares of order n
 A072407 Canonically 2-indecomposable posets with n antichains
+A072421 The p-est sequence is similar to the Aronson sequence except that instead of the generating sentence beginning with T, it begins with P and instead of being in English it is in Latin.
+A072422 The n-est sequence is similar to the Aronson sequence except that instead of the generating sentence beginning with T, it begins with N and instead of being in English it is in Latin.
+A072423 The t-est sequence is similar to the Aronson sequence except that instead of being in English it is in Latin
+A072426 Numbers whose Hebrew name begin with the letter "Shin".

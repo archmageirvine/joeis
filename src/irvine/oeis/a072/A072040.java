@@ -15,7 +15,7 @@ public class A072040 extends Sequence1 {
 
   private final TreeMap<Long, Integer> mA = new TreeMap<>();
   private final int mTarget;
-  private long mN = 1;
+  private long mN = 0;
 
   protected A072040(final int target) {
     mTarget = target;

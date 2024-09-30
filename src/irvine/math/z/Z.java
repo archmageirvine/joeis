@@ -674,7 +674,7 @@ public class Z extends Number implements Comparable<Z> {
 
   /**
    * Compute this integer modulo another integer.  The sign of
-   * result is the sign of the moduli unless the result is 0.
+   * result is the sign of the modulus unless the result is 0.
    * @param n modulus
    * @return <code>this%n</code>
    * @exception ArithmeticException if <code>n</code> is 0.
@@ -686,7 +686,7 @@ public class Z extends Number implements Comparable<Z> {
 
   /**
    * Compute this integer modulo another integer.  The sign of
-   * result is the sign of the moduli unless the result is 0.
+   * result is the sign of the modulus unless the result is 0.
    * @param n modulus
    * @return <code>this%n</code>
    * @exception ArithmeticException if <code>n</code> is 0.

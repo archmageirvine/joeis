@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000594;
 
 /**
- * A079392 Numbers n such that A000594(n) &gt; 0 (Ramanujan&apos;s tau function is positive).
+ * A079392 Numbers n such that A000594(n) &gt; 0 (Ramanujan's tau function is positive).
  * @author Georg Fischer
  */
 public class A079392 extends FilterPositionSequence {

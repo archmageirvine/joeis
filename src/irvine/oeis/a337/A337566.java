@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A337566 a(n) is the number of possible decompositions of the polynomial n * (x + x^2 + ... + x^q), where q &gt; 1, into a sum of k polynomials, not necessarily all different; each of these polynomials is to be of the form b_1 * x + b_2 * x^2 + ... + b_q * x^q where e
+ * A337566 a(n) is the number of possible decompositions of the polynomial n * (x + x^2 + ... + x^q), where q &gt; 1, into a sum of k polynomials, not necessarily all different; each of these polynomials is to be of the form b_1 * x + b_2 * x^2 + ... + b_q * x^q where each b_i is one of the numbers 1, 2, 3, ..., q and no two b_i are equal.
  * @author Georg Fischer
  */
 public class A337566 extends LambdaSequence {

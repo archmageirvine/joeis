@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072420 This sequence lists the "toscodicity" of the integers, the minimum number of steps needed to transform the integer into 153 (which happens to be the sum of the cube of its digits, the sum of the first 17 integers and fishily "happens" to be the number of fish mentioned in John 21:10) by the TOSCOD (triple or sum cubes of digits) operator.
+ * A072420 Minimum number of steps needed to transform n into 153 where each step is either tripling or taking the sum of cubes of digits.
  * @author Sean A. Irvine
  */
 public class A072420 extends Sequence1 {

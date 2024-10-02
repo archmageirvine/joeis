@@ -4,7 +4,7 @@ package irvine.oeis.a299;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A299205 Numbers k such that k-1 divides tau(k), where tau(k)=A000594(k) is Ramanujan&apos;s tau function.
+ * A299205 Numbers k such that k-1 divides tau(k), where tau(k)=A000594(k) is Ramanujan's tau function.
  * @author Georg Fischer
  */
 public class A299205 extends FilterPositionSequence {

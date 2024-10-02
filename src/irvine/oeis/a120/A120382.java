@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a060.A060461;
 
 /**
- * A120382 Even numbers n such that 3*n-1 and 3*n+1 are not prime.
+ * A120382 Even numbers k such that 3*k-1 and 3*k+1 are not prime.
  * @author Georg Fischer
  */
 public class A120382 extends AbstractSequence {

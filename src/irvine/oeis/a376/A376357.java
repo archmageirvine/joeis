@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a007.A007961;
 
 /**
- * A376357 Name?
+ * A376357 Positions of numbers in A007961 that end in 0.
  * @author Georg Fischer
  */
 public class A376357 extends FilterPositionSequence {

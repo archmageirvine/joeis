@@ -5,7 +5,7 @@ import irvine.oeis.a094.A094587;
 import irvine.oeis.triangle.TruncatedTriangle;
 
 /**
- * A173333 Triangle read by rows: T(n,k) = n! / k!, 1&lt;=k&lt;=n.
+ * A173333 Triangle read by rows: T(n, k) = n! / k!, 1 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A173333 extends TruncatedTriangle {

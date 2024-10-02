@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A376482 a(n) = phi( 2^(2*n) + 2^n + 1 ) / (6*n), where phi() is Euler&apos;s totient function (A000010).
+ * A376482 a(n) = phi( 2^(2*n) + 2^n + 1 ) / (6*n), where phi() is Euler's totient function (A000010).
  * @author Georg Fischer
  */
 public class A376482 extends LambdaSequence {

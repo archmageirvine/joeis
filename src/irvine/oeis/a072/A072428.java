@@ -1,7 +1,7 @@
 package irvine.oeis.a072;
 
 /**
- * A072427 Numbers n for which there is a unique k such that n = k + reverse(k).
+ * A072428 Numbers n for which there are exactly four k such that n = k + reverse(k).
  * @author Sean A. Irvine
  */
 public class A072428 extends A072040 {

@@ -14,7 +14,7 @@ import irvine.oeis.Sequence0;
  */
 public class A072446 extends Sequence0 {
 
-  private int mN = -1;
+  protected int mN = -1;
   private int mLimit = 0;
   private long mCount = 0;
 
@@ -34,9 +34,15 @@ public class A072446 extends Sequence0 {
 //    return true;
 //  }
 
+  protected boolean accept(final Set<Integer> ps) {
+    return true;
+  }
+
   private void search(final Set<Integer> ps, final int bits, final int s) {
     if (bits > mN) {
-      ++mCount;
+      if (accept(ps)) {
+        ++mCount;
+      }
       return;
     }
     for (int t = s; t < mLimit; t = Functions.SWIZZLE.i(t)) {

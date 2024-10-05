@@ -68,7 +68,7 @@ public class EtaProductSequence extends AbstractSequence {
    * Configure the class by computing the period for the Euler transform.
    */
   protected void configure() {
-    final String[] pairs = mEPSig.replaceAll("[\\[\\]]", "").split("[;/|]"); // pair separator may be ";", "/" or "|"
+    final String[] pairs = mEPSig.replaceAll("[\\[\\] ]", "").split("[;/|]"); // pair separator may be ";", "/" or "|"
     final int noPairs = pairs.length;
     mQpowers = new int[noPairs];
     mEpowers = new int[noPairs];

@@ -1,32 +1,22 @@
 package irvine.oeis.a013;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.AbstractSequence;
+import irvine.oeis.LambdaSequence;
 
 /**
  * A013974 Eisenstein series E_10(q) (alternate convention E_5(q)).
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A013974 extends AbstractSequence {
+public class A013974 extends LambdaSequence {
 
-  /**
-   * Constructor with offset.
-   * @param offset first index
-   */
   protected A013974(final int offset) {
-    super(offset);
+    super(0, n -> (n == 0) ? Z.ONE : Z.valueOf(-264).multiply(Functions.SIGMA.z(9, n)));
+    setOffset(offset);
   }
 
   /** Construct the sequence. */
   public A013974() {
-    super(0);
-  }
-
-  private long mN = -1;
-
-  @Override
-  public Z next() {
-    return ++mN == 0 ? Z.ONE : Jaguar.factor(mN).sigma(9).multiply(-264);
+    this(0);
   }
 }

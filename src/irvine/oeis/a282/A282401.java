@@ -6,13 +6,13 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A282356 Eisenstein series E_26(q) (alternate convention E_13(q)), multiplied by 657931.
+ * A282401 Eisenstein series E_28(q) (alternate convention E_14(q)), multiplied by 3392780147.
  * @author Georg Fischer
  */
-public class A282356 extends LambdaSequence {
+public class A282401 extends LambdaSequence {
 
   /** Construct the sequence. */
-  public A282356() {
-    super(0, n -> (n == 0) ? Z.valueOf(657931L) : Z.valueOf(-24).multiply(Functions.SIGMA.z(25, n)));
+  public A282401() {
+    super(0, n -> (n == 0) ? Z.valueOf(3392780147L) : Z.valueOf(6960).multiply(Functions.SIGMA.z(27, n)));
   }
 }

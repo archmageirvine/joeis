@@ -13,15 +13,18 @@ public class A072106 extends Sequence1 {
 
   private long mN = 0;
 
-  @Override
-  public Z next() {
-    ++mN;
+  protected long compute(final long n) {
     long cnt = 0;
-    for (long k = 1; k < mN; ++k) {
-      if (Functions.GCD.l(mN, k) == 1 && InverseEuler.inversePhi(Z.valueOf(k)).isEmpty()) {
+    for (long k = 1; k < n; ++k) {
+      if (Functions.GCD.l(n, k) == 1 && InverseEuler.inversePhi(Z.valueOf(k)).isEmpty()) {
         ++cnt;
       }
     }
-    return Z.valueOf(cnt);
+    return cnt;
+  }
+
+  @Override
+  public Z next() {
+    return Z.valueOf(compute(++mN));
   }
 }

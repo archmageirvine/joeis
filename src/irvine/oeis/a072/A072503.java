@@ -10,34 +10,30 @@ import irvine.util.Permutation;
  */
 public class A072503 extends Sequence3 {
 
-  private int mN = 2; // Change this value for different counts
+  private int mN = 2;
 
-  private int e(final int[] e, final int n2, final int k) {
-    if (k == 0) {
-      return 1;
-    }
-    if (k == n2 - 1) {
-      return n2;
-    }
-    return e[k] + 2;
-  }
-
-  private boolean isValidLacing(final int[] e, final int n2) {
-    for (int k = 1; k < n2 - 1; ++k) {
+  private boolean isValidLacing(final int[] p) {
+    // p is the middle part of the permutation (with 1 subtracted from each element)
+    final int n2m = 2 * mN - 1;
+    int a = 0;
+    for (int k = 1; k < n2m; ++k) {
+      final int b = p[k - 1] + 1;
+      final int c = k == p.length ? n2m : p[k] + 1;
       // Check for horizontal connections
-      if (e[k] + e[k - 1] == n2 + 1 || e[k] + e[k + 1] == n2 + 1) {
+      if (b + a == n2m || b + c == n2m) {
         return false;
       }
-      // Check the necessary conditions
-      if (e[k] <= mN) {
-        if (e[k - 1] <= mN && e[k + 1] <= mN) {
+      // Check the other necessary conditions
+      if (b < mN) {
+        if (a < mN && c < mN) {
           return false;
         }
       } else {
-        if (e[k - 1] > mN && e[k + 1] > mN) {
+        if (a >= mN && c >= mN) {
           return false;
         }
       }
+      a = b;
     }
     return true;
   }
@@ -45,22 +41,11 @@ public class A072503 extends Sequence3 {
   @Override
   public Z next() {
     ++mN;
-    final int n2 = 2 * mN;
-    final int m = n2 - 2;
-    final int[] e = new int[n2];
-    // Fixed start and end
-    e[0] = 1;
-    e[n2 - 1] = n2;
-
     long cnt = 0;
-    final Permutation perm = new Permutation(m);
+    final Permutation perm = new Permutation(2 * mN - 2);
     int[] p;
     while ((p = perm.next()) != null) {
-      // Insert permuted path between fixed start and end
-      for (int i = 0; i < m; i++) {
-        e[i + 1] = p[i] + 2;
-      }
-      if (isValidLacing(e, n2)) {
+      if (isValidLacing(p)) {
         cnt++;
       }
     }

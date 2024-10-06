@@ -2,7 +2,6 @@ package irvine.oeis.a072;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
-import irvine.util.Permutation;
 
 /**
  * A072106.
@@ -10,46 +9,51 @@ import irvine.util.Permutation;
  */
 public class A072503 extends Sequence3 {
 
-  private int mN = 2;
+  // In this implementation the top pair of eyelets is implicit.
+  // We assume we start at one of these implicit eyelets and must finish at the other.
+  // Thus, our n is one less than the description of the problem, and we number
+  // our eyelets 0 to n-1 inclusive.
+  // Rather than generate each full permutation in turn, rejecting those that
+  // fail to meet lacing requirements, we recursively construct lacings checking
+  // they remain valid at each step.
 
-  private boolean isValidLacing(final int[] p) {
-    // p is the middle part of the permutation (with 1 subtracted from each element)
-    final int n2m = 2 * mN - 1;
-    int a = 0;
-    for (int k = 1; k < n2m; ++k) {
-      final int b = p[k - 1] + 1;
-      final int c = k == p.length ? n2m : p[k] + 1;
-      // Check for horizontal connections
-      if (b + a == n2m || b + c == n2m) {
-        return false;
+  private int mN = 1;
+  private int mM;
+  private long mCount = 0;
+
+  private void search(final int currentEyelet, final int numUsed, final int usedSet, final int sides) {
+    // sides is a 2-bit number indicating the two most recently used sides
+    if (numUsed > mM) {
+      // We have used every eyelet, remains to check we can exit
+      if (sides != 3) {
+        ++mCount;
       }
-      // Check the other necessary conditions
-      if (b < mN) {
-        if (a < mN && c < mN) {
-          return false;
-        }
-      } else {
-        if (a >= mN && c >= mN) {
-          return false;
-        }
-      }
-      a = b;
+      return;
     }
-    return true;
+    for (int e = 0, bit = 1; e <= mM; ++e, bit <<= 1) {
+      if ((usedSet & bit) == 0 && e != mM - currentEyelet) {
+        if (e < mN) {
+          if (sides != 0) {
+            // Valid to use the left side
+            search(e, numUsed + 1, usedSet | bit, (sides << 1) & 3);
+          }
+        } else {
+          if (sides != 3) {
+            // Valid to use the right side
+            search(e, numUsed + 1, usedSet | bit, ((sides << 1) & 3) | 1);
+          }
+        }
+      }
+    }
   }
 
   @Override
   public Z next() {
     ++mN;
-    long cnt = 0;
-    final Permutation perm = new Permutation(2 * mN - 2);
-    int[] p;
-    while ((p = perm.next()) != null) {
-      if (isValidLacing(p)) {
-        cnt++;
-      }
-    }
-    return Z.valueOf(cnt / 2);
+    mM = 2 * mN - 1; // precompute value useful in search
+    mCount = 0;
+    search(-1, 0, 0, 0b10); // start with "10" as sides used
+    return Z.valueOf(mCount / 2);
   }
 }
 

@@ -9,8 +9,18 @@ import irvine.oeis.Sequence1;
  */
 public class A033819 extends Sequence1 {
 
+  private final long mMorph;
   private long mMod = 10;
   private long mN = -1;
+
+  protected A033819(final long morph) {
+    mMorph = morph;
+  }
+
+  /** Construct the sequence. */
+  public A033819() {
+    this(3);
+  }
 
   @Override
   public Z next() {
@@ -18,7 +28,7 @@ public class A033819 extends Sequence1 {
       if (++mN == mMod) {
         mMod *= 10;
       }
-      if (Z.valueOf(mN).pow(3).mod(mMod) == mN) {
+      if (Z.valueOf(mN).pow(mMorph).mod(mMod) == mN) {
         return Z.valueOf(mN);
       }
     }

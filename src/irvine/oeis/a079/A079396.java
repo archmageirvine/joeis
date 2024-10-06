@@ -6,7 +6,7 @@ import irvine.oeis.a076.A076847;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A079396 Ramanujan&apos;s tau function squared applied to primes.
+ * A079396 Ramanujan's tau function squared applied to primes.
  * @author Georg Fischer
  */
 public class A079396 extends SingleTransformSequence {

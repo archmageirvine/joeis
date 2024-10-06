@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001035;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A266875 Number of partially ordered sets (&quot;posets&quot;) with n labeled elements, modulo n.
+ * A266875 Number of partially ordered sets ("posets") with n labeled elements, modulo n.
  * @author Georg Fischer
  */
 public class A266875 extends SingleTransformSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072106.
+ * A072483 Triangle read by rows: The n-th row contains the smallest n increasing numbers larger than the last term of the previous row, which contain the string of digits of n.
  * @author Sean A. Irvine
  */
 public class A072483 extends Sequence1 {

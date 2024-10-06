@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000796;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A072444.
+ * A072448 Squares of the terms of the decimal expansion of Pi.
  * @author Sean A. Irvine
  */
 public class A072448 extends SimpleTransformSequence {

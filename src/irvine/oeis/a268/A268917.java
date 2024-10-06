@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.oeis.triangle.RationalTriangle;
 
 /**
- * A268917 Numerators of the rational number triangle R(m, a) = -a*(m-a)*(m - 2*a)/(6*m), m &gt;= 1, a = 1, ..., m. This is a regularized Sum_{j &gt;= 0} (a + m*j)^(-s) for s = -2 defined by analytic continuation of a generalized Hurwitz Zeta function.
+ * A268917 Numerators of the rational number triangle R(n, k) = -k*(n-k)*(n - 2*k)/(6*n), n &gt;= 1, k = 1, ..., n. This is a regularized Sum_{j &gt;= 0} (k + n*j)^(-s) for s = -2 defined by analytic continuation of a generalized Hurwitz zeta function.
  * This is a regularized Sum_{j &gt;= 0} (a + m*j)^(-s) for s = -2 defined by analytic continuation of a generalized Hurwitz Zeta function.
  * @author Georg Fischer
  */

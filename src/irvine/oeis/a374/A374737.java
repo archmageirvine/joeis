@@ -4,7 +4,7 @@ package irvine.oeis.a374;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A374737 Number of subsets of {1, 2,...,n} such that no two elements differ by 1 or 5.
+ * A374737 Number of subsets of {1,2,...,n} such that no two elements differ by 1 or 5.
  * @author Georg Fischer
  */
 public class A374737 extends GeneratingFunctionSequence {

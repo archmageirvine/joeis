@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A153424 Primes of the form n^2+3n+223.
+ * A153424 Primes of the form k^2+3*k+223.
  * @author Georg Fischer
  */
 public class A153424 extends PrimeSubsequence {

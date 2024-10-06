@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
 
 /**
- * A072106.
+ * A072479 Surface area of n-dimensional sphere of radius r is n*V_n*r^(n-1) = n*Pi^(n/2)*r^(n-1)/(n/2)! = S_n*Pi^floor(n/2)*r^(n-1); sequence gives denominator of S_n.
  * @author Sean A. Irvine
  */
 public class A072479 extends Sequence0 {

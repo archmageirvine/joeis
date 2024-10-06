@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072106.
+ * A072464 Code word lengths for non-redundant MML code for positive integers.
  * @author Sean A. Irvine
  */
 public class A072464 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a006.A006577;
 
 /**
- * A058633 Partial sums of the Collatz sequence.
+ * A058633 Partial sums of A006577.
  * @author Sean A. Irvine
  */
 public class A058633 extends PartialSumSequence {

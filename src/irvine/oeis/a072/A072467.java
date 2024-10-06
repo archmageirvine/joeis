@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A072106.
+ * A072467 Triangle in which n-th row contains n primes == 1 mod (n) and the first term of a row is just greater than the last term of the previous row.
  * @author Sean A. Irvine
  */
 public class A072467 extends A000040 {

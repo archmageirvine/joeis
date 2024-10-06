@@ -4,7 +4,7 @@ package irvine.oeis.a267;
 import irvine.math.z.Z;
 
 /**
- * A267864 Denominator triangle for A267863: T(m, a) = denominator((m - 2*a)/(2*m)), m &gt;= 1, a = 1, ..., m.
+ * A267864 Denominator triangle for A267863: T(n, k) = denominator((n - 2*k)/(2*n)), n &gt;= 1, k = 1, ..., n.
  * @author Georg Fischer
  */
 public class A267864 extends A267863 {

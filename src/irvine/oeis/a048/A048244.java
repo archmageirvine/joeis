@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A048244 A048106 is applied to A001405: the terms indicate whether more, equal or fewer unitary than non-unitary divisors of the central binomial coefficient exists.
+ * A048244 a(n) = A048106(A001405(n)).
  * @author Sean A. Irvine
  */
 public class A048244 extends Sequence1 {

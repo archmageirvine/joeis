@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A072106.
+ * A072456 Annihilating primes for A000522.
  * @author Sean A. Irvine
  */
 public class A072456 extends Sequence1 {

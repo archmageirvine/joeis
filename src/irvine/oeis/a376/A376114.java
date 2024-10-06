@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a033.A033950;
 
 /**
- * A072106.
+ * A376114 Refactorable numbers that are twice a square.
  * @author Sean A. Irvine
  */
 public class A376114 extends FilterSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A152578 Numbers of the form 5^(2^n) + 2.
+ * A152578 a(n) = 5^(2^(n-1)) + 2.
  * @author Georg Fischer
  */
 public class A152578 extends AbstractSequence {

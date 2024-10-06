@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.math.z.Z;
 
 /**
- * A072106.
+ * A072468 Leading diagonal of triangle in A072467.
  * @author Sean A. Irvine
  */
 public class A072468 extends A072467 {

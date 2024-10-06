@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006549;
 
 /**
- * A120430 Greater of prime powers that differ by 1. In other words, numbers n such that n-1 and n are prime powers.
+ * A120430 Greater of prime powers that differ by 1. In other words, numbers k such that k-1 and k are prime powers.
  * @author Georg Fischer
  */
 public class A120430 extends Sequence1 {

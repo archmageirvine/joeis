@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A154276 Primes of the form 81*n^2 - 72*n + 17.
+ * A154276 Primes of the form 81*k^2 - 72*k + 17.
  * @author Georg Fischer
  */
 public class A154276 extends PrimeSubsequence {

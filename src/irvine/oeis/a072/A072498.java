@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072106.
+ * A072498 n is not equal to the product of the k smallest divisors of n for any k.
  * @author Sean A. Irvine
  */
 public class A072498 extends Sequence1 {

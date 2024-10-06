@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A100359 Numbers n such that 2^n+n+1 is prime.
+ * A100359 Numbers k such that 2^k + k + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A100359 extends Sequence1 {

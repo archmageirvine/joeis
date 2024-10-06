@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A072106.
+ * A072471 Squares such that the sum of two neighboring term is also a square.
  * @author Sean A. Irvine
  */
 public class A072471 extends Sequence0 {

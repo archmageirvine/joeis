@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A072442 Least k such that Sum( Cos(1/Sqrt(i)) i=1..k) &gt; n.
+ * A072442 Least k such that Sum_{i=1..k} cos(1/sqrt(i)) &gt; n.
  * @author Sean A. Irvine
  */
 public class A072442 extends Sequence0 {

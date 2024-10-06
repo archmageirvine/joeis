@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072106.
+ * A072499 Product of divisors of n which are &lt;= n^(1/2).
  * @author Sean A. Irvine
  */
 public class A072499 extends Sequence1 {

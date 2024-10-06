@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A072106.
+ * A072492 Values of n for which A072491(n)=3.
  * @author Sean A. Irvine
  */
 public class A072492 extends FilterPositionSequence {

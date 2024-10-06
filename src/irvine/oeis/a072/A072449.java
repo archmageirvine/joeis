@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A072444.
+ * A072449 Decimal expansion of the limit of the nested radical sqrt(1 + sqrt(2 + sqrt(3 + sqrt(4 + ... )))).
  * @author Sean A. Irvine
  */
 public class A072449 extends DecimalExpansionSequence {

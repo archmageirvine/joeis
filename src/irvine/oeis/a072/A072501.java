@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072106.
+ * A072501 Ratio of the product of divisors of n which are &gt; n^(1/2) to product of divisors of n which are &lt; n^(1/2).
  * @author Sean A. Irvine
  */
 public class A072501 extends Sequence1 {

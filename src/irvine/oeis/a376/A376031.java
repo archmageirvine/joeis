@@ -4,7 +4,7 @@ package irvine.oeis.a376;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A376031 Number of ways to tile a 3 x (2*n) rectangle with dominoes and T&apos;s.
+ * A376031 Number of ways to tile a 3 x (2*n) rectangle with dominoes and T's.
  * @author Georg Fischer
  */
 public class A376031 extends HolonomicRecurrence {

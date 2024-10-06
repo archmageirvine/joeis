@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A072106.
+ * A072482 Partition the nonnegative integers into minimal groups whose sums are palindromes; this sequence gives the sums.
  * @author Sean A. Irvine
  */
 public class A072482 extends Sequence0 {

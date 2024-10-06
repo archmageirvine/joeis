@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a025.A025475;
 
 /**
- * A060846 Smallest prime &gt; a nontrivial power of a prime.
+ * A060846 Smallest prime &gt; the n-th nontrivial power of a prime.
  * @author Sean A. Irvine
  */
 public class A060846 extends A025475 {

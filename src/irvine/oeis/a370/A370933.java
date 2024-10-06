@@ -4,7 +4,7 @@ package irvine.oeis.a370;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A370933 Number of pairs of antipodal vertices in the level n&gt;1 SierpiŇĄski triangle graph.
+ * A370933 Number of pairs of antipodal vertices in the level n&gt;1 Sierpi\u0144ski triangle graph.
  * @author Georg Fischer
  */
 public class A370933 extends HolonomicRecurrence {

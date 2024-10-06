@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072106.
+ * A072495 k-morphic numbers for any k such that (k-1)/10 is an even integer not divisible by 10.
  * @author Sean A. Irvine
  */
 public class A072495 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072444.
+ * A072451 Number of odd terms in the reduced residue system of 2*n-1.
  * @author Sean A. Irvine
  */
 public class A072451 extends Sequence1 {

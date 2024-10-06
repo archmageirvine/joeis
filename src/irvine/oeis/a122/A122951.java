@@ -4,7 +4,7 @@ package irvine.oeis.a122;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A122951 Number of walks from (0, 0) to (n,n) in the region x &gt;= y with the steps (1, 0), (0, 1), (2, 0) and (0, 2).
+ * A122951 Number of walks from (0,0) to (n,n) in the region x &gt;= y with the steps (1,0), (0,1), (2,0) and (0,2).
  * FindRE((2*x+sqrt(4*(x-2)*x+1) - sqrt(2)*sqrt(2*x*(-2*x + sqrt(4*(x-2)*x+1)-1) + sqrt(4*(x-2)*x+1)+1)+1)/(4*x^2), x, a(n));
  * @author Georg Fischer
  */

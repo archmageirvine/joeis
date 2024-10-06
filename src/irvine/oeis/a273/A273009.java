@@ -5,7 +5,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A273009 Numbers n such that (2^n + 5) / 3 is prime.
+ * A273009 Numbers k such that (2^k + 5) / 3 is prime.
  * @author Georg Fischer
  */
 public class A273009 extends PrimePositionSubsequence {

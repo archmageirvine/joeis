@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001405;
 
 /**
- * A056670 Largest prime factor of which the exponent exceeds 1 among prime factors of central binomial coefficient, C(n, floor(n/2)); largest non-unitary prime factor of A001405(n); or the maximal prime divisor of the largest square divisor(A056057(n)) of C(n, floor(n/2)).
+ * A056670 Largest non-unitary prime factor of A001405(n) = binomial(n, floor(n/2)), or 1 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A056670 extends A001405 {

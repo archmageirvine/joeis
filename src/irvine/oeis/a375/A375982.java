@@ -4,7 +4,7 @@ package irvine.oeis.a375;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A375982 Number of subsets of {1, 2,...,n} such that no two elements differ by 2, 3, or 5.
+ * A375982 Number of subsets of {1,2,...,n} such that no two elements differ by 2, 3, or 5.
  * @author Georg Fischer
  */
 public class A375982 extends HolonomicRecurrence {

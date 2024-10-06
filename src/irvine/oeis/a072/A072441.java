@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A072441 Least k such that Sum( Sin(1/Sqrt(i)) i=1..k) &gt; n.
+ * A072441 Least k such that Sum_{i=1..k} sin(1/sqrt(i)) &gt; n.
  * @author Sean A. Irvine
  */
 public class A072441 extends Sequence0 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072106.
+ * A072497 Numbers n such that n^2 is member of A072498.
  * @author Sean A. Irvine
  */
 public class A072497 extends Sequence1 {

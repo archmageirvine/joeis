@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072106.
+ * A072487 a(1) = 1, a(n) = a(n-1) times largest nontrivial divisor if n is composite.
  * @author Sean A. Irvine
  */
 public class A072487 extends Sequence1 {

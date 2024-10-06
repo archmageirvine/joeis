@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072106.
+ * A072461 Numbers k such that sigma(k) == 1 (mod 4).
  * @author Sean A. Irvine
  */
 public class A072461 extends Sequence1 {

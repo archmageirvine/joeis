@@ -4,7 +4,7 @@ package irvine.oeis.a371;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A371017 The second row of generalized Knuth&apos;s old sum.
+ * A371017 The second row of generalized Knuth's old sum.
  * @author Georg Fischer
  */
 public class A371017 extends HolonomicRecurrence {

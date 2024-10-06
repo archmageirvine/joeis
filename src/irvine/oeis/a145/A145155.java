@@ -6,7 +6,7 @@ import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A145155 Coefficients in expansion of Delta&apos;(q).
+ * A145155 Coefficients in expansion of Delta'(q).
  * @author Georg Fischer
  */
 public class A145155 extends SingleTransformSequence {

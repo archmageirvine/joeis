@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
- * A072106.
+ * A072455 Number of totients in the reduced residue system of 2n-1.
  * @author Sean A. Irvine
  */
 public class A072455 extends A072454 {

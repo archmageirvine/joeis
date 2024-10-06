@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A072106.
+ * A072460 Smallest even nontotient number of which the largest prime divisor equals n-th prime.
  * @author Sean A. Irvine
  */
 public class A072460 extends Sequence3 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A370962 a(n) = number of &quot;lonesum&quot; 2 X 2 X n tensors.
+ * A370962 a(n) = number of "lonesum" 2 X 2 X n tensors.
  * @author Georg Fischer
  */
 public class A370962 extends LambdaSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a238.A238949;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A110475 Number of symbols &apos;*&apos; and &apos;^&apos; to write the canonical prime factorization of n.
+ * A110475 Number of symbols '*' and '^' to write the canonical prime factorization of n.
  * @author Georg Fischer
  */
 public class A110475 extends SingleTransformSequence {

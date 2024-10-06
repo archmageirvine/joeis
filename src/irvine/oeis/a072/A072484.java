@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072106.
+ * A072484 Triangle in which the n-th row contains the n smallest numbers containing the string of digits of n in increasing order.
  * @author Sean A. Irvine
  */
 public class A072484 extends Sequence1 {

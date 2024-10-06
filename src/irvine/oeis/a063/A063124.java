@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A063124 a(n) = # { i prime | prime(n) &lt;= i &lt; prime(n)*2 } (prime(n) = A000040, the prime enumeration).
+ * A063124 a(n) = # { primes i | prime(n) &lt;= i &lt; 2*prime(n) } where prime(n) is the n-th prime.
  * @author Sean A. Irvine
  */
 public class A063124 extends A000040 {

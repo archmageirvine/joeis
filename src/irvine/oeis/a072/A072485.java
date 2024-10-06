@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.math.z.Z;
 
 /**
- * A072106.
+ * A072485 n-th number that includes the substring [n] in its decimal expansion.
  * @author Sean A. Irvine
  */
 public class A072485 extends A072484 {

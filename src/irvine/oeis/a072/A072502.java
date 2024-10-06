@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072106.
+ * A072502 Numbers that are run sums (trapezoidal, the difference between two triangular numbers) in exactly 3 ways.
  * @author Sean A. Irvine
  */
 public class A072502 extends Sequence1 {

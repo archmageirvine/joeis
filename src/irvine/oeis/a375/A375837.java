@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A375837 allocated for Rajesh Kumar Mohapatra.
+ * A375837 Triangle read by rows: T(n,k) is the number of rooted chains starting with the cycle (1)(2)(3)...(n) of length k of permutation poset of n letters.
  * @author Sean A. Irvine
  */
 public class A375837 extends Sequence0 {

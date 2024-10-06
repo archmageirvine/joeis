@@ -4,7 +4,7 @@ package irvine.oeis.a268;
 import irvine.math.z.Z;
 
 /**
- * A268918 Denominators of the rational number triangle R(m, a) = - a*(m - a)*(m - 2*a)/(6*m), m &gt;= 1, a = 1, ..., m.
+ * A268918 Denominators of the rational number triangle R(n, k) = - k*(n - k)*(n - 2*k)/(6*n), n &gt;= 1, k = 1, ..., n.
  * @author Georg Fischer
  */
 public class A268918 extends A268917 {

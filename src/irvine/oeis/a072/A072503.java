@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A072106.
+ * A072503 Number of ways to lace a shoe with n eyelet pairs such that there is no direct "horizontal" connection between any adjacent eyelet pair.
  * @author Sean A. Irvine
  */
 public class A072503 extends Sequence3 {

@@ -3,7 +3,7 @@ package irvine.oeis.a153;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A153875 3 times 13-gonal (or tridecagonal) numbers: 3*n*(11*n - 9)/2.
+ * A153875 3 times 13-gonal (or tridecagonal) numbers: a(n) = 3*n*(11*n - 9)/2.
  * @author Sean A. Irvine
  */
 public class A153875 extends LinearRecurrence {

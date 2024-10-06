@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.RationalTriangle;
 
 /**
- * A268919 Numerators of the rational number triangle R(m, a) =  (m^4 - 30*m^2*a^2 + 60*m*a^3 -30*a^4) / (120*m), m &gt;= 1, a = 1, ..., m. This is a regularized Sum_{j &gt;= 0} (a + m*j)^(-s) for s = -3 defined by analytic continuation of a generalized Hurwitz Zeta function.
+ * A268919 Numerators of the rational number triangle R(n, k) = (n^4 - 30*n^2*k^2 + 60*n*k^3 -30*k^4) / (120*n), n &gt;= 1, k = 1, ..., n. This is a regularized Sum_{j &gt;= 0} (k + n*j)^(-s) for s = -3 defined by analytic continuation of a generalized Hurwitz zeta function.
  * This is a regularized Sum_{j &gt;= 0} (a + m*j)^(-s) for s = -3 defined by analytic continuation of a generalized Hurwitz Zeta function.
  * @author Georg Fischer
  */

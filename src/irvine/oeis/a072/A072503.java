@@ -53,6 +53,8 @@ public class A072503 extends Sequence3 {
     mM = 2 * mN - 1; // precompute value useful in search
     mCount = 0;
     search(-1, 0, 0, 0b10); // start with "10" as sides used
+    // Divide by 2 to account for mirror symmetry
+    // Note absence of horizontal lines makes this valid
     return Z.valueOf(mCount / 2);
   }
 }

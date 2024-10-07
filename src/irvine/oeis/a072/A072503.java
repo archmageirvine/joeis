@@ -12,7 +12,7 @@ public class A072503 extends Sequence3 {
   // In this implementation the top pair of eyelets is implicit.
   // We assume we start at one of these implicit eyelets and must finish at the other.
   // Thus, our n is one less than the description of the problem, and we number
-  // our eyelets 0 to n-1 inclusive.
+  // our eyelets 0 to 2n-1 inclusive.
   // Rather than generate each full permutation in turn, rejecting those that
   // fail to meet lacing requirements, we recursively construct lacings checking
   // they remain valid at each step.

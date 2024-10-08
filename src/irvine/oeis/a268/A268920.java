@@ -4,7 +4,7 @@ package irvine.oeis.a268;
 import irvine.math.z.Z;
 
 /**
- * A268920 Denominators of the rational number triangle  R(m, a) = (m^4 - 30*m^2*a^2 + 60*m*a^3 - 30*a^4) / (120*m), m &gt;= 1, a = 1, ..., m.
+ * A268920 Denominators of the rational number triangle  R(n, k) = (n^4 - 30*n^2*k^2 + 60*n*k^3 - 30*k^4) / (120*n), n &gt;= 1, k = 1, ..., n.
  * @author Georg Fischer
  */
 public class A268920 extends A268919 {

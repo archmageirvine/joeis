@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a053.A053767;
 
 /**
- * A227314 Number of prime factors, with multiplicity, of sum of first n composite numbers.
+ * A227314 Number of prime factors, with multiplicity, of the sum of the first n composite numbers.
  * @author Georg Fischer
  */
 public class A227314 extends Sequence1 {

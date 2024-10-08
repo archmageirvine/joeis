@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072504.
+ * A072506 Triangle giving T(n,m) = number of necklaces of two colors with 2n beads of which m=1..n are black.
  * @author Sean A. Irvine
  */
 public class A072506 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072504.
+ * A072504 a(n) = LCM of divisors of n which are &lt;= sqrt(n).
  * @author Sean A. Irvine
  */
 public class A072504 extends Sequence1 {

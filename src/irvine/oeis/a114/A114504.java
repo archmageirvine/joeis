@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000384;
 
 /**
- * A114504 Numbers n such that the n-th hexagonal number is a 6-almost prime.
+ * A114504 Numbers k such that the k-th hexagonal number is a 6-almost prime.
  * @author Georg Fischer
  */
 public class A114504 extends FilterPositionSequence {

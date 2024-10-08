@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000384;
 
 /**
- * A114455 Numbers n such that the n-th hexagonal number is a 4-almost prime.
+ * A114455 Numbers k such that the k-th hexagonal number is a 4-almost prime.
  * @author Georg Fischer
  */
 public class A114455 extends FilterPositionSequence {

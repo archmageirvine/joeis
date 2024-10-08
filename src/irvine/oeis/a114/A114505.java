@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000384;
 
 /**
- * A114505 Numbers n such that the n-th hexagonal number is a 7-almost prime.
+ * A114505 Numbers k such that the k-th hexagonal number is a 7-almost prime.
  * @author Georg Fischer
  */
 public class A114505 extends FilterPositionSequence {

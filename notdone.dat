@@ -2433,3 +2433,4 @@ A072422 The n-est sequence is similar to the Aronson sequence except that instea
 A072423 The t-est sequence is similar to the Aronson sequence except that instead of being in English it is in Latin
 A072426 Numbers whose Hebrew name begin with the letter "Shin".
 A072507 Smallest start of n consecutive integers with n divisors, or 0 if no such number exists.
+A072540 Numbers that are not differences between successive Ulam numbers (A002858).

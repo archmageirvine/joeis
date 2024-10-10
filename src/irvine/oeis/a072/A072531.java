@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072523.
+ * A072531 Number of primes p such that n divided by p leaves a 1 or a composite (nonzero) remainder.
  * @author Sean A. Irvine
  */
 public class A072531 extends Sequence1 {

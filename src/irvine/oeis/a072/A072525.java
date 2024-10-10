@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072523.
+ * A072525 a(0) = 1; a(n+1) is smallest composite number &gt; a(n) such that a(n) + a(n+1) is prime.
  * @author Sean A. Irvine
  */
 public class A072525 extends Sequence1 {

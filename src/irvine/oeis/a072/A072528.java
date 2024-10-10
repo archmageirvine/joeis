@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072523.
+ * A072528 Table T(n,k) read by rows, giving number of occurrences of the remainder k when n is divided by i=1,2,3,...,n.
  * @author Sean A. Irvine
  */
 public class A072528 extends Sequence1 {

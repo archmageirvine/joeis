@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000566;
 
 /**
- * A114517 Numbers n such that n-th heptagonal number is semiprime.
+ * A114517 Numbers k such that the k-th heptagonal number is semiprime.
  * @author Georg Fischer
  */
 public class A114517 extends FilterPositionSequence {

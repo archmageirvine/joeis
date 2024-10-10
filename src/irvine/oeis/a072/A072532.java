@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A061092.
+ * A072532 a(0)=1; for n&gt;0, a(n) = smallest prime of the form k*a(n-1)-1 with k&gt;1.
  * @author Sean A. Irvine
  */
 public class A072532 extends Sequence0 {

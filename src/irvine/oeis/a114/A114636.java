@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000567;
 
 /**
- * A114636 Numbers n such that n-th octagonal number is 8-almost prime.
+ * A114636 Numbers k such that the k-th octagonal number is 8-almost prime.
  * @author Georg Fischer
  */
 public class A114636 extends FilterPositionSequence {

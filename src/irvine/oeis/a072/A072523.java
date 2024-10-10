@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072523.
+ * A072523 Sum of remainders when n-th Fibonacci number is divided by all smaller Fibonacci numbers &gt; 1.
  * @author Sean A. Irvine
  */
 public class A072523 extends Sequence1 {

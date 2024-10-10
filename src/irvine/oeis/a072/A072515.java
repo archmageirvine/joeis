@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072515 Let u(1) = u(2) = v(1) = v(2) = 1, u(n+2) = u(n+1)+v(n), v(n+2) = abs(u(n+1)-v(n)), then a(n) = u(n).
+ * A072515 Let u(1) = u(2) = v(1) = v(2) = 1, u(n+2) = u(n)+v(n+1), v(n+2) = abs(u(n)-v(n+1)), then a(n) = u(n).
  * @author Sean A. Irvine
  */
 public class A072515 extends Sequence1 {

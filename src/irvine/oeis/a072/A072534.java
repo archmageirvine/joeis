@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061092.
+ * A072534 a(1) = 2, a(2) = 3 and a(n) = the smallest prime of the form k*a(n-1) - a(n-2).
  * @author Sean A. Irvine
  */
 public class A072534 extends Sequence1 {

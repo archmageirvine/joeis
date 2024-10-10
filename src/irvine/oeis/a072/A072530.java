@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072523.
+ * A072530 Number of primes p such that n divided by p leaves a prime remainder.
  * @author Sean A. Irvine
  */
 public class A072530 extends Sequence1 {

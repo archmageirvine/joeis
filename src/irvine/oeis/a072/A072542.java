@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061092.
+ * A072542 a(n) = the least positive integer k such that sigma(k) &gt; sigma(1) + ... + sigma(n).
  * @author Sean A. Irvine
  */
 public class A072542 extends Sequence1 {

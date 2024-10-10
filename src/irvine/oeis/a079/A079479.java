@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a072.A072526;
 
 /**
- * A072523.
+ * A079479 Denominator of number J(n) arising in computation of second moment of A*_n lattice.
  * @author Sean A. Irvine
  */
 public class A079479 extends A072526 {

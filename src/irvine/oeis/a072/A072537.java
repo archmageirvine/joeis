@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061092.
+ * A072537 a(1) = 2, a(2) = 3 and a(n) = the smallest prime which is a linear combination of all previous terms with all coefficients &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A072537 extends Sequence1 {

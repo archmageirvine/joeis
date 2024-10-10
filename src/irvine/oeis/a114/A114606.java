@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000567;
 
 /**
- * A114606 Numbers n such that n-th octagonal number is 3-almost prime.
+ * A114606 Numbers k such that the k-th octagonal number is 3-almost prime.
  * @author Georg Fischer
  */
 public class A114606 extends FilterPositionSequence {

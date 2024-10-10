@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061092.
+ * A072535 a(1) = 2, a(2) = 3 and a(n) = the smallest prime which is a linear combination of a(n-1) and a(n-2) of the form r*a(n-1) + s*a(n-2) with r,s &gt;=1.
  * @author Sean A. Irvine
  */
 public class A072535 extends Sequence1 {

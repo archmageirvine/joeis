@@ -6,7 +6,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a007.A007629;
 
 /**
- * A061092.
+ * A072533 Least Keith number (or repfigit) with n digits, or 0 if there is none.
  * @author Sean A. Irvine
  */
 public class A072533 extends Sequence2 {

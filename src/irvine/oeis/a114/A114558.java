@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000566;
 
 /**
- * A114558 Numbers n such that n-th heptagonal number is 6-almost prime.
+ * A114558 Numbers k such that the k-th heptagonal number is 6-almost prime.
  * @author Georg Fischer
  */
 public class A114558 extends FilterPositionSequence {

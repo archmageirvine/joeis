@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072523.
+ * A072526 Numerator of number J(n) arising in computation of second moment of A*_n lattice.
  * @author Sean A. Irvine
  */
 public class A072526 extends Sequence1 {

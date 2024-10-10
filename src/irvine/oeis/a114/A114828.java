@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000567;
 
 /**
- * A114828 Numbers k such that k-th octagonal number has 9 prime factors counted with multiplicity.
+ * A114828 Numbers k such that the k-th octagonal number has 9 prime factors counted with multiplicity.
  * @author Georg Fischer
  */
 public class A114828 extends FilterPositionSequence {

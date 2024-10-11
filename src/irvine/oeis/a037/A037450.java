@@ -1,13 +1,13 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A037450 Numbers which are one less than a perfect square that cannot otherwise be written as a power.
  * @author Sean A. Irvine
  */
-public class A037450 extends Sequence0 {
+public class A037450 extends Sequence1 {
 
   // After Michel Marcus
 

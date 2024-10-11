@@ -1,18 +1,17 @@
 package irvine.oeis.a067;
 
+import irvine.math.function.Functions;
 import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000217;
+import irvine.oeis.Sequence1;
 
 /**
  * A067269 Triangular numbers which remain triangular when the most significant digit is moved to the end.
  * @author Sean A. Irvine
  */
-public class A067269 extends A000217 {
+public class A067269 extends Sequence1 {
 
-  {
-    next();
-  }
+  private long mN = 0L;
 
   private static Z rotate(final Z t) {
     final String s = t.toString();
@@ -22,7 +21,7 @@ public class A067269 extends A000217 {
   @Override
   public Z next() {
     while (true) {
-      final Z t = super.next();
+      final Z t = Functions.TRIANGULAR.z(++mN);
       if (Predicates.TRIANGULAR.is(rotate(t))) {
         return t;
       }

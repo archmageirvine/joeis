@@ -12,6 +12,6 @@ public class A085131 extends FilterSequence {
 
   /** Construct the sequence. */
   public A085131() {
-    super(0, new A002473(), v -> v.mod(8) == 0);
+    super(1, new A002473(), v -> v.mod(8) == 0);
   }
 }

@@ -12,7 +12,7 @@ public class A180956 extends ToeplitzTriangle {
 
   /** Construct the sequence. */
   public A180956() {
-    super(1, new A046161());
+    super(0, new A046161());
   }
 }
 

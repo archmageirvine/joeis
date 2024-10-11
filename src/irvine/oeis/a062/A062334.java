@@ -12,6 +12,6 @@ public class A062334 extends IntersectionSequence {
 
   /** Construct the sequence. */
   public A062334() {
-    super(0, new A045713(), new A030432());
+    super(1, new A045713(), new A030432());
   }
 }

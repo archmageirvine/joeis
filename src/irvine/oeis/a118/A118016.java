@@ -3,14 +3,14 @@ package irvine.oeis.a118;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence2;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a016.A016031;
 
 /**
  * A118016 Integers of the form 2^k/(k-1).
  * @author Georg Fischer
  */
-public class A118016 extends Sequence2 {
+public class A118016 extends Sequence1 {
 
   final Sequence mA016031 = new A016031();
   @Override

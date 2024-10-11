@@ -1,15 +1,15 @@
 package irvine.oeis.a068;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A068160 Smallest prime beginning and ending in exactly n 1's and containing at least one digit != 1.
  * @author Sean A. Irvine
  */
-public class A068160 extends Sequence1 {
+public class A068160 extends Sequence0 {
 
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {

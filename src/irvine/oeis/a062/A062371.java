@@ -12,6 +12,6 @@ public class A062371 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A062371() {
-    super(0, 1, new A051801().skip(1), Z::isSquare);
+    super(1, 1, new A051801().skip(1), Z::isSquare);
   }
 }

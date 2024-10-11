@@ -16,6 +16,6 @@ public class A106153 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A106153() {
-    super(1, REALS.asin(CR.PI.pow(CR.TWO).subtract(CR.TWO.exp()).sqrt().divide(CR.PI)).multiply(CR.valueOf(180).divide(CR.PI)));
+    super(2, REALS.asin(CR.PI.pow(CR.TWO).subtract(CR.TWO.exp()).sqrt().divide(CR.PI)).multiply(CR.valueOf(180).divide(CR.PI)));
   }
 }

@@ -2,13 +2,13 @@ package irvine.oeis.a072;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A072033 Smallest x &gt; 0 such that gcd(2^x, A004086(2^x)) = 2^n.
  * @author Sean A. Irvine
  */
-public class A072033 extends Sequence0 {
+public class A072033 extends Sequence1 {
 
   private long mN = -1;
   private Z mA = null;

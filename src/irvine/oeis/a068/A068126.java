@@ -4,14 +4,14 @@ import java.util.TreeMap;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000217;
 
 /**
  * A068126 Smallest triangular number whose final digits are A068125(n).
  * @author Sean A. Irvine
  */
-public class A068126 extends Sequence0 {
+public class A068126 extends Sequence1 {
 
   private final TreeMap<Z, Z> mA = new TreeMap<>();
   private Z mMod = null;

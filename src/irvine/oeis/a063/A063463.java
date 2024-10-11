@@ -13,6 +13,6 @@ public class A063463 extends FilterSequence {
 
   /** Construct the sequence. */
   public A063463() {
-    super(new A024110(), k -> k.abs().compareTo(Z.ONE) > 0 && Jaguar.factor(k).isSquareFree());
+    super(1, new A024110(), k -> k.abs().compareTo(Z.ONE) > 0 && Jaguar.factor(k).isSquareFree());
   }
 }

@@ -12,6 +12,6 @@ public class A062372 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A062372() {
-    super(0, 1, new A051801().skip(1), n -> Predicates.CUBE.is(n));
+    super(1, 1, new A051801().skip(1), n -> Predicates.CUBE.is(n));
   }
 }

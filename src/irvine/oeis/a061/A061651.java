@@ -1,13 +1,13 @@
 package irvine.oeis.a061;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A061651 Numbers with all even digits in which each nonzero digit divides the number formed by the rest, i.e., the number obtained by just removing this digit. 0 is divisible by every number.
  * @author Sean A. Irvine
  */
-public class A061651 extends Sequence0 {
+public class A061651 extends Sequence1 {
 
   private long mN = -1;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a060;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A060303 Number of primes below n^2 does not exceed n times the number of primes below n.
  * @author Sean A. Irvine
  */
-public class A060303 extends Sequence0 {
+public class A060303 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

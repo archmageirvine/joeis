@@ -24,6 +24,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(ConvergentsTest.class);
     suite.addTestSuite(CosTest.class);
     suite.addTestSuite(CRTest.class);
+    suite.addTestSuite(EllipticTest.class);
     suite.addTestSuite(EulerGammaTest.class);
     suite.addTestSuite(ExpTest.class);
     suite.addTestSuite(IdentityTest.class);

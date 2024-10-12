@@ -115,12 +115,10 @@ public class CC extends Number implements Comparable<CC> {
     final StringBuilder sb = new StringBuilder();
     sb.append(re().toString(n));
     final String ims = im().toString(n);
-    if (ims.startsWith("-")) {
-      sb.append(ims);
-    } else {
+    if (!ims.startsWith("-")) {
       sb.append('+');
-      sb.append(ims);
     }
+    sb.append(ims);
     sb.append('i');
     return sb.toString();
   }

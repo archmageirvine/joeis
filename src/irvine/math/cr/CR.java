@@ -1362,6 +1362,22 @@ public abstract class CR extends Number implements Comparable<CR> {
   }
 
   /**
+   * The Elliptic K function of this real number.
+   * @return <code>EllipticK(this)</code>
+   */
+  public CR ellipticK() {
+    return Elliptic.ellipticK(this);
+  }
+
+  /**
+   * The Elliptic E function of this real number.
+   * @return <code>EllipticE(this)</code>
+   */
+  public CR ellipticE() {
+    return Elliptic.ellipticE(this);
+  }
+
+  /**
    * If the condition is true add the value <code>a</code> otherwise subtract it.
    * @param condition true for addition, false for subtraction
    * @param a value to add or subtract

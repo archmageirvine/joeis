@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A173514 a(n) = 2*a(n-1) + a(n-2) - [a(n-2)/2] - [a(n-4)/2] - [a(n-5)/2].
+ * A173514 a(n) = 2*a(n-1) + a(n-2) - [a(n-2)/2] - [a(n-4)/2] - [a(n-5)/2] where [k] := floor(k).
  * @author Georg Fischer
  */
 public class A173514 extends TupleTransformSequence {

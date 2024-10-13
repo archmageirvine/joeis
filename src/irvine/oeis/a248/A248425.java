@@ -4,7 +4,7 @@ package irvine.oeis.a248;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A248425 Number of &quot;squares&quot; (repeated identical blocks) in the n-th Fibonacci word.
+ * A248425 Number of "squares" (repeated identical blocks) in the n-th Fibonacci word.
  * @author Georg Fischer
  */
 public class A248425 extends GeneratingFunctionSequence {

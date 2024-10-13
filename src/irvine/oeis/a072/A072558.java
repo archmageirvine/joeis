@@ -5,7 +5,7 @@ import irvine.oeis.a086.A086199;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A093341.
+ * A072558 Decimal expansion of the one-ninth constant.
  * @author Sean A. Irvine
  */
 public class A072558 extends DecimalExpansionSequence {

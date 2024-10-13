@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A069561 Start of a run of n consecutive positive numbers divisible respectively by first n primes.
+ * A072562 Smallest of exactly n consecutive integers divisible respectively by the first n primes.
  * @author Sean A. Irvine
  */
 public class A072562 extends Sequence1 {

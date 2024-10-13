@@ -21,12 +21,12 @@ public class A006613 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A006613() {
-    super(3);
+    this(3);
   }
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   protected int mN = init();
-  private int mK = 5;
+  private int mK = 4;
 
   protected int init() {
     return j() - 1;

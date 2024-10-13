@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A134799 a(n)=3^((3^n - 1)/2).
+ * A134799 a(n) = 3^((3^n - 1)/2).
  * @author Georg Fischer
  */
 public class A134799 extends LambdaSequence {

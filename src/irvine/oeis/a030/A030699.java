@@ -10,13 +10,13 @@ import irvine.oeis.a008.A008289;
  */
 public class A030699 extends A008289 {
 
-  private long mN = 0;
+  private int mN = 0;
 
   @Override
   public Z next() {
     ++mN;
     Z m = Z.ZERO;
-    for (long k = 1; k <= (Functions.SQRT.l(8 * mN + 1) - 1) / 2; ++k) {
+    for (int k = 1; k <= (Functions.SQRT.l(8 * mN + 1) - 1) / 2; ++k) {
       m = m.max(get(mN, k));
     }
     return m;

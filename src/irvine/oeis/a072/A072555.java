@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072542.
+ * A072555 Smallest of four consecutive integers divisible by four consecutive primes respectively.
  * @author Sean A. Irvine
  */
 public class A072555 extends Sequence1 {

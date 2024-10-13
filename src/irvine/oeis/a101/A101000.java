@@ -4,7 +4,7 @@ package irvine.oeis.a101;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A101000 Periodic sequence with period 3.
+ * A101000 Period 3: repeat [0, 1, 3].
  * @author Georg Fischer
  */
 public class A101000 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072495 k-morphic numbers for any k such that (k-1)/10 is an even integer not divisible by 10.
+ * A072495 Automorphic numbers: numbers k such that k^21 ends with k. Also m-morphic numbers for any m such that (m-1)/10 is an even integer not divisible by 10.
  * @author Sean A. Irvine
  */
 public class A072495 extends Sequence1 {

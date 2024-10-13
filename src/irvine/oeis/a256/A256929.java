@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A256929 Decimal expansion of Sum_{k&gt;=1} (zeta(2k)/k)*(1/3)^(2k).
+ * A256929 Decimal expansion of Sum_{k&gt;=1} (zeta(2*k)/k)*(1/2)^(4*k).
  * @author Georg Fischer
  */
 public class A256929 extends DecimalExpansionSequence {

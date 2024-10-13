@@ -5,7 +5,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A093341.
+ * A086199 Decimal expansion of value of x such that K(x) = 2E(x).
  * @author Sean A. Irvine
  */
 public class A086199 extends DecimalExpansionSequence {

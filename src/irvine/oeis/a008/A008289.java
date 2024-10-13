@@ -8,18 +8,22 @@ import irvine.oeis.memory.MemoryFunction2Sequence;
  * A008289 Triangle read by rows: Q(n,m) = number of partitions of n into m distinct parts, n&gt;=1, m&gt;=1.
  * @author Sean A. Irvine
  */
-public class A008289 extends MemoryFunction2Sequence<Long, Z> {
+public class A008289 extends MemoryFunction2Sequence<Integer, Z> {
+
+  protected A008289(final int offset) {
+    super(offset);
+  }
 
   /** Construct the sequence. */
   public A008289() {
-    super(1);
+    this(1);
   }
 
-  private long mN = 0;
-  private long mM = 0;
+  private int mN = 0;
+  private int mM = 0;
 
   @Override
-  protected Z compute(final Long n, final Long k) {
+  protected Z compute(final Integer n, final Integer k) {
     if (k <= 0 || n <= 0) {
       return Z.ZERO;
     }
@@ -31,7 +35,7 @@ public class A008289 extends MemoryFunction2Sequence<Long, Z> {
 
   @Override
   public Z next() {
-    if (++mM > (Functions.SQRT.l(8 * mN + 1) - 1) / 2) {
+    if (++mM > (Functions.SQRT.i(8 * mN + 1) - 1) / 2) {
       ++mN;
       mM = 1;
     }

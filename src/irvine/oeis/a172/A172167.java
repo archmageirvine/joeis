@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a005.A005109;
 
 /**
- * A172167 Partial sums of Class 1- (or Pierpont) primes A005109.
+ * A172167 Partial sums of A005109.
  * @author Sean A. Irvine
  */
 public class A172167 extends PartialSumSequence {

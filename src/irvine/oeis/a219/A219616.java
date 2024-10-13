@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A219616 Numbers n such that 5^n + n^4 is prime.
+ * A219616 Numbers k such that 5^k + k^4 is prime.
  * @author Georg Fischer
  */
 public class A219616 extends FilterNumberSequence {

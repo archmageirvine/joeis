@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
 
 /**
- * A072542.
+ * A072556 Numbers n such that n and the n-th Fibonacci number have the same number of distinct prime factors.
  * @author Sean A. Irvine
  */
 public class A072556 extends Sequence1 {

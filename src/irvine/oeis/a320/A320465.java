@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A320465 a(n) = 2^n - (2^(n-1) mod n), where &quot;mod&quot; is the nonnegative remainder operator.
+ * A320465 a(n) = 2^n - (2^(n-1) mod n), where "mod" is the nonnegative remainder operator.
  * @author Georg Fischer
  */
 public class A320465 extends LambdaSequence {

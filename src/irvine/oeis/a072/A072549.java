@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072549 a(n) = abs(floor(n + a(n-1)/n - n*log(n))).
+ * A072549 a(n) = abs(floor(n + a(n-1)^2/n - n*log(n))) with a(0)=1.
  * @author Sean A. Irvine
  */
 public class A072549 extends Sequence1 {

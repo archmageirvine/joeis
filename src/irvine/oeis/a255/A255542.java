@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a001.A001222;
 
 /**
- * A255542 a(n) = number of prime factors of (3^n + 10).
+ * A255542 a(n) = number of prime factors of (3^n + 10) counted with multiplicity.
  * @author Georg Fischer
  */
 public class A255542 extends LambdaSequence {

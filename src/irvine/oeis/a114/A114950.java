@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A114950 A quartic quadratic recurrence.
+ * A114950 a(n) = a(n-1)^4 + a(n-2)^2, with a(0) = a(1) = 1.
  * <code>a(0) = a(1) = 1, for n>1 a(n) = a(n-1)^4 + a(n-2)^2</code>
  * @author Georg Fischer
  */

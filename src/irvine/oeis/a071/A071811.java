@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071811 Sum_{k &lt;= 10^n} number of primes (counted with multiplicity) dividing k (A001222).
+ * A071811 a(n) = Sum_{k = 1..10^n} number of primes (counted with multiplicity) dividing k (A001222).
  * @author Sean A. Irvine
  */
 public class A071811 extends Sequence0 {

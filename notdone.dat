@@ -2433,3 +2433,4 @@ A072426 Numbers whose Hebrew name begin with the letter "Shin".
 A072507 Smallest start of n consecutive integers with n divisors, or 0 if no such number exists.
 A072540 Numbers that are not differences between successive Ulam numbers (A002858).
 A072564 Numbers m such that the absolute values of the real and imaginary part of zeta(1/2 + m*i) are both < 1.
+A072606 Number of pretzel (stellar or prismatic) knots and links.

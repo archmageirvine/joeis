@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A175574 Decimal expansion of sqrt(Pi) / (Gamma(3/4))^2 .
+ * A175574 Decimal expansion of sqrt(Pi) / (Gamma(3/4))^2.
  * Formula: 1/agm(1,sqrt(1/2))
  * @author Georg Fischer
  */

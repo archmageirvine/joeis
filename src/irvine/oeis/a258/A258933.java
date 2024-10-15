@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A258933 Numbers n such that 10^n + 109 is prime.
+ * A258933 Numbers k such that 10^k + 109 is prime.
  * @author Georg Fischer
  */
 public class A258933 extends PrimePositionSubsequence {

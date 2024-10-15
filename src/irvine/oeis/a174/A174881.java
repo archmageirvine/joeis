@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A174881 Number of admissible graphs of order n.
+ * A174881 a(n) = n^n * (n+1)^n.
  * @author Georg Fischer
  */
 public class A174881 extends LambdaSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a050.A050937;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A135968 Sum of prime factors of the Fibonacci number A050937(n).
+ * A135968 Sum of the distinct prime factors of the Fibonacci number A050937(n).
  * @author Georg Fischer
  */
 public class A135968 extends SimpleTransformSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A072599.
+ * A072599 Numbers n such that (n!)^2 - prime(n) is prime.
  * @author Sean A. Irvine
  */
 public class A072599 extends A000040 {

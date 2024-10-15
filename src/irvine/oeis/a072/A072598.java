@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072598 a(n)= 3^(4*n-4)* sum_{k&gt;=0} ( Gamma(n+k/3+1/3) / Gamma(4/3+k/3) ) * (Gamma(n+k/3+2/3) / Gamma(5/3+k/3) ) * (Gamma(n+k/3+1) / Gamma(2+k/3) ) * Gamma(n+k/3+4/3) / ( Gamma(7/3+k/3) * k! *exp(1)).
+ * A072598 a(n)= 3^(4*n-4)* Sum_{k&gt;=0} ( Gamma(n+k/3+1/3) / Gamma(4/3+k/3) ) * (Gamma(n+k/3+2/3) / Gamma(5/3+k/3) ) * (Gamma(n+k/3+1) / Gamma(2+k/3) ) * Gamma(n+k/3+4/3) / ( Gamma(7/3+k/3) * k! *exp(1)).
  * @author Sean A. Irvine
  */
 public class A072598 extends Sequence1 {

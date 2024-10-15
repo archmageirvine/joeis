@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005277;
 
 /**
- * A072599.
+ * A072607 If D[n] is divisor-set of n, then in set of 1+D only 2 primes occur:{2,3}; also n is not squarefree.
  * @author Sean A. Irvine
  */
 public class A072607 extends A005277 {

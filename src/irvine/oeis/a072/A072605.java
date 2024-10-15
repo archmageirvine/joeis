@@ -8,7 +8,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005651;
 
 /**
- * A072599.
+ * A072605 Number of necklaces with n beads over an n-ary alphabet {a1,a2,...,an} such that #(w,a1) &gt;= #(w,a2) &gt;= ... &gt;= #(w,ak) &gt;= 0, where #(w,x) counts the letters x in word w.
  * @author Sean A. Irvine
  */
 public class A072605 extends Sequence0 {

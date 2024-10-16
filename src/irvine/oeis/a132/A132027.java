@@ -7,13 +7,13 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A132263 Product{0&lt;=k&lt;=floor(log_11(n)), floor(n/11^k)}, n&gt;=1.
+ * A132027 a(n) = Product_{k=0..floor(log_3(n))} floor(n/3^k), n&gt;=1.
  * @author Georg Fischer
  */
-public class A132263 extends LambdaSequence {
+public class A132027 extends LambdaSequence {
 
   /** Construct the sequence. */
-  public A132263() {
-    super(1, n -> Integers.SINGLETON.product(0, Functions.DIGIT_LENGTH.i(11, n) - 1, k -> Z.valueOf(n).divide(Z.valueOf(11).pow(k))));
+  public A132027() {
+    super(1, n -> Integers.SINGLETON.product(0, Functions.DIGIT_LENGTH.i(3, n) - 1, k -> Z.valueOf(n).divide(Z.THREE.pow(k))));
   }
 }

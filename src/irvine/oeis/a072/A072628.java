@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072607.
+ * A072628 Number of divisors d of n such that d-1 is not prime.
  * @author Sean A. Irvine
  */
 public class A072628 extends Sequence1 {

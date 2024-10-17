@@ -6,7 +6,7 @@ import irvine.oeis.a193.A193231;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A234612 Self-inverse permutation of nonnegative integers, &quot;blue-gray&quot; code: a(n) = A003188(A193231(n)).
+ * A234612 Self-inverse permutation of nonnegative integers, "blue-gray" code: a(n) = A003188(A193231(n)).
  * @author Georg Fischer
  */
 public class A234612 extends SingleTransformSequence {

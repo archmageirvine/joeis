@@ -4,7 +4,6 @@ import irvine.math.function.Functions;
 
 /**
  * Square root modulo.
- *
  * @author Sean A. Irvine
  */
 final class ModSqrt {
@@ -38,12 +37,12 @@ final class ModSqrt {
       return a.equals(x.modSquare(p)) ? x : null;
     } else if ((p0 & 7) == 5) {
       // Quickly handle cases where p = 5 (mod 8)
-      final Z t = a.shiftLeft(1);
+      final Z t = a.multiply2();
       final Z g = t.modPow(p.shiftRight(3), p);
       final Z x = a.modMultiply(g, p).modMultiply(t.modMultiply(g.modSquare(p), p).subtract(Z.ONE), p);
       return a.equals(x.modSquare(p)) ? x : null;
     } else if (a.jacobi(p) == -1) {
-      // Check whether or not a solution actually exists
+      // Check whether a solution actually exists
       return null;
     }
     final Z qq = p.subtract(Z.ONE);

@@ -1,6 +1,7 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence0;
 
 /**
@@ -9,20 +10,11 @@ import irvine.oeis.Sequence0;
  */
 public class A059906 extends Sequence0 {
 
+  private final DirectSequence mA = new A059905();
   private long mN = -1;
 
   @Override
   public Z next() {
-    long m = ++mN >>> 1;
-    long r = 0;
-    long b = 1;
-    while (m != 0) {
-      if ((m & 1) == 1) {
-        r |= b;
-      }
-      m >>>= 2;
-      b <<= 1;
-    }
-    return Z.valueOf(r);
+    return mA.a(Z.valueOf(++mN >>> 1));
   }
 }

@@ -13,7 +13,7 @@ public class A006017 extends A051775 {
 
   @Override
   public Z next() {
-    mN = mN == null ? Z.ONE : mN.shiftLeft(1);
+    mN = mN == null ? Z.ONE : mN.multiply2();
     return get(mN, mN);
   }
 }

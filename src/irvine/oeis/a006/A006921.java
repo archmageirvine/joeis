@@ -28,7 +28,7 @@ public class A006921 extends Sequence0 {
     ++mN;
     Z res = Z.ZERO;
     for (long r = 0; r <= mN / 2; ++r) {
-      res = res.shiftLeft(1).add(binomialMod2(mN - r, r));
+      res = res.multiply2().add(binomialMod2(mN - r, r));
     }
     return res;
   }

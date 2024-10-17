@@ -1,5 +1,4 @@
 package irvine.oeis.a052;
-// manually 2021-11-05
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -15,6 +14,6 @@ public class A052746 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return mN == 0 ? Z.ZERO : Z.valueOf(mN).shiftLeft(1).pow(mN - 1);
+    return mN == 0 ? Z.ZERO : Z.valueOf(mN).multiply2().pow(mN - 1);
   }
 }

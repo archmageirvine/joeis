@@ -19,7 +19,7 @@ public class A002589 extends Sequence0 {
       return false;
     }
     Z b = Z.TWO;
-    for (int k = 2; k < n; ++k, b = b.shiftLeft(1)) {
+    for (int k = 2; k < n; ++k, b = b.multiply2()) {
       if (b.subtract(1).mod(p).isZero()) {
         return true;
       }

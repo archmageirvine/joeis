@@ -346,7 +346,7 @@ public class LogicalTest extends TestCase {
       }
     }
     Z z = Z.ONE;
-    for (int i = 0; i < 1000; ++i, z = z.shiftLeft(1)) {
+    for (int i = 0; i < 1000; ++i, z = z.multiply2()) {
       assertTrue("i was " + i, z == z.setBit(i));
     }
     // try some sets on a big negative number

@@ -11,6 +11,6 @@ public class A123667 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A123667() {
-    super(1, (p, e) -> p.shiftLeft(1).pow(e));
+    super(1, (p, e) -> p.multiply2().pow(e));
   }
 }

@@ -14,6 +14,6 @@ public class A331304 extends RestrictedGrowthTransformSequence {
 
   /** Construct the sequence. */
   public A331304() {
-    super(1, new SimpleTransformSequence(1, new A000720(), (n, v) -> (n <= 4) ? Z.valueOf(n) : (Z.valueOf(n).isProbablePrime() ? v.and(Z.ONE).shiftLeft(1).add(3) : Z.valueOf(n + 3).subtract(v))));
+    super(1, new SimpleTransformSequence(1, new A000720(), (n, v) -> (n <= 4) ? Z.valueOf(n) : (Z.valueOf(n).isProbablePrime() ? v.and(Z.ONE).multiply2().add(3) : Z.valueOf(n + 3).subtract(v))));
   }
 }

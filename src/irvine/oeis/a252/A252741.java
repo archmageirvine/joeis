@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000142;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A252741 a(n) = A252738(n) / n!
+ * A252741 a(n) = A252738(n) / n!.
  * @author Georg Fischer
  */
 public class A252741 extends MultiTransformSequence {

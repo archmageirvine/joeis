@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072607.
+ * A072631 Floor( n*log(n) ) mod n.
  * @author Sean A. Irvine
  */
 public class A072631 extends Sequence1 {

@@ -18,7 +18,7 @@ public class A003945 extends Sequence0 {
     } else if (mA.equals(Z.ONE)) {
       mA = Z.THREE;
     } else {
-      mA = mA.shiftLeft(1);
+      mA = mA.multiply2();
     }
     return mA;
   }

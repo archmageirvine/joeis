@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A072607.
+ * A072633 Smallest positive integer m where 1^n+2^n+3^n+...+m^n is greater than or equal to (m+1)^n.
  * @author Sean A. Irvine
  */
 public class A072633 extends Sequence0 {

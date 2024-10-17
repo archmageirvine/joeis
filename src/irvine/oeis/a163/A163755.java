@@ -7,7 +7,7 @@ import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A163755 a(0)=1. For n&gt;=1, write n in binary. Let b(n,m) be the length of the m-th run of 0&apos;s or 1&apos;s, reading right to left. Then a(n) = product{m=1 to M} p(m)^b(n,m), where p(m) is the m-th prime, and M is the number of runs of 0&apos;s and 1&apos;s in binary n.
+ * A163755 a(0)=1. For n&gt;=1, write n in binary. Let b(n,m) be the length of the m-th run of 0's or 1's, reading right to left. Then a(n) = product{m=1 to M} p(m)^b(n,m), where p(m) is the m-th prime, and M is the number of runs of 0's and 1's in binary n.
  * @author Georg Fischer
  */
 public class A163755 extends SingleTransformSequence {

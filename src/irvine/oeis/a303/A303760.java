@@ -6,7 +6,7 @@ import irvine.oeis.a019.A019565;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A303760 Divisor-or-multiple permutation of squarefree numbers: a(0) = 1, and for n &gt;= 1, a(n) is either the least divisor of a(n-1) not already present in the sequence, or (if all divisors already used), a(n-1) * {the least prime p such that p does not divide a(n-
+ * A303760 Divisor-or-multiple permutation of squarefree numbers: a(0) = 1, and for n &gt;= 1, a(n) is either the least divisor of a(n-1) not already present in the sequence, or (if all divisors already used), a(n-1) * {the least prime p such that p does not divide a(n-1) and p*a(n-1) is not already present}.
  * @author Georg Fischer
  */
 public class A303760 extends SingleTransformSequence {

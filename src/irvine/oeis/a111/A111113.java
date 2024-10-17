@@ -19,7 +19,7 @@ public class A111113 extends Sequence0 {
     if (mN.equals(mTwo)) {
       return Z.ONE;
     } else if (mTwo.compareTo(mN) < 0) {
-      mTwo = mTwo.shiftLeft(1);
+      mTwo = mTwo.multiply2();
       return Z.NEG_ONE;
     } else {
       return Z.ZERO;

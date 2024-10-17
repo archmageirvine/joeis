@@ -41,7 +41,7 @@ public class A006977 extends AbstractSequence {
         if (isSet(Z.SEVEN.and(t).intValueExact())) {
           mA = mA.or(bit);
         }
-        bit = bit.shiftLeft(1);
+        bit = bit.multiply2();
         t = t.divide2();
       }
     }

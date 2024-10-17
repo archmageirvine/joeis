@@ -178,9 +178,9 @@ class InverseMonotone extends UnaryCRFunction {
             // If one of the endpoints is very close to the answer, this slows conversion a bit.
             // But it greatly increases the probability that the answer will be in the smaller
             // subinterval.
-            adj = adj.shiftLeft(1);
+            adj = adj.multiply2();
           } else if (adj.compareTo(difference.multiply(Z.THREE).shiftRight(2)) > 0) {
-            adj = difference.subtract(difference.subtract(adj).shiftLeft(1));
+            adj = difference.subtract(difference.subtract(adj).multiply2());
           }
           if (adj.signum() <= 0) {
             adj = Z.TWO;

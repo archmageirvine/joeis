@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000149;
 
 /**
- * A072607.
+ * A072630 Values of n where A072629 switches from 01010.. into 0000.. or back.
  * @author Sean A. Irvine
  */
 public class A072630 extends Sequence1 {

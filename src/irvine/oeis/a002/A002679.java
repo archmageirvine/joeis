@@ -17,7 +17,7 @@ public class A002679 extends Sequence2 {
   @Override
   public Z next() {
     ++mN;
-    mA = mA.shiftLeft(1);
+    mA = mA.multiply2();
     mB = mB.multiply(mN);
     return new Q(mA.subtract(2), mB).multiply(mN).den();
   }

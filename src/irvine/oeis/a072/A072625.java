@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A072607.
+ * A072625 a(n) = prime(n) mod ceiling(log(prime(n))).
  * @author Sean A. Irvine
  */
 public class A072625 extends A000040 {

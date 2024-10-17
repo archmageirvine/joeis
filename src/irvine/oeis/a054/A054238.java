@@ -17,6 +17,6 @@ public class A054238 extends UpperLeftTriangle {
 
   @Override
   public Z matrixElement(final int n, final int k) {
-    return new Z(Integer.toString(n, 2), 4).shiftLeft(1).add(new Z(Integer.toString(k, 2), 4));
+    return new Z(Integer.toString(n, 2), 4).multiply2().add(new Z(Integer.toString(k, 2), 4));
   }
 }

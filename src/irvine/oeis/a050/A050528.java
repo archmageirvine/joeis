@@ -37,7 +37,7 @@ public class A050528 extends AbstractSequence {
   public Z next() {
     while (true) {
       final Z t = mM.add(mAdd);
-      mM = mBase == 2 ? mM.shiftLeft(1) : mM.multiply(mBase);
+      mM = mM.multiply(mBase);
       if (t.isProbablePrime()) {
         return t;
       }

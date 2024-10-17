@@ -35,7 +35,7 @@ public class A030101 extends AbstractSequence implements DirectSequence {
     Z s = n;
     Z r = Z.ZERO;
     while (!s.isZero()) {
-      r = r.shiftLeft(1).or(s.and(Z.ONE));
+      r = r.multiply2().or(s.and(Z.ONE));
       s = s.shiftRight(1);
     }
     return r;

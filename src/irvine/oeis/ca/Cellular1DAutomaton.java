@@ -503,7 +503,7 @@ public class Cellular1DAutomaton extends AbstractSequence {
    * @return 6 for generation 2 of rule 30.
    */
   public Z nextMiddleD() {
-    mSum = mSum.shiftLeft(1).add(getMiddle());
+    mSum = mSum.multiply2().add(getMiddle());
     computeNextRow();
     return mSum;
   }

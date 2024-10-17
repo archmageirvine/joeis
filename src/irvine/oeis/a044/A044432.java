@@ -19,7 +19,7 @@ public class A044432 extends A005614 {
 
   @Override
   public Z next() {
-    mN = mN.shiftLeft(1).or(super.next());
+    mN = mN.multiply2().or(super.next());
     return mN;
   }
 }

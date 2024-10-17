@@ -16,7 +16,7 @@ public class A002259 extends Sequence1 {
   public Z next() {
     while (true) {
       ++mN;
-      mM = mM.shiftLeft(1);
+      mM = mM.multiply2();
       if (mM.add(1).isProbablePrime()) {
         return Z.valueOf(mN);
       }

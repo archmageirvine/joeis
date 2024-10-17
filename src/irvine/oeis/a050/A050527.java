@@ -14,7 +14,7 @@ public class A050527 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      mM = mM.shiftLeft(1);
+      mM = mM.multiply2();
       final Z t = mM.add(1);
       if (t.isProbablePrime()) {
         return t;

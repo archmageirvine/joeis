@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072616.
+ * A072617 Number of essentially different ways of arranging numbers 1 through 2n around a circle so that the sum of each pair of adjacent numbers is prime, with the odd and even numbers in order in opposite directions.
  * @author Sean A. Irvine
  */
 public class A072617 extends Sequence1 {

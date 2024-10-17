@@ -22,7 +22,7 @@ public class A036680 extends EgyptianFractionSequence {
       @Override
       protected Z approximate(final int precision) {
         while (-precision > mPrecision) {
-          mA = mA.shiftLeft(1).add(mCharacteristicPrimes.next());
+          mA = mA.multiply2().add(mCharacteristicPrimes.next());
           ++mPrecision;
         }
         return mA;

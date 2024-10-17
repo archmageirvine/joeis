@@ -14,7 +14,7 @@ public class A284209 extends A059318 {
   @Override
   public Z next() {
     while (true) {
-      mSum = mSum.shiftLeft(1).add(super.next());
+      mSum = mSum.multiply2().add(super.next());
       if (mCol == mRow) {
         final Z result = mSum;
         mSum = Z.ZERO;

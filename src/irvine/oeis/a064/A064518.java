@@ -24,7 +24,7 @@ public class A064518 extends Sequence1 {
       final Map.Entry<Z, Pair<Long, Long>> e = mA.pollFirstEntry();
       final Z n = e.getKey();
       final Pair<Long, Long> exp = e.getValue();
-      mA.put(n.shiftLeft(1), new Pair<>(exp.left() + 1, exp.right()));
+      mA.put(n.multiply2(), new Pair<>(exp.left() + 1, exp.right()));
       mA.put(n.multiply(3), new Pair<>(exp.left(), exp.right() + 1));
       if (exp.left() >= exp.right() && exp.left() <= 2 * exp.right()) {
         return Z.THREE.pow(exp.left()).shiftLeft(2 * exp.right());

@@ -44,7 +44,7 @@ public class A322469 extends Sequence1 {
         }
         break;
       case 2:
-        result = mPrev.shiftLeft(1); // * 2
+        result = mPrev.multiply2();
         mState = 3;
         break;
       default:

@@ -13,7 +13,7 @@ public class A019299 extends A010059 {
 
   @Override
   public Z next() {
-    mA = mA.shiftLeft(1).add(super.next());
+    mA = mA.multiply2().add(super.next());
     return mA;
   }
 }

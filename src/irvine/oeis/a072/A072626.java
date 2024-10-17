@@ -2,13 +2,13 @@ package irvine.oeis.a072;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence2;
+import irvine.oeis.Sequence1;
 
 /**
- * A072626 Parity of Floor[n/log[n]].
+ * A072607.
  * @author Sean A. Irvine
  */
-public class A072626 extends Sequence2 {
+public class A072626 extends Sequence1 {
 
   private long mN = 1;
 

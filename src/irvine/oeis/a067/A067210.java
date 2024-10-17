@@ -40,7 +40,7 @@ public class A067210 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A067210() {
-    this(1, 2);
+    this(0, 2);
   }
 
   private void combine(final Map<List<Integer>, Z> res, final List<Integer> a, final Z v, final List<Integer> b, final int min, final int max) {

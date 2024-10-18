@@ -11,7 +11,7 @@ import irvine.oeis.a059.A059905;
  * A072637 Inverse permutation to A072636.
  * @author Sean A. Irvine
  */
-public class A072637 extends Sequence0 {
+public class A072637 extends Sequence0 implements DirectSequence {
 
   private final DirectSequence mA059905 = new A059905();
   private Z mN = Z.NEG_ONE;
@@ -25,8 +25,18 @@ public class A072637 extends Sequence0 {
   }
 
   @Override
+  public Z a(final Z n) {
+    return A057120.catalanGlobalRank(unpack(n).toZ());
+  }
+
+  @Override
+  public Z a(final int n) {
+    return a(Z.valueOf(n));
+  }
+
+  @Override
   public Z next() {
     mN = mN.add(1);
-    return A057120.catalanGlobalRank(unpack(mN).toZ());
+    return a(mN);
   }
 }

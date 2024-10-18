@@ -28,7 +28,6 @@ public class SingleTransformSequence extends AbstractSequence {
   private final int mInitNo; // mInits.length
   private int mIn; // index for mInits
   private int mN; // current index of target sequence a(n)
-  private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
 
   /**
    * Creates a target sequence from an expression of the source sequence.
@@ -36,7 +35,6 @@ public class SingleTransformSequence extends AbstractSequence {
    * @param lambda function mapping (term, n) to the terms of the target sequence
    * @param initTerms initial terms for a(n)
    * @param seq underlying source sequence
-   *
    * If there are some initial terms for a(n), they are exhausted first, resulting in a target offset n.
    * When the source sequence has an offset &gt; n, an appropriate number of initial target terms must be specified.
    * When the source sequence has an offset &lt; n, an appropriate number of the source sequence&apos;s terms are consumed.
@@ -72,7 +70,7 @@ public class SingleTransformSequence extends AbstractSequence {
   public Z next() {
     ++mN;
     ++mIn;
-    Z result = null;
+    Z result;
     if (mIn < mInitNo) {
       result = mInits[mIn];
       mSeq.next();

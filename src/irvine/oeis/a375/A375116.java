@@ -10,7 +10,7 @@ import irvine.oeis.LambdaSequence;
  */
 public class A375116 extends LambdaSequence {
 
-  private static final int[] SMALL = {16, 25, 35, 45, 55, 65};
+  private static final int[] SMALL = {16, 25, 35, 45, 55, 66};
 
   /** Construct the sequence. */
   public A375116() {

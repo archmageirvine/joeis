@@ -70,7 +70,7 @@ public class SingleTransformSequence extends AbstractSequence {
   public Z next() {
     ++mN;
     ++mIn;
-    Z result;
+    final Z result;
     if (mIn < mInitNo) {
       result = mInits[mIn];
       mSeq.next();

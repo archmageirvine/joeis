@@ -13,6 +13,6 @@ public class A152428 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A152428() {
-    super(0, n -> Functions.DIGIT_LENGTH.z(2, (Functions.FACTORIAL.z(Z.TWO.pow(n)))));
+    super(0, n -> Functions.DIGIT_LENGTH.z(2, Functions.FACTORIAL.z(Z.TWO.pow(n))));
   }
 }

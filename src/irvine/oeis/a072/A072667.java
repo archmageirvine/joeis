@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A072656.
+ * A072667 Consider m such that prime(m) + prime(m+1) = prime(k) + 1 for some k; sequence gives values of prime(m).
  * @author Sean A. Irvine
  */
 public class A072667 extends A000040 {

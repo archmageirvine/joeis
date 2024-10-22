@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a035.A035536;
 
 /**
- * A036814 Number of partitions satisfying (cn(1, 5) = cn(4, 5) and cn(1, 5) &lt;= cn(2, 5) and cn(1, 5) &lt;= cn(3, 5)).
+ * A036814 Number of partitions satisfying (cn(1,5) = cn(4,5) and cn(1,5) &lt;= cn(2,5) and cn(1,5) &lt;= cn(3,5)).
  * @author Georg Fischer
  */
 public class A036814 extends A035536 {

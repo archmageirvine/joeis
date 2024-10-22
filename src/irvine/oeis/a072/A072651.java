@@ -7,7 +7,7 @@ import irvine.oeis.a052.A052409;
 import irvine.oeis.a052.A052410;
 
 /**
- * A072651.
+ * A072651 Table by antidiagonals used in calculating integer solutions to b^c=c^d with b,c,d&gt;0.
  * @author Sean A. Irvine
  */
 public class A072651 extends Sequence1 {

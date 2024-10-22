@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A072660.
+ * A072650 Starting from the right (the least significant end) rewrite 0 to 0 and x1 to 1 in the binary expansion of n.
  * @author Sean A. Irvine
  */
 public class A072650 extends Sequence0 {

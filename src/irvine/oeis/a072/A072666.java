@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A072656.
+ * A072666 Numbers n such that prime(n) + prime(n+1) - 1 is prime.
  * @author Sean A. Irvine
  */
 public class A072666 extends A000040 {

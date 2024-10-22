@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072656.
+ * A072672 Prime(n)*prime(2*n)+prime(n)+prime(2*n).
  * @author Sean A. Irvine
  */
 public class A072672 extends Sequence1 {

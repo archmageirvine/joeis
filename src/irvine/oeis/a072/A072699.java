@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A049000.
+ * A072699 Number of prime factors of A072697(n).
  * @author Sean A. Irvine
  */
 public class A072699 extends Sequence1 {

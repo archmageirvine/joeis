@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a362.A362123;
 
 /**
- * A072656.
+ * A072685 Positive integers whose English names contain a prime number of letters.
  * @author Sean A. Irvine
  */
 public class A072685 extends FilterPositionSequence {

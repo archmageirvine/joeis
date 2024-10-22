@@ -70,6 +70,7 @@ final class Prime {
       case 74207281:
       case 77232917:
       case 82589933:
+      case 136279841:
         return true;
       default:
         return false;

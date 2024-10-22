@@ -6,7 +6,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.a014.A014486;
 
 /**
- * A072660.
+ * A072644 Size of the parenthesizations obtained with the global ranking/unranking scheme A072634-A072637.
  * @author Sean A. Irvine
  */
 public class A072644 extends A072635 {

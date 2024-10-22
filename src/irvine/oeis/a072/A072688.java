@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A072656.
+ * A072688 Of the first n integers (inclusive), how many of them have a prime number of letters in their English names?.
  * @author Sean A. Irvine
  */
 public class A072688 extends Sequence1 {

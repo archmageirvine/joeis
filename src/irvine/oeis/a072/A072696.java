@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A072695.
+ * A072696 a(n) = lcm(d(n^3), d(n)), where d(n) = A000005, the number of divisors of n.
  * @author Sean A. Irvine
  */
 public class A072696 extends LambdaSequence {

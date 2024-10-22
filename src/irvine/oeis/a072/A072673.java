@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.FilterSequence;
 
 /**
- * A072656.
+ * A072673 Primes of form prime(n)*prime(2*n)+prime(n)+prime(2*n).
  * @author Sean A. Irvine
  */
 public class A072673 extends FilterSequence {

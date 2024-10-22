@@ -6,7 +6,7 @@ import irvine.oeis.a048.A048679;
 import irvine.oeis.a059.A059906;
 
 /**
- * A072656.
+ * A072662 Composition of the A059906 and A048679, i.e., a(n) = A059906(A048679(n)).
  * @author Sean A. Irvine
  */
 public class A072662 extends A048679 {

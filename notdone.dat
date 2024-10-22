@@ -2438,3 +2438,4 @@ A072619 Permutation of natural numbers obtained from the permutation A072088 (ze
 A072620 Permutation of natural numbers obtained from the permutation A072089 (zero-based)
 A072621 Permutation of natural numbers obtained from the permutation A072088 (one-based).
 A072622 Permutation of natural numbers obtained from the permutation A072089 (one-based).
+A072716 Integers expressible as (x^3 + y^3 + z^3)/(x*y*z) with positive integers x, y and z. (Alternatively, the integers expressible as x/y + y/z + z/x with positive integers x, y and z.)

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072656.
+ * A072664 End of smallest run of n consecutive integers with n, n-1, ..., 1 distinct prime factors in that order.
  * @author Sean A. Irvine
  */
 public class A072664 extends Sequence1 {

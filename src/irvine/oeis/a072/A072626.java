@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072607.
+ * A072626 Parity of Floor[n/log[n]].
  * @author Sean A. Irvine
  */
 public class A072626 extends Sequence1 {

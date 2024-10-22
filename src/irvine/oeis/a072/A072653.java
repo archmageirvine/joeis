@@ -4,7 +4,7 @@ import irvine.oeis.DistinctSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A072651.
+ * A072653 Uniqued integer solutions n to n = b^c = c^d.
  * @author Sean A. Irvine
  */
 public class A072653 extends DistinctSequence {

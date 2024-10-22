@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A376844 Numbers k such that (k + k&apos;)&apos; = k&apos; + k&apos;&apos;, where &apos; denotes the arithmetic derivative A003415.
+ * A376844 Numbers k such that (k + k')' = k' + k'', where ' denotes the arithmetic derivative A003415.
  * @author Georg Fischer
  */
 public class A376844 extends FilterNumberSequence {

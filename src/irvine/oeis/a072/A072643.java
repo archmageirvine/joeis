@@ -5,7 +5,7 @@ import irvine.oeis.a014.A014486;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A072642.
+ * A072643 Half of the binary width of the terms of A014486, the number of digits in A063171(n)/2.
  * @author Sean A. Irvine
  */
 public class A072643 extends SimpleTransformSequence {

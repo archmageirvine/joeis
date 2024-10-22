@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A072642.
+ * A072655 Binary widths of the terms of A072654.
  * @author Sean A. Irvine
  */
 public class A072655 extends SimpleTransformSequence {

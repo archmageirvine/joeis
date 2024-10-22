@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a024.A024919;
 
 /**
- * A072656.
+ * A072663 Numbers m such that Sum_{k=1..m} (-1)^k*k*floor(m/k) = 0.
  * @author Sean A. Irvine
  */
 public class A072663 extends FilterPositionSequence {

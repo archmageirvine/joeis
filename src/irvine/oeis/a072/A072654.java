@@ -6,7 +6,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.a014.A014486;
 
 /**
- * A072640 Maximum position in A072660 where the value n occurs.
+ * A072654 Maximum position in A072645 where the value n occurs.
  * @author Sean A. Irvine
  */
 public class A072654 extends A014486 {

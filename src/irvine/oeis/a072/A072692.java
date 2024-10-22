@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A049000.
+ * A072692 Sum of sigma(j) for 1&lt;=j&lt;=10^n, where sigma(j) is the sum of the divisors of j.
  * @author Sean A. Irvine
  */
 public class A072692 extends Sequence0 {

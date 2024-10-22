@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A049000.
+ * A072697 Squarefree numbers such that the sum of the prime factors is a multiple of the number of prime factors.
  * @author Sean A. Irvine
  */
 public class A072697 extends Sequence1 {

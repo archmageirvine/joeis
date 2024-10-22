@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072651.
+ * A072652 Ordered solutions greater than 1 to b^c=c^d, with multiplicity.
  * @author Sean A. Irvine
  */
 public class A072652 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.FilterSequence;
 
 /**
- * A072656.
+ * A072686 Prime numbers whose (British) English names have a prime number of letters.
  * @author Sean A. Irvine
  */
 public class A072686 extends FilterSequence {

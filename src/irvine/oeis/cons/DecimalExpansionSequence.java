@@ -3,13 +3,44 @@ package irvine.oeis.cons;
 import java.io.Serializable;
 
 import irvine.math.cr.CR;
+import irvine.math.q.Q;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * Sequence formed by the decimal expansion of a computable real number.
  * @author Sean A. Irvine
  */
 public class DecimalExpansionSequence extends RealConstantSequence implements Serializable {
+
+  /**
+   * Create an expansion from an arbitrary sequence.  This sometimes useful
+   * when there is a need to treat a sequence as real value via <code>getCR</code>.
+   * @param seq underlying sequence
+   * @return sequence as a <code>DecimalExpansionSequence</code>
+   */
+  public static DecimalExpansionSequence create(final Sequence seq) {
+    if (seq instanceof DecimalExpansionSequence) {
+      return (DecimalExpansionSequence) seq;
+    }
+
+    // Note: currently this makes no effort to obey offsets and probably only
+    // works properly for numbers between 0 and 1.
+    // Also, it is assumed the input sequence has values 0-9.
+    return new DecimalExpansionSequence(new CR() {
+      private Z mV = Z.ZERO;
+      private Z mD = Z.ONE;
+
+      @Override
+      protected Z approximate(final int precision) {
+        while (mD.bitLength() <= -precision) {
+          mD = mD.multiply(10);
+          mV = mV.multiply(10).add(seq.next());
+        }
+        return CR.valueOf(new Q(mV, mD)).getApprox(precision);
+      }
+    });
+  }
 
   private final int mBase;
   private String mS = "";

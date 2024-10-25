@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
- * A011794 Triangle defined by a(n+1,k)=a(n,k-1)+a(n-1,k), a(n,1)=1, a(1,k)=1, a(2,k)=min(2,k).
+ * A011794 Triangle defined by T(n+1, k) = T(n, k-1) + T(n-1, k), T(n,1) = 1, T(1,k) = 1, T(2,k) = min(2,k).
  * @author Sean A. Irvine
  */
 public class A011794 extends MemoryFunction2Sequence<Long, Z> {

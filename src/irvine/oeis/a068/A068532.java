@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068532 a(n)=(5^(2^n)-1)/2^(n+2)/3.
+ * A068532 a(n) = (5^(2^n)-1)/2^(n+2)/3.
  * @author Sean A. Irvine
  */
 public class A068532 extends Sequence1 {

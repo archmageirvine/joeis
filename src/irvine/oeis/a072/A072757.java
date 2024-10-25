@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.ComplementSequence;
 
 /**
- * A072724.
+ * A072757 Complement of A072756.
  * @author Sean A. Irvine
  */
 public class A072757 extends ComplementSequence {

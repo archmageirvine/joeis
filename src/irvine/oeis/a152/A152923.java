@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a139.A139306;
 /**
- * A152923 2^(2p-1)/8, where p is A000043(n).
+ * A152923 a(n) = 2^(2*p-1)/8, where p is A000043(n).
  * @author Georg Fischer
  */
 public class A152923 extends Sequence1 {

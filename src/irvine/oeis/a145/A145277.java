@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A145277 a(n)=A145234(n+1)/A145234(n).
+ * A145277 a(n) = A145234(n+1)/A145234(n).
  *
  * @author Georg Fischer
  */

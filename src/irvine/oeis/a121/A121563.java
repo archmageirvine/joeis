@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A121563 Numerator of Sum[i=1..n] i!/(i^i).
+ * A121563 Numerator of Sum_{i=1..n} i!/(i^i).
  * @author Georg Fischer
  */
 public class A121563 extends LambdaSequence {

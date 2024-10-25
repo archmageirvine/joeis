@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A011911 [ n(n-1)(n-2)/29 ].
+ * A011911 a(n) = floor( n*(n-1)*(n-2)/29 ).
  * @author Sean A. Irvine
  */
 public class A011911 extends Sequence0 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A072624 Mod[Prime[n^2],n^2].
+ * A072624 a(n) = prime(n^2) mod n^2.
  * @author Sean A. Irvine
  */
 public class A072624 extends A000040 {

@@ -6,7 +6,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A238182 Decimal expansion of sum_(n&gt;=1) H(n)^2/n^4 where H(n) is the n-th harmonic number (Quadratic Euler Sum S(2,4)).
+ * A238182 Decimal expansion of Sum_{n&gt;=1} H(n)^2/n^4 where H(n) is the n-th harmonic number (Quadratic Euler Sum S(2,4)).
  * Formula: Decimal expansion of sum_(n>=1) H(n)^2/n^4 where H(n) is the n-th harmonic number (Quadratic Euler Sum S(2,4)). nonn,cons       1..100  nyi
  * @author Georg Fischer
  */

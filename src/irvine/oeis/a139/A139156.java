@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 // DO NOT EDIT here!
 
 /**
- * A139156 Natural numbers of the form (n!+9)/9.
+ * A139156 a(n) = (n!+9)/9.
  * @author Georg Fischer
  */
 public class A139156 extends A139149 {

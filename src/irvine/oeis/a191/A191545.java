@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.DispersionArray;
 
 /**
- * A191545 Dispersion of (floor(9n/4)), by antidiagonals.
+ * A191545 Dispersion of (floor(9*n/4)), by antidiagonals.
  * @author Georg Fischer
  */
 public class A191545 extends DispersionArray {

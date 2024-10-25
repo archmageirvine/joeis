@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a001.A001317;
 
 /**
- * A177897 Triangle of octanomial coefficients read by rows: n-th row is obtained by expanding ((1+x)*(1+x^2)*(1+x^4))^n ] mod 2 and converting to decimal.
+ * A177897 Triangle of octanomial coefficients read by rows: n-th row is obtained by expanding ((1+x)*(1+x^2)*(1+x^4))^n mod 2 and converting to decimal.
  * @author Georg Fischer
  */
 public class A177897 extends FilterSequence {

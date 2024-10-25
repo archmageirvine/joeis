@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A049330 Numerator of (1/Pi)*Integral_{x=0..infinity} (sin(x)/x)^n dx.
+ * A049330 Numerator of (1/Pi)*Integral_{x=0..oo} (sin(x)/x)^n dx.
  * @author Sean A. Irvine
  */
 public class A049330 extends Sequence1 {

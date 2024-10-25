@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000043;
 
 /**
- * A057224 Numbers n such that (Product of first n Mersenne prime exponents) + 1 is prime.
+ * A057224 Numbers k such that (Product of first k Mersenne prime exponents) + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A057224 extends A000043 {

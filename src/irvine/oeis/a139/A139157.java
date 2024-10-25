@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 // DO NOT EDIT here!
 
 /**
- * A139157 Natural numbers of the form (n!+10)/10.
+ * A139157 a(n) = (n!+10)/10.
  * @author Georg Fischer
  */
 public class A139157 extends A139149 {

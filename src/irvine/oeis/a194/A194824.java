@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A194824 a(n) = 2+floor(sum{&lt;((-1)^k)*k*sqrt(3)&gt; : 1&lt;=k&lt;=n}), where &lt; &gt; = fractional part.
+ * A194824 a(n) = 2+floor(Sum_{k=1..n} &lt;((-1)^k)*k*sqrt(3)&gt;), where &lt; &gt; = fractional part.
  * @author Georg Fischer
  */
 public class A194824 extends LambdaSequence {

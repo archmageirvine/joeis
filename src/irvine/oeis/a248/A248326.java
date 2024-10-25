@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaArray;
 
 /**
- * A248326 Square array read by antidiagonals downward: super Patalan numbers of order 5.
+ * A248326 Square array read by downward antidiagonals: super Patalan numbers of order 5.
  * @author Georg Fischer
  */
 public class A248326 extends LambdaArray {

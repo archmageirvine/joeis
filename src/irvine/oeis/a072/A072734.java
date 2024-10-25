@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002262;
 import irvine.oeis.a025.A025581;
 
 /**
- * A072555.
+ * A072734 Simple triangle-stretching N X N -&gt; N bijection, variant of A072732.
  * @author Sean A. Irvine
  */
 public class A072734 extends Sequence0 {

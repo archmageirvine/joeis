@@ -7,7 +7,7 @@ package irvine.oeis.a051;
 import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
- * A051159 Triangular array made of three copies of Pascal's triangle.
+ * A051159 Triangle read by rows: T(n, k) = binomial(n mod 2, k mod 2) * binomial(n div 2, k div 2), where 'div' denotes integer division.
  * @author Georg Fischer
  */
 public class A051159 extends GeneratingFunctionTriangle {

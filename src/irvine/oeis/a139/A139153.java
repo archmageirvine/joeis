@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 // DO NOT EDIT here!
 
 /**
- * A139153 Natural numbers of the form (n!+6)/6.
+ * A139153 a(n) = (n!+6)/6.
  * @author Georg Fischer
  */
 public class A139153 extends A139149 {

@@ -4,7 +4,7 @@ package irvine.oeis.a188;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A188572 Coefficients of the term by sqrt(3) in (1 + sqrt(2) + sqrt(3))^n sequence, denoted as C3(n).
+ * A188572 a(n) = coefficient of sqrt(3) in the expansion of (1 + sqrt(2) + sqrt(3))^n sequence.
  * @author Georg Fischer
  */
 public class A188572 extends GeneratingFunctionSequence {

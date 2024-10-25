@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a000.A000043;
 
 /**
- * A090748 Numbers n such that 2^(n+1) - 1 is prime.
+ * A090748 Numbers k such that 2^(k+1) - 1 is prime.
  * @author Georg Fischer
  */
 public class A090748 extends AbstractSequence {

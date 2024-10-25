@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A038003 Odd Catalan numbers; more precisely, A000108(2^n-1).
+ * A038003 Odd Catalan numbers: a(n) = A000108(2^n-1).
  * @author Sean A. Irvine
  */
 public class A038003 extends Sequence0 {

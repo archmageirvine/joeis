@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A011887 [ n(n-1)(n-2)/5 ].
+ * A011887 a(n) = floor( n*(n-1)*(n-2)/5 ).
  * @author Sean A. Irvine
  */
 public class A011887 extends Sequence0 {

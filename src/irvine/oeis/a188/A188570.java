@@ -4,7 +4,7 @@ package irvine.oeis.a188;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A188570 Coefficients of the absolute term in (1 + sqrt(2) + sqrt(3))^n sequence, denoted as C1(n).
+ * A188570 a(n) = coefficient of the term that is independent of sqrt(2) and sqrt(3) in the expansion of (1 + sqrt(2) + sqrt(3))^n.
  * @author Georg Fischer
  */
 public class A188570 extends LinearRecurrence {

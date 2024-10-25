@@ -5,7 +5,7 @@ import irvine.oeis.a047.A047349;
 import irvine.oeis.triangle.DispersionArray;
 
 /**
- * A191544 Dispersion of (floor(7n/3)), by antidiagonals.
+ * A191544 Dispersion of (floor(7*n/3)), by antidiagonals.
  * @author Georg Fischer
  */
 public class A191544 extends DispersionArray {

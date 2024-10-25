@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.HypergeometricSequence;
 
 /**
- * A072678.
+ * A072693 Special values of confluent hypergeometric function 1F1: a(n)=(5*n)!*hypergeom([5*n+1],[6],1)/(5!*exp(1)).
  * @author Sean A. Irvine
  */
 public class A072693 extends HypergeometricSequence {

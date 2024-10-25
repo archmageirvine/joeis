@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 // DO NOT EDIT here!
 
 /**
- * A139152 Natural numbers of the form (n!+5)/5.
+ * A139152 a(n) = (n!+5)/5.
  * @author Georg Fischer
  */
 public class A139152 extends A139149 {

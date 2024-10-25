@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A075084 Number of composite numbers between n and 2n.
+ * A075084 Number of composite numbers c with n &lt;= c &lt;= 2*n.
  * a(n)=n-primepi(2*n)+primepi(n-1)+1
  * @author Georg Fischer
  */

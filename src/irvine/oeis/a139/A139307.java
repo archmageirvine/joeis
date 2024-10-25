@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000043;
 
 /**
- * A139307 (2^(2p - 1)) - 1, where p is A000043(n).
+ * A139307 a(n) = (2^(2*p - 1)) - 1, where p is A000043(n).
  * @author Georg Fischer
  */
 public class A139307 extends Sequence1 {

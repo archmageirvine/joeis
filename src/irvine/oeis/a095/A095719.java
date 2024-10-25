@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A095719 Sum(floor(C(n-k,k)/(k+1)),k=0..n/2).
+ * A095719 a(n) = Sum_{k = 0..floor(n/2)} floor(C(n-k,k)/(k+1)).
  * a(n)=sum(k=0,n/2,floor(binom(n-k,k)/(k+1)))
  * @author Georg Fischer
  */

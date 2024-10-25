@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a036.A036263;
 
 /**
- * A064149 Numbers k such that A036263(k) = A036263(k+1), using signed version of A036263.
+ * A064149 Indices of zeros of third differences of primes: Numbers k such that A036264(k) = 0.
  * @author Sean A. Irvine
  */
 public class A064149 extends A036263 {

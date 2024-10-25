@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A259530 Numbers n such that 136^n - 135^n is prime.
+ * A259530 Numbers k such that 136^k - 135^k is prime.
  * @author Georg Fischer
  */
 public class A259530 extends PrimePositionSubsequence {

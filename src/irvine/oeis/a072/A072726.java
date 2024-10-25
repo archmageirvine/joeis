@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A072700.
+ * A072726 Numerator of the rationals &gt;= 1 whose continued fractions consist of only even terms, in ascending order by the sum of the continued fraction terms and descending by lowest order continued fraction terms to highest.
  * @author Sean A. Irvine
  */
 public class A072726 extends CachedSequence {

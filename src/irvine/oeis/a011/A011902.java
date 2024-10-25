@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A011902 [ n(n-1)(n-2)/20 ].
+ * A011902 a(n) = floor( n*(n-1)*(n-2)/20 ).
  * @author Sean A. Irvine
  */
 public class A011902 extends Sequence0 {

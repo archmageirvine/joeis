@@ -5,7 +5,7 @@ import irvine.oeis.a016.A016789;
 import irvine.oeis.triangle.DispersionArray;
 
 /**
- * A191450 Dispersion of (3n-1), read by antidiagonals.
+ * A191450 Dispersion of (3*n-1), read by antidiagonals.
  * @author Georg Fischer
  */
 public class A191450 extends DispersionArray {

@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 // DO NOT EDIT here!
 
 /**
- * A139150 Natural numbers of the form (n!+3)/3.
+ * A139150 a(n) = (n!+3)/3.
  * @author Georg Fischer
  */
 public class A139150 extends A139149 {

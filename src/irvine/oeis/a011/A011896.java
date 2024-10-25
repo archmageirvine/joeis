@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A011896 [ n(n-1)(n-2)/14 ].
+ * A011896 a(n) = floor( n*(n-1)*(n-2)/14 ).
  * @author Sean A. Irvine
  */
 public class A011896 extends Sequence0 {

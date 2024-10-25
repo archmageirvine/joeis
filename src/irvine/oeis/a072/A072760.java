@@ -1,7 +1,7 @@
 package irvine.oeis.a072;
 
 /**
- * A072722 Smallest of 6 consecutive integers divisible respectively by 6 consecutive primes.
+ * A072760 Smallest of 7 consecutive integers divisible respectively by 7 consecutive primes.
  * @author Sean A. Irvine
  */
 public class A072760 extends A072555 {

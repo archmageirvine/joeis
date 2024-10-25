@@ -6,7 +6,7 @@ import irvine.oeis.a061.A061652;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A139096 Infraperfect numbers: 2^(2p - 1) - 2^p, where p is A000043(n).
+ * A139096 Infraperfect numbers: a(n) = 2^(2*p - 1) - 2^p, where p is A000043(n).
  * @author Georg Fischer
  */
 public class A139096 extends MultiTransformSequence {

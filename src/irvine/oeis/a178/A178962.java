@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a007.A007322;
 
 /**
- * A178962 Partial sums of number of functors of degree n from free Abelian groups to Abelian groups A007322.
+ * A178962 Partial sums of A007322.
  * @author Sean A. Irvine
  */
 public class A178962 extends PartialSumSequence {

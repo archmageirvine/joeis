@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A072724.
+ * A072758 a(0)=0, a(1)=1 and for k&gt;1, a(2k)=least positive integer not a(j) for j&lt;2k; and a(2k+1)=a(2k)+Floor(a(2k)/2).
  * @author Sean A. Irvine
  */
 public class A072758 extends Sequence0 {

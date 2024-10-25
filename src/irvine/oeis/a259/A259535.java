@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A259535 Numbers n such that 159^n - 158^n is prime.
+ * A259535 Numbers k such that 159^k - 158^k is prime.
  * @author Georg Fischer
  */
 public class A259535 extends PrimePositionSubsequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 // DO NOT EDIT here!
 
 /**
- * A139155 Natural numbers of the form (n!+8)/8.
+ * A139155 a(n) = (n!+8)/8.
  * @author Georg Fischer
  */
 public class A139155 extends A139149 {

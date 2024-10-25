@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001951;
 import irvine.oeis.triangle.DispersionArray;
 
 /**
- * A191431 Dispersion of ([nx+x]), where x=sqrt(2) and [ ]=floor, by antidiagonals.
+ * A191431 Dispersion of ([n*x+x]), where x=sqrt(2) and [ ]=floor, by antidiagonals.
  * @author Georg Fischer
  */
 public class A191431 extends DispersionArray {

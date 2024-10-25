@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000203;
 
 /**
- * A180930 Numbers n such that the sum of divisors of n is a hexagonal number.
+ * A180930 Numbers whose sum of divisors is a hexagonal number.
  * @author Georg Fischer
  */
 public class A180930 extends FilterPositionSequence {

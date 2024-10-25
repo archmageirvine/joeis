@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072555.
+ * A072742 Lesser members of a pair of primes (p, q) such that, for some integer k, (p+q)/2 = 2^k and p &gt; 2^(k-1).
  * @author Sean A. Irvine
  */
 public class A072742 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.triangle.DispersionArray;
 
 /**
- * A191427 Dispersion of ([nr+3/2]), where r=(golden ratio)=(1+sqrt(5))/2 and [ ]=floor, by antidiagonals.
+ * A191427 Dispersion of ([n*r+3/2]), where r=(golden ratio)=(1+sqrt(5))/2 and [ ]=floor, by antidiagonals.
  * @author Georg Fischer
  */
 public class A191427 extends DispersionArray {

@@ -5,7 +5,7 @@ import irvine.oeis.a047.A047238;
 import irvine.oeis.triangle.DispersionArray;
 
 /**
- * A191453 Dispersion of (2*floor(3n/2)), by antidiagonals.
+ * A191453 Dispersion of (2*floor(3*n/2)), by antidiagonals.
  * @author Georg Fischer
  */
 public class A191453 extends DispersionArray {

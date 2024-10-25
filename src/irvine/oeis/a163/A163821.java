@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000043;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A163821 a(n) = product of digits of A000043(n).
+ * A163821 a(n) = product of decimal digits of A000043(n).
  * @author Georg Fischer
  */
 public class A163821 extends SimpleTransformSequence {

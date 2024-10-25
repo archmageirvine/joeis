@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A033466 First differences of sequence {1/(n^2+1)} (denominators).
+ * A033466 Denominators of the first differences of 1/(n^2 + 1).
  * @author Sean A. Irvine
  */
 public class A033466 extends A033465 {

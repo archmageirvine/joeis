@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005117;
 
 /**
- * A072555.
+ * A072750 Counting factor 7 in the first n squarefree numbers.
  * @author Sean A. Irvine
  */
 public class A072750 extends A005117 {

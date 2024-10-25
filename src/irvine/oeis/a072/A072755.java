@@ -5,7 +5,7 @@ import irvine.oeis.cons.ContinuedFractionDenominatorSequence;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A072555.
+ * A072755 Denominators of continued fraction convergents to Copeland-Erdos constant.
  * @author Sean A. Irvine
  */
 public class A072755 extends ContinuedFractionDenominatorSequence {

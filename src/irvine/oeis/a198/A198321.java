@@ -7,7 +7,7 @@ package irvine.oeis.a198;
 import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
- * A198321 Triangle T(n,k), read by rows, given by (0,1,0,0,0,0,0,0,0,0,0,...) DELTA (1,1,-1,1,0,0,0,0,0,0,0,...) where DELTA is the operator defined in A084938.
+ * A198321 Triangle read by rows: T(n, k) = binomial(n, k-1) for 1 &lt;= k &lt;= n, and T(n, 0) = 0^n.
  * @author Georg Fischer
  */
 public class A198321 extends GeneratingFunctionTriangle {

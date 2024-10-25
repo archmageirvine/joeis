@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072679.
+ * A072679 a(n) = (3*(n-1)+3)! *(3*(n-1)+6)! *2F2(3*n+1,3*n+4; 4,7; 1)/( 3! *6! *exp(1)), where 2F2(;;) is the generalized hypergeometric series.
  * @author Sean A. Irvine
  */
 public class A072679 extends Sequence1 {

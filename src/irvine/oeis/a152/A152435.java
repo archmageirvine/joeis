@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A152435 a(n)=(11^n - 1)/(5*2^(3 - 2*Mod[n, 2])).
+ * A152435 a(n) = (11^n - 1)/(5*2^(3 - 2*(n mod 2))).
  * @author Georg Fischer
  */
 public class A152435 extends HolonomicRecurrence {

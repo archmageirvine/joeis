@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.triangle.DispersionArray;
 
 /**
- * A191434 Dispersion of ([nx+n+3/2]), where x=(golden ratio) and [ ]=floor, by antidiagonals.
+ * A191434 Dispersion of ([n*x+n+3/2]), where x=(golden ratio) and [ ]=floor, by antidiagonals.
  * @author Georg Fischer
  */
 public class A191434 extends DispersionArray {

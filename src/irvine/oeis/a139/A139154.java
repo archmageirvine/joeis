@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 // DO NOT EDIT here!
 
 /**
- * A139154 Natural numbers of the form (n!+7)/7.
+ * A139154 a(n) = (n!+7)/7.
  * @author Georg Fischer
  */
 public class A139154 extends A139149 {

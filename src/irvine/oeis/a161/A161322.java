@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000043;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A161322 a(n)=A000043(n) written in base 4.
+ * A161322 a(n) = A000043(n) written in base 4.
  * @author Georg Fischer
  */
 public class A161322 extends SimpleTransformSequence {

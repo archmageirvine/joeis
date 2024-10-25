@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002262;
 import irvine.oeis.a025.A025581;
 
 /**
- * A072555.
+ * A072732 Simple triangle-stretching N X N -&gt; N bijection: push terms in the middle twice as far down to make space for the terms obtained by bisecting the edges, which are thus contracted by the same factor. Do this for all "triangle-shells" successively contained inside each other in A001477.
  * @author Sean A. Irvine
  */
 public class A072732 extends Sequence0 {

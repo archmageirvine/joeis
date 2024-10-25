@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A033465 First differences of sequence {1/(n^2+1)} (numerators).
+ * A033465 Numerators of the first differences of 1/(n^2 + 1).
  * @author Sean A. Irvine
  */
 public class A033465 extends Sequence0 {

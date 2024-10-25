@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A011907 [ n(n-1)(n-2)/25 ].
+ * A011907 a(n) = floor( n*(n-1)*(n-2)/25 ).
  * @author Sean A. Irvine
  */
 public class A011907 extends Sequence0 {

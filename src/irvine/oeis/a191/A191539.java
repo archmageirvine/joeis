@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.DispersionArray;
 
 /**
- * A191539 Dispersion of (5n-floor(n*sqrt(5))), by antidiagonals.
+ * A191539 Dispersion of (5*n-floor(n*sqrt(5))), by antidiagonals.
  * @author Georg Fischer
  */
 public class A191539 extends DispersionArray {

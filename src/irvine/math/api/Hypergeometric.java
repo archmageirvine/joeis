@@ -2,7 +2,6 @@ package irvine.math.api;
 
 /**
  * Definition of hypergeometric functions.
- *
  * @author Sean A. Irvine
  * @param <E> element type
  */
@@ -13,7 +12,6 @@ public interface Hypergeometric<E> {
    * lower parameters at the specified argument.  Due to the complexity
    * of this function, implementations are free to throw various
    * exceptions if the computation cannot be performed.
-   *
    * @param upperParameters upper parameters
    * @param lowerParameters lower parameters
    * @param z argument
@@ -24,7 +22,6 @@ public interface Hypergeometric<E> {
 
   /**
    * Compute the confluent hypergeometric function <code>F(a;b;z)</code>.
-   *
    * @param a parameter
    * @param b parameter
    * @param z argument

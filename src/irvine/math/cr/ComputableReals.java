@@ -5,6 +5,7 @@ import java.util.Iterator;
 import irvine.math.api.Ei;
 import irvine.math.api.Exp;
 import irvine.math.api.HyperbolicTrigonometric;
+import irvine.math.api.Hypergeometric;
 import irvine.math.api.Pow;
 import irvine.math.api.Sqrt;
 import irvine.math.api.Trigonometric;
@@ -17,7 +18,7 @@ import irvine.util.AbstractIterator;
  * Field of real numbers under addition and multiplication.
  * @author Sean A. Irvine
  */
-public final class ComputableReals extends AbstractOrderedField<CR> implements Exp<CR>, HyperbolicTrigonometric<CR>, Pow<CR>, Sqrt<CR>, Trigonometric<CR>, Ei<CR> {
+public final class ComputableReals extends AbstractOrderedField<CR> implements Exp<CR>, HyperbolicTrigonometric<CR>, Pow<CR>, Sqrt<CR>, Trigonometric<CR>, Ei<CR>, Hypergeometric<CR> {
 
   /** Field of real numbers under addition and multiplication. */
   public static final ComputableReals SINGLETON = new ComputableReals();
@@ -270,5 +271,21 @@ public final class ComputableReals extends AbstractOrderedField<CR> implements E
   @Override
   public Z round(final CR n) {
     return n.round();
+  }
+
+
+  @Override
+  public CR hypergeometric(final CR[] upperParameters, final CR[] lowerParameters, final CR z) {
+    return HypergeometricImpl.hypergeometric(upperParameters, lowerParameters, z);
+  }
+
+  @Override
+  public CR hypergeometric(final CR a, final CR b, final CR z) {
+    return HypergeometricImpl.hypergeometric(new CR[] {a}, new CR[] {b}, z);
+  }
+
+  @Override
+  public CR hypergeometric(final CR a, final CR b, final CR c, final CR z) {
+    return HypergeometricImpl.hypergeometric(new CR[] {a, b}, new CR[] {c}, z);
   }
 }

@@ -120,7 +120,7 @@ import irvine.util.string.StringUtils;
 * immutable; thus all of these operations return a new computable real.
 * <p>
 * A few uses will require explicit construction of approximation functions.
-* The requires the construction of a subclass of <code>CR</code> with
+* This requires the construction of a subclass of <code>CR</code> with
 * an overridden <code>approximate</code> function.  Note that <code>approximate</code>
 * should only be defined, but never called.  <code>getAppr</code>
 * provides the same functionality, but adds the caching necessary to obtain

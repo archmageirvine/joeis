@@ -10,7 +10,7 @@ import irvine.oeis.a014.A014486;
 import irvine.oeis.a025.A025581;
 
 /**
- * A072750.
+ * A072768 The RASTxx transformation of the sequence A072643.
  * @author Sean A. Irvine
  */
 public class A072768 extends Sequence1 {

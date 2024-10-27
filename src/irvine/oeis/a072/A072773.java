@@ -10,7 +10,7 @@ import irvine.oeis.a014.A014486;
 import irvine.oeis.a057.A057120;
 
 /**
- * A072750.
+ * A072773 The upper triangular region of A072764.
  * @author Sean A. Irvine
  */
 public class A072773 extends Sequence0 {

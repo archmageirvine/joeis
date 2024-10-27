@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066727 Least factor of n^Phi(n) -1.
+ * A066727 Least factor of n^phi(n) - 1.
  * @author Sean A. Irvine
  */
 public class A066727 extends Sequence1 {

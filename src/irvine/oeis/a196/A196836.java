@@ -6,7 +6,7 @@ package irvine.oeis.a196;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A196836 (1^n + 2^n +3^n + 4^n)/2.
+ * A196836 a(n) = (1^n + 2^n +3^n + 4^n)/2.
  * @author Georg Fischer
  */
 public class A196836 extends HolonomicRecurrence {

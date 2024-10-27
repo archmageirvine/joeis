@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A166719 Numbers with at most 5 prime factors (counted with multiplicity)
+ * A166719 Numbers with at most 5 prime factors (counted with multiplicity).
  * @author Georg Fischer
  */
 public class A166719 extends FilterNumberSequence {

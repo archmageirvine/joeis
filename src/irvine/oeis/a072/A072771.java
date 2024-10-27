@@ -8,7 +8,7 @@ import irvine.oeis.a014.A014486;
 import irvine.oeis.a057.A057120;
 
 /**
- * A072750.
+ * A072771 X-projection of the tabular N X N -&gt; N bijection A072764 and Y-projection of its transpose A072766.
  * @author Sean A. Irvine
  */
 public class A072771 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterSequence;
 
 /**
- * A072750.
+ * A072777 Powers of squarefree numbers that are not squarefree.
  * @author Sean A. Irvine
  */
 public class A072777 extends FilterSequence {

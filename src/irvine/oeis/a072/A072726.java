@@ -30,7 +30,7 @@ public class A072726 extends CachedSequence {
       }
       --k;
       v >>>= 1;
-      int m = n - v;
+      final int m = n - v;
       int j = k;
       while (v > m) {
         v >>>= 1;

@@ -5,7 +5,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.a002.A002262;
 
 /**
- * A072750.
+ * A072782 Y-projection of the tabular N X N -&gt; N bijection A072735.
  * @author Sean A. Irvine
  */
 public class A072782 extends A072734 {

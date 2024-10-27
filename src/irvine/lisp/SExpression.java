@@ -172,6 +172,14 @@ public final class SExpression extends ArrayList<SExpression> {
   }
 
   /**
+   * Return the remaining elements of the first element in the expression.
+   * @return tail of the first element.
+   */
+  public SExpression cadr() {
+    return car().cdr();
+  }
+
+  /**
    * Return the tail of the tail.
    * @return tail of the fail.
    */

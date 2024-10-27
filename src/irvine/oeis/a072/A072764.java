@@ -10,7 +10,7 @@ import irvine.oeis.a025.A025581;
 import irvine.oeis.a057.A057120;
 
 /**
- * A072750.
+ * A072764 Tabular N X N -&gt; N bijection induced by Lisp/Scheme function 'cons' combining the two planar binary trees/general trees/parenthesizations encoded by A014486(X) and A014486(Y).
  * @author Sean A. Irvine
  */
 public class A072764 extends Sequence0 {

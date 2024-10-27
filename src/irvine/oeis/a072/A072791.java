@@ -4,13 +4,13 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A072770 Triangle A072768 computed modulo 2.
+ * A072791 Binary widths of A072790.
  * @author Sean A. Irvine
  */
-public class A072770 extends SimpleTransformSequence {
+public class A072791 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
-  public A072770() {
-    super(1, new A072768(), Z.ONE::and);
+  public A072791() {
+    super(0, new A072790(), v -> Z.valueOf(v.bitLength()));
   }
 }

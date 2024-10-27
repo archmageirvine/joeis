@@ -13,7 +13,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.string.StringUtils;
 
 /**
- * A376902
+ * A376902 allocated for Walter Scharold.
  * @author Sean A. Irvine
  */
 public class A376902 extends A000040 {

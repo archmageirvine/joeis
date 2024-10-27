@@ -10,7 +10,7 @@ import irvine.oeis.a025.A025581;
 import irvine.oeis.a057.A057120;
 
 /**
- * A072750.
+ * A072766 Transpose of A072764, 'cons' with arguments swapped.
  * @author Sean A. Irvine
  */
 public class A072766 extends Sequence0 {

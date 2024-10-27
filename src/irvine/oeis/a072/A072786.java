@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.Combiner;
 
 /**
- * A072750.
+ * A072786 Differences between A072782 and A072739.
  * @author Sean A. Irvine
  */
 public class A072786 extends Combiner {

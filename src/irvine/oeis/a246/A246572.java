@@ -4,7 +4,7 @@ package irvine.oeis.a246;
 import irvine.oeis.transform.ConvolutionProduct;
 
 /**
- * A246572  G.f.: sqrt( Sum_{n&gt;=0} x^n / (1-x)^(4*n+1) * [Sum_{k=0..2*n} C(2*n,k)^2 * x^k]^2 ).
+ * A246572 G.f.: sqrt( Sum_{n&gt;=0} x^n / (1-x)^(4*n+1) * [Sum_{k=0..2*n} C(2*n,k)^2 * x^k]^2 ).
  * @author Georg Fischer
  */
 public class A246572 extends ConvolutionProduct {

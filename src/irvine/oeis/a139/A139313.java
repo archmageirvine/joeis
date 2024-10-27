@@ -7,7 +7,7 @@ import irvine.oeis.a064.A064149;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A139313 Primes prime(n) such that -prime(n-1)+3prime(n)-3prime(n+1)+prime(n+2)=0.
+ * A139313 Primes prime(n) such that -prime(n-1) + 3*prime(n) - 3*prime(n+1) + prime(n+2) = 0.
  * @author Georg Fischer
  */
 public class A139313 extends MultiTransformSequence {

@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A072750.
+ * A072775 Squarefree kernels of powers of squarefree numbers.
  * @author Sean A. Irvine
  */
 public class A072775 extends SimpleTransformSequence {

@@ -20,7 +20,7 @@ public class A072734 extends Sequence0 {
     return x.add(y).square().add(x).add(y.multiply(3)).divide2();
   }
 
-  private Z packA072734(final Z x, final Z y) {
+  protected Z packA072734(final Z x, final Z y) {
     final Z xmy = x.subtract(y);
     if (xmy.signum() < 0) {
       return packA001477(x.multiply2().add(xmy.add(1).mod(Z.TWO)), x.multiply2().add(new Q(xmy.mod(Z.TWO).subtract(xmy), 2).floor()));

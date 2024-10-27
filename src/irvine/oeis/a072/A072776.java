@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A072750.
+ * A072776 Exponents of powers of squarefree numbers.
  * @author Sean A. Irvine
  */
 public class A072776 extends SimpleTransformSequence {

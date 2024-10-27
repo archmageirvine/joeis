@@ -4,7 +4,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a062.A062770;
 
 /**
- * A072750.
+ * A072774 Powers of squarefree numbers.
  * @author Sean A. Irvine
  */
 public class A072774 extends PrependSequence {

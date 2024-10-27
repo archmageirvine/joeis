@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.math.z.Z;
 
 /**
- * A072750.
+ * A072778 Number of powers of squarefree numbers &lt;= n.
  * @author Sean A. Irvine
  */
 public class A072778 extends A072774 {

@@ -4,7 +4,7 @@ package irvine.oeis.a128;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A128504 Row sums of array A128503 (second convolution of Chebyshev's S(n,x)=U(n,x/2) polynomials).
+ * A128504 Row sums of array A128503 (second convolution of Chebyshev's S(n,x) = U(n,x/2) polynomials).
  * @author Georg Fischer
  */
 public class A128504 extends GeneratingFunctionSequence {

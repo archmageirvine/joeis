@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A069898 Smallest one of largest prime divisors of all composite numbers between p and next prime.
+ * A069898 Smallest of the largest prime divisors of all the composite numbers between prime(n) and prime(n+1).
  * @author Sean A. Irvine
  */
 public class A069898 extends Sequence2 {

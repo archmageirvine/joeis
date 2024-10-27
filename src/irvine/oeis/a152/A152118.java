@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A152118 a(n) = product( 4 +4*cos(k*Pi/n)^2, k=1..(n-1)/2 ).
+ * A152118 a(n) = Product_{k=1..floor((n-1)/2)} (4 + 4*cos(k*Pi/n)^2).
  * @author Georg Fischer
  */
 public class A152118 extends GeneratingFunctionSequence {

@@ -2,7 +2,7 @@ package irvine.oeis.a197;
 // manually decsolv at 2021-08-31
 
 import irvine.math.cr.CR;
-import irvine.math.cr.UnaryCRFunction;
+import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
@@ -14,7 +14,7 @@ public class A197283 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A197283() {
-    super(0, new UnaryCRFunction() { 
+    super(0, new UnaryCrFunction() {
       @Override 
       public CR execute(final CR x) {
         return CR.FIVE.multiply(x).sin().subtract(x.sin().square());

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
  * Polynomial with integer coefficients.
  * @author Sean A. Irvine
  */
-public class ZPolynomialFunction extends UnaryCRFunction {
+public class ZPolynomialFunction extends UnaryCrFunction {
 
   private final Polynomial<Z> mPoly;
 

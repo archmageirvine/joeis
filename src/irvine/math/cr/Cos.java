@@ -5,8 +5,8 @@ package irvine.math.cr;
  * @author Hans.Boehm@hp.com
  * @author Sean A. Irvine
  */
-class Cos extends UnaryCRFunction {
-  
+class Cos extends UnaryCrFunction {
+
   @Override
   public CR execute(final CR x) {
     return x.cos();

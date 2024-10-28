@@ -2,7 +2,7 @@ package irvine.oeis.a173;
 // manually 2021-07-26
 
 import irvine.math.cr.CR;
-import irvine.math.cr.UnaryCRFunction;
+import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
@@ -12,7 +12,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
  */
 public class A173159 extends DecimalExpansionSequence {
 
-  private static class MyFunction extends UnaryCRFunction {
+  private static class MyFunction extends UnaryCrFunction {
     @Override
     public CR execute(final CR x) {
       return x.pow(x).subtract(CR.FIVE);

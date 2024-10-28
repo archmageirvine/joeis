@@ -5,7 +5,7 @@ package irvine.math.cr;
  * @author Hans.Boehm@hp.com
  * @author Sean A. Irvine
  */
-class Atan extends UnaryCRFunction {
+class Atan extends UnaryCrFunction {
 
   // This uses the identity (sin x)^2 = (tan x)^2/(1 + (tan x)^2)
   // Since we know the tangent of the result, we can get its sine,

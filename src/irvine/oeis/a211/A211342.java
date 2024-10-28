@@ -1,7 +1,7 @@
 package irvine.oeis.a211;
 
 import irvine.math.cr.CR;
-import irvine.math.cr.UnaryCRFunction;
+import irvine.math.cr.UnaryCrFunction;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -15,7 +15,7 @@ public class A211342 extends DecimalExpansionSequence {
 
   private static final CR C = CR.valueOf(new Q(1, 24));
   /** Maximum eta value. */
-  public static final CR ETA_CONSTANT = new UnaryCRFunction() {
+  public static final CR ETA_CONSTANT = new UnaryCrFunction() {
     @Override
     public CR execute(final CR x) {
       return new CR() {

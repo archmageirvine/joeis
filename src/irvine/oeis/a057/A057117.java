@@ -53,7 +53,7 @@ public class A057117 extends A014486 {
    * @param n tree
    * @return transformed
    */
-  public static Z bfsTodfs(final Z n) {
+  public static Z bfsToDfs(final Z n) {
     if (n.isZero()) {
       return Z.ZERO;
     }
@@ -66,6 +66,6 @@ public class A057117 extends A014486 {
 
   @Override
   public Z next() {
-    return A057120.catalanGlobalRank(bfsTodfs(super.next()));
+    return A057120.catalanGlobalRank(bfsToDfs(super.next()));
   }
 }

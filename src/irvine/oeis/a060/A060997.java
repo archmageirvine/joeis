@@ -1,6 +1,7 @@
 package irvine.oeis.a060;
 
 import irvine.math.cr.CR;
+import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
@@ -11,6 +12,6 @@ public class A060997 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A060997() {
-    super(CR.TWO.besselI0().divide(CR.TWO.besselI(1)));
+    super(CrFunctions.BESSEL_I0.cr(CR.TWO).divide(CrFunctions.BESSEL_I.cr(1, CR.TWO)));
   }
 }

@@ -87,17 +87,17 @@ public class CRTest extends TestCase {
     final Z million = Z.valueOf(1000000);
     final Z thousand = Z.valueOf(1000);
     final CR huge = CR.valueOf(million.multiply(million).multiply(thousand));
-    final UnaryCRFunction asin = new Sin().inverseMonotone(CR.HALF_PI.negate(), CR.HALF_PI);
-    final UnaryCRFunction acos = new Acos();
-    final UnaryCRFunction atan = new Atan();
-    final UnaryCRFunction tan = new Tan();
+    final UnaryCrFunction asin = new Sin().inverseMonotone(CR.HALF_PI.negate(), CR.HALF_PI);
+    final UnaryCrFunction acos = new Acos();
+    final UnaryCrFunction atan = new Atan();
+    final UnaryCrFunction tan = new Tan();
     assertEquals("sin(pi/2) failed", halfPi.sin(), CR.ONE);
     assertEquals("asin(1) failed", asin.execute(CR.ONE), halfPi);
     final CR asinr = asin.execute(CR.ONE.negate());
     assertEquals("asin(-1) failed", asinr, halfPi.negate());
     assertEquals("asin(0) failed", asin.execute(CR.ZERO), CR.ZERO);
     assertEquals("asin(sin(0.5)) failed", asin.execute(half.sin()), half);
-    final UnaryCRFunction cosine = new Sin().monotoneDerivative(CR.ZERO, CR.PI);
+    final UnaryCrFunction cosine = new Sin().monotoneDerivative(CR.ZERO, CR.PI);
     assertEquals("monotoneDerivative failed", cosine.execute(CR.ONE), CR.ONE.cos());
     assertEquals("monotoneDerivative failed 2", cosine.execute(CR.THREE), CR.THREE.cos());
     assertEquals("asin(sin(1) failed", asin.execute(CR.ONE.sin()), CR.ONE);
@@ -162,7 +162,7 @@ public class CRTest extends TestCase {
   }
 
   public void testPsi() {
-    final UnaryCRFunction psi = new LnGamma().monotoneDerivative(CR.HALF, CR.FOUR);
+    final UnaryCrFunction psi = new LnGamma().monotoneDerivative(CR.HALF, CR.FOUR);
     assertEquals("0.0364899740", psi.execute(CR.valueOf(new Q(3, 2))).toString());
     assertEquals("-0.0000000009", psi.execute(CR.valueOf(1.461632144)).toString());
   }

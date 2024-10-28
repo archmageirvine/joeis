@@ -1,7 +1,7 @@
 package irvine.oeis.a125;
 
 import irvine.math.cr.CR;
-import irvine.math.cr.UnaryCRFunction;
+import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
@@ -11,7 +11,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
  */
 public class A125578 extends DecimalExpansionSequence {
 
-  private static class MyFunction extends UnaryCRFunction {
+  private static class MyFunction extends UnaryCrFunction {
     @Override
     public CR execute(final CR x) {
       return x.multiply(x).subtract(x.cos());

@@ -1,22 +1,18 @@
-package irvine.math.cr;
+package irvine.math.cr.functions;
 
+import irvine.math.cr.CR;
 import irvine.math.z.Z;
 
 /**
- * Elliptic functions.
+ * The elliptic E function.
  * @author Sean A. Irvine
  */
-public final class Elliptic {
-
-  private Elliptic() { }
+class EllipticE extends CrFunction1 {
 
   private static final int EXTRA_PRECISION = 3;
 
-  static CR ellipticK(final CR z) {
-    return CR.HALF_PI.divide(CR.ONE.agm(CR.ONE.subtract(z.square()).sqrt()));
-  }
-
-  static CR ellipticE(final CR z) {
+  @Override
+  public CR cr(final CR z) {
     return new CR() {
       @Override
       protected Z approximate(final int precision) {

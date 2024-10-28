@@ -5,7 +5,7 @@ package irvine.math.cr;
  * @author Hans.Boehm@hp.com
  * @author Sean A. Irvine
  */
-class Tan extends UnaryCRFunction {
+class Tan extends UnaryCrFunction {
 
   @Override
   public CR execute(final CR x) {

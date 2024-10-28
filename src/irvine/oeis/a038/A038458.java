@@ -1,7 +1,7 @@
 package irvine.oeis.a038;
 
 import irvine.math.cr.CR;
-import irvine.math.cr.UnaryCRFunction;
+import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
@@ -13,7 +13,7 @@ public class A038458 extends DecimalExpansionSequence {
   private static final CR C1 = CR.valueOf(127).log();
   private static final CR C2 = CR.valueOf(113).log();
 
-  private static class MyFunction extends UnaryCRFunction {
+  private static class MyFunction extends UnaryCrFunction {
     @Override
     public CR execute(final CR x) {
       return C1.multiply(x).exp().subtract(C2.multiply(x).exp()).subtract(CR.ONE);

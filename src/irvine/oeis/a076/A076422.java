@@ -3,7 +3,7 @@ package irvine.oeis.a076;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.math.cr.UnaryCRFunction;
+import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
@@ -17,7 +17,7 @@ public class A076422 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A076422() {
-    super(2, new UnaryCRFunction() { 
+    super(2, new UnaryCrFunction() {
       @Override 
       public CR execute(final CR x) {
         return REALS.tan(x).subtract(x.tanh());

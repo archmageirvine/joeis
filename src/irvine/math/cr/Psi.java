@@ -39,7 +39,7 @@ public final class Psi extends MemoryFunction<Integer, CR> {
    * @param n integer
    * @return psi
    */
-  static CR psi(final int n) {
+  public static CR psi(final int n) {
     if (n <= 0) {
       throw new IllegalArgumentException();
     }

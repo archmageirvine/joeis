@@ -5,26 +5,24 @@ import junit.framework.TestSuite;
 
 /**
  * Links all the tests in this package.
- *
  * @author Sean A. Irvine
  */
 public class AllTests extends TestSuite {
 
   public static Test suite() {
     final TestSuite suite = new TestSuite();
+    suite.addTest(irvine.math.cr.functions.AllTests.suite());
     suite.addTestSuite(AbsTest.class);
     suite.addTestSuite(AcosTest.class);
     suite.addTestSuite(AddTest.class);
     suite.addTestSuite(AgmTest.class);
     suite.addTestSuite(AssumedCrZTest.class);
     suite.addTestSuite(AtanTest.class);
-    suite.addTestSuite(BesselTest.class);
     suite.addTestSuite(CompositionTest.class);
     suite.addTestSuite(ComputableRealsTest.class);
     suite.addTestSuite(ConvergentsTest.class);
     suite.addTestSuite(CosTest.class);
     suite.addTestSuite(CRTest.class);
-    suite.addTestSuite(EllipticTest.class);
     suite.addTestSuite(EulerGammaTest.class);
     suite.addTestSuite(ExpTest.class);
     suite.addTestSuite(IdentityTest.class);
@@ -53,7 +51,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(SquareRootTest.class);
     suite.addTestSuite(StringFloatRepTest.class);
     suite.addTestSuite(TanTest.class);
-    suite.addTestSuite(UnaryCRFunctionTest.class);
+    suite.addTestSuite(UnaryCrFunctionTest.class);
     suite.addTestSuite(ZetaTest.class);
     suite.addTestSuite(ZPolynomialFunctionTest.class);
     return suite;

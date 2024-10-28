@@ -7,9 +7,9 @@ import irvine.math.z.Z;
  * @author Hans.Boehm@hp.com
  * @author Sean A. Irvine
  */
-class MonotoneDerivative extends UnaryCRFunction {
+class MonotoneDerivative extends UnaryCrFunction {
 
-  final UnaryCRFunction mFunc;
+  final UnaryCrFunction mFunc;
   // Monotone increasing.
   // If it was monotone decreasing, we negate it.
   final CR mLow; // endpoints and mispoint of interval
@@ -26,7 +26,7 @@ class MonotoneDerivative extends UnaryCRFunction {
   // It may be better to keep a copy per derivative value.
   final int[] mDeriv2Msd;
 
-  MonotoneDerivative(final UnaryCRFunction func, final CR l, final CR h) {
+  MonotoneDerivative(final UnaryCrFunction func, final CR l, final CR h) {
     mFunc = func;
     mLow = l;
     mHigh = h;

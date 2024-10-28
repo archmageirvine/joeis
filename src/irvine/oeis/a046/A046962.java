@@ -1,6 +1,7 @@
 package irvine.oeis.a046;
 
 import irvine.math.cr.CR;
+import irvine.math.cr.functions.CrFunctions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -16,7 +17,8 @@ public class A046962 extends Sequence0 {
   @Override
   public Z next() {
     while (true) {
-      final CR j0 = CR.valueOf(++mN).besselJ0().abs();
+      CR cr = CR.valueOf(++mN);
+      final CR j0 = CrFunctions.BESSEL_J0.cr(cr).abs();
       if (j0.compareTo(mBest) < 0) {
         mBest = j0;
         return Z.valueOf(mN);

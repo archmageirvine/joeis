@@ -9,7 +9,7 @@ import junit.framework.TestCase;
 public class AcosTest extends TestCase {
 
   public void testAcos() {
-    final UnaryCRFunction acos = new Acos();
+    final UnaryCrFunction acos = new Acos();
     CRTest.assertEquals("acos", CR.ONE, acos.execute(CR.ONE.cos()));
   }
 }

@@ -1,7 +1,7 @@
 package irvine.oeis.a071;
 
 import irvine.math.cr.CR;
-import irvine.math.cr.UnaryCRFunction;
+import irvine.math.cr.UnaryCrFunction;
 import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
@@ -33,7 +33,7 @@ public class A071851 extends DecimalExpansionSequence {
       final CR fb = sB;
       final CR fc = sC;
       final CR fd = sD;
-      sU = new UnaryCRFunction() {
+      sU = new UnaryCrFunction() {
         @Override
         public CR execute(final CR x) {
           return x.multiply(fb).add(fa).divide(x.multiply(fd).add(fc)).subtract(x);

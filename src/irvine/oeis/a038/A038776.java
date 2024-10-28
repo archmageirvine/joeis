@@ -58,6 +58,6 @@ public class A038776 extends A014486 {
     }
     ++mM;
     final Z n = mA.pollFirst();
-    return Z.valueOf(getIndex(A057117.bfsTodfs(n)) + 1);
+    return Z.valueOf(getIndex(A057117.bfsToDfs(n)) + 1);
   }
 }

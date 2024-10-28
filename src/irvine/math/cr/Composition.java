@@ -5,12 +5,12 @@ package irvine.math.cr;
  * @author Hans.Boehm@hp.com
  * @author Sean A. Irvine
  */
-class Composition extends UnaryCRFunction {
+class Composition extends UnaryCrFunction {
 
-  private final UnaryCRFunction mF1;
-  private final UnaryCRFunction mF2;
+  private final UnaryCrFunction mF1;
+  private final UnaryCrFunction mF2;
 
-  Composition(final UnaryCRFunction func1, final UnaryCRFunction func2) {
+  Composition(final UnaryCrFunction func1, final UnaryCrFunction func2) {
     mF1 = func1;
     mF2 = func2;
   }

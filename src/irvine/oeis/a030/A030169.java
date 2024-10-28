@@ -2,7 +2,7 @@ package irvine.oeis.a030;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.LnGamma;
-import irvine.math.cr.UnaryCRFunction;
+import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
@@ -11,7 +11,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
  */
 public class A030169 extends DecimalExpansionSequence {
 
-  private static final UnaryCRFunction PSI = new LnGamma().monotoneDerivative(CR.HALF, CR.FOUR);
+  private static final UnaryCrFunction PSI = new LnGamma().monotoneDerivative(CR.HALF, CR.FOUR);
 
   /** Construct the sequence. */
   public A030169() {

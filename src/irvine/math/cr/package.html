@@ -5,17 +5,17 @@
 <body>
 <h1>Constructive Real Calculator and Library Implementation Notes</h1>
 The calculator is based on the constructive real library consisting
-mainly of <code>irvine.math.cr.CR</code> and <code>irvine.math.cr.UnaryCRFunction</code>.
+mainly of <code>irvine.math.cr.CR</code> and <code>irvine.math.cr.UnaryCrFunction</code>.
 The former provides basic arithmetic operations on constructive reals.
 The latter provides some basic operations on unary functions over the
 constructive reals.
 <h2>General approach</h2>
 The library was not designed to use the absolute best known algorithms
-and to provide the best possible performance.  To do so would have
+and to provide the best possible performance. To do so would have
 significantly complicated the code, and lengthened start-up times for
-the calculator and similar applications.  Instead the goals were to:
+the calculator and similar applications. Instead the goals were to:
 <ol>
-<li> Rely on the standard library to the greatest possible extent.
+    <li> Rely on the standard library to the greatest possible extent.
 The implementation relies heavily on <code>java.math.BigInteger</code>,
 in spite of the fact that it may not provide asymptotically optimal
 performance for all operations.

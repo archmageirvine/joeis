@@ -48,7 +48,7 @@ import java.io.Serializable;
  * @author Hans.Boehm@hp.com
  * @author Sean A. Irvine
  */
-public abstract class UnaryCRFunction implements Serializable {
+public abstract class UnaryCrFunction implements Serializable {
 
   /**
    * Evaluate the function at a value.
@@ -62,7 +62,7 @@ public abstract class UnaryCRFunction implements Serializable {
    * @param function function to compose with this function
    * @return composition function
    */
-  public UnaryCRFunction compose(final UnaryCRFunction function) {
+  public UnaryCrFunction compose(final UnaryCrFunction function) {
     return new Composition(this, function);
   }
 
@@ -76,7 +76,7 @@ public abstract class UnaryCRFunction implements Serializable {
    * @param high high end
    * @return inverse function
    */
-  public UnaryCRFunction inverseMonotone(final CR low, final CR high) {
+  public UnaryCrFunction inverseMonotone(final CR low, final CR high) {
     return low.compareTo(high) < 0
       ? new InverseMonotone(this, low, high)
       : new InverseMonotone(this, high, low);
@@ -92,7 +92,7 @@ public abstract class UnaryCRFunction implements Serializable {
    * @param high high end
    * @return derivative function
    */
-  public UnaryCRFunction monotoneDerivative(final CR low, final CR high) {
+  public UnaryCrFunction monotoneDerivative(final CR low, final CR high) {
     return new MonotoneDerivative(this, low, high);
   }
 

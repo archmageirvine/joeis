@@ -7,9 +7,9 @@ import irvine.math.z.Z;
  * @author Hans.Boehm@hp.com
  * @author Sean A. Irvine
  */
-class InverseMonotone extends UnaryCRFunction {
+class InverseMonotone extends UnaryCrFunction {
 
-  final UnaryCRFunction mFunc;
+  final UnaryCrFunction mFunc;
   // Monotone increasing.
   // If it was monotone decreasing, we negate it.
   final boolean mFuncNegated;
@@ -24,7 +24,7 @@ class InverseMonotone extends UnaryCRFunction {
   // Rough approximation of msd of first derivative.
   final int mDerivMsd;
 
-  InverseMonotone(final UnaryCRFunction func, final CR l, final CR h) {
+  InverseMonotone(final UnaryCrFunction func, final CR l, final CR h) {
     mLow = l;
     mHigh = h;
     final CR tmpFuncLow = func.execute(l);
@@ -72,7 +72,7 @@ class InverseMonotone extends UnaryCRFunction {
     @Override
     protected Z approximate(final int p) {
       final int extraArgPrec = 10; // increased by SAI on 2021-07-29 due to failures to converge
-      final UnaryCRFunction fn = mMono.mFunc;
+      final UnaryCrFunction fn = mMono.mFunc;
       // Number of preceding ineffective steps.  If this number gets >= 2,
       // we perform a binary search step to ensure forward progress.
       int smallSteps = 0;

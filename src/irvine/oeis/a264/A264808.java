@@ -2,7 +2,7 @@ package irvine.oeis.a264;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.math.cr.UnaryCRFunction;
+import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
@@ -13,7 +13,7 @@ public class A264808 extends DecimalExpansionSequence {
 
   // Solution to x^(x^x) = e (example of root finding)
 
-  private static class MyFunction extends UnaryCRFunction {
+  private static class MyFunction extends UnaryCrFunction {
     @Override
     public CR execute(final CR x) {
       final CR xx = ComputableReals.SINGLETON.pow(x, x);

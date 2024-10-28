@@ -1,7 +1,7 @@
 package irvine.oeis.a195;
 
 import irvine.math.cr.CR;
-import irvine.math.cr.UnaryCRFunction;
+import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
@@ -24,7 +24,7 @@ public class A195304 extends DecimalExpansionSequence {
     // Assumes a and b not too large, so that things like a^5 can be computed in long
 
     // deriv(f(a,b,x), x)
-    final UnaryCRFunction df = new UnaryCRFunction() {
+    final UnaryCrFunction df = new UnaryCrFunction() {
       @Override
       public CR execute(final CR x) {
         final CR aa = CR.valueOf(a);
@@ -38,7 +38,7 @@ public class A195304 extends DecimalExpansionSequence {
       }
     };
 
-    final UnaryCRFunction f = new UnaryCRFunction() {
+    final UnaryCrFunction f = new UnaryCrFunction() {
       @Override
       public CR execute(final CR x) {
         // f(x) = (x - a)^2 +  (x - a)^2 * ((a*k - b*x)/(a*h - a*x))^2;

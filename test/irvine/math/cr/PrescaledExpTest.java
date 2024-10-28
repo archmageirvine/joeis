@@ -9,7 +9,7 @@ import junit.framework.TestCase;
 public class PrescaledExpTest extends TestCase {
 
   public void testExp() {
-    final UnaryCRFunction log = new Log();
+    final UnaryCrFunction log = new Log();
     CRTest.assertEquals("exp", CR.ONE, log.execute(CR.E));
     CRTest.assertEquals("exp", CR.TWO, log.execute(CR.TWO.exp()));
   }

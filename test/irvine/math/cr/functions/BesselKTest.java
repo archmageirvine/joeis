@@ -9,7 +9,7 @@ import junit.framework.TestCase;
  */
 public class BesselKTest extends TestCase {
 
-  public void testBesselK1() {
+  public void test() {
     assertEquals("0.60190723019723457474", CrFunctions.BESSEL_K.cr(1, CR.ONE).toString(20));
   }
 }

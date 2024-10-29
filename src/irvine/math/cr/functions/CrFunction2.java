@@ -4,7 +4,8 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 
 /**
- * Defines a two argument real valued function.
+ * Defines a two argument real valued function with one real parameter
+ * and one integer parameter.
  * @author Sean A. Irvine
  */
 public abstract class CrFunction2 {

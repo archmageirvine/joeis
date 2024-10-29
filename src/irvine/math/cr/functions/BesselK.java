@@ -14,7 +14,6 @@ class BesselK extends CrFunction2 {
 
   private static final int EXTRA_PRECISION = 3;
 
-  // Note: it would be straight-forward to generalize this to CR v
   @Override
   public CR cr(final int v, final CR z) {
     if (v == 0) {

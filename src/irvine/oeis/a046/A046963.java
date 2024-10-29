@@ -17,8 +17,7 @@ public class A046963 extends Sequence0 {
   @Override
   public Z next() {
     while (true) {
-      CR cr = CR.valueOf(++mN);
-      final CR y0 = CrFunctions.BESSEL_Y0.cr(cr).abs();
+      final CR y0 = CrFunctions.BESSEL_Y0.cr(CR.valueOf(++mN)).abs();
       if (y0.compareTo(mBest) < 0) {
         mBest = y0;
         return Z.valueOf(mN);

@@ -25,4 +25,12 @@ public final class CrFunctions {
   public static final CrFunction2 BESSEL_I = new BesselI();
   /** The bessel I function. */
   public static final CrFunction2 BESSEL_K = new BesselK();
+  /** The Airy Ai function. */
+  public static final CrFunction1 AIRY_AI = new AiryAi();
+  /** The Airy Bi function. */
+  public static final CrFunction1 AIRY_BI = new AiryBi();
+  /** The Neville <code>theta_s</code> function. */
+  public static final CrFunction2Cr NEVILLE_THETA_S = new NevilleThetaS();
+  /** The Neville <code>theta_s</code> function. */
+  public static final CrFunction2Cr NEVILLE_THETA_N = new NevilleThetaN();
 }

@@ -2441,3 +2441,7 @@ A072622 Permutation of natural numbers obtained from the permutation A072089 (on
 A072716 Integers expressible as (x^3 + y^3 + z^3)/(x*y*z) with positive integers x, y and z. (Alternatively, the integers expressible as x/y + y/z + z/x with positive integers x, y and z.)
 A072752 Maximum gap in one-stage prime-sieves.
 A072753 Maximum gap in two-stage prime-sieves.
+A072798 Self-inverse permutation of nonnegative integers obtained by contracting the permutation A069787 induced by the telescoping Catalan bijection DeepRev1CarSide.
+A072799 Self-inverse permutation of natural numbers: A072798(n-1)+1. (one-based).
+A072801 Continued fraction expansion of Product_{p prime} (1 - 1/(p*(p^2-1))).
+A072802 Continued fraction expansion of Product_{p prime} (1 + 1/(p*(p^2-1))).

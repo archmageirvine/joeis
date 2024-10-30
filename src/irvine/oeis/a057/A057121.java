@@ -16,7 +16,13 @@ public class A057121 extends A057119 {
     return Binomial.binomial(2 * n - x, n - (x + y) / 2).subtract(Binomial.binomial(2 * n - x, n - 1 - (x + y) / 2));
   }
 
-  static Z catalanRank(final long n, final Z aa) {
+  /**
+   * The local Catalan rank of a tree.
+   * @param n size
+   * @param aa tree
+   * @return rank
+   */
+  public static Z catalanRank(final long n, final Z aa) {
     Z a = Functions.REVERSE.z(2, aa);
     long y = 0;
     Z lo = Z.ZERO;

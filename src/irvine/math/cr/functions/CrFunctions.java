@@ -29,8 +29,36 @@ public final class CrFunctions {
   public static final CrFunction1 AIRY_AI = new AiryAi();
   /** The Airy Bi function. */
   public static final CrFunction1 AIRY_BI = new AiryBi();
+  /** The Neville <code>theta_c</code> function. */
+  public static final CrFunction2Cr NEVILLE_THETA_C = new NevilleThetaC();
+  /** The Neville <code>theta_d</code> function. */
+  public static final CrFunction2Cr NEVILLE_THETA_D = new NevilleThetaD();
+  /** The Neville <code>theta_n</code> function. */
+  public static final CrFunction2Cr NEVILLE_THETA_N = new NevilleThetaN();
   /** The Neville <code>theta_s</code> function. */
   public static final CrFunction2Cr NEVILLE_THETA_S = new NevilleThetaS();
-  /** The Neville <code>theta_s</code> function. */
-  public static final CrFunction2Cr NEVILLE_THETA_N = new NevilleThetaN();
+  /** The Jacobi cd function. */
+  public static final CrFunction2Cr JACOBI_CD = new JacobiCd();
+  /** The Jacobi cn function. */
+  public static final CrFunction2Cr JACOBI_CN = new JacobiCn();
+  /** The Jacobi cs function. */
+  public static final CrFunction2Cr JACOBI_CS = new JacobiCs();
+  /** The Jacobi dc function. */
+  public static final CrFunction2Cr JACOBI_DC = new JacobiDc();
+  /** The Jacobi dn function. */
+  public static final CrFunction2Cr JACOBI_DN = new JacobiDn();
+  /** The Jacobi ds function. */
+  public static final CrFunction2Cr JACOBI_DS = new JacobiDs();
+  /** The Jacobi nc function. */
+  public static final CrFunction2Cr JACOBI_NC = new JacobiNc();
+  /** The Jacobi nd function. */
+  public static final CrFunction2Cr JACOBI_ND = new JacobiNd();
+  /** The Jacobi ns function. */
+  public static final CrFunction2Cr JACOBI_NS = new JacobiNs();
+  /** The Jacobi sc function. */
+  public static final CrFunction2Cr JACOBI_SC = new JacobiSc();
+  /** The Jacobi sd function. */
+  public static final CrFunction2Cr JACOBI_SD = new JacobiSd();
+  /** The Jacobi sn function. */
+  public static final CrFunction2Cr JACOBI_SN = new JacobiSn();
 }

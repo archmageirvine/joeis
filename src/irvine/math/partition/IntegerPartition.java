@@ -316,6 +316,26 @@ public final class IntegerPartition {
   }
 
   /**
+   * Return the multiplicity of a partition.
+   * See A072811 for a definition.
+   * @param p partition
+   * @return multiplicity
+   */
+  public static Z multiplicity(final int[] p) {
+    Z m = Functions.FACTORIAL.z(p.length);
+    long k = 1;
+    for (int j = 1; j < p.length; ++j) {
+      if (p[j] == p[j - 1]) {
+        ++k;
+      } else {
+        m = m.divide(Functions.FACTORIAL.z(k));
+        k = 1;
+      }
+    }
+    return m.divide(Functions.FACTORIAL.z(k));
+  }
+
+  /**
    * Print all integer partitions of given argument.
    * @param args arguments
    */

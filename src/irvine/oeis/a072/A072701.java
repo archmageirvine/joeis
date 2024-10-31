@@ -3,23 +3,23 @@ package irvine.oeis.a072;
 import irvine.factor.prime.Fast;
 import irvine.math.MemoryFunction3;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
-import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007504;
 
 /**
  * A072701 Number of ways to write n as the arithmetic mean of a set of distinct primes.
  * @author Sean A. Irvine
  */
-public class A072701 extends Sequence1 {
+public class A072701 extends AbstractSequence {
 
   // After Alois P. Heinz
 
-  private final DirectSequence mSumPrimes = DirectSequence.create(new A007504());
-  private final Fast mPrime = new Fast();
-  private Z mN = Z.ZERO;
+  protected final DirectSequence mSumPrimes = DirectSequence.create(new A007504());
+  protected final Fast mPrime = new Fast();
+  protected Z mN;
 
-  private final MemoryFunction3<Z, Z> mB = new MemoryFunction3<>() {
+  protected final MemoryFunction3<Z, Z> mB = new MemoryFunction3<>() {
     @Override
     protected Z compute(final Z n, final Z i, final Z t) {
       if (n.signum() < 0) {
@@ -34,6 +34,16 @@ public class A072701 extends Sequence1 {
       }
     }
   };
+
+  protected A072701(final int offset) {
+    super(offset);
+    mN = Z.valueOf(offset - 1);
+  }
+
+  /** Construct the sequence. */
+  public A072701() {
+    this(1);
+  }
 
   @Override
   public Z next() {

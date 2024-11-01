@@ -2445,3 +2445,4 @@ A072798 Self-inverse permutation of nonnegative integers obtained by contracting
 A072799 Self-inverse permutation of natural numbers: A072798(n-1)+1. (one-based).
 A072801 Continued fraction expansion of Product_{p prime} (1 - 1/(p*(p^2-1))).
 A072802 Continued fraction expansion of Product_{p prime} (1 + 1/(p*(p^2-1))).
+A072842 Largest m such that we can partition the set {1,2,...,m} into n subsets with the property that we never have a+b=c for any distinct elements a, b, c in one subset.

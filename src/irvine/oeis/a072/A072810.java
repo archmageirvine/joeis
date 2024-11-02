@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A072803.
+ * A072810 a(0)=1, a(n) = a(n-1) - Sum_{k=2..n} mu(k) * a(n-k), where mu(k) is the Moebius function of k.
  * @author Sean A. Irvine
  */
 public class A072810 extends CachedSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A071964 Numbers n such that n = Lpf(n)*Lpf(phi(n)) where Lpf(x) = A006530(x) is the largest prime factor of x.
+ * A071964 Numbers k such that k = Gpf(k) * Gpf(phi(k)) where Gpf(k) = A006530(k) is the greatest prime factor of k.
  * @author Georg Fischer
  */
 public class A071964 extends FilterNumberSequence {

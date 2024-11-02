@@ -4,7 +4,7 @@ package irvine.oeis.a347;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A347536 Number of minimum dominating sets in the complete tripartite graph K_n,n,n.
+ * A347536 Number of minimum dominating sets in the complete tripartite graph K_{n,n,n}.
  * @author Georg Fischer
  */
 public class A347536 extends HolonomicRecurrence {

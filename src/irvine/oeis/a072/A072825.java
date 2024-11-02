@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002182;
 
 /**
- * A072701.
+ * A072825 Numbers k such that k^2 - 1 is a highly composite number.
  * @author Sean A. Irvine
  */
 public class A072825 extends A002182 {

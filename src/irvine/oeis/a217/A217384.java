@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A217384 Numbers n such that 9^n + 4 is prime.
+ * A217384 Numbers k such that 9^k + 4 is prime.
  * @author Georg Fischer
  */
 public class A217384 extends PrimePositionSubsequence {

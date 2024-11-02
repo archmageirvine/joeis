@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072701.
+ * A072823 Numbers that are not the sum of two powers of 2.
  * @author Sean A. Irvine
  */
 public class A072823 extends Sequence1 {

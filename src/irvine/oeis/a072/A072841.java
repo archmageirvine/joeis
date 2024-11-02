@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A072701.
+ * A072841 Numbers k such that the digits of k^2 are exactly the same (albeit in different order) as the digits of (k+1)^2.
  * @author Sean A. Irvine
  */
 public class A072841 extends Sequence1 {

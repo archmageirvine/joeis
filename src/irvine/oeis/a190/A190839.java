@@ -7,7 +7,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a066.A066138;
 
 /**
- * A190839 a(n) is the maximal prime divisor of 10^(2*n)+10^n+1.
+ * A190839 a(n) is the greatest prime divisor of 10^(2*n)+10^n+1.
  * @author Georg Fischer
  */
 public class A190839 extends AbstractSequence {

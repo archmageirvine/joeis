@@ -5,7 +5,7 @@ package irvine.oeis.a297;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A297527 Number of maximum matchings in the complete tripartite graph K_n,n,n.
+ * A297527 Number of maximum matchings in the complete tripartite graph K_{n,n,n}.
  * @author Georg Fischer
  */
 public class A297527 extends HolonomicRecurrence {

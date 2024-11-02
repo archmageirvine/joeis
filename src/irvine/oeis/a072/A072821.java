@@ -8,7 +8,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a007.A007504;
 
 /**
- * A072701.
+ * A072821 Largest prime that can appear in any representation of n as an arithmetic mean of distinct primes.
  * @author Sean A. Irvine
  */
 public class A072821 extends Sequence2 {

@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 
 import irvine.oeis.recur.HolonomicRecurrence;
 /**
- * A215038 Partial sums of A066259: a(n) = sum(F(k+1)^2*F(k),k=0..n), n&gt;=0, with the Fibonacci numbers F=A000045.
+ * A215038 Partial sums of A066259: a(n) = Sum_{k=0..n} F(k+1)^2*F(k), n&gt;=0, with the Fibonacci numbers F=A000045.
  * radtorec(x*(1+x)/(-x^2+x+1)/(-x^2-4*x+1)/(1-x))
  * @author Georg Fischer
  */

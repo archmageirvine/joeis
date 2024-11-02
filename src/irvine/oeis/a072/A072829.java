@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A072701.
+ * A072829 Greatest m such that Product_{k=1..n-1} (1 - k/m) &lt;= 1/2.
  * @author Sean A. Irvine
  */
 public class A072829 extends Sequence2 {

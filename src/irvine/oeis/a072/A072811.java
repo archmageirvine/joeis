@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A072803.
+ * A072811 T(n,k) = multiplicity of the k-th partition of n in Mathematica order, defined to be the count of its permutations (compositions).
  * @author Sean A. Irvine
  */
 public class A072811 extends Sequence0 {

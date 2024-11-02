@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A011942 [ n(n-1)(n-2)(n-3)/32 ].
+ * A011942 a(n) = floor( n*(n-1)*(n-2)*(n-3)/32 ).
  * @author Sean A. Irvine
  */
 public class A011942 extends Sequence0 {

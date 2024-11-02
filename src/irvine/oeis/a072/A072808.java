@@ -6,7 +6,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**
- * A072803.
+ * A072808 Smallest m such that sigma(m) mod phi(n) = n or 0 if no solution exists.
  * @author Sean A. Irvine
  */
 public class A072808 extends Sequence1 implements Conjectural {

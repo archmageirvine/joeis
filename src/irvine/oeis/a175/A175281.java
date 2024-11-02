@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a005.A005471;
 
 /**
- * A175281 Numbers n with property that 6n+1 is term in A005471.
+ * A175281 Numbers k such that 6k+1 is a term in A005471.
  * @author Georg Fischer
  */
 public class A175281 extends AbstractSequence {

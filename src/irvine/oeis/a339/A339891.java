@@ -7,7 +7,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A339891 Number of fundamentally different graceful labelings of the complete tripartite graph K_1,1,n.
+ * A339891 Number of fundamentally different graceful labelings of the complete tripartite graph K_{1,1,n}.
  * @author Georg Fischer
  */
 public class A339891 extends LambdaSequence {

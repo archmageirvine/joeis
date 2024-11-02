@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A095395 a(n) = Floor[n^((n+1)/(n))]-Floor[n^((n)/(n+1))].
+ * A095395 a(n) = floor(n^((n+1)/(n))) - floor(n^((n)/(n+1))).
  * @author Georg Fischer
  */
 public class A095395 extends FloorSequence {

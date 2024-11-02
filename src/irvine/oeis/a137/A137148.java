@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002618;
 
 /**
- * A137148 a(n) = n*phi(n) for nonprime n.
+ * A137148 a(n) = k*phi(k), where k is the n-th nonprime number.
  * @author Georg Fischer
  */
 public class A137148 extends FilterSequence {

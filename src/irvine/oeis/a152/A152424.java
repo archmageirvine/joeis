@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A152424 a[n_]:=IntegerPart[Prime[n^n]^(1/n)];.
+ * A152424 a(n) = floor(prime(n^n)^(1/n)).
  * @author Georg Fischer
  */
 public class A152424 extends LambdaSequence {

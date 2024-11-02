@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000142;
 
 /**
- * A003070.
+ * A072831 Number of bits in n!.
  * @author Sean A. Irvine
  */
 public class A072831 extends A000142 {

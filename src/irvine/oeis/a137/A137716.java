@@ -6,7 +6,7 @@ import irvine.oeis.a055.A055642;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A137716 Number of digits in the n-th Cullen prime.
+ * A137716 Number of digits in the decimal expansion of the n-th Cullen prime.
  * @author Georg Fischer
  */
 public class A137716 extends DirectTransformSequence {

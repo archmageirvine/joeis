@@ -4,7 +4,7 @@ package irvine.oeis.a297;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A297662 Number of chordless cycles in the complete tripartite graph K_n,n,n.
+ * A297662 Number of chordless cycles in the complete tripartite graph K_{n,n,n}.
  * @author Georg Fischer
  */
 public class A297662 extends LinearRecurrence {

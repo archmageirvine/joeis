@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a023.A023919;
 
 /**
- * A072701.
+ * A072834 Exponents occurring in expansion of F_8(q^2).
  * @author Sean A. Irvine
  */
 public class A072834 extends FilterPositionSequence {

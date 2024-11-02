@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A122481 a(n) = if n &lt; 10 then n else a(digitsum(n)) + digitsum(n), where digitsum(n)=A007953(n), the sum of digits in decimal representation of n.
+ * A122481 a(n) = if n &lt; 10 then n else a(digitsum(n)) + digitsum(n), where digitsum(n) = A007953(n), the sum of digits in decimal representation of n.
  * @author Georg Fischer
  */
 public class A122481 extends MultiTransformSequence {

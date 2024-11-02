@@ -13,7 +13,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.string.StringUtils;
 
 /**
- * A376902 allocated for Walter Scharold.
+ * A376902 Numbers k such that the concatenation of their prime factors with multiplicity, in some order, yields the k-th prime number.
  * @author Sean A. Irvine
  */
 public class A376902 extends A000040 {

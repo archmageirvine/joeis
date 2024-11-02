@@ -5,7 +5,7 @@ package irvine.oeis.a152;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A152172 a(n) is the number of Dyck paths of length n without height of peaks 0 (mod 3) and height of valleys 1 (mod 3).
+ * A152172 a(n) is the number of Dyck paths of semilength n without height of peaks 0 (mod 3) and height of valleys 1 (mod 3).
  * radtorec((1+x-2*x^2-(4*x^4-3*x^2-2*x+1)^(1/2))/(2-2*x))
  * @author Georg Fischer
  */

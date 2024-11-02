@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A069787.
+ * A082853 Integers 0 to Catalan(n)-1 followed by integers 0 to Catalan(n+1)-1 etc.
  * @author Sean A. Irvine
  */
 public class A082853 extends A000108 {

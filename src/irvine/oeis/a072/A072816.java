@@ -8,7 +8,7 @@ import irvine.oeis.a051.A051626;
 import irvine.oeis.a051.A051628;
 
 /**
- * A072803.
+ * A072816 a(n) is the smallest integer such that the mantissa of 1/a(n) contains n.
  * @author Sean A. Irvine
  */
 public class A072816 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A143205 Numbers having exactly two distinct prime factors p, q with q=p+6.
+ * A143205 Numbers having exactly two distinct prime factors p, q with q = p+6.
  * @author Georg Fischer
  */
 public class A143205 extends FilterNumberSequence {

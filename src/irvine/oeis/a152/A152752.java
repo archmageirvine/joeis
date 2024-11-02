@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a118.A118962;
 
 /**
- * A152752 Terms of A118962 that are == 9 (mod 10).
+ * A152752 Terms of A118962 that are == 9 (mod 10), in the order of appearance.
  * @author Georg Fischer
  */
 public class A152752 extends FilterSequence {

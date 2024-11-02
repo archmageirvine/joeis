@@ -4,7 +4,7 @@ package irvine.oeis.a163;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A163625 Numbers n with property that 120*n + 1 is term in A163573.
+ * A163625 Numbers k such that 120*k + 1 is a term in A163573.
  * @author Georg Fischer
  */
 public class A163625 extends SimpleTransformSequence {

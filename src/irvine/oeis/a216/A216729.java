@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A216729 (3*n)!*((3*n+1)/6)^n/(3*n+1).
+ * A216729 a(n) = (3*n)!*((3*n+1)/6)^n/(3*n+1).
  * a(n)=(3*n))*((3*n+1)/6)^n/(3*n+1)
  * @author Georg Fischer
  */

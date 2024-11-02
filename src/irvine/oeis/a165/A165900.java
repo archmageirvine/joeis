@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A165900 Values of Fibonacci polynomial n^2 - n - 1.
+ * A165900 a(n) = n^2 - n - 1.
  * @author Sean A. Irvine
  */
 public class A165900 extends LinearRecurrence {

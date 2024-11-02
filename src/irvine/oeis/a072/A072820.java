@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.math.z.Z;
 
 /**
- * A072701.
+ * A072820 Largest number of distinct primes to represent n as arithmetic mean.
  * @author Sean A. Irvine
  */
 public class A072820 extends A072701 {

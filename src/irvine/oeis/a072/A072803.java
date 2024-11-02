@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072803.
+ * A072803 a(n) is n written in base n mod 10, or 0 if n mod 10 = 0.
  * @author Sean A. Irvine
  */
 public class A072803 extends Sequence1 {

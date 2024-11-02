@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A072803.
+ * A072809 Abntu sequence (Bantu alphabetized): list the numbers which have no 2's in their decimal expansion, but sort the digits of each term into alphabetical order.
  * @author Sean A. Irvine
  */
 public class A072809 extends Sequence1 {

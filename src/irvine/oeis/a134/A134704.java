@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A134704 "Hidden" person three person game Markov: MA=MB={{0.1},{1,1}}: Fibonacci: game value =1 MC={{-2, -2, 0}, {1, 0, 1}, {0, 1, 1}}: game value=-2 A plays with C; B plays with C; but A has no direct contact with B . A, B are the "observed" games. Characteristic polynomial: 4 + 9 x - 3 x^2 - 12 x^3 + x^4 + 4 x^5 + x^6 - x^7.
+ * A134704 Expansion of g.f. -x*(10*x^4+12*x^3-x^2-3*x-3)/((x^2+x-1)*(4*x^3+x^2-x-1)).
  * @author Sean A. Irvine
  */
 public class A134704 extends LinearRecurrence {

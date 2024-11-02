@@ -4,7 +4,7 @@ package irvine.oeis.a116;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A116559 Sequentially switched Markov of six 2 X 2 matrices based on the SL[2,2] group of Blyth and Robinson that gives a chaotic vector output.
+ * A116559 Expansion of g.f. x*(1+x+2*x^2+2*x^3+5*x^4+5*x^5-3*x^6+2*x^7-x^8-x^9)/(1-6*x^6-x^12).
  * @author Georg Fischer
  */
 public class A116559 extends GeneratingFunctionSequence {

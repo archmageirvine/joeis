@@ -4,7 +4,7 @@ package irvine.oeis.a122;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A122575 Expansion of x*(x-1)/(x^2+14*x+1)^3.
+ * A122575 Expansion of -x*(1-x)/(1+14*x+x^2)^3.
  * @author Georg Fischer
  */
 public class A122575 extends GeneratingFunctionSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a066.A066237;
 
 /**
- * A052849 a(0) = 0; a(n+1) = 2*n! (n &gt;= 0).
+ * A052849 a(0) = 0; a(n) = 2*n! (n &gt;= 1).
  * @author Georg Fischer
  */
 public class A052849 extends PrependSequence {

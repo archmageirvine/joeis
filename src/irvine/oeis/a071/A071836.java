@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A071836 Largest prime factor of n = prime(tau(n)).
+ * A071836 Numbers k such that the largest prime factor of k = prime(tau(k)).
  * @author Georg Fischer
  */
 public class A071836 extends FilterNumberSequence {

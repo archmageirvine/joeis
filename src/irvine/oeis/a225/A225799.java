@@ -3,7 +3,7 @@ package irvine.oeis.a225;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A225799 Sum_{k=0..n} binomial(n,k) * 10^(n-k) * Fibonacci(n+k).
+ * A225799 a(n) = Sum_{k=0..n} binomial(n,k) * 10^(n-k) * Fibonacci(n+k).
  * @author Sean A. Irvine
  */
 public class A225799 extends LinearRecurrence {

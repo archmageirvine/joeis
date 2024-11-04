@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.math.z.Z;
 
 /**
- * A005666 Tower of Hanoi with 3 pegs and cyclic moves only (counterclockwise).
+ * A005666 Minimal number of moves for the cyclic variant of the Towers of Hanoi for 3 pegs and n disks, with the final peg two steps away.
  * @author Sean A. Irvine
  */
 public class A005666 extends A005665 {

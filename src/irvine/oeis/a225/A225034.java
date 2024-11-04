@@ -4,7 +4,7 @@ package irvine.oeis.a225;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A225034 a(n) is the number of binary words containing n 1&apos;s and at most n 0&apos;s that do not contain the substring 101.
+ * A225034 a(n) is the number of binary words containing n 1's and at most n 0's that do not contain the substring 101.
  * 2/(3*x^2-4*x+1+((-x^2+1)^2+4*x^2-4)^(1/2))
  * @author Georg Fischer
  */

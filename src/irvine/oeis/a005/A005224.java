@@ -14,9 +14,13 @@ public class A005224 extends Sequence1 {
   private final String mLetter;
   private int mN = 0;
 
-  protected A005224(final char letter) {
+  protected A005224(final char letter, final String text) {
     mLetter = String.valueOf(letter);
-    mA.append(' ').append(letter).append("isthe");
+    mA.append(' ').append(letter).append(text);
+  }
+
+  protected A005224(final char letter) {
+    this(letter, "isthe");
   }
 
   /** Construct the sequence. */

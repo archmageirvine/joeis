@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A072851 a(0) = 0, a(1) = a(2) = 1, a(n) = abs ( Sum{( - 1)^k*a(abs(n - k))*a(k), k=2..n-1}).
+ * A072851 a(n) = s(2*n) where s(0) = 0, s(1) = s(2) = 1, s(n) = abs(Sum_{k=2..n-1} (-1)^k * s(n-k) * s(k)).
  * @author Sean A. Irvine
  */
 public class A072851 extends CachedSequence {

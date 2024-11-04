@@ -10,7 +10,7 @@ import irvine.oeis.a000.A000040;
  */
 public class A072875 extends A000040 {
 
-  private Z mP =super.next();
+  private Z mP = super.next();
   private int mN = 0;
 
   private boolean is(final Z p, final int n) {

@@ -4,7 +4,7 @@ package irvine.oeis.a338;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A338193 E.g.f. A(x) satisfies:  A(x) = 1 + Integral (x/A(x))&apos; / (x/A(x)^2)&apos; dx.
+ * A338193 E.g.f. A(x) satisfies:  A(x) = 1 + Integral (x/A(x))' / (x/A(x)^2)' dx.
  * 1/2*8^(1/4)*(x^2*(x-3+(x^2-6*x+1)^(1/2))^3/(3*x-1+(x^2-6*x+1)^(1/2)))^(1/4)*exp(1/4+1/4*x-1/4*(x^2-6*x+1)^(1/2))
  * @author Georg Fischer
  */

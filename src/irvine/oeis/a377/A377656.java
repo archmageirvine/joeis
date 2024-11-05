@@ -1,7 +1,7 @@
 package irvine.oeis.a377;
 
 /**
- * A377573.
+ * A377656 Cogrowth sequence of the 12-element dicyclic group Dic12 = &lt;S,T | S^6, T^4, STST^3, S^3T^2&gt;.
  * @author Sean A. Irvine
  */
 public class A377656 extends A377573 {

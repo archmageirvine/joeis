@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A107747 Numbers n such that the least prime factor of 6*n+1 &lt; the least prime factor of 6*n-1, A107744(n) &lt; A107745(n).
+ * A107747 Numbers k such that the least prime factor of 6*k+1 &lt; the least prime factor of 6*k-1, A107744(k) &lt; A107745(k).
  * @author Georg Fischer
  */
 public class A107747 extends FilterNumberSequence {

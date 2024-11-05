@@ -6,7 +6,7 @@ import irvine.oeis.a007.A007304;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A096917 Smallest prime factor of n-th product of 3 distinct primes.
+ * A096917 Smallest prime factor of the n-th product of 3 distinct primes.
  * @author Georg Fischer
  */
 public class A096917 extends SingleTransformSequence {

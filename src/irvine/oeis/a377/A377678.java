@@ -5,7 +5,7 @@ import irvine.oeis.a061.A061190;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A377671.
+ * A377678 a(n) = phi(n^n - n) where phi is the Euler totient function.
  * @author Sean A. Irvine
  */
 public class A377678 extends SimpleTransformSequence {

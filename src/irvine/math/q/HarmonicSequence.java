@@ -10,12 +10,28 @@ import irvine.math.api.RationalSequence;
  */
 public class HarmonicSequence implements RationalSequence, Serializable {
 
+  private final int mExponent;
   private long mN = 0;
   private Q mA = Q.ZERO;
 
+  /**
+   * Construct the generalized harmonic sequence with given exponent.
+   * @param exponent the exponent
+   */
+  public HarmonicSequence(final int exponent) {
+    mExponent = exponent;
+  }
+
+  /**
+   * Construct the harmonic sequence.
+   */
+  public HarmonicSequence() {
+    this(1);
+  }
+
   @Override
   public final Q nextQ() {
-    mA = mA.add(new Q(1, ++mN));
+    mA = mA.add(new Q(1, ++mN).pow(mExponent));
     return mA;
   }
 }

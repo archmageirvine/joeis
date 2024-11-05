@@ -5,7 +5,7 @@ import irvine.oeis.a061.A061190;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A377671.
+ * A377677 a(n) is the sum of the divisors of n^n - n.
  * @author Sean A. Irvine
  */
 public class A377677 extends SimpleTransformSequence {

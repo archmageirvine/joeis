@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A229027 Numbers n such that n/rad(n) equals the greatest prime dividing n.
+ * A229027 Numbers k such that k/rad(k) equals the greatest prime dividing k.
  * @author Georg Fischer
  */
 public class A229027 extends FilterNumberSequence {

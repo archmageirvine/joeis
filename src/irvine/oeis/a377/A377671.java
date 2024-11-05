@@ -5,7 +5,7 @@ import irvine.oeis.a066.A066068;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A377671.
+ * A377671 Number of prime factors of n^n+n (counted with multiplicity).
  * @author Sean A. Irvine
  */
 public class A377671 extends SimpleTransformSequence {

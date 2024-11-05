@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A226762 Least k such that 1/k &lt;= mean of {1, 1/2, 1/3,..., 1/n}.
+ * A226762 Greatest k such that 1/k &gt;= mean of {1, 1/2, 1/3, ..., 1/n}.
  * a(n)=(n*n!)\sum(k=1,n,n!\k)
  * @author Georg Fischer
  */

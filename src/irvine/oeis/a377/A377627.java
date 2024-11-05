@@ -1,7 +1,7 @@
 package irvine.oeis.a377;
 
 /**
- * A377627 Number of words of length 2n that reduce to the identity when using the presentation S^6, T^2, [S,T] of the 12-element group C6 x C2.
+ * A377627 Cogrowth sequence of the 12-element group C6 x C2 = &lt;S,T | S^6, T^2, [S,T]&gt;.
  * @author Sean A. Irvine
  */
 public class A377627 extends A377573 {

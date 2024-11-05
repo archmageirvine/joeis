@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a060.A060822;
 
 /**
- * A179078 a(n)=((3^p - 3)/p) mod p where p is n-th prime.
+ * A179078 a(n) = ((3^p - 3)/p) mod p where p is n-th prime.
  * @author Georg Fischer
  */
 public class A179078 extends A060822 {

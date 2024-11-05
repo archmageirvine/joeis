@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A228208 y-values in the solution to x^2 - 20y^2 = 176.
+ * A228208 y-values in the solution to x^2 - 20*y^2 = 176.
  * @author Sean A. Irvine
  */
 public class A228208 extends LinearRecurrence {

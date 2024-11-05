@@ -1,7 +1,7 @@
 package irvine.oeis.a377;
 
 /**
- * A377626 Number of words of length n that reduce to the identity when using the presentation S^3, T^2, (ST)^3 of the 12-element group A4.
+ * A377626 Cogrowth sequence of the 12-element group A4 = &lt;S,T | S^3, T^2, (ST)^3&gt;.
  * @author Sean A. Irvine
  */
 public class A377626 extends A377573 {

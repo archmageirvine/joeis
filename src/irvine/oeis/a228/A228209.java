@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A228209 x-values in the solutions to x^2 - 10y^2 = 9.
+ * A228209 x-values in the solutions to x^2 - 10*y^2 = 9.
  * @author Sean A. Irvine
  */
 public class A228209 extends LinearRecurrence {

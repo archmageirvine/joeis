@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A101471 Numbers n such that the number n11 is prime.
+ * A101471 Numbers k such that the number k11 is prime.
  * @author Georg Fischer
  */
 public class A101471 extends FilterNumberSequence {

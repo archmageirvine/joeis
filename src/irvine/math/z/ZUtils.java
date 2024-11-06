@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
+import java.util.function.Function;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
@@ -64,7 +65,7 @@ public final class ZUtils {
    * Return the count of each digit in the number when written in the specified base.
    * @param n number
    * @param base base to use
-   * @return count of each digit
+   * @return array of the count of each digit
    */
   public static int[] digitCounts(final Z n, final int base) {
     final int[] counts = new int[base];
@@ -92,7 +93,7 @@ public final class ZUtils {
    * Return the count of each digit in the number when written in the specified base.
    * @param n number
    * @param base base to use
-   * @return count of each digit
+   * @return array of the count of each digit
    */
   public static int[] digitCounts(final long n, final int base) {
     final int[] counts = new int[base];
@@ -107,7 +108,7 @@ public final class ZUtils {
   /**
    * Return the count of each digit in the number
    * @param n number
-   * @return count of each digit
+   * @return array of the count of each digit
    */
   public static int[] digitCounts(final Z n) {
     return digitCounts(n, 10);
@@ -116,7 +117,7 @@ public final class ZUtils {
   /**
    * Return the count of each digit in the number
    * @param n number
-   * @return count of each digit
+   * @return array of the count of each digit
    */
   public static int[] digitCounts(final long n) {
     return digitCounts(n, 10);
@@ -270,7 +271,7 @@ public final class ZUtils {
    * with <code>#</code> are ignored. Behaviour on out of range numbers is
    * undefined.
    * @param reader source
-   * @return array of numbers
+   * @return list of numbers
    * @throws IOException if an I/O error occurs.
    */
   public static List<Z> read(final BufferedReader reader) throws IOException {
@@ -290,7 +291,7 @@ public final class ZUtils {
    * undefined.
    * @param reader source
    * @param column column number (numbered from 0)
-   * @return array of numbers
+   * @return list of numbers
    * @throws IOException if an I/O error occurs.
    */
   public static List<Z> read(final BufferedReader reader, final int column) throws IOException {
@@ -496,4 +497,30 @@ public final class ZUtils {
     return res;
   }
 
+  /**
+   * The concatenation of the base expansion of a function from lo to hi inclusive.
+   * @param lo lower bound
+   * @param hi upper bound
+   * @param function the function
+   * @param base number base for the expansion
+   * @return new integer
+   */
+  public Z concatenate(final int lo, final int hi, final Function<Integer, Z> function, final int base) {
+    StringBuilder sb = new StringBuilder();
+    for (int k = lo; k <= hi; ++k) {
+      sb.append(function.apply(k).toString(base));
+    }
+    return new Z(sb.toString(), base);
+  }
+
+  /**
+   * The concatenation of the decimal expansion of a function from lo to hi inclusive.
+   * @param lo lower bound
+   * @param hi upper bound
+   * @param function the function
+   * @return new integer
+   */
+  public Z concatenate(final int lo, final int hi, final Function<Integer, Z> function) {
+    return concatenate(lo, hi, function, 10);
+  }
 }

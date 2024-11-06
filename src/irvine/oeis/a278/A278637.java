@@ -1,6 +1,6 @@
 package irvine.oeis.a278;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -21,7 +21,7 @@ public class A278637 extends Sequence1 {
       final Z f = mA.add(mB);
       mA = mB;
       mB = f;
-      if (f.isProbablePrime() || Jaguar.factor(f).isSemiprime()) {
+      if (f.isProbablePrime() || Predicates.SEMIPRIME.is(f)) {
         return Z.valueOf(mK);
       }
     }

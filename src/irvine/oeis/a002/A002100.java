@@ -1,10 +1,10 @@
 package irvine.oeis.a002;
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -23,7 +23,7 @@ public class A002100 extends Sequence1 {
     Polynomial<Z> den = RING.one();
     for (int k = 6; k <= mN; ++k) {
       final int s = Functions.SQRT.i(k);
-      if (s * s != k && Jaguar.factor(k).isSemiprime()) {
+      if (s * s != k && Predicates.SEMIPRIME.is(k)) {
         den = RING.multiply(den, RING.oneMinusXToTheN(k), mN);
       }
     }

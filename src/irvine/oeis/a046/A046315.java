@@ -1,6 +1,6 @@
 package irvine.oeis.a046;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -16,7 +16,7 @@ public class A046315 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(2);
-      if (Jaguar.factor(mN).isSemiprime()) {
+      if (Predicates.SEMIPRIME.is(mN)) {
         return mN;
       }
     }

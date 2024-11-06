@@ -1,7 +1,7 @@
 package irvine.oeis.a137;
 
-import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -21,7 +21,7 @@ public class A137626 extends Sequence1 {
     ++mN;
     while (true) {
       mP = mPrime.nextPrime(mP);
-      if (Jaguar.factor(mP.add(4)).isSemiprime()) {
+      if (Predicates.SEMIPRIME.is(mP.add(4))) {
         if (++mChainLength == mN) {
           return mP;
         }

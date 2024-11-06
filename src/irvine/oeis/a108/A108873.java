@@ -1,6 +1,6 @@
 package irvine.oeis.a108;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -34,7 +34,7 @@ public class A108873 extends AbstractSequence {
     while (true) {
       ++mN;
       final Z k = new Z(Integer.toString(mN, mBase));
-      if (Jaguar.factorAllowIncomplete(k).isSemiprime()) {
+      if (Predicates.SEMIPRIME.is(k)) {
         return Z.valueOf(mN);
       }
     }

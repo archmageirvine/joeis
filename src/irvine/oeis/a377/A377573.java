@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A377573 Number of words of length n that reduce to the identity when using the presentation S^7, T^2, (ST)^2 of the 14-element dihedral group D7.
+ * A377573 Cogrowth sequence for the 14-element dihedral group D7 = &lt;S,T | S^7, T^2, (ST)^2&gt;.
  * @author Sean A. Irvine
  */
 public class A377573 extends Sequence0 {

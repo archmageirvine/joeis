@@ -2448,3 +2448,4 @@ A072802 Continued fraction expansion of Product_{p prime} (1 + 1/(p*(p^2-1))).
 A072842 Largest m such that we can partition the set {1,2,...,m} into n subsets with the property that we never have a+b=c for any distinct elements a, b, c in one subset.
 A072888 Sum of the coefficients of the Schur function expansion of the square of the Vandermonde determinant in n variables.
 A072897 Least n-th order digital invariant which is not an Armstrong number (A005188), or 0 if no such term exists.
+A072934 Length of longest non-crossing walk along vertices of n-dimensional hypercubes.

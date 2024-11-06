@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a217.A217622;
 
 /**
- * A230482 (prime(prime(2n)) - prime(2 prime(n)))/2.
+ * A230482 a(n) = (prime(prime(2*n)) - prime(2*prime(n)))/2.
  * @author Georg Fischer
  */
 public class A230482 extends Sequence1 {

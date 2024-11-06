@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A072916 Number of m such that Floor[Prime[m]/m] = n.
+ * A072916 Number of m such that floor(prime(m)/m) = n.
  * @author Sean A. Irvine
  */
 public class A072916 extends A000040 {

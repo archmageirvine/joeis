@@ -5,7 +5,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.HypergeometricSequence;
 
 /**
- * A333592 a(n) = Sum_{k = 0..n} binomial(n + k - 1, k)^2.
+ * A333592 a(n) = Sum_{k = 0..n} binomial(n+k-1, k)^2.
  * @author Georg Fischer
  */
 public class A333592 extends HypergeometricSequence {

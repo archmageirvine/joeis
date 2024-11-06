@@ -413,6 +413,7 @@ public final class GraphUtils {
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>("y", Rationals.SINGLETON);
 
   private static final ArrayList<Polynomial<Q>> CACHED_GEN_FUNC = new ArrayList<>();
+
   static {
     CACHED_GEN_FUNC.add(RING.zero());
   }
@@ -1025,7 +1026,7 @@ public final class GraphUtils {
    * Blank lines and lines starting with <code>#</code> are ignored.
    * @param is input stream
    * @return graph
-   * @exception IOException if an I/O error or malformed input is encountered.
+   * @throws IOException if an I/O error or malformed input is encountered.
    */
   public static irvine.graph.Graph<String, String> load(final InputStream is) throws IOException {
     final irvine.graph.Graph<String, String> g = new irvine.graph.Graph<>();
@@ -1060,7 +1061,7 @@ public final class GraphUtils {
    * Construct a graph with the specified number of vertices and no edges.
    * @param n number of vertices
    * @return empty graph on <code>n</code> vertices
-   * @exception IllegalArgumentException if <code>n</code> is less than zero.
+   * @throws IllegalArgumentException if <code>n</code> is less than zero.
    */
   public static irvine.graph.Graph<Integer, String> empty(final int n) {
     if (n < 0) {
@@ -1077,7 +1078,7 @@ public final class GraphUtils {
    * Construct the complete graph of given order.
    * @param n number of vertices
    * @return complete graph on <code>n</code> vertices
-   * @exception IllegalArgumentException if <code>n</code> is less than zero.
+   * @throws IllegalArgumentException if <code>n</code> is less than zero.
    */
   public static irvine.graph.Graph<Integer, String> complete(final int n) {
     if (n < 0) {
@@ -1102,7 +1103,7 @@ public final class GraphUtils {
    * @param size desired size of graph
    * @param seed random number seed
    * @return random undirected graph of given order and size
-   * @exception IllegalArgumentException if either parameter is negative or if
+   * @throws IllegalArgumentException if either parameter is negative or if
    * the order is zero and the size positive.
    */
   public static irvine.graph.Graph<Integer, Integer> randomUndirected(final int order, final int size, final long seed) {
@@ -1165,4 +1166,5 @@ public final class GraphUtils {
       markAll(g, reachable, j);
     }
   }
-  }
+}
+

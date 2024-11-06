@@ -1,7 +1,7 @@
 package irvine.oeis.a377;
 
 /**
- * A377573.
+ * A377714 Cogrowth sequence for the 8-element group C4 x C2 = &lt;S,T | S^4, T^2, [S,T]&gt;.
  * @author Sean A. Irvine
  */
 public class A377714 extends A377573 {

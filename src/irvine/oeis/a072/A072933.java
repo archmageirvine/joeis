@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072933 Least k such that floor( (1+1/k)^n ) = floor( (1+1/n)^k ) is not equal to round(n*91/100).
+ * A072933 Numbers m such that the least k such that floor( (1+1/k)^m ) = floor( (1+1/m)^k ) is not equal to round(m*91/100).
  * @author Sean A. Irvine
  */
 public class A072933 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A072945 Number of numbers of the form x^3+y^2+x*y less than or equal to n (x,y &gt;=0).
+ * A072945 Number of pairs (x,y) with x,y &gt;= 0 such that x^3+y^2+x*y &lt;= n.
  * @author Sean A. Irvine
  */
 public class A072945 extends Sequence0 {

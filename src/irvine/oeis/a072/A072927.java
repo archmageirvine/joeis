@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072927 a(n) = minimum value of abs(n-Phi(x)) x&gt;0.
+ * A072927 a(n) = minimum value of abs(n-phi(x)), x&gt;0.
  * @author Sean A. Irvine
  */
 public class A072927 extends Sequence1 {

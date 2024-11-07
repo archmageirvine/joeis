@@ -4,7 +4,7 @@ package irvine.oeis.a145;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A145128 1 + (1200 + (634 + (225 + (85 + (15 + n)*n)*n)*n)*n)*n/720.
+ * A145128 a(n) = 1 + (1200 + (634 + (225 + (85 + (15 + n)*n)*n)*n)*n)*n/720.
  * @author Georg Fischer
  */
 public class A145128 extends GeneratingFunctionSequence {

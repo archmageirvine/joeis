@@ -4,7 +4,7 @@ package irvine.oeis.a377;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A377641 a(n) = 3^n) + 2^(3*n + 1) - 2^(2*n + 1.
+ * A377641 a(n) = 3^n + 2^(3*n + 1) - 2^(2*n + 1).
  * a(n) = 15*a(n-1)-68*a(n-2)+96*a(n-3).
  * @author Georg Fischer
  */

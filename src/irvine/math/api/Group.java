@@ -2,6 +2,7 @@ package irvine.math.api;
 
 import java.util.Random;
 
+import irvine.math.graph.Graph;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.z.Z;
 import irvine.util.Pair;
@@ -279,4 +280,10 @@ public interface Group<E> extends Set<E> {
    * @return number of conjugacy classes
    */
   Z numberConjugacyClasses();
+
+  /**
+   * Construct the Cayley graph of the group.
+   * @return Cayley graph
+   */
+  Graph cayleyGraph();
 }

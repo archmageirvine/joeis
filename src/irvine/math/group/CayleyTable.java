@@ -10,7 +10,6 @@ import irvine.util.string.StringUtils;
 
 /**
  * Utility class for producing LaTeX format Cayley tables of finite groups.
- *
  * @author Sean A. Irvine
  */
 public final class CayleyTable {

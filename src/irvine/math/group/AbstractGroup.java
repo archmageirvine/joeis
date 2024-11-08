@@ -7,6 +7,7 @@ import java.util.Random;
 import irvine.math.api.Group;
 import irvine.math.api.Operation;
 import irvine.math.api.Set;
+import irvine.math.graph.Graph;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.q.Q;
@@ -469,6 +470,11 @@ public abstract class AbstractGroup<E> extends AbstractSet<E> implements Group<E
       sum = sum.add(centralizer(g).size());
     }
     return sum.divide(size());
+  }
+
+  @Override
+  public Graph cayleyGraph() {
+    throw new UnsupportedOperationException();
   }
 }
 

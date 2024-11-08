@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A236758 Number of partitions of 3n into 3 parts with smallest part prime.
+ * A236758 Number of partitions of 3*n into 3 parts with smallest part prime.
  * a(n)=sum(i=1, n, (primepi(i)-primepi(i-1))*(2*n-2*i+1-floor((n-i+1)/2)))
  * @author Georg Fischer
  */

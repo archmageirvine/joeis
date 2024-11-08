@@ -2,7 +2,11 @@ package irvine.oeis.a377;
 
 import java.util.Arrays;
 
+import irvine.math.api.Group;
+import irvine.math.graph.Graph;
+import irvine.math.group.GroupFactory;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
 
 /**
@@ -19,34 +23,40 @@ public class A377573 extends Sequence0 {
   private Z[] mCounts = null;
   private long mN = -1;
 
+  private static int[][] makeTransitions(final Graph g) {
+    final int[][] t = new int[g.order()][];
+    for (int k = 0; k < t.length; ++k) {
+      t[k] = new int[(int) g.inDegree(k)];
+      for (int j = 0, i = 0; j < t.length; ++j) {
+        if (g.isAdjacent(j, k)) {
+          t[k][i++] = j;
+        }
+      }
+    }
+    return t;
+  }
+
   protected A377573(final int[][] transitions, final long mod, final long residue) {
     mTransitions = transitions;
     mMod = mod;
     mResidue = residue;
   }
 
-  protected A377573(final int[][] transitions) {
-    this(transitions, 1, 0);
+  protected A377573(final Group<?> group, final long mod, final long residue) {
+    this(makeTransitions(group.cayleyGraph()), mod, residue);
+  }
+
+//  protected A377573(final int[][] transitions) {
+//    this(transitions, 1, 0);
+//  }
+
+  protected A377573(final Group<?> group) {
+    this(group, 1, 0);
   }
 
   /** Construct the sequence. */
   public A377573() {
-    this(new int[][] {
-      {1, 7},  // 0
-      {2, 8},  // 1
-      {3, 9},  // 2
-      {4, 10}, // 3
-      {5, 11}, // 4
-      {6, 12}, // 5
-      {0, 13}, // 6
-      {0, 13}, // 7
-      {1, 7},  // 8
-      {2, 8},  // 9
-      {3, 9},  // 10
-      {4, 10}, // 11
-      {5, 11}, // 12
-      {6, 12}, // 13
-    });
+    this(GroupFactory.createGroup("D7"));
   }
 
   @Override
@@ -70,6 +80,18 @@ public class A377573 extends Sequence0 {
       if (++mN % mMod == mResidue) {
         return mCounts[0];
       }
+    }
+  }
+
+  /**
+   * Generate the cogrowth sequence for a named group.
+   * @param args group name
+   */
+  public static void main(final String[] args) {
+    final long mod = args.length > 1 ? Long.parseLong(args[1]) : 1;
+    final Sequence seq = new A377573(GroupFactory.createGroup(args[0]), mod, 0);
+    while (true) {
+      System.out.println(seq.next());
     }
   }
 }

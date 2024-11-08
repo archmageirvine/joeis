@@ -1,11 +1,14 @@
 package irvine.math.group;
 
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 
 import irvine.math.api.Group;
 import irvine.math.api.Set;
+import irvine.math.graph.Graph;
+import irvine.math.graph.GraphFactory;
 import irvine.math.z.Z;
 import irvine.util.string.Date;
 import irvine.util.string.StringUtils;
@@ -164,5 +167,24 @@ public class Generator<T> extends AbstractGroup<T> {
    */
   public Z generatingSetSize() {
     return mElements.size();
+  }
+
+  @Override
+  public Graph cayleyGraph() {
+    final Z size = size();
+    if (size == null || size.bitLength() >= Integer.SIZE) {
+      return super.cayleyGraph();
+    }
+    final Graph cayleyGraph = GraphFactory.createDigraph(size.intValueExact());
+    final HashMap<T, Integer> nodeMapping = new HashMap<>();
+    nodeMapping.put(zero(), 0);
+    for (final T element : this) {
+      for (final T gen : mElements) {
+        final int u = nodeMapping.computeIfAbsent(element, key -> nodeMapping.size());
+        final int v = nodeMapping.computeIfAbsent(add(element, gen), key -> nodeMapping.size());
+        cayleyGraph.addEdge(u, v);
+      }
+    }
+    return cayleyGraph;
   }
 }

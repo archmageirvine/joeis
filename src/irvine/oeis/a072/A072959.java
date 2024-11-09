@@ -14,10 +14,14 @@ public class A072959 extends Sequence0 {
 
   @Override
   public Z next() {
-    final String s = English.SINGLETON.toRawText(++mN);
+    final String s = English.SINGLETON.toText(++mN).replace(" and", "");
     Z res = Z.ZERO;
     for (int k = 0; k < s.length(); ++k) {
-      res = res.multiply(27).add(s.charAt(k) - '`');
+      res = res.multiply(27);
+      final char c = s.charAt(k);
+      if (c >= 'a' && c <= 'z') {
+        res = res.add(c - '`');
+      }
     }
     return res;
   }

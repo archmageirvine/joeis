@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064100 a(n) = (100^n - 1)/99*n.
+ * A064100 a(n) = n * (100^n - 1)/99.
  * @author Sean A. Irvine
  */
 public class A064100 extends Sequence1 {

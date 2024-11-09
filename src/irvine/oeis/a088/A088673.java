@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A088673 n mod A002024(n), where A002024 is "n appears n times": 1, 2, 2, 3, 3, 3, ...
+ * A088673 a(n) = n mod A002024(n), where A002024 is "n appears n times": 1, 2, 2, 3, 3, 3, ...
  * @author Georg Fischer
  */
 public class A088673 extends LambdaSequence {

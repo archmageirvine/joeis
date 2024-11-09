@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072106 All nontotients [even and odd] in reduced residue system of n.
+ * A072106 The number of nontotients (even and odd) in the reduced residue system of n.
  * @author Sean A. Irvine
  */
 public class A072106 extends Sequence1 {

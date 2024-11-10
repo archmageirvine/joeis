@@ -2451,3 +2451,5 @@ A072897 Least n-th order digital invariant which is not an Armstrong number (A00
 A072934 Length of longest non-crossing walk along vertices of n-dimensional hypercubes.
 A072981 Partial quotients of the limit of a continued fraction (A071851).
 A073001 Decimal expansion of Bernstein's constant
+A073002 Decimal expansion of -zeta'(2) (the first derivative of the zeta function at 2).
+A073008 Decimal expansion of the Traveling Salesman constant.

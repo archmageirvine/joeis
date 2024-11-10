@@ -844,7 +844,7 @@ public abstract class CR extends Number implements Comparable<CR> {
   }
 
   /**
-   * Add two computable reals.
+   * Add to a computable real.
    * @param x addend
    * @return sum
    */
@@ -853,11 +853,20 @@ public abstract class CR extends Number implements Comparable<CR> {
   }
 
   /**
-   * Add two computable reals.
+   * Add to a computable real.
    * @param x addend
    * @return sum
    */
   public CR add(final Z x) {
+    return new Add(this, CR.valueOf(x));
+  }
+
+  /**
+   * Add to a computable real.
+   * @param x addend
+   * @return sum
+   */
+  public CR add(final Q x) {
     return new Add(this, CR.valueOf(x));
   }
 

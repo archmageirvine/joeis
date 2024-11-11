@@ -2453,3 +2453,4 @@ A072981 Partial quotients of the limit of a continued fraction (A071851).
 A073001 Decimal expansion of Bernstein's constant
 A073002 Decimal expansion of -zeta'(2) (the first derivative of the zeta function at 2).
 A073008 Decimal expansion of the Traveling Salesman constant.
+A073043 Number of nonisomorphic (finite) groups with n conjugacy classes.

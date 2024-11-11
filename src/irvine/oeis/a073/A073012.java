@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A073007.
+ * A073012 Decimal expansion of Robbins constant.
  * @author Sean A. Irvine
  */
 public class A073012 extends DecimalExpansionSequence {

@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A072223.
+ * A073011 Decimal expansion of Lehmer's constant (also known as the Salem constant).
  * @author Sean A. Irvine
  */
 public class A073011 extends PolynomialRootExpansionSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a019.A019320;
 
 /**
- * A072226 Numbers n such that the n-th cyclotomic polynomial evaluated at 2 (=A019320(n)) is prime.
+ * A072226 Numbers k such that the k-th cyclotomic polynomial evaluated at 2 (=A019320(k)) is prime.
  * @author Georg Fischer
  */
 public class A072226 extends FilterPositionSequence {

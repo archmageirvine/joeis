@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000931;
 
 /**
- * A112882 Indices of prime Padovan numbers; values of n such that A000931(n+5) is prime.
+ * A112882 Indices of prime Padovan numbers: values of k such that A000931(k+5) is prime.
  * @author Georg Fischer
  */
 public class A112882 extends FilterPositionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073023 Number of solutions to the equation n^x==1 (modx) 1&lt;=x&lt;=n.
+ * A073023 Number of solutions to the equation n^x==1 (mod x), 1&lt;=x&lt;=n.
  * @author Sean A. Irvine
  */
 public class A073023 extends Sequence1 {

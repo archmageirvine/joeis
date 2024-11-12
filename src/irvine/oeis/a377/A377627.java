@@ -3,7 +3,7 @@ package irvine.oeis.a377;
 import irvine.math.group.GroupFactory;
 
 /**
- * A377627 Cogrowth sequence of the 12-element group C6 x C2 = &lt;S,T | S^6, T^2, [S,T]&gt;.
+ * A377627 Cogrowth sequence of the 12-element group C6 X C2 = &lt;S,T | S^6, T^2, [S,T]&gt;.
  * @author Sean A. Irvine
  */
 public class A377627 extends A377573 {

@@ -8,7 +8,7 @@ import irvine.oeis.memory.MemorySequence;
  * Compute the Dirichlet convolution of two sequences.
  * @author Georg Fischer
  */
-public class DirichletConvolutionSequence extends AbstractSequence {
+public class DirichletConvolutionSequence extends AbstractSequence implements DirectSequence {
 
   private static final int DEFOFF = 1;
   protected final MemorySequence mSeq1;
@@ -77,6 +77,26 @@ public class DirichletConvolutionSequence extends AbstractSequence {
       sum = sum.add(mSeq1.a(mN / d - mOffset1).multiply(mSeq2.a(d - mOffset2)));
     }
     return sum;
-  } 
+  }
+
+  @Override
+  public Z a(final Z n) {
+    Z sum = Z.ZERO;
+    for (final Z dd : Jaguar.factor(n).divisors()) {
+      final int d = dd.intValue();
+      sum = sum.add(mSeq1.a(n.divide(dd).intValueExact() - mOffset1).multiply(mSeq2.a(d - mOffset2)));
+    }
+    return sum;
+  }
+
+  @Override
+  public Z a(int n) {
+    Z sum = Z.ZERO;
+    for (final Z dd : Jaguar.factor(n).divisors()) {
+      final int d = dd.intValue();
+      sum = sum.add(mSeq1.a(n / d - mOffset1).multiply(mSeq2.a(d - mOffset2)));
+    }
+    return sum;
+  }
 
 }

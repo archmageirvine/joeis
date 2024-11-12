@@ -506,7 +506,7 @@ public final class ZUtils {
    * @return new integer
    */
   public Z concatenate(final int lo, final int hi, final Function<Integer, Z> function, final int base) {
-    StringBuilder sb = new StringBuilder();
+    final StringBuilder sb = new StringBuilder();
     for (int k = lo; k <= hi; ++k) {
       sb.append(function.apply(k).toString(base));
     }

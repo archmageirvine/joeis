@@ -24,7 +24,7 @@ public class A072962 extends Sequence2 {
     final PolynomialRingField<Polynomial<Q>> ring = new PolynomialRingField<>("x", inner);
     Polynomial<Polynomial<Q>> poly = ring.zero();
     for (int k = 1; k <= n; ++k) {
-      Q[] row = new Q[m + 1];
+      final Q[] row = new Q[m + 1];
       row[0] = Q.ZERO;
       for (int j = 1; j <= m; ++j) {
         row[j] = new Q(Z.valueOf(k).pow(j - 1).multiply(Z.valueOf(j).pow(k - 1).multiply(j - 1)),

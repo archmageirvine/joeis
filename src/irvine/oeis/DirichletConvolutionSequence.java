@@ -90,7 +90,7 @@ public class DirichletConvolutionSequence extends AbstractSequence implements Di
   }
 
   @Override
-  public Z a(int n) {
+  public Z a(final int n) {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();

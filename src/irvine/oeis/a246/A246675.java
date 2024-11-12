@@ -19,6 +19,6 @@ public class A246675 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A246675() {
-    super(1, n -> A000079.a(A055396.a(n + 1).subtract(Z.ONE)).multiply(((Z.TWO.multiply(A246277.a(n + 1))).subtract(Z.ONE))));
+    super(1, n -> A000079.a(A055396.a(n + 1).subtract(1)).multiply(Z.TWO.multiply(A246277.a(n + 1)).subtract(Z.ONE)));
   }
 }

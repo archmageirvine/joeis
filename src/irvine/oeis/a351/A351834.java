@@ -13,6 +13,6 @@ public class A351834 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A351834() {
-    super(1, n -> Integers.SINGLETON.sum(1, (n - 1) / 2, k -> (Functions.MOBIUS.z(k).square().add(Functions.MOBIUS.z(n - k).square()).subtract(Functions.MOBIUS.z(k).square().multiply(Functions.MOBIUS.z(n - k).square())))));
+    super(1, n -> Integers.SINGLETON.sum(1, (n - 1) / 2, k -> Functions.MOBIUS.z(k).square().add(Functions.MOBIUS.z(n - k).square()).subtract(Functions.MOBIUS.z(k).square().multiply(Functions.MOBIUS.z(n - k).square()))));
   }
 }

@@ -17,6 +17,6 @@ public class A355447 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A355447() {
-    super(1, (term, n) -> (Z.ONE.subtract(A008966.a(n))).multiply((Z.ONE.subtract(term))), "", new A010055());
+    super(1, (term, n) -> Z.ONE.subtract(A008966.a(n)).multiply((Z.ONE.subtract(term))), "", new A010055());
   }
 }

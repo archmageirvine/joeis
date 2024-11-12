@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A245211 a(n) = Sum_((d&lt;n) | n) (d * tau(d)).
+ * A245211 a(n) = Sum_{(d&lt;n) | n} (d * tau(d)).
  * @author Georg Fischer
  */
 public class A245211 extends AbstractSequence {

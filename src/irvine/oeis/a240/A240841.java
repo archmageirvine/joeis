@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A240841 Floor(8^n/(1+2*sin(6*Pi/13)/(2*sin(Pi/13)))^n).
+ * A240841 a(n) = floor(8^n/(1+2*sin(6*Pi/13)/(2*sin(Pi/13)))^n).
  * @author Georg Fischer
  */
 public class A240841 extends FloorSequence {

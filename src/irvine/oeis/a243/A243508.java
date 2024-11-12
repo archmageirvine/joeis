@@ -6,7 +6,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A243508 Decimal expansion of the real positive root of 48x^4 + 16x^3 - 27x^2 - 18x - 3 = 0.
+ * A243508 Decimal expansion of the real positive root of 48*x^4 + 16*x^3 - 27*x^2 - 18*x - 3 = 0.
  * Polynomial: <code>48x^4+16x^3-27x^2-18x-3</code>
  * @author Georg Fischer
  */

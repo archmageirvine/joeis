@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 /**
  * A pair where the left and right may have different types.
- *
  * @author Sean A. Irvine
  * @param <L> left type
  * @param <R> right type
@@ -26,7 +25,6 @@ public class Pair<L, R> implements Serializable {
 
   /**
    * Left of pair.
-   *
    * @return left of pair
    */
   public L left() {
@@ -35,7 +33,6 @@ public class Pair<L, R> implements Serializable {
 
   /**
    * Right of pair.
-   *
    * @return right of pair
    */
   public R right() {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A050299 Numbers n such that ((n-1)! + 1)/n is prime.
+ * A050299 Numbers k such that ((k-1)! + 1)/k is prime.
  * @author Sean A. Irvine
  */
 public class A050299 extends Sequence1 {

@@ -6,7 +6,7 @@ package irvine.oeis.a050;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A050984 de Bruijn's S(5,n).
+ * A050984 de Bruijn's S(5,n) = Sum_{k = 0..2*n} (-1)^(n+k)*binomial(2*n, k)^5.
  * @author Georg Fischer
  */
 public class A050984 extends HolonomicRecurrence {

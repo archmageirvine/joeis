@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073042 Numbers of the form 10^a*b^2 or 10^a*b^3.
+ * A073042 Numbers of the form 10^s*t^2 or 10^s*t^3, s,t &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A073042 extends Sequence1 {

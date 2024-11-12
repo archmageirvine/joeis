@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a054.A054571;
 
 /**
- * A070810 Numbers n such that phi(n-phi(n))=A054571(n) is a power of 2 and n is not a prime number.
+ * A070810 Nonprime numbers k such that phi(k-phi(k)) = A054571(k) is a power of 2.
  * @author Georg Fischer
  */
 public class A070810 extends FilterPositionSequence {

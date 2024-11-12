@@ -3,7 +3,7 @@ package irvine.oeis.a377;
 import irvine.math.group.GroupFactory;
 
 /**
- * A377840.
+ * A377885 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A377885 extends A377573 {

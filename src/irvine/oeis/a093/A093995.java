@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A093995 n^2 repeated n times, triangle read by rows.
+ * A093995 n^2 appears n times, triangle read by rows.
  * @author Georg Fischer
  */
 public class A093995 extends Triangle {

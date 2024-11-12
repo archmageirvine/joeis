@@ -6,7 +6,7 @@ import irvine.oeis.a020.A020701;
 import irvine.oeis.triangle.WrappedConstantTriangle;
 
 /**
- * A108035 Triangle read by rows: n-th row is n-th nonzero Fibonacci number repeated n times.
+ * A108035 Triangle read by rows: n-th row consists of n copies of the n-th nonzero Fibonacci number.
  * @author Georg Fischer
  */
 public class A108035 extends WrappedConstantTriangle {

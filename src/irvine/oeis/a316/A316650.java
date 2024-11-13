@@ -14,7 +14,7 @@ public class A316650 extends LambdaSequence {
   /** Construct the sequence. */
   public A316650() {
     super(1, n -> {
-      final Z quot[] = Z.valueOf(n).divideAndRemainder(Functions.DIGIT_SUM.z(n));
+      final Z[] quot = Z.valueOf(n).divideAndRemainder(Functions.DIGIT_SUM.z(n));
       return new Z(quot[0].toString() + quot[1].toString());
     });
   }

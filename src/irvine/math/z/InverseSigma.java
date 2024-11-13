@@ -60,7 +60,7 @@ public final class InverseSigma {
    * Minimum solution to <code>sigma_k(x) = n</code>.
    * @param n number
    * @param k parameter
-   * @return number of solutions.
+   * @return minimum solution.
    */
   public static Z minInverseSigma(final Z n, final long k) {
     return Z.ONE.equals(n) ? Z.ONE : dynamicMin(n, cookSigma(n, k));
@@ -70,7 +70,7 @@ public final class InverseSigma {
    * Maximum solution to <code>sigma_k(x) = n</code>.
    * @param n number
    * @param k parameter
-   * @return number of solutions.
+   * @return maximum solution.
    */
   public static Z maxInverseSigma(final Z n, final long k) {
     return Z.ONE.equals(n) ? Z.ONE : dynamicMax(n, cookSigma(n, k));

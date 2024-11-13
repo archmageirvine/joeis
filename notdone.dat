@@ -2454,3 +2454,4 @@ A073001 Decimal expansion of Bernstein's constant
 A073002 Decimal expansion of -zeta'(2) (the first derivative of the zeta function at 2).
 A073008 Decimal expansion of the Traveling Salesman constant.
 A073043 Number of nonisomorphic (finite) groups with n conjugacy classes.
+A073049 Least m > 1 such that m^n has m divisors, or 0 if no such m exists.

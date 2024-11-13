@@ -505,7 +505,7 @@ public final class ZUtils {
    * @param base number base for the expansion
    * @return new integer
    */
-  public Z concatenate(final int lo, final int hi, final Function<Integer, Z> function, final int base) {
+  public static Z concatenate(final int lo, final int hi, final Function<Integer, Z> function, final int base) {
     final StringBuilder sb = new StringBuilder();
     for (int k = lo; k <= hi; ++k) {
       sb.append(function.apply(k).toString(base));
@@ -520,7 +520,7 @@ public final class ZUtils {
    * @param function the function
    * @return new integer
    */
-  public Z concatenate(final int lo, final int hi, final Function<Integer, Z> function) {
+  public static Z concatenate(final int lo, final int hi, final Function<Integer, Z> function) {
     return concatenate(lo, hi, function, 10);
   }
 }

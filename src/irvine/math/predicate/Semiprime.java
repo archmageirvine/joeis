@@ -11,6 +11,6 @@ class Semiprime extends AbstractPredicate {
 
   @Override
   public boolean is(final Z n) {
-    return Jaguar.factorAllowIncomplete(n).isSemiprime();
+    return Jaguar.factorUpToSemiprime(n).isSemiprime();
   }
 }

@@ -108,7 +108,6 @@ public class FactorDbFactorizer extends AbstractFactorizer {
 
   /**
    * Attempt to factor each of the supplied arguments.
-   *
    * @param args numbers to factor
    */
   public static void main(final String[] args) {

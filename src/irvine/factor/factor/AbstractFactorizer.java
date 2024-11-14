@@ -9,7 +9,6 @@ import irvine.util.string.StringUtils;
 /**
  * Provides an implementation of the factor method, which in turn
  * calls a method for factoring a single number.
- *
  * @author Sean A. Irvine
  */
 public abstract class AbstractFactorizer implements Factorizer {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A043343 Numbers n such that there is no k &gt; n such that phi(k) = phi(n), where phi is Euler's totient function.
+ * A043343 Numbers m such that there is no k &gt; m such that phi(k) = phi(m), where phi is Euler's totient function.
  * @author Sean A. Irvine
  */
 public class A043343 extends Sequence1 {

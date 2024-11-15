@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002808;
 
 
 /**
- * A099861 Bisection of A002808.
+ * A099861 a(n) = (2*n-1)-st composite number: a bisection of A002808.
  * @author Georg Fischer
  */
 public class A099861 extends A002808 {

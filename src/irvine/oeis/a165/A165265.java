@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A165265 Concatenate the number of 1&apos;s and number of 0&apos;s in the binary expansion of n.
+ * A165265 Concatenate the number of 1's and number of 0's in the binary expansion of n.
  * @author Georg Fischer
  */
 public class A165265 extends LambdaSequence {

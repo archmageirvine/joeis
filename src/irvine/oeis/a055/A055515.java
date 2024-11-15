@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A055515 (2^n -1)/product(2^p -1) where the product is over all distinct primes p that divide n.
+ * A055515 a(n) = (2^n - 1)/product(2^p - 1) where the product is over all distinct primes p that divide n.
  * @author Sean A. Irvine
  */
 public class A055515 extends Sequence1 {

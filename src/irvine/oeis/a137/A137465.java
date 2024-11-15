@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A137465 1 concatenated with n n&apos;s concatenated with 1.
+ * A137465 1 concatenated with n n's concatenated with 1.
  * @author Georg Fischer
  */
 public class A137465 extends LambdaSequence {

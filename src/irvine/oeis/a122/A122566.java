@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A122566 Primes with index k^2+k+1.
+ * A122566 a(n) = prime(n^2 + n + 1).
  * @author Georg Fischer
  */
 public class A122566 extends LambdaSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a134;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A134654 a(n) = 2a(n-2)+4a(n-3), n &gt; 3.
+ * A134654 Duplicate of A038521.
  * @author Georg Fischer
  */
 public class A134654 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A207260 Triangle T(n,k) with T(n,k) = k^2 + (1-(-1)^(n-k))/2.
+ * A207260 Triangle read by rows: T(n,k) = k^2 + (1-(-1)^(n-k))/2.
  * @author Georg Fischer
  */
 public class A207260 extends Triangle {

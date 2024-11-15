@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A100851 Triangle read by rows: T(n,k) = 2^n * 3^k, 0&lt;=k&lt;=n.
+ * A100851 Triangle read by rows: T(n,k) = 2^n * 3^k, 0 &lt;= k &lt;= n, n &gt;= 0.
  * @author Georg Fischer
  */
 public class A100851 extends Triangle {

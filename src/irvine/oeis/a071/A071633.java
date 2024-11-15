@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A071633 Number of terms in the set InvPhi(65536*p(n)), where p(n) is the n-th prime.
+ * A071633 Number of terms in the set InvPhi(65536*prime(n)), where prime(n) is the n-th prime.
  * @author Georg Fischer
  */
 public class A071633 extends SimpleTransformSequence {

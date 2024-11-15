@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000796;
 
 /**
- * A073047.
+ * A073056 Prime(n)-th digit after decimal point in decimal expansion of Pi.
  * @author Sean A. Irvine
  */
 public class A073056 extends Sequence1 {

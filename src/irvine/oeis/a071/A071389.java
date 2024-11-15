@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A071389 Least number m such that cardinality of InvPhi[m] = prime(n).
+ * A071389 Least number m such that cardinality of InvPhi(m) = prime(n).
  * @author Sean A. Irvine
  */
 public class A071389 extends A000040 {

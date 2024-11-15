@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A114777 Floor[ {n concatenated with n n times }^(1/2)*10]^2.
+ * A114777 a(n) = floor( {n concatenated with n n times }^(1/2) * 10 )^2.
  * @author Georg Fischer
  */
 public class A114777 extends LambdaSequence {

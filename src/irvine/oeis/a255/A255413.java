@@ -3,7 +3,7 @@ package irvine.oeis.a255;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A255413 Row 3 of Ludic array A255127: a(n) = A007310((5*n)-3).
+ * A255413 a(n) = 15*n - 11 + (n mod 2). Row 3 of Ludic array A255127.
  * @author Georg Fischer
  */
 public class A255413 extends HolonomicRecurrence {

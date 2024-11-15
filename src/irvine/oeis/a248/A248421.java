@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A248421 Floor( 1/(n*tan(Pi/n) - Pi) ).
+ * A248421 a(n) = floor( 1/(n*tan(Pi/n) - Pi) ).
  * @author Georg Fischer
  */
 public class A248421 extends FloorSequence {

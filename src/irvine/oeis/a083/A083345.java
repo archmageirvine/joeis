@@ -6,7 +6,7 @@ import irvine.oeis.a085.A085731;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A083345 Numerator of r(n) = Sum(e/p: n=Product(p^e)).
+ * A083345 Numerator of r(n) = Sum(e/p: n=Product(p^e)); a(n) = n' / gcd(n,n'), where n' is the arithmetic derivative of n.
  * @author Georg Fischer
  */
 public class A083345 extends TupleTransformSequence {

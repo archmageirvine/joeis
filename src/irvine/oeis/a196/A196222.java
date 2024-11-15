@@ -6,7 +6,7 @@ import irvine.oeis.a047.A047726;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A196222 a(n) = A047726(n)^A047726(n), where A047726(n) is the number of numbers which can be written with n&apos;s digits.
+ * A196222 a(n) = A047726(n)^A047726(n), where A047726(n) is the number of numbers which can be written with n's digits.
  * @author Georg Fischer
  */
 public class A196222 extends SingleTransformSequence {

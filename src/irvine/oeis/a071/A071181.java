@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071181 Number of k such that phi(k) divides phi(n).
+ * A071181 Number of numbers k such that phi(k) divides phi(n).
  * @author Sean A. Irvine
  */
 public class A071181 extends Sequence1 {

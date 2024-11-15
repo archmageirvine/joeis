@@ -6,7 +6,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a005.A005940;
 
 /**
- * A369066 Dirichlet convolution of Liouville&apos;s lambda (A008836) with A083345, as reordered by the Doudna sequence.
+ * A369066 Dirichlet convolution of Liouville's lambda (A008836) with A083345, as reordered by the Doudna sequence.
  * @author Georg Fischer
  */
 public class A369066 extends LambdaSequence {

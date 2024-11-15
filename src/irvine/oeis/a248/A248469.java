@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A248469 Floor((2*n^2)/e).
+ * A248469 a(n) = floor((2*n^2)/e).
  * @author Georg Fischer
  */
 public class A248469 extends FloorSequence {

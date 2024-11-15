@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A051958 a(n) = 2 a(n-1) + 24 a(n-2), a(0)=0, a(1)=1.
+ * A051958 a(n) = 2*a(n-1) + 24*a(n-2), a(0)=0, a(1)=1.
  * @author Sean A. Irvine
  */
 public class A051958 extends LinearRecurrence {

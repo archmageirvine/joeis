@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000032;
 
 /**
- * A055391 Palindromic Lucas numbers.
+ * A055391 Palindromic Lucas numbers (in the order of appearance).
  * @author Sean A. Irvine
  */
 public class A055391 extends A000032 {

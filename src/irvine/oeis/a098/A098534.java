@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A098534 Mod 3 analog of Stern&apos;s diatomic series.
+ * A098534 Mod 3 analog of Stern's diatomic series.
  * @author Georg Fischer
  */
 public class A098534 extends LambdaSequence {

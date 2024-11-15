@@ -19,6 +19,8 @@ import irvine.oeis.producer.Producer;
 import irvine.oeis.transform.BinomialTransformSequence;
 import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.transform.GilbreathTransformSequence;
+import irvine.oeis.transform.InverseAronsonTransformSequence;
+import irvine.oeis.transform.InverseBinomialTransformSequence;
 import irvine.oeis.transform.InverseEulerTransform;
 import irvine.oeis.transform.InverseMobiusTransformSequence;
 import irvine.oeis.transform.InverseWeighTransform;
@@ -140,6 +142,8 @@ public final class SequenceFactory {
           return new SimpleTransformSequence(1, sequence(inner), Z::abs);
         case "binomial":
           return new BinomialTransformSequence(sequence(inner), 0);
+        case "ibinomial":
+          return new InverseBinomialTransformSequence(sequence(inner), 0);
         case "delta":
           return new DifferenceSequence(1, sequence(inner));
         case "euler":
@@ -184,6 +188,8 @@ public final class SequenceFactory {
           return new Stirling2TransformSequence(sequence(inner), 0);
         case "weigh":
           return new WeighTransformSequence(1, sequence(inner));
+        case "iaronson":
+          return new InverseAronsonTransformSequence(1, sequence(inner));
         default:
           throw new IllegalArgumentException("Unexpected function: " + function);
       }

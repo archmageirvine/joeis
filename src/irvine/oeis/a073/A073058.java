@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073047.
+ * A073058 Define s(1)={1,2}, s(2)={1,3} and s(3)={1}. For a finite sequence A={a_1, ..., a_n}, with elements in {1,2,3}, define t(A) to be the concatenation of A, s(a_1), s(a_2), ... and s(a_n). Start with the sequence {1,2,3} and repeatedly apply t; limiting sequence is shown.
  * @author Sean A. Irvine
  */
 public class A073058 extends Sequence1 {

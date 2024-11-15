@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A073047.
+ * A073054 Number of applications of DENEAT operator x -&gt; A073053(x) needed to transform n to 123.
  * @author Sean A. Irvine
  */
 public class A073054 extends Sequence0 {

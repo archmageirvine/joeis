@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033308;
 
 /**
- * A073047.
+ * A073062 Take A000040, omit commas: 235711131719232931374143,... select first n-digit prime.
  * @author Sean A. Irvine
  */
 public class A073062 extends Sequence1 {

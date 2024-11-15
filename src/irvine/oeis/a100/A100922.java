@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000120;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A100922 n appears A000120(n) times (appearances equal number of 1-bits).
+ * A100922 k appears A000120(k) times (appearances equal number of 1-bits).
  * @author Georg Fischer
  */
 public class A100922 extends LambdaTable {

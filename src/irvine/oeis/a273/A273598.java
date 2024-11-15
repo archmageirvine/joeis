@@ -5,7 +5,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A273598  Numbers n such that (11^n - 6^n)/5 is prime.
+ * A273598 Numbers k such that (11^k - 6^k)/5 is prime.
  * @author Georg Fischer
  */
 public class A273598 extends PrimePositionSubsequence {

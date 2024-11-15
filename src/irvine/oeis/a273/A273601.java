@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A273601 Numbers n such that (11^n - 9^n)/2 is prime.
+ * A273601 Numbers k such that (11^k - 9^k)/2 is prime.
  * @author Georg Fischer
  */
 public class A273601 extends PrimePositionSubsequence {

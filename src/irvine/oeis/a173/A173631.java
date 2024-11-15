@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A173631 a(n) = ceiling(sqrt(4*P_n)), where P_n is product of first n primes
+ * A173631 a(n) = ceiling(sqrt(4*P_n)), where P_n is product of first n primes.
  * @author Georg Fischer
  */
 public class A173631 extends LambdaSequence {

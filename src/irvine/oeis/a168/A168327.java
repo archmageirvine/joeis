@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A168327 Primes of concatenated form &quot;1 n^3&quot;.
+ * A168327 Primes of concatenated form "1 n^3".
  * @author Georg Fischer
  */
 public class A168327 extends FilterSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.math.z.Z;
 
 /**
- * A056954 A number n is included if n^2 divides n-th term of A056819.
+ * A056954 Numbers k such that k^2 divides A056819(k).
  * @author Sean A. Irvine
  */
 public class A056954 extends A056819 {

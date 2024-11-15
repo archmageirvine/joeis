@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A248578 Round(1/(Pi-n*sin(Pi/n))).
+ * A248578 a(n) = round(1/(Pi-n*sin(Pi/n))).
  * @author Georg Fischer
  */
 public class A248578 extends FloorSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a248;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A248586 a(n)= Sum_{i=0..n} C(n,i)*C(2i,i)^2.
+ * A248586 a(n) = Sum_{i=0..n} C(n,i)*C(2i,i)^2.
  * n^2*a(n) +(-19*n^2+19*n-5)*a(n-1) +35*(n-1)^2*a(n-2) -17*(n-1)*(n-2)*a(n-3)=0. (Munarini)
  * @author Georg Fischer
  */

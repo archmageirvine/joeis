@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A004987 a(n) = (3^n/n!)*Product_{k=0..n-1} (3*k + 1).
+ * A004987 a(n) = (3^n/n!)*Product_{k=0..n-1} (3*k + 1). 3-central binomial coefficients.
  * @author Sean A. Irvine
  */
 public class A004987 extends Sequence0 {

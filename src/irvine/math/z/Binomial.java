@@ -212,7 +212,7 @@ public final class Binomial {
 
   /**
    * Compute binomial coefficients modulo a prime.
-   * @param n upper index (may be negative)
+   * @param n upper index (can be negative)
    * @param m lower index
    * @param p modulus
    * @return binomial coefficient

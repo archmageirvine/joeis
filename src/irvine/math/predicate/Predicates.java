@@ -8,6 +8,12 @@ public final class Predicates {
 
   private Predicates() { }
 
+  /** Test if a number is a prime. */
+  public static final Predicate PRIME = new Prime();
+  /** Test if a number is an emirp (both the number and its reversal is a different prime). */
+  public static final Predicate EMIRP = new Emirp();
+  /** Test if a number is a semiprime. */
+  public static final Predicate SEMIPRIME = new Semiprime();
   /** Test if a number is a square. */
   public static final Predicate SQUARE = new Square();
   /** Test if a number is a cube. */
@@ -40,10 +46,6 @@ public final class Predicates {
   public static final Predicate DIGIT_CONTAINS_ZERO = new DigitContainsZero();
   /** Test if a number contains undulating digits. */
   public static final Predicate DIGIT_UNDULATE = new DigitUndulate();
-  /** Test if a number is an emirp (both the number and its reversal is a different prime). */
-  public static final Predicate EMIRP = new Emirp();
-  /** Test if a number is a semiprime. */
-  public static final Predicate SEMIPRIME = new Semiprime();
   /** Test if a number is a St\u00f8rmer number. */
   public static final Predicate STORMER = new Stormer();
 

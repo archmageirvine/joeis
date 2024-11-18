@@ -13,6 +13,6 @@ public class A101694 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A101694() {
-    super(0, n -> Functions.JACOBSTHAL.z(Z.TWO.multiply((Z.TWO.pow(n - 1).add(1)))));
+    super(0, n -> Functions.JACOBSTHAL.z(Z.TWO.multiply(Z.TWO.pow(n - 1).add(1))));
   }
 }

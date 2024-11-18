@@ -6,7 +6,7 @@ import irvine.oeis.DirichletInverseSequence;
 import irvine.oeis.a033.A033879;
 
 /**
- * A323910 Dirichlet inverse of deficiency of n, A033879.
+ * A323910 Dirichlet inverse of the deficiency of n, A033879.
  * @author Georg Fischer
  */
 public class A323910 extends DirichletInverseSequence {

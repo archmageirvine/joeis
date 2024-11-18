@@ -5,7 +5,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a002.A002202;
 
 /**
- * A083533 First difference sequence of A002202. Difference between consecutive possible values for phi(n).
+ * A083533 First difference sequence of A002202. Difference between consecutive possible values for phi.
  * @author Georg Fischer
  */
 public class A083533 extends DifferenceSequence {

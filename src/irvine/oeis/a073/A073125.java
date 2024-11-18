@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072339.
+ * A073125 a(n) is the least prime p(s) such that prime(s+n) - prime(s) is divisible by n.
  * @author Sean A. Irvine
  */
 public class A073125 extends Sequence1 {

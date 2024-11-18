@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007400;
 
 /**
- * A073083.
+ * A073097 Let x(n) denote the number of 4's among the n first elements of the continued fraction for sum k&gt;=0 1/2^(2^k) (A007400), y(n) the number of 6's and z(n) the number of 2's. Then a(n)=x(n)-y(n)-z(n)-1.
  * @author Sean A. Irvine
  */
 public class A073097 extends Sequence0 {

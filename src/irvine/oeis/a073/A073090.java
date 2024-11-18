@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
 
 /**
- * A073083.
+ * A073090 Number of permutations p from (1,2,3,...,n) to (1,2,3...,n) such that 1/p(1)+2/p(2)+...+n/p(n) is an integer.
  * @author Sean A. Irvine
  */
 public class A073090 extends Sequence0 {

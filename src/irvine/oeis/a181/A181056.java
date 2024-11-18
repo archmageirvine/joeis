@@ -6,7 +6,7 @@ import irvine.oeis.a065.A065449;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A181056 Let m = phi(Fibonacci(n)); then a(n) = prime(m).
+ * A181056 a(n) = prime(phi(Fibonacci(n))).
  * @author Georg Fischer
  */
 public class A181056 extends SimpleTransformSequence {

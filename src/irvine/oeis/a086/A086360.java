@@ -6,7 +6,7 @@ import irvine.oeis.a010.A010888;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A086360 Fixed point if (decimal-digit-sum)-function at initial value = n-th primorial = A002110(n) is iterated.
+ * A086360 The n-th primorial number reduced modulo 9.
  * @author Georg Fischer
  */
 public class A086360 extends DirectTransformSequence {

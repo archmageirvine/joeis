@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072339.
+ * A073127 a(n) is the quotient arising in A073125 [or in A073126]: a(n)=[A073126(n)-A073125(n)]/n=[p(s+n)-p(s)]/n.
  * @author Sean A. Irvine
  */
 public class A073127 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000010;
 import irvine.oeis.a002.A002322;
 
 /**
- * A104194 a(n) = phi(n) - CarmichaelLambda(n).
+ * A104194 a(n) = phi(n) - lambda(n).
  * @author Georg Fischer
  */
 public class A104194 extends Sequence1 {

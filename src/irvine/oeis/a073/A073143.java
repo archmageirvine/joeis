@@ -8,10 +8,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073142 List of smallest solutions for some k of x = f^k(x), n &lt;&gt; f^j(n) for j &lt; k, where f: m -&gt; |m - reverse(m)|.
+ * A073143 Numbers k such that A073142(n) = f^k(A073142(n)), where f: m -&gt; |m - reverse(m)|.
  * @author Sean A. Irvine
  */
-public class A073142 extends Sequence1 {
+public class A073143 extends Sequence1 {
 
   private final Set<Long> mReported = new HashSet<>();
   private long mN = -1;
@@ -39,7 +39,7 @@ public class A073142 extends Sequence1 {
     while (true) {
       final long count = count(++mN);
       if (count >= 0 && mReported.add(count)) {
-        return Z.valueOf(mN);
+        return Z.valueOf(count);
       }
     }
   }

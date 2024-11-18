@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072339.
+ * A073126 a(n) is the least prime p(s) such that p(s) - p(s-n) is divisible by n, i.e., a(n) = p(s) = kn + p(s-n).
  * @author Sean A. Irvine
  */
 public class A073126 extends Sequence1 {

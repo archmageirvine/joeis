@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A242340 Numbers k such that k*9^k-1 is semiprime.
+ * A242341 Numbers k such that k*10^k - 1 is a semiprime.
  * @author Sean A. Irvine
  */
 public class A242341 extends FilterNumberSequence {

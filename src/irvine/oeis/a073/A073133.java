@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072339.
+ * A073133 Table by antidiagonals of T(n,k) = n*T(n,k-1) + T(n,k-2) starting with T(n,1) = 1.
  * @author Sean A. Irvine
  */
 public class A073133 extends Sequence1 {

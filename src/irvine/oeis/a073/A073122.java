@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072339.
+ * A073122 Minimal reversing binary representation of n. Converting sum of powers of 2 in binary representation of a(n) to alternating sum gives n. See A072339.
  * @author Sean A. Irvine
  */
 public class A073122 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073083.
+ * A073108 Least k such that there are n primes among the numbers n^2 + x^2 for 1 &lt;= x &lt;= k.
  * @author Sean A. Irvine
  */
 public class A073108 extends Sequence1 {

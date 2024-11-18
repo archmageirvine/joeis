@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073083.
+ * A073105 Least k such that there are n primes among the numbers x*2^n + 1 for 1 &lt;= x &lt;= k.
  * @author Sean A. Irvine
  */
 public class A073105 extends Sequence1 {

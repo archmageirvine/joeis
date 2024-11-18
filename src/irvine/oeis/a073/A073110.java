@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072950.
+ * A073110 Number of permutations p of (1,2,3,...,n) such that sigma(1+p(1))+sigma(2+p(2))+...+sigma(n+p(n))=2*n^2.
  * @author Sean A. Irvine
  */
 public class A073110 extends Sequence1 {

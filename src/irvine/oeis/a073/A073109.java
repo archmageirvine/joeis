@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A073083.
+ * A073109 a(n) = (Product_{p&lt;=n, p odd prime} p) * Sum_{k=1..n} B(k)*C(2k,k) where B(k) is the k-th Bernoulli number.
  * @author Sean A. Irvine
  */
 public class A073109 extends Sequence2 {

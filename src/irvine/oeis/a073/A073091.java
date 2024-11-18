@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A073083.
+ * A073091 Number of ways to express n as (x^3+y^3+z^3)/(x+y+z) 1&lt;=x&lt;=y&lt;=z&lt;=n.
  * @author Sean A. Irvine
  */
 public class A073091 extends Sequence1 {

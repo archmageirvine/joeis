@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a008.A008904;
 
 /**
- * A073083.
+ * A073095 Numbers k such that the final nonzero digit of k! is the same as the last digit of binomial(2k,k) (in base 10).
  * @author Sean A. Irvine
  */
 public class A073095 extends FilterPositionSequence {

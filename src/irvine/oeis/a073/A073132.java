@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072339.
+ * A073132 Smallest subscript j such that d=p[p(j+1)]-p[p(j)]=2n, or 0 if j does not exist (at d=4).
  * @author Sean A. Irvine
  */
 public class A073132 extends Sequence1 {

@@ -31,7 +31,6 @@ public class A065621 extends Sequence1 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    // MMA: Table[BitXor[n - 1, 2 n - 1],{n, 1, 60}]
     return n.subtract(1).xor(n.multiply2().subtract(1));
   }
 

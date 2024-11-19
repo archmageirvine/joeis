@@ -24,9 +24,9 @@ public class A121179 extends A001764 {
     if (mN == 0) {
       return Z.ONE;
     } else {
-      Q result = new Q(a1764(mN), Z.THREE);
+      Q result = new Q(a(mN), Z.THREE);
       if (mN % 3 == 1) {
-        result = result.add(new Q(Z.TWO.multiply(a1764((mN - 1) / 3)), Z.THREE));
+        result = result.add(new Q(Z.TWO.multiply(a((mN - 1) / 3)), Z.THREE));
       }
       return result.num();
     }

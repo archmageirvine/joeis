@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
  */
 public class A046959 extends Sequence1 {
 
-  private CR mBest = CR.valueOf(-1);
+  private CR mBest = CR.NEG_ONE;
   private long mN = -1;
 
   @Override

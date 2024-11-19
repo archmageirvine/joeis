@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A123553 A &quot;king chicken&quot; in a tournament graph (a directed labeled graph on n nodes with a single arc between every pair of nodes) is a player A who for any other player B either beats B directly or beats someone who beats B. Sequence gives total number of king ch
+ * A123553 A "king chicken" in a tournament graph (a directed labeled graph on n nodes with a single arc between every pair of nodes) is a player A who for any other player B either beats B directly or beats someone who beats B. Sequence gives total number of king chickens in all 2^(n(n-1)/2) tournaments.
  * @author Georg Fischer
  */
 public class A123553 extends LambdaSequence {

@@ -30,7 +30,7 @@ public class A047749 extends A001764 {
       final long x = (n - 1) / 2;
       return Binomial.binomial(3 * x + 1, 2 * x + 1).divide(x + 1);
     }
-    return a1764(n / 2);
+    return a(n / 2);
   }
 
   @Override

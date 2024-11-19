@@ -17,7 +17,7 @@ public class A060754 extends Sequence1 {
   private static final CR LAMBDA1 = CR.PI.multiply(new Q(6, 7)).cos().multiply(2);
   private static final CR LAMBDA2 = CR.PI.multiply(new Q(4, 7)).cos().multiply(2);
   private static final CR LAMBDA3 = CR.PI.multiply(new Q(2, 7)).cos().multiply(2);
-  private static final CR NEG_ONE = CR.valueOf(-1);
+  private static final CR NEG_ONE = CR.NEG_ONE;
   private static final CR[] L1 = {CR.ONE, LAMBDA3.negate(), NEG_ONE.subtract(LAMBDA2)};
   private static final CR[] L2 = {CR.ONE, LAMBDA1.negate(), NEG_ONE.subtract(LAMBDA3)};
   private static final CR[] L3 = {CR.ONE, LAMBDA2.negate(), NEG_ONE.subtract(LAMBDA1)};

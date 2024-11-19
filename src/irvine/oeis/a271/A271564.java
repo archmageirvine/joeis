@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A271564 Number of 6&apos;s found in the first differences of a reduced residue system modulo a primorial p#.
+ * A271564 Number of 6's found in the first differences of a reduced residue system modulo a primorial p#.
  * @author Georg Fischer
  */
 public class A271564 extends LambdaSequence {

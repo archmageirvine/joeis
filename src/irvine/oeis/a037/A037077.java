@@ -34,7 +34,7 @@ public class A037077 extends DecimalExpansionSequence {
         }
         final CR d0 = ComputableReals.SINGLETON.pow(CR.SQRT2.multiply(2).add(CR.THREE), n);
         final CR d = d0.multiply(CR.HALF).add(d0.inverse().multiply(CR.HALF));
-        CR b = CR.valueOf(-1);
+        CR b = CR.NEG_ONE;
         CR c = d.negate();
         CR s = CR.ZERO;
         final long n2 = n * (long) n;

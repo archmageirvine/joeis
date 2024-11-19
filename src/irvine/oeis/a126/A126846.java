@@ -11,6 +11,6 @@ public class A126846 extends A126812 {
 
   /** Construct the sequence. */
   public A126846() {
-    super(1, Z.valueOf(23).pow(2));
+    super(1, Z.valueOf(23).square());
   }
 }

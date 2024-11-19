@@ -14,7 +14,7 @@ import irvine.oeis.a000.A000311;
 public class A058476 extends A000311 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private static final Polynomial<Q> C1 = Polynomial.create(new Q(-1), Q.ONE);
+  private static final Polynomial<Q> C1 = Polynomial.create(Q.NEG_ONE, Q.ONE);
   private static final Polynomial<Q> NEG_X = RING.negate(RING.x());
   private int mN = -1;
   private Z mF = Z.ONE;

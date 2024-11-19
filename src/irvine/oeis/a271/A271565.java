@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A271565 Number of 8&apos;s found in the first differences of a reduced residue system modulo a primorial p#.
+ * A271565 Number of 8's found in the first differences of a reduced residue system modulo a primorial p#.
  * @author Georg Fischer
  */
 public class A271565 extends LambdaSequence {

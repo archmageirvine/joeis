@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A057851 Primes p such that order of primeness A049076(p) is &gt; 9.
+ * A057851 Primes p whose order of primeness A078442(p) is at least 9.
  * @author Sean A. Irvine
  */
 public class A057851 extends A000040 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060671 Numbers n such that phi(x) = n has exactly 8 solutions.
+ * A060671 Numbers k such that phi(x) = k has exactly 8 solutions.
  * @author Sean A. Irvine
  */
 public class A060671 extends Sequence1 {

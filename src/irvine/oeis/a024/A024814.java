@@ -25,7 +25,7 @@ public class A024814 extends AbstractSequence {
   }
 
   private long mN = -1;
-  private CR mTan = CR.valueOf(-1);
+  private CR mTan = CR.NEG_ONE;
 
   @Override
   public Z next() {

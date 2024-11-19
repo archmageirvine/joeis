@@ -13,7 +13,7 @@ public class A060771 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 2;
-  private CR mBest = CR.valueOf(-1);
+  private CR mBest = CR.NEG_ONE;
 
   @Override
   public Z next() {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A093047 Primes p such that order of primeness A049076(p) is &gt; 12.
+ * A093047 Primes p whose order of primeness A078442(p) is at least 12.
  * @author Sean A. Irvine
  */
 public class A093047 extends A000040 {

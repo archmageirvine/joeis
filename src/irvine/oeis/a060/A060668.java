@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060668 Numbers n such that phi(x) = n has exactly 5 solutions.
+ * A060668 Numbers k such that phi(x) = k has exactly 5 solutions.
  * @author Sean A. Irvine
  */
 public class A060668 extends Sequence1 {

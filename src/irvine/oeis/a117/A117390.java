@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A117390 Numbers n such that 1234567890*sum(k=1,n,10^(10k-9)) + 1 is prime.
+ * A117390 Numbers k such that 1 + 1234567890*Sum_{i=1..k} 10^(10i-9) is prime.
  *
  * @author Georg Fischer
  */

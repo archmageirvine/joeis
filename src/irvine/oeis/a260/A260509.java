@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A260509 Number of graphs on labeled vertices {x, y, 1, 2, ..., n}, such that there is a partition of the vertices into V_1 and V_2 with x in V_1, y in V_2, every v in V_1 adjacent to an even number of vertices in V_2, and every v in V_2 adjacent to an even number
+ * A260509 Number of graphs on labeled vertices {x, y, 1, 2, ..., n}, such that there is a partition of the vertices into V_1 and V_2 with x in V_1, y in V_2, every v in V_1 adjacent to an even number of vertices in V_2, and every v in V_2 adjacent to an even number of vertices in V_1.
  * @author Georg Fischer
  */
 public class A260509 extends LambdaSequence {

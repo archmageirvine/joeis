@@ -11,9 +11,8 @@ import irvine.oeis.a000.A000931;
  */
 public class A107797 extends A000931 {
 
-  private int mN = -1;
-
   {
+    setOffset(1);
     for (int i = 0; i < 5; ++i) {
       super.next();
     }
@@ -21,6 +20,6 @@ public class A107797 extends A000931 {
 
   @Override
   public Z next() {
-    return (++mN == 0) ? Z.ZERO : Functions.PHI.z(super.next());
+    return Functions.PHI.z(super.next());
   }
 }

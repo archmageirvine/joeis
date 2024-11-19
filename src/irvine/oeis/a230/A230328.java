@@ -4,7 +4,7 @@ package irvine.oeis.a230;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A230328 Denominator of n(n+3)/(4(n+1)(n+2)) = sum(k=1..n, 1/(k(k+1)(k+2)) ).
+ * A230328 Denominator of n(n+3)/(4(n+1)(n+2)) = Sum_{k = 1..n} 1/(k(k+1)(k+2)).
  * @author Georg Fischer
  */
 public class A230328 extends GeneratingFunctionSequence {

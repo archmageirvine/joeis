@@ -14,7 +14,9 @@ public class A072994 extends Sequence1 {
 
   @Override
   public Z next() {
-    ++mN;
+    if (++mN == 1) {
+      return Z.ONE;
+    }
     long cnt = 0;
     for (long k = 1; k <= mN; ++k) {
       if (LongUtils.modPow(k, mN, mN) == 1) {

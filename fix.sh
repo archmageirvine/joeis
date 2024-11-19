@@ -39,6 +39,19 @@ find src/irvine/oeis -name "A[0-9][0-9][0-9][0-9][0-9][0-9].java" | while read s
         -e 's/new Q(8)/Q.EIGHT/g' \
         -e 's/new Q(9)/Q.NINE/g' \
         -e 's/new Q(10)/Q.TEN/g' \
+        -e 's/new Q(-1)/Q.NEG_ONE/g' \
+        -e 's/Q.valueOf(0)/Q.ZERO/g' \
+        -e 's/Q.valueOf(1)/Q.ONE/g' \
+        -e 's/Q.valueOf(2)/Q.TWO/g' \
+        -e 's/Q.valueOf(3)/Q.THREE/g' \
+        -e 's/Q.valueOf(4)/Q.FOUR/g' \
+        -e 's/Q.valueOf(5)/Q.FIVE/g' \
+        -e 's/Q.valueOf(6)/Q.SIX/g' \
+        -e 's/Q.valueOf(7)/Q.SEVEN/g' \
+        -e 's/Q.valueOf(8)/Q.EIGHT/g' \
+        -e 's/Q.valueOf(9)/Q.NINE/g' \
+        -e 's/Q.valueOf(10)/Q.TEN/g' \
+        -e 's/Q.valueOf(-1)/Q.NEG_ONE/g' \
         -e 's/= 2 - 1;/= 1;/g' \
         -e 's/= 1 - 1;/= 0;/g' \
         -e 's/= 0 - 1;/= -1;/g' \
@@ -53,6 +66,7 @@ find src/irvine/oeis -name "A[0-9][0-9][0-9][0-9][0-9][0-9].java" | while read s
         -e 's/CR\.valueOf(8L\?)/CR.EIGHT/g' \
         -e 's/CR\.valueOf(9L\?)/CR.NINE/g' \
         -e 's/CR\.valueOf(10L\?)/CR.TEN/g' \
+        -e 's/CR\.valueOf(-1L\?)/CR.NEG_ONE/g' \
         -e 's/pow(2)/square()/g' \
         -e 's/pow(Z\.TWO)/square()/g' \
         -e 's/[A-Z]*\.ZERO.subtract(\([^()]*\))/\1.negate()/g' \

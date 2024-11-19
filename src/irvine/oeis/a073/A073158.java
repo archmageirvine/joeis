@@ -14,6 +14,10 @@ public class A073158 extends Sequence1 {
   private long mA = 0;
   private long mB = 0;
 
+  protected long select(final long a, final long b, final long c) {
+    return a;
+  }
+
   @Override
   public Z next() {
     final long alpha = mA;
@@ -29,8 +33,7 @@ public class A073158 extends Sequence1 {
         }
         mUsed.set(mA);
         mUsed.set(mB);
-        System.out.println(mA + " " + mB + " " + (beta + mB));
-        return Z.valueOf(mA);
+        return Z.valueOf(select(mA, mB, beta + mB));
       }
     }
   }

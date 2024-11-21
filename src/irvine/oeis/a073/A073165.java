@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A073161.
+ * A073165 Triangle T(n,k) read by rows: related to David G. Cantor's sigma function.
  * @author Sean A. Irvine
  */
 public class A073165 extends Sequence0 {

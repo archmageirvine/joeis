@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A073161.
+ * A073171 The (n^2)-th composite number.
  * @author Sean A. Irvine
  */
 public class A073171 extends A002808 {

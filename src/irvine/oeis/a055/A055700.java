@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A055700 Numbers n such that n | Sigma_6(n) + Phi(n)^6.
+ * A055700 Numbers k such that k | sigma_6(k) + phi(k)^6.
  * @author Sean A. Irvine
  */
 public class A055700 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000720;
 
 /**
- * A073161.
+ * A073163 Partial sums of Pi(k) arising in A073162.
  * @author Sean A. Irvine
  */
 public class A073163 extends A000720 {

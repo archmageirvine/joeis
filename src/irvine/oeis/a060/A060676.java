@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060676 Numbers n such that sigma (x) = n has exactly 12 solutions.
+ * A060676 Numbers k such that sigma (x) = k has exactly 12 solutions.
  * @author Sean A. Irvine
  */
 public class A060676 extends Sequence1 {

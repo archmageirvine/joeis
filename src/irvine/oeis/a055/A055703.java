@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A055703 Numbers n such that n | sigma_9(n) - phi(n)^9.
+ * A055703 Numbers k such that k | sigma_9(k) - phi(k)^9.
  * @author Sean A. Irvine
  */
 public class A055703 extends Sequence1 {

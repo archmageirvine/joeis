@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A055704 Numbers n such that n | sigma_10(n) + phi(n)^10.
+ * A055704 Numbers k such that n | sigma_10(k) + phi(k)^10.
  * @author Sean A. Irvine
  */
 public class A055704 extends Sequence1 {

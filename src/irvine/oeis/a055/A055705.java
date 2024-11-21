@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A055705 Numbers n such that n | Sigma_11(n) - Phi(n)^11.
+ * A055705 Numbers k such that k | sigma_11(k) - phi(k)^11.
  * @author Sean A. Irvine
  */
 public class A055705 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.a061.A061006;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A180589 a(n)=floor(n!*h(n)/n), where h(n)=sum(1/k,k=1..10)
+ * A180589 a(n)=floor(n!*h(n)/n), where h(n)=sum(1/k,k=1..10).
  * @author Georg Fischer
  */
 public class A180589 extends MultiTransformSequence {

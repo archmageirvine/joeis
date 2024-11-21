@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000720;
 
 /**
- * A073161.
+ * A073164 Quotients arising in A073162: A046992(n)/n if n is in A073162.
  * @author Sean A. Irvine
  */
 public class A073164 extends A000720 {

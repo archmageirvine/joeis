@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A055701 Numbers n such that n | Sigma_7(n) - Phi(n)^7.
+ * A055701 Numbers k such that k | sigma_7(k) - phi(k)^7.
  * @author Sean A. Irvine
  */
 public class A055701 extends Sequence1 {

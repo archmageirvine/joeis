@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073161.
+ * A073161 Nested floor product of n and fractions (p_k + 1)/p_k where p_k is k-th prime.
  * @author Sean A. Irvine
  */
 public class A073161 extends Sequence1 {

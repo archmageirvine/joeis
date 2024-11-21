@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000720;
 
 /**
- * A073161.
+ * A073162 n is such that partial sum of pi(k) from 1 to n is divisible by n.
  * @author Sean A. Irvine
  */
 public class A073162 extends A000720 {

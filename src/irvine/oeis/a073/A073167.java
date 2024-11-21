@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A073161.
+ * A073167 The (n!)-th composite number.
  * @author Sean A. Irvine
  */
 public class A073167 extends A002808 {

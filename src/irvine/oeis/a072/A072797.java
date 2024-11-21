@@ -11,15 +11,22 @@ import irvine.oeis.a057.A057120;
  */
 public class A072797 extends A014486 {
 
-  @Override
-  public Z next() {
-    final Z t = super.next();
-    final SExpression s = SExpression.binexp2pars(t);
+  /**
+   * The bijection of A072797.
+   * @param s expression
+   * @return expression
+   */
+  public static SExpression s072797(final SExpression s) {
     if (!s.isPair() || !s.car().isPair()) {
-      return A057120.catalanGlobalRank(t);
+      return s;
     }
     final SExpression u = SExpression.robl(SExpression.swap(s));
     u.setCar(SExpression.swap(u.car()));
-    return A057120.catalanGlobalRank(u.toZ());
+    return u;
+  }
+
+  @Override
+  public Z next() {
+    return A057120.catalanGlobalRank(s072797(SExpression.binexp2pars(super.next())).toZ());
   }
 }

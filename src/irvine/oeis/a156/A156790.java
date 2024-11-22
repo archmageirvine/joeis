@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A156790 Number of first quadrant lattice squares inside the circle x^2+y^2=(2^n)^2
+ * A156790 Number of first quadrant lattice squares inside the circle x^2+y^2=(2^n)^2.
  * @author Georg Fischer
  */
 public class A156790 extends LambdaSequence {

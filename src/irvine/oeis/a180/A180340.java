@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001913;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A180340 Numbers with x digits such that the first x multiples are cyclic permutations of the number, leading 0&apos;s omitted (or cyclic numbers).
+ * A180340 Numbers with x digits such that the first x multiples are cyclic permutations of the number, leading 0's omitted (or cyclic numbers).
  * @author Georg Fischer
  */
 public class A180340 extends SingleTransformSequence {

@@ -7,7 +7,7 @@ import irvine.math.q.Rationals;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A190120 a(n) = Sum_{k=1..n} lcm(k,k&apos;)/gcd(k,k&apos;), where n&apos; is arithmetic derivative of n.
+ * A190120 a(n) = Sum_{k=1..n} lcm(k,k')/gcd(k,k'), where n' is arithmetic derivative of n.
  * @author Georg Fischer
  */
 public class A190120 extends LambdaSequence {

@@ -7,7 +7,7 @@ import irvine.math.q.Rationals;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A109491 Value of Product_{k=1..n} sigma(k)/sd(k, 2), where sd(k,b) is the sum of the digits of k represented in base b.
+ * A109491 Value of Product_{k=1..n} sigma(k)/sd(k,2), where sd(k,b) is the sum of the digits of k represented in base b.
  * @author Georg Fischer
  */
 public class A109491 extends LambdaSequence {

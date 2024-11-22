@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A361892 a(n) = S(7, 2*n-1)/S(1, 2*n-1), where S(r,n) = Sum_{k = 0..floor(n/2)} ( binomial(n,k) - binomial(n,k-1) )^r.
+ * A361892 a(n) = S(7,2*n-1)/S(1,2*n-1), where S(r,n) = Sum_{k = 0..floor(n/2)} ( binomial(n,k) - binomial(n,k-1) )^r.
  * @author Georg Fischer
  */
 public class A361892 extends LambdaSequence {

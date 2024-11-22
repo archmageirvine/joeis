@@ -167,7 +167,7 @@ public final class PolynomialUtils {
    * @param a quadratic coefficient
    * @param b linear coefficient
    * @param c constant coefficient
-   * @return list of integer roots (at most 3 long)
+   * @return set of integer roots (at most 3 long)
    */
   public static Set<Z> zRootsCubic(final Z a, final Z b, final Z c) {
     final C za = new C(a.doubleValue());

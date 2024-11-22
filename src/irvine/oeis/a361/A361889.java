@@ -4,7 +4,7 @@ package irvine.oeis.a361;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A361889 a(n) = S(5, 2*n-1)/S(1, 2*n-1), where S(r,n) = Sum_{k = 0..floor(n/2)} ( binomial(n,k) - binomial(n,k-1) )^r.
+ * A361889 a(n) = S(5,2*n-1)/S(1,2*n-1), where S(r,n) = Sum_{k = 0..floor(n/2)} ( binomial(n,k) - binomial(n,k-1) )^r.
  * @author Georg Fischer
  */
 public class A361889 extends LambdaSequence {

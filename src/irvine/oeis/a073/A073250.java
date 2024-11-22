@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a005.A005117;
 
 /**
- * A073171.
+ * A073250 Nonprime squarefree numbers n such that n+1 is also squarefree and nonprime, but not n-1 and n+2.
  * @author Sean A. Irvine
  */
 public class A073250 extends FilterSequence {

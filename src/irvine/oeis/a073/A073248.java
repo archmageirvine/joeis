@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a005.A005117;
 
 /**
- * A073171.
+ * A073248 Squarefree numbers k such that k+1 is also squarefree, but k-1 and k+2 are not.
  * @author Sean A. Irvine
  */
 public class A073248 extends FilterSequence {

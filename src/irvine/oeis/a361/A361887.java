@@ -13,8 +13,18 @@ import irvine.oeis.LambdaSequence;
  */
 public class A361887 extends LambdaSequence {
 
+  /**
+   * Compute a binomial sum.
+   * @param r exponent
+   * @param n index
+   * @return Sum_{k = 0..floor(n/2)} ( binomial(n,k) - binomial(n,k-1) )^r
+   */
+  public static Z bisum(final int r, final int n) {
+    return Integers.SINGLETON.sum(0, n / 2, k -> Binomial.binomial(n, k).subtract(Binomial.binomial(n, k - 1)).pow(r));
+  }
+
   /** Construct the sequence. */
   public A361887() {
-    super(0, n -> Integers.SINGLETON.sum(0, n / 2, k -> Binomial.binomial(n, k).subtract(Binomial.binomial(n, k - 1)).pow(Z.FIVE)));
+    super(0, n -> bisum(5, n));
   }
 }

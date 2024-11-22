@@ -15,7 +15,7 @@ public class A073175 extends Sequence1 {
 
   @Override
   public Z next() {
-    Z min = mMod;
+    final Z min = mMod;
     mMod = mMod.multiply(10);
     final Sequence digits = new A033307();
     Z t = Z.ZERO;

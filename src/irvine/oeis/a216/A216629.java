@@ -6,7 +6,7 @@ import irvine.oeis.a163.A163085;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A216629  a(n) = A163085(n)/(floor(n/2)!)^2.
+ * A216629 a(n) = A163085(n)/(floor(n/2)!)^2.
  * @author Georg Fischer
  */
 public class A216629 extends SingleTransformSequence {

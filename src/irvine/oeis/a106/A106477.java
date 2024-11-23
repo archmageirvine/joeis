@@ -13,6 +13,6 @@ public class A106477 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A106477() {
-    super(0, n -> Integers.SINGLETON.sum(0, (n / 2), k -> Functions.PHI.z(n - 2 * k + 1)));
+    super(0, n -> Integers.SINGLETON.sum(0, n / 2, k -> Functions.PHI.z(n - 2 * k + 1)));
   }
 }

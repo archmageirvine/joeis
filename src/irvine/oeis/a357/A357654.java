@@ -16,6 +16,6 @@ public class A357654 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A357654() {
-    super(0, n -> Integers.SINGLETON.sum(0, (n / 2), k -> A120730.a(n - k, k)));
+    super(0, n -> Integers.SINGLETON.sum(0, n / 2, k -> A120730.a(n - k, k)));
   }
 }

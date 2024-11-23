@@ -15,6 +15,6 @@ public class A362700 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A362700() {
-    super(0, n -> new Q(Functions.FACTORIAL.z(n)).multiply(Rationals.SINGLETON.sum(0, (n / 2), k -> new Q(n - 2 * k).pow(n - k).divide(new Q(Z.TWO.pow(k)).multiply(Functions.FACTORIAL.z(k)).multiply(Functions.FACTORIAL.z(n - 2 * k))))).num());
+    super(0, n -> new Q(Functions.FACTORIAL.z(n)).multiply(Rationals.SINGLETON.sum(0, n / 2, k -> new Q(n - 2L * k).pow(n - k).divide(new Q(Z.TWO.pow(k)).multiply(Functions.FACTORIAL.z(k)).multiply(Functions.FACTORIAL.z(n - 2 * k))))).num());
   }
 }

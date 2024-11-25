@@ -62,6 +62,8 @@ public class DirichletSeries extends TreeMap<Z, Z> {
 
   /**
    * Convert an ordinary list into a (sparse) Dirichlet series.
+   * If <code>terms[i]=v</code>, then <code>v / i^s</code> is included in
+   * the series.
    * @param terms list
    * @return Dirichlet series version
    */

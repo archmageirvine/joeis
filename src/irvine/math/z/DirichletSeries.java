@@ -175,12 +175,12 @@ public class DirichletSeries extends TreeMap<Z, Z> {
    * @return Dirichlet series to given power
    * @exception ArithmeticException if <code>n</code> is negative.
    */
-  public DirichletSeries pow(final int n, final Z max) {
-    if (n < 0) {
+  public DirichletSeries pow(final Z n, final Z max) {
+    if (n.signum() < 0) {
       throw new IllegalArgumentException();
     }
     // x^0
-    if (n == 0) {
+    if (n.isZero()) {
       return DirichletSeries.ONE;
     }
     if (isEmpty()) {
@@ -190,11 +190,11 @@ public class DirichletSeries extends TreeMap<Z, Z> {
       return this; // 1^n
     }
     // x^1
-    if (n == 1) {
+    if (Z.ONE.equals(n)) {
       return this;
     }
-    final DirichletSeries s = multiply(this, max).pow(n / 2, max);
-    return (n & 1) == 0 ? s : multiply(s, max);
+    final DirichletSeries s = multiply(this, max).pow(n.divide2(), max);
+    return n.isEven() ? s : multiply(s, max);
   }
 
   /**
@@ -204,7 +204,7 @@ public class DirichletSeries extends TreeMap<Z, Z> {
    * @exception ArithmeticException if <code>n</code> is negative.
    */
   public DirichletSeries pow(final int n, final long max) {
-    return pow(n, Z.valueOf(max));
+    return pow(Z.valueOf(n), Z.valueOf(max));
   }
 
   /**

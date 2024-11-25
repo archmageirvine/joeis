@@ -1,0 +1,32 @@
+package irvine.oeis.a073;
+
+import irvine.math.function.Functions;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
+
+/**
+ * A073259.
+ * @author Sean A. Irvine
+ */
+public class A073340 extends Sequence1 {
+
+  private Z mB = null;
+  private int mN = 0;
+
+  @Override
+  public Z next() {
+    if (mB != null) {
+      final Z res = mB;
+      mB = null;
+      return res;
+    }
+    while (true) {
+      ++mN;
+      if (Functions.FIBONACCI.z(mN).isProbablePrime() && Functions.FIBONACCI.z(mN + 2).isProbablePrime()) {
+        mB = Z.valueOf(mN + 2);
+        return Z.valueOf(mN);
+      }
+    }
+  }
+}
+

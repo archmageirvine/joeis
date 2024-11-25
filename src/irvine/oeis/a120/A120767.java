@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A120767 2^(n^2)+3^n.
+ * A120767 a(n) = 2^(n^2) + 3^n.
  * a(n)=2^(n^2)+3^n
  * @author Georg Fischer
  */

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A072950.
+ * A073346 Table T(n,k) (listed antidiagonalwise in order T(0,0), T(1,0), T(0,1), T(2,0), T(1,1), ...) giving the number of rooted plane binary trees of size n and "contracted height" k.
  * @author Sean A. Irvine
  */
 public class A073346 extends Sequence0 {

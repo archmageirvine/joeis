@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072950 Number of permutations p of (1,2,3,...,n) such that at least one value of abs(k-p(k)) is prime.
+ * A073344 Number of permutations p of (1,2,3,...,n) such that Sum_{k=1..n} (p(k) mod k) = n.
  * @author Sean A. Irvine
  */
 public class A073344 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000788;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A168160 Number of 0&apos;s in the matrix whose lines are the binary expansion of the numbers 1,...,n.
+ * A168160 Number of 0's in the matrix whose lines are the binary expansion of the numbers 1,...,n.
  * @author Georg Fischer
  */
 public class A168160 extends SingleTransformSequence {

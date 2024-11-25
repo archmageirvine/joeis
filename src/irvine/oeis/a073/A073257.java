@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002808;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A073257 Smallest n such that gcd(c(x),x) = gcd(A002808(x),x) = A064814(x) = n.
+ * A073257 Smallest k such that gcd(c(k),k) = gcd(A002808(k),k) = A064814(k) = n.
  * @author Sean A. Irvine
  */
 public class A073257 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A076252 omega(n) = omega(n-1) + omega(n-2) + omega(n-3), where omega(n) is the number of distinct prime factors of n.
+ * A076252 Integers k such that omega(k) = omega(k-1) + omega(k-2) + omega(k-3), where omega(n) is the number of distinct prime factors of n.
  * @author Georg Fischer
  */
 public class A076252 extends FilterNumberSequence {

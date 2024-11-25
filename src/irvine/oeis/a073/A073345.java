@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A072950.
+ * A073345 Table T(n,k), read by ascending antidiagonals, giving the number of rooted plane binary trees of size n and height k.
  * @author Sean A. Irvine
  */
 public class A073345 extends Sequence0 {

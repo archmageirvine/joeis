@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072950.
+ * A073347 a(1)=1; a(n+1) is the smallest integer &gt; a(n) such that Sum_{k=a(n)..a(n+1)} 1/sqrt(k) &gt; Pi.
  * @author Sean A. Irvine
  */
 public class A073347 extends Sequence1 {

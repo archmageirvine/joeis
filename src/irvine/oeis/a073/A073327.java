@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.string.English;
 
 /**
- * A073259.
+ * A073327 Write U.S. English name for n (ignoring hyphens and spaces) and add numerical values of letters using a=1, b=2, ..., y=25, z=26.
  * @author Sean A. Irvine
  */
 public class A073327 extends Sequence0 {

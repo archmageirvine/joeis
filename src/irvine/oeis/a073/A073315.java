@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073284.
+ * A073315 Expansion of Lambert W function in powers of log(log(x))/log(x).
  * @author Sean A. Irvine
  */
 public class A073315 extends Sequence1 {

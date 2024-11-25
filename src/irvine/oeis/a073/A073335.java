@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073259.
+ * A073335 Total number of prime power parts in all partitions of n.
  * @author Sean A. Irvine
  */
 public class A073335 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073259.
+ * A073340 Fibonacci prime pairs: the indices of each pair differ by two and the relevant Fibonacci numbers are both prime.
  * @author Sean A. Irvine
  */
 public class A073340 extends Sequence1 {

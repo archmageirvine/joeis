@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
- * A073259.
+ * A073326 Smallest x such that prime(x) == n (mod (x-pi(x)-1)).
  * @author Sean A. Irvine
  */
 public class A073326 extends Sequence1 {

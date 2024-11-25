@@ -6,7 +6,7 @@ import irvine.oeis.a014.A014486;
 import irvine.oeis.a057.A057120;
 
 /**
- * A073284.
+ * A073287 Permutation of natural numbers induced by the composition of the Catalan bijections A069768 &amp; A069770.
  * @author Sean A. Irvine
  */
 public class A073287 extends A014486 {

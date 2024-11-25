@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073259 Length of FixedPointList leading to value of n-th composite number.
+ * A073259 Number of iterations of f(n,k) = n+pi(k)+1 starting from f(n,n) until a fixed point is reached.
  * @author Sean A. Irvine
  */
 public class A073259 extends Sequence1 {

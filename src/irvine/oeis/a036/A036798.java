@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A036798 Odd m such that there exists an even number k &lt; m with phi(k) = phi(m).
+ * A036798 Odd numbers m such that there exists an even number k &lt; m with phi(k) = phi(m).
  * @author Sean A. Irvine
  */
 public class A036798 extends Sequence1 {

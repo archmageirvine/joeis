@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A099556 Row sums of triangle A099555, so that a(n) = Sum_{k=0..2n} (n-[k/2])^k where [k/2] is the integer floor of k/2.
+ * A099556 a(n) = Sum_{k=0..2*n} (n - floor(k/2))^k.
  * @author Georg Fischer
  */
 public class A099556 extends LambdaSequence {

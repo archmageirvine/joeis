@@ -5,7 +5,7 @@ import irvine.oeis.a337.A337544;
 import irvine.oeis.transform.InverseMobiusTransformSequence;
 
 /**
- * A344587 a(n) = 2*A003961(n) - sigma(A003961(n)).
+ * A344587 Deficiency of prime-shifted n: a(n) = 2*A003961(n) - sigma(A003961(n)).
  * @author Georg Fischer
  */
 public class A344587 extends InverseMobiusTransformSequence {

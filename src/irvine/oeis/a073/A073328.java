@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a002.A002034;
 
 /**
- * A073259.
+ * A073328 Numbers n such that S(n) is a palindromic prime, where S(n) is the Kempner function A002034.
  * @author Sean A. Irvine
  */
 public class A073328 extends FilterPositionSequence {

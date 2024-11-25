@@ -5,7 +5,7 @@ import irvine.oeis.a010.A010050;
 import irvine.oeis.a204.A204892;
 
 /**
- * A205561 Least positive integer k such that n divides (2k)!-(2j)! for some j in [1,k-1].
+ * A205561 Least positive integer k such that n divides (2k)! - (2j)! for some j in [1,k-1].
  * @author Georg Fischer
  */
 public class A205561 extends A204892 {

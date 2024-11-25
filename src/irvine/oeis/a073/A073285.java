@@ -7,7 +7,7 @@ import irvine.oeis.a057.A057120;
 import irvine.oeis.a072.A072796;
 
 /**
- * A073284 Permutation of natural numbers induced by the Catalan bijection gma073284! acting on the parenthesizations encoded by A014486.
+ * A073285 Permutation of natural numbers induced by the Catalan bijection gma073285! acting on the parenthesizations encoded by A014486.
  * @author Sean A. Irvine
  */
 public class A073285 extends A014486 {

@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a369.A369001;
 
 /**
- * A377874 Parity of A083345(n), where A083345(n) = n&apos; / gcd(n,n&apos;) = numerator of Sum(e/p: n=Product(p^e)).
+ * A377874 Parity of A083345(n), where A083345(n) = n' / gcd(n,n') = numerator of Sum(e/p: n=Product(p^e)).
  * @author Georg Fischer
  */
 public class A377874 extends LambdaSequence {

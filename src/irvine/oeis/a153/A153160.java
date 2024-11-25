@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007916;
 
 /**
- * A153160 A007916(n)^6.
+ * A153160 a(n) = A007916(n)^6.
  * @author Georg Fischer
  */
 public class A153160 extends Sequence1 {

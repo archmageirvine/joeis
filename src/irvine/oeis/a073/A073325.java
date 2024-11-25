@@ -4,7 +4,7 @@ import irvine.oeis.InverseSequence;
 import irvine.oeis.a004.A004648;
 
 /**
- * A073259.
+ * A073325 a(n) = least k &gt; 0 such that prime(k) == n (mod k).
  * @author Sean A. Irvine
  */
 public class A073325 extends InverseSequence {

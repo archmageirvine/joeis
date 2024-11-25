@@ -6,7 +6,7 @@ import irvine.oeis.DirichletInverseSequence;
 import irvine.oeis.a083.A083254;
 
 /**
- * A323912 Dirichlet inverse of A083254(n) (= 2*phi(n)-n).
+ * A323912 Dirichlet inverse of A083254(n), where A083254(n) = 2*phi(n) - n.
  * @author Georg Fischer
  */
 public class A323912 extends DirichletInverseSequence {

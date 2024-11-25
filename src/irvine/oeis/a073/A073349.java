@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004394;
 
 /**
- * A072950.
+ * A073349 Numbers n such that sigma(n)/n is equal to sigma(k)/k for some k being superabundant (A004394).
  * @author Sean A. Irvine
  */
 public class A073349 extends Sequence1 {

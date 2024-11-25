@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A073284.
+ * A073319 Numbers n such that A073318(n) = 2^phi(n) - Sum_{j=0..n} binomial(phi(n), phi(j)) is positive.
  * @author Sean A. Irvine
  */
 public class A073319 extends FilterPositionSequence {

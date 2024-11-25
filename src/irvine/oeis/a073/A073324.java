@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002808;
 
 /**
- * A073259.
+ * A073324 Smallest x such that prime(x) mod c(x) = n, where prime(j) is the j-th prime, c(j) is the j-th composite number.
  * @author Sean A. Irvine
  */
 public class A073324 extends Sequence1 {

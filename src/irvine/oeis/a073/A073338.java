@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073259.
+ * A073338 Positive values of n for which 4n^2-10n+7 is prime.
  * @author Sean A. Irvine
  */
 public class A073338 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002034;
 
 /**
- * A073259.
+ * A073332 Composite solutions to S(n) = rad(n), where S() is A002034 and rad() is A007947.
  * @author Sean A. Irvine
  */
 public class A073332 extends Sequence1 {

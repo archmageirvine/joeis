@@ -4,7 +4,7 @@ package irvine.oeis.a349;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A349596 Number of edge subsets E of the 3 X k grid graph such that E contains a path between the top left node and the bottom right node.
+ * A349596 Number of edge subsets E of the 3 X n grid graph such that E contains a path between the top left node and the bottom right node.
  * @author Georg Fischer
  */
 public class A349596 extends HolonomicRecurrence {

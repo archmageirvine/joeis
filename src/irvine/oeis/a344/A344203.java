@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A344203 Number of ways to factor n into 2 kinds of 2, 3 kinds of 3, ...
+ * A344203 Dirichlet g.f.: Product_{k&gt;=2} 1 / (1 - k^(-s))^binomial(k+2,3).
  * @author Sean A. Irvine
  */
 public class A344203 extends Sequence1 {

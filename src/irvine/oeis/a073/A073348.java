@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072950.
+ * A073348 Least k such that sigma(k)/k &gt;= sigma(n)/n.
  * @author Sean A. Irvine
  */
 public class A073348 extends Sequence1 {

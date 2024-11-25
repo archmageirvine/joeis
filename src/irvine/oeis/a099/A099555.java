@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A099555 Triangle, read by rows, where T(n,k) = (n-floor(k/2))^k for k = 0..2*n.
+ * A099555 Triangle, read by rows, where T(n,k) = (n-floor(k/2))^k for k = 0..2*n - 1, with T(0,0) = 1.
  * @author Georg Fischer
  */
 public class A099555 extends LambdaTable {

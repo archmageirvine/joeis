@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A073279.
+ * A073279 Number of digits of n!^n! (ultrafactorial numbers).
  * @author Sean A. Irvine
  */
 public class A073279 extends Sequence0 {

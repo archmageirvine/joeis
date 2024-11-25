@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a002.A002034;
 
 /**
- * A073284.
+ * A073307 Numbers k such that S(k)=d(k), where S(k) is the Kempner function (A002034) and d(k) is the number of divisors of k (A000005).
  * @author Sean A. Irvine
  */
 public class A073307 extends FilterPositionSequence {

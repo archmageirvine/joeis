@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072950 Number of permutations p of (1,2,3,...,n) such that at least one value of abs(k-p(k)) is prime.
+ * A073343 Number of permutations p of (1,2,3,...,n) such that Sum_{k=1..n} gcd(k,p(k)) = sigma(n).
  * @author Sean A. Irvine
  */
 public class A073343 extends Sequence1 {

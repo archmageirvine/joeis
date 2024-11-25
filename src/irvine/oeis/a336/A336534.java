@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A336534 Square array T(n,k), n &gt;= 0, k &gt;= 0, read by antidiagonals, where T(n,k) = Sum_{j=0..n} binomial(n,j) * binomial(k*n+j+1,n)/(k*n+j+1).
+ * A336534 Square array T(n,k), n &gt;= 0, k &gt;= 0, read by antidiagonals downwards, where T(n,k) = Sum_{j=0..n} binomial(n,j) * binomial(k*n+j+1,n)/(k*n+j+1).
  * @author Georg Fischer
  */
 public class A336534 extends UpperLeftTriangle {

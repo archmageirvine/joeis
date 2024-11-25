@@ -15,7 +15,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.util.Pair;
 
 /**
- * A000721 Number of balanced Boolean functions of n variables.
+ * A000721 Number of NP-equivalence classes of balanced Boolean functions of n variables.
  * @author Sean A. Irvine
  */
 public class A000721 extends AbstractSequence {

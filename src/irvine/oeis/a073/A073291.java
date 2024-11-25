@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.a069.A069768;
 
 /**
- * A073290 Permutation A069767 applied twice ("squared").
+ * A073291 Permutation A069768 applied twice ("squared").
  * @author Sean A. Irvine
  */
 public class A073291 extends A069768 {

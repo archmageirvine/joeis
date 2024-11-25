@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002476;
 
 
 /**
- * A171836 Primes of the form 6n+1 with prime index of the form 6n+1.
+ * A171836 a(n) = A002476(A002476(n)).
  * Formula: <code>a(n) = A002476(A002476(n)).</code>
  * @author Georg Fischer
  */

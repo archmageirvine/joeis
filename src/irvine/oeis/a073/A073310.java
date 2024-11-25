@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073284.
+ * A073310 a(n) is the smallest number k such that 2+k and 2n+k are both prime.
  * @author Sean A. Irvine
  */
 public class A073310 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A073259.
+ * A073321 a(n)=A073259[A000040(n)]; Length of FixedPointList started with n-th prime and leading to corresponding composite number.
  * @author Sean A. Irvine
  */
 public class A073321 extends A000040 {

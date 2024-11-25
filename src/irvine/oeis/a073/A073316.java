@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A073284.
+ * A073316 a(n) = Max d(j), j=1..n-1, where d(j) is the smallest positive number such that 2j+d(j) and 2n+d(j) are both prime. A generalization of A073310.
  * @author Sean A. Irvine
  */
 public class A073316 extends Sequence2 {

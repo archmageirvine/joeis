@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A073284.
+ * A073300 If n=pqr...st in ternary, a(n)=value of the continuant [p,q,r,...,s,t].
  * @author Sean A. Irvine
  */
 public class A073300 extends CachedSequence {

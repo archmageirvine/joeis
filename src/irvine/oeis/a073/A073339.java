@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073259.
+ * A073339 Define b(k) by the recursion b(1)=n, b(k+1)=b(k)-trunc(k/b(k)), where trunc(x) is floor(x) for x&gt;=0, ceiling(x) for x&lt;0. Sequence gives the value a(n) such that b(a(n))=0; if k&gt;a(n) then b(k) is undefined.
  * @author Sean A. Irvine
  */
 public class A073339 extends Sequence1 {

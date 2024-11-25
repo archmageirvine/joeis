@@ -6,7 +6,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A070237 Numbers n such that the sign of core(n)-phi(n) is not equal to 2*mu(n)^2-1, where core(x) is the squarefree part of x.
+ * A070237 Numbers k such that the sign of core(k)-phi(k) is not equal to 2*mu(k)^2-1, where core(k) is the squarefree part of k.
  * @author Georg Fischer
  */
 public class A070237 extends FilterNumberSequence {

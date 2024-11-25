@@ -6,7 +6,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A248766 Greatest 4th-power-free divisor of n!
+ * A248766 Greatest 4th-power-free divisor of n!.
  * @author Georg Fischer
  */
 public class A248766 extends LambdaSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a048.A048692;
 
 /**
- * A073259.
+ * A073329 a(n) is the n-th number to have n distinct prime factors.
  * @author Sean A. Irvine
  */
 public class A073329 extends A048692 {

@@ -4,7 +4,7 @@ import irvine.oeis.Combiner;
 import irvine.oeis.a000.A000010;
 
 /**
- * A073284.
+ * A073312 Number of nonsquarefree numbers in the reduced residue system of n.
  * @author Sean A. Irvine
  */
 public class A073312 extends Combiner {

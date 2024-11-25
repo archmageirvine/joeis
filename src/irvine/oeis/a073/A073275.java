@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002808;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A073275 Smallest n such that remainder Mod[c(x),x]=n, where c(x) = A002808(x) = x-th composite number or 0 if no such number exists.
+ * A073275 Smallest k such that remainder c(k) mod k = n, where c(k) = A002808(k) = k-th composite number or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A073275 extends Sequence1 {

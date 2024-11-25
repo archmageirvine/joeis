@@ -192,6 +192,16 @@ public class DirichletSeries extends TreeMap<Z, Z> {
   }
 
   /**
+   * Divide the Dirichlet series by another Dirichlet series.
+   * @param d divisor
+   * @param maxDegree maximum degree
+   * @return Dirichlet series
+   */
+  public DirichletSeries divide(final DirichletSeries d, final int maxDegree) {
+    return multiply(d.inverse(maxDegree), maxDegree);
+  }
+
+  /**
    * Compute the Dirichlet product of two Dirichlet series.
    * @param ds other series
    * @param maxDegree degree limit
@@ -251,15 +261,24 @@ public class DirichletSeries extends TreeMap<Z, Z> {
   }
 
   /**
+   * Given a Dirichlet series <code>L(s)</code> return <code>L(s-shift)</code>.
+   * @param shift amount to shift
+   * @return shifted series
+   */
+  public DirichletSeries shift(final long shift) {
+    final DirichletSeries ds = new DirichletSeries();
+    for (final Map.Entry<Z, Z> e : entrySet()) {
+      ds.put(e.getKey(), e.getValue().multiply(e.getKey().pow(shift)));
+    }
+    return ds;
+  }
+
+  /**
    * Given a Dirichlet series <code>L(s)</code> return <code>L(s-1)</code>.
    * @return shifted series
    */
   public DirichletSeries shift() {
-    final DirichletSeries ds = new DirichletSeries();
-    for (final Map.Entry<Z, Z> e : entrySet()) {
-      ds.put(e.getKey(), e.getValue().multiply(e.getKey()));
-    }
-    return ds;
+    return shift(1);
   }
 
   /**

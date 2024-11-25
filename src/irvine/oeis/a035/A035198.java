@@ -25,7 +25,7 @@ public class A035198 extends Sequence0 {
           break;
         case 3:
         case 5:
-          d = d.multiply(DirichletSeries.zeta(p, mMax, Z.ONE).scale(2, mMax), mMax);
+          d = d.multiply(DirichletSeries.zeta(p, mMax, Z.ONE).substitute(2, mMax), mMax);
           break;
         default:
           break;

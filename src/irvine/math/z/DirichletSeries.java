@@ -10,11 +10,19 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 
 /**
- * Container for a Dirichlet series. This implementation only stores
- * nonzero terms.
+ * Container for a Dirichlet series.
  * @author Sean A. Irvine
  */
 public class DirichletSeries extends TreeMap<Z, Z> {
+
+  // This class holds a (sparse) Dirichlet series of the form
+  // v_1 / k_1^s + v_2 / k_2^s + v_3 / k_3^s + ...
+  // where the k_i and v_i are stored as key and value in the underlying TreeMap.
+  // Often the v_i are all 1.
+  // Only nonzero terms are stored.
+  //
+  // Most of the methods here operate up to a specified "maximum degree"
+  // on the value of the k_i.
 
   /** The unit Dirichlet series. */
   public static final DirichletSeries ONE = new DirichletSeries();
@@ -23,17 +31,30 @@ public class DirichletSeries extends TreeMap<Z, Z> {
   }
 
   /**
+   * Return the Dirichlet series for <code>zeta(s)</code> up to the specified degree.
+   * @param maxDegree degree
+   * @return Dirichlet series
+   */
+  public static DirichletSeries zeta(final long maxDegree) {
+    final DirichletSeries ds = new DirichletSeries();
+    for (long k = 1; k <= maxDegree; ++k) {
+      ds.put(Z.valueOf(k), Z.ONE);
+    }
+    return ds;
+  }
+
+  /**
    * Compute a zeta function as a Dirichlet series, <code>1/(1-p^(-s))</code>.
    * @param p prime
-   * @param max maximum order
+   * @param maxDegree maximum degree
    * @param f scalar coefficient
    * @return Dirichlet series
    */
-  public static DirichletSeries zeta(final long p, final long max, final Z f) {
+  public static DirichletSeries zeta(final long p, final long maxDegree, final Z f) {
     final DirichletSeries ds = new DirichletSeries();
     ds.put(Z.ONE, Z.ONE);
     Z u = f;
-    for (long q = p; q <= max; q *= p, u = u.multiply(f)) {
+    for (long q = p; q <= maxDegree; q *= p, u = u.multiply(f)) {
       ds.put(Z.valueOf(q), u);
     }
     return ds;
@@ -58,14 +79,14 @@ public class DirichletSeries extends TreeMap<Z, Z> {
   /**
    * Compute a zeta function as a Dirichlet series, <code>1+p^(-s)</code>.
    * @param p prime
-   * @param max maximum order
+   * @param maxDegree maximum degree
    * @param f scalar coefficient
    * @return Dirichlet series
    */
-  public static DirichletSeries zetaNum(final long p, final long max, final Z f) {
+  public static DirichletSeries zetaNum(final long p, final long maxDegree, final Z f) {
     final DirichletSeries ds = new DirichletSeries();
     ds.put(Z.ONE, Z.ONE);
-    if (p <= max) {
+    if (p <= maxDegree) {
       ds.put(Z.valueOf(p), f);
     }
     return ds;
@@ -85,7 +106,7 @@ public class DirichletSeries extends TreeMap<Z, Z> {
   }
 
   /**
-   * Return a coefficient of the series
+   * Return a coefficient of the series.
    * @param base denominator
    * @return coefficient
    */
@@ -95,7 +116,7 @@ public class DirichletSeries extends TreeMap<Z, Z> {
   }
 
   /**
-   * Return a coefficient of the series
+   * Return a coefficient of the series.
    * @param base denominator
    * @return coefficient
    */
@@ -138,6 +159,24 @@ public class DirichletSeries extends TreeMap<Z, Z> {
   }
 
   /**
+   * Square this Dirichlet series.
+   * @param maxDegree maximum degree
+   * @return Dirichlet series
+   */
+  public DirichletSeries square(final Z maxDegree) {
+    return multiply(this, maxDegree);
+  }
+
+  /**
+   * Square this Dirichlet series.
+   * @param maxDegree maximum degree
+   * @return Dirichlet series
+   */
+  public DirichletSeries square(final int maxDegree) {
+    return multiply(this, maxDegree);
+  }
+
+  /**
    * Divide the Dirichlet series by a scalar.
    * @param n value to divide by
    * @return Dirichlet series
@@ -172,10 +211,11 @@ public class DirichletSeries extends TreeMap<Z, Z> {
   /**
    * Compute the power of a Dirichlet series.
    * @param n power
+   * @param maxDegree maximum degree
    * @return Dirichlet series to given power
    * @exception ArithmeticException if <code>n</code> is negative.
    */
-  public DirichletSeries pow(final Z n, final Z max) {
+  public DirichletSeries pow(final Z n, final Z maxDegree) {
     if (n.signum() < 0) {
       throw new IllegalArgumentException();
     }
@@ -193,18 +233,19 @@ public class DirichletSeries extends TreeMap<Z, Z> {
     if (Z.ONE.equals(n)) {
       return this;
     }
-    final DirichletSeries s = multiply(this, max).pow(n.divide2(), max);
-    return n.isEven() ? s : multiply(s, max);
+    final DirichletSeries s = multiply(this, maxDegree).pow(n.divide2(), maxDegree);
+    return n.isEven() ? s : multiply(s, maxDegree);
   }
 
   /**
    * Compute the power of a Dirichlet series.
    * @param n power
+   * @param maxDegree maximum degree
    * @return Dirichlet series to given power
    * @exception ArithmeticException if <code>n</code> is negative.
    */
-  public DirichletSeries pow(final int n, final long max) {
-    return pow(Z.valueOf(n), Z.valueOf(max));
+  public DirichletSeries pow(final int n, final long maxDegree) {
+    return pow(Z.valueOf(n), Z.valueOf(maxDegree));
   }
 
   /**
@@ -221,15 +262,16 @@ public class DirichletSeries extends TreeMap<Z, Z> {
 
   /**
    * Return a scaled version of this Dirichlet series.
+   * This is equivalent to making the substitution <code>s^power</code>.
    * @param power power to apply
-   * @param max maximum term to retain
+   * @param maxDegree maximum degree
    * @return scaled series
    */
-  public DirichletSeries scale(final int power, final Z max) {
+  public DirichletSeries substitute(final int power, final Z maxDegree) {
     final DirichletSeries ds = new DirichletSeries();
     for (final Map.Entry<Z, Z> e : entrySet()) {
       final Z key = e.getKey().pow(power);
-      if (key.compareTo(max) <= 0) {
+      if (key.compareTo(maxDegree) <= 0) {
         ds.put(key, e.getValue());
       }
     }
@@ -238,18 +280,19 @@ public class DirichletSeries extends TreeMap<Z, Z> {
 
   /**
    * Return a scaled version of this Dirichlet series.
+   * This is equivalent to making the substitution <code>s^power</code>.
    * @param power power to apply
-   * @param max maximum term to retain
+   * @param maxDegree maximum degree
    * @return scaled series
    */
-  public DirichletSeries scale(final int power, final long max) {
-    return scale(power, Z.valueOf(max));
+  public DirichletSeries substitute(final int power, final long maxDegree) {
+    return substitute(power, Z.valueOf(maxDegree));
   }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 
-  private Polynomial<Z> toPoly(final int max) {
-    final Z[] terms = new Z[max + 1];
+  private Polynomial<Z> toPoly(final int maxDegree) {
+    final Z[] terms = new Z[maxDegree + 1];
     Arrays.fill(terms, Z.ZERO);
     for (final Map.Entry<Z, Z> e : entrySet()) {
       final int key = e.getKey().intValueExact();
@@ -262,12 +305,12 @@ public class DirichletSeries extends TreeMap<Z, Z> {
 
   /**
    * Construct <code>1/L</code> for this Dirichlet series <code>L</code>
-   * @param max maximum degree
+   * @param maxDegree maximum degree
    * @return inverse series
    */
-  public DirichletSeries inverse(final int max) {
+  public DirichletSeries inverse(final int maxDegree) {
     // todo smarter implementation of this
-    final Polynomial<Z> series = toPoly(max);
+    final Polynomial<Z> series = toPoly(maxDegree);
     final Polynomial<Z> inverse = RING.series(RING.one(), series.shift(-1), series.size() - 1).shift(1);
     final DirichletSeries ds = new DirichletSeries();
     for (int k = 0; k < inverse.size(); ++k) {
@@ -277,5 +320,4 @@ public class DirichletSeries extends TreeMap<Z, Z> {
     }
     return ds;
   }
-
 }

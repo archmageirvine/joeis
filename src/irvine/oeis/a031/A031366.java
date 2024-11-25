@@ -30,7 +30,7 @@ public class A031366 extends Sequence1 {
       final DirichletSeries l1 = DirichletSeries.fromList(mL1.toList());
       final DirichletSeries l1Shift = l1.shift();
       final DirichletSeries l1i = l1.inverse(mMaxOrd);
-      final DirichletSeries l1i2 = l1i.scale(2, mMaxOrd);
+      final DirichletSeries l1i2 = l1i.substitute(2, mMaxOrd);
       final DirichletSeries phi = l1.multiply(l1Shift, mMaxOrd).multiply(l1i2, mMaxOrd);
       final DirichletSeries phiShift = phi.shift();
       mDirichlet = phi.multiply(phiShift, mMaxOrd);

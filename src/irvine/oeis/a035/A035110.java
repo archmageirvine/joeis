@@ -37,8 +37,8 @@ public class A035110 extends A035111 {
   }
 
   private DirichletSeries updateDirichlet() {
-    final DirichletSeries d = phiIcosahedron(mMax / 3).scale(3, mMax);
-    final DirichletSeries zetaTau3 = zetaQuadraticTau(mMax / 3).scale(3, mMax);
+    final DirichletSeries d = phiIcosahedron(mMax / 3).substitute(3, mMax);
+    final DirichletSeries zetaTau3 = zetaQuadraticTau(mMax / 3).substitute(3, mMax);
     return d.multiply(zetaTau3, mMax);
   }
 

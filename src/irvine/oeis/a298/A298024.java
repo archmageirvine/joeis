@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A298024 G.f.: (x^4+3*x^3+6*x^2+3*x+1)/((1-x)*(1-x^3)).
+ * A298024 Expansion of (x^4+3*x^3+6*x^2+3*x+1)/((1-x)*(1-x^3)).
  * @author Georg Fischer
  */
 public class A298024 extends GeneratingFunctionSequence implements Conjectural {

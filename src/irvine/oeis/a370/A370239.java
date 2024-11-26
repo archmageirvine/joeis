@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A333844.
+ * A370239 The sum of divisors of n that are squares of squarefree numbers.
  * @author Sean A. Irvine
  */
 public class A370239 extends Sequence1 {
@@ -13,7 +13,7 @@ public class A370239 extends Sequence1 {
   // todo this is currently failing at term 31
   // todo potential int overflow somewhere in the division -> inverse
 
-  private static final int EXTRA = 10; // I don't think this is the problem, ideally this should be 0
+  private static final int EXTRA = 100; // I don't think this is the problem, ideally this should be 0
   private int mN = 0;
 
   @Override

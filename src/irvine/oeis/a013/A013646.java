@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a003.A003285;
 
 /**
- * A013646 Least m such that continued fraction for sqrt(m) has period n.
+ * A013646 Least m such that the continued fraction for sqrt(m) has period n.
  * @author Sean A. Irvine
  */
 public class A013646 extends Sequence0 {

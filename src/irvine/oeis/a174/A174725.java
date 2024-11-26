@@ -9,7 +9,7 @@ import irvine.oeis.a002.A002033;
 import irvine.oeis.a008.A008683;
 
 /**
- * A174725 a(n) = (A002033(n-1) + A008683(n))/2.
+ * A174725 a(n) = (A074206(n) + A008683(n))/2.
  * @author Georg Fischer
  */
 public class A174725 extends Sequence1 {

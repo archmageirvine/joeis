@@ -12,13 +12,9 @@ import irvine.oeis.a000.A000720;
  */
 public class A065855 extends Sequence1 {
 
-  final Sequence mA000720 = new A000720();
-  protected long mN;
-  /** Construct the sequence. */
-  public A065855() {
-    mN = 0;
-  }
-  
+  private final Sequence mA000720 = new A000720();
+  private long mN = 0;
+
   @Override
   public Z next() {
     ++mN;

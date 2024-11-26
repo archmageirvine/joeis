@@ -3,20 +3,16 @@ package irvine.oeis.a073;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000960;
 
 /**
  * A073359 Nested floor product of n and fractions (2k+2)/(2k+1) for all k&gt;=0, divided by 2.
  * @author Georg Fischer
  */
-public class A073359 extends AbstractSequence {
+public class A073359 extends Sequence1 {
 
   private final AbstractSequence mSeq = new A000960().skip(1);
-
-  /** Construct the sequence. */
-  public A073359() {
-    super(1);
-  }
 
   @Override
   public Z next() {

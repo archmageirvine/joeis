@@ -16,6 +16,9 @@ import irvine.math.polynomial.Polynomial;
  */
 public class DirichletSeries extends TreeMap<Z, Z> {
 
+  // Note: The intent is to deprecate this version
+  // New implementations should instead use Dgf and Ds
+
   // This class holds a (sparse) Dirichlet series of the form
   // v_1 / k_1^s + v_2 / k_2^s + v_3 / k_3^s + ...
   // where the k_i and v_i are stored as key and value in the underlying TreeMap.

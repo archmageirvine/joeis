@@ -5,6 +5,7 @@ import irvine.oeis.a000.A000005;
 import irvine.oeis.a000.A000034;
 import irvine.oeis.a000.A000035;
 import irvine.oeis.a000.A000122;
+import irvine.oeis.a000.A000124;
 import irvine.oeis.a000.A000203;
 import junit.framework.TestCase;
 
@@ -63,6 +64,11 @@ public class DgfTest extends TestCase {
 
   public void testA000122() {
     check(Dgf.multiply(Dgf.zeta(2), 2), new A000122().skip());
+  }
+
+  public void testA000124() {
+    // (zeta(s-2) + zeta(s-1) + 2*zeta(s))/2
+    check(Dgf.divide(Dgf.add(Dgf.add(Dgf.zeta(1, 2), Dgf.zeta(1, 1)), Dgf.multiply(Dgf.zeta(), 2)), 2), new A000124().skip());
   }
 
   public void testA000203() {

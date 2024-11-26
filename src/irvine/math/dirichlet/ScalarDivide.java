@@ -3,26 +3,26 @@ package irvine.math.dirichlet;
 import irvine.math.z.Z;
 
 /**
- * Scalar multiplication of a Dirichlet series.
+ * Scalar divide of a Dirichlet series.
  * @author Sean A. Irvine
  */
-class ScalarMultiply extends AbstractDs {
+class ScalarDivide extends AbstractDs {
 
   private final Ds mF;
-  private final Z mMul;
+  private final Z mDiv;
 
   /**
    * Construct the negation of a Dirichlet series.
    * @param f series
-   * @param m multiplier
+   * @param d divisor
    */
-  ScalarMultiply(final Ds f, final Z m) {
+  ScalarDivide(final Ds f, final Z d) {
     mF = f;
-    mMul = m;
+    mDiv = d;
   }
 
   @Override
   public Z coeff(final Z n) {
-    return mF.coeff(n).multiply(mMul);
+    return mF.coeff(n).divide(mDiv);
   }
 }

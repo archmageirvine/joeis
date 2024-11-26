@@ -200,6 +200,26 @@ public final class Dgf {
   }
 
   /**
+   * Construct the scalar division of a Dirichlet series.
+   * @param f series
+   * @param d divisor
+   * @return the product
+   */
+  public static Ds divide(final Ds f, final Z d) {
+    return new ScalarDivide(f, d);
+  }
+
+  /**
+   * Construct the scalar division of a Dirichlet series.
+   * @param f series
+   * @param d divisor
+   * @return the product
+   */
+  public static Ds divide(final Ds f, final long d) {
+    return new ScalarDivide(f, Z.valueOf(d));
+  }
+
+  /**
    * Raise a Dirichlet generating function to a power.
    * @param f Dirichlet series
    * @param n power

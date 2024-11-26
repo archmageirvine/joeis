@@ -10,18 +10,29 @@ import irvine.math.z.Z;
 class InverseZeta extends AbstractDs {
 
   private final int mM;
+  private final int mC;
+
+  /**
+   * Construct the Dirichlet series for <code>zeta(m*s-c)</code>.
+   * @param m multiplier
+   * @param c shift
+   */
+  InverseZeta(final int m, final int c) {
+    mM = m;
+    mC = c;
+  }
 
   /**
    * Construct the Dirichlet series for <code>1/zeta(m*s)</code>.
    * @param m multiplier
    */
   InverseZeta(final int m) {
-    mM = m;
+    this(m, 0);
   }
 
   @Override
   public Z coeff(final Z n) {
     final Z root = n.root(mM);
-    return root.auxiliary() == 1 ? Functions.MOBIUS.z(root) : Z.ZERO;
+    return root.auxiliary() == 1 ? Functions.MOBIUS.z(root).multiply(root.pow(mC)) : Z.ZERO;
   }
 }

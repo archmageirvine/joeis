@@ -1,22 +1,17 @@
 package irvine.oeis.a370;
 
-import irvine.math.z.DirichletSeries;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.math.dirichlet.Dgf;
+import irvine.oeis.DirichletSequence;
 
 /**
  * A370239 The sum of divisors of n that are squares of squarefree numbers.
  * @author Sean A. Irvine
  */
-public class A370239 extends Sequence1 {
+public class A370239 extends DirichletSequence {
 
-  private int mN = 0;
-
-  @Override
-  public Z next() {
-    final DirichletSeries z = DirichletSeries.zeta(++mN);
-    final DirichletSeries t = z.reciprocal().shift(4).substitute(4, mN);
-    return z.multiply(z.shift(2).substitute(2, mN), mN).multiply(t, mN).coeff(mN);
+  /** Construct the sequence. */
+  public A370239() {
+    super(Dgf.multiply(Dgf.multiply(Dgf.zeta(), Dgf.zeta(2, 2)), Dgf.inverseZeta(4, 4)));
   }
 }
 

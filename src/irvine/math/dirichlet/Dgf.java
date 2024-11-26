@@ -141,6 +141,14 @@ public final class Dgf {
   }
 
   /**
+   * The Dirichlet generating function for <code>1/zeta(m*s-c)</code>.
+   * @return <code>zeta(m*s)</code>
+   */
+  public static Ds inverseZeta(final int m, final int c) {
+    return c == 0 ? inverseZeta(m) : new InverseZeta(m, c);
+  }
+
+  /**
    * Construct the negation of a Dirichlet series.
    * @param f series
    * @return <code>-f</code>

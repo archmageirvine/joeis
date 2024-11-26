@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -192,16 +193,6 @@ public class DirichletSeries extends TreeMap<Z, Z> {
   }
 
   /**
-   * Divide the Dirichlet series by another Dirichlet series.
-   * @param d divisor
-   * @param maxDegree maximum degree
-   * @return Dirichlet series
-   */
-  public DirichletSeries divide(final DirichletSeries d, final int maxDegree) {
-    return multiply(d.inverse(maxDegree), maxDegree);
-  }
-
-  /**
    * Compute the Dirichlet product of two Dirichlet series.
    * @param ds other series
    * @param maxDegree degree limit
@@ -337,6 +328,21 @@ public class DirichletSeries extends TreeMap<Z, Z> {
     for (int k = 0; k < inverse.size(); ++k) {
       if (!inverse.coeff(k).isZero()) {
         ds.put(Z.valueOf(k), inverse.coeff(k));
+      }
+    }
+    return ds;
+  }
+
+  /**
+   * Mobius reciprocal. For input zeta this gives the Dirichlet series for 1/zeta.
+   * @return inverse Dirichlet series.
+   */
+  public DirichletSeries reciprocal() {
+    final DirichletSeries ds = new DirichletSeries();
+    for (final Map.Entry<Z, Z> e : entrySet()) {
+      final Z t = e.getValue().multiply(Functions.MOBIUS.l(e.getKey()));
+      if (!t.isZero()) {
+        ds.put(e.getKey(), t);
       }
     }
     return ds;

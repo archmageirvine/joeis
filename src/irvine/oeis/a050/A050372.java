@@ -1,6 +1,7 @@
 package irvine.oeis.a050;
 
-import irvine.math.z.DirichletSeries;
+import irvine.math.dirichlet.Dgf;
+import irvine.math.dirichlet.Ds;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
@@ -12,17 +13,17 @@ import irvine.oeis.a002.A002808;
  */
 public class A050372 extends Sequence1 {
 
+  private final Sequence mComposites = new A002808();
+  private long mC = mComposites.next().longValueExact();
   private long mN = 0;
+  private Ds mDs = Dgf.one();
 
   @Override
   public Z next() {
-    ++mN;
-    final Sequence composites = new A002808();
-    DirichletSeries series = DirichletSeries.ONE;
-    long s;
-    while ((s = composites.next().intValueExact()) <= mN) {
-      series = series.multiply(DirichletSeries.zetaNum(s, mN, Z.ONE), mN);
+    if (++mN == mC) {
+      mDs = Dgf.multiply(mDs, Dgf.simple(mN));
+      mC = mComposites.next().longValueExact();
     }
-    return series.coeff(mN);
+    return mDs.coeff(mN);
   }
 }

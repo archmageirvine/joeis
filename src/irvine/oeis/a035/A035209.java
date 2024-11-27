@@ -47,7 +47,7 @@ public class A035209 extends Sequence0 implements Conjectural {
         case 1:
           //System.out.println("p" + p + " " + isSolvable(p));
           if (p == 47 || isSolvable(p)) {
-            final DirichletSeries dp = DirichletSeries.zetaNum(p, n, Z.TWO).multiply(DirichletSeries.zeta(p, n, Z.ONE), n);
+            final DirichletSeries dp = DirichletSeries.simple(p, n, Z.TWO).multiply(DirichletSeries.zetap(p, n, Z.ONE), n);
             d = d.multiply(dp.pow(11, n), n);
           }
           break;
@@ -65,7 +65,7 @@ public class A035209 extends Sequence0 implements Conjectural {
             final Z q = Z.valueOf(p).pow(11);
             //System.out.println("q=" + q + " " + p + "^11");
             if (q.compareTo(n) < 0) {
-              final DirichletSeries da = DirichletSeries.zetaNum(q.intValueExact(), n, Z.TWO).multiply(DirichletSeries.zeta(q.intValueExact(), n, Z.ONE), n);
+              final DirichletSeries da = DirichletSeries.simple(q.intValueExact(), n, Z.TWO).multiply(DirichletSeries.zetap(q.intValueExact(), n, Z.ONE), n);
               d = d.multiply(da, n);
             }
           }

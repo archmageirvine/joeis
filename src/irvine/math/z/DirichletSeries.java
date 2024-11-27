@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -39,7 +38,7 @@ public class DirichletSeries extends TreeMap<Z, Z> {
    * @param maxDegree degree
    * @return Dirichlet series
    */
-  public static DirichletSeries zeta(final long maxDegree) {
+  public static DirichletSeries zetap(final long maxDegree) {
     final DirichletSeries ds = new DirichletSeries();
     for (long k = 1; k <= maxDegree; ++k) {
       ds.put(Z.valueOf(k), Z.ONE);
@@ -54,7 +53,7 @@ public class DirichletSeries extends TreeMap<Z, Z> {
    * @param f scalar coefficient
    * @return Dirichlet series
    */
-  public static DirichletSeries zeta(final long p, final long maxDegree, final Z f) {
+  public static DirichletSeries zetap(final long p, final long maxDegree, final Z f) {
     final DirichletSeries ds = new DirichletSeries();
     ds.put(Z.ONE, Z.ONE);
     Z u = f;
@@ -89,7 +88,7 @@ public class DirichletSeries extends TreeMap<Z, Z> {
    * @param f scalar coefficient
    * @return Dirichlet series
    */
-  public static DirichletSeries zetaNum(final long p, final long maxDegree, final Z f) {
+  public static DirichletSeries simple(final long p, final long maxDegree, final Z f) {
     final DirichletSeries ds = new DirichletSeries();
     ds.put(Z.ONE, Z.ONE);
     if (p <= maxDegree) {
@@ -336,18 +335,4 @@ public class DirichletSeries extends TreeMap<Z, Z> {
     return ds;
   }
 
-  /**
-   * Mobius reciprocal. For input zeta this gives the Dirichlet series for 1/zeta.
-   * @return inverse Dirichlet series.
-   */
-  public DirichletSeries reciprocal() {
-    final DirichletSeries ds = new DirichletSeries();
-    for (final Map.Entry<Z, Z> e : entrySet()) {
-      final Z t = e.getValue().multiply(Functions.MOBIUS.l(e.getKey()));
-      if (!t.isZero()) {
-        ds.put(e.getKey(), t);
-      }
-    }
-    return ds;
-  }
 }

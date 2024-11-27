@@ -94,6 +94,36 @@ public final class Dgf {
   }
 
   /**
+   * Construct the simple two term Dirichlet series <code>1+r*t^(-s)</code>.
+   * @param t parameter
+   * @return Dirichlet series
+   */
+  public static Ds simple(final Z t, final Z r) {
+    final FiniteDs ds = empty();
+    ds.put(Z.ONE, Z.ONE);
+    ds.put(t, r);
+    return ds;
+  }
+
+  /**
+   * Construct the simple two term Dirichlet series <code>1+t^(-s)</code>.
+   * @param t parameter
+   * @return Dirichlet series
+   */
+  public static Ds simple(final Z t) {
+    return simple(t, Z.ONE);
+  }
+
+  /**
+   * Construct the simple two term Dirichlet series <code>1+t^(-s)</code>.
+   * @param t parameter
+   * @return Dirichlet series
+   */
+  public static Ds simple(final long t) {
+    return simple(Z.valueOf(t));
+  }
+
+  /**
    * The Dirichlet generating function for <code>zeta(s)</code>.
    * @return <code>zeta(s)</code>
    */
@@ -103,6 +133,7 @@ public final class Dgf {
 
   /**
    * The Dirichlet generating function for <code>zeta(m*s)</code>.
+   * @param m multiplier
    * @return <code>zeta(m*s)</code>
    */
   public static Ds zeta(final int m) {
@@ -111,6 +142,8 @@ public final class Dgf {
 
   /**
    * The Dirichlet generating function for <code>zeta(m*s-c)</code>.
+   * @param m multiplier
+   * @param c shift
    * @return <code>zeta(m*s-c)</code>
    */
   public static Ds zeta(final int m, final int c) {
@@ -134,6 +167,7 @@ public final class Dgf {
 
   /**
    * The Dirichlet generating function for <code>1/zeta(m*s)</code>.
+   * @param m multiplier
    * @return <code>zeta(m*s)</code>
    */
   public static Ds inverseZeta(final int m) {
@@ -142,10 +176,31 @@ public final class Dgf {
 
   /**
    * The Dirichlet generating function for <code>1/zeta(m*s-c)</code>.
+   * @param m multiplier
+   * @param c shift
    * @return <code>zeta(m*s)</code>
    */
   public static Ds inverseZeta(final int m, final int c) {
     return c == 0 ? inverseZeta(m) : new InverseZeta(m, c);
+  }
+
+  /**
+   * The Dirichlet generating function for <code>f/(1-p^(-s))</code>.
+   * @param p prime
+   * @param f scalar
+   * @return <code>zeta(m*s)</code>
+   */
+  public static Ds zetap(final int p, final Z f) {
+    return new ZetaP(p, f);
+  }
+
+  /**
+   * The Dirichlet generating function for <code>1/(1-p^(-s))</code>.
+   * @param p prime
+   * @return <code>zeta(m*s)</code>
+   */
+  public static Ds zetap(final int p) {
+    return new ZetaP(p, Z.ONE);
   }
 
   /**
@@ -163,6 +218,15 @@ public final class Dgf {
    */
   public static Ds negate(final Ds f) {
     return new Negate(f);
+  }
+
+  /**
+   * Perform the substitution <code>s -&gt; s^m</code> in the given series
+   * @param f series
+   * @return <code>f(s^m)</code>
+   */
+  public static Ds substitute(final Ds f, final int s) {
+    return new Substitute(f, s);
   }
 
   /**
@@ -192,7 +256,7 @@ public final class Dgf {
    * @return the product
    */
   public static Ds multiply(final Ds f, final Ds g) {
-    return new Multiply(f, g);
+    return remember(new Multiply(f, g));
   }
 
   /**
@@ -242,12 +306,12 @@ public final class Dgf {
    * @return <code>f^n</code>
    * @exception ArithmeticException if <code>n</code> is negative.
    */
-  public static Ds pow(final Ds f, final long n) {
-    if (n < 0) {
+  public static Ds pow(final Ds f, final Z n) {
+    if (n.signum() < 0) {
       throw new IllegalArgumentException();
     }
     // x^0, 1^n
-    if (n == 0 || f == one()) {
+    if (n.isZero() || f == one()) {
       return one();
     }
     // 0^n
@@ -255,11 +319,22 @@ public final class Dgf {
       return f;
     }
     // x^2 (this case for efficiency)
-    if (n == 2) {
-      return multiply(f, f);
+    if (Z.TWO.equals(n)) {
+      return remember(multiply(f, f));
     }
-    final Ds s = pow(multiply(f, f), n / 2);
-    return (n & 1) == 0 ? s : multiply(s, f);
+    final Ds s = pow(multiply(f, f), n.divide2());
+    return n.isEven() ? s : multiply(s, f);
+  }
+
+  /**
+   * Raise a Dirichlet generating function to a power.
+   * @param f Dirichlet series
+   * @param n power
+   * @return <code>f^n</code>
+   * @exception ArithmeticException if <code>n</code> is negative.
+   */
+  public static Ds pow(final Ds f, final long n) {
+    return pow(f, Z.valueOf(n));
   }
 
   /**
@@ -270,6 +345,17 @@ public final class Dgf {
    */
   public static Ds square(final Ds f) {
     return multiply(f, f);
+  }
+
+  /**
+   * Wrap the given Dirichlet series in a cache. This can speed up computation
+   * at the expense of memory. Use this if computing the same coefficients is
+   * likely to occur multiple times.
+   * @param f Dirichlet series
+   * @return Dirichlet series
+   */
+  public static Ds remember(final Ds f) {
+    return f instanceof Remember ? f : new Remember(f);
   }
 
   /**

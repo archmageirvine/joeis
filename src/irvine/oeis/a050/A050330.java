@@ -21,7 +21,7 @@ public class A050330 extends Sequence1 {
     DirichletSeries series = DirichletSeries.ONE;
     long s;
     while ((s = seq.next().intValueExact()) <= mN) {
-      series = series.multiply(DirichletSeries.zeta(s, mN, Z.ONE), mN);
+      series = series.multiply(DirichletSeries.zetap(s, mN, Z.ONE), mN);
     }
     return series.coeff(mN);
   }

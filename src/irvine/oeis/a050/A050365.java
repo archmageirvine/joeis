@@ -1,6 +1,7 @@
 package irvine.oeis.a050;
 
-import irvine.math.z.DirichletSeries;
+import irvine.math.dirichlet.Dgf;
+import irvine.math.dirichlet.Ds;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
@@ -22,9 +23,9 @@ public class A050365 extends MemorySequence {
     if (n <= 6) {
       return Z.ONE;
     }
-    DirichletSeries series = DirichletSeries.ONE;
+    Ds series = Dgf.one();
     for (int k = 2; k < n; ++k) {
-      series = series.multiply(DirichletSeries.zetaNum(k, n, Z.ONE).pow(a(k).intValueExact(), n), n);
+      series = Dgf.multiply(series, Dgf.pow(Dgf.simple(k), a(k)));
     }
     return series.coeff(n - 1);
   }

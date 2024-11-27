@@ -8,7 +8,7 @@ import irvine.math.z.Z;
  * Dirichlet series backed by a map.
  * @author Sean A. Irvine
  */
-class FiniteDs extends HashMap<Z, Z> implements Ds {
+public class FiniteDs extends HashMap<Z, Z> implements Ds {
 
   @Override
   public Z coeff(final Z n) {

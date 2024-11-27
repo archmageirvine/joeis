@@ -1,7 +1,8 @@
 package irvine.oeis.a035;
 
 import irvine.factor.prime.Fast;
-import irvine.math.z.DirichletSeries;
+import irvine.math.dirichlet.Dgf;
+import irvine.math.dirichlet.Ds;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -14,23 +15,23 @@ public class A035111 extends Sequence0 {
   private int mN = 0;
   private int mMax = 100;
   protected final Fast mPrime = new Fast();
-  private DirichletSeries mD = phiIcosahedron(mMax);
+  private Ds mD = phiIcosahedron(mMax);
 
-  protected DirichletSeries phiIcosahedron(final int n) {
-    DirichletSeries d = DirichletSeries.zetaNum(5, n, Z.ONE).multiply(DirichletSeries.zeta(5, n, Z.FIVE), n);
-    for (long p = 2; p <= n; p = mPrime.nextPrime(p)) {
-      switch ((int) (p % 5)) {
+  protected Ds phiIcosahedron(final int n) {
+    Ds d = Dgf.multiply(Dgf.simple(5), Dgf.zetap(5, Z.FIVE));
+    for (int p = 2; p <= n; p = (int) mPrime.nextPrime(p)) {
+      switch (p % 5) {
         case 1:
         case 4:
-          final DirichletSeries dp = DirichletSeries.zetaNum(p, n, Z.ONE).multiply(DirichletSeries.zeta(p, n, Z.valueOf(p)), n);
-          d = d.multiply(dp.pow(2, n), n);
+          final Ds dp = Dgf.multiply(Dgf.simple(p), Dgf.zetap(p, Z.valueOf(p)));
+          d = Dgf.multiply(d, Dgf.square(dp));
           break;
         case 2:
         case 3:
-          final long p2 = p * p;
+          final int p2 = p * p;
           if (p2 < n) {
-            final DirichletSeries da = DirichletSeries.zetaNum(p2, n, Z.ONE).multiply(DirichletSeries.zeta(p2, n, Z.valueOf(p2)), n);
-            d = d.multiply(da, n);
+            final Ds da = Dgf.multiply(Dgf.simple(p2), Dgf.zetap(p2, Z.valueOf(p2)));
+            d = Dgf.multiply(d, da);
           }
           break;
         default:

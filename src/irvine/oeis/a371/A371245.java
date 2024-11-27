@@ -24,7 +24,7 @@ public class A371245 extends AbstractSequence {
     ++mN;
     DirichletSeries series = DirichletSeries.ONE;
     for (int k = 5; k <= mN; ++k) {
-      series = series.multiply(DirichletSeries.zeta(k, mN, Z.ONE).pow(1, mN), mN);
+      series = series.multiply(DirichletSeries.zetap(k, mN, Z.ONE).pow(1, mN), mN);
     }
     return series.coeff(mN);
   }

@@ -30,19 +30,19 @@ public class A031364 extends Sequence1 {
       for (long p = 2; p < mMaxOrd; p = mPrime.nextPrime(p)) {
         switch ((int) (p % 5)) {
           case 0: // i.e. p == 5
-            zp = zp.multiply(DirichletSeries.zetaNum(p, mMaxOrd, Z.ONE), mMaxOrd);
-            zp = zp.multiply(DirichletSeries.zeta(p, mMaxOrd, Z.valueOf(p)), mMaxOrd);
+            zp = zp.multiply(DirichletSeries.simple(p, mMaxOrd, Z.ONE), mMaxOrd);
+            zp = zp.multiply(DirichletSeries.zetap(p, mMaxOrd, Z.valueOf(p)), mMaxOrd);
             break;
           case 1:
           case 4:
-            final DirichletSeries t = DirichletSeries.zetaNum(p, mMaxOrd, Z.ONE).multiply(DirichletSeries.zeta(p, mMaxOrd, Z.valueOf(p)), mMaxOrd);
+            final DirichletSeries t = DirichletSeries.simple(p, mMaxOrd, Z.ONE).multiply(DirichletSeries.zetap(p, mMaxOrd, Z.valueOf(p)), mMaxOrd);
             zp = zp.multiply(t.pow(2, mMaxOrd), mMaxOrd);
             break;
           case 2:
           case 3:
           default:
-            zp = zp.multiply(DirichletSeries.zetaNum(p * p, mMaxOrd, Z.ONE), mMaxOrd);
-            zp = zp.multiply(DirichletSeries.zeta(p * p, mMaxOrd, Z.valueOf(p * p)), mMaxOrd);
+            zp = zp.multiply(DirichletSeries.simple(p * p, mMaxOrd, Z.ONE), mMaxOrd);
+            zp = zp.multiply(DirichletSeries.zetap(p * p, mMaxOrd, Z.valueOf(p * p)), mMaxOrd);
             break;
         }
       }

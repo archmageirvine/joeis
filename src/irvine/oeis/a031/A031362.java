@@ -32,8 +32,8 @@ public class A031362 extends Sequence1 {
       DirichletSeries zp = mZetaP;
       for (int e = 1; e <= mMaxOrd; e += 5) {
         if (mPrime.isPrime(e)) {
-          zp = zp.multiply(DirichletSeries.zetaNum(e, mMaxOrd, Z.ONE), mMaxOrd);
-          zp = zp.multiply(DirichletSeries.zeta(e, mMaxOrd, Z.ONE), mMaxOrd);
+          zp = zp.multiply(DirichletSeries.simple(e, mMaxOrd, Z.ONE), mMaxOrd);
+          zp = zp.multiply(DirichletSeries.zetap(e, mMaxOrd, Z.ONE), mMaxOrd);
         }
       }
       zp = zp.pow(2, mMaxOrd);

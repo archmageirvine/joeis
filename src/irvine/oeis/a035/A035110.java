@@ -1,6 +1,7 @@
 package irvine.oeis.a035;
 
-import irvine.math.z.DirichletSeries;
+import irvine.math.dirichlet.Dgf;
+import irvine.math.dirichlet.Ds;
 import irvine.math.z.Z;
 
 /**
@@ -11,22 +12,22 @@ public class A035110 extends A035111 {
 
   private int mN = 0;
   private int mMax = 100;
-  private DirichletSeries mD = updateDirichlet();
+  private Ds mD = updateDirichlet();
 
   // zeta_(\Q(tau))(s)
-  private DirichletSeries zetaQuadraticTau(final int n) {
-    DirichletSeries d = DirichletSeries.zeta(5, n, Z.ONE);
-    for (long p = 2; p <= n; p = mPrime.nextPrime(p)) {
-      switch ((int) (p % 5)) {
+  private Ds zetaQuadraticTau(final int n) {
+    Ds d = Dgf.zetap(5);
+    for (int p = 2; p <= n; p = (int) mPrime.nextPrime(p)) {
+      switch (p % 5) {
         case 1:
         case 4:
-          d = d.multiply(DirichletSeries.zeta(p, n, Z.ONE).pow(2, n), n);
+          d = Dgf.multiply(d, Dgf.square(Dgf.zetap(p)));
           break;
         case 2:
         case 3:
-          final long p2 = p * p;
+          final int p2 = p * p;
           if (p2 < n) {
-            d = d.multiply(DirichletSeries.zeta(p2, n, Z.ONE), n);
+            d = Dgf.multiply(d, Dgf.zetap(p2));
           }
           break;
         default:
@@ -36,10 +37,10 @@ public class A035110 extends A035111 {
     return d;
   }
 
-  private DirichletSeries updateDirichlet() {
-    final DirichletSeries d = phiIcosahedron(mMax / 3).substitute(3, mMax);
-    final DirichletSeries zetaTau3 = zetaQuadraticTau(mMax / 3).substitute(3, mMax);
-    return d.multiply(zetaTau3, mMax);
+  private Ds updateDirichlet() {
+    final Ds d = Dgf.substitute(phiIcosahedron(mMax / 3), 3);
+    final Ds zetaTau3 = Dgf.substitute(zetaQuadraticTau(mMax / 3), 3);
+    return Dgf.multiply(d, zetaTau3);
   }
 
   @Override

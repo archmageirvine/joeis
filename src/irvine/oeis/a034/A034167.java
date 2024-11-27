@@ -17,18 +17,18 @@ public class A034167 extends Sequence1 {
   private DirichletSeries mD = updateDirichlet();
 
   private DirichletSeries updateDirichlet() {
-    DirichletSeries d = DirichletSeries.zetaNum(8, mMax, Z.ONE).multiply(DirichletSeries.zeta(8, mMax, Z.ONE), mMax);
+    DirichletSeries d = DirichletSeries.simple(8, mMax, Z.ONE).multiply(DirichletSeries.zetap(8, mMax, Z.ONE), mMax);
     for (long p = 3; p <= mMax; p = mPrime.nextPrime(p)) {
       switch ((int) (p % 7)) {
         case 1:
-          final DirichletSeries dp = DirichletSeries.zetaNum(p, mMax, Z.ONE).multiply(DirichletSeries.zeta(p, mMax, Z.ONE), mMax);
+          final DirichletSeries dp = DirichletSeries.simple(p, mMax, Z.ONE).multiply(DirichletSeries.zetap(p, mMax, Z.ONE), mMax);
           d = d.multiply(dp.pow(3, mMax), mMax);
           break;
         case 2:
         case 4:
           final long p3 = p * p * p;
           if (p3 < mMax) {
-            final DirichletSeries da = DirichletSeries.zetaNum(p3, mMax, Z.ONE).multiply(DirichletSeries.zeta((int) p3, mMax, Z.ONE), mMax);
+            final DirichletSeries da = DirichletSeries.simple(p3, mMax, Z.ONE).multiply(DirichletSeries.zetap((int) p3, mMax, Z.ONE), mMax);
             d = d.multiply(da, mMax);
           }
           break;

@@ -49,6 +49,10 @@ public class DgfTest extends TestCase {
     assertEquals("1+1/4^s+1/9^s+1/16^s", Dgf.toString(Dgf.zeta(2), 20));
   }
 
+  public void testZetaP() {
+    assertEquals("1+1/3^s+1/9^s+1/27^s", Dgf.toString(Dgf.zetap(3), 30));
+  }
+
   public void testA000005() {
     check(Dgf.pow(Dgf.zeta(), 2), new A000005());
     check(Dgf.square(Dgf.zeta()), new A000005());
@@ -64,6 +68,7 @@ public class DgfTest extends TestCase {
 
   public void testA000122() {
     check(Dgf.multiply(Dgf.zeta(2), 2), new A000122().skip());
+    check(Dgf.multiply(Dgf.substitute(Dgf.zeta(), 2), 2), new A000122().skip());
   }
 
   public void testA000124() {

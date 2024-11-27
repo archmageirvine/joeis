@@ -5,7 +5,7 @@ import irvine.math.MemoryFunction2;
 import irvine.math.z.Z;
 
 /**
- * Dirichlet series for the product <code>prod((1-1/k^s), k>=2)</code>
+ * Dirichlet series for the product <code>prod(1-1/k^s, k>=2)</code>
  * @author Sean A. Irvine
  */
 class Xi extends AbstractDs {

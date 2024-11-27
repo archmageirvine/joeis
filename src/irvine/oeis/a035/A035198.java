@@ -1,7 +1,8 @@
 package irvine.oeis.a035;
 
 import irvine.factor.prime.Fast;
-import irvine.math.z.DirichletSeries;
+import irvine.math.dirichlet.Dgf;
+import irvine.math.dirichlet.Ds;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -12,35 +13,29 @@ import irvine.oeis.Sequence0;
 public class A035198 extends Sequence0 {
 
   private int mN = 0;
-  private int mMax = 100;
   private final Fast mPrime = new Fast();
-  private DirichletSeries mD = updateDirichlet();
+  private Ds mD = Dgf.one();
 
-  private DirichletSeries updateDirichlet() {
-    DirichletSeries d = DirichletSeries.ONE;
-    for (long p = 2; p <= mMax; p = mPrime.nextPrime(p)) {
-      switch ((int) (p & 7)) {
+  private void updateDirichlet(final int p) {
+    if (mPrime.isPrime(p)) {
+      switch (p & 7) {
         case 1:
-          d = d.multiply(DirichletSeries.zeta(p, mMax, Z.ONE).pow(2, mMax), mMax);
+          mD = Dgf.multiply(mD, Dgf.square(Dgf.zetap(p)));
           break;
         case 3:
         case 5:
-          d = d.multiply(DirichletSeries.zeta(p, mMax, Z.ONE).substitute(2, mMax), mMax);
+          mD = Dgf.multiply(mD, Dgf.substitute(Dgf.zetap(p), 2));
           break;
         default:
           break;
       }
     }
-    return d;
   }
 
   @Override
   public Z next() {
     while (true) {
-      if (++mN >= mMax || mD == null) {
-        mMax *= 2;
-        mD = updateDirichlet();
-      }
+      updateDirichlet(++mN);
       if (!mD.coeff(mN).isZero()) {
         return Z.valueOf(mN);
       }

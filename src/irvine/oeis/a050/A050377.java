@@ -20,7 +20,7 @@ public class A050377 extends Sequence1 {
     DirichletSeries series = DirichletSeries.ONE;
     long s;
     while ((s = fd.next().intValueExact()) <= mN) {
-      series = series.multiply(DirichletSeries.zeta(s, mN, Z.ONE), mN);
+      series = series.multiply(DirichletSeries.zetap(s, mN, Z.ONE), mN);
     }
     return series.coeff(mN);
   }

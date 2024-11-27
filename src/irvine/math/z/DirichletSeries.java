@@ -34,36 +34,6 @@ public class DirichletSeries extends TreeMap<Z, Z> {
   }
 
   /**
-   * Return the Dirichlet series for <code>zeta(s)</code> up to the specified degree.
-   * @param maxDegree degree
-   * @return Dirichlet series
-   */
-  public static DirichletSeries zetap(final long maxDegree) {
-    final DirichletSeries ds = new DirichletSeries();
-    for (long k = 1; k <= maxDegree; ++k) {
-      ds.put(Z.valueOf(k), Z.ONE);
-    }
-    return ds;
-  }
-
-  /**
-   * Compute a zeta function as a Dirichlet series, <code>1/(1-p^(-s))</code>.
-   * @param p prime
-   * @param maxDegree maximum degree
-   * @param f scalar coefficient
-   * @return Dirichlet series
-   */
-  public static DirichletSeries zetap(final long p, final long maxDegree, final Z f) {
-    final DirichletSeries ds = new DirichletSeries();
-    ds.put(Z.ONE, Z.ONE);
-    Z u = f;
-    for (long q = p; q <= maxDegree; q *= p, u = u.multiply(f)) {
-      ds.put(Z.valueOf(q), u);
-    }
-    return ds;
-  }
-
-  /**
    * Convert an ordinary list into a (sparse) Dirichlet series.
    * If <code>terms[i]=v</code>, then <code>v / i^s</code> is included in
    * the series.

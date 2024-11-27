@@ -190,7 +190,7 @@ public final class Dgf {
    * @param f scalar
    * @return <code>zeta(m*s)</code>
    */
-  public static Ds zetap(final int p, final Z f) {
+  public static Ds zetap(final long p, final Z f) {
     return new ZetaP(p, f);
   }
 
@@ -199,7 +199,7 @@ public final class Dgf {
    * @param p prime
    * @return <code>zeta(m*s)</code>
    */
-  public static Ds zetap(final int p) {
+  public static Ds zetap(final long p) {
     return new ZetaP(p, Z.ONE);
   }
 
@@ -256,7 +256,7 @@ public final class Dgf {
    * @return the product
    */
   public static Ds multiply(final Ds f, final Ds g) {
-    return remember(new Multiply(f, g));
+    return f == one() ? g : (g == one() ? f : remember(new Multiply(f, g)));
   }
 
   /**

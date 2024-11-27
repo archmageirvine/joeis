@@ -8,7 +8,7 @@ import irvine.math.z.Z;
  */
 class ZetaP extends AbstractDs {
 
-  private final int mP;
+  private final long mP;
   private final Z mF;
 
   /**
@@ -17,7 +17,7 @@ class ZetaP extends AbstractDs {
    * @param m multiplier
    * @param f scalar coefficient
    */
-  ZetaP(final int p, final Z f) {
+  ZetaP(final long p, final Z f) {
     mP = p;
     mF = f;
   }

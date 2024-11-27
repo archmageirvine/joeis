@@ -1,5 +1,7 @@
 package irvine.oeis.a050;
 
+import irvine.math.dirichlet.Dgf;
+import irvine.math.dirichlet.Ds;
 import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -18,10 +20,10 @@ public class A050330 extends Sequence1 {
   public Z next() {
     ++mN;
     final Sequence seq = new A026424();
-    DirichletSeries series = DirichletSeries.ONE;
+    Ds series = Dgf.one();
     long s;
     while ((s = seq.next().intValueExact()) <= mN) {
-      series = series.multiply(DirichletSeries.zetap(s, mN, Z.ONE), mN);
+      series = Dgf.multiply(series, Dgf.zetap(s));
     }
     return series.coeff(mN);
   }

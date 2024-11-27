@@ -1,26 +1,26 @@
 package irvine.oeis.a344;
 
-import irvine.math.z.DirichletSeries;
+import irvine.math.dirichlet.Dgf;
+import irvine.math.dirichlet.Ds;
+import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
  * A344203 Dirichlet g.f.: Product_{k&gt;=2} 1 / (1 - k^(-s))^binomial(k+2,3).
+ * @author Georg Fischer
  * @author Sean A. Irvine
  */
 public class A344203 extends Sequence1 {
 
-  // %N A344203 Dirichlet g.f.: Product_{k>=2} 1 / (1 - k^(-s))^binomial(k+2,3).
   private int mN = 0;
+  private Ds mDs = Dgf.one();
 
   @Override
   public Z next() {
-    ++mN;
-    DirichletSeries series = DirichletSeries.ONE;
-    for (int k = 2; k <= mN; ++k) {
-      series = series.multiply(DirichletSeries.zetap(k, mN, Z.ONE).pow(k * (k + 1) * (k + 2) / 6, mN), mN);
+    if (++mN >= 2) {
+      mDs = Dgf.multiply(mDs, Dgf.pow(Dgf.zetap(mN), Binomial.binomial(mN + 2, 3)));
     }
-    return series.coeff(mN);
+    return mDs.coeff(mN);
   }
 }
-

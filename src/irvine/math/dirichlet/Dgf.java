@@ -149,6 +149,14 @@ public final class Dgf {
   }
 
   /**
+   * The Dirichlet generating function for <code>prod(1-1/k^s, k&gt;=2)</code>.
+   * @return Dirichlet series
+   */
+  public static Ds xi() {
+    return new Xi();
+  }
+
+  /**
    * Construct the negation of a Dirichlet series.
    * @param f series
    * @return <code>-f</code>

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A343325 Dirichlet g.f.: Product_{k&gt;=2} (1 + k^(-s))^(k^5).
+ * A343324 Dirichlet g.f.: Product_{k&gt;=2} (1 + k^(-s))^(k^4).
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

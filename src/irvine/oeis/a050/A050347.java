@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A050349 Number of ways to factor n into distinct factors with 3 levels of parentheses.
+ * A050347 Number of ways to factor n into distinct factors with 2 levels of parentheses.
  * @author Sean A. Irvine
  */
 public class A050347 extends Sequence1 {

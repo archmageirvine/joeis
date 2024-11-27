@@ -4,7 +4,7 @@ import irvine.math.dirichlet.Dgf;
 import irvine.oeis.DirichletSequence;
 
 /**
- * A370239 The sum of divisors of n that are squares of squarefree numbers.
+ * A339716 Dirichlet g.f.: Product_{k&gt;=2} (1 - k^(-s))^9.
  * @author Sean A. Irvine
  */
 public class A339716 extends DirichletSequence {

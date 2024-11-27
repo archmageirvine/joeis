@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073401.
+ * A073407 Let phi_m(x) denote the Euler totient function applied m times to x. Sequence gives the minimum number of iterations m such that phi_m(n) divides n.
  * @author Sean A. Irvine
  */
 public class A073407 extends Sequence1 {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
  */
 public final class Dgf {
 
-  private Dgf() {}
+  private Dgf() { }
 
   private static final Ds ZERO = new AbstractDs() {
     @Override

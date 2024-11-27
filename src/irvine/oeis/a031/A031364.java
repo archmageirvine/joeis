@@ -1,7 +1,8 @@
 package irvine.oeis.a031;
 
 import irvine.factor.prime.Fast;
-import irvine.math.z.DirichletSeries;
+import irvine.math.dirichlet.Dgf;
+import irvine.math.dirichlet.Ds;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -12,37 +13,29 @@ import irvine.oeis.Sequence1;
 public class A031364 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
-  private final DirichletSeries mZetaP = new DirichletSeries();
-  private DirichletSeries mDirichlet = null;
+  private Ds mDirichlet = null;
   private int mN = 0;
   private int mMaxOrd = 1;
-
-  {
-    mZetaP.put(Z.ONE, Z.ONE);
-  }
 
   @Override
   public Z next() {
     if (++mN >= mMaxOrd) {
       // Regenerate (progressively bigger chunks each time)
       mMaxOrd = 2 * mN;
-      DirichletSeries zp = mZetaP;
-      for (long p = 2; p < mMaxOrd; p = mPrime.nextPrime(p)) {
-        switch ((int) (p % 5)) {
+      Ds zp = Dgf.one();
+      for (int p = 2; p < mMaxOrd; p = (int) mPrime.nextPrime(p)) {
+        switch (p % 5) {
           case 0: // i.e. p == 5
-            zp = zp.multiply(DirichletSeries.simple(p, mMaxOrd, Z.ONE), mMaxOrd);
-            zp = zp.multiply(DirichletSeries.zetap(p, mMaxOrd, Z.valueOf(p)), mMaxOrd);
+            zp = Dgf.multiply(Dgf.multiply(zp, Dgf.simple(p)), Dgf.zetap(p, Z.valueOf(p)));
             break;
           case 1:
           case 4:
-            final DirichletSeries t = DirichletSeries.simple(p, mMaxOrd, Z.ONE).multiply(DirichletSeries.zetap(p, mMaxOrd, Z.valueOf(p)), mMaxOrd);
-            zp = zp.multiply(t.pow(2, mMaxOrd), mMaxOrd);
+            zp = Dgf.multiply(zp, Dgf.square(Dgf.multiply(Dgf.simple(p), Dgf.zetap(p, Z.valueOf(p)))));
             break;
           case 2:
           case 3:
           default:
-            zp = zp.multiply(DirichletSeries.simple(p * p, mMaxOrd, Z.ONE), mMaxOrd);
-            zp = zp.multiply(DirichletSeries.zetap(p * p, mMaxOrd, Z.valueOf(p * p)), mMaxOrd);
+            zp = Dgf.multiply(Dgf.multiply(zp, Dgf.simple((long) p * p)), Dgf.zetap(p * p, Z.valueOf((long) p * p)));
             break;
         }
       }

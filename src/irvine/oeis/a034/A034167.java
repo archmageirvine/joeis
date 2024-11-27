@@ -1,7 +1,8 @@
 package irvine.oeis.a034;
 
 import irvine.factor.prime.Fast;
-import irvine.math.z.DirichletSeries;
+import irvine.math.dirichlet.Dgf;
+import irvine.math.dirichlet.Ds;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -14,22 +15,20 @@ public class A034167 extends Sequence1 {
   private int mN = 0;
   private int mMax = 100;
   private final Fast mPrime = new Fast();
-  private DirichletSeries mD = updateDirichlet();
+  private Ds mD = updateDirichlet();
 
-  private DirichletSeries updateDirichlet() {
-    DirichletSeries d = DirichletSeries.simple(8, mMax, Z.ONE).multiply(DirichletSeries.zetap(8, mMax, Z.ONE), mMax);
-    for (long p = 3; p <= mMax; p = mPrime.nextPrime(p)) {
-      switch ((int) (p % 7)) {
+  private Ds updateDirichlet() {
+    Ds d = Dgf.multiply(Dgf.simple(8), Dgf.zetap(8));
+    for (int p = 3; p <= mMax; p = (int) mPrime.nextPrime(p)) {
+      switch (p % 7) {
         case 1:
-          final DirichletSeries dp = DirichletSeries.simple(p, mMax, Z.ONE).multiply(DirichletSeries.zetap(p, mMax, Z.ONE), mMax);
-          d = d.multiply(dp.pow(3, mMax), mMax);
+          d = Dgf.multiply(d, Dgf.pow(Dgf.multiply(Dgf.simple(p), Dgf.zetap(p)), 3));
           break;
         case 2:
         case 4:
-          final long p3 = p * p * p;
+          final int p3 = p * p * p;
           if (p3 < mMax) {
-            final DirichletSeries da = DirichletSeries.simple(p3, mMax, Z.ONE).multiply(DirichletSeries.zetap((int) p3, mMax, Z.ONE), mMax);
-            d = d.multiply(da, mMax);
+            d = Dgf.multiply(d, Dgf.multiply(Dgf.simple(p3), Dgf.zetap(p3)));
           }
           break;
         default:

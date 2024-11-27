@@ -1,7 +1,8 @@
 package irvine.oeis.a031;
 
 import irvine.factor.prime.Fast;
-import irvine.math.z.DirichletSeries;
+import irvine.math.dirichlet.Dgf;
+import irvine.math.dirichlet.Ds;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -14,14 +15,9 @@ public class A031362 extends Sequence1 {
   // After R. J. Mathar
 
   private final Fast mPrime = new Fast();
-  private final DirichletSeries mZetaP = new DirichletSeries();
-  private DirichletSeries mDirichlet = null;
+  private Ds mDirichlet = null;
   private int mN = -9;
   private int mMaxOrd = 1;
-
-  {
-    mZetaP.put(Z.ONE, Z.ONE);
-  }
 
   @Override
   public Z next() {
@@ -29,14 +25,13 @@ public class A031362 extends Sequence1 {
     if (mN >= mMaxOrd) {
       // Regenerate (progressively bigger chunks each time)
       mMaxOrd = 2 * mN;
-      DirichletSeries zp = mZetaP;
+      Ds zp = Dgf.one();
       for (int e = 1; e <= mMaxOrd; e += 5) {
         if (mPrime.isPrime(e)) {
-          zp = zp.multiply(DirichletSeries.simple(e, mMaxOrd, Z.ONE), mMaxOrd);
-          zp = zp.multiply(DirichletSeries.zetap(e, mMaxOrd, Z.ONE), mMaxOrd);
+          zp = Dgf.multiply(Dgf.multiply(zp, Dgf.simple(e)), Dgf.zetap(e));
         }
       }
-      zp = zp.pow(2, mMaxOrd);
+      zp = Dgf.square(zp);
       mDirichlet = zp;
     }
     return mDirichlet.coeff(mN);

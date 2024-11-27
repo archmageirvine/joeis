@@ -1,7 +1,8 @@
 package irvine.oeis.a035;
 
 import irvine.factor.prime.Fast;
-import irvine.math.z.DirichletSeries;
+import irvine.math.dirichlet.Dgf;
+import irvine.math.dirichlet.Ds;
 import irvine.math.z.Z;
 import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence0;
@@ -18,7 +19,7 @@ public class A035209 extends Sequence0 implements Conjectural {
   private int mN = 0;
   private int mMax = 1000;
   protected final Fast mPrime = new Fast();
-  private DirichletSeries mD = updateSeries(mMax);
+  private Ds mD = updateSeries(mMax);
 
   // Test for solution to 6x^2+xy+y^2 = p
 
@@ -40,15 +41,15 @@ public class A035209 extends Sequence0 implements Conjectural {
     return false;
   }
 
-  private DirichletSeries updateSeries(final int n) {
-    DirichletSeries d = DirichletSeries.ONE;
-    for (long p = 2; p <= n; p = mPrime.nextPrime(p)) {
-      switch ((int) (p % 23)) {
+  private Ds updateSeries(final int n) {
+    Ds d = Dgf.one();
+    for (int p = 2; p <= n; p = (int) mPrime.nextPrime(p)) {
+      switch (p % 23) {
         case 1:
           //System.out.println("p" + p + " " + isSolvable(p));
           if (p == 47 || isSolvable(p)) {
-            final DirichletSeries dp = DirichletSeries.simple(p, n, Z.TWO).multiply(DirichletSeries.zetap(p, n, Z.ONE), n);
-            d = d.multiply(dp.pow(11, n), n);
+            final Ds dp = Dgf.multiply(Dgf.simple(Z.valueOf(p), Z.TWO), Dgf.zetap(p));
+            d = Dgf.multiply(d, Dgf.pow(dp, 11));
           }
           break;
         case 2:
@@ -65,8 +66,8 @@ public class A035209 extends Sequence0 implements Conjectural {
             final Z q = Z.valueOf(p).pow(11);
             //System.out.println("q=" + q + " " + p + "^11");
             if (q.compareTo(n) < 0) {
-              final DirichletSeries da = DirichletSeries.simple(q.intValueExact(), n, Z.TWO).multiply(DirichletSeries.zetap(q.intValueExact(), n, Z.ONE), n);
-              d = d.multiply(da, n);
+              final Ds da = Dgf.multiply(Dgf.simple(q, Z.TWO), Dgf.zetap(q.intValueExact()));
+              d = Dgf.multiply(d, da);
             }
           }
           break;
@@ -74,10 +75,8 @@ public class A035209 extends Sequence0 implements Conjectural {
           break;
       }
     }
-    d = d.multiply(Z.TWO);
-    d.put(Z.ONE, Z.THREE); // effectively does the +1
-    //d = d.multiply(DirichletSeries.zeta(23, n, Z.ONE), n);
-    return d.divide(Z.THREE);
+    d = Dgf.add(Dgf.multiply(d, Z.TWO), Dgf.one());
+    return Dgf.divide(d, Z.THREE);
   }
 
   @Override

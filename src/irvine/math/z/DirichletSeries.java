@@ -81,22 +81,6 @@ public class DirichletSeries extends TreeMap<Z, Z> {
     return ds;
   }
 
-  /**
-   * Compute a zeta function as a Dirichlet series, <code>1+p^(-s)</code>.
-   * @param p prime
-   * @param maxDegree maximum degree
-   * @param f scalar coefficient
-   * @return Dirichlet series
-   */
-  public static DirichletSeries simple(final long p, final long maxDegree, final Z f) {
-    final DirichletSeries ds = new DirichletSeries();
-    ds.put(Z.ONE, Z.ONE);
-    if (p <= maxDegree) {
-      ds.put(Z.valueOf(p), f);
-    }
-    return ds;
-  }
-
   @Override
   public String toString() {
     final StringBuilder sb = new StringBuilder();

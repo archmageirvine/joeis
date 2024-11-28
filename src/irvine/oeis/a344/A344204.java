@@ -19,7 +19,7 @@ public class A344204 extends Sequence1 {
   @Override
   public Z next() {
     if (++mN >= 2) {
-      mDs = Dgf.multiply(mDs, Dgf.pow(Dgf.zetap(mN), Binomial.binomial(mN + 3, 4)));
+      mDs = Dgf.multiply(mDs, Dgf.pow(Dgf.zetam(mN), Binomial.binomial(mN + 3, 4)));
     }
     return mDs.coeff(mN);
   }

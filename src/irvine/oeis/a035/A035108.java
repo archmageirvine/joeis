@@ -18,16 +18,16 @@ public class A035108 extends Sequence1 {
   private Ds mD = updateDirichlet();
 
   private Ds updateDirichlet() {
-    Ds d = Dgf.zetap(5);
+    Ds d = Dgf.zetam(5);
     for (int p = 2; p <= mMax; p = (int) mPrime.nextPrime(p)) {
       switch (p % 5) {
         case 1:
-          d = Dgf.multiply(d, Dgf.pow(Dgf.zetap(p), 4));
+          d = Dgf.multiply(d, Dgf.pow(Dgf.zetam(p), 4));
           break;
         case 4:
           final int p2 = p * p;
           if (p2 < mMax) {
-            d = Dgf.multiply(d, Dgf.square(Dgf.zetap(p2)));
+            d = Dgf.multiply(d, Dgf.square(Dgf.zetam(p2)));
           }
           break;
         case 2:
@@ -35,7 +35,7 @@ public class A035108 extends Sequence1 {
           final int pb2 = p * p;
           final int p4 = pb2 * pb2;
           if (p4 < mMax) {
-            d = Dgf.multiply(d, Dgf.zetap(p4));
+            d = Dgf.multiply(d, Dgf.zetam(p4));
           }
           break;
         default:

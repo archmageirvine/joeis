@@ -185,22 +185,41 @@ public final class Dgf {
   }
 
   /**
-   * The Dirichlet generating function for <code>f/(1-p^(-s))</code>.
-   * @param p prime
+   * The Dirichlet generating function for <code>f/(1-k^(-s))</code>.
+   * @param k number
    * @param f scalar
    * @return <code>zeta(m*s)</code>
    */
-  public static Ds zetap(final long p, final Z f) {
-    return new ZetaP(p, f);
+  public static Ds zetam(final long k, final Z f) {
+    return new ZetaM(k, f);
   }
 
   /**
-   * The Dirichlet generating function for <code>1/(1-p^(-s))</code>.
-   * @param p prime
+   * The Dirichlet generating function for <code>1/(1-k^(-s))</code>.
+   * @param k number
    * @return <code>zeta(m*s)</code>
    */
-  public static Ds zetap(final long p) {
-    return new ZetaP(p, Z.ONE);
+  public static Ds zetam(final long k) {
+    return new ZetaM(k, Z.ONE);
+  }
+
+  /**
+   * The Dirichlet generating function for <code>f/(1+k^(-s))</code>.
+   * @param k number
+   * @param f scalar
+   * @return <code>zeta(m*s)</code>
+   */
+  public static Ds zetap(final long k, final Z f) {
+    return new ZetaP(k, f);
+  }
+
+  /**
+   * The Dirichlet generating function for <code>1/(1+k^(-s))</code>.
+   * @param k number
+   * @return <code>zeta(m*s)</code>
+   */
+  public static Ds zetap(final long k) {
+    return new ZetaP(k, Z.ONE);
   }
 
   /**

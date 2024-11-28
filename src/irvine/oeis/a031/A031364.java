@@ -26,16 +26,16 @@ public class A031364 extends Sequence1 {
       for (int p = 2; p < mMaxOrd; p = (int) mPrime.nextPrime(p)) {
         switch (p % 5) {
           case 0: // i.e. p == 5
-            zp = Dgf.multiply(Dgf.multiply(zp, Dgf.simple(p)), Dgf.zetap(p, Z.valueOf(p)));
+            zp = Dgf.multiply(Dgf.multiply(zp, Dgf.simple(p)), Dgf.zetam(p, Z.valueOf(p)));
             break;
           case 1:
           case 4:
-            zp = Dgf.multiply(zp, Dgf.square(Dgf.multiply(Dgf.simple(p), Dgf.zetap(p, Z.valueOf(p)))));
+            zp = Dgf.multiply(zp, Dgf.square(Dgf.multiply(Dgf.simple(p), Dgf.zetam(p, Z.valueOf(p)))));
             break;
           case 2:
           case 3:
           default:
-            zp = Dgf.multiply(Dgf.multiply(zp, Dgf.simple((long) p * p)), Dgf.zetap(p * p, Z.valueOf((long) p * p)));
+            zp = Dgf.multiply(Dgf.multiply(zp, Dgf.simple((long) p * p)), Dgf.zetam(p * p, Z.valueOf((long) p * p)));
             break;
         }
       }

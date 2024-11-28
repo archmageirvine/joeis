@@ -18,19 +18,19 @@ public class A035111 extends Sequence0 {
   private Ds mD = phiIcosahedron(mMax);
 
   protected Ds phiIcosahedron(final int n) {
-    Ds d = Dgf.multiply(Dgf.simple(5), Dgf.zetap(5, Z.FIVE));
+    Ds d = Dgf.multiply(Dgf.simple(5), Dgf.zetam(5, Z.FIVE));
     for (int p = 2; p <= n; p = (int) mPrime.nextPrime(p)) {
       switch (p % 5) {
         case 1:
         case 4:
-          final Ds dp = Dgf.multiply(Dgf.simple(p), Dgf.zetap(p, Z.valueOf(p)));
+          final Ds dp = Dgf.multiply(Dgf.simple(p), Dgf.zetam(p, Z.valueOf(p)));
           d = Dgf.multiply(d, Dgf.square(dp));
           break;
         case 2:
         case 3:
           final int p2 = p * p;
           if (p2 < n) {
-            final Ds da = Dgf.multiply(Dgf.simple(p2), Dgf.zetap(p2, Z.valueOf(p2)));
+            final Ds da = Dgf.multiply(Dgf.simple(p2), Dgf.zetam(p2, Z.valueOf(p2)));
             d = Dgf.multiply(d, da);
           }
           break;

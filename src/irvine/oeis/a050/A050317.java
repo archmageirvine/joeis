@@ -22,7 +22,7 @@ public class A050317 extends Sequence2 {
     Ds series = Dgf.one();
     long s;
     while ((s = partitions.next().longValueExact()) <= mN) {
-      series = Dgf.multiply(series, Dgf.zetap(s));
+      series = Dgf.multiply(series, Dgf.zetam(s));
     }
     return series.coeff(mN);
   }

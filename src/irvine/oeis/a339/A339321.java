@@ -18,7 +18,7 @@ public class A339321 extends Sequence1 {
   @Override
   public Z next() {
     if (++mN >= 2) {
-      mDs = Dgf.multiply(mDs, Dgf.pow(Dgf.zetap(mN), 6));
+      mDs = Dgf.multiply(mDs, Dgf.pow(Dgf.zetam(mN), 6));
     }
     return mDs.coeff(mN);
   }

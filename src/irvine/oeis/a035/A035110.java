@@ -16,18 +16,18 @@ public class A035110 extends A035111 {
 
   // zeta_(\Q(tau))(s)
   private Ds zetaQuadraticTau(final int n) {
-    Ds d = Dgf.zetap(5);
+    Ds d = Dgf.zetam(5);
     for (int p = 2; p <= n; p = (int) mPrime.nextPrime(p)) {
       switch (p % 5) {
         case 1:
         case 4:
-          d = Dgf.multiply(d, Dgf.square(Dgf.zetap(p)));
+          d = Dgf.multiply(d, Dgf.square(Dgf.zetam(p)));
           break;
         case 2:
         case 3:
           final int p2 = p * p;
           if (p2 < n) {
-            d = Dgf.multiply(d, Dgf.zetap(p2));
+            d = Dgf.multiply(d, Dgf.zetam(p2));
           }
           break;
         default:

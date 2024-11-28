@@ -3,20 +3,20 @@ package irvine.math.dirichlet;
 import irvine.math.z.Z;
 
 /**
- * Dirichlet series for <code>1/(1+p^(-s))</code>.
+ * Dirichlet series for <code>1/(1-p^(-s))</code>.
  * @author Sean A. Irvine
  */
-class ZetaP extends AbstractDs {
+class ZetaM extends AbstractDs {
 
   private final long mP;
   private final Z mF;
 
   /**
-   * Construct the Dirichlet series for <code>1/(1+p^(-m*s))</code>.
+   * Construct the Dirichlet series for <code>1/(1-p^(-m*s))</code>.
    * @param p prime
    * @param f scalar coefficient
    */
-  ZetaP(final long p, final Z f) {
+  ZetaM(final long p, final Z f) {
     mP = p;
     mF = f;
   }
@@ -36,6 +36,6 @@ class ZetaP extends AbstractDs {
       r = qr[0];
       ++cnt;
     }
-    return cnt == 0 || !Z.ONE.equals(r) ? Z.ZERO : Z.NEG_ONE.pow(cnt).multiply(mF.pow(cnt));
+    return cnt == 0 || !Z.ONE.equals(r) ? Z.ZERO : mF.pow(cnt);
   }
 }

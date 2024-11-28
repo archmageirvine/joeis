@@ -20,11 +20,11 @@ public class A035198 extends Sequence0 {
     if (mPrime.isPrime(p)) {
       switch (p & 7) {
         case 1:
-          mD = Dgf.multiply(mD, Dgf.square(Dgf.zetap(p)));
+          mD = Dgf.multiply(mD, Dgf.square(Dgf.zetam(p)));
           break;
         case 3:
         case 5:
-          mD = Dgf.multiply(mD, Dgf.substitute(Dgf.zetap(p), 2));
+          mD = Dgf.multiply(mD, Dgf.substitute(Dgf.zetam(p), 2));
           break;
         default:
           break;

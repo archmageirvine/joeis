@@ -1,4 +1,4 @@
-package irvine.oeis.a343;
+package irvine.oeis.a339;
 
 import irvine.math.dirichlet.Dgf;
 import irvine.math.dirichlet.Ds;
@@ -6,19 +6,18 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A343286 Dirichlet g.f.: Product_{k&gt;=2} 1 / (1 - k^(-s))^(k^6).
- * @author Georg Fischer
+ * A339735.
  * @author Sean A. Irvine
  */
-public class A343286 extends Sequence1 {
+public class A339735 extends Sequence1 {
 
-  private int mN = 0;
+  private long mN = 0;
   private Ds mDs = Dgf.one();
 
   @Override
   public Z next() {
     if (++mN >= 2) {
-      mDs = Dgf.multiply(mDs, Dgf.pow(Dgf.zetam(mN), Z.valueOf(mN).pow(6)));
+      mDs = Dgf.multiply(mDs, Dgf.pow(Dgf.zetap(mN), 9));
     }
     return mDs.coeff(mN);
   }

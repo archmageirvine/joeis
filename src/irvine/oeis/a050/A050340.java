@@ -20,7 +20,7 @@ public class A050340 extends Sequence1 {
     ++mN;
     Ds series = Dgf.one();
     for (int k = 2; k <= mN; ++k) {
-      series = Dgf.multiply(series, Dgf.pow(Dgf.zetap(k), mA.a(k - 1)));
+      series = Dgf.multiply(series, Dgf.pow(Dgf.zetam(k), mA.a(k - 1)));
     }
     return series.coeff(mN);
   }

@@ -18,17 +18,17 @@ public class A034167 extends Sequence1 {
   private Ds mD = updateDirichlet();
 
   private Ds updateDirichlet() {
-    Ds d = Dgf.multiply(Dgf.simple(8), Dgf.zetap(8));
+    Ds d = Dgf.multiply(Dgf.simple(8), Dgf.zetam(8));
     for (int p = 3; p <= mMax; p = (int) mPrime.nextPrime(p)) {
       switch (p % 7) {
         case 1:
-          d = Dgf.multiply(d, Dgf.pow(Dgf.multiply(Dgf.simple(p), Dgf.zetap(p)), 3));
+          d = Dgf.multiply(d, Dgf.pow(Dgf.multiply(Dgf.simple(p), Dgf.zetam(p)), 3));
           break;
         case 2:
         case 4:
           final int p3 = p * p * p;
           if (p3 < mMax) {
-            d = Dgf.multiply(d, Dgf.multiply(Dgf.simple(p3), Dgf.zetap(p3)));
+            d = Dgf.multiply(d, Dgf.multiply(Dgf.simple(p3), Dgf.zetam(p3)));
           }
           break;
         default:

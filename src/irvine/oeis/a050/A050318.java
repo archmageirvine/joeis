@@ -25,7 +25,7 @@ public class A050318 extends MemorySequence {
     }
     Ds series = Dgf.one();
     for (int k = 2; k < n; ++k) {
-      series = Dgf.multiply(series, Dgf.pow(Dgf.zetap(k), a(k)));
+      series = Dgf.multiply(series, Dgf.pow(Dgf.zetam(k), a(k)));
     }
     return series.coeff(n - 1);
   }

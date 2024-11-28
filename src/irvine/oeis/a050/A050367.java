@@ -18,7 +18,7 @@ public class A050367 extends Sequence1 {
     ++mN;
     Ds series = Dgf.one();
     for (int k = 2; k <= mN; ++k) {
-      series = Dgf.multiply(series, Dgf.pow(Dgf.zetap(k), k));
+      series = Dgf.multiply(series, Dgf.pow(Dgf.zetam(k), k));
     }
     return series.coeff(mN);
   }

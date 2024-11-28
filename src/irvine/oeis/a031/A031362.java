@@ -28,7 +28,7 @@ public class A031362 extends Sequence1 {
       Ds zp = Dgf.one();
       for (int e = 1; e <= mMaxOrd; e += 5) {
         if (mPrime.isPrime(e)) {
-          zp = Dgf.multiply(Dgf.multiply(zp, Dgf.simple(e)), Dgf.zetap(e));
+          zp = Dgf.multiply(Dgf.multiply(zp, Dgf.simple(e)), Dgf.zetam(e));
         }
       }
       zp = Dgf.square(zp);

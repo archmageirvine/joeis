@@ -50,7 +50,7 @@ public class DgfTest extends TestCase {
   }
 
   public void testZetaP() {
-    assertEquals("1+1/3^s+1/9^s+1/27^s", Dgf.toString(Dgf.zetap(3), 30));
+    assertEquals("1+1/3^s+1/9^s+1/27^s", Dgf.toString(Dgf.zetam(3), 30));
   }
 
   public void testA000005() {

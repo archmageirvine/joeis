@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A080736 Multiplicative function defined by a(1)=1, a(2)=0, a(2^r) = phi(2^r) (r&gt;1), a(p^r) = phi(p^r) (p odd prime, r&gt;=1), where phi is Euler&apos;s function A000010.
+ * A080736 Multiplicative function defined by a(1)=1, a(2)=0, a(2^r) = phi(2^r) (r&gt;1), a(p^r) = phi(p^r) (p odd prime, r&gt;=1), where phi is Euler's function A000010.
  * Multiplicative with: a(2) = 0, a(2^e) = 2^(e-1) for e >= 2, and a(p^e) = (p-1)*p^(e-1) for an odd prime p.
  * @author Georg Fischer
  */

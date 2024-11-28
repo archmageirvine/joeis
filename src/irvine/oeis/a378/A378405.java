@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A378405 a(n) = Sum_{k=0..floor(n/2)} binomial(n,k) * binomial(n+k,n-2*k).
+ * A378405 allocated for Seiichi Manyama.
  * @author Georg Fischer
  */
 public class A378405 extends LambdaSequence {

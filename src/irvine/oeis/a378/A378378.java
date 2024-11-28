@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A378378 a(n) = Sum_{k=0..n} binomial(n,k) * binomial(n+3*k-1, 3*k).
+ * A378378 a(n) = Sum_{k=0..n} binomial(n,k) * binomial(n+3*k-1,3*k).
  * @author Georg Fischer
  */
 public class A378378 extends LambdaSequence {

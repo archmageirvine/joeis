@@ -88,6 +88,6 @@ public class DgfTest extends TestCase {
 
   public void testA001615() {
     // zeta(s) * zeta(s - 1) / zeta(2s)
-    check(Dgf.multiply(Dgf.multiply(Dgf.zeta(), Dgf.zeta(1, 1)), Dgf.inverse(Dgf.zeta(2))), new A001615());
+    check(Dgf.divide(Dgf.multiply(Dgf.zeta(), Dgf.zeta(1, 1)), Dgf.zeta(2)), new A001615());
   }
 }

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A339735.
+ * A329800 Dirichlet g.f.: Product_{k&gt;=2} 1 / (1 - k^(-s))^(2^(k - 1)).
  * @author Sean A. Irvine
  */
 public class A329800 extends Sequence1 {

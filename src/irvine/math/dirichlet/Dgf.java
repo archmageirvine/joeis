@@ -340,6 +340,16 @@ public final class Dgf {
   }
 
   /**
+   * Divide one Dirichlet series by another
+   * @param f dividend
+   * @param g divisor
+   * @return quotient
+   */
+  public static Ds divide(final Ds f, final Ds g) {
+    return multiply(f, inverse(g));
+  }
+
+  /**
    * Construct the scalar division of a Dirichlet series.
    * @param f series
    * @param d divisor

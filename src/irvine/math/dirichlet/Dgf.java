@@ -410,7 +410,8 @@ public final class Dgf {
   /**
    * Wrap the given Dirichlet series in a cache. This can speed up computation
    * at the expense of memory. Use this if computing the same coefficients is
-   * likely to occur multiple times.
+   * likely to occur multiple times. Certain operations like multiplication,
+   * powers, and inverses already use this under the hood.
    * @param f Dirichlet series
    * @return Dirichlet series
    */

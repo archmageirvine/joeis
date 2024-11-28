@@ -35,7 +35,7 @@ public class A031364 extends Sequence1 {
           case 2:
           case 3:
           default:
-            zp = Dgf.multiply(Dgf.multiply(zp, Dgf.simple((long) p * p)), Dgf.zetam(p * p, Z.valueOf((long) p * p)));
+            zp = Dgf.multiply(Dgf.multiply(zp, Dgf.simple((long) p * p)), Dgf.zetam((long) p * p, Z.valueOf((long) p * p)));
             break;
         }
       }

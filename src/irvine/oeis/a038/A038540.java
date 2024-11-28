@@ -1,8 +1,10 @@
 package irvine.oeis.a038;
 
 import irvine.math.LongUtils;
+import irvine.math.dirichlet.Dgf;
+import irvine.math.dirichlet.Ds;
+import irvine.math.dirichlet.FiniteDs;
 import irvine.math.function.Functions;
-import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -27,8 +29,8 @@ public class A038540 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    final DirichletSeries ds1 = new DirichletSeries();
-    final DirichletSeries ds2 = new DirichletSeries();
+    final FiniteDs ds1 = Dgf.empty();
+    final FiniteDs ds2 = Dgf.empty();
     for (int k = 1; k <= mN; ++k) {
       ds1.put(Z.valueOf(k), Z.ONE);
       final int kronecker = Functions.KRONECKER.i(mD, k);
@@ -36,14 +38,14 @@ public class A038540 extends Sequence1 {
         ds2.put(Z.valueOf(k), Z.valueOf(kronecker));
       }
     }
-    DirichletSeries v = ds1.multiply(ds2, mN);
-    final DirichletSeries bigZ = v;
+    Ds v = Dgf.multiply(ds1, ds2);
+    final Ds bigZ = v;
     for (int j = 2; j <= LongUtils.log2(mN); ++j) {
-      final DirichletSeries u = new DirichletSeries();
+      final FiniteDs u = Dgf.empty();
       for (Z k = Z.ONE; k.compareTo(Z.valueOf(mN).root(j)) <= 0; k = k.add(1)) {
-        u.put(k.pow(j), bigZ.get(k));
+        u.put(k.pow(j), bigZ.coeff(k));
       }
-      v = v.multiply(u, mN);
+      v = Dgf.multiply(v, u);
     }
     return v.coeff(mN);
   }

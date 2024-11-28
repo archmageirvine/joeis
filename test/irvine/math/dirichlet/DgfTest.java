@@ -7,6 +7,7 @@ import irvine.oeis.a000.A000035;
 import irvine.oeis.a000.A000122;
 import irvine.oeis.a000.A000124;
 import irvine.oeis.a000.A000203;
+import irvine.oeis.a001.A001615;
 import junit.framework.TestCase;
 
 /**
@@ -29,7 +30,7 @@ public class DgfTest extends TestCase {
 
   private void check(final Ds series, final Sequence seq, final int terms) {
     for (int k = 1; k <= terms; ++k) {
-      assertEquals(series.coeff(k), seq.next());
+      assertEquals(seq.next(), series.coeff(k));
     }
   }
 
@@ -51,6 +52,11 @@ public class DgfTest extends TestCase {
 
   public void testZetaP() {
     assertEquals("1+1/3^s+1/9^s+1/27^s", Dgf.toString(Dgf.zetam(3), 30));
+  }
+
+  public void testInverse() {
+    assertEquals("1+-1/2^s+-1/3^s+-1/5^s+1/6^s+-1/7^s+1/10^s+-1/11^s+-1/13^s+1/14^s+1/15^s", Dgf.toString(Dgf.inverseZeta(), 15));
+    assertEquals("1+-1/2^s+-1/3^s+-1/5^s+1/6^s+-1/7^s+1/10^s+-1/11^s+-1/13^s+1/14^s+1/15^s", Dgf.toString(Dgf.inverse(Dgf.zeta()), 15));
   }
 
   public void testA000005() {
@@ -78,5 +84,10 @@ public class DgfTest extends TestCase {
 
   public void testA000203() {
     check(Dgf.multiply(Dgf.zeta(), Dgf.zeta(1, 1)), new A000203());
+  }
+
+  public void testA001615() {
+    // zeta(s) * zeta(s - 1) / zeta(2s)
+    check(Dgf.multiply(Dgf.multiply(Dgf.zeta(), Dgf.zeta(1, 1)), Dgf.inverse(Dgf.zeta(2))), new A001615());
   }
 }

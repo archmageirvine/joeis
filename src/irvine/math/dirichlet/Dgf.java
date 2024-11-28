@@ -1,6 +1,7 @@
 package irvine.math.dirichlet;
 
 import irvine.math.function.Functions;
+import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
@@ -240,12 +241,33 @@ public final class Dgf {
   }
 
   /**
-   * Perform the substitution <code>s -&gt; s^m</code> in the given series
+   * Perform the substitution <code>s -&gt; s^m</code> in the given series.
    * @param f series
+   * @param m power to substitute
    * @return <code>f(s^m)</code>
    */
-  public static Ds substitute(final Ds f, final int s) {
-    return new Substitute(f, s);
+  public static Ds substitute(final Ds f, final int m) {
+    return new Substitute(f, m);
+  }
+
+  /**
+   * Perform the shift <code>s -&gt; s + shift</code> in the given series.
+   * @param f series
+   * @param shift amount of shift
+   * @return <code>f(s + shift)</code>
+   */
+  public static Ds shift(final Ds f, final Z shift) {
+    return shift.isZero() ? f : new Shift(f, shift);
+  }
+
+  /**
+   * Perform the shift <code>s -&gt; s + shift</code> in the given series.
+   * @param f series
+   * @param shift amount of shift
+   * @return <code>f(s + shift)</code>
+   */
+  public static Ds shift(final Ds f, final long shift) {
+    return shift == 0 ? f : new Shift(f, Z.valueOf(shift));
   }
 
   /**
@@ -296,6 +318,15 @@ public final class Dgf {
    */
   public static Ds multiply(final Ds f, final long m) {
     return new ScalarMultiply(f, Z.valueOf(m));
+  }
+
+  /**
+   * Construct the inverse of a Dirichlet series.
+   * @param f series
+   * @return the inverse
+   */
+  public static Ds inverse(final Ds f) {
+    return new Inverse(f);
   }
 
   /**
@@ -375,6 +406,22 @@ public final class Dgf {
    */
   public static Ds remember(final Ds f) {
     return f instanceof Remember ? f : new Remember(f);
+  }
+
+  /**
+   * Return the initial terms of this Dirichlet series as an ordinary polynomial.
+   * This is nothing fancy, just converting coefficients from one structure to another.
+   * @param f series
+   * @param maxDegree terms to retain (maximum degree of resulting polynomial)
+   * @return polynomial
+   */
+  public static Polynomial<Z> toPoly(final Ds f, final int maxDegree) {
+    final Z[] terms = new Z[maxDegree + 1];
+    terms[0] = Z.ZERO;
+    for (int k = 1; k < terms.length; ++k) {
+      terms[k] = f.coeff(k);
+    }
+    return Polynomial.create(terms);
   }
 
   /**

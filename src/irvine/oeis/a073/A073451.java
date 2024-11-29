@@ -13,13 +13,13 @@ import irvine.oeis.Sequence1;
  */
 public class A073451 extends Sequence1 {
 
-  private final Fast mPrime = new Fast();
+  protected final Fast mPrime = new Fast();
   private int mN = 0;
   private long mLimit = 0;
   private long mCount = 0;
   private int[][] mTransitions;
 
-  private int[][] buildTransitions(final int n) {
+  protected int[][] buildTransitions(final int n) {
     final int[][] transitions = new int[n][];
     for (int k = 1; k <= n; ++k) {
       final List<Integer> t = new ArrayList<>();

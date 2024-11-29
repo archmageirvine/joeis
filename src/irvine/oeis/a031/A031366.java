@@ -28,8 +28,8 @@ public class A031366 extends Sequence1 {
   private int mN = 0;
   private int mMaxOrd = 1;
 
-  private Ds fromList(List<Z> lst) {
-    FiniteDs ds = Dgf.empty();
+  private Ds fromList(final List<Z> lst) {
+    final FiniteDs ds = Dgf.empty();
     int k = -1;
     for (final Z v : lst) {
       ++k;

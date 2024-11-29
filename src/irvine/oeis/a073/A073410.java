@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A073408.
+ * A073410 Number of permutations p of (1,2,3,...,n) such that 1*(-1)^p(1)+2*(-1)^p(2)+3*(-1)^p(3)+...+n*(-1)^p(n)=0.
  * @author Sean A. Irvine
  */
 public class A073410 extends Sequence0 {

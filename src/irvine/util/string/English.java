@@ -23,6 +23,8 @@ public final class English extends AbstractLanguage {
     "sixty", "seventy", "eighty", "ninety"
   };
 
+  private static final int BILLION = 1000000000;
+
   @Override
   public String toText(int x) {
     final StringBuilder b = new StringBuilder();
@@ -158,19 +160,28 @@ public final class English extends AbstractLanguage {
   @Override
   public String toRawText(int x) {
     final StringBuilder b = new StringBuilder();
-    if (x < 0 || x > 19999999) {
+    if (x < 0) {
       throw new UnsupportedOperationException();
     }
+
     // quick exit for small numbers
     if (x < M_DIGITS.length) {
       b.append(M_DIGITS[x]);
       return b.toString();
     }
+
+    // Billions
+    if (x >= BILLION) {
+      final int d = x / BILLION;
+      x %= BILLION;
+      b.append(M_DIGITS[d]).append("billion");
+    }
+
     // x>=20 && x <= 19000000
     if (x >= 1000000) {
       final int d = x / 1000000;
       x %= 1000000;
-      b.append(M_DIGITS[d]).append("million");
+      b.append(toRawText(d)).append("million");
     }
 
     // x>=0 && x<1000000

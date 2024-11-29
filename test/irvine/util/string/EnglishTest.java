@@ -253,6 +253,7 @@ public class EnglishTest extends TestCase {
     assertEquals("onemilliononethousandthirty", English.SINGLETON.toRawText(1001030));
     assertEquals("onemilliontwohundredseventeenthousandthreehundredfourteen", English.SINGLETON.toRawText(1217314));
     assertEquals("nineteenmillionninehundredninetyninethousandninehundredninetynine", English.SINGLETON.toRawText(19999999));
+    assertEquals("twobillionsixtysixmillionsevenhundredonethousandthreehundredtwentyfour", English.SINGLETON.toRawText(2066701324));
     try {
       English.SINGLETON.toRawText(20000000);
       fail();

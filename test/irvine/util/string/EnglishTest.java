@@ -255,12 +255,6 @@ public class EnglishTest extends TestCase {
     assertEquals("nineteenmillionninehundredninetyninethousandninehundredninetynine", English.SINGLETON.toRawText(19999999));
     assertEquals("twobillionsixtysixmillionsevenhundredonethousandthreehundredtwentyfour", English.SINGLETON.toRawText(2066701324));
     try {
-      English.SINGLETON.toRawText(20000000);
-      fail();
-    } catch (final UnsupportedOperationException e) {
-      //ok
-    }
-    try {
       English.SINGLETON.toRawText(-1);
       fail();
     } catch (final UnsupportedOperationException e) {

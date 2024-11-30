@@ -14,9 +14,9 @@ public class A073251 extends FilterSequence {
   public A073251() {
     super(1, new A005117(), k -> !k.isProbablePrime()
       && !k.add(1).isProbablePrime()
-      && !Predicates.SQUARE_FREE.is(k.add(2))
-      && !k.add(1).isProbablePrime()
-      && !Predicates.SQUARE_FREE.is(k.add(2)));
+      && Predicates.SQUARE_FREE.is(k.add(1))
+      && !k.add(2).isProbablePrime()
+      && Predicates.SQUARE_FREE.is(k.add(2)));
   }
 }
 

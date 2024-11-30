@@ -2,15 +2,15 @@ package irvine.oeis.a061;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A061510 Write n in decimal, omit 0's, raise each digit k to k-th power and multiply.
  * @author Sean A. Irvine
  */
-public class A061510 extends Sequence1 {
+public class A061510 extends Sequence0 {
 
-  private long mN = 0;
+  private long mN = -1;
 
   @Override
   public Z next() {

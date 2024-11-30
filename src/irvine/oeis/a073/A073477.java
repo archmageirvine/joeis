@@ -30,6 +30,9 @@ public class A073477 extends Sequence0 {
         final int v = t.bitLength() - 1;
         if (mFirsts.get(v) == 0) {
           mFirsts.set(v, mM);
+          if (mVerbose) {
+            StringUtils.message("Found " + v + " -> " + mM);
+          }
         }
       }
       if (mVerbose && mM % 1000000 == 0) {

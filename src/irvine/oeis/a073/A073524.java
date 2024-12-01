@@ -14,9 +14,10 @@ public class A073524 extends Sequence1 {
 
   @Override
   public Z next() {
-    Q x = new Q(++mN + 1, mN);
+    ++mN;
     long e = 250;
     while (true) {
+      Q x = new Q(mN + 1, mN);
       final Z mod = Z.valueOf(mN).pow(e);
       long cnt = 0;
       while (cnt <= e - 3 && !x.isInteger()) {

@@ -15,12 +15,19 @@ public class A073524 extends Sequence1 {
   @Override
   public Z next() {
     Q x = new Q(++mN + 1, mN);
-    long cnt = 0;
-    while (!x.isInteger()) {
-      x = x.multiply(x.ceiling());
-      ++cnt;
+    long e = 250;
+    while (true) {
+      final Z mod = Z.valueOf(mN).pow(e);
+      long cnt = 0;
+      while (cnt <= e - 3 && !x.isInteger()) {
+        x = x.multiply(x.ceiling());
+        x = new Q(x.num().mod(mod), x.den().mod(mod));
+        ++cnt;
+      }
+      if (cnt < e - 3) {
+        return Z.valueOf(cnt);
+      }
+      e *= 2;
     }
-    return Z.valueOf(cnt);
   }
 }
-

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A004023 Indices of prime repunits: numbers n such that 11...111 (with n 1's) = (10^n - 1)/9 is prime.
+ * A004023 Indices of prime repunits: numbers k such that 11...111 (with k 1's) = (10^k - 1)/9 is prime.
  * @author Sean A. Irvine
  */
 public class A004023 extends Sequence1 {

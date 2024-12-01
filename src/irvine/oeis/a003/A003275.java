@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A003275 Values of phi(n) = phi(n+1).
+ * A003275 Values of phi(k) when phi(k) = phi(k+1).
  * @author Sean A. Irvine
  */
 public class A003275 extends Sequence1 {

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * A073452.
+ * A073452 a(n) is the number of essentially different ways in which the integers 1,2,3,...,n can be arranged in a sequence such that all pairs of adjacent integers sum to a prime number. Rotations and reversals are counted only once.
  * @author Sean A. Irvine
  */
 public class A073452 extends A073451 {

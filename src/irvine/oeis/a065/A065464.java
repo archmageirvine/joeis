@@ -3,7 +3,7 @@ package irvine.oeis.a065;
 import irvine.math.cr.CR;
 
 /**
- * A065464 Decimal expansion of Product_{p prime}(1 - (2*p-1)/p^3).
+ * A065464 Decimal expansion of Product_{p prime} (1 - (2*p-1)/p^3).
  * @author Sean A. Irvine
  */
 public class A065464 extends A065468 {

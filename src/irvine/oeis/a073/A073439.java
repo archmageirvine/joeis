@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A073439 A073259(n)=4: the length of iteration-transient leading to n-th composite number equals 4.
+ * A073439 Numbers k such that A073259(k)=4: the length of iteration-transient leading to k-th composite number equals 4.
  * @author Sean A. Irvine
  */
 public class A073439 extends FilterPositionSequence {

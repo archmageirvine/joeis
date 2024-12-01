@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A073451.
+ * A073478 Expansion of (1+x)^(1/(1-x)).
  * @author Sean A. Irvine
  */
 public class A073478 extends Sequence0 {

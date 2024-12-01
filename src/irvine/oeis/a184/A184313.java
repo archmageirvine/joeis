@@ -4,7 +4,7 @@ package irvine.oeis.a184;
 import irvine.math.z.Z;
 
 /**
- * A184313 Number of strings of numbers x(i=1..n) in 0..4 with sum i^2*x(i)^3 equal to n^2*64.
+ * A184313 Number of strings of numbers x(i=1..n) in 0..4 with Sum_{i=1..n} i^2*x(i)^3 = n^2*64.
  * @author Georg Fischer
  */
 public class A184313 extends A184318 {

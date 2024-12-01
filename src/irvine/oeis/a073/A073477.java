@@ -9,7 +9,7 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A073451.
+ * A073477 Least k such that 2^n = k^2-sigma(k)*phi(k).
  * @author Sean A. Irvine
  */
 public class A073477 extends Sequence0 {

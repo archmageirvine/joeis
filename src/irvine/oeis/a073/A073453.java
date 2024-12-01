@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073451.
+ * A073453 Number of distinct remainders arising when n is divided by all primes up to n.
  * @author Sean A. Irvine
  */
 public class A073453 extends Sequence1 {

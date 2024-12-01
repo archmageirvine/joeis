@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002808;
 
 /**
- * A073451.
+ * A073459 Smallest x such that Floor[A000040(x)/A002808(x)]=n.
  * @author Sean A. Irvine
  */
 public class A073459 extends A000040 {

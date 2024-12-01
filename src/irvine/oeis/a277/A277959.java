@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A277959 Numbers n such that 2 is the largest decimal digit of n^2.
+ * A277959 Numbers k such that 2 is the largest decimal digit of k^2.
  * @author Georg Fischer
  */
 public class A277959 extends FilterNumberSequence {

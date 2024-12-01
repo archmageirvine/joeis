@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A158361 Primes p with property that Q=p^4+2^4 is prime.
+ * A158361 Primes p with property that Q = p^4 + 2^4 is prime.
  * @author Georg Fischer
  */
 public class A158361 extends FilterSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073451.
+ * A073454 Number of repeated remainders arising when n is divided by all primes up to n: a(n) = pi(n) - A073453(n).
  * @author Sean A. Irvine
  */
 public class A073454 extends Sequence1 {

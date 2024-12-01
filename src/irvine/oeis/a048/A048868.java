@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000720;
 
 /**
- * A048868 Numbers for which reduced residue system contains more primes than nonprimes.
+ * A048868 Numbers whose reduced residue system contains more primes than nonprimes.
  * @author Sean A. Irvine
  */
 public class A048868 extends A000720 {

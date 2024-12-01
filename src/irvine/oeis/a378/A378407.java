@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A378407 allocated for Seiichi Manyama.
+ * A378407 a(n) = Sum_{k=0..floor(n/3)} binomial(n,k) * binomial(n+2*k,n-3*k).
  * @author Georg Fischer
  */
 public class A378407 extends LambdaSequence {

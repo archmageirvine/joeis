@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a003.A003434;
 
 /**
- * A060606 The n-th term is the sum of lengths of iteration chains to get fixed points(=1) for the Euler totient function from 1 to n.
+ * A060606 The n-th term is the sum of lengths of iteration chains to get fixed points (=1) for the Euler totient function from 1 to n.
  * @author Sean A. Irvine
  */
 public class A060606 extends PartialSumSequence {

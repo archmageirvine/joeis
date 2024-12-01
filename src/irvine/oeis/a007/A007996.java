@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A007996 Primes that divide at least one term of the sequence f given by f(1) = 2, f(n+1) = f(n)^2-f(n)+1 = A000058(n).
+ * A007996 Primes that divide at least one term of Sylvester's sequence s = A000058: s(n+1) = s(n)^2 - s(n) + 1, s(0) = 2.
  * @author Sean A. Irvine
  */
 public class A007996 extends Sequence1 {

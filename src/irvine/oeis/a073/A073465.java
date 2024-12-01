@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A073451.
+ * A073465 Numbers n such that phi(n)/pi(n) is an integer.
  * @author Sean A. Irvine
  */
 public class A073465 extends FilterPositionSequence {

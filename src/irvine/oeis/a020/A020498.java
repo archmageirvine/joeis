@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A020498 a(n) is the least number &gt; a(n-1) such that a(1) through a(n) do not contain all residues modulo any prime.
+ * A020498 a(n) is the least number &gt; a(n-1) such that there is no prime p for which a(1) through a(n) would contain all residues modulo p.
  * @author Sean A. Irvine
  */
 public class A020498 extends Sequence1 {

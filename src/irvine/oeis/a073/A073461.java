@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000720;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A073451.
+ * A073461 Largest solution to phi(x) - pi(x) = n or 0 if no such solution exists.
  * @author Sean A. Irvine
  */
 public class A073461 extends AbstractSequence {

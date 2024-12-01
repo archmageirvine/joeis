@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A073451.
+ * A073463 Triangle of number of partitions of 2n into powers of 2 where the largest part is 2^k.
  * @author Sean A. Irvine
  */
 public class A073463 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A088779 a(n)=A088780(n+1)/A088780(n).
+ * A088779 a(n) = A088780(n+1)/A088780(n).
  * @author Georg Fischer
  */
 public class A088779 extends AbstractSequence {

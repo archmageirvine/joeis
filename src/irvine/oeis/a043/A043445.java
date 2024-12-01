@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A043445 Numbers having one 6 in base 8.
+ * A043445 Numbers having exactly one 6 in base 8.
  * @author Georg Fischer
  */
 public class A043445 extends RunsBaseSequence {

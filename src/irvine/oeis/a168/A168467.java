@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A168467 a(n) = Product_{k=0..n} ((2k+2)(2k+3))^(n-k).
+ * A168467 a(n) = Product_{k=0..n} ((2*k+2)*(2*k+3))^(n-k).
  * @author Georg Fischer
  */
 public class A168467 extends Sequence0 {

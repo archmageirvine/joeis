@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000720;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A073451.
+ * A073462 Number of solutions to phi(x) - pi(x) = n.
  * @author Sean A. Irvine
  */
 public class A073462 extends AbstractSequence {

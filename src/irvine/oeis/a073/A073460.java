@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000720;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A073451.
+ * A073460 a(n) = smallest solution x to n + pi(x) = phi(x), or 0 if no such solution exists.
  * @author Sean A. Irvine
  */
 public class A073460 extends AbstractSequence {

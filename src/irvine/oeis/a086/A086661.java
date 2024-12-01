@@ -4,7 +4,7 @@ package irvine.oeis.a086;
 import irvine.oeis.a006.A006553;
 
 /**
- * A086661 Numbers n such that n*4^n-1 is prime.
+ * A086661 Numbers k such that k*4^k-1 is prime.
  * @author Georg Fischer
  */
 public class A086661 extends A006553 {

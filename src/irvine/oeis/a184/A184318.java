@@ -4,7 +4,7 @@ package irvine.oeis.a184;
 import irvine.oeis.a183.A183953;
 
 /**
- * A184318 T(n,k)=Number of strings of numbers x(i=1..n) in 0..k with sum i^2*x(i)^3 equal to n^2*k^3.
+ * A184318 T(n,k) = number of strings of numbers x(i=1..n) in 0..k with sum i^2*x(i)^3 equal to n^2*k^3.
  * @author Georg Fischer
  */
 public class A184318 extends A183953 {

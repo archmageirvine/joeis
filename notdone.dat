@@ -2457,3 +2457,5 @@ A073201 Array of cycle count sequences for the table A073200.
 A073202 Array of fix-count sequences for the table A073200.
 A073203 Array of max. cycle length sequences for the table A073200.
 A073204 Array of LCMs-of-cycle-lengths sequences for the table A073200.
+A073502 The smallest magic constant for n X n magic square with prime entries (regarding 1 as a prime).
+A073520 Smallest magic constant for any n X n magic square made from consecutive primes, or 0 if no such magic square exists

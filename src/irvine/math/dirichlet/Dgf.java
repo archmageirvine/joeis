@@ -107,6 +107,15 @@ public final class Dgf {
   }
 
   /**
+   * Construct the simple two term Dirichlet series <code>1+r*t^(-s)</code>.
+   * @param t parameter
+   * @return Dirichlet series
+   */
+  public static Ds simple(final long t, final Z r) {
+    return simple(Z.valueOf(t), r);
+  }
+
+  /**
    * Construct the simple two term Dirichlet series <code>1+t^(-s)</code>.
    * @param t parameter
    * @return Dirichlet series

@@ -25,24 +25,28 @@ class Inverse extends AbstractDs {
 
   @Override
   public Z coeff(final Z n) {
-    return mCache.computeIfAbsent(n, k -> {
-      final Z an = mF.coeff(k);
-      if (an.isZero()) {
-        return Z.ZERO;
-      }
-      if (Z.ONE.equals(k)) {
-        return Z.ONE.divide(mF.coeff(k));
-      }
-      Z sum = Z.ZERO;
-      for (final Z d : Jaguar.factor(k).divisors()) {
+    // Cannot use .computeIfAbsent here because we need to avoid concurrent modification problems
+    final Z res = mCache.get(n);
+    if (res != null) {
+      return res;
+    }
+    final Z an = mF.coeff(n);
+    if (an.isZero()) {
+      return Z.ZERO;
+    }
+    if (Z.ONE.equals(n)) {
+      return Z.ONE.divide(mF.coeff(n));
+    }
+    Z sum = Z.ZERO;
+    for (final Z d : Jaguar.factor(n).divisors()) {
         if (!Z.ONE.equals(d)) {
           final Z ad = mF.coeff(d);
           if (!ad.isZero()) {
-            sum = sum.subtract(ad.multiply(coeff(k.divide(d))));
+            sum = sum.subtract(ad.multiply(coeff(n.divide(d))));
           }
         }
-      }
-      return sum.divide(an);
-    });
+    }
+    mCache.put(n, sum);
+    return sum;
   }
 }

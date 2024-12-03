@@ -7,7 +7,7 @@ import irvine.oeis.DirichletInverseSequence;
 import irvine.oeis.a336.A336840;
 
 /**
- * A378520 Dirichlet inverse of A336840, where A336840 is the inverse M√∂bius transform of A048673.
+ * A378520 Dirichlet inverse of A336840, where A336840 is the inverse M\u00f6bius transform of A048673.
  * @author Georg Fischer
  */
 public class A378520 extends AbstractSequence {

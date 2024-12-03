@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073500.
+ * A073533 Let x(1)=1, x(n+1) = (4/3)*x(n) - floor((4/3)*x(n)); then a(n)=x(n)*3^n.
  * @author Sean A. Irvine
  */
 public class A073533 extends Sequence1 {

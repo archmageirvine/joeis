@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073500.
+ * A073503 Numbers n such that the number of solutions to x^4 == 1 (mod n) is twice the number of solutions of x^2 == 1 (mod n).
  * @author Sean A. Irvine
  */
 public class A073503 extends Sequence1 {

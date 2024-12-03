@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073500.
+ * A073504 A possible basis for finite fractal sequences: let u(1) = 1, u(2) = n, u(k) = floor(u(k-1)/2) + floor(u(k-2)/2); then a(n) = lim_{k-&gt;infinity} u(k).
  * @author Sean A. Irvine
  */
 public class A073504 extends Sequence1 {

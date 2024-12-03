@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A181142 Number of permutations of {1, 2,..., 2n} , say x(1),x(2), ... , x(2n) , such that x(i) + x(i+1) is not equal to 2n-1 for all i, 1&lt;=i&lt;=2n-1.
+ * A181142 Number of permutations of {1,2,...,2n} , say x(1),x(2), ... , x(2n) , such that x(i) + x(i+1) is not equal to 2n-1 for all i, 1&lt;=i&lt;=2n-1.
  * @author Georg Fischer
  */
 public class A181142 extends LambdaSequence {

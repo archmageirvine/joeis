@@ -6,7 +6,7 @@ import irvine.oeis.DirichletInverseSequence;
 import irvine.oeis.a048.A048673;
 
 /**
- * A323893 Dirichlet inverse of A048673.
+ * A323893 Dirichlet inverse of A048673, where A048673(n) = (A003961(n)+1) / 2, and A003961 is fully multiplicative with a(prime(i)) = prime(i+1).
  * @author Georg Fischer
  */
 public class A323893 extends DirichletInverseSequence {

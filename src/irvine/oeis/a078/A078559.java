@@ -5,7 +5,7 @@ import irvine.oeis.a054.A054640;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A078559 Numerator of Product_{i=1..n} (p_i+1)/(p_i-1) where p_i is the i-th prime.
+ * A078559 Numerator of Product_{i=1..n} (p_i + 1)/(p_i - 1) where p_i is the i-th prime.
  * @author Georg Fischer
  */
 public class A078559 extends MultiTransformSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A089354 Number of generalized {(1, 2),(1,-1)}-Dyck paths of length 3n with no peaks at level 2.
+ * A089354 Number of generalized {(1,2),(1,-1)}-Dyck paths of length 3n with no peaks at level 2.
  * @author Georg Fischer
  */
 public class A089354 extends LambdaSequence {

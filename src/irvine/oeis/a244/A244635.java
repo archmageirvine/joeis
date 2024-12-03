@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A244635 29*n^2.
+ * A244635 a(n) = 29*n^2.
  * @author Sean A. Irvine
  */
 public class A244635 extends LinearRecurrence {

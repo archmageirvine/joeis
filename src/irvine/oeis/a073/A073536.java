@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a058.A058842;
 
 /**
- * A073500.
+ * A073536 Breaking indices for A058842 (i.e., n such that A058842(n) is not equal to 3*A058842 (n-1) ).
  * @author Sean A. Irvine
  */
 public class A073536 extends A058842 {

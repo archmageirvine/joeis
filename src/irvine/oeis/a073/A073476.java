@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073476 n^4 + 1, (n+2)^4 + 1 and (n+4)^4 + 1 are all primes.
+ * A073476 Numbers k such that k^4 + 1, (k+2)^4 + 1 and (k+4)^4 + 1 are all primes.
  * @author Sean A. Irvine
  */
 public class A073476 extends Sequence1 {

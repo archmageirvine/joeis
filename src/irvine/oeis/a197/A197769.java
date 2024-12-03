@@ -3,7 +3,7 @@ package irvine.oeis.a197;
 // DO NOT EDIT here!
 
 /**
- * A197769 Ceiling((9*n+1/n)^n).
+ * A197769 a(n) = ceiling((9*n+1/n)^n).
  * @author Georg Fischer
  */
 public class A197769 extends A197716 {

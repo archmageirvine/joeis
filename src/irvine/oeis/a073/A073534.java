@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002034;
 
 /**
- * A073500.
+ * A073534 Numbers n such that S(n+2) = S(n)+2, where S(n) is the Kempner function A002034.
  * @author Sean A. Irvine
  */
 public class A073534 extends A002034 {

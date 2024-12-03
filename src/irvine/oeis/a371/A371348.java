@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A371348 Decimal expansion of sqrt(c&apos;*(exp(1/c&apos;) - 1)) where c&apos;=7/4.
+ * A371348 Decimal expansion of sqrt(c'*(exp(1/c') - 1)) where c'=7/4.
  * Formula: sqrt(7*(exp(4/7)-1)/4)
  * @author Georg Fischer
  */

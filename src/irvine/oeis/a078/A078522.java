@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A078522 Numbers n such that (n+1)*(2*n+1) is a perfect square.
+ * A078522 Numbers k such that (k+1)*(2*k+1) is a perfect square.
  * @author Sean A. Irvine
  */
 public class A078522 extends LinearRecurrence {

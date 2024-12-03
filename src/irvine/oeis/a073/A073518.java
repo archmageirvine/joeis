@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A073500.
+ * A073518 Cotangent of Pi/prime(n), rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A073518 extends A000040 {

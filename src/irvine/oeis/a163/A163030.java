@@ -4,7 +4,7 @@ package irvine.oeis.a163;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A163030 Number of nX4 binary arrays with all 1s connected and a path of 1s from top row to bottom row
+ * A163030 Number of nX4 binary arrays with all 1s connected and a path of 1s from top row to bottom row.
  * @author Georg Fischer
  */
 public class A163030 extends HolonomicRecurrence {

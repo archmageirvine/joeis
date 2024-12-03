@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ComplementSequence;
 
 /**
- * A073500.
+ * A073527 Numbers n such that denominator of Sum_{k=1..n} 1/k^2 is not a square.
  * @author Sean A. Irvine
  */
 public class A073527 extends ComplementSequence {

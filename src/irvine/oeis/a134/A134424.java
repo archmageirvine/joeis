@@ -4,7 +4,7 @@ package irvine.oeis.a134;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A134424 Area under all paths in the first quadrant from (0, 0) to (n, 0) using steps U=(1, 1), D=(1,-1), h=(1, 0) and H=(2, 0).
+ * A134424 Area under all paths in the first quadrant from (0,0) to (n,0) using steps U=(1,1), D=(1,-1), h=(1,0) and H=(2,0).
  * @author Georg Fischer
  */
 public class A134424 extends HolonomicRecurrence {

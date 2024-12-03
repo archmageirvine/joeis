@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.RecordPositionSequence;
 
 /**
- * A073500.
+ * A073528 n at which A073524(n) sets a new record.
  * @author Sean A. Irvine
  */
 public class A073528 extends RecordPositionSequence {

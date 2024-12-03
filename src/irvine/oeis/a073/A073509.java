@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073500.
+ * A073509 Number of primes less than 10^n with initial digit 9.
  * @author Sean A. Irvine
  */
 public class A073509 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.a006.A006752;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A330890 Decimal expansion of Product_{k&gt;=1} (1 + 1/A002144(k)^2)/(1 - 1/A002144(k)^2).
+ * A330890 Decimal expansion of Product_{prime p == 1 (mod 4)} (1 + 1/p^2)/(1 - 1/p^2).
  * Formula:
  * @author Georg Fischer
  */

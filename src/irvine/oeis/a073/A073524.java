@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073500.
+ * A073524 Number of steps to reach an integer starting with (n+1)/n and using the map x -&gt; x*ceiling(x); or -1 if no integer is ever reached.
  * @author Sean A. Irvine
  */
 public class A073524 extends Sequence1 {

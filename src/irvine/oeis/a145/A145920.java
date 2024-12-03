@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a001.A001318;
 
 /**
- * A145920 List of numbers that are both pentagonal (A000326) and binomial coefficients C(n, 4) (A000332).
+ * A145920 List of numbers that are both pentagonal (A000326) and binomial coefficients C(n,4) (A000332).
  * @author Georg Fischer
  */
 public class A145920 extends LambdaSequence {

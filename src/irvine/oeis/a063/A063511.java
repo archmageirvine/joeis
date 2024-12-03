@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063511 a(n) = a(floor(square root(n))) * 2.
+ * A063511 a(n) = a(floor(sqrt(n))) * 2.
  * @author Sean A. Irvine
  */
 public class A063511 extends Sequence1 {

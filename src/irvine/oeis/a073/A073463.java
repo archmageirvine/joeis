@@ -21,7 +21,7 @@ public class A073463 extends Sequence0 {
       if (n == 0) {
         return Z.ZERO;
       }
-      return get(n - 1, m ).add(get(n / 2, m - 1));
+      return get(n - 1, m).add(get(n / 2, m - 1));
     }
   };
 

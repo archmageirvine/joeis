@@ -11,11 +11,11 @@ import irvine.oeis.AbstractSequence;
  */
 public class A103693 extends AbstractSequence {
 
-  private int mAdd;
+  private final int mAdd;
   private int mIx; // current index where to add
   private int mState; // 0 for 10^0 digit, 1 for 10^1 digit, 2 if >= 20
   private int mNext; // next value
-  private ArrayList<Integer> mA = new ArrayList<>();
+  private final ArrayList<Integer> mA = new ArrayList<>();
   // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 2, 1, 3, 2, 4
 
   /** Construct the sequence. */
@@ -40,7 +40,7 @@ public class A103693 extends AbstractSequence {
 
   @Override
   public Z next() {
-    int result = mNext;
+    final int result = mNext;
     if (--mState < 0) {
       mState = 1;
       ++mIx;

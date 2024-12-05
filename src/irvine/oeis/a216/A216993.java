@@ -1,4 +1,4 @@
-package irvine.oeis.a378;
+package irvine.oeis.a216;
 
 import java.util.Arrays;
 
@@ -8,30 +8,18 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A378723.
+ * A073546 Triangle read by rows: row n gives denominators of n distinct unit fractions (or Egyptian fractions) summing to 1, where denominators are listed in increasing order and the largest denominator is smallest possible.
  * @author Sean A. Irvine
  */
-public class A378723 extends Sequence1 {
+public class A216993 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
-  private int mM = 2;
-  private long[] mV = new long[2];
-
-  private boolean isBetter(final long[] soFar) {
-    for (int k = soFar.length - 1; k >= 0; --k) {
-      if (soFar[k] < mV[k]) {
-        return true;
-      }
-      if (soFar[k] > mV[k]) {
-        return false;
-      }
-    }
-    return false;
-  }
+  private int mM = 0;
+  private long[] mV = new long[0];
 
   private void search(final long[] soFar, final int pos, final Q remaining) {
     long k = pos == 0 ? 1 : soFar[pos - 1];
-    if (k > mV[mV.length - 1]) {
+    if (k >= mV[mV.length - 1]) {
       return;
     }
     if (pos == soFar.length - 1) {
@@ -39,13 +27,11 @@ public class A378723 extends Sequence1 {
         final Z t = remaining.den();
         if (t.bitLength() < Long.SIZE) {
           final long u = t.longValue();
-          if (u <= mV[mV.length - 1] && u > k) {
+          if (u < mV[mV.length - 1] && u > k) {
             soFar[pos] = u;
-            if (isBetter(soFar)) {
-              mV = Arrays.copyOf(soFar, soFar.length);
-              if (mVerbose) {
-                StringUtils.message(mV.length + " New best: " + Arrays.toString(mV));
-              }
+            mV = Arrays.copyOf(soFar, soFar.length);
+            if (mVerbose) {
+              StringUtils.message(mV.length + " New best: " + Arrays.toString(mV));
             }
           }
         }
@@ -66,12 +52,12 @@ public class A378723 extends Sequence1 {
     if (++mM >= mV.length) {
       mV = new long[mV.length + 1];
       mM = 0;
-      // Upper bound on the solution. If we fail to find a solution better than this
-      // then we will throw an exception. If that ever happens then this limit
-      // could be made larger.
       if (mV.length == 1) {
         mV[0] = 1;
       } else if (mV.length > 2) {
+        // Upper bound on the solution. If we fail to find a solution better than this
+        // then we will throw an exception. If that ever happens then this limit
+        // could be made larger.
         final long lim = 3L * mV.length + 1;
         mV[mV.length - 1] = lim;
         search(new long[mV.length], 0, Q.ONE);

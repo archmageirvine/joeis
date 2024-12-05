@@ -14,8 +14,8 @@ import irvine.util.string.StringUtils;
 public class A378723 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
-  private int mM = 2;
-  private long[] mV = new long[2];
+  private int mM = 0;
+  private long[] mV = new long[0];
 
   private boolean isBetter(final long[] soFar) {
     for (int k = soFar.length - 1; k >= 0; --k) {

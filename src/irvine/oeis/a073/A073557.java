@@ -12,11 +12,11 @@ public class A073557 extends Sequence1 {
 
   // After Jinyuan Wang
 
-  private static final CR SQRT_PHI = CR.PHI.log();
+  private static final CR LOG_PHI = CR.PHI.log();
   private static final CR SQRT5 = CR.FIVE.sqrt();
-  private static final CR D = CR.LOG10.divide(SQRT_PHI);
-  private static final CR R = SQRT5.log().divide(SQRT_PHI);
-  private static final CR S = CR.FIVE.subtract(SQRT5).log().divide(SQRT_PHI);
+  private static final CR D = CR.LOG10.divide(LOG_PHI);
+  private static final CR R = SQRT5.log().divide(LOG_PHI);
+  private static final CR S = CR.FIVE.subtract(SQRT5).log().divide(LOG_PHI);
   private Z mU = Z.ONE;
   private long mT = 0;
   private long mK = 0;

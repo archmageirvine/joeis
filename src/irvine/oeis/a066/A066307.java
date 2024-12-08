@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066307 Nonprimes such that sum of digits equals product of digits.
+ * A066307 Nonprimes whose sum of digits is equal to its product of digits.
  * @author Georg Fischer
  */
 public class A066307 extends Sequence1 {

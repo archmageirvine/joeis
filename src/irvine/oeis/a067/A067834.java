@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067834 Norm in ring Z[sqrt(3)] of (((-1+sqrt(3))^n)-1) is prime.
+ * A067834 Numbers k such that in the ring Z[sqrt(3)] the norm of (-1+sqrt(3))^k-1 is prime.
  * @author Sean A. Irvine
  */
 public class A067834 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065206 One 'Reverse and Add' step is needed to reach a palindrome.
+ * A065206 Numbers which need one 'Reverse and Add' step to reach a palindrome.
  * @author Sean A. Irvine
  */
 public class A065206 extends Sequence1 {

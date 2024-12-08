@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.oeis.a065.A065206;
 
 /**
- * A066132 In base 2, eleven 'Reverse and Add' steps are needed to reach a palindrome.
+ * A066132 Numbers that in base 2 need eleven 'Reverse and Add' steps to reach a palindrome.
  * @author Sean A. Irvine
  */
 public class A066132 extends A065206 {

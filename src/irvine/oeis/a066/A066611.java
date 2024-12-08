@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A066611 a(1) = 1; a(n) = remainder when n^n is divided by (n-1)^(n-1) for n &gt; 1.
+ * A066611 a(1) = 1; a(n) = n^n mod (n-1)^(n-1) for n &gt; 1.
  * a(n)=mod(n^n, (n-1)^(n-1))
  * @author Georg Fischer
  */

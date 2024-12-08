@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A065073 n-th prime + sum of digits of n-th prime.
+ * A065073 a(n) = prime(n) + (sum of digits of prime(n)).
  * @author Georg Fischer
  */
 public class A065073 extends A000040 {

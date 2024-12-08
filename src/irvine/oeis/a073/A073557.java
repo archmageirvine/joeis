@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073545.
+ * A073557 Number of Fibonacci numbers F(k), k &lt;= 10^n, whose initial digit is 1.
  * @author Sean A. Irvine
  */
 public class A073557 extends Sequence1 {

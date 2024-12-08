@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A116609 a(n) = 13^n modulo n.
+ * A116609 a(n) = 13^n mod n.
  * @author Georg Fischer
  */
 public class A116609 extends LambdaSequence {

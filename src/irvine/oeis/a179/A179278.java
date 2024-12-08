@@ -5,7 +5,7 @@ import irvine.oeis.a014.A014684;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A179278 Largest nonprime integer not less than n.
+ * A179278 Largest nonprime integer &lt;= n.
  * @author Georg Fischer
  */
 public class A179278 extends SingleTransformSequence {

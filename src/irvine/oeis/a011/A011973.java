@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A011973 Irregular triangle of numbers read by rows: {binomial(n-k, k), n &gt;= 0, 0 &lt;= k &lt;= floor(n/2)}; or, triangle of coefficients of (one version of) Fibonacci polynomials.
+ * A011973 Irregular triangle read by rows: T(n,k) = binomial(n-k, k), n &gt;= 0, 0 &lt;= k &lt;= floor(n/2); or, coefficients of (one version of) Fibonacci polynomials.
  * @author Sean A. Irvine
  */
 public class A011973 extends Sequence0 {

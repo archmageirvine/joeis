@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000961;
 
 /**
- * A065514 Largest prime power &lt; prime(n).
+ * A065514 Largest power of a prime &lt; prime(n).
  * @author Sean A. Irvine
  */
 public class A065514 extends A000040 {

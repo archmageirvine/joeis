@@ -4,7 +4,7 @@ package irvine.oeis.a122;
 import irvine.oeis.FilterSequence;
 
 /**
- * A122126 Primes of form Sum[ Prime[k]^5, {k, 1,n} ] or primes in A122103[n].
+ * A122126 Primes of form Sum[ Prime[k]^5, {k,1,n} ] or primes in A122103[n].
  * @author Georg Fischer
  */
 public class A122126 extends FilterSequence {

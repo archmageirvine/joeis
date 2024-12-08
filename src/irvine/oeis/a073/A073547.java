@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a066.A066272;
 
 /**
- * A073545.
+ * A073547 Numbers k such that antid(k) = antid(k+1), where antid(k) = A066272(k).
  * @author Sean A. Irvine
  */
 public class A073547 extends Sequence1 {

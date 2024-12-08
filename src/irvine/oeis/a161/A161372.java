@@ -4,7 +4,7 @@ package irvine.oeis.a161;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A161372 4n^2-10n+107.
+ * A161372 In Ulam's spiral starting at 101, take the elements not used so far from the two spokes SW, NE, SW, NE, SW, NE ...
  * @author Georg Fischer
  */
 public class A161372 extends HolonomicRecurrence {

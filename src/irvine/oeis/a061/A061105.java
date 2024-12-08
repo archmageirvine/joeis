@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a021.A021559;
 
 /**
- * A061105 Smallest number whose digital sum is n^3.
+ * A061105 Smallest number whose sum of digits is n^3.
  * @author Georg Fischer
  */
 public class A061105 extends Sequence0 {

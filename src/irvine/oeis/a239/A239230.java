@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A239230 Expansion of -x*log&apos;(-sqrt(12*x+2*sqrt(1-4*x)+2)/4+sqrt(1-4*x)/4+5/4).
+ * A239230 Expansion of -x*log'(-sqrt(12*x+2*sqrt(1-4*x)+2)/4+sqrt(1-4*x)/4+5/4).
  * @author Georg Fischer
  */
 public class A239230 extends LambdaSequence {

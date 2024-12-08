@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A067802 Triangle with T(n,k)=C(2n+1,n-k)^2*(2k+1)/(2n+1).
+ * A067802 Triangle read by rows: T(n, k) = binomial(2*n+1, n-k)^2*(2*k+1)/(2*n+1).
  * @author Sean A. Irvine
  */
 public class A067802 extends Sequence0 {

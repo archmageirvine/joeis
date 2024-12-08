@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A059521 a(1) = 5; thereafter write the cubes of each element in order.
+ * A059521 5, followed by the digits of the cubes of each term.
  * @author Sean A. Irvine
  */
 public class A059521 extends Sequence1 {

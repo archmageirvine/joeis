@@ -6,7 +6,7 @@ import irvine.oeis.a047.A047999;
 import irvine.oeis.triangle.VectorProduct;
 
 /**
- * A166555 Triangle read by rows, Sierpinski's gasket, A047999 * (1,2,4,8,...) diagonalized.
+ * A166555 Triangle read by rows, T(n, k) = 2^k * A047999(n, k).
  * @author Georg Fischer
  */
 public class A166555 extends VectorProduct {

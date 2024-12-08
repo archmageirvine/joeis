@@ -6,7 +6,7 @@ import irvine.oeis.a009.A009195;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A082061 Greatest common prime-divisor of n and phi(n)=A000010(n); a(n)=1 if no common prime-divisor exists.
+ * A082061 Greatest common prime divisor of n and phi(n)=A000010(n); a(n)=1 if no common prime divisor exists.
  * @author Georg Fischer
  */
 public class A082061 extends SingleTransformSequence {

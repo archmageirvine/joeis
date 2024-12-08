@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A066310 n &lt; (product of digits of n) * (sum of digits of n).
+ * A066310 Numbers k such that k &lt; (product of digits of k) * (sum of digits of k).
  * @author Sean A. Irvine
  */
 public class A066310 extends FilterPositionSequence {

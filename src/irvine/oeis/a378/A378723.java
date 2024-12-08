@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A378723.
+ * A378723 Triangle read by rows: row n gives denominators of n distinct unit fractions (or Egyptian fractions) summing to 1, where denominators are listed in increasing order and the denominators from largest to smallest are as small as possible.
  * @author Sean A. Irvine
  */
 public class A378723 extends Sequence1 {

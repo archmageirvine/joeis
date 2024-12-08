@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062998 Numbers with property that sum of digits is less than or equal to product of digits.
+ * A062998 Numbers whose sum of digits is less than or equal to its product of digits.
  * @author Sean A. Irvine
  */
 public class A062998 extends Sequence1 {

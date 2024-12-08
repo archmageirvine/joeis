@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066733 Numbers such that the nonzero product of the digits of its square is also a square.
+ * A066733 Numbers such that the product of the digits of its square is a square &gt; 0.
  * @author Sean A. Irvine
  */
 public class A066733 extends Sequence1 {

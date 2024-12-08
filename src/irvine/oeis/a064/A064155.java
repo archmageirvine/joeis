@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A064155 Let p = x1x2x3...xk be a prime in base 10 with k digits. The sequence gives the primes p such that x1*x2*x3*...xk = k*(x1 + x2 + x3 + ... + xk).
+ * A064155 Primes whose product of digits equals the number of digits times the sum of digits.
  * @author Sean A. Irvine
  */
 public class A064155 extends A000040 {

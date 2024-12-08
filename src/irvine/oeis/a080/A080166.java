@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a004.A004760;
 
 /**
- * A080166 Primes having initial digits &quot;11&quot; in binary representation.
+ * A080166 Primes having initial digits "11" in binary representation.
  * @author Georg Fischer
  */
 public class A080166 extends FilterSequence {

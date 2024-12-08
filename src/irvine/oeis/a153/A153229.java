@@ -5,7 +5,7 @@ package irvine.oeis.a153;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A153229 a(0) = 0, a(1) = 1, and for n&gt;=2, a(n) = (n-1) * a(n-2) + (n-2) * a(n-1).
+ * A153229 a(0) = 0, a(1) = 1, and for n &gt;= 2, a(n) = (n-1) * a(n-2) + (n-2) * a(n-1).
  * Recurrence: a(0) = 0,a(1) = 1,and for n&gt;=2,a(n) = (n-1) * a(n-2) + (n-2) * a(n-1).
  * @author Georg Fischer
  */

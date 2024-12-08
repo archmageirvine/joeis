@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A066236 Numbers n such that the sum of digits of n^n is a square.
+ * A066236 Numbers k such that the sum of digits of k^k is a square.
  * @author Sean A. Irvine
  */
 public class A066236 extends FilterPositionSequence {

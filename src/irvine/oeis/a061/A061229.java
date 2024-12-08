@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061229 Floor of geometric mean of n and the reversal of n.
+ * A061229 a(n) = floor of the geometric mean of n and the reversal of n.
  * @author Sean A. Irvine
  */
 public class A061229 extends Sequence1 {

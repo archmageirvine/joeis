@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062997 Sum of digits is strictly greater than product of digits.
+ * A062997 Numbers whose sum of digits is strictly greater than its product of digits.
  * @author Sean A. Irvine
  */
 public class A062997 extends Sequence1 {

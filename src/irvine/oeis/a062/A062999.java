@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062999 Numbers k with property that the sum of the digits of k is strictly less than the product of the digits of k.
+ * A062999 Numbers whose sum of the digits is strictly less than its product of digits.
  * @author Sean A. Irvine
  */
 public class A062999 extends Sequence1 {

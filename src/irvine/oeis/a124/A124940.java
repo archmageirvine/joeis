@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A124940 Numbers n such that n and n+3 are 3-almost primes.
+ * A124940 Numbers k such that k and k+3 are 3-almost primes.
  * @author Georg Fischer
  */
 public class A124940 extends Sequence1 {

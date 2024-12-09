@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a007.A007376;
 
 /**
- * A316988 The odd members of the &quot;Almost natural numbers&quot; (A007376).
+ * A316988 The odd members of the "Almost natural numbers" (A007376).
  * @author Georg Fischer
  */
 public class A316988 extends FilterSequence {

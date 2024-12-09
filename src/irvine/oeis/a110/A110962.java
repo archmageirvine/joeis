@@ -6,7 +6,7 @@ import irvine.oeis.a025.A025480;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A110962 Fractalization of A025480, zero-based version of Kimberling&apos;s paraphrases sequence.
+ * A110962 Fractalization of A025480, zero-based version of Kimberling's paraphrases sequence.
  * @author Georg Fischer
  */
 public class A110962 extends MultiTransformSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A216346 Primes of the form n*10^n - 1
+ * A216346 Primes of the form n*10^n - 1.
  * @author Georg Fischer
  */
 public class A216346 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073565.
+ * A073575 Sum of factorial numbers dividing n.
  * @author Sean A. Irvine
  */
 public class A073575 extends Sequence1 {

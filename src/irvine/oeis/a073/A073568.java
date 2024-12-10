@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a066.A066272;
 
 /**
- * A073565.
+ * A073568 Number of anti-divisors of n divides the number of divisors of n.
  * @author Sean A. Irvine
  */
 public class A073568 extends Sequence1 {

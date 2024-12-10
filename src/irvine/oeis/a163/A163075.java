@@ -8,7 +8,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a056.A056040;
 
 /**
- * A163075 Primes of the form k$ + 1. Here &apos;$&apos; denotes the swinging factorial function (A056040).
+ * A163075 Primes of the form k$ + 1. Here '$' denotes the swinging factorial function (A056040).
  * @author Georg Fischer
  */
 public class A163075 extends PrependSequence {

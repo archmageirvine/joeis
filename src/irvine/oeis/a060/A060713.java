@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A060713 Smallest number whose digit sum is 5^n.
+ * A060713 Smallest number whose sum of digits is 5^n.
  * @author Sean A. Irvine
  */
 public class A060713 extends Sequence0 {

@@ -55,4 +55,6 @@ public final class Predicates {
   public static final Predicate2 POLYGONAL = new Polygonal();
   /** Test if a number is a strong pseudoprime. */
   public static final Predicate2 STRONG_PSEUDOPRIME = new StrongPseudoprime();
+  /** Test if a number is a repeated digit in a base. */
+  public static final Predicate2 REPDIGIT = new Repdigit();
 }

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a066.A066272;
 
 /**
- * A073565.
+ * A073566 Numbers n such that n, n+1 and n+2 have the same number of anti-divisors.
  * @author Sean A. Irvine
  */
 public class A073566 extends Sequence1 {

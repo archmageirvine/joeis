@@ -1,7 +1,7 @@
 package irvine.oeis.a065;
 
 /**
- * A065215 Numbers such that ten 'Reverse and Add' steps are needed to reach a palindrome.
+ * A065215 Numbers which need ten 'Reverse and Add' steps to reach a palindrome.
  * @author Sean A. Irvine
  */
 public class A065215 extends A065206 {

@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002034;
 import irvine.oeis.a066.A066272;
 
 /**
- * A073565.
+ * A073569 Numbers k such that A002034(k) = A066272(k).
  * @author Sean A. Irvine
  */
 public class A073569 extends Sequence1 {

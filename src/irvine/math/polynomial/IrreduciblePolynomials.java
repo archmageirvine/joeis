@@ -49,7 +49,7 @@ public final class IrreduciblePolynomials {
    * @param n degree
    * @return number of irreducible polynomials
    */
-  public static Z cumCount(final int n) {
+  public static Z cumulativeCount(final int n) {
     Z s = Z.NEG_ONE;
     for (int k = 1; k <= n; ++k) {
       s = s.add(count(k));

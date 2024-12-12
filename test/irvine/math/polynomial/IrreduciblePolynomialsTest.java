@@ -1,9 +1,8 @@
 package irvine.math.polynomial;
 
-import irvine.math.z.Z;
-
 import java.util.Iterator;
 
+import irvine.math.z.Z;
 import junit.framework.TestCase;
 
 /**
@@ -20,8 +19,8 @@ public class IrreduciblePolynomialsTest extends TestCase {
     assertEquals(Z.TWO, IrreduciblePolynomials.count(3));
     assertEquals(Z.NINE, IrreduciblePolynomials.count(6));
     assertEquals(Z.valueOf(364722), IrreduciblePolynomials.count(23));
-    assertEquals(Z.TWO, IrreduciblePolynomials.cumCount(2));
-    assertEquals(Z.valueOf(225), IrreduciblePolynomials.cumCount(10));
+    assertEquals(Z.TWO, IrreduciblePolynomials.cumulativeCount(2));
+    assertEquals(Z.valueOf(225), IrreduciblePolynomials.cumulativeCount(10));
   }
 
   public void testIterator() {

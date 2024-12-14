@@ -1,4 +1,4 @@
-package irvine.oeis.a065;
+package irvine.oeis.a248;
 
 import irvine.oeis.a073.A073668;
 
@@ -6,10 +6,10 @@ import irvine.oeis.a073.A073668;
  * A065442.
  * @author Sean A. Irvine
  */
-public class A065442 extends A073668 {
+public class A248726 extends A073668 {
 
   /** Construct the sequence. */
-  public A065442() {
-    super(2);
+  public A248726() {
+    super(9);
   }
 }

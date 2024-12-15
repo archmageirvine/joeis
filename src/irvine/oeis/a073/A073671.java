@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073580.
+ * A073671 Rearrangement of odd numbers such that sum of any three consecutive terms is prime.
  * @author Sean A. Irvine
  */
 public class A073671 extends Sequence1 {

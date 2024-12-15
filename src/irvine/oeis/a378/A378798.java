@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A378798 Decimal expansion of 16/(207*sqrt(53)).
+ * A378798 allocated for Stefano Spezia.
  * Formula: nonn,cons,easy, new
  * @author Georg Fischer
  */

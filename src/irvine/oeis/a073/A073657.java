@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A073580 Rearrangement of Fibonacci numbers such that the sum of two consecutive terms + 1 is a prime.
+ * A073657 A073656 is the rearrangement of Fibonacci numbers such that sum of two consecutive terms is a prime. This is the sequence of those Fibonacci numbers which retain their relative position in the above rearrangement.
  * @author Sean A. Irvine
  */
 public class A073657 extends A073656 {

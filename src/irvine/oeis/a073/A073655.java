@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073580.
+ * A073655 Rearrangement of triangular numbers such that sum of two consecutive terms is a prime.
  * @author Sean A. Irvine
  */
 public class A073655 extends Sequence1 {

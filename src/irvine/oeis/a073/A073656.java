@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073580 Rearrangement of Fibonacci numbers such that the sum of two consecutive terms + 1 is a prime.
+ * A073656 Rearrangement of Fibonacci numbers such that sum of two consecutive terms is a prime.
  * @author Sean A. Irvine
  */
 public class A073656 extends Sequence1 {

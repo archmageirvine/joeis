@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.math.z.Z;
 
 /**
- * A073580.
+ * A073667 Numbers which retain their position in A073666 (position not disturbed by the rearrangement).
  * @author Sean A. Irvine
  */
 public class A073667 extends A073666 {

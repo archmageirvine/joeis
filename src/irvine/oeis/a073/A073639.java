@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002475;
 import irvine.oeis.a046.A046932;
 
 /**
- * A073565.
+ * A073639 Numbers k such that x^k + x + 1 is a primitive polynomial modulo 2.
  * @author Sean A. Irvine
  */
 public class A073639 extends A002475 {

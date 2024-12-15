@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066565 Numbers that when multiplied by the product of their nonzero digits produce a square.
+ * A066565 Numbers that when successively multiplied by their nonzero digits produce a square.
  * @author Sean A. Irvine
  */
 public class A066565 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a002.A002379;
 
 /**
- * A073565.
+ * A073632 Numbers k such that floor((3/2)^k) = A002379(k) is odd.
  * @author Sean A. Irvine
  */
 public class A073632 extends FilterPositionSequence {

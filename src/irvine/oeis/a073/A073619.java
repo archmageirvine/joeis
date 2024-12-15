@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073565.
+ * A073619 a(1) = 0; a(n) = smallest composite number which is a sum of n distinct primes.
  * @author Sean A. Irvine
  */
 public class A073619 extends Sequence1 {

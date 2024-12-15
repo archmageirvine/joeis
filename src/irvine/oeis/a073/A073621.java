@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073565.
+ * A073621 Smallest composite number which is a sum of n distinct composite numbers.
  * @author Sean A. Irvine
  */
 public class A073621 extends Sequence1 {

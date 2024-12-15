@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073580.
+ * A073666 Rearrangement of natural numbers such that a(k)*a(k+1) + 1 is a prime for all k.
  * @author Sean A. Irvine
  */
 public class A073666 extends Sequence1 {

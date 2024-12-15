@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a025.A025475;
 
 /**
- * A073565.
+ * A073652 Primes which occur as the difference of consecutive prime powers &gt;1 as and when they occur.
  * @author Sean A. Irvine
  */
 public class A073652 extends Sequence1 {

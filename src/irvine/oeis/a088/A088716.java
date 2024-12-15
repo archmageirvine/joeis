@@ -5,7 +5,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A088716 G.f. satisfies: A(x) = 1 + x*A(x)*d/dx[x*A(x)] = 1 + x*A(x)^2 + x^2*A(x)*A&apos;(x).
+ * A088716 G.f. satisfies: A(x) = 1 + x*A(x)*d/dx[x*A(x)] = 1 + x*A(x)^2 + x^2*A(x)*A'(x).
  * @author Georg Fischer
  */
 public class A088716 extends MultiTransformSequence {

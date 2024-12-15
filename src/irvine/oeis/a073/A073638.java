@@ -4,7 +4,7 @@ import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.a066.A066272;
 
 /**
- * A073565.
+ * A073638 Number of anti-divisors of n (A066272) sets a record.
  * @author Sean A. Irvine
  */
 public class A073638 extends RecordPositionSequence {

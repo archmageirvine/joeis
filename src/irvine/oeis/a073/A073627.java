@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073565.
+ * A073627 a(1)=a(2)=1; for n &gt; 2, a(n) is the smallest integer such that a(n) &gt; a(n-1) and a(n)+a(n-1) is prime.
  * @author Sean A. Irvine
  */
 public class A073627 extends Sequence1 {

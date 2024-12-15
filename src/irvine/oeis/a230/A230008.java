@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A230008 E.g.f. A(x) satisfies: A&apos;(x) = -1 + A(x) + A(x)^2.
+ * A230008 E.g.f. A(x) satisfies: A'(x) = -1 + A(x) + A(x)^2.
  * @author Georg Fischer
  */
 public class A230008 extends MultiTransformSequence {

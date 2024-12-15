@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073565.
+ * A073602 a(n) is the smallest prime different from a(k) for k &lt; n such that sum(a(j), j=1..n) is a multiple of the n-th prime.
  * @author Sean A. Irvine
  */
 public class A073602 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A378791 Decimal expansion of 2/(5*sqrt(11)).
+ * A378791 allocated for Stefano Spezia.
  * Formula: nonn,cons,easy, new
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A073565.
+ * A073615 Let p(k) denote the k-th prime; a(n) = smallest p(m) &gt; p(n) such that the n-1 differences between [p(n), p(n+1), ..., p(2n-1)] are the same as the n-1 differences between [p(m), p(m+1), ..., p(m+n-1)].
  * @author Sean A. Irvine
  */
 public class A073615 extends Sequence2 {

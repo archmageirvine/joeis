@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A073565.
+ * A073630 Numbers k such that k*(prime(k) - 1) is a square.
  * @author Sean A. Irvine
  */
 public class A073630 extends FilterPositionSequence {

@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073565.
+ * A073646 Least number formed by concatenating the prime factors of n in base 10.
  * @author Sean A. Irvine
  */
 public class A073646 extends Sequence1 {

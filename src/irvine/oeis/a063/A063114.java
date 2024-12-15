@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a051.A051801;
 
 /**
- * A063114 a(n) = n + product of the nonzero digits of n.
+ * A063114 n + product of nonzero digits of n.
  * @author Georg Fischer
  */
 public class A063114 extends AbstractSequence {

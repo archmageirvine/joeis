@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A065442.
+ * A073668 Decimal expansion of Sum_{k&gt;=1} 1/(10^k - 1).
  * @author Sean A. Irvine
  */
 public class A073668 extends DecimalExpansionSequence {

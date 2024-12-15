@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A215648 G.f. satisfies: A(x) = 1 + x*A(x)^2 + 3*x^2*A&apos;(x)*A(x).
+ * A215648 G.f. satisfies: A(x) = 1 + x*A(x)^2 + 3*x^2*A'(x)*A(x).
  * @author Georg Fischer
  */
 public class A215648 extends MultiTransformSequence {

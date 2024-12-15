@@ -5,7 +5,7 @@ import irvine.math.LongUtils;
 import irvine.math.z.Z;
 
 /**
- * A005474 Class numbers of the real quadratic fields Q(sqrt(A005473(n))).
+ * A005474 Class numbers of quadratic fields.
  * @author Sean A. Irvine
  */
 public class A005474 extends A005473 {

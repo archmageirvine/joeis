@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A073565.
+ * A073645 a(1)=2 and, for all n&gt;=1, a(n) is the length of the n-th run of increasing consecutive integers with each run after the first starting with 1.
  * @author Sean A. Irvine
  */
 public class A073645 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066613 Numbers k such that the product of the nonzero digits of k equals the number of divisors of k.
+ * A066613 Product of the nonzero digits = number of divisors.
  * @author Sean A. Irvine
  */
 public class A066613 extends Sequence1 {

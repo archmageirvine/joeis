@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A144010 E.g.f. satisfies: A&apos;(x) = 1/(1 - x*A(x)) with A(0)=1.
+ * A144010 E.g.f. satisfies: A'(x) = 1/(1 - x*A(x)) with A(0)=1.
  * @author Georg Fischer
  */
 public class A144010 extends MultiTransformSequence {

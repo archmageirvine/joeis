@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
- * A073565.
+ * A073654 A073653 is defined to be 'rearrangement of odd primes such that sum of three consecutive terms is a prime'. This is the sequence of those primes whose relative position is not disturbed in this rearrangement.
  * @author Sean A. Irvine
  */
 public class A073654 extends Sequence1 {

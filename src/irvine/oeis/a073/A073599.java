@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073565.
+ * A073599 Numbers k such that the denominator of Sum_{j=1..k} 1/phi(j) divides the denominator of H(k) = Sum_{j=1..k} 1/j, the k-th harmonic number.
  * @author Sean A. Irvine
  */
 public class A073599 extends Sequence1 {

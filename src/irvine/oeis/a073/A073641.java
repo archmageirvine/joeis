@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073565.
+ * A073641 a(1) = 2; a(n) = smallest prime not included earlier such that concatenation of two successive terms is a prime.
  * @author Sean A. Irvine
  */
 public class A073641 extends Sequence1 {

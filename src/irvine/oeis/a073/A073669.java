@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073580.
+ * A073669 a(1) = 1, a(n) = the smallest composite multiple of n such that every partial sum is prime.
  * @author Sean A. Irvine
  */
 public class A073669 extends Sequence1 {

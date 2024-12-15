@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063543 a(n) = n - product of the nonzero digits of n.
+ * A063543 a(n) = n - product of nonzero digits of n.
  *
  * @author Karsten Knuth
  */

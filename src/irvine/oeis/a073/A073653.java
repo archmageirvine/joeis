@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073565.
+ * A073653 a(1)=3, a(2)=5; for n &gt; 2, a(n) = smallest prime not included earlier such that a(n-2) + a(n-1) + a(n) is a prime.
  * @author Sean A. Irvine
  */
 public class A073653 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073565.
+ * A073629 a(1) = 1; a(2) =2; a(3) = 3; a(n) = smallest number greater than the previous term such that the sum of four successive terms is a prime.
  * @author Sean A. Irvine
  */
 public class A073629 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A073565.
+ * A073609 a(0) = 2; a(n) for n &gt; 0 is the smallest prime greater than a(n-1) that differs from a(n-1) by a square.
  * @author Sean A. Irvine
  */
 public class A073609 extends Sequence0 {

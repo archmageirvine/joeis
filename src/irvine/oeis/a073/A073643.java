@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073565.
+ * A073643 Nine-digit primes with all distinct digits.
  * @author Sean A. Irvine
  */
 public class A073643 extends Sequence1 {

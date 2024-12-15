@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A378803 a(n) = n^2 * binomial(4*n, n).
+ * A378803 allocated for Amiram Eldar.
  * @author Georg Fischer
  */
 public class A378803 extends LambdaSequence {

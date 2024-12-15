@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a002.A002379;
 
 /**
- * A073565.
+ * A073633 Numbers k that divide floor((3/2)^k) = A002379(k).
  * @author Sean A. Irvine
  */
 public class A073633 extends FilterPositionSequence {

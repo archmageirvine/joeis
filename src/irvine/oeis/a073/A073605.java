@@ -8,7 +8,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A073565.
+ * A073605 Smallest number m such that m + k == 0 mod k-th prime for all k from 1 to n.
  * @author Sean A. Irvine
  */
 public class A073605 extends A000040 {

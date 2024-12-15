@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A073565.
+ * A073637 Digital root (cf. A010888) of prime(n)^3.
  * @author Sean A. Irvine
  */
 public class A073637 extends A000040 {

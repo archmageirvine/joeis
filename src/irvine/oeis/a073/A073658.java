@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073580.
+ * A073658 Rearrangement of squares such that sum of two consecutive terms is a prime.
  * @author Sean A. Irvine
  */
 public class A073658 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073565.
+ * A073594 Numerator of b(n) = Sum_{k=1..n} (-1)^(k+1)/k*Sum_{i=0..k-1} (-1)^i/(2*i+1).
  * @author Sean A. Irvine
  */
 public class A073594 extends Sequence1 {

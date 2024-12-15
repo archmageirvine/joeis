@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073565.
+ * A073601 Least k&gt;1 such that n^k and n have equal leading decimal digits.
  * @author Sean A. Irvine
  */
 public class A073601 extends Sequence1 {

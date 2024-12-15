@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073565.
+ * A073647 In decimal representation of n, replace composite digits (4, 6, 8 and 9) with their concatenated prime factorizations (22, 23, 222 and 33).
  * @author Sean A. Irvine
  */
 public class A073647 extends Sequence1 {

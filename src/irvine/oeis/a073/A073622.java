@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000796;
 
 /**
- * A073565.
+ * A073622 Primes ordered so that their most significant digits form the digits of Pi.
  * @author Sean A. Irvine
  */
 public class A073622 extends Sequence1 {

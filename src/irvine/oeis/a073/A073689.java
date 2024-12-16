@@ -7,16 +7,17 @@ import irvine.oeis.Sequence0;
  * A073689.
  * @author Sean A. Irvine
  */
-public class A073688 extends Sequence0 {
+public class A073689 extends Sequence0 {
 
   private long mN = 0;
 
   @Override
   public Z next() {
-    Z prod = Z.valueOf(++mN);
+    final long t = ++mN;
+    Z prod = Z.valueOf(t);
     while (!prod.add(1).isProbablePrime()) {
       prod = prod.multiply(++mN);
     }
-    return prod.add(1);
+    return Z.valueOf(t);
   }
 }

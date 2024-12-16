@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A013285 E.g.f.: arctan(log(x+1)-tanh(x)) = -1/2!*x^2 + 4/3!*x^3 - 6/4!*x^4 + 8/5!*x^5 - ...
+ * A013285 Expansion of e.g.f.: arctan(log(x+1)-tanh(x)).
  * @author Sean A. Irvine
  */
 public class A013285 extends Sequence2 {

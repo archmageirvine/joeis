@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A331610 E.g.f.: exp(1 / (1 - tan(x)) - 1).
+ * A331610 Expansion of e.g.f.: exp(1 / (1 - tan(x)) - 1).
  * E.g.f.: exp(sin(x) / (cos(x) - sin(x)))
  * @author Georg Fischer
  */

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060711 Smallest number whose digit sum is n^4.
+ * A060711 Smallest number whose sum of digits is n^4.
  * @author Sean A. Irvine
  */
 public class A060711 extends Sequence1 {

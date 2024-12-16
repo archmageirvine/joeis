@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A056803 Numbers n such that n copies of 12 followed by 1 is a palindromic prime.
+ * A056803 Numbers k such that k copies of 12 followed by 1 is a palindromic prime.
  * @author Georg Fischer
  */
 public class A056803 extends Sequence1 {

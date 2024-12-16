@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000005;
 
 /**
- * A051548 a(n) = LCM { tau(1), ..., tau(n) }, a(0) = 1.
+ * A051548 a(n) = LCM { tau(1), ..., tau(n) }.
  * @author Sean A. Irvine
  */
 public class A051548 extends A000005 {

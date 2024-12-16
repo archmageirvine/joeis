@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Conjectural;
 
 /**
- * A027696 Nonparametric solutions to problem in A027669: n such that for some m, the sum of the first m n-gonal numbers is again an n-gonal number.
+ * A027696 Nonparametric solutions to problem in A027669: k such that for some m &gt;= 2, the sum of the first m k-gonal numbers is again a k-gonal number.
  * @author Sean A. Irvine
  */
 public class A027696 extends A027669 implements Conjectural {

@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A378800 allocated for Stefano Spezia.
+ * A378800 Decimal expansion of 4*(8 - 4*sqrt(2) - log(2))/(2*sqrt(2) - 1).
  * Formula: - 4*sqrt(2) - log(2))/(2*sqrt(2) - 1).
  * @author Georg Fischer
  */

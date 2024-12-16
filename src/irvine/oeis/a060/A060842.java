@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A060842 (C(2p,p)-2)/p^2 where p runs through the primes.
+ * A060842 a(n) = (binomial(2*p,p)-2)/p^2 where p = prime(n).
  * @author Sean A. Irvine
  */
 public class A060842 extends A000040 {

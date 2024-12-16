@@ -5,7 +5,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A241405 Sum of modified exponential divisors: if n = product p_i^r_i then me-sigma(x) = product (sum p_i^s_i such that s_i+1 divides r_i+1).
+ * A241405 Sum of modified exponential divisors: if n = Product p_i^r_i then me-sigma(x) = Product (sum p_i^s_i such that s_i+1 divides r_i+1).
  * @author Georg Fischer
  */
 public class A241405 extends MultiplicativeSequence {

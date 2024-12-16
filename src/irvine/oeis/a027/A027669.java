@@ -7,7 +7,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**
- * A027669 Numbers n such that for some m, the sum of the first m n-gonal numbers is again an n-gonal number.
+ * A027669 Numbers k such that for some m, the sum of the first m k-gonal numbers is again a k-gonal number.
  * @author Sean A. Irvine
  */
 public class A027669 extends Sequence1 implements Conjectural {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065345 a(n) = Mod( binomial(2*n,n), (n+1)*(n+2)*(n+3) ).
+ * A065345 a(n) = binomial(2*n,n) mod ((n+1)*(n+2)*(n+3)).
  * @author Sean A. Irvine
  */
 public class A065345 extends Sequence1 {

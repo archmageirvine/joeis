@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066109 Numbers n such that sigma_4(n)/sigma_2(n) is prime.
+ * A066109 Numbers k such that sigma_4(k)/sigma_2(k) is prime.
  * @author Sean A. Irvine
  */
 public class A066109 extends Sequence1 {

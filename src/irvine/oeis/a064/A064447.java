@@ -7,7 +7,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a000.A000312;
 
 /**
- * A064447 a(n) = EulerPhi(n^n).
+ * A064447 a(n) = phi(n^n).
  * @author Georg Fischer
  */
 public class A064447 extends AbstractSequence {

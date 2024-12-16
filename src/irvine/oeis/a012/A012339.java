@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012339 E.g.f.: sech(arcsin(x)*sin(x))=1-12/4!*x^4+6160/8!*x^8-120960/10!*x^10...
+ * A012339 Expansion of e.g.f.: sech(arcsin(x)*sin(x)).
  * @author Sean A. Irvine
  */
 public class A012339 extends Sequence0 {

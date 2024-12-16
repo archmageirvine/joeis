@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A131384 Product of the digital sums of n for all the bases 2 to n (a &apos;digital-sum factorial&apos;).
+ * A131384 Product of the digital sums of n for all the bases 2 to n (a 'digital-sum factorial').
  * @author Georg Fischer
  */
 public class A131384 extends LambdaSequence {

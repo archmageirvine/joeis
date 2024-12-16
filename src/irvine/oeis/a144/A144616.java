@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a068.A068214;
 
 /**
- * A144616 Denominators of integral specified in program line.
+ * A144616 Denominator of n-th Borwein integral divided by Pi/2.
  * @author Sean A. Irvine
  */
 public class A144616 extends A068214 {

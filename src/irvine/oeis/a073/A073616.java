@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A073616 Consider Pascal's triangle A007318; a(n) = sum of the smallest divisors of terms of the n-th row which are greater than 1.
+ * A073616 a(n) = Sum_{k=0..n} lpf(binomial(n, k)), where lpf(m) is the least prime factor of m.
  * @author Sean A. Irvine
  */
 public class A073616 extends Sequence0 {

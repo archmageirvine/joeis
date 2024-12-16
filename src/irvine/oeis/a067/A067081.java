@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067081 Numbers n such that sigma(n+1) = 2*sigma(n).
+ * A067081 Numbers k such that sigma(k+1) = 2*sigma(k).
  * @author Sean A. Irvine
  */
 public class A067081 extends Sequence1 {

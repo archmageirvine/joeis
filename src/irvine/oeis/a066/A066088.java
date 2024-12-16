@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001157;
 
 /**
- * A066088 Number of distinct prime factors of sigma_2(n) = A001157(n), the sum of squares of divisors of n.
+ * A066088 Number of distinct prime factors of sigma_2(n), where sigma_2(n) = A001157(n).
  * @author Georg Fischer
  */
 public class A066088 extends A001157 {

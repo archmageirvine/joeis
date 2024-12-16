@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A307248 a(n) is the number of n X n binary matrices (over the reals) with at least one row and column full of 1&apos;s where the row index equals the column index.
+ * A307248 a(n) is the number of n X n binary matrices (over the reals) with at least one row and column full of 1's where the row index equals the column index.
  * @author Georg Fischer
  */
 public class A307248 extends MultiTransformSequence {

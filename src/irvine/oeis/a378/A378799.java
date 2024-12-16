@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A378799 allocated for Stefano Spezia.
+ * A378799 Decimal expansion of 16/(9*sqrt(184607)).
  * Formula: nonn,cons,easy, new
  * @author Georg Fischer
  */

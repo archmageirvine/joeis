@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a006.A006579;
 
 /**
- * A178881 Sum of all pairs of greater common divisors for (i,j) where 1 &lt;= i &lt; j &lt;= n.
+ * A178881 Sum of all pairs of greatest common divisors for (i,j) where 1 &lt;= i &lt; j &lt;= n.
  * @author Sean A. Irvine
  */
 public class A178881 extends PartialSumSequence {

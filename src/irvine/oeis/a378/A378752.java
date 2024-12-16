@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a003.A003961;
 
 /**
- * A378752 allocated for Antti Karttunen.
+ * A378752 a(n) = 2*sigma(n) - sigma(A003961(n)), where A003961 is fully multiplicative with a(prime(i)) = prime(i+1).
  * @author Georg Fischer
  */
 public class A378752 extends LambdaSequence {

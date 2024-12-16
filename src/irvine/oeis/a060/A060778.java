@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000005;
 
 /**
- * A060778 a(n) = gcd(A000005(n+1), A000005(n)).
+ * A060778 a(n) = gcd(tau(n+1), tau(n)), where tau = A000005.
  * @author Sean A. Irvine
  */
 public class A060778 extends A000005 {

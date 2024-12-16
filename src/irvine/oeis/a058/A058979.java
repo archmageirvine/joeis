@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A058979 Number of m such that phi(m) = 4n.
+ * A058979 Number of numbers m such that phi(m) = 4n.
  * @author Sean A. Irvine
  */
 public class A058979 extends Sequence1 {

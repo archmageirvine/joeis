@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001405;
 
 /**
- * A064146 Sum of non-unitary prime divisors (A034444, A056169) of central binomial coefficient C(n,floor(n/2)) (A001405). If A001405(n) is squarefree (A046098) then a(n)=0.
+ * A064146 Sum of non-unitary prime divisors of binomial(n,floor(n/2)).
  * @author Sean A. Irvine
  */
 public class A064146 extends A001405 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A124274 Nonprime numbers n that divide A124271(n) = Sum_{i=1..n} (prime(i)^n - 1) / (prime(i) - 1).
+ * A124274 Nonprime numbers k that divide A124271(k) = Sum_{i=1..k} (prime(i)^k - 1) / (prime(i) - 1).
  *
  * @author Georg Fischer
  */

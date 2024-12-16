@@ -5,7 +5,7 @@ import irvine.oeis.Combiner;
 import irvine.oeis.a000.A000312;
 
 /**
- * A064448 a(n) = gcd(n^n, EulerPhi(n^n)).
+ * A064448 a(n) = gcd(n^n, phi(n^n)).
  * @author Sean A. Irvine
  */
 public class A064448 extends Combiner {

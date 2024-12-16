@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066821 Numbers n such that phi(n^2-1)/(n-1) is an integer.
+ * A066821 Numbers k such that phi(k^2-1)/(k-1) is an integer.
  * @author Sean A. Irvine
  */
 public class A066821 extends Sequence1 {

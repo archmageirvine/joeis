@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A083334 a(n) = 12*a(n-2) - 25*a(n-4).
+ * A083334 a(n) = 12*a(n-2) - 25*a(n-4) with initial terms 1,6,17,47.
  * @author Sean A. Irvine
  */
 public class A083334 extends LinearRecurrence {

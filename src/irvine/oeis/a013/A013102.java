@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A013102 E.g.f: sech(arcsinh(x)+tan(x))=1-4/2!*x^2+72/4!*x^4-3414/6!*x^6...
+ * A013102 Expansion of e.g.f: sech(arcsinh(x)+tan(x)).
  * @author Sean A. Irvine
  */
 public class A013102 extends Sequence0 {

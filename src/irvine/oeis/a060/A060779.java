@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000005;
 
 /**
- * A060779 a(n) = lcm(A000005(n+1), A000005(n)).
+ * A060779 a(n) = lcm(tau(n+1), tau(n)), where tau = A000005.
  * @author Sean A. Irvine
  */
 public class A060779 extends A000005 {

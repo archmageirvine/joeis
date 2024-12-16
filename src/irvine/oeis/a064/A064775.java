@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064775 Card{ k&lt;=n, k such that all prime divisors of k are &lt;= sqrt(k) }.
+ * A064775 Number of positive integers k &lt;= n such that all prime divisors of k are &lt;= sqrt(k).
  * @author Sean A. Irvine
  */
 public class A064775 extends Sequence1 {

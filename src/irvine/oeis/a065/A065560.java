@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A065560 Let f(x,y) = floor((1+1/x)^y); a(n) is the smallest integer such that f(n,a(n)+1)/f(n,a(n)) = 1+1/n.
+ * A065560 a(n) is the smallest integer k such that floor((1+1/n)^(k+1))/floor((1+1/n)^k) = 1+1/n.
  * @author Sean A. Irvine
  */
 public class A065560 extends Sequence2 {

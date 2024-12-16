@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067541 phi(n*(n+1)/2)/phi(n) where phi is the Euler totient function A000010(n).
+ * A067541 a(n) = phi(n*(n+1)/2)/phi(n) where phi is the Euler totient function A000010(n).
  * @author Sean A. Irvine
  */
 public class A067541 extends Sequence1 {

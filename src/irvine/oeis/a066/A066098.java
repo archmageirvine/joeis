@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002110;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A066098 Sum of digits of primorial(n) (A002110).
+ * A066098 Sum of digits of primorial(n).
  * @author Sean A. Irvine
  */
 public class A066098 extends SimpleTransformSequence {

@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001031;
 import irvine.oeis.a080.A080339;
 
 /**
- * A154804 Number of ways to represent 2n as the sum of two distinct primes (counting 1 as a prime).
+ * A154804 Number of ways to represent 2*n as the sum of two distinct primes (counting 1 as a prime).
  * @author Georg Fischer
  */
 public class A154804 extends Sequence1 {

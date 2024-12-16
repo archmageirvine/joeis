@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001405;
 
 /**
- * A064143 Sum of unitary prime divisors (A056169, A034444) of central binomial coefficient C(n, floor(n/2)).
+ * A064143 Sum of unitary prime divisors of binomial(n, floor(n/2)).
  * @author Sean A. Irvine
  */
 public class A064143 extends A001405 {

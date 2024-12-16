@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A060712 Smallest number whose digit sum is 3^n.
+ * A060712 Smallest number whose sum of digits is 3^n.
  * @author Sean A. Irvine
  */
 public class A060712 extends Sequence0 {

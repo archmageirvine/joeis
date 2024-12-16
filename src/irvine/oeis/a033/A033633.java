@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A033633 Primes modulo 19.
+ * A033633 a(n) = n-th prime modulo 19.
  * @author Sean A. Irvine
  */
 public class A033633 extends A000040 {

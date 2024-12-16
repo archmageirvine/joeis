@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064548 Numbers n for which the sum of the binary digits (or count of 1-bits) equals the sum of the prime exponents of n+1 (or the factor-count of n+1).
+ * A064548 Numbers k for which the sum of the binary digits equals the number of prime factors of k + 1 counted with multiplicity.
  * @author Sean A. Irvine
  */
 public class A064548 extends Sequence1 {

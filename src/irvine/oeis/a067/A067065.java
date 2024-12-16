@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067065 Numbers n such that sigma(sigma(sigma(n))) == 6*sigma(n).
+ * A067065 Numbers k such that sigma(sigma(sigma(k))) == 6*sigma(k).
  * @author Sean A. Irvine
  */
 public class A067065 extends Sequence1 {

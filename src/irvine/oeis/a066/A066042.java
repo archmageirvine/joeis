@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066042 n divided by ((sum of digits of n) times (product of digits of n)) is prime.
+ * A066042 Numbers k such that k divided by ((sum of digits of k) multiplied by (product of digits of k)) is prime.
  * @author Sean A. Irvine
  */
 public class A066042 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a018.A018252;
 
 /**
- * A066071 Nonprime numbers n such that phi(n) + 1 is prime.
+ * A066071 Nonprime numbers k such that phi(k) + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A066071 extends FilterSequence {

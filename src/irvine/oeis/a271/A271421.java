@@ -6,7 +6,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a003.A003266;
 
 /**
- * A271421 Fibonorial(3*n)/(fibonorial(2*n+1)*fibonorial(n+1)), where fibonorial(n) = A003266(n).
+ * A271421 a(n) = fibonorial(3*n)/(fibonorial(2*n+1)*fibonorial(n+1)), where fibonorial(n) = A003266(n).
  * @author Georg Fischer
  */
 public class A271421 extends LambdaSequence {

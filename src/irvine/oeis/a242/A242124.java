@@ -5,7 +5,7 @@ package irvine.oeis.a242;
 import irvine.oeis.a033.A033633;
 
 /**
- * A242124 Primes modulo 26.
+ * A242124 a(n) = n-th prime modulo 26.
  * @author Georg Fischer
  */
 public class A242124 extends A033633 {

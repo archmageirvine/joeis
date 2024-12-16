@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A125174 Primes of the form n! + (n+1)! - 1.
+ * A125174 Primes of the form k! + (k+1)! - 1.
  * @author Georg Fischer
  */
 public class A125174 extends FilterSequence {

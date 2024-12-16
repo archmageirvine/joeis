@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000142;
 
 /**
- * A067067 Product of nonzero digits of n! (A000142).
+ * A067067 a(n) = product of nonzero digits of n! (A000142).
  * @author Georg Fischer
  */
 public class A067067 extends AbstractSequence {

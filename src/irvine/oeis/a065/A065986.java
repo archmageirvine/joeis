@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065986 Numbers n such that Sigma(n) = EulerPhi(n+1) + EulerPhi(n) + EulerPhi(n-1).
+ * A065986 Numbers k such that sigma(k) = phi(k+1) + phi(k) + phi(k-1).
  * @author Sean A. Irvine
  */
 public class A065986 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000203;
 import irvine.oeis.a007.A007429;
 
 /**
- * A319296 a(n) = (Sum_{d|n} (sigma(d))) mod sigma(n).
+ * A319296 a(n) = (Sum_{d|n} sigma(d)) mod sigma(n).
  * @author Georg Fischer
  */
 public class A319296 extends Sequence1 {

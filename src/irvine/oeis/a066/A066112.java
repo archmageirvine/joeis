@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066112 Numbers n such that sigma_4(n)/sigma_2(n) is an integer but not a prime.
+ * A066112 Numbers k such that sigma_4(k)/sigma_2(k) is an integer but not a prime.
  * @author Sean A. Irvine
  */
 public class A066112 extends Sequence1 {

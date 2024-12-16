@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064366 Special binomial coefficient: a(n) = C(sigma(n), phi(n)).
+ * A064366 a(n) = binomial(sigma(n), phi(n)).
  * @author Sean A. Irvine
  */
 public class A064366 extends Sequence1 {

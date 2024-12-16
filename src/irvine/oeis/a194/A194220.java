@@ -5,7 +5,7 @@ package irvine.oeis.a194;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A194220 [sum{(k/4) : 1&lt;=k&lt;=n}], where [ ]=floor, ( )=fractional part.
+ * A194220 a(n) = floor(Sum_{k=1..n} frac(k/4)).
  * Recurrence: a(n)=a(n-1)+a(n-8)-a(n-9)
  * @author Georg Fischer
  */

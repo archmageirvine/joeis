@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001159;
 
 /**
- * A066102 Number of distinct prime factors of Sigma_4[n], the sum of 4th powers of divisors of n.
+ * A066102 Number of distinct prime factors of sigma_4(n), the sum of the 4th powers of divisors of n.
  * @author Georg Fischer
  */
 public class A066102 extends A001159 {

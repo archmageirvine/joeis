@@ -7,10 +7,10 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a066.A066272;
 
 /**
- * A073694 Numbers k such that the number of divisors of k equals the number of anti-divisors of k.
+ * A073716 Numbers n such that the number of prime divisors of n (counted with multiplicity) = number of anti-divisors of n.
  * @author Sean A. Irvine
  */
-public class A073694 extends Sequence1 {
+public class A073716 extends Sequence1 {
 
   private long mN = 0;
   private final DirectSequence mSeq = new A066272();
@@ -18,7 +18,7 @@ public class A073694 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (mSeq.next().equals(Functions.SIGMA0.z(++mN))) {
+      if (mSeq.next().equals(Functions.BIG_OMEGA.z(++mN))) {
         return Z.valueOf(mN);
       }
     }

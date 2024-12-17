@@ -3,20 +3,15 @@ package irvine.oeis.a073;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.AbstractSequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A073705 a(n) = Sum_{ d divides n } (n/d)^(2d).
  * @author Georg Fischer
  */
-public class A073705 extends AbstractSequence {
+public class A073705 extends Sequence1 {
 
   private int mN = 0;
-
-  /** Construct the sequence. */
-  public A073705() {
-    super(1);
-  }
 
   @Override
   public Z next() {

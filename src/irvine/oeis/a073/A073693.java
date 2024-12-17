@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A073689.
+ * A073693 Product of next a(n) odd numbers plus 2 is prime.
  * @author Sean A. Irvine
  */
 public class A073693 extends Sequence0 {

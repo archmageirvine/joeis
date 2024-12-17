@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A073689.
+ * A073696 Initial members of groups in A073697.
  * @author Sean A. Irvine
  */
 public class A073696 extends Sequence0 {

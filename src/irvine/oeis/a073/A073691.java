@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073689.
+ * A073691 Primes p = product(A073692(n), A073692(n)+2,..., A073692(n+1)-2) plus 2.
  * @author Sean A. Irvine
  */
 public class A073691 extends Sequence1 {

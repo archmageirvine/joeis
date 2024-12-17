@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A073689.
+ * A073692 a(0)=1; for n &gt; 0, a(n) is the smallest odd number k such that (2 + Product_{j=a(n-1)..k-2, j odd} j) is prime.
  * @author Sean A. Irvine
  */
 public class A073692 extends Sequence0 {

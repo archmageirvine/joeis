@@ -5,7 +5,7 @@ import irvine.oeis.a097.A097801;
 import irvine.oeis.a144.A144616;
 
 /**
- * A068215 Denominator of Borwein integral of order 2n+1.
+ * A068215 Denominator of Borwein integral of order 2n+1, as defined by Weisstein.
  * @author Sean A. Irvine
  */
 public class A068215 extends Combiner {

@@ -13,7 +13,7 @@ public class A046104 extends ContinuedFractionDenominatorSequence {
 
   /** Construct the sequence. */
   public A046104() {
-    super(new DecimalExpansionSequence(CR.valueOf(new Q(5, 4)).log().divide(CR.TWO.log())));
+    super(new DecimalExpansionSequence(CR.valueOf(new Q(5, 4)).log().divide(CR.LOG2)));
   }
 }
 

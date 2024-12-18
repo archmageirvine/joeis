@@ -2459,3 +2459,4 @@ A073203 Array of max. cycle length sequences for the table A073200.
 A073204 Array of LCMs-of-cycle-lengths sequences for the table A073200.
 A073502 The smallest magic constant for n X n magic square with prime entries (regarding 1 as a prime).
 A073520 Smallest magic constant for any n X n magic square made from consecutive primes, or 0 if no such magic square exists
+A073726 Primitive irreducible trinomials: x^n + x^k + 1 is a primitive irreducible polynomial (mod 2) for some k with 0 < k < n.

@@ -4,7 +4,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A046104.
+ * A073735 Numbers k such that the k-th term of the EKG sequence (A064413(k)) has more than one controlling prime.
  * @author Sean A. Irvine
  */
 public class A073735 extends FilterPositionSequence {

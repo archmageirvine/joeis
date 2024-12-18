@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A110895 Number of integers between a(n) and a(n+1) equals the n-th prime.
+ * A110895 a(n) = a(n-1) + 1 + prime(n), with a(1) = 1.
  * @author Georg Fischer
  */
 public class A110895 extends TupleTransformSequence {

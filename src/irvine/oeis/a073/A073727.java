@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A073571.
+ * A073727 Number of distinct-digit integers between squares.
  * @author Sean A. Irvine
  */
 public class A073727 extends Sequence1 {

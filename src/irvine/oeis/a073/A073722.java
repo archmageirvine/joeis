@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000720;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A073722 Least x such that Mod[Sigma[x],Pi[x]]=n or zero if no such number exists.
+ * A073722 Least k such that sigma(k) mod primepi(k) = n or zero if no such number exists.
  * @author Sean A. Irvine
  */
 public class A073722 extends Sequence0 {

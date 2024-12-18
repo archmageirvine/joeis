@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000040;
 
 /**
- * A073571.
+ * A073739 Least positive integers whose convolution forms a sequence whose odd-indexed terms are twice the odd primes (see: A073740).
  * @author Sean A. Irvine
  */
 public class A073739 extends Sequence0 {

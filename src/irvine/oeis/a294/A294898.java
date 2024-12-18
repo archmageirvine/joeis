@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000203;
 import irvine.oeis.a005.A005187;
 
 /**
- * A294898 a(n) = A005187(n) - A000203(n).
+ * A294898 Deficiency minus binary weight: a(n) = A033879(n) - A000120(n) = A005187(n) - A000203(n).
  * @author Georg Fischer
  */
 public class A294898 extends AbstractSequence {

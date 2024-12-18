@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A073571.
+ * A073741 Number of steps needed to reach a prime when the following map is repeatedly applied to n: if n is even then 2n+1, otherwise 2n-1; or -1 if no prime is ever reached.
  * @author Sean A. Irvine
  */
 public class A073741 extends Sequence2 {
@@ -16,7 +16,7 @@ public class A073741 extends Sequence2 {
     Z m = Z.valueOf(++mN);
     long cnt = 0;
     do {
-      m = m.isEven() ? m.multiply2().add(1) : m.multiply2().subtract(1);
+      m = m.multiply2().signedAdd(m.isEven(), Z.ONE);
       ++cnt;
     } while (!m.isProbablePrime());
     return Z.valueOf(cnt);

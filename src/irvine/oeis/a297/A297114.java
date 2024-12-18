@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a083.A083254;
 /**
- * A297114 M\u00f6bius transform of A294898, where A294898(n) = A005187(n) - A000203(n).
+ * A297114 M\u00f6bius transform of A294898, where A294898 is deficiency minus binary weight.
  * @author Georg Fischer
  */
 public class A297114 extends Sequence1 {

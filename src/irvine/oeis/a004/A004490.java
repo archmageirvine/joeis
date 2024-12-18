@@ -17,7 +17,7 @@ public class A004490 extends Sequence1 {
   // After Keith Briggs, "Abundant Numbers and the Riemann Hypothesis"
   // Note paper appears to contain some errors:
   // In case A, it should be \epsilon_ext = log_p(1+1/p) = log_p(1+p) - 1.
-  // The exponents "a" described for case C, also do no seem to match what is required
+  // The exponents "a" described for case C, also do not seem to match what is required
 
   private int mIota = 0;
   private final Fast mPrime = new Fast();

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A073571.
+ * A073732 Decimal expansion of lim_{n -&gt; infinity} n*phi - Sum_{k=1..n} F(k+1)/F(k), where phi is the golden ratio and F(k) denotes the k-th Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A073732 extends DecimalExpansionSequence {

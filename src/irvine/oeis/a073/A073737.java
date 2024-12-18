@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a065.A065091;
 
 /**
- * A073571.
+ * A073737 Sums of three successive terms form the odd primes.
  * @author Sean A. Irvine
  */
 public class A073737 extends A065091 {

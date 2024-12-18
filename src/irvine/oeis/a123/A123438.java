@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a053.A053557;
 
 /**
- * A123438 Numbers n such that the denominator of n!/!n (= A000142(n)/A000166(n)) is prime.
+ * A123438 Numbers k such that the denominator of k!/!k (= A000142(k)/A000166(k)) is prime.
  * @author Georg Fischer
  */
 public class A123438 extends FilterPositionSequence {

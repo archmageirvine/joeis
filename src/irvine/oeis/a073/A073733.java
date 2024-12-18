@@ -6,7 +6,7 @@ import irvine.oeis.cons.ContinuedFractionNumeratorSequence;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A046104.
+ * A073733 Numerators of convergents to log_2(10).
  * @author Sean A. Irvine
  */
 public class A073733 extends PrependSequence {

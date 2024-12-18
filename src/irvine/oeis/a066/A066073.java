@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002808;
 
 /**
- * A066073 Composite numbers n such that sigma(n) - 1 is prime.
+ * A066073 Composite numbers k such that sigma(k) - 1 is prime.
  * @author Sean A. Irvine
  */
 public class A066073 extends FilterSequence {

@@ -10,7 +10,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a008.A008578;
 
 /**
- * A073571.
+ * A073749 Numerators of the fractional coefficients of the square-root of the prime power series: sum_{n=0..inf} p_n x^n, where p_n is the n-th prime and p_0 is defined to be 1.
  * @author Sean A. Irvine
  */
 public class A073749 extends Sequence0 {

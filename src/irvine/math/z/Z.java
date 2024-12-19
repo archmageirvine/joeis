@@ -915,7 +915,6 @@ public class Z extends Number implements Comparable<Z> {
    * than calling pow(exponent).mod(modulus) and prevents the intermediate
    * result becoming excessively large. Permits negative exponents where
    * it makes sense.
-   *
    * @param exponent exponent
    * @param modulus modulus
    * @return <code>this^exponent(mod modulus)</code>
@@ -925,6 +924,22 @@ public class Z extends Number implements Comparable<Z> {
    */
   public Z modPow(final Z exponent, final Z modulus) {
     return ModPow.modPow(this, exponent, modulus);
+  }
+
+  /**
+   * Compute powers with a modulus.  This is generally more efficient
+   * than calling pow(exponent).mod(modulus) and prevents the intermediate
+   * result becoming excessively large. Permits negative exponents where
+   * it makes sense.
+   * @param exponent exponent
+   * @param modulus modulus
+   * @return <code>this^exponent(mod modulus)</code>
+   * @exception IllegalArgumentException for zero modulus.
+   * @exception ArithmeticException for non-invertible quotients when
+   * using negative exponents.
+   */
+  public Z modPow(final long exponent, final Z modulus) {
+    return modPow(Z.valueOf(exponent), modulus);
   }
 
   /**

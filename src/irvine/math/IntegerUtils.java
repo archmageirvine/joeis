@@ -256,9 +256,27 @@ public final class IntegerUtils {
   }
 
   /**
-   * Test if the given array is a constant non-zero value.
+   * Test if the given array is a constant value.
    * @param values array
-   * @return true if the array is constant but not zero.
+   * @return true if the array is constant
+   */
+  public static boolean isConstant(final int[] values) {
+    if (values.length == 0) {
+      return true;
+    }
+    final int a = values[0];
+    for (final int v : values) {
+      if (v != a) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  /**
+   * Test if the non-zero values in a given array is a constant non-zero value.
+   * @param values array
+   * @return value of the array is constant but not zero.
    */
   public static int isNonzeroConstant(final int[] values) {
     int a = -1;

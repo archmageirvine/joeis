@@ -36,7 +36,7 @@ public class A073714 extends Sequence0 {
     final Polynomial<Z> c = RING.empty();
     for (int j = 0; j < mRows.size(); ++j) {
       for (int i = 0; i <= j; ++i) {
-        final Z coeff = mRows.get(i).coeff(j - i);
+        final Z coeff = mRows.get(j - i).coeff(i);
         if (coeff.isZero()) {
           break;
         }

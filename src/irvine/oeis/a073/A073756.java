@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A073756 Number of steps needed to reach a prime when the following map is repeatedly applied to n: if n is even then 2n + int(log(n)) + 1, otherwise 2n - int(log(n)) - 1; or -1 if no prime is ever reached.
+ * A073756 Number of steps needed to reach a prime when the following map is repeatedly applied to n: if n is even then 2n + floor(log(n)) + 1, otherwise 2n - floor(log(n)) - 1; or -1 if no prime is ever reached.
  * @author Sean A. Irvine
  */
 public class A073756 extends Sequence2 {

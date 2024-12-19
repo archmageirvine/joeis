@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000720;
 
 /**
- * A073721 Remainder of division Sigma[n]/PrimePi[n] equals zero.
+ * A073721 Numbers k such that primepi(k) divides sigma(k).
  * @author Sean A. Irvine
  */
 public class A073721 extends Sequence1 {

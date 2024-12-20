@@ -12,6 +12,6 @@ public class A066098 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A066098() {
-    super(1, new A002110().skip(), k -> Functions.DIGIT_SUM.z(k));
+    super(0, new A002110(), k -> Functions.DIGIT_SUM.z(k));
   }
 }

@@ -3,15 +3,15 @@ package irvine.oeis.a002;
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A002465 Number of ways to place n nonattacking bishops on an n X n board.
  * @author Sean A. Irvine
  */
-public class A002465 extends Sequence1 {
+public class A002465 extends Sequence0 {
 
-  private int mN = 0;
+  private int mN = -1;
 
   private Z sum1(final int n, final int i) {
     Z s = Z.ZERO;
@@ -35,7 +35,7 @@ public class A002465 extends Sequence1 {
 
   @Override
   public Z next() {
-    if (++mN == 1) {
+    if (++mN <= 1) {
       return Z.ONE;
     }
     Z s = Z.ZERO;

@@ -17,12 +17,7 @@ public class A065369 extends AbstractSequence {
     this(0, 3);
   }
 
-  /**
-   * Generic constructor with parameters
-   * @param offset
-   * @param digit
-   */
-  public A065369(final int offset, final int digit) {
+  protected A065369(final int offset, final int digit) {
     super(offset);
     mN = offset - 1;
     mDigit = digit;

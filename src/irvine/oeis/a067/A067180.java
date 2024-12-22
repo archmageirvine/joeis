@@ -5,13 +5,14 @@ import java.util.Collections;
 import java.util.List;
 
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
  * A067180 Smallest prime with digit sum n, or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
-public class A067180 extends Sequence1 {
+public class A067180 extends Sequence1 implements DirectSequence {
 
   // After Robert Israel
 
@@ -34,26 +35,25 @@ public class A067180 extends Sequence1 {
     return res;
   }
 
-  @Override
-  public Z next() {
-    if (++mN == 1) {
+  private Z a(final long n) {
+    if (n == 1) {
       return Z.ZERO;
     }
-    if (mN < 10) {
-      final Z n = Z.valueOf(mN);
-      if (n.isProbablePrime()) {
-        return n;
+    if (n < 10) {
+      final Z zn = Z.valueOf(n);
+      if (zn.isProbablePrime()) {
+        return zn;
       }
     }
-    if (mN % 3 == 0) {
+    if (n % 3 == 0) {
       return Z.ZERO;
     }
-    for (long d = (mN + 8) / 9; true; ++d) {
-      if (d == 1 & mN < 10) {
+    for (long d = (n + 8) / 9; true; ++d) {
+      if (d == 1 & n < 10) {
         continue;
       }
       for (int j = 1; j <= 9; ++j) {
-        for (final Z y : g(mN - j, d - 1)) {
+        for (final Z y : g(n - j, d - 1)) {
           final Z x = Z.TEN.pow(d - 1).multiply(j).add(y);
           if (x.isProbablePrime()) {
             return x;
@@ -61,5 +61,20 @@ public class A067180 extends Sequence1 {
         }
       }
     }
+  }
+
+  @Override
+  public Z a(final Z n) {
+    return a(n.longValueExact());
+  }
+
+  @Override
+  public Z a(final int n) {
+    return a((long) n);
+  }
+
+  @Override
+  public Z next() {
+    return a(++mN);
   }
 }

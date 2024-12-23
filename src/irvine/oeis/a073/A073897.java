@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
  * A073655.
  * @author Sean A. Irvine
  */
-public class A073898 extends Sequence1 {
+public class A073897 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mEven = 0;
@@ -21,11 +21,11 @@ public class A073898 extends Sequence1 {
       return Z.ONE;
     }
     if (mPrime.isPrime(mN)) {
-      mEven += 2;
-      return Z.valueOf(mEven);
-    } else {
       mOdd += 2;
       return Z.valueOf(mOdd);
+    } else {
+      mEven += 2;
+      return Z.valueOf(mEven);
     }
   }
 }

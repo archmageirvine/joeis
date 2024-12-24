@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A069822 Numbers n for which there is at least one x &lt; n such that sigma(x) = sigma(n).
+ * A069822 Numbers k for which there is at least one x &lt; k such that sigma(x) = sigma(k).
  * @author Sean A. Irvine
  */
 public class A069822 extends Sequence1 {

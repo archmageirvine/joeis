@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a061.A061214;
 
 /**
- * A073828.
+ * A073836 Let C(n) = product of composite numbers between the n-th prime and (n+1)-th prime; a(n) = floor(C(n+1)/C(n)).
  * @author Sean A. Irvine
  */
 public class A073836 extends Sequence1 {

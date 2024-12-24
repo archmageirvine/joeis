@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073655.
+ * A073904 Smallest multiple k*n of n having n divisors.
  * @author Sean A. Irvine
  */
 public class A073904 extends Sequence1 {

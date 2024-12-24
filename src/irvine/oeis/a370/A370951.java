@@ -5,7 +5,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a112.A112877;
 
 /**
- * A370951 First differences of A112877 (zero terms in Cald&apos;s sequence A006509).
+ * A370951 First differences of A112877 (zero terms in Cald's sequence A006509).
  * @author Georg Fischer
  */
 public class A370951 extends DifferenceSequence {

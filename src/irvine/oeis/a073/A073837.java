@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073828.
+ * A073837 Sum of primes p satisfying n &lt;= p &lt;= 2n.
  * @author Sean A. Irvine
  */
 public class A073837 extends Sequence1 {

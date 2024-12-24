@@ -5,7 +5,7 @@ import irvine.oeis.a064.A064053;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A096661 Fine&apos;s numbers J(n).
+ * A096661 Fine's numbers J(n).
  * @author Georg Fischer
  */
 public class A096661 extends SingleTransformSequence {

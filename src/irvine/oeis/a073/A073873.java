@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterSequence;
 
 /**
- * A073655.
+ * A073873 Terms of A073872 that do not change their position in the rearrangement; i.e., values of A073872(n) which equal n(n+1)/2.
  * @author Sean A. Irvine
  */
 public class A073873 extends FilterSequence {

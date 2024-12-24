@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073655.
+ * A073887 Smallest prime p such that sum of p and the next n-1 primes is a perfect square, or 1 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A073887 extends Sequence1 {

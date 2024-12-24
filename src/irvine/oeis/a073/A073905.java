@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A073655.
+ * A073905 Primes which can be written as a concatenation of p^q and q^p where p and q are primes.
  * @author Sean A. Irvine
  */
 public class A073905 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a000.A000201;
 
 /**
- * A090908 Terms a(k) of A073869 for which a(k)=a(k+1).
+ * A090908 Terms a(k) of A073869 for which a(k) is distinct from a(k-1).
  * @author Georg Fischer
  */
 public class A090908 extends PrependSequence {

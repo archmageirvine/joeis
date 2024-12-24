@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073655.
+ * A073906 Number of conjugacy classes in the symmetric group S_n with distinct cardinality.
  * @author Sean A. Irvine
  */
 public class A073906 extends Sequence1 {

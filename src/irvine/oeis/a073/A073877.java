@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073655.
+ * A073877 Smallest Bell number divisible by n not included earlier, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A073877 extends Sequence1 {

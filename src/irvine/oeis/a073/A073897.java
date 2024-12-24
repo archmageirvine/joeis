@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073655.
+ * A073897 a(1) = 1, a(n) = smallest odd or even number not occurring earlier according as n is prime or composite.
  * @author Sean A. Irvine
  */
 public class A073897 extends Sequence1 {

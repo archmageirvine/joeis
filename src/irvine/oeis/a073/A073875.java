@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073655.
+ * A073875 Smallest nonzero Fibonacci number divisible by n not included earlier.
  * @author Sean A. Irvine
  */
 public class A073875 extends Sequence1 {

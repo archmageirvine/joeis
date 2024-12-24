@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073655.
+ * A073893 a(10k) = 0 and if n is not a multiple of 10 then a(n) is the smallest positive integer such that the concatenation of the first n terms is a multiple of n.
  * @author Sean A. Irvine
  */
 public class A073893 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A182307 a(n+1) = a(n) + floor(a(n)/6) with a(0)=6.
+ * A182307 a(n+1) = a(n) + floor(a(n)/6) with a(0) = 6.
  * @author Georg Fischer
  */
 public class A182307 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073655.
+ * A073863 a(1) = 4; a(n) = average of the largest and the smallest n-digit primes.
  * @author Sean A. Irvine
  */
 public class A073863 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A124262 a(1) = 2; for n &gt; 1, a(n) is largest prime &lt; 10*a(n-1).
+ * A124262 a(n) is the largest prime &lt; 10*a(n-1) for n &gt; 1, with a(1) = 2.
  * @author Georg Fischer
  */
 public class A124262 extends Sequence1 {

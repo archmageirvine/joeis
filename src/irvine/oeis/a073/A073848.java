@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073828.
+ * A073848 Smallest of n consecutive numbers in A.P. with a common difference of n with a sum that is an n-th power.
  * @author Sean A. Irvine
  */
 public class A073848 extends Sequence1 {

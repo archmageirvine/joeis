@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073828.
+ * A073843 a(1) = 1; for n &gt; 1 a(n) = smallest number of the form n^r (with r rational != 1) not included earlier.
  * @author Sean A. Irvine
  */
 public class A073843 extends Sequence1 {

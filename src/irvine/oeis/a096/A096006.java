@@ -8,7 +8,7 @@ import irvine.oeis.a007.A007318;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A096006 Scan Pascal's triangle (A007318) from left to right, record largest prime factor of each entry.
+ * A096006 Triangle read by rows: T(n,k) = largest prime factor of binomial(n,k), 1 &lt;= k &lt;= n-1.
  * @author Georg Fischer
  */
 public class A096006 extends SimpleTransformSequence {

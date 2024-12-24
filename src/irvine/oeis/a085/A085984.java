@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A085984 Decimal expansion of solution to e^x*(-1 + x) == (1 + x)/e^x.
+ * A085984 Decimal expansion of solution to e^x*(-1 + x) = (1 + x)/e^x.
  * @author Sean A. Irvine
  */
 public class A085984 extends DecimalExpansionSequence {

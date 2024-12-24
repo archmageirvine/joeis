@@ -4,7 +4,7 @@ package irvine.oeis.a160;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A160241 Number of Greek Key Tours on a 7 X n grid.
+ * A160241 Number of Greek-key tours on a 7 X n grid.
  * @author Georg Fischer
  */
 public class A160241 extends GeneratingFunctionSequence {

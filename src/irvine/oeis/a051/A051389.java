@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A051389 Number of rational resistances requiring exactly n 1-ohm resistors in series or parallel.
+ * A051389 Number of resistance values that can be constructed using exactly n 1-ohm resistors in series or parallel but not with fewer resistors.
  * @author Sean A. Irvine
  */
 public class A051389 extends Sequence1 {

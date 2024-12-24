@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000720;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A065313 a(n) = Pi(n*Pi(n)).
+ * A065313 a(n) = pi(n*pi(n)).
  * @author Sean A. Irvine
  */
 public class A065313 extends Sequence1 {

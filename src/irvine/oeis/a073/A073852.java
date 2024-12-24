@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073655.
+ * A073852 a(1) = 1, then smallest square not included earlier such that every partial sum is a prime.
  * @author Sean A. Irvine
  */
 public class A073852 extends Sequence1 {

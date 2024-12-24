@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000079;
 
 /**
- * A064367 a(n) = 2^n mod prime(n), or 2^n = k*prime(n) + a(n) with integer k.
+ * A064367 a(n) = 2^n mod prime(n).
  * @author Georg Fischer
  */
 public class A064367 extends AbstractSequence {

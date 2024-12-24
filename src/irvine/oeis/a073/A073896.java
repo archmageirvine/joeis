@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002808;
 
 /**
- * A073655.
+ * A073896 a(1) = 1, a(n) = a(n-1) + k where k is smallest prime or composite number not used earlier according as a(n-1) is nonprime or prime.
  * @author Sean A. Irvine
  */
 public class A073896 extends Sequence1 {

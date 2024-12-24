@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073655.
+ * A073854 a(1) = 1, a(n) = prime equal to n-th partial sum of A073852.
  * @author Sean A. Irvine
  */
 public class A073854 extends Sequence1 {

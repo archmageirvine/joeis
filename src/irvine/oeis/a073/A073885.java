@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A073655.
+ * A073885 a(1)=1, a(n) = smallest positive integer not included earlier such that the n-th partial sum is a prime iff n is a prime.
  * @author Sean A. Irvine
  */
 public class A073885 extends Sequence1 {

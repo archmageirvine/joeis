@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066782 Numbers n such that (n, phi(n)) lies on the hyperbola x^2 - y^2 = m^2, for some natural number m, i.e., n^2 - phi(n)^2 = m^2.
+ * A066782 Numbers k such that (k, phi(k)) lies on the hyperbola x^2 - y^2 = m^2, for some natural number m, i.e., k^2 - phi(k)^2 is a square.
  * @author Sean A. Irvine
  */
 public class A066782 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A182363 a(n+1) = a(n) + floor(a(n)/10) with a(0)=10.
+ * A182363 a(n+1) = a(n) + floor(a(n)/10) with a(0) = 10.
  * @author Georg Fischer
  */
 public class A182363 extends Sequence0 {

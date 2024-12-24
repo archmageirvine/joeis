@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073828.
+ * A073842 a(1) = 1; for n&gt;1, a(n) = the smallest positive integer root of n not included earlier, if such a root exists, otherwise the smallest power of n not included earlier, subject to a(n)&lt;&gt;n.
  * @author Sean A. Irvine
  */
 public class A073842 extends Sequence1 {

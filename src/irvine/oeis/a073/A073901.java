@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073655.
+ * A073901 Number of primes with nonzero digits and digit sum n.
  * @author Sean A. Irvine
  */
 public class A073901 extends Sequence1 {

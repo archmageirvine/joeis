@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073759 Largest number that is neither a divisor of nor relatively prime to n, or 0 if no such number exists.
+ * A073759 Largest number &lt; n that is neither a divisor of nor relatively prime to n, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A073759 extends Sequence1 {

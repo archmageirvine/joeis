@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002808;
 
 /**
- * A073655.
+ * A073899 a(1) = 1; then k-th prime prime(k) followed by prime(k) consecutive composite numbers not occurring earlier.
  * @author Sean A. Irvine
  */
 public class A073899 extends Sequence1 {

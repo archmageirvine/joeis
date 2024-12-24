@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073655.
+ * A073909 Smallest number m such that m and the product of digits of m are both divisible by 2n, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A073909 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001359;
 
 /**
- * A073828.
+ * A073832 k between A001359(n) and A001359(n+1) such that A073830(k) is maximal.
  * @author Sean A. Irvine
  */
 public class A073832 extends A073830 {

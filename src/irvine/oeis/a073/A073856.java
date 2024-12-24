@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073655.
+ * A073856 a(1) = 1, then the smallest n-th power not included earlier such that each partial sum is a prime.
  * @author Sean A. Irvine
  */
 public class A073856 extends Sequence1 {

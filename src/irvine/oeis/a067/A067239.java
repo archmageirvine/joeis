@@ -4,7 +4,7 @@ package irvine.oeis.a067;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A067239 a(0)=1, a(n) = 8n*(2n-1).
+ * A067239 a(0)=1, a(n) = 8*n*(2*n-1).
  * @author Georg Fischer
  */
 public class A067239 extends GeneratingFunctionSequence {

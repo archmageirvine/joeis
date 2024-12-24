@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065768 Intersection of A065764 and A065766.
+ * A065768 Numbers that are sums of divisors of the odd squares; Intersection of A065764 and A065766, written in ascending order and duplicates removed.
  * @author Sean A. Irvine
  */
 public class A065768 extends Sequence1 {

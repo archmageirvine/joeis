@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073828.
+ * A073840 Product of the composite numbers between n and 2n (both inclusive).
  * @author Sean A. Irvine
  */
 public class A073840 extends Sequence1 {

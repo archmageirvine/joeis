@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002808;
 import irvine.oeis.a067.A067180;
 
 /**
- * A073655.
+ * A073867 Smallest prime whose digital sum is equal to the n-th composite number, or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A073867 extends A002808 {

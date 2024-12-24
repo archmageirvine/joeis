@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066152 Numbers k such that EulerPhi(k) = sigma(k+1) - sigma(k).
+ * A066152 Numbers k such that phi(k) = sigma(k+1) - sigma(k).
  * @author Sean A. Irvine
  */
 public class A066152 extends Sequence1 {

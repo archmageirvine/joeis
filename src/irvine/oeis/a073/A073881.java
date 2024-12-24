@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073655.
+ * A073881 a(n) = smallest number m (obviously prime) such that pi(m) = 2*pi(n).
  * @author Sean A. Irvine
  */
 public class A073881 extends Sequence1 {

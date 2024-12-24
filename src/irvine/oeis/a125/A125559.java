@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A125559 Numbers n such that 2n^3 + 7 is prime. For n&gt;=8, bases in which 2007 is prime.
+ * A125559 Numbers k such that 2k^3 + 7 is prime. For k &gt;= 8, bases in which 2007 is prime.
  * @author Georg Fischer
  */
 public class A125559 extends PrimePositionSubsequence {

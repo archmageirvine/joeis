@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A242488 Numbers m such that the largest prime factor of m^2 - 2 is 17.
+ * A242488 Triangle read by rows in which row n lists numbers k such that the greatest prime factor of k^2 - 2 is A038873(n), the n-th prime not congruent to 3 or 5 mod 8.
  * @author Georg Fischer
  */
 public class A242488 extends FilterNumberSequence {

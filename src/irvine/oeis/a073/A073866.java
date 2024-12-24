@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002808;
 import irvine.util.string.StringUtils;
 
 /**
- * A073655.
+ * A073866 a(n) is the smallest composite number with the sum of digits = the n-th composite number.
  * @author Sean A. Irvine
  */
 public class A073866 extends A002808 {

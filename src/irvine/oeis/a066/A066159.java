@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066159 Numbers n such that 4n-1 divides (2n-1)! + 1.
+ * A066159 Numbers k such that 4k-1 divides (2k-1)! + 1.
  * @author Sean A. Irvine
  */
 public class A066159 extends Sequence1 {

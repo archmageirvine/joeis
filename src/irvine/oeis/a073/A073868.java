@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.string.StringUtils;
 
 /**
- * A073655.
+ * A073868 a(n) is the smallest composite number with the sum of digits = the n-th prime number.
  * @author Sean A. Irvine
  */
 public class A073868 extends A000040 {

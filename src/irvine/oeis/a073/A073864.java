@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073655.
+ * A073864 Smallest n-digit prime with digit sum n, or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A073864 extends Sequence1 {

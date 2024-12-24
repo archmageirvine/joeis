@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073655.
+ * A073872 Smallest positive triangular number not included earlier that is a multiple of n (a permutation of the triangular numbers).
  * @author Sean A. Irvine
  */
 public class A073872 extends Sequence1 {

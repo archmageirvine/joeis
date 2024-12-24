@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002808;
 
 /**
- * A073655.
+ * A073895 a(1)=1. a(n)=a(n-1)+k(n). If a(n-1) is nonprime, k(n) is the smallest composite not in the set {k(i),i&lt;n}. If a(n-1) is prime, k(n) is the smallest prime not in the set {k(i),i&lt;n}.
  * @author Sean A. Irvine
  */
 public class A073895 extends Sequence1 {

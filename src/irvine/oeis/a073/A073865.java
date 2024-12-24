@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073655.
+ * A073865 Largest n-digit prime with digit sum n, or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A073865 extends Sequence1 {

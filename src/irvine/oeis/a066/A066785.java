@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066785 Numbers n such that (n, phi(n), sigma(n)) lies on a sphere with integral radius centered at the origin, i.e., n^2 + phi(n)^2 + sigma(n)^2 is a square.
+ * A066785 Numbers k such that (k, phi(k), sigma(k)) lies on a sphere with integral radius centered at the origin, i.e., k^2 + phi(k)^2 + sigma(k)^2 is a square.
  * @author Sean A. Irvine
  */
 public class A066785 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A377825 Number of distinct permutations of the terms of the n-th row of Pascal&apos;s triangle with alternating signs.
+ * A377825 Number of distinct permutations of the terms of the n-th row of Pascal's triangle with alternating signs.
  * @author Georg Fischer
  */
 public class A377825 extends LambdaSequence {

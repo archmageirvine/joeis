@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073828.
+ * A073833 Numerators of b(n) where b(1) = 1, b(i) = b(i-1) + 1/b(i-1).
  * @author Sean A. Irvine
  */
 public class A073833 extends Sequence1 {

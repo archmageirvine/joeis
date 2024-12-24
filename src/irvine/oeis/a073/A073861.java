@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002386;
 
 /**
- * A073655.
+ * A073861 Smaller of pair of successive n-digit primes with maximal difference.
  * @author Sean A. Irvine
  */
 public class A073861 extends A002386 {

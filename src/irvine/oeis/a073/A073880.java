@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A073655.
+ * A073880 a(1) = 1, a(n) = smallest palindrome not included earlier such that a(1)+...+a(n) is a palindrome.
  * @author Sean A. Irvine
  */
 public class A073880 extends FiniteSequence {

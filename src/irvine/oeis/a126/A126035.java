@@ -4,7 +4,7 @@ package irvine.oeis.a126;
 import irvine.oeis.a124.A124262;
 
 /**
- * A126035 a(n) is largest prime &lt; 7*a(n-1).
+ * A126035 a(n) is the largest prime &lt; 7*a(n-1) for n &gt; 1, with a(1) = 2.
  * @author Georg Fischer
  */
 public class A126035 extends A124262 {

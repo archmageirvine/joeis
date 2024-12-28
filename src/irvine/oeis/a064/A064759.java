@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.a000.A000142;
 
 /**
- * A064759 Numbers n such that n! - Fibonacci(n) is prime.
+ * A064759 Numbers k such that k! - Fibonacci(k) is prime.
  * @author Sean A. Irvine
  */
 public class A064759 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a060;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A060560 Number of ways to color vertices of an octagon using &lt;= n colors, allowing rotations and reflections.
+ * A060560 Number of ways to color the vertices of an octagon using &lt;= n colors, allowing rotations and reflections.
  * @author Georg Fischer
  */
 public class A060560 extends GeneratingFunctionSequence {

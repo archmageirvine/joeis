@@ -9,6 +9,8 @@ import irvine.math.MemoryFunction1;
 import irvine.math.api.Field;
 import irvine.math.api.Group;
 import irvine.math.api.Matrix;
+import irvine.math.cr.CR;
+import irvine.math.cr.ComputableReals;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.polynomial.Discriminant;
 import irvine.math.polynomial.Polynomial;
@@ -647,6 +649,7 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
    * @param n maximum degree (may sometimes exceed this)
    * @return series for <code>sqrt(1-p)</code>.
    */
+  @SuppressWarnings("unchecked")
   public Polynomial<E> sqrt(final Polynomial<E> p, final int n) {
     // Make sure the lowest non-zero coefficient is an even power
     int m = 0;
@@ -654,6 +657,11 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
       ++m;
     }
     if ((m & 1) != 0 || !mElementField.one().equals(p.coeff(m))) {
+      if (mElementField instanceof ComputableReals) {
+        // Divide through by leading coefficient, then sqrt, then multiply back through
+        final Polynomial<E> q = divide(p, p.coeff(m));
+        return multiply(sqrt(q, n), (E) ((CR) p.coeff(m)).sqrt());
+      }
       throw new UnsupportedOperationException(p.toString());
     }
     // sqrt(x^m * f(x)) m even is x^(m/2) * sqrt(f(x))

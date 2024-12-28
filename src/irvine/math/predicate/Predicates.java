@@ -22,6 +22,8 @@ public final class Predicates {
   public static final Predicate POWER = new Power();
   /** Test if a number is a prime power. */
   public static final Predicate PRIME_POWER = new PrimePower();
+  /** Test if a number is a nontrivial prime power (i.e., with exponent &gt; 1). */
+  public static final Predicate NONTRIVIAL_PRIME_POWER = new NontrivialPrimePower();
   /** Test if a number is a power of 2. */
   public static final Predicate POWER_OF_TWO = new PowerOfTwo();
   /** Test if a number is triangular. */

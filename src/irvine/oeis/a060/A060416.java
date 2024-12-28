@@ -4,7 +4,7 @@ package irvine.oeis.a060;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A060416 a(n) = n*4^n - 1.
+ * A060416 a(n) = n*4^n - 1, with a(0) = 1.
  * @author Georg Fischer
  */
 public class A060416 extends GeneratingFunctionSequence {

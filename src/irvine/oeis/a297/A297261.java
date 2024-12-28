@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A297261 Numbers whose base-7 digits have greater up-variation than down-variation; see Comments.
+ * A297261 Numbers whose base-7 digits have greater down-variation than up-variation; see Comments.
  * @author Georg Fischer
  */
 public class A297261 extends RunsBaseSequence {

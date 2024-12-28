@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A066872 p^2 + 1 as p runs through the primes.
+ * A066872 a(n) = prime(n)^2 + 1.
  * @author Georg Fischer
  */
 public class A066872 extends SingleTransformSequence {

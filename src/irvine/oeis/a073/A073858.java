@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073858 Numbers n such that sigma(phi(n)) divides phi(sigma(n)).
+ * A073858 Numbers k such that sigma(phi(k)) divides phi(sigma(k)).
  * @author Sean A. Irvine
  */
 public class A073858 extends Sequence1 {

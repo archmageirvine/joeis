@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 
 /**
- * A121048 a(n) = n + phi(n), for Euler totient function phi(n).
+ * A121048 a(n) = n + phi(n), where phi is the Euler totient function.
  * @author Georg Fischer
  */
 public class A121048 extends Sequence1 {

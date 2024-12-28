@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a013.A013929;
 
 /**
- * A049198 Squarefull numbers whose Euler totient function is squarefree.
+ * A049198 Numbers that are not squarefree whose Euler totient function is squarefree.
  * @author Sean A. Irvine
  */
 public class A049198 extends A013929 {

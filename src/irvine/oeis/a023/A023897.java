@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A023897 sigma_1(n) / phi(n) for balanced numbers.
+ * A023897 a(n) = sigma_1(k) / phi(k) where k = A020492(n) is the n-th balanced number.
  * @author Sean A. Irvine
  */
 public class A023897 extends Sequence1 {

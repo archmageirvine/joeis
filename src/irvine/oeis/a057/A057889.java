@@ -5,7 +5,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
 
 /**
- * A057889 Bit-reverse of n, including as many leading as trailing zeros.
+ * A057889 Bijective bit-reverse of n: keep the trailing zeros in the binary expansion of n fixed, but reverse all the digits up to that point.
  * @author Georg Fischer
  */
 public class A057889 extends AbstractSequence implements DirectSequence {

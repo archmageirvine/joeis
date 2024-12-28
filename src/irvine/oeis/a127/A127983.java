@@ -4,7 +4,7 @@ package irvine.oeis.a127;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A127983 Numbers of the form (n - 2/3)*2^(n) - n/2 + 3/4 - (-1)^n/12.
+ * A127983 a(n) = (n - 2/3)*2^n - n/2 + 3/4 - (-1)^n/12.
  * @author Georg Fischer
  */
 public class A127983 extends LinearRecurrence {

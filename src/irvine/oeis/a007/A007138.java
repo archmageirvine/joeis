@@ -14,11 +14,21 @@ import irvine.oeis.Sequence1;
 public class A007138 extends Sequence1 {
 
   private final HashSet<Z> mS = new HashSet<>();
+  private final long mBase;
   private Z mN = Z.ONE;
+
+  protected A007138(final long base) {
+    mBase = base;
+  }
+
+  /** Construct the sequence. */
+  public A007138() {
+    this(10);
+  }
 
   @Override
   public Z next() {
-    mN = mN.multiply(10);
+    mN = mN.multiply(mBase);
     final FactorSequence fs = Jaguar.factor(mN.subtract(1));
     Z res = null;
     for (final Z p : fs.toZArray()) {
@@ -27,6 +37,6 @@ public class A007138 extends Sequence1 {
         res = p;
       }
     }
-    return res;
+    return res == null ? Z.ONE : res;
   }
 }

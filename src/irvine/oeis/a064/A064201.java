@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A064201 9 times octagonal numbers: a(n) = 9n(3n-2).
+ * A064201 9 times octagonal numbers: a(n) = 9*n*(3*n-2).
  * @author Sean A. Irvine
  */
 public class A064201 extends LinearRecurrence {

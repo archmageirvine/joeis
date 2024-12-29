@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A232296 Number of 2Xn 0..2 arrays with every 0 next to a 1 and every 1 next to a 2 horizontally or antidiagonally
+ * A232296 Number of 2Xn 0..2 arrays with every 0 next to a 1 and every 1 next to a 2 horizontally or antidiagonally.
  * @author Georg Fischer
  */
 public class A232296 extends GeneratingFunctionSequence implements Conjectural {

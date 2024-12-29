@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A183324 Number of nX3 binary arrays with each 1 adjacent to exactly two other 1s
+ * A183324 Number of nX3 binary arrays with each 1 adjacent to exactly two other 1s.
  * @author Georg Fischer
  */
 public class A183324 extends GeneratingFunctionSequence implements Conjectural {

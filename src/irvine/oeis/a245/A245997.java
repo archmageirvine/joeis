@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A245997 Number of length 2+2 0..n arrays with no pair in any consecutive three terms totalling exactly n
+ * A245997 Number of length 2+2 0..n arrays with no pair in any consecutive three terms totalling exactly n.
  * @author Georg Fischer
  */
 public class A245997 extends GeneratingFunctionSequence implements Conjectural {

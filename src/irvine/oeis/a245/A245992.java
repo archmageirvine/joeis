@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A245992 Number of length n+2 0..5 arrays with no pair in any consecutive three terms totalling exactly 5
+ * A245992 Number of length n+2 0..5 arrays with no pair in any consecutive three terms totalling exactly 5.
  * @author Georg Fischer
  */
 public class A245992 extends GeneratingFunctionSequence implements Conjectural {

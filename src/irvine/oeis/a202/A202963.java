@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A202963 Number of arrays of 3 integers in -n..n with sum zero and adjacent elements differing in absolute value
+ * A202963 Number of arrays of 3 integers in -n..n with sum zero and adjacent elements differing in absolute value.
  * @author Georg Fischer
  */
 public class A202963 extends GeneratingFunctionSequence implements Conjectural {

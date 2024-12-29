@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A217639 Number of nX2 arrays of the minimum value of corresponding elements and their horizontal, vertical or antidiagonal neighbors in a random 0..2 nX2 array
+ * A217639 Number of nX2 arrays of the minimum value of corresponding elements and their horizontal, vertical or antidiagonal neighbors in a random 0..2 nX2 array.
  * @author Georg Fischer
  */
 public class A217639 extends GeneratingFunctionSequence implements Conjectural {

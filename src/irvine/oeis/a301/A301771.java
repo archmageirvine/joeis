@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A301771 Number of odd chordless cycles in the n-Andr√°sfai graph.
+ * A301771 Number of odd chordless cycles in the n-Andr\u00e1sfai graph.
  * @author Georg Fischer
  */
 public class A301771 extends GeneratingFunctionSequence implements Conjectural {

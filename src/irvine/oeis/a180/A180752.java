@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A180752 Half the number of nX3 binary arrays with each element equal to at least two neighbors
+ * A180752 Half the number of nX3 binary arrays with each element equal to at least two neighbors.
  * @author Georg Fischer
  */
 public class A180752 extends GeneratingFunctionSequence implements Conjectural {

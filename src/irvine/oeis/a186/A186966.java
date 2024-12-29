@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A186966 Number of 3-turn queen&apos;s tours on an n X n board summed over all starting positions.
+ * A186966 Number of 3-turn queen's tours on an n X n board summed over all starting positions.
  * @author Georg Fischer
  */
 public class A186966 extends GeneratingFunctionSequence implements Conjectural {

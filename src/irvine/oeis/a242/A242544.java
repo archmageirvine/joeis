@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A242544 Number of length n+3 0..3 arrays with no four elements in a row with pattern aabb (possibly a=b) and new values 0..3 introduced in 0..3 order
+ * A242544 Number of length n+3 0..3 arrays with no four elements in a row with pattern aabb (possibly a=b) and new values 0..3 introduced in 0..3 order.
  * @author Georg Fischer
  */
 public class A242544 extends GeneratingFunctionSequence implements Conjectural {

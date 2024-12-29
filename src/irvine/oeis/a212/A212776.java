@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A212776 Half the number of 0..2 arrays of length n+2 with second differences nonzero
+ * A212776 Half the number of 0..2 arrays of length n+2 with second differences nonzero.
  * @author Georg Fischer
  */
 public class A212776 extends GeneratingFunctionSequence implements Conjectural {

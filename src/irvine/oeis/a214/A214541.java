@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A214541 Number of 3X3X3 triangular 0..n arrays with no element lying outside the (possibly reversed) range delimited by its sw and se neighbors, and every horizontal row having the same average value
+ * A214541 Number of 3X3X3 triangular 0..n arrays with no element lying outside the (possibly reversed) range delimited by its sw and se neighbors, and every horizontal row having the same average value.
  * @author Georg Fischer
  */
 public class A214541 extends GeneratingFunctionSequence implements Conjectural {

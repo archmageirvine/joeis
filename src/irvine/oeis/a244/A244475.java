@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A244475 5th-largest term in the n-th row of Stern&apos;s diatomic triangle A002487.
+ * A244475 5th-largest term in the n-th row of Stern's diatomic triangle A002487.
  * @author Georg Fischer
  */
 public class A244475 extends GeneratingFunctionSequence implements Conjectural {

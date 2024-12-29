@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A193642 Number of arrays of -2..2 integers x(1..n) with every x(i) in a subsequence of length 1 or 2 with sum zero
+ * A193642 Number of arrays of -2..2 integers x(1..n) with every x(i) in a subsequence of length 1 or 2 with sum zero.
  * @author Georg Fischer
  */
 public class A193642 extends GeneratingFunctionSequence implements Conjectural {

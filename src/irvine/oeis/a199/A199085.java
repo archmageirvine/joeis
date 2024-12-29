@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A199085 Number of distinct values taken by 3rd derivative of x^x^...^x (with n x&apos;s and parentheses inserted in all possible ways) at x=1.
+ * A199085 Number of distinct values taken by 3rd derivative of x^x^...^x (with n x's and parentheses inserted in all possible ways) at x=1.
  * @author Georg Fischer
  */
 public class A199085 extends GeneratingFunctionSequence implements Conjectural {

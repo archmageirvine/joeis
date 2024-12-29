@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A228012 The 2-color Rado number for the equation x_1 + x_2 + ... + x_n = 2*x_0
+ * A228012 The 2-color Rado number for the equation x_1 + x_2 + ... + x_n = 2*x_0.
  * @author Georg Fischer
  */
 public class A228012 extends GeneratingFunctionSequence implements Conjectural {

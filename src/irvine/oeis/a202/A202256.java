@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A202256 Number of zero-sum -n..n arrays of 6 elements with adjacent element differences also in -n..n
+ * A202256 Number of zero-sum -n..n arrays of 6 elements with adjacent element differences also in -n..n.
  * @author Georg Fischer
  */
 public class A202256 extends GeneratingFunctionSequence implements Conjectural {

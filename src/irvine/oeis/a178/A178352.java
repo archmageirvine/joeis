@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A178352 Number of collinear point triples in a 6 X 6 X 6 X ... n-dimensional cubic grid
+ * A178352 Number of collinear point triples in a 6 X 6 X 6 X ... n-dimensional cubic grid.
  * @author Georg Fischer
  */
 public class A178352 extends GeneratingFunctionSequence implements Conjectural {

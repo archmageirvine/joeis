@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A245135 Number of length 5 0..n arrays least squares fitting to a zero slope straight line, with a single point taken as having zero slope
+ * A245135 Number of length 5 0..n arrays least squares fitting to a zero slope straight line, with a single point taken as having zero slope.
  * @author Georg Fischer
  */
 public class A245135 extends GeneratingFunctionSequence implements Conjectural {

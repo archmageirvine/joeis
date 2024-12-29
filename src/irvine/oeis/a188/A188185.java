@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A188185 Number of strictly increasing arrangements of 7 numbers in -(n+5)..(n+5) with sum zero
+ * A188185 Number of strictly increasing arrangements of 7 numbers in -(n+5)..(n+5) with sum zero.
  * @author Georg Fischer
  */
 public class A188185 extends GeneratingFunctionSequence implements Conjectural {

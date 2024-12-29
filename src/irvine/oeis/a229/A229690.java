@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A229690 Number of defective 3-colorings of an nX4 0..2 array connected horizontally and antidiagonally with exactly two mistakes, and colors introduced in row-major 0..2 order
+ * A229690 Number of defective 3-colorings of an nX4 0..2 array connected horizontally and antidiagonally with exactly two mistakes, and colors introduced in row-major 0..2 order.
  * @author Georg Fischer
  */
 public class A229690 extends GeneratingFunctionSequence implements Conjectural {

@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A193981 Number of ways to arrange 3 nonattacking triangular rooks on an nXnXn triangular grid
+ * A193981 Number of ways to arrange 3 nonattacking triangular rooks on an nXnXn triangular grid.
  * @author Georg Fischer
  */
 public class A193981 extends GeneratingFunctionSequence implements Conjectural {

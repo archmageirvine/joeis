@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A214108 Number of 0..3 colorings on an nX5 array circular in the 5 direction with new values 0..3 introduced in row major order
+ * A214108 Number of 0..3 colorings on an nX5 array circular in the 5 direction with new values 0..3 introduced in row major order.
  * @author Georg Fischer
  */
 public class A214108 extends GeneratingFunctionSequence implements Conjectural {

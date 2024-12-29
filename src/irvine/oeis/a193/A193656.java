@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A193656 Q-residue of the triangle p(n,k)=(2^(n - k))*5^k, 0&lt;=k&lt;=n, where Q is the triangular array (t(i,j)) given by t(i,j)=1.  (See Comments.)
+ * A193656 Q-residue of the triangle p(n,k)=(2^(n - k))*5^k, 0&lt;=k&lt;=n, where Q is the triangular array (t(i,j)) given by t(i,j)=1.  (See Comments.).
  * @author Georg Fischer
  */
 public class A193656 extends GeneratingFunctionSequence implements Conjectural {

@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A232345 Number of (n+1)X(1+1) 0..2 arrays with every element both &gt;= and &lt;= some horizontal, vertical, diagonal or antidiagonal neighbor
+ * A232345 Number of (n+1)X(1+1) 0..2 arrays with every element both &gt;= and &lt;= some horizontal, vertical, diagonal or antidiagonal neighbor.
  * @author Georg Fischer
  */
 public class A232345 extends GeneratingFunctionSequence implements Conjectural {

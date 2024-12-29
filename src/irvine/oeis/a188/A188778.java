@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A188778 Number of 3-turn bishop&apos;s tours on an n X n board summed over all starting positions
+ * A188778 Number of 3-turn bishop's tours on an n X n board summed over all starting positions.
  * @author Georg Fischer
  */
 public class A188778 extends GeneratingFunctionSequence implements Conjectural {

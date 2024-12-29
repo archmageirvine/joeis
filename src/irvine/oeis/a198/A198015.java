@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A198015 Number of isomorphism classes of nanocones with 4 pentagons and a symmetric boundary of length n
+ * A198015 Number of isomorphism classes of nanocones with 4 pentagons and a symmetric boundary of length n.
  * @author Georg Fischer
  */
 public class A198015 extends GeneratingFunctionSequence implements Conjectural {

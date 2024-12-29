@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A188335 Number of nondecreasing arrangements of 5 nonzero numbers in -(n+3)..(n+3) with sum zero
+ * A188335 Number of nondecreasing arrangements of 5 nonzero numbers in -(n+3)..(n+3) with sum zero.
  * @author Georg Fischer
  */
 public class A188335 extends GeneratingFunctionSequence implements Conjectural {

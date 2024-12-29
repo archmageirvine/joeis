@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A200330 Number of 0..n arrays x(0..6) of 7 elements with zero 3rd differences
+ * A200330 Number of 0..n arrays x(0..6) of 7 elements with zero 3rd differences.
  * @author Georg Fischer
  */
 public class A200330 extends GeneratingFunctionSequence implements Conjectural {

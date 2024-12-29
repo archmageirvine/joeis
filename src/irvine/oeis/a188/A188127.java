@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A188127 Number of strictly increasing arrangements of 8 nonzero numbers in -(n+6)..(n+6) with sum zero
+ * A188127 Number of strictly increasing arrangements of 8 nonzero numbers in -(n+6)..(n+6) with sum zero.
  * @author Georg Fischer
  */
 public class A188127 extends GeneratingFunctionSequence implements Conjectural {

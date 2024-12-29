@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A251213 Number of (n+1)X(2+1) 0..1 arrays with no 2X2 subblock having zero or two 1s
+ * A251213 Number of (n+1)X(2+1) 0..1 arrays with no 2X2 subblock having zero or two 1s.
  * @author Georg Fischer
  */
 public class A251213 extends GeneratingFunctionSequence implements Conjectural {

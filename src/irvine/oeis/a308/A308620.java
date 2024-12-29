@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A308620 Number of states in the evolutionary spatial prisoner&apos;s dilemma with n players.
+ * A308620 Number of states in the evolutionary spatial prisoner's dilemma with n players.
  * @author Georg Fischer
  */
 public class A308620 extends GeneratingFunctionSequence implements Conjectural {

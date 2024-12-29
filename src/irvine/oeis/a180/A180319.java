@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A180319 Total number of possible standard knight moves on an n X 2n chessboard, if the knight is placed anywhere
+ * A180319 Total number of possible standard knight moves on an n X 2n chessboard, if the knight is placed anywhere.
  * @author Georg Fischer
  */
 public class A180319 extends GeneratingFunctionSequence implements Conjectural {

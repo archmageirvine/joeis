@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A213802 Number of 4X4 0..n symmetric arrays with all rows summing to 2*n
+ * A213802 Number of 4X4 0..n symmetric arrays with all rows summing to 2*n.
  * @author Georg Fischer
  */
 public class A213802 extends GeneratingFunctionSequence implements Conjectural {

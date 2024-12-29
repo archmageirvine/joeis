@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A214596 Number of 3X3X3 triangular 0..n arrays with every horizontal row having the same average value
+ * A214596 Number of 3X3X3 triangular 0..n arrays with every horizontal row having the same average value.
  * @author Georg Fischer
  */
 public class A214596 extends GeneratingFunctionSequence implements Conjectural {

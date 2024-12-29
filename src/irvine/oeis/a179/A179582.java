@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A179582 Number of permutations of 1..n+7 with the number moved left exceeding the number moved right by n or more
+ * A179582 Number of permutations of 1..n+7 with the number moved left exceeding the number moved right by n or more.
  * @author Georg Fischer
  */
 public class A179582 extends GeneratingFunctionSequence implements Conjectural {

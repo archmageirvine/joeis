@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A200218 The differences x^3 - y^2 of Danilov&apos;s subsequence of good Hall&apos;s examples A078933.
+ * A200218 The differences x^3 - y^2 of Danilov's subsequence of good Hall's examples A078933.
  * @author Georg Fischer
  */
 public class A200218 extends GeneratingFunctionSequence implements Conjectural {

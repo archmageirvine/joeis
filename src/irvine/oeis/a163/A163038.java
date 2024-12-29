@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A163038 Number of nX3 binary arrays with all 1s connected and a path of 1s from left column to right column
+ * A163038 Number of nX3 binary arrays with all 1s connected and a path of 1s from left column to right column.
  * @author Georg Fischer
  */
 public class A163038 extends GeneratingFunctionSequence implements Conjectural {

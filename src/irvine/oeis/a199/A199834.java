@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A199834 Number of -n..n arrays x(0..4) of 5 elements with zero sum and no two neighbors summing to zero
+ * A199834 Number of -n..n arrays x(0..4) of 5 elements with zero sum and no two neighbors summing to zero.
  * @author Georg Fischer
  */
 public class A199834 extends GeneratingFunctionSequence implements Conjectural {

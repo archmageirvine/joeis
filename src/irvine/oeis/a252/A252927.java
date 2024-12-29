@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A252927 Number of nX5 nonnegative integer arrays with upper left 0 and lower right n+5-6 and value increasing by 0 or 1 with every step right or down
+ * A252927 Number of nX5 nonnegative integer arrays with upper left 0 and lower right n+5-6 and value increasing by 0 or 1 with every step right or down.
  * @author Georg Fischer
  */
 public class A252927 extends GeneratingFunctionSequence implements Conjectural {

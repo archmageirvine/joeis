@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A338024 Minimal number of moves for the cyclic variant of Hanoi&apos;s tower for 4 pegs and n disks, with the final peg one step away.
+ * A338024 Minimal number of moves for the cyclic variant of Hanoi's tower for 4 pegs and n disks, with the final peg one step away.
  * @author Georg Fischer
  */
 public class A338024 extends GeneratingFunctionSequence implements Conjectural {

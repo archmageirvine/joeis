@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A188517 Number of nX3 binary arrays without the pattern 1 1 0 diagonally, vertically or horizontally
+ * A188517 Number of nX3 binary arrays without the pattern 1 1 0 diagonally, vertically or horizontally.
  * @author Georg Fischer
  */
 public class A188517 extends GeneratingFunctionSequence implements Conjectural {

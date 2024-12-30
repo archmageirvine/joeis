@@ -19,8 +19,8 @@ public final class IntegerPartition {
   private static final int[] EMPTY = {};
   private final int[] mX;
   private boolean mFirst = true;
-  private int mM = 0;
-  private int mH = 0;
+  private int mM = 0; // Index of last active value in the partition
+  private int mH = 0; // Index of last non-1 value in the partition
 
   /**
    * Construct a new object for getting the integer partitions of a number.
@@ -35,6 +35,33 @@ public final class IntegerPartition {
     if (n > 0) {
       Arrays.fill(mX, 1);
       mX[0] = n;
+    }
+  }
+
+  /**
+   * Construct a new object for getting the integer partitions of a number.
+   * @param n number
+   * @param maxPart maximum part size
+   * @exception IllegalArgumentException if <code>n</code> is negative.
+   */
+  public IntegerPartition(final int n, final int maxPart) {
+    if (n < 0) {
+      throw new IllegalArgumentException();
+    }
+    final int m = Math.min(n, maxPart); // maximum value in partition
+    mX = new int[n];
+    if (n > 0) {
+      Arrays.fill(mX, 1);
+      int r = n;
+      while (r > 0) {
+        mX[mM++] = Math.min(r, m);
+        r -= m;
+      }
+      --mM;
+      mH = mM;
+      while (mH >= 0 && mX[mH] == 1) {
+        --mH;
+      }
     }
   }
 
@@ -88,7 +115,7 @@ public final class IntegerPartition {
   public int[] next() {
     if (mFirst) {
       mFirst = false;
-      return mX.length == 0 ? EMPTY : new int[] {mX[0]};
+      return mX.length == 0 ? EMPTY : Arrays.copyOf(mX, mM + 1);
     }
     if (mX.length == 0 || mX[0] == 1) {
       return null;

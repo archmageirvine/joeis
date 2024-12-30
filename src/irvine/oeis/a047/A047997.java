@@ -26,10 +26,10 @@ public class A047997 extends Sequence1 {
     if (t <= 0) {
       return Z.ONE;
     }
-    final IntegerPartition part = new IntegerPartition(t);
+    final IntegerPartition part = new IntegerPartition(t, max);
     int[] p;
     while ((p = part.next()) != null) {
-      if (p.length <= mM && p[0] <= max) {
+      if (p.length <= mM) {
         ++cnt;
       }
     }

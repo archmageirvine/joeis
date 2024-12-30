@@ -20,10 +20,10 @@ public class A067059 extends Sequence0 {
     if (t <= 0) {
       return Z.ONE;
     }
-    final IntegerPartition part = new IntegerPartition(t);
+    final IntegerPartition part = new IntegerPartition(t, m);
     int[] p;
     while ((p = part.next()) != null) {
-      if (p.length <= n && p[0] <= m) {
+      if (p.length <= n) {
         ++cnt;
       }
     }

@@ -4,17 +4,14 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A001037 Number of degree-n irreducible polynomials over GF(2); number of n-bead necklaces with beads of 2 colors when turning over is not allowed and with primitive period n; number of binary Lyndon words of length n.
  * @author Sean A. Irvine
  */
-public class A001037 extends AbstractSequence {
+public class A001037 extends AbstractSequence implements DirectSequence {
 
-  /**
-   * Constructor with offset.
-   * @param offset first index
-   */
   protected A001037(final int offset) {
     super(offset);
   }
@@ -27,16 +24,25 @@ public class A001037 extends AbstractSequence {
   protected int mN = -1;
 
   @Override
-  public Z next() {
-    if (++mN == 0) {
+  public Z a(final Z n) {
+    if (n.isZero()) {
       return Z.ONE;
     }
     Z sum = Z.ZERO;
-    for (final Z dd : Jaguar.factor(mN).divisors()) {
-      final int d = dd.intValue();
-      final Z z = Z.ONE.shiftLeft(d);
-      sum = sum.add(z.multiply(Functions.MOBIUS.i(mN / d)));
+    for (final Z dd : Jaguar.factor(n).divisors()) {
+      final Z z = Z.ONE.shiftLeft(dd.longValueExact());
+      sum = sum.add(z.multiply(Functions.MOBIUS.i(n.divide(dd))));
     }
-    return sum.divide(mN);
+    return sum.divide(n);
+  }
+
+  @Override
+  public Z a(final int n) {
+    return a(Z.valueOf(n));
+  }
+
+  @Override
+  public Z next() {
+    return a(++mN);
   }
 }

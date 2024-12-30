@@ -17,10 +17,10 @@ public class A002838 extends Sequence1 {
     ++mN;
     final int pn = mN * (mN + 1) / 2;
     long c = 0;
-    final IntegerPartition part = new IntegerPartition(pn);
+    final IntegerPartition part = new IntegerPartition(pn, mN + 1);
     int[] p;
     while ((p = part.next()) != null) {
-      if (p.length <= mN && p[0] <= mN + 1) {
+      if (p.length <= mN) {
         ++c;
       }
     }

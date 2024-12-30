@@ -1,8 +1,8 @@
 package irvine.math.group;
 
+import irvine.math.api.Field;
 import irvine.math.api.Group;
 import irvine.math.z.Z;
-import irvine.math.api.Field;
 
 
 /**

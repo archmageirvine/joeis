@@ -9,7 +9,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a206.A206369;
 
 /**
- * A379619 Numerators of the partial sums of the reciprocals of the alternating sum of divisors function (A206369).
+ * A379619 allocated for Amiram Eldar.
  * @author Georg Fischer
  */
 public class A379619 extends LambdaSequence {

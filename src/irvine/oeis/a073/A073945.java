@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a000.A000720;
 
 /**
- * A073929.
+ * A073945 Numbers n such that n + pi(n) is a square.
  * @author Sean A. Irvine
  */
 public class A073945 extends FilterPositionSequence {

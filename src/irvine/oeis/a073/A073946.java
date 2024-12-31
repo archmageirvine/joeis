@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000290;
 
 /**
- * A073929.
+ * A073946 Squares k such that k + pi(k) is a prime.
  * @author Sean A. Irvine
  */
 public class A073946 extends FilterSequence {

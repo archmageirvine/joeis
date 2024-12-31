@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A379270 Numbers with only digits &quot;1&quot; and three digits &quot;0&quot;.
+ * A379270 Numbers with only digits "1" and three digits "0".
  * @author Georg Fischer
  */
 public class A379270 extends FilterNumberSequence {

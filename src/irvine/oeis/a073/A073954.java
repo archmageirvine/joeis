@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a066.A066417;
 
 /**
- * A073638.
+ * A073954 Numbers k such that the sum of the anti-divisors of k exceeds 2*k.
  * @author Sean A. Irvine
  */
 public class A073954 extends FilterPositionSequence {

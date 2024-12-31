@@ -13,7 +13,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001037;
 
 /**
- * A001037.
+ * A086908 Let R be the polynomial ring GF(2)[x]. Then a(n) = number of distinct products f*g with f,g in R and 0 &lt;= deg(f),deg(g) &lt;= n.
  * @author Sean A. Irvine
  */
 public class A086908 extends Sequence1 {
@@ -24,7 +24,7 @@ public class A086908 extends Sequence1 {
   private final DirectSequence mB = new A001037();
   private int mN = 0;
 
-  private Z partitionProduct(final int[] p, BiFunction<Integer, Integer, Z> f) {
+  private Z partitionProduct(final int[] p, final BiFunction<Integer, Integer, Z> f) {
     Z r = Z.ONE;
     int k = 0;
     for (int i = 1; i <= p.length; ++i) {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A073929.
+ * A073943 a(n) = smallest m such that n-th prime divides m^m + 1.
  * @author Sean A. Irvine
  */
 public class A073943 extends A000040 {

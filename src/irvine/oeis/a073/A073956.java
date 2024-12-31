@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002113;
 import irvine.oeis.a066.A066417;
 
 /**
- * A073638.
+ * A073956 Palindromes whose sum of anti-divisors is palindromic.
  * @author Sean A. Irvine
  */
 public class A073956 extends FilterSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a060.A060681;
 
 /**
- * A073929.
+ * A073932 Define f(n) = n - largest nontrivial divisor of n or f(n) = n-1 if n is a prime [that is, f(n) = A060681(n)]. Form a triangle in which the n-th row contains terms n, f(n), f(f(n)), ... until a 1 is reached; sequence gives triangle read by rows.
  * @author Sean A. Irvine
  */
 public class A073932 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A073929.
+ * A073958 Fibonacci numbers for which the number of prime factors (with multiplicity) is a Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A073958 extends FilterSequence {

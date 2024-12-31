@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a078.A078142;
 
 /**
- * A073929.
+ * A073939 Least m such that A078142(m) gives the n-th prime, where A078142(n) is the sum of the differences of the distinct prime factors p of n and the next square larger than p.
  * @author Sean A. Irvine
  */
 public class A073939 extends A078142 {

@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a066.A066417;
 
 /**
- * A073929.
+ * A073931 Numbers n such that the sum of the anti-divisors of n = 2n.
  * @author Sean A. Irvine
  */
 public class A073931 extends FilterPositionSequence {

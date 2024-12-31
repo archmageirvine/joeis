@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a092.A092559;
 
 /**
- * A073929.
+ * A073936 Numbers k such that 2^k + 1 is the product of two distinct primes.
  * @author Sean A. Irvine
  */
 public class A073936 extends A092559 {

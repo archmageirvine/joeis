@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a060.A060681;
 
 /**
- * A073929.
+ * A073935 Numbers n such that the n-th row of triangle in A073932 contains the divisors of n.
  * @author Sean A. Irvine
  */
 public class A073935 extends Sequence1 {

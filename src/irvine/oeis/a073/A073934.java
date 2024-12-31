@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a060.A060681;
 
 /**
- * A073929.
+ * A073934 Sum of terms in n-th row of triangle in A073932.
  * @author Sean A. Irvine
  */
 public class A073934 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A379153 The binary weights of the Ap√©ry numbers (A005259).
+ * A379153 The binary weights of the Ap\u00e9ry numbers (A005259).
  * @author Georg Fischer
  */
 public class A379153 extends LambdaSequence {

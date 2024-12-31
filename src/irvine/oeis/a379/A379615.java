@@ -9,7 +9,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a188.A188999;
 
 /**
- * A379615 Numerators of the partial sums of the reciprocals of the sum of bi-unitary divisors function (A188999).
+ * A379615 allocated for Amiram Eldar.
  * @author Georg Fischer
  */
 public class A379615 extends LambdaSequence {

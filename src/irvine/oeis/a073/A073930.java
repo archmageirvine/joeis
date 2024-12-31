@@ -4,7 +4,7 @@ import irvine.oeis.FixedPointPositionSequence;
 import irvine.oeis.a066.A066417;
 
 /**
- * A073929.
+ * A073930 Numbers that are equal to the sum of their anti-divisors.
  * @author Sean A. Irvine
  */
 public class A073930 extends FixedPointPositionSequence {

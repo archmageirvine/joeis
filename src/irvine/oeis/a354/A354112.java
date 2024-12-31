@@ -8,7 +8,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
 
 /**
- * A354112 Total number of 1&apos;s in binary expansion of all divisors of 2^n-1.
+ * A354112 Total number of 1's in binary expansion of all divisors of 2^n-1.
  * @author Georg Fischer
  */
 public class A354112 extends AbstractSequence implements DirectSequence {

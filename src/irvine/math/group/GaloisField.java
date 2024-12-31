@@ -12,6 +12,7 @@ import irvine.math.z.Z;
 public class GaloisField extends IntegersMod implements Field<Z> {
 
   private final Z mCharacteristic;
+  private final int mExponent;
 
   /**
    * Construct the Galois field <code>GF(p^k)</code>.
@@ -24,6 +25,7 @@ public class GaloisField extends IntegersMod implements Field<Z> {
       throw new IllegalArgumentException();
     }
     mCharacteristic = p;
+    mExponent = k;
   }
 
   /**
@@ -61,4 +63,31 @@ public class GaloisField extends IntegersMod implements Field<Z> {
   public Z characteristic() {
     return mCharacteristic;
   }
+
+  // The following does not work
+
+//  public Polynomial<Z> toPoly(final PolynomialRing<Z> ring, final Z n) {
+//    // Convert n to a polynomial representation in base p
+//    final Polynomial<Z> a = ring.empty();
+//    Z m = n;
+//    while (!m.isZero()) {
+//      final Z[] qr = m.divideAndRemainder(characteristic());
+//      a.add(qr[1]);
+//      m = qr[0];
+//    }
+//    return a;
+//  }
+//
+//  public Polynomial<Z> characteristicPolynomial(final Z n) {
+//    final long p = characteristic().longValueExact();
+//    final PolynomialRing<Z> ring = new PolynomialRing<>(new IntegersMod(p));
+//    Polynomial<Z> cp = ring.one();
+//    for (int k = 0; k < mExponent; ++k) {
+//      final Polynomial<Z> t = toPoly(ring, n.modPow(characteristic().pow(k), size()));
+//      //System.out.println(n + " -> t=" + t + " np was " + toPoly(ring, np));
+//      cp = ring.multiply(cp, ring.subtract(ring.x(), t), k);
+//      //assert cp.degree() < mExponent;
+//    }
+//    return cp;
+//  }
 }

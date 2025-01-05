@@ -24,7 +24,7 @@ public class A111594 extends BaseTriangle {
     this(0, new A005359());
   }
 
-  public A111594(final int offset, final Sequence seq) {
+  protected A111594(final int offset, final Sequence seq) {
     super(offset, offset, offset);
     mSeq = seq;
   }

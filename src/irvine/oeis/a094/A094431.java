@@ -12,6 +12,6 @@ public class A094431 extends GeneratingFunctionSequence implements Conjectural {
 
   /** Construct the sequence. */
   public A094431() {
-    super(1, "[0,1,-6]", "[1,-8,9]");
+    super(0, "[1,-7,3]", "[1,-8,9]");
   }
 }

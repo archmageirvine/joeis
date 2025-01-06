@@ -17,7 +17,7 @@ public class A059006 extends Sequence1 {
 
   private static final GaloisField GF7 = new GaloisField(7);
   private static final PolynomialRingField<Z> GF7X = new PolynomialRingField<>(GF7);
-  private int mN = 2;
+  private int mN = 1;
 
   @Override
   public Z next() {

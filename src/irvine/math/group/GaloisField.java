@@ -221,25 +221,18 @@ public class GaloisField extends IntegersMod implements Field<Z> {
     throw new UnsupportedOperationException("Please update GaloisField with irreducible polynomial for " + this);
   }
 
-  @Override
-  public Z pow(final Z a, final long n) {
-    // Note: super.pow(a, n) would do the right thing in every case, but is
-    // slow for exponent > 1 due to conversions between representations
-    if (mExponent == 1 || n <= 1) {
-      return super.pow(a, n);
-    }
-    final Polynomial<Z> b = unpack(mBaseField, a);
-    final Polynomial<Z> s = AbstractRing.pow(mBaseField, mBaseField.mod(mBaseField.multiply(b, b), mIrreducible), n / 2);
-    return pack((n & 1) == 0 ? s : mBaseField.mod(mBaseField.multiply(s, b), mIrreducible));
-  }
-
+  /**
+   * The characteristic polynomial of a ring element.
+   * @param n element
+   * @return characteristic polynomial
+   */
   public Polynomial<Z> characteristicPolynomial(final Z n) {
     if (mExponent <= 1) {
-      return Polynomial.create(n.negate(), Z.ONE); // x - n
+      return Polynomial.create(mCharacteristic.subtract(n).mod(mCharacteristic), Z.ONE); // x - n
     }
     Polynomial<Z> cp = mBaseField.one();
     for (int k = 0; k < mExponent; ++k) {
-      final Z t = pow(n, mCharacteristic.pow(k).longValueExact());
+      final Z t = AbstractRing.pow(this, n, mCharacteristic.pow(k).longValueExact());
       cp = mBaseField.mod(mBaseField.multiply(cp, mBaseField.subtract(mBaseField.x(), unpack(mBaseField, t))), mIrreducible);
     }
     // This last addition for consistency with Sage and Magma

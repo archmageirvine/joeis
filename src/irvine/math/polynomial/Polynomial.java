@@ -143,13 +143,9 @@ public class Polynomial<E> extends ArrayList<E> {
    * Return the specified coefficient with 0 corresponding to the constant term.
    * @param n coefficient index
    * @return value of coefficient
-   * @exception IllegalArgumentException if <code>n</code> is negative.
    */
   public E coeff(final int n) {
-    if (n < 0) {
-      throw new IllegalArgumentException();
-    }
-    if (n >= size()) {
+    if (n < 0 || n >= size()) {
       return mZero;
     }
     return get(n);

@@ -4,12 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A007434 Jordan function J_2(n) (a generalization of phi(n)).
  * @author Sean A. Irvine
  */
-public class A007434 extends AbstractSequence {
+public class A007434 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -34,4 +35,23 @@ public class A007434 extends AbstractSequence {
     }
     return sum;
   }
+
+  @Override
+  public Z a(final Z n) {
+    Z sum = Z.ZERO;
+    for (final Z d : Jaguar.factor(n).divisors()) {
+      sum = sum.add(d.square().multiply(Functions.MOBIUS.i(n.divide(d))));
+    }
+    return sum;
+  }
+
+  @Override
+  public Z a(final int n) {
+    Z sum = Z.ZERO;
+    for (final Z d : Jaguar.factor(n).divisors()) {
+      sum = sum.add(d.square().multiply(Functions.MOBIUS.i(Z.valueOf(n).divide(d))));
+    }
+    return sum;
+  }
+
 }

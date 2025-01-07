@@ -20,7 +20,7 @@ public class A074051 extends Sequence0 {
 
   @Override
   public Z next() {
-    if (++mN != 0) {
+    if (++mN > 1) {
       mF = mF.multiply(mN);
     }
     return RING.exp(RING.subtract(RING.subtract(RING.one(), RING.monomial(Q.TWO, 1)), RING.exp(RING.negate(RING.x()), mN)), mN).coeff(mN).multiply(mF).toZ();

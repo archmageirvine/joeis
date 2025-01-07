@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A065692 Braided power sequence: this is b(n+1)=3b(n)+2d(n)-c(n), A065693 is c(n+1)=3c(n)+2b(n)-d(n) and A065694 is d(n+1)=3d(n)+2c(n)-b(n), starting with b(0)=0, c(0)=1 and d(0)=2.
+ * A065692 Braided power sequence: this is b(n+1) = 3*b(n) + 2*d(n) - c(n), A065693 is c(n+1) = 3*c(n) + 2*b(n) - d(n) and A065694 is d(n+1) = 3*d(n) + 2*c(n) - b(n), starting with b(0) = 0, c(0) = 1 and d(0) = 2.
  * @author Georg Fischer
  */
 public class A065692 extends GeneratingFunctionSequence implements Conjectural {

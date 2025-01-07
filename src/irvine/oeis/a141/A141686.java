@@ -7,7 +7,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A141686 Triangle T(n,m) = A008292(n,m)*binomial(n-1,m-1) read by rows.
+ * A141686 Triangle read by rows: T(n, k) = binomial(n-1, k-1)*A008292(n, k).
  * @author Georg Fischer
  */
 public class A141686 extends LambdaTriangle {

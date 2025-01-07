@@ -5,7 +5,7 @@ package irvine.oeis.a184;
 import irvine.oeis.ComplementSequence;
 
 /**
- * A184743 a(n) = floor(n*s + h - h*s), where s = sqrt(Pi)/(sqrt(Pi)-1), h = -1/2; complement of A184742.
+ * A184743 a(n) = floor(n*s + (s-1)/2), where s = sqrt(Pi)/(sqrt(Pi)-1).
  * @author Georg Fischer
  */
 public class A184743 extends ComplementSequence {

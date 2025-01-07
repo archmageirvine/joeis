@@ -8,7 +8,7 @@ import irvine.oeis.a112.A112765;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A379001 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; A046523(i) = A046523(j), v_2(i) = v_2(j), v_3(i) = v_3(j) and v_5(i) = v_5(j), for all i, j, where v_2 (A007814), v_3 (A007949) and v_5 (A112765) give the 2-, 3- and 5-adic valuations of
+ * A379001 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; A046523(i) = A046523(j), v_2(i) = v_2(j), v_3(i) = v_3(j) and v_5(i) = v_5(j), for all i, j, where v_2 (A007814), v_3 (A007949) and v_5 (A112765) give the 2-, 3- and 5-adic valuations of n respectively.
  * @author Georg Fischer
  */
 public class A379001 extends RestrictedGrowthTransformSequence {

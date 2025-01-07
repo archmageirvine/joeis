@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A065814 a(n) = tau(n)^2 - tau(n^2) = A000005(n)^2 - A000005(n^2).
+ * A065814 a(n) = tau(n)^2 - tau(n^2), where tau(n) = A000005(n).
  * @author Georg Fischer
  */
 public class A065814 extends AbstractSequence {

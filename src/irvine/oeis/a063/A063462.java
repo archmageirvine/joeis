@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A063462 n * last digit of n.
+ * A063462 a(n) = n * last digit of n.
  * @author Georg Fischer
  */
 public class A063462 extends Sequence0 {

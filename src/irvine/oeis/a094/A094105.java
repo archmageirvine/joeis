@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A094105 Primes of the form prime(n) + 2*prime(n+1).
+ * A094105 Primes of the form prime(k) + 2*prime(k+1).
  * @author Georg Fischer
  */
 public class A094105 extends FilterSequence {

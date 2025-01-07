@@ -6,7 +6,7 @@ import irvine.oeis.a008.A008589;
 import irvine.oeis.a014.A014574;
 
 /**
- * A127545 Multiples of 7 such that n +/- 1 are twin primes.
+ * A127545 Multiples of 7, k, such that k +/- 1 are twin primes.
  * @author Georg Fischer
  */
 public class A127545 extends IntersectionSequence {

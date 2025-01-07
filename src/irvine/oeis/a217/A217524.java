@@ -4,7 +4,7 @@ package irvine.oeis.a217;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A217524 A361072(n)/n!^3.
+ * A217524 a(n) = A361072(n)/n!^3.
  * @author Georg Fischer
  */
 public class A217524 extends FiniteSequence {

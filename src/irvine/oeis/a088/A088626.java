@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A088626 42*C(n,10).
+ * A088626 a(n) = 42*binomial(n,10).
  * @author Sean A. Irvine
  */
 public class A088626 extends LinearRecurrence {

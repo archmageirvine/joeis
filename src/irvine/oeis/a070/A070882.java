@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A070882 Least k such that A070867(k) = n, or 0 if no such k exist.
+ * A070882 Least k such that A070867(k) = n, or 0 if no such k exists.
  * @author Sean A. Irvine
  */
 public class A070882 extends Sequence1 {

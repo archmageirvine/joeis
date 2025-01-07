@@ -5,7 +5,7 @@ import irvine.oeis.a033.A033630;
 import irvine.oeis.transform.InverseMobiusTransformSequence;
 
 /**
- * A378436 Inverse M√∂bius transform of A033630, where A033630 is the number of partitions of n into distinct divisors of n.
+ * A378436 Inverse M\u00f6bius transform of A033630, where A033630 is the number of partitions of n into distinct divisors of n.
  * @author Georg Fischer
  */
 public class A378436 extends InverseMobiusTransformSequence {

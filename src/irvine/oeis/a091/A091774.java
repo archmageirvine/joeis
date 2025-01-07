@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A091774 G.f.: Product((1+x^i)/(1-x^i),i=1..n-1)/(1-x^n), with n = 6.
+ * A091774 Expansion of g.f. Product((1+x^i)/(1-x^i),i=1..n-1)/(1-x^n), with n = 6.
  * @author Sean A. Irvine
  */
 public class A091774 extends LinearRecurrence {

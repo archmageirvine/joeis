@@ -5,7 +5,7 @@ import irvine.oeis.a326.A326042;
 import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
- * A349626 M√∂bius transform of A326042, where A326042(n) = A064989(sigma(A003961(n))).
+ * A349626 M\u00f6bius transform of A326042, where A326042(n) = A064989(sigma(A003961(n))).
  * @author Georg Fischer
  */
 public class A349626 extends MobiusTransformSequence {

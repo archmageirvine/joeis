@@ -5,7 +5,7 @@ import irvine.oeis.a111.A111594;
 import irvine.oeis.a153.A153881;
 
 /**
- * A135494 Triangle read by rows: row n gives coefficients C(n,j) for a Sheffer sequence (binomial-type) with lowering operator (D-1)/2 + T{ (1/2) * exp[(D-1)/2] } where T(x) is Cayley&apos;s Tree function.
+ * A135494 Triangle read by rows: row n gives coefficients C(n,j) for a Sheffer sequence (binomial-type) with lowering operator (D-1)/2 + T{ (1/2) * exp[(D-1)/2] } where T(x) is Cayley's Tree function.
  * @author Georg Fischer
  */
 public class A135494 extends A111594 {

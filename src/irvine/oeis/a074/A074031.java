@@ -35,14 +35,14 @@ public class A074031 extends Sequence1 {
     return t == 0 ? mQ.subtract(1) : Z.NEG_ONE;
   }
 
-  protected Z h(final int n, final int a) {
+  protected Z h(final int n, final int subtrace) {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(n).divisors()) {
       if (dd.isOdd()) {
         final int d = dd.intValue();
         final int mu = Functions.MOBIUS.i(d);
         if (mu != 0) {
-          final Z t = dd(a, n / d);
+          final Z t = dd(subtrace, n / d);
           sum = sum.signedAdd(mu == 1, (n & 1) == 0 ? t.subtract(qp(n / (2 * d) - 1)) : t);
         }
       }

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A061983 3^n - (3n^2 + n + 2)/2.
+ * A061983 a(n) = 3^n - (3*n^2 + n + 2)/2.
  * @author Georg Fischer
  */
 public class A061983 extends Sequence0 {

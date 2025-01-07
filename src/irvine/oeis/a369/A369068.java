@@ -5,7 +5,7 @@ import irvine.oeis.a083.A083345;
 import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
- * A369068 M√∂bius transform of A083345, where A083345(n) = n&apos; / gcd(n,n&apos;), and n&apos; stands for the arithmetic derivative of n, A003415.
+ * A369068 M\u00f6bius transform of A083345, where A083345(n) = n' / gcd(n,n'), and n' stands for the arithmetic derivative of n, A003415.
  * @author Georg Fischer
  */
 public class A369068 extends MobiusTransformSequence {

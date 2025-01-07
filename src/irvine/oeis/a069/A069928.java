@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a245.A245656;
 
 /**
- * A069928 Number of k, 1&lt;=k&lt;=n, such that tau(k) divides sigma(k) where tau(x) is the number of divisors of x and sigma(x) the sum of divisors of x.
+ * A069928 Number of integers k, 1&lt;=k&lt;=n, such that tau(k) divides sigma(k) where tau(k) is the number of divisors of k and sigma(k) the sum of divisors of k.
  * @author Sean A. Irvine
  */
 public class A069928 extends PartialSumSequence {

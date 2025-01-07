@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A081861 (1/24)*(sigma_3(2n-1)-sigma_1(2n-1)).
+ * A081861 a(n) = (1/24)*(sigma_3(2*n-1) - sigma_1(2*n-1)).
  * a(n)=(sigma(2*n-1,3)-sigma(2*n-1,1))/24
  * @author Georg Fischer
  */

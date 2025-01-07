@@ -6,7 +6,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a007.A007376;
 
 /**
- * A128178 A007376(8n+3).
+ * A128178 a(n) = A007376(8n+3).
  * @author Georg Fischer
  */
 public class A128178 extends LambdaSequence {

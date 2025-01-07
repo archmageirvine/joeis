@@ -3,7 +3,7 @@ package irvine.oeis.a039;
 import irvine.math.z.Z;
 
 /**
- * A039761 Triangle of D-analogs of Stirling numbers of 2nd kind.
+ * A039761 Triangle of D-analogs of Stirling numbers of the 2nd kind.
  * @author Sean A. Irvine
  */
 public class A039761 extends A039760 {

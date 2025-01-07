@@ -3,7 +3,7 @@ package irvine.oeis.a268;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A268539 Numbers k such that 48*k+25 is a perfect square.
+ * A268539 Numbers k such that 48*k + 25 is a perfect square.
  * @author Sean A. Irvine
  */
 public class A268539 extends LinearRecurrence {

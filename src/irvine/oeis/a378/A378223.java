@@ -5,7 +5,7 @@ import irvine.oeis.a345.A345182;
 import irvine.oeis.transform.InverseMobiusTransformSequence;
 
 /**
- * A378223 Inverse M√∂bius transform of A345182.
+ * A378223 Inverse M\u00f6bius transform of A345182.
  * @author Georg Fischer
  */
 public class A378223 extends InverseMobiusTransformSequence {

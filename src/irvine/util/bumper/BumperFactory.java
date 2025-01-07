@@ -121,4 +121,11 @@ public final class BumperFactory {
     return new IncreasingBumper(max);
   }
 
+  /**
+   * Strictly increasing patterns.
+   * @return bumper
+   */
+  public static Bumper patterns() {
+    return new PatternBumper();
+  }
 }

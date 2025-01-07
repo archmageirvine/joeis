@@ -4,7 +4,7 @@ package irvine.oeis.a281;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A281593 a(n) = b(n) - Sum_{j=0..n-1} b(n) with b(n) = binomial(2*n, n).
+ * A281593 a(n) = b(n) - Sum_{j=0..n-1} b(j) with b(n) = binomial(2*n, n).
  * @author Georg Fischer
  */
 public class A281593 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.oeis.recur.HolonomicRecurrence;
 
 
 /**
- * A052644 E.g.f. (1+3x-3x^2)/(1-x)^2.
+ * A052644 Expansion of e.g.f. (1+3x-3x^2)/(1-x)^2.
  * @author Georg Fischer
  */
 public class A052644 extends HolonomicRecurrence {

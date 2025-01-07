@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A060286 2^(p-1)*(2^p-1) where p is a prime.
+ * A060286 a(n) = 2^(p-1)*(2^p-1) where p is prime(n).
  * @author Sean A. Irvine
  */
 public class A060286 extends A000040 {

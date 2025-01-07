@@ -1,7 +1,7 @@
 package irvine.oeis.a032;
 
 /**
- * A032737 a(n) cannot be prefixed or followed by any digit to form a prime ('empty' suffixes are allowed).
+ * A032737 Composite numbers k such that all the decimal concatenations ik and ikj (i, j = 1...9) are also composite.
  * @author Sean A. Irvine
  */
 public class A032737 extends A032734 {

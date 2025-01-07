@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A214429 Integers of the form (n^2 - 49) / 120.
+ * A214429 Integers of the form (k^2 - 49) / 120.
  * @author Sean A. Irvine
  */
 public class A214429 extends LinearRecurrence {

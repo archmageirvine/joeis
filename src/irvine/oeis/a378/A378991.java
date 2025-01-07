@@ -5,7 +5,7 @@ import irvine.oeis.a346.A346237;
 import irvine.oeis.transform.InverseMobiusTransformSequence;
 
 /**
- * A378991 Dirichlet inverse of the M√∂bius transform of A005187, where A005187(n) = 2*n - (number of 1&apos;s in binary representation of n).
+ * A378991 Dirichlet inverse of the M\u00f6bius transform of A005187, where A005187(n) = 2*n - (number of 1's in binary representation of n).
  * @author Georg Fischer
  */
 public class A378991 extends InverseMobiusTransformSequence {

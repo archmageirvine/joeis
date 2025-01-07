@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A333299 Number of canonical sequences of moves of length n for the Rubik cube puzzle using the quarter-turn metric.
+ * A333299 Number of canonical sequences of moves of length n for the Rubik's cube puzzle using the quarter-turn metric.
  * @author Georg Fischer
  */
 public class A333299 extends GeneratingFunctionSequence implements Conjectural {

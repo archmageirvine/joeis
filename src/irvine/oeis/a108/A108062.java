@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A108062 Numbers n such that 2^(2n-1) + 2^n + 1 is prime.
+ * A108062 Numbers k such that 2^(2k-1) + 2^k + 1 is prime.
  * @author Georg Fischer
  */
 public class A108062 extends FilterNumberSequence {

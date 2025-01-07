@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000129;
 import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
- * A133726 M√∂bius transform of the Pell numbers (A000129).
+ * A133726 M\u00f6bius transform of the Pell numbers (A000129).
  * @author Georg Fischer
  */
 public class A133726 extends MobiusTransformSequence {

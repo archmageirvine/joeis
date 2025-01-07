@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A006229 Expansion of exp( tan x ).
+ * A006229 Expansion of e.g.f. exp( tan x ).
  * @author Sean A. Irvine
  */
 public class A006229 extends Sequence0 {

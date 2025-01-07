@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007434;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A379717 The second Jordan totient function applied to the cubefree numbers: a(n) = A007434(A004709(n)).
+ * A379717 The second Jordan totient function applied to the cubefree numbers.
  * @author Georg Fischer
  */
 public class A379717 extends SingleTransformSequence {

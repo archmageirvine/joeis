@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073923 a(1)=1, a(n) is the smallest power of 2 not included earlier such that sum(k=1,n,a(n)) is prime.
+ * A073923 a(1)=1, a(n) is the smallest power of 2 not included earlier such that Sum_{k=1..n} a(k) is prime.
  * @author Sean A. Irvine
  */
 public class A073923 extends Sequence1 {

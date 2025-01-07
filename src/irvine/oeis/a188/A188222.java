@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 
 
 /**
- * A188222 Positions of 0 in A188221; complement of A004976.
+ * A188222 Beatty sequence for (sqrt(5) + 3)/4.
  * @author Georg Fischer
  */
 public class A188222 extends FilterPositionSequence {

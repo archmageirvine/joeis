@@ -17,7 +17,7 @@ import irvine.oeis.MultiplicativeSequence;
  */
 public class A068516 extends MultiplicativeSequence {
 
-  private static class MyField extends IntegersMod implements Field<Z> {
+  private static final class MyField extends IntegersMod implements Field<Z> {
 
     private MyField(final Z mod) {
       super(mod);

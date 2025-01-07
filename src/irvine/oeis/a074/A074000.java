@@ -6,28 +6,30 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A001037.
+ * A074000 Number of elements of GF(3^n) with trace 0 and subtrace 0.
  * @author Sean A. Irvine
  */
 public class A074000 extends Sequence1 {
 
   private int mN = 0;
+  private final Z mP;
   private final Z mNegTrace;
   private final Z mSubtrace;
 
-  protected A074000(final long trace, final long subtrace) {
-    mNegTrace = Z.valueOf((3 - trace) % 3);
+  protected A074000(final long p, final long trace, final long subtrace) {
+    mP = Z.valueOf(p);
+    mNegTrace = Z.valueOf((p - trace) % p);
     mSubtrace = Z.valueOf(subtrace);
   }
 
   /** Construct the sequence. */
   public A074000() {
-    this(0, 0);
+    this(3, 0, 0);
   }
 
   @Override
   public Z next() {
-    final GaloisField gf = new GaloisField(Z.THREE, ++mN);
+    final GaloisField gf = new GaloisField(mP, ++mN);
     long cnt = 0;
     for (final Z a : gf) {
       final Polynomial<Z> cp = gf.characteristicPolynomial(a);

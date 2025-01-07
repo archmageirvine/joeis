@@ -4,7 +4,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A057190 Numbers n such that (24^n+1)/25 is a prime.
+ * A057190 Numbers k such that (24^k+1)/25 is a prime.
  * @author Georg Fischer
  */
 public class A057190 extends PrimePositionSubsequence {

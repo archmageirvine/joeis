@@ -418,7 +418,6 @@ public final class SequenceFactory {
   }
 
   private static final String[][] INCOMPATIBLE_OPTIONS = {
-    {B_FILE, TIMESTAMP},
     {B_FILE, DATA},
     {B_FILE, TRIANGLE},
     {B_FILE, RIGHT},
@@ -565,13 +564,17 @@ public final class SequenceFactory {
           long termCnt = 0;
           while (++termCnt <= numberOfTerms && (z = seq.next()) != null) {
             generated = true;
-            if (timestamp) {
-              out.write(Date.now().getBytes(StandardCharsets.US_ASCII));
-            } else if (bfile) {
+            if (bfile) {
               out.write(String.valueOf(termCnt + offset - 1).getBytes(StandardCharsets.US_ASCII));
               out.write(SPACE);
+            } else if (timestamp) {
+              out.write(Date.now().getBytes(StandardCharsets.US_ASCII));
             }
             out.write(z.toString().getBytes(StandardCharsets.US_ASCII));
+            if (bfile && timestamp) {
+              out.write(" # ".getBytes(StandardCharsets.US_ASCII));
+              out.write(Date.now().getBytes(StandardCharsets.US_ASCII));
+            }
             out.write(LS);
             out.flush();
           }

@@ -1,6 +1,7 @@
 package irvine.oeis.a074;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 import irvine.oeis.a073.A073451;
@@ -10,6 +11,32 @@ import irvine.oeis.a073.A073451;
  * @author Sean A. Irvine
  */
 public class A074063 extends A073451 {
+
+  private boolean checkConnected(final int[][] transitions) {
+    // If the transitions do not form a single connected components, then a solution will be impossible
+    final boolean[] seen = new boolean[transitions.length];
+    final LinkedList<Integer> queue = new LinkedList<>();
+    seen[0] = true;
+    for (final int v : transitions[0]) {
+      seen[v - 1] = true;
+      queue.add(v);
+    }
+    while (!queue.isEmpty()) {
+      final int u = queue.pollFirst();
+      for (final int v : transitions[u - 1]) {
+        if (!seen[v - 1]) {
+          queue.add(v);
+          seen[v - 1] = true;
+        }
+      }
+    }
+    for (final boolean v : seen) {
+      if (!v) {
+        return false;
+      }
+    }
+    return true;
+  }
 
   @Override
   protected int[][] buildTransitions(final int n) {
@@ -25,6 +52,10 @@ public class A074063 extends A073451 {
       for (int j = 0; j < t.size(); ++j) {
         transitions[k - 1][j] = t.get(j);
       }
+    }
+    if (!checkConnected(transitions)) {
+      // There is no possible solution
+      return new int[n][0];
     }
     return transitions;
   }

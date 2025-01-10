@@ -2,6 +2,7 @@ package irvine.oeis.a033;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Convergents;
+import irvine.math.predicate.Predicates;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000037;
@@ -18,7 +19,15 @@ public class A033313 extends A000037 {
     return conv.num();
   }
 
-  static Q solvePell(final Z d) {
+  /**
+   * Solve a Pell equation.
+   * @param d discriminant
+   * @return solution
+   */
+  public static Q solvePell(final Z d) {
+    if (Predicates.SQUARE.is(d)) {
+      return Q.NEG_ONE;
+    }
     final Convergents cv = new Convergents(CR.valueOf(d).sqrt());
     while (true) {
       final Q conv = cv.next();

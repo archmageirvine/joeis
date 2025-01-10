@@ -1,5 +1,6 @@
 package irvine.oeis.a046;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,8 +18,7 @@ public class A046116 extends Sequence1 {
       if (q.isProbablePrime()) {
         return false;
       }
-      final Z p = q.isPower();
-      if (p != null && p.isProbablePrime()) {
+      if (Predicates.PRIME_POWER.is(q)) {
         return false;
       }
       m >>>= 1;

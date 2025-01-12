@@ -35,7 +35,7 @@ public class A074033 extends Sequence1 {
 
   protected Z dd(final int a, final int n) {
     // Some contortions to avoid rationals included here
-    Z t;
+    final Z t;
     switch (n & 3) {
       case 1:
         t = qp(n / 2).multiply(v(a));

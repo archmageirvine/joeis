@@ -11,7 +11,7 @@ public class A074035 extends A074033 {
   @Override
   protected Z dd(final int a, final int n) {
     // Some contortions to avoid rationals included here
-    Z t;
+    final Z t;
     switch (n & 3) {
       case 1:
       case 3:

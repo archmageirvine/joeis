@@ -62,7 +62,7 @@ public class A074119 extends Sequence1 {
         while (true) {
           while (r.compareTo(rMaxKZ, PRECISION) < 0) {
             // Get integer formed from first nDgtsI digits of fractional part of root of i, skipping any leading zeros
-            Z iTest = r.subtract(mK).multiply(Z.TEN.pow(z + nDgitsI)).floor();
+            final Z iTest = r.subtract(mK).multiply(Z.TEN.pow(z + nDgitsI)).floor();
             final int iCmp = iTest.compareTo(i);
             if (iCmp >= 0) {
               if (iCmp == 0) {

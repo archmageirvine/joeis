@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A030670 Smallest prime whose decimal expansion begins (nontrivially) with the n-th prime.
+ * A030670 Smallest prime formed by appending a number to the n-th prime.
  * @author Sean A. Irvine
  */
 public class A030670 extends A000040 {

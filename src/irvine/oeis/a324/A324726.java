@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A324726 Numbers such that 2n is equal to A318466(n), bitor(2*n,sigma(n)), where bitor is A003986.
+ * A324726 Numbers k such that 2*k is equal to 2*k OR sigma(k), where OR is bitwise-or, A003986, and sigma is the sum of divisors function.
  * @author Georg Fischer
  */
 public class A324726 extends FilterNumberSequence {

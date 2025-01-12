@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A074052 The lowest order term in an expansion of sum_{i=1..m}*i^n*(i+1)! in a special factorial basis.
+ * A074052 The lowest order term in an expansion of Sum_{i=1..m} i^n*(i+1)! in a special factorial basis.
  * @author Sean A. Irvine
  */
 public class A074052 extends Sequence0 {

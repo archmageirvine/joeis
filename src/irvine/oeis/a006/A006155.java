@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A006155 Expansion of e.g.f. 1/(2-x-e^x).
+ * A006155 Expansion of e.g.f.: 1/(2-x-exp(x)).
  * @author Sean A. Irvine
  */
 public class A006155 extends AbstractSequence {

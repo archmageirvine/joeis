@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023237 Numbers k such that k and 10*k + 1 are both prime.
+ * A023237 Primes p such that 10*p + 1 is also prime.
  * @author Sean A. Irvine
  */
 public class A023237 extends A000040 {

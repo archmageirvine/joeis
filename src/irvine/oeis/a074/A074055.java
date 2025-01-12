@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a002.A002034;
 
 /**
- * A074055 Numbers n such that A074037(n) = A002034(n).
+ * A074055 Numbers k such that A074037(k) = A002034(k).
  * @author Sean A. Irvine
  */
 public class A074055 extends FilterPositionSequence {

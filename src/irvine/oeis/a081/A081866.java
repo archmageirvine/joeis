@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A081866 a(n)=sigma_9(2n-1).
+ * A081866 a(n) = sigma_9(2n-1).
  * @author Georg Fischer
  */
 public class A081866 extends AbstractSequence {

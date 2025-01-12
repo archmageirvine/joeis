@@ -4,7 +4,7 @@ package irvine.oeis.a299;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A299960 a(n) = ( 4^(2*n+1) + 1 )/5.
+ * A299960 a(n) = (4^(2*n+1) + 1) / 5.
  * @author Georg Fischer
  */
 public class A299960 extends LinearRecurrence {

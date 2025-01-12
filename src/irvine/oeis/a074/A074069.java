@@ -6,7 +6,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a068.A068119;
 
 /**
- * A074069 Numbers n such that S(n) = 3n (see A068119).
+ * A074069 Numbers k such that S(k) = Sum_{i=1..k} A068119(i) = 3*k.
  * @author Sean A. Irvine
  */
 public class A074069 extends FilterPositionSequence {

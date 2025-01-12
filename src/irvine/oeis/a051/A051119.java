@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A051119 n/p^k, where p = largest prime dividing n and p^k = highest power of p dividing n.
+ * A051119 a(n) = n/p^k, where p = largest prime dividing n and p^k = highest power of p dividing n.
  * @author Sean A. Irvine
  */
 public class A051119 extends Sequence1 {

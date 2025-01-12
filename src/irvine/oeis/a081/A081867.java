@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081867 a(n)=sigma_11(2n-1).
+ * A081867 a(n) = sigma_11(2n-1).
  * @author Georg Fischer
  */
 public class A081867 extends Sequence1 {

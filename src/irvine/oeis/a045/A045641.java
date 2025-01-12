@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002113;
 
 /**
- * A045641 Palindromic and divisible by 6.
+ * A045641 Palindromes that are divisible by 6.
  * @author Sean A. Irvine
  */
 public class A045641 extends A002113 {

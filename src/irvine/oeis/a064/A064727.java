@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064727 Number of pairs x,y such that 0 &lt; x &lt;= y &lt; n and x+y = n and x*y = kn for some k.
+ * A064727 Number of pairs x,y such that 0 &lt; x &lt;= y &lt; n and x+y = n and x*y = k*n for some k.
  * @author Sean A. Irvine
  */
 public class A064727 extends Sequence1 {

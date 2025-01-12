@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002715;
 
 /**
- * A001510 From a slowly converging series.
+ * A001510 a(n) = 2*a(n-1)*(a(n-1)-1) for n &gt; 1, with a(0) = 1, a(1) = 2.
  * @author Sean A. Irvine
  */
 public class A001510 extends A002715 {

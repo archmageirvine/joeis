@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A122062 Numbers n such that n^2 + 16 is prime.
+ * A122062 Numbers k such that k^2 + 16 is prime.
  * @author Georg Fischer
  */
 public class A122062 extends PrimePositionSubsequence {

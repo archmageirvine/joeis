@@ -5,7 +5,7 @@ import irvine.oeis.a011.A011782;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A193820 Triangular array:  the fusion of polynomial sequences P and Q given by p(n,x)=(x+1)^n and q(n,x)=x^n+x^(n-1)+...+x+1.
+ * A193820 Triangular array: the fusion of polynomial sequences P and Q given by p(n,x)=(x+1)^n and q(n,x)=x^n+x^(n-1)+...+x+1.
  * @author Georg Fischer
  */
 public class A193820 extends WrappedRecurrence {

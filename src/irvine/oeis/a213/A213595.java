@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a048.A048784;
 
 /**
- * A213595 A048784(n) / 2^A213594(n).
+ * A213595 a(n) = A048784(n) / 2^A213594(n).
  * @author Georg Fischer
  */
 public class A213595 extends AbstractSequence {

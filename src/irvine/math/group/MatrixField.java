@@ -16,7 +16,6 @@ public class MatrixField<E> extends MatrixRing<E> implements Field<Matrix<E>> {
 
   /**
    * Construct a new matrix ring for matrices of a specified size.
-   *
    * @param size number of rows
    * @param elementField field of underlying elements
    */

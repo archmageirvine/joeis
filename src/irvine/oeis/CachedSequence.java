@@ -124,7 +124,7 @@ public class CachedSequence extends AbstractSequence implements DirectSequence {
   }
 
   /**
-   * Return the complete set of values currently stored. There is npo guarantee
+   * Return the complete set of values currently stored. There is no guarantee
    * on the order.
    * @return terms
    */

@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000217;
 
 /**
- * A357590 Triangular numbers which are products of five distinct primes (or pentaprimes).
+ * A357590 Triangular numbers which are products of five distinct primes.
  * @author Georg Fischer
  */
 public class A357590 extends FilterSequence {

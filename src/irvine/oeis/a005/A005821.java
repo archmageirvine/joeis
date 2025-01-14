@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A005821 a(n) = [ tau*a(n-1) ] + a(n-2).
+ * A005821 a(n) = floor(tau*a(n-1)) + a(n-2) with a(0)=0 and a(1)=1.
  * @author Sean A. Irvine
  */
 public class A005821 extends Sequence0 {

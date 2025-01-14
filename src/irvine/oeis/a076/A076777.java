@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A076777 Number of primes between successive Fibonacci numbers.
+ * A076777 Number of primes between successive Fibonacci numbers inclusive.
  * @author Georg Fischer
  */
 public class A076777 extends LambdaSequence {

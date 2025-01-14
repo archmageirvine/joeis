@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074151 Powers of 2 &gt; 2^n with initial digits those of 2^n.
+ * A074151 Least power of 2 &gt; 2^n with initial digits matching the digits of 2^n.
  * @author Sean A. Irvine
  */
 public class A074151 extends Sequence1 {

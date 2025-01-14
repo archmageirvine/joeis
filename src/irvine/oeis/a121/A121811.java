@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A121811 This sequence needs a meaningful name.
+ * A121811 a(n) is the floor of the first component of M^n * (0, 1, 2, 3) where M is the matrix [[c, 1/2, 1/2, 1/2], [1/2, c, 1/2, 1/2], [1/2, 1/2, c, 1/2], [1/2, 1/2, 1/2, c]] and c=sqrt(3)/2.
  * @author Sean A. Irvine
  */
 public class A121811 extends Sequence0 {

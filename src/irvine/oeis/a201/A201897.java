@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A201897 Decimal expansion of the least x satisfying x^2+3x+1=e^x.
+ * A201897 Decimal expansion of the least x satisfying x^2+3x+2=e^x.
  * Equation; x^2+3*x+2-exp(x)
  * @author Georg Fischer
  */

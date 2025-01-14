@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A235496 a(n) = round(n^n/n!).
+ * A235496 a(n) = round(n^n/n!) where round(1/2)=1.
  * a(n)=floor(n^n/n!+1/2)
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A052011 Number of primes between successive Fibonacci numbers.
+ * A052011 Number of primes between successive Fibonacci numbers exclusive.
  * @author Sean A. Irvine
  */
 public class A052011 extends A000045 {

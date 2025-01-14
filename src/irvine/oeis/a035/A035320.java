@@ -3,7 +3,7 @@ package irvine.oeis.a035;
 import irvine.math.z.Z;
 
 /**
- * A035320 Right-hand diagonal of A035309.
+ * A035320 Right-hand diagonal of odd numbered rows in A035309.
  * @author Sean A. Irvine
  */
 public class A035320 extends A035309 {

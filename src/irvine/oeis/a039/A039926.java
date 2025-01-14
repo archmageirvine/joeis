@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A039926 Random digits.
+ * A039926 Random digits obtained from a random physical process.
  * @author Sean A. Irvine
  */
 public class A039926 extends Sequence0 {

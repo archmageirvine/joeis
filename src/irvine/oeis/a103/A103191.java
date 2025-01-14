@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A103191 This sequence needs a meaningful name.
+ * A103191 A sequence of triples arising from a matrix calculation, in particular let m = floor(n/3), then (a(3*m), a(3*m+1), a(3*m+2)) = M^(m*(m+1)/n) * (0, 1, 1) where M is the matrix [[1,0,1], [1,1,0], [-1,1,0]].
  * @author Sean A. Irvine
  */
 public class A103191 extends Sequence0 {

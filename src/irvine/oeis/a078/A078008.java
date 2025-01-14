@@ -5,7 +5,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A078008 Expansion of (1-x)/( (1+x)*(1-2*x) ).
+ * A078008 Expansion of (1 - x)/((1 + x)*(1 - 2*x)).
  * @author Sean A. Irvine
  */
 public class A078008 extends LinearRecurrence implements DirectSequence {

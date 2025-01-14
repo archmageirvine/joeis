@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005097;
 
 /**
- * A074142 Coefficients a(n) of a series connected with the odd primes.
+ * A074142 a(n) is the coefficient of x^n in x/(1 + Sum_{k&gt;=1} (1/2)*(prime(k+1) - 1)*x^k).
  * @author Sean A. Irvine
  */
 public class A074142 extends A005097 {

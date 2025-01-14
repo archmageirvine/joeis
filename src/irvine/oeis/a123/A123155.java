@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A123155 From a Quiz.
+ * A123155 From a quiz by Albert Frank.
  * @author Georg Fischer
  */
 public class A123155 extends FiniteSequence {

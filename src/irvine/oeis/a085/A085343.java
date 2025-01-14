@@ -7,7 +7,7 @@ import irvine.oeis.a070.A070803;
 import irvine.oeis.a070.A070804;
 
 /**
- * A085343 Number of primes between sigma(n) and phi(n).
+ * A085343 Number of primes between sigma(n) and phi(n) inclusive.
  * @author Georg Fischer
  */
 public class A085343 extends AbstractSequence {

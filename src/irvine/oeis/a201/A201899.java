@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A201899 Decimal expansion of the greatest x satisfying x^2+3x+1=e^x.
+ * A201899 Decimal expansion of the greatest x satisfying x^2+3x+2=e^x.
  * Equation; x^2+3*x+2-exp(x)
  * @author Georg Fischer
  */

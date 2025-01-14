@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A066185 Sum of the first moments of all partitions of n.
+ * A066185 Sum of the first moments of all partitions of n with weights starting at 0.
  * @author Sean A. Irvine
  */
 public class A066185 extends Sequence0 {

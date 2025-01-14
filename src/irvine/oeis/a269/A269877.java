@@ -3,7 +3,7 @@ package irvine.oeis.a269;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A269877 A double binomial sum involving absolute values.
+ * A269877 a(n) = 2^(4*n-3)*n*(2*n-1)*(900*n^4-4500*n^3+8895*n^2-8055*n+2764), a closed form for a double binomial sum involving absolute values.
  * @author Sean A. Irvine
  */
 public class A269877 extends LinearRecurrence {

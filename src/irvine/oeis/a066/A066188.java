@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.math.z.Z;
 
 /**
- * A066188 Sum of the second moments of all partitions of n.
+ * A066188 Sum of the second moments of all partitions of n with weights starting from 0.
  * @author Sean A. Irvine
  */
 public class A066188 extends A066187 {

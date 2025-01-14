@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A009805 Expansion of sin(tan(x)*sin(x))/2.
+ * A009805 Expansion of e.g.f. tanh(sinh(x)*sin(x))/2 in odd powers of x^2.
  * @author Sean A. Irvine
  */
 public class A009805 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A079644 n (mod sqrtint(n)).
+ * A079644 a(n) = (n mod sqrtint(n)).
  * a(n)=n%sqrtint(n)
  * @author Georg Fischer
  */

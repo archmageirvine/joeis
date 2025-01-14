@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A122557 From a Quiz.
+ * A122557 From a quiz by Paul Cooijmans.
  *
  * @author Georg Fischer
  */

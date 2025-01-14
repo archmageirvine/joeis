@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
- * A037192 Summarize the previous term!.
+ * A037192 Summarize the previous term!, starting with 8899.
  * @author Sean A. Irvine
  */
 public class A037192 extends Sequence0 {

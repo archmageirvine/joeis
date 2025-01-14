@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.string.Dutch;
 
 /**
- * A090589 Number of letters in n (in Dutch).
+ * A090589 Number of letters in n (in Dutch) counting 'ij' as two letters.
  * @author Sean A. Irvine
  */
 public class A090589 extends Sequence0 {

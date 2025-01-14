@@ -6,7 +6,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A085341 Number of primes between sigma(n) and n.
+ * A085341 Number of primes between sigma(n) and n inclusive.
  * a(n)=primepi(sigma(n, 1))-primepi(n)
  * @author Georg Fischer
  */

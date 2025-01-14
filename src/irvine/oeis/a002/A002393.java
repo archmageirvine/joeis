@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A002393 Weight distribution of [8,4,4] Hamming code.
+ * A002393 Weight distribution of [8,4,4] Hamming code omitting 0 terms.
  * @author Sean A. Irvine
  */
 public class A002393 extends FiniteSequence {

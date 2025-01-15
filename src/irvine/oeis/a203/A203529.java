@@ -5,7 +5,7 @@ import irvine.oeis.QuotientSequence;
 import irvine.oeis.a000.A000178;
 
 /**
- * A203529 v(n)/A000178(n); v=A203527 and A000178=(superfactorials).
+ * A203529 a(n) = A203527(n)/A000178(n-1); A000178 = (superfactorials).
  * @author Georg Fischer
  */
 public class A203529 extends QuotientSequence {

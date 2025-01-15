@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A000596 Central factorial numbers.
+ * A000596 Central factorial numbers: A008955(n,2).
  * @author Sean A. Irvine
  */
 public class A000596 extends Sequence3 {

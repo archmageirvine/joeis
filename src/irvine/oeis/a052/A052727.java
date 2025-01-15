@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A052727 A simple context-free grammar in a labeled universe.
+ * A052727 Expansion of e.g.f. 1/2-1/2*(1-4*x-4*x^2)^(1/2).
  * @author Georg Fischer
  */
 public class A052727 extends HolonomicRecurrence {

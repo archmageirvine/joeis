@@ -5,7 +5,7 @@ import irvine.oeis.a035.A035513;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A083412 Wythoff array read by antidiagonals.
+ * A083412 Wythoff array read by rising antidiagonals.
  * @author Georg Fischer
  */
 public class A083412 extends Transpose {

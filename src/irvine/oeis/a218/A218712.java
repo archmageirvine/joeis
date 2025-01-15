@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 
 import irvine.oeis.a034.A034939;
 /**
- * A218712 a(n) is smallest number such that a(n)^2 + 1 is divisible by 29^n.
+ * A218712 a(n) is the smallest number such that a(n)^2 + 1 is divisible by 29^n.
  * @author Georg Fischer
  */
 public class A218712 extends A034939 {

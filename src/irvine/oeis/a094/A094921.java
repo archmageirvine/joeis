@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A094921 (6^n-1)/5 mod n.
+ * A094921 a(n) = (6^n-1)/5 mod n.
  * @author Georg Fischer
  */
 public class A094921 extends LambdaSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A029534 Numbers n such that n divides the (left) concatenation of all numbers &lt;= n written in base 17 (most significant digit on right and removing all least significant zeros are removed before concatenation).
+ * A029534 Numbers n such that n divides the (left) concatenation of all numbers &lt;= n written in base 17 (most significant digit on right and removing all least significant zeros before concatenation).
  * @author Sean A. Irvine
  */
 public class A029534 extends Sequence1 {

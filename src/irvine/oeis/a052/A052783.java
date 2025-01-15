@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A052783 A simple grammar.
+ * A052783 Expansion of e.g.f. x*log(-1/(-1+x))^5.
  * @author Sean A. Irvine
  */
 public class A052783 extends Sequence0 {

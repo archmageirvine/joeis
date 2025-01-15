@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074176 Differences between n!!! and the nearest prime.
+ * A074176 Differences arising in A074165.
  * @author Sean A. Irvine
  */
 public class A074176 extends Sequence1 {

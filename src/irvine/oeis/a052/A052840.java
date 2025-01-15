@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A052840 A simple grammar.
+ * A052840 a(n) = n*A029767(n-1).
  * @author Georg Fischer
  */
 public class A052840 extends HolonomicRecurrence {

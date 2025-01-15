@@ -6,7 +6,7 @@ import irvine.oeis.a117.A117143;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A128508 Number of partitions p of n such that max(p)-min(p)=3.
+ * A128508 Number of partitions p of n such that max(p) - min(p) = 3.
  * @author Georg Fischer
  */
 public class A128508 extends MultiTransformSequence {

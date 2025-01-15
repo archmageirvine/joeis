@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A074172 Smaller of two consecutive numbers of the form p^2*q where p and q are primes.
+ * A074172 Smaller of two consecutive numbers of the form p^2*q where p and q are distinct primes.
  * @author Sean A. Irvine
  */
 public class A074172 extends Sequence1 {

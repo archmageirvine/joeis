@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A052706 A simple context-free grammar.
+ * A052706 A simple context-free grammar: convolution square of A001002.
  * @author Georg Fischer
  */
 public class A052706 extends HolonomicRecurrence {

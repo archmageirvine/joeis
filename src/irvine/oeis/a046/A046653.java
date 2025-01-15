@@ -3,7 +3,7 @@ package irvine.oeis.a046;
 import irvine.math.z.Z;
 
 /**
- * A046653 Triangle of rooted planar maps.
+ * A046653 Triangle of rooted planar maps up to orientation-preserving isomorphisms.
  * @author Sean A. Irvine
  */
 public class A046653 extends A046650 {

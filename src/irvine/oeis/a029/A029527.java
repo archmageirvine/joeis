@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A029527 Numbers k such that k divides the (left) concatenation of all numbers &lt;= k written in base 10 (most significant digit on right and removing all least significant zeros are removed before concatenation).
+ * A029527 Numbers k such that k divides the (left) concatenation of all numbers &lt;= k written in base 10 (most significant digit on right and removing all least significant zeros before concatenation).
  * @author Sean A. Irvine
  */
 public class A029527 extends Sequence1 {

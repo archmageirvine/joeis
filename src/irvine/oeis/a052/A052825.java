@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A052825 A simple grammar.
+ * A052825 A simple grammar: partial sums of A008965.
  * @author Sean A. Irvine
  */
 public class A052825 extends Sequence0 {

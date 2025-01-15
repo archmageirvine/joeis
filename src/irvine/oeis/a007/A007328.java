@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000390;
 import irvine.oeis.a000.A000391;
 
 /**
- * A007328 Unexplained difference between two partition g.f.s.
+ * A007328 Difference between the number of 5-dimensional partitions of n and an approximation derived from binomial(n,4).
  * @author Sean A. Irvine
  */
 public class A007328 extends A000390 {

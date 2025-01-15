@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A000597 Central factorial numbers.
+ * A000597 Central factorial numbers: A008955(n,3).
  * @author Georg Fischer
  */
 public class A000597 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.a004.A004111;
 import irvine.oeis.transform.EulerTransform;
 
 /**
- * A052843 A simple grammar.
+ * A052843 a(n) is the number of forests with n nodes of rooted unlabeled identity trees.
  * @author Georg Fischer
  */
 public class A052843 extends EulerTransform {

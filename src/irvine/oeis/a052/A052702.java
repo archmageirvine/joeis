@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A052702 A simple context-free grammar.
+ * A052702 Expansion of  (1/2)*(1/x^2 - 1/x)*(1-x-sqrt(1-2*x+x^2-4*x^3)) - x.
  * @author Georg Fischer
  */
 public class A052702 extends HolonomicRecurrence {

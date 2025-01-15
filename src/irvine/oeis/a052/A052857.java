@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A052857 A simple grammar.
+ * A052857 A simple grammar. a(n)=n*A052873(n-1).
  * @author Sean A. Irvine
  */
 public class A052857 extends Sequence0 {

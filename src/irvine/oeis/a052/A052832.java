@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A052832 A simple grammar.
+ * A052832 Expansion of e.g.f. log((-1+x)/(-1+x+x^2)).
  * @author Georg Fischer
  */
 public class A052832 extends HolonomicRecurrence {

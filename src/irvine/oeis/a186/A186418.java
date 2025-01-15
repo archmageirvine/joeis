@@ -5,7 +5,7 @@ package irvine.oeis.a186;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A186418 Binomial(2n,n)^4/(n+1)^2.
+ * A186418 a(n) = binomial(2*n,n)^4/(n + 1)^2.
  * @author Georg Fischer
  */
 public class A186418 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A035515 Zeckendorf expansion of n: repeatedly subtract the largest Fibonacci number you can until nothing remains.
+ * A035515 Zeckendorf expansion of n: repeatedly subtract the largest Fibonacci number you can until nothing remains. Little-endian concatenation of decimals.
  * @author Sean A. Irvine
  */
 public class A035515 extends Sequence0 {

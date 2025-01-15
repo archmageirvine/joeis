@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A052870 A simple grammar.
+ * A052870 First differences of A052829.
  * @author Sean A. Irvine
  */
 public class A052870 extends Sequence0 {

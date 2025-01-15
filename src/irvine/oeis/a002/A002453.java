@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A002453 Central factorial numbers.
+ * A002453 Central factorial numbers: 2nd subdiagonal of A008958.
  * @author Sean A. Irvine
  */
 public class A002453 extends Sequence0 {

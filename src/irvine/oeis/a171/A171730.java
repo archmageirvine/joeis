@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A171730 Triangle of differences of Fibonacci numbers.
+ * A171730 Triangle of differences of Fibonacci numbers, rows descending.
  * @author Georg Fischer
  */
 public class A171730 extends LambdaTriangle {

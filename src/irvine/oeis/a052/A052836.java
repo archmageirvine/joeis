@@ -9,7 +9,7 @@ import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.transform.WeighTransformSequence;
 
 /**
- * A052836 A simple grammar.
+ * A052836 INVERT transform of A052879.
  * @author Sean A. Irvine
  */
 public class A052836 extends MemorySequence {

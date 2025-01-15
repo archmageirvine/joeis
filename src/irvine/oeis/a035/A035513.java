@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
- * A035513 Wythoff array read by antidiagonals.
+ * A035513 Wythoff array read by falling antidiagonals.
  * @author Sean A. Irvine
  */
 public class A035513 extends MemoryFunction2Sequence<Long, Z> {

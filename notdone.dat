@@ -2462,3 +2462,4 @@ A073520 Smallest magic constant for any n X n magic square made from consecutive
 A073726 Primitive irreducible trinomials: x^n + x^k + 1 is a primitive irreducible polynomial (mod 2) for some k with 0 < k < n.
 A074025 Numbers k such that a triplewhist tournament TWh(k) exists.
 A074178 Records of the coefficients of the continued fraction for the Product_{p prime} (1 - 2/p^2). [A065474 too slow]
+A074234 Number of nodes of integer unit lattice covered by integer right triangles.

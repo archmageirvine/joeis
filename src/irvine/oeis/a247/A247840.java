@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A247840 Sum(6^k, k=2..n).
+ * A247840 a(n) = Sum_{k=2..n} 6^k.
  * @author Sean A. Irvine
  */
 public class A247840 extends LinearRecurrence {

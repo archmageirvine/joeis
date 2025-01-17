@@ -7,7 +7,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A075541 Indices of primes p(i) such that (1/3) (p(i)+p(i+1)+p(i+2)) is an integer.
+ * A075541 Numbers k such that prime(k) + prime(k+1) + prime(k+2) is a multiple of 3.
  * @author Georg Fischer
  */
 public class A075541 extends FilterPositionSequence {

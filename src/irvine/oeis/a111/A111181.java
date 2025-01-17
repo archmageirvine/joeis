@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A111181 Prime(n) - Pi(n).
+ * A111181 a(n) = prime(n) - pi(n).
  * a(n)=prime(n)-primepi(n)
  * @author Georg Fischer
  */

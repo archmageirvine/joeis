@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A074211 Composites which use less than all of their digits in their prime factorization.
+ * A074237 Composites which use more than all their digits in their prime factorization.
  * @author Sean A. Irvine
  */
 public class A074237 extends Sequence1 {

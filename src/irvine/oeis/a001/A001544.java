@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A001544 A nonlinear recurrence.
+ * A001544 A nonlinear recurrence: a(n) = a(n-1)^2 - 6*a(n-1) + 6, with a(0) = 1, a(1) = 7.
  * @author Sean A. Irvine
  */
 public class A001544 extends Sequence0 {

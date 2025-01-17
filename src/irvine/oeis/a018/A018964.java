@@ -1,7 +1,7 @@
 package irvine.oeis.a018;
 
 /**
- * A018964 Cycle class sequence c(2n) (the number of true cycles of length 2n in which a certain node is included) for zeolite AFS = MAPSO-46.
+ * A018964 Cycle class sequence c(2n) (the number of true cycles of length 2n in which a certain node is included) for zeolite AFS = MAPSO-46 starting with a T3 atom.
  * @author Sean A. Irvine
  */
 public class A018964 extends A018940 {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a006.A006385;
 
 /**
- * A054937 Number of chiral planar maps on n nodes up to orientation-preserving isomorphisms.
+ * A054937 Number of chiral pairs of planar maps with n edges.
  * @author Sean A. Irvine
  */
 public class A054937 extends A006385 {

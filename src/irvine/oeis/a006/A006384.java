@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A006384 Number of planar maps with n edges.
+ * A006384 Number of sensed planar maps with n edges.
  * @author Sean A. Irvine
  */
 public class A006384 extends AbstractSequence {

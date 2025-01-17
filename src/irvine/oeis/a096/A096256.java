@@ -4,7 +4,7 @@ package irvine.oeis.a096;
 import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 /**
- * A096256 Decimal expansion of the probability of rolling a Yahtzee (5 of a kind) in the dice game Yahtzee (tm).
+ * A096256 Decimal expansion of the probability of rolling a Yahtzee (5 of a kind) in the dice game Yahtzee.
  * Formula: 347897/7558272
  * @author Georg Fischer
  */

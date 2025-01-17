@@ -1,7 +1,7 @@
 package irvine.oeis.a018;
 
 /**
- * A018971 Cycle class sequence c(2n) (the number of true cycles of length 2n in which a certain node is included) for zeolite AFX = SAPO-56 [ Al23Si5P20O96 ].
+ * A018971 Cycle class sequence c(2n) (the number of true cycles of length 2n in which a certain node is included) for zeolite AFX = SAPO-56 [Al23Si5P20O96] starting with a T1 atom.
  * @author Sean A. Irvine
  */
 public class A018971 extends A018970 {

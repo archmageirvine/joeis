@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A099494 A Chebyshev transform of Fib(n)+(-1)^n.
+ * A099494 A Chebyshev transform of Fibonacci(n)+(-1)^n.
  * @author Sean A. Irvine
  */
 public class A099494 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a009.A009012;
 
 /**
- * A074196.
+ * A074235 Numbers that cannot be a long leg of an integer right triangle.
  * @author Sean A. Irvine
  */
 public class A074235 extends ComplementSequence {

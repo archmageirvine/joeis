@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A210853 (A210852(n)^3 + 1)/7^n, n &gt;= 0.
+ * A210853 a(n) = (A210852(n)^3 + 1)/7^n, n &gt;= 0.
  * @author Georg Fischer
  */
 public class A210853 extends TupleTransformSequence {

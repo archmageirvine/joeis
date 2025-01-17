@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074217 Floor(n^Pi) is a prime.
+ * A074217 Numbers k such that floor(k^Pi) is a prime.
  * @author Sean A. Irvine
  */
 public class A074217 extends Sequence1 {

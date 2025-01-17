@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A166350 Table T(n,m) = m! read by rows.
+ * A166350 Triangle read by rows: T(n,m) = m!, n &gt;= 1.
  * @author Georg Fischer
  */
 public class A166350 extends Triangle {

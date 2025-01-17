@@ -1,7 +1,7 @@
 package irvine.oeis.a018;
 
 /**
- * A018968 Cycle class sequence c(2n) (the number of true cycles of length 2n in which a certain node is included) for zeolite AFT = AlPO4-52.
+ * A018968 Cycle class sequence c(2n) (the number of true cycles of length 2n in which a certain node is included) for zeolite AFT = AlPO4-52 starting with a T2 atom.
  * @author Sean A. Irvine
  */
 public class A018968 extends A018967 {

@@ -1,7 +1,7 @@
 package irvine.oeis.a018;
 
 /**
- * A018972 Cycle class sequence c(2n) (the number of true cycles of length 2n in which a certain node is included) for zeolite AFY = CoAPO-50 R3 [ Co3Al5P8O32 ] .7 H2O.
+ * A018972 Cycle class sequence c(2n) (the number of true cycles of length 2n in which a certain node is included) for zeolite AFY = CoAPO-50 R3[Co3Al5P8O32].7H2O starting with a T2 atom.
  * @author Sean A. Irvine
  */
 public class A018972 extends A018940 {

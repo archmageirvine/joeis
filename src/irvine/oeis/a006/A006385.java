@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A006385 Number of connected planar maps with n edges.
+ * A006385 Number of unsensed planar maps with n edges.
  * @author T. R. S. Walsh
  * @author Sean A. Irvine
  */

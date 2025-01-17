@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A324647 Odd numbers k such that 2k is equal to A318468(k) (bitwise-AND of 2*k and sigma(k)).
+ * A324647 Odd numbers k such that 2*k is equal to bitwise-AND of 2*k and sigma(k).
  * @author Georg Fischer
  */
 public class A324647 extends FilterNumberSequence {

@@ -463,6 +463,14 @@ public class Q implements Comparable<Q>, Serializable {
   }
 
   /**
+   * Test if this number is a rational square.
+   * @return true if the number is a square
+   */
+  public boolean isSquare() {
+    return num().isSquare() && den().isSquare();
+  }
+
+  /**
    * Return the maximum of two rationals.
    * @param other other number
    * @return maximum

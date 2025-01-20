@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A075611 a(1) = 1, a(n) = smallest number &gt; a(n-1) such that concatenation a(k) a(n) is prime for all k = 1 to n-1. Stop if no such number exists.
+ * A074349 a(1)=1, a(n) is smallest number &gt; a(n-1) such that all pair juxtapositions a(1)a(n),...,a(n-1)a(n) are primes.
  * @author Sean A. Irvine
  */
 public class A075611 extends CachedSequence {
@@ -20,14 +20,21 @@ public class A075611 extends CachedSequence {
       while (m.compareTo(t) <= 0) {
         m = m.multiply(10);
       }
+      // am is prescaled versions of a(n)
+      final Z[] am = new Z[n];
+      for (int k = 1; k < n; ++k) {
+        am[k] = self.a(k).multiply(m);
+      }
       outer:
       while (true) {
         t = t.add(1);
         if (t.equals(m)) {
-          m = m.multiply(10);
+          for (int k = 1; k < n; ++k) {
+            am[k] = am[k].multiply(10);
+          }
         }
         for (int k = 1; k < n; ++k) {
-          if (!self.a(k).multiply(m).add(t).isProbablePrime()) {
+          if (!am[k].add(t).isProbablePrime()) {
             continue outer;
           }
         }

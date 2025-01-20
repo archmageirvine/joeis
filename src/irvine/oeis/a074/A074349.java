@@ -24,14 +24,21 @@ public class A074349 extends CachedSequence {
       while (m.compareTo(t) <= 0) {
         m = m.multiply(10);
       }
+      // am is prescaled versions of a(n)
+      final Z[] am = new Z[n];
+      for (int k = 1; k < n; ++k) {
+        am[k] = self.a(k).multiply(m);
+      }
       outer:
       while (true) {
         t = t.add(1);
         if (t.equals(m)) {
-          m = m.multiply(10);
+          for (int k = 1; k < n; ++k) {
+            am[k] = am[k].multiply(10);
+          }
         }
         for (int k = 1; k < n; ++k) {
-          if (!self.a(k).multiply(m).add(t).isProbablePrime()) {
+          if (!am[k].add(t).isProbablePrime()) {
             continue outer;
           }
         }

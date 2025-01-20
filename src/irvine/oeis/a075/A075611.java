@@ -29,6 +29,7 @@ public class A075611 extends CachedSequence {
       while (true) {
         t = t.add(1);
         if (t.equals(m)) {
+          m = m.multiply(10);
           for (int k = 1; k < n; ++k) {
             am[k] = am[k].multiply(10);
           }

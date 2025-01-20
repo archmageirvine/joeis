@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A001599.
+ * A099378 Denominators of the harmonic means of the divisors of the positive integers.
  * @author Sean A. Irvine
  */
 public class A099378 extends A099377 {

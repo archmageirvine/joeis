@@ -6,7 +6,7 @@ package irvine.oeis.a103;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A103972 Expansion of (1-sqrt(1-4x-20x^2))/(2x).
+ * A103972 Expansion of (1-sqrt(1-4*x-20*x^2))/(2*x).
  * @author Georg Fischer
  */
 public class A103972 extends HolonomicRecurrence {

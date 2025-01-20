@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A006390 Number of unrooted loopless planar n-edge maps.
+ * A006390 Number of sensed loopless planar maps with n edges.
  * @author Sean A. Irvine
  */
 public class A006390 extends Sequence0 {

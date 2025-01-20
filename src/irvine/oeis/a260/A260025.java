@@ -4,7 +4,7 @@ package irvine.oeis.a260;
 import irvine.oeis.a006.A006938;
 
 /**
- * A260025 Convert the last term from decimal to binary!.
+ * A260025 Convert the last term from decimal to binary! a(1)=4.
  * @author Georg Fischer
  */
 public class A260025 extends A006938 {

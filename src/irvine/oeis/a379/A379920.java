@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A379920 a(n)=n for n&lt;=3. for n&gt;3 a(n) is the least novel squarefree number sharing a divisor with a(n-2) but not with a(n-1).
+ * A379920 allocated for Xavier Roulleau.
  * @author Sean A. Irvine
  */
 public class A379920 extends Sequence1 {

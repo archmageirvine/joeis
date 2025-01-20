@@ -79,6 +79,8 @@ public final class Functions {
   public static final Function1 USIGMA1 = new UnitarySigma(); // =A034448
   /** Sum of the numbers less than n that do not divide n. */
   public static final Function1 ANTISIGMA = new Antisigma(); // =A024816
+  /** Sum of aliquot divisors function. */
+  public static final Function1 ALIQUOT = new Aliquot(); // =A001065
   /** Unitary phi function. */
   public static final Function1 UPHI = new UnitaryPhi(); // =A047994
   /** Number of distinct prime divisors function. */

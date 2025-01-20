@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a034.A034849;
 
 /**
- * A176897 Primes p such that (p+1)/2 is not prime.
+ * A176897 Primes p such that (p+1)/2 is not a prime.
  * @author Georg Fischer
  */
 public class A176897 extends PrependSequence {

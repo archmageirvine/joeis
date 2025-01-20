@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A058811 Number of terms on the n-th level of the Inverse-Totient-Tree (ITT). The 0th, 1st, 2nd and 3rd levels are {1}, {2}, {3, 4, 6}, {5, 7, 8, 9, 10, 12, 14, 18} with 1, 1, 3, 8 entries resp. The (n+1)-st level is obtained from the n-th level as the union of the inverse phi sets of the terms occurring earlier on the n-th level.
+ * A058811 Number of nodes at the n-th level of the Inverse-Totient-Tree (ITT) with the root at 1, and edges connecting number m to all numbers k such that phi(k) = m.
  * @author Sean A. Irvine
  */
 public class A058811 extends Sequence0 {

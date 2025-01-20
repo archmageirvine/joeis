@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.AntidiagonalSequence;
 
 /**
- * A060175 Table T(n,k) by antidiagonals of exponent of largest power of k-th prime which divides n.
+ * A060175 Square array A(n,k) = exponent of the largest power of k-th prime which divides n, read by falling antidiagonals.
  * @author Sean A. Irvine
  */
 public class A060175 extends AntidiagonalSequence {

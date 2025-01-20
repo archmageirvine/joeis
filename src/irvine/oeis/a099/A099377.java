@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A001599.
+ * A099377 Numerators of the harmonic means of the divisors of the positive integers.
  * @author Sean A. Irvine
  */
 public class A099377 extends Sequence1 {

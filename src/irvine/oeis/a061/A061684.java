@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a275.A275043;
 
 /**
- * A061684 Generalized Bell numbers.
+ * A061684 Generalized Bell numbers: column 3 of A275043.
  * @author Georg Fischer
  */
 public class A061684 extends A275043 {

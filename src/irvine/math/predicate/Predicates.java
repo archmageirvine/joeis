@@ -38,6 +38,10 @@ public final class Predicates {
   public static final Predicate LUCAS = new Lucas();
   /** Test if a number is perfect. */
   public static final Predicate PERFECT = new Perfect();
+  /** Test if a number is abundant. */
+  public static final Predicate ABUNDANT = new Abundant();
+  /** Test if a number is deficient. */
+  public static final Predicate DEFICIENT = new Deficient();
   /** Test if a number is practical. */
   public static final Predicate PRACTICAL = new Practical();
   /** Test if a number has non-decreasing digits in base 10. */

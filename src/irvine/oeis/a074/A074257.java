@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A074256.
+ * A074257 Sum of factorials of digits of n equals the largest prime factor of n.
  * @author Sean A. Irvine
  */
 public class A074257 extends Sequence1 {

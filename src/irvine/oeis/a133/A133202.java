@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000594;
 
 /**
- * A133202 Number of divisors of the absolute value of Ramanujan tau numbers.
+ * A133202 Number of divisors of the absolute value of Ramanujan tau numbers. a(n) = 0 if tau(n) = 0.
  * @author Georg Fischer
  */
 public class A133202 extends A000594 {

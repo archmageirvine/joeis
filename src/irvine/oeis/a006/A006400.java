@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
 /**
- * A006400 Number of connected planar maps without vertices of degree 1.
+ * A006400 Number of sensed simple planar maps with n edges and without vertices of degree 1.
  * @author Sean A. Irvine
  */
 public class A006400 extends A006394 {

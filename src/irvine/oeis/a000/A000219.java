@@ -7,7 +7,7 @@ import irvine.oeis.transform.GeneralizedEulerTransform;
 
 
 /**
- * A000219 Number of planar partitions (or plane partitions) of n.
+ * A000219 Number of plane partitions (or planar partitions) of n.
  * G.f.: <code>Product_{k&gt;=1} (1/(1-x^k)^k)</code>
  * @author Georg Fischer
  */

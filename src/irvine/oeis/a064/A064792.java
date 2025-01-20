@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A064792 Add more digits to n-th prime (zeros are permitted) until reach another prime.
+ * A064792 Append more digits to the n-th prime (leading zeros are permitted) until another prime is reached.
  * @author Sean A. Irvine
  */
 public class A064792 extends A000040 {

@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000010;
 import irvine.oeis.triangle.Diagonal;
 
 /**
- * A130207 Diagonalized matrix of A000010.
+ * A130207 Diagonalized matrix of A000010, Euler totient function phi.
  * @author Georg Fischer
  */
 public class A130207 extends Diagonal {

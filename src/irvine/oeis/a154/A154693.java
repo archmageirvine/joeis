@@ -7,7 +7,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A154693 Triangle T(n,m) = ( 2^(n-m)+2^m )*A008292(n+1,m+1) read by rows.
+ * A154693 Triangle read by rows: T(n, k) = (2^(n-k) + 2^k)*A008292(n+1, k+1).
  * @author Georg Fischer
  */
 public class A154693 extends LambdaTriangle {

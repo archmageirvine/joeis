@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A001341 E.g.f.: 6*exp(x)/(1-x)^4;.
+ * A001341 Expansion of e.g.f. 6*exp(x)/(1-x)^4.
  * @author Sean A. Irvine
  */
 public class A001341 extends Sequence0 {

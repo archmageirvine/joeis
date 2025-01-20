@@ -7,7 +7,7 @@ import irvine.oeis.a033.A033677;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A101322 a(n) = n - (least divisor of n greater than the square root of n) + (greatest divisor of n less than the square root of n) = n + A033676(n) - A033677(n).
+ * A101322 a(n) = n - (least divisor of n &gt;= the square root of n) + (greatest divisor of n &lt;= the square root of n).
  * @author Georg Fischer
  */
 public class A101322 extends MultiTransformSequence {

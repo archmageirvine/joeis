@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A069223 Generalized Bell numbers.
+ * A069223 Generalized Bell numbers: row 3 of A090210.
  * @author Sean A. Irvine
  */
 public class A069223 extends Sequence0 {

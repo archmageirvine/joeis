@@ -28,21 +28,12 @@ public class AliquotSequence extends Sequence0 {
     this(Z.valueOf(start));
   }
 
-  private Z aliquot(final Z n) {
-    if (Z.ONE.equals(n)) {
-      return Z.ZERO;
-    } else if (n.isProbablePrime()) {
-      return Z.ONE;
-    }
-    return Functions.SIGMA1.z(n).subtract(n);
-  }
-
   @Override
   public Z next() {
     if (Z.ZERO.equals(mA)) {
       return null;
     }
-    mA = mA == null ? mStart : aliquot(mA);
+    mA = mA == null ? mStart : Functions.ALIQUOT.z(mA);
     return mA;
   }
 }

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000002;
 
 /**
- * A074256.
+ * A074263 Positions of '22' in Kolakoski sequence A000002.
  * @author Sean A. Irvine
  */
 public class A074263 extends A000002 {

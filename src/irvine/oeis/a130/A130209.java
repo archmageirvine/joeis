@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000005;
 import irvine.oeis.triangle.Diagonal;
 
 /**
- * A130209 Diagonalized matrix of d(n), A000005.
+ * A130209 Diagonalized matrix of d(n), A000005, number of divisors of n.
  * @author Georg Fischer
  */
 public class A130209 extends Diagonal {

@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
 /**
- * A006406 Number of 2-connected planar maps with n edges (see reference for precise definition).
+ * A006406 Number of sensed 2-connected simple planar maps with n edges.
  * @author Sean A. Irvine
  */
 public class A006406 extends A006394 {

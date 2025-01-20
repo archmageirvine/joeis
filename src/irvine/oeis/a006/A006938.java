@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A006938 Convert the last term from decimal to binary!.
+ * A006938 Convert the last term from decimal to binary! a(1)=3.
  * @author Sean A. Irvine
  */
 public class A006938 extends Sequence1 {

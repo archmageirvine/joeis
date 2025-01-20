@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
 /**
- * A006391 Number of unsensed planar maps with n edges and without loops.
+ * A006391 Number of unsensed loopless planar maps with n edges.
  * @author Sean A. Irvine
  */
 public class A006391 extends A006385 {

@@ -4,7 +4,7 @@ package irvine.oeis.a233;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A233286 Number of trailing zeros in the factorial base representation of n-th Fibonacci number; a(n) =  A230403(A000045(n)) = A233285(n)-1.
+ * A233286 Number of trailing zeros in the factorial base representation of n-th Fibonacci number.
  * @author Georg Fischer
  */
 public class A233286 extends SimpleTransformSequence {

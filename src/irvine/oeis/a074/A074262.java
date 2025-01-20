@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000002;
 
 /**
- * A074256.
+ * A074262 Positions of '11' in Kolakoski sequence A000002.
  * @author Sean A. Irvine
  */
 public class A074262 extends A000002 {

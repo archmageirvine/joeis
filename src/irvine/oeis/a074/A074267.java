@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A001599.
+ * A074267 Primes of form p^n + k, where p is prime, n&gt;1 and 0&lt;k&lt;p.
  * @author Sean A. Irvine
  */
 public class A074267 extends A000040 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A001599.
+ * A074266 Numbers k such that the harmonic mean of the divisors of k is the square of a rational number.
  * @author Sean A. Irvine
  */
 public class A074266 extends Sequence1 {

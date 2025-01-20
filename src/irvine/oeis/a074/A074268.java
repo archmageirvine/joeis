@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A001599.
+ * A074268 Primes of the form p^2 - p + 1 where p is prime.
  * @author Sean A. Irvine
  */
 public class A074268 extends A000040 {

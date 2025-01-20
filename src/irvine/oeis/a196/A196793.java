@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A196793 a(n) = T(n,n), array T given by A047848.
+ * A196793 a(n) = A047848(n, n).
  * a(n) = ((n+3)^n+n+1)/(n+2).
  * @author Georg Fischer
  */

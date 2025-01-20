@@ -28,17 +28,17 @@ public class A001065 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z next() {
-    return Functions.SIGMA1.z(++mN).subtract(mN);
+    return Functions.ALIQUOT.z(++mN);
   }
 
   @Override
   public Z a(final Z n) {
-    return Functions.SIGMA1.z(n).subtract(n);
+    return Functions.ALIQUOT.z(n);
   }
 
   @Override
   public Z a(final int n) {
-    return Functions.SIGMA1.z(n).subtract(n);
+    return Functions.ALIQUOT.z(n);
   }
 
 }

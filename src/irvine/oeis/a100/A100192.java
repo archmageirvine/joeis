@@ -6,7 +6,7 @@ package irvine.oeis.a100;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A100192 a(n) = Sum_{k=0..n} binomial(2n,n+k)*2^k.
+ * A100192 a(n) = Sum_{k=0..n} binomial(2*n,n+k)*2^k.
  * @author Georg Fischer
  */
 public class A100192 extends HolonomicRecurrence {

@@ -54,6 +54,8 @@ public final class Predicates {
   public static final Predicate DIGIT_UNDULATE = new DigitUndulate();
   /** Test if a number is a St\u00f8rmer number. */
   public static final Predicate STORMER = new Stormer();
+  /** Test if a number is a Super-Poulet number. */
+  public static final Predicate SUPER_POULET = new SuperPoulet();
 
   /** Test if a number is a palindrome in a base. */
   public static final Predicate2 PALINDROME = new Palindrome();

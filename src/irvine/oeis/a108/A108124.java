@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A108124 E.g.f. x/(1+sin(x)).
+ * A108124 Expansion of e.g.f. x/(1+sin(x)).
  * E.g.f.: x/(1+sin(x))
  * @author Georg Fischer
  */

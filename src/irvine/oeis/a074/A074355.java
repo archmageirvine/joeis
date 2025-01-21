@@ -9,10 +9,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A074357 Coefficient of q^3 in nu(n), where nu(0)=1, nu(1)=b and, for n&gt;=2, nu(n)=b*nu(n-1)+lambda*(1+q+q^2+...+q^(n-2))*nu(n-2) with (b,lambda)=(1,3).
+ * A074355 Coefficient of q^1 in nu(n), where nu(0)=1, nu(1)=b and, for n&gt;=2, nu(n)=b*nu(n-1)+lambda*(1+q+q^2+...+q^(n-2))*nu(n-2) with (b,lambda)=(1,3).
  * @author Sean A. Irvine
  */
-public class A074357 extends Sequence0 {
+public class A074355 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private Polynomial<Z> mA = RING.one();
@@ -28,6 +28,6 @@ public class A074357 extends Sequence0 {
       mA = mB;
       mB = t;
     }
-    return mB.coeff(3);
+    return mB.coeff(1);
   }
 }

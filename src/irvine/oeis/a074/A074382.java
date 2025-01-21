@@ -4,20 +4,20 @@ import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
-import irvine.oeis.a033.A033844;
+import irvine.oeis.a038.A038833;
+
 /**
- * A074325 Difference between (1+2^n)-th and (2^n)-th primes. Also number of terms in blocks of A073798.
- * @author Georg Fischer
+ * A074382 Difference between (1+3^n)-th and (3^n)-th primes.
  * @author Sean A. Irvine
  */
-public class A074325 extends Sequence0 {
+public class A074382 extends Sequence0 {
 
-  private final Sequence mA033844 = new A033844();
+  private final Sequence mA = new A038833();
   private final Fast mPrime = new Fast();
 
   @Override
   public Z next() {
-    final Z p = mA033844.next();
+    final Z p = mA.next();
     return mPrime.nextPrime(p).subtract(p);
   }
 }

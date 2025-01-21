@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A108900 Numbers n such that 2357*n + 11 is prime.
+ * A108900 Numbers k such that 2357*k + 11 is prime.
  * @author Georg Fischer
  */
 public class A108900 extends PrimePositionSubsequence {

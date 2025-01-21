@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A074349 a(1)=1, a(n) is smallest number &gt; a(n-1) such that all pair juxtapositions a(1)a(n),...,a(n-1)a(n) are primes.
+ * A074349 a(1)=1, a(4)=97, otherwise a(n) is smallest number &gt; a(n-1) such that all pair juxtapositions a(1)a(n),...,a(n-1)a(n) are primes.
  * @author Sean A. Irvine
  */
 public class A074349 extends CachedSequence {

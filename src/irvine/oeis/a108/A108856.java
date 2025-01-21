@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A108856 Numbers n such that 10*n - 131 is prime.
+ * A108856 Numbers k such that 10*k - 131 is prime.
  * @author Georg Fischer
  */
 public class A108856 extends PrimePositionSubsequence {

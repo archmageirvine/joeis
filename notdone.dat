@@ -2463,3 +2463,7 @@ A073726 Primitive irreducible trinomials: x^n + x^k + 1 is a primitive irreducib
 A074025 Numbers k such that a triplewhist tournament TWh(k) exists.
 A074178 Records of the coefficients of the continued fraction for the Product_{p prime} (1 - 2/p^2). [A065474 too slow]
 A074234 Number of nodes of integer unit lattice covered by integer right triangles.
+A074446 Number of 4-ary Lyndon words of length n over GF(4) with trace 0 and subtrace 0.
+A074447 Number of 4-ary Lyndon words of length n over GF(4) with trace 0 and subtrace 1.
+A074448 Number of 4-ary Lyndon words of length n over GF(4) with trace 1 and subtrace 0.
+A074449 Number of 4-ary Lyndon words of length n over GF(4) with trace 1 and subtrace 1.

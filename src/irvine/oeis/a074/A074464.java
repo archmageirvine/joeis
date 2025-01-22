@@ -2,13 +2,13 @@ package irvine.oeis.a074;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000040;
+import irvine.oeis.a000.A000043;
 
 /**
  * A074663.
  * @author Sean A. Irvine
  */
-public class A074461 extends A000040 {
+public class A074464 extends A000043 {
 
   @Override
   public Z next() {

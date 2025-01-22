@@ -17,6 +17,6 @@ public class A072907 extends DecimalExpansionSequence {
       public CR execute(final CR x) {
         return CR.TWO.log().subtract(x.divide(8)).subtract(x.multiply(-3).divide(7).exp());
       }
-    }.inverseMonotone(CR.valueOf(4.0), CR.valueOf(5.0)).execute(CR.ZERO));
+    }.inverseMonotone(CR.FOUR, CR.FIVE).execute(CR.ZERO));
   }
 }

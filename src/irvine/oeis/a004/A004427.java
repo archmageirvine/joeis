@@ -2,18 +2,13 @@ package irvine.oeis.a004;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.AbstractSequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004427 Arithmetic mean of digits of n (rounded up).
  * @author Sean A. Irvine
  */
-public class A004427 extends AbstractSequence {
-
-  /** Construct the sequence. */
-  public A004427() {
-    super(0);
-  }
+public class A004427 extends Sequence0 {
 
   private long mN = -1;
   private long mLim = 10;

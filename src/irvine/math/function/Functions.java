@@ -157,6 +157,8 @@ public final class Functions {
   public static final Function1 GRAY_DECODE = new GrayDecode(); // =A006068
   /** Thue Morse sequence. */
   public static final Function1 THUE_MORSE = new ThueMorse(); // =A010060
+  /** Collatz function. */
+  public static final Function1 COLLATZ = new Collatz(); // =A006370
 
   // Two argument functions with default first parameter
 

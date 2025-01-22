@@ -15,7 +15,10 @@ class Reverse extends AbstractFunction2D {
 
   @Override
   public Z z(final long base, Z n) {
-    if (base < 2) {
+    if (base <= 1) {
+      if (base == 1) {
+        return n;
+      }
       throw new IllegalArgumentException();
     }
     final Z b = Z.valueOf(base);
@@ -31,7 +34,10 @@ class Reverse extends AbstractFunction2D {
 
   @Override
   public long l(final long base, long n) {
-    if (base < 2) {
+    if (base <= 1) {
+      if (base == 1) {
+        return n;
+      }
       throw new IllegalArgumentException();
     }
     long r = 0;

@@ -1,5 +1,6 @@
 package irvine.oeis.a006;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence0;
@@ -10,7 +11,7 @@ import irvine.oeis.Sequence0;
  */
 public class A006370 extends Sequence0 implements DirectSequence {
 
-  private Z mN = Z.NEG_ONE;
+  private long mN = -1;
 
   @Override
   public Z a(final int n) {
@@ -19,15 +20,11 @@ public class A006370 extends Sequence0 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    if (!n.testBit(0)) {
-      return n.divide(2);
-    }
-    return n.multiply(3).add(1);
+    return Functions.COLLATZ.z(n);
   }
 
   @Override
   public Z next() {
-    mN = mN.add(1);
-    return mN.isEven() ? mN.divide2() : mN.multiply(3).add(1);
+    return Functions.COLLATZ.z(++mN);
   }
 }

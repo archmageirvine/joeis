@@ -13,6 +13,6 @@ public class A122488 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A122488() {
-    super(1, 0, k -> Predicates.SEMIPRIME.is(Z.valueOf(k).square().multiply(3).add(2 * k + 1)));
+    super(1, 0, k -> Predicates.SEMIPRIME.is(Z.valueOf(k).square().multiply(3).add(2L * k + 1)));
   }
 }

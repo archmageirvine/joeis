@@ -12,6 +12,6 @@ public class A135708 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A135708() {
-    super(1, n -> Functions.CEIL_SQRT.z(12 * n - 3).add(3 * n));
+    super(1, n -> Functions.CEIL_SQRT.z(12 * n - 3).add(3L * n));
   }
 }

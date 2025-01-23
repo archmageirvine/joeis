@@ -13,6 +13,6 @@ public class A265694 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A265694() {
-    super(1, n -> (n <= 2) ? Z.valueOf(2 * n - 2) : Functions.MULTIFACTORIAL.z(2, n).mod(Z.valueOf(n).square()));
+    super(1, n -> (n <= 2) ? Z.valueOf(2L * n - 2) : Functions.MULTIFACTORIAL.z(2, n).mod(Z.valueOf(n).square()));
   }
 }

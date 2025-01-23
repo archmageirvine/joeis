@@ -12,6 +12,6 @@ public class A377265 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A377265() {
-    super(1, 1, k -> ZUtils.digitCounts(2 * k)[1] - 1 == ZUtils.digitCounts(k)[1]);
+    super(1, 1, k -> ZUtils.digitCounts(2L * k)[1] - 1 == ZUtils.digitCounts(k)[1]);
   }
 }

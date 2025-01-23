@@ -13,6 +13,6 @@ public class A090768 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A090768() {
-    super(0, n -> Z.SEVEN.pow((n + 1) * (n + 1)).multiply(Integers.SINGLETON.product(1, n, j -> Z.valueOf(49).pow(j).subtract(1))).multiply(4));
+    super(0, n -> Z.SEVEN.pow((long) (n + 1) * (n + 1)).multiply(Integers.SINGLETON.product(1, n, j -> Z.valueOf(49).pow(j).subtract(1))).multiply(4));
   }
 }

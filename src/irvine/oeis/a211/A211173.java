@@ -12,6 +12,6 @@ public class A211173 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A211173() {
-    super(0, n -> Functions.FACTORIAL.z(2 * n).pow(n).modZ(2 * n + 1));
+    super(0, n -> Functions.FACTORIAL.z(2 * n).pow(n).modZ(2L * n + 1));
   }
 }

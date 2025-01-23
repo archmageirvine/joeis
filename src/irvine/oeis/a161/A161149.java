@@ -15,7 +15,7 @@ public class A161149 extends LambdaSequence {
   public A161149() {
     super(0, n -> {
       final Z fan2 = Functions.FACTORIAL.z(2 * n);
-      return fan2.multiply(fan2.multiply(2 * n + 1)).divide(Functions.FACTORIAL.z(n));
+      return fan2.multiply(fan2.multiply(2L * n + 1)).divide(Functions.FACTORIAL.z(n));
     });
   }
 }

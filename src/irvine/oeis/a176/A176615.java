@@ -15,6 +15,6 @@ public class A176615 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A176615() {
-    super(1, n -> new Q(Integers.SINGLETON.sum(1, Functions.SQRT.i(n + 1), k -> new Q(k).square().divide(2).ceiling().subtract(1))).add(Rationals.SINGLETON.sum(Functions.SQRT.i(n + 1) + 1, Functions.SQRT.i(2 * n - 1), k -> new Q(n).subtract(k * k / 2))).num());
+    super(1, n -> new Q(Integers.SINGLETON.sum(1, Functions.SQRT.i(n + 1), k -> new Q(k).square().divide(2).ceiling().subtract(1))).add(Rationals.SINGLETON.sum(Functions.SQRT.i(n + 1) + 1, Functions.SQRT.i(2 * n - 1), k -> new Q(n).subtract((long) k * k / 2))).num());
   }
 }

@@ -13,6 +13,6 @@ public class A227107 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A227107() {
-    super(0, n -> Z.EIGHT.multiply(n).divide(Functions.GCD.z(n + 4, 8 * n)));
+    super(0, n -> Z.EIGHT.multiply(n).divide(Functions.GCD.z(n + 4, 8L * n)));
   }
 }

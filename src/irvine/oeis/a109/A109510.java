@@ -15,7 +15,7 @@ public class A109510 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A109510() {
     super(1, 1, k -> {
-      final Z ab = Functions.SIGMA1.z(k).subtract(2 * k);
+      final Z ab = Functions.SIGMA1.z(k).subtract(2L * k);
       return ab.signum() >= 0 && Predicates.SQUARE.is(ab);
     });
   }

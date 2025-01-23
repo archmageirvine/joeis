@@ -13,7 +13,7 @@ public class A239874 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A239874() {
     super(1, 1, k -> {
-      final Z k22 = Z.valueOf(2 * k).multiply(k);
+      final Z k22 = Z.valueOf(2L * k).multiply(k);
       return k22.add(1).isProbablePrime() && k22.multiply(k).add(1).isProbablePrime();
     });
   }

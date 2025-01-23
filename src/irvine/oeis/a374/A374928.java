@@ -13,6 +13,6 @@ public class A374928 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A374928() {
-    super(1, n -> Functions.FACTORIAL.z(Binomial.binomial(n + 1, 2)).divide(Functions.MULTIFACTORIAL.z(2, 2 * n - 1)));
+    super(1, n -> Functions.FACTORIAL.z(Binomial.binomial(n + 1, 2)).divide(Functions.MULTIFACTORIAL.z(2, 2L * n - 1)));
   }
 }

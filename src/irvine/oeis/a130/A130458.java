@@ -17,7 +17,7 @@ public class A130458 extends LambdaSequence {
   public A130458() {
     super(0, n -> {
       final int m = 3;
-      return (n == 0) ? Z.ONE : Rationals.SINGLETON.sum(1, n, k -> new Q(Binomial.binomial(n * (m + 1) - m * k - 1, n - k).multiply(k)).divide(n * m - (m - 1) * k)).num();
+      return (n == 0) ? Z.ONE : Rationals.SINGLETON.sum(1, n, k -> new Q(Binomial.binomial(n * (m + 1) - (long) m * k - 1, n - k).multiply(k)).divide((long) n * m - (long) (m - 1) * k)).num();
     });
   }
 }

@@ -14,6 +14,6 @@ public class A365975 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A365975() {
-    super(0, (self, n) -> Integers.SINGLETON.sum(0, (n - 1) / 3, k -> Functions.FACTORIAL.z(3 * k).multiply(Binomial.binomial(n, 3 * k + 1)).multiply(self.a(n - 3 * k - 1))), "1");
+    super(0, (self, n) -> Integers.SINGLETON.sum(0, (n - 1) / 3, k -> Functions.FACTORIAL.z(3 * k).multiply(Binomial.binomial(n, 3L * k + 1)).multiply(self.a(n - 3 * k - 1))), "1");
   }
 }

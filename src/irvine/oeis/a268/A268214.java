@@ -12,6 +12,6 @@ public class A268214 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A268214() {
-    super(0, (term, n) -> Binomial.binomial(2 * n, n).subtract(term), "", new A268213());
+    super(0, (term, n) -> Binomial.binomial(2L * n, n).subtract(term), "", new A268213());
   }
 }

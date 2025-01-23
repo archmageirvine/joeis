@@ -14,6 +14,6 @@ public class A378995 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A378995() {
-    super(1, n -> new Q(Functions.SIGMA1.z(2 * n), Z.valueOf(2 * n)).num());
+    super(1, n -> new Q(Functions.SIGMA1.z(2 * n), Z.valueOf(2L * n)).num());
   }
 }

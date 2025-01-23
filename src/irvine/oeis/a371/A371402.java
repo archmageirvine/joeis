@@ -13,6 +13,6 @@ public class A371402 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A371402() {
-    super(0, n -> Functions.GCD.z(2 * n, Z.FOUR.pow(n)).pow(2 * n + 1).mod((Z.TWO.pow(2 * n + 1).subtract(Z.ONE)).square()));
+    super(0, n -> Functions.GCD.z(2L * n, Z.FOUR.pow(n)).pow(2L * n + 1).mod((Z.TWO.pow(2L * n + 1).subtract(Z.ONE)).square()));
   }
 }

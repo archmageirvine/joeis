@@ -13,6 +13,6 @@ public class A376087 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A376087() {
-    super(0, (self, n) -> Integers.SINGLETON.sum(0, n - 1, k -> Z.valueOf(4 * k + 1).multiply(self.a(k)).multiply(self.a(n - k - 1))), "1");
+    super(0, (self, n) -> Integers.SINGLETON.sum(0, n - 1, k -> Z.valueOf(4L * k + 1).multiply(self.a(k)).multiply(self.a(n - k - 1))), "1");
   }
 }

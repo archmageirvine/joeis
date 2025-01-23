@@ -13,6 +13,6 @@ public class A121721 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A121721() {
-    super(1, 0, 0, (n, m) -> (n == 0) ? Z.ONE : Integers.SINGLETON.sum(0, n - 1, k -> Z.valueOf(m).square().multiply(m - 3 * k).add(Z.valueOf(k).square().multiply(3 * m - k))).add(Z.valueOf(m).pow(4)));
+    super(1, 0, 0, (n, m) -> (n == 0) ? Z.ONE : Integers.SINGLETON.sum(0, n - 1, k -> Z.valueOf(m).square().multiply(m - 3L * k).add(Z.valueOf(k).square().multiply(3L * m - k))).add(Z.valueOf(m).pow(4)));
   }
 }

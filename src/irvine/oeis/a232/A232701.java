@@ -12,6 +12,6 @@ public class A232701 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A232701() {
-    super(1, n -> Functions.MULTIFACTORIAL.z(2, 2 * n - 1).mod(Functions.FACTORIAL.z(n)));
+    super(1, n -> Functions.MULTIFACTORIAL.z(2, 2L * n - 1).mod(Functions.FACTORIAL.z(n)));
   }
 }

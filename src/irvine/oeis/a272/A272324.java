@@ -13,6 +13,6 @@ public class A272324 extends FilterSequence {
 
   /** Construct the sequence. */
   public A272324() {
-    super(1, new LambdaSequence(0, k -> Z.valueOf(82 * k - 1228).multiply(k).add(6130).multiply(k).subtract(5861).abs()), PRIME);
+    super(1, new LambdaSequence(0, k -> Z.valueOf(82L * k - 1228).multiply(k).add(6130).multiply(k).subtract(5861).abs()), PRIME);
   }
 }

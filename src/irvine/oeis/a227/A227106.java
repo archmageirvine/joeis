@@ -13,6 +13,6 @@ public class A227106 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A227106() {
-    super(0, n -> Z.SIX.multiply(n).divide(Functions.GCD.z(n + 3, 6 * n)));
+    super(0, n -> Z.SIX.multiply(n).divide(Functions.GCD.z(n + 3, 6L * n)));
   }
 }

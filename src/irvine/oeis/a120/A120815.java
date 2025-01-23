@@ -13,6 +13,6 @@ public class A120815 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A120815() {
-    super(7, n -> Z.valueOf(n + 5).multiply(Z.valueOf(40320).add(Z.valueOf(67824 * n)).subtract(Z.valueOf(20180).multiply(Z.valueOf(n).square())).subtract(Z.valueOf(7556).multiply(Z.valueOf(n).pow(3))).subtract(Z.FIVE.multiply(Z.valueOf(n).pow(4))).add(Z.valueOf(211).multiply(Z.valueOf(n).pow(5))).add(Z.valueOf(25).multiply(Z.valueOf(n).pow(6))).add(Z.valueOf(n).pow(7))).multiply(Binomial.binomial(2 * n, n - 7)).divide(Z.valueOf(5040).multiply(n + 8).multiply(n + 9)));
+    super(7, n -> Z.valueOf(n + 5).multiply(Z.valueOf(40320).add(Z.valueOf(67824L * n)).subtract(Z.valueOf(20180).multiply(Z.valueOf(n).square())).subtract(Z.valueOf(7556).multiply(Z.valueOf(n).pow(3))).subtract(Z.FIVE.multiply(Z.valueOf(n).pow(4))).add(Z.valueOf(211).multiply(Z.valueOf(n).pow(5))).add(Z.valueOf(25).multiply(Z.valueOf(n).pow(6))).add(Z.valueOf(n).pow(7))).multiply(Binomial.binomial(2L * n, n - 7)).divide(Z.valueOf(5040).multiply(n + 8).multiply(n + 9)));
   }
 }

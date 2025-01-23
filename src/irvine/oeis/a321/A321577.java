@@ -16,6 +16,6 @@ public class A321577 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A321577() {
-    super(1, n -> (n <= 2) ? Z.valueOf(2 * n - 2) : A112987.a(n).add(1));
+    super(1, n -> (n <= 2) ? Z.valueOf(2L * n - 2) : A112987.a(n).add(1));
   }
 }

@@ -14,6 +14,6 @@ public class A180195 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A180195() {
-    super(1, n -> Integers.SINGLETON.sum(1, n, j -> Z.NEG_ONE.pow(j).multiply(Functions.FACTORIAL.z(j - 1)).multiply(j * j - j + 1)).multiply(Z.NEG_ONE.pow(n)));
+    super(1, n -> Integers.SINGLETON.sum(1, n, j -> Z.NEG_ONE.pow(j).multiply(Functions.FACTORIAL.z(j - 1)).multiply((long) j * j - j + 1)).multiply(Z.NEG_ONE.pow(n)));
   }
 }

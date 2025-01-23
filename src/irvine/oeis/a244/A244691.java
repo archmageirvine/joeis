@@ -13,6 +13,6 @@ public class A244691 extends FilterIndexSequence {
 
   /** Construct the sequence. */
   public A244691() {
-    super(1, new A033307(), 1, n -> Z.valueOf(n).multiply(4 * n - 4).add(1 - 1));
+    super(1, new A033307(), 1, n -> Z.valueOf(n).multiply(4L * n - 4).add(1 - 1));
   }
 }

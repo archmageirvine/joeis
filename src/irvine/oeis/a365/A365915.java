@@ -13,6 +13,6 @@ public class A365915 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A365915() {
-    super(0, (self, n) -> Integers.SINGLETON.sum(0, (n - 5) / 2, k -> Binomial.binomial(n, 2 * k + 5).multiply(self.a(n - 2 * k - 5))), "1,0,0,0,0,1,0,1,0,1");
+    super(0, (self, n) -> Integers.SINGLETON.sum(0, (n - 5) / 2, k -> Binomial.binomial(n, 2L * k + 5).multiply(self.a(n - 2 * k - 5))), "1,0,0,0,0,1,0,1,0,1");
   }
 }

@@ -13,6 +13,6 @@ public class A238454 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A238454() {
-    super(1, n -> Functions.CEIL_SQRT.z(Z.TWO.pow(2 * n - 1)).square().subtract(Z.TWO.pow(2 * n - 1)));
+    super(1, n -> Functions.CEIL_SQRT.z(Z.TWO.pow(2L * n - 1)).square().subtract(Z.TWO.pow(2L * n - 1)));
   }
 }

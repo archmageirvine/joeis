@@ -14,6 +14,6 @@ public class A268139 extends FilterSequence {
 
   /** Construct the sequence. */
   public A268139() {
-    super(1, new LambdaSequence(1, k -> Z.THREE.multiply(k).multiply(Z.TWO.pow(k)).subtract(3 * k).subtract(Z.TWO.pow(k + 2)).add(4)), v -> Predicates.SEMIPRIME.is(v));
+    super(1, new LambdaSequence(1, k -> Z.THREE.multiply(k).multiply(Z.TWO.pow(k)).subtract(3L * k).subtract(Z.TWO.pow(k + 2)).add(4)), v -> Predicates.SEMIPRIME.is(v));
   }
 }

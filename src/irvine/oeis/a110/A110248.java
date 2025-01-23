@@ -14,6 +14,6 @@ public class A110248 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A110248() {
-    super(0, n -> (n <= 0) ? Z.ONE : Integers.SINGLETON.sum(0, n, k -> Functions.JACOBI.z(k, 2 * n - 2 * k + 1)));
+    super(0, n -> (n <= 0) ? Z.ONE : Integers.SINGLETON.sum(0, n, k -> Functions.JACOBI.z(k, 2L * n - 2L * k + 1)));
   }
 }

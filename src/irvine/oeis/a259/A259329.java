@@ -14,6 +14,6 @@ public class A259329 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A259329() {
-    super(1, n -> new Q(Functions.FACTORIAL.z(Z.TWO.pow(n)), Z.FOUR.pow(n * n)).ceiling());
+    super(1, n -> new Q(Functions.FACTORIAL.z(Z.TWO.pow(n)), Z.FOUR.pow((long) n * n)).ceiling());
   }
 }

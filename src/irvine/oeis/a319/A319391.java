@@ -12,6 +12,6 @@ public class A319391 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A319391() {
-    super(1, (self, n) -> (n % 3 == 0) ? self.a(n - 3).add(Z.valueOf(2 * n - 3).pow(n)) : self.a(n - 1).add(n), "1");
+    super(1, (self, n) -> (n % 3 == 0) ? self.a(n - 3).add(Z.valueOf(2L * n - 3).pow(n)) : self.a(n - 1).add(n), "1");
   }
 }

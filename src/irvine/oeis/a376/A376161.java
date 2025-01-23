@@ -13,6 +13,6 @@ public class A376161 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A376161() {
-    super(0, n -> Z.THREE.multiply(3 * n + 2).multiply(Binomial.binomial(2 * n + 4, n + 2)).divide(Z.valueOf(4 * (2 * n + 1)).multiply(2 * n + 3)));
+    super(0, n -> Z.THREE.multiply(3L * n + 2).multiply(Binomial.binomial(2L * n + 4, n + 2)).divide(Z.valueOf(4 * (2L * n + 1)).multiply(2L * n + 3)));
   }
 }

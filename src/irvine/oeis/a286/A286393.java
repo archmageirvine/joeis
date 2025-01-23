@@ -15,7 +15,7 @@ public class A286393 extends LambdaSequence {
     super(0, n -> {
       final int k = 7;
       final long n2 = (long) n * n;
-      return Z.valueOf(k).pow(n2).add(Z.valueOf(k).pow((n2 + 3 * (n & 1)) / 4).multiply(2)).add(Z.valueOf(k).pow((n2 + (n % 2)) / 2)).add(Z.valueOf(k).pow(n * (n + 1) / 2).multiply(2)).add(Z.valueOf(k).pow(n * (n + (n & 1)) / 2).multiply(2)).divide(8);
+      return Z.valueOf(k).pow(n2).add(Z.valueOf(k).pow((n2 + 3 * (n & 1)) / 4).multiply(2)).add(Z.valueOf(k).pow((n2 + (n % 2)) / 2)).add(Z.valueOf(k).pow((long) n * (n + 1) / 2).multiply(2)).add(Z.valueOf(k).pow((long) n * (n + (n & 1)) / 2).multiply(2)).divide(8);
     });
   }
 }

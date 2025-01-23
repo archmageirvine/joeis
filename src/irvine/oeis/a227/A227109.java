@@ -12,6 +12,6 @@ public class A227109 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A227109() {
-    super(0, n -> new Q(10 * n, n + 5).num());
+    super(0, n -> new Q(10L * n, n + 5).num());
   }
 }

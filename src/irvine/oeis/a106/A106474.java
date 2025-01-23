@@ -14,6 +14,6 @@ public class A106474 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A106474() {
-    super(0, n -> Rationals.SINGLETON.sum(0, 4 * n + 2, k -> new Q(Functions.GCD.z(4 * n - k + 3, k + 1)).divide(4)).num());
+    super(0, n -> Rationals.SINGLETON.sum(0, 4 * n + 2, k -> new Q(Functions.GCD.z(4L * n - k + 3, k + 1)).divide(4)).num());
   }
 }

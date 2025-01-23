@@ -14,6 +14,6 @@ public class A141561 extends FilterSequence {
 
   /** Construct the sequence. */
   public A141561() {
-    super(1, new LambdaSequence(1, k -> Z.valueOf(7 * k).subtract(Functions.PRIME.z(k))), PRIME);
+    super(1, new LambdaSequence(1, k -> Z.valueOf(7L * k).subtract(Functions.PRIME.z(k))), PRIME);
   }
 }

@@ -13,6 +13,6 @@ public class A355400 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A355400() {
-    super(0, n -> Rationals.SINGLETON.product(1, n - 1, i -> Rationals.SINGLETON.product(i, n - 1, j -> new Q(i + j + 2 * n).divide(i + j))).num());
+    super(0, n -> Rationals.SINGLETON.product(1, n - 1, i -> Rationals.SINGLETON.product(i, n - 1, j -> new Q(i + j + 2L * n).divide(i + j))).num());
   }
 }

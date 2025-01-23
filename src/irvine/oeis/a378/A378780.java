@@ -13,6 +13,6 @@ public class A378780 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A378780() {
-    super(0, n -> Z.valueOf(n).multiply(Z.TWO.pow(n)).multiply(Binomial.binomial(3 * n, n)));
+    super(0, n -> Z.valueOf(n).multiply(Z.TWO.pow(n)).multiply(Binomial.binomial(3L * n, n)));
   }
 }

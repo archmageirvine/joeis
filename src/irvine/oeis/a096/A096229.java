@@ -12,6 +12,6 @@ public class A096229 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A096229() {
-    super(0, n -> Z.valueOf((n / 5) * 10 + n % 5).multiply((n / 5) * 10 + 9 - n % 5));
+    super(0, n -> Z.valueOf((n / 5) * 10L + n % 5).multiply((n / 5) * 10L + 9 - n % 5));
   }
 }

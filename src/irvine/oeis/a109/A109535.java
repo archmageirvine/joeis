@@ -12,6 +12,6 @@ public class A109535 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A109535() {
-    super(0, (self, n) -> (n & 1) == 0 ? self.a(n / 2).add(n) : Z.valueOf(2 * n).subtract(self.a((n - 1) / 2)), "1");
+    super(0, (self, n) -> (n & 1) == 0 ? self.a(n / 2).add(n) : Z.valueOf(2L * n).subtract(self.a((n - 1) / 2)), "1");
   }
 }

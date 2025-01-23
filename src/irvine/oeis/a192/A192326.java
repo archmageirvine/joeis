@@ -12,6 +12,6 @@ public class A192326 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A192326() {
-    super(1, n -> Functions.PRIME.z(n).modZ(2 * n - 1));
+    super(1, n -> Functions.PRIME.z(n).modZ(2L * n - 1));
   }
 }

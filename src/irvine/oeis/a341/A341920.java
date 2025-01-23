@@ -13,6 +13,6 @@ public class A341920 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A341920() {
-    super(1, n -> Z.FIVE.multiply(5 * n - 3).multiply(Binomial.binomial(3 * n, n)).divide(Z.valueOf(n + 1).multiply(2 * n + 1).multiply(2 * n + 3)));
+    super(1, n -> Z.FIVE.multiply(5L * n - 3).multiply(Binomial.binomial(3L * n, n)).divide(Z.valueOf(n + 1).multiply(2L * n + 1).multiply(2L * n + 3)));
   }
 }

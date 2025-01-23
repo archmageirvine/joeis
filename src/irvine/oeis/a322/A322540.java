@@ -14,6 +14,6 @@ public class A322540 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A322540() {
-    super(0, n -> Integers.SINGLETON.sum(0, n / 2, k -> Z.NEG_ONE.pow(k).multiply(Binomial.binomial(n, k)).multiply(Binomial.binomial(11 * n - 21 * k - 1, n - 1))));
+    super(0, n -> Integers.SINGLETON.sum(0, n / 2, k -> Z.NEG_ONE.pow(k).multiply(Binomial.binomial(n, k)).multiply(Binomial.binomial(11L * n - 21L * k - 1, n - 1))));
   }
 }

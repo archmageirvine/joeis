@@ -13,6 +13,6 @@ public class A112775 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A112775() {
-    super(1, 0, k -> Predicates.SEMIPRIME.is(Z.valueOf(6 * k + 1)));
+    super(1, 0, k -> Predicates.SEMIPRIME.is(Z.valueOf(6L * k + 1)));
   }
 }

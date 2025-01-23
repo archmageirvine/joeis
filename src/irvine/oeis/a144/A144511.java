@@ -13,6 +13,6 @@ public class A144511 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A144511() {
-    super(0, (term, n) -> Z.valueOf(5 + 3 * n).subtract(Z.THREE.multiply(Binomial.binomial(2 * n + 2, n + 1))).add(term).divide(6), "", new A144660());
+    super(0, (term, n) -> Z.valueOf(5 + 3L * n).subtract(Z.THREE.multiply(Binomial.binomial(2L * n + 2, n + 1))).add(term).divide(6), "", new A144660());
   }
 }

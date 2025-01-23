@@ -14,6 +14,6 @@ public class A184011 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A184011() {
-    super(0, (self, n) -> self.s(0).multiply(Z.TWO.pow(2 * n - 2 - self.s(1).intValueExact())), "", new A052122(), new A052123());
+    super(0, (self, n) -> self.s(0).multiply(Z.TWO.pow(2L * n - 2 - self.s(1).intValueExact())), "", new A052122(), new A052123());
   }
 }

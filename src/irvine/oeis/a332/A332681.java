@@ -14,6 +14,6 @@ public class A332681 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A332681() {
-    super(1, n -> (n <= 2) ? Z.valueOf(2 * n - 1) : Z.TWO.add(Integers.SINGLETON.sum(2, n, k -> Functions.PHI.z(k - 1).multiply(2).add(Functions.MOBIUS.z(k)))));
+    super(1, n -> (n <= 2) ? Z.valueOf(2L * n - 1) : Z.TWO.add(Integers.SINGLETON.sum(2, n, k -> Functions.PHI.z(k - 1).multiply(2).add(Functions.MOBIUS.z(k)))));
   }
 }

@@ -13,6 +13,6 @@ public class A199323 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A199323() {
-    super(1, n -> (n <= 2) ? Z.valueOf(n) : Functions.PRIME_PI.z(Z.valueOf(n).square().add(3 * n - 1)).subtract(Functions.PRIME_PI.z(Z.valueOf(n).square().add(n - 2))));
+    super(1, n -> (n <= 2) ? Z.valueOf(n) : Functions.PRIME_PI.z(Z.valueOf(n).square().add(3L * n - 1)).subtract(Functions.PRIME_PI.z(Z.valueOf(n).square().add(n - 2))));
   }
 }

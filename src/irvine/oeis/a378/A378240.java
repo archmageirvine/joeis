@@ -15,6 +15,6 @@ public class A378240 extends LambdaArray {
 
   /** Construct the sequence. */
   public A378240() {
-    super(0, 0, 0, -1, (n, k) -> (k == 0) ? Z.valueOf((n == 0) ? 1 : 0) : Rationals.SINGLETON.sum(0, n, r -> new Q(Binomial.binomial(n, r).multiply(Binomial.binomial(3 * n + 3 * r + k, n)), Z.valueOf(3 * n + 3 * r + k))).multiply(k).num());
+    super(0, 0, 0, -1, (n, k) -> (k == 0) ? Z.valueOf((n == 0) ? 1 : 0) : Rationals.SINGLETON.sum(0, n, r -> new Q(Binomial.binomial(n, r).multiply(Binomial.binomial(3L * n + 3L * r + k, n)), Z.valueOf(3L * n + 3L * r + k))).multiply(k).num());
   }
 }

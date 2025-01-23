@@ -13,6 +13,6 @@ public class A176083 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A176083() {
-    super(1, n -> Z.TWO.pow(2 * n - 2).mod(Functions.PRIME.z(2 * n)));
+    super(1, n -> Z.TWO.pow(2L * n - 2).mod(Functions.PRIME.z(2 * n)));
   }
 }

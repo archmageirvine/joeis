@@ -17,6 +17,6 @@ public class A088221 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A088221() {
-    super(0, n -> (n <= 1) ? Z.valueOf(n + 1) : Integers.SINGLETON.sum(1, n - 1, j -> (Z.valueOf(4 * j - 1)).multiply(A000699.a(j)).multiply(A000699.a(n - j))));
+    super(0, n -> (n <= 1) ? Z.valueOf(n + 1) : Integers.SINGLETON.sum(1, n - 1, j -> (Z.valueOf(4L * j - 1)).multiply(A000699.a(j)).multiply(A000699.a(n - j))));
   }
 }

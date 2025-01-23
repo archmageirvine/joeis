@@ -13,6 +13,6 @@ public class A369100 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A369100() {
-    super(1, (p, e) -> p.equals(Z.TWO) ? Z.valueOf((e * e - 5 * e + 2) / 2) : Z.valueOf((e + 1) * (e + 2) / 2));
+    super(1, (p, e) -> p.equals(Z.TWO) ? Z.valueOf(((long) e * e - 5L * e + 2) / 2) : Z.valueOf((long) (e + 1) * (e + 2) / 2));
   }
 }

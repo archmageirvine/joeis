@@ -18,7 +18,7 @@ public class A363482 extends LambdaSequence {
   /** Construct the sequence. */
   public A363482() {
     super(3, n -> {
-      final Z n2 = Z.valueOf(n).multiply(n).add(3 * n - 5);
+      final Z n2 = Z.valueOf(n).multiply(n).add(3L * n - 5);
       return n2.divide(Functions.GCD.z(n2, A051403.a(n - 3).multiply(5).add(A051403.a(n - 4).multiply(n))));
     });
   }

@@ -12,6 +12,6 @@ public class A340342 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A340342() {
-    super(1, n -> Z.valueOf((671 * n % 2454) + (16 * n % 32) + (194 * n % 199)));
+    super(1, n -> Z.valueOf((671L * n % 2454) + (16L * n % 32) + (194L * n % 199)));
   }
 }

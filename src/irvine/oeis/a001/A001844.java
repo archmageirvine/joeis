@@ -27,7 +27,7 @@ public class A001844 extends Sequence0 implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    return Z.valueOf(2 * n).multiply(n + 1).add(1);
+    return Z.valueOf(2L * n).multiply(n + 1).add(1);
   }
 
 }

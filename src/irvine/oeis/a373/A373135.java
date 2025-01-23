@@ -12,6 +12,6 @@ public class A373135 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A373135() {
-    super(1, (p, e) -> p.pow(8 * e + 5).multiply(p.add(1)).subtract(p.pow(4 * e).multiply(p.pow(5).add(p.pow(4).add(p).add(1)))).add(p.square().add(p)).divide((p.square().subtract(1)).multiply(p.pow(4).add(1))));
+    super(1, (p, e) -> p.pow(8L * e + 5).multiply(p.add(1)).subtract(p.pow(4L * e).multiply(p.pow(5).add(p.pow(4).add(p).add(1)))).add(p.square().add(p)).divide((p.square().subtract(1)).multiply(p.pow(4).add(1))));
   }
 }

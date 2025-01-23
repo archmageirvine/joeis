@@ -12,6 +12,6 @@ public class A076181 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A076181() {
-    super(1, n -> Functions.FACTORIAL.z(n * n).divide(Functions.FACTORIAL.z(n).pow(n + 1)).divide(2 * n - 1));
+    super(1, n -> Functions.FACTORIAL.z(n * n).divide(Functions.FACTORIAL.z(n).pow(n + 1)).divide(2L * n - 1));
   }
 }

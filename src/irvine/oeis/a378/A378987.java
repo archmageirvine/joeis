@@ -12,6 +12,6 @@ public class A378987 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A378987() {
-    super(1, n -> Functions.PHI.z(2 * n - 1).multiply(2).subtract(2 * n - 1));
+    super(1, n -> Functions.PHI.z(2 * n - 1).multiply(2).subtract(2L * n - 1));
   }
 }

@@ -12,6 +12,6 @@ public class A100659 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A100659() {
-    super(3, n -> new Q(180 * n - 360, n).floor());
+    super(3, n -> new Q(180L * n - 360, n).floor());
   }
 }

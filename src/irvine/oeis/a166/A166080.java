@@ -14,6 +14,6 @@ public class A166080 extends FilterSequence {
 
   /** Construct the sequence. */
   public A166080() {
-    super(1, new LambdaSequence(1, n -> Z.valueOf(2 * n - 1).square().add(1).divide(2)), v -> !Predicates.PRIME.is(v));
+    super(1, new LambdaSequence(1, n -> Z.valueOf(2L * n - 1).square().add(1).divide(2)), v -> !Predicates.PRIME.is(v));
   }
 }

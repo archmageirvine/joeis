@@ -24,7 +24,7 @@ public class A159715 extends LinearRecurrence implements DirectSequence {
    * @param copies number of copies
    */
   public A159715(final int offset, final int copies) {
-    super(2, new long[]{-(copies + 1) * (copies + 1), 2 * (copies + 1)}, new long[]{2 * copies, 3 * copies * (copies + 1)});
+    super(2, new long[]{(long) -(copies + 1) * (copies + 1), 2L * (copies + 1)}, new long[]{2L * copies, 3L * copies * (copies + 1)});
     mCopies = copies;
   }
 

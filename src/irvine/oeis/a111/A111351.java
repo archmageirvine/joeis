@@ -14,6 +14,6 @@ public class A111351 extends FilterSequence {
 
   /** Construct the sequence. */
   public A111351() {
-    super(1, new LambdaSequence(1, k -> Z.valueOf(2 * k).multiply(k).add(1)), v -> Predicates.SEMIPRIME.is(v));
+    super(1, new LambdaSequence(1, k -> Z.valueOf(2L * k).multiply(k).add(1)), v -> Predicates.SEMIPRIME.is(v));
   }
 }

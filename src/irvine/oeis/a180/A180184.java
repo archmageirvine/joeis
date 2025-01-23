@@ -12,6 +12,6 @@ public class A180184 extends LambdaTable {
 
   /** Construct the sequence. */
   public A180184() {
-    super(4, 4, n -> new Integer[]{1, n / 4}, (n, k) -> Binomial.binomial(n - 3 * k - 1, k - 1));
+    super(4, 4, n -> new Integer[]{1, n / 4}, (n, k) -> Binomial.binomial(n - 3L * k - 1, k - 1));
   }
 }

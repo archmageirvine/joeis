@@ -53,10 +53,9 @@ public class A211266 extends AbstractSequence {
    */
   protected Z count(final long n) {
     final long a = 1;
-    final long b = n;
     long result = 0;
-    for (long x = a; x <= b - 1; ++x) {
-      for (long y = x + mRange; y <= b; ++y) {
+    for (long x = a; x <= n; ++x) {
+      for (long y = x + mRange; y <= n; ++y) {
         if (mCond.evaluate(n, x, y)) {
           ++result;
         }
@@ -67,7 +66,6 @@ public class A211266 extends AbstractSequence {
 
   @Override
   public Z next() {
-    ++mN;
-    return count(mN);
+    return count(++mN);
   }
 }

@@ -8,8 +8,6 @@ import irvine.math.z.Z;
  */
 public class A006389 extends A006388 {
 
-  private int mN = 0;
-
   @Override
   public Z next() {
     return Z.valueOf(planarCount(2, ++mN, 1, mN + 1, mVerbose));

@@ -11,6 +11,6 @@ public class A072870 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A072870() {
-    super(1, n -> Functions.PARTITIONS.z(25 * n + 24).divide(25));
+    super(0, n -> Functions.PARTITIONS.z(25 * n + 24).divide(25));
   }
 }

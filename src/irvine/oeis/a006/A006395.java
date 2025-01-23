@@ -10,12 +10,6 @@ import irvine.util.Pair;
  */
 public class A006395 extends A006385 {
 
-  /** Construct the sequence. */
-  public A006395() {
-    super(1);
-    next();
-  }
-
   private final HashSet<Pair<Integer, Integer>> mSeen = new HashSet<>();
 
   @Override

@@ -12,6 +12,6 @@ public class A183776 extends GeneratingFunctionSequence implements Conjectural {
 
   /** Construct the sequence. */
   public A183776() {
-    super(1, "[0,33,95,-186,-494,280,512]", "[1,-2,-18,13,70,-24,-64]");
+    super(0, "[8,17,-49,-82,66,88]", "[1,-2,-18,13,70,-24,-64]");
   }
 }

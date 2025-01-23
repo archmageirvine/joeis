@@ -6,11 +6,6 @@ package irvine.oeis.a006;
  */
 public class A006399 extends A006391 {
 
-  {
-    setOffset(2);
-    next();
-  }
-
   static boolean hasIsthmus(final int e, final int[] s) {
     for (int k = 1; k < 2 * e; ++k) {
       if (s[k] == OPEN_PAREN) {

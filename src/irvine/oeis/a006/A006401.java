@@ -8,12 +8,8 @@ import irvine.math.z.Z;
  */
 public class A006401 extends A006400 {
 
-  {
-    setOffset(3);
-  }
-
   @Override
   public Z next() {
-    return Z.valueOf(planarCount(2, ++mN, 1, mN, mVerbose));
+    return ++mN == 0 ? Z.ONE : Z.valueOf(planarCount(2, mN, 1, mN, mVerbose));
   }
 }

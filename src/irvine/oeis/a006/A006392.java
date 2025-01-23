@@ -8,10 +8,6 @@ import irvine.math.z.Z;
  */
 public class A006392 extends A006388 {
 
-  {
-    setOffset(2);
-  }
-
   @Override
   protected boolean reject(final int e) {
     if (super.reject(e)) {
@@ -37,11 +33,14 @@ public class A006392 extends A006388 {
     return false;
   }
 
-  private int mN = 1;
+  private int mN = -1;
 
   @Override
   public Z next() {
-    planarCount(1, ++mN, 1, mN + 1, mVerbose);
+    if (++mN == 1) {
+      return Z.ZERO;
+    }
+    planarCount(1, mN, 1, mN + 1, mVerbose);
     return Z.valueOf(mTotalSensed);
   }
 }

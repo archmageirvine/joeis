@@ -2,24 +2,17 @@ package irvine.oeis.a069;
 // manually nopan 
 
 import irvine.math.z.Z;
-import irvine.oeis.AbstractSequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000051;
 
 /**
  * A069226 a(n) = gcd(n, 2^n + 1).
  * @author Georg Fischer
  */
-public class A069226 extends AbstractSequence {
+public class A069226 extends Sequence0 {
 
-  private int mN;
+  private int mN = -1;
   private final A000051 mSeq1 = new A000051();
-
-  /** Construct the sequence. */
-  public A069226() {
-    super(1);
-    mN = 0;
-    mSeq1.next();
-  }
 
   @Override
   public Z next() {

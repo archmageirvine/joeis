@@ -6,16 +6,6 @@ package irvine.oeis.a006;
  */
 public class A006400 extends A006394 {
 
-  {
-    setOffset(3);
-  }
-
-  /** Construct the sequence. */
-  public A006400() {
-    next();
-    next();
-  }
-
   protected boolean isParenthesisPair(final int start, final int end) {
     return isPair(start, end, OPEN_PAREN, CLOSE_PAREN);
   }

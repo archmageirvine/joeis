@@ -96,7 +96,7 @@ public class A070080 extends AbstractSequence {
         mB = mA;
         mC = mPeri - mA - mB;
         // print sprintf("%3d: %3d %3d %3d Q\n", mPeri, mA, mB, mC);
-        if (mA <= mB && mB <= mC && mA + mB > mC) {
+        if (mB <= mC && mA + mB > mC) {
           busy = false;
         } else if (mB + mC <= mA) {
           mPeri++;
@@ -104,7 +104,7 @@ public class A070080 extends AbstractSequence {
           mB = mA;
           mC = mPeri - mA - mB;
           // print sprintf("%3d: %3d %3d %3d R\n", mPeri, mA, mB, mC);
-          if (mA <= mB && mB <= mC && mA + mB > mC) {
+          if (mB <= mC && mA + mB > mC) {
             busy = false;
           }
         }
@@ -295,8 +295,7 @@ public class A070080 extends AbstractSequence {
     while (iarg < args.length) {
       final String opt = args[iarg++];
       try {
-        if (false) {
-        } else if ("-d".equals(opt)) {
+        if ("-d".equals(opt)) {
           debug = Integer.parseInt(args[iarg++]);
         } else if ("-s".equals(opt)) {
           periStart = Integer.parseInt(args[iarg++]);
@@ -361,7 +360,7 @@ public class A070080 extends AbstractSequence {
         }
         sb.append(hasIntArea(s) ? " H" : "  ");
         sb.append(hasIntInRadius(s) ? " I" : "  ");
-        sb.append(" | " + h + " " + i);
+        sb.append(" | ").append(h).append(' ').append(i);
         System.out.println(sb);
       }
     }

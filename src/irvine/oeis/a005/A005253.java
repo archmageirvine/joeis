@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A005253 Number of binary words not containing ..01110...
+ * A005253 Number of binary words of length n in which the ones occur only in blocks of length at least 4.
  * @author Sean A. Irvine
  */
 public class A005253 extends Sequence0 {

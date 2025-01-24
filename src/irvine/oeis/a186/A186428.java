@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000203;
 import irvine.oeis.a065.A065764;
 
 /**
- * A186428 sigma(n^2) modulo sigma(n).
+ * A186428 a(n) = sigma(n^2) modulo sigma(n).
  * @author Georg Fischer
  */
 public class A186428 extends Sequence1 {

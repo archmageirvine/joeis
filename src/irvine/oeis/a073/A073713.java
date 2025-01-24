@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a066.A066272;
 
 /**
- * A073713 Numbers n such that the number of distinct primes dividing n = number of anti-divisors of n.
+ * A073713 Numbers k such that the number of distinct primes dividing k = number of anti-divisors of k.
  * @author Sean A. Irvine
  */
 public class A073713 extends Sequence1 {

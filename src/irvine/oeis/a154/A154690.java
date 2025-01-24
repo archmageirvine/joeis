@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A154690 Triangle read by rows: T(n,m) = (2^(n-m) + 2^m)*binomial(n,m), 0 &lt;= m &lt;= n.
+ * A154690 Triangle read by rows: T(n, k) = (2^(n-k) + 2^k)*binomial(n,k), 0 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A154690 extends BaseTriangle {

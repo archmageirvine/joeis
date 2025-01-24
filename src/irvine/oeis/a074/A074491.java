@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000290;
 
 /**
- * A074228.
+ * A074491 "Squarefree" primes: primes without squares in their decimal expansion.
  * @author Sean A. Irvine
  */
 public class A074491 extends A000040 {

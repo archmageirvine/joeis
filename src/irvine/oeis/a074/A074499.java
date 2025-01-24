@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001597;
 
 /**
- * A070049.
+ * A074499 Sum of three perfect powers.
  * @author Sean A. Irvine
  */
 public class A074499 extends Sequence1 {

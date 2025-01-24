@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070049.
+ * A074586 Triangle of Moebius polynomial coefficients, read by rows, the n-th row forming the polynomial M(n,x) such that M(n,-1) = mu(n), the Moebius function of n.
  * @author Sean A. Irvine
  */
 public class A074586 extends Sequence1 {

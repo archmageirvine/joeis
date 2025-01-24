@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A051404 Neither 4 nor 9 divides C(2n-1,n) (almost certainly finite).
+ * A051404 Neither 4 nor 9 divides C(2k-1,k) (almost certainly finite).
  * @author Sean A. Irvine
  */
 public class A051404 extends Sequence1 {

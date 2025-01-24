@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000043;
 
 /**
- * A074663.
+ * A074464 Average digit (rounded down) in the decimal expansion of a prime number p, where 2^p-1 is a Mersenne prime.
  * @author Sean A. Irvine
  */
 public class A074464 extends A000043 {

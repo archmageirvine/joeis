@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A074482.
+ * A074484 a(n) = b(A074483(n), n), where b(k) is the recursion: b(1,n)=1, b(k+1,n)=b(k,n) + (b(k,n) reduced mod(k+n)) (cf. A074482).
  * @author Sean A. Irvine
  */
 public class A074484 extends Sequence0 {

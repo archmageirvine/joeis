@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A070049.
+ * A074590 Number of primitive solutions to n = x^2 + y^2 + z^2 (i.e., with gcd(x,y,z) = 1).
  * @author Sean A. Irvine
  */
 public class A074590 extends Sequence0 {

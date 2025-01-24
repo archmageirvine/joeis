@@ -6,7 +6,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A241215 Decimal expansion of sum_(n&gt;=1) H(n)^4/(n+1)^3 where H(n) is the n-th harmonic number.
+ * A241215 Decimal expansion of Sum_{n&gt;=1} H(n)^4/(n+1)^3 where H(n) is the n-th harmonic number.
  * Formula: Decimal expansion of sum_(n>=1) H(n)^4/(n+1)^3 where H(n) is the n-th harmonic number.  nonn,cons       1..100  nyi     _Jean-Fran?ois Alcove
  * @author Georg Fischer
  */

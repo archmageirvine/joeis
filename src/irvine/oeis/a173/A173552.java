@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A173552 Numbers n such that 5+38*n^2 is a prime.
+ * A173552 Numbers k such that 5+38*k^2 is a prime.
  * @author Georg Fischer
  */
 public class A173552 extends PrimePositionSubsequence {

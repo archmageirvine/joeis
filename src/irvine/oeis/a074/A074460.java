@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A061715.
+ * A074460 Primes which are sandwiched between two numbers having the same unordered canonical form.
  * @author Sean A. Irvine
  */
 public class A074460 extends A000040 {

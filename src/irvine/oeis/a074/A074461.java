@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A074663.
+ * A074461 Average digit (rounded down) in the decimal expansion of the n-th prime number.
  * @author Sean A. Irvine
  */
 public class A074461 extends A000040 {

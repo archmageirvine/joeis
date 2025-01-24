@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 
 import irvine.oeis.a144.A144562;
 /**
- * A155724 Triangle read by rows: T(m,n) = 2mn + m + n - 4.
+ * A155724 Triangle read by rows: T(n, k) = 2*n*k + n + k - 4.
  * @author Georg Fischer
  */
 public class A155724 extends A144562 {

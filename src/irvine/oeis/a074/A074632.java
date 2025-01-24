@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074663.
+ * A074632 Numbers k such that the sum of 2nd, 3rd, 4th and 5th powers of divisors of k are divisible by sum of divisors of k.
  * @author Sean A. Irvine
  */
 public class A074632 extends Sequence1 {

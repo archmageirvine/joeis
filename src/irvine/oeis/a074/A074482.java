@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A074482.
+ * A074482 Consider the recursion b(1,n) = 1, b(k+1,n) = b(k,n) + (b(k,n) reduced mod(k+n)); then there is a number x such that b(k,n) - b(k-1,n) is a constant x depending only on n, for k &gt; y = A074483(n). Sequence gives values of x.
  * @author Sean A. Irvine
  */
 public class A074482 extends Sequence0 {

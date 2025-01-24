@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a002.A002034;
 
 /**
- * A070049.
+ * A074583 Numbers k such that sopfr(k) = S(k), where sopfr = A001414 and S = A002034.
  * @author Sean A. Irvine
  */
 public class A074583 extends FilterPositionSequence {

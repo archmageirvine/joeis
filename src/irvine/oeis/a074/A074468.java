@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074663.
+ * A074468 Least number m such that the Sigma-Harmonic sequence Sum_{k=1..m} 1/sigma(k) &gt;= n.
  * @author Sean A. Irvine
  */
 public class A074468 extends Sequence1 {

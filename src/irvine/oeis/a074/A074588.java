@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070049.
+ * A074588 Rearrangement of odd primes such that a(k) + a(k+1) + 1 is a prime for all k.
  * @author Sean A. Irvine
  */
 public class A074588 extends Sequence1 {

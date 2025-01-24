@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074663.
+ * A074471 Sum of 2nd, 4th, 6th, 8th and 10th powers of divisors are divisible by sum of divisors.
  * @author Sean A. Irvine
  */
 public class A074471 extends Sequence1 {

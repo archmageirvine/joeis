@@ -5,7 +5,7 @@ import irvine.oeis.a007.A007318;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A070049.
+ * A074589 Replace each number n in Pascal's triangle with the n-th prime.
  * @author Sean A. Irvine
  */
 public class A074589 extends SimpleTransformSequence {

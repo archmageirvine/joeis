@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074351.
+ * A074452 Treated as strings, phi(n) is a substring of sigma(n).
  * @author Sean A. Irvine
  */
 public class A074452 extends Sequence1 {

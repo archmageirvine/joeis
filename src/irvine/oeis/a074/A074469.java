@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A074663.
+ * A074469 Least m such that Sigma-Composite-Harmonic series Sum_{k=1..m} 1/A000203(A002808(k)) &gt;= n.
  * @author Sean A. Irvine
  */
 public class A074469 extends A002808 {

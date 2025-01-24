@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A224996 Floor(1/f(x^(1/n))) for x = 2, where f computes the fractional part.
+ * A224996 a(n) = floor(1/f(x^(1/n))) for x = 2, where f computes the fractional part.
  * @author Georg Fischer
  */
 public class A224996 extends FloorSequence {

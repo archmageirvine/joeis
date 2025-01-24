@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A074228.
+ * A074497 a(n) = the smallest prime &gt; Pi^n.
  * @author Sean A. Irvine
  */
 public class A074497 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A074555.
+ * A074456 Consider surface area of unit sphere as a function of the dimension d; maximize this as a function of d (considered as a continuous variable); sequence gives decimal expansion of the resulting surface area.
  * @author Sean A. Irvine
  */
 public class A074456 extends DecimalExpansionSequence {

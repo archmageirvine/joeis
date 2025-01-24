@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A070049.
+ * A074631 a(n) is the smallest k such that the sum of the first k terms of the composite-harmonic series, Sum_{j=1..k} 1/(j-th composite), is &gt; n.
  * @author Sean A. Irvine
  */
 public class A074631 extends A002808 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074228.
+ * A074493 Numbers n such that all the divisors of n appear as substrings in n^3.
  * @author Sean A. Irvine
  */
 public class A074493 extends Sequence1 {

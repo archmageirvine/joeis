@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A162671 Generalized Fibonacci numbers.
+ * A162671 For n even a(n) = a(n-1) + a(n-2), for n odd a(n) = 100*a(n-1) + a(n-2), with a(0) = 0, a(1) = 1.
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

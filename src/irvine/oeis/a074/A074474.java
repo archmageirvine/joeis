@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000244;
 
 /**
- * A074663.
+ * A074474 Number of iteration that first becomes smaller than the initial value if Collatz-function (A006370) is iterated, starting with numbers of form 4n+3.
  * @author Sean A. Irvine
  */
 public class A074474 extends A000244 {

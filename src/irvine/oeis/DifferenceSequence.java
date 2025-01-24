@@ -59,6 +59,9 @@ public class DifferenceSequence extends AbstractSequence {
     }
     final Z t = mPrev;
     mPrev = mSeq.next();
+    if (mPrev == null) {
+      return null; // Underlying sequence was finite
+    }
     return mAbsolute ? mPrev.subtract(t).abs() : mPrev.subtract(t);
   }
 }

@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a046.A046099;
 
 /**
- * A074351.
+ * A074451 Non-cubefree noncubes.
  * @author Sean A. Irvine
  */
 public class A074451 extends FilterSequence {

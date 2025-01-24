@@ -4,7 +4,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
- * A070049.
+ * A074587 Sum of the coefficients of the n-th Moebius polynomial, M(n,x), where M(n,-1) = mu(n), the Moebius function of n.
  * @author Sean A. Irvine
  */
 public class A074587 extends A074586 {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000720;
 
 /**
- * A070049.
+ * A074633 a(n) is the smallest index m such that Sum_{k=2..m} 1/PrimePi(k) &gt;= n, where PrimePi()=A000720().
  * @author Sean A. Irvine
  */
 public class A074633 extends Sequence1 {

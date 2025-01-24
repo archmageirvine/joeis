@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.math.z.Z;
 
 /**
- * A006386 Number of unrooted maps with n edges on the torus.
+ * A006386 Number of sensed genus 1 maps with n edges.
  * @author Sean A. Irvine
  */
 public class A006386 extends A006387 {

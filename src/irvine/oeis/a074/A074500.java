@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A070049.
+ * A074500 Difference between n*sqrt(n)+1 and prime(n), rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A074500 extends A000040 {

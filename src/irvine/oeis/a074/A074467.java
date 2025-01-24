@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074663.
+ * A074467 Least k such that Sum_{i=1..k} 1/phi(i) &gt;= n.
  * @author Sean A. Irvine
  */
 public class A074467 extends Sequence1 {

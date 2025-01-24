@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074393 Number of primes between sigma(n) and phi(n) exclusive.
+ * A074393 Number of primes between sigma(n) and phi(n) exclusive, minus 1 if sigma(n) is a prime.
  * @author Sean A. Irvine
  */
 public class A074393 extends Sequence1 {

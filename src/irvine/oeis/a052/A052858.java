@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A052858 E.g.f.: log(-1/(-1+x*exp(x)-x)).
+ * A052858 Expansion of e.g.f. log(-1/(-1+x*exp(x)-x)).
  * @author Sean A. Irvine
  */
 public class A052858 extends Sequence0 {

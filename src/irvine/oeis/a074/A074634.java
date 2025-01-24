@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070049.
+ * A074634 Cototient-remainder triangle: triangular array T(n,k) (n &gt;= 1, 0 &lt;= k &lt; n) read by rows, where T(n,k) = smallest number x such that cototient(x) mod n = k.
  * @author Sean A. Irvine
  */
 public class A074634 extends Sequence1 {

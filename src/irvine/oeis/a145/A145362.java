@@ -5,7 +5,7 @@ import irvine.oeis.a101.A101688;
 import irvine.oeis.triangle.TruncatedTriangle;
 
 /**
- * A145362 Lower triangular array, called S1hat(-1), related to partition number array A145361.
+ * A145362 Lower triangular array S1hat(-1) read by rows, related to partition number array A145361.
  * @author Georg Fischer
  */
 public class A145362 extends TruncatedTriangle {

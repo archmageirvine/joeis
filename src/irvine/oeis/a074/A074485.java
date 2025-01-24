@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074228.
+ * A074485 Bases k for which the smallest (Fermat) pseudoprime greater than k has Moebius function mu = -1.
  * @author Sean A. Irvine
  */
 public class A074485 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A074228.
+ * A074496 a(n) = smallest prime &gt; e^n.
  * @author Sean A. Irvine
  */
 public class A074496 extends Sequence0 {

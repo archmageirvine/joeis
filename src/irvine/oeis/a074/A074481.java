@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A074663.
+ * A074481 Triangle T(p,k) read by rows, where p runs through the primes and 1 &lt;= k &lt;= p-1. T(p,k) = 1 if the reverse of the base-k expansion of p is a prime, otherwise 0.
  * @author Sean A. Irvine
  */
 public class A074481 extends A000040 {

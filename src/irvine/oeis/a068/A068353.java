@@ -5,7 +5,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A068353 Decimal expansion of smallest positive root of cos(Pi x/2) cosh(Pi x/2) = -1.
+ * A068353 Decimal expansion of smallest positive root of cos(Pi*x/2)*cosh(Pi*x/2) = -1.
  * @author Sean A. Irvine
  */
 public class A068353 extends DecimalExpansionSequence {

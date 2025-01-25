@@ -20,19 +20,17 @@ public class A074694 extends DecimalExpansionSequence {
         return new CR() {
           @Override
           protected Z approximate(final int precision) {
-            final Z one = CR.ONE.getApprox(precision);
             Z sum = Z.ZERO;
             long k = 0;
+            Z u = Z.ZERO;
             while (true) {
               final CR t = CR.valueOf(Functions.FIBONACCI.z(++k + 1)).divide(Functions.FIBONACCI.z(k)).pow(x);
               final Z a = t.getApprox(precision);
-              final Z end = a.divide(k);
-              //System.out.println(k + " " + t + " " + a + " " + one + " " + a.divide(k));
               sum = sum.add(a);
-              // todo fix this magic constant!
-              if (k > 500 && end.compareTo(one) <= 0) {
+              if (u.equals(a)) {
                 break;
               }
+              u = a;
             }
             return sum.divide(k);
           }

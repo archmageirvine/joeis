@@ -29,7 +29,6 @@ public class MatrixRing<E> extends MatrixGroupRing<E> implements Ring<Matrix<E>>
 
   /**
    * Construct a new matrix ring for matrices of a specified size.
-   *
    * @param size number of rows
    * @param elementRing ring of underlying elements
    */
@@ -86,6 +85,16 @@ public class MatrixRing<E> extends MatrixGroupRing<E> implements Ring<Matrix<E>>
     } else {
       return AbstractRing.pow(this, a, n);
     }
+  }
+
+  /**
+   * Return a matrix to a power.
+   * @param matrix matrix
+   * @param n power
+   * @return <code>a^n</code>
+   */
+  public Matrix<E> pow(final Matrix<E> matrix, final Z n) {
+    return AbstractRing.pow(this, matrix, n);
   }
 
   /**

@@ -52,6 +52,42 @@ public abstract class AbstractRing<E> extends AbstractGroup<E> implements Ring<E
     return (n & 1) == 0 ? s : ring.multiply(s, b);
   }
 
+  /**
+   * Powering. Computes <code>b^n</code>. Made available as a static so it
+   * can be called in cases where it is impossible to be an instance of this
+   * class
+   * @param ring the base ring
+   * @param b base
+   * @param n n
+   * @param <E> element type
+   * @return <code>b^n</code>
+   * @exception ArithmeticException if <code>n</code> is negative
+   * and power would entail a non-integral result.
+   */
+  public static <E> E pow(final Ring<E> ring, final E b, final Z n) {
+    if (n.signum() < 0) {
+      throw new IllegalArgumentException();
+    }
+    // x^0
+    if (n.isZero()) {
+      return ring.one();
+    }
+    // 0^x, 1^x, cannot use .equals() because of CR type
+    if (b == ring.zero() || b == ring.one()) {
+      return b;
+    }
+    // x^1
+    if (Z.ONE.equals(n)) {
+      return b;
+    }
+    // x^2 (this case for efficiency)
+    if (Z.TWO.equals(n)) {
+      return ring.multiply(b, b);
+    }
+    final E s = pow(ring, ring.multiply(b, b), n.divide2());
+    return n.isEven() ? s : ring.multiply(s, b);
+  }
+
   // The group inside a ring is always Abelian
   @Override
   public boolean isAbelian() {

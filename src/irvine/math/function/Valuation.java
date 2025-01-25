@@ -15,6 +15,11 @@ class Valuation extends AbstractFunction2 {
   }
 
   @Override
+  public long l(final Z n, final long m) {
+    return z(n, m).longValueExact();
+  }
+
+  @Override
   public int i(long n, final long m) {
     if (n == 0) {
       return 0;

@@ -66,6 +66,21 @@ public final class Fibonacci  {
   }
 
   /**
+   * Compute a Fibonacci number mod <code>m</code>.
+   * @param n index
+   * @param m modulus
+   * @return Fibonacci number
+   */
+  public static Z fibonacci(final Z n, final Z m) {
+    if (m.signum() < 1) {
+      throw new IllegalArgumentException();
+    }
+    final MatrixRing<Z> ring = new MatrixRing<>(2, new IntegersMod(m));
+    final Matrix<Z> mat = new DefaultMatrix<>(new Z[][] {{Z.ONE, Z.ONE}, {Z.ONE, Z.ZERO}}, Z.ZERO);
+    return ring.pow(mat, n).get(0, 1).mod(m);
+  }
+
+  /**
    * Print Fibonacci numbers.
    * @param args indexes to print
    */

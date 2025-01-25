@@ -21,36 +21,11 @@ public class A066417 extends Sequence1 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    if (n.equals(Z.ONE)) {
-      return Z.ZERO;
-    }
-    Z m = n;
-    int k = 0;
-    while (m.and(Z.ONE).isZero()) {
-      m = m.shiftRight(1);
-      ++k;
-    }
-    return Functions.SIGMA1.z(n.multiply2().add(1))
-      .add(Functions.SIGMA1.z(n.multiply2().subtract(1)))
-      .add(Functions.SIGMA1.z(m).shiftLeft(k + 1))
-      .subtract(n.multiply(6).add(2));
+    return Functions.ANTISIGMA1.z(n);
   }
 
   @Override
   public Z a(final int n) {
-    if (n == 1) {
-      return Z.ZERO;
-    }
-    long m = n;
-    int k = 0;
-    while ((m & 1) == 0) {
-      m >>>= 1;
-      ++k;
-    }
-    return Functions.SIGMA1.z(2 * n + 1)
-      .add(Functions.SIGMA1.z(2 * n - 1))
-      .add(Functions.SIGMA1.z(m).shiftLeft(k + 1))
-      .subtract(6L * n + 2);
+    return Functions.ANTISIGMA1.z(n);
   }
-
 }

@@ -4,7 +4,6 @@ import irvine.math.z.Z;
 
 /**
  * Definition of a ring and associated operations.
- *
  * @author Sean A. Irvine
  * @param <E> element type
  */

@@ -79,6 +79,10 @@ public final class Functions {
   public static final Function1 USIGMA1 = new UnitarySigma(); // =A034448
   /** Sum of the numbers less than n that do not divide n. */
   public static final Function1 ANTISIGMA = new Antisigma(); // =A024816
+  /** Sum of the numbers less than n that do not divide n by the largest margin. */
+  public static final Function1 ANTISIGMA1 = new Antisigma1(); // =A066417
+  /** Count of numbers less than n that do not divide n by the largest margin. */
+  public static final Function1 ANTISIGMA0 = new Antisigma0(); // =A066272
   /** Sum of aliquot divisors function. */
   public static final Function1 ALIQUOT = new Aliquot(); // =A001065
   /** Unitary phi function. */

@@ -45,14 +45,14 @@ public class A074734 extends Sequence1 {
     int maxDiff = 0;
     int maxDiffPos = 0;
     for (int k = 1; k < lst.length; ++k) {
-      int modDiff = (lst[k] - lst[k - 1]) % n;
+      final int modDiff = (lst[k] - lst[k - 1]) % n;
       if (modDiff > maxDiff) {
         maxDiff = modDiff;
         maxDiffPos = k;
       }
     }
     // Also need to handle the wraparound case
-    int modDiff = (lst[0] + n - lst[lst.length - 1]) % n;
+    final int modDiff = (lst[0] + n - lst[lst.length - 1]) % n;
     if (modDiff >= maxDiff) {
       maxDiffPos = 0;
     }

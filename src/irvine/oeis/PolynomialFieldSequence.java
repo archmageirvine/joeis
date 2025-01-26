@@ -17,8 +17,8 @@ import irvine.math.z.Z;
 public class PolynomialFieldSequence extends AbstractSequence {
 
   protected static int sDebug = 0;
-  public static final int OGF = 0;
-  public static final int EGF = 1;
+  protected static final int OGF = 0;
+  protected static final int EGF = 1;
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private final ArrayList<Polynomial<Q>> mPolys; // Polynomials referenced in the postfix string as "p0" (the initial value), "p1", "p2" and so on.
   private final String[] mPostfix; // list of operands and operators
@@ -59,7 +59,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
     mGfType = gfType;
     mFactorial = Z.ONE;
 
-    String post = trimQuotes(postfix);
+    final String post = trimQuotes(postfix);
     mPostfix = post.substring(1).split(Pattern.quote(post.substring(0, 1)));
     if (sDebug >= 1) {
       System.out.print("# mPostfix=");
@@ -117,7 +117,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
    * @param top index of top stack element
    * @param str call point
    */
-  protected void debugStack(final String pfix, int top, final String str) {
+  protected void debugStack(final String pfix, final int top, final String str) {
     System.out.print("# pfix=" + pfix + " \t");
     for (int is = 0; is <= top + 1; ++is) {
       if (mStack.get(is) != null) {
@@ -135,7 +135,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
     int ipfix = 0;
     int top = -1; // index of top element of <code>mStack</code>. Initially, the stack is empty.
     while (ipfix < mPostfix.length) { // scan over the operaands and operators
-      String pfix = mPostfix[ipfix++];
+      final String pfix = mPostfix[ipfix++];
       if (sDebug >= 2 && top >= 0) {
         debugStack(pfix, top, "before");
       }
@@ -146,10 +146,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
         mStack.set(++top, RING.create(num));
       } else {
         switch (ch) { // discriminate with the first character
-          default: // should not occur with proper postfix expressions
-            throw new RuntimeException("invalid postfix code " + pfix);
-
-            // operands
+          // operands
           case 'A': // this means A(x), the currently accumulated Polynomial mA for the generating function
             mStack.set(++top, mA);
             break;
@@ -236,6 +233,8 @@ public class PolynomialFieldSequence extends AbstractSequence {
             --top;
             mStack.set(top, RING.series(mStack.get(top), mStack.get(top + 1), mN + mDist));
             break;
+          default: // should not occur with proper postfix expressions
+            throw new RuntimeException("invalid postfix code " + pfix);
         } // switch
       }
       if (sDebug >= 3) {

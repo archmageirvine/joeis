@@ -9,9 +9,9 @@ import irvine.math.z.Z;
  * given by some equation that is satisfied by A(x).
  * @author Georg Fischer
  */
-public class PolynomialFieldTest {
+public final class PolynomialFieldTest {
 
-  protected static int sDebug = 0;
+  static int sDebug = 0;
   private final HashMap<String, Integer> mPrios = new HashMap<>(16);
   private int mPrio;
   private final String mSep = ","; // default separator for postfix polish notation
@@ -31,9 +31,9 @@ public class PolynomialFieldTest {
   /**
    * Store priorities for various operators in the HashMap
    */
-  private void setPrio(String... opers) {
+  private void setPrio(final String... opers) {
     ++mPrio;
-    for (String oper : opers) {
+    for (final String oper : opers) {
       mPrios.put(oper, mPrio);
     }
   } // setPrio
@@ -50,7 +50,7 @@ public class PolynomialFieldTest {
    * @param expr the expression to be parsed
    * @return postfix polish notation
    */
-  private String getPostfix(String expr) {
+  private String getPostfix(final String expr) {
     String result = mSep;
     return result;
   } // getPostfix
@@ -61,9 +61,9 @@ public class PolynomialFieldTest {
    * are given as comma-separated lists, enclosed in square brackets, for example "[[0],[0,1,2],[17,0,18]]".
    * @param postfix the equation with operands and operators in postfix polish notation, separated by the first character.
    */
-  private String buildInfix(String polys, String postfix) {
-    int ipfix = 0;
-    int top = -1; // index of top element of <code>mStack</code>. Initially, the stack is empty.
+  private String buildInfix(final String polys, final String postfix) {
+    final int ipfix = 0;
+    final int top = -1; // index of top element of <code>mStack</code>. Initially, the stack is empty.
 /*
       while (ipfix < mPostfix.length) { // scan over the operaands and operators
         String pfix = mPostfix[ipfix++];
@@ -195,7 +195,7 @@ public class PolynomialFieldTest {
    * <li>-x expression in postfix notation</li>
    * </ul>
    */
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     boolean bfile = false;
     int debug = 0;
     int dist = 0;
@@ -206,7 +206,7 @@ public class PolynomialFieldTest {
     String postfix = null;
     int iarg = 0;
     while (iarg < args.length) { // consume all arguments
-      String opt = args[iarg++];
+      final String opt = args[iarg++];
       try {
         switch (opt) {
           case "-b":
@@ -237,17 +237,17 @@ public class PolynomialFieldTest {
             System.err.println("??? invalid option: \"" + opt + "\"");
             break;
         }
-      } catch (Exception exc) { // take default
+      } catch (final RuntimeException exc) { // take default
       }
     } // while args
 
     if (postfix != null) {
       PolynomialFieldSequence.sDebug = debug;
-      PolynomialFieldSequence prs = new PolynomialFieldSequence(offset, polyList, postfix, dist, gfType);
+      final PolynomialFieldSequence prs = new PolynomialFieldSequence(offset, polyList, postfix, dist, gfType);
       int ind = offset - 1;
       while (--numTerms >= 0) {
         ++ind;
-        Z term = prs.next();
+        final Z term = prs.next();
         if (bfile) {
           System.out.print(ind + " " + term.toString() + "\n");
         } else {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A074696.
+ * A074699 a(n) = tau(Fibonacci(24*2^n))/(24*2^n) where tau(x) is the number of divisors of x (A000005(x)).
  * @author Sean A. Irvine
  */
 public class A074699 extends Sequence0 {

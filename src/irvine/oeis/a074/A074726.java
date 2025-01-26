@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
 
 /**
- * A074696.
+ * A074726 Numbers k such that sigma(F(k)) &gt; 2*F(k) where F(k) is the k-th Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A074726 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074696.
+ * A074712 Number of (interiors of) cells touched by a diagonal in a regular m X n grid (enumerated antidiagonally).
  * @author Sean A. Irvine
  */
 public class A074712 extends Sequence1 {

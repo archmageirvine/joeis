@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074696.
+ * A074719 ip(n): the number of primes not exceeding reverse(n).
  * @author Sean A. Irvine
  */
 public class A074719 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A277458 E.g.f.: -1/(1-LambertW(-x)).
+ * A277458 Expansion of e.g.f. -1/(1-LambertW(-x)).
  * @author Sean A. Irvine
  */
 public class A277458 extends ExponentialGeneratingFunction {

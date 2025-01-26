@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.a000.A000984;
 
 /**
- * A074696.
+ * A074725 Numbers k such that F(k) and C(2k,k) are relatively prime, where F(k) is the k-th Fibonacci number (A000045(k)).
  * @author Sean A. Irvine
  */
 public class A074725 extends Sequence1 {

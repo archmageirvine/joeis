@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074696.
+ * A074701 Numbers k such that k = Sum_{d|phi(k)} mu(phi(d))*phi(k)/d.
  * @author Sean A. Irvine
  */
 public class A074701 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a066.A066417;
 
 /**
- * A074696.
+ * A074729 Numbers whose sum of anti-divisors is a square.
  * @author Sean A. Irvine
  */
 public class A074729 extends FilterPositionSequence {

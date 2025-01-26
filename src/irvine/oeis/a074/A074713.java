@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074696.
+ * A074713 Numbers n such that the sum of the anti-divisors of n = phi(n).
  * @author Sean A. Irvine
  */
 public class A074713 extends Sequence1 {

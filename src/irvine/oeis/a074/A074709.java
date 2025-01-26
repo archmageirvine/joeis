@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074696.
+ * A074709 Base 4 expansion of 1/n has equal percentage of each digit 0,1,2,3.
  * @author Sean A. Irvine
  */
 public class A074709 extends Sequence1 {

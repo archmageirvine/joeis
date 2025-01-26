@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A074696.
+ * A074716 Numbers k such that 2^k - F(k) is prime, where F(n) is the n-th Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A074716 extends A000045 {

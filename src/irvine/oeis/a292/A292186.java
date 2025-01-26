@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 
 import irvine.oeis.a172.A172455;
 /**
- * A292186 Number of rooted unlabeled connected four-regular maps on a compact closed oriented surface with n vertices (and thus 2*n edges).
+ * A292186 Number of rooted unlabeled connected four-regular maps on a compact closed oriented surface with n vertices (and thus 2*n edges), with a(0) = 1.
  * @author Georg Fischer
  */
 public class A292186 extends A172455 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074696.
+ * A074724 Highest power of 3 dividing F(4n) where F(k) is the k-th Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A074724 extends Sequence1 {

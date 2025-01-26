@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000290;
 
 /**
- * A074696.
+ * A074730 Squares whose sum of anti-divisors is a square.
  * @author Sean A. Irvine
  */
 public class A074730 extends FilterSequence {

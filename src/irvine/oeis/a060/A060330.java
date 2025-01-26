@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002808;
 
 /**
- * A060330 Primes the sum of five consecutive composite numbers.
+ * A060330 Primes that are the sum of five consecutive composite numbers.
  * @author Sean A. Irvine
  */
 public class A060330 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A074696.
+ * A074714 Primes that divide Fibonacci number F(2^k) for some k.
  * @author Sean A. Irvine
  */
 public class A074714 extends A000040 {

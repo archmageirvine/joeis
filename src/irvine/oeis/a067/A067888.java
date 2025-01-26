@@ -5,7 +5,7 @@ import irvine.oeis.a062.A062832;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A067888 Numbers n such that tau(n+1)=tau(n-1) where tau(k)=A000005(k).
+ * A067888 Numbers k such that tau(k+1) = tau(k-1) where tau(k) = A000005(k).
  * @author Georg Fischer
  */
 public class A067888 extends SimpleTransformSequence {

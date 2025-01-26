@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074696.
+ * A074718 Least k such that floor(3^n/k) is prime.
  * @author Sean A. Irvine
  */
 public class A074718 extends Sequence1 {

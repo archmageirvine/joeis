@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074696.
+ * A074708 -log(1-Sum_{n&gt;0} x^n/n^2) = Sum_{n&gt;=0} a(n)*x^n/n!^2.
  * @author Sean A. Irvine
  */
 public class A074708 extends Sequence1 {

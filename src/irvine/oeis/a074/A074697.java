@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A074696 Numbers k such that 2^k+1 has more than k divisors (k such that A000005(2^k+1) &gt; k).
+ * A074697 Fibonacci(k) has more than k divisors (k such that A000005(A000045(k)) &gt; k).
  * @author Sean A. Irvine
  */
 public class A074697 extends FilterPositionSequence {

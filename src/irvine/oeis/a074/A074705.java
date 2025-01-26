@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A074696.
+ * A074705 a(1)=4; for n&gt;1: number of primes between squares of (n-1)-th and (n+1)-th primes.
  * @author Sean A. Irvine
  */
 public class A074705 extends A000040 {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A074696.
+ * A074698 Numbers k that divide the number of divisors of Fibonacci(k).
  * @author Sean A. Irvine
  */
 public class A074698 extends FilterPositionSequence {

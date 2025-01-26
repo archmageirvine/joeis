@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A074694.
+ * A074694 Decimal expansion of the solution x of phi^x = lim_{n -&gt; infinity} (1/n)*Sum_{k=1..n} (Fibonacci(k+1)/Fibonacci(k))^x where phi is the golden ratio = (1 + sqrt(5))/2.
  * @author Sean A. Irvine
  */
 public class A074694 extends DecimalExpansionSequence {

@@ -8,7 +8,8 @@ import irvine.oeis.a000.A000961;
  */
 public class A246655 extends A000961 {
 
-  {
-    next(); // skip 1
+  /** Construct the sequence. */
+  public A246655() {
+    super.skip(); // skip 1
   }
 }

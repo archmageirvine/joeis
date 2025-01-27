@@ -19,11 +19,14 @@ public class PolynomialFieldSequence extends AbstractSequence {
   protected static int sDebug = 0;
   protected static final int OGF = 0;
   protected static final int EGF = 1;
-  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private final ArrayList<Polynomial<Q>> mPolys; // Polynomials referenced in the postfix string as "p0" (the initial value), "p1", "p2" and so on.
   private final String[] mPostfix; // list of operands and operators
   private final int mDist; // additional degree
   private final int mGfType; // type of the generating function: 0 = ordinary, 1 = exponential
+  private final int mModulus; // for example 1 for odd, 0 for even if factor = 2
+  private final int mFactor; //  multiplicity when zeroes are left out
+
+  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
+  private final ArrayList<Polynomial<Q>> mPolys; // Polynomials referenced in the postfix string as "p0" (the initial value), "p1", "p2" and so on.
   private int mN; // index of the next sequence element to be computed
   private Polynomial<Q> mA; // the generating function A(x)
   private final ArrayList<Polynomial<Q>> mStack; // stack where the final expression is computed
@@ -32,14 +35,35 @@ public class PolynomialFieldSequence extends AbstractSequence {
   /**
    * Compute successive coefficients for a generating function A(x) defined by a condition that A(x) must satisfy.
    * @param offset first index
+   * @param postfix the equation with operands and operators in postfix polish notation, separated by the first character
+   */
+  public PolynomialFieldSequence(final int offset, final String postfix) {
+    this(offset, "[[1]]", postfix, 0, OGF, 1, 1);
+  }
+
+  /**
+   * Compute successive coefficients for a generating function A(x) defined by a condition that A(x) must satisfy.
+   * @param offset first index
    * @param polys array of polynomials, the coefficients of <code>x^i, i=0..m</code>
    * are given as comma-separated lists, enclosed in square brackets, for example "[[0],[0,1,2],[17,0,18]]"
-   * @param postfix the equation with operands and operators in postfix polish notation, separated by the first character in
-   * the string, for example <code>A(x) = 1 + x*A(x*A(x))^2</code> -&gt; <code>;1;x;x;ax;*;A(;2;^;*;+</code>,
-   * with "ax" for <code>A(x)</code> and "A(" for substitution.
+   * @param postfix the equation with operands and operators in postfix polish notation, separated by the first character
    */
   public PolynomialFieldSequence(final int offset, final String polys, final String postfix) {
-    this(offset, polys, postfix, 0, OGF);
+    this(offset, polys, postfix, 0, OGF, 1, 1);
+  }
+
+  /**
+   * Compute successive coefficients for a generating function A(x) defined by a condition that A(x) must satisfy.
+   * @param offset first index
+   * @param polys array of polynomials, the coefficients of <code>x^i, i=0..m</code>
+   * are given as comma-separated lists, enclosed in square brackets, for example "[[0],[0,1,2],[17,0,18]]"
+   * @param postfix the equation with operands and operators in postfix polish notation, separated by the first character
+   * @param dist additional degree
+   * @param gfType type of the generating function: 0 = ordinary, 1 = exponential
+   */
+  public PolynomialFieldSequence(final int offset, final String polys, final String postfix,
+                                 final int dist, final int gfType) {
+    this(offset, polys, postfix, dist, gfType, 1, 1);
   }
 
   /**
@@ -48,15 +72,19 @@ public class PolynomialFieldSequence extends AbstractSequence {
    * @param polys array of polynomials, the coefficients of <code>x^i, i=0..m</code>
    * are given as comma-separated lists, enclosed in square brackets, for example "[[0],[0,1,2],[17,0,18]]"
    * @param postfix the equation with operands and operators in postfix polish notation, separated by the first character in
-   * the string, for example <code>A(x) = 1 + x*A(x*A(x))^2</code> -&gt; <code>;1;x;x;ax;*;A(;2;^;*;+</code>,
-   * with "ax" for <code>A(x)</code> and "A(" for substitution.
+   * the String, for example A213091 <code>satisfies: A(x) = 1 + x/A(-x*A(x)^2)</code> -&gt; <code>",1,x,A,^2,<1,neg,sub,/,+"</code>
    * @param dist additional degree
    * @param gfType type of the generating function: 0 = ordinary, 1 = exponential
+   * @param modulus for example 1 for odd, 0 for even if factor = 2
+   * @param factor multiplicity when zeroes are left out
    */
-  public PolynomialFieldSequence(final int offset, final String polys, final String postfix, final int dist, final int gfType) {
+  public PolynomialFieldSequence(final int offset, final String polys, final String postfix,
+                                 final int dist, final int gfType, final int modulus, final int factor) {
     super(offset);
     mDist = dist;
     mGfType = gfType;
+    mModulus = modulus;
+    mFactor = factor;
     mFactorial = Z.ONE;
 
     final String post = trimQuotes(postfix);
@@ -92,6 +120,9 @@ public class PolynomialFieldSequence extends AbstractSequence {
 
     mN = offset - 1;
     mA = mPolys.get(0);
+    if (sDebug >= 1) {
+      System.out.println("# construct PolynomialFieldSequence: mN=" + mN + ", mA=" + mA + ", mDist=" + mDist + ", mGfType=" + mGfType);
+    }
   } // Constructor
 
   /**
@@ -127,9 +158,11 @@ public class PolynomialFieldSequence extends AbstractSequence {
     System.out.println("\t" + str);
   }
 
-  @Override
-  public Z next() {
-    ++mN;
+  /**
+   * Compute the next term of the sequence, including any zeroes that are left out by <code>next()</code>.
+   * @return next coefficient of the generating function
+   */
+  private Z compute() {
     // now perform a statement like "mA = RING.add(RING.one(), RING.multiply(RING.x(), RING.pow(RING.substitute(mA, RING.multiply(RING.x(), mA, mN), mN), mExpon, mN), mN));"
     // for example: A143046 poly -p "[[0],[1],[0,-1]]" -x ",p1,p2,sub,^3,<1,+"; G.f. satisfies A(x) = 1 + x*A(-x)^3.
     int ipfix = 0;
@@ -158,6 +191,15 @@ public class PolynomialFieldSequence extends AbstractSequence {
             break;
 
           // operations with 1 operand
+          case 'c':
+            switch (pfix) {
+              case "cos":
+                mStack.set(top, RING.cos(mStack.get(top), mN + mDist));
+                break;
+              default:
+                throw new RuntimeException("invalid postfix code with \"c\":" + pfix);
+            }
+            break;
           case 'd': // "dif", replace the current top element by its derivative
             mStack.set(top, RING.diff(mStack.get(top)));
             break;
@@ -245,12 +287,31 @@ public class PolynomialFieldSequence extends AbstractSequence {
     mA = mStack.get(top);
     Q result = mA.coeff(mN);
     if (mGfType == EGF) {
-      result = result.multiply(mFactorial);
       if (mN > 0) {
         mFactorial = mFactorial.multiply(mN);
       }
+      result = result.multiply(mFactorial);
+      if (sDebug >= 1) {
+        System.out.println("# mFactorial=" + mFactorial + ", mN=" + mN);
+      }
     }
     return result.num();
+  } // compute
+
+  @Override
+  public Z next() {
+    if (mFactor == 1) { // faster for most cases
+      ++mN;
+      return compute();
+    } else {
+      while (true) {
+        ++mN;
+        final Z result = compute();
+        if (mN % mFactor == mModulus) {
+          return result;
+        }
+      } // while
+    }
   } // next
 
 }

@@ -10,7 +10,7 @@ public class A005347 extends A005579 {
 
   /** Construct the sequence. */
   public A005347() {
-    super(1);
+    setOffset(1);
   }
 
   private Z mA = super.next();

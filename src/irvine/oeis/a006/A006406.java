@@ -8,8 +8,7 @@ public class A006406 extends A006394 {
 
   {
     setOffset(3);
-    next();
-    next();
+    skip(3);
   }
 
   @Override

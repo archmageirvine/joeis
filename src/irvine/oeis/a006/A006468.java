@@ -10,6 +10,7 @@ public class A006468 extends A006398 {
 
   {
     setOffset(1);
+    skip(2);
   }
 
   @Override

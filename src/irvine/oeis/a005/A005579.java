@@ -3,28 +3,15 @@ package irvine.oeis.a005;
 import irvine.factor.prime.Fast;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.AbstractSequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005579 Least number of distinct prime factors in even numbers having an abundancy index &gt; n.
  * @author Sean A. Irvine
  */
-public class A005579 extends AbstractSequence {
+public class A005579 extends Sequence0 {
 
-  /**
-   * Constructor with offset.
-   * @param offset first index
-   */
-  protected A005579(final int offset) {
-    super(offset);
-  }
-
-  /** Construct the sequence. */
-  public A005579() {
-    super(2);
-  }
-
-  private long mN = 1;
+  private long mN = -1;
   private long mK;
   private Q mProd = Q.ONE;
   private Z mP = Z.ONE;

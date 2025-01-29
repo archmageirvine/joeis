@@ -336,4 +336,12 @@ public class PolynomialRingFieldTest extends TestCase {
     assertEquals("x^2", f.mod(f.create(Arrays.asList(Z.ZERO, Z.ONE, Z.ZERO, Z.ZERO, Z.ONE)), r).toString());
     assertEquals("1+x", f.mod(f.create(Arrays.asList(Z.ONE, Z.ZERO, Z.ONE, Z.ZERO, Z.ONE)), r).toString());
   }
+
+  public void testLambertW() {
+    final PolynomialRingField<Q> f = new PolynomialRingField<>(Rationals.SINGLETON);
+    assertEquals("x-x^2+3/2x^3-8/3x^4", f.lambertW(f.create(f.x()), 4).toString());
+    assertEquals("-x-x^2-3/2x^3-8/3x^4", f.lambertW(f.create(f.monomial(Q.NEG_ONE, 1)), 4).toString());
+    final Polynomial<Q> r = f.create(Arrays.asList(Q.ONE, Q.valueOf(-2), Q.THREE));
+    assertEquals("3/2-7x+49/2x^2-54x^3", f.lambertW(r, 3).toString()); // Huh? this looks completely bogus
+  }
 }

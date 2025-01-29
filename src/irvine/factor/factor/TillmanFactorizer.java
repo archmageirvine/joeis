@@ -2,10 +2,6 @@ package irvine.factor.factor;
 
 import java.math.BigInteger;
 
-import org.apache.log4j.BasicConfigurator;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
-
 import de.tilman_neumann.jml.factor.CombinedFactorAlgorithm;
 import de.tilman_neumann.util.SortedMultiset;
 import irvine.factor.util.FactorSequence;
@@ -22,10 +18,10 @@ public class TillmanFactorizer extends AbstractFactorizer {
   private static final int THREADS = T.isBlank() ? 1 : Integer.parseInt(T);
   private final CombinedFactorAlgorithm mCfa = new CombinedFactorAlgorithm(THREADS, null, true);
 
-  {
-    BasicConfigurator.configure();
-    Logger.getLogger("de.tilman_neumann.jml.factor").setLevel(Level.ERROR);
-  }
+//  {
+//    BasicConfigurator.configure();
+//    Logger.getLogger("de.tilman_neumann.jml.factor").setLevel(Level.ERROR);
+//  }
 
   @Override
   protected void factor(final FactorSequence fs, Z n) {

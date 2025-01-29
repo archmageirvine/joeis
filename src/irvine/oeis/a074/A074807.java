@@ -1,5 +1,7 @@
 package irvine.oeis.a074;
 
+import java.util.HashSet;
+
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -14,13 +16,14 @@ public class A074807 extends Sequence1 {
 
   @Override
   public Z next() {
-    if (++mN == 1) {
-      return Z.NEG_ONE; // alternates 0, 1
-    }
-    Z t = Z.valueOf(mN);
+    Z t = Z.valueOf(++mN);
+    final HashSet<Z> seen = new HashSet<>();
     long cnt = 0;
     do {
       t = t.multiply2().signedAdd(t.isEven(), Functions.DIGIT_PRODUCT.z(t).add(1));
+      if (!seen.add(t)) {
+        return Z.NEG_ONE;
+      }
       ++cnt;
     } while (!t.isProbablePrime());
     return Z.valueOf(cnt);

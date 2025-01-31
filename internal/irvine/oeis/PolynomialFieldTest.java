@@ -51,8 +51,7 @@ public final class PolynomialFieldTest {
    * @return postfix polish notation
    */
   private String getPostfix(final String expr) {
-    String result = mSep;
-    return result;
+    return mSep;
   } // getPostfix
 
   /**
@@ -205,7 +204,7 @@ public final class PolynomialFieldTest {
    */
   public static void main(final String[] args) {
     boolean bfile = false;
-    if(args.length == 0) {
+    if (args.length == 0) {
       usage();
       return;
     }

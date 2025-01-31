@@ -85,7 +85,6 @@ public class PolynomialFieldSequence extends AbstractSequence {
     mGfType = gfType;
     mModulus = modulus;
     mFactor = factor;
-    mFactorial = Z.ONE;
 
     final String post = trimQuotes(postfix);
     mPostfix = post.substring(1).split(Pattern.quote(post.substring(0, 1)));
@@ -118,6 +117,10 @@ public class PolynomialFieldSequence extends AbstractSequence {
       mPolys.add(RING.create(Arrays.asList(qvect)));
     } // for k
 
+    mFactorial = Z.ONE;
+    for (int i = offset - 1; i > 0; --i) {
+      mFactorial = mFactorial.multiply(i);
+    }
     mN = offset - 1;
     mA = mPolys.get(0);
     if (sDebug >= 1) {
@@ -191,13 +194,73 @@ public class PolynomialFieldSequence extends AbstractSequence {
             break;
 
           // operations with 1 operand
+          case 'a':
+            switch (pfix) {
+/*
+              case "acsch":
+                mStack.set(top, RING.acsch(mStack.get(top), mN + mDist));
+                break;
+              case "acsc":
+                mStack.set(top, RING.acsc(mStack.get(top), mN + mDist));
+                break;
+              case "acosh":
+                mStack.set(top, RING.acosh(mStack.get(top), mN + mDist));
+                break;
+              case "acos":
+                mStack.set(top, RING.acos(mStack.get(top), mN + mDist));
+                break;
+              case "acoth":
+                mStack.set(top, RING.acoth(mStack.get(top), mN + mDist));
+                break;
+              case "acot":
+                mStack.set(top, RING.acot(mStack.get(top), mN + mDist));
+                break;
+              case "asech":
+                mStack.set(top, RING.asech(mStack.get(top), mN + mDist));
+                break;
+              case "asec":
+                mStack.set(top, RING.asec(mStack.get(top), mN + mDist));
+                break;
+*/
+              case "asinh":
+                mStack.set(top, RING.asinh(mStack.get(top), mN + mDist));
+                break;
+              case "asin":
+                mStack.set(top, RING.asin(mStack.get(top), mN + mDist));
+                break;
+              case "atanh":
+                mStack.set(top, RING.atanh(mStack.get(top), mN + mDist));
+                break;
+              case "atan":
+                mStack.set(top, RING.atan(mStack.get(top), mN + mDist));
+                break;
+              default:
+                throw new RuntimeException("invalid postfix code starting with \"a\":" + pfix);
+            }
+            break;
+          // operations with 1 operand
           case 'c':
             switch (pfix) {
+              case "cosh":
+                mStack.set(top, RING.cosh(mStack.get(top), mN + mDist));
+                break;
               case "cos":
                 mStack.set(top, RING.cos(mStack.get(top), mN + mDist));
                 break;
+              case "coth":
+                mStack.set(top, RING.series(RING.one(), RING.tanh(mStack.get(top), mN + mDist), mN + mDist));
+                break;
+              case "cot":
+                mStack.set(top, RING.series(RING.one(), RING.tan(mStack.get(top), mN + mDist), mN + mDist));
+                break;
+              case "csch":
+                mStack.set(top, RING.series(RING.one(), RING.sinh(mStack.get(top), mN + mDist), mN + mDist));
+                break;
+              case "csc":
+                mStack.set(top, RING.series(RING.one(), RING.sin(mStack.get(top), mN + mDist), mN + mDist));
+                break;
               default:
-                throw new RuntimeException("invalid postfix code with \"c\":" + pfix);
+                throw new RuntimeException("invalid postfix code starting with \"c\":" + pfix);
             }
             break;
           case 'd': // "dif", replace the current top element by its derivative
@@ -215,12 +278,23 @@ public class PolynomialFieldSequence extends AbstractSequence {
                 mStack.set(top, RING.integrate(mStack.get(top)));
                 break;
               default:
-                throw new RuntimeException("invalid postfix code with \"i\":" + pfix);
+                throw new RuntimeException("invalid postfix code starting with \"i\":" + pfix);
             }
             break;
-          case 'l': // "log", preplace the current top element te by log(te)
-            mStack.set(top, RING.log(mStack.get(top), mN + mDist));
-            break;
+          case 'l':
+            switch (pfix) {
+              case "log": // "log", replace the current top element te by log(te)
+                mStack.set(top, RING.log(mStack.get(top), mN + mDist));
+                break;
+              case "lambertW": // current defintion of LambertW works
+                mStack.set(top, RING.lambertW(mStack.get(top), mN + mDist));
+                break;
+              case "lambNegW": // workaround if only the "negated" version works - normally this should be identical with <code>lambertW</code>
+                mStack.set(top, RING.negate(RING.lambertW(mStack.get(top), mN + mDist)));
+                break;
+              default:
+                throw new RuntimeException("invalid postfix code starting with \"l\":" + pfix);
+            }
           case 'n': // "neg", replace the current top element by its negation
             mStack.set(top, RING.negate(mStack.get(top)));
             break;
@@ -229,8 +303,14 @@ public class PolynomialFieldSequence extends AbstractSequence {
             break;
           case 's':
             switch (pfix) {
-              case "sub": // "sub", replace the current top element by a substitution
-                mStack.set(top, RING.substitute(mA, mStack.get(top), mN + mDist));
+              case "sech":
+                mStack.set(top, RING.sech(mStack.get(top), mN + mDist));
+                break;
+              case "sec":
+                mStack.set(top, RING.sec(mStack.get(top), mN + mDist));
+                break;
+              case "sinh":
+                mStack.set(top, RING.sinh(mStack.get(top), mN + mDist));
                 break;
               case "sin":
                 mStack.set(top, RING.sin(mStack.get(top), mN + mDist));
@@ -238,8 +318,23 @@ public class PolynomialFieldSequence extends AbstractSequence {
               case "sqrt":
                 mStack.set(top, RING.sqrt(mStack.get(top), mN + mDist));
                 break;
+              case "sub": // "sub", replace the current top element by a substitution
+                mStack.set(top, RING.substitute(mA, mStack.get(top), mN + mDist));
+                break;
               default:
-                throw new RuntimeException("invalid postfix code with \"s\":" + pfix);
+                throw new RuntimeException("invalid postfix code starting with \"s\":" + pfix);
+            }
+            break;
+          case 't':
+            switch (pfix) {
+              case "tanh":
+                mStack.set(top, RING.tanh(mStack.get(top), mN + mDist));
+                break;
+              case "tan":
+                mStack.set(top, RING.tan(mStack.get(top), mN + mDist));
+                break;
+              default:
+                throw new RuntimeException("invalid postfix code starting with \"t\":" + pfix);
             }
             break;
           case '<': // "<(\d+)" = shift x -> x^$1 (may be negative)
@@ -314,4 +409,11 @@ public class PolynomialFieldSequence extends AbstractSequence {
     }
   } // next
 
+  /**
+   * Get the postfix polish notation.
+   * @return list of operands and operations.
+   */
+  public String[] getPostfix() {
+    return mPostfix;
+  }
 }

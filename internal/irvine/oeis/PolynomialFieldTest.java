@@ -51,7 +51,8 @@ public final class PolynomialFieldTest {
    * @return postfix polish notation
    */
   private String getPostfix(final String expr) {
-    return mSep;
+    String result = mSep;
+    return result;
   } // getPostfix
 
   /**
@@ -181,12 +182,11 @@ public final class PolynomialFieldTest {
   } // build
 
   /**
-   * Print a message for the parameter usage and exit.
+   * Print a message for the parameter usage.
    */
   private static void usage() {
     System.out.println("Usage: java -cp joeis.jar irvine.oeis.PolynomialFieldTest"
         + " [polys] postfix [-b] [-d mode] [-i dist] [-n noterms] [-o offset] [-t gftype]");
-    System.exit(1);
   }
 
   /**
@@ -205,7 +205,7 @@ public final class PolynomialFieldTest {
    */
   public static void main(final String[] args) {
     boolean bfile = false;
-    if (args.length == 0) {
+    if(args.length == 0) {
       usage();
       return;
     }

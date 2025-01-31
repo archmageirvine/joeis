@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074734 T(n,k)= count of differences between standard sort and 'modular sort' over all subsets of k integers chosen from n. Modular Sort considers the integers 1..n to lie on a circle and rotates them to exclude the largest interval.
+ * A074734 Triangle read by rows where T(n,k) = count of differences between standard sort and 'modular sort' over all subsets of k integers chosen from n. Modular sort considers the integers 1..n to lie on a circle and rotates them to exclude the largest interval.
  * @author Sean A. Irvine
  */
 public class A074734 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074767.
+ * A074775 Numbers n such that tau(n) &lt; tau(n+1) where tau(x)=A000005(x).
  * @author Sean A. Irvine
  */
 public class A074775 extends Sequence1 {

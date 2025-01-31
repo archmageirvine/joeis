@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a001.A001608;
 
 /**
- * A074767.
+ * A074788 Prime numbers in the Perrin sequence b(n+1) = b(n-1) + b(n-2) with initial values b(1)=3, b(2)=0, b(3)=2.
  * @author Sean A. Irvine
  */
 public class A074788 extends FilterSequence {

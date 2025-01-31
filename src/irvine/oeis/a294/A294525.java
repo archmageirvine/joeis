@@ -11,7 +11,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A294525 Triangle read by rows: T(n,k) is the number of connected graphs on n nodes with k center nodes.
+ * A294525 Triangle read by rows: T(n,k) is the number of simple connected graphs on n nodes with k center nodes.
  * @author Sean A. Irvine
  */
 public class A294525 extends Sequence1 implements GraphProcessor {

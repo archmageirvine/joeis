@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074767.
+ * A074791 Numbers k such that k does not divide the denominator of the k-th harmonic number.
  * @author Sean A. Irvine
  */
 public class A074791 extends Sequence1 {

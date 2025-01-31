@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a246.A246655;
 
 /**
- * A074767.
+ * A074793 Sum of prime powers less than or equal to n.
  * @author Sean A. Irvine
  */
 public class A074793 extends Sequence1 {

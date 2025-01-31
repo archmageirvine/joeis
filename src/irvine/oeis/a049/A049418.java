@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.math.z.InfinitaryDivisors;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -14,6 +14,6 @@ public class A049418 extends Sequence1 {
 
   @Override
   public Z next() {
-    return InfinitaryDivisors.infinitary3Sigma(Z.valueOf(++mN));
+    return Functions.INFINITARY_SIGMA1.z(3, Z.valueOf(++mN));
   }
 }

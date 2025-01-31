@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012629 tanh(arcsinh(x)*arctan(x))=2/2!*x^2-12/4!*x^4-2/6!*x^6+10248/8!*x^8...
+ * A012629 Expansion of e.g.f. tanh(arcsinh(x)*arctan(x)) (only even powers).
  * @author Sean A. Irvine
  */
 public class A012629 extends Sequence0 {

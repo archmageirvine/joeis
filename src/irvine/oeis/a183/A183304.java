@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A183304 Half the number of nX3 binary arrays with no element equal to a strict majority of its horizontal and vertical neighbors.
+ * A183304 Half the number of n X 3 binary arrays with no element equal to a strict majority of its horizontal and vertical neighbors.
  * @author Georg Fischer
  */
 public class A183304 extends GeneratingFunctionSequence implements Conjectural {

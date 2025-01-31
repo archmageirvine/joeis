@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A005579 Least number of distinct prime factors in even numbers having an abundancy index &gt; n.
+ * A005579 a(n) = smallest number k such that Product_{i=1..k} prime(i)/(prime(i)-1) &gt; n.
  * @author Sean A. Irvine
  */
 public class A005579 extends Sequence0 {

@@ -9,7 +9,7 @@ import irvine.oeis.a001.A001221;
 import irvine.oeis.a001.A001222;
 
 /**
- * A328958 a(n) = sigma_0(n) - omega(n) * nu(n), where sigma_0 = A000005, nu = A001221, omega = A001222.
+ * A328958 a(n) = d(n) - (omega(n) * bigomega(n)), where d (number of divisors) = A000005, omega = A001221, bigomega = A001222.
  * @author Georg Fischer
  */
 public class A328958 extends Sequence1 {

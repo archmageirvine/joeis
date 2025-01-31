@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074737 Let b(1)=b(2)=1, b(k+2)=gcd(k!,b(k+1)+b(k)); sequence gives values of n such that b(n)=1.
+ * A074737 Let b(1)=b(2)=1, b(k+2)=gcd(k!,b(k+1)+b(k)); sequence gives values of k such that b(k)=1.
  * @author Sean A. Irvine
  */
 public class A074737 extends Sequence1 {

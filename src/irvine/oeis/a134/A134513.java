@@ -7,7 +7,7 @@ import irvine.oeis.transform.SimpleTransformSequence;
 import irvine.oeis.triangle.Product;
 
 /**
- * A134513 A049310 * A097806.
+ * A134513 Triangle read by rows: T(n, k) = binomial(ceiling((n+k)/2), floor((n-k)/2)).
  * @author Georg Fischer
  */
 public class A134513 extends Product {

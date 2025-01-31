@@ -7,7 +7,7 @@ import irvine.oeis.a006.A006577;
 import irvine.util.string.StringUtils;
 
 /**
- * A074767.
+ * A074769 Least k such that the number of steps to reach 1 starting with k and iterating the Collatz process equals k/n, or -1 if no such k exists.
  * @author Sean A. Irvine
  */
 public class A074769 extends Sequence1 {

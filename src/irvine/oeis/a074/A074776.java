@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
 
 /**
- * A074767.
+ * A074776 Numbers k such that 2^k-1 and F(k) are not relatively prime, where F(k) denotes the k-th Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A074776 extends Sequence1 {

@@ -1,6 +1,6 @@
 package irvine.oeis.a037;
 
-import irvine.math.z.InfinitaryDivisors;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
@@ -15,12 +15,12 @@ public class A037445 extends Sequence1 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return InfinitaryDivisors.infinitarySigma0(n);
+    return Functions.INFINITARY_SIGMA0.z(n);
   }
 
   @Override
   public Z a(final int n) {
-    return InfinitaryDivisors.infinitarySigma0(Z.valueOf(n));
+    return Functions.INFINITARY_SIGMA0.z(n);
   }
 
   @Override

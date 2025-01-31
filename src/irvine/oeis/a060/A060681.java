@@ -19,7 +19,7 @@ public class A060681 extends Sequence1 {
     if ((mN & 1) == 0) {
       return Z.valueOf(mN - (mN >>> 1));
     } else {
-      // Essentially trial division to find least prime factor
+      // Essentially trial division to find the least prime factor
       long k = 3;
       while (mN % k != 0) {
         k += 2;

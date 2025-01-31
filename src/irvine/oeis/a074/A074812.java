@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A006420.
+ * A074812 Smaller of 2 squares whose corresponding digits add to give 0 or 10 and neither square ends in 0's. (The smaller of two 10-complementary squares.).
  * @author Sean A. Irvine
  */
 public class A074812 extends Sequence1 {

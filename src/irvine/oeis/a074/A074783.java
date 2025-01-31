@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A074767.
+ * A074783 a(n) = floor(1/sin(x(n))) where x(n) is Pi truncated at the n-th decimal digit.
  * @author Sean A. Irvine
  */
 public class A074783 extends Sequence0 {

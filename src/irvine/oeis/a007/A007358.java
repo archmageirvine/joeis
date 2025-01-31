@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.math.z.InfinitaryDivisors;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A007358 extends Sequence1 {
       if (mN.isZero()) {
         return Z.ONE;
       }
-      if (InfinitaryDivisors.infinitarySigma(mN).mod(mN).isZero()) {
+      if (Functions.INFINITARY_SIGMA1.z(mN).mod(mN).isZero()) {
         return mN;
       }
     }

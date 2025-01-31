@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A074767.
+ * A074781 Primes of the form p*2^k + 1 for any k and any prime p.
  * @author Sean A. Irvine
  */
 public class A074781 extends A000040 {

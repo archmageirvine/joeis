@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063836 Numbers n such that usigma(sigma(n)) is prime.
+ * A063836 Numbers k such that usigma(sigma(k)) is prime.
  * @author Sean A. Irvine
  */
 public class A063836 extends Sequence1 {

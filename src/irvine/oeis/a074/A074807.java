@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064353.
+ * A074807 Number of steps needed to reach a prime when the following map is repeatedly applied to n: if n is even then 2n + POD(n) + 1, otherwise 2n - POD(n) - 1, where POD(n) is the product of the digits of n; or -1 if no prime is ever reached.
  * @author Sean A. Irvine
  */
 public class A074807 extends Sequence1 {

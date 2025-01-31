@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A135810 Number of coincidence-free length n lists of 4-tuples with all numbers 1,...,n in tuple position k, for k=1..4.
+ * A135810 Number of coincidence-free length n lists of 4-tuples with all numbers 1..n in tuple position k, for k=1..4.
  * a(n)=sum(k=0,n,(-1)^k*binom(n,k)*(n-k)!^4)
  * @author Georg Fischer
  */

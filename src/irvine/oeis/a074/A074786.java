@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074767.
+ * A074786 Numbers k such that phi(k) = Sum_{d|k} core(d) where core(x) is the squarefree part of x (A007913).
  * @author Sean A. Irvine
  */
 public class A074786 extends Sequence1 {

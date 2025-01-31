@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074767.
+ * A074782 Let b(1)=b(2)=1, b(k) = (2^b(k-1)+2^b(k-2)) (mod k); sequence gives values of n such that b(n)=0.
  * @author Sean A. Irvine
  */
 public class A074782 extends Sequence1 {

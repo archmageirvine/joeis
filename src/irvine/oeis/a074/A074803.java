@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A064353.
+ * A074803 Kolakoski-(4,2) sequence: a(n) is length of n-th run.
  * @author Sean A. Irvine
  */
 public class A074803 extends Sequence1 {

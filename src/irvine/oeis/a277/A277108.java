@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A277108 a(n) = 4n*(n+5).
+ * A277108 a(n) = 4*n*(n+5).
  * @author Sean A. Irvine
  */
 public class A277108 extends LinearRecurrence {

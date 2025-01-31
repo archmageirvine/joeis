@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074767.
+ * A074777 Integers n such that sigma(phi(n))/n = 1/2.
  * @author Sean A. Irvine
  */
 public class A074777 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074767.
+ * A074792 Least k &gt; 1 such that k^n == 1 (mod n).
  * @author Sean A. Irvine
  */
 public class A074792 extends Sequence1 {

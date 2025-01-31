@@ -7,7 +7,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
- * A046854 Triangle T(n, k) = binomial(floor((n+k)/2), k), n&gt;=0, n &gt;= k &gt;= 0.
+ * A046854 Triangle read by rows: T(n, k) = binomial(floor((n+k)/2), k), n &gt;= k &gt;= 0.
  * @author Georg Fischer
  */
 public class A046854 extends GeneratingFunctionTriangle implements DirectArray {

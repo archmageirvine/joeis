@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a035.A035250;
 
 /**
- * A064353.
+ * A074810 Numbers k such that the number of primes between k and 2k (inclusive) = largest prime factor of k.
  * @author Sean A. Irvine
  */
 public class A074810 extends FilterPositionSequence {

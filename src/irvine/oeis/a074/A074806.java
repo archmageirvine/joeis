@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A064353.
+ * A074806 Least k such that F(k) reduced (mod prime(n)) = prime(n)-1 where F(k) is the k-th Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A074806 extends A000040 {

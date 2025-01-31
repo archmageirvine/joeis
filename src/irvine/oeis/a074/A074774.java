@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005148;
 
 /**
- * A056915.
+ * A074774 a(n) = A005148(n)/8^(b(n)-1) where b(n) denotes the number of 1's in the binary representation of n.
  * @author Sean A. Irvine
  */
 public class A074774 extends Sequence1 {

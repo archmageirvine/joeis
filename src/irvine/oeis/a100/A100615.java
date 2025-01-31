@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A100615 Let N(n)(x) be the N?rlund polynomials as defined in A001898, with N(n)(1) equal to the usual Bernoulli numbers A027641/A027642. Sequence gives numerators of N(n)(2).
+ * A100615 Let N(n)(x) be the N\u00f8rlund polynomials as defined in A001898, with N(n)(1) equal to the usual Bernoulli numbers A027641/A027642. Sequence gives numerators of N(n)(2).
  * E.g.f.: (x/(exp(x)-1))^2
  * @author Georg Fischer
  */

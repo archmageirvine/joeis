@@ -4,7 +4,7 @@ package irvine.oeis.a177;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A177383 G.f. satisfies: [x^n] A(x)^(n+1) = [x^n] A(x)^(n+2) for n&gt;1 with A&apos;(0)=A(0)=1.
+ * A177383 G.f. satisfies: [x^n] A(x)^(n+1) = [x^n] A(x)^(n+2) for n&gt;1 with A'(0)=A(0)=1.
  * G.f.satisfies: A(x) = 1 + x * (A(x) - x*A'(x)) / A(x)^3.
  * @author Georg Fischer
  */

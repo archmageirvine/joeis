@@ -6,7 +6,7 @@ import irvine.oeis.a054.A054921;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A318590 Number of connected balanced signed graphs on n unlabeled nodes.
+ * A318590 Number of connected balanced simple signed graphs on n unlabeled nodes.
  * @author Sean A. Irvine
  */
 public class A318590 extends MemorySequence {

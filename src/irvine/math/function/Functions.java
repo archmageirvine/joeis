@@ -169,6 +169,10 @@ public final class Functions {
   // Developer note: SIGMA must be initialized after SIGMA1 and SIGMA0
   /** Generalized sum of divisors function. */
   public static final Function2D SIGMA = new Sigma(); // =A000005(0, =A000203(1, =A001157(2, =A001158(3,
+  /** Generalized number of infinitary divisors function. */
+  public static final Function2D INFINITARY_SIGMA0 = new InfinitarySigma0();
+  /** Generalized infinitary sum of divisors function. */
+  public static final Function2D INFINITARY_SIGMA1 = new InfinitarySigma1();
   /** Multiplicative order in <code>Z_base</code>. */
   public static final Function2D ORDER = new MultiplicativeOrder();
   /** Reverse the digits of a number. */

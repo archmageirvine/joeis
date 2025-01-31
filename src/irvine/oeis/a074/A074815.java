@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A006420.
+ * A074815 Numbers k such that there are no prime numbers between reverse(k) and 3*k.
  * @author Sean A. Irvine
  */
 public class A074815 extends Sequence1 {

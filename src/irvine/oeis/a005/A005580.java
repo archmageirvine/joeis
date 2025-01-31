@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.math.z.Z;
 
 /**
- * A005580 Least number of distinct prime factors in odd numbers having an abundancy index &gt; n.
+ * A005580 a(n) = smallest number k such that Product_{i=2..k+1} prime(i)/(prime(i)-1) &gt; n.
  * @author Sean A. Irvine
  */
 public class A005580 extends A005579 {

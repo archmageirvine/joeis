@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a035.A035250;
 
 /**
- * A006420.
+ * A074814 Numbers k such that the number of primes between k and 2k (inclusive) is equal to the number of primes between k and reverse(k) (inclusive).
  * @author Sean A. Irvine
  */
 public class A074814 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A006420.
+ * A074811 Least k such that prime(k) &gt;= k*tau(k*n) where tau = A000005.
  * @author Sean A. Irvine
  */
 public class A074811 extends Sequence1 {

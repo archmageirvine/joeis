@@ -4,7 +4,7 @@ package irvine.oeis.a300;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A300987 O.g.f. A(x) satisfies: A(x) = x*(1 - 2*x*A&apos;(x)) / (1 - 3*x*A&apos;(x)).
+ * A300987 O.g.f. A(x) satisfies: A(x) = x*(1 - 2*x*A'(x)) / (1 - 3*x*A'(x)).
  * O.g.f.A(x) satisfies: A(x) = x * (1 - 2*x*A'(x)) / (1 - 3*x*A'(x)).
  * @author Georg Fischer
  */

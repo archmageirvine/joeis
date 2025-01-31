@@ -8,7 +8,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a068.A068451;
 
 /**
- * A131444 Denominators of n-th approximation of factorial (also called harmonic) expansion of the golden section phi:=(1+sqrt(5))/2.
+ * A131444 Denominators of n-th approximation of factorial (also called harmonic) expansion of the golden ratio phi (A001622).
  * @author Georg Fischer
  */
 public class A131444 extends LambdaSequence {

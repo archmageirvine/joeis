@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A056915.
+ * A074773 Strong pseudoprimes to bases 2, 3, 5 and 7.
  * @author Sean A. Irvine
  */
 public class A074773 extends Sequence1 {

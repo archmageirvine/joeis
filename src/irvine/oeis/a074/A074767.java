@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A074767.
+ * A074767 Least m &gt; n with spf(m) = gpf(n), where gpf(n) is the greatest prime factor of n and spf(m) is the smallest prime factor of m.
  * @author Sean A. Irvine
  */
 public class A074767 extends Sequence2 {

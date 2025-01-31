@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074767.
+ * A074771 Numbers k such that tau(k) &lt; tau(k+1), phi(k) &lt; phi(k+1) and sigma(k) &lt; sigma(k+1).
  * @author Sean A. Irvine
  */
 public class A074771 extends Sequence1 {

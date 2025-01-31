@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006387;
 
 /**
- * A214816 Number of unsensed maps with n edges on a surface of genus g, summed on g = 0 through [n/2]..
+ * A214816 Number of unsensed combinatorial maps with n edges on an orientable surface of any genus.
  * @author T. R. S. Walsh
  */
 public class A214816 extends A006387 {

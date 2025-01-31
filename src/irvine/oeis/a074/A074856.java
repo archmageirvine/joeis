@@ -1,6 +1,5 @@
 package irvine.oeis.a074;
 
-import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 import irvine.util.string.StringUtils;
@@ -9,22 +8,22 @@ import irvine.util.string.StringUtils;
  * A074851.
  * @author Sean A. Irvine
  */
-public class A074855 extends A000040 {
+public class A074856 extends A000040 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private long mN = 0;
 
   private boolean is(final Z p) {
-    long ti = Functions.TRINV.l(p);
+    Z k = p.sqrt();
     while (true) {
-      final Z t = Functions.TRIANGULAR.z(ti);
-      if (t.multiply2().compareTo(p) <= 0) {
+      final Z k2 = k.square();
+      if (k2.multiply2().compareTo(p) <= 0) {
         return true;
       }
-      if (p.subtract(t).isProbablePrime()) {
+      if (p.subtract(k2).isProbablePrime()) {
         return false;
       }
-      --ti;
+      k = k.subtract(1);
     }
   }
 

@@ -170,7 +170,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
     // for example: A143046 poly -p "[[0],[1],[0,-1]]" -x ",p1,p2,sub,^3,<1,+"; G.f. satisfies A(x) = 1 + x*A(-x)^3.
     int ipfix = 0;
     int top = -1; // index of top element of <code>mStack</code>. Initially, the stack is empty.
-    while (ipfix < mPostfix.length) { // scan over the operaands and operators
+    while (ipfix < mPostfix.length) { // scan over the operands and operators
       final String pfix = mPostfix[ipfix++];
       if (sDebug >= 2 && top >= 0) {
         debugStack(pfix, top, "before");
@@ -181,21 +181,24 @@ public class PolynomialFieldSequence extends AbstractSequence {
         num.add(new Q(Integer.parseInt(pfix)));
         mStack.set(++top, RING.create(num));
       } else {
-        switch (ch) { // discriminate with the first character
+        // Operations are either single strings of constructions like "p(\d+)"
+        int k = 0;
+        while (k < pfix.length() && !Character.isDigit(pfix.charAt(k))) {
+          ++k;
+        }
+        switch (pfix.substring(0, k)) {
           // operands
-          case 'A': // this means A(x), the currently accumulated Polynomial mA for the generating function
+          case "A": // this means A(x), the currently accumulated Polynomial mA for the generating function
             mStack.set(++top, mA);
             break;
-          case 'p': // "p(\d+)"  = mPolys[$1], one of the predefined polynomials, numbered p0, p1, ...
+          case "p": // "p(\d+)"  = mPolys[$1], one of the predefined polynomials, numbered p0, p1, ...
             mStack.set(++top, mPolys.get(Integer.parseInt(pfix.substring(1))));
             break;
-          case 'x': // the monic polynomial x
+          case "x": // the monic polynomial x
             mStack.set(++top, RING.x());
             break;
 
           // operations with 1 operand
-          case 'a':
-            switch (pfix) {
 /*
               case "acsch":
                 mStack.set(top, RING.acsch(mStack.get(top), mN + mDist));
@@ -222,125 +225,91 @@ public class PolynomialFieldSequence extends AbstractSequence {
                 mStack.set(top, RING.asec(mStack.get(top), mN + mDist));
                 break;
 */
-              case "asinh":
-                mStack.set(top, RING.asinh(mStack.get(top), mN + mDist));
-                break;
-              case "asin":
-                mStack.set(top, RING.asin(mStack.get(top), mN + mDist));
-                break;
-              case "atanh":
-                mStack.set(top, RING.atanh(mStack.get(top), mN + mDist));
-                break;
-              case "atan":
-                mStack.set(top, RING.atan(mStack.get(top), mN + mDist));
-                break;
-              default:
-                throw new RuntimeException("invalid postfix code starting with \"a\":" + pfix);
-            }
+          case "asinh":
+            mStack.set(top, RING.asinh(mStack.get(top), mN + mDist));
             break;
-          // operations with 1 operand
-          case 'c':
-            switch (pfix) {
-              case "cosh":
-                mStack.set(top, RING.cosh(mStack.get(top), mN + mDist));
-                break;
-              case "cos":
-                mStack.set(top, RING.cos(mStack.get(top), mN + mDist));
-                break;
-              case "coth":
-                mStack.set(top, RING.series(RING.one(), RING.tanh(mStack.get(top), mN + mDist), mN + mDist));
-                break;
-              case "cot":
-                mStack.set(top, RING.series(RING.one(), RING.tan(mStack.get(top), mN + mDist), mN + mDist));
-                break;
-              case "csch":
-                mStack.set(top, RING.series(RING.one(), RING.sinh(mStack.get(top), mN + mDist), mN + mDist));
-                break;
-              case "csc":
-                mStack.set(top, RING.series(RING.one(), RING.sin(mStack.get(top), mN + mDist), mN + mDist));
-                break;
-              default:
-                throw new RuntimeException("invalid postfix code starting with \"c\":" + pfix);
-            }
+          case "asin":
+            mStack.set(top, RING.asin(mStack.get(top), mN + mDist));
             break;
-          case 'd': // "dif", replace the current top element by its derivative
+          case "atanh":
+            mStack.set(top, RING.atanh(mStack.get(top), mN + mDist));
+            break;
+          case "atan":
+            mStack.set(top, RING.atan(mStack.get(top), mN + mDist));
+            break;
+          case "cosh":
+            mStack.set(top, RING.cosh(mStack.get(top), mN + mDist));
+            break;
+          case "cos":
+            mStack.set(top, RING.cos(mStack.get(top), mN + mDist));
+            break;
+          case "coth":
+            mStack.set(top, RING.series(RING.one(), RING.tanh(mStack.get(top), mN + mDist), mN + mDist));
+            break;
+          case "cot":
+            mStack.set(top, RING.series(RING.one(), RING.tan(mStack.get(top), mN + mDist), mN + mDist));
+            break;
+          case "csch":
+            mStack.set(top, RING.series(RING.one(), RING.sinh(mStack.get(top), mN + mDist), mN + mDist));
+            break;
+          case "csc":
+            mStack.set(top, RING.series(RING.one(), RING.sin(mStack.get(top), mN + mDist), mN + mDist));
+            break;
+          case "dif": // "dif", replace the current top element by its derivative
             mStack.set(top, RING.diff(mStack.get(top)));
             break;
-          case 'e': // "exp", preplace the current top element te by exp(te)
+          case "exp": // "exp", preplace the current top element te by exp(te)
             mStack.set(top, RING.exp(mStack.get(top), mN + mDist));
             break;
-          case 'i':
-            switch (pfix) {
-              case "inv": // "inv", replace the current top element te by 1/te
-                mStack.set(top, RING.inverse(mStack.get(top)));
-                break;
-              case "int": // "int", replace the current top element by its formal integral
-                mStack.set(top, RING.integrate(mStack.get(top)));
-                break;
-              default:
-                throw new RuntimeException("invalid postfix code starting with \"i\":" + pfix);
-            }
+          case "inv": // "inv", replace the current top element te by 1/te
+            mStack.set(top, RING.inverse(mStack.get(top)));
             break;
-          case 'l':
-            switch (pfix) {
-              case "log": // "log", replace the current top element te by log(te)
-                mStack.set(top, RING.log(mStack.get(top), mN + mDist));
-                break;
-              case "lambertW": // current defintion of LambertW works
-                mStack.set(top, RING.lambertW(mStack.get(top), mN + mDist));
-                break;
-              case "lambNegW": // workaround if only the "negated" version works - normally this should be identical with <code>lambertW</code>
-                mStack.set(top, RING.negate(RING.lambertW(mStack.get(top), mN + mDist)));
-                break;
-              default:
-                throw new RuntimeException("invalid postfix code starting with \"l\":" + pfix);
-            }
-          case 'n': // "neg", replace the current top element by its negation
+          case "int": // "int", replace the current top element by its formal integral
+            mStack.set(top, RING.integrate(mStack.get(top)));
+            break;
+          case "log": // "log", replace the current top element te by log(te)
+            mStack.set(top, RING.log(mStack.get(top), mN + mDist));
+            break;
+          case "lambertW": // current definition of LambertW works
+            mStack.set(top, RING.lambertW(mStack.get(top), mN + mDist));
+            break;
+          case "lambNegW": // workaround if only the "negated" version works - normally this should be identical with <code>lambertW</code>
+            mStack.set(top, RING.negate(RING.lambertW(mStack.get(top), mN + mDist)));
+            break;
+          case "neg": // "neg", replace the current top element by its negation
             mStack.set(top, RING.negate(mStack.get(top)));
             break;
-          case 'r': // "rev", replace the current top element by its series reversion
+          case "rev": // "rev", replace the current top element by its series reversion
             mStack.set(top, RING.reversion(mStack.get(top), mN + mDist));
             break;
-          case 's':
-            switch (pfix) {
-              case "sech":
-                mStack.set(top, RING.sech(mStack.get(top), mN + mDist));
-                break;
-              case "sec":
-                mStack.set(top, RING.sec(mStack.get(top), mN + mDist));
-                break;
-              case "sinh":
-                mStack.set(top, RING.sinh(mStack.get(top), mN + mDist));
-                break;
-              case "sin":
-                mStack.set(top, RING.sin(mStack.get(top), mN + mDist));
-                break;
-              case "sqrt":
-                mStack.set(top, RING.sqrt(mStack.get(top), mN + mDist));
-                break;
-              case "sub": // "sub", replace the current top element by a substitution
-                mStack.set(top, RING.substitute(mA, mStack.get(top), mN + mDist));
-                break;
-              default:
-                throw new RuntimeException("invalid postfix code starting with \"s\":" + pfix);
-            }
+          case "sech":
+            mStack.set(top, RING.sech(mStack.get(top), mN + mDist));
             break;
-          case 't':
-            switch (pfix) {
-              case "tanh":
-                mStack.set(top, RING.tanh(mStack.get(top), mN + mDist));
-                break;
-              case "tan":
-                mStack.set(top, RING.tan(mStack.get(top), mN + mDist));
-                break;
-              default:
-                throw new RuntimeException("invalid postfix code starting with \"t\":" + pfix);
-            }
+          case "sec":
+            mStack.set(top, RING.sec(mStack.get(top), mN + mDist));
             break;
-          case '<': // "<(\d+)" = shift x -> x^$1 (may be negative)
+          case "sinh":
+            mStack.set(top, RING.sinh(mStack.get(top), mN + mDist));
+            break;
+          case "sin":
+            mStack.set(top, RING.sin(mStack.get(top), mN + mDist));
+            break;
+          case "sqrt":
+            mStack.set(top, RING.sqrt(mStack.get(top), mN + mDist));
+            break;
+          case "sub": // "sub", replace the current top element by a substitution
+            mStack.set(top, RING.substitute(mA, mStack.get(top), mN + mDist));
+            break;
+          case "tanh":
+            mStack.set(top, RING.tanh(mStack.get(top), mN + mDist));
+            break;
+          case "tan":
+            mStack.set(top, RING.tan(mStack.get(top), mN + mDist));
+            break;
+          case "<": // "<(\d+)" = shift x -> x^$1 (may be negative)
             mStack.set(top, RING.shift(mStack.get(top), (pfix.length() <= 1) ? 1 : Integer.parseInt(pfix.substring(1))));
             break;
-          case '^': // P, m -> P^m, or "^(\d+)" P -> P^$1
+          case "^": // P, m -> P^m, or "^(\d+)" P -> P^$1
             if (pfix.length() == 1) { // 2 operands
               --top;
               mStack.set(top, RING.pow(mStack.get(top), Long.parseLong(mStack.get(top + 1).toString()), mN + mDist));
@@ -354,19 +323,19 @@ public class PolynomialFieldSequence extends AbstractSequence {
             break;
 
           // arithmetic operations with 2 operands
-          case '+':
+          case "+":
             --top;
             mStack.set(top, RING.add(mStack.get(top), mStack.get(top + 1)));
             break;
-          case '-':
+          case "-":
             --top;
             mStack.set(top, RING.subtract(mStack.get(top), mStack.get(top + 1)));
             break;
-          case '*':
+          case "*":
             --top;
             mStack.set(top, RING.multiply(mStack.get(top), mStack.get(top + 1))); // , mN + mDist);
             break;
-          case '/':
+          case "/":
             --top;
             mStack.set(top, RING.series(mStack.get(top), mStack.get(top + 1), mN + mDist));
             break;

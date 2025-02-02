@@ -36,6 +36,7 @@
     <suppress checks="MethodLength" files=".*Min5AExtenderReducer.java"/>
     <suppress checks="MethodLength" files=".*Planarity.java"/>
     <suppress checks="MethodLength" files=".*Plantri.java"/>
+    <suppress checks="MethodLength" files=".*PolynomialFieldSequence.java"/>
     <suppress checks="MethodLength" files=".*PolytopeC3Scanner.java"/>
     <suppress checks="MethodLength" files=".*PolytopeScanner.java"/>
     <suppress checks="MethodLength" files=".*RecurrenceReflector.java"/>

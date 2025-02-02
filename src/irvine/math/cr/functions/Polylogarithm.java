@@ -21,7 +21,7 @@ class Polylogarithm extends CrFunction2 {
         Z zk = CR.ONE.getApprox(precision);
         while (true) {
           zk = zk.multiply(x).shiftRight(-precision);
-          Z term = zk.divide(Z.valueOf(++k).pow(v));
+          final Z term = zk.divide(Z.valueOf(++k).pow(v));
           if (term.isZero()) {
             break;
           }

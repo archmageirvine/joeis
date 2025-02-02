@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002113;
 import irvine.util.string.StringUtils;
 
 /**
- * A074851.
+ * A074857 Primes p such that all p-pal for p/2 &lt; pal &lt; p are nonprime, where pal is a palindrome.
  * @author Sean A. Irvine
  */
 public class A074857 extends A000040 {

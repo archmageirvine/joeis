@@ -5,7 +5,7 @@ import java.util.HashSet;
 import irvine.math.z.Z;
 
 /**
- * A074709 Base 4 expansion of 1/n has equal percentage of each digit 0,1,2,3.
+ * A074900 Base 4 expansion of 1/n has equal percentage of each digit 0,1,2,3 (primitive values of n only).
  * @author Sean A. Irvine
  */
 public class A074900 extends A074709 {

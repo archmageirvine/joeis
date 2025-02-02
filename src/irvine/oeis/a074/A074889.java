@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074851.
+ * A074889 Non-palindromic numbers such that the two largest proper divisors are palindromes having at least two digits and no other divisor is a palindrome with at least two digits.
  * @author Sean A. Irvine
  */
 public class A074889 extends Sequence1 {

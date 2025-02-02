@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A114724 Each term is the sum of the next two digits.
+ * A114724 Each term is the sum of the next two digits starting with a(1)=2.
  * @author Sean A. Irvine
  */
 public class A114724 extends LinearRecurrence {

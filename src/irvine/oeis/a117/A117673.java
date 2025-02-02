@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A074851.
+ * A117673 a(n) is the least k such that k*2*prime(n) + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A117673 extends A000040 {

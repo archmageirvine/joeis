@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a075.A075407;
 
 /**
- * A074851.
+ * A074888 Smaller of consecutive values in A075407.
  * @author Sean A. Irvine
  */
 public class A074888 extends A075407 {

@@ -2473,3 +2473,4 @@ A074743 Smallest k such that trinomial x^A001153(n) + x^k + 1 over GF(2) is prim
 A074744 Values of k corresponding to A073726.
 A074873 Friendly numbers (see A074902) such that sigma(n) is not friendly.
 A074893 Continued fraction for the Product_{p prime} (1 - 2/p^2) (A065474).
+A074902 Known friendly numbers.

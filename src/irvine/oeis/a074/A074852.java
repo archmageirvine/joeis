@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a025.A025475;
 
 /**
- * A074851.
+ * A074852 Composite n such that n and n+2 are prime powers.
  * @author Sean A. Irvine
  */
 public class A074852 extends FilterSequence {

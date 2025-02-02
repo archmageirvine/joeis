@@ -6,7 +6,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A173615 Numbers n such that rad(n)^2 divides sigma(n).
+ * A173615 Numbers k such that rad(k)^2 divides sigma(k).
  * @author Georg Fischer
  */
 public class A173615 extends FilterNumberSequence {

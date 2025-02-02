@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a171.A171765;
 
 /**
- * A074851.
+ * A074871 Start with n and repeatedly apply the map k -&gt; T(k) = A053837(k) + A171765(k); a(n) is the number of steps (at least one) until a prime is reached, or 0 if no prime is ever reached.
  * @author Sean A. Irvine
  */
 public class A074871 extends Sequence1 {

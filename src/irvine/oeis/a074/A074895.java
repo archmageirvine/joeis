@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074851.
+ * A074895 Primes written backwards and sorted.
  * @author Sean A. Irvine
  */
 public class A074895 extends Sequence1 {

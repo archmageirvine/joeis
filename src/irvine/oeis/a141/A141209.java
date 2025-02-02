@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A141209 E.g.f. satisfies: A(x)^A(x) = 1/(1 - x*A(x)).
+ * A141209 E.g.f. satisfies A(x)^A(x) = 1/(1 - x*A(x)).
  * @author Georg Fischer
  */
 public class A141209 extends LambdaSequence {

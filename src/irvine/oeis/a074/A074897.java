@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a066.A066417;
 
 /**
- * A074851.
+ * A074897 Possible values for sum of anti-divisors of n.
  * @author Sean A. Irvine
  */
 public class A074897 extends A066417 {

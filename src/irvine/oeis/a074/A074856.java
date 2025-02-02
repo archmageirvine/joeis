@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.string.StringUtils;
 
 /**
- * A074851.
+ * A074856 Primes p such that all p-k^2 for p/2 &lt; k^2 &lt; p are nonprime.
  * @author Sean A. Irvine
  */
 public class A074856 extends A000040 {

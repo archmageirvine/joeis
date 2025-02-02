@@ -4,7 +4,7 @@ package irvine.oeis.a113;
 import irvine.oeis.recur.PaddingSequence;
 
 /**
- * A113779 Each term is the sum of the next two digits.
+ * A113779 Each term is the sum of the next two digits starting with a(1)=17.
  * @author Georg Fischer
  */
 public class A113779 extends PaddingSequence {

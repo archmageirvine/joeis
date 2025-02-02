@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a036.A036211;
 
 /**
- * A073186 First n-digit prime in "the sequence of even integers": 246810121416182022242628303234...
+ * A073186 First n-digit prime in the concatenation of the even integers forbidding leading zeros.
  * @author Sean A. Irvine
  */
 public class A073186 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A277184 E.g.f.: A(x) = x*exp(A(x) - A(x)^2) +  A(x)^2.
+ * A277184 E.g.f. A(x) satisfies A(x) = x*exp(A(x) - A(x)^2) +  A(x)^2.
  * a(n) = sum(k=1,n,n^(n-k) * (2*k-2)!/(k-1)!^2 * (n-1)!/(n-k)! )
  * @author Georg Fischer
  */

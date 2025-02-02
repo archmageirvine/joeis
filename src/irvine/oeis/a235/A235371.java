@@ -4,7 +4,7 @@ package irvine.oeis.a235;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A235371 E.g.f. satisfies: A&apos;(x) = A(x)^6 * A(-x) with A(0) = 1.
+ * A235371 E.g.f. satisfies: A'(x) = A(x)^6 * A(-x) with A(0) = 1.
  * E.g.f.satisfies: A'(x) = A(x)^6 * A(-x) with A(0) = 1.
  * @author Georg Fischer
  */

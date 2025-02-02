@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074851.
+ * A074896 Squares written backwards and sorted, duplicates removed.
  * @author Sean A. Irvine
  */
 public class A074896 extends Sequence1 {

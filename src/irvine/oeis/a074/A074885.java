@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074851.
+ * A074885 Numbers not of the form x^2 + M*y^2 for integers x &gt; 0, y &gt; 1, M &gt; 0.
  * @author Sean A. Irvine
  */
 public class A074885 extends Sequence1 {

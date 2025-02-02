@@ -4,7 +4,7 @@ import irvine.oeis.Combiner;
 import irvine.oeis.a000.A000010;
 
 /**
- * A074851.
+ * A074880 Number of labeled cyclic subgroups of S_n having order n.
  * @author Sean A. Irvine
  */
 public class A074880 extends Combiner {

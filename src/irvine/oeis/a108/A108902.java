@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A108902 Numbers n such that 23*n + 2357 is prime.
+ * A108902 Numbers k such that 23*k + 2357 is prime.
  * @author Georg Fischer
  */
 public class A108902 extends PrimePositionSubsequence {

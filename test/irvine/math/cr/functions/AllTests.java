@@ -33,6 +33,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(NevilleThetaDTest.class);
     suite.addTestSuite(NevilleThetaNTest.class);
     suite.addTestSuite(NevilleThetaSTest.class);
+    suite.addTestSuite(PolylogarithmTest.class);
     return suite;
   }
 }

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A074709.
+ * A075242 Least base for which the n-th composite number whose reversal in that base is a prime, or zero if impossible.
  * @author Sean A. Irvine
  */
 public class A075242 extends A002808 {

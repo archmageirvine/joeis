@@ -7,7 +7,7 @@ import irvine.oeis.a030.A030302;
 
 
 /**
- * A244527  Bisection of A030190 or of A030302.
+ * A244527 Bisection of A030190 or of A030302.
  * @author Georg Fischer
  */
 public class A244527 extends A030302 {

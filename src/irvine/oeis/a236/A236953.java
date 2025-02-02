@@ -4,7 +4,7 @@ package irvine.oeis.a236;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A236953 E.g.f. satisfies: A&apos;(x) = A(x)^7 / A(-x) with A(0) = 1.
+ * A236953 E.g.f. satisfies: A'(x) = A(x)^7 / A(-x) with A(0) = 1.
  * 1/(1 - 7*reverse(Integral 1/(1 - 49*x^2)^(1/7) dx))^(1/7)
  * @author Georg Fischer
  */

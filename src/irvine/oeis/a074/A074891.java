@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074851.
+ * A074891 Numbers n such that sigma(n) = phi(3n).
  * @author Sean A. Irvine
  */
 public class A074891 extends Sequence1 {

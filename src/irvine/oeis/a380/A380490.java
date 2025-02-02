@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A380490 Replace prime digits of n by 0&apos;s.
+ * A380490 Replace prime digits of n by 0's.
  * @author Georg Fischer
  */
 public class A380490 extends LambdaSequence {

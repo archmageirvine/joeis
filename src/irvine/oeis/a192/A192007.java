@@ -4,7 +4,7 @@ package irvine.oeis.a192;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A192007 E.g.f. sin(cos(x)-1) (even part)
+ * A192007 E.g.f. sin(cos(x)-1) (even part).
  * E.g.f.: sin(cos(x)-1)
  * @author Georg Fischer
  */

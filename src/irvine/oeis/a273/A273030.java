@@ -4,7 +4,7 @@ package irvine.oeis.a273;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A273030 G.f. A(x) satisfies: A(x)^3 = x * A( (A(x) + A(x)^2)^2 ).
+ * A273030  G.f. A(x) satisfies: A(x)^3 = x * A( (A(x) + A(x)^2)^2 ).
  * G.f.A(x) satisfies: A(x)^3 = x * A((A(x) + A(x)^2)^2).
  * @author Georg Fischer
  */

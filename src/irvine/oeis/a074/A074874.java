@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074851.
+ * A074874 Numbers n such that phi(n + phi(n)) = sigma(n).
  * @author Sean A. Irvine
  */
 public class A074874 extends Sequence1 {

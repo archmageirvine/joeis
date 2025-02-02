@@ -6,7 +6,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence0;
 
 /**
- * A074851.
+ * A171765 a(n) = 0 if n &lt;= 10; for n &gt;= 11, a(n) = product of digits of n.
  * @author Sean A. Irvine
  */
 public class A171765 extends Sequence0 implements DirectSequence {

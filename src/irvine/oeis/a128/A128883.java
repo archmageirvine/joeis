@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A128883 A 4 x 4 magic square read by rows.
+ * A128883 A 4 X 4 magic square with sum 33 read by rows.
  * @author Georg Fischer
  */
 public class A128883 extends FiniteSequence {

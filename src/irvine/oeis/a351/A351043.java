@@ -4,7 +4,7 @@ package irvine.oeis.a351;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A351043 Lexicographically earliest Racetrack trajectory (using von Neumann neighborhood) on spiral on infinite square grid.
+ * A351043 Lexicographically earliest non-extendable Racetrack trajectory (using von Neumann neighborhood) on spiral on infinite square grid.
  * @author Georg Fischer
  */
 public class A351043 extends FiniteSequence {

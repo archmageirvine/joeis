@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A135813 Number of coincidence-free length n lists of 7-tuples with all numbers 1,...,n in tuple position k, for k=1..7.
+ * A135813 Number of coincidence-free length n lists of 7-tuples with all numbers 1..n in tuple position k, for k=1..7.
  * a(n)=sum(k=0,n,(-1)^(n-k)*binom(n,k)*(k!)^7)
  * @author Georg Fischer
  */

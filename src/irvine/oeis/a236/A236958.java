@@ -4,7 +4,7 @@ package irvine.oeis.a236;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A236958 E.g.f. satisfies: A&apos;(x) = A(x)^7 * A(-x)^5 with A(0) = 1.
+ * A236958 E.g.f. satisfies: A'(x) = A(x)^7 * A(-x)^5 with A(0) = 1.
  * 1/(1 -   reverse(Integral (1 - x^2)^5       dx))
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000005;
 
 /**
- * A069233 Numbers n such that there is exactly 1 prime p satisfying the inequality n &lt; p &lt; n + tau(n)^2 where tau(n) = A000005(n).
+ * A069233 Numbers k such that there is exactly 1 prime p satisfying the inequality k &lt; p &lt; k + tau(k)^2 where tau(k) = A000005(k).
  * @author Sean A. Irvine
  */
 public class A069233 extends A000005 {

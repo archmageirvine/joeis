@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a031.A031312;
 
 /**
- * A073176 First n-digit prime in "the sequence of odd integers": 135791113151719212325272931333537394143454749...
+ * A073176 First n-digit prime in the concatenation of odd integers allowing leading zeros.
  * @author Sean A. Irvine
  */
 public class A073176 extends Sequence1 {

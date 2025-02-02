@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A135812 Number of coincidence-free length n lists of 6-tuples with all numbers 1,...,n in tuple position k, for k=1..6.
+ * A135812 Number of coincidence-free length n lists of 6-tuples with all numbers 1..n in tuple position k, for k=1..6.
  * a(n)=sum(j=0,n,((-1)^(n-j))*binom(n,j)*(j!)^6)
  * @author Georg Fischer
  */

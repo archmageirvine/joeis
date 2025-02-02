@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.string.StringUtils;
 
 /**
- * A074851.
+ * A074855 Primes p such that all p-t for p/2 &lt; t &lt; p are nonprime, where t is a triangular number.
  * @author Sean A. Irvine
  */
 public class A074855 extends A000040 {

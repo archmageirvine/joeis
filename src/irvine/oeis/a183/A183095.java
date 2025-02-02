@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 /**
- * A183095 a(n) = number of divisors d of n which are either 1 or of the form Product_(i) (p_i^e_i) where the e_i are &lt;= 1.
+ * A183095 a(n) = number of divisors d of n that are either 1 or of the form Product_(i) (p_i^e_i) where e_i = 1 for at least one i.
  * @author Georg Fischer
  */
 public class A183095 extends Sequence1 {

@@ -9,6 +9,8 @@ public final class CrFunctions {
   private CrFunctions() {
   }
 
+  /** The polylogaritm. */
+  public static final CrFunction2 POLYLOG = new Polylogarithm();
   /** The complete elliptic K function. */
   public static final CrFunction1 ELLIPTIC_K = new EllipticK();
   /** The complete elliptic E function. */

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074851.
+ * A074853 Numbers n not in A065036 but such that tau(n)=omega(n)^3.
  * @author Sean A. Irvine
  */
 public class A074853 extends Sequence1 {

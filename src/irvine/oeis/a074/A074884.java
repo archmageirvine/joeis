@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A074851.
+ * A074884 For a prime p, let k(p) be the least k such that 2kp+1 is prime. Sequence gives primes for which k(p) exceeds k(q) for all primes q &lt; p.
  * @author Sean A. Irvine
  */
 public class A074884 extends A000040 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074851.
+ * A074899 Triangular numbers written backwards and sorted, duplicates removed.
  * @author Sean A. Irvine
  */
 public class A074899 extends Sequence1 {

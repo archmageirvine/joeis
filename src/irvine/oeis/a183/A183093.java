@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000005;
 import irvine.oeis.a005.A005361;
 
 /**
- * A183093 a(1) = 0; thereafter, a(n) = number of divisors d of n such that if d = Product_(i) (p_i^e_i) then all e_i &lt;= 1.
+ * A183093 a(n) = number of divisors d of n such that d &gt; 1 and if d = Product_(i) (p_i^e_i) then e_i = 1 for at least one i.
  * @author Georg Fischer
  */
 public class A183093 extends Sequence1 {

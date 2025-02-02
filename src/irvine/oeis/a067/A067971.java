@@ -2,6 +2,7 @@ package irvine.oeis.a067;
 
 import java.util.Arrays;
 
+import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
@@ -15,12 +16,7 @@ public class A067971 extends Sequence0 {
   private Z mA = null;
 
   protected boolean lt(final int[] a, final int[] b) {
-    for (int k = 0; k < a.length; ++k) {
-      if (a[k] > b[k]) {
-        return false;
-      }
-    }
-    return !Arrays.equals(a, b);
+    return IntegerUtils.le(a, b) && !Arrays.equals(a, b);
   }
 
   @Override

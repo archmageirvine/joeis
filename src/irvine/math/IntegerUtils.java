@@ -396,4 +396,49 @@ public final class IntegerUtils {
     return res;
   }
 
+  /**
+   * Test if <b>every</b> value of the first array is greater than or equal to the second array.
+   * @param a first array
+   * @param b second array
+   * @return true if the first array is greater than or equal to the second
+   */
+  public static boolean ge(final int[] a, final int[] b) {
+    for (int k = 0; k < a.length; ++k) {
+      if (a[k] < b[k]) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  /**
+   * Test if <b>every</b> value of the first array is less than or equal to the second array.
+   * @param a first array
+   * @param b second array
+   * @return true if the first array is less than or equal to the second
+   */
+  public static boolean le(final int[] a, final int[] b) {
+    for (int k = 0; k < a.length; ++k) {
+      if (a[k] > b[k]) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  /**
+   * Test if any element the first array is less than the corresponding element of the second array.
+   * @param a first array
+   * @param b second array
+   * @return true if the first array is less than the second
+   */
+  public static boolean ltAny(final int[] a, final int[] b) {
+    for (int k = 0; k < a.length; ++k) {
+      if (a[k] < b[k]) {
+        return true;
+      }
+    }
+    return false;
+  }
+
 }

@@ -1,5 +1,6 @@
 package irvine.oeis.a046;
 
+import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -12,22 +13,13 @@ public class A046827 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 
-  private boolean ge(final int[] cnts2, final int[] cnts1) {
-    for (int k = 0; k < cnts2.length; ++k) {
-      if (cnts2[k] < cnts1[k]) {
-        return false;
-      }
-    }
-    return true;
-  }
-
   @Override
   public Z next() {
     while (true) {
       mN = mN.add(1);
       final int[] cnts1 = ZUtils.digitCounts(mN);
       final int[] cnts2 = ZUtils.digitCounts(mN.square());
-      if (ge(cnts2, cnts1)) {
+      if (IntegerUtils.ge(cnts2, cnts1)) {
         return mN;
       }
     }

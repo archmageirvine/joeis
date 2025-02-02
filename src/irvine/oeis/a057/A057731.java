@@ -24,7 +24,7 @@ public class A057731 extends MemoryFunctionInt2Sequence<Polynomial<Z>> {
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private Polynomial<Z> mP = RING.zero();
   private int mN = 0;
-  private int mM = 0;
+  protected int mM = 0;
 
   @Override
   protected Polynomial<Z> compute(final int n, final int g) {

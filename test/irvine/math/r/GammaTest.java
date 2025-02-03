@@ -1,8 +1,8 @@
 package irvine.math.r;
 
-import junit.framework.TestCase;
-
 import static irvine.TestUtils.assertEqualsLocal;
+
+import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
@@ -364,20 +364,6 @@ public class GammaTest extends TestCase {
         assertEquals(1.0 - Gamma.incompletegamma(a, x), Gamma.incompletegammacomplement(a, x), 1E-12);
       }
     }
-  }
-
-  public void testinverseigammacomplement() {
-    // note function may be broken for values of a > 3
-    // I think this whole function may have several bugs
-    for (double a = 0.1; a < 3.0; a += 0.1) {
-      for (double x = 0.0; x < 15.0; x += 0.3) {
-        final double target = Gamma.incompletegammacomplement(a, x);
-        assertEquals(x, Gamma.inverseigammacomplement(a, target), 1E-6);
-      }
-    }
-    assertEqualsLocal(Double.NaN, Gamma.inverseigammacomplement(0, 0), 0);
-    assertEqualsLocal(Double.NaN, Gamma.inverseigammacomplement(Double.POSITIVE_INFINITY, 0.3), 0);
-    assertEqualsLocal(1.1685005376605052E308, Gamma.inverseigammacomplement(Double.NEGATIVE_INFINITY, 0.3), 0);
   }
 
   public void testrgamma() {

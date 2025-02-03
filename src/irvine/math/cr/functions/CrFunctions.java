@@ -63,4 +63,6 @@ public final class CrFunctions {
   public static final CrFunction2Cr JACOBI_SD = new JacobiSd();
   /** The Jacobi sn function. */
   public static final CrFunction2Cr JACOBI_SN = new JacobiSn();
+  /** The Minkowski question mark function. */
+  public static final CrFunction1 MINKOWSKI_QUESTION_MARK = new MinkowskiQuestionMark();
 }

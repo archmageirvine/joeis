@@ -9,11 +9,9 @@ import static irvine.math.r.Constants.SQRT_TAU;
 import static irvine.math.r.PolyEval.chebyshev;
 import static irvine.math.r.PolyEval.p1eval;
 import static irvine.math.r.PolyEval.polyeval;
-import static irvine.math.r.Stats.inverseNormal;
 import static java.lang.Double.MAX_VALUE;
 import static java.lang.Double.NaN;
 import static java.lang.Double.POSITIVE_INFINITY;
-import static java.lang.Double.isInfinite;
 import static java.lang.Double.isNaN;
 import static java.lang.Math.PI;
 import static java.lang.Math.abs;
@@ -22,7 +20,6 @@ import static java.lang.Math.floor;
 import static java.lang.Math.log;
 import static java.lang.Math.pow;
 import static java.lang.Math.sin;
-import static java.lang.Math.sqrt;
 import static java.lang.Math.tan;
 
 /**
@@ -391,121 +388,6 @@ public final class Gamma {
   // I added stricfp below on 2008-02-23 because the tests fail on
   // shannon when I don't have it.
 
-  /**
-   * Compute the inverse of the complemented incomplete gamma integral.
-   * Given p, the function finds x such that
-   * <code>incompletegammacomplement(a,x) = p</code>
-   *
-   * @param a parameter
-   * @param y0 parameter
-   * @return <code>inverseigammacomplement(a, y0)</code>
-   */
-  public static strictfp double inverseigammacomplement(final double a, final double y0) {
-    if (a == 0) {
-      return NaN;
-    }
-    // bound the solution
-    double x0 = MAX_VALUE;
-    double yl = 0;
-    double x1 = 0;
-    double yh = 1;
-    final double dithresh = 5 * MACHINE_PRECISION;
-    // approximation to inverse function
-    double d = 1 / (9 * a);
-    final double f = 1 - d - inverseNormal(y0) * sqrt(d);
-    double x = a * f * f * f;
-    double lgm = lgamma(a);
-    for (int i = 0; i < 10; ++i) {
-      if (x > x0 || x < x1) {
-        break;
-      }
-      final double y = incompletegammacomplement(a, x);
-      if (y < yl || y > yh) {
-        break;
-      }
-      if (y < y0) {
-        x0 = x;
-        yl = y;
-      } else {
-        x1 = x;
-        yh = y;
-      }
-      // compute the derivative of the function at this point
-      d = (a - 1) * log(x) - x - lgm;
-      if (d < -MAXLOG) {
-        break;
-      }
-      // compute the step to the next approximation of x
-      d = (y - y0) / -exp(d);
-      if (abs(d / x) < MACHINE_PRECISION) {
-        return x;
-      }
-      x -= d;
-    }
-    d = 0.0625;
-    if (x0 == MAX_VALUE) {
-      if (x <= 0) {
-        x = 1;
-      }
-      while (!isInfinite(d)) {
-        x *= 1 + d;
-        final double y = incompletegammacomplement(a, x);
-        if (isNaN(y)) {
-          return NaN;
-        }
-        //        System.err.println("a=" + a + " y0=" + y0 + " y="+y + " x=" + x + " d=" + d);
-        if (y < y0) {
-          x0 = x;
-          yl = y;
-          break;
-        }
-        d += d;
-      }
-    }
-    d = 0.5;
-    int dir = 0;
-    for (int i = 0; i < 400; ++i) {
-      x = x1 + d * (x0 - x1);
-      final double y = incompletegammacomplement(a, x);
-      lgm = (x0 - x1) / (x1 + x0);
-      if (abs(lgm) < dithresh) {
-        break;
-      }
-      lgm = (y - y0) / y0;
-      if (abs(lgm) < dithresh) {
-        break;
-      }
-      if (x <= 0) {
-        break;
-      }
-      if (y >= y0) {
-        x1 = x;
-        yh = y;
-        if (dir < 0) {
-          dir = 0;
-          d = 0.5;
-        } else if (dir > 1) {
-          d = 0.5 * d + 0.5;
-        } else {
-          d = (y0 - yl) / (yh - yl);
-        }
-        ++dir;
-      } else {
-        x0 = x;
-        yl = y;
-        if (dir > 0) {
-          dir = 0;
-          d = 0.5;
-        } else if (dir < -1) {
-          d *= 0.5;
-        } else {
-          d = (y0 - yl) / (yh - yl);
-        }
-        --dir;
-      }
-    }
-    return x;
-  }
 
   // Chebyshev coefficients
   private static final double[] RGAMMAR = {

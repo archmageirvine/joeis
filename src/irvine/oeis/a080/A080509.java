@@ -13,6 +13,6 @@ public class A080509 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A080509() {
-    super(1, n -> (n <= 2) ? Z.valueOf(3 * n - 2) : Functions.PRIMORIAL.z(n - 1).pow(n).divide(Functions.FACTORIAL.z(n - 1)));
+    super(1, n -> (n <= 2) ? Z.valueOf(3L * n - 2) : Functions.PRIMORIAL.z(n - 1).pow(n).divide(Functions.FACTORIAL.z(n - 1)));
   }
 }

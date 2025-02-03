@@ -13,6 +13,6 @@ public class A378988 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A378988() {
-    super(1, n -> Z.valueOf(2 * n).xor(Functions.SIGMA1.z(n).add(1)));
+    super(1, n -> Z.valueOf(2L * n).xor(Functions.SIGMA1.z(n).add(1)));
   }
 }

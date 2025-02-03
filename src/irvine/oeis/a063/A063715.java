@@ -15,7 +15,7 @@ public class A063715 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sumdiv(++mN * mN, d -> Functions.SIGMA0.z(Z.valueOf(mN + d).square()));
+    return Integers.SINGLETON.sumdiv((long) ++mN * mN, d -> Functions.SIGMA0.z(Z.valueOf(mN + d).square()));
   }
 }
 

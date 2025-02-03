@@ -12,6 +12,6 @@ public class A380121 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A380121() {
-    super(0, n -> Binomial.binomial(n, (n + 3) / 4 - 1).multiply(Binomial.binomial(n, (n + 1) / 4)).add((Binomial.binomial(n, (3 * n + 1) / 4)).multiply(Binomial.binomial(n, (3 * n + 3) / 4))));
+    super(0, n -> Binomial.binomial(n, (n + 3) / 4 - 1).multiply(Binomial.binomial(n, (n + 1) / 4)).add((Binomial.binomial(n, (3L * n + 1) / 4)).multiply(Binomial.binomial(n, (3L * n + 3) / 4))));
   }
 }

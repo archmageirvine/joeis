@@ -14,7 +14,7 @@ public class A054586 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A054586() {
-    super(0, n -> Integers.SINGLETON.sumdiv(2 * n + 1, d -> {
+    super(0, n -> Integers.SINGLETON.sumdiv(2L * n + 1, d -> {
       final FactorSequence fs = Jaguar.factor(d);
       return fs.phi().multiply(fs.mobius());
     }));

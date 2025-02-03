@@ -14,7 +14,7 @@ public class A183175 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A183175() {
     super(1, 1, k -> {
-      final Q q = new Q(Z.TEN.pow(2 * k + 1).add(Z.SIX.multiply(Z.TEN.pow(k)).subtract(1)), 3);
+      final Q q = new Q(Z.TEN.pow(2L * k + 1).add(Z.SIX.multiply(Z.TEN.pow(k)).subtract(1)), 3);
       return q.isInteger() && q.num().isProbablePrime();
     });
   }

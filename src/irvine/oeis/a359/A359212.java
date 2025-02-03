@@ -39,6 +39,6 @@ public class A359212 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mMul1 * mN + mAdd1, d -> d % mMul2 == mAdd2 ? Z.ONE : Z.ZERO);
+    return Integers.SINGLETON.sumdiv((long) mMul1 * mN + mAdd1, d -> d % mMul2 == mAdd2 ? Z.ONE : Z.ZERO);
   }
 }

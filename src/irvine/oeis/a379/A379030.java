@@ -17,6 +17,6 @@ public class A379030 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A379030() {
-    super(1, 1, k -> !Predicates.SQUARE_FREE.is(k) && A241405.a(k).compareTo(Z.valueOf(2 * k)) > 0);
+    super(1, 1, k -> !Predicates.SQUARE_FREE.is(k) && A241405.a(k).compareTo(Z.valueOf(2L * k)) > 0);
   }
 }

@@ -27,7 +27,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(PolyEvalTest.class);
     suite.addTestSuite(PowerTest.class);
     suite.addTestSuite(RealsTest.class);
-    suite.addTestSuite(TrigonometricIntegralTest.class);
     suite.addTestSuite(ZetaTest.class);
     return suite;
   }

@@ -15,8 +15,11 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(AiryBiTest.class);
     suite.addTestSuite(BesselK0Test.class);
     suite.addTestSuite(BesselKTest.class);
+    suite.addTestSuite(CosineIntegralTest.class);
     suite.addTestSuite(EllipticETest.class);
     suite.addTestSuite(EllipticKTest.class);
+    suite.addTestSuite(HyperbolicCosineIntegralTest.class);
+    suite.addTestSuite(HyperbolicSineIntegralTest.class);
     suite.addTestSuite(JacobiCdTest.class);
     suite.addTestSuite(JacobiCnTest.class);
     suite.addTestSuite(JacobiCsTest.class);
@@ -34,6 +37,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(NevilleThetaNTest.class);
     suite.addTestSuite(NevilleThetaSTest.class);
     suite.addTestSuite(PolylogarithmTest.class);
+    suite.addTestSuite(SineIntegralTest.class);
     return suite;
   }
 }

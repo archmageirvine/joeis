@@ -65,4 +65,12 @@ public final class CrFunctions {
   public static final CrFunction2Cr JACOBI_SN = new JacobiSn();
   /** The Minkowski question mark function. */
   public static final CrFunction1 MINKOWSKI_QUESTION_MARK = new MinkowskiQuestionMark();
+  /** The sine integral function, <code>Si(z)</code>. */
+  public static final CrFunction1 SI = new SineIntegral();
+  /** The cosine integral function, <code>Ci(z)</code>. */
+  public static final CrFunction1 CI = new CosineIntegral();
+  /** The hyperbolic sine integral function, <code>Shi(z)</code>. */
+  public static final CrFunction1 SHI = new HyperbolicSineIntegral();
+  /** The hyperbolic cosine integral function, <code>Chi(z)</code>. */
+  public static final CrFunction1 CHI = new HyperbolicCosineIntegral();
 }

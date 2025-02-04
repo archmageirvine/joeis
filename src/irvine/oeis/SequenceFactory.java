@@ -186,6 +186,8 @@ public final class SequenceFactory {
           return new Stirling1TransformSequence(1, sequence(inner));
         case "stirling2":
           return new Stirling2TransformSequence(sequence(inner), 0);
+        case "sum":
+          return new PartialSumSequence(sequence(inner));
         case "weigh":
           return new WeighTransformSequence(1, sequence(inner));
         case "iaronson":

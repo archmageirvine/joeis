@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002884;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A083402 Let A_n be the upper triangular matrix in the group GL(n, 2) that has zero entries below the main diagonal and 1 elsewhere; a(n) is the size of the conjugacy class of this matrix in GL(n, 2).
+ * A083402 Let A_n be the upper triangular matrix in the group GL(n,2) that has zero entries below the main diagonal and 1 elsewhere; a(n) is the size of the conjugacy class of this matrix in GL(n,2).
  * @author Georg Fischer
  */
 public class A083402 extends SingleTransformSequence {

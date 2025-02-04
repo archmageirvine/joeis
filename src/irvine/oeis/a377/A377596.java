@@ -5,7 +5,7 @@ import irvine.oeis.a112.A112980;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A377596 a(n) = (a(n-1) + a(n-2))^5 for n&gt;=2 where a(0) = 0, a(1) = 1
+ * A377596 a(n) = (a(n-1) + a(n-2))^5 for n&gt;=2 where a(0) = 0, a(1) = 1.
  * @author Georg Fischer
  */
 public class A377596 extends SingleTransformSequence {

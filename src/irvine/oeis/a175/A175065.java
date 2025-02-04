@@ -6,7 +6,7 @@ import irvine.oeis.a005.A005179;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A175065 Smallest perfect power m for which there are exactly n ways to write m as x^y with x &gt;= 2, y &gt;= 1.
+ * A175065 Smallest number m for which there are exactly n ways to write m as x^y with x &gt;= 2, y &gt;= 1.
  * @author Georg Fischer
  */
 public class A175065 extends SimpleTransformSequence {

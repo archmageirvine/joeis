@@ -8,7 +8,7 @@ import irvine.oeis.a059.A059416;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A112637 a(n) = b(n)*lcm{1, 2,..,n}^3 where b(n) is a sequence of rationals arising in irrationality proof of zeta(3).
+ * A112637 a(n) = b(n)*lcm{1,2,..,n}^3 where b(n) is a sequence of rationals arising in irrationality proof of zeta(3).
  * @author Georg Fischer
  */
 public class A112637 extends MultiTransformSequence {

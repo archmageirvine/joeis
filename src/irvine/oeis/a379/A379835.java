@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A379835 Number of 1&apos;s in binary expansion of Lucas(n).
+ * A379835 Number of 1's in binary expansion of Lucas(n).
  * @author Georg Fischer
  */
 public class A379835 extends LambdaSequence {

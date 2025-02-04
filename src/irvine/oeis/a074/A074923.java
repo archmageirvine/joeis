@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A073524.
+ * A074923 Number of steps to reach the first integer starting with prime(n+1)/prime(n) and iterating the map x -&gt; x*ceiling(x), or -1 if no integer is ever reached.
  * @author Sean A. Irvine
  */
 public class A074923 extends A000040 {

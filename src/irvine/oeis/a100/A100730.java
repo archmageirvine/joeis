@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a046.A046932;
 
 /**
- * A100730 Fundamental difference of Ulam 1-additive sequence starting U(2, 2n+1).
+ * A100730 Fundamental difference of Ulam 1-additive sequence starting U(2,2n+1).
  * @author Georg Fischer
  */
 public class A100730 extends LambdaSequence {

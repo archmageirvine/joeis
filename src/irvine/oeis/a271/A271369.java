@@ -4,7 +4,7 @@ package irvine.oeis.a271;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A271369 Decimal expansion of molar volume of an ideal gas measured at normal conditions.
+ * A271369 Erroneous version of A248503.
  * @author Georg Fischer
  */
 public class A271369 extends NoncomputableSequence {

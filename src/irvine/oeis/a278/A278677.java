@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A278677 Popularity of left children in treeshelves avoiding pattern T231.
+ * A278677 a(n) = Sum_{k=0..n} A011971(n, k)*(k + 1). The Aitken-Bell triangle considered as a linear transform applied to the positive numbers.
  * E.g.f.: (x*exp(x) - exp(x) + 1)*exp(exp(z)-1).
  * @author Georg Fischer
  */

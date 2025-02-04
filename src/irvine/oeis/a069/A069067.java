@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069067 Numbers n such that n*tau(n) is a perfect square.
+ * A069067 Numbers k such that k*tau(k) is a perfect square.
  * @author Sean A. Irvine
  */
 public class A069067 extends Sequence1 {

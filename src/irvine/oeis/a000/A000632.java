@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000632 Number of esters with n carbon atoms.
+ * A000632 Number of esters with n carbon atoms up to structural isomerism.
  * @author Sean A. Irvine
  */
 public class A000632 extends A000598 {

@@ -6,7 +6,7 @@ import irvine.oeis.a004.A004200;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A088435 1/2 + half of the (n+1)-st component of the continued fraction expansion of sum(k&gt;=1, 1/3^(2^k)).
+ * A088435 1/2 + half of the (n+1)-st component of the continued fraction expansion of sum(k&gt;=1,1/3^(2^k)).
  * @author Georg Fischer
  */
 public class A088435 extends LambdaSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072355.
+ * A074920 Integers k such that phi(k) = 6k/Pi^2 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A074920 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a339.A339891;
 
 /**
- * A334307 Number of graceful labelings for the complete tripartite graph K_{1, 1,n}.
+ * A334307 Number of graceful labelings for the complete tripartite graph K_{1,1,n}.
  * @author Georg Fischer
  */
 public class A334307 extends LambdaSequence {

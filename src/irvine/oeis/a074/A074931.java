@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A073524.
+ * A074931 Primes p such that 3p is equidistant from consecutive prime twin pairs.
  * @author Sean A. Irvine
  */
 public class A074931 extends A000040 {

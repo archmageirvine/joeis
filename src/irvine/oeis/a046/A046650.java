@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A046650 Number of rooted planar maps.
+ * A046650 Number of sensed nonseparable (2-connected) planar maps with n edges and a distinguished face of size 2.
  * @author Sean A. Irvine
  */
 public class A046650 extends Sequence2 {

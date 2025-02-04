@@ -6,7 +6,7 @@ import irvine.oeis.a072.A072567;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A350296 Minimum number of 1&apos;s in an n X n binary matrix with no zero 2 X 2 submatrix.
+ * A350296 Minimum number of 1's in an n X n binary matrix with no zero 2 X 2 submatrix.
  * @author Georg Fischer
  */
 public class A350296 extends SingleTransformSequence {

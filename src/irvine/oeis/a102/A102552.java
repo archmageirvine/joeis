@@ -5,7 +5,7 @@ import irvine.oeis.a036.A036263;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A102552 a(n) = prime(n)-(prime(n+1)+prime(n-1))/2.
+ * A102552 a(n) = prime(n) - (prime(n+1) + prime(n-1))/2.
  * @author Georg Fischer
  */
 public class A102552 extends SimpleTransformSequence {

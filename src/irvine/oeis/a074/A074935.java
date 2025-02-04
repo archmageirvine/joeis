@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073524.
+ * A074935 Denominator of a(n), where for n &gt; 2, a(n)=-1/a(n-1)+1/a(n-2), a(1)=1, a(2)=2.
  * @author Sean A. Irvine
  */
 public class A074935 extends Sequence1 {

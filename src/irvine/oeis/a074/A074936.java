@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001597;
 import irvine.oeis.a025.A025475;
 
 /**
- * A073524.
+ * A074936 Number of perfect powers between two successive nonprime prime powers.
  * @author Sean A. Irvine
  */
 public class A074936 extends Sequence1 {

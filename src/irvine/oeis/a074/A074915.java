@@ -6,7 +6,7 @@ import irvine.oeis.a048.A048864;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A074897.
+ * A074915 Largest x such that the number of nonprimes (i.e., 1 and composites) in the reduced residue set (RRS(x)) of x equals n, or 0 if there are no such numbers.
  * @author Sean A. Irvine
  */
 public class A074915 extends A048864 {

@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a029.A029776;
 
 /**
- * A029776 Digits of n appear in n^3.
+ * A074913 Digits of n appear in n^2 and in n^3.
  * @author Sean A. Irvine
  */
 public class A074913 extends A029776 {

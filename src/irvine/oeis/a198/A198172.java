@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000796;
 import irvine.oeis.a103.A103812;
 
 /**
- * A198172 Primes from merging of 8 successive digits in decimal expansion of Pi.
+ * A198172 Primes from merging of 8 successive digits in decimal expansion of Pi forbidding leading zeros.
  * @author Georg Fischer
  */
 public class A198172 extends A103812 {

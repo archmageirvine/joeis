@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002654;
 import irvine.oeis.transform.InverseMobiusTransformSequence;
 
 /**
- * A262209 Inverse Mobius Transform of A002654.
+ * A262209 Inverse M\u00f6bius transform of A002654.
  * @author Georg Fischer
  */
 public class A262209 extends AbstractSequence {

@@ -8,7 +8,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a071.A071961;
 
 /**
- * A253179 a(n) = mu(n)*Sum_{k=1..n} (n/k) where mu(n) is M√∂bius (or Moebius) function and (x/y) is Kronecker&apos;s symbol.
+ * A253179 a(n) = mu(n)*Sum_{k=1..n} (n/k) where mu(n) is M\u00f6bius (or Moebius) function and (x/y) is Kronecker's symbol.
  * @author Georg Fischer
  */
 public class A253179 extends LambdaSequence {

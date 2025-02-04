@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A073524.
+ * A074927 a(n) such that p(n)*p(n+1)+a(n) is a minimal square.
  * @author Sean A. Irvine
  */
 public class A074927 extends A000040 {

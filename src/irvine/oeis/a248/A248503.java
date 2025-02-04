@@ -4,7 +4,7 @@ package irvine.oeis.a248;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A248503 Decimal expansion of molar volume of an ideal gas measured at 0 degrees C and 1 atm.
+ * A248503 Decimal expansion of molar volume of ideal gas at 0 degrees Celsius and 1 atm in liters per mole.
  * @author Georg Fischer
  */
 public class A248503 extends NoncomputableSequence {

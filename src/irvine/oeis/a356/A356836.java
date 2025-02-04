@@ -7,7 +7,7 @@ import irvine.oeis.a095.A095004;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A356836 Coordination sequence of the {5, 3, 4} hyperbolic honeycomb.
+ * A356836 Coordination sequence of the {5,3,4} hyperbolic honeycomb.
  * @author Georg Fischer
  */
 public class A356836 extends SingleTransformSequence {

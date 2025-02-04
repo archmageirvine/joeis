@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073524.
+ * A074925 Numbers n such that n^3 is a sum of two successive primes.
  * @author Sean A. Irvine
  */
 public class A074925 extends Sequence1 {

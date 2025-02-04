@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073524.
+ * A074934 Number of integers in {1, 2, ..., Fibonacci(n)} that are coprime to n.
  * @author Sean A. Irvine
  */
 public class A074934 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A107991 Complexity (number of maximal spanning trees) in an unoriented simple graph with nodes {1, 2,...,n} and edges {i,j} if i + j &gt; n.
+ * A107991 Complexity (number of maximal spanning trees) in an unoriented simple graph with nodes {1,2,...,n} and edges {i,j} if i + j &gt; n.
  * @author Georg Fischer
  */
 public class A107991 extends LambdaSequence {

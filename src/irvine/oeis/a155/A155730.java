@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000110;
 
 /**
- * A155730 Indices of Bell numbers divisible by 5.
+ * A155730 Indices of Bell numbers that are divisible by 5.
  * @author Georg Fischer
  */
 public class A155730 extends FilterPositionSequence {

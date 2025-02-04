@@ -7,7 +7,7 @@ import irvine.oeis.a073.A073363;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A112563 Sieve performed by successive iterations of steps where step m is: keep m terms, remove the next 5 and repeat; as m = 1, 2, 3,.. the remaining terms form this sequence.
+ * A112563 Sieve performed by successive iterations of steps where step m is: keep m terms, remove the next 5 and repeat; as m = 1,2,3,.. the remaining terms form this sequence.
  * @author Georg Fischer
  */
 public class A112563 extends SingleTransformSequence {

@@ -5,7 +5,7 @@ import irvine.math.polynomial.CycleIndex;
 import irvine.math.z.Z;
 
 /**
- * A000886 Number of switching networks with GL(n,2) acting on the domain and AG(2,2) acting on the range.
+ * A000886 Number of switching networks with S(n,2) acting on the domain and AG(2,2) acting on the range where S(n,k) is the symmetric group acting on k variables.
  * @author Sean A. Irvine
  */
 public class A000886 extends A000721 {

@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirichletInverseSequence;
 
 /**
- * A378438 Dirichlet inverse of A378436, where A378436 is the inverse M√∂bius transform of the number of partitions of n into distinct divisors of n.
+ * A378438 Dirichlet inverse of A378436, where A378436 is the inverse M\u00f6bius transform of the number of partitions of n into distinct divisors of n.
  * @author Georg Fischer
  */
 public class A378438 extends AbstractSequence {

@@ -4,7 +4,7 @@ import irvine.oeis.Combiner;
 import irvine.oeis.a019.A019645;
 
 /**
- * A074897.
+ * A074917 Decimal expansion of (Pi+e)/2 - decimal expansion of (Pi*e)^(1/2).
  * @author Sean A. Irvine
  */
 public class A074917 extends Combiner {

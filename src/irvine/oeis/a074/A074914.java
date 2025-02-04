@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074897.
+ * A074914 Order of group of n X n X n Rubik cube, under assumptions not-s, m, i.
  * @author Sean A. Irvine
  */
 public class A074914 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.a053.A053422;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A074908.
+ * A074910 Moebius function applied to A053422.
  * @author Sean A. Irvine
  */
 public class A074910 extends SimpleTransformSequence {

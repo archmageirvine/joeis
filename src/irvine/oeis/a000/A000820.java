@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A000820 Number of switching networks under action of AG_n(Z_2).
+ * A000820 Number of switching networks under action of AG_n(Z_2) acting on 2 variables.
  * @author Sean A. Irvine
  */
 public class A000820 extends Sequence1 {

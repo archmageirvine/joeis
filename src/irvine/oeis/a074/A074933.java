@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073524.
+ * A074933 Number of integers in {1, 2, ..., 2^n} that are coprime to n.
  * @author Sean A. Irvine
  */
 public class A074933 extends Sequence1 {

@@ -16,10 +16,7 @@ public class A074968 extends A000040 {
   @Override
   public Z next() {
     final Z p = super.next();
-    if (Z.TWO.equals(p)) {
-      return Z.THREE;
-    }
-    while (mSum.compareTo(p.multiply(mQ)) < 0) {
+    while (mSum.compareTo(p.multiply(mQ)) <= 0) {
       ++mM;
       mQ = mPrime.nextPrime(mQ);
       mSum = mSum.add(mQ);

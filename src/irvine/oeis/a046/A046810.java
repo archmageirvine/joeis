@@ -2,7 +2,6 @@ package irvine.oeis.a046;
 
 import java.util.Arrays;
 
-import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
@@ -13,7 +12,6 @@ import irvine.util.Permutation;
  */
 public class A046810 extends Sequence1 {
 
-  private static final Fast PRIME = new Fast();
   protected long mN = 0;
 
   static long numberOfPrimeAnagrams(final String s) {
@@ -26,15 +24,8 @@ public class A046810 extends Sequence1 {
     final Permutation perm = new Permutation(d);
     int[] p;
     while ((p = perm.next()) != null) {
-      if (p[0] != 0) {
-        long v = 0;
-        for (final int u : p) {
-          v *= 10;
-          v += u;
-        }
-        if (PRIME.isPrime(v)) {
-          ++count;
-        }
+      if (p[0] != 0 && Permutation.permToZ(p).isProbablePrime()) {
+        ++count;
       }
     }
     return count;

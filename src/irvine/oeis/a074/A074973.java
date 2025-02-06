@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073524.
+ * A074973 Smallest index i such that next_prime( 2*prime(i) ) - 2*prime(i) = 2n - 1.
  * @author Sean A. Irvine
  */
 public class A074973 extends Sequence1 {

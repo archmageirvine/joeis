@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073524.
+ * A075055 Smallest integer of the form product (n+1)(n+2)...(n+k)/n!.
  * @author Sean A. Irvine
  */
 public class A075055 extends Sequence1 {

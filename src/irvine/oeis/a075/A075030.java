@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A073524.
+ * A075030 Primes for which the four closest primes are smaller.
  * @author Sean A. Irvine
  */
 public class A075030 extends A000040 {

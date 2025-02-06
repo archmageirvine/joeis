@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068977 Numbers k such that Sum_{d|k} d/tau(d) is an integer, where tau(x)=A000005(x).
+ * A068977 Numbers k such that Sum_{d|k} d/tau(d) is an integer, where tau(x) = A000005(x).
  * @author Sean A. Irvine
  */
 public class A068977 extends Sequence1 {

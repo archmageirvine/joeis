@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
 
 /**
- * A073524.
+ * A075053 Number of primes (counted with repetition) that can be formed by rearranging some or all of the digits of n.
  * @author Sean A. Irvine
  */
 public class A075053 extends Sequence0 {

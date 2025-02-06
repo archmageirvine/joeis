@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A230151 Decimal expansion of the positive real solution of the equation x^(k+1)+x^k-1=0. Case k=3.
+ * A230151 Decimal expansion of the positive real solution of the equation x^4 + x^3 - 1 = 0.
  * Equation; x^4+x^3-1
  * @author Georg Fischer
  */

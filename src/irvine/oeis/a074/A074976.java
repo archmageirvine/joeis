@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A073524.
+ * A074976 a(n) = round(1/(sqrt(prime(n+1)) - sqrt(prime(n)))).
  * @author Sean A. Irvine
  */
 public class A074976 extends A000040 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073524.
+ * A074986 Number of nonempty subsets of {1,2,3,...,n} that are closed under both GCD and LCM.
  * @author Sean A. Irvine
  */
 public class A074986 extends Sequence1 {

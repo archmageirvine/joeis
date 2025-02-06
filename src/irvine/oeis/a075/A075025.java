@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053188.
+ * A075025 Numbers k such that d(k) &lt; d(k-1) and d(k) &lt; d(k+1), where d(k) is the number of divisors of k.
  * @author Sean A. Irvine
  */
 public class A075025 extends Sequence1 {

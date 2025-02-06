@@ -5,7 +5,7 @@ import irvine.oeis.a008.A008278;
 import irvine.oeis.triangle.Inverse;
 
 /**
- * A106342 Matrix inverse of A008278, which is a triangle of Stirling numbers of 2nd kind.
+ * A106342 Matrix inverse of A008278, which is the reflected triangle of the Stirling numbers of 2nd kind.
  * @author Georg Fischer
  */
 public class A106342 extends Inverse {

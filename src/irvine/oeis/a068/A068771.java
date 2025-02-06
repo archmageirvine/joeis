@@ -5,7 +5,7 @@ package irvine.oeis.a068;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A068771 Generalized Catalan numbers.
+ * A068771 Generalized Catalan numbers 9*x*A(x)^2 -A(x) +1 -8*x=0.
  * @author Georg Fischer
  */
 public class A068771 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A053188.
+ * A074998 Composite numbers which are sandwiched between two numbers having the same unordered canonical form.
  * @author Sean A. Irvine
  */
 public class A074998 extends A002808 {

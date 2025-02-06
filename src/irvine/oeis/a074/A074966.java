@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074934.
+ * A074966 a(n) = least k such that n^n + k is prime.
  * @author Sean A. Irvine
  */
 public class A074966 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053188.
+ * A075040 a(1) = 0; a(n) = smallest of three consecutive numbers all with 2n divisors.
  * @author Sean A. Irvine
  */
 public class A075040 extends Sequence1 {

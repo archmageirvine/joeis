@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A152602 A symmetrical vector coefficient recursion sequence: a(n)=2*{0,a(n-2,0}+2*{-1/2,a(n-1)}+2*{a(n-1),-1/2}.
+ * A152602 a(n) = 2*{0,a(n-2),0} + 2*{-1/2,a(n-1)}+2*{a(n-1),-1/2}.
  * @author Georg Fischer
  */
 public class A152602 extends Triangle {

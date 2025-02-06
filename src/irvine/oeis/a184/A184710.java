@@ -4,7 +4,7 @@ package irvine.oeis.a184;
 import irvine.math.z.Z;
 
 /**
- * A184710 Number of strings of numbers x(i=1..10) in 0..n with sum i*x(i) equal to n*10.
+ * A184710 Number of strings of numbers x(i=1..10) in 0..n with Sum_{i=1..10} i*x(i) = n*10.
  * @author Georg Fischer
  */
 public class A184710 extends A184703 {

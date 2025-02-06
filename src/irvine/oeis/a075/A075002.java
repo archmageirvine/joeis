@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007908;
 
 /**
- * A053188.
+ * A075002 a(n) = smallest k such that A007908(k) is divisible by n.
  * @author Sean A. Irvine
  */
 public class A075002 extends Sequence1 {

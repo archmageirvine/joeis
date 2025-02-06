@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A053188.
+ * A075026 Define a number k to occupy a divisor cavity if d(k-1) &gt; d(k) &lt; d(k+1) where d(k) is the number of divisors of k. Sequence gives composite numbers occupying a divisor cavity.
  * @author Sean A. Irvine
  */
 public class A075026 extends A002808 {

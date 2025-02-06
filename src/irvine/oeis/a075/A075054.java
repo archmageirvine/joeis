@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073524.
+ * A075054 Smallest k such that (n+1)(n+2)...(n+k) is divisible by n!.
  * @author Sean A. Irvine
  */
 public class A075054 extends Sequence1 {

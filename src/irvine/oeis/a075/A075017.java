@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053188.
+ * A075017 Smallest k such that the concatenation k, k+1,k+2,k+3 is divisible by n; or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A075017 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.HypergeometricSequence;
 
 /**
- * A178920 Expansion of e.g.f. A(x), where A(x)=exp(x*A(x)+x^2*A(x)^2).
+ * A178920 E.g.f. A(x) satisfies A(x) = x * (1 + A(x)) * exp( A(x) * (1 + A(x)) ).
  * @author Georg Fischer
  */
 public class A178920 extends HypergeometricSequence {

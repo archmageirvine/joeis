@@ -1,7 +1,7 @@
 package irvine.oeis.a015;
 
 /**
- * A015484 q-Fibonacci numbers for q=11.
+ * A015484 q-Fibonacci numbers for q=11, scaling a(n-1).
  * @author Sean A. Irvine
  */
 public class A015484 extends A015474 {

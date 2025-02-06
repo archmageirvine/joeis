@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A015460 q-Fibonacci numbers for q=3.
+ * A015460 q-Fibonacci numbers for q=3, scale a(n-2).
  * @author Sean A. Irvine
  */
 public class A015460 extends Sequence0 {

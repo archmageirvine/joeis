@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053188.
+ * A075046 a(n) = the smallest number k such that the number of divisors of the n numbers from k through k+n-1 are in nondescending order.
  * @author Sean A. Irvine
  */
 public class A075046 extends Sequence1 {

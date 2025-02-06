@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.BeattySequence;
 
 /**
- * A172323 Floor(n*(sqrt(5)+sqrt(2))).
+ * A172323 a(n) = floor(n*(sqrt(5)+sqrt(2))).
  * @author Georg Fischer
  */
 public class A172323 extends BeattySequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000079;
 import irvine.oeis.transform.ConvolutionProduct;
 
 /**
- * A152537 Convolution sequence: convolved with A000041 = powers of 2, (A000079).
+ * A152537 Convolution sequence: this sequence convolved with A000041 gives powers of 2, (A000079).
  * @author Georg Fischer
  */
 public class A152537 extends ConvolutionProduct {

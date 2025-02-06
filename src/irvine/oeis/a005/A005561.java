@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A005561 Number of walks on square lattice.
+ * A005561 Number of walks on square lattice. Column y=3 of A052174.
  * @author Sean A. Irvine
  */
 public class A005561 extends Sequence3 {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073524.
+ * A074971 Number of partitions of n into distinct parts of order n.
  * @author Sean A. Irvine
  */
 public class A074971 extends Sequence1 {

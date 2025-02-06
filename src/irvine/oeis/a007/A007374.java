@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A007374 Smallest k such that phi(x) = k has exactly n solutions.
+ * A007374 Smallest k such that phi(x) = k has exactly n solutions, n&gt;=2.
  * @author Sean A. Irvine
  */
 public class A007374 extends Sequence2 {

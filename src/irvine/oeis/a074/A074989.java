@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A053188.
+ * A074989 Distance from n to nearest cube.
  * @author Sean A. Irvine
  */
 public class A074989 extends Sequence0 {

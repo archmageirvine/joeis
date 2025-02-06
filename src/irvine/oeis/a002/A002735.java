@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
- * A002735 Related to Euler numbers.
+ * A002735 Related to Euler numbers, expansion of e.g.f. sec(x)*tan^2(x).
  * @author Sean A. Irvine
  */
 public class A002735 extends MemoryFunction2Sequence<Long, Z> {

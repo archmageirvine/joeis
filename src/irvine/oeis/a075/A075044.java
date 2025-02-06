@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A053188.
+ * A075044 a(0) = 1; a(n) = the smallest number k such that n numbers from k to k+n-1 have n distinct prime divisors, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A075044 extends Sequence0 {

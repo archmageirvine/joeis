@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073524.
+ * A074978 Prime(prime(n)) ends with n.
  * @author Sean A. Irvine
  */
 public class A074978 extends Sequence1 {

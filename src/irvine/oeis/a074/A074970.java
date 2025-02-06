@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073524.
+ * A074970 Number of steps to reach the first integer starting with sigma(n)/n and iterating the map x -&gt; x*ceiling(x), or -1 if no integer is ever reached.
  * @author Sean A. Irvine
  */
 public class A074970 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A025242 Generalized Catalan numbers.
+ * A025242 Generalized Catalan numbers A(x)^2 -(1+x)^2*A(x) +x*(2+x+x^2) =0.
  * @author Sean A. Irvine
  */
 public class A025242 extends MemorySequence {

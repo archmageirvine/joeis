@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A033902 Sort then Add!.
+ * A033902 Sort then Add, a(1)=25.
  * @author Sean A. Irvine
  */
 public class A033902 extends Sequence1 {

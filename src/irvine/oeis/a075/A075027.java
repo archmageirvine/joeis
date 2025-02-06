@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053188.
+ * A075027 Numbers k such that d(k-1) &lt; d(k) &gt; d(k+1), d = A000005.
  * @author Sean A. Irvine
  */
 public class A075027 extends Sequence1 {

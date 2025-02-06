@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053188.
+ * A075001 Smallest k such that the concatenation of n consecutive numbers starting with k (from k to n+k-1) is a multiple of n; or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A075001 extends Sequence1 {

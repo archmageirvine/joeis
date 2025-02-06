@@ -8,7 +8,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A053188.
+ * A075047 Numbers k whose prime factorization contains the same digits as k.
  * @author Sean A. Irvine
  */
 public class A075047 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A073524.
+ * A075051 Smallest prime for which the n closest primes are smaller.
  * @author Sean A. Irvine
  */
 public class A075051 extends A000040 {

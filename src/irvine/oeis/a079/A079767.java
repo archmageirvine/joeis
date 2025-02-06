@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A079767 Number of positions that are exactly n moves from the starting position in the Dino Cube puzzle.
+ * A079767 Number of positions that are exactly n moves from the starting position in the Dino Cube puzzle, mirror positions counted once.
  * @author Georg Fischer
  */
 public class A079767 extends FiniteSequence {

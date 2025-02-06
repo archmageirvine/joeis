@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053188.
+ * A077306 Smallest multiple of n formed by the concatenation of n successive numbers, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A077306 extends Sequence1 {

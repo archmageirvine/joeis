@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A006780 Number of n-step spirals on cubic lattice.
+ * A006780 Number of n-step anisotropic spirals on cubic lattice.
  * @author Sean A. Irvine
  */
 public class A006780 extends AbstractSequence {

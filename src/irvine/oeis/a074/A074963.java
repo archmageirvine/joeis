@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074934.
+ * A074963 Max ( sigma(x*y) : 1&lt;=x&lt;=n, 1&lt;=y&lt;=n ).
  * @author Sean A. Irvine
  */
 public class A074963 extends Sequence1 {

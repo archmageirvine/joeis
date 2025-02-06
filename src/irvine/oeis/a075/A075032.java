@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053188.
+ * A075032 Numbers n such that tau(n) &lt;= tau(n+1) &lt;= tau(n+2) where tau(n) = number of divisors of n.
  * @author Sean A. Irvine
  */
 public class A075032 extends Sequence1 {

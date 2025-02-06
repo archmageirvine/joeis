@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053026 Maximal power of 2 arising when A000005 is applied repeatedly to n!.
+ * A053026 Maximum power of 2 arising when A000005 is applied repeatedly to n!.
  * @author Sean A. Irvine
  */
 public class A053026 extends Sequence1 {

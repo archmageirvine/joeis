@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053188.
+ * A075000 Smallest number such that n*a(n) is a concatenation of n consecutive integers; or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A075000 extends Sequence1 {

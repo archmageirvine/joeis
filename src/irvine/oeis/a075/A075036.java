@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053188.
+ * A075036 Smaller of two smallest consecutive numbers with 2n divisors.
  * @author Sean A. Irvine
  */
 public class A075036 extends Sequence1 {

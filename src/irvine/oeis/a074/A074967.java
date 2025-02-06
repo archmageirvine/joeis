@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A074934.
+ * A074967 a(n) = least k such that n^n - k is prime.
  * @author Sean A. Irvine
  */
 public class A074967 extends Sequence2 {

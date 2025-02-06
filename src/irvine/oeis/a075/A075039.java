@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005117;
 
 /**
- * A073524.
+ * A075039 Smallest of three consecutive squarefree numbers having equal numbers of prime factors.
  * @author Sean A. Irvine
  */
 public class A075039 extends A005117 {

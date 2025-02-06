@@ -3,7 +3,7 @@ package irvine.oeis.a039;
 import irvine.math.z.Z;
 
 /**
- * A039763 Triangle of D-analogs of Stirling numbers of first kind.
+ * A039763 Triangle of D-analogs of Stirling numbers of first kind, rows reversed.
  * @author Sean A. Irvine
  */
 public class A039763 extends A039762 {

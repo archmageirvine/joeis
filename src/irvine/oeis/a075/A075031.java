@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053188.
+ * A075031 a(n) is the smallest number k such that the number of divisors of the n numbers from k through k+n-1 are nonincreasing.
  * @author Sean A. Irvine
  */
 public class A075031 extends Sequence1 {

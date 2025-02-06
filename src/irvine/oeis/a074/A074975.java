@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a005.A005101;
 
 /**
- * A073524.
+ * A074975 Abundant numbers such that the sum of their individual digits when raised to their own power is an abundant number.
  * @author Sean A. Irvine
  */
 public class A074975 extends A005101 {

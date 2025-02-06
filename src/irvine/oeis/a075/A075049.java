@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A053188.
+ * A075049 Numbers k such that every digit of k is a divisor of k and every divisor of k in the range [2,9] occurs at least once as a digit of k.
  * @author Sean A. Irvine
  */
 public class A075049 extends Sequence1 {

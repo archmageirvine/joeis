@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053188.
+ * A075013 Smallest k such that the decimal concatenation of k and k+1 is divisible by n.
  * @author Sean A. Irvine
  */
 public class A075013 extends Sequence1 {

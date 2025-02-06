@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a007.A007733;
 
 /**
- * A256608 Least common eventual period of a^(2^k) mod n for all a.
+ * A256608 Longest eventual period of a^(2^k) mod n for all a.
  * @author Georg Fischer
  */
 public class A256608 extends LambdaSequence {

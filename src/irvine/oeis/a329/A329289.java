@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a036.A036469;
 
 /**
- * A329289 G.f.: (1 + x) * (1 + x^2) * Product_{k&gt;=1} (1 + x^k).
+ * A329289 Expansion of g.f. (1 + x) * (1 + x^2) * Product_{k&gt;=1} (1 + x^k).
  * @author Georg Fischer
  */
 public class A329289 extends AbstractSequence {

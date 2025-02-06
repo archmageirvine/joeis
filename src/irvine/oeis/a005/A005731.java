@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.math.z.Z;
 
 /**
- * A005731 Related to n-th powers of polynomials.
+ * A005731 Related to n-th powers of polynomials: factors complementary to A005730.
  * @author Sean A. Irvine
  */
 public class A005731 extends A005729 {

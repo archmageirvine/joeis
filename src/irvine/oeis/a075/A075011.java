@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000422;
 import irvine.oeis.a007.A007908;
 
 /**
- * A053188.
+ * A075011 Floor[ concatenation of numbers from n to 1 divided by concatenation of numbers from 1 to n].
  * @author Sean A. Irvine
  */
 public class A075011 extends Combiner {

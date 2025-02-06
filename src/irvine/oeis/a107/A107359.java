@@ -5,7 +5,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a003.A003754;
 
 /**
- * A107359 A003754(n+1) - A003754(n).
+ * A107359 a(n) = A003754(n+1) - A003754(n).
  * @author Georg Fischer
  */
 public class A107359 extends DifferenceSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.transform.EulerTransform;
 
 
 /**
- * A052816 G.f.: (1+x)*Product_{m&gt;0} (1 + x^m).
+ * A052816 Expansion of g.f. (1+x)*Product_{m&gt;0} (1 + x^m).
  * @author Georg Fischer
  */
 public class A052816 extends EulerTransform {

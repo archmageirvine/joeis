@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A026319 a(n) = n-th nonnegative integer k satisfying |sin(k)| &lt; |cos(k)| &lt; |sin(k+1)|.
+ * A026319 a(n) is the n-th nonnegative integer k satisfying |sin(k)| &lt; |cos(k)| &lt; |sin(k+1)|.
  * @author Sean A. Irvine
  */
 public class A026319 extends Sequence1 {

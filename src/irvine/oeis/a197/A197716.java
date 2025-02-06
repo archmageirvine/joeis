@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A197716 Ceiling((2n+1/n)^n).
+ * A197716 a(n) = ceiling((2n+1/n)^n).
  * @author Georg Fischer
  */
 public class A197716 extends Sequence1 {

@@ -1,0 +1,30 @@
+package irvine.oeis.a075;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import irvine.math.z.Z;
+import irvine.oeis.a005.A005117;
+
+/**
+ * A075078.
+ * @author Sean A. Irvine
+ */
+public class A075087 extends A005117 {
+
+  private final Set<Z> mUsed = new HashSet<>();
+  private Z mSum = Z.ZERO;
+
+  @Override
+  public Z next() {
+    final Z c = super.next();
+    final Z[] qr = mSum.divideAndRemainder(c);
+    Z k = c.subtract(qr[1]);
+    while (!mUsed.add(k)) {
+      k = k.add(c);
+    }
+    mSum = mSum.add(k);
+    return k;
+  }
+}
+

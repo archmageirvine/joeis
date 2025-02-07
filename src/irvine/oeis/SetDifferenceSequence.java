@@ -43,7 +43,7 @@ public class SetDifferenceSequence extends AbstractSequence {
         mNextB = mSeqB.next();
         continue;
       }
-      if (mNextA.compareTo(mNextB) < 0) {
+      if (mNextB == null || mNextA.compareTo(mNextB) < 0) {
         final Z res = mNextA;
         mNextA = mSeqA.next();
         return res;

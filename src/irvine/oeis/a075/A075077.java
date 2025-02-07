@@ -12,8 +12,8 @@ import irvine.oeis.Sequence1;
 public class A075077 extends Sequence1 {
 
   private final HashSet<Long> mUsed = new HashSet<>();
-  private final HashSet<Z> mSeenComposites = new HashSet<>();
-  private Z mA = null;
+  protected final HashSet<Z> mSeenComposites = new HashSet<>();
+  protected Z mA = null;
 
   @Override
   public Z next() {

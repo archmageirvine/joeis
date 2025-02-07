@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A075057.
+ * A075058 Lexicographically earliest infinite sequence of distinct positive numbers with the property that every positive integer is a sum of distinct terms (see algorithm below).
  * @author Sean A. Irvine
  */
 public class A075058 extends Sequence0 {

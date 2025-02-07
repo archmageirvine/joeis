@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A352484 Decimal expansion of the probability that when three real numbers are chosen at random, uniformly and independently in the interval [0, 1], they can be the lengths of the sides of a triangle whose altitudes are also the sides of some triangle.
+ * A352484 Decimal expansion of the probability that when three real numbers are chosen at random, uniformly and independently in the interval [0,1], they can be the lengths of the sides of a triangle whose altitudes are also the sides of some triangle.
  * Formula:
  * @author Georg Fischer
  */

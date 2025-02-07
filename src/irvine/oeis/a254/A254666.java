@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A254666 Decimal expansion of the right Alzer&apos;s constant.
+ * A254666 Decimal expansion of the right Alzer's constant.
  * Formula:
  * @author Georg Fischer
  */

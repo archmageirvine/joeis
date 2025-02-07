@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A357597 Decimal expansion of real part of zeta&apos;(0, 1-sqrt(2)).
+ * A357597 Decimal expansion of real part of zeta'(0, 1-sqrt(2)).
  * Formula:
  * @author Georg Fischer
  */

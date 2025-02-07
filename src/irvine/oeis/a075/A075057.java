@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075057.
+ * A075057 a(1) = 0, then smallest triangular number such that a(n+1)- a(n) is a palindrome.
  * @author Sean A. Irvine
  */
 public class A075057 extends Sequence1 {

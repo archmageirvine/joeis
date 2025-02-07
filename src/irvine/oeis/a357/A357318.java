@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A357318 Decimal expansion of 1/(2*L), where L is the conjectured Landau&apos;s constant A081760.
+ * A357318 Decimal expansion of 1/(2*L), where L is the conjectured Landau's constant A081760.
  * Formula:
  * @author Georg Fischer
  */

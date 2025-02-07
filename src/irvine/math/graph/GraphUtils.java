@@ -26,6 +26,7 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.nauty.Nauty;
+import irvine.math.nauty.NautySet;
 import irvine.math.nauty.OptionBlk;
 import irvine.math.nauty.StatsBlk;
 import irvine.math.partition.IntegerPartition;
@@ -1165,6 +1166,17 @@ public final class GraphUtils {
     while ((j = g.nextVertex(current, j)) >= 0) {
       markAll(g, reachable, j);
     }
+  }
+
+  /**
+   * Return the size of the automorphism group for a graph.
+   * @param graph the graph
+   * @return automorphism size
+   */
+  public static Z automorphismSize(final Graph graph) {
+    final StatsBlk stats = new StatsBlk();
+    new Nauty(graph, new int[graph.order()], new int[graph.order()], new NautySet(graph.order()), new int[graph.order()], new OptionBlk(), stats, new long[100]);
+    return stats.groupSize();
   }
 }
 

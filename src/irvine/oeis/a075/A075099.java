@@ -72,7 +72,6 @@ public class A075099 extends Sequence1  {
     for (int k = 2; k < mN; ++k) {
       allPrecursors.addAll(words(k));
     }
-    System.out.println(allPrecursors);
     if (allPrecursors.size() > Long.SIZE) {
       throw new UnsupportedOperationException();
     }

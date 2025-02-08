@@ -12,6 +12,7 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
  */
 public class A075095 extends ParallelGenerateGraphsSequence {
 
+  /** Construct the sequence. */
   public A075095() {
     super(1, 0, 2, false, false, false);
   }

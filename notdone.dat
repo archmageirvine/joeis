@@ -2478,3 +2478,4 @@ A074954 Least perfect power b^e such that b^e-n is also a perfect power, or 0 if
 A074962 Decimal expansion of Glaisher-Kinkelin constant A.
 A074980 Numbers which are not of the form m^p - n^q where p = 2 or 3, q = 2 or 3.
 A074981 Conjectured list of positive numbers which are not of the form r^i - s^j, where r,s,i,j are integers with r>0, s>0, i>1, j>1.
+A075124 Orders of symmetric, cubic, connected graphs, sorted from largest to smallest with duplications when there exist multiple such graphs of the same order.

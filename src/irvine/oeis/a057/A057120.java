@@ -1,7 +1,6 @@
 package irvine.oeis.a057;
 
 import irvine.math.function.Functions;
-import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
@@ -10,18 +9,8 @@ import irvine.math.z.Z;
  */
 public class A057120 extends A057119 {
 
-  /**
-   * Return the global rank.
-   * @param a parameter
-   * @return the rank
-   */
-  public static Z catalanGlobalRank(final Z a) {
-    final int n = a.bitLength() / 2;
-    return Integers.SINGLETON.sum(0, n - 1, Functions.CATALAN::z).add(A057121.catalanRank(n, a));
-  }
-
   @Override
   public Z next() {
-    return catalanGlobalRank(super.next());
+    return Functions.GLOBAL_CATALAN_RANK.z(super.next());
   }
 }

@@ -36,7 +36,7 @@ public class A057162 extends A014486 {
 
   @Override
   public Z next() {
-    return A057120.catalanGlobalRank(rotateTriangularizationR(super.next()));
+    return Functions.GLOBAL_CATALAN_RANK.z(rotateTriangularizationR(super.next()));
   }
 }
 

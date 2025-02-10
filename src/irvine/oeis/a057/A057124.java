@@ -1,5 +1,6 @@
 package irvine.oeis.a057;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -11,6 +12,6 @@ public class A057124 extends A057122 {
   @Override
   public Z next() {
     final Z t = super.next();
-    return A057121.catalanRank(t.bitLength() / 2, t);
+    return Functions.LOCAL_CATALAN_RANK.z(t.bitLength() / 2, t);
   }
 }

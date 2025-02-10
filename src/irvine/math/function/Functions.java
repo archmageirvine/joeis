@@ -163,6 +163,8 @@ public final class Functions {
   public static final Function1 THUE_MORSE = new ThueMorse(); // =A010060
   /** Collatz function. */
   public static final Function1 COLLATZ = new Collatz(); // =A006370
+  /** Global Catalan rank function. */
+  public static final Function1 GLOBAL_CATALAN_RANK = new GlobalCatalanRank(); // =A057120
 
   // Two argument functions with default first parameter
 
@@ -245,7 +247,8 @@ public final class Functions {
   public static final Function2 CYCLOTOMIC = new Cyclotomic();
   /** Lah numbers. */
   public static final Function2 LAH = new Lah(); // =A008297
-
+  /** Local Catalan rank function. */
+  public static final Function2 LOCAL_CATALAN_RANK = new LocalCatalanRank(); // =A057121
 
   // Aggregating functions
 

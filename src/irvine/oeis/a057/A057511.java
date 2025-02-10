@@ -1,6 +1,7 @@
 package irvine.oeis.a057;
 
 import irvine.lisp.SExpression;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a014.A014486;
 
@@ -12,6 +13,6 @@ public class A057511 extends A014486 {
 
   @Override
   public Z next() {
-    return A057120.catalanGlobalRank(SExpression.binexp2pars(super.next()).deepRotateLeft().toZ());
+    return Functions.GLOBAL_CATALAN_RANK.z(SExpression.binexp2pars(super.next()).deepRotateLeft().toZ());
   }
 }

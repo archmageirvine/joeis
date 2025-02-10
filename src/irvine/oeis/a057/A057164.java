@@ -22,7 +22,7 @@ public class A057164 extends A014486 {
 
   @Override
   public Z next() {
-    return A057120.catalanGlobalRank(bcr(super.next()));
+    return Functions.GLOBAL_CATALAN_RANK.z(bcr(super.next()));
   }
 }
 

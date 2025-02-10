@@ -1,9 +1,9 @@
 package irvine.oeis.a074;
 
 import irvine.lisp.SExpression;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a014.A014486;
-import irvine.oeis.a057.A057120;
 
 /**
  * A074683 Permutation of natural numbers induced by the Catalan Automorphism *A074683 acting on parenthesizations as encoded and ordered by A014486/A063171.
@@ -21,6 +21,6 @@ public class A074683 extends A014486 {
 
   @Override
   public Z next() {
-    return A057120.catalanGlobalRank(s074683(SExpression.binexp2pars(super.next())).toZ());
+    return Functions.GLOBAL_CATALAN_RANK.z(s074683(SExpression.binexp2pars(super.next())).toZ());
   }
 }

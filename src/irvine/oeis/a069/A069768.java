@@ -1,9 +1,9 @@
 package irvine.oeis.a069;
 
 import irvine.lisp.SExpression;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a014.A014486;
-import irvine.oeis.a057.A057120;
 
 /**
  * A069768 Signature-permutation of Catalan bijection "Knack".
@@ -28,6 +28,6 @@ public class A069768 extends A014486 {
     for (int k = 0; k < mFolds; ++k) {
       s = s.knack();
     }
-    return A057120.catalanGlobalRank(s.toZ());
+    return Functions.GLOBAL_CATALAN_RANK.z(s.toZ());
   }
 }

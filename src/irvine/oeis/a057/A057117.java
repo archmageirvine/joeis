@@ -2,6 +2,7 @@ package irvine.oeis.a057;
 
 import java.util.LinkedList;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a014.A014486;
 
@@ -66,6 +67,6 @@ public class A057117 extends A014486 {
 
   @Override
   public Z next() {
-    return A057120.catalanGlobalRank(bfsToDfs(super.next()));
+    return Functions.GLOBAL_CATALAN_RANK.z(bfsToDfs(super.next()));
   }
 }

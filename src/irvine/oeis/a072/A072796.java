@@ -1,9 +1,9 @@
 package irvine.oeis.a072;
 
 import irvine.lisp.SExpression;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a014.A014486;
-import irvine.oeis.a057.A057120;
 
 /**
  * A072796 Self-inverse permutation of natural numbers induced by the Catalan bijection swapping the two leftmost subtrees in the general tree context of the parenthesizations encoded by A014486. See illustrations in the comments.
@@ -27,6 +27,6 @@ public class A072796 extends A014486 {
 
   @Override
   public Z next() {
-    return A057120.catalanGlobalRank(s072796(SExpression.binexp2pars(super.next())).toZ());
+    return Functions.GLOBAL_CATALAN_RANK.z(s072796(SExpression.binexp2pars(super.next())).toZ());
   }
 }

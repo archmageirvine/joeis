@@ -4,10 +4,10 @@ import java.util.function.Function;
 
 import irvine.lisp.SExpression;
 import irvine.math.cr.CR;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
-import irvine.oeis.a057.A057120;
 
 /**
  * A071652 Inverse permutation to A071651.
@@ -39,7 +39,7 @@ public class A071652 extends Sequence0 {
   }
 
   private Z arithrankBijection(final Z n, final Function<Z, Z> lambda1, final Function<Z, Z> lambda2) {
-    return A057120.catalanGlobalRank(unrankBinTree(n, lambda1, lambda2).toZ());
+    return Functions.GLOBAL_CATALAN_RANK.z(unrankBinTree(n, lambda1, lambda2).toZ());
   }
 
   @Override

@@ -1,8 +1,8 @@
 package irvine.oeis.a069;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a014.A014486;
-import irvine.oeis.a057.A057120;
 import irvine.oeis.a057.A057164;
 import irvine.oeis.a057.A057501;
 
@@ -14,6 +14,6 @@ public class A069889 extends A014486 {
 
   @Override
   public Z next() {
-    return A057120.catalanGlobalRank(A057164.bcr(A057501.rotateHandshakes(super.next())));
+    return Functions.GLOBAL_CATALAN_RANK.z(A057164.bcr(A057501.rotateHandshakes(super.next())));
   }
 }

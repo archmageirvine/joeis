@@ -1,10 +1,10 @@
 package irvine.oeis.a072;
 
 import irvine.lisp.SExpression;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence0;
-import irvine.oeis.a057.A057120;
 import irvine.oeis.a059.A059905;
 
 /**
@@ -26,7 +26,7 @@ public class A072637 extends Sequence0 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return A057120.catalanGlobalRank(unpack(n).toZ());
+    return Functions.GLOBAL_CATALAN_RANK.z(unpack(n).toZ());
   }
 
   @Override

@@ -1,9 +1,9 @@
 package irvine.oeis.a073;
 
 import irvine.lisp.SExpression;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a014.A014486;
-import irvine.oeis.a057.A057120;
 
 /**
  * A073287 Permutation of natural numbers induced by the composition of the Catalan bijections A069768 &amp; A069770.
@@ -17,7 +17,7 @@ public class A073287 extends A014486 {
 
   @Override
   public Z next() {
-    return A057120.catalanGlobalRank(s073287(SExpression.binexp2pars(super.next())).toZ());
+    return Functions.GLOBAL_CATALAN_RANK.z(s073287(SExpression.binexp2pars(super.next())).toZ());
   }
 }
 

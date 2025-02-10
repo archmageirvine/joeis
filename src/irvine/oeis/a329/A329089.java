@@ -4,10 +4,9 @@ package irvine.oeis.a329;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
-
 /**
  * A329089 Decimal expansion of Sum_{k&gt;=1} 1/(k^2-2), negated.
- * Formula:
+ * Formula: 
  * @author Georg Fischer
  */
 public class A329089 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A369094 Decimal expansion of the asymptotic probability that 2 random integer 3 X 3 matrices generate the ring M_3(Z).		.
- * Formula:
  * @author Georg Fischer
  */
 public class A369094 extends DecimalExpansionSequence {

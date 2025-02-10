@@ -4,7 +4,7 @@ package irvine.oeis.a122;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A122449 A lower diagonal of pendular trinomial triangle A122445.
+ * A122449 Diagonal elements A122445(n+2,n) of the pendular trinomial triangle A122445.
  * FindRE(2/(1-2*x-2*x^2-2*x^3+4*x^4+4*x^5 +(1+2*x^2+2*x^3)*sqrt(1 - 4*x - 4*x^2 + 4*x^4)), x, a(n));
  * @author Georg Fischer
  */

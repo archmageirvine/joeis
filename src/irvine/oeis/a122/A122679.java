@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A122679 Related to number of n-circum-C_5 H_5 systems.
+ * A122679 Invariant number of internal vertices of n-circum-C_5 H_5 systems.
  * @author Sean A. Irvine
  */
 public class A122679 extends LinearRecurrence {

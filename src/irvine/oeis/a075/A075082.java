@@ -7,7 +7,7 @@ import irvine.oeis.UnionSequence;
 import irvine.oeis.a058.A058295;
 
 /**
- * A075078.
+ * A075082 Numbers n such that n! is a product of distinct factorials k!*l!*m!*... with k, l, m, etc. &lt; n.
  * @author Sean A. Irvine
  */
 public class A075082 extends SetDifferenceSequence implements Conjectural {

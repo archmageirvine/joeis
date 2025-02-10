@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A181963 Prime-generating polynomial: 25*n^2 - 1185*n + 14083.
+ * A181963 Prime-generating polynomial: a(n) = 25*n^2 - 1185*n + 14083.
  * @author Sean A. Irvine
  */
 public class A181963 extends LinearRecurrence {

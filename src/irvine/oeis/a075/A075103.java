@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073524.
+ * A075103 Integer reached in A075102.
  * @author Sean A. Irvine
  */
 public class A075103 extends Sequence1 {

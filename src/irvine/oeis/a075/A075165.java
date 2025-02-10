@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074598.
+ * A075165 Sequence A075166 interpreted as binary numbers and converted to decimal.
  * @author Sean A. Irvine
  */
 public class A075165 extends Sequence1 {

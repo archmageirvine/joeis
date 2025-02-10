@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005117;
 
 /**
- * A075078.
+ * A075087 Rearrangement of natural numbers such that the n-th partial sum is divisible by the n-th squarefree number.
  * @author Sean A. Irvine
  */
 public class A075087 extends A005117 {

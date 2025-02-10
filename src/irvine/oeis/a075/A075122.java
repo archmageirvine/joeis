@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A073524.
+ * A075122 a(n) = least positive integer &gt; a(n-1) and not a(i)+2*a(j) for 1&lt;=i&lt;j&lt;n.
  * @author Sean A. Irvine
  */
 public class A075122 extends CachedSequence {

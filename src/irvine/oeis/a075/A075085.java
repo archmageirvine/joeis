@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A075078.
+ * A075085 a(n) is the smallest number not already in the sequence such that Sum_{k=1..n} a(k) is divisible by prime(n).
  * @author Sean A. Irvine
  */
 public class A075085 extends A000040 {

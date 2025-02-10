@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a069.A069567;
 
 /**
- * A069567 Smaller of two consecutive primes which are anagrams of each other.
+ * A075093 Smallest member of Ormiston prime triple.
  * @author Sean A. Irvine
  */
 public class A075093 extends A069567 {

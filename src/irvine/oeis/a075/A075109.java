@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A001597 Perfect powers: m^k where m &gt; 0 and k &gt;= 2.
+ * A075109 Odd perfect powers (1 together with numbers m^k, m odd, k &gt;= 2).
  * @author Sean A. Irvine
  */
 public class A075109 extends Sequence1 {

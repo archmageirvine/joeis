@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A338460 Decimal expansion of largest real root of e^(x-1) = Gamma(x+1).
+ * A338460 Decimal expansion of the largest real root of e^(x-1) = Gamma(x+1).
  * Equation; e^(x-1)-(Gamma(x+1))
  * @author Georg Fischer
  */

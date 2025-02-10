@@ -4,7 +4,7 @@ import irvine.oeis.a000.A000396;
 import irvine.oeis.transform.InverseMobiusTransformSequence;
 
 /**
- * A062819 Values of inverse Moebius transform of perfect numbers, A000396.
+ * A062819 Inverse Moebius transform of perfect numbers, A000396.
  * @author Sean A. Irvine
  */
 public class A062819 extends InverseMobiusTransformSequence {

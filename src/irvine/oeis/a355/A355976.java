@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A355976 Decimal expansion of 1 + log(2*Pi) - 2*gamma, where gamma is Euler&apos;s constant (A001620).
+ * A355976 Decimal expansion of 1 + log(2*Pi) - 2*gamma, where gamma is Euler's constant (A001620).
  * Formula:
  * @author Georg Fischer
  */

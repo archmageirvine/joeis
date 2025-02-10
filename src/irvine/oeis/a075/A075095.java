@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A075095.
+ * A075095 Number of simple graphs g on n nodes with |Aut(g)| = 2.
  * @author Sean A. Irvine
  */
 public class A075095 extends ParallelGenerateGraphsSequence {

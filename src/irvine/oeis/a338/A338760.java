@@ -4,7 +4,7 @@ package irvine.oeis.a338;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A338760 Subword complexity of a certain infinite word.
+ * A338760 Subword complexity of the infinite word Prod_{i&gt;=1} Prod_{j=1..i} a^(i-j+1) b^j.
  * @author Georg Fischer
  */
 public class A338760 extends HolonomicRecurrence {

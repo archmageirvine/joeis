@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000290;
 import irvine.oeis.a071.A071148;
 
 /**
- * A274120 Squares that are the sum of the first n odd primes for some n.
+ * A274120 Squares that are the sum of the first k odd primes for some k.
  * @author Georg Fischer
  */
 public class A274120 extends IntersectionSequence {

@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A246929 Prime(11*n).
+ * A246929 a(n) = prime(11*n).
  * @author Georg Fischer
  */
 public class A246929 extends LambdaSequence {

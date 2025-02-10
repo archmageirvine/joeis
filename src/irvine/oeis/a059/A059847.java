@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A059847 a(n)=2*p+2n-1, the smallest prime q such that p=[q-(2n-1)]/2 is prime. A special generalization of safe primes: 1 is replaced with 2n-1.
+ * A059847 a(n) = 2*p + 2*n - 1, where p is the least prime such that next_prime(2*p) - 2*p = 2*n - 1.
  * @author Sean A. Irvine
  */
 public class A059847 extends Sequence1 {

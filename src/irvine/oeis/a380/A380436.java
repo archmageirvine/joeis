@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075078.
+ * A380436 Integers with at least 1 proper factorization for which the sum of the squares of the factors is a square.
  * @author Sean A. Irvine
  */
 public class A380436 extends Sequence1 {

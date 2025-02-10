@@ -12,7 +12,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A075099.
+ * A075099 Minimal total number of multiplications needed to generate all words of length n in the free monoid on two generators.
  * @author Sean A. Irvine
  */
 public class A075099 extends Sequence1  {

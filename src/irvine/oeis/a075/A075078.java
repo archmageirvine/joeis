@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002808;
 
 /**
- * A075078.
+ * A075078 Composite numbers which do not arise as a sum of two neighboring terms of A075077.
  * @author Sean A. Irvine
  */
 public class A075078 extends A075077 {

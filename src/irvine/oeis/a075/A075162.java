@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a014.A014486;
 
 /**
- * A074598.
+ * A075162 Position of A014486(n) in A075165, minus one.
  * @author Sean A. Irvine
  */
 public class A075162 extends A014486 {

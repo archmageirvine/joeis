@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A074598.
+ * A075164 Position of A014486(n-1) in A075165.
  * @author Sean A. Irvine
  */
 public class A075164 extends SimpleTransformSequence {

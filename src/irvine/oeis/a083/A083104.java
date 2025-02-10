@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A083104 Second-order linear recurrence sequence with a(n) = a(n-1) + a(n-2).
+ * A083104 Second-order linear recurrence sequence with a(n) = a(n-1) + a(n-2), with initial terms 331635635998274737472200656430763, 1510028911088401971189590305498785.
  * @author Sean A. Irvine
  */
 public class A083104 extends LinearRecurrence {

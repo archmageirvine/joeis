@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A174647 Determinant of the matrix a(i,j) = 1 if Abs(i-j) &lt;2 and -1 in the rest.
+ * A174647 Determinant of the matrix a(i,j) = 1 if abs(i-j) &lt; 2 and -1 in the rest.
  * @author Georg Fischer
  */
 public class A174647 extends GeneratingFunctionSequence implements Conjectural {

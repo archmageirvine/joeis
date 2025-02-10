@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A173102 Number of partitions x + y = z with {x,y,z} in {1,2,3,..,3n} and z &gt; y &gt;= x.
+ * A173102 Number of partitions x + y = z with {x,y,z} in {1,2,3,..,3*n} and z &gt; y &gt;= x.
  * @author Georg Fischer
  */
 public class A173102 extends GeneratingFunctionSequence implements Conjectural {

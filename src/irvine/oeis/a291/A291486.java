@@ -6,7 +6,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A291486 Decimal expansion of Gamma&apos;&apos;&apos;&apos;(1).
+ * A291486 Decimal expansion of Gamma''''(1).
  * Formula:
  * @author Georg Fischer
  */

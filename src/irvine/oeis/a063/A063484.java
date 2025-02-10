@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063484 Omega(n+1) = 2*Omega(n), where Omega(n) is the number of prime divisors of n (with repetition).
+ * A063484 Numbers k such that Omega(k+1) = 2*Omega(k), where Omega(k) is the number of prime divisors of k (with repetition).
  * @author Sean A. Irvine
  */
 public class A063484 extends Sequence1 {

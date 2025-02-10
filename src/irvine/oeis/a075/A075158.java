@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A074598.
+ * A075158 Prime factorization of n+1 encoded with the run lengths of binary expansion.
  * @author Sean A. Irvine
  */
 public class A075158 extends Sequence0 {

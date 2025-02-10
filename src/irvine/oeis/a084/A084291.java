@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a001.A001223;
 
 /**
- * A084291 Difference between consecutive primes arising after difference (d=2) between twin primes. In A001223, terms following those which are equal to two.
+ * A084291 Difference between consecutive primes arising after difference (d=2) between twin primes. In A001223, terms succeeding those that equal 2.
  * @author Georg Fischer
  */
 public class A084291 extends FilterSequence {

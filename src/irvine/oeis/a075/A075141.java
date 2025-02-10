@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074598.
+ * A075141 Numerator of the generalized harmonic number H(n,5,3).
  * @author Sean A. Irvine
  */
 public class A075141 extends Sequence1 {

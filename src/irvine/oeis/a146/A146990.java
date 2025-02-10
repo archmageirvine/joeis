@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A146990 Triangle, read by rows, T(n, k) = binomial(n, k) for n &lt; 2 and binomial(n, k) + 2^(n-1) * binomial(n-2, k-1) otherwise.
+ * A146990 Triangle, read by rows, T(n, k) = binomial(n, k) for n &lt; 2 and binomial(n, k) + n^(n-1) * binomial(n-2, k-1) otherwise.
  * @author Georg Fischer
  */
 public class A146990 extends LambdaTriangle {

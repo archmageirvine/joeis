@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A242780 Decimal expansion of the maximum probability that the convex hull of four points, chosen at random inside a convex planar region, is a quadrilateral (Sylvester&apos;s four-point problem).
+ * A242780 Decimal expansion of the maximum probability that the convex hull of four points, chosen at random inside a convex planar region, is a quadrilateral (Sylvester's four-point problem).
  * Formula:
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075056 a(1) = 0, then smallest square such that a(n+1)- a(n) is a palindrome.
+ * A075056 a(1) = 0, then smallest square such that a(n+1) - a(n) is a palindrome.
  * @author Sean A. Irvine
  */
 public class A075056 extends Sequence1 {

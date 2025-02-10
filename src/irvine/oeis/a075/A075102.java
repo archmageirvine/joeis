@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073524.
+ * A075102 Number of steps to reach the first integer starting with 2^n/n and iterating the map x-&gt;x*ceiling(x), or -1 if no integer is ever reached.
  * @author Sean A. Irvine
  */
 public class A075102 extends Sequence1 {

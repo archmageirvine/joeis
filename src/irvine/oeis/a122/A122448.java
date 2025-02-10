@@ -5,7 +5,7 @@ package irvine.oeis.a122;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A122448 A lower diagonal of pendular trinomial triangle A122445.
+ * A122448 Diagonal elements A122445(n+1,n) of the pendular trinomial triangle A122445.
  * @author Georg Fischer
  */
 public class A122448 extends HolonomicRecurrence {

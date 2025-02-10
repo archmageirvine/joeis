@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074598.
+ * A075154 a(n) is the smallest multiple of n such that a(n) mod 100 = n and S(n)=n where S(n) is the sum of the base-ten digits of n, or 0 if no such a(n) exists.
  * @author Sean A. Irvine
  */
 public class A075154 extends Sequence1 {

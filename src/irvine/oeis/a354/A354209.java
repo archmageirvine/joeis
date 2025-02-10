@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A354209 Decimal expansion of Pi/gamma, where gamma is Euler&apos;s constant (or the Euler-Mascheroni constant).
+ * A354209 Decimal expansion of Pi/gamma, where gamma is Euler's constant (or the Euler-Mascheroni constant).
  * Formula:
  * @author Georg Fischer
  */

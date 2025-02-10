@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A108976 Numbers n such that 17*n + 19 is prime.
+ * A108976 Numbers k such that 17*k + 19 is prime.
  * @author Georg Fischer
  */
 public class A108976 extends PrimePositionSubsequence {

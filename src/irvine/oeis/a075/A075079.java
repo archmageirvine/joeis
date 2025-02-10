@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a001.A001597;
 
 /**
- * A075078.
+ * A075079 Numbers k in A001597 such that 2*k + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A075079 extends FilterSequence {

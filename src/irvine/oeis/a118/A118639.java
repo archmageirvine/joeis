@@ -4,7 +4,7 @@ package irvine.oeis.a118;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A118639 Smallest number expressible using the next Roman-numeral symbol.
+ * A118639 Smallest number expressible using the next Roman-numeral symbol under the vinculum system.
  * @author Georg Fischer
  */
 public class A118639 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A083105 Second-order linear recurrence sequence with a(n) = a(n-1) + a(n-2).
+ * A083105 Second-order linear recurrence sequence with a(n) = a(n-1) + a(n-2), with initial terms 62638280004239857, 49463435743205655.
  * @author Sean A. Irvine
  */
 public class A083105 extends LinearRecurrence {

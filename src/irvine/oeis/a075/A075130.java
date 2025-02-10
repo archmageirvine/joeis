@@ -11,7 +11,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A073524.
+ * A075130 Primes with decimal representation 140{{0}10{9}89}.
  * @author Sean A. Irvine
  */
 public class A075130 extends Sequence1 {

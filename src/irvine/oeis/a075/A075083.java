@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A075078.
+ * A075083 Largest composite number formed by permuting the digits of n, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A075083 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A001597 Perfect powers: m^k where m &gt; 0 and k &gt;= 2.
+ * A075090 Even perfect powers: numbers of the form (2*m)^k for some m&gt;=1 and k&gt;=2.
  * @author Sean A. Irvine
  */
 public class A075090 extends Sequence1 {

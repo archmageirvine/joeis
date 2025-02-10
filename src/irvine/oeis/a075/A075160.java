@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A074598.
+ * A075160 Prime factorization of n encoded with the run lengths of binary expansion + 1.
  * @author Sean A. Irvine
  */
 public class A075160 extends SimpleTransformSequence {

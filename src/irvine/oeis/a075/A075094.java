@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069567 Smaller of two consecutive primes which are anagrams of each other.
+ * A075094 Triangle of the sorted orders of graph automorphism groups for the simple graphs.
  * @author Sean A. Irvine
  */
 public class A075094 extends Sequence1 implements GraphProcessor {

@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A182409 Prime-generating polynomial: 4n^2 + 12n - 1583.
+ * A182409 Prime-generating polynomial: a(n) = 4*n^2 + 12*n - 1583.
  * @author Sean A. Irvine
  */
 public class A182409 extends LinearRecurrence {

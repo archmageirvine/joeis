@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073524.
+ * A075126 Number of bargraphs of site-perimeter n.
  * @author Sean A. Irvine
  */
 public class A075126 extends Sequence1 {

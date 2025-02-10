@@ -4,7 +4,7 @@ package irvine.oeis.a274;
 import irvine.oeis.a257.A257638;
 
 /**
- * A274042 Numbers n such that n - 53, n - 1, n + 1, n + 53 are consecutive primes.
+ * A274042 Numbers k such that k - 53, k - 1, k + 1, k + 53 are consecutive primes.
  * @author Georg Fischer
  */
 public class A274042 extends A257638 {

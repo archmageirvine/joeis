@@ -7,7 +7,7 @@ import irvine.oeis.a082.A082851;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A074598.
+ * A380373 Decimal expansion of Sum_{i&gt;=1} 1/2^A082851(i).
  * @author Sean A. Irvine
  */
 public class A380373 extends DecimalExpansionSequence {

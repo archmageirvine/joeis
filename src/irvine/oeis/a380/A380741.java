@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A074598.
+ * A380741 Decimal expansion of Sum_{k&gt;=1} prime(k)/2^(k!).
  * @author Sean A. Irvine
  */
 public class A380741 extends DecimalExpansionSequence {

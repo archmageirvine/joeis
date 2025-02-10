@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000217;
 import irvine.util.array.DynamicArray;
 
 /**
- * A075078.
+ * A075088 Smallest triangular number with n prime factors (counted with multiplicity).
  * @author Sean A. Irvine
  */
 public class A075088 extends Sequence0 {

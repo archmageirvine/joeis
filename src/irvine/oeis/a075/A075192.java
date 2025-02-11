@@ -8,15 +8,15 @@ import irvine.oeis.Sequence1;
  * A075169.
  * @author Sean A. Irvine
  */
-public class A075190 extends Sequence1 {
+public class A075192 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
-  private long mN = 1;
+  private long mN = 2;
 
   @Override
   public Z next() {
     while (true) {
-      final Z k = Z.valueOf(++mN).square();
+      final Z k = Z.valueOf(++mN).pow(4);
       if (mPrime.prevPrime(k).add(mPrime.nextPrime(k)).equals(k.multiply2())) {
         return Z.valueOf(mN);
       }

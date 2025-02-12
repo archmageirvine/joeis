@@ -1,9 +1,10 @@
 package irvine.oeis.a075;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
-import irvine.math.q.Q;
+import irvine.math.function.Functions;
+import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
@@ -13,27 +14,41 @@ import irvine.oeis.Sequence2;
  */
 public class A075226 extends Sequence2 {
 
-  private final Set<Q> mSums = new HashSet<>();
-  {
-    mSums.add(Q.ZERO);
-    mSums.add(Q.ONE);
+  // After Chai Wah Wu
+
+  private int mN = 1;
+  private Z mLcm = Z.ONE;
+
+  private Z sumList(final List<Z> lst, final int pos) {
+    return Integers.SINGLETON.sum(0, pos - 1, lst::get);
   }
-  private Z mLargestPrime = Z.ZERO;
-  private long mN = 1;
 
   @Override
   public Z next() {
-    final Q t = new Q(1, ++mN);
-    final Set<Q> s = new HashSet<>();
-    for (final Q sum : mSums) {
-      final Q v = sum.add(t);
-      final Z num = v.num();
-      if (num.compareTo(mLargestPrime) > 0 && num.isProbablePrime()) {
-        mLargestPrime = num;
-      }
-      s.add(v);
+    mLcm = mLcm.lcm(++mN);
+    Z c = Z.ZERO;
+    final List<Z> mlist = new ArrayList<>();
+    for (int k = 1; k <= mN; ++k) {
+      mlist.add(mLcm.divide(k));
     }
-    mSums.addAll(s);
-    return mLargestPrime;
+    final Z lim = Z.ONE.shiftLeft(mN);
+    for (int l = mN; l >= 0; --l) {
+      if (sumList(mlist, l).compareTo(c) < 0) {
+        break;
+      }
+      for (Z p = Z.ONE.shiftLeft(l).subtract(1); p.compareTo(lim) < 0; p = Functions.SWIZZLE.z(p)) {
+        Z s = Z.ZERO;
+        for (int k = 0; k < mN; ++k) {
+          if (p.testBit(k)) {
+            s = s.add(mlist.get(k));
+          }
+        }
+        s = s.divide(Functions.GCD.z(s, mLcm));
+        if (s.compareTo(c) > 0 && s.isProbablePrime()) {
+          c = s;
+        }
+      }
+    }
+    return c;
   }
 }

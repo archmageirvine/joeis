@@ -24,8 +24,9 @@ public class A075245 extends Sequence3 {
     Q c = Q.ONE;
     long a = 0;
     long b = 0;
+    final Q r = new Q(4, mN);
     for (long x = 1 + mN / 4; x < (3 * mN + 3) / 4; ++x) {
-      final Q t = new Q(4, mN).subtract(new Q(1, x));
+      final Q t = r.subtract(new Q(1, x));
       final long lim = Q.TWO.divide(t).toZ().longValueExact();
       for (long y = Math.max(t.reciprocal().toZ().longValueExact(), x) + 1; y < lim; ++y) {
         if (t.subtract(new Q(1, y)).compareTo(c) >= 0) {

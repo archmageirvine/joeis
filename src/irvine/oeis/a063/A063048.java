@@ -15,18 +15,28 @@ public class A063048 extends Sequence1 {
 
   // NOTE This sequence is inherently heuristic
 
-  private Z mN = Z.valueOf(195);
+  private Z mN = Z.NINE;
   private final HashSet<Z> mSeen = new HashSet<>();
+  private final long mBase;
+
+  protected A063048(final long base) {
+    mBase = base;
+  }
+
+  /** Construct the sequence. */
+  public A063048() {
+    this(10);
+  }
 
   private boolean is(Z n, final int limit) {
     for (int k = 0; k < limit; ++k) {
       if (!mSeen.add(n)) {
         return true;
       }
-      if (Predicates.PALINDROME.is(10, n)) {
+      if (Predicates.PALINDROME.is(mBase, n)) {
         return true;
       }
-      n = n.add(Functions.REVERSE.z(n));
+      n = n.add(Functions.REVERSE.z(mBase, n));
     }
     return false;
   }

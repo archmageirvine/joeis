@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A075169.
+ * A075240 Smallest prime whose base-n reversal is not a prime.
  * @author Sean A. Irvine
  */
 public class A075240 extends Sequence2 {

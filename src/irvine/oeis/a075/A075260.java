@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A073101 Number of integer solutions (x,y,z) to 4/n = 1/x + 1/y + 1/z satisfying 0 &lt; x &lt; y &lt; z.
+ * A075260 x-value of the solution (x,y,z) to 3/(2n+1) = 1/x + 1/y + 1/z satisfying 0 &lt; x &lt; y &lt; z, odd x, y, z and having the largest z-value. The y and z components are in A075261 and A075262.
  * @author Sean A. Irvine
  */
 public class A075260 extends Sequence2 {

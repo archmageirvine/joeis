@@ -4,7 +4,7 @@ package irvine.oeis.a294;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A294784 E.g.f. A(x) satisfies: A&apos;(x)  = (1 + A(x)^2)^2/4.
+ * A294784 E.g.f. A(x) satisfies: A'(x)  = (1 + A(x)^2)^2/4.
  * 1+int((1+A(x)^2)^2/4)
  * @author Georg Fischer
  */

@@ -4,7 +4,7 @@ package irvine.oeis.a360;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A360579 Expansion of A(x) satisfying A(x) = Series_Reversion( x - x^3 * A&apos;(x)/A(x) ).
+ * A360579 Expansion of A(x) satisfying A(x) = Series_Reversion( x - x^3 * A'(x)/A(x) ).
  * rev(x-x^3*dif(A(x))/A(x))
  * @author Georg Fischer
  */

@@ -4,7 +4,7 @@ package irvine.oeis.a338;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A338163 O.g.f. A(x) satisfies: A(x) = 1 + Integral (x/A(x)^5)&apos; / (x/A(x)^9)&apos; dx.
+ * A338163 O.g.f. A(x) satisfies: A(x) = 1 + Integral (x/A(x)^5)' / (x/A(x)^9)' dx.
  * O.g.f.A(x) satisfies: A(x) = 1 + Integral (x/A(x)^5)' / (x/A(x)^9)' dx.
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075169.
+ * A075234 Least k such that k^n is the smallest interprime which is an n-th power.
  * @author Sean A. Irvine
  */
 public class A075234 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A173277 A(x) satisfies A000290(x)/x^2 = A(x)/A(x^2); A000290 = integer squares
+ * A173277 A(x) satisfies A000290(x)/x^2 = A(x)/A(x^2); A000290 = integer squares.
  * (1+x)*A(x^2)/(x*(1-x)^3)
  * @author Georg Fischer
  */

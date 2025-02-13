@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A073101 Number of integer solutions (x,y,z) to 4/n = 1/x + 1/y + 1/z satisfying 0 &lt; x &lt; y &lt; z.
+ * A075248 Number of solutions (x,y,z) to 5/n = 1/x + 1/y + 1/z satisfying 0 &lt; x &lt; y &lt; z.
  * @author Sean A. Irvine
  */
 public class A075248 extends Sequence2 {

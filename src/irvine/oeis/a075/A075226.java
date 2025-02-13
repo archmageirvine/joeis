@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A075169.
+ * A075226 Largest prime in the numerator of the 2^n sums generated from the set 1, 1/2, 1/3,..., 1/n.
  * @author Sean A. Irvine
  */
 public class A075226 extends Sequence2 {

@@ -4,7 +4,7 @@ package irvine.oeis.a259;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A259607 G.f. satisfies: A(x) = 1+x + x^2 * A&apos;(x)^2 / A(x)^2.
+ * A259607 G.f. satisfies: A(x) = 1+x + x^2 * A'(x)^2 / A(x)^2.
  * 1+x+x^2*dif(A(x))^2/A(x)^2
  * @author Georg Fischer
  */

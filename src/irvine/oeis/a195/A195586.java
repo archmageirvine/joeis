@@ -4,7 +4,7 @@ package irvine.oeis.a195;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A195586 G.f.: exp( Sum_{n&gt;=1} A163659(n^2)*x^n/n ), where x*exp(Sum_{n&gt;=1} A163659(n)*x^n/n) = S(x) is the g.f. of Stern&apos;s diatomic series (A002487).
+ * A195586 G.f.: exp( Sum_{n&gt;=1} A163659(n^2)*x^n/n ), where x*exp(Sum_{n&gt;=1} A163659(n)*x^n/n) = S(x) is the g.f. of Stern's diatomic series (A002487).
  * (1+x+x^2)*(1+x^2+x^4)*A(x^2)^2
  * @author Georg Fischer
  */

@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A228927 G.f. A(x) satisfies: A(x)^16 = A(x^2)^8 + 16*x.
+ * A228927  G.f. A(x) satisfies: A(x)^16 = A(x^2)^8 + 16*x.
  * A(x^2)^8+16*x
  * @author Georg Fischer
  */

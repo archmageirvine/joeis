@@ -4,7 +4,7 @@ package irvine.oeis.a356;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A356780 Coefficients in the odd function A(x) such that: A(x) = A( x^2 + 2*x^2*A(x)^2 )^(1/2), with A(0)=0, A&apos;(0)=1.
+ * A356780 Coefficients in the odd function A(x) such that: A(x) = A( x^2 + 2*x^2*A(x)^2 )^(1/2), with A(0)=0, A'(0)=1.
  * sqrt(A(x^2+2*x^2*A(x)^2))
  * @author Georg Fischer
  */

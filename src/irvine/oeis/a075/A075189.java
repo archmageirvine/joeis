@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075169.
+ * A075189 Number of distinct primes in the numerator of the 2^n sums generated from the set 1, 1/2, 1/3, ..., 1/n.
  * @author Sean A. Irvine
  */
 public class A075189 extends Sequence1 {

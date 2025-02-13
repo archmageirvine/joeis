@@ -4,7 +4,7 @@ package irvine.oeis.a161;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A161967 E.g.f. satisfies: A(x) = exp( x*exp( x*A&apos;(x)/A(x) ) ), where A&apos;(x)/A(x) = d/dx log(A(x)).
+ * A161967 E.g.f. satisfies: A(x) = exp( x*exp( x*A'(x)/A(x) ) ), where A'(x)/A(x) = d/dx log(A(x)).
  * exp(x*exp(x*dif(A(x))/A(x)))
  * @author Georg Fischer
  */

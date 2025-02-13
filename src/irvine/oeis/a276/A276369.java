@@ -4,7 +4,7 @@ package irvine.oeis.a276;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A276369 G.f. A(x) satisfies: A(x - x*A&apos;(x)) = x^2.
+ * A276369 G.f. A(x) satisfies: A(x - x*A'(x)) = x^2.
  * rev(x-x*dif(A(x)))^2
  * @author Georg Fischer
  */

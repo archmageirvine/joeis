@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000010;
 
 /**
- * A066669 Numbers n such that phi(n) = 2^k*prime for some k &gt;= 0.
+ * A066669 Numbers m such that phi(m) = 2^k*prime for some k &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A066669 extends FilterPositionSequence {

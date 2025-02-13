@@ -4,7 +4,7 @@ package irvine.oeis.a210;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A210949 E.g.f. A(x) satisfies: A&apos;(x) = 1/(1 - A(A(x))).
+ * A210949 E.g.f. A(x) satisfies: A'(x) = 1/(1 - A(A(x))).
  * rev(int(1-A(x)))
  * @author Georg Fischer
  */

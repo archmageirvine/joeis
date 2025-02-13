@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.math.z.Z;
 
 /**
- * A034267 a(n)=f(n,n) where f is given in A034261.
+ * A034267 a(n) = f(n,n) where f is given in A034261.
  * @author Sean A. Irvine
  */
 public class A034267 extends A034261 {

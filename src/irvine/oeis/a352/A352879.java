@@ -4,7 +4,7 @@ package irvine.oeis.a352;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A352879 a(0) = 1; a(n) = Sum_{k=0..floor((n-1)/3)} binomial(n, 3*k+1) * a(k).
+ * A352879 a(0) = 1; a(n) = Sum_{k=0..floor((n-1)/3)} binomial(n,3*k+1) * a(k).
  * 1+x*A(x^3/(1-x)^3)/(1-x)^2
  * @author Georg Fischer
  */

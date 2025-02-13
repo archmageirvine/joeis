@@ -4,7 +4,7 @@ package irvine.oeis.a200;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A200475 G.f. satisfies: A(x) = exp( Sum_{n&gt;=1} [Sum_{k=0..2*n} A027907(n,k)^2 * x^k * A(x)^(2*k)] * x^n*A(x)^n/n ), where A027907 is the triangle of trinomial coefficients.
+ * A200475  G.f. satisfies: A(x) = exp( Sum_{n&gt;=1} [Sum_{k=0..2*n} A027907(n,k)^2 * x^k * A(x)^(2*k)] * x^n*A(x)^n/n ), where A027907 is the triangle of trinomial coefficients.
  * (1+x^3*A(x)^6)*(1+x^6*A(x)^12)/((1-x*A(x)^2)*(1-x^4*A(x)^8))
  * @author Georg Fischer
  */

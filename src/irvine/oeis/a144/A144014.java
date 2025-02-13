@@ -4,7 +4,7 @@ package irvine.oeis.a144;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A144014 E.g.f. satisfies: A&apos;(x) = 1 + x*A(x)^4 where A(0) = 1.
+ * A144014 E.g.f. satisfies: A'(x) = 1 + x*A(x)^4 where A(0) = 1.
  * 1+int((1+x*A(x)^4))
  * @author Georg Fischer
  */

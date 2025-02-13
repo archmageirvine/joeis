@@ -4,7 +4,7 @@ package irvine.oeis.a356;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A356781 Expansion of g.f. A(x) satisfying A(x) = A( x^2 + 2*x^2*A(x) )^(1/2), with A(0)=0, A&apos;(0)=1.
+ * A356781 Expansion of g.f. A(x) satisfying A(x) = A( x^2 + 2*x^2*A(x) )^(1/2), with A(0)=0, A'(0)=1.
  * sqrt(A(x^2+2*x^2*A(x)))
  * @author Georg Fischer
  */

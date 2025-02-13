@@ -4,7 +4,7 @@ package irvine.oeis.a193;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A193037 G.f. A(x) satisfies: x = Sum_{n&gt;=1} x^n*A(-x)^A022998(n), where A022998 is defined as &quot;if n is odd then n else 2*n.&quot;.
+ * A193037 G.f. A(x) satisfies: x = Sum_{n&gt;=1} x^n*A(-x)^A022998(n), where A022998 is defined as "if n is odd then n else 2*n.".
  * 1-x^2*A(x)^2+x*(1-x)*A(x)^4+x^2*A(x)^5-x^3*(1-x)*A(x)^6
  * @author Georg Fischer
  */

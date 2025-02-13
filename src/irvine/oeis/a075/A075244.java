@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075169.
+ * A075244 Least number requiring the base n to produce a prime by base reversal.
  * @author Sean A. Irvine
  */
 public class A075244 extends Sequence1 {

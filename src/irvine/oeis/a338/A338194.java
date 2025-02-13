@@ -4,7 +4,7 @@ package irvine.oeis.a338;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A338194 E.g.f. A(x) satisfies:  A(x) = 1 + Integral (x/A(x))&apos; / (x/A(x)^3)&apos; dx.
+ * A338194 E.g.f. A(x) satisfies:  A(x) = 1 + Integral (x/A(x))' / (x/A(x)^3)' dx.
  * 1+int((x/A(x))'/(x/A(x)^3)')
  * @author Georg Fischer
  */

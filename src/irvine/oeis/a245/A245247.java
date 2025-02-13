@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A245247 E.g.f. satisfies: A&apos;(x) = (1 + x*A(x))^5 with A(0)=1.
+ * A245247 E.g.f. satisfies: A'(x) = (1 + x*A(x))^5 with A(0)=1.
  * 1+int((1+x*A(x))^5)
  * @author Georg Fischer
  */

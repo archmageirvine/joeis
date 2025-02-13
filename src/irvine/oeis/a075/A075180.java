@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A075169.
+ * A075180 Denominators from e.g.f. 1/(1-exp(-x)) - 1/x.
  * @author Sean A. Irvine
  */
 public class A075180 extends Sequence0 {

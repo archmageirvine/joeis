@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069900 Integer quotient of largest and smallest prime factors of n is greater than one.
+ * A069900 Numbers k such that the integer quotient of largest and smallest prime factors of k is greater than one.
  * @author Sean A. Irvine
  */
 public class A069900 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A302705 O.g.f. A(x) satisfies:  A(x) = 1 + Integral (x*A(x)^4)&apos; / (x*A(x))&apos; dx.
+ * A302705 O.g.f. A(x) satisfies:  A(x) = 1 + Integral (x*A(x)^4)' / (x*A(x))' dx.
  * 1+int(A(x)*(sqrt(1-4*x*A(x)^2+16*x^2*A(x)^4)-1+4*x*A(x)^2)/(2*x))
  * @author Georg Fischer
  */

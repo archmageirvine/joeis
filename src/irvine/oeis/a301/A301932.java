@@ -4,7 +4,7 @@ package irvine.oeis.a301;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A301932 G.f. A(x) satisfies: A(x) = x*(1 + 3*A(x)*A&apos;(x)) / (1 + A(x)*A&apos;(x)).
+ * A301932 G.f. A(x) satisfies: A(x) = x*(1 + 3*A(x)*A'(x)) / (1 + A(x)*A'(x)).
  * x*(1+3*A(x)*dif(A(x)))/(1+A(x)*dif(A(x)))
  * @author Georg Fischer
  */

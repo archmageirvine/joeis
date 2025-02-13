@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075169.
+ * A075173 Prime factorization of n encoded by interleaving successive prime exponents in unary to bit-positions given by columns of A075300.
  * @author Sean A. Irvine
  */
 public class A075173 extends Sequence1 {

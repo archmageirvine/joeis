@@ -4,7 +4,7 @@ package irvine.oeis.a158;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A158883 G.f. satisfies: [x^n] A(x)^(n+1) = [x^n] A(x)^n for n&gt;1 with A(0)=A&apos;(0)=1.
+ * A158883 G.f. satisfies: [x^n] A(x)^(n+1) = [x^n] A(x)^n for n&gt;1 with A(0)=A'(0)=1.
  * A(x) = 1 + x*(d/dx)(x/A(x))
  * @author Georg Fischer
  */

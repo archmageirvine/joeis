@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A173895 E.g.f. satisfies: A&apos;(x) = 1/(1 + x*A(x)) with A(0) = 1.
+ * A173895 E.g.f. satisfies: A'(x) = 1/(1 + x*A(x)) with A(0) = 1.
  * 1+int(1/(1+x*A(x)))
  * @author Georg Fischer
  */

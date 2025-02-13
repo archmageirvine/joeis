@@ -4,7 +4,7 @@ package irvine.oeis.a231;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A231868 E.g.f. satisfies: A&apos;(x) = A(x*A(x)) with A(0)=1.
+ * A231868 E.g.f. satisfies: A'(x) = A(x*A(x)) with A(0)=1.
  * 1+int((A(x*A(x))))
  * @author Georg Fischer
  */

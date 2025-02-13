@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A075169.
+ * A075241 Least base for which the n-th prime has no prime reversal in that base.
  * @author Sean A. Irvine
  */
 public class A075241 extends A000040 {

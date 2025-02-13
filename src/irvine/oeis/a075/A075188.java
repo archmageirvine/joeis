@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075169.
+ * A075188 Number of times that the numerator of a sum generated from the set 1, 1/2, 1/3,..., 1/n is prime.
  * @author Sean A. Irvine
  */
 public class A075188 extends Sequence1 {

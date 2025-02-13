@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A261066 (7^(2^n) - 1) / 2^(n+2).
+ * A261066 a(n) = (7^(2^n) - 1) / 2^(n+2).
  * a(n)=(7^(2^n)-1)/2^(n+2)
  * @author Georg Fischer
  */

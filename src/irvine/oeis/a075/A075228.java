@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075169.
+ * A075228 Numbers k such that k^5 is an interprime = average of two successive primes.
  * @author Sean A. Irvine
  */
 public class A075228 extends Sequence1 {

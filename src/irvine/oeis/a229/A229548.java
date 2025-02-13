@@ -4,7 +4,7 @@ package irvine.oeis.a229;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A229548 E.g.f. satisfies: A(x) = x + A&apos;(x) * Integral A(x) dx.
+ * A229548 E.g.f. satisfies: A(x) = x + A'(x) * Integral A(x) dx.
  * x+dif(A(x))*int(A(x))
  * @author Georg Fischer
  */

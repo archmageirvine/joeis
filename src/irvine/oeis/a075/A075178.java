@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A075169.
+ * A075178 Denominators of expansion of 1/x+1/log(1-x).
  * @author Sean A. Irvine
  */
 public class A075178 extends Sequence0 {

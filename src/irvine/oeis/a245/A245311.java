@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A245311 G.f. satisfies: A(x) = 1 + x*A(x) + x^2*A(x)^2 + x^3*A(x)*A&apos;(x).
+ * A245311 G.f. satisfies: A(x) = 1 + x*A(x) + x^2*A(x)^2 + x^3*A(x)*A'(x).
  * 1+x*A(x)+x^2*A(x)^2+x^3*A(x)*dif(A(x))
  * @author Georg Fischer
  */

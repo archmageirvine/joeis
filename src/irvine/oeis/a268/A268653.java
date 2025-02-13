@@ -4,7 +4,7 @@ package irvine.oeis.a268;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A268653 E.g.f.: exp( T(T(T(x))) ), where T(x) = -LambertW(-x) is Euler&apos;s tree function (A000169).
+ * A268653 E.g.f.: exp( T(T(T(x))) ), where T(x) = -LambertW(-x) is Euler's tree function (A000169).
  * exp(-A(x)*lambertW(lambertW(-x)))
  * @author Georg Fischer
  */

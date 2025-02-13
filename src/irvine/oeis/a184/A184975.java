@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A184975 E.g.f. exp((1-sqrt(1-4*log(1+x)))/2).
+ * A184975 Expansion of e.g.f. exp((1-sqrt(1-4*log(1+x)))/2).
  * E.g.f.: exp((1-sqrt(1-4*log(1+x)))/2)
  * @author Georg Fischer
  */

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A075169.
+ * A075179 One half of A075178.
  * @author Sean A. Irvine
  */
 public class A075179 extends SimpleTransformSequence {

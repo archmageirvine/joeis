@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A075169.
+ * A075174 Inverse function of N -&gt; N injection A075173.
  * @author Sean A. Irvine
  */
 public class A075174 extends Sequence0 {

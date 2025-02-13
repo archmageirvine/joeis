@@ -4,7 +4,7 @@ package irvine.oeis.a208;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A208961 G.f. satisfies: A(x) = 1 + x*[d/dx x/A(x)^2]
+ * A208961 G.f. satisfies: A(x) = 1 + x*[d/dx x/A(x)^2].
  * A(x) = 1 + x*[d/dx x/A(x)^2]
  * @author Georg Fischer
  */

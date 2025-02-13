@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A075169.
+ * A075243 Composite numbers requiring increasingly larger bases to become prime by base reversal.
  * @author Sean A. Irvine
  */
 public class A075243 extends A002808 {

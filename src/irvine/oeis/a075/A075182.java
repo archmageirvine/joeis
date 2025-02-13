@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.math.z.Z;
 
 /**
- * A075169.
+ * A075182 Greatest common divisors of rows of triangle A075181 and of (unsigned) triangle A048594.
  * @author Sean A. Irvine
  */
 public class A075182 extends A075181 {

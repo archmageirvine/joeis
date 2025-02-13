@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075169.
+ * A075256 List of pairs of numbers (a &lt; b) in the sequence {a,b}-&gt; {Max[{a,b}]-Min[{a,b}],k*Min[{a,b}]} with k=3 and the first pair {a=1,b=2}.
  * @author Sean A. Irvine
  */
 public class A075256 extends Sequence1 {

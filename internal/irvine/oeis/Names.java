@@ -30,6 +30,7 @@ public final class Names {
       .replace("<", "&lt;")
       .replace(">", "&gt;")
       .replace("*/", "* /")
+      .replace("\t", " ") // There really was a sequence name with a tab at one point
       ;
     final StringBuilder sb = new StringBuilder();
     for (int k = 0; k < s.length(); ++k) {

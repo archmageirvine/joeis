@@ -4,7 +4,7 @@ package irvine.oeis.a294;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A294638 E.g.f. satisfies: A&apos;(x) = A(x) * A(x^2).
+ * A294638 E.g.f. satisfies: A'(x) = A(x) * A(x^2).
  * exp(int(A(x^2)))
  * @author Georg Fischer
  */

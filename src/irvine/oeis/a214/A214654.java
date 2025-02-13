@@ -4,7 +4,7 @@ package irvine.oeis.a214;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A214654 E.g.f. A(x) satisfies: A&apos;(x) = exp( A(x)*A&apos;(x) ).
+ * A214654 E.g.f. A(x) satisfies: A'(x) = exp( A(x)*A'(x) ).
  * rev(int(-x/lambertW(-x)))
  * @author Georg Fischer
  */

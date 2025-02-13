@@ -300,7 +300,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
             mStack.set(top, RING.diff(mStack.get(top)));
             break;
           case "int": // "int", replace the current top element by its formal integral
-            mStack.set(top, RING.integrate(mStack.get(top)));
+            mStack.set(top, RING.integrate(mStack.get(top)).truncate(m));
             break;
 
           case "inv": // "inv", replace the current top element te by 1/te
@@ -346,7 +346,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
             break;
           case "*":
             --top;
-            mStack.set(top, RING.multiply(mStack.get(top), mStack.get(top + 1))); // , m);
+            mStack.set(top, RING.multiply(mStack.get(top), mStack.get(top + 1), m + 1));
             break;
           case "/":
             --top;
@@ -361,7 +361,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
       }
     } // while
     // mTop should be 0 here
-    mA = mStack.get(top);
+    mA = mStack.get(top).truncate(mN + mDist);
     Q result = mA.coeff(mN);
     if (mGfType == EGF) {
       if (mN > 0) {

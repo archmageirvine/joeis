@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Map;
 
-import irvine.factor.factor.Jaguar;
-import irvine.math.MemoryFunction1;
 import irvine.math.api.Field;
 import irvine.math.api.Group;
 import irvine.math.api.Matrix;
@@ -830,18 +828,4 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
     }
     return matrixField.det(m);
   }
-
-  private final MemoryFunction1<Polynomial<E>> mCyclotomicPolynomials = new MemoryFunction1<>() {
-    @Override
-    protected Polynomial<E> compute(final int n) {
-      Polynomial<E> den = one();
-      for (final Z dd : Jaguar.factor(n).divisors()) {
-        final int d = dd.intValue();
-        if (d < n) {
-          den = multiply(den, get(d));
-        }
-      }
-      return divide(negate(oneMinusXToTheN(n)), den);
-    }
-  };
 }

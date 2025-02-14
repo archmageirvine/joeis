@@ -4,7 +4,7 @@ package irvine.oeis.a232;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A232694 E.g.f. A(x) satisfies: A&apos;(x) = A(x*A&apos;(x)^4) with A(0)=1.
+ * A232694 E.g.f. A(x) satisfies: A'(x) = A(x*A'(x)^4) with A(0)=1.
  * difA(x/A(x)^4)
  * @author Georg Fischer
  */

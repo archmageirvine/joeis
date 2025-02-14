@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000290;
 import irvine.oeis.a000.A000326;
 
 /**
- * A186290 Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f and g are the squares and pentagonal numbers.  Complement of A186291.
+ * A186290 Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f and g are the squares and pentagonal numbers. Complement of A186291.
  * @author Georg Fischer
  */
 public class A186290 extends RankSequence {

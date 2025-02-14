@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000254;
 import irvine.oeis.transform.BinomialTransformSequence;
 
 /**
- * A073596 Expansion of exp(x)*log(1-x)/(x-1).
+ * A073596 Expansion of e.g.f. exp(x) * log(1-x)/(x-1).
  * @author Georg Fischer
  */
 public class A073596 extends BinomialTransformSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a231;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A231899 E.g.f. A(x) satisfies: A&apos;(x) = A(x*A&apos;(x)^3) with A(0)=1.
+ * A231899 E.g.f. A(x) satisfies: A'(x) = A(x*A'(x)^3) with A(0)=1.
  * difA(x/A(x)^3)
  * @author Georg Fischer
  */

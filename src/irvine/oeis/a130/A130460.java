@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A130460 Infinite lower triangular matrix,(1, 0, 0, 0,...) in the main diagonal and (1, 2, 3,...) in the subdiagonal.
+ * A130460 Infinite lower triangular matrix,(1,0,0,0,...) in the main diagonal and (1,2,3,...) in the subdiagonal.
  * @author Georg Fischer
  */
 public class A130460 extends LambdaTriangle {

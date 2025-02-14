@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a066.A066499;
 
 /**
- * A097987 Numbers k such that 4 does not divide phi(k), where phi is Euler&apos;s totient function (A000010).
+ * A097987 Numbers k such that 4 does not divide phi(k), where phi is Euler's totient function (A000010).
  * @author Georg Fischer
  */
 public class A097987 extends PrependSequence {

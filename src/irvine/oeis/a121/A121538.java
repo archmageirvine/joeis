@@ -5,7 +5,7 @@ import irvine.oeis.a053.A053661;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A121538 Increasing sequence: &quot;if n appears then a*n+b doesn&apos;t&quot;, case a(1)=1, a=2, b=1.
+ * A121538 Increasing sequence: "if n appears then a*n+b doesn't", case a(1)=1, a=2, b=1.
  * @author Georg Fischer
  */
 public class A121538 extends SingleTransformSequence {

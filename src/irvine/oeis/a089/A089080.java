@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a085.A085058;
 
 /**
- * A089080 Sequence is S(infinity) where S(1)={1, 2} and S(n)=S(n-1)S&apos;(n-1), where S&apos;(k) is obtained from S(k) by replacing the single 1 with the least integer not occurring in S(k).
+ * A089080 Sequence is S(infinity) where S(1)={1,2} and S(n)=S(n-1)S'(n-1), where S'(k) is obtained from S(k) by replacing the single 1 with the least integer not occurring in S(k).
  * @author Georg Fischer
  */
 public class A089080 extends PrependSequence {

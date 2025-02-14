@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000290;
 import irvine.oeis.a100.A100536;
 
 /**
- * A186540 Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=i^2 and g(j)=-2+3j^2.  Complement of A186539.
+ * A186540 Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=i^2 and g(j)=-2+3j^2. Complement of A186539.
  * @author Georg Fischer
  */
 public class A186540 extends RankSequence {

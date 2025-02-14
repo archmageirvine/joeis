@@ -4,7 +4,7 @@ package irvine.oeis.a232;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A232686 E.g.f. A(x) satisfies: A&apos;(x) = A(x*A&apos;(x))^2.
+ * A232686 E.g.f. A(x) satisfies: A'(x) = A(x*A'(x))^2.
  * @author Georg Fischer
  */
 public class A232686 extends PolynomialFieldSequence {

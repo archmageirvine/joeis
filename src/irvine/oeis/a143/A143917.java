@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A143917 G.f. A(x) satisfies: A(x) = 1/(1-x) + x^2*A(x)*A&apos;(x).
+ * A143917 G.f. A(x) satisfies: A(x) = 1/(1-x) + x^2*A(x)*A'(x).
  * 1/(1-x)+x^2*A(x)*dif(A(x))
  * @author Georg Fischer
  */

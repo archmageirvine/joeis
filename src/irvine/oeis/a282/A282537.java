@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a053.A053267;
 
 /**
- * A282537 Coefficients of the &apos;5th-order&apos; mock theta function Psi(q) with a(0)=1.
+ * A282537 Coefficients of the '5th-order' mock theta function Psi(q) with a(0)=1.
  * @author Georg Fischer
  */
 public class A282537 extends PrependSequence {

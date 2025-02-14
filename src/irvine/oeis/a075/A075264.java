@@ -11,13 +11,12 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a053.A053657;
 
 /**
- * A075263.
+ * A075264 Triangle of numerators of coefficients, where the n-th row forms the polynomial in z, P(n,z), that is the coefficient of x^n in {-log(1-x)/x}^z, for n &gt; 0. The denominator for all the terms in the n-th row is A053657(n).
  * @author Sean A. Irvine
  */
 public class A075264 extends Sequence1 {
 
-  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private static final Polynomial<Q> NEG_X = RING.negate(RING.x());
+  private static final Polynomial<Q> NEG_X = Polynomial.create(Q.ZERO, Q.NEG_ONE);
   private final DirectSequence mD = DirectSequence.create(new A053657());
   private int mN = 0;
   private int mM = 0;

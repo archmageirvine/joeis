@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a028.A028914;
 
 /**
- * A204539 a(n) is the number of integers N=4k whose &quot;basin&quot; sequence (cf. comment) ends in n^2.
+ * A204539 a(n) is the number of integers N=4k whose "basin" sequence (cf. comment) ends in n^2.
  * @author Georg Fischer
  */
 public class A204539 extends PrependSequence {

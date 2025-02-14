@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A121448 Triangle read by rows: T(n,k) is the number of binary trees with n edges and having k vertices of outdegree 1 (n&gt;=0, k&gt;=0). A binary tree is a rooted tree in which each vertex has at most two children and each child of a vertex is designated as its left or
+ * A121448 Triangle read by rows: T(n,k) is the number of binary trees with n edges and having k vertices of outdegree 1 (n&gt;=0, k&gt;=0). A binary tree is a rooted tree in which each vertex has at most two children and each child of a vertex is designated as its left or right child.
  * @author Georg Fischer
  */
 public class A121448 extends LambdaTriangle {

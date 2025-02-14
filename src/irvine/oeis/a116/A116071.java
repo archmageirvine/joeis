@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A116071 Triangle T, read by rows, equal to Pascal&apos;s triangle to the matrix power of Pascal&apos;s triangle, so that T = C^C, where C(n,k) = binomial(n,k) and T(n,k) = A000248(n-k)*C(n,k).
+ * A116071 Triangle T, read by rows, equal to Pascal's triangle to the matrix power of Pascal's triangle, so that T = C^C, where C(n,k) = binomial(n,k) and T(n,k) = A000248(n-k)*C(n,k).
  * @author Georg Fischer
  */
 public class A116071 extends LambdaTriangle {

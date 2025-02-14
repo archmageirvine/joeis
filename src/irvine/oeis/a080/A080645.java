@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a007.A007378;
 
 /**
- * A080645 a(1) = 1; for n&gt;1, a(n) is taken to be the smallest integer greater than a(n-1) which is consistent with the condition &quot;for n&gt;1, if n is a member of the sequence then a(n) is even&quot;.
+ * A080645 a(1) = 1; for n&gt;1, a(n) is taken to be the smallest integer greater than a(n-1) which is consistent with the condition "for n&gt;1, if n is a member of the sequence then a(n) is even".
  * @author Georg Fischer
  */
 public class A080645 extends PrependSequence {

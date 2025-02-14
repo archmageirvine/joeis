@@ -837,7 +837,7 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
    * @return <code>agm(a, b)</code>
    */
   public Polynomial<E> agm(Polynomial<E> a, Polynomial<E> g, final int n) {
-    final E two = mElementField.add(mOne, mOne);
+    final E two = mElementField.coerce(Z.TWO);
     for (int k = 1; k <= n; ++k) {
       final Polynomial<E> ap = divide(add(a, g), two);
       final Polynomial<E> gp = sqrt(multiply(a, g, n), n);

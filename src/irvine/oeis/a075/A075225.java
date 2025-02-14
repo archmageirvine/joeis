@@ -23,12 +23,6 @@ public class A075225 extends Sequence0 {
     }
     Polynomial<Q> a = RING.one();
     Polynomial<Q> g = RING.oneMinusXToTheN(Q.EIGHT, 1);
-    for (int k = 1; k <= mN; ++k) {
-      final Polynomial<Q> ap = RING.multiply(RING.add(a, g), Q.HALF);
-      final Polynomial<Q> gp = RING.sqrt(RING.multiply(a, g, mN), mN);
-      a = ap;
-      g = gp;
-    }
-    return g.coeff(mN).toZ().negate();
+    return RING.agm(a, g, mN).coeff(mN).toZ().negate();
   }
 }

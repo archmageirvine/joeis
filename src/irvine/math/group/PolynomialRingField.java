@@ -828,4 +828,22 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
     }
     return matrixField.det(m);
   }
+
+  /**
+   * Compute the arithmetic-geometric mean (agm).
+   * @param a first polynomial
+   * @param b second polynomial
+   * @param n degree of expansion
+   * @return <code>agm(a, b)</code>
+   */
+  public Polynomial<E> agm(Polynomial<E> a, Polynomial<E> g, final int n) {
+    final E two = mElementField.add(mOne, mOne);
+    for (int k = 1; k <= n; ++k) {
+      final Polynomial<E> ap = divide(add(a, g), two);
+      final Polynomial<E> gp = sqrt(multiply(a, g, n), n);
+      a = ap;
+      g = gp;
+    }
+    return g;
+  }
 }

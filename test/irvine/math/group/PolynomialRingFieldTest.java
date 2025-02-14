@@ -344,4 +344,9 @@ public class PolynomialRingFieldTest extends TestCase {
     final Polynomial<Q> r = f.create(Arrays.asList(Q.ONE, Q.valueOf(-2), Q.THREE));
     assertEquals("3/2-7x+49/2x^2-54x^3", f.lambertW(r, 3).toString()); // Huh? this looks completely bogus
   }
+
+  public void testAGM() {
+    final PolynomialRingField<Q> f = new PolynomialRingField<>(Rationals.SINGLETON);
+    assertEquals("1+1/2x-9/16x^2-3/32x^3", f.agm(f.onePlusXToTheN(1), f.oneMinusXToTheN(2), 3).toString());
+  }
 }

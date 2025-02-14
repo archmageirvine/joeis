@@ -352,6 +352,13 @@ public class PolynomialFieldSequence extends AbstractSequence {
             --top;
             mStack.set(top, RING.series(mStack.get(top), mStack.get(top + 1), m));
             break;
+
+          // other two argument functions
+          case "agm":
+            --top;
+            mStack.set(top, RING.agm(mStack.get(top), mStack.get(top + 1), m));
+            break;
+
           default: // should not occur with proper postfix expressions
             throw new RuntimeException("invalid postfix code " + pfix);
         } // switch

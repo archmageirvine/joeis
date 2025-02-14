@@ -209,6 +209,9 @@ public class PolynomialFieldSequence extends AbstractSequence {
           case "neg": // "neg", replace the current top element by its negation
             mStack.set(top, RING.negate(mStack.get(top)));
             break;
+          case "abs":
+            mStack.set(top, RING.abs(mStack.get(top)));
+            break;
           case "sqrt":
             mStack.set(top, RING.sqrt(mStack.get(top), m));
             break;

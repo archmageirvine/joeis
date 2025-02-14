@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
+import irvine.math.api.OrderedIntegralDomain;
 import irvine.math.api.Ring;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
@@ -586,5 +587,20 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
     }
     res.addAll(p.subList(degree, p.size()));
     return res;
+  }
+
+  /**
+   * Ensure the leading (largest) coefficient of the polynomial is non-negative, negating
+   * all terms if necessary to ensure this is the case.
+   * @param p polynomial
+   * @return absolute value
+   */
+  @SuppressWarnings("unchecked")
+  public Polynomial<E> abs(final Polynomial<E> p) {
+    if (!(mElementRing instanceof OrderedIntegralDomain)) {
+      throw new UnsupportedOperationException();
+    }
+    final E coeff = p.leadingCoeff();
+    return ((OrderedIntegralDomain<E>) mElementRing).abs(coeff).equals(coeff) ? p : negate(p);
   }
 }

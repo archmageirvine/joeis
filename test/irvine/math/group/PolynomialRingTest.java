@@ -242,4 +242,10 @@ public class PolynomialRingTest extends TestCase {
     final Polynomial<Polynomial<Z>> b = ringB.onePlusXToTheN(a, 2);
     assertEquals("1+(1+2x^6+3x^9)y^6", ringB.deepSubstitute(b, 3).toString());
   }
+
+  public void testAbs() {
+    final PolynomialRing<Z> ring = new PolynomialRing<>(Integers.SINGLETON);
+    assertEquals("1+2x^2+3x^3", ring.abs(Polynomial.create(1, 0, 2, 3)).toString());
+    assertEquals("-1-2x^2+3x^3", ring.abs(Polynomial.create(1, 0, 2, -3)).toString());
+  }
 }

@@ -215,11 +215,14 @@ public class PolynomialFieldSequence extends AbstractSequence {
           case "sqrt":
             mStack.set(top, RING.sqrt(mStack.get(top), m));
             break;
-          case "exp": // "exp", preplace the current top element te by exp(te)
+          case "exp":
             mStack.set(top, RING.exp(mStack.get(top), m));
             break;
-          case "log": // "log", replace the current top element te by log(te)
+          case "log":
             mStack.set(top, RING.log(mStack.get(top), m));
+            break;
+          case "eta":
+            mStack.set(top, RING.eta(mStack.get(top), m));
             break;
 
           // Trig

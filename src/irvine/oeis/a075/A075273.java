@@ -34,7 +34,7 @@ public class A075273 extends Sequence2 {
           + (s.testBit((k + 1) % mN) ? 2 : 0)
           + (s.testBit(k) ? 1 : 0);
         if (bits == 5 || bits == 2) {
-          final Z next = s.flipBit(k).flipBit((k + 1) % mN).flipBit((k + 2) % mN);
+          final Z next = s.flipBit(k).flipBit((k + 1) % mN).flipBit((k + 2) % mN); // not very efficient
           if (mSeen.add(next)) {
             ks.set(pos, k);
             ++pos;

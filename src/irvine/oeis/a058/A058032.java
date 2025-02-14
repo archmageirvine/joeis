@@ -12,9 +12,6 @@ public class A058032 extends A002110 {
   private Z mA = null;
   private Z mPrimorial = Z.ZERO;
   private long mM = -2;
-  {
-    next();
-  }
 
   @Override
   public Z next() {

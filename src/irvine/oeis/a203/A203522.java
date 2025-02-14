@@ -1,5 +1,4 @@
 package irvine.oeis.a203;
-// manually quots at 2021-11-26 23:42
 
 import irvine.oeis.SelfQuotientSequence;
 
@@ -12,6 +11,5 @@ public class A203522 extends SelfQuotientSequence {
   /** Construct the sequence. */
   public A203522() {
     super(new A203521(), 1);
-    next();
   }
 }

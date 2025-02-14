@@ -1,26 +1,16 @@
 package irvine.oeis.a005;
 
-import irvine.math.z.Z;
+import irvine.oeis.DifferenceSequence;
 
 /**
  * A005347 First differences of A005579.
  * @author Sean A. Irvine
  */
-public class A005347 extends A005579 {
+public class A005347 extends DifferenceSequence {
 
   /** Construct the sequence. */
   public A005347() {
-    setOffset(1);
-  }
-
-  private Z mA = super.next();
-
-  @Override
-  public Z next() {
-    final Z a = super.next();
-    final Z b = a.subtract(mA);
-    mA = a;
-    return b;
+    super(1, new A005579().skip(2));
   }
 }
 

@@ -2,15 +2,15 @@ package irvine.oeis.a075;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A075055 Smallest integer of the form product (n+1)(n+2)...(n+k)/n!.
  * @author Sean A. Irvine
  */
-public class A075055 extends Sequence1 {
+public class A075055 extends Sequence0 {
 
-  private long mN = 0;
+  private long mN = -1;
 
   @Override
   public Z next() {

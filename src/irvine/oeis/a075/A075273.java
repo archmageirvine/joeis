@@ -52,7 +52,7 @@ public class A075273 extends Sequence2 {
   public Z next() {
     mN += 2; // total number of coins
     mSeen.clear();
-    Z start = new Z("01".repeat(mN / 2), 2);
+    final Z start = new Z("01".repeat(mN / 2), 2);
     mSeen.add(start);
     search(start);
     return Z.valueOf(mSeen.size());

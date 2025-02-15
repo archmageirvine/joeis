@@ -1,7 +1,6 @@
 package irvine.oeis.a075;
 
 import irvine.math.group.PolynomialRingField;
-import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
@@ -21,8 +20,6 @@ public class A075225 extends Sequence0 {
     if (++mN == 0) {
       return Z.ONE;
     }
-    Polynomial<Q> a = RING.one();
-    Polynomial<Q> g = RING.oneMinusXToTheN(Q.EIGHT, 1);
-    return RING.agm(a, g, mN).coeff(mN).toZ().negate();
+    return RING.agm(RING.one(), RING.oneMinusXToTheN(Q.EIGHT, 1), mN).coeff(mN).toZ().negate();
   }
 }

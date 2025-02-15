@@ -1178,5 +1178,15 @@ public final class GraphUtils {
     new Nauty(graph, new int[graph.order()], new int[graph.order()], new NautySet(graph.order()), new int[graph.order()], new OptionBlk(), stats, new long[100]);
     return stats.groupSize();
   }
+
+  /**
+   * Compute the independent domination number of a graph.
+   * @param graph the graph
+   * @return independent domination number
+   */
+  public static int independentDominationNumber(final Graph graph) {
+    final int n = graph.order();
+    return IndependentDominationNumber.branchAndBound(graph, new boolean[n], new boolean[n], 0, n);
+  }
 }
 

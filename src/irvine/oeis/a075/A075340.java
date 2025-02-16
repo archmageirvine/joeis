@@ -1,0 +1,48 @@
+package irvine.oeis.a075;
+
+import irvine.factor.prime.Fast;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
+
+/**
+ * A070428.
+ * @author Sean A. Irvine
+ */
+public class A075340 extends Sequence1 {
+
+  private final Fast mPrime = new Fast();
+  private Z mA = null;
+  private boolean mEven = false;
+
+  @Override
+  public Z next() {
+    if (mA == null) {
+      mA = Z.ONE;
+      return Z.ONE;
+    }
+    mEven = !mEven;
+    if (mEven) {
+      if (Z.ONE.equals(mA)) {
+        mA = Z.TWO;
+        return mA;
+      }
+      Z t = mA;
+      while (true) {
+        t = mPrime.nextPrime(t);
+        if (t.mod(mA).equals(Z.ONE)) {
+          mA = t;
+          return mA;
+        }
+      }
+    } else {
+      Z t = mA;
+      while (true) {
+        t = t.add(1);
+        if (!t.isProbablePrime() && t.mod(mA).equals(Z.ONE)) {
+          mA = t;
+          return mA;
+        }
+      }
+    }
+  }
+}

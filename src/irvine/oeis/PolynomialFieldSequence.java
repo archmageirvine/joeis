@@ -20,10 +20,17 @@ public class PolynomialFieldSequence extends AbstractSequence {
 
   protected static int sDebug = 0;
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  /** Constant indicating an ordinary generating function. */
+  
+  /* Caution, the following are bitmasks, c.f. usage at the end of <code>compute()</code>: */
+  /** Constant indicating the numerators of an ordinary generating function. */
   protected static final int OGF = 0;
-  /** Constant indicating an exponential generating function. */
+  /** Constant indicating the numerators of an exponential generating function. */
   protected static final int EGF = 1;
+  /** Constant indicating the denominators of an ordinary generating function. */
+  protected static final int DEN_OGF = 4;
+  /** Constant indicating the denominators of an exponential generating function. */
+  protected static final int DEN_EGF = 5;
+
   private final String[] mPostfix; // list of operands and operators
   private final int mDist; // additional degree
   private final int mGfType; // type of the generating function: 0 = ordinary, 1 = exponential
@@ -376,7 +383,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
     // mTop should be 0 here
     mA = mStack.get(top).truncate(mN + mDist);
     Q result = mA.coeff(mN);
-    if (mGfType == EGF) {
+    if ((mGfType & EGF) != 0) {
       if (mN > 0) {
         mFactorial = mFactorial.multiply(mN);
       }
@@ -385,7 +392,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
         System.out.println("# mFactorial=" + mFactorial + ", mN=" + mN);
       }
     }
-    return result.num();
+    return ((mGfType & DEN_OGF) == 0) ? result.num() : result.den();
   } // compute
 
   @Override
@@ -404,11 +411,20 @@ public class PolynomialFieldSequence extends AbstractSequence {
     }
   } // next
 
+  /* reflective methods */
   /**
    * Get the postfix polish notation.
    * @return list of operands and operations.
    */
   public String[] getPostfix() {
     return mPostfix;
+  }
+
+  /**
+   * Get the type of the generating function.
+   * @return gfType.
+   */
+  public int getGfType() {
+    return mGfType;
   }
 }

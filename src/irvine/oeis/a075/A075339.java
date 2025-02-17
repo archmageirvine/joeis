@@ -22,7 +22,7 @@ public class A075339 extends Sequence1 {
     }
     mEven = !mEven;
     if (mEven) {
-      Z t = mA;
+      final Z t = mA;
       long p = 1;
       while (true) {
         p = mPrime.nextPrime(p);

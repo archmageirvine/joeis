@@ -32,7 +32,7 @@ public class A075338 extends Sequence1 {
         }
       }
     } else {
-      Z t = mA;
+      final Z t = mA;
       long p = 1;
       while (true) {
         p = mPrime.nextPrime(p);

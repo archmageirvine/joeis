@@ -7,7 +7,9 @@ import java.util.Arrays;
  * Uses a simplistic branch and bound search.
  * @author Sean A. Irvine
  */
-class IndependentDominationNumber {
+final class IndependentDominationNumber {
+
+  private IndependentDominationNumber() { }
 
   private static boolean isDominatingSet(final boolean[] currentSet, final boolean[] deletedVertices) {
     for (int k = 0; k < deletedVertices.length; ++k) {

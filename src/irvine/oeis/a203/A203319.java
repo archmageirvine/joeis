@@ -7,7 +7,7 @@ import irvine.math.q.Rationals;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A203319 a(n) = n*fibonacci(n) * Sum_{d|n} 1/(d*fibonacci(d)).
+ * A203319 a(n) = n*Fibonacci(n) * Sum_{d|n} 1/(d*Fibonacci(d)).
  * @author Georg Fischer
  */
 public class A203319 extends LambdaSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a235;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A235166 E.g.f. satisfies: A&apos;(x) = A(x)^2/A(-x)^2, with A(0)=1.
+ * A235166 E.g.f. satisfies: A'(x) = A(x)^2/A(-x)^2, with A(0)=1.
  * A=1/(1-3*serreverse(intformal(1/(1-9*x^2)^(2/3))))^(1/3)
  * @author Georg Fischer
  */

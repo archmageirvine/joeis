@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002034;
 
 /**
- * A070428.
+ * A075396 Numbers n such that S(n-1) &gt; S(n) &lt; S(n+1), where S(n) = A002034(n).
  * @author Sean A. Irvine
  */
 public class A075396 extends A002034 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070428.
+ * A075374 a(n+2) = n*a(n+1) - a(n), with a(1)=1, a(2)=2.
  * @author Sean A. Irvine
  */
 public class A075374 extends Sequence1 {

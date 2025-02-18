@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070428.
+ * A075382 Smallest even number such that n even numbers beginning with it are not squarefree.
  * @author Sean A. Irvine
  */
 public class A075382 extends Sequence1 {

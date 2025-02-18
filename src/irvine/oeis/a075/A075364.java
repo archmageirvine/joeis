@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070428.
+ * A075364 a(n) = floor( geometric mean of n-th row of A075363).
  * @author Sean A. Irvine
  */
 public class A075364 extends Sequence1 {

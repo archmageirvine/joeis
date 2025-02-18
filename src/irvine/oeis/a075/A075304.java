@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A075245.
+ * A075304 Smallest prime greater than the previous term == 1 mod n-th composite number.
  * @author Sean A. Irvine
  */
 public class A075304 extends A002808 {

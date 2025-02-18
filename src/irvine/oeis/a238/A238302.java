@@ -4,7 +4,7 @@ package irvine.oeis.a238;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A238302 E.g.f. satisfies: A&apos;(x) = 1/(1 - x*A(x))^3 with A(0)=1
+ * A238302 E.g.f. satisfies: A'(x) = 1/(1 - x*A(x))^3 with A(0)=1.
  * 1+intformal(1/(1-x*A)^3))
  * @author Georg Fischer
  */

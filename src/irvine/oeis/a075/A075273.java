@@ -9,7 +9,7 @@ import irvine.util.array.DynamicArray;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A075273 Related to the game Blet.
+ * A075273 Number of reachable arrangements of coins in the game Blet starting with 2n coins.
  * @author Sean A. Irvine
  */
 public class A075273 extends Sequence2 {

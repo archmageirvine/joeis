@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A075245.
+ * A075306 Smallest number == 0 mod (n+1)-th prime and == 1 mod all smaller primes.
  * @author Sean A. Irvine
  */
 public class A075306 extends A000040 {

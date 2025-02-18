@@ -9,7 +9,7 @@ import irvine.util.array.DynamicArray;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A075273 Related to the game Blet.
+ * A075274 Number of reachable arrangements of coins in the game Blet starting with 2n coins that achieve the maximum number of heads.
  * @author Sean A. Irvine
  */
 public class A075274 extends Sequence2 {

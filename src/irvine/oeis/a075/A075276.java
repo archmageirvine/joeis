@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Quadruple;
 
 /**
- * A075245.
+ * A075276 Generalized Markoff numbers: union of numbers a, b, c, d satisfying the Markoff(4) equation a^2 + b^2 + c^2 + d^2 = 4*a*b*c*d.
  * @author Sean A. Irvine
  */
 public class A075276 extends Sequence1 {

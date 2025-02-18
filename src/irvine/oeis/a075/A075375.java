@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A070428.
+ * A075375 Rearrangement of natural numbers so that every term is relatively prime to the sum of its neighbors.
  * @author Sean A. Irvine
  */
 public class A075375 extends Sequence1 {

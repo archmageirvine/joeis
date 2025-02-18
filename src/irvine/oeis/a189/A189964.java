@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A189964 Decimal expansion of (3+x+sqrt(38+6x))/4, where x=sqrt(13).
+ * A189964 Decimal expansion of (3+x+sqrt(38+6*x))/4, where x=sqrt(13).
  * @author Georg Fischer
  */
 public class A189964 extends DecimalExpansionSequence {

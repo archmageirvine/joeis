@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070428.
+ * A075324 Independent domination number for queens' graph Q(n).
  * @author Sean A. Irvine
  */
 public class A075324 extends Sequence1 {

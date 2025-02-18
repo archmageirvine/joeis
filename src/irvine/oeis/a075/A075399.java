@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A070428.
+ * A075399 Largest multiple of n using only nonzero digits with digit sum n, or 0 if no such multiple exists.
  * @author Sean A. Irvine
  */
 public class A075399 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000142;
 
 /**
- * A070428.
+ * A075357 a(n) = smallest k such that (n+1)(n+2)...(n+k) &gt;= n!.
  * @author Sean A. Irvine
  */
 public class A075357 extends Sequence1 {

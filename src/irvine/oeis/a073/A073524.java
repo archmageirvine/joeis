@@ -20,7 +20,7 @@ public class A073524 extends Sequence1 {
       Q x = new Q(mN + 1, mN);
       final Z mod = Z.valueOf(mN).pow(e);
       long cnt = 0;
-      while (cnt <= e - 3 && !x.isInteger()) {
+      while (cnt <= e && !x.isInteger()) {
         x = x.multiply(x.ceiling());
         x = new Q(x.num().mod(mod), x.den().mod(mod));
         ++cnt;

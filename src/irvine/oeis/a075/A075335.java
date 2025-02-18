@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070428.
+ * A075335 Differences of members of pairs in A075333.
  * @author Sean A. Irvine
  */
 public class A075335 extends Sequence1 {

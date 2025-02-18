@@ -4,7 +4,7 @@ package irvine.oeis.a218;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A218619  G.f. satisfies: A(x) = exp( Sum_{n&gt;=1} x^n*A(x)^n/n * Sum_{k=0..2*n} A200536(n,k)^2 * x^k * A(x)^(2*k) ), where A200536(n,k) = [x^k] (1 + 3*x + 2*x^2)^n.
+ * A218619 G.f. satisfies: A(x) = exp( Sum_{n&gt;=1} x^n*A(x)^n/n * Sum_{k=0..2*n} A200536(n,k)^2 * x^k * A(x)^(2*k) ), where A200536(n,k) = [x^k] (1 + 3*x + 2*x^2)^n.
  * (1+x*A(x)^2)*(1+x^2*A(x)^4)*(1+4*x^2*A(x)^4)*(1+4*x^3*A(x)^6)/(1-2*x^2*A(x)^4)^2
  * @author Georg Fischer
  */

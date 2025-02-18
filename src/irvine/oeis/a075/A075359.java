@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070428.
+ * A075359 Sum of the digits of the next n numbers.
  * @author Sean A. Irvine
  */
 public class A075359 extends Sequence1 {

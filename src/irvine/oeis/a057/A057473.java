@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a006.A006512;
 
 /**
- * A057473 Let p(i) =i-th prime, let twin(n) = (P,Q) be n-th pair of twin primes; sequence gives p(Q).
+ * A057473 Let prime(i) = i-th prime, let twin(n) = (P,Q) be n-th pair of twin primes; sequence gives prime(Q).
  * @author Sean A. Irvine
  */
 public class A057473 extends A006512 {

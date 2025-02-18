@@ -4,7 +4,7 @@ package irvine.oeis.a235;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A235129 E.g.f. satisfies: A&apos;(x) = 1 + A(x)*exp(A(x)).
+ * A235129 E.g.f. satisfies: A'(x) = 1 + A(x)*exp(A(x)).
  * intformal(1+A*exp(A)))
  * @author Georg Fischer
  */

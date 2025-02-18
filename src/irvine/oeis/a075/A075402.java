@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000217;
 
 /**
- * A070428.
+ * A075402 Smallest number such that a(n) + T(n) is a prime, where T(n) is the n-th triangular number.
  * @author Sean A. Irvine
  */
 public class A075402 extends Sequence1 {

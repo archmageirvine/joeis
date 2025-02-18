@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A190739 a(n) = n + [ns/r] + [nt/r] + [nu/r] + [nv/r] + [nw/r], where r=sin(x), s=cos(x), t=tan(x), u=csc(x), v=sec(x), w=cot(x), x=Pi/8.
+ * A190739 a(n) = n + [n*s/r] + [n*t/r] + [n*u/r] + [n*v/r] + [n*w/r], where r=sin(x), s=cos(x), t=tan(x), u=csc(x), v=sec(x), w=cot(x), x=Pi/8.
  * @author Georg Fischer
  */
 public class A190739 extends FloorSequence {

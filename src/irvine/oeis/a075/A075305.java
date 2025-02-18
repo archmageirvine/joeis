@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A075245.
+ * A075305 Smallest prime not occurring earlier == 1 mod n-th composite number.
  * @author Sean A. Irvine
  */
 public class A075305 extends A002808 {

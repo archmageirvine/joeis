@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.FixedPointPositionSequence;
 
 /**
- * A070428.
+ * A075381 Fixed points of A075380.
  * @author Sean A. Irvine
  */
 public class A075381 extends FixedPointPositionSequence {

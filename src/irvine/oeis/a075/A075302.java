@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A054582.
+ * A075302 Transpose of array A075300.
  * @author Sean A. Irvine
  */
 public class A075302 extends UpperLeftTriangle {

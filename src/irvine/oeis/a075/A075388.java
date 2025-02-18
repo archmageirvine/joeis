@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.math.z.Z;
 
 /**
- * A070428.
+ * A075388 (1/n) times initial term of n-th group in A075383.
  * @author Sean A. Irvine
  */
 public class A075388 extends A075384 {

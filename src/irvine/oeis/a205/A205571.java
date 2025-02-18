@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A205571 E.g.f.: 1/(1 - x*cosh(x)).
+ * A205571 Expansion of e.g.f. 1/(1 - x*cosh(x)).
  * E.g.f.: 1/(1 - x*cosh(x))
  * @author Georg Fischer
  */

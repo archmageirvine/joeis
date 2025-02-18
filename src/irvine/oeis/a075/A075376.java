@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.FixedPointPositionSequence;
 
 /**
- * A070428.
+ * A075376 Terms of A075375 for which a(k) = k, i.e., with dislocation 0.
  * @author Sean A. Irvine
  */
 public class A075376 extends FixedPointPositionSequence {

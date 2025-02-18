@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A215364 E.g.f. satisfies: A(x) = 1 + x*A(x)^2*cosh(x*A(x)).
+ * A215364 E.g.f. A(x) satisfies A(x) = 1 + x*A(x)^2*cosh(x*A(x)).
  * E.g.f.: <code>divx(reverse(x-x^2*cosh(x)))</code>
  * @author Georg Fischer
  */

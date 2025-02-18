@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A070428.
+ * A075372 Smallest squarefree number not occurring earlier such that the every partial sum is squarefree.
  * @author Sean A. Irvine
  */
 public class A075372 extends Sequence0 {

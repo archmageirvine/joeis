@@ -4,7 +4,7 @@ package irvine.oeis.a222;
 import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 /**
- * A222392 Decimal expansion of sum(1/Gamma(n/2), n&gt;=1).
+ * A222392 Decimal expansion of Sum_{n&gt;=1} 1/Gamma(n/2).
  * Formula: (1+erf(1))*e+1/sqrt(Pi)
  * @author Georg Fischer
  */

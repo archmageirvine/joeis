@@ -4,7 +4,7 @@ package irvine.oeis.a234;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A234313 E.g.f. satisfies: A&apos;(x) = A(x)^5 * A(-x) with A(0) = 1.
+ * A234313 E.g.f. satisfies: A'(x) = A(x)^5 * A(-x) with A(0) = 1.
  * 1+intformal(A^5*subst(A,x,-x)))
  * @author Georg Fischer
  */

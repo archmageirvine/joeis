@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070428.
+ * A075334 Second members of pairs in A075333.
  * @author Sean A. Irvine
  */
 public class A075334 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070428.
+ * A075333 Pair up the natural numbers as (r, s) (say) so that all natural numbers are obtained only once as r, s, s+r, s-r or r*s: (2, 3), (4, 11), (8, 17), (10, 22), (13, 27), (16, 34), ... Sequence gives first member of each pair.
  * @author Sean A. Irvine
  */
 public class A075333 extends Sequence1 {

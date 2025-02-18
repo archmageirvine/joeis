@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.FilterSequence;
 
 /**
- * A070428.
+ * A075395 Composite members of A075394.
  * @author Sean A. Irvine
  */
 public class A075395 extends FilterSequence {

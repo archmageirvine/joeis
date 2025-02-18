@@ -7,7 +7,7 @@ import irvine.oeis.a057.A057470;
 import irvine.oeis.a057.A057473;
 
 /**
- * A096474 Difference prime(q+2) - prime(q) as q runs through the lesser-twin-primes.
+ * A096474 Difference prime(q+2) - prime(q) as q runs through the lesser members of twin primes (A001359).
  * @author Georg Fischer
  */
 public class A096474 extends AbstractSequence {

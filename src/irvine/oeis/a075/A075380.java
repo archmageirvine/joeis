@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A070428.
+ * A075380 Rearrangement of natural numbers so that the sum of two neighboring terms is not squarefree.
  * @author Sean A. Irvine
  */
 public class A075380 extends Sequence1 {

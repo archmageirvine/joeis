@@ -4,7 +4,7 @@ package irvine.oeis.a232;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A232696 E.g.f. A(x) satisfies: A&apos;(x) = A(x/A&apos;(x)) with A(0)=1.
+ * A232696 E.g.f. A(x) satisfies: A'(x) = A(x/A'(x)) with A(0)=1.
  * 1+intformal(x/serreverse(x*A)))
  * @author Georg Fischer
  */

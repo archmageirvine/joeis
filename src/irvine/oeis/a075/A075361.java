@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070428.
+ * A075361 a(n) = the n-th prime with sum of decimal digits = n, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A075361 extends Sequence1 {

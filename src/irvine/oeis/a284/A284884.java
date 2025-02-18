@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A284884 Positions of 1&apos;s in A284881.
+ * A284884 Positions of 1's in A284881.
  * @author Georg Fischer
  */
 public class A284884 extends FilterPositionSequence {

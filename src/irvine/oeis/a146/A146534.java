@@ -5,7 +5,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A146534 4*C(2n,n)-3*0^n.
+ * A146534 a(n) = 4*C(2n,n) - 3*0^n.
  * @author Georg Fischer
  */
 public class A146534 extends LambdaSequence {

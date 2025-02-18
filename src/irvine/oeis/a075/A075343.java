@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070428.
+ * A075343 a(1) = 1, a(n+1) is the smallest number such that there are n composite numbers between a(n) and a(n+1) exclusive.
  * @author Sean A. Irvine
  */
 public class A075343 extends Sequence1 {

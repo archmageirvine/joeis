@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A070428.
+ * A075383 Rearrangement of natural numbers so that next n numbers are each divisible by n.
  * @author Sean A. Irvine
  */
 public class A075383 extends Sequence1 {

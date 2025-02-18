@@ -4,7 +4,7 @@ package irvine.oeis.a229;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A229559 E.g.f. A(x) satisfies: A&apos;(x) = A(x) - A(x)^2 + A(x)^3.
+ * A229559 E.g.f. A(x) satisfies: A'(x) = A(x) - A(x)^2 + A(x)^3.
  * 1+intformal(A-A^2+A^3))
  * @author Georg Fischer
  */

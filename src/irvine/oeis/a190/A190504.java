@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A190504 n+[ns/r]+[nt/r]+[nu/r]; r=golden ratio, s=r+1, t=r+2, u=r+3.
+ * A190504 a(n) = n+[n*s/r]+[n*t/r]+[n*u/r]; r=golden ratio, s=r+1, t=r+2, u=r+3.
  * @author Georg Fischer
  */
 public class A190504 extends FloorSequence {

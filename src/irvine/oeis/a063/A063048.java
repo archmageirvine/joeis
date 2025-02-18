@@ -15,6 +15,7 @@ public class A063048 extends Sequence1 {
 
   // NOTE This sequence is inherently heuristic
 
+  private static final int SEARCH_LIMIT = Integer.parseInt(System.getProperty("oeis.heuristic-limit", "1000"));
   private Z mN = Z.NINE;
   private final HashSet<Z> mSeen = new HashSet<>();
   private final long mBase;
@@ -45,7 +46,7 @@ public class A063048 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (!is(mN, 1000)) {
+      if (!is(mN, SEARCH_LIMIT)) {
         return mN;
       }
     }

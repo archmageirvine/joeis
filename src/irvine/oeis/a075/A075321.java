@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070428.
+ * A075321 Pair the odd primes so that the n-th pair is (p, p+2n) where p is the smallest prime not included earlier such that p and p+2n are primes and p+2n also does not occur earlier: (3, 5), (7, 11), (13, 19), (23, 31), (37, 47), (17, 29), (53, 67) ... This is the sequence of the first member of every pair.
  * @author Sean A. Irvine
  */
 public class A075321 extends Sequence1 {

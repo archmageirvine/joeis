@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070428.
+ * A075336 Sums of members of pairs in A075333.
  * @author Sean A. Irvine
  */
 public class A075336 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a234;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A234797 E.g.f. satisfies: A&apos;(x) = 1 + A(x) + 2*A(x)^2, where A(0)=0.
+ * A234797 E.g.f. satisfies: A'(x) = 1 + A(x) + 2*A(x)^2, where A(0)=0.
  * intformal(1+A+2*A^2))
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070428.
+ * A075377 Triangle read by rows in which n-th row gives all values of n!/{(p!)^a*(q!)^b*(r!)^c*...} (in increasing order) for all factorizations n = p^a*q^b*r^c*....
  * @author Sean A. Irvine
  */
 public class A075377 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.math.z.Z;
 
 /**
- * A070428.
+ * A075386 Sum of terms of n-th group in A075383.
  * @author Sean A. Irvine
  */
 public class A075386 extends A075383 {

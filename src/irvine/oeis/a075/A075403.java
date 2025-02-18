@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.InverseSequence;
 
 /**
- * A070428.
+ * A075403 Smallest k such that the difference between the k-th triangular number and the following prime is equal to n.
  * @author Sean A. Irvine
  */
 public class A075403 extends InverseSequence {

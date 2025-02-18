@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000142;
 
 /**
- * A070428.
+ * A075354 Final term of n-th group in A075352.
  * @author Sean A. Irvine
  */
 public class A075354 extends Sequence1 {

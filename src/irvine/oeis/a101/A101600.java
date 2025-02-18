@@ -6,7 +6,7 @@ package irvine.oeis.a101;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A101600 G.f.: c(3x)^2, c(x) the g.f. of A000108.
+ * A101600 Expansion of g.f. c(3x)^2, where c(x) is the g.f. of A000108.
  * @author Georg Fischer
  */
 public class A101600 extends HolonomicRecurrence {

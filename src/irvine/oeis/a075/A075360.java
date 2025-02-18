@@ -4,7 +4,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a054.A054750;
 
 /**
- * A070428.
+ * A075360 Smallest prime (&gt; n-th prime) with sum of digits = the n-th prime, or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A075360 extends PrependSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070428.
+ * A075401 Smallest nontrivial multiple of n (&gt; n and not equal to 10^k*n) whose digit sum is a multiple of the digit sum of n.
  * @author Sean A. Irvine
  */
 public class A075401 extends Sequence1 {

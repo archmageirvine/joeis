@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070428.
+ * A075311 a(1) = 1; for n &gt; 1, a(n) is the smallest number m &gt; a(n-1) such that the number of 1's in the binary expansion of m is not already in the sequence.
  * @author Sean A. Irvine
  */
 public class A075311 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a300;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A300282 E.g.f. A(x) satisfies: A&apos;(x) = 1/(1 - A(A(x)))^2.
+ * A300282 E.g.f. A(x) satisfies: A'(x) = 1/(1 - A(A(x)))^2.
  * serreverse(intformal((1-A)^2)))
  * @author Georg Fischer
  */

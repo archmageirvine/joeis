@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070428.
+ * A075345 Group the natural numbers such that the n-th group contains n terms and the group sum is the smallest possible prime: (2), (1, 4), (3, 5, 9), (6, 7, 8, 10), (11, 12, 13, 14, 17), (15, 16, 18, 19, 20, 21), ... Sequence gives group sums.
  * @author Sean A. Irvine
  */
 public class A075345 extends Sequence1 {

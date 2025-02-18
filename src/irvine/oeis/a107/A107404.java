@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A107404 E.g.f. = 1/(1-sinh(x))^2.
+ * A107404 Expanison of e.g.f. 1/(1 - sinh(x))^2.
  * E.g.f.: 1/(1-sinh(x))^2
  * @author Georg Fischer
  */

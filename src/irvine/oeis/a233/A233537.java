@@ -4,7 +4,7 @@ package irvine.oeis.a233;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A233537 E.g.f. satisfies: A&apos;(x) = (1 + x*A(x))*(1 + 2*x*A(x)).
+ * A233537 E.g.f. satisfies: A'(x) = (1 + x*A(x))*(1 + 2*x*A(x)).
  * 1+intformal((1+x*A)*(1+2*x*A)))
  * @author Georg Fischer
  */

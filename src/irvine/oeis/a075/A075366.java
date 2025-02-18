@@ -4,7 +4,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
- * A070428.
+ * A075366 Smallest product (n+1)(n+2)...(n+k) that is divisible by the product of all the primes up to n.
  * @author Sean A. Irvine
  */
 public class A075366 extends A075365 {

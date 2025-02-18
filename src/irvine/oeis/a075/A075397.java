@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070428.
+ * A075397 Number of multiples of n with no zero digit with sum of digits = n.
  * @author Sean A. Irvine
  */
 public class A075397 extends Sequence1 {

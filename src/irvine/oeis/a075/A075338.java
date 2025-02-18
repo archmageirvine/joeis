@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070428.
+ * A075338 a(1) = 1, a(2n) = smallest prime obtained by adding a composite number to a(2n-1). a(2n+1) = the smallest composite number obtained by adding a prime to a(2n).
  * @author Sean A. Irvine
  */
 public class A075338 extends Sequence1 {

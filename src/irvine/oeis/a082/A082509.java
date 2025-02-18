@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a001.A001223;
 
 /**
- * A082509 Differences between consecutive primes being not powers of 2 in order of their appearance. Differences which are powers of 2 are omitted from A001223.
+ * A082509 Differences between consecutive primes that are not powers of 2 in order of their appearance. Differences which are powers of 2 are omitted from A001223.
  * @author Georg Fischer
  */
 public class A082509 extends FilterSequence {

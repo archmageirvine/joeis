@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070428.
+ * A075340 a(1) = 1; a(2n) is the smallest prime == 1 mod (a(2n-1)) and a(2n+1) is the smallest composite number == 1 (mod a(2n)).
  * @author Sean A. Irvine
  */
 public class A075340 extends Sequence1 {

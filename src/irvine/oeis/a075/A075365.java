@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070428.
+ * A075365 Smallest k such that (n+1)(n+2)...(n+k) is divisible by the product of all the primes up to n.
  * @author Sean A. Irvine
  */
 public class A075365 extends Sequence1 {

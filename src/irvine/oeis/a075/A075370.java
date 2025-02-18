@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A070428.
+ * A075370 Smallest squarefree number &gt; 1 such that the every partial sum is squarefree.
  * @author Sean A. Irvine
  */
 public class A075370 extends Sequence0 {

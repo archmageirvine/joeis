@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.math.z.Z;
 
 /**
- * A070428.
+ * A075348 Group the natural numbers such that the n-th group contains n terms and the group sum is the smallest possible prime.
  * @author Sean A. Irvine
  */
 public class A075348 extends A075345 {

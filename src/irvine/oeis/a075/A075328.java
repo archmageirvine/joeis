@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070428.
+ * A075328 Difference between n-th pair in A075325.
  * @author Sean A. Irvine
  */
 public class A075328 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a002.A002034;
 
 /**
- * A070428.
+ * A075393 Positive integers k that are not divisible by A002034(k).
  * @author Sean A. Irvine
  */
 public class A075393 extends FilterPositionSequence {

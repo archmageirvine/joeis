@@ -4,7 +4,7 @@ package irvine.oeis.a234;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A234854 E.g.f. satisfies: A&apos;(x) = 1 + 4*A(x) + A(x)^2, where A(0)=0.
+ * A234854 E.g.f. satisfies: A'(x) = 1 + 4*A(x) + A(x)^2, where A(0)=0.
  * intformal(1+4*A+A^2))
  * @author Georg Fischer
  */

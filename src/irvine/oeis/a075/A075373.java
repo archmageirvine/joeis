@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import java.util.HashSet;
 import java.util.Set;
 
-import irvine.math.predicate.Predicates;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -13,7 +13,9 @@ import irvine.oeis.Sequence1;
  */
 public class A075373 extends Sequence1 {
 
-  private final Set<Long> mUsed = new HashSet<>();
+  // After Andrew Howroyd
+
+  private final Set<Z> mUsed = new HashSet<>();
   private Z mA = null;
   private Z mB = null;
 
@@ -22,21 +24,26 @@ public class A075373 extends Sequence1 {
     if (mB == null) {
       if (mA == null) {
         mA = Z.ZERO;
+        mUsed.add(Z.ONE);
         return Z.ZERO;
       }
       mB = Z.NINE;
-      mUsed.add(3L);
+      mUsed.add(Z.THREE);
       return mB;
     }
-    final Z t = mA.add(mB);
-    long k = 0;
-    while (true) {
-      final Z sq = Z.valueOf(++k).square();
-      if (Predicates.SQUARE.is(t.add(sq)) && mUsed.add(k)) {
-        mA = mB;
-        mB = sq;
-        return sq;
+    final Z s = mA.add(mB);
+    for (final Z d : Jaguar.factor(s).divisorsSorted()) {
+      final Z t = d.subtract(s.divide(d));
+      if (t.signum() > 0 && t.isEven()) {
+        final Z t2 = t.divide2();
+        if (mUsed.add(t2)) {
+          final Z sq = t2.square();
+          mA = mB;
+          mB = sq;
+          return sq;
+        }
       }
     }
+    throw new RuntimeException();
   }
 }

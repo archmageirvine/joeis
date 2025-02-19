@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**
- * A075404 Smallest m &gt; n such that Sum_{i=n..m} i^2 is a square, or 0 if no such m exists.
+ * A075405 a(n)^2 is the square obtained in A075404 (or 0 if no such square exists).
  * @author Sean A. Irvine
  */
 public class A075405 extends Sequence1 implements Conjectural {

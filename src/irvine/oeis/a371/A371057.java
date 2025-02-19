@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a007.A007089;
 
 /**
- * A371057 Ternary numbers consisting of a run of 2&apos;s, then a run of 0&apos;s, then a run of 1&apos;s.
+ * A371057 Ternary numbers consisting of a run of 2's, then a run of 0's, then a run of 1's.
  * @author Georg Fischer
  */
 public class A371057 extends FilterSequence {

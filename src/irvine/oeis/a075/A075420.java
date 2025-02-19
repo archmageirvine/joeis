@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A023108 Positive integers which apparently never result in a palindrome under repeated applications of the function A056964(x) = x + (x with digits reversed).
+ * A075420 Trajectory of n under the Reverse and Add! operation carried out in base 4 (presumably) does not reach a palindrome.
  * @author Sean A. Irvine
  */
 public class A075420 extends Sequence1 {

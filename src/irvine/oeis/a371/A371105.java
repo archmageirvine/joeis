@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a007.A007089;
 
 /**
- * A371105 Ternary numbers that are concatenated runs A(1)B(1)C(1)A(2)B(2)C(2)...A(k)B(k)C(k), where A(i) is a run of 1&apos;s, B(i) a run of 0&apos;s, and C(i) a run of 2&apos;s, for i = 1..k.
+ * A371105 Ternary numbers that are concatenated runs A(1)B(1)C(1)A(2)B(2)C(2)...A(k)B(k)C(k), where A(i) is a run of 1's, B(i) a run of 0's, and C(i) a run of 2's, for i = 1..k.
  * @author Georg Fischer
  */
 public class A371105 extends FilterSequence {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A023108.
+ * A075422 Primitive numbers n such that the product of factorials of all proper divisors of n does not divide n!.
  * @author Sean A. Irvine
  */
 public class A075422 extends Sequence1 {

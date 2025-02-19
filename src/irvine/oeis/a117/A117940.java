@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.GeneralizedEulerTransform;
 
 /**
- * A117940 G.f.: Product_{k&gt;=0} (1 + 3*x^(3^k)).
+ * A117940 a(0)=1, thereafter a(3n) = a(3n+1)/3 = a(n), a(3n+2)=0.
  * G.f.: <code>Product_{k&gt;=0} ((1+3*x^(3^k)))</code>
  * @author Georg Fischer
  */

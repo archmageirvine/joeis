@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A371054 Numbers whose ternary representation consists of a run of 1&apos;s, then a run of 0&apos;s, then a run of 2&apos;s.
+ * A371054 Numbers whose ternary representation consists of a run of 1's, then a run of 0's, then a run of 2's.
  * @author Georg Fischer
  */
 public class A371054 extends FilterNumberSequence {

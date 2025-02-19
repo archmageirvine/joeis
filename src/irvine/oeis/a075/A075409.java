@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A075409.
+ * A075409 a(n) is the smallest m such that n!-m and n!+m are both primes.
  * @author Sean A. Irvine
  */
 public class A075409 extends Sequence2 {

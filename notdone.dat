@@ -2506,3 +2506,5 @@ A075221 Number of polyiamonds with n cells that tile the plane by translation or
 A075222 Number of polyiamonds with n cells that tile the plane isohedrally but not by translation or by 180-degree rotation (Conway criterion).
 A075223 Number of polyiamonds with n cells that tile the plane isohedrally.
 A075224 Number of anisohedral polyiamonds with n cells.
+A075441 a(n) is the number of solutions to the n-term Znám problem
+A075461 List of solutions to the Znám problem sorted first by length, then lexicographically.

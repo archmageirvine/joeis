@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a001.A001597;
 
 /**
- * A073524.
+ * A075433 Perfect powers pp(n) with perfect power index n.
  * @author Sean A. Irvine
  */
 public class A075433 extends FilterSequence {

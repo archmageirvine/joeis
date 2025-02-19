@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A073524.
+ * A075432 Primes with no squarefree neighbors.
  * @author Sean A. Irvine
  */
 public class A075432 extends FilterSequence {

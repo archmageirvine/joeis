@@ -21,7 +21,7 @@ public class A075470 extends A073672 {
       final Z t = super.next();
       mSum = mSum.add(t);
       mA.add(t);
-    } else{
+    } else {
       for (int k = 0; k < 2; ++k) {
         final Z t = super.next();
         mSum = mSum.add(t);

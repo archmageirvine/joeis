@@ -312,6 +312,39 @@ public abstract class AbstractRing<E> extends AbstractGroup<E> implements Ring<E
   }
 
   /**
+   * The count of integers in a range fulfilling some predicate.
+   * @param lo lower bound
+   * @param hi upper bound
+   * @param predicate the predicate
+   * @return count
+   */
+  public <E> Z count(final int lo, final int hi, final Function<Integer, Boolean> predicate) {
+    long sum = 0;
+    for (int k = lo; k <= hi; ++k) {
+      if (predicate.apply(k)) {
+        ++sum;
+      }
+    }
+    return Z.valueOf(sum);
+  }
+
+  /**
+   * The count of the divisors of an integer fulfilling some predicate.
+   * @param n count the divisors of this number
+   * @param predicate the predicate for n
+   * @return count
+   */
+  public <E> Z countdiv(final long n, final Function<Integer, Boolean> predicate) {
+    long sum = 0;
+    for (final Z d : Jaguar.factor(n).divisors()) {
+      if (predicate.apply(d.intValueExact())) {
+        ++sum;
+      }
+    }
+    return Z.valueOf(sum);
+  }
+
+  /**
    * The sum of a function from lo to hi inclusive.
    * @param lo lower bound
    * @param hi upper bound

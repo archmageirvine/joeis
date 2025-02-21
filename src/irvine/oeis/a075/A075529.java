@@ -17,14 +17,17 @@ public class A075529 extends Sequence0 {
   private final int[] mWorkspace = new int[Integer.SIZE]; // Way more than we can hope to do with this approach
 
   private void search(final int pos) {
-    if (pos - 1 == mN) {
-      mSeen.add(mWorkspace[pos - 1]);
-      return;
-    }
     final int v = mWorkspace[pos];
-    for (int k = 0; k <= pos; ++k) {
-      mWorkspace[pos + 1] = mWorkspace[k] + v;
-      search(pos + 1);
+    if (pos + 1 == mN) {
+      // Last iteration
+      for (int k = 0; k <= pos; ++k) {
+        mSeen.add(mWorkspace[k] + v);
+      }
+    } else {
+      for (int k = 0; k <= pos; ++k) {
+        mWorkspace[pos + 1] = mWorkspace[k] + v;
+        search(pos + 1);
+      }
     }
   }
 

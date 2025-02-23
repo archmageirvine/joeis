@@ -73,6 +73,17 @@ public final class GaussianIntegers extends AbstractIntegralDomain<Zi> {
     return u.multiply(v);
   }
 
+  /**
+   * Division of Gaussian integers.
+   * Note: this assumes the division is exact.
+   * @param u dividend
+   * @param v divisor
+   * @return quotient
+   */
+  public Zi divide(final Zi u, final Zi v) {
+    return u.divide(v);
+  }
+
   @Override
   public Zi negate(final Zi z) {
     return z.negate();

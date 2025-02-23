@@ -208,6 +208,23 @@ public class Zi extends Number implements Comparable<Zi> {
   }
 
   /**
+   * Divide this Gaussian integer by another Gaussian integer.
+   * Note: this can only give correct results when the division is exact
+   * @param n number to divide by
+   * @return quotient
+   */
+  public Zi divide(final Zi n) {
+    final Z a = re();
+    final Z b = im();
+    final Z c = n.re();
+    final Z d = n.im();
+    final Z den = c.square().add(d.square());
+    final Z re = a.multiply(c).add(b.multiply(d));
+    final Z im = b.multiply(c).subtract(a.multiply(d));
+    return new Zi(re.divide(den), im.divide(den));
+  }
+
+  /**
    * Negate this Gaussian integer.
    * @return negation
    */

@@ -14,6 +14,6 @@ public class A072019 extends A091534 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sum(2, 2 * ++mN, k -> mB.get(mN, k));
+    return Integers.SINGLETON.sum(2, 2 * ++mN, k -> a(mN, k));
   }
 }

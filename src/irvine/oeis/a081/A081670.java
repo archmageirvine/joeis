@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000984;
 import irvine.oeis.a003.A003462;
 
 /**
- * A081670 3^n-1+C(2n,n).
+ * A081670 a(n) = 3^n-1+C(2n,n).
  * @author Georg Fischer
  */
 public class A081670 extends Sequence0 {

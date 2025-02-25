@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A019507 Droll numbers: sum of even prime divisors equals sum of odd prime divisors.
+ * A019507 Droll numbers: numbers &gt; 1 whose sum of even prime factors equals the sum of odd prime factors.
  * @author Sean A. Irvine
  */
 public class A019507 extends Sequence1 {

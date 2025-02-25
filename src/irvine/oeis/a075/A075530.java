@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A075522.
+ * A075530 a(n) is the largest m such that n+1, n+2, ..., n+m are all members of the set X(n) given in A075529.
  * @author Sean A. Irvine
  */
 public class A075530 extends Sequence0 {

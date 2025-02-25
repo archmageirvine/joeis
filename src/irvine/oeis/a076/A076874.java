@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A076874 n - floor ( ( 4*n + 1 )^(1/2) ).
+ * A076874 a(n) = n - floor ( ( 4*n + 1 )^(1/2) ).
  * @author Georg Fischer
  */
 public class A076874 extends FloorSequence {

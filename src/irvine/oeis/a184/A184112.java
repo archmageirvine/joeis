@@ -3,7 +3,7 @@ package irvine.oeis.a184;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A184112 n+ceiling(n^2/16); complement of A184111.
+ * A184112 a(n) = n+ceiling(n^2/16); complement of A184111.
  * @author Sean A. Irvine
  */
 public class A184112 extends LinearRecurrence {

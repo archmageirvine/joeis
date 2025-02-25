@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A240671 Floor(4^n/(2+2*cos(2*Pi/7))^n).
+ * A240671 a(n) = floor(4^n/(2+2*cos(2*Pi/7))^n).
  * @author Georg Fischer
  */
 public class A240671 extends FloorSequence {

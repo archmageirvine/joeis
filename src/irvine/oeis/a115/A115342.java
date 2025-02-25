@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A115342 1 + (n-6)*2^(n-1).
+ * A115342 a(n) = 1 + (n-6)*2^(n-1).
  * a(n) = 1 + (n-6)*2^(n-1)
  * @author Georg Fischer
  */

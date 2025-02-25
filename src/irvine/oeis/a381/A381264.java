@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A381264 Decimal expansion of the edge length of the Dodecahedron inside a circumscribed unit sphere.
+ * A381264 Decimal expansion of the edge length of the dodecahedron inside a circumscribed unit sphere.
  * Formula: 2/(sqrt(3)*A001622)
  * @author Georg Fischer
  */

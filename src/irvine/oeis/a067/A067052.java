@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067052 Floor((sum_{1..n} 1/i)^n).
+ * A067052 a(n) = floor((Sum_{i=1..n} 1/i)^n).
  * @author Sean A. Irvine
  */
 public class A067052 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a338;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A338301 O.g.f. satisfies: A(x) = 1/(1 - x - x*( d/dx x^2*A(x)&apos; )).
+ * A338301 O.g.f. satisfies: A(x) = 1/(1 - x - x*( d/dx x^2*A(x)' )).
  * @author Georg Fischer
  */
 public class A338301 extends PolynomialFieldSequence {

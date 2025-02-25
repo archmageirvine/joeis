@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A245313 G.f. satisfies: A(x) = 1 + x*A(x) + x^2*A(x)^2 + 3*x^3*A(x)*A&apos;(x) + x^4*A(x)*A&apos;&apos;(x).
+ * A245313 G.f. satisfies: A(x) = 1 + x*A(x) + x^2*A(x)^2 + 3*x^3*A(x)*A'(x) + x^4*A(x)*A''(x).
  * @author Georg Fischer
  */
 public class A245313 extends PolynomialFieldSequence {

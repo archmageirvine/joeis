@@ -4,7 +4,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A057180 Numbers n such that (14^n + 1)/15 is a prime.
+ * A057180 Numbers k such that (14^k + 1)/15 is a prime.
  * @author Georg Fischer
  */
 public class A057180 extends PrimePositionSubsequence {

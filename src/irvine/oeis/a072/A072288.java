@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A072288 Smallest prime factor of Googolplex + n which exceeds 16.
+ * A072288 Smallest prime factor of googolplex + n that exceeds 13, or 1 if googolplex + n is 13-smooth.
  *
  * @author Georg Fischer
  */

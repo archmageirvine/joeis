@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075522.
+ * A075533 Number of labeled rooted trees where each node at height h has 0 or h+1 children.
  * @author Sean A. Irvine
  */
 public class A075533 extends Sequence1 {

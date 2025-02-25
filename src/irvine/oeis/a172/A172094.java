@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A172094 The Riordan square of the little Schr√∂der numbers A001003.
+ * A172094 The Riordan square of the little Schr\u00f6der numbers A001003.
  * @author Georg Fischer
  */
 public class A172094 extends LambdaTriangle {

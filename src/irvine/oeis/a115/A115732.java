@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A115732 n-th prime p(n) repeated (p(n)-n) times.
+ * A115732 n-th prime prime(n) repeated (prime(n)-n) times.
  * @author Georg Fischer
  */
 public class A115732 extends LambdaTable {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075373 a(1)=0, a(2)=9; then distinct squares such that sum of three successive terms is a square.
+ * A075373 a(1)=0, a(2)=9; then distinct squares such that the sum of three successive terms is a square.
  * @author Sean A. Irvine
  */
 public class A075373 extends Sequence1 {

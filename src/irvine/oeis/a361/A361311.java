@@ -4,7 +4,7 @@ package irvine.oeis.a361;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A361311 G.f. A(x) satisfies A(x) = Series_Reversion(x - x^5*A&apos;(x)).
+ * A361311 G.f. A(x) satisfies A(x) = Series_Reversion(x - x^5*A'(x)).
  * A(x) = Series_Reversion(x - x^5*A'(x)).
  * @author Georg Fischer
  */

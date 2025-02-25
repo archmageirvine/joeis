@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A067292 a(n)=prime(n)-n*tau(n) where tau(n) is the number of divisors of n.
+ * A067292 a(n) = prime(n)-n*tau(n) where tau(n) is the number of divisors of n.
  * a(n)=prime(n)-n*sigma(n, 0)
  * @author Georg Fischer
  */

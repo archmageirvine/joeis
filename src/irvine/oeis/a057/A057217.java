@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A057217 a(n) = smallest positive integer k such that 1+n*k! is a prime.
+ * A057217 a(n) = smallest positive integer k such that 1 + n*k! is a prime.
  * @author Sean A. Irvine
  */
 public class A057217 extends Sequence1 {

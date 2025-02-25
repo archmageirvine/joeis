@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.math.z.Z;
 
 /**
- * A075522.
+ * A075532 Number of rooted trees where each node at height h has 0 or h+1 children.
  * @author Sean A. Irvine
  */
 public class A075532 extends A075533 {

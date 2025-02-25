@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A057676 Smallest prime q(n) such that -q(n)+2^p(n) is a prime, where p(n) = n-th prime.
+ * A057676 Smallest prime q such that 2^prime(n) - q is prime.
  * @author Sean A. Irvine
  */
 public class A057676 extends A000040 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A240735 Floor(6^n/(3+sqrt(3))^n).
+ * A240735 a(n) = floor(6^n/(3+sqrt(3))^n).
  * @author Georg Fischer
  */
 public class A240735 extends FloorSequence {

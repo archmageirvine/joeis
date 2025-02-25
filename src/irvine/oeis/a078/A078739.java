@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A078739 Generalized Stirling2 array (2,2).
+ * A078739 Triangle of generalized Stirling numbers S_{2,2}(n,k) read by rows (n&gt;=1, 2&lt;=k&lt;=2n).
  * @author Georg Fischer
  */
 public class A078739 extends LambdaTable {

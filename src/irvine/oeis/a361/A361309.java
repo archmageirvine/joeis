@@ -4,7 +4,7 @@ package irvine.oeis.a361;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A361309 G.f. A(x) satisfies A(x) = Series_Reversion(x - x^4*A&apos;(x)^2).
+ * A361309 G.f. A(x) satisfies A(x) = Series_Reversion(x - x^4*A'(x)^2).
  * A(x) = Series_Reversion(x - x^4*A'(x)^2).
  * @author Georg Fischer
  */

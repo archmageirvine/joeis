@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A075522.
+ * A075529 Let x(0),...,x(n), be an additive chain of length n+1 with x(0)=1 and satisfying x(k) = x(k-1) + x(j) for some j &lt; k. a(n) is the number of distinct possible values taken on by x(n).
  * @author Sean A. Irvine
  */
 public class A075529 extends Sequence0 {

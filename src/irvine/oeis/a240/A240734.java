@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A240734 Floor(6^n/(2+sqrt(5))^n).
+ * A240734 a(n) = floor(6^n/(2+sqrt(5))^n).
  * @author Georg Fischer
  */
 public class A240734 extends FloorSequence {

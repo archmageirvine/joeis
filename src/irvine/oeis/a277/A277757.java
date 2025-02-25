@@ -4,7 +4,7 @@ package irvine.oeis.a277;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A277757 a(n) = 2^(6n+1).
+ * A277757 a(n) = 2^(6*n + 1).
  * @author Georg Fischer
  */
 public class A277757 extends GeneratingFunctionSequence {

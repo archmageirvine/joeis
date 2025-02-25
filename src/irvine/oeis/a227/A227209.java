@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a171.A171477;
 
 /**
- * A227209 Expansion of 1/((1-x)^2*(1-2x)*(1-4x)).
+ * A227209 Expansion of 1/((1-x)^2*(1-2*x)*(1-4*x)).
  * @author Sean A. Irvine
  */
 public class A227209 extends PartialSumSequence {

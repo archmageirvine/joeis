@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A075522.
+ * A075531 Number of gaps in the set of all possible values in the set X(n) given in A075529.
  * @author Sean A. Irvine
  */
 public class A075531 extends Sequence0 {

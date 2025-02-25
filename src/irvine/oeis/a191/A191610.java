@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a055.A055457;
 
 /**
- * A191610 Possible number of trailing zeros in n!.
+ * A191610 Possible number of trailing zeros in k!.
  * @author Sean A. Irvine
  */
 public class A191610 extends PartialSumSequence {

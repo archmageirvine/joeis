@@ -307,4 +307,32 @@ public final class GraphFactory {
     } while (bumper.bump(k));
     return g;
   }
+
+  /**
+   * Construct the king's graph of given order
+   * @param order number of rows (or columns)
+   * @return king's graph
+   */
+  public static Graph kingsGraph(final int order) {
+    final Graph g = GraphFactory.create(order * order);
+    for (int row = 0; row < order; ++row) {
+      for (int col = 0; col < order; ++col) {
+        final int v = row * order + col;
+        // Add edges to neighbors (horizontal, vertical, diagonal)
+        for (int dr = -1; dr <= 1; ++dr) {
+          for (int dc = -1; dc <= 1; ++dc) {
+            if (dr == 0 && dc == 0) {
+              continue; // Skip the vertex itself
+            }
+            final int newRow = row + dr;
+            final int newCol = col + dc;
+            if (newRow >= 0 && newRow < order && newCol >= 0 && newCol < order) {
+              g.addEdge(v, newRow * order + newCol);
+            }
+          }
+        }
+      }
+    }
+    return g;
+  }
 }

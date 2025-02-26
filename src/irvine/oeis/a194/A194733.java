@@ -30,7 +30,7 @@ public class A194733 extends AbstractSequence {
    * Generic constructor with parameters.
    * @param offset first index
    * @param r constant factor
-   * @param rel relation: 1 for ">", -1 for "<"
+   * @param rel relation: 1 for ">", -1 for "<" 
    */
   public A194733(final int offset, final CR r, final int rel) {
     super(offset);
@@ -56,7 +56,7 @@ public class A194733 extends AbstractSequence {
       for (int k = 1; k <= mN; ++k) {
         if (mRK.get(k).compareTo(rN, mPrec) < 0) {
           ++sum;
-        }
+        }  
       }
       ++sum; // why?
     }

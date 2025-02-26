@@ -19,7 +19,7 @@ public class A194814 extends A194733 {
    * Generic constructor with parameters.
    * @param offset first index
    * @param r constant factor
-   * @param rel relation: 1 for ">", -1 for "<"
+   * @param rel relation: 1 for ">", -1 for "<" 
    */
   public A194814(final int offset, final CR r, final int rel) {
     super(offset, r, rel);
@@ -42,7 +42,7 @@ public class A194814 extends A194733 {
       for (int k = 1; k < mN; ++k) {
         if (rN.add(mRK.get(k)).frac(mFrac).compareTo(rN.subtract(mRK.get(k)).frac(mFrac), mPrec) < 0) {
           ++sum;
-        }
+        }  
       }
       ++sum; // why?
     }

@@ -51,7 +51,7 @@ public class A075560 extends Sequence1 {
       throw new UnsupportedOperationException();
     }
     final long bit = 1L << mN;
-    while (mSumsValues.contains(mA)) {
+    while (mSumsValues.remove(mA)) {
       mA = mA.add(1);
     }
     final HashSet<State> newProducts = new HashSet<>();

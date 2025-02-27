@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A075540.
+ * A075562 Rearrangement of natural numbers such that every partial sum is a proper prime power.
  * @author Sean A. Irvine
  */
 public class A075562 extends Sequence1 {

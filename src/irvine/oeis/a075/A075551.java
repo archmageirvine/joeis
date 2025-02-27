@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a074.A074311;
 
 /**
- * A075533.
+ * A075551 Primes generated in A074311.
  * @author Sean A. Irvine
  */
 public class A075551 extends A074311 {

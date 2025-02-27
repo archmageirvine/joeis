@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 
 /**
- * A194662 Number of k in [1,n] for which &lt;n*r&gt;+&lt;k*r&gt; &gt; 1, where &lt; > = fractional part and r = (1+sqrt(5))/2 (the golden ratio); row sums of A164661.
+ * A194662 Number of k in [1,n] for which &lt;n*r&gt;+&lt;k*r&gt; &gt; 1, where &lt; &gt; = fractional part and r = (1+sqrt(5))/2 (the golden ratio); row sums of A164661.
  * @author Georg Fischer
  */
 public class A194662 extends A194733 {

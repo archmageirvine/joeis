@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075540.
+ * A075559 Smallest multiple of n not equal to n ending in (digits of) n.
  * @author Sean A. Irvine
  */
 public class A075559 extends Sequence1 {

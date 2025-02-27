@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075533.
+ * A075556 Smallest prime p not occurring earlier such that p+n is a square, or 0 if no such p exists.
  * @author Sean A. Irvine
  */
 public class A075556 extends Sequence1 {

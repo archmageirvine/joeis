@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075540.
+ * A075560 a(1) = 1, a(n) is the smallest number greater than the previous term that cannot be obtained as the sum of products of any group of earlier terms.
  * @author Sean A. Irvine
  */
 public class A075560 extends Sequence1 {

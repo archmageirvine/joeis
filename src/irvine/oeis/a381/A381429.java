@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A381429 E.g.f. A(x) satisfies A(x) = 1/( 1 - sinh(x) * A(x)^3 ).
+ * A381429 allocated for Seiichi Manyama.
  * @author Georg Fischer
  */
 public class A381429 extends LambdaSequence {

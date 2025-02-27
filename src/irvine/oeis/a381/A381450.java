@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A381450 Expansion of e.g.f. (1/x) * Series_Reversion( x/(1 + x * cosh(x))^3 ).
+ * A381450 allocated for Seiichi Manyama.
  * @author Georg Fischer
  */
 public class A381450 extends LambdaSequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A381442 Expansion of e.g.f. (1/x) * Series_Reversion( x/(1 + sinh(x))^2 ).
+ * A381442 allocated for Seiichi Manyama.
  * @author Georg Fischer
  */
 public class A381442 extends LambdaSequence {

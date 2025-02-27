@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A381444 Expansion of e.g.f. ( (1/x) * Series_Reversion( x * exp(-2*x * cosh(x)) ) )^(1/2).
+ * A381444 allocated for Seiichi Manyama.
  * @author Georg Fischer
  */
 public class A381444 extends LambdaSequence {

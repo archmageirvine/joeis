@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A075533.
+ * A075558 a(n) is the least composite number that has not yet appeared such that the n-th partial sum is a multiple of the n-th prime.
  * @author Sean A. Irvine
  */
 public class A075558 extends A000040 {

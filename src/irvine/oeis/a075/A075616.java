@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073672 Rearrangement of natural numbers such that sum of n (n&gt;1) terms starting from the n-th term (included) is a prime.
+ * A075616.
  * @author Sean A. Irvine
  */
 public class A075616 extends Sequence1 {

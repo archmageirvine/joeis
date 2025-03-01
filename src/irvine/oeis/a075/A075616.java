@@ -28,7 +28,7 @@ public class A075616 extends Sequence1 {
       return Z.TWO;
     }
     if ((mN & 1) == 1) {
-      while (!mUsed.add(++mK)) {
+      while (mUsed.remove(++mK)) {
         // do nothing
       }
       mA.add(mK);

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A075616.
+ * A075626 a(1) = 1, then group the natural numbers so that the n-th group contains n numbers relatively prime to n whose sum is divisible by n.
  * @author Sean A. Irvine
  */
 public class A075626 extends Sequence1 {

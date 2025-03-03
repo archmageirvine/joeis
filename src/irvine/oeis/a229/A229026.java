@@ -4,7 +4,7 @@ package irvine.oeis.a229;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A229026 Expansion of 1/((1-x)*((1-5x)^2)*(1-8x)).
+ * A229026 Expansion of 1/((1-x)*((1-5*x)^2)*(1-8*x)).
  * @author Georg Fischer
  */
 public class A229026 extends HolonomicRecurrence {

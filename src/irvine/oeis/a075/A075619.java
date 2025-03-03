@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import irvine.math.z.Z;
 
 /**
- * A075616.
+ * A075619 Concatenation of n numbers mentioned in A075618, divided by n.
  * @author Sean A. Irvine
  */
 public class A075619 extends A075618 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075616.
+ * A075639 a(1) = 1 and then group the prime numbers so that the n-th group contains n numbers with a composite sum: (1), (2, 7), (3, 5, 13), (11, 17, 19, 23), (29, 31, 37, 41, 47), (43, 53, 59, 61, 67, 71), ...
  * @author Sean A. Irvine
  */
 public class A075639 extends Sequence1 {

@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import irvine.math.z.Z;
 
 /**
- * A075616.
+ * A075620 Primes mentioned in A075616.
  * @author Sean A. Irvine
  */
 public class A075620 extends A075616 {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075616.
+ * A075616 Rearrangement of natural numbers so that starting with a(n) the concatenation of n numbers gives a prime.
  * @author Sean A. Irvine
  */
 public class A075616 extends Sequence1 {

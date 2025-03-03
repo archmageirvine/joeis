@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A061345 Odd prime powers.
+ * A061345 Powers of odd primes.  Alternatively, 1 and the odd prime powers (p^k, p an odd prime, k &gt;= 1).
  * @author Sean A. Irvine
  */
 public class A061345 extends A000040 {

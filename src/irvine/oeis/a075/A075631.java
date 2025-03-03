@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075616.
+ * A075631 Group the natural numbers so that the n-th group contains smallest set of consecutive numbers whose sum is a multiple of the sum for the previous group: (1), (2), (3, 4, 5), (6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18), (19, 20, ... Sequence gives sums of terms of the groups.
  * @author Sean A. Irvine
  */
 public class A075631 extends Sequence1 {

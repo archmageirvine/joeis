@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A247791 Primes p such that there is a prime q for which sigma(sigma(2q-1)) = p.
+ * A247791 Primes p such that there is a prime q for which sigma(sigma(2*q-1)) = p.
  *
  * @author Georg Fischer
  */

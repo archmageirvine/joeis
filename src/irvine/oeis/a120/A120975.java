@@ -4,7 +4,7 @@ package irvine.oeis.a120;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A120975 G.f. satisfies: A(x) = 1 + x*A(x)^4*[A(x*A(x)^4)]^4.
+ * A120975 G.f. A(x) satisfies A(x) = 1 + x*A(x)^4 * A(x*A(x)^4)^4.
  * 1+x*A(x)^4*(A(x*A(x)^4))^4
  * @author Georg Fischer
  */

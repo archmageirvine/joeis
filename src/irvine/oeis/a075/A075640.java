@@ -4,7 +4,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
- * A075616.
+ * A075640 Sums of groups in A075639.
  * @author Sean A. Irvine
  */
 public class A075640 extends A075639 {

@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000043;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A146768 Number k such that 2^(2k+1) - 1 = A000668(n+1).
+ * A146768 a(n) is the number k such that 2^(2k+1)-1 = A000668(n+1).
  * @author Georg Fischer
  */
 public class A146768 extends SingleTransformSequence {

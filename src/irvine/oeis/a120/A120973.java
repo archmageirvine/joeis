@@ -4,7 +4,7 @@ package irvine.oeis.a120;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A120973 G.f. satisfies: A(x) = 1 + x*A(x)^3*[A(x*A(x)^3)]^3.
+ * A120973 G.f. A(x) satisfies A(x) = 1 + x*A(x)^3 * A(x*A(x)^3)^3.
  * 1+x*A(x)^3*(A(x*A(x)^3))^3
  * @author Georg Fischer
  */

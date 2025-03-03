@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A154414 Primes of the form 20n^2+32n+13.
+ * A154414 Primes of the form 20*k^2 + 32*k + 13.
  * @author Georg Fischer
  */
 public class A154414 extends PrimeSubsequence {

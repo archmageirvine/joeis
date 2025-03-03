@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A143508 G.f. satisfies: A(x) = 1 + x*A(x*A(x)^2)^2.
+ * A143508 G.f. A(x) satisfies A(x) = 1 + x*A(x*A(x)^2)^2.
  * G.f.satisfies: A(x) = 1 + x*A(x*A(x)^2)^2
  * @author Georg Fischer
  */

@@ -4,7 +4,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A075616.
+ * A075633 Initial terms of groups in A075631.
  * @author Sean A. Irvine
  */
 public class A075633 extends SimpleTransformSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a048.A048264;
 
 /**
- * A324076 Integers which are the sum of distinct primes of the form 6n-1.
+ * A324076 Integers which are the sum of distinct primes of the form 6*n - 1.
  * @author Georg Fischer
  */
 public class A324076 extends ComplementSequence {

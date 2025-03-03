@@ -8,7 +8,7 @@ import irvine.oeis.transform.SimpleTransformSequence;
 
 
 /**
- * A288369 Primes of the form k!10+1, where k!10 is the decuple factorial number (A288327).
+ * A288369 Primes of the form k!10 + 1, where k!10 is the decuple factorial number (A288327).
  * @author Georg Fischer
  */
 public class A288369 extends PrimeSubsequence {

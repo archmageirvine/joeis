@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075614 Let P(k,X) = 4^k*Product_{i=1..k} (X - cos(Pi*i/k)) (which is a polynomial with integer coefficients). Sequence gives maximum values of coefficients of P(n,X).
+ * A075614 Let P(k,X) = 4^k*Product_{i=1..k} (X - cos(Pi*i/k)) (which is a polynomial with integer coefficients). Sequence gives maximum absolute values of coefficients of P(n,X).
  * @author Sean A. Irvine
  */
 public class A075614 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A037082 Primes of the form n!!! + 1.
+ * A037082 Primes of the form k!!! + 1.
  * @author Sean A. Irvine
  */
 public class A037082 extends Sequence1 {

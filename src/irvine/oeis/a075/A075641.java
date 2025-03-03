@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.math.z.Z;
 
 /**
- * A075616.
+ * A075641 Initial terms of groups in A075639.
  * @author Sean A. Irvine
  */
 public class A075641 extends A075639 {

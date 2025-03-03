@@ -4,7 +4,7 @@ package irvine.oeis.a217;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A217596 G.f.: x / reversion(x - x^2 - x^3).
+ * A217596 Expansion of g.f. x / reversion(x - x^2 - x^3).
  * @author Georg Fischer
  */
 public class A217596 extends HolonomicRecurrence {

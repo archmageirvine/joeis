@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A381448 allocated for Seiichi Manyama.
+ * A381448 E.g.f. A(x) satisfies A(x) = 1 + x*A(x)^3 * cosh(x*A(x)^3).
  * @author Georg Fischer
  */
 public class A381448 extends LambdaSequence {

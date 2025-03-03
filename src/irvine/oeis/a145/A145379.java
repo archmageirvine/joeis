@@ -5,7 +5,7 @@ import irvine.oeis.a077.A077051;
 import irvine.oeis.triangle.TruncatedTriangle;
 
 /**
- * A145379 Square array read by antidiagonals upwards.
+ * A145379 Square array read by antidiagonals upwards: T(n,k) = 1 if n divides k, T(n,k) = 0 otherwise, n &gt;= 1, k &gt;= 2.
  * @author Georg Fischer
  */
 public class A145379 extends TruncatedTriangle {

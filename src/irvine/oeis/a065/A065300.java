@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000203;
 
 /**
- * A065300 Numbers n such that sum of divisors is a squarefree number.
+ * A065300 Numbers k such that the sum of divisors of k is a squarefree number.
  * @author Sean A. Irvine
  */
 public class A065300 extends FilterPositionSequence {

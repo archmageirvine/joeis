@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.math.z.Z;
 
 /**
- * A075616.
+ * A075628 Final terms of groups in A075626.
  * @author Sean A. Irvine
  */
 public class A075628 extends A075626 {

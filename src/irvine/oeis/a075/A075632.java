@@ -4,7 +4,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.SelfQuotientSequence;
 
 /**
- * A075616.
+ * A075632 a(1) = 1, then {sum of terms of the n-th group in A075631}/{sum of (n-1)-th group}.
  * @author Sean A. Irvine
  */
 public class A075632 extends SelfQuotientSequence {

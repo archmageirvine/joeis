@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075616.
+ * A075624 Final terms of groups in A075621.
  * @author Sean A. Irvine
  */
 public class A075624 extends Sequence1 {

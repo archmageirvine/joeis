@@ -8,7 +8,7 @@ import irvine.oeis.transform.SimpleTransformSequence;
 
 
 /**
- * A288371 Primes of the form k!9+1, where k!9 is the nonuple factorial number (A114806).
+ * A288371 Primes of the form k!9 + 1, where k!9 is the nonuple factorial number (A114806).
  * @author Georg Fischer
  */
 public class A288371 extends PrimeSubsequence {

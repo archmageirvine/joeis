@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A075616.
+ * A075635 a(1) = 1 and then group the composite numbers so that the n-th group contains n numbers with a prime sum: (1), (4, 9), (6, 8, 15), (10, 12, 14, 25), (16, 18, 20, 21, 22), ...
  * @author Sean A. Irvine
  */
 public class A075635 extends Sequence1 {

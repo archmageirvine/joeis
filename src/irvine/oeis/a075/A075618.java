@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075616.
+ * A075618 Rearrangement of natural numbers so that starting with a(n) the concatenation of n numbers is divisible by n. Choose the smallest number that has not already appeared if there is a choice.
  * @author Sean A. Irvine
  */
 public class A075618 extends Sequence1 {

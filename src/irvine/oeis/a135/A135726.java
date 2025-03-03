@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A135726 Primes of the form n!!!-1 = A007661(n)-1, n&gt;0.
+ * A135726 Primes of the form k!!! - 1 = A007661(k) - 1, k &gt; 0.
  * @author Georg Fischer
  */
 public class A135726 extends FilterSequence {

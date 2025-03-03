@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A154651 Numbers n such that 991*n^2+1 is a prime.
+ * A154651 Numbers k such that 991*k^2+1 is a prime.
  * @author Georg Fischer
  */
 public class A154651 extends PrimePositionSubsequence {

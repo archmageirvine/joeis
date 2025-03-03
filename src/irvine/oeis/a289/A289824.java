@@ -8,7 +8,7 @@ import irvine.oeis.transform.SimpleTransformSequence;
 
 
 /**
- * A289824 Primes of the form k!3-19683, where k!3 is the triple factorial number (A007661).
+ * A289824 Primes of the form k!3 - 19683, where k!3 is the triple factorial number (A007661).
  * @author Georg Fischer
  */
 public class A289824 extends PrimeSubsequence {

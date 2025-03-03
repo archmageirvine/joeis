@@ -8,7 +8,7 @@ import irvine.oeis.transform.SimpleTransformSequence;
 
 
 /**
- * A289860 Primes of the form k!4-2, where k!4 is the quadruple factorial number (A007662).
+ * A289860 Primes of the form k!4 - 2, where k!4 is the quadruple factorial number (A007662).
  * @author Georg Fischer
  */
 public class A289860 extends PrimeSubsequence {

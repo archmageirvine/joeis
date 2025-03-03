@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A154511 Primes of the form 648n^2 - 72n + 1.
+ * A154511 Primes of the form 648*k^2 - 72*k + 1.
  * @author Georg Fischer
  */
 public class A154511 extends PrimeSubsequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075616.
+ * A075621 Group the natural numbers so that the n-th group contains n numbers whose concatenation is divisible by n: (1), (2, 4), (3, 5, 7), (6, 8, 9, 12), (10, 11, 13, 14, 15), (16, 17, 18, 19, 20, 24), ... Sequence gives numbers formed by the concatenation.
  * @author Sean A. Irvine
  */
 public class A075621 extends Sequence1 {

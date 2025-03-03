@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075616.
+ * A075625 Sums of terms of groups in A075621.
  * @author Sean A. Irvine
  */
 public class A075625 extends Sequence1 {

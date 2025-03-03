@@ -15,6 +15,6 @@ public class A351839 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A351839() {
-    super(1, 1, 1, (n, k) -> Integers.SINGLETON.sumdiv(k, d -> Z.TWO.pow(k / d).multiply(Functions.MOEBIUS.z(d))).multiply(Integers.SINGLETON.sum(1, n / k, m -> Binomial.binomial(n, k * m))));
+    super(1, 1, 1, (n, k) -> Integers.SINGLETON.sumdiv(k, d -> Z.TWO.pow(k / d).multiply(Functions.MOEBIUS.z(d))).multiply(Integers.SINGLETON.sum(1, n / k, m -> Binomial.binomial(n, (long) k * m))));
   }
 }

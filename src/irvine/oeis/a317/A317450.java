@@ -12,6 +12,6 @@ public class A317450 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A317450() {
-    super(1, n -> (n <= 2) ? Z.ONE : Z.NEG_ONE.pow((n - 2) * (n - 1) / 2).multiply(Z.TWO.pow((n - 1) * (n - 1))).multiply(Z.valueOf(n).pow(n - 3)));
+    super(1, n -> (n <= 2) ? Z.ONE : Z.NEG_ONE.pow((long) (n - 2) * (n - 1) / 2).multiply(Z.TWO.pow((long) (n - 1) * (n - 1))).multiply(Z.valueOf(n).pow(n - 3)));
   }
 }

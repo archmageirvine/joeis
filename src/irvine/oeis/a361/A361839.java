@@ -15,6 +15,6 @@ public class A361839 extends LambdaArray {
 
   /** Construct the sequence. */
   public A361839() {
-    super(0, 0, 0, -1, (n, k) -> Rationals.SINGLETON.sum(0, n, j -> Binomial.binomial(new Q(-1, 3), j).multiply(Binomial.binomial(k * j, n - j)).multiply(Z.valueOf(-9).pow(j))).num());
+    super(0, 0, 0, -1, (n, k) -> Rationals.SINGLETON.sum(0, n, j -> Binomial.binomial(new Q(-1, 3), j).multiply(Binomial.binomial((long) k * j, n - j)).multiply(Z.valueOf(-9).pow(j))).num());
   }
 }

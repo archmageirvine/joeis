@@ -13,6 +13,6 @@ public class A350122 extends LambdaArray {
 
   /** Construct the sequence. */
   public A350122() {
-    super(1, 1, 1, -1, (n, k) -> Integers.SINGLETON.sum(1, n, j -> Z.valueOf(n / (2 * j - 1)).pow(k)));
+    super(1, 1, 1, -1, (n, k) -> Integers.SINGLETON.sum(1, n, j -> Z.valueOf(n / (2L * j - 1)).pow(k)));
   }
 }

@@ -15,6 +15,6 @@ public class A185951 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A185951() {
-    super(1, 1, 1, (n, k) -> (k == n) ? Z.ONE : Rationals.SINGLETON.sum(0, k, j -> new Q(2 * j - k).pow(n - k).multiply(Binomial.binomial(k, j))).multiply(Binomial.binomial(n, k)).divide(Z.TWO.pow(k)).num());
+    super(1, 1, 1, (n, k) -> (k == n) ? Z.ONE : Rationals.SINGLETON.sum(0, k, j -> new Q(2L * j - k).pow(n - k).multiply(Binomial.binomial(k, j))).multiply(Binomial.binomial(n, k)).divide(Z.TWO.pow(k)).num());
   }
 }

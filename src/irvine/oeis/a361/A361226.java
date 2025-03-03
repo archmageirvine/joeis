@@ -12,6 +12,6 @@ public class A361226 extends LambdaArray {
 
   /** Construct the sequence. */
   public A361226() {
-    super(0, 0, 0, 1, (n, k) -> Z.valueOf(k).multiply((1 + 2 * n) * k - 1).divide(2));
+    super(0, 0, 0, 1, (n, k) -> Z.valueOf(k).multiply((1 + 2L * n) * k - 1).divide(2));
   }
 }

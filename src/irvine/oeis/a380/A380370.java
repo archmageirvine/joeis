@@ -15,6 +15,6 @@ public class A380370 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A380370() {
-    super(0, n -> Rationals.SINGLETON.sum(1, n / 5, k -> new Q(Z.NEG_ONE.pow(k - 1).multiply(Functions.FACTORIAL.z(5 * k)).multiply(Functions.STIRLING1.z(n, 5 * k).abs())).divide(new Q(120).pow(k).multiply(k))).num());
+    super(0, n -> Rationals.SINGLETON.sum(1, n / 5, k -> new Q(Z.NEG_ONE.pow(k - 1).multiply(Functions.FACTORIAL.z(5 * k)).multiply(Functions.STIRLING1.z(n, 5L * k).abs())).divide(new Q(120).pow(k).multiply(k))).num());
   }
 }

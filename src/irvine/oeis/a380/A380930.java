@@ -16,7 +16,7 @@ public class A380930 extends FilterNumberSequence {
   public A380930() {
     super(1, 0, k -> {
       final int h = Functions.DIGIT_SUM.i(2, k);
-      return Integers.SINGLETON.sumdiv(k, d -> (Functions.DIGIT_SUM.i(2, d) == h ? Z.ONE : Z.ZERO).multiply(d)).compareTo(Z.valueOf(3 * k)) > 0;
+      return Integers.SINGLETON.sumdiv(k, d -> (Functions.DIGIT_SUM.i(2, d) == h ? Z.ONE : Z.ZERO).multiply(d)).compareTo(Z.valueOf(3L * k)) > 0;
     });
   }
 }

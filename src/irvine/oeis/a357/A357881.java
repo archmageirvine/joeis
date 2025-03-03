@@ -13,6 +13,6 @@ public class A357881 extends LambdaArray {
 
   /** Construct the sequence. */
   public A357881() {
-    super(0, 0, 0, -1, (n, k) -> Integers.SINGLETON.sum(0, n, j -> Functions.FACTORIAL.z(k * j).multiply(Functions.STIRLING1.z(n, k * j).abs())));
+    super(0, 0, 0, -1, (n, k) -> Integers.SINGLETON.sum(0, n, j -> Functions.FACTORIAL.z(k * j).multiply(Functions.STIRLING1.z(n, (long) k * j).abs())));
   }
 }

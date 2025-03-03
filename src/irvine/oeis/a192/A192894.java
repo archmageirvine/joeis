@@ -14,7 +14,7 @@ public class A192894 extends MultiTransformSequence {
   public A192894() {
     super(1, (self, n) -> {
       final int h = n / 2;
-      return ((n & 1) == 0) ? Binomial.binomial(13 * h, h).divide(12 * h + 1) : (Binomial.binomial(13 * h + 6, h).multiply(7).divide(12 * h + 7));
+      return ((n & 1) == 0) ? Binomial.binomial(13L * h, h).divide(12L * h + 1) : (Binomial.binomial(13L * h + 6, h).multiply(7).divide(12L * h + 7));
     }, "");
   }
 }

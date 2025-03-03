@@ -21,7 +21,7 @@ public class A380945 extends LambdaSequence {
       final int s = 2;
       final int t = 0;
       final int u = 1;
-      return Rationals.SINGLETON.sum(0, n, k -> new Q(r * n + (s - r) * k + q).pow(k - 1).multiply(Binomial.binomial((r * u + 1) * n + ((s - r) * u + t - 1) * k + q * u - 1, n - k)).divide(Functions.FACTORIAL.z(k))).multiply(Functions.FACTORIAL.z(n).multiply(q)).num();
+      return Rationals.SINGLETON.sum(0, n, k -> new Q((long) r * n + (long) (s - r) * k + q).pow(k - 1).multiply(Binomial.binomial((r * u + 1) * n + ((s - r) * u + t - 1) * k + q * u - 1, n - k)).divide(Functions.FACTORIAL.z(k))).multiply(Functions.FACTORIAL.z(n).multiply(q)).num();
     });
   }
 }

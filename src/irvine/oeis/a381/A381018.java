@@ -13,6 +13,6 @@ public class A381018 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A381018() {
-    super(1, n -> Integers.SINGLETON.sum(0, n, k -> Integers.SINGLETON.sum(0, k * k / 4, j -> Z.valueOf(k).multiply(k).divide(4 * j + 1).subtract(Z.valueOf(k).multiply(k).divide(4 * j + 3))).multiply(4).add(1).isProbablePrime() ? Z.ONE : Z.ZERO));
+    super(1, n -> Integers.SINGLETON.sum(0, n, k -> Integers.SINGLETON.sum(0, k * k / 4, j -> Z.valueOf(k).multiply(k).divide(4L * j + 1).subtract(Z.valueOf(k).multiply(k).divide(4L * j + 3))).multiply(4).add(1).isProbablePrime() ? Z.ONE : Z.ZERO));
   }
 }

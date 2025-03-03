@@ -13,6 +13,6 @@ public class A363418 extends LambdaArray {
 
   /** Construct the sequence. */
   public A363418() {
-    super(1, 1, 1, 1, (n, k) -> Integers.SINGLETON.sum(0, k, j -> Binomial.binomial(k, j).multiply(Binomial.binomial((n + 1) * k - j - 1, n * k - j))));
+    super(1, 1, 1, 1, (n, k) -> Integers.SINGLETON.sum(0, k, j -> Binomial.binomial(k, j).multiply(Binomial.binomial((long) (n + 1) * k - j - 1, (long) n * k - j))));
   }
 }

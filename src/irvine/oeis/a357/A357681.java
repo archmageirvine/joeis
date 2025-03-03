@@ -14,6 +14,6 @@ public class A357681 extends LambdaArray {
 
   /** Construct the sequence. */
   public A357681() {
-    super(0, 0, 0, -1, (n, k) -> Integers.SINGLETON.sum(0, n / 2, j -> Z.valueOf(k).pow(j).multiply(Functions.STIRLING2.z(n, 2 * j))));
+    super(0, 0, 0, -1, (n, k) -> Integers.SINGLETON.sum(0, n / 2, j -> Z.valueOf(k).pow(j).multiply(Functions.STIRLING2.z(n, 2L * j))));
   }
 }

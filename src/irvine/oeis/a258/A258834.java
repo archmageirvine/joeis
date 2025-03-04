@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A258834 Nonhomogeneous Beatty sequence: ceiling((n - 1/4)*(2 + sqrt(2))).
+ * A258834 Nonhomogeneous Beatty sequence: a(n) = ceiling((n - 1/4)*(2 + sqrt(2))).
  * @author Georg Fischer
  */
 public class A258834 extends LambdaSequence {

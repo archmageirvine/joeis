@@ -2512,3 +2512,4 @@ A075463 a(n) is the number of rotation-reflection inequivalent solutions to the 
 A075464 a(n) is the minimal number of nontrivial switch flippings needed to solve the all-ones lights out problem on an n X n square. [C code exists]
 A075534 Number of increasing rooted trees where each node at height h has 0 or h+1 children.
 A075550 Irredundance number for kings graph K(n).
+A075692 Upper irredundance number for queens graph Q_n on n^2 nodes.

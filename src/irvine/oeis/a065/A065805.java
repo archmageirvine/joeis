@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065805 a(n) = Sum_{j=0..n} sigma(j,n).
+ * A065805 a(n) = Sum_{j=0..n} sigma_j(n).
  * @author Sean A. Irvine
  */
 public class A065805 extends Sequence1 {

@@ -7,7 +7,7 @@ import java.util.Arrays;
  * A polyominoid.
  * @author jmason
  */
-class PolySide  extends PolyBase {
+class PolySide extends PolyBase {
 
   private final int mSize;
   private final Side[] mSides;

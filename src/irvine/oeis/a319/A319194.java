@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A319194 a(n) = Sum_{k=1..n} sigma(n,k).
+ * A319194 a(n) = Sum_{k=1..n} sigma_n(k).
  * a(n) = sum(k=1,n,k^n * (n\k));
  * @author Georg Fischer
  */

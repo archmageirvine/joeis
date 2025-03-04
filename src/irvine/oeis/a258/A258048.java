@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A258048 Nonhomogeneous Beatty sequence: ceiling((n + 1/2)*Pi/(Pi- 1))
+ * A258048 Nonhomogeneous Beatty sequence: a(n) = ceiling((n + 1/2)*Pi/(Pi - 1)).
  * @author Georg Fischer
  */
 public class A258048 extends LambdaSequence {

@@ -1,4 +1,4 @@
-package irvine.oeis.a033;
+package irvine.oeis.a075;
 
 import irvine.math.function.Functions;
 import irvine.math.predicate.Predicates;
@@ -6,10 +6,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A033665 Number of 'Reverse and Add' steps needed to reach a palindrome starting at n, or -1 if n never reaches a palindrome.
+ * A075685 Reverse and Add! carried out in base 4; number of steps needed to reach a palindrome, or -1 if no palindrome is ever reached.
  * @author Sean A. Irvine
  */
-public class A033665 extends Sequence0 {
+public class A075685 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 
@@ -18,8 +18,8 @@ public class A033665 extends Sequence0 {
     mN = mN.add(1);
     long c = 0;
     Z m = mN;
-    while (!Predicates.PALINDROME.is(m)) {
-      m = m.add(Functions.REVERSE.z(m));
+    while (!Predicates.PALINDROME.is(4, m)) {
+      m = m.add(Functions.REVERSE.z(4, m));
       ++c;
     }
     return Z.valueOf(c);

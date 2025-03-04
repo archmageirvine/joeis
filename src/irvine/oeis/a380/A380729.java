@@ -63,8 +63,8 @@ public class A380729 extends Sequence1 {
     final long s1 = mM * mM;
     final long s2 = 2 * s1;
     final long s3 = 3 * s1;
-    while (e < end) {
-      final long e2 = ++e * e;
+    while (++e < end) {
+      final long e2 = e * e;
       if (mVerbose && e > 2 * mM) {
         StringUtils.message("n=" + mN + " trying e=" + e);
       }

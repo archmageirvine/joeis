@@ -59,7 +59,7 @@ public class A380729 extends Sequence1 {
   }
 
   private Z search(final long start, final long end) {
-    long e = Math.max(start, mM + 4);
+    long e = Math.max(start - 1, mM + 4);
     final long s1 = mM * mM;
     final long s2 = 2 * s1;
     final long s3 = 3 * s1;
@@ -106,7 +106,7 @@ public class A380729 extends Sequence1 {
       return compute();
     }
     mM = mM == 0 ? 1 : mM * 10;
-    return search(0, Long.MAX_VALUE);
+    return search(1, Long.MAX_VALUE);
   }
 
   /**

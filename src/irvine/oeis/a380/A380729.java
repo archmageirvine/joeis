@@ -46,6 +46,9 @@ public class A380729 extends Sequence1 {
             if (t.compareTo(bs) < 0) {
               final Z[] a = t.sqrtAndRemainder();
               if (a[1].isZero() && Functions.GCD.l(e, d, c, b, a[0].longValueExact()) == 1) {
+                if (mVerbose) {
+                  StringUtils.message("Solution (a,b,c,d,e)=(" + a[0] + "," + b + "," + c + "," + d + "," + e + ")");
+                }
                 return Z.valueOf(e);
               }
             }
@@ -89,6 +92,9 @@ public class A380729 extends Sequence1 {
             if (t < bs) {
               final long a = Functions.SQRT.l(t);
               if (a * a == t && Functions.GCD.l(e, d, c, b, a) == 1) {
+                if (mVerbose) {
+                  StringUtils.message("Solution (a,b,c,d,e)=(" + a + "," + b + "," + c + "," + d + "," + e + ")");
+                }
                 return Z.valueOf(e);
               }
             }

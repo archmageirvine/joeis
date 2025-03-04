@@ -58,17 +58,12 @@ public class A380729 extends Sequence1 {
     }
   }
 
-  @Override
-  public Z next() {
-    if (++mN > 10) {
-      return compute();
-    }
-    mM = mM == 0 ? 1 : mM * 10;
-    long e = mM + 4;
+  private Z search(final long start, final long end) {
+    long e = Math.max(start, mM + 4);
     final long s1 = mM * mM;
     final long s2 = 2 * s1;
     final long s3 = 3 * s1;
-    while (true) {
+    while (e < end) {
       final long e2 = ++e * e;
       if (mVerbose && e > 2 * mM) {
         StringUtils.message("n=" + mN + " trying e=" + e);
@@ -102,5 +97,28 @@ public class A380729 extends Sequence1 {
         }
       }
     }
+    return null;
+  }
+
+      @Override
+  public Z next() {
+    if (++mN > 10) {
+      return compute();
+    }
+    mM = mM == 0 ? 1 : mM * 10;
+    return search(0, Long.MAX_VALUE);
+  }
+
+  /**
+   * Manual entry point for directly searching a specific range.
+   * @param args n start end
+   */
+  public static void main(final String[] args) {
+    final long n = Long.parseLong(args[0]);
+    final long start = Long.parseLong(args[1]);
+    final long end = Long.parseLong(args[2]);
+    final A380729 seq = new A380729();
+    seq.mM = Z.TEN.pow(n - 1).longValueExact();
+    System.out.println(seq.search(start, end));
   }
 }

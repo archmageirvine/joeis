@@ -118,6 +118,7 @@ public class A380729 extends Sequence1 {
     final long start = Long.parseLong(args[1]);
     final long end = Long.parseLong(args[2]);
     final A380729 seq = new A380729();
+    seq.mN = n;
     seq.mM = Z.TEN.pow(n - 1).longValueExact();
     System.out.println(seq.search(start, end));
   }

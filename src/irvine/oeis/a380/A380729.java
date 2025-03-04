@@ -15,9 +15,8 @@ public class A380729 extends Sequence1 {
   private long mN = 0;
   private long mM = 0;
 
-  @Override
-  public Z next() {
-    ++mN;
+  // Arbitrary precision version
+  private Z compute() {
     mM = mM == 0 ? 1 : mM * 10;
     long e = mM + 4;
     final Z s1 = Z.valueOf(mM).square();
@@ -47,6 +46,49 @@ public class A380729 extends Sequence1 {
             if (t.compareTo(bs) < 0) {
               final Z[] a = t.sqrtAndRemainder();
               if (a[1].isZero() && Functions.GCD.l(e, d, c, b, a[0].longValueExact()) == 1) {
+                return Z.valueOf(e);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @Override
+  public Z next() {
+    if (++mN > 10) {
+      return compute();
+    }
+    mM = mM == 0 ? 1 : mM * 10;
+    long e = mM + 4;
+    final long s1 = mM * mM;
+    final long s2 = 2 * s1;
+    final long s3 = 3 * s1;
+    while (true) {
+      final long e2 = ++e * e;
+      if (mVerbose && e > 2 * mM) {
+        StringUtils.message("n=" + mN + " trying e=" + e);
+      }
+      for (long d = mM + 3; d < e; ++d) {
+        final long r = e2 - d * d;
+        if (r <= s3) {
+          break;
+        }
+        for (long c = mM + 2; c < d; ++c) {
+          final long s = r - c * c;
+          if (s <= s2) {
+            break;
+          }
+          for (long b = mM + 1; b < c; ++b) {
+            final long bs = b * b;
+            final long t = s - bs;
+            if (t < s1) {
+              break;
+            }
+            if (t < bs) {
+              final long a = Functions.SQRT.l(t);
+              if (a * a == t && Functions.GCD.l(e, d, c, b, a) == 1) {
                 return Z.valueOf(e);
               }
             }

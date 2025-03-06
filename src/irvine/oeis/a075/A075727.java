@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A075697.
+ * A075727 a(n) = 2 Pi * n rounded off.
  * @author Sean A. Irvine
  */
 public class A075727 extends Sequence0 {

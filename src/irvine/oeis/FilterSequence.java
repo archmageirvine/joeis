@@ -62,12 +62,22 @@ public class FilterSequence extends AbstractSequence {
    * @param seq underlying sequence
    * @param predicate predicate used for filtering
    */
-  public FilterSequence(final int offset, final Sequence seq, final BiPredicate<Integer, Z> predicate) {
+  public FilterSequence(final int offset, final Sequence seq, final int start, final BiPredicate<Integer, Z> predicate) {
     super(offset);
     mSeq = seq;
     mPredicate = null;
     mBiPredicate = predicate;
-    mN = seq.getOffset() - 1;
+    mN = start - 1;
+  }
+
+  /**
+   * Filter with both the index and sequence value.
+   * @param offset offset of filtered sequence
+   * @param seq underlying sequence
+   * @param predicate predicate used for filtering
+   */
+  public FilterSequence(final int offset, final Sequence seq, final BiPredicate<Integer, Z> predicate) {
+    this(offset, seq, seq.getOffset(), predicate);
   }
 
   /**

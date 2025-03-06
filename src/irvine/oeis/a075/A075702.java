@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A075698.
+ * A075702 Numbers k such that the k-th prime divides the k-th Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A075702 extends A000040 {

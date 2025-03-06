@@ -4,7 +4,7 @@ package irvine.oeis.a268;
 import irvine.oeis.a257.A257638;
 
 /**
- * A268305 Numbers n such that  n - 37, n - 1, n + 1, n + 37 are consecutive primes.
+ * A268305 Numbers k such that k - 37, k - 1, k + 1, k + 37 are consecutive primes.
  * @author Georg Fischer
  */
 public class A268305 extends A257638 {

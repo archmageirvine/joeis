@@ -11,6 +11,6 @@ public class A075751 extends PrimeConditionListSequence {
 
   /** Construct the sequence */
   public A075751() {
-    super(1, 210, -13, 210, +13);
+    super(1, 210, -13, 210, 13);
   }
 }

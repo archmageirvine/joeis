@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A075719.
+ * A075722 Numbers n such that 1 + n + n^s is a prime, s = 7.
  * @author Sean A. Irvine
  */
 public class A075722 extends FilterNumberSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A075697.
+ * A075712 Rearrangement of primes into Germain groups (or Cunningham chains).
  * @author Sean A. Irvine
  */
 public class A075712 extends A000040 {

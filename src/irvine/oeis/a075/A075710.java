@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075697.
+ * A075710 Numerator of Sum_{k=1..n} frac(n/k), where frac(x/y) denotes the fractional part of x/y.
  * @author Sean A. Irvine
  */
 public class A075710 extends Sequence1 {

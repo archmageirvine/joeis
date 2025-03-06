@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A075698.
+ * A075703 a(n) = maximal m such that Sum_{k=n..m} prime(k) &lt;= prime(n)*prime(m).
  * @author Sean A. Irvine
  */
 public class A075703 extends A000040 {

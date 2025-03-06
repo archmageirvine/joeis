@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a056.A056240;
 
 /**
- * A075697.
+ * A075721 a(n+1) = least k with sum of prime factors (with repetition) = a(n)+1 with a(0) = 2.
  * @author Sean A. Irvine
  */
 public class A075721 extends Sequence0 {

@@ -4,7 +4,7 @@ package irvine.oeis.a132;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A132070 G.f. satisfies: A(x) = 1 + x*A(x) * A(x*A(x)) + x^2*A(x)^2 * A&apos;(x*A(x)).
+ * A132070 G.f. satisfies: A(x) = 1 + x*A(x) * A(x*A(x)) + x^2*A(x)^2 * A'(x*A(x)).
  * reversion(x/(1 + x*A(x) + x^2*dif(A(x))))/x
  * @author Georg Fischer
  */

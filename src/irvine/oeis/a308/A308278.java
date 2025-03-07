@@ -8,7 +8,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a010.A010052;
 
 /**
- * A308278 Take all the integer-sided triangles with perimeter n and square number sides a, b, and c such that a &lt;= b &lt;= c. a(n) is the sum of all the b&apos;s.
+ * A308278 Take all the integer-sided triangles with perimeter n and square number sides a, b, and c such that a &lt;= b &lt;= c. a(n) is the sum of all the b's.
  * @author Georg Fischer
  */
 public class A308278 extends LambdaSequence {

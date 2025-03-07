@@ -4,7 +4,7 @@ package irvine.oeis.a183;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A183607 G.f. satisfies: A(x) = 1/(1 - x - x*{d/dx x^2*A&apos;(x)/A(x)}).
+ * A183607 G.f. satisfies: A(x) = 1/(1 - x - x*{d/dx x^2*A'(x)/A(x)}).
  * A(x) = 1/(1 - x - x*{d/dx x^2*A'(x)/A(x)}).'
  * @author Georg Fischer
  */

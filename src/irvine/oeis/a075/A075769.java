@@ -2,6 +2,7 @@ package irvine.oeis.a075;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 import irvine.math.function.Functions;
 import irvine.math.predicate.Predicates;
@@ -12,15 +13,15 @@ import irvine.util.Pair;
 import irvine.util.string.StringUtils;
 
 /**
- * A075768 A Wallis pair (x,y) satisfies sigma(x^2) = sigma(y^2); sequence gives x's for indecomposable Wallis pairs with x &lt; y (ordered by values of x).
+ * A075769 A Wallis pair (x,y) satisfies sigma(x^2) = sigma(y^2); sequence gives y's for indecomposable Wallis pairs with x &lt; y (ordered by values of x).
  * @author Sean A. Irvine
  */
-public class A075768 extends Sequence1 {
+public class A075769 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final HashSet<Pair<Z, Z>> mWallisPairs = new HashSet<>();
   private Z mN = Z.THREE;
-  private long mCount = 0;
+  private final TreeSet<Z> mY = new TreeSet<>();
 
   private boolean isIndecomposable(final Pair<Z, Z> w) {
     final Z x0 = w.left();
@@ -41,16 +42,14 @@ public class A075768 extends Sequence1 {
 
   @Override
   public Z next() {
-    if (mCount > 0) {
-      --mCount;
-      return mN;
-    }
     while (true) {
+      if (!mY.isEmpty()) {
+        return mY.pollFirst();
+      }
       mN = mN.add(1);
       final Z ns = mN.square();
       final Z sigma = Functions.SIGMA1.z(ns);
       final Set<Z> invSigma = InverseSigma.inverseSigma(sigma, 1);
-      mCount = 0;
       for (final Z t : invSigma) {
         if (t.compareTo(ns) > 0 && Predicates.SQUARE.is(t)) {
           final Z y = t.sqrt();
@@ -60,13 +59,9 @@ public class A075768 extends Sequence1 {
               StringUtils.message("(" + mN + "," + y + ")");
             }
             mWallisPairs.add(w);
-            ++mCount;
+            mY.add(y);
           }
         }
-      }
-      if (mCount > 0) {
-        --mCount;
-        return mN;
       }
     }
   }

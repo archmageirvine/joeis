@@ -33,7 +33,7 @@ public class A075721 extends Sequence0 {
         Z c = p;
         while (b.compareTo(n1.subtract(p)) > 0) {
           p = Functions.PREV_PRIME.z(p);
-          Z m = mV.a(n1.subtract(p));
+          final Z m = mV.a(n1.subtract(p));
           if (m.compareTo(b) < 0) {
             b = m;
             c = p;
@@ -45,12 +45,3 @@ public class A075721 extends Sequence0 {
     return mA;
   }
 }
-// v = vector(200); count = 0; m = 2; print1("2 3 4 5 8 "); n = 8; while (count < 199, f = factor(m); s = sum(i = 1, matsize(f)[1], f[i, 1]*f[i, 2]); if (s <= 200 && v[s] == 0, count++; v[s] = m); m++);
-// for (i = 1, 20,
-// p = precprime(n + 1);
-// if (p == n + 1, n++; print1(n, " "),
-// b = v[n + 1 - p];
-// c = p;
-// while (b > n + 1 - p, p = precprime(p - 1); m = v[n + 1 - p]; if (m < b, b = m; c = p));
-// n = b*c;
-// print1(n, " ")));

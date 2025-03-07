@@ -11,52 +11,11 @@ import irvine.util.string.StringUtils;
  */
 public class A380729 extends Sequence1 {
 
+  // This code was used to complete the verification of a(8) and a(9).
+
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private long mN = 0;
   private long mM = 0;
-
-  // Arbitrary precision version
-  private Z compute() {
-    mM = mM == 0 ? 1 : mM * 10;
-    long e = mM + 4;
-    final Z s1 = Z.valueOf(mM).square();
-    final Z s2 = s1.multiply2();
-    final Z s3 = s1.multiply(3);
-    while (true) {
-      final Z e2 = Z.valueOf(++e).square();
-      if (mVerbose && e > 2 * mM) {
-        StringUtils.message("n=" + mN + " trying e=" + e);
-      }
-      for (long d = mM + 3; d < e; ++d) {
-        final Z r = e2.subtract(Z.valueOf(d).square());
-        if (r.compareTo(s3) <= 0) {
-          break;
-        }
-        for (long c = mM + 2; c < d; ++c) {
-          final Z s = r.subtract(Z.valueOf(c).square());
-          if (s.compareTo(s2) <= 0) {
-            break;
-          }
-          for (long b = mM + 1; b < c; ++b) {
-            final Z bs = Z.valueOf(b).square();
-            final Z t = s.subtract(bs);
-            if (t.compareTo(s1) < 0) {
-              break;
-            }
-            if (t.compareTo(bs) < 0) {
-              final Z[] a = t.sqrtAndRemainder();
-              if (a[1].isZero() && Functions.GCD.l(e, d, c, b, a[0].longValueExact()) == 1) {
-                if (mVerbose) {
-                  StringUtils.message("Solution (a,b,c,d,e)=(" + a[0] + "," + b + "," + c + "," + d + "," + e + ")");
-                }
-                return Z.valueOf(e);
-              }
-            }
-          }
-        }
-      }
-    }
-  }
 
   private Z search(final long start, final long end) {
     long e = Math.max(start - 1, mM + 4);
@@ -103,7 +62,7 @@ public class A380729 extends Sequence1 {
       @Override
   public Z next() {
     if (++mN > 10) {
-      return compute();
+      throw new UnsupportedOperationException();
     }
     mM = mM == 0 ? 1 : mM * 10;
     return search(1, Long.MAX_VALUE);

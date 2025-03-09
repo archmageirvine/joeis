@@ -14,13 +14,23 @@ public class A073101 extends Sequence1 {
   // After Robert Israel
 
   private long mN = 0;
+  private final long mNum;
+
+  protected A073101(final long num) {
+    mNum = num;
+  }
+
+  /** Construct the sequence. */
+  public A073101() {
+    this(4);
+  }
 
   @Override
   public Z next() {
-    ++mN;
+    final Q u = new Q(mNum, ++mN);
     long cnt = 0;
-    for (long x = 1 + mN / 4; x < (3 * mN + 3) / 4; ++x) {
-      final Q t = new Q(4, mN).subtract(new Q(1, x));
+    for (long x = 1 + mN / mNum; x < (3 * mN + mNum - 1) / mNum; ++x) {
+      final Q t = u.subtract(new Q(1, x));
       final long p = t.num().longValueExact();
       final long q = t.den().longValueExact();
       for (final Z dd : Jaguar.factor(q * q).divisors()) {

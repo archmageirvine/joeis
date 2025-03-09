@@ -2514,3 +2514,5 @@ A075534 Number of increasing rooted trees where each node at height h has 0 or h
 A075550 Irredundance number for kings graph K(n).
 A075692 Upper irredundance number for queens graph Q_n on n^2 nodes.
 A075709 Upper irredundance number for kings graph K_n on n^2 nodes.
+A075788 If n can be written in the form r^i-s^j (see A074981), where r,s,i,j are integers with r>0, s>0, i>1, j>1 choose the representation with smallest r^i (in case of ties, minimize i and j); or if n is not of this form set r=s=i=j=0; sequence gives values of r.
+A075789 Value of i, when n is written as r^i - s^j with the smallest possible r^i (with minimal i) and r, s > 0, i, j > 1; or 0 if n is not of this form.

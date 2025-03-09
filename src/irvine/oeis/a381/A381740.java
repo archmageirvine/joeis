@@ -6,13 +6,13 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A381738 Numbers k such that k^2 is abundant.
+ * A381740 Squarefree numbers k such that k^2 is abundant.
  * @author Georg Fischer
  */
-public class A381738 extends FilterNumberSequence {
+public class A381740 extends FilterNumberSequence {
 
   /** Construct the sequence. */
-  public A381738() {
-    super(1, 1, k -> Predicates.ABUNDANT.is(Z.valueOf(k).multiply(k)));
+  public A381740() {
+    super(1, 1, k -> Predicates.SQUARE_FREE.is(k) && Predicates.ABUNDANT.is(Z.valueOf(k).multiply(k)));
   }
 }

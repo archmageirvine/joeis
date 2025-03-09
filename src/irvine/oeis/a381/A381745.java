@@ -6,13 +6,13 @@ import irvine.math.z.Integers;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A381744 Expansion of exp( Sum_{k&gt;=1} binomial(6*k-1,2*k) * x^k/k ).
+ * A381745 Expansion of exp( Sum_{k&gt;=1} binomial(8*k-1,2*k) * x^k/k ).
  * @author Georg Fischer
  */
-public class A381744 extends MultiTransformSequence {
+public class A381745 extends MultiTransformSequence {
 
   /** Construct the sequence. */
-  public A381744() {
-    super(0, (self, n) -> Integers.SINGLETON.sum(1, n, k -> self.a(n - k).multiply(Binomial.binomial(6 * k - 1, 2 * k))).divide(n), "1");
+  public A381745() {
+    super(0, (self, n) -> Integers.SINGLETON.sum(1, n, k -> self.a(n - k).multiply(Binomial.binomial(8 * k - 1, 2 * k))).divide(n), "1");
   }
 }

@@ -6,13 +6,13 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A381738 Numbers k such that k^2 is abundant.
+ * A381725 Numbers k such that 5^k - 4^k is a semiprime.
  * @author Georg Fischer
  */
-public class A381738 extends FilterNumberSequence {
+public class A381725 extends FilterNumberSequence {
 
   /** Construct the sequence. */
-  public A381738() {
-    super(1, 1, k -> Predicates.ABUNDANT.is(Z.valueOf(k).multiply(k)));
+  public A381725() {
+    super(1, 0, k -> Predicates.SEMIPRIME.is(Z.FIVE.pow(k).subtract(Z.FOUR.pow(k))));
   }
 }

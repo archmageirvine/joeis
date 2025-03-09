@@ -414,9 +414,17 @@ public class PolynomialFieldSequence extends AbstractSequence {
         case 41:  // "lambertW"  normal definition
           mStack.set(top, RING.lambertW(mStack.get(top), m));
           break;
-        case
-          42:  // "lambNegW"  workaround if only the "negated" version works - normally this should be identical with <code>lambertW</code>
+        case 42:  // "lambNegW"  workaround if only the "negated" version works - normally this should be identical with <code>lambertW</code>
           mStack.set(top, RING.negate(RING.lambertW(mStack.get(top), m)));
+          break;
+        case 43:  // "n"  push the current index
+          mStack.set(++top, Polynomial.create(new Q(mN)));
+          break;
+        case 44:  // "catalan"  push catalan(top element) C:= proc(x) (1 - sqrt(1 - 4*x)) / (2*x) end; 
+          Polynomial<Q> x14 = RING.subtract(Polynomial.create(Q.ONE), RING.multiply(mStack.get(top), Q.FOUR));
+          Polynomial<Q> x2 = RING.multiply(mStack.get(top), Q.TWO);
+          // System.out.println("x14=" + x14 + ", x2= " + x2);
+          mStack.set(++top, RING.series(RING.subtract(Polynomial.create(Q.ONE), RING.sqrt(x14, m)), x2, m));
           break;
         default: // should not occur with proper postfix expressions
           throw new RuntimeException("invalid postfix code " + ix);
@@ -485,7 +493,8 @@ public class PolynomialFieldSequence extends AbstractSequence {
     POST_MAP.put("tan", 31);
     POST_MAP.put("tanh", 30);
     POST_MAP.put("x", 3);
-//  sPostMap.put("dup", 43);
+    POST_MAP.put("n", 43);
+    POST_MAP.put("catalan", 44);
   } //! fillMap
 
   @Override

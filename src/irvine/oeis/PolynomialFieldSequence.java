@@ -421,8 +421,8 @@ public class PolynomialFieldSequence extends AbstractSequence {
           mStack.set(++top, Polynomial.create(new Q(mN)));
           break;
         case 44:  // "catalan"  push catalan(top element) C:= proc(x) (1 - sqrt(1 - 4*x)) / (2*x) end; 
-          Polynomial<Q> x14 = RING.subtract(Polynomial.create(Q.ONE), RING.multiply(mStack.get(top), Q.FOUR));
-          Polynomial<Q> x2 = RING.multiply(mStack.get(top), Q.TWO);
+          final Polynomial<Q> x14 = RING.subtract(Polynomial.create(Q.ONE), RING.multiply(mStack.get(top), Q.FOUR));
+          final Polynomial<Q> x2 = RING.multiply(mStack.get(top), Q.TWO);
           // System.out.println("x14=" + x14 + ", x2= " + x2);
           mStack.set(++top, RING.series(RING.subtract(Polynomial.create(Q.ONE), RING.sqrt(x14, m)), x2, m));
           break;

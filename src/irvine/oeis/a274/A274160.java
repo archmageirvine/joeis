@@ -48,7 +48,7 @@ public class A274160 extends AbstractSequence {
    */
   private boolean eligible(final Polynomial<CC> p1) {
     mG.add(p1);
-    CC e = RING.eval(p1, mR);
+    final CC e = RING.eval(p1, mR);
     return e.im().compareTo(CR.ZERO, -32) == 0 && e.re().isInteger();
   }
 

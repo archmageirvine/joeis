@@ -13,6 +13,6 @@ public class A075807 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A075807() {
-    super(1, new A002385(), v -> Functions.PRIME_PI.z(v));
+    super(1, new A002385(), Functions.PRIME_PI::z);
   }
 }

@@ -426,7 +426,9 @@ public final class PolynomialUtils {
     E sum = elementRing.zero();
     E prod = elementRing.one();
     for (final Z coeff : poly) {
-      sum = elementRing.add(sum, elementRing.multiply(prod, elementRing.coerce(coeff)));
+      if (!coeff.isZero()) {
+        sum = elementRing.add(sum, elementRing.multiply(prod, elementRing.coerce(coeff)));
+      }
       prod = elementRing.multiply(prod, x);
     }
     return sum;

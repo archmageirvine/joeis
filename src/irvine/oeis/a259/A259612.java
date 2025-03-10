@@ -4,7 +4,7 @@ package irvine.oeis.a259;
 import irvine.oeis.transform.ConvolutionProduct;
 
 /**
- * A259612 G.f. A(x) satisfies: A(x)*A&apos;(x) = Series_Reversion( x - 2*x*A(x)*A&apos;(x) - A(x)^2 ).
+ * A259612  G.f. A(x) satisfies: A(x)*A'(x) = Series_Reversion( x - 2*x*A(x)*A'(x) - A(x)^2 ).
  * @author Georg Fischer
  */
 public class A259612 extends ConvolutionProduct {

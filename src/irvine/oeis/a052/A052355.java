@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a031.A031930;
 
 /**
- * A052355 First prime from A031930 (=lesser of 12-twins) with increasing distance to the next 12-twin.
+ * A052355 Least prime in A031930 (lesser of 12-twins) whose distance to the next 12-twin is 2*n.
  * @author Sean A. Irvine
  */
 public class A052355 extends Sequence1 {

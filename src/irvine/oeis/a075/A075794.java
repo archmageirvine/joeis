@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075565.
+ * A075794 a(n) = the least positive integer k such that phi(k) &gt; phi(1) + ... + phi(n).
  * @author Sean A. Irvine
  */
 public class A075794 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A075742 Fibonacci numbers, which are the product of an odd number of distinct primes for numbers with the same property (mu(n)=mu(fibonacci(n))=-1).
+ * A075742 Fibonacci numbers for which both the value and index are the product of an odd number of distinct primes; that is, numbers Fibonacci(k) for which mu(k) = mu(Fibonacci(k)) = -1.
  * @author Sean A. Irvine
  */
 public class A075742 extends FilterSequence {

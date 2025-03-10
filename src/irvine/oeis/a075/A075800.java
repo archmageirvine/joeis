@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a030.A030059;
 
 /**
- * A075767.
+ * A075800 Palindromic numbers which are products of an odd number of distinct primes.
  * @author Sean A. Irvine
  */
 public class A075800 extends FilterSequence {

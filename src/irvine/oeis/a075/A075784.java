@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075565.
+ * A075784 Numbers n such that sopf(n) = sopf(n-1) + sopf(n-2) + sopf(n-3), where sopf(x) = sum of the distinct prime factors of x.
  * @author Sean A. Irvine
  */
 public class A075784 extends Sequence1 {

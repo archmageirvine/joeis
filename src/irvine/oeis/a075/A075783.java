@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a001.A001597;
 
 /**
- * A075767.
+ * A075783 Additive perfect powers: sum-of-digits is also a perfect power.
  * @author Sean A. Irvine
  */
 public class A075783 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073803 Number of divisors of n is smaller than that of sigma(n).
+ * A073803 Numbers k such that the number of divisors of k is smaller than that of sigma(k).
  * @author Sean A. Irvine
  */
 public class A073803 extends Sequence1 {

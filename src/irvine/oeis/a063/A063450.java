@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000005;
 
 /**
- * A063450 Numbers n such that d(n+1) &lt; 2d(n), where d() is the number of divisors function A000005.
+ * A063450 Numbers k such that d(k+1) &lt; 2*d(k), where d() is the number of divisors function A000005.
  * @author Sean A. Irvine
  */
 public class A063450 extends A000005 {

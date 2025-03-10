@@ -5,7 +5,7 @@ import irvine.oeis.a338.A338460;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A380334 Decimal expansion of the smallest possible average gap for the prime number subsequence P&quot; = A262275.
+ * A380334 Decimal expansion of the smallest possible average gap for the prime number subsequence P" = A262275.
  * Formula: x*(x-1) where x = A338460.getCR().
  * @author Georg Fischer
  */

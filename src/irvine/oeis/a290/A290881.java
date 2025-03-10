@@ -4,7 +4,7 @@ package irvine.oeis.a290;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A290881 E.g.f. S(x) satisfies: C(x)^2 - S(x)^2 = 1 and C&apos;(x)^2 + S&apos;(x)^2 = 1, where C(x) is the e.g.f. of A290880.
+ * A290881 E.g.f. S(x) satisfies: C(x)^2 - S(x)^2 = 1 and C'(x)^2 + S'(x)^2 = 1, where C(x) is the e.g.f. of A290880.
  * @author Georg Fischer
  */
 public class A290881 extends PolynomialFieldSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075767.
+ * A075798 Triangle T(n,k) = f(n,k,n-1), n &gt;= 0, 0 &lt;= k &lt;= n, where f is given below.
  * @author Sean A. Irvine
  */
 public class A075798 extends Sequence1 {

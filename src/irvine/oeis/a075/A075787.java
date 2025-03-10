@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a001.A001597;
 
 /**
- * A075767.
+ * A075787 Even-digit perfect powers.
  * @author Sean A. Irvine
  */
 public class A075787 extends FilterSequence {

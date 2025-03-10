@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073804 Number of divisors of n is greater than that of sigma[n].
+ * A073804 Numbers k such that the number of divisors of k is greater than that of sigma(k).
  * @author Sean A. Irvine
  */
 public class A073804 extends Sequence1 {

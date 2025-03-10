@@ -4,7 +4,7 @@ package irvine.oeis.a083;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A083706 a(n) = 2^(n+1)+n-1.
+ * A083706 a(n) = 2^(n+1) + n - 1.
  * @author Georg Fischer
  */
 public class A083706 extends GeneratingFunctionSequence {

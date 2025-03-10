@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075767.
+ * A075777 Minimal surface area of a rectangular solid with volume n and integer sides.
  * @author Sean A. Irvine
  */
 public class A075777 extends Sequence1 {

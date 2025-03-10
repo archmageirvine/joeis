@@ -6,7 +6,7 @@ import irvine.oeis.recur.PaddingSequence;
 
 
 /**
- * A277342 Base-100 digital root of n (equivalent to repeatedly adding pairs of decimal digits starting from the least significant pair).
+ * A277342 a(n) = b(n^2) where b(n) = n-99*floor((n-1)/99).
  * @author Georg Fischer
  */
 public class A277342 extends PaddingSequence {

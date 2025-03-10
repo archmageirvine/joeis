@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A067860 n is prime and the concatenation of numbers n_1, n_2, n_3, in that order, with n_1 + n_2 = n_3 (leading zeros are forbidden for nonzero n_i).
+ * A067860 Primes which are the concatenation of numbers n_1, n_2, n_3, in that order, with n_1 + n_2 = n_3 (leading zeros are forbidden for nonzero n_i).
  * @author Sean A. Irvine
  */
 public class A067860 extends A000040 {

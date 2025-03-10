@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a031.A031926;
 
 /**
- * A052353 First primes of A031926 (lesser of 8-twins) with increasing distance to the next 8-twin.
+ * A052353 Least prime in A031926 (lesser of 8-twins) whose distance to the next 8-twin is 6*n.
  * @author Sean A. Irvine
  */
 public class A052353 extends Sequence1 {

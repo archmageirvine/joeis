@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A381704 Fibonacci numbers having a Fibonacci number of 1&apos;s in their binary representation.
+ * A381704 Fibonacci numbers having a Fibonacci number of 1's in their binary representation.
  * @author Georg Fischer
  */
 public class A381704 extends FilterSequence {

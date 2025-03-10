@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
 
 /**
- * A075767.
+ * A075775 Numbers k that divide phi(Fibonacci(k)).
  * @author Sean A. Irvine
  */
 public class A075775 extends Sequence1 {

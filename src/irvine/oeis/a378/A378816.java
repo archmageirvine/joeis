@@ -4,7 +4,7 @@ package irvine.oeis.a378;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A378816 Expansion of 2*(x - 1)^3/(3*x^3 - 5*x^2 + x + 1 + sqrt(-(x - 1)^3*(x + 1)^2*(3*x + 1)))
+ * A378816 Expansion of 2*(x - 1)^3/(3*x^3 - 5*x^2 + x + 1 + sqrt(-(x - 1)^3*(x + 1)^2*(3*x + 1))).
  * @author Georg Fischer
  */
 public class A378816 extends HolonomicRecurrence {

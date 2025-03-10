@@ -4,7 +4,7 @@ package irvine.oeis.a243;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A243952 E.g.f. A(x) satisfies: A&apos;(x) = A(x) - 1/A(x) + A(x)^3.
+ * A243952 E.g.f. A(x) satisfies: A'(x) = A(x) - 1/A(x) + A(x)^3.
  * A=exp(serreverse(intformal(1/(1+2*sinh(2*X)))))
  * @author Georg Fischer
  */

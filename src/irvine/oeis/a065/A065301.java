@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a005.A005117;
 
 /**
- * A065301 Both n and the sum of its divisors are squarefree numbers.
+ * A065301 Numbers k such that both k and the sum of its divisors are squarefree numbers.
  * @author Sean A. Irvine
  */
 public class A065301 extends FilterSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A380729 Smallest n-digit number e such that there exists a primitive Pythagorean n-digit quintuple (a,b,c,d,e) with a &lt; b &lt; c &lt; d &lt; e.
+ * A380729 Smallest n-digit number e such that there exists a primitive Pythagorean n-digit quintuple (a,b,c,d,e) with 10^n &lt;= a &lt; b &lt; c &lt; d &lt; e &lt; 10^(n+1).
  * @author Sean A. Irvine
  */
 public class A380729 extends Sequence1 {

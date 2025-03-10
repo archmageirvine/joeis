@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A075565.
+ * A075793 Primes p such that f_p(x)=(1296+432*x+108*x^2+24*x^3+5*x^4+x^5) mod p factors as product of 3 linear and one irreducible quadratic factor.
  * @author Sean A. Irvine
  */
 public class A075793 extends A000040 {

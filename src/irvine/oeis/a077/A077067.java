@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a049.A049097;
 
 /**
- * A077067 Squarefree numbers of form prime + 1.
+ * A077067 Squarefree numbers of the form prime + 1.
  * @author Georg Fischer
  */
 public class A077067 extends A049097 {

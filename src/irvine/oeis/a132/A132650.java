@@ -4,7 +4,7 @@ package irvine.oeis.a132;
 import irvine.oeis.a000.A000005;
 
 /**
- * A132650 Number of divisors of n, d(n) raised to power d(n).
+ * A132650 a(n) = d(n)^d(n), where d(n) = A000005(n).
  * @author Georg Fischer
  */
 public class A132650 extends A132638 {

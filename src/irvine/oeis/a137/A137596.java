@@ -6,7 +6,7 @@ import irvine.oeis.a048.A048993;
 import irvine.oeis.triangle.Product;
 
 /**
- * A137596 Triangle read by rows. T = A000012 * A048993.
+ * A137596 Triangle read by rows: T(n, k) = Sum_{i=0..n) Stirling2(i, k).
  * @author Georg Fischer
  */
 public class A137596 extends Product {

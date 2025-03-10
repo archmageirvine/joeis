@@ -4,7 +4,7 @@ package irvine.oeis.a290;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A290882 E.g.f. E(x) = C(x) + S(x) such that C(x)^2 - S(x)^2 = 1 and C&apos;(x)^2 + S&apos;(x)^2 = 1, where C(x) is the e.g.f. of A290880 and S(x) is the e.g.f. of A290881.
+ * A290882 E.g.f. E(x) = C(x) + S(x) such that C(x)^2 - S(x)^2 = 1 and C'(x)^2 + S'(x)^2 = 1, where C(x) is the e.g.f. of A290880 and S(x) is the e.g.f. of A290881.
  * @author Georg Fischer
  */
 public class A290882 extends PolynomialFieldSequence {

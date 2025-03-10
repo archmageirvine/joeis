@@ -5,7 +5,7 @@ import irvine.math.zi.Zi;
 import irvine.oeis.KimberlingTreeSequence;
 
 /**
- * A274160 Number of integers in n-th generation of tree T(i) defined in Comments.
+ * A274160 Number of real integers in n-th generation of tree T(i) defined in Comments.
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

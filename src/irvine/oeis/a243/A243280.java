@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A243280 Expansion of log&apos;(1/2-sqrt((5*x+2*sqrt(1-4*x)-2)/x)/2).
+ * A243280 Expansion of log'(1/2-sqrt((5*x+2*sqrt(1-4*x)-2)/x)/2).
  * @author Georg Fischer
  */
 public class A243280 extends LambdaSequence {

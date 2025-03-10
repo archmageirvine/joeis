@@ -273,7 +273,6 @@ public final class ComputableReals extends AbstractOrderedField<CR> implements E
     return n.round();
   }
 
-
   @Override
   public CR hypergeometric(final CR[] upperParameters, final CR[] lowerParameters, final CR z) {
     return HypergeometricImpl.hypergeometric(upperParameters, lowerParameters, z);

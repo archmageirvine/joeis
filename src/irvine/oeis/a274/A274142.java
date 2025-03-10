@@ -1,7 +1,7 @@
 package irvine.oeis.a274;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.Collection;
 
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -17,10 +17,9 @@ import irvine.oeis.AbstractSequence;
 public class A274142 extends AbstractSequence {
 
   protected int mN;
-  private Q mR;
-  private Set<Polynomial<Q>> mT = new HashSet<>();
-  private Set<Polynomial<Q>> mG = new HashSet<>();
-  private Set<Polynomial<Q>> mH = new HashSet<>();
+  private final Q mR;
+  private Collection<Polynomial<Q>> mT = new ArrayList<>();
+  private Collection<Polynomial<Q>> mG = new ArrayList<>();
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
 
   /** Construct the sequence. */
@@ -46,8 +45,11 @@ public class A274142 extends AbstractSequence {
    * @return whether the element is integer
    */
   private boolean eligible(final Polynomial<Q> p1) {
-    mG.add(p1);
-    return RING.eval(p1, mR).isInteger();
+    final boolean res = RING.eval(p1, mR).isInteger();
+    if (res) {
+      mG.add(p1);
+    }
+    return res;
   }
 
   @Override
@@ -58,17 +60,17 @@ public class A274142 extends AbstractSequence {
       sum = 1;
     } else {
       mG.clear();
-      for (Polynomial<Q> p : mT) {
+      for (final Polynomial<Q> p : mT) {
         if (eligible(RING.add(p, RING.one()))) {
           ++sum;
         }
-        if (eligible(RING.multiply(p, RING.x()))) {
+        if (eligible(p.shift(1))) {
           ++sum;
         }
       }
-      mH = mT;
+      final Collection<Polynomial<Q>> h = mT;
       mT = mG;
-      mG = mH;
+      mG = h;
     }
     return Z.valueOf(sum);
   }

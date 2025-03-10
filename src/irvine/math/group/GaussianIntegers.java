@@ -162,6 +162,11 @@ public final class GaussianIntegers extends AbstractIntegralDomain<Zi> {
     return new Zi(n);
   }
 
+  @Override
+  public Zi coerce(final Z n) {
+    return new Zi(n);
+  }
+
   /**
    * Return true iff this Gaussian integer is a Gaussian prime.
    * @return true for a Gaussian prime

@@ -391,4 +391,9 @@ public final class ComputableComplexField extends AbstractField<CC> implements E
   public CC coerce(final long n) {
     return new CC(CR.valueOf(n));
   }
+
+  @Override
+  public CC coerce(final Z n) {
+    return new CC(CR.valueOf(n));
+  }
 }

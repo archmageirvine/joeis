@@ -2,7 +2,6 @@ package irvine.math.api;
 
 /**
  * Definition of trigonometric functions.
- *
  * @author Sean A. Irvine
  * @param <E> element type
  */

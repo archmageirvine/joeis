@@ -1,5 +1,6 @@
 package irvine.math.zi;
 
+import irvine.math.api.IsInteger;
 import irvine.math.c.C;
 import irvine.math.group.GaussianIntegers;
 import irvine.math.z.Z;
@@ -8,7 +9,7 @@ import irvine.math.z.Z;
  * An object to hold an immutable Gaussian integer.
  * @author Sean A. Irvine
  */
-public class Zi extends Number implements Comparable<Zi> {
+public class Zi extends Number implements Comparable<Zi>, IsInteger<Zi> {
 
   /** Constant zero. */
   public static final Zi ZERO = new Zi(0);
@@ -257,4 +258,8 @@ public class Zi extends Number implements Comparable<Zi> {
     return GaussianIntegers.SINGLETON.pow(this, n);
   }
 
+  @Override
+  public boolean isInteger() {
+    return im().isZero();
+  }
 }

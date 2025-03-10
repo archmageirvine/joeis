@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.api.Field;
+import irvine.math.api.Ring;
 import irvine.math.c.C;
 import irvine.math.c.ComplexField;
 import irvine.math.function.Functions;
@@ -411,5 +412,23 @@ public final class PolynomialUtils {
       res.add(coeff);
     }
     return res;
+  }
+
+  /**
+   * Evaluate an integer polynomial over a (potentially) more general ring.
+   * @param elementRing underlying element ring
+   * @param poly polynomial
+   * @param x value to evaluate at
+   * @param <E> type of element
+   * @return evaluation of the polynomial at <code>x</code>
+   */
+  public static <E> E eval(final Ring<E> elementRing, final Polynomial<Z> poly, final E x) {
+    E sum = elementRing.zero();
+    E prod = elementRing.one();
+    for (final Z coeff : poly) {
+      sum = elementRing.add(sum, elementRing.multiply(prod, elementRing.coerce(coeff)));
+      prod = elementRing.multiply(prod, x);
+    }
+    return sum;
   }
 }

@@ -1,12 +1,13 @@
 package irvine.math.cc;
 
+import irvine.math.api.IsInteger;
 import irvine.math.cr.CR;
 
 /**
  * An object to hold an immutable computable complex number.
  * @author Sean A. Irvine
  */
-public class CC extends Number implements Comparable<CC> {
+public class CC extends Number implements Comparable<CC>, IsInteger<CC> {
 
   // Note this is primarily a container object and does not contain the code or
   // methods for actually operating on complex numbers.  The actual implementation
@@ -149,6 +150,14 @@ public class CC extends Number implements Comparable<CC> {
   @Override
   public float floatValue() {
     return (float) doubleValue();
+  }
+
+  /**
+   * Test if this computable complex number is an integer (with limited accuracy).
+   * @return true if the number is an integer.
+   */
+  public boolean isInteger() {
+    return re().isInteger() && im().compareTo(CR.ZERO, -32) == 0;
   }
 
 }

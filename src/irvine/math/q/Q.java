@@ -2,6 +2,7 @@ package irvine.math.q;
 
 import java.io.Serializable;
 
+import irvine.math.api.IsInteger;
 import irvine.math.z.Z;
 
 /**
@@ -9,7 +10,7 @@ import irvine.math.z.Z;
  *
  * @author Sean A. Irvine
  */
-public class Q implements Comparable<Q>, Serializable {
+public class Q implements Comparable<Q>, IsInteger<Q>, Serializable {
 
   /** Constant negative one. */
   public static final Q NEG_ONE = new Q(Z.NEG_ONE);

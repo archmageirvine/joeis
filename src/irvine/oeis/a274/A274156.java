@@ -1,8 +1,8 @@
 package irvine.oeis.a274;
 
-import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
-import java.util.Set;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
@@ -19,10 +19,9 @@ import irvine.oeis.AbstractSequence;
 public class A274156 extends AbstractSequence {
 
   private int mN;
-  private CR mR;
-  private Set<Polynomial<CR>> mT = new HashSet<>();
-  private Set<Polynomial<CR>> mG = new HashSet<>();
-  private Set<Polynomial<CR>> mH = new HashSet<>();
+  private final CR mR;
+  private Collection<Polynomial<CR>> mT = new ArrayList<>();
+  private Collection<Polynomial<CR>> mG = new ArrayList<>();
   private static final PolynomialRingField<CR> RING = new PolynomialRingField<>(ComputableReals.SINGLETON);
 
   /** Construct the sequence. */
@@ -60,17 +59,17 @@ public class A274156 extends AbstractSequence {
       sum = 1;
     } else {
       mG.clear();
-      for (Polynomial<CR> p : mT) {
+      for (final Polynomial<CR> p : mT) {
         if (eligible(RING.add(p, RING.one()))) {
           ++sum;
         }
-        if (eligible(RING.multiply(p, RING.x()))) {
+        if (eligible(p.shift(1))) {
           ++sum;
         }
       }
-      mH = mT;
+      final Collection<Polynomial<CR>> h = mT;
       mT = mG;
-      mG = mH;
+      mG = h;
     }
     return Z.valueOf(sum);
   }

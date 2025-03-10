@@ -24,6 +24,22 @@ public class KimberlingTreeSequence<E extends IsInteger<E>> extends AbstractSequ
   private final Ring<E> mEvaluationRing;
   private Collection<Polynomial<Z>> mT = new ArrayList<>();
   private Collection<Polynomial<Z>> mG = new ArrayList<>();
+  private final boolean mKeepOnlyIntegerCases;
+
+  /**
+   * Generic constructor with parameters.
+   * @param offset first index
+   * @param r value for x
+   * @param keepOnlyIntegerCases at each step only retain cases where the evaluation is an integer
+   */
+  protected KimberlingTreeSequence(final int offset, final Ring<E> evaluationRing, final E r, final boolean keepOnlyIntegerCases) {
+    super(offset);
+    mEvaluationRing = evaluationRing;
+    mKeepOnlyIntegerCases = keepOnlyIntegerCases;
+    mN = -1;
+    mR = r;
+    mT.add(RING.one());
+  }
 
   /**
    * Generic constructor with parameters.
@@ -31,11 +47,7 @@ public class KimberlingTreeSequence<E extends IsInteger<E>> extends AbstractSequ
    * @param r value for x
    */
   protected KimberlingTreeSequence(final int offset, final Ring<E> evaluationRing, final E r) {
-    super(offset);
-    mEvaluationRing = evaluationRing;
-    mN = -1;
-    mR = r;
-    mT.add(RING.one());
+    this(offset, evaluationRing, r, false);
   }
 
   /**
@@ -44,9 +56,11 @@ public class KimberlingTreeSequence<E extends IsInteger<E>> extends AbstractSequ
    * @return whether the element is integer
    */
   private boolean eligible(final Polynomial<Z> p) {
-    mG.add(p);
-    final E e = PolynomialUtils.eval(mEvaluationRing, p, mR);
-    return e.isInteger();
+    final boolean e = PolynomialUtils.eval(mEvaluationRing, p, mR).isInteger();
+    if (!mKeepOnlyIntegerCases || e) {
+      mG.add(p);
+    }
+    return e;
   }
 
   @Override

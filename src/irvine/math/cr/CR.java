@@ -77,6 +77,7 @@
 
 package irvine.math.cr;
 
+import irvine.math.api.IsInteger;
 import irvine.math.q.Q;
 import irvine.math.r.Constants;
 import irvine.math.z.Z;
@@ -138,7 +139,7 @@ import irvine.util.string.StringUtils;
 * @author Hans.Boehm@hp.com
 * @author Sean A. Irvine
 */
-public abstract class CR extends Number implements Comparable<CR> {
+public abstract class CR extends Number implements Comparable<CR>, IsInteger<CR> {
 
   /** The real number -1. */
   public static final CR NEG_ONE = valueOf(-1);

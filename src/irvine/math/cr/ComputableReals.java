@@ -269,6 +269,11 @@ public final class ComputableReals extends AbstractOrderedField<CR> implements E
   }
 
   @Override
+  public CR coerce(final Z n) {
+    return CR.valueOf(n);
+  }
+
+  @Override
   public Z round(final CR n) {
     return n.round();
   }

@@ -2518,3 +2518,4 @@ A075788 If n can be written in the form r^i-s^j (see A074981), where r,s,i,j are
 A075789 Value of i, when n is written as r^i - s^j with the smallest possible r^i (with minimal i) and r, s > 0, i, j > 1; or 0 if n is not of this form.
 A075790 If n can be written in the form r^i-s^j (see A074981), where r,s,i,j are integers with r>0, s>0, i>1, j>1 choose the representation with smallest r^i (in case of ties, minimize i and j); or if n is not of this form set r=s=i=j=0; sequence gives values of s.
 A075791 If n can be written in the form r^i-s^j (see A074981), where r,s,i,j are integers with r>0, s>0, i>1, j>1 choose the representation with smallest r^i (in case of ties, minimize i and j); or if n is not of this form set r=s=i=j=0; sequence gives values of j.
+A075824 Odd numbers that cannot be expressed as 2^k - 3^m where k and m are integers.

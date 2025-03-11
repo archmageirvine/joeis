@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a056.A056913;
 
 /**
- * A075800.
+ * A075810 Palindromic odd squarefree numbers with an even number of distinct prime factors.
  * @author Sean A. Irvine
  */
 public class A075810 extends FilterSequence {

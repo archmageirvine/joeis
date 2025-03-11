@@ -18,7 +18,7 @@ public class A075770 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (++mN >= 3) {
+      if (++mN >= 4) {
         final Q t = mA.multiply(mN - 3).add(mB.multiply(mN - 2)).add(mC.multiply(mN - 1)).divide(mN);
         mA = mB;
         mB = mC;

@@ -4,7 +4,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a071.A071251;
 
 /**
- * A075800.
+ * A075803 Differences between adjacent palindromic squarefree numbers.
  * @author Sean A. Irvine
  */
 public class A075803 extends DifferenceSequence {

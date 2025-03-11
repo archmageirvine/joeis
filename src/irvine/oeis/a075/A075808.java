@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.FilterSequence;
 
 /**
- * A075800.
+ * A075808 Palindromic odd composite numbers that are the products of an odd number of distinct primes.
  * @author Sean A. Irvine
  */
 public class A075808 extends FilterSequence {

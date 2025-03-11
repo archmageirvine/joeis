@@ -4,7 +4,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a032.A032350;
 
 /**
- * A075800.
+ * A075801 Differences between adjacent palindromic nonprime numbers A032350.
  * @author Sean A. Irvine
  */
 public class A075801 extends DifferenceSequence {

@@ -13,6 +13,7 @@ import irvine.math.z.Z;
 
 /**
  * Generate trees needed for A274160 and related sequences.
+ * @param <E> field type to evaluate against
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

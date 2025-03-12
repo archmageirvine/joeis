@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A335583 Number of 1&apos;s in the partitions of n into 4 parts.
+ * A335583 Number of 1's in the partitions of n into 4 parts.
  * @author Georg Fischer
  */
 public class A335583 extends LambdaSequence {

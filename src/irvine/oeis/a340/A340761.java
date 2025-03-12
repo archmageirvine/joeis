@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A340761 Number of partitions of n into 4 parts whose &apos;middle&apos; two parts have the same parity.
+ * A340761 Number of partitions of n into 4 parts whose 'middle' two parts have the same parity.
  * @author Georg Fischer
  */
 public class A340761 extends LambdaSequence {

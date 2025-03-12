@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A300815 Number of 3 division {a, b, c} (a &lt; b &lt; c) of n where b isn&apos;t a multiple of a, c isn&apos;t a multiple of a and c isn&apos;t a multiple of b.
+ * A300815 Number of 3 division {a, b, c} (a &lt; b &lt; c) of n where b isn't a multiple of a, c isn't a multiple of a and c isn't a multiple of b.
  * @author Georg Fischer
  */
 public class A300815 extends LambdaSequence {

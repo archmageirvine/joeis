@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000566;
 
 /**
- * A353019 Heptagonal numbers (or 7-gonal numbers): n*(5*n-3)/2 which are products of five distinct primes.
+ * A353019 Heptagonal numbers which are products of five distinct primes.
  * @author Georg Fischer
  */
 public class A353019 extends FilterSequence {

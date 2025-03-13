@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A075853 G.f. satisfies A(x) = 1 + x (1+sum_{n=0..inf} [xA(x)]^(2^n)).
+ * A075853 G.f. satisfies A(x) = 1 + x (1+Sum_{n=0..inf} [xA(x)]^(2^n)).
  * @author Sean A. Irvine
  */
 public class A075853 extends Sequence0 {

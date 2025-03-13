@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A109714 Sequence defined by a recurrence close to that of A001147
+ * A109714 Sequence defined by a recurrence close to that of A001147.
  * @author Georg Fischer
  */
 public class A109714 extends MultiTransformSequence {

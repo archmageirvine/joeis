@@ -5,7 +5,7 @@ package irvine.oeis.a173;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A173998 For n&gt;=1, a(n) = n + 2 + sum(i=1..n-1, a(i)*a(n-i) ).
+ * A173998 For n&gt;=1, a(n) = n + 2 + Sum_{i=1..n-1} a(i)*a(n-i).
  * @author Georg Fischer
  */
 public class A173998 extends HolonomicRecurrence {

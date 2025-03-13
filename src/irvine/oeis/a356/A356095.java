@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000292;
 
 /**
- * A356095 Tetrahedral (or triangular pyramidal) numbers which are products of three distinct primes (or sphenic numbers).
+ * A356095 Tetrahedral numbers which are products of three distinct primes.
  * @author Georg Fischer
  */
 public class A356095 extends FilterSequence {

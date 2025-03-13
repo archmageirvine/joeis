@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012499 tan(cos(x)*arctan(x))=x-3/3!*x^3-35/5!*x^5+1729/7!*x^7-12711/9!*x^9...
+ * A012499 Expansion of e.g.f. tan(cos(x)*arctan(x)) (odd powers only).
  * @author Sean A. Irvine
  */
 public class A012499 extends Sequence0 {

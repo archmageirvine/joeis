@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A054984 Composite numbers x such that sigma(x + 6!) = sigma(x + 720) = sigma(x) + 720.
+ * A054984 Composite numbers k such that sigma(k + 6!) = sigma(k + 720) = sigma(k) + 720.
  * @author Sean A. Irvine
  */
 public class A054984 extends Sequence1 {

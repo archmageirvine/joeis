@@ -4,7 +4,7 @@ package irvine.oeis.a107;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A107418 a(n) = C(n+3,3)*C(n+6,6).
+ * A107418 a(n) = binomial(n+3,3)*binomial(n+6,6).
  * @author Georg Fischer
  */
 public class A107418 extends GeneratingFunctionSequence {

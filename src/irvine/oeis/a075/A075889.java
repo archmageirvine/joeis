@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.FilterSequence;
 
 /**
- * A075773.
+ * A075889 Primes in A075888, as they appear.
  * @author Sean A. Irvine
  */
 public class A075889 extends FilterSequence {

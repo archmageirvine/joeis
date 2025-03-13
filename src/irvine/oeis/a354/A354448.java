@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a051.A051682;
 
 /**
- * A354448 11-gonal (or hendecagonal) numbers which are products of two distinct primes.
+ * A354448 11-gonal numbers which are products of two distinct primes.
  * @author Georg Fischer
  */
 public class A354448 extends FilterSequence {

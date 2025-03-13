@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A113166 Total number of white pearls remaining in the chest - see Comments.
+ * A113166 a(n) = Sum_{d|n} A000010(n/d) * A000045(d-1).
  * @author Georg Fischer
  */
 public class A113166 extends LambdaSequence {

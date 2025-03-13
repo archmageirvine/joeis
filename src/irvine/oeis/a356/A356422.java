@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000566;
 
 /**
- * A356422 Heptagonal numbers (or 7-gonal numbers, i.e., numbers of the form k*(5*k - 3)/2) which are products of three distinct primes (or sphenic numbers).
+ * A356422 Heptagonal numbers which are products of three distinct primes.
  * @author Georg Fischer
  */
 public class A356422 extends FilterSequence {

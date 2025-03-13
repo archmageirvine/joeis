@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A132944 a(n)=Floor[n^(1/3)+n^(1/4)].
+ * A132944 a(n) = floor(n^(1/3) + n^(1/4)).
  * @author Georg Fischer
  */
 public class A132944 extends FloorSequence {

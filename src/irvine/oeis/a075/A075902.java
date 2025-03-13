@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A075773.
+ * A075902 Primes p = prime(k) such that the decimal representation of p contains k as a substring.
  * @author Sean A. Irvine
  */
 public class A075902 extends A000040 {

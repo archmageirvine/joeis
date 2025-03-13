@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a045.A045637;
 
 /**
- * A062324 p and p^2 + 4 are both prime.
+ * A062324 Primes p such that p^2 + 4 is also prime.
  * @author Georg Fischer
  */
 public class A062324 extends Sequence1 {

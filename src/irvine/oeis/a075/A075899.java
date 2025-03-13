@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075773.
+ * A075899 Primes of the form 3^n + n^2.
  * @author Sean A. Irvine
  */
 public class A075899 extends Sequence1 {

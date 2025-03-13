@@ -4,7 +4,7 @@ package irvine.oeis.a364;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A364668 Lower independence number of the n-Goldberg graph.
+ * A364668 Domination and lower independence number of the n-Goldberg graph.
  * @author Georg Fischer
  */
 public class A364668 extends GeneratingFunctionSequence {

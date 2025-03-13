@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075773.
+ * A075904 Numbers k such that k^4 has k as a substring of its decimal expansion.
  * @author Sean A. Irvine
  */
 public class A075904 extends Sequence1 {

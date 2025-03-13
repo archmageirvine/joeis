@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a051.A051682;
 
 /**
- * A354446 11-gonal numbers (numbers of the form k*(9*k-7)/2), which are products of three distinct primes.
+ * A354446 11-gonal numbers which are products of three distinct primes.
  * @author Georg Fischer
  */
 public class A354446 extends FilterSequence {

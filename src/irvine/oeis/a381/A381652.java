@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A381652 allocated for Artur Jasinski.
+ * A381652 Decimal expansion of the multiple zeta value (Euler sum) zetamult(2,1,3).
  * @author Sean A. Irvine
  */
 public class A381652 extends DecimalExpansionSequence {

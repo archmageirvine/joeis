@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A075773.
+ * A075895 Rounded sum of first n odd integers squared divided by n-th prime.
  * @author Sean A. Irvine
  */
 public class A075895 extends A000040 {

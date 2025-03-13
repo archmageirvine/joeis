@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A376110 Number of permutations of {1, 2,...,n} that are non-self-overlapping as Hertzsprung patterns; also called non-extendible.
+ * A376110 Number of permutations of {1,2,...,n} that are non-self-overlapping as Hertzsprung patterns; also called non-extendible.
  * @author Georg Fischer
  */
 public class A376110 extends MultiTransformSequence {

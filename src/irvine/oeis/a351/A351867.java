@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000566;
 
 /**
- * A351867 Heptagonal numbers (or 7-gonal numbers) which are products of four distinct primes.
+ * A351867 Heptagonal numbers which are products of four distinct primes.
  * @author Georg Fischer
  */
 public class A351867 extends FilterSequence {

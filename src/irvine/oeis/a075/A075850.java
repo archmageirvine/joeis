@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A075850 Greatest k such that f(k,1) divides f(k,n) where f(k,n) is the k-th term of the sequence : f(1,n)=1 f(2,n)= n f(k+2,n)=f(k+1,n)+f(k,n) (f(k,1) is the Fibonacci sequence).
+ * A075850 Greatest k such that f(k,1) divides f(k,n) where f(k,n) is the k-th term of the sequence: f(1,n)=1, f(2,n)=n, f(k+2,n)=f(k+1,n)+f(k,n).
  * @author Sean A. Irvine
  */
 public class A075850 extends Sequence2 {

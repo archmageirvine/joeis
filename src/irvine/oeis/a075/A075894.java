@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A075773.
+ * A075894 Average of four successive primes squared, (prime(n)^2 + prime(n+1)^2 + prime(n+2)^2 + prime(n+3)^2)/4, n&gt;=2.
  * @author Sean A. Irvine
  */
 public class A075894 extends Sequence2 {

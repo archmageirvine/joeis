@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001597;
 
 /**
- * A075822 Perfect powers ordered with their last two digits (leading zeros omitted).
+ * A075822 Smallest perfect power for each possible two-digit ending, ordered by their last two digits (leading zeros omitted).
  * @author Sean A. Irvine
  */
 public class A075822 extends Sequence1 {

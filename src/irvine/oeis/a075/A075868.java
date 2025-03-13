@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A075868 tau(n) = phi(sum of prime factors of n).
+ * A075868 Numbers k such that tau(k) = phi(sum of prime factors of k).
  * @author Sean A. Irvine
  */
 public class A075868 extends Sequence1 {

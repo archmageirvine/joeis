@@ -4,7 +4,7 @@ package irvine.oeis.a105;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A105943 a(n) = C(n+7,n) * C(n+10,7).
+ * A105943 a(n) = binomial(n+7,7) * binomial(n+10,7).
  * @author Georg Fischer
  */
 public class A105943 extends GeneratingFunctionSequence {

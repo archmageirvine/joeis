@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066110 Primes of form sigma_4(n)/sigma_2(n), arising in A066109.
+ * A066110 Primes of the form sigma_4(k)/sigma_2(k), arising in A066109.
  * @author Sean A. Irvine
  */
 public class A066110 extends Sequence1 {

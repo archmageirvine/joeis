@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A054203 Smallest primes followed by n consecutive (unequal) prime differences, each divided by 6.
+ * A054203 a(n) is the smallest start of a run of exactly n+1 consecutive primes with n (not necessarily equal) prime differences, each divisible by 6.
  * @author Sean A. Irvine
  */
 public class A054203 extends Sequence1 {

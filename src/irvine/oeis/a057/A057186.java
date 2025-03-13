@@ -4,7 +4,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A057186 Numbers n such that (20^n+1)/21 is a prime.
+ * A057186 Numbers k such that (20^k+1)/21 is a prime.
  * @author Georg Fischer
  */
 public class A057186 extends PrimePositionSubsequence {

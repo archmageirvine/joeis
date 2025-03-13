@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a005.A005891;
 
 /**
- * A364610 Centered pentagonal numbers which are products of three distinct primes (or sphenic numbers).
+ * A364610 Centered pentagonal numbers which are products of three distinct primes.
  * @author Georg Fischer
  */
 public class A364610 extends FilterSequence {

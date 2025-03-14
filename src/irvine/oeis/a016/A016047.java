@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A016047 Smallest prime factor of Mersenne numbers.
+ * A016047 Smallest prime factor of Mersenne numbers 2^p-1, where p is prime.
  * @author Sean A. Irvine
  */
 public class A016047 extends AbstractSequence {

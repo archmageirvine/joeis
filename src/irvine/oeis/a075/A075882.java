@@ -5,7 +5,7 @@ import irvine.oeis.a007.A007504;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A075882 a(n) = phi(Sum_{i=1,...,n} prime(i)).
+ * A075882 a(n) = phi(Sum_{i=1..n} prime(i)).
  * @author Sean A. Irvine
  */
 public class A075882 extends SimpleTransformSequence {

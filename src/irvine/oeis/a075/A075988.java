@@ -5,10 +5,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075989 Number of k satisfying 1&lt;=k&lt;=n and {n/k} &gt;= 1/2, where {n/k} is the fractional part of n/k, i.e., {n/k} = n/k - floor(n/k).
+ * A075988 Number of integers k satisfying 1 &lt;= k &lt;= n and 0 &lt; frac(n/k) &lt; 1/2, where frac(n/k) is the fractional part of n/k; i.e., frac(n/k) = n/k - floor(n,k).
  * @author Sean A. Irvine
  */
-public class A075989 extends Sequence1 {
+public class A075988 extends Sequence1 {
 
   private long mN = 0;
 
@@ -18,7 +18,7 @@ public class A075989 extends Sequence1 {
     long cnt = 0;
     for (long k = 1; k <= mN; ++k) {
       final Q f = new Q(mN, k).frac();
-      if (f.compareTo(Q.HALF) >= 0) {
+      if (!f.isZero() && f.compareTo(Q.HALF) < 0) {
         ++cnt;
       }
     }

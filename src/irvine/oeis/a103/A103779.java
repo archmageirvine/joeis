@@ -6,7 +6,7 @@ package irvine.oeis.a103;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A103779 Expansion of real root of y + y^2 + y^3 = x.
+ * A103779 Series reversion of y + y^2 + y^3.
  * @author Georg Fischer
  */
 public class A103779 extends HolonomicRecurrence {

@@ -11,8 +11,8 @@ public class A075927 extends A075926 {
   private long mN = 0;
   private long mM = 0;
 
-  protected A075927(final int weight) {
-    super(weight);
+  protected A075927(final int distance) {
+    super(distance);
   }
 
   /** Construct the sequence. */

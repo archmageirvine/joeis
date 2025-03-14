@@ -3,7 +3,7 @@ package irvine.oeis.a241;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A241520 Numbers n such that n^2 == -1 (mod 89).
+ * A241520 Numbers k such that k^2 == -1 (mod 89).
  * @author Sean A. Irvine
  */
 public class A241520 extends LinearRecurrence {

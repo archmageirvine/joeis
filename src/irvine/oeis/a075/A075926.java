@@ -11,12 +11,12 @@ import irvine.util.array.DynamicLongArray;
 public class A075926 extends Sequence0 {
 
   private final DynamicLongArray mWords = new DynamicLongArray();
-  private final int mWeight;
+  private final int mDistance;
   private long mM = -1;
   private int mN = -1;
 
-  protected A075926(final int weight) {
-    mWeight = weight;
+  protected A075926(final int distance) {
+    mDistance = distance;
   }
 
   /** Construct the sequence. */
@@ -26,7 +26,7 @@ public class A075926 extends Sequence0 {
 
   private boolean is(final long m) {
     for (int k = mN - 1; k >= 0; --k) {
-      if (Long.bitCount(mWords.get(k) ^ m) < mWeight) {
+      if (Long.bitCount(mWords.get(k) ^ m) < mDistance) {
         return false;
       }
     }

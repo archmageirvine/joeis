@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A086154 a(n) = C(3^n,2^n).
+ * A086154 a(n) = binomial(3^n,2^n).
  * @author Georg Fischer
  */
 public class A086154 extends LambdaSequence {

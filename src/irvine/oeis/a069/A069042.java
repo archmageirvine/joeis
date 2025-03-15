@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000364;
 import irvine.util.string.StringUtils;
 
 /**
- * A069042 Numbers n such that the n-th Euler number (A000364) == 1 (mod n^2).
+ * A069042 Numbers k such that A000364(k) == 1 (mod k^2).
  * @author Sean A. Irvine
  */
 public class A069042 extends Sequence1 {

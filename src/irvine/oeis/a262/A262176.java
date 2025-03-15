@@ -4,7 +4,7 @@ package irvine.oeis.a262;
 import irvine.oeis.a257.A257638;
 
 /**
- * A262176 Numbers n where n-17, n-1, n+1 and n+17 are consecutive primes.
+ * A262176 Numbers k such that k-17, k-1, k+1 and k+17 are consecutive primes.
  * @author Georg Fischer
  */
 public class A262176 extends A257638 {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a040.A040040;
 
 /**
- * A243811 Numbers n such that 2*n+3 and 2*n+5 are both prime.
+ * A243811 Numbers k such that 2*k+3 and 2*k+5 are both prime.
  * @author Georg Fischer
  */
 public class A243811 extends Sequence1 {

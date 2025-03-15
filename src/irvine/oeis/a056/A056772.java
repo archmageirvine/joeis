@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A056772 Numbers n such that phi(n+4) = phi(n) + 4.
+ * A056772 Numbers k such that phi(k+4) = phi(k) + 4, where phi(k) = A000010(k) is Euler's totient function.
  * @author Sean A. Irvine
  */
 public class A056772 extends Sequence1 {

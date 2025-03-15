@@ -2519,3 +2519,9 @@ A075789 Value of i, when n is written as r^i - s^j with the smallest possible r^
 A075790 If n can be written in the form r^i-s^j (see A074981), where r,s,i,j are integers with r>0, s>0, i>1, j>1 choose the representation with smallest r^i (in case of ties, minimize i and j); or if n is not of this form set r=s=i=j=0; sequence gives values of s.
 A075791 If n can be written in the form r^i-s^j (see A074981), where r,s,i,j are integers with r>0, s>0, i>1, j>1 choose the representation with smallest r^i (in case of ties, minimize i and j); or if n is not of this form set r=s=i=j=0; sequence gives values of j.
 A075824 Odd numbers that cannot be expressed as 2^k - 3^m where k and m are integers.
+A076016 Number of systems with n elements having one binary operation satisfying the equation B(AB)=A (semisymmetric quasigroups).
+A076017 Number of nonisomorphic systems with n elements with one binary operation satisfying the equation B(AB)=A (semisymmetric quasigroups).
+A076018 Number of systems with n elements with one binary operation satisfying the equation B(AB)=A (semisymmetric quasigroups). Isomorphic systems and systems differing by a transposition have been omitted.
+A076019 Number of nonisomorphic commutative systems with n elements with one binary operation satisfying the equation B(AB)=A (totally-symmetric quasigroups).
+A076020 Number of systems with n elements with one binary operation satisfying the equation B(AB)=A (semisymmetric quasigroups). This gives numbers of systems which are isomorphic to their transpose but are noncommutative.
+A076021 Number of fully idempotent systems with n elements with one binary operation satisfying the equation B(AB)=A (idempotent semisymmetric quasigroups).

@@ -24,7 +24,6 @@ public class A078792 extends Sequence1 {
   private Set<Graph> mGraphs = null;
   private final long[] mWorkspace = new long[100];
   private final OptionBlk mOptions = new OptionBlk();
-
   {
     mOptions.setCanon(1);
   }

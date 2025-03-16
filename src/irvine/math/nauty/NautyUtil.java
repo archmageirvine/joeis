@@ -11,8 +11,6 @@ final class NautyUtil {
 
   private NautyUtil() { }
 
-  private static final int[] WORKPERM = new int[Nauty.MAXN];
-
   /**
    * The position of the first element in set <code>set</code>
    * which occupies a position greater than <code>pos</code>.  If no such element exists,

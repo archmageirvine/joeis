@@ -30,10 +30,11 @@ public class A382999 extends ParallelGenerateGraphsSequence {
 
   private static Graph square(final Graph graph) {
     final Graph square = graph.copy();
+    // Look for paths like v - u - w, then connect v - w
     for (int u = 0; u < graph.order(); ++u) {
       for (int v = graph.nextVertex(u, -1); v >= 0; v = graph.nextVertex(u, v)) {
-        for (int w = graph.nextVertex(v, u); w >= 0; w = graph.nextVertex(v, w)) {
-          square.addEdge(u, w);
+        for (int w = graph.nextVertex(u, v); w >= 0; w = graph.nextVertex(u, w)) {
+          square.addEdge(v, w);
         }
       }
     }

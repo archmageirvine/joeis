@@ -15,7 +15,7 @@ public class A075879 extends Sequence1 {
 
   private Z b(final Z n) {
     Z m = n;
-    StringBuilder r = new StringBuilder();
+    final StringBuilder r = new StringBuilder();
     while (!m.isZero()) {
       final Z[] qr = m.divideAndRemainder(5);
       m = qr[0];

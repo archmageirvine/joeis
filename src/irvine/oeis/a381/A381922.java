@@ -14,11 +14,10 @@ public class A381922 extends FilterPositionSequence {
   /** Construct the sequence. */
   public A381922() {
     super(1, 1, new A000142().skip(1), (k, v) -> {
-      final long f[] = new long[] {1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800L};
       final long hw = Functions.DIGIT_SUM.l(2, v);
       int i = -1;
       while (++i <= 10) {
-        if (hw == f[i]) {
+        if (hw == Functions.FACTORIAL.l(i)) {
           return true;
         }
       }

@@ -2,25 +2,46 @@ package irvine.oeis.a128;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A128171 Numbers k such that k divides 1 + Sum_{j=1..k} prime(j)^7.
  * @author Sean A. Irvine
  */
-public class A128171 extends Sequence1 {
+public class A128171 extends AbstractSequence {
 
+  private final int mFirst;
+  private final int mPower;
   private final Fast mPrime = new Fast();
   private Z mPrev = Z.ONE;
-  private Z mSum = start();
+  private Z mSum;
   private long mN = 0;
 
+  /** Construct the sequence. */
+  public A128171() {
+    this(0, 1, 7);
+  }
+
+  /**
+   * Generic constructor with parameters
+   * @param offset first index
+   * @param first add this to the sum
+   * @param power exponent
+   */
+  public A128171(final int offset, final int first, final int power) {
+    super(offset);
+    mN = 0;
+    mFirst = first;
+    mPower = power;
+    mSum = start();
+  }
+
   protected Z start() {
-    return Z.ONE;
+    return Z.valueOf(mFirst);
   }
 
   protected int power() {
-    return 7;
+    return mPower;
   }
 
   @Override

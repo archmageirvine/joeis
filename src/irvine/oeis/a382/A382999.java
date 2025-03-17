@@ -67,11 +67,11 @@ public class A382999 extends ParallelGenerateGraphsSequence {
   @Override
   protected void graphGenInit(final GenerateGraphs gg) {
     gg.setVertices(mN);
-    gg.setMinEdges(0);
+    gg.setMinEdges(mN - 1);
     gg.setMaxEdges(mN * (mN - 1) / 2);
     gg.setMinDeg(0);
     gg.setMaxDeg(mN);
-    //gg.setConnectionLevel(1);
+    gg.setConnectionLevel(1);
   }
 
   @Override

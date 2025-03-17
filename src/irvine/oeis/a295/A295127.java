@@ -7,7 +7,7 @@ import irvine.math.q.Rationals;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A295127 Numerator of Sum_{d|n} mu(n/d)/d, where mu is the M√∂bius function A008683.
+ * A295127 Numerator of Sum_{d|n} mu(n/d)/d, where mu is the M\u00f6bius function A008683.
  * @author Georg Fischer
  */
 public class A295127 extends LambdaSequence {

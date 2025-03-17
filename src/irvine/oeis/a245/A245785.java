@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A245785 Denominator of (n/tau(n) + sigma(n)/n)
+ * A245785 Denominator of (n/tau(n) + sigma(n)/n).
  * @author Georg Fischer
  */
 public class A245785 extends LambdaSequence {

@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
  */
 public class A006513 extends Sequence1 {
 
-  private Z mN = Z.ZERO;
+  protected Z mN = Z.ZERO;
 
   private Z step(final Z n) {
     return n.isEven() ? n.divide2() : n.multiply(3).add(1).divide2();

@@ -7,7 +7,7 @@ import irvine.math.q.Rationals;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A211306 Numerator of Sum_{k=1..n} 1/lambda(k), where  lambda(k) is the Carmichael&apos;s lambda function.
+ * A211306 Numerator of Sum_{k=1..n} 1/lambda(k), where  lambda(k) is the Carmichael's lambda function.
  * @author Georg Fischer
  */
 public class A211306 extends LambdaSequence {

@@ -29,7 +29,7 @@ public class A232773 extends Sequence0 {
         .multiply(Functions.STIRLING1.z(mN + 1, k + 1))
         .multiply(Functions.FACTORIAL.z(mN - k))
         .multiply(Functions.FACTORIAL.z(k))
-        .multiply(((mN & 1) == 0) ? 1 : -1));
+        .multiply((mN & 1) == 0 ? 1 : -1));
     }
     return sum;
   }

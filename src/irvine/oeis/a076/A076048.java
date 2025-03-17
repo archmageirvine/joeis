@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a025.A025475;
 
 /**
- * A076047.
+ * A076048 Number of prime powers p^k (k != 1) &lt;= 10^n.
  * @author Sean A. Irvine
  */
 public class A076048 extends Sequence0 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A215712 Numerator of sum(i=1..n, 3*i/4^i )
+ * A215712 Numerator of sum(i=1..n, 3*i/4^i ).
  * @author Georg Fischer
  */
 public class A215712 extends LambdaSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
- * A381815.
+ * A381815 allocated for Jakub Buczak.
  * @author Sean A. Irvine
  */
 public class A381815 extends Sequence0 {

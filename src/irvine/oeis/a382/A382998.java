@@ -17,14 +17,14 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
  * A003094.
  * @author Sean A. Irvine
  */
-public class A382999 extends ParallelGenerateGraphsSequence {
+public class A382998 extends ParallelGenerateGraphsSequence {
 
   // Not correct number
 
   private final Set<Graph> mSet = Collections.synchronizedSet(new HashSet<>());
 
   /** Construct the sequence. */
-  public A382999() {
+  public A382998() {
     super(-1, -1, false, false, false);
   }
 
@@ -45,9 +45,7 @@ public class A382999 extends ParallelGenerateGraphsSequence {
     final StatsBlk stats = new StatsBlk();
     final OptionBlk opt = new OptionBlk();
     opt.setCanon(1);
-    final Graph canon = new Nauty(square, lab, ptn, set, orb, opt, stats, new long[100]).canon();
-    //System.out.println(graph + " -> " + square + " -> " + canon);
-    return canon;
+    return new Nauty(square, lab, ptn, set, orb, opt, stats, new long[100]).canon();
   }
 
   @Override
@@ -58,11 +56,11 @@ public class A382999 extends ParallelGenerateGraphsSequence {
   @Override
   protected void graphGenInit(final GenerateGraphs gg) {
     gg.setVertices(mN);
-    gg.setMinEdges(0);
-    gg.setMaxEdges(mN * (mN - 1) / 2);
-    gg.setMinDeg(0);
+    gg.setMinEdges(mN - 1);
+    gg.setMaxEdges(mN - 1);
+    gg.setMinDeg(1);
     gg.setMaxDeg(mN);
-    //gg.setConnectionLevel(1);
+    gg.setConnectionLevel(1);
   }
 
   @Override

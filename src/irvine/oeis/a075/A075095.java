@@ -1,6 +1,5 @@
 package irvine.oeis.a075;
 
-import irvine.math.graph.Graph;
 import irvine.math.graph.GraphUtils;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.z.Z;
@@ -14,12 +13,7 @@ public class A075095 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A075095() {
-    super(1, 0, 2, false, false, false);
-  }
-
-  @Override
-  protected long getCount(final Graph graph) {
-    return Z.TWO.equals(GraphUtils.automorphismSize(graph)) ? 1 : 0;
+    super(1, 0, 2, false, false, false, () -> graph -> Z.TWO.equals(GraphUtils.automorphismSize(graph)) ? 1 : 0);
   }
 
   @Override

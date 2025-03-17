@@ -1,6 +1,5 @@
 package irvine.oeis.a049;
 
-import irvine.math.graph.Graph;
 import irvine.math.z.Z;
 import irvine.oeis.a003.A003216;
 
@@ -12,9 +11,9 @@ public class A049366 extends A003216 {
 
   private boolean mFirst = true;
 
-  @Override
-  public long getCount(final Graph graph) {
-    return graph.isHamiltonian() && graph.isPlanar() ? 1 : 0;
+  /** Construct the sequence. */
+  public A049366() {
+    super(() -> graph -> graph.isHamiltonian() && graph.isPlanar() ? 1 : 0);
   }
 
   @Override

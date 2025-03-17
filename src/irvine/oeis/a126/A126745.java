@@ -2,7 +2,6 @@ package irvine.oeis.a126;
 
 import java.util.List;
 
-import irvine.math.graph.Graph;
 import irvine.math.graph.MaximalCliques;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.Multigraph;
@@ -17,10 +16,10 @@ public class A126745 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A126745() {
-    super(0, 3, false, false, false);
+    super(0, 3, false, false, false, () -> graph -> max(MaximalCliques.maximalCliques(graph)) == 3 ? 1 : 0);
   }
 
-  private int max(final List<Z> lst) {
+  private static int max(final List<Z> lst) {
     int max = 0;
     for (final Z l : lst) {
       final int cnt = l.bitCount();
@@ -29,11 +28,6 @@ public class A126745 extends ParallelGenerateGraphsSequence {
       }
     }
     return max;
-  }
-
-  @Override
-  protected long getCount(final Graph graph) {
-    return max(MaximalCliques.maximalCliques(graph)) == 3 ? 1 : 0;
   }
 
   @Override

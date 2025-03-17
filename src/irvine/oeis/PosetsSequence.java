@@ -14,16 +14,17 @@ import irvine.math.z.Z;
  */
 public class PosetsSequence extends ParallelGenerateGraphsSequence {
 
-  private final Predicate<Graph> mAccept;
-
   /**
    * Construct a new poset generator.
    * @param offset offset of the sequence
    * @param accept thread-safe predicate indicating if the given graph should be accepted
    */
   public PosetsSequence(final int offset, final Predicate<Graph> accept) {
-    super(offset - 1, offset - 1, false, false, false);
-    mAccept = accept;
+    super(offset - 1, offset - 1, false, false, false, () -> graph -> {
+      final DigraphCheck digraph = new DigraphCheck(accept);
+      digraph.generate(graph, 0, 0, Multigraph.NOLIMIT);
+      return digraph.mCount;
+    });
   }
 
   @Override
@@ -52,13 +53,6 @@ public class PosetsSequence extends ParallelGenerateGraphsSequence {
         ++mCount;
       }
     }
-  }
-
-  @Override
-  protected long getCount(final Graph graph) {
-    final DigraphCheck digraph = new DigraphCheck(mAccept);
-    digraph.generate(graph, 0, 0, Multigraph.NOLIMIT);
-    return digraph.mCount;
   }
 
   @Override

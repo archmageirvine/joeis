@@ -44,14 +44,11 @@ public class A049512 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A049512() {
-    super(0, -1, false, false, false);
-  }
-
-  @Override
-  protected long getCount(final Graph graph) {
-    final DigraphCheck digraph = new DigraphCheck();
-    digraph.direct(graph, 0, graph.order() - 1, Multigraph.NOLIMIT, false, false);
-    return digraph.mCount;
+    super(0, -1, false, false, false, () -> graph -> {
+        final DigraphCheck digraph = new DigraphCheck();
+        digraph.direct(graph, 0, graph.order() - 1, Multigraph.NOLIMIT, false, false);
+        return digraph.mCount;
+    });
   }
 
   @Override

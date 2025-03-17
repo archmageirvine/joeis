@@ -1,7 +1,7 @@
 package irvine.oeis.a046;
 
 import irvine.math.function.Functions;
-import irvine.math.graph.Graph;
+import irvine.math.nauty.Counter;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
@@ -20,14 +20,9 @@ public class A046091 extends Sequence0 {
     private final int mEdges;
 
     MySequence(final int n, final int m) {
-      super(0, 0, false, false, false);
+      super(0, 0, false, false, false, () -> Counter.PLANAR);
       mVertices = n;
       mEdges = m;
-    }
-
-    @Override
-    protected long getCount(final Graph graph) {
-      return graph.isPlanar() ? 1 : 0;
     }
 
     @Override

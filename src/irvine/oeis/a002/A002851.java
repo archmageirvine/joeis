@@ -1,6 +1,8 @@
 package irvine.oeis.a002;
 
-import irvine.math.graph.Graph;
+import java.util.function.Supplier;
+
+import irvine.math.nauty.Counter;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
@@ -12,18 +14,18 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
 public class A002851 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
+  public A002851(final int offset, final Supplier<Counter> counterFactory) {
+    super(offset, -1, -1, false, false, false, counterFactory);
+  }
+
+  /** Construct the sequence. */
   public A002851(final int offset) {
-    super(offset, -1, -1, false, false, false);
+    this(offset, () -> Counter.ONE);
   }
 
   /** Construct the sequence. */
   public A002851() {
     this(0);
-  }
-
-  @Override
-  protected long getCount(final Graph graph) {
-    return 1;
   }
 
   protected int degree() {

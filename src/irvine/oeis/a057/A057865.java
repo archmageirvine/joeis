@@ -13,10 +13,10 @@ public class A057865 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A057865() {
-    super(0, 0, false, false, false);
+    super(0, 0, false, false, false, () -> graph -> isHamiltonianPath(graph) ? 1 : 0);
   }
 
-  private boolean solveHamiltonianPath(final Graph g, final int target, final long used, final int count, final int current) {
+  private static boolean solveHamiltonianPath(final Graph g, final int target, final long used, final int count, final int current) {
     if (current == target) {
       return count == g.order();
     }
@@ -30,7 +30,7 @@ public class A057865 extends ParallelGenerateGraphsSequence {
     return false;
   }
 
-  private boolean isHamiltonianPath(final Graph graph) {
+  private static boolean isHamiltonianPath(final Graph graph) {
     final int n = graph.order();
     if (n <= 2) {
       return true;
@@ -47,11 +47,6 @@ public class A057865 extends ParallelGenerateGraphsSequence {
       }
     }
     return true;
-  }
-
-  @Override
-  public long getCount(final Graph graph) {
-    return isHamiltonianPath(graph) ? 1 : 0;
   }
 
   @Override

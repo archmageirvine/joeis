@@ -18,7 +18,11 @@ public class A051504 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A051504() {
-    super(-1, -1, false, false, false);
+    super(-1, -1, false, false, false, () -> graph -> {
+      final DigraphCheck check = new DigraphCheck();
+      check.direct(graph, 0, 0, Multigraph.NOLIMIT, false, false);
+      return check.mCount;
+    });
   }
 
   private static final class DigraphCheck extends DirectedGraph {
@@ -31,13 +35,6 @@ public class A051504 extends ParallelGenerateGraphsSequence {
         ++mCount;
       }
     }
-  }
-
-  @Override
-  protected long getCount(final Graph graph) {
-    final DigraphCheck check = new DigraphCheck();
-    check.direct(graph, 0, 0, Multigraph.NOLIMIT, false, false);
-    return check.mCount;
   }
 
   @Override

@@ -1,6 +1,9 @@
 package irvine.oeis;
 
+import java.util.function.Supplier;
+
 import irvine.math.graph.Graph;
+import irvine.math.nauty.Counter;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
@@ -13,7 +16,7 @@ import irvine.math.z.Z;
  */
 public abstract class ParallelGenerateGraphsSequence extends AbstractSequence {
 
-  private static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
+  protected static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
     String.valueOf(Runtime.getRuntime().availableProcessors())));
 
   protected int mN;
@@ -21,6 +24,7 @@ public abstract class ParallelGenerateGraphsSequence extends AbstractSequence {
   private final boolean mBipartite;
   private final boolean mSquareFree;
   private final boolean mTriangleFree;
+  private final Supplier<Counter> mCounterFactory;
 
   /**
    * Construct a new parallel execution of nauty.
@@ -30,14 +34,16 @@ public abstract class ParallelGenerateGraphsSequence extends AbstractSequence {
    * @param bipartite generate bipartite graphs
    * @param squareFree generate square free graphs
    * @param triangleFree generate triangle free graphs
+   * @param counterFactory per thread counter factory (this form is useful when the <code>getCount</code> method is complicated)
    */
-  protected ParallelGenerateGraphsSequence(final int offset, final int start, final int firstNonZero, final boolean bipartite, final boolean squareFree, final boolean triangleFree) {
+  protected ParallelGenerateGraphsSequence(final int offset, final int start, final int firstNonZero, final boolean bipartite, final boolean squareFree, final boolean triangleFree, final Supplier<Counter> counterFactory) {
     super(offset);
     mN = start;
     mFirstNonZero = firstNonZero;
     mBipartite = bipartite;
     mSquareFree = squareFree;
     mTriangleFree = triangleFree;
+    mCounterFactory = counterFactory;
   }
 
   /**
@@ -47,18 +53,11 @@ public abstract class ParallelGenerateGraphsSequence extends AbstractSequence {
    * @param bipartite generate bipartite graphs
    * @param squareFree generate square free graphs
    * @param triangleFree generate triangle free graphs
+   * @param counterFactory per thread counter factory
    */
-  protected ParallelGenerateGraphsSequence(final int start, final int firstNonZero, final boolean bipartite, final boolean squareFree, final boolean triangleFree) {
-    this(start + 1, start, firstNonZero, bipartite, squareFree, triangleFree);
+  protected ParallelGenerateGraphsSequence(final int start, final int firstNonZero, final boolean bipartite, final boolean squareFree, final boolean triangleFree, final Supplier<Counter> counterFactory) {
+    this(start + 1, start, firstNonZero, bipartite, squareFree, triangleFree, counterFactory);
   }
-
-  /**
-   * Test if the current graph should be included in the count and return the
-   * count for the graph.  That is, if the graph contributes nothing then 0 is returned.
-   * @param graph current graph
-   * @return the count for this graph (can be 0)
-   */
-  protected abstract long getCount(final Graph graph);
 
   /**
    * Set up the required parameters for graphs to be generated.
@@ -69,15 +68,17 @@ public abstract class ParallelGenerateGraphsSequence extends AbstractSequence {
   private final class MyThread extends Thread implements GraphProcessor {
 
     private final int mResidue;
+    private final Counter mCounter;
     private long mCount = 0;
 
-    private MyThread(final int residue) {
+    private MyThread(final int residue, final Counter counter) {
       mResidue = residue;
+      mCounter = counter;
     }
 
     @Override
     public void process(final Graph graph) {
-      mCount += ParallelGenerateGraphsSequence.this.getCount(graph);
+      mCount += mCounter.getCount(graph);
     }
 
     @Override
@@ -101,7 +102,7 @@ public abstract class ParallelGenerateGraphsSequence extends AbstractSequence {
     init(mN);
     final MyThread[] jobs = new MyThread[THREADS];
     for (int k = 0; k < jobs.length; ++k) {
-      jobs[k] = new MyThread(k);
+      jobs[k] = new MyThread(k, mCounterFactory.get());
       jobs[k].start();
     }
     Z sum = Z.ZERO;

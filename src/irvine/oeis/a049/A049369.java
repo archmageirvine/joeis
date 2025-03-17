@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.math.graph.Graph;
+import irvine.math.nauty.Counter;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.Multigraph;
 import irvine.oeis.ParallelGenerateGraphsSequence;
@@ -13,12 +13,7 @@ public class A049369 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A049369() {
-    super(0, 2, false, false, false);
-  }
-
-  @Override
-  public long getCount(final Graph graph) {
-    return graph.isPlanar() ? 1 : 0;
+    super(0, 2, false, false, false, () -> Counter.PLANAR);
   }
 
   protected int minDegree() {

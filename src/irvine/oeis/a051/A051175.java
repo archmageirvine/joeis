@@ -1,6 +1,5 @@
 package irvine.oeis.a051;
 
-import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
@@ -12,12 +11,7 @@ public class A051175 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A051175() {
-    super(0, 9, false, false, false);
-  }
-
-  @Override
-  protected long getCount(final Graph graph) {
-    return graph.wienerIndex() == graph.lineGraph().lineGraph().wienerIndex() ? 1 : 0;
+    super(0, 9, false, false, false, () -> graph -> graph.wienerIndex() == graph.lineGraph().lineGraph().wienerIndex() ? 1 : 0);
   }
 
   @Override

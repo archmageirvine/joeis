@@ -12,7 +12,7 @@ public class A364208 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A364208() {
-    super(0, -1, false, false, false);
+    super(0, -1, false, false, false, () -> graph -> new FullSet(graph).is() ? 1 : 0);
   }
 
   private static final class FullSet {
@@ -81,11 +81,6 @@ public class A364208 extends ParallelGenerateGraphsSequence {
       search(0, 0, 0);
       return Long.bitCount(mSeenK) == mGraph.order() / 2;
     }
-  }
-
-  @Override
-  public long getCount(final Graph graph) {
-    return new FullSet(graph).is() ? 1 : 0;
   }
 
   @Override

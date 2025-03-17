@@ -1,6 +1,6 @@
 package irvine.oeis.a010;
 
-import irvine.math.graph.Graph;
+import irvine.math.nauty.Counter;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
@@ -20,12 +20,7 @@ public class A010355 extends Sequence1 {
       return Z.ONE;
     }
     Z count = Z.ZERO;
-    final ParallelGenerateGraphsSequence pgs = new ParallelGenerateGraphsSequence(0, 1, 2, false, false, false) {
-      @Override
-      protected long getCount(final Graph graph) {
-        return 1;
-      }
-
+    final ParallelGenerateGraphsSequence pgs = new ParallelGenerateGraphsSequence(0, 1, 2, false, false, false, () -> Counter.ONE) {
       @Override
       protected void graphGenInit(final GenerateGraphs gg) {
         gg.setVertices(mN);

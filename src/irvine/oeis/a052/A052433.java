@@ -12,10 +12,10 @@ public class A052433 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A052433() {
-    super(0, 0, false, false, false);
+    super(0, 0, false, false, false, () -> graph -> !hasOddChordlessCycle(graph) && !hasOddChordlessCycle(graph.complement()) ? 1 : 0);
   }
 
-  private boolean searchForOddChordlessCycle(final Graph graph, final int first, final int prev, final int v, final int length, final long used) {
+  private static boolean searchForOddChordlessCycle(final Graph graph, final int first, final int prev, final int v, final int length, final long used) {
     // Test if the path so far as a link from the current vertex to an earlier
     // vertex, other than the first vertex.  Such a link is a chord and the
     // checking for this path need go no further.
@@ -48,7 +48,7 @@ public class A052433 extends ParallelGenerateGraphsSequence {
     return false;
   }
 
-  private boolean hasOddChordlessCycle(final Graph graph) {
+  private static boolean hasOddChordlessCycle(final Graph graph) {
     for (int u = 0; u < graph.order(); ++u) {
       // u is going to be the lowest numbered vertex of proposed cycle.
       for (int v = graph.nextVertex(u, u); v >= 0; v = graph.nextVertex(u, v)) {
@@ -58,11 +58,6 @@ public class A052433 extends ParallelGenerateGraphsSequence {
       }
     }
     return false;
-  }
-
-  @Override
-  protected long getCount(final Graph graph) {
-    return !hasOddChordlessCycle(graph) && !hasOddChordlessCycle(graph.complement()) ? 1 : 0;
   }
 
   @Override

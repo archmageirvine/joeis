@@ -1,6 +1,5 @@
 package irvine.oeis.a033;
 
-import irvine.math.graph.Graph;
 import irvine.math.graph.GraphUtils;
 import irvine.oeis.a002.A002851;
 
@@ -10,16 +9,10 @@ import irvine.oeis.a002.A002851;
  */
 public class A033700 extends A002851 {
 
-  {
-    setOffset(5);
-    for (int k = 0; k <= degree(); ++k) {
-      next();
-    }
-  }
-
-  @Override
-  protected long getCount(final Graph graph) {
-    return GraphUtils.isTransitive(graph) ? 1 : 0;
+  /** Construct the sequence. */
+  public A033700() {
+    super(5, () -> graph -> GraphUtils.isTransitive(graph) ? 1 : 0);
+    skip(degree() + 1);
   }
 
   @Override

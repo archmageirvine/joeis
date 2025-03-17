@@ -480,7 +480,7 @@ public final class GraphUtils {
 //    // Direct enumeration with nauty
 //    return new ParallelGenerateGraphsSequence(vertices - 1, 0, false, false, false) {
 //      @Override
-//      protected long getCount(final Graph graph) {
+//      public long getCount(final Graph graph) {
 //        return 1;
 //      }
 //

@@ -1,6 +1,5 @@
 package irvine.oeis.a052;
 
-import irvine.math.graph.Graph;
 import irvine.math.graph.GraphUtils;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.Multigraph;
@@ -16,12 +15,7 @@ public class A052444 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A052444() {
-    super(0, 4, false, false, false);
-  }
-
-  @Override
-  protected long getCount(final Graph graph) {
-    return GraphUtils.isKConnected(graph, 3) && !GraphUtils.isKConnected(graph, 4) ? 1 : 0;
+    super(0, 4, false, false, false, () -> graph -> GraphUtils.isKConnected(graph, 3) && !GraphUtils.isKConnected(graph, 4) ? 1 : 0);
   }
 
   @Override

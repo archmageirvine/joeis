@@ -1,6 +1,5 @@
 package irvine.oeis.a366;
 
-import irvine.math.graph.Graph;
 import irvine.math.graph.GraphUtils;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
@@ -13,12 +12,7 @@ public class A366315 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A366315() {
-    super(0, 0, false, false, false);
-  }
-
-  @Override
-  protected long getCount(final Graph graph) {
-    return graph.isEulerian() && !graph.isHamiltonian() && GraphUtils.isOneTough(graph) ? 1 : 0;
+    super(0, 0, false, false, false, () -> graph -> graph.isEulerian() && !graph.isHamiltonian() && GraphUtils.isOneTough(graph) ? 1 : 0);
   }
 
   @Override

@@ -1,6 +1,5 @@
 package irvine.oeis.a076;
 
-import irvine.math.graph.Graph;
 import irvine.math.graph.GraphUtils;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.Multigraph;
@@ -20,14 +19,9 @@ public class A076435 extends Sequence1 {
     private final int mR;
 
     private StronglyRegular(final int n, final int r) {
-      super(0, -1, false, false, false);
+      super(0, -1, false, false, false, () -> graph -> GraphUtils.isStronglyRegular(graph) ? 1 : 0);
       mN = n;
       mR = r;
-    }
-
-    @Override
-    protected long getCount(final Graph graph) {
-      return GraphUtils.isStronglyRegular(graph) ? 1 : 0;
     }
 
     @Override

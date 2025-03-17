@@ -15,15 +15,15 @@ import irvine.oeis.a048.A048192;
  */
 public class A007134 extends A048192 {
 
-  private long labellings(final Graph graph) {
-    final StatsBlk stats = new StatsBlk();
-    new Nauty(graph, new int[mN], new int[mN], new NautySet(mN), new int[mN], new OptionBlk(), stats, new long[100]);
-    return Functions.FACTORIAL.z(graph.order()).divide(stats.groupSize()).longValue();
+  /** Construct the sequence. */
+  public A007134() {
+    super(() -> graph -> isChordal(graph) ? labellings(graph) : 0);
   }
 
-  @Override
-  protected long getCount(final Graph graph) {
-    return isChordal(graph) ? labellings(graph) : 0;
+  private static long labellings(final Graph graph) {
+    final StatsBlk stats = new StatsBlk();
+    new Nauty(graph, new int[graph.order()], new int[graph.order()], new NautySet(graph.order()), new int[graph.order()], new OptionBlk(), stats, new long[100]);
+    return Functions.FACTORIAL.z(graph.order()).divide(stats.groupSize()).longValue();
   }
 
   @Override

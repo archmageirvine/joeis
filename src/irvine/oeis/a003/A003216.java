@@ -3,9 +3,11 @@ package irvine.oeis.a003;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.function.Supplier;
 
 import irvine.math.graph.Graph;
 import irvine.math.graph.Graph6;
+import irvine.math.nauty.Counter;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.Multigraph;
 import irvine.oeis.ParallelGenerateGraphsSequence;
@@ -16,14 +18,13 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
  */
 public class A003216 extends ParallelGenerateGraphsSequence {
 
-  /** Construct the sequence. */
-  public A003216() {
-    super(0, 0, false, false, false);
+  protected A003216(final Supplier<Counter> counterSupplier) {
+    super(0, 0, false, false, false, counterSupplier);
   }
 
-  @Override
-  public long getCount(final Graph graph) {
-    return graph.isHamiltonian() ? 1 : 0;
+  /** Construct the sequence. */
+  public A003216() {
+    this(() -> graph -> graph.isHamiltonian() ? 1 : 0);
   }
 
   @Override

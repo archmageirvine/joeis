@@ -1,6 +1,5 @@
 package irvine.oeis.a023;
 
-import irvine.math.graph.Graph;
 import irvine.math.graph.GraphUtils;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
@@ -20,18 +19,13 @@ public class A023637 extends ParallelGenerateGraphsSequence {
    * @param valency the valency
    */
   protected A023637(final int valency) {
-    super(valency & ~1, 0, false, false, false);
+    super(valency & ~1, 0, false, false, false, () -> graph -> GraphUtils.isTransitive(graph) ? 1 : 0);
     mValency = valency;
   }
 
   /** Construct the sequence. */
   public A023637() {
     this(10);
-  }
-
-  @Override
-  protected long getCount(final Graph graph) {
-    return GraphUtils.isTransitive(graph) ? 1 : 0;
   }
 
   @Override

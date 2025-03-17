@@ -1,6 +1,6 @@
 package irvine.oeis.a068;
 
-import irvine.math.graph.Graph;
+import irvine.math.nauty.Counter;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
@@ -26,12 +26,7 @@ public class A068934 extends Sequence1 {
     if (((mV * mM) & 1) == 1) {
       return Z.ZERO; // impossible for a graph like this
     }
-    return new ParallelGenerateGraphsSequence(mV - 1, 0, false, false, false) {
-      @Override
-      protected long getCount(final Graph graph) {
-        return 1;
-      }
-
+    return new ParallelGenerateGraphsSequence(mV - 1, 0, false, false, false, () -> Counter.ONE) {
       @Override
       protected void graphGenInit(final GenerateGraphs gg) {
         gg.setVertices(mN);

@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.math.graph.Graph;
+import irvine.math.nauty.Counter;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
@@ -12,12 +12,7 @@ public class A006787 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A006787() {
-    super(0, 0, false, true, true);
-  }
-
-  @Override
-  protected long getCount(final Graph graph) {
-    return 1;
+    super(0, 0, false, true, true, () -> Counter.ONE);
   }
 
   @Override

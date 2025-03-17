@@ -6,8 +6,8 @@ package irvine.oeis.a052;
  */
 public class A052452 extends A052451 {
 
-  @Override
-  protected int target() {
-    return 4;
+  /** Construct the sequence. */
+  public A052452() {
+    super(4);
   }
 }

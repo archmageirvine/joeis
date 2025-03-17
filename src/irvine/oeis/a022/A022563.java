@@ -1,6 +1,5 @@
 package irvine.oeis.a022;
 
-import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
@@ -12,12 +11,7 @@ public class A022563 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A022563() {
-    super(0, 2, false, false, false);
-  }
-
-  @Override
-  protected long getCount(final Graph graph) {
-    return A022562.isClawFree(graph) ? 1 : 0;
+    super(0, 2, false, false, false, () -> graph -> A022562.isClawFree(graph) ? 1 : 0);
   }
 
   @Override

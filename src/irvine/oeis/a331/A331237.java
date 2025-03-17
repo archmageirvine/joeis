@@ -1,6 +1,5 @@
 package irvine.oeis.a331;
 
-import irvine.math.graph.Graph;
 import irvine.math.graph.GraphUtils;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
@@ -13,12 +12,7 @@ public class A331237 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A331237() {
-    super(0, 0, false, false, false);
-  }
-
-  @Override
-  protected long getCount(final Graph tree) {
-    return GraphUtils.cuttingNumberOfTree(tree);
+    super(0, 0, false, false, false, () -> GraphUtils::cuttingNumberOfTree);
   }
 
   @Override

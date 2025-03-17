@@ -12,21 +12,16 @@ public class A049365 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A049365() {
-    super(0, 0, false, false, false);
+    super(0, 0, false, false, false, () -> graph -> isEvenDegree(graph) && graph.isPlanar() ? 1 : 0);
   }
 
-  private boolean isEvenDegree(final Graph graph) {
+  private static boolean isEvenDegree(final Graph graph) {
     for (int k = 0; k < graph.order(); ++k) {
       if ((graph.degree(k) & 1) == 1) {
         return false;
       }
     }
     return true;
-  }
-
-  @Override
-  public long getCount(final Graph graph) {
-    return isEvenDegree(graph) && graph.isPlanar() ? 1 : 0;
   }
 
   @Override

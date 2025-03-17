@@ -1,21 +1,21 @@
 package irvine.oeis.a072;
 
-import irvine.math.graph.Graph;
-import irvine.oeis.a006.A006820;
+import irvine.math.nauty.Counter;
+import irvine.oeis.a002.A002851;
 
 /**
  * A072552 Number of connected planar regular graphs of degree 4 with n nodes.
  * @author Sean A. Irvine
  */
-public class A072552 extends A006820 {
+public class A072552 extends A002851 {
 
-  {
-    setOffset(6);
+  public A072552() {
+    super(6, () -> Counter.PLANAR);
     skip(6);
   }
 
   @Override
-  protected long getCount(final Graph graph) {
-    return graph.isPlanar() ? 1 : 0;
+  protected int degree() {
+    return 4;
   }
 }

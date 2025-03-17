@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.math.graph.Graph;
+import irvine.math.nauty.Counter;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
@@ -18,14 +18,9 @@ public class A008323 extends Sequence0 {
     private final boolean mConnected;
 
     RegularConnectedBipartiteGenerator(final int n, final int r, final boolean connected) {
-      super(n - 1, 0, true, false, false);
+      super(n - 1, 0, true, false, false, () -> Counter.ONE);
       mR = r;
       mConnected = connected;
-    }
-
-    @Override
-    protected long getCount(final Graph graph) {
-      return 1;
     }
 
     @Override

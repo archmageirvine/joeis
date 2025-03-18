@@ -1188,5 +1188,23 @@ public final class GraphUtils {
     final int n = graph.order();
     return IndependentDominationNumber.branchAndBound(graph, new boolean[n], new boolean[n], 0, n);
   }
+
+  /**
+   * Compute the square of a graph (see A382180 for a definition).
+   * @param graph base graph
+   * @return square of the graph
+   */
+  public static Graph square(final Graph graph) {
+    final Graph square = graph.copy();
+    // Look for paths like v - u - w, then connect v - w
+    for (int u = 0; u < graph.order(); ++u) {
+      for (int v = graph.nextVertex(u, -1); v >= 0; v = graph.nextVertex(u, v)) {
+        for (int w = graph.nextVertex(u, v); w >= 0; w = graph.nextVertex(u, w)) {
+          square.addEdge(v, w);
+        }
+      }
+    }
+    return square;
+  }
 }
 

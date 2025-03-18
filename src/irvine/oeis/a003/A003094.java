@@ -28,6 +28,6 @@ public class A003094 extends ParallelGenerateGraphsSequence {
 
   @Override
   public Z next() {
-    return super.next().max(Z.ONE);
+    return super.next();
   }
 }

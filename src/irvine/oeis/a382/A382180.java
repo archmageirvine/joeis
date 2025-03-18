@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.graph.Graph;
+import irvine.math.graph.GraphUtils;
 import irvine.math.nauty.Counter;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.Nauty;
@@ -18,14 +19,12 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
  * A003094.
  * @author Sean A. Irvine
  */
-public class A382999 extends ParallelGenerateGraphsSequence {
-
-  // Not correct number
+public class A382180 extends ParallelGenerateGraphsSequence {
 
   private static final Set<Graph> SQUARE_GRAPHS = Collections.synchronizedSet(new HashSet<>());
 
   /** Construct the sequence. */
-  public A382999() {
+  public A382180() {
     super(-1, -1, false, false, false, () -> new Counter() {
       private final long[] mWorkspace = new long[100];
       private int[] mLab = {};
@@ -39,15 +38,7 @@ public class A382999 extends ParallelGenerateGraphsSequence {
       }
 
       private Graph square(final Graph graph) {
-        final Graph square = graph.copy();
-        // Look for paths like v - u - w, then connect v - w
-        for (int u = 0; u < graph.order(); ++u) {
-          for (int v = graph.nextVertex(u, -1); v >= 0; v = graph.nextVertex(u, v)) {
-            for (int w = graph.nextVertex(u, v); w >= 0; w = graph.nextVertex(u, w)) {
-              square.addEdge(v, w);
-            }
-          }
-        }
+        final Graph square = GraphUtils.square(graph);
         if (graph.order() != mLab.length) {
           mLab = new int[graph.order()];
           mPtn = new int[graph.order()];

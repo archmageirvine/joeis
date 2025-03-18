@@ -185,6 +185,7 @@ final class Planarity {
     for (int i = 1; i <= n; ++i) {
       if (secondLow[i] >= mark[i]) {
         mtotal = n2;
+        break;
       }
     }
     int k = n2;
@@ -408,17 +409,17 @@ final class Planarity {
           if (firstLow[tNode] < firstLow[qNode]) {
             final int tmp1 = secondLow[tNode];
             final int tmp2 = firstLow[qNode];
-            secondLow[qNode] = tmp1 < tmp2 ? tmp1 : tmp2;
+            secondLow[qNode] = Math.min(tmp1, tmp2);
             firstLow[qNode] = firstLow[tNode];
           } else {
             if (firstLow[tNode] == firstLow[qNode]) {
               final int tmp1 = secondLow[tNode];
               final int tmp2 = secondLow[qNode];
-              secondLow[qNode] = tmp1 < tmp2 ? tmp1 : tmp2;
+              secondLow[qNode] = Math.min(tmp1, tmp2);
             } else {
               final int tmp1 = firstLow[tNode];
               final int tmp2 = secondLow[qNode];
-              secondLow[qNode] = tmp1 < tmp2 ? tmp1 : tmp2;
+              secondLow[qNode] = Math.min(tmp1, tmp2);
             }
           }
         } else {
@@ -428,7 +429,7 @@ final class Planarity {
           } else if (mark[tNode] > firstLow[qNode]) {
               final int tmp1 = mark[tNode];
               final int tmp2 = secondLow[qNode];
-              secondLow[qNode] = tmp1 < tmp2 ? tmp1 : tmp2;
+              secondLow[qNode] = Math.min(tmp1, tmp2);
           }
         }
       }

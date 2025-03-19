@@ -1,4 +1,4 @@
-package irvine.oeis.a382;
+package irvine.oeis.a381;
 
 import irvine.math.graph.GraphUtils;
 import irvine.math.nauty.GenerateGraphs;
@@ -8,12 +8,10 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
  * A003094.
  * @author Sean A. Irvine
  */
-public class A382182 extends ParallelGenerateGraphsSequence {
-
-  // Note: unofficial A-number
+public class A381961 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
-  public A382182() {
+  public A381961() {
     super(-1, -1, false, false, false, () -> graph -> GraphUtils.square(graph).isPlanar() ? 1 : 0);
   }
 

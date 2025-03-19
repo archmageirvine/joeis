@@ -12,7 +12,7 @@ import irvine.util.string.StringUtils;
  * A076070.
  * @author Sean A. Irvine
  */
-public class A076070 extends A053067 {
+public class A076072 extends A053067 {
 
   // Idea for improvement:
   // Compute n*1, n*2, n*3, ... looking at the remainders mod next higher power of 10
@@ -30,35 +30,26 @@ public class A076070 extends A053067 {
     final int[] cnts = ZUtils.digitCounts(super.next());
     // When mN is a multiple of 10, 100, ..., we must finish with that many 0s
     long m = mN;
-    Z zerosMultiplier = Z.ONE;
-    while (m % 10 == 0) {
-      zerosMultiplier = zerosMultiplier.multiply(10);
-      m /= 10;
-      if (--cnts[0] < 0) {
-        return Z.ZERO; // probably never happens
-      }
-    }
     final StringBuilder sb = new StringBuilder();
-    for (int k = 1; k < cnts.length; ++k) {
+    for (int k = cnts.length - 1; k >= 0; --k) {
       sb.append(String.valueOf(k).repeat(cnts[k]));
     }
-    sb.insert(1, "0".repeat(cnts[0]));
 
-    // If m is a multiple of 5, we're going to need a 5 at the end, move one there now
+    // If m is a multiple of 5, and we have no 0, then we're going to need a 5 at the end, move one there now
     // (We could also end with 0, but a solution with 5 at the end will always be smaller)
-    if (m % 5 == 0) {
+    if (m % 5 == 0 && cnts[0] == 0) {
       final int five = sb.indexOf("5");
       // There will always be at least one five in the string
       sb.deleteCharAt(five).append('5');
     }
 
+    // Check if we already have a solution
     final Z t = new Z(sb);
     if (mVerbose) {
-      StringUtils.message("n=" + mN + " digits " + t.multiply(zerosMultiplier));
+      StringUtils.message("n=" + mN + " digits " + t);
     }
-    // Check if we already have a solution
     if (t.mod(m) == 0) {
-      return t.multiply(zerosMultiplier);
+      return t;
     }
     // Permute increasingly many trailing digits until we find a solution
     int permuteDigits = 0;
@@ -82,14 +73,14 @@ public class A076070 extends A053067 {
           continue;
         }
         final Z v = s.add(Permutation.permToZ(p));
-        if (v.mod(m) == 0 && (best == null || v.compareTo(best) < 0)) {
+        if (v.mod(m) == 0 && (best == null || v.compareTo(best) > 0)) {
           // it might be that the first solution found is always the best, but this guards against
           // the possibility that the pemutation engine not generating them in order
           best = v;
         }
       }
       if (best != null) {
-        return best.multiply(zerosMultiplier);
+        return best;
       }
     }
   }

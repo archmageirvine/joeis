@@ -9,7 +9,7 @@ import irvine.util.Permutation;
 import irvine.util.string.StringUtils;
 
 /**
- * A076070.
+ * A076070 Smallest multiple of n that can be formed by using the digits of the next n numbers, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A076070 extends A053067 {

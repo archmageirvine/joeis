@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a060.A060205;
 
 /**
- * A098996 p(p+1)(2p+1) where p is prime.
+ * A098996 p(p+1)(2p+1) where p is the n-th prime.
  * @author Georg Fischer
  */
 public class A098996 extends A060205 {

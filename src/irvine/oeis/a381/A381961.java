@@ -5,7 +5,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A003094.
+ * A381961 allocated for Shyam Sunder Gupta.
  * @author Sean A. Irvine
  */
 public class A381961 extends ParallelGenerateGraphsSequence {

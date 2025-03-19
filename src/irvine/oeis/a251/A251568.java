@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.HypergeometricSequence;
 
 /**
- * A251568 E.g.f.: exp(x*C(x)^2) where C(x) = 1 + x*C(x)^2 is the g.f. of the Catalan numbers, A000108.
+ * A251568 Expansion of e.g.f. exp(x*C(x)^2) where C(x) = 1 + x*C(x)^2 is the g.f. of the Catalan numbers, A000108.
  * @author Georg Fischer
  */
 public class A251568 extends HypergeometricSequence {

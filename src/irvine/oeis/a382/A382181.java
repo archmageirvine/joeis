@@ -3,7 +3,7 @@ package irvine.oeis.a382;
 import irvine.oeis.transform.EulerTransform;
 
 /**
- * A003094.
+ * A382181 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A382181 extends EulerTransform {

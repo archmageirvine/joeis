@@ -4,7 +4,7 @@ package irvine.oeis.a128;
 import irvine.oeis.triangle.Inverse;
 
 /**
- * A128417 Number triangle T(n,k)=2^(n-k)*C(2n,n-k).
+ * A128417 Number triangle T(n,k) = 2^(n-k)*C(2*n,n-k).
  * @author Georg Fischer
  */
 public class A128417 extends Inverse {

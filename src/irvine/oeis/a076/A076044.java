@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A076044 Largest a(n) values with at most n primes between a(n) and a(n)+sqrt(a(n)).
+ * A076044 Largest a(n) values with at most n primes between a(n) and a(n)+sqrt(a(n)) inclusive.
  * @author Sean A. Irvine
  */
 public class A076044 extends Sequence0 {

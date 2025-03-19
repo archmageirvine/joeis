@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A076063 Group the natural numbers so that the n-th group contains n numbers whose sum is a multiple of the n-th composite number: (4),(1,5),(2,3,11),(6,7,8,15),(9,10,12,13,16),(14,17,18,19,20,32)...
+ * A076063 Group the natural numbers so that the n-th group contains n numbers whose sum is a multiple of the n-th composite number.
  * @author Sean A. Irvine
  */
 public class A076063 extends A002808 {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A076062 Group the positive integers so that the n-th group contains n numbers whose sum is a multiple of the n-th prime: (2), (1, 5), (3, 4, 8), (6, 7, 9, 13), (10, 11, 12, 14, 19), (15, 16, 17, 18, 20, 31), ...
+ * A076062 Group the positive integers so that the n-th group contains n numbers whose sum is a multiple of the n-th prime.
  * @author Sean A. Irvine
  */
 public class A076062 extends A000040 {

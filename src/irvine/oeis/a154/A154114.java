@@ -4,7 +4,7 @@ package irvine.oeis.a154;
 import irvine.oeis.a007.A007693;
 
 /**
- * A154114 Primes p such that p + 9699690 is also prime, 9699690 = 2*3*5*7*11*13*17*19.
+ * A154114 Primes p such that p + 9699690 is also prime, where 9699690 is the 8th primorial number A002110(8).
  * @author Georg Fischer
  */
 public class A154114 extends A007693 {

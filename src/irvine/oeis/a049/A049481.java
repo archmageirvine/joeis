@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A049481 Both p and p+30 are primes.
+ * A049481 Primes p such that p + 30 is also prime.
  * @author Sean A. Irvine
  */
 public class A049481 extends A000040 {

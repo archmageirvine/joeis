@@ -6,7 +6,7 @@ import irvine.math.nauty.Multigraph;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A024607 Number of connected triangle-free graphs on n unlabeled nodes.
+ * A049368 Number of connected triangle-free planar graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A049368 extends ParallelGenerateGraphsSequence {

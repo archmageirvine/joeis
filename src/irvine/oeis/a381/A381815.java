@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
- * A381815 allocated for Jakub Buczak.
+ * A381815 Smallest k&gt;1 such that 10*k^(3*2^n)+1 is prime.
  * @author Sean A. Irvine
  */
 public class A381815 extends Sequence0 {

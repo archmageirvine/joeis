@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A057776 a(n)-th prime is smallest such that p(a(n))-1 is divisible by 2^(n-1) and quotient is odd.
+ * A057776 a(n) is the least number k such that prime(k) - 1 is divisible by 2^(n-1) and the quotient is odd.
  * @author Sean A. Irvine
  */
 public class A057776 extends A000040 {

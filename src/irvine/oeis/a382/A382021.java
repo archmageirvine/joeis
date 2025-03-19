@@ -30,7 +30,6 @@ public class A382021 extends ParallelGenerateGraphsSequence {
           return 0;
         }
       }
-      System.out.println(Arrays.toString(deg));
       return CONSEC_DEGREE_SEQUENCES.add(Arrays.toString(deg)) ? 1 : 0;
     });
   }

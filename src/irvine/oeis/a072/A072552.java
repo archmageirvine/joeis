@@ -9,6 +9,7 @@ import irvine.oeis.a002.A002851;
  */
 public class A072552 extends A002851 {
 
+  /** Construct the sequence. */
   public A072552() {
     super(6, () -> Counter.PLANAR);
     skip(6);

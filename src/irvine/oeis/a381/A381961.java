@@ -20,8 +20,8 @@ public class A381961 extends ParallelGenerateGraphsSequence {
     gg.setVertices(mN);
     gg.setMinEdges(mN - 1);
     gg.setMaxEdges(mN * (mN - 1) / 2);
-    gg.setMinDeg(0);
-    gg.setMaxDeg(mN);
+    gg.setMinDeg(1);
+    gg.setMaxDeg(4);
     gg.setConnectionLevel(1);
   }
 }

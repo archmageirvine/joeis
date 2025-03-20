@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A343461 a(n) is the maximal number of congruent n-gons that can be arranged around a vertex without overlapping.
+ * A343461 a(n) is the maximal number of regular n-gons that can be arranged around a vertex without overlapping.
  * a(n)=floor(2*n/(n-2))
  * @author Georg Fischer
  */

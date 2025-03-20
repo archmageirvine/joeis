@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A072006 Number of terms in InversePhi set of p(n)*(p(n)-1) = phi(p(n)^2), where p(n) is the n-th prime and phi=A000010.
+ * A072006 Number of terms in InversePhi set of prime(n)*(prime(n)-1) = phi(p(n)^2), where prime(n) is the n-th prime and phi=A000010.
  * @author Georg Fischer
  */
 public class A072006 extends SimpleTransformSequence {

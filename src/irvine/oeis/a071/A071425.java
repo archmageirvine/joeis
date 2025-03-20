@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a079.A079584;
 
 /**
- * A071425 Total number of 1-s in binary representation of all factorials from 1 to n.
+ * A071425 Total number of 1's in binary representation of all factorials from 1 to n.
  * @author Sean A. Irvine
  */
 public class A071425 extends PartialSumSequence {

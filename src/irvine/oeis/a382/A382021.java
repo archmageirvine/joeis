@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A382021 allocated for John P. McSorley.
+ * A382021 Number of distinct degree sequences among all simple graphs with n vertices whose degrees are consecutive integers.
  * @author Sean A. Irvine
  */
 public class A382021 extends ParallelGenerateGraphsSequence {

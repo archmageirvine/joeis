@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A223834 Number of n X 4 0..1 arrays with rows and antidiagonals unimodal and columns nondecreasing.
+ * A223834 Number of n X 4 0..1 arrays with rows, diagonals and antidiagonals unimodal and columns nondecreasing.
  * @author Georg Fischer
  */
 public class A223834 extends GeneratingFunctionSequence implements Conjectural {

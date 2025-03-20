@@ -3,7 +3,7 @@ package irvine.oeis.a153;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A153848 Repeat 21.
+ * A153848 a(n) = 7*(10^(2*n) - 1)/33.
  * @author Sean A. Irvine
  */
 public class A153848 extends LinearRecurrence {

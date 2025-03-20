@@ -1,5 +1,6 @@
 package irvine.oeis.a139;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +18,7 @@ public class A139399 extends Sequence1 {
     long c = 0;
     Z t = mN;
     while (t.compareTo(Z.FOUR) > 0 || Z.THREE.equals(t)) {
-      t = t.isEven() ? t.divide2() : t.multiply(3).add(1);
+      t = Functions.COLLATZ.z(t);
       ++c;
     }
     return Z.valueOf(c);

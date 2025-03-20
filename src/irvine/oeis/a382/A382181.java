@@ -3,7 +3,7 @@ package irvine.oeis.a382;
 import irvine.oeis.transform.EulerTransform;
 
 /**
- * A382181 allocated for Sean A. Irvine.
+ * A382181 Number of unlabeled graphs with n vertices (including disconnected graphs) which are squares.
  * @author Sean A. Irvine
  */
 public class A382181 extends EulerTransform {

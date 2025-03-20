@@ -4,7 +4,7 @@ package irvine.oeis.a196;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A196662 Expansion of (1-3x)/(1-10x).
+ * A196662 Expansion of g.f. (1-3*x)/(1-10*x).
  * @author Georg Fischer
  */
 public class A196662 extends GeneratingFunctionSequence {

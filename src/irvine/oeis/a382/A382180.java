@@ -16,7 +16,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A382180 allocated for Sean A. Irvine.
+ * A382180 Number of unlabeled connected graphs with n vertices which are squares.
  * @author Sean A. Irvine
  */
 public class A382180 extends ParallelGenerateGraphsSequence {

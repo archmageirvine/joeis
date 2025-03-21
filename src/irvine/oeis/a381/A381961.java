@@ -21,7 +21,7 @@ public class A381961 extends ParallelGenerateGraphsSequence {
     gg.setMinEdges(mN - 1);
     gg.setMaxEdges(mN * (mN - 1) / 2);
     gg.setMinDeg(1);
-    gg.setMaxDeg(4);
+    gg.setMaxDeg(3);
     gg.setConnectionLevel(1);
   }
 }

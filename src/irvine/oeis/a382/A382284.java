@@ -16,7 +16,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A382180 Number of unlabeled connected graphs with n vertices which are squares.
+ * A382180.
  * @author Sean A. Irvine
  */
 public class A382284 extends ParallelGenerateGraphsSequence {
@@ -52,7 +52,7 @@ public class A382284 extends ParallelGenerateGraphsSequence {
       public long getCount(final Graph graph) {
         final Graph square = square(graph);
         // Although individual set add is faster than planar test, we can do planar in parallel
-        return square.isPlanar() && SQUARE_GRAPHS.add(square) ? 1 : 0;
+        return square != null && square.isPlanar() && SQUARE_GRAPHS.add(square) ? 1 : 0;
       }
     });
   }
@@ -63,7 +63,7 @@ public class A382284 extends ParallelGenerateGraphsSequence {
     gg.setMinEdges(mN - 1);
     gg.setMaxEdges(mN * (mN - 1) / 2);
     gg.setMinDeg(1);
-    gg.setMaxDeg(4); // higher than 5 -> square will be nonplanar
+    gg.setMaxDeg(3); // higher than 3 -> square will be nonplanar
     gg.setConnectionLevel(1);
   }
 

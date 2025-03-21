@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076031.
+ * A076105 a(1)=1 (first row) and then the n-th row of this triangle contains the least set of n unused natural numbers whose sum is a multiple of the sum of the previous row.
  * @author Sean A. Irvine
  */
 public class A076105 extends Sequence1 {

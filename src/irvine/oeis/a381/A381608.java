@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A381608 Nonnegative integers whose ternary expansion does not contain pairs of 2&apos;s only separated by (zero or more) 1&apos;s, with offset 0.
+ * A381608 Nonnegative integers whose ternary expansion does not contain pairs of 2's only separated by (zero or more) 1's, with offset 0.
  * @author Georg Fischer
  */
 public class A381608 extends FilterNumberSequence {

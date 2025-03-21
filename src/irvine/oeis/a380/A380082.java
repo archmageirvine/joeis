@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A380082 Number of Boolean intervals of rank 2 in the weak order of the Coxeter group of type C_n, for n &gt;= 2
+ * A380082 Number of Boolean intervals of rank 2 in the weak order of the Coxeter group of type C_n, for n &gt;= 2.
  * @author Georg Fischer
  */
 public class A380082 extends LambdaSequence {

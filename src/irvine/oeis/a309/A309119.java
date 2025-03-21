@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A309119 a(n) is the number of 1&apos;s minus the number of 2&apos;s among the ternary representations of the integers in the interval [0..n].
+ * A309119 a(n) is the number of 1's minus the number of 2's among the ternary representations of the integers in the interval [0..n].
  * @author Georg Fischer
  */
 public class A309119 extends LambdaSequence {

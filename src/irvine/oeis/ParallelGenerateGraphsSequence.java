@@ -1,5 +1,6 @@
 package irvine.oeis;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.function.Supplier;
 
 import irvine.math.graph.Graph;
@@ -14,7 +15,7 @@ import irvine.math.z.Z;
  * in parallel.
  * @author Sean A. Irvine
  */
-public abstract class ParallelGenerateGraphsSequence extends AbstractSequence {
+public abstract class ParallelGenerateGraphsSequence extends AbstractSequence implements DirectSequence {
 
   protected static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
     String.valueOf(Runtime.getRuntime().availableProcessors())));
@@ -95,11 +96,12 @@ public abstract class ParallelGenerateGraphsSequence extends AbstractSequence {
   }
 
   @Override
-  public Z next() {
-    if (++mN < mFirstNonZero) {
+  public Z a(final int n) {
+    if (n < mFirstNonZero) {
       return Z.ZERO;
     }
-    init(mN);
+    mN = n;
+    init(n);
     final MyThread[] jobs = new MyThread[THREADS];
     for (int k = 0; k < jobs.length; ++k) {
       jobs[k] = new MyThread(k, mCounterFactory.get());
@@ -115,6 +117,39 @@ public abstract class ParallelGenerateGraphsSequence extends AbstractSequence {
       }
     }
     return sum;
+  }
+
+  @Override
+  public Z a(final Z n) {
+    return a(n.intValueExact());
+  }
+
+  @Override
+  public Z next() {
+    return a(++mN);
+  }
+
+  /**
+   * Run a particular value of a subclass of this sequence.
+   * @param args n
+   */
+  public static void main(final String... args) {
+    final int n = Integer.parseInt(args[0]);
+    // Determine the name of the class that invoked the main method
+    final String command = System.getProperty("sun.java.command");
+    final String subclassName = command.substring(0, command.indexOf(' '));
+    try {
+      final Class<?> clazz = Class.forName(subclassName);
+      if (DirectSequence.class.isAssignableFrom(clazz)) {
+        // Instantiate the subclass using the no-arg constructor
+        final DirectSequence sequenceInstance = (DirectSequence) clazz.getDeclaredConstructor().newInstance();
+        System.out.println(sequenceInstance.a(n));
+      } else {
+        throw new RuntimeException(); // should not happen
+      }
+    } catch (final ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException e) {
+      throw new RuntimeException(e);
+    }
   }
 }
 

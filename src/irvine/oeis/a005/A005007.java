@@ -92,7 +92,7 @@ public class A005007 extends Sequence1 implements GraphProcessor {
     gg.setMaxEdges(mN * (mN - 1));
     gg.setProcessor(this);
     gg.sanitizeParams();
-    gg.run(false, false, false, 0, 0);
+    gg.run(false, false, false, false, 0, 0);
     return Z.valueOf(mCount);
   }
 

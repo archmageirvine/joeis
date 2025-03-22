@@ -233,7 +233,7 @@ public class A000942 extends Sequence1 implements GraphProcessor {
     gg.setMaxDeg(3);
     gg.setProcessor(this);
     gg.sanitizeParams();
-    gg.run(false, false, false, 0, 0);
+    gg.run(false, false, false, false, 0, 0);
     if (mVerbose) {
       System.out.println("n: " + mN + " trees: " + mTreeCount + " embeddings: " + mEmbeddings);
     }

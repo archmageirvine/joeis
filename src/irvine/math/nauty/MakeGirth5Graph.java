@@ -7,7 +7,7 @@ import irvine.math.graph.SmallGraph;
  * Make X-format girth five graph.
  * @author Sean A. Irvine
  */
-class MakeG5Graph implements MakeH {
+class MakeGirth5Graph implements MakeH {
   @Override
   public void makeH(final Graph g, final int[] h) {
     for (int i = 0; i < g.order(); ++i) {

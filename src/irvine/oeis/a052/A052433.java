@@ -12,7 +12,7 @@ public class A052433 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A052433() {
-    super(0, 0, false, false, false, () -> graph -> !hasOddChordlessCycle(graph) && !hasOddChordlessCycle(graph.complement()) ? 1 : 0);
+    super(0, 0, false, false, false, false, () -> graph -> !hasOddChordlessCycle(graph) && !hasOddChordlessCycle(graph.complement()) ? 1 : 0);
   }
 
   private static boolean searchForOddChordlessCycle(final Graph graph, final int first, final int prev, final int v, final int length, final long used) {

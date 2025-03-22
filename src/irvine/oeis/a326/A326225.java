@@ -14,7 +14,7 @@ public class A326225 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A326225() {
-    super(-1, 0, false, false, false, () -> graph -> {
+    super(-1, 0, false, false, false, false, () -> graph -> {
       // Given an undirected graph, convert the edges into a directed graph in all possible ways.
       // Since all the input graphs are non-isomorphic, the resulting graphs are also
       // non-isomorphic.

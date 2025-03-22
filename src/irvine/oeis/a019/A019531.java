@@ -37,7 +37,7 @@ public class A019531 extends Sequence2 implements GraphProcessor {
     gg.setMaxDeg(3);
     gg.setProcessor(this);
     gg.sanitizeParams();
-    gg.run(false, false, false, 0, 0);
+    gg.run(false, false, false, false, 0, 0);
     return Z.valueOf(mMax);
   }
 }

@@ -18,7 +18,7 @@ public class A007269 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A007269(final BiFunction<Graph, Integer, Boolean> neighborCheck) {
-    super(0, 0, false, false, false, () -> graph -> {
+    super(0, 0, false, false, false, false, () -> graph -> {
       final Graph simplifiedGraph = simplify(graph);
       if (neighborCheck.apply(simplifiedGraph, graph.order())) {
         final List<Z> maxIndpSets = MaximalCliques.maximalIndependentSets(simplifiedGraph);

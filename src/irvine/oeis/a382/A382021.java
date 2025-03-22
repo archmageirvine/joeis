@@ -19,7 +19,7 @@ public class A382021 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A382021() {
-    super(-1, -1, false, false, false, () -> graph -> {
+    super(-1, -1, false, false, false, false, () -> graph -> {
       final long[] deg = new long[graph.order()];
       for (int k = 0; k < deg.length; ++k) {
         deg[k] = graph.degree(k);

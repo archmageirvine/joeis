@@ -785,12 +785,13 @@ public class GenerateGraphs {
    * @param bipartite bipartite graphs only
    * @param squareFree square free graphs only
    * @param triangleFree triangle free graphs only
+   * @param fiveCycleFree 5-cycle free graphs only
    * @param splitLevInc split level increment
    * @param res residue
    */
-  public void run(boolean bipartite, boolean squareFree, final boolean triangleFree, final int splitLevInc, final int res) {
+  public void run(boolean bipartite, boolean squareFree, final boolean triangleFree, final boolean fiveCycleFree, final int splitLevInc, final int res) {
     final int[] deg = new int[1];
-    boolean sparse = bipartite || squareFree || triangleFree;
+    boolean sparse = bipartite || squareFree || triangleFree || fiveCycleFree;
     final Graph g1 = GraphFactory.create(1);
     if (mMaxN <= 1) {
       if (res == 0) {
@@ -830,12 +831,15 @@ public class GenerateGraphs {
           }
         } else if (triangleFree) {
           if (squareFree) {
-            spaExtend(g1, deg, 0, true, mLevelData[1].mXlb, mLevelData[1].mXub, new MakeG5Graph());
+            spaExtend(g1, deg, 0, true, mLevelData[1].mXlb, mLevelData[1].mXub, new MakeGirth5Graph());
           } else {
             spaExtend(g1, deg, 0, true, mLevelData[1].mXlb, mLevelData[1].mXub, new MakeXGraph());
           }
         } else if (squareFree) {
           spaExtend(g1, deg, 0, true, mLevelData[1].mXlb, mLevelData[1].mXub, new MakeSquareGraph());
+        } else if (fiveCycleFree) {
+          // todo note nauty has the options to handle combinations of 5-cycle free and square free etc.
+          spaExtend(g1, deg, 0, true, mLevelData[1].mXlb, mLevelData[1].mXub, new MakePlus5Graph(0));
         } else {
           genExtend(GraphFactory.create(1), new int[1], 0, true, mLevelData[1].mXlb, mLevelData[1].mXub);
         }

@@ -35,7 +35,7 @@ public class A003317 extends Sequence3 implements GraphProcessor {
     gg.setProcessor(this);
     gg.sanitizeParams();
     mCount = 0;
-    gg.run(false, false, false, 0, 0);
+    gg.run(false, false, false, false, 0, 0);
     return Z.valueOf(mCount);
   }
 }

@@ -16,7 +16,7 @@ public class A126745 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A126745() {
-    super(0, 3, false, false, false, () -> graph -> max(MaximalCliques.maximalCliques(graph)) == 3 ? 1 : 0);
+    super(0, 3, false, false, false, false, () -> graph -> max(MaximalCliques.maximalCliques(graph)) == 3 ? 1 : 0);
   }
 
   private static int max(final List<Z> lst) {

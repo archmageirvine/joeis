@@ -61,7 +61,7 @@ public class A006903 extends Sequence0 implements GraphProcessor {
     mPtn = new int[mN];
     mOrb = new int[mN];
     mSet = new NautySet(mN);
-    gg.run(false, false, true, 0, 0);
+    gg.run(false, false, true, false, 0, 0);
     return mCount;
   }
 

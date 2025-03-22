@@ -45,7 +45,7 @@ public class A006924 extends Sequence0 implements GraphProcessor {
     gg.setMaxEdges((mN * mN - mN) / 2);
     gg.sanitizeParams();
     gg.setProcessor(this);
-    gg.run(false, girth() > 4, girth() > 3, 0, 0);
+    gg.run(false, girth() > 4, girth() > 3, false, 0, 0);
     return Z.valueOf(mCount);
   }
 }

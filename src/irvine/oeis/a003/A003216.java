@@ -19,7 +19,7 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
 public class A003216 extends ParallelGenerateGraphsSequence {
 
   protected A003216(final Supplier<Counter> counterSupplier) {
-    super(0, 0, false, false, false, counterSupplier);
+    super(0, 0, false, false, false, false, counterSupplier);
   }
 
   /** Construct the sequence. */

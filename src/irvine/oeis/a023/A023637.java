@@ -19,7 +19,7 @@ public class A023637 extends ParallelGenerateGraphsSequence {
    * @param valency the valency
    */
   protected A023637(final int valency) {
-    super(valency & ~1, 0, false, false, false, () -> graph -> GraphUtils.isTransitive(graph) ? 1 : 0);
+    super(valency & ~1, 0, false, false, false, false, () -> graph -> GraphUtils.isTransitive(graph) ? 1 : 0);
     mValency = valency;
   }
 

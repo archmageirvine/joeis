@@ -41,7 +41,7 @@ public class A001072 extends Sequence3 implements GraphProcessor {
     gg.setMaxEdges(mN * (mN - 1));
     gg.setProcessor(this);
     gg.sanitizeParams();
-    gg.run(false, false, false, 0, 0);
+    gg.run(false, false, false, false, 0, 0);
     return Z.valueOf(mCount);
   }
 

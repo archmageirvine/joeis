@@ -78,7 +78,7 @@ public class A054981 extends Sequence0 implements GraphProcessor {
     gg.setMaxEdges(Multigraph.NOLIMIT);
     gg.setProcessor(this);
     gg.sanitizeParams();
-    gg.run(false, false, false, 0, 0);
+    gg.run(false, false, false, false, 0, 0);
     if (mVerbose) {
       final StringBuilder sb = new StringBuilder("Counts after ");
       sb.append(n);

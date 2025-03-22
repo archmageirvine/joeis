@@ -36,7 +36,7 @@ public class A005176 extends AbstractSequence {
       gg.setMinDeg(k);
       gg.setMaxDeg(k);
       gg.sanitizeParams();
-      gg.run(false, false, false, 0, 0);
+      gg.run(false, false, false, false, 0, 0);
       res = res.add(gg.totalCount());
     }
     return res;

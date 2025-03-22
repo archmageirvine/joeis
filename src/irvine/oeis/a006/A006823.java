@@ -23,7 +23,7 @@ public class A006823 extends Sequence3 {
     gg.setMaxDeg(3);
     gg.setConnectionLevel(1);
     gg.sanitizeParams();
-    gg.run(true /* bipartite */, false, false, 0, 0);
+    gg.run(true /* bipartite */, false, false, false, 0, 0);
     return Z.valueOf(gg.totalCount());
   }
 }

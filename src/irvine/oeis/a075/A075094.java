@@ -40,7 +40,7 @@ public class A075094 extends Sequence1 implements GraphProcessor {
       gg.setMaxDeg(mN);
       gg.setConnectionLevel(0);
       gg.sanitizeParams();
-      gg.run(false, false, false, 0, 0);
+      gg.run(false, false, false, false, 0, 0);
       Collections.sort(mA);
     }
     return mA.get(mM);

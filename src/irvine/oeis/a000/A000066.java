@@ -38,7 +38,7 @@ public class A000066 extends Sequence3 implements GraphProcessor {
       gg.setMaxDeg(3);
       gg.setProcessor(this);
       gg.sanitizeParams();
-      gg.run(false, false, false, 0, 0);
+      gg.run(false, false, false, false, 0, 0);
       if (mSolved) {
         return Z.valueOf(mM);
       }

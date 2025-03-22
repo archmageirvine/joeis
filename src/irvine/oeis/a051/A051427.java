@@ -21,7 +21,7 @@ public class A051427 extends Sequence1 {
     private final int mR;
 
     private StrictlyDeza(final int n, final int r) {
-      super(0, -1, false, false, false, () -> graph -> {
+      super(0, -1, false, false, false, false, () -> graph -> {
         if (GraphUtils.isStronglyRegular(graph)) {
           return 0;
         }

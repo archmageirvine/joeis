@@ -39,7 +39,7 @@ public class A053572 extends Sequence0 implements GraphProcessor {
     gg.setConnectionLevel(1);
     gg.setProcessor(this);
     gg.sanitizeParams();
-    gg.run(false, false, false, 0, 0);
+    gg.run(false, false, false, false, 0, 0);
     return mMax;
   }
 }

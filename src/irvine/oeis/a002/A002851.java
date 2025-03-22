@@ -15,7 +15,7 @@ public class A002851 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A002851(final int offset, final Supplier<Counter> counterFactory) {
-    super(offset, -1, -1, false, false, false, counterFactory);
+    super(offset, -1, -1, false, false, false, false, counterFactory);
   }
 
   /** Construct the sequence. */

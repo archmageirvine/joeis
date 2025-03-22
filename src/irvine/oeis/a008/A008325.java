@@ -22,7 +22,7 @@ public class A008325 extends Sequence3 {
     gg.setMinDeg(3);
     gg.setMaxDeg(3);
     gg.sanitizeParams();
-    gg.run(true /* bipartite */, false, false, 0, 0);
+    gg.run(true /* bipartite */, false, false, false, 0, 0);
     return Z.valueOf(gg.totalCount());
   }
 }

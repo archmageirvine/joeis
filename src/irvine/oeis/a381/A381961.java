@@ -12,7 +12,7 @@ public class A381961 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A381961() {
-    super(-1, -1, false, false, false, () -> graph -> GraphUtils.square(graph).isPlanar() ? 1 : 0);
+    super(-1, -1, false, false, false, true, () -> graph -> GraphUtils.square(graph).isPlanar() ? 1 : 0);
   }
 
   @Override

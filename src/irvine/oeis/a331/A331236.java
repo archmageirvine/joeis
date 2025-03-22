@@ -12,7 +12,7 @@ public class A331236 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A331236() {
-    super(0, 0, false, false, false, () -> GraphUtils::cuttingNumber);
+    super(0, 0, false, false, false, false, () -> GraphUtils::cuttingNumber);
   }
 
   @Override

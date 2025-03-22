@@ -13,7 +13,7 @@ public class A075095 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A075095() {
-    super(1, 0, 2, false, false, false, () -> graph -> Z.TWO.equals(GraphUtils.automorphismSize(graph)) ? 1 : 0);
+    super(1, 0, 2, false, false, false, false, () -> graph -> Z.TWO.equals(GraphUtils.automorphismSize(graph)) ? 1 : 0);
   }
 
   @Override

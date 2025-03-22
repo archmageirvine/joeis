@@ -13,7 +13,7 @@ public class A049369 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A049369() {
-    super(0, 2, false, false, false, () -> Counter.PLANAR);
+    super(0, 2, false, false, false, false, () -> Counter.PLANAR);
   }
 
   protected int minDegree() {

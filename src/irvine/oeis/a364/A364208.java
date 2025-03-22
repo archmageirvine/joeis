@@ -12,7 +12,7 @@ public class A364208 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A364208() {
-    super(0, -1, false, false, false, () -> graph -> new FullSet(graph).is() ? 1 : 0);
+    super(0, -1, false, false, false, false, () -> graph -> new FullSet(graph).is() ? 1 : 0);
   }
 
   private static final class FullSet {

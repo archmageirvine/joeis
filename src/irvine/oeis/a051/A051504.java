@@ -18,7 +18,7 @@ public class A051504 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A051504() {
-    super(-1, -1, false, false, false, () -> graph -> {
+    super(-1, -1, false, false, false, false, () -> graph -> {
       final DigraphCheck check = new DigraphCheck();
       check.direct(graph, 0, 0, Multigraph.NOLIMIT, false, false);
       return check.mCount;

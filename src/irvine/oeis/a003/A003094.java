@@ -13,7 +13,7 @@ public class A003094 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A003094() {
-    super(-1, -1, false, false, false, () -> Counter.PLANAR);
+    super(-1, -1, false, false, false, false, () -> Counter.PLANAR);
   }
 
   @Override

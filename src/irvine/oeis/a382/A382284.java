@@ -25,7 +25,7 @@ public class A382284 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A382284() {
-    super(-1, -1, false, false, false, () -> new Counter() {
+    super(-1, -1, false, false, false, true, () -> new Counter() {
       private final long[] mWorkspace = new long[100];
       private int[] mLab = {};
       private int[] mPtn = {};

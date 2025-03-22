@@ -20,10 +20,8 @@ public class A076143 extends Sequence1 {
     }
     long j = 1;
     for (int k = 1; k <= mN; ++k, j <<= 1) {
-      if ((used & j) == 0) {
-        if (Functions.GCD.i(sum, k) == 1) {
-          search(sum + k, pos + 1, used | j);
-        }
+      if ((used & j) == 0 && Functions.GCD.i(sum, k) == 1) {
+        search(sum + k, pos + 1, used | j);
       }
     }
   }

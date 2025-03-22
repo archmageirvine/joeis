@@ -18,7 +18,7 @@ public class A336545 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A336545() {
-    super(0, 0, false, false, false, () -> graph -> {
+    super(0, 0, false, false, false, false, () -> graph -> {
       final HashSet<Graph> subgraphs = new HashSet<>();
       final OptionBlk options = new OptionBlk();
       options.setCanon(1);

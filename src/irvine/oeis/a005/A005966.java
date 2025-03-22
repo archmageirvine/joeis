@@ -40,7 +40,7 @@ public class A005966 extends Sequence1 implements GraphProcessor {
     gg.setProcessor(this);
     gg.sanitizeParams();
     mMultigraph = new Multigraph(null);
-    gg.run(false, false, false, 0, 0);
+    gg.run(false, false, false, false, 0, 0);
     if (mVerbose) {
       System.out.println("Preplanar " + mGenCount + " planar before multiple edges " + mMultigraph.getGraphsInputCount());
     }

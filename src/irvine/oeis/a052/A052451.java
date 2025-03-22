@@ -16,7 +16,7 @@ public class A052451 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A052451(final int target) {
-    super(0, 3, false, false, false, () -> graph -> max(MaximalCliques.maximalCliques(graph)) == target ? 1 : 0);
+    super(0, 3, false, false, false, false, () -> graph -> max(MaximalCliques.maximalCliques(graph)) == target ? 1 : 0);
   }
 
   /** Construct the sequence. */

@@ -41,7 +41,7 @@ public class A049336 extends Sequence1 implements GraphProcessor {
     gg.setProcessor(this);
     gg.sanitizeParams();
     mPlanarCount = 0;
-    gg.run(false, false, false, 0, 0);
+    gg.run(false, false, false, false, 0, 0);
     return Z.valueOf(mPlanarCount);
   }
 }

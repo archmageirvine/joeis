@@ -25,6 +25,7 @@ public abstract class ParallelGenerateGraphsSequence extends AbstractSequence im
   private final boolean mBipartite;
   private final boolean mSquareFree;
   private final boolean mTriangleFree;
+  private final boolean mFiveCycleFree;
   private final Supplier<Counter> mCounterFactory;
 
   /**
@@ -35,15 +36,17 @@ public abstract class ParallelGenerateGraphsSequence extends AbstractSequence im
    * @param bipartite generate bipartite graphs
    * @param squareFree generate square free graphs
    * @param triangleFree generate triangle free graphs
+   * @param fiveCycleFree generate 5-cycle free graphs
    * @param counterFactory per thread counter factory (this form is useful when the <code>getCount</code> method is complicated)
    */
-  protected ParallelGenerateGraphsSequence(final int offset, final int start, final int firstNonZero, final boolean bipartite, final boolean squareFree, final boolean triangleFree, final Supplier<Counter> counterFactory) {
+  protected ParallelGenerateGraphsSequence(final int offset, final int start, final int firstNonZero, final boolean bipartite, final boolean squareFree, final boolean triangleFree, final boolean fiveCycleFree, final Supplier<Counter> counterFactory) {
     super(offset);
     mN = start;
     mFirstNonZero = firstNonZero;
     mBipartite = bipartite;
     mSquareFree = squareFree;
     mTriangleFree = triangleFree;
+    mFiveCycleFree = fiveCycleFree;
     mCounterFactory = counterFactory;
   }
 
@@ -54,10 +57,11 @@ public abstract class ParallelGenerateGraphsSequence extends AbstractSequence im
    * @param bipartite generate bipartite graphs
    * @param squareFree generate square free graphs
    * @param triangleFree generate triangle free graphs
+   * @param fiveCycleFree
    * @param counterFactory per thread counter factory
    */
-  protected ParallelGenerateGraphsSequence(final int start, final int firstNonZero, final boolean bipartite, final boolean squareFree, final boolean triangleFree, final Supplier<Counter> counterFactory) {
-    this(start + 1, start, firstNonZero, bipartite, squareFree, triangleFree, counterFactory);
+  protected ParallelGenerateGraphsSequence(final int start, final int firstNonZero, final boolean bipartite, final boolean squareFree, final boolean triangleFree, final boolean fiveCycleFree, final Supplier<Counter> counterFactory) {
+    this(start + 1, start, firstNonZero, bipartite, squareFree, triangleFree, fiveCycleFree, counterFactory);
   }
 
   /**
@@ -88,7 +92,7 @@ public abstract class ParallelGenerateGraphsSequence extends AbstractSequence im
       gg.setProcessor(this);
       ParallelGenerateGraphsSequence.this.graphGenInit(gg);
       gg.sanitizeParams();
-      gg.run(mBipartite, mSquareFree, mTriangleFree, 0, mResidue);
+      gg.run(mBipartite, mSquareFree, mTriangleFree, mFiveCycleFree, 0, mResidue);
     }
   }
 

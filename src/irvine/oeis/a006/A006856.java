@@ -36,7 +36,7 @@ public class A006856 extends Sequence1 implements GraphProcessor {
       gg.setProcessor(this);
       gg.sanitizeParams();
       try {
-        gg.run(false, true, true, 0, 0);
+        gg.run(false, true, true, false, 0, 0);
       } catch (final RuntimeException e) {
         if ("found".equals(e.getMessage())) {
           return Z.valueOf(edges);

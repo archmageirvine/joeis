@@ -63,7 +63,7 @@ public abstract class ParallelGenerateGraphsSequence extends AbstractSequence im
    * @param counterFactory per thread counter factory
    */
   protected ParallelGenerateGraphsSequence(final int start, final int firstNonZero, final boolean bipartite, final boolean squareFree, final boolean triangleFree, final boolean pentagonFree, final Supplier<Counter> counterFactory) {
-    this(start + 1, start, firstNonZero, (bipartite ? GenerateGraphs.BIPARTITE : 0) | (squareFree ? GenerateGraphs.SQUARE_FREE : 0) | (triangleFree ? GenerateGraphs.TRIANGLE_FREE : 0) | (pentagonFree ? GenerateGraphs.PENTAGON_FREE : 0), counterFactory);
+    this(start, firstNonZero, (bipartite ? GenerateGraphs.BIPARTITE : 0) | (squareFree ? GenerateGraphs.SQUARE_FREE : 0) | (triangleFree ? GenerateGraphs.TRIANGLE_FREE : 0) | (pentagonFree ? GenerateGraphs.PENTAGON_FREE : 0), counterFactory);
   }
 
   /**

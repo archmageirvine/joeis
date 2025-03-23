@@ -26,7 +26,7 @@ public class A051031 extends Sequence1 {
     if (((mV * mM) & 1) == 1) {
       return Z.ZERO; // impossible for a graph like this
     }
-    return new ParallelGenerateGraphsSequence(mV - 1, 0, false, false, false, false, () -> Counter.ONE) {
+    return new ParallelGenerateGraphsSequence(mV - 1, 0, 0, () -> Counter.ONE) {
       @Override
       protected void graphGenInit(final GenerateGraphs gg) {
         gg.setVertices(mN);

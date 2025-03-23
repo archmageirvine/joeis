@@ -20,6 +20,15 @@ public class GenerateGraphs {
   private static final int MIN_SPLIT_LEVEL = 6;
   static int sMultiplicity = 0;
 
+  /** Generate bipartite graphs. */
+  public static final int BIPARTITE = 1;
+  /** Generate triangle free graphs. */
+  public static final int TRIANGLE_FREE = 2;
+  /** Generate square free graphs. */
+  public static final int SQUARE_FREE = 4;
+  /** Generate pentagon free graphs. */
+  public static final int PENTAGON_FREE = 8;
+
   private final StatsBlk mNautyStats = new StatsBlk();
   private final int mMod;
 
@@ -785,13 +794,23 @@ public class GenerateGraphs {
    * @param bipartite bipartite graphs only
    * @param squareFree square free graphs only
    * @param triangleFree triangle free graphs only
-   * @param fiveCycleFree 5-cycle free graphs only
+   * @param pentagonFree pentagon free graphs only
    * @param splitLevInc split level increment
    * @param res residue
    */
-  public void run(boolean bipartite, boolean squareFree, final boolean triangleFree, final boolean fiveCycleFree, final int splitLevInc, final int res) {
+  public void run(boolean bipartite, boolean squareFree, final boolean triangleFree, final boolean pentagonFree, final int splitLevInc, final int res) {
+    run((bipartite ? BIPARTITE : 0) | (squareFree ? SQUARE_FREE : 0) | (triangleFree ? TRIANGLE_FREE : 0) | (pentagonFree ? PENTAGON_FREE : 1), splitLevInc, res);
+  }
+
+  /**
+   * Run the graph search.
+   * @param flags flags controlling the types of graph generated
+   * @param splitLevInc split level increment
+   * @param res residue
+   */
+  public void run(int flags, final int splitLevInc, final int res) {
     final int[] deg = new int[1];
-    boolean sparse = bipartite || squareFree || triangleFree || fiveCycleFree;
+    boolean sparse = flags > 0;
     final Graph g1 = GraphFactory.create(1);
     if (mMaxN <= 1) {
       if (res == 0) {
@@ -803,8 +822,8 @@ public class GenerateGraphs {
         sparse = true;
       }
       if (mMaxN == mMaxE + 1 && mConnec != 0) {
-        bipartite = true;
-        squareFree = true;
+        flags |= BIPARTITE;
+        flags |= SQUARE_FREE;
         sparse = true;  /* trees */
       }
       makeLevelData(sparse);
@@ -823,25 +842,38 @@ public class GenerateGraphs {
           mLevelData[1].mXLim = mLevelData[1].mXub + 1;
         }
 
-        if (bipartite) {
-          if (squareFree) {
-            spaExtend(g1, deg, 0, true, mLevelData[1].mXlb, mLevelData[1].mXub, new MakeBipartite6Graph());
-          } else {
-            spaExtend(g1, deg, 0, true, mLevelData[1].mXlb, mLevelData[1].mXub, new MakeBipartiteGraph());
-          }
-        } else if (triangleFree) {
-          if (squareFree) {
-            spaExtend(g1, deg, 0, true, mLevelData[1].mXlb, mLevelData[1].mXub, new MakeGirth5Graph());
-          } else {
-            spaExtend(g1, deg, 0, true, mLevelData[1].mXlb, mLevelData[1].mXub, new MakeXGraph());
-          }
-        } else if (squareFree) {
-          spaExtend(g1, deg, 0, true, mLevelData[1].mXlb, mLevelData[1].mXub, new MakeSquareGraph());
-        } else if (fiveCycleFree) {
-          // todo note nauty has the options to handle combinations of 5-cycle free and square free etc.
-          spaExtend(g1, deg, 0, true, mLevelData[1].mXlb, mLevelData[1].mXub, new MakePlus5Graph(0));
-        } else {
-          genExtend(GraphFactory.create(1), new int[1], 0, true, mLevelData[1].mXlb, mLevelData[1].mXub);
+        final int xl = mLevelData[1].mXlb;
+        final int xu = mLevelData[1].mXub;
+        switch (flags) {
+          case 0:
+            genExtend(GraphFactory.create(1), new int[1], 0, true, xl, xu);
+            break;
+          case BIPARTITE:
+          case BIPARTITE | TRIANGLE_FREE:
+          case BIPARTITE | PENTAGON_FREE:
+          case BIPARTITE | TRIANGLE_FREE | PENTAGON_FREE:
+            spaExtend(g1, deg, 0, true, xl, xu, new MakeBipartiteGraph());
+            break;
+          case BIPARTITE | SQUARE_FREE:
+          case BIPARTITE | TRIANGLE_FREE | SQUARE_FREE:
+          case BIPARTITE | SQUARE_FREE | PENTAGON_FREE:
+          case BIPARTITE | TRIANGLE_FREE | SQUARE_FREE | PENTAGON_FREE:
+            spaExtend(g1, deg, 0, true, xl, xu, new MakeBipartite6Graph());
+            break;
+          case TRIANGLE_FREE:
+            spaExtend(g1, deg, 0, true, xl, xu, new MakeXGraph());
+            break;
+          case SQUARE_FREE:
+            spaExtend(g1, deg, 0, true, xl, xu, new MakeSquareGraph());
+            break;
+          case PENTAGON_FREE:
+            spaExtend(g1, deg, 0, true, xl, xu, new MakePlus5Graph(0));
+            break;
+          case TRIANGLE_FREE | SQUARE_FREE:
+            spaExtend(g1, deg, 0, true, xl, xu, new MakeGirth5Graph());
+            break;
+          default:
+            throw new UnsupportedOperationException("Could not handle flags: " + Integer.toBinaryString(flags));
         }
       }
     }

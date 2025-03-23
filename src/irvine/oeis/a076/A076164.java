@@ -1,30 +1,25 @@
-package irvine.oeis.a036;
+package irvine.oeis.a076;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A036301 Numbers whose sum of even digits and sum of odd digits are equal.
+ * A036301.
  * @author Sean A. Irvine
  */
-public class A036301 extends AbstractSequence {
+public class A076164 extends AbstractSequence {
 
   private long mN = -1;
   private final int mDiff;
 
-  /** Construct the sequence. */
-  public A036301() {
-    this(1, 0);
-  }
-
-  /**
-   * Generic constructor with parameter.
-   * @param offset first index
-   * @param diff difference of sums of even/odd digits
-   */
-  protected A036301(final int offset, final int diff) {
+  protected A076164(final int offset, final int diff) {
     super(offset);
     mDiff = diff;
+  }
+
+  /** Construct the sequence. */
+  public A076164() {
+    this(1, 0);
   }
 
   @Override
@@ -34,10 +29,11 @@ public class A036301 extends AbstractSequence {
       long e = 0;
       long o = 0;
       while (m != 0) {
+        final long r = m % 10;
         if ((m & 1) == 0) {
-          e += m % 10;
+          e += r * r;
         } else {
-          o += m % 10;
+          o += r * r;
         }
         m /= 10;
       }

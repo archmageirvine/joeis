@@ -52,7 +52,7 @@ public class A294525 extends Sequence1 implements GraphProcessor {
     gg.setProcessor(this);
     gg.sanitizeParams();
     mCount = new long[mN + 1]; // index 0 not used
-    gg.run(false, false, false, false, 0, 0);
+    gg.run(0, 0, 0);
     if (mVerbose) {
       StringUtils.message(Arrays.toString(mCount));
     }

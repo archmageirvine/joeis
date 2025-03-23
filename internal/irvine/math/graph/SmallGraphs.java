@@ -44,7 +44,7 @@ public final class SmallGraphs implements GraphProcessor {
       gg.setMaxDeg(n);
       gg.setConnectionLevel(0);
       gg.sanitizeParams();
-      gg.run(false, false, false, false, 0, 0);
+      gg.run(0, 0, 0);
     }
   }
 }

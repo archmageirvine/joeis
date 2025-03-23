@@ -58,7 +58,7 @@ public class A006714 extends Sequence3 implements GraphProcessor {
     mPtn = new int[mN];
     mOrb = new int[mN];
     mSet = new NautySet(mN);
-    gg.run(true, false, false, false, 0, 0);
+    gg.run(GenerateGraphs.BIPARTITE, 0, 0);
     return mCount;
   }
 }

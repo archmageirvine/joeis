@@ -63,7 +63,7 @@ public class A007835 extends Sequence1 implements GraphProcessor {
     mGenCount = 0;
     mDirected = 0;
     mAccepted.clear();
-    gg.run(false, false, false, false, 0, 0);
+    gg.run(0, 0, 0);
     if (mVerbose) {
       System.out.println("Undirected generated count was " + mGenCount + " directed " + mDirected);
       System.out.println(mAccepted);

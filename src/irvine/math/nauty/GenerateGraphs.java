@@ -791,19 +791,6 @@ public class GenerateGraphs {
 
   /**
    * Run the graph search.
-   * @param bipartite bipartite graphs only
-   * @param squareFree square free graphs only
-   * @param triangleFree triangle free graphs only
-   * @param pentagonFree pentagon free graphs only
-   * @param splitLevInc split level increment
-   * @param res residue
-   */
-  public void run(boolean bipartite, boolean squareFree, final boolean triangleFree, final boolean pentagonFree, final int splitLevInc, final int res) {
-    run((bipartite ? BIPARTITE : 0) | (squareFree ? SQUARE_FREE : 0) | (triangleFree ? TRIANGLE_FREE : 0) | (pentagonFree ? PENTAGON_FREE : 1), splitLevInc, res);
-  }
-
-  /**
-   * Run the graph search.
    * @param flags flags controlling the types of graph generated
    * @param splitLevInc split level increment
    * @param res residue

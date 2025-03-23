@@ -385,7 +385,7 @@ cost of a small increase in cpu time.
 
       final long t1 = System.currentTimeMillis();
 
-      gg.run(bipartite, squareFree, triangleFree, false, (Integer) flags.getValue(SPLIT_LEVEL_INC_FLAG), res);
+      gg.run((bipartite ? GenerateGraphs.BIPARTITE : 0) | (squareFree ? GenerateGraphs.SQUARE_FREE : 0) | (triangleFree ? GenerateGraphs.TRIANGLE_FREE : 0) | 0, (Integer) flags.getValue(SPLIT_LEVEL_INC_FLAG), res);
 
       final long t2 = System.currentTimeMillis();
       final long nout = gg.totalCount();

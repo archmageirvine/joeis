@@ -33,7 +33,7 @@ public class A000421 extends Sequence1 implements GraphProcessor {
     gg.setProcessor(this);
     gg.sanitizeParams();
     mMultigraph = new Multigraph(null);
-    gg.run(false, false, false, false, 0, 0);
+    gg.run(0, 0, 0);
     //System.err.println("Gen: " + mMultigraph.getGraphsInputCount());
     return Z.valueOf(mMultigraph.getGraphsOutputCount());
   }

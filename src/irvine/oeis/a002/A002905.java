@@ -35,7 +35,7 @@ public class A002905 extends AbstractSequence {
     gg.setVertices(++mN);
     gg.setMaxEdges((mN * mN - mN) / 2);
     gg.sanitizeParams();
-    gg.run(false, false, false, false, 0, 0);
+    gg.run(0, 0, 0);
     final long[] cnt = gg.edgeCounts();
     //System.out.println(mN + " " + Arrays.toString(cnt));
     for (int k = 0; k < cnt.length; ++k) {

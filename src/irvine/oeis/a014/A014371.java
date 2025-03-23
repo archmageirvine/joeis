@@ -26,7 +26,7 @@ public class A014371 extends Sequence0 {
     gg.setMinDeg(3);
     gg.setMaxDeg(3);
     gg.sanitizeParams();
-    gg.run(false, false, true, false, 0, 0);
+    gg.run(GenerateGraphs.TRIANGLE_FREE, 0, 0);
     return Z.valueOf(gg.totalCount());
   }
 }

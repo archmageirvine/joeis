@@ -92,7 +92,7 @@ public abstract class ParallelGenerateGraphsSequence extends AbstractSequence im
       gg.setProcessor(this);
       ParallelGenerateGraphsSequence.this.graphGenInit(gg);
       gg.sanitizeParams();
-      gg.run(mBipartite, mSquareFree, mTriangleFree, mPentagonFree, 0, mResidue);
+      gg.run((mBipartite ? GenerateGraphs.BIPARTITE : 0) | (mSquareFree ? GenerateGraphs.SQUARE_FREE : 0) | (mTriangleFree ? GenerateGraphs.TRIANGLE_FREE : 0) | (mPentagonFree ? GenerateGraphs.PENTAGON_FREE : 0), 0, mResidue);
     }
   }
 

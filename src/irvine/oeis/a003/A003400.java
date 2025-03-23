@@ -55,7 +55,7 @@ public class A003400 extends Sequence1 implements GraphProcessor {
     mPtn = new int[mN];
     mOrb = new int[mN];
     mSet = new NautySet(mN);
-    gg.run(false, false, false, false, 0, 0);
+    gg.run(0, 0, 0);
     if (mVerbose) {
       System.out.println("Undirected generated count was " + mGenCount);
     }

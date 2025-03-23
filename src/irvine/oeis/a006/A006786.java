@@ -19,7 +19,7 @@ public class A006786 extends Sequence1 {
     gg.setMinEdges(0);
     gg.setMaxEdges(mN * (mN - 1) / 2);
     gg.sanitizeParams();
-    gg.run(false, true, false, false, 0, 0);
+    gg.run(GenerateGraphs.SQUARE_FREE, 0, 0);
     return Z.valueOf(gg.totalCount());
   }
 }

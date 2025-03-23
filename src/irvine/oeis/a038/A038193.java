@@ -43,7 +43,7 @@ public class A038193 extends Sequence1 implements GraphProcessor {
     gg.setMaxDeg(mN);
     gg.setProcessor(this);
     gg.sanitizeParams();
-    gg.run(false, false, false, false, 0, 0);
+    gg.run(0, 0, 0);
     if (mVerbose) {
       System.out.println(mSeen);
     }

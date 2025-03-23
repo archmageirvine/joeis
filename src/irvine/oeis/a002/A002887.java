@@ -66,7 +66,7 @@ public class A002887 extends Sequence1 implements GraphProcessor {
       gg.setConnectionLevel(1);
       gg.setProcessor(this);
       gg.sanitizeParams();
-      gg.run(false, false, false, false, 0, 0);
+      gg.run(0, 0, 0);
     }
     if (mVerbose) {
       StringUtils.message("Cutting center size=" + mM + " order=" + mFirstCuttingCenter.get(mM) + " cutting-number=" + mFirstCuttingNumber.get(mM));

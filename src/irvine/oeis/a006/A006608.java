@@ -67,7 +67,7 @@ public class A006608 extends Sequence1 implements GraphProcessor {
     gg.sanitizeParams();
     mRing = new MatrixRing<>(mN, POLY);
     mCharPolyCounts.clear();
-    gg.run(bipartite(), false, false, false, 0, 0);
+    gg.run(bipartite() ? GenerateGraphs.BIPARTITE : 0, 0, 0);
     long sumRepeated = 0;
     for (final Long v : mCharPolyCounts.values()) {
       if (v > 1) {

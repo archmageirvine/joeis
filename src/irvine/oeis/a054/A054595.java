@@ -62,7 +62,7 @@ public class A054595 extends Sequence3 implements GraphProcessor {
     mOrb = new int[mN];
     mSet = new NautySet(mN);
     mCount = Z.ZERO;
-    gg.run(false, false, false, false, 0, 0);
+    gg.run(0, 0, 0);
     return mCount;
   }
 

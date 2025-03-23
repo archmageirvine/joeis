@@ -48,7 +48,7 @@ public class A054760 extends A198300 implements GraphProcessor {
       gg.setConnectionLevel(1);
       gg.sanitizeParams();
       try {
-        gg.run(false, mM > 2, mM > 1, false, 0, 0);
+        gg.run((mM > 2 ? GenerateGraphs.SQUARE_FREE : 0) | (mM > 1 ? GenerateGraphs.TRIANGLE_FREE : 0), 0, 0);
       } catch (final FoundItException e) {
         return Z.valueOf(n);
       }

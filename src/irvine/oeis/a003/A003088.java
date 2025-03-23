@@ -64,7 +64,7 @@ public class A003088 extends Sequence0 implements GraphProcessor {
     gg.sanitizeParams();
     mDigraph = new DigraphCheck();
     mGenCount = 0;
-    gg.run(false, false, false, false, 0, 0);
+    gg.run(0, 0, 0);
     if (mVerbose) {
       System.out.println("Undirected generated count was " + mGenCount);
     }

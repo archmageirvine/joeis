@@ -42,7 +42,7 @@ public class A019535 extends AbstractSequence implements GraphProcessor {
     gg.setMaxDeg(6);
     gg.setProcessor(this);
     gg.sanitizeParams();
-    gg.run(false, false, false, false, 0, 0);
+    gg.run(0, 0, 0);
     return Z.valueOf(mMax);
   }
 }

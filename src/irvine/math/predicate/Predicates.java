@@ -38,6 +38,16 @@ public final class Predicates {
   public static final Predicate LUCAS = new Lucas();
   /** Test if a number is perfect. */
   public static final Predicate PERFECT = new Perfect();
+
+  /** Test if a number is arithmetic. */
+  public static final Predicate ARITHMETIC = new Arithmetic(); // =A003601
+  /** Test if a number is balanced. */
+  public static final Predicate BALANCED = new Balanced(); // =A020492
+  /** Test if a number is a Carmichael number. */
+  public static final Predicate CARMICHAEL = new Carmichael(); // =A002997
+  /** Test if a number is a harmonic number as defined by Ore. */
+  public static final Predicate ORE_HARMONIC = new OreHarmonic(); // =A001599
+
   /** Test if a number is abundant. */
   public static final Predicate ABUNDANT = new Abundant();
   /** Test if a number is deficient. */
@@ -65,4 +75,6 @@ public final class Predicates {
   public static final Predicate2 STRONG_PSEUDOPRIME = new StrongPseudoprime();
   /** Test if a number is a repeated digit in a base. */
   public static final Predicate2 REPDIGIT = new Repdigit();
+  /** Test if a number is zeroless in a base (=052. */
+  public static final Predicate2 ZEROLESS = new Zeroless(); // =A052382(10,
 }

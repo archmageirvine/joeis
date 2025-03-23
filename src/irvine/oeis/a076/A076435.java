@@ -19,7 +19,7 @@ public class A076435 extends Sequence1 {
     private final int mR;
 
     private StronglyRegular(final int n, final int r) {
-      super(0, -1, false, false, false, false, () -> graph -> GraphUtils.isStronglyRegular(graph) ? 1 : 0);
+      super(0, -1, 0, () -> graph -> GraphUtils.isStronglyRegular(graph) ? 1 : 0);
       mN = n;
       mR = r;
     }

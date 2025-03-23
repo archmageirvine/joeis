@@ -18,7 +18,7 @@ public class A008323 extends Sequence0 {
     private final boolean mConnected;
 
     RegularConnectedBipartiteGenerator(final int n, final int r, final boolean connected) {
-      super(n - 1, 0, true, false, false, false, () -> Counter.ONE);
+      super(n - 1, 0, GenerateGraphs.BIPARTITE, () -> Counter.ONE);
       mR = r;
       mConnected = connected;
     }

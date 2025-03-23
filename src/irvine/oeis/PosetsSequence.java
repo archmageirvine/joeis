@@ -20,11 +20,11 @@ public class PosetsSequence extends ParallelGenerateGraphsSequence {
    * @param accept thread-safe predicate indicating if the given graph should be accepted
    */
   public PosetsSequence(final int offset, final Predicate<Graph> accept) {
-    super(offset - 1, offset - 1, false, false, false, false, () -> graph -> {
-      final DigraphCheck digraph = new DigraphCheck(accept);
-      digraph.generate(graph, 0, 0, Multigraph.NOLIMIT);
-      return digraph.mCount;
-    });
+    super(offset - 1, offset - 1, 0, () -> graph -> {
+          final DigraphCheck digraph = new DigraphCheck(accept);
+          digraph.generate(graph, 0, 0, Multigraph.NOLIMIT);
+          return digraph.mCount;
+        });
   }
 
   @Override

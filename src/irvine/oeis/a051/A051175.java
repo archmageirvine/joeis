@@ -11,7 +11,7 @@ public class A051175 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A051175() {
-    super(0, 9, false, false, false, false, () -> graph -> graph.wienerIndex() == graph.lineGraph().lineGraph().wienerIndex() ? 1 : 0);
+    super(0, 9, 0, () -> graph -> graph.wienerIndex() == graph.lineGraph().lineGraph().wienerIndex() ? 1 : 0);
   }
 
   @Override

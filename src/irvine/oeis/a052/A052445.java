@@ -13,7 +13,7 @@ public class A052445 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A052445() {
-    super(0, 5, false, false, false, false, () -> graph -> GraphUtils.isKConnected(graph, 4) && !GraphUtils.isKConnected(graph, 5) ? 1 : 0);
+    super(0, 5, 0, () -> graph -> GraphUtils.isKConnected(graph, 4) && !GraphUtils.isKConnected(graph, 5) ? 1 : 0);
   }
 
   @Override

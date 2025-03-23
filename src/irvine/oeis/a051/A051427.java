@@ -21,31 +21,31 @@ public class A051427 extends Sequence1 {
     private final int mR;
 
     private StrictlyDeza(final int n, final int r) {
-      super(0, -1, false, false, false, false, () -> graph -> {
-        if (GraphUtils.isStronglyRegular(graph)) {
-          return 0;
-        }
-        int a = -1; // the two allowed degrees
-        int b = -1;
-        for (int u = 0; u < graph.order(); ++u) {
-          final long nu = GraphUtils.neighbours(graph, u);
-          for (int v = 0; v < u; ++v) {
-            // u and v a pair of vertices
-            final long nv = GraphUtils.neighbours(graph, v);
-            final int cnt = Long.bitCount(nu & nv);
-            if (a == -1) {
-              a = cnt;
-            } else if (a != cnt) {
-              if (b == -1) {
-                b = cnt;
-              } else if (b != cnt) {
-                return 0; // Not Deza
+      super(0, -1, 0, () -> graph -> {
+              if (GraphUtils.isStronglyRegular(graph)) {
+                return 0;
               }
-            }
-          }
-        }
-        return b >= 0 && isDiameter2(graph) ? 1 : 0;
-      });
+              int a = -1; // the two allowed degrees
+              int b = -1;
+              for (int u = 0; u < graph.order(); ++u) {
+                final long nu = GraphUtils.neighbours(graph, u);
+                for (int v = 0; v < u; ++v) {
+                  // u and v a pair of vertices
+                  final long nv = GraphUtils.neighbours(graph, v);
+                  final int cnt = Long.bitCount(nu & nv);
+                  if (a == -1) {
+                    a = cnt;
+                  } else if (a != cnt) {
+                    if (b == -1) {
+                      b = cnt;
+                    } else if (b != cnt) {
+                      return 0; // Not Deza
+                    }
+                  }
+                }
+              }
+              return b >= 0 && isDiameter2(graph) ? 1 : 0;
+            });
       mN = n;
       mR = r;
     }

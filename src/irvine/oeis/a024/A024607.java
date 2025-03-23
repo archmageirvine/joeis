@@ -13,7 +13,7 @@ public class A024607 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A024607() {
-    super(0, 0, false, false, true, false, () -> Counter.ONE);
+    super(0, 0, GenerateGraphs.TRIANGLE_FREE | 0, () -> Counter.ONE);
   }
 
   @Override

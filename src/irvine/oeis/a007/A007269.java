@@ -18,25 +18,25 @@ public class A007269 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A007269(final BiFunction<Graph, Integer, Boolean> neighborCheck) {
-    super(0, 0, false, false, false, false, () -> graph -> {
-      final Graph simplifiedGraph = simplify(graph);
-      if (neighborCheck.apply(simplifiedGraph, graph.order())) {
-        final List<Z> maxIndpSets = MaximalCliques.maximalIndependentSets(simplifiedGraph);
-        for (final Z maxIndpSet : maxIndpSets) {
-          if (!checkTriangleCondition(simplifiedGraph, maxIndpSet)) {
-            return 0;
+    super(0, 0, 0, () -> graph -> {
+          final Graph simplifiedGraph = simplify(graph);
+          if (neighborCheck.apply(simplifiedGraph, graph.order())) {
+            final List<Z> maxIndpSets = MaximalCliques.maximalIndependentSets(simplifiedGraph);
+            for (final Z maxIndpSet : maxIndpSets) {
+              if (!checkTriangleCondition(simplifiedGraph, maxIndpSet)) {
+                return 0;
+              }
+            }
+            final CliqueCoversIterator cci = new CliqueCoversIterator(simplifiedGraph);
+            Z[] cc;
+            while ((cc = cci.next()) != null) {
+              if (checkIncidenceCondition(cc, maxIndpSets)) {
+                return 1;
+              }
+            }
           }
-        }
-        final CliqueCoversIterator cci = new CliqueCoversIterator(simplifiedGraph);
-        Z[] cc;
-        while ((cc = cci.next()) != null) {
-          if (checkIncidenceCondition(cc, maxIndpSets)) {
-            return 1;
-          }
-        }
-      }
-      return 0;
-    });
+          return 0;
+        });
   }
 
   /** Construct the sequence. */

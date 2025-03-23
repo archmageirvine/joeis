@@ -13,7 +13,7 @@ public class A057865 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A057865() {
-    super(0, 0, false, false, false, false, () -> graph -> isHamiltonianPath(graph) ? 1 : 0);
+    super(0, 0, 0, () -> graph -> isHamiltonianPath(graph) ? 1 : 0);
   }
 
   private static boolean solveHamiltonianPath(final Graph g, final int target, final long used, final int count, final int current) {

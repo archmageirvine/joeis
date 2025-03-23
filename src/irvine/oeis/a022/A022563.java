@@ -11,7 +11,7 @@ public class A022563 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A022563() {
-    super(0, 2, false, false, false, false, () -> graph -> A022562.isClawFree(graph) ? 1 : 0);
+    super(0, 2, 0, () -> graph -> A022562.isClawFree(graph) ? 1 : 0);
   }
 
   @Override

@@ -19,19 +19,19 @@ public class A382021 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A382021() {
-    super(-1, -1, false, false, false, false, () -> graph -> {
-      final long[] deg = new long[graph.order()];
-      for (int k = 0; k < deg.length; ++k) {
-        deg[k] = graph.degree(k);
-      }
-      Arrays.sort(deg);
-      for (int k = 1; k < deg.length; ++k) {
-        if (deg[k] - deg[k - 1] > 1) {
-          return 0;
-        }
-      }
-      return CONSEC_DEGREE_SEQUENCES.add(Arrays.toString(deg)) ? 1 : 0;
-    });
+    super(-1, -1, 0, () -> graph -> {
+          final long[] deg = new long[graph.order()];
+          for (int k = 0; k < deg.length; ++k) {
+            deg[k] = graph.degree(k);
+          }
+          Arrays.sort(deg);
+          for (int k = 1; k < deg.length; ++k) {
+            if (deg[k] - deg[k - 1] > 1) {
+              return 0;
+            }
+          }
+          return CONSEC_DEGREE_SEQUENCES.add(Arrays.toString(deg)) ? 1 : 0;
+        });
   }
 
   @Override

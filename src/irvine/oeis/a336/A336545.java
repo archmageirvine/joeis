@@ -18,26 +18,26 @@ public class A336545 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A336545() {
-    super(0, 0, false, false, false, false, () -> graph -> {
-      final HashSet<Graph> subgraphs = new HashSet<>();
-      final OptionBlk options = new OptionBlk();
-      options.setCanon(1);
-      final long[] workspace = new long[100];
-      final int n = graph.order() - 1;
-      final int[] lab = new int[n];
-      final int[] ptn = new int[n];
-      final int[] orb = new int[n];
-      final NautySet set = new NautySet(n);
-      final StatsBlk stats = new StatsBlk();
-      for (int k = 0; k < graph.order(); ++k) {
-        final Graph s = graph.delete(k);
-        if (s.isConnected()) {
-          subgraphs.add(new Nauty(s, lab, ptn, set, orb, options, stats, workspace).canon());
-        }
-      }
-      //System.out.println(graph + " " + subgraphs.size() + " " + subgraphs);
-      return subgraphs.size();
-    });
+    super(0, 0, 0, () -> graph -> {
+          final HashSet<Graph> subgraphs = new HashSet<>();
+          final OptionBlk options = new OptionBlk();
+          options.setCanon(1);
+          final long[] workspace = new long[100];
+          final int n = graph.order() - 1;
+          final int[] lab = new int[n];
+          final int[] ptn = new int[n];
+          final int[] orb = new int[n];
+          final NautySet set = new NautySet(n);
+          final StatsBlk stats = new StatsBlk();
+          for (int k = 0; k < graph.order(); ++k) {
+            final Graph s = graph.delete(k);
+            if (s.isConnected()) {
+              subgraphs.add(new Nauty(s, lab, ptn, set, orb, options, stats, workspace).canon());
+            }
+          }
+          //System.out.println(graph + " " + subgraphs.size() + " " + subgraphs);
+          return subgraphs.size();
+        });
   }
 
   @Override

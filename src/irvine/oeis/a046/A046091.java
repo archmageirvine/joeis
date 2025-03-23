@@ -20,7 +20,7 @@ public class A046091 extends Sequence0 {
     private final int mEdges;
 
     MySequence(final int n, final int m) {
-      super(0, 0, false, false, false, false, () -> Counter.PLANAR);
+      super(0, 0, 0, () -> Counter.PLANAR);
       mVertices = n;
       mEdges = m;
     }

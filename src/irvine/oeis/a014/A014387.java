@@ -12,7 +12,7 @@ public class A014387 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A014387() {
-    super(6, -1, true, false, false, false, () -> Counter.ONE);
+    super(6, -1, GenerateGraphs.BIPARTITE, () -> Counter.ONE);
   }
 
   @Override

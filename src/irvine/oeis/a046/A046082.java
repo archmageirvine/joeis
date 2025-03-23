@@ -12,7 +12,7 @@ public class A046082 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A046082() {
-    super(0, 0, false, false, false, false, () -> graph -> isUltraconnected(graph) ? 1 : 0);
+    super(0, 0, 0, () -> graph -> isUltraconnected(graph) ? 1 : 0);
   }
 
   private static int deficiency(final Graph graph) {

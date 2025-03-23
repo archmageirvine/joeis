@@ -15,7 +15,7 @@ public class A052444 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A052444() {
-    super(0, 4, false, false, false, false, () -> graph -> GraphUtils.isKConnected(graph, 3) && !GraphUtils.isKConnected(graph, 4) ? 1 : 0);
+    super(0, 4, 0, () -> graph -> GraphUtils.isKConnected(graph, 3) && !GraphUtils.isKConnected(graph, 4) ? 1 : 0);
   }
 
   @Override

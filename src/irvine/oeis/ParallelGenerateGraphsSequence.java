@@ -53,20 +53,6 @@ public abstract class ParallelGenerateGraphsSequence extends AbstractSequence im
   }
 
   /**
-   * Construct a new parallel execution of nauty.
-   * @param start one less than the first term (number of vertices)
-   * @param firstNonZero first nonzero term
-   * @param bipartite generate bipartite graphs
-   * @param squareFree generate square free graphs
-   * @param triangleFree generate triangle free graphs
-   * @param pentagonFree generate pentagon free graphs
-   * @param counterFactory per thread counter factory
-   */
-  protected ParallelGenerateGraphsSequence(final int start, final int firstNonZero, final boolean bipartite, final boolean squareFree, final boolean triangleFree, final boolean pentagonFree, final Supplier<Counter> counterFactory) {
-    this(start, firstNonZero, (bipartite ? GenerateGraphs.BIPARTITE : 0) | (squareFree ? GenerateGraphs.SQUARE_FREE : 0) | (triangleFree ? GenerateGraphs.TRIANGLE_FREE : 0) | (pentagonFree ? GenerateGraphs.PENTAGON_FREE : 0), counterFactory);
-  }
-
-  /**
    * Set up the required parameters for graphs to be generated.
    * @param gg partially initialized generator
    */

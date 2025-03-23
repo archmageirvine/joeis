@@ -25,34 +25,34 @@ public class A382180 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A382180() {
-    super(-1, -1, false, false, false, false, () -> new Counter() {
-      private final long[] mWorkspace = new long[100];
-      private int[] mLab = {};
-      private int[] mPtn = {};
-      private int[] mOrb = {};
-      private NautySet mNautySet = new NautySet(0);
-      private final StatsBlk mStatsBlk = new StatsBlk();
-      private final OptionBlk mOpt = new OptionBlk();
-      {
-        mOpt.setCanon(1);
-      }
+    super(-1, -1, 0, () -> new Counter() {
+          private final long[] mWorkspace = new long[100];
+          private int[] mLab = {};
+          private int[] mPtn = {};
+          private int[] mOrb = {};
+          private NautySet mNautySet = new NautySet(0);
+          private final StatsBlk mStatsBlk = new StatsBlk();
+          private final OptionBlk mOpt = new OptionBlk();
+          {
+            mOpt.setCanon(1);
+          }
 
-      private Graph square(final Graph graph) {
-        final Graph square = GraphUtils.square(graph);
-        if (graph.order() != mLab.length) {
-          mLab = new int[graph.order()];
-          mPtn = new int[graph.order()];
-          mOrb = new int[graph.order()];
-          mNautySet = new NautySet(graph.order());
-        }
-        return new Nauty(square, mLab, mPtn, mNautySet, mOrb, mOpt, mStatsBlk, mWorkspace).canon();
-      }
+          private Graph square(final Graph graph) {
+            final Graph square = GraphUtils.square(graph);
+            if (graph.order() != mLab.length) {
+              mLab = new int[graph.order()];
+              mPtn = new int[graph.order()];
+              mOrb = new int[graph.order()];
+              mNautySet = new NautySet(graph.order());
+            }
+            return new Nauty(square, mLab, mPtn, mNautySet, mOrb, mOpt, mStatsBlk, mWorkspace).canon();
+          }
 
-      @Override
-      public long getCount(final Graph graph) {
-        return SQUARE_GRAPHS.add(square(graph)) ? 1 : 0;
-      }
-    });
+          @Override
+          public long getCount(final Graph graph) {
+            return SQUARE_GRAPHS.add(square(graph)) ? 1 : 0;
+          }
+        });
   }
 
   @Override

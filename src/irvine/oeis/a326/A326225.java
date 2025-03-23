@@ -14,14 +14,14 @@ public class A326225 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A326225() {
-    super(-1, 0, false, false, false, false, () -> graph -> {
-      // Given an undirected graph, convert the edges into a directed graph in all possible ways.
-      // Since all the input graphs are non-isomorphic, the resulting graphs are also
-      // non-isomorphic.
-      final DigraphCheck digraph = new DigraphCheck();
-      digraph.direct(graph, 0, graph.size(), 2 * graph.size(), false, false);
-      return digraph.mCount;
-    });
+    super(-1, 0, 0, () -> graph -> {
+          // Given an undirected graph, convert the edges into a directed graph in all possible ways.
+          // Since all the input graphs are non-isomorphic, the resulting graphs are also
+          // non-isomorphic.
+          final DigraphCheck digraph = new DigraphCheck();
+          digraph.direct(graph, 0, graph.size(), 2 * graph.size(), false, false);
+          return digraph.mCount;
+        });
   }
 
   private static final class DigraphCheck extends DirectedGraph {

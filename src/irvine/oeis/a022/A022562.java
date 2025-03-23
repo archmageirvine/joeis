@@ -12,7 +12,7 @@ public class A022562 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A022562() {
-    super(0, 0, false, false, false, false, () -> graph -> isClawFree(graph) ? 1 : 0);
+    super(0, 0, 0, () -> graph -> isClawFree(graph) ? 1 : 0);
   }
 
   static boolean isClawFree(final Graph graph) {

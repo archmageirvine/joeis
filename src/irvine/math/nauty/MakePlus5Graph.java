@@ -31,12 +31,12 @@ class MakePlus5Graph implements MakeH {
       while (w3 != 0) {
         final int v3 = Long.numberOfLeadingZeros(w3);
         w3 ^= GenerateGraphs.BIT[v3];
-        x |= (x3 & GenerateGraphs.XBIT[v3]);
+        x |= x3 & GenerateGraphs.XBIT[v3];
         long w4 = ((SmallGraph) g).getEdgeVector(v3) & ~GenerateGraphs.BIT[v0];
         while (w4 != 0) {
           final int v4 = Long.numberOfLeadingZeros(w4);
           w4 ^= GenerateGraphs.BIT[v4];
-          x |= (x4 & GenerateGraphs.XBIT[v4]);
+          x |= x4 & GenerateGraphs.XBIT[v4];
           long w5 = ((SmallGraph) g).getEdgeVector(v4) & ~GenerateGraphs.BIT[v0] & ~GenerateGraphs.BIT[v3];
           while (w5 != 0) {
             final int v5 = Long.numberOfLeadingZeros(w5);

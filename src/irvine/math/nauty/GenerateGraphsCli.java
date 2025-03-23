@@ -5,7 +5,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
-import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 
 import irvine.util.CliFlags;
@@ -356,29 +355,7 @@ cost of a small increase in cpu time.
     }
     gg.sanitizeParams();
 
-    // todo this needs updating for pentagon free
-    int tmaxe;
-    switch (generationFlags) {
-      case 0:
-        tmaxe = (gg.mMaxN * gg.mMaxN - gg.mMaxN) / 2;
-        break;
-      case GenerateGraphs.BIPARTITE | GenerateGraphs.SQUARE_FREE:
-        tmaxe = new MaxEdgesBipartiteSquareFree().getMaxEdges(gg.mMaxN);
-        break;
-      case GenerateGraphs.TRIANGLE_FREE | GenerateGraphs.SQUARE_FREE:
-        tmaxe = new MaxEdgesTriangleAndSquareFree().getMaxEdges(gg.mMaxN);
-        break;
-      case GenerateGraphs.TRIANGLE_FREE:
-      case GenerateGraphs.BIPARTITE:
-        tmaxe = new MaxEdgesTriangleFree().getMaxEdges(gg.mMaxN); // bipartite maximum is the same as triangle free
-        break;
-      case GenerateGraphs.SQUARE_FREE:
-        tmaxe = new MaxEdgesSquareFree().getMaxEdges(gg.mMaxN);
-        break;
-      default:
-        throw new UnsupportedEncodingException("Cannot generate edge set for flags " + Integer.toBinaryString(generationFlags));
-    }
-
+    int tmaxe = MaxEdges.getMaxEdges(generationFlags, gg.mMaxN);
     if (flags.isSet(SAFE_FLAG)) {
       ++tmaxe;
     }

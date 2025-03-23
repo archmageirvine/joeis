@@ -818,6 +818,11 @@ public class GenerateGraphs {
 
       mOdometer = res;
 
+      final int tmax = MaxEdges.getMaxEdges(flags, mMaxN);
+      if (mMaxE > tmax) {
+        mMaxE = tmax;
+      }
+
       if (mMaxE >= mMinE && (mMod <= 1 || mSplitLevel > 2 || res == 0)) {
         xbnds(1, 0, 0);
         if (sparse) {

@@ -818,7 +818,6 @@ public class GenerateGraphs {
 
       mOdometer = res;
 
-      //if (mMaxE >= mMinE && (mMod <= 1 || (mMod > 1 && (mSplitLevel > 2 || res == 0)))) {
       if (mMaxE >= mMinE && (mMod <= 1 || mSplitLevel > 2 || res == 0)) {
         xbnds(1, 0, 0);
         if (sparse) {
@@ -833,7 +832,7 @@ public class GenerateGraphs {
         final int xu = mLevelData[1].mXub;
         switch (flags) {
           case 0:
-            genExtend(GraphFactory.create(1), new int[1], 0, true, xl, xu);
+            genExtend(g1, deg, 0, true, xl, xu);
             break;
           case BIPARTITE:
           case BIPARTITE | TRIANGLE_FREE:
@@ -850,14 +849,23 @@ public class GenerateGraphs {
           case TRIANGLE_FREE:
             spaExtend(g1, deg, 0, true, xl, xu, new MakeXGraph());
             break;
+          case TRIANGLE_FREE | SQUARE_FREE:
+            spaExtend(g1, deg, 0, true, xl, xu, new MakeGirth5Graph());
+            break;
+          case TRIANGLE_FREE | PENTAGON_FREE:
+            spaExtend(g1, deg, 0, true, xl, xu, new MakePlus5Graph(BIT[3]));
+            break;
+          case TRIANGLE_FREE | SQUARE_FREE | PENTAGON_FREE:
+            spaExtend(g1, deg, 0, true, xl, xu, new MakePlus5Graph(BIT[3] | BIT[4]));
+            break;
           case SQUARE_FREE:
             spaExtend(g1, deg, 0, true, xl, xu, new MakeSquareGraph());
             break;
+          case SQUARE_FREE | PENTAGON_FREE:
+            spaExtend(g1, deg, 0, true, xl, xu, new MakePlus5Graph(BIT[4]));
+            break;
           case PENTAGON_FREE:
             spaExtend(g1, deg, 0, true, xl, xu, new MakePlus5Graph(0));
-            break;
-          case TRIANGLE_FREE | SQUARE_FREE:
-            spaExtend(g1, deg, 0, true, xl, xu, new MakeGirth5Graph());
             break;
           default:
             throw new UnsupportedOperationException("Could not handle flags: " + Integer.toBinaryString(flags));

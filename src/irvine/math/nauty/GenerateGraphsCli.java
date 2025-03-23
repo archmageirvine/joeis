@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 
 import irvine.util.CliFlags;
@@ -214,6 +215,7 @@ cost of a small increase in cpu time.
   private static final String BICONNECTED_FLAG = "biconnected";
   private static final String TRIANGLE_FREE_FLAG = "triangle-free";
   private static final String SQUARE_FREE_FLAG = "square-free";
+  private static final String PENTAGON_FREE_FLAG = "pentagon-free";
   private static final String BIPARTITE_FLAG = "bipartite";
   private static final String OUTPUT_FLAG = "output";
   private static final String CANONISE_FLAG = "canonise";
@@ -263,6 +265,7 @@ cost of a small increase in cpu time.
     flags.registerOptional('C', BICONNECTED_FLAG, "only generate biconnected graphs");
     flags.registerOptional('t', TRIANGLE_FREE_FLAG, "only generate triangle-free graphs");
     flags.registerOptional('f', SQUARE_FREE_FLAG, "only generate 4-cycle-free graphs");
+    flags.registerOptional('p', PENTAGON_FREE_FLAG, "only generate 5-cycle-free graphs");
     flags.registerOptional('b', BIPARTITE_FLAG, "only generate bipartite graphs");
     flags.registerOptional('o', OUTPUT_FLAG, String.class, "FILE", "name of file to write output into (default is stdout)");
     flags.registerOptional('l', CANONISE_FLAG, "canonically label output graphs");
@@ -294,11 +297,22 @@ cost of a small increase in cpu time.
     flags.setValidator(new GenerateGraphsCliValidator());
     flags.setFlags(args);
 
-    final boolean triangleFree = flags.isSet(TRIANGLE_FREE_FLAG);
-    final boolean bipartite = flags.isSet(BIPARTITE_FLAG);
-    final boolean squareFree = flags.isSet(SQUARE_FREE_FLAG);
     final boolean connec1 = flags.isSet(CONNECTED_FLAG);
     final boolean connec2 = flags.isSet(BICONNECTED_FLAG);
+
+    int generationFlags = 0;
+    if (flags.isSet(BIPARTITE_FLAG)) {
+      generationFlags |= GenerateGraphs.BIPARTITE;
+    }
+    if (flags.isSet(TRIANGLE_FREE_FLAG)) {
+      generationFlags |= GenerateGraphs.TRIANGLE_FREE;
+    }
+    if (flags.isSet(SQUARE_FREE_FLAG)) {
+      generationFlags |= GenerateGraphs.SQUARE_FREE;
+    }
+    if (flags.isSet(PENTAGON_FREE_FLAG)) {
+      generationFlags |= GenerateGraphs.PENTAGON_FREE;
+    }
 
     final boolean quiet = flags.isSet(QUIET_FLAG);
     final boolean verbose = flags.isSet(VERBOSE_FLAG);
@@ -342,23 +356,27 @@ cost of a small increase in cpu time.
     }
     gg.sanitizeParams();
 
+    // todo this needs updating for pentagon free
     int tmaxe;
-    if (bipartite) {
-      if (squareFree) {
+    switch (generationFlags) {
+      case 0:
+        tmaxe = (gg.mMaxN * gg.mMaxN - gg.mMaxN) / 2;
+        break;
+      case GenerateGraphs.BIPARTITE | GenerateGraphs.SQUARE_FREE:
         tmaxe = new MaxEdgesBipartiteSquareFree().getMaxEdges(gg.mMaxN);
-      } else {
-        tmaxe = new MaxEdgesTriangleFree().getMaxEdges(gg.mMaxN); // bipartite maximum is the same as triangle free
-      }
-    } else if (triangleFree) {
-      if (squareFree) {
+        break;
+      case GenerateGraphs.TRIANGLE_FREE | GenerateGraphs.SQUARE_FREE:
         tmaxe = new MaxEdgesTriangleAndSquareFree().getMaxEdges(gg.mMaxN);
-      } else {
-        tmaxe = new MaxEdgesTriangleFree().getMaxEdges(gg.mMaxN);
-      }
-    } else if (squareFree) {
-      tmaxe = new MaxEdgesSquareFree().getMaxEdges(gg.mMaxN);
-    } else {
-      tmaxe = (gg.mMaxN * gg.mMaxN - gg.mMaxN) / 2;
+        break;
+      case GenerateGraphs.TRIANGLE_FREE:
+      case GenerateGraphs.BIPARTITE:
+        tmaxe = new MaxEdgesTriangleFree().getMaxEdges(gg.mMaxN); // bipartite maximum is the same as triangle free
+        break;
+      case GenerateGraphs.SQUARE_FREE:
+        tmaxe = new MaxEdgesSquareFree().getMaxEdges(gg.mMaxN);
+        break;
+      default:
+        throw new UnsupportedEncodingException("Cannot generate edge set for flags " + Integer.toBinaryString(generationFlags));
     }
 
     if (flags.isSet(SAFE_FLAG)) {
@@ -385,7 +403,7 @@ cost of a small increase in cpu time.
 
       final long t1 = System.currentTimeMillis();
 
-      gg.run((bipartite ? GenerateGraphs.BIPARTITE : 0) | (squareFree ? GenerateGraphs.SQUARE_FREE : 0) | (triangleFree ? GenerateGraphs.TRIANGLE_FREE : 0) | 0, (Integer) flags.getValue(SPLIT_LEVEL_INC_FLAG), res);
+      gg.run(generationFlags, (Integer) flags.getValue(SPLIT_LEVEL_INC_FLAG), res);
 
       final long t2 = System.currentTimeMillis();
       final long nout = gg.totalCount();

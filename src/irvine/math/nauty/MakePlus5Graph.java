@@ -9,9 +9,9 @@ import irvine.math.graph.SmallGraph;
  */
 class MakePlus5Graph implements MakeH {
 
-  private final int mMask;
+  private final long mMask;
 
-  MakePlus5Graph(final int mask) {
+  MakePlus5Graph(final long mask) {
     mMask = mask;
   }
 

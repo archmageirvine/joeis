@@ -1,5 +1,4 @@
 package irvine.oeis.a071;
-// manually deris at 2021-10-28 22:51
 
 import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.a005.A005875;
@@ -12,7 +11,6 @@ public class A071609 extends RecordPositionSequence {
 
   /** Construct the sequence. */
   public A071609() {
-    super(new A005875(), 0, false);
-    next();
+    super(new A005875().skip(), 1, false);
   }
 }

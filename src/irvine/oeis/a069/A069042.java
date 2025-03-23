@@ -19,7 +19,7 @@ public class A069042 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (mB.next().mod(++mN * mN) == 1) {
+      if (mB.next().mod(++mN * mN) == 1 % mN) {
         return Z.valueOf(mN);
       }
       if (mVerbose && mN % 100 == 0) {

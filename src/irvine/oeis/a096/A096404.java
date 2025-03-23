@@ -12,7 +12,7 @@ import irvine.oeis.FloorSequence;
 public class A096404 extends FloorSequence {
   /** Construct the sequence. */
   public A096404() {
-    super(0);
+    super(-5);
   }
 
   protected Z evalCR(final long n) {

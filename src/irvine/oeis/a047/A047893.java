@@ -1,5 +1,6 @@
 package irvine.oeis.a047;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000364;
 
@@ -12,15 +13,11 @@ public class A047893 extends A000364 {
   /** Construct the sequence. */
   public A047893() {
     super(1);
-  }
-
-  {
     super.next();
   }
 
   @Override
   public Z next() {
-    final Z t = super.next();
-    return Z.ONE.equals(t) ? Z.ZERO : Z.valueOf(t.toString().length());
+    return Functions.DIGIT_LENGTH.z(super.next());
   }
 }

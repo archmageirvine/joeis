@@ -11,10 +11,6 @@ import irvine.oeis.a000.A000142;
 public class A051901 extends A000142 {
 
   private final Fast mPrime = new Fast();
-  {
-    setOffset(1);
-    super.next();
-  }
 
   @Override
   public Z next() {

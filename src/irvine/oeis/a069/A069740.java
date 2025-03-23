@@ -6,15 +6,15 @@ import irvine.math.matrix.DefaultMatrix;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A069740 Let M_n be the n X n matrix M_(i,j)=1/(i+j+ij); a(n) is the numerator of det(M_n).
  * @author Sean A. Irvine
  */
-public class A069740 extends Sequence1 {
+public class A069740 extends Sequence0 {
 
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {

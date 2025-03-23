@@ -14,7 +14,7 @@ public class A058343 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A058343() {
-    super(0, 0, 0, false, false, false, false, () -> graph -> graph.order() == 0 || graph.girth() >= 5 ? 1 : 0);
+    super(0, 0, 0, 0, () -> graph -> graph.order() == 0 || graph.girth() >= 5 ? 1 : 0);
   }
 
   @Override

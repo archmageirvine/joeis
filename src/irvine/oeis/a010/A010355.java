@@ -20,7 +20,7 @@ public class A010355 extends Sequence1 {
       return Z.ONE;
     }
     Z count = Z.ZERO;
-    final ParallelGenerateGraphsSequence pgs = new ParallelGenerateGraphsSequence(0, 1, 2, false, false, false, false, () -> Counter.ONE) {
+    final ParallelGenerateGraphsSequence pgs = new ParallelGenerateGraphsSequence(0, 1, 2, 0, () -> Counter.ONE) {
       @Override
       protected void graphGenInit(final GenerateGraphs gg) {
         gg.setVertices(mN);

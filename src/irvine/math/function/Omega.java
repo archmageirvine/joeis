@@ -14,7 +14,7 @@ import irvine.util.array.LongDynamicIntArray;
 public class Omega extends AbstractFunction1 {
 
   private static final long INITIAL_SIZE = 1024;
-  private static final long MAX_SIZE = 1L << 24;
+  private static final long MAX_SIZE = 1L << 12;
   private final Fast mPrime = new Fast();
   private final LongDynamicIntArray mOmega = new LongDynamicIntArray();
   private long mMax = 0;

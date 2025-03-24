@@ -14,7 +14,7 @@ import irvine.util.array.LongDynamicLongArray;
 public class GreatestPrimeFactor extends AbstractFunction1 {
 
   private static final long INITIAL_SIZE = 1024;
-  private static final long MAX_SIZE = 1L << 24;
+  private static final long MAX_SIZE = 1L << 12;
   private final Fast mPrime = new Fast();
   private final LongDynamicLongArray mGpf = new LongDynamicLongArray();
   private long mMax = 0;

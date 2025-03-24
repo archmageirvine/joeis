@@ -12,7 +12,7 @@ import irvine.util.array.LongDynamicLongArray;
  */
 public class Core extends AbstractFunction1 {
 
-  private static final long MAX_REMEMBER = 1L << 24;
+  private static final long MAX_REMEMBER = 1L << 12;
   private final LongDynamicLongArray mCore = new LongDynamicLongArray();
 
   @Override

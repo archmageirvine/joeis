@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
+import java.util.Collections;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 import irvine.factor.util.FactorSequence;
 import irvine.math.expression.LiteralZ;
@@ -72,23 +75,18 @@ public final class Jaguar {
     return fs;
   }
 
-  /**
-   * Attempt to factor the given number.
-   * @param n number to factor
-   * @return factorization
-   * @throws UnsupportedOperationException if the factorization fails
-   */
-  public static FactorSequence factor(final Z n) {
+  private static final int MAX_CACHE_ENTRIES = 100;
+  // Synchronized to allow multithreaded access
+  private static final Map<Z, FactorSequence> FACTOR_SEQUENCE_CACHE = Collections.synchronizedMap(new LinkedHashMap<>(MAX_CACHE_ENTRIES + 1, .75F, true) {
+    // This method is called just after a new entry has been added
+    @Override
+    public boolean removeEldestEntry(final Map.Entry eldest) {
+      return size() > MAX_CACHE_ENTRIES;
+    }
+  });
+
+  private static FactorSequence computeFactorSequence(final Z n) {
     FactorSequence fs = new FactorSequence(n);
-    if (Z.ONE.equals(n)) {
-      return new FactorSequence();
-    }
-    if (n.signum() < 0) {
-      final FactorSequence res = new FactorSequence();
-      res.add(-1L, FactorSequence.PRIME);
-      res.merge(factor(n.negate()));
-      return res;
-    }
     CHEETAH.factor(fs);
     TRIAL.factor(fs);
     if (!fs.isComplete()) {
@@ -107,6 +105,25 @@ public final class Jaguar {
       }
     }
     return fs;
+  }
+
+  /**
+   * Attempt to factor the given number.
+   * @param n number to factor
+   * @return factorization
+   * @throws UnsupportedOperationException if the factorization fails
+   */
+  public static FactorSequence factor(final Z n) {
+    if (Z.ONE.equals(n)) {
+      return new FactorSequence();
+    }
+    if (n.signum() < 0) {
+      final FactorSequence res = new FactorSequence();
+      res.add(-1L, FactorSequence.PRIME);
+      res.merge(factor(n.negate()));
+      return res;
+    }
+    return FACTOR_SEQUENCE_CACHE.computeIfAbsent(n, Jaguar::computeFactorSequence);
   }
 
   /**

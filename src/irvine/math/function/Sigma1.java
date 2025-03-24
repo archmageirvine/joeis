@@ -13,7 +13,7 @@ import irvine.util.array.LongDynamicLongArray;
 public class Sigma1 extends AbstractFunction1 {
 
   private static final long INITIAL_SIZE = 1024;
-  private static final long MAX_SIZE = 1L << 24;
+  private static final long MAX_SIZE = 1L << 12;
   private final LongDynamicLongArray mSigma = new LongDynamicLongArray();
   private long mMax = 0;
   {

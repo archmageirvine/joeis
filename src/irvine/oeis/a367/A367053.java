@@ -6,7 +6,7 @@ import irvine.oeis.a006.A006752;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A367053 Decimal expansion of Catalan&apos;s constant minus Serret&apos;s integral, A006752 - A102886.
+ * A367053 Decimal expansion of Catalan's constant minus Serret's integral, A006752 - A102886.
  * Formula: - Pi * log(2) / 8
  * @author Georg Fischer
  */

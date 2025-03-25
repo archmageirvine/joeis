@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A076082.
+ * A076141 Number of times n occurs as a binary sub-pattern of n^2.
  * @author Sean A. Irvine
  */
 public class A076141 extends Sequence0 {

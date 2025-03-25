@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A076057.
+ * A236965 Number of nonzero quartic residues modulo the n-th prime.
  * @author Sean A. Irvine
  */
 public class A236965 extends A000040 {

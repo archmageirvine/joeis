@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A081901 A sequence related to binomial(n+5, 5).
+ * A081901 Second binomial transform of binomial(n+5, 5).
  * @author Sean A. Irvine
  */
 public class A081901 extends LinearRecurrence {

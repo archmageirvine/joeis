@@ -5,7 +5,7 @@ import irvine.oeis.a377.A377753;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A242822 Decimal expansion of B. Davis&apos; constant Pi^2/(8*G), a Riesz-Kolmogorov constant, where G is Catalan&apos;s constant.
+ * A242822 Decimal expansion of B. Davis' constant Pi^2/(8*G), a Riesz-Kolmogorov constant, where G is Catalan's constant.
  * Formula:
  * @author Georg Fischer
  */

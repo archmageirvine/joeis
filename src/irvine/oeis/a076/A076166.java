@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A036301.
+ * A076166 Primes p such that sum of cubes of even digits of p equals sum of cubes of odd digits of p.
  * @author Sean A. Irvine
  */
 public class A076166 extends A000040 {

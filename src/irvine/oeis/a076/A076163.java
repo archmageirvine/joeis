@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A076082.
+ * A076163 Primes p such that the absolute value of p minus the sum of squares of digits of p is also prime.
  * @author Sean A. Irvine
  */
 public class A076163 extends A000040 {

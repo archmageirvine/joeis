@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071609.
+ * A076183 a(n) = the least positive integer k satisfying Omega(k) = Omega(k-1)+...+Omega(k-n) if such k exists; = 0 otherwise. (Omega(n) (A001222) denotes the number of prime factors of n, counting multiplicity.).
  * @author Sean A. Irvine
  */
 public class A076183 extends Sequence1 {

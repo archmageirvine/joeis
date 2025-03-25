@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000378;
 import irvine.oeis.a071.A071609;
 
 /**
- * A071609.
+ * A076180 Indices of spheres mentioned in A071609.
  * @author Sean A. Irvine
  */
 public class A076180 extends A071609 {

@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
- * A076082.
+ * A076160 Sod_4 - sod_3 + sod_2 - sod_1, where sod_k is the sum of k-th powers of digits of n.
  * @author Sean A. Irvine
  */
 public class A076160 extends Sequence0 {

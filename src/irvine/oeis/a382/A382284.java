@@ -16,7 +16,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A382180.
+ * A382284 Number of unlabeled connected graphs with n vertices which are planar squares.
  * @author Sean A. Irvine
  */
 public class A382284 extends ParallelGenerateGraphsSequence {

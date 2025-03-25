@@ -7,7 +7,7 @@ import irvine.oeis.a064.A064547;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A187043 Number of factors in expansion of infinitary perfect numbers (A007357) over distinct terms of A050376
+ * A187043 Number of factors in expansion of infinitary perfect numbers (A007357) over distinct terms of A050376.
  * @author Georg Fischer
  */
 public class A187043 extends SingleTransformSequence {

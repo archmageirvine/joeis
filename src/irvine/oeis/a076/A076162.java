@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A076082.
+ * A076162 Primes p such that p + sum of squares of digits of p is also prime.
  * @author Sean A. Irvine
  */
 public class A076162 extends A000040 {

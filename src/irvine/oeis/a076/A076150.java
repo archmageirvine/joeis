@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076082.
+ * A076150 Start of 10 consecutive composite numbers.
  * @author Sean A. Irvine
  */
 public class A076150 extends Sequence1 {

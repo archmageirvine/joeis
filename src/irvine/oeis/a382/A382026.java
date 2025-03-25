@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A076082.
+ * A382026 Decimal expansion of (362880*e^10 - 3265920*e^9 + 11612160*e^8 - 20744640*e^7 + 19595520*e^6 - 9450000*e^5 + 2064384*e^4 - 157464*e^3 + 2304*e^2 - e) / 362880.
  * @author Sean A. Irvine
  */
 public class A382026 extends DecimalExpansionSequence {

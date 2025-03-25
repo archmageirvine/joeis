@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a006.A006092;
 
 /**
- * A130842 Positive even integers that start with the letter &apos;t&apos; .
+ * A130842 Positive even integers that start with the letter 't' .
  * @author Georg Fischer
  */
 public class A130842 extends FilterSequence {

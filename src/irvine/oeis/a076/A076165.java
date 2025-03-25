@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A036301.
+ * A076165 Numbers n such that sum of cubes of even digits of n equals sum of cubes of odd digits of n.
  * @author Sean A. Irvine
  */
 public class A076165 extends AbstractSequence {

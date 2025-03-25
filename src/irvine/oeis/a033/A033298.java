@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A033298 a(n+1) = a(n) + sum of digits of a(n)^2.
+ * A033298 a(n+1) = a(n) + sum of digits of a(n)^2, with a(1) = 1.
  * @author Sean A. Irvine
  */
 public class A033298 extends Sequence1 {

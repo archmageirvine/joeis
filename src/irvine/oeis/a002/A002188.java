@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A002188 Sprague-Grundy values for Grundy's game.
+ * A002188 Sprague-Grundy value for Grundy's game when starting with n tokens.
  * @author Sean A. Irvine
  */
 public class A002188 extends Sequence0 {

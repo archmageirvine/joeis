@@ -5,7 +5,7 @@ import irvine.oeis.a115.A115140;
 import irvine.oeis.triangle.ToeplitzTriangle;
 
 /**
- * A343233 Triangle read by rows: Riordan triangle  T = (1 - x*c(x), x), with the generating function c of A000108 (Catalan).
+ * A343233 Triangle read by rows: Riordan triangle T = (1 - x*c(x), x), with the generating function c of A000108 (Catalan).
  * @author Georg Fischer
  */
 public class A343233 extends ToeplitzTriangle {

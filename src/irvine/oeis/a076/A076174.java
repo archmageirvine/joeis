@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A036301.
+ * A076174 Numerator of Sum_{i+j+k=n, i,j,k&gt;=1} (i*j)/k.
  * @author Sean A. Irvine
  */
 public class A076174 extends Sequence1 {

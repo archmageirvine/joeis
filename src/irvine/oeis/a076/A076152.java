@@ -3,7 +3,7 @@ package irvine.oeis.a076;
 import irvine.oeis.FilterSequence;
 
 /**
- * A076082.
+ * A076152 Let c = Sum_{k&gt;=0} 1/2^(k!). Sequence gives values of terms not congruent to 5 in the continued fraction for c.
  * @author Sean A. Irvine
  */
 public class A076152 extends FilterSequence {

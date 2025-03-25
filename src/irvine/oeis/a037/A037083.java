@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A037083 Numbers n such that n!!! + 1 is prime (0 is included by convention).
+ * A037083 Numbers k such that k!!! + 1 is prime (0 is included by convention).
  * @author Sean A. Irvine
  */
 public class A037083 extends Sequence1 {

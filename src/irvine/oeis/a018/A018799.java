@@ -10,6 +10,7 @@ import irvine.util.array.DynamicArray;
  */
 public class A018799 extends Sequence1 {
 
+  private final int mStart;
   private final DynamicArray<String> mCache = new DynamicArray<>();
   {
     mCache.set(0, "1");
@@ -18,8 +19,17 @@ public class A018799 extends Sequence1 {
   private int mM = 0;
   private int mN = 0;
 
+  protected A018799(final int start) {
+    mStart = start - 1;
+  }
+
+  /** Construct the sequence. */
+  public A018799() {
+    this(0);
+  }
+
   private String factorial(final int n) {
-    // We only need to keep the first 10 digits (keeps memory down)
+    // We only keep the first 10 digits (keeps memory down)
     while (n >= mCache.length()) {
       mF = mF.multiply(++mM);
       final String s = mF.toString();
@@ -31,7 +41,7 @@ public class A018799 extends Sequence1 {
   @Override
   public Z next() {
     final String target = String.valueOf(++mN);
-    int b = -1;
+    int b = mStart;
     while (true) {
       if (factorial(++b).startsWith(target)) {
         return Z.valueOf(b);

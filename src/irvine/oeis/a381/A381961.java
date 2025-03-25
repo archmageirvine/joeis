@@ -5,7 +5,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A381961 allocated for Sean A. Irvine.
+ * A381961 Number of connected graphs with n vertices which have a planar square.
  * @author Sean A. Irvine
  */
 public class A381961 extends ParallelGenerateGraphsSequence {

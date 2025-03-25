@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A055638 Numbers n for which sigma(n^2) is prime.
+ * A055638 Numbers k for which sigma(k^2) is prime.
  * @author Sean A. Irvine
  */
 public class A055638 extends Sequence1 {

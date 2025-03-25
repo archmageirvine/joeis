@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076082.
+ * A076143 Number of permutations p(1),...,p(n) of 1,...,n such that gcd(Sum_{k=1..m} p(k), p(m+1)) = 1 for all positive integers m &lt;= n-1.
  * @author Sean A. Irvine
  */
 public class A076143 extends Sequence1 {

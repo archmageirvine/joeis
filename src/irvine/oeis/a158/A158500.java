@@ -6,7 +6,7 @@ package irvine.oeis.a158;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A158500 Expansion of (1+sqrt(1+4x))*(1+2x)/(2*sqrt(1+4x)).
+ * A158500 Expansion of (1 + 2*x)*(1 + sqrt(1+4*x))/(2*sqrt(1+4*x)).
  * @author Georg Fischer
  */
 public class A158500 extends HolonomicRecurrence {

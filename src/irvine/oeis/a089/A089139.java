@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A089139 Decimal expansion of e^4 - 3e^3 + 2e^2 - e/6.
+ * A089139 Decimal expansion of e^4 - 3*e^3 + 2*e^2 - e/6.
  * @author Georg Fischer
  */
 public class A089139 extends DecimalExpansionSequence {

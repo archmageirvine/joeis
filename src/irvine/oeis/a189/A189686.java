@@ -6,7 +6,7 @@ import irvine.oeis.a004.A004394;
 import irvine.oeis.a067.A067698;
 
 /**
- * A189686 Superabundant numbers (A004394) satisfying the reverse of Robin&apos;s inequality (A091901).
+ * A189686 Superabundant numbers (A004394) satisfying the reverse of Robin's inequality (A091901).
  * @author Georg Fischer
  */
 public class A189686 extends IntersectionSequence {

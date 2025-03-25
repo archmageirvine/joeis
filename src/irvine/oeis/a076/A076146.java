@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076082.
+ * A076146 a(1) = 1; a(n) = a(n-1)*prime(a(n-1)).
  * @author Sean A. Irvine
  */
 public class A076146 extends Sequence1 {

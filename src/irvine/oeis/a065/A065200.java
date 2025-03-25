@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005117;
 
 /**
- * A065200 Numbers of the form n = m * p^k, with p prime, k &gt;= 0, m squarefree and p &gt; any prime factor of m.
+ * A065200 Numbers of the form m * p^k, with p prime, k &gt;= 0, m squarefree and p &gt; any prime factor of m.
  * @author Sean A. Irvine
  */
 public class A065200 extends A005117 {

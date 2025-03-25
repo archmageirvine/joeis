@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A253547 The total number of star-shaped dodecagons appearing in a variant of hexagon expansion after n iterations.
+ * A253547 Total number of star-shaped dodecagons appearing in a variant of hexagon expansion after n iterations.
  * @author Georg Fischer
  */
 public class A253547 extends LinearRecurrence implements Conjectural {

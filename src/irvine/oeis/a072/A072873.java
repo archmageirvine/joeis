@@ -5,7 +5,7 @@ import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.a085.A085731;
 
 /**
- * A072873 Numbers k such that Sum_i ( e(i)/p(i) ) is an integer, where the prime factorization of n is Product_i ( p(i)^e(i) ).
+ * A072873 Numbers k such that Sum_i ( e(i)/p(i) ) is an integer, where the prime factorization of k is Product_i ( p(i)^e(i) ).
  * @author Georg Fischer
  */
 public class A072873 extends RecordPositionSequence {

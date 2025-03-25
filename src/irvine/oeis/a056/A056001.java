@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A056001 A second-order recursive sequence.
+ * A056001 a(n) = (n+1)*binomial(n+7, 7).
  * @author Sean A. Irvine
  */
 public class A056001 extends LinearRecurrence {

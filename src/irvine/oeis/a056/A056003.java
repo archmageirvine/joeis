@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A056003 A second-order recursive sequence.
+ * A056003 a(n) = (n+1)*binomial(n+8, 8).
  * @author Sean A. Irvine
  */
 public class A056003 extends LinearRecurrence {

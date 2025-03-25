@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A215265 (n-1)^(n+1) - n^n.
+ * A215265 a(n) = (n-1)^(n+1) - n^n.
  * @author Georg Fischer
  */
 public class A215265 extends Sequence0 {

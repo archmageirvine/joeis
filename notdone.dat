@@ -2525,3 +2525,4 @@ A076018 Number of systems with n elements with one binary operation satisfying t
 A076019 Number of nonisomorphic commutative systems with n elements with one binary operation satisfying the equation B(AB)=A (totally-symmetric quasigroups).
 A076020 Number of systems with n elements with one binary operation satisfying the equation B(AB)=A (semisymmetric quasigroups). This gives numbers of systems which are isomorphic to their transpose but are noncommutative.
 A076021 Number of fully idempotent systems with n elements with one binary operation satisfying the equation B(AB)=A (idempotent semisymmetric quasigroups).
+A076215 Square root of sum defined in A007475(n) and A001032(n).

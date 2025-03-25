@@ -1,7 +1,7 @@
 package irvine.oeis.a060;
 
 /**
- * A060969 Number of prime cubes &lt;= 2^n.
+ * A060969 Number of cubes of primes &lt;= 2^n.
  * @author Sean A. Irvine
  */
 public class A060969 extends A060971 {

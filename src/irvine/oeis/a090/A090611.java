@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A090611 Decimal expansion of (24e^5 - 96e^4 + 108e^3 - 32e^2 + e)/24.
+ * A090611 Decimal expansion of (24*e^5 - 96*e^4 + 108*e^3 - 32*e^2 + e)/24.
  * @author Georg Fischer
  */
 public class A090611 extends DecimalExpansionSequence {

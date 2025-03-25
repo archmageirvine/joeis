@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000720;
 
 /**
- * A066457 Numbers n such that product of factorials of digits of n equals pi(n) (A000720).
+ * A066457 Numbers k such that product of factorials of digits of k equals pi(k) (A000720).
  * @author Sean A. Irvine
  */
 public class A066457 extends A000720 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076082.
+ * A382048 allocated for Howard J. Bradley.
  * @author Sean A. Irvine
  */
 public class A382048 extends Sequence1 {

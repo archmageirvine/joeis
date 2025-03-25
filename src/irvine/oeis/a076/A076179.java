@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002808;
 
 /**
- * A036301.
+ * A076179 2n-1 primes followed by 2n composite numbers.
  * @author Sean A. Irvine
  */
 public class A076179 extends Sequence1 {

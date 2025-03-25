@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076082.
+ * A076158 a(n) = the least positive integer k such that Omega(n+k) = Omega(k)+n, where Omega(m) (A001222) denotes the number of prime factors of m, counting multiplicity.
  * @author Sean A. Irvine
  */
 public class A076158 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A234381 Number of (1+2) X (n+2) 0..2 arrays with no increasing sequence of length 3 horizontally or diagonally downwards.
+ * A234381 Number of (1+2) X (n+2) 0..2 arrays with no increasing sequence of length 3 vertically, diagonally downwards or antidiagonally downwards.
  * @author Georg Fischer
  */
 public class A234381 extends GeneratingFunctionSequence implements Conjectural {

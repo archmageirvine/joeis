@@ -7,7 +7,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a064.A064547;
 
 /**
- * A268388 &quot;Fermi-Dirac composites&quot;: numbers k for which A064547(k) &gt; 1.
+ * A268388 "Fermi-Dirac composites": numbers k for which A064547(k) &gt; 1.
  * @author Georg Fischer
  */
 public class A268388 extends FilterNumberSequence {

@@ -7,7 +7,7 @@ import irvine.math.q.Rationals;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A379614 a(n) = Sum_{k=0..n} 2^(((n + k - 1)*(n - k))/2) * n! / (n - k)!. Row sums of A365638.
+ * A379614 a(n) = Sum_{k=0..n} 2^((n + k - 1)*(n - k)/2) * n! / (n - k)!. Row sums of A365638.
  * @author Georg Fischer
  */
 public class A379614 extends LambdaSequence {

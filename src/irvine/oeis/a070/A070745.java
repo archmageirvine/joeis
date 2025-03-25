@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070745 z such that the Diophantine equation x^2 + y^3 = z^2 has solutions.
+ * A070745 Numbers z such that the Diophantine equation x^2 + y^3 = z^2 has solutions with x, y &gt; 0.
  * @author Sean A. Irvine
  */
 public class A070745 extends Sequence1 {

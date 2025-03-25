@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000217;
 
 /**
- * A036301.
+ * A076172 Triangular numbers with a triangular number of divisors which set a new record for number of divisors.
  * @author Sean A. Irvine
  */
 public class A076172 extends Sequence1 {

@@ -12,6 +12,7 @@ import irvine.util.string.StringUtils;
 public class A380729 extends Sequence1 {
 
   // This code was used to complete the verification of a(8) and a(9).
+  // See Martin Fuller C++ for a better solution to this problem
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private long mN = 0;
@@ -65,7 +66,8 @@ public class A380729 extends Sequence1 {
       throw new UnsupportedOperationException();
     }
     mM = mM == 0 ? 1 : mM * 10;
-    return search(1, Long.MAX_VALUE);
+    final long lo = 2 * mM + Functions.SQRT.l(2 * mM / 3); // Based on lower bound of Martin Fuller
+    return search(lo, Long.MAX_VALUE);
   }
 
   /**

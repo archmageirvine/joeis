@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A049529 Numbers n such that sum of factorials of digits of n equals pi(n) (A000720).
+ * A049529 Numbers k such that sum of factorials of digits of k equals pi(k) (A000720).
  * @author Georg Fischer
  */
 public class A049529 extends FiniteSequence {

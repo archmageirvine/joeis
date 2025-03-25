@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A036301.
+ * A076171 Primes p whose odd-position and even-position digits have the same sum of cubes.
  * @author Sean A. Irvine
  */
 public class A076171 extends A000040 {

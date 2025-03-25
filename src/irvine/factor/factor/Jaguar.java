@@ -75,6 +75,12 @@ public final class Jaguar {
     return fs;
   }
 
+  // Cache of values <= 1000
+  private static final FactorSequence[] SMALL = new FactorSequence[1001];
+  static {
+    SMALL[1] = new FactorSequence();
+  }
+  // Dynamic cache for values > 1000
   private static final int MAX_CACHE_ENTRIES = 100;
   // Synchronized to allow multithreaded access
   private static final Map<Z, FactorSequence> FACTOR_SEQUENCE_CACHE = Collections.synchronizedMap(new LinkedHashMap<>(MAX_CACHE_ENTRIES + 1, .75F, true) {
@@ -114,14 +120,22 @@ public final class Jaguar {
    * @throws UnsupportedOperationException if the factorization fails
    */
   public static FactorSequence factor(final Z n) {
-    if (Z.ONE.equals(n)) {
-      return new FactorSequence();
-    }
     if (n.signum() < 0) {
       final FactorSequence res = new FactorSequence();
       res.add(-1L, FactorSequence.PRIME);
       res.merge(factor(n.negate()));
       return res;
+    }
+    if (n.compareTo(SMALL.length) < 0) {
+      synchronized (Jaguar.class) {
+        final int m = n.intValue();
+        final FactorSequence fs = SMALL[m];
+        if (fs != null) {
+          return fs;
+        }
+        SMALL[m] = computeFactorSequence(n);
+        return SMALL[m];
+      }
     }
     return FACTOR_SEQUENCE_CACHE.computeIfAbsent(n, Jaguar::computeFactorSequence);
   }

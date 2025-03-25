@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076082.
+ * A076161 Numbers n such that n + sum of squares of digits of n (A258881) is a prime.
  * @author Sean A. Irvine
  */
 public class A076161 extends Sequence1 {

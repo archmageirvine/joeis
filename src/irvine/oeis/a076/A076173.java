@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A036301.
+ * A076173 Primes p such that sum of 4th powers of even-position digits equals the sum of 4th powers of odd-position digits of p.
  * @author Sean A. Irvine
  */
 public class A076173 extends A000040 {

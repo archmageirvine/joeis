@@ -4,7 +4,7 @@ package irvine.oeis.a354;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A354294 Number of palindromic compositions of 2n into parts &lt;= n.
+ * A354294 Number of palindromic compositions of 2*n into parts &lt;= n.
  * @author Georg Fischer
  */
 public class A354294 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A060971 Number of numbers of form p^5, p prime, &lt;= 2^n.
+ * A060971 Number of fifth powers of primes &lt;= 2^n.
  * @author Sean A. Irvine
  */
 public class A060971 extends Sequence0 {

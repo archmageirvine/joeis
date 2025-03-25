@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000217;
 
 /**
- * A036301.
+ * A076169 Triangular numbers whose sum of prime factors (with repetition) is also triangular.
  * @author Sean A. Irvine
  */
 public class A076169 extends Sequence1 {

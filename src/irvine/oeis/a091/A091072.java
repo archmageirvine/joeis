@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ComplementSequence;
 
 /**
- * A091072 Numbers whose odd part is of the form 4k+1. The bit to the left of the least significant bit of each term is unset.
+ * A091072 Positive numbers k such that the Kronecker Symbol (-1 / k) &gt; 0.
  * @author Georg Fischer
  */
 public class A091072 extends ComplementSequence {

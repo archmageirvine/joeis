@@ -4,7 +4,7 @@ package irvine.oeis.a136;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A136427 a(n) = 3*a(n-1)-4*a(n-2)+6*a(n-3)-4*a(n-4).
+ * A136427 a(n) = 3*a(n-1) - 4*a(n-2) + 6*a(n-3) - 4*a(n-4), with initial terms 0,1,2,4.
  * @author Georg Fischer
  */
 public class A136427 extends GeneratingFunctionSequence {

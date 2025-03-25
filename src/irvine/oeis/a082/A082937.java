@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002113;
 import irvine.oeis.a034.A034838;
 
 /**
- * A082937 Palindromes divisible by each of their digits
+ * A082937 Palindromes divisible by each of their digits.
  * @author Georg Fischer
  */
 public class A082937 extends IntersectionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A036301.
+ * A076164 Numbers n such that sum of squares of even digits of n equals sum of squares of odd digits of n.
  * @author Sean A. Irvine
  */
 public class A076164 extends AbstractSequence {

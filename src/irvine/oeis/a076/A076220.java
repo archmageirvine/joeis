@@ -35,6 +35,6 @@ public class A076220 extends Sequence0 {
     if (++mN >= Integer.SIZE) {
       throw new UnsupportedOperationException();
     }
-    return mB.get((1 << mN) - 1, 2147483647);
+    return mB.get((1 << mN) - 1, 2147483647); // largest prime < 2^31
   }
 }

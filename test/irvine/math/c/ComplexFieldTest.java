@@ -1,11 +1,11 @@
 package irvine.math.c;
 
+import java.util.Iterator;
+
 import irvine.TestUtils;
 import irvine.math.r.Constants;
 import irvine.math.z.Z;
 import junit.framework.TestCase;
-
-import java.util.Iterator;
 
 /**
  * Tests the corresponding class.
@@ -235,7 +235,7 @@ public class ComplexFieldTest extends TestCase {
   }
 
   public void testEi() {
-    TestUtils.assertEquals(new C(-0.00114829559127532579), ComplexField.SINGLETON.ei(new C(-5.0)), 1E-14);
+    TestUtils.assertEquals(new C(-0.00114829559127532579), ComplexEi.ei(new C(-5.0)), 1E-14);
   }
 
   public void testCoerce() {

@@ -1,6 +1,7 @@
 package irvine.oeis.a057;
 
 import irvine.math.cr.CR;
+import irvine.math.cr.functions.CrFunctions;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -31,7 +32,7 @@ public class A057793 extends Sequence1 implements Conjectural {
           final long n = ++k;
           final int mu = Functions.MOBIUS.i(n);
           if (mu != 0) {
-            final Z li = z.pow(new Q(1, k)).li().divide(CR.valueOf(k)).getApprox(p);
+            final Z li = CrFunctions.LI.cr(z.pow(new Q(1, k))).divide(CR.valueOf(k)).getApprox(p);
             if (li.isZero()) {
               break;
             }

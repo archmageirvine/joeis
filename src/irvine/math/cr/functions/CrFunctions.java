@@ -9,6 +9,10 @@ public final class CrFunctions {
   private CrFunctions() {
   }
 
+  /** The exponential integral. */
+  public static final CrFunction1 EI = new ExponentialIntegral();
+  /** The logarithmic integral. */
+  public static final CrFunction1 LI = new LogarithmicIntegral();
   /** The polylogarithm. */
   public static final CrFunction2 POLYLOG = new Polylogarithm();
   /** The complete elliptic K function. */

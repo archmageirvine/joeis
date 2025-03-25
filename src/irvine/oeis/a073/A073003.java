@@ -1,6 +1,7 @@
 package irvine.oeis.a073;
 
 import irvine.math.cr.CR;
+import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
@@ -11,6 +12,6 @@ public class A073003 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A073003() {
-    super(0, CR.ONE.negate().ei().negate().multiply(CR.E));
+    super(0, CrFunctions.EI.cr(CR.ONE.negate()).negate().multiply(CR.E));
   }
 }

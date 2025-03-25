@@ -16,7 +16,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(DickmanTest.class);
     suite.addTestSuite(DoubleUtilsTest.class);
     suite.addTestSuite(EllipticTest.class);
-    suite.addTestSuite(ExponentialTest.class);
     suite.addTestSuite(FloatUtilsTest.class);
     suite.addTestSuite(GammaTest.class);
     suite.addTestSuite(HyperbolicTest.class);

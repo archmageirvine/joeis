@@ -13,14 +13,6 @@ public class A076220 extends Sequence0 {
 
   // After Alois P. Heinz
 
-  /*
-  b:= proc(s, t) option remember; `if`(s={}, 1, add(
-      `if`(igcd(i, t)>1, 0, b(s minus {i}, i)), i=s))
-    end:
-a:= n-> b({$1..n}, 1009):
-seq(a(n), n=0..14);  # Alois P. Heinz, Aug 13 2017
-   */
-
   private long mN = -1;
   private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
     @Override

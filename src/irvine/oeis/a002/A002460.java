@@ -1,6 +1,7 @@
 package irvine.oeis.a002;
 
 import irvine.math.cr.CR;
+import irvine.math.cr.functions.CrFunctions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -14,6 +15,7 @@ public class A002460 extends Sequence1 {
 
   @Override
   public Z next() {
-    return CR.valueOf(++mN).ei().round();
+    CR cr = CR.valueOf(++mN);
+    return CrFunctions.EI.cr(cr).round();
   }
 }

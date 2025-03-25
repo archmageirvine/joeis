@@ -2,7 +2,6 @@ package irvine.math.cr;
 
 import java.util.Iterator;
 
-import irvine.math.api.Ei;
 import irvine.math.api.Exp;
 import irvine.math.api.HyperbolicTrigonometric;
 import irvine.math.api.Hypergeometric;
@@ -18,7 +17,7 @@ import irvine.util.AbstractIterator;
  * Field of real numbers under addition and multiplication.
  * @author Sean A. Irvine
  */
-public final class ComputableReals extends AbstractOrderedField<CR> implements Exp<CR>, HyperbolicTrigonometric<CR>, Pow<CR>, Sqrt<CR>, Trigonometric<CR>, Ei<CR>, Hypergeometric<CR> {
+public final class ComputableReals extends AbstractOrderedField<CR> implements Exp<CR>, HyperbolicTrigonometric<CR>, Pow<CR>, Sqrt<CR>, Trigonometric<CR>, Hypergeometric<CR> {
 
   /** Field of real numbers under addition and multiplication. */
   public static final ComputableReals SINGLETON = new ComputableReals();
@@ -237,11 +236,6 @@ public final class ComputableReals extends AbstractOrderedField<CR> implements E
   @Override
   public CR pow(final CR n, final CR e) {
     return e.multiply(n.log()).exp();
-  }
-
-  @Override
-  public CR ei(final CR n) {
-    return n.ei();
   }
 
   /**

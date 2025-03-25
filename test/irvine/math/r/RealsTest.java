@@ -1,9 +1,9 @@
 package irvine.math.r;
 
+import java.util.Iterator;
+
 import irvine.math.z.Z;
 import junit.framework.TestCase;
-
-import java.util.Iterator;
 
 /**
  * Tests the corresponding class.
@@ -70,11 +70,6 @@ public class RealsTest extends TestCase {
     assertEquals(Math.cos(1), r.cos(1.0));
     assertEquals(Math.tan(1), r.tan(1.0));
     assertEquals(1 / Math.tan(1), r.cot(1.0));
-  }
-
-  public void testEi() {
-    assertEquals(-0.00114829559127532579, Reals.SINGLETON.ei(-5.0), 1e-14);
-    assertEquals(40.185275355803177, Reals.SINGLETON.ei(5.0), 1e-14);
   }
 
   public void testGamma() {

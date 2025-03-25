@@ -2,6 +2,7 @@ package irvine.oeis.a070;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCrFunction;
+import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
@@ -13,7 +14,7 @@ public class A070769 extends DecimalExpansionSequence {
   private static class MyFunction extends UnaryCrFunction {
     @Override
     public CR execute(final CR x) {
-      return x.li();
+      return CrFunctions.LI.cr(x);
     }
   }
 

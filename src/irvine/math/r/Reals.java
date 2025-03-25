@@ -2,7 +2,6 @@ package irvine.math.r;
 
 import java.util.Iterator;
 
-import irvine.math.api.Ei;
 import irvine.math.api.Exp;
 import irvine.math.api.Gamma;
 import irvine.math.api.HyperbolicTrigonometric;
@@ -17,7 +16,7 @@ import irvine.util.AbstractIterator;
  * Field of real numbers under addition and multiplication.
  * @author Sean A. Irvine
  */
-public final class Reals extends AbstractOrderedField<Double> implements Exp<Double>, HyperbolicTrigonometric<Double>, Gamma<Double>, Pow<Double>, Sqrt<Double>, Trigonometric<Double>, Ei<Double> {
+public final class Reals extends AbstractOrderedField<Double> implements Exp<Double>, HyperbolicTrigonometric<Double>, Gamma<Double>, Pow<Double>, Sqrt<Double>, Trigonometric<Double> {
 
   /** Field of real numbers under addition and multiplication. */
   public static final Reals SINGLETON = new Reals();
@@ -252,11 +251,6 @@ public final class Reals extends AbstractOrderedField<Double> implements Exp<Dou
   @Override
   public Double gamma(final Double n) {
     return irvine.math.r.Gamma.gamma(n);
-  }
-
-  @Override
-  public Double ei(final Double n) {
-    return Exponential.ei(n);
   }
 
   @Override

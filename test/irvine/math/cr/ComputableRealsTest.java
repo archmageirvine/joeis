@@ -2,6 +2,7 @@ package irvine.math.cr;
 
 import java.util.Iterator;
 
+import irvine.math.cr.functions.CrFunctions;
 import irvine.math.z.Z;
 import junit.framework.TestCase;
 
@@ -85,8 +86,8 @@ public class ComputableRealsTest extends TestCase {
   }
 
   public void testEi() {
-    assertEquals("40.185275355803177455091421793796", ComputableReals.SINGLETON.ei(CR.FIVE).toString(30));
-    assertEquals("-0.0011482955912753257973305619", ComputableReals.SINGLETON.ei(CR.FIVE.negate()).toString(30).substring(0, 31));
+    assertEquals("40.185275355803177455091421793796", CrFunctions.EI.cr(CR.FIVE).toString(30));
+    assertEquals("-0.0011482955912753257973305619", CrFunctions.EI.cr(CR.FIVE.negate()).toString(30).substring(0, 31));
   }
 
   public void testCompare() {

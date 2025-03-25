@@ -1,6 +1,7 @@
 package irvine.oeis.a052;
 
 import irvine.math.cr.CR;
+import irvine.math.cr.functions.CrFunctions;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000720;
@@ -31,7 +32,7 @@ public class A052434 extends A000720 {
         long k = 0;
         while (true) {
           final CR kcr = CR.valueOf(++k);
-          final Z t = ncr.pow(kcr.inverse()).li().divide(kcr).getApprox(precision);
+          final Z t = CrFunctions.LI.cr(ncr.pow(kcr.inverse())).divide(kcr).getApprox(precision);
           if (t.isZero() || k > HEURISTIC_TERMS) {
             break;
           }

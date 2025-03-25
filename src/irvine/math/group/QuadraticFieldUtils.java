@@ -1,7 +1,7 @@
 package irvine.math.group;
 
 import irvine.math.cr.CR;
-import irvine.math.cr.ComputableReals;
+import irvine.math.cr.functions.CrFunctions;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
@@ -103,7 +103,7 @@ public final class QuadraticFieldUtils {
   private static final int DEFAULT_MIN_CLASSNO_TERMS = 15;
 
   private static CR e1(final CR x) {
-    return ComputableReals.SINGLETON.ei(x.negate()).negate();
+    return CrFunctions.EI.cr(x.negate()).negate();
   }
 
   /**

@@ -2,7 +2,6 @@ package irvine.math.c;
 
 import java.util.Iterator;
 
-import irvine.math.api.Ei;
 import irvine.math.api.Exp;
 import irvine.math.api.Gamma;
 import irvine.math.api.HyperbolicTrigonometric;
@@ -21,7 +20,7 @@ import irvine.util.AbstractIterator;
  * Field of complex numbers.
  * @author Sean A. Irvine
  */
-public final class ComplexField extends AbstractField<C> implements Exp<C>, HyperbolicTrigonometric<C>, Pow<C>, Sqrt<C>, Trigonometric<C>, Gamma<C>, Ei<C>, Hypergeometric<C> {
+public final class ComplexField extends AbstractField<C> implements Exp<C>, HyperbolicTrigonometric<C>, Pow<C>, Sqrt<C>, Trigonometric<C>, Gamma<C>, Hypergeometric<C> {
 
   /** Singleton. */
   public static final ComplexField SINGLETON = new ComplexField();
@@ -480,10 +479,6 @@ public final class ComplexField extends AbstractField<C> implements Exp<C>, Hype
   @Override
   public C gamma(final C z) {
     return ComplexGamma.gamma(z);
-  }
-  @Override
-  public C ei(final C z) {
-    return ComplexEi.ei(z);
   }
 
   @Override

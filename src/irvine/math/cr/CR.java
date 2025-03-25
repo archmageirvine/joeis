@@ -78,6 +78,7 @@
 package irvine.math.cr;
 
 import irvine.math.api.IsInteger;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.r.Constants;
 import irvine.math.z.Z;
@@ -194,9 +195,13 @@ public abstract class CR extends Number implements Comparable<CR>, IsInteger<CR>
     }
   };
 
-  static int boundLog2(final int n) {
-    final int absN = Math.abs(n);
-    return (int) Math.ceil(Math.log(absN + 1) / Constants.LN2);
+  /**
+   * Method used to bound the number of iterations in some functions.
+   * @param n number to bound
+   * @return bound
+   */
+  public static int boundLog2(final int n) {
+    return Functions.DIGIT_LENGTH.i(2, Math.abs(n) + 1);
   }
   
   // Check that a precision is at least a factor of 8 away from
@@ -207,7 +212,7 @@ public abstract class CR extends Number implements Comparable<CR>, IsInteger<CR>
   static void checkPrecision(final int n) {
     final int high = n >> 28;
     // if n is not in danger of overflowing, then the 4 high order
-    // bits should be identical.  Thus high is either 0 or -1.
+    // bits should be identical.  Thus, high is either 0 or -1.
     // The rest of this is to test for either of those in a way
     // that should be as cheap as possible.
     final int highShifted = n >> 29;
@@ -1204,23 +1209,6 @@ public abstract class CR extends Number implements Comparable<CR>, IsInteger<CR>
    */
   public CR sqrt() {
     return new Sqrt(this);
-  }
-
-  /**
-   * The exponential integral of this real number.
-   * @return exponential integral
-   */
-  public CR ei() {
-    return new PrescaledEi(this).add(CR.GAMMA).add(abs().log());
-  }
-
-  /**
-   * The logarithmic integral of this real number.
-   * @return logarithmic integral
-   */
-  public CR li() {
-    final CR l = log();
-    return new PrescaledEi(l).add(CR.GAMMA).add(l.abs().log());
   }
 
   /**

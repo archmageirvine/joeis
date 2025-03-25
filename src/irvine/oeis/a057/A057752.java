@@ -1,6 +1,7 @@
 package irvine.oeis.a057;
 
 import irvine.math.cr.CR;
+import irvine.math.cr.functions.CrFunctions;
 import irvine.math.z.Z;
 import irvine.oeis.a006.A006880;
 
@@ -24,6 +25,6 @@ public class A057752 extends A006880 {
   @Override
   public Z next() {
     mA = mA.multiply(10);
-    return CR.valueOf(mA).li().subtract(CR.valueOf(super.next())).round();
+    return CrFunctions.LI.cr(CR.valueOf(mA)).subtract(CR.valueOf(super.next())).round();
   }
 }

@@ -126,7 +126,7 @@ public final class QuadraticFieldUtils {
     final CR scrd = crd.sqrt();
     final CR t = CR.SQRT_PI.divide(scrd);
     for (int k = 1; k < maxTerms; ++k) {
-      final CR erfc = t.multiply(k).erfc();
+      final CR erfc = CrFunctions.ERFC.cr(t.multiply(k));
       final CR a = scrd.multiply(erfc).divide(CR.valueOf(k));
       final CR b = e1(CR.PI.multiply(CR.valueOf(k * (long) k)).divide(crd));
       final CR c = a.add(b);

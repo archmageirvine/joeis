@@ -3,6 +3,7 @@ package irvine.oeis.a240;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCrFunction;
+import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
@@ -17,7 +18,7 @@ public class A240723 extends DecimalExpansionSequence {
     super(0, new UnaryCrFunction() {
       @Override 
       public CR execute(final CR x) {
-        return x.divide(CR.SQRT2).erf().subtract(CR.ONE.subtract(CR.TWO.divide(CR.PI).sqrt()).sqrt());
+        return CrFunctions.ERF.cr(x.divide(CR.SQRT2)).subtract(CR.ONE.subtract(CR.TWO.divide(CR.PI).sqrt()).sqrt());
       }
     }.inverseMonotone(CR.valueOf(0.585), CR.valueOf(0.609)).execute(CR.ZERO));
   }

@@ -13,6 +13,10 @@ public final class CrFunctions {
   public static final CrFunction1 EI = new ExponentialIntegral();
   /** The logarithmic integral. */
   public static final CrFunction1 LI = new LogarithmicIntegral();
+  /** The error function. */
+  public static final CrFunction1 ERF = new Erf();
+  /** The error function complement. */
+  public static final CrFunction1 ERFC = new Erfc();
   /** The polylogarithm. */
   public static final CrFunction2 POLYLOG = new Polylogarithm();
   /** The complete elliptic K function. */

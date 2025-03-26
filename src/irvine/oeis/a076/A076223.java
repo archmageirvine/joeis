@@ -3,7 +3,7 @@ package irvine.oeis.a076;
 import irvine.math.z.Z;
 
 /**
- * A076221.
+ * A076223 Minimum of n-th row of A076221.
  * @author Sean A. Irvine
  */
 public class A076223 extends A076221 {

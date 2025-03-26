@@ -5,7 +5,7 @@ import java.util.HashSet;
 import irvine.math.z.Z;
 
 /**
- * A076221.
+ * A076222 Number of different values in n-th row of A076221.
  * @author Sean A. Irvine
  */
 public class A076222 extends A076221 {

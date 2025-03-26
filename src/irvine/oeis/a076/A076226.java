@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.util.string.StringUtils;
 
 /**
- * A076221.
+ * A076226 Numbers m such that the largest of the most frequent values in m-th row of A076221 is different from m-1.
  * @author Sean A. Irvine
  */
 public class A076226 extends A076221 {

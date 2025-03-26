@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a035.A035327;
 
 /**
- * A359194 Binary complement of 3n.
+ * A359194 Binary complement of 3*n.
  * @author Georg Fischer
  */
 public class A359194 extends A035327 {

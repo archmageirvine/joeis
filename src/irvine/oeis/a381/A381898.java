@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A381898 allocated for Jwalin Bhatt.
+ * A381898 Decimal expansion of exp(Sum_{k&gt;=2} log_2(k)/(k * 2^k)).
  * @author Sean A. Irvine
  */
 public class A381898 extends DecimalExpansionSequence {

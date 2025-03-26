@@ -1212,33 +1212,6 @@ public abstract class CR extends Number implements Comparable<CR>, IsInteger<CR>
   }
 
   /**
-   * The sine integral of this real number.
-   * @return exponential integral
-   */
-  public CR si() {
-    return new PrescaledSi(this);
-  }
-
-
-  private static final CR ERF_C1 = TWO.divide(SQRT_PI);
-
-  /**
-   * The error function <code>erf</code> of this real number.
-   * @return error function integral
-   */
-  public CR erf() {
-    return new PrescaledErf(this).multiply(ERF_C1);
-  }
-
-  /**
-   * The complement error function <code>erfc</code> of this real number.
-   * @return complement error function integral
-   */
-  public CR erfc() {
-    return ONE.subtract(erf());
-  }
-
-  /**
    * Arithmetic geometric mean of two computable reals.
    * @param x other number
    * @return arithmetic geometric mean

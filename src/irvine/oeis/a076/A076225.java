@@ -3,7 +3,7 @@ package irvine.oeis.a076;
 import irvine.math.z.Z;
 
 /**
- * A076221.
+ * A076225 Counts of the maximum value in n-th row of A076221.
  * @author Sean A. Irvine
  */
 public class A076225 extends A076221 {

@@ -15,7 +15,6 @@ public class A002460 extends Sequence1 {
 
   @Override
   public Z next() {
-    CR cr = CR.valueOf(++mN);
-    return CrFunctions.EI.cr(cr).round();
+    return CrFunctions.EI.cr(CR.valueOf(++mN)).round();
   }
 }

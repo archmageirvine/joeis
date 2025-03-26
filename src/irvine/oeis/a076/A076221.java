@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076221.
+ * A076221 Triangle read by rows: A(n,k) is the number of x, x&lt;=n, which are coprime to and not equal to k.
  * @author Sean A. Irvine
  */
 public class A076221 extends Sequence1 {

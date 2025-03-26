@@ -4,7 +4,7 @@ package irvine.oeis.a196;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A196665 Expansion of (1-6x)/(1-19x).
+ * A196665 Expansion of g.f. (1-6*x)/(1-19*x).
  * @author Georg Fischer
  */
 public class A196665 extends GeneratingFunctionSequence {

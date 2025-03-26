@@ -1,6 +1,6 @@
-package irvine.math.cr;
+package irvine.math.cr.functions;
 
-import irvine.math.cr.functions.CrFunctions;
+import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import junit.framework.TestCase;
 
@@ -8,7 +8,7 @@ import junit.framework.TestCase;
  * Test the corresponding class.
  * @author Sean A. Irvine
  */
-public class PrescaledErfTest extends TestCase {
+public class ErfTest extends TestCase {
 
   public void testErf() {
     assertEquals("0.000000000000000000000000000000", CrFunctions.ERF.cr(CR.ZERO).toString(30));

@@ -38,7 +38,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(NegationTest.class);
     suite.addTestSuite(PrecisionOverflowErrorTest.class);
     suite.addTestSuite(PrescaledCosTest.class);
-    suite.addTestSuite(PrescaledErfTest.class);
     suite.addTestSuite(PrescaledExpTest.class);
     suite.addTestSuite(PrescaledLnTest.class);
     suite.addTestSuite(PsiTest.class);

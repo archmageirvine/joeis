@@ -18,6 +18,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(CosineIntegralTest.class);
     suite.addTestSuite(EllipticETest.class);
     suite.addTestSuite(EllipticKTest.class);
+    suite.addTestSuite(ErfTest.class);
     suite.addTestSuite(ExponentialIntegralTest.class);
     suite.addTestSuite(HyperbolicCosineIntegralTest.class);
     suite.addTestSuite(HyperbolicSineIntegralTest.class);

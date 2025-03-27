@@ -32,24 +32,27 @@ public class A076261 extends Sequence2 {
     // Retain if the multiplied word is not already in the set and not longer than mN
     // Keep track of the first time we see words of length mN
     int cnt = 0;
-    final Set<Set<String>> next = new HashSet<>();
-    for (final Set<String> set : mSets) {
-      for (final String s : set) {
-        for (final String t : set) {
-          final String u = s + t;
-          if (u.length() == mN) {
-            if (mSeen.add(u)) {
-              ++cnt;
+    // If we've already seen every word of length n, there is no point in searching further
+    if (mSeen.size() < (1 << mN)) {
+      final Set<Set<String>> next = new HashSet<>();
+      for (final Set<String> set : mSets) {
+        for (final String s : set) {
+          for (final String t : set) {
+            final String u = s + t;
+            if (u.length() == mN) {
+              if (mSeen.add(u)) {
+                ++cnt;
+              }
+            } else if (u.length() < mN && !set.contains(u)) {
+              final Set<String> c = new HashSet<>(set);
+              c.add(u);
+              next.add(c);
             }
-          } else if (u.length() < mN && !set.contains(u)) {
-            final Set<String> c = new HashSet<>(set);
-            c.add(u);
-            next.add(c);
           }
         }
       }
+      mSets = next;
     }
-    mSets = next;
     return Z.valueOf(cnt);
   }
 }

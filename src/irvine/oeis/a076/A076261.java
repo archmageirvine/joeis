@@ -1,6 +1,5 @@
 package irvine.oeis.a076;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
@@ -40,6 +39,9 @@ public class A076261 extends Sequence2 {
         return true;
       }
       if (mParent == null || s.length() > mElement.length()) {
+        return false;
+      }
+      if (s.length() == mElement.length() && s.compareTo(mElement) > 0) {
         return false;
       }
       return mParent.contains(s);
@@ -100,7 +102,7 @@ public class A076261 extends Sequence2 {
     int cnt = 0;
     // If we've already seen every word of length n, there is no point in searching further
     if (mSeen.size() < Z.valueOf(mGenerators.length).pow(mN).intValueExact()) {
-      final Collection<Chain> next = new ArrayList<>();
+      final Collection<Chain> next = new HashSet<>();
       for (final Chain set : mSets) {
         for (Chain s = set; s != null; s = s.mParent) {
           for (Chain t = set; t != null; t = t.mParent) {

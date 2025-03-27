@@ -1,5 +1,6 @@
 package irvine.oeis.a076;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
@@ -26,12 +27,12 @@ public class A076261 extends Sequence2 {
   private static final class Chain {
     private final String mElement;
     private final Chain mParent;
-    private final int mHashcode;
+    //private final int mHashcode;
 
     private Chain(final String element, final Chain parent) {
       mElement = element;
       mParent = parent;
-      mHashcode = element.hashCode() + (parent == null ? 0 : parent.mHashcode);
+      //mHashcode = element.hashCode() + (parent == null ? 0 : parent.mHashcode);
     }
 
     private boolean contains(final String s) {
@@ -63,7 +64,8 @@ public class A076261 extends Sequence2 {
 
     @Override
     public int hashCode() {
-      return mHashcode;
+      return mElement.hashCode();
+      //return mHashcode;
     }
   }
 
@@ -101,8 +103,9 @@ public class A076261 extends Sequence2 {
     int cnt = 0;
     // If we've already seen every word of length n, there is no point in searching further
     if (mSeen.size() < Z.valueOf(mGenerators.length).pow(mN).intValueExact()) {
-      final Collection<Chain> next = new HashSet<>();
+      final Collection<Chain> next = new ArrayList<>();
       for (final Chain set : mSets) {
+        final Set<String> localSeen = new HashSet<>();
         for (Chain s = set; s != null; s = s.mParent) {
           for (Chain t = set; t != null; t = t.mParent) {
             final String u = s.mElement + t.mElement;
@@ -111,13 +114,14 @@ public class A076261 extends Sequence2 {
               if (mSeen.add(u)) {
                 ++cnt;
               }
-            } else if (len < mN && (len > set.mElement.length() || (len == set.mElement.length() && u.compareTo(s.mElement) > 0)) && !set.contains(u)) {
+            } else if (len < mN && (len > set.mElement.length() || (len == set.mElement.length() && u.compareTo(s.mElement) > 0)) && localSeen.add(u) && !set.contains(u)) {
               next.add(new Chain(u, set));
             }
           }
         }
       }
       mSets = next;
+      //System.out.println("Size: " + mSets.size());
     }
     return Z.valueOf(cnt);
   }

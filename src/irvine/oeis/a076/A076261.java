@@ -21,9 +21,6 @@ public class A076261 extends Sequence2 {
   // Starting from the head of a Chain elements never increase in length; that is,
   // mElement.length() >= mParent.mElement.length()
 
-  // todo this was worse than the sets I think chains repeating!
-  // todo perhaps cache hashcode?
-
   private static final class Chain {
     private final String mElement;
     private final Chain mParent;
@@ -32,7 +29,6 @@ public class A076261 extends Sequence2 {
     private Chain(final String element, final Chain parent) {
       mElement = element;
       mParent = parent;
-      //mHashcode = element.hashCode() + (parent == null ? 0 : parent.mHashcode);
     }
 
     private boolean contains(final String s) {
@@ -46,26 +42,6 @@ public class A076261 extends Sequence2 {
         return false;
       }
       return mParent.contains(s);
-    }
-
-    @Override
-    public boolean equals(final Object obj) {
-      if (!(obj instanceof Chain)) {
-        return false;
-      }
-      // WARNING: Assumes chains are the same length
-      for (Chain c = this, d = (Chain) obj; c != null; c = c.mParent, d = d.mParent) {
-        if (!c.mElement.equals(d.mElement)) {
-          return false;
-        }
-      }
-      return true;
-    }
-
-    @Override
-    public int hashCode() {
-      return mElement.hashCode();
-      //return mHashcode;
     }
   }
 
@@ -121,7 +97,6 @@ public class A076261 extends Sequence2 {
         }
       }
       mSets = next;
-      //System.out.println("Size: " + mSets.size());
     }
     return Z.valueOf(cnt);
   }

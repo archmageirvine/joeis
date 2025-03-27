@@ -37,13 +37,14 @@ public class A076261 extends Sequence2 {
       for (final String s : set) {
         for (final String t : set) {
           final String u = s + t;
-          if (u.length() <= mN && !set.contains(u)) {
+          if (u.length() == mN) {
+            if (mSeen.add(u)) {
+              ++cnt;
+            }
+          } else if (u.length() < mN && !set.contains(u)) {
             final Set<String> c = new HashSet<>(set);
             c.add(u);
             next.add(c);
-            if (u.length() == mN && mSeen.add(u)) {
-              ++cnt;
-            }
           }
         }
       }

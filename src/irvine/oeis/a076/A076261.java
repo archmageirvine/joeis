@@ -21,14 +21,17 @@ public class A076261 extends Sequence2 {
   // mElement.length() >= mParent.mElement.length()
 
   // todo this was worse than the sets I think chains repeating!
+  // todo perhaps cache hashcode?
 
   private static final class Chain {
     private final String mElement;
     private final Chain mParent;
+    private final int mHashcode;
 
     private Chain(final String element, final Chain parent) {
       mElement = element;
       mParent = parent;
+      mHashcode = element.hashCode() + (parent == null ? 0 : parent.mHashcode);
     }
 
     private boolean contains(final String s) {
@@ -58,11 +61,7 @@ public class A076261 extends Sequence2 {
 
     @Override
     public int hashCode() {
-      if (mParent == null) {
-        return mElement.hashCode();
-      } else {
-        return mElement.hashCode() + mParent.hashCode();
-      }
+      return mHashcode;
     }
   }
 

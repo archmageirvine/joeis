@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A193578 (13^n+1)/2.
+ * A193578 a(n) = (13^n + 1)/2.
  * @author Sean A. Irvine
  */
 public class A193578 extends LinearRecurrence {

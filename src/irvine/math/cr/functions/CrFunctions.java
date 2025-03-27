@@ -81,4 +81,8 @@ public final class CrFunctions {
   public static final CrFunction1 SHI = new HyperbolicSineIntegral();
   /** The hyperbolic cosine integral function, <code>Chi(z)</code>. */
   public static final CrFunction1 CHI = new HyperbolicCosineIntegral();
+  /** The Fresnel sine function, <code>S(z)</code>. */
+  public static final CrFunction1 FRESNEL_S = new FresnelS();
+  /** The Fresnel cosine function, <code>C(z)</code>. */
+  public static final CrFunction1 FRESNEL_C = new FresnelC();
 }

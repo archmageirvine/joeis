@@ -6,7 +6,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a122.A122840;
 
 /**
- * A381015 a(n) = n + (number of trailing 0&apos;s of n).
+ * A381015 a(n) = n + (number of trailing 0's of n).
  * @author Georg Fischer
  */
 public class A381015 extends LambdaSequence {

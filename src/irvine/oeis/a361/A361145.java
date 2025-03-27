@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A361145 Number of downwards peaks in row 2n-1 of the Sierpinski triangle.
+ * A361145 Number of downwards peaks in row 2*n-1 of the Sierpinski triangle.
  * @author Georg Fischer
  */
 public class A361145 extends LambdaSequence {

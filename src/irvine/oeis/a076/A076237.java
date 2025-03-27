@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a050.A050435;
 
 /**
- * A076237 Remainder when 2nd order composite cc[n]=A050435[n] is divided by n.
+ * A076237 a(n) = A050435(n) mod n.
  * @author Sean A. Irvine
  */
 public class A076237 extends A050435 {

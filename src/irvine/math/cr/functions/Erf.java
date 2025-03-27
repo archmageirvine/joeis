@@ -19,9 +19,8 @@ class Erf extends CrFunction1 {
         if (p >= 1) {
           return Z.ZERO;
         }
-        final Z x = z.getApprox(p);
         final Z x2 = z.square().getApprox(p);
-        Z t = x;
+        Z t = z.getApprox(p);
         Z sum = t;
         long k = 0;
         while (t.abs().compareTo(Z.ONE) >= 0) {

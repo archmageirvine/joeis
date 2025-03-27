@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A076220.
+ * A382211 Prime of the form p^q + q^r + r^p, for primes p, q and r.
  * @author Sean A. Irvine
  */
 public class A382211 extends Sequence1 {

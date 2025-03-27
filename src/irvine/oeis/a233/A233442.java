@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A233442 2^n mod n^3.
+ * A233442 a(n) = 2^n mod n^3.
  * @author Georg Fischer
  */
 public class A233442 extends Sequence1 {

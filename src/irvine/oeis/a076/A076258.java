@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A076258 a(n) = 2*sum(k=1,n, A076213(k)) - n.
+ * A076258 a(n) = 2 * Sum_{k=1..n} A076213(k) - n.
  * @author Sean A. Irvine
  */
 public class A076258 extends Sequence1 {

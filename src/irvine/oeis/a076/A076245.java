@@ -4,7 +4,7 @@ import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.a051.A051547;
 
 /**
- * A076245 Numbers at which values of A051547 increase.
+ * A076245 Positions of records in A051547.
  * @author Sean A. Irvine
  */
 public class A076245 extends RecordPositionSequence {

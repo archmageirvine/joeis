@@ -6,7 +6,7 @@ import irvine.oeis.LeastLambdaSequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A259089 Least k such that 2^k has at least n consecutive 2&apos;s in its decimal representation.
+ * A259089 Least k such that 2^k has at least n consecutive 2's in its decimal representation.
  * @author Georg Fischer
  */
 public class A259089 extends LeastLambdaSequence {

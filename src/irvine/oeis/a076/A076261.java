@@ -53,9 +53,8 @@ public class A076261 extends Sequence2 {
         return false;
       }
       // WARNING: Assumes chains are the same length
-      final Chain other = (Chain) obj;
-      for (Chain c = this; c != null; c = c.mParent) {
-        if (!other.contains(c.mElement)) {
+      for (Chain c = this, d = (Chain) obj; c != null; c = c.mParent, d = d.mParent) {
+        if (!c.mElement.equals(d.mElement)) {
           return false;
         }
       }

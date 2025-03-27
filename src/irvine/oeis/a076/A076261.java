@@ -111,7 +111,7 @@ public class A076261 extends Sequence2 {
               if (mSeen.add(u)) {
                 ++cnt;
               }
-            } else if (len < mN && (len > s.mElement.length() || (len == s.mElement.length() && u.compareTo(s.mElement) > 0)) && !set.contains(u)) {
+            } else if (len < mN && (len > set.mElement.length() || (len == set.mElement.length() && u.compareTo(s.mElement) > 0)) && !set.contains(u)) {
               next.add(new Chain(u, set));
             }
           }

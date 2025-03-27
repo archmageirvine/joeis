@@ -45,8 +45,12 @@ public final class Predicates {
   public static final Predicate BALANCED = new Balanced(); // =A020492
   /** Test if a number is a Carmichael number. */
   public static final Predicate CARMICHAEL = new Carmichael(); // =A002997
+  /** Test if a number is a Chen prime: p is prime and p+2 is either prime or semiprime. */
+  public static final Predicate CHEN_PRIME = new ChenPrime(); // =A109611
   /** Test if a number is a harmonic number as defined by Ore. */
   public static final Predicate ORE_HARMONIC = new OreHarmonic(); // =A001599
+  /** Test if a number is powerful. */
+  public static final Predicate POWERFUL = new Powerful(); // =A001694
 
   /** Test if a number is abundant. */
   public static final Predicate ABUNDANT = new Abundant();
@@ -67,6 +71,8 @@ public final class Predicates {
   /** Test if a number is a Super-Poulet number. */
   public static final Predicate SUPER_POULET = new SuperPoulet();
 
+  /** Test if a number is brilliant: semiprime, and both primes with the same decimal length. */
+  public static final Predicate2 BRILLIANT = new Brilliant(); // =A078972
   /** Test if a number is a palindrome in a base. */
   public static final Predicate2 PALINDROME = new Palindrome();
   /** Test if a number is <code>t</code>-polygonal. */

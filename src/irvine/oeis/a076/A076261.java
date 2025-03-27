@@ -1,5 +1,6 @@
 package irvine.oeis.a076;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
@@ -99,16 +100,17 @@ public class A076261 extends Sequence2 {
     int cnt = 0;
     // If we've already seen every word of length n, there is no point in searching further
     if (mSeen.size() < Z.valueOf(mGenerators.length).pow(mN).intValueExact()) {
-      final Collection<Chain> next = new HashSet<>();
+      final Collection<Chain> next = new ArrayList<>();
       for (final Chain set : mSets) {
         for (Chain s = set; s != null; s = s.mParent) {
           for (Chain t = set; t != null; t = t.mParent) {
             final String u = s.mElement + t.mElement;
-            if (u.length() == mN) {
+            final int len = u.length();
+            if (len == mN) {
               if (mSeen.add(u)) {
                 ++cnt;
               }
-            } else if (u.length() >= s.mElement.length() && u.length() < mN && !set.contains(u)) {
+            } else if (len < mN && (len > s.mElement.length() || (len == s.mElement.length() && u.compareTo(s.mElement) > 0)) && !set.contains(u)) {
               next.add(new Chain(u, set));
             }
           }

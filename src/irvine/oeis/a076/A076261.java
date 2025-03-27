@@ -46,6 +46,7 @@ public class A076261 extends Sequence2 {
 
   private int mN = 1;
   private int mM = 0;
+  private int mZeroAdjust = 0;
   private final String[] mGenerators;
   private final Map<String, Integer> mBestSolutions = new HashMap<>();
 
@@ -59,7 +60,7 @@ public class A076261 extends Sequence2 {
   }
 
   private void search(final Chain set, final int depth) {
-    if (depth == mN) {
+    if (depth == mN - mZeroAdjust) {
       return;
     }
     final Set<String> localSeen = new HashSet<>();
@@ -100,6 +101,9 @@ public class A076261 extends Sequence2 {
       if (v == mM) {
         ++cnt;
       }
+    }
+    if (cnt != 0) {
+      mZeroAdjust = mN - 1 - mM;
     }
     return Z.valueOf(cnt);
   }

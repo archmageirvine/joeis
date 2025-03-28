@@ -46,6 +46,7 @@ public class A076261 extends Sequence2 {
 
   private int mN = 1;
   private int mM = 0;
+  // mZeroAdjust curtails the search: all words can be expressed within mN - mZeroAdjust
   private int mZeroAdjust = 0;
   private final String[] mGenerators;
   private final Map<String, Integer> mBestSolutions = new HashMap<>();
@@ -95,6 +96,9 @@ public class A076261 extends Sequence2 {
         c = new Chain(g, c);
       }
       search(c, 1);
+      if (mBestSolutions.size() != Z.valueOf(mGenerators.length).pow(mN).intValueExact()) {
+        throw new RuntimeException("Insufficient words were found: " + mBestSolutions.size());
+      }
     }
     int cnt = 0;
     for (final int v : mBestSolutions.values()) {

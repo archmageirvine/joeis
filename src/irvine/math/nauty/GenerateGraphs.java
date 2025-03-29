@@ -28,6 +28,9 @@ public class GenerateGraphs {
   public static final int SQUARE_FREE = 4;
   /** Generate pentagon free graphs. */
   public static final int PENTAGON_FREE = 8;
+  static final int CYCLE_MASK = 0b1111;
+  /** Generate K4-free graph. */
+  public static final int K4_FREE = 16;
 
   private final StatsBlk mNautyStats = new StatsBlk();
   private final int mMod;
@@ -45,6 +48,7 @@ public class GenerateGraphs {
   int mOdometer;
   private int mSplitLevel;
   private Graph mGCan = null;
+  private int mGenerationFlags = 0;
 
   // 1 << x
   static final int[] XBIT = {
@@ -152,6 +156,9 @@ public class GenerateGraphs {
       ++deg[i];
     }
 
+    if ((mGenerationFlags & K4_FREE) != 0 && hasK4(gx, nx)) {
+      return null;
+    }
     if (preprune(gx, mMaxN)) {
       return null;
     }
@@ -225,6 +232,9 @@ public class GenerateGraphs {
       ++deg[i];
     }
 
+    if ((mGenerationFlags & K4_FREE) != 0 && hasK4(gx, nx)) {
+      return null;
+    }
     if (preprune(gx, mMaxN)) {
       return null;
     }
@@ -295,6 +305,26 @@ public class GenerateGraphs {
     }
   }
 
+  /* Return true iff there is a K4 including the last vertex */
+  private static boolean hasK4(final Graph g, final int n) {
+    long gx = ((SmallGraph) g).getEdgeVector(n - 1);
+    while (gx != 0) {
+      //TAKEBIT(i,gx);
+      final int i = Long.numberOfLeadingZeros(gx);
+      gx ^= BIT[i];
+      long w = ((SmallGraph) g).getEdgeVector(i) & gx;
+      while (w != 0) {
+        final int j = Long.numberOfLeadingZeros(w);
+        w ^= BIT[j];
+        //TAKEBIT(j,w);
+        if ((((SmallGraph) g).getEdgeVector(j) & w) != 0) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+
   /* decide if n in theta(g+x)  --  version for n+1 == maxn */
   private Graph accept2(final Graph g, final int x, final int[] deg, final boolean nuniq) {
     final int n = g.order();
@@ -309,6 +339,9 @@ public class GenerateGraphs {
       xw ^= XBIT[i];
       gx.addEdge(n, i);
       ++degx[i];
+    }
+    if ((mGenerationFlags & K4_FREE) != 0 && hasK4(gx, nx)) {
+      return null;
     }
     if (preprune(gx, mMaxN)) {
       return null;
@@ -368,12 +401,12 @@ public class GenerateGraphs {
       for (int i = i1 + 1; i < nx; ++i) {
         vmax |= BIT[lab[i]];
       }
-      final int qn = (int) (long) Long.bitCount(((SmallGraph) gx).getEdgeVector(n) & vmax);
+      final int qn = Long.bitCount(((SmallGraph) gx).getEdgeVector(n) & vmax);
       int j0 = i1 + 1;
       int j1 = n;
       while (j0 <= j1) {
         final int j = lab[j0];
-        final int qv = (int) (long) Long.bitCount(((SmallGraph) gx).getEdgeVector(j) & vmax);
+        final int qv = Long.bitCount(((SmallGraph) gx).getEdgeVector(j) & vmax);
         if (qv > qn) {
           return null;
         } else if (qv < qn) {
@@ -791,13 +824,13 @@ public class GenerateGraphs {
 
   /**
    * Run the graph search.
-   * @param flags flags controlling the types of graph generated
+   * @param generationFlags flags controlling the types of graph generated
    * @param splitLevInc split level increment
    * @param res residue
    */
-  public void run(int flags, final int splitLevInc, final int res) {
+  public void run(int generationFlags, final int splitLevInc, final int res) {
     final int[] deg = new int[1];
-    boolean sparse = flags > 0;
+    boolean sparse = (generationFlags & CYCLE_MASK) > 0;
     final Graph g1 = GraphFactory.create(1);
     if (mMaxN <= 1) {
       if (res == 0) {
@@ -809,16 +842,17 @@ public class GenerateGraphs {
         sparse = true;
       }
       if (mMaxN == mMaxE + 1 && mConnec != 0) {
-        flags |= BIPARTITE;
-        flags |= SQUARE_FREE;
+        generationFlags |= BIPARTITE;
+        generationFlags |= SQUARE_FREE;
         sparse = true;  /* trees */
       }
       makeLevelData(sparse);
       setSplitLevel(splitLevInc);
 
+      mGenerationFlags = generationFlags;
       mOdometer = res;
 
-      final int tmax = MaxEdges.getMaxEdges(flags, mMaxN);
+      final int tmax = MaxEdges.getMaxEdges(generationFlags & CYCLE_MASK, mMaxN);
       if (mMaxE > tmax) {
         mMaxE = tmax;
       }
@@ -835,7 +869,7 @@ public class GenerateGraphs {
 
         final int xl = mLevelData[1].mXlb;
         final int xu = mLevelData[1].mXub;
-        switch (flags) {
+        switch (generationFlags & CYCLE_MASK) {
           case 0:
             genExtend(g1, deg, 0, true, xl, xu);
             break;
@@ -873,7 +907,7 @@ public class GenerateGraphs {
             spaExtend(g1, deg, 0, true, xl, xu, new MakePlus5Graph(0));
             break;
           default:
-            throw new UnsupportedOperationException("Could not handle flags: " + Integer.toBinaryString(flags));
+            throw new UnsupportedOperationException("Could not handle flags: " + Integer.toBinaryString(generationFlags));
         }
       }
     }

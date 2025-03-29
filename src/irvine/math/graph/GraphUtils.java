@@ -1206,5 +1206,15 @@ public final class GraphUtils {
     }
     return square;
   }
+
+  /**
+   * Test if the given graph can be vertex-colored with the specified number of colors.
+   * @param graph the graph
+   * @param colors maximum number of colors
+   * @return true if the graph can be colored
+   */
+  public static boolean isColorable(final Graph graph, final int colors) {
+    return new Coloring(graph).is(colors);
+  }
 }
 

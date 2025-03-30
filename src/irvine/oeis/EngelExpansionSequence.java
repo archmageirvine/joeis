@@ -17,23 +17,23 @@ public abstract class EngelExpansionSequence extends AbstractSequence {
   protected CR mA;
   protected int mPrec; // the precision for CR.ceil()
 
-  protected abstract CR getN();
-
   /**
    * Constructor with default precision.
+   * @param n number to expand
    */
-  public EngelExpansionSequence() {
-    this(32);
+  public EngelExpansionSequence(final CR n) {
+    this(32, n);
   }
 
   /**
    * Constructor with precision.
    * @param prec precision for CR.ceil()
+   * @param n number to expand
    */
-  public EngelExpansionSequence(final int prec) {
+  public EngelExpansionSequence(final int prec, final CR n) {
     super(DEFOFF);
     mPrec = prec;
-    mA = getN();
+    mA = n;
   }
 
   @Override

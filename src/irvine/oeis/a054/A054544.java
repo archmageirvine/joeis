@@ -14,8 +14,8 @@ public class A054544 extends EngelExpansionSequence {
     setOffset(0);
   }
 
-  @Override
-  protected CR getN() {
-    return new A002210().getCR();
+  /** Construct the sequence. */
+  public A054544() {
+    super(new A002210().getCR());
   }
 }

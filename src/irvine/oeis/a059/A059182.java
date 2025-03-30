@@ -11,11 +11,6 @@ public class A059182 extends EngelExpansionSequence {
 
   /** Construct the sequence. */
   public A059182() {
-    super();
-  }
-
-  @Override
-  protected CR getN() {
-    return CR.LOG10;
+    super(CR.LOG10);
   }
 }

@@ -9,11 +9,6 @@ import irvine.oeis.EngelExpansionSequence;
  */
 public class A059184 extends EngelExpansionSequence {
 
-  /** Construct the sequence. */
-  public A059184() {
-    super();
-  }
-
   @Override
   protected CR getN() {
     return CR.LOG10.inverse();

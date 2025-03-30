@@ -12,7 +12,7 @@ public class A076280 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A076280() {
-    super(1, 0, 3, GenerateGraphs.K5_FREE, () -> graph -> !GraphUtils.isBipartite(graph)
+    super(1, 0, 4, GenerateGraphs.K5_FREE, () -> graph -> !GraphUtils.isBipartite(graph)
       && !GraphUtils.isColorable(graph, 3)
       && GraphUtils.isColorable(graph, 4)
       ? 1 : 0);

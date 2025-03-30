@@ -1215,6 +1215,14 @@ public final class GraphUtils {
    */
   public static boolean isColorable(final Graph graph, final int colors) {
     return new Coloring(graph).is(colors);
+
+    // Finding components first was actually slower ... at least when generating all graphs
+//    for (final Graph component : graph.components()) {
+//      if (!new Coloring(component).is(colors)) {
+//        return false;
+//      }
+//    }
+//    return true;
   }
 }
 

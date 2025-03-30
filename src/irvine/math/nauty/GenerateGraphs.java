@@ -29,8 +29,10 @@ public class GenerateGraphs {
   /** Generate pentagon free graphs. */
   public static final int PENTAGON_FREE = 8;
   static final int CYCLE_MASK = 0b1111;
-  /** Generate K4-free graph. */
+  /** Generate K4-free graphs. */
   public static final int K4_FREE = 16;
+  /** Generate K5-free graphs. */
+  public static final int K5_FREE = 32;
 
   private final StatsBlk mNautyStats = new StatsBlk();
   private final int mMod;
@@ -143,7 +145,7 @@ public class GenerateGraphs {
     final long[] workspace = new long[50];
     final int n = g.order();
     final int nx = n + 1;
-    final Graph gx = g.copy(nx);
+    final SmallGraph gx = (SmallGraph) g.copy(nx);
 
     final int degn = Integer.bitCount(x);
     deg[n] = degn;
@@ -156,7 +158,10 @@ public class GenerateGraphs {
       ++deg[i];
     }
 
-    if ((mGenerationFlags & K4_FREE) != 0 && hasK4(gx, nx)) {
+    if ((mGenerationFlags & K4_FREE) != 0 && gx.hasK4(n)) {
+      return null;
+    }
+    if ((mGenerationFlags & K5_FREE) != 0 && gx.hasK5(n)) {
       return null;
     }
     if (preprune(gx, mMaxN)) {
@@ -220,7 +225,7 @@ public class GenerateGraphs {
     final long[] workspace = new long[50];
     final int n = g.order();
     final int nx = n + 1;
-    final Graph gx = g.copy(nx);
+    final SmallGraph gx = (SmallGraph) g.copy(nx);
     final int degn = Integer.bitCount(x);
     deg[n] = degn;
 
@@ -232,7 +237,10 @@ public class GenerateGraphs {
       ++deg[i];
     }
 
-    if ((mGenerationFlags & K4_FREE) != 0 && hasK4(gx, nx)) {
+    if ((mGenerationFlags & K4_FREE) != 0 && gx.hasK4(n)) {
+      return null;
+    }
+    if ((mGenerationFlags & K5_FREE) != 0 && gx.hasK5(n)) {
       return null;
     }
     if (preprune(gx, mMaxN)) {
@@ -305,31 +313,11 @@ public class GenerateGraphs {
     }
   }
 
-  /* Return true iff there is a K4 including the last vertex */
-  private static boolean hasK4(final Graph g, final int n) {
-    long gx = ((SmallGraph) g).getEdgeVector(n - 1);
-    while (gx != 0) {
-      //TAKEBIT(i,gx);
-      final int i = Long.numberOfLeadingZeros(gx);
-      gx ^= BIT[i];
-      long w = ((SmallGraph) g).getEdgeVector(i) & gx;
-      while (w != 0) {
-        final int j = Long.numberOfLeadingZeros(w);
-        w ^= BIT[j];
-        //TAKEBIT(j,w);
-        if ((((SmallGraph) g).getEdgeVector(j) & w) != 0) {
-          return true;
-        }
-      }
-    }
-    return false;
-  }
-
   /* decide if n in theta(g+x)  --  version for n+1 == maxn */
   private Graph accept2(final Graph g, final int x, final int[] deg, final boolean nuniq) {
     final int n = g.order();
     final int nx = n + 1;
-    final Graph gx = g.copy(nx);
+    final SmallGraph gx = (SmallGraph) g.copy(nx);
     final int[] degx = Arrays.copyOf(deg, nx);
     final int degn = Integer.bitCount(x);
     degx[n] = degn;
@@ -340,7 +328,10 @@ public class GenerateGraphs {
       gx.addEdge(n, i);
       ++degx[i];
     }
-    if ((mGenerationFlags & K4_FREE) != 0 && hasK4(gx, nx)) {
+    if ((mGenerationFlags & K4_FREE) != 0 && gx.hasK4(n)) {
+      return null;
+    }
+    if ((mGenerationFlags & K5_FREE) != 0 && gx.hasK5(n)) {
       return null;
     }
     if (preprune(gx, mMaxN)) {

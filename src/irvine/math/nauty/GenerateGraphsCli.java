@@ -215,7 +215,8 @@ cost of a small increase in cpu time.
   private static final String TRIANGLE_FREE_FLAG = "triangle-free";
   private static final String SQUARE_FREE_FLAG = "square-free";
   private static final String PENTAGON_FREE_FLAG = "pentagon-free";
-  private static final String K4_FREE_FLAG = "k4-free";
+  private static final String K4_FREE_FLAG = "K4-free";
+  private static final String K5_FREE_FLAG = "K5-free";
   private static final String BIPARTITE_FLAG = "bipartite";
   private static final String OUTPUT_FLAG = "output";
   private static final String CANONISE_FLAG = "canonise";
@@ -267,6 +268,7 @@ cost of a small increase in cpu time.
     flags.registerOptional('f', SQUARE_FREE_FLAG, "only generate 4-cycle-free graphs");
     flags.registerOptional('p', PENTAGON_FREE_FLAG, "only generate 5-cycle-free graphs");
     flags.registerOptional('k', K4_FREE_FLAG, "only generate K4-free graphs");
+    flags.registerOptional(K5_FREE_FLAG, "only generate K5-free graphs");
     flags.registerOptional('b', BIPARTITE_FLAG, "only generate bipartite graphs");
     flags.registerOptional('o', OUTPUT_FLAG, String.class, "FILE", "name of file to write output into (default is stdout)");
     flags.registerOptional('l', CANONISE_FLAG, "canonically label output graphs");
@@ -316,6 +318,9 @@ cost of a small increase in cpu time.
     }
     if (flags.isSet(K4_FREE_FLAG)) {
       generationFlags |= GenerateGraphs.K4_FREE;
+    }
+    if (flags.isSet(K5_FREE_FLAG)) {
+      generationFlags |= GenerateGraphs.K5_FREE;
     }
 
     final boolean quiet = flags.isSet(QUIET_FLAG);

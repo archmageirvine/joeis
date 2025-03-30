@@ -9,14 +9,12 @@ import java.util.Arrays;
 public class SmallGraph extends AbstractGraph {
 
   static final long[] BIT = new long[Long.SIZE];
-
   static {
     long b = 1L;
     for (int k = BIT.length - 1; k >= 0; --k, b <<= 1) {
       BIT[k] = b;
     }
   }
-
   private static final long MSK63C = 0x7FFFFFFFFFFFFFFFL;
 
   private static long bitmask(final int x) {
@@ -256,6 +254,87 @@ public class SmallGraph extends AbstractGraph {
     return false;
   }
 
+  /**
+   * Test if the graph contains a K4 subgraph including the given vertex.
+   * @param u vertex
+   * @return true if the graph has a K4 component
+   */
+  public boolean hasK4(final int u) {
+    if (order() < 4) {
+      return false;
+    }
+    long gu = mAdj[u];
+    while (gu != 0) {
+      final int i = Long.numberOfLeadingZeros(gu);
+      gu ^= BIT[i];
+      long w = mAdj[i] & gu;
+      while (w != 0) {
+        final int j = Long.numberOfLeadingZeros(w);
+        w ^= BIT[j];
+        if ((mAdj[j] & w) != 0) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+
+  @Override
+  public boolean hasK4() {
+    if (order() < 4) {
+      return false;
+    }
+    for (int u = 0; u < order(); ++u) {
+      if (hasK4(u)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  /**
+   * Test if the graph contains a K5 subgraph including the given vertex.
+   * @param u vertex
+   * @return true if the graph has a K5 component
+   */
+  public boolean hasK5(final int u) {
+    if (order() < 5) {
+      return false;
+    }
+    long gu = mAdj[u];
+    while (gu != 0) {
+      final int v = Long.numberOfLeadingZeros(gu);
+      gu ^= BIT[v];
+      long gv = mAdj[v] & gu;
+      while (gv != 0) {
+        final int w = Long.numberOfLeadingZeros(gv);
+        gv ^= BIT[w];
+        long gw = mAdj[w] & gv;
+        while (gw != 0) {
+          final int x = Long.numberOfLeadingZeros(gw);
+          gw ^= BIT[x];
+          if ((mAdj[x] & gw) != 0) {
+            return true;
+          }
+        }
+      }
+    }
+    return false;
+  }
+
+  @Override
+  public boolean hasK5() {
+    if (order() < 5) {
+      return false;
+    }
+    for (int u = 0; u < order(); ++u) {
+      if (hasK5(u)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
   // todo deprecate or Z-ify
 
   /**
@@ -267,4 +346,5 @@ public class SmallGraph extends AbstractGraph {
   public long getEdgeVector(final int k) {
     return mAdj[k];
   }
+
 }

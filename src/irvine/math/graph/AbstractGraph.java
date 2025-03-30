@@ -381,4 +381,58 @@ public abstract class AbstractGraph implements Graph {
     }
     return diameter;
   }
+
+  @Override
+  public boolean hasK4() {
+    if (order() < 4) {
+      return false;
+    }
+    for (int u = 0; u < order(); ++u) {
+      if (degree(u) >= 3) {
+        for (int v = nextVertex(u, u); v >= 0; v = nextVertex(u, v)) {
+          if (degree(v) >= 3) {
+            for (int w = nextVertex(v, v); w >= 0; w = nextVertex(v, w)) {
+              if (degree(w) >= 3 && isAdjacent(u, w)) {
+                for (int x = nextVertex(w, w); x >= 0; x = nextVertex(w, x)) {
+                  if (degree(x) >= 3 && isAdjacent(x, u) && isAdjacent(x, v)) {
+                    return true;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    return false;
+  }
+
+  @Override
+  public boolean hasK5() {
+    if (order() < 5) {
+      return false;
+    }
+    for (int u = 0; u < order(); ++u) {
+      if (degree(u) >= 4) {
+        for (int v = nextVertex(u, u); v >= 0; v = nextVertex(u, v)) {
+          if (degree(v) >= 4) {
+            for (int w = nextVertex(v, v); w >= 0; w = nextVertex(v, w)) {
+              if (degree(w) >= 4 && isAdjacent(u, w)) {
+                for (int x = nextVertex(w, w); x >= 0; x = nextVertex(w, x)) {
+                  if (degree(x) >= 4 && isAdjacent(x, u) && isAdjacent(x, v)) {
+                    for (int y = nextVertex(x, x); y >= 0; y = nextVertex(x, y)) {
+                      if (degree(y) >= 4 && isAdjacent(y, u) && isAdjacent(y, v) && isAdjacent(y, w) && isAdjacent(y, x)) {
+                        return true;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    return false;
+  }
 }

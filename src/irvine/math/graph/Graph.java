@@ -207,4 +207,16 @@ public interface Graph {
    * @return diameter
    */
   int diameter();
+
+  /**
+   * Return true iff the graph as a K4 subgraph.
+   * @return true if the graph has a K4 subgraph
+   */
+  boolean hasK4();
+
+  /**
+   * Return true iff the graph as a K5 subgraph.
+   * @return true if the graph has a K5 subgraph
+   */
+  boolean hasK5();
 }

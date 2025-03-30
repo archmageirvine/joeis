@@ -21,7 +21,7 @@ final class Coloring {
     return true;
   }
 
-  private boolean graphColoring(final int numColors, final int[] coloring, int vertex) {
+  private boolean color(final int numColors, final int[] coloring, int vertex) {
     while (vertex < mGraph.order() && mGraph.degree(vertex) == 0) {
       // Isolated vertices can be any color
       ++vertex;
@@ -34,7 +34,7 @@ final class Coloring {
     for (int color = 0; color < numColors; ++color) {
       if (isValidColor(vertex, color, coloring)) {
         coloring[vertex] = color;
-        if (graphColoring(numColors, coloring, vertex + 1)) {
+        if (color(numColors, coloring, vertex + 1)) {
           return true; // If successful, return true
         }
       }
@@ -43,7 +43,7 @@ final class Coloring {
   }
 
   boolean is(final int colors) {
-    return mGraph.order() <= colors || graphColoring(colors, new int[mGraph.order()], 0);
+    // WLOG assume vertex 0 has color 0
+    return mGraph.order() <= colors || color(colors, new int[mGraph.order()], 1);
   }
 }
-

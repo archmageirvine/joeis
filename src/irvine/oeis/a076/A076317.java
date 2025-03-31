@@ -1,24 +1,15 @@
 package irvine.oeis.a076;
 
-import irvine.math.graph.GraphUtils;
-import irvine.math.nauty.GenerateGraphs;
-import irvine.oeis.ParallelGenerateGraphsSequence;
+import irvine.oeis.transform.EulerTransform;
 
 /**
- * A076317 Number of 5-colorable (i.e., chromatic number &lt;= 5) simple graphs on n nodes.
+ * A076315 Number of 3-colorable (i.e., chromatic number &lt;= 3) simple graphs on n nodes.
  * @author Sean A. Irvine
  */
-public class A076317 extends ParallelGenerateGraphsSequence {
+public class A076317 extends EulerTransform {
 
   /** Construct the sequence. */
   public A076317() {
-    super(1, 0, 1, 0, () -> graph -> GraphUtils.isColorable(graph, 5) ? 1 : 0);
-  }
-
-  @Override
-  protected void graphGenInit(final GenerateGraphs gg) {
-    gg.setVertices(mN);
-    gg.setMinEdges(0);
-    gg.setMaxEdges(mN * (mN - 1) / 2);
+    super(1, new A076324());
   }
 }

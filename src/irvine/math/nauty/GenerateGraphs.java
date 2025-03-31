@@ -134,10 +134,6 @@ public class GenerateGraphs {
   // decide if n in theta(g+x) -  version for n+1 < maxn
   private Graph accept1(final Graph g, final int x, final int[] deg, final boolean[] rigid) {
     int i;
-    final int[] lab = new int[MAXN];
-    final int[] ptn = new int[MAXN];
-    final int[] orbits = new int[MAXN];
-    final int[] count = new int[MAXN];
     final int[] numcells = new int[1];
     final NautySet active = new NautySet(MAXM);
     final StatsBlk stats = new StatsBlk();
@@ -145,6 +141,10 @@ public class GenerateGraphs {
     final long[] workspace = new long[50];
     final int n = g.order();
     final int nx = n + 1;
+    final int[] lab = new int[nx];
+    final int[] ptn = new int[nx];
+    final int[] orbits = new int[nx];
+    final int[] count = new int[nx];
     final SmallGraph gx = (SmallGraph) g.copy(nx);
 
     final int degn = Integer.bitCount(x);
@@ -215,16 +215,16 @@ public class GenerateGraphs {
 
   /* decide if n in theta(g+x)  --  version for n+1 < maxn */
   private Graph accept1b(final Graph g, final int x, final int[] deg, final boolean[] rigid, final MakeH makeh) {
-    final int[] lab = new int[MAXN];
-    final int[] ptn = new int[MAXN];
-    final int[] orbits = new int[MAXN];
-    final int[] count = new int[MAXN];
     final int[] numcells = new int[1];
     final StatsBlk stats = new StatsBlk();
     final OptionBlk options = new OptionBlk();
     final long[] workspace = new long[50];
     final int n = g.order();
     final int nx = n + 1;
+    final int[] lab = new int[nx];
+    final int[] ptn = new int[nx];
+    final int[] orbits = new int[nx];
+    final int[] count = new int[nx];
     final SmallGraph gx = (SmallGraph) g.copy(nx);
     final int degn = Integer.bitCount(x);
     deg[n] = degn;
@@ -343,15 +343,15 @@ public class GenerateGraphs {
       }
       return gx;
     }
-    final int[] lab = new int[MAXN];
-    final int[] ptn = new int[MAXN];
+    final int[] lab = new int[nx];
+    final int[] ptn = new int[nx];
+    Arrays.fill(ptn, 1);
+    ptn[n] = 0;
     int i0 = 0;
     int i1 = n;
-    for (int i = 0; i < nx; ++i) {
+    for (int i = 0; i < ptn.length; ++i) {
       lab[degx[i] == degn ? i1-- : i0++] = i;
-      ptn[i] = 1;
     }
-    ptn[n] = 0;
     final NautySet active = new NautySet(MAXM);
     active.set(0);
     final int[] numcells = new int[1];
@@ -388,16 +388,13 @@ public class GenerateGraphs {
       numcells[0] = 2;
       ptn[i1] = 0;
       active.set(i1 + 1);
-      int vmax = 0;
-      for (int i = i1 + 1; i < nx; ++i) {
-        vmax |= BIT[lab[i]];
-      }
-      final int qn = Long.bitCount(((SmallGraph) gx).getEdgeVector(n) & vmax);
+      final long vmax = getVmax(i1, nx, lab);
+      final int qn = Long.bitCount(gx.getEdgeVector(n) & vmax);
       int j0 = i1 + 1;
       int j1 = n;
       while (j0 <= j1) {
         final int j = lab[j0];
-        final int qv = Long.bitCount(((SmallGraph) gx).getEdgeVector(j) & vmax);
+        final int qv = Long.bitCount(gx.getEdgeVector(j) & vmax);
         if (qv > qn) {
           return null;
         } else if (qv < qn) {
@@ -458,7 +455,7 @@ public class GenerateGraphs {
     options.mGetCanon = 1;
     options.mDefaultPtn = false;
     active.clear();
-    final int[] orbits = new int[MAXN];
+    final int[] orbits = new int[nx];
     mGCan = new Nauty(gx, lab, ptn, active, orbits, options, new StatsBlk(), new long[50]).canon();
     if (orbits[lab[n]] == orbits[n]) {
       if (mCanonise) {
@@ -467,6 +464,14 @@ public class GenerateGraphs {
       return gx;
     }
     return null;
+  }
+
+  private static long getVmax(final int i1, final int nx, final int[] lab) {
+    long vmax = 0;
+    for (int i = i1 + 1; i < nx; ++i) {
+      vmax |= BIT[lab[i]];
+    }
+    return vmax;
   }
 
   // find bounds on extension degree;  store answer in data[*].

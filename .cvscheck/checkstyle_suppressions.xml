@@ -31,6 +31,7 @@
     <suppress checks="MethodLength" files=".*BipScanner.java"/>
     <suppress checks="MethodLength" files=".*Canonical.java"/>
     <suppress checks="MethodLength" files=".*Discriminant.java"/>
+    <suppress checks="MethodLength" files=".*GenerateGraphs.java"/>
     <suppress checks="MethodLength" files=".*InverseMonotone.java"/>
     <suppress checks="MethodLength" files=".*Min5AExtenderReducer.java"/>
     <suppress checks="MethodLength" files=".*Planarity.java"/>

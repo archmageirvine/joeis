@@ -1,6 +1,5 @@
 package irvine.oeis.a054;
 
-import irvine.math.cr.CR;
 import irvine.oeis.EngelExpansionSequence;
 import irvine.oeis.a002.A002210;
 

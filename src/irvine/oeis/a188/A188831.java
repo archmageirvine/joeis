@@ -1,8 +1,8 @@
 package irvine.oeis.a188;
 // manually dirtraf/dirtrali at 2024-02-06 20:25
 
-import irvine.oeis.a073.A073497;
 import irvine.oeis.FilterSequence;
+import irvine.oeis.a073.A073497;
 
 /**
  * A188831 Primes of the form k^2 - prime(k).

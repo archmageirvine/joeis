@@ -1,7 +1,7 @@
 package irvine.oeis.a117;
 
-import irvine.math.polynomial.CyclotomicPolynomials;
 import irvine.math.group.PolynomialRing;
+import irvine.math.polynomial.CyclotomicPolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;

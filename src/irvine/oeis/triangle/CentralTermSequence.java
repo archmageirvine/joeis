@@ -2,6 +2,7 @@ package irvine.oeis.triangle;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.Sequence;
 
 /**
  * Central terms of a {@link Sequence} that is (interpreted as) a {@link Triangle}.

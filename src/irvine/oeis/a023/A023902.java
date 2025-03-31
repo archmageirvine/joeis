@@ -1,9 +1,9 @@
 package irvine.oeis.a023;
 
-import irvine.math.polynomial.CyclotomicPolynomials;
 import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
+import irvine.math.polynomial.CyclotomicPolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;

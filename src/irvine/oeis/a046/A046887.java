@@ -2,9 +2,9 @@ package irvine.oeis.a046;
 
 import java.util.HashSet;
 
+import irvine.math.polynomial.CyclotomicPolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.math.polynomial.CyclotomicPolynomials;
 import irvine.oeis.Sequence1;
 
 /**

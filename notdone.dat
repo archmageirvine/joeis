@@ -2526,3 +2526,6 @@ A076019 Number of nonisomorphic commutative systems with n elements with one bin
 A076020 Number of systems with n elements with one binary operation satisfying the equation B(AB)=A (semisymmetric quasigroups). This gives numbers of systems which are isomorphic to their transpose but are noncommutative.
 A076021 Number of fully idempotent systems with n elements with one binary operation satisfying the equation B(AB)=A (idempotent semisymmetric quasigroups).
 A076215 Square root of sum defined in A007475(n) and A001032(n).
+A076329 Numbers k for which rank of the elliptic curve y^2=x^3+k*x is 2.
+A076330 Elliptic curves (see reference for precise definition).
+A076331 Elliptic curves (see reference for precise definition).

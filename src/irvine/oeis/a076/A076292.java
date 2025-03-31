@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a001.A001597;
 
 /**
- * A076253.
+ * A076292 Perfect powers with squarefree root.
  * @author Sean A. Irvine
  */
 public class A076292 extends FilterSequence {

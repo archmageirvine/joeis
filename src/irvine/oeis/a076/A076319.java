@@ -5,14 +5,14 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A076279 Number of 3-chromatic (i.e., chromatic number equals 3) simple graphs on n nodes.
+ * A076319 Number of 7-colorable (i.e., chromatic number &lt;= 7) simple graphs on n nodes.
  * @author Sean A. Irvine
  */
-public class A076279 extends ParallelGenerateGraphsSequence {
+public class A076319 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
-  public A076279() {
-    super(1, 0, 3, GenerateGraphs.K4_FREE, () -> graph -> !GraphUtils.isBipartite(graph) && GraphUtils.isColorable(graph, 3) ? 1 : 0);
+  public A076319() {
+    super(1, 0, 1, 0, () -> graph -> GraphUtils.isColorable(graph, 7) ? 1 : 0);
   }
 
   @Override

@@ -5,7 +5,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A076253.
+ * A076283 Number of 7-chromatic (i.e., chromatic number equals 7) simple graphs on n nodes.
  * @author Sean A. Irvine
  */
 public class A076283 extends ParallelGenerateGraphsSequence {

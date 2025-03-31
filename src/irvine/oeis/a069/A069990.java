@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069990 (-1)^(n+1)/5*sum(k=1,2n,C(2n+1,k)*B(k)*5^k) where C(n,k) are the binomial coefficients, B(k) the Bernoulli numbers.
+ * A069990 a(n) = (-1)^(n+1)/5 * Sum_{k=1..2n} binomial(2n+1,k)*B(k)*5^k where B(k) are the Bernoulli numbers.
  * @author Sean A. Irvine
  */
 public class A069990 extends Sequence1 {

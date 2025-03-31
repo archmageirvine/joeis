@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A117681 Floor of exp(n^2).
+ * A117681 a(n) = floor(exp(n^2)).
  * @author Georg Fischer
  */
 public class A117681 extends FloorSequence {

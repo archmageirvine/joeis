@@ -6,7 +6,7 @@ import irvine.oeis.a055.A055394;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A078379 Minimal exponent in prime factorization of numbers which can be written as sum of a positive square and a positive cube.
+ * A078379 Minimum exponent in prime factorization of numbers which can be written as sum of a positive square and a positive cube.
  * @author Georg Fischer
  */
 public class A078379 extends DirectTransformSequence {

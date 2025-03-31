@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a005.A005640;
 
 /**
- * A224766 Number of non-degenerate fanout-free Boolean functions of n variables.
+ * A224766 Number of non-degenerate fanout-free Boolean functions of n variables using And, Or and Not gates.
  * @author Georg Fischer
  */
 public class A224766 extends PrependSequence {

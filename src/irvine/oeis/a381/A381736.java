@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A381736 allocated for Matthew Goers.
+ * A381736 Integers k = p*q*r, where p &lt; q &lt; r are distinct primes and p*q &gt; r.
  * @author Sean A. Irvine
  */
 public class A381736 extends Sequence2 {

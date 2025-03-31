@@ -5,7 +5,7 @@ import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 
 /**
- * A005616 Number of disjunctively-realizable functions of n variables.
+ * A005616 Number of non-degenerate disjunctively-realizable functions of n variables.
  * @author Sean A. Irvine
  */
 public class A005616 extends A005640 {

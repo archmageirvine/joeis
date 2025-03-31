@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076253.
+ * A076290 Sum of the semiprime divisors of n.
  * @author Sean A. Irvine
  */
 public class A076290 extends Sequence1 {

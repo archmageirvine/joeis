@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A264072 Number of (3+1) X (n+1) arrays of permutations of 0..n*4+3 with each element having index change +-(.,.) 0,0 0,1 or 1,2.
+ * A264072 Number of (3+1) X (n+1) arrays of permutations of 0..n*4+3 with each element having index change +-(.,.) 0,0 1,1 or 1,2.
  * @author Georg Fischer
  */
 public class A264072 extends GeneratingFunctionSequence implements Conjectural {

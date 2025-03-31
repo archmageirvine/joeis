@@ -6,7 +6,7 @@ import irvine.oeis.a007.A007318;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A098802 Greatest prime factors in Pascal&apos;s triangle (read by rows).
+ * A098802 Greatest prime factors in Pascal's triangle (read by rows).
  * @author Georg Fischer
  */
 public class A098802 extends SingleTransformSequence {

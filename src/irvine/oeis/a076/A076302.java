@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076253.
+ * A076302 Triangle T(n,k) = number of k-smooth divisors of n, read by rows.
  * @author Sean A. Irvine
  */
 public class A076302 extends Sequence1 {

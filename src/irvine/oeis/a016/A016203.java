@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A016203 Expansion of 1/((1-x)(1-2x)(1-8x)).
+ * A016203 Expansion of g.f. 1/((1-x)*(1-2*x)*(1-8*x)).
  * @author Sean A. Irvine
  */
 public class A016203 extends Sequence0 {

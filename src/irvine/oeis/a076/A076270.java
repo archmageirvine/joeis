@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076253.
+ * A076270 Numbers of the form (3^{mr}-1)/(3^r-1) for positive integers m, r.
  * @author Sean A. Irvine
  */
 public class A076270 extends Sequence1 {

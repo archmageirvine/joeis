@@ -5,7 +5,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A076253.
+ * A076282 Number of 6-chromatic (i.e., chromatic number equals 6) simple graphs on n nodes.
  * @author Sean A. Irvine
  */
 public class A076282 extends ParallelGenerateGraphsSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.math.z.Z;
 
 /**
- * A005741 Number of fanout-free Boolean functions of n variables.
+ * A005741 Number of fanout-free Boolean functions of n variables using And, Or, Xor, Not, and Majority gates.
  * @author Sean A. Irvine
  */
 public class A005741 extends A005740 {

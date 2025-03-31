@@ -3,7 +3,7 @@ package irvine.oeis.a076;
 import irvine.math.z.Z;
 
 /**
- * A076253.
+ * A076286 Numbers of the form (7^{mr}-1)/(7^r-1) for positive integers m, r.
  * @author Sean A. Irvine
  */
 public class A076286 extends A076270 {

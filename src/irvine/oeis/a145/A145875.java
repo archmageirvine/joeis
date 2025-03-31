@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a006.A006886;
 
 /**
- * A145875 Repdigit Kaprekar numbers
+ * A145875 Repdigit Kaprekar numbers.
  * @author Georg Fischer
  */
 public class A145875 extends FilterSequence {

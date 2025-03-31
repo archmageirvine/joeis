@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A076253.
+ * A076299 Prime(n) + s*n is prime, s=4.
  * @author Sean A. Irvine
  */
 public class A076299 extends A000040 {

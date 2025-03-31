@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A382022 allocated for Matthew Goers.
+ * A382022 Composite integers k = p*q*r where p &lt; q &lt; r are distinct primes such that p*r &lt; q^2.
  * @author Sean A. Irvine
  */
 public class A382022 extends Sequence2 {

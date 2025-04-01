@@ -4,7 +4,7 @@ package irvine.oeis.a382;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A382478 Number of palindromic binary strings of length n having no 4-runs of 1&apos;s.
+ * A382478 Number of palindromic binary strings of length n having no 4-runs of 1's.
  * @author Georg Fischer
  */
 public class A382478 extends GeneratingFunctionSequence {

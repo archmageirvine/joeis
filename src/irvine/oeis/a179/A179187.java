@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A179187 Numbers n such that phi(n)=phi(n+5), with Euler&apos;s totient function phi=A000010.
+ * A179187 Numbers n such that phi(n)=phi(n+5), with Euler's totient function phi=A000010.
  * @author Georg Fischer
  */
 public class A179187 extends FilterNumberSequence {

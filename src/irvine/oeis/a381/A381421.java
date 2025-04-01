@@ -4,7 +4,7 @@ package irvine.oeis.a381;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A381421 a(n) = Sum_{k=0..n} (k+1) * binomial(2*k, 2*n-2*k).
+ * A381421 a(n) = Sum_{k=0..n} (k+1) * binomial(2*k,2*n-2*k).
  * @author Georg Fischer
  */
 public class A381421 extends GeneratingFunctionSequence {

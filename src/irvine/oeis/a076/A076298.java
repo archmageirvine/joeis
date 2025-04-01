@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A076298 Prime(n)+ s*n is prime, s=3.
+ * A076298 Numbers k such that prime(k) + s*k is prime, s=3.
  * @author Sean A. Irvine
  */
 public class A076298 extends A000040 {

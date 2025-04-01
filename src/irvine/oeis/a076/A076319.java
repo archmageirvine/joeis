@@ -3,7 +3,7 @@ package irvine.oeis.a076;
 import irvine.oeis.transform.EulerTransform;
 
 /**
- * A076315 Number of 3-colorable (i.e., chromatic number &lt;= 3) simple graphs on n nodes.
+ * A076319 Number of 7-colorable (i.e., chromatic number &lt;= 7) simple graphs on n nodes.
  * @author Sean A. Irvine
  */
 public class A076319 extends EulerTransform {

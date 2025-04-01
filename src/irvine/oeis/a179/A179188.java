@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A179188 Numbers n such that phi(n) = phi(n+6), with Euler&apos;s totient function phi=A000010.
+ * A179188 Numbers n such that phi(n) = phi(n+6), with Euler's totient function phi=A000010.
  * @author Georg Fischer
  */
 public class A179188 extends FilterNumberSequence {

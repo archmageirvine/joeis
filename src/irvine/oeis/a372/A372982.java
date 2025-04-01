@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A372982 a(n) = floor((a(n-1)+a(n-2)+n)/(a(n-3)+1), where a(1)=1, a(2)=2, a(3)=3.
+ * A372982 a(n) = floor((a(n-1)+a(n-2)+n)/(a(n-3)+1)), where a(1)=1, a(2)=2, a(3)=3.
  * @author Georg Fischer
  */
 public class A372982 extends MultiTransformSequence {

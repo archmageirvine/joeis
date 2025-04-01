@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 /**
- * A184732 floor(nr+h), where r=(1+sqrt(5))/2, h=-1/4; complement of A184733.
+ * A184732 a(n) = floor(n*r+h), where r=(1+sqrt(5))/2, h=-1/4; complement of A184733.
  * @author Georg Fischer
  */
 public class A184732 extends FloorSequence {

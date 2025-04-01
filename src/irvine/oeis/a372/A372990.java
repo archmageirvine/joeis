@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A372990 a(n) = floor((3n)!/(n!^3 a(n-1)), where a(0)=1.
+ * A372990 a(n) = floor((3*n)!/(n!^3*a(n-1))), where a(0)=1.
  * @author Georg Fischer
  */
 public class A372990 extends MultiTransformSequence {

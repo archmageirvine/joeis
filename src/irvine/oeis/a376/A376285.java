@@ -4,7 +4,7 @@ package irvine.oeis.a376;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A376285 a(n) = (20)^n * cos(nA), where A is the angle opposite side BC in a triangle ABC having sidelengths |BC|=3, |CA|=4, |AB|=5; ABC is the smallest integer-sided right triangle.
+ * A376285 a(n) = 20^n * cos(n*A), where A is the angle opposite side BC in a triangle ABC having sidelengths |BC|=3, |CA|=4, |AB|=5; ABC is the smallest integer-sided right triangle.
  * @author Georg Fischer
  */
 public class A376285 extends GeneratingFunctionSequence {

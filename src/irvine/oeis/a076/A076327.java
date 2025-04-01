@@ -5,7 +5,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A076315.
+ * A076327 Number of connected 8-colorable (i.e., chromatic number &lt;= 8) simple graphs on n nodes.
  * @author Sean A. Irvine
  */
 public class A076327 extends ParallelGenerateGraphsSequence {

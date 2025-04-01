@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A076300 Numbers n such that prime(n) + 5*n is prime.
+ * A076300 Numbers k such that prime(k) + s*k is prime, s=5.
  * @author Sean A. Irvine
  */
 public class A076300 extends A000040 {

@@ -7,7 +7,7 @@ import irvine.oeis.a018.A018247;
 import irvine.oeis.a018.A018248;
 
 /**
- * A076308 Product of 10-adic numbers defined in A018247 &amp; A018248.
+ * A076308 Product of 10-adic numbers defined in A018247 and A018248.
  * @author Sean A. Irvine
  */
 public class A076308 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a382;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A382479 Number of palindromic binary strings of length n having no 6-runs of 1&apos;s.
+ * A382479 Number of palindromic binary strings of length n having no 6-runs of 1's.
  * @author Georg Fischer
  */
 public class A382479 extends GeneratingFunctionSequence {

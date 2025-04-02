@@ -1,5 +1,7 @@
 package irvine.oeis.a057;
+// manually 2025-04-01 direct
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
@@ -28,23 +30,22 @@ public class A057889 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return a(n.intValueExact());
+    if (n.isZero()) {
+      return Z.ZERO;
+    }
+    final Z odd = n.makeOdd();
+    final long bits = odd.auxiliary();
+    return Functions.REVERSE.z(2, odd).shiftLeft(bits);
   }
 
   @Override
   public Z a(final int n) {
-    if (n == 0) {
-      return Z.ZERO;
-    }
-    final int head0 = Integer.numberOfLeadingZeros(n);
-    final int tail0 = Integer.numberOfTrailingZeros(n);
-    final int nOrg = n >> tail0;
-    final int nRev = ((Integer.reverse(nOrg) >> head0) & ((1 << (32 - head0)) - 1)) >> tail0;
-    return Z.valueOf(nOrg != nRev ? ((long) nRev << tail0) : n);
+    return a(Z.valueOf(n));
   }
 
   @Override
   public Z next() {
     return a(++mN);
   }
+
 }

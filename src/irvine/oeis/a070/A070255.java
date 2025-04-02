@@ -9,8 +9,7 @@ import irvine.oeis.Sequence1;
  */
 public class A070255 extends Sequence1 {
 
-  private long mN = 10;
-  private static final long[] pow10 = new long[] {1L, 10L, 100L, 1000L,
+  private static final long[] POW10 = {1L, 10L, 100L, 1000L,
     10000L,
     100000L,
     1000000L,
@@ -21,15 +20,16 @@ public class A070255 extends Sequence1 {
     100000000000L,
     1000000000000L,
     10000000000000L};
+  private long mN = 10;
 
   private static boolean is(final long n) {
     if (n % 10 == 0) {
       return false;
     }
     int k = 1;
-    while (pow10[k] < n) {
-      final long a = n / pow10[k];
-      final long b = n % pow10[k];
+    while (POW10[k] < n) {
+      final long a = n / POW10[k];
+      final long b = n % POW10[k];
       if (a % b != 0 && b % a != 0) {
         return false;
       }

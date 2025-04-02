@@ -10,20 +10,30 @@ import irvine.oeis.Sequence1;
 public class A070255 extends Sequence1 {
 
   private long mN = 10;
+  private static final long[] pow10 = new long[] {1L, 10L, 100L, 1000L,
+    10000L,
+    100000L,
+    1000000L,
+    10000000L,
+    100000000L,
+    1000000000L,
+    10000000000L,
+    100000000000L,
+    1000000000000L,
+    10000000000000L};
 
-  private boolean is(final long n) {
+  private static boolean is(final long n) {
     if (n % 10 == 0) {
       return false;
     }
-    final String s = String.valueOf(n);
-    for (int k = 1; k < s.length(); ++k) {
-      if (s.charAt(k) != '0') {
-        final long a = Long.parseLong(s.substring(k));
-        final long b = Long.parseLong(s.substring(0, k));
-        if (a % b != 0 && b % a != 0) {
-          return false;
-        }
+    int k = 1;
+    while (pow10[k] < n) {
+      final long a = n / pow10[k];
+      final long b = n % pow10[k];
+      if (a % b != 0 && b % a != 0) {
+        return false;
       }
+      ++k;
     }
     return true;
   }

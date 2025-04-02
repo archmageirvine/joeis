@@ -4,14 +4,16 @@ import irvine.math.group.GaloisField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
  * A075793 Primes p such that f_p(x)=(1296+432*x+108*x^2+24*x^3+5*x^4+x^5) mod p factors as product of 3 linear and one irreducible quadratic factor.
  * @author Sean A. Irvine
  */
-public class A075793 extends A000040 {
+public class A075793 extends Sequence1 {
 
+  private final A000040 mSeq = new A000040();
   private static final Polynomial<Z> P = Polynomial.create(1296, 432, 108, 24, 5, 1);
 
   private boolean hasLinearFactor(final PolynomialRingField<Z> ring, final Polynomial<Z> poly, final Z lo, final Z hi) {
@@ -32,7 +34,7 @@ public class A075793 extends A000040 {
   @Override
   public Z next() {
     while (true) {
-      final Z p = super.next();
+      final Z p = mSeq.next();
       final PolynomialRingField<Z> ring = new PolynomialRingField<>(new GaloisField(p));
       for (Z a = Z.ONE; a.compareTo(p) < 0; a = a.add(1)) {
         if (ring.eval(P, a).isZero()) {

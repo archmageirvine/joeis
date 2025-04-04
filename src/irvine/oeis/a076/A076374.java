@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072022.
+ * A076374 Smallest solution to x+n*phi(x) = sigma(x) = x+n*A000010(x) = A000203(x).
  * @author Sean A. Irvine
  */
 public class A076374 extends Sequence1 {

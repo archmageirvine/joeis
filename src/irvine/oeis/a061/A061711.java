@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A061711 a(n) = n!*n^n.
+ * A061711 a(n) = n^n * n!.
  * @author Georg Fischer
  */
 public class A061711 extends Sequence0 {

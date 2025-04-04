@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076340.
+ * A076353 Numbers n such that Sum_{k=1..n} d(k) is an integer, where d(k) is the decimal fraction 0.floor(sqrt(k)) (e.g. d(16)=0.4).
  * @author Sean A. Irvine
  */
 public class A076353 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072022.
+ * A076378 n!-x!-1 is never prime for all x&lt;n.
  * @author Sean A. Irvine
  */
 public class A076378 extends Sequence1 {

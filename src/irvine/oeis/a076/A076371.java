@@ -3,7 +3,7 @@ package irvine.oeis.a076;
 import irvine.oeis.transform.RunLengthTransform;
 
 /**
- * A072022.
+ * A076371 Occurrences of value=n in sequence A076370.
  * @author Sean A. Irvine
  */
 public class A076371 extends RunLengthTransform {

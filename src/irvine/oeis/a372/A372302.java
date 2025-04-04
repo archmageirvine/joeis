@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a014.A014417;
 
 /**
- * A372302 Numbers k for which the Zeckendorf representation A014417(k) ends with &quot;1001&quot;.
+ * A372302 Numbers k for which the Zeckendorf representation A014417(k) ends with "1001".
  * @author Georg Fischer
  */
 public class A372302 extends FilterPositionSequence {

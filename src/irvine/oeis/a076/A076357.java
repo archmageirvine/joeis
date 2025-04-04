@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076340.
+ * A076357 a(n) = floor(t^n) where t = 39661481813^(1/10) (approximately 11.4772).
  * @author Sean A. Irvine
  */
 public class A076357 extends Sequence1 {

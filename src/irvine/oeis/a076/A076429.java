@@ -1,0 +1,18 @@
+package irvine.oeis.a076;
+
+import irvine.math.z.Z;
+import irvine.oeis.a000.A000040;
+
+/**
+ * A076429 Sum of numbers that cannot be written as t*p_n + u*p_{n+1} for nonnegative integers t,u, where p_n is the n-th prime.
+ * @author Sean A. Irvine
+ */
+public class A076429 extends A000040 {
+
+  @Override
+  public Z next() {
+    final Z p = super.next();
+    final Z q = mPrime.nextPrime(p);
+    return p.subtract(1).multiply(q.subtract(1)).multiply(q.multiply(p).multiply2().subtract(p).subtract(q).subtract(1)).divide(12);
+  }
+}

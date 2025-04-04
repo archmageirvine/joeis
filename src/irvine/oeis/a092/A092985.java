@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A092985 a(n) is the product of first n terms of an arithmetic progression with the first term 1 and common difference n.
+ * A092985 a(n) is the product of the first n terms of an arithmetic progression with the first term 1 and common difference n.
  * a(n)=sum(k=0,n,(-1)^(n-k)*stirl(n,k)*n^(n-k))
  * @author Georg Fischer
  */

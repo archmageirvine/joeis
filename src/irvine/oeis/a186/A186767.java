@@ -4,7 +4,7 @@ package irvine.oeis.a186;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A186767 Number of permutations of {1,2,...,n} having no nonincreasing odd cycles. A cycle (b(1), b(2), ...) is said to be increasing if, when written with its smallest element in the first position, it satisfies b(1)&lt;b(2)&lt;b(3)&lt;... .  A cycle is said to be odd if i
+ * A186767 Number of permutations of {1,2,...,n} having no nonincreasing odd cycles. A cycle (b(1), b(2), ...) is said to be increasing if, when written with its smallest element in the first position, it satisfies b(1)&lt;b(2)&lt;b(3)&lt;... .  A cycle is said to be odd if it has an odd number of entries.
  * exp(sinh(x))/sqrt(1-x^2)
  * @author Georg Fischer
  */

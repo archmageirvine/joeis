@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A072022 Smallest x such that the number of nonprimes (i.e., 1 and composites) in the reduced residue set (RSS(x)) of x equals n, or 0 if there are no such x.
+ * A076366 Number of numbers for which the count of nonprimes (i.e., 1 and composites) in their reduced residue set equals n.
  * @author Sean A. Irvine
  */
 public class A076366 extends Sequence1 implements Conjectural {

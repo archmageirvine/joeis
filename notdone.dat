@@ -2531,3 +2531,4 @@ A076330 Elliptic curves (see reference for precise definition).
 A076331 Elliptic curves (see reference for precise definition).
 A076335 Brier numbers: numbers that are both Riesel and Sierpiński [Sierpinski], or odd n such that for all k >= 1 the numbers n*2^k + 1 and n*2^k - 1 are composite.
 A076336 (Provable) Sierpiński numbers: odd numbers n such that for all k >= 1 the numbers n*2^k + 1 are composite.
+A076427 Number of solutions to Pillai's equation a^x - b^y = n, with a>0, b>0, x>1, y>1.

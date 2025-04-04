@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A072022.
+ * A076370 a(n) is the smallest number k such that primorial(k)^2 &gt; primorial(n).
  * @author Sean A. Irvine
  */
 public class A076370 extends Sequence0 {

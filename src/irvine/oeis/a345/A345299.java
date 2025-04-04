@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A345299 a(n) = Sum_{p|n} p^pi(p).
+ * A345299 a(n) = Sum_{p|n, p prime} p^pi(p).
  * @author Georg Fischer
  */
 public class A345299 extends LambdaSequence {

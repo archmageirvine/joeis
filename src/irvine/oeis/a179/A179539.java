@@ -4,7 +4,7 @@ package irvine.oeis.a179;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A179539 a(0)=1, a(1)=0, a(n)=2n(a(n-1)+a(n-2)), n&gt;1.
+ * A179539 a(0) = 1, a(1) = 0, a(n) = 2*n*(a(n-1) + a(n-2)), n &gt; 1.
  * a(0)=1, a(1)=0, a(n)=2n(a(n-1)+a(n-2)), n>1.
  * @author Georg Fischer
  */

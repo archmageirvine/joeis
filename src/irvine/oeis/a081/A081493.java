@@ -5,7 +5,7 @@ import irvine.oeis.a162.A162609;
 import irvine.oeis.triangle.TruncatedTriangle;
 
 /**
- * A081493 Triangle read by rows in which the n-th row begins with n and contains n terms of an Arithmetic progression with a common difference of (n-1).
+ * A081493 Triangle T(n,k) read by rows in which the n-th row begins with T(n,1) = n and contains n terms of an arithmetic progression with a common difference of (n-1).
  * @author Georg Fischer
  */
 public class A081493 extends TruncatedTriangle {

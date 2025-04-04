@@ -4,7 +4,7 @@ package irvine.oeis.a184;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A184362 G.f.: eta(x) + x*eta&apos;(x).
+ * A184362 G.f.: eta(x) + x*eta'(x).
  * eta(x)+x*eta'(x)
  * @author Georg Fischer
  */

@@ -4,7 +4,7 @@ package irvine.oeis.a274;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A274984 Decimal expansion of Cp(5), the molar specific heat of an pentaatomic ideal gas at constant pressure, in J mol^-1 K^-1.
+ * A274984 Outdated duplicate of A272005.
  * @author Georg Fischer
  */
 public class A274984 extends NoncomputableSequence {

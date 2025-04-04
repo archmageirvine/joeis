@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A209300 (n+1)^((n+1)!) mod (n!)^n.
+ * A209300 a(n) = (n+1)^((n+1)!) mod (n!)^n.
  * @author Georg Fischer
  */
 public class A209300 extends LambdaSequence {

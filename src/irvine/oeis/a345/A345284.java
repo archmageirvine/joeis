@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A345284 a(n) = Sum_{p|n} (p #).
+ * A345284 a(n) = Sum_{p|n, p prime} (p #).
  * @author Georg Fischer
  */
 public class A345284 extends LambdaSequence {

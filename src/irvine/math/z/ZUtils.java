@@ -11,6 +11,7 @@ import java.util.function.Function;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
+import irvine.math.function.Function1;
 import irvine.math.function.Functions;
 import irvine.util.array.DynamicArray;
 import irvine.util.array.DynamicIntArray;
@@ -477,24 +478,37 @@ public final class ZUtils {
     return true;
   }
 
+  private static List<Z> baseFunction(final Function1 fn, final Z n) {
+    int b = 1;
+    while (fn.z(b).compareTo(n) <= 0) {
+      ++b;
+    }
+    final List<Z> res = new ArrayList<>();
+    Z m = n;
+    do {
+      final Z[] qr = m.divideAndRemainder(fn.z(--b));
+      res.add(qr[0]);
+      m = qr[1];
+    } while (b > 1);
+    return res;
+  }
+
   /**
    * Convert a number into a list of digits in factorial base.
    * @param n number to convert
    * @return factorial base digits
    */
   public static List<Z> factorialBaseList(final Z n) {
-    int b = 1;
-    while (Functions.FACTORIAL.z(b).compareTo(n) <= 0) {
-      ++b;
-    }
-    final List<Z> res = new ArrayList<>();
-    Z m = n;
-    do {
-      final Z[] qr = m.divideAndRemainder(Functions.FACTORIAL.z(--b));
-      res.add(qr[0]);
-      m = qr[1];
-    } while (b > 1);
-    return res;
+    return baseFunction(Functions.FACTORIAL, n);
+  }
+
+  /**
+   * Convert a number into a list of digits in superfactorial base.
+   * @param n number to convert
+   * @return superfactorial base digits
+   */
+  public static List<Z> superfactorialBaseList(final Z n) {
+    return baseFunction(Functions.SUPERFACTORIAL, n);
   }
 
   /**

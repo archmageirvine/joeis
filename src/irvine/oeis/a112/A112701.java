@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 
 import irvine.oeis.recur.HolonomicRecurrence;
 /**
- * A112701 Partial sum of Catalan numbers A000108 multiplied by powers of 7.
+ * A112701 Partial sum of Catalan numbers (A000108) multiplied by powers of 7.
  * (28*k+42)*a(k)+(-29*k-45)*a(k+1)+(k+3)*a(k+2)
  * @author Georg Fischer
  */

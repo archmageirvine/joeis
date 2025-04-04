@@ -4,7 +4,7 @@ package irvine.oeis.a272;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A272004 Decimal expansion of Cp(3), the molar specific heat of an triatomic ideal gas at constant pressure, in J mol^-1 K^-1.
+ * A272004 Decimal expansion of the molar specific heat of an ideal gas consisting of molecules with 7 degrees of freedom at constant pressure, in J mol^-1 K^-1.
  * @author Georg Fischer
  */
 public class A272004 extends NoncomputableSequence {

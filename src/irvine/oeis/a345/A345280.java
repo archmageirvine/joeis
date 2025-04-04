@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A345280 a(n) = Sum_{p|n} nextprime(p), where nextprime(n) is the smallest prime &gt; n.
+ * A345280 a(n) = Sum_{p|n, p prime} nextprime(p), where nextprime(n) is the smallest prime &gt; n.
  * @author Georg Fischer
  */
 public class A345280 extends LambdaSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A180086 Sum of previous terms divided by their distance from n
+ * A180086 Sum of n and floor of each previous term divided by its distance from n.
  * @author Georg Fischer
  */
 public class A180086 extends MultiTransformSequence {

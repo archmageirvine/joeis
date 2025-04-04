@@ -4,7 +4,7 @@ package irvine.oeis.a186;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A186770 Number of permutations of {1,2,...,n} having no nonincreasing even cycles. A cycle (b(1), b(2), ...) is said to be increasing if, when written with its smallest element in the first position, it satisfies b(1)&lt;b(2)&lt;b(3)&lt;... .  A cycle is said to be even if
+ * A186770 Number of permutations of {1,2,...,n} having no nonincreasing even cycles. A cycle (b(1), b(2), ...) is said to be increasing if, when written with its smallest element in the first position, it satisfies b(1)&lt;b(2)&lt;b(3)&lt;... .  A cycle is said to be even if it has an even number of entries.
  * exp(coshx-1)*sqrt((1+x)/(1-x))
  * @author Georg Fischer
  */

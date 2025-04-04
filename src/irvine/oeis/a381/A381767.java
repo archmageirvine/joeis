@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072022.
+ * A381767 a(n) = ceiling(n^(n/(n-1))) with a(1)=1.
  * @author Sean A. Irvine
  */
 public class A381767 extends Sequence1 {

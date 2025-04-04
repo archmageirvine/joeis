@@ -4,7 +4,7 @@ package irvine.oeis.a184;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A184365 G.f.: eta(x) - x*eta&apos;(x), where eta(x) is Dedekind&apos;s eta(q) function without the q^(1/24) factor.
+ * A184365 G.f.: eta(x) - x*eta'(x), where eta(x) is Dedekind's eta(q) function without the q^(1/24) factor.
  * @author Georg Fischer
  */
 public class A184365 extends PolynomialFieldSequence {

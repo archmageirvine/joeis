@@ -6,7 +6,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A076323.
+ * A381765 Number of connected simple graphs on n unlabeled vertices whose degree sequence is consecutive.
  * @author Sean A. Irvine
  */
 public class A381765 extends ParallelGenerateGraphsSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A191468 8^n - 5^n.
+ * A191468 a(n) = 8^n - 5^n.
  * @author Sean A. Irvine
  */
 public class A191468 extends LinearRecurrence {

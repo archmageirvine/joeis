@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A057762 Numbers n such that 5 is a square mod n.
+ * A057762 Numbers k such that 5 is a square mod k.
  * @author Sean A. Irvine
  */
 public class A057762 extends Sequence1 {

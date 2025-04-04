@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002956;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A181887 a(0) = 0, and for n &gt; 0, a(n) = A002956(n) - A000041(n)
+ * A181887 a(0) = 0, and for n &gt; 0, a(n) = A002956(n) - A000041(n).
  * @author Georg Fischer
  */
 public class A181887 extends MultiTransformSequence {

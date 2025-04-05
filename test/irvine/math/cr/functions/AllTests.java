@@ -34,12 +34,14 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(JacobiScTest.class);
     suite.addTestSuite(JacobiSdTest.class);
     suite.addTestSuite(JacobiSnTest.class);
+    suite.addTestSuite(LowerIncompleteGammaTest.class);
     suite.addTestSuite(NevilleThetaCTest.class);
     suite.addTestSuite(NevilleThetaDTest.class);
     suite.addTestSuite(NevilleThetaNTest.class);
     suite.addTestSuite(NevilleThetaSTest.class);
     suite.addTestSuite(PolylogarithmTest.class);
     suite.addTestSuite(SineIntegralTest.class);
+    suite.addTestSuite(UpperIncompleteGammaTest.class);
     return suite;
   }
 }

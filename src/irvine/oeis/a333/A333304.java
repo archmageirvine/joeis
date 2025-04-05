@@ -3,6 +3,7 @@ package irvine.oeis.a333;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
+import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
@@ -16,6 +17,6 @@ public class A333304 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A333304() {
-    super(0, REALS.acosh(CR.TWO).divide(CR.SIX).pow(CR.ONE.divide(CR.FOUR)).multiply(CR.THREE.divide(CR.FOUR).gamma()).divide(CR.TWO.multiply(CR.PI.sqrt())));
+    super(0, REALS.acosh(CR.TWO).divide(CR.SIX).pow(CR.ONE.divide(CR.FOUR)).multiply(CrFunctions.GAMMA.cr(CR.THREE.divide(CR.FOUR))).divide(CR.TWO.multiply(CR.PI.sqrt())));
   }
 }

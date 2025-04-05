@@ -1,6 +1,7 @@
 package irvine.oeis.a057;
 
 import irvine.math.cr.CR;
+import irvine.math.cr.functions.CrFunctions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -16,6 +17,6 @@ public class A057649 extends Sequence0 {
   @Override
   public Z next() {
     final Q q = new Q(++mN, 2);
-    return CR.valueOf(q.add(1)).gamma().divide(CR.PI.pow(q)).multiply(Z.ONE.shiftLeft(mN)).round();
+    return CrFunctions.GAMMA.cr(CR.valueOf(q.add(1))).divide(CR.PI.pow(q)).multiply(Z.ONE.shiftLeft(mN)).round();
   }
 }

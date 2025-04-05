@@ -2,6 +2,7 @@ package irvine.oeis.a074;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCrFunction;
+import irvine.math.cr.functions.CrFunctions;
 import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
@@ -20,7 +21,7 @@ public class A074457 extends DecimalExpansionSequence {
           @Override
           public CR execute(final CR x) {
             final CR halfX = x.divide(2);
-            return CR.PI.pow(halfX).multiply(2).divide(halfX.gamma());
+            return CR.PI.pow(halfX).multiply(2).divide(CrFunctions.GAMMA.cr(halfX));
           }
         };
 

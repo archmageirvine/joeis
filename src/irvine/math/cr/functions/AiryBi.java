@@ -13,8 +13,8 @@ class AiryBi extends CrFunction1 {
   private static final CR[] TWO_THIRDS = {CR.valueOf(new Q(2, 3))};
   private static final CR[] FOUR_THIRDS = {CR.valueOf(new Q(4, 3))};
   private static final CR C1 = CR.ONE_THIRD.pow(new Q(1, 6));
-  private static final CR C2 = C1.divide(TWO_THIRDS[0].gamma());
-  private static final CR C3 = CR.THREE.pow(new Q(1, 6)).divide(CR.ONE_THIRD.gamma());
+  private static final CR C2 = C1.divide(CrFunctions.GAMMA.cr(TWO_THIRDS[0]));
+  private static final CR C3 = CR.THREE.pow(new Q(1, 6)).divide(CrFunctions.GAMMA.cr(CR.ONE_THIRD));
   private static final CR[] EMPTY = new CR[0];
 
   @Override

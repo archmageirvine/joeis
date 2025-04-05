@@ -9,6 +9,8 @@ public final class CrFunctions {
   private CrFunctions() {
   }
 
+  /** The gamma function. */
+  public static final CrFunction1 GAMMA = new Gamma();
   /** The exponential integral. */
   public static final CrFunction1 EI = new ExponentialIntegral();
   /** The logarithmic integral. */

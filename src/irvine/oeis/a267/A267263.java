@@ -1,5 +1,5 @@
 package irvine.oeis.a267;
-// manually 2025-04-01
+// manually 2025-04-04
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;

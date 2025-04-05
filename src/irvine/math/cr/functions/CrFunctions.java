@@ -11,6 +11,8 @@ public final class CrFunctions {
 
   /** The gamma function. */
   public static final CrFunction1 GAMMA = new Gamma();
+  /** The log gamma function. */
+  public static final CrFunction1 LN_GAMMA = new LnGamma();
   /** The exponential integral. */
   public static final CrFunction1 EI = new ExponentialIntegral();
   /** The logarithmic integral. */

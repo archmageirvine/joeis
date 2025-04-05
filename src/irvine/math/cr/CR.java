@@ -78,6 +78,7 @@
 package irvine.math.cr;
 
 import irvine.math.api.IsInteger;
+import irvine.math.cr.functions.CrFunctions;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.r.Constants;
@@ -1225,7 +1226,7 @@ public abstract class CR extends Number implements Comparable<CR>, IsInteger<CR>
    * @return log gamma
    */
   public CR lnGamma() {
-    return new PrescaledLnGamma(this);
+    return CrFunctions.LN_GAMMA.cr(this);
   }
 
   /**

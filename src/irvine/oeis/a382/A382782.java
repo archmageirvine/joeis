@@ -24,29 +24,27 @@ public class A382782 extends Sequence1 {
   private final BernoulliSequence mB = new BernoulliSequence(0);
 
   private Q c(final int n, final int j) {
+    // Coefficient of 1/(2k +/- 1)^j in the partial fraction decomposition of 1/((2k-1)^n*(2k+1)^n))
     return new Q(Binomial.binomial(2L * n - j - 1, n - 1), Z.ONE.shiftLeft(2L * n - j));
   }
 
   protected void step() {
+    // Computes next row of the triangle
     ++mN;
     mM = 0;
     mRow = RING.zero();
     for (int j = 1; j <= mN; ++j) {
       final Q c = c(mN, j);
-      if ((j & 1) == 1) {
-        // 1/(2k-1)^j - 1/(2k+1)^j
-        mRow = RING.add(mRow, RING.monomial(c.multiply(Z.NEG_ONE.pow(mN + 1)), 0));
-      } else {
-        assert (j & 1) == 0;
+      mRow = RING.add(mRow, RING.monomial(c.multiply(Z.NEG_ONE.pow(mN + 1)), 0)); // take the k=1 term from the 1/(2k-1)^j sum
+      if ((j & 1) == 0) {
         // sum(1/(2k-1)^j,k=1..infinity) + sum(1/(2k+1)^j,k=1..infinity)
         // = 1 + 2 * sum(1/(2k+1)^j,k=1..infinity)
-        mRow = RING.add(mRow, RING.monomial(c.multiply(Z.NEG_ONE.pow(mN + 1)), 0));
         final Q b = mB.get(j).abs().multiply(Z.ONE.shiftLeft(j).subtract(1)).divide(Functions.FACTORIAL.z(j).multiply2()).multiply(Z.NEG_ONE.pow(mN)).multiply(2).multiply(c);
         final int i = j / 2; // pi^j -> x^i
         mRow = RING.add(mRow, RING.monomial(b, i));
       }
     }
-    // Pre-compute lcm of denominators (used to make coefficient integer)
+    // Precompute lcm of denominators (used to make "reduced" integer coefficient)
     mLcm = Z.ONE;
     for (final Q t : mRow) {
       mLcm = mLcm.lcm(t.den());

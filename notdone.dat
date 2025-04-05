@@ -2532,3 +2532,5 @@ A076331 Elliptic curves (see reference for precise definition).
 A076335 Brier numbers: numbers that are both Riesel and Sierpiński [Sierpinski], or odd n such that for all k >= 1 the numbers n*2^k + 1 and n*2^k - 1 are composite.
 A076336 (Provable) Sierpiński numbers: odd numbers n such that for all k >= 1 the numbers n*2^k + 1 are composite.
 A076427 Number of solutions to Pillai's equation a^x - b^y = n, with a>0, b>0, x>1, y>1.
+A076437 Square board sizes for which the lights out problem has a unique solution (counting solutions differing only by rotation and reflection as equivalent).
+A076438 Numbers k which appear to have a unique representation as the difference of two perfect powers; that is, there is only one solution to Pillai's equation a^x - b^y = k, with a > 0, b > 0, x > 1, y > 1.

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A076430 Sum of squares of numbers that cannot be written as t*p_n + u*p_{n+1} for nonnegative integers t,u, where p_n is the n-th prime.
+ * A076430 Sum of squares of numbers that cannot be written as t*p(n) + u*p(n+1) for nonnegative integers t,u, where p(n) is the n-th prime.
  * @author Sean A. Irvine
  */
 public class A076430 extends A000040 {

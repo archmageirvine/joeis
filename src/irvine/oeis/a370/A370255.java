@@ -5,7 +5,7 @@ import irvine.oeis.a004.A004151;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A370255 (n*10)^(n*10) omitting its rightmost trailing 0&apos;s.
+ * A370255 (n*10)^(n*10) omitting its rightmost trailing 0's.
  * @author Georg Fischer
  */
 public class A370255 extends MultiTransformSequence {

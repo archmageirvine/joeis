@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A382782.
+ * A382782 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A382782 extends Sequence1 {

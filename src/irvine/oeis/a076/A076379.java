@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072022.
+ * A076379 Numbers k such that k!-x!+1 is never prime for x&lt;k.
  * @author Sean A. Irvine
  */
 public class A076379 extends Sequence1 {

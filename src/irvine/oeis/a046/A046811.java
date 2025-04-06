@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RecordPositionSequence;
 
 /**
- * A046811 Numbers (with nonzero digits) where A046810 increases.
+ * A046811 Numbers (with nonzero digits only) where A046810 increases.
  * @author Sean A. Irvine
  */
 public class A046811 extends RecordPositionSequence {

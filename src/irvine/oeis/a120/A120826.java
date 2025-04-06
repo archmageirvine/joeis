@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A120826 Primes with n consecutive digits ascending beginning with the digit eight.
+ * A120826 a(n) consecutive digits ascending beginning with the digit 8 give a prime.
  *
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A143779 Numbers of the form k=k^2-n^2.
+ * A143779 a(n+1) = a(n)^2 - n^2, a(1) = 0.
  * @author Georg Fischer
  */
 public class A143779 extends MultiTransformSequence {

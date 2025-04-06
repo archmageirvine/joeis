@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A382482 allocated for Sameer Khan.
+ * A382482 a(1) = 1. Let a(n) be the most recently defined term. At each step, check for an undefined term with index &lt; n. If such a term exists, then where i is the earliest such index, set a(i) = a(n) - (n - i). If no such term exists, then where i is the first undefined index &gt;= n + a(n), set a(i) = the smallest integer not yet used.
  * @author Sean A. Irvine
  */
 public class A382482 extends Sequence1 {

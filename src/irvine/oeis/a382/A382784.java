@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A382782.
+ * A382784 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A382784 extends A382782 {

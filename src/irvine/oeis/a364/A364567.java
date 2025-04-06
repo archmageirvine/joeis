@@ -6,7 +6,7 @@ import irvine.oeis.a033.A033265;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A364567 a(n) = A297112(A005940(1+n)), where A297112 is the M√∂bius transform of A156552 [the inverse of map n -&gt; A005940(1+n)].
+ * A364567 a(n) = A297112(A005940(1+n)), where A297112 is the M\u00f6bius transform of A156552 [the inverse of map n -&gt; A005940(1+n)].
  * @author Georg Fischer
  */
 public class A364567 extends MultiTransformSequence {

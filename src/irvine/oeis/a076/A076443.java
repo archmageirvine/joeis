@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a075.A075786;
 
 /**
- * A075786 Palindromic perfect powers.
+ * A076443 Even-digit palindromic perfect powers.
  * @author Sean A. Irvine
  */
 public class A076443 extends FilterSequence {

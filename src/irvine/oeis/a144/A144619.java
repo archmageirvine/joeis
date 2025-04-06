@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A144619 a(n) = 19n + 8.
+ * A144619 a(n) = 19*n + 8.
  * @author Sean A. Irvine
  */
 public class A144619 extends LinearRecurrence {

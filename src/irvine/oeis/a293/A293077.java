@@ -4,7 +4,7 @@ package irvine.oeis.a293;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A293077 Number of letters (0&apos;s and 1&apos;s) in the n-th iterate of the final-letter-removed mapping defined at A289035.
+ * A293077 Number of letters (0's and 1's) in the n-th iterate of the final-letter-removed mapping defined at A289035.
  * @author Georg Fischer
  */
 public class A293077 extends MultiTransformSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a005.A005214;
 
 /**
- * A193711 Partial sums of union of squares and triangular numbers.
+ * A193711 Partial sums of the union of squares and triangular numbers.
  * @author Sean A. Irvine
  */
 public class A193711 extends PartialSumSequence {

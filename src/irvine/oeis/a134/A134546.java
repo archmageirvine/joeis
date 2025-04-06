@@ -6,7 +6,7 @@ import irvine.oeis.a051.A051731;
 import irvine.oeis.triangle.Product;
 
 /**
- * A134546 Lower triangular matrix multiplication: A004736 * A051731.
+ * A134546 Triangle read by rows: T(n, k) = Sum_{j=0..n} floor(j / k).
  * @author Georg Fischer
  */
 public class A134546 extends Product {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072123 Remainder when Fibonacci(n) is divided by prime(n).
+ * A093614 Numbers n such that F_n(x) and F_n(1-x) have a common factor mod 2, with F_n(x) = U(n-1,x/2) the monic Chebyshev polynomials of second kind.
  * @author Sean A. Irvine
  */
 public class A093614 extends Sequence1 {

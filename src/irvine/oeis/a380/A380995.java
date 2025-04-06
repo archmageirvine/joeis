@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A380995.
+ * A380995 Integers k that are the product of 3 distinct primes, the smallest of which is larger than the 4th root of k: k = p*q*r, where p, q, r are primes and k^(1/4) &lt; p &lt; q &lt; r.
  * @author Sean A. Irvine
  */
 public class A380995 extends Sequence1 {

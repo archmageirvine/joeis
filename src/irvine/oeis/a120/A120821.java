@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A120821 Primes with n consecutive ascending digits beginning with the digit three.
+ * A120821 a(n) consecutive digits ascending beginning with the digit 3 give a prime.
  *
  * @author Georg Fischer
  */

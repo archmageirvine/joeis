@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074751 Numbers n such that the sum of the anti-divisors of n (excluding 1) = sum of proper divisors (or aliquot parts) of n.
+ * A074751 Numbers k such that the sum of the anti-divisors of k = sum of proper divisors (or aliquot parts) of k.
  * @author Sean A. Irvine
  */
 public class A074751 extends Sequence1 {

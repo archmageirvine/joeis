@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A005738 Number of fanout-free Boolean functions of n variables.
+ * A005738 Number of degenerate fanout-free Boolean functions of n variables using And, Or, Xor, and Not gates.
  * @author Sean A. Irvine
  */
 public class A005738 extends AbstractSequence {

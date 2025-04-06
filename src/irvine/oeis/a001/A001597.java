@@ -13,18 +13,28 @@ import irvine.oeis.Sequence1;
 public class A001597 extends Sequence1 {
 
   private final TreeMap<Z, Z> mPriority = new TreeMap<>();
+  private final long mMinPower;
   private Z mBasis = Z.THREE;
+
+  protected A001597(final long minPower) {
+    mMinPower = minPower;
+  }
+
+  /** Construct the sequence. */
+  public A001597() {
+    this(2);
+  }
 
   @Override
   public Z next() {
     if (mPriority.isEmpty()) {
-      mPriority.put(Z.FOUR, Z.TWO);
+      mPriority.put(Z.TWO.pow(mMinPower), Z.TWO);
       return Z.ONE;
     }
     while (mBasis.square().compareTo(mPriority.firstKey()) <= 0) {
-      final Z key = mBasis.square();
+      final Z key = mBasis.pow(mMinPower);
       if (!mPriority.containsKey(key)) {
-        mPriority.put(mBasis.square(), mBasis);
+        mPriority.put(key, mBasis);
       }
       mBasis = mBasis.add(1);
     }

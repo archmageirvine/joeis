@@ -3,7 +3,7 @@ package irvine.oeis.a250;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A250024 40n - 21.
+ * A250024 a(n) = 40*n - 21.
  * @author Sean A. Irvine
  */
 public class A250024 extends LinearRecurrence {

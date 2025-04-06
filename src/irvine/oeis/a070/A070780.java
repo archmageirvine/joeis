@@ -5,7 +5,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A070780 Binomial((n+1)^2,n).
+ * A070780 a(n) = binomial((n+1)^2,n).
  * @author Georg Fischer
  */
 public class A070780 extends LambdaSequence {

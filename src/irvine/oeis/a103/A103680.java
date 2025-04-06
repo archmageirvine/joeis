@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A103680 Numbers m such that in binary representation m! contains 7!.
+ * A103680 Numbers m such that the binary representation of m! contains 7!.
  * @author Georg Fischer
  */
 public class A103680 extends FilterNumberSequence {

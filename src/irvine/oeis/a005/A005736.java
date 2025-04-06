@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
 /**
- * A005736 Number of degenerate fanout-free Boolean functions of n variables.
+ * A005736 Number of degenerate fanout-free Boolean functions of n variables using And, Or and Not gates.
  * @author Sean A. Irvine
  */
 public class A005736 extends A005640 {

@@ -45,6 +45,18 @@ public final class BumperFactory {
   }
 
   /**
+   * Weakly increasing numbers bumper.
+   * Useful to step through integers with weakly increasing digits, but without leading 0's
+   * For example, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 111, 112, ..., 200, 202, ...
+   * That is, has special treatment for 0.
+   * @param max maximum element value
+   * @return bumper
+   */
+  public static Bumper weaklyIncreasingNumbers(final int max) {
+    return new WeaklyIncreasingNumberBumper(max);
+  }
+
+  /**
    * Weakly decreasing bumper.
    * <code>a0 &gt;= a1 &gt;= a2 &gt; = ...</code>
    * For example, with three elements, minimum of 0:

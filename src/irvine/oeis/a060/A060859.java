@@ -1,8 +1,8 @@
 package irvine.oeis.a060;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.oeis.a001.A001694;
 
 /**
  * A060859 Powerful numbers of the form k^2 - 1.
@@ -16,7 +16,7 @@ public class A060859 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z n2 = Z.valueOf(++mN).square().subtract(1);
-      if (A001694.isPowerful(n2)) {
+      if (Predicates.POWERFUL.is(n2)) {
         return n2;
       }
     }

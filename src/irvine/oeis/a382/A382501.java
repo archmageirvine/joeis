@@ -14,7 +14,6 @@ import irvine.oeis.DirectSequence;
  */
 public class A382501 extends CachedSequence {
 
-
   /** Construct the sequence. */
   public A382501() {
     super(1, Integer.class, new BiFunction<>() {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
  * The lower incomplete gamma function.
  * @author Sean A. Irvine
  */
-class LowerIncompleteGammaFunction extends CrFunction2Cr {
+class LowerIncompleteGamma extends CrFunction2Cr {
 
   private static final int EXTRA_PRECISION = 3;
 

@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
  * The upper incomplete gamma function.
  * @author Sean A. Irvine
  */
-class UpperIncompleteGammaFunction extends CrFunction2Cr {
+class UpperIncompleteGamma extends CrFunction2Cr {
 
   @Override
   public CR cr(final CR v, final CR z) {

@@ -14,9 +14,11 @@ public final class CrFunctions {
   /** The log gamma function. */
   public static final CrFunction1 LN_GAMMA = new LnGamma();
   /** The lower incomplete gamma function. */
-  public static final CrFunction2Cr LOWER_INCOMPLETE_GAMMA = new LowerIncompleteGammaFunction();
+  public static final CrFunction2Cr LOWER_INCOMPLETE_GAMMA = new LowerIncompleteGamma();
   /** The upper incomplete gamma function. */
-  public static final CrFunction2Cr UPPER_INCOMPLETE_GAMMA = new UpperIncompleteGammaFunction();
+  public static final CrFunction2Cr UPPER_INCOMPLETE_GAMMA = new UpperIncompleteGamma();
+  /** The digamma (psi) function. */
+  public static final CrFunction1 DIGAMMA = new Digamma();
   /** The exponential integral. */
   public static final CrFunction1 EI = new ExponentialIntegral();
   /** The logarithmic integral. */

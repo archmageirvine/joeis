@@ -16,6 +16,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(BesselK0Test.class);
     suite.addTestSuite(BesselKTest.class);
     suite.addTestSuite(CosineIntegralTest.class);
+    suite.addTestSuite(DigammaTest.class);
     suite.addTestSuite(EllipticETest.class);
     suite.addTestSuite(EllipticKTest.class);
     suite.addTestSuite(ErfTest.class);

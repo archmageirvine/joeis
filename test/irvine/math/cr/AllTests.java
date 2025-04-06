@@ -40,7 +40,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(PrescaledCosTest.class);
     suite.addTestSuite(PrescaledExpTest.class);
     suite.addTestSuite(PrescaledLnTest.class);
-    suite.addTestSuite(PsiTest.class);
     suite.addTestSuite(SelectTest.class);
     suite.addTestSuite(ShiftTest.class);
     suite.addTestSuite(SinTest.class);

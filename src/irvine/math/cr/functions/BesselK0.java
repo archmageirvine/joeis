@@ -1,7 +1,6 @@
 package irvine.math.cr.functions;
 
 import irvine.math.cr.CR;
-import irvine.math.cr.Psi;
 import irvine.math.z.Z;
 
 /**
@@ -20,12 +19,12 @@ class BesselK0 extends CrFunction1 {
       protected Z approximate(final int precision) {
         final int p = precision - EXTRA_PRECISION;
         final Z z2approx = z.multiply(z).divide(CR.FOUR).getApprox(p);
-        Z sum = Psi.psi(1).getApprox(p); // k = 0
+        Z sum = CrFunctions.DIGAMMA.cr(1).getApprox(p); // k = 0
         Z term = scale(Z.ONE, -p);
         int k = 0;
         while (!term.isZero()) {
           term = scale(term.multiply(z2approx), p).divide(++k * (long) k);
-          final Z t = scale(term.multiply(Psi.psi(k + 1).getApprox(p)), p);
+          final Z t = scale(term.multiply(CrFunctions.DIGAMMA.cr(k + 1).getApprox(p)), p);
           sum = sum.add(t);
         }
         return scale(sum, -EXTRA_PRECISION);

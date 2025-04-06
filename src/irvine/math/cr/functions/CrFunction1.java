@@ -25,4 +25,13 @@ public abstract class CrFunction1 {
     return cr(CR.valueOf(z));
   }
 
+  /**
+   * Evaluate the function at an integer value.
+   * @param z parameter
+   * @return function value
+   */
+  public CR cr(final long z) {
+    return cr(Z.valueOf(z));
+  }
+
 }

@@ -2,7 +2,6 @@ package irvine.math.cr.functions;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.math.cr.Psi;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
@@ -34,12 +33,12 @@ class BesselK extends CrFunction2 {
       protected Z approximate(final int precision) {
         final int p = precision - EXTRA_PRECISION;
         final Z z2approx = z2f.getApprox(p);
-        Z sum = Psi.psi(1).add(Psi.psi(v + 1)).getApprox(p).divide(Functions.FACTORIAL.z(v)); // k = 0
+        Z sum = CrFunctions.DIGAMMA.cr(1).add(CrFunctions.DIGAMMA.cr(v + 1)).getApprox(p).divide(Functions.FACTORIAL.z(v)); // k = 0
         Z term = scale(Z.ONE, -p).divide(Functions.FACTORIAL.z(v));
         int k = 0;
         while (!term.isZero()) {
           term = scale(term.multiply(z2approx), p).divide(++k).divide(v + k);
-          final Z t = scale(term.multiply(Psi.psi(k + 1).add(Psi.psi(v + k + 1)).getApprox(p)), p);
+          final Z t = scale(term.multiply(CrFunctions.DIGAMMA.cr(k + 1).add(CrFunctions.DIGAMMA.cr(v + k + 1)).getApprox(p)), p);
           sum = sum.add(t);
         }
         return scale(sum, -EXTRA_PRECISION);

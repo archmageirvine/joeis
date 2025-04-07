@@ -17,6 +17,8 @@ public final class CrFunctions {
   public static final CrFunction2Cr LOWER_INCOMPLETE_GAMMA = new LowerIncompleteGamma();
   /** The upper incomplete gamma function. */
   public static final CrFunction2Cr UPPER_INCOMPLETE_GAMMA = new UpperIncompleteGamma();
+  /** The beta function. */
+  public static final CrFunction2Cr BETA = new Beta();
   /** The digamma (psi) function. */
   public static final CrFunction1 DIGAMMA = new Digamma();
   /** The exponential integral. */

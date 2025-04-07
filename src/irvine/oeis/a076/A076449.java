@@ -33,7 +33,7 @@ public class A076449 extends Sequence0 {
         }
         final Permutation perm = Permutation.permuter(Z.valueOf(t));
         int[] p;
-        Set<Z> primes = new HashSet<>();
+        final Set<Z> primes = new HashSet<>();
         while ((p = perm.next()) != null) {
           if (p[0] != 0) {
             Z u = Permutation.permToZ(p);

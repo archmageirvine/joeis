@@ -11,7 +11,7 @@ import junit.framework.TestCase;
 public class UpperIncompleteGammaTest extends TestCase {
 
   public void test() {
-    final CR ONE_TENTH = CR.valueOf(new Q(1, 10));
-    assertEquals("1.64058766280188721051", CrFunctions.UPPER_INCOMPLETE_GAMMA.cr(ONE_TENTH, ONE_TENTH).toString(20));
+    final CR oneTenth = CR.valueOf(new Q(1, 10));
+    assertEquals("1.64058766280188721051", CrFunctions.UPPER_INCOMPLETE_GAMMA.cr(oneTenth, oneTenth).toString(20));
   }
 }

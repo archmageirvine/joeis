@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A076474.
+ * A076477 Primes in the numerator of partial sums of A076476.
  * @author Sean A. Irvine
  */
 public class A076477 extends Sequence2 {

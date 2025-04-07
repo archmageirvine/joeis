@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076474.
+ * A076474 Denominators of the slowest decreasing sequence of unit fractions whose partial sums have a prime numerator.
  * @author Sean A. Irvine
  */
 public class A076474 extends Sequence1 {

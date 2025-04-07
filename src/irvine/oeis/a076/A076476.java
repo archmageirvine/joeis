@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076474.
+ * A076476 Fractions a(n)/n are such that gcd(a(n),n)=1, a(n) &gt; 0 and a(n) is as small as possible so that the partial sums of the fractions have prime numerator. Let a(1)=1.
  * @author Sean A. Irvine
  */
 public class A076476 extends Sequence1 {

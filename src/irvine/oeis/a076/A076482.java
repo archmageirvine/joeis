@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076474.
+ * A076482 Triangle with T(n,k)=n!*(k-1)^k/k! where 1&lt;=k&lt;=n.
  * @author Sean A. Irvine
  */
 public class A076482 extends Sequence1 {

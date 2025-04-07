@@ -76,6 +76,7 @@ class Digamma extends CrFunction1 {
     }.subtract(CR.GAMMA).add(add);
   }
 
+  // Integer cases
   private static final MemoryFunction<Integer, CR> SINGLETON = new MemoryFunction<>() {
     private final ArrayList<Q> mH = new ArrayList<>();
     private final HarmonicSequence mHarmonicSequence = new HarmonicSequence();

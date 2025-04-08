@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A046025 Numbers n such that 6n+1, 12n+1 and 18n+1 are all primes.
+ * A046025 Numbers k such that 6*k+1, 12*k+1 and 18*k+1 are all primes.
  * @author Sean A. Irvine
  */
 public class A046025 extends Sequence1 {

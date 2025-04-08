@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A382782 allocated for Sean A. Irvine.
+ * A382782 Irregular triangle T(n,k) read by rows of the reduced coefficients of Pi^(2k) in the expansion of Sum_{k&gt;=1} (1 / (4k^2-1)^n).
  * @author Sean A. Irvine
  */
 public class A382782 extends Sequence1 {

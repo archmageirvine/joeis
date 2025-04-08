@@ -7,7 +7,7 @@ import irvine.oeis.a156.A156057;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A145425 Decimal expansion of Sum_{n&gt;=1} 1/(n*(36n^2-1)).
+ * A145425 Decimal expansion of Sum_{k&gt;=1} 1/(k*(36k^2-1)).
  * Formula:
  * @author Georg Fischer
  */

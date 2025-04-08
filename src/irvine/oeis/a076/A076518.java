@@ -1,21 +1,22 @@
-package irvine.oeis.a059;
+package irvine.oeis.a076;
 
 import irvine.math.function.Functions;
+import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A059795 Numbers k such that k^2 starts with the reverse of k.
+ * A076518 Numbers n such that Fibonacci(n) == sigma(n) (mod n).
  * @author Sean A. Irvine
  */
-public class A059795 extends Sequence1 {
+public class A076518 extends Sequence1 {
 
   private long mN = 0;
 
   @Override
   public Z next() {
     while (true) {
-      if (++mN % 10 != 0 && Z.valueOf(mN).square().toString().startsWith(String.valueOf(Functions.REVERSE.l(mN)))) {
+      if (Fibonacci.fibonacci(++mN, mN) == Functions.SIGMA1.z(mN).mod(mN)) {
         return Z.valueOf(mN);
       }
     }

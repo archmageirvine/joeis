@@ -9,7 +9,7 @@ import irvine.oeis.CachedSequence;
 import irvine.oeis.DirectSequence;
 
 /**
- * A382501 allocated for Neal Gersh Tolunsky.
+ * A382501 Lexicographically earliest infinite sequence of positive integers such that, for any given k, every subsequence {a(j), a(j+k), a(j+2k)} (j, k &gt;= 1) is unique.
  * @author Sean A. Irvine
  */
 public class A382501 extends CachedSequence {

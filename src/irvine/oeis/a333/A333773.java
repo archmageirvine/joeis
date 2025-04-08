@@ -7,7 +7,7 @@ import irvine.oeis.a160.A160384;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A333773 Replace 2&apos;s with (-1)&apos;s in ternary representation of n and sum nonzero terms with alternating signs.
+ * A333773 Replace 2's with (-1)'s in ternary representation of n and sum nonzero terms with alternating signs.
  * @author Georg Fischer
  */
 public class A333773 extends MultiTransformSequence {

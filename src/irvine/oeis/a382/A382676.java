@@ -7,7 +7,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A382676 a(n) = Sum_{k=0..n} (k!)^2 * binomial(k+2, 2) * Stirling2(n+1,k+1)^2.
+ * A382676 a(n) = Sum_{k=0..n} (k!)^2 * binomial(k+2,2) * Stirling2(n+1,k+1)^2.
  * @author Georg Fischer
  */
 public class A382676 extends LambdaSequence {

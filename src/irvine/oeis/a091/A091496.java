@@ -6,7 +6,7 @@ package irvine.oeis.a091;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A091496 a(n) = ((5n)!/(n!(2n)!))(gamma(1+n/2)/gamma(1+5n/2)).
+ * A091496 a(n) = ((5*n)!/(n!*(2*n)!))*(Gamma(1+n/2)/Gamma(1+5*n/2)).
  * @author Georg Fischer
  */
 public class A091496 extends HolonomicRecurrence {

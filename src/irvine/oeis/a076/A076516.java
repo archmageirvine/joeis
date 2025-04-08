@@ -1,4 +1,4 @@
-package irvine.oeis.a072;
+package irvine.oeis.a076;
 
 import irvine.factor.prime.Fast;
 import irvine.math.group.IntegersModMul;
@@ -7,19 +7,19 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072858 Primes p such that the period of the decimal expansion of 1/p is a square.
+ * A076516 Primes p such that (p-1) and the period length of 1/p are both squares.
  * @author Sean A. Irvine
  */
-public class A072858 extends Sequence1 {
+public class A076516 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
-  private Z mP = Z.ONE;
+  private Z mP = Z.TWO;
 
   @Override
   public Z next() {
     while (true) {
       mP = mPrime.nextPrime(mP);
-      if (Predicates.SQUARE.is(new IntegersModMul(mP).order(Z.TEN))) {
+      if (Predicates.SQUARE.is(mP.subtract(1)) && Predicates.SQUARE.is(new IntegersModMul(mP).order(Z.TEN))) {
         return mP;
       }
     }

@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A016627.
+ * A382846 Decimal expansion of 4 - Pi^2/4 - 2*log(2).
  * @author Sean A. Irvine
  */
 public class A382846 extends DecimalExpansionSequence {

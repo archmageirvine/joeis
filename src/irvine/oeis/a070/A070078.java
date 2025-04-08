@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A070078 If n is squarefree then Min{k | A070077(k) = n} else 0.
+ * A070078 If n is squarefree then a(n) = Min{k | A070077(k) = n} else 0.
  * @author Sean A. Irvine
  */
 public class A070078 extends Sequence1 {

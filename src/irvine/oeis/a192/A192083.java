@@ -6,7 +6,7 @@ import irvine.oeis.a056.A056798;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A192083 Arithmetic derivative of squares of prime powers: a(n)=A003415(A056798(n)).
+ * A192083 Arithmetic derivative of squares of prime powers: a(n) = A003415(A056798(n)).
  * @author Georg Fischer
  */
 public class A192083 extends SingleTransformSequence {

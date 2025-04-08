@@ -4,7 +4,7 @@ package irvine.oeis.a052;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A052768 a(n) = n*(n-1)*(n-2*(n-3) for n&gt;=5.
+ * A052768 a(n) = n*(n-1)*(n-2)*(n-3) for n&gt;=5.
  * @author Georg Fischer
  */
 public class A052768 extends GeneratingFunctionSequence {

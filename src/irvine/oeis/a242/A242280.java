@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A242280 a(n) = Sum_{k=0..n} (k!*StirlingS2(n,k))^3.
+ * A242280 a(n) = Sum_{k=0..n} (k! * Stirling2(n,k))^3.
  * a(n)=sum(k=0,n,(k!)^3*stirl2(n,k)^3)
  * @author Georg Fischer
  */

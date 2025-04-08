@@ -1,35 +1,15 @@
 package irvine.oeis.a076;
 
-import irvine.factor.prime.Fast;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.DeadSequence;
 
 /**
- * A076501.
+ * A076501 a(n) is the smallest (prime) integer such that the sequence {p_1, p_2, ..., p_n = a(n)} consists entirely of primes, where p_i = floor(a(n)^(i/n)).
  * @author Sean A. Irvine
  */
-public class A076501 extends Sequence1 {
+public class A076501 extends DeadSequence {
 
-  private final Fast mPrimes = new Fast();
-  private int mN = 0;
-
-  private boolean is(final Z m) {
-    for (int k = mN - 1; k > 0; --k) {
-      if (!m.pow(k).root(mN).isProbablePrime()) {
-        return false;
-      }
-    }
-    return true;
-  }
-
-  @Override
-  public Z next() {
-    ++mN;
-    Z m = mPrimes.nextPrime(Z.ONE.shiftLeft(mN).subtract(1));
-    //System.out.println("min=" + m);
-    while (!is(m)) {
-      m = mPrimes.nextPrime(m);
-    }
-    return m;
+  /** Construct the sequence. */
+  public A076501() {
+    super(1);
   }
 }

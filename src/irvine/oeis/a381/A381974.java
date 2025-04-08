@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076496.
+ * A381974 allocated for Clark Kimberling.
  * @author Sean A. Irvine
  */
 public class A381974 extends Sequence1 {

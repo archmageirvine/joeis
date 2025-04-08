@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A382784 allocated for Sean A. Irvine.
+ * A382784 Irregular triangle T(n,k) read by rows of the coefficients of Pi^(2k) in the expansion of Sum_{k&gt;=1} (1 / (4k^2-1)^n) with denominator 2^(2n)*(n-1)!.
  * @author Sean A. Irvine
  */
 public class A382784 extends A382782 {

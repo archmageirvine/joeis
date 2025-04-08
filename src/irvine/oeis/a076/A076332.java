@@ -7,7 +7,7 @@ import irvine.oeis.a003.A003557;
 import irvine.oeis.a007.A007947;
 
 /**
- * A076332 Rad(n)+n/rad(n), where rad(n) is the squarefree kernel of n = A007947(n).
+ * A076332 a(n) = rad(n) + n/rad(n), where rad(n) is the squarefree kernel of n = A007947(n).
  * @author Georg Fischer
  */
 public class A076332 extends AbstractSequence {

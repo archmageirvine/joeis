@@ -5,16 +5,16 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076566 Greatest prime divisor of 3n+3 (sum of three successive integers).
+ * A076568 Greatest prime divisor of 5n+10 (sum of five successive integers).
  * @author Sean A. Irvine
  */
-public class A076566 extends Sequence1 {
+public class A076568 extends Sequence1 {
 
-  private long mN = 3;
+  private long mN = 10;
 
   @Override
   public Z next() {
-    mN += 3;
+    mN += 5;
     return Functions.GPF.z(mN);
   }
 }

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A120822 Primes with n consecutive ascending digits beginning with the digit four.
+ * A120822 a(n) consecutive digits ascending beginning with the digit 4 give a prime.
  *
  * @author Georg Fischer
  */

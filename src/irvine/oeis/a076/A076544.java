@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A076544 mu(n)+sqf(n): mu(n) is Moebius function; sqf(n)=1 if n is squarefree, sqf(n)=-1 otherwise.
+ * A076544 a(n) = mu(n) + sqf(n) where mu(n) is Moebius function, sqf(n)=1 if n is squarefree and sqf(n)=-1 otherwise.
  * @author Georg Fischer
  */
 public class A076544 extends LambdaSequence {

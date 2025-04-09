@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000578;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A125166 Triangle, companion to A125165, left border = n^3.
+ * A125166 Triangle R(n,k), companion to A125165, left column n^3.
  * @author Georg Fischer
  */
 public class A125166 extends WrappedRecurrence {

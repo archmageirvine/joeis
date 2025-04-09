@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A381973 allocated for Clark Kimberling.
+ * A381973 Numbers m such that Sum_{k &gt;= 0} floor(m/3^k) is prime.
  * @author Sean A. Irvine
  */
 public class A381973 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A016627.
+ * A382884 Decimal expansion of 1/6 + Pi/(12*sqrt(3)) - log(3)/4.
  * @author Sean A. Irvine
  */
 public class A382884 extends DecimalExpansionSequence {

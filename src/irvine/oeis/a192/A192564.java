@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A192564 a(n) = sum(abs(stirling1(n,k))*stirling2(n,k)*k!^2,k=0..n).
+ * A192564 a(n) = Sum_{k=0..n} abs(Stirling1(n,k))*Stirling2(n,k)*(k!)^2.
  * @author Georg Fischer
  */
 public class A192564 extends LambdaSequence {

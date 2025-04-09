@@ -1,22 +1,20 @@
 package irvine.oeis.a076;
-// manually n2/n2add1 at 2022-04-06 21:32
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.a006.A006530;
+import irvine.oeis.Sequence1;
 
 /**
  * A076565 Greatest prime divisor of 2n+1 (sum of two successive integers).
- * @author Georg Fischer
+ * @author Sean A. Irvine
  */
-public class A076565 extends A006530 {
+public class A076565 extends Sequence1 {
 
-  {
-    super.next();
-  }
+  private long mN = 1;
 
   @Override
   public Z next() {
-    super.next();
-    return super.next();
+    mN += 2;
+    return Functions.GPF.z(mN);
   }
 }

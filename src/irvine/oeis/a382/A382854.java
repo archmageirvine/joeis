@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A382854 allocated for Sean A. Irvine.
+ * A382854 Decimal expansion of (1-log(2))/2.
  * @author Sean A. Irvine
  */
 public class A382854 extends DecimalExpansionSequence {

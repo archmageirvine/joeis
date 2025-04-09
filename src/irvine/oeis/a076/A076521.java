@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A076521 Floor( (n/2)*log_2(2*n/3) ).
+ * A076521 a(n) = floor( (n/2)*log_2(2*n/3) ).
  * @author Sean A. Irvine
  */
 public class A076521 extends Sequence2 {

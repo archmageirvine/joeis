@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A382051 allocated for Alain Rocchelli.
+ * A382051 Primes prime(k) such that k*log(k)/prime(k) &lt; (k-1)*log(k-1)/prime(k-1).
  * @author Sean A. Irvine
  */
 public class A382051 extends A000040 {

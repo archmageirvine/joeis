@@ -7,7 +7,7 @@ import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.transform.BinomialTransformSequence;
 
 /**
- * A007472 Shifts 2 places left when binomial transform is applied twice.
+ * A007472 Shifts 2 places left when binomial transform is applied twice with a(0) = a(1) = 1.
  * @author Sean A. Irvine
  */
 public class A007472 extends MemorySequence {

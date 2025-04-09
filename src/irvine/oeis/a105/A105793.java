@@ -6,7 +6,7 @@ import irvine.oeis.a048.A048994;
 import irvine.oeis.triangle.Product;
 
 /**
- * A105793 Expansion of (1 + y)^(1 + x).
+ * A105793 Expansion of e.g.f. (1 + y)^(1 + x).
  * @author Georg Fischer
  */
 public class A105793 extends Product {

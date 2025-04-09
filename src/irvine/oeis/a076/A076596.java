@@ -9,10 +9,13 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076528.
+ * A076596.
  * @author Sean A. Irvine
  */
 public class A076596 extends Sequence1 {
+
+  // Method used here is to test each square sequentially and test if it can be constructed
+  // from a product of previously unused numbers.
 
   private final HashSet<Z> mUsed = new HashSet<>();
   private Z[] mRow = {};

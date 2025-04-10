@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A382807 Name?
+ * A382807 a(n) = Sum_{k=0..n} (Stirling1(n,k) * k!)^3.
  * @author Georg Fischer
  */
 public class A382807 extends LambdaSequence {

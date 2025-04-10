@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002858;
 
 /**
- * A382797 Name?
+ * A382797 Odd Ulam numbers.
  * @author Georg Fischer
  */
 public class A382797 extends FilterSequence {

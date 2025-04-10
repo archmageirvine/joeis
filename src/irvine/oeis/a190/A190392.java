@@ -4,7 +4,7 @@ package irvine.oeis.a190;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A190392 E.g.f. A(x) satisfies A&apos;(x) = sin(A(x)) + cos(A(x)).
+ * A190392 E.g.f. A(x) satisfies A'(x) = sin(A(x)) + cos(A(x)).
  * @author Georg Fischer
  */
 public class A190392 extends PolynomialFieldSequence {

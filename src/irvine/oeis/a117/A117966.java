@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A117966 Balanced ternary enumeration (based on balanced ternary representation) of integers; write n in ternary and then replace 2&apos;s with (-1)&apos;s.
+ * A117966 Balanced ternary enumeration (based on balanced ternary representation) of integers; write n in ternary and then replace 2's with (-1)'s.
  * @author Georg Fischer
  */
 public class A117966 extends MultiTransformSequence {

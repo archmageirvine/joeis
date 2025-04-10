@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A382805 Name?
+ * A382805 a(n) = Sum_{k=0..n} (-1)^(n-k) * (Stirling1(n,k) * k!)^2.
  * @author Georg Fischer
  */
 public class A382805 extends LambdaSequence {

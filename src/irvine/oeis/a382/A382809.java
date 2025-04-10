@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A382809 Name?
+ * A382809 a(n) = (6*n + 1)*(12*n + 1)*(18*n + 1).
  * @author Georg Fischer
  */
 public class A382809 extends LambdaSequence {

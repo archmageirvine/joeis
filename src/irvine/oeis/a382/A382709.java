@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A382709 Name?
+ * A382709 Numerator of (2^n - 1)*n! / 2^(n+1).
  * @author Georg Fischer
  */
 public class A382709 extends LambdaSequence {

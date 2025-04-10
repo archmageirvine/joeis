@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076596.
+ * A076596 Triangle read by rows: n-th row contains n numbers whose product is a square; all numbers in triangle are distinct.
  * @author Sean A. Irvine
  */
 public class A076596 extends Sequence1 {

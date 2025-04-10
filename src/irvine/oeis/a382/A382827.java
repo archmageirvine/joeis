@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A382827 Name?
+ * A382827 a(n) = Sum_{k=0..n} k! * (k+1)! * Stirling1(n+1,k+1)^2.
  * @author Georg Fischer
  */
 public class A382827 extends LambdaSequence {

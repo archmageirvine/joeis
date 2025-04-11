@@ -2537,3 +2537,5 @@ A076438 Numbers k which appear to have a unique representation as the difference
 A076439 Numbers k which appear to have a unique representation as the difference of two perfect powers where those powers are both 2; that is, there is only one solution to Pillai's equation a^x - b^y = k, with a > 0, b > 0, x > 1, y > 1 and that solution has x = y = 2.
 A076440 Numbers k which appear to have a unique representation as the difference of two perfect powers where one of those powers is odd; that is, there is only one solution to Pillai's equation a^x - b^y = k, with a > 0, b > 0, x > 1, y > 1 and that solution has odd x or odd y (or both odd).
 A076523 Maximal number of halving lines for 2n points in plane.
+A076633 Incorrect guess for index of n-th local maxima (in decreasing order) of f(k) = (sigma(k) - H_k)/(exp(H_k)log(H_k)), where H_k = 1 + 1/2 + 1/3 + ... + 1/k.
+

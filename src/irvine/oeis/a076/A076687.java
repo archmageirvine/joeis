@@ -24,10 +24,9 @@ public class A076687 extends Sequence0 {
     }
     Polynomial<Q> sum = RING.zero();
     for (int k = 1; k <= mN / 2; ++k) {
-      // Construct (1 - 0x)(1 - 1x)...(1 - (k-1)x)
       Polynomial<Q> prod = RING.one();
-      for (int i = 0; i < k; ++i) {
-        prod = RING.multiply(prod, Polynomial.create(Q.ONE, Q.valueOf(-i)));
+      for (long j = 0; j < k; ++j) {
+        prod = RING.multiply(prod, Polynomial.create(Q.ONE, Q.valueOf(-j)));
       }
       final Polynomial<Q> term = RING.series(RING.monomial(new Q(Functions.FACTORIAL.z(k).square()), 2 * k), RING.pow(prod, 2), mN);
       sum = RING.add(sum, term);

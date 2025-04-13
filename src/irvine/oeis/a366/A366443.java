@@ -1,0 +1,54 @@
+package irvine.oeis.a366;
+
+import java.util.Arrays;
+
+import irvine.math.function.Functions;
+import irvine.math.lattice.Canons;
+import irvine.math.lattice.Hunter;
+import irvine.math.lattice.Lattices;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence0;
+import irvine.util.string.StringUtils;
+
+/**
+ * A366443.
+ * @author Sean A. Irvine
+ */
+public class A366443 extends Sequence0 {
+
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+  private int mN = 0;
+  private int mM = 0;
+  private long[] mPerimeterCounts = {1}; // empty polyomino
+
+  private void hunt(final int n) {
+    if (mVerbose) {
+      StringUtils.message("Generating polyominoes with " + n + " cells" + n);
+    }
+    mPerimeterCounts = Arrays.copyOf(mPerimeterCounts, 2 * n + 3); // Maximum perimeter for size n
+    final Hunter h = new Hunter(Lattices.Z2, true) {
+      {
+        setKeeper((animal, forbidden) -> {
+          if (Canons.Z2_FREE.isFreeCanonical(animal)) {
+            ++mPerimeterCounts[animal.perimeterSize(Lattices.Z2)];
+          }
+        });
+      }
+    };
+    h.count(n);
+  }
+
+  @Override
+  public Z next() {
+    if (++mM < 4) {
+      return Z.ZERO;
+    }
+    while (mM >= 2 + Functions.CEIL_SQRT.i(8 * mN + 4) || mN < 2) {
+      hunt(++mN);
+      if (mVerbose && mPerimeterCounts.length > mM) {
+        StringUtils.message("Counts vector: " + Arrays.toString(mPerimeterCounts));
+      }
+    }
+    return Z.valueOf(mPerimeterCounts[mM]);
+  }
+}

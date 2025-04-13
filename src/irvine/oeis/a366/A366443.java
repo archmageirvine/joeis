@@ -1,6 +1,7 @@
 package irvine.oeis.a366;
 
 import java.util.Arrays;
+import java.util.concurrent.atomic.AtomicLong;
 
 import irvine.math.function.Functions;
 import irvine.math.lattice.Canons;
@@ -20,21 +21,27 @@ public class A366443 extends Sequence0 {
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 0;
   private int mM = 0;
-  private volatile long[] mPerimeterCounts = {1}; // empty polyomino
+  private AtomicLong[] mPerimeterCounts = new AtomicLong[1];
+  {
+    mPerimeterCounts[0] = new AtomicLong(1); // empty polyomino
+  }
 
   private void hunt(final int n) {
     if (mVerbose) {
       StringUtils.message("Generating polyominoes with " + n + " cells");
     }
-    //noinspection NonAtomicOperationOnVolatileField
+    final int len = mPerimeterCounts.length;
     mPerimeterCounts = Arrays.copyOf(mPerimeterCounts, 2 * n + 3); // Maximum perimeter for size n
+    for (int k = len; k < mPerimeterCounts.length; ++k) {
+      mPerimeterCounts[k] = new AtomicLong();
+    }
     final ParallelHunter h = new ParallelHunter(7,
       () -> new Hunter(Lattices.Z2, true),
       () -> new Hunter(Lattices.Z2, true) {
         {
           setKeeper((animal, forbidden) -> {
             if (Canons.Z2_FREE.isFreeCanonical(animal)) {
-              ++mPerimeterCounts[animal.perimeterSize(Lattices.Z2)];
+              mPerimeterCounts[animal.perimeterSize(Lattices.Z2)].incrementAndGet();
             }
           });
         }
@@ -53,6 +60,6 @@ public class A366443 extends Sequence0 {
         StringUtils.message("Counts vector: " + Arrays.toString(mPerimeterCounts));
       }
     }
-    return Z.valueOf(mPerimeterCounts[mM]);
+    return Z.valueOf(mPerimeterCounts[mM].get());
   }
 }

@@ -23,7 +23,7 @@ public class A366443 extends Sequence0 {
 
   private void hunt(final int n) {
     if (mVerbose) {
-      StringUtils.message("Generating polyominoes with " + n + " cells" + n);
+      StringUtils.message("Generating polyominoes with " + n + " cells");
     }
     mPerimeterCounts = Arrays.copyOf(mPerimeterCounts, 2 * n + 3); // Maximum perimeter for size n
     final Hunter h = new Hunter(Lattices.Z2, true) {

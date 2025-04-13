@@ -6,6 +6,7 @@ import irvine.math.function.Functions;
 import irvine.math.lattice.Canons;
 import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattices;
+import irvine.math.lattice.ParallelHunter;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
@@ -19,22 +20,25 @@ public class A366443 extends Sequence0 {
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 0;
   private int mM = 0;
-  private long[] mPerimeterCounts = {1}; // empty polyomino
+  private volatile long[] mPerimeterCounts = {1}; // empty polyomino
 
   private void hunt(final int n) {
     if (mVerbose) {
       StringUtils.message("Generating polyominoes with " + n + " cells");
     }
+    //noinspection NonAtomicOperationOnVolatileField
     mPerimeterCounts = Arrays.copyOf(mPerimeterCounts, 2 * n + 3); // Maximum perimeter for size n
-    final Hunter h = new Hunter(Lattices.Z2, true) {
-      {
-        setKeeper((animal, forbidden) -> {
-          if (Canons.Z2_FREE.isFreeCanonical(animal)) {
-            ++mPerimeterCounts[animal.perimeterSize(Lattices.Z2)];
-          }
-        });
-      }
-    };
+    final ParallelHunter h = new ParallelHunter(7,
+      () -> new Hunter(Lattices.Z2, true),
+      () -> new Hunter(Lattices.Z2, true) {
+        {
+          setKeeper((animal, forbidden) -> {
+            if (Canons.Z2_FREE.isFreeCanonical(animal)) {
+              ++mPerimeterCounts[animal.perimeterSize(Lattices.Z2)];
+            }
+          });
+        }
+      });
     h.count(n);
   }
 

@@ -97,4 +97,12 @@ public final class CrFunctions {
   public static final CrFunction1 FRESNEL_S = new FresnelS();
   /** The Fresnel cosine function, <code>C(z)</code>. */
   public static final CrFunction1 FRESNEL_C = new FresnelC();
+  /** The Struve H function. */
+  public static final CrFunction2 STRUVE_H = new StruveH();
+  /** The Struve L function. */
+  public static final CrFunction2 STRUVE_L = new StruveL();
+  /** The Thomson ber function. */
+  public static final CrFunction1 BER = new ThomsonBer();
+  /** The Thomson bei function. */
+  public static final CrFunction1 BEI = new ThomsonBei();
 }

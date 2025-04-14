@@ -42,6 +42,10 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(NevilleThetaSTest.class);
     suite.addTestSuite(PolylogarithmTest.class);
     suite.addTestSuite(SineIntegralTest.class);
+    suite.addTestSuite(StruveHTest.class);
+    suite.addTestSuite(StruveLTest.class);
+    suite.addTestSuite(ThomsonBeiTest.class);
+    suite.addTestSuite(ThomsonBerTest.class);
     suite.addTestSuite(UpperIncompleteGammaTest.class);
     return suite;
   }

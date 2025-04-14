@@ -23,7 +23,7 @@ class BesselI extends CrFunction2 {
       @Override
       protected Z approximate(final int precision) {
         final int p = precision - EXTRA_PRECISION;
-        final Z z2approx = z.multiply(z).divide(CR.FOUR).getApprox(p);
+        final Z z2approx = z.square().divide(CR.FOUR).getApprox(p);
         Z term = CR.ONE.getApprox(p).divide(Functions.FACTORIAL.z(v)); // k = 0
         Z sum = term;
         long k = 0;

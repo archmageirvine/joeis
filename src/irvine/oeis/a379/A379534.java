@@ -6,13 +6,12 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A379534 Decimal expansion of (9*sqrt(65) - 55)/320.
- * Formula: (9*sqrt(65) - 55)/320
  * @author Georg Fischer
  */
 public class A379534 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A379534() {
-    super(-1, CR.valueOf(65).sqrt().multiply(9).subtract(55).divide(320));
+    super(0, CR.valueOf(65).sqrt().multiply(9).subtract(55).divide(320));
   }
 }

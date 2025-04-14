@@ -7,13 +7,12 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377594 Decimal expansion of 1/4 - 7*zeta(3)/(4*Pi^2).
- * Formula:
  * @author Georg Fischer
  */
 public class A377594 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A377594() {
-    super(-1, CR.ONE.divide(CR.FOUR).subtract(CR.SEVEN.multiply(Zeta.zeta(3)).divide(CR.FOUR.multiply(CR.PI.square()))));
+    super(0, CR.ONE.divide(CR.FOUR).subtract(CR.SEVEN.multiply(Zeta.zeta(3)).divide(CR.FOUR.multiply(CR.PI.square()))));
   }
 }

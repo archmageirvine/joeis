@@ -4,6 +4,7 @@ package irvine.oeis.a381;
 import irvine.math.function.Functions;
 import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterSequence;
+import irvine.oeis.PrependSequence;
 import irvine.oeis.a000.A000045;
 
 /**
@@ -14,6 +15,6 @@ public class A381704 extends FilterSequence {
 
   /** Construct the sequence. */
   public A381704() {
-    super(1, new A000045().skip(2), v -> Predicates.FIBONACCI.is(Functions.DIGIT_SUM.l(2, v)));
+    super(1, new PrependSequence(new A000045().skip(2), 0), v -> Predicates.FIBONACCI.is(Functions.DIGIT_SUM.l(2, v)));
   }
 }

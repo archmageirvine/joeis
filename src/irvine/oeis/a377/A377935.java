@@ -6,13 +6,12 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377935 Decimal expansion of the area enclosed by the locus of the centroid of a Reuleaux triangle.
- * Formula:
  * @author Georg Fischer
  */
 public class A377935 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A377935() {
-    super(-1, CR.FOUR.subtract(CR.EIGHT.divide(CR.THREE.sqrt())).add(CR.TWO.multiply(CR.PI).divide(CR.NINE)));
+    super(0, CR.FOUR.subtract(CR.EIGHT.divide(CR.THREE.sqrt())).add(CR.TWO.multiply(CR.PI).divide(CR.NINE)));
   }
 }

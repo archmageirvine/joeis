@@ -6,13 +6,12 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A378798 Decimal expansion of 16/(207*sqrt(53)).
- * Formula: nonn,cons,easy, new
  * @author Georg Fischer
  */
 public class A378798 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A378798() {
-    super(-1, CR.valueOf(16).divide(CR.valueOf(207).multiply(CR.valueOf(53).sqrt())));
+    super(0, CR.valueOf(16).divide(CR.valueOf(207).multiply(CR.valueOf(53).sqrt())));
   }
 }

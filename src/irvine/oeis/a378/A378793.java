@@ -6,13 +6,12 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A378793 Decimal expansion of 16/(9*sqrt(1609)).
- * Formula: nonn,cons,easy, new
  * @author Georg Fischer
  */
 public class A378793 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A378793() {
-    super(-1, CR.valueOf(16).divide(CR.NINE.multiply(CR.valueOf(1609).sqrt())));
+    super(0, CR.valueOf(16).divide(CR.NINE.multiply(CR.valueOf(1609).sqrt())));
   }
 }

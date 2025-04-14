@@ -13,6 +13,6 @@ public class A078542 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A078542() {
-    super(1, 0, k -> !Predicates.BALANCED.is(k) && !Z.valueOf(k).isProbablePrime());
+    super(1, 1, k -> !Predicates.BALANCED.is(k) && !Z.valueOf(k).isProbablePrime());
   }
 }

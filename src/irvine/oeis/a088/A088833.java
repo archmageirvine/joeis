@@ -3,20 +3,16 @@ package irvine.oeis.a088;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a045.A045770;
 
 /**
  * A088833 Numbers n whose abundance is 8: sigma(n) - 2n = 8.
  * @author Georg Fischer
  */
-public class A088833 extends AbstractSequence {
+public class A088833 extends Sequence1 {
 
-  private final AbstractSequence mSeq = new A045770().skip(3);
-
-  /** Construct the sequence. */
-  public A088833() {
-    super(1);
-  }
+  private final AbstractSequence mSeq = new A045770().skip(4);
 
   @Override
   public Z next() {

@@ -12,6 +12,6 @@ public class A076484 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A076484() {
-    super(1, 0, k -> Predicates.BALANCED.is(k) && !Predicates.BALANCED.is(2 * k));
+    super(1, 1, k -> Predicates.BALANCED.is(k) && !Predicates.BALANCED.is(2 * k));
   }
 }

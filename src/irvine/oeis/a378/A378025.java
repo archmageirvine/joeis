@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A378025 Decimal expansion of 1/2 - log(2)/4 - G/Pi, where G = A006752.
- * Formula:
  * @author Georg Fischer
  */
 public class A378025 extends DecimalExpansionSequence {
@@ -16,6 +15,6 @@ public class A378025 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A378025() {
-    super(-1, CR.HALF.subtract(CR.TWO.log().divide(CR.FOUR)).subtract(A006752.getCR().divide(CR.PI)));
+    super(0, CR.HALF.subtract(CR.TWO.log().divide(CR.FOUR)).subtract(A006752.getCR().divide(CR.PI)));
   }
 }

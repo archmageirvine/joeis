@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A379394 Decimal expansion of the area of the convex hull of a circle of circumference 1 and a line segment of length 1/2 with midpoint at the circle center.
- * Formula:
  * @author Georg Fischer
  */
 public class A379394 extends DecimalExpansionSequence {
@@ -16,6 +15,6 @@ public class A379394 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A379394() {
-    super(-1, CR.PI.square().subtract(CR.FOUR).sqrt().add(CR.PI).subtract(CR.TWO.multiply(REALS.acos(CR.TWO.divide(CR.PI)))).divide(CR.FOUR.multiply(CR.PI.square())));
+    super(0, CR.PI.square().subtract(CR.FOUR).sqrt().add(CR.PI).subtract(CR.TWO.multiply(REALS.acos(CR.TWO.divide(CR.PI)))).divide(CR.FOUR.multiply(CR.PI.square())));
   }
 }

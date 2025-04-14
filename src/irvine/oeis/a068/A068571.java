@@ -1,9 +1,10 @@
 package irvine.oeis.a068;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.a007.A007770;
+import irvine.oeis.Sequence0;
 import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
 
@@ -11,16 +12,11 @@ import irvine.util.bumper.BumperFactory;
  * A068571 Number of happy numbers &lt;= 10^n.
  * @author Sean A. Irvine
  */
-public class A068571 extends A007770 {
+public class A068571 extends Sequence0 {
 
   // After Charles R Greathouse IV
 
   private int mN = -1;
-
-  /** Construct the sequence. */
-  public A068571() {
-    super(0);
-  }
 
   private long f(final int[] d) {
     long s = 0;
@@ -41,7 +37,7 @@ public class A068571 extends A007770 {
       for (int k = 0; k < d.length; ++k) {
         d[k] = (k > 7 ? mN : v[k + 1]) - v[k];
       }
-      if (isHappy(Z.valueOf(f(d)))) {
+      if (Predicates.HAPPY.is(f(d))) {
         sum = sum.add(Binomial.multinomial(mN, d).divide(Functions.FACTORIAL.z(v[0])));
       }
     } while (bumper.bump(v));

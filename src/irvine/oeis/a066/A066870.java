@@ -1,16 +1,17 @@
 package irvine.oeis.a066;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002025;
-import irvine.oeis.a007.A007770;
 
 /**
  * A066870 Happy amicable pairs: numbers which belong to an amicable pair in which both terms are happy numbers.
  * @author Sean A. Irvine
  */
-public class A066870 extends A007770 {
+public class A066870 extends Sequence1 {
 
   private final Sequence mA = new A002025();
   private Z mU = null;
@@ -28,9 +29,9 @@ public class A066870 extends A007770 {
     }
     while (true) {
       final Z t = mA.next();
-      if (isHappy(t)) {
+      if (Predicates.HAPPY.is(t)) {
         final Z u = aliquot(t);
-        if (isHappy(u)) {
+        if (Predicates.HAPPY.is(u)) {
           mU = u;
           return t;
         }

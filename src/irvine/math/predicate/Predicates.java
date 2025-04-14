@@ -51,6 +51,8 @@ public final class Predicates {
   public static final Predicate ORE_HARMONIC = new OreHarmonic(); // =A001599
   /** Test if a number is powerful. */
   public static final Predicate POWERFUL = new Powerful(); // =A001694
+  /** Test if a number is happy. */
+  public static final Predicate HAPPY = new Happy(); // =A007770
 
   /** Test if a number is abundant. */
   public static final Predicate ABUNDANT = new Abundant();

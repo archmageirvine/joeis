@@ -70,6 +70,8 @@ public final class FactorSequence {
     int mExponent;
   }
 
+  private boolean mLocked = false;
+
   /** Default constructor. */
   public FactorSequence() {
   }
@@ -107,12 +109,15 @@ public final class FactorSequence {
 
   /**
    * Add the integer n with the specified status, and increment
-   * its exponent by the specified amount.
+   * it's exponent by the specified amount.
    * @param n integer to add
    * @param status status to use
    * @param exponent exponent for n
    */
   public void add(final Z n, final int status, final int exponent) {
+    if (mLocked) {
+      throw new RuntimeException("Attempt to modify locked object");
+    }
     if (exponent == 0) {
       return;
     }
@@ -534,6 +539,9 @@ public final class FactorSequence {
    */
   public void merge(final FactorSequence fs) {
     if (fs != null) {
+      if (mLocked) {
+        throw new RuntimeException("Attempt to modify locked object");
+      }
       for (final Z n : fs.toZArray()) {
         add(n, fs.getStatus(n), fs.getExponent(n));
       }
@@ -888,5 +896,13 @@ public final class FactorSequence {
     }
     completeOrException();
     return (omega() & 1) == 0 ? 1 : -1;
+  }
+
+  /**
+   * Make this <code>FactorSequence</code> object immutable.
+   * Prevents using the <code>add</code> and <code>merge</code> methods.
+   */
+  public void lock() {
+    mLocked = true;
   }
 }

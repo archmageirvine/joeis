@@ -19,7 +19,13 @@ public class A056472 extends Sequence1 {
   private int mN = 0;
   private int mM = 0;
 
-  private List<List<Long>> factor(final long n, final long min) {
+  /**
+   * Return a sorted list of all the possible factorizations of <code>n</code>.
+   * @param n number to factor
+   * @param min smallest allowed factor
+   * @return factorizations
+   */
+  public static List<List<Long>> factor(final long n, final long min) {
     final ArrayList<List<Long>> lst = new ArrayList<>();
     lst.add(Collections.singletonList(n));
     for (final Z dd : Jaguar.factor(n).divisorsSorted()) {

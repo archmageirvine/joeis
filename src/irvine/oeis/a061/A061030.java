@@ -12,7 +12,10 @@ import irvine.oeis.Sequence3;
 public class A061030 extends Sequence3 {
 
   private final PrimeDivision mFactor = new PrimeDivision();
-  private final FactorSequence mFactorSequence = mFactor.factorize(Z.TWO);
+  private final FactorSequence mFactorSequence = new FactorSequence();
+  {
+    mFactorSequence.add(2, FactorSequence.PRIME, 1);
+  }
   private long mN = 2;
   private Z mF = Z.TWO;
 

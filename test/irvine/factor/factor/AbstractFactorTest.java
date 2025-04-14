@@ -5,17 +5,12 @@ import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
- *
  * @author Sean A. Irvine
  */
 public abstract class AbstractFactorTest extends TestCase {
 
-  /** Set this to true to include some slower tests. */
-  protected static final boolean FULL = "true".equals(System.getProperty("irvine.factor.factor.extra-tests"));
-
   /** The prime validator to be tested */
   protected Factorizer mF = null;
-
 
   @Override
   public void tearDown() {

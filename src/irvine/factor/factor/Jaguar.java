@@ -113,6 +113,12 @@ public final class Jaguar {
     return fs;
   }
 
+  private static FactorSequence computeFactorSequenceAndLock(final Z n) {
+    final FactorSequence fs = computeFactorSequence(n);
+    fs.lock();
+    return fs;
+  }
+
   /**
    * Attempt to factor the given number.
    * @param n number to factor
@@ -134,10 +140,11 @@ public final class Jaguar {
           return fs;
         }
         SMALL[m] = computeFactorSequence(n);
+        SMALL[m].lock();
         return SMALL[m];
       }
     }
-    return FACTOR_SEQUENCE_CACHE.computeIfAbsent(n, Jaguar::computeFactorSequence);
+    return FACTOR_SEQUENCE_CACHE.computeIfAbsent(n, Jaguar::computeFactorSequenceAndLock);
   }
 
   /**

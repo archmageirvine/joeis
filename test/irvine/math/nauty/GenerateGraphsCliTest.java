@@ -4,7 +4,6 @@ import java.io.IOException;
 
 /**
  * Tests the corresponding class.
- *
  * @author Sean A. Irvine
  */
 public class GenerateGraphsCliTest extends GenerateGraphsTest {

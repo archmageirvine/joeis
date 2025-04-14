@@ -4,21 +4,15 @@ import java.util.ArrayList;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.AbstractSequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005740 Number of degenerate fanout-free Boolean functions of n variables using And, Or, Xor, Not, and Majority gates.
  * @author Sean A. Irvine
  */
-public class A005740 extends AbstractSequence {
+public class A005740 extends Sequence1 {
 
   private final A005617 mSeq1 = new A005617();
-
-  /** Construct the sequence. */
-  public A005740() {
-    super(1);
-  }
-
   protected final ArrayList<Z> mTerms = new ArrayList<>();
 
   @Override

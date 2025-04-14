@@ -763,10 +763,11 @@ public final class FactorSequence {
    * @return this factor sequence for chaining
    */
   public FactorSequence pow(final int power) {
-    for (final Factor f : mFactors.values()) {
+    final FactorSequence fs = mLocked ? new FactorSequence(this) : this;
+    for (final Factor f : fs.mFactors.values()) {
       f.mExponent *= power;
     }
-    return this;
+    return fs;
   }
 
   /**

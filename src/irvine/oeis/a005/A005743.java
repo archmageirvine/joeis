@@ -8,8 +8,11 @@ import irvine.math.z.Z;
  */
 public class A005743 extends A005742 {
 
-  private Z mA = super.next();
-  private int mN = 0;
+  private Z mA = Z.ZERO;
+  private int mN = -1;
+  {
+    setOffset(0);
+  }
 
   @Override
   public Z next() {

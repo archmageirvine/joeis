@@ -120,7 +120,7 @@ public class GenerateGraphsTest extends TestCase {
       ">A [-r, 2/7, 6]",
       "E]zg",
       "E^~w",
-      ">Z 6 graphs generated in ");
+      ">Z 7 graphs generated in ");
   }
 
   public void testConnected() throws IOException {

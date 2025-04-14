@@ -28,7 +28,7 @@ public class A063101 extends Sequence0 {
       mPrimeDivision.factor(mFactorSequence);
     }
     mF = mF.multiply(mN);
-    final FactorSequence fs = Jaguar.factor(mF.add(1));
+    final FactorSequence fs = new FactorSequence(Jaguar.factor(mF.add(1)));
     fs.merge(mFactorSequence);
     return fs.sigma0();
   }

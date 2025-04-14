@@ -24,7 +24,7 @@ public class A065768 extends Sequence1 {
       while (mA.size() < HEURISTIC_SORT_SIZE || mB.size() < HEURISTIC_SORT_SIZE || mA.first().compareTo(mB.last()) > 0 || mB.first().compareTo(mA.last()) > 0) {
         mM = mM.add(1);
         final Z s = mM.square();
-        final FactorSequence fs = Jaguar.factor(s);
+        final FactorSequence fs = new FactorSequence(Jaguar.factor(s));
         mA.add(fs.sigma());
         fs.add(2, FactorSequence.PRIME);
         mB.add(fs.sigma().divide(3));

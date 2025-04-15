@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076585.
+ * A076654 Smallest natural number not a multiple of 10, not occurring earlier and starting with the end of the previous term.
  * @author Sean A. Irvine
  */
 public class A076654 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a053.A053810;
 
 /**
- * A076600.
+ * A076705 Prime powers of prime numbers such that the sum of its digits is also prime power of prime number.
  * @author Sean A. Irvine
  */
 public class A076705 extends A053810 {

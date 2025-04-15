@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a053.A053810;
 
 /**
- * A076600.
+ * A076704 Numbers k of the form p^q where both p and q are prime and all digits of k are odd.
  * @author Sean A. Irvine
  */
 public class A076704 extends FilterSequence {

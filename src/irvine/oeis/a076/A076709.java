@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002808;
 import irvine.oeis.a056.A056472;
 
 /**
- * A056472 Triangle read by rows in which row n lists all factorizations of n.
+ * A076709 Factors in factorizations of composite numbers into at least 2 factors &gt; 1.
  * @author Sean A. Irvine
  */
 public class A076709 extends A002808 {

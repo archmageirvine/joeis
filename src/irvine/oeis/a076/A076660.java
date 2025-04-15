@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A076585.
+ * A076660 Numbers m such that A076644(m) = floor((2/3)*m*(sqrt(m)+1)).
  * @author Sean A. Irvine
  */
 public class A076660 extends FilterPositionSequence {

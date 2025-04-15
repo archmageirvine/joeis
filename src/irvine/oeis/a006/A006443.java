@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006443 Number of achiral planar maps on n nodes up to orientation-preserving isomorphisms.
+ * A006443 Number of achiral planar maps with n edges.
  * @author Sean A. Irvine
  */
 public class A006443 extends A006385 {

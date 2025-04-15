@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076585.
+ * A076661 Index of first term of the harmonic sequence having the same denominator as the partial harmonic sequence beginning with 1/n.
  * @author Sean A. Irvine
  */
 public class A076661 extends Sequence1 {

@@ -12,6 +12,6 @@ public class A342105 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A342105() {
-    super(1, 0, k -> !Predicates.BALANCED.is(k) && Predicates.ARITHMETIC.is(k));
+    super(1, 1, k -> !Predicates.BALANCED.is(k) && Predicates.ARITHMETIC.is(k));
   }
 }

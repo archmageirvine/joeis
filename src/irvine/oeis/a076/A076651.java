@@ -4,7 +4,7 @@ import irvine.oeis.a001.A001359;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A076585.
+ * A076651 a(n) = floor( sqrt( p * (p+2) / 2)) where p is the lesser of the twin primes.
  * @author Sean A. Irvine
  */
 public class A076651 extends SimpleTransformSequence {

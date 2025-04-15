@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A056472.
+ * A076711 Highly composite triangular numbers: triangular numbers where the number of divisors increases to a record.
  * @author Sean A. Irvine
  */
 public class A076711 extends Sequence1 {

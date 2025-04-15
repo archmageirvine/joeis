@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076585.
+ * A076650 m-morphic numbers for any m equal to 26 (mod 50).
  * @author Sean A. Irvine
  */
 public class A076650 extends Sequence1 {

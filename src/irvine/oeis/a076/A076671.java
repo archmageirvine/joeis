@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076600.
+ * A076671 Smallest a(n) &gt; a(n-1) such that a(n)^2+a(n-1)^2 is a perfect square, with a(1)=5.
  * @author Sean A. Irvine
  */
 public class A076671 extends Sequence1 {

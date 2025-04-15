@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A076600.
+ * A076687 Coefficients in asymptotic (divergent) expansion for Sum_{k=1..n} 1/C(n,k)^2.
  * @author Sean A. Irvine
  */
 public class A076687 extends Sequence0 {

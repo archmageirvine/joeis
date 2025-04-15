@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076600.
+ * A076700 Number of prime powers of prime numbers less than 10^n.
  * @author Sean A. Irvine
  */
 public class A076700 extends Sequence1 {

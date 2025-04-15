@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A056472.
+ * A101756 Number of divisors of highly composite triangular numbers.
  * @author Sean A. Irvine
  */
 public class A101756 extends Sequence1 {

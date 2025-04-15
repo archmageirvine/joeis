@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076585.
+ * A076658 Numerator of f(n), where for n &gt; 2, f(n) = (n-1)/f(n-1) + (n-2)/f(n-2), with f(1)=1, f(2)=2.
  * @author Sean A. Irvine
  */
 public class A076658 extends Sequence1 {

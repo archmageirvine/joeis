@@ -13,7 +13,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A366443.
+ * A366443 Number of free polyominoes of site-perimeter n.
  * @author Sean A. Irvine
  */
 public class A366443 extends Sequence1 {

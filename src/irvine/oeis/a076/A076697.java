@@ -4,7 +4,7 @@ import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.a079.A079451;
 
 /**
- * A076600.
+ * A076697 Next-to-largest factor of Lucas(n).
  * @author Sean A. Irvine
  */
 public class A076697 extends RecordPositionSequence {

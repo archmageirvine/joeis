@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A056472.
+ * A101755 Indices of highly composite triangular numbers.
  * @author Sean A. Irvine
  */
 public class A101755 extends Sequence1 {

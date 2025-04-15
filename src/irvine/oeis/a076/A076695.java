@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076600.
+ * A076695 Dimension of S2(G0(p)) where p runs through the odd primes &gt;= 13, G0(N) is the Hecke subgroup of SL2(Z), consisting of 2 X 2 matrices (a,b; c,d) with c == 0 (mod N).
  * @author Sean A. Irvine
  */
 public class A076695 extends Sequence1 {

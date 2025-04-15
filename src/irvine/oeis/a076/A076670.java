@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076585.
+ * A076670 Prime divisors of (10^9)^(10^9) + 1 = 10^9000000000 + 1.
  * @author Sean A. Irvine
  */
 public class A076670 extends Sequence1 {

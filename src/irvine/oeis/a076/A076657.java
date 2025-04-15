@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A076585.
+ * A076657 a(n) = (1/24) * binomial(2n,n)*(16^n-binomial(2n,n)^2). Right side of identity involving series A005148.
  * @author Sean A. Irvine
  */
 public class A076657 extends Sequence0 {

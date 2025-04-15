@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076585.
+ * A076665 Numbers k such that phi(k) + phi(k+3) = phi(k+1) + phi(k+2).
  * @author Sean A. Irvine
  */
 public class A076665 extends Sequence1 {

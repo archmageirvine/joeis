@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076585.
+ * A076653 Smallest prime number not occurring earlier and starting with the final digit of the previous term.
  * @author Sean A. Irvine
  */
 public class A076653 extends Sequence1 {

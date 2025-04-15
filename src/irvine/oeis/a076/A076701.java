@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005185;
 
 /**
- * A076600.
+ * A076701 Values of n not reached in the Hofstadter sequence (A005185).
  * @author Sean A. Irvine
  */
 public class A076701 extends A005185 {

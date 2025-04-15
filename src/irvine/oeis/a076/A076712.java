@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A056472.
+ * A076712 Triangular numbers which are also happy numbers (cf. A007770).
  * @author Sean A. Irvine
  */
 public class A076712 extends Sequence1 {

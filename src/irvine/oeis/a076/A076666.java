@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076585.
+ * A076666 Numbers n such that sigma(n) + sigma(n+3) = sigma(n+1) + sigma(n+2).
  * @author Sean A. Irvine
  */
 public class A076666 extends Sequence1 {

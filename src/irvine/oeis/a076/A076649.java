@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076585.
+ * A076649 Number of digits required to write the prime factors of n.
  * @author Sean A. Irvine
  */
 public class A076649 extends Sequence1 {

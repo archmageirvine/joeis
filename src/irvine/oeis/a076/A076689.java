@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002110;
 
 /**
- * A076600.
+ * A076689 Smallest k such that k*prime(n)# + 1 is prime where prime(n)# is the n-th primorial number A002110(n).
  * @author Sean A. Irvine
  */
 public class A076689 extends Sequence1 {

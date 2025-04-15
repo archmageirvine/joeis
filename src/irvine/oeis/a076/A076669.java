@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a053.A053191;
 
 /**
- * A076585.
+ * A076669 Primes of the form n^2*totient(n)+1 (or A053191(n) + 1).
  * @author Sean A. Irvine
  */
 public class A076669 extends A053191 {

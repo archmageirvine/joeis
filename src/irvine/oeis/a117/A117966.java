@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A117966 Balanced ternary enumeration (based on balanced ternary representation) of integers; write n in ternary and then replace 2&apos;s with (-1)&apos;s.
+ * A117966 Balanced ternary enumeration (based on balanced ternary representation) of integers; write n in ternary and then replace 2's with (-1)'s.
  * G.f.satisfies A(x) = 3*A(x^3)*(1+x+x^2) + x/(1+x+x^2).
  * @author Georg Fischer
  */

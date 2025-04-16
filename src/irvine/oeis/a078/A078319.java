@@ -5,7 +5,7 @@ import irvine.oeis.a008.A008472;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A078319 Sum of distinct prime factors of n*rad(n)+1, where rad=A007947 (squarefree kernel).
+ * A078319 Sum of distinct prime factors of n*rad(n)+1, where rad = A007947 (squarefree kernel).
  * @author Georg Fischer
  */
 public class A078319 extends DirectTransformSequence {

@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.Pair;
 
 /**
- * A053810 Prime powers of prime numbers.
+ * A053810 Numbers of the form p^e where both p and e are prime numbers.
  * @author Sean A. Irvine
  */
 public class A053810 extends A000040 {

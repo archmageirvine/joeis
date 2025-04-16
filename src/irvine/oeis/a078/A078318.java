@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
- * A078318 Sum of divisors of n*rad(n)+1, where rad=A007947 (squarefree kernel).
+ * A078318 Sum of divisors of n*rad(n)+1, where rad = A007947 (squarefree kernel).
  * @author Georg Fischer
  */
 public class A078318 extends A078310 {

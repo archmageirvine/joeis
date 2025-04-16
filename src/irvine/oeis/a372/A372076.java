@@ -4,7 +4,7 @@ package irvine.oeis.a372;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A372076 The sequence T_{3, 1}(n, 3).
+ * A372076 The sequence T_{3,1}(n,3).
  * ogf((x-x^2)/(1-3*x+3*x^2-4*x^3))
  * @author Georg Fischer
  */

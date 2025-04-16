@@ -4,7 +4,7 @@ import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.a079.A079451;
 
 /**
- * A076697 Next-to-largest factor of Lucas(n).
+ * A076697 Indices of record values in A079451, largest prime factor of Lucas numbers A000032.
  * @author Sean A. Irvine
  */
 public class A076697 extends RecordPositionSequence {

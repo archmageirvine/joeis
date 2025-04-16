@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A057077 Periodic sequence 1, 1,-1,-1; expansion of (1+x)/(1+x^2).
+ * A057077 Periodic sequence 1,1,-1,-1; expansion of (1+x)/(1+x^2).
  * @author Sean A. Irvine
  */
 public class A057077 extends LambdaSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A382300 a(n) = Sum_{k=0..floor(n/2)} (k+1) * binomial(2*k, 2*n-4*k).
+ * A382300 a(n) = Sum_{k=0..floor(n/2)} (k+1) * binomial(2*k,2*n-4*k).
  * @author Georg Fischer
  */
 public class A382300 extends LambdaSequence {

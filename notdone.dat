@@ -2538,3 +2538,4 @@ A076440 Numbers k which appear to have a unique representation as the difference
 A076523 Maximal number of halving lines for 2n points in plane.
 A076633 Incorrect guess for index of n-th local maxima (in decreasing order) of f(k) = (sigma(k) - H_k)/(exp(H_k)log(H_k)), where H_k = 1 + 1/2 + 1/3 + ... + 1/k.
 A076696 Triangle read by rows: n-th row contains n numbers whose product is a square; all numbers in triangle are distinct.
+A076766 Number of inequivalent binary linear codes of length n. Also the number of nonisomorphic binary matroids on an n-set.

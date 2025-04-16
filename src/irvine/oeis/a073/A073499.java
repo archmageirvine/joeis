@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073499 Numbers n such that n^(n+1) + (n+1)^n is prime.
+ * A073499 Numbers k such that k^(k+1) + (k+1)^k is prime.
  * @author Sean A. Irvine
  */
 public class A073499 extends Sequence1 {

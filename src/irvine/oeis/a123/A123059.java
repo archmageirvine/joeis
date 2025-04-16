@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A123059 Primes of the form 1 + 2n + 3n^2 + 4n^3.
+ * A123059 Primes of the form 1 + 2*k + 3*k^2 + 4*k^3.
  * @author Georg Fischer
  */
 public class A123059 extends PrimeSubsequence {

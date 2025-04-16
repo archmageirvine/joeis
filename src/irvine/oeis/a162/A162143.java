@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007304;
 
 /**
- * A162143 a(n) = A007304(n)^2.
+ * A162143 Numbers that are the squares of the product of three distinct primes.
  * @author Georg Fischer
  */
 public class A162143 extends Sequence1 {

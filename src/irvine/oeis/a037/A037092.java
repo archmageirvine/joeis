@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A037092 Number of triples {i,j,k}, i&gt;1, j&gt;1, k&gt;1, such that ijk &lt; n^3.
+ * A037092 Number of triples {i,j,k}, i&gt;1, j&gt;1, k&gt;1, such that i*j*k &lt; n^3.
  * @author Sean A. Irvine
  */
 public class A037092 extends Sequence2 {

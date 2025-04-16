@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000027;
 import irvine.oeis.a008.A008683;
 
 /**
- * A076369 n + mu(n), where mu is the Moebius-function (A008683).
+ * A076369 a(n) = n + mu(n), where mu is the Moebius function (A008683).
  * @author Georg Fischer
  */
 public class A076369 extends Sequence1 {

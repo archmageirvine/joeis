@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076698 a(1) = 2, a(n+1) = smallest squarefree number == 1 (mod a(n)).
+ * A076698 a(1) = 2, a(n+1) = smallest squarefree number == 1 (mod a(n)) and  &gt; a(n).
  * @author Sean A. Irvine
  */
 public class A076698 extends Sequence1 {

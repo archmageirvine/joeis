@@ -31,7 +31,6 @@ public class A076269 extends Sequence0 {
       mMax = members.size();
     }
     for (int k = pos; k < mPar.size(); ++k) {
-      final int[] p = mPar.get(k);
       if (isOk(members, k)) {
         members.add(k);
         search(k + 1, members);

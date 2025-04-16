@@ -5,7 +5,7 @@ import irvine.oeis.IntersectionSequence;
 import irvine.oeis.a062.A062514;
 
 /**
- * A270414 Numbers n such that sigma(n-1) and sigma(phi(n)) are both primes.
+ * A270414 Numbers m such that sigma(m-1) and sigma(phi(m)) are both primes.
  * @author Georg Fischer
  */
 public class A270414 extends IntersectionSequence {

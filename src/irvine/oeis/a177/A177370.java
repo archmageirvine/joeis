@@ -4,7 +4,7 @@ package irvine.oeis.a177;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A177370 (1+7*x-6*x^2)/(1-4*x-8*x^2+6*x^3)
+ * A177370 (1+7*x-6*x^2)/(1-4*x-8*x^2+6*x^3).
  * ogf((1+7*x-6*x^2)/(1-4*x-8*x^2+6*x^3))
  * @author Georg Fischer
  */

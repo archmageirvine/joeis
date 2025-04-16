@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066719 Numbers n such that 1+n^phi(n) is prime.
+ * A066719 Numbers k such that 1 + k^phi(k) is prime.
  * @author Sean A. Irvine
  */
 public class A066719 extends Sequence1 {

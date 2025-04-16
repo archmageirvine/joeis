@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a023.A023194;
 
 /**
- * A270413 Numbers n such that sigma(n-1) is a prime.
+ * A270413 Numbers m such that sigma(m-1) is a prime.
  * @author Georg Fischer
  */
 public class A270413 extends Sequence1 {

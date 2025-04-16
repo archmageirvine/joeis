@@ -4,7 +4,7 @@ package irvine.oeis.a116;
 import irvine.oeis.base.ConcatenatedProductSequence;
 
 /**
- * A116285 n times n+1 gives the concatenation of a number m with itself.
+ * A116285 Numbers k such that k * (k+1) is the concatenation of a number m with itself.
  * @author Georg Fischer
  */
 public class A116285 extends ConcatenatedProductSequence {

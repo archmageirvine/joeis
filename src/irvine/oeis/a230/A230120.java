@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A230120 a(n) is the number of evil integers (A001969) not exceeding n and respectively prime to n.
+ * A230120 a(n) is the number of evil integers (A001969) not exceeding n and prime to n.
  * @author Georg Fischer
  */
 public class A230120 extends LambdaSequence {

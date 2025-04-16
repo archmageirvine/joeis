@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
- * A078311 Smallest prime factor of n*rad(n)+1, where rad=A007947 (squarefree kernel).
+ * A078311 Smallest prime factor of n*rad(n)+1, where rad = A007947 (squarefree kernel).
  * @author Georg Fischer
  */
 public class A078311 extends A078310 {

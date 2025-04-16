@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000032;
 
 /**
- * A079451 Highest prime dividing the n-th Lucas number (A000032); 0 when no such prime exists.
+ * A079451 Largest prime dividing the n-th Lucas number (A000032); 1 when no such prime exists.
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

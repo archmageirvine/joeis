@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A002213 Number of polyhexes rooted at a hexagon and containing n hexagons.
+ * A002213 Number of tree-like polyhexes rooted at a hexagon and containing n hexagons.
  * @author Sean A. Irvine
  */
 public class A002213 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
- * A078317 Number of divisors of n*rad(n)+1, where rad=A007947 (squarefree kernel).
+ * A078317 Number of divisors of n*rad(n)+1, where rad = A007947 (squarefree kernel).
  * @author Georg Fischer
  */
 public class A078317 extends A078310 {

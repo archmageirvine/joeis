@@ -4,7 +4,7 @@ package irvine.oeis.a116;
 import irvine.oeis.base.ConcatenatedProductSequence;
 
 /**
- * A116292 n times n+8 gives the concatenation of a number m with itself.
+ * A116292 Numbers k such that k * (k + 8) is the concatenation of a number m with itself.
  * @author Georg Fischer
  */
 public class A116292 extends ConcatenatedProductSequence {

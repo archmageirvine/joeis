@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A158569 a(n) = Sum_{i=1..F(n)} F(i), n &gt;= 1, where F(k) is A000045, Fibonacci numbers.
+ * A158569 a(n) = Sum_{i=1..F(n)} F(i), where F = A000045, Fibonacci numbers.
  * @author Georg Fischer
  */
 public class A158569 extends LambdaSequence {

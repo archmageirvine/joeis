@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076614 Numbers of the form 2^k+3^k+...p_n^k.
+ * A076614 Numbers of the form 2^k + 3^k + ... + p_n^k.
  * @author Sean A. Irvine
  */
 public class A076614 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076655 Numerator of a(n), where for n &gt; 2, a(n)=-1/a(n-1)+1/a(n-2), a(1)=1, a(2)=2.
+ * A076655 a(n) = numberator(b(n)) where b(1)=1, b(2)=2 and for n &gt; 2, b(n) = 1/b(n-2) - 1/b(n-1).
  * @author Sean A. Irvine
  */
 public class A076655 extends Sequence1 {

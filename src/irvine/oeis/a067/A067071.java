@@ -3,7 +3,7 @@ package irvine.oeis.a067;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A067071 Numbers with no zeros such that the product of the digits of its cube is also a cube.
+ * A067071 Numbers with no zeros in their cubes such that the products of the digits of their cubes are also cubes.
  * @author Sean A. Irvine
  */
 public class A067071 extends SimpleTransformSequence {

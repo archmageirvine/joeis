@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a014.A014612;
 
 /**
- * A102304 Sum of factors of numbers having exactly three prime factors.
+ * A102304 Sum of prime factors (counted with multiplicity) of the numbers having exactly three prime factors.
  * @author Georg Fischer
  */
 public class A102304 extends Sequence0 {

@@ -8,7 +8,7 @@ import irvine.oeis.transform.SimpleTransformSequence;
 
 
 /**
- * A289856 Primes of the form k!2-256, where k!2 is the double factorial number (A006852).
+ * A289856 Primes of the form k!2 - 256, where k!2 is the double factorial number (A006882).
  * @author Georg Fischer
  */
 public class A289856 extends PrimeSubsequence {

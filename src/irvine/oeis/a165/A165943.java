@@ -4,7 +4,7 @@ package irvine.oeis.a165;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A165943 Heptasection A061037(7*n+2).
+ * A165943 a(n) = A061037(7*n+2).
  * @author Georg Fischer
  */
 public class A165943 extends GeneratingFunctionSequence {

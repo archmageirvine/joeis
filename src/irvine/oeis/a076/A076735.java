@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A076735 Least k &gt;=2 such that k^n divides sum(i=1,k,i!*(k-i)!).
+ * A076735 Least k &gt;= 2 such that k^n divides Sum_{i=1..k} i! * (k-i)!.
  * @author Sean A. Irvine
  */
 public class A076735 extends Sequence0 {

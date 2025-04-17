@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.a203.A203264;
 
 /**
- * A204546 Permanent of the n-th principal submatrix of A204269.
+ * A204546 Permanent of the n-th principal submatrix of A204545.
  * @author Georg Fischer
  */
 public class A204546 extends A203264 {

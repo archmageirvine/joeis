@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A201182 Primes of the form 7n^3+1.
+ * A201182 Primes of the form 7*k^3+1.
  * @author Georg Fischer
  */
 public class A201182 extends PrimeSubsequence {

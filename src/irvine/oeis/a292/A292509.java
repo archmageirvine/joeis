@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A292509 Primes of the form n^2 + 23*n + 23.
+ * A292509 Primes of the form k^2 + 23*k + 23.
  * @author Georg Fischer
  */
 public class A292509 extends PrimeSubsequence {

@@ -13,6 +13,7 @@ public class AllTests extends TestSuite {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(AiryAiTest.class);
     suite.addTestSuite(AiryBiTest.class);
+    suite.addTestSuite(AngerJTest.class);
     suite.addTestSuite(BesselK0Test.class);
     suite.addTestSuite(BesselKTest.class);
     suite.addTestSuite(CosineIntegralTest.class);
@@ -47,6 +48,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(ThomsonBeiTest.class);
     suite.addTestSuite(ThomsonBerTest.class);
     suite.addTestSuite(UpperIncompleteGammaTest.class);
+    suite.addTestSuite(WeberETest.class);
     return suite;
   }
 }

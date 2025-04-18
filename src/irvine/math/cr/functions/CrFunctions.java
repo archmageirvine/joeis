@@ -105,4 +105,8 @@ public final class CrFunctions {
   public static final CrFunction1 BER = new ThomsonBer();
   /** The Thomson bei function. */
   public static final CrFunction1 BEI = new ThomsonBei();
+  /** The Anger J function. */
+  public static final CrFunction2Cr ANGER_J = new AngerJ();
+  /** The Weber E function. */
+  public static final CrFunction2Cr WEBER_E = new WeberE();
 }

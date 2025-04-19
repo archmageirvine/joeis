@@ -16,6 +16,6 @@ public class A005315 extends A005316 {
     mN += 2;
     final SimpleProcessor<Z> processor = new SimpleProcessor<>();
     processor.setCreateStateMachine(BasicMeanderProblem::new);
-    return processor.process(mN, new BasicMeanderProblem(mN).openMeanderInitialStates());
+    return processor.process(mN, new BasicMeanderProblem(mN).initialStates());
   }
 }

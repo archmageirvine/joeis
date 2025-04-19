@@ -54,7 +54,7 @@ public class A005316 extends AbstractSequence {
         customizations for different sequences. Included here are BasicMeanderProblem, MeandersByComponents and ParallelRoadsMeanderProblem.
         The first two enumerate the most important core sequences, whilst the ParallelRoadsMeanderProblem is a demonstration
         of how the same algorithm can be extended to a more complex problem - by pretending the multiple roads are a single
-        snake like road and adding book keeping to track the meander from one bend to the next.
+        snake like road and adding bookkeeping to track the meander from one bend to the next.
         The algorithm has also been successfully used to enumerate a variety of other meander sequences. (A060148, A077056, A060972, A259974).
         Code for these is not included here as it would add unnecessary clutter with little additional insight.
 
@@ -90,10 +90,10 @@ public class A005316 extends AbstractSequence {
    * J. Phys. A 33 (2000), no. 34, 5953-5963.
    *
    * There are a few minor implementation differences.
-   *   - Two separate bit sequences are used for the lower and upper segments, with the least significant bits closest to the road.
-   *     These are inter-woven into a single integer valued state.
-   *   - Bit value 1 is used to indicate that an arch originates on this side of the road and 0 indicates on the other side. This gives better symmetry when processing.
-   *   - This algorithm does not have any notion of a free end - there is always a loop. Open meanders can be enumerated with an alternative initial state.
+   * - Two separate bit sequences are used for the lower and upper segments, with the least significant bits closest to the road.
+   * These are inter-woven into a single integer valued state.
+   * - Bit value 1 is used to indicate that an arch originates on this side of the road and 0 indicates on the other side. This gives better symmetry when processing.
+   * - This algorithm does not have any notion of a free end - there is always a loop. Open meanders can be enumerated with an alternative initial state.
    *
    * Performance:
    * The primary limiting factor of the algorithm as presented here is memory rather than CPU. Approximately 2 GB is required to get to about 40 bridges.
@@ -247,7 +247,7 @@ public class A005316 extends AbstractSequence {
 
     /**
      * Extracts the lower arch configuration from an encoding.
-     * The upper arch configuration can the be obtained by subtraction.
+     * The upper arch configuration can then be obtained by subtraction.
      * This undoes the encoding of pack.
      * @param v encoding
      * @return lower arch
@@ -291,14 +291,13 @@ public class A005316 extends AbstractSequence {
      * Initial states to enumerate open meanders.
      * @return initial states
      */
-    public Iterable<Z> openMeanderInitialStates() {
+    public Iterable<Z> initialStates() {
       return Collections.singleton(mIsOdd ? pack(Z.ONE.shiftLeft(WORD_SHIFT).or(Z.ONE).shiftLeft(WORD_SHIFT), Z.ONE) : pack(Z.ONE.shiftLeft(WORD_SHIFT).or(Z.ONE), Z.ONE.shiftLeft(WORD_SHIFT).or(Z.ONE)));
     }
 
     /**
      * Initial states used to enumerate semi-meanders. (A000682)
      * @return meanders
-     *
      */
     public Iterable<Z> semiMeanderInitialStates() {
       final ArrayList<Z> res = new ArrayList<>();
@@ -351,69 +350,6 @@ public class A005316 extends AbstractSequence {
       return super.closingAction(lower, upper) == Action.JOIN_ARCH ? Action.JOIN_ARCH : Action.NONE;
     }
   }
-
-//    /**
-//     * Processing component for meanders with multiple parallel roads. (A076876, A206432, A204352 etc). Can also handle loops on multiple parallel roads (A086031).
-//     */
-//    class ParallelRoadsMeanderProblem : MeanderProblem, IStateMachine<Pair<int, Z>>
-//    {
-//        private final Z m_Limit;
-//        private final int m_MaxRoads;
-//        private final boolean m_IsPath;
-//        private final int m_Remaining;
-//        private final int m_Sign;
-//
-//        public ParallelRoadsMeanderProblem( int remaining, int maxRoads, boolean isPath, boolean isOdd) : base( remaining)
-//        {
-//            m_Limit = Z.ONE << (2 + (WORD_SHIFT * (remaining + 1)));
-//            m_Remaining = remaining;
-//            m_MaxRoads = maxRoads;
-//            m_IsPath = isPath;
-//            m_Sign = isOdd ? 0 : 1;
-//        }
-//
-//        public Pair<int, Z> InitialState
-//        {
-//            get
-//            {
-//                return Pair.Create( m_IsPath ? -1 : 1,
-//              m_Remaining % 2 == 0 ? Pack( (Z.ONE << WORD_SHIFT) | Z.ONE, (Z.ONE << WORD_SHIFT) | Z.ONE)
-//              : Pack( Z.ONE, ((Z.ONE << WORD_SHIFT) | Z.ONE) << WORD_SHIFT));
-//            }
-//        }
-//
-//        public Iterator<Pair<int, Z>> Enumerate( Pair<int, Z> state)
-//        {
-//            return EnumeratePossibilities( state.Item2,
-//                    ( action, lower, upper) => Pair.Create( state.Item1 < 0 && upper.equals(Z.ONE) ? -state.Item1 : state.Item1, Pack( lower, upper)))
-//                .Where( next => m_Limit.Sign < 0 || next.Item2 < m_Limit)
-//                .SelectMany( Fork);
-//        }
-//
-//        private Iterator<Pair<int, Z>> Fork( Pair<int, Z> state)
-//        {
-//            // There is always the option to stay on the current road.
-//            yield return state;
-//
-//            // If we are not yet at the limit, also look into the possibility of moving to the next.
-//            if (state.Item1 < m_MaxRoads && -state.Item1 < m_MaxRoads)
-//            {
-//                var lower = ExtractLower( state.Item2);
-//                var upper = (state.Item2 - lower) >> 1;
-//                boolean canAdvance = (state.Item1 & 1) == m_Sign ? lower.equals(Z.ONE)
-//                                : state.Item1 < 0 ? upper == ((1 << WORD_SHIFT) | 1) : upper.equals(Z.ONE);
-//                if (canAdvance)
-//                {
-//                    yield return Pair.Create( state.Item1 + (state.Item1 < 0 ? -1 : 1), state.Item2);
-//                }
-//            }
-//        }
-//
-//        protected override Action ClosingAction( Z lower, Z upper)
-//        {
-//            return base.ClosingAction( lower, upper) == Action.JoinArch ? Action.JoinArch : Action.None;
-//        }
-//    }
 
   /**
    * Simple processing engine that will work with any kind of state type.
@@ -502,6 +438,6 @@ public class A005316 extends AbstractSequence {
     ++mN;
     final SimpleProcessor<Z> processor = new SimpleProcessor<>();
     processor.setCreateStateMachine(BasicMeanderProblem::new);
-    return processor.process(mN, new BasicMeanderProblem(mN).openMeanderInitialStates());
+    return processor.process(mN, new BasicMeanderProblem(mN).initialStates());
   }
 }

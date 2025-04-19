@@ -2544,3 +2544,19 @@ A076834 Number of inequivalent projective binary linear [n,k] codes of any dimen
 A076836 Number of inequivalent indecomposable binary linear [n,k] codes with no column of zeros of any dimension k <= n.
 A076837 Triangle T(n,k) read by rows giving number of inequivalent projective indecomposable binary linear [n,k] codes (n >= 1, 1 <= k <= n).
 A076838 Number of inequivalent indecomposable projective binary linear [n,k] codes of any dimension k <= n.
+A076851 Number of geometries for group A_n under axioms A.
+A076852 Number of geometries for group A_n under axioms A, 2T_1.
+A076853 Number of geometries for group A_n under axioms A, CD.
+A076854 Number of geometries for group A_n under axioms A, NT.
+A076855 Number of geometries for group A_n under axioms A, 2T_1, CD.
+A076856 Number of geometries for group A_n under axioms A, 2T_1, CD, NT.
+A076857 Number of geometries for group S_n under axioms A.
+A076858 Number of geometries for group S_n under axioms A, 2T_1.
+A076859 Number of geometries for group S_n under axioms A, CD.
+A076860 Number of geometries for group S_n under axioms A, NT.
+A076861 Number of geometries for group S_n under axioms A, 2T_1, CD.
+A076862 Number of geometries for group S_n under axioms A, 2T_1, CD, NT.
+A076868 a(n) = smallest m such that a spherical n-design with m points exists in three dimensions.
+A076869 Largest t such that a spherical t-design with n points exists in four dimensions.
+A076870 a(n) = smallest m such that a spherical n-design with m points exists in four dimensions
+A076875 Meandric numbers for a curve crossing two perpendicular lines at n points.

@@ -268,4 +268,28 @@ public class MultivariatePolynomialField<E> extends AbstractField<MultivariatePo
   public MultivariatePolynomial<E> log(final MultivariatePolynomial<E> p, final int[] n) {
     return log1p(subtract(p, one()), n);
   }
+
+  /**
+   * Substitute a polynomial for a particular unknown in another polynomial.
+   * @param p polynomial
+   * @param v value to substitute
+   * @param var variable to substitute
+   * @return substituted polynomial
+   */
+  public MultivariatePolynomial<E> substitute(final MultivariatePolynomial<E> p, final MultivariatePolynomial<E> v, final int var) {
+    MultivariatePolynomial<E> res = zero();
+    for (final Map.Entry<MultivariatePolynomial.Term,E> e : p.entrySet()) {
+      final MultivariatePolynomial.Term term = e.getKey();
+      final int[] retain = new int[p.numberVariables()];
+      final MultivariatePolynomial<E> contrib = pow(v, term.get(var)); // todo I think this pow is getting wrong answer, cf. Maple
+      for (int k = 0; k < p.numberVariables(); ++k) {
+        if (k != var) {
+          retain[k] = term.get(k);
+        }
+      }
+      final MultivariatePolynomial<E> r = contrib.multiply(monomial(e.getValue(), retain));
+      res = add(res, r);
+    }
+    return res;
+  }
 }

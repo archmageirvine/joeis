@@ -2560,3 +2560,8 @@ A076868 a(n) = smallest m such that a spherical n-design with m points exists in
 A076869 Largest t such that a spherical t-design with n points exists in four dimensions.
 A076870 a(n) = smallest m such that a spherical n-design with m points exists in four dimensions
 A076875 Meandric numbers for a curve crossing two perpendicular lines at n points.
+A076892 Number of inequivalent ternary linear codes of length n. Also the number of nonisomorphic ternary matroids on an n-set.
+A076893 Number of inequivalent linear ternary codes of length n with no zero columns. Also the number of nonisomorphic loopless ternary matroids on an n-set.
+A076894 Number of inequivalent linear projective ternary codes of length n (i.e., with distinct columns and without zero columns). Also the number of nonisomorphic simple ternary matroids on an n-set.
+A076906 Meandric numbers for a river (or directed line) crossing two perpendicular roads at n points, beginning in the (-,-) quadrant and ending in the (+,+) quadrant if n even, in the (+,-) quadrant if n odd.
+A076907 Meandric numbers for a river crossing two perpendicular roads at n points, beginning in the (-,-) quadrant and ending in any quadrant.

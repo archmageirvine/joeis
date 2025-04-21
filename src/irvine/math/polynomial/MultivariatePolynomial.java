@@ -77,8 +77,17 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
   }
 
   /**
+   * Construct the multivariate polynomial corresponding to the single specified variable.
+   * @param coefficientField underlying coefficient field.
+   * @param variables number of variables
+   * @return 1
+   */
+  public static <E> MultivariatePolynomial<E> var(final Field<E> coefficientField, final int variables) {
+    return new MultivariatePolynomial<>(coefficientField, variables, new int[][] {new int[variables]}, Collections.singletonList(coefficientField.one()));
+  }
+
+  /**
    * Create a multivariate polynomial from an ordinary polynomial.
-   *
    * @param coefficientField field for coefficients
    * @param poly polynomial
    * @param index index of variable to use for this polynomial
@@ -324,7 +333,7 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
       for (final Map.Entry<Term, E> f : entrySet()) {
         final int[] u = new int[mVariables];
         for (int k = 0; k < mVariables; ++k) {
-          u[k] = e.getKey().mPowers[k] + f.getKey().mPowers[k];
+          u[k] = e.getKey().get(k) + f.getKey().get(k);
         }
         res.add(new Term(u), mCoefficientField.multiply(e.getValue(), f.getValue()));
       }
@@ -382,7 +391,7 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
     if (mVariables != 1) {
       throw new IllegalArgumentException();
     }
-    // Find largest power
+    // Find the largest power
     int max = 0;
     for (final Term t : keySet()) {
       if (t.mPowers[0] > max) {
@@ -452,6 +461,16 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
     return true;
   }
 
+  private boolean needsProtection(final String s) {
+    for (int k = 1; k < s.length(); ++k) { // start from 1 allows a sign
+      final int c = s.charAt(k);
+      if (c == '+' || c == '-' || c == '/') {
+        return true;
+      }
+    }
+    return false;
+  }
+
   @Override
   public String toString() {
     if (isZero()) {
@@ -471,10 +490,15 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
         sb.append('+');
       }
       final int[] p = t.mPowers;
-      if (Z.NEG_ONE.equals(v)) {
+      if (mCoefficientField.negate(mCoefficientField.one()).equals(v)) {
         sb.append(constantTerm(p) ? "-1" : "-");
-      } else if (!Z.ONE.equals(v) || constantTerm(p)) {
-        sb.append(v);
+      } else if (!mCoefficientField.one().equals(v) || constantTerm(p)) {
+        final String s = v.toString();
+        if (needsProtection(s)) {
+          sb.append('(').append(v).append(')');
+        } else {
+          sb.append(v);
+        }
       }
       for (int k = 0; k < mVariables; ++k) {
         if (p[k] != 0) {

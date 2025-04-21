@@ -11,11 +11,11 @@ class SquareFree extends AbstractPredicate {
 
   @Override
   public boolean is(final Z n) {
-    return Jaguar.factor(n).maxExponent() <= 1;
+    return !n.isZero() && Jaguar.factor(n).maxExponent() <= 1;
   }
 
   @Override
   public boolean is(final long n) {
-    return Jaguar.factor(n).maxExponent() <= 1;
+    return n != 0 && Jaguar.factor(n).maxExponent() <= 1;
   }
 }

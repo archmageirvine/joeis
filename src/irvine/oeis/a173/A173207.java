@@ -13,6 +13,6 @@ public class A173207 extends FilterSequence {
 
   /** Construct the sequence. */
   public A173207() {
-    super(1, new A000045(), v -> Predicates.CUBE_FREE.is(v) && !Predicates.SQUARE_FREE.is(v));
+    super(1, new A000045().skip(), v -> Predicates.CUBE_FREE.is(v) && !Predicates.SQUARE_FREE.is(v));
   }
 }

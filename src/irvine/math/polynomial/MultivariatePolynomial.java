@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 import irvine.math.api.Field;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.z.Z;
 
@@ -63,6 +64,22 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
      */
     public int get(final int i) {
       return mPowers[i];
+    }
+
+    /**
+     * The sum of powers across all the variables.
+     * @return sum of powers
+     */
+    public int sumExponents() {
+      return Functions.SUM.i(mPowers);
+    }
+
+    /**
+     * Number of possible variables in this term.
+     * @return number of variables
+     */
+    public int numberOfVariables() {
+      return mPowers.length;
     }
   }
 

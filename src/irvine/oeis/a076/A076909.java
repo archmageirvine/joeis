@@ -2,6 +2,7 @@ package irvine.oeis.a076;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import irvine.math.group.MultivariatePolynomialField;
 import irvine.math.group.PolynomialRingField;
@@ -115,18 +116,6 @@ public class A076909 extends Sequence0 {
     return RING.multiply(dis, RING.divide(numerator, new Q(2592).multiply(KO).multiply(KO)));
   }
 
-  private Polynomial<Q> dt8(final Polynomial<Q> t1, final Polynomial<Q> t2, final Polynomial<Q> t3,
-                            final Polynomial<Q> t6, final Polynomial<Q> t8) {
-    final Polynomial<Q> term1 = RING.multiply(RING.multiply(RING.pow(t1, 6, 2), t2), t8);
-    final Polynomial<Q> term2 = RING.multiply(RING.multiply(RING.pow(t1, 5, 2), t3), t8);
-    final Polynomial<Q> term3 = RING.multiply(RING.multiply(t2, t6), t8);
-    return RING.add(RING.add(RING.negate(term1), term2), term3);
-  }
-
-  private Polynomial<Q> dis(final Polynomial<Q> t1, final Polynomial<Q> t6) {
-    return RING.subtract(RING.pow(t1, 6), t6);
-  }
-
   private static final MultivariatePolynomialField<Polynomial<Q>> MULTI = new MultivariatePolynomialField<>(RING, 8);
   private static final MultivariatePolynomial<Polynomial<Q>> DIS = new MultivariatePolynomial<>(RING, 8, new int[][] {{6, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 1, 0, 0}}, List.of(RING.one(), RING.negate(RING.one())));
   private static final MultivariatePolynomial<Polynomial<Q>> DT1 =
@@ -221,15 +210,16 @@ public class A076909 extends Sequence0 {
   private static final MultivariatePolynomial<Polynomial<Q>> DT8 =
     new MultivariatePolynomial<>(RING, 8,
       new int[][] {
-        {6, 0, 0, 0, 0, 0, 0, 1}, // t₁⁶·t₈
-        {0, 0, 0, 0, 0, 1, 0, 1}  // t₆·t₈
+        {6, 1, 0, 0, 0, 0, 0, 1}, // t₁⁶·t₂·t₈
+        {5, 0, 1, 0, 0, 0, 0, 1}, // t₁⁵·t₃·t₈
+        {0, 1, 0, 0, 0, 1, 0, 1}  // t₂·t₆·t₈
       },
       List.of(
         RING.monomial(new Q(-3), 0),
+        RING.monomial(new Q(3), 0),
         RING.monomial(new Q(3), 0)
       )
     );
-
 
   private ArrayList<Polynomial<Q>> qExpansionStep(final List<MultivariatePolynomial<Polynomial<Q>>> vecfield, final ArrayList<Polynomial<Q>> pose, final int n, final Q a) {
     final int vars = pose.size();
@@ -238,8 +228,8 @@ public class A076909 extends Sequence0 {
     for (int i = 0; i < vars; ++i) {
       final int[] powers0 = new int[vars];
       final int[] powers1 = new int[vars];
-      powers1[i] = n;
-      MultivariatePolynomial<Polynomial<Q>> p = new MultivariatePolynomial<>(RING, vars, new int[][] {powers0, powers1}, List.of(pose.get(i), RING.x()));
+      powers1[i] = 1;
+      MultivariatePolynomial<Polynomial<Q>> p = new MultivariatePolynomial<>(RING, vars, new int[][] {powers0, powers1}, List.of(pose.get(i), RING.monomial(Q.ONE, n)));
       poseLifted.add(p);
     }
     System.out.println("poseLifted=" + poseLifted);
@@ -254,6 +244,8 @@ public class A076909 extends Sequence0 {
       }
       denomvSubstituted.add(denom);
     }
+
+    System.out.println("vecfield-pre=" + vecfield);
     for (int i = 0; i < vars; ++i) {
       MultivariatePolynomial<Polynomial<Q>> vfs = vecfield.get(i);
       for (int j = 0; j < vars; ++j) {
@@ -262,12 +254,47 @@ public class A076909 extends Sequence0 {
       vecfieldSubstituted.add(vfs);
     }
 
-
     System.out.println("dis=" + DIS);
     System.out.println("denomvSubstituted=" + denomvSubstituted.get(0));
-    System.out.println("vecfieldSubstituted=" + vecfield.get(0));
+    System.out.println("vecfieldSubstituted=" + vecfieldSubstituted.get(0));
 
+    final List<MultivariatePolynomial<Polynomial<Q>>> vecfieldRes = new ArrayList<>();
+    for (int i = 0; i < vars; ++i) {
+      // First, differentiate pose[i] with respect to q
+      final MultivariatePolynomial<Polynomial<Q>> dPose = diffAndShiftQ(poseLifted.get(i));
+      // Multiply by denomvSubstituted[i]
+      final MultivariatePolynomial<Polynomial<Q>> term = ring.multiply(denomvSubstituted.get(i), dPose);
+      // Multiply entire term by a (c_2 in Singular)
+      final MultivariatePolynomial<Polynomial<Q>> scaledTerm = ring.multiply(term, RING.monomial(a, 0));
+      // Subtract vecfieldSubstituted[i]
+      final MultivariatePolynomial<Polynomial<Q>> numer = ring.subtract(scaledTerm, vecfieldSubstituted.get(i));
+      if (i == 0) {
+        System.out.println("numer=" + numer);
+      }
+      final MultivariatePolynomial<Polynomial<Q>> substituted = selectCoeff(numer);
+      vecfieldRes.add(substituted);
+    }
+
+    System.out.println("vecfieldRes=" + vecfieldRes.get(0));
     return null;
+  }
+
+  private MultivariatePolynomial<Polynomial<Q>> diffAndShiftQ(final MultivariatePolynomial<Polynomial<Q>> poly) {
+    final MultivariatePolynomial<Polynomial<Q>> result = new MultivariatePolynomial<>(RING, poly.numberVariables());
+    for (Map.Entry<MultivariatePolynomial.Term, Polynomial<Q>> term : poly.entrySet()) {
+      Polynomial<Q> deriv = RING.diff(term.getValue());  // derivative w.r.t. q
+      result.put(term.getKey(), deriv.shift(1));
+    }
+    return result;
+  }
+
+
+  private MultivariatePolynomial<Polynomial<Q>> selectCoeff(final MultivariatePolynomial<Polynomial<Q>> poly) {
+    final MultivariatePolynomial<Polynomial<Q>> res = new MultivariatePolynomial<>(RING, poly.numberVariables());
+    for (final Map.Entry<MultivariatePolynomial.Term, Polynomial<Q>> e : poly.entrySet()) {
+      res.add(e.getKey(), RING.monomial(e.getValue().coeff(2), 0));
+    }
+    return res;
   }
 
   @Override

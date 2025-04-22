@@ -286,4 +286,11 @@ public interface Group<E> extends Set<E> {
    * @return Cayley graph
    */
   Graph cayleyGraph();
+
+  /**
+   * Test if the given element is zero.
+   * @param e element to test
+   * @return true iff the element is zero
+   */
+  boolean isZero(final E e);
 }

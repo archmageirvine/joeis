@@ -536,6 +536,11 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
     return monomial(mElementRing.coerce(n), 0);
   }
 
+  @Override
+  public boolean isZero(final Polynomial<E> es) {
+    return es.degree() == 0 && mElementRing.isZero(es.coeff(0));
+  }
+
   /**
    * Perform a substitution of every variable in the polynomial with the
    * specified power.

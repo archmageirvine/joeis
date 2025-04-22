@@ -476,5 +476,10 @@ public abstract class AbstractGroup<E> extends AbstractSet<E> implements Group<E
   public Graph cayleyGraph() {
     throw new UnsupportedOperationException();
   }
+
+  @Override
+  public boolean isZero(final E e) {
+    return e.equals(zero());
+  }
 }
 

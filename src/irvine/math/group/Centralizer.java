@@ -58,6 +58,11 @@ public class Centralizer<T> extends AbstractGroup<T> {
   }
 
   @Override
+  public boolean isZero(final T t) {
+    return mParent.isZero(t);
+  }
+
+  @Override
   public boolean contains(final T a) {
     return mParent.contains(a) && mParent.add(a, mElement).equals(mParent.add(mElement, a));
   }

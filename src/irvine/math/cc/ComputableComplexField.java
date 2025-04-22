@@ -396,4 +396,12 @@ public final class ComputableComplexField extends AbstractField<CC> implements E
   public CC coerce(final Z n) {
     return new CC(CR.valueOf(n));
   }
+
+  @Override
+  public boolean isZero(final CC cc) {
+    if (cc == CC.ZERO) {
+      return true;
+    }
+    throw new UnsupportedOperationException();
+  }
 }

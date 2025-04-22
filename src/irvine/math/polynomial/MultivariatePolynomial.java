@@ -149,10 +149,15 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
     }
   }
 
-  private void add(final Term t, final E c) {
+  /**
+   * Explicitly add a term to the polynomial.
+   * @param t term
+   * @param c coefficient of term
+   */
+  public void add(final Term t, final E c) {
     final E ex = remove(t);
     final E v = ex == null ? c : mCoefficientField.add(ex, c);
-    if (!mCoefficientField.zero().equals(v)) {
+    if (!mCoefficientField.isZero(v)) {
       put(t, v);
     }
   }
@@ -486,19 +491,18 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
     for (final Term t : terms) {
       final E v = get(t);
       assert !mCoefficientField.zero().equals(v);
-      if (v.toString().charAt(0) != '-' && sb.length() != 0) {
+      String s = v.toString();
+      if (needsProtection(s)) {
+        s = "(" + s + ")";
+      }
+      if (s.charAt(0) != '-' && sb.length() != 0) {
         sb.append('+');
       }
       final int[] p = t.mPowers;
       if (mCoefficientField.negate(mCoefficientField.one()).equals(v)) {
         sb.append(constantTerm(p) ? "-1" : "-");
       } else if (!mCoefficientField.one().equals(v) || constantTerm(p)) {
-        final String s = v.toString();
-        if (needsProtection(s)) {
-          sb.append('(').append(v).append(')');
-        } else {
-          sb.append(v);
-        }
+        sb.append(s);
       }
       for (int k = 0; k < mVariables; ++k) {
         if (p[k] != 0) {

@@ -281,7 +281,7 @@ public class MultivariatePolynomialField<E> extends AbstractField<MultivariatePo
     for (final Map.Entry<MultivariatePolynomial.Term,E> e : p.entrySet()) {
       final MultivariatePolynomial.Term term = e.getKey();
       final int[] retain = new int[p.numberVariables()];
-      final MultivariatePolynomial<E> contrib = pow(v, term.get(var)); // todo I think this pow is getting wrong answer, cf. Maple
+      final MultivariatePolynomial<E> contrib = pow(v, term.get(var));
       for (int k = 0; k < p.numberVariables(); ++k) {
         if (k != var) {
           retain[k] = term.get(k);

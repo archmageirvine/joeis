@@ -113,7 +113,7 @@ public class DefaultQuotientGroup<T> extends AbstractGroup<Set<T>> implements Qu
 
   @Override
   public Function<T, Set<T>> naturalHomomorphism() {
-    return new AbstractFunction<T, Set<T>>(mParent, this) {
+    return new AbstractFunction<>(mParent, this) {
       @Override
       public Set<T> image(final T x) {
         return mParent.rightCoset(mNormalSubgroup, x);

@@ -19,7 +19,6 @@ import irvine.util.Pair;
 
 /**
  * An elliptic curve.
- *
  * @author Sean A. Irvine
  */
 public class EllipticCurve extends AbstractGroup<EllipticCurvePoint> {

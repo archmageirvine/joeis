@@ -270,8 +270,8 @@ public class MatrixGroup<E> extends AbstractGroup<Matrix<E>> {
   @Override
   public Matrix<E> random(final Random random) {
     final Matrix<E> randomMatrix = new DefaultMatrix<>(mRows, mCols, mZero);
-    for (int row = 0; row < mRows; ++row) {
-      for (int col = 0; col < mCols; ++col) {
+    for (long row = 0; row < mRows; ++row) {
+      for (long col = 0; col < mCols; ++col) {
         randomMatrix.set(row, col, mElementGroup.random(random));
       }
     }

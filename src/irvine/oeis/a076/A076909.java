@@ -16,7 +16,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.UnimplementedSequence;
 
 /**
- * A061913.
+ * A076909 Coefficients of 4-point function in dimension 4.
  * @author Sean A. Irvine
  */
 public class A076909 extends Sequence0 implements UnimplementedSequence {
@@ -34,6 +34,7 @@ public class A076909 extends Sequence0 implements UnimplementedSequence {
   private ArrayList<Polynomial<Q>> mPose;
   private int mN = -1;
 
+  /** Construct the sequence. */
   public A076909() {
     // todo remove this double list creation
     mPose = new ArrayList<>(List.of(
@@ -168,7 +169,7 @@ public class A076909 extends Sequence0 implements UnimplementedSequence {
   private MultivariatePolynomial<Polynomial<Q>> diffAndShiftQ(final MultivariatePolynomial<Polynomial<Q>> poly) {
     final MultivariatePolynomial<Polynomial<Q>> result = new MultivariatePolynomial<>(RING, poly.numberVariables());
     for (Map.Entry<MultivariatePolynomial.Term, Polynomial<Q>> term : poly.entrySet()) {
-      Polynomial<Q> deriv = RING.diff(term.getValue());  // derivative w.r.t. q
+      final Polynomial<Q> deriv = RING.diff(term.getValue());  // derivative w.r.t. q
       result.put(term.getKey(), deriv.shift(1));
     }
     return result;
@@ -190,7 +191,7 @@ public class A076909 extends Sequence0 implements UnimplementedSequence {
       final int[] powers0 = new int[vars];
       final int[] powers1 = new int[vars];
       powers1[i] = 1;
-      MultivariatePolynomial<Polynomial<Q>> p = new MultivariatePolynomial<>(RING, vars, new int[][] {powers0, powers1}, List.of(pose.get(i), RING.monomial(Q.ONE, n)));
+      final MultivariatePolynomial<Polynomial<Q>> p = new MultivariatePolynomial<>(RING, vars, new int[][] {powers0, powers1}, List.of(pose.get(i), RING.monomial(Q.ONE, n)));
       poseLifted.add(p);
     }
     System.out.println("poseLifted=" + poseLifted);
@@ -246,17 +247,16 @@ public class A076909 extends Sequence0 implements UnimplementedSequence {
     return null;
   }
 
-  private boolean containsTiVars(List<MultivariatePolynomial<Polynomial<Q>>> pose) {
-    for (MultivariatePolynomial<Polynomial<Q>> p : pose) {
-      for (MultivariatePolynomial.Term t : p.keySet()) {
-        if (t.sumExponents() != 0) {
-          return true;
-        }
-      }
-    }
-    return false;
-  }
-
+//  private boolean containsTiVars(final List<MultivariatePolynomial<Polynomial<Q>>> pose) {
+//    for (MultivariatePolynomial<Polynomial<Q>> p : pose) {
+//      for (MultivariatePolynomial.Term t : p.keySet()) {
+//        if (t.sumExponents() != 0) {
+//          return true;
+//        }
+//      }
+//    }
+//    return false;
+//  }
 
   private List<MultivariatePolynomial<Polynomial<Q>>> std(final List<MultivariatePolynomial<Polynomial<Q>>> ideal) {
     return ideal;
@@ -272,14 +272,14 @@ public class A076909 extends Sequence0 implements UnimplementedSequence {
   }
 
   private int[] subtractExponents(final MultivariatePolynomial.Term a, final MultivariatePolynomial.Term b) {
-    int[] r = new int[a.numberOfVariables()];
+    final int[] r = new int[a.numberOfVariables()];
     for (int i = 0; i < a.numberOfVariables(); ++i) {
       r[i] = a.get(i) - b.get(i);
     }
     return r;
   }
 
-  private MultivariatePolynomial.Term leadingTerm(MultivariatePolynomial<Polynomial<Q>> p) {
+  private MultivariatePolynomial.Term leadingTerm(final MultivariatePolynomial<Polynomial<Q>> p) {
     // Naively pick term with highest total degree (not lex order for now)
     return p.keySet().stream()
       .max(Comparator.comparingInt(MultivariatePolynomial.Term::sumExponents))
@@ -358,7 +358,7 @@ public class A076909 extends Sequence0 implements UnimplementedSequence {
       }
       System.out.println("Reduced: " + reducedTi);
 
-      ArrayList<MultivariatePolynomial<Polynomial<Q>>> updatedPose = new ArrayList<>();
+      final ArrayList<MultivariatePolynomial<Polynomial<Q>>> updatedPose = new ArrayList<>();
       for (int i = 0; i < vars; ++i) {
         // pose[i] is a MultivariatePolynomial with t_i inside
         // reducedTi[i] is a MultivariatePolynomial representing t_i = f(t_others, q)

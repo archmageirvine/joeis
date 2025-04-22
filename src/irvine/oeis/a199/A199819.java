@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A199819 Primes of the form 10^n-9^n.
+ * A199819 Primes of the form 10^k-9^k.
  * @author Georg Fischer
  */
 public class A199819 extends PrimeSubsequence {

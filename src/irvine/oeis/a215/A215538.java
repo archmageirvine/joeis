@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A215538 Numbers n such that 101^n - 100^n is prime.
+ * A215538 Numbers k such that 101^k - 100^k is prime.
  * @author Georg Fischer
  */
 public class A215538 extends PrimePositionSubsequence {

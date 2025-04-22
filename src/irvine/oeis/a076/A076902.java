@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A061913.
+ * A076902 a(1)=1, a(n) = floor(n/2) - a(floor(n/2)).
  * @author Sean A. Irvine
  */
 public class A076902 extends CachedSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a007.A007504;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A061913.
+ * A076873 Smallest prime not less than sum of first n primes.
  * @author Sean A. Irvine
  */
 public class A076873 extends SimpleTransformSequence {

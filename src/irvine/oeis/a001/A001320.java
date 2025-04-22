@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A001320 Number of self-complementary Boolean functions of n variables: see Comments for precise definition.
+ * A001320 Number of self-complementary Boolean functions of n variables, up to equivalence under the group (C_2)^n of all 2^n complementations of variables.
  * @author Sean A. Irvine
  */
 public class A001320 extends Sequence1 {

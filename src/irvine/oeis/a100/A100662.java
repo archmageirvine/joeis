@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A100662 Primes of the form n^3 + (n+1)^2.
+ * A100662 Primes of the form k^3 + (k+1)^2.
  * @author Georg Fischer
  */
 public class A100662 extends FilterSequence {

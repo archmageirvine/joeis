@@ -9,7 +9,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a182.A182927;
 
 /**
- * A061913.
+ * A076901 E.g.f.: 1/Product_{m&gt;0} (1+(-x)^m/m!).
  * @author Sean A. Irvine
  */
 public class A076901 extends Sequence0 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A009015 Expansion of E.g.f.: cos(x*cos(x)) (even powers only).
+ * A009015 Expansion of e.g.f.: cos(x*cos(x)) (even powers only).
  * @author Sean A. Irvine
  */
 public class A009015 extends Sequence0 {

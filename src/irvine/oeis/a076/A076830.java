@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000290;
 import irvine.oeis.a078.A078142;
 
 /**
- * A061913.
+ * A076830 Least square s such that A078142(s) is equal to the n-th prime.
  * @author Sean A. Irvine
  */
 public class A076830 extends A000040 {

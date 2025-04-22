@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001694;
 
 /**
- * A061913.
+ * A076871 Sum of two powerful numbers (definition (1), A001694).
  * @author Sean A. Irvine
  */
 public class A076871 extends Sequence1 {

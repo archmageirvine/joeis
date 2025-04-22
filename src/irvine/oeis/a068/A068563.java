@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068563 Numbers n such that 2^n == 4^n (mod n).
+ * A068563 Numbers k such that 2^k == 4^k (mod k).
  * @author Sean A. Irvine
  */
 public class A068563 extends Sequence1 {

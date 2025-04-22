@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000796;
 import irvine.oeis.a001.A001622;
 
 /**
- * A076790 Merge digits of Pi and Phi (golden section) starting with 3.
+ * A076790 Interleave digits of Pi and phi-1 (golden section) starting with 3.
  * @author Sean A. Irvine
  */
 public class A076790 extends AlternatingSequence {

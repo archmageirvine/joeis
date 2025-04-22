@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A216401 E.g.f.: arctanh(x*exp(x)).
+ * A216401 E.g.f.: artanh(x*exp(x)).
  * E.g.f.: arctanh(x*exp(x))
  * @author Georg Fischer
  */

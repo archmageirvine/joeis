@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061913.
+ * A078813 Smallest prime factor of googol - n that exceeds 13, or 1 if googol - n is 13-smooth.
  * @author Sean A. Irvine
  */
 public class A078813 extends Sequence1 {

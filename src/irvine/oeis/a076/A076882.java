@@ -7,7 +7,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a000.A000720;
 
 /**
- * A061913.
+ * A076882 pi(n) - ceiling(n / log(n)), where pi(n) = the number of primes &lt;= n.
  * @author Sean A. Irvine
  */
 public class A076882 extends Sequence2 {

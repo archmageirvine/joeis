@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a018.A018804;
 
 /**
- * A382872 For n &gt;= 1, a(n) is the number of divisors (A000005) of the Pillai&apos;s arithmetical function: Sum_{k=1..n} gcd(k, n) (A018804).
+ * A382872 For n &gt;= 1, a(n) is the number of divisors (A000005) of the Pillai's arithmetical function: Sum_{k=1..n} gcd(k, n) (A018804).
  * @author Georg Fischer
  */
 public class A382872 extends LambdaSequence {

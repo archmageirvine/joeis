@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A227757 Numbers n such that antisigma(n) = antisigma(n+1) + 12; where antisigma(n) = A024816(n).
+ * A227757 Numbers k such that antisigma(k) = antisigma(k+1) + 12; where antisigma(k) = A024816(k).
  * @author Georg Fischer
  */
 public class A227757 extends FilterNumberSequence {

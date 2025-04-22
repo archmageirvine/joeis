@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a018.A018252;
 
 /**
- * A069155 Nonprime numbers n such that (n+1)*Sum_{d|n} 1/(d+1) is an integer.
+ * A069155 Nonprime numbers k such that (k+1)*Sum_{d|k} 1/(d+1) is an integer.
  * @author Sean A. Irvine
  */
 public class A069155 extends FilterSequence {

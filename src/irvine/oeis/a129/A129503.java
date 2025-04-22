@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A129503 Pascal&apos;s Fredholm-Rueppel triangle.
+ * A129503 Pascal's Fredholm-Rueppel triangle.
  * @author Georg Fischer
  */
 public class A129503 extends LambdaTriangle {

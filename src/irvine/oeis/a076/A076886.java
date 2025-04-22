@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002113;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A061913.
+ * A076886 Smallest palindrome with exactly n prime factors (counted with multiplicity).
  * @author Sean A. Irvine
  */
 public class A076886 extends Sequence0 {

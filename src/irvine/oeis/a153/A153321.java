@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A153321 Primes p such that p^2 - 60 and p^2 + 60 are also primes.
+ * A153321 Primes p such that abs(p^2 - 60) and p^2 + 60 are also primes.
  * @author Georg Fischer
  */
 public class A153321 extends FilterSequence {

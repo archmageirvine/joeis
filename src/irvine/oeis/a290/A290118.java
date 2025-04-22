@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A290118 Primes of the form k! / 5 - 1.
+ * A290118 Primes of the form k!/5 - 1.
  * @author Georg Fischer
  */
 public class A290118 extends FilterSequence {

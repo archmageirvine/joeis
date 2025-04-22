@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A061913.
+ * A076896 a(1) = 1, a(n) = n-a(floor(2n/3)).
  * @author Sean A. Irvine
  */
 public class A076896 extends CachedSequence {

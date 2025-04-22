@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061913 Numerators of the determinant of matrix (M(n) - H(n)), where H(n) is the n-th Hilbert matrix and M(n) is an n X n matrix with i,j-th entry i+j-1.
+ * A076823 Array of coefficients of 1/det(M_n)*P(M_n) where P(M_n) is the characteristic polynomial of the n-th n X n Hilbert matrix M_n(i,j)=1/(i+j-1).
  * @author Sean A. Irvine
  */
 public class A076823 extends Sequence1 {

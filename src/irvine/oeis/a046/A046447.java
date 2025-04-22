@@ -7,7 +7,7 @@ import irvine.oeis.a018.A018252;
 import irvine.util.string.StringUtils;
 
 /**
- * A046447 Apart from initial term, composite numbers with property that concatenation of prime factors is a palindrome.
+ * A046447 Apart from initial term, composite numbers with the property that the concatenation of their prime factors is a palindrome.
  * @author Sean A. Irvine
  */
 public class A046447 extends A018252 {

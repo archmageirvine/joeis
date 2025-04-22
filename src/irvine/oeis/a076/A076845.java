@@ -5,7 +5,7 @@ import irvine.oeis.Sequence2;
 import irvine.util.string.StringUtils;
 
 /**
- * A061913.
+ * A076845 Least k&gt;0 such that n^k + n - 1 is prime.
  * @author Sean A. Irvine
  */
 public class A076845 extends Sequence2 {

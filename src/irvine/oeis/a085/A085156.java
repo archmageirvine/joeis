@@ -5,7 +5,7 @@ import irvine.oeis.UnionSequence;
 import irvine.oeis.a000.A000961;
 
 /**
- * A085156 Powers of primes or of semiprimes.
+ * A085156 Powers of primes or powers of semiprimes.
  * @author Georg Fischer
  */
 public class A085156 extends UnionSequence {

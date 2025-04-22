@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061913.
+ * A076825 Let u(1)=1, u(n)=2^u(n-1) (mod n), sequence gives values of n such that u(n)=1.
  * @author Sean A. Irvine
  */
 public class A076825 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A153320 Primes p such that p^2 - 48 and p^2 + 48 are also primes.
+ * A153320 Primes p such that abs(p^2 - 48) and p^2 + 48 are also primes.
  * @author Georg Fischer
  */
 public class A153320 extends FilterSequence {

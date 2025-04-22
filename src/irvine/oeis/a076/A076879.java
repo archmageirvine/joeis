@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061913.
+ * A076879 In binary representation: number of substrings of n^2 having the same number of 0's and 1's as n.
  * @author Sean A. Irvine
  */
 public class A076879 extends Sequence1 {

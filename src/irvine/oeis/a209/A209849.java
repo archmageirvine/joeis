@@ -6,7 +6,7 @@ import irvine.oeis.a075.A075497;
 import irvine.oeis.triangle.Product;
 
 /**
- * A209849 Triangle read by rows: coefficients of polynomials in Sum_{k = 0..t} k^n*binomial(t,k).
+ * A209849 Triangle read by rows: coefficients of polynomials in Sum_{k = 0..t} k^n * binomial(t,k).
  * @author Georg Fischer
  */
 public class A209849 extends Product {

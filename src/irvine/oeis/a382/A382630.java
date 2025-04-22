@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A061913.
+ * A382630 a(n) is the number of ways that n can be written as b+c*d, where b, c and d are positive integers and b &lt; c &lt; d.
  * @author Sean A. Irvine
  */
 public class A382630 extends Sequence0 {

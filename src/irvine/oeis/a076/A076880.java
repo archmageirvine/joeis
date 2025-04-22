@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A061913.
+ * A076880 Determinant of the n X n matrix M_n(i,j) = C(i+j,i) (mod 3).
  * @author Sean A. Irvine
  */
 public class A076880 extends Sequence0 {

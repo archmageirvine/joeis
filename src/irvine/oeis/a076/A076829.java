@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A061913.
+ * A076829 a(n) = floor(log(log(n^n^n))).
  * @author Sean A. Irvine
  */
 public class A076829 extends Sequence2 {

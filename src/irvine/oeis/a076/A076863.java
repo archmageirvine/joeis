@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061913.
+ * A076863 n^(n-2)+(n*(n-1)/2)*(n-1)^(n-3).
  * @author Sean A. Irvine
  */
 public class A076863 extends Sequence1 {

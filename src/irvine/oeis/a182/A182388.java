@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A182388 a(0)=1, a(n) = (a(n-1) XOR n) + n.
+ * A182388 a(0) = 1, a(n) = (a(n-1) XOR n) + n.
  * @author Georg Fischer
  */
 public class A182388 extends Sequence0 {

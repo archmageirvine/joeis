@@ -8,7 +8,7 @@ import irvine.oeis.a005.A005316;
 import irvine.util.Pair;
 
 /**
- * A005315.
+ * A076876 Meandric numbers for a river crossing two parallel roads at n points.
  * @author Andrew Howroyd
  * @author Sean A. Irvine (Java port)
  */

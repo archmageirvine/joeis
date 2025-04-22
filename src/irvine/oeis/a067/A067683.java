@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067683 Phi(n)*sigma(n)+1 is prime.
+ * A067683 Numbers k such that phi(k)*sigma(k) + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A067683 extends Sequence1 {

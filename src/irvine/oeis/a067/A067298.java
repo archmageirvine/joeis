@@ -7,7 +7,7 @@ import irvine.oeis.a064.A064340;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A067298 Generalized Catalan triangle, based on C(2,2; n) := A064340(n).
+ * A067298 Generalized Catalan triangle, based on C(2,2; n) = A064340(n).
  * @author Sean A. Irvine
  */
 public class A067298 extends Sequence0 {

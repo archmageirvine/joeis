@@ -5,7 +5,7 @@ import irvine.oeis.CachedSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A061913.
+ * A076849 Let u(1)=1, u(n) = n + abs(u(ceiling(n/2)) - u(floor(n/2))); then a(n) = u(n) - n.
  * @author Sean A. Irvine
  */
 public class A076849 extends Sequence1 {

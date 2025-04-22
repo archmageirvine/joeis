@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A061913.
+ * A381509 Numbers whose nonzero digits are in nondecreasing order and any zeros appear at the end.
  * @author Sean A. Irvine
  */
 public class A381509 extends Sequence1 {

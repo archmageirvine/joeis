@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A061913.
+ * A076895 a(1) = 1, a(n) = n - a(ceiling(n/2)).
  * @author Sean A. Irvine
  */
 public class A076895 extends CachedSequence {

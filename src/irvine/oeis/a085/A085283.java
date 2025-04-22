@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A085283 a(n) = n*n^n - (n-1)(n-1)^n.
+ * A085283 a(n) = n*n^n - (n-1)*(n-1)^n.
  * @author Georg Fischer
  */
 public class A085283 extends LambdaSequence {

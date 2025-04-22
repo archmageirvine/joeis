@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002113;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A061913.
+ * A076889 Sum of aliquot divisors of palindromic numbers.
  * @author Sean A. Irvine
  */
 public class A076889 extends SimpleTransformSequence {

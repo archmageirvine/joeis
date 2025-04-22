@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A076813 Decimal expansion of Sum_{n&gt;=1} Zeta(2n)/n! = 2.40744...
+ * A076813 Decimal expansion of Sum_{k&gt;=1} zeta(2k)/k! = 2.40744...
  * @author Sean A. Irvine
  */
 public class A076813 extends DecimalExpansionSequence {

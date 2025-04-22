@@ -8,7 +8,7 @@ import irvine.oeis.transform.SimpleTransformSequence;
 
 
 /**
- * A062551 Primes of the form 3*n! + 1.
+ * A062551 Primes of the form 3*k! + 1.
  * @author Georg Fischer
  */
 public class A062551 extends PrimeSubsequence {

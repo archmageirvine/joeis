@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A009764 Tan(x)^2 = sum(n&gt;=0, a(n)*x^(2*n)/(2*n)! ).
+ * A009764 Expansion of e.g.f. tan(x)^2 (even powers only).
  * @author Sean A. Irvine
  */
 public class A009764 extends Sequence0 {

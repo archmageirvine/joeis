@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068997 Numbers n such that Sum_{d|n} d*mu(d) divides n.
+ * A068997 Numbers k such that Sum_{d|k} d*mu(d) divides k.
  * @author Sean A. Irvine
  */
 public class A068997 extends Sequence1 {

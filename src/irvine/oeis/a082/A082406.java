@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081868 Numbers k such that Sum_{j=1..k} (binomial(2*j,j) mod 3) is even.
+ * A082406 Numbers k such that k divides Sum_{j=1..k} binomial(2j,j).
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

@@ -3,7 +3,7 @@ package irvine.oeis.a076;
 import irvine.math.z.Z;
 
 /**
- * A061913.
+ * A076872 a(n) = number of numbers &lt;= n that are the sum of two squarefull numbers.
  * @author Sean A. Irvine
  */
 public class A076872 extends A076871 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A061913.
+ * A076900 Expansion of e.g.f.: 1/Product_{m&gt;0} (1-x^m/(m-1)!).
  * @author Sean A. Irvine
  */
 public class A076900 extends Sequence0 {

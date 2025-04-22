@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061913.
+ * A076842 Numerators of sequence of fractions defined by a(1) = a(2) = 1; for n &gt; 2, a(n) = (a(n-1)+a(n-2)+1)/a(n-2).
  * @author Sean A. Irvine
  */
 public class A076842 extends Sequence1 {

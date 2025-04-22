@@ -6,7 +6,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A078119 sigma(n) - phi(n+2), where sigma = sum of divisors (A000203) and phi = Euler totient function (A000010).
+ * A078119 a(n) = sigma(n) - phi(n+2), where sigma = sum of divisors (A000203) and phi = Euler totient function (A000010).
  * a(n)=sigma(n,1)-eulerphi(n+2)
  * @author Georg Fischer
  */

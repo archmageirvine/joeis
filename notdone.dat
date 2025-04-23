@@ -2566,3 +2566,13 @@ A076894 Number of inequivalent linear projective ternary codes of length n (i.e.
 A076906 Meandric numbers for a river (or directed line) crossing two perpendicular roads at n points, beginning in the (-,-) quadrant and ending in the (+,+) quadrant if n even, in the (+,-) quadrant if n odd.
 A076907 Meandric numbers for a river crossing two perpendicular roads at n points, beginning in the (-,-) quadrant and ending in any quadrant.
 A076909 Coefficients of 4-point function in dimension 4.
+A076910 Coefficients of 5-point function in dimension 5.
+A076911 Coefficients of 6-point function in dimension 6.
+A076912 Number of degree-n rational curves on a general quintic threefold.
+A076913 Coefficients of 3-point function in dimension 4.
+A076914 Coefficients of 3-point function in dimension 5.
+A076915 Coefficients of 3-point function in dimension 5 Y^1_2.
+A076916 Coefficients of 3-point function in dimension 6.
+A076917 Coefficients of 3-point function in dimension 6.
+A076923 Coefficients of 3-point function in dimension 6.
+A076932 Largest k such that n*k has n divisors, or 0 if there are no possibilities for k or infinitely many.

@@ -22,7 +22,7 @@ import irvine.math.r.Constants;
  *
  * @author Sean A. Irvine
  */
-public class Z extends Number implements Comparable<Z>, IsInteger<Z> {
+public class Z extends Number implements Comparable<Z>, IsInteger {
   /*
    * Numbers are represented in base 2^30 (allowing a couple of spare
    * bits makes certain computations easier). The bits of the number

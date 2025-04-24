@@ -7,7 +7,7 @@ import irvine.math.cr.CR;
  * An object to hold an immutable computable complex number.
  * @author Sean A. Irvine
  */
-public class CC extends Number implements Comparable<CC>, IsInteger<CC> {
+public class CC extends Number implements Comparable<CC>, IsInteger {
 
   // Note this is primarily a container object and does not contain the code or
   // methods for actually operating on complex numbers.  The actual implementation

@@ -17,7 +17,7 @@ import irvine.math.z.Z;
  * @author Georg Fischer
  * @author Sean A. Irvine
  */
-public class KimberlingTreeSequence<E extends IsInteger<E>> extends AbstractSequence {
+public class KimberlingTreeSequence<E extends IsInteger> extends AbstractSequence {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN;

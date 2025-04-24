@@ -5,7 +5,7 @@ package irvine.math.api;
  * @author Sean A. Irvine
  * @param <E> element type
  */
-public interface IsInteger<E> {
+public interface IsInteger {
 
   /**
    * Test if the given value is an integer.

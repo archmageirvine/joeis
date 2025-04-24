@@ -141,7 +141,7 @@ import irvine.util.string.StringUtils;
 * @author Hans.Boehm@hp.com
 * @author Sean A. Irvine
 */
-public abstract class CR extends Number implements Comparable<CR>, IsInteger<CR> {
+public abstract class CR extends Number implements Comparable<CR>, IsInteger {
 
   /** The real number -1. */
   public static final CR NEG_ONE = valueOf(-1);

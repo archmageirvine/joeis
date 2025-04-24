@@ -12,17 +12,12 @@ import irvine.oeis.a007.A007947;
  */
 public class A076930 extends Sequence1 {
 
-  final Sequence mA007947 = new A007947();
-  protected long mN;
-  /** Construct the sequence. */
-  public A076930() {
-    mN = 0;
-  }
-  
+  private final Sequence mA007947 = new A007947();
+  protected long mN = 0;
+
   @Override
   public Z next() {
     ++mN;
     return mA007947.next().pow(Z.valueOf(mN)).divide(Z.valueOf(mN));
   }
-
 }

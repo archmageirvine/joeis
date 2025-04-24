@@ -9,7 +9,7 @@ import irvine.math.z.Z;
  * An object to hold an immutable Gaussian integer.
  * @author Sean A. Irvine
  */
-public class Zi extends Number implements Comparable<Zi>, IsInteger<Zi> {
+public class Zi extends Number implements Comparable<Zi>, IsInteger {
 
   /** Constant zero. */
   public static final Zi ZERO = new Zi(0);

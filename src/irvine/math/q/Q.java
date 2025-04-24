@@ -7,10 +7,9 @@ import irvine.math.z.Z;
 
 /**
  * An object to hold an immutable rational number.
- *
  * @author Sean A. Irvine
  */
-public class Q implements Comparable<Q>, IsInteger<Q>, Serializable {
+public class Q implements Comparable<Q>, IsInteger, Serializable {
 
   /** Constant negative one. */
   public static final Q NEG_ONE = new Q(Z.NEG_ONE);

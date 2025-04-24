@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
- * Chebyshev polynomials of the first kind.
+ * Chebyshev polynomials of the first and second kind.
  * @author Sean A. Irvine
  */
 public final class ChebyshevPolynomials extends MemoryFunction<Integer, Polynomial<Z>> {

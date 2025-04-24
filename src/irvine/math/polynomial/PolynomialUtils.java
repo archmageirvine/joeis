@@ -8,6 +8,7 @@ import irvine.math.api.Field;
 import irvine.math.api.Ring;
 import irvine.math.c.C;
 import irvine.math.c.ComplexField;
+import irvine.math.cr.CR;
 import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRing;
@@ -430,6 +431,24 @@ public final class PolynomialUtils {
         sum = elementRing.add(sum, elementRing.multiply(prod, elementRing.coerce(coeff)));
       }
       prod = elementRing.multiply(prod, x);
+    }
+    return sum;
+  }
+
+  /**
+   * Evaluate a rational polynomial over the computable reals.
+   * @param poly polynomial
+   * @param x value to evaluate at
+   * @return evaluation of the polynomial at <code>x</code>
+   */
+  public static CR eval(final Polynomial<Q> poly, final CR x) {
+    CR sum = CR.ZERO;
+    CR prod = CR.ONE;
+    for (final Q coeff : poly) {
+      if (!coeff.isZero()) {
+        sum = sum.add(prod.multiply(coeff));
+      }
+      prod = prod.multiply(x);
     }
     return sum;
   }

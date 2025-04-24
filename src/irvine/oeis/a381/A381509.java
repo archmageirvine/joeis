@@ -17,7 +17,7 @@ public class A381509 extends Sequence1 {
     while (true) {
       final int[] cnts = ZUtils.digitCounts(++mN);
       long v = 0;
-      for (int k = 1; k < 9; ++k) {
+      for (int k = 1; k < cnts.length; ++k) {
         for (int j = 0; j < cnts[k]; ++j) {
           v *= 10;
           v += k;

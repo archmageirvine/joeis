@@ -8,10 +8,15 @@ import irvine.math.z.Z;
  */
 public class A000610 extends A000721 {
 
-  private int mN = 0;
+  private int mN = -1;
+
+  /** Construct the sequence. */
+  public A000610() {
+    super(0);
+  }
 
   @Override
   public Z next() {
-    return f(++mN).apply(0, 1).toZ();
+    return ++mN == 0 ? Z.ZERO : f(mN).apply(0, 1).toZ();
   }
 }

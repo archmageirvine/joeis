@@ -2578,3 +2578,6 @@ A076923 Coefficients of 3-point function in dimension 6.
 A076932 Largest k such that n*k has n divisors, or 0 if there are no possibilities for k or infinitely many.
 A076951 Smallest k > 0 such that nk-1 is an n-th power, or 0 if no such number exists.
 A076952 n-th power associated with A076951, or 0 if no such number exists.
+A076961 Smallest multiple of n with prime(n) divisors, or 0 if no such number exists.
+A076964 a(1) = 3, then a(n) = smallest multiple of the previous term with as many divisors.
+A076965 a(1) = 2; thereafter a(n) is the smallest number coprime to a(n-1) and having a(n-1) divisors.

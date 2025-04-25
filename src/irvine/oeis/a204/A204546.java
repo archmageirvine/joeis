@@ -11,6 +11,6 @@ public class A204546 extends A203264 {
 
   /** Construct the sequence. */
   public A204546() {
-    super(1, new A204545(), 1);
+    super(0, new A204545(), 1);
   }
 }

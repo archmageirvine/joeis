@@ -144,14 +144,13 @@ public final class ComputableComplexField extends AbstractField<CC> implements E
   public CR arg(final CC z) {
     final CR x = z.re();
     final CR y = z.im();
-    if (y == CR.ZERO) {
-      final int c = x.compareTo(CR.ZERO);
-      if (c > 0) {
+    if (y.compareTo(CR.ZERO, -1024) == 0) {
+      final int c = x.signum(-1024);
+      if (c >= 0) {
+        // Strictly speaking c==0 is undefined
         return CR.ZERO;
-      } else if (c < 0) {
-        return CR.PI;
       } else {
-        return null; // undefined
+        return CR.PI;
       }
     } else {
       return ComputableReals.SINGLETON.atan(abs(z).subtract(x).divide(y)).multiply(CR.TWO);
@@ -403,5 +402,14 @@ public final class ComputableComplexField extends AbstractField<CC> implements E
       return true;
     }
     throw new UnsupportedOperationException();
+  }
+
+  /**
+   * Return the complex number corresponding to <code>cis(z) = exp(i*z)</code>.
+   * @param z argument
+   * @return complex number
+   */
+  public CC cis(final CR z) {
+    return new CC(z.cos(), z.sin());
   }
 }

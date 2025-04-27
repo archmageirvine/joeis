@@ -18,6 +18,7 @@ import java.util.function.Function;
 import irvine.graph.Vertex;
 import irvine.math.IntegerUtils;
 import irvine.math.api.Field;
+import irvine.math.api.Matrix;
 import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.MatrixRing;
@@ -1223,6 +1224,21 @@ public final class GraphUtils {
 //      }
 //    }
 //    return true;
+  }
+
+  /**
+   * Return the adjacency matrix for a graph.
+   * @param graph the graph
+   * @return adjacency matrix
+   */
+  public static Matrix<Z> toAdjacencyMatrix(final Graph graph) {
+    final Matrix<Z> mat = new DefaultMatrix<>(graph.order(), graph.order(), Z.ZERO);
+    for (int u = 0; u < graph.order(); ++u) {
+      for (int v = graph.nextVertex(u, -1); v >= 0; v = graph.nextVertex(u, v)) {
+        mat.set(u, v, Z.ONE);
+      }
+    }
+    return mat;
   }
 }
 

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069044 N(B(2*p))/p for p prime&gt;=5 and where N(B(2n)) are the numerators of Bernoulli numbers.
+ * A069044 N(B(2*p))/p for p prime &gt;= 5 and where N(B(2n)) are the numerators of Bernoulli numbers.
  * @author Sean A. Irvine
  */
 public class A069044 extends Sequence1 {

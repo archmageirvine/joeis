@@ -3,7 +3,7 @@ package irvine.oeis.a383;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A383116 allocated for Ambarneil Saha.
+ * A383116 Permissible phase values, in degrees, associated with restricted Fourier amplitudes obtained via Fourier transform of a three-dimensional crystal lattice.
  * @author Sean A. Irvine
  */
 public class A383116 extends FiniteSequence {

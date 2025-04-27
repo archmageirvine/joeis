@@ -6,7 +6,7 @@ package irvine.oeis.a110;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A110609 a(n) = n * C(2*n,n-1).
+ * A110609 a(n) = n * binomial(2*n, n-1).
  * @author Georg Fischer
  */
 public class A110609 extends HolonomicRecurrence {

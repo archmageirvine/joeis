@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072980 Numerator of b(n)=sum (k'&lt;=n,1/k') where k' denotes the squarefree numbers.
+ * A072980 Numerator of b(n) = Sum_{k'&lt;=n} 1/k', where k' denotes the squarefree numbers.
  * @author Sean A. Irvine
  */
 public class A072980 extends Sequence1 {

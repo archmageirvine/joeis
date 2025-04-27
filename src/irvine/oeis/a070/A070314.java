@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A070314 P(n!+1)-P(2^n+1) where P(x) is the largest prime factor in x.
+ * A070314 a(n) = P(n!+1)-P(2^n+1) where P(x) is the largest prime factor in x.
  * @author Georg Fischer
  */
 public class A070314 extends LambdaSequence {

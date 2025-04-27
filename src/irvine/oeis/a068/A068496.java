@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068496 n! reduced mod 2^n.
+ * A068496 a(n) = n! reduced mod 2^n.
  * @author Sean A. Irvine
  */
 public class A068496 extends Sequence1 {

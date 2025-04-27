@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068402 Numbers n such that sigma(n+1)=n+phi(n).
+ * A068402 Numbers n such that sigma(n+1) = n + phi(n).
  * @author Sean A. Irvine
  */
 public class A068402 extends Sequence1 {

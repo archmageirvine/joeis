@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A068410 Numbers n such that (n+1) is composite and (n+1) divides 3^n-2^n.
+ * A068410 Numbers k such that k+1 is composite and divides 3^k-2^k.
  * @author Sean A. Irvine
  */
 public class A068410 extends A002808 {

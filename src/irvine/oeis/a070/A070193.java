@@ -4,7 +4,7 @@ import irvine.oeis.SetDifferenceSequence;
 import irvine.oeis.a069.A069040;
 
 /**
- * A070193 Numbers n such that gcd(3n,8^n+1) = 3 but n does not divide the numerator of B(2n) (the Bernoulli numbers).
+ * A070193 Numbers k such that gcd(3k,8^k+1) = 3 but k does not divide the numerator of B(2k) (the Bernoulli numbers).
  * @author Sean A. Irvine
  */
 public class A070193 extends SetDifferenceSequence {

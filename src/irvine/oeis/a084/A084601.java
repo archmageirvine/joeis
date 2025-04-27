@@ -5,7 +5,7 @@ package irvine.oeis.a084;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A084601 Coefficients of 1/(1-2x-7x^2)^(1/2); also, a(n) is the central coefficient of (1+x+2x^2)^n.
+ * A084601 Coefficients of 1/(1-2*x-7*x^2)^(1/2); also, a(n) is the central coefficient of (1+x+2*x^2)^n.
  * @author Georg Fischer
  */
 public class A084601 extends HolonomicRecurrence {

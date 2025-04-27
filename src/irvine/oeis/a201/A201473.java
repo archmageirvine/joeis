@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A201473 Primes of the form 2n^2 + 3.
+ * A201473 Primes of the form 2*k^2 + 3.
  * @author Georg Fischer
  */
 public class A201473 extends PrimeSubsequence {

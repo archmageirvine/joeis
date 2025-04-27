@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A076963 Lexicographically earliest increasing sequence of relatively prime numbers with nondecreasing number of divisors. a(1) = 1, tau(a(n+1)) &gt;= tau(a(n)) and GCD(a(n),a(n+1)) = 1.
+ * A076963 Lexicographically earliest increasing sequence of relatively prime numbers with nondecreasing number of divisors. a(0) = 1, tau(a(n+1)) &gt;= tau(a(n)) and GCD(a(n),a(n+1)) = 1.
  * @author Sean A. Irvine
  */
 public class A076963 extends Sequence0 {

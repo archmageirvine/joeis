@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A120827 Primes with n consecutive digits ascending beginning with the digit nine.
+ * A120827 a(n) consecutive digits ascending beginning with the digit 9 give a prime.
  *
  * @author Georg Fischer
  */

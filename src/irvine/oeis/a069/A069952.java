@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069952 Numbers n such that (n+1)*phi(n) is a perfect square.
+ * A069952 Numbers k such that (k+1)*phi(k) is a perfect square.
  * @author Sean A. Irvine
  */
 public class A069952 extends Sequence1 {

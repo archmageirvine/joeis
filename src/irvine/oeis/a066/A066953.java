@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A066953 Integers of the form (n!+1)/prime(n).
+ * A066953 Integers of the form (k!+1)/prime(k).
  * @author Sean A. Irvine
  */
 public class A066953 extends A000040 {

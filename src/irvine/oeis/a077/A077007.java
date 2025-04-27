@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A077007 Primes (k) such that prime(k)*prime(k+1) + 1 or prime(k)*prime(k+1)- 1 is divisible by prime(k+2).
+ * A077007 Primes p such that p*q+1 or p*q-1 is divisible by r where q = nextprime(p) and r=nextprime(q).
  * @author Sean A. Irvine
  */
 public class A077007 extends A000040 {

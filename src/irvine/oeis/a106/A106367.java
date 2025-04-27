@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A106367 Necklaces with n beads of 5 colors, no 2 adjacent beads the same color.
+ * A106367 Number of necklaces with n beads of 5 colors, no 2 adjacent beads the same color.
  * @author Georg Fischer
  */
 public class A106367 extends LambdaSequence {

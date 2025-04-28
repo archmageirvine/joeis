@@ -46,16 +46,10 @@ public class A077013 extends Sequence1 {
         }
       }
       //System.out.println("sum=" + sum);
-      CR canon = ComputableComplexField.SINGLETON.arg(sum);
+      CR canon = ComputableComplexField.SINGLETON.arg(sum).frac();
+      canon = canon.min(CR.ONE.subtract(canon));
       for (int k = 0; k < 2 * mN; ++k) {
         final CR a = ComputableComplexField.SINGLETON.arg(ComputableComplexField.SINGLETON.multiply(sum, angles[k]));
-        if (a.compareTo(canon, -32) < 0) {
-          canon = a;
-        }
-      }
-      final CC neg = ComputableComplexField.SINGLETON.negate(sum);
-      for (int k = 0; k < 2 * mN; ++k) {
-        final CR a = ComputableComplexField.SINGLETON.arg(ComputableComplexField.SINGLETON.multiply(neg, angles[k]));
         if (a.compareTo(canon, -32) < 0) {
           canon = a;
         }

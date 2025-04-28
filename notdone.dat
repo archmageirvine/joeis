@@ -1608,9 +1608,6 @@ A051465 Order of group G_{1,n}
 A051483 Order of group H_{1,n}
 A051485 Number of double nodes (exactly two nodes on that level) for all Motzkin paths of length n [insufficient detail]
 A051486 Triangle T(n,k) = number of symmetric Boolean functions of n variables and rank from 0 to 2^n
-A051491 Decimal expansion of Otter's rooted tree constant: lim_{n->inf} A000081(n+1)/A000081(n).
-A051492 Continued fraction for Otter's rooted tree constant: lim_{n->inf} A000081(n+1)/A000081(n).
-A051496 Decimal expansion of probability that a point of an infinite (rooted) tree is fixed by every automorphism of the tree.
 A051526 Order of group G_{1,n}^{8}
 A051527 Order of group H_{1,n}^{8}
 A051569 Consider the problem of placing N = A051756(n) queens on an n X n board so that each queen attacks precisely 3 others; a(n) gives the number of inequivalent solutions [probably erroneous]

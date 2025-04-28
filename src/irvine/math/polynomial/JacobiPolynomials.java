@@ -13,6 +13,9 @@ import irvine.math.z.Z;
  */
 public final class JacobiPolynomials {
 
+  private JacobiPolynomials() {
+  }
+
   private static final PolynomialRing<Q> RING = new PolynomialRing<>(Rationals.SINGLETON);
   private static final Polynomial<Q> CM = Polynomial.create(new Q(-1, 2), Q.HALF);
   private static final Polynomial<Q> CP = Polynomial.create(Q.HALF, Q.HALF);

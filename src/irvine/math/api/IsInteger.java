@@ -3,7 +3,6 @@ package irvine.math.api;
 /**
  * Definition of a method to test if a value is an integer.
  * @author Sean A. Irvine
- * @param <E> element type
  */
 public interface IsInteger {
 

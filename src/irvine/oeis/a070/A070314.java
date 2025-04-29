@@ -13,6 +13,6 @@ public class A070314 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A070314() {
-    super(1, n -> Functions.GPF.z(Functions.FACTORIAL.z(n).add(1)).subtract(Functions.GPF.z(Z.TWO.pow(n).add(1))));
+    super(0, n -> Functions.GPF.z(Functions.FACTORIAL.z(n).add(1)).subtract(Functions.GPF.z(Z.TWO.pow(n).add(1))));
   }
 }

@@ -10,10 +10,9 @@ import irvine.oeis.triangle.UpperLeftTriangle;
  */
 public class A114423 extends UpperLeftTriangle {
 
-
   /** Construct the sequence. */
   public A114423() {
-    super(1, 1, 1);
+    super(0, 1, 1);
   }
 
   @Override

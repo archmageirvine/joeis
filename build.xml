@@ -189,13 +189,13 @@
     </jar>
   </target>
   
-  <target name="prepare-tests" description="Get the file stripped.gz from the OEIS server and preprocess it for the tests">
+  <target name="prepare-tests" depends="compile-internal" description="Get the file stripped.gz from the OEIS server and preprocess it for the tests">
     <subant target="expand-vectors">
       <filelist dir="${test.dir}/irvine/oeis" files="build.xml"/>
     </subant>
   </target>
 
-  <target name="all-tests" depends="prepare-tests,all-jar" description="Run all JUnit tests">
+  <target name="all-tests" depends="prepare-tests" description="Run all JUnit tests">
     <!-- may take more than 2 hours -->
     <java classname="junit.textui.ReelTwoTestRunner" classpath="${tools.dir}/reeltwo_junit.jar:${build.dir}/joeis.jar" fork="true">
       <arg value="AllTests"/>                                    

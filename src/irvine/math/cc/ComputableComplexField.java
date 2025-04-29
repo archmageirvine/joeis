@@ -144,7 +144,8 @@ public final class ComputableComplexField extends AbstractField<CC> implements E
   public CR arg(final CC z) {
     final CR x = z.re();
     final CR y = z.im();
-    if (y.compareTo(CR.ZERO, -1024) == 0) {
+    if (y == CR.ZERO) {
+      //if (y.compareTo(CR.ZERO, -1024) == 0) { // WARNING: A059527 infinite time if this is used!
       final int c = x.signum(-1024);
       if (c >= 0) {
         // Strictly speaking c==0 is undefined

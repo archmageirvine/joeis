@@ -25,7 +25,7 @@ public class A077013 extends Sequence1 {
 
   @Override
   public Z next() {
-    if (++mN == 1) {
+    if (++mN >= 1) { // temporary
       return Z.ONE;
     }
     final CR theta = CR.PI.divide(mN);

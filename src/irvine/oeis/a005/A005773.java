@@ -1,25 +1,32 @@
 package irvine.oeis.a005;
 
+import irvine.math.z.Binomial;
+import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.DirectSequence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A005773 Number of directed animals of size n (or directed n-ominoes in standard position).
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A005773 extends Sequence0 {
+public class A005773 extends HolonomicRecurrence implements DirectSequence {
 
-  private Z mA = Z.ONE;
-  private Z mB = Z.ONE;
-  private long mN = -1;
+  /** Construct the sequence. */
+  public A005773() {
+    // D-finite with recurrence n*a(n) = 2*n*a(n-1) + 3*(n-2)*a(n-2), a(0)=a(1)=1.
+    super(0, "[[0],[-6, 3],[0, 2],[0,-1]]", "1, 1, 2", 0, 0);
+  }
 
   @Override
-  public Z next() {
-    if (++mN > 1) {
-      final Z t = mB.multiply(mN).multiply2().add(mA.multiply(mN - 2).multiply(3)).divide(mN);
-      mA = mB;
-      mB = t;
-    }
-    return mB;
+  public Z a(final Z n) {
+    return a(n.intValueExact());
   }
+
+  @Override
+  public Z a(final int n) {
+    // a(n) = Sum_{q=0..n} binomial(q, floor(q/2))*binomial(n-1, q) for n > 0
+    return n == 0 ? Z.ONE : Integers.SINGLETON.sum(0, n, k -> Binomial.binomial(k, k / 2).multiply(Binomial.binomial(n - 1, k)));
+  }
+
 }

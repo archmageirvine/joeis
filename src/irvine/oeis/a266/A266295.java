@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A266295 2-free tetranacci sequence beginning 1, 3, 5, 7.
+ * A266295 2-free tetranacci sequence beginning 1,3,5,7.
  * @author Georg Fischer
  */
 public class A266295 extends MultiTransformSequence {

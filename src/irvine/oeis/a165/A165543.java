@@ -4,7 +4,7 @@ package irvine.oeis.a165;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A165543 Number of permutations of length n which avoid the patterns 3241 and 4321.
+ * A165543 Number of permutations of length n which avoid both the patterns 3241 and 4321. Or, equivalently, avoids both 1234 and 1342.
  * 1/(1-1/2*x*(1-(-1+2*(1-4*x)^(1/2))^(1/2))/(1/2-1/2*(1-4*x)^(1/2)))
  * @author Georg Fischer
  */

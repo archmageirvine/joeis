@@ -4,7 +4,7 @@ package irvine.oeis.a355;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A355203 E.g.f. A(x) satisfies A&apos;(x) = 1 + A(1 - exp(-x)).
+ * A355203 E.g.f. A(x) satisfies A'(x) = 1 + A(1 - exp(-x)).
  * E.g.f.A(x) satisfies A'(x) = 1 + A(1 - exp(-x)).a(n+1) = Sum_{k=1..n} (-1)^(n-k) * Stirling2(n,k) * a(k)
  * @author Georg Fischer
  */

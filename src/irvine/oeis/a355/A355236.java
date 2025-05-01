@@ -4,7 +4,7 @@ package irvine.oeis.a355;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A355236 E.g.f. A(x) satisfies A&apos;(x) = 1 + (exp(x) - 1) * A(2*x)/2.
+ * A355236 E.g.f. A(x) satisfies A'(x) = 1 + (exp(x) - 1) * A(2*x)/2.
  * E.g.f.A(x) satisfies A'(x) = 1 + (exp(x) - 1) * A(2*x)/2.nonn    0..18   nyi     _Seiichi Manyama
  * @author Georg Fischer
  */

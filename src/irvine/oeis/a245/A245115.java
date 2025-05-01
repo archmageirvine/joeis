@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A245115 E.g.f. satisfies: A&apos;(x) = (cos(x) + sin(x)*A(x)) / (cos(x)*A(x) - sin(x)).
+ * A245115 E.g.f. satisfies: A'(x) = (cos(x) + sin(x)*A(x)) / (cos(x)*A(x) - sin(x)).
  * @author Georg Fischer
  */
 public class A245115 extends PolynomialFieldSequence {

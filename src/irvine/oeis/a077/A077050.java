@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077048.
+ * A077050 Left Moebius transformation matrix, M, by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A077050 extends Sequence1 {

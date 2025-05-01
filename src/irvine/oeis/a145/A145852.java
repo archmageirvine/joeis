@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A145852 Primes of the form k followed by a 0 and k 9&apos;s.
+ * A145852 Primes of the form k followed by a 0 and k 9's.
  * @author Georg Fischer
  */
 public class A145852 extends FilterSequence {

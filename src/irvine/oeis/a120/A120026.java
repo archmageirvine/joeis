@@ -6,7 +6,7 @@ import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A120026 Decimal expansion of the value of Minkowski&apos;s question mark function at the base of the natural logarithm.
+ * A120026 Decimal expansion of the value of Minkowski's question mark function at the base of the natural logarithm.
  * Formula: Decimal expansion of the value of Minkowskis question mark function at the base of the natural logarithm.
  * @author Georg Fischer
  */

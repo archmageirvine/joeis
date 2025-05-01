@@ -4,7 +4,7 @@ package irvine.oeis.a355;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A355208 E.g.f. A(x) satisfies A&apos;(x) = 1 + A(2 * log(1+x)).
+ * A355208 E.g.f. A(x) satisfies A'(x) = 1 + A(2 * log(1+x)).
  * E.g.f.A(x) satisfies A'(x) = 1 + A(2 * log(1+x)).
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A197320 a(n) = cosh( n*arccosh(3^n) ).
+ * A197320 a(n) = cosh(n*arccosh(2^n)).
  * @author Georg Fischer
  */
 public class A197320 extends LambdaSequence {

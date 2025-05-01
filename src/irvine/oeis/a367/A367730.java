@@ -6,7 +6,7 @@ import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A367730 Decimal expansion of BesselJ(0, 2/sqrt(3)).
+ * A367730 Decimal expansion of BesselJ(0,2/sqrt(3)).
  * Formula: Decimal expansion of BesselI(0, 2/sqrt(3)).
  * @author Georg Fischer
  */

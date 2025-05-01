@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A228608 E.g.f. A(x) satisfies: A&apos;(x) = A(x)^2 + A(x)^4.
+ * A228608 E.g.f. A(x) satisfies: A'(x) = A(x)^2 + A(x)^4.
  * E.g.f.A(x) satisfies: dif(A(x)) = A(x)^2 + A(x)^4.
  * @author Georg Fischer
  */

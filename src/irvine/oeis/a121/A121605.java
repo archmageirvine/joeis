@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A121605 Primes of the form (Fibonacci[n+3] + 2) = A018910[n], Pisot sequence L(4, 5).
+ * A121605 Primes of the form (Fibonacci[n+3] + 2) = A018910[n], Pisot sequence L(4,5).
  * @author Georg Fischer
  */
 public class A121605 extends FilterSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A072972 Numerator of b(n) = (50*n-6)/C(3n,n)/2^n.
+ * A072972 Numerator of b(n) = (50*n-6)/(binomial(3n,n)*2^n).
  * @author Georg Fischer
  */
 public class A072972 extends LambdaSequence {

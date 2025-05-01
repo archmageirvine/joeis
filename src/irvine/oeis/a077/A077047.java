@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.math.z.Z;
 
 /**
- * A077046.
+ * A077047 Doubly restricted composition numbers: number of compositions of floor(n(n+2)/2) into exactly n positive integers each no more than n+1.
  * @author Sean A. Irvine
  */
 public class A077047 extends A077042 {

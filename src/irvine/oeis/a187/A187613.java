@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A187613 Primes of the form 2*(n+1)^n-1
+ * A187613 Primes of the form 2*(n+1)^n-1.
  * @author Georg Fischer
  */
 public class A187613 extends FilterSequence {

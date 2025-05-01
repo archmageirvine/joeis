@@ -4,7 +4,7 @@ package irvine.oeis.a110;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A110100 a(n) is the number of 2-regular 3-hypergraphs on 3n labeled vertices. (In a 3-hypergraph, each hyper-edge is a proper 3-set; 2-regular implies that each vertex is in exactly 2 hyperedges.)
+ * A110100 a(n) is the number of 2-regular 3-hypergraphs on 3n labeled vertices. (In a 3-hypergraph, each hyper-edge is a proper 3-set; 2-regular implies that each vertex is in exactly 2 hyperedges.).
  * @author Georg Fischer
  */
 public class A110100 extends HolonomicRecurrence {

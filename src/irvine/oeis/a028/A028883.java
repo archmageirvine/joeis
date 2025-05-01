@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A028883 Primes of form n^2 - 7.
+ * A028883 Primes of the form k^2 - 7.
  * @author Sean A. Irvine
  */
 public class A028883 extends Sequence1 {

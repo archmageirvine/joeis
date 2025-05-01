@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A110959 Numbers n such that 23*n^2 + 1 is prime.
+ * A110959 Numbers k such that 23*k^2 + 1 is prime.
  * @author Georg Fischer
  */
 public class A110959 extends PrimePositionSubsequence {

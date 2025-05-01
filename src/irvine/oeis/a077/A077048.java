@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A077048.
+ * A077048 Doubly restricted composition numbers: number of compositions of [n^2/2] into up to n positive integers each no more than n.
  * @author Sean A. Irvine
  */
 public class A077048 extends Sequence0 {

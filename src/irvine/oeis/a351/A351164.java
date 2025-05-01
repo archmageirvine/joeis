@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A351164 Decimal expansion of gamma * BesselI(0, 2) + BesselK(0, 2).
+ * A351164 Decimal expansion of gamma * BesselI(0,2) + BesselK(0,2).
  * Formula: Decimal expansion of gamma * BesselI(0, 2) + BesselK(0, 2).
  * @author Georg Fischer
  */

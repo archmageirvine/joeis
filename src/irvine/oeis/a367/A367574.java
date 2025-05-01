@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A367574 Decimal expansion of BesselI(0, 2*sqrt(2)).
+ * A367574 Decimal expansion of BesselI(0,2*sqrt(2)).
  * Formula: Decimal expansion of BesselI(0, 2*sqrt(2)).
  * @author Georg Fischer
  */

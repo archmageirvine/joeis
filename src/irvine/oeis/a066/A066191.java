@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066191 Numbers n such that the sum of the odd aliquot parts of n divides n.
+ * A066191 Numbers k such that the sum of the odd aliquot parts of k divides k.
  * @author Sean A. Irvine
  */
 public class A066191 extends Sequence1 {

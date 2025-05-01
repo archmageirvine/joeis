@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a217.A217562;
 
 /**
- * A383227 a(n) is the product of first n even numbers not divisible by 5 (cf. A217562)
+ * A383227 a(n) is the product of first n even numbers not divisible by 5 (cf. A217562).
  * @author Georg Fischer
  */
 public class A383227 extends PartialProductSequence {

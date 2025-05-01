@@ -6,7 +6,7 @@ import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A119927 Decimal expansion of the value of Minkowski&apos;s question mark function at 1/Pi.
+ * A119927 Decimal expansion of the value of Minkowski's question mark function at 1/Pi.
  * Formula: Decimal expansion of the value of Minkowskis question mark function at 1/Pi.
  * @author Georg Fischer
  */

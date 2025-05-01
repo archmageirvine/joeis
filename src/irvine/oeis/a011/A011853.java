@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A011853 [ binomial(n,7)/7 ].
+ * A011853 a(n) = floor( binomial(n,7)/7 ).
  * @author Sean A. Irvine
  */
 public class A011853 extends Sequence0 {

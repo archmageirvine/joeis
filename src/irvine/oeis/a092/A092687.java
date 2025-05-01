@@ -4,7 +4,7 @@ package irvine.oeis.a092;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A092687 First column and main diagonal of triangle A092686, in which the convolution of each row with {1, 2} produces a triangle that, when flattened, equals the flattened form of A092686.
+ * A092687 First column and main diagonal of triangle A092686, in which the convolution of each row with {1,2} produces a triangle that, when flattened, equals the flattened form of A092686.
  * G.f.satisfies: A(x) = A(x^2/(1-2x))/(1-2x).Recurrence: a(n) = Sum_{k=0..floor(n/2)} C(n-k,k)*2^(n-2k)*a(k).- _Paul D.Hanna_, Jul 10 2006
  * @author Georg Fischer
  */

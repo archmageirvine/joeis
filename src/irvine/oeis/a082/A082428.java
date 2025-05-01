@@ -5,7 +5,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A082428 a(1)=1, a(n)=n*(a(n-1)+a(n-2)+...+a(2)+a(1)) + 3.
+ * A082428 a(1) = 1; a(n) = 3 + n * Sum_{k=1..n-1} a(k).
  * @author Georg Fischer
  */
 public class A082428 extends MultiTransformSequence {

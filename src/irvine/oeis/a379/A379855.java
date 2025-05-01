@@ -6,7 +6,7 @@ import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A379855 Decimal expansion of Pi*BesselY(0, 2)/2.
+ * A379855 Decimal expansion of Pi*BesselY(0,2)/2.
  * Formula: Decimal expansion of Pi*BesselY(0, 2)/2.
  * @author Georg Fischer
  */

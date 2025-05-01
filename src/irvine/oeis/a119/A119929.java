@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002210;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A119929 Decimal expansion of the value of Minkowski&apos;s question mark function at Khinchin&apos;s constant (A002210).
+ * A119929 Decimal expansion of the value of Minkowski's question mark function at Khinchin's constant (A002210).
  * Formula: Decimal expansion of the value of Minkowskis question mark function at Khinchins constant(A002210).
  * @author Georg Fischer
  */

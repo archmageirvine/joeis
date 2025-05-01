@@ -4,7 +4,7 @@ package irvine.oeis.a088;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A088189 E.g.f. : 1/(1-sinh(x)-x-x^2).
+ * A088189 Expansion of e.g.f.: 1/(1-sinh(x)-x-x^2).
  * E.g.f.: 1/(1-sinh(x)-x-x^2).
  * @author Georg Fischer
  */

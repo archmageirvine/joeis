@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a025.A025550;
 
 /**
- * A074599 Numerator of 2 * H(n,2,1), a generalized harmonic number. See A075135. Also 2 * A025550.
+ * A074599 Numerator of 2 * H(n,2,1), a generalized harmonic number. See A075135. Also 2 * A350669.
  * @author Georg Fischer
  */
 public class A074599 extends AbstractSequence {

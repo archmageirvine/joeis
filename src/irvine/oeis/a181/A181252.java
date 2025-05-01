@@ -4,7 +4,7 @@ package irvine.oeis.a181;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A181252 Number of n X 9 binary matrices with no 2 X 2 block having four 1&apos;s.
+ * A181252 Number of n X 9 binary matrices with no 2 X 2 block having four 1's.
  * @author Georg Fischer
  */
 public class A181252 extends HolonomicRecurrence {

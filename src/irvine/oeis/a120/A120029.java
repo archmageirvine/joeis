@@ -6,7 +6,7 @@ import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A120029 Decimal expansion of the value of Minkowski&apos;s question mark function at Levy&apos;s constant (Exp[Pi^2/(12*Log[2])], A086702).
+ * A120029 Decimal expansion of the value of Minkowski's question mark function at Levy's constant (Exp[Pi^2/(12*Log[2])], A086702).
  * Formula: Decimal expansion of the value of Minkowskis question mark function at Levys constant(Exp[Pi^2/(12*Log[2])], ?086702).
  * @author Georg Fischer
  */

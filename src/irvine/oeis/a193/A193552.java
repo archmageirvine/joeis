@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A193552 Prime numbers ending in James Bond number &apos;&apos;007&apos;&apos;
+ * A193552 Prime numbers ending in James Bond number ''007''.
  * @author Georg Fischer
  */
 public class A193552 extends FilterSequence {

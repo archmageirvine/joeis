@@ -43,6 +43,7 @@ public class DecimalExpansionSequence extends RealConstantSequence implements Se
   }
 
   private final int mBase;
+  private final int mLookaheadDigitsHeuristic; // lookahead of digits needed to ensure correct result
   private String mS = "";
   protected int mN;
 
@@ -51,19 +52,34 @@ public class DecimalExpansionSequence extends RealConstantSequence implements Se
    * @param offset OEIS offset
    * @param x the number
    * @param base base for expansion
+   * @param lookaheadDigits number of digits to lookahead before deciding on the current digit
    */
-  public DecimalExpansionSequence(final int offset, final CR x, final int base) {
+  public DecimalExpansionSequence(final int offset, final CR x, final int base, final int lookaheadDigits) {
     // "offset" here is supposed to be number of digits before decimal point.
     // For us anything non-negative means we generate straight away, but a
     // negative value means we should skip some leading 0s
     super(offset, x);
     mBase = base;
+    // Occasionally we encounter numbers (e.g. A119925) where an unusual number of
+    // digits must be examined in order to determine what the next digit it.
+    // This parameter controls that.
+    mLookaheadDigitsHeuristic = lookaheadDigits;
     // We want to set mN to one less than first term to generate from the expansion.
     // For most numbers (non-negative offset) we want to start generating from the
     // first digit of the expansion.  But if the offset is negative -- e.g. for a
     // constant like 0.0001 -- we need to skip the leading zeros.
     // Caveat: some offsets in the OEIS and likely incorrect!
     mN = offset >= 0 ? -1 : 1 - offset;
+  }
+
+  /**
+   * Construct a new expansion of a computable real number.
+   * @param offset OEIS offset
+   * @param x the number
+   * @param base base for expansion
+   */
+  public DecimalExpansionSequence(final int offset, final CR x, final int base) {
+    this(offset, x, base, 32);
   }
 
   protected DecimalExpansionSequence(final int offset, final CR x) {
@@ -82,11 +98,7 @@ public class DecimalExpansionSequence extends RealConstantSequence implements Se
   }
 
   private void updateString() {
-    // The 32 below is number of extra digits to ensure we have in the queue.
-    // In pathological cases this might not be enough, and if we ever find
-    // such a number in the OEIS we will need another parameter to control this
-    // heuristic.
-    while (mN >= mS.length() - 32) {
+    while (mN >= mS.length() - mLookaheadDigitsHeuristic) {
       final int newLength = 2 * mS.length() + 1;
       ensureAccuracy(newLength);
       mS = getCR().toString(newLength, mBase);

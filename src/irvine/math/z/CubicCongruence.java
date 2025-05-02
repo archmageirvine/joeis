@@ -128,7 +128,6 @@ public final class CubicCongruence {
 
         // If f'(residue) is not invertible modulo pk, handle the special case
         if (!fxPrime.gcd(pk).equals(Z.ONE)) {
-          // Find additional residues for f(residue) ≡ 0 (mod pk) by adding multiples of p
           Z liftedResidue = residue;
           while (liftedResidue.compareTo(pk) < 0) {
             if (liftedResidue.modPow(Z.THREE, pk).subtract(a).mod(pk).isZero()) {

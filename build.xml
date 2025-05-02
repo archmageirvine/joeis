@@ -56,7 +56,7 @@
     </javac>
   </target>
 
-  <target name="compile-internal" description="Compile the internal">
+  <target name="compile-internal" depends="compile-src" description="Compile the internal">
     <mkdir dir="${build.dir}/classes-debug"/>
     <javac srcdir="${internal.dir}" source="1.10" destdir="${build.dir}/classes" includeantruntime="false">
       <classpath>

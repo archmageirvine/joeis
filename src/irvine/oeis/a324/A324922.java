@@ -6,7 +6,6 @@ import irvine.oeis.MultiplicativeSequence;
 
 /**
  * A324922 a(n) = unique m such that m/A003963(m) = n, where A003963 is product of prime indices.
- * Multiplicative with: a(prime(n)) = prime(n) * a(n). - _R√©my Sigrist_, Jul 18 2019
  * @author Georg Fischer
  */
 public class A324922 extends MultiplicativeSequence {

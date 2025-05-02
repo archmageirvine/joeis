@@ -40,5 +40,3 @@ public class A358432 extends Sequence1 {
     }
   }
 }
-
-// PARI) is(n)= while (n, if (n==I, return (0), real(n)%2==imag(n)%2, n = n/(1+I), n = (n-1)/(1+I)); ); return (1); \\ Rémy Sigrist, Nov 16 2022

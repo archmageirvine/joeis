@@ -10,7 +10,12 @@ import irvine.math.z.Z;
  */
 public class A047890 extends A047874 {
 
-  private int mN = 0;
+  private int mN = -1;
+
+  /** Construct the sequence. */
+  public A047890() {
+    super(0);
+  }
 
   @Override
   public Z next() {

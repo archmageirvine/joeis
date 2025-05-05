@@ -26,7 +26,7 @@ public final class LaguerrePolynomials {
    * @return Jacobi polynomial
    */
   public static Polynomial<Q> p(final int alpha, final long n) {
-    Polynomial<Q> res = RING.empty();
+    final Polynomial<Q> res = RING.empty();
     for (long m = 0; m <= n; ++m) {
       res.add(new Q(Z.NEG_ONE.pow(m).multiply(Binomial.binomial(n + alpha, n - m)), Functions.FACTORIAL.z(m)));
     }

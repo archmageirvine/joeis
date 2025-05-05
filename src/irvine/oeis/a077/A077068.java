@@ -8,10 +8,10 @@ import irvine.oeis.a008.A008864;
  * A077063.
  * @author Sean A. Irvine
  */
-public class A077067 extends FilterSequence {
+public class A077068 extends FilterSequence {
 
   /** Construct the sequence. */
-  public A077067() {
-    super(1, new A008864(), Predicates.SQUARE_FREE::is);
+  public A077068() {
+    super(1, new A008864(), Predicates.SEMIPRIME::is);
   }
 }

@@ -1,0 +1,29 @@
+package irvine.oeis.a383;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence0;
+
+/**
+ * A077046.
+ * @author Sean A. Irvine
+ */
+public class A383422 extends Sequence0 {
+
+  private StringBuilder mA = new StringBuilder("0");
+  private StringBuilder mB = null;
+  private int mN = 0;
+
+  @Override
+  public Z next() {
+    if (mB == null) {
+      mB = new StringBuilder("011");
+    } else if (mN >= mB.length()) {
+      final StringBuilder t = new StringBuilder(mA).append(mB);
+      mA = mB;
+      mB = t;
+      mN = 0;
+    }
+    return Z.valueOf(mB.charAt(mN++) - '0');
+  }
+}
+

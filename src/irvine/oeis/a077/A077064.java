@@ -2,16 +2,16 @@ package irvine.oeis.a077;
 
 import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterSequence;
-import irvine.oeis.a008.A008864;
+import irvine.oeis.a006.A006093;
 
 /**
  * A077063.
  * @author Sean A. Irvine
  */
-public class A077067 extends FilterSequence {
+public class A077064 extends FilterSequence {
 
   /** Construct the sequence. */
-  public A077067() {
-    super(1, new A008864(), Predicates.SQUARE_FREE::is);
+  public A077064() {
+    super(1, new A006093(), Predicates.SQUARE_FREE::is);
   }
 }

@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A381103.
+ * A383349 Numbers that have the same set of digits as the sum of 4th powers of its digits.
  * @author Sean A. Irvine
  */
 public class A383349 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A381103.
+ * A382669 Even numbers m such that both p = m^2 + 1 and q = (p^2 + 1)/2 are primes.
  * @author Sean A. Irvine
  */
 public class A382669 extends Sequence1 {

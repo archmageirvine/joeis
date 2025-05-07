@@ -5,7 +5,7 @@ package irvine.oeis.a086;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A086947 Numbers k such that Reverse(k+9) = 3.
+ * A086947 Numbers k such that R(k+9) = 3.
  * Recurrence: a(n)=11*a(n-1)-10*a(n-2)
  * @author Georg Fischer
  */

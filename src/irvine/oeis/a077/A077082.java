@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077046.
+ * A077082 Largest value arising when phi(sigma(n)+phi(n))=A077080 is iterated with initial value of n.
  * @author Sean A. Irvine
  */
 public class A077082 extends Sequence1 {

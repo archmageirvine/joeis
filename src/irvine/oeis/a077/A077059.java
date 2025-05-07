@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077046.
+ * A077059 Numbers j such that j^2 + k^2 is a cube for some k &gt; j.
  * @author Sean A. Irvine
  */
 public class A077059 extends Sequence1 {

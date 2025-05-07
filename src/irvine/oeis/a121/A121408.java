@@ -5,7 +5,7 @@ import irvine.oeis.a111.A111594;
 import irvine.oeis.a177.A177145;
 
 /**
- * A121408 Triangle T(n,k) defined by the generating function (in Maple notation): exp(y*arcsin(x))-1 = sum( sum(T(n,k)*y^k, k=1..n)*x^n/n!, n=1..infinity).
+ * A121408 Triangle T(n,k) defined by the generating function: exp(y*arcsin(x))-1 = Sum_{n&gt;=1} (Sum_{k=1..n} T(n,k)*y^k)*x^n/n!.
  * @author Georg Fischer
  */
 public class A121408 extends A111594 {

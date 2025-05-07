@@ -5,7 +5,7 @@ package irvine.oeis.a080;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A080141 (3^(n-1))*(n!)^2.
+ * A080141 a(n) = (3^(n-1))*(n!)^2.
  * @author Georg Fischer
  */
 public class A080141 extends HolonomicRecurrence {

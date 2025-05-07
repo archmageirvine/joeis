@@ -12,7 +12,7 @@ import irvine.util.array.Sort;
  */
 class DoRef {
 
-  private final int[] mWorkPerm = new int[Nauty.MAXN];
+  private final int[] mWorkPerm = new int[Nauty.MAXN + 1];
 
   static long mash(final long l, final int i) {
     return (l ^ 0x6b1d) + (i & 0x7fff);

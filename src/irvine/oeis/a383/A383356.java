@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A381103.
+ * A383356 a(n) = index of the smallest nonagonal number having the same digital sum as the n-th triangular number.
  * @author Sean A. Irvine
  */
 public class A383356 extends Sequence1 {

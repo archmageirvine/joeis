@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001813;
 
 /**
- * A009120 a(n) = (4n)!/(2n)!.
+ * A009120 a(n) = (4*n)!/(2*n)!.
  * @author Sean A. Irvine
  */
 public class A009120 extends A001813 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077046.
+ * A077060 Smallest k&gt;A077059(n) such that A077059(n)^2+k^2 is a cube (=A077061(n)^3).
  * @author Sean A. Irvine
  */
 public class A077060 extends Sequence1 {

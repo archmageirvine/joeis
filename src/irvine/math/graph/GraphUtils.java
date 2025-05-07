@@ -1240,5 +1240,19 @@ public final class GraphUtils {
     }
     return mat;
   }
+
+  /**
+   * Use nauty to canonicalize a graph. This procedure is only intended for
+   * occasional use, if you need to canonicalize many graphs of the same order
+   * then it is better to explicitly set up a nauty object for that purpose.
+   * @param g graph
+   * @return canonical graph
+   */
+  public static Graph canon(final Graph g) {
+    final int n = g.order();
+    final OptionBlk opt = new OptionBlk();
+    opt.setCanon(1);
+    return new Nauty(g, new int[n], new int[n], new NautySet(n), new int[n], opt, new StatsBlk(), new long[100]).canon();
+  }
 }
 

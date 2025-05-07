@@ -17,6 +17,6 @@ public class A006946 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Z.valueOf(MaximumIndependentSet.size(GraphFactory.createDeBruijn2(++mN)));
+    return Z.valueOf(MaximumIndependentSet.size(GraphFactory.deBruijn2(++mN)));
   }
 }

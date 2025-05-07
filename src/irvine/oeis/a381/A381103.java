@@ -3,7 +3,7 @@ package irvine.oeis.a381;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A381103.
+ * A381103 Number of permissible general positions in three-dimensional space groups obeying the crystallographic restriction theorem.
  * @author Sean A. Irvine
  */
 public class A381103 extends FiniteSequence {

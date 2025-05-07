@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A383421.
+ * A383421 allocated for Neal Gersh Tolunsky.
  * @author Sean A. Irvine
  */
 public class A383421 extends CachedSequence {

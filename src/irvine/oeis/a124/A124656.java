@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000069;
 
 /**
- * A124656 Abundant odious numbers. (Abundant numbers that have an odd number of ones in their binary representation.)
+ * A124656 Abundant odious numbers. (Abundant numbers that have an odd number of ones in their binary representation.).
  * @author Georg Fischer
  */
 public class A124656 extends FilterSequence {

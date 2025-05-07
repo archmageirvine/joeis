@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383021 allocated for Ois\u00edn Flynn-Connolly.
+ * A383021 Self-summable Fibonacci numbers: integers k such that Fibonacci(k) divides the sum of the first Fibonacci(k) nonzero Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A383021 extends Sequence1 {

@@ -102,4 +102,9 @@ public class DirectSum<T, U> extends DirectProduct<T, U> implements Ring<Pair<T,
   public Pair<T, U> conjugate(final Pair<T, U> element) {
     throw new UnsupportedOperationException();
   }
+
+  @Override
+  public boolean isOne(final Pair<T, U> element) {
+    return element.equals(one());
+  }
 }

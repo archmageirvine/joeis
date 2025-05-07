@@ -24,7 +24,7 @@ public class A061490 extends A003285 {
       if (t.isSquare()) {
         return false;
       }
-      t = period(t);
+      t = a(t);
     }
     return t.isSquare();
   }

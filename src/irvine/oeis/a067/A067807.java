@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067807 Numbers n such that sigma(n)^2 &gt; 2*sigma(n^2).
+ * A067807 Numbers k such that sigma(k)^2 &gt; 2*sigma(k^2).
  * @author Sean A. Irvine
  */
 public class A067807 extends Sequence1 {

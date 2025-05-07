@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A000909 a(n) = (2n)!(2n+1)! / n!^2.
+ * A000909 a(n) = (2*n)!*(2*n+1)! / n!^2.
  * @author Sean A. Irvine
  */
 public class A000909 extends Sequence0 {

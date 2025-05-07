@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000005;
 import irvine.oeis.a008.A008836;
 
 /**
- * A329484 Dirichlet convolution of the Louiville function with itself.
+ * A329484 Dirichlet convolution of the Liouville function with itself.
  * @author Georg Fischer
  */
 public class A329484 extends Sequence1 {

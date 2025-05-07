@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a031.A031443;
 
 /**
- * A345348 Triangular numbers that in base 2 have the same number of 0&apos;s and 1&apos;s.
+ * A345348 Triangular numbers that in base 2 have the same number of 0's and 1's.
  * @author Georg Fischer
  */
 public class A345348 extends FilterSequence {

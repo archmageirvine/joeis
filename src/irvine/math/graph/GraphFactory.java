@@ -82,7 +82,7 @@ public final class GraphFactory {
    * @param n length
    * @return de Bruijn graph
    */
-  public static Graph createDeBruijn2(final int n) {
+  public static Graph deBruijn2(final int n) {
     if (n < 1 || n > 6) {
       throw new UnsupportedOperationException();
     }
@@ -270,7 +270,7 @@ public final class GraphFactory {
    * @param n number of cells
    * @return queen's graph
    */
-  public static Graph queensGraph(final int dimensions, final int n) {
+  public static Graph queens(final int dimensions, final int n) {
     if (dimensions < 1 || n < 0) {
       throw new IllegalArgumentException();
     }
@@ -313,7 +313,7 @@ public final class GraphFactory {
    * @param order number of rows (or columns)
    * @return king's graph
    */
-  public static Graph kingsGraph(final int order) {
+  public static Graph kings(final int order) {
     final Graph g = GraphFactory.create(order * order);
     for (int row = 0; row < order; ++row) {
       for (int col = 0; col < order; ++col) {
@@ -332,6 +332,26 @@ public final class GraphFactory {
           }
         }
       }
+    }
+    return g;
+  }
+
+  /**
+   * Construct the generalized Petersen graph with 2n vertices and "skip" m.
+   * See <a href="https://mathworld.wolfram.com/GeneralizedPetersenGraph.html">Generalized Petersen Graph</a>
+   * @param n order
+   * @param m skip
+   * @return Petersen graph
+   */
+  public static Graph petersen(final int n, final int m) {
+    if (m < 1 || m > (n - 1) / 2) {
+      throw new IllegalArgumentException("m must be in range 1.." + (n - 1) / 2);
+    }
+    final Graph g = GraphFactory.create(2 * n);
+    for (int k = 0; k < n; ++k) {
+      g.addEdge(k, (k + 1) % n); // outer cycle
+      g.addEdge(k, k + n); // links from outer to inner
+      g.addEdge(k + n, (k + m) % n + n); // inner cycle(s)
     }
     return g;
   }

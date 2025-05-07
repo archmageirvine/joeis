@@ -6,7 +6,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a058.A058026;
 
 /**
- * A330902 Odd numbers k such that s(k) = s(k+2), where s(k) is Schemmel&apos;s totient function of order 2 (A058026).
+ * A330902 Odd numbers k such that s(k) = s(k+2), where s(k) is Schemmel's totient function of order 2 (A058026).
  * @author Georg Fischer
  */
 public class A330902 extends FilterNumberSequence {

@@ -17,8 +17,9 @@ final class Isomorphism {
   private Isomorphism() { }
 
   /*
-   * This implementation should really be retired and the nauty based approach
-   * used instead.
+   * In general, it is much much better to use nauty for graphs, especially
+   * for isomorphism testing. However, this implementation does support isomorphism
+   * testing with more than 64 vertices, so sometimes we still use it.
    */
 
   /*
@@ -27,8 +28,6 @@ final class Isomorphism {
     permutation graphs, partial <i>k</i>-trees, graphs with bounded genus,
     graphs with bounded degree, graphs with bounded eigenvalue multiplicity,
     <i>k</i>-contractible graphs.
-
-    TODO implement some of these
   */
 
   /* Generate the identity isomorphism. */

@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a054.A054353;
 
 /**
- * A156250 Least k such that A078649(k)&gt;= A054353(n).
+ * A156250 Least k such that A078649(k) &gt;= A054353(n).
  * @author Georg Fischer
  */
 public class A156250 extends AbstractSequence {

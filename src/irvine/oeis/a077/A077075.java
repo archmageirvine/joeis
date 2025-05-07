@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A077046.
+ * A077075 Least k such that Z(k,4) &lt;= Z(n,5) where Z(m,s) = Sum_{i&gt;=m} 1/i^s.
  * @author Sean A. Irvine
  */
 public class A077075 extends Sequence0 {

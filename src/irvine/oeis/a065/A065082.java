@@ -15,7 +15,7 @@ public class A065082 extends A003285 {
   public Z next() {
     while (true) {
       final Z n = Z.valueOf(++mN).pow(3);
-      if (period(n).pow(3).equals(n)) {
+      if (a(n).pow(3).equals(n)) {
         return n;
       }
     }

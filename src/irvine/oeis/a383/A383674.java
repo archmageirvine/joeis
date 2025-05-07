@@ -5,7 +5,7 @@ import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A383674.
+ * A383674 Decimal expansion of Integral_{0..1} 1 / ((1+x^4) * sqrt(1-x^4)) dx.
  * @author Sean A. Irvine
  */
 public class A383674 extends DecimalExpansionSequence {

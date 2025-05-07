@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003849;
 
 /**
- * A077046.
+ * A383423 Indices k such that A003849(k) = 0 and A383422(k) = 0.
  * @author Sean A. Irvine
  */
 public class A383423 extends Sequence1 {
@@ -19,7 +19,9 @@ public class A383423 extends Sequence1 {
   public Z next() {
     while (true) {
       ++mN;
-      if (mA.next().isZero() && mB.next().isZero()) {
+      final Z r = mA.next();
+      final Z s = mB.next();
+      if (r.isZero() && s.isZero()) {
         return Z.valueOf(mN);
       }
     }

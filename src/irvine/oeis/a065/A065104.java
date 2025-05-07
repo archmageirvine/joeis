@@ -12,9 +12,9 @@ public class A065104 extends A003285 {
   private long mN = 0;
 
   private boolean is(final long n) {
-    Z t = period(Z.valueOf(n * n));
+    Z t = a(Z.valueOf(n * n));
     for (long m = n * n; m < (n + 1) * (n + 1); ++m) {
-      final Z u = period(Z.valueOf(m + 1));
+      final Z u = a(Z.valueOf(m + 1));
       if (u.equals(t)) {
         return false;
       }

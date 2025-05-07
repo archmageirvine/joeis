@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068332 Numbers n such that 2^tau(n)&lt;=n&lt;2*2^tau(n).
+ * A068332 Numbers k such that 2^tau(k) &lt;= k &lt; 2*2^tau(k).
  * @author Sean A. Irvine
  */
 public class A068332 extends Sequence1 {

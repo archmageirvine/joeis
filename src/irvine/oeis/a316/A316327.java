@@ -4,7 +4,7 @@ package irvine.oeis.a316;
 import irvine.oeis.DifferenceSequence;
 
 /**
- * A316327 First differences of indices of 1&apos;s in A305389.
+ * A316327 First differences of indices of 1's in A305389.
  * @author Georg Fischer
  */
 public class A316327 extends DifferenceSequence {

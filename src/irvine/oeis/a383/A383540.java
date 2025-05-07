@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077046.
+ * A383540 Numbers k such that (sin k)^k sets a new record.
  * @author Sean A. Irvine
  */
 public class A383540 extends Sequence1 {

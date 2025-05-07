@@ -5,7 +5,7 @@ package irvine.oeis.a112;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A112019 a(n) = Sum_{k=0..n} binomial(n,k)*binomial(n+k,k)^2.
+ * A112019 a(n) = Sum_{k=0..n} binomial(n,k) * binomial(n+k,k)^2.
  * @author Georg Fischer
  */
 public class A112019 extends HolonomicRecurrence {

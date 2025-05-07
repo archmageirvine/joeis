@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068878 Nonzero denominators in the expansion of sin(x)+exp(x)-1-2x.
+ * A068878 Denominators of nonzero terms in the expansion of sin(x)+exp(x)-1-2*x.
  * @author Sean A. Irvine
  */
 public class A068878 extends Sequence1 {

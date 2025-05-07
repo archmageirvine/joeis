@@ -1043,6 +1043,14 @@ public class Z extends Number implements Comparable<Z>, IsInteger {
   }
 
   /**
+   * Test if this integer is one.
+   * @return true for one
+   */
+  public boolean isOne() {
+    return equals(Z.ONE);
+  }
+
+  /**
    * Test if this integer is even.
    * @return true for even numbers
    */

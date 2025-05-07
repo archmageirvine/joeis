@@ -17,6 +17,6 @@ public class A075324 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Z.valueOf(GraphUtils.independentDominationNumber(GraphFactory.queensGraph(2, ++mN)));
+    return Z.valueOf(GraphUtils.independentDominationNumber(GraphFactory.queens(2, ++mN)));
   }
 }

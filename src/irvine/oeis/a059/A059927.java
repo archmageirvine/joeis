@@ -19,6 +19,6 @@ public class A059927 extends A003285 {
   @Override
   public Z next() {
     mN += 2;
-    return period(Z.ONE.shiftLeft(mN));
+    return a(Z.ONE.shiftLeft(mN));
   }
 }

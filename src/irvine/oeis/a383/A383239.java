@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077046.
+ * A383239 allocated for S. I. Dimitrov.
  * @author Sean A. Irvine
  */
 public class A383239 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a072.A072600;
 
 /**
- * A095070 One-bit dominant primes, i.e., primes whose binary expansion contains more 1&apos;s than 0&apos;s.
+ * A095070 One-bit dominant primes, i.e., primes whose binary expansion contains more 1's than 0's.
  * @author Georg Fischer
  */
 public class A095070 extends FilterSequence {

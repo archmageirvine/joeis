@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077046.
+ * A383483 Numbers k such that k = sigma(m)-m where m = sigma(3*k)-3*k.
  * @author Sean A. Irvine
  */
 public class A383483 extends Sequence1 {

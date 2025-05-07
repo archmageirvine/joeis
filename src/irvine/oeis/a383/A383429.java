@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077046.
+ * A383429 a(1)=1, and for n&gt;1, a(n) = a(n-1) concatenated with the length of the decimal representation of a(n-1).
  * @author Sean A. Irvine
  */
 public class A383429 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a316.A316325;
 
 /**
- * A107795 First differences of indices of 2&apos;s in A305389.
+ * A107795 First differences of indices of 2's in A305389.
  * @author Georg Fischer
  */
 public class A107795 extends DifferenceSequence {

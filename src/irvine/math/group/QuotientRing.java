@@ -102,4 +102,9 @@ public class QuotientRing<T> extends DefaultQuotientGroup<T> implements Ring<Set
   public Set<T> conjugate(final Set<T> element) {
     throw new UnsupportedOperationException();
   }
+
+  @Override
+  public boolean isOne(final Set<T> element) {
+    return element.equals(one());
+  }
 }

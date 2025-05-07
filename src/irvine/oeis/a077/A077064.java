@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a006.A006093;
 
 /**
- * A077063.
+ * A077064 Squarefree numbers of form prime - 1.
  * @author Sean A. Irvine
  */
 public class A077064 extends FilterSequence {

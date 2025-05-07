@@ -15,6 +15,6 @@ public class A064486 extends A003285 {
 
   @Override
   public Z next() {
-    return period(mPrimorial.next());
+    return a(mPrimorial.next());
   }
 }

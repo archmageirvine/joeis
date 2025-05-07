@@ -14,7 +14,8 @@ public class A065030 extends A003285 {
   @Override
   public Z next() {
     while (true) {
-      if (period(Z.FIVE.multiply(++mN * mN)).equals(Z.TWO)) {
+      final Z n = Z.FIVE.multiply(++mN * mN);
+      if (a(n).equals(Z.TWO)) {
         return Z.valueOf(mN);
       }
     }

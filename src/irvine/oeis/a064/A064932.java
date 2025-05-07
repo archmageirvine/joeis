@@ -14,6 +14,6 @@ public class A064932 extends A003285 {
   @Override
   public Z next() {
     mA = mA.multiply(9);
-    return period(mA);
+    return a(mA);
   }
 }

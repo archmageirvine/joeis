@@ -4,7 +4,7 @@ package irvine.oeis.a277;
 import irvine.oeis.a116.A116611;
 
 /**
- * A277288 Positive integers n such that n | (3^n + 5).
+ * A277288 Positive integers k such that k divides 3^k + 5.
  * @author Georg Fischer
  */
 public class A277288 extends A116611 {

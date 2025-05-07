@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077046.
+ * A077062 Minimal k &gt; n such that n^2 + k^2 is a cube for k &gt; n, or 0 if no such k exists.
  * @author Sean A. Irvine
  */
 public class A077062 extends Sequence1 {

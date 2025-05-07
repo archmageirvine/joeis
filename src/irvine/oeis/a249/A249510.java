@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000179;
 
 /**
- * A249510 M√©nage primes.
+ * A249510 M\u00e9nage primes.
  * @author Georg Fischer
  */
 public class A249510 extends FilterSequence {

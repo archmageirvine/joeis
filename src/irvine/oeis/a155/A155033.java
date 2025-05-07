@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A381103.
+ * A155033 Matrix inverse of A155031.
  * @author Sean A. Irvine
  */
 public class A155033 extends Sequence1 {

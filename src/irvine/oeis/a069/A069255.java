@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A069255 (2^((2*n-1)^2)+1)/(2^(2*n-1)+1).
+ * A069255 a(n) = (2^((2*n-1)^2)+1)/(2^(2*n-1)+1).
  * @author Georg Fischer
  */
 public class A069255 extends LambdaSequence {

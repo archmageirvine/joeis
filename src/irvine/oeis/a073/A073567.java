@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000027;
 
 /**
- * A073567 Numbers n such that sigma(n) = phi(n)*omega(n).
+ * A073567 Numbers k such that sigma(k) = phi(k)*omega(k).
  * @author Georg Fischer
  */
 public class A073567 extends FilterSequence {

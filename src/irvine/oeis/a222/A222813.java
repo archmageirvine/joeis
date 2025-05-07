@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a033.A033015;
 
 /**
- * A222813 Numbers whose binary representation is palindromic and in which all runs of 0&apos;s and 1&apos;s have length at least 2.
+ * A222813 Numbers whose binary representation is palindromic and in which all runs of 0's and 1's have length at least 2.
  * @author Georg Fischer
  */
 public class A222813 extends FilterSequence {

@@ -18,7 +18,7 @@ public class A065129 extends A003285 {
     if (++mN > 1) {
       for (long m = mN; m <= Math.pow(3.76 * mN * Math.log(m), 2); m += mN) {
         final Z zm = Z.valueOf(m);
-        final long period = period(zm).longValueExact();
+        final long period = a(zm).longValueExact();
         if (m == period * mN) {
           return zm;
         }

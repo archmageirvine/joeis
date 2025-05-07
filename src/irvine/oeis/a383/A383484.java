@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077046.
+ * A383484 Integers k such that there exist an integer 0&lt;m&lt;k such that sigma(m)^2 + sigma(k)^2 = (m+k)^2.
  * @author Sean A. Irvine
  */
 public class A383484 extends Sequence1 {

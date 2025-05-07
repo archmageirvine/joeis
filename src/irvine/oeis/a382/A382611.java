@@ -5,7 +5,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A382611 Decimal expansion of the solution to x^(x/(x+1))+x-1=0.
+ * A382611 Decimal expansion of the solution to x^(x/(x+1)) + x - 1 = 0.
  * @author Sean A. Irvine
  */
 public class A382611 extends DecimalExpansionSequence {

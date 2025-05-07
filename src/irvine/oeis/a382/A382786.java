@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
- * A381103.
+ * A382786 Numbers k such that 5^k + k is prime.
  * @author Sean A. Irvine
  */
 public class A382786 extends Sequence0 {

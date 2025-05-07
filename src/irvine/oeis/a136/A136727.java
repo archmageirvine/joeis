@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A136727 E.g.f.: A(x) = [ exp(x)/(3 - 2*exp(x)) ]^(1/3).
+ * A136727 E.g.f.: A(x) = (exp(x)/(3 - 2*exp(x)))^(1/3).
  * E.g.f.: ( exp(x)/(3 - 2*exp(x)) )^(1/3)
  * @author Georg Fischer
  */

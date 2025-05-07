@@ -6,7 +6,7 @@ package irvine.oeis.a220;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A220653 n^11 + 11*n + 11^n.
+ * A220653 a(n) = n^11 + 11*n + 11^n.
  * @author Georg Fischer
  */
 public class A220653 extends GeneratingFunctionSequence {

@@ -463,6 +463,14 @@ public class Q implements Comparable<Q>, IsInteger, Serializable {
   }
 
   /**
+   * Test if this number is one.
+   * @return true for one
+   */
+  public boolean isOne() {
+    return equals(Q.ONE);
+  }
+
+  /**
    * Test if this number is a rational square.
    * @return true if the number is a square
    */

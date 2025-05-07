@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A050529 Primes of form 11*2^n+1.
+ * A050529 Primes of the form 11*2^k + 1.
  * @author Sean A. Irvine
  */
 public class A050529 extends Sequence1 {

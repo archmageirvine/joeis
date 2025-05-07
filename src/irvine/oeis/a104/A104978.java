@@ -5,7 +5,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A104978 Triangle where g.f. satisfies: A(x,y) = 1 + x*A(x,y)^2 + x*y*A(x,y)^3, read by rows.
+ * A104978 Triangle read by rows, where the g.f. satisfies A(x, y) = 1 + x*A(x, y)^2 + x*y*A(x, y)^3.
  * @author Georg Fischer
  */
 public class A104978 extends LambdaTriangle {

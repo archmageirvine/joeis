@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A211488 Fibonacci(n^2) - Fibonacci(n).
+ * A211488 a(n) = Fibonacci(n^2) - Fibonacci(n).
  * a(n)=fibonacci(n^2)-fibonacci(n)
  * @author Georg Fischer
  */

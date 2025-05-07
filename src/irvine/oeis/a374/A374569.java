@@ -4,7 +4,7 @@ package irvine.oeis.a374;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A374569 Expansion of g.f. A(x) satisfing A(x) = x + A(x/(1-x)) * A(x/(1+x)).
+ * A374569 Expansion of g.f. A(x) satisfying A(x) = x + A(x/(1-x)) * A(x/(1+x)).
  * (A(x/(1-x))-x/(1-x))/A(x/(1-2*x))
  * @author Georg Fischer
  */

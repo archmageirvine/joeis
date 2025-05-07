@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A069825 Numbers n such that there is no x &lt; n such that sigma(x) = phi(n).
+ * A069825 Numbers k such that there is no x &lt; k such that sigma(x) = phi(k).
  * @author Sean A. Irvine
  */
 public class A069825 extends Sequence1 {

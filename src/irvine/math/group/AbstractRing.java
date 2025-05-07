@@ -386,4 +386,9 @@ public abstract class AbstractRing<E> extends AbstractGroup<E> implements Ring<E
     }
     return sum;
   }
+
+  @Override
+  public boolean isOne(final E e) {
+    return e.equals(one());
+  }
 }

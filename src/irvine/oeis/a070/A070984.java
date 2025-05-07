@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070984 a(n)=k such that kLog(k)&lt;n&lt;(k+1)Log(k+1).
+ * A070984 a(n) = k such that (k-1)*log(k-1) &lt; n &lt; k*log(k).
  * @author Sean A. Irvine
  */
 public class A070984 extends Sequence1 {

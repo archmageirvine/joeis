@@ -380,4 +380,9 @@ public class MatrixRing<E> extends MatrixGroupRing<E> implements Ring<Matrix<E>>
   public boolean isUnitary(final Matrix<E> matrix) {
     return one().equals(multiply(adjoint(matrix), matrix));
   }
+
+  @Override
+  public boolean isOne(final Matrix<E> matrix) {
+    return mIdentity.equals(matrix);
+  }
 }

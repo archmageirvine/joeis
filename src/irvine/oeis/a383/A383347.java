@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A381103.
+ * A383347 Numbers that have the same set of digits as the sum of the cubes of their digits.
  * @author Sean A. Irvine
  */
 public class A383347 extends Sequence1 {

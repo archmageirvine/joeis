@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a008.A008864;
 
 /**
- * A077063.
+ * A077068 Semiprimes of the form prime + 1.
  * @author Sean A. Irvine
  */
 public class A077068 extends FilterSequence {

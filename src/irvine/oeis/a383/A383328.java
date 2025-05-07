@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A381103.
+ * A383328 Numbers that have the same set of digits as the sum of the squares of their digits.
  * @author Sean A. Irvine
  */
 public class A383328 extends Sequence1 {

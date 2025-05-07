@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A381103.
+ * A382666 Smallest k such that 7^(7^n) - k is prime.
  * @author Sean A. Irvine
  */
 public class A382666 extends Sequence0 {

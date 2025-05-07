@@ -125,4 +125,10 @@ public interface Ring<E> extends Group<E> {
    */
   E conjugate(E element);
 
+  /**
+   * Test if the given element is one.
+   * @param e element to test
+   * @return true iff the element is one
+   */
+  boolean isOne(final E e);
 }

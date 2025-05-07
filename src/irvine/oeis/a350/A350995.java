@@ -4,7 +4,7 @@ package irvine.oeis.a350;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A350995 a(n) = (16*10^n-1)/3.
+ * A350995 a(n) = (16*10^n - 1)/3.
  * @author Georg Fischer
  */
 public class A350995 extends HolonomicRecurrence {

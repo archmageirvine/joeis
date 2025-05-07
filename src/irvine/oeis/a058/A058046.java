@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A058046 Numbers n such that 5^n - n is prime.
+ * A058046 Numbers k such that 5^k - k is prime.
  * @author Sean A. Irvine
  */
 public class A058046 extends Sequence1 {

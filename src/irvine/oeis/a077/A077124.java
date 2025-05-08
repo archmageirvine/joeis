@@ -22,7 +22,7 @@ public class A077124 extends DecimalExpansionSequence {
         long k = 0;
         Z t = Z.ZERO;
         while (true) {
-          Z u = CR.valueOf(s.next()).pow(new Q(1, Z.ONE.shiftLeft(++k))).getApprox(precision);
+          final Z u = CR.valueOf(s.next()).pow(new Q(1, Z.ONE.shiftLeft(++k))).getApprox(precision);
           if (u.equals(t)) {
             return u;
           }

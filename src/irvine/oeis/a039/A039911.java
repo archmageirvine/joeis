@@ -9,12 +9,12 @@ import irvine.oeis.a101.A101391;
  */
 public class A039911 extends A101391 {
 
-  private long mN = 1;
+  private long mN = 0;
   private long mM = 1;
 
   @Override
   public Z next() {
-    if (--mM < 2) {
+    if (--mM < 1) {
       mM = ++mN;
     }
     return t(mN, mM);

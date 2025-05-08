@@ -16,6 +16,7 @@ import irvine.math.z.Z;
 public class TillmanFactorizer extends AbstractFactorizer {
 
   static {
+    System.setProperty("org.apache.logging.log4j.simplelog.StatusLogger.level", "OFF");
     Logger.getLogger("de.tilman_neumann.jml.factor").setLevel(Level.OFF);
   }
   private static final String T = System.getProperty("oeis.threads",

@@ -4,16 +4,16 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence2;
+import irvine.oeis.Sequence1;
 
 /**
  * A101391 Triangle read by rows: T(n,k) is the number of compositions of n into k parts x_1, x_2, ..., x_k such that gcd(x_1,x_2,...,x_k) = 1 (1&lt;=k&lt;=n).
  * @author Sean A. Irvine
  */
-public class A101391 extends Sequence2 {
+public class A101391 extends Sequence1 {
 
-  private long mN = 1;
-  private long mM = 1;
+  private long mN = 0;
+  private long mM = 0;
 
   protected Z t(final long n, final long k) {
     Z sum = Z.ZERO;
@@ -28,7 +28,7 @@ public class A101391 extends Sequence2 {
   public Z next() {
     if (++mM > mN) {
       ++mN;
-      mM = 2;
+      mM = 1;
     }
     return t(mN, mM);
   }

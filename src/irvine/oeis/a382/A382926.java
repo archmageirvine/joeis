@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence2;
 
 /**
  * A382926 allocated for Michael De Vlieger.
  * @author Sean A. Irvine
  */
-public class A382926 extends Sequence0 {
+public class A382926 extends Sequence2 {
 
   private long mN = 0;
   private long mM = 0;

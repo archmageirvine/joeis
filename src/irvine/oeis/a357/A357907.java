@@ -10,8 +10,10 @@ import irvine.oeis.LambdaSequence;
  */
 public class A357907 extends LambdaSequence {
 
+  private static final Z MOD = Z.valueOf(65537);
+
   /** Construct the sequence. */
   public A357907() {
-    super(1, n -> (Z.TWO.multiply(Z.valueOf(75).pow(n - 1)).subtract(1)).mod(Z.valueOf(65537)));
+    super(1, n -> (Z.TWO.multiply(Z.valueOf(75).pow(n - 1)).subtract(1)).mod(MOD));
   }
 }

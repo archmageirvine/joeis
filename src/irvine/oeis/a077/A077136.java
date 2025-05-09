@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A077094.
+ * A077136 Composite numbers n whose proper divisors (excluding 1 and n) are all of the form p or p+1, with p prime.
  * @author Sean A. Irvine
  */
 public class A077136 extends A002808 {

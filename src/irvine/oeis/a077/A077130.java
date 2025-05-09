@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077094.
+ * A077130 Smallest number which is relatively prime to all the numbers between n^2 and (n+1)^2, inclusive.
  * @author Sean A. Irvine
  */
 public class A077130 extends Sequence1 {

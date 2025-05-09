@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A077094.
+ * A077143 Floor[ product of next n primes /sum of next n primes].
  * @author Sean A. Irvine
  */
 public class A077143 extends A000040 {

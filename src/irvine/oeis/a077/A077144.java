@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A077094.
+ * A077144 Floor[ product of next n composite numbers / sum of next n composite numbers ].
  * @author Sean A. Irvine
  */
 public class A077144 extends A002808 {

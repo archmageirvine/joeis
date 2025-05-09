@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A077094.
+ * A077129 Smallest number which is relatively prime to all the numbers between successive odd primes.
  * @author Sean A. Irvine
  */
 public class A077129 extends Sequence0 {

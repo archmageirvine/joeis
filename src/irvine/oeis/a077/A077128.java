@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A077094.
+ * A077128 Smallest number greater than the previous term which is relatively prime to each of the group of the next n numbers.
  * @author Sean A. Irvine
  */
 public class A077128 extends CachedSequence {

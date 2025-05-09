@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a003.A003754;
 
 /**
- * A293427 Squarefree numbers such that there are no adjacent 0&apos;s in their binary expansions.
+ * A293427 Squarefree numbers such that there are no adjacent 0's in their binary expansions.
  * @author Georg Fischer
  */
 public class A293427 extends FilterSequence {

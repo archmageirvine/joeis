@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A077094.
+ * A077127 a(0) = 1, a(1) = 2, a(n) = smallest number other than n, non-coprime to n and not occurring earlier.
  * @author Sean A. Irvine
  */
 public class A077127 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000930;
 
 /**
- * A368396 Prime numbers in Narayana&apos;s cows sequence A000930.
+ * A368396 Prime numbers in Narayana's cows sequence A000930.
  * @author Georg Fischer
  */
 public class A368396 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000959;
 
 /**
- * A137170 Lucky numbers (A000959) which are congruent to 3 mod 4
+ * A137170 Lucky numbers (A000959) which are congruent to 3 mod 4.
  * @author Georg Fischer
  */
 public class A137170 extends FilterSequence {

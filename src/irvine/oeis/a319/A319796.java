@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a071.A071562;
 
 /**
- * A319796 Even numbers that have middle divisors, where &quot;middle divisor&quot; means a divisor in the half-open interval [sqrt(n/2), sqrt(n*2)).
+ * A319796 Even numbers that have middle divisors, where "middle divisor" means a divisor in the half-open interval [sqrt(n/2), sqrt(n*2)).
  * @author Georg Fischer
  */
 public class A319796 extends FilterSequence {

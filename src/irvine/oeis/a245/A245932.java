@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A245932 G.f.: G&apos;(x) / G(x) where G(x) = 1 / sqrt( AGM((1 - 3*x)^2, (1 + x)^2) ) is the g.f. of A245931.
+ * A245932 G.f.: G'(x) / G(x) where G(x) = 1 / sqrt( AGM((1 - 3*x)^2, (1 + x)^2) ) is the g.f. of A245931.
  * new A245931()
  * @author Georg Fischer
  */

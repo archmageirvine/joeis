@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077094.
+ * A077139 a(1) = 1, a(n) = lcm(n, a(n-1)) / gcd(n, a(n-1)).
  * @author Sean A. Irvine
  */
 public class A077139 extends Sequence1 {

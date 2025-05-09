@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a078.A078164;
 
 /**
- * A307690 Integers with only one prime factor and whose Euler&apos;s totient is a perfect biquadrate.
+ * A307690 Integers with only one prime factor and whose Euler's totient is a perfect biquadrate.
  * @author Georg Fischer
  */
 public class A307690 extends FilterSequence {

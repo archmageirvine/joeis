@@ -5,7 +5,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterSequence;
 
 /**
- * A080168 Primes beginning and ending with &apos;11&apos; in binary representation.
+ * A080168 Primes beginning and ending with '11' in binary representation.
  * @author Georg Fischer
  */
 public class A080168 extends FilterSequence {

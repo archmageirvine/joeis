@@ -8,7 +8,7 @@ import irvine.oeis.a007.A007018;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A077094.
+ * A077125 Decimal expansion of the constant c such that A007018(n)=floor(c^(2^n)).
  * @author Sean A. Irvine
  */
 public class A077125 extends DecimalExpansionSequence {

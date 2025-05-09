@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A077094.
+ * A077135 Composite numbers n whose proper (other than 1 and n) odd divisors are prime and even divisors are 1 less than a prime.
  * @author Sean A. Irvine
  */
 public class A077135 extends A002808 {

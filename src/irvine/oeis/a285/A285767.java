@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a134.A134808;
 
 /**
- * A285767 Cyclops octagonal numbers: a(n) = n*(3*n-2) with one &quot;zero&quot; digit in the middle.
+ * A285767 Cyclops octagonal numbers: a(n) = n*(3*n-2) with one "zero" digit in the middle.
  * @author Georg Fischer
  */
 public class A285767 extends FilterSequence {

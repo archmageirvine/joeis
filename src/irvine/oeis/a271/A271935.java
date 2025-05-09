@@ -4,7 +4,7 @@ package irvine.oeis.a271;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A271935 G.f. A(x) satisfies: A(x) = A( x^2 + 8*x*A(x)^2 )^(1/2), with A(0)=0, A&apos;(0)=1.
+ * A271935 G.f. A(x) satisfies: A(x) = A( x^2 + 8*x*A(x)^2 )^(1/2), with A(0)=0, A'(0)=1.
  * @author Georg Fischer
  */
 public class A271935 extends PolynomialFieldSequence {

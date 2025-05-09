@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a147.A147562;
 
 /**
- * A246331 Total number of ON cells at stage 2n of two-dimensional 5-neighbor outer totalistic cellular automaton defined by &quot;Rule 465&quot;.
+ * A246331 Total number of ON cells at stage 2n of two-dimensional 5-neighbor outer totalistic cellular automaton defined by "Rule 465".
  * @author Georg Fischer
  */
 public class A246331 extends FilterSequence {

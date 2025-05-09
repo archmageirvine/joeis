@@ -8,7 +8,7 @@ import irvine.oeis.a003.A003096;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A077094.
+ * A077124 Decimal expansion of the constant c such that A003096(n-1) = ceiling(c^(2^n)).
  * @author Sean A. Irvine
  */
 public class A077124 extends DecimalExpansionSequence {

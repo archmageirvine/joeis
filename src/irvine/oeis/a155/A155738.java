@@ -5,7 +5,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterSequence;
 
 /**
- * A155738 Primes p such that 4*p^2+2*p-1 is also prime
+ * A155738 Primes p such that 4*p^2+2*p-1 is also prime.
  * @author Georg Fischer
  */
 public class A155738 extends FilterSequence {

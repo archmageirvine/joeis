@@ -4,7 +4,7 @@ package irvine.oeis.a328;
 import irvine.oeis.FilterSequence;
 
 /**
- * A328080 Number of regions after 2n generations of Jim Conant&apos;s iterative dissection of a square.
+ * A328080 Number of regions after 2n generations of Jim Conant's iterative dissection of a square.
  * @author Georg Fischer
  */
 public class A328080 extends FilterSequence {

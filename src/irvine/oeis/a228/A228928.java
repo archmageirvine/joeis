@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A228928 G.f. A(x) satisfies: 1/A(x)^8 + 64*x*A(x)^8 = 1/A(x^2)^4 + 8*x*A(x^2)^4.
+ * A228928  G.f. A(x) satisfies: 1/A(x)^8 + 64*x*A(x)^8 = 1/A(x^2)^4 + 8*x*A(x^2)^4.
  * new A228927()
  * @author Georg Fischer
  */

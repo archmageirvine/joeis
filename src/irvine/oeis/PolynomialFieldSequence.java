@@ -197,8 +197,10 @@ public class PolynomialFieldSequence extends AbstractSequence {
     } // for k
 
     mFactorial = Z.ONE;
-    for (int i = 1; i <= offset; ++i) {
+    for (int i = offset - 1; i > 0; --i) {
       mFactorial = mFactorial.multiply(i);
+    }
+    for (int i = 1; i <= offset; ++i) {
       for (int iseq = 1; iseq <= mTerms.size(); ++i) {
         Polynomial<Q> pseq = mTerms.get(iseq);
         pseq = RING.add(pseq, RING.monomial(Q.valueOf(mSeqs.get(iseq).next()), iseq + 1));

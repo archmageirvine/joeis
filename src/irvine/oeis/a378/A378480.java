@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a007.A007304;
 
 /**
- * A378480 Products of 3 distinct primes numbers (or sphenics) that are deficient.
+ * A378480 Products of 3 distinct prime numbers (or sphenics) that are deficient.
  * @author Georg Fischer
  */
 public class A378480 extends FilterSequence {

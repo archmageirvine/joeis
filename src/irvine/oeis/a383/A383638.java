@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A383638 allocated for Shyam Sunder Gupta.
+ * A383638 Right-truncatable happy numbers: every prefix is a happy number and no digits are zero.
  * @author Sean A. Irvine
  */
 public class A383638 extends FiniteSequence {

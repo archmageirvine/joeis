@@ -11,6 +11,6 @@ public class A051493 extends A070080 {
 
   /** Construct the sequence. */
   public A051493() {
-    super(1, COUNT, s -> hasCoPrimeSides(s));
+    super(1, COUNT, s -> hasCoprimeSides(s));
   }
 }

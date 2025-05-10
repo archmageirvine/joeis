@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A027421 Triangle T(n,k) = number of distinct products ij with k&lt;=i,j&lt;=n, for 0&lt;=k&lt;=n.
+ * A027421 Triangle T(n,k) = number of distinct products i*j with k&lt;=i,j&lt;=n, for 0&lt;=k&lt;=n.
  * @author Sean A. Irvine
  */
 public class A027421 extends Sequence0 {

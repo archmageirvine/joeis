@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A010048 Triangle of Fibonomial coefficients.
+ * A010048 Triangle of Fibonomial coefficients, read by rows.
  * @author Sean A. Irvine
  * @author Georg Fischer
  */

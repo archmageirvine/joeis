@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A077159 Triangle in which n-th row contains smallest n numbers coprime to n which have not occurred earlier.
+ * A077159 Triangle in which n-th row contains smallest n numbers coprime to n which have not occurred earlier, with a(1)=2.
  * @author Sean A. Irvine
  */
 public class A077159 extends Sequence1 {

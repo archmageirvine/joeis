@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003849;
 
 /**
- * A383426 allocated for Clark Kimberling.
+ * A383426 Indices k such that A003849(k) = 1 and A383422(k) = 0.
  * @author Sean A. Irvine
  */
 public class A383426 extends Sequence1 {

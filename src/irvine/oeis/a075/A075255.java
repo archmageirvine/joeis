@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001414;
 
 /**
- * A075255 a(n) = n - (sum of primes factors of n (with repetition)).
+ * A075255 a(n) = n - (sum of prime factors of n (with repetition)).
  * @author Georg Fischer
  */
 public class A075255 extends Sequence1 {

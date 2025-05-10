@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000188;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A362412 The number of primes factors of the square root of the largest square dividing n, counted with multiplicity.
+ * A362412 The number of prime factors of the square root of the largest square dividing n, counted with multiplicity.
  * @author Georg Fischer
  */
 public class A362412 extends SimpleTransformSequence {

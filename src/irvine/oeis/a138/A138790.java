@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A138790 a(n) = indices n for which A138793(n) is prime.
+ * A138790 Numbers k such that A138793(k) is prime.
  *
  * @author Georg Fischer
  */

@@ -3,27 +3,37 @@ package irvine.oeis.a078;
 import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
  * A078926 Number of primitive Pythagorean triangles with perimeter 2n.
  * @author Sean A. Irvine
  */
-public class A078926 extends Sequence1 {
+public class A078926 extends Sequence1 implements DirectSequence {
 
   protected long mN = 0;
 
   @Override
-  public Z next() {
+  public Z a(final Z n) {
     long c = 0;
-    final long lower = Functions.SQRT.l(++mN);
-    final long upper = Functions.SQRT.l(2 * mN - 1);
-    for (final Z dd : Jaguar.factor(mN).divisors()) {
-      final long d = dd.longValueExact();
-      if ((d & 1) == 1 && lower < d && d <= upper && Functions.GCD.l(d, mN / d) == 1) {
+    final Z lower = Functions.SQRT.z(n);
+    final Z upper = Functions.SQRT.z(n.multiply2().subtract(1));
+    for (final Z d : Jaguar.factor(n).divisors()) {
+      if (d.isOdd() && lower.compareTo(d) < 0 && d.compareTo(upper) <= 0 && Functions.GCD.z(d, n.divide(d)).isOne()) {
         ++c;
       }
     }
     return Z.valueOf(c);
+  }
+
+  @Override
+  public Z a(final int n) {
+    return a(Z.valueOf(n));
+  }
+
+  @Override
+  public Z next() {
+    return a(Z.valueOf(++mN));
   }
 }

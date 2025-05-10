@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383362 allocated for Felix Huber.
+ * A383362 a(n) is the number i for which i*d_i = A383360(n), where d_i is i-th smallest divisor d_i of A383360(n).
  * @author Sean A. Irvine
  */
 public class A383362 extends Sequence1 {

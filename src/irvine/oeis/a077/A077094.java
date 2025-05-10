@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077094 Starting the iteration of the function Phi[(Sigma[]-Phi[])] at these initial values leads to the fixed point 4.
+ * A077094 Numbers k such that iterating phi(sigma(k)-phi(k)) starting from k leads to the fixed point 4.
  * @author Sean A. Irvine
  */
 public class A077094 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a046.A046386;
 
 /**
- * A379762 Products of 4 distinct primes numbers (or tetraprimes) that are abundant.
+ * A379762 Products of 4 distinct prime numbers (or tetraprimes) that are abundant.
  * @author Georg Fischer
  */
 public class A379762 extends FilterSequence {

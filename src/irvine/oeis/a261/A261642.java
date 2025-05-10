@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A261642  Triangle, read by rows, where T(n,k) = (k^2 + k)^(n-k) for k=1..n and n&gt;=1.
+ * A261642 Triangle, read by rows, where T(n,k) = (k^2 + k)^(n-k) for k=1..n and n&gt;=1.
  * @author Georg Fischer
  */
 public class A261642 extends Triangle {

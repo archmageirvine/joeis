@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A069955 Let W(n) = Product_{k=1..n} (1 - 1/4k^2), the partial Wallis product (lim_{n-&gt;infinity} W(n) = 2/Pi); then a(n) = numerator(W(n)).
+ * A069955 Let W(n) = Product_{k=1..n} (1 - 1/4k^2), the partial Wallis product (lim_{n-&gt;oo} W(n) = 2/Pi); then a(n) = numerator(W(n)).
  * @author Sean A. Irvine
  */
 public class A069955 extends Sequence0 {

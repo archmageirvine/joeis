@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002808;
 
 /**
- * A077145 Floor[ product of next n primes / product of next n composite numbers].
+ * A077145 a(n) = floor(product of next n primes / product of next n composite numbers).
  * @author Sean A. Irvine
  */
 public class A077145 extends Sequence1 {

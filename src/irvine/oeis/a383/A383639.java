@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A383639 allocated for Shyam Sunder Gupta.
+ * A383639 Left-truncatable happy numbers: every suffix is a happy number and no digits are zero.
  * @author Sean A. Irvine
  */
 public class A383639 extends FiniteSequence {

@@ -209,7 +209,7 @@ public class A070080 extends AbstractSequence {
     return mCond.apply(s);
   }
 
-  protected static boolean hasCoPrimeSides(final Long[] s) {
+  protected static boolean hasCoprimeSides(final Long[] s) {
     final long a = s[0];
     final long b = s[1];
     final long c = s[2];
@@ -343,7 +343,7 @@ public class A070080 extends AbstractSequence {
         }
         if (hasPrimeSides(s)) {
           sb.append(" p");
-        } else if (hasCoPrimeSides(s)) {
+        } else if (hasCoprimeSides(s)) {
           sb.append(" r");
         } else {
           sb.append("  ");

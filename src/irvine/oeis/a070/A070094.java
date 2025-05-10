@@ -9,6 +9,6 @@ public class A070094 extends A070080 {
 
   /** Construct the sequence. */
   public A070094() {
-    super(1, COUNT, s -> isAcute(s) && hasCoPrimeSides(s));
+    super(1, COUNT, s -> isAcute(s) && hasCoprimeSides(s));
   }
 }

@@ -13,6 +13,7 @@ public class A383421 extends CachedSequence {
 
   // This is not the most efficient implementation
   private final HashSet<Long> mSeen = new HashSet<>();
+  private final HashSet<Long> mOnce = new HashSet<>();
 
   /** Construct the sequence. */
   public A383421() {
@@ -27,6 +28,7 @@ public class A383421 extends CachedSequence {
     }
     if (n == 1) {
       mSeen.add(1L);
+      mOnce.add(1L);
       return Z.ONE;
     }
     final Z prev = a(n - 1);
@@ -41,12 +43,20 @@ public class A383421 extends CachedSequence {
             ++cnt;
           }
         }
-        mSeen.add(cnt);
+        if (mSeen.add(cnt)) {
+          mOnce.add(cnt);
+        } else {
+          mOnce.remove(cnt);
+        }
         return Z.valueOf(cnt);
       }
     }
-    final long res = mSeen.size();
-    mSeen.add(res);
+    final long res = mOnce.size();
+    if (mSeen.add(res)) {
+      mOnce.add(res);
+    } else {
+      mOnce.remove(res);
+    }
     return Z.valueOf(res);
   }
 }

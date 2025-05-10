@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383488 allocated for Felix Huber.
+ * A383488 Numbers k that have at least one divisor d_i(k) for which a divisor d_j(k) exists such that d_i(k) &lt; d_j(k) &lt; sigma(d_i(k)).
  * @author Sean A. Irvine
  */
 public class A383488 extends Sequence1 {

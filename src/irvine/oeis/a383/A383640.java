@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383640 allocated for Shyam Sunder Gupta.
+ * A383640 Internal digits of k^3 include digits of k as substring, k does not end in 0.
  * @author Sean A. Irvine
  */
 public class A383640 extends Sequence1 {

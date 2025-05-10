@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a046.A046386;
 
 /**
- * A378717 Products of 4 distinct primes numbers (or tetraprimes) that are deficient.
+ * A378717 Products of 4 distinct prime numbers (or tetraprimes) that are deficient.
  * @author Georg Fischer
  */
 public class A378717 extends FilterSequence {

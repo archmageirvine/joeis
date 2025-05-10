@@ -6,7 +6,7 @@ import irvine.oeis.a360.A360540;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366076 The number of primes factors of the largest divisor of n that is a cubefull number (A036966), counted with multiplicity.
+ * A366076 The number of prime factors of the largest divisor of n that is a cubefull number (A036966), counted with multiplicity.
  * @author Georg Fischer
  */
 public class A366076 extends SimpleTransformSequence {

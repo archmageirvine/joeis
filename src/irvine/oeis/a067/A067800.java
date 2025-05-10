@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a018.A018252;
 
 /**
- * A067800 Nonprime n such that phi(n) &gt; n/2.
+ * A067800 Nonprime numbers k such that phi(k) &gt; k/2.
  * @author Sean A. Irvine
  */
 public class A067800 extends A018252 {

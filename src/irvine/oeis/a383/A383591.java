@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A383591 allocated for Jean-Marc Rebert.
+ * A383591 Smallest prime p where the absolute difference of the gaps to the adjacent primes exceeds n*log(p).
  * @author Sean A. Irvine
  */
 public class A383591 extends A000040 {

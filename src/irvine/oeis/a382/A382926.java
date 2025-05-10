@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A382926 allocated for Michael De Vlieger.
+ * A382926 Irregular table where row n lists numbers k in row n of A162306 for which there exists a prime p | n such that k*p &gt; n.
  * @author Sean A. Irvine
  */
 public class A382926 extends Sequence2 {

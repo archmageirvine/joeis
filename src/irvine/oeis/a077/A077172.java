@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A077172 Triangle formed by grouping the natural numbers so that the n-th row contains n numbers whose product has exactly n prime divisors.
+ * A077172 Triangle formed by grouping the natural numbers so that the n-th row contains n numbers whose product has exactly n distinct prime divisors.
  * @author Sean A. Irvine
  */
 public class A077172 extends Sequence1 {

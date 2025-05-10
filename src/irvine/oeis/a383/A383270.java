@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A383270 allocated for Dar\u00edo Clavijo.
+ * A383270 Length of the longest sequence of contiguous 1s in the binary expansion of n after flipping at most one 0-bit to 1.
  * @author Sean A. Irvine
  */
 public class A383270 extends Sequence0 {

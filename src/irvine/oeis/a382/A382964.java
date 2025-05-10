@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A382964 allocated for Michael De Vlieger.
+ * A382964 Number of k &lt;= n such that rad(k) divides n and g * k &gt; n where g is the largest prime factor of n and rad = A007947.
  * @author Sean A. Irvine
  */
 public class A382964 extends Sequence1 {

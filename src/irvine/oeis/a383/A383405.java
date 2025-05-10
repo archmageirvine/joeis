@@ -6,7 +6,7 @@ import irvine.oeis.a098.A098098;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A383405 allocated for Omar E. Pol.
+ * A383405 Partial sums of the sum of the divisors of the numbers of the form 6*k + 5, k &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A383405 extends PartialSumSequence {

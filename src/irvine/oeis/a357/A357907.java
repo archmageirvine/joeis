@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A357907 The output of a Sinclair ZX81 random number generator.
+ * A357907 The internal state of the Sinclair ZX81 and Spectrum random number generator.
  * @author Georg Fischer
  */
 public class A357907 extends LambdaSequence {

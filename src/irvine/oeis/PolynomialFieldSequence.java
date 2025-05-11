@@ -44,9 +44,10 @@ public class PolynomialFieldSequence extends AbstractSequence {
 
   private final List<Polynomial<Q>> mPolys; // Polynomials referenced in the postfix string as "p0" (the initial polynomial), "p1", "p2" and so on.
   private final List<AbstractSequence> mSeqs; // sequences for additional generating functions referenced in the postfix string as "s0", "s1", "s2" and so on.
-  private final ArrayList<Polynomial<Q>> mTerms;
+  private final ArrayList<Polynomial<Q>> mTerms; // terms of mSeqs[is]
+  private final ArrayList<Integer> mNix; // index of next free elemen in mTerms
   private int mN; // index of the next sequence element to be computed
-  private Polynomial<Q> mA; // the generating function A(x)
+  private Polynomial<Q> mA; // the generating function A(x) to be computed
   private final List<Polynomial<Q>> mStack; // stack where the final expression is computed
   private Z mFactorial;
 
@@ -145,7 +146,8 @@ public class PolynomialFieldSequence extends AbstractSequence {
       polyString = "1"; // empty -> "1"
     }
     mSeqs = new ArrayList<AbstractSequence>();
-    mTerms = new ArrayList<Polynomial<Q>>(); // indexed by s0, s1 ...
+    mTerms = new ArrayList<Polynomial<Q>>(); // denaoted by S, T, U, V
+    mNix = new ArrayList<Integer>(); // indexed by S, T, U, V
     final int apos = polyString.indexOf('A');
     if (apos >= 0) { // with A-numbers at the end of the polynomials
       final String[] aNums = polyString.substring(apos).split("\\,"); // split into A-numbers
@@ -156,9 +158,12 @@ public class PolynomialFieldSequence extends AbstractSequence {
           final AbstractSequence seq = (AbstractSequence) SequenceFactory.sequence(aNum);
           final Q[] terms = new Q[mDist + 1];
           final int soff = seq.getOffset();
-          for (int ix = 0; ix <= mDist; ++ix) {
+          int ix = 0;
+          while (ix <= mDist) {
             terms[ix] = ix < soff ? Q.ZERO : Q.valueOf(seq.next());
+            ++ix;
           }
+          mNix.add(ix);
           mTerms.add(Polynomial.create(terms));
           mSeqs.add(seq);
         }
@@ -169,9 +174,12 @@ public class PolynomialFieldSequence extends AbstractSequence {
     for (AbstractSequence seq : seqs) { // and also from the trailing parameter list
       final Q[] terms = new Q[mDist + 1];
       final int soff = seq.getOffset();
-      for (int ix = 0; ix <= mDist; ++ix) {
+      int ix = 0;
+      while (ix <= mDist) {
         terms[ix] = ix < soff ? Q.ZERO : Q.valueOf(seq.next());
+        ++ix;
       }
+      mNix.add(ix);
       mTerms.add(Polynomial.create(terms));
       mSeqs.add(seq);
     }
@@ -200,10 +208,12 @@ public class PolynomialFieldSequence extends AbstractSequence {
     for (int i = offset - 1; i > 0; --i) {
       mFactorial = mFactorial.multiply(i);
     }
-    for (int i = 1; i <= offset; ++i) {
-      for (int iseq = 1; iseq <= mTerms.size(); ++i) {
+    for (int i = 1; i <= offset + mDist; ++i) { // add terms to the addional sequences if our offset >= 1
+      for (int iseq = 0; iseq < mTerms.size(); ++iseq) { // for all additional sequences
         Polynomial<Q> pseq = mTerms.get(iseq);
-        pseq = RING.add(pseq, RING.monomial(Q.valueOf(mSeqs.get(iseq).next()), iseq + 1));
+        final int exponent = mNix.get(iseq);
+        pseq = RING.add(pseq, RING.monomial(Q.valueOf(mSeqs.get(iseq).next()), exponent));
+        mNix.set(iseq, exponent + 1);
         // System.err.println("pseq[" + iseq + "] = " + pseq);
         mTerms.set(iseq, pseq);
       }
@@ -310,7 +320,9 @@ public class PolynomialFieldSequence extends AbstractSequence {
     final int m = mN + mDist; // Number of terms to expand to
     for (int iseq = 0; iseq < mTerms.size(); ++iseq) {
       Polynomial<Q> pseq = mTerms.get(iseq);
-      pseq = RING.add(pseq, RING.monomial(Q.valueOf(mSeqs.get(iseq).next()), m + 1));
+      final int exponent = mNix.get(iseq);
+      pseq = RING.add(pseq, RING.monomial(Q.valueOf(mSeqs.get(iseq).next()), exponent));
+      mNix.set(iseq, exponent + 1);
       // System.err.println("pseq[" + iseq + "] = " + pseq);
       mTerms.set(iseq, pseq);
     }

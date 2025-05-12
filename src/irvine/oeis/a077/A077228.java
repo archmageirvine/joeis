@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.util.array.DynamicArray;
 
 /**
- * A077193.
+ * A077228 Triangle of compositions with a total that is no more than n into exactly k parts each no more than k.
  * @author Sean A. Irvine
  */
 public class A077228 extends A077227 {

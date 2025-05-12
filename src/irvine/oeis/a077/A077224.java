@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A077193.
+ * A077224 a(0) = 1; for n &gt; 1, a(n) = smallest number &gt; a(n-1) such that a(n) + a(k) is squarefree for k = 1 to n-1.
  * @author Sean A. Irvine
  */
 public class A077224 extends CachedSequence {

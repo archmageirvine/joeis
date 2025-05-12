@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077193.
+ * A077199 Smallest k such that both k and k+n are squarefree.
  * @author Sean A. Irvine
  */
 public class A077199 extends Sequence1 {

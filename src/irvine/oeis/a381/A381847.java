@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A381847.
+ * A381847 allocated for Janaka Rodrigo.
  * @author Sean A. Irvine
  */
 public class A381847 extends Sequence1 {

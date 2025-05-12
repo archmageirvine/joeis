@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077193.
+ * A077204 a(1) = 1 . Then smallest n-digit square (MSD) starting with the LSD of the previous term and not a multiple of 100.
  * @author Sean A. Irvine
  */
 public class A077204 extends Sequence1 {

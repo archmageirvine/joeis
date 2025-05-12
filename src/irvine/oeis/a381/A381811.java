@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383357.
+ * A381811 allocated for Noah A Rosenberg.
  * @author Sean A. Irvine
  */
 public class A381811 extends Sequence1 {

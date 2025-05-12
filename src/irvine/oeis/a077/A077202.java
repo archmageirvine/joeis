@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077193.
+ * A077202 a(1) = 1, a(n) = smallest number such that the concatenation of two successive terms gives a prime which has not occurred earlier.
  * @author Sean A. Irvine
  */
 public class A077202 extends Sequence1 {

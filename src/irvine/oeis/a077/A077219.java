@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077193.
+ * A077219 Floor(geometric mean of the reduced residue system modulo n).
  * @author Sean A. Irvine
  */
 public class A077219 extends Sequence1 {

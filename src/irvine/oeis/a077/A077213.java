@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077193.
+ * A077213 a(1) = 2, a(n+1) is the smallest prime greater than n*a(n).
  * @author Sean A. Irvine
  */
 public class A077213 extends Sequence1 {

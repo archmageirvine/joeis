@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a091.A091190;
 
 /**
- * A370441 Expansion of g.f. A(x) satisfying A(x) = A( x^3 + 3*A(x)^4 )^(1/3), with A(0)=0, A&apos;(0)=1.
+ * A370441 Expansion of g.f. A(x) satisfying A(x) = A( x^3 + 3*A(x)^4 )^(1/3), with A(0)=0, A'(0)=1.
  * new A091190()
  * @author Georg Fischer
  */

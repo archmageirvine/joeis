@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077193.
+ * A077218 Sum of numbers of prime factors (counted with multiplicities) of numbers between n-th and (n+1)-st prime.
  * @author Sean A. Irvine
  */
 public class A077218 extends Sequence1 {

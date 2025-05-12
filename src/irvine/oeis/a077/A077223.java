@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A077193.
+ * A077223 a(1) = 1 and then alternately even and odd numbers not occurring earlier such that the sum of any two successive terms is a squarefree number.
  * @author Sean A. Irvine
  */
 public class A077223 extends Sequence1 {

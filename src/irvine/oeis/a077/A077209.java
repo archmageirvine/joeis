@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077193.
+ * A077209 a(1) = 2, then the smallest squarefree number greater than the previous term that begins with the end of the previous term.
  * @author Sean A. Irvine
  */
 public class A077209 extends Sequence1 {

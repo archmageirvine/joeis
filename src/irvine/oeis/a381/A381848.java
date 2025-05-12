@@ -1,7 +1,7 @@
 package irvine.oeis.a381;
 
 /**
- * A381847.
+ * A381848 allocated for Janaka Rodrigo.
  * @author Sean A. Irvine
  */
 public class A381848 extends A381847 {

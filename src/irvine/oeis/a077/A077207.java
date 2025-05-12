@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A077193.
+ * A077207 Triangular number index of A077206(n).
  * @author Sean A. Irvine
  */
 public class A077207 extends SimpleTransformSequence {

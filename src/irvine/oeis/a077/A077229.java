@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077193.
+ * A077229 Number of compositions of n where the largest part is less than or equal to the number of parts.
  * @author Sean A. Irvine
  */
 public class A077229 extends Sequence1 {

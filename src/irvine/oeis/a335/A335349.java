@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001006;
 import irvine.oeis.a002.A002426;
 
 /**
- * A335349 a(n) counts anti-chains of size three in &quot;0,1,2&quot; Motzkin trees on n edges.
+ * A335349 a(n) counts anti-chains of size three in "0,1,2" Motzkin trees on n edges.
  * new A002426(), new A001006()
  * @author Georg Fischer
  */

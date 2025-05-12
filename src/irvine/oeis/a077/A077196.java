@@ -12,7 +12,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A077193.
+ * A077196 Smallest possible sum of the digits of a multiple of n.
  * @author Sean A. Irvine
  */
 public class A077196 extends Sequence1 {

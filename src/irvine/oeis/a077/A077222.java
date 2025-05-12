@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A077193.
+ * A077222 a(1) = 1 and then alternately the smallest even and odd numbers not occurring earlier such that the sum of two successive terms is a square.
  * @author Sean A. Irvine
  */
 public class A077222 extends Sequence1 {

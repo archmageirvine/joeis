@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.util.Pair;
 
 /**
- * A077193.
+ * A077194 Smallest multiple of n with least digit sum.
  * @author Sean A. Irvine
  */
 public class A077194 extends A077196 {

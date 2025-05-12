@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A383357.
+ * A383542 allocated for Kritsada Moomuang.
  * @author Sean A. Irvine
  */
 public class A383542 extends Sequence0 {

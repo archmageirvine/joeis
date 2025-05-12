@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A077193.
+ * A077216 Smallest prime(k) such that 2^n divides the product of composite numbers between prime(k) and prime(k+1) but 2^(n+1) does not.
  * @author Sean A. Irvine
  */
 public class A077216 extends Sequence0 {

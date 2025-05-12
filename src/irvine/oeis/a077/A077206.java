@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077193.
+ * A077206 a(1) = 1 and then smallest n-digit triangular number starting with the least significant digit of the previous term and not a multiple of 10.
  * @author Sean A. Irvine
  */
 public class A077206 extends Sequence1 {

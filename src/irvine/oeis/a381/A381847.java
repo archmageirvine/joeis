@@ -64,7 +64,9 @@ public class A381847 extends Sequence1 {
       final Set<List<OrderedTriple>> next = new HashSet<>();
       for (final List<OrderedTriple> set : triples) {
         for (final OrderedTriple t : set) {
+          // Choose which component of the triple to split
           for (int j = 0; j < 3; ++j) {
+            // Choose the split
             final int tj = t.mTriple[j];
             for (int z = 1; 2 * z <= tj; ++z) {
               final List<OrderedTriple> copy = new ArrayList<>(set);
@@ -83,6 +85,7 @@ public class A381847 extends Sequence1 {
       }
       triples = next;
     }
+    // Finally, check the count of distinct triples in the set
     int cnt = 0;
     for (final List<OrderedTriple> t : triples) {
       if (new TreeSet<>(t).size() == 3) {

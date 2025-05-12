@@ -10,24 +10,21 @@ import irvine.oeis.Sequence1;
  * A077193.
  * @author Sean A. Irvine
  */
-public class A077227 extends Sequence1 {
+public class A077229 extends Sequence1 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> C = Polynomial.create(1, -1);
-  private int mN = 0;
-  private int mM = 0;
-
-  Z t(final int n, final int m) {
-    return m * m < n ? Z.ZERO : RING.coeff(RING.pow(RING.oneMinusXToTheN(m), m, n - m), RING.pow(C, m, n - m), n - m);
-  }
+  private int mN = -1;
 
   @Override
   public Z next() {
-    if (++mM > mN) {
-      ++mN;
-      mM = 1;
+    if (++mN == 0) {
+      return Z.ONE;
     }
-    return t(mN, mM);
+    Z res = Z.ZERO;
+    for (int k = 1; k <= mN; ++k) {
+      res = res.add(RING.pow(RING.series(RING.oneMinusXToTheN(k), C, mN), k, mN).coeff(mN - k));
+    }
+    return res;
   }
 }
-

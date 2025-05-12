@@ -54,13 +54,23 @@ public class A381847 extends Sequence1 {
     }
   }
 
+  private final int mCuboids;
   private int mN = 0;
+
+  protected A381847(final int cuboids) {
+    mCuboids = cuboids;
+  }
+
+  /** Construct the sequence. */
+  public A381847() {
+    this(3);
+  }
 
   @Override
   public Z next() {
     ++mN;
     Set<List<OrderedTriple>> triples = Collections.singleton(Collections.singletonList(new OrderedTriple(mN, mN, mN)));
-    for (int k = 1; k < 3; ++k) {
+    for (int k = 1; k < mCuboids; ++k) {
       final Set<List<OrderedTriple>> next = new HashSet<>();
       for (final List<OrderedTriple> set : triples) {
         for (final OrderedTriple t : set) {
@@ -88,7 +98,7 @@ public class A381847 extends Sequence1 {
     // Finally, check the count of distinct triples in the set
     int cnt = 0;
     for (final List<OrderedTriple> t : triples) {
-      if (new TreeSet<>(t).size() == 3) {
+      if (new TreeSet<>(t).size() == mCuboids) {
         ++cnt;
       }
     }

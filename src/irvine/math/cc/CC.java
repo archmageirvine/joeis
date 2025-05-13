@@ -13,6 +13,8 @@ public class CC extends Number implements Comparable<CC>, IsInteger {
   // methods for actually operating on complex numbers.  The actual implementation
   // is in the ComputableComplexField class.
 
+  private static final int DEFAULT_TOLERANCE = -32;
+
   /** Constant zero. */
   public static final CC ZERO = new CC(CR.ZERO);
   /** Constant one. */
@@ -157,7 +159,23 @@ public class CC extends Number implements Comparable<CC>, IsInteger {
    * @return true if the number is an integer.
    */
   public boolean isInteger() {
-    return re().isInteger() && im().compareTo(CR.ZERO, -32) == 0;
+    return re().isInteger() && im().compareTo(CR.ZERO, DEFAULT_TOLERANCE) == 0;
   }
 
+  /**
+   * Test if this number is equal to zero within the specified tolerance
+   * @param tolerance accuracy
+   * @return true if the number is 0
+   */
+  public boolean isZero(final int tolerance) {
+    return equals(CC.ZERO, tolerance);
+  }
+
+  /**
+   * Test if this number is equal to zero with tolerance <code>2^(-32)</code>.
+   * @return true if the number is 0
+   */
+  public boolean isZero() {
+    return isZero(DEFAULT_TOLERANCE);
+  }
 }

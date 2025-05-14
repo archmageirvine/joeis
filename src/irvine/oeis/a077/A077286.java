@@ -1,0 +1,16 @@
+package irvine.oeis.a077;
+
+import irvine.oeis.FilterSequence;
+import irvine.oeis.a023.A023057;
+
+/**
+ * A073684.
+ * @author Sean A. Irvine
+ */
+public class A077286 extends FilterSequence {
+
+  /** Construct the sequence. */
+  public A077286() {
+    super(1, new A023057(), PRIME);
+  }
+}

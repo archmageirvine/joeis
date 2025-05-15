@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A076707.
+ * A077268 Number of bases in which n requires at least one zero to be written.
  * @author Sean A. Irvine
  */
 public class A077268 extends Sequence1 {

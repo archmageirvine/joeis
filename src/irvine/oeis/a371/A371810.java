@@ -1,7 +1,10 @@
 package irvine.oeis.a371;
 
+import java.util.Arrays;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
+import irvine.util.string.StringUtils;
 
 /**
  * A371810 a(n) is the number of pseudo-Latin stable matchings in a particular matrix of size n (see Comments for detail).
@@ -9,6 +12,7 @@ import irvine.oeis.Sequence1;
  */
 public class A371810 extends Sequence1 {
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int[][] mG = {{1}};
   private int mN = 0;
   private long mCount = 0;
@@ -65,6 +69,9 @@ public class A371810 extends Sequence1 {
   public Z next() {
     if (++mN > mG.length) {
       updateG();
+      if (mVerbose) {
+        StringUtils.message(mN + " G: " + Arrays.deepToString(mG));
+      }
     }
     mCount = 0;
     countStable(0, 0L, new int[mN]);

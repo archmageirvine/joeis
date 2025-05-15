@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383541 Numbers k such that (cos k)^k sets a new record.
+ * A383541 Positive numbers k such that (cos k)^k sets a new record.
  * @author Sean A. Irvine
  */
 public class A383541 extends Sequence1 {

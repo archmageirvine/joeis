@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A073684.
+ * A077282 First prime in n-th group in A077280.
  * @author Sean A. Irvine
  */
 public class A077282 extends A000040 {

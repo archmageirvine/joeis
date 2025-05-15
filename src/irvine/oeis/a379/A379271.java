@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A379271 allocated for Peter Munn.
+ * A379271 Composite numbers, k, whose prime factors, viewed on a log log scale, have a small standard deviation defined with respect to bigomega(k), as specified in the comments.
  * @author Sean A. Irvine
  */
 public class A379271 extends A002808 {

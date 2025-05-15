@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A077230.
+ * A077230 Numerators of coefficients of series expansion of a certain integral in the theory of charged particle beams.
  * @author Sean A. Irvine
  */
 public class A077230 extends Sequence0 {

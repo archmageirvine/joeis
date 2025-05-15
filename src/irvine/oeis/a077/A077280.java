@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A073684.
+ * A077280 Sum of next a(n) successive primes is a square.
  * @author Sean A. Irvine
  */
 public class A077280 extends A000040 {

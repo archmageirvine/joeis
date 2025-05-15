@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A383542 allocated for Kritsada Moomuang.
+ * A383542 a(n) = round(Shi(n)) where Shi(x) is the sinh integral function.
  * @author Sean A. Irvine
  */
 public class A383542 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a005.A005117;
 
 /**
- * A383672 allocated for Alexandre Herrera.
+ * A383672 Squarefree numbers k such that k^2+1 is not squarefree.
  * @author Sean A. Irvine
  */
 public class A383672 extends FilterSequence {

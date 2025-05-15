@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000203;
 
 /**
- * A073500 Numbers n such that sigma(n) = sigma(n+1)+sigma(n-1).
+ * A073500 Numbers k such that sigma(k) = sigma(k+1)+sigma(k-1).
  * @author Sean A. Irvine
  */
 public class A073500 extends A000203 {

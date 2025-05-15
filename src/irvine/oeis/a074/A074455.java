@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A074455 Consider volume of unit sphere as a function of the dimension d; maximize this as a function of d (considered as a continuous variable); sequence gives decimal expansion of the best d.
+ * A074455 Consider the volume of unit sphere as a function of the dimension d; maximize this as a function of d (considered as a continuous variable); sequence gives decimal expansion of the best d.
  * @author Sean A. Irvine
  */
 public class A074455 extends DecimalExpansionSequence {

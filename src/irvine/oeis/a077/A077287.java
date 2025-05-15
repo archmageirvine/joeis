@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A073684.
+ * A077287 Unique encountered factors from ( (prime(n)*prime(n+1))^2 + 1 )/2.
  * @author Sean A. Irvine
  */
 public class A077287 extends Sequence2 {

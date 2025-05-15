@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A077230.
+ * A077231 Denominators of coefficients of series expansion of a certain integral in the theory of charged particle beams.
  * @author Sean A. Irvine
  */
 public class A077231 extends A077230 {

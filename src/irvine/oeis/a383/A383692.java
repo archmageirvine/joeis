@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383692 allocated for Kritsada Moomuang.
+ * A383692 a(n) = round(Chi(n)) where Chi(x) is the cosh integral function.
  * @author Sean A. Irvine
  */
 public class A383692 extends Sequence1 {

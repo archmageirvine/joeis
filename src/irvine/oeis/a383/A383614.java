@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A383489.
+ * A383614 The unique sequence such that Sum_{d|n} d*a(d)^(n/d) = sigma(n)^2 for every n.
  * @author Sean A. Irvine
  */
 public class A383614 extends CachedSequence {

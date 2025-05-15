@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A383257 a(n) = ((prime(n) - 1)! + 1) divided by the product of its towers subordinate to prime(n), where prime(n) is the n-th prime.
+ * A383257 Let p = prime(n), then a(n) is the non-p-smooth part of (p-1)!+1.
  * @author Sean A. Irvine
  */
 public class A383257 extends A000040 {

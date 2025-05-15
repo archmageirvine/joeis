@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A007852 Antichains in rooted plane trees on n nodes.
+ * A007852 Number of antichains in rooted plane trees on n nodes.
  * @author Sean A. Irvine
  */
 public class A007852 extends Sequence1 {

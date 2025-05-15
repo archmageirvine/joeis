@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383489.
+ * A383489 a(n) is the number of divisors d_i(m) for which a divisor d_j(m) exists such that d_i(m) &lt; d_j(m) &lt; sigma(d_i(m)) where m = A383488(n).
  * @author Sean A. Irvine
  */
 public class A383489 extends Sequence1 {

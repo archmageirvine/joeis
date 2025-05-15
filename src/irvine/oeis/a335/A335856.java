@@ -4,7 +4,7 @@ package irvine.oeis.a335;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A335856 Squares visited by a chess king moving on a square-spiral numbered board where the king moves to the adjacent unvisited square containing the lowest prime number. In no adjacent prime numbered squares are present it chooses the lowest spiral number.
+ * A335856 Squares visited by a chess king on a spirally numbered infinite board where the king moves to the adjacent unvisited square containing the lowest prime number. If no such square is available it chooses the lowest-numbered adjacent unvisited square.
  * @author Georg Fischer
  */
 public class A335856 extends FiniteSequence {

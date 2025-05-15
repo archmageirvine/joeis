@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence2;
 
 /**
- * A076707.
+ * A077266 Triangle of number of zeros when n is written in base k (2 &lt;= k &lt;= n).
  * @author Sean A. Irvine
  */
 public class A077266 extends Sequence2 {

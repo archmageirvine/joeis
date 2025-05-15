@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A100345 Triangle read by rows: T(n,k) = n*(n+k), 0&lt;=k&lt;=n.
+ * A100345 Triangle read by rows: T(n,k) = n*(n+k), 0 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A100345 extends Triangle {

@@ -9,7 +9,7 @@ import irvine.oeis.a025.A025475;
 import irvine.util.string.StringUtils;
 
 /**
- * A076707 Ordered differences without repetitions between two successive prime powers of prime numbers.
+ * A077273 Ordered differences without repetitions between two successive powers of a prime but not a prime (A025475).
  * @author Sean A. Irvine
  */
 public class A077273 extends A025475 implements Conjectural {

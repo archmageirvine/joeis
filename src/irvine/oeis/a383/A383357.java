@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383357 allocated for Claude H. R. Dequatre.
+ * A383357 Integers m such that R(Sum_{k=1..m} (10^k+k)) is prime, where R is the digit reversal function A004086.
  * @author Sean A. Irvine
  */
 public class A383357 extends Sequence1 {

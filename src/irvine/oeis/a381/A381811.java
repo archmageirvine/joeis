@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A381811 allocated for Noah A Rosenberg.
+ * A381811 The largest nonnegative integer j for which each integer n,n+2,...,n+2j can be written as the sum of the squares for some partition of n.
  * @author Sean A. Irvine
  */
 public class A381811 extends Sequence1 {

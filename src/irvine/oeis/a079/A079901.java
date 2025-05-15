@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A079901 Triangle of powers, T(n,k) = n^k, 0&lt;=k&lt;=n, read by rows.
+ * A079901 Triangle of powers, T(n,k) = n^k, 0 &lt;= k &lt;= n, read by rows.
  * @author Georg Fischer
  */
 public class A079901 extends Triangle {

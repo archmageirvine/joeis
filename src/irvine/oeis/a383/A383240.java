@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A383240 allocated for Clark Kimberling.
+ * A383240 Rectangular array read by antidiagonals where row n contains the numbers of the form prime(n)*m^2, where prime(n) does not divide m.
  * @author Sean A. Irvine
  */
 public class A383240 extends Sequence1 {

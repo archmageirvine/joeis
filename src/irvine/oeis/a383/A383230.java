@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383489.
+ * A383230 Numbers k whose decimal representation can be split in three parts which can be used as seeds for a tribonacci-like sequence containing k itself.
  * @author Sean A. Irvine
  */
 public class A383230 extends Sequence1 {

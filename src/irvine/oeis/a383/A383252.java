@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383252 allocated for Dar\u00edo Clavijo.
+ * A383252 Numbers that cannot be written in the form (j+2k)^2-(j+k)^2-j^2 with j,k&gt;0.
  * @author Sean A. Irvine
  */
 public class A383252 extends Sequence1 {

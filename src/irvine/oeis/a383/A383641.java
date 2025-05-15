@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383489.
+ * A383641 a(n) is the difference between the sum of even composites and the sum of the odd composites in the first n positive integers.
  * @author Sean A. Irvine
  */
 public class A383641 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383612 allocated for Ryan Jean.
+ * A383612 Numbers k such that 2 + val(k!, 2) &lt; p + val(k!, p), where p is the largest prime &lt;= k and val(r, m) is the valuation of r at m.
  * @author Sean A. Irvine
  */
 public class A383612 extends Sequence1 {

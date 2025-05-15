@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A383489.
+ * A383242 a(n) = p(n)*p(n+1)*(p(n+1) - p(n)) + 1, where p(n) = prime(n).
  * @author Sean A. Irvine
  */
 public class A383242 extends A000040 {

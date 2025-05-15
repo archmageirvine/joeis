@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A382852 allocated for Nathan James Blackerby.
+ * A382852 A greedy expansion of Pi where each numerator a(n) is the denominator of the previous term added, and each a(n) is as small as possible without the sum of terms being greater than Pi. The first numerator is 3.
  * @author Sean A. Irvine
  */
 public class A382852 extends Sequence0 {

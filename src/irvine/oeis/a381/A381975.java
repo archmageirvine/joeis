@@ -6,7 +6,7 @@ import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
 
 /**
- * A381975.
+ * A381975 Number of ways for n competitors to rank in a competition in which each match has 4 possible outcomes in which each competitor gains 0, 1, 2 or 3 points.
  * @author Sean A. Irvine
  */
 public class A381975 extends Sequence0 {

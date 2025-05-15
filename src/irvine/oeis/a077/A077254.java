@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A077230.
+ * A077254 a(n) = prime(n)^n mod n.
  * @author Sean A. Irvine
  */
 public class A077254 extends A000040 {

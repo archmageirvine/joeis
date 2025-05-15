@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077230.
+ * A077253 Sum of digits squared plus sum of digits of n.
  * @author Sean A. Irvine
  */
 public class A077253 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383239 allocated for S. I. Dimitrov.
+ * A383239 Integers k such that there exist an integer m&lt;k such that sigma(k) = sigma(m) = m + 2*k.
  * @author Sean A. Irvine
  */
 public class A383239 extends Sequence1 {

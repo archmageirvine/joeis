@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076707.
+ * A383342 Lexicographically earliest infinite sequence of distinct positive integers such that the number following any consecutive pair x, y of terms is the smallest novel number divisible by R(x,y) = rad(x*y)/rad(gcd(x,y)).
  * @author Sean A. Irvine
  */
 public class A383342 extends Sequence1 {

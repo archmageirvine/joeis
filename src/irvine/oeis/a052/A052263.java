@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006202;
 
 /**
- * A052263 Number of 5-colored labeled graphs on n nodes(divided by 1024).
+ * A052263 Number of 5-colored labeled graphs on n nodes (divided by 1024).
  * @author Sean A. Irvine
  */
 public class A052263 extends A006202 {

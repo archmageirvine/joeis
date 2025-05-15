@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000290;
 
 /**
- * A383027 allocated for Zhining Yang.
+ * A383027 a(n) is the number whose reversed n-digit square is the largest among all reversals of n-digit squares.
  * @author Sean A. Irvine
  */
 public class A383027 extends Sequence1 {

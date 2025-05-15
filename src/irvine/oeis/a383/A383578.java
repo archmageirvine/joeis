@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A383578 allocated for Mike Jones.
+ * A383578 Let p = prime(n), then a(n) is the p-smooth part of (p-1)!+1.
  * @author Sean A. Irvine
  */
 public class A383578 extends A000040 {

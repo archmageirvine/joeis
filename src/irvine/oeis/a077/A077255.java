@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A077230.
+ * A077255 Numbers k such that prime(k)^k == 1 (mod k).
  * @author Sean A. Irvine
  */
 public class A077255 extends A000040 {

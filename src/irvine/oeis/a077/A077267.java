@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
- * A076707.
+ * A077267 Number of zeros in base-3 expansion of n.
  * @author Sean A. Irvine
  */
 public class A077267 extends Sequence0 {

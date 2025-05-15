@@ -9,7 +9,7 @@ import irvine.oeis.a053.A053810;
 import irvine.util.string.StringUtils;
 
 /**
- * A076707.
+ * A077257 Differences between two successive prime powers of prime numbers (A076707) in more than one way.
  * @author Sean A. Irvine
  */
 public class A077257 extends A053810 implements Conjectural {

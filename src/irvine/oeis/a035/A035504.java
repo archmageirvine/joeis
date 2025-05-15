@@ -2,6 +2,7 @@ package irvine.oeis.a035;
 
 import java.util.HashSet;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -22,13 +23,7 @@ public class A035504 extends Sequence1 {
         return r;
       }
     }
-    long s = 0;
-    long m = n;
-    while (m != 0) {
-      final long r = m % 10;
-      s += r * r * r;
-      m /= 10;
-    }
+    final long s = Functions.DIGIT_SUM_CUBES.l(n);
     if (n < mCache.length) {
       mCache[(int) n] = s;
     }

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A383421 allocated for Neal Gersh Tolunsky.
+ * A383421 a(1)=1; thereafter if a(n-1) is a first occurrence, then a(n) is the number of values that occur exactly once in the sequence thus far. Otherwise; a(n) is the number of terms that are the same distance away from an earlier equal value as a(n-1) is from its previous last occurrence.
  * @author Sean A. Irvine
  */
 public class A383421 extends CachedSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A383489.
+ * A383771 Number of noncrossing permutations of [n] avoiding 213 (and by symmetry 132, 213, or 312).
  * @author Sean A. Irvine
  */
 public class A383771 extends Sequence0 {

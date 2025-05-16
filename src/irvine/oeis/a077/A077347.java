@@ -1,0 +1,22 @@
+package irvine.oeis.a077;
+
+import irvine.math.z.Z;
+
+/**
+ * A077347 Final terms of rows of A077346.
+ * @author Sean A. Irvine
+ */
+public class A077347 extends A077346 {
+
+  private long mN = -1;
+
+  @Override
+  public Z next() {
+    ++mN;
+    for (long k = 0; k < mN; ++k) {
+      super.next();
+    }
+    return super.next();
+  }
+}
+

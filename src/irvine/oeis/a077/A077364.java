@@ -4,10 +4,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077363 Smallest n-digit square whose external digits as well as internal digits form a square, or 0 if no such number exists.
+ * A077364 Largest n-digit square whose external digits as well as internal digits form a square, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
-public class A077363 extends Sequence1 {
+public class A077364 extends Sequence1 {
 
   private int mN = 0;
 
@@ -18,17 +18,17 @@ public class A077363 extends Sequence1 {
   @Override
   public Z next() {
     if (++mN == 1) {
-      return Z.ONE;
+      return Z.NINE;
     }
     if (mN == 2) {
-      return Z.valueOf(16);
+      return Z.valueOf(81);
     }
     final StringBuilder base = new StringBuilder("1");
     base.append("0".repeat(mN - 1));
-    Z b = new Z(base).sqrt();
-    final Z lim = new Z(base.append('0')).sqrt();
+    final Z lim = new Z(base).sqrt();
+    Z b = new Z(base.append("0")).sqrt();
     //System.out.println("base=" + base + " lim="+lim);
-    while (b.compareTo(lim) <= 0) {
+    while (b.compareTo(lim) >= 0) {
       final Z s = b.square();
       final long r = s.mod(10);
       if (r == 1) {
@@ -58,7 +58,7 @@ public class A077363 extends Sequence1 {
           return s;
         }
       }
-      b = b.add(1);
+      b = b.subtract(1);
     }
     return Z.ZERO;
   }

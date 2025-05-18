@@ -6,7 +6,7 @@ import java.io.PrintStream;
 import junit.framework.TestCase;
 
 /**
- * Wraps standard input and output so they can be captured per test.
+ * Wraps standard input and output so that they can be captured per test.
  * @author Sean A. Irvine
  */
 public class StandardIoTestCase extends TestCase {

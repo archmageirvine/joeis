@@ -1,8 +1,6 @@
 package irvine.factor.factor;
 
 import java.math.BigInteger;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import de.tilman_neumann.jml.factor.CombinedFactorAlgorithm;
 import de.tilman_neumann.util.SortedMultiset;
@@ -16,8 +14,7 @@ import irvine.math.z.Z;
 public class TillmanFactorizer extends AbstractFactorizer {
 
   static {
-    System.setProperty("org.apache.logging.log4j.simplelog.StatusLogger.level", "OFF");
-    Logger.getLogger("de.tilman_neumann.jml.factor").setLevel(Level.OFF);
+    System.setProperty("log4j.provider", "org.apache.logging.log4j.simple.internal.SimpleProvider");
   }
   private static final String T = System.getProperty("oeis.threads",
     String.valueOf(Runtime.getRuntime().availableProcessors()));

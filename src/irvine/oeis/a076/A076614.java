@@ -38,7 +38,7 @@ public class A076614 extends Sequence1 {
         return false;
       }
       final State other = (State) obj;
-      return mN.equals(other.mN) && mP == other.mP && mK == other.mK;
+      return mP == other.mP && mK == other.mK && mN.equals(other.mN);
     }
 
     @Override

@@ -13,6 +13,6 @@ public class A075753 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A075753() {
-    super(1, new A014493().skip(1), v -> Functions.LPF.z(v));
+    super(1, new A014493(), Functions.LPF::z);
   }
 }

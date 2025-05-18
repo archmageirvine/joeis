@@ -31,6 +31,20 @@ public class A076270 extends Sequence1 {
       }
       return Long.compare(mR, state.mR);
     }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (!(obj instanceof State)) {
+        return false;
+      }
+      final State other = (State) obj;
+      return mN.equals(other.mN) && mR == other.mR;
+    }
+
+    @Override
+    public int hashCode() {
+      return mN.hashCode();
+    }
   }
 
   private final Z mBase;

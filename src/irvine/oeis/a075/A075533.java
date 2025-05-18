@@ -66,7 +66,7 @@ public class A075533 extends Sequence1 {
     public String toString() {
       final StringBuilder sb = new StringBuilder().append('(');
       for (final Tree t : mChildren) {
-        sb.append(t.toString());
+        sb.append(t);
       }
       sb.append(')');
       return sb.toString();

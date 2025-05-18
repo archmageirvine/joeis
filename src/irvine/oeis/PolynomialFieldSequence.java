@@ -109,7 +109,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
       final Integer ix = POST_MAP.get(pelem);
       if (ix != null) {
         if (!parms.isEmpty()) { // with additional parameter(s)
-          if (pelem.equals("^")) {
+          if ("^".equals(pelem)) {
             final int slashPos = parms.indexOf('/');
             if (slashPos >= 0) { // is a fraction
               mPostInts[mPostLen++] = POST_MAP.get("^q");
@@ -185,7 +185,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
     }
 
     polyString = trimQuotes(polyString);
-    final String[] polarr = polyString.indexOf("]") < 0
+    final String[] polarr = !polyString.contains("]")
       ? new String[] {polyString} // no square brackets: a single coefficient lisst
       : polyString.split("]\\s*,\\s*\\["); // a list of coefficient lists enclosed in square bracket
     mPolys = new ArrayList<>(polarr.length);

@@ -97,7 +97,7 @@
       <zipfileset src="${lib.dir}/apfloat.jar" excludes="META-INF/**"/>
       <zipfileset src="${lib.dir}/antlr-4.8-complete.jar" excludes="META-INF/**"/>
       <zipfileset src="${lib.dir}/chesspresso-lib.jar" excludes="META-INF/**"/>
-      <zipfileset src="${lib.dir}/jml.jar" excludes="META-INF/**"/>
+      <zipfileset src="${lib.dir}/jml.jar"/>
       <zipfileset src="${lib.dir}/org.sat4j.core.jar" excludes="META-INF/**"/>
       <manifest>
         <attribute name="Main-Class" value="irvine.oeis.SequenceFactory"/>
@@ -145,7 +145,7 @@
       <zipfileset src="${lib.dir}/chesspresso-lib.jar" excludes="META-INF/**"/>
       <zipfileset src="${lib.dir}/classgraph-4.8.80.jar" excludes="META-INF/**"/>
       <zipfileset src="${lib.dir}/junit.jar" excludes="META-INF/**"/>
-      <zipfileset src="${lib.dir}/jml.jar" excludes="META-INF/**"/>
+      <zipfileset src="${lib.dir}/jml.jar"/>
       <zipfileset src="${lib.dir}/org.sat4j.core.jar" excludes="META-INF/**"/>
       <manifest>
         <attribute name="Main-Class" value="irvine.oeis.SequenceFactory"/>

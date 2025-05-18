@@ -28,7 +28,7 @@ public class A001006 extends HolonomicRecurrence implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    return Integers.SINGLETON.sum(0, n, k -> Binomial.binomial(n, 2 * k).multiply(Functions.CATALAN.z(k)));
+    return Integers.SINGLETON.sum(0, n, k -> Binomial.binomial(n, 2L * k).multiply(Functions.CATALAN.z(k)));
   }
 
 }

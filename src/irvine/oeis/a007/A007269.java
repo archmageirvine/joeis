@@ -41,7 +41,7 @@ public class A007269 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A007269() {
-    this((graph, n) -> true);
+    this((graph, n) -> Boolean.TRUE);
   }
 
   private static Graph simplify(final Graph graph) {

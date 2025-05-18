@@ -49,10 +49,10 @@ public class A034840 extends Sequence0 {
     @Override
     public boolean equals(final Object obj) {
       return obj instanceof State
-        && mValue.equals(((State) obj).mValue)
         && mDifference == ((State) obj).mDifference
         && mStart == ((State) obj).mStart
-        && mCount == ((State) obj).mCount;
+        && mCount == ((State) obj).mCount
+        && mValue.equals(((State) obj).mValue);
     }
 
     @Override

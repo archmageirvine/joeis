@@ -2588,3 +2588,4 @@ A077079 Number of inequivalent bracelets from A006840 with the additional equiva
 A077191 Number of possible character tables for a group of order n.
 A077258 Least number which can be represented by the difference between two successive prime powers of prime numbers (A076707) in exactly n ways.
 A077275 Least number which can be represented by the difference between two successive powers of a prime but not a prime (A077273) in just n ways.
+A077387 Continued fraction expansion of Product_{p prime} (1 + p/((p-1)^2*(p+1))).

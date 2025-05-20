@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A383646 allocated for Shyam Sunder Gupta.
+ * A383646 Smallest number that takes n steps to reach 1 under iteration of sum-of-cubes-of-digits map.
  * @author Sean A. Irvine
  */
 public class A383646 extends NoncomputableSequence {

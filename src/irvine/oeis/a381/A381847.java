@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A381847 allocated for Janaka Rodrigo.
+ * A381847 a(n) is the number of ways to partition an n X n X n cube into 3 cuboids of different dimensions.
  * @author Sean A. Irvine
  */
 public class A381847 extends Sequence1 {

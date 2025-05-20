@@ -5,7 +5,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a002.A002202;
 
 /**
- * A083533 First difference sequence of A002202. Difference between consecutive possible values for phi.
+ * A083533 First difference sequence of A002202. Difference between consecutive possible values of phi(n), the Euler totient function A000010.
  * @author Georg Fischer
  */
 public class A083533 extends DifferenceSequence {

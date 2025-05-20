@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A230581 Numbers n such that n^10 - n - 1 is prime.
+ * A230581 Numbers k such that k^10 - k - 1 is prime.
  * @author Georg Fischer
  */
 public class A230581 extends PrimePositionSubsequence {

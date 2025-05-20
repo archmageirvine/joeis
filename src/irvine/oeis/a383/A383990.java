@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A383732 allocated for Guy Amit.
+ * A383990 allocated for Michael De Vlieger.
  * @author Sean A. Irvine
  */
 public class A383990 extends Sequence0 {
@@ -23,7 +23,7 @@ public class A383990 extends Sequence0 {
     if (++mN == 0) {
       return Z.ZERO;
     }
-    final Polynomial<Q> p = RING.multiply(RING.subtract(RING.one(), RING.sqrt1p(C1, mN)), Q.HALF).shift(1);
+    final Polynomial<Q> p = RING.add(RING.multiply(RING.subtract(RING.one(), RING.sqrt1p(C1, mN + 1)), Q.HALF).shift(-1), RING.one());
     return RING.exp(p, mN).coeff(mN).multiply(Functions.FACTORIAL.z(mN)).toZ();
   }
 }

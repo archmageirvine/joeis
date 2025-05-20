@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068936 Numbers having the sum of distinct prime factors not greater than the sum of exponents in prime factorization, A008472(n)&lt;=A001222(n).
+ * A068936 Numbers having the sum of distinct prime factors not greater than the sum of exponents in prime factorization, A008472(k) &lt;= A001222(k).
  * @author Sean A. Irvine
  */
 public class A068936 extends Sequence1 {

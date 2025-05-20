@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383747 allocated for Michel Lagneau.
+ * A383747 Consider the polynomial P(m,z) = Sum_{k=1..r} d(k)*z^(k-1) where d(1) &lt; d(2) &lt; ... &lt; d(r) are the r divisors of m. The sequence lists the numbers m such that P(m,z) contains at least three zeros of the form -1/q, i/q, -i/q, for some integer q, i = sqrt(-1).
  * @author Sean A. Irvine
  */
 public class A383747 extends Sequence1 {

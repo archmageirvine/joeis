@@ -5,7 +5,7 @@ import irvine.oeis.a062.A062799;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A238950 The number of arcs from even to odd level vertices in divisor lattice D(n).
+ * A238950 Number of arcs from even to odd level vertices in divisor lattice D(n).
  * @author Georg Fischer
  */
 public class A238950 extends MultiTransformSequence {

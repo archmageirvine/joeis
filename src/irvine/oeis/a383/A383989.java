@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A383732 allocated for Guy Amit.
+ * A383989 allocated for Michael De Vlieger.
  * @author Sean A. Irvine
  */
 public class A383989 extends Sequence0 {

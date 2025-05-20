@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a381.A381054;
 
 /**
- * A383115 allocated for Hassan Baloui.
+ * A383115 a(n) is the number of values m that satisfy floor(sqrt(m)) = n and A381054(m) = 1.
  * @author Sean A. Irvine
  */
 public class A383115 extends Sequence1 {

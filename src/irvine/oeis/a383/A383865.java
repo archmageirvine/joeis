@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383865 allocated for Amiram Eldar.
+ * A383865 The number of divisors d of n having the property that for every prime p dividing n the p-adic valuation of d is either 0 or an infinitary divisor of the p-adic valuation of n.
  * @author Sean A. Irvine
  */
 public class A383865 extends Sequence1 {

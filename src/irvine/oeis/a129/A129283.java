@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003415;
 
 /**
- * A129283 (Arithmetic derivative of n) + n.
+ * A129283 a(n) = (arithmetic derivative of n) + n.
  * @author Georg Fischer
  */
 public class A129283 extends A003415 {

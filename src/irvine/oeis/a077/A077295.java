@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033307;
 
 /**
- * A077295 Partition the concatenation 1234567...of natural numbers into successive strings which are even, all different and &gt; 2. (0's never taken as the most significant digit.).
+ * A077295 Partition the concatenation 1234567...of natural numbers into successive strings which are even, all different and &gt; 2. (0 never taken as the most significant digit.).
  * @author Sean A. Irvine
  */
 public class A077295 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383642 allocated for Huaineng He.
+ * A383642 Numbers k = x + y with x and y positive integers such that x*y is a cube.
  * @author Sean A. Irvine
  */
 public class A383642 extends Sequence1 {

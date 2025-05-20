@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A381978 allocated for Aksel Eide-Hansen.
+ * A381978 a(n) is the smallest number k such that b+c+d = n, where b, c and d are three distinct positive divisors of k.
  * @author Sean A. Irvine
  */
 public class A381978 extends AbstractSequence {

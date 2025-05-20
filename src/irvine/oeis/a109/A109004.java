@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A109004 Table of gcd(n,m) read by antidiagonals, n &gt;= 0, m &gt;= 0.
+ * A109004 Table of gcd(n, m) read by antidiagonals, n &gt;= 0, m &gt;= 0.
  * @author Georg Fischer
  */
 public class A109004 extends Triangle {

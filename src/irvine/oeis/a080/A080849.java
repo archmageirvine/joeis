@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008683;
 
 /**
- * A080849 (mu(n)+2)*n^2, where mu is the Moebius function (A008683).
+ * A080849 a(n) = (mu(n)+2)*n^2, where mu is the Moebius function (A008683).
  * @author Georg Fischer
  */
 public class A080849 extends A008683 {

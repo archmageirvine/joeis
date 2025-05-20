@@ -3,7 +3,7 @@ package irvine.oeis.a383;
 import irvine.oeis.LinearCongruentialGenerator;
 
 /**
- * A357907.
+ * A383956 Consecutive states of the linear congruential pseudo-random number generator used by BASIC on the Poly-1 computer when started at 1.
  * @author Sean A. Irvine
  */
 public class A383956 extends LinearCongruentialGenerator {

@@ -7,7 +7,7 @@ import irvine.oeis.a025.A025473;
 import irvine.oeis.a025.A025474;
 
 /**
- * A082950 Power base and exponent of n-th prime-power exchanged.
+ * A082950 Power base and exponent of n-th prime power exchanged.
  * @author Georg Fischer
  */
 public class A082950 extends AbstractSequence {

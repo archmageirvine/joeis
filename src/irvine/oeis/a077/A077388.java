@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a122.A122820;
 
 /**
- * A077388 Sums of rows of triangle in A077389.
+ * A077388 Row sums of the triangle in A122820.
  * @author Sean A. Irvine
  */
 public class A077388 extends A122820 {

@@ -52,6 +52,9 @@ public class A077391 extends Sequence1 {
                 }
               } else {
                 next.add(u);
+//                if (next.size() > 1000) { // Search is way faster with this heuristic but cannot guarantee result
+//                  next.pollLast();
+//                }
               }
             }
           }

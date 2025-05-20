@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A383789 allocated for Ali Sada.
+ * A383789 a(1) = 1; for n &gt; 1, a(n) is the smallest positive integer not already in the sequence such that it shares at least one digit with a(n-1), and it has a different number of digits from a(n-1).
  * @author Sean A. Irvine
  */
 public class A383789 extends Sequence1 {

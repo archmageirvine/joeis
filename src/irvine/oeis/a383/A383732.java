@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000796;
 
 /**
- * A383732 allocated for Guy Amit.
+ * A383732 a(n) is the smallest k such that every digit from 0 to 9 appears at least n times among the first k digits of Pi (after the decimal point).
  * @author Sean A. Irvine
  */
 public class A383732 extends Sequence1 {

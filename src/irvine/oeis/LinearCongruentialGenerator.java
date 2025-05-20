@@ -8,10 +8,10 @@ import irvine.math.z.Z;
  */
 public class LinearCongruentialGenerator extends AbstractSequence {
 
-  private final long mA;
-  private final long mB;
-  private final long mM;
-  private long mS;
+  private final Z mA;
+  private final Z mB;
+  private final Z mM;
+  private Z mS;
   private boolean mFirst = true;
 
   /**
@@ -24,13 +24,13 @@ public class LinearCongruentialGenerator extends AbstractSequence {
    */
   public LinearCongruentialGenerator(final int offset, final long a, final long b, final long m, final long s) {
     super(offset);
-    if (a >= m || b >= m || s >= m || s < 0 || a < 0 || b < 0 || m > Integer.MAX_VALUE) {
+    if (a >= m || b >= m || s >= m || s < 0 || a < 0 || b < 0) {
       throw new IllegalArgumentException();
     }
-    mA = a;
-    mB = b;
-    mM = m;
-    mS = s;
+    mA = Z.valueOf(a);
+    mB = Z.valueOf(b);
+    mM = Z.valueOf(m);
+    mS = Z.valueOf(s);
   }
 
   /**
@@ -55,7 +55,7 @@ public class LinearCongruentialGenerator extends AbstractSequence {
   }
 
   private void step() {
-    mS = (mS * mA + mB) % mM;
+    mS = mS.multiply(mA).add(mB).mod(mM);
   }
 
   /**
@@ -64,12 +64,12 @@ public class LinearCongruentialGenerator extends AbstractSequence {
    * @return length of period
    */
   public long computePeriod() {
-    final long t = mS;
+    final Z t = mS;
     long cnt = 0;
     do {
       ++cnt;
       step();
-    } while (mS != t);
+    } while (!mS.equals(t));
     return cnt;
   }
 
@@ -77,9 +77,9 @@ public class LinearCongruentialGenerator extends AbstractSequence {
   public Z next() {
     if (mFirst) {
       mFirst = false;
-      return Z.valueOf(mS);
+      return mS;
     }
     step();
-    return Z.valueOf(mS);
+    return mS;
   }
 }

@@ -6,7 +6,7 @@ import irvine.oeis.a014.A014493;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A075753 Smallest prime factor of n-th odd triangular number.
+ * A075753 Smallest prime factor of n-th odd triangular number; a(1) = 1.
  * @author Georg Fischer
  */
 public class A075753 extends SimpleTransformSequence {

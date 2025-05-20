@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068338 n!^2 * sum{k=1 to n} mu(k)/k^2, where mu(k) is the Moebius function.
+ * A068338 a(n) = n!^2 * Sum_{k=1..n} mu(k)/k^2, where mu(k) is the Moebius function.
  * @author Sean A. Irvine
  */
 public class A068338 extends Sequence1 {

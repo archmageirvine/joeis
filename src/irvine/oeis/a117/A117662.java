@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A117662 n*(n-1)*(n-2)*(n+3)/12.
+ * A117662 a(n) = n*(n-1)*(n-2)*(n+3)/12.
  * @author Georg Fischer
  */
 public class A117662 extends GeneratingFunctionSequence {

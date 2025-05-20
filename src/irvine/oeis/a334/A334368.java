@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A334368 Number of proper divisors of n such that d, n/d and n-d are all squarefree.
+ * A334368 Number of proper divisors d of n such that d, n/d and n-d are all squarefree.
  * @author Georg Fischer
  */
 public class A334368 extends AbstractSequence {

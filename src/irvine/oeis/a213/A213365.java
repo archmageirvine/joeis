@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a087.A087183;
 
 /**
- * A213365 Numbers n such that 3n is a partition number.
+ * A213365 Numbers k such that 3*k is a partition number.
  * @author Georg Fischer
  */
 public class A213365 extends AbstractSequence {

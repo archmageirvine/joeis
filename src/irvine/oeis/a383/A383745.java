@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383745 allocated for Huaineng He.
+ * A383745 Numbers k of the form x*(x+1) whose sum of digits is of the form y*(y+1).
  * @author Sean A. Irvine
  */
 public class A383745 extends Sequence1 {

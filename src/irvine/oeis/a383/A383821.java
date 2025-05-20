@@ -6,7 +6,7 @@ import irvine.oeis.a030.A030986;
 import irvine.oeis.a067.A067275;
 
 /**
- * A383821 allocated for Shyam Sunder Gupta.
+ * A383821 3-automorphic numbers: positive integers k such that 3k^2 ends with k.
  * @author Sean A. Irvine
  */
 public class A383821 extends UnionSequence {

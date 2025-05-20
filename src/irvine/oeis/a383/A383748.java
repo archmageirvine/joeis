@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383748 allocated for Michel Lagneau.
+ * A383748 a(n) = q  is the smallest integer, such that the numbers -1/q, i/q, -i/q with i = sqrt(-1), are three zeros of the polynomial P(A783747(n),z) = Sum_{k=1..r} d(k)*z^(k-1) where d(1) &lt; d(2), ..., &lt; d(r) are the r divisors of A383747(n).
  * @author Sean A. Irvine
  */
 public class A383748 extends Sequence1 {

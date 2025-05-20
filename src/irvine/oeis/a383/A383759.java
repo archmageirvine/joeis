@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A383759 allocated for Artur Jasinski.
+ * A383759 Decimal expansion of infinite nested radical sqrt(8-sqrt(8-sqrt(8+sqrt(8-...)))).
  * @author Sean A. Irvine
  */
 public class A383759 extends DecimalExpansionSequence {

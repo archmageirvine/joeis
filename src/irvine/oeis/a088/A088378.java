@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a000.A000578;
 
 /**
- * A088378 (Smallest prime-factor of n)^3.
+ * A088378 a(n) = (smallest prime factor of n)^3; a(1) = 1.
  * @author Georg Fischer
  */
 public class A088378 extends LambdaSequence {

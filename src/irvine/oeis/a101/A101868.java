@@ -7,7 +7,7 @@ import irvine.oeis.a188.A188009;
 
 
 /**
- * A101868 a(n) = n + 2*ceiling(phi n), where phi = (1 + sqrt(5))/2. Row 1 of A101866.
+ * A101868 a(n) = n + 2*ceiling(phi*n), where phi = (1 + sqrt(5))/2. Row 1 of A101866.
  * @author Georg Fischer
  */
 public class A101868 extends FilterPositionSequence {

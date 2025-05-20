@@ -7,7 +7,7 @@ import irvine.oeis.a055.A055777;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A383817 allocated for Artur Jasinski.
+ * A383817 Decimal expansion of -Sum_{k&gt;=1} mu(3*k)/(3^k - 1), where mu is the M\u00f6bius function A008683.
  * @author Sean A. Irvine
  */
 public class A383817 extends DecimalExpansionSequence {

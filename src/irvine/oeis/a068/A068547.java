@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A068547 Numbers n such that n*tau(n)&gt;5*prime(n).
+ * A068547 Numbers m such that m*tau(m)&gt;5*prime(m).
  * @author Sean A. Irvine
  */
 public class A068547 extends A000040 {

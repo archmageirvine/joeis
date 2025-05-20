@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A077287 Unique encountered factors from ( (prime(n)*prime(n+1))^2 + 1 )/2.
+ * A077287 If the least prime factor of ((prime(k)*prime(k+1))^2 + 1)/2 for k &gt;= 2 is not yet in the sequence, then add it to the sequence.
  * @author Sean A. Irvine
  */
 public class A077287 extends Sequence2 {

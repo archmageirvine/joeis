@@ -91,4 +91,6 @@ public final class Predicates {
   public static final Predicate2 ZEROLESS = new Zeroless(); // =A052382(10,
   /** Test if a number is p-smooth: all prime divisors are &lt;= p. */
   public static final Predicate2 SMOOTH = new Smooth(); // =A003586(3, =A051037(5, =A002473(7, =A051038(11, =A080197(13, =A080681(17, =A080682(19, =A080683(23
+  /** Test if a number is a repeated digit in a base. */
+  public static final Predicate2 ECHO = new Echo(); // =A383927(2, =A383896(10
 }

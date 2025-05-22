@@ -3,7 +3,7 @@ package irvine.oeis.a384;
 import irvine.oeis.LinearCongruentialGenerator;
 
 /**
- * A383809.
+ * A384159 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A384159 extends LinearCongruentialGenerator {

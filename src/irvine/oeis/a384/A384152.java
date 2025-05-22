@@ -3,7 +3,7 @@ package irvine.oeis.a384;
 import irvine.oeis.LinearCongruentialGenerator;
 
 /**
- * A383809.
+ * A384152 Consecutive states of the linear congruential pseudo-random number generator used by OMNITAB II when started at s=1.
  * @author Sean A. Irvine
  */
 public class A384152 extends LinearCongruentialGenerator {

@@ -6,7 +6,7 @@ import irvine.util.array.LongDynamicArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A383879 allocated for Zhining Yang.
+ * A383879 a(n) is the smallest integer k such that the Diophantine equation x^3 + y^3 + z^3 + w^3 = k^n, where 0 &lt; x &lt; y &lt; z &lt; w has exactly n integer solutions.
  * @author Sean A. Irvine
  */
 public class A383879 extends Sequence1 {

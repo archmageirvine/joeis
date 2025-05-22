@@ -4,7 +4,7 @@ package irvine.oeis.a212;
 import irvine.oeis.a210.A210286;
 
 /**
- * A212240 Number of 2 X 2 matrices M of with all terms in {1,...,n} and permanent(M) &gt;= n.
+ * A212240 Number of 2 X 2 matrices M with all terms in {1,...,n} and permanent(M) &gt;= n.
  * @author Georg Fischer
  */
 public class A212240 extends A210286 {

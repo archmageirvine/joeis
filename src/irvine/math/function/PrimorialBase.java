@@ -10,9 +10,14 @@ import irvine.math.z.Z;
  * Expand the number into a primorial base representation.
  * @author Sean A. Irvine
  */
-class PrimorialBase extends AbstractFunction1 {
+public class PrimorialBase extends AbstractFunction1 {
 
-  private static List<Z> primorialBaseList(final Z n) {
+  /**
+   * Return the primorial base representation of n as a list.
+   * @param n number
+   * @return primorial base expansion
+   */
+  public static List<Z> primorialBaseList(final Z n) {
     int b = 0;
     while (Functions.PRIMORIAL_COUNT.z(b).compareTo(n) <= 0) {
       ++b;

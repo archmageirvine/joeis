@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A242676 a(n) = Abs(StirlingS1(4*n,n)).
+ * A242676 a(n) = |Stirling1(4*n,n)|.
  * @author Georg Fischer
  */
 public class A242676 extends LambdaSequence {

@@ -3,14 +3,14 @@ package irvine.oeis.a384;
 import irvine.oeis.LinearCongruentialGenerator;
 
 /**
- * A384160 allocated for Sean A. Irvine.
+ * A384150 allocated for Lynn R. Purser.
  * @author Sean A. Irvine
  */
-public class A384160 extends LinearCongruentialGenerator {
+public class A384150 extends LinearCongruentialGenerator {
 
   /** Construct the sequence. */
-  public A384160() {
-    super(131069, 0, 1L << 35);
+  public A384150() {
+    super(10924, 11830, 32769);
     //System.out.println("Period: " + computePeriod());
   }
 }

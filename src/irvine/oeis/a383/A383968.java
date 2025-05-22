@@ -20,7 +20,7 @@ public class A383968 extends Sequence1 {
         // b must have same parity as a to get an even sum
         for (long b = a, j = k; j <= set; j <<= 2, b += 2) {
           if ((set & j) != 0) {
-            seen |= 1L << (a + b);
+            seen |= 1L << ((a + b) >>> 1); // sums are even, divide by 2
             if (seen == mMask) {
               return true;
             }
@@ -33,10 +33,10 @@ public class A383968 extends Sequence1 {
 
   @Override
   public Z next() {
-    if (++mN >= Integer.SIZE) {
+    if (++mN >= Long.SIZE) {
       throw new UnsupportedOperationException();
     }
-    mMask = (1L << (2 * mN)) / 3; // 10101...01
+    mMask = (1L <<  mN) - 1;
     long cnt = 0;
     for (long set = 1; set < 1L << mN; set += 2) {
       if (is(set)) {

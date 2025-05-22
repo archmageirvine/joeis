@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A383891 allocated for Xiaoliang Zhang.
+ * A383891 a(n) is the length of chunks of the prime number sequence such that each chunk\u2019s sum of reciprocals is no less than 1/n, chunks being consecutive and of minimal length, for n&gt;=2.
  * @author Sean A. Irvine
  */
 public class A383891 extends Sequence2 {

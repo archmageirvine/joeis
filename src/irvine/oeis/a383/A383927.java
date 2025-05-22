@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383927 allocated for Michael S. Branicky.
+ * A383927 Binary echo numbers: positive integers k such that the gpf(k-1) is a suffix of k when gpf(k-1) and k are written in binary.
  * @author Sean A. Irvine
  */
 public class A383927 extends Sequence1 {

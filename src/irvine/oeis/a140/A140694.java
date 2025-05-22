@@ -5,7 +5,7 @@ import irvine.oeis.a014.A014963;
 import irvine.oeis.a063.A063659;
 
 /**
- * A140694 A014963(n) * A063659(n).
+ * A140694 a(n) = A014963(n) * A063659(n).
  * @author Georg Fischer
  */
 public class A140694 extends A014963 {

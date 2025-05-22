@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A383876 allocated for David James Sycamore.
+ * A383876 a(0) = 0, a(1) = 1. Let n be greatest index such that a(0),...a(n) are already known. If a(n) is not a record term, a(n+1) = number of k &lt; n such that a(k) = a(n). If a(n) is a record term a(n+1) = a(r) where r is the greatest record &lt; a(n).
  * @author Sean A. Irvine
  */
 public class A383876 extends CachedSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000796;
 
 /**
- * A383690 allocated for Gonzalo Mart\u00ednez.
+ * A383690 Positions of digits in the decimal expansion of Pi where the cumulative sum of even digits equals the cumulative sum of odd digits (positions 1, 2, 3, ... refer to the digits 3, 1, 4, ...).
  * @author Sean A. Irvine
  */
 public class A383690 extends Sequence1 {

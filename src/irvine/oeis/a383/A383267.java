@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A383267 allocated for Arkadiusz Wesolowski.
+ * A383267 Decimal expansion of (4/11)^(1/3).
  * @author Sean A. Irvine
  */
 public class A383267 extends DecimalExpansionSequence {

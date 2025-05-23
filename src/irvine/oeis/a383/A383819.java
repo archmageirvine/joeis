@@ -25,7 +25,7 @@ public class A383819 extends DecimalExpansionSequence {
           if (t.isZero()) {
             return sum;
           }
-          final Z u =CR.TWO.divide(Z.THREE.pow(Z.THREE.pow(++k).multiply2())).getApprox(precision);
+          final Z u = CR.TWO.divide(Z.THREE.pow(Z.THREE.pow(++k).multiply2())).getApprox(precision);
           sum = sum.add(t).subtract(u);
         }
       }

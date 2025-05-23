@@ -17,7 +17,7 @@ public class A279433 extends Sequence1 {
   private long mM = 0;
 
   private String key(final long x0, final long y0, final long x1, final long y1, final long x2, final long y2) {
-    final String[] t = new String[] {x0 + "," + y0, x1 + "," + y1, x2 + "," + y2};
+    final String[] t = {x0 + "," + y0, x1 + "," + y1, x2 + "," + y2};
     Arrays.sort(t);
     return Arrays.toString(t);
   }

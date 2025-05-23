@@ -8,6 +8,7 @@ import irvine.oeis.FilterSequence;
  */
 public class A383243 extends FilterSequence {
 
+  /** Construct the sequence. */
   public A383243() {
     super(1, new A383241(), PRIME);
   }

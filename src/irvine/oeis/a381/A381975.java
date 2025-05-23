@@ -27,7 +27,7 @@ public class A381975 extends Sequence0 {
     ++mN;
     long count = 0;
     final Bumper bump = BumperFactory.range(0, mN - 1);
-    int[] f = new int[mN];
+    final int[] f = new int[mN];
     do {
       if (is(f)) {
         ++count;

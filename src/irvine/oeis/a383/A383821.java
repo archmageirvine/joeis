@@ -11,6 +11,7 @@ import irvine.oeis.a067.A067275;
  */
 public class A383821 extends UnionSequence {
 
+  /** Construct the sequence. */
   public A383821() {
     super(1, new A030985(), new A030986(), new A067275().skip(2));
   }

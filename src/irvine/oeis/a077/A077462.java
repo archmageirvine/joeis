@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A077459.
+ * A077462 Prime factor configuration patterns.
  * @author Sean A. Irvine
  */
 public class A077462 extends Sequence0 {

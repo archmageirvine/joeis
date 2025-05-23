@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077459.
+ * A077472 Greedy powers of (5/8): sum_{n=1..inf} (5/8)^a(n) = 1.
  * @author Sean A. Irvine
  */
 public class A077472 extends Sequence1 {

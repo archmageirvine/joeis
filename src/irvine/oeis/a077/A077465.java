@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006046;
 
 /**
- * A077459.
+ * A077465 Values of n such that A006046(n)/n^theta, where theta=log(3)/log(2), is a local minimum, computed according to Harborth's recurrence.
  * @author Sean A. Irvine
  */
 public class A077465 extends Sequence1 {

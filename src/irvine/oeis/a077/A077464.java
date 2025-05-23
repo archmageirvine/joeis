@@ -8,7 +8,7 @@ import irvine.oeis.a006.A006046;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A077459.
+ * A077464 Stolarsky-Harborth constant; lim inf_{n-&gt;oo} F(n)/n^theta, where F(n) is the number of odd binomial coefficients in the first n rows and theta=log(3)/log(2).
  * @author Sean A. Irvine
  */
 public class A077464 extends DecimalExpansionSequence {

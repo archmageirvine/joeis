@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077459.
+ * A077475 Greedy powers of (8/13): Sum_{n&gt;=1} (8/13)^a(n) = 1.
  * @author Sean A. Irvine
  */
 public class A077475 extends Sequence1 {

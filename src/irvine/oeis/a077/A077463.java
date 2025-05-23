@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077459.
+ * A077463 Number of primes p such that n &lt; p &lt; 2n-2.
  * @author Sean A. Irvine
  */
 public class A077463 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a383;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A383077 Number of n-digit positive integers where all pairs of consecutive digits have a difference of at least 5
+ * A383077 Number of n-digit positive integers where all pairs of consecutive digits have a difference of at least 5.
  * @author Georg Fischer
  */
 public class A383077 extends GeneratingFunctionSequence {

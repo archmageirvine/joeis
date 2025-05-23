@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077459.
+ * A077470 Greedy powers of (3/5): sum_{n=1..inf} (3/5)^a(n) = 1.
  * @author Sean A. Irvine
  */
 public class A077470 extends Sequence1 {

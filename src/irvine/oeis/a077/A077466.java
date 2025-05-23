@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006046;
 
 /**
- * A077459.
+ * A077466 a(n) = A006046(A077465(n)).
  * @author Sean A. Irvine
  */
 public class A077466 extends Sequence1 {

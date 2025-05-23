@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A077459.
+ * A077467 Sum of binary digits of A077465(n).
  * @author Sean A. Irvine
  */
 public class A077467 extends SimpleTransformSequence {

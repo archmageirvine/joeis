@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a018.A018804;
 
 /**
- * A383940.
+ * A384020 allocated for Ctibor O. Zizka.
  * @author Sean A. Irvine
  */
 public class A384020 extends Sequence1 {

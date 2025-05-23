@@ -8,9 +8,11 @@ import irvine.oeis.LinearCongruentialGenerator;
  */
 public class A384237 extends LinearCongruentialGenerator {
 
+  // todo not valid a-number
+
   /** Construct the sequence. */
   public A384237() {
-    super(2897, 1, 1L << 23);
-    //System.out.println("Period: " + computePeriod());
+    super(997, 0, 10000000);
+    System.out.println("Period: " + computePeriod());
   }
 }

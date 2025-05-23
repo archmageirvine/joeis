@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077459.
+ * A077469 Greedy powers of (3/4): sum_{n=1..inf} (3/4)^a(n) = 1.
  * @author Sean A. Irvine
  */
 public class A077469 extends Sequence1 {

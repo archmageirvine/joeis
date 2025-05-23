@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077459.
+ * A077471 Greedy powers of (4/7): sum_{n=1..inf} (4/7)^a(n) = 1.
  * @author Sean A. Irvine
  */
 public class A077471 extends Sequence1 {

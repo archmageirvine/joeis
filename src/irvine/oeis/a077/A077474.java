@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077459.
+ * A077474 Greedy powers of (7/10): sum_{n=1..inf} (7/10)^a(n) = 1.
  * @author Sean A. Irvine
  */
 public class A077474 extends Sequence1 {

@@ -7,13 +7,12 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A113273 Decimal expansion of Gamma(1/3)^3/Pi^2.
- * Formula: Gamma(1/3)^3/Pi^2
  * @author Georg Fischer
  */
 public class A113273 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A113273() {
-    super(0, CrFunctions.GAMMA.cr(CR.ONE.divide(CR.THREE)).pow(CR.THREE).divide(CR.PI.pow(CR.TWO)));
+    super(1, CrFunctions.GAMMA.cr(CR.ONE.divide(CR.THREE)).pow(CR.THREE).divide(CR.PI.pow(CR.TWO)));
   }
 }

@@ -1153,20 +1153,24 @@ public final class GraphUtils {
   }
 
   /**
-   * Mark all vertices in the graph reachable from the current vertex.
+   * Mark all vertices in the graph reachable from the current vertex,
+   * returning the total count of the reachable vertices.
    * @param g the graph
    * @param reachable status of each vertex
    * @param current vertex to start marking from
+   * @return count of reachable vertices.
    */
-  public static void markAll(final Graph g, final boolean[] reachable, final int current) {
+  public static int markAll(final Graph g, final boolean[] reachable, final int current) {
     if (reachable[current]) {
-      return;
+      return 0;
     }
     reachable[current] = true;
+    int count = 1;
     int j = -1;
     while ((j = g.nextVertex(current, j)) >= 0) {
-      markAll(g, reachable, j);
+      count += markAll(g, reachable, j);
     }
+    return count;
   }
 
   /**

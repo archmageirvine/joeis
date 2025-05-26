@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A383991 allocated for Michael De Vlieger.
+ * A383991 Series expansion of the exponential generating function exp(trias(x)) - 1 where trias(x) = (1 + 3*x - sqrt(1+6*x+x^2)) / (4*x).
  * @author Sean A. Irvine
  */
 public class A383991 extends Sequence0 {

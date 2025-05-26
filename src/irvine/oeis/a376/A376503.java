@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A376503 Primes p such that p + 2, p + 4 and p + 6 are products  of 3, 5 and 7 primes respectively (counted with multiplicity)
+ * A376503 Primes p such that p + 2, p + 4 and p + 6 are products  of 3, 5 and 7 primes respectively (counted with multiplicity).
  * @author Georg Fischer
  */
 public class A376503 extends FilterSequence {

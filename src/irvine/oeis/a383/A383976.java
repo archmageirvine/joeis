@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A383976 allocated for Dar\u00edo Clavijo.
+ * A383976 In the binary expansion of n, expand bits 1 -&gt; 11 and 0 -&gt; 10.
  * @author Sean A. Irvine
  */
 public class A383976 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence2;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A077486.
+ * A077493 a(n) = smallest multiple of 7 with a digit sum = n.
  * @author Sean A. Irvine
  */
 public class A077493 extends Sequence2 {

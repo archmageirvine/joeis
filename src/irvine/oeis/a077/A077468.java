@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077468 Greedy powers of (2/3): sum_{n=1..inf} (2/3)^a(n) = 1.
+ * A077468 Greedy powers of (2/3): Sum_{n&gt;=1} (2/3)^a(n) = 1.
  * @author Sean A. Irvine
  */
 public class A077468 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A076624 Sum of the non-divisors of n between 1 and n is a perfect square.
+ * A076624 Numbers k such that the sum of the non-divisors of k between 1 and k is a perfect square.
  * @author Georg Fischer
  */
 public class A076624 extends FilterNumberSequence {

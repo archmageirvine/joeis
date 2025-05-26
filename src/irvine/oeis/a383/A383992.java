@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A383992 allocated for Michael De Vlieger.
+ * A383992 Series expansion of the exponential generating function exp(arbustive(x)) - 1 where arbustive(x) = (log(1+x) - x^2) / (1+x).
  * @author Sean A. Irvine
  */
 public class A383992 extends Sequence0 {

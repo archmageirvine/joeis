@@ -11,7 +11,7 @@ import irvine.oeis.a077.A077800;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A383820 allocated for Artur Jasinski.
+ * A104225 Decimal expansion of -x, where x is the real root of f(x) = 1 + Sum_{n} (twin_prime(n))*x^n.
  * @author Sean A. Irvine
  */
 public class A104225 extends DecimalExpansionSequence {

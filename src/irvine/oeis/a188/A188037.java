@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A188037 a(n) = floor(nr) - 1 - floor((n-1)r), where r = sqrt(2).
+ * A188037 a(n) = floor(n*r) - 1 - floor((n-1)*r), where r = sqrt(2).
  * @author Georg Fischer
  */
 public class A188037 extends FloorSequence {

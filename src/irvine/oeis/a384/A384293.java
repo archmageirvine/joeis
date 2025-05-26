@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383940.
+ * A384293 Consecutive internal states of the pseudo-random number generator (214013*(s mod 2^16)+13523655) mod 2^24 when started at s=1.
  * @author Sean A. Irvine
  */
 public class A384293 extends Sequence1 {

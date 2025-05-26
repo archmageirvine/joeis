@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383766 allocated for SiYang Hu.
+ * A383766 a(n) is the number of numbers k (0 &lt;= k &lt; n) such that there exist solutions of x^3 + x == y^2 + 1 == k (mod n).
  * @author Sean A. Irvine
  */
 public class A383766 extends Sequence1 {

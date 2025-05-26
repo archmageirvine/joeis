@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A078534 Coefficients of power series that satisfies A(x)^5 - 25x*A(x)^6 = 1, A(0)=1.
+ * A078534 Coefficients of power series that satisfies A(x)^5 - 25*x*A(x)^6 = 1, A(0)=1.
  * @author Georg Fischer
  */
 public class A078534 extends LambdaSequence {

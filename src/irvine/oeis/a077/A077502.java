@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A018796.
+ * A077502 Smallest square greater than the previous term and beginning with n.
  * @author Sean A. Irvine
  */
 public class A077502 extends Sequence0 {

@@ -5,7 +5,7 @@ package irvine.oeis.a232;
 import irvine.oeis.a103.A103603;
 
 /**
- * A232725 Numbers n such that the concatenation 123456789n is prime.
+ * A232725 Numbers k such that the concatenation 123456789k is prime.
  * @author Georg Fischer
  */
 public class A232725 extends A103603 {

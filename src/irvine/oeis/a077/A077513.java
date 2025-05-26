@@ -1,17 +1,16 @@
 package irvine.oeis.a077;
 
-import irvine.factor.prime.Fast;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077505 a(n) = A077504(n) - n*10^d where d = n - number of digits in n.
+ * A077513 Smallest n-digit squarefree number beginning with n.
  * @author Sean A. Irvine
  */
-public class A077505 extends Sequence1 {
+public class A077513 extends Sequence1 {
 
-  private final Fast mPrime = new Fast();
-  private int mN = 1;
+  private int mN = 0;
 
   @Override
   public Z next() {
@@ -21,7 +20,10 @@ public class A077505 extends Sequence1 {
     while (sb.length() < mN) {
       sb.append(0);
     }
-    final Z t = new Z(sb);
-    return mPrime.nextPrime(t).subtract(t);
+    Z s = new Z(sb);
+    while (!Predicates.SQUARE_FREE.is(s)) {
+      s = s.add(1);
+    }
+    return s;
   }
 }

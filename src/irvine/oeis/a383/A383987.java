@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A383987 allocated for Michael De Vlieger.
+ * A383987 Series expansion of the exponential generating function -tridend(-(1-exp(x))) where tridend(x) = (1 - 3*x - sqrt(1+6*x+x^2)) / (4*x) (A001003).
  * @author Sean A. Irvine
  */
 public class A383987 extends Sequence0 {

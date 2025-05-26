@@ -3,7 +3,7 @@ package irvine.oeis.a058;
 import irvine.math.z.Z;
 
 /**
- * A058165 Number of labeled lattices with fixed a fixed bottom and top.
+ * A058165 Number of labeled lattices with a fixed bottom and top.
  * @author Sean A. Irvine
  */
 public class A058165 extends A058164 {

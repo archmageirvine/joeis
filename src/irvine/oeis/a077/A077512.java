@@ -1,17 +1,15 @@
 package irvine.oeis.a077;
 
-import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077504 Smallest n-digit prime beginning with n.
+ * A077512 Largest n-digit square beginning with n.
  * @author Sean A. Irvine
  */
-public class A077504 extends Sequence1 {
+public class A077512 extends Sequence1 {
 
-  private final Fast mPrime = new Fast();
-  private int mN = 1;
+  private int mN = 0;
 
   @Override
   public Z next() {
@@ -19,8 +17,8 @@ public class A077504 extends Sequence1 {
     final StringBuilder sb = new StringBuilder();
     sb.append(mN);
     while (sb.length() < mN) {
-      sb.append(0);
+      sb.append(9);
     }
-    return mPrime.nextPrime(new Z(sb));
+    return new Z(sb).sqrt().square();
   }
 }

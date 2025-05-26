@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A383988 allocated for Michael De Vlieger.
+ * A383988 Series expansion of the exponential generating function comtrias(-(1-exp(x))) where comtrias(x) = log((1 + sqrt(1+4*x)) / 2).
  * @author Sean A. Irvine
  */
 public class A383988 extends Sequence0 {

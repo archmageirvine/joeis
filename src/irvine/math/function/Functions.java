@@ -141,7 +141,7 @@ public final class Functions {
   public static final Function1 HEXAGONAL = new Hexagonal(); // =A000384
   /** Pyramidal numbers. */
   public static final Function1 PYRAMIDAL = new Pyramidal(); // =A000330
-  /** Index of the smallest triangular number greater than or equal to the given number. */
+  /** Index of the largest triangular number less than or equal to the given number. */
   public static final Function1 TRINV = new TriangularInverse();
   /** Describe the number. For example, 3445, is one 3, two 4s, one 5 to give 132415. */
   public static final Function1 LOOK_AND_SAY = new LookAndSay();

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A056691 Number of divisors k of n with gcd(k+1, n) = 1.
+ * A056691 Number of divisors d of n with gcd(d+1, n) = 1.
  * @author Sean A. Irvine
  */
 public class A056691 extends Sequence1 {

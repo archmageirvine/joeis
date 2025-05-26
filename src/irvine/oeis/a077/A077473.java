@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077473 Greedy powers of (5/9): sum_{n=1..inf} (5/9)^a(n) = 1.
+ * A077473 Greedy powers of (5/9): Sum_{n&gt;=1} (5/9)^a(n) = 1.
  * @author Sean A. Irvine
  */
 public class A077473 extends Sequence1 {

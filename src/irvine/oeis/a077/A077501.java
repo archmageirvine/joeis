@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A030665.
+ * A077501 a(n) = smallest prime greater than a(n-1) and beginning with n.
  * @author Sean A. Irvine
  */
 public class A077501 extends Sequence1 {

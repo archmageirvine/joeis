@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A197322 Floor((2*n+1/n)^n).
+ * A197322 a(n) = floor((2*n+1/n)^n).
  * @author Georg Fischer
  */
 public class A197322 extends Sequence1 {

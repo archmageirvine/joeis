@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a158.A158611;
 
 /**
- * A176098 a(n) = prime(n)*(nonnegative noncomposite(n)).
+ * A176098 a(n) = prime(n) times the n-th nonnegative noncomposite.
  * @author Georg Fischer
  */
 public class A176098 extends Sequence1 {

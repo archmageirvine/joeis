@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A383993 allocated for Michael De Vlieger.
+ * A383993 Series expansion of the exponential generating function exp(tridup(x)) - 1 where tridup = x / ((1+x) * (1+2*x)).
  * @author Sean A. Irvine
  */
 public class A383993 extends Sequence0 {

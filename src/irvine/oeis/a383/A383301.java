@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383301 allocated for Antti Karttunen.
+ * A383301 Numbers k whose primorial base expansion has the primorial base expansion of k' as its nontrivial proper suffix, where k' stands for the arithmetic derivative of k (A003415).
  * @author Sean A. Irvine
  */
 public class A383301 extends Sequence1 {

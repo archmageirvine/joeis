@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384073 allocated for Juri-Stepan Gerasimov.
+ * A384073 Numbers k such that d(k)^d(k) = d(k) (mod k), where d = A000005.
  * @author Sean A. Irvine
  */
 public class A384073 extends Sequence1 {

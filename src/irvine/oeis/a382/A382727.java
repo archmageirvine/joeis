@@ -4,7 +4,7 @@ package irvine.oeis.a382;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A382727 Total number of entries in rows 0,1,...,n of Pascal&apos;s triangle not divisible by 11.
+ * A382727 Total number of entries in rows 0,1,...,n of Pascal's triangle not divisible by 11.
  * @author Georg Fischer
  */
 public class A382727 extends PartialSumSequence {

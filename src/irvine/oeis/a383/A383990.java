@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A383990 allocated for Michael De Vlieger.
+ * A383990 Series expansion of the exponential generating function exp(dias(x))-1 where dias(x) = (1 - sqrt(1+4*x)) / (2*x) + 1.
  * @author Sean A. Irvine
  */
 public class A383990 extends Sequence0 {

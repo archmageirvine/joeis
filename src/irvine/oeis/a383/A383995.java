@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A383995 allocated for Michael De Vlieger.
+ * A383995 Series expansion of the exponential generating function exp(ff6(x)) - 1 where ff6(x) = x * (1-3*x-x^2+x^3) / (1+3*x+x^2-x^3).
  * @author Sean A. Irvine
  */
 public class A383995 extends Sequence0 {

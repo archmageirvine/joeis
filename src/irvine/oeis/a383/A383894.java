@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A383894.
+ * A383894 allocated for Ludovic Schwob.
  * @author Sean A. Irvine
  */
 public class A383894 extends ParallelGenerateGraphsSequence {

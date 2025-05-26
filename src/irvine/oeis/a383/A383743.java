@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383743 allocated for Enrique Navarrete.
+ * A383743 a(n) is the smallest prime not yet in the sequence that satisfies the following: for some pair of different digits i and j in a(n-1), i preceding j (from left to right), j precedes i in a(n). Leading 0s are not allowed; a(1)=13. See Comments for details.
  * @author Sean A. Irvine
  */
 public class A383743 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000042;
 
 /**
- * A077486.
+ * A077488 All possible products in increasing order of two distinct members of the unary sequence 1, 11, 111, 1111, 11111, ...given by A000042.
  * @author Sean A. Irvine
  */
 public class A077488 extends Sequence1 {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A383985 allocated for Michael De Vlieger.
+ * A383985 Series expansion of the exponential generating function LambertW(1-exp(x)), see A000169.
  * @author Sean A. Irvine
  */
 public class A383985 extends Sequence0 {

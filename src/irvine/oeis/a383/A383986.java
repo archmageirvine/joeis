@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A383986 allocated for Michael De Vlieger.
+ * A383986 Expansion of the exponential generating function sqrt(4*exp(x) - exp(2*x) - 2) - 1.
  * @author Sean A. Irvine
  */
 public class A383986 extends Sequence0 {

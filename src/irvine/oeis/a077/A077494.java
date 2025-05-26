@@ -6,7 +6,7 @@ import irvine.oeis.Sequence2;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A077486.
+ * A077494 a(n) = smallest k such that the digit sum of 7k is n.
  * @author Sean A. Irvine
  */
 public class A077494 extends Sequence2 {

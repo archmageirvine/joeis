@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383968 allocated for SiYang Hu.
+ * A383968 Number of distinct subsets S of [1..n] such that for all 1 &lt;= k &lt;= n, there exists two elements x,y in S (not necessarily distinct) such that x+y = 2k.
  * @author Sean A. Irvine
  */
 public class A383968 extends Sequence1 {

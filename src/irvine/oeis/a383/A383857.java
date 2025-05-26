@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002464;
 
 /**
- * A383863.
+ * A383857 Number of permutations of [n] such that precisely one rising or falling succession occurs, but without either n(n-1) or (n-1)n.
  * @author Sean A. Irvine
  */
 public class A383857 extends Sequence1 {

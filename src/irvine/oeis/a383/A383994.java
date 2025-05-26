@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A383994 allocated for Michael De Vlieger.
+ * A383994 Series expansion of the exponential generating function exp(wnp(x)) - 1 where wnp(x) = log(1+x) - x^2/(1+x).
  * @author Sean A. Irvine
  */
 public class A383994 extends Sequence0 {

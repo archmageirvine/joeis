@@ -3,7 +3,7 @@ package irvine.oeis.a383;
 import irvine.oeis.LinearCongruentialGenerator;
 
 /**
- * A383645 allocated for Huaineng He.
+ * A383645 Consecutive internal states of the linear congruential pseudo-random number generator (17405*s+10395331) mod 2^24 when started at s=1.
  * @author Sean A. Irvine
  */
 public class A383645 extends LinearCongruentialGenerator {

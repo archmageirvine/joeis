@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A383777 allocated for Ya-Ping Lu.
+ * A383777 a(n) is the number of steps that n requires to reach 0 under the map: x -&gt; 2*x + 1 if x is even; 0 if x = 1; x - lpf(x) otherwise where lpf(x) is the least prime factor of x. a(n) = -1 if 0 is never reached.
  * @author Sean A. Irvine
  */
 public class A383777 extends Sequence0 {

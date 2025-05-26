@@ -15,24 +15,15 @@ public class A237276 extends Sequence1 {
   private final Z mMod;
   private final A000041 mSeq = new A000041();
 
-  /** Construct the sequence. */
-  public A237276() {
-    this(1, 3);
-  }
-
-  /**
-   * Generic constructor with parameters
-   * @param res residue
-   * @param mod modulus
-   */
-  public A237276(final int res, final int mod) {
+  protected A237276(final int res, final int mod) {
     mN = -1;
     mRes = Z.valueOf(res);
     mMod = Z.valueOf(mod);
-    if (res == 1) { // for A237276, A273279:
-      ++mN;
-      mSeq.next();
-    }
+  }
+
+  /** Construct the sequence. */
+  public A237276() {
+    this(1, 3);
   }
 
   @Override

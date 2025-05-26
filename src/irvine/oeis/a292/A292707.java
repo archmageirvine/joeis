@@ -6,13 +6,13 @@ import irvine.oeis.BriefSequence;
 
 /**
  * A292707 Number of independent vertex sets and vertex covers in the n-Sierpinski carpet graph.
- *
  * @author Georg Fischer
  */
 public class A292707 extends BriefSequence {
 
   /** Construct the sequence. */
   public A292707() {
-    super(1, BRIEF, new Z("47"), new Z("3481623075352"));
+    super(1, BRIEF, new Z("47"), new Z("3481623075352"),
+      new Z("108371550017154665073960386938722505444835629724912474911548058048469113486615457331929220616362568"));
   }
 }

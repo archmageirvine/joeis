@@ -6,7 +6,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a002.A002113;
 
 /**
- * A188775.
+ * A077528 a(n) = smallest nontrivial (&gt;1) palindrome == 1 (mod n).
  * @author Sean A. Irvine
  */
 public class A077528 extends Sequence2 {

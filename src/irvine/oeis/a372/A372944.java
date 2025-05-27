@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000182;
 
 /**
- * A372944 Numbers k that divide the k-th tangent (or &quot;zag&quot;) number.
+ * A372944 Numbers k that divide the k-th tangent (or "zag") number.
  * @author Georg Fischer
  */
 public class A372944 extends FilterPositionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a051.A051491;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A263183 Decimal expansion of 1/log_2(r), where r is Otter&apos;s rooted tree constant.
+ * A263183 Decimal expansion of 1/log_2(r), where r is Otter's rooted tree constant.
  * Formula:
  * @author Georg Fischer
  */

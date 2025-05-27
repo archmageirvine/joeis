@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.math.z.Z;
 
 /**
- * A188775.
+ * A077527 Row sums of triangle in A077526.
  * @author Sean A. Irvine
  */
 public class A077527 extends A077526 {

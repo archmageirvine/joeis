@@ -6,7 +6,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a006.A006318;
 
 /**
- * A372902 Numbers k that divide the k-th large Schr√∂der number.
+ * A372902 Numbers k that divide the k-th large Schr\u00f6der number.
  * @author Georg Fischer
  */
 public class A372902 extends FilterNumberSequence {

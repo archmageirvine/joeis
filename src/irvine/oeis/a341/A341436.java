@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A094396.
+ * A341436 Numbers k such that k divides Sum_{j=1..k} j^(k+1-j).
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

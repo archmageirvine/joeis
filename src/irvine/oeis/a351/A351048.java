@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A351048 Numbers k such that tau(k) | k&apos;.
+ * A351048 Numbers k such that tau(k) | k'.
  * @author Georg Fischer
  */
 public class A351048 extends FilterNumberSequence {

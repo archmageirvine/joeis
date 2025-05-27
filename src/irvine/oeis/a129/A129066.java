@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A094396 Numbers k such that k divides the (k-1)st Lucas number.
+ * A129066 Numbers k such that k divides Fibonacci(k) with multiples of 12 excluded.
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

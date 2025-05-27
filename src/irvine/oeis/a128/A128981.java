@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A094396.
+ * A128981 Numbers k such that k divides Sum_{j=1..k} j^j = A001923(k).
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

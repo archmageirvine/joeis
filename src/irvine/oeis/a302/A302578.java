@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A302578 Numbers N such that N modulo N&apos;s digitsum is a substring of N.
+ * A302578 Numbers N such that N modulo N's digitsum is a substring of N.
  * @author Georg Fischer
  */
 public class A302578 extends FilterNumberSequence {

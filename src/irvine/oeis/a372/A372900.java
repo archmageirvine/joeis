@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000930;
 
 /**
- * A372900 Numbers k that divide the k-th term of Narayana&apos;s cows sequence.
+ * A372900 Numbers k that divide the k-th term of Narayana's cows sequence.
  * @author Georg Fischer
  */
 public class A372900 extends FilterPositionSequence {

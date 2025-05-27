@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.math.z.Z;
 
 /**
- * A188775.
+ * A077525 Last term of n-th row of A077526.
  * @author Sean A. Irvine
  */
 public class A077525 extends A077526 {

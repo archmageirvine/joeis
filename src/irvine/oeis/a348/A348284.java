@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a068.A068346;
 
 /**
- * A348284 Numbers k such that k | k&quot; where k&quot; is the 2nd arithmetic derivative of k.
+ * A348284 Numbers k such that k | k" where k" is the 2nd arithmetic derivative of k.
  * @author Georg Fischer
  */
 public class A348284 extends FilterPositionSequence {

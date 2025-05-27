@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a005.A005258;
 
 /**
- * A372943 Numbers k that divide the k-th Ap√©ry number (A005258).
+ * A372943 Numbers k that divide the k-th Ap\u00e9ry number (A005258).
  * @author Georg Fischer
  */
 public class A372943 extends FilterPositionSequence {

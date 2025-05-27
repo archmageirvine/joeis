@@ -6,7 +6,7 @@ import irvine.oeis.a004.A004018;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A205508 a(n) = Pell(n) * A004018(n) for n&gt;=1 with a(0)=1, where A004018(n) is the number of ways of writing n as a sum of 2 squares.
+ * A205508  a(n) = Pell(n) * A004018(n) for n&gt;=1 with a(0)=1, where A004018(n) is the number of ways of writing n as a sum of 2 squares.
  * @author Georg Fischer
  */
 public class A205508 extends MultiTransformSequence {

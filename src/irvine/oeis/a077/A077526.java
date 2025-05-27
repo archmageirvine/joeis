@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002113;
 
 /**
- * A188775.
+ * A077526 Triangle in which the n-th row contains n palindromes beginning with n.
  * @author Sean A. Irvine
  */
 public class A077526 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033307;
 
 /**
- * A188775.
+ * A383790 allocated for Gonzalo Mart\u00ednez.
  * @author Sean A. Irvine
  */
 public class A383790 extends Sequence1 {

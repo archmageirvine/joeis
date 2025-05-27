@@ -27,6 +27,9 @@ public class A043001 extends Sequence1 {
    * @param start first digit
    */
   public A043001(final int radix, final int start) {
+    if (start >= radix) {
+      throw new UnsupportedOperationException();
+    }
     mRadix = radix;
     mStart = start;
     mWidth = 1;
@@ -74,5 +77,5 @@ public class A043001 extends Sequence1 {
       }
       return result;
     }
-  } // next
+  }
 }

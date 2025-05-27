@@ -149,6 +149,8 @@ public final class Functions {
   public static final Function1 CATALAN = new Catalan(); // =A000108
   /** Bell numbers. */
   public static final Function1 BELL = new BellNumbers(); // =A000110
+  /** Pell numbers. */
+  public static final Function1 PELL = new Pell(); // =A000129
   /** Number of partitions. */
   public static final Function1 PARTITIONS = new Partitions(); // =A000041
   /** Number of partitions into distinct parts. */

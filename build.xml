@@ -43,6 +43,7 @@
         <fileset dir="${lib.dir}" includes="**/*.jar" />
       </classpath>
       <compilerarg value="-Xlint:unchecked" />
+      <compilerarg value="-proc:none" />
     </javac>
   </target>
 
@@ -53,6 +54,7 @@
         <fileset dir="${lib.dir}" includes="**/*.jar" />
       </classpath>
       <compilerarg value="-Xlint:unchecked" />
+      <compilerarg value="-proc:none" />
     </javac>
   </target>
 
@@ -64,6 +66,7 @@
         <fileset dir="${lib.dir}" includes="**/*.jar" />
       </classpath>
       <compilerarg value="-Xlint:unchecked" />
+      <compilerarg value="-proc:none" />
     </javac>
   </target>
 
@@ -75,6 +78,7 @@
         <fileset dir="${lib.dir}" includes="**/*.jar" />
       </classpath>
       <compilerarg value="-Xlint:unchecked" />
+      <compilerarg value="-proc:none" />
     </javac>
   </target>
 

@@ -10,6 +10,6 @@ public class A038521 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
   public A038521() {
-    super(0, "[0,-4,-2, 0, 1]", "[0, 0, 2]", 0);
+    super(0, "[0,-4,-2,0,1]", "[0,0,2,1]", 0);
   }
 }

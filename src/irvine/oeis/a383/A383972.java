@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383972 allocated for Ctibor O. Zizka.
+ * A383972 Smallest number m such that (m*(m + 1)/2)^2 is divisible by n.
  * @author Sean A. Irvine
  */
 public class A383972 extends Sequence1 {

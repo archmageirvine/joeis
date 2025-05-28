@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A152834 Numbers of form 6k+1 that use only digits 2 and 3.
+ * A152834 Numbers of the form 6*k+1 that use only digits 2 and 3.
  * @author Georg Fischer
  */
 public class A152834 extends FilterNumberSequence {

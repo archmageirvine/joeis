@@ -6,11 +6,11 @@ import irvine.oeis.LinearCongruentialGenerator;
  * A383940.
  * @author Sean A. Irvine
  */
-public class A384999 extends LinearCongruentialGenerator {
+public class A384406 extends LinearCongruentialGenerator {
 
   /** Construct the sequence. */
-  public A384999() {
+  public A384406() {
     super(397204094, 0, (1L << 31) - 1);
-    System.out.println("Period: " + computePeriod());
+    //System.out.println("Period: " + computePeriod());
   }
 }

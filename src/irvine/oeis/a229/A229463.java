@@ -4,7 +4,7 @@ package irvine.oeis.a229;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A229463 Expansion of 1/((1-x)^2*(1-26*x)).
+ * A229463 Expansion of g.f. 1/((1-x)^2*(1-26*x)).
  * @author Georg Fischer
  */
 public class A229463 extends HolonomicRecurrence {

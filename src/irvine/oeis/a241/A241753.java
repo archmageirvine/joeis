@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A241753 Decimal expansion of sum_(n=1..infinity) (H(n)/(n+1))^2, where H(n) is the n-th harmonic number.
+ * A241753 Decimal expansion of Sum_{n&gt;=1} (H(n)/(n+1))^2, where H(n) is the n-th harmonic number.
  * Formula: Decimal expansion of sum_(n=1..infinity) (H(n)/(n+1))^2, where H(n) is the n-th harmonic number.        nonn,cons       1..100  nyi     _Jean
  * @author Georg Fischer
  */

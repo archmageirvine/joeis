@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A038536 Odd values of n &gt; 1 for which there are n-hyperperfect numbers.
+ * A038536 Odd values of k &gt; 1 for which there are k-hyperperfect numbers.
  * @author Sean A. Irvine
  */
 public class A038536 extends Sequence1 {

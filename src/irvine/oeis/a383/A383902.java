@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A383902 allocated for Isaac R. Browne.
+ * A383902 Square table read by ascending antidiagonals where T(n,k) = binomial(k+2^n-2,k).
  * @author Sean A. Irvine
  */
 public class A383902 extends Sequence0 {

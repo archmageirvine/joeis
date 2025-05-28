@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067672 Floor((3/2)^(n+2))/floor((3/2)^n)=(3/2)^2.
+ * A067672 Numbers k such that floor((3/2)^(k+2))/floor((3/2)^k) = (3/2)^2.
  * @author Sean A. Irvine
  */
 public class A067672 extends Sequence1 {

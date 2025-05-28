@@ -6,7 +6,7 @@ package irvine.oeis.a171;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A171556 a(n)=3*C(n)-2, where C(n)=A000108(n).
+ * A171556 a(n) = 3*C(n)-2, where C(n) = A000108(n).
  * @author Georg Fischer
  */
 public class A171556 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A201117 Primes of the form 3n^3+8.
+ * A201117 Primes of the form 3*k^3 + 8.
  * @author Georg Fischer
  */
 public class A201117 extends PrimeSubsequence {

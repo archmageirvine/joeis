@@ -21,11 +21,7 @@ public class A222113 extends A056193 {
 
   @Override
   public Z next() {
-    if (mA == null) {
-      mA = Z.valueOf(16);
-    } else {
-      mA = code(mA.subtract(1), ++mN);
-    }
+    mA = mA == null ? Z.valueOf(16) : code(mA.subtract(1), ++mN);
     return mA;
   }
 }

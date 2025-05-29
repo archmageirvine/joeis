@@ -3,16 +3,28 @@ package irvine.oeis.a056;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A056193 Goodstein sequence starting with 4: to calculate a(n+1), write a(n) in the hereditary representation in base n+2, then bump the base to n+3, then subtract 1.
  * @author Sean A. Irvine
  */
-public class A056193 extends Sequence0 {
+public class A056193 extends AbstractSequence {
 
-  private long mN = 1;
+  private long mN;
   private Z mA = null;
+  private final Z mStart;
+
+  /** Construct the sequence. */
+  public A056193() {
+    this(0, 4);
+  }
+
+  protected A056193(final int offset, final int start) {
+    super(offset);
+    mN = offset + 1;
+    mStart = Z.valueOf(start);
+  }
 
   protected Z code(final Z n, final long base) {
     final ArrayList<Long> digits = new ArrayList<>();
@@ -33,7 +45,7 @@ public class A056193 extends Sequence0 {
 
   @Override
   public Z next() {
-    mA = mA == null ? Z.FOUR : code(mA, ++mN).subtract(1);
+    mA = mA == null ? mStart : code(mA, ++mN).subtract(1);
     return mA;
   }
 }

@@ -13,7 +13,7 @@ public class A077557 extends Sequence1 {
   private long mN = 0;
 
   private boolean is(final int[] cnts, final long v) {
-    final int[] t =ZUtils.digitCounts(v);
+    final int[] t = ZUtils.digitCounts(v);
     int diffDigits = 0;
     for (int k = 0; k < cnts.length; ++k) {
       final int d = Math.abs(cnts[k] - t[k]);

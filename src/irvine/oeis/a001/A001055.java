@@ -12,10 +12,6 @@ import irvine.oeis.DirectSequence;
  */
 public class A001055 extends AbstractSequence implements DirectSequence {
 
-  /**
-   * Constructor with offset.
-   * @param offset first index
-   */
   protected A001055(final int offset) {
     super(offset);
   }

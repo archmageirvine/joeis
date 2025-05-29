@@ -2587,3 +2587,6 @@ A077387 Continued fraction expansion of Product_{p prime} (1 + p/((p-1)^2*(p+1))
 A077428 Minimal (positive) solution a(n) of Pell equation a(n)^2 - D(n)*b(n)^2 = +4 with D(n)= A077425(n). The companion sequence is b(n)=A078355(n).
 A077483 Numerator of the probability P(n) of the occurrence of a 2D self-trapping walk of length n.
 A077484 Probability P(n) of the occurrence of a 2D self-trapping walk of length n: Exponent of 2 in the denominator.
+A077550 Number of nonisomorphic ways a river (or undirected line) can cross two perpendicular roads n times (orbits of A076875 under symmetry group of order 8).
+A077551 Meandric numbers for a river (or directed line) crossing two perpendicular roads at n points, beginning in the (-,-) quadrant, crossing x axis first and ending in any quadrant.
+A077556 Meandric numbers for an undirected line crossing two perpendicular roads at n points, beginning in the (-,-) quadrant, crossing x axis first and ending in any quadrant.

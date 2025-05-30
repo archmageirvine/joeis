@@ -8,6 +8,7 @@ import java.util.regex.Pattern;
 
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
+import irvine.math.polynomial.Series;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
@@ -525,6 +526,19 @@ public class PolynomialFieldSequence extends AbstractSequence {
           // Caution, this code is dirty (dependant on the "45")!
           mStack.set(top, RING.substitute(mTerms.get(ix - 45), mStack.get(top), m));
           break;
+        case 49:  // "besselI"
+          --top;
+          mStack.set(top, Series.BESSEL_I.s(Long.parseLong(mStack.get(top).toString()), m, mStack.get(top + 1)));
+          break;
+        case 50:  // "ellipticD"
+          mStack.set(top, Series.ELLIPTIC_D.s(m, mStack.get(top)));
+          break;
+        case 51:  // "ellipticE"
+          mStack.set(top, Series.ELLIPTIC_E.s(m, mStack.get(top)));
+          break;
+        case 52:  // "ellipticK"
+          mStack.set(top, Series.ELLIPTIC_K.s(m, mStack.get(top)));
+          break;
         default: // should not occur with proper postfix expressions
           throw new RuntimeException("invalid postfix code " + ix);
       } //! switch
@@ -598,6 +612,10 @@ public class PolynomialFieldSequence extends AbstractSequence {
     POST_MAP.put("T", 46);
     POST_MAP.put("U", 47);
     POST_MAP.put("V", 48);
+    POST_MAP.put("besselI", 49);
+    POST_MAP.put("ellipticD", 50);
+    POST_MAP.put("ellipticE", 51);
+    POST_MAP.put("ellipticK", 52);
   } //! fillMap
 
   @Override

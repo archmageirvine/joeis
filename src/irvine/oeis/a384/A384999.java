@@ -10,7 +10,7 @@ public class A384999 extends LinearCongruentialGenerator {
 
   /** Construct the sequence. */
   public A384999() {
-    super(13493037709L, 7261067085L, 1L << 35);
+    super(1664525, 1013904223, 1L << 32);
     System.out.println("Period: " + computePeriod());
   }
 }

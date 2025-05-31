@@ -4,7 +4,7 @@ package irvine.oeis.a135;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A135645 Expansion of a rational g.f., see formula.
+ * A135645 Expansion of 1/p(1/x) where p(x) = (-17 - 98*x^9 + x^10) * (-1 - 2*x^9 + x^10)^3 * (-1 - x^9 + x^10)^6.
  * @author Georg Fischer
  */
 public class A135645 extends GeneratingFunctionSequence {

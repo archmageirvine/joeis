@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A137291 Numbers n such that prime(n)^2-2 is prime.
+ * A137291 Numbers m such that prime(m)^2-2 is prime.
  * @author Georg Fischer
  */
 public class A137291 extends FilterPositionSequence {

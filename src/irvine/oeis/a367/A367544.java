@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A367544 Euclid&apos;s triangle A217831 represented as decimal numbers.
+ * A367544 Euclid's triangle A217831 represented as decimal numbers.
  * @author Georg Fischer
  */
 public class A367544 extends LambdaSequence {

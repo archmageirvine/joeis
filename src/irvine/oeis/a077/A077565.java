@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A077564 Number of partitions of n into parts with distinct prime signatures.
+ * A077565 Number of factorizations of n where each factor has a different prime signature.
  * @author Sean A. Irvine
  */
 public class A077565 extends Sequence1 {

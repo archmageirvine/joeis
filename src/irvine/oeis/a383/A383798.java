@@ -3,7 +3,7 @@ package irvine.oeis.a383;
 import irvine.oeis.LinearCongruentialGenerator;
 
 /**
- * A383798 allocated for Paolo P. Lava.
+ * A383798 Consecutive states of the linear congruential pseudo-random number generator for SIMSCRIPT II when started at 1.
  * @author Sean A. Irvine
  */
 public class A383798 extends LinearCongruentialGenerator {

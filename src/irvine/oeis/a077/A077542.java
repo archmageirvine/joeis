@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077542 Least number of terms required in the product (k+1)(k+2)... to make it a multiple of the product of next n number, where k = n(n+1)/2.
+ * A077542 Least number of terms required in the product (k+1)*(k+2)*... to make it a multiple of the product of next n numbers, where k = n*(n+1)/2.
  * @author Sean A. Irvine
  */
 public class A077542 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a359;
 import irvine.oeis.a329.A329963;
 
 /**
- * A359580 Numbers that are either an odd squarefree number squared or twice such a number.
+ * A359580 Numbers that are either (an odd squarefree number squared) or twice such a number.
  * @author Georg Fischer
  */
 public class A359580 extends A329963 {

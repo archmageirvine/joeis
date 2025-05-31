@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A372877 Jacobi&apos;s triangle read by rows. T(n, k) = J(n, k) where J(n, k) is the Jacobi symbol (n / k) provided k is odd and otherwise 0.
+ * A372877 Jacobi's triangle read by rows. T(n, k) = J(n, k) where J(n, k) is the Jacobi symbol (n / k) provided k is odd and otherwise 0.
  * @author Georg Fischer
  */
 public class A372877 extends LambdaTriangle {

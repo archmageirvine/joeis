@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002275;
 
 /**
- * A077564.
+ * A077573 Smallest number of the form (10^k -1)/9 == 0 (mod prime(n)). with a(1) = a(3) = 0.
  * @author Sean A. Irvine
  */
 public class A077573 extends A000040 {

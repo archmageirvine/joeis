@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A077564.
+ * A077566 Smallest number which can be factored into parts with distinct prime signatures in n different ways, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A077566 extends A077565 implements Conjectural {

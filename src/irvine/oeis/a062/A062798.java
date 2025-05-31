@@ -4,7 +4,7 @@ import irvine.oeis.a001.A001405;
 import irvine.oeis.transform.InverseMobiusTransformSequence;
 
 /**
- * A062798 Inverse Moebius transform of central binomial coefficients f[x]=C(c,[x/2])=A001405[x].
+ * A062798 Inverse Moebius transform of A001405 (binomial(n, floor(n/2))).
  * @author Sean A. Irvine
  */
 public class A062798 extends InverseMobiusTransformSequence {

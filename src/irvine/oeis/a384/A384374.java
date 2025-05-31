@@ -4,7 +4,7 @@ package irvine.oeis.a384;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A384374 Name?
+ * A384374 Expansion of e.g.f. exp(x)*(exp(x) - 1)*(exp(x) - x - 1)^2.
  * @author Georg Fischer
  */
 public class A384374 extends HolonomicRecurrence {

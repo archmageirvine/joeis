@@ -3,7 +3,7 @@ package irvine.oeis.a384;
 import irvine.oeis.LinearCongruentialGenerator;
 
 /**
- * A383940.
+ * A384406 Consecutive internal states of the IMSL pseudo-random number generator RNUN when started with ISEED=1 and RNOPT=3.
  * @author Sean A. Irvine
  */
 public class A384406 extends LinearCongruentialGenerator {

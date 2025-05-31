@@ -4,7 +4,7 @@ package irvine.oeis.a226;
 import irvine.oeis.recur.PaddingSequence;
 
 /**
- * A226251 Concatenated cyclical sequence starting from Fibonacci sequence.
+ * A226251 Period 10: repeat [1, 1, 2, 3, 5, 8, 1, 3, 4, 7].
  * @author Georg Fischer
  */
 public class A226251 extends PaddingSequence {

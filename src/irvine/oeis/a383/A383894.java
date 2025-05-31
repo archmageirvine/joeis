@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A383894 allocated for Ludovic Schwob.
+ * A383894 Number of arborescent partitions with exactly n parts.
  * @author Sean A. Irvine
  */
 public class A383894 extends ParallelGenerateGraphsSequence {

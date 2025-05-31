@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A376294 The product of n&apos;s prime powers, with the base and exponent concatenated.
+ * A376294 The product of n's prime powers, with the base and exponent concatenated.
  * Multiplicative with:
  * @author Georg Fischer
  */

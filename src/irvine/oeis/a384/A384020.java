@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a018.A018804;
 
 /**
- * A384020 allocated for Ctibor O. Zizka.
+ * A384020 Numbers k &gt; 0 such that sigma(A018804(k)) = k*tau(A018804(k)) where sigma denotes the sum of divisors (A000203) and tau denotes the number of divisors (A000005).
  * @author Sean A. Irvine
  */
 public class A384020 extends Sequence1 {

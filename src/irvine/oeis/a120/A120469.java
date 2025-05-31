@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A120469 Expansion of a rational g.f., see formula.
+ * A120469 Expansion of -(20*x^12 + 184*x^11 + 121*x^10 - 915*x^9 -1 524*x^8 - 132*x^7 + 1068*x^6 + 581*x^5 - 71*x^4 - 112*x^3 - 14*x^2 + 5*x +1) / ((3*x +1) * (16*x^12 + 140*x^11 + 2*x^10 - 968*x^9 - 830*x^8 + 946*x^7 + 982*x^6 - 239*x^5 - 351*x^4 - 5*x^3 + 39*x^2 + 3*x -1)).
  * @author Sean A. Irvine
  */
 public class A120469 extends LinearRecurrence {

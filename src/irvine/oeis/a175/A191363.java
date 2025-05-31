@@ -7,7 +7,7 @@ import irvine.oeis.a010.A010673;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A175880 a(1)=1, a(2)=2. If n &gt;= 3: if n/2 is in the sequence, a(n)=0, otherwise a(n)=n.
+ * A191363 Numbers m such that sigma(m) = 2*m - 2.
  * @author Georg Fischer
  */
 public class A191363 extends MultiTransformSequence {

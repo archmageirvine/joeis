@@ -3,7 +3,7 @@ package irvine.oeis.a221;
 import irvine.oeis.LinearCongruentialGenerator;
 
 /**
- * A383940.
+ * A221556 Consecutive values produced by the C++ minstd_rand random number generator with the default seed (1).
  * @author Sean A. Irvine
  */
 public class A221556 extends LinearCongruentialGenerator {

@@ -4,7 +4,7 @@ package irvine.oeis.a135;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A135648 Expansion of a rational g.f., see formula.
+ * A135648 Expansion of 1 / (x^256*p(1/x)) where p(x)=(-969 - 1894*x^15 + x^16) * (-1 - 3*x^15 + x^16)^4*(-1 - 2*x^15 + x^16)^5 * (-1 - x^15 + x^16)^6.
  * @author Georg Fischer
  */
 public class A135648 extends GeneratingFunctionSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaArray;
 
 /**
- * A384364 Name?
+ * A384364 Square array A(n,k), n &gt;= 0, k &gt;= 0, read by antidiagonals downwards, where A(n,k) = Sum_{i=0..k*n} 3^i * Sum_{j=0..i} (-1)^j * binomial(i,j) * binomial(i-j,n)^k.
  * @author Georg Fischer
  */
 public class A384364 extends LambdaArray {

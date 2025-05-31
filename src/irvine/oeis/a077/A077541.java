@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077541 a(n) = A077540(n)/Pr(n), where Pr(n)= product of next n numbers. E.g. Pr(3) = 4*5*6.
+ * A077541 a(n) = A077540(n) / Pr(n), where Pr(n) = product of next n numbers; e.g., Pr(3) = 4*5*6.
  * @author Sean A. Irvine
  */
 public class A077541 extends Sequence1 {

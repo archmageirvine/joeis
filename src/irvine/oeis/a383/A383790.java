@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033307;
 
 /**
- * A383790 allocated for Gonzalo Mart\u00ednez.
+ * A383790 Prime numbers in order of occurrence as substrings in the concatenation of natural numbers 123456789101112....
  * @author Sean A. Irvine
  */
 public class A383790 extends Sequence1 {

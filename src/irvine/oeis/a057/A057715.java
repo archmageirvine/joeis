@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A057715 Composite numbers m = Product p_i^{e_i} such that p_j^{e_j} &gt; p_k^{e_k} for all p_j &lt; p_k.
+ * A057715 Numbers m = Product p_i^{e_i}, not a power of a prime, such that p_j^{e_j} &gt; p_k^{e_k} for all p_j &lt; p_k.
  * @author Sean A. Irvine
  */
 public class A057715 extends Sequence1 {

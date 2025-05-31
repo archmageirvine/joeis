@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A383990 Series expansion of the exponential generating function exp(dias(x))-1 where dias(x) = (1 - sqrt(1+4*x)) / (2*x) + 1.
+ * A383990 Series expansion of the exponential generating function exp(-dend(-x))-1 where dend(x) = (1 - sqrt(1+4*x)) / (2*x) + 1 (given by A000108).
  * @author Sean A. Irvine
  */
 public class A383990 extends Sequence0 {

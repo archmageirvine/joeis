@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A166058 Fifth row of A166091. Positions of 9&apos;s in A166086.
+ * A166058 Fifth row of A166091. Positions of 9's in A166086.
  * @author Georg Fischer
  */
 public class A166058 extends FilterPositionSequence {

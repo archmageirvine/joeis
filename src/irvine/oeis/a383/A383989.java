@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A383989 Series expansion of the exponential generating function ff6(-(1-exp(x))) where ff6(x) = x * (1-3*x-x^2+x^3) / (1+3*x+x^2-x^3).
+ * A383989 Series expansion of the exponential generating function ff6^!(exp(x)-1) where ff6^!(x) = x * (1-3*x-x^2+x^3) / (1+3*x+x^2-x^3).
  * @author Sean A. Irvine
  */
 public class A383989 extends Sequence0 {

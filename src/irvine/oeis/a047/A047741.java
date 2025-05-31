@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A047741 A discrete analog of Li(n): Round ( Sum_{k=2..n} 1/log_e (k) ).
+ * A047741 A discrete analog of Li(n): a(n) = round(Sum_{k=2..n} 1/log(k)).
  * @author Sean A. Irvine
  */
 public class A047741 extends Sequence2 {

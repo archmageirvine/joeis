@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077564.
+ * A077570 Row sums of triangle in A077569.
  * @author Sean A. Irvine
  */
 public class A077570 extends Sequence1 {

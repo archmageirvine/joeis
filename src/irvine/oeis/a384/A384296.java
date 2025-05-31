@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000290;
 
 /**
- * A381847.
+ * A384296 Square numbers whose iterative sums of digits are squares.
  * @author Sean A. Irvine
  */
 public class A384296 extends Sequence1 {

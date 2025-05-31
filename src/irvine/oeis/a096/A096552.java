@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.LinearCongruentialGenerator;
 
 /**
- * A383940.
+ * A096552 Consecutive internal states of the linear congruential pseudo-random number generator MTH$RANDOM that is used in the VAX VMS Library.
  * @author Sean A. Irvine
  */
 public class A096552 extends LinearCongruentialGenerator {

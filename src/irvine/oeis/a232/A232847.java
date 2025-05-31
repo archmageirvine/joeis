@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000203;
 
 /**
- * A232847 Numbers n such that sum of divisors of n is a square and a triangular number (A000217). That is, numbers n such that A000203(n) is in A001110.
+ * A232847 Numbers k such that sum of divisors of k is a square and a triangular number (A000217). That is, numbers k such that A000203(k) is in A001110.
  * @author Georg Fischer
  */
 public class A232847 extends FilterPositionSequence {

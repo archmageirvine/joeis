@@ -3,7 +3,7 @@ package irvine.oeis.a125;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A125519 A 4 x 4 permutation-free magic square.
+ * A125519 A 4 X 4 permutation-free magic square with magic sum 1998.
  * @author Georg Fischer
  */
 public class A125519 extends FiniteSequence {

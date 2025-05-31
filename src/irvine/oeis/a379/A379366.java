@@ -9,7 +9,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a018.A018804;
 
 /**
- * A379366 Denominators of the partial alternating sums of the reciprocals of Pillai&apos;s arithmetical function (A018804).
+ * A379366 Denominators of the partial alternating sums of the reciprocals of Pillai's arithmetical function (A018804).
  * @author Georg Fischer
  */
 public class A379366 extends LambdaSequence {

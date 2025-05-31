@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077564.
+ * A077567 Least k &gt;= 2 such that sigma(n) divides sigma(n^k).
  * @author Sean A. Irvine
  */
 public class A077567 extends Sequence1 {

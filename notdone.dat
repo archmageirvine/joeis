@@ -2590,3 +2590,5 @@ A077484 Probability P(n) of the occurrence of a 2D self-trapping walk of length 
 A077550 Number of nonisomorphic ways a river (or undirected line) can cross two perpendicular roads n times (orbits of A076875 under symmetry group of order 8).
 A077551 Meandric numbers for a river (or directed line) crossing two perpendicular roads at n points, beginning in the (-,-) quadrant, crossing x axis first and ending in any quadrant.
 A077556 Meandric numbers for an undirected line crossing two perpendicular roads at n points, beginning in the (-,-) quadrant, crossing x axis first and ending in any quadrant.
+A077589 Decimal expansion of real part of the infinite power tower of i.
+A077590 Decimal expansion of imaginary part of the infinite power tower of i.

@@ -13,6 +13,6 @@ public class A077576 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A077576() {
-    super(1, new A062273(), v -> Functions.GPF.z(v));
+    super(1, new A062273(), Functions.GPF::z);
   }
 }

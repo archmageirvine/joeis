@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077540 a(n) = smallest multiple of the product of next n natural numbers which is a product of consecutive numbers starting with (k+1) where k = n(n+1)/2 = the n-th triangular number.
+ * A077540 a(n) = smallest multiple of the product of next n natural numbers which is a product of consecutive numbers starting with k+1 where k = n(n+1)/2 = the n-th triangular number.
  * @author Sean A. Irvine
  */
 public class A077540 extends Sequence1 {

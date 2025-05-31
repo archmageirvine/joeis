@@ -6,7 +6,7 @@ import irvine.oeis.a006.A006506;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A381857 Number of n X n binary matrices with at least 2 adjacent 1&apos;s.
+ * A381857 Number of n X n binary matrices with at least 2 adjacent 1's.
  * @author Georg Fischer
  */
 public class A381857 extends SingleTransformSequence {

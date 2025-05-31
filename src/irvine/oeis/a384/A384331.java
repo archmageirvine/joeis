@@ -3,7 +3,7 @@ package irvine.oeis.a384;
 import irvine.oeis.LinearCongruentialGenerator;
 
 /**
- * A384331 allocated for Paul Curtz.
+ * A384331 Consecutive internal states of a linear congruential pseudo-random number generator for Microsoft C and C++ when started at 1.
  * @author Sean A. Irvine
  */
 public class A384331 extends LinearCongruentialGenerator {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A166052 Second row of A166091. Positions of 3&apos;s in A166086.
+ * A166052 Second row of A166091. Positions of 3's in A166086.
  * @author Georg Fischer
  */
 public class A166052 extends FilterPositionSequence {

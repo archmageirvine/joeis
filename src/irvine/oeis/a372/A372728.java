@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A372728 Kronecker&apos;s triangle read by rows. T(n, k) = K(n, k) where K(n, k) is the Kronecker symbol (n / k).
+ * A372728 Kronecker's triangle read by rows. T(n, k) = K(n, k) where K(n, k) is the Kronecker symbol (n / k).
  * @author Georg Fischer
  */
 public class A372728 extends LambdaTriangle {

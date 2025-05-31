@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002275;
 
 /**
- * A077564.
+ * A077575 a(n) = A077573(n)/prime(n).
  * @author Sean A. Irvine
  */
 public class A077575 extends A000040 {

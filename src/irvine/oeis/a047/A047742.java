@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A047742 A discrete analog of Li(n): ceiling(Sum_{k=2..n} 1/log(k)).
+ * A047742 A discrete analog of Li(n): a(n) = ceiling(Sum_{k=2..n} 1/log(k)).
  * @author Sean A. Irvine
  */
 public class A047742 extends Sequence2 {

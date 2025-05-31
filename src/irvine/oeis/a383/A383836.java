@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383836 allocated for Juri-Stepan Gerasimov.
+ * A383836 Integers k such that d*2^k + k/d is prime for some divisor d of k.
  * @author Sean A. Irvine
  */
 public class A383836 extends Sequence1 {

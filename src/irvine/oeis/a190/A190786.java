@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a063.A063906;
 
 /**
- * A190786 Numbers n such that sigma(2*n-1) = 3*n, where sigma(k) is the sum of the positive divisors of k.
+ * A190786 Numbers m such that sigma(2*m-1) = 3*m, where sigma(k) is the sum of the positive divisors of k.
  * @author Georg Fischer
  */
 public class A190786 extends AbstractSequence {

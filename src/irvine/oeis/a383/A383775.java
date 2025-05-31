@@ -6,7 +6,7 @@ import irvine.oeis.a052.A052182;
 import irvine.oeis.a085.A085719;
 
 /**
- * A383775 allocated for Clark Kimberling.
+ * A383775 a(n) = pos(M(n)), where M(n) is the n X n left circulant matrix with (row 1) = (1, 2, ... , n), and pos(M(n)) is the positive part of the determinant of M(n); see A380661.
  * @author Sean A. Irvine
  */
 public class A383775 extends Combiner {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077549 Rearrangement of primes so that the most significant decimal digit follows the cyclic pattern 1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9...
+ * A077549 Rearrangement of primes so that the most significant decimal digit follows the cyclic pattern 1, 2, ..., 9, 1, 2, ..., 9, 1, ....
  * @author Sean A. Irvine
  */
 public class A077549 extends Sequence1 {

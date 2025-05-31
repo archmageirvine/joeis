@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000142;
 import irvine.oeis.a002.A002110;
 
 /**
- * A182254 Primorial(n) mod n!.
+ * A182254 a(n) = primorial(n) mod n!.
  * @author Georg Fischer
  */
 public class A182254 extends Sequence0 {

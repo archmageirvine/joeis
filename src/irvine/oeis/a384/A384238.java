@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A384238 allocated for Kritsada Moomuang.
+ * A384238 Decimal expansion of Integral_{x=0..1} 1/(1 + x/(1 + x/(1 + x/...))) dx.
  * @author Sean A. Irvine
  */
 public class A384238 extends DecimalExpansionSequence {

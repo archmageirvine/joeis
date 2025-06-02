@@ -6,7 +6,7 @@ import irvine.oeis.a152.A152947;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A382411 a(n) is the greatest possible length of a circular sequence on n symbols such that: no two adjacent symbols are the same, any group of n adjacent symbols contains at least n-1 different symbols, and all groups of n adjacent symbols within the sequence are
+ * A382411 a(n) is the greatest possible length of a circular sequence on n symbols such that: no two adjacent symbols are the same, any group of n adjacent symbols contains at least n-1 different symbols, and all groups of n adjacent symbols within the sequence are unique.
  * @author Georg Fischer
  */
 public class A382411 extends SingleTransformSequence {

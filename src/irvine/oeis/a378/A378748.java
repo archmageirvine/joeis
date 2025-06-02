@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A378748 M√∂bius transform of A378747.
+ * A378748 M\u00f6bius transform of A378747.
  * @author Georg Fischer
  */
 public class A378748 extends SingleTransformSequence {

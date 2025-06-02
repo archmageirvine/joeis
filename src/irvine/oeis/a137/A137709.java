@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001950;
 
 /**
- * A137709 Secondary Upper Wythoff Sequence.
+ * A137709 Secondary upper Wythoff sequence.
  * @author Georg Fischer
  */
 public class A137709 extends A001950 {

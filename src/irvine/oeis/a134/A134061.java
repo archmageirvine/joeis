@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007318;
 import irvine.oeis.a124.A124928;
 
 /**
- * A134061 Triangle, A124928 + A134059 - A007318.
+ * A134061 Triangle read by rows: T(n,k) = A124928(n,k) + A134059(n,k) - A007318(n,k).
  * @author Georg Fischer
  */
 public class A134061 extends AbstractSequence {

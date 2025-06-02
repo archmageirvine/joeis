@@ -8,7 +8,7 @@ import irvine.oeis.a034.A034785;
 import irvine.oeis.a057.A057901;
 import irvine.oeis.a057.A057902;
 /**
- * A135173 5^p - 3^p - 2^p, where p = prime(n).
+ * A135173 a(n) = 5^p - 3^p - 2^p, where p = prime(n).
  * @author Georg Fischer
  */
 public class A135173 extends Sequence1 {

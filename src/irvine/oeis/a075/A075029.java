@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075029 Smallest initial number k of n consecutive numbers satisfying numdiv(k) &gt; numdiv(k+1) &gt; ... &gt; numdiv(k+n-1).
+ * A075029 a(n) is the smallest number k such that the number of divisors of the n numbers from k through k+n-1 are decreasing.
  * @author Sean A. Irvine
  */
 public class A075029 extends Sequence1 {

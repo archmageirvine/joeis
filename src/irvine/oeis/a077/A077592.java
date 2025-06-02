@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077584.
+ * A077592 Table by antidiagonals of tau_k(n), the k-th Piltz function (see A007425), or n-th term of the sequence resulting from applying the inverse M\u00f6bius transform (k-1) times to the all-ones sequence.
  * @author Sean A. Irvine
  */
 public class A077592 extends Sequence1 {

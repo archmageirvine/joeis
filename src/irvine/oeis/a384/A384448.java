@@ -3,7 +3,7 @@ package irvine.oeis.a384;
 import irvine.oeis.LinearCongruentialGenerator;
 
 /**
- * A384448 allocated for Sean A. Irvine.
+ * A384448 Consecutive states of the linear congruential pseudo-random number generator for the INMOS Transputer when started at 1.
  * @author Sean A. Irvine
  */
 public class A384448 extends LinearCongruentialGenerator {

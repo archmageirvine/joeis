@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a000.A000122;
 
 /**
- * A212326 G.f. satisfies: A(x) = theta_3( x*A(x) )^2, where theta_3(x) is Jacobi&apos;s theta_3 function.
+ * A212326 G.f. satisfies: A(x) = theta_3( x*A(x) )^2, where theta_3(x) is Jacobi's theta_3 function.
  * new A000122()
  * @author Georg Fischer
  */

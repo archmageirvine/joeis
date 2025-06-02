@@ -4,7 +4,7 @@ package irvine.oeis.a258;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A258924  E.g.f.: S(x) = Series_Reversion( Integral 1/(1-x^5)^(1/5) dx ), where the constant of integration is zero.
+ * A258924 E.g.f.: S(x) = Series_Reversion( Integral 1/(1-x^5)^(1/5) dx ), where the constant of integration is zero.
  * @author Georg Fischer
  */
 public class A258924 extends PolynomialFieldSequence {

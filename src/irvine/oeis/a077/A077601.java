@@ -11,7 +11,7 @@ import irvine.oeis.a074.A074586;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A077584.
+ * A077601 Decimal expansion of the limit of the maximum real root of M(n,-x) as n -&gt; infinity, where M(n,x) is the n-th Moebius polynomial and satisfies M(n,-1) = mu(n) the Moebius function of n.
  * @author Sean A. Irvine
  */
 public class A077601 extends DecimalExpansionSequence {

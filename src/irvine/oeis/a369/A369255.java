@@ -4,7 +4,7 @@ package irvine.oeis.a369;
 import irvine.oeis.CharacteristicFunction;
 
 /**
- * A369255 Parity of A140773, where A140773 is the inverse M√∂bius transform of A038548.
+ * A369255 Parity of A140773, where A140773 is the inverse M\u00f6bius transform of A038548.
  * @author Georg Fischer
  */
 public class A369255 extends CharacteristicFunction {

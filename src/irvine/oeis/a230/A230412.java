@@ -5,7 +5,7 @@ import irvine.oeis.CharacteristicFunction;
 import irvine.oeis.a219.A219650;
 
 /**
- * A230412 a(n) = the number of ways to express n as a sum d1*(k1!-1) + d2*(k2!-1) + ... + dj*(kj!-1), where all k&apos;s are distinct and greater than one and each di is in range [1,ki]; the characteristic function of A219650.
+ * A230412 a(n) = the number of ways to express n as a sum d1*(k1!-1) + d2*(k2!-1) + ... + dj*(kj!-1), where all k's are distinct and greater than one and each di is in range [1,ki]; the characteristic function of A219650.
  * @author Georg Fischer
  */
 public class A230412 extends CharacteristicFunction {

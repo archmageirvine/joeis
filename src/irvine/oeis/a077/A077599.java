@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a074.A074586;
 
 /**
- * A077584.
+ * A077599 Sequence of n such that -1 is a "double" root for M(n,x) (i.e., M(n,x)=(x+1)^2*Q(n,x)).
  * @author Sean A. Irvine
  */
 public class A077599 extends A074586 {

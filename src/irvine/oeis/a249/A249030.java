@@ -7,7 +7,7 @@ import irvine.oeis.a075.A075774;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A249030 The difference between the number of letters and the number of syllables in n in English. (Omit &quot;and&quot; in both.)
+ * A249030 The difference between the number of letters and the number of syllables in n in English. (Omit "and" in both.).
  * @author Georg Fischer
  */
 public class A249030 extends SingleTransformSequence {

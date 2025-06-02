@@ -4,7 +4,7 @@ package irvine.oeis.a320;
 import irvine.oeis.DifferenceSequence;
 
 /**
- * A320301 Differences between positions of 0&apos;s in binary expansion of Pi.
+ * A320301 Differences between positions of 0's in binary expansion of Pi.
  * @author Georg Fischer
  */
 public class A320301 extends DifferenceSequence {

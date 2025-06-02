@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A048199 Distance of primes to next odd multiple of 5 (where n mod 10 = 5),.
+ * A048199 Distance of primes to next odd multiple of 5 (where n mod 10 = 5).
  * @author Sean A. Irvine
  */
 public class A048199 extends A000040 {

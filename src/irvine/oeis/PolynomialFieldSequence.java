@@ -539,6 +539,9 @@ public class PolynomialFieldSequence extends AbstractSequence {
         case 52:  // "ellipticK"
           mStack.set(top, Series.ELLIPTIC_K.s(m, mStack.get(top)));
           break;
+        case 53:  // "serlaplace" - convert from e.g.f. to o.g.f.
+          mStack.set(top, RING.serlaplace(mStack.get(top)));
+          break;
         default: // should not occur with proper postfix expressions
           throw new RuntimeException("invalid postfix code " + ix);
       } //! switch
@@ -616,6 +619,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
     POST_MAP.put("ellipticD", 50);
     POST_MAP.put("ellipticE", 51);
     POST_MAP.put("ellipticK", 52);
+    POST_MAP.put("serlaplace", 53);
   } //! fillMap
 
   @Override

@@ -10,11 +10,11 @@ public class A011950 extends A011954 {
 
   // After R. J. Mathar
 
-  private long mN = 2;
+  private long mN = 0;
 
   /** Construct the sequence. */
   public A011950() {
-    super(3);
+    super(1);
   }
 
   @Override

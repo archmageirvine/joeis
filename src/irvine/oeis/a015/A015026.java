@@ -9,13 +9,17 @@ import irvine.oeis.Sequence1;
  */
 public class A015026 extends Sequence1 {
 
-  private Z mT = Z.ONE;
+  private Z mT = null;
   private Z mA = Z.ONE;
 
   @Override
   public Z next() {
-    mT = mT.multiply(-11);
-    mA = mA.multiply(mT.subtract(1)).divide(-12);
+    if (mT == null) {
+      mT = Z.ONE;
+    } else {
+      mT = mT.multiply(-11);
+      mA = mA.multiply(mT.subtract(1)).divide(-12);
+    }
     return mA;
   }
 }

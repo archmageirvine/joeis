@@ -32,7 +32,6 @@ public class A077601 extends DecimalExpansionSequence {
           for (long j = 0; j < k; ++j) {
             p.add(r.next().multiply(Z.NEG_ONE.pow(j)));
           }
-          //System.out.println("p=" + p);
           if (k > 5) {
             final Z t = new ZPolynomialFunction(p).inverseMonotone(CR.valueOf(2.6), CR.THREE).execute(CR.ZERO).getApprox(precision);
             if (t.equals(a)) {

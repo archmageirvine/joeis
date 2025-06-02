@@ -16,7 +16,7 @@ import irvine.util.array.DynamicArray;
  */
 public class A344900 extends Sequence1 {
 
-  // There is a complication arising from ignoring the outer most set of
+  // There is a complication arising from ignoring the outermost set of
   // parentheses. mWff1 tracks wff that do not need parentheses, while
   // mWff2 is for those that do.
   //

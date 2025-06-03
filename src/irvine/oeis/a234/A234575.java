@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A234575 Triangle T(n,k) read by rows: T(n,k) = floor(n/k) + n mod k, with 1&lt;=k&lt;=n.
+ * A234575 Triangle T(n, k) read by rows: T(n, k) = floor(n/k) + n mod k.
  * @author Georg Fischer
  */
 public class A234575 extends Triangle {

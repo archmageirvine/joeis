@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A384181 allocated for Gonzalo Mart\u00ednez.
+ * A384181 Primes p such that k! + p or |k! - p| is composite for all k &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A384181 extends A000040 {

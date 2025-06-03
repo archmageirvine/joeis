@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A245504 Number of endofunctions f on [n] such that f^8(i) = f(i) for all i in [n];.
+ * A245504 Number of endofunctions f on [n] such that f^8(i) = f(i) for all i in [n].
  * E.g.f.: exp(x*exp(x)+x^7*exp(x)^7/7)
  * @author Georg Fischer
  */

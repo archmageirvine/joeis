@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384074 allocated for Clark Kimberling.
+ * A384074 a(n) = permanent of the n X n circulant matrix with (row 1) = (1, 3, 5, 7, ..., 2n - 1).
  * @author Sean A. Irvine
  */
 public class A384074 extends Sequence1 {

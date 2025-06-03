@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A056075 Numbers n such that n divides sigma(n) - d(n).
+ * A056075 Numbers m such that m divides sigma(m) - d(m).
  * @author Sean A. Irvine
  */
 public class A056075 extends Sequence1 {

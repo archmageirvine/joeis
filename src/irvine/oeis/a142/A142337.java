@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a024.A024916;
 
 /**
- * A142337 Numbers n such that sum(i=1..n, sigma(i)) is prime.
+ * A142337 Numbers m such that Sum_{i=1..m} sigma(i) is prime.
  * @author Georg Fischer
  */
 public class A142337 extends FilterPositionSequence {

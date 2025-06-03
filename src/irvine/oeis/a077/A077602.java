@@ -7,7 +7,7 @@ import irvine.oeis.a074.A074586;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A077602.
+ * A077602 Decimal expansion of lim_{n-&gt;inf} M(n,1)/2^n, where M(n,1) is the sum of the coefficients of the n-th Moebius polynomial (cf. A074587).
  * @author Sean A. Irvine
  */
 public class A077602 extends DecimalExpansionSequence {

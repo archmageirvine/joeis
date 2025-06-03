@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A382454 allocated for Dar\u00edo Clavijo.
+ * A383752 Product of nonzero remainders n mod p, over all primes p &lt; n.
  * @author Sean A. Irvine
  */
 public class A383752 extends Sequence1 {

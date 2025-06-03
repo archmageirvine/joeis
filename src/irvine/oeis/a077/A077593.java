@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A077593 Table by antidiagonals where T(n,k)=sum_i T(floor[n/i],k-1) starting with T(n,0)=1 if n&gt;0 and T(0,0)=0.
+ * A077593 Table by antidiagonals where T(n,k) = Sum_{i=1..n} T(floor(n/i),k-1) starting with T(n,0)=1 if n&gt;0 and T(0,0)=0.
  * @author Sean A. Irvine
  */
 public class A077593 extends Sequence0 {

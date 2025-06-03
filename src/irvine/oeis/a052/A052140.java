@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A052140 4^n*n!^2*Sum_{k=0..n} 1/k!.
+ * A052140 a(n) = 4^n * n!^2 * Sum_{k=0..n} 1/k!.
  * @author Sean A. Irvine
  */
 public class A052140 extends Sequence0 {

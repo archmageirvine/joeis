@@ -1,7 +1,6 @@
 package irvine.oeis;
 
 import irvine.math.api.Matrix;
-import irvine.math.function.Functions;
 import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Integers;
@@ -50,17 +49,14 @@ public class GraphWalkSequence extends Sequence0 {
 
   /**
    * Run on the specified matrix
-   * @param args start vertex, then the matrix (space separated numbers, assumed to be a square matrix)
+   * @param args start vertex, then the matrix (binary adjacency matrix, one row at a time).
    */
   public static void main(final String[] args) {
-    final int s = Functions.SQRT.i(args.length - 1);
-    if (s * s != args.length - 1) {
-      throw new IllegalArgumentException("Not a square matrix");
-    }
+    final int s = args.length - 1;
     final long[][] m = new long[s][s];
-    for (int r = 0, k = 1; r < s; ++r) {
-      for (int c = 0; c < s; ++c, ++k) {
-        m[r][c] = Integer.parseInt(args[k]);
+    for (int r = 0; r < s; ++r) {
+      for (int c = 0; c < s; ++c) {
+        m[r][c] = args[r + 1].charAt(c) - '0';
       }
     }
     final GraphWalkSequence seq = new GraphWalkSequence(m, Integer.parseInt(args[0]));

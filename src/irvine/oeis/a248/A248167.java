@@ -4,7 +4,7 @@ package irvine.oeis.a248;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A248167 G.f.:  1 / AGM(1-33*x, sqrt((1-9*x)*(1-121*x))).
+ * A248167 Expansion of g.f.:  1 / AGM(1-33*x, sqrt((1-9*x)*(1-121*x))).
  * @author Georg Fischer
  */
 public class A248167 extends SimpleTransformSequence {

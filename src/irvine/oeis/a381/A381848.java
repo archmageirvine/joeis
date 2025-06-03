@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a010.A010060;
 
 /**
- * A381848 allocated for Clark Kimberling.
+ * A381848 Sequence obtained by replacing 3-term subwords of A010060 by 0,1,2,3,4,5 as described in Comments.
  * @author Sean A. Irvine
  */
 public class A381848 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a316;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A316340 Image of 1 under repeated application of the morphism 1 -&gt; 12312, 2 -&gt; 341, 3 -&gt; 34134, 4 -&gt; 123,.
+ * A316340 Image of 1 under repeated application of the morphism 1 -&gt; 12312, 2 -&gt; 341, 3 -&gt; 34134, 4 -&gt; 123.
  * @author Georg Fischer
  */
 public class A316340 extends MorphismFixedPointSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001248;
 
 /**
- * A137831 (Prime(n)^2 minus its last digit)/20.
+ * A137831 a(n) = (prime(n)^2 minus its last digit)/20.
  * @author Georg Fischer
  */
 public class A137831 extends Sequence1 {

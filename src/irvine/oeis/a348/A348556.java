@@ -4,7 +4,7 @@ package irvine.oeis.a348;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A348556 Binary expansion contains 4 adjacent 1&apos;s.
+ * A348556 Binary expansion contains 4 adjacent 1's.
  * @author Georg Fischer
  */
 public class A348556 extends FilterNumberSequence {

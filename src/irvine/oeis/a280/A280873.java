@@ -4,7 +4,7 @@ package irvine.oeis.a280;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A280873 Numbers whose binary expansion does not begin 10 and does not contain 2 adjacent 0&apos;s; Ahnentafel numbers of X-chromosome inheritance of a male.
+ * A280873 Numbers whose binary expansion does not begin 10 and does not contain 2 adjacent 0's; Ahnentafel numbers of X-chromosome inheritance of a male.
  * @author Georg Fischer
  */
 public class A280873 extends FilterNumberSequence {

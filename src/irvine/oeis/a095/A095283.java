@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A095283 Primes whose binary-expansion ends with an odd number of 1&apos;s.
+ * A095283 Primes whose binary-expansion ends with an odd number of 1's.
  * @author Georg Fischer
  */
 public class A095283 extends FilterSequence {

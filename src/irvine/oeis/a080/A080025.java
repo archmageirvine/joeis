@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A080025 Numbers n having at least one divisor d such that in binary representation d and n/d have the same number of 1&apos;s as n.
+ * A080025 Numbers n having at least one divisor d such that in binary representation d and n/d have the same number of 1's as n.
  * @author Georg Fischer
  */
 public class A080025 extends FilterNumberSequence {

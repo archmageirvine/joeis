@@ -4,7 +4,7 @@ package irvine.oeis.a175;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A175332 Numbers whose binary expansion is of the form 11+0*
+ * A175332 Numbers whose binary expansion is of the form 11+0*.
  * @author Georg Fischer
  */
 public class A175332 extends FilterNumberSequence {

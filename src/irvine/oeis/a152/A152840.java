@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A152840 a(0)=1; a(n)=n^(n+a(n-1))-a(n-1)^(n+a(n-1)).
+ * A152840 a(0) = -1; a(n) = n^(n+a(n-1)) - a(n-1)^(n+a(n-1)).
  * @author Georg Fischer
  */
 public class A152840 extends MultiTransformSequence {

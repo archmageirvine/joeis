@@ -3,7 +3,7 @@ package irvine.oeis.a382;
 import irvine.oeis.LinearCongruentialGenerator;
 
 /**
- * A382684 allocated for Sean A. Irvine.
+ * A382684 Consecutive internal states of the linear congruential pseudo-random number generator for BCPL when started at 1.
  * @author Sean A. Irvine
  */
 public class A382684 extends LinearCongruentialGenerator {

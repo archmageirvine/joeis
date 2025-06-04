@@ -6,7 +6,7 @@ import irvine.oeis.MultiplicativeSequence;
 import irvine.oeis.a064.A064614;
 
 /**
- * A300955 In the prime tower factorization of n, replace 2&apos;s with 3&apos;s and 3&apos;s with 2&apos;s.
+ * A300955 In the prime tower factorization of n, replace 2's with 3's and 3's with 2's.
  * Multiplicative with:
  * @author Georg Fischer
  */

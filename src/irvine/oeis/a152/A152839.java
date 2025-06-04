@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A152839 a(0)=1; a(n)=n!-a(n-1)!.
+ * A152839 a(0) = 0; a(n) = n! - a(n-1)!.
  * @author Georg Fischer
  */
 public class A152839 extends MultiTransformSequence {

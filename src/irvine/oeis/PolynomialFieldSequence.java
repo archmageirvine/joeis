@@ -44,7 +44,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
   private final int mFactor; //  multiplicity when zeroes should be left out
 
   private final List<Polynomial<Q>> mPolys; // Polynomials referenced in the postfix string as "p0" (the initial polynomial), "p1", "p2" and so on.
-  private final List<AbstractSequence> mSeqs; // sequences for additional generating functions referenced in the postfix string as "s0", "s1", "s2" and so on.
+  private final List<Sequence> mSeqs; // sequences for additional generating functions referenced in the postfix string as "s0", "s1", "s2" and so on.
   private final ArrayList<Polynomial<Q>> mTerms; // terms of mSeqs[is]
   private final ArrayList<Integer> mNix; // index of next free elemen in mTerms
   private int mN; // index of the next sequence element to be computed
@@ -75,7 +75,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
    */
   public PolynomialFieldSequence(final int offset, final String polys, final String postfix,
                                  final int dist, final int gfType, final int modulus, final int factor,
-                                 final AbstractSequence... seqs) {
+                                 final Sequence... seqs) {
     super(offset);
     mDist = dist;
     mGfType = gfType;
@@ -172,7 +172,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
         System.err.println(exc.getMessage());
       }
     }
-    for (AbstractSequence seq : seqs) { // and also from the trailing parameter list
+    for (final Sequence seq : seqs) { // and also from the trailing parameter list
       final Q[] terms = new Q[mDist + 1];
       final int soff = seq.getOffset();
       int ix = 0;
@@ -279,7 +279,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
 
   /**
    * Return the inner content of a String without surrounding square brackets, quotes or apostrophes, with all spaces removed.
-   * @param str full String
+   * @param pstr full String
    * @return String with surrounding characters removed
    */
   protected static String trimQuotes(final String pstr) {
@@ -297,7 +297,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
 
   /**
    * Print the contents of the stack in readable form.
-   * @param pfix current postfix element
+   * @param ix current postfix element
    * @param top index of top stack element
    * @param str call point
    */

@@ -1,12 +1,31 @@
 package irvine.math.api;
 
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
+import irvine.oeis.Sequence;
 
 /**
  * Generate terms of a rational sequence.
  * @author Sean A. Irvine
  */
 public interface RationalSequence {
+
+  /**
+   * Convert an ordinary integer sequence into an exponential generating function
+   * sequence (essentially terms of the underlying sequence divided by n!).
+   * @param seq underlying sequence
+   * @return rational sequence scaled by factorials
+   */
+  static RationalSequence toEgf(final Sequence seq) {
+    return new RationalSequence() {
+      private long n = seq.getOffset();
+
+      @Override
+      public Q nextQ() {
+        return new Q(seq.next(), Functions.FACTORIAL.z(n++));
+      }
+    };
+  }
 
   /**
    * Return the next term of the sequence. If no next term exists,

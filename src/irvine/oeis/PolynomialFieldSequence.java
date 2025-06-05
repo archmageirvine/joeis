@@ -146,9 +146,9 @@ public class PolynomialFieldSequence extends AbstractSequence {
     if (polyString.length() == 0) {
       polyString = "1"; // empty -> "1"
     }
-    mSeqs = new ArrayList<AbstractSequence>();
-    mTerms = new ArrayList<Polynomial<Q>>(); // denaoted by S, T, U, V
-    mNix = new ArrayList<Integer>(); // indexed by S, T, U, V
+    mSeqs = new ArrayList<>();
+    mTerms = new ArrayList<>(); // denoted by S, T, U, V
+    mNix = new ArrayList<>(); // indexed by S, T, U, V
     final int apos = polyString.indexOf('A');
     if (apos >= 0) { // with A-numbers at the end of the polynomials
       final String[] aNums = polyString.substring(apos).split("\\,"); // split into A-numbers
@@ -523,7 +523,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
         case 46:  // "T"  2nd additional g.f. as a sequence
         case 47:  // "U"  3rd additional g.f. as a sequence
         case 48:  // "V"  4th additional g.f. as a sequence  
-          // Caution, this code is dirty (dependant on the "45")!
+          // Caution, this code is dirty (dependent on the "45")!
           mStack.set(top, RING.substitute(mTerms.get(ix - 45), mStack.get(top), m));
           break;
         case 49:  // "besselI"

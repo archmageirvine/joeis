@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000110;
 import irvine.oeis.a014.A014500;
 
 /**
- * A077668.
+ * A098620 Consider the family of multigraphs enriched by the species of set partitions. Sequence gives number of those multigraphs with n labeled edges.
  * @author Sean A. Irvine
  */
 public class A098620 extends PolynomialFieldSequence {

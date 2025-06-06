@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a005.A005117;
 
 /**
- * A077668.
+ * A077674 Squarefree numbers with nonzero squarefree digits (2,3,5,6,7).
  * @author Sean A. Irvine
  */
 public class A077674 extends FilterSequence {

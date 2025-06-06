@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077668.
+ * A077672 a(1) = 1; for n &gt; 1, a(n) = smallest triangular number which is n times another triangular number &gt; 1, or -1 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A077672 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000217;
 import irvine.util.Permutation;
 
 /**
- * A077668 Last term of row n of A077667.
+ * A077671 Triangular numbers whose digit permutations yield at least one further triangular number.
  * @author Sean A. Irvine
  */
 public class A077671 extends Sequence1 {

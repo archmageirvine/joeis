@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A384078.
+ * A384433 allocated for Gonzalo Mart\u00ednez.
  * @author Sean A. Irvine
  */
 public class A384433 extends Sequence1 {

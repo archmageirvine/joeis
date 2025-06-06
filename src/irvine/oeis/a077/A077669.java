@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A077667.
+ * A077669 Triangle read by rows. Let k = n-th composite number. Then n-th row gives n smallest numbers unrelated to k (numbers which do not divide k, are not divisible by k and are not coprime to k).
  * @author Sean A. Irvine
  */
 public class A077669 extends A002808 {

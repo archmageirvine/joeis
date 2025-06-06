@@ -13,6 +13,6 @@ public class A077680 extends FilterSequence {
 
   /** Construct the sequence. */
   public A077680() {
-    super(1, new A217397(), v -> Predicates.SQUARE_FREE.is(v));
+    super(1, new A217397(), Predicates.SQUARE_FREE::is);
   }
 }

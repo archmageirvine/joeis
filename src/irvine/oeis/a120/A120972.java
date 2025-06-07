@@ -4,7 +4,7 @@ package irvine.oeis.a120;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A120972 G.f. satisfies: A(x/A(x)^3) = 1 + x ; thus A(x) = 1 + series_reversion(x/A(x)^3).
+ * A120972 G.f. A(x) satisfies A(x/A(x)^3) = 1 + x ; thus A(x) = 1 + series_reversion(x/A(x)^3).
  * 1+x*A(A(x)-1)^3
  * @author Georg Fischer
  */

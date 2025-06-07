@@ -3,7 +3,7 @@ package irvine.oeis.a384;
 import irvine.oeis.LinearCongruentialGenerator;
 
 /**
- * A383940.
+ * A384610 Consecutive states of the linear congruential pseudo-random number generator (262145*s+3) mod 2^35 when started at s=1.
  * @author Sean A. Irvine
  */
 public class A384610 extends LinearCongruentialGenerator {

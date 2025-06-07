@@ -4,7 +4,7 @@ package irvine.oeis.a251;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A251185  E.g.f. satisfies: A(x) = x + x*A( -log(2-exp(x)) ).
+ * A251185 E.g.f. satisfies: A(x) = x + x*A( -log(2-exp(x)) ).
  * x+x*subst(A,x,-log(2-exp(X))))
  * @author Georg Fischer
  */

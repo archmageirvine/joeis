@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007908;
 
 /**
- * A077692.
+ * A077692 Smallest triangular number which begins with the concatenation of first n natural numbers.
  * @author Sean A. Irvine
  */
 public class A077692 extends A007908 {

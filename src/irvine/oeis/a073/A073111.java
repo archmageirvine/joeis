@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A073111 Number of permutations p of (1,2,3,...,n) such that 1^p(1)+2^p(2)+3^p(3)+...+n^p(n) is prime.
+ * A073111 Number of permutations p of [n] such that 1^p(1) + 2^p(2) + 3^p(3) + ... + n^p(n) is prime.
  * @author Sean A. Irvine
  */
 public class A073111 extends Sequence1 {

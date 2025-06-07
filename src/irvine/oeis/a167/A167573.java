@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A167573 The third row of the ED3 array A167572.
+ * A167573 a(n) = 20*n^2 + 3.
  * @author Sean A. Irvine
  */
 public class A167573 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A272326 Primes of the form n^4 + 853n^3 + 2636n^2 + 3536n + 1753 in order of increasing nonnegative n.
+ * A272326 Primes of the form k^4 + 853*k^3 + 2636*k^2 + 3536*k + 1753 in order of increasing nonnegative k.
  * @author Georg Fischer
  */
 public class A272326 extends FilterSequence {

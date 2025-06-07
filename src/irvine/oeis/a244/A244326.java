@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A244326 Numbers n such that floor(antisigma(n)/n) &lt; floor(antisigma(n - 1)/(n - 1)).
+ * A244326 Numbers k such that floor(antisigma(k)/k) &lt; floor(antisigma(k - 1)/(k - 1)).
  * @author Georg Fischer
  */
 public class A244326 extends FilterNumberSequence {

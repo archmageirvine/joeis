@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000461;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A077692.
+ * A077695 a(n) = triangular number whose index is n concatenated n times.
  * @author Sean A. Irvine
  */
 public class A077695 extends SimpleTransformSequence {

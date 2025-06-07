@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384079 allocated for Clark Kimberling.
+ * A384079 a(n) = permanent of the n X n circulant matrix with (row 1) = (F(0), F(1), ..., F(n-1)), where F = A000045 (Fibonacci numbers).
  * @author Sean A. Irvine
  */
 public class A384079 extends Sequence1 {

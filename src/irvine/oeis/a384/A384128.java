@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384128 allocated for Pietro Tiaraju Giavarina dos Santos.
+ * A384128 Number of iterations for the circular absolute first-difference on decimal digits to reach a repdigit.
  * @author Sean A. Irvine
  */
 public class A384128 extends Sequence1 {

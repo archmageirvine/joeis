@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A220078 5^(n!).
+ * A220078 a(n) = 5^(n!).
  * @author Georg Fischer
  */
 public class A220078 extends LambdaSequence {

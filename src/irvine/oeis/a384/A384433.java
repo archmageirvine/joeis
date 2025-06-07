@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A384433 allocated for Gonzalo Mart\u00ednez.
+ * A384433 Integers k that are equal to the sum of at least two of their anagrams, which must have the same number of digits as k.
  * @author Sean A. Irvine
  */
 public class A384433 extends Sequence1 {

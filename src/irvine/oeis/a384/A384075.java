@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a193.A193678;
 
 /**
- * A384075 allocated for Clark Kimberling.
+ * A384075 a(n) = neg(M(n)), where M(n) is the n X n circulant matrix with (row 1) = (1,3,5,7, ..., 2n - 1), and neg(M(n)) is the negative part of the determinant of M(n); see A380661.
  * @author Sean A. Irvine
  */
 public class A384075 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a217.A217401;
 
 /**
- * A077684 Squarefree numbers with 8 as their initial (leftmost) digit.
+ * A077684 Squarefree numbers beginning with 8.
  * @author Sean A. Irvine
  */
 public class A077684 extends FilterSequence {

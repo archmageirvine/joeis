@@ -3,7 +3,7 @@ package irvine.oeis.a384;
 import irvine.oeis.GraphWalkSequence;
 
 /**
- * A382683.
+ * A384640 Expansion of (1-3*x^2) / (1-x-5*x^2+x^3+2*x^4).
  * @author Sean A. Irvine
  */
 public class A384640 extends GraphWalkSequence {

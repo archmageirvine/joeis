@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A141643 Numbers n such that sigma(n)/n = 5/2.
+ * A141643 Numbers k such that sigma(k)/k = 5/2.
  *
  * @author Georg Fischer
  */

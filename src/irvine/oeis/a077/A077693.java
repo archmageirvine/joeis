@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077692.
+ * A077693 Smallest triangular number which begins with the concatenation of n times digits of n.
  * @author Sean A. Irvine
  */
 public class A077693 extends Sequence1 {

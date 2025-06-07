@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384513 allocated for Luke Bennet.
+ * A384513 a(n) = number of iterations of z -&gt; z^2 + c(n) with c(n) = 16/(n^2) + (1/n)*i + 3/8 + (sqrt(3)/8)*i to reach |z| &gt; 2, starting with z = 0.
  * @author Sean A. Irvine
  */
 public class A384513 extends Sequence1 {

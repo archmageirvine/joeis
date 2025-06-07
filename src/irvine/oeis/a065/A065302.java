@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a005.A005117;
 
 /**
- * A065302 Squarefree composite numbers whose sum of divisors is also squarefree.
+ * A065302 Squarefree nonprime numbers whose sum of divisors is also squarefree.
  * @author Sean A. Irvine
  */
 public class A065302 extends FilterSequence {

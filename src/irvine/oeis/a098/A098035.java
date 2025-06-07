@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A098035 a(n) = Sum_{k|n} mu(k+1), where mu() is the Moebius function.
+ * A098035 a(n) = Sum_{d|n} mu(d+1), where mu() is the Moebius function.
  * @author Georg Fischer
  */
 public class A098035 extends LambdaSequence {

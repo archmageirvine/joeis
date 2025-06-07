@@ -5,7 +5,7 @@ package irvine.oeis.a057;
 import irvine.oeis.a015.A015889;
 
 /**
- * A057232 Numbers n such that n | 10^n + 9^n + 8^n.
+ * A057232 Numbers k such that k | 10^k + 9^k + 8^k.
  *
  * @author Georg Fischer
  */

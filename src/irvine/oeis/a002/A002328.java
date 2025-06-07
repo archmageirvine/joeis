@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A002328 Numbers n such that n^2 - n - 1 is prime.
+ * A002328 Numbers k such that k^2 - k - 1 is prime.
  * @author Sean A. Irvine
  */
 public class A002328 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a213;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A213639 G.f. satisfies: x = A( x - A(x)^3/x ).
+ * A213639 G.f. A(x) satisfies x = A( x - A(x)^3/x ).
  * x+A(A(x))^3/A(x)
  * @author Georg Fischer
  */

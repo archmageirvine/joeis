@@ -4,7 +4,7 @@ package irvine.oeis.a376;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A376176 G.f. satisfies: x = A( x - A(x)^4/x^2 ).
+ * A376176 G.f. A(x) satisfies x = A( x - A(x)^4/x^2 ).
  * x*A(x)^2+A(A(x))^4                        newpoly
  * @author Georg Fischer
  */

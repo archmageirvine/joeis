@@ -4,7 +4,7 @@ package irvine.oeis.a370;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A370349 a(n) is the number of integer triples (x,y,z) satisfying: n + x + y + z &gt;= 0, 49*n + 13*x - 11*y - 23*z &gt;= 0, 49*n - 11*x - 23*y + 13*z &gt;= 0, 49*n - 23*x + 13*y - 11*z &gt;= 0, n + x + y + z == 0 (mod 12), 49*n + 13*x - 11*y - 23*z == 0 (mod 7).
+ * A370349 a(n) is the number of integer triples (x,y,z) satisfying a system of linear inequalities and congruences specified in the comments.
  * @author Georg Fischer
  */
 public class A370349 extends HolonomicRecurrence {

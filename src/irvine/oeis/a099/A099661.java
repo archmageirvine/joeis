@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002281;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A099661 a(n) is the least prime following A002281[n] repdigits.
+ * A099661 a(n) is the least prime following A002281(n) repdigits.
  * @author Georg Fischer
  */
 public class A099661 extends TupleTransformSequence {

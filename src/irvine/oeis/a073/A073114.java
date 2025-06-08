@@ -2,17 +2,17 @@ package irvine.oeis.a073;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
 
 /**
  * A073114 Number of permutations p of [n] such that 1*p(1) + 2*p(2) + 3*p(3) + ... + n*p(n) is prime.
  * @author Sean A. Irvine
  */
-public class A073114 extends Sequence1 {
+public class A073114 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {

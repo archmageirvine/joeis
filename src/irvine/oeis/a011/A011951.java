@@ -13,11 +13,11 @@ public class A011951 extends A011955 {
   // After R. J. Mathar
 
   private final DirectSequence mA045683 = DirectSequence.create(new A045683());
-  private int mN = 8;
+  private int mN = 0;
 
   /** Construct the sequence. */
   public A011951() {
-    super(5);
+    super(1);
   }
 
   private Z fracR(final int phalf) {

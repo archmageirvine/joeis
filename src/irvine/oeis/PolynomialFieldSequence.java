@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.regex.Pattern;
 
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.polynomial.Series;
@@ -44,20 +45,65 @@ public class PolynomialFieldSequence extends AbstractSequence {
   private final int mFactor; //  multiplicity when zeroes should be left out
 
   private final List<Polynomial<Q>> mPolys; // Polynomials referenced in the postfix string as "p0" (the initial polynomial), "p1", "p2" and so on.
-  private final List<Sequence> mSeqs; // sequences for additional generating functions referenced in the postfix string as "s0", "s1", "s2" and so on.
-  private final ArrayList<Polynomial<Q>> mTerms; // terms of mSeqs[is]
-  private final ArrayList<Integer> mNix; // index of next free elemen in mTerms
+  private final List<Sequence> mSeqs; // sequences for additional generating functions referenced in the postfix string as "S", "T", "U" or "V".
+  private final ArrayList<Polynomial<Q>> mTerms; // terms of mSeqs[iseq]
+  private final ArrayList<Integer> mNix; // index of next free elemen in mTerms[iseq]
+  private final ArrayList<Integer> mTypes; // types of additional sequences: 0 = ogf, 1 = egf
   private int mN; // index of the next sequence element to be computed
   private Polynomial<Q> mA; // the generating function A(x) to be computed
   private final List<Polynomial<Q>> mStack; // stack where the final expression is computed
   private Z mFactorial;
 
+  /**
+   * Helper method that indicates that the input sequence <code>seq</code> should be converted
+   * from an exponential generating function to an ordinary generating function.
+   * The offset will be forced to 0, and all terms will be multiplied by <code>n!</code>.
+   * @param seq input sequence
+   * @return sequence wrapped with the property to be an exponential generating function.
+   */
+  public static EgfWrapper egf(final Sequence seq) {
+    return EgfWrapper.wrap(seq);
+  }
+
   {
     fillMap();
   }
 
-  protected Polynomial<Q> getPoly(final int ix) {
-    return mPolys.get(ix);
+  /**
+   * Reflective method for parameter <code>polys</code>.
+   * @return the list of polynomials
+   */
+  protected List<Polynomial<Q>> getPolynomials() {
+    return mPolys;
+  }
+
+  /**
+   * Reflective method for parameter <code>postfix</code>.
+   * @return the postfix String, already split up in an array of Strings
+   */
+  protected String[] getPostfixStrings() {
+    return mPostStrings;
+  }
+
+  /**
+   * Reflective method for parameter <code>seqs</code>.
+   * @return a list of the additional input sequences as String of A-numbers, separated by ",",
+   * exponential generating functions are indicated by a trailing "!" mark.
+   */
+  protected String getSequenceString() {
+    StringBuilder sb = new StringBuilder();
+    int iseq = 0;
+    for (Sequence seq : mSeqs) {
+      if (iseq > 0) {
+        sb.append(",");
+      }
+      sb.append(((seq instanceof EgfWrapper) ? ((EgfWrapper) seq).getSequence() : seq).getClass().getSimpleName());
+      if (mTypes.get(iseq) == EGF) {
+        sb.append("!");
+      }
+      ++iseq;
+    }
+    return sb.toString();
   }
 
   /**
@@ -149,40 +195,51 @@ public class PolynomialFieldSequence extends AbstractSequence {
     mSeqs = new ArrayList<>();
     mTerms = new ArrayList<>(); // denoted by S, T, U, V
     mNix = new ArrayList<>(); // indexed by S, T, U, V
-    final int apos = polyString.indexOf('A');
-    if (apos >= 0) { // with A-numbers at the end of the polynomials
-      final String[] aNums = polyString.substring(apos).split("\\,"); // split into A-numbers
-      polyString = polyString.substring(0, apos - 1); // keep polynomials only
-      polyString = polyString.replaceAll(" *\\, *\\Z", ""); // remove trailing comma
-      try {
-        for (final String aNum : aNums) {
-          final AbstractSequence seq = (AbstractSequence) SequenceFactory.sequence(aNum);
-          final Q[] terms = new Q[mDist + 1];
-          final int soff = seq.getOffset();
-          int ix = 0;
-          while (ix <= mDist) {
-            terms[ix] = ix < soff ? Q.ZERO : Q.valueOf(seq.next());
-            ++ix;
+    mTypes = new ArrayList<>(); // indexed by S, T, U, V
+
+    try {
+      final int aNumPos = polyString.indexOf('A');
+      if (aNumPos >= 0) { // add any A-numbers at the end of the polynomials
+        final String[] aNums = polyString.substring(aNumPos).split("\\, *"); // split into A-numbers
+        polyString = polyString.substring(0, aNumPos - 1); // keep polynomials only
+        polyString = polyString.replaceAll(" *\\, *\\Z", ""); // remove trailing comma
+        for (int iseq = 0; iseq < aNums.length; ++iseq) { // over all input sequence A-numbers
+          mTypes.add(OGF); // assume OGF
+          String aNum = aNums[iseq];
+          if (aNum.endsWith("!")) { // "aseqno!" indicates that aseqno should be treated as e.g.f.
+            mTypes.set(iseq, EGF);
+            aNum = aNum.substring(0, aNum.length() - 1); // remove the "!"
           }
-          mNix.add(ix);
-          mTerms.add(Polynomial.create(terms));
-          mSeqs.add(seq);
+          mSeqs.add(SequenceFactory.sequence(aNum));
         }
-      } catch (final UnimplementedException exc) {
-        System.err.println(exc.getMessage());
       }
-    }
-    for (final Sequence seq : seqs) { // and also from the trailing parameter list
-      final Q[] terms = new Q[mDist + 1];
-      final int soff = seq.getOffset();
-      int ix = 0;
-      while (ix <= mDist) {
-        terms[ix] = ix < soff ? Q.ZERO : Q.valueOf(seq.next());
-        ++ix;
+      for (Sequence seq : seqs) { // add sequences from the trailing parameter list
+        mTypes.add((seq instanceof EgfWrapper) ? EGF : OGF);
+        mSeqs.add(seq);
       }
-      mNix.add(ix);
-      mTerms.add(Polynomial.create(terms));
-      mSeqs.add(seq);
+      for (int iseq = 0; iseq < mSeqs.size(); ++iseq) { // advance all input sequences to their offset + mDist + 1
+        final Sequence seq = mSeqs.get(iseq);
+        final int sourceOffset = seq.getOffset();
+        final Q[] terms = new Q[sourceOffset + mDist + 1];
+        mNix.add(0);
+        mTerms.add(null);
+        int iexp = 0;
+        while (iexp <= sourceOffset + mDist) {
+          if (iexp < sourceOffset) {
+            terms[iexp] = Q.ZERO;
+          } else {
+            terms[iexp] = Q.valueOf(seq.next());
+            if (mTypes.get(iseq) == EGF) {
+              terms[iexp] = terms[iexp].divide(Functions.FACTORIAL.z(iexp));
+            }
+          }
+          ++iexp;
+        }
+        mNix.set(iseq, iexp);
+        mTerms.set(iseq, Polynomial.create(terms));
+      }
+    } catch (final UnimplementedException exc) {
+      System.err.println(exc.getMessage());
     }
 
     polyString = trimQuotes(polyString);
@@ -211,12 +268,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
     }
     for (int i = 1; i <= offset + mDist; ++i) { // add terms to the addional sequences if our offset >= 1
       for (int iseq = 0; iseq < mTerms.size(); ++iseq) { // for all additional sequences
-        Polynomial<Q> pseq = mTerms.get(iseq);
-        final int exponent = mNix.get(iseq);
-        pseq = RING.add(pseq, RING.monomial(Q.valueOf(mSeqs.get(iseq).next()), exponent));
-        mNix.set(iseq, exponent + 1);
-        // System.err.println("pseq[" + iseq + "] = " + pseq);
-        mTerms.set(iseq, pseq);
+        advanceSeq(iseq);
       }
     }
     mN = offset - 1;
@@ -225,6 +277,23 @@ public class PolynomialFieldSequence extends AbstractSequence {
       System.out.println("# construct PolynomialFieldSequence: mN=" + mN + ", mA=" + mA + ", mDist=" + mDist + ", mGfType=" + mGfType);
     }
   } // Constructor
+
+  /**
+   * Append the next term from an additional sequence to the corresponding Polynomial.
+   * @param iseq sequence number: 0, 1, 2, 3
+   */
+  private void advanceSeq(final int iseq) {
+    Polynomial<Q> pseq = mTerms.get(iseq);
+    final int iexp = mNix.get(iseq);
+    Q term = Q.valueOf(mSeqs.get(iseq).next());
+    if (mTypes.get(iseq) == EGF) {
+      term = term.divide(Functions.FACTORIAL.z(iexp));
+    }
+    pseq = RING.add(pseq, RING.monomial(term, iexp));
+    mNix.set(iseq, iexp + 1);
+    // System.err.println("pseq[" + iseq + "] = " + pseq);
+    mTerms.set(iseq, pseq);
+  }
 
   /**
    * Constructor with postfix only, and default of all other parameters.
@@ -274,7 +343,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
    */
   public PolynomialFieldSequence(final int offset, final String polys, final String postfix,
                                  final int dist, final int gfType, final int modulus, final int factor) {
-    this(offset, polys, postfix, dist, gfType, modulus, factor, new AbstractSequence[0]);
+    this(offset, polys, postfix, dist, gfType, modulus, factor, new Sequence[0]);
   }
 
   /**
@@ -312,6 +381,40 @@ public class PolynomialFieldSequence extends AbstractSequence {
   }
 
   /**
+   * Replaces the power series sum of <code>a_n*x^n/n!</code> by sum of <code>a_n*x^n</code>
+   * @param p polynomial
+   * @return Laplace series
+   */
+  public Polynomial<Q> makeOgf(final Polynomial<Q> p) {
+    final Polynomial<Q> res = RING.empty();
+    Q fact = Q.ONE;
+    for (int k = 0; k <= p.degree(); ++k) {
+      if (k > 1) {
+        fact = fact.multiply(k);
+      }
+//    res.add(RING.monomial(p.coeff(k).multiply(fact), k));
+    }
+    return res;
+  }
+
+  /**
+   * Replaces the power series sum of <code>a_n*x^n</code> by sum of <code>a_n*x^n/n!</code>
+   * @param p polynomial
+   * @return Laplace series
+   */
+  public Polynomial<Q> makeEgf(final Polynomial<Q> p) {
+    final Polynomial<Q> res = RING.empty();
+    Q fact = Q.ONE;
+    for (int k = 0; k <= p.degree(); ++k) {
+      if (k > 1) {
+        fact = fact.multiply(k);
+      }
+//    res.add(RING.monomial(p.coeff(k).divide(fact), k));
+    }
+    return res;
+  }
+
+  /**
    * Compute the next term of the sequence, including any zeroes that are left out by <code>next()</code>.
    * @return next coefficient of the generating function
    */
@@ -320,12 +423,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
     // for example: A143046 poly -p "[[0],[1],[0,-1]]" -x ",p1,p2,sub,^3,<1,+"; G.f. satisfies A(x) = 1 + x*A(-x)^3.
     final int m = mN + mDist; // Number of terms to expand to
     for (int iseq = 0; iseq < mTerms.size(); ++iseq) {
-      Polynomial<Q> pseq = mTerms.get(iseq);
-      final int exponent = mNix.get(iseq);
-      pseq = RING.add(pseq, RING.monomial(Q.valueOf(mSeqs.get(iseq).next()), exponent));
-      mNix.set(iseq, exponent + 1);
-      // System.err.println("pseq[" + iseq + "] = " + pseq);
-      mTerms.set(iseq, pseq);
+      advanceSeq(iseq);
     }
     int ipost = 0;
     int top = -1; // index of top element of <code>mStack</code>. Initially, the stack is empty.
@@ -358,7 +456,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
         case 6:  // "^i"  integer exponent e
           mStack.set(top, RING.pow(mStack.get(top), mPostInts[ipost++], m));
           break;
-        case 7:  // "^q"  rational exponent, num/den
+        case 7:  // "^q",  rational exponent q=num/den
           mStack.set(top, RING.pow(mStack.get(top), new Q(mPostInts[ipost], mPostInts[ipost + 1]), m));
           ipost += 2;
           break;
@@ -468,29 +566,6 @@ public class PolynomialFieldSequence extends AbstractSequence {
         case 36:  // "atanh"
           mStack.set(top, RING.atanh(mStack.get(top), m));
           break;
-        // The following cannot be done exactly over the rationals or are not yet available
-//            case "acsch":
-//              mStack.set(top, RING.acsch(mStack.get(top), m));
-//              break;
-//            case "acsc":
-//              mStack.set(top, RING.acsc(mStack.get(top), m));
-//              break;
-//            case "acos":
-//              mStack.set(top, RING.acos(mStack.get(top), m));
-//              break;
-//            case "acoth":
-//              mStack.set(top, RING.acoth(mStack.get(top), m));
-//              break;
-//            case "acot":
-//              mStack.set(top, RING.acot(mStack.get(top), m));
-//              break;
-//            case "asech":
-//              mStack.set(top, RING.asech(mStack.get(top), m));
-//              break;
-//            case "asec":
-//              mStack.set(top, RING.asec(mStack.get(top), m));
-//              break;
-
         case 37:  // "dif"  replace the current top element by its derivative
           mStack.set(top, RING.diff(mStack.get(top)));
           break;
@@ -513,18 +588,24 @@ public class PolynomialFieldSequence extends AbstractSequence {
         case 43:  // "n"  push the current index
           mStack.set(++top, Polynomial.create(new Q(mN)));
           break;
-        case 44:  // "catalan"  push catalan(top element) C:= proc(x) (1 - sqrt(1 - 4*x)) / (2*x) end;
-          final Polynomial<Q> x14 = RING.subtract(Polynomial.create(Q.ONE), RING.multiply(mStack.get(top), Q.FOUR));
-          final Polynomial<Q> x2 = RING.multiply(mStack.get(top), Q.TWO);
-          // System.out.println("x14=" + x14 + ", x2= " + x2);
-          mStack.set(++top, RING.series(RING.subtract(Polynomial.create(Q.ONE), RING.sqrt(x14, m)), x2, m));
+        case 44:  // "q" -same as x, for eta products
+          mStack.set(++top, RING.x());
           break;
         case 45:  // "S"  1st additional g.f. as a sequence
+        case 55:  // "B"  1st additional g.f. as a sequence
+          mStack.set(top, RING.substitute(mTerms.get(0), mStack.get(top), m));
+          break;
         case 46:  // "T"  2nd additional g.f. as a sequence
+        case 56:  // "C"  2nd additional g.f. as a sequence
+          mStack.set(top, RING.substitute(mTerms.get(1), mStack.get(top), m));
+          break;
         case 47:  // "U"  3rd additional g.f. as a sequence
-        case 48:  // "V"  4th additional g.f. as a sequence  
-          // Caution, this code is dirty (dependent on the "45")!
-          mStack.set(top, RING.substitute(mTerms.get(ix - 45), mStack.get(top), m));
+        case 57:  // "D"  3rd additional g.f. as a sequence
+          mStack.set(top, RING.substitute(mTerms.get(2), mStack.get(top), m));
+          break;
+        case 48:  // "V"  4th additional g.f. as a sequence
+        case 58:  // "E"  4th additional g.f. as a sequence
+          mStack.set(top, RING.substitute(mTerms.get(3), mStack.get(top), m));
           break;
         case 49:  // "besselI"
           --top;
@@ -539,11 +620,30 @@ public class PolynomialFieldSequence extends AbstractSequence {
         case 52:  // "ellipticK"
           mStack.set(top, Series.ELLIPTIC_K.s(m, mStack.get(top)));
           break;
-        case 53:  // "serlaplace" - convert from e.g.f. to o.g.f.
-          mStack.set(top, RING.serlaplace(mStack.get(top)));
-          break;
         default: // should not occur with proper postfix expressions
           throw new RuntimeException("invalid postfix code " + ix);
+// The following cannot be done exactly over the rationals or are not yet available
+//            case "acsch":
+//              mStack.set(top, RING.acsch(mStack.get(top), m));
+//              break;
+//            case "acsc":
+//              mStack.set(top, RING.acsc(mStack.get(top), m));
+//              break;
+//            case "acos":
+//              mStack.set(top, RING.acos(mStack.get(top), m));
+//              break;
+//            case "acoth":
+//              mStack.set(top, RING.acoth(mStack.get(top), m));
+//              break;
+//            case "acot":
+//              mStack.set(top, RING.acot(mStack.get(top), m));
+//              break;
+//            case "asech":
+//              mStack.set(top, RING.asech(mStack.get(top), m));
+//              break;
+//            case "asec":
+//              mStack.set(top, RING.asec(mStack.get(top), m));
+//              break;
       } //! switch
       if (sDebug >= 3) {
         debugStack(ix, top, "after");
@@ -610,7 +710,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
     POST_MAP.put("tanh", 30);
     POST_MAP.put("x", 3);
     POST_MAP.put("n", 43);
-    POST_MAP.put("catalan", 44);
+    POST_MAP.put("q", 44); // same as "x"
     POST_MAP.put("S", 45);
     POST_MAP.put("T", 46);
     POST_MAP.put("U", 47);
@@ -619,7 +719,10 @@ public class PolynomialFieldSequence extends AbstractSequence {
     POST_MAP.put("ellipticD", 50);
     POST_MAP.put("ellipticE", 51);
     POST_MAP.put("ellipticK", 52);
-    POST_MAP.put("serlaplace", 53);
+    POST_MAP.put("B", 55);
+    POST_MAP.put("C", 56);
+    POST_MAP.put("D", 57);
+    POST_MAP.put("E", 58);
   } //! fillMap
 
   @Override

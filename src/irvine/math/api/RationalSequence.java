@@ -18,11 +18,11 @@ public interface RationalSequence {
    */
   static RationalSequence toEgf(final Sequence seq) {
     return new RationalSequence() {
-      private long n = seq.getOffset();
+      private long mN = seq.getOffset();
 
       @Override
       public Q nextQ() {
-        return new Q(seq.next(), Functions.FACTORIAL.z(n++));
+        return new Q(seq.next(), Functions.FACTORIAL.z(mN++));
       }
     };
   }

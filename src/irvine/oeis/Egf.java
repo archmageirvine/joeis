@@ -23,6 +23,11 @@ public interface Egf {
     }
   }
 
+  /**
+   * Wrap a sequence.
+   * @param seq sequence
+   * @return wrapped sequence
+   */
   static Sequence wrap(final Sequence seq) {
     return new EgfSequence(seq);
   }

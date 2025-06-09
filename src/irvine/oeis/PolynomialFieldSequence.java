@@ -602,6 +602,10 @@ public class PolynomialFieldSequence extends AbstractSequence {
         case 52:  // "ellipticK"
           mStack.set(top, Series.ELLIPTIC_K.s(m, mStack.get(top)));
           break;
+        case 53:  // "pow" - exponent is no Q constant; [top-1],log,[top],*,exp -> [top-1]
+          --top;
+          mStack.set(top, RING.exp(RING.multiply(RING.log(mStack.get(top), m), mStack.get(top + 1), m), m));
+          break;
         default: // should not occur with proper postfix expressions
           throw new RuntimeException("invalid postfix code " + ix);
 // The following cannot be done exactly over the rationals or are not yet available
@@ -701,6 +705,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
     POST_MAP.put("ellipticD", 50);
     POST_MAP.put("ellipticE", 51);
     POST_MAP.put("ellipticK", 52);
+    POST_MAP.put("pow", 53);
     POST_MAP.put("B", 55);
     POST_MAP.put("C", 56);
     POST_MAP.put("D", 57);

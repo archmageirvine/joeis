@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a002.A002408;
 
 /**
- * A302201 E.g.f.: exp (e.g.f. for the &quot;cusp form&quot; A002408).
+ * A302201 E.g.f.: exp (e.g.f. for the "cusp form" A002408).
  * egf(new A002408())
  * @author Georg Fischer
  */

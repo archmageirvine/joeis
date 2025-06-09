@@ -8,7 +8,7 @@ import irvine.oeis.a030.A030019;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A134954 Number of &quot;hyperforests&quot; on n labeled nodes, i.e., hypergraphs that have no cycles, assuming that each edge contains at least two vertices.
+ * A134954 Number of "hyperforests" on n labeled nodes, i.e., hypergraphs that have no cycles, assuming that each edge contains at least two vertices.
  * @author Georg Fischer
  */
 public class A134954 extends MultiTransformSequence {

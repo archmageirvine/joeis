@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077713.
+ * A077713 a(1) = 3; thereafter a(n) = the smallest prime of the form d0...0a(n-1), where d is a single digit, or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A077713 extends Sequence1 {

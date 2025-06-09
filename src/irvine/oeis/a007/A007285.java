@@ -11,7 +11,7 @@ import irvine.util.array.DynamicIntArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A384640.
+ * A007285 Minimum diameter of an integral set of n points in the plane, not all on a line.
  * @author Sascha Kurz
  * @author Sean A. Irvine (Java port)
  */
@@ -176,14 +176,12 @@ public class A007285 extends Sequence3 {
     final int g = Functions.GCD.i(r1, r2);
     final long q = r1 / g;
     final int zoomFactor = (int) (r2 / g);
-
     final int[] fa1 = new int[MAX_PRIME_DIVISORS];
     final int[] fa2 = new int[MAX_PRIME_DIVISORS];
     final int[] fb1 = new int[MAX_PRIME_DIVISORS];
     final int[] fb2 = new int[MAX_PRIME_DIVISORS];
     final int[] f1 = new int[MAX_PRIME_DIVISORS];
     final int[] f2 = new int[MAX_PRIME_DIVISORS];
-
     merge(mFactorization1[a + b + c], mFactorization2[a + b + c], mFactorization1[a + b - c], mFactorization2[a + b - c], fa1, fa2);
     merge(mFactorization1[a - b + c], mFactorization2[a - b + c], mFactorization1[-a + b + c], mFactorization2[-a + b + c], fb1, fb2);
     merge(fa1, fa2, fb1, fb2, f1, f2);
@@ -191,15 +189,12 @@ public class A007285 extends Sequence3 {
     if (!unmerge(fa1, fa2, mFactorization1[g], mFactorization2[g], f1, f2)) {
       return false;
     }
-
     int numPrimeDiv = 0;
     while (numPrimeDiv < f1.length && f1[numPrimeDiv] != 1) {
       numPrimeDiv++;
     }
-
     final int[] divisorSet = new int[MAX_PRIME_DIVISORS];
     divisorSet[0] = -1;
-
     long h = 1;
     int numLeft = 0;
     int numRight = 0;
@@ -208,7 +203,6 @@ public class A007285 extends Sequence3 {
     int maxABC = Math.max(a, Math.max(b, c));
     final int[] darst = new int[1000];
     int posDarst = 0;
-
     if (zoomFactor <= 2) {
       boolean ok = true;
       for (int i = 0; i < numPrimeDiv; i++) {
@@ -224,7 +218,6 @@ public class A007285 extends Sequence3 {
         numExtra = 1;
       }
     }
-
     boolean cont = true;
     while (true) {
       ++divisorSet[0];
@@ -239,7 +232,6 @@ public class A007285 extends Sequence3 {
       if (!cont) {
         break;
       }
-
       long factor1 = 1;
       long factor2 = 1;
       boolean ok = true;
@@ -254,7 +246,6 @@ public class A007285 extends Sequence3 {
       if (factor1 > factor2 || factor2 > 2L * maxABC * zoomFactor || ((factor1 & 1) != (factor2 & 1))) {
         ok = false;
       }
-
       final long x = (factor1 + factor2) / 2;
       final long y = factor2 - x;
       if (x % zoomFactor != 0) {
@@ -282,7 +273,6 @@ public class A007285 extends Sequence3 {
         }
       }
     }
-
     if (numExtra == 1) {
       if (zoomFactor == 1) {
         h *= 2;
@@ -291,31 +281,21 @@ public class A007285 extends Sequence3 {
         maxABC = (int) h;
       }
     }
-
     final int total = numLeft + numRight + numMiddle + numExtra + 3;
     if (total > mMaxPoints || (total == mMaxPoints && maxABC <= mMaxDiameter)) {
       mMaxPoints = total;
       mMaxDiameter = maxABC;
-
       if (mResults.get(total) == 0) {
         mResults.set(total, maxABC);
       }
       if (mVerbose) {
         Arrays.sort(darst, 0, posDarst);
-        final StringBuilder sb = new StringBuilder();
-
-        sb.append("Point set with ").append(total).append(" points and diameter ").append(maxABC).append(" : (").append(a).append(",").append(b).append(",").append(c).append(")");
+        final StringBuilder sb = new StringBuilder("Point set with ").append(total).append(" points and diameter ").append(maxABC).append(" : (").append(a).append(",").append(b).append(",").append(c).append(")");
         if (numExtra == 1) {
           sb.append(" (extra point)");
         }
         sb.append(' ');
-
-        long car = 1;
-        for (int i = 0; i < numPrimeDiv; ++i) {
-          if ((f2[i] & 1) == 1) {
-            car *= f1[i];
-          }
-        }
+        final long car = getCar(f1, f2, numPrimeDiv);
         for (int i = 0; i < numPrimeDiv; ++i) {
           if (i > 0) {
             sb.append('*');
@@ -337,6 +317,16 @@ public class A007285 extends Sequence3 {
       }
     }
     return true;
+  }
+
+  private long getCar(final int[] f1, final int[] f2, final int numPrimeDiv) {
+    long car = 1;
+    for (int i = 0; i < numPrimeDiv; ++i) {
+      if ((f2[i] & 1) == 1) {
+        car *= f1[i];
+      }
+    }
+    return car;
   }
 
   @Override

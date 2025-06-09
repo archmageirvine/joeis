@@ -1,13 +1,13 @@
-package irvine.oeis.a384;
+package irvine.oeis.a383;
 
 import irvine.math.z.Z;
-import irvine.oeis.a030.A030078;
+import irvine.oeis.a001.A001248;
 
 /**
- * A384161 allocated for Abhiram R Devesh.
+ * A383504 allocated for Abhiram R Devesh.
  * @author Sean A. Irvine
  */
-public class A384161 extends A030078 {
+public class A383504 extends A001248 {
 
   @Override
   public Z next() {

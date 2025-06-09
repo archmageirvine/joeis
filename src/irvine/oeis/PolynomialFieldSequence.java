@@ -91,7 +91,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
    * exponential generating functions are indicated by a trailing "!" mark.
    */
   protected String getSequenceString() {
-    StringBuilder sb = new StringBuilder();
+    final StringBuilder sb = new StringBuilder();
     int iseq = 0;
     for (Sequence seq : mSeqs) {
       if (iseq > 0) {
@@ -324,8 +324,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
    * @param dist additional degree
    * @param gfType type of the generating function: 0 = ordinary, 1 = exponential
    */
-  public PolynomialFieldSequence(final int offset, final String polys, final String postfix,
-                                 final int dist, final int gfType) {
+  public PolynomialFieldSequence(final int offset, final String polys, final String postfix, final int dist, final int gfType) {
     this(offset, polys, postfix, dist, gfType, 1, 1);
   }
 
@@ -393,23 +392,6 @@ public class PolynomialFieldSequence extends AbstractSequence {
         fact = fact.multiply(k);
       }
 //    res.add(RING.monomial(p.coeff(k).multiply(fact), k));
-    }
-    return res;
-  }
-
-  /**
-   * Replaces the power series sum of <code>a_n*x^n</code> by sum of <code>a_n*x^n/n!</code>
-   * @param p polynomial
-   * @return Laplace series
-   */
-  public Polynomial<Q> makeEgf(final Polynomial<Q> p) {
-    final Polynomial<Q> res = RING.empty();
-    Q fact = Q.ONE;
-    for (int k = 0; k <= p.degree(); ++k) {
-      if (k > 1) {
-        fact = fact.multiply(k);
-      }
-//    res.add(RING.monomial(p.coeff(k).divide(fact), k));
     }
     return res;
   }
@@ -742,18 +724,10 @@ public class PolynomialFieldSequence extends AbstractSequence {
   } // next
 
   /* reflective methods */
-  /**
-   * Get the postfix polish notation.
-   * @return list of operands and operations.
-   */
   public String[] getPostfix() {
     return mPostStrings;
   }
 
-  /**
-   * Get the type of the generating function.
-   * @return gfType.
-   */
   public int getGfType() {
     return mGfType;
   }

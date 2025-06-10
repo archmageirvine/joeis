@@ -149,7 +149,13 @@ public class PolynomialFieldSequence extends AbstractSequence {
       if (Character.isDigit(pelem.charAt(0))) { // single non-negative number, prefix with i
         parms = pelem;
         pelem = "i";
-      } else if (pelem.length() >= 2 && Character.isDigit(pelem.charAt(1))) { // one of p, i, <, ^ with 1 or 2 additional int parameter(s)
+      } else if (pelem.length() >= 2 && pelem.charAt(0) == '-' && Character.isDigit(pelem.charAt(1))) { // single negative number, prefix with i
+        parms = pelem;
+        pelem = "i";
+      } else if (pelem.charAt(0) == '<') { // shift left/high (+m) or right/low (-m) = multiply by x^m
+        parms = pelem.substring(1);
+        pelem = "<";
+      } else if (pelem.length() >= 2 && Character.isDigit(pelem.charAt(1))) { // one of p, i, ^ with 1 or 2 additional int parameter(s)
         parms = pelem.substring(1);
         pelem = pelem.substring(0, 1); // single character code
       }

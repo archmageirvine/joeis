@@ -4,7 +4,7 @@ package irvine.oeis.a105;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A105796 &quot;Stirling-Bernoulli transform&quot; of Jacobsthal numbers.
+ * A105796 "Stirling-Bernoulli transform" of Jacobsthal numbers.
  * E.g.f.: <code>exp(x)*(1-exp(x))/((2-exp(x))*(1-2*exp(x)))</code>.
  * @author Georg Fischer
  */

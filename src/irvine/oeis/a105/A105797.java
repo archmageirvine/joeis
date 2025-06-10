@@ -4,7 +4,7 @@ package irvine.oeis.a105;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A105797 &quot;Stirling-Bernoulli transform&quot; of Pell numbers.
+ * A105797 "Stirling-Bernoulli transform" of Pell numbers.
  * E.g.f.: <code>exp(x)*(1-exp(x))/(1-4*exp(x)+2*exp(2*x))</code>.
  * @author Georg Fischer
  */

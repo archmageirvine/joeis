@@ -4,7 +4,7 @@ package irvine.oeis.a257;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A257476 E.g.f. satisfies: A&apos;(x) = exp(A(x)) / (1 - A(x))^2.
+ * A257476 E.g.f. satisfies: A'(x) = exp(A(x)) / (1 - A(x))^2.
  * E.g.f.: <code>reverse(1-exp(-x)*(1+x^2))</code>.
  * @author Georg Fischer
  */

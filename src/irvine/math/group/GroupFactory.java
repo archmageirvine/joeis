@@ -211,7 +211,7 @@ public final class GroupFactory {
     final ArrayList<Group<?>> res = new ArrayList<>();
     try (final BufferedReader r = IOUtils.reader("irvine/math/group/resources/sg" + order + ".dat.gz")) {
       if (r == null) {
-        throw new UnsupportedOperationException("Not information for order " + order);
+        throw new UnsupportedOperationException("No information for order " + order);
       }
       String line;
       while ((line = r.readLine()) != null) {

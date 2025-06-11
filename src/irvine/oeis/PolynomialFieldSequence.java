@@ -28,13 +28,13 @@ public class PolynomialFieldSequence extends AbstractSequence {
 
   /* Caution, the following are bitmasks, c.f. usage at the end of <code>compute()</code>: */
   /** Constant indicating the numerators of an ordinary generating function. */
-  protected static final int OGF = 0;
+  public static final int OGF = 0;
   /** Constant indicating the numerators of an exponential generating function. */
-  protected static final int EGF = 1;
+  public static final int EGF = 1;
   /** Constant indicating the denominators of an ordinary generating function. */
-  protected static final int DEN_OGF = 4;
+  public static final int DEN_OGF = 4;
   /** Constant indicating the denominators of an exponential generating function. */
-  protected static final int DEN_EGF = 5;
+  public static final int DEN_EGF = 5;
 
   private final String[] mPostStrings; // list of operands and operators
   private final int[] mPostInts; // list of operands and operators converted to integer codes

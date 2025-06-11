@@ -2,10 +2,10 @@ package irvine.oeis.a004;
 
 import irvine.math.z.Z;
 import irvine.oeis.AlternatingSequence;
+import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.a000.A000004;
 import irvine.oeis.a002.A002829;
-import irvine.oeis.transform.LogarithmicTransformSequence;
 
 /**
  * A004109 Number of connected trivalent (or cubic) labeled graphs with 2n nodes.
@@ -15,7 +15,7 @@ public class A004109 extends PrependSequence {
 
   /** Construct the sequence. */
   public A004109() {
-    super(new LogarithmicTransformSequence(new AlternatingSequence(new A002829(), new A000004()), 1), 1, 1);
+    super(0, new PolynomialFieldSequence(2, "", "x,B,log", 0, PolynomialFieldSequence.EGF, 1, 1, PolynomialFieldSequence.egf(new AlternatingSequence(new A002829(), new A000004()))), 1, 1, 1);
   }
 
   @Override

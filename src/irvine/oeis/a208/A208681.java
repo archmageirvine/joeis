@@ -4,7 +4,7 @@ package irvine.oeis.a208;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A208681 Kashaev&apos;s invariant for the (9,2)-torus knot.
+ * A208681 Kashaev's invariant for the (9,2)-torus knot.
  * E.g.f.: <code>1/2*sin(2*x)/cos(9*x)</code>.
  * @author Georg Fischer
  */

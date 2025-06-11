@@ -4,7 +4,7 @@ package irvine.oeis.a066;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A066165 Variant of Stanley&apos;s children&apos;s game. Class of n (named) children forms into rings of at least two with exactly one child inside each ring. a(n) gives number of possibilities, including clockwise order (or which hand is held), in each ring.
+ * A066165 Variant of Stanley's children's game. Class of n (named) children forms into rings of at least two with exactly one child inside each ring. a(n) gives number of possibilities, including clockwise order (or which hand is held), in each ring.
  * @author Georg Fischer
  */
 public class A066165 extends PolynomialFieldSequence {

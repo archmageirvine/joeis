@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A077744.
+ * A077747 Partition the digits of the concatenation 123456789101112131415... of natural numbers such that a(n) contains a(n-1) digits with a(1) = 1.
  * @author Sean A. Irvine
  */
 public class A077747 extends NoncomputableSequence {

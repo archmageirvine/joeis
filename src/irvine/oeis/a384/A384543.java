@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077744.
+ * A384543 allocated for Dar\u00edo Clavijo.
  * @author Sean A. Irvine
  */
 public class A384543 extends Sequence1 {

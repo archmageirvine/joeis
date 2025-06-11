@@ -4,7 +4,7 @@ package irvine.oeis.a384;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A384680 G.f. A(x) satisfies A(x) = 1/( 1 - x*A(x)*A(x*A(x)^3) ).
+ * A384680 allocated for Seiichi Manyama.
  * @author Georg Fischer
  */
 public class A384680 extends PolynomialFieldSequence {

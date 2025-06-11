@@ -499,8 +499,7 @@ A006660 Number of meanders in which first bridge is 3, cf. A005315
 A006661 Number of meanders in which first bridge is 5
 A006662 Number of meanders in which first bridge is 7
 A006663 Number of projective meanders
-A006664 Number of irreducible systems of meanders, don't understand formula
-A006672 Ramsey numbers, have paper, probably hard
+A006672 Ramsey numbers
 A006674 Bordered triangulations of sphere with n nodes, see blog2017, plantri?
 A006683 Number of regions in certain maps, couldn't get paper
 A006688 Number of self-dual equivalence classes switching functions of exactly n+1 variables

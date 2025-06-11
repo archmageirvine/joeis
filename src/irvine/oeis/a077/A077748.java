@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A077744.
+ * A077748 Least significant digit of A077747(n).
  * @author Sean A. Irvine
  */
 public class A077748 extends NoncomputableSequence {

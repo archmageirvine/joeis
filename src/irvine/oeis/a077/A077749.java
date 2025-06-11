@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A077744.
+ * A077749 a(n) contains 2^n digits such that the concatenation a(0)a(1)a(2)...forms a substring of the cyclic concatenation 012345678901234567890123...
  * @author Sean A. Irvine
  */
 public class A077749 extends Sequence0 {

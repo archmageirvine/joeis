@@ -4,7 +4,7 @@ package irvine.oeis.a208;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A208679 Kashaev&apos;s invariant for the (5,2)-torus knot (Solomon&apos;s seal knot).
+ * A208679 Kashaev's invariant for the (5,2)-torus knot (Solomon's seal knot).
  * E.g.f.: <code>1/2*sin(2*x)/cos(5*x)</code>.
  * @author Georg Fischer
  */

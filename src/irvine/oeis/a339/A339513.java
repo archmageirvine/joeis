@@ -4,7 +4,7 @@ package irvine.oeis.a339;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A339513 Define R_{1}(x)=1, R_{n+1}(x)=(R_n(x)*2*x/(1+x^2))&apos;; then a(n)=R_{n}(1).
+ * A339513 Define R_{1}(x)=1, R_{n+1}(x)=(R_n(x)*2*x/(1+x^2))'; then a(n)=R_{n}(1).
  * @author Georg Fischer
  */
 public class A339513 extends PolynomialFieldSequence {

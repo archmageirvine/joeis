@@ -81,9 +81,11 @@ public class A384424 extends Sequence1 {
     mUsed[0] = true;
     // WLOG assume first step is to either (1,0) or (1,1)
     mUsed[1] = true;
+    mPath[0] = 1;
     search(1, mN * mN - 1, 0);
     mUsed[1] = false;
     mUsed[mN + 1] = true;
+    mPath[0] = mN + 1;
     search(mN + 1, mN * mN - 1, 0);
     mUsed[mN + 1] = false;
     return Z.valueOf(mN * mN - mBad);

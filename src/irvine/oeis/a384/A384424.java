@@ -1,7 +1,7 @@
 package irvine.oeis.a384;
 
-import irvine.math.lattice.Lattice;
-import irvine.math.lattice.Lattices;
+import irvine.math.graph.Graph;
+import irvine.math.graph.GraphFactory;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -11,40 +11,36 @@ import irvine.oeis.Sequence1;
  */
 public class A384424 extends Sequence1 {
 
-  private Lattice mGrid = null;
+  private Graph mGraph = null;
   private int mN = 0;
   private int mBad = 0;
-  private boolean[][] mUsed = null;
+  private boolean[] mUsed = null;
 
-  private double dist(final long px, final long py) {
-    final double dx = px - 0.5 * (mN - 1);
-    final double dy = py - 0.5 * (mN - 1);
+  private long dist(final int px, final int py) {
+    // To avoid 1/2, scale up coordinates by 2
+    final long dx = 2L * px - (mN - 1);
+    final long dy = 2L * py - (mN - 1);
     return dx * dx + dy * dy;
   }
 
-  private void search(final long point, final int remaining, final int badCount) {
+  private void search(final int point, final int remaining, final int badCount) {
     if (remaining == 0) {
-      System.out.println(mN + " New minimum bad steps: " + mBad);
       mBad = badCount;
+      System.out.println(mN + " New minimum bad steps: " + mBad + " final point " + point);
       return;
     }
     // Try expanding path from current point
-    final double dp = dist(mGrid.ordinate(point, 0), mGrid.ordinate(point, 1));
-    final int nc = mGrid.neighbourCount(point);
-    for (int k = 0; k < nc; ++k) {
-      final long q = mGrid.neighbour(point, k);
-      final int qx = (int) mGrid.ordinate(q, 0);
-      final int qy = (int) mGrid.ordinate(q, 1);
-      if (!mUsed[qx][qy]) {
-        final double dq = dist(qx, qy);
-        if (mN == 3) {
-          System.out.println(mGrid.toString(point) + " -> " + mGrid.toString(q) + " " + (dq >= dp) + " " + dp + " " + dq);
-        }
+    final long dp = dist(point % mN, point / mN);
+    for (int q = mGraph.nextVertex(point, -1); q >= 0; q = mGraph.nextVertex(point, q)) {
+      if (!mUsed[q] || (remaining == 1 && q == 0)) {
+        final int qx = q % mN;
+        final int qy = q / mN;
+        final long dq = dist(qx, qy);
         final int newBadCount = dq >= dp ? badCount + 1 : badCount;
         if (newBadCount < mBad) {
-          mUsed[qx][qy] = true;
+          mUsed[q] = true;
           search(q, remaining - 1, newBadCount);
-          mUsed[qx][qy] = false;
+          mUsed[q] = false;
         }
       }
     }
@@ -53,11 +49,11 @@ public class A384424 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    mGrid = Lattices.grid(mN, mN); // todo this is wrong we want 8 way stepping, we needs kings graph equivalent
+    mGraph = GraphFactory.kings(mN);
     mBad = mN * mN;
-    mUsed = new boolean[mN][mN];
-    //mUsed[0] = true; // todo awaiting clarification if we are looking for a cycle
-    search(mGrid.origin(), mN * mN, 0);
+    mUsed = new boolean[mN * mN];
+    mUsed[0] = true;
+    search(0, mN * mN, 0);
     return Z.valueOf(mN * mN - mBad);
   }
 }

@@ -64,7 +64,9 @@ public class A384424 extends Sequence1 {
 
   @Override
   public Z next() {
-    ++mN;
+    if (++mN < 3) {
+      return Z.ZERO;
+    }
     mGraph = GraphFactory.kings(mN);
     mBad = mN * mN;
     // Precompute (squared) distance to center for each point
@@ -77,8 +79,13 @@ public class A384424 extends Sequence1 {
     mPath = new int[mN * mN];
     mUsed = new boolean[mN * mN];
     mUsed[0] = true;
-    // todo this could exploit symmetry
-    search(0, mN * mN, 0);
+    // WLOG assume first step is to either (1,0) or (1,1)
+    mUsed[1] = true;
+    search(1, mN * mN - 1, 0);
+    mUsed[1] = false;
+    mUsed[mN + 1] = true;
+    search(mN + 1, mN * mN - 1, 0);
+    mUsed[mN + 1] = false;
     return Z.valueOf(mN * mN - mBad);
   }
 }

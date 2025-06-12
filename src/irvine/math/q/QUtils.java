@@ -49,4 +49,18 @@ public final class QUtils {
     }
     return prod;
   }
+
+  /**
+   * Convert a comma separated list of rationals into an array.
+   * @param s string
+   * @return array of rationals
+   */
+  public static Q[] toQ(final String s) {
+    final String[] parts = s.split(",");
+    final Q[] res = new Q[parts.length];
+    for (int k = 0; k < parts.length; ++k) {
+      res[k] = Q.valueOf(parts[k]);
+    }
+    return res;
+  }
 }

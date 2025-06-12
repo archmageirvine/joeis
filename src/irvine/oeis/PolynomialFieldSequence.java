@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.regex.Pattern;
 
+import irvine.math.api.RationalSequence;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -20,27 +21,29 @@ import irvine.math.z.Z;
  * See https://teherba.org/tehowiki/index.php/Expansion_of_polynomials.
  * @author Georg Fischer
  */
-public class PolynomialFieldSequence extends AbstractSequence {
+public class PolynomialFieldSequence extends AbstractSequence implements RationalSequence {
 
   protected static int sDebug;
   protected static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final HashMap<String, Integer> POST_MAP = new HashMap<>(64); // map a postfix string to an int for switch() statement
 
   /* Caution, the following are bitmasks, c.f. usage at the end of <code>compute()</code>: */
-  /** Constant indicating the numerators of an ordinary generating function. */
+  /** Bitmask indicating the numerators of an ordinary target generating function. */
   public static final int OGF = 0;
-  /** Constant indicating the numerators of an exponential generating function. */
+  /** Bitmask indicating the numerators of an exponential target or an exponential source generating function. */
   public static final int EGF = 1;
-  /** Constant indicating the denominators of an ordinary generating function. */
+  /** Bitmask indicating the denominators of an ordinary target generating function. */
   public static final int DEN_OGF = 4;
-  /** Constant indicating the denominators of an exponential generating function. */
+  /** Bitmask indicating the denominators of an exponential target generating function. */
   public static final int DEN_EGF = 5;
+  /** Bitmask indicating a rational source generating function. */
+  private static final int RAT = 4;
 
   private final String[] mPostStrings; // list of operands and operators
   private final int[] mPostInts; // list of operands and operators converted to integer codes
   private int mPostLen; // length of mPostInts array generated from the postfix String
   private final int mDist; // additional degree
-  private final int mGfType; // type of the generating function: 0 = ordinary, 1 = exponential (integer or numerators), 4 ordinary, 5 exponential (denominators)
+  private final int mGfType; // type of the resulting generating function: 0 = ordinary, 1 = exponential (integer or numerators), 4 ordinary, 5 exponential (denominators)
   private final int mModulus; // for example 1 for odd, 0 for even if factor = 2
   private final int mFactor; //  multiplicity when zeroes should be left out
 
@@ -48,7 +51,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
   private final List<Sequence> mSeqs; // sequences for additional generating functions referenced in the postfix string as "S", "T", "U" or "V".
   private final ArrayList<Polynomial<Q>> mTerms; // terms of mSeqs[iseq]
   private final ArrayList<Integer> mNix; // index of next free elemen in mTerms[iseq]
-  private final ArrayList<Integer> mTypes; // types of additional sequences: 0 = ogf, 1 = egf
+  private final ArrayList<Integer> mTypes; // types of additional source sequences: 0 = OGF, 1 = EGF, 4 = rational OGF, 5 = rational EGF
   private int mN; // index of the next sequence element to be computed
   private Polynomial<Q> mA; // the generating function A(x) to be computed
   private final List<Polynomial<Q>> mStack; // stack where the final expression is computed
@@ -114,7 +117,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
    * @param postfix the equation with operands and operators in postfix polish notation, separated by the first character in
    * the String, for example A213091 <code>satisfies: A(x) = 1 + x/A(-x*A(x)^2)</code> -&gt; <code>",1,x,A,^2,<1,neg,sub,/,+"</code>
    * @param dist additional degree
-   * @param gfType type of the generating function: 0 = ordinary, 1 = exponential (integer or numerators), 4 ordinary, 5 exponential (denominators)
+   * @param gfType type of the resulting generating function: 0 = ordinary, 1 = exponential (integer or numerators), 4 ordinary, 5 exponential (denominators)
    * @param modulus for example 1 for odd, 0 for even if factor = 2
    * @param factor multiplicity when zeroes should be left out
    * @param seqs list of optional sequences whose generating functions are used in the postfix expression
@@ -210,17 +213,29 @@ public class PolynomialFieldSequence extends AbstractSequence {
         polyString = polyString.substring(0, aNumPos - 1); // keep polynomials only
         polyString = polyString.replaceAll(" *\\, *\\Z", ""); // remove trailing comma
         for (int iseq = 0; iseq < aNums.length; ++iseq) { // over all input sequence A-numbers
-          mTypes.add(OGF); // assume OGF
+          int mask = OGF; // default
           String aNum = aNums[iseq];
           if (aNum.endsWith("!")) { // "aseqno!" indicates that aseqno should be treated as e.g.f.
-            mTypes.set(iseq, EGF);
+            mask |= EGF;
             aNum = aNum.substring(0, aNum.length() - 1); // remove the "!"
           }
-          mSeqs.add(SequenceFactory.sequence(aNum));
+          mTypes.add(mask);
+          final Sequence seq = SequenceFactory.sequence(aNum);
+          if (seq instanceof RationalSequence) {
+            mask |= RAT;
+          }
+          mSeqs.add(seq);
         }
       }
       for (Sequence seq : seqs) { // add sequences from the trailing parameter list
-        mTypes.add((seq instanceof EgfWrapper) ? EGF : OGF);
+        int mask = OGF;
+        if (seq instanceof RationalSequence) {
+          mask |= RAT;
+        }
+        if (seq instanceof EgfWrapper) {
+          mask |= EGF;
+        }
+        mTypes.add(mask);
         mSeqs.add(seq);
       }
       for (int iseq = 0; iseq < mSeqs.size(); ++iseq) { // advance all input sequences to their offset + mDist + 1
@@ -234,8 +249,9 @@ public class PolynomialFieldSequence extends AbstractSequence {
           if (iexp < sourceOffset) {
             terms[iexp] = Q.ZERO;
           } else {
-            terms[iexp] = Q.valueOf(seq.next());
-            if (mTypes.get(iseq) == EGF) {
+            final int sType = mTypes.get(iseq);
+            terms[iexp] = (sType & RAT) != 0 ? ((RationalSequence) seq).nextQ() : Q.valueOf(seq.next());
+            if ((sType & EGF) != 0) {
               terms[iexp] = terms[iexp].divide(Functions.FACTORIAL.z(iexp));
             }
           }
@@ -291,8 +307,9 @@ public class PolynomialFieldSequence extends AbstractSequence {
   private void advanceSeq(final int iseq) {
     Polynomial<Q> pseq = mTerms.get(iseq);
     final int iexp = mNix.get(iseq);
-    Q term = Q.valueOf(mSeqs.get(iseq).next());
-    if (mTypes.get(iseq) == EGF) {
+    final int sType = mTypes.get(iseq);
+    Q term = (sType & RAT) != 0 ? ((RationalSequence) mSeqs.get(iseq)).nextQ() : Q.valueOf(mSeqs.get(iseq).next());
+    if ((sType & EGF) != 0) {
       term = term.divide(Functions.FACTORIAL.z(iexp));
     }
     pseq = RING.add(pseq, RING.monomial(term, iexp));
@@ -406,7 +423,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
    * Compute the next term of the sequence, including any zeroes that are left out by <code>next()</code>.
    * @return next coefficient of the generating function
    */
-  private Z compute() {
+  private Q compute() {
     // now perform a statement like "mA = RING.add(RING.one(), RING.multiply(RING.x(), RING.pow(RING.substitute(mA, RING.multiply(RING.x(), mA, mN), mN), mExpon, mN), mN));"
     // for example: A143046 poly -p "[[0],[1],[0,-1]]" -x ",p1,p2,sub,^3,<1,+"; G.f. satisfies A(x) = 1 + x*A(-x)^3.
     final int m = mN + mDist; // Number of terms to expand to
@@ -653,7 +670,7 @@ public class PolynomialFieldSequence extends AbstractSequence {
         System.out.println("# mFactorial=" + mFactorial + ", mN=" + mN);
       }
     }
-    return ((mGfType & DEN_OGF) == 0) ? result.num() : result.den();
+    return result;
   } // compute
 
   private void fillMap() { //!
@@ -719,22 +736,27 @@ public class PolynomialFieldSequence extends AbstractSequence {
   } //! fillMap
 
   @Override
-  public Z next() {
-    if (mFactor == 1) { // faster for most cases
+  public Q nextQ() {
+    if (mFactor == 1) { // return all terms - faster for most cases
       ++mN;
       return compute();
-    } else {
+    } else { // return only terms with index mN mod mFactor == mModulus
       while (true) {
         ++mN;
-        final Z result = compute();
+        final Q result = compute();
         if (mN % mFactor == mModulus) {
           return result;
         }
       } // while
     }
+  } // nextQ
+
+  @Override
+  public Z next() {
+    final Q result = nextQ();
+    return ((mGfType & DEN_OGF) == 0) ? result.num() : result.den();
   } // next
 
-  /* reflective methods */
   public String[] getPostfix() {
     return mPostStrings;
   }

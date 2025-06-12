@@ -513,4 +513,14 @@ public class Q implements Comparable<Q>, IsInteger, Serializable {
   public static Q valueOf(final Z val) {
     return new Q(val);
   }
+
+  /**
+   * Return a rational number from a string.
+   * @param s a string
+   * @return a rational number with the value <code>s</code>
+   */
+  public static Q valueOf(final String s) {
+    final int slash = s.indexOf('/');
+    return slash < 0 ? new Q(new Z(s)) : new Q(new Z(s.substring(0, slash)), new Z(s.substring(slash + 1)));
+  }
 }

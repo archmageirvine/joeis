@@ -1,12 +1,14 @@
 package irvine.oeis;
 
+import irvine.math.api.RationalSequence;
+import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
  * Return the sequence <code>a(n)</code> of quotients of successive terms of the two underlying sequences.
  * @author Georg Fischer
  */
-public class QuotientSequence extends AbstractSequence {
+public class QuotientSequence extends AbstractSequence implements RationalSequence {
 
   private static final int DEFOFF = 1;
   protected final Sequence mNum;
@@ -65,5 +67,10 @@ public class QuotientSequence extends AbstractSequence {
   @Override
   public Z next() {
     return mNum.next().divide(mDen.next());
+  }
+
+  @Override
+  public Q nextQ() {
+    return new Q(mNum.next(), mDen.next());
   }
 }

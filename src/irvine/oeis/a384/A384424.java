@@ -14,6 +14,8 @@ import irvine.util.string.StringUtils;
  */
 public class A384424 extends Sequence1 {
 
+  // This was used to verify a(6) but is too slow to go further
+
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private Graph mGraph = null;
   private int mN = 0;

@@ -1,8 +1,10 @@
 package irvine.math.lattice;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 
 import irvine.math.LongUtils;
@@ -279,6 +281,83 @@ public class Animal implements Comparable<Animal> {
       }
     }
     return count;
+  }
+
+  public List<Long> edgeLengths(final Lattice lattice) {
+    final int dim = lattice.dimension();
+    if (dim != 2) {
+      throw new UnsupportedOperationException();
+    }
+    final List<Long> res = new ArrayList<>();
+    // Deal with left vertical edges
+    for (final long p : mAnimal) {
+      final long x = lattice.ordinate(p, 0);
+      final long y = lattice.ordinate(p, 1);
+      if (contains(lattice.toPoint(x - 1, y))) {
+        continue; // not a left edge
+      }
+      if (!contains(lattice.toPoint(x, y - 1)) || contains(lattice.toPoint(x - 1, y - 1))) {
+        // top left point
+        long len = 1;
+        long k = y;
+        while (contains(lattice.toPoint(x, ++k)) && !contains(lattice.toPoint(x - 1, k))) {
+          ++len;
+        }
+        res.add(len);
+      }
+    }
+    // Deal with right vertical edges
+    for (final long p : mAnimal) {
+      final long x = lattice.ordinate(p, 0);
+      final long y = lattice.ordinate(p, 1);
+      if (contains(lattice.toPoint(x + 1, y))) {
+        continue; // not a right edge
+      }
+      if (!contains(lattice.toPoint(x, y - 1)) || contains(lattice.toPoint(x + 1, y - 1))) {
+        // top right point
+        long len = 1;
+        long k = y;
+        while (contains(lattice.toPoint(x, ++k)) && !contains(lattice.toPoint(x + 1, k))) {
+          ++len;
+        }
+        res.add(len);
+      }
+    }
+    // Deal with bottom horizontal edge
+    for (final long p : mAnimal) {
+      final long x = lattice.ordinate(p, 0);
+      final long y = lattice.ordinate(p, 1);
+      if (contains(lattice.toPoint(x, y - 1))) {
+        continue; // not a bottom edge
+      }
+      if (!contains(lattice.toPoint(x - 1, y)) || contains(lattice.toPoint(x - 1, y - 1))) {
+        // left bottom point
+        long len = 1;
+        long k = x;
+        while (contains(lattice.toPoint(++k, y)) && !contains(lattice.toPoint(k, y - 1))) {
+          ++len;
+        }
+        res.add(len);
+      }
+    }
+    // Deal with top horizontal edge
+    for (final long p : mAnimal) {
+      final long x = lattice.ordinate(p, 0);
+      final long y = lattice.ordinate(p, 1);
+      if (contains(lattice.toPoint(x, y + 1))) {
+        continue; // not a top edge
+      }
+      if (!contains(lattice.toPoint(x - 1, y)) || contains(lattice.toPoint(x - 1, y + 1))) {
+        // left top point
+        long len = 1;
+        long k = x;
+        while (contains(lattice.toPoint(++k, y)) && !contains(lattice.toPoint(k, y + 1))) {
+          ++len;
+        }
+        res.add(len);
+      }
+    }
+    return res;
   }
 
   /**

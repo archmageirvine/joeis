@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A145481 Primes p such that 2p - 17 is prime.
+ * A145481 Primes p such that 2*p - 17 is prime.
  * @author Georg Fischer
  */
 public class A145481 extends FilterSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384443 allocated for Felix Huber.
+ * A384443 a(n) is the product of the prime digits of n; or 1 if n contains no prime digits.
  * @author Sean A. Irvine
  */
 public class A384443 extends Sequence1 {

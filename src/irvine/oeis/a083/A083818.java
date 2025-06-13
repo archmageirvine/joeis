@@ -5,7 +5,7 @@ package irvine.oeis.a083;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A083818 Numbers n such that 2n-1 is the digit reversal of n.
+ * A083818 Numbers k such that 2k-1 is the digit reversal of k.
  * Lin.rec. signature: (11,-10)
  * @author Georg Fischer
  */

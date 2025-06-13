@@ -4,7 +4,7 @@ package irvine.oeis.a135;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A135640 Powers of 839.
+ * A135640 Powers of 839: a(n) = 839^n.
  * @author Georg Fischer
  */
 public class A135640 extends HolonomicRecurrence {

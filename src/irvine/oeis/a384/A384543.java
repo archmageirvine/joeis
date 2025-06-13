@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384543 allocated for Dar\u00edo Clavijo.
+ * A384543 Number of distinct values from the bitwise operation i XOR j for all integers i and j in the range [1, n].
  * @author Sean A. Irvine
  */
 public class A384543 extends Sequence1 {

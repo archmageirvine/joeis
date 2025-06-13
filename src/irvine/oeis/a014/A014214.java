@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A014214 [ (Pi/2)^n ].
+ * A014214 a(n) = floor((Pi/2)^n).
  * @author Sean A. Irvine
  */
 public class A014214 extends Sequence0 {

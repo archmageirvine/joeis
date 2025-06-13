@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007504;
 
 /**
- * A384644 allocated for Charles L. Hohn.
+ * A384644 a(n) is the least k such that {A007504(1), A007504(2), ..., A007504(k)} mod n = {0,...,n-1}.
  * @author Sean A. Irvine
  */
 public class A384644 extends Sequence1 {

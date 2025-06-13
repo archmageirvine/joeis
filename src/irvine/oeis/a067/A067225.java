@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000290;
 
 /**
- * A067225 Numbers n such that n is a square and remains a square when its leading digit is increased by one.
+ * A067225 Numbers k such that k is a square and remains a square when its leading digit is increased by one.
  * @author Georg Fischer
  */
 public class A067225 extends A000290 {

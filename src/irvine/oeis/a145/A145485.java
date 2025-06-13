@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A145485 Primes p such that 2p - 31 is prime.
+ * A145485 Primes p such that 2*p - 31 is prime.
  * @author Georg Fischer
  */
 public class A145485 extends FilterSequence {

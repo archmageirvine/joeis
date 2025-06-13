@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a000.A000978;
 
 /**
- * A127936 Numbers n such that 1 + Sum_{i=1..n} 2^(2i-1) is prime.
+ * A127936 Numbers k such that 1 + Sum_{i=1..k} 2^(2*i-1) is prime.
  * @author Georg Fischer
  */
 public class A127936 extends AbstractSequence {

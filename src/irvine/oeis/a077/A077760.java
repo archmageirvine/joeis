@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A077760 Nonsquares which in at least two ways are the product of two numbers with the same digits (leading zeros are forbidden).
+ * A077760 Numbers which in at least two ways are the product of two distinct numbers with the same digits (leading zeros are forbidden).
  * @author Sean A. Irvine
  */
 public class A077760 extends Sequence1 {

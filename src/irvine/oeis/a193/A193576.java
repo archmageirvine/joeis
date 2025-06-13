@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A193576 T(n)^3+n^3 where T(n) is a triangular number.
+ * A193576 a(n) = T(n)^3 + n^3 where T(n) is a triangular number.
  * @author Georg Fischer
  */
 public class A193576 extends HolonomicRecurrence {

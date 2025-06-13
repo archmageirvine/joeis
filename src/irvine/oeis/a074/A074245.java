@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001599;
 
 /**
- * A074245 Numbers n such that sigma(n) is a harmonic number.
+ * A074245 Numbers k such that sigma(k) is a harmonic number.
  * @author Sean A. Irvine
  */
 public class A074245 extends Sequence1 {

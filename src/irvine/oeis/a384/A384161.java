@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a030.A030078;
 
 /**
- * A384161 allocated for Abhiram R Devesh.
+ * A384161 Sum of next a(n) successive prime cubes is prime.
  * @author Sean A. Irvine
  */
 public class A384161 extends A030078 {

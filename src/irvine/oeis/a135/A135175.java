@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A135175 5^p + 3^p - 2^p, where p = prime(n).
+ * A135175 a(n) = 5^p + 3^p - 2^p, where p = prime(n).
  * @author Georg Fischer
  */
 public class A135175 extends LambdaSequence {

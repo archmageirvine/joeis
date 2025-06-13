@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A027983 T(n,n+1) + T(n,n+2) + ... + T(n,2n), T given by A027960.
+ * A027983 Duplicate of A027974.
  * @author Georg Fischer
  */
 public class A027983 extends GeneratingFunctionSequence implements Conjectural {

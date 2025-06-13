@@ -5,7 +5,7 @@ package irvine.oeis.a188;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A188681 a(n) = binomial(3n,n)^2/(2n+1).
+ * A188681 a(n) = binomial(3*n,n)^2/(2*n+1).
  * @author Georg Fischer
  */
 public class A188681 extends HolonomicRecurrence {

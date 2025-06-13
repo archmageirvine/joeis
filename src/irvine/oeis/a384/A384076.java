@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a193.A193678;
 
 /**
- * A384076 allocated for Clark Kimberling.
+ * A384076 a(n) = pos(M(n)), where M(n) is the n X n circulant matrix with (row 1) = (1,3,5,7, ..., 2n - 1), and pos(M(n)) is the positive part of the determinant of M(n); see A380661.
  * @author Sean A. Irvine
  */
 public class A384076 extends Sequence1 {

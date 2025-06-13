@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A384545 allocated for Ken Clements.
+ * A384545 Smallest prime(n)-smooth multiplier, m, such that both m*(prime(n)#)-1 and m*(prime(n)#)+1 are prime.
  * @author Sean A. Irvine
  */
 public class A384545 extends A000040 {

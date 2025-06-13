@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A187337 Sum{floor(kn/7), k=1,2,3,4,5,6}.
+ * A187337 a(n) = Sum_{k=1..6} floor(k*n/7).
  * @author Georg Fischer
  */
 public class A187337 extends GeneratingFunctionSequence implements Conjectural {

@@ -5,7 +5,7 @@ import irvine.oeis.a014.A014574;
 import irvine.oeis.a055.A055932;
 
 /**
- * A384530 allocated for Ken Clements.
+ * A384530 Intersection of A055932 and A014574.
  * @author Sean A. Irvine
  */
 public class A384530 extends IntersectionSequence {

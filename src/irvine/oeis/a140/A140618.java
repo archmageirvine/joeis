@@ -4,7 +4,7 @@ package irvine.oeis.a140;
 import irvine.oeis.prime.BinaryQuadraticForm;
 
 /**
- * A140618 Primes of the form 20x^2+4xy+23y^2.
+ * A140618 Primes of the form 20*x^2+4*x*y+23*y^2.
  * @author Georg Fischer
  */
 public class A140618 extends BinaryQuadraticForm {

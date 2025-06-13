@@ -4,7 +4,7 @@ package irvine.oeis.a167;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A167332 Totally multiplicative sequence with a(p) = 2*(4p-1) = 8p-2 for prime p.
+ * A167332 Totally multiplicative sequence with a(p) = 2*(4*p-1) = 8*p-2 for prime p.
  * @author Georg Fischer
  */
 public class A167332 extends MultiplicativeSequence {

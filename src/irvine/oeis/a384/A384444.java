@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384444 allocated for Felix Huber.
+ * A384444 Positive integers k for which the sum of their digits equals the product of their prime digits.
  * @author Sean A. Irvine
  */
 public class A384444 extends Sequence1 {

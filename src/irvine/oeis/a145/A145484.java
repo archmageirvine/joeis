@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A145484 Primes p such that 2p - 29 is a positive prime.
+ * A145484 Primes p such that 2*p - 29 is a positive prime.
  * @author Georg Fischer
  */
 public class A145484 extends FilterSequence {

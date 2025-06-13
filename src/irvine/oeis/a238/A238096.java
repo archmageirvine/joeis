@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A238096 Sum_{k=2..n} floor(n/k)*floor((tau(k)+1)/2), where tau = A000005.
+ * A238096 a(n) = Sum_{k=2..n} floor(n/k)*floor((tau(k)+1)/2), where tau = A000005.
  * @author Georg Fischer
  */
 public class A238096 extends LambdaSequence {

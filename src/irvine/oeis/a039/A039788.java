@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A039788 phi(a(n)) is equal to the product of (the sum of prime factors and the sum of exponents) of (a(n)).
+ * A039788 Numbers k such that phi(k) is equal to the product of (the sum of prime factors and the sum of exponents) of k.
  * @author Sean A. Irvine
  */
 public class A039788 extends Sequence1 {

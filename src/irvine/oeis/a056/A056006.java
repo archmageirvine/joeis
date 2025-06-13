@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A056006 Numbers n such that n | sigma(n) + 2.
+ * A056006 Numbers k such that k | sigma(k) + 2.
  * @author Sean A. Irvine
  */
 public class A056006 extends Sequence1 {

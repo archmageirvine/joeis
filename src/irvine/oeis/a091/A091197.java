@@ -4,7 +4,7 @@ package irvine.oeis.a091;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A091197 Denominators of Taylor series expansion of 3*sin(2*x)/(2*(2+cos(2*x))) (with 0&apos;s omitted).
+ * A091197 Denominators of Taylor series expansion of 3*sin(2*x)/(2*(2+cos(2*x))) (with 0's omitted).
  * @author Georg Fischer
  */
 public class A091197 extends PolynomialFieldSequence {

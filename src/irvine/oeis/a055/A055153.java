@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A055153 Numbers n such that sigma(n) = 7n/2.
+ * A055153 Numbers k such that sigma(k) = 7k/2.
  * @author Georg Fischer
  */
 public class A055153 extends Sequence1 {

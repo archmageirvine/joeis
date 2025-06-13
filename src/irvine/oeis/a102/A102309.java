@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000217;
 import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
- * A102309 a(n) = Sum_{d divides n} moebius(d) * C(n/d,2).
+ * A102309 a(n) = Sum_{d divides n} moebius(d) * binomial(n/d,2).
  * @author Georg Fischer
  */
 public class A102309 extends AbstractSequence {

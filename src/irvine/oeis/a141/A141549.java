@@ -7,7 +7,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a033.A033880;
 
 /**
- * A141549 Numbers n whose deficiency is 12: 2n - sigma(n) = 12.
+ * A141549 Numbers k whose deficiency is 12: 2k - sigma(k) = 12.
  * @author Georg Fischer
  */
 public class A141549 extends FilterNumberSequence {

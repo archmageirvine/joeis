@@ -8,7 +8,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a051.A051903;
 
 /**
- * A384655 allocated for Amiram Eldar.
+ * A384655 a(n) = Sum_{k=1..n} A051903(gcd(n,k)).
  * @author Georg Fischer
  */
 public class A384655 extends LambdaSequence {

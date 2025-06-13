@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A145483 Primes p such that 2p - 23 is prime.
+ * A145483 Primes p such that 2*p - 23 is prime.
  * @author Georg Fischer
  */
 public class A145483 extends FilterSequence {

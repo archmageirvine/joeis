@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A090704 Numbers n such that n*factorial(n)-1 is prime.
+ * A090704 Numbers k such that k*k! - 1 is prime.
  * @author Georg Fischer
  */
 public class A090704 extends FilterNumberSequence {

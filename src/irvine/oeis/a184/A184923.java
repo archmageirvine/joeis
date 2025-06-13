@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 /**
- * A184923 n+[rn/u]+[sn/u]+[tn/u], where []=floor and r=2^(1/2), s=r+1, t=r+2, u=r+3.
+ * A184923 a(n) = n+[r*n/u]+[s*n/u]+[t*n/u], where []=floor and r=2^(1/2), s=r+1, t=r+2, u=r+3.
  * @author Georg Fischer
  */
 public class A184923 extends FloorSequence {

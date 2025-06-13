@@ -8,7 +8,7 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A382348 allocated for Sergey Pupyrev.
+ * A382348 Number of connected bipartite graphs with n edges.
  * @author Sean A. Irvine
  */
 public class A382348 extends Sequence1 {

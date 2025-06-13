@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A384618 allocated for Alain Rocchelli.
+ * A384618 Primes preceded and followed by gaps whose quotient (value greater or equal to 1) is greater than 2.
  * @author Sean A. Irvine
  */
 public class A384618 extends A000040 {

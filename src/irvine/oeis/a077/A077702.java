@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.math.z.Z;
 
 /**
- * A077702 a(1) = 5, a(n)= smallest multiple of a(n-1) that contains all the digits of a(n-1). Or which can be obtained by inserting digits anywhere in a permutation of digits of a(n-1). (prefix,suffix or insertion). a(n) is not equal to 10*a(n-1).
+ * A077702 a(1) = 5; a(n) is the smallest multiple of a(n-1) that contains all the digits of a(n-1) and is not a multiple of 10.
  * @author Sean A. Irvine
  */
 public class A077702 extends A077696 {

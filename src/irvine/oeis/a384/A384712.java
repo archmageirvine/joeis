@@ -3,7 +3,7 @@ package irvine.oeis.a384;
 import irvine.oeis.GraphWalkSequence;
 
 /**
- * A384677.
+ * A384712 Expansion of (1+2*x) / (1-2*x-6*x^2).
  * @author Sean A. Irvine
  */
 public class A384712 extends GraphWalkSequence {

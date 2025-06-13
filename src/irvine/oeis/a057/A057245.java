@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A057245 Numbers n such that n | Sum_{k=1..n} k!.
+ * A057245 Numbers m such that m | Sum_{k=1..m} k!.
  * @author Sean A. Irvine
  */
 public class A057245 extends Sequence1 {

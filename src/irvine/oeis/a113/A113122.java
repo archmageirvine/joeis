@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A113122 Sum of the first n Fibonacci numbers, in ascending order, as bases, with the same, in descending order, as exponents.
+ * A113122 a(n) = Sum_{i=1..n} F(i)^F(n-i+1).
  * @author Georg Fischer
  */
 public class A113122 extends Sequence1 {

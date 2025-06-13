@@ -4,7 +4,7 @@ package irvine.oeis.a091;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A091154 Numerator of Maclaurin expansion of (t*sqrt(t^2+1) + arcsinh(t))/2, the arc length of Archimedes&apos; spiral.
+ * A091154 Numerator of Maclaurin expansion of (t*sqrt(t^2+1) + arcsinh(t))/2, the arc length of Archimedes' spiral.
  * @author Georg Fischer
  */
 public class A091154 extends PolynomialFieldSequence {

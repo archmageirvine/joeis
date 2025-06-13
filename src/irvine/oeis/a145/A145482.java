@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A145482 Primes p such that 2p - 19 is prime.
+ * A145482 Primes p such that 2*p - 19 is prime.
  * @author Georg Fischer
  */
 public class A145482 extends FilterSequence {

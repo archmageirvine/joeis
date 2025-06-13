@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000142;
 
 /**
- * A049432 Numbers n such that n!-(n-1)!+1 is prime.
+ * A049432 Numbers k such that k! - (k-1)! + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A049432 extends A000142 {

@@ -3,7 +3,7 @@ package irvine.oeis.a384;
 import irvine.oeis.LinearCongruentialGenerator;
 
 /**
- * A383940.
+ * A384777 Square array A(n,k), n &gt;= 0, k &gt;= 0, read by antidiagonals downwards, where column k is the expansion of B(x)^k, where B(x) is the g.f. of A382450.
  * @author Sean A. Irvine
  */
 public class A384777 extends LinearCongruentialGenerator {

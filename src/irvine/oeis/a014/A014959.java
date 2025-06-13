@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A014959 Integers n such that n divides 22^n - 1.
+ * A014959 Integers k such that k divides 22^k - 1.
  * @author Sean A. Irvine
  */
 public class A014959 extends Sequence1 {

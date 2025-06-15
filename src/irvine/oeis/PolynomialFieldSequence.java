@@ -629,6 +629,10 @@ public class PolynomialFieldSequence extends AbstractSequence implements Rationa
           --top;
           mStack.set(top, RING.exp(RING.multiply(RING.log(mStack.get(top), m), mStack.get(top + 1), m), m));
           break;
+        case 54:  // ".*" - dot product, hadamardMultiply: multiply coefficients
+          --top;
+          mStack.set(top, RING.hadamardMultiply(mStack.get(top), mStack.get(top + 1)));
+          break;
         default: // should not occur with proper postfix expressions
           throw new RuntimeException("invalid postfix code " + ix);
 // The following cannot be done exactly over the rationals or are not yet available
@@ -729,6 +733,7 @@ public class PolynomialFieldSequence extends AbstractSequence implements Rationa
     POST_MAP.put("ellipticE", 51);
     POST_MAP.put("ellipticK", 52);
     POST_MAP.put("pow", 53);
+    POST_MAP.put(".*", 54);
     POST_MAP.put("B", 55);
     POST_MAP.put("C", 56);
     POST_MAP.put("D", 57);

@@ -2,7 +2,7 @@ package irvine.oeis;
 
 import java.util.HashMap;
 
-import irvine.math.z.Z;
+import irvine.math.q.Q;
 
 /**
  * Test the computation of the coefficients of a generating function A(x) 
@@ -11,7 +11,6 @@ import irvine.math.z.Z;
  */
 public final class PolynomialFieldTest {
 
-  static int sDebug = 0;
   private final HashMap<String, Integer> mPrios = new HashMap<>(16);
   private int mPrio;
   private final String mSep = ","; // default separator for postfix polish notation
@@ -22,8 +21,8 @@ public final class PolynomialFieldTest {
   private void assignPrios() {
     mPrio = 0;
     setPrio("+", "-");
-    setPrio("*", "/");
-    setPrio("^");
+    setPrio("*", "/", ".*");
+    setPrio("^", "pow");
     setPrio("\'");
     setPrio("~", "(", ")"); // unary minus
   } // assignPrios
@@ -197,7 +196,7 @@ public final class PolynomialFieldTest {
    * <li>-b print in b-file format instead of comma separated list (default false)</li>
    * <li>-d level debugging level (default 0=none), 1=some, 2=more</li>
    * <li>-i additional degree (default 0)</li>
-   * <li>-n numTerms number of terms to be computed (default: 16)</li>
+   * <li>-n numTerms number of terms to be computed (default: 10)</li>
    * <li>-o offset, first index (default 0)</li>
    * <li>-t type of the generating function: 0 = ordinary (default), 1 = exponential</li>
    * </ul>
@@ -211,7 +210,7 @@ public final class PolynomialFieldTest {
     int debug = 0;
     int dist = 0;
     int gfType = 0;
-    int numTerms = 16;
+    int numTerms = 10;
     int offset = 0;
     int iarg = 0;
     String polyList = "[[1]]";
@@ -264,7 +263,7 @@ public final class PolynomialFieldTest {
     int ind = offset - 1;
     while (--numTerms >= 0) {
       ++ind;
-      final Z term = prs.next();
+      final Q term = prs.nextQ();
       if (bfile) {
         System.out.print(ind + " " + term.toString() + "\n");
       } else {

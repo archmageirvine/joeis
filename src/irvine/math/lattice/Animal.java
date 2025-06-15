@@ -283,6 +283,12 @@ public class Animal implements Comparable<Animal> {
     return count;
   }
 
+  /**
+   * Return a list of lengths of the edges in the animal.
+   * Probably only works for the square lattice.
+   * @param lattice dimension 2 lattice
+   * @return edge lengths
+   */
   public List<Long> edgeLengths(final Lattice lattice) {
     final int dim = lattice.dimension();
     if (dim != 2) {

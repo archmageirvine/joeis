@@ -39,8 +39,7 @@ public class A384744 extends FiniteSequence {
 
   private static List<Z> build() {
     final ArrayList<Z> lst = new ArrayList<>();
-    Z v = Z.ZERO;
-    search(lst, v);
+    search(lst, Z.ZERO);
     Collections.sort(lst);
     return lst;
   }

@@ -131,12 +131,12 @@ public class RationalRecurrence extends AbstractSequence implements RationalSequ
         mPolyList.add(new Q[] {new Q(polys[k])});
       } // for k
     } else { // holonomic case, vector list "[[0,1,2],[0],[17,0,18]]"
-      final String[] polys = matrix.substring(start, behind).split("]\\s*,\\s*\\[");
+      final String[] polys = matrix.substring(start, behind).split("\\]\\s*,\\s*\\[");
       for (int k = 0; k < polys.length; ++k) {
         mPolyList.add(QUtils.toQ(polys[k]));
       } // for k
     }
-    mInitTerms = (initTerms.isEmpty() || "[]".equals(initTerms)) ? new Q[] { Q.ONE } : QUtils.toQ(initTerms);
+    mInitTerms = (initTerms.isEmpty() || "[]".equals(initTerms)) ? new Q[] {Q.ONE} : QUtils.toQ(initTerms.replaceAll("[\\[\\]]", ""));
     initialize();
     mGfType = gfType;
   } // Constructor
@@ -153,7 +153,7 @@ public class RationalRecurrence extends AbstractSequence implements RationalSequ
    * @param nDist index distance between the highest recurrence element and a[n]: 0..k-1
    */
   public RationalRecurrence(final int offset, final String matrix, final String prefix, final String initTerms, final int nDist) {
-    this(offset, matrix, (prefix + "," + initTerms).replaceAll("\\s*]\\s*,\\s*\\[\\s*", ","), nDist);
+    this(offset, matrix, (prefix + "," + initTerms).replaceAll("\\s*\\]\\s*,\\s*\\[\\s*", ","), nDist);
   } // Constructor
 
   /**
@@ -168,7 +168,7 @@ public class RationalRecurrence extends AbstractSequence implements RationalSequ
    */
   public RationalRecurrence(final int offset, final String matrix, final String prefix, final String initTerms) {
     this(offset, matrix, ((prefix.isEmpty() || "[]".equals(prefix) ? "" : prefix + ",")
-      + initTerms).replaceAll("\\s*]\\s*,\\s*\\[\\s*", ","), 0);
+      + initTerms).replaceAll("\\s*\\]\\s*,\\s*\\[\\s*", ","), 0);
   } // Constructor
 
   /**

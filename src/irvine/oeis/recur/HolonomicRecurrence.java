@@ -147,7 +147,7 @@ public class HolonomicRecurrence extends AbstractSequence {
         mPolyList.add(new Z[] {new Z(polys[k])});
       } // for k
     } else { // holonomic case, vector list "[[0,1,2],[0],[17,0,18]]"
-      final String[] polys = matrix.substring(start, behind).split("]\\s*,\\s*\\[");
+      final String[] polys = matrix.substring(start, behind).split("\\]\\s*,\\s*\\[");
       for (int k = 0; k < polys.length; ++k) {
         if (sDebug >= 1) {
           System.out.println("polys[" + k + "]=" + polys[k]);
@@ -155,7 +155,7 @@ public class HolonomicRecurrence extends AbstractSequence {
         mPolyList.add(ZUtils.toZ(polys[k]));
       } // for k
     }
-    mInitTerms = (initTerms.isEmpty() || "[]".equals(initTerms)) ? new Z[] { Z.ONE } : ZUtils.toZ(initTerms);
+    mInitTerms = (initTerms.isEmpty() || "[]".equals(initTerms)) ? new Z[] {Z.ONE} : ZUtils.toZ(initTerms.replaceAll("[\\[\\]]", ""));
     initialize();
     mGfType = gfType;
   } // Constructor
@@ -173,7 +173,7 @@ public class HolonomicRecurrence extends AbstractSequence {
    * @param nDist     index distance between the highest recurrence element and a[n]: 0..k-1
    */
   public HolonomicRecurrence(final int offset, final String matrix, final String prefix, final String initTerms, final int nDist) {
-    this(offset, matrix, (prefix + "," + initTerms).replaceAll("\\s*]\\s*,\\s*\\[\\s*", ","), nDist);
+    this(offset, matrix, (prefix + "," + initTerms).replaceAll("\\s*\\]\\s*,\\s*\\[\\s*", ","), nDist);
   } // Constructor
 
   /**
@@ -189,7 +189,7 @@ public class HolonomicRecurrence extends AbstractSequence {
    */
   public HolonomicRecurrence(final int offset, final String matrix, final String prefix, final String initTerms) {
     this(offset, matrix, ((prefix.isEmpty() || "[]".equals(prefix) ? "" : prefix + ",")
-        + initTerms).replaceAll("\\s*]\\s*,\\s*\\[\\s*", ","), 0);
+      + initTerms).replaceAll("\\s*\\]\\s*,\\s*\\[\\s*", ","), 0);
   } // Constructor
 
   /**

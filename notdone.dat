@@ -582,7 +582,6 @@ A007109 Number of labeled 2-regular oriented graphs with n nodes, insufficient d
 A007110 Number of connected labeled 2-regular oriented graphs with n nodes, insufficient detail
 A007111 Number of unlabeled graphs with n nodes and degree >= 3
 A007112 Number of connected unlabeled graphs with n nodes and degree >= 3
-A007117 a(n)*2^(n+2) + 1 divides n-th Fermat number (hard to do sensibly)
 A007124 Number of strength 1 Eulerian graphs with n nodes, 2 of odd degree
 A007125 Number of connected strength-1 Eulerian graphs with n nodes, 2 of odd degree
 A007127 Number of unlabeled strength-2 Eulerian graphs with n nodes

@@ -31,7 +31,11 @@ public class A006218 extends PartialSumSequence implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return Integers.SINGLETON.sum(1, n.intValueExact(), n::divide);
+    Z sum = Z.ZERO;
+    for (Z k = Z.ONE; k.compareTo(n) <= 0; k = k.add(1)) {
+      sum = sum.add(n.divide(k));
+    }
+    return sum;
   }
 
   @Override

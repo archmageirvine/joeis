@@ -11,7 +11,7 @@ import irvine.util.array.LongDynamicIntArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A384428.
+ * A384428 a(n) is the minimal area of a polyomino without holes having a product of edge lengths equal to n, or 0 if no solution is possible.
  * @author Sean A. Irvine
  */
 public class A384428 extends Sequence1 {

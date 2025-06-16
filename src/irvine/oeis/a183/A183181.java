@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A183184.
+ * A183181 Numbers k such that (7*10^(2*k+1) - 9*10^k - 7)/9 is prime.
  * @author Sean A. Irvine
  */
 public class A183181 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a165;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A165402 a(n) = (10^n*2 - 11)/9.
+ * A165402 a(n) = (2*10^n - 11)/9.
  * @author Georg Fischer
  */
 public class A165402 extends GeneratingFunctionSequence {

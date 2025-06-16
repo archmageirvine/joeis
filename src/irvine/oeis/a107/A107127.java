@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A183184.
+ * A107127 Numbers n such that (10^(2n+1)+54*10^n-1)/9 is prime.
  * @author Sean A. Irvine
  */
 public class A107127 extends Sequence1 {

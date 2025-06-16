@@ -2591,3 +2591,21 @@ A077556 Meandric numbers for an undirected line crossing two perpendicular roads
 A077589 Decimal expansion of real part of the infinite power tower of i.
 A077590 Decimal expansion of imaginary part of the infinite power tower of i.
 A077600 Number of real roots for the n-th Moebius polynomial, M(n,x), which satisfies M(n,-1)=mu(n) the Moebius function of n.
+A077818 a(n) is the numerator of the probability P(n) of the occurrence of a 3-dimensional self-trapping walk of length n.
+A077819 a(n) is the exponent of 3 in the denominator of the probability P(n) of the occurrence of a 3-dimensional self-trapping walk of length n.
+A077820 a(n) is the exponent of 2 in the denominator of the probability P(n) of the occurrence of a 3-dimensional self-trapping walk of length n.
+A078073 Continued fraction for constant defined in A065473.
+A078076 Continued fraction expansion of Product_{p prime} (1 - 1/(p^2-2)).
+A078077 Continued fraction expansion of Product_{p prime} (1 + 1/(p^2+p-1)) (too slow).
+A078078 Continued fraction for constant defined in A065464 (too slow).
+A078079 Continued fraction expansion of Product_{p prime}(1 - p/(p^3-1)).
+A078080 Continued fraction for constant defined in A065493 (too slow)
+A078081 Continued fraction expansion of Product_{p prime} (1 - 1/(p^2+p-1)).
+A078082 Continued fraction expansion of Product_{p prime} (1 - 1/(p*(p+1))) (too slow)
+A078083 Continued fraction expansion of Product_{p prime} (1 - 1/(p^5*(p+1))). (too slow)
+A078085 Continued fraction expansion of Product_{p prime} (1 - 1/(p^3*(p+1))).
+A078086 Continued fraction expansion of Product_{p prime}(1 - 1/(p^2*(p^2-1))).
+A078087 Continued fraction expansion of Product_{p prime} (1 - 1/(p^2*(p+1))).
+A078088 Continued fraction expansion of 5 * Pi^2 * A065476 / 48.
+A078089 Continued fraction expansion of Product_{p prime >= 3} (1 - 1/(p^2-p-1)).
+A078091 Continued fraction for constant defined in A065472.

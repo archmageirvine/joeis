@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a368.A368921;
 
 /**
- * A348329 Numbers k such that k&apos; = k&apos;&apos;, where &apos; is the arithmetic derivative.
+ * A348329 Numbers k such that k' = k'', where ' is the arithmetic derivative.
  * @author Georg Fischer
  */
 public class A348329 extends FilterPositionSequence {

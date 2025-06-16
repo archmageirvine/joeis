@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A077763.
+ * A383895 Number of spiny partitions with exactly n parts.
  * @author Sean A. Irvine
  */
 public class A383895 extends Sequence0 {

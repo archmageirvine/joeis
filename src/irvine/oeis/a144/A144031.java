@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000012;
 import irvine.oeis.a002.A002321;
 
 /**
- * A144031 INVERT transform of A002321, Mertens&apos;s function.
+ * A144031 INVERT transform of A002321, Mertens's function.
  * new A002321(), new A000012()
  * @author Georg Fischer
  */

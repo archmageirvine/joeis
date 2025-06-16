@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A384424 allocated for Yifan Xie.
+ * A384424 The maximal possible number of 'good' steps in a Hamiltonian cycle on the n X n king's graph, as is specified in the comments.
  * @author Sean A. Irvine
  */
 public class A384424 extends Sequence1 {

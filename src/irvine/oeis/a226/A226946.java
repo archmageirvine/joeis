@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a034.A034017;
 
 /**
- * A226946 Numbers that can&apos;t be written as x^2 + x*y + y^2, with 0 &lt;= x &lt;= y and gcd(x,y) = 1.
+ * A226946 Numbers that can't be written as x^2 + x*y + y^2, with 0 &lt;= x &lt;= y and gcd(x,y) = 1.
  * @author Georg Fischer
  */
 public class A226946 extends ComplementSequence {

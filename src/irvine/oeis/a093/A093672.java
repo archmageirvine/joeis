@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a086.A086122;
 
 /**
- * A093672 Primes of the form (7 * 10^k - 1)/3.
+ * A093672 Primes of the form (7*10^k - 1)/3.
  * @author Georg Fischer
  */
 public class A093672 extends A086122 {

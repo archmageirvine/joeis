@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000984;
 import irvine.oeis.a001.A001477;
 
 /**
- * A213853 Rectangular array:  (row n) = b**c, where b(h) = h, c(h) = binomial(2*n-4+2*h,n-2+h), n&gt;=1, h&gt;=1, and ** = convolution.
+ * A213853 Rectangular array: (row n) = b**c, where b(h) = h, c(h) = binomial(2*n-4+2*h,n-2+h), n&gt;=1, h&gt;=1, and ** = convolution.
  * @author Georg Fischer
  */
 public class A213853 extends A213500 {

@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a368.A368922;
 
 /**
- * A334261 Numbers m that are solutions of the arithmetic differential equation 2m&quot; - m&apos; - 4 = 0.
+ * A334261 Numbers m that are solutions of the arithmetic differential equation 2m" - m' - 4 = 0.
  * @author Georg Fischer
  */
 public class A334261 extends FilterPositionSequence {

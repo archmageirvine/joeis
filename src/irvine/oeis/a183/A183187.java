@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A183176.
+ * A183187 Numbers k such that 10^(2k+1)-10^k-1 is prime.
  * @author Sean A. Irvine
  */
 public class A183187 extends FilterNumberSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a034.A034444;
 
 /**
- * A318912 Expansion of e.g.f. Product_{k&gt;=1} 1/(1 - x^k)^(mu(k)^2/k), where mu = M√∂bius function (A008683).
+ * A318912 Expansion of e.g.f. Product_{k&gt;=1} 1/(1 - x^k)^(mu(k)^2/k), where mu = M\u00f6bius function (A008683).
  * new A034444()
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077763.
+ * A077798 Palindromic wing primes (a.k.a. near-repdigit palindromic primes) of the general form r*(10^d - 1)/9 + (m-r)*10^floor(d/2) where d is the number of digits (an odd number &gt; 1), r is the repeated digit, and m (different from r) is the middle digit.
  * @author Sean A. Irvine
  */
 public class A077798 extends Sequence1 {

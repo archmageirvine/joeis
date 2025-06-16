@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077763.
+ * A077799 Numbers m such that a smoothly undulating palindromic prime of the form (rs*10^m-sr)/99 exists, where r and s are two distinct digits and rs and sr denote concatenations of those digits.
  * @author Sean A. Irvine
  */
 public class A077799 extends Sequence1 {

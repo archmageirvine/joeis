@@ -4,7 +4,7 @@ package irvine.oeis.a364;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A364565 Numbers k at which point A364557 (the M√∂bius transform of A005941) is equal to A000010 (Euler phi function).
+ * A364565 Numbers k at which point A364557 (the M\u00f6bius transform of A005941) is equal to A000010 (Euler phi function).
  * @author Georg Fischer
  */
 public class A364565 extends FilterPositionSequence {

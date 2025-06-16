@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A069469 Numbers n such that prime(reversal(n)) = reversal(prime(n)). Ignore leading 0's.
+ * A069469 Numbers k such that prime(reversal(k)) = reversal(prime(k)). Ignore leading 0's.
  * @author Sean A. Irvine
  */
 public class A069469 extends FilterPositionSequence {

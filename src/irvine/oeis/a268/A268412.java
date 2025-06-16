@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a069.A069010;
 
 /**
- * A268412 Balanced evil numbers: numbers with an even number of runs of 1&apos;s in their binary expansion.
+ * A268412 Balanced evil numbers: numbers with an even number of runs of 1's in their binary expansion.
  * @author Georg Fischer
  */
 public class A268412 extends FilterPositionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A253206 Coefficients of the Dirichlet series for zeta(5s)/zeta(s).
+ * A253206 Coefficients of the Dirichlet series for zeta(5*s)/zeta(s).
  * @author Georg Fischer
  */
 public class A253206 extends MultiplicativeSequence {

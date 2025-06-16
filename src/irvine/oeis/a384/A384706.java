@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077763.
+ * A384706 Integers y such that there exists an integer 0 &lt; x &lt; y such that y/sigma(x) + x/sigma(y) = 1.
  * @author Sean A. Irvine
  */
 public class A384706 extends Sequence1 {

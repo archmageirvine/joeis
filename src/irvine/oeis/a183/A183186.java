@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A183184.
+ * A183186 Numbers k such that 10^(2k+1) - 4*10^k - 1 is prime.
  * @author Sean A. Irvine
  */
 public class A183186 extends Sequence1 {

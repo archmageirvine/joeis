@@ -6,7 +6,7 @@ import irvine.oeis.a091.A091823;
 import irvine.oeis.prime.PrimeSubsequence;
 
 /**
- * A187677 Primes of the form 8k^2 + 6k - 1 for positive k.
+ * A187677 Primes of the form 8*k^2 + 6*k - 1 for positive k.
  *
  * @author Georg Fischer
  */

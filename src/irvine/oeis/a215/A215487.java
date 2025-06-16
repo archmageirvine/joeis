@@ -5,7 +5,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A215487 Numbers n such that (7^n - 2^n)/5 is prime.
+ * A215487 Numbers k such that (7^k - 2^k)/5 is prime.
  * @author Georg Fischer
  */
 public class A215487 extends PrimePositionSubsequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077763.
+ * A077815 2^phi(n) mod n^2, where phi is Euler's totient function A000010.
  * @author Sean A. Irvine
  */
 public class A077815 extends Sequence1 {

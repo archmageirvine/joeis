@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a381.A381767;
 
 /**
- * A382131 allocated for Mike Sheppard.
+ * A382131 Complement of A381767.
  * @author Sean A. Irvine
  */
 public class A382131 extends ComplementSequence {

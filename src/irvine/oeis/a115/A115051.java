@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A115051 Number of distinct prime factors of F(n + L(n)) where F(n) is the Fibonacci number and L(n) is the Lucas number and n &gt;= 2.
+ * A115051 Number of distinct prime factors of F(n + L(n)) where F(n) is the Fibonacci number and L(n) is the Lucas number.
  * @author Georg Fischer
  */
 public class A115051 extends LambdaSequence {

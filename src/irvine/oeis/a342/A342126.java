@@ -6,7 +6,7 @@ import irvine.oeis.a087.A087734;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A342126 The binary expansion of a(n) corresponds to that of n where all the 1&apos;s have been replaced by 0&apos;s except in the first run of 1&apos;s.
+ * A342126 The binary expansion of a(n) corresponds to that of n where all the 1's have been replaced by 0's except in the first run of 1's.
  * @author Georg Fischer
  */
 public class A342126 extends SingleTransformSequence {

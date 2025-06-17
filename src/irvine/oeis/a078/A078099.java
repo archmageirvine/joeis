@@ -6,16 +6,25 @@ import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A078099 Array T(m,n) read by antidiagonals: T(m,n) = number of ways of 3-coloring an m X n grid (m &gt;= 1, n &gt;= 1).
  * @author Sean A. Irvine
  */
-public class A078099 extends Sequence1 {
+public class A078099 extends AbstractSequence {
 
   private int mN = 0;
   private int mM = 0;
+
+  protected A078099(final int offset) {
+    super(offset);
+  }
+
+  /** Construct the sequence. */
+  public A078099() {
+    this(1);
+  }
 
   private final MemoryFunction1<Matrix<Z>> mMat = new MemoryFunction1<>() {
     @Override

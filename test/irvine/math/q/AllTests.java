@@ -17,6 +17,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(RationalsTest.class);
     suite.addTestSuite(RationalUnityExtensionTest.class);
     suite.addTestSuite(QTest.class);
+    suite.addTestSuite(QUtilsTest.class);
     return suite;
   }
 

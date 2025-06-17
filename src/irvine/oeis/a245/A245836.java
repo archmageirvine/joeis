@@ -5,7 +5,7 @@ import irvine.oeis.a053.A053398;
 import irvine.oeis.triangle.RowSumSequence;
 
 /**
- * A245836 Row sums in triangle A053398 (Kopper&apos;s Nim values).
+ * A245836 Row sums in triangle A053398 (Kopper's Nim values).
  * @author Georg Fischer
  */
 public class A245836 extends RowSumSequence {

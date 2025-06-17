@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A259609 G.f. A(x) satisfies: A&apos;(x)/2 = Series_Reversion( x - x^2*A&apos;(x) - 2*x*A(x) ).
+ * A259609 G.f. A(x) satisfies: A'(x)/2 = Series_Reversion( x - x^2*A'(x) - 2*x*A(x) ).
  * @author Georg Fischer
  */
 public class A259609 extends Sequence2 {

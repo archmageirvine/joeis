@@ -6,7 +6,7 @@ import irvine.oeis.a191.A191161;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A255242 Calculate the aliquot parts of a number n and take their sum. Then repeat the process calculating the aliquot parts of all the previous aliquot parts and add their sum to the previous one. Repeat the process until the sum to be added is zero. Sequence list
+ * A255242 Calculate the aliquot parts of a number n and take their sum. Then repeat the process calculating the aliquot parts of all the previous aliquot parts and add their sum to the previous one. Repeat the process until the sum to be added is zero. Sequence lists these sums.
  * @author Georg Fischer
  */
 public class A255242 extends SingleTransformSequence {

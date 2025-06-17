@@ -520,6 +520,9 @@ public class Q implements Comparable<Q>, IsInteger, Serializable {
    * @return a rational number with the value <code>s</code>
    */
   public static Q valueOf(final String s) {
+    if (s.length() == 0) {
+      return Q.ZERO;
+    }
     final int slash = s.indexOf('/');
     return slash < 0 ? new Q(new Z(s)) : new Q(new Z(s.substring(0, slash)), new Z(s.substring(slash + 1)));
   }

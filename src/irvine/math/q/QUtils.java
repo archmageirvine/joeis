@@ -55,7 +55,18 @@ public final class QUtils {
    * @param s string
    * @return array of rationals
    */
-  public static Q[] toQ(final String s) {
+  public static Q[] toQ(String s) {
+    if (s.isEmpty()) {
+      return new Q[0];
+    }
+    final char first = s.charAt(0);
+    final char last = s.charAt(s.length() - 1);
+    if ((first == '[' || first == '{' || first == '(') && (last == ']' || last == '}' || last == ')')) {
+      s = s.substring(1, s.length() - 1);
+    }
+    if (s.isEmpty()) {
+      return new Q[0];
+    }
     final String[] parts = s.split(",");
     final Q[] res = new Q[parts.length];
     for (int k = 0; k < parts.length; ++k) {

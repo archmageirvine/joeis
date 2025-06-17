@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A081092 Primes having a prime number of 1&apos;s in their binary representation.
+ * A081092 Primes having a prime number of 1's in their binary representation.
  * @author Georg Fischer
  */
 public class A081092 extends FilterSequence {

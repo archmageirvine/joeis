@@ -5,7 +5,7 @@ import irvine.oeis.a008.A008975;
 import irvine.oeis.triangle.RowSumSequence;
 
 /**
- * A208278 Row sums of Pascal&apos;s triangle mod 10 (A008975).
+ * A208278 Row sums of Pascal's triangle mod 10 (A008975).
  * @author Georg Fischer
  */
 public class A208278 extends RowSumSequence {

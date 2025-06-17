@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A351163 Numbers k&apos; / tau(k) such that tau(k) | k&apos;.
+ * A351163 Numbers k' / tau(k) such that tau(k) | k'.
  * @author Georg Fischer
  */
 public class A351163 extends SingleTransformSequence {

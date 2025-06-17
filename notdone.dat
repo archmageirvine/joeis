@@ -2608,3 +2608,5 @@ A078087 Continued fraction expansion of Product_{p prime} (1 - 1/(p^2*(p+1))).
 A078088 Continued fraction expansion of 5 * Pi^2 * A065476 / 48.
 A078089 Continued fraction expansion of Product_{p prime >= 3} (1 - 1/(p^2-p-1)).
 A078091 Continued fraction for constant defined in A065472.
+A078104 Number of ways a loop can cross three roads meeting in a Y n times. The loop must touch the southwest sector.
+A078105 Number of nonisomorphic ways a loop can cross three roads meeting in a Y n times (orbits under symmetry group of order 6).

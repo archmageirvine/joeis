@@ -1,16 +1,16 @@
-package irvine.oeis.a384;
+package irvine.oeis.a385;
 
 import irvine.oeis.LinearCongruentialGenerator;
 
 /**
- * A384999 allocated for Omar E. Pol.
+ * A384999.
  * @author Sean A. Irvine
  */
-public class A384999 extends LinearCongruentialGenerator {
+public class A385999 extends LinearCongruentialGenerator {
 
   /** Construct the sequence. */
-  public A384999() {
-    super(171, 11213, 53125);
+  public A385999() {
+    super(228, 0, 65537);
     System.out.println("Period: " + computePeriod());
   }
 }

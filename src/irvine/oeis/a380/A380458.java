@@ -8,7 +8,7 @@ import irvine.oeis.a267.A267116;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A380458 Characteristic function of A337533 (union of {1} with nonsquares whose square part&apos;s square root is in the sequence).
+ * A380458 Characteristic function of A337533 (union of {1} with nonsquares whose square part's square root is in the sequence).
  * @author Georg Fischer
  */
 public class A380458 extends SingleTransformSequence {

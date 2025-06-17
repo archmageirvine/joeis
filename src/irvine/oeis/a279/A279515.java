@@ -7,7 +7,7 @@ import irvine.oeis.a003.A003418;
 import irvine.oeis.a023.A023416;
 
 /**
- * A279515 Number of 0&apos;s in the binary expansion of the least common multiple of the first n integers.
+ * A279515 Number of 0's in the binary expansion of the least common multiple of the first n integers.
  * @author Georg Fischer
  */
 public class A279515 extends LambdaSequence {

@@ -1,6 +1,7 @@
 package irvine.math.cr.functions;
 
 import irvine.math.cr.CR;
+import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
@@ -32,6 +33,15 @@ public abstract class CrFunction1 {
    */
   public CR cr(final long z) {
     return cr(Z.valueOf(z));
+  }
+
+  /**
+   * Evaluate the function at a rational value.
+   * @param z parameter
+   * @return function value
+   */
+  public CR cr(final Q z) {
+    return cr(CR.valueOf(z));
   }
 
 }

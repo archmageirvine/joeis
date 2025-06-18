@@ -11,10 +11,20 @@ import irvine.util.array.LongDynamicLongArray;
 public class A384661 extends Sequence1 {
 
   private final LongDynamicLongArray mA = new LongDynamicLongArray();
+  private final long mAdd;
   private long mAPos = 0;
   private long mBPos = 0;
   private long mK = 1;
   private long mN = 1;
+
+  protected A384661(final long additiveTerm) {
+    mAdd = additiveTerm;
+  }
+
+  /** Construct the sequence. */
+  public A384661() {
+    this(2);
+  }
 
   @Override
   public Z next() {
@@ -24,7 +34,7 @@ public class A384661 extends Sequence1 {
     }
     if (mN == mAPos) {
       final long t = mA.get(++mBPos);
-      final long b = mA.get(t) + t + 2;
+      final long b = mA.get(t) + t + mAdd;
       while (++mK < b) {
         mA.set(++mAPos, mK);
       }

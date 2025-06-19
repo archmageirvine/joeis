@@ -1,29 +1,35 @@
 package irvine.oeis.a051;
 
-import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.a050.A050186;
+import irvine.oeis.DirectSequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051201 Sum of elements of the set { [ n/k ] : 1 &lt;= k &lt;= n }.
  * @author Sean A. Irvine
  */
-public class A051201 extends A050186 {
-
-  /** Construct the sequence. */
-  public A051201() {
-    super(1);
-  }
+public class A051201 extends Sequence1 implements DirectSequence {
 
   private long mN = 0;
 
   @Override
   public Z next() {
-    final Z m = CR.valueOf(4 * ++mN + 1).sqrt().subtract(CR.ONE).divide(CR.TWO).floor();
+    return a(Z.valueOf(++mN));
+  }
+
+  @Override
+  public Z a(final Z n) {
+    final Z m = n.multiply(4).add(1).sqrt().subtract(1).divide2();
     Z sum = m.multiply(m.add(1)).divide2();
-    for (long k = 1; k <= mN / (m.longValueExact() + 1); ++k) {
-      sum = sum.add(mN / k);
+    final long lim = n.divide(m.add(1)).longValueExact();
+    for (long k = 1; k <= lim; ++k) {
+      sum = sum.add(n.divide(k));
     }
     return sum;
+  }
+
+  @Override
+  public Z a(final int n) {
+    return a(Z.valueOf(n));
   }
 }

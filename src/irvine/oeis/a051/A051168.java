@@ -12,10 +12,6 @@ import irvine.oeis.AbstractSequence;
  */
 public class A051168 extends AbstractSequence {
 
-  /**
-   * Constructor with offset.
-   * @param offset first index
-   */
   protected A051168(final int offset) {
     super(offset);
   }
@@ -28,7 +24,13 @@ public class A051168 extends AbstractSequence {
   private long mN = -1;
   private long mM = 0;
 
-  protected Z t(final long n, final long k) {
+  /**
+   * Return an element of the triangle
+   * @param n index
+   * @param k index
+   * @return value
+   */
+  public Z t(final long n, final long k) {
     if (n == 0) {
       return Z.ONE;
     }

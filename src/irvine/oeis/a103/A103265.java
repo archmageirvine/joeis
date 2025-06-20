@@ -6,7 +6,7 @@ import irvine.oeis.a033.A033461;
 import irvine.oeis.transform.ConvolutionProduct;
 
 /**
- * A103265 Number of partitions of n in which both even and odd square parts occur in 2 forms c, c* and with multiplicity 1. There no restriction on parts which are twice squares.
+ * A103265 Number of partitions of n in which both even and odd square parts occur in 2 forms c, c* and with multiplicity 1. There is no restriction on parts which are twice squares.
  * @author Georg Fischer
  */
 public class A103265 extends ConvolutionProduct {

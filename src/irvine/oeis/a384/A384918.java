@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384918 allocated for Jules Beauchamp.
+ * A384918 If k is in the sequence, so is k*2^m + 3, for all m &gt; 0, a(1) = 2, ordered.
  * @author Sean A. Irvine
  */
 public class A384918 extends Sequence1 {

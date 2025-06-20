@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a371.A371992;
 
 /**
- * A011956 Barlow packings with group R3m that repeat after 3n layers.
+ * A011956 Number of close-packings with layer-number 3n and space group R3m.
  * @author Sean A. Irvine
  */
 public class A011956 extends AbstractSequence {

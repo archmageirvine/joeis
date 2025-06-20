@@ -4,7 +4,7 @@ package irvine.oeis.a214;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A214553 G.f. satisfies: A(x) = 1 + 4*x*A(x)^(5/2).
+ * A214553 G.f. A(x) satisfies A(x) = 1 + 4*x*A(x)^(5/2).
  * 1+4*x*A(x)^(5/2)
  * @author Georg Fischer
  */

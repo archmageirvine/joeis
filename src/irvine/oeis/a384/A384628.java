@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384628 allocated for Ctibor O. Zizka.
+ * A384628 a(n) = Sum_{k = 1..n} gcd(n, floor(n / k)).
  * @author Sean A. Irvine
  */
 public class A384628 extends Sequence1 {

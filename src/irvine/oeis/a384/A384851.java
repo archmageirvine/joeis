@@ -6,7 +6,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A384851 allocated for Jinyuan Wang.
+ * A384851 Decimal expansion of minimal radius of a circle that contains 14 non-overlapping unit disks.
  * @author Sean A. Irvine
  */
 public class A384851 extends DecimalExpansionSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**
- * A078108 Let u(1)=u(2)=1, u(3)=2n, u(k) = abs(u(k-1)-u(k-2)-u(k-3)) and M(k)= Max( u(i) : 1&lt;=i&lt;=k), then for any k&gt;=A078109(n), M(k)=sqrtint(k + a(n)) where sqrtint(x) denotes floor(sqrt(x)).
+ * A078108 Let u(1)=u(2)=1, u(3)=2n, u(k) = abs(u(k-1)-u(k-2)-u(k-3)) and M(k) = Max_{i&lt;=i&lt;=k} u(i), then for any k &gt;= A078109(n), M(k) = floor(sqrt(k + a(n))).
  * @author Sean A. Irvine
  */
 public class A078108 extends Sequence1 implements Conjectural {

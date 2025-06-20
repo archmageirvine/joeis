@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A078127 DirichletBeta'[1].
+ * A078127 Decimal expansion of DirichletBeta'(1).
  * @author Sean A. Irvine
  */
 public class A078127 extends DecimalExpansionSequence {

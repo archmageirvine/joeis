@@ -8,6 +8,8 @@ import irvine.oeis.LinearCongruentialGenerator;
  */
 public class A385999 extends LinearCongruentialGenerator {
 
+  // todo this is a placeholder, not a true sequence
+
   /** Construct the sequence. */
   public A385999() {
     super(69069, 5, 1L << 31);

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A384632 allocated for Gavin Lupo.
+ * A384632 a(0)=0. For each digit d in the sequence, let a(n) equal the smallest unused integer which has at least d divisors.
  * @author Sean A. Irvine
  */
 public class A384632 extends Sequence0 {

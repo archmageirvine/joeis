@@ -5,7 +5,7 @@ import irvine.oeis.a078.A078531;
 import irvine.oeis.transform.RootSequence;
 
 /**
- * A214377 G.f. satisfies: A(x) = 1 + 4*x*A(x)^(3/2).
+ * A214377 G.f. A(x) satisfies A(x) = 1 + 4*x*A(x)^(3/2).
  * @author Georg Fischer
  */
 public class A214377 extends RootSequence {

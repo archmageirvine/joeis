@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A383770 Number of non-nesting permutations of [n] avoiding 231 (and by symmetry 132, 213, or 312).
+ * A383770 Number of nonnesting permutations of [n] avoiding 231 (and by symmetry 132, 213, or 312).
  * @author Sean A. Irvine
  */
 public class A383770 extends Sequence0 {

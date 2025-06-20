@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384223 allocated for Omar E. Pol.
+ * A384223 Irregular triangle read by rows: T(n,k) is the sum of the k-th odd divisor and the next even divisors that are less than the next odd divisor of n, with n &gt;= 1, k &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A384223 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A176925 Primes of the form 2^n+41.
+ * A176925 Primes of the form 2^k + 41.
  * @author Georg Fischer
  */
 public class A176925 extends PrimeSubsequence {

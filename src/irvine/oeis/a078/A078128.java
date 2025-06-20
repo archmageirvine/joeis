@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a003.A003108;
 
 /**
- * A078128 Number of ways to write n as sum of cubes&gt;1.
+ * A078128 Number of ways to write n as sum of cubes &gt; 1.
  * @author Georg Fischer
  */
 public class A078128 extends AbstractSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384224 allocated for Omar E. Pol.
+ * A384224 Irregular triangle read by rows: T(n,k) is the number of divisors in the k-th sublist of the divisors of n formed by the k-th odd divisor and the next even divisors that are less than the next odd divisor of n, with n &gt;= 1, k &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A384224 extends Sequence1 {

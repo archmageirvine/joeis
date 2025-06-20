@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A382361 allocated for Amya Luo.
+ * A382361 Number of nonnesting permutations of the multiset {1,1,2,2,...,n,n} that avoid 123.
  * @author Sean A. Irvine
  */
 public class A382361 extends Sequence1 {

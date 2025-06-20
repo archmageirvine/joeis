@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a066.A066660;
 
 /**
- * A113241 Sum{k=1..n, tau(2k)-1}.
+ * A113241 a(n) = Sum_{k=1..n} (tau(2*k) - 1).
  * @author Georg Fischer
  */
 public class A113241 extends PartialSumSequence {

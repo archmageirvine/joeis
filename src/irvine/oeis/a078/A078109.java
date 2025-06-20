@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.math.z.Z;
 
 /**
- * A078109 Let u(1)=u(2)=1, u(3)=2n, u(k) = abs(u(k-1)-u(k-2)-u(k-3)) and M(k)= Max( u(i) : 1&lt;=i&lt;=k), then for any k&gt;=a(n), M(k)=sqrtint(k + A078108(n)) where sqrtint(x) denotes floor(sqrt(x)).
+ * A078109 Let u(1)=u(2)=1, u(3)=2n, u(k) = abs(u(k-1)-u(k-2)-u(k-3)) and M(k) = Max_{1&lt;=i&lt;=k} u(i), then for any k &gt;= a(n), M(k) = floor(sqrt(k + A078108(n))).
  * @author Sean A. Irvine
  */
 public class A078109 extends A078108 {

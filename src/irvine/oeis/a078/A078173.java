@@ -22,7 +22,7 @@ public class A078173 extends Sequence1 {
         if (d != 0) {
           final long n = mN * (s + t);
           if (n % d == 0 && n / d >= s) {
-            max = Math.max(max, Functions.MIN.l(s, t, d));
+            max = Math.max(max, Functions.MIN.l(s, t, n / d));
           }
         }
       }

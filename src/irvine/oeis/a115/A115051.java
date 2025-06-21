@@ -12,6 +12,6 @@ public class A115051 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A115051() {
-    super(2, n -> Functions.OMEGA.z(Functions.FIBONACCI.z(Functions.LUCAS.z(n).add(n))));
+    super(0, n -> Functions.OMEGA.z(Functions.FIBONACCI.z(Functions.LUCAS.z(n).add(n))));
   }
 }

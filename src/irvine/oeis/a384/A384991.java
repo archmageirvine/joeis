@@ -17,7 +17,7 @@ public class A384991 extends Sequence1 {
   @Override
   public Z next() {
     final int[] p = IntegerUtils.identity(new int[++mN]);
-    for (int k = 1, j = 2; k < p.length; j = Functions.NEXT_PRIME.i(j), k += (j - 1)) {
+    for (int k = 1, j = 2; k < p.length; j = Functions.NEXT_PRIME.i(j), k += j - 1) {
       final int v = p[k];
       System.arraycopy(p, k + 1, p, k, p.length - k - 1);
       p[p.length - 1] = v;

@@ -1,7 +1,6 @@
 package irvine.oeis.a384;
 
-import java.util.ArrayList;
-
+import irvine.math.LongUtils;
 import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -18,11 +17,13 @@ public class A384430 extends Sequence1 {
   private final DynamicLongArray mFirsts = new DynamicLongArray();
   private int mN = 0;
   private long mM = 2;
-  private final ArrayList<Z> mCubes = new ArrayList<>();
+  private int mC = 1;
+  private final DynamicLongArray mCubes = new DynamicLongArray();
 
-  private Z cube(final int n) {
-    while (n >= mCubes.size()) {
-      mCubes.add(Z.valueOf(mCubes.size()).pow(3));
+  private long cube(final int n) {
+    while (n >= mC) {
+      mCubes.set(mC, (long) mC * mC * mC);
+      ++mC;
     }
     return mCubes.get(n);
   }
@@ -31,14 +32,17 @@ public class A384430 extends Sequence1 {
   public Z next() {
     ++mN;
     while (mFirsts.get(mN) == 0) {
+      if (++mM > 6208) {
+        throw new UnsupportedOperationException();
+      }
       int cnt = 0;
-      final Z m5 = Z.valueOf(++mM).pow(5);
-      for (int x = 1; cube(x).multiply(4).compareTo(m5) < 0; ++x) {
-        final Z a = m5.subtract(cube(x));
-        for (int y = x + 1; cube(y).multiply(3).compareTo(a) < 0; ++y) {
-          final Z b = a.subtract(cube(y));
-          for (int z = y + 1; cube(z).multiply2().compareTo(b) < 0; ++z) {
-            final Z c = b.subtract(cube(z));
+      final long m5 = LongUtils.pow(mM, 5);
+      for (int x = 1; 4 * cube(x) < m5; ++x) {
+        final long a = m5 - cube(x);
+        for (int y = x + 1; 3 * cube(y) < a; ++y) {
+          final long b = a - cube(y);
+          for (int z = y + 1; 2 * cube(z) < b; ++z) {
+            final long c = b - cube(z);
             if (Predicates.CUBE.is(c)) {
               ++cnt;
             }

@@ -72,6 +72,8 @@ public final class Predicates {
   public static final Predicate DIGIT_CONTAINS_ZERO = new DigitContainsZero(); // =A011540
   /** Test if a number contains undulating digits. */
   public static final Predicate DIGIT_UNDULATE = new DigitUndulate(); // =A033619
+  /** Test if a number has digits with alternating parity. */
+  public static final Predicate DIGIT_ALTERNATING_PARITY = new DigitAlternatingParity();
   /** Test if a number is a St\u00f8rmer number. */
   public static final Predicate STORMER = new Stormer(); // =A005528
   /** Test if a number is a Super-Poulet number. */

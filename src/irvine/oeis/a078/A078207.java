@@ -6,10 +6,10 @@ import irvine.oeis.a000.A000422;
 import irvine.oeis.a007.A007908;
 
 /**
- * A078205 a(n) = A078204(n)/N where N = concatenation of 1 up to n.
+ * A078204.
  * @author Sean A. Irvine
  */
-public class A078205 extends A007908 {
+public class A078207 extends A007908 {
 
   private final Sequence mR = new A000422();
 
@@ -23,9 +23,9 @@ public class A078205 extends A007908 {
     Z tens = Z.ONE;
     while (true) {
       tens = tens.multiply(10);
-      final Z v = up.subtract(tens.modMultiply(down, up));
+      final Z v = down.subtract(tens.modMultiply(up, down));
       if (v.compareTo(tens) < 0) {
-        return down.multiply(tens).add(v).divide(up);
+        return up.multiply(tens).add(v).divide(down);
       }
     }
   }

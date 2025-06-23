@@ -223,7 +223,7 @@ public final class Functions {
   public static final Function2D HYPERSPHERE_POINTS = new HyperspherePoints();
 
   // Two argument functions
-  /** Valuation function. */
+  /** Valuation function, number of times second argument divides the first. */
   public static final Function2 VALUATION = new Valuation();
   /** Jacobi symbol. */
   public static final Function2 JACOBI = new Jacobi();

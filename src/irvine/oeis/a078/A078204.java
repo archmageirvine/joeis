@@ -24,7 +24,7 @@ public class A078204 extends A007908 {
     while (true) {
       tens = tens.multiply(10);
       final Z v = up.subtract(tens.modMultiply(down, up));
-      if (v.compareTo(tens) <= 0) {
+      if (v.compareTo(tens) < 0) {
         return down.multiply(tens).add(v);
       }
     }

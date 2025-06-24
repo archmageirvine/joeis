@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A078204.
+ * A078216 a(n) = A078215(n)^(1/2).
  * @author Sean A. Irvine
  */
 public class A078216 extends SimpleTransformSequence {

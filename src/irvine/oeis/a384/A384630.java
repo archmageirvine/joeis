@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078204.
+ * A384630 Number of self-inverse double cosets in Z_n\S_n/Z_n.
  * @author Sean A. Irvine
  */
 public class A384630 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078204.
+ * A078213 Smallest multiple of n beginning and ending in n and with a digit sum that is divisible by n.
  * @author Sean A. Irvine
  */
 public class A078213 extends Sequence1 {

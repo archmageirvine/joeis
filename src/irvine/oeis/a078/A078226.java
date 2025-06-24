@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078204.
+ * A078226 a(1) = 1, a(n+1) is the smallest odd multiple of a(n) (other than a(n) itself) in which the digits are alternately even and odd.
  * @author Sean A. Irvine
  */
 public class A078226 extends Sequence1 {

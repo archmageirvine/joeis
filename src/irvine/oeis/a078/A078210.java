@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000290;
 
 /**
- * A078204.
+ * A078210 Smallest multiple of n^2 beginning with n.
  * @author Sean A. Irvine
  */
 public class A078210 extends Sequence1 {

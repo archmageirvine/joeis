@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078204.
+ * A078218 Smallest multiple of n that begins with the concatenation of the divisors of n (in increasing order).
  * @author Sean A. Irvine
  */
 public class A078218 extends Sequence1 {

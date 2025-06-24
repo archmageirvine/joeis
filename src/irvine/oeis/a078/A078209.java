@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A078204.
+ * A078209 Smallest multiple of the n-th prime beginning with n.
  * @author Sean A. Irvine
  */
 public class A078209 extends A000040 {

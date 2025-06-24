@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078204.
+ * A078219 Smallest k such that floor(k*e) begins with n (e = 2.718281828...).
  * @author Sean A. Irvine
  */
 public class A078219 extends Sequence1 {

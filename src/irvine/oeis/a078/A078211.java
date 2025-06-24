@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078204.
+ * A078211 Smallest multiple of n^2 beginning and ending in n, or 0 if no such multiple exists.
  * @author Sean A. Irvine
  */
 public class A078211 extends Sequence1 {

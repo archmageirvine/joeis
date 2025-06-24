@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000312;
 
 /**
- * A078204.
+ * A078231 a(n) = A078230(n)/(n^n).
  * @author Sean A. Irvine
  */
 public class A078231 extends Sequence1 {

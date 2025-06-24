@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078204.
+ * A078223 a(1) = 2, a(n+1) &gt; a(n) is the smallest multiple of a(n) using only even digits but not divisible by 10 (i.e., having no trailing zeros).
  * @author Sean A. Irvine
  */
 public class A078223 extends Sequence1 {

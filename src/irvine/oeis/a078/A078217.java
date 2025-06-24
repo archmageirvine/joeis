@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078204.
+ * A078217 Smallest multiple of n that begins with the concatenation of the positive integers &lt;= n and coprime to n (in increasing order).
  * @author Sean A. Irvine
  */
 public class A078217 extends Sequence1 {

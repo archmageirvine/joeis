@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A078204.
+ * A384631 allocated for Ludovic Schwob.
  * @author Sean A. Irvine
  */
 public class A384631 extends Sequence3 {

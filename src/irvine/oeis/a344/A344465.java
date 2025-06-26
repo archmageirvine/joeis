@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A344465 a(n) = Sum_{d|n} d^abs(mu(d)).
+ * A344465 a(n) = Sum_{d|n} d^(mu(d)^2).
  * @author Georg Fischer
  */
 public class A344465 extends LambdaSequence {

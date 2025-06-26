@@ -6,7 +6,7 @@ import irvine.util.array.LongDynamicBooleanArray;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A384908 allocated for Ali Sada.
+ * A384908 Start with a list L of positive integers. At each step n, let the center be the smallest number that has not been used as a center before with index m &gt; 1. For all i &lt; m, swap L(i) with L(i+m). a(n) = L(1).
  * @author Sean A. Irvine
  */
 public class A384908 extends Sequence1 {

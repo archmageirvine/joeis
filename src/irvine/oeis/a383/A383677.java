@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A383677 allocated for Jean-Marc Rebert.
+ * A383677 Irregular triangle read by rows: T(n,k), 2 &lt;= n , 3 &lt;= k &lt;= largest k such that A067175(k) &lt;= n , is the smallest n-digit number m such that omega(m) = A001221(m) = k, and its largest prime factor equals the sum of its remaining prime factors. or -1 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A383677 extends Sequence2 {

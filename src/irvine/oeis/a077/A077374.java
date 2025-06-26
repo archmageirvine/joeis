@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077374 Odd numbers whose abundance b satisfies -10 &lt;= b &lt;= 10, where the abundance of a number n is A(n) = sigma(n) - 2n.
+ * A077374 Odd numbers m whose abundance by absolute value is at most 10, that is, -10 &lt;= sigma(m) - 2m &lt;= 10.
  * @author Sean A. Irvine
  */
 public class A077374 extends Sequence1 {

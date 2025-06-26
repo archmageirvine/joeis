@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A230134 E.g.f. 1/(1 - sin(5*x))^(1/5).
+ * A230134 Expansion of e.g.f. 1/(1 - sin(5*x))^(1/5).
  * E.g.f.: 1/(1 - sin(5*x))^(1/5)
  * @author Georg Fischer
  */

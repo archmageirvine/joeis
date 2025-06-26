@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A384917 allocated for Davide Rotondo.
+ * A384917 Decimal expansion of 1/3645.
  * @author Sean A. Irvine
  */
 public class A384917 extends DecimalExpansionSequence {

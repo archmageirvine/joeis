@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000422;
 import irvine.oeis.a007.A007908;
 
 /**
- * A078205 a(n) = A078204(n)/N where N = concatenation of 1 up to n.
+ * A078205 a(n) = A078204(n) / A007908(n).
  * @author Sean A. Irvine
  */
 public class A078205 extends A007908 {

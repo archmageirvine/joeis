@@ -4,7 +4,7 @@ package irvine.oeis.a385;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A385083 allocated for Enrique Navarrete.
+ * A385083 Expansion of e.g.f. cosh(x)*(x + x^2/2).
  * @author Georg Fischer
  */
 public class A385083 extends PolynomialFieldSequence {

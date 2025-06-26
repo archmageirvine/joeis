@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A006313 Numbers n such that n^16 + 1 is prime.
+ * A006313 Numbers k such that k^16 + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A006313 extends Sequence1 {

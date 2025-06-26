@@ -6,7 +6,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A099474 Numbers n such that 3*prime(n) - prime(n+1) - 3 is prime.
+ * A099474 Numbers k such that 3*prime(k) - prime(k+1) - 3 is prime.
  * @author Georg Fischer
  */
 public class A099474 extends FilterNumberSequence {

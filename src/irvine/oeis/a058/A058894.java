@@ -6,7 +6,7 @@ import irvine.oeis.a006.A006881;
 import irvine.oeis.a007.A007304;
 
 /**
- * A058894 |A006881(m)-A007304(m)| = 1, sequence gives A006881(m).
+ * A058894 Squarefree semiprimes A006881(m) such that |A006881(m)-A007304(m)| = 1.
  * @author Sean A. Irvine
  */
 public class A058894 extends A006881 {

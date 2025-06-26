@@ -5,7 +5,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A052382 Numbers without 0 as a digit, a.k.a. zeroless numbers.
+ * A052382 Numbers without 0 in the decimal expansion, colloquial 'zeroless numbers'.
  * @author Georg Fischer
  */
 public class A052382 extends FilterNumberSequence {

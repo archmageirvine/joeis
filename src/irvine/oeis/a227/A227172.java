@@ -4,7 +4,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A227172 Numbers n such that (48^n + 47^n)/95 is prime.
+ * A227172 Numbers k such that (48^k + 47^k)/95 is prime.
  * @author Georg Fischer
  */
 public class A227172 extends PrimePositionSubsequence {

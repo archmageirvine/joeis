@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002275;
 
 /**
- * A384873 allocated for Gonzalo Mart\u00ednez.
+ * A384873 a(n) is the smallest n-digit zeroless prime.
  * @author Sean A. Irvine
  */
 public class A384873 extends Sequence1 {

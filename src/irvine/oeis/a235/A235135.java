@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A235135 E.g.f. 1/(1 - sinh(3*x))^(1/3).
+ * A235135 Expansion of e.g.f. 1/(1 - sinh(3*x))^(1/3).
  * E.g.f.: 1/(1 - sinh(3*x))^(1/3)
  * @author Georg Fischer
  */

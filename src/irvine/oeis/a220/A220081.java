@@ -4,7 +4,7 @@ package irvine.oeis.a220;
 import irvine.oeis.a114.A114350;
 
 /**
- * A220081 Primes of the form 15*n^2 - 15*n + 17.
+ * A220081 Primes of the form 15*k^2 - 15*k + 17.
  * @author Georg Fischer
  */
 public class A220081 extends A114350 {

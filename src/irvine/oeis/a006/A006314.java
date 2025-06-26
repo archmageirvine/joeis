@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A006314 Numbers n such that n^8 + 1 is prime.
+ * A006314 Numbers k such that k^8 + 1 is prime.
  * @author Sean A. Irvine
  * @author Georg Fischer
  */

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A066476 Numbers having just ten anti-divisors.
+ * A066476 Numbers having exactly ten anti-divisors.
  * @author Sean A. Irvine
  */
 public class A066476 extends FilterPositionSequence {

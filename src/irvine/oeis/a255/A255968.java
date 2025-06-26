@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A255968 Numbers n such that antisigma(n) contains n as a substring.
+ * A255968 Numbers k such that antisigma(k) contains k as a substring.
  * @author Georg Fischer
  */
 public class A255968 extends FilterNumberSequence {

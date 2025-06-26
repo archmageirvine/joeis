@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A178664 2^n concatenated with itself.
+ * A178664 a(n) = 2^n concatenated with itself.
  * @author Georg Fischer
  */
 public class A178664 extends LambdaSequence {

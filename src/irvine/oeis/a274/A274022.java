@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A274022 Primes of the form 2^(2^n) + 3.
+ * A274022 Primes of the form 2^(2^k) + 3.
  * @author Georg Fischer
  */
 public class A274022 extends AbstractSequence {

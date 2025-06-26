@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002464;
 import irvine.oeis.a002.A002493;
 
 /**
- * A384921 allocated for Wolfdieter Lang.
+ * A384921 Number of permutations [p_1, p_2, ..., p_n], for n &gt;= 1,  with |p_{i+1} - p_i| &gt;= 2, for i = 1..n-1, and |p_n - p_1| = 0 or 1.
  * @author Sean A. Irvine
  */
 public class A384921 extends PrependSequence {

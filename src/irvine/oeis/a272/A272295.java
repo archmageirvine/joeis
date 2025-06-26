@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A272295 a(n) = v(2*n+1), where v is a completely multiplicative sequence defined by v(2)=0 and for prime p &gt;= 3: v(p^e) = ((p+1)/2))^e when p == 1 mod 4, and v(p^e) = ((1-p)/2)^e when p == 3 mod 4.
+ * A272295 a(n) = v(2*n+1), where v is a completely multiplicative sequence defined by v(2)=0 and for prime p &gt;= 3: v(p^e) = ((p+1)/2)^e when p == 1 mod 4, and v(p^e) = ((1-p)/2)^e when p == 3 mod 4.
  * @author Georg Fischer
  */
 public class A272295 extends AbstractSequence {

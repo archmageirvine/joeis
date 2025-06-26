@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A227544 E.g.f. 1/(1 - sin(6*x))^(1/6).
+ * A227544 Expansion of e.g.f. 1/(1 - sin(6*x))^(1/6).
  * E.g.f.: 1/(1 - sin(6*x))^(1/6)
  * @author Georg Fischer
  */

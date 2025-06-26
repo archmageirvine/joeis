@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A376282 G.f. satisfies A(x) = (1 + 9*x*A(x)^7)^(1/3).
+ * A376282 G.f. A(x) satisfies A(x) = (1 + 9*x*A(x)^7)^(1/3).
  * @author Georg Fischer
  */
 public class A376282 extends LambdaSequence {

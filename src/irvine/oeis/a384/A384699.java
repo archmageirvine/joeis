@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384699 allocated for Vincenzo Librandi.
+ * A384699 Triples of distinct primes whose sum is a perfect square ordered by increasing sum and then lexicographically.
  * @author Sean A. Irvine
  */
 public class A384699 extends Sequence1 {

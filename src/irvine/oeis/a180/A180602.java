@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A180602 (2^(n+1) - 1)^n.
+ * A180602 a(n) = (2^(n+1) - 1)^n.
  * a(n)=(2^(n+1)-1)^n
  * @author Georg Fischer
  */

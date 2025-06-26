@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A384990 allocated for Chuck Seggelin.
+ * A384990 Order of the permutation of [n] formed by a Josephus elimination variation: take k, skip 1, with k starting at 1 and increasing by 1 after each skip.
  * @author Sean A. Irvine
  */
 public class A384990 extends Sequence1 {

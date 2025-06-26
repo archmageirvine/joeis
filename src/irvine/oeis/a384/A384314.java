@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384314 allocated for Frederik P.J. Vandecasteele.
+ * A384314 Numbers k such that the nonzero digits in the ternary expansion k = d(1),...,d(m) satisfy d(2*i+1) = d(1) and d(2*i) = 3-d(1).
  * @author Sean A. Irvine
  */
 public class A384314 extends Sequence1 {

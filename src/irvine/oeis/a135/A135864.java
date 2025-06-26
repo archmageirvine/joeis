@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A135864 G.f. A(x) satisfies: A(x) = 1 + 9x*A(x)^(1/3).
+ * A135864 G.f. A(x) satisfies A(x) = 1 + 9*x*A(x)^(1/3).
  * @author Georg Fischer
  */
 public class A135864 extends LambdaSequence {

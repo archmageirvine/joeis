@@ -5,7 +5,7 @@ package irvine.oeis.a056;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A056721 Numbers n such that 8*10^n-1 is prime.
+ * A056721 Numbers k such that 8*10^k-1 is prime.
  * @author Georg Fischer
  */
 public class A056721 extends PowerFactorPrimeSequence {

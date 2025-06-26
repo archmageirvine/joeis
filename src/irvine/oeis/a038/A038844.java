@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A038844 n for which 6n+1 | 2^n-1.
+ * A038844 Numbers k for which 6*k+1 divides 2^k-1.
  * @author Sean A. Irvine
  */
 public class A038844 extends Sequence1 {

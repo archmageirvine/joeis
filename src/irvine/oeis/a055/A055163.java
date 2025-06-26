@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A055163 (n - Phi(n)) | Sigma(n) for composite n.
+ * A055163 Composite numbers k such that (k - phi(k)) | sigma(k).
  * @author Sean A. Irvine
  */
 public class A055163 extends A002808 {

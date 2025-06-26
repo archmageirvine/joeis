@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A187740  G.f.: Sum_{n&gt;=0} (5*n+1)^n * x^n / (1 + (5*n+1)*x)^n.
+ * A187740 G.f.: Sum_{n&gt;=0} (5*n+1)^n * x^n / (1 + (5*n+1)*x)^n.
  * E.g.f.: (2 - 8*x + 15*x^2) / (2*(1-5*x)^2)
  * @author Georg Fischer
  */

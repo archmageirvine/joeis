@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A384991 allocated for Chuck Seggelin.
+ * A384991 Order of the permutation of [n] formed by a Josephus elimination variation: take p, skip 1, with p starting at 2 and advancing to the next prime after each skip.
  * @author Sean A. Irvine
  */
 public class A384991 extends Sequence1 {

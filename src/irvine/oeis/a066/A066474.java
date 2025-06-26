@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A066474 Numbers having just eight anti-divisors.
+ * A066474 Numbers having exactly eight anti-divisors.
  * @author Sean A. Irvine
  */
 public class A066474 extends FilterPositionSequence {

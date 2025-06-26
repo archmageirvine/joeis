@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A272137 Primes of the form n^16 + 1.
+ * A272137 Primes of the form k^16 + 1.
  * @author Georg Fischer
  */
 public class A272137 extends FilterSequence {

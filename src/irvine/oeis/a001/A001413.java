@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A001413 Number of 2n-step polygons on cubic lattice.
+ * A001413 Number of 2n-step self-avoiding cycles on the cubic lattice.
  * @author Sean A. Irvine
  */
 public class A001413 extends Sequence1 {

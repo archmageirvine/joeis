@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A066473 Numbers having just seven anti-divisors.
+ * A066473 Numbers having exactly seven anti-divisors.
  * @author Sean A. Irvine
  */
 public class A066473 extends FilterPositionSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a060.A060990;
 
 /**
- * A262511 Numbers n for which there is exactly one solution to x - d(x) = n, where d(n) is the number of divisors of n (A000005). Positions of ones in A060990.
+ * A262511 Numbers k for which there is exactly one solution to x - d(x) = k, where d(k) is the number of divisors of k (A000005). Positions of ones in A060990.
  * @author Georg Fischer
  */
 public class A262511 extends FilterPositionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a216;
 import irvine.oeis.prime.CongruenceForm;
 
 /**
- * A216816 Primes congruent to 3 or 7 mod 20.
+ * A216816 Duplicate of A122870.
  * @author Georg Fischer
  */
 public class A216816 extends CongruenceForm {

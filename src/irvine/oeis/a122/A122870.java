@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a106.A106865;
 
 /**
- * A122870 Primes p that divide Lucas[(p+1)/2] = A000032[(p+1)/2].
+ * A122870 Primes congruent to 3 or 7 mod 20.
  * @author Georg Fischer
  */
 public class A122870 extends AbstractSequence {

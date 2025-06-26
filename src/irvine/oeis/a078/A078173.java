@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078173 Max[min(r,s,t)], where the maximum is taken over all positive integer solutions of the Diophantine equation rst=n(r+s+t).
+ * A078173 a(n) = max(min(r,s,t)), where the maximum is taken over all positive integer solutions of the Diophantine equation r*s*t = n * (r+s+t).
  * @author Sean A. Irvine
  */
 public class A078173 extends Sequence1 {

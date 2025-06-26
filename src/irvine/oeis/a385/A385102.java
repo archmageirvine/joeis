@@ -3,7 +3,7 @@ package irvine.oeis.a385;
 import irvine.oeis.LinearCongruentialGenerator;
 
 /**
- * A385102 allocated for Sean A. Irvine.
+ * A385102 Consecutive internal states of the linear congruential pseudo-random number generator for Turbo Pascal 3.0 when started at 1.
  * @author Sean A. Irvine
  */
 public class A385102 extends LinearCongruentialGenerator {

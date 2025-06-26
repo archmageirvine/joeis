@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002110;
 
 /**
- * A384936 allocated for Michael De Vlieger.
+ * A384936 a(n) = Sum_{k=1..n} floor( log(A002110(n)) / log(prime(k)) ).
  * @author Sean A. Irvine
  */
 public class A384936 extends A002110 {

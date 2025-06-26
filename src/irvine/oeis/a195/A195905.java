@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A195905 Primes of the form 10 * n^2 + 7.
+ * A195905 Primes of the form 10 * k^2 + 7.
  * @author Georg Fischer
  */
 public class A195905 extends PrimeSubsequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a078.A078532;
 import irvine.oeis.transform.ConvolutionProduct;
 
 /**
- * A214668 G.f. satisfies: A(x) = 1 + 9*x*A(x)^(4/3).
+ * A214668 G.f. A(x) satisfies A(x) = 1 + 9*x*A(x)^(4/3).
  * @author Georg Fischer
  */
 public class A214668 extends ConvolutionProduct {

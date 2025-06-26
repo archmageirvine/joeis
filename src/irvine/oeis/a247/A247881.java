@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A247881 Numbers of the form x^2 + 13y^2.
+ * A247881 Numbers of the form x^2 + 13*y^2.
  * @author Sean A. Irvine
  */
 public class A247881 extends Sequence1 {

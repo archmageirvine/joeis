@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A384631 allocated for Ludovic Schwob.
+ * A384631 Number of self-inverse double cosets in D_n\S_n/D_n.
  * @author Sean A. Irvine
  */
 public class A384631 extends Sequence3 {

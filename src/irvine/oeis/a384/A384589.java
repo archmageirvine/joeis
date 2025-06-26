@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A384589 allocated for A.H.M. Smeets.
+ * A384589 Decimal expansion of the weight factor for Laguerre-Gauss quadrature corresponding to abscissa A384587.
  * @author Sean A. Irvine
  */
 public class A384589 extends PolynomialRootExpansionSequence {

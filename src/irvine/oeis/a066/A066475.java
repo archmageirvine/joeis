@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A066475 Numbers having just nine anti-divisors.
+ * A066475 Numbers having exactly nine anti-divisors.
  * @author Sean A. Irvine
  */
 public class A066475 extends FilterPositionSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A116512 a(n) = number of positive integers each of which is &lt;= n and is divisible by exactly one prime dividing n (but is coprime to every other prime dividing n). a(1) = 0.
+ * A116512 a(n) is the number of positive integers each of which is &lt;= n and is divisible by exactly one prime dividing n (but is coprime to every other prime dividing n). a(1) = 0.
  * @author Georg Fischer
  */
 public class A116512 extends AbstractSequence {

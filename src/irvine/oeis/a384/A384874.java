@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A384874 allocated for Ya-Ping Lu.
+ * A384874 a(n) is the first prime encountered when iterating the map x -&gt; x/2 if x is even, x*lpf(x) + 1 otherwise, where lpf(x) is the least prime factor of x, on n &gt;= 2; or -1 if a prime is never reached.
  * @author Sean A. Irvine
  */
 public class A384874 extends Sequence2 {

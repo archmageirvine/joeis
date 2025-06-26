@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A030169 Decimal expansion of real number x such that y = Gamma(x) is a minimum.
+ * A030169 Decimal expansion of the real positive number x such that Gamma(x) is a minimum.
  * @author Sean A. Irvine
  */
 public class A030169 extends DecimalExpansionSequence {

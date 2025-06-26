@@ -4,7 +4,7 @@ package irvine.oeis.a068;
 import irvine.oeis.recur.PaddingSequence;
 
 /**
- * A068836 Smallest prime containing all the digits of the concatenation of first n natural numbers.
+ * A068836 a(n) is the smallest prime containing all the distinct digits occurring in the first n positive integers.
  * @author Georg Fischer
  */
 public class A068836 extends PaddingSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a183.A183136;
 
 /**
- * A384947 allocated for Hoang Xuan Thanh.
+ * A384947 Positive integers m for which A183136(m) != f(m), where f(m) = floor( (m*(m+1)/2)/phi - m/2 + 1/(2*phi) ) and phi = (1+sqrt(5))/2 is the golden ratio.
  * @author Sean A. Irvine
  */
 public class A384947 extends A183136 {

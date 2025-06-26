@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A235128 E.g.f. 1/(1 - sin(7*x))^(1/7).
+ * A235128 Expansion of e.g.f. 1/(1 - sin(7*x))^(1/7).
  * E.g.f.: 1/(1 - sin(7*x))^(1/7)
  * @author Georg Fischer
  */

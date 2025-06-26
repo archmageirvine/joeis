@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A384502 allocated for Jean-Marc Rebert.
+ * A384502 Maximum number of distinct prime factors in an n-digit number, n &gt; 3, where its set of distinct prime factors can be partitioned into two equal-sum subsets, each containing at least two elements.
  * @author Sean A. Irvine
  */
 public class A384502 extends AbstractSequence {

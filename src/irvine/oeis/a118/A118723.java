@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a109.A109611;
 
 /**
- * A118723 Chen primes for which the digital root is also a Chen prime.
+ * A118723 Chen primes whose digital root is also a Chen prime.
  * @author Georg Fischer
  */
 public class A118723 extends FilterSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A066477 Numbers having just eleven anti-divisors.
+ * A066477 Numbers having exactly eleven anti-divisors.
  * @author Sean A. Irvine
  */
 public class A066477 extends FilterPositionSequence {

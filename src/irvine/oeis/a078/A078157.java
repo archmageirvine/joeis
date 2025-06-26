@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A078157 A078152(2^n).
+ * A078157 a(n) = A078152(2^n).
  * @author Georg Fischer
  */
 public class A078157 extends MultiTransformSequence {

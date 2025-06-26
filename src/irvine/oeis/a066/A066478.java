@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A066478 Numbers having just twelve anti-divisors.
+ * A066478 Numbers having exactly twelve anti-divisors.
  * @author Sean A. Irvine
  */
 public class A066478 extends FilterPositionSequence {

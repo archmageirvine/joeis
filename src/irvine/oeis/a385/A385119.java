@@ -4,7 +4,7 @@ package irvine.oeis.a385;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A385119 Name?
+ * A385119 G.f. A(x) satisfies A(x) = 1 + 9*x*A(x)^(5/3).
  * @author Georg Fischer
  */
 public class A385119 extends PolynomialFieldSequence {

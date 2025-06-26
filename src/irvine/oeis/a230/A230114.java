@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A230114 E.g.f. 1/(1 - sin(8*x))^(1/8).
+ * A230114 Expansion of e.g.f. 1/(1 - sin(8*x))^(1/8).
  * E.g.f.: 1/(1 - sin(8*x))^(1/8)
  * @author Georg Fischer
  */

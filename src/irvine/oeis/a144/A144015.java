@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A144015 E.g.f. 1/(1 - sin(4*x))^(1/4).
+ * A144015 Expansion of e.g.f. 1/(1 - sin(4*x))^(1/4).
  * E.g.f.: 1/(1 - sin(4*x))^(1/4)
  * @author Georg Fischer
  */

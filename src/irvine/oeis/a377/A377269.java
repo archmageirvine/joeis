@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A377269 G.f. satisfies A(x) = (1 - 9*x*A(x))^(2/3).
+ * A377269 G.f. A(x) satisfies A(x) = (1 - 9*x*A(x))^(2/3).
  * @author Georg Fischer
  */
 public class A377269 extends LambdaSequence {

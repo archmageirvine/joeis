@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A066470 Numbers having just five anti-divisors.
+ * A066470 Numbers having exactly five anti-divisors.
  * @author Sean A. Irvine
  */
 public class A066470 extends FilterPositionSequence {

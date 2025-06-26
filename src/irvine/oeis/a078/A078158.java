@@ -5,7 +5,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A078158 A078153(2^n).
+ * A078158 a(n) = A078153(2^n).
  * @author Sean A. Irvine
  */
 public class A078158 extends Sequence1 {

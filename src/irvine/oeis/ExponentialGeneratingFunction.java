@@ -19,13 +19,6 @@ public abstract class ExponentialGeneratingFunction extends AbstractSequence {
   protected Z mF; // factorial mN!
 
   /**
-   * Empty constructor.
-   */
-  public ExponentialGeneratingFunction() {
-    this(0, 0, 1);
-  }
-
-  /**
    * Constructor with offset.
    * @param offset index of first term in OEIS.
    */

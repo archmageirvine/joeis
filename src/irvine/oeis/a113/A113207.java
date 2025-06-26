@@ -4,7 +4,7 @@ package irvine.oeis.a113;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A113207 Coefficients of inverse of Poincar√© series [or Poincare series] of the 5-Gonal operad.
+ * A113207 Coefficients of inverse of Poincar\u00e9 series [or Poincare series] of the 5-Gonal operad.
  * G.f.: series reversion of -(2*t^2-t)/(1+t)^3.
  * @author Georg Fischer
  */

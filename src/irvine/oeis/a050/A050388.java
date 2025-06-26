@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a008.A008836;
 
 /**
- * A050388 Exponential reversion of Liouville&apos;s lambda function A008836.
+ * A050388 Exponential reversion of Liouville's lambda function A008836.
  * new A008836()
  * @author Georg Fischer
  */

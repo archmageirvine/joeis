@@ -5,10 +5,10 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A384704 Triangle T(i, j), 1 &lt;= j &lt;= i, read by rows. T(i, j) is the smallest number k that has i odd divisors and whose symmetric representation of sigma, SRS(k), has j parts; when no such k exists then T(i, j) = -1.
+ * A384705 Number of binary shuffle squares of length 2n with prefix 0, that can be obtained from a unique binary word of length n.
  * @author Sean A. Irvine
  */
-public class A384704 extends Sequence1 {
+public class A384705 extends Sequence1 {
 
   private LongDynamicLongArray mState;
   private int mN = 0;

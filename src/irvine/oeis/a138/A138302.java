@@ -4,12 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectPredicate;
 
 /**
  * A138302 Exponentially 2^n-numbers: 1 together with positive integers k such that all exponents in prime factorization of k are powers of 2.
  * @author Georg Fischer
  */
-public class A138302 extends AbstractSequence {
+public class A138302 extends AbstractSequence implements DirectPredicate {
 
   private int mN;
 
@@ -20,19 +21,29 @@ public class A138302 extends AbstractSequence {
   }
 
   @Override
+  public boolean is(final Z n) {
+    if (n.equals(Z.ONE)) {
+      return true;
+    }
+    final FactorSequence fs = Jaguar.factor(n);
+    for (final Z p : fs.toZArray()) {
+      if (Integer.bitCount(fs.getExponent(p)) != 1) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  @Override
+  public boolean is(final int n) {
+    return is(Z.valueOf(n));
+  }
+
+  @Override
   public Z next() {
     while (true) {
-      if (++mN == 1) {
-        return Z.ONE;
-      }
-      final FactorSequence fs = Jaguar.factor(mN);
-      boolean busy = true;
-      for (final Z p : fs.toZArray()) {
-        if (Integer.bitCount(fs.getExponent(p)) != 1) {
-          busy = false;
-        }
-      }
-      if (busy) {
+      ++mN;
+      if (is(mN)) {
         return Z.valueOf(mN);
       }
     }

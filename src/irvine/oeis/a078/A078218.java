@@ -31,7 +31,7 @@ public class A078218 extends Sequence1 {
         return lo;
       }
       hi = hi.multiply(10);
-      Z t = lo.add(mN - lo.mod(mN));
+      final Z t = lo.add(mN - lo.mod(mN));
       if (t.compareTo(hi) < 0) {
         return t;
       }

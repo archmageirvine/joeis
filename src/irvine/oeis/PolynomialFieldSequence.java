@@ -403,18 +403,32 @@ public class PolynomialFieldSequence extends AbstractSequence implements Rationa
   }
 
   /**
-   * Replaces the power series sum of <code>a_n*x^n/n!</code> by sum of <code>a_n*x^n</code>
+   * Replaces the power series sum of <code>a_n*x^n</code> by sum of <code>a_n*x^n/n!</code>
    * @param p polynomial
    * @return Laplace series
    */
-  public Polynomial<Q> makeOgf(final Polynomial<Q> p) {
-    final Polynomial<Q> res = RING.empty();
+  public Polynomial<Q> makeEgf(final Polynomial<Q> p) {
+    final Polynomial<Q> res = new Polynomial<>("x", Q.ZERO, Q.ONE);
     Q fact = Q.ONE;
     for (int k = 0; k <= p.degree(); ++k) {
       if (k > 1) {
         fact = fact.multiply(k);
       }
-//    res.add(RING.monomial(p.coeff(k).multiply(fact), k));
+      res.add(p.coeff(k).divide(fact));
+    }
+    return res;
+  }
+
+  /**
+   * Term-wise division of two polynomials.
+   * @param a first polynomial
+   * @param b second polynomial
+   * @return "quotient" polynomial
+   */
+  public Polynomial<Q> dotQuotient(final Polynomial<Q> a, final Polynomial<Q> b) {
+    final Polynomial<Q> res = new Polynomial<>("x", Q.ZERO, Q.ONE);
+    for (int k = 0; k <= Math.min(a.degree(), b.degree()); ++k) {
+      res.add(a.coeff(k).divide(b.coeff(k)));
     }
     return res;
   }
@@ -451,7 +465,7 @@ public class PolynomialFieldSequence extends AbstractSequence implements Rationa
         case 3:  // "x"  the monic polynomial x
           mStack.set(++top, RING.x());
           break;
-        case 4:  // "<"  shift x, multiply by some power of x
+        case 4:  // "<"  shift x, multiply by some power of x or divide if negative
           mStack.set(top, RING.shift(mStack.get(top), mPostInts[ipost++]));
           break;
         case 5:  // "^"  exponent on the stack
@@ -629,9 +643,22 @@ public class PolynomialFieldSequence extends AbstractSequence implements Rationa
           --top;
           mStack.set(top, RING.exp(RING.multiply(RING.log(mStack.get(top), m), mStack.get(top + 1), m), m));
           break;
-        case 54:  // ".*" - dot product, hadamardMultiply: multiply coefficients
+        case 54:  // ">"  shift x, divide by some power of x or multiply if negative
+          mStack.set(top, RING.shift(mStack.get(top), -mPostInts[ipost++]));
+          break;
+        case 59:  // ".*" - dot product, hadamardMultiply: multiply coefficients
           --top;
           mStack.set(top, RING.hadamardMultiply(mStack.get(top), mStack.get(top + 1)));
+          break;
+        case 60:  // "./" - dot quotient: divide coefficients
+          --top;
+          mStack.set(top, dotQuotient(mStack.get(top), mStack.get(top + 1)));
+          break;
+        case 61:  // "*n!" - serlaplace
+          mStack.set(top, RING.serlaplace(mStack.get(top)));
+          break;
+        case 62:  // "/n!" - serlaplace
+          mStack.set(top, makeEgf(mStack.get(top)));
           break;
         default: // should not occur with proper postfix expressions
           throw new RuntimeException("invalid postfix code " + ix);
@@ -728,16 +755,20 @@ public class PolynomialFieldSequence extends AbstractSequence implements Rationa
     POST_MAP.put("T", 46);
     POST_MAP.put("U", 47);
     POST_MAP.put("V", 48);
-    POST_MAP.put("besselI", 49);
+    POST_MAP.put("besselI", 49);  // only besselI(0, x)
     POST_MAP.put("ellipticD", 50);
     POST_MAP.put("ellipticE", 51);
     POST_MAP.put("ellipticK", 52);
-    POST_MAP.put("pow", 53);
-    POST_MAP.put(".*", 54);
+    POST_MAP.put("pow", 53);  // if exponent is polynomimal
+    POST_MAP.put(">", 54);
     POST_MAP.put("B", 55);
     POST_MAP.put("C", 56);
     POST_MAP.put("D", 57);
     POST_MAP.put("E", 58);
+    POST_MAP.put(".*", 59);   // elementwise "*", dot product
+    POST_MAP.put("./", 60);   // elementwise "/"
+    POST_MAP.put("*n!", 61);  // serlaplace
+    POST_MAP.put("/n!", 62);
   } //! fillMap
 
   @Override

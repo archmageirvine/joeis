@@ -273,7 +273,7 @@ public class RationalRecurrenceTest {
       parms[iparm ++] = String.valueOf(mOffset);
       parms[iparm ++] = reverse("[" + mPolyString + ",0]");
       String[] terms  = computeInitialTerms(mInitString, mPolyString); // nums, dens
-      parms[iparm ++] = "[" + adjustToOffset2(terms, offset2) + "]"; 
+      parms[iparm ++] = "[" + adjustToOffset2(terms, offset2) + "]";
       parms[iparm ++] = "0";
       reproduce();
 
@@ -283,7 +283,7 @@ public class RationalRecurrenceTest {
       final int shortened = mHolRec.shorten();
       if (shortened > 0) {
         parms[4] = mHolRec.getInitString();
-        System.out.println("# " + aseqno + " " + mPolyString + " " + mInitString 
+        System.out.println("# " + aseqno + " " + mPolyString + " " + mInitString
             + " shortened by " + shortened +  " to " + parms[4]);
       }
       reproduce();
@@ -394,7 +394,7 @@ public class RationalRecurrenceTest {
    * <li>-i initTerms initial terms</li>
    * <li>-n numTerms number of terms to be computed (default: 16)</li>
    * <li>-p polyList list of vectors for coefficient polynomials in n</li>
-   * <li>-t generating function type: 0 = ordinary, 1 = exponential</li>
+   * <li>-t bitmask for generating function type: 0 or 1 = ordinary or exponential, 0 or 4 = rational or denominator</li>
    * </ul>
    */
   public static void main(final String[] args) {
@@ -456,21 +456,29 @@ public class RationalRecurrenceTest {
     if (polyList != null) {
       holTest.mHolRec = new RationalRecurrence(holTest.mOffset, polyList, initTerms, dist);
       holTest.mHolRec.setGfType(holTest.mGfType);
-      if (! bfile) {
-        System.out.println(getDataList(holTest.mHolRec, sNumTerms));
-      } else {
-        int ind = incr > 0 ? holTest.mOffset : holTest.mHolRec.getInitTerms().length - 1;
-        boolean busy = true;
-        while (busy && sNumTerms > 0) {
-          final Q term =  holTest.mHolRec.nextQ();
-          busy = term != null;
-          if (busy) {
-            System.out.println(ind + " " + term);
-            --sNumTerms;
-            ind = ind + incr;
-          } 
-        } // while 
-      }
+      int ind = incr > 0 ? holTest.mOffset : holTest.mHolRec.getInitTerms().length - 1;
+      boolean busy = true;
+      while (busy && sNumTerms > 0) {
+        final Q term = holTest.mHolRec.nextQ();
+        busy = term != null;
+        if (busy) {
+          if ((holTest.mGfType & 4) == 0) {
+            if (bfile) {
+              System.out.println(ind + " " + term.num());
+            } else {
+              System.out.print(", " + term); // rational, fraction
+            }
+          } else {
+            if (bfile) {
+              System.out.println(ind + " " + term.den());
+            } else {
+              System.out.print(", " + term.den());
+            }
+          }
+          --sNumTerms;
+          ind += incr;
+        }
+      } // while
     } else {
       holTest.processFile(fileName);
     }

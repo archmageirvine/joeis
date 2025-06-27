@@ -22,6 +22,9 @@ public final class Series {
   /** Bessel y function, <code>y_n(x)</code>. */
   public static final Series2 BESSEL_Y = new BesselY();
 
+  /** Legendre polynomial, <code>LegendreP(x)</code>. */
+  public static final Series2 LEGENDRE_P = new LegendreP();
+
 
   /**
    * Get a series from its name.

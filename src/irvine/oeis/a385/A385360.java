@@ -1,0 +1,15 @@
+package irvine.oeis.a385;
+
+import irvine.oeis.LinearCongruentialGenerator;
+
+/**
+ * A384999.
+ * @author Sean A. Irvine
+ */
+public class A385360 extends LinearCongruentialGenerator {
+
+  /** Construct the sequence. */
+  public A385360() {
+    super(1861, 49297, 233280);
+  }
+}

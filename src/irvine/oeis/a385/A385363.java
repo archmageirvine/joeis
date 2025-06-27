@@ -6,13 +6,10 @@ import irvine.oeis.LinearCongruentialGenerator;
  * A384999.
  * @author Sean A. Irvine
  */
-public class A385999 extends LinearCongruentialGenerator {
-
-  // todo this is a placeholder, not a true sequence
+public class A385363 extends LinearCongruentialGenerator {
 
   /** Construct the sequence. */
-  public A385999() {
+  public A385363() {
     super(3613, 45289, 214326);
-    System.out.println("Period: " + computePeriod());
   }
 }

@@ -12,7 +12,7 @@ import irvine.oeis.a000.A000607;
  */
 public class A384033 extends Sequence1 {
 
-  private long mN = 0;
+  private int mN = 0;
   private final DirectSequence mA = DirectSequence.create(new A000607());
 
   @Override
@@ -23,11 +23,11 @@ public class A384033 extends Sequence1 {
     // We want to solve n = sopfr(k*sopfr(n))
     // Note sopfr(a*b) = sopfr(a)+sopfr(b)
     final long sopfr = Functions.SOPFR.l(mN);
-    final long ss = Functions.SOPFR.l(sopfr);
+    final int ss = Functions.SOPFR.i(sopfr);
     if (ss >= mN) {
       return ss == mN ? Z.ONE : Z.ZERO;
     }
-    return mA.a((int) (mN - ss));
+    return mA.a(mN - ss);
   }
 }
 

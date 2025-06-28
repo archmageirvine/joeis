@@ -14,18 +14,6 @@ public class A000461 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    final StringBuilder sb = new StringBuilder();
-    sb.append(mN);
-    // use doublings for most of it
-    int q = 2;
-    while (q <= mN) {
-      sb.append(sb);
-      q <<= 1;
-    }
-    // and do whatever is left over
-    for (int k = q >>> 1; k < mN; ++k) {
-      sb.append(mN);
-    }
-    return new Z(sb);
+    return new Z(String.valueOf(mN).repeat(mN));
   }
 }

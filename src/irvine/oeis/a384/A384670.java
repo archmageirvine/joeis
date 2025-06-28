@@ -3,7 +3,7 @@ package irvine.oeis.a384;
 import irvine.oeis.recur.PeriodicSequence;
 
 /**
- * A000461.
+ * A384670 allocated for James Beazley.
  * @author Sean A. Irvine
  */
 public class A384670 extends PeriodicSequence {

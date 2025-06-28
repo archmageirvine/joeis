@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a000.A000005;
 
 /**
- * A129921 Number of generalized compositions of n: words b_1^{i_1}b_2^{i_2}...b_k^{i_k} such that b_j&apos;s and j_i&apos;s are positive integers and sum b_j*i_j = n.
+ * A129921 Number of generalized compositions of n: words b_1^{i_1}b_2^{i_2}...b_k^{i_k} such that b_j's and j_i's are positive integers and sum b_j*i_j = n.
  * new A000005()
  * @author Georg Fischer
  */

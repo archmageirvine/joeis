@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000461;
 
 /**
- * A078296.
+ * A078398 a(1) = 1; a(n) for n &gt; 1 is the smallest multiple of a(n-1) that begins with n concatenations of n.
  * @author Sean A. Irvine
  */
 public class A078398 extends A000461 {

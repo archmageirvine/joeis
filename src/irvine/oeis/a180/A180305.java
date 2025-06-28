@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a000.A000203;
 
 /**
- * A180305 G.f.: 1/(1 + x*d/dx log(eta(x))), where eta(x) is Dedekind&apos;s eta(q) function without the q^(1/24) factor.
+ * A180305 G.f.: 1/(1 + x*d/dx log(eta(x))), where eta(x) is Dedekind's eta(q) function without the q^(1/24) factor.
  * new A000203()
  * @author Georg Fischer
  */

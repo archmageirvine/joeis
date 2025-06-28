@@ -4,7 +4,7 @@ package irvine.oeis.a137;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A137591 Number of parenthesizings of products formed by n factors assuming nonassociativity and partial commutativity: individual factors commute, but bracketed expressions don&apos;t commute with anything.
+ * A137591 Number of parenthesizings of products formed by n factors assuming nonassociativity and partial commutativity: individual factors commute, but bracketed expressions don't commute with anything.
  * @author Georg Fischer
  */
 public class A137591 extends HolonomicRecurrence {

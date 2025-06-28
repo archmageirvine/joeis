@@ -5,7 +5,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence2;
 
 /**
- * A078331.
+ * A078340 Least k such that A078142(n) = A078142(n+k).
  * @author Sean A. Irvine
  */
 public class A078340 extends Sequence2 {

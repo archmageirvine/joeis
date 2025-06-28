@@ -2609,3 +2609,7 @@ A078089 Continued fraction expansion of Product_{p prime >= 3} (1 - 1/(p^2-p-1))
 A078091 Continued fraction for constant defined in A065472.
 A078104 Number of ways a loop can cross three roads meeting in a Y n times. The loop must touch the southwest sector.
 A078105 Number of nonisomorphic ways a loop can cross three roads meeting in a Y n times (orbits under symmetry group of order 6).
+A078355 Minimal (positive) solution a(n) of Pell equation b(n)^2 - D(n)*a(n)^2 = +4 with D(n)= A077425(n). The companion sequence is a(n)=A077428(n).
+A078356 Minimal positive solution z of Pell equation z^2 - A077426(n)*t^2 = -4.
+A078357 Minimal positive solution x of Pell equation y^2 - A077426(n)*x^2 = -4.
+A078361 Minimal positive solution a(n) of Pell equation a(n)^2 - D(n)*b(n)^2 = +4 or -4 with D(n)=A077425(n). The companion sequence is b(n)=A077058(n).

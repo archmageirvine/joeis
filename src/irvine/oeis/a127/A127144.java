@@ -2,7 +2,7 @@ package irvine.oeis.a127;
 // manually interleave at 2023-04-16 13:29
 
 import irvine.math.z.Z;
-import irvine.oeis.AlternatingSequence;
+import irvine.oeis.InterleaveSequence;
 import irvine.oeis.a001.A001147;
 import irvine.oeis.a126.A126967;
 
@@ -10,7 +10,7 @@ import irvine.oeis.a126.A126967;
  * A127144 Q(2,n), where Q(m,k) is defined in A127080 and A127137.
  * @author Georg Fischer
  */
-public class A127144 extends AlternatingSequence {
+public class A127144 extends InterleaveSequence {
 
   /** Construct the sequence. */
   public A127144() {

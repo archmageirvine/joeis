@@ -1,7 +1,7 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.AlternatingSequence;
+import irvine.oeis.InterleaveSequence;
 import irvine.oeis.a000.A000682;
 import irvine.oeis.a007.A007822;
 
@@ -9,7 +9,7 @@ import irvine.oeis.a007.A007822;
  * A001010 Number of symmetric foldings of a strip of n stamps.
  * @author Sean A. Irvine
  */
-public class A001010 extends AlternatingSequence {
+public class A001010 extends InterleaveSequence {
 
   private boolean mFirst = true;
 

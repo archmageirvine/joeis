@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.AlternatingSequence;
+import irvine.oeis.InterleaveSequence;
 import irvine.oeis.a000.A000217;
 
 /**
  * A008805 Triangular numbers repeated.
  * @author Sean A. Irvine
  */
-public class A008805 extends AlternatingSequence {
+public class A008805 extends InterleaveSequence {
 
   /** Construct the sequence. */
   public A008805() {

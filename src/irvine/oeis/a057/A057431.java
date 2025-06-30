@@ -1,6 +1,6 @@
 package irvine.oeis.a057;
 
-import irvine.oeis.AlternatingSequence;
+import irvine.oeis.InterleaveSequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.a007.A007305;
 import irvine.oeis.a047.A047679;
@@ -9,7 +9,7 @@ import irvine.oeis.a047.A047679;
  * A057431 Obtained by reading first the numerator then the denominator of fractions in full Stern-Brocot tree (A007305/A047679).
  * @author Sean A. Irvine
  */
-public class A057431 extends AlternatingSequence {
+public class A057431 extends InterleaveSequence {
 
   /** Construct the sequence. */
   public A057431() {

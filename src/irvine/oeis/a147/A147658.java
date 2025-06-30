@@ -1,7 +1,7 @@
 package irvine.oeis.a147;
 // manually interleave at 2021-11-02 15:18
 
-import irvine.oeis.AlternatingSequence;
+import irvine.oeis.InterleaveSequence;
 import irvine.oeis.recur.LinearRecurrence;
 import irvine.oeis.recur.PeriodicSequence;
 
@@ -9,7 +9,7 @@ import irvine.oeis.recur.PeriodicSequence;
  * A147658 (1, 2, -4, 6, -8, ...) interleaved with (3, -3, 3, -3, 3, ...).
  * @author Georg Fischer
  */
-public class A147658 extends AlternatingSequence {
+public class A147658 extends InterleaveSequence {
 
   /** Construct the sequence. */
   public A147658() {

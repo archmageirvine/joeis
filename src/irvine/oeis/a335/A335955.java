@@ -2,7 +2,7 @@ package irvine.oeis.a335;
 // manually interleave at 2023-04-16 13:29
 
 import irvine.math.z.Z;
-import irvine.oeis.AlternatingSequence;
+import irvine.oeis.InterleaveSequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.a002.A002425;
 import irvine.oeis.a028.A028296;
@@ -11,7 +11,7 @@ import irvine.oeis.a028.A028296;
  * A335955 a(n) = (4^n*(Z(-n, 1/4) - Z(-n, 3/4)) + Z(-n, 1)*(2^(n+1)-1))*A171977(n+1), where Z(n, c) is the Hurwitz zeta function.
  * @author Georg Fischer
  */
-public class A335955 extends AlternatingSequence {
+public class A335955 extends InterleaveSequence {
 
   /** Construct the sequence. */
   public A335955() {

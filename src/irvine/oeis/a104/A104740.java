@@ -1,7 +1,7 @@
 package irvine.oeis.a104;
 // manually 2024-03-31/ileave at 2024-04-03 09:28
 
-import irvine.oeis.AlternatingSequence;
+import irvine.oeis.InterleaveSequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.a073.A073941;
 import irvine.oeis.a081.A081848;
@@ -16,6 +16,6 @@ public class A104740 extends PrependSequence {
 
   /** Construct the sequence. */
   public A104740() {
-    super(1, new AlternatingSequence(1, new A073941(), new A081848()), 1, 3);
+    super(1, new InterleaveSequence(1, new A073941(), new A081848()), 1, 3);
   }
 }

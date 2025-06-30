@@ -40,6 +40,7 @@ public class A385330 extends Sequence1 {
 
   private void updateList(final int label) {
     if (mK < mStates.size() && mStates.get(mK).mAngle.equals(mAngle)) {
+      //System.out.println("Override: " + mAngle + " " + mN);
       mStates.set(mK, new State(mAngle, label, mN));
     } else {
       mStates.add(mK, new State(mAngle, label, mN));

@@ -7,15 +7,15 @@ import irvine.math.matrix.DefaultMatrix;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A123744 Circulants of Fibonacci numbers (including F_0 = 0).
  * @author Sean A. Irvine
  */
-public class A123744 extends Sequence1 {
+public class A123744 extends Sequence0 {
 
-  private long mN = 0;
+  private long mN = -1;
 
   @Override
   public Z next() {

@@ -11,7 +11,7 @@ import irvine.util.Permutation;
  */
 public class A384989 extends Sequence1 {
 
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {

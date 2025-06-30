@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078396.
+ * A078401 Triangle read by rows: T(n,k) = number of numbers &lt;= k that are coprime to n, 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A078401 extends Sequence1 {

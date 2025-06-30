@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A385085 a(n) = 2 * (3*n+2)^(n-1).
+ * A385086 a(n) = 2 * (5*n+2)^(n-1).
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

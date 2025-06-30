@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078396.
+ * A078415 Let f(n) = fraction of digits that are nonzero when n is written in base 2 and g(n) the same fraction for base 3. Let h(n) = max {f(n), g(n)}. Sequence gives n for which h(n) sets a new low record.
  * @author Sean A. Irvine
  */
 public class A078415 extends Sequence1 {

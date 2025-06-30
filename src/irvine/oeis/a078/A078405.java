@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A078396.
+ * A078405 Smallest positive integer than cannot be obtained from exactly n copies of n using parentheses and the operations +, -, /, *, ^ and concatenation.
  * @author Sean A. Irvine
  */
 public class A078405 extends Sequence1 {

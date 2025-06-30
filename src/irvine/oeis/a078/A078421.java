@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006577;
 
 /**
- * A078396.
+ * A078421 Least positive integer solution k to h(k) = n h(k-1), where h(n) is the length of n, f(n), f(f(n)), ...., 1 in the Collatz (or 3x + 1) problem. (The earliest "1" is meant.).
  * @author Sean A. Irvine
  */
 public class A078421 extends Sequence1 {

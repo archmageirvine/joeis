@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006577;
 
 /**
- * A078396.
+ * A078418 Numbers n such that h(n) = h(n-1) + h(n-2), where h(n) is the length of the sequence {n, f(n), f(f(n)), ...., 1} in the Collatz (or 3x + 1) problem. (The earliest "1" is meant.).
  * @author Sean A. Irvine
  */
 public class A078418 extends A006577 {

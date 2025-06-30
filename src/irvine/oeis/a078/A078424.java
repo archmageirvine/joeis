@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001113;
 import irvine.oeis.a001.A001622;
 
 /**
- * A078396.
+ * A078424 Mix digits of Pi, e and phi.
  * @author Sean A. Irvine
  */
 public class A078424 extends InterleaveSequence {

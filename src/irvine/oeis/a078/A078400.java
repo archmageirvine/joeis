@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A078396.
+ * A078400 Iterated sum-of-digits of A078403(n).
  * @author Sean A. Irvine
  */
 public class A078400 extends A000040 {

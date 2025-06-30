@@ -12,7 +12,7 @@ public class A075838 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A075838() {
-    super(1, new UnaryCrFunction() {
+    super(0, new UnaryCrFunction() {
       @Override
       public CR execute(final CR x) {
         final CR x2 = x.multiply(2);

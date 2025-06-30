@@ -2,13 +2,13 @@ package irvine.oeis.a074;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A074219 Numbers k such that ceiling(k^Pi) is prime.
  * @author Sean A. Irvine
  */
-public class A074219 extends Sequence1 {
+public class A074219 extends Sequence0 {
 
   private long mN = 4;
 

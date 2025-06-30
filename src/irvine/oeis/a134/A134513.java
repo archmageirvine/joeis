@@ -14,6 +14,6 @@ public class A134513 extends Product {
 
   /** Construct the sequence. */
   public A134513() {
-    super(1, new SimpleTransformSequence(new A049310(), Z::abs), new A097806());
+    super(0, new SimpleTransformSequence(new A049310(), Z::abs), new A097806());
   }
 }

@@ -6,13 +6,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence2;
 
 /**
  * A072652 Ordered solutions greater than 1 to b^c=c^d, with multiplicity.
  * @author Sean A. Irvine
  */
-public class A072652 extends Sequence1 {
+public class A072652 extends Sequence2 {
 
   private final LinkedList<Z> mA = new LinkedList<>();
   private long mN = 3;

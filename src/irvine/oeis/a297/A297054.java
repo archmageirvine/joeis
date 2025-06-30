@@ -12,6 +12,6 @@ public class A297054 extends EulerTransform {
 
   /** Construct the sequence. */
   public A297054() {
-    super(1, new PaddingSequence(new long[] {-1, 0}, new long[] {-1}), 1);
+    super(0, new PaddingSequence(new long[] {-1, 0}, new long[] {-1}), 1);
   }
 }

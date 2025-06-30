@@ -2,13 +2,13 @@ package irvine.oeis.a077;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A077557 a(1)=1, a(n+1) &gt; a(n) and differs by at most one digit.
  * @author Sean A. Irvine
  */
-public class A077557 extends Sequence1 {
+public class A077557 extends Sequence0 {
 
   private long mN = 0;
 

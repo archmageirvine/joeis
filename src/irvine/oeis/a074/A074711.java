@@ -12,6 +12,6 @@ public class A074711 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A074711() {
-    super(0, new A000461(), Functions.MOBIUS::z);
+    super(1, new A000461(), Functions.MOBIUS::z);
   }
 }

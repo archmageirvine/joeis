@@ -2,13 +2,13 @@ package irvine.oeis.a074;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A074303 Sum of squares of digits of n is equal to the largest prime factor of n reversed, where the largest prime factor is not a palindrome.
  * @author Sean A. Irvine
  */
-public class A074303 extends Sequence1 {
+public class A074303 extends Sequence0 {
 
   private long mN = 0;
 

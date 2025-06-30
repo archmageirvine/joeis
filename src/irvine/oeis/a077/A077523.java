@@ -11,6 +11,7 @@ public class A077523 extends A002385 {
 
   {
     super.skip(5);
+    setOffset(6);
   }
 
   @Override

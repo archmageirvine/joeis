@@ -11,7 +11,7 @@ public class A076497 extends RecordSequence {
 
   /** Construct the sequence. */
   public A076497() {
-    super(0, new A039993());
+    super(1, new A039993());
   }
 }
 

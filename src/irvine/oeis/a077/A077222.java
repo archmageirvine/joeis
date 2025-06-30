@@ -2,14 +2,14 @@ package irvine.oeis.a077;
 
 import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A077222 a(1) = 1 and then alternately the smallest even and odd numbers not occurring earlier such that the sum of two successive terms is a square.
  * @author Sean A. Irvine
  */
-public class A077222 extends Sequence1 {
+public class A077222 extends Sequence0 {
 
   private final LongDynamicBooleanArray mSeen = new LongDynamicBooleanArray();
   private Z mA = Z.ZERO;

@@ -13,6 +13,6 @@ public class A126137 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A126137() {
-    super(1, new A037028(), v -> Puma.primePiZ(v));
+    super(0, new A037028(), v -> Puma.primePiZ(v));
   }
 }

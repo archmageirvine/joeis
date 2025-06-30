@@ -12,6 +12,10 @@ public class A056053 extends A092315 implements Conjectural {
 
   private boolean mFirst = true;
 
+  {
+    setOffset(0);
+  }
+
   @Override
   public Z next() {
     if (mFirst) {

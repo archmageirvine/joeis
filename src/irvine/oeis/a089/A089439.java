@@ -12,6 +12,6 @@ public class A089439 extends FilterSequence {
 
   /** Construct the sequence. */
   public A089439() {
-    super(2, new A000040(), p -> p.multiply(6).add(13).isProbablePrime());
+    super(1, new A000040(), p -> p.multiply(6).add(13).isProbablePrime());
   }
 }

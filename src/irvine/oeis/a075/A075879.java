@@ -1,13 +1,13 @@
 package irvine.oeis.a075;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A075879 The (10^n)-th odd-digit number.
  * @author Sean A. Irvine
  */
-public class A075879 extends Sequence1 {
+public class A075879 extends Sequence0 {
 
   // After Alois P. Heinz
 

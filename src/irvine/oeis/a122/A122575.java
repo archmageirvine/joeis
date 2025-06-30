@@ -12,6 +12,5 @@ public class A122575 extends GeneratingFunctionSequence {
   /** Construct the sequence. */
   public A122575() {
     super(0, "[0, -1, 1]", "[1, 42, 591, 2828, 591, 42, 1]");
-    setOffset(1);
   }
 }

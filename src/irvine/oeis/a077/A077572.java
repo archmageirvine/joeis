@@ -12,6 +12,6 @@ public class A077572 extends FilterSequence {
 
   /** Construct the sequence. */
   public A077572() {
-    super(new A010785().skip(), k -> !Predicates.SQUARE_FREE.is(k));
+    super(1, new A010785().skip(), k -> !Predicates.SQUARE_FREE.is(k));
   }
 }

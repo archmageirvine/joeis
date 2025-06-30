@@ -12,6 +12,6 @@ public class A287172 extends NoncomputableSequence {
 
   /** Construct the sequence. */
   public A287172() {
-    super(1841, 1850, 1865, 1881, 1901, 1923, 1945, 1963);
+    super(1, NONCOMPUTABLE, 1841, 1850, 1865, 1881, 1901, 1923, 1945, 1963);
   }
 }

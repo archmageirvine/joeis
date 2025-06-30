@@ -10,6 +10,6 @@ public class A074253 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A074253() {
-    super(0, 1, new A074251(), SQUARE);
+    super(1, 1, new A074251(), SQUARE);
   }
 }

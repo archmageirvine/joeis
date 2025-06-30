@@ -10,6 +10,6 @@ public class A203522 extends SelfQuotientSequence {
 
   /** Construct the sequence. */
   public A203522() {
-    super(new A203521(), 1);
+    super(0, new A203521(), 1);
   }
 }

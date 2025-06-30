@@ -32,7 +32,7 @@ public class A074904 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A074904() {
-    super(1, build());
+    super(0, build());
   }
 }
 

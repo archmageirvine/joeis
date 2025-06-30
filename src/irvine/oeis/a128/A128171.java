@@ -15,11 +15,11 @@ public class A128171 extends AbstractSequence {
   private final Fast mPrime = new Fast();
   private Z mPrev = Z.ONE;
   private Z mSum;
-  private long mN = 0;
+  private long mN = -1;
 
   /** Construct the sequence. */
   public A128171() {
-    this(0, 1, 7);
+    this(1, 1, 7);
   }
 
   /**
@@ -30,7 +30,7 @@ public class A128171 extends AbstractSequence {
    */
   public A128171(final int offset, final int first, final int power) {
     super(offset);
-    mN = 0;
+    mN = offset - 1;
     mFirst = first;
     mPower = power;
     mSum = start();

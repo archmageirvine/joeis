@@ -12,6 +12,6 @@ public class A076550 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A076550() {
-    super(1, new A075088(), Functions.TRINV::z);
+    super(0, new A075088(), Functions.TRINV::z);
   }
 }

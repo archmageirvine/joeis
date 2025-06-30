@@ -6,13 +6,13 @@ import java.util.TreeSet;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A077168 Lexicographically earliest infinite sequence of distinct positive numbers with the property that when written as a triangle, the product of each row is a factorial.
  * @author Sean A. Irvine
  */
-public class A077168 extends Sequence1 {
+public class A077168 extends Sequence0 {
 
   private final TreeSet<Z> mUsed = new TreeSet<>(); // keeps used numbers > mS
   protected final List<Z> mA = new ArrayList<>(); // the current row
@@ -24,7 +24,7 @@ public class A077168 extends Sequence1 {
   protected void step() {
     mA.clear();
     mK = 0;
-    if (++mN == 1) {
+    if (++mN <= 1) {
       mA.add(Z.ONE);
       return;
     }

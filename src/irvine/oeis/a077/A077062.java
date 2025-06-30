@@ -2,13 +2,13 @@ package irvine.oeis.a077;
 
 import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A077062 Minimal k &gt; n such that n^2 + k^2 is a cube for k &gt; n, or 0 if no such k exists.
  * @author Sean A. Irvine
  */
-public class A077062 extends Sequence1 {
+public class A077062 extends Sequence0 {
 
   private long mN = -1;
 

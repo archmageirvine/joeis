@@ -2,14 +2,14 @@ package irvine.oeis.a075;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001597;
 
 /**
  * A075308 Number of n-digit perfect powers.
  * @author Sean A. Irvine
  */
-public class A075308 extends Sequence0 {
+public class A075308 extends Sequence1 {
 
   private final Sequence mA = new A001597();
   private Z mT = mA.next();

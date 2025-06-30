@@ -11,6 +11,6 @@ public class A075171 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A075171() {
-    super(1, new A075170(), k -> new Z(k.toString(2)));
+    super(0, new A075170(), k -> new Z(k.toString(2)));
   }
 }

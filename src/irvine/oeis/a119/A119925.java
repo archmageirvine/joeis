@@ -12,6 +12,6 @@ public class A119925 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A119925() {
-    super(0, CrFunctions.MINKOWSKI_QUESTION_MARK.cr(CR.PI), 10, 128);
+    super(1, CrFunctions.MINKOWSKI_QUESTION_MARK.cr(CR.PI), 10, 128);
   }
 }

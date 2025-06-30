@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A077217 Prime(k) such that the prime power with largest exponent that divides the product P(k) of composite numbers between prime(k) and prime(k+1) is an odd number, i.e., if p^r and 2^s divide P(k) then r &gt;= s, p is an odd prime.
  * @author Sean A. Irvine
  */
-public class A077217 extends Sequence0 {
+public class A077217 extends Sequence1 {
 
   private long mP = 1;
 

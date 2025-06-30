@@ -2,14 +2,14 @@ package irvine.oeis.a052;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence3;
 import irvine.oeis.a031.A031934;
 
 /**
  * A052357 Least prime in A031934 (lesser of 16-twins) whose distance to the next 16-twin is 6*n.
  * @author Sean A. Irvine
  */
-public class A052357 extends Sequence1 {
+public class A052357 extends Sequence3 {
 
   private long mN = 12;
 

@@ -11,7 +11,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 public class A073668 extends DecimalExpansionSequence {
 
   protected A073668(final long r) {
-    super(new CR() {
+    super(0, new CR() {
       @Override
       protected Z approximate(final int precision) {
         if (precision >= 0) {

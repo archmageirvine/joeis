@@ -2,13 +2,13 @@ package irvine.oeis.a072;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A072866 Smallest k &gt; 1 dividing tau(k*2^n) (cf. A000005).
  * @author Sean A. Irvine
  */
-public class A072866 extends Sequence1 {
+public class A072866 extends Sequence0 {
 
   private long mN = -1;
 

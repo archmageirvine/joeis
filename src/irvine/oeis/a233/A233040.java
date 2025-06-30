@@ -19,7 +19,7 @@ public class A233040 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A233040() {
-    this(0, 1, 7);
+    this(1, 1, 7);
   }
 
   /**

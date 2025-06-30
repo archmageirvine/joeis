@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence2;
+import irvine.oeis.Sequence1;
 
 /**
  * A382022 Composite integers k = p*q*r where p &lt; q &lt; r are distinct primes such that p*r &lt; q^2.
  * @author Sean A. Irvine
  */
-public class A382022 extends Sequence2 {
+public class A382022 extends Sequence1 {
 
   private static final class State implements Comparable<State> {
     private final Z mN;
@@ -62,7 +62,6 @@ public class A382022 extends Sequence2 {
   {
     mA.add(new State(Z.TWO, Z.THREE, Z.FIVE));
   }
-
 
   @Override
   public Z next() {

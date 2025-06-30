@@ -11,6 +11,6 @@ public class A075172 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A075172() {
-    super(1, new A075170(), k -> Z.valueOf(k.bitCount()));
+    super(0, new A075170(), k -> Z.valueOf(k.bitCount()));
   }
 }

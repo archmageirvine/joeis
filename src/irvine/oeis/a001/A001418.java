@@ -7,6 +7,7 @@ package irvine.oeis.a001;
 public class A001418 extends A001415 {
 
   {
+    setOffset(1);
     next(); // skip 0th term
   }
 

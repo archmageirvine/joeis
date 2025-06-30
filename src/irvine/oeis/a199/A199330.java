@@ -12,6 +12,6 @@ public class A199330 extends FilterSequence {
 
   /** Construct the sequence. */
   public A199330() {
-    super(0, new A048153(), SQUARE);
+    super(1, new A048153(), SQUARE);
   }
 }

@@ -15,6 +15,6 @@ public class A096006 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A096006() {
-    super(1, new FilterSequence(0, new A007318(), v -> !v.equals(Z.ONE)), v -> Functions.GPF.z(v));
+    super(2, new FilterSequence(0, new A007318(), v -> !v.equals(Z.ONE)), v -> Functions.GPF.z(v));
   }
 }

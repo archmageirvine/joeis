@@ -3,13 +3,13 @@ package irvine.oeis.a076;
 import irvine.math.function.Functions;
 import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A076772 Even numbers n representable as the sum of 2 coprime odd composites.
  * @author Sean A. Irvine
  */
-public class A076772 extends Sequence1 {
+public class A076772 extends Sequence0 {
 
   private long mN = 16;
 

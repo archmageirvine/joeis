@@ -1,14 +1,14 @@
 package irvine.oeis.a073;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A073894 a(0)=1; a(n) for n &gt; 0 is the smallest number not used earlier such that the concatenation of a(0),...,a(n) is a multiple of n+1.
  * @author Sean A. Irvine
  */
-public class A073894 extends Sequence1 {
+public class A073894 extends Sequence0 {
 
   private final LongDynamicBooleanArray mUsed = new LongDynamicBooleanArray();
   private Z mA = Z.ONE;

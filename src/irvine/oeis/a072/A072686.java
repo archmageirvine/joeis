@@ -10,6 +10,6 @@ public class A072686 extends FilterSequence {
 
   /** Construct the sequence. */
   public A072686() {
-    super(1, new A072685(), PRIME);
+    super(0, new A072685(), PRIME);
   }
 }

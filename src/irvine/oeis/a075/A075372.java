@@ -5,13 +5,13 @@ import java.util.Set;
 
 import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A075372 Smallest squarefree number not occurring earlier such that the every partial sum is squarefree.
  * @author Sean A. Irvine
  */
-public class A075372 extends Sequence0 {
+public class A075372 extends Sequence1 {
 
   private final Set<Long> mSeen = new HashSet<>();
   private Z mSum = Z.ZERO;

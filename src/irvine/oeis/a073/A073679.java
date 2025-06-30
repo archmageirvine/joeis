@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A073679 a(1) = 4, a(n+1) is the smallest composite number &gt; a(n) such that all of the differences a(n+1)-a(n) are distinct primes.
  * @author Sean A. Irvine
  */
-public class A073679 extends Sequence1 {
+public class A073679 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private final HashSet<Long> mUsed = new HashSet<>();

@@ -12,7 +12,7 @@ import irvine.oeis.Conjectural;
 public class A027696 extends A027669 implements Conjectural {
 
   {
-    setOffset(0);
+    setOffset(1);
   }
 
   // of the sequence.

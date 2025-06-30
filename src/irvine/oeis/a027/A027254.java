@@ -11,7 +11,7 @@ public class A027254 extends A026703 {
 
   /** Construct the sequence. */
   public A027254() {
-    super(2);
+    super(3);
   }
 
   private long mN = 1;

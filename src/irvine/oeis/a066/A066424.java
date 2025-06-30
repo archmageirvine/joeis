@@ -2,13 +2,13 @@ package irvine.oeis.a066;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A066424 The n-digit number whose divisors have the maximal sum (A066410).
  * @author Sean A. Irvine
  */
-public class A066424 extends Sequence0 {
+public class A066424 extends Sequence1 {
 
   private long mLim = 1;
 

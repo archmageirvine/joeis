@@ -12,6 +12,6 @@ public class A099289 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A099289() {
-    super(CrFunctions.FRESNEL_S.cr(CR.ONE));
+    super(0, CrFunctions.FRESNEL_S.cr(CR.ONE));
   }
 }

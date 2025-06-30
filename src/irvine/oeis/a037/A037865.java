@@ -8,6 +8,7 @@ public class A037865 extends A037861 {
 
   {
     super.next(); // skip 0
+    setOffset(1);
   }
 
   @Override

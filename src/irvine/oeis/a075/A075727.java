@@ -2,13 +2,13 @@ package irvine.oeis.a075;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A075727 a(n) = 2 Pi * n rounded off.
  * @author Sean A. Irvine
  */
-public class A075727 extends Sequence0 {
+public class A075727 extends Sequence1 {
 
   private long mN = -1;
 

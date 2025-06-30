@@ -11,7 +11,7 @@ public class A102556 extends RationalRecurrence {
 
   /** Construct the sequence. */
   public A102556() {
-    super(0, "[[0],[9,-6],[-17,14],[8,-8]]", "0,3/4,15/32", 0, 0);
+    super(1, "[[0],[9,-6],[-17,14],[8,-8]]", "0,3/4,15/32", 1, 0);
     nextQ();
   }
 }

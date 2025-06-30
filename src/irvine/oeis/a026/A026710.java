@@ -10,7 +10,7 @@ public class A026710 extends A026703 {
 
   /** Construct the sequence. */
   public A026710() {
-    super(0);
+    super(1);
   }
 
   private long mN = -1;

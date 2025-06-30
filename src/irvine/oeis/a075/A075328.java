@@ -4,13 +4,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A075328 Difference between n-th pair in A075325.
  * @author Sean A. Irvine
  */
-public class A075328 extends Sequence1 {
+public class A075328 extends Sequence0 {
 
   private final Set<Z> mSeen = new HashSet<>();
   private Z mN = Z.ZERO;

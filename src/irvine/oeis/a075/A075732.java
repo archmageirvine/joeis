@@ -12,6 +12,6 @@ public class A075732 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A075732() {
-    super(1, new A013929(), Functions.FIBONACCI::z);
+    super(0, new A013929(), Functions.FIBONACCI::z);
   }
 }

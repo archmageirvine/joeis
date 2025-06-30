@@ -14,7 +14,7 @@ public class A074457 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A074457() {
-    super(2, new CR() {
+    super(1, new CR() {
       @Override
       protected Z approximate(final int precision) {
         final UnaryCrFunction v = new UnaryCrFunction() {

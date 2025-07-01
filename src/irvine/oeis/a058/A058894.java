@@ -13,7 +13,7 @@ public class A058894 extends A006881 {
 
   /** Construct the sequence. */
   public A058894() {
-    super(0);
+    super(1);
   }
 
   private final Sequence mA = new A007304();

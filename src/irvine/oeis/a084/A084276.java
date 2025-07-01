@@ -12,6 +12,7 @@ public class A084276 extends A385127 {
   private static final Z MASK = Z.valueOf(0x7FFF);
   {
     super.next(); // skip 1
+    setOffset(0);
   }
 
   @Override

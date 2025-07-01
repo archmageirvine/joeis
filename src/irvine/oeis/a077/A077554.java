@@ -15,6 +15,10 @@ public class A077554 extends A077553 {
   private long mMaxP = 2;
   private List<Long> mRow = Collections.emptyList();
 
+  {
+    setOffset(0);
+  }
+
   @Override
   public Z next() {
     ++mN;

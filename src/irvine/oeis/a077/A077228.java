@@ -13,6 +13,10 @@ public class A077228 extends A077227 {
   private int mM = 0;
   private final DynamicArray<Z> mSums = new DynamicArray<>();
 
+  {
+    setOffset(0);
+  }
+
   @Override
   public Z next() {
     if (++mM > mN) {

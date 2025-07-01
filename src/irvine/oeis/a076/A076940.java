@@ -10,6 +10,10 @@ import irvine.oeis.a066.A066657;
  */
 public class A076940 extends A066657 {
 
+  {
+    setOffset(1);
+  }
+
   @Override
   protected Z select(final Q n) {
     return Z.TEN.pow(n.num().add(n.den()).add(1)).add(Z.TEN.pow(n.den()));

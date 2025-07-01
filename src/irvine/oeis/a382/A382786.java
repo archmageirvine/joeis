@@ -1,14 +1,14 @@
 package irvine.oeis.a382;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A382786 Numbers k such that 5^k + k is prime.
  * @author Sean A. Irvine
  */
-public class A382786 extends Sequence0 {
+public class A382786 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private Z mA = Z.FIVE.pow(7953);

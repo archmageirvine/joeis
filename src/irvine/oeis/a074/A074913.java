@@ -11,6 +11,10 @@ import irvine.oeis.a029.A029776;
  */
 public class A074913 extends A029776 {
 
+  {
+    setOffset(0);
+  }
+
   @Override
   protected boolean isDigitMatch(final Z n) {
     final int[] sn = ZUtils.digitCounts(n);

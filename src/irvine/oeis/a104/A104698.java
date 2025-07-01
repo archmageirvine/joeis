@@ -14,5 +14,6 @@ public class A104698 extends A208508 {
   /** Construct the sequence. */
   public A104698() {
     super(0, Polynomial.create(0, 1), Polynomial.create(1), Polynomial.create(1), Polynomial.create(0, 2), Polynomial.create(1), Polynomial.create(1));
+    setOffset(0);
   }
 }

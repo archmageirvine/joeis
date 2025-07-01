@@ -26,7 +26,7 @@ public class A078441 extends Sequence1 {
       mFirst = mM;
       while (true) {
         ++mM;
-        Z t = mSeq.next();
+        final Z t = mSeq.next();
         if (!t.equals(mA)) {
           mA = t;
           mChain = len;

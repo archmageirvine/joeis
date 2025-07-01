@@ -10,7 +10,7 @@ public class A003924 extends A003920 {
 
   /** Construct the sequence. */
   public A003924() {
-    super(0);
+    super(1);
   }
 
   @Override

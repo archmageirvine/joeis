@@ -12,6 +12,10 @@ public class A077773 extends A000404 {
   private long mN = 0;
   private Z mA = super.next();
 
+  {
+    setOffset(0);
+  }
+
   @Override
   public Z next() {
     ++mN;

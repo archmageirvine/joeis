@@ -1,13 +1,13 @@
 package irvine.oeis.a074;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A074108 Smallest number such that the concatenation of first n terms is a proper multiple of the concatenation of first n natural numbers.
  * @author Sean A. Irvine
  */
-public class A074108 extends Sequence1 {
+public class A074108 extends Sequence0 {
 
   private final StringBuilder mA = new StringBuilder();
   private final StringBuilder mB = new StringBuilder();

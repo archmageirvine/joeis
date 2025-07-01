@@ -10,6 +10,10 @@ import irvine.oeis.a002.A002808;
  */
 public class A073322 extends A002808 {
 
+  {
+    setOffset(0);
+  }
+
   private long f(final long n, final long m) {
     return n + Functions.PRIME_PI.l(m) + 1;
   }

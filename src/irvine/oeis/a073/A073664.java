@@ -10,6 +10,10 @@ public class A073664 extends A073661 {
 
   private long mN = 0;
 
+  {
+    setOffset(0);
+  }
+
   @Override
   public Z next() {
     while (true) {

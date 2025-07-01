@@ -13,6 +13,7 @@ public class A075078 extends A075077 {
   private final Sequence mComposites = new A002808();
   {
     super.next(); // Ensure mA is not null
+    setOffset(0);
   }
 
   @Override

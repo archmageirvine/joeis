@@ -2,13 +2,13 @@ package irvine.oeis.a076;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A076127 n-th term is binary string of length t_n with 1's at positions t_i, where t_n = n-th triangular number.
  * @author Sean A. Irvine
  */
-public class A076127 extends Sequence1 {
+public class A076127 extends Sequence0 {
 
   private Z mA = Z.ZERO;
   private int mN = -1;

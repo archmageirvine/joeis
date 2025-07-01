@@ -1,25 +1,30 @@
 package irvine.oeis.a038;
 
+import irvine.factor.prime.Fast;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000040;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A038601 Prime numbers p such that the number of partitions of p is also a prime.
  * @author Sean A. Irvine
  */
-public class A038601 extends A000040 {
+public class A038601 extends AbstractSequence {
 
-  {
-    setOffset(0);
+  /** Construct the sequence. */
+  public A038601() {
+    super(1);
   }
+
+  protected final Fast mPrime = new Fast();
+  protected Z mP = Z.ONE;
 
   @Override
   public Z next() {
     while (true) {
-      final Z p = super.next();
-      if (Functions.PARTITIONS.z(p).isProbablePrime()) {
-        return p;
+      mP = mPrime.nextPrime(mP);
+      if (Functions.PARTITIONS.z(mP).isProbablePrime()) {
+        return mP;
       }
     }
   }

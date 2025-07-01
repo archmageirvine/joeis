@@ -10,6 +10,10 @@ public class A077555 extends A077553 {
 
   private int mN = 0;
 
+  {
+    setOffset(0);
+  }
+
   @Override
   public Z next() {
     ++mN;

@@ -3,7 +3,7 @@ package irvine.oeis.a384;
 import irvine.oeis.recur.PeriodicSequence;
 
 /**
- * A384670 allocated for James Beazley.
+ * A384670 Smallest denominator y for which there exists an integer x with round(100*x/y) = n.
  * @author Sean A. Irvine
  */
 public class A384670 extends PeriodicSequence {

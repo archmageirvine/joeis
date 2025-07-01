@@ -4,7 +4,7 @@ package irvine.oeis.a263;
 import irvine.oeis.prime.PrimeConditionListSequence;
 
 /**
- * A263309 Numbers n such that p=6n+1 and q=6p+1 are primes.
+ * A263309 Numbers k such that p=6k+1 and q=6k+1 are primes.
  * @author Georg Fischer
  */
 public class A263309 extends PrimeConditionListSequence {

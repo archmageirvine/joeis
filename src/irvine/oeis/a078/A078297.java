@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A078297 Triangle of numerators of Integrate[LegendreP[m,x]LegendreP[n,x],{x,0,1}].
+ * A078297 Triangle of numerators of Integral_{x=0..1} LegendreP(m,x) * LegendreP(n,x) dx.
  * @author Sean A. Irvine
  */
 public class A078297 extends Sequence0 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A385202 allocated for Miles Englezou.
+ * A385202 Irregular triangle read by rows: let S be an ordered set of nondivisors of n such that a and b belong to S if a + b = n. T(n,k) is the k-th member of S. If S is empty, T(n,k) = 0.
  * @author Sean A. Irvine
  */
 public class A385202 extends Sequence1 {

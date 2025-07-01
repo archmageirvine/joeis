@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A010568 Number of 2n-step self-avoiding closed paths on a 4-dimensional cubic lattice.
+ * A010568 Number of 2n-step self-avoiding closed paths on the 4-dimensional cubic lattice.
  * @author Sean A. Irvine
  */
 public class A010568 extends Sequence1 {

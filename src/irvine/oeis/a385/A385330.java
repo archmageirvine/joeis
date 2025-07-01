@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078396.
+ * A385330 allocated for Tamas Sandor Nagy.
  * @author Sean A. Irvine
  */
 public class A385330 extends Sequence1 {

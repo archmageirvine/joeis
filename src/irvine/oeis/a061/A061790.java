@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061790 Number of sums i^2 + j^2 that occur more than once for 1 &lt;= i &lt;= j &lt;= n.
+ * A061790 a(n) = A000217(n) - A061786(n).
  * @author Sean A. Irvine
  */
 public class A061790 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A189780 E.g.f.: 1/(1-arcsin(x)).
+ * A189780 Expansion of e.g.f. 1/(1 - arcsin(x)).
  * E.g.f.: 1/(1-arcsin(x))
  * @author Georg Fischer
  */

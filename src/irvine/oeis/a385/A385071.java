@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A385071 allocated for Clark Kimberling.
+ * A385071 a(n) = number of triangular numbers &lt;= n-th tetrahedral number.
  * @author Sean A. Irvine
  */
 public class A385071 extends Sequence0 {

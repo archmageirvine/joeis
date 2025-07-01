@@ -12,7 +12,7 @@ import irvine.util.Permutation;
 import irvine.util.string.StringUtils;
 
 /**
- * A384616 allocated for Sela Fried.
+ * A384616 A(m,n) is the maximum sum of absolute differences of the labels of adjacent vertices of the grid graph P_m X P_n where the m*n labels are exactly 1, 2, ..., m*n.
  * @author Sean A. Irvine
  */
 public class A384616 extends Sequence1 {

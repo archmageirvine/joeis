@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002278;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A099664 a[n] is the largest prime before A002278[n] repdigits.
+ * A099664 a(n) is the largest prime before A002278(n).
  * @author Georg Fischer
  */
 public class A099664 extends TupleTransformSequence {

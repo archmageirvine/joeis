@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.BeattySequence;
 
 /**
- * A172331 Floor(n*(sqrt(13)+sqrt(7))).
+ * A172331 a(n) = floor(n*(sqrt(13)+sqrt(7))).
  * @author Georg Fischer
  */
 public class A172331 extends BeattySequence {

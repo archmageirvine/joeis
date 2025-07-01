@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A188220 Positions of 1 in the zero-one sequence [nr]-[5r]-[nr-5r], where r=sqrt(5), n&gt;=1.
+ * A188220 Positions of 1 in the zero-one sequence [n*r]-[5*r]-[n*r-5*r], where r=sqrt(5), n&gt;=1.
  * @author Georg Fischer
  */
 public class A188220 extends FilterPositionSequence {

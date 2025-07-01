@@ -2614,3 +2614,5 @@ A078356 Minimal positive solution z of Pell equation z^2 - A077426(n)*t^2 = -4.
 A078357 Minimal positive solution x of Pell equation y^2 - A077426(n)*x^2 = -4.
 A078361 Minimal positive solution a(n) of Pell equation a(n)^2 - D(n)*b(n)^2 = +4 or -4 with D(n)=A077425(n). The companion sequence is b(n)=A077058(n).
 A078416 Decimal expansion of Viswanath's constant.
+A078434 Decimal expansion of zeta(3/2).
+A078437 Decimal expansion of sum of alternating series of reciprocals of primes.

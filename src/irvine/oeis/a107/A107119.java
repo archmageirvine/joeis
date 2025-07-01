@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A107119 Numbers n such that phi(n)=(d_1+d_2+...+d_k)*(d_1!+d_2!+...+d_k!) where d_1 d_2...d_k is the decimal expansion of n.
+ * A107119 Numbers m such that phi(m)=(d_1+d_2+...+d_k)*(d_1!+d_2!+...+d_k!) where d_1 d_2...d_k is the decimal expansion of m.
  * @author Georg Fischer
  */
 public class A107119 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A284379 Numbers n with digits 3 and 5 only.
+ * A284379 Numbers k with digits 3 and 5 only.
  * @author Georg Fischer
  */
 public class A284379 extends LambdaSequence {

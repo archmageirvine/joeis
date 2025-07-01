@@ -5,7 +5,7 @@ import irvine.oeis.a014.A014261;
 import irvine.oeis.a014.A014263;
 
 /**
- * A059708 Numbers n such that all digits have same parity.
+ * A059708 Numbers k such that all digits have same parity.
  * @author Sean A. Irvine
  */
 public class A059708 extends UnionSequence {

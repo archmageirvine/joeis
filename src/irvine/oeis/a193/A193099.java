@@ -4,7 +4,7 @@ package irvine.oeis.a193;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A193099  E.g.f. A(x) satisfies: A'(x) = 1 + A(A(A(A(x)))).
+ * A193099 E.g.f. A(x) satisfies: A'(x) = 1 + A(A(A(A(x)))).
  * @author Georg Fischer
  */
 public class A193099 extends PolynomialFieldSequence {

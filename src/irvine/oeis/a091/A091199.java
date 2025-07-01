@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a056.A056900;
 
 /**
- * A091199 Numbers n such that (6n-3)^2 + 2 is prime.
+ * A091199 Numbers k such that (6k-3)^2 + 2 is prime.
  * @author Georg Fischer
  */
 public class A091199 extends Sequence1 {

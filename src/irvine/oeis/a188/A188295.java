@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A188295 [nr]-[nr-r], where r=1/sqrt(2), [ ]=floor.
+ * A188295 a(n) = [n*r]-[n*r-r], where r=1/sqrt(2), [ ]=floor.
  * @author Georg Fischer
  */
 public class A188295 extends Sequence1 {

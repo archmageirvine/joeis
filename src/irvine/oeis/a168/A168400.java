@@ -4,7 +4,7 @@ package irvine.oeis.a168;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A168400 3^n mod 15.
+ * A168400 a(n) = 3^n mod 15.
  * @author Georg Fischer
  */
 public class A168400 extends GeneratingFunctionSequence {

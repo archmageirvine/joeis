@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a019.A019519;
 
 /**
- * A078259 a(n) = denominator(N), where N = 0.135..up to (2n-1)(concatenation 1 to 2n-1 of first n odd numbers after decimal point).
+ * A078259 a(n) = denominator(N), where N = 0.135..(2n-1) is the concatenation of the first n odd numbers after decimal point.
  * @author Sean A. Irvine
  */
 public class A078259 extends A019519 {

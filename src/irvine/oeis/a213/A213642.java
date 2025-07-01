@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000265;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A213642 Primes with subscript that equals odd part of n.
+ * A213642 a(n) = prime(odd part of n).
  * @author Georg Fischer
  */
 public class A213642 extends DirectTransformSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A035109 Numerators in expansion of a certain Dirichlet series.
+ * A035109 Numerators in the expansion of the Dirichlet series zeta(s) * Product((1+p^-s) / (1-p^(1-s))), p &gt; 2.
  * @author Sean A. Irvine
  */
 public class A035109 extends Sequence0 {

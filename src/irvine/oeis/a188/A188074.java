@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A188074 Positions of 1 in the zero-one sequence [nr]-[3r]-[nr-3r], where r=sqrt(3), n&gt;=1.
+ * A188074 Positions of 1 in the zero-one sequence [n*r]-[3*r]-[n*r-3*r], where r=sqrt(3), n&gt;=1.
  * @author Georg Fischer
  */
 public class A188074 extends FilterPositionSequence {

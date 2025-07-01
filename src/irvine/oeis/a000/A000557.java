@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A000557 Expansion of e.g.f.: 1/(1-2*sinh(x)).
+ * A000557 Expansion of e.g.f. 1/(1 - 2*sinh(x)).
  * @author Sean A. Irvine
  */
 public class A000557 extends Sequence0 {

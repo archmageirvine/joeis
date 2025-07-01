@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384728 allocated for Bartlomiej Pawlik.
+ * A384728 The number of different shuffle square roots of the prefix of length 2n of the infinte word 00110011001100...
  * @author Sean A. Irvine
  */
 public class A384728 extends Sequence1 {

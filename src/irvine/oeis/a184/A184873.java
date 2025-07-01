@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 /**
- * A184873 n+floor(nr/t)+floor(ns/t), where r=log(2), s=log(3), t=log(5).
+ * A184873 a(n) = n + floor(nr/t) + floor(ns/t), where r=log(2), s=log(3), t=log(5).
  * @author Georg Fischer
  */
 public class A184873 extends FloorSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 
 /**
- * A083092 Numbers n such that 7*5^n + 2 is a prime.
+ * A083092 Numbers k such that 7*5^k + 2 is a prime.
  * @author Georg Fischer
  */
 public class A083092 extends PowerFactorPrimeSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078345 Numbers n such that F(n) mod n divides F(F(n) mod n) where F(k) denotes the k-th Fibonacci number.
+ * A078345 Numbers k such that F(k) mod k divides F(F(k) mod k) where F(k) denotes the k-th Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A078345 extends Sequence1 {

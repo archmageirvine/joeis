@@ -4,7 +4,7 @@ package irvine.oeis.a070;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A070872 Numbers n such that A070871(n) = n.
+ * A070872 Numbers k such that A070871(k) = k.
  * @author Georg Fischer
  */
 public class A070872 extends FilterPositionSequence {

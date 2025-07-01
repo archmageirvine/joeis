@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A051638 a(n) = sum_{k=0..n} (C(n,k) mod 3).
+ * A051638 a(n) = Sum_{k=0..n} (C(n,k) mod 3).
  * @author Sean A. Irvine
  */
 public class A051638 extends Sequence0 {

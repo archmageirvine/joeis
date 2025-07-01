@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A385073 allocated for Robert G. Wilson v.
+ * A385073 a(n) = b^(n-1) mod n, where b = A053669(n) is the least integer greater than 1 and coprime to n.
  * @author Sean A. Irvine
  */
 public class A385073 extends Sequence1 {

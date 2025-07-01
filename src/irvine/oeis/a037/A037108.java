@@ -5,7 +5,7 @@ package irvine.oeis.a037;
 import irvine.oeis.a033.A033962;
 
 /**
- * A037108 Trajectory of 3 under map n-&gt;21n+1 if n odd, n-&gt;n/2 if n even.
+ * A037108 Trajectory of 3 under map n-&gt;21*n+1 if n odd, n-&gt;n/2 if n even.
  * @author Georg Fischer
  */
 public class A037108 extends A033962 {

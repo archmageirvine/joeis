@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a035.A035513;
 
 /**
- * A384602 allocated for Clark Kimberling.
+ * A384602 Numbers k such that T(k, 1) mod 3 = 1 and T(k, 2) mod 3 = 2, where T is the Wythoff array (A035513).
  * @author Sean A. Irvine
  */
 public class A384602 extends A035513 {

@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000027;
 
 /**
- * A259309 Numbers n such that 1 + sigma(n)^4 is prime.
+ * A259309 Numbers k such that 1 + sigma(k)^4 is prime.
  * @author Georg Fischer
  */
 public class A259309 extends FilterSequence {

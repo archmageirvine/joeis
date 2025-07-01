@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077569 Irregular triangle read by rows: row n lists numbers in the range 1 to 2^(n-1) (inclusive) that have exactly n divisors.
+ * A077569 Irregular triangle read by rows: row n lists smallest numbers in increasing order of all possible prime signatures with n divisors.
  * @author Sean A. Irvine
  */
 public class A077569 extends Sequence1 {

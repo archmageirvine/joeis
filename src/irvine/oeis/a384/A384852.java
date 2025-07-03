@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A384852 a(n) = 2*binomial(n, 2) + 3*binomial(n, 3) + 4*binomial(n, 4).
+ * A384852 a(n) = 2*binomial(n,2) + 3*binomial(n,3) + 4*binomial(n,4).
  * @author Georg Fischer
  */
 public class A384852 extends LambdaSequence {

@@ -6,6 +6,7 @@ import java.util.LinkedList;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
+import irvine.util.string.StringUtils;
 
 /**
  * A385330 allocated for Tamas Sandor Nagy.
@@ -13,6 +14,7 @@ import irvine.oeis.Sequence1;
  */
 public class A385330 extends Sequence1 {
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final LinkedList<Integer> mQueuedOutput = new LinkedList<>();
   private final ArrayList<State> mStates = new ArrayList<>();
   private int mN = 0;
@@ -40,7 +42,9 @@ public class A385330 extends Sequence1 {
 
   private void updateList(final int label) {
     if (mK < mStates.size() && mStates.get(mK).mAngle.equals(mAngle)) {
-      //System.out.println("Override: " + mAngle + " " + mN);
+      if (mVerbose) {
+        StringUtils.message("Overwrite occurred: " + mAngle + " " + mN);
+      }
       mStates.set(mK, new State(mAngle, label, mN));
     } else {
       mStates.add(mK, new State(mAngle, label, mN));

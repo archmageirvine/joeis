@@ -4,7 +4,7 @@ package irvine.oeis.a381;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A381359 E.g.f. A(x) satisfies 1 - A&apos;(x)^2 + 4*A(x)^3 = 0.
+ * A381359 E.g.f. A(x) satisfies 1 - A'(x)^2 + 4*A(x)^3 = 0.
  * @author Georg Fischer
  */
 public class A381359 extends PolynomialFieldSequence {

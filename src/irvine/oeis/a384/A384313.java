@@ -6,10 +6,10 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a123.A123744;
 
 /**
- * A384080 allocated for Clark Kimberling.
+ * A384313 allocated for Clark Kimberling.
  * @author Sean A. Irvine
  */
-public class A384080 extends Sequence1 {
+public class A384313 extends Sequence1 {
 
   private long mN = -1;
   private final Sequence mD = new A123744().skip();
@@ -17,7 +17,7 @@ public class A384080 extends Sequence1 {
 
   @Override
   public Z next() {
-    return mD.next().multiply(Z.NEG_ONE.pow(++mN)).subtract(mP.next()).divide2();
+    return mD.next().multiply(Z.NEG_ONE.pow(++mN)).add(mP.next()).divide2();
   }
 }
 

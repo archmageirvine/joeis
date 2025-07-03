@@ -2619,3 +2619,9 @@ A078437 Decimal expansion of sum of alternating series of reciprocals of primes.
 A078460 Initial n digits in decimal portion of the Traveling Salesman constant (A073008) form a prime number.
 A078470 Continued fraction for zeta(3/2) (A078434).
 A078517 Number of different solutions of order n to a certain combinatorial-differential equation
+A078518 Consider primitive solutions (x,y,z) to x^4+y^4+z^4=w^4 with 0<x<=y<=z arranged in order of increasing w; sequence gives x values.
+A078519 Consider primitive solutions (x,y,z) to x^4+y^4+z^4=w^4 with 0<x<=y<=z arranged in order of increasing w; sequence gives y values.
+A078520 Consider primitive solutions (x,y,z) to x^4+y^4+z^4=w^4 with 0<x<=y<=z arranged in order of increasing w; sequence gives z values.
+A078524 Numerator of volume of Birkhoff polytope of n X n doubly-stochastic square matrices.
+A078525 Denominator of volume of Birkhoff polytope of n X n doubly-stochastic square matrices.
+A078526 Probability P(n) of the occurrence of a 2D self-trapping walk of length n.

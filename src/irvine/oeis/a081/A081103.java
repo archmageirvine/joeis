@@ -11,6 +11,6 @@ public class A081103 extends PolynomialFieldSequence {
 
   /** Construct the sequence. */
   public A081103() {
-    super(0, "[0, 1],[1, 1]", "p1,log,p1,log,^2, 2,/,-,p1,log,^3, 6,/,+,p1,/", 0, 1);
+    super(0, "[0,1],[1,1]", "p1,log,p1,log,^2,2,/,-,p1,log,^3,6,/,+,p1,/", 0, 1);
   }
 }

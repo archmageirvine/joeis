@@ -11,6 +11,6 @@ public class A302926 extends PolynomialFieldSequence {
 
   /** Construct the sequence. */
   public A302926() {
-    super(0, "[1]", "x,exp,^2, 4, 2,x,exp,*,-,x,exp,^2,-,/,log", 0, 1);
+    super(0, "[1]", "x,exp,^2,4,2,x,exp,*,-,x,exp,^2,-,/,log", 0, 1);
   }
 }

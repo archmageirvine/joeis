@@ -11,6 +11,6 @@ public class A220433 extends PolynomialFieldSequence {
 
   /** Construct the sequence. */
   public A220433() {
-    super(0, "[0, 1],[0, 1,-1, 1/6]", "p1,rev", 0, 1);
+    super(0, "[0,1],[0,1,-1,1/6]", "p1,rev", 0, 1);
   }
 }

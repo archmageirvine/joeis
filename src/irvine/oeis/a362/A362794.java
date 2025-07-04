@@ -11,6 +11,6 @@ public class A362794 extends PolynomialFieldSequence {
 
   /** Construct the sequence. */
   public A362794() {
-    super(0, "[1],[1, 1]", "p1,A,x,pow,pow", 0, 1);
+    super(0, "[1],[1,1]", "p1,A,x,pow,pow", 0, 1);
   }
 }

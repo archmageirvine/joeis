@@ -11,6 +11,6 @@ public class A232473 extends PolynomialFieldSequence {
 
   /** Construct the sequence. */
   public A232473() {
-    super(3, "[1],[0, 3]", "6,p1,exp,*, 2,x,exp,-,^4,/,*n!,<3");
+    super(3, "[1],[0,3]", "6,p1,exp,*,2,x,exp,-,^4,/,*n!,<3");
   }
 }

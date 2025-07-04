@@ -11,6 +11,6 @@ public class A138191 extends PeriodicSequence {
 
   /** Construct the sequence. */
   public A138191() {
-    super(1, "1, 2, 1, 1");
+    super(1, "1,2,1,1");
   }
 }

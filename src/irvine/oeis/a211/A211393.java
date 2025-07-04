@@ -11,6 +11,6 @@ public class A211393 extends PolynomialFieldSequence {
 
   /** Construct the sequence. */
   public A211393() {
-    super(0, "[1],[1, 0,-1]", "p1,sqrt,x,atanh,<1,exp,*", 0, 1, 0, 2);
+    super(0, "[1],[1,0,-1]", "p1,sqrt,x,atanh,<1,exp,*", 0, 1, 0, 2);
   }
 }

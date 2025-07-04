@@ -12,6 +12,6 @@ public class A385422 extends PolynomialFieldSequence {
 
   /** Construct the sequence. */
   public A385422() {
-    super(0, "[1],[0, 3]", "1, 1,p1,asin,-,^1/3,/", 0, 1);
+    super(0, "[1],[0,3]", "1,1,p1,asin,-,^1/3,/", 0, 1);
   }
 }

@@ -11,6 +11,6 @@ public class A232474 extends PolynomialFieldSequence {
 
   /** Construct the sequence. */
   public A232474() {
-    super(4, "[1],[0, 4]", "24,p1,exp,*, 2,x,exp,-,^5,/,*n!,<4");
+    super(4, "[1],[0,4]", "24,p1,exp,*,2,x,exp,-,^5,/,*n!,<4");
   }
 }

@@ -11,6 +11,6 @@ public class A191415 extends PolynomialFieldSequence {
 
   /** Construct the sequence. */
   public A191415() {
-    super(1, "[0, 1]", "x, 1,A,-,A,neg,pow,*", 0, 1);
+    super(1, "[0,1]", "x,1,A,-,A,neg,pow,*", 0, 1);
   }
 }

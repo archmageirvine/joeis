@@ -18,7 +18,10 @@ public class A384079 extends Sequence0 {
 
   @Override
   public Z next() {
-    final Matrix<Z> m = new DefaultMatrix<>(++mN, mN, Z.ZERO);
+    if (++mN == 0) {
+      return Z.ONE;
+    }
+    final Matrix<Z> m = new DefaultMatrix<>(mN, mN, Z.ZERO);
     for (long r = 0; r < mN; ++r) {
       for (long c = 0; c < mN; ++c) {
         m.set(r, c, Functions.FIBONACCI.z((r + c) % mN));

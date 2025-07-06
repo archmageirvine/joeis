@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064362 Numbers n such that no Lucas number is a multiple of n.
+ * A064362 Numbers k such that no Lucas number is a multiple of k.
  * @author Sean A. Irvine
  */
 public class A064362 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000607;
 
 /**
- * A384033 allocated for Michael Terhoeven.
+ * A384033 a(n) is the number of solutions to n = sopfr(k*sopfr(n)) where sopfr(m) is sum of prime factors of m counted with multiplicity.
  * @author Sean A. Irvine
  */
 public class A384033 extends Sequence1 {

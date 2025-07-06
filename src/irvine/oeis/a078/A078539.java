@@ -8,7 +8,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a020.A020492;
 
 /**
- * A078122.
+ * A078539 Least non-balanced x (i.e., not in A020492) such that sigma(2n-1,x)/phi(x) is an integer.
  * @author Sean A. Irvine
  */
 public class A078539 extends Sequence2 {

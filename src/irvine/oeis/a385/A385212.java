@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a008.A008966;
 
 /**
- * A385212 a(n) = n^(mu(n)^2), where mu is the M√∂bius function (A008683).
+ * A385212 a(n) = n^(mu(n)^2), where mu is the M\u00f6bius function (A008683).
  * @author Georg Fischer
  */
 public class A385212 extends LambdaSequence {

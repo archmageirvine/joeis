@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A180449 Primes of the form floor( (n*(sqrt(3)*n-1))/sqrt(2) ).
+ * A180449 Primes of the form floor( (k*(sqrt(3)*k-1))/sqrt(2) ).
  * @author Georg Fischer
  */
 public class A180449 extends FilterSequence {

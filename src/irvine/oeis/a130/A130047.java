@@ -6,7 +6,7 @@ import irvine.oeis.a034.A034868;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A130047 Left half of Pascal&apos;s triangle (A034868) modulo 2.
+ * A130047 Left half of Pascal's triangle (A034868) modulo 2.
  * @author Georg Fischer
  */
 public class A130047 extends SingleTransformSequence {

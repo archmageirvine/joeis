@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A078523.
+ * A078530 Bilinear recursive sequence.
  * @author Sean A. Irvine
  */
 public class A078530 extends Sequence0 {

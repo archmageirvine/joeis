@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A155780 Primes p such that 2^p+11 is a prime
+ * A155780 Primes p such that 2^p+11 is a prime.
  * @author Georg Fischer
  */
 public class A155780 extends FilterSequence {

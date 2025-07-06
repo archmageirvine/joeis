@@ -5,12 +5,13 @@ import irvine.math.api.Group;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
-
 /**
  * A Galois field.
  * @author Sean A. Irvine
  */
 public class GaloisField extends IntegersMod implements Field<Z> {
+
+  // WARNING: I'm not convinced this works entirely correctly, for p^k, k > 1.
 
   private final Z mCharacteristic;
   private final int mExponent;
@@ -281,7 +282,13 @@ public class GaloisField extends IntegersMod implements Field<Z> {
 
   @Override
   public Z inverse(final Z element) {
-    return element.modInverse(size());
+    if (mExponent == 1) {
+      return element.modInverse(size());
+    }
+    if (mIrreducible != null) {
+      return pack(mBaseField.mod(mBaseField.inverse(unpack(mBaseField, element)), mIrreducible));
+    }
+    throw new UnsupportedOperationException("Please update GaloisField with irreducible polynomial for " + this);
   }
 
   @Override
@@ -327,6 +334,17 @@ public class GaloisField extends IntegersMod implements Field<Z> {
     }
     if (mIrreducible != null) {
       return pack(mBaseField.mod(mBaseField.multiply(unpack(mBaseField, a), unpack(mBaseField, b)), mIrreducible));
+    }
+    throw new UnsupportedOperationException("Please update GaloisField with irreducible polynomial for " + this);
+  }
+
+  @Override
+  public Z add(final Z a, final Z b) {
+    if (mExponent == 1) {
+      return super.add(a, b);
+    }
+    if (mIrreducible != null) {
+      return pack(mBaseField.mod(mBaseField.add(unpack(mBaseField, a), unpack(mBaseField, b)), mIrreducible));
     }
     throw new UnsupportedOperationException("Please update GaloisField with irreducible polynomial for " + this);
   }

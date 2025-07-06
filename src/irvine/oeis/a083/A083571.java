@@ -7,7 +7,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A083571 Numbers n such that A008509(n) is prime.
+ * A083571 Numbers k such that A008509(k) is prime.
  * @author Georg Fischer
  */
 public class A083571 extends PrimePositionSubsequence {

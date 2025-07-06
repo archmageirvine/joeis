@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a033.A033620;
 
 /**
- * A046369 Numbers with exactly 3 palindromic prime factors (counted with multiplicity).
+ * A046369 Numbers with exactly 3 prime factors (counted with multiplicity), all of which are palindromes.
  * @author Sean A. Irvine
  */
 public class A046369 extends A033620 {

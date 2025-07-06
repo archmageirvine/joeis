@@ -4,7 +4,7 @@ package irvine.oeis.a208;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A208425 G.f.: Sum_{n&gt;=0} (3*n)!/n!^3 * x^(2*n)/(1-x)^(3*n+1).
+ * A208425 Expansion of Sum_{n&gt;=0} (3*n)!/n!^3 * x^(2*n)/(1-x)^(3*n+1).
  * @author Georg Fischer
  */
 public class A208425 extends HolonomicRecurrence {

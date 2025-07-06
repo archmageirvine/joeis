@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000037;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A384924 allocated for Felix Huber.
+ * A384924 a(n) is the position of the first occurrence of the digit 0 among the leading significant decimal digits of the square root of the n-th nonsquare.
  * @author Sean A. Irvine
  */
 public class A384924 extends A000037 {

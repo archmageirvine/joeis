@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a033.A033950;
 
 /**
- * A078122.
+ * A078541 Refactorable numbers x, such that quotient x/A000005(x) equals a power of 2.
  * @author Sean A. Irvine
  */
 public class A078541 extends A033950 {

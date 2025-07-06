@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 /**
- * A196535 Decimal expansion of sum_{j=0..infinity} exp(-Pi*(2j+1)^2).
+ * A196535 Decimal expansion of Sum_{j=0..oo} exp(-Pi*(2*j+1)^2).
  * Formula: (2^(1/4)-1)*Gamma(1/4)/(2^(11/4)*Pi^(3/4))
  * @author Georg Fischer
  */

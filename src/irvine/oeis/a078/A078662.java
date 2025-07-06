@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a020.A020492;
 
 /**
- * A078122.
+ * A078662 Number of balanced numbers &lt;= 2^n.
  * @author Sean A. Irvine
  */
 public class A078662 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078523.
+ * A385232 Numbers that can be written as s^x + t^y, with 1 &lt; s &lt; t and {s,t} = {x,y}; that is, are of the form s^s + t^t or s^t + t^s.
  * @author Sean A. Irvine
  */
 public class A385232 extends Sequence1 {

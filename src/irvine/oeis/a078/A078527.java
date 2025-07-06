@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A078528 Number of unconstrained walks on square lattice trapped after n steps.
+ * A078527 Number of maximally 2-constrained walks on square lattice trapped after n steps.
  * @author Sean A. Irvine
  */
 public class A078527 extends AbstractSequence {

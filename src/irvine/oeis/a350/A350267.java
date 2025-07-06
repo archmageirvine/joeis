@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A350267 a(n) = n*hypergeom([1, 1 - n, -n], [2], 1) if n &gt;= 1, a(0) = 1.
+ * A350267 a(n) = n*hypergeom([1, 1 - n, -n], [2], 1).
  * a(n) = sum(k=1,n,binom(n,k)^2 * k! / (n - k + 1),)
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A083795 Numbers n such that n and n-1 have the same number of divisors. Numbers not included in A083794.
+ * A083795 Numbers k such that k and k-1 have the same number of divisors. Numbers not included in A083794.
  * @author Georg Fischer
  */
 public class A083795 extends FilterNumberSequence {

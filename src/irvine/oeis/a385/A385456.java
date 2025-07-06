@@ -6,7 +6,7 @@ import irvine.oeis.a010.A010048;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A385456 Triangle, read by rows, formed by reading Fibonomial coefficients (A010048) mod 2.
+ * A385456 Triangle read by rows, formed by reading Fibonomial coefficients (A010048) mod 2.
  * @author Georg Fischer
  */
 public class A385456 extends SingleTransformSequence {

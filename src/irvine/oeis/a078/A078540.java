@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a020.A020492;
 
 /**
- * A078122.
+ * A078540 Least non-balanced x (i.e., not in A020492) such that sigma(p(n),x)/phi(x) is an integer, where p(n) = n-th prime.
  * @author Sean A. Irvine
  */
 public class A078540 extends A000040 {

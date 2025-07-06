@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A078523.
+ * A145515 Square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals: A(n,k) is the number of partitions of k^n into powers of k.
  * @author Sean A. Irvine
  */
 public class A145515 extends Sequence0 {

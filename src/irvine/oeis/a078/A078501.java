@@ -6,7 +6,7 @@ package irvine.oeis.a078;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A078501 a(n) = sum(k=1,n^2, A078446(k)).
+ * A078501 a(n) = Sum_{k=1..n^2} A078446(k).
  * @author Georg Fischer
  */
 public class A078501 extends GeneratingFunctionSequence {

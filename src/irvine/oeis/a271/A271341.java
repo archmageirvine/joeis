@@ -4,7 +4,7 @@ package irvine.oeis.a271;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A271341 Somos&apos;s sequence {a(4,n)} defined in comment in A018896.
+ * A271341 Somos's sequence {a(4,n)} defined in comment in A018896.
  * @author Georg Fischer
  */
 public class A271341 extends MultiTransformSequence {

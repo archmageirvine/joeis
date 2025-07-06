@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A078122.
+ * A078538 Smallest k &gt; 6 such that sigma_n(k)/phi(k) is an integer.
  * @author Sean A. Irvine
  */
 public class A078538 extends Sequence1 {

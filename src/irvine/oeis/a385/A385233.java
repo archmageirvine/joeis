@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078523.
+ * A385233 Numbers that can be written as s^x + t^y + u^z with 1 &lt; s &lt; t &lt; u and {s,t,u} = {x,y,z} (the sequence of exponents can be any permutation of s,t,u).
  * @author Sean A. Irvine
  */
 public class A385233 extends Sequence1 {

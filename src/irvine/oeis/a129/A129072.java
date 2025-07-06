@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A129072 Numbers n such that (n-13)/12 is prime.
+ * A129072 Numbers k such that (k-13)/12 is prime.
  * @author Georg Fischer
  */
 public class A129072 extends SimpleTransformSequence {

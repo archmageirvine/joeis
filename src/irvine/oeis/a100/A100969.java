@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.a099.A099542;
 
 /**
- * A100969 Integers n that are Rhonda numbers to base 6.
+ * A100969 Integers that are Rhonda numbers to base 6.
  * @author Georg Fischer
  */
 public class A100969 extends A099542 {

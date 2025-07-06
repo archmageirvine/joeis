@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A078122 Infinite lower triangular matrix, M, that satisfies [M^3](i,j) = M(i+1,j+1) for all i,j&gt;=0 where [M^n](i,j) denotes the element at row i, column j, of the n-th power of matrix M, with M(0,k)=1 and M(k,k)=1 for all k&gt;=0.
+ * A078536 Infinite lower triangular matrix, M, that satisfies [M^4](i,j) = M(i+1,j+1) for all i,j&gt;=0 where [M^n](i,j) denotes the element at row i, column j, of the n-th power of matrix M, with M(0,k)=1 and M(k,k)=1 for all k&gt;=0.
  * @author Sean A. Irvine
  */
 public class A078536 extends Sequence0 {

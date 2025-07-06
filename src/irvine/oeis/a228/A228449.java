@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A228449 floor(n! / 4^n).
+ * A228449 a(n) = floor(n! / 4^n).
  * a(n)=floor(n!/4^n)
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A083794 Numbers n such that tau(n) is different from tau(n-1), where tau(m) = number of divisors of m.
+ * A083794 Numbers k such that tau(k) is different from tau(k-1), where tau(m) = number of divisors of m.
  * @author Georg Fischer
  */
 public class A083794 extends FilterNumberSequence {

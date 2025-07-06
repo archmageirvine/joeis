@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A129070 Numbers n such that (n-5)/4 is prime.
+ * A129070 Numbers k such that (k-5)/4 is prime.
  * @author Georg Fischer
  */
 public class A129070 extends SimpleTransformSequence {

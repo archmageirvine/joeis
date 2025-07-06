@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000037;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A384923 allocated for Felix Huber.
+ * A384923 a(n) is the smallest number of leading significant digits of the square root of the n-th nonsquare that includes all decimal digits.
  * @author Sean A. Irvine
  */
 public class A384923 extends A000037 {

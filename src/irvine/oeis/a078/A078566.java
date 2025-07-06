@@ -5,7 +5,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A381961.
+ * A078566 Number of (simple, undirected, unlabeled, connected) graphs with n vertices which contain no induced subgraph isomorphic to a C5 (the cycle on 5 vertices).
  * @author Sean A. Irvine
  */
 public class A078566 extends ParallelGenerateGraphsSequence {

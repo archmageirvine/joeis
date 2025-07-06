@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A260558 Numbers n such that (n^29+1)/(n+1) is prime.
+ * A260558 Numbers k such that (k^29+1)/(k+1) is prime.
  * @author Georg Fischer
  */
 public class A260558 extends Sequence1 {

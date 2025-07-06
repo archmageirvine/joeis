@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078523.
+ * A173054 Numbers of the form x^y + y^x, 1 &lt; x &lt; y.
  * @author Sean A. Irvine
  */
 public class A173054 extends Sequence1 {

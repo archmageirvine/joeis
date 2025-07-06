@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.FixedPointPositionSequence;
 
 /**
- * A064420 Numbers n such that A064413(n+1) = n. Probably complete.
+ * A064420 Numbers k such that A064413(k+1) = k. Probably complete.
  * @author Sean A. Irvine
  */
 public class A064420 extends FixedPointPositionSequence {

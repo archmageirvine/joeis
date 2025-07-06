@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001223;
 
 /**
- * A078122.
+ * A078563 a(n) is the least positive integer k such that g(k) = n*g(k-1), where g(k) = prime(k+1) - prime(k).
  * @author Sean A. Irvine
  */
 public class A078563 extends Sequence1 {

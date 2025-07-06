@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A078523.
+ * A385451 Least integer k such that the sum of its anti-divisors is equal to k + n.
  * @author Sean A. Irvine
  */
 public class A385451 extends Sequence0 {

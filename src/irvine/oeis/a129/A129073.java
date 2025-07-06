@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A129073 Numbers n such that (n-8)/7 is prime.
+ * A129073 Numbers k such that (k-8)/7 is prime.
  * @author Georg Fischer
  */
 public class A129073 extends SimpleTransformSequence {

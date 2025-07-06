@@ -5,7 +5,7 @@ package irvine.oeis.a101;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A101397 Numbers n such that 4*10^n+3 is prime.
+ * A101397 Numbers k such that 4*10^k+3 is prime.
  * @author Georg Fischer
  */
 public class A101397 extends PowerFactorPrimeSequence {

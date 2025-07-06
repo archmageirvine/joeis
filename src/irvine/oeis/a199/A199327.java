@@ -4,7 +4,7 @@ package irvine.oeis.a199;
 import irvine.oeis.a214.A214703;
 
 /**
- * A199327 Primes with digits &apos;0&apos;, &apos;1&apos; and &apos;7&apos; only.
+ * A199327 Primes with digits '0', '1' and '7' only.
  * @author Georg Fischer
  */
 public class A199327 extends A214703 {

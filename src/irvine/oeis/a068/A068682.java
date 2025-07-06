@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068682 Numbers n such that the concatenations n, n-2, n and n, n+2, n are primes.
+ * A068682 Numbers k such that the concatenations k, k-2, k and k, k+2, k are primes.
  * @author Sean A. Irvine
  */
 public class A068682 extends Sequence1 {

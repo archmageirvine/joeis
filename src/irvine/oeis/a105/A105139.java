@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A105139 Numbers n such that 512n+257 is prime.
+ * A105139 Numbers k such that 512*k+257 is prime.
  * @author Georg Fischer
  */
 public class A105139 extends PrimePositionSubsequence {

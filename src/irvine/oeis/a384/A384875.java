@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A384875 Irregular triangle T(n,k) = 2^(m-k) * nextprime(2^(n-2(m-k))), with m = floor(n/3) and k = 0..m-1.
+ * A384875 Irregular triangle T(n,k) = 2^(floor(n/3)-k) * nextprime(2^(n-2*(floor(n/3)-k))), with k = 0..floor(n/3)-1.
  * @author Georg Fischer
  */
 public class A384875 extends LambdaTable {

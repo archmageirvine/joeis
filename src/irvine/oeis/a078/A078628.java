@@ -12,11 +12,14 @@ import irvine.oeis.a165.A165964;
  */
 public class A078628 extends Sequence1 {
 
-  private final DirectSequence mC = DirectSequence.create(new A165964());
+  // Implements the various recurrences in Dymacek and Lambert
+
+  private final DirectSequence mCStar = DirectSequence.create(new A165964());
   private int mN = 0;
 
   private final MemoryFunction1<Z> mB1 = new MemoryFunction1<>() {
-    // b1(n) = b^{*n}_{0,1...n-2,n-1} in Dymacek and Lambert
+    // b1(n) = b^{*n}_{0,1..n-2,n-1}
+    // Column 1 of Table 2
     @Override
     protected Z compute(final int n) {
       if (n <= 5) {
@@ -34,6 +37,7 @@ public class A078628 extends Sequence1 {
 
   private final MemoryFunction1<Z> mB2 = new MemoryFunction1<>() {
     // b2(n) = b^{*n}_{0..n-2,n-1}
+    // Column 2 of Table 2
     @Override
     protected Z compute(final int n) {
       if (n < 5) {
@@ -51,6 +55,7 @@ public class A078628 extends Sequence1 {
 
   private final MemoryFunction1<Z> mB3 = new MemoryFunction1<>() {
     // b3(n) = b^{*n}_{0..n-1}
+    // Column 3 of Table 2
     @Override
     protected Z compute(final int n) {
       if (n < 5) {
@@ -62,7 +67,7 @@ public class A078628 extends Sequence1 {
       if (n == 6) {
         return Z.valueOf(16);
       }
-      return mC.a(n - 1).add(mB1.get(n - 2));
+      return mCStar.a(n - 1).add(mB1.get(n - 2));
     }
   };
 
@@ -71,7 +76,7 @@ public class A078628 extends Sequence1 {
     if (++mN < 3) {
       return Z.ONE;
     }
-    return mC.a(mN).subtract(mB1.get(mN).multiply2()).subtract(mB1.get(mN + 1).multiply(4));
+    return mCStar.a(mN).subtract(mB1.get(mN).multiply2()).subtract(mB1.get(mN + 1).multiply(4));
   }
 }
 

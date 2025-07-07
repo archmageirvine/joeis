@@ -4,7 +4,7 @@ package irvine.oeis.a080;
 import irvine.oeis.recur.PaddingSequence;
 
 /**
- * A080867 Dorey&apos;s period-90 sequence (periodic from a(1)=1 onward).
+ * A080867 Dorey's period-90 sequence (periodic from a(1)=1 onward).
  * @author Georg Fischer
  */
 public class A080867 extends PaddingSequence {

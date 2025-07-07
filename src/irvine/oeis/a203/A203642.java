@@ -4,7 +4,7 @@ package irvine.oeis.a203;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A203642 Number of arrays of n 0..11 integers with new values introduced in order 0..11 but otherwise unconstrained
+ * A203642 Number of arrays of n 0..11 integers with new values introduced in order 0..11 but otherwise unconstrained.
  * @author Georg Fischer
  */
 public class A203642 extends HolonomicRecurrence {

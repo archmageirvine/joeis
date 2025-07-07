@@ -2626,3 +2626,4 @@ A078524 Numerator of volume of Birkhoff polytope of n X n doubly-stochastic squa
 A078525 Denominator of volume of Birkhoff polytope of n X n doubly-stochastic square matrices.
 A078526 Probability P(n) of the occurrence of a 2D self-trapping walk of length n.
 A078598 Primes p for which one of the two factors in the factorization of the polynomial Sum_{i=0..p-1} p^i*x^(2i) has only positive coefficients.
+A078600 Number of permutation polynomials over F_q of degree < q-2, as q runs through the prime powers >= 2.

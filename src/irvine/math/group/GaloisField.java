@@ -344,7 +344,7 @@ public class GaloisField extends IntegersMod implements Field<Z> {
       return super.add(a, b);
     }
     if (mIrreducible != null) {
-      return pack(mBaseField.mod(mBaseField.add(unpack(mBaseField, a), unpack(mBaseField, b)), mIrreducible));
+      return pack(mBaseField.mod(mBaseField.add(unpack(mBaseField, a), unpack(mBaseField, b)), mIrreducible)).mod(size());
     }
     throw new UnsupportedOperationException("Please update GaloisField with irreducible polynomial for " + this);
   }

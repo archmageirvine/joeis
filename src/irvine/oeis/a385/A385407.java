@@ -4,7 +4,7 @@ package irvine.oeis.a385;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A385407 Number of strings of length n defined on {0, 1, 2, 3} that contain one or no 1&apos;s, two or no 2&apos;s, three or no 3&apos;s and any number of 0&apos;s.
+ * A385407 Number of strings of length n defined on {0, 1, 2, 3} that contain one or no 1's, two or no 2's, three or no 3's and any number of 0's.
  * @author Georg Fischer
  */
 public class A385407 extends HolonomicRecurrence {

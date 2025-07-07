@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RationalLambdaSequence;
 
 /**
- * A262856 Numerators of the Nielsen-Jacobsthal series leading to Euler&apos;s constant.
+ * A262856 Numerators of the Nielsen-Jacobsthal series leading to Euler's constant.
  * @author Georg Fischer
  */
 public class A262856 extends RationalLambdaSequence {

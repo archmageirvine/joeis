@@ -4,7 +4,7 @@ package irvine.oeis.a360;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A360418 Numbers k such that, in a listing of all congruence classes of positive integers, the k-th congruence class contains k. Here the class r mod m (with r in {1,...,m}) precedes the class a&apos; mod b&apos; (with r&apos; in {1,...,m&apos;}) iff m &lt; m&apos; or r &gt; r&apos;.
+ * A360418 Numbers k such that, in a listing of all congruence classes of positive integers, the k-th congruence class contains k. Here the class r mod m (with r in {1,...,m}) precedes the class a' mod b' (with r' in {1,...,m'}) iff m &lt; m' or r &gt; r'.
  * @author Georg Fischer
  */
 public class A360418 extends HolonomicRecurrence {

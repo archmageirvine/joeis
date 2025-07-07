@@ -4,7 +4,7 @@ package irvine.oeis.a385;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A385312 a(n) is the number of ternary strings of length n with at least one 0, at least two 1&apos;s and at least three 2&apos;s.
+ * A385312 a(n) is the number of ternary strings of length n with at least one 0, at least two 1's and at least three 2's.
  * @author Georg Fischer
  */
 public class A385312 extends HolonomicRecurrence {

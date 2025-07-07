@@ -4,7 +4,7 @@ package irvine.oeis.a366;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A366829 Number of 9-step self-avoiding king&apos;s tours on an n X n board summed over all starting positions.
+ * A366829 Number of 9-step self-avoiding king's tours on an n X n board summed over all starting positions.
  * @author Georg Fischer
  */
 public class A366829 extends HolonomicRecurrence {

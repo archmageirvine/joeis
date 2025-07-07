@@ -28,9 +28,6 @@ public class A078628 extends Sequence1 {
       if (n == 6) {
         return Z.ONE;
       }
-      if (n == 7) {
-        return Z.TWO;
-      }
       return mB2.get(n - 1).subtract(mB1.get(n - 1));
     }
   };
@@ -40,14 +37,8 @@ public class A078628 extends Sequence1 {
     // Column 2 of Table 2
     @Override
     protected Z compute(final int n) {
-      if (n < 5) {
-        return Z.ZERO;
-      }
-      if (n == 5) {
-        return Z.ONE;
-      }
-      if (n == 6) {
-        return Z.THREE;
+      if (n <= 5) {
+        return n == 5 ? Z.ONE : Z.ZERO;
       }
       return mB3.get(n - 1).subtract(mB2.get(n - 1));
     }
@@ -60,12 +51,6 @@ public class A078628 extends Sequence1 {
     protected Z compute(final int n) {
       if (n < 5) {
         return Z.ZERO;
-      }
-      if (n == 5) {
-        return Z.FOUR;
-      }
-      if (n == 6) {
-        return Z.valueOf(16);
       }
       return mCStar.a(n - 1).add(mB1.get(n - 2));
     }

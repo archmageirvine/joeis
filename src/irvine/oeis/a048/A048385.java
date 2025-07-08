@@ -10,42 +10,36 @@ import irvine.oeis.DirectSequence;
  */
 public class A048385 extends AbstractSequence implements DirectSequence {
 
+  protected final String[] mExpansions;
+  private int mN;
+
+  /** Construct the sequence. */
+  public A048385() {
+    this(0);
+  }
+
   /**
    * Constructor with offset.
    * @param offset first index
    */
   protected A048385(final int offset) {
+    this(offset, new String[] {"0", "1", "4", "9", "16", "25", "36", "49", "64", "81"});
+  }
+
+  /**
+   * Constructor with offset and expansions.
+   * @param offset first index
+   * @param expansions how to expand each digit
+   */
+  public A048385(final int offset, final String[] expansions) {
     super(offset);
+    mExpansions = expansions;
+    mN = offset - 1;
   }
-
-  /** Construct the sequence. */
-  public A048385() {
-    super(0);
-  }
-
-  static final String[] EXPANSIONS = {
-    "0",
-    "1",
-    "4",
-    "9",
-    "61", // we do a reverse later!
-    "52",
-    "63",
-    "94",
-    "46",
-    "18"
-  };
-  private long mN = -1;
 
   @Override
   public Z next() {
-    final StringBuilder sb = new StringBuilder();
-    long m = ++mN;
-    do {
-      sb.append(EXPANSIONS[(int) (m % 10)]);
-      m /= 10;
-    } while (m != 0);
-    return new Z(sb.reverse());
+    return a(++mN);
   }
 
   @Override
@@ -53,15 +47,21 @@ public class A048385 extends AbstractSequence implements DirectSequence {
     final StringBuilder sb = new StringBuilder();
     long m = n;
     do {
-      sb.append(EXPANSIONS[(int) (m % 10)]);
+      sb.insert(0, mExpansions[(int) (m % 10)]);
       m /= 10;
     } while (m != 0);
-    return new Z(sb.reverse());
+    return new Z(sb);
   }
 
   @Override
   public Z a(final Z n) {
-    return a(n.intValueExact());
+    final StringBuilder sb = new StringBuilder();
+    Z m = n;
+    do {
+      sb.insert(0, mExpansions[(int) (m.mod(10))]);
+      m = m.divide(10);
+    } while (!m.isZero());
+    return new Z(sb);
   }
 
 }

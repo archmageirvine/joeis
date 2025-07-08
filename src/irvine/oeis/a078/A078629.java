@@ -14,7 +14,7 @@ public class A078629 extends Sequence1 {
   private int mN = 0;
   private int[] mPerm;
 
-  private boolean nextPermutation(int n) {
+  private boolean nextPermutation(final int n) {
     int i = n - 2;
     while (i >= 0 && mPerm[i] >= mPerm[i + 1]) {
       --i;
@@ -41,8 +41,8 @@ public class A078629 extends Sequence1 {
   public Z next() {
     ++mN;
     mPerm = new int[2 * mN + 2];
-    int ntrue = 2 * mN;
-    int n = ntrue - 1;
+    final int ntrue = 2 * mN;
+    final int n = ntrue - 1;
     long count = 0;
 
     mPerm[ntrue - 1] = 2 * mN;

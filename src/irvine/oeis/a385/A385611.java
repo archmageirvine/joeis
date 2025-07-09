@@ -9,19 +9,19 @@ import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
 
 /**
- * A385233 Numbers that can be written as s^x + t^y + u^z with 1 &lt; s &lt; t &lt; u and {s,t,u} = {x,y,z} (the sequence of exponents can be any permutation of s,t,u).
+ * A385611 allocated for Jean-Marc Rebert.
  * @author Sean A. Irvine
  */
-public class A385233 extends Sequence1 {
+public class A385611 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
-  private int mN = 4;
+  private int mN = 5;
 
   @Override
   public Z next() {
     while (mA.isEmpty() || mA.first().compareTo(Z.ONE.shiftLeft(mN).add(mN * mN)) > 0) { // This condition could be made tighter
       final Bumper bumper = BumperFactory.increasing(mN);
-      final int[] b = {2, 3};
+      final int[] b = {2, 3, 4};
       do {
         final Permutation perm = new Permutation(b.length + 1);
         int[] p;

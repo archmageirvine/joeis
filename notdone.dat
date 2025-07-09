@@ -144,7 +144,6 @@ A002543 Post functions, insufficient detail
 A002558 Insufficient detail, Bernoulli numbers, Dirichlet series [ens-001_1960_6_1_a_003_d.pdf]
 A002560 Graph counting, paper in French, have paper, no obvious formula
 A002631 Insufficient detail, foster1932.pdf, possibly in error
-A002632 Insufficient detail, foster1932.pdf, possibly in error
 A002685 Numerical integration coefficients, have paper, might be possible
 A002686 Numerical integration coefficients, have paper, might be possible
 A002769 Discriminants quartic fields, paper available, looks really hard
@@ -2238,9 +2237,6 @@ A066510 Conjectured list of positive numbers which are not of the form r^i-s^j, 
 A066514 Number of subgroups of the group GL(2,Z_n) of invertible 2 X 2 matrices mod n (sequence A000252)
 A066517 Continued fraction expansion of Artin constant of rank 2: product(1-1/(p^3-p^2), p=prime).
 A066541 Number of normal subgroups of the group GL(2,Z_n) of invertible 2 X 2 matrices mod n (sequence A000252).
-A066544 Number of spanning trees in the line graph of the product of two star graphs, each of order n, L(S_n x S_n).
-A066545 Number of spanning trees in the line graph of the product of two complete graph, each of order n, L(K_n x K_n)
-A066546 Number of spanning trees in the line graph of the product of two (2 x n) grid graphs.
 A066634 Number of triangulations of the cyclic polytope C(n, n-5).
 A066654 Continued fraction for the Hardy-Littlewood constant Product_{p prime >= 5} (1-(3*p-1)/(p-1)^3)
 A066701 Triangle giving number of nonisomorphic minimal covering designs with parameters (n, k, k-1) (designs achieving the covering number C(n,k,k-1) given in A066010), for n >= 2, 2 <= k <= n.
@@ -2627,3 +2623,6 @@ A078525 Denominator of volume of Birkhoff polytope of n X n doubly-stochastic sq
 A078526 Probability P(n) of the occurrence of a 2D self-trapping walk of length n.
 A078598 Primes p for which one of the two factors in the factorization of the polynomial Sum_{i=0..p-1} p^i*x^(2i) has only positive coefficients.
 A078600 Number of permutation polynomials over F_q of degree < q-2, as q runs through the prime powers >= 2.
+A078630 Numerators of coefficients of asymptotic expansion of probability p(n) (see A002816) in powers of 1/n.
+A078631 Denominators of coefficients of asymptotic expansion of probability p(n) (see A002816) in powers of 1/n.
+A078639 Number of nonisomorphic graphic matroids (by rank or number of vertices).

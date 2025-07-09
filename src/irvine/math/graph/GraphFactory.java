@@ -355,4 +355,39 @@ public final class GraphFactory {
     }
     return g;
   }
+
+  /**
+   * Create the star graph with n vertices (one center vertex and n-1 leaves).
+   * @param n number of vertices
+   * @return star graph
+   */
+  public static Graph star(final int n) {
+    final Graph g = GraphFactory.create(n);
+    for (int k = 1; k < n; ++k) {
+      g.addEdge(0, k);
+    }
+    return g;
+  }
+
+  /**
+   * Construct the grid graph of given dimensions.
+   * @param n first dimension
+   * @param m second dimension
+   * @return grid graph
+   */
+  public static Graph grid(final int n, final int m) {
+    final Graph g = GraphFactory.create(n * m);
+    for (int k = 0; k < n; ++k) {
+      for (int j = 0; j < m; ++j) {
+        if (k != n - 1) {
+          g.addEdge(k * m + j, (k + 1) * m + j);
+        }
+        if (j != m - 1) {
+          g.addEdge(k * m + j, k * m + j + 1);
+        }
+      }
+    }
+    return g;
+  }
+
 }

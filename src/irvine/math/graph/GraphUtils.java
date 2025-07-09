@@ -21,7 +21,8 @@ import irvine.math.api.Field;
 import irvine.math.api.Matrix;
 import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
-import irvine.math.group.MatrixRing;
+import irvine.math.group.IntegerField;
+import irvine.math.group.MatrixField;
 import irvine.math.group.PolynomialRing;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.group.SymmetricGroup;
@@ -40,7 +41,6 @@ import irvine.math.q.Rationals;
 import irvine.math.r.Constants;
 import irvine.math.r.DoubleUtils;
 import irvine.math.z.Binomial;
-import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.util.Pair;
 
@@ -306,7 +306,7 @@ public final class GraphUtils {
         }
       }
     }
-    return new MatrixRing<>(n - 1, Integers.SINGLETON).det(matrix);
+    return new MatrixField<>(n - 1, IntegerField.SINGLETON).det(matrix);
   }
 
   private static int postorder(final Graph graph, final int[] el, final int[] pa, final boolean[] visited, final int v, final int parent, int k) {
@@ -1257,6 +1257,35 @@ public final class GraphUtils {
     final OptionBlk opt = new OptionBlk();
     opt.setCanon(1);
     return new Nauty(g, new int[n], new int[n], new NautySet(n), new int[n], opt, new StatsBlk(), new long[100]).canon();
+  }
+
+  /**
+   * Box product (also called Cartesian product) of two graphs.
+   * @param g first graph
+   * @param h second graph
+   * @return product
+   */
+  public static Graph boxProduct(final Graph g, final Graph h) {
+    final int sg = g.order();
+    final int sh = h.order();
+    final Graph prod = GraphFactory.create(sg * sh);
+    // Transfer edges from g
+    for (int u = 0; u < sg; ++u) {
+      for (int v = g.nextVertex(u, u); v >= 0; v = g.nextVertex(u, v)) {
+        for (int k = 0; k < sh; ++k) {
+          prod.addEdge(u + k * sh, v + k * sh);
+        }
+      }
+    }
+    // Transfer edges from h
+    for (int u = 0; u < sh; ++u) {
+      for (int v = h.nextVertex(u, u); v >= 0; v = h.nextVertex(u, v)) {
+        for (int k = 0; k < sg; ++k) {
+          prod.addEdge(u * sh + k, v * sh + k);
+        }
+      }
+    }
+    return prod;
   }
 }
 

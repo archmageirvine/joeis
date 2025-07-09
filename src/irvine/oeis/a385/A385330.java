@@ -36,8 +36,16 @@ public class A385330 extends Sequence1 {
 
     @Override
     public String toString() {
-      return mAngle + " " + mLabel + "(" + mN + ")";
+      return mAngle + " (" + mN + "," + mLabel + ")";
     }
+  }
+
+  protected int select(final int star, final int label) {
+    return label;
+  }
+
+  private int select(final State state) {
+    return select(state.mN, state.mLabel);
   }
 
   private void updateList(final int label) {
@@ -60,7 +68,7 @@ public class A385330 extends Sequence1 {
       if (++mLabel > mN) {
         if (++mN == 1) {
           mStates.add(new State(Q.ZERO, 1, mN));
-          return Z.ONE;
+          return Z.valueOf(select(1, 1));
         }
         mLabel = 1;
         // Find bisecting angle
@@ -80,22 +88,22 @@ public class A385330 extends Sequence1 {
         }
         updateList(mLabel);
         //System.out.println(mN + " start angle=" + mAngle + " " + mStates);
-        return Z.ONE;
+        return Z.valueOf(select(mN, mLabel));
       }
       mAngle = mAngle.add(mStep);
       if (mAngle.compareTo(Q.ONE) >= 0) {
         // Handle wrap around
         while (++mK < mStates.size()) {
-          mQueuedOutput.add(mStates.get(mK).mLabel);
+          mQueuedOutput.add(select(mStates.get(mK)));
         }
         mAngle = mAngle.frac();
         mK = -1;
       }
       while (++mK < mStates.size() && mStates.get(mK).mAngle.compareTo(mAngle) < 0) {
-        mQueuedOutput.add(mStates.get(mK).mLabel);
+        mQueuedOutput.add(select(mStates.get(mK)));
       }
       updateList(mLabel);
-      mQueuedOutput.add(mLabel);
+      mQueuedOutput.add(select(mN, mLabel));
     }
   }
 }

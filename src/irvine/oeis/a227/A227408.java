@@ -4,7 +4,7 @@ package irvine.oeis.a227;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A227408 Set of all n,  where n = r(s(n)) = s(r(n)), given that r(n) = n+bitcount(n),  s(n) = n-bitcount(n), and bitcount(n) is the count of binary 1&apos;s in n.
+ * A227408 Set of all n,  where n = r(s(n)) = s(r(n)), given that r(n) = n+bitcount(n),  s(n) = n-bitcount(n), and bitcount(n) is the count of binary 1's in n.
  * @author Georg Fischer
  */
 public class A227408 extends FilterNumberSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a048.A048385;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A101440 Replace each digit of n with 1 followed by n 0&apos;s: 0 -&gt; 1, 1 -&gt; 10, 2 -&gt; 100, ..., 9 -&gt; 1000000000, 10 -&gt; 101, 11 -&gt; 1010, 12 -&gt; 10100, etc. Expanded number is then converted from binary to decimal: 0 -&gt; 1 -&gt; 1, 1 -&gt; 10 -&gt; 2, 2 -&gt; 100 -&gt; 4, 9 -&gt; 1000000000
+ * A101440 Replace each digit of n with 1 followed by n 0's: 0 -&gt; 1, 1 -&gt; 10, 2 -&gt; 100, ..., 9 -&gt; 1000000000, 10 -&gt; 101, 11 -&gt; 1010, 12 -&gt; 10100, etc. Expanded number is then converted from binary to decimal: 0 -&gt; 1 -&gt; 1, 1 -&gt; 10 -&gt; 2, 2 -&gt; 100 -&gt; 4, 9 -&gt; 1000000000 -&gt; 512, 10 -&gt; 101 -&gt; 5, etc.
  * @author Georg Fischer
  */
 public class A101440 extends SingleTransformSequence {

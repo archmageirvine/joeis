@@ -4,6 +4,9 @@ import irvine.math.api.Field;
 import irvine.math.api.Group;
 import irvine.math.api.Matrix;
 import irvine.math.matrix.DefaultMatrix;
+import irvine.math.q.Q;
+import irvine.math.q.Rationals;
+import irvine.math.z.Z;
 
 /**
  * A matrix where individuals elements are drawn from a field.
@@ -145,14 +148,24 @@ public class MatrixField<E> extends MatrixRing<E> implements Field<Matrix<E>> {
     return reduce(a, b, true) == 0;
   }
 
+  @SuppressWarnings("unchecked")
+  private E detInteger(final Matrix<E> m) {
+    final Matrix<Q> mq = new DefaultMatrix<>(m.rows(), m.cols(), Q.ZERO);
+    for (int k = 0; k < m.rows(); ++k) {
+      for (int j = 0; j < m.cols(); ++j) {
+        mq.set(k, j, new Q((Z) m.get(k, j)));
+      }
+    }
+    return (E) new MatrixField<>(m.rows(), Rationals.SINGLETON).det(mq).toZ();
+  }
+
   @Override
   public E det(final Matrix<E> m) {
     // The following implementation requires a proper division operation
     // in the field.  Since we don't have that in the special case of
-    // integers, we use a more general implementation to handle that specific
-    // case.
+    // integers, we promote to rational and do the calculation there.
     if (mElementField instanceof IntegerField) {
-      return super.det(m);
+      return detInteger(m);
     }
     if (m == zero()) {
       return mZero;

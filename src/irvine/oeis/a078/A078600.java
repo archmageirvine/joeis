@@ -1,7 +1,5 @@
 package irvine.oeis.a078;
 
-import java.util.Arrays;
-
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.function.Functions;
@@ -47,7 +45,7 @@ public class A078600 extends Sequence2 implements UnimplementedSequence {
         sum = fld.add(sum, fld.multiply(c, sigmac));
         //System.out.println(c + "*" + sigmac + "=" + fld.multiply(c, sigmac) + " sum is now " + sum + " in perm " + Arrays.toString(s));
       }
-      System.out.println("Perm: " + Arrays.toString(s) + " has sum " + sum);
+      //System.out.println("Perm: " + Arrays.toString(s) + " has sum " + sum);
       if (sum.isZero()) {
         ++cnt;
       }

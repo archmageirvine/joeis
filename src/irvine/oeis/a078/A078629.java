@@ -12,7 +12,7 @@ public class A078629 extends Sequence1 {
   // Afer https://oeis.org/A078629/a078629.txt by N. J. A. Sloane
 
   private int mN = 0;
-  private int[] mPerm;
+  protected int[] mPerm;
 
   private boolean nextPermutation(final int n) {
     int i = n - 2;
@@ -34,6 +34,10 @@ public class A078629 extends Sequence1 {
       mPerm[l] = mPerm[r];
       mPerm[r] = tmp1;
     }
+    return true;
+  }
+
+  protected boolean accept(final int n, final int ntrue) {
     return true;
   }
 
@@ -66,7 +70,7 @@ public class A078629 extends Sequence1 {
           break;
         }
       }
-      if (!reject) {
+      if (!reject && accept(mN, ntrue)) {
         ++count;
       }
     } while (nextPermutation(n));

@@ -10,7 +10,8 @@ public class A048387 extends A048385 {
 
   /** Construct the sequence. */
   public A048387() {
-    super(1);
+    super(0);
+    setOffset(1);
   }
 
   @Override

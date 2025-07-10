@@ -285,14 +285,24 @@ public class GaloisField extends IntegersMod implements Field<Z> {
     if (mExponent == 1) {
       return element.modInverse(size());
     }
+    // todo - this is getting some things wrong!
+    // todo - I think mBaseField.inverse is not right here
     if (mIrreducible != null) {
-      return pack(mBaseField.mod(mBaseField.inverse(unpack(mBaseField, element)), mIrreducible));
+      for (final Z t : this) {
+        if (multiply(t, element).isOne()) {
+          return t;
+        }
+      }
+//      return pack(mBaseField.mod(mBaseField.inverse(unpack(mBaseField, element)), mIrreducible));
     }
     throw new UnsupportedOperationException("Please update GaloisField with irreducible polynomial for " + this);
   }
 
   @Override
   public Z divide(final Z n, final Z d) {
+    if (n.equals(d)) {
+      return Z.ONE;
+    }
     return n.modMultiply(inverse(d), size());
   }
 

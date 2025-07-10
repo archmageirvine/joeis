@@ -12,7 +12,7 @@ public class A192894 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A192894() {
-    super(1, (self, n) -> {
+    super(0, (self, n) -> {
       final int h = n / 2;
       return ((n & 1) == 0) ? Binomial.binomial(13L * h, h).divide(12L * h + 1) : (Binomial.binomial(13L * h + 6, h).multiply(7).divide(12L * h + 7));
     }, "");

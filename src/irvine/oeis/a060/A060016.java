@@ -19,10 +19,7 @@ public class A060016 extends MemoryFunctionInt2Sequence<Z> {
 
   @Override
   protected Z compute(final int n, final int m) {
-    if (m < 0 || m > n) {
-      return Z.ZERO;
-    }
-    return m == 0 ? (n == 0 ? Z.ONE : Z.ZERO) : get(n - m, m).add(get(n - m, m - 1));
+    return m < 0 || m > n ? Z.ZERO : m == 0 ? (n == 0 ? Z.ONE : Z.ZERO) : get(n - m, m).add(get(n - m, m - 1));
   }
 
   @Override

@@ -1,7 +1,7 @@
 package irvine.oeis.a078;
 
 /**
- * A078629.
+ * A078676 Number of symmetric ways to lace a shoe that has n pairs of eyelets.
  * @author Sean A. Irvine
  */
 public class A078676 extends A078629 {

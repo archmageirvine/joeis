@@ -12,7 +12,7 @@ public class A075076 extends A075075 {
   private Z mB = super.next();
 
   {
-    setOffset(0);
+    setOffset(2);
   }
 
   @Override

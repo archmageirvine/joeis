@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A349290 G.f. A(x) satisfies: A(x) = 1 / ((1 - x) * (1 - x * A(x)^4)).
+ * A349290 G.f. A(x) satisfies A(x) = 1 / ((1 - x) * (1 - x * A(x)^4)).
  * a(n) = sum(k=0,n,binom(n+3*k,4*k) * binom(5*k,k) / (4*k+1));
  * @author Georg Fischer
  */

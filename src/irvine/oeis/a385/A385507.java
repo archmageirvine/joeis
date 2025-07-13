@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001511;
 
 /**
- * A385507 allocated for Hugo Leeney.
+ * A385507 a(n) = v(1 + F(2*n - 1)), where F(x) = (3*x + 1)/2^v(3*x + 1), x is any odd natural number, and v(y) is the 2-adic valuation of y.
  * @author Sean A. Irvine
  */
 public class A385507 extends Sequence1 implements DirectSequence {

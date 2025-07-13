@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A385492 allocated for S. I. Dimitrov.
+ * A385492 Numbers y such that there exists an integer 0 &lt; x &lt; y such that x^sigma(x) * y^sigma(y) = (x*y)^(x+y).
  * @author Sean A. Irvine
  */
 public class A385492 extends Sequence1 {

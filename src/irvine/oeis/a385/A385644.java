@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A078691.
+ * A385644 Swap multiplication and exponentiation in the canonical prime factorization of n.
  * @author Sean A. Irvine
  */
 public class A385644 extends Sequence2 {

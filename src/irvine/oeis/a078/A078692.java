@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078691.
+ * A078692 Triangle reads by rows: T(n,k) = coefficient of x^k in (x^3-2*x^2-2*x+1)^n.
  * @author Sean A. Irvine
  */
 public class A078692 extends Sequence1 {

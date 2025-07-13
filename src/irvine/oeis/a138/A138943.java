@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A138943 Primes of the form (16^n - 3^n)/13.
+ * A138943 Primes of the form (16^k - 3^k)/13.
  *
  * @author Georg Fischer
  */

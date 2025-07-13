@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A345219 Number of divisors of n with an odd number of primes not exceeding them.
+ * A345219 Number of divisors d of n with an odd number of primes not exceeding d.
  * @author Georg Fischer
  */
 public class A345219 extends LambdaSequence {

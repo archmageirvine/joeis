@@ -5,7 +5,7 @@ package irvine.oeis.a055;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A055793 Numbers n such that n and floor[n/3] are both squares; i.e., squares which remain squares when written in base 3 and last digit is removed.
+ * A055793 Numbers k such that k and floor[k/3] are both squares; i.e., squares which remain squares when written in base 3 and last digit is removed.
  * @author Georg Fischer
  */
 public class A055793 extends HolonomicRecurrence {

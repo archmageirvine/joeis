@@ -4,7 +4,7 @@ package irvine.oeis.a168;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A168601 E.g.f. satisfies: A(x) = exp( x*A(2x)^3 ).
+ * A168601 E.g.f. A(x) satisfies A(x) = exp( x*A(2*x)^3 ).
  * exp(x*A(2x)^3)
  * @author Georg Fischer
  */

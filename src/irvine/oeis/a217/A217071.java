@@ -4,7 +4,7 @@ package irvine.oeis.a217;
 import irvine.oeis.a055.A055494;
 
 /**
- * A217071 Numbers n such that (n^17-1)/(n-1) is prime.
+ * A217071 Numbers k such that (k^17-1)/(k-1) is prime.
  * @author Georg Fischer
  */
 public class A217071 extends A055494 {

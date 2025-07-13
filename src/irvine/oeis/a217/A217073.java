@@ -4,7 +4,7 @@ package irvine.oeis.a217;
 import irvine.oeis.a055.A055494;
 
 /**
- * A217073 Numbers n such that (n^23-1)/(n-1) is prime.
+ * A217073 Numbers k such that (k^23-1)/(k-1) is prime.
  * @author Georg Fischer
  */
 public class A217073 extends A055494 {

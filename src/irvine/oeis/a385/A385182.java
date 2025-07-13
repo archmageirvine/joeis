@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A385182 allocated for Clark Kimberling.
+ * A385182 Values of u in the quartets (1,u,v,w); i.e., values of u for solutions to (1+u) = v*(v+w), in positive integers, with v&gt;1, sorted by nondecreasing values of u; see Comments.
  * @author Sean A. Irvine
  */
 public class A385182 extends Sequence1 {

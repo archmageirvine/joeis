@@ -4,7 +4,7 @@ package irvine.oeis.a171;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A171202 G.f. satisfies A(x) = 1 + x*A(2x)^4.
+ * A171202 G.f. A(x) satisfies A(x) = 1 + x*A(2*x)^4.
  * G.f.satisfies A(x) = 1 + x*A(2*x)^4.
  * @author Georg Fischer
  */

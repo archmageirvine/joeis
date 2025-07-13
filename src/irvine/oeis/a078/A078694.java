@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078691.
+ * A078694 Numbers n such that floor(2*Pi*n) is prime.
  * @author Sean A. Irvine
  */
 public class A078694 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A360987 E.g.f. satisfies A(x) = exp(x * A(-x)^2).
+ * A360987 E.g.f. A(x) satisfies A(x) = exp(x * A(-x)^2).
  * a(n) = sum(k=0,n,(2*n-2*k+1)^(k-1)*(-2*k)^(n-k)*binom(n,k));
  * @author Georg Fischer
  */

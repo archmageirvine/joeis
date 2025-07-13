@@ -5,7 +5,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A192894 Number of symmetric 13-ary factorizations of the n-cycle (12...n).
+ * A192894 Number of symmetric 13-ary factorizations of the n-cycle (1,2...n).
  * @author Georg Fischer
  */
 public class A192894 extends MultiTransformSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069290 Sum of square roots of square divisors of n.
+ * A069290 Sum of the square roots of the square divisors of n.
  * @author Georg Fischer
  */
 public class A069290 extends Sequence1 {

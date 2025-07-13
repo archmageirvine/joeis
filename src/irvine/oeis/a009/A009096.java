@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A009096 Ordered perimeters of Pythagorean triangles.
+ * A009096 Ordered perimeters of Pythagorean triangles, listed with multiplicity.
  * @author Sean A. Irvine
  */
 public class A009096 extends Sequence1 {

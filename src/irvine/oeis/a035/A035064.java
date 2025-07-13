@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A035064 Numbers n such that 2^n does not contain the digit 9 (probably finite).
+ * A035064 Numbers k such that 2^k does not contain the digit 9 (probably finite).
  * @author Sean A. Irvine
  */
 public class A035064 extends Sequence1 {

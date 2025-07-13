@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A094894 Prime(Lucas(n)), Lucas numbers beginning at 2 (A000032).
+ * A094894 a(n) = prime(Lucas(n)), Lucas numbers beginning at 2 (A000032).
  * a(n)=prime(fibonacci(n+1)+fibonacci(n-1))
  * @author Georg Fischer
  */

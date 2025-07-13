@@ -5,7 +5,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A143546 G.f. satisfies: A(x) = 1 + x*A(x)^3*A(-x)^2.
+ * A143546 G.f. A(x) satisfies A(x) = 1 + x*A(x)^3*A(-x)^2.
  * @author Georg Fischer
  */
 public class A143546 extends MultiTransformSequence {

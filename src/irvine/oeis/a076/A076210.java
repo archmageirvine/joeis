@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A076210 Numbers n such that (-n!!+(n+1)!!+1)/2 is prime.
+ * A076210 Numbers k such that (-k!! + (k+1)!! + 1)/2 is prime.
  * @author Georg Fischer
  */
 public class A076210 extends FilterPositionSequence {

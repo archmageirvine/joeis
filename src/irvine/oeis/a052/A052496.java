@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A052496 Nonsingular n X n matrices over GF(8).
+ * A052496 Number of nonsingular n X n matrices over GF(8).
  * @author Sean A. Irvine
  */
 public class A052496 extends Sequence0 {

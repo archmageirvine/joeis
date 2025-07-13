@@ -3,7 +3,7 @@ package irvine.oeis.a385;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A385524 allocated for Thomas Zaslavsky.
+ * A385524 Numbers that are not cycle counts of inseparable cubic graphs.
  * @author Sean A. Irvine
  */
 public class A385524 extends FiniteSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a171;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A171196 G.f. satisfies A(x) = 1/(1 - x*A(2x)^6).
+ * A171196 G.f. A(x) satisfies A(x) = 1/(1 - x*A(2*x)^6).
  * G.f.satisfies A(x) = 1/(1 - x*A(2x)^6).
  * @author Georg Fischer
  */

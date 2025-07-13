@@ -3,7 +3,7 @@ package irvine.oeis.a385;
 import irvine.math.z.Z;
 
 /**
- * A385184 allocated for Clark Kimberling.
+ * A385184 The w sequence in quartets (1,u,v,w); see A385182.
  * @author Sean A. Irvine
  */
 public class A385184 extends A385182 {

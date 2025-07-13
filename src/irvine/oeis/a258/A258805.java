@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A258805 Primes of the form n^8 + 1.
+ * A258805 Primes of the form k^8 + 1.
  * @author Georg Fischer
  */
 public class A258805 extends FilterSequence {

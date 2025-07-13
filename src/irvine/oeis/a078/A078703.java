@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078691.
+ * A078703 Number of ways of subtracting twice a triangular number from a perfect square to obtain the integer n.
  * @author Sean A. Irvine
  */
 public class A078703 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A090768 4*7^(n^2+2n+1)*Product_{j=1..n} (49^j-1).
+ * A090768 a(n) = 4*7^(n^2+2n+1)*Product_{j=1..n} (49^j-1).
  * @author Georg Fischer
  */
 public class A090768 extends LambdaSequence {

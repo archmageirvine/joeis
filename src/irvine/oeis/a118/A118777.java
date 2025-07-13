@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A118777 a(0) = 1; n &gt; 0: a(n) = a(n-1) + d, d = -/+1 if n is prime/nonprime.
+ * A118777 a(0) = 1; n &gt; 0: a(n) = a(n-1) + d, d = +-1 if n is prime/nonprime.
  * a(n)=n+1-2*primepi(n)
  * @author Georg Fischer
  */

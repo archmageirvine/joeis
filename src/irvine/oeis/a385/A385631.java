@@ -3,7 +3,7 @@ package irvine.oeis.a385;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A385524 allocated for Thomas Zaslavsky.
+ * A385631 Products of five consecutive integers whose prime divisors are consecutive primes starting at 2.
  * @author Sean A. Irvine
  */
 public class A385631 extends FiniteSequence {

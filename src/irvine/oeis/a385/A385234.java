@@ -9,7 +9,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002144;
 
 /**
- * A385234 allocated for Felix Huber.
+ * A385234 a(n) is the number of partitions of n into primes of the form 4*k + 1.
  * @author Sean A. Irvine
  */
 public class A385234 extends Sequence0 {

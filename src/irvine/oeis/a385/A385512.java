@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A385512 allocated for Jean-Marc Rebert.
+ * A385512 a(n) is the least prime p &gt; n in which the digits of n appear as an ordered but not necessarily contiguous subsequence.
  * @author Sean A. Irvine
  */
 public class A385512 extends Sequence0 {

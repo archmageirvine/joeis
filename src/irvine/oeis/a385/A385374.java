@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a060.A060016;
 
 /**
- * A385374 allocated for Felix Huber.
+ * A385374 a(n) is the number of partitions of n into tau(n) distinct parts.
  * @author Sean A. Irvine
  */
 public class A385374 extends A060016 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A117011 Decimal value of binary number whose n-th 1 is followed by n^3 0&apos;s.
+ * A117011 Decimal value of binary number whose n-th 1 is followed by n^3 0's.
  * @author Georg Fischer
  */
 public class A117011 extends MultiTransformSequence {

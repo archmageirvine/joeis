@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A180356 n^6+6n.
+ * A180356 a(n) = n^6 + 6n.
  * @author Sean A. Irvine
  */
 public class A180356 extends LinearRecurrence {

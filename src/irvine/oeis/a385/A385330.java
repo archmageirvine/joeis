@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A385330 allocated for Tamas Sandor Nagy.
+ * A385330 The point numbers encountered by a rotating marker following the process described in the Comments.
  * @author Sean A. Irvine
  */
 public class A385330 extends Sequence1 {

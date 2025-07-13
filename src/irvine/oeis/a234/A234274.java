@@ -4,7 +4,7 @@ package irvine.oeis.a234;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A234274 G.f.: (1+x)*(1+x+x^2+x^3+x^4)/(1-6*x-6*x^2-6*x^3+x^4).
+ * A234274 Expansion of g.f. (1+x)*(1+x+x^2+x^3+x^4)/(1-6*x-6*x^2-6*x^3+x^4).
  * @author Georg Fischer
  */
 public class A234274 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A051935.
+ * A078706 a(n) = smallest integer &gt;=a(n-1) such that sum of first n terms is prime.
  * @author Sean A. Irvine
  */
 public class A078706 extends Sequence1 {

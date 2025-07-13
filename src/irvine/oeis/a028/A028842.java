@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A028842 Product of digits of n is a prime.
+ * A028842 Numbers whose product of digits is prime.
  * @author Sean A. Irvine
  */
 public class A028842 extends Sequence1 {

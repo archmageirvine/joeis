@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A169716 Numbers n such that 2^n-127 is prime.
+ * A169716 Numbers k such that 2^k - 127 is prime.
  * @author Georg Fischer
  */
 public class A169716 extends PrimePositionSubsequence {

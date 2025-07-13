@@ -9,7 +9,7 @@ import irvine.oeis.a007.A007088;
 import irvine.util.string.StringUtils;
 
 /**
- * A385537 allocated for Dmytro Inosov.
+ * A385537 Indices k such that the repunit (10^k-1)/9 is coprime with any other nonzero binary vector of the same length in base 10.
  * @author Sean A. Irvine
  */
 public class A385537 extends Sequence1 {

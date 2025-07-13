@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078640 Number of numbers between 1 and n-1 that are coprime to n(n+1)(n+2).
+ * A078640 Number of numbers between 1 and n-1 inclusive that are coprime to n*(n+1)*(n+2).
  * @author Sean A. Irvine
  */
 public class A078640 extends Sequence1 {

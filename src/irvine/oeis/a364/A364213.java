@@ -7,7 +7,7 @@ import irvine.oeis.a280.A280049;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A364213 The number of trailing 0&apos;s in the canonical representation of n as a sum of distinct Jacobsthal numbers (A280049).
+ * A364213 The number of trailing 0's in the canonical representation of n as a sum of distinct Jacobsthal numbers (A280049).
  * @author Georg Fischer
  */
 public class A364213 extends SingleTransformSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a051.A051027;
 
 /**
- * A247838 Numbers n such that sigma(sigma(n)) is prime.
+ * A247838 Numbers k such that sigma(sigma(k)) is prime.
  * @author Georg Fischer
  */
 public class A247838 extends FilterPositionSequence {

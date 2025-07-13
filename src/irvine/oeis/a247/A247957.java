@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A247957 Numbers n such that 33^n + 2 is prime.
+ * A247957 Numbers k such that 33^k + 2 is prime.
  * @author Georg Fischer
  */
 public class A247957 extends PrimePositionSubsequence {

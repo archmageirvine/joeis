@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A349292 G.f. A(x) satisfies: A(x) = 1 / ((1 - x) * (1 - x * A(x)^6)).
+ * A349292 G.f. A(x) satisfies A(x) = 1 / ((1 - x) * (1 - x * A(x)^6)).
  * a(n)=sum(k=0,n,binom(n+5*k,6*k) * binom(7*k,k) / (6*k+1))
  * @author Georg Fischer
  */

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A092299 4*3^(n^2+2n+1)*Product_{j=1..n} (9^j-1).
+ * A092299 a(n) = 4*3^(n^2+2n+1)*Product_{j=1..n} (9^j-1).
  * @author Georg Fischer
  */
 public class A092299 extends LambdaSequence {

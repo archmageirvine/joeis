@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A385540 allocated for Juri-Stepan Gerasimov.
+ * A385540 Number of values of nonnegative s &lt; n such that s^s == (-s)^s == s (mod n).
  * @author Sean A. Irvine
  */
 public class A385540 extends Sequence1 {

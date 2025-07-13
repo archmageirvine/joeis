@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.Combiner;
 
 /**
- * A078691.
+ * A078702 Number of ways to lace a shoe that has n pairs of eyelets such that each eyelet has at least one direct connection to the opposite side.
  * @author Sean A. Irvine
  */
 public class A078702 extends Combiner {

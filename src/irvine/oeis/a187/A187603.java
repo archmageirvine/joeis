@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A187603 Primes of the form n!+n^n+n-1.
+ * A187603 Primes of the form k!+k^k+k-1.
  * @author Georg Fischer
  */
 public class A187603 extends FilterSequence {

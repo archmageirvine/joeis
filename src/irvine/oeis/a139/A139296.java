@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A139296 2^(2p - 1)/2, where p is a Mersenne prime A000668(n).
+ * A139296 a(n) = 2^(2p - 1)/2, where p is the n-th Mersenne prime A000668(n).
  *
  * @author Georg Fischer
  */

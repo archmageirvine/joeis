@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066546 Number of spanning trees in the line graph of the product of two (2 x n) grid graphs.
+ * A066546 Number of spanning trees in the line graph of the box product of two (2 x n) grid graphs.
  * @author Sean A. Irvine
  */
 public class A066546 extends Sequence1 {

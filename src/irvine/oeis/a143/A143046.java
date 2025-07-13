@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A143046 G.f. satisfies A(x) = 1 + x*A(-x)^3.
+ * A143046 G.f. A(x) satisfies A(x) = 1 + x*A(-x)^3.
  * G.f.satisfies A(x) = 1 + x*A(-x)^3.
  * @author Georg Fischer
  */

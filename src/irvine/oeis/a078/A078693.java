@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A078691.
+ * A078693 Largest k such that round(1/(sqrt(prime(k+1))-sqrt(prime(k)))) = n where prime(n) denotes the n-th prime (conjectured values).
  * @author Sean A. Irvine
  */
 public class A078693 extends Sequence1 {

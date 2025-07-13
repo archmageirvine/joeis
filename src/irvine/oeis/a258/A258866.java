@@ -8,7 +8,7 @@ import irvine.oeis.transform.SimpleTransformSequence;
 
 
 /**
- * A258866 Numbers n such that n!! - 1024 is prime.
+ * A258866 Numbers k such that k!! - 1024 is prime.
  * @author Georg Fischer
  */
 public class A258866 extends PrimePositionSubsequence {

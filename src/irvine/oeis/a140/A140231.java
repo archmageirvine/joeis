@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A140231 a(n)=Ceiling[e^(n*(1+sqrt(5))/2)].
+ * A140231 a(n) = ceiling(e^(n*(1+sqrt(5))/2)).
  * @author Georg Fischer
  */
 public class A140231 extends FloorSequence {

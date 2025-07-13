@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A052497 Nonsingular n X n matrices over GF(9).
+ * A052497 Number of nonsingular n X n matrices over GF(9).
  * @author Sean A. Irvine
  */
 public class A052497 extends Sequence0 {

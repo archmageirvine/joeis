@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HypergeometricSequence;
 
 /**
- * A208426 G.f.: Sum_{n&gt;=0} (3*n)!/n!^3 * x^(2*n)/(1-3*x)^(3*n+1).
+ * A208426 Expansion of Sum_{n&gt;=0} (3*n)!/n!^3 * x^(2*n)/(1-3*x)^(3*n+1).
  * @author Georg Fischer
  */
 public class A208426 extends HypergeometricSequence {

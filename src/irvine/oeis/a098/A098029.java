@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A098029 Primes of the form (prime(n)+ prime(n+3))/2.
+ * A098029 Primes of the form (prime(k)+ prime(k+3))/2.
  * @author Georg Fischer
  */
 public class A098029 extends FilterSequence {

@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A175288 Decimal expansion of the constant x satisfying (cos(x))^2 = sin(x).
+ * A175288 Decimal expansion of the minimal positive constant x satisfying (cos(x))^2 = sin(x).
  * Formula: acot(sqrt(phi))
  * @author Georg Fischer
  */

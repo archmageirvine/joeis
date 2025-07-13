@@ -4,7 +4,7 @@ package irvine.oeis.a385;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A385801 G.f. A(x) satisfies A(x) = 1/(1 - x*A(x)^3 - x^2*A(x)^2*A&apos;(x)).
+ * A385801 G.f. A(x) satisfies A(x) = 1/(1 - x*A(x)^3 - x^2*A(x)^2*A'(x)).
  * @author Georg Fischer
  */
 public class A385801 extends PolynomialFieldSequence {

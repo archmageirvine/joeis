@@ -9,7 +9,7 @@ import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
 
 /**
- * A385611 allocated for Jean-Marc Rebert.
+ * A385611 Numbers that can be written as s^w + t^x + u^y + v^z with 1 &lt; s &lt; t &lt; u and {s,t,u,v} = {w,x,y,z} (the sequence of exponents can be any permutation of s,t,u,v).
  * @author Sean A. Irvine
  */
 public class A385611 extends Sequence1 {

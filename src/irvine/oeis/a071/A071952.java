@@ -4,7 +4,7 @@ package irvine.oeis.a071;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A071952 Diagonal T(n,3) of triangle in A071951.
+ * A071952 Diagonal T(n, 4) of triangle in A071951.
  * @author Georg Fischer
  */
 public class A071952 extends LinearRecurrence {

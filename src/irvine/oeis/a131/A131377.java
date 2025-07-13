@@ -7,7 +7,7 @@ import irvine.oeis.a071.A071986;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A131377 Starting with 1, the sequence a(n) changes from 1 to 0 or back when the next number n is a prime.
+ * A131377 a(n) = (pi(n)+1) mod 2.
  * @author Georg Fischer
  */
 public class A131377 extends PrependSequence {

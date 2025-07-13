@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A089989 5^(n^2+2n+1)*Product_{j=1..n} (25^j-1).
+ * A089989 a(n) = 5^(n^2+2n+1)*Product_{j=1..n} (25^j-1).
  * @author Georg Fischer
  */
 public class A089989 extends LambdaSequence {

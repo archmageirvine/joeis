@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A078652.
+ * A385623 Array read by ascending antidiagonals: A(n,k) is the number obtained by concatenation of n with k in that order, with k &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A385623 extends Sequence0 {

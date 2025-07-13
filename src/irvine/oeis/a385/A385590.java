@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A385590 allocated for Werner Schulte.
+ * A385590 Triangle read by rows, based on Fibonacci numbers: Let i &gt; 1 be such that F(i) &lt;= n &lt; F(i+1); i.e., i = A130233(n). Then T(n, k) = F(i-1)^2 + 1 - (i-1) mod 2 + (n - F(i)) * F(i-2) + (k-1) * F(i-1) where F(k) = A000045(k).
  * @author Sean A. Irvine
  */
 public class A385590 extends Sequence1 {

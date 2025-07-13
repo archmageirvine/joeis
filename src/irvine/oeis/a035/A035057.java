@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A035057 Numbers n such that 2^n does not contain the digit 1 (probably finite).
+ * A035057 Numbers k such that 2^k does not contain the digit 1 (probably finite).
  * @author Sean A. Irvine
  */
 public class A035057 extends Sequence1 {

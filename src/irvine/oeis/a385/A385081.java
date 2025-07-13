@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A385081 allocated for Gregory Gerard Wojnar.
+ * A385081 Irregular triangle T(n,k) of refined derangement counts in the symmetric group S_(n+1), refined per cycle type.
  * @author Sean A. Irvine
  */
 public class A385081 extends Sequence1 {

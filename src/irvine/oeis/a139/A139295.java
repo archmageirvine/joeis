@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000668;
 
 /**
- * A139295 2^(2p - 1)-1, where p is a Mersenne prime A000668(n).
+ * A139295 a(n) = 2^(2p - 1)-1, where p is the n-th Mersenne prime A000668(n).
  * @author Georg Fischer
  */
 public class A139295 extends Sequence1 {

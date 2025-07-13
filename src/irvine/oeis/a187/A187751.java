@@ -7,7 +7,7 @@ import irvine.oeis.a036.A036740;
 import irvine.oeis.a053.A053986;
 
 /**
- * A187751 n^(n!) mod (n!)^n.
+ * A187751 a(n) = n^(n!) mod (n!)^n.
  * @author Georg Fischer
  */
 public class A187751 extends Sequence0 {

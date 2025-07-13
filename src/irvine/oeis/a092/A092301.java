@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A092301 3^(n^2+2n+1)*Product_{j=1..n} (9^j-1).
+ * A092301 a(n) = 3^(n^2+2n+1)*Product_{j=1..n} (9^j-1).
  * a(n)=3^(n^2+2*n+1)*prod(j=1,n,9^j-1)
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterLambdaSequence;
 
 /**
- * A204324 Numbers n such that A007953(n) &gt;= A007953(n^3), where A007953 = digital sum in base 10.
+ * A204324 Numbers k such that A007953(k) &gt;= A007953(k^3), where A007953 = digital sum in base 10.
  * @author Georg Fischer
  */
 public class A204324 extends FilterLambdaSequence {

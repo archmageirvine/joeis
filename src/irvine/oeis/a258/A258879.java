@@ -4,7 +4,7 @@ package irvine.oeis.a258;
 import irvine.oeis.a257.A257638;
 
 /**
- * A258879 Numbers n such that n is the average of four consecutive primes n-7, n-1, n+1 and n+7.
+ * A258879 Numbers k such that k is the average of four consecutive primes k-7, k-1, k+1 and k+7.
  * @author Georg Fischer
  */
 public class A258879 extends A257638 {

@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a094.A094894;
 
 /**
- * A180367 Lucas(prime(n+1)) - prime(Lucas(n)), for Lucas numbers beginning at 2.
+ * A180367 a(n) = Lucas(prime(n+1)) - prime(Lucas(n)), for Lucas numbers beginning at 2.
  * @author Georg Fischer
  */
 public class A180367 extends AbstractSequence {

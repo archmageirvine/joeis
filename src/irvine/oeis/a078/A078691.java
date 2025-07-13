@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001223;
 import irvine.oeis.a007.A007913;
 
 /**
- * A078691 Numbers n such that the n-th difference between 2 successive primes equals the squarefree part of n.
+ * A078691 Numbers k such that the k-th difference between 2 successive primes equals the squarefree part of k.
  * @author Sean A. Irvine
  */
 public class A078691 extends Sequence1 {

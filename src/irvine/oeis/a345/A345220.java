@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A345220 Number of divisors of n with an even number of primes not exceeding them.
+ * A345220 Number of divisors d of n with an even number of primes not exceeding d.
  * @author Georg Fischer
  */
 public class A345220 extends LambdaSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a217;
 import irvine.oeis.a055.A055494;
 
 /**
- * A217075 Numbers n such that (n^31-1)/(n-1) is prime.
+ * A217075 Numbers k such that (k^31-1)/(k-1) is prime.
  * @author Georg Fischer
  */
 public class A217075 extends A055494 {

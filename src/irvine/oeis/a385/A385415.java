@@ -3,7 +3,7 @@ package irvine.oeis.a385;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A385415 allocated for Ken Clements.
+ * A385415 Products of three consecutive integers whose prime divisors are consecutive primes starting at 2.
  * @author Sean A. Irvine
  */
 public class A385415 extends FiniteSequence {

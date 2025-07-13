@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000292;
 
 /**
- * A354976 Tetrahedral numbers which are products of five distinct primes.
+ * A354976 Squarefree tetrahedral numbers which are products of five distinct primes.
  * @author Georg Fischer
  */
 public class A354976 extends FilterSequence {

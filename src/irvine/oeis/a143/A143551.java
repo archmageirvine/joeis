@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A143551 G.f. satisfies: A(x) = 1 + x*A(x)^5*A(-x).
+ * A143551 G.f. A(x) satisfies A(x) = 1 + x*A(x)^5*A(-x).
  * 1+x*A(x)^5*A(-x)
  * @author Georg Fischer
  */

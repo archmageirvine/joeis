@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a090.A090740;
 
 /**
- * A385609 allocated for Paolo Xausa.
+ * A385609 Partial sums of A090740.
  * @author Georg Fischer
  */
 public class A385609 extends PartialSumSequence {

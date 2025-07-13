@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A374949 Michael Kwok&apos;s arithmetic progression of 27 primes.
+ * A374949 Michael Kwok's arithmetic progression of 27 primes.
  * @author Georg Fischer
  */
 public class A374949 extends LambdaSequence {

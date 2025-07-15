@@ -9,13 +9,11 @@ import irvine.oeis.a007.A007916;
  */
 public class A385411 extends A007916 {
 
-  // todo pending update to sequence from MdV
-
   private boolean is(final Z n) {
     for (Z b = Z.TWO; b.compareTo(n) < 0; b = b.add(1)) {
       if (!n.mod(b).isZero()) {
         final String s = n.toString();
-        Z c = b;
+        Z c = Z.ONE;
         while (c.compareTo(n) < 0) {
           if (s.endsWith(c.toString())) {
             return true;

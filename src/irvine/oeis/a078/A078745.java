@@ -7,10 +7,10 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a049.A049614;
 
 /**
- * A078744 Numbers k such that A049614(k) + A000040(k) is prime.
+ * A078745 Numbers k such that A049614(k) - A000040(k) is prime.
  * @author Sean A. Irvine
  */
-public class A078744 extends Sequence1 {
+public class A078745 extends Sequence1 {
 
   private final Sequence mA = new A000040();
   private final Sequence mB = new A049614().skip();
@@ -20,7 +20,7 @@ public class A078744 extends Sequence1 {
   public Z next() {
     while (true) {
       ++mN;
-      if (mB.next().add(mA.next()).isProbablePrime()) {
+      if (mB.next().subtract(mA.next()).isProbablePrime()) {
         return Z.valueOf(mN);
       }
     }

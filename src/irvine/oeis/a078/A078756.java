@@ -26,7 +26,7 @@ public class A078756 extends DecimalExpansionSequence {
       protected Z approximate(final int precision) {
         final A000040 primes = new A000040();
         final PolynomialRing<Z> ring = new PolynomialRing<>(Integers.SINGLETON);
-        Polynomial<Z> poly = ring.empty();
+        final Polynomial<Z> poly = ring.empty();
         Z prev = Z.ZERO;
         long k = 0;
         while (true) {

@@ -1,6 +1,7 @@
 package irvine.oeis.a052;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002385;
 
@@ -14,7 +15,7 @@ public class A052035 extends A002385 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (mPrime.isPrime(Functions.DIGIT_SUM_SQUARES.l(p))) {
+      if (Predicates.PRIME.is(Functions.DIGIT_SUM_SQUARES.l(p))) {
         return p;
       }
     }

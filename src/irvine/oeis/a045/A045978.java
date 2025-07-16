@@ -1,18 +1,17 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002385;
 
 /**
  * A045978 Palindromic primes that are "near miss circular primes" (all cyclic shifts except one are primes).
  * @author Sean A. Irvine
  */
-public class A045978 extends A002385 {
+public class A045978 extends Sequence0 {
 
-  /** Construct the sequence. */
-  public A045978() {
-    super(0);
-  }
+  private final Sequence mPalinPrime = new A002385();
 
   private boolean isNearCircular(final Z p) {
     final String s = p.toString();
@@ -31,7 +30,7 @@ public class A045978 extends A002385 {
   @Override
   public Z next() {
     while (true) {
-      final Z p = super.next();
+      final Z p = mPalinPrime.next();
       if (isNearCircular(p)) {
         return p;
       }

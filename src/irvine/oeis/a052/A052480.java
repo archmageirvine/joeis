@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002385;
 import irvine.util.Permutation;
 
@@ -12,13 +14,9 @@ import irvine.util.Permutation;
  * A052480 Primes associated with A052507.
  * @author Sean A. Irvine
  */
-public class A052480 extends A002385 {
+public class A052480 extends Sequence0 {
 
-  /** Construct the sequence. */
-  public A052480() {
-    super(0);
-  }
-
+  private final Sequence mPalinPrime = new A002385();
   private final ArrayList<Z> mA = new ArrayList<>();
   private int mM = 0;
 
@@ -47,7 +45,7 @@ public class A052480 extends A002385 {
     if (++mM >= mA.size()) {
       mA.clear();
       mM = 0;
-      final Z palin = super.next();
+      final Z palin = mPalinPrime.next();
       final Permutation perm = permuter(palin);
       int[] p;
       while ((p = perm.next()) != null) {

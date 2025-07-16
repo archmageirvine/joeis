@@ -18,7 +18,7 @@ import irvine.oeis.Sequence1;
  */
 public class A078792 extends Sequence1 {
 
-  // There might be a better way, I made this by accident while trying to make A00109
+  // There is a better way, but I made this by accident while trying to make A000109
 
   protected int mN = 0;
   private Set<Graph> mGraphs = null;
@@ -35,11 +35,7 @@ public class A078792 extends Sequence1 {
     }
     final Set<Graph> next = new HashSet<>();
     if (mGraphs == null) {
-      final Graph g = GraphFactory.create(3);
-      g.addEdge(0, 1);
-      g.addEdge(1, 2);
-      g.addEdge(2, 0);
-      next.add(g);
+      next.add(GraphFactory.complete(3));
     } else {
       final int[] lab = new int[mN];
       final int[] ptn = new int[mN];

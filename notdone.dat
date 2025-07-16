@@ -2627,3 +2627,4 @@ A078630 Numerators of coefficients of asymptotic expansion of probability p(n) (
 A078631 Denominators of coefficients of asymptotic expansion of probability p(n) (see A002816) in powers of 1/n.
 A078639 Number of nonisomorphic graphic matroids (by rank or number of vertices).
 A078668 Primes that are the difference between two powers: y^z - x^z = prime.
+A078780 Number of different digraphs on an n-cube.

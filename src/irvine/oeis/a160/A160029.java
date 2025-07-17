@@ -4,7 +4,7 @@ package irvine.oeis.a160;
 import irvine.oeis.a274.A274022;
 
 /**
- * A160029 Primes of the form 2^(2^n)+51.
+ * A160029 Primes of the form 2^(2^k)+51.
  * @author Georg Fischer
  */
 public class A160029 extends A274022 {

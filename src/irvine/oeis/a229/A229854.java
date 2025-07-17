@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A229854 Primes of the form 384*n + 1.
+ * A229854 Primes of the form 384*k + 1.
  * @author Georg Fischer
  */
 public class A229854 extends PrimeSubsequence {

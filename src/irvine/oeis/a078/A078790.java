@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002385;
 
 /**
- * A071250.
+ * A078790 Palindromic primes with successive increasing difference: a(k)-a(k-1) &lt; a(k+1)- a(k).
  * @author Sean A. Irvine
  */
 public class A078790 extends A002385 {

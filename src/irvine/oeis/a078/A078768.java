@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078768 sigma(sigma(..(sigma(n)+1)..)) is prime, or 0 if no prime is reached.
+ * A078768 a(n) is the number of iterations of k -&gt; sigma(k) + 1 needed to reach a prime, or 0 if no prime is reached.
  * @author Sean A. Irvine
  */
 public class A078768 extends Sequence1 {

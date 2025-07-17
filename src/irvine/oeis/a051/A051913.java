@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A051913 Numbers n such that phi(n)/phi(phi(n)) = 3.
+ * A051913 Numbers k such that phi(k)/phi(phi(k)) = 3.
  * @author Sean A. Irvine
  */
 public class A051913 extends Sequence1 {

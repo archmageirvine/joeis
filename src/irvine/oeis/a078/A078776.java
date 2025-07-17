@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078769.
+ * A078776 Numbers k such that phi(k-1) &lt; phi(k) &lt; phi(k+1), where phi is the Euler totient function (A000010).
  * @author Sean A. Irvine
  */
 public class A078776 extends Sequence1 {

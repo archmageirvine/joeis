@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A322078 a(n) = n^2 * Sum_{p|n} 1/p^2, where p are primes dividing n.
+ * A322078 a(n) = n^2 * Sum_{p|n, p prime} 1/p^2.
  * @author Georg Fischer
  */
 public class A322078 extends LambdaSequence {

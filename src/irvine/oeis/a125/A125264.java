@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A125264 Numbers n such that n^10 + 9 is prime.
+ * A125264 Numbers k such that k^10 + 9 is prime.
  * @author Georg Fischer
  */
 public class A125264 extends FilterNumberSequence {

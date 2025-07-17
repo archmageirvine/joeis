@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Triple;
 
 /**
- * A365577 Sequence of primitive Pythagorean triples beginning with the triple (3,4,5), with each subsequent triple having as its short leg the sum of the legs of the previous triple, and with the long leg and the hypotenuse of each triple being consecutive natural numbers.
+ * A365577 Sequence of the short legs of primitive Pythagorean triples beginning with the triple (3,4,5), with each subsequent triple having as its short leg the sum of the legs of the previous triple, and with the long leg and the hypotenuse of each triple being consecutive natural numbers.
  * @author Sean A. Irvine
  */
 public class A365577 extends Sequence1 {

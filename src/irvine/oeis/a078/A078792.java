@@ -1,16 +1,8 @@
 package irvine.oeis.a078;
 
-import java.util.HashSet;
-import java.util.Set;
-
-import irvine.math.graph.Graph;
-import irvine.math.graph.GraphFactory;
-import irvine.math.nauty.Nauty;
-import irvine.math.nauty.NautySet;
-import irvine.math.nauty.OptionBlk;
-import irvine.math.nauty.StatsBlk;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
+import irvine.oeis.a370.A370770;
 
 /**
  * A078792 Number of unlabeled 3-trees on n vertices.
@@ -18,51 +10,12 @@ import irvine.oeis.Sequence1;
  */
 public class A078792 extends Sequence1 {
 
-  // There is a better way, but I made this by accident while trying to make A000109
-
-  protected int mN = 0;
-  private Set<Graph> mGraphs = null;
-  private final long[] mWorkspace = new long[100];
-  private final OptionBlk mOptions = new OptionBlk();
-  {
-    mOptions.setCanon(1);
-  }
+  private final A370770 mSeq = new A370770();
+  private int mN = 0;
 
   @Override
   public Z next() {
-    if (++mN < 3) {
-      return Z.ZERO;
-    }
-    final Set<Graph> next = new HashSet<>();
-    if (mGraphs == null) {
-      next.add(GraphFactory.complete(3));
-    } else {
-      final int[] lab = new int[mN];
-      final int[] ptn = new int[mN];
-      final int[] orb = new int[mN];
-      final NautySet set = new NautySet(mN);
-      final StatsBlk stats = new StatsBlk();
-      final int n = mN - 1;
-      for (final Graph g : mGraphs) {
-        for (int u = 0; u < n; ++u) {
-          int v = u;
-          while ((v = g.nextVertex(u, v)) >= 0) {
-            int w = v;
-            while ((w = g.nextVertex(v, w)) >= 0) {
-              if (g.isAdjacent(u, w)) {
-                final Graph h = g.copy(n + 1);
-                h.addEdge(u, n);
-                h.addEdge(v, n);
-                h.addEdge(w, n);
-                next.add(new Nauty(h, lab, ptn, set, orb, mOptions, stats, mWorkspace).canon());
-              }
-            }
-          }
-        }
-      }
-    }
-    mGraphs = next;
-    return Z.valueOf(mGraphs.size());
+    return mSeq.t(++mN, 3);
   }
 }
 

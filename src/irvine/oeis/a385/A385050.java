@@ -8,7 +8,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A385050 allocated for Charles L. Hohn.
+ * A385050 a(n) is the least positive number k such that n is the greatest m such that k is a quadratic residue mod prime(i) for i=1..m and {k mod prime(i): i=1..m} are all distinct.
  * @author Sean A. Irvine
  */
 public class A385050 extends Sequence1 {

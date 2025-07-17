@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078769.
+ * A078775 Numbers k such that k!/phi(k)!+1 is prime.
  * @author Sean A. Irvine
  */
 public class A078775 extends Sequence1 {

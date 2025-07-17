@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A125260 Numbers n such that n^5 + 4 is prime.
+ * A125260 Numbers k such that k^5 + 4 is prime.
  * @author Georg Fischer
  */
 public class A125260 extends PrimePositionSubsequence {

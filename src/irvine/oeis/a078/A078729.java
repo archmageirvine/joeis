@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078729 a(n) = the least positive integer k such that (k+1)(k+2)...(k+n) + 1 is prime, if such k exists; otherwise, = 0.
+ * A078729 a(n) = the least positive integer k such that (k+1)*(k+2)*...*(k+n) + 1 is prime, if such k exists; otherwise, = 0.
  * @author Sean A. Irvine
  */
 public class A078729 extends Sequence1 {

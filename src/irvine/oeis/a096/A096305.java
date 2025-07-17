@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A096305 Numbers n such that 7^n + 4 is prime.
+ * A096305 Numbers k such that 7^k + 4 is prime.
  * @author Georg Fischer
  */
 public class A096305 extends PrimePositionSubsequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A385821 allocated for Emirhan \u00dc\u00e7ok.
+ * A385821 Numbers k such that ceiling((k^2 + 1)/2) is prime.
  * @author Sean A. Irvine
  */
 public class A385821 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007916;
 
 /**
- * A385411 allocated for Michael De Vlieger.
+ * A385411 Numbers k that are not perfect powers, not divisible by some b, and whose trailing digits form a power of b, where 1 &lt; b &lt; k.
  * @author Sean A. Irvine
  */
 public class A385411 extends A007916 {

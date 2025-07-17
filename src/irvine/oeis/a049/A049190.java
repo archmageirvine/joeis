@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001387;
 
 /**
- * A049190 Start with 1. Convert to base 2, describe it in base 2, convert to base 10.
+ * A049190 Start with 1. Convert to base 2, describe it in base 2, convert to base 10. Repeat with the new result.
  * @author Sean A. Irvine
  */
 public class A049190 extends A001387 {

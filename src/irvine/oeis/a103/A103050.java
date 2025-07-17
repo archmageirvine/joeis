@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A103050 Numbers n such that 7*10^n + R_n + 2 is prime, where R_n = 11...1 is the repunit (A002275) of length n.
+ * A103050 Numbers k such that 7*10^k + R_k + 2 is prime, where R_k = 11...1 is the repunit (A002275) of length k.
  * @author Georg Fischer
  */
 public class A103050 extends PrimePositionSubsequence {

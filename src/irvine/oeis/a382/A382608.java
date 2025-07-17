@@ -4,7 +4,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A382608 Three-column table read by rows: row n is the unique primitive Pythagorean triple whose inradius is A000045(n) and such that its long leg and its hypotenuse are consecutive natural numbers.
+ * A382608 Long leg of the unique primitive Pythagorean triple whose inradius is A000045(n) and such that its long leg and its hypotenuse are consecutive natural numbers.
  * @author Sean A. Irvine
  */
 public class A382608 extends SimpleTransformSequence {

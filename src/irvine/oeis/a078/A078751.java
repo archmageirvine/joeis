@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A078751 Triangle read by rows: ss(m,k) = normalized partial derivative of (t,z)-&gt;exp(t g(z)) at (0,0), where 2 g(z)=1+exp(-2 z g(z)).
+ * A078751 Triangle read by rows: T(m,k) = normalized partial derivative of (t,z) -&gt; exp(t*g(z)) at (0,0), where 2*g(z) = 1 + exp(-2*z*g(z)).
  * @author Sean A. Irvine
  */
 public class A078751 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A385613 allocated for Ya-Ping Lu.
+ * A385613 Number of steps that n requires to reach 0 under the map: x-&gt; x^2 - 1 if x is an odd prime, floor(x/3) if x is even, otherwise x - 1. a(n) = -1 if 0 is never reached.
  * @author Sean A. Irvine
  */
 public class A385613 extends Sequence0 {

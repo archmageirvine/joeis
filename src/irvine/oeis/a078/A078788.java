@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A078769.
+ * A078788 Smallest m such that (n-1)*m+1 mod n = 0, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A078788 extends Sequence2 {

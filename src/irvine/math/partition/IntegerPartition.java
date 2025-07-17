@@ -2,9 +2,11 @@ package irvine.math.partition;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import irvine.math.function.Functions;
+import irvine.math.set.IntegerPermutation;
 import irvine.math.z.Z;
 import irvine.util.array.LongDynamicLongArray;
 
@@ -277,6 +279,22 @@ public final class IntegerPartition {
   }
 
   /**
+   * Return the automorphism size for the partition.
+   * @param v permutation type (i.e., a partition)
+   * @return count
+   */
+  public static Z aut(final int[] v) {
+    Z m = Z.ONE;
+    int k = 0;
+    for (int i = 0; i < v.length; ++i) {
+      final int t = v[i];
+      k = i > 0 && t == v[i - 1] ? k + 1 : 1;
+      m = m.multiply(t * (long) k);
+    }
+    return m;
+  }
+
+  /**
    * Return the count of the number of permutations of a particular type.
    * @param v permutation type (i.e., a partition)
    * @param mult multiplicative factor
@@ -360,6 +378,52 @@ public final class IntegerPartition {
       }
     }
     return m.divide(Functions.FACTORIAL.z(k));
+  }
+
+  /**
+   * Given a partition considered as a cycle type for a permutation, compute the cycle
+   * type of any permutation of this cycle type raised to the <code>n</code>th power.
+   * @param p cycle type
+   * @param n power
+   * @return cycle type
+   */
+  public static int[] power(final int[] p, final int n) {
+    if (n == 1) {
+      return p;
+    }
+    final int[] e = new int[Functions.SUM.i(p)];
+    int units = 0;
+    for (int k = 0, j = 0; k < p.length; ++k) {
+      final int s = j;
+      if (p[k] == 1) {
+        ++units;
+      }
+      for (int i = 0; i < p[k]; ++i) {
+        e[j++] = s + (i + 1) % p[k];
+      }
+    }
+    final IntegerPermutation perm = new IntegerPermutation(e);
+    IntegerPermutation pn = perm;
+    for (int k = 1; k < n; ++k) {
+      pn = pn.compose(perm);
+    }
+    final List<int[]> cycles = IntegerPermutation.toCycles(pn.getPerm());
+    // Restore missing unit cycles
+    for (int k = 0; k < units; ++k) {
+      cycles.add(new int[] {1});
+    }
+    final int[] res = new int[cycles.size()];
+    int q = 0;
+    for (final int[] c : cycles) {
+      res[q++] = c.length;
+    }
+    Arrays.sort(res);
+    for (int left = 0, right = res.length - 1; left < right; ++left, --right) {
+      final int t = res[left];
+      res[left] = res[right];
+      res[right] = t;
+    }
+    return res;
   }
 
   /**

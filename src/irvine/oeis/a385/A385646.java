@@ -8,7 +8,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A078769.
+ * A385646 a(n) is the number of distinct sums of distinct prime factors of n.
  * @author Sean A. Irvine
  */
 public class A385646 extends Sequence1 {

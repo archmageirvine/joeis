@@ -7,7 +7,7 @@ import irvine.oeis.a035.A035250;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A078754 Numbers n such that for all m&gt;n there are more than k primes between m and 2m (inclusive).
+ * A078754 Numbers k such that for all m&gt;k there are more than n primes between m and 2m (inclusive).
  * @author Sean A. Irvine
  */
 public class A078754 extends Sequence1 {

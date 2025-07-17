@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A075844 Numbers n such that 11*n^2 + 4 is a square.
+ * A075844 Numbers k such that 11*k^2 + 4 is a square.
  * @author Sean A. Irvine
  */
 public class A075844 extends LinearRecurrence {

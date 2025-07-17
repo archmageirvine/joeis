@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A027009 a(n) = T(n,m) + T(n,m+1) + ... + T(n,n), where m=[ (n+2)/2 ], T given by A026998.
+ * A027009 a(n) = Sum_{k=floor((n+2)/2)..n} T(n, k), T given by A026998.
  * @author Georg Fischer
  */
 public class A027009 extends GeneratingFunctionSequence {

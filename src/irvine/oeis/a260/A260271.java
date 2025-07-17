@@ -4,7 +4,7 @@ package irvine.oeis.a260;
 import irvine.oeis.a214.A214703;
 
 /**
- * A260271 Primes that contain only the digits (1, 4, 9).
+ * A260271 Primes having only {1, 4, 9} as digits.
  * @author Georg Fischer
  */
 public class A260271 extends A214703 {

@@ -3,7 +3,7 @@ package irvine.oeis.a385;
 import irvine.math.z.Z;
 
 /**
- * A385599 allocated for Clark Kimberling.
+ * A385599 The v sequence in quartets (4,u,v,w); see A385182.
  * @author Sean A. Irvine
  */
 public class A385599 extends A385598 {

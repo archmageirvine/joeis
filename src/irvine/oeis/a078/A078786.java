@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078769.
+ * A078786 Period of cycle of the inventory sequence (as in A063850) starting with n.
  * @author Sean A. Irvine
  */
 public class A078786 extends Sequence1 {

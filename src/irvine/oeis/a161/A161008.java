@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A161008 Primes of the form 2*n^2 + 5939831.
+ * A161008 Primes of the form 2*k^2 + 5939831.
  * @author Georg Fischer
  */
 public class A161008 extends PrimeSubsequence {

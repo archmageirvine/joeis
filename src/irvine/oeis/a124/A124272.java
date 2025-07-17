@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A124272 Primes in A124271, or primes of the form Sum_{i=1..n} (prime(i)^n - 1)/(prime(i) - 1).
+ * A124272 Primes in A124271, or primes of the form Sum_{i=1..k} (prime(i)^k - 1)/(prime(i) - 1).
  *
  * @author Georg Fischer
  */

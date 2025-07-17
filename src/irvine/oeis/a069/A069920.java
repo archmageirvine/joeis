@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a065.A065498;
 
 /**
- * A069920 Noninvertible n X n matrices mod 6 (i.e., over the ring Z_6).
+ * A069920 Number of noninvertible n X n matrices mod 6 (i.e., over the ring Z_6).
  * @author Sean A. Irvine
  */
 public class A069920 extends Sequence1 {

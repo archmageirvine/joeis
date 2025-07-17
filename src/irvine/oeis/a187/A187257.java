@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a004.A004148;
 
 /**
- * A187257 Number of UH^jU&apos;s for some j&gt;0, where U=(1,1) and H=(1,1), in all peakless Motzkin paths of length n (can be easily expressed using RNA secondary structure terminology).
+ * A187257 Number of UH^jU's for some j&gt;0, where U=(1,1) and H=(1,1), in all peakless Motzkin paths of length n (can be easily expressed using RNA secondary structure terminology).
  * new A004148()
  * @author Georg Fischer
  */

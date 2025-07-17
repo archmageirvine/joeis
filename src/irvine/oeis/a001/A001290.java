@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A001290 Order of "Restricted Affine Group" on n variables.
+ * A001290 Erroneous version of A028368.
  *
  * @author Georg Fischer
  */

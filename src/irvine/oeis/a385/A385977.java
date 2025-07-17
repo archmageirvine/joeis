@@ -4,7 +4,7 @@ import irvine.oeis.a002.A002315;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A078722.
+ * A385977 Length of the long leg of the triangles defined in A377725.
  * @author Sean A. Irvine
  */
 public class A385977 extends SimpleTransformSequence {

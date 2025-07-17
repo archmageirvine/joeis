@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A110722 {n concatenate R(n)}*{ R(n) concatenate n}, where R(n) = digit reversal of n.
+ * A110722 a(n) = {n concatenate R(n)}*{ R(n) concatenate n}, where R(n) = digit reversal of n.
  * @author Georg Fischer
  */
 public class A110722 extends Sequence0 {

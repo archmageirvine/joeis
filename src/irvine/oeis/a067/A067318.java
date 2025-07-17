@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001705;
 import irvine.oeis.a062.A062119;
 
 /**
- * A067318 Total number of transpositions in all permutations of n letters.
+ * A067318 Sum of the reflection lengths of all permutations of n letters.
  * @author Georg Fischer
  */
 public class A067318 extends Sequence1 {

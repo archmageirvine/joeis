@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A138941 Primes of the form (13^n - 3^n)/10.
+ * A138941 Primes of the form (13^k - 3^k)/10.
  *
  * @author Georg Fischer
  */

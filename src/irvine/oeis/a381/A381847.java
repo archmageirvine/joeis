@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +18,7 @@ import irvine.oeis.Sequence1;
  */
 public class A381847 extends Sequence1 {
 
-  private static final class OrderedTriple implements Comparable<OrderedTriple> {
+  protected static final class OrderedTriple implements Comparable<OrderedTriple> {
     private final int[] mTriple;
 
     private OrderedTriple(final int... triple) {
@@ -28,6 +29,14 @@ public class A381847 extends Sequence1 {
     private void set(final int index, final int value) {
       mTriple[index] = value;
       Arrays.sort(mTriple);
+    }
+
+    /**
+     * Volume of this cuboid.
+     * @return the volume
+     */
+    public Z volume() {
+      return Functions.PRODUCT.z(mTriple);
     }
 
     @Override
@@ -54,16 +63,32 @@ public class A381847 extends Sequence1 {
     }
   }
 
-  private final int mCuboids;
-  private int mN = 0;
+  protected final int mCuboids;
+  private int mN;
+
+  protected A381847(final int offset, final int cuboids) {
+    mCuboids = cuboids;
+    mN = offset - 1;
+  }
 
   protected A381847(final int cuboids) {
-    mCuboids = cuboids;
+    this(1, cuboids);
   }
 
   /** Construct the sequence. */
   public A381847() {
     this(3);
+  }
+
+  protected Z process(final Set<List<OrderedTriple>> triples) {
+    // Finally, check the count of distinct triples in the set
+    int cnt = 0;
+    for (final List<OrderedTriple> t : triples) {
+      if (new TreeSet<>(t).size() == mCuboids) {
+        ++cnt;
+      }
+    }
+    return Z.valueOf(cnt);
   }
 
   @Override
@@ -95,14 +120,7 @@ public class A381847 extends Sequence1 {
       }
       triples = next;
     }
-    // Finally, check the count of distinct triples in the set
-    int cnt = 0;
-    for (final List<OrderedTriple> t : triples) {
-      if (new TreeSet<>(t).size() == mCuboids) {
-        ++cnt;
-      }
-    }
-    return Z.valueOf(cnt);
+    return process(triples);
   }
 }
 

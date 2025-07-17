@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A125263 Numbers n such that n^8 + 7 is prime.
+ * A125263 Numbers k such that k^8 + 7 is prime.
  * @author Georg Fischer
  */
 public class A125263 extends FilterNumberSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078769 n.phi(n)^2&lt;sigma(n)^2.
+ * A078769 Numbers k such that k * phi(k)^2 &lt; sigma(k)^2.
  * @author Sean A. Irvine
  */
 public class A078769 extends Sequence1 {

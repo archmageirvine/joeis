@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A078710 Integer part of the subinterval variance in the partition of [0,n] by the divisors of n.
+ * A078710 Integer part of the subinterval sample variance in the partition of [0,n] by the divisors of n.
  * @author Sean A. Irvine
  */
 public class A078710 extends Sequence2 {

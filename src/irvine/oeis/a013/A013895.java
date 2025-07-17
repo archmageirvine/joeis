@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A013895 a(n) = 20^(5*n+2).
+ * A013895 a(n) = 20^(5*n + 2).
  * @author Sean A. Irvine
  */
 public class A013895 extends Sequence0 {

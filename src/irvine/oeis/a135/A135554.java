@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000583;
 import irvine.oeis.a028.A028834;
 
 /**
- * A135554 Numbers n such that n is the fourth power of an integer and the sum of digits of n is prime.
+ * A135554 Numbers k such that k is the fourth power of an integer and the sum of digits of k is prime.
  * @author Georg Fischer
  */
 public class A135554 extends IntersectionSequence {

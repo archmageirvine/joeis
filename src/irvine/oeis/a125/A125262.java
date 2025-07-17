@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A125262 Numbers n such that n^7 + 6 is prime.
+ * A125262 Numbers k such that k^7 + 6 is prime.
  * @author Georg Fischer
  */
 public class A125262 extends FilterNumberSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000272;
 import irvine.oeis.a001.A001710;
 
 /**
- * A275488  Number of labeled forests of (free) trees such that exactly one tree is a path.
+ * A275488 Number of labeled forests of (free) trees such that exactly one tree is a path.
  * egf(new A001710()), egf(new A000272())
  * @author Georg Fischer
  */

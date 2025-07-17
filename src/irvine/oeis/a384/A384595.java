@@ -4,7 +4,7 @@ import irvine.oeis.Combiner;
 import irvine.oeis.a118.A118704;
 
 /**
- * A384595 allocated for Clark Kimberling.
+ * A384595 a(n) = neg(M(n)), where M(n) is the n X n circulant matrix with (row 1) = (F(2), F(3), ..., F(n+1)), where F = A000045 (Fibonacci numbers), and neg(M(n)) is the negative part of the determinant of M(n); see A380661.
  * @author Sean A. Irvine
  */
 public class A384595 extends Combiner {

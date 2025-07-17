@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A385855 allocated for Marco Rip\u00e0.
+ * A385855 Decimal expansion of log_10(1 + 1/7).
  * Formula: log_10(1 + 1/7).
  * @author Georg Fischer
  */

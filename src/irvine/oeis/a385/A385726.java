@@ -4,7 +4,7 @@ package irvine.oeis.a385;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A385726 allocated for Enrique Navarrete.
+ * A385726 a(n) = 3^n - 6*binomial(n,4) - 6*binomial(n,3) - 4*binomial(n,2) - 2*n - 1.
  * @author Georg Fischer
  */
 public class A385726 extends HolonomicRecurrence {

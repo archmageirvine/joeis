@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A218150 5^((6+5*n+n^3)/6).
+ * A218150 a(n) = 5^((6+5*n+n^3)/6).
  * a(n)=5^(n*(n^2+5)/6+1)
  * @author Georg Fischer
  */

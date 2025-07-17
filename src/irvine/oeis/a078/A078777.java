@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A078769.
+ * A078777 a(n) = the least positive integer k such that binomial(2k,k) + k + n is prime, if such k exists; = 0, otherwise.
  * @author Sean A. Irvine
  */
 public class A078777 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A007500 Primes whose reversal in base 10 is also prime (called "palindromic primes" by D. Wells, although that name usually refers to A002385). Also called reversible primes.
+ * A007500 Primes whose reversal in base 10 is also prime (called "palindromic primes" by David Wells, although that name usually refers to A002385). Also called reversible primes.
  * @author Georg Fischer
  */
 public class A007500 extends Sequence1 {

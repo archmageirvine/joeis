@@ -4,7 +4,7 @@ package irvine.oeis.a160;
 import irvine.oeis.a274.A274022;
 
 /**
- * A160034 Primes of the form 2^(2^n) + 807 .
+ * A160034 Primes of the form 2^(2^k) + 807 .
  * @author Georg Fischer
  */
 public class A160034 extends A274022 {

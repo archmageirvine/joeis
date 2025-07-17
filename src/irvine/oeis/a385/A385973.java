@@ -5,7 +5,7 @@ import irvine.oeis.a365.A365577;
 import irvine.util.Triple;
 
 /**
- * A078722.
+ * A385973 The hypotenuses of the triangles defined in A365577.
  * @author Sean A. Irvine
  */
 public class A385973 extends A365577 {

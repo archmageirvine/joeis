@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A078769.
+ * A078783 a(0) = 0; a(1)=1; for n&gt;1, a(n) = least positive integer m not among a(1),...,a(n-1) such that |m-a(n-1)| &gt; |a(n-1)-a(n-2)|.
  * @author Sean A. Irvine
  */
 public class A078783 extends Sequence0 {

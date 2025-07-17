@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A385849 allocated for Stefano Spezia.
+ * A385849 Triangle read by rows: T(n,k) = numerator((Sum_{i=1..k} (n-i+1)^2)/(Sum_{i=1..k} i^2)), with 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A385849 extends Sequence1 {

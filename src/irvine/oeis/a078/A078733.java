@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078733 Numbers n such that the b0(n)^2=b1(n) where b1(n) denotes the number of 1's in binary expansion of n, b0(n) the number of 0's.
+ * A078733 Numbers k such that the b0(k)^2=b1(k) where b1(k) denotes the number of 1's in binary expansion of k, b0(k) the number of 0's.
  * @author Sean A. Irvine
  */
 public class A078733 extends Sequence1 {

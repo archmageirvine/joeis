@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A385732 Triangle of Lucas coefficients, read by rows.
+ * A385732 Triangle read by rows: the numerators of the Lucas triangle.
  * @author Georg Fischer
  */
 public class A385732 extends Triangle {

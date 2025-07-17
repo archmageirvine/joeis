@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A104298 a(n) = prime((a(n-1) + 1)/2), a(1)=15.
+ * A104298 a(n) = prime((a(n-1) + 1)/2), a(1) = 15.
  * @author Georg Fischer
  */
 public class A104298 extends MultiTransformSequence {

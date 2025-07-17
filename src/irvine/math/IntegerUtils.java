@@ -336,6 +336,19 @@ public final class IntegerUtils {
   }
 
   /**
+   * Return the sum of the elements in a collection.
+   * @param lst list
+   * @return sum
+   */
+  public static int sum(final Collection<Integer> lst) {
+    int s = 0;
+    for (final int v : lst) {
+      s += v;
+    }
+    return s;
+  }
+
+  /**
    * Modular inverse.
    * @param k number
    * @param m modulus

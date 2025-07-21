@@ -2628,3 +2628,4 @@ A078631 Denominators of coefficients of asymptotic expansion of probability p(n)
 A078639 Number of nonisomorphic graphic matroids (by rank or number of vertices).
 A078668 Primes that are the difference between two powers: y^z - x^z = prime.
 A078780 Number of different digraphs on an n-cube.
+A078816 Maximum element in the continued fraction for (1/n) * Sum_{k>=0} 1/2^2^k

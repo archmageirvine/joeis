@@ -22,7 +22,7 @@ public class A078816 extends Sequence1 implements Conjectural {
     Z max = Z.ZERO;
     int k = 0;
     while (true) {
-      Z a = x.floor();
+      final Z a = x.floor();
       if (a.compareTo(max) > 0) {
         k = 0;
         max = a;

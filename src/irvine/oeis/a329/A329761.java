@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a174.A174813;
 
 /**
- * A329761 Primes whose product of decimal digits is a power of 3.
+ * A329761 Primes having only {1, 3, 9} as digits.
  * @author Georg Fischer
  */
 public class A329761 extends IntersectionSequence {

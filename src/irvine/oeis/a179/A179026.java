@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A179026 Primes whose only prime digits are 3&apos;s.
+ * A179026 Primes whose only prime digits are 3's.
  * @author Georg Fischer
  */
 public class A179026 extends FilterSequence {

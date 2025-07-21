@@ -4,7 +4,7 @@ package irvine.oeis.a087;
 import irvine.oeis.a214.A214703;
 
 /**
- * A087363 Primes whose decimal digits are twin primes.
+ * A087363 Primes having only {3, 5, 7} as digits.
  * @author Georg Fischer
  */
 public class A087363 extends A214703 {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A201178 Primes of the form 5n^3+9.
+ * A201178 Primes of the form 5k^3+9.
  * @author Georg Fischer
  */
 public class A201178 extends PrimeSubsequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a363;
 import irvine.oeis.a214.A214703;
 
 /**
- * A363023 Primes composed of the digits 1, 6, and 9.
+ * A363023 Primes having only {1, 6, 9} as digits.
  * @author Georg Fischer
  */
 public class A363023 extends A214703 {

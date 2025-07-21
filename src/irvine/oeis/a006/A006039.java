@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a023.A023196;
 
 /**
- * A006039 Primitive non-deficient numbers.
+ * A006039 Primitive nondeficient numbers.
  * @author Sean A. Irvine
  */
 public class A006039 extends A023196 {

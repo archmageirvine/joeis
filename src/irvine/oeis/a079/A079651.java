@@ -4,7 +4,7 @@ package irvine.oeis.a079;
 import irvine.oeis.a214.A214703;
 
 /**
- * A079651 Prime numbers using only the straight digits 1, 4 and 7.
+ * A079651 Primes having only {1, 4, 7} as digits.
  * @author Georg Fischer
  */
 public class A079651 extends A214703 {

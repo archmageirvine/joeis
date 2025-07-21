@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.array.DynamicArray;
 
 /**
- * A078800.
+ * A385709 Least prime p such that the decimal expansion of p^2 contains exactly n distinct primes as substrings.
  * @author Sean A. Irvine
  */
 public class A385709 extends A000040 {

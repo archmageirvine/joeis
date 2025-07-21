@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A078800.
+ * A078822 Number of distinct binary numbers contained as substrings in the binary representation of n.
  * @author Sean A. Irvine
  */
 public class A078822 extends Sequence0 {

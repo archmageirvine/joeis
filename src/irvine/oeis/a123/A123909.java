@@ -8,7 +8,7 @@ import irvine.oeis.transform.SimpleTransformSequence;
 
 
 /**
- * A123909 Primes of the form n!+11.
+ * A123909 Primes of the form k!+11.
  * @author Georg Fischer
  */
 public class A123909 extends PrimeSubsequence {

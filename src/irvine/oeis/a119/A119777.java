@@ -4,7 +4,7 @@ package irvine.oeis.a119;
 import irvine.oeis.a006.A006988;
 
 /**
- * A119777 16^n-th prime.
+ * A119777 (16^n)-th prime.
  * @author Georg Fischer
  */
 public class A119777 extends A006988 {

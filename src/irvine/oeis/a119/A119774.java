@@ -4,7 +4,7 @@ package irvine.oeis.a119;
 import irvine.oeis.a006.A006988;
 
 /**
- * A119774 9^n-th prime.
+ * A119774 (9^n)-th prime.
  * @author Georg Fischer
  */
 public class A119774 extends A006988 {

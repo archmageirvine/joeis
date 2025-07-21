@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384001 allocated for Michael De Vlieger.
+ * A384001 Irregular triangle T(n,j,k), j = 1..A024718(n), k = 1..n, where row 1 = {(0), (1)}, and row n = union of n-tuples whose sum s &lt; n, and the n-tuples formed by appending s to the (n-1)-tuples in row n-1.
  * @author Sean A. Irvine
  */
 public class A384001 extends Sequence1 {

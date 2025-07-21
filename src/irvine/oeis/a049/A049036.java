@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a065.A065091;
 
 /**
- * A049036 Mean gap between successive primes up to n-th prime is an integer.
+ * A049036 Mean gap between successive primes up to k-th prime is an integer.
  * @author Sean A. Irvine
  */
 public class A049036 extends A065091 {

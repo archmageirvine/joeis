@@ -4,7 +4,7 @@ package irvine.oeis.a115;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A115792 A dihedial D1 elliptical transform on A000073.
+ * A115792 a(n) = ceiling(g(A000073(n))) with g(k) = (k-1)^2/(4k).
  * @author Georg Fischer
  */
 public class A115792 extends GeneratingFunctionSequence {

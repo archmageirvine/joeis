@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A078800.
+ * A078828 Product of all primes contained as binary substrings in binary representation of n.
  * @author Sean A. Irvine
  */
 public class A078828 extends Sequence0 {

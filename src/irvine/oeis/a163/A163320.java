@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A163320 Primes of the form 2^n+n^3.
+ * A163320 Primes of the form 2^k + k^3.
  *
  * @author Georg Fischer
  */

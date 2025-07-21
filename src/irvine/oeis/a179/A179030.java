@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A179030 Primes whose only prime digits are 7&apos;s.
+ * A179030 Primes whose only prime digits are 7's.
  * @author Georg Fischer
  */
 public class A179030 extends FilterSequence {

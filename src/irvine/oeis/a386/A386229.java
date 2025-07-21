@@ -5,7 +5,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A386229 G.f. A(x) satisfies A(x) = 1/( (1-x)^2 * (1 - x*A(x) - x^2*A&apos;(x)) ).
+ * A386229 G.f. A(x) satisfies A(x) = 1/( (1-x)^2 * (1 - x*A(x) - x^2*A'(x)) ).
  * @author Georg Fischer
  */
 public class A386229 extends MultiTransformSequence {

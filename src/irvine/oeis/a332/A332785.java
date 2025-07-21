@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a013.A013929;
 
 /**
- * A078800.
+ * A332785 Nonsquarefree numbers that are not squareful.
  * @author Sean A. Irvine
  */
 public class A332785 extends FilterSequence {

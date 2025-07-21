@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A078800.
+ * A078823 Sum of distinct binary numbers contained as substrings in binary representation of n.
  * @author Sean A. Irvine
  */
 public class A078823 extends Sequence0 {

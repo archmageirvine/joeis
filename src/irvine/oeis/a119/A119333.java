@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A119333 Apery-primes: primes formed from the concatenation of the initial decimal digits of Apery's constant zeta(3).
+ * A119333 Apery primes: primes formed from the concatenation of the initial decimal digits of Apery's constant zeta(3).
  *
  * @author Georg Fischer
  */

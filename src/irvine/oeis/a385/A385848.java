@@ -7,7 +7,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A385848 allocated for Dimas Saputra.
+ * A385848 Numbers not of the form 2^m*k + m + 1, for integers m, k &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A385848 extends ComplementSequence {

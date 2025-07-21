@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A185178 Number of different values of the permanent of an n X n (0,1)-matrix with exactly three 1's in each row and each column.
+ * A185178 Number of distinct values of the permanent of an n X n (0,1)-matrix with exactly three 1's in each row and each column.
  *
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A256439 Numbers n such that phi(n-1)+1 divides sigma(n).
+ * A256439 Numbers k such that phi(k-1)+1 divides sigma(k).
  * @author Georg Fischer
  */
 public class A256439 extends FilterNumberSequence {

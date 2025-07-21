@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A119343 Theodorus-primes: primes formed from the concatenation of the initial decimal digits of Theodorus's constant, sqrt(3).
+ * A119343 Theodorus primes: primes formed from the concatenation of the initial decimal digits of Theodorus's constant, sqrt(3).
  *
  * @author Georg Fischer
  */

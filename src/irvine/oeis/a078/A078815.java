@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.math.z.Z;
 
 /**
- * A078800.
+ * A078815 a(n) = A078215(n+1)/A078215(n).
  * @author Sean A. Irvine
  */
 public class A078815 extends A078215 {

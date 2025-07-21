@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078800.
+ * A078829 Numbers having exactly one prime contained as binary substring in binary representation of n.
  * @author Sean A. Irvine
  */
 public class A078829 extends Sequence1 {

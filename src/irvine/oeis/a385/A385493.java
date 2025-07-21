@@ -9,7 +9,7 @@ import irvine.math.zi.Zi;
 import irvine.oeis.Sequence0;
 
 /**
- * A078800.
+ * A385493 Number of distinct states in Conway's Game of Life acting on a (2n+1) X (2n+1) toroidal grid starting with (x,y) turned on if and only if x-n + (y-n)*i is a Gaussian prime.
  * @author Sean A. Irvine
  */
 public class A385493 extends Sequence0 {

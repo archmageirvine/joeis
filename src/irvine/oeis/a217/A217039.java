@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a214.A214584;
 
 /**
- * A217039 Primes whose decimal representation has only digits in {4,5,7}.
+ * A217039 Primes having only {4, 5, 7} as digits.
  * @author Georg Fischer
  */
 public class A217039 extends FilterSequence {

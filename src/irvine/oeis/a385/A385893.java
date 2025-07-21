@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A078800.
+ * A385893 Cycle of length 130 in the dynamical system A385938 starting from 26.
  * @author Sean A. Irvine
  */
 public class A385893 extends Sequence0 {

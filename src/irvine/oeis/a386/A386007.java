@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A078800.
+ * A386007 Least k such that there are exactly n primes that are popular on the interval [2,k] (see A385503); i.e., exactly n primes share the lead as the most common greatest prime factor of the numbers 2..k.
  * @author Sean A. Irvine
  */
 public class A386007 extends Sequence1 {

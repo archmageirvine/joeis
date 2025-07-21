@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A385865 allocated for Binay Krishna Maity.
+ * A385865 Triangle read by rows where T(n,k), for 1 &lt;= k &lt; n, is the column number where (n-k)^2 occurs in an n X n grid filled rowwise with the numbers 1 to n^2.
  * @author Sean A. Irvine
  */
 public class A385865 extends Sequence2 {

@@ -6,7 +6,7 @@ import irvine.oeis.transform.InverseMobiusTransformSequence;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A129979 Left border of triangle A131088.
+ * A129979 a(n) = 2-mu(n), where mu=A008683 is the Moebius function.
  * @author Georg Fischer
  */
 public class A129979 extends InverseMobiusTransformSequence {

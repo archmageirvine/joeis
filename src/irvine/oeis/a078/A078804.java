@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078800.
+ * A078804 Triangular array T given by T(n,k)= number of 01-words of length n having exactly k 1's and every runlength of 1's odd.
  * @author Sean A. Irvine
  */
 public class A078804 extends Sequence1 {

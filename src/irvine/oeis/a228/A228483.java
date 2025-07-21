@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008683;
 
 /**
- * A228483 a(n) = 2 - mu(n), where mu(n) is the Moebius function (A008683).
+ * A228483 Duplicate of A129979.
  * @author Georg Fischer
  */
 public class A228483 extends Sequence1 {

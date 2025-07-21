@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A165439 Primes p such that 3+2*(sum of digits of p) is also a prime
+ * A165439 Primes p such that 3+2*(sum of digits of p) is also a prime.
  * @author Georg Fischer
  */
 public class A165439 extends FilterSequence {

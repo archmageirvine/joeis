@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A101293 Lucas(n!).
+ * A101293 a(n) = Lucas(n!).
  * @author Georg Fischer
  */
 public class A101293 extends LambdaSequence {

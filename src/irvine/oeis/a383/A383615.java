@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A078800.
+ * A383615 Length of the long leg of the unique primitive Pythagorean triple (x,y,z) such that (x-y+z)/2 = A000108(n) and its long leg and hypotenuse are consecutive natural numbers.
  * @author Sean A. Irvine
  */
 public class A383615 extends Sequence2 {

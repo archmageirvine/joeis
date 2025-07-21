@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A078800.
+ * A385871 a(n) is the number of primes in the prime chain to which prime(n) belongs. Details are in the Comments.
  * @author Sean A. Irvine
  */
 public class A385871 extends Sequence1 {

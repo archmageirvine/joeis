@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078800.
+ * A386010 Numbers z such that there exist two integers 0&lt;x&lt;=y&lt;=z such that sigma(x)*sigma(y)*sigma(z) = (x + y + z)^3.
  * @author Sean A. Irvine
  */
 public class A386010 extends Sequence1 {

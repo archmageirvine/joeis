@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a006.A006567;
 
 /**
- * A179038 Emirps whose only prime digits are 7&apos;s.
+ * A179038 Emirps whose only prime digits are 7's.
  * @author Georg Fischer
  */
 public class A179038 extends FilterSequence {

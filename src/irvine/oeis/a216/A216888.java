@@ -5,7 +5,7 @@ package irvine.oeis.a216;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A216888 Numbers n such that 6*3^n + 1 is prime.
+ * A216888 Numbers k such that 6*3^k + 1 is prime.
  * @author Georg Fischer
  */
 public class A216888 extends PowerFactorPrimeSequence {

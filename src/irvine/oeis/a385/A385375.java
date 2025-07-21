@@ -3,7 +3,7 @@ package irvine.oeis.a385;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A385153 allocated for Janaka Rodrigo.
+ * A385375 Numbers k that can't be partitioned into tau(k) distinct parts.
  * @author Sean A. Irvine
  */
 public class A385375 extends FiniteSequence {

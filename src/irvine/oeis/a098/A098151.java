@@ -7,7 +7,7 @@ import irvine.oeis.transform.EulerTransform;
 
 
 /**
- * A098151 Number of partitions of 2n prime to 3 with all odd parts occurring with even multiplicities. There is no restriction on the even parts.
+ * A098151 Number of partitions of 2*n with no part divisible by 3 and all odd parts occurring with even multiplicities.
  * @author Georg Fischer
  */
 public class A098151 extends EulerTransform {

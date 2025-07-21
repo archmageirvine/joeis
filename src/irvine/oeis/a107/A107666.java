@@ -5,7 +5,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterSequence;
 
 /**
- * A107666 Primes with semiprime digits (digits 4, 6, 9 only).
+ * A107666 Primes having only {4, 6, 9} as digits.
  * @author Georg Fischer
  */
 public class A107666 extends FilterSequence {

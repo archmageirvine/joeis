@@ -3,7 +3,7 @@ package irvine.oeis.a385;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A385153 allocated for Janaka Rodrigo.
+ * A385711 Primes whose digits are all distinct and pairwise coprime.
  * @author Sean A. Irvine
  */
 public class A385711 extends FiniteSequence {

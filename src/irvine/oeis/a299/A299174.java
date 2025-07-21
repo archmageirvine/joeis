@@ -4,7 +4,7 @@ package irvine.oeis.a299;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A299174 The even positive integers.
+ * A299174 The positive even integers.
  * @author Georg Fischer
  */
 public class A299174 extends GeneratingFunctionSequence {

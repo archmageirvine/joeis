@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a381.A381847;
 
 /**
- * A385151 allocated for Janaka Rodrigo.
+ * A385151 a(n) is the least possible difference between the largest and smallest volumes of distinct three-cuboid combination filling an n X n X n cube.
  * @author Sean A. Irvine
  */
 public class A385151 extends A381847 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A078800.
+ * A386009 Decimal expansion of Product_{k&gt;=2} k^( ((k/2)^(k-1)) / (exp(k/2)*k!) ).
  * @author Sean A. Irvine
  */
 public class A386009 extends DecimalExpansionSequence {

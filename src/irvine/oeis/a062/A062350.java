@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062350 Primes containing digits 1, 2, 3 only.
+ * A062350 Primes having only {1, 2, 3} as digits.
  * @author Sean A. Irvine
  */
 public class A062350 extends Sequence1 {

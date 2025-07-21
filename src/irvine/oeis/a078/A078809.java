@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a065.A065091;
 
 /**
- * A078800.
+ * A078809 Number of divisors of the average of consecutive odd primes.
  * @author Sean A. Irvine
  */
 public class A078809 extends A065091 {

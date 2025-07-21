@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A078800.
+ * A078826 Number of distinct primes contained as binary substrings in binary representation of n.
  * @author Sean A. Irvine
  */
 public class A078826 extends Sequence0 {

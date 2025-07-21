@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A214703 Primes having only {0, 1, 2, 4} as digits.
+ * A386017 Primes having only {0, 1, 2, 4} as digits.
  * @author Georg Fischer
  */
 public class A386017 extends AbstractSequence {

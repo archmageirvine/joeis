@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A118843 Primes of the form ceiling(Pi^n).
+ * A118843 Primes of the form ceiling(Pi^k).
  *
  * @author Georg Fischer
  */

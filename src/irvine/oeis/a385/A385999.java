@@ -3,7 +3,7 @@ package irvine.oeis.a385;
 import irvine.oeis.LinearCongruentialGenerator;
 
 /**
- * A385999 allocated for Miles Englezou.
+ * A385999 Least k such that every group of order n embeds into a group of order k*n.
  * @author Sean A. Irvine
  */
 public class A385999 extends LinearCongruentialGenerator {

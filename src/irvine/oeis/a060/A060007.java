@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A060007 Decimal expansion of v_4, where v_n is the smallest, positive, real solution to the equation (v_n)^n = v_n + 1.
+ * A060007 Decimal expansion of the positive real root of x^4 - x - 1.
  * @author Sean A. Irvine
  */
 public class A060007 extends PolynomialRootExpansionSequence {

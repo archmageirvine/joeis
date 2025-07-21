@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A072952 Primes obtained as initial segments of the decimal expansion of the Euler-Mascheroni constant gamma=0.5772....
+ * A072952 Primes obtained as initial segments of the decimal expansion of the Euler-Mascheroni constant gamma = 0.5772... .
  *
  * @author Georg Fischer
  */

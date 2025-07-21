@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a063.A063655;
 
 /**
- * A385812 allocated for Richard S. Chang.
+ * A385812 Numbers k such that A063655(k) &gt; A063655(k+1).
  * @author Sean A. Irvine
  */
 public class A385812 extends Sequence1 {

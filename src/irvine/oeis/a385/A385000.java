@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.Pair;
 
 /**
- * A078800.
+ * A385000 Square array read by upward antidiagonals: A(n,k) = 0 except for A(d*(m-1),m*(d-1)) = d, with n &gt;= 0, k &gt;= 0, d &gt;= 1, m &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A385000 extends Sequence0 {

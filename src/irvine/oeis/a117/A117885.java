@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A117885 Numbers n such that a regular (n^3-n)-gon can be constructed by means of a ruler and compass.
+ * A117885 Numbers k such that a regular (k^3-k)-gon can be constructed by means of a ruler and compass.
  * @author Georg Fischer
  */
 public class A117885 extends FiniteSequence {

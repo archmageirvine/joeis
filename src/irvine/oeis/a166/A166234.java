@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A166234 The inverse of the constant 1 function under the exponential convolution (also called the exponential M√∂bius function).
+ * A166234 The inverse of the constant 1 function under the exponential convolution (also called the exponential M\u00f6bius function).
  * Multiplicative with:
  * @author Georg Fischer
  */

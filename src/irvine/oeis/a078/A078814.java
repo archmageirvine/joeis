@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078800.
+ * A078814 Smallest prime factor of googolplex - n that exceeds 13, or 1 if googolplex - n is 13-smooth.
  * @author Sean A. Irvine
  */
 public class A078814 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A122421 Soldner-primes; primes formed from concatenation of decimal digits of Soldner's constant.
+ * A122421 Soldner primes: primes formed from concatenation of decimal digits of Soldner's constant.
  *
  * @author Georg Fischer
  */

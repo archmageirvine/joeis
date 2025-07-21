@@ -6,7 +6,7 @@ import irvine.oeis.a006.A006532;
 import irvine.oeis.a006.A006881;
 
 /**
- * A256152 Numbers n such that n is the product of two distinct primes and sigma(n) is a square number.
+ * A256152 Numbers k such that k is the product of two distinct primes and sigma(k) is a square number.
  * @author Georg Fischer
  */
 public class A256152 extends IntersectionSequence {

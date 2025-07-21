@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000045;
 
 /**
- * A382843 Table read by rows: row n is the unique primitive Pythagorean triple (a,b,c) such that (a-b+c)/2 = A000045(n) and its long leg and hypotenuse are consecutive natural numbers.
+ * A382843 Length of the long leg in the unique primitive Pythagorean triple (x,y,z) such that (x-y+z)/2 = A000045(n) and its long leg and hypotenuse are consecutive natural numbers.
  * @author Sean A. Irvine
  */
 public class A382843 extends Sequence0 {

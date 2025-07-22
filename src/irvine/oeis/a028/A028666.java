@@ -12,9 +12,4 @@ public class A028666 extends A028665 {
   protected Z power() {
     return Z.FOUR;
   }
-
-  @Override
-  protected int start() {
-    return -1;
-  }
 }

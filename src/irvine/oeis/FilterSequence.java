@@ -17,6 +17,8 @@ public class FilterSequence extends AbstractSequence {
   public static final Predicate<Z> PRIME = Z::isProbablePrime;
   /** Non-prime terms. */
   public static final Predicate<Z> NONPRIME = k -> !k.isProbablePrime();
+  /** Composite. */
+  public static final Predicate<Z> COMPOSITE = k -> !k.equals(Z.ONE) && !k.isProbablePrime();
   /** Zero terms. */
   public static final Predicate<Z> ZERO = Z::isZero;
   /** One terms. */

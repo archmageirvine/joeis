@@ -1,18 +1,18 @@
-package irvine.oeis.a078;
+package irvine.oeis.a079;
 
 import irvine.math.graph.GraphUtils;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A078564 Number of (simple, undirected, unlabeled, connected) graphs with n vertices which contain no induced subgraph isomorphic to the complement of P5 (the "house" graph).
+ * A079564 Number of unlabeled connected simple graphs on n vertices with no induced subgraphs isomorphic to a P5 or complement of a P5 (P5 = path on 5 vertices.).
  * @author Sean A. Irvine
  */
-public class A078564 extends ParallelGenerateGraphsSequence {
+public class A079564 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
-  public A078564() {
-    super(0, 0, 0, () -> graph -> GraphUtils.houseFree(graph) ? 1 : 0);
+  public A079564() {
+    super(0, 0, 0, () -> graph -> GraphUtils.houseFree(graph) && GraphUtils.p5Free(graph) ? 1 : 0);
   }
 
   @Override

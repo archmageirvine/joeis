@@ -11,8 +11,6 @@ import irvine.oeis.Sequence3;
  */
 public class A385925 extends Sequence3 {
 
-  // todo pending clarification from Kimberling
-
   private final Fast mPrime = new Fast();
   private long mN = 2;
 
@@ -31,14 +29,13 @@ public class A385925 extends Sequence3 {
         for (long q = 2; q < mN; q = mPrime.nextPrime(q)) {
           final Q r = new Q(p, q);
           final Q u = v.subtract(r).abs();
-          if (u.compareTo(min) < 0) {
+          if (!u.isZero() && u.compareTo(min) < 0) {
             min = u;
             best = r;
           }
         }
       }
     }
-    //System.out.println("n=" + mN + " p/q=" + best + " min=" + min);
     return select(best);
   }
 }

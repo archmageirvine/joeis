@@ -27,7 +27,7 @@ public class A385864 extends ParallelGenerateGraphsSequence {
       if (SEEN.add(ip)) {
         return 1; // First time we saw this polynomial
       } else if (DUPES.add(ip)) {
-        return -1; // Previously was unique, now seen again, reduce te overall count
+        return -1; // Previously was unique, now seen again, reduce the overall count
       } else {
         return 0; // Already accounted for
       }

@@ -20,7 +20,7 @@ public class A078898 extends OrdinalTransformSequence {
 
   @Override
   public Z next() {
-    return (++mN == 0) ? Z.ZERO : super.next();
+    return ++mN == 0 ? Z.ZERO : super.next();
   }
 }
 

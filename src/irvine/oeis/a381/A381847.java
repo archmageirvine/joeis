@@ -11,6 +11,7 @@ import java.util.TreeSet;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
+import irvine.util.string.StringUtils;
 
 /**
  * A381847 a(n) is the number of ways to partition an n X n X n cube into 3 cuboids of different dimensions.
@@ -63,6 +64,7 @@ public class A381847 extends Sequence1 {
     }
   }
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   protected final int mCuboids;
   private int mN;
 
@@ -80,22 +82,23 @@ public class A381847 extends Sequence1 {
     this(3);
   }
 
-  protected Z process(final Set<List<OrderedTriple>> triples) {
+  protected Z process(final Set<List<OrderedTriple>> triples, final int cuboids) {
     // Finally, check the count of distinct triples in the set
     int cnt = 0;
     for (final List<OrderedTriple> t : triples) {
-      if (new TreeSet<>(t).size() == mCuboids) {
+      if (new TreeSet<>(t).size() == cuboids) {
+        if (mVerbose) {
+          StringUtils.message(t.toString());
+        }
         ++cnt;
       }
     }
     return Z.valueOf(cnt);
   }
 
-  @Override
-  public Z next() {
-    ++mN;
-    Set<List<OrderedTriple>> triples = Collections.singleton(Collections.singletonList(new OrderedTriple(mN, mN, mN)));
-    for (int k = 1; k < mCuboids; ++k) {
+  protected Z t(final int n, final int cuboids) {
+    Set<List<OrderedTriple>> triples = Collections.singleton(Collections.singletonList(new OrderedTriple(n, n, n)));
+    for (int k = 1; k < cuboids; ++k) {
       final Set<List<OrderedTriple>> next = new HashSet<>();
       for (final List<OrderedTriple> set : triples) {
         for (final OrderedTriple t : set) {
@@ -120,7 +123,11 @@ public class A381847 extends Sequence1 {
       }
       triples = next;
     }
-    return process(triples);
+    return process(triples, cuboids);
+  }
+
+  @Override
+  public Z next() {
+    return t(++mN, mCuboids);
   }
 }
-

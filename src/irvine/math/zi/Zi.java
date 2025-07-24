@@ -209,6 +209,15 @@ public class Zi extends Number implements Comparable<Zi>, IsInteger {
   }
 
   /**
+   * Multiply this Gaussian integer by an integer.
+   * @param n number to multiply by
+   * @return product
+   */
+  public Zi multiply(final long n) {
+    return new Zi(re().multiply(n), im().multiply(n));
+  }
+
+  /**
    * Divide this Gaussian integer by another Gaussian integer.
    * Note: this can only give correct results when the division is exact
    * @param n number to divide by

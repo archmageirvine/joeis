@@ -23,7 +23,7 @@ public class A385151 extends A381847 {
   }
 
   @Override
-  protected Z process(final Set<List<OrderedTriple>> triples) {
+  protected Z process(final Set<List<OrderedTriple>> triples, final int cuboids) {
     Z minDefect = null;
     for (final List<OrderedTriple> t : triples) {
       if (new TreeSet<>(t).size() == mCuboids) {

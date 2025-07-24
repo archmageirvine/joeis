@@ -47,7 +47,7 @@ public class A092113 extends Sequence1 {
     final int[] perm = IntegerUtils.identity(new int[mN]);
     final long pi = index(perm);
     seen.set(pi, 1); // Offset by 1, we use 0 to indicate not yet seen
-    mCounts.increment(pi);
+    mCounts.increment(0);
     final Deque<int[]> queue = new LinkedList<>();
     queue.add(perm);
     mMax = 0;

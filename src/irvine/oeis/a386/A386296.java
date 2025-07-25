@@ -166,6 +166,9 @@ public class A386296 extends AbstractSequence {
               }
               place(x0, y0, z0, dx, dy, dz, false);
             }
+            if (usedCuboids == 0) {
+              break; // If placing the first cuboid, by symmetry, we need only consider one orientation
+            }
           }
         }
       }

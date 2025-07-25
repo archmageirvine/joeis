@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A385712 allocated for John Tromp.
+ * A385712 Busy Beaver BBlambda_1 for lambda calculus with a BB (A333479) oracle: the maximum beta/oracle normal form size of any 1-closed lambda term of size n, or 0 if no 1-closed term of size n exists.
  * @author Sean A. Irvine
  */
 public class A385712 extends NoncomputableSequence {

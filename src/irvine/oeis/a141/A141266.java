@@ -5,7 +5,7 @@ import irvine.oeis.a006.A006882;
 import irvine.oeis.a118.A118385;
 
 /**
- * A141266 Concatenate double factorials.
+ * A141266 Concatenate first n double factorials.
  * @author Georg Fischer
  */
 public class A141266 extends A118385 {

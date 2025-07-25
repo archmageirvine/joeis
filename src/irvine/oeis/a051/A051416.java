@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A051416 Primes whose digits are composite.
+ * A051416 Primes whose digits are composite; primes having only {4, 6, 8, 9} as digits.
  * @author Sean A. Irvine
  */
 public class A051416 extends Sequence1 {

@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A385084 allocated for Charles L. Hohn.
+ * A385084 Smallest integer value of Manhattan(v) + Euclidean(v) where v is a vector of n positive integers, and Manhattan(v) = Sum v[i] and Euclidean(v) = sqrt(Sum v[i]^2).
  * @author Sean A. Irvine
  */
 public class A385084 extends Sequence1 {

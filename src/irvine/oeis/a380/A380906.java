@@ -4,7 +4,7 @@ package irvine.oeis.a380;
 import irvine.oeis.a329.A329760;
 
 /**
- * A380906 Primes avoiding the digits 3 and 5.
+ * A380906 Primes without {3, 5} as digits.
  * @author Georg Fischer
  */
 public class A380906 extends A329760 {

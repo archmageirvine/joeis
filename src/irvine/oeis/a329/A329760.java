@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A329760 Primes avoiding the digits 2 and 7.
+ * A329760 Primes without {2, 7} as digits.
  * @author Georg Fischer
  */
 public class A329760 extends AbstractSequence {

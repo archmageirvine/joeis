@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A112775 Numbers n such that 6n+1 is semiprime.
+ * A112775 Numbers k such that 6k+1 is semiprime.
  * @author Georg Fischer
  */
 public class A112775 extends FilterNumberSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A112777 Numbers n such that 2*n^2 + 1 is a semiprime.
+ * A112777 Numbers k such that 2*k^2 + 1 is a semiprime.
  * @author Georg Fischer
  */
 public class A112777 extends FilterNumberSequence {

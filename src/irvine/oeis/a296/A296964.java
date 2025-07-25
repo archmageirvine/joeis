@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a038.A038156;
 
 /**
- * A296964 Expansion of (x*exp(x)-1)/(1-x).
+ * A296964 Expansion of e.g.f. (exp(x)-x)*x/(1-x).
  * Essentially the same as A038156. - _R. J. Mathar_, Jan 02 2018
  * @author Georg Fischer
  */

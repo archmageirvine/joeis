@@ -3,7 +3,7 @@ package irvine.oeis.a386;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A386311 allocated for Thomas Ordowski.
+ * A386311 a(1) = 2, a(n+1) is the largest prime p such that b(n+1) = b(n)*(p + a(n))/(p - a(n)) is a positive integer, where b(1) = 1.
  * @author Sean A. Irvine
  */
 public class A386311 extends FiniteSequence {

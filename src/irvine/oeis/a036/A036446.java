@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a112.A112730;
 
 /**
- * A036446 Not of form sigma(k)-phi(k).
+ * A036446 Not of form sigma(k) - phi(k).
  * @author Sean A. Irvine
  */
 public class A036446 extends ComplementSequence {

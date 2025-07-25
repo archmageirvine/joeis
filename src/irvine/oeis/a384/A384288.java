@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002378;
 
 /**
- * A384288 Three-column table read by rows: row n is the unique primitive Pythagorean triple whose inradius is A002378(n) and such that its long leg and its hypotenuse are consecutive natural numbers.
+ * A384288 Length of the long leg in the unique primitive Pythagorean triple whose inradius is A002378(n) and such that its long leg and its hypotenuse are consecutive natural numbers.
  * @author Sean A. Irvine
  */
 public class A384288 extends Sequence1 {

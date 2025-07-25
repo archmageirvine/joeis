@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A038618 Primes not containing the decimal digit 0, a.k.a. zeroless or zerofree primes.
+ * A038618 Primes not containing the digit '0'.
  * @author Sean A. Irvine
  */
 public class A038618 extends A000040 {

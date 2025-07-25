@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A106111 Primes with minimal digit &gt; 5.
+ * A106111 Primes having only {6, 7, 8, 9} as digits.
  * @author Georg Fischer
  */
 public class A106111 extends FilterSequence {

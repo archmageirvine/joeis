@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.RunLengthTransform;
 
 /**
- * A030321 Length of n-th run of 0's in A030317.
+ * A030321 Duplicate of A030305.
  * @author Sean A. Irvine
  */
 public class A030321 extends RunLengthTransform {

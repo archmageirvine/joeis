@@ -3,7 +3,7 @@ package irvine.oeis.a141;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A141341 Totally Goldbach numbers: Positive integers n such that for all primes p &lt; n-1 with p not dividing n, n-p is prime.
+ * A141341 Totally Goldbach numbers: Positive integers k such that for all primes p &lt; k-1 with p not dividing k, k-p is prime.
  * @author Georg Fischer
  */
 public class A141341 extends FiniteSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A106116 Primes with smallest digit &gt; 1.
+ * A106116 Primes without {0, 1} as digits.
  * @author Georg Fischer
  */
 public class A106116 extends FilterSequence {

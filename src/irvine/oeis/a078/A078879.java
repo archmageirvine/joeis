@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078879 Triangle read by rows: T(n,k) = ceiling(k^2 / n), 0 &lt; k &lt;= n.
+ * A078879 Triangle read by rows: T(n,k) = ceiling(k^2 / n), 0 &lt; k &lt; n and T(n,n) = 0.
  * @author Sean A. Irvine
  */
 public class A078879 extends Sequence1 {

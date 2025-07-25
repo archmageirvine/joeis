@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A114432 Primes of the form 1 + product of the first n 4-almost primes A014613.
+ * A114432 Primes of the form 1 + product of the first k 4-almost primes A014613.
  *
  * @author Georg Fischer
  */

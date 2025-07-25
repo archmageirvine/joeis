@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A385864 allocated for Soham Samanta.
+ * A385864 Number of simple graphs on n unlabeled vertices having a unique independence polynomial.
  * @author Sean A. Irvine
  */
 public class A385864 extends ParallelGenerateGraphsSequence {

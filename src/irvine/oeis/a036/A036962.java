@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A036962 Primes containing only digits from the set (0,1,2,3,4,5,6,7).
+ * A036962 Primes without {8, 9} as digits.
  * @author Sean A. Irvine
  */
 public class A036962 extends Sequence1 {

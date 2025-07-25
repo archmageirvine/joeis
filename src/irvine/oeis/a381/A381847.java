@@ -69,6 +69,9 @@ public class A381847 extends Sequence1 {
   private int mN;
 
   protected A381847(final int offset, final int cuboids) {
+    if (cuboids > 4) {
+      throw new UnsupportedOperationException("Use the A386296 implementation instead");
+    }
     mCuboids = cuboids;
     mN = offset - 1;
   }

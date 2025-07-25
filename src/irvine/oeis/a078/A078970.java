@@ -12,8 +12,6 @@ import irvine.oeis.Sequence1;
  */
 public class A078970 extends Sequence1 {
 
-  // todo Pending response from Joseph
-
   private long mN = 0;
 
   @Override

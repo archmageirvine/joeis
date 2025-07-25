@@ -4,7 +4,7 @@ import irvine.oeis.a000.A000149;
 import irvine.oeis.prime.PrimeSubsequence;
 
 /**
- * A050809 Primes of the form floor( exp(n) ).
+ * A050809 Primes of the form floor( exp(k) ).
  * @author Sean A. Irvine
  */
 public class A050809 extends PrimeSubsequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A348219 a(n) = tau(n) - omega(n) + n * Sum_{p|n} 1/p.
+ * A348219 a(n) = tau(n) - omega(n) + n * Sum_{p|n, p prime} 1/p.
  * @author Georg Fischer
  */
 public class A348219 extends AbstractSequence {

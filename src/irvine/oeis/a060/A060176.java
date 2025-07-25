@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.AntidiagonalSequence;
 
 /**
- * A060176 Square array A(n,k) = the largest power of k-th prime which divides n, read by by falling antidiagonals.
+ * A060176 Square array A(n,k) = the largest power of k-th prime which divides n, read by falling antidiagonals.
  * @author Sean A. Irvine
  */
 public class A060176 extends AntidiagonalSequence {

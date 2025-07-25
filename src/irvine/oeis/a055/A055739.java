@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A055739 [e^n]-th Prime.
+ * A055739 [e^n]-th prime.
  * @author Sean A. Irvine
  */
 public class A055739 extends Sequence0 {

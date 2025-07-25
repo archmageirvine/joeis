@@ -3,7 +3,7 @@ package irvine.oeis.a199;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A199493 2*8^n+1.
+ * A199493 a(n) = 2*8^n+1.
  * @author Sean A. Irvine
  */
 public class A199493 extends LinearRecurrence {

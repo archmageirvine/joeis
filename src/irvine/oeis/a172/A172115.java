@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a001.A001605;
 
 /**
- * A172115 Partial sums of A001605 indices of prime Fibonacci numbers.
+ * A172115 Partial sums of A001605.
  * @author Sean A. Irvine
  */
 public class A172115 extends PartialSumSequence {

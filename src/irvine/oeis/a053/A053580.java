@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053580 Primes whose digits contain circles.
+ * A053580 Primes having only {0, 6, 8, 9} as digits.
  * @author Sean A. Irvine
  */
 public class A053580 extends Sequence1 {

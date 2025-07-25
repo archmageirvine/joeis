@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A386364 allocated for Tamas Sandor Nagy.
+ * A386364 Irregular triangle read by rows. The prime numbers corresponding to the distinct prime chains in A385871. Also a permutation of the primes.
  * @author Sean A. Irvine
  */
 public class A386364 extends Sequence1 {

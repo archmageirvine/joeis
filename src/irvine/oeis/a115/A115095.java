@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a038.A038800;
 
 /**
- * A115095 Positions of 4 in A038800.
+ * A115095 Positions of 4's in A038800 with offset 1.
  * @author Georg Fischer
  */
 public class A115095 extends FilterPositionSequence {

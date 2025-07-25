@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A385827 allocated for Richard S. Chang.
+ * A385827 a(n) is the unique k such that 2^k is closest to 5^n.
  * @author Sean A. Irvine
  */
 public class A385827 extends Sequence0 {

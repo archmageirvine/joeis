@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a028.A028846;
 
 /**
- * A383371 Primes whose decimal digits are integer powers of 2.
+ * A383371 Primes having only {1, 2, 4, 8} as digits.
  * @author Georg Fischer
  */
 public class A383371 extends FilterSequence {

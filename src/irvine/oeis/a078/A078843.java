@@ -25,17 +25,17 @@ public class A078843 extends Sequence0 {
     this(3);
   }
 
-  private Z f(final Z N, final long m, final long p, final int k, long j) {
+  private Z f(final Z n, final long m, final long p, final int k, long j) {
     Z c = Z.ZERO;
-    final long s = N.divide(m).root(k).longValueExact();
+    final long s = n.divide(m).root(k).longValueExact();
     if (k == 2) {
       for (long q = p; q <= s; q = Functions.NEXT_PRIME.l(q)) {
-        c = c.add(Functions.PRIME_PI.z(N.divide(m * q)).subtract(j));
+        c = c.add(Functions.PRIME_PI.z(n.divide(m * q)).subtract(j));
         ++j;
       }
     } else {
       for (long q = p; q <= s; q = Functions.NEXT_PRIME.l(q)) {
-        c = c.add(f(N, m * q, q, k - 1, j));
+        c = c.add(f(n, m * q, q, k - 1, j));
         ++j;
       }
     }

@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002110;
 
 
 /**
- * A079127 Number of 5's in n# (n primorial) = 5's in A002110(n).
+ * A079127 Number of 5's in n# (n primorial).
  * @author Georg Fischer
  */
 public class A079127 extends A002110 {

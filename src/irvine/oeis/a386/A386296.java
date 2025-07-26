@@ -143,7 +143,11 @@ public class A386296 extends AbstractSequence {
       }
     }
 
-    private boolean backtrack(final int[] cuboids, final long usedCuboids) {
+    private boolean isCornerPlacement(int x, int y, int z, int dx, int dy, int dz) {
+      return (x == 0 || x + dx == mN) && (y == 0 || y + dy == mN) && (z == 0 || z + dz == mN);
+    }
+
+    private boolean backtrack(final int[] cuboids, final long usedCuboids, final long firstCuboid) {
       final int[] cell = findFirstEmpty();
       if (cell == null) {
         return true; // all cells filled
@@ -159,12 +163,19 @@ public class A386296 extends AbstractSequence {
             final int dx = orient[0];
             final int dy = orient[1];
             final int dz = orient[2];
-            if (fits(x0, y0, z0, dx, dy, dz) && canPlace(x0, y0, z0, dx, dy, dz)) {
-              place(x0, y0, z0, dx, dy, dz, true);
-              if (backtrack(cuboids, usedCuboids | (1L << i))) {
-                return true;
+            if (fits(x0, y0, z0, dx, dy, dz)) {
+              if (i < firstCuboid && isCornerPlacement(x0, y0, z0, dx, dy, dz)) {
+                // This cuboid was previously tried in a corner and no solution was found,
+                // so there is no point in trying it in such a placement now.
+                continue;
               }
-              place(x0, y0, z0, dx, dy, dz, false);
+              if (canPlace(x0, y0, z0, dx, dy, dz)) {
+                place(x0, y0, z0, dx, dy, dz, true);
+                if (backtrack(cuboids, usedCuboids | (1L << i), usedCuboids == 0? i : firstCuboid)) {
+                  return true;
+                }
+                place(x0, y0, z0, dx, dy, dz, false);
+              }
             }
             if (usedCuboids == 0) {
               break; // If placing the first cuboid, by symmetry, we need only consider one orientation
@@ -177,7 +188,7 @@ public class A386296 extends AbstractSequence {
 
     private boolean canPack(final int[] cuboids) {
       mOccupied = new boolean[mN][mN][mN];
-      return backtrack(cuboids, 0);
+      return backtrack(cuboids, 0, 0);
     }
   }
 

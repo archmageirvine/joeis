@@ -420,6 +420,46 @@ public class PolynomialFieldSequence extends AbstractSequence implements Rationa
   }
 
   /**
+   * Replaces the power series sum of <code>a_n*x^n</code> by sum of <code>a_n*x^n*n</code>.
+   * @param p polynomial
+   * @return copy with replaced coefficients
+   */
+  public Polynomial<Q> multiplyByExponent(final Polynomial<Q> p) {
+    final Polynomial<Q> res = new Polynomial<>("x", Q.ZERO, Q.ONE);
+    for (int k = 0; k <= p.degree(); ++k) {
+      res.add(p.coeff(k).multiply(k));
+    }
+    return res;
+  }
+
+  /**
+   * Replaces the power series sum of <code>a_n*x^n</code> by sum of <code>a_n*x^n/n</code> for <code>n &gt;= 1</code>.
+   * @param p polynomial
+   * @return copy with replaced coefficients
+   */
+  public Polynomial<Q> divideByExponent(final Polynomial<Q> p) {
+    final Polynomial<Q> res = new Polynomial<>("x", Q.ZERO, Q.ONE);
+    res.add(p.coeff(0));
+    for (int k = 1; k <= p.degree(); ++k) {
+      res.add(p.coeff(k).divide(k));
+    }
+    return res;
+  }
+
+  /**
+   * Replaces the power series sum of <code>a_n*x^n</code> by sum of <code>a_n^n*x^n</code>.
+   * @param p polynomial
+   * @return copy with replaced coefficients
+   */
+  public Polynomial<Q> powerByExponent(final Polynomial<Q> p) {
+    final Polynomial<Q> res = new Polynomial<>("x", Q.ZERO, Q.ONE);
+    for (int k = 0; k <= p.degree(); ++k) {
+      res.add(p.coeff(k).pow(k));
+    }
+    return res;
+  }
+
+  /**
    * Term-wise division of two polynomials.
    * @param a first polynomial
    * @param b second polynomial
@@ -660,6 +700,15 @@ public class PolynomialFieldSequence extends AbstractSequence implements Rationa
         case 62:  // "/n!" - serlaplace
           mStack.set(top, makeEgf(mStack.get(top)));
           break;
+        case 63:  // "*n" - multiply by exponent
+          mStack.set(top, multiplyByExponent(mStack.get(top)));
+          break;
+        case 64:  // "/n" - divide by exponent for e >= 1
+          mStack.set(top, divideByExponent(mStack.get(top)));
+          break;
+        case 65:  // "^n" - power by exponent
+          mStack.set(top, powerByExponent(mStack.get(top)));
+          break;
         default: // should not occur with proper postfix expressions
           throw new RuntimeException("invalid postfix code " + ix);
 // The following cannot be done exactly over the rationals or are not yet available
@@ -769,6 +818,9 @@ public class PolynomialFieldSequence extends AbstractSequence implements Rationa
     POST_MAP.put("./", 60);   // elementwise "/"
     POST_MAP.put("*n!", 61);  // serlaplace
     POST_MAP.put("/n!", 62);
+    POST_MAP.put("*n", 63);  // multiply by exponent 
+    POST_MAP.put("/n", 64);  // divide by exponent for e >= 1
+    POST_MAP.put("^n", 65);  // power by exponent
   } //! fillMap
 
   @Override

@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A386460 Decimal expansion of the surface area of an augmented truncated cube with unit edges.
+ * A386460 allocated for Paolo Xausa.
  * Formula:
  * @author Georg Fischer
  */

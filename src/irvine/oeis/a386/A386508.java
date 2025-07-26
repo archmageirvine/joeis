@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A386508 a(0) = 1; a(n) = a(n-1) + Sum_{k=0..n-1} (1 + k) * k^5 * binomial(n-1,k) * a(k) * a(n-1-k).
+ * A386508 allocated for Seiichi Manyama.
  * @author Georg Fischer
  */
 public class A386508 extends MultiTransformSequence {

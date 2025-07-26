@@ -6,7 +6,7 @@ import irvine.oeis.a091.A091456;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A355667 Least number phi(k) such that n * phi(k) &lt; k, where phi is Euler&apos;s totient function.
+ * A355667 Least number phi(k) such that n * phi(k) &lt; k, where phi is Euler's totient function.
  * @author Georg Fischer
  */
 public class A355667 extends SingleTransformSequence {

@@ -73,13 +73,17 @@ public class TwoParameterFormSequence extends AbstractSequence {
     }
   }
 
+  protected boolean accept(final long x, final long y, final Z n, final Z prev) {
+    return !n.equals(prev);
+  }
+
   @Override
   public Z next() {
     while (true) {
       final State s = mA.pollFirst();
       add(new State(s.mM + 1, s.mR));
       add(new State(s.mM, s.mR + 1));
-      if (!s.mN.equals(mPrev)) {
+      if (accept(s.mM, s.mR, s.mN, mPrev)) {
         mPrev = s.mN;
         return mPrev;
       }

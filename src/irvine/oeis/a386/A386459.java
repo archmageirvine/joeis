@@ -6,7 +6,7 @@ import irvine.oeis.a377.A377299;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A386459 Decimal expansion of the volume of an augmented truncated cube with unit edges.
+ * A386459 allocated for Paolo Xausa.
  * Formula:
  * @author Georg Fischer
  */

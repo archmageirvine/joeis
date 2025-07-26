@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A385103.
+ * A386409 allocated for Juri-Stepan Gerasimov.
  * @author Sean A. Irvine
  */
 public class A386409 extends Sequence1 {

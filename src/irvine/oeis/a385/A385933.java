@@ -4,7 +4,7 @@ package irvine.oeis.a385;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A385933 Number of ways to tile a &quot;central bump&quot; strip of length n with 1 X 1 squares and 1 X 3 rectangles.
+ * A385933 Number of ways to tile a "central bump" strip of length n with 1 X 1 squares and 1 X 3 rectangles.
  * @author Georg Fischer
  */
 public class A385933 extends GeneratingFunctionSequence {

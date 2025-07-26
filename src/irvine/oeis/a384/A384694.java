@@ -4,7 +4,7 @@ package irvine.oeis.a384;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A384694 Sum of the number of cells alive after 2 generations of Conway&apos;s game of life for initial 1 X n cells taken in all 2^n combinations of alive or dead.
+ * A384694 Sum of the number of cells alive after 2 generations of Conway's game of life for initial 1 X n cells taken in all 2^n combinations of alive or dead.
  * @author Georg Fischer
  */
 public class A384694 extends HolonomicRecurrence {

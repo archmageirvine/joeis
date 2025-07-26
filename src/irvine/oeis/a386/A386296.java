@@ -111,8 +111,8 @@ public class A386296 extends AbstractSequence {
     private int[] findFirstEmpty(final int depth) {
       final int x0 = mEmptyPositions[depth][0], y0 = mEmptyPositions[depth][1], z0 = mEmptyPositions[depth][2];
       for (int z = z0; z < mN; z++) {
-        for (int y = (z == z0 ? y0 : 0); y < mN; y++) {
-          for (int x = (z == z0 && y == y0 ? x0 : 0); x < mN; x++) {
+        for (int y = z == z0 ? y0 : 0; y < mN; y++) {
+          for (int x = z == z0 && y == y0 ? x0 : 0; x < mN; x++) {
             if (!mOccupied[x][y][z]) {
               mEmptyPositions[depth + 1][0] = x;
               mEmptyPositions[depth + 1][1] = y;
@@ -155,7 +155,7 @@ public class A386296 extends AbstractSequence {
       }
     }
 
-    private boolean isCornerPlacement(int x, int y, int z, int dx, int dy, int dz) {
+    private boolean isCornerPlacement(final int x, final int y, final int z, final int dx, final int dy, final int dz) {
       return (x == 0 || x + dx == mN) && (y == 0 || y + dy == mN) && (z == 0 || z + dz == mN);
     }
 

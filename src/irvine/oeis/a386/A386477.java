@@ -4,7 +4,7 @@ package irvine.oeis.a386;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A386477 a(0) = 1; thereafter a(n) = 2*(6*n^2 - 3*n + 1).
+ * A386477 a(0) = 1; thereafter a(n) = 2*(6*n^2 - 3*n +1).
  * @author Georg Fischer
  */
 public class A386477 extends HolonomicRecurrence {

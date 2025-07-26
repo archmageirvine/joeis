@@ -6,7 +6,7 @@ import irvine.oeis.a051.A051491;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A346915 Decimal expansion of the limit as N-&gt;oo of the mean number of mems per forest taken by Knuth&apos;s algorithm O when generating the rooted forests of N vertices.
+ * A346915 Decimal expansion of the limit as N-&gt;oo of the mean number of mems per forest taken by Knuth's algorithm O when generating the rooted forests of N vertices.
  * Formula:
  * @author Georg Fischer
  */

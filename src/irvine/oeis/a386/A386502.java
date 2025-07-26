@@ -4,7 +4,7 @@ package irvine.oeis.a386;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A386502 E.g.f. A(x) satisfies A(x) = exp(x + x^4*A&apos;&apos;&apos;(x)).
+ * A386502 allocated for Seiichi Manyama.
  * @author Georg Fischer
  */
 public class A386502 extends PolynomialFieldSequence {

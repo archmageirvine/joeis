@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A348725 Decimal expansion of the absolute value of one of the negative roots of Shanks&apos; simplest cubic associated with the prime p = 19.
+ * A348725 Decimal expansion of the absolute value of one of the negative roots of Shanks' simplest cubic associated with the prime p = 19.
  * Formula: 2*(cos(Pi/19) + cos(7*Pi/19) - cos(8*Pi/19)) - 1
  * @author Georg Fischer
  */

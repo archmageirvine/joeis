@@ -5,6 +5,10 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicLong;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
@@ -25,6 +29,9 @@ public class A386296 extends AbstractSequence {
   //  4. For each such combination, use backtracking to determined if it can physically pack the cube.
   //
   // For k < 4 faster approaches exist (see A381847).
+
+  private static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
+    String.valueOf(Runtime.getRuntime().availableProcessors())));
 
   private static final class Cuboid implements Comparable<Cuboid> {
     private final int[] mTriple;
@@ -72,6 +79,7 @@ public class A386296 extends AbstractSequence {
     private final int mN;
     private final List<List<int[]>> mOrientations;
     private boolean[][][] mOccupied;
+    private int[][] mEmptyPositions;
 
     private Packer(final int n, final List<Cuboid> cuboids) {
       mN = n;
@@ -100,11 +108,15 @@ public class A386296 extends AbstractSequence {
       return lst;
     }
 
-    private int[] findFirstEmpty() {
-      for (int x = 0; x < mN; ++x) {
-        for (int y = 0; y < mN; ++y) {
-          for (int z = 0; z < mN; ++z) {
+    private int[] findFirstEmpty(final int depth) {
+      final int x0 = mEmptyPositions[depth][0], y0 = mEmptyPositions[depth][1], z0 = mEmptyPositions[depth][2];
+      for (int z = z0; z < mN; z++) {
+        for (int y = (z == z0 ? y0 : 0); y < mN; y++) {
+          for (int x = (z == z0 && y == y0 ? x0 : 0); x < mN; x++) {
             if (!mOccupied[x][y][z]) {
+              mEmptyPositions[depth + 1][0] = x;
+              mEmptyPositions[depth + 1][1] = y;
+              mEmptyPositions[depth + 1][2] = z;
               return new int[] {x, y, z};
             }
           }
@@ -147,8 +159,9 @@ public class A386296 extends AbstractSequence {
       return (x == 0 || x + dx == mN) && (y == 0 || y + dy == mN) && (z == 0 || z + dz == mN);
     }
 
-    private boolean backtrack(final int[] cuboids, final long usedCuboids, final long firstCuboid) {
-      final int[] cell = findFirstEmpty();
+    private boolean backtrack(final int[] cuboids, final long usedCuboids, final int firstCuboid, final int depth) {
+
+      final int[] cell = findFirstEmpty(depth);
       if (cell == null) {
         return true; // all cells filled
       }
@@ -171,7 +184,7 @@ public class A386296 extends AbstractSequence {
               }
               if (canPlace(x0, y0, z0, dx, dy, dz)) {
                 place(x0, y0, z0, dx, dy, dz, true);
-                if (backtrack(cuboids, usedCuboids | (1L << i), usedCuboids == 0? i : firstCuboid)) {
+                if (backtrack(cuboids, usedCuboids | (1L << i), depth == 0 ? i : firstCuboid, depth + 1)) {
                   return true;
                 }
                 place(x0, y0, z0, dx, dy, dz, false);
@@ -188,17 +201,17 @@ public class A386296 extends AbstractSequence {
 
     private boolean canPack(final int[] cuboids) {
       mOccupied = new boolean[mN][mN][mN];
-      return backtrack(cuboids, 0, 0);
+      mEmptyPositions = new int[cuboids.length + 1][3];
+      return backtrack(cuboids, 0, 0, 0);
     }
   }
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 0;
   private int mM = 0;
-  private Packer mPacker = null;
   private List<Cuboid> mCuboids = null;
-  private long mPrepackCount = 0;
-  private long mCount = 0;
+  private AtomicLong mPrepackCount = null;
+  private AtomicLong mCount = null;
 
   protected A386296(final int offset) {
     super(offset);
@@ -251,23 +264,27 @@ public class A386296 extends AbstractSequence {
   protected void process(final int[] set) {
   }
 
-  private void search(final int[] set, final int remainingArea, final int remainingCuboids, final int k) {
+  private static String describe(final List<Cuboid> cuboids, final int[] set) {
+    final StringBuilder sb = new StringBuilder();
+    for (final int s : set) {
+      if (sb.length() > 0) {
+        sb.append(", ");
+      }
+      sb.append(cuboids.get(s));
+    }
+    return sb.toString().replace('[', '(').replace(']', ')');
+  }
+
+  private void search(final Packer packer, final int[] set, final int remainingArea, final int remainingCuboids, final int k) {
     if (remainingCuboids == 0) {
       if (remainingArea == 0) {
-        ++mPrepackCount;
-        if (accept(set) && mPacker.canPack(set)) {
+        mPrepackCount.incrementAndGet();
+        if (accept(set) && packer.canPack(set)) {
           if (mVerbose) {
-            final StringBuilder sb = new StringBuilder();
-            for (final int s : set) {
-              if (sb.length() > 0) {
-                sb.append(", ");
-              }
-              sb.append(mCuboids.get(s));
-            }
-            StringUtils.message(sb.toString().replace('[', '(').replace(']', ')'));
+            StringUtils.message(describe(mCuboids, set));
           }
           process(set); // Let subclasses do their own thing with this set
-          ++mCount;
+          mCount.incrementAndGet();
         }
       }
       return;
@@ -283,24 +300,44 @@ public class A386296 extends AbstractSequence {
       }
       if (v <= remainingArea) {
         set[set.length - remainingCuboids] = j;
-        search(set, remainingArea - v, remainingCuboids - 1, j);
+        search(packer, set, remainingArea - v, remainingCuboids - 1, j);
       }
     }
   }
 
   protected Z t(final int n, final int m) {
-    mPrepackCount = 0;
-    mCount = 0;
+    mPrepackCount = new AtomicLong();
+    mCount = new AtomicLong();
     mCuboids = buildCuboids(n);
     if (mVerbose) {
-      StringUtils.message("Computing: cube-size=" + n + " cuboids=" + m + " possible-cuboids=" + mCuboids.size());
+      StringUtils.message("Computing: cube-size=" + n + " cuboids=" + m + " possible-cuboids=" + mCuboids.size() + " using " + THREADS + " threads");
     }
-    mPacker = new Packer(n, mCuboids);
-    search(new int[m], Z.valueOf(n).pow(3).intValueExact(), m, mCuboids.size());
+    final ExecutorService executor = Executors.newFixedThreadPool(THREADS);
+    final int n3 = Z.valueOf(n).pow(3).intValueExact();
+    for (int t = 0; t < THREADS; t++) {
+      final int threadId = t;
+      executor.submit(() -> {
+        final Packer packer = new Packer(n, mCuboids);
+        for (int top = mCuboids.size() - 1 - threadId; top >= 0; top -= THREADS) {
+          final int[] set = new int[m];
+          set[0] = top;
+          search(packer, set, n3 - mCuboids.get(top).getVolume(), m - 1, top);
+        }
+      });
+    }
+    executor.shutdown();
+    try {
+      if (!executor.awaitTermination(Long.MAX_VALUE, TimeUnit.NANOSECONDS)) {
+        throw new RuntimeException("Timeout");
+      }
+    } catch (final InterruptedException e) {
+      Thread.currentThread().interrupt();  // Restore interrupt status
+      throw new RuntimeException(e);
+    }
     if (mVerbose) {
       StringUtils.message("n=" + n + " m=" + m + " pre-packing count=" + mPrepackCount);
     }
-    return Z.valueOf(mCount);
+    return Z.valueOf(mCount.get());
   }
 
   @Override

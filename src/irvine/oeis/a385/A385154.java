@@ -19,12 +19,16 @@ public class A385154 extends A386296 {
 
   @Override
   protected boolean accept(final int[] set) {
-    return getDefect(set) < mMinDefect;
+    synchronized (A385154.this) {
+      return getDefect(set) < mMinDefect;
+    }
   }
 
   @Override
   protected void process(final int[] set) {
-    mMinDefect = getDefect(set);
+    synchronized (A385154.this) {
+      mMinDefect = getDefect(set);
+    }
   }
 
   @Override

@@ -314,7 +314,7 @@ public class A386296 extends AbstractSequence {
     }
     final ExecutorService executor = Executors.newFixedThreadPool(THREADS);
     final int n3 = Z.valueOf(n).pow(3).intValueExact();
-    for (int t = 0; t < THREADS; t++) {
+    for (int t = 0; t < THREADS; ++t) {
       final int threadId = t;
       executor.submit(() -> {
         final Packer packer = new Packer(n, mCuboids);
@@ -327,7 +327,8 @@ public class A386296 extends AbstractSequence {
     }
     executor.shutdown();
     try {
-      if (!executor.awaitTermination(Long.MAX_VALUE, TimeUnit.NANOSECONDS)) {
+      // Ten years!
+      if (!executor.awaitTermination(3650, TimeUnit.DAYS)) {
         throw new RuntimeException("Timeout");
       }
     } catch (final InterruptedException e) {

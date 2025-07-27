@@ -6,7 +6,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.a381.A381617;
 
 /**
- * A383238 A sequence constructed by greedily sampling the Poisson distribution for parameter value 1, 1/(e*(i-1)!) to minimize discrepancy.
+ * A383238 A sequence constructed by greedily sampling the Poisson distribution for parameter value 1, 1/(e*(i-1)!) to minimize discrepancy selecting the smallest value in case of ties.
  * @author Sean A. Irvine
  */
 public class A383238 extends A381617 {

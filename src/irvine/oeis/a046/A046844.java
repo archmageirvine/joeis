@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A046844 Primes of form n*2^n+(n+1).
+ * A046844 Primes of the form k*2^k+(k+1).
  *
  * @author Georg Fischer
  * @author Sean A. Irvine

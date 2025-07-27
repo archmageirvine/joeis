@@ -5,7 +5,7 @@ import irvine.oeis.a068.A068466;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A064853 Lemniscate constant.
+ * A064853 Decimal expansion of the Lemniscate constant.
  * @author Sean A. Irvine
  */
 public class A064853 extends DecimalExpansionSequence {

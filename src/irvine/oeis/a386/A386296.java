@@ -17,7 +17,7 @@ import irvine.util.Triple;
 import irvine.util.string.StringUtils;
 
 /**
- * A386296 allocated for Janaka Rodrigo.
+ * A386296 Array read by antidiagonals: T(n,k) is the number of ways to partition n X n X n cube into k cuboids of different dimensions, n, k &gt; 0.
  * @author Sean A. Irvine
  */
 public class A386296 extends AbstractSequence {

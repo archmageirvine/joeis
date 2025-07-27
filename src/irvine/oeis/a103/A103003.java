@@ -5,7 +5,7 @@ package irvine.oeis.a103;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A103003 Numbers n such that 5*10^n - 3 is prime.
+ * A103003 Numbers k such that 5*10^k - 3 is prime.
  * @author Georg Fischer
  */
 public class A103003 extends PowerFactorPrimeSequence {

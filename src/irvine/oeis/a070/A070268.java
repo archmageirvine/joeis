@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A070268 Numbers n such that mu(n) + mu(n+1) + mu(n+2) = -3.
+ * A070268 Numbers k such that mu(k) + mu(k+1) + mu(k+2) = -3.
  * @author Georg Fischer
  */
 public class A070268 extends FilterNumberSequence {

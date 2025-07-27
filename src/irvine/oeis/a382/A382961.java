@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a381.A381617;
 
 /**
- * A382961 A sequence constructed by greedily sampling the logarithmic distribution for parameter value 1/2, 1/(log(2)*(2^i)*i) to minimize discrepancy.
+ * A382961 A sequence constructed by greedily sampling the logarithmic distribution for parameter value 1/2 so as to minimize discrepancy.
  * @author Sean A. Irvine
  */
 public class A382961 extends A381617 {

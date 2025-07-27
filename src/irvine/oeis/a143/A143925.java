@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A143925 E.g.f. A(x) satisfies: A(x) = exp(x + x^2*A'(x)).
+ * A143925 E.g.f. A(x) satisfies A(x) = exp(x + x^2*A'(x)).
  * exp(x+x^2*deriv(A)))
  * @author Georg Fischer
  */

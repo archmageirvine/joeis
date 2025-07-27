@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A386507 allocated for Seiichi Manyama.
+ * A386507 a(0) = 1; a(n) = a(n-1) + Sum_{k=0..n-1} (1 + k) * k^4 * binomial(n-1,k) * a(k) * a(n-1-k).
  * @author Georg Fischer
  */
 public class A386507 extends MultiTransformSequence {

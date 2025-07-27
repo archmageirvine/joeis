@@ -538,7 +538,7 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
 
   @Override
   public boolean isZero(final Polynomial<E> es) {
-    return es.degree() == 0 && mElementRing.isZero(es.coeff(0));
+    return es.degree() <= 0 && mElementRing.isZero(es.coeff(0));
   }
 
   /**

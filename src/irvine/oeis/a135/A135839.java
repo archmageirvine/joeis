@@ -5,7 +5,7 @@ import irvine.oeis.a071.A071023;
 import irvine.oeis.triangle.TruncatedTriangle;
 
 /**
- * A135839 Triangle read by rows: starting with A138174, replace left border with (1, 1, 1, ...).
+ * A135839 Triangle read by rows: starting with A128174, replace left border with (1, 1, 1, ...).
  * @author Georg Fischer
  */
 public class A135839 extends TruncatedTriangle {

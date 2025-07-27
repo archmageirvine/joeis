@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A045765 n - d(n) never takes these values, where d(n) = A000005(n).
+ * A045765 k - d(k) never takes these values, where d(k) = A000005(k).
  * @author Sean A. Irvine
  */
 public class A045765 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A381617 A sequence constructed by greedily sampling the zeta distribution for parameter value 2, 1/(zeta(2)*i^2) to minimize discrepancy.
+ * A381617 A sequence constructed by greedily sampling the zeta distribution for parameter value 2 to minimize discrepancy.
  * @author Sean A. Irvine
  */
 public class A381617 extends Sequence1 {

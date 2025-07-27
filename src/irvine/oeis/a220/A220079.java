@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A220079 7^(n!).
+ * A220079 a(n) = 7^(n!).
  * a(n)=7^(n!)
  * @author Georg Fischer
  */

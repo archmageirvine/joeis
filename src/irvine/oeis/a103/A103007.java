@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A103007 Numbers n such that 5*10^n + R_n + 8 is prime, where R_n = 11...1 is the repunit (A002275) of length n.
+ * A103007 Numbers k such that 5*10^k + R_k + 8 is prime, where R_k = 11...1 is the repunit (A002275) of length k.
  * @author Georg Fischer
  */
 public class A103007 extends PrimePositionSubsequence {

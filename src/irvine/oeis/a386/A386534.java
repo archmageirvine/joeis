@@ -4,7 +4,7 @@ package irvine.oeis.a386;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A386534 E.g.f. A(x) satisfies A(x) = exp(x * A(x) + x^5/120 * A&apos;&apos;&apos;&apos;(x)).
+ * A386534 E.g.f. A(x) satisfies A(x) = exp(x * A(x) + x^5/120 * A''''(x)).
  * @author Georg Fischer
  */
 public class A386534 extends PolynomialFieldSequence {

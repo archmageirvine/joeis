@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A102910 Primes of the form 5^n+8.
+ * A102910 Primes of the form 5^k + 8.
  * @author Georg Fischer
  */
 public class A102910 extends PrimeSubsequence {

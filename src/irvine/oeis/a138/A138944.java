@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A138944 Primes of the form (17^n - 3^n)/14.
+ * A138944 Primes of the form (17^k - 3^k)/14.
  *
  * @author Georg Fischer
  */

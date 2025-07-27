@@ -4,7 +4,7 @@ package irvine.oeis.a385;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A385897 allocated for Peter Luschny.
+ * A385897 a(n) = 1 - 5*(n + 1)^2 + 5*(n + 1)^4.
  * @author Georg Fischer
  */
 public class A385897 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaArray;
 
 /**
- * A386478 allocated for N. J. A. Sloane.
+ * A386478 Array read by upward antidiagonals: T(k,n) = 1 (k = 0, n &gt;= 0), T(k,n) = k^2*n^2/2 - (3*k-4)*n/2 + 1 (k &gt;= 1, n &gt;= 0).
  * @author Georg Fischer
  */
 public class A386478 extends LambdaArray {

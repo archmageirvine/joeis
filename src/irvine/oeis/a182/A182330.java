@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A182330 Primes of the form 5^n + 2.
+ * A182330 Primes of the form 5^k + 2.
  * @author Georg Fischer
  */
 public class A182330 extends PrimeSubsequence {

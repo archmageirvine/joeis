@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A138958 Primes of the form (6^n + 5^n)/11.
+ * A138958 Primes of the form (6^k + 5^k)/11.
  *
  * @author Georg Fischer
  */

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A100731 3^(n!).
+ * A100731 a(n) = 3^(n!).
  * @author Georg Fischer
  */
 public class A100731 extends LambdaSequence {

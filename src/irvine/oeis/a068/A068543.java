@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A068543 Numbers n such that abs(prime(n)-n*tau(n)) &lt; sqrt(n).
+ * A068543 Numbers k such that abs(prime(k)-k*tau(k)) &lt; sqrt(k).
  * @author Sean A. Irvine
  */
 public class A068543 extends A000040 {

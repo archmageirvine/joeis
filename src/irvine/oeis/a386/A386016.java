@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A386016 allocated for Jwalin Bhatt.
+ * A386016 A sequence constructed by greedily sampling the Borel distribution for parameter value 1/2 to minimize discrepancy.
  * @author Sean A. Irvine
  */
 public class A386016 extends Sequence1 {

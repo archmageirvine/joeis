@@ -4,7 +4,7 @@ package irvine.oeis.a386;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A386014 allocated for Carin Maria Sakin.
+ * A386014 Distinct values occurring in first differences of A030655(n), listed in order of first appearance.
  * 
  * @author Georg Fischer
  */

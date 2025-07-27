@@ -4,7 +4,7 @@ package irvine.oeis.a386;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A386503 allocated for Seiichi Manyama.
+ * A386503 E.g.f. A(x) satisfies A(x) = exp(x + x^5*A''''(x)).
  * @author Georg Fischer
  */
 public class A386503 extends PolynomialFieldSequence {

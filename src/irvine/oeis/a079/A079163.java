@@ -5,19 +5,12 @@ import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.a002.A002110;
 
-
 /**
  * A079163 Number of 9's in n# (n primorial) = 9's in A002110(n).
  * @author Georg Fischer
  */
 public class A079163 extends A002110 {
 
-  /** Construct the sequence. */
-  public A079163() {
-    setOffset(2);
-    super.next();
-  }
-  
   @Override
   public Z next() {
     return Z.valueOf(ZUtils.digitCounts(super.next(), 10)[9]);

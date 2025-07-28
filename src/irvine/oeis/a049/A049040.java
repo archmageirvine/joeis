@@ -15,11 +15,6 @@ public class A049040 extends A006988 {
   private Z mP = mSophieGermain.next();
   private long mCnt = 0;
 
-  {
-    setOffset(1);
-    super.next();
-  }
-
   @Override
   public Z next() {
     final Z lim = super.next();

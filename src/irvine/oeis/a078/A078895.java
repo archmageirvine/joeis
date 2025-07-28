@@ -19,7 +19,7 @@ public class A078895 extends A002113 {
         if (!d.isOne() && !d.equals(palin) && Predicates.PALINDROME.is(d)) {
           final Z nd = palin.divide(d);
           for (final Z e : Jaguar.factor(nd).divisors()) {
-            if (!e.isOne() && Predicates.PALINDROME.is(e) && Predicates.PALINDROME.is(nd.divide(e))) {
+            if (!e.isOne() && !nd.equals(e) && Predicates.PALINDROME.is(e) && Predicates.PALINDROME.is(nd.divide(e))) {
               return palin;
             }
           }

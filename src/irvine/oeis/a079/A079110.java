@@ -5,19 +5,12 @@ import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.a002.A002110;
 
-
 /**
  * A079110 Number of 2's in n# (n primorial) = 2's in A002110(n).
  * @author Georg Fischer
  */
 public class A079110 extends A002110 {
 
-  /** Construct the sequence. */
-  public A079110() {
-    setOffset(2);
-    super.next();
-  }
-  
   @Override
   public Z next() {
     return Z.valueOf(ZUtils.digitCounts(super.next(), 10)[2]);

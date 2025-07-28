@@ -11,7 +11,7 @@ import irvine.oeis.Sequence1;
 public class A008297 extends Sequence1 {
 
   private int mN = 0;
-  private int mM = 0;
+  protected int mM = 0;
 
   @Override
   public Z next() {

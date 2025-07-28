@@ -18,7 +18,7 @@ public class A386214 extends Sequence1 {
   private int mR = -1;
   private final ArrayList<Sequence> mRows = new ArrayList<>();
 
-  private static class FSequence extends Sequence0 {
+  private static final class FSequence extends Sequence0 {
 
     private final long mM;
     private final long mK;

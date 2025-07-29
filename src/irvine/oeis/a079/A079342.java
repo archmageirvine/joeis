@@ -1,8 +1,8 @@
 package irvine.oeis.a079;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.oeis.a045.A045918;
 
 /**
  * A079342 Integers k that divide LS(k), where LS is the "Look and Say" function (A045918).
@@ -16,7 +16,7 @@ public class A079342 extends Sequence1 {
   public Z next() {
     while (true) {
       ++mN;
-      if (new Z(A045918.lookAndSay(mN)).mod(mN) == 0) {
+      if (Functions.LOOK_AND_SAY.z(mN).mod(mN) == 0) {
         return Z.valueOf(mN);
       }
     }

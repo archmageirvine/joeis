@@ -1,5 +1,6 @@
 package irvine.oeis.a045;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
@@ -20,7 +21,7 @@ public class A045981 extends MemorySequence {
     }
     final StringBuilder sb = new StringBuilder();
     for (final Z v : this) {
-      sb.append(A045918.lookAndSay(v.toString()));
+      sb.append(Functions.LOOK_AND_SAY.z(new Z(v.toString())).toString());
     }
     return new Z(sb);
   }

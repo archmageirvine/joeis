@@ -1,5 +1,6 @@
 package irvine.oeis.a045;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -13,7 +14,7 @@ public class A045982 extends Sequence1 {
 
   @Override
   public Z next() {
-    final String t = mA.length() == 0 ? "1" : A045918.lookAndSay(mA);
+    final String t = mA.length() == 0 ? "1" : Functions.LOOK_AND_SAY.z(new Z(mA)).toString();
     mA.append(t);
     return new Z(t);
   }

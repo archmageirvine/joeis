@@ -7,7 +7,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A372332 The number of &quot;Fermi-Dirac primes&quot; (A050376) that are noninfinitary divisors of n.
+ * A372332 The number of "Fermi-Dirac primes" (A050376) that are noninfinitary divisors of n.
  * @author Georg Fischer
  */
 public class A372332 extends LambdaSequence {

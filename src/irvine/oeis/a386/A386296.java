@@ -275,7 +275,7 @@ public class A386296 extends AbstractSequence {
     return sb.toString().replace('[', '(').replace(']', ')');
   }
 
-  private void search(final Packer packer, final int[] set, final int remainingArea, final int remainingCuboids, final int k) {
+  private void search(final int n, final int min, final Packer packer, final int[] set, final int remainingArea, final int remainingCuboids, final int k) {
     if (remainingCuboids == 0) {
       if (remainingArea == 0) {
         mPrepackCount.incrementAndGet();
@@ -294,13 +294,17 @@ public class A386296 extends AbstractSequence {
     }
     int j = k;
     while (--j >= 0) {
-      final int v = mCuboids.get(j).getVolume();
+      final Cuboid cuboid = mCuboids.get(j);
+      if (cuboid.mTriple[0] + min > n) {
+        continue; // Incompatible pair
+      }
+      final int v = cuboid.getVolume();
       if (v * remainingCuboids < remainingArea) {
         break; // Not enough volume in remaining available cuboids
       }
       if (v <= remainingArea) {
         set[set.length - remainingCuboids] = j;
-        search(packer, set, remainingArea - v, remainingCuboids - 1, j);
+        search(n, min, packer, set, remainingArea - v, remainingCuboids - 1, j);
       }
     }
   }
@@ -321,7 +325,7 @@ public class A386296 extends AbstractSequence {
         for (int top = mCuboids.size() - 1 - threadId; top >= 0; top -= THREADS) {
           final int[] set = new int[m];
           set[0] = top;
-          search(packer, set, n3 - mCuboids.get(top).getVolume(), m - 1, top);
+          search(n, mCuboids.get(top).mTriple[0], packer, set, n3 - mCuboids.get(top).getVolume(), m - 1, top);
         }
       });
     }

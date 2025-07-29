@@ -1,8 +1,8 @@
 package irvine.oeis.a005;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.oeis.a045.A045918;
 
 /**
  * A005150 Look and Say sequence: describe the previous term! (method A - initial term is 1).
@@ -17,7 +17,7 @@ public class A005150 extends Sequence1 {
     if (mA == null) {
       mA = "1";
     } else {
-      mA = A045918.lookAndSay(mA);
+      mA = Functions.LOOK_AND_SAY.z(new Z(mA)).toString();
     }
     return new Z(mA);
   }

@@ -1,6 +1,7 @@
 package irvine.oeis.a027;
 
 import irvine.math.q.HarmonicSequence;
+import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -13,8 +14,12 @@ public class A027611 extends Sequence1 {
   private final HarmonicSequence mH = new HarmonicSequence();
   private long mN = 0;
 
+  protected Z select(final Q n) {
+    return n.den();
+  }
+
   @Override
   public Z next() {
-    return mH.nextQ().subtract(1).multiply(++mN).den();
+    return select(mH.nextQ().subtract(1).multiply(++mN));
   }
 }

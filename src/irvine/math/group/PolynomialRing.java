@@ -86,7 +86,6 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
 
   /**
    * Return the polynomial <code>1+a*x^n</code>.
-   *
    * @param a coefficient
    * @param n the power
    * @return the polynomial
@@ -110,7 +109,6 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
 
   /**
    * Return the polynomial <code>1+x^n</code>.
-   *
    * @param n the power
    * @return the polynomial
    * @exception IllegalArgumentException if <code>n</code> is negative
@@ -242,6 +240,7 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
   public Iterator<Polynomial<E>> iterator() {
     return new Iterator<>() {
       // Generate all degree 0, then all degree 1, and so on
+      // For an infinite element this never gets above the 0th coefficient.
       private final ArrayList<E> mCoeffs = new ArrayList<>();
       private final ArrayList<Iterator<E>> mIterators = new ArrayList<>();
 

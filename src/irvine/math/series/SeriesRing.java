@@ -1,7 +1,8 @@
 package irvine.math.series;
 
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 import irvine.math.api.Field;
 import irvine.math.group.AbstractRing;
@@ -28,6 +29,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
   private final Field<E> mElementField;
   private final Series<E> mZero;
   private final Series<E> mOne;
+  private final Series<E> mX;
 
   /**
    * Construct a ring of formal power series over a given field.
@@ -35,8 +37,9 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    */
   public SeriesRing(final Field<E> field) {
     mElementField = field;
-    mZero = new FiniteSeries<>(mElementField.zero(), Collections.emptyList());
-    mOne = new FiniteSeries<>(mElementField.zero(), Collections.singletonList(mElementField.one()));
+    mZero = n -> mElementField.zero();
+    mOne = n -> n == 0 ? mElementField.one() : mElementField.zero();
+    mX = n -> n == 1 ? mElementField.one() : mElementField.zero();
   }
 
   @Override
@@ -47,6 +50,14 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
   @Override
   public Series<E> one() {
     return mOne;
+  }
+
+  /**
+   * Return the series <code>x</code>.
+   * @return <code>x</code>
+   */
+  public Series<E> x() {
+    return mX;
   }
 
   @Override
@@ -62,6 +73,63 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
   @Override
   public boolean contains(final Series<E> element) {
     return element != null;
+  }
+
+  @Override
+  public Iterator<Series<E>> iterator() {
+    // Essentially the same implementation as PolynomialRing.iterator()
+    return new Iterator<>() {
+      // Generate all degree 0, then all degree 1, and so on.
+      // For an infinite element this never gets above the 0th coefficient.
+      private final ArrayList<E> mCoeffs = new ArrayList<>();
+      private final ArrayList<Iterator<E>> mIterators = new ArrayList<>();
+
+      @Override
+      public boolean hasNext() {
+        return true;
+      }
+
+      @Override
+      public Series<E> next() {
+        int k = 0;
+        while (true) {
+          if (k >= mCoeffs.size()) {
+            mIterators.add(mElementField.iterator());
+            if (k > 0) {
+              mIterators.get(k).next(); // skip the 0 of the underlying field
+            }
+            mCoeffs.add(mIterators.get(k).next());
+          }
+          if (mIterators.get(k).hasNext()) {
+            mCoeffs.set(k, mIterators.get(k).next());
+            return new FiniteSeries<>(mElementField.zero(), mCoeffs);
+          } else {
+            mIterators.set(k, mElementField.iterator());
+            mCoeffs.set(k, mIterators.get(k).next());
+            ++k;
+          }
+        }
+      }
+    };
+  }
+
+  /**
+   * Create a finite series from the given list of terms.
+   * @param coeffs coefficients
+   * @return series
+   */
+  public Series<E> create(final List<E> coeffs) {
+    return new FiniteSeries<>(mElementField.zero(), coeffs);
+  }
+
+  /**
+   * Create a finite series from the given array of terms.
+   * @param coeffs coefficients
+   * @return series
+   */
+  @SafeVarargs
+  public final Series<E> create(final E... coeffs) {
+    return new FiniteSeries<>(mElementField.zero(), List.of(coeffs));
   }
 
   @Override
@@ -88,15 +156,27 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
     return n -> mElementField.multiply(s.coeff(n + 1), mElementField.coerce(n + 1));
   }
 
-  @Override
-  public Iterator<Series<E>> iterator() {
-    // todo some kind of dovetail ?
-    throw new UnsupportedOperationException();
+  /**
+   * Return the series <code>1+a*x^n</code>.
+   * @param a coefficient
+   * @param n the power
+   * @return the series
+   */
+  public Series<E> onePlusXToTheN(final E a, final int n) {
+    return m -> m == 1 ? mElementField.one() : m == n ? a : mElementField.zero();
+  }
+
+  /**
+   * Return the series <code>1+x^n</code>.
+   * @param n the power
+   * @return the series
+   */
+  public Series<E> onePlusXToTheN(final int n) {
+    // todo is this right if n == 1
+    return m -> m == 1 || m == n ? mElementField.one() : mElementField.zero();
   }
 
   // todo a/b
-
-  // todo create methods (cf. existing Polynomial code and via FiniteSeries
 
   // todo toString() to some distance
 }

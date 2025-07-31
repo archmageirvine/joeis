@@ -7,6 +7,7 @@ import java.util.function.BiFunction;
 
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
+import irvine.math.series.Series;
 import irvine.math.z.Z;
 
 /**
@@ -14,7 +15,7 @@ import irvine.math.z.Z;
  * @author Sean A. Irvine
  * @param <E> underlying type
  */
-public class Polynomial<E> extends ArrayList<E> {
+public class Polynomial<E> extends ArrayList<E> implements Series<E> {
 
   /**
    * Helper convenience method for the common task of creating an integer polynomial.

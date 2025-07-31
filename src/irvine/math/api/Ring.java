@@ -1,5 +1,7 @@
 package irvine.math.api;
 
+import java.util.function.Function;
+
 import irvine.math.z.Z;
 
 /**
@@ -131,4 +133,13 @@ public interface Ring<E> extends Group<E> {
    * @return true iff the element is one
    */
   boolean isOne(final E e);
+
+  /**
+   * The sum of a function from lo to hi inclusive.
+   * @param lo lower bound
+   * @param hi upper bound
+   * @param function the function
+   * @return sum
+   */
+  E sum(final int lo, final int hi, final Function<Integer, E> function);
 }

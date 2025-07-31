@@ -1,5 +1,7 @@
 package irvine.math.group;
 
+import java.util.function.Function;
+
 import irvine.math.api.Operation;
 import irvine.math.api.Ring;
 import irvine.math.api.Set;
@@ -106,5 +108,10 @@ public class QuotientRing<T> extends DefaultQuotientGroup<T> implements Ring<Set
   @Override
   public boolean isOne(final Set<T> element) {
     return element.equals(one());
+  }
+
+  @Override
+  public Set<T> sum(final int lo, final int hi, final Function<Integer, Set<T>> function) {
+    throw new UnsupportedOperationException();
   }
 }

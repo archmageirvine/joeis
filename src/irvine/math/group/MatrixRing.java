@@ -1,5 +1,7 @@
 package irvine.math.group;
 
+import java.util.function.Function;
+
 import irvine.math.api.Matrix;
 import irvine.math.api.Operation;
 import irvine.math.api.Ring;
@@ -384,5 +386,10 @@ public class MatrixRing<E> extends MatrixGroupRing<E> implements Ring<Matrix<E>>
   @Override
   public boolean isOne(final Matrix<E> matrix) {
     return mIdentity.equals(matrix);
+  }
+
+  @Override
+  public Matrix<E> sum(final int lo, final int hi, final Function<Integer, Matrix<E>> function) {
+    throw new UnsupportedOperationException();
   }
 }

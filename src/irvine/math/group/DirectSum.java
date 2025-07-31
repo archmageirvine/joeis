@@ -1,5 +1,7 @@
 package irvine.math.group;
 
+import java.util.function.Function;
+
 import irvine.math.api.Operation;
 import irvine.math.api.Ring;
 import irvine.math.api.Set;
@@ -106,5 +108,10 @@ public class DirectSum<T, U> extends DirectProduct<T, U> implements Ring<Pair<T,
   @Override
   public boolean isOne(final Pair<T, U> element) {
     return element.equals(one());
+  }
+
+  @Override
+  public Pair<T, U> sum(final int lo, final int hi, final Function<Integer, Pair<T, U>> function) {
+    throw new UnsupportedOperationException();
   }
 }

@@ -2631,3 +2631,4 @@ A078780 Number of different digraphs on an n-cube.
 A078816 Maximum element in the continued fraction for (1/n) * Sum_{k>=0} 1/2^2^k
 A078878 Irreducible polynomial coefficient of singular value associated with sqrt(2n).
 A079059 Decimal expansion of product( p == 3 (mod 4), sqrt(1-p^-2)).
+A079137 Number of (undirected) Hamiltonian paths on the 4 X n knight graph. [should have a recurrence]

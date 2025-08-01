@@ -6,7 +6,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a064.A064547;
 
 /**
- * A372502 The number of &quot;Fermi-Dirac primes&quot; (A050376) that divide n.
+ * A372502 The number of "Fermi-Dirac primes" (A050376) that divide n.
  * @author Georg Fischer
  */
 public class A372502 extends LambdaSequence {

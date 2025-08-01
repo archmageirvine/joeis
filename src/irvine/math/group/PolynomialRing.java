@@ -154,7 +154,6 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
 
   /**
    * Return the polynomial <code>ax^n</code>.
-   *
    * @param a coefficient
    * @param n power
    * @return monomial

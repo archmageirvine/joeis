@@ -4,7 +4,7 @@ package irvine.oeis.a386;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A386541 Lander and Parkin&apos;s 1966 counterexample to Euler&apos;s sum of powers conjecture: integers a, b, c, d and e, all &gt; 1, such that a^k + b^k + c^k + d^k = e^k, with k = 5.
+ * A386541 Lander and Parkin's 1966 counterexample to Euler's sum of powers conjecture: integers a, b, c, d and e, all &gt; 1, such that a^k + b^k + c^k + d^k = e^k, with k = 5.
  * @author Georg Fischer
  */
 

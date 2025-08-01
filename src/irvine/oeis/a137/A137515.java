@@ -5,7 +5,7 @@ import irvine.oeis.a072.A072895;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A137515 Maximal number of right triangles in n turns of Pythagoras&apos;s snail.
+ * A137515 Maximal number of right triangles in n turns of Pythagoras's snail.
  * @author Georg Fischer
  */
 public class A137515 extends SingleTransformSequence {

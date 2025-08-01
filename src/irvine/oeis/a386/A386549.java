@@ -4,7 +4,7 @@ package irvine.oeis.a386;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A386549 Indices of hexagonal numbers that are one-sixth of another hexagonal number.
+ * A386549 allocated for Kelvin Voskuijl.
  * @author Georg Fischer
  */
 public class A386549 extends HolonomicRecurrence {

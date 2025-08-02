@@ -18,6 +18,31 @@ public class CoxeterSequence extends GeneratingFunctionSequence {
   }
 
   /**
+   * Construct the specified generating function.
+   * @param num coefficients of the numerator   polynomial
+   * @param den coefficients of the denominator polynomial
+   */
+  private CoxeterSequence(final Z[][] s) {
+    super(s[0], s[1]);
+  }
+
+  private static Z[][] build(final int pwr, final Z c1, final Z c2) {
+    final Z[] num = new Z[pwr + 1];
+    final Z[] den = new Z[pwr + 1];
+    num[pwr] = Z.ONE;
+    num[0] = Z.ONE;
+    den[pwr] = c1;
+    den[0] = Z.ONE;
+    int ipwr = pwr - 1;
+    while (ipwr > 0) {
+      num[ipwr] = Z.TWO;
+      den[ipwr] = c2;
+      --ipwr;
+    }
+    return new Z[][] {num, den};
+  }
+
+  /**
    * Constructor for a Coxeter group sequence.
    * This corresponds with the Mathematica routine <code>coxG</code>
    * defined in OEIS <a href="https://oeis.org/A169452">A169452</a>:
@@ -44,19 +69,7 @@ public class CoxeterSequence extends GeneratingFunctionSequence {
    * = 2 - (numbers of generators in the name)
    */
   public CoxeterSequence(final int pwr, final Z c1, final Z c2) {
-    super();
-    mNum = new Z[pwr + 1];
-    mDen = new Z[pwr + 1];
-    mNum[pwr] = Z.ONE;
-    mNum[0] = Z.ONE;
-    mDen[pwr] = c1;
-    mDen[0] = Z.ONE;
-    int ipwr = pwr - 1;
-    while (ipwr > 0) {
-      mNum[ipwr] = Z.TWO;
-      mDen[ipwr] = c2;
-      --ipwr;
-    } // while ipwr
+    this(build(pwr, c1, c2));
   }
 
   /**

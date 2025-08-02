@@ -1,10 +1,3 @@
-/* Coxeter group sequences
- * @(#) $Id$
- * 2020-04-13: expand exponential g.f. with setGfType(1)
- * 2019-05-11: Georg Fischer, 3rd parameter offset
- * 2019-05-10: Sean Irvine, Z parameters
- * 2019-05-09: Georg Fischer
- */
 package irvine.oeis.recur;
 
 import java.util.Arrays;
@@ -22,20 +15,18 @@ public class GeneratingFunctionSequence extends AbstractSequence {
 
   protected Z[] mNum; // coefficients of the numerator   polynomial, index is the exponent
   protected Z[] mDen; // coefficients of the denominator polynomial
-  protected int mIndex = 0; // index of next term to be generated
-  protected int mGfType; // type of the g.f.: 0 = ordinary, 1 = exponential, 2 = dirichlet ...
-  protected Z mFactorial; // accumulate n! here
+  private int mIndex = 0; // index of next term to be generated
+  private int mGfType; // type of the g.f.: 0 = ordinary, 1 = exponential, 2 = dirichlet ...
+  private Z mFactorial; // accumulate n! here
   private final int mOffset;
 
   protected GeneratingFunctionSequence() {
     super(0);
     mOffset = 0;
-    mIndex = 0;
   }
 
   /**
    * Construct a new rational integer polynomial generating function sequence.
-   *
    * @param offset first valid term has this index
    * @param num    numerator
    * @param den    denominator
@@ -153,8 +144,7 @@ public class GeneratingFunctionSequence extends AbstractSequence {
   }
 
   /**
-   * Advance to next term
-   *
+   * Advance to next term.
    * @return next term
    */
   private Z iterate() {

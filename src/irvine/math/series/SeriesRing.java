@@ -23,7 +23,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
 
   // todo finite cases
   //  - memory and (perhaps) efficiency could be improved by directly supporting finite series
-  //  - potentially can be done by using Polynomial<E> for those cases since Polynomial implements Series
+  //  - potentially can be done by detecting FiniteSeries, Polynomial, or similar for those cases since Polynomial implements Series
 
   /** Formal power series ring over integers. */
   public static final SeriesRing<Z> SZ = new SeriesRing<>(IntegerField.SINGLETON);

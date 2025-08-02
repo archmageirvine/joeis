@@ -1,6 +1,7 @@
 package irvine.oeis.a380;
 
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
@@ -17,6 +18,9 @@ public class A380446 extends Sequence1 {
 
   private boolean is(final Z n) {
     Z m = n.makeOdd();
+    if (m.auxiliary() == 0) {
+      return false;
+    }
     long p = 2;
     while (!m.isOne()) {
       p = mPrime.nextPrime(p);
@@ -34,7 +38,7 @@ public class A380446 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z n = mS.next();
-      if (is(n)) {
+      if (Functions.OMEGA.i(n) > 1 && is(n)) {
         return n;
       }
     }

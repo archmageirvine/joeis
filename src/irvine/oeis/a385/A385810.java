@@ -14,6 +14,6 @@ public class A385810 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A385810() {
-    super(1, 1, k -> Predicates.SQUARE.is(Functions.SIGMA1.z(k).square().subtract(Z.valueOf(3 * k).multiply(k))));
+    super(1, 1, k -> Predicates.SQUARE.is(Functions.SIGMA1.z(k).square().subtract(Z.valueOf(3L * k).multiply(k))));
   }
 }

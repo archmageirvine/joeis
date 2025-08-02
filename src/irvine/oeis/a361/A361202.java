@@ -11,7 +11,6 @@ public class A361202 extends GeneratingFunctionSequence {
 
   /** Construct the sequence. */
   public A361202() {
-    super(0, "[1,-1,1]", "[1,-2,1,0,0,0,0,0,-1,2,-1]");
-    setOffset(1);
+    super(1, "[0,1,-1,1]", "[1,-2,1,0,0,0,0,0,-1,2,-1]");
   }
 }

@@ -21,28 +21,22 @@ public class A157052 extends GeneratingFunctionSequence {
     this(1, 6);
   }
 
+  private static Polynomial<Z> buildNumerator(final int parm) {
+    Polynomial<Z> num = RING.zero();
+    for (int i = 1; i <= parm - 1; ++i) {
+      num = RING.add(num, RING.monomial(A088855.element(parm - 1, i), i));
+    }
+    num = RING.multiply(num, RING.monomial(Z.TWO, 1)); // *2*x
+    return num;
+  }
+
   /**
    * Generic constructor with parameter
    * @param offset first index
    * @param parm parameter "of absolute value"
    */
   public A157052(final int offset, final int parm) {
-    setOffset(offset);
-    final Polynomial<Z> den = RING.pow(RING.oneMinusXToTheN(1), parm + 1);
-    Polynomial<Z> num = RING.zero();
-    for (int i = 1; i <= parm - 1; ++i) {
-      num = RING.add(num, RING.monomial(A088855.element(parm - 1, i), i));
-    }
-    num = RING.multiply(num, RING.monomial(Z.TWO, 1)); // *2*x
-    mNum = new Z[num.degree() + 1];
-    mDen = new Z[den.degree() + 1];
-    for (int i = 0; i < mNum.length; ++i) {
-      mNum[i] = num.coeff(i);
-    }
-    for (int i = 0; i < mDen.length; ++i) {
-      mDen[i] = den.coeff(i);
-    }
-    next();
+    super(offset, buildNumerator(parm), RING.pow(RING.oneMinusXToTheN(1), parm + 1));
     next();
   }
 }

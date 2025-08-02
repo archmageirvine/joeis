@@ -24,9 +24,7 @@ public class A046168 extends GeneratingFunctionSequence {
   }
 
   protected A046168(final int members) {
-    super(RING.monomial(Z.ONE, members), denominator(members));
-    setOffset(1);
-    next(); // skip 0th
+    super(1, RING.monomial(Z.ONE, members), denominator(members));
   }
 
   /** Construct the sequence. */

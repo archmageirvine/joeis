@@ -13,16 +13,15 @@ import irvine.oeis.AbstractSequence;
  */
 public class GeneratingFunctionSequence extends AbstractSequence {
 
+  // todo: SAI: It would be nice to encapsulate these next two fields
   protected Z[] mNum; // coefficients of the numerator   polynomial, index is the exponent
   protected Z[] mDen; // coefficients of the denominator polynomial
   private int mIndex = 0; // index of next term to be generated
   private int mGfType; // type of the g.f.: 0 = ordinary, 1 = exponential, 2 = dirichlet ...
   private Z mFactorial; // accumulate n! here
-  private final int mOffset;
 
   protected GeneratingFunctionSequence() {
     super(0);
-    mOffset = 0;
   }
 
   /**
@@ -33,7 +32,6 @@ public class GeneratingFunctionSequence extends AbstractSequence {
    */
   public GeneratingFunctionSequence(final int offset, final Z[] num, final Z[] den) {
     super(offset);
-    mOffset = offset;
     mIndex = 0;
     mNum = Arrays.copyOf(num, num.length); // copy because this class modifies num
     mDen = Arrays.copyOf(den, den.length);
@@ -41,7 +39,23 @@ public class GeneratingFunctionSequence extends AbstractSequence {
 
   /**
    * Construct a new rational integer polynomial generating function sequence.
-   *
+   * @param offset the offset
+   * @param nd numerator and denominator arrays
+   */
+  public GeneratingFunctionSequence(final int offset, final Z[][] nd) {
+    this(offset, nd[0], nd[1]);
+  }
+
+  /**
+   * Construct a new rational integer polynomial generating function sequence.
+   * @param nd numerator and denominator arrays
+   */
+  public GeneratingFunctionSequence(final Z[][] nd) {
+    this(0, nd[0], nd[1]);
+  }
+
+  /**
+   * Construct a new rational integer polynomial generating function sequence.
    * @param num numerator
    * @param den denominator
    */
@@ -72,7 +86,16 @@ public class GeneratingFunctionSequence extends AbstractSequence {
 
   /**
    * Construct a new rational integer polynomial generating function sequence.
-   *
+   * @param offset the offset
+   * @param num numerator
+   * @param den denominator
+   */
+  public GeneratingFunctionSequence(final int offset, final Polynomial<Z> num, final Polynomial<Z> den) {
+    this(offset, num.toArray(new Z[0]), den.toArray(new Z[0]));
+  }
+
+  /**
+   * Construct a new rational integer polynomial generating function sequence.
    * @param num numerator
    * @param den denominator
    */
@@ -89,11 +112,7 @@ public class GeneratingFunctionSequence extends AbstractSequence {
    * @param den    coefficients for the denominator.
    */
   public GeneratingFunctionSequence(final int offset, final String num, final String den) {
-    super(offset);
-    mOffset = offset;
-    mIndex = 0;
-    mNum = ZUtils.toZ(num);
-    mDen = ZUtils.toZ(den);
+    this(offset, ZUtils.toZ(num), ZUtils.toZ(den));
   }
 
   /**
@@ -137,7 +156,7 @@ public class GeneratingFunctionSequence extends AbstractSequence {
 
   @Override
   public Z next() {
-    while (mIndex < mOffset) { // skip over leading coefficients
+    while (mIndex < getOffset()) { // skip over leading coefficients
       iterate();
     } // while
     return iterate();

@@ -4,7 +4,6 @@ package irvine.oeis.a109;
 import irvine.math.z.Z;
 import irvine.oeis.recur.LatticeCoordinationSequence;
 
-
 /**
  * A109001 Triangle, read by rows, where g.f. of row n equals the product of (1-x)^n and the g.f. of the coordination sequence for root lattice B_n, for n &gt;= 0.
  * @author Georg Fischer

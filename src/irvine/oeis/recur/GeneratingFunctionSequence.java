@@ -13,22 +13,20 @@ import irvine.oeis.AbstractSequence;
  */
 public class GeneratingFunctionSequence extends AbstractSequence {
 
-  // todo: SAI: It would be nice to encapsulate these next two fields
-  protected Z[] mNum; // coefficients of the numerator   polynomial, index is the exponent
-  protected Z[] mDen; // coefficients of the denominator polynomial
-  private int mIndex = 0; // index of next term to be generated
+  private Z[] mNum; // coefficients of the numerator   polynomial, index is the exponent
+  private final Z[] mDen; // coefficients of the denominator polynomial
+  private int mIndex; // index of next term to be generated
   private int mGfType; // type of the g.f.: 0 = ordinary, 1 = exponential, 2 = dirichlet ...
   private Z mFactorial; // accumulate n! here
 
   /**
    * Construct a new rational integer polynomial generating function sequence.
    * @param offset first valid term has this index
-   * @param num    numerator
-   * @param den    denominator
+   * @param num numerator
+   * @param den denominator
    */
   public GeneratingFunctionSequence(final int offset, final Z[] num, final Z[] den) {
     super(offset);
-    mIndex = 0;
     mNum = Arrays.copyOf(num, num.length); // copy because this class modifies num
     mDen = Arrays.copyOf(den, den.length);
   }
@@ -61,7 +59,6 @@ public class GeneratingFunctionSequence extends AbstractSequence {
 
   /**
    * Construct the specified generating function.
-   *
    * @param num coefficients of the numerator   polynomial
    * @param den coefficients of the denominator polynomial
    */
@@ -71,10 +68,9 @@ public class GeneratingFunctionSequence extends AbstractSequence {
 
   /**
    * Construct the specified generating function.
-   *
    * @param offset first valid term has this index
-   * @param num    coefficients of the numerator   polynomial
-   * @param den    coefficients of the denominator polynomial
+   * @param num coefficients of the numerator   polynomial
+   * @param den coefficients of the denominator polynomial
    */
   public GeneratingFunctionSequence(final int offset, final long[] num, final long[] den) {
     this(offset, ZUtils.toZ(num), ZUtils.toZ(den));
@@ -101,11 +97,10 @@ public class GeneratingFunctionSequence extends AbstractSequence {
 
   /**
    * Construct a coefficient sequence from String parameters.
-   *
    * @param offset first valid term has this index
-   * @param num    coefficients of <code>x^i, i=0..m</code> for the numerator of the generating function
-   *               as a String vectors, for example "[0,1,2,17,0,18]".
-   * @param den    coefficients for the denominator.
+   * @param num coefficients of <code>x^i, i=0..m</code> for the numerator of the generating function
+   * as a String vectors, for example "[0,1,2,17,0,18]".
+   * @param den coefficients for the denominator.
    */
   public GeneratingFunctionSequence(final int offset, final String num, final String den) {
     this(offset, ZUtils.toZ(num), ZUtils.toZ(den));
@@ -113,7 +108,6 @@ public class GeneratingFunctionSequence extends AbstractSequence {
 
   /**
    * Get the type of the generating function.
-   *
    * @return code for the type: 0 = ordinary, 1 = exponential
    */
   public int getGfType() {
@@ -123,7 +117,6 @@ public class GeneratingFunctionSequence extends AbstractSequence {
   /**
    * Set the type of the generating function.
    * This method must be called before any call of {@link #next()}.
-   *
    * @param gfType code for the type: 0 = ordinary, 1 = exponential
    */
   public void setGfType(final int gfType) {
@@ -133,7 +126,6 @@ public class GeneratingFunctionSequence extends AbstractSequence {
   /**
    * Gets the coefficients of the numerator polynomial.
    * This method must be called before any call of {@link #next()}.
-   *
    * @return an array starting with the coefficient for x^0.
    */
   public Z[] getNum() {
@@ -143,7 +135,6 @@ public class GeneratingFunctionSequence extends AbstractSequence {
   /**
    * Gets the coefficients of the denominator polynomial.
    * This method must be called before any call of {@link #next()}.
-   *
    * @return an array starting with the coefficient for x^0.
    */
   public Z[] getDen() {

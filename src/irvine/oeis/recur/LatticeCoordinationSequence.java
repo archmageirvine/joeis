@@ -45,9 +45,7 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
       ++mRowNo;
       mColNo = 0;
       final Z[][] nd = configure(latticeType, mRowNo);
-      mNum = nd[0];
-      mDen = nd[1];
-      mPoly = iPoly == 0 ? mNum : mDen;
+      mPoly = iPoly == 0 ? nd[0] : nd[1];
     }
     Z result = mPoly[mColNo];
     // now some patches
@@ -134,7 +132,7 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
         } // switch
       } // for denominator
       for (int k = 0; k <= d; ++k) { // numerator
-        Z coeff = null;
+        Z coeff;
         switch (typeCode) {
           case 'A':
             //  A, A103881

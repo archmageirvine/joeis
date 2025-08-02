@@ -16,6 +16,9 @@ import irvine.math.z.Z;
 
 /**
  * A formal power series ring over an underlying field.
+ * This implementation is essentially lazy and does not explicitly compute terms of
+ * the series unless they are explicitly needs via a <code>coeff</code> call. It
+ * does use caching where appropriate so avoid costly repeat computations.
  * @param <E> underlying element type
  * @author Sean A. Irvine
  */

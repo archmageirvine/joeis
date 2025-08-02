@@ -3,6 +3,8 @@ package irvine.oeis.recur;
 import java.util.Arrays;
 
 import irvine.math.polynomial.Polynomial;
+import irvine.math.series.Series;
+import irvine.math.series.SeriesRing;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
@@ -10,14 +12,14 @@ import irvine.oeis.AbstractSequence;
 /**
  * An ordinary generating function consisting of a fraction of two polynomials in "x".
  * @author Georg Fischer
+ * @author Sean A. Irvine
  */
 public class GeneratingFunctionSequence extends AbstractSequence {
 
-  private Z[] mNum; // coefficients of the numerator   polynomial, index is the exponent
+  private final Z[] mNum; // coefficients of the numerator polynomial
   private final Z[] mDen; // coefficients of the denominator polynomial
-  private int mIndex; // index of next term to be generated
-  private int mGfType; // type of the g.f.: 0 = ordinary, 1 = exponential, 2 = dirichlet ...
-  private Z mFactorial; // accumulate n! here
+  private int mN; // index of previous term
+  private final Series<Z> mSeries;
 
   /**
    * Construct a new rational integer polynomial generating function sequence.
@@ -29,6 +31,8 @@ public class GeneratingFunctionSequence extends AbstractSequence {
     super(offset);
     mNum = Arrays.copyOf(num, num.length); // copy because this class modifies num
     mDen = Arrays.copyOf(den, den.length);
+    mSeries = SeriesRing.SZ.divide(Series.create(mNum), Series.create(mDen));
+    mN = offset - 1;
   }
 
   /**
@@ -106,23 +110,7 @@ public class GeneratingFunctionSequence extends AbstractSequence {
     this(offset, ZUtils.toZ(num), ZUtils.toZ(den));
   }
 
-  /**
-   * Get the type of the generating function.
-   * @return code for the type: 0 = ordinary, 1 = exponential
-   */
-  public int getGfType() {
-    return mGfType;
-  }
-
-  /**
-   * Set the type of the generating function.
-   * This method must be called before any call of {@link #next()}.
-   * @param gfType code for the type: 0 = ordinary, 1 = exponential
-   */
-  public void setGfType(final int gfType) {
-    mGfType = gfType;
-  }
-
+  // Only used by RecurrenceReflector
   /**
    * Gets the coefficients of the numerator polynomial.
    * This method must be called before any call of {@link #next()}.
@@ -132,6 +120,7 @@ public class GeneratingFunctionSequence extends AbstractSequence {
     return Arrays.copyOf(mNum, mNum.length);
   }
 
+  // Only used by RecurrenceReflector
   /**
    * Gets the coefficients of the denominator polynomial.
    * This method must be called before any call of {@link #next()}.
@@ -143,50 +132,6 @@ public class GeneratingFunctionSequence extends AbstractSequence {
 
   @Override
   public Z next() {
-    while (mIndex < getOffset()) { // skip over leading coefficients
-      iterate();
-    } // while
-    return iterate();
-  }
-
-  /**
-   * Advance to next term.
-   * @return next term
-   */
-  private Z iterate() {
-    final Z divisor = mDen[0];
-    if (divisor.isZero()) {
-      throw new IllegalArgumentException("divisor is zero");
-    }
-    final Z[] quotRest = mNum[0].divideAndRemainder(divisor);
-    Z result = quotRest[0];
-    if (!quotRest[1].isZero()) {
-      throw new IllegalArgumentException("no even division");
-    }
-    final Z quotient = result.negate();
-    final int len1 = Math.max(mNum.length, mDen.length);
-    final int len2 = mDen.length;
-    final Z[] vect1 = new Z[len1 - 1]; // will replace 'mNum' in the end
-    int iterm = 1; // the first term of vect1 becomes ZERO and is skipped
-    while (iterm < len1) {
-      Z term = Z.ZERO;
-      if (iterm < len2) {
-        term = mDen[iterm].multiply(quotient);
-      }
-      if (iterm < mNum.length) {
-        term = term.add(mNum[iterm]);
-      }
-      vect1[iterm - 1] = term;
-      ++iterm;
-    } // while iterm
-    mNum = vect1;
-    if (mGfType == 1) { // e.g.f.
-      if (mIndex >= 2) {
-        mFactorial = mFactorial.multiply(Z.valueOf(mIndex));
-        result = result.multiply(mFactorial);
-      }
-    } // e.g.f.
-    ++mIndex;
-    return result;
+    return mSeries.coeff(++mN);
   }
 }

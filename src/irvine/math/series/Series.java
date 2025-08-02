@@ -21,6 +21,15 @@ public interface Series<E> {
   }
 
   /**
+   * Create a finite integer series from a list of coefficients.
+   * @param coeffs coefficients
+   * @return series
+   */
+  static Series<Z> create(final Z... coeffs) {
+    return n -> n < coeffs.length ? coeffs[n] : Z.ZERO;
+  }
+
+  /**
    * Convert an integer series to a rational series.
    * @param series integer series
    * @return rational series

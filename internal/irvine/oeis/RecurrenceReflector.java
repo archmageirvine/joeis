@@ -334,7 +334,7 @@ public class RecurrenceReflector {
                 buffer.append(']');
                 parts[ipart++] = "[" + buffer.substring(1); // INIT
                 parts[ipart++] = "0";
-                parts[ipart++] = String.valueOf(hseq.getGfType());
+                parts[ipart++] = String.valueOf(0);
 
               } else if (callCode.startsWith("holon")    // HolonomicRecurrence
                       || callCode.startsWith("polyn")) { // PolynomialRootSequence

@@ -1,21 +1,15 @@
 package irvine.oeis.a014;
 
-import irvine.math.z.Z;
+import irvine.oeis.recur.EgfSequence;
 
 /**
  * A014479 Exponential generating function = (1+2*x)/(1-2*x)^3.
  * @author Sean A. Irvine
  */
-public class A014479 extends A014477 {
+public class A014479 extends EgfSequence {
 
-  private long mN = -1;
-  private Z mF = Z.ONE;
-
-  @Override
-  public Z next() {
-    if (++mN > 1) {
-      mF = mF.multiply(mN);
-    }
-    return super.next().multiply(mF);
+  /** Construct the sequence. */
+  public A014479() {
+    super(0, "(1+2*x)/(1-2*x)^3");
   }
 }

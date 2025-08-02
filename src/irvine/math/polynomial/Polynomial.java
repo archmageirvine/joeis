@@ -7,6 +7,7 @@ import java.util.function.BiFunction;
 
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
+import irvine.math.q.QUtils;
 import irvine.math.series.Series;
 import irvine.math.z.Z;
 
@@ -57,12 +58,21 @@ public class Polynomial<E> extends ArrayList<E> implements Series<E> {
   /**
    * Helper convenience method for the common task of creating an integer polynomial.
    * @param coeffs integer coefficients
-   * @return polynomial over integers
+   * @return polynomial over rationals
    */
   public static Polynomial<Q> create(final Q... coeffs) {
     final Polynomial<Q> res = new Polynomial<>("x", Q.ZERO, Q.ONE);
     Collections.addAll(res, coeffs);
     return res;
+  }
+
+  /**
+   * Helper convenience method for the common task of creating an integer polynomial.
+   * @param polynomial the polynomial
+   * @return polynomial over rationals
+   */
+  public static Polynomial<Q> create(final String polynomial) {
+    return new Polynomial<>("x", Q.ZERO, Q.ONE, QUtils.parsePolynomial(polynomial));
   }
 
   private final E mZero;

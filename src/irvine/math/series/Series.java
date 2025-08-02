@@ -1,6 +1,9 @@
 package irvine.math.series;
 
+import java.util.List;
+
 import irvine.math.q.Q;
+import irvine.math.q.QUtils;
 import irvine.math.z.Z;
 
 /**
@@ -27,6 +30,24 @@ public interface Series<E> {
    */
   static Series<Z> create(final Z... coeffs) {
     return n -> n < coeffs.length ? coeffs[n] : Z.ZERO;
+  }
+
+  /**
+   * Create a finite rational series from a list of coefficients.
+   * @param coeffs coefficients
+   * @return series
+   */
+  static Series<Q> create(final List<Q> coeffs) {
+    return n -> n < coeffs.size() ? coeffs.get(n) : Q.ZERO;
+  }
+
+  /**
+   * Create a finite rational series from a string polynomial.
+   * @param polynomial string representation of the polynomial
+   * @return series
+   */
+  static Series<Q> create(final String polynomial) {
+    return create(QUtils.parsePolynomial(polynomial));
   }
 
   /**

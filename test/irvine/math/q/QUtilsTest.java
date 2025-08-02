@@ -18,5 +18,12 @@ public class QUtilsTest extends TestCase {
     assertEquals(0, QUtils.toQ("").length);
     assertEquals("[-1/10, 12345, -1, 0, 5]", Arrays.toString(QUtils.toQ("(-1/10,12345,-1,,5}")));
   }
+
+  public void testParse() {
+    assertEquals("[-42, 0, 5/4, 0, 23]", QUtils.parsePolynomial("-42+(5/4)*x^2+23*x^4").toString());
+    assertEquals("[-42, 0, 5/4, 0, 23]", QUtils.parsePolynomial("-42+5/4*x^2+23x^4").toString());
+    assertEquals("[42, 0, 5/4]", QUtils.parsePolynomial("42+5/4*x^2+0x^4").toString());
+    assertEquals("[0]", QUtils.parsePolynomial("0x^4").toString());
+  }
 }
 

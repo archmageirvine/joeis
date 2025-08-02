@@ -1,5 +1,12 @@
 package irvine.math.q;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
@@ -73,5 +80,49 @@ public final class QUtils {
       res[k] = Q.valueOf(parts[k]);
     }
     return res;
+  }
+
+  /**
+   * Parse a string representing a rational polynomial into a list of coefficients.
+   * @param polynomial polynomial
+   * @return list of coefficients
+   */
+  public static List<Q> parsePolynomial(String polynomial) {
+    polynomial = polynomial.replaceAll("\\s+", "");
+
+    // Regex pattern to match terms of the form:
+    // optional sign, optional parens, fraction or integer, optional *x, optional ^exponent
+    final Pattern termPattern = Pattern.compile(
+      "([+-]?)(\\(?\\d+(?:/\\d+)?\\)?)" +     // Coefficient (possibly fraction)
+        "(?:\\*?x(?:\\^(\\d+))?)?"              // Optional x and optional exponent
+    );
+
+    final Matcher matcher = termPattern.matcher(polynomial);
+    final Map<Integer, Q> terms = new HashMap<>();
+
+    while (matcher.find()) {
+      final String sign = matcher.group(1);
+      String coeffStr = matcher.group(2);
+      final String exponentStr = matcher.group(3);
+
+      coeffStr = coeffStr.replace("(", "").replace(")", "");
+      if (sign != null && sign.equals("-")) {
+        coeffStr = "-" + coeffStr;
+      }
+
+      final Q coeff = new Q(coeffStr);
+      if (!coeff.isZero()) {
+        final int exponent = matcher.group(0).contains("x") ? exponentStr != null ? Integer.parseInt(exponentStr) : 1 : 0;
+        terms.put(exponent, coeff);
+      }
+    }
+
+    // Determine the maximum exponent to size the list
+    final int maxDegree = terms.keySet().stream().max(Integer::compareTo).orElse(0);
+    final List<Q> result = new ArrayList<>();
+    for (int k = 0; k <= maxDegree; ++k) {
+      result.add(terms.getOrDefault(k, Q.ZERO));
+    }
+    return result;
   }
 }

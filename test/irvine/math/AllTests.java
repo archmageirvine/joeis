@@ -42,6 +42,7 @@ public class AllTests extends TestSuite {
     suite.addTest(irvine.math.predicate.AllTests.suite());
     suite.addTest(irvine.math.q.AllTests.suite());
     suite.addTest(irvine.math.r.AllTests.suite());
+    suite.addTest(irvine.math.series.AllTests.suite());
     suite.addTest(irvine.math.set.AllTests.suite());
     suite.addTest(irvine.math.z.AllTests.suite());
     suite.addTest(irvine.math.zi.AllTests.suite());

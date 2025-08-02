@@ -12,6 +12,6 @@ public class A181361 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A181361() {
-    super(1, n -> Functions.DIGIT_SUM_CUBES.z(10, Functions.FIBONACCI.z(n)));
+    super(0, n -> Functions.DIGIT_SUM_CUBES.z(10, Functions.FIBONACCI.z(n)));
   }
 }

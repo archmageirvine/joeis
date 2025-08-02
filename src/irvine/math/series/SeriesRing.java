@@ -8,6 +8,7 @@ import irvine.math.api.Field;
 import irvine.math.function.Functions;
 import irvine.math.group.AbstractRing;
 import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
@@ -20,8 +21,9 @@ import irvine.math.z.Z;
  */
 public class SeriesRing<E> extends AbstractRing<Series<E>> {
 
-  // todo at the moment underlying type could get away with ring, but for division later I think a field will be needed
-  // todo "SeriesRing" might not be final name here, if I can get division working (Taylor series expansion)
+  // todo finite cases
+  //  - memory and (perhaps) efficiency could be improved by directly supporting finite series
+  //  - potentially can be done by using Polynomial<E> for those cases since Polynomial implements Series
 
   /** Formal power series ring over integers. */
   public static final SeriesRing<Z> SZ = new SeriesRing<>(IntegerField.SINGLETON);
@@ -126,6 +128,14 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
   }
 
   /**
+   * Get the field of the series coefficients.
+   * @return coefficient field
+   */
+  public Field<E> coefficientField() {
+    return mElementField;
+  }
+
+  /**
    * Create a finite series from the given list of terms.
    * @param coeffs coefficients
    * @return series
@@ -171,18 +181,28 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
   }
 
   @Override
-  public Series<E> add(final Series<E> a, final Series<E> b) {
-    return cache(n -> mElementField.add(a.coeff(n), b.coeff(n)));
+  public Series<E> add(final Series<E> s, final Series<E> t) {
+    return cache(n -> mElementField.add(s.coeff(n), t.coeff(n)));
   }
 
   @Override
-  public Series<E> subtract(final Series<E> a, final Series<E> b) {
-    return cache(n -> mElementField.subtract(a.coeff(n), b.coeff(n)));
+  public Series<E> subtract(final Series<E> s, final Series<E> t) {
+    return cache(n -> mElementField.subtract(s.coeff(n), t.coeff(n)));
   }
 
   @Override
-  public Series<E> multiply(final Series<E> a, final Series<E> b) {
-    return cache(n -> mElementField.sum(0, n, k -> mElementField.multiply(a.coeff(k), b.coeff(n - k))));
+  public Series<E> multiply(final Series<E> s, final Series<E> t) {
+    return cache(n -> mElementField.sum(0, n, k -> mElementField.multiply(s.coeff(k), t.coeff(n - k))));
+  }
+
+  /**
+   * Convenience method to square a series.
+   * Equivalent to <code>multiply(x, x)</code> or <code>pow(s, 2)</code>.
+   * @param s series
+   * @return squared series
+   */
+  public Series<E> square(final Series<E> s) {
+    return multiply(s, s);
   }
 
   /**
@@ -198,7 +218,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
     if (mZero.equals(n)) {
       return zero();
     }
-    return m -> mElementField.multiply(n, s.coeff(m));
+    return m -> mElementField.multiply(s.coeff(m), n);
   }
 
   /**
@@ -209,6 +229,53 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    */
   public Series<E> hadamardMultiply(final Series<E> a, final Series<E> b) {
     return n -> mElementField.multiply(a.coeff(n), b.coeff(n));
+  }
+
+  /**
+   * Return the series divided by the specified value.
+   * @param s series
+   * @param n divisor
+   * @return series
+   */
+  public Series<E> divide(final Series<E> s, final E n) {
+    if (mOne.equals(n)) {
+      return s;
+    }
+    if (mZero.equals(n)) {
+      return zero();
+    }
+    return m -> mElementField.divide(s.coeff(m), n);
+  }
+
+  /**
+   * Return one series divided by another.
+   * @param s numerator
+   * @param t denominator
+   * @return series
+   */
+  public Series<E> divide(final Series<E> s, final Series<E> t) {
+    // DivisionSeries does its own caching, so we do not need an additional cache here.
+    // In general, we cannot tell if t is 0, but we can at least check the specific constant
+    if (zero() == t) {
+      throw new IllegalArgumentException("Division by 0");
+    }
+    if (mElementField.zero().equals(t.coeff(0))) {
+      // t is not technically a formal power series.
+      // We try to "shift" it down u(x) = x^k*t(x) where k is the least non-zero term of t.
+      // This shifting will eventually fail if t is 0.
+      // Then we form s(x)/u(x) for which [x^n] s(x)/t(x) = [x^(n-k)] s(x)/u(x)
+      int k = 1;
+      while (mElementField.zero().equals(t.coeff(k))) {
+        if (++k <= 0) {
+          throw new RuntimeException("Divisor is 0 or very high order");
+        }
+      }
+      final int shift = k;
+      // This will actually be valid for -shift <= n as well, a Laurent series,
+      // although many functions will be oblivious to those terms.
+      return n -> new DivisionSeries<>(mElementField, s, m -> t.coeff(m + shift)).coeff(n + shift);
+    }
+    return new DivisionSeries<>(mElementField, s, t);
   }
 
   /**
@@ -232,6 +299,15 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    */
   public Series<E> diff(final Series<E> s) {
     return n -> mElementField.multiply(s.coeff(n + 1), mElementField.coerce(n + 1));
+  }
+
+  /**
+   * Return the formal integral of a series.
+   * @param s series to take integral of
+   * @return derivative
+   */
+  public Series<E> integrate(final Series<E> s) {
+    return n -> n == 0 ? mElementField.zero() : mElementField.divide(s.coeff(n - 1), mElementField.coerce(n));
   }
 
   /**
@@ -346,7 +422,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @param n power
    * @return <code>s^n</code>
    */
-  public Series<E> pow(final Polynomial<E> s, final Z n) {
+  public Series<E> pow(final Series<E> s, final Z n) {
     if (n.isZero()) {
       return one();
     } else if (Z.ONE.equals(n)) {
@@ -373,14 +449,23 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
   }
 
   /**
-   * Substitute a series for the unknown in another series.
-   * @param s series
-   * @param v series to substitute
+   * Substitute a series for the unknown in a polynomial.
+   * The first argument needs to be of finite degree to ensure a computable result.
+   * @param s polynomial
+   * @param t series to substitute
    * @return substituted series
    */
-  public Series<E> substitute(final Series<E> s, final Series<E> v) {
-    // [x^n] s(v(x)) = Sum_{k=..n} s(k) * v(n-k)
-    return cache(n -> mElementField.sum(0, n, k -> mElementField.multiply(s.coeff(k), v.coeff(n - k))));
+  public Series<E> substitute(final Polynomial<E> s, final Series<E> t) {
+    // [x^n] s(t(x)) = Sum_{k=0..n} s(k) * [x^n] t(x)^k
+    return n -> {
+      E sum = mElementField.zero();
+      Series<E> tk = one();
+      for (int k = 0; k <= s.degree(); ++k) {
+        sum = mElementField.add(sum, mElementField.multiply(s.coeff(k), tk.coeff(n)));
+        tk = multiply(tk, t);
+      }
+      return sum;
+    };
   }
 
   /**
@@ -393,16 +478,112 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
   }
 
   /**
-   * Compute a Dedekind eta series of another series.
-   * @param s series
+   * Compute a Dedekind eta series.
    * @return eta series
    */
-  public Series<E> eta(final Series<E> s) {
-    return new DedekindEta<>(this, s);
+  public Series<E> eta() {
+    return new Series<>() {
+      private Series<E> mEta = oneMinusXToTheN(1);
+      private int mK = 1;
+
+      @Override
+      public E coeff(final int n) {
+        while (n > mK) {
+          mEta = multiply(mEta, oneMinusXToTheN(++mK));
+        }
+        return mEta.coeff(n);
+      }
+    };
   }
 
+  private boolean isDigitsOnly(final String s) {
+    // Also allows "." for CR
+    return s.matches("[0-9.]*");
+  }
 
-  // todo a/b
+  /**
+   * Return an explicit string representation of a series up to the specified degree.
+   * @param s series
+   * @param n maximum degree
+   * @return string representation
+   */
+  public String toString(final Series<E> s, final int n) {
+    final StringBuilder sb = new StringBuilder();
+    for (int k = 0; k <= n; ++k) {
+      final E c = s.coeff(k);
+      if (!mElementField.zero().equals(c)) {
+        final String sc = c.toString();
+        boolean multNeeded = false;
+        if (sc.startsWith("-")) {
+          final String sc1 = sc.substring(1);
+          if (isDigitsOnly(sc1)) {
+            if (mElementField.one().equals(mElementField.negate(c))) {
+              sb.append('-');
+            } else {
+              sb.append(sc);
+              multNeeded = true;
+            }
+          } else {
+            // e.g. something like -1/2
+            sb.append("-(").append(sc1).append(')');
+            multNeeded = true;
+          }
+        } else {
+          if (sb.length() > 0) {
+            sb.append('+');
+          }
+          if (k == 0 || !mElementField.one().equals(c)) {
+            if (isDigitsOnly(sc)) {
+              sb.append(sc);
+            } else {
+              sb.append('(').append(sc).append(')');
+            }
+            multNeeded = true;
+          }
+        }
+        if (k > 0) {
+          if (multNeeded) {
+            sb.append('*');
+          }
+          if (k == 1) {
+            sb.append('x');
+          } else {
+            sb.append("x^").append(k);
+          }
+        }
+      }
+    }
+    return sb.length() == 0 ? "0" : sb.toString();
+  }
 
-  // todo toString() & eval() to some distance
+  /**
+   * Convert this series to a polynomial of specified maximum degree.
+   * @param s series
+   * @param n maximum degree
+   * @return polynomial
+   */
+  public Polynomial<E> toPolynomial(final Series<E> s, final int n) {
+    final Polynomial<E> p = new PolynomialRing<>(mElementField).empty();
+    for (int k = 0; k <= n; ++k) {
+      p.add(s.coeff(k));
+    }
+    return p;
+  }
+
+  /**
+   * Evaluate the series at <code>x</code>.
+   * Essentially the same as <code>toPolynomial(s, n).eval(x)</code>
+   * @param s series
+   * @param x value to substitute
+   * @param n maximum degree term to include in sum
+   * @return polynomial
+   */
+  public E eval(final Series<E> s, final E x, final int n) {
+    E sum = mElementField.zero();
+    E xk = mElementField.one();
+    for (int k = 0; k <= n; ++k, xk = mElementField.multiply(xk, x)) {
+      sum = mElementField.add(sum, mElementField.multiply(s.coeff(k), xk));
+    }
+    return sum;
+  }
 }

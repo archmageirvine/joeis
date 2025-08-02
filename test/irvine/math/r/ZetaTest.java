@@ -1,16 +1,15 @@
 package irvine.math.r;
 
-import junit.framework.TestCase;
-
 import static irvine.TestUtils.assertEqualsLocal;
 import static irvine.math.r.Zeta.zeta;
 import static irvine.math.r.Zeta.zetaComplement;
 import static java.lang.Double.NaN;
 import static java.lang.Double.POSITIVE_INFINITY;
 
+import junit.framework.TestCase;
+
 /**
  * Tests the corresponding class.
- *
  * @author Sean A. Irvine
  */
 public class ZetaTest extends TestCase {

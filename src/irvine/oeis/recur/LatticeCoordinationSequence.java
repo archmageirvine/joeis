@@ -17,9 +17,6 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
   protected int mRowNo; // number of current row in coordinator triangle, starting with 0
   protected int mColNo; // number of current column in coordinator triangle 0 to f*d
   protected Z[] mPoly; // numerator or denominator coefficients of the generating function in the current triangle row
-  private final String mLatticeType;
-  private final int mDimension;
-  private boolean mIsConfigured = false;
 
   /**
    * Construct the sequence. by reducing it to an ordinary generating function.
@@ -29,12 +26,11 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
    * @param d dimension of the lattice
    */
   public LatticeCoordinationSequence(final String latticeType, final int d) {
-    super();
-    mLatticeType = latticeType;
-    mDimension = d;
-    mFactor = 1; // default; set to 2 for D^+ in configure()
+    super(configure(latticeType, d));
+    mFactor = "D^+".equals(latticeType) ? 2 : 1;
     mRowNo = -1;
-    mColNo = 0;
+    //mColNo = 0;
+    mColNo = mFactor * mRowNo + 1; // next call of <code>nextTriangle</code> should create and fill next row
   }
 
   /**
@@ -48,7 +44,9 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
     if (mColNo > mFactor * mRowNo) {
       ++mRowNo;
       mColNo = 0;
-      configure(latticeType, mRowNo);
+      final Z[][] nd = configure(latticeType, mRowNo);
+      mNum = nd[0];
+      mDen = nd[1];
       mPoly = iPoly == 0 ? mNum : mDen;
     }
     Z result = mPoly[mColNo];
@@ -67,10 +65,11 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
    * @param latticeType A, B, C, Ds and so on.
    * @param d dimension
    */
-  protected void configure(final String latticeType, final int d) {
+  private static Z[][] configure(final String latticeType, final int d) {
     char typeCode = latticeType.charAt(0);
+    final Z[] num;
+    final Z[] den;
     if ("D^+".equals(latticeType)) { // special treatment for diamond structures
-      mFactor = 2;
       // This can be tested with the following Mathematica:
       // a[d_,n_]:=2^(d-1)*Binomial[(d+2*n)/2-1,d-1]+(1-Mod[n,2])*Sum[2^k*Binomial[d,k]*Binomial[n-1,k-1],{k,0,d}];
       // a[0,_]=1; Table[a[4,n],{n,0,24}];
@@ -78,21 +77,21 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
       // d:=4; Table[gfden[d,k],{k,0,2*d}];
       // gfnum[d_,k_]:=Sum[gfden[d,j]*a[d,k-j],{j,0,k}];
       // d=8; Table[gfnum[d,k],{k,0,2*d}]
-      mDen = new Z[2 * d + 1];
-      mNum = new Z[2 * d + 1];
+      den = new Z[2 * d + 1];
+      num = new Z[2 * d + 1];
       final Z[] initTerms = new Z[2 * d + 1];
       for (int k = 0; k <= 2 * d; ++k) { // denominator
         switch (k % 4) {
           case 0:
-            mDen[k] = Binomial.binomial(d, k / 2);
+            den[k] = Binomial.binomial(d, k / 2);
             break;
           case 2:
-            mDen[k] = Binomial.binomial(d, k / 2).negate();
+            den[k] = Binomial.binomial(d, k / 2).negate();
             break;
           case 1:
           case 3:
           default:
-            mDen[k] = Z.ZERO;
+            den[k] = Z.ZERO;
             break;
         } // switch
       } // for denominator
@@ -111,48 +110,26 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
       for (int k = 0; k <= 2 * d; ++k) { // numerator
         Z sum = Z.ZERO;
         for (int j = 0; j <= k; ++j) {
-          sum = sum.add(mDen[j].multiply(initTerms[k - j]));
+          sum = sum.add(den[j].multiply(initTerms[k - j]));
         } // for j
-        mNum[k] = sum;
+        num[k] = sum;
       } // for numerator
-      //  if (false) {
-      //    System.out.println();
-      //    System.out.print("denominator");
-      //    for (int k = 0; k < mDen.length; ++k) {
-      //      System.out.print("," + mDen[k]);
-      //    }
-      //    System.out.println();
-      //    System.out.print("initial terms");
-      //    for (int k = 0; k < initTerms.length; ++k) {
-      //      System.out.print("," + initTerms[k]);
-      //    }
-      //    System.out.println();
-      //    System.out.print("numerator");
-      //    for (int k = 0; k < mNum.length; ++k) {
-      //      System.out.print("," + mNum[k]);
-      //    }
-      //  }
-
     } else { // normal lattice
       if (latticeType.length() > 1) { // Dual: "A*" or "Ds" ...
         typeCode = Character.toLowerCase(typeCode);
       }
-      mDen = new Z[d + 1];
-      mNum = new Z[d + 1];
+      den = new Z[d + 1];
+      num = new Z[d + 1];
       for (int k = 0; k <= d; ++k) { // denominator
         switch (((d & 1) << 1) | (k & 1)) {
           case 0: // d even, k even
-            mDen[k] = Binomial.binomial(d, k);
+          case 2:
+            den[k] = Binomial.binomial(d, k);
             break;
-          case 1: // d even, k odd
-            mDen[k] = Binomial.binomial(d, k).negate();
-            break;
-          case 2: // d odd,  k even
-            mDen[k] = Binomial.binomial(d, k);
-            break;
-          default:
+          case 1:
           case 3: // d odd,  k odd
-            mDen[k] = Binomial.binomial(d, k).negate();
+          default:
+            den[k] = Binomial.binomial(d, k).negate();
             break;
         } // switch
       } // for denominator
@@ -213,18 +190,11 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
           default:
             throw new RuntimeException("Unexpected typeCode " + typeCode);
         } // switch typeCode
-        mNum[k] = coeff;
+        num[k] = coeff;
       } // for numerator
     } // not D^+
-  }
-
-  @Override
-  public Z next() {
-    if (!mIsConfigured) {
-      mIsConfigured = true;
-      configure(mLatticeType, mDimension);
-      mColNo = mFactor * mRowNo + 1; // next call of <code>nextTriangle</code> should create and fill next row
-    }
-    return super.next();
+//    mNum = num;
+//    mDen = den;
+    return new Z[][] {num, den};
   }
 }

@@ -20,10 +20,6 @@ public class GeneratingFunctionSequence extends AbstractSequence {
   private int mGfType; // type of the g.f.: 0 = ordinary, 1 = exponential, 2 = dirichlet ...
   private Z mFactorial; // accumulate n! here
 
-  protected GeneratingFunctionSequence() {
-    super(0);
-  }
-
   /**
    * Construct a new rational integer polynomial generating function sequence.
    * @param offset first valid term has this index

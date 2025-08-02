@@ -13,8 +13,24 @@ import irvine.oeis.recur.GeneratingFunctionSequence;
  */
 public class A162500 extends GeneratingFunctionSequence {
 
-  protected int mPow;
-  protected static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
+  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
+
+  private static Z[][] build(final int pow) {
+    final Z[] num;
+    final Z[] den;
+    Polynomial<Q> prod = RING.one();
+    for (int k = 1; k <= pow; ++k) {
+      prod = RING.multiply(prod, RING.oneMinusXToTheN(k * 3));
+    }
+    prod = RING.divide(prod, RING.pow(RING.oneMinusXToTheN(1), pow));
+    final int deg = prod.degree();
+    den = new Z[]{Z.ONE};
+    num = new Z[deg + 1];
+    for (int k = 0; k <= deg; ++k) {
+      num[k] = prod.coeff(k).toZ();
+    }
+    return new Z[][] {num, den};
+  }
 
   /** Construct the sequence. */
   public A162500() {
@@ -26,22 +42,6 @@ public class A162500 extends GeneratingFunctionSequence {
    * @param pow power of the dividend
    */
   public A162500(final int pow) {
-    mPow = pow;
-    Polynomial<Q> prod = RING.one();
-    for (int k = 1; k <= mPow; ++k) {
-      prod = RING.multiply(prod, RING.oneMinusXToTheN(k * 3));
-    }
-    prod = RING.divide(prod, RING.pow(RING.oneMinusXToTheN(1), mPow));
-    final int deg = prod.degree();
-    mDen = new Z[]{Z.ONE};
-    mNum = new Z[deg + 1];
-    for (int k = 0; k <= deg; ++k) {
-      mNum[k] = prod.coeff(k).toZ();
-    }
-  }
-
-  @Override
-  public Z next() {
-    return super.next();
+    super(build(pow));
   }
 }

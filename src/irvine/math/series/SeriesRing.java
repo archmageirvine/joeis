@@ -1,6 +1,5 @@
 package irvine.math.series;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -9,6 +8,7 @@ import irvine.math.function.Functions;
 import irvine.math.group.AbstractRing;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRing;
+import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
@@ -95,37 +95,15 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
   @Override
   public Iterator<Series<E>> iterator() {
     // Essentially the same implementation as PolynomialRing.iterator()
+    final Iterator<Polynomial<E>> it = new PolynomialRingField<>(mElementField).iterator();
     return new Iterator<>() {
-      // Generate all degree 0, then all degree 1, and so on.
-      // For an infinite element this never gets above the 0th coefficient.
-      private final ArrayList<E> mCoeffs = new ArrayList<>();
-      private final ArrayList<Iterator<E>> mIterators = new ArrayList<>();
-
       @Override
       public boolean hasNext() {
-        return true;
+        return it.hasNext();
       }
-
       @Override
       public Series<E> next() {
-        int k = 0;
-        while (true) {
-          if (k >= mCoeffs.size()) {
-            mIterators.add(mElementField.iterator());
-            if (k > 0) {
-              mIterators.get(k).next(); // skip the 0 of the underlying field
-            }
-            mCoeffs.add(mIterators.get(k).next());
-          }
-          if (mIterators.get(k).hasNext()) {
-            mCoeffs.set(k, mIterators.get(k).next());
-            return new FiniteSeries<>(mElementField.zero(), mCoeffs);
-          } else {
-            mIterators.set(k, mElementField.iterator());
-            mCoeffs.set(k, mIterators.get(k).next());
-            ++k;
-          }
-        }
+        return it.next();
       }
     };
   }

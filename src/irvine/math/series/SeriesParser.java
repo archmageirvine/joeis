@@ -201,6 +201,7 @@ public class SeriesParser {
       case "serlaplace":
         return SQ.serlaplace(arg);
       case "exp":
+        // todo this is really stupid if arg = x (probably slow!!!)
         return SQ.substitute(RationalSeriesFactory.EXP, arg);
 //      case "log": return SQ.log(arg);
 //      case "sqrt": return SQ.sqrt(arg);

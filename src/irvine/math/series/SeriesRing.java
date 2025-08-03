@@ -463,6 +463,10 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
     if (!t.coeff(0).equals(mElementField.zero())) {
       throw new UnsupportedOperationException("Cannot have constant term in t");
     }
+
+    // todo: use Bell polynomials to accelerate?
+    // todo: if we have a way of telling finite we can combine this previous method
+
     // [x^n] s(t(x)) = Sum_{k=0..n} s(k) * [x^n] t(x)^k
     return n -> {
       if (n == 0) {

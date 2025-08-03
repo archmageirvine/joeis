@@ -33,11 +33,15 @@ public class A386296 extends AbstractSequence {
   private static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
     String.valueOf(Runtime.getRuntime().availableProcessors())));
 
-  private static final class Cuboid implements Comparable<Cuboid> {
+  protected static final class Cuboid implements Comparable<Cuboid> {
     private final int[] mTriple;
     private final int mVolume;
 
-    private Cuboid(final int... triple) {
+    /**
+     * Construct a cuboid.
+     * @param triple three dimensions
+     */
+    public Cuboid(final int... triple) {
       mTriple = Arrays.copyOf(triple, triple.length);
       Arrays.sort(mTriple);
       mVolume = Functions.PRODUCT.i(triple);
@@ -222,7 +226,7 @@ public class A386296 extends AbstractSequence {
     this(1);
   }
 
-  private List<Cuboid> buildCuboids(final int n) {
+  protected List<Cuboid> buildCuboids(final int n) {
     final List<Cuboid> cuboids = new ArrayList<>();
     for (int x = 1; x <= n; ++x) {
       for (int y = x; y <= n; ++y) {

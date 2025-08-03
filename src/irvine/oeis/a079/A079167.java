@@ -7,7 +7,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A056239.
+ * A079167 Weighted roundness of n. If n = p_1^e_1...p_k^e_k, then a(n) = e_1 + 2*e_2 + ... + k*e_k. Note that p_i &lt; p_j, i &lt; j is assumed.
  * @author Sean A. Irvine
  */
 public class A079167 extends Sequence1 implements DirectSequence {

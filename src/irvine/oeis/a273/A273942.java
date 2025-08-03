@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A273942 Primes of the form 3^n + n.
+ * A273942 Primes of the form 3^k + k.
  *
  * @author Georg Fischer
  */

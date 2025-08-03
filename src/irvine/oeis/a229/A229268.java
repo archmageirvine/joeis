@@ -6,7 +6,7 @@ import irvine.oeis.a065.A065061;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A229268 Primes of the form sigma(n) - tau(n), where sigma(n) = A000203(n) and tau(n) = A000005(n).
+ * A229268 Primes of the form sigma(k) - tau(k), where sigma(k) = A000203(k) and tau(k) = A000005(k).
  * @author Georg Fischer
  */
 public class A229268 extends SimpleTransformSequence {

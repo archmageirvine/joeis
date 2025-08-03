@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A178631 a(n) = 27 * ((10^n - 1)/9)^2.
+ * A178631 a(n) = 27*((10^n - 1)/9)^2.
  * @author Sean A. Irvine
  */
 public class A178631 extends LinearRecurrence {

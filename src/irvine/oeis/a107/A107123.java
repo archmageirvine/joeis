@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A107123 Numbers n such that (10^(2n+1)+18*10^n-1)/9 is prime.
+ * A107123 Numbers k such that (10^(2*k+1)+18*10^k-1)/9 is prime.
  * @author Georg Fischer
  */
 public class A107123 extends FilterNumberSequence {

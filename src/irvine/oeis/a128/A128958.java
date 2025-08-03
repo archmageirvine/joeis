@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A128958 Numbers n such that n^2+(n+1)^3 is prime.
+ * A128958 Numbers k such that k^2 + (k + 1)^3 is prime.
  * @author Georg Fischer
  */
 public class A128958 extends FilterNumberSequence {

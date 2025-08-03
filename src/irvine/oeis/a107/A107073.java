@@ -5,7 +5,7 @@ package irvine.oeis.a107;
 import irvine.oeis.a103.A103603;
 
 /**
- * A107073 Numbers n such that the string 35n is prime.
+ * A107073 Numbers k such that the string 35k is prime.
  * @author Georg Fischer
  */
 public class A107073 extends A103603 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079062 a(1) = 2; for n&gt;1, a(n) = smallest prime p such that p - a(n-1) = a^b for some positive integers a,b &gt; 1.
+ * A079062 a(1) = 2; for n&gt;1, a(n) = smallest prime p such that p - a(n-1) = c^e for some positive integers c,e &gt; 1.
  * @author Sean A. Irvine
  */
 public class A079062 extends Sequence1 {

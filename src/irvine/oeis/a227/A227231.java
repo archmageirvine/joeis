@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A227231 Numbers n such that antisigma(n) mod n = n - 1.
+ * A227231 Numbers k such that antisigma(k) mod k = k - 1.
  * @author Georg Fischer
  */
 public class A227231 extends FilterNumberSequence {

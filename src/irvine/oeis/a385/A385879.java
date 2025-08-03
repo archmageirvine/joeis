@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Triple;
 
 /**
- * A385879 allocated for Clark Kimberling.
+ * A385879 Values of u in triples (u, v, w) such that the polynomial x^3 + u*x^2 + v*x + w has 3 (possibly repeated) negative integer zeros; the triples are ordered by the inequality u &lt; v.
  * @author Sean A. Irvine
  */
 public class A385879 extends Sequence1 {

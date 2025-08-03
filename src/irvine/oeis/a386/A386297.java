@@ -3,7 +3,7 @@ package irvine.oeis.a386;
 import irvine.math.z.Z;
 
 /**
- * A386297 allocated for Janaka Rodrigo.
+ * A386297 Array read by antidiagonals T(n,k) is the minimal defect across all partitions of an n X n X n cube into k noncongruent cuboids, or 0 if there is no such partition.
  * @author Sean A. Irvine
  */
 public class A386297 extends A386296 {

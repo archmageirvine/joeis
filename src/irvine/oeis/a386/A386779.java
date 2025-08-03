@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * A386296.
+ * A386779 allocated for Janaka Rodrigo.
  * @author Sean A. Irvine
  */
 public class A386779 extends A386296 {

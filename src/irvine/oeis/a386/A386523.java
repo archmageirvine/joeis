@@ -4,7 +4,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.recur.PeriodicSequence;
 
 /**
- * A386523 allocated for Stefano Spezia.
+ * A386523 Decimal expansion of 577/408.
  * @author Sean A. Irvine
  */
 public class A386523 extends PrependSequence {

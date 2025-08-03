@@ -4,7 +4,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A227046 Numbers n such that (17^n + 5^n)/22 is prime.
+ * A227046 Numbers k such that (17^k + 5^k)/22 is prime.
  * @author Georg Fischer
  */
 public class A227046 extends PrimePositionSubsequence {

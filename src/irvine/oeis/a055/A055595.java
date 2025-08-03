@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A055595 Area of congruent triangles with integer sides and positive integer area, ordered by longest side, then second longest side and finally shortest side.
+ * A055595 Area of triangles with integer sides and positive integer area, ordered by longest side, then second longest side and finally shortest side.
  * @author Sean A. Irvine
  */
 public class A055595 extends A055592 {

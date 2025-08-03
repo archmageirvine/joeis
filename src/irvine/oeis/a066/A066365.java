@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.math.function.Functions;
 
 /**
- * A066365 The |sigma(n)-n|-perfect numbers, where f-perfect numbers for an arithmetical function f is defined in A066218.
+ * A066365 f-perfect numbers, where f(m) = sigma(m)-m.
  * @author Sean A. Irvine
  */
 public class A066365 extends A066367 {

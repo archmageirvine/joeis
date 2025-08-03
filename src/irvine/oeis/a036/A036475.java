@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A036475 partition(11n+1) mod 11.
+ * A036475 a(n) = partition(11n+1) mod 11.
  * @author Georg Fischer
  */
 public class A036475 extends Sequence1 {

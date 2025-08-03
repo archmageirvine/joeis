@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A246855 Numbers n such that sigma(n+5) - sigma(n) = n + 5.
+ * A246855 Numbers k such that sigma(k+5) - sigma(k) = k + 5.
  *
  * @author Georg Fischer
  */

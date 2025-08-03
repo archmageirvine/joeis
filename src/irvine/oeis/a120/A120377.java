@@ -4,7 +4,7 @@ package irvine.oeis.a120;
 import irvine.oeis.a050.A050528;
 
 /**
- * A120377 Primes of the form 2*11^n-1.
+ * A120377 Primes of the form 2*11^k-1.
  * @author Georg Fischer
  */
 public class A120377 extends A050528 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A227019 Numbers n such that exactly one of {2^n-1, 2^n+1, 2^n+3} is semiprime.
+ * A227019 Numbers k such that exactly one of {2^k-1, 2^k+1, 2^k+3} is semiprime.
  * @author Georg Fischer
  */
 public class A227019 extends FilterNumberSequence {

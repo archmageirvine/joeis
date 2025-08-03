@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.UnionSequence;
 
 /**
- * A386214 allocated for Clark Kimberling.
+ * A386214 Rectangular array, read by descending antidiagonals: (row m) consists of the union, in increasing order, of the numbers in the following set: {k*((m+1)*F(n) + F(n - 1)): k = 1..m, n&gt;=0}, where F = A000045, the Fibonacci numbers, with F(-1)=1 as in A039834.
  * @author Sean A. Irvine
  */
 public class A386214 extends Sequence1 {

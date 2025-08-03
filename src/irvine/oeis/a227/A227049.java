@@ -4,7 +4,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A227049 Numbers n such that (15^n + 4^n)/19 is prime.
+ * A227049 Numbers k such that (15^k + 4^k)/19 is prime.
  * @author Georg Fischer
  */
 public class A227049 extends PrimePositionSubsequence {

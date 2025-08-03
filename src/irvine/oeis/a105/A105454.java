@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a152.A152117;
 
 /**
- * A105454 Numbers n such that n*prime(n)+(n+1)*prime(n+1) is prime.
+ * A105454 Numbers k such that k*prime(k)+(k+1)*prime(k+1) is prime.
  * @author Georg Fischer
  */
 public class A105454 extends FilterPositionSequence {

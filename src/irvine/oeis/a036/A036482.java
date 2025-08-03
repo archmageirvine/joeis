@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 // DO NOT EDIT here!
 
 /**
- * A036482 partition(11n+9) mod 11.
+ * A036482 a(n) = partition(11n+9) mod 11.
  * @author Georg Fischer
  */
 public class A036482 extends A036475 {

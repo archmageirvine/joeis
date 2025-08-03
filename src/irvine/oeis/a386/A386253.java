@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A386253 allocated for Mia Boudreau.
+ * A386253 a(n) = (smallest digit of n)^(largest digit of n) + n.
  * @author Sean A. Irvine
  */
 public class A386253 extends Sequence0 {

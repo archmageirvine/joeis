@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A221494 Table T(n,k) = number of skeleta of (3+1)-free posets with n clone sets and k tangles.
+ * A221494 Table read by downward diagonals: T(n,k) = number of skeleta of (3+1)-free posets with n clone sets and k tangles.
  * @author Sean A. Irvine
  */
 public class A221494 extends AbstractSequence {

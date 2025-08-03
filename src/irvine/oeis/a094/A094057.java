@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A094057 Number of digits of A001566(n).
+ * A094057 Number of decimal digits of Lucas(2^n).
  * @author Georg Fischer
  */
 public class A094057 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A226116 Numbers n such that one of 2^n-1 or 2^n+1 is semiprime, but not both.
+ * A226116 Numbers k such that one of 2^k-1 or 2^k+1 is semiprime, but not both.
  * @author Georg Fischer
  */
 public class A226116 extends FilterNumberSequence {

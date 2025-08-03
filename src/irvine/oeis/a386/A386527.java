@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a055.A055932;
 
 /**
- * A386527 allocated for Michael De Vlieger.
+ * A386527 Numbers k in A055932 such that both k-1 and k+1 are not squarefree.
  * @author Sean A. Irvine
  */
 public class A386527 extends FilterSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A125884 Numbers n for which n^6+n^5-1 is prime.
+ * A125884 Numbers k for which k^6+k^5-1 is prime.
  * @author Georg Fischer
  */
 public class A125884 extends PrimePositionSubsequence {

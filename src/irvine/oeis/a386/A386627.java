@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a385.A385882;
 
 /**
- * A386215 allocated for Clark Kimberling.
+ * A386627 Values of u in the (2,3)-quartals (m,u,v,w) having m=1; i.e., values of v for solutions to 1 + u^3 = v^2 + w^3, in positive integers, with v &gt; 1; see Comments.
  * @author Sean A. Irvine
  */
 public class A386627 extends A385882 {

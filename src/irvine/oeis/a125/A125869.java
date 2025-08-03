@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a061.A061599;
 
 /**
- * A125869 Numbers n such that p=10n+1 is prime and cos(2pi/p) is an algebraic number of a 5-smooth degree, but not 3-smooth.
+ * A125869 Numbers k such that p=10*k+1 is prime and cos(2*Pi/p) is an algebraic number of a 5-smooth degree, but not 3-smooth.
  * @author Georg Fischer
  */
 public class A125869 extends AbstractSequence {

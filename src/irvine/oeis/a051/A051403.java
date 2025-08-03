@@ -7,7 +7,7 @@ import irvine.oeis.a003.A003422;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A051403 a(n) = (n+2)*(a(n-1) - a(n-2)).
+ * A051403 a(n) = (n+2)*(a(n-1) - a(n-2)), starting with a(-1)=0 and a(0)=1.
  * @author Georg Fischer
  */
 public class A051403 extends HolonomicRecurrence implements DirectSequence {

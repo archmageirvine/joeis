@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004604;
 
 /**
- * A065990 The first n base-5 digits of Pi expressed in decimal forms a prime.
+ * A065990 Numbers k such that the first k base-5 digits of Pi expressed in decimal forms a prime.
  * @author Sean A. Irvine
  */
 public class A065990 extends Sequence1 {

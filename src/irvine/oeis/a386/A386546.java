@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A386546 allocated for Ctibor O. Zizka.
+ * A386546 Numbers k &gt;= 1 such that k = d(k) + d(k+1) + ... + d(k+r) for some r &gt;= 0 where d(i) is the number of divisors of i (A000005).
  * @author Sean A. Irvine
  */
 public class A386546 extends Sequence1 {

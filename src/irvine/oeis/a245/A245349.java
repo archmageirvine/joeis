@@ -6,7 +6,7 @@ import irvine.oeis.a024.A024641;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A245349 Sum of digits of n in fractional base 7/4.
+ * A245349 Sum of digits of n written in fractional base 7/4.
  * @author Georg Fischer
  */
 public class A245349 extends SimpleTransformSequence {

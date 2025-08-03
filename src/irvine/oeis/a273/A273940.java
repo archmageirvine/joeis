@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A273940 Primes of the form 5^n - n.
+ * A273940 Primes of the form 5^m - m.
  *
  * @author Georg Fischer
  */

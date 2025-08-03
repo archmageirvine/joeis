@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A386501 allocated for Walter Robinson.
+ * A386501 Numbers k divisible by A004719(k), excluding trivial cases.
  * @author Sean A. Irvine
  */
 public class A386501 extends Sequence1 {

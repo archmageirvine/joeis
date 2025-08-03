@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A131766 a(n) = A131668(n) - (2n+1).
+ * A131766 a(n) = A131668(n) - (2*n+1).
  * @author Georg Fischer
  */
 public class A131766 extends HolonomicRecurrence {

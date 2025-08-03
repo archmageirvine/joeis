@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A072579 In binary representation: n has the same number of 1's as the n-th prime has 0's.
+ * A072579 In binary representation: k has the same number of 1's as the k-th prime has 0's.
  * @author Georg Fischer
  */
 public class A072579 extends A000040 {

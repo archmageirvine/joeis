@@ -14,7 +14,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A381847 a(n) is the number of ways to partition an n X n X n cube into 3 cuboids of different dimensions.
+ * A381847 a(n) is the number of ways to partition an n X n X n cube into 3 noncongruent cuboids.
  * @author Sean A. Irvine
  */
 public class A381847 extends Sequence1 {

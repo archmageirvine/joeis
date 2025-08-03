@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a061.A061638;
 
 /**
- * A125871 Numbers n such that p=14n+1 is prime and cos(2pi/p) is an algebraic number of a 7-smooth degree, but not 5-smooth.
+ * A125871 Numbers k such that p=14*k+1 is prime and cos(2*Pi/p) is an algebraic number of a 7-smooth degree, but not 5-smooth.
  * @author Georg Fischer
  */
 public class A125871 extends AbstractSequence {

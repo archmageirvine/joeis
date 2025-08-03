@@ -6,7 +6,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.a381.A381617;
 
 /**
- * A385873 allocated for Jwalin Bhatt.
+ * A385873 A sequence constructed by greedily sampling the Poisson distribution for parameter value 1 so as to minimize discrepancy.
  * @author Sean A. Irvine
  */
 public class A385873 extends A381617 {

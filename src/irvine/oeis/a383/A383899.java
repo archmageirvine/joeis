@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.a381.A381617;
 
 /**
- * A383899 A sequence constructed by greedily sampling the Yule-Simon distribution for parameter value 1, 1/(i*(i+1)) to minimize discrepancy.
+ * A383899 A sequence constructed by greedily sampling the Yule-Simon distribution for parameter value 1, to minimize discrepancy selecting the smallest value in case of ties.
  * @author Sean A. Irvine
  */
 public class A383899 extends A381617 {

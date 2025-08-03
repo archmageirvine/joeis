@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A079159 {a(n)} = sequence of smallest positive integers such that sqrt(1 + sum_{n=1..inf} a(n)*p_n*x^n) = A079160(x), a power series also having positive integer coefficients, where p_n is the n-th prime.
+ * A079159 {a(n)} = sequence of smallest positive integers such that sqrt(1 + Sum_{n&gt;=1} a(n)*p_n*x^n) = A079160(x), a power series also having positive integer coefficients, where p_n is the n-th prime.
  * @author Sean A. Irvine
  */
 public class A079159 extends Sequence0 {

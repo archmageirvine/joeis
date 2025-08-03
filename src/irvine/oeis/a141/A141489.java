@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A141489 Numbers n such that n^2 + n + 257 is prime.
+ * A141489 Numbers k such that k^2 + k + 257 is prime.
  * @author Georg Fischer
  */
 public class A141489 extends PrimePositionSubsequence {

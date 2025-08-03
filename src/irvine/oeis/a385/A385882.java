@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A385882 allocated for Clark Kimberling.
+ * A385882 Values of v in the (1,3)-quartals (m,u,v,w) having m=1; i.e., values of v for solutions to m^1 + u^3 = v^1 + w^3, in positive integers, with m&lt;v, sorted by u, then v.
  * @author Sean A. Irvine
  */
 public class A385882 extends Sequence1 {

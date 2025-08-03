@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079076 Numerator of Sum{n/d : 1&lt;d&lt;n and n mod d &gt; 0}.
+ * A079076 Numerator of Sum_{1&lt;k&lt;n, n mod k &gt; 0} n/k.
  * @author Sean A. Irvine
  */
 public class A079076 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000013;
 import irvine.oeis.a003.A003239;
 
 /**
- * A386388 allocated for Tilman Piesk.
+ * A386388 a(n) is the number of complement pairs of 2n-bead balanced bicolor necklaces.
  * @author Sean A. Irvine
  */
 public class A386388 extends Combiner {

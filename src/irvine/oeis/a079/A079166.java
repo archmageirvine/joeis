@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.AntidiagonalSequence;
 
 /**
- * A380446.
+ * A079166 Square array read by antidiagonals of T(n,k)=(4k-2)*T(n,k-1)+T(n,k-2) with T(n,0)=1 and T(n,1)=n.
  * @author Sean A. Irvine
  */
 public class A079166 extends AntidiagonalSequence {

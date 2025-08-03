@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067816 Numbers n such that sigma(n+1) - sigma(n) = n + 1.
+ * A067816 Numbers k such that sigma(k+1) - sigma(k) = k + 1.
  * @author Sean A. Irvine
  */
 public class A067816 extends Sequence1 {

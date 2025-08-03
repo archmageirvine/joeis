@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A107071 Numbers n such that 1019*n + 1021 is prime.
+ * A107071 Numbers k such that 1019*k + 1021 is prime.
  * @author Georg Fischer
  */
 public class A107071 extends PrimePositionSubsequence {

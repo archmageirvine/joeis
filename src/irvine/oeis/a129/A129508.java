@@ -7,7 +7,7 @@ import irvine.oeis.a005.A005836;
 import irvine.oeis.a037.A037453;
 
 /**
- * A129508 Numbers n such that 3 and 5 do not divide binomial(2n,n).
+ * A129508 Numbers k such that 3 and 5 do not divide binomial(2*k, k).
  * @author Georg Fischer
  */
 public class A129508 extends PrependSequence {

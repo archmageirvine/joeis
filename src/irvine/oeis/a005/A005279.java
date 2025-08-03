@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A005279 Numbers having divisors d,e with d &lt; e &lt; 2*d.
+ * A005279 Numbers having divisors d, e with d &lt; e &lt; 2*d.
  * @author Sean A. Irvine
  */
 public class A005279 extends Sequence1 {

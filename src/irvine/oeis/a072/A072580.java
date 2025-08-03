@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A072580 A000040(A072577(n)).
+ * A072580 a(n) = A000040(A072577(n)).
  * @author Georg Fischer
  */
 public class A072580 extends SimpleTransformSequence {

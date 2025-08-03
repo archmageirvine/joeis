@@ -5,7 +5,7 @@ import irvine.oeis.a006.A006882;
 import irvine.oeis.a204.A204892;
 
 /**
- * A205104 (1/n)*A205103(n).
+ * A205104 a(n) = (1/n)*A205103(n).
  * @author Georg Fischer
  */
 public class A205104 extends A204892 {

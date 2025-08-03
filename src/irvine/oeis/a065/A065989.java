@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004602;
 
 /**
- * A065989 The first n ternary digits of Pi expressed in decimal forms a prime.
+ * A065989 Numbers k such that the first k ternary digits of Pi expressed in decimal forms a prime.
  * @author Sean A. Irvine
  */
 public class A065989 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A107125 Numbers n such that (10^(2n+1) + 36*10^n - 1)/9 is prime.
+ * A107125 Numbers k such that (10^(2*k+1) + 36*10^k - 1)/9 is prime.
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.TwoParameterFormSequence;
 
 /**
- * A135797 Numbers of the form x^4 + 6x^2 y^2 + y^4 (where x,y are positive integers).
+ * A135797 Numbers of the form x^4 + 6*x^2*y^2 + y^4 (where x,y are positive integers).
  * @author Georg Fischer
  */
 public class A135797 extends TwoParameterFormSequence {

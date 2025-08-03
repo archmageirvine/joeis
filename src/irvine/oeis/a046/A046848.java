@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A046848 Primes of form n*2^n+(n-1).
+ * A046848 Primes of form k*2^k+(k-1).
  * @author Sean A. Irvine
  */
 public class A046848 extends Sequence1 {

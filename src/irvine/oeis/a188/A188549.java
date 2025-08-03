@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A188549 Numbers n such that 8*n^2+1 is a prime.
+ * A188549 Numbers k such that 8*k^2+1 is a prime.
  * @author Georg Fischer
  */
 public class A188549 extends PrimePositionSubsequence {

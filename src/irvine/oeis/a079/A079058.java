@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a025.A025591;
 
 /**
- * A079058 Least k such that A025591(k)&gt;p(n) (p(n)=the n-th partition number).
+ * A079058 Least k &gt; 0 such that A025591(k) &gt;= p(n) (p(n)=the n-th partition number).
  * @author Sean A. Irvine
  */
 public class A079058 extends Sequence1 {

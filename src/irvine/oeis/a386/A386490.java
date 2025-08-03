@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A386490 allocated for Stefano Spezia.
+ * A386490 Array read by ascending antidiagonals: A(n,m) = numerator(2n*m/(m^2 + 1)), where m &gt; 0.
  * @author Sean A. Irvine
  */
 public class A386490 extends Sequence1 {

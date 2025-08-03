@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A177120 Primes of the form (5*10^n+3).
+ * A177120 Primes of the form (5*10^k+3).
  * @author Georg Fischer
  */
 public class A177120 extends FilterSequence {

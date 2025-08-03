@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A131871 A131766/18.
+ * A131871 a(n) = A131766(n) / 18.
  * @author Georg Fischer
  */
 public class A131871 extends HolonomicRecurrence {

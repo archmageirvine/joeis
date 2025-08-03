@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A229265 Numbers n such that sigma(n) + tau(n) + phi(n) is a prime, where sigma(n) = A000203(n), tau(n) = A000005(n) and phi(n) = A000010(n).
+ * A229265 Numbers k such that sigma(k) + tau(k) + phi(k) is a prime, where sigma(k) = A000203(k), tau(k) = A000005(k) and phi(k) = A000010(k).
  * @author Georg Fischer
  */
 public class A229265 extends FilterNumberSequence {

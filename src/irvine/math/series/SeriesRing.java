@@ -442,7 +442,39 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
       E sum = mElementField.zero();
       Series<E> tk = one();
       for (int k = 0; k <= s.degree(); ++k) {
-        sum = mElementField.add(sum, mElementField.multiply(s.coeff(k), tk.coeff(n)));
+        final E sk = s.coeff(k);
+        if (!mElementField.zero().equals(sk)) {
+          sum = mElementField.add(sum, mElementField.multiply(sk, tk.coeff(n)));
+        }
+        tk = multiply(tk, t);
+      }
+      return sum;
+    };
+  }
+
+  /**
+   * Substitute a series for the unknown in another series.
+   * The second argument must not have a constant term.
+   * @param s series to substitute into
+   * @param t series to substitute
+   * @return substituted series
+   */
+  public Series<E> substitute(final Series<E> s, final Series<E> t) {
+    if (!t.coeff(0).equals(mElementField.zero())) {
+      throw new UnsupportedOperationException("Cannot have constant term in t");
+    }
+    // [x^n] s(t(x)) = Sum_{k=0..n} s(k) * [x^n] t(x)^k
+    return n -> {
+      if (n == 0) {
+        return s.coeff(0);
+      }
+      E sum = mElementField.zero();
+      Series<E> tk = t;
+      for (int k = 1; k <= n; ++k) {
+        final E sk = s.coeff(k);
+        if (!mElementField.zero().equals(sk)) {
+          sum = mElementField.add(sum, mElementField.multiply(sk, tk.coeff(n)));
+        }
         tk = multiply(tk, t);
       }
       return sum;

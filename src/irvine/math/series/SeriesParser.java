@@ -78,12 +78,14 @@ public class SeriesParser {
     // In the input we first try to identify portions that correspond to polynomials
     // and wrap them in "poly()" making them easier to treat later in parsing.
     // It does not matter if this does not capture every case.
-    final String rewrite = rewritePolynomials(expr);
-    mTokens = new Tokenizer(rewrite).tokenize();
+    //final String rewrite = rewritePolynomials(expr);
+    mTokens = new Tokenizer(expr).tokenize();
+    //System.out.println(mTokens);
     mIndex = 0;
     return parseExpression();
   }
 
+  // todo this doesn't work properly in presence of "exp" etc.
   private static String rewritePolynomials(final String input) {
     // Pattern for one polynomial term
     final String term = "[+-]?\\s*(\\(\\d+/\\d+\\)|\\d+/\\d+|\\d+)?\\s*\\*?\\s*x(\\^\\d+)?"
@@ -196,7 +198,10 @@ public class SeriesParser {
 
     // todo add other functions here, or perhaps reflect on function name?
     switch (fname) {
-      case "serlaplace": return SQ.serlaplace(arg);
+      case "serlaplace":
+        return SQ.serlaplace(arg);
+      case "exp":
+        return SQ.substitute(RationalSeriesFactory.EXP, arg);
 //      case "log": return SQ.log(arg);
 //      case "sqrt": return SQ.sqrt(arg);
       default:

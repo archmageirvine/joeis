@@ -254,9 +254,9 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
       final int shift = k;
       // This will actually be valid for -shift <= n as well, a Laurent series,
       // although many functions will be oblivious to those terms.
-      return n -> new DivisionSeries<>(mElementField, s, m -> t.coeff(m + shift)).coeff(n + shift);
+      return n -> new Divide<>(mElementField, s, m -> t.coeff(m + shift)).coeff(n + shift);
     }
-    return new DivisionSeries<>(mElementField, s, t);
+    return new Divide<>(mElementField, s, t);
   }
 
   /**

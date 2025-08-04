@@ -8,14 +8,14 @@ import irvine.math.api.Field;
  * @param <E> underlying element type
  * @author Sean A. Irvine
  */
-class DivisionSeries<E> extends MemoryFunction1<E> implements Series<E> {
+class Divide<E> extends MemoryFunction1<E> implements Series<E> {
 
   // [x^n] s(x)/t(x) = (1/t_0)(s_n - Sum_{k=1..n} u_{n-k}t_k), assuming t_0 != 0.
   private final Field<E> mElementField;
   private final Series<E> mS;
   private final Series<E> mT;
 
-  DivisionSeries(final Field<E> elementField, final Series<E> s, final Series<E> t) {
+  Divide(final Field<E> elementField, final Series<E> s, final Series<E> t) {
     if (elementField.zero().equals(t.coeff(0))) {
       throw new UnsupportedOperationException("t is not a formal power series with t0!=0");
     }

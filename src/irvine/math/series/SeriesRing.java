@@ -370,27 +370,30 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
 
   /**
    * Raise a series to a power.
+   * This can handle both positive and negative powers provided <code>s</code>
+   * is a formal power series; that is, provided <code>s(0)!=0</code>.
    * @param s the series
    * @param n power
    * @return <code>s^n</code>
    * @throws IllegalArgumentException if <code>n&lt;0</code>
    */
   public Series<E> pow(final Series<E> s, final long n) {
+    if (n == 0) {
+      return one();
+    }
+    if (n == 1) {
+      return s;
+    }
+    if (!mElementField.zero().equals(s.coeff(0))) {
+      // This handles formal power series
+      return new Power<>(mElementField, s, n);
+    }
+    // Deal with cases where s(0) == 0
     if (n < 0) {
       throw new IllegalArgumentException();
     }
-    if (n <= 3) {
-      switch ((int) n) {
-        case 0:
-          return one();
-        case 1:
-          return s;
-        case 2:
-          return multiply(s, s);
-        case 3:
-        default:
-          return multiply(multiply(s, s), s);
-      }
+    if (n == 2) {
+      return multiply(s, s);
     }
     final Series<E> u = pow(s, n / 2);
     final Series<E> t = multiply(u, u);
@@ -404,17 +407,12 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @return <code>s^n</code>
    */
   public Series<E> pow(final Series<E> s, final Z n) {
-    if (n.isZero()) {
-      return one();
-    } else if (Z.ONE.equals(n)) {
-      return s;
-    } else if (Z.TWO.equals(n)) {
-      return multiply(s, s);
-    } else {
-      final Series<E> u = pow(s, n.divide2());
-      final Series<E> t = multiply(u, u);
-      return n.isEven() ? t : multiply(t, s);
+    if (n.bitLength() < Long.SIZE) {
+      return pow(s, n.longValue());
     }
+    final Series<E> u = pow(s, n.divide2());
+    final Series<E> t = multiply(u, u);
+    return n.isEven() ? t : multiply(t, s);
   }
 
   /**

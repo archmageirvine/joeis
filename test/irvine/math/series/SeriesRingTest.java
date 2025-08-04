@@ -93,6 +93,8 @@ public class SeriesRingTest extends TestCase {
     assertEquals("9+6*x+25*x^2+14*x^3+48*x^4+72*x^5+71*x^6+122*x^7+101*x^8+170*x^9+189*x^10", SeriesRing.SQ.toString(SeriesRing.SQ.pow(mS, 2), 10));
     assertEquals("2187+5103*x+25515*x^2+48762*x^3+152334*x^4+297675*x^5+701589*x^6+1368676*x^7+2652517*x^8+5027533*x^9+8798440*x^10", SeriesRing.SQ.toString(SeriesRing.SQ.pow(mS, 7), 10));
     assertEquals("2187+5103*x+25515*x^2+48762*x^3+152334*x^4+297675*x^5+701589*x^6+1368676*x^7+2652517*x^8+5027533*x^9+8798440*x^10", SeriesRing.SQ.toString(SeriesRing.SQ.pow(mS, Z.SEVEN), 10));
+    assertEquals("27*x^9+27*x^10", SeriesRing.SQ.toString(SeriesRing.SQ.pow(SeriesRing.SQ.shift(mS, 3), 3), 10));
+    assertEquals("(1/27)-(1/27)*x-(10/81)*x^2+(107/729)*x^3+(74/729)*x^4-(1054/2187)*x^5+(11674/19683)*x^6+(5989/6561)*x^7-(47047/19683)*x^8+(118853/531441)*x^9+(2443513/531441)*x^10", SeriesRing.SQ.toString(SeriesRing.SQ.pow(mS, -3), 10));
   }
 
   public void testSubstitutePower() {

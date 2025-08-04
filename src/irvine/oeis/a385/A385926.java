@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 public class A385926 extends A385925 {
 
   @Override
-  protected Z select(final Q n) {
-    return n.num();
+  protected Z select(final Q pq, final Q nm) {
+    return pq.num();
   }
 }

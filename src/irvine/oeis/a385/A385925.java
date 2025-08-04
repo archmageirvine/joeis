@@ -14,8 +14,8 @@ public class A385925 extends Sequence3 {
   private final Fast mPrime = new Fast();
   private long mN = 2;
 
-  protected Z select(final Q n) {
-    return n.den();
+  protected Z select(final Q pq, final Q mn) {
+    return pq.den();
   }
 
   @Override
@@ -23,6 +23,7 @@ public class A385925 extends Sequence3 {
     ++mN;
     Q min = new Q(mN);
     Q best = null;
+    Q bestv = null;
     for (long m = 1; m < mN; ++m) {
       final Q v = new Q(m, mN);
       for (long p = 1; p < mN; p = mPrime.nextPrime(p)) {
@@ -32,10 +33,11 @@ public class A385925 extends Sequence3 {
           if (!u.isZero() && u.compareTo(min) < 0) {
             min = u;
             best = r;
+            bestv = v;
           }
         }
       }
     }
-    return select(best);
+    return select(best, bestv);
   }
 }

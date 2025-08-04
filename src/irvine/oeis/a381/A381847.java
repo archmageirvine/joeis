@@ -62,6 +62,10 @@ public class A381847 extends Sequence1 {
     public int compareTo(final OrderedTriple other) {
       return Arrays.compare(mTriple, other.mTriple);
     }
+
+    public boolean isCube() {
+      return mTriple[0] == mTriple[2];
+    }
   }
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
@@ -85,11 +89,15 @@ public class A381847 extends Sequence1 {
     this(3);
   }
 
+  protected boolean accept(final List<OrderedTriple> lst) {
+    return true;
+  }
+
   protected Z process(final Set<List<OrderedTriple>> triples, final int cuboids) {
     // Finally, check the count of distinct triples in the set
     int cnt = 0;
     for (final List<OrderedTriple> t : triples) {
-      if (new TreeSet<>(t).size() == cuboids) {
+      if (new TreeSet<>(t).size() == cuboids && accept(t)) {
         if (mVerbose) {
           StringUtils.message(t.toString());
         }

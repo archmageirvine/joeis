@@ -156,6 +156,23 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
     return new CachedSeries<>(s);
   }
 
+  /**
+   * Return the first non-zero index of a series.
+   * If the sequence is 0, then an exception will occur.
+   * @param s the series
+   * @return first non-zero index.
+   */
+  public int firstNonzeroIndex(final Series<E> s) {
+    // This will eventually fail if s is 0.
+    int k = 0;
+    while (mElementField.zero().equals(s.coeff(k))) {
+      if (++k < 0) {
+        throw new RuntimeException("Series is 0 or very high order");
+      }
+    }
+    return k;
+  }
+
   @Override
   public Series<E> negate(final Series<E> s) {
     return n -> mElementField.negate(s.coeff(n));
@@ -243,15 +260,8 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
     if (mElementField.zero().equals(t.coeff(0))) {
       // t is not technically a formal power series.
       // We try to "shift" it down u(x) = x^k*t(x) where k is the least non-zero term of t.
-      // This shifting will eventually fail if t is 0.
       // Then we form s(x)/u(x) for which [x^n] s(x)/t(x) = [x^(n-k)] s(x)/u(x)
-      int k = 1;
-      while (mElementField.zero().equals(t.coeff(k))) {
-        if (++k <= 0) {
-          throw new RuntimeException("Divisor is 0 or very high order");
-        }
-      }
-      final int shift = k;
+      final int shift = firstNonzeroIndex(t);
       // This will actually be valid for -shift <= n as well, a Laurent series,
       // although many functions will be oblivious to those terms.
       return n -> new Divide<>(mElementField, s, m -> t.coeff(m + shift)).coeff(n + shift);
@@ -381,23 +391,19 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
     if (n == 0) {
       return one();
     }
-    if (n == 1) {
+    if (n == 1 || s == zero()) {
       return s;
     }
+    // If s == 0 (which we cannot reliably test), then the following will fail
     if (!mElementField.zero().equals(s.coeff(0))) {
       // This handles formal power series
       return new Power<>(mElementField, s, n);
     }
-    // Deal with cases where s(0) == 0
-    if (n < 0) {
-      throw new IllegalArgumentException();
-    }
-    if (n == 2) {
-      return multiply(s, s);
-    }
-    final Series<E> u = pow(s, n / 2);
-    final Series<E> t = multiply(u, u);
-    return (n & 1) == 0 ? t : multiply(t, s);
+    // Adjust for s(x) = s_k*x^k + ...
+    // Move the series down, power up, and scaled it back
+    final int k = firstNonzeroIndex(s);
+    // Careful to ensure k * n does not overflow
+    return shift(pow(shift(s, -k), n), Z.valueOf(k).multiply(n).intValueExact());
   }
 
   /**
@@ -413,6 +419,16 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
     final Series<E> u = pow(s, n.divide2());
     final Series<E> t = multiply(u, u);
     return n.isEven() ? t : multiply(t, s);
+  }
+
+  /**
+   * Return the inverse of a series.
+   * Equivalent to <code>pow(s, -1)</code>.
+   * @param s series
+   * @return inverse series
+   */
+  public Series<E> divide(final Series<E> s) {
+    return pow(s, -1);
   }
 
   /**

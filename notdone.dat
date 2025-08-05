@@ -2661,3 +2661,20 @@ A079202 Number of isomorphism classes of non-associative non-commutative non-ant
 A079203 Number of isomorphism classes of non-associative non-commutative non-anti-associative anti-commutative closed binary operations on a set of order n, listed by class size
 A079204 Number of isomorphism classes of non-associative non-commutative anti-associative non-anti-commutative closed binary operations on a set of order n, listed by class size.
 A079205 Number of isomorphism classes of non-associative non-commutative anti-associative anti-commutative closed binary operations on a set of order n, listed by class size.
+A079207 Number of isomorphism classes of associative non-commutative non-anti-associative non-anti-commutative closed binary operations on a set of order n, listed by class size.
+A079208 Number of isomorphism classes of associative non-commutative non-anti-associative anti-commutative closed binary operations on a set of order n, listed by class size.
+A079209 Number of isomorphism classes of associative commutative non-anti-associative non-anti-commutative closed binary operations on a set of order n, listed by class size.
+A079230 Number of non-associative non-commutative non-anti-associative non-anti-commutative closed binary operations on a set of order n
+A079231 Number of isomorphism classes of non-associative non-commutative non-anti-associative non-anti-commutative closed binary operations on a set of order n.
+A079232 Number of non-associative non-commutative non-anti-associative anti-commutative closed binary operations on a set of order n.
+A079233 Number of isomorphism classes of non-associative non-commutative non-anti-associative anti-commutative closed binary operations on a set of order n.
+A079234 Number of non-associative non-commutative anti-associative non-anti-commutative closed binary operations on a set of order n.
+A079235 Number of isomorphism classes of non-associative non-commutative anti-associative non-anti-commutative closed binary operations on a set of order n.
+A079236 Number of non-associative non-commutative anti-associative anti-commutative closed binary operations on a set of order n.
+A079237 Number of isomorphism classes of non-associative non-commutative anti-associative anti-commutative closed binary operations on a set of order n.
+A079240 Number of associative non-commutative non-anti-associative non-anti-commutative closed binary operations on a set of order n.
+A079241 Number of isomorphism classes of associative non-commutative non-anti-associative non-anti-commutative closed binary operations on a set of order n.
+A079242 Number of associative non-commutative non-anti-associative anti-commutative closed binary operations on a set of order n.
+A079243 Number of isomorphism classes of associative non-commutative non-anti-associative anti-commutative closed binary operations on a set of order n.
+A079244 Number of associative commutative non-anti-associative non-anti-commutative closed binary operations on a set of order n.
+A079245 Number of isomorphism classes of associative commutative non-anti-associative non-anti-commutative closed binary operations on a set of order n.

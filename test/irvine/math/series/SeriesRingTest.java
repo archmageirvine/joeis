@@ -128,4 +128,13 @@ public class SeriesRingTest extends TestCase {
     assertEquals(new Q(3, 2), u.coeff(-3)); // Laurent-style terms also exist
   }
 
+  public void testLeadingNonzeroIndex() {
+    assertEquals(0, SeriesRing.SQ.firstNonzeroIndex(mS));
+    assertEquals(3, SeriesRing.SQ.firstNonzeroIndex(SeriesRing.SQ.shift(mS, 3)));
+  }
+
+  public void testInverse() {
+    assertEquals("(1/3)-(1/9)*x-(11/27)*x^2+(14/81)*x^3-(8/243)*x^4-(655/729)*x^5+(2353/2187)*x^6+(7820/6561)*x^7-(40502/19683)*x^8+(52304/59049)*x^9+(507385/177147)*x^10", SeriesRing.SQ.toString(SeriesRing.SQ.pow(mS, -1), 10));
+    assertEquals("(14/81)-(8/243)*x-(655/729)*x^2+(2353/2187)*x^3+(7820/6561)*x^4-(40502/19683)*x^5+(52304/59049)*x^6+(507385/177147)*x^7-(3498784/531441)*x^8-(1799618/1594323)*x^9+(56603564/4782969)*x^10", SeriesRing.SQ.toString(SeriesRing.SQ.pow(SeriesRing.SQ.shift(mS, 3), -1), 10)); // Laurent-style terms also exist
+  }
 }

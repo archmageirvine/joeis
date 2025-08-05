@@ -15,7 +15,7 @@ public class A079216 extends Sequence0 {
   private int mN = 0;
   private int mM = 0;
 
-  private Z pFixedByA057511(final int n, final int k, final int r) {
+  protected Z pFixedByA057511(final int n, final int k, final int r) {
     final int ncycles = Functions.GCD.i(r, k);
     final int cyclen = r / ncycles;
     Z sum = Z.ZERO;

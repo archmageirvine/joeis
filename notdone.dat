@@ -2678,3 +2678,6 @@ A079242 Number of associative non-commutative non-anti-associative anti-commutat
 A079243 Number of isomorphism classes of associative non-commutative non-anti-associative anti-commutative closed binary operations on a set of order n.
 A079244 Number of associative commutative non-anti-associative non-anti-commutative closed binary operations on a set of order n.
 A079245 Number of isomorphism classes of associative commutative non-anti-associative non-anti-commutative closed binary operations on a set of order n.
+A079263 Number of constrained mixed models with n factors.
+A079265 Number of antisymmetric transitive binary relations on n unlabeled points.
+A079293 Degree of the numerator of Fn(z), the Poincaré series (also Hilbert, Molien series) for C(Vn)^G, where G = SL(2,C) and Vd is the space for binary forms of degree d.

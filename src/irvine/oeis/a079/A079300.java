@@ -1,4 +1,4 @@
-package irvine.oeis.a003;
+package irvine.oeis.a079;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -7,27 +7,14 @@ import java.util.List;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.AbstractSequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A003313 Length of shortest addition chain for n.
+ * A079300 a(n) = number of shortest addition chains ending in n.
  * @author Sean A. Irvine
  */
-public class A003313 extends AbstractSequence {
-
-  /**
-   * Constructor with offset.
-   * @param offset first index
-   */
-  protected A003313(final int offset) {
-    super(offset);
-  }
-
-  /** Construct the sequence. */
-  public A003313() {
-    super(1);
-  }
+public class A079300 extends Sequence1 {
 
   private static final class ChainNode {
     private final int mHead;
@@ -48,6 +35,7 @@ public class A003313 extends AbstractSequence {
   }
 
   private final DynamicIntArray mShortest = new DynamicIntArray();
+  private final DynamicIntArray mShortestCount = new DynamicIntArray();
   private List<ChainNode> mActiveChains = null;
   private int mChainLength = -1;
   private int mN = 0;
@@ -58,7 +46,7 @@ public class A003313 extends AbstractSequence {
     while (mShortest.get(mN) == 0) {
       if (++mChainLength == 0) {
         mActiveChains = Collections.singletonList(new ChainNode(1, null));
-        return Z.ZERO;
+        return Z.ONE;
       } else {
         final Set<String> seen = new HashSet<>();
         final List<ChainNode> newChains = new ArrayList<>();
@@ -71,9 +59,13 @@ public class A003313 extends AbstractSequence {
               final int n = h + k.mHead;
               final ChainNode newChain = new ChainNode(n, c);
               if (seen.add(newChain.toString())) {
-                newChains.add(new ChainNode(n, c));
-                if (mShortest.get(n) == 0) {
+                newChains.add(newChain);
+                final int sh = mShortest.get(n);
+                if (sh == 0) {
                   mShortest.set(n, mChainLength);
+                  mShortestCount.set(n, 1);
+                } else if (sh == mChainLength) {
+                  mShortestCount.increment(n);
                 }
               }
             }
@@ -83,6 +75,6 @@ public class A003313 extends AbstractSequence {
         mActiveChains = newChains;
       }
     }
-    return Z.valueOf(mShortest.get(mN));
+    return Z.valueOf(mShortestCount.get(mN));
   }
 }

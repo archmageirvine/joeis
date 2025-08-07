@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A101472 Numbers n such that the number n33 is prime.
+ * A101472 Numbers k such that the number k33 is prime.
  * @author Georg Fischer
  */
 public class A101472 extends FilterNumberSequence {

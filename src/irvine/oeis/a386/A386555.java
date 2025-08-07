@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A386555 allocated for Marko Riedel.
+ * A386555 Number of 2-colorings of an 5 X 5 X 5 grid, up to rotational symmetry, by the number of black cells.
  * @author Sean A. Irvine
  */
 public class A386555 extends Sequence0 {

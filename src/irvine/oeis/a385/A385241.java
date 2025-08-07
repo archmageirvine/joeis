@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A385241 allocated for Claude H. R. Dequatre.
+ * A385241 a(n) is the least positive integer k such that the digit sum of prime(n) + k divides the concatenation of prime(n) - 1 and prime(n), where prime(n) is the n-th prime.
  * @author Sean A. Irvine
  */
 public class A385241 extends A000040 {

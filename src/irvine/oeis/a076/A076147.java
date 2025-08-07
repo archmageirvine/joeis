@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A076147 Numbers n such that the n-th prime + n is a cube.
+ * A076147 Numbers k such that the k-th prime + k is a cube.
  * @author Sean A. Irvine
  */
 public class A076147 extends A000040 {

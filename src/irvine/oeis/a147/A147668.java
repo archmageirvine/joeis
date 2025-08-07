@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A147668 Primes of the form : 6^n-5^n.
+ * A147668 Primes of the form 6^k-5^k.
  * @author Georg Fischer
  */
 public class A147668 extends FilterSequence {

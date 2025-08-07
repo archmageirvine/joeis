@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A385244 allocated for Robert Price.
+ * A385244 Numbers k such that (33^k + 2^k)/35 is prime.
  * @author Sean A. Irvine
  */
 public class A385244 extends Sequence1 {

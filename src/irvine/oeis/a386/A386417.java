@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A386417 allocated for Felix Huber.
+ * A386417 Numbers k for which there exists at least one nondegenerate triangle with sides that are distinct divisors of k.
  * @author Sean A. Irvine
  */
 public class A386417 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A215460 Floor(n!^2 / n^n).
+ * A215460 a(n) = floor(n!^2 / n^n).
  * @author Georg Fischer
  */
 public class A215460 extends Sequence1 {

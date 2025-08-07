@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A116989 Inverse Moebius transform of 6-simplex numbers A000579.
+ * A116989 a(n) = b(A000579(n+6)) with b(n) = Sum{d|n} d*(d+1)*(d+2)*(d+3)*(d+4)*(d+5)/720.
  * @author Georg Fischer
  */
 public class A116989 extends LambdaSequence {

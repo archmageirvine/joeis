@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A386316 allocated for Ben Orlin.
+ * A386316 a(n) = the minimum value of (x + 2)*(y + 2) such that x*y &gt;= n.
  * @author Sean A. Irvine
  */
 public class A386316 extends Sequence0 {

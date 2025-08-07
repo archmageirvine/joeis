@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A384693 allocated for Piyush Kumar Jha.
+ * A384693 a(n) is the number of lattice points (r,s) such that 0&lt;r,s&lt;=n and ((r^2+s^2)*d - r*d^2)/r is a square for some integer d with 0&lt;d&lt;r.
  * @author Sean A. Irvine
  */
 public class A384693 extends Sequence0 {

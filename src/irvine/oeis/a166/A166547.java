@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A166547 Primes of the form 100*n+7.
+ * A166547 Primes of the form 100*k+7.
  * @author Georg Fischer
  */
 public class A166547 extends PrimeSubsequence {

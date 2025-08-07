@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A386552 allocated for Jason Bard.
+ * A386552 Concatenate powers of 10.
  * @author Sean A. Irvine
  */
 public class A386552 extends Sequence0 {

@@ -3,7 +3,7 @@ package irvine.oeis.a386;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A386553 allocated for Marko Riedel.
+ * A386553 Number of 2-colorings of an 3 X 3 X 3 grid, up to rotational symmetry, by the number of black cells.
  * @author Sean A. Irvine
  */
 public class A386553 extends FiniteSequence {

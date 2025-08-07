@@ -4,7 +4,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A185239 Numbers n such that (11^n + 10^n)/21 is prime.
+ * A185239 Numbers k such that (11^k + 10^k)/21 is prime.
  * @author Georg Fischer
  */
 public class A185239 extends PrimePositionSubsequence {

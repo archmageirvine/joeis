@@ -184,6 +184,10 @@ public class FiveNeighbor2DAutomaton extends AbstractSequence {
     return nextOn();
   }
 
+  protected Z select(final long tsum, final long lsum, final long rsum, final long org) {
+    return Z.valueOf(8 * tsum + 4 * lsum + 4 * rsum - 7 * org);
+  }
+
   /**
    * Get the next term of the sequence.
    * @return total number of black cells in the next generation
@@ -204,9 +208,9 @@ public class FiveNeighbor2DAutomaton extends AbstractSequence {
       tsum += row.bitCount();
     }
     tsum = tsum - lsum - rsum + org; // org was counted twice (in lsum and rsum); now we have the count of the inner triangle
-    tsum = 8 * tsum + 4 * lsum + 4 * rsum - 7 * org;
+    final Z res = select(tsum, lsum, rsum, org);
     computeNext();
-    return Z.valueOf(tsum);
+    return res;
   }
 
   /**

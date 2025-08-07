@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A086913 a[n] =Prime[a[n-2]]+Abs[Prime[n]-a[n-2]].
+ * A086913 a(n) = prime(a(n-2)) + abs(prime(n) - a(n-2)) with a(1)=a(2)=1.
  * @author Georg Fischer
  */
 public class A086913 extends MultiTransformSequence {

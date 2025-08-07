@@ -4,7 +4,7 @@ package irvine.oeis.a139;
 import irvine.oeis.prime.CongruenceForm;
 
 /**
- * A139990 Primes of the form 12x^2+12xy+73y^2.
+ * A139990 Primes of the form 12*x^2+12*x*y+73*y^2.
  * @author Georg Fischer
  */
 public class A139990 extends CongruenceForm {

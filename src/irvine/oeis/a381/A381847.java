@@ -66,6 +66,10 @@ public class A381847 extends Sequence1 {
     public boolean isCube() {
       return mTriple[0] == mTriple[2];
     }
+
+    public boolean isStrict() {
+      return mTriple[0] != mTriple[1] && mTriple[1] != mTriple[2];
+    }
   }
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));

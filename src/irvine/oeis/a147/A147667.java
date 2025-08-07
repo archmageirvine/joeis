@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A147667 Primes of the form 5^n - 4^n.
+ * A147667 Primes of the form 5^k - 4^k.
  * @author Georg Fischer
  */
 public class A147667 extends PrimeSubsequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079249 Sum of p in all pairs (p,q), 0&lt;=p&lt;q, p+q divides n.
+ * A079249 Sum of r in all pairs (r,s), 0&lt;=r&lt;s, r+s divides n.
  * @author Sean A. Irvine
  */
 public class A079249 extends Sequence1 {

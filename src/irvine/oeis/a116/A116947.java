@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A116947 Numbers n such that 4*n^6 + 1 is prime.
+ * A116947 Numbers k such that 4*k^6 + 1 is prime.
  * @author Georg Fischer
  */
 public class A116947 extends PrimePositionSubsequence {

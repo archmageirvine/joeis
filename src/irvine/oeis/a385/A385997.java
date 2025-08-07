@@ -8,7 +8,7 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A385997 allocated for Felix Huber.
+ * A385997 a(n) is the smallest k such that the sum of the first k primes has exactly n prime factors, counting multiplicity.
  * @author Sean A. Irvine
  */
 public class A385997 extends Sequence1 {

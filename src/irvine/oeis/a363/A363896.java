@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A363896 Numbers k such that the sum of primes dividing k (with repetition) is equal to Euler&apos;s totient function of k.
+ * A363896 Numbers k such that the sum of primes dividing k (with repetition) is equal to Euler's totient function of k.
  * @author Georg Fischer
  */
 public class A363896 extends FilterNumberSequence {

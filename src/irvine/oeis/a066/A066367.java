@@ -11,14 +11,14 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A066367 The floor(p(n)/n)-perfect numbers, where p(n) denotes the n-th prime and f-perfect numbers for an arithmetical function f are defined in A066218.
+ * A066367 The floor(prime(n)/n)-perfect numbers, where prime(n) denotes the n-th prime and f-perfect numbers for an arithmetical function f are defined in A066218.
  * @author Sean A. Irvine
  */
 public class A066367 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final Function<Integer, Long> mFunction;
-  private int mN = 1;
+  private int mN = 0;
 
   protected A066367(final Function<Integer, Long> function) {
     mFunction = function;

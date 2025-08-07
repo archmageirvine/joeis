@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A007587 12-gonal (or dodecagonal) pyramidal numbers: n(n+1)(10n-7)/6.
+ * A007587 12-gonal (or dodecagonal) pyramidal numbers: a(n) = n*(n+1)*(10*n-7)/6.
  * @author Sean A. Irvine
  */
 public class A007587 extends Sequence0 {

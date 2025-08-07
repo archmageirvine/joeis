@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A099480 Count from 1, repeating 2n five times.
+ * A099480 Count from 1, repeating 2*n five times.
  * @author Sean A. Irvine
  */
 public class A099480 extends LinearRecurrence {

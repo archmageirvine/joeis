@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A037208 Numbers n such that q^2 &lt; p, where p=nextprime(n), q=nextprime(square root of n).
+ * A037208 Numbers k such that q^2 &lt; p, where p=nextprime(k), q=nextprime(square root of k).
  * @author Sean A. Irvine
  */
 public class A037208 extends Sequence1 {

@@ -5,7 +5,7 @@ package irvine.oeis.a249;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A249452 Numbers n such that A249441(n) = 3.
+ * A249452 Numbers k such that A249441(k) = 3.
  * @author Georg Fischer
  */
 public class A249452 extends HolonomicRecurrence {

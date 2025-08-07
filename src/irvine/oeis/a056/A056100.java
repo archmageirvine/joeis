@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A056100 Sigma(n)*Phi(n) + 1 (Mod n).
+ * A056100 a(n) = sigma(n)*phi(n) + 1 (mod n).
  * @author Sean A. Irvine
  */
 public class A056100 extends Sequence1 {

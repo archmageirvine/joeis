@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A385172 allocated for Claude H. R. Dequatre.
+ * A385172 a(n) is the least positive integer k such that prime(n) + k divides the concatenation of prime(n) - 1 and prime(n).
  * @author Sean A. Irvine
  */
 public class A385172 extends A000040 {

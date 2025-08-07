@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A386418 allocated for Felix Huber.
+ * A386418 a(n) is the number of nondegenerate triangles whose sides are distinct divisors of A386417(n).
  * @author Sean A. Irvine
  */
 public class A386418 extends Sequence1 {

@@ -22,7 +22,7 @@ public class A006942 extends AbstractSequence implements DirectSequence {
   /**
    * Generic constructor with parameters.
    * @param offset first index
-   * @segments number of segments used for the ten decimal digits
+   * @param segments number of segments used for the ten decimal digits
    */
   public A006942(final int offset, final int[] segments) {
     super(offset);

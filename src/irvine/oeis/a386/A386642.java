@@ -10,7 +10,7 @@ import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
 
 /**
- * A386642 allocated for Philip Jameson.
+ * A386642 Roll n fair, distinguishable, n-sided dice and sort the dice in increasing order with the lowest on the left, highest on the right. Let m be the maximum value rolled and select the m-th die from the right. Then a(n) is the number of such rolls (over all n^n possible outcomes) where the selected die shows 1.
  * @author Sean A. Irvine
  */
 public class A386642 extends Sequence1 {

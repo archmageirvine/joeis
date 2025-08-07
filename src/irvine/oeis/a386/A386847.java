@@ -3,7 +3,7 @@ package irvine.oeis.a386;
 import irvine.math.z.Z;
 
 /**
- * A386779 allocated for Janaka Rodrigo.
+ * A386847 allocated for Janaka Rodrigo.
  * @author Sean A. Irvine
  */
 public class A386847 extends A386848 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066147 Numbers n such that all 3 of EulerPhi(n) + 1, d(n) + 1, sigma(n) + 1 are simultaneously prime (d(n) denotes the number of divisors of n).
+ * A066147 Numbers k such that all 3 of EulerPhi(k) + 1, d(k) + 1, sigma(k) + 1 are simultaneously prime (d(k) denotes the number of divisors of k).
  * @author Sean A. Irvine
  */
 public class A066147 extends Sequence1 {

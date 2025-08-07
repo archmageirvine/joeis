@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A384139 Decimal expansion of the volume of an elongated triangular bipyramid with unit edge.
+ * A384139 Decimal expansion of the volume of an elongated triangular bipyramid with unit edges.
  * Formula:
  * @author Georg Fischer
  */

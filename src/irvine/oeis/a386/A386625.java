@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A386625 allocated for Clark Kimberling.
+ * A386625 Rectangular array R, read by descending antidiagonals: (row m) = increasing sequence of numbers m*F(n), n&gt;=2, without duplicates, where F = A000045 (Fibonacci numbers); see Comments.
  * @author Sean A. Irvine
  */
 public class A386625 extends Sequence1 {

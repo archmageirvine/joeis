@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A042975 Decimal expansion of sqrt(0.121121112...), cf. A042974.
+ * A042975 Decimal expansion of sqrt(0.121121112...).
  * @author Sean A. Irvine
  */
 public class A042975 extends DecimalExpansionSequence {

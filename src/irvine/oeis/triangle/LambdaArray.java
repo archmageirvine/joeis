@@ -14,7 +14,6 @@ import irvine.oeis.AbstractSequence;
  */
 public class LambdaArray extends AbstractSequence implements DirectArray {
 
-  private static final int DEFOFF = 0;
   protected int mRow; // current row index n
   protected int mCol; // current column index k
   private final int mRowMin; // first row index

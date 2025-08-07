@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A386554 allocated for Marko Riedel.
+ * A386554 Number of 2-colorings of an 4 X 4 X 4 grid, up to rotational symmetry, by the number of black cells.
  * @author Sean A. Irvine
  */
 public class A386554 extends Sequence0 {

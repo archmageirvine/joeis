@@ -10,7 +10,7 @@ import irvine.oeis.a053.A053669;
 import irvine.oeis.a119.A119288;
 
 /**
- * A380473 allocated for Michael De Vlieger.
+ * A380473 Numbers k neither squarefree nor prime power (i.e., in A126706) such that A119288(k) &lt;= A003557(k) &lt; A053669(k) &lt; A006530(k).
  * @author Sean A. Irvine
  */
 public class A380473 extends Sequence1 {

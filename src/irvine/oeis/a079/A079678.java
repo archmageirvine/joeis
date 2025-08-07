@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A079678 a(n) = a(n,m) = sum(k=0,n,binomial(m*k,k)*binomial(m*(n-k),n-k)) for m=5.
+ * A079678 a(n) = a(n,m) = Sum_{k=0..n} binomial(m*k,k)*binomial(m*(n-k),n-k) for m=5.
  * @author Georg Fischer
  */
 public class A079678 extends LambdaSequence {

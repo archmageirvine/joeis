@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A247048 Composite numbers n such that n+2 is also composite and such that (sopfr(n), sopfr(n+2)) is a twin prime pair. A001414 explains notation &apos;sopfr(n)&apos;.
+ * A247048 Composite numbers n such that n+2 is also composite and such that (sopfr(n), sopfr(n+2)) is a twin prime pair. A001414 explains notation 'sopfr(n)'.
  * @author Georg Fischer
  */
 public class A247048 extends FilterNumberSequence {

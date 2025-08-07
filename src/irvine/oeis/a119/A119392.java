@@ -7,7 +7,7 @@ import irvine.math.q.Rationals;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A119392 a(n) = n!*Sum_{k=0..n} Stirling2(n,k)/k!.
+ * A119392 a(n) = n! * Sum_{k=0..n} Stirling2(n,k)/k!.
  * a(n)=n!*sum(k=0, n, stirl2(n, k)/k!)
  * @author Georg Fischer
  */

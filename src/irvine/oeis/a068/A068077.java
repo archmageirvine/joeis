@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068077 Numbers n such that sigma(n)+sigma(n+1)=4n.
+ * A068077 Numbers k such that sigma(k) + sigma(k+1) = 4k.
  * @author Sean A. Irvine
  */
 public class A068077 extends Sequence1 {

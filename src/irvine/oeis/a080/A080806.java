@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A080806 Positive integer values of n such that 6n^2-5 is a square.
+ * A080806 Positive integer values of n such that 6*n^2-5 is a square.
  * @author Sean A. Irvine
  */
 public class A080806 extends LinearRecurrence {

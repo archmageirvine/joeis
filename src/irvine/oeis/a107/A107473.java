@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A107473 Sum of numerator and denominator of product{p|n,p=primes} (1 -1/p).
+ * A107473 Sum of numerator and denominator of Product_{p|n, p prime} (1 - 1/p).
  * @author Georg Fischer
  */
 public class A107473 extends Sequence1 {

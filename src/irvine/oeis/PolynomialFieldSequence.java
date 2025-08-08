@@ -10,7 +10,7 @@ import irvine.math.api.RationalSequence;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
-import irvine.math.polynomial.Series;
+import irvine.math.polynomial.SeriesFactory;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
@@ -668,16 +668,16 @@ public class PolynomialFieldSequence extends AbstractSequence implements Rationa
           break;
         case 49:  // "besselI"
           --top;
-          mStack.set(top, Series.BESSEL_I.s(Long.parseLong(mStack.get(top).toString()), m, mStack.get(top + 1)));
+          mStack.set(top, SeriesFactory.BESSEL_I.s(Long.parseLong(mStack.get(top).toString()), m, mStack.get(top + 1)));
           break;
         case 50:  // "ellipticD"
-          mStack.set(top, Series.ELLIPTIC_D.s(m, mStack.get(top)));
+          mStack.set(top, SeriesFactory.ELLIPTIC_D.s(m, mStack.get(top)));
           break;
         case 51:  // "ellipticE"
-          mStack.set(top, Series.ELLIPTIC_E.s(m, mStack.get(top)));
+          mStack.set(top, SeriesFactory.ELLIPTIC_E.s(m, mStack.get(top)));
           break;
         case 52:  // "ellipticK"
-          mStack.set(top, Series.ELLIPTIC_K.s(m, mStack.get(top)));
+          mStack.set(top, SeriesFactory.ELLIPTIC_K.s(m, mStack.get(top)));
           break;
         case 53:  // "pow" - exponent is no Q constant; [top-1],log,[top],*,exp -> [top-1]
           --top;

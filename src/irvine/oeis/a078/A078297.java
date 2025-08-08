@@ -2,7 +2,7 @@ package irvine.oeis.a078;
 
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
-import irvine.math.polynomial.Series;
+import irvine.math.polynomial.SeriesFactory;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
@@ -28,7 +28,7 @@ public class A078297 extends Sequence0 {
       ++mN;
       mM = 0;
     }
-    final Polynomial<Q> f = RING.integrate(RING.multiply(Series.LEGENDRE_P.s(mN, 0), Series.LEGENDRE_P.s(mM, 0)));
+    final Polynomial<Q> f = RING.integrate(RING.multiply(SeriesFactory.LEGENDRE_P.s(mN, 0), SeriesFactory.LEGENDRE_P.s(mM, 0)));
     return select(RING.eval(f, Q.ONE).subtract(RING.eval(f, Q.ZERO)));
   }
 }

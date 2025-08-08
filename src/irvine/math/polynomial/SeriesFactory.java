@@ -6,9 +6,9 @@ import java.util.Locale;
  * Convenience class collecting together implementations of various polynomial series.
  * @author Sean A. Irvine
  */
-public final class Series {
+public final class SeriesFactory {
 
-  private Series() { }
+  private SeriesFactory() { }
 
   /** Elliptic K function multiplied by 2/pi. */
   public static final Series1 ELLIPTIC_K = new EllipticK();
@@ -34,7 +34,7 @@ public final class Series {
    */
   public static Series1 getSeries1(final String name) throws NoSuchFieldException {
     try {
-      return (Series1) Series.class.getField(name.toUpperCase(Locale.getDefault())).get(null);
+      return (Series1) SeriesFactory.class.getField(name.toUpperCase(Locale.getDefault())).get(null);
     } catch (final IllegalAccessException e) {
       throw new RuntimeException("Could not access " + name, e);
     }
@@ -48,7 +48,7 @@ public final class Series {
    */
   public static Series2 getSeries2(final String name) throws NoSuchFieldException {
     try {
-      return (Series2) Series.class.getField(name.toUpperCase(Locale.getDefault())).get(null);
+      return (Series2) SeriesFactory.class.getField(name.toUpperCase(Locale.getDefault())).get(null);
     } catch (final IllegalAccessException e) {
       throw new RuntimeException("Could not access " + name, e);
     }

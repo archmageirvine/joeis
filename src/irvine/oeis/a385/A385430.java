@@ -30,7 +30,7 @@ public class A385430 extends Sequence1 {
    */
   public static void main(final String[] args) {
     final A385430 seq = new A385430();
-    seq.mN = Long.parseLong(args[0]);
+    seq.mN = Long.parseLong(args[0]) - 1;
     System.out.println(seq.next());
   }
 }

@@ -59,6 +59,8 @@ public final class Predicates {
   public static final Predicate CYCLOPS = new Cyclops(); // =A134808
   /** Test if a number is a Niven (or Harshad) number. */
   public static final Predicate NIVEN = new Niven(); // =A134808
+  /** Test if a number is economical. */
+  public static final Predicate ECONOMICAL = new Economical(); // =A046759
 
   /** Test if a number is abundant. */
   public static final Predicate ABUNDANT = new Abundant(); // =A005101

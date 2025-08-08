@@ -20,7 +20,7 @@ public final class LaguerrePolynomials {
   private static final PolynomialRing<Q> RING = new PolynomialRing<>(Rationals.SINGLETON);
 
   /**
-   * Compute Jacobi polynomial as a polynomial over rationals.
+   * Compute Laguerre polynomial as a polynomial over rationals.
    * @param alpha alpha parameter
    * @param n index
    * @return Jacobi polynomial
@@ -34,7 +34,7 @@ public final class LaguerrePolynomials {
   }
 
   /**
-   * Evaluate a Jacobi polynomial at a rational value.
+   * Evaluate a Laguerre polynomial at a rational value.
    * @param alpha alpha parameter
    * @param n index
    * @param z real parameter
@@ -45,7 +45,7 @@ public final class LaguerrePolynomials {
   }
 
   /**
-   * Evaluate a Jacobi polynomial at a real value.
+   * Evaluate a Laguerre polynomial at a real value.
    * @param alpha alpha parameter
    * @param n index
    * @param z real parameter

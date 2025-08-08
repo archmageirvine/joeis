@@ -1,7 +1,6 @@
 package irvine.oeis.a046;
 
-import irvine.factor.factor.Jaguar;
-import irvine.factor.util.FactorSequence;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -13,34 +12,11 @@ public class A046759 extends Sequence1 {
 
   private long mN = 124;
 
-  /**
-   * Test if a number if economical.
-   * @param n number to test
-   * @return true if the number is economical
-   */
-  public static boolean isEconomical(final long n) {
-    final FactorSequence fs = Jaguar.factor(n);
-    final int len = String.valueOf(n).length();
-    int l = 0;
-    for (final Z p : fs.toZArray()) {
-      l += p.toString().length();
-      final int e = fs.getExponent(p);
-      if (e > 1) {
-        l += String.valueOf(e).length();
-      }
-      if (l >= len) {
-        break;
-      }
-    }
-    return l < len;
-  }
-
   @Override
   public Z next() {
-    while (!isEconomical(++mN)) {
+    while (!Predicates.ECONOMICAL.is(++mN)) {
       // do nothing
     }
     return Z.valueOf(mN);
   }
-
 }

@@ -2684,3 +2684,4 @@ A079293 Degree of the numerator of Fn(z), the Poincaré series (also Hilbert, Mo
 A079306 Number of n-node labeled mating graphs whose complements are connected.
 A079307 Number of n-node labeled mating digraphs whose complements are connected.
 A079312 a(n) = 4 * A079137(n).
+A079330 Numerators of coefficients of odd powers of 1/q in the solution series for tan(x)/x=1.

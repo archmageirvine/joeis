@@ -28,15 +28,21 @@ public class A060041 extends AbstractSequence {
   private static final Polynomial<Q> C1 = Polynomial.create(Q.ONE, new Q(3125));
   private int mN = -1;
 
-  private Polynomial<Q> reversion(final Polynomial<Q> a, final int degree) {
-    final Q c1 = a.coeff(1);
+  /**
+   * Polynomial reversion supporting non-unit <code>x^1</code> coefficient.
+   * @param poly polynomial
+   * @param degree degree of reversion
+   * @return reversion
+   */
+  public static Polynomial<Q> reversion(final Polynomial<Q> poly, final int degree) {
+    final Q c1 = poly.coeff(1);
     final Q inverseC1 = c1.reciprocal();
     final Polynomial<Q> w = RING.empty();
     w.add(Q.ZERO);
     w.add(inverseC1);
     final List<Q> aa = new ArrayList<>();
     for (int k = 2; k <= degree; ++k) {
-      aa.add(a.get(k).multiply(inverseC1));
+      aa.add(poly.get(k).multiply(inverseC1));
     }
     Q invk = inverseC1;
     for (int k = 2; k <= degree; ++k) {

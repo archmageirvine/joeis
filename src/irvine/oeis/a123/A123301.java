@@ -66,7 +66,7 @@ public class A123301 extends AbstractSequence {
 
   // This version of reversion supports non-unit [x^1] coefficient
   // See https://mathworld.wolfram.com/SeriesReversion.html Morse and Feshbach formula
-  private Polynomial<Polynomial<Q>> reversion(final PolynomialRingField<Polynomial<Q>> ring, final Polynomial<Polynomial<Q>> a, final int degree) {
+  private static Polynomial<Polynomial<Q>> reversion(final PolynomialRingField<Polynomial<Q>> ring, final Polynomial<Polynomial<Q>> a, final int degree) {
     final Polynomial<Q> c1 = a.coeff(1);
     final Polynomial<Q> inverseC1 = RING_Y.series(RING_Y.one(), c1, degree);
     final Polynomial<Polynomial<Q>> w = ring.empty();

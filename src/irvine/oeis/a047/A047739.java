@@ -1,8 +1,8 @@
 package irvine.oeis.a047;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002113;
-import irvine.oeis.a046.A046759;
 
 /**
  * A047739 Economical palindromes.
@@ -19,7 +19,7 @@ public class A047739 extends A002113 {
   public Z next() {
     while (true) {
       final Z palin = super.next();
-      if (A046759.isEconomical(palin.longValueExact())) {
+      if (Predicates.ECONOMICAL.is(palin.longValueExact())) {
         return palin;
       }
     }

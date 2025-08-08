@@ -21,7 +21,7 @@ public class A383394 extends Sequence1 {
      * @param n value
      * @param b base
      */
-    public State(final Z n, final Z b) {
+    private State(final Z n, final Z b) {
       super(n, b);
     }
 

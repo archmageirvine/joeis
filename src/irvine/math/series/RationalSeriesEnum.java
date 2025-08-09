@@ -38,7 +38,11 @@ public enum RationalSeriesEnum {
     mSeries = series;
   }
 
-  Series<Q> s() {
+  /**
+   * Return the actual series.
+   * @return series
+   */
+  public Series<Q> s() {
     return mSeries;
   }
 }

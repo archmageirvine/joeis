@@ -1,4 +1,4 @@
-package irvine.oeis.recur;
+package irvine.oeis.gf;
 
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
@@ -21,10 +21,27 @@ public class EgfSequence extends AbstractSequence {
    * @param offset first valid term has this index
    * @param gf the generating function
    */
-  public EgfSequence(final int offset, final String gf) {
+  public EgfSequence(final int offset, final Series<Q> gf) {
     super(offset);
     mN = offset - 1;
-    mSeries = new SeriesParser().parse(gf);
+    mSeries = gf;
+  }
+
+  /**
+   * Construct a sequence from an ordinary generating function.
+   * @param offset first valid term has this index
+   * @param gf the generating function
+   */
+  public EgfSequence(final int offset, final String gf) {
+    this(offset, new SeriesParser().parse(gf));
+  }
+
+  /**
+   * Return the series underlying this sequence.
+   * @return the series
+   */
+  public Series<Q> s() {
+    return mSeries;
   }
 
   @Override

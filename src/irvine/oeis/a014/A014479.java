@@ -1,6 +1,6 @@
 package irvine.oeis.a014;
 
-import irvine.oeis.recur.EgfSequence;
+import irvine.oeis.gf.EgfSequence;
 
 /**
  * A014479 Exponential generating function = (1+2*x)/(1-2*x)^3.

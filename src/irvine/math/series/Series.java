@@ -20,7 +20,18 @@ public interface Series<E> {
    * @return series
    */
   static Series<Z> create(final long... coeffs) {
-    return n -> n < coeffs.length ? Z.valueOf(coeffs[n]) : Z.ZERO;
+    return new Series<>() {
+
+      @Override
+      public Z coeff(final int n) {
+        return n < coeffs.length ? Z.valueOf(coeffs[n]) : Z.ZERO;
+      }
+
+      @Override
+      public int bound() {
+        return coeffs.length - 1;
+      }
+    };
   }
 
   /**
@@ -29,7 +40,18 @@ public interface Series<E> {
    * @return series
    */
   static Series<Z> create(final Z... coeffs) {
-    return n -> n < coeffs.length ? coeffs[n] : Z.ZERO;
+    return new Series<>() {
+
+      @Override
+      public Z coeff(final int n) {
+        return n < coeffs.length ? coeffs[n] : Z.ZERO;
+      }
+
+      @Override
+      public int bound() {
+        return coeffs.length - 1;
+      }
+    };
   }
 
   /**
@@ -38,7 +60,18 @@ public interface Series<E> {
    * @return series
    */
   static Series<Q> create(final List<Q> coeffs) {
-    return n -> n < coeffs.size() ? coeffs.get(n) : Q.ZERO;
+    return new Series<>() {
+
+      @Override
+      public Q coeff(final int n) {
+        return n < coeffs.size() ? coeffs.get(n) : Q.ZERO;
+      }
+
+      @Override
+      public int bound() {
+        return coeffs.size() - 1;
+      }
+    };
   }
 
   /**
@@ -56,7 +89,17 @@ public interface Series<E> {
    * @return rational series
    */
   static Series<Q> toQ(final Series<Z> series) {
-    return n -> Q.valueOf(series.coeff(n));
+    return new Series<>() {
+      @Override
+      public Q coeff(final int n) {
+        return new Q(series.coeff(n));
+      }
+
+      @Override
+      public int bound() {
+        return series.bound();
+      }
+    };
   }
 
   /**
@@ -65,4 +108,16 @@ public interface Series<E> {
    * @return the coefficient
    */
   E coeff(final int n);
+
+  /**
+   * Return an upper bound on the maximum nonzero term of the series.
+   * Most users should ignore this method, it is only relevant for the
+   * construction of series.
+   * The value <code>Integer.MAX_VALUE</code> corresponds to an
+   * infinite series.
+   * It is always safe to use <code>Integer.MAX_VALUE</code> for this
+   * value, but a smaller value can lead to more efficient computation.
+   * @return upper bound on nonzero terms
+   */
+  int bound();
 }

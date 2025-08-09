@@ -16,7 +16,7 @@ class Divide<E> extends MemoryFunction1<E> implements Series<E> {
   private final Series<E> mT;
 
   Divide(final Field<E> elementField, final Series<E> s, final Series<E> t) {
-    if (elementField.zero().equals(t.coeff(0))) {
+    if (elementField.isZero(t.coeff(0))) {
       throw new UnsupportedOperationException("t is not a formal power series with t0!=0");
     }
     mElementField = elementField;
@@ -29,12 +29,17 @@ class Divide<E> extends MemoryFunction1<E> implements Series<E> {
     if (n < 0) {
       return mElementField.zero();
     }
-    final E sum = mElementField.sum(1, n, k -> mElementField.multiply(get(n - k), mT.coeff(k)));
+    final E sum = mElementField.sum(1, Math.min(n, mT.bound()), k -> mElementField.multiply(get(n - k), mT.coeff(k)));
     return mElementField.divide(mElementField.subtract(mS.coeff(n), sum), mT.coeff(0));
   }
 
   @Override
   public E coeff(final int n) {
     return get(n);
+  }
+
+  @Override
+  public int bound() {
+    return Integer.MAX_VALUE;
   }
 }

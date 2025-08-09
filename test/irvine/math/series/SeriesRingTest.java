@@ -106,7 +106,7 @@ public class SeriesRingTest extends TestCase {
   }
 
   public void testSerlaplace() {
-    assertEquals("3+x+8*x^2+6*x^3+120*x^4+1080*x^5+1440*x^6+30240*x^7+201600*x^8+1088640*x^9+18144000*x^10", SeriesRing.SQ.toString(SeriesRing.SQ.serlaplace(mS), 10));
+    assertEquals("3+x+8*x^2+6*x^3+120*x^4+1080*x^5+1440*x^6+30240*x^7+201600*x^8+1088640*x^9+18144000*x^10", SeriesRing.SQ.toString(SeriesRing.SQ.laplace(mS), 10));
   }
 
   public void testEval() {

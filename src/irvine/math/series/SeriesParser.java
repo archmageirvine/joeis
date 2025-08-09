@@ -199,7 +199,7 @@ public class SeriesParser {
     // todo add other functions here, or perhaps reflect on function name?
     switch (fname) {
       case "serlaplace":
-        return SQ.serlaplace(arg);
+        return SQ.laplace(arg);
       case "exp":
         // todo this is really stupid if arg = x (probably slow!!!)
         return SQ.substitute(RationalSeriesFactory.EXP, arg);

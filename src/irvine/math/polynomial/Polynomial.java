@@ -162,6 +162,11 @@ public class Polynomial<E> extends ArrayList<E> implements Series<E> {
     return get(n);
   }
 
+  @Override
+  public int bound() {
+    return degree();
+  }
+
   /**
    * Return the leading coefficient of the polynomial.
    * @return leading coefficient

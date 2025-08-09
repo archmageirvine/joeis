@@ -1,10 +1,10 @@
 package irvine.math.series;
 
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
 import irvine.math.api.Field;
-import irvine.math.function.Functions;
 import irvine.math.group.AbstractRing;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRing;
@@ -44,9 +44,9 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    */
   public SeriesRing(final Field<E> field) {
     mElementField = field;
-    mZero = n -> mElementField.zero();
-    mOne = n -> n == 0 ? mElementField.one() : mElementField.zero();
-    mX = n -> n == 1 ? mElementField.one() : mElementField.zero();
+    mZero = new Zero<>(mElementField.zero());
+    mOne = new Monomial<>(mElementField.zero(), mElementField.one(), 0);
+    mX = new Monomial<>(mElementField.zero(), mElementField.one(), 1);
   }
 
   @Override
@@ -153,7 +153,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @return cached series
    */
   public Series<E> cache(final Series<E> s) {
-    return new CachedSeries<>(s);
+    return new CachedSeries<>(s, mElementField.zero());
   }
 
   /**
@@ -165,8 +165,8 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
   public int firstNonzeroIndex(final Series<E> s) {
     // This will eventually fail if s is 0.
     int k = 0;
-    while (mElementField.zero().equals(s.coeff(k))) {
-      if (++k < 0) {
+    while (mElementField.isZero(s.coeff(k))) {
+      if (++k > s.bound() || k < 0) {
         throw new RuntimeException("Series is 0 or very high order");
       }
     }
@@ -175,22 +175,22 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
 
   @Override
   public Series<E> negate(final Series<E> s) {
-    return n -> mElementField.negate(s.coeff(n));
+    return new Negate<>(mElementField, s);
   }
 
   @Override
   public Series<E> add(final Series<E> s, final Series<E> t) {
-    return cache(n -> mElementField.add(s.coeff(n), t.coeff(n)));
+    return cache(new Add<>(mElementField, s, t));
   }
 
   @Override
   public Series<E> subtract(final Series<E> s, final Series<E> t) {
-    return cache(n -> mElementField.subtract(s.coeff(n), t.coeff(n)));
+    return cache(new Subtract<>(mElementField, s, t));
   }
 
   @Override
   public Series<E> multiply(final Series<E> s, final Series<E> t) {
-    return cache(n -> mElementField.sum(0, n, k -> mElementField.multiply(s.coeff(k), t.coeff(n - k))));
+    return cache(new Multiply<>(mElementField, s, t));
   }
 
   /**
@@ -216,17 +216,17 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
     if (mZero.equals(n)) {
       return zero();
     }
-    return m -> mElementField.multiply(s.coeff(m), n);
+    return new ScalarMultiply<>(mElementField, s, n);
   }
 
   /**
    * Series convolution or Hadamard product of two series.
-   * @param a first series
-   * @param b second series
+   * @param s first series
+   * @param t second series
    * @return Hadamard product
    */
-  public Series<E> hadamardMultiply(final Series<E> a, final Series<E> b) {
-    return n -> mElementField.multiply(a.coeff(n), b.coeff(n));
+  public Series<E> hadamardMultiply(final Series<E> s, final Series<E> t) {
+    return cache(new HadamardMultiply<>(mElementField, s, t));
   }
 
   /**
@@ -242,7 +242,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
     if (mZero.equals(n)) {
       return zero();
     }
-    return m -> mElementField.divide(s.coeff(m), n);
+    return new ScalarDivide<>(mElementField, s, n);
   }
 
   /**
@@ -257,30 +257,27 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
     if (zero() == t) {
       throw new IllegalArgumentException("Division by 0");
     }
-    if (mElementField.zero().equals(t.coeff(0))) {
+    if (mElementField.isZero(t.coeff(0))) {
       // t is not technically a formal power series.
       // We try to "shift" it down u(x) = x^k*t(x) where k is the least non-zero term of t.
       // Then we form s(x)/u(x) for which [x^n] s(x)/t(x) = [x^(n-k)] s(x)/u(x)
       final int shift = firstNonzeroIndex(t);
       // This will actually be valid for -shift <= n as well, a Laurent series,
       // although many functions will be oblivious to those terms.
-      return n -> new Divide<>(mElementField, s, m -> t.coeff(m + shift)).coeff(n + shift);
+      return new Shift<>(mElementField, new Divide<>(mElementField, s, new Shift<>(mElementField, t, -shift)), -shift);
     }
     return new Divide<>(mElementField, s, t);
   }
 
   /**
-   * Return the series multiplied by <code>x^n</code>.
-   * Works for positive, zero, and negative <code>n</code>.
+   * Return the series multiplied by <code>x^shift</code>.
+   * Works for positive, zero, and negative <code>shift</code>.
    * @param s series
-   * @param n power
+   * @param shift power
    * @return shifted series
    */
-  public Series<E> shift(final Series<E> s, final int n) {
-    // Note: avoids requesting negative powers from the underlying series.
-    // In some cases, it would be possible to make that work, but overall it is
-    // better to avoid triggering calculations of negative powers in s.
-    return m -> m - n >= 0 ? s.coeff(m - n) : mElementField.zero();
+  public Series<E> shift(final Series<E> s, final int shift) {
+    return new Shift<>(mElementField, s, shift);
   }
 
   /**
@@ -289,7 +286,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @return derivative
    */
   public Series<E> diff(final Series<E> s) {
-    return n -> mElementField.multiply(s.coeff(n + 1), mElementField.coerce(n + 1));
+    return cache(new Derivative<>(mElementField, s));
   }
 
   /**
@@ -298,7 +295,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @return derivative
    */
   public Series<E> integrate(final Series<E> s) {
-    return n -> n == 0 ? mElementField.zero() : mElementField.divide(s.coeff(n - 1), mElementField.coerce(n));
+    return cache(new Integral<>(mElementField, s));
   }
 
   /**
@@ -309,7 +306,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @return truncated series
    */
   public Series<E> truncate(final Series<E> s, final int n) {
-    return m -> m > n ? mElementField.zero() : s.coeff(m);
+    return new Truncate<>(mElementField, s, n);
   }
 
   /**
@@ -320,7 +317,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @return truncated series
    */
   public Series<E> leftTruncate(final Series<E> s, final int n) {
-    return m -> m < n ? mElementField.zero() : s.coeff(m);
+    return new LeftTruncate<>(mElementField, s, n);
   }
 
   /**
@@ -332,8 +329,8 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
   public Series<E> onePlusXToTheN(final E a, final int n) {
     // Special case here for n==0, where [x^0] becomes 1+a
     return n == 0
-      ? m -> m == 0 ? mElementField.add(a, mElementField.one()) : mElementField.zero()
-      : m -> m == 0 ? mElementField.one() : m == n ? a : mElementField.zero();
+      ? new FiniteSeries<>(mElementField.zero(), Collections.singletonList(mElementField.add(a, mElementField.one())))
+      : new OnePlusXToTheN<>(mElementField.zero(), mElementField.one(), a, n);
   }
 
   /**
@@ -355,8 +352,8 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
     // Special case here for n==0, where [x^0] becomes 1-a
     final E negA = mElementField.negate(a);
     return n == 0
-      ? m -> m == 0 ? mElementField.subtract(mElementField.one(), a) : mElementField.zero()
-      : m -> m == 0 ? mElementField.one() : m == n ? negA : mElementField.zero();
+      ? new FiniteSeries<>(mElementField.zero(), Collections.singletonList(mElementField.add(negA, mElementField.one())))
+      : new OnePlusXToTheN<>(mElementField.zero(), mElementField.one(), negA, n);
   }
 
   /**
@@ -375,7 +372,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @return monomial
    */
   public Series<E> monomial(final E a, final int n) {
-    return m -> m == n ? a : mElementField.zero();
+    return mElementField.isZero(a) ? zero() : new Monomial<>(mElementField.zero(), a, n);
   }
 
   /**
@@ -395,7 +392,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
       return s;
     }
     // If s == 0 (which we cannot reliably test), then the following will fail
-    if (!mElementField.zero().equals(s.coeff(0))) {
+    if (!mElementField.isZero(s.coeff(0))) {
       // This handles formal power series
       return new Power<>(mElementField, s, n);
     }
@@ -440,7 +437,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    */
   public Series<E> substitute(final Series<E> s, final int e) {
     // [x^n] s(x^k) = [x^(n/k)] s(x) when n % k == 0
-    return n -> n % e == 0 ? s.coeff(n / e) : mElementField.zero();
+    return new SubstitutePower<>(mElementField.zero(), s, e);
   }
 
   /**
@@ -451,19 +448,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @return substituted series
    */
   public Series<E> substitute(final Polynomial<E> s, final Series<E> t) {
-    // [x^n] s(t(x)) = Sum_{k=0..n} s(k) * [x^n] t(x)^k
-    return n -> {
-      E sum = mElementField.zero();
-      Series<E> tk = one();
-      for (int k = 0; k <= s.degree(); ++k) {
-        final E sk = s.coeff(k);
-        if (!mElementField.zero().equals(sk)) {
-          sum = mElementField.add(sum, mElementField.multiply(sk, tk.coeff(n)));
-        }
-        tk = multiply(tk, t);
-      }
-      return sum;
-    };
+    return new SubstitutePolynomial<>(this, s, t);
   }
 
   /**
@@ -477,35 +462,17 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
     if (!t.coeff(0).equals(mElementField.zero())) {
       throw new UnsupportedOperationException("Cannot have constant term in t");
     }
-
-    // todo: use Bell polynomials to accelerate?
-    // todo: if we have a way of telling finite we can combine this previous method
-
-    // [x^n] s(t(x)) = Sum_{k=0..n} s(k) * [x^n] t(x)^k
-    return n -> {
-      if (n == 0) {
-        return s.coeff(0);
-      }
-      E sum = mElementField.zero();
-      Series<E> tk = t;
-      for (int k = 1; k <= n; ++k) {
-        final E sk = s.coeff(k);
-        if (!mElementField.zero().equals(sk)) {
-          sum = mElementField.add(sum, mElementField.multiply(sk, tk.coeff(n)));
-        }
-        tk = multiply(tk, t);
-      }
-      return sum;
-    };
+    return new SubstituteSeries<>(this, s, t);
   }
 
   /**
    * Replaces the power series sum of <code>a_n*x^n/n!</code> by sum of <code>a_n*x^n</code>.
+   * Equivalent to Pari's <code>serlaplace</code>.
    * @param s series
    * @return Laplace series
    */
-  public Series<E> serlaplace(final Series<E> s) {
-    return n -> mElementField.multiply(s.coeff(n), mElementField.coerce(Functions.FACTORIAL.z(n)));
+  public Series<E> laplace(final Series<E> s) {
+    return new Laplace<>(mElementField, s);
   }
 
   /**
@@ -513,6 +480,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @return eta series
    */
   public Series<E> eta() {
+    // todo move this to RationalSeriesFactory?
     return new Series<>() {
       private Series<E> mEta = oneMinusXToTheN(1);
       private int mK = 1;
@@ -523,6 +491,11 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
           mEta = multiply(mEta, oneMinusXToTheN(++mK));
         }
         return mEta.coeff(n);
+      }
+
+      @Override
+      public int bound() {
+        return Integer.MAX_VALUE;
       }
     };
   }
@@ -542,7 +515,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
     final StringBuilder sb = new StringBuilder();
     for (int k = 0; k <= n; ++k) {
       final E c = s.coeff(k);
-      if (!mElementField.zero().equals(c)) {
+      if (!mElementField.isZero(c)) {
         final String sc = c.toString();
         boolean multNeeded = false;
         if (sc.startsWith("-")) {
@@ -616,5 +589,30 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
       sum = mElementField.add(sum, mElementField.multiply(s.coeff(k), xk));
     }
     return sum;
+  }
+
+  /**
+   * Test if a series is 0.
+   * Note that in general this operation is impossible.
+   * @param s series
+   * @return true iff the series if zero.
+   */
+  public boolean isZero(final Series<E> s) {
+    if (!mElementField.isZero(s.coeff(0))) {
+      return false;
+    }
+    if (s == zero()) {
+      return true;
+    }
+    int k = 0;
+    while (k >= 0) {
+      if (!mElementField.isZero(s.coeff(++k))) {
+        return false;
+      }
+      if (k >= s.bound()) {
+        return true;
+      }
+    }
+    throw new RuntimeException("Could not determine is series is 0");
   }
 }

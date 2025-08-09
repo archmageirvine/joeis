@@ -11,11 +11,22 @@ import irvine.math.z.Z;
 public final class RationalSeriesFactory {
 
   // todo make as an enum to reflect in SeriesParser?
+  // todo move Dedekind Eta here
+  // todo make lambda for infinite?
 
   private RationalSeriesFactory() {
   }
 
   /** exp(x) */
-  public static final Series<Q> EXP = n -> new Q(Z.ONE, Functions.FACTORIAL.z(n));
+  public static final Series<Q> EXP = new Series<Q>() {
+    @Override
+    public Q coeff(final int n) {
+      return new Q(Z.ONE, Functions.FACTORIAL.z(n));
+    }
 
+    @Override
+    public int bound() {
+      return Integer.MAX_VALUE;
+    }
+  };
 }

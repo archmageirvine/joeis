@@ -23,6 +23,11 @@ class FiniteSeries<E> implements Series<E> {
 
   @Override
   public E coeff(final int n) {
-    return n < 0 || n >= mCoeffs.size() ? mZero : mCoeffs.get(n);
+    return n < 0 || n >= bound() ? mZero : mCoeffs.get(n);
+  }
+
+  @Override
+  public int bound() {
+    return mCoeffs.size();
   }
 }

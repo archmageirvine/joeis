@@ -14,7 +14,7 @@ public class GfSequence extends AbstractSequence {
 
   protected int mN;
   private final Series<Q> mSeries;
-  
+
   /**
    * Construct a sequence from an ordinary generating function.
    * @param offset first valid term has this index

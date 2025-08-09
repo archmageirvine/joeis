@@ -133,4 +133,8 @@ public class SeriesRingTest extends TestCase {
     assertEquals("(1/3)-(1/9)*x-(11/27)*x^2+(14/81)*x^3-(8/243)*x^4-(655/729)*x^5+(2353/2187)*x^6+(7820/6561)*x^7-(40502/19683)*x^8+(52304/59049)*x^9+(507385/177147)*x^10", SeriesRing.SQ.toString(SeriesRing.SQ.pow(mS, -1), 10));
     assertEquals("(14/81)-(8/243)*x-(655/729)*x^2+(2353/2187)*x^3+(7820/6561)*x^4-(40502/19683)*x^5+(52304/59049)*x^6+(507385/177147)*x^7-(3498784/531441)*x^8-(1799618/1594323)*x^9+(56603564/4782969)*x^10", SeriesRing.SQ.toString(SeriesRing.SQ.pow(SeriesRing.SQ.shift(mS, 3), -1), 10)); // Laurent-style terms also exist
   }
+
+  public void testReversion() {
+    assertEquals("x-(1/3)*x^2-(10/9)*x^3+(46/27)*x^4+(113/81)*x^5-(782/81)*x^6+(2810/243)*x^7+(25984/729)*x^8-(941647/6561)*x^9+(563251/19683)*x^10", SeriesRing.SQ.toString(SeriesRing.SQ.reversion(SeriesRing.SQ.shift(SeriesRing.SQ.divide(mS, Q.THREE), 1)), 10));
+  }
 }

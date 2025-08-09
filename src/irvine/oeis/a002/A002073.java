@@ -1,11 +1,9 @@
 package irvine.oeis.a002;
 
-import java.util.ArrayList;
-
-import irvine.math.group.PolynomialRingField;
-import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
-import irvine.math.q.Rationals;
+import irvine.math.series.AbstractInfiniteSeries;
+import irvine.math.series.Series;
+import irvine.math.series.SeriesRing;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -15,22 +13,21 @@ import irvine.oeis.Sequence0;
  */
 public class A002073 extends Sequence0 {
 
-  private static final PolynomialRingField<Q> FIELD = new PolynomialRingField<>(Rationals.SINGLETON);
-
-  private final ArrayList<Q> mC = new ArrayList<>();
+  private final Series<Q> mGf = SeriesRing.SQ.reversion(SeriesRing.SQ.shift(SeriesRing.SQ.powE(new AbstractInfiniteSeries<>() {
+    @Override
+    public Q coeff(final int n) {
+      return (n & 1) == 1 ? Q.ZERO : new Q(3, n + 3);
+    }
+  }, Q.ONE_THIRD), 1));
   private int mN = 0;
 
-  protected Z answer(final Q v) {
+  protected Z select(final Q v) {
     return v.num();
   }
 
   @Override
   public Z next() {
     ++mN;
-    mC.add(new Q(3, 2L * mN + 1));
-    mC.add(Q.ZERO);
-    final Polynomial<Q> f = FIELD.pow(FIELD.create(mC), Q.ONE_THIRD, 2 * mN);
-    final Polynomial<Q> gf = FIELD.reversion(f.shift(1), 2 * mN);
-    return answer(gf.coeff(2 * mN - 1).multiply(2L * mN - 1));
+    return select(mGf.coeff(2 * mN - 1).multiply(2L * mN - 1));
   }
 }

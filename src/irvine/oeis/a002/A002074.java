@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 public class A002074 extends A002073 {
 
   @Override
-  protected Z answer(final Q v) {
+  protected Z select(final Q v) {
     return v.den();
   }
 }

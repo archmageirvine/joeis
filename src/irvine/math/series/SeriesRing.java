@@ -24,10 +24,6 @@ import irvine.math.z.Z;
  */
 public class SeriesRing<E> extends AbstractRing<Series<E>> {
 
-  // todo finite cases
-  //  - memory and (perhaps) efficiency could be improved by directly supporting finite series
-  //  - potentially can be done by detecting FiniteSeries, Polynomial, or similar for those cases since Polynomial implements Series
-
   /** Formal power series ring over integers. */
   public static final SeriesRing<Z> SZ = new SeriesRing<>(IntegerField.SINGLETON);
   /** Formal power series ring over rationals. */
@@ -419,6 +415,20 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
   }
 
   /**
+   * Raise a series to a power.
+   * Named to distinguish from <code>pow</code> when <code>E=Z</code>.
+   * @param s the series
+   * @param n power
+   * @return <code>s^n</code>
+   */
+  public Series<E> powE(final Series<E> s, final E n) {
+    if (mElementField.isOne(n)) {
+      return s;
+    }
+    return new PowerE<>(mElementField, s, n);
+  }
+
+  /**
    * Return the inverse of a series.
    * Equivalent to <code>pow(s, -1)</code>.
    * @param s series
@@ -473,6 +483,15 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    */
   public Series<E> laplace(final Series<E> s) {
     return new Laplace<>(mElementField, s);
+  }
+
+  /**
+   * Return the series reversion of <code>s</code>.
+   * @param s series
+   * @return reversion
+   */
+  public Series<E> reversion(final Series<E> s) {
+    return new Reversion<>(mElementField, s);
   }
 
   private boolean isDigitsOnly(final String s) {

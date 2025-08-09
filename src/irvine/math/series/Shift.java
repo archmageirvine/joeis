@@ -13,11 +13,13 @@ class Shift<E> implements Series<E> {
   private final Field<E> mElementField;
   private final Series<E> mS;
   private final int mShift;
+  private final int mBound;
 
   Shift(final Field<E> elementField, final Series<E> s, final int shift) {
     mElementField = elementField;
     mS = s;
     mShift = shift;
+    mBound = s.bound() == Integer.MAX_VALUE ? Integer.MAX_VALUE : s.bound() + shift;
   }
 
   @Override
@@ -30,6 +32,6 @@ class Shift<E> implements Series<E> {
 
   @Override
   public int bound() {
-    return mS.bound() + mShift;
+    return mBound;
   }
 }

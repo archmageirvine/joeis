@@ -6,6 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import irvine.math.q.Q;
+import irvine.math.q.QUtils;
 
 /**
  * Parse expressions for generating functions.
@@ -16,7 +17,7 @@ public class SeriesParser {
   private static final SeriesRing<Q> SQ = SeriesRing.SQ;
 
   private enum TokenType {
-    NUMBER, VARIABLE, OP, LPAREN, RPAREN, END
+    NUMBER, VARIABLE, OP, POLYNOMIAL, LPAREN, RPAREN, END
   }
 
   private static final class Token {
@@ -69,6 +70,52 @@ public class SeriesParser {
   private List<Token> mTokens;
   private int mIndex;
 
+  private static List<Token> rewriteRationals(final List<Token> tokens) {
+    // This is a pragmatic rewriting of some common forms for later efficiency
+
+    // Collapses (a/b), where a and b are numbers into single number tokens
+    for (int k = 0; k < tokens.size() - 4; ++k) {
+      if (tokens.get(k).mType == TokenType.LPAREN
+        && tokens.get(k + 4).mType == TokenType.RPAREN
+        && tokens.get(k + 1).mType == TokenType.NUMBER
+        && tokens.get(k + 3).mType == TokenType.NUMBER
+        && tokens.get(k + 2).mType == TokenType.OP && tokens.get(k + 2).mValue.equals("/")
+      ) {
+        final String v = tokens.get(k + 1).mValue + "/" + tokens.get(k + 3).mValue;
+        tokens.set(k, new Token(TokenType.NUMBER, v));
+        tokens.subList(k + 1, k + 5).clear();
+      }
+    }
+    // Collapses a/b, where a and b are numbers into single number tokens
+    for (int k = 0; k < tokens.size() - 4; ++k) {
+      if (tokens.get(k).mType == TokenType.NUMBER
+        && tokens.get(k + 2).mType == TokenType.NUMBER
+        && tokens.get(k + 1).mType == TokenType.OP && tokens.get(k + 1).mValue.equals("/")
+      ) {
+        final String v = tokens.get(k).mValue + "/" + tokens.get(k + 2).mValue;
+        tokens.set(k, new Token(TokenType.NUMBER, v));
+        tokens.subList(k + 1, k + 3).clear();
+      }
+    }
+    return tokens;
+  }
+
+  private static List<Token> rewriteMonomials(final List<Token> tokens) {
+    // todo bogus needs to hand x^k
+    // Collapses number * x to a monomial
+    for (int k = 0; k < tokens.size() - 4; ++k) {
+      if (tokens.get(k).mType == TokenType.NUMBER
+        && tokens.get(k + 2).mType == TokenType.VARIABLE
+        && tokens.get(k + 1).mType == TokenType.OP && tokens.get(k + 1).mValue.equals("*")
+      ) {
+        final String v = tokens.get(k).mValue + "*" + tokens.get(k + 2).mValue;
+        tokens.set(k, new Token(TokenType.POLYNOMIAL, v));
+        tokens.subList(k + 1, k + 3).clear();
+      }
+    }
+    return tokens;
+  }
+
   /**
    * Parse an expression into a series object.
    * @param expr expression
@@ -79,33 +126,14 @@ public class SeriesParser {
     // and wrap them in "poly()" making them easier to treat later in parsing.
     // It does not matter if this does not capture every case.
     //final String rewrite = rewritePolynomials(expr);
-    mTokens = new Tokenizer(expr).tokenize();
+    final List<Token> tokens = new Tokenizer(expr).tokenize();
+    mTokens = rewriteRationals(tokens);
+    //mTokens = tokens; //rewriteMonomials(rewriteRationals(tokens));
     //System.out.println(mTokens);
     mIndex = 0;
     return parseExpression();
   }
 
-  // todo this doesn't work properly in presence of "exp" etc.
-  private static String rewritePolynomials(final String input) {
-    // Pattern for one polynomial term
-    final String term = "[+-]?\\s*(\\(\\d+/\\d+\\)|\\d+/\\d+|\\d+)?\\s*\\*?\\s*x(\\^\\d+)?"
-      + "|[+-]?\\s*x(\\^\\d+)?"
-      + "|[+-]?\\s*(\\(\\d+/\\d+\\)|\\d+/\\d+|\\d+)";
-
-    // Pattern for sum of terms
-    final String fullPoly = "(" + term + ")(\\s*[+-]\\s*" + term + ")*";
-
-    final Pattern polyPattern = Pattern.compile(fullPoly);
-    final Matcher matcher = polyPattern.matcher(input);
-    final StringBuilder sb = new StringBuilder();
-
-    while (matcher.find()) {
-      final String poly = matcher.group();
-      matcher.appendReplacement(sb, "poly(" + poly + ")");
-    }
-    matcher.appendTail(sb);
-    return sb.toString();
-  }
 
   private Series<Q> parsePolyArgument() {
     final Token t = consume();
@@ -185,10 +213,6 @@ public class SeriesParser {
     final Token nameToken = consume();
     final String fname = nameToken.mValue;
 
-    if (fname.equals("poly")) {
-      return parsePolyArgument();
-    }
-
     if (!match(TokenType.LPAREN, "(")) {
       throw new RuntimeException("Expected '(' after function name: " + fname);
     }
@@ -201,7 +225,6 @@ public class SeriesParser {
       case "serlaplace":
         return SQ.laplace(arg);
       case "exp":
-        // todo this is really stupid if arg = x (probably slow!!!)
         return SQ.substitute(RationalSeriesEnum.EXP.s(), arg);
 //      case "log": return SQ.log(arg);
 //      case "sqrt": return SQ.sqrt(arg);
@@ -222,6 +245,10 @@ public class SeriesParser {
     if (t.mType == TokenType.VARIABLE) {
       consume();
       return SQ.x();
+    }
+    if (t.mType == TokenType.POLYNOMIAL) {
+      consume();
+      return Series.create(QUtils.parsePolynomial(t.mValue));
     }
     if (t.mType == TokenType.LPAREN) {
       consume(); // consume (

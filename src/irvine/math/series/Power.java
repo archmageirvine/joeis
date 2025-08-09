@@ -29,7 +29,7 @@ class Power<E> extends MemoryFunction1<E> implements Series<E> {
     if (s.bound() == Integer.MAX_VALUE || n < 0) {
       mBound = Integer.MAX_VALUE;
     } else {
-      final Z b = Z.valueOf(s.bound()).pow(n);
+      final Z b = Z.valueOf(s.bound()).multiply(n);
       mBound = b.bitLength() < Integer.SIZE ? b.intValue() : Integer.MAX_VALUE;
     }
   }

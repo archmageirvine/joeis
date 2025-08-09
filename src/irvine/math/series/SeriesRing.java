@@ -308,7 +308,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
   /**
    * Left truncate a series at <code>x^n</code>
    * All coefficients &lt; <code>n</code> will return 0.
-   * Equivalent to Pari <code>serchop</code>
+   * Equivalent to PARI's <code>serchop</code>
    * @param s series to truncate
    * @return truncated series
    */
@@ -462,7 +462,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
   }
 
   /**
-   * Substitute a series for the unknown in another series.
+   * Substitute a series for the unknown in another series, <code>s(t(x))</code>.
    * The second argument must not have a constant term.
    * @param s series to substitute into
    * @param t series to substitute
@@ -472,12 +472,15 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
     if (!t.coeff(0).equals(mElementField.zero())) {
       throw new UnsupportedOperationException("Cannot have constant term in t");
     }
+    if (t == x()) {
+      return s;
+    }
     return new SubstituteSeries<>(this, s, t);
   }
 
   /**
    * Replaces the power series sum of <code>a_n*x^n/n!</code> by sum of <code>a_n*x^n</code>.
-   * Equivalent to Pari's <code>serlaplace</code>.
+   * Equivalent to PARI's <code>serlaplace</code>.
    * @param s series
    * @return Laplace series
    */

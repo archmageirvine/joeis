@@ -475,31 +475,6 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
     return new Laplace<>(mElementField, s);
   }
 
-  /**
-   * Compute a Dedekind eta series.
-   * @return eta series
-   */
-  public Series<E> eta() {
-    // todo move this to RationalSeriesFactory?
-    return new Series<>() {
-      private Series<E> mEta = oneMinusXToTheN(1);
-      private int mK = 1;
-
-      @Override
-      public E coeff(final int n) {
-        while (n > mK) {
-          mEta = multiply(mEta, oneMinusXToTheN(++mK));
-        }
-        return mEta.coeff(n);
-      }
-
-      @Override
-      public int bound() {
-        return Integer.MAX_VALUE;
-      }
-    };
-  }
-
   private boolean isDigitsOnly(final String s) {
     // Also allows "." for CR
     return s.matches("[0-9.]*");

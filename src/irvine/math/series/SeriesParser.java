@@ -202,7 +202,7 @@ public class SeriesParser {
         return SQ.laplace(arg);
       case "exp":
         // todo this is really stupid if arg = x (probably slow!!!)
-        return SQ.substitute(RationalSeriesFactory.EXP, arg);
+        return SQ.substitute(RationalSeriesEnum.EXP.s(), arg);
 //      case "log": return SQ.log(arg);
 //      case "sqrt": return SQ.sqrt(arg);
       default:

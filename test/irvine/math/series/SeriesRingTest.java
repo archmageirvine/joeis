@@ -113,10 +113,6 @@ public class SeriesRingTest extends TestCase {
     assertEquals(Q.valueOf(404340), SeriesRing.SQ.eval(mS, Q.THREE, 10));
   }
 
-  public void testEta() {
-    assertEquals("1-x-x^2+x^5+x^7", SeriesRing.SQ.toString(SeriesRing.SQ.eta(), 10));
-  }
-
   public void testCoefficientField() {
     assertEquals(IntegerField.SINGLETON, SeriesRing.SZ.coefficientField());
   }

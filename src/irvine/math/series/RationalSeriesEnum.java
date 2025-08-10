@@ -44,18 +44,22 @@ public enum RationalSeriesEnum {
       return (n & 1) == 0 ? Q.ZERO : new Q(Z.NEG_ONE.pow(n >>> 1), Functions.FACTORIAL.z(n));
     }
   }),
-  ;
-  /*
-      final RingFactorial<E> f = RingFactorial.instance(mElementField);
-    Polynomial<E> s = zero();
-    if (!zero().equals(p)) {
-      for (int k = 1; k <= n; k += 2) {
-        final Polynomial<E> u = divide(pow(p, k, n), f.factorial(k));
-        s = signedAdd((k & 2) == 0, s, u);
-      }
+  /** cos(x). */
+  COS(new AbstractInfiniteSeries<>() {
+    @Override
+    public Q coeff(final int n) {
+      return (n & 1) == 1 ? Q.ZERO : new Q(Z.NEG_ONE.pow(n >>> 1), Functions.FACTORIAL.z(n));
     }
-
-   */
+  }),
+  /** tan(x). */
+  TAN(SeriesRing.SQ.divide(SIN.s(), COS.s())),
+  /** sec(x). */
+  SEC(SeriesRing.SQ.divide(SeriesRing.SQ.one(), COS.s())),
+  /** x * csc(x). */
+  XCSC(SeriesRing.SQ.divide(SeriesRing.SQ.x(), SIN.s())),
+  /** x * cot(x). */
+  XCOT(SeriesRing.SQ.divide(SeriesRing.SQ.x(), TAN.s())),
+  ;
 
   private final Series<Q> mSeries;
 

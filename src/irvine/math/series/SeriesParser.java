@@ -71,6 +71,14 @@ public class SeriesParser {
   private List<Token> mTokens;
   private int mIndex;
 
+  private static boolean isAdditiveOp(final Token tok) {
+    return tok.mType == TokenType.OP && (tok.mValue.equals("+") || tok.mValue.equals("-"));
+  }
+
+  private static boolean isMultiply(final Token tok) {
+    return tok.mType == TokenType.OP && tok.mValue.equals("*");
+  }
+
   private static List<Token> rewriteRationals(final List<Token> tokens) {
     // This is a pragmatic rewriting of some common forms for later efficiency
 
@@ -119,7 +127,7 @@ public class SeriesParser {
       if (tokens.get(k).mType == TokenType.NUMBER
         && tokens.get(k + 2).mType == TokenType.VARIABLE
         && tokens.get(k + 4).mType == TokenType.NUMBER
-        && tokens.get(k + 1).mType == TokenType.OP && tokens.get(k + 1).mValue.equals("*")
+        && isMultiply(tokens.get(k + 1))
         && tokens.get(k + 3).mType == TokenType.OP && tokens.get(k + 3).mValue.equals("^")
       ) {
         final String v = tokens.get(k).mValue + "*x^" + tokens.get(k + 4).mValue;
@@ -143,7 +151,7 @@ public class SeriesParser {
     for (int k = 0; k < tokens.size() - 3; ++k) {
       if (tokens.get(k).mType == TokenType.NUMBER
         && tokens.get(k + 2).mType == TokenType.VARIABLE
-        && tokens.get(k + 1).mType == TokenType.OP && tokens.get(k + 1).mValue.equals("*")
+        && isMultiply(tokens.get(k + 1))
       ) {
         final String v = tokens.get(k).mValue + "*x";
         tokens.set(k, new Token(TokenType.POLYNOMIAL, v));
@@ -174,10 +182,6 @@ public class SeriesParser {
     return tokens;
   }
 
-  private static boolean isAdditiveOp(final Token tok) {
-    return tok.mType == TokenType.OP && (tok.mValue.equals("+") || tok.mValue.equals("-"));
-  }
-
   private static List<Token> rewritePolynomials(final List<Token> tokens) {
     // Collapses consecutive additive polynomial terms to a single polynomial
     for (int k = 0; k < tokens.size(); ++k) {
@@ -203,11 +207,29 @@ public class SeriesParser {
     return tokens;
   }
 
+  private static List<Token> rewriteSpecials(final List<Token> tokens) {
+    // Handle some other special constructions:
+    //  x * cot -> xcot
+    //  x * csc -> xcsc
+    for (int k = 0; k < tokens.size(); ++k) {
+      if (tokens.get(k).mType == TokenType.VARIABLE && isMultiply(tokens.get(k + 1)) && tokens.get(k + 2).mType == TokenType.OP) {
+        if (tokens.get(k + 2).mValue.equals("cot")) {
+          tokens.set(k, new Token(TokenType.OP, "xcot"));
+          tokens.subList(k + 1, k + 3).clear();
+        } else if (tokens.get(k + 2).mValue.equals("csc")) {
+          tokens.set(k, new Token(TokenType.OP, "xcsc"));
+          tokens.subList(k + 1, k + 3).clear();
+        }
+      }
+    }
+    return tokens;
+  }
+
   List<Token> tokenize(final String expr) {
     // Before attempting general parsing, we make an effort to identify polynomials
     // in typical forms. This identification reduces the burden on the Series
     // handling mechanism later on saving both memory and time.
-    final List<Token> tokens = rewritePolynomials(rewriteMonomials(rewriteRationals(new Tokenizer(expr).tokenize())));
+    final List<Token> tokens = rewritePolynomials(rewriteMonomials(rewriteSpecials(rewriteRationals(new Tokenizer(expr).tokenize()))));
     //System.out.println(tokens);
     return tokens;
   }

@@ -11,6 +11,15 @@ import irvine.math.q.QUtils;
 
 /**
  * Parse expressions for generating functions.
+ * This parser is designed to handle commonly occurring ordinary and exponential
+ * generating functions occurring in the OEIS.
+ * The variable is assumed to be "<code>x</code>".
+ * The expression is first tokenized, then a selection of transformations are
+ * applied to the token stream to recognize common formations and convert them
+ * to a form we can efficiently compute series for.  In particular, an effort
+ * is made to identify the polynomials components of the input. Finally, the
+ * resulting token stream is parsed into a <code>Series</code> object which can
+ * be directly queried for coefficients.
  * @author Sean A. Irvine
  */
 public class SeriesParser {
@@ -273,14 +282,34 @@ public class SeriesParser {
   }
 
   private Series<Q> parseTerm() {
+    // We've constructed everything as a series, here we support efficiency by
+    // detecting scalar multiply and divides.
+
+    // todo other potential efficiency gains here would be detecting shifts (*x^n) etc.
+
     Series<Q> result = parseFactor();
     while (match(TokenType.OP, "*") || match(TokenType.OP, "/")) {
       final String op = consume().mValue;
       final Series<Q> right = parseFactor();
       if (op.equals("*")) {
-        result = SQ.multiply(result, right);
+        if (result.bound() == 0) {
+          // Scalar multiply
+          result = SQ.multiply(right, result.coeff(0));
+        } else if (right.bound() == 0) {
+          // Scalar multiply
+          result = SQ.multiply(result, right.coeff(0));
+        } else {
+          // Series multiply
+          result = SQ.multiply(result, right);
+        }
       } else {
-        result = SQ.divide(result, right);
+        if (right.bound() == 0) {
+          // Scalar divide
+          result = SQ.divide(result, right.coeff(0));
+        } else {
+          // Series divide
+          result = SQ.divide(result, right);
+        }
       }
     }
     return result;

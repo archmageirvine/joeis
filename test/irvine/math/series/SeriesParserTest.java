@@ -31,6 +31,8 @@ public class SeriesParserTest extends TestCase {
     check("1+3*x+3*x^2+x^3", "(1+x)^3");
     check("1-x+x^2-x^3+x^4-x^5+x^6-x^7+x^8-x^9+x^10", "1/(1+x)");
     check("1+x+x^2+x^3+x^4+x^5+x^6+x^7+x^8+x^9+x^10", "1/(1-x)");
+    check("3+3*x+9*x^4", "3*(1+x+3*x^4)");
+    check("3+3*x+9*x^4", "(1+x+3*x^4)*3");
   }
 
   public void testRationalPowers() {
@@ -50,6 +52,7 @@ public class SeriesParserTest extends TestCase {
     check("1-(1/3)*x^2-(1/45)*x^4-(2/945)*x^6-(1/4725)*x^8-(2/93555)*x^10", "x * cot(x)");
     check("1+(1/6)*x^2+(7/360)*x^4+(31/15120)*x^6+(127/604800)*x^8+(73/3421440)*x^10", "xcsc(x)");
     check("1+(1/6)*x^2+(7/360)*x^4+(31/15120)*x^6+(127/604800)*x^8+(73/3421440)*x^10", "x * csc(x)");
+    check("x+(1/6)*x^3+(3/40)*x^5+(5/112)*x^7+(35/1152)*x^9", "asin(x)");
   }
 
   public void testArgumentsToFunctions() {

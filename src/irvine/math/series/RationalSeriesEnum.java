@@ -2,6 +2,7 @@ package irvine.math.series;
 
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
+import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
 /**
@@ -59,6 +60,13 @@ public enum RationalSeriesEnum {
   XCSC(SeriesRing.SQ.divide(SeriesRing.SQ.x(), SIN.s())),
   /** x * cot(x). */
   XCOT(SeriesRing.SQ.divide(SeriesRing.SQ.x(), TAN.s())),
+  /** asin(x). */
+  ASIN(new AbstractInfiniteSeries<>() {
+    @Override
+    public Q coeff(final int n) {
+      return (n & 1) == 0 ? Q.ZERO : new Q(Binomial.binomial(n - 1, n / 2), Z.valueOf(n).shiftLeft(n - 1));
+    }
+  }),
   ;
 
   private final Series<Q> mSeries;

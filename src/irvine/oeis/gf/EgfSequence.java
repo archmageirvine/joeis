@@ -6,12 +6,13 @@ import irvine.math.series.Series;
 import irvine.math.series.SeriesParser;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A sequence defined by an ordinary generating function.
  * @author Sean A. Irvine
  */
-public class EgfSequence extends AbstractSequence {
+public class EgfSequence extends AbstractSequence implements DirectSequence {
 
   protected int mN;
   private final Series<Q> mSeries;
@@ -46,6 +47,16 @@ public class EgfSequence extends AbstractSequence {
 
   @Override
   public Z next() {
-    return mSeries.coeff(++mN).multiply(Functions.FACTORIAL.z(mN)).toZ();
+    return a(++mN);
+  }
+
+  @Override
+  public Z a(final Z n) {
+    return a(n.intValueExact());
+  }
+
+  @Override
+  public Z a(final int n) {
+    return mSeries.coeff(n).multiply(Functions.FACTORIAL.z(n)).toZ();
   }
 }

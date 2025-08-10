@@ -217,9 +217,11 @@ public class SeriesParser {
   }
 
   private static List<Token> rewriteSpecials(final List<Token> tokens) {
-    // Handle some other special constructions:
+    // Handle some special constructions:
     //  x * cot -> xcot
     //  x * csc -> xcsc
+    //  x * csch -> xcsch
+    //  x * coth -> xcoth
     for (int k = 0; k < tokens.size(); ++k) {
       if (tokens.get(k).mType == TokenType.VARIABLE && isMultiply(tokens.get(k + 1)) && tokens.get(k + 2).mType == TokenType.OP) {
         if (tokens.get(k + 2).mValue.equals("cot")) {
@@ -227,6 +229,12 @@ public class SeriesParser {
           tokens.subList(k + 1, k + 3).clear();
         } else if (tokens.get(k + 2).mValue.equals("csc")) {
           tokens.set(k, new Token(TokenType.OP, "xcsc"));
+          tokens.subList(k + 1, k + 3).clear();
+        } else if (tokens.get(k + 2).mValue.equals("csch")) {
+          tokens.set(k, new Token(TokenType.OP, "xcsch"));
+          tokens.subList(k + 1, k + 3).clear();
+        } else if (tokens.get(k + 2).mValue.equals("coth")) {
+          tokens.set(k, new Token(TokenType.OP, "xcoth"));
           tokens.subList(k + 1, k + 3).clear();
         }
       }
@@ -328,6 +336,10 @@ public class SeriesParser {
     return base;
   }
 
+  private Series<Q> log(final Series<Q> arg) {
+    return SQ.substitute(RationalSeriesEnum.LOG1P.s(), SQ.subtract(arg, SQ.one()));
+  }
+
   private Series<Q> parseFunction() {
     // Read function name (e.g., "exp", "poly")
     final Token nameToken = consume();
@@ -346,9 +358,14 @@ public class SeriesParser {
       case "serlaplace":
         return SQ.laplace(arg);
       case "sqrt":
-        return SQ.powE(arg, Q.HALF);
+        return SQ.sqrt(arg);
       case "log":
-        return SQ.substitute(RationalSeriesEnum.LOG1P.s(), SQ.subtract(arg, SQ.one()));
+        return log(arg);
+      case "acosh":
+        // This series if difficult and does not in general have a rational expression
+        // We use acosh(x) = log(x+sqrt(x^2-1)), with the understanding the "x" is
+        // itself some series that makes this a rational power series
+        return log(SQ.add(arg, SQ.sqrt(SQ.subtract(SQ.square(arg), SQ.one()))));
       default:
         // Look up the function in the available functions
         final RationalSeriesEnum f = RationalSeriesEnum.valueOf(fname.toUpperCase(Locale.ROOT));

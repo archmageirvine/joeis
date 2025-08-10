@@ -67,6 +67,58 @@ public enum RationalSeriesEnum {
       return (n & 1) == 0 ? Q.ZERO : new Q(Binomial.binomial(n - 1, n / 2), Z.valueOf(n).shiftLeft(n - 1));
     }
   }),
+  /** acos(x) - Pi/2. */
+  ACOS1(SeriesRing.SQ.negate(ASIN.s())),
+  /** atan(x). */
+  ATAN(new AbstractInfiniteSeries<>() {
+    @Override
+    public Q coeff(final int n) {
+      return (n & 1) == 0 ? Q.ZERO : new Q(((n / 2) & 1) == 0 ? 1 : -1, n);
+    }
+  }),
+  /** sinh(x). */
+  SINH(new AbstractInfiniteSeries<>() {
+    @Override
+    public Q coeff(final int n) {
+      return (n & 1) == 0 ? Q.ZERO : new Q(1, Functions.FACTORIAL.z(n));
+    }
+  }),
+  /** cosh(x). */
+  COSH(new AbstractInfiniteSeries<>() {
+    @Override
+    public Q coeff(final int n) {
+      return (n & 1) == 1 ? Q.ZERO : new Q(1, Functions.FACTORIAL.z(n));
+    }
+  }),
+  /** tanh(x). */
+  TANH(SeriesRing.SQ.divide(SINH.s(), COSH.s())),
+  /** sech(x). */
+  SECH(SeriesRing.SQ.divide(SeriesRing.SQ.one(), COSH.s())),
+  /** x * csch(x). */
+  XCSCH(SeriesRing.SQ.divide(SeriesRing.SQ.x(), SINH.s())),
+  /** x * coth(x). */
+  XCOTH(SeriesRing.SQ.divide(SeriesRing.SQ.x(), TANH.s())),
+  /** asinh(x). */
+  ASINH(new AbstractInfiniteSeries<>() {
+    @Override
+    public Q coeff(final int n) {
+      return (n & 1) == 0 ? Q.ZERO : new Q(Binomial.binomial(n - 1, n / 2).multiply(Z.NEG_ONE.pow(n / 2)), Z.valueOf(n).shiftLeft(n - 1));
+    }
+  }),
+  /** atanh(x). */
+  ATANH(new AbstractInfiniteSeries<>() {
+    @Override
+    public Q coeff(final int n) {
+      return (n & 1) == 0 ? Q.ZERO : new Q(1, n);
+    }
+  }),
+  /** LambertW(x). */
+  LAMBERTW(new AbstractInfiniteSeries<>() {
+    @Override
+    public Q coeff(final int n) {
+      return new Q(Z.NEG_ONE.pow(n + 1).multiply(Z.valueOf(n).pow(n - 1)), Functions.FACTORIAL.z(n));
+    }
+  }),
   ;
 
   private final Series<Q> mSeries;

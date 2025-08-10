@@ -273,7 +273,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @return shifted series
    */
   public Series<E> shift(final Series<E> s, final int shift) {
-    return new Shift<>(mElementField, s, shift);
+    return shift == 0 ? s : new Shift<>(mElementField, s, shift);
   }
 
   /**
@@ -470,7 +470,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    */
   public Series<E> substitute(final Series<E> s, final Series<E> t) {
     if (!t.coeff(0).equals(mElementField.zero())) {
-      throw new UnsupportedOperationException("Cannot have constant term in t");
+      throw new UnsupportedOperationException("Cannot have constant term in t: " + t.coeff(0));
     }
     if (t == x()) {
       return s;
@@ -495,6 +495,18 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    */
   public Series<E> reversion(final Series<E> s) {
     return new Reversion<>(mElementField, s);
+  }
+
+  /**
+   * Return the square root of <code>s</code>.
+   * @param s series
+   * @return reversion
+   */
+  public Series<E> sqrt(final Series<E> s) {
+    if (isZero(s)) {
+      return s;
+    }
+    return new Sqrt<>(this, s);
   }
 
   private boolean isDigitsOnly(final String s) {

@@ -651,7 +651,7 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
   public Polynomial<E> sqrt(final Polynomial<E> p, final int n) {
     // Make sure the lowest non-zero coefficient is an even power
     int m = 0;
-    while (mElementField.zero().equals(p.coeff(m))) {
+    while (mElementField.isZero(p.coeff(m))) {
       ++m;
     }
     if ((m & 1) != 0 || !mElementField.one().equals(p.coeff(m))) {
@@ -836,14 +836,14 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
    * @param n degree of expansion
    * @return <code>agm(a, b)</code>
    */
-  public Polynomial<E> agm(Polynomial<E> a, Polynomial<E> g, final int n) {
+  public Polynomial<E> agm(Polynomial<E> a, Polynomial<E> b, final int n) {
     final E two = mElementField.coerce(Z.TWO);
     for (int k = 1; k <= n; ++k) {
-      final Polynomial<E> ap = divide(add(a, g), two);
-      final Polynomial<E> gp = sqrt(multiply(a, g, n), n);
+      final Polynomial<E> ap = divide(add(a, b), two);
+      final Polynomial<E> bp = sqrt(multiply(a, b, n), n);
       a = ap;
-      g = gp;
+      b = bp;
     }
-    return g;
+    return b;
   }
 }

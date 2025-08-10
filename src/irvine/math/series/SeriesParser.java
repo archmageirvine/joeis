@@ -2,6 +2,7 @@ package irvine.math.series;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -44,7 +45,7 @@ public class SeriesParser {
     }
 
     public List<Token> tokenize() {
-      final Pattern pattern = Pattern.compile("\\d+/\\d+|\\d+|[a-zA-Z]+|[+\\-*/^()]");
+      final Pattern pattern = Pattern.compile("\\d+/\\d+|\\d+|[a-zA-Z][a-zA-Z0-9_]*|[+\\-*/^()]");
       final Matcher matcher = pattern.matcher(mInput);
       while (matcher.find()) {
         final String match = matcher.group();
@@ -58,7 +59,7 @@ public class SeriesParser {
           mTokens.add(new Token(TokenType.RPAREN, match));
         } else if (match.matches("\\d+/\\d+|\\d+")) {
           mTokens.add(new Token(TokenType.NUMBER, match));
-        } else if (match.matches("[a-zA-Z]+")) {
+        } else if (match.matches("[a-zA-Z][a-zA-Z0-9_]*")) {
           mTokens.add(new Token(TokenType.OP, match)); // function name
         }
       }
@@ -97,22 +98,117 @@ public class SeriesParser {
         tokens.subList(k + 1, k + 3).clear();
       }
     }
+    // Collapses (a) to a, where a is a number
+    for (int k = 0; k < tokens.size() - 3; ++k) {
+      if (tokens.get(k).mType == TokenType.LPAREN
+        && tokens.get(k + 1).mType == TokenType.NUMBER
+        && tokens.get(k + 2).mType == TokenType.RPAREN
+      ) {
+        tokens.remove(k + 2);
+        tokens.remove(k);
+      }
+    }
     return tokens;
   }
 
   private static List<Token> rewriteMonomials(final List<Token> tokens) {
-    // todo bogus needs to hand x^k
-    // Collapses number * x to a monomial
-    for (int k = 0; k < tokens.size() - 4; ++k) {
+    // The order in which we try things here matters!
+
+    // Collapses n * x ^ k to a monomial
+    for (int k = 0; k < tokens.size() - 5; ++k) {
+      if (tokens.get(k).mType == TokenType.NUMBER
+        && tokens.get(k + 2).mType == TokenType.VARIABLE
+        && tokens.get(k + 4).mType == TokenType.NUMBER
+        && tokens.get(k + 1).mType == TokenType.OP && tokens.get(k + 1).mValue.equals("*")
+        && tokens.get(k + 3).mType == TokenType.OP && tokens.get(k + 3).mValue.equals("^")
+      ) {
+        final String v = tokens.get(k).mValue + "*x^" + tokens.get(k + 4).mValue;
+        tokens.set(k, new Token(TokenType.POLYNOMIAL, v));
+        tokens.subList(k + 1, k + 5).clear();
+      }
+    }
+    // Collapses n x ^ k to a monomial
+    for (int k = 0; k < tokens.size() - 3; ++k) {
+      if (tokens.get(k).mType == TokenType.NUMBER
+        && tokens.get(k + 1).mType == TokenType.VARIABLE
+        && tokens.get(k + 3).mType == TokenType.NUMBER
+        && tokens.get(k + 2).mType == TokenType.OP && tokens.get(k + 2).mValue.equals("^")
+      ) {
+        final String v = tokens.get(k).mValue + "*x^" + tokens.get(k + 3).mValue;
+        tokens.set(k, new Token(TokenType.POLYNOMIAL, v));
+        tokens.subList(k + 1, k + 4).clear();
+      }
+    }
+    // Collapses n * x to a monomial
+    for (int k = 0; k < tokens.size() - 3; ++k) {
       if (tokens.get(k).mType == TokenType.NUMBER
         && tokens.get(k + 2).mType == TokenType.VARIABLE
         && tokens.get(k + 1).mType == TokenType.OP && tokens.get(k + 1).mValue.equals("*")
       ) {
-        final String v = tokens.get(k).mValue + "*" + tokens.get(k + 2).mValue;
+        final String v = tokens.get(k).mValue + "*x";
         tokens.set(k, new Token(TokenType.POLYNOMIAL, v));
         tokens.subList(k + 1, k + 3).clear();
       }
     }
+    // Collapses n x to a monomial
+    for (int k = 0; k < tokens.size() - 2; ++k) {
+      if (tokens.get(k).mType == TokenType.NUMBER
+        && tokens.get(k + 1).mType == TokenType.VARIABLE
+      ) {
+        final String v = tokens.get(k).mValue + "*x";
+        tokens.set(k, new Token(TokenType.POLYNOMIAL, v));
+        tokens.subList(k + 1, k + 2).clear();
+      }
+    }
+    // Collapses x ^ k to a monomial
+    for (int k = 0; k < tokens.size() - 2; ++k) {
+      if (tokens.get(k).mType == TokenType.VARIABLE
+        && tokens.get(k + 2).mType == TokenType.NUMBER
+        && tokens.get(k + 1).mType == TokenType.OP && tokens.get(k + 2).mValue.equals("^")
+      ) {
+        final String v = "x^" + tokens.get(k + 2).mValue;
+        tokens.set(k, new Token(TokenType.POLYNOMIAL, v));
+        tokens.subList(k + 1, k + 2).clear();
+      }
+    }
+    return tokens;
+  }
+
+  private static boolean isAdditiveOp(final Token tok) {
+    return tok.mType == TokenType.OP && (tok.mValue.equals("+") || tok.mValue.equals("-"));
+  }
+
+  private static List<Token> rewritePolynomials(final List<Token> tokens) {
+    // Collapses consecutive additive polynomial terms to a single polynomial
+    for (int k = 0; k < tokens.size(); ++k) {
+      if (tokens.get(k).mType == TokenType.LPAREN) {
+        for (int j = k + 1; j < tokens.size(); ++j) {
+          final TokenType tj = tokens.get(j).mType;
+          if (tj == TokenType.RPAREN) {
+            // Success, collect all the polynomial parts together
+            final StringBuilder poly = new StringBuilder();
+            for (int i = k + 1; i < j; ++i) {
+              poly.append(tokens.get(i).mValue);
+            }
+            tokens.set(k, new Token(TokenType.POLYNOMIAL, poly.toString()));
+            tokens.subList(k + 1, j + 1).clear();
+            break;
+          }
+          if (tj != TokenType.NUMBER && tj != TokenType.POLYNOMIAL && !isAdditiveOp(tokens.get(j))) {
+            break; // not a polynomial
+          }
+        }
+      }
+    }
+    return tokens;
+  }
+
+  List<Token> tokenize(final String expr) {
+    // Before attempting general parsing, we make an effort to identify polynomials
+    // in typical forms. This identification reduces the burden on the Series
+    // handling mechanism later on saving both memory and time.
+    final List<Token> tokens = rewritePolynomials(rewriteMonomials(rewriteRationals(new Tokenizer(expr).tokenize())));
+    //System.out.println(tokens);
     return tokens;
   }
 
@@ -122,38 +218,9 @@ public class SeriesParser {
    * @return series
    */
   public Series<Q> parse(final String expr) {
-    // In the input we first try to identify portions that correspond to polynomials
-    // and wrap them in "poly()" making them easier to treat later in parsing.
-    // It does not matter if this does not capture every case.
-    //final String rewrite = rewritePolynomials(expr);
-    final List<Token> tokens = new Tokenizer(expr).tokenize();
-    mTokens = rewriteRationals(tokens);
-    //mTokens = tokens; //rewriteMonomials(rewriteRationals(tokens));
-    //System.out.println(mTokens);
+    mTokens = tokenize(expr);
     mIndex = 0;
     return parseExpression();
-  }
-
-
-  private Series<Q> parsePolyArgument() {
-    final Token t = consume();
-    if (t.mType != TokenType.LPAREN) {
-      throw new RuntimeException("Expected ( after poly");
-    }
-    final StringBuilder arg = new StringBuilder();
-    int parenDepth = 1;
-    while (parenDepth > 0) {
-      final Token tok = consume();
-      if (tok.mType == TokenType.LPAREN) {
-        ++parenDepth;
-      } else if (tok.mType == TokenType.RPAREN) {
-        --parenDepth;
-      }
-      if (parenDepth > 0) {
-        arg.append(tok.mValue);
-      }
-    }
-    return Series.create(arg.toString());
   }
 
   private Token peek() {
@@ -202,8 +269,10 @@ public class SeriesParser {
     if (match(TokenType.OP, "^")) {
       consume(); // consume ^
       final Series<Q> exponentSeries = parseFactor();
-      final long exponent = exponent(exponentSeries);
-      base = SQ.pow(base, exponent);
+      // Warning: This makes (unchecked) assumption that the exponent is a single simple integer
+      final Q exponent = exponentSeries.coeff(0);
+      // Decide between simple integer powers and other rational powers
+      base = exponent.isInteger() ? SQ.pow(base, exponent.toZ().longValueExact()) : SQ.powE(base, exponent);
     }
     return base;
   }
@@ -220,16 +289,19 @@ public class SeriesParser {
     final Series<Q> arg = parseExpression();
     consume(); // consume ')'
 
-    // todo add other functions here, or perhaps reflect on function name?
+    // Some functions need special handling, but most can be handled by the
+    // enumeration in RationalSeriesEnum
     switch (fname) {
       case "serlaplace":
         return SQ.laplace(arg);
-      case "exp":
-        return SQ.substitute(RationalSeriesEnum.EXP.s(), arg);
-//      case "log": return SQ.log(arg);
-//      case "sqrt": return SQ.sqrt(arg);
+      case "sqrt":
+        return SQ.powE(arg, Q.HALF);
+      case "log":
+        return SQ.substitute(RationalSeriesEnum.LOG1P.s(), SQ.subtract(arg, SQ.one()));
       default:
-        throw new RuntimeException("Unknown function: " + fname);
+        // Look up the function in the available functions
+        final RationalSeriesEnum f = RationalSeriesEnum.valueOf(fname.toUpperCase(Locale.ROOT));
+        return SQ.substitute(f.s(), arg);
     }
   }
 
@@ -259,9 +331,5 @@ public class SeriesParser {
     throw new RuntimeException("Unexpected token: " + t.mValue);
   }
 
-  private long exponent(final Series<Q> s) {
-    // Warning: This makes (unchecked) assumption that the exponent is a single simple integer
-    return s.coeff(0).toZ().longValueExact();
-  }
 }
 

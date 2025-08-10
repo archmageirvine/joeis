@@ -12,6 +12,7 @@ public class AllTests extends TestSuite {
   public static Test suite() {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(RationalSeriesEnumTest.class);
+    suite.addTestSuite(SeriesParserTest.class);
     suite.addTestSuite(SeriesRingTest.class);
     return suite;
   }

@@ -8,6 +8,7 @@ import irvine.oeis.gf.DenominatorGfSequence;
  */
 public class A202359 extends DenominatorGfSequence {
 
+  /** Construct the sequence. */
   public A202359() {
     super(0, "acosh(exp(x)-sin(x))");
   }

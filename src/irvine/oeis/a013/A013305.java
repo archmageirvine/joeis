@@ -8,6 +8,7 @@ import irvine.oeis.gf.GfSequence;
  */
 public class A013305 extends GfSequence {
 
+  /** Construct the sequence. */
   public A013305() {
     super(0, "acosh(exp(x)-sin(x))");
   }

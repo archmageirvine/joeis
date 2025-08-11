@@ -240,8 +240,6 @@ A003217 Maximum of minimum total weight for threshold functions of n Boolean var
 A003218 Weights of threshold functions
 A003220 Susceptibility series for diamond
 A003279 High temperature series for spherical model susceptibility on 3-dimensional simple cubic lattice
-A003296 Coefficients of modular function g_2(tau), have paper
-A003297 Coefficients of modular function g_3(tau), have paper
 A003322 Necklace permutations, Knuth must have a good method, existing paper doesn't explain
 A003323 Multicolor Ramsey numbers R(3,3,...,3)
 A003416 Sociable numbers, hard to make reasonable program, status of some small numbers not known?
@@ -384,12 +382,6 @@ A005646 Classifications of n elements, might be possible, an algorithm is descri
 A005670 Mrs. Perkins's quilt: smallest coprime dissection of n X n square, probably possible but slow
 A005677 Maximal size of equidistant permutation array R(n,1), hard
 A005702 Number of sesquirotational Kotzig factorizations, paper available, looks complicated
-A005757 Simple dependency A003296, A003297
-A005759 Simple dependency A005757
-A005760 Coefficients of modular function G_2(tau)
-A005761 Coefficients of modular function G_3(tau)
-A005762 a(n)=A005760(n)^2-11*A005761(n)
-A005764 Convolution of A005760 and A005762
 A005765 Size of Doehlert-Klee design with n blocks (some terms just bounds?)
 A005779 Largest integer such that every tournament on n nodes contains a consistent set of n arcs
 A005788 Conductors of elliptic curves

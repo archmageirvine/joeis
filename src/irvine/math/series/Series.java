@@ -1,10 +1,13 @@
 package irvine.math.series;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.q.Q;
 import irvine.math.q.QUtils;
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
+import irvine.oeis.Sequence;
 
 /**
  * General interface for representing a series.
@@ -98,6 +101,39 @@ public interface Series<E> {
       @Override
       public int bound() {
         return series.bound();
+      }
+    };
+  }
+
+  /**
+   * Create a series backed by a directly accessible sequence.
+   * @param sequence underlying sequence
+   * @return series based on sequence
+   */
+  static Series<Q> create(final DirectSequence sequence) {
+    return new AbstractInfiniteSeries<>() {
+      @Override
+      public Q coeff(final int n) {
+        return new Q(sequence.a(n));
+      }
+    };
+  }
+
+  /**
+   * Create a series backed by a sequence.
+   * The offset of the underlying sequence is not considered.
+   * @param sequence underlying sequence
+   * @return series based on sequence
+   */
+  static Series<Q> create(final Sequence sequence) {
+    final List<Z> seq = new ArrayList<>();
+    return new AbstractInfiniteSeries<>() {
+      @Override
+      public Q coeff(final int n) {
+        while (seq.size() <= n) {
+          seq.add(sequence.next());
+        }
+        return new Q(seq.get(n));
       }
     };
   }

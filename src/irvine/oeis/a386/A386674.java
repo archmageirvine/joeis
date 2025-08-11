@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079216.
+ * A386674 allocated for David Bevan.
  * @author Sean A. Irvine
  */
 public class A386674 extends Sequence1 {

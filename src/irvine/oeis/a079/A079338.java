@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A079101 A repetition-resistant sequence.
+ * A079338 Positions of 1 in the repetition-resistant sequence A079336.
  * @author Sean A. Irvine
  */
 public class A079338 extends FilterPositionSequence {

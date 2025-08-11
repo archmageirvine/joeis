@@ -4,59 +4,53 @@ import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.series.Series;
 import irvine.math.series.SeriesParser;
-import irvine.math.z.Z;
-import irvine.oeis.AbstractSequence;
-import irvine.oeis.DirectSequence;
 
 /**
  * A sequence defined by an ordinary generating function.
  * @author Sean A. Irvine
  */
-public class EgfSequence extends AbstractSequence implements DirectSequence {
-
-  protected int mN;
-  private final Series<Q> mSeries;
+public class EgfSequence extends GfSequence {
 
   /**
-   * Construct a sequence from an ordinary generating function.
+   * Construct a sequence from an exponential generating function.
+   * @param offset first valid term has this index
+   * @param step increment to apply
+   * @param gf the generating function
+   */
+  public EgfSequence(final int offset, final int step, final Series<Q> gf) {
+    super(offset, step, gf);
+  }
+
+  /**
+   * Construct a sequence from an exponential generating function.
    * @param offset first valid term has this index
    * @param gf the generating function
    */
   public EgfSequence(final int offset, final Series<Q> gf) {
-    super(offset);
-    mN = offset - 1;
-    mSeries = gf;
+    this(offset, 1, gf);
   }
 
   /**
-   * Construct a sequence from an ordinary generating function.
+   * Construct a sequence from an exponential generating function.
+   * @param offset first valid term has this index
+   * @param step increment to apply
+   * @param gf the generating function
+   */
+  public EgfSequence(final int offset, final int step, final String gf) {
+    this(offset, step, new SeriesParser().parse(gf));
+  }
+
+  /**
+   * Construct a sequence from an exponential generating function.
    * @param offset first valid term has this index
    * @param gf the generating function
    */
   public EgfSequence(final int offset, final String gf) {
-    this(offset, new SeriesParser().parse(gf));
-  }
-
-  /**
-   * Return the series underlying this sequence.
-   * @return the series
-   */
-  public Series<Q> s() {
-    return mSeries;
+    this(offset, 1, gf);
   }
 
   @Override
-  public Z next() {
-    return a(++mN);
-  }
-
-  @Override
-  public Z a(final Z n) {
-    return a(n.intValueExact());
-  }
-
-  @Override
-  public Z a(final int n) {
-    return mSeries.coeff(n).multiply(Functions.FACTORIAL.z(n)).toZ();
+  protected Q q(final int n) {
+    return super.q(n).multiply(Functions.FACTORIAL.z(n));
   }
 }

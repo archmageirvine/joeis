@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000002;
 import irvine.oeis.transform.SumOfRunsTransform;
 
 /**
- * A079216.
+ * A079359 Iterate the process: "sum of terms of n-th run" on the Kolakoski sequence until all runs have length 1.
  * @author Sean A. Irvine
  */
 public class A079359 extends Sequence1 {

@@ -293,8 +293,6 @@ public class SeriesParser {
     // We've constructed everything as a series, here we support efficiency by
     // detecting scalar multiply and divides.
 
-    // todo other potential efficiency gains here would be detecting shifts (*x^n) etc.
-
     Series<Q> result = parseFactor();
     while (match(TokenType.OP, "*") || match(TokenType.OP, "/")) {
       final String op = consume().mValue;
@@ -306,6 +304,12 @@ public class SeriesParser {
         } else if (right.bound() == 0) {
           // Scalar multiply
           result = SQ.multiply(result, right.coeff(0));
+        } else if (right instanceof Monomial) {
+          // Replace multiply by a*x^n, with shift and scalar divide
+          result = SQ.multiply(SQ.shift(result, right.bound()), right.coeff(right.bound()));
+        } else if (result instanceof Monomial) {
+          // Replace multiply by a*x^n, with shift and scalar divide
+          result = SQ.multiply(SQ.shift(right, result.bound()), result.coeff(result.bound()));
         } else {
           // Series multiply
           result = SQ.multiply(result, right);
@@ -314,6 +318,9 @@ public class SeriesParser {
         if (right.bound() == 0) {
           // Scalar divide
           result = SQ.divide(result, right.coeff(0));
+        } else if (right instanceof Monomial) {
+          // Replace division by a*x^n, with shift and scalar divide
+          result = SQ.divide(SQ.shift(result, -right.bound()), right.coeff(right.bound()));
         } else {
           // Series divide
           result = SQ.divide(result, right);

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079101 A repetition-resistant sequence.
+ * A079336 A repetition-resistant sequence.
  * @author Sean A. Irvine
  */
 public class A079336 extends Sequence1 {

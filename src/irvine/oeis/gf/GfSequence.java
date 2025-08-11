@@ -8,22 +8,25 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
 
 /**
- * A sequence defined by an ordinary generating function.
+ * A sequence defined by (the numerators of) an ordinary generating function.
  * @author Sean A. Irvine
  */
 public class GfSequence extends AbstractSequence implements DirectSequence {
 
-  protected int mN;
+  private int mN;
+  private final int mStep;
   private final Series<Q> mSeries;
 
   /**
    * Construct a sequence from an ordinary generating function.
    * @param offset first valid term has this index
+   * @param step increment to apply
    * @param gf the generating function
    */
-  public GfSequence(final int offset, final Series<Q> gf) {
+  public GfSequence(final int offset, final int step, final Series<Q> gf) {
     super(offset);
-    mN = offset - 1;
+    mN = offset - step;
+    mStep = step;
     mSeries = gf;
   }
 
@@ -32,8 +35,27 @@ public class GfSequence extends AbstractSequence implements DirectSequence {
    * @param offset first valid term has this index
    * @param gf the generating function
    */
+  public GfSequence(final int offset, final Series<Q> gf) {
+    this(offset, 1, gf);
+  }
+
+  /**
+   * Construct a sequence from an ordinary generating function.
+   * @param offset first valid term has this index
+   * @param step increment to apply
+   * @param gf the generating function
+   */
+  public GfSequence(final int offset, final int step, final String gf) {
+    this(offset, step, new SeriesParser().parse(gf));
+  }
+
+  /**
+   * Construct a sequence from an ordinary generating function.
+   * @param offset first valid term has this index
+   * @param gf the generating function
+   */
   public GfSequence(final int offset, final String gf) {
-    this(offset, new SeriesParser().parse(gf));
+    this(offset, 1, gf);
   }
 
   /**
@@ -44,9 +66,19 @@ public class GfSequence extends AbstractSequence implements DirectSequence {
     return mSeries;
   }
 
+  /**
+   * Return the <code>n</code>th term of this sequence as a rational.
+   * @param n term number
+   * @return term value
+   */
+  protected Q q(final int n) {
+    return mSeries.coeff(n);
+  }
+
   @Override
   public Z next() {
-    return a(++mN);
+    mN += mStep;
+    return a(mN);
   }
 
   @Override
@@ -56,6 +88,6 @@ public class GfSequence extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    return mSeries.coeff(n).toZ();
+    return q(n).num();
   }
 }

@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a001.A001602;
 
 /**
- * A079101.
+ * A079346 Primes p such that F(p-(p/5)) is the first Fibonacci number that p divides.
  * @author Sean A. Irvine
  */
 public class A079346 extends A001602 {

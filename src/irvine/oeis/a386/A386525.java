@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a063.A063655;
 
 /**
- * A079216.
+ * A386525 allocated for Richard S. Chang.
  * @author Sean A. Irvine
  */
 public class A386525 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A127319 a(n) = binomial(n, sd) mod n, with sd = sum of decimal digits of n.
+ * A127319 a(n)={binomial[n,(sum of decimal digits of n)] mod n}, with n&gt;=1.
  * @author Georg Fischer
  */
 public class A127319 extends LambdaSequence {

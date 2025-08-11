@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079216.
+ * A079353 Numbers n such that the best rational approximation to H(n) with denominator &lt;=n is an integer, where H(n) denotes the n-th harmonic number (A001008/A002805).
  * @author Sean A. Irvine
  */
 public class A079353 extends Sequence1 {

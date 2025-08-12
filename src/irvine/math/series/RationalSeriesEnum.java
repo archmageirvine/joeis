@@ -11,6 +11,10 @@ import irvine.math.z.Z;
  */
 public enum RationalSeriesEnum {
 
+  // Note: Because SeriesParser uses reflection to find these functions, the names should
+  // match common use (up to case). This means for example we use ELLIPTICK rather than
+  // ELLIPTIC_K.
+
   /** exp(x). */
   EXP(new AbstractInfiniteSeries<>() {
     @Override
@@ -119,6 +123,28 @@ public enum RationalSeriesEnum {
       return new Q(Z.NEG_ONE.pow(n + 1).multiply(Z.valueOf(n).pow(n - 1)), Functions.FACTORIAL.z(n));
     }
   }),
+  /** elliptic K(x) multiplied by 2/Pi. */
+  ELLIPTICK(new AbstractInfiniteSeries<>() {
+    @Override
+    public Q coeff(final int n) {
+      return (n & 1) == 0 ? new Q(Functions.FACTORIAL.z(n), Functions.FACTORIAL.z(n / 2).square().shiftLeft(n)).square() : Q.ZERO;
+    }
+  }),
+  /** elliptic E(x) multiplied by 2/Pi. */
+  ELLIPTICE(new AbstractInfiniteSeries<>() {
+    @Override
+    public Q coeff(final int n) {
+      return (n & 1) == 0 ? new Q(Functions.FACTORIAL.z(n), Functions.FACTORIAL.z(n / 2).square().shiftLeft(n)).square().divide(1 - n) : Q.ZERO;
+    }
+  }),
+  /** elliptic D(x) multiplied by 1/Pi. */
+  ELLIPTICD(new AbstractInfiniteSeries<>() {
+    @Override
+    public Q coeff(final int n) {
+      final int m = n + 2;
+      return (n & 1) == 0 ? new Q(Functions.FACTORIAL.z(m), Functions.FACTORIAL.z(m / 2).square().shiftLeft(m)).square().multiply(m / 2).divide(m - 1) : Q.ZERO;
+    }
+  }),
   ;
 
   private final Series<Q> mSeries;
@@ -133,5 +159,13 @@ public enum RationalSeriesEnum {
    */
   public Series<Q> s() {
     return mSeries;
+  }
+
+  /**
+   * Return the series substituted with another series.
+   * @return series
+   */
+  public Series<Q> s(final Series<Q> t) {
+    return SeriesRing.SQ.substitute(mSeries, t);
   }
 }

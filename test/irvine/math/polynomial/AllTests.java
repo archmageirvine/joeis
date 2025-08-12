@@ -19,9 +19,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(CyclotomicPolynomialsTest.class);
     suite.addTestSuite(DigraphCycleIndexTest.class);
     suite.addTestSuite(DiscriminantTest.class);
-    suite.addTestSuite(EllipticDTest.class);
-    suite.addTestSuite(EllipticETest.class);
-    suite.addTestSuite(EllipticKTest.class);
     suite.addTestSuite(ExtendedSymmetricGroupCycleIndexTest.class);
     suite.addTestSuite(EulerPolynomialsTest.class);
     suite.addTestSuite(GraphCycleIndexTest.class);

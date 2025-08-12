@@ -13,6 +13,8 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.polynomial.SeriesFactory;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
+import irvine.math.series.RationalSeriesEnum;
+import irvine.math.series.SeriesRing;
 import irvine.math.z.Z;
 
 /**
@@ -671,13 +673,13 @@ public class PolynomialFieldSequence extends AbstractSequence implements Rationa
           mStack.set(top, SeriesFactory.BESSEL_I.s(Long.parseLong(mStack.get(top).toString()), m, mStack.get(top + 1)));
           break;
         case 50:  // "ellipticD"
-          mStack.set(top, SeriesFactory.ELLIPTIC_D.s(m, mStack.get(top)));
+          mStack.set(top, SeriesRing.SQ.toPolynomial(RationalSeriesEnum.ELLIPTICD.s(mStack.get(top)), m));
           break;
         case 51:  // "ellipticE"
-          mStack.set(top, SeriesFactory.ELLIPTIC_E.s(m, mStack.get(top)));
+          mStack.set(top, SeriesRing.SQ.toPolynomial(RationalSeriesEnum.ELLIPTICE.s(mStack.get(top)), m));
           break;
         case 52:  // "ellipticK"
-          mStack.set(top, SeriesFactory.ELLIPTIC_K.s(m, mStack.get(top)));
+          mStack.set(top, SeriesRing.SQ.toPolynomial(RationalSeriesEnum.ELLIPTICK.s(mStack.get(top)), m));
           break;
         case 53:  // "pow" - exponent is no Q constant; [top-1],log,[top],*,exp -> [top-1]
           --top;

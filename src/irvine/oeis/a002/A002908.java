@@ -4,9 +4,10 @@ import java.util.Arrays;
 
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
-import irvine.math.polynomial.SeriesFactory;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
+import irvine.math.series.RationalSeriesEnum;
+import irvine.math.series.SeriesRing;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -25,7 +26,7 @@ public class A002908 extends Sequence1 {
 
   private Polynomial<Q> getU(final int n) {
     final Polynomial<Q> z = RING.series(NUM, DEN, n);
-    final Polynomial<Q> ek = SeriesFactory.ELLIPTIC_K.s(n, z);
+    final Polynomial<Q> ek = SeriesRing.SQ.toPolynomial(RationalSeriesEnum.ELLIPTICK.s(z), n);
     // ek = (2/Pi)*EllipticK(4*v*(1-v^2)/(1+v^2)^2)
     // e = (1+v^2)*(1 - (1-6*v^2+v^4) * (2/Pi)*EllipticK(4*v*(1-v^2)/(1+v^2)^2) / (1+v^2)^2)
     return RING.multiply(RING.multiply(C2, RING.subtract(RING.one(), RING.series(RING.multiply(C1, ek, n), DEN, n)), n), Q.HALF);

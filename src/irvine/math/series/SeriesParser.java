@@ -375,8 +375,7 @@ public class SeriesParser {
         return log(SQ.add(arg, SQ.sqrt(SQ.subtract(SQ.square(arg), SQ.one()))));
       default:
         // Look up the function in the available functions
-        final RationalSeriesEnum f = RationalSeriesEnum.valueOf(fname.toUpperCase(Locale.ROOT));
-        return SQ.substitute(f.s(), arg);
+        return RationalSeriesEnum.valueOf(fname.toUpperCase(Locale.ROOT)).s(arg);
     }
   }
 

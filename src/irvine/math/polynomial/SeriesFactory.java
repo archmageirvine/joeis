@@ -10,13 +10,6 @@ public final class SeriesFactory {
 
   private SeriesFactory() { }
 
-  /** Elliptic K function multiplied by 2/pi. */
-  public static final Series1 ELLIPTIC_K = new EllipticK();
-  /** Elliptic E function multiplied by 2/pi. */
-  public static final Series1 ELLIPTIC_E = new EllipticE();
-  /** Elliptic D function multiplied by 1/pi. */
-  public static final Series1 ELLIPTIC_D = new EllipticD();
-
   /** Bessel I function without leading <code>(x/2)^n/n!</code> factor. */
   public static final Series2 BESSEL_I = new BesselI();
   /** Bessel y function, <code>y_n(x)</code>. */

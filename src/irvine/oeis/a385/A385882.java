@@ -33,7 +33,7 @@ public class A385882 extends Sequence1 {
   }
 
   protected Z select(final long u, final long v, final Z w) {
-    System.out.println(u + " " + v + " " + " " + w);
+    //System.out.println(u + " " + v + " " + " " + w);
     return Z.valueOf(v);
   }
 

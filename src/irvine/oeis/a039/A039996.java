@@ -1,5 +1,7 @@
 package irvine.oeis.a039;
 
+import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -8,12 +10,13 @@ import irvine.math.z.Z;
  */
 public class A039996 extends A039997 {
 
+  private final Fast mPrime = new Fast();
   private long mP = 1;
 
   @Override
   public Z next() {
     mP = mPrime.nextPrime(mP);
-    return count(mP);
+    return Functions.PRIME_MEMORY.z(mP);
   }
 }
 

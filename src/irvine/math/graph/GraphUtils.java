@@ -1321,6 +1321,39 @@ public final class GraphUtils {
   }
 
   /**
+   * Check the graph has no induced cycle of length 5.
+   * @param graph the graph
+   * @return true if there is no C5 path.
+   */
+  public static boolean c5Free(final Graph graph) {
+    if (graph.order() < 5) {
+      return true;
+    }
+    // a -- b -- c -- d -- e
+    // |___________________|
+    for (int a = 0; a < graph.order(); ++a) {
+      for (int b = graph.nextVertex(a, -1); b >= 0; b = graph.nextVertex(a, b)) {
+        if (graph.degree(b) >= 2) {
+          for (int c = graph.nextVertex(b, -1); c >= 0; c = graph.nextVertex(b, c)) {
+            if (a != c && !graph.isAdjacent(a, c) && graph.degree(c) >= 2) {
+              for (int d = graph.nextVertex(c, -1); d >= 0; d = graph.nextVertex(c, d)) {
+                if (d != a && d != b && !graph.isAdjacent(d, b) && !graph.isAdjacent(d, a) && graph.degree(d) >= 2) {
+                  for (int e = graph.nextVertex(d, a); e >= 0; e = graph.nextVertex(d, e)) {
+                    if (e != b && e != c && graph.isAdjacent(a, e) && !graph.isAdjacent(e, b) && !graph.isAdjacent(e, c)) {
+                      return false;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    return true;
+  }
+
+  /**
    * Check that the given graph has no "house" induced subgraph.
    * @param graph the graph
    * @return true if it has no house

@@ -15,7 +15,7 @@ public class A079400 extends A000594 {
   @Override
   public Z next() {
     while (true) {
-      final Z t  =super.next();
+      final Z t = super.next();
       if (Predicates.PRIME.is(++mN)) {
         return t.multiply(Z.valueOf(mN).pow(11));
       }

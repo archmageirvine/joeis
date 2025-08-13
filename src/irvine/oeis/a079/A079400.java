@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000594;
 
 /**
- * A072283.
+ * A079400 p^11 * A000594(p) as p runs through the primes.
  * @author Sean A. Irvine
  */
 public class A079400 extends A000594 {

@@ -23,7 +23,7 @@ class SubstitutePolynomial<E> implements Series<E> {
     mS = s;
     mT = t;
     final Z b = Z.valueOf(mT.bound()).multiply(mS.degree());
-    mBound = Integer.MAX_VALUE; //b.bitLength() < Integer.SIZE ? b.intValue() : Integer.MAX_VALUE;
+    mBound = b.bitLength() < Integer.SIZE ? b.intValue() : Integer.MAX_VALUE;
   }
 
   @Override

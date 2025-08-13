@@ -470,7 +470,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    */
   public Series<E> substitute(final Series<E> s, final Series<E> t) {
     if (!t.coeff(0).equals(mElementField.zero())) {
-      throw new UnsupportedOperationException("Cannot have constant term in t: " + t.coeff(0));
+      throw new UnsupportedOperationException("Cannot have nonzero constant term in t: " + toString(t, 5));
     }
     if (t == x()) {
       return s;
@@ -530,7 +530,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
         if (sc.startsWith("-")) {
           final String sc1 = sc.substring(1);
           if (isDigitsOnly(sc1)) {
-            if (mElementField.one().equals(mElementField.negate(c))) {
+            if (mElementField.one().equals(mElementField.negate(c)) && k > 0) {
               sb.append('-');
             } else {
               sb.append(sc);

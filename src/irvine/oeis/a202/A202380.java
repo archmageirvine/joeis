@@ -1,17 +1,15 @@
 package irvine.oeis.a202;
 
-import irvine.math.q.Q;
-import irvine.math.z.Z;
-import irvine.oeis.a012.A012856;
+import irvine.oeis.gf.DenominatorGfSequence;
 
 /**
  * A202380 Denominators of coefficients in Taylor series expansion of log(cosec(x)*arcsin(x)).
  * @author Sean A. Irvine
  */
-public class A202380 extends A012856 {
+public class A202380 extends DenominatorGfSequence {
 
-  @Override
-  protected Z select(final Q n) {
-    return n.den();
+  /** Construct the sequence. */
+  public A202380() {
+    super(0, 2, "log(xcsc(x)*asin(x)/x)");
   }
 }

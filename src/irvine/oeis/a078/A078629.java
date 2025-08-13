@@ -9,27 +9,27 @@ import irvine.oeis.Sequence1;
  */
 public class A078629 extends Sequence1 {
 
-  // Afer https://oeis.org/A078629/a078629.txt by N. J. A. Sloane
+  // After https://oeis.org/A078629/a078629.txt by N. J. A. Sloane
 
   private int mN = 0;
   protected int[] mPerm;
 
-  private boolean nextPermutation(final int n) {
-    int i = n - 2;
+  private boolean nextPermutation() {
+    int i = mPerm.length - 5;
     while (i >= 0 && mPerm[i] >= mPerm[i + 1]) {
       --i;
     }
     if (i < 0) {
       return false;
     }
-    int j = n - 1;
+    int j = mPerm.length - 4;
     while (mPerm[j] <= mPerm[i]) {
       --j;
     }
     final int tmp = mPerm[i];
     mPerm[i] = mPerm[j];
     mPerm[j] = tmp;
-    for (int l = i + 1, r = n - 1; l < r; ++l, --r) {
+    for (int l = i + 1, r = mPerm.length - 4; l < r; ++l, --r) {
       final int tmp1 = mPerm[l];
       mPerm[l] = mPerm[r];
       mPerm[r] = tmp1;
@@ -44,14 +44,14 @@ public class A078629 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    mPerm = new int[2 * mN + 2];
     final int ntrue = 2 * mN;
+    mPerm = new int[ntrue + 2];
     final int n = ntrue - 1;
     long count = 0;
 
     mPerm[ntrue - 1] = 2 * mN;
-    for (int i1 = 0; i1 < n; ++i1) {
-      mPerm[i1] = i1 + 1;
+    for (int k = 0; k < n; ++k) {
+      mPerm[k] = k + 1;
     }
 
     do {
@@ -73,7 +73,7 @@ public class A078629 extends Sequence1 {
       if (!reject && accept(mN, ntrue)) {
         ++count;
       }
-    } while (nextPermutation(n));
+    } while (nextPermutation());
 
     return Z.valueOf(count);
   }

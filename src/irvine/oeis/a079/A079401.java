@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A072283 Number of raised dots to represent n in Braille.
+ * A079401 Partial sums of A079399.
  * @author Sean A. Irvine
  */
 public class A079401 extends PartialSumSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A072283 Number of raised dots to represent n in Braille.
+ * A079399 Number of dots in Braille representation of n.
  * @author Sean A. Irvine
  */
 public class A079399 extends Sequence0 {

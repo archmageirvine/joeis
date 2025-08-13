@@ -27,8 +27,6 @@ class SubstituteSeries<E> implements Series<E> {
 
   @Override
   public E coeff(final int n) {
-    // todo: use Bell polynomials to accelerate?
-
     // [x^n] s(t(x)) = Sum_{k=0..n} s(k) * [x^n] t(x)^k
     if (n == 0) {
       return mS.coeff(0);

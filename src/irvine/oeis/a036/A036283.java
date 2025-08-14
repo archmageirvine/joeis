@@ -1,8 +1,8 @@
 package irvine.oeis.a036;
 
-import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
-import irvine.math.q.Rationals;
+import irvine.math.series.RationalSeriesEnum;
+import irvine.math.series.Series;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -12,9 +12,9 @@ import irvine.oeis.Sequence1;
  */
 public class A036283 extends Sequence1 {
 
-  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;
   private Z mF = Z.ONE;
+  private final Series<Q> mS = RationalSeriesEnum.XCSC.s();
 
   @Override
   public Z next() {
@@ -22,7 +22,7 @@ public class A036283 extends Sequence1 {
     if (mN > 2) {
       mF = mF.multiply((mN - 1) * (long) (mN - 2));
     }
-    return RING.xcsc(RING.x(), mN).coeff(mN).multiply(mF).den();
+    return mS.coeff(mN).multiply(mF).den();
   }
 }
 

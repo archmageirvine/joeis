@@ -1,27 +1,15 @@
 package irvine.oeis.a012;
 
-import irvine.math.group.PolynomialRingField;
-import irvine.math.q.Q;
-import irvine.math.q.Rationals;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.gf.GfSequence;
 
 /**
  * A012858 Numerator of [x^(4n+2)] in the Taylor series log(cosec(x)*sinh(x))= x^2/3 +2*x^6/2835 +2*x^10/467775 +4*x^14/127702575 +..
  * @author Sean A. Irvine
  */
-public class A012858 extends Sequence0 {
+public class A012858 extends GfSequence {
 
-  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private int mN = -2;
-
-  protected Z select(final Q n) {
-    return n.num();
-  }
-
-  @Override
-  public Z next() {
-    mN += 4;
-    return select(RING.log(RING.multiply(RING.xcsc(RING.x(), mN + 1), RING.sinh(RING.x(), mN + 1), mN + 1).shift(-1), mN).coeff(mN));
+  /** Construct the sequence. */
+  public A012858() {
+    super(0, 4, "log(xcsc(x)*sinh(x)/x)/x^2");
   }
 }

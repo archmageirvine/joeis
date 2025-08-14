@@ -1,23 +1,15 @@
 package irvine.oeis.a013;
 
-import irvine.math.group.PolynomialRingField;
-import irvine.math.q.Q;
-import irvine.math.q.Rationals;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.gf.GfSequence;
 
 /**
  * A013535 Numerator of the coefficient [x^(2n)] in the Taylor series sec(cosec(x) - cosech(x)).
  * @author Sean A. Irvine
  */
-public class A013535 extends Sequence0 {
+public class A013535 extends GfSequence {
 
-  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private int mN = -2;
-
-  @Override
-  public Z next() {
-    mN += 2;
-    return RING.sec(RING.subtract(RING.xcsc(RING.x(), mN + 1), RING.xcsch(RING.x(), mN + 1)).shift(-1), mN).coeff(mN).num();
+  /** Construct the sequence. */
+  public A013535() {
+    super(0, 2, "sec((xcsc(x) - xcsch(x))/x)");
   }
 }

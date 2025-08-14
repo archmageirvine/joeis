@@ -1,23 +1,15 @@
 package irvine.oeis.a013;
 
-import irvine.math.group.PolynomialRingField;
-import irvine.math.q.Q;
-import irvine.math.q.Rationals;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.gf.GfSequence;
 
 /**
  * A013539 Numerator of the coefficient [x^(2n+1)] of the Taylor series tan(cosec(x)-coth(x)).
  * @author Sean A. Irvine
  */
-public class A013539 extends Sequence0 {
+public class A013539 extends GfSequence {
 
-  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private int mN = -1;
-
-  @Override
-  public Z next() {
-    mN += 2;
-    return RING.tan(RING.subtract(RING.xcsc(RING.x(), mN + 1), RING.xcoth(RING.x(), mN + 1)).shift(-1), mN).coeff(mN).num();
+  /** Construct the sequence. */
+  public A013539() {
+    super(0, 2, "tan((xcsc(x) - xcoth(x))/x)/x");
   }
 }

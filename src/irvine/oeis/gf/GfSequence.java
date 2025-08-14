@@ -25,7 +25,7 @@ public class GfSequence extends AbstractSequence implements DirectSequence {
    */
   public GfSequence(final int offset, final int step, final Series<Q> gf) {
     super(offset);
-    mN = offset - step;
+    mN = offset * step - step;
     mStep = step;
     mSeries = gf;
   }

@@ -13,8 +13,9 @@ import irvine.oeis.a010.A010051;
  */
 public class A049084 extends Sequence1 {
 
-  final Sequence mA000720 = new A000720();
-  final Sequence mA010051 = new A010051();
+  private final Sequence mA000720 = new A000720();
+  private final Sequence mA010051 = new A010051();
+
   @Override
   public Z next() {
     return mA000720.next().multiply(mA010051.next());

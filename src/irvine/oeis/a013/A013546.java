@@ -1,23 +1,15 @@
 package irvine.oeis.a013;
 
-import irvine.math.group.PolynomialRingField;
-import irvine.math.q.Q;
-import irvine.math.q.Rationals;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.gf.GfSequence;
 
 /**
  * A013546 Numerator of [x^(2n)] in the Taylor expansion cosh(cosec(x)-coth(x))=1 +x^2/72 -215*x^4/31104 +199159*x^6/235146240-...
  * @author Sean A. Irvine
  */
-public class A013546 extends Sequence0 {
+public class A013546 extends GfSequence {
 
-  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private int mN = -2;
-
-  @Override
-  public Z next() {
-    mN += 2;
-    return RING.cosh(RING.subtract(RING.xcsc(RING.x(), mN + 1), RING.xcoth(RING.x(), mN + 1)).shift(-1), mN).coeff(mN).num();
+  /** Construct the sequence. */
+  public A013546() {
+    super(0, 2, "cosh((xcsc(x) - xcoth(x))/x)");
   }
 }

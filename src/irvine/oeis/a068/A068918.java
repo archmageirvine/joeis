@@ -1,17 +1,16 @@
 package irvine.oeis.a068;
 
-import irvine.math.q.Q;
-import irvine.math.z.Z;
+import irvine.oeis.gf.DenominatorGfSequence;
 
 /**
  * A068918 Denominators of coefficients in 1/sin(x) - 1/sinh(x) power series.
  * @author Sean A. Irvine
  */
-public class A068918 extends A068917 {
+public class A068918 extends DenominatorGfSequence {
 
-  @Override
-  protected Z select(final Q n) {
-    return n.den();
+  /** Construct the sequence. */
+  public A068918() {
+    super(0, 4, "(xcsc(x)-xcsch(x))/x^2");
   }
 }
 

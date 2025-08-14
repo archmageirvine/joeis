@@ -226,4 +226,16 @@ public class GraphUtilsTest extends TestCase {
     assertEquals(32, g.order());
     assertEquals(17, g.size());
   }
+
+  public void testHouseFree() {
+    final Graph g = new SmallGraph(5);
+    g.addEdge(0, 2);
+    g.addEdge(0, 3);
+    g.addEdge(1, 2);
+    g.addEdge(1, 3);
+    g.addEdge(1, 4);
+    assertTrue(GraphUtils.houseFree(g));
+    g.addEdge(2, 4);
+    assertFalse(GraphUtils.houseFree(g));
+  }
 }

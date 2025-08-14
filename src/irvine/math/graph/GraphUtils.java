@@ -1289,6 +1289,35 @@ public final class GraphUtils {
   }
 
   /**
+   * Check the graph has no induced cycle of length 4.
+   * @param graph the graph
+   * @return true if there is no C4 path.
+   */
+  public static boolean c4Free(final Graph graph) {
+    if (graph.order() < 4) {
+      return true;
+    }
+    // a -- b -- c -- d
+    // |______________|
+    for (int a = 0; a < graph.order(); ++a) {
+      for (int b = graph.nextVertex(a, -1); b >= 0; b = graph.nextVertex(a, b)) {
+        if (graph.degree(b) >= 2) {
+          for (int c = graph.nextVertex(b, -1); c >= 0; c = graph.nextVertex(b, c)) {
+            if (a != c && !graph.isAdjacent(a, c) && graph.degree(c) >= 2) {
+              for (int d = graph.nextVertex(c, -1); d >= 0; d = graph.nextVertex(c, d)) {
+                if (d != a && d != b && graph.isAdjacent(d, a) && !graph.isAdjacent(d, b)) {
+                  return false;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    return true;
+  }
+
+  /**
    * Check the graph has no induced path of length 5.
    * @param graph the graph
    * @return true if there is no P5 path.

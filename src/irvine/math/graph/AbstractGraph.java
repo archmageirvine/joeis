@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 
 import irvine.math.function.Functions;
 
@@ -434,5 +436,77 @@ public abstract class AbstractGraph implements Graph {
       }
     }
     return false;
+  }
+
+  // Chordal testing code loosely based on implementation in
+  // https://github.com/networkx/networkx
+
+  // Returns a node in choices that has more connections in graph to nodes in wannaConnect.
+  private int maxCardinalityNode(final Set<Integer> choices, final boolean[] wannaConnect) {
+    int maxNumber = -1;
+    int maxCardinalityNode = -1;
+    for (final int x : choices) {
+      int number = 0;
+      int y = -1;
+      while ((y = nextVertex(x, y)) >= 0) {
+        if (wannaConnect[y]) {
+          ++number;
+        }
+      }
+      if (number > maxNumber) {
+        maxNumber = number;
+        maxCardinalityNode = x;
+      }
+    }
+    return maxCardinalityNode;
+  }
+
+  private boolean isComplete(final Set<Integer> cliqueWannaBe) {
+    for (final int v : cliqueWannaBe) {
+      for (final int u : cliqueWannaBe) {
+        if (u == v) {
+          break;
+        }
+        if (!isAdjacent(v, u)) {
+          return false;
+        }
+      }
+    }
+    return true;
+  }
+
+  /**
+   * Test if the graph is chordal.
+   * @return true iff the graph is chordal
+   */
+  public boolean isChordal() {
+    final HashSet<Integer> unnumbered = new HashSet<>();
+    for (int k = 1; k < order(); ++k) {
+      unnumbered.add(k);
+    }
+    final boolean[] numbered = new boolean[order()];
+    numbered[0] = true;
+    while (!unnumbered.isEmpty()) {
+      final int v = maxCardinalityNode(unnumbered, numbered);
+      unnumbered.remove(v);
+      numbered[v] = true;
+      final HashSet<Integer> cliqueWannaBe = new HashSet<>();
+      int y = -1;
+      while ((y = nextVertex(v, y)) >= 0) {
+        if (numbered[y]) {
+          cliqueWannaBe.add(y);
+        }
+      }
+      if (!isComplete(cliqueWannaBe)) {
+        System.out.println(this + " has hole");
+        return false;
+      }
+    }
+    return true;
+  }
+
+  @Override
+  public boolean hasHole(final int minLength) {
+    return new HoleFinder(this, minLength).hasHole();
   }
 }

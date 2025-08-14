@@ -219,4 +219,18 @@ public interface Graph {
    * @return true if the graph has a K5 subgraph
    */
   boolean hasK5();
+
+  /**
+   * Test if a graph is chordal.
+   * @param graph graph to test
+   * @return true iff the graph is chordal
+   */
+  boolean isChordal();
+
+  /**
+   * Test if the graph has a hole.
+   * @param minLength minimum length
+   * @return true iff the graph has hole of the minimum length or longer
+   */
+  boolean hasHole(final int minLength);
 }

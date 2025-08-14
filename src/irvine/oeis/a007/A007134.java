@@ -17,7 +17,7 @@ public class A007134 extends A048192 {
 
   /** Construct the sequence. */
   public A007134() {
-    super(() -> graph -> isChordal(graph) ? labellings(graph) : 0);
+    super(() -> graph -> graph.isChordal() ? labellings(graph) : 0);
   }
 
   private static long labellings(final Graph graph) {

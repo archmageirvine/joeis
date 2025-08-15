@@ -15,8 +15,8 @@ public class A386218 extends Sequence1 {
 
   protected A386218(final long m) {
     mM = m;
-    mU = m;
-    mV = mM + 1;
+    mU = 1;
+    mV = mM;
   }
 
   /** Construct the sequence. */

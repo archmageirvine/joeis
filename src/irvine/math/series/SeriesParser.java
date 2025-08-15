@@ -402,6 +402,10 @@ public class SeriesParser {
       consume(); // consume )
       return expr;
     }
+    if (t.mType == TokenType.OP && t.mValue.equals("-")) {
+      consume(); // consume -
+      return SQ.negate(parseExpression()); // Unary minus
+    }
     throw new RuntimeException("Unexpected token: " + t.mValue);
   }
 

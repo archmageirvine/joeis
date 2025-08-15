@@ -1,17 +1,15 @@
 package irvine.oeis.a202;
 
-import irvine.math.q.Q;
-import irvine.math.z.Z;
-import irvine.oeis.a012.A012867;
+import irvine.oeis.gf.DenominatorGfSequence;
 
 /**
  * A202621 Denominators of coefficients in Taylor series expansion of log(cotan(x)*arctan(x)).
  * @author Sean A. Irvine
  */
-public class A202621 extends A012867 {
+public class A202621 extends DenominatorGfSequence {
 
-  @Override
-  protected Z select(final Q n) {
-    return n.den();
+  /** Construct the sequence. */
+  public A202621() {
+    super(0, 2, "log(xcot(x)*atan(x)/x)");
   }
 }

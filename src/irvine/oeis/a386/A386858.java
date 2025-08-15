@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A386858 a(n) = floor(5*n^2/8).
+ * A386858 allocated for Chai Wah Wu.
  * @author Georg Fischer
  */
 public class A386858 extends LambdaSequence {

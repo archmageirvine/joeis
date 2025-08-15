@@ -4,7 +4,7 @@ package irvine.oeis.a193;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A193160 E.g.f. A(x) satisfies: A(x/(1-x)) = x*A&apos;(x).
+ * A193160 E.g.f. A(x) satisfies: A(x/(1-x)) = x*A'(x).
  * new A193161()
  * @author Georg Fischer
  */

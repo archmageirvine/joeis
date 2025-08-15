@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a166.A166234;
 
 /**
- * A209802 Partial sums of exponential M√∂bius function, A166234.
+ * A209802 Partial sums of exponential M\u00f6bius function, A166234.
  * @author Georg Fischer
  */
 public class A209802 extends PartialSumSequence {

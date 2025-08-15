@@ -38,7 +38,7 @@ public class A079421 extends Sequence0 {
       case 2:
         ++mY;
         break;
-      case 3:
+      default: // 3
         --mX;
         break;
     }

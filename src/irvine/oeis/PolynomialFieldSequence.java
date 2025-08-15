@@ -160,9 +160,15 @@ public class PolynomialFieldSequence extends AbstractSequence implements Rationa
       } else if (pelem.charAt(0) == '<') { // shift left/high (+m) or right/low (-m) = multiply by x^m
         parms = pelem.substring(1);
         pelem = "<";
+      } else if (pelem.charAt(0) == '>') { // shift left/high (-m) or right/low (+m) = multiply by x^(-m)
+        parms = pelem.substring(1);
+        pelem = ">";
       } else if (pelem.length() >= 2 && Character.isDigit(pelem.charAt(1))) { // one of p, i, ^ with 1 or 2 additional int parameter(s)
         parms = pelem.substring(1);
         pelem = pelem.substring(0, 1); // single character code
+      } else if (pelem.compareTo("S") >= 0 && pelem.compareTo("V") <= 0) { // S...U -> B...E
+        pelem = Character.toString(pelem.charAt(0) - 'S' + 'B');
+        mPostStrings[k] = pelem;
       }
       final Integer ix = POST_MAP.get(pelem);
       if (ix != null) {
@@ -476,6 +482,20 @@ public class PolynomialFieldSequence extends AbstractSequence implements Rationa
   }
 
   /**
+   * Term-wise power of first polynoomial with exponents from second polynomial.
+   * @param a first polynomial
+   * @param b second polynomial (must have integer coefficients)
+   * @return <code>a.^b</code>
+   */
+  public Polynomial<Q> dotPower(final Polynomial<Q> a, final Polynomial<Q> b) {
+    final Polynomial<Q> res = new Polynomial<>("x", Q.ZERO, Q.ONE);
+    for (int k = 0; k <= Math.min(a.degree(), b.degree()); ++k) {
+      res.add(a.coeff(k).pow(b.coeff(k).num().longValueExact()));
+    }
+    return res;
+  }
+
+  /**
    * Compute the next term of the sequence, including any zeroes that are left out by <code>next()</code>.
    * @return next coefficient of the generating function
    */
@@ -653,20 +673,16 @@ public class PolynomialFieldSequence extends AbstractSequence implements Rationa
           mStack.set(++top, RING.x());
           break;
         case 45:  // "S"  1st additional g.f. as a sequence
-        case 55:  // "B"  1st additional g.f. as a sequence
-          mStack.set(top, RING.substitute(mTerms.get(0), mStack.get(top), m));
-          break;
         case 46:  // "T"  2nd additional g.f. as a sequence
-        case 56:  // "C"  2nd additional g.f. as a sequence
-          mStack.set(top, RING.substitute(mTerms.get(1), mStack.get(top), m));
-          break;
         case 47:  // "U"  3rd additional g.f. as a sequence
-        case 57:  // "D"  3rd additional g.f. as a sequence
-          mStack.set(top, RING.substitute(mTerms.get(2), mStack.get(top), m));
-          break;
         case 48:  // "V"  4th additional g.f. as a sequence
+          // no longer used - mapped to "B".."E" during init.
+          break;
+        case 55:  // "B"  1st additional g.f. as a sequence
+        case 56:  // "C"  2nd additional g.f. as a sequence
+        case 57:  // "D"  3rd additional g.f. as a sequence
         case 58:  // "E"  4th additional g.f. as a sequence
-          mStack.set(top, RING.substitute(mTerms.get(3), mStack.get(top), m));
+          mStack.set(top, RING.substitute(mTerms.get(ix - 55), mStack.get(top), m));
           break;
         case 49:  // "besselI"
           --top;
@@ -696,10 +712,10 @@ public class PolynomialFieldSequence extends AbstractSequence implements Rationa
           --top;
           mStack.set(top, dotQuotient(mStack.get(top), mStack.get(top + 1)));
           break;
-        case 61:  // "*n!" - serlaplace
+        case 61:  // "*n!" - elementwise multiplication by n!
           mStack.set(top, RING.serlaplace(mStack.get(top)));
           break;
-        case 62:  // "/n!" - serlaplace
+        case 62:  // "/n!" - elementwise division by n!
           mStack.set(top, makeEgf(mStack.get(top)));
           break;
         case 63:  // "*n" - multiply by exponent
@@ -710,6 +726,10 @@ public class PolynomialFieldSequence extends AbstractSequence implements Rationa
           break;
         case 65:  // "^n" - power by exponent
           mStack.set(top, powerByExponent(mStack.get(top)));
+          break;
+        case 66:  // ".^" - elementwise power
+          --top;
+          mStack.set(top, dotPower(mStack.get(top), mStack.get(top + 1)));
           break;
         default: // should not occur with proper postfix expressions
           throw new RuntimeException("invalid postfix code " + ix);
@@ -823,6 +843,7 @@ public class PolynomialFieldSequence extends AbstractSequence implements Rationa
     POST_MAP.put("*n", 63);  // multiply by exponent 
     POST_MAP.put("/n", 64);  // divide by exponent for e >= 1
     POST_MAP.put("^n", 65);  // power by exponent
+    POST_MAP.put(".^", 66);  // elementwise power
   } //! fillMap
 
   @Override

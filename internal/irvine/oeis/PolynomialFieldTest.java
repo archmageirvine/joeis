@@ -265,9 +265,9 @@ public final class PolynomialFieldTest {
       ++ind;
       final Q term = prs.nextQ();
       if (bfile) {
-        System.out.print(ind + " " + term.toString() + "\n");
+        System.out.print(ind + " " + ((gfType & prs.DEN_OGF) != 0 ? term.den().toString() : term.toString()) + "\n");
       } else {
-        System.out.print((ind == offset ? "" : ", ") + term.toString());
+        System.out.print((ind == offset ? "" : ", ") + ((gfType & prs.DEN_OGF) != 0 ? term.den().toString() : term.toString()));
       }
     } // while
     System.out.println();

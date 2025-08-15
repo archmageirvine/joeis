@@ -1,20 +1,20 @@
 package irvine.oeis.a160;
-// manually anopan 1,1
+// manually 2025-08-13
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.a000.A000203;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.a051.A051377;
 
 /**
  * A160135 Sum of non-exponential divisors of n.
  * @author Georg Fischer
  */
-public class A160135 extends AbstractSequence {
+public class A160135 extends AbstractSequence implements DirectSequence {
 
   private int mN = 0;
-  private final A000203 mSeq1 = new A000203();
-  private final A051377 mSeq2 = new A051377();
+  private final DirectSequence mA051377 = new A051377();
 
   /** Construct the sequence. */
   public A160135() {
@@ -23,7 +23,17 @@ public class A160135 extends AbstractSequence {
 
   @Override
   public Z next() {
-    final Z result = mSeq1.next().subtract(mSeq2.next());
-    return (++mN == 1) ? Z.ONE : result;
+    return a(++mN);
   }
+
+  @Override
+  public Z a(final Z n) {
+    return n.equals(Z.ONE) ? Z.ONE : Functions.SIGMA1.z(n).subtract(mA051377.a(n));
+  }
+
+  @Override
+  public Z a(final int n) {
+    return a(Z.valueOf(n));
+  }
+
 }

@@ -10,7 +10,7 @@ class HoleFinder {
   private final int mN;
   private final int mMinLength;
 
-  public HoleFinder(final Graph g, final int minLength) {
+  HoleFinder(final Graph g, final int minLength) {
     mG = g;
     mN = g.order();
     mMinLength = minLength;
@@ -41,8 +41,7 @@ class HoleFinder {
   private boolean isChordless(final int[] cycle, final int m) {
     for (int i = 0; i < m; ++i) {
       for (int j = i + 1; j < m; ++j) {
-        int diff = j - i;
-        if (diff == 1 || (i == 0 && j == m - 1)) {
+        if (j - i == 1 || (i == 0 && j == m - 1)) {
           continue; // consecutive or closing
         }
         if (mG.isAdjacent(cycle[i], cycle[j])) {

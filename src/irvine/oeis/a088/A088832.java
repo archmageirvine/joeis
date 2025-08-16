@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a045.A045769;
 
 /**
- * A088832 Numbers n whose abundance is 4: sigma(n) - 2n = 4.
+ * A088832 Numbers k whose abundance is 4: sigma(k) - 2*k = 4.
  * @author Georg Fischer
  */
 public class A088832 extends AbstractSequence {

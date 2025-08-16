@@ -5,7 +5,7 @@ package irvine.oeis.a138;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A138898 Ratio of (2n-1)! to number of zeros in lower part of Sylvester matrix for polynomial of degree n with all nonzero coefficients.
+ * A138898 Ratio of (2*n-1)! to number of zeros in lower part of Sylvester matrix for polynomial of degree n with all nonzero coefficients.
  * @author Georg Fischer
  */
 public class A138898 extends HolonomicRecurrence {

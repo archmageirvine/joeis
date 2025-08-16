@@ -5,7 +5,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A194459 Number of entries in the n-th row of Pascal's triangle not divisible by 5.
+ * A386952 Number of entries in the n-th row of Pascal's triangle not divisible by 9.
  * @author Sean A. Irvine
  */
 public class A386952 extends LambdaSequence {

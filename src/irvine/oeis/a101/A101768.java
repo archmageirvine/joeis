@@ -4,7 +4,7 @@ package irvine.oeis.a101;
 import irvine.oeis.prime.PrimeConditionListSequence;
 
 /**
- * A101768 Numbers n such that n, 2n+1, 3n+2, 4n+3, 5n+4, 6n+5, 7n+6 are primes.
+ * A101768 Numbers k such that k, 2*k+1, 3*k+2, 4*k+3, 5*k+4, 6*k+5, 7*k+6 are primes.
  * @author Georg Fischer
  */
 public class A101768 extends PrimeConditionListSequence {

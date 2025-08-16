@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A115058 Primes p such that 3p+2 is not prime.
+ * A115058 Primes p such that 3*p+2 is not prime.
  * @author Georg Fischer
  */
 public class A115058 extends FilterSequence {

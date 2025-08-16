@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384226 Irregular triangle read by rows: T(n,k) is the sum of odd divisors in the k-th sublist of divisors of n whose terms increase by a factor of at most 2, with n &gt;= 1, k &gt;= 1.
+ * A384226 Irregular triangle read by rows: T(n,k) is the sum of odd divisors in the k-th 2-dense sublist of divisors of n, with n &gt;= 1, k &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A384226 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a102;
 import irvine.oeis.prime.CongruenceForm;
 
 /**
- * A102271 Primes of the form 3x^2 + 7y^2.
+ * A102271 Primes of the form 3*x^2 + 7*y^2.
  * @author Georg Fischer
  */
 public class A102271 extends CongruenceForm {

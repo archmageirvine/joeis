@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A013651 Period of continued fraction for sqrt(n) contains at least two 1's.
+ * A013651 Numbers k such that the period of the continued fraction for sqrt(k) contains at least two 1's.
  * @author Sean A. Irvine
  */
 public class A013651 extends Sequence1 {

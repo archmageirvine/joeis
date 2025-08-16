@@ -4,7 +4,7 @@ package irvine.oeis.a292;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A292022 a(n) = 4n(n^2+2).
+ * A292022 a(n) = 4*n*(n^2 + 2).
  * @author Georg Fischer
  */
 public class A292022 extends LinearRecurrence {

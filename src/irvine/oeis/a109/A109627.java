@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000027;
 import irvine.oeis.a178.A178914;
 
 /**
- * A109627 Numbers n such that concatenation of n and its 10's complement is a palindromic prime.
+ * A109627 Numbers k such that concatenation of k and its 10's complement is a palindromic prime.
  * @author Georg Fischer
  */
 public class A109627 extends FilterSequence {

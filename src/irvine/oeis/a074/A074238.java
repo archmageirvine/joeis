@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074238 Numbers n such that the sum of the reverses of 1,2,...,n is a perfect square.
+ * A074238 Numbers k such that the sum of the reverses of 1,2,...,k is a perfect square.
  * @author Sean A. Irvine
  */
 public class A074238 extends Sequence1 {

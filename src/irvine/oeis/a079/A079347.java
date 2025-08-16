@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a001.A001602;
 
 /**
- * A079347 Fibonacci{p-(p/5)} is the first Fibonacci number that p divides and this is p-(p/5).
+ * A079347 Fibonacci(p-(p/5)) is the first Fibonacci number that p divides and this is p-(p/5).
  * @author Sean A. Irvine
  */
 public class A079347 extends A001602 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A046808 Recursive sequence of indices of Proth primes a*2^b + 1.
+ * A046808 a(n) is the least integer greater than a(n-1) such that a(n-1)*2^a(n) + 1 is prime, a(1) = 1.
  * @author Sean A. Irvine
  */
 public class A046808 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A110853 Squares of the form prime(n)*(n+1)^2 + 1.
+ * A110853 Squares of the form prime(k)*(k+1)^2 + 1.
  *
  * @author Georg Fischer
  */

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A111041 Numbers n such that 2*n^2 + 25 is prime.
+ * A111041 Numbers m such that 2*m^2 + 25 is prime.
  * @author Georg Fischer
  */
 public class A111041 extends PrimePositionSubsequence {

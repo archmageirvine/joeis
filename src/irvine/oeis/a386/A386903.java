@@ -7,7 +7,7 @@ import java.util.List;
 import irvine.math.z.Z;
 
 /**
- * A386756 allocated for Janaka Rodrigo.
+ * A386903 allocated for Janaka Rodrigo.
  * @author Sean A. Irvine
  */
 public class A386903 extends A386296 {

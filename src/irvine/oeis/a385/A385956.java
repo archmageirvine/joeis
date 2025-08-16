@@ -3,7 +3,7 @@ package irvine.oeis.a385;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A013550.
+ * A385956 Intersection of A025487 and A002378.
  * @author Sean A. Irvine
  */
 public class A385956 extends FiniteSequence {

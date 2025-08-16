@@ -6,7 +6,7 @@ import irvine.oeis.cons.ZBaseExpansionSequence;
 
 
 /**
- * A318436 Decimal expansion of the nominal solar mass parameter in m^3 s^-2.
+ * A318436 Duplicate of A255820.
  * @author Georg Fischer
  */
 public class A318436 extends ZBaseExpansionSequence {

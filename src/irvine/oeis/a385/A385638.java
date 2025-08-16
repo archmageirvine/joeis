@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A386409 Number of nonnegative values s &lt; n such that (-s)^s = n - s (mod n).
+ * A385638 Number of nonnegative s &lt; n such that (-s)^s = -s^s (mod n).
  * @author Sean A. Irvine
  */
 public class A385638 extends Sequence1 {

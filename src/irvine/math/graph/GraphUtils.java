@@ -1335,7 +1335,7 @@ public final class GraphUtils {
               for (int d = graph.nextVertex(c, -1); d >= 0; d = graph.nextVertex(c, d)) {
                 if (d != a && d != b && !graph.isAdjacent(d, b) && !graph.isAdjacent(d, a) && graph.degree(d) >= 2) {
                   for (int e = graph.nextVertex(d, a); e >= 0; e = graph.nextVertex(d, e)) {
-                    if (e != b && e != c && !graph.isAdjacent(a, e) && !graph.isAdjacent(e, b) && !graph.isAdjacent(e, c)) {
+                    if (e != b && e != c && !graph.isAdjacent(e, a) && !graph.isAdjacent(e, b) && !graph.isAdjacent(e, c)) {
                       return false;
                     }
                   }
@@ -1368,7 +1368,43 @@ public final class GraphUtils {
               for (int d = graph.nextVertex(c, -1); d >= 0; d = graph.nextVertex(c, d)) {
                 if (d != a && d != b && !graph.isAdjacent(d, b) && !graph.isAdjacent(d, a) && graph.degree(d) >= 2) {
                   for (int e = graph.nextVertex(d, a); e >= 0; e = graph.nextVertex(d, e)) {
-                    if (e != b && e != c && graph.isAdjacent(a, e) && !graph.isAdjacent(e, b) && !graph.isAdjacent(e, c)) {
+                    if (e != b && e != c && graph.isAdjacent(e, a) && !graph.isAdjacent(e, b) && !graph.isAdjacent(e, c)) {
+                      return false;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    return true;
+  }
+
+  /**
+   * Check the graph has no induced fork.
+   * @param graph the graph
+   * @return true if there is no fork.
+   */
+  public static boolean forkFree(final Graph graph) {
+    if (graph.order() < 5) {
+      return true;
+    }
+    //              d
+    //             /
+    // a -- b -- c
+    //             \
+    //              e
+    for (int a = 0; a < graph.order(); ++a) {
+      for (int b = graph.nextVertex(a, -1); b >= 0; b = graph.nextVertex(a, b)) {
+        if (graph.degree(b) >= 2) {
+          for (int c = graph.nextVertex(b, -1); c >= 0; c = graph.nextVertex(b, c)) {
+            if (a != c && !graph.isAdjacent(a, c) && graph.degree(c) >= 3) {
+              for (int d = graph.nextVertex(c, -1); d >= 0; d = graph.nextVertex(c, d)) {
+                if (d != a && d != b && !graph.isAdjacent(d, b) && !graph.isAdjacent(d, a)) {
+                  for (int e = graph.nextVertex(c, d); e >= 0; e = graph.nextVertex(c, e)) {
+                    if (e != b && e != c && !graph.isAdjacent(e, a) && !graph.isAdjacent(e, b) && !graph.isAdjacent(e, d)) {
                       return false;
                     }
                   }
@@ -1420,5 +1456,45 @@ public final class GraphUtils {
     }
     return true;
   }
+
+  /**
+   * Check the graph has no induced kite.
+   * The kite is the complement of the fork.
+   * @param graph the graph
+   * @return true if there is no kite.
+   */
+  public static boolean kiteFree(final Graph graph) {
+    if (graph.order() < 5) {
+      return true;
+    }
+    //        a
+    //       /|\
+    // e -- d | c
+    //       \|/
+    //        b
+    for (int a = 0; a < graph.order(); ++a) {
+      if (graph.degree(a) >= 3) {
+        for (int b = graph.nextVertex(a, -1); b >= 0; b = graph.nextVertex(a, b)) {
+          if (graph.degree(b) >= 3) {
+            for (int c = graph.nextVertex(b, -1); c >= 0; c = graph.nextVertex(b, c)) {
+              if (a != c && graph.isAdjacent(a, c)) {
+                for (int d = graph.nextVertex(b, -1); d >= 0; d = graph.nextVertex(b, d)) {
+                  if (d != a && d != c && graph.isAdjacent(d, a) && !graph.isAdjacent(d, c)) {
+                    for (int e = graph.nextVertex(d, -1); e >= 0; e = graph.nextVertex(d, e)) {
+                      if (e != a && e != b && e != c && !graph.isAdjacent(e, a) && !graph.isAdjacent(e, b) && !graph.isAdjacent(e, c)) {
+                        return false;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    return true;
+  }
+
 }
 

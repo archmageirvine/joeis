@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A385430 allocated for Robert G. Wilson v.
+ * A385430 Least number k such that k and k + n! have the same number of divisors.
  * @author Sean A. Irvine
  */
 public class A385430 extends Sequence1 {

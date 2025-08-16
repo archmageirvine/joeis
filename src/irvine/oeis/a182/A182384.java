@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A182384 Primes of the form n^5 + n^4 + n^3 + n^2 + n - 1.
+ * A182384 Primes of the form k^5 + k^4 + k^3 + k^2 + k - 1.
  * @author Georg Fischer
  */
 public class A182384 extends PrimeSubsequence {

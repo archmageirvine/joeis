@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A202308 Floor(sqrt(13*n)).
+ * A202308 a(n) = floor(sqrt(13*n)).
  * @author Georg Fischer
  */
 public class A202308 extends FloorSequence {

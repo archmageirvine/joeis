@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A244039 a(n) = 2^(2*n-1)*( binomial(3*n/2,n) + binomial((3*n-1)/2,n) ).
+ * A244039 a(n) = 2^(2*n-1) * ( binomial(3*n/2,n) + binomial((3*n-1)/2,n) ).
  * a(n)=sum(k=0,n,(-1)^k*2^(n-k)*binom(3*n,n-k)*binom(n+k-1,k))
  * @author Georg Fischer
  */

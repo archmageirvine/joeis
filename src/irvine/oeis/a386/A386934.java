@@ -4,7 +4,7 @@ import irvine.oeis.a363.A363679;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A075838 Decimal expansion of the solution to the donkey problem.
+ * A386934 Decimal expansion of BesselI(1, 2*sqrt(2))/(sqrt(2)*BesselI(2, 2*sqrt(2))).
  * @author Sean A. Irvine
  */
 public class A386934 extends DecimalExpansionSequence {

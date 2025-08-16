@@ -3,7 +3,7 @@ package irvine.oeis.a194;
 
 import irvine.math.cr.CR;
 /**
- * A194316 Triangular array:  g(n,k)=number of fractional parts (i*sqrt(6)) in interval [(k-1)/n, k/n], for 1&lt;=i&lt;=2^n, 1&lt;=k&lt;=n.
+ * A194316 Triangular array: g(n,k)=number of fractional parts (i*sqrt(6)) in interval [(k-1)/n, k/n], for 1&lt;=i&lt;=2^n, 1&lt;=k&lt;=n.
  * @author Georg Fischer
  */
 public class A194316 extends A194285 {

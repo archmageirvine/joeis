@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A386675 allocated for David Ulgenes.
+ * A386675 Triangle of numerators for rational convergents to Taylor series of 1/Gamma(x+1).
  * @author Sean A. Irvine
  */
 public class A386675 extends Sequence0 {

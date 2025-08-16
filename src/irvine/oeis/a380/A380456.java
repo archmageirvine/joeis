@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001597;
 
 /**
- * A380456 allocated for Michael De Vlieger.
+ * A380456 Perfect powers k^m, m &gt; 1, omega(k) &gt; 1, such that A053669(k) &lt; A006530(k), where omega = A001221.
  * @author Sean A. Irvine
  */
 public class A380456 extends Sequence1 {

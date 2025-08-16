@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a010.A010371;
 
 /**
- * A385249 allocated for Marco Rip\u00e0.
+ * A385249 Number of iterations of seven segments count x -&gt; A010371(x) to go from n to a fixed point.
  * @author Sean A. Irvine
  */
 public class A385249 extends Sequence0 {

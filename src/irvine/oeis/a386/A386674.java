@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A386674 allocated for David Bevan.
+ * A386674 Indices of ascending runs in a random sequence in order of decreasing expected length.
  * @author Sean A. Irvine
  */
 public class A386674 extends Sequence1 {

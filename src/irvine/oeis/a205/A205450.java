@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001906;
 import irvine.oeis.a204.A204892;
 
 /**
- * A205450 Least k such that n divides s(k)-s(j) for some j&lt;k, where s(j) is the 2j-th Fibonacci number.
+ * A205450 Least k such that n divides s(k) - s(j) for some j&lt;k, where s(j) is the 2j-th Fibonacci number.
  * @author Georg Fischer
  */
 public class A205450 extends A204892 {

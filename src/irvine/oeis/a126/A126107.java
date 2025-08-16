@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A126107 Primes p such that 2p+1 and 2p+3 are twin primes.
+ * A126107 Primes p such that 2*p+1 and 2*p+3 are twin primes.
  * @author Georg Fischer
  */
 public class A126107 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A079390 spf(n) * spf(n+1) * spf(n+2), where spf=A020639 (smallest prime factor).
+ * A079390 a(n) = lpf(n) * lpf(n+1) * lpf(n+2), where lpf(n) = A020639(n) is the least prime factor of n.
  * @author Sean A. Irvine
  */
 public class A079390 extends Sequence0 {

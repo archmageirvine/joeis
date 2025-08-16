@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * A386848 allocated for Janaka Rodrigo.
+ * A386848 Array read by descending antidiagonals:T(n,k) is the number of ways to partition n X n X n cube into k noncongruent cuboids excluding strict cuboids.
  * @author Sean A. Irvine
  */
 public class A386848 extends A386296 {

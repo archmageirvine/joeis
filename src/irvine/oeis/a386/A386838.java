@@ -9,7 +9,7 @@ import irvine.oeis.a001.A001481;
 import irvine.util.Pair;
 
 /**
- * A386838 allocated for Miles Englezou.
+ * A386838 Minimum number of unit squares that a straight line drawn from (0,0) to (x,y) passes through on the square lattice where x^2 + y^2 = A001481(n). If A001481(n) can be written as a sum of two squares in two or more ways, x and y are chosen such that a(n) is the least value.
  * @author Sean A. Irvine
  */
 public class A386838 extends A001481 {

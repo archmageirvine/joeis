@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000203;
 import irvine.oeis.a029.A029837;
 
 /**
- * A163399 a(n)=(the binary order of n)^sigma(n).
+ * A163399 a(n) = (the binary order of n)^sigma(n).
  * @author Georg Fischer
  */
 public class A163399 extends Sequence1 {

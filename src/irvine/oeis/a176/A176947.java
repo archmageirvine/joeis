@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A176947 Primes of the form 11^n+2^n.
+ * A176947 Primes of the form 11^k + 2^k.
  * @author Georg Fischer
  */
 public class A176947 extends PrimeSubsequence {

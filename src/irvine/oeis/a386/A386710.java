@@ -5,7 +5,7 @@ import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A386710 allocated for Kelvin Voskuijl.
+ * A386710 Decimal expansion of BesselI(2, 2 * sqrt(2)).
  * @author Sean A. Irvine
  */
 public class A386710 extends DecimalExpansionSequence {

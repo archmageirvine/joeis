@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067751 Number of solutions in nonnegative integers of xy+xz+yz=n.
+ * A067751 Number of solutions in nonnegative integers of x*y+x*z+y*z = n.
  * @author Sean A. Irvine
  */
 public class A067751 extends Sequence1 {

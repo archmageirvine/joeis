@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A079408 Array T(m,n) (m&gt;=0, n&gt;=0) read by antidiagonals: T(0, 0) = 1, T(0, n) = 0 if n /= 0, T(m, n) = T(m-1, T(m-1, n)) + T(m-1, n - T(m-1, n-1)) if m &gt; 0.
+ * A079408 Array T(m,n) (m&gt;=0, n&gt;=0) read by antidiagonals: T(0, 0) = 1, T(0, n) = 0 if n != 0, T(m, n) = T(m-1, T(m-1, n)) + T(m-1, n - T(m-1, n-1)) if m &gt; 0.
  * @author Sean A. Irvine
  */
 public class A079408 extends Sequence0 {

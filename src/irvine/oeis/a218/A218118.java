@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a005.A005261;
 
 /**
- * A218118  G.f.: A(x) = exp( Sum_{n&gt;=1} A005261(n)/2*x^n/n ) where A005261(n) = Sum_{k=0..n} C(n,k)^5.
+ * A218118 G.f.: A(x) = exp( Sum_{n&gt;=1} A005261(n)/2*x^n/n ) where A005261(n) = Sum_{k=0..n} C(n,k)^5.
  * new A005261()
  * @author Georg Fischer
  */

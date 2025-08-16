@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A023073 k and 2k are anagrams in base 8 (written in base 8).
+ * A023073 Positive numbers k such that k and 2*k are anagrams in base 8 (written in base 8).
  * @author Sean A. Irvine
  */
 public class A023073 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a095.A095234;
 
 /**
- * A096155 Numbers n such that A095234(n-1) is divisible by n.
+ * A096155 Numbers k such that A095234(k-1) is divisible by k.
  * @author Georg Fischer
  */
 public class A096155 extends FilterPositionSequence {

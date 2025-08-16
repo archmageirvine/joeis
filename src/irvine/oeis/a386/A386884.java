@@ -5,7 +5,7 @@ import java.util.List;
 import irvine.oeis.a381.A381847;
 
 /**
- * A386756 allocated for Janaka Rodrigo.
+ * A386884 a(n) is the number of distinct four-cuboid combinations that fill an n X n X n cube using only strict cuboids.
  * @author Sean A. Irvine
  */
 public class A386884 extends A381847 {

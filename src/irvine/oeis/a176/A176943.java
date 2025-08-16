@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A176943 Primes of the form 43^n+10^n.
+ * A176943 Primes of the form 43^k+10^k.
  * @author Georg Fischer
  */
 public class A176943 extends PrimeSubsequence {

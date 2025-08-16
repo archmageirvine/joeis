@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a175.A175708;
 
 /**
- * A176241 Numbers n such that n-th semiprime-n is prime.
+ * A176241 Numbers k such that k-th semiprime - k is prime.
  * @author Georg Fischer
  */
 public class A176241 extends FilterPositionSequence {

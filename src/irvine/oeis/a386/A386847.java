@@ -3,7 +3,7 @@ package irvine.oeis.a386;
 import irvine.math.z.Z;
 
 /**
- * A386847 allocated for Janaka Rodrigo.
+ * A386847 a(n) is the number of sets of distinct five-cuboid combinations that fill an n X n X n cube excluding combinations that contain strict cuboids.
  * @author Sean A. Irvine
  */
 public class A386847 extends A386848 {

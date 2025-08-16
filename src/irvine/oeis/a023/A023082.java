@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A023082 Numbers k such that k and 5*k are anagrams in base 9 (written in base 9).
+ * A023082 Positive numbers k such that k and 5*k are anagrams in base 9 (written in base 9).
  * @author Sean A. Irvine
  */
 public class A023082 extends Sequence1 {

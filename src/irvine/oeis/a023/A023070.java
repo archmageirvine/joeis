@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A023070 k and 4k are anagrams in base 7 (written in base 7).
+ * A023070 Positive numbers k such that k and 4*k are anagrams in base 7 (written in base 7).
  * @author Sean A. Irvine
  */
 public class A023070 extends Sequence1 {

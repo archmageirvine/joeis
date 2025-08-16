@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A385185 allocated for Ross Drewe.
+ * A385185 Number of permutations of 0..n-1 which are binary Gray codes.
  * @author Sean A. Irvine
  */
 public class A385185 extends Sequence1 {

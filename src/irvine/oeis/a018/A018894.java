@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A018894 Numbers n such that sigma(n)/phi(n) sets a new record.
+ * A018894 Numbers k such that sigma(k)/phi(k) sets a new record.
  * @author Sean A. Irvine
  */
 public class A018894 extends Sequence1 {

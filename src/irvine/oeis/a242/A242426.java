@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A242426 floor(n! / n^3).
+ * A242426 a(n) = floor(n! / n^3).
  * @author Georg Fischer
  */
 public class A242426 extends Sequence1 {

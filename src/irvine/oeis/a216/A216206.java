@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A216206 a(n) = product_{i=1..n} ((-2)^i-1).
+ * A216206 a(n) = Product_{i=1..n} ((-2)^i-1).
  * @author Georg Fischer
  */
 public class A216206 extends Sequence0 {

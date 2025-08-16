@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000720;
 
 /**
- * A048884 Numbers n such that sigma(n) - n = n - pi(n) - 1 where pi(n) is A000720.
+ * A048884 Numbers k such that sigma(k) - k = k - pi(k) - 1 where pi(k) is A000720.
  * @author Sean A. Irvine
  */
 public class A048884 extends A000720 {

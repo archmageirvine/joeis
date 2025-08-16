@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A155013 Integer part of square root of A000584.
+ * A155013 Integer part of square root of n^5 = A000584(n).
  * Integer part of square root of A000584.
  * @author Georg Fischer
  */

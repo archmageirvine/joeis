@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079238 Numbers n in which the last K digits of n form an integer divisible by K^2, for K = 1, 2, ..., M, where M is the number of digits in n.
+ * A079238 Numbers j in which the last K digits of j form an integer divisible by K^2, for K = 1, 2, ..., M, where M is the number of digits in j.
  * @author Sean A. Irvine
  */
 public class A079238 extends Sequence1 {

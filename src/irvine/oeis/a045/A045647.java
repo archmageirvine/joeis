@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A045647 Numbers n such that n! stripped of trailing zeros ends in n.
+ * A045647 Numbers k such that k! stripped of trailing zeros ends in k.
  * @author Sean A. Irvine
  */
 public class A045647 extends Sequence1 {

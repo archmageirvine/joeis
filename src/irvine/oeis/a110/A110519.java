@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A110519 Riordan array (1/(1-xc(3x)), xc(3x)/(1-xc(3x))), c(x) the g.f. of A000108.
+ * A110519 Riordan array (1/(1-x*c(3*x)), x*c(3*x)/(1-x*c(3*x))), c(x) the g.f. of A000108.
  * @author Georg Fischer
  */
 public class A110519 extends LambdaTriangle {

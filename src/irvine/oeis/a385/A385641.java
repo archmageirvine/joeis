@@ -4,7 +4,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a097.A097893;
 
 /**
- * A385641 allocated for M\u00e9lika Tebni.
+ * A385641 Partial sums of A097893.
  * @author Sean A. Irvine
  */
 public class A385641 extends PartialSumSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a055.A055865;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A085389 a(n) = (n*(n+1)^(n-1) + 0^n)/(n+1).
+ * A085389 a(1) = 1; for n &gt;= 2, a(n) = (n*(n+1)^(n-1))/(n+1).
  * @author Georg Fischer
  */
 public class A085389 extends SingleTransformSequence {

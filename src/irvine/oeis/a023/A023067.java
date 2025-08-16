@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A023067 Numbers k such that k and 5*k are anagrams in base 6 (written in base 6).
+ * A023067 Positive numbers k such that k and 5*k are anagrams in base 6 (written in base 6).
  * @author Sean A. Irvine
  */
 public class A023067 extends Sequence1 {

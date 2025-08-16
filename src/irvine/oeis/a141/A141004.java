@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A141004 E.g.f. exp(sum_{d|M} (exp(d*x)-1)/d), M=6.
+ * A141004 Expansion of e.g.f. exp(Sum_{d|6} (exp(d*x)-1)/d).
  * @author Georg Fischer
  */
 public class A141004 extends MultiTransformSequence {

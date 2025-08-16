@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
- * A079349 p-(p/5) where Fibonacci{p-(p/5)} is not the first Fibonacci number that p divides.
+ * A079349 p-(p/5) where Fibonacci(p-(p/5)) is not the first Fibonacci number that p divides.
  * @author Sean A. Irvine
  */
 public class A079349 extends Sequence1 {

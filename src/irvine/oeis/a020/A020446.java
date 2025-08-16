@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.a013.A013648;
 
 /**
- * A020446 Period of continued fraction for sqrt(n) contains exactly ten 1's.
+ * A020446 Numbers k such that the period of the continued fraction for sqrt(k) contains exactly ten 1's.
  * @author Sean A. Irvine
  */
 public class A020446 extends A013648 {

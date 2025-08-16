@@ -4,7 +4,7 @@ package irvine.oeis.a138;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A138020 G.f. satisfies A(x) = sqrt( (1 + 2x*A(x)) / (1 - 2x*A(x)) ).
+ * A138020 G.f. satisfies A(x) = sqrt( (1 + 2*x*A(x)) / (1 - 2*x*A(x)) ).
  * Recurrence: +n*(n+1)*(5*n-11)*a(n)+4*(-55*n^3+231*n^2-263*n+51)*a(n-2)-16*(n-3)*(n-4)*(5*n-1)*a(n-4)=0
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A385318 allocated for Juri-Stepan Gerasimov.
+ * A385318 Number of nonnegative s &lt; n such that s^s = (-s)^s (mod n).
  * @author Sean A. Irvine
  */
 public class A385318 extends Sequence1 {

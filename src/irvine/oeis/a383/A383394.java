@@ -9,7 +9,7 @@ import irvine.oeis.a052.A052486;
 import irvine.util.Pair;
 
 /**
- * A383394 allocated for Michael De Vlieger.
+ * A383394 Perfect powers of Achilles numbers.
  * @author Sean A. Irvine
  */
 public class A383394 extends Sequence1 {

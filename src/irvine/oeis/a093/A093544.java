@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000265;
 
 /**
- * A093544 Numerator of (4n-3)/A000265(n). Numerator of pairwise quotients of A004130.
+ * A093544 Numerator of (4*n-3)/A000265(n). Numerator of pairwise quotients of A004130.
  * @author Georg Fischer
  */
 public class A093544 extends A000265 {

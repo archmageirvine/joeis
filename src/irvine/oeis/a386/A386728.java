@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A386728 allocated for Kolosov Petro.
+ * A386728 Triangle read by rows: T(n,k) is the denominator of A(n,k), such that A(n,k) satisfies the identity for sums of odd powers: Sum_{k=1..p} k^(2n-1) = 1/(2*n) * Sum_{k=0..n-1} A(n,k) * (p^2+p)^(n-k), for all integers p &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A386728 extends Sequence0 {

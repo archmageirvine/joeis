@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A386626 allocated for Clark Kimberling.
+ * A386626 a(n) = denominator q of prime-fraction p/q that minimizes |m/n - p/q|, where p is 1 or prime, q is prime, q &lt; 2n, and 1 &lt;= m &lt;= 2n-1.
  * @author Sean A. Irvine
  */
 public class A386626 extends AbstractSequence {

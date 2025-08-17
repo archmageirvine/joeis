@@ -32,13 +32,15 @@ public class A386218 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (++mV >= mM * (mU + mM)) {
-        ++mU;
+      if (++mV > mM * (mU + mM)) {
+        if (++mU == mM) {
+          ++mU;
+        }
         mV = mM + 1;
       }
-      if ((mM * (mM + mU)) % mV == 0) {
+      if (mU != mV && (mM * (mM + mU)) % mV == 0) {
         final long w = mV - (mM * (mM + mU)) / mV;
-        if (w > mM) {
+        if (w > 0 && w != mM && w != mU && w != mV) {
           return select(mU, mV, w);
         }
       }

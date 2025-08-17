@@ -1496,5 +1496,47 @@ public final class GraphUtils {
     return true;
   }
 
+  private static boolean isModule(final Graph graph, final long set) {
+    for (int u = 0; u < graph.order(); ++u) {
+      if ((set & (1L << u)) == 0) {
+        // Vertex u is outside set
+        long adjU = 0;
+        for (int v = graph.nextVertex(u, -1); v >= 0; v = graph.nextVertex(u, v)) {
+          adjU |= 1L << v;
+        }
+        if ((adjU & set) != set && (adjU & set) != 0) {
+          return false;
+        }
+      }
+    }
+    return true;
+  }
+
+  /**
+   * Test if a graph is prime.
+   * That is, test if the graph has no module, where a module is a set S
+   * of vertices 1 < |S| < |G|, where every vertex outside of S is either
+   * adjacent to every vertex in S or adjacent to none of them.
+   * @param graph the graph
+   * @return true iff the graph is prime
+   */
+  public static boolean isPrime(final Graph graph) {
+    final int n = graph.order();
+    if (n < 4) {
+      return false;
+    }
+    if (n >= Long.SIZE) {
+      throw new UnsupportedOperationException();
+    }
+    // This is a naive search
+    for (long set = 3; set < (1L << n) - 1; ++set) {
+      // Check set contains > 1 element
+      if (Long.bitCount(set) > 1 && isModule(graph, set)) {
+        return false;
+      }
+    }
+    //System.out.println(graph + " is prime");
+    return true;
+  }
 }
 

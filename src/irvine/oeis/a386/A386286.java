@@ -3,7 +3,7 @@ package irvine.oeis.a386;
 import irvine.math.z.Z;
 
 /**
- * A386218.
+ * A386286 allocated for Clark Kimberling.
  * @author Sean A. Irvine
  */
 public class A386286 extends A386285 {

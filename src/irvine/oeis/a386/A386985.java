@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence2;
 
 /**
- * A386218.
+ * A386985 allocated for Marco Rip\u00e0.
  * @author Sean A. Irvine
  */
 public class A386985 extends Sequence2 implements Conjectural {

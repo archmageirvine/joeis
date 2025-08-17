@@ -1,7 +1,7 @@
 package irvine.oeis.a386;
 
 /**
- * A386218.
+ * A386288 allocated for Clark Kimberling.
  * @author Sean A. Irvine
  */
 public class A386288 extends A386218 {

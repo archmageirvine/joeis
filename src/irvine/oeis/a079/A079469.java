@@ -5,7 +5,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A079452 Number of unlabeled and connected graphs on n vertices which are chordal and P5-free.
+ * A079469 Number of unlabeled and connected graphs on n vertices which are semi-P4-sparse (G is semi-P4-sparse iff G has no induced P5, House, or complement of a fork).
  * @author Sean A. Irvine
  */
 public class A079469 extends ParallelGenerateGraphsSequence {

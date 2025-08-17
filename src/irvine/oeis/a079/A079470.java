@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A079466 Numbers k such that the "inventory" A063850 of k is a palindrome.
+ * A079470 Primes with prime inventory number (as in A063850).
  * @author Sean A. Irvine
  */
 public class A079470 extends FilterSequence {

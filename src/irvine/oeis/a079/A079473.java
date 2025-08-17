@@ -5,7 +5,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A079452 Number of unlabeled and connected graphs on n vertices which are chordal and P5-free.
+ * A079473 Number of prime graphs on n vertices. (G is prime iff G has no module. Modules are also called homogeneous sets.).
  * @author Sean A. Irvine
  */
 public class A079473 extends ParallelGenerateGraphsSequence {

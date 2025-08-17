@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a384.A384311;
 
 /**
- * A384311 a(n) is the number of ways to partition an n X n X n cube into 4 noncongruent cuboids.
+ * A385580 allocated for Janaka Rodrigo.
  * @author Sean A. Irvine
  */
 public class A385580 extends A384311 {

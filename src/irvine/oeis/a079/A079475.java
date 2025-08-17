@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A079465.
+ * A079475 Number described by n using the "Look and Say" rule.
  * @author Sean A. Irvine
  */
 public class A079475 extends Sequence0 {

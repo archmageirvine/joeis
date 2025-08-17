@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A036275 The periodic part of the decimal expansion of 1/n. Any initial 0's are to be placed at end of cycle.
+ * A079483 Array read by rows in which n-th row lists the periodic part of the base-n expansion of 1/7.
  * @author Sean A. Irvine
  */
 public class A079483 extends Sequence2 {

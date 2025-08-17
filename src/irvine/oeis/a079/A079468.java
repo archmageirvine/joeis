@@ -5,7 +5,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A079452 Number of unlabeled and connected graphs on n vertices which are chordal and P5-free.
+ * A079468 Number of unlabeled and connected graphs on n vertices which have no induced subgraph isomorphic to the 'fork' (fork = 4 vertices forming a path with a fifth vertex adjacent only to one of the non-end vertices).
  * @author Sean A. Irvine
  */
 public class A079468 extends ParallelGenerateGraphsSequence {

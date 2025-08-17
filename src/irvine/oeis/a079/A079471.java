@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A079466.
+ * A079471 Fixed points of reversed binary words in reversed lexicographic order.
  * @author Sean A. Irvine
  */
 public class A079471 extends Sequence0 {

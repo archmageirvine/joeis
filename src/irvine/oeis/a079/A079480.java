@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079465.
+ * A079480 a(1) = 1; a(2) = 2; a(n) = LS(a(n-1)) + LS(a(n-2)) if n &gt; 2, where LS(m) = the "Look and Say" description (A045918) of m.
  * @author Sean A. Irvine
  */
 public class A079480 extends Sequence1 {

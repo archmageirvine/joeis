@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A079465.
+ * A079482 Smallest number k such that k and k+1 have n and n+1 distinct prime divisors.
  * @author Sean A. Irvine
  */
 public class A079482 extends Sequence0 {

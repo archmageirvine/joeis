@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A386314.
+ * A386314 allocated for Jules Beauchamp.
  * @author Sean A. Irvine
  */
 public class A386314 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A079473.
+ * A385156 The number of undirected, simple, unlabeled graphs G on n vertices which are prime, not split, and do not contain a vertex of degree 1 in G or in the complement of G, and has no induced P5 in G or in the complement of G.
  * @author Sean A. Irvine
  */
 public class A385156 extends ParallelGenerateGraphsSequence {

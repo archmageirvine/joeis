@@ -7,7 +7,7 @@ import irvine.math.q.Q;
 import irvine.oeis.a381.A381617;
 
 /**
- * A383899 A sequence constructed by greedily sampling the Yule-Simon distribution for parameter value 1, to minimize discrepancy selecting the smallest value in case of ties.
+ * A386904 allocated for Jwalin Bhatt.
  * @author Sean A. Irvine
  */
 public class A386904 extends A381617 {

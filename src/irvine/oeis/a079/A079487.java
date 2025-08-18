@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A079487.
+ * A079487 Triangle read by rows giving Whitney numbers T(n,k) of Fibonacci lattices.
  * @author Sean A. Irvine
  */
 public class A079487 extends Sequence0 {

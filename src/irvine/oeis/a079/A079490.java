@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079487.
+ * A079490 Exp(n) is closer to an integer than any previous exp(k) for 1 &lt;= k &lt; n.
  * @author Sean A. Irvine
  */
 public class A079490 extends Sequence1 {

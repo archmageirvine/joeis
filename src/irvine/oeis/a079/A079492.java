@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A079487.
+ * A079492 Nearest integer to Sum_{k=0..n} binomial(n,k)/2^(k*(k-1)/2).
  * @author Sean A. Irvine
  */
 public class A079492 extends Sequence0 {

@@ -51,7 +51,7 @@ public class A385185 extends Sequence1 {
       throw new UnsupportedOperationException();
     }
     mMask = (1L << mN) - 1;
-    if (mN > 1 && Predicates.POWER_OF_TWO.is(mN - 1)) {
+    if (mN > 2 && Predicates.POWER_OF_TWO.is(mN - 1)) {
       // a(2^n+1) = a(2^n)/2^(n-1)
       return Z.valueOf(mCount >>> (Functions.DIGIT_LENGTH.i(2, mN - 1) - 2));
     }

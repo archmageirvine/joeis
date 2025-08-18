@@ -14,18 +14,22 @@ public class A079412 extends Sequence1 {
   private long mN = 0;
   private long mCount = 0;
 
-  private void search(final long n, final long m, long p) {
+  private void search(final long n, final long m, long p, final long r) {
     if (m == 0) {
       ++mCount;
       return;
     }
+    long s = r;
     while (p <= m) {
       if (n % p != 0) {
         for (long q = p; q <= m; q *= p) {
-          search(n, m - q, p);
+          if (q >= s) {
+            search(n, m - q, p, q);
+          }
         }
       }
       p = mPrime.nextPrime(p);
+      s = p;
     }
   }
 
@@ -33,7 +37,7 @@ public class A079412 extends Sequence1 {
   public Z next() {
     ++mN;
     mCount = 0;
-    search(mN, mN, 2);
+    search(mN, mN, 2, 2);
     return Z.valueOf(mCount);
   }
 }

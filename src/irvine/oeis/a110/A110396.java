@@ -13,7 +13,7 @@ public class A110396 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A110396() {
-    super(1, n -> {
+    super(0, n -> {
       final A178914 seq = new A178914();
       return Integers.SINGLETON.product(1, n, k -> seq.a(k));
     });

@@ -37,7 +37,7 @@ public class EgfSequence extends GfSequence {
    * @param gf the generating function
    */
   public EgfSequence(final int offset, final int step, final String gf) {
-    this(offset, step, new SeriesParser().parse(gf));
+    this(offset, step, SeriesParser.parse(gf));
   }
 
   /**

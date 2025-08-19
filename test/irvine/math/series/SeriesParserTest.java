@@ -9,7 +9,7 @@ import junit.framework.TestCase;
 public class SeriesParserTest extends TestCase {
 
   private void check(final String expected, final String expression) {
-    final String result = SeriesRing.SQ.toString(new SeriesParser().parse(expression), 10);
+    final String result = SeriesRing.SQ.toString(SeriesParser.parse(expression), 10);
     if (expected.equals(result)) {
       return;
     }

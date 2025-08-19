@@ -37,7 +37,7 @@ public class DenominatorGfSequence extends GfSequence {
    * @param gf the generating function
    */
   public DenominatorGfSequence(final int offset, final int step, final String gf) {
-    this(offset, step, new SeriesParser().parse(gf));
+    this(offset, step, SeriesParser.parse(gf));
   }
 
   /**

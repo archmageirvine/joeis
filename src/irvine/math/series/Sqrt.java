@@ -18,7 +18,7 @@ class Sqrt<E> implements Series<E> {
       ++m;
     }
     if ((m & 1) != 0 || !elementField.isOne(s.coeff(m))) {
-      throw new UnsupportedOperationException(s.toString());
+      throw new UnsupportedOperationException("Could not form sqrt of " + ring.toString(s, 10));
     }
 
     // sqrt(x^m * f(x)) m even is x^(m/2) * sqrt(f(x))

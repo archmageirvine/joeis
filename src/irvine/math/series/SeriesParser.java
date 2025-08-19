@@ -251,12 +251,7 @@ public class SeriesParser {
     return tokens;
   }
 
-  /**
-   * Parse an expression into a series object.
-   * @param expr expression
-   * @return series
-   */
-  public Series<Q> parse(final String expr) {
+  Series<Q> parseExpression(final String expr) {
     mTokens = tokenize(expr);
     mIndex = 0;
     return parseExpression();
@@ -352,12 +347,14 @@ public class SeriesParser {
     final Token nameToken = consume();
     final String fname = nameToken.mValue;
 
-    if (!match(TokenType.LPAREN, "(")) {
-      throw new RuntimeException("Expected '(' after function name: " + fname);
+    final boolean isParen = match(TokenType.LPAREN, "(");
+    if (isParen) {
+      consume(); // consume '('
     }
-    consume(); // consume '('
     final Series<Q> arg = parseExpression();
-    consume(); // consume ')'
+    if (isParen) {
+      consume(); // consume ')'
+    }
 
     // Some functions need special handling, but most can be handled by the
     // enumeration in RationalSeriesEnum
@@ -409,5 +406,13 @@ public class SeriesParser {
     throw new RuntimeException("Unexpected token: " + t.mValue);
   }
 
+  /**
+   * Parse the given expression into a Series object.
+   * @param expression expression to parse
+   * @return series
+   */
+  public static Series<Q> parse(final String expression) {
+    return new SeriesParser().parseExpression(expression);
+  }
 }
 

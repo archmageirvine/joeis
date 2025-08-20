@@ -54,7 +54,7 @@ public class A079486 extends Sequence1 {
     mCounts.put(new State(new int[] {0, 0}), Z.ONE);
   }
 
-  private int v(final int[] s, int k) {
+  private int v(final int[] s, final int k) {
     return k < s.length ? s[k] : mN + k - s.length;
   }
 

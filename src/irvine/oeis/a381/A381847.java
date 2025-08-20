@@ -19,10 +19,10 @@ import irvine.util.string.StringUtils;
  */
 public class A381847 extends Sequence1 {
 
-  protected static final class OrderedTriple implements Comparable<OrderedTriple> {
+  protected static final class Cuboid implements Comparable<Cuboid> {
     private final int[] mTriple;
 
-    private OrderedTriple(final int... triple) {
+    private Cuboid(final int... triple) {
       mTriple = Arrays.copyOf(triple, triple.length);
       Arrays.sort(mTriple);
     }
@@ -36,16 +36,16 @@ public class A381847 extends Sequence1 {
      * Volume of this cuboid.
      * @return the volume
      */
-    public Z volume() {
-      return Functions.PRODUCT.z(mTriple);
+    public int getVolume() {
+      return Functions.PRODUCT.i(mTriple);
     }
 
     @Override
     public boolean equals(final Object obj) {
-      if (!(obj instanceof OrderedTriple)) {
+      if (!(obj instanceof Cuboid)) {
         return false;
       }
-      return Arrays.equals(mTriple, ((OrderedTriple) obj).mTriple);
+      return Arrays.equals(mTriple, ((Cuboid) obj).mTriple);
     }
 
     @Override
@@ -59,7 +59,7 @@ public class A381847 extends Sequence1 {
     }
 
     @Override
-    public int compareTo(final OrderedTriple other) {
+    public int compareTo(final Cuboid other) {
       return Arrays.compare(mTriple, other.mTriple);
     }
 
@@ -93,14 +93,14 @@ public class A381847 extends Sequence1 {
     this(3);
   }
 
-  protected boolean accept(final List<OrderedTriple> lst) {
+  protected boolean accept(final List<Cuboid> lst) {
     return true;
   }
 
-  protected Z process(final Set<List<OrderedTriple>> triples, final int cuboids) {
+  protected Z process(final Set<List<Cuboid>> triples, final int cuboids) {
     // Finally, check the count of distinct triples in the set
     int cnt = 0;
-    for (final List<OrderedTriple> t : triples) {
+    for (final List<Cuboid> t : triples) {
       if (new TreeSet<>(t).size() == cuboids && accept(t)) {
         if (mVerbose) {
           StringUtils.message(t.toString());
@@ -112,22 +112,22 @@ public class A381847 extends Sequence1 {
   }
 
   protected Z t(final int n, final int cuboids) {
-    Set<List<OrderedTriple>> triples = Collections.singleton(Collections.singletonList(new OrderedTriple(n, n, n)));
+    Set<List<Cuboid>> triples = Collections.singleton(Collections.singletonList(new Cuboid(n, n, n)));
     for (int k = 1; k < cuboids; ++k) {
-      final Set<List<OrderedTriple>> next = new HashSet<>();
-      for (final List<OrderedTriple> set : triples) {
-        for (final OrderedTriple t : set) {
+      final Set<List<Cuboid>> next = new HashSet<>();
+      for (final List<Cuboid> set : triples) {
+        for (final Cuboid t : set) {
           // Choose which component of the triple to split
           for (int j = 0; j < 3; ++j) {
             // Choose the split
             final int tj = t.mTriple[j];
             for (int z = 1; 2 * z <= tj; ++z) {
-              final List<OrderedTriple> copy = new ArrayList<>(set);
+              final List<Cuboid> copy = new ArrayList<>(set);
               copy.remove(t);
-              final OrderedTriple ta = new OrderedTriple(t.mTriple);
+              final Cuboid ta = new Cuboid(t.mTriple);
               ta.set(j, z);
               copy.add(ta);
-              final OrderedTriple tb = new OrderedTriple(t.mTriple);
+              final Cuboid tb = new Cuboid(t.mTriple);
               tb.set(j, tj - z);
               copy.add(tb);
               Collections.sort(copy);

@@ -23,24 +23,22 @@ public class A385151 extends A381847 {
   }
 
   @Override
-  protected Z process(final Set<List<OrderedTriple>> triples, final int cuboids) {
-    Z minDefect = null;
-    for (final List<OrderedTriple> t : triples) {
+  protected Z process(final Set<List<Cuboid>> triples, final int cuboids) {
+    int minDefect = Integer.MAX_VALUE;
+    for (final List<Cuboid> t : triples) {
       if (new TreeSet<>(t).size() == mCuboids) {
-        Z min = null;
-        Z max = Z.ZERO;
-        for (final OrderedTriple cuboid : t) {
-          final Z vol = cuboid.volume();
-          min = min == null ? vol : min.min(vol);
-          max = max.max(vol);
+        int min = Integer.MAX_VALUE;
+        int max = 0;
+        for (final Cuboid cuboid : t) {
+          final int vol = cuboid.getVolume();
+          min = Math.min(min, vol);
+          max = Math.max(max, vol);
         }
-        final Z defect = max.subtract(min);
-        if (minDefect == null || defect.compareTo(minDefect) < 0) {
-          minDefect = defect;
-        }
+        final int defect = max - min;
+        minDefect = Math.min(minDefect, defect);
       }
     }
-    return minDefect == null ? Z.ZERO : minDefect;
+    return Z.valueOf(minDefect == Integer.MAX_VALUE ? 0 : minDefect);
   }
 }
 

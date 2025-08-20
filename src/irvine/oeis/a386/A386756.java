@@ -16,8 +16,8 @@ public class A386756 extends A381847 {
   }
 
   @Override
-  protected boolean accept(final List<OrderedTriple> lst) {
-    for (final OrderedTriple t : lst) {
+  protected boolean accept(final List<Cuboid> lst) {
+    for (final Cuboid t : lst) {
       if (t.isCube()) {
         return false;
       }

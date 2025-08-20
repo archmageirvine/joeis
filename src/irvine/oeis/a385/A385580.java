@@ -2,7 +2,6 @@ package irvine.oeis.a385;
 
 import java.util.List;
 
-import irvine.math.z.Z;
 import irvine.oeis.a384.A384311;
 
 /**
@@ -12,14 +11,14 @@ import irvine.oeis.a384.A384311;
 public class A385580 extends A384311 {
 
   @Override
-  protected boolean accept(final List<OrderedTriple> lst) {
-    for (final OrderedTriple t : lst) {
-      final Z v = t.volume();
-      for (final OrderedTriple u : lst) {
+  protected boolean accept(final List<Cuboid> lst) {
+    for (final Cuboid t : lst) {
+      final int v = t.getVolume();
+      for (final Cuboid u : lst) {
         if (u == t) {
           break;
         }
-        if (u.volume().equals(v)) {
+        if (u.getVolume() == v) {
           return false;
         }
       }

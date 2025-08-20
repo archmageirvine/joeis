@@ -251,6 +251,19 @@ public class A386296 extends AbstractSequence {
     return max - min;
   }
 
+  // Used by A387040
+  protected boolean isDistinctVolumes(final int[] set) {
+    for (int k = 1; k < set.length; ++k) {
+      final int v = mCuboids.get(set[k]).getVolume();
+      for (int j = 0; j < k; ++j) {
+        if (mCuboids.get(set[j]).getVolume() == v) {
+          return false;
+        }
+      }
+    }
+    return true;
+  }
+
   /**
    * Called with each potential set of cuboids with correct volume sum,
    * not necessarily a valid packing.

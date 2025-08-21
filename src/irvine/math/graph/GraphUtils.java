@@ -1496,6 +1496,178 @@ public final class GraphUtils {
     return true;
   }
 
+  /**
+   * Check the graph has no induced bowtie.
+   * @param graph the graph
+   * @return true if there is no cricket.
+   */
+  public static boolean cricketFree(final Graph graph) {
+    if (graph.order() < 5) {
+      return true;
+    }
+    //  b   d
+    //  |\ /
+    //  | a
+    //  |/ \
+    //  c   e
+    for (int a = 0; a < graph.order(); ++a) {
+      if (graph.degree(a) >= 4) {
+        for (int b = graph.nextVertex(a, -1); b >= 0; b = graph.nextVertex(a, b)) {
+          for (int c = graph.nextVertex(b, -1); c >= 0; c = graph.nextVertex(b, c)) {
+            if (c != a && graph.isAdjacent(a, c)) {
+              for (int d = graph.nextVertex(a, -1); d >= 0; d = graph.nextVertex(a, d)) {
+                if (d != b && d != c && !graph.isAdjacent(d, b) && !graph.isAdjacent(d, c)) {
+                  for (int e = graph.nextVertex(a, d); e >= 0; e = graph.nextVertex(a, e)) {
+                    if (e != b && e != c && !graph.isAdjacent(e, d) && !graph.isAdjacent(e, b) && !graph.isAdjacent(e, c)) {
+                      return false;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    return true;
+  }
+
+  /**
+   * Check the graph has no induced paw.
+   * @param graph the graph
+   * @return true if there is no paw.
+   */
+  public static boolean pawFree(final Graph graph) {
+    if (graph.order() < 4) {
+      return true;
+    }
+    //  b
+    //  |\
+    //  | a-d
+    //  |/
+    //  c
+    for (int a = 0; a < graph.order(); ++a) {
+      if (graph.degree(a) >= 3) {
+        for (int b = graph.nextVertex(a, -1); b >= 0; b = graph.nextVertex(a, b)) {
+          for (int c = graph.nextVertex(b, -1); c >= 0; c = graph.nextVertex(b, c)) {
+            if (c != a && graph.isAdjacent(a, c)) {
+              for (int d = graph.nextVertex(a, -1); d >= 0; d = graph.nextVertex(a, d)) {
+                if (d != b && d != c && !graph.isAdjacent(d, b) && !graph.isAdjacent(d, c)) {
+                  return false;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    return true;
+  }
+
+  /**
+   * Check the graph has no induced bull.
+   * @param graph the graph
+   * @return true if there is no bull.
+   */
+  public static boolean bullFree(final Graph graph) {
+    // d-b
+    //   |\
+    //   | a
+    //   |/
+    // e-c
+    if (graph.order() < 5) {
+      return true;
+    }
+    for (int a = 0; a < graph.order(); ++a) {
+      if (graph.degree(a) >= 2) {
+        for (int b = graph.nextVertex(a, -1); b >= 0; b = graph.nextVertex(a, b)) {
+          if (graph.degree(b) >= 3) {
+            for (int c = graph.nextVertex(a, b); c >= 0; c = graph.nextVertex(a, c)) {
+              if (graph.degree(c) >= 3 && graph.isAdjacent(b, c)) {
+                for (int d = graph.nextVertex(b, -1); d >= 0; d = graph.nextVertex(b, d)) {
+                  if (d != a && d != c && !graph.isAdjacent(d, a) && !graph.isAdjacent(d, c)) {
+                    for (int e = graph.nextVertex(c, -1); e >= 0; e = graph.nextVertex(c, e)) {
+                      if (e != a && e != b && e != d && !graph.isAdjacent(e, a) && !graph.isAdjacent(e, b) && !graph.isAdjacent(e, d)) {
+                        return false;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    return true;
+  }
+
+  /**
+   * Check the graph has no induced gem.
+   * @param graph the graph
+   * @return true if there is no gem.
+   */
+  public static boolean gemFree(final Graph graph) {
+    // b-c-d-e
+    //  \\ //
+    //    a
+    if (graph.order() < 5) {
+      return true;
+    }
+    for (int a = 0; a < graph.order(); ++a) {
+      if (graph.degree(a) >= 4) {
+        for (int b = graph.nextVertex(a, -1); b >= 0; b = graph.nextVertex(a, b)) {
+          if (graph.degree(b) >= 2) {
+            for (int c = graph.nextVertex(b, -1); c >= 0; c = graph.nextVertex(b, c)) {
+              if (c != a && graph.degree(c) >= 3 && graph.isAdjacent(c, a)) {
+                for (int d = graph.nextVertex(c, -1); d >= 0; d = graph.nextVertex(c, d)) {
+                  if (d != a && d != b && graph.degree(d) >= 3 && graph.isAdjacent(d, a) && !graph.isAdjacent(d, b)) {
+                    for (int e = graph.nextVertex(d, -1); e >= 0; e = graph.nextVertex(d, e)) {
+                      if (e != a && e != b && e != c && graph.isAdjacent(e, a) && !graph.isAdjacent(e, b) && !graph.isAdjacent(e, c)) {
+                        return false;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    return true;
+  }
+
+  /**
+   * Check the graph has no induced diamond.
+   * @param graph the graph
+   * @return true if there is no diamond.
+   */
+  public static boolean diamondFree(final Graph graph) {
+    if (graph.order() < 4) {
+      return true;
+    }
+    //  a-b
+    //  |\|
+    //  d-c
+    for (int a = 0; a < graph.order(); ++a) {
+      if (graph.degree(a) >= 3) {
+        for (int b = graph.nextVertex(a, -1); b >= 0; b = graph.nextVertex(a, b)) {
+          for (int c = graph.nextVertex(b, -1); c >= 0; c = graph.nextVertex(b, c)) {
+            if (c != a && graph.isAdjacent(a, c)) {
+              for (int d = graph.nextVertex(a, b); d >= 0; d = graph.nextVertex(a, d)) {
+                if (d != b && d != c && !graph.isAdjacent(d, b) && graph.isAdjacent(d, c)) {
+                  return false;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    return true;
+  }
+
   private static boolean isModule(final Graph graph, final long set) {
     for (int u = 0; u < graph.order(); ++u) {
       if ((set & (1L << u)) == 0) {
@@ -1538,5 +1710,41 @@ public final class GraphUtils {
     //System.out.println(graph + " is prime");
     return true;
   }
+
+  /**
+   * Test if a given set of vertices in independent in a graph.
+   * @param graph the graph
+   * @param set set of vertices (with lsb corresponding to vertex 0)
+   * @return true iff the set is independent
+   */
+  public static boolean isIndependent(final Graph graph, final Z set) {
+    // Note set is complement here, check complement of set is independent
+    final int n = graph.order();
+    for (int u = 0; u < n; ++u) {
+      if (!set.testBit(u)) {
+        for (int v = graph.nextVertex(u, u); v >= 0; v = graph.nextVertex(u, v)) {
+          if (!set.testBit(v)) {
+            return false;
+          }
+        }
+      }
+    }
+    return true;
+  }
+
+  /**
+   * Test if the graph is split.
+   * @param graph the graph
+   * @return true iff the graph is split
+   */
+  public static boolean isSplit(final Graph graph) {
+    for (final Z clique : MaximalCliques.maximalCliques(graph)) {
+      if (isIndependent(graph, clique)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
 }
 

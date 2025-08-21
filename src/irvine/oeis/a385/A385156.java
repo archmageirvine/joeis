@@ -2,9 +2,7 @@ package irvine.oeis.a385;
 
 import irvine.math.graph.Graph;
 import irvine.math.graph.GraphUtils;
-import irvine.math.graph.MaximalCliques;
 import irvine.math.nauty.GenerateGraphs;
-import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
@@ -12,30 +10,6 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
  * @author Sean A. Irvine
  */
 public class A385156 extends ParallelGenerateGraphsSequence {
-
-  private static boolean isIndependent(final Graph graph, final Z set) {
-    // Note set is complement here, check complement of set is independent
-    final int n = graph.order();
-    for (int u = 0; u < n; ++u) {
-      if (!set.testBit(u)) {
-        for (int v = graph.nextVertex(u, u); v >= 0; v = graph.nextVertex(u, v)) {
-          if (!set.testBit(v)) {
-            return false;
-          }
-        }
-      }
-    }
-    return true;
-  }
-
-  private static boolean isSplit(final Graph graph) {
-    for (final Z clique : MaximalCliques.maximalCliques(graph)) {
-      if (isIndependent(graph, clique)) {
-        return true;
-      }
-    }
-    return false;
-  }
 
   private static boolean isComplementDegreeOk(final Graph graph) {
     // Check that the complement would have no vertex of degree 1
@@ -51,7 +25,7 @@ public class A385156 extends ParallelGenerateGraphsSequence {
   /** Construct the sequence. */
   public A385156() {
     // House is complement of P5
-    super(0, 0, 0, () -> graph -> isComplementDegreeOk(graph) && GraphUtils.p5Free(graph) && GraphUtils.houseFree(graph) && GraphUtils.isPrime(graph) && !isSplit(graph) ? 1 : 0);
+    super(0, 0, 0, () -> graph -> isComplementDegreeOk(graph) && GraphUtils.p5Free(graph) && GraphUtils.houseFree(graph) && GraphUtils.isPrime(graph) && !GraphUtils.isSplit(graph) ? 1 : 0);
   }
 
   @Override

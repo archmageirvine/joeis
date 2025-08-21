@@ -2682,3 +2682,4 @@ A079332 Values of n at which successive maxima of tan(n)/n occur.
 A079365 Binary expansion of a Chaitin Omega number Omega_U
 A079507 Triangle T(n,k) read by rows; related to number of preorders.
 A079511 a(n) = constant arising in game of n-times nim.
+A079557 Numerator for global rational approximations.

@@ -498,7 +498,6 @@ public abstract class AbstractGraph implements Graph {
         }
       }
       if (!isComplete(cliqueWannaBe)) {
-        System.out.println(this + " has hole");
         return false;
       }
     }

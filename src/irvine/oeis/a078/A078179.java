@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A078179 Primes of the form n^k + n - 1, where k&gt;=2 is minimal.
+ * A078179 a(n) is the smallest prime of the form n^k + n - 1 with k &gt;= 2.
  * @author Sean A. Irvine
  */
 public class A078179 extends Sequence2 {

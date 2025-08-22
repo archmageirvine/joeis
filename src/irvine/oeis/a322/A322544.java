@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A322544 a(n) is the reciprocal of the coefficient of x^n in the power series of the function defined by ((1+2x)*exp(x) + 3*exp(-x) - 4)/ (4x^2).
+ * A322544 a(n) is the reciprocal of the coefficient of x^n in the power series defined by ((1+2x)*exp(x) + 3*exp(-x) - 4)/ (4x^2).
  * a(n)=(4*(n+2)!)/(5 + 3*(-1)^n + 2*n)
  * @author Georg Fischer
  */

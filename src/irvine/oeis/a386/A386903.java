@@ -7,7 +7,7 @@ import java.util.List;
 import irvine.math.z.Z;
 
 /**
- * A386903 allocated for Janaka Rodrigo.
+ * A386903 Array read by descending antidiagonals: T(n,k) is the number of ways to partition n X n X n cube into k noncongruent strict cuboids, n&gt;=5, k&gt;=4.
  * @author Sean A. Irvine
  */
 public class A386903 extends A386296 {

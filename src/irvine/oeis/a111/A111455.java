@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A111455 Numbers n such that 101*n + 97 is prime.
+ * A111455 Numbers k such that 101*k + 97 is prime.
  * @author Georg Fischer
  */
 public class A111455 extends PrimePositionSubsequence {

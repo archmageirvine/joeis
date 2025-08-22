@@ -4,7 +4,7 @@ package irvine.oeis.a349;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A349843 Expansion of (1 - x^2)/((1 - x^10)(1 - x - x^2)).
+ * A349843 Expansion of (1 - x^2)/((1 - x^10)*(1 - x - x^2)).
  * @author Georg Fischer
  */
 public class A349843 extends HolonomicRecurrence {

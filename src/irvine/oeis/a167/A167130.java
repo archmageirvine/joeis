@@ -7,7 +7,7 @@ import irvine.oeis.a062.A062502;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A167130 Primes of the form A002808(n) + A062502(n+1).
+ * A167130 Primes of the form A002808(k) + A062502(k+1).
  * @author Georg Fischer
  */
 public class A167130 extends FilterSequence {

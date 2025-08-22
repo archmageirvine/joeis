@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a007.A007947;
 
 /**
- * A048803 a(0) = 1, a(1) = 1; for n &gt; 1, a(n) = lcm( 1, 2, ..., n, a(1)*a(n-1), a(2)*a(n-2), ..., a(n-1)*a(1) ).
+ * A048803 a(n) = Product_{k=1..n} rad(k), where rad(n) is the product of distinct prime factors of n, cf. A007947.
  * @author Sean A. Irvine
  */
 public class A048803 extends PartialProductSequence {

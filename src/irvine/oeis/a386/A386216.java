@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a385.A385884;
 
 /**
- * A386216 allocated for Clark Kimberling.
+ * A386216 Values of v in the quartets (2, u, v, w) of type 2; i.e., values of v for solutions to 2(2 + u) =  v(v - w), in distinct positive integers, with v &gt; 1, sorted by nondecreasing values of u; see A385884.
  * @author Sean A. Irvine
  */
 public class A386216 extends A385884 {

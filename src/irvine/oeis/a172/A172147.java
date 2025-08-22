@@ -4,7 +4,7 @@ package irvine.oeis.a172;
 import irvine.oeis.prime.PrimeConditionListSequence;
 
 /**
- * A172147 Numbers n such that 42n - 5 and 42n + 5 are prime.
+ * A172147 Numbers k such that 42*k - 5 and 42*k + 5 are prime.
  * @author Georg Fischer
  */
 public class A172147 extends PrimeConditionListSequence {

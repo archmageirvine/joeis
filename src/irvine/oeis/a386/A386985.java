@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence2;
 
 /**
- * A386985 allocated for Marco Rip\u00e0.
+ * A386985 Smallest k &gt; 0 such that the base-n number formed by concatenating k, k - 1, ..., 2, 1 (each written in base n) is prime, or -1 if no such k exists for the given n.
  * @author Sean A. Irvine
  */
 public class A386985 extends Sequence2 implements Conjectural {

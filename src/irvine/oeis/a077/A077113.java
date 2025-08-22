@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A077113 Number of integer cubes &lt;= n^2.
+ * A077113 Number of nonnegative integer cubes &lt;= n^2.
  * a(n)=floor(n^(2/3)+1)
  * @author Georg Fischer
  */

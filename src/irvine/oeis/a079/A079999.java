@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A079999 Number of permutations satisfying -k&lt;=p(i)-i&lt;=r and p(i)-i not in I, i=1..n, with k=2, r=3, I={0,1,2}.
+ * A079999 Number of permutations (p(1),p(2),...,p(n)) of (1,2,...,n) such that p(i)-i is in {-2,-1,3} for all i=1,...,n.
  * @author Georg Fischer
  */
 public class A079999 extends HolonomicRecurrence {

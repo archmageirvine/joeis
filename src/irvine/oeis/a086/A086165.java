@@ -8,7 +8,7 @@ import irvine.oeis.a070.A070919;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A086165 a(n) = Card{ (x,y,z) | x &lt; y &lt; z and lcm(x,y,z) = n}.
+ * A086165 a(n) = |{ (x,y,z) | x &lt; y &lt; z and lcm(x,y,z) = n}|.
  * @author Georg Fischer
  */
 public class A086165 extends SingleTransformSequence {

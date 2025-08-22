@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A386885 allocated for Ryosuke Miyazawa.
+ * A386885 a(n) is the number of iterations that -n requires to reach 1 under the map x -&gt; -x/2 if x is even, 3x + 1 if x is odd.
  * @author Sean A. Irvine
  */
 public class A386885 extends Sequence1 {

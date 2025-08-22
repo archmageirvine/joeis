@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A386218.
+ * A387069 allocated for Cristiano Campos de Oliveira.
  * @author Sean A. Irvine
  */
 public class A387069 extends Sequence1 {

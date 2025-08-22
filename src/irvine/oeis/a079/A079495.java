@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a006.A006287;
 
 /**
- * A079495 Let b=3. Sum of squares of digits in base b gives 0 (mod b).
+ * A079495 Numbers k such that the sum of the squares of the digits of k in base 3 is 0 (mod 3).
  * @author Sean A. Irvine
  */
 public class A079495 extends FilterPositionSequence {

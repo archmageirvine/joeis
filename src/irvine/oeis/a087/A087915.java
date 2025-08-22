@@ -5,7 +5,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A087915 Even numbers n such that 2*n+3 is a prime.
+ * A087915 Even numbers k such that 2*k+3 is a prime.
  * @author Georg Fischer
  */
 public class A087915 extends FilterNumberSequence {

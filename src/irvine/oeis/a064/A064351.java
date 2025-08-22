@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064351 Numbers n such that n and n+1 have the same sum and number of prime divisors (with repetition).
+ * A064351 Numbers k such that k and k+1 have the same sum and number of prime divisors (with repetition).
  * @author Sean A. Irvine
  */
 public class A064351 extends Sequence1 {

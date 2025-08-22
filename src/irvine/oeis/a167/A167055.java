@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A167055 Numbers n such that 12*n + 5 is prime.
+ * A167055 Numbers k such that 12*k + 5 is prime.
  * @author Georg Fischer
  */
 public class A167055 extends PrimePositionSubsequence {

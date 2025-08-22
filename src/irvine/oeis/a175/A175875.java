@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A175875 Numbers n such that sigma(n+3) = 3*sigma(n).
+ * A175875 Numbers k such that sigma(k+3) = 3*sigma(k).
  * @author Georg Fischer
  */
 public class A175875 extends FilterNumberSequence {

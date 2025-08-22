@@ -6,7 +6,7 @@ package irvine.oeis.a248;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A248168 Expansion of g.f.: 1/sqrt((1-3*x)*(1-11*x)).
+ * A248168 Expansion of g.f. 1/sqrt((1-3*x)*(1-11*x)).
  * @author Georg Fischer
  */
 public class A248168 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A088759 Numbers n such that (4n+3)^2 + (4n+2)^2 is prime.
+ * A088759 Numbers k such that (4*k+3)^2 + (4*k+2)^2 is prime.
  * @author Georg Fischer
  */
 public class A088759 extends FilterNumberSequence {

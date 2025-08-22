@@ -13,7 +13,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A386980 allocated for Frank M Jackson.
+ * A386980 Number of acute Heronian triangles with integer inradius n.
  * @author Sean A. Irvine
  */
 public class A386980 extends Sequence1 {

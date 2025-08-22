@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000009;
 
 /**
- * A035142 Numbers n with property that number of partitions-into-distinct-parts of n is a perfect square.
+ * A035142 Numbers k with property that number of partitions-into-distinct-parts of k is a perfect square.
  * @author Sean A. Irvine
  */
 public class A035142 extends FilterPositionSequence {

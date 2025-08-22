@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A108751 Numbers n such that 11*n - 911 is prime.
+ * A108751 Numbers k such that 11*k - 911 is prime.
  * @author Georg Fischer
  */
 public class A108751 extends PrimePositionSubsequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a065.A065387;
 
 /**
- * A067351 Numbers n such that sigma(n) + phi(n) has exactly 2 distinct prime divisors.
+ * A067351 Numbers k such that sigma(k) + phi(k) has exactly 2 distinct prime divisors.
  * @author Sean A. Irvine
  */
 public class A067351 extends A065387 {

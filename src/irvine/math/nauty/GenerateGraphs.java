@@ -116,7 +116,7 @@ public class GenerateGraphs {
     return false;
   }
 
-  protected boolean preprune(final Graph graph, final int maxNodes) {
+  protected boolean preprune(final Graph graph, final int nodes) {
     return false;
   }
 
@@ -137,7 +137,6 @@ public class GenerateGraphs {
     final int[] numcells = new int[1];
     final NautySet active = new NautySet(MAXM);
     final StatsBlk stats = new StatsBlk();
-    final OptionBlk options = new OptionBlk();
     final long[] workspace = new long[50];
     final int n = g.order();
     final int nx = n + 1;
@@ -198,6 +197,7 @@ public class GenerateGraphs {
       return gx;
     }
 
+    final OptionBlk options = new OptionBlk();
     options.mGetCanon = 1;
     options.mDefaultPtn = false;
     options.mUserAutomProc = new GenGraphsAutomProc(mLevelData);
@@ -243,7 +243,7 @@ public class GenerateGraphs {
     if ((mGenerationFlags & K5_FREE) != 0 && gx.hasK5(n)) {
       return null;
     }
-    if (preprune(gx, mMaxN)) {
+    if (preprune(gx, n)) {
       return null;
     }
 
@@ -334,7 +334,7 @@ public class GenerateGraphs {
     if ((mGenerationFlags & K5_FREE) != 0 && gx.hasK5(n)) {
       return null;
     }
-    if (preprune(gx, mMaxN)) {
+    if (preprune(gx, n)) {
       return null;
     }
     if (nuniq) {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a048.A048673;
 
 /**
- * A246351 Numbers n such that A048673(n) &lt; n.
+ * A246351 Numbers k such that A048673(k) &lt; k.
  * @author Georg Fischer
  */
 public class A246351 extends FilterPositionSequence {

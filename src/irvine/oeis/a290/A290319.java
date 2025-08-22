@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A290319 Triangle read by rows: T(n, k)is the Sheffer triangle ((1 - 4*x)^(-1/4), (-1/4)*log(1 - 4*x)). A generalized Stirling1 triangle.
+ * A290319 Triangle read by rows: T(n, k) is the Sheffer triangle ((1 - 4*x)^(-1/4), (-1/4)*log(1 - 4*x)). A generalized Stirling1 triangle.
  * @author Georg Fischer
  */
 public class A290319 extends Triangle {

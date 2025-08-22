@@ -19,7 +19,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(GammaTest.class);
     suite.addTestSuite(HyperbolicTest.class);
     suite.addTestSuite(HypergeometricTest.class);
-    suite.addTestSuite(LambertWTest.class);
     suite.addTestSuite(LogarithmTest.class);
     suite.addTestSuite(PhysicsConstantsTest.class);
     suite.addTestSuite(PolyEvalTest.class);

@@ -21,6 +21,8 @@ public class CC extends Number implements Comparable<CC>, IsInteger {
   public static final CC ONE = new CC(CR.ONE);
   /** Constant two. */
   public static final CC TWO = new CC(CR.TWO);
+  /** Constant negative one. */
+  public static final CC NEG_ONE = new CC(CR.NEG_ONE);
   /** Constant <code>i</code>. */
   public static final CC I = new CC(CR.ZERO, CR.ONE);
   /** Constant 1/2. */

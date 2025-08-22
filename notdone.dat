@@ -2683,3 +2683,5 @@ A079365 Binary expansion of a Chaitin Omega number Omega_U
 A079507 Triangle T(n,k) read by rows; related to number of preorders.
 A079511 a(n) = constant arising in game of n-times nim.
 A079557 Numerator for global rational approximations.
+A079611 Waring's problem: conjectured values for G(n), the smallest number m such that every sufficiently large number is the sum of at most m n-th powers of positive integers.
+A079614 Decimal expansion of Bertrand's constant.

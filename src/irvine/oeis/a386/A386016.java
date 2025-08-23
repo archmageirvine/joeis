@@ -16,9 +16,15 @@ public class A386016 extends Sequence1 {
 
   private final DynamicLongArray mCounts = new DynamicLongArray();
   private final MemoryFunction1<CR> mPdf;
+  private final int mStart;
+
+  protected A386016(final int start, final MemoryFunction1<CR> pdf) {
+    mPdf = pdf;
+    mStart = start;
+  }
 
   protected A386016(final MemoryFunction1<CR> pdf) {
-    mPdf = pdf;
+    this(1, pdf);
   }
 
   /** Construct the sequence. */
@@ -39,7 +45,7 @@ public class A386016 extends Sequence1 {
   public Z next() {
     CR min = null;
     int argmin = 0;
-    int k = 0;
+    int k = mStart - 1;
     while (true) {
       final long c = mCounts.get(++k);
       final CR p = CR.valueOf(c + 1).divide(mPdf.get(k));

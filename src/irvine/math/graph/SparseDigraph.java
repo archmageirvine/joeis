@@ -1,6 +1,5 @@
 package irvine.math.graph;
 
-import java.util.Arrays;
 import java.util.LinkedList;
 
 import irvine.util.array.DynamicLongArray;
@@ -8,10 +7,12 @@ import irvine.util.array.LongDynamicIntArray;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * Implementation suitable for a sparsely connected graph.
+ * Implementation suitable for a sparsely connected digraph.
  * @author Sean A. Irvine
  */
-public class SparseGraph extends AbstractGraph {
+public class SparseDigraph extends AbstractGraph {
+
+  // Cf. Sparse graph
 
   // The easiest way to implement a sparse graph, would be to simply use
   // HashMap<Integer, Set<Integer>> to contain all the adjacencies.
@@ -34,7 +35,7 @@ public class SparseGraph extends AbstractGraph {
   private long mDeletedEdges = 0; // counts holes in the data structure
   private int mOrder;
 
-  SparseGraph(final int order) {
+  SparseDigraph(final int order) {
     mOrder = order;
   }
 
@@ -91,9 +92,7 @@ public class SparseGraph extends AbstractGraph {
   @Override
   public void addEdge(final int v1, final int v2) {
     mOrder = Math.max(mOrder, Math.max(v1, v2) + 1);
-    if (addDirectedEdge(v1, v2)) {
-      addDirectedEdge(v2, v1);
-    }
+    addDirectedEdge(v1, v2);
   }
 
   private void removeEdgeDirected(final int v1, final int v2) {
@@ -126,7 +125,6 @@ public class SparseGraph extends AbstractGraph {
   @Override
   public void removeEdge(final int v1, final int v2) {
     removeEdgeDirected(v1, v2);
-    removeEdgeDirected(v2, v1);
   }
 
   @Override
@@ -189,55 +187,8 @@ public class SparseGraph extends AbstractGraph {
 
   @Override
   public boolean isBiconnected() {
-    final int n = order();
-    if (n <= 2) {
-      return false;
-    }
-    final int[] num = new int[n];
-    final int[] lp = new int[n];
-    final int[] stack = new int[n];
-    int sp = 0;
-
-    final boolean[] visited = new boolean[n];
-    visited[0] = true;
-    int numVisited = 1;
-    int v = 0;
-
-    while (true) {
-      final int sw = findNext(visited, v);
-      if (sw != -1) {
-        final int ww = v;
-        // Find the next child to visit
-        v = sw;
-        stack[++sp] = v;
-        visited[v] = true;
-        num[v] = numVisited++;
-        lp[v] = num[v];
-        long slot = mFirstNeighbour.get(v);
-        while (slot != 0) {
-          final int w = mNeighbour.get(slot);
-          if (visited[w] && w != ww) {
-            if (num[w] < lp[v]) {
-              lp[v] = num[w];
-            }
-          }
-          slot = mNextNeighbour.get(slot);
-        }
-      } else {
-        // Step back to the parent
-        final int w = v;
-        if (sp <= 1) {
-          return numVisited == n;
-        }
-        v = stack[--sp];
-        if (lp[w] >= num[v]) {
-          return false;
-        }
-        if (lp[w] < lp[v]) {
-          lp[v] = lp[w];
-        }
-      }
-    }
+    // Possibly the same implementation of SparseGraph would work here
+    throw new UnsupportedOperationException();
   }
 
   @Override
@@ -278,41 +229,8 @@ public class SparseGraph extends AbstractGraph {
     throw new UnsupportedOperationException();
   }
 
-  private boolean isCyclic(final boolean[] visited, final int prev, final int v) {
-    long slot = mFirstNeighbour.get(v);
-    while (slot != 0) {
-      final int u = mNeighbour.get(slot);
-      if (u != prev && visited[u]) {
-        return true;
-      }
-      slot = mNextNeighbour.get(slot);
-    }
-    slot = mFirstNeighbour.get(v);
-    while (slot != 0) {
-      final int u = mNeighbour.get(slot);
-      if (u != prev && !visited[u]) {
-        visited[u] = true;
-        if (isCyclic(visited, v, u)) {
-          return true;
-        }
-        visited[u] = false;
-        return true;
-      }
-      slot = mNextNeighbour.get(slot);
-    }
-    return false;
-  }
-
   @Override
   public boolean isCyclic() {
-    final boolean[] visited = new boolean[order()];
-    for (int k = 0; k < order(); ++k) {
-      Arrays.fill(visited, false);
-      visited[k] = true;
-      if (isCyclic(visited, k, k)) {
-        return true;
-      }
-    }
-    return false;
+    throw new UnsupportedOperationException();
   }
 }

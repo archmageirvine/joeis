@@ -30,10 +30,7 @@ public final class GraphFactory {
    * @return graph
    */
   public static Graph create(final int order) {
-    if (order <= 64) {
-      return new SmallGraph(order);
-    }
-    return createSparse(order);
+    return order <= 64 ? new SmallGraph(order) : createSparse(order);
   }
 
   /**
@@ -42,10 +39,7 @@ public final class GraphFactory {
    * @return digraph
    */
   public static Graph createDigraph(final int order) {
-    if (order <= 64) {
-      return new SmallDigraph(order);
-    }
-    throw new UnsupportedOperationException();
+    return order <= 64 ? new SmallDigraph(order) : new SparseDigraph(order);
   }
 
   /**

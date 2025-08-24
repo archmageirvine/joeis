@@ -2685,3 +2685,4 @@ A079511 a(n) = constant arising in game of n-times nim.
 A079557 Numerator for global rational approximations.
 A079611 Waring's problem: conjectured values for G(n), the smallest number m such that every sufficiently large number is the sum of at most m n-th powers of positive integers.
 A079614 Decimal expansion of Bertrand's constant.
+A079630 Numbers n such that |real(zeta(1/2 + n*I))| exceeds all previous values, where zeta is the Riemann zeta function.

@@ -6,7 +6,7 @@ package irvine.oeis.a050;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A050476 a(n) = C(n)*(6n+1) where C(n)=Catalan numbers (A000108).
+ * A050476 a(n) = C(n)*(6*n + 1) where C(n) = Catalan numbers (A000108).
  * @author Georg Fischer
  */
 public class A050476 extends HolonomicRecurrence {

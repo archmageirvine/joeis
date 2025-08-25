@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A079618.
+ * A079659 Nonunit step integers of double-loop digraphs.
  * @author Sean A. Irvine
  */
 public class A079659 extends Sequence1 {

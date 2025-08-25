@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079618.
+ * A079661 Triangular array: T(n,1)=T(n,n)=n, for 1&lt;k&lt;n: T(n,k) = concatenation of T(n-1,k-1) and T(n-1,k) in binary representation.
  * @author Sean A. Irvine
  */
 public class A079661 extends Sequence1 {

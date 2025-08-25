@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A079618.
+ * A079649 Numbers k such that k! + k^2 + k + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A079649 extends Sequence0 {

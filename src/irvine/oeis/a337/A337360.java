@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A337360 Sum of the coordinates of all pairs of divisors of n, (d1,d2), such that d1 &lt;= d2.
+ * A337360 a(n) = sigma(n) * (tau(n) + 1).
  * @author Georg Fischer
  */
 public class A337360 extends LambdaSequence {

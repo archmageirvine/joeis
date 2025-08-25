@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079618.
+ * A079712 Numbers m such that bigomega(m) = 3*omega(m).
  * @author Sean A. Irvine
  */
 public class A079712 extends Sequence1 {

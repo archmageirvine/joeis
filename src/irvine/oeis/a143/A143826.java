@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A143826 Numbers n such that 6n^2 - 1 is prime.
+ * A143826 Numbers k such that 6*k^2 - 1 is prime.
  * @author Georg Fischer
  */
 public class A143826 extends PrimePositionSubsequence {

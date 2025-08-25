@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A039770 Numbers k such that phi(k) is a perfect square.
+ * A385822 Numbers k such that phi(k) is not a perfect square.
  * @author Sean A. Irvine
  */
 public class A385822 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079618.
+ * A079663 Sequence of the radicands that give the best radical approach to e.
  * @author Sean A. Irvine
  */
 public class A079663 extends Sequence1 {

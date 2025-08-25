@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A079618.
+ * A079703 Numbers 4p where p is prime and 2p+1 and 4p+1 are composite.
  * @author Sean A. Irvine
  */
 public class A079703 extends A000040 {

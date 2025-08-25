@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A079594 Primes for which floor(x^Pi) is prime.
+ * A079594 Primes p such that floor(p^Pi) is prime.
  * @author Sean A. Irvine
  */
 public class A079594 extends FilterSequence {

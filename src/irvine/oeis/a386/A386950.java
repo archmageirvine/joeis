@@ -6,7 +6,7 @@ import irvine.math.q.HarmonicSequence;
 import irvine.math.q.Q;
 
 /**
- * A386016 A sequence constructed by greedily sampling the Borel distribution for parameter value 1/2 to minimize discrepancy.
+ * A386950 A sequence constructed by greedily sampling the the pdf (H(10)-H(i))/10, where H(n) is the n-th Harmonic number and the support is [0,9], to minimize discrepancy.
  * @author Sean A. Irvine
  */
 public class A386950 extends A386016 {

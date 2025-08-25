@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A079618.
+ * A079636 Smallest number whose reciprocal fits in the square-root gap of consecutive primes.
  * @author Sean A. Irvine
  */
 public class A079636 extends A000040 {

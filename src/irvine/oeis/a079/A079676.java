@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a045.A045918;
 
 /**
- * A079618.
+ * A079676 LookAndSay(n) is palindromic.
  * @author Sean A. Irvine
  */
 public class A079676 extends FilterPositionSequence {

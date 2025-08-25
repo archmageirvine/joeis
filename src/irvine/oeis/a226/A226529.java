@@ -4,7 +4,7 @@ package irvine.oeis.a226;
 import irvine.oeis.a006.A006314;
 
 /**
- * A226529 Numbers n such that n^(2^14) + 1 is prime (a generalized Fermat prime).
+ * A226529 Numbers k such that k^(2^14) + 1 is prime (a generalized Fermat prime).
  * @author Georg Fischer
  */
 public class A226529 extends A006314 {

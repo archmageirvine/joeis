@@ -7,7 +7,7 @@ import irvine.math.q.Q;
 import irvine.oeis.a381.A381617;
 
 /**
- * A386904 allocated for Jwalin Bhatt.
+ * A386904 A sequence constructed by greedily sampling the Borel distribution for parameter value 1/2 to minimize discrepancy.
  * @author Sean A. Irvine
  */
 public class A386904 extends A381617 {

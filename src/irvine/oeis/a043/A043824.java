@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A043824 Numbers n such that number of runs in the base 3 representation of n is congruent to 9 mod 10.
+ * A043824 Numbers k such that number of runs in the base 3 representation of k is congruent to 9 mod 10.
  * @author Georg Fischer
  */
 public class A043824 extends RunsBaseSequence {

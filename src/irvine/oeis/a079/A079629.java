@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001359;
 
 /**
- * A079618.
+ * A079629 Number of twin prime pairs between p^2 and q^2 where (p,q) is the n-th twin prime pair.
  * @author Sean A. Irvine
  */
 public class A079629 extends A001359 {

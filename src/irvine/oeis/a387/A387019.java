@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A079618.
+ * A387019 allocated for Gordon Hamilton.
  * @author Sean A. Irvine
  */
 public class A387019 extends Sequence0 {

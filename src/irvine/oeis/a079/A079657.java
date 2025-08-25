@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A079618.
+ * A079657 Fibonacci numbers using only the curved digits 0, 3, 6, 8 and 9.
  * @author Sean A. Irvine
  */
 public class A079657 extends FilterSequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079618.
+ * A079660 Determinant of the n X n matrix m(i,j)=C(i+j,abs(i-j)).
  * @author Sean A. Irvine
  */
 public class A079660 extends Sequence1 {

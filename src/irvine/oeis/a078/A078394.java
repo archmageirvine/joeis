@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a004.A004154;
 
 /**
- * A078394 Numbers n such that reverse(A004154(n)) + 1 is prime.
+ * A078394 Numbers k such that reverse(A004154(k)) + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A078394 extends FilterPositionSequence {

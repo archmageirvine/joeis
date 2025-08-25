@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A079618.
+ * A157196 a(n) = (1/2)*(sum of elements of n-th run) using 1 and 2 starting with 1,1.
  * @author Sean A. Irvine
  */
 public class A157196 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079618.
+ * A079689 Determinant of the n X n matrix m(i,j)=binomial(max(i,j),min(i,j)).
  * @author Sean A. Irvine
  */
 public class A079689 extends Sequence1 {

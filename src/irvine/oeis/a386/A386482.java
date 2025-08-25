@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064413.
+ * A386482 a(1)=1, a(2)=2; thereafter a(n) is either the greatest number k &lt; a(n-1) not already used such that gcd(k, a(n-1)) &gt; 1, or if no such k exists then a(n) is the smallest number k &gt; a(n-1) not already used such that gcd(k, a(n-1)) &gt; 1.
  * @author Sean A. Irvine
  */
 public class A386482 extends Sequence1 {

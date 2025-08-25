@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387064 allocated for Jean-Marc Rebert.
+ * A387064 Total number of entries in rows 0 to n of Pascal's triangle multiple of n.
  * @author Sean A. Irvine
  */
 public class A387064 extends Sequence1 {

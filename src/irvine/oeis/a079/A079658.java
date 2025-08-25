@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A079618.
+ * A079658 Fibonacci numbers using only the straight digits 1, 4 and 7.
  * @author Sean A. Irvine
  */
 public class A079658 extends FilterSequence {

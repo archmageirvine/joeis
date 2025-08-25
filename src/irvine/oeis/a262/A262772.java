@@ -8,7 +8,7 @@ import irvine.oeis.transform.SimpleTransformSequence;
 
 
 /**
- * A262772 Numbers n such that n!! - 32 is prime.
+ * A262772 Numbers k such that k!! - 32 is prime.
  * @author Georg Fischer
  */
 public class A262772 extends PrimePositionSubsequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384834 Number of divisors of n such that (-d)^d = -d (mod n).
+ * A384834 Number of divisors of n such that (-d)^d == -d (mod n).
  * @author Sean A. Irvine
  */
 public class A384834 extends Sequence1 {

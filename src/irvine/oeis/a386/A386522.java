@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A079618.
+ * A386522 Decimal expansion of the number of radians in a minute of arc.
  * @author Sean A. Irvine
  */
 public class A386522 extends DecimalExpansionSequence {

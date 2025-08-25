@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079618.
+ * A079665 Triangular array read by rows: row s contains integers of the form (2^s+1)/(2^r+1) in order of increasing r &lt;= s-1.
  * @author Sean A. Irvine
  */
 public class A079665 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a129.A129771;
 
 /**
- * A386312 allocated for Francisco J. Mu\u00f1oz.
+ * A386312 allocated for Nathan Sheffield.
  * @author Sean A. Irvine
  */
 public class A386312 extends A129771 {

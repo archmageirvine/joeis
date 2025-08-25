@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A079618.
+ * A080050 Primes p such that 2^p-1 and the p-th Fibonacci number have a common factor. Prime terms of A074776.
  * @author Sean A. Irvine
  */
 public class A080050 extends A000040 {

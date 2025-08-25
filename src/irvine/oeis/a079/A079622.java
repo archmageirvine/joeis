@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000668;
 
 /**
- * A079618.
+ * A079622 Mersenne primes with prime "look and say" descriptions.
  * @author Sean A. Irvine
  */
 public class A079622 extends FilterSequence {

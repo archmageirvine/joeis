@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A079618.
+ * A079646 A congruence property: a(n) = (A248586(p)-5)/(4*p) where p is the n-th prime.
  * @author Sean A. Irvine
  */
 public class A079646 extends A000040 {

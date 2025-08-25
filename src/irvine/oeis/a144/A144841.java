@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A144841 Conjectured values for maximal number of regions obtained by joining each triple of n points on a 3 dimensional sphere by a plane.
+ * A144841 a(n) = 280*C(n,9)+10*C(n,6)+6*C(n,4)+C(n,3)+1 where C = binomial.
  * @author Georg Fischer
  */
 public class A144841 extends GeneratingFunctionSequence implements Conjectural {

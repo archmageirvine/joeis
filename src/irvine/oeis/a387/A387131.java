@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A387131 allocated for Stefano Spezia.
+ * A387131 Decimal expansion of the real part of the complex solutions to log(z) = -1/z on the principal branch of log(z).
  * @author Sean A. Irvine
  */
 public class A387131 extends DecimalExpansionSequence {

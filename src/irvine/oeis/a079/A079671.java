@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079618.
+ * A079671 Number of irreducible polynomials (over the rationals) of form a*x^2+b*x+c 1&lt;=a&lt;=n, 1&lt;=b&lt;=n, 1&lt;=c&lt;=n.
  * @author Sean A. Irvine
  */
 public class A079671 extends Sequence1 {

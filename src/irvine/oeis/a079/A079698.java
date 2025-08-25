@@ -6,7 +6,7 @@ import irvine.oeis.a005.A005277;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A079618.
+ * A079698 Values of the odd part of A005277(n).
  * @author Sean A. Irvine
  */
 public class A079698 extends DistinctSequence {

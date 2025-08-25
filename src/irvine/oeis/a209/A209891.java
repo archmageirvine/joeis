@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A209891 Number of (n+1)X3 0..2 arrays with every 2X2 subblock having two distinct values, and new values 0..2 introduced in row major order.
+ * A209891 Number of (n+1) X 3 0..2 arrays with every 2X2 subblock having two distinct values, and new values 0..2 introduced in row major order.
  * @author Georg Fischer
  */
 public class A209891 extends GeneratingFunctionSequence implements Conjectural {

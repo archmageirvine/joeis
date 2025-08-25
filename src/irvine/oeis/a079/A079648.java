@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A079618.
+ * A079648 Number of primes between n^2 and n^3.
  * @author Sean A. Irvine
  */
 public class A079648 extends Sequence0 {

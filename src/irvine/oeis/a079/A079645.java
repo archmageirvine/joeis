@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079618.
+ * A079645 Numbers j such that the integer part of the cube root of j divides j.
  * @author Sean A. Irvine
  */
 public class A079645 extends Sequence1 {

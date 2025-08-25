@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079618.
+ * A079647 Integer part of the cube root of n and integer part of the square root of n both divide n.
  * @author Sean A. Irvine
  */
 public class A079647 extends Sequence1 {

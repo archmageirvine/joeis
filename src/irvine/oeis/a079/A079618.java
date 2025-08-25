@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a064.A064538;
 
 /**
- * A079618.
+ * A079618 Triangle of coefficients in polynomials for partial sums of powers, scaled to produce integers: Sum_{i=1..m} i^(n-1) = Sum_{k=1..n} T(n,k)*m^k/A064538(n-1).
  * @author Sean A. Irvine
  */
 public class A079618 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001113;
 
 /**
- * A079618.
+ * A079620 Look at and say the digits of e.
  * @author Sean A. Irvine
  */
 public class A079620 extends A001113 {

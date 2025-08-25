@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A079618.
+ * A079677 Distance from F(n) to closest prime, where F(n) is the n-th Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A079677 extends A000045 {

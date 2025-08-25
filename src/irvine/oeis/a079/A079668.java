@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A051120 Start with 1; at n-th step, write down what is in the sequence so far.
+ * A079668 Start with 1; at n-th step, write down what is in the sequence so far.
  * @author Sean A. Irvine
  */
 public class A079668 extends Sequence0 {

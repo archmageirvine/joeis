@@ -4,7 +4,7 @@ package irvine.oeis.a123;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A123198 a(n)=[(n+1)(2n-1)]^2.
+ * A123198 a(n) = ((n+1)*(2*n-1))^2.
  * @author Georg Fischer
  */
 public class A123198 extends GeneratingFunctionSequence {

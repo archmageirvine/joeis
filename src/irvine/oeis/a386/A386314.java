@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A386314 allocated for Jules Beauchamp.
+ * A386314 a(n) is the smallest number k of the form 6*x+-1 not already in the sequence, such that 3*k+1 is already in the sequence, a(1)=1.
  * @author Sean A. Irvine
  */
 public class A386314 extends Sequence1 {

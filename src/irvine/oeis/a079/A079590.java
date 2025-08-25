@@ -4,7 +4,7 @@ package irvine.oeis.a079;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A079590 C(6n+1,n).
+ * A079590 a(n) = C(6*n+1,n).
  * binomial(6*n+1,n)
  * @author Georg Fischer
  */

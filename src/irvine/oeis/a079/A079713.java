@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079618.
+ * A079713 Numbers k such that bigomega(sigma(k)) = sigma(bigomega(k)).
  * @author Sean A. Irvine
  */
 public class A079713 extends Sequence1 {

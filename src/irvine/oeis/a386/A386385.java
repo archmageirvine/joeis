@@ -8,7 +8,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a157.A157196;
 
 /**
- * A079618.
+ * A386385 allocated for Daniel Hoyt.
  * @author Sean A. Irvine
  */
 public class A386385 extends Sequence0 {

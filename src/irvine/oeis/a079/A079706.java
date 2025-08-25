@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079618.
+ * A079706 Smallest positive exponent k such that (2n)^k+1 is prime, or -1 if no such k exists.
  * @author Sean A. Irvine
  */
 public class A079706 extends Sequence1 {

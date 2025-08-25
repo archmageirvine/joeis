@@ -14,8 +14,8 @@ import irvine.util.string.StringUtils;
 public class A079659 extends Sequence1 {
 
   // HEURISTIC_MAX limits how far the search is made on s1
-  private static final int HEURISTIC_MAX = Integer.MAX_VALUE; // Fully deterministic
-  //private static final int HEURISTIC_MAX = 3; // Sufficient for all known terms <= 4868
+  //private static final int HEURISTIC_MAX = Integer.MAX_VALUE; // Fully deterministic
+  private static final int HEURISTIC_MAX = 3; // Sufficient for all known terms <= 4868
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 449;
 

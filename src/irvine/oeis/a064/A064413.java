@@ -16,7 +16,7 @@ public class A064413 extends AbstractSequence {
 
   protected final HashSet<Z> mSeen = new HashSet<>();
   private Z mA = null;
-  private Z mA2; // value of a(2)
+  private final Z mA2; // value of a(2)
 
   private static final class State extends Pair<Z, Z> implements Comparable<State> {
 

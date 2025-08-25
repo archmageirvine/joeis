@@ -5,15 +5,18 @@ import irvine.math.cr.CR;
 /**
  * Lambert W_k(z).
  * Uses Halley's method with an asymptotic initial guess.
+ * @autho Sean A. Irvine
  */
 public final class LambertW {
+
+  private LambertW() { }
 
   private static final ComputableComplexField CF = ComputableComplexField.SINGLETON;
   private static final CC NEG_TWO = new CC(CR.valueOf(-2), CR.ZERO);
 
   private static CC initialGuess(final CC z, final int branch) {
-    final CC L1 = CF.add(CF.log(z), new CC(CR.ZERO, CR.TAU.multiply(CR.valueOf(branch))));
-    return CF.subtract(L1, CF.log(L1));
+    final CC l1 = CF.add(CF.log(z), new CC(CR.ZERO, CR.TAU.multiply(CR.valueOf(branch))));
+    return CF.subtract(l1, CF.log(l1));
   }
 
   /*

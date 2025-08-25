@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 /**
  * Lambert W_k(z).
  * Uses Halley's method with an asymptotic initial guess.
- * @autho Sean A. Irvine
+ * @author Sean A. Irvine
  */
 public final class LambertW {
 

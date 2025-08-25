@@ -4,13 +4,13 @@ package irvine.oeis.a386;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A386918 a(n) = 2^n * binomial(4*n,n).
+ * A386485 a(0) = 1; thereafter a(n) = 5*n^2 - 5*n + 2.
  * @author Georg Fischer
  */
-public class A386918 extends HolonomicRecurrence {
+public class A386485 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
-  public A386918() {
-    super(0, "[[0],[48,-352,768,-512],[0,6,-27,27]]", "1,8", 0, 0);
+  public A386485() {
+    super(0, "[0,1,-3,3,-1]", "1,2,12,32", 0, 0);
   }
 }

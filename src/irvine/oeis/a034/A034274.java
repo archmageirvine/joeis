@@ -13,7 +13,7 @@ public class A034274 extends A034261 {
     super(1);
   }
 
-  private long mN = 1;
+  private long mN = 0;
 
   @Override
   public Z next() {

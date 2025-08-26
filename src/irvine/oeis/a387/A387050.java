@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A387050 Number of entries in the n-th row of Pascal&apos;s triangle not divisible by 16.
+ * A387050 Number of entries in the n-th row of Pascal's triangle not divisible by 16.
  * @author Georg Fischer
  */
 public class A387050 extends LambdaSequence {

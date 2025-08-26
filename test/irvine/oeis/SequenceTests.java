@@ -23,8 +23,8 @@ public class SequenceTests extends TestSuite {
   @Override
   public Enumeration<?> tests() {
     final ArrayList<Test> tests = new ArrayList<>();
-    try (ScanResult scanResult = new ClassGraph().whitelistPackages("irvine.oeis").scan()) {
-      for (ClassInfo routeClassInfo : scanResult.getAllClasses()) {
+    try (final ScanResult scanResult = new ClassGraph().whitelistPackages("irvine.oeis").scan()) {
+      for (final ClassInfo routeClassInfo : scanResult.getAllClasses()) {
         if (routeClassInfo.getName().matches(".*A[0-9]{6}")) {
           tests.add(new AbstractSequenceTest(routeClassInfo.getName()));
         }

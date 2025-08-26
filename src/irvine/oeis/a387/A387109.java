@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A387109 Number of entries in the n-th row of Pascal&apos;s triangle not divisible by 27.
+ * A387109 Number of entries in the n-th row of Pascal's triangle not divisible by 27.
  * @author Georg Fischer
  */
 public class A387109 extends LambdaSequence {

@@ -12,7 +12,7 @@ public class A078394 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A078394() {
-    super(1, new A004154().skip(), k -> Functions.REVERSE.z(k).add(1).isProbablePrime());
+    super(1, 0, new A004154(), k -> Functions.REVERSE.z(k).add(1).isProbablePrime());
   }
 }
 

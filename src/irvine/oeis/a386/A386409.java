@@ -16,8 +16,8 @@ public class A386409 extends Sequence1 {
   public Z next() {
     ++mN;
     long cnt = 0;
-    for (long k = 1; k < mN; ++k) {
-      if (LongUtils.modPow(mN - k, k, mN) == mN - k) {
+    for (long k = 0; k < mN; ++k) {
+      if (LongUtils.modPow(mN - k, k, mN) == (mN - k) % mN) {
         ++cnt;
       }
     }

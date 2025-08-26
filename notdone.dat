@@ -2687,3 +2687,6 @@ A079611 Waring's problem: conjectured values for G(n), the smallest number m suc
 A079614 Decimal expansion of Bertrand's constant.
 A079630 Numbers n such that |real(zeta(1/2 + n*I))| exceeds all previous values, where zeta is the Riemann zeta function.
 A079682 Order of Burnside group B(4,n) of exponent 4 and rank n.
+A079722 Triangle of numbers related to an approximation problem connected with Riemann hypothesis.
+A079723 Triangle of denominators of numbers related to an approximation problem connected with Riemann hypothesis.
+A079724 Triangle of numerators of numbers related to an approximation problem connected with Riemann hypothesis.

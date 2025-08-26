@@ -4,7 +4,7 @@ package irvine.oeis.a386;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A386250 Total number of ones in runs of 1&apos;s of length &gt;= 4 over all binary strings of length n.
+ * A386250 Total number of ones in runs of 1's of length &gt;= 4 over all binary strings of length n.
  * @author Georg Fischer
  */
 public class A386250 extends HolonomicRecurrence {

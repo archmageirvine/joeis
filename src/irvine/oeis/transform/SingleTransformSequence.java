@@ -31,13 +31,13 @@ public class SingleTransformSequence extends AbstractSequence {
 
   /**
    * Creates a target sequence from an expression of the source sequence.
+   * If there are some initial terms for a(n), they are exhausted first, resulting in a target offset n.
+   * When the source sequence has an offset &gt; n, an appropriate number of initial target terms must be specified.
+   * When the source sequence has an offset &lt; n, an appropriate number of the source sequence&apos;s terms are consumed.
    * @param offset offset of the new sequence
    * @param lambda function mapping (term, n) to the terms of the target sequence
    * @param initTerms initial terms for a(n)
    * @param seq underlying source sequence
-   * If there are some initial terms for a(n), they are exhausted first, resulting in a target offset n.
-   * When the source sequence has an offset &gt; n, an appropriate number of initial target terms must be specified.
-   * When the source sequence has an offset &lt; n, an appropriate number of the source sequence&apos;s terms are consumed.
    */
   public SingleTransformSequence(final int offset, final BiFunction<Z, Integer, Z> lambda,
                                  final String initTerms, final AbstractSequence seq) {

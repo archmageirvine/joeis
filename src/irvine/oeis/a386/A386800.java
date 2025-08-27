@@ -14,7 +14,7 @@ public class A386800 extends AbstractSequence {
   private Z mN;
   private final int mExpon;
   private final int mOccur;
-  private static final Z[] sPrimes = new Z[] {Z.TWO, Z.THREE, Z.FIVE, Z.SEVEN};
+  private static final Z[] PRIMES = {Z.TWO, Z.THREE, Z.FIVE, Z.SEVEN};
 
   /** Construct the sequence. */
   public A386800() {
@@ -33,7 +33,7 @@ public class A386800 extends AbstractSequence {
     mN = Z.ONE;
     if (mOccur > 0) {
       for (int iocc = 0; iocc < mOccur; ++iocc) {
-        mN = mN.multiply(sPrimes[iocc].pow(mExpon));
+        mN = mN.multiply(PRIMES[iocc].pow(mExpon));
       }
     }
     mN = mN.subtract(Z.ONE);
@@ -46,8 +46,7 @@ public class A386800 extends AbstractSequence {
       final FactorSequence fs = Jaguar.factor(mN);
       int count = 0;
       for (Z p : fs.toZArray()) {
-        int e = fs.getExponent(p);
-        if (e == mExpon) {
+        if (fs.getExponent(p) == mExpon) {
           ++count;
         }
       }

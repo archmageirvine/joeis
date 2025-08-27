@@ -269,4 +269,28 @@ public final class StringUtils {
     }
     return true;
   }
+
+  /**
+   * Translate the (ASCII) characters occurring in the source String to the corresponding (ASCII) characters in the target String.
+   * @param word   string to be translated
+   * @param source string of source characters; if any character in <code>word</code> does not occur here, it is passed unchanged (case 1).
+   * @param target string of target characters; if this is shorter than <code>source</code>, the corresponding characters are omitted (case 2).
+   * @return translated <code>word</code>
+   */
+  public static String translate(final String word, final String source, final String target) {
+    final StringBuilder result = new StringBuilder();
+    for (int i = 0; i < word.length(); ++i) {
+      final char ch = word.charAt(i);
+      final int pos = source.indexOf(ch);
+      if (pos >= 0) {
+        if (pos < target.length()) {
+          result.append(target.charAt(pos));
+        } // else omit: case 2
+      } else {
+        result.append(ch); // case 1: pass through
+      }
+    }
+    return result.toString();
+  }
+
 }

@@ -6,15 +6,15 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A080945 Numbers having more than two divisors that are also suffixes in binary representation.
+ * A080944 Numbers having only trivial divisors that are also suffixes in binary representation.
  * @author Georg Fischer
  */
-public class A080945 extends FilterNumberSequence {
+public class A080944 extends FilterNumberSequence {
 
   private static final DirectSequence A080942 = new A080942();
 
   /** Construct the sequence. */
-  public A080945() {
-    super(1, 1, k -> A080942.a(k).compareTo(Z.TWO) > 0);
+  public A080944() {
+    super(1, 1, k -> A080942.a(k).compareTo(Z.TWO) <= 0);
   }
 }

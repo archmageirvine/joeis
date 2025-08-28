@@ -4,13 +4,13 @@ package irvine.oeis.a386;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A386489 Expansion of (1-x)/((1+x+2*x^2)*(1-4*x+x^2)).
+ * A386387 a(n) = Sum_{k=0..n} 4^k * binomial(n,k) * Catalan(k).
  * @author Georg Fischer
  */
-public class A386489 extends HolonomicRecurrence {
+public class A386387 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
-  public A386489() {
-    super(0, "[[0],[2],[-7],[-1],[-3],[1]]", "1,2,7,30", 0, 0);
+  public A386387() {
+    super(0, "[[0],[-17,17],[8,-18],[1,1]]", "1", 0, 0);
   }
 }

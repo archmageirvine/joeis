@@ -4,13 +4,13 @@ package irvine.oeis.a386;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A386489 Expansion of (1-x)/((1+x+2*x^2)*(1-4*x+x^2)).
+ * A386362 Expansion of (1/x) * Series_Reversion( x/(1+7*x+9*x^2) ).
  * @author Georg Fischer
  */
-public class A386489 extends HolonomicRecurrence {
+public class A386362 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
-  public A386489() {
-    super(0, "[[0],[2],[-7],[-1],[-3],[1]]", "1,2,7,30", 0, 0);
+  public A386362() {
+    super(0, "[[0],[-13,13],[-7,-14],[2,1]]", "1", 0, 0);
   }
 }

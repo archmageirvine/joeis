@@ -4,7 +4,7 @@ package irvine.oeis.a385;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A385252 Number of ternary strings of length 2*n that have at least one 0 but less 0&apos;s than the combined number of 1&apos;s and 2&apos;s.
+ * A385252 Number of ternary strings of length 2*n that have at least one 0 but less 0's than the combined number of 1's and 2's.
  * @author Georg Fischer
  */
 public class A385252 extends HolonomicRecurrence {

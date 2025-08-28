@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A212351 Maximal number of &quot;good&quot; manifolds in an n-nice polytope.
+ * A212351 Maximal number of "good" manifolds in an n-nice polytope.
  * @author Georg Fischer
  */
 public class A212351 extends LambdaSequence {

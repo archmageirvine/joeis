@@ -1,6 +1,6 @@
 package irvine.oeis.a025;
 
-import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -22,8 +22,7 @@ public class A025437 extends Sequence0 {
           final long s = r - y * y;
           for (long z = y + 1; z * z < s / 2; ++z) {
             final long w2 = s - z * z;
-            final long w = Functions.SQRT.l(w2);
-            if (w * w == w2) {
+            if (Predicates.SQUARE.is(w2)) {
               ++c;
             }
           }

@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
- * A079804.
+ * A079807 Number of multiples of 3 that can be formed by permuting the digits of n.
  * @author Sean A. Irvine
  */
 public class A079807 extends Sequence0 {

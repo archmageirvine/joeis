@@ -4,7 +4,7 @@ package irvine.oeis.a381;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A381381 a(n) is the smallest positive integer m such that for all integers k &gt;= m distinct positive integers d_1, .., d_r exist with d_1 + .. + d_r = k, 1/d_1 + .. + 1/d_r = 1 and none of the d_i divisible by n.
+ * A381381 a(n) is the smallest positive integer m such that for all integers k &gt;= m an n-free 1-partition of k exists.
  * @author Georg Fischer
  */
 public class A381381 extends HolonomicRecurrence {

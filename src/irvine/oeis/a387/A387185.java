@@ -4,7 +4,7 @@ package irvine.oeis.a387;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A387185 a(n) = n*2^(n-1) + binomial(n,2)*2^(n-2) + binomial(n,3)*2^(n-3).
+ * A387185 allocated for Enrique Navarrete.
  * @author Georg Fischer
  */
 public class A387185 extends HolonomicRecurrence {

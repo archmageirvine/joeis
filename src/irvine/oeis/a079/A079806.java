@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
 
 /**
- * A079804.
+ * A079806 Number of even numbers that can be formed by permuting the digits of n.
  * @author Sean A. Irvine
  */
 public class A079806 extends Sequence0 {

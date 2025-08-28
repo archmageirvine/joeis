@@ -73,4 +73,19 @@ public final class Comparators {
     return 0;
   };
 
+  /** Comparator for ordering of integer arrays. */
+  public static final Comparator<int[]> DECREASING_LENGTH_DECREASING_VALUE = (a, b) -> {
+    final int c = Integer.compare(b.length, a.length);
+    if (c != 0) {
+      return c;
+    }
+    for (int k = 0; k < a.length; ++k) {
+      final int ck = Integer.compare(a[k], b[k]);
+      if (ck != 0) {
+        return ck;
+      }
+    }
+    return 0;
+  };
+
 }

@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a001.A001359;
 
 /**
- * A079804.
+ * A079812 Lower of twin primes (p,p+2) such that (p*(p+2))^2 + p^2 - (p+2)^2 and (p*(p+2))^2 - p^2 + (p+2)^2 are both prime.
  * @author Sean A. Irvine
  */
 public class A079812 extends FilterSequence {

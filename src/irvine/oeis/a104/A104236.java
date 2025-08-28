@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001462;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A104236 n*Golomb&apos;s sequence.
+ * A104236 n*Golomb's sequence.
  * @author Georg Fischer
  */
 public class A104236 extends SingleTransformSequence {

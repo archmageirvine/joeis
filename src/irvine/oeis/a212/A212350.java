@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A212350 Maximal number of &quot;good&quot; manifolds in an n-serial polytope.
+ * A212350 Maximal number of "good" manifolds in an n-serial polytope.
  * @author Georg Fischer
  */
 public class A212350 extends LambdaSequence {

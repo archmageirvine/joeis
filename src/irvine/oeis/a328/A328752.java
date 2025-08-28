@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A328752 Lexicographically earliest sequence of distinct positive numbers such that for any n &gt; 0, the first nonzero digit of a(n+1)/a(n) is &quot;1&quot;.
+ * A328752 Lexicographically earliest sequence of distinct positive numbers such that for any n &gt; 0, the first nonzero digit of a(n+1)/a(n) is "1".
  * @author Georg Fischer
  */
 public class A328752 extends LambdaSequence {

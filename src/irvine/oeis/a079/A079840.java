@@ -46,11 +46,21 @@ public class A079840 extends Sequence1 {
     return res;
   }
 
+  private boolean is125PowerTen(long n) {
+    while (n % 10 == 0) {
+      n /= 10;
+    }
+    return n == 1 || n == 2 || n == 5;
+  }
+
   @Override
   public Z next() {
+    if (is125PowerTen(++mN)) {
+      return Z.valueOf(mN);
+    }
     Z max = Z.ZERO;
     int len = 1;
-    for (final int[] p : partitions(++mN)) {
+    for (final int[] p : partitions(mN)) {
       // There is no point in checking a partition with a total digit length
       // smaller than the length of the current best solution
       final int plen = getDigitLength(p);

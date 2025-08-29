@@ -3,15 +3,15 @@ package irvine.oeis.a061;
 import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A061149 Smallest number whose number of divisors = n-th primorial (A002110).
  * @author Sean A. Irvine
  */
-public class A061149 extends Sequence1 {
+public class A061149 extends Sequence0 {
 
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {

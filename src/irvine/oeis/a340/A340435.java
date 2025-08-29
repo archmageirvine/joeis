@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A340435 Number of sets in the geometry determined by the Hausdorff metric at each location between two sets defined by a complete bipartite graph K(6,n) (with n at least 4) missing three edges, where all three removed edges are incident to different vertices in th
+ * A340435 Number of sets in the geometry determined by the Hausdorff metric at each location between two sets defined by a complete bipartite graph K(6,n) (with n at least 4) missing three edges, where all three removed edges are incident to different vertices in the 6-point set but all three removed edges are incident to the same vertex in the other set.
  * @author Georg Fischer
  */
 public class A340435 extends LambdaSequence {

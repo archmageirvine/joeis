@@ -4,7 +4,7 @@ package irvine.oeis.a112;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A112658 Dean&apos;s Word: Omega 2,1: the trajectory of 0 -&gt; 01, 1 -&gt; 21, 2 -&gt; 03, 3 -&gt; 23.
+ * A112658 Dean's Word: Omega 2,1: the trajectory of 0 -&gt; 01, 1 -&gt; 21, 2 -&gt; 03, 3 -&gt; 23.
  * @author Georg Fischer
  */
 public class A112658 extends MorphismFixedPointSequence {

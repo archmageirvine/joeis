@@ -41,8 +41,7 @@ public class LambdaSequence extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z next() {
-    ++mN;
-    return mLambda.apply(mN);
+    return mLambda.apply(++mN);
   }
 
   @Override

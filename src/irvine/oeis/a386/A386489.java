@@ -4,7 +4,7 @@ package irvine.oeis.a386;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A386489 Expansion of (1-x)/((1+x+2*x^2)*(1-4*x+x^2)).
+ * A386489 Expansion of (1-x)/(1 - 3*x - x^2 - 7*x^3 + 2*x^4).
  * @author Georg Fischer
  */
 public class A386489 extends HolonomicRecurrence {

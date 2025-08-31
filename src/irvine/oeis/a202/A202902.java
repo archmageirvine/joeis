@@ -4,7 +4,7 @@ package irvine.oeis.a202;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A202902 Number of nX4 0..1 arrays with every one equal to some NW, E or S neighbor.
+ * A202902 Number of n X 4 0..1 arrays with every one equal to some NW, E or S neighbor.
  * @author Georg Fischer
  */
 public class A202902 extends HolonomicRecurrence {

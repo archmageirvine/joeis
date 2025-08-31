@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A064910 Smallest semiprime p1*p2 such that p2 &gt;= p1 and p2 mod p1 = n.
+ * A064910 Smallest semiprime p*q such that q &gt;= p and q mod p = n.
  * @author Sean A. Irvine
  */
 public class A064910 extends Sequence0 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012608 sec(arcsinh(x)*arcsin(x)) = 1+12/4!*x^4+13328/8!*x^8+117619392/12!*x^12...
+ * A012608 Expansion of e.g.f. sec(arcsinh(x)*arcsin(x)), powers of x^4 only.
  * @author Sean A. Irvine
  */
 public class A012608 extends Sequence0 {

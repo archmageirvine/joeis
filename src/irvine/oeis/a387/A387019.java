@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A387019 allocated for Gordon Hamilton.
+ * A387019 Cubefree numbers organized based on their prime factorization represented in base three.
  * @author Sean A. Irvine
  */
 public class A387019 extends Sequence0 {

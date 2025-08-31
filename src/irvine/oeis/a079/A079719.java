@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A079719 a(n) = n + floor[sum_k{k&lt;n}a(k)/2] with a(0)=0.
+ * A079719 a(n) = n + floor(Sum_{k&lt;n} a(k)/2) with a(0)=0.
  * @author Sean A. Irvine
  */
 public class A079719 extends Sequence0 {

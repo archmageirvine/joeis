@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A121982 Numbers n such that n^2 + 15 is prime.
+ * A121982 Numbers k such that k^2 + 15 is prime.
  * @author Georg Fischer
  */
 public class A121982 extends PrimePositionSubsequence {

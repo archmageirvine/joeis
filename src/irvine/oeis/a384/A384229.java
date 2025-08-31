@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384229 allocated for Joost de Winter.
+ * A384229 Numerators of the expected number of steps to hit the opposite corner by simple random walk on the n-cube.
  * @author Sean A. Irvine
  */
 public class A384229 extends Sequence1 {

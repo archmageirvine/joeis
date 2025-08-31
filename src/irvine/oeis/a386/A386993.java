@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a005.A005117;
 
 /**
- * A386993 allocated for Omar E. Pol.
+ * A386993 Number of 2-dense sublists of divisors of the n-th squarefree number.
  * @author Sean A. Irvine
  */
 public class A386993 extends AbstractSequence {

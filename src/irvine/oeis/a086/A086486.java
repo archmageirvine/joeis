@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A086486 Numbers n such that the sum of the distinct prime divisors divides rad(n)=A007947(n).
+ * A086486 Numbers k such that the sum of the distinct prime divisors divides rad(k)=A007947(k).
  * @author Georg Fischer
  */
 public class A086486 extends FilterNumberSequence {

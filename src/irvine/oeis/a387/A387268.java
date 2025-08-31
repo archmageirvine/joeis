@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A079759.
+ * A387268 Decimal expansion of Sum_{k&gt;=0} (-1)^k/(k!)!.
  * @author Sean A. Irvine
  */
 public class A387268 extends DecimalExpansionSequence {

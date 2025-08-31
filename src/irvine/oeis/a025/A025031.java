@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A025031 Expansion of 1/((1-x)(1-9x)(1-10x)(1-12x)).
+ * A025031 Expansion of 1/((1-x)*(1-9*x)*(1-10*x)*(1-12*x)).
  * @author Sean A. Irvine
  */
 public class A025031 extends LinearRecurrence {

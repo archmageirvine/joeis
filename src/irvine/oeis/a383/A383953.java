@@ -4,7 +4,7 @@ package irvine.oeis.a383;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A383953 allocated for Paul Curtz.
+ * A383953 a(0) = 4, a(n) = 2*a(n-1) + (-1)^n.
  * @author Georg Fischer
  */
 public class A383953 extends HolonomicRecurrence {

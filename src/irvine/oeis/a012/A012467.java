@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012467 sech(arctan(x)^2) = 1 - 12/4!*x^4 + 480/6!*x^6 - 21168/8!*x^8 + ...
+ * A012467 Expansion of e.g.f. sech(arctan(x)^2), even powers only.
  * @author Sean A. Irvine
  */
 public class A012467 extends Sequence0 {

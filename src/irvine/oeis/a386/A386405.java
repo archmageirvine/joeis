@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A386405 allocated for Kelvin Voskuijl.
+ * A386405 Decimal expansion of Product_{k&gt;=0} (1 + 1/k!^3).
  * @author Sean A. Irvine
  */
 public class A386405 extends DecimalExpansionSequence {

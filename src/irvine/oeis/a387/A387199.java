@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A387199 allocated for James S. DeArmon.
+ * A387199 Numbers which are not themselves palindromes, but a single swap of two digits creates a palindrome.
  * @author Sean A. Irvine
  */
 public class A387199 extends Sequence1 {

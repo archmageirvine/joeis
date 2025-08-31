@@ -7,7 +7,7 @@ import irvine.oeis.a334.A334676;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A387242 allocated for Ali Sada.
+ * A387242 a(n) is the least k such that A334676(k) != k and the decimal string of n appears in A334676(k).
  * @author Sean A. Irvine
  */
 public class A387242 extends Sequence1 {

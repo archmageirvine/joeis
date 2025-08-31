@@ -4,7 +4,7 @@ package irvine.oeis.a103;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A103565 Primes of the form 3 p^2+2, where p is prime.
+ * A103565 Primes of the form 3*p^2+2, where p is prime.
  * @author Georg Fischer
  */
 public class A103565 extends SingleTransformSequence {

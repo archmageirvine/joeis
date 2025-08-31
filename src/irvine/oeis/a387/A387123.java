@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387123 Numbers k such that Sum_{i=1..r} (k-i) and Sum_{i=1..r} (k+i) are both triangular for some r with 1 &lt;= r &lt;= k.
+ * A387123 Numbers k such that Sum_{i=1..r} (k-i) and Sum_{i=1..r} (k+i) are both triangular for some r with 1 &lt;= r &lt; k.
  * @author Sean A. Irvine
  */
 public class A387123 extends Sequence1 {

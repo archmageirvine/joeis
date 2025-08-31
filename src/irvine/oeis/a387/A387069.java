@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387069 allocated for Cristiano Campos de Oliveira.
+ * A387069 Numbers whose representation in base b are their representation in base b+1 with a "0" added at the end for some b.
  * @author Sean A. Irvine
  */
 public class A387069 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a001.A001010;
 
 /**
- * A178961 Partial sums of number of symmetric foldings of a strip of n stamps (A001010).
+ * A178961 Partial sums of A001010.
  * @author Sean A. Irvine
  */
 public class A178961 extends PartialSumSequence {

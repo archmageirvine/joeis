@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A079103 Catalan(n)^(2n-2).
+ * A079103 a(n) = Catalan(n)^(2*n-2).
  * @author Georg Fischer
  */
 public class A079103 extends AbstractSequence {

@@ -7,7 +7,7 @@ import irvine.math.q.Rationals;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A236435 Numerator of product_{k=1..n-1} (1 + 1/prime(k)).
+ * A236435 Numerator of Product_{k=1..n-1} (1 + 1/prime(k)).
  * @author Georg Fischer
  */
 public class A236435 extends LambdaSequence {

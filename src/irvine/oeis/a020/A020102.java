@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A020102 Ceiling of GAMMA(n+3/11)/GAMMA(3/11).
+ * A020102 Ceiling of Gamma(n+3/11)/Gamma(3/11).
  * @author Sean A. Irvine
  */
 public class A020102 extends Sequence0 {

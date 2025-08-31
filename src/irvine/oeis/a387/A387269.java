@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387269.
+ * A387269 allocated for Ahmet Caglar Saygili.
  * @author Sean A. Irvine
  */
 public class A387269 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012458 arcsin(arctan(x)^2) = 2/2!*x^2 - 16/4!*x^4 + 488/6!*x^6 - 30336/8!*x^8...
+ * A012458 Expansion of e.g.f. arcsin(arctan(x)^2), even powers only.
  * @author Sean A. Irvine
  */
 public class A012458 extends Sequence0 {

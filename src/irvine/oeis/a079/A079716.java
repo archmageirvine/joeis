@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000071;
 import irvine.oeis.a005.A005968;
 
 /**
- * A079716 a(p)=2*(F(1)^3+F(2)^3+F(3)^3+....+F(p)^3)/(F(1)+F(2)+F(3)+....+F(p)) where p runs through the primes and F(k) denotes the k-th Fibonacci number.
+ * A079716 a(n) = 2*(F(1)^3+F(2)^3+F(3)^3+...+F(p)^3)/(F(1)+F(2)+F(3)+...+F(p)) where p is the n-th prime and F(k) denotes the k-th Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A079716 extends Sequence1 {

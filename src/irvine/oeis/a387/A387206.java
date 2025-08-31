@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A387206 allocated for Jason Bard.
+ * A387206 Decimal expansion of Sum_{k&gt;=1} (-1)^(k+1)/(6*k-5)^6 + (-1)^(k+1)/(6*k-1)^6.
  * @author Sean A. Irvine
  */
 public class A387206 extends DecimalExpansionSequence {

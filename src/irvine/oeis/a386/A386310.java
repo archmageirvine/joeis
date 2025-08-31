@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A386310 allocated for Juri-Stepan Gerasimov.
+ * A386310 Number of divisors d of n such that 2*d^d == 0 (mod n).
  * @author Sean A. Irvine
  */
 public class A386310 extends Sequence1 {

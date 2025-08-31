@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A104077 10000 log(n/10), rounded.
+ * A104077 a(n) = round(10000*log(n/10)).
  * @author Georg Fischer
  */
 public class A104077 extends LambdaSequence {

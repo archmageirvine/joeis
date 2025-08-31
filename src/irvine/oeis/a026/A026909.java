@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A026909 (1/2)*T(2n,n), T given by A026907.
+ * A026909 a(n) = (1/2)*A026907(2*n, n).
  * @author Sean A. Irvine
  */
 public class A026909 extends AbstractSequence {

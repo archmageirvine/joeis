@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A386213 allocated for Lechoslaw Ratajczak.
+ * A386213 Integers t having at least one nonempty subset of the set of its proper divisors for which the equation sigma(t) + r = m*t (m is any integer &gt; 1, r is the sum of elements of such subset) is true.
  * @author Sean A. Irvine
  */
 public class A386213 extends Sequence1 {

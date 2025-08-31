@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079814 Odd integers such that phi(n)/n &lt; 6/Pi^2 where phi = A000010.
+ * A079814 Odd integers k such that phi(k)/k &lt; 6/Pi^2 where phi = A000010.
  * @author Sean A. Irvine
  */
 public class A079814 extends Sequence1 {

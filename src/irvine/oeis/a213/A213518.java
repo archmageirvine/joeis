@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterLambdaSequence;
 
 /**
- * A213518 Numbers n such that the triangular number n*(n+1)/2 has 2 different digits in base 10.
+ * A213518 Numbers k such that the triangular number k*(k+1)/2 has 2 different digits in base 10.
  * @author Georg Fischer
  */
 public class A213518 extends FilterLambdaSequence {

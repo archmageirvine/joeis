@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A386493 allocated for Stefano Spezia.
+ * A386493 allocated for Beno\u00eet Daene.
  * @author Sean A. Irvine
  */
 public class A386493 extends A386492 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A093470 Floor(n^(1/n)*10^n).
+ * A093470 a(n) = floor(n^(1/n)*10^n).
  * @author Georg Fischer
  */
 public class A093470 extends FloorSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A072291 a(n)=a(n-1)+a(n-2)^n with a(1)=a(2)=1.
+ * A072291 a(n) = a(n-1)+a(n-2)^n with a(1) = a(2) = 1.
  * <code>a(n)=a(n-1)+a(n-2)^n</code>
  * @author Georg Fischer
  */

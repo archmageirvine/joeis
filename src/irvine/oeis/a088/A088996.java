@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A088996 Triangle T(n,k) read by rows, given by [0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, ...] DELTA [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, ...] where DELTA is the operator defined in A084938.
+ * A088996 Triangle T(n, k) read by rows: T(n, k) = Sum_{j=0..n} binomial(j, n-k) * |Stirling1(n, n-j)|.
  * @author Georg Fischer
  */
 public class A088996 extends Triangle {

@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A117012 Primes of the form n^2+5n+c (n&gt;=0), where c=3 for even n and c=-3 for odd n.
+ * A117012 Primes of the form n^2+5*n+c (n&gt;=0), where c=3 for even n and c=-3 for odd n.
  * @author Georg Fischer
  */
 public class A117012 extends FilterSequence {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a157.A157196;
 
 /**
- * A386385 allocated for Daniel Hoyt.
+ * A386385 Period-32 block rewriting of A157196 (blocks 11 and 2): for block index i, keep if i mod 32 in {3,4,11,12,15,16,19,20,27,28}, else swap 11&lt;-&gt;2.
  * @author Sean A. Irvine
  */
 public class A386385 extends Sequence0 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012011 arcsinh(sin(sin(x)))=x-3/3!*x^3+41/5!*x^5-1515/7!*x^7+113489/9!*x^9...
+ * A012011 Expansion of e.g.f. arcsinh(sin(sin(x))), odd powers only.
  * @author Sean A. Irvine
  */
 public class A012011 extends Sequence0 {

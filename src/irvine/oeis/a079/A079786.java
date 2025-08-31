@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079786 Triangle read by rows in which the n-th row begins with n and contains tau(n) numbers. The r-th term from right is the largest number &lt; n with r divisors, for 1&lt;= r &lt;= tau(n).
+ * A079786 Triangle read by rows in which the n-th row begins with n and contains at most tau(n) numbers. The r-th term from right is the largest number &lt; n with r divisors, for 1 &lt;= r &lt;= tau(n) skipping any r for which no suitable number exists.
  * @author Sean A. Irvine
  */
 public class A079786 extends Sequence1 {

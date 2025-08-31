@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A202105 Numbers n such that 90*n + 43 is prime.
+ * A202105 Numbers k such that 90*k + 43 is prime.
  * @author Georg Fischer
  */
 public class A202105 extends PrimePositionSubsequence {

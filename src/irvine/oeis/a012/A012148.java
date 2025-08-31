@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012148 sec(tan(sin(x)))=1+1/2!*x^2+9/4!*x^4+153/6!*x^6+4337/8!*x^8...
+ * A012148 Expansion of e.g.f. sec(tan(sin(x))), even powers only.
  * @author Sean A. Irvine
  */
 public class A012148 extends Sequence0 {

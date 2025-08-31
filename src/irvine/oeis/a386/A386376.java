@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A386376 allocated for Yifan Xie.
+ * A386376 a(n) is the smallest integer k such that b(n,k) is squarefree, where b(n,1) = n and b(n, k+1) = b(n,k) + rad(b(n, k)) for k &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A386376 extends Sequence1 {

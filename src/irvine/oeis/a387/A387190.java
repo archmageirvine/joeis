@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002163;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A387190 allocated for Paolo Xausa.
+ * A387190 Decimal expansion of the second smallest dihedral angle, in radians, in an elongated pentagonal cupola (Johnson solid J_20).
  * Formula:
  * @author Georg Fischer
  */

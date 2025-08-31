@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a086.A086122;
 
 /**
- * A121938 Primes of the form (3^n + 5^n)/2^3 = A074606(n)/8.
+ * A121938 Primes of the form (3^k + 5^k)/2^3 = A074606(k)/8.
  * @author Georg Fischer
  */
 public class A121938 extends A086122 {

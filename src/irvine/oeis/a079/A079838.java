@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079838 a(1) = 1 and then smallest multiple of a(n) which has no nonzero digit in common with a(n).
+ * A079838 a(1)=1 and for n&gt;1, a(n) is the smallest multiple of a(n-1) which has no nonzero digit in common with a(n-1).
  * @author Sean A. Irvine
  */
 public class A079838 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a095;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A095940 a(n+2) = 5a(n+1) - 3a(n) (n &gt;= 1); a(0) = 0, a(1) = 1, a(2) = 4.
+ * A095940 a(n+2) = 5*a(n+1) - 3*a(n) (n &gt;= 1); a(0) = 0, a(1) = 1, a(2) = 4.
  * @author Georg Fischer
  */
 public class A095940 extends LinearRecurrence {

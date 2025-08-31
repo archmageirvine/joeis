@@ -1,0 +1,28 @@
+package irvine.oeis.a079;
+
+import irvine.math.cr.CR;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
+
+/**
+ * A079940 Greedy fractional multiples of 1/e: a(1)=1, sum_{n&gt;0} fractional_part(a(n)/e) = 1.
+ * @author Sean A. Irvine
+ */
+public class A079940 extends Sequence1 {
+
+  private final CR mX = CR.E.inverse();
+  private long mN = 0;
+  private CR mSum = CR.ZERO;
+
+
+  @Override
+  public Z next() {
+    while (true) {
+      final CR t = mSum.add(mX.multiply(++mN).frac());
+      if (t.compareTo(CR.ONE) <= 0) {
+        mSum = t;
+        return Z.valueOf(mN);
+      }
+    }
+  }
+}

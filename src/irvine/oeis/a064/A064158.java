@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064158 Integers n such that (x1*x2*..xk)^(x1+x2+..xk) = (x1+x2+..xk)^(x1*x2*...xk) where x1x2..xk are the digits of n in base 10.
+ * A064158 Integers m such that (x1*x2*..xk)^(x1+x2+..xk) = (x1+x2+..xk)^(x1*x2*..xk) where x1x2..xk are the digits of m in base 10.
  * @author Sean A. Irvine
  */
 public class A064158 extends Sequence1 {

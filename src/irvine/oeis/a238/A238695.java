@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A238695 Decimal expansion of Product_{n&gt;=0} (1+1/n!).
+ * A238695 Decimal expansion of Product_{k&gt;=0} (1+1/k!).
  * @author Sean A. Irvine
  */
 public class A238695 extends DecimalExpansionSequence {

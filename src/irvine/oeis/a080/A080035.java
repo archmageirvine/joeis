@@ -6,6 +6,7 @@ import java.util.Set;
 import irvine.lisp.SExpression;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
+import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a014.A014486;
@@ -14,7 +15,7 @@ import irvine.oeis.a014.A014486;
  * A080035 "Orderly" Friedman numbers (or "good" or "nice" Friedman numbers): Friedman numbers (A036057) where the construction digits are used in the proper order.
  * @author Sean A. Irvine
  */
-public class A080035 extends Sequence1 {
+public class A080035 extends Sequence1 implements Conjectural {
 
   private static final Q MAX = Q.valueOf(Z.ONE.shiftLeft(20));
   private static final long POW_MAX = 100;
@@ -41,6 +42,7 @@ public class A080035 extends Sequence1 {
     for (final Q u : left) {
       for (final Q v : right) {
         if (!s.car().isPair() && !s.cdr().isPair() && v.signum() >= 0 && !u.isZero()) {
+          // Warning: this concatenation is likely insufficient for > 2 digits
           add(res, u.multiply(10).add(v.multiply(u.signum()))); // Concatenation
         }
         add(res, u.add(v));
@@ -102,7 +104,7 @@ public class A080035 extends Sequence1 {
     }
   }
 
-  // Much slower, but potential more accurate CR based version
+  // Much slower, but potentially more accurate CR based version
 //  private static final int ACCURACY = -32;
 //  private static final CR MAX = CR.valueOf(Z.ONE.shiftLeft(20));
 //  private static final CR POW_MAX = CR.valueOf(100);

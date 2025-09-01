@@ -40,8 +40,8 @@ public class A080035 extends Sequence1 {
     final Set<Q> res = new HashSet<>();
     for (final Q u : left) {
       for (final Q v : right) {
-        if (!s.car().isPair() && !s.cdr().isPair() && v.signum() >= 0) {
-          add(res, u.multiply(10).add(v)); // Concatenation
+        if (!s.car().isPair() && !s.cdr().isPair() && v.signum() >= 0 && !u.isZero()) {
+          add(res, u.multiply(10).add(v.multiply(u.signum()))); // Concatenation
         }
         add(res, u.add(v));
         add(res, u.subtract(v));
@@ -87,9 +87,6 @@ public class A080035 extends Sequence1 {
         break;
       }
       if (is(n, digits, s)) {
-        if (n == 12393) {
-          System.out.println(s);
-        }
         return true;
       }
     }
@@ -132,7 +129,7 @@ public class A080035 extends Sequence1 {
 //    for (final CR u : left) {
 //      for (final CR v : right) {
 //        if (!s.car().isPair() && !s.cdr().isPair() && v.signum(ACCURACY) >= 0) {
-//          add(res, u.multiply(10).add(v)); // Concatenation
+//          add(res, u.multiply(10).add(v.multiply(u.signum())); // Concatenation
 //        }
 //        add(res, u.add(v));
 //        add(res, u.subtract(v));

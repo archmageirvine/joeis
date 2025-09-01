@@ -7,7 +7,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a031.A031443;
 
 /**
- * A214218 Numbers consisting only of digits 1 and 2 occurring with equal frequency.
+ * A214218 List of words over {1,2} with equal numbers of 1's and 2's.
  * @author Georg Fischer
  */
 public class A214218 extends AbstractSequence {

@@ -51,7 +51,7 @@ public class A036057 extends Sequence1 {
   /** Large used number (essentially 2^digits-1). */
   private int mMaxUsed;
 
-  private Node mAnswer = null;
+  protected Node mAnswer = null;
   private int mN = 24;
   private String mTrivial = null;
 
@@ -142,7 +142,7 @@ public class A036057 extends Sequence1 {
     if (!mResults.add(n)) {
       return;
     }
-    // Otherwise add it to the hash map and queue.
+    // Otherwise, add it to the hash map and queue.
     if (integer) {
       mPriority.addFirst(n);
     } else {

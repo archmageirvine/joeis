@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A174541 Baron M√ľnchhausen&apos;s Sequence.
+ * A174541 Baron M\u00fcnchhausen's Sequence.
  * @author Georg Fischer
  */
 public class A174541 extends LambdaSequence {

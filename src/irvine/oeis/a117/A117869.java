@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a000.A000149;
 
 /**
- * A117869 Partial sums of floor(e^n).
+ * A117869 Partial sums of A000149.
  * @author Sean A. Irvine
  */
 public class A117869 extends PartialSumSequence {

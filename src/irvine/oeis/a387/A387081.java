@@ -10,7 +10,7 @@ import irvine.oeis.a386.A386482;
  */
 public class A387081 extends A386482 {
 
-  private Z mA = Functions.LPF.z(super.next());
+  private Z mA = super.next();
   private long mN = 1;
 
   @Override
@@ -18,8 +18,8 @@ public class A387081 extends A386482 {
     while (true) {
       ++mN;
       final Z t = mA;
-      mA = Functions.LPF.z(super.next());
-      if (!t.equals(mA)) {
+      mA = super.next();
+      if (mN == 2 || !mA.subtract(t).abs().mod(Functions.LPF.z(t)).isZero()) {
         return Z.valueOf(mN);
       }
     }

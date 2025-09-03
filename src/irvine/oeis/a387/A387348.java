@@ -6,7 +6,7 @@ import irvine.oeis.a035.A035506;
 import irvine.oeis.a035.A035513;
 
 /**
- * A387348 allocated for Clark Kimberling.
+ * A387348 a(n) = W(n,2) - S(n,2) where W is the Wythoff array (A035513) and S is the Stolarsky array (A035506).
  * @author Sean A. Irvine
  */
 public class A387348 extends Sequence1 {

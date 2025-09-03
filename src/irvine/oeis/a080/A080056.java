@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080056 Greedy powers of (2/Pi): sum_{n=1..inf} (2/Pi)^a(n) = 1.
+ * A080056 Greedy powers of (2/Pi): Sum_{n=1..inf} (2/Pi)^a(n) = 1.
  * @author Sean A. Irvine
  */
 public class A080056 extends Sequence1 {

@@ -1,0 +1,30 @@
+package irvine.oeis.a035;
+
+import irvine.math.partition.IntegerPartition;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
+
+/**
+ * A035423 Related to Rogers-Ramanujan Identities.
+ * @author Sean A. Irvine
+ */
+public class A035423 extends Sequence1 {
+
+  private int mM = 0;
+  private final IntegerPartition mPart = new IntegerPartition(10000000);
+
+  private boolean is(final int[] p) {
+    return p[p.length - 1] > p.length;
+  }
+
+  @Override
+  public Z next() {
+    while (true) {
+      ++mM;
+      if (is(mPart.next())) {
+        return Z.valueOf(mM);
+      }
+    }
+  }
+}
+

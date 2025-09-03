@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A199366 Numbers n such that 4n^3-1 is prime.
+ * A199366 Numbers k such that 4*k^3-1 is prime.
  * @author Georg Fischer
  */
 public class A199366 extends PrimePositionSubsequence {

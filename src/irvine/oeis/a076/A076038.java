@@ -9,7 +9,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000108;
 
 /**
- * A076038 Square array read by antidiagonals in which row n has g.f. C/(1-n*x*C) where C = (1/2-1/2*(1-4*x)^(1/2))/x = g.f. for Catalan numbers A000108.
+ * A076038 Square array read by ascending antidiagonals in which row n has g.f. C/(1-n*x*C) where C = (1/2-1/2*(1-4*x)^(1/2))/x = g.f. for Catalan numbers A000108.
  * @author Sean A. Irvine
  */
 public class A076038 extends Sequence0 {

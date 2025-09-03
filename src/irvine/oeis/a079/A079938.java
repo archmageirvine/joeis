@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079938 Greedy frac multiples of Pi: a(1)=1, Sum_{n&gt;=1} frac(a(n)*x) = 1 at x = Pi.
+ * A079938 Greedy frac multiples of Pi: a(1)=1, Sum_{n&gt;=1} frac(a(n)*Pi) = 1.
  * @author Sean A. Irvine
  */
 public class A079938 extends Sequence1 {

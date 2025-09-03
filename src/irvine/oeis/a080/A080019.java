@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A080019 Positive integers such that the smallest real solution to x^n + x = 2*Pi*a(n) forms a monotonically increasing sequence as n grows.
+ * A080019 Positive integers such that the smallest positive real solution to x^n + x = 2*Pi*a(n) forms a monotonically increasing sequence as n grows.
  * @author Sean A. Irvine
  */
 public class A080019 extends Sequence2 {

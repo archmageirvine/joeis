@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387305 allocated for Pablo Cadena-Urz\u00faa.
+ * A387305 Least k such that the Hamming weight (A000120) of n*k is prime.
  * @author Sean A. Irvine
  */
 public class A387305 extends Sequence1 {

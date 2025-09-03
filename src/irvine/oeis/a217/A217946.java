@@ -6,7 +6,7 @@ package irvine.oeis.a217;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A217946 4^n*(n+1)*(8*n^2+32*n+33)*P(3/2,n)/(3*P(4,n)) where P(a,n) is the Pochhammer rising factorial.
+ * A217946 a(n) = 4^n*(n+1)*(8*n^2+32*n+33)*P(3/2,n)/(3*P(4,n)) where P(a,n) is the Pochhammer rising factorial.
  * @author Georg Fischer
  */
 public class A217946 extends HolonomicRecurrence {

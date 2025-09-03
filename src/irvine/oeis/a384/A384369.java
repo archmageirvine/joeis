@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384369 Numbers k such that Omega(k)^Omega(k) = Omega(k) (mod k) where Omega = A001222.
+ * A384369 Numbers k such that Omega(k)^Omega(k) == Omega(k) (mod k) where Omega = A001222.
  * @author Sean A. Irvine
  */
 public class A384369 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A116944 a(1) = 1; for n&gt;1, a(n)=(a(n-1)+1)^n.
+ * A116944 a(1) = 1; for n&gt;1, a(n) = (a(n-1)+1)^n.
  * <code>a(n)=(a(n-1)+1)^n</code>
  * @author Georg Fischer
  */

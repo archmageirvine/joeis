@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000203;
 import irvine.oeis.a003.A003415;
 
 /**
- * A343217 Numbers k such that A003415(sigma(k)) &gt;= k.
+ * A343217 Numbers k such that A003415(sigma(k)) &gt;= k, where A003415(x) gives the arithmetic derivative of x.
  * @author Georg Fischer
  */
 public class A343217 extends FilterPositionSequence {

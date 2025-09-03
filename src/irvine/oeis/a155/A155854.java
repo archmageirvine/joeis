@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A155854 Numbers n such that 13*n + 3 is not prime.
+ * A155854 Numbers k such that 13*k + 3 is not prime.
  * @author Georg Fischer
  */
 public class A155854 extends FilterNumberSequence {

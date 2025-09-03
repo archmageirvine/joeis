@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079940 Greedy fractional multiples of 1/e: a(1)=1, sum_{n&gt;0} fractional_part(a(n)/e) = 1.
+ * A079940 Greedy fractional multiples of 1/e: a(1)=1, Sum_{n&gt;0} frac(a(n)/e) = 1.
  * @author Sean A. Irvine
  */
 public class A079940 extends Sequence1 {

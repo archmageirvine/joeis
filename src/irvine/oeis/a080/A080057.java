@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080057 Greedy powers of (e^-Gamma): sum_{n=1..inf} (e^-Gamma)^a(n) = 1, where e^-Gamma = e^(-.57721566490153286...) = .561459483566885169...
+ * A080057 Greedy powers of exp(-gamma): Sum_{n&gt;=1} exp(-gamma)^a(n) = 1, where exp(-gamma) = exp(-.57721566490153286...) = .561459483566885169...
  * @author Sean A. Irvine
  */
 public class A080057 extends Sequence1 {

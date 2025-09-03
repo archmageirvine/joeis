@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079941 Greedy frac multiples of log(2): a(1)=1, sum(n&gt;0,frac(a(n)*x))=1 at x=log(2).
+ * A079941 Greedy frac multiples of log(2): a(1)=1, Sum_{n&gt;0} frac(a(n)*log(2)) = 1.
  * @author Sean A. Irvine
  */
 public class A079941 extends Sequence1 {

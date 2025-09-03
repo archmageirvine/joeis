@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A387351 allocated for Clark Kimberling.
+ * A387351 Positions of -1's in A387348.
  * @author Sean A. Irvine
  */
 public class A387351 extends FilterPositionSequence {

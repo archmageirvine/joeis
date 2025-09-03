@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387243 allocated for Dwight Boddorf.
+ * A387243 a(n) is the smallest positive k such that (k+n)^k &lt; (k+1)^(k+1).
  * @author Sean A. Irvine
  */
 public class A387243 extends Sequence1 {

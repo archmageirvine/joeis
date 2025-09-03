@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A386440 allocated for Jason Bard.
+ * A386440 Decimal expansion of Sum_{k&gt;=1} 1/(8k)!.
  * @author Sean A. Irvine
  */
 public class A386440 extends DecimalExpansionSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a039.A039716;
 
 /**
- * A131491 2*prime(n)!.
+ * A131491 a(n) = 2*prime(n)!.
  * @author Georg Fischer
  */
 public class A131491 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a081.A081603;
 
 /**
- * A216430 (-1)^A081603(n), parity of the number of 2&apos;s in the ternary expansion of n.
+ * A216430 (-1)^A081603(n), parity of the number of 2's in the ternary expansion of n.
  * @author Georg Fischer
  */
 public class A216430 extends LambdaSequence {

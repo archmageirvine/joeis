@@ -6,7 +6,7 @@ package irvine.oeis.a132;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A132912 a(n)=C(n+2,2)(2n)!/2^n.
+ * A132912 a(n) = C(n+2,2)*(2*n)!/2^n.
  * @author Georg Fischer
  */
 public class A132912 extends HolonomicRecurrence {

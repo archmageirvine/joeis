@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A380457 Sum of the divisors of n plus the number of distinct primes dividing n.
+ * A380457 Sum of divisors of n plus the number of distinct prime divisors of n: a(n) = sigma(n) + omega(n).
  * @author Georg Fischer
  */
 public class A380457 extends LambdaSequence {

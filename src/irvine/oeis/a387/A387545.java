@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A387545.
+ * A387545 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A387545 extends DecimalExpansionSequence {

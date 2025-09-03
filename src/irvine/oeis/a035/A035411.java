@@ -1,0 +1,16 @@
+package irvine.oeis.a035;
+
+import irvine.oeis.DifferenceSequence;
+
+/**
+ * A035411 Related to Rogers-Ramanujan Identities.
+ * @author Sean A. Irvine
+ */
+public class A035411 extends DifferenceSequence {
+
+  /** Construct the sequence. */
+  public A035411() {
+    super(new A035401());
+  }
+}
+

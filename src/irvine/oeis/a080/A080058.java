@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080058 Greedy powers of (1/zeta(2)): sum_{n=1..inf} (1/zeta(2))^a(n) = 1, where 1/zeta(2) = 6/Pi^2 = .607927101854...
+ * A080058 Greedy powers of (1/zeta(2)): Sum_{n&gt;=1} (1/zeta(2))^a(n) = 1, where 1/zeta(2) = 6/Pi^2 = .607927101854...
  * @author Sean A. Irvine
  */
 public class A080058 extends Sequence1 {

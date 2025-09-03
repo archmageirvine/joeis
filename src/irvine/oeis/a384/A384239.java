@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384239 The number of primes p &lt;= n such that p^p = p (mod n).
+ * A384239 The number of primes p &lt;= n such that p^p == p (mod n).
  * @author Sean A. Irvine
  */
 public class A384239 extends Sequence1 {

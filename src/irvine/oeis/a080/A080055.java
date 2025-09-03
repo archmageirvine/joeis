@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080055 Greedy powers of log(2): sum_{n&gt;=1} (log(2))^a(n) = 1.
+ * A080055 Greedy powers of log(2): Sum_{n&gt;=1} (log(2))^a(n) = 1.
  * @author Sean A. Irvine
  */
 public class A080055 extends Sequence1 {

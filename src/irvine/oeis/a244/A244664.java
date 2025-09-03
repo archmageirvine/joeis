@@ -6,7 +6,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A244664 Decimal expansion of sum_(n&gt;=1) (H(n,2)/n^2) where H(n,2) = A007406(n)/A007407(n) is the n-th harmonic number of order 2.
+ * A244664 Decimal expansion of Sum_{n &gt;= 1} H(n,2)/n^2 where H(n,2) = A007406(n)/A007407(n) is the n-th harmonic number of order 2.
  * Formula: Decimal expansion of sum_(n>=1) (H(n,2)/n^2) where H(n,2) = A007406(n)/A007407(n) is the n-th harmonic number of order 2.       nonn,cons
  * @author Georg Fischer
  */

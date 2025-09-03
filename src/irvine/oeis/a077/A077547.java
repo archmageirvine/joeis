@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A077547 Primes of the form floor(Pi^n).
+ * A077547 Primes of the form floor(Pi^k).
  * @author Georg Fischer
  */
 public class A077547 extends FilterSequence {

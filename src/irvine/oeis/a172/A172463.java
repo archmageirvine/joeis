@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a006.A006567;
 
 /**
- * A172463 Partial sums of emirps, primes whose reversal is a different prime (A006567).
+ * A172463 Partial sums of A006567.
  * @author Sean A. Irvine
  */
 public class A172463 extends PartialSumSequence {

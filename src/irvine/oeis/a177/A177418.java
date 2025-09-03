@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A177418 Primes of the form 10^n - 59.
+ * A177418 Primes of the form 10^k - 59.
  * @author Georg Fischer
  */
 public class A177418 extends PrimeSubsequence {

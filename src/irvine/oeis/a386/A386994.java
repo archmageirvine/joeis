@@ -3,7 +3,7 @@ package irvine.oeis.a386;
 import irvine.oeis.a000.A000045;
 
 /**
- * A386994 allocated for Omar E. Pol.
+ * A386994 Number of 2-dense sublists of divisors of the n-th Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A386994 extends A386993 {

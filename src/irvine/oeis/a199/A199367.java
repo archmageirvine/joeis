@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A199367 Primes of the form 4*n^3 - 1.
+ * A199367 Primes of the form 4*k^3 - 1.
  * @author Georg Fischer
  */
 public class A199367 extends PrimeSubsequence {

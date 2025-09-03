@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A059792 Numbers n such that floor(Pi^n) is prime.
+ * A059792 Numbers k such that floor(Pi^k) is prime.
  * @author Sean A. Irvine
  */
 public class A059792 extends Sequence1 {

@@ -11,7 +11,7 @@ import irvine.oeis.a014.A014486;
 public class A057164 extends A014486 {
 
   /**
-   * Reverse.
+   * Reverse. This is equivalent to A036044.
    * @param n parameter
    * @return reverse
    */

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079930 Greedy powers of (1/sqrt(e)): sum_{n=1..inf} (1/sqrt(e))^a(n) = 1.
+ * A079930 Greedy powers of (1/sqrt(e)): Sum_{n&gt;=1} (1/sqrt(e))^a(n) = 1.
  * @author Sean A. Irvine
  */
 public class A079930 extends Sequence1 {

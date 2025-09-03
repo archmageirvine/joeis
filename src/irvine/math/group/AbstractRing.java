@@ -335,6 +335,20 @@ public abstract class AbstractRing<E> extends AbstractGroup<E> implements Ring<E
   }
 
   /**
+   * The sum of a function over all the divisors of a number.
+   * @param n sum over the divisors of this number
+   * @param function the function
+   * @return sum
+   */
+  public E sumdiv(final Z n, final Function<Integer, E> function) {
+    E sum = zero();
+    for (final Z d : Jaguar.factor(n).divisors()) {
+      sum = add(sum, function.apply(d.intValueExact()));
+    }
+    return sum;
+  }
+
+  /**
    * The product of a function over all the divisors of a number.
    * @param n product over the divisors of this number
    * @param function the function

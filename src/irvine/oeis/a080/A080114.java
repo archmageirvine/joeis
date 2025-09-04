@@ -11,6 +11,9 @@ import irvine.oeis.a065.A065091;
 public class A080114 extends A065091 {
 
   static boolean is(final long p) {
+    if (p == 2) {
+      return false;
+    }
     long s = 0;
     for (long j = 1; j <= (p - 1) / 2; ++j) {
       s += Functions.JACOBI.i(j, p);

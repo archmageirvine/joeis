@@ -19,7 +19,7 @@ public class A387081 extends A386482 {
       ++mN;
       final Z t = mA;
       mA = super.next();
-      if (mN == 2 || !mA.subtract(t).abs().mod(Functions.LPF.z(t)).isZero()) {
+      if (!mA.subtract(t).abs().mod(Functions.LPF.z(t)).isZero()) {
         return Z.valueOf(mN);
       }
     }

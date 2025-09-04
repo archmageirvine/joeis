@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A387463 Total number of 3&apos;s in the decimal digits of the divisors of n.
+ * A387463 Total number of 3's in the decimal digits of the divisors of n.
  * @author Georg Fischer
  */
 public class A387463 extends LambdaSequence {

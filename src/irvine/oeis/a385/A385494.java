@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A385494 Total number of 1&apos;s in the decimal digits of the divisors of n.
+ * A385494 Total number of 1's in the decimal digits of the divisors of n.
  * @author Georg Fischer
  */
 public class A385494 extends LambdaSequence {

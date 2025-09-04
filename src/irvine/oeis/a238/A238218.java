@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000009;
 import irvine.oeis.a010.A010815;
 
 /**
- * A238218 The total number of 3&apos;s in all partitions of n into an even number of distinct parts.
+ * A238218 The total number of 3's in all partitions of n into an even number of distinct parts.
  * new A000009(), new A010815()
  * @author Georg Fischer
  */

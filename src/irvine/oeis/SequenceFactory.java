@@ -12,6 +12,7 @@ import java.util.List;
 
 import org.apfloat.ApfloatRuntimeException;
 
+import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.producer.MetaProducer;
@@ -132,6 +133,11 @@ public final class SequenceFactory {
       final int skipPos = expression.lastIndexOf(".skip");
       final int skip = Integer.parseInt(expression.substring(skipPos + ".skip(".length(), expression.length() - 1));
       return sequence(expression.substring(0, skipPos)).skip(skip);
+    }
+    if (expression.matches(".*\\.prepend\\([0-9]+\\)")) {
+      final int skipPos = expression.lastIndexOf(".skip");
+      final long[] terms = LongUtils.toLong(expression.substring(skipPos + ".prepend(".length(), expression.length() - 1));
+      return sequence(expression.substring(0, skipPos)).prepend(terms);
     }
     if (expression.matches("[A-Za-z][A-Za-z0-9]*\\(.*\\)")) {
       final int open = expression.indexOf('(');

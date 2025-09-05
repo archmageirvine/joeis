@@ -7,7 +7,7 @@ import irvine.math.z.Z;
  * which is to be treated as an exponential generating function.
  * @author Georg Fischer
  */
-public class EgfWrapper implements Sequence {
+public class EgfWrapper extends AbstractSequence {
 
   private final Sequence mSeq;
 
@@ -16,35 +16,13 @@ public class EgfWrapper implements Sequence {
    * @param seq the sequence
    */
   public EgfWrapper(final Sequence seq) {
+    super(seq.getOffset());
     mSeq = seq;
-  }
-
-  @Override
-  public int getOffset() {
-    return mSeq.getOffset();
   }
 
   @Override
   public Z next() {
     return mSeq.next();
-  }
-
-  @Override
-  public Sequence skip(final long terms) {
-    if (terms < 0) {
-      throw new IllegalArgumentException();
-    }
-    for (long k = 0; k < terms; ++k) {
-      if (mSeq.next() == null) {
-        return mSeq;
-      }
-    }
-    return mSeq;
-  }
-
-  @Override
-  public Sequence skip() {
-    return skip(1);
   }
 
   /**

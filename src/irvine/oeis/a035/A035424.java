@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
  */
 public class A035424 extends Sequence1 {
 
-  private int mM = 0;
+  private long mM = 0;
   private final IntegerPartition mPart = new IntegerPartition(10000000);
 
   private boolean is(final int[] p) {

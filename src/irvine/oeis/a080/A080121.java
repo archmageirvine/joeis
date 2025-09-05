@@ -20,7 +20,7 @@ public class A080121 extends Sequence1 {
     while (true) {
       ++k;
       j = j.multiply2();
-      if (n.pow(j).add(n1.pow(j)).isProbablePrime()) {
+      if (n1.pow(j).add(n.pow(j)).isProbablePrime()) {
         return Z.valueOf(k);
       }
     }

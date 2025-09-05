@@ -56,4 +56,14 @@ public abstract class AbstractSequence implements Sequence {
   public AbstractSequence skip() {
     return skip(1);
   }
+
+  @Override
+  public Sequence prepend(final long... terms) {
+    return new PrependSequence(this, terms);
+  }
+
+  @Override
+  public Sequence adjust(final long skip, final long... terms) {
+    return new PrependSequence(skip(skip), terms);
+  }
 }

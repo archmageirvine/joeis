@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
  */
 public class A035406 extends Sequence1 {
 
-  private int mM = 0;
+  private long mM = 0;
   private final IntegerPartition mPart;
 
   protected A035406(final int residue) {

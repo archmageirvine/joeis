@@ -27,7 +27,7 @@ public interface Sequence {
 
   /**
    * Convenience method to skip some number of terms of a sequence.
-   * @param terms number of terms to skip
+   * @param n number of terms to skip
    * @return this sequence with terms skipped
    * @throws IllegalArgumentException if the number of terms to skip is negative.
    */
@@ -38,5 +38,22 @@ public interface Sequence {
    * @return this sequence with one term skipped
    */
   Sequence skip();
+
+  /**
+   * Convenience method to prepend some number of terms of a sequence.
+   * Note the resulting sequence will have the same offset as the original.
+   * @param terms terms to prepend
+   * @return this sequence with terms prepended
+   */
+  Sequence prepend(final long... terms);
+
+  /**
+   * Convenience method to adjust the initial terms of a sequence.
+   * Note the resulting sequence will have the same offset as the original.
+   * @param skip number of terms to skip
+   * @param terms terms to prepend
+   * @return this sequence with initial terms adjusted
+   */
+  Sequence adjust(final long skip, final long... terms);
 }
 

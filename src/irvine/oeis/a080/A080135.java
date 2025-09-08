@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A080134.
+ * A080135 a(n+1) = floor( a(n)*sum(k=0..n, 1/a(k)^s) ), where s = sum(k&gt;=0, 1/a(k)^s) and a(0)=1; s = 2.260568736857767...
  * @author Sean A. Irvine
  */
 public class A080135 extends CachedSequence {

@@ -1,40 +1,16 @@
 package irvine.oeis.a262;
 
-import irvine.factor.prime.Fast;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.a080.A080165;
 
 /**
  * A262284 Primes whose binary expansion begins 101.
- * @author Georg Fischer
+ * @author Sean A. Irvine
  */
-public class A262284 extends Sequence1 {
-
-  private final Fast mPrime = new Fast();
-  private Z mP;
-  private final String mStart;
+public class A262284 extends A080165 {
 
   /** Construct the sequence. */
   public A262284() {
-    this("101");
-  }
-
-  /**
-   * Generic constructor with parameters
-   * @param start first bits
-   */
-  public A262284(final String start) {
-    mStart = start;
-    mP = Z.TWO;
-  }
-
-  @Override
-  public Z next() {
-    while (true) {
-      mP = mPrime.nextPrime(mP);
-      if (mP.toString(2).startsWith(mStart)) {
-        return mP;
-      }
-    }
+    super(5);
   }
 }
+

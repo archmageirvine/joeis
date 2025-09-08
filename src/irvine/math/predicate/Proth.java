@@ -8,8 +8,6 @@ import irvine.math.z.Z;
  */
 public class Proth extends AbstractPredicate {
 
-  // isproth(x)={!bittest(x--, 0) && (x>>valuation(x+!x, 2))^2 < x }
-
   @Override
   public boolean is(final Z n) {
     if (n.isEven()) {

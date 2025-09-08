@@ -13,8 +13,8 @@ public class A073640 extends A000040 {
 
   @Override
   public Z next() {
+    final String s = mA.toString();
     while (true) {
-      final String s = mA.toString();
       final Z p = super.next();
       if (new Z(s + p).isProbablePrime()) {
         mA = p;

@@ -1,9 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.math.group.PolynomialRingField;
-import irvine.math.polynomial.Polynomial;
-import irvine.math.q.Q;
-import irvine.math.q.Rationals;
+import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -13,17 +10,33 @@ import irvine.oeis.Sequence0;
  */
 public class A003106 extends Sequence0 {
 
-  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;
-  private int mLast = -3;
-  private Polynomial<Q> mDen = RING.one();
+  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
+    @Override
+    protected Z compute(final int n, final int m) {
+      if (n == 0) {
+        return Z.ONE;
+      }
+      if (n < 0 || m == 0) {
+        return Z.ZERO;
+      }
+      final int r = m % 5;
+      return r == 2 || r == 3 ? get(n, m - 1).add(get(n - m, m)) : get(n, m - 1);
+    }
+  };
 
   @Override
   public Z next() {
-    if (++mN >= mLast) {
-      mLast += 5;
-      mDen = RING.multiply(mDen, RING.multiply(RING.oneMinusXToTheN(mLast + 1), RING.oneMinusXToTheN(mLast)));
+    if (++mN == 0) {
+      return Z.ONE;
     }
-    return RING.coeff(RING.one(), mDen, mN).toZ();
+    Z sum = Z.ZERO;
+    for (int k = 1; k <= mN; ++k) {
+      final int r = k % 5;
+      if (r == 2 || r == 3) {
+        sum = sum.add(mB.get(mN - k, k));
+      }
+    }
+    return sum;
   }
 }

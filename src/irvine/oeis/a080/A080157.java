@@ -1,0 +1,28 @@
+package irvine.oeis.a080;
+
+import irvine.math.cr.CR;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
+
+/**
+ * A080157 Greedy frac multiples of gamma: a(1)=1, sum(n&gt;0,frac(a(n)*x))=1 at x=gamma, where "frac(y)" denotes the fractional part of y.
+ * @author Sean A. Irvine
+ */
+public class A080157 extends Sequence1 {
+
+  private final CR mX = CR.GAMMA;
+  private long mN = 0;
+  private CR mSum = CR.ZERO;
+
+
+  @Override
+  public Z next() {
+    while (true) {
+      final CR t = mSum.add(mX.multiply(++mN).frac());
+      if (t.compareTo(CR.ONE) <= 0) {
+        mSum = t;
+        return Z.valueOf(mN);
+      }
+    }
+  }
+}

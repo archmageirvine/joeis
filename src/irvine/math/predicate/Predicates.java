@@ -63,7 +63,6 @@ public final class Predicates {
   public static final Predicate ECONOMICAL = new Economical(); // =A046759
   /** Test if a number is a Proth number. */
   public static final Predicate PROTH = new Proth(); // =A080075
-
   /** Test if a number is abundant. */
   public static final Predicate ABUNDANT = new Abundant(); // =A005101
   /** Test if a number is deficient. */
@@ -84,6 +83,8 @@ public final class Predicates {
   public static final Predicate STORMER = new Stormer(); // =A005528
   /** Test if a number is a Super-Poulet number. */
   public static final Predicate SUPER_POULET = new SuperPoulet(); // =A050217
+  /** Test if a number is a 2-dense. */
+  public static final Predicate TWO_DENSE = new TwoDense(); // =A174973
 
   /** Test if a number is brilliant: semiprime, and both primes with the same decimal length. */
   public static final Predicate2 BRILLIANT = new Brilliant(); // =A078972(10

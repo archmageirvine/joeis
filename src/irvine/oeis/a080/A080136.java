@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080134.
+ * A080136 Least positive integer multiples of angle x such that their direction cosines form a unit vector: sum(k&gt;0, cos(a(k)*x)^2)=1, where a(1)=1 and x=1.
  * @author Sean A. Irvine
  */
 public class A080136 extends Sequence1 {

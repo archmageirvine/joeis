@@ -1,16 +1,16 @@
-package irvine.oeis.a003;
+package irvine.oeis.a387;
 
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
- * A003114 Number of partitions of n into parts 5k+1 or 5k+4.
+ * A079941.
  * @author Sean A. Irvine
  */
-public class A003114 extends Sequence0 {
+public class A387739 extends Sequence1 {
 
-  private int mN = -1;
+  private int mN = 0;
   private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int m) {
@@ -27,11 +27,8 @@ public class A003114 extends Sequence0 {
 
   @Override
   public Z next() {
-    if (++mN == 0) {
-      return Z.ONE;
-    }
     Z sum = Z.ZERO;
-    for (int k = 1; k <= mN; ++k) {
+    for (int k = (++mN + 1) / 2; k <= mN; ++k) {
       final int r = k % 5;
       if (r == 1 || r == 4) {
         sum = sum.add(mB.get(mN - k, k));
@@ -40,3 +37,4 @@ public class A003114 extends Sequence0 {
     return sum;
   }
 }
+

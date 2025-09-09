@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006752;
 
 /**
- * A080158 Greedy frac multiples of Catalan's constant, G: a(1)=1, sum(n&gt;0,frac(a(n)*x))=1 at x=G, where "frac(y)" denotes the fractional part of y.
+ * A080158 Greedy frac multiples of Catalan's constant, G: a(1)=1, Sum_{n&gt;0} frac(a(n)*x) = 1 at x=G=A006752, where "frac(y)" denotes the fractional part of y.
  * @author Sean A. Irvine
  */
 public class A080158 extends Sequence1 {

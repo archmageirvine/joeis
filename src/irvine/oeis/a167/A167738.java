@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A167738 Primes that becomes a square when prefixed with a 5.
+ * A167738 Primes that become squares when prefixed with a 5.
  * @author Georg Fischer
  */
 public class A167738 extends FilterSequence {

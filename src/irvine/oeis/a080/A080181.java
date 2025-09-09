@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080181 a(1)=A080180(1), a(n)=a(n-1)+A080180(n) for n&gt;1.
+ * A080181 Partial sums of A080180.
  * @author Sean A. Irvine
  */
 public class A080181 extends Sequence1 {

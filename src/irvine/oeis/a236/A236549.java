@@ -3,7 +3,7 @@ package irvine.oeis.a236;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A236549 The number of independent sets in L(J_n), the line graph of the flower snark graph J_n.
+ * A236549 The number of matchings in the n-flower graph.
  * @author Sean A. Irvine
  */
 public class A236549 extends LinearRecurrence {

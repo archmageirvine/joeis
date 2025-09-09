@@ -3,7 +3,7 @@ package irvine.oeis.a035;
 import irvine.oeis.DifferenceSequence;
 
 /**
- * A035417 Related to Rogers-Ramanujan Identities.
+ * A035417 First differences of A035407.
  * @author Sean A. Irvine
  */
 public class A035417 extends DifferenceSequence {

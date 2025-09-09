@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A385674 allocated for Natalia L. Skirrow.
+ * A385674 Triangle read by rows: T(n,n) = 1 and T(n,k) = (T(n-1,k) | T(n-2,k) | ... | T(n-k,k)) + 1, where | is bitwise OR, (0&lt;=k&lt;=n).
  * @author Sean A. Irvine
  */
 public class A385674 extends Sequence0 {

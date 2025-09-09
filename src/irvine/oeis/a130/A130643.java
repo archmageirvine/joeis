@@ -8,7 +8,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a001.A001223;
 
 /**
- * A130643 Numbers n such that 1 - Sum{k=1..n/2}A001223(2k-1)*(-1)^k = 0.
+ * A130643 Numbers n such that 1 - Sum{k=1..n/2} A001223(2k-1)*(-1)^k = 0.
  * @author Georg Fischer
  */
 public class A130643 extends FilterNumberSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A134892 Ceiling(n*exp(sin n)).
+ * A134892 a(n) = ceiling(n*exp(sin(n))).
  * @author Georg Fischer
  */
 public class A134892 extends FloorSequence {

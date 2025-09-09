@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A006636 From generalized Catalan numbers.
+ * A006636 a(n) = (n + 1)*(n + 2)*(n + 4)*(n + 8)*(n + 15)/120.
  * @author Sean A. Irvine
  */
 public class A006636 extends Sequence0 {

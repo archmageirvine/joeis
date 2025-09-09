@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A122072 Greatest prime less than 10n.
+ * A122072 Greatest prime less than 10*n.
  * a(n)=prime(primepi(10*n))
  * @author Georg Fischer
  */

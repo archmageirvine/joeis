@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005282;
 
 /**
- * A005282.
+ * A080200 Numbers that do not occur as differences between terms of the Mian-Chowla sequence A005282.
  * @author Sean A. Irvine
  */
 public class A080200 extends Sequence1 {

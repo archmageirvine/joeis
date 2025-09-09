@@ -4,7 +4,7 @@ package irvine.oeis.a363;
 import irvine.oeis.a359.A359212;
 
 /**
- * A363859 Number of divisors of 7*n-1 of form 7*k+2.
+ * A363859 Number of divisors of 7*n-1 of the form 7*k+2.
  * @author Georg Fischer
  */
 public class A363859 extends A359212 {

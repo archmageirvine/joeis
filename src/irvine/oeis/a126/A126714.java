@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.triangle.DispersionArray;
 
 /**
- * A126714 Dual Wythoff array read along antidiagonals.
+ * A126714 Dual Wythoff array read along antidiagonals downwards.
  * @author Georg Fischer
  */
 public class A126714 extends DispersionArray {

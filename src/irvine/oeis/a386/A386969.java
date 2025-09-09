@@ -5,7 +5,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A386969 allocated for Jules Beauchamp.
+ * A386969 A variant of Recam\u00e1n's sequence (A005132): a(0) = 0; for n &gt; 0, a(n) = a(n-1) - n if nonnegative and not already in the sequence, otherwise a(n) = a(n-1) + n + 3.
  * @author Sean A. Irvine
  */
 public class A386969 extends AbstractSequence {

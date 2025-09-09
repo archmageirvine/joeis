@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.prime.PrimeConditionListSequence;
 
 /**
- * A173904 Numbers n such that 7*n+-1 are prime.
+ * A173904 Numbers k such that 7*k+-1 are prime.
  * @author Georg Fischer
  */
 public class A173904 extends PrimeConditionListSequence {

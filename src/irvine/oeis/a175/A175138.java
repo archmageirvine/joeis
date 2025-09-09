@@ -5,7 +5,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A175138 a(n) = product_{i=1..n-1} a(i), with a(1) = 3 and a(2) = 5.
+ * A175138 a(n) = Product_{i=1..n-1} a(i), with a(1) = 3 and a(2) = 5.
  * @author Georg Fischer
  */
 public class A175138 extends MultiTransformSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a119.A119688;
 
 /**
- * A186193 Numbers n such that n!! is divisible by (n+1).
+ * A186193 Numbers k such that k!! is divisible by (k+1).
  * @author Georg Fischer
  */
 public class A186193 extends FilterPositionSequence {

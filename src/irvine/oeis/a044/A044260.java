@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A044260 Numbers n such that string 1,0 occurs in the base 9 representation of n but not of n-1.
+ * A044260 Numbers k such that string 1,0 occurs in the base 9 representation of k but not of k-1.
  * @author Georg Fischer
  */
 public class A044260 extends RunsBaseSequence {

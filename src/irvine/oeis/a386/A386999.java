@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000217;
 
 /**
- * A386999 allocated for Omar E. Pol.
+ * A386999 Positive 2-dense triangular numbers.
  * @author Sean A. Irvine
  */
 public class A386999 extends FilterSequence {

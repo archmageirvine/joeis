@@ -6,7 +6,7 @@ import irvine.oeis.a240.A240542;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A322141 a(n) is also the sum of the even-indexed terms of the n-th row of the triangle A237591.
+ * A322141 a(n) is the sum of the even-indexed terms of the n-th row of the triangle A237591.
  * @author Georg Fischer
  */
 public class A322141 extends SingleTransformSequence {

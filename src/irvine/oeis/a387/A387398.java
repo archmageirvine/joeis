@@ -3,7 +3,7 @@ package irvine.oeis.a387;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
- * A387398 allocated for Daniel Hoyt.
+ * A387398 Continued fraction expansion of Sum_{k&gt;=0} 1/(2^k)!.
  * @author Sean A. Irvine
  */
 public class A387398 extends ContinuedFractionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A358294 Triangle read by rows: T(n,k) = n^3*k*3*(n+k)^2, n&gt;=0, 0 &lt;= k &lt;= n.
+ * A358294 Triangle read by rows: T(n,k) = n^3*k^3*(n+k)^2, n&gt;=0, 0 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A358294 extends LambdaTriangle {

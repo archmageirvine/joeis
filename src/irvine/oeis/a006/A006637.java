@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A006637 From generalized Catalan numbers.
+ * A006637 Expansion of (2 - x)^4/(1 - x)^8.
  * @author Sean A. Irvine
  */
 public class A006637 extends GeneratingFunctionSequence {

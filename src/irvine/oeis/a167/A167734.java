@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A167734 Primes that becomes a square when prefixed with a 1.
+ * A167734 Primes that become squares when prefixed with a 1.
  * @author Georg Fischer
  */
 public class A167734 extends FilterSequence {

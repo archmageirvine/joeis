@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002385;
 
 /**
- * A032594 Twin palindromic primes (upper terms).
+ * A032594 Greater of two consecutive palindromes, both of which are prime.
  * @author Sean A. Irvine
  */
 public class A032594 extends A002385 {

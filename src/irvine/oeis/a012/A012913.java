@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012913 E.g.f. = arcsin(arcsin(x)+sin(x))=2*x+8/3!*x^3+298/5!*x^5+29864/7!*x^7...
+ * A012913 Expansion of e.g.f. arcsin(arcsin(x)+sin(x)) (odd powers only).
  * @author Sean A. Irvine
  */
 public class A012913 extends Sequence0 {

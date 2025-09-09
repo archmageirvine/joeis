@@ -4,7 +4,7 @@ import irvine.oeis.InverseSequence;
 import irvine.oeis.a386.A386310;
 
 /**
- * A387370 allocated for Juri-Stepan Gerasimov.
+ * A387370 Smallest k for which A386310(k) = n, or -1 if no such k exists.
  * @author Sean A. Irvine
  */
 public class A387370 extends InverseSequence {

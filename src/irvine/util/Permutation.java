@@ -156,18 +156,28 @@ public class Permutation {
   /**
    * Convert a permutation into an integer.
    * @param p permutation
+   * @param base the base
    * @return integer
    */
-  public static Z permToZ(final int[] p) {
+  public static Z permToZ(final int[] p, final int base) {
     Z t = Z.ZERO;
     for (final int v : p) {
-      long m = 10;
+      long m = base;
       while (v >= m) {
-        m *= 10;
+        m *= base;
       }
       t = t.multiply(m).add(v);
     }
     return t;
+  }
+
+  /**
+   * Convert a permutation into an integer.
+   * @param p permutation
+   * @return integer
+   */
+  public static Z permToZ(final int[] p) {
+    return permToZ(p, 10);
   }
 
   /**

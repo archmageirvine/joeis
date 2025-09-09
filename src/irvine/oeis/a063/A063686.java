@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a048.A048887;
 
 /**
- * A063686 Triangular array: a(n,k) is the number of binary necklaces (no turning over) of length n whose longest run of 1's has length k. Table begins at n=0, k=0.
+ * A063686 Triangular array: T(n,k) is the number of binary necklaces (no turning over) of length n whose longest run of 1's has length k. Table begins at n=0, k=0.
  * @author Sean A. Irvine
  */
 public class A063686 extends A048887 {

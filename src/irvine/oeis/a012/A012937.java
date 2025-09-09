@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012937 sin(tan(x)+sin(x))=2*x-7/3!*x^3+9/5!*x^5-865/7!*x^7-12375/9!*x^9...
+ * A012937 Expansion of e.g.f. sin(tan(x)+sin(x)) (odd powers only).
  * @author Sean A. Irvine
  */
 public class A012937 extends Sequence0 {

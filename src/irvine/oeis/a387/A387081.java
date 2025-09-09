@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a386.A386482;
 
 /**
- * A387081 Indices k such that lpf(s(k)) != lpf(s(k-1)), where s = A386482 and lpf = A020736.
+ * A387081 Indices k such that lpf(s(k-1)) does not divide abs(s(k) - s(k-1)), where s = A386482 and lpf = A020639.
  * @author Sean A. Irvine
  */
 public class A387081 extends A386482 {

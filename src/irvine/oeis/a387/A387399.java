@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A387399 allocated for Daniel Hoyt.
+ * A387399 Decimal expansion of Sum_{k&gt;=0} 1/(2^k)!.
  * @author Sean A. Irvine
  */
 public class A387399 extends DecimalExpansionSequence {

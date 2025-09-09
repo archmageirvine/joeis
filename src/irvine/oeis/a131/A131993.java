@@ -8,7 +8,7 @@ import irvine.oeis.a006.A006093;
 import irvine.oeis.a030.A030516;
 
 /**
- * A131993 1 + prime(n) + prime(n)^2 + prime(n)^3 + prime(n)^4 + prime(n)^5.
+ * A131993 a(n) = 1 + prime(n) + prime(n)^2 + prime(n)^3 + prime(n)^4 + prime(n)^5.
  * @author Georg Fischer
  */
 public class A131993 extends Sequence1 {

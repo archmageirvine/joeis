@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A035421 Related to Rogers-Ramanujan Identities.
+ * A035421 Limit of the position of the n-th partition such that the adjacent parts differ by at least 2 and such that the smallest part is at least 2 in the list of all integer partitions sorted in reverse lexicographic order.
  * @author Sean A. Irvine
  */
 public class A035421 extends Sequence1 {

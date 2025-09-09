@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012940 cos(tan(x)+sin(x))=1-4/2!*x^2+8/4!*x^4-118/6!*x^6+1912/8!*x^8...
+ * A012940 Expansion of e.g.f. cos(tan(x)+sin(x)) (even powers only).
  * @author Sean A. Irvine
  */
 public class A012940 extends Sequence0 {

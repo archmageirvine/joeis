@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A092022 Numbers n such that 16n + 3 is prime.
+ * A092022 Numbers k such that 16k + 3 is prime.
  * @author Georg Fischer
  */
 public class A092022 extends PrimePositionSubsequence {

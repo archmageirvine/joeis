@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012949 E.g.f. = sin(tan(x)+arcsin(x))=2*x-5/3!*x^3-63/5!*x^5-1311/7!*x^7-40503/9!*x^9...
+ * A012949 Expansion of e.g.f. sin(tan(x)+arcsin(x)) (odd powers only).
  * @author Sean A. Irvine
  */
 public class A012949 extends Sequence0 {

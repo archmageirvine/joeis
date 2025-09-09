@@ -17,7 +17,7 @@ import irvine.util.Pair;
 import irvine.util.string.StringUtils;
 
 /**
- * A385240 allocated for Janaka Rodrigo.
+ * A385240 Array read by descending antidiagonals: T(n,k) is the number of k element sets of noncongruent integer sided rectangles that fill an n X n square.
  * @author Sean A. Irvine
  */
 public class A385240 extends AbstractSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A081685 A sum of decreasing powers.
+ * A081685 a(n) = 6^n - 5^n - 4^n - 3^n + 3*2^n.
  * @author Sean A. Irvine
  */
 public class A081685 extends LinearRecurrence {

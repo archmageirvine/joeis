@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080157 Greedy frac multiples of gamma: a(1)=1, sum(n&gt;0,frac(a(n)*x))=1 at x=gamma, where "frac(y)" denotes the fractional part of y.
+ * A080157 Greedy frac multiples of gamma: a(1)=1, Sum_{n&gt;0} frac(a(n)*x) = 1 at x=gamma, where "frac(y)" denotes the fractional part of y.
  * @author Sean A. Irvine
  */
 public class A080157 extends Sequence1 {

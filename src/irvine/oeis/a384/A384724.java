@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a385.A385240;
 
 /**
- * A384724 allocated for Janaka Rodrigo.
+ * A384724 a(n) is the number of 4 element sets of distinct integer sided strict rectangles that fill an n X n square.
  * @author Sean A. Irvine
  */
 public class A384724 extends A385240 {

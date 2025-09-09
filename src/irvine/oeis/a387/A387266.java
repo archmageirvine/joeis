@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387266 allocated for Clark Kimberling.
+ * A387266 Rectangular array (d(n,k)) read by falling antidiagonals: d(n,k) is the denominator array of q(n,k) in the array V(1), defined in Comments.
  * @author Sean A. Irvine
  */
 public class A387266 extends Sequence1 {

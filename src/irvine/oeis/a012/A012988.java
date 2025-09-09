@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012988 arctan(arctan(x)+arcsin(x))=2*x-17/3!*x^3+881/5!*x^5-111919/7!*x^7...
+ * A012988 Expansion of e.g.f. arctan(arctan(x)+arcsin(x)) (odd powers only).
  * @author Sean A. Irvine
  */
 public class A012988 extends Sequence0 {

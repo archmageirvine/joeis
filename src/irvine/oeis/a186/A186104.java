@@ -4,7 +4,7 @@ package irvine.oeis.a186;
 import irvine.oeis.a050.A050528;
 
 /**
- * A186104 Primes of the form 3*6^n - 1.
+ * A186104 Primes of the form 3*6^k - 1.
  * @author Georg Fischer
  */
 public class A186104 extends A050528 {

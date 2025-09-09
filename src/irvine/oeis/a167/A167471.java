@@ -5,7 +5,7 @@ package irvine.oeis.a167;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A167471 Janet periodic table of the elements and structured hexagonal diamond numbers. a(n) = A166911(2n) + A166911(2n+1).
+ * A167471 Janet periodic table of the elements and structured hexagonal diamond numbers. a(n) = A166911(2*n) + A166911(2*n+1).
  * @author Georg Fischer
  */
 public class A167471 extends HolonomicRecurrence {

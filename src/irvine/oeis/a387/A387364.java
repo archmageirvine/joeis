@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387364 allocated for Yaroslav Deryavko.
+ * A387364 Least number which is not a prime power and whose prime factors are equal modulo n.
  * @author Sean A. Irvine
  */
 public class A387364 extends Sequence1 {

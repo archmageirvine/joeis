@@ -5,7 +5,7 @@ package irvine.oeis.a056;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A056802 Numbers n such that 2*9^n + 1 is prime.
+ * A056802 Numbers k such that 2*9^k + 1 is prime.
  * @author Georg Fischer
  */
 public class A056802 extends PowerFactorPrimeSequence {

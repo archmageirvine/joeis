@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A035423 Related to Rogers-Ramanujan Identities.
+ * A035423 Limit of the position of the n-th partition such that with k parts the smallest part is at least k+1 in the list of all integer partitions sorted in reverse lexicographic order.
  * @author Sean A. Irvine
  */
 public class A035423 extends Sequence1 {

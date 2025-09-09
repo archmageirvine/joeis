@@ -4,7 +4,7 @@ package irvine.oeis.a180;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A180218 a(n) = (n+2)!*sum(1/k, k=1..n).
+ * A180218 a(n) = (n+2)! * Sum_{k=1..n} 1/k.
  * a(n) = (n+2)/n *((2*n-1)*a(n-1) - (n^2-1)*a(n-2)).
  * (-n^3-2*n^2+n+2)*a(n-2)+(2*n^2+3*n-2)*a(n-1)-n*a(n)=0.
  *

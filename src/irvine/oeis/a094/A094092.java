@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A094092 Floor( (sqrt n)^(sqrt n) ).
+ * A094092 a(n) = floor(sqrt(n)^sqrt(n)).
  * @author Georg Fischer
  */
 public class A094092 extends FloorSequence {

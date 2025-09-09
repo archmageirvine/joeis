@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaArray;
 
 /**
- * A358293 Array read by antidiagonals: T(n,k) = n^3*k*3*(n+k)^2, n&gt;=1, k&gt;=1.
+ * A358293 Array read by antidiagonals: T(n,k) = n^3*k^3*(n+k)^2, n&gt;=1, k&gt;=1.
  * @author Georg Fischer
  */
 public class A358293 extends LambdaArray {

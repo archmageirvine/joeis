@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A186279 Numbers n such that the sum of the digits of n plus the sum of the digits of n^2 plus the sum of the digits of n^3 is prime.
+ * A186279 Numbers k such that the sum of the digits of k plus the sum of the digits of k^2 plus the sum of the digits of k^3 is prime.
  * @author Georg Fischer
  */
 public class A186279 extends FilterNumberSequence {

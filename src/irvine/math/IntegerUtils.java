@@ -154,7 +154,7 @@ public final class IntegerUtils {
   }
 
   /**
-   * Make the array an identity map up to entry <code>n</code>.
+   * Make the array a 0-based identity map up to entry <code>n</code>.
    * @param a array
    * @param n maximum entry
    * @return the array
@@ -167,12 +167,34 @@ public final class IntegerUtils {
   }
 
   /**
-   * Make the array an identity map up to entry <code>n</code>.
+   * Make the array a 0-based identity map.
    * @param a array
    * @return the array
    */
   public static int[] identity(final int[] a) {
     return identity(a, a.length);
+  }
+
+  /**
+   * Make the array a 1-based identity map up to entry <code>n</code>.
+   * @param a array
+   * @param n maximum entry
+   * @return the array
+   */
+  public static int[] identity1(final int[] a, final int n) {
+    for (int k = 0; k < n; ++k) {
+      a[k] = k + 1;
+    }
+    return a;
+  }
+
+  /**
+   * Make the array a 1-based identity map.
+   * @param a array
+   * @return the array
+   */
+  public static int[] identity1(final int[] a) {
+    return identity1(a, a.length);
   }
 
   /**

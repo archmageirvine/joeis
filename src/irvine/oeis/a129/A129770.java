@@ -4,7 +4,7 @@ package irvine.oeis.a129;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A129770 a(0) = 0, a(1) = 1; for n&gt;0, a(2n) = 3a(2n-1), a(2n+1) = 3a(2n) - 2a(n-1).
+ * A129770 a(0) = 0, a(1) = 1; for n&gt;0, a(2*n) = 3*a(2*n-1), a(2*n+1) = 3*a(2*n) - 2*a(n-1).
  * @author Georg Fischer
  */
 public class A129770 extends MultiTransformSequence {

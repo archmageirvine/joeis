@@ -4,7 +4,7 @@ package irvine.oeis.a359;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A359140 G.f.: (1+z+z^2-sqrt(1+2*z-z^2-6*z^3-3*z^4))/(2*z^2*(1+z)).
+ * A359140 Expansion of g.f. (1+z+z^2-sqrt(1+2*z-z^2-6*z^3-3*z^4))/(2*z^2*(1+z)).
  * @author Georg Fischer
  */
 public class A359140 extends HolonomicRecurrence {

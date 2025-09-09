@@ -6,7 +6,7 @@ package irvine.oeis.a091;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A091147 Expansion of (1-x-sqrt(1-2x-15x^2))/(8x^2).
+ * A091147 Expansion of (1-x-sqrt(1-2*x-15*x^2))/(8*x^2).
  * @author Georg Fischer
  */
 public class A091147 extends HolonomicRecurrence {

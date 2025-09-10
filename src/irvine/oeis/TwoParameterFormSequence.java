@@ -44,6 +44,11 @@ public class TwoParameterFormSequence extends AbstractSequence {
     public int hashCode() {
       return mN.hashCode();
     }
+
+    @Override
+    public String toString() {
+      return "(" + mM + "," + mR + ")=" + mN;
+    }
   }
 
   // Rule to generate terms

@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -15,8 +15,7 @@ public class A005349 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long d = Functions.DIGIT_SUM.l(++mN);
-      if (mN % d == 0) {
+      if (Predicates.HARSHAD.is(++mN)) {
         return Z.valueOf(mN);
       }
     }

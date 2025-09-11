@@ -2666,3 +2666,14 @@ A079815 Number of equivalent classes of n X n 0-1 matrices with 3 1's in each ro
 A080093 Let sum(k>=0, k^n/(2*k+1)!) = (x(n)*e + y(n)/e)/z(n), where x(n) and z(n) are >0, then a(n)=x(n).
 A080094 Let sum(k>=0, k^n/(2*k+1)!) = (x(n)*e + y(n)/e)/z(n), where x(n) and z(n) are >0, then a(n)=y(n).
 A080205 Maximal number of rational points that a (smooth, geometrically irreducible) curve of genus 3 over the finite field GF(n) can have, or 0 if n is not a prime power.
+A080263 A014486-encoding of the branch-reduced binomial-mod-2 binary trees.
+A080264 A063171-encoding of the stunted binomial-mod-2 zigzag trees. See A080263.
+A080265 A014486-index of the stunted binomial-mod-2 zigzag trees. See A080263.
+A080266 a(n) = A080301(A080263(n)).
+A080268 Breadth-first-wise A014486-like encoding of the stunted binomial-mod-2 zigzag trees (A080263).
+A080269 Breadth-first-wise A063171-like-encoding of the stunted binomial-mod-2 zigzag trees (A080264).
+A080270 Positions of A080268 in A014486.
+A080271 a(n) = A080301(A080268(n)).
+A080272 Orbit size of each tree A080263(n) under Donaghey's "Map M" Catalan automorphism.
+A080273 Orbit size of each tree A080263(n) under Meeussen's bf<->df map on binary trees.
+A080274 Orbit size of each complete binary tree under Meeussen's bf<->df map on binary trees.

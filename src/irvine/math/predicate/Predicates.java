@@ -38,6 +38,8 @@ public final class Predicates {
   public static final Predicate LUCAS = new Lucas(); // =A000032, =A000204
   /** Test if a number is perfect. */
   public static final Predicate PERFECT = new Perfect(); // =A000396
+  /** Test if a number is a primorial. */
+  public static final Predicate PRIMORIAL = new Primorial(); // =A002110
 
   /** Test if a number is arithmetic. */
   public static final Predicate ARITHMETIC = new Arithmetic(); // =A003601

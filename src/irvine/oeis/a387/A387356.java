@@ -12,7 +12,7 @@ public class A387356 extends Sequence1 {
 
   private long mN = 0;
 
-  private boolean is(long n) {
+  private boolean is(final long n) {
     long gcd = n;
     final String s = Long.toString(n);
     for (int k = 1; k <= s.length(); ++k) {

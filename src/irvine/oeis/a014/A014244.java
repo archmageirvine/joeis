@@ -11,7 +11,7 @@ import irvine.oeis.a000.A000032;
  */
 public class A014244 extends A000032 {
 
-  private final Sequence mNotLucas = new ComplementSequence(new A000032().skip(2), Z.ONE);
+  private final Sequence mNotLucas = new ComplementSequence(Z.ONE, new A000032().skip(2));
 
   {
     setOffset(1);

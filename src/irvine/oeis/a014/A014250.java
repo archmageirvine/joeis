@@ -16,7 +16,7 @@ public class A014250 extends A002379 {
     super(1);
   }
 
-  private final Sequence mA = new ComplementSequence(new A002379(), Z.ONE);
+  private final Sequence mA = new ComplementSequence(Z.ONE, new A002379());
 
   {
     super.next();

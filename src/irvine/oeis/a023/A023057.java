@@ -11,6 +11,6 @@ public class A023057 extends ComplementSequence {
 
   /** Construct the sequence. */
   public A023057() {
-    super(new A023055(), Z.SIX);
+    super(Z.SIX, new A023055());
   }
 }

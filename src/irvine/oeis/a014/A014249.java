@@ -26,7 +26,7 @@ public class A014249 extends Sequence1 {
   }
 
   private final Sequence mB = new BSequence();
-  private final Sequence mComplementB = new ComplementSequence(new BSequence(), Z.ONE);
+  private final Sequence mComplementB = new ComplementSequence(Z.ONE, new BSequence());
 
   @Override
   public Z next() {

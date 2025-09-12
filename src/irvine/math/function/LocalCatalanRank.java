@@ -28,4 +28,9 @@ class LocalCatalanRank extends AbstractFunction2 {
     }
     return Functions.CATALAN.z(n).subtract(lo.add(1));
   }
+
+  @Override
+  public Z z(final Z n, final Z m) {
+    return z(n.longValueExact(), m);
+  }
 }

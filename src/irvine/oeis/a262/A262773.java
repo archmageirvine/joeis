@@ -14,7 +14,7 @@ public class A262773 extends ComplementSequence {
 
   /** Construct the sequence. */
   public A262773() {
-    super(0, new A262770(), Z.ZERO);
+    super(0, Z.ZERO, new A262770());
   }
 
   @Override

@@ -2677,3 +2677,22 @@ A080271 a(n) = A080301(A080268(n)).
 A080272 Orbit size of each tree A080263(n) under Donaghey's "Map M" Catalan automorphism.
 A080273 Orbit size of each tree A080263(n) under Meeussen's bf<->df map on binary trees.
 A080274 Orbit size of each complete binary tree under Meeussen's bf<->df map on binary trees.
+A080292 Orbit size of each tree A080293(n) under Donaghey's "Map M" Catalan automorphism.
+A080293 A014486-encoding of the branch-reduced binomial-mod-2 binary trees.
+A080294 A063171-encoding of the branch-reduced binomial-mod-2 binary trees
+A080295 A014486-index of the branch-reduced binomial-mod-2 binary trees.
+A080296 a(n) = A080301(A080293(n)).
+A080297 Orbit size of each tree A080293(n) under Meeussen's bf<->df map on binary trees.
+A080298 Positions of A080299 in A014486.
+A080299 A014486-encoding of plane binary trees (Stanley's d) whose interior zigzag-tree (Stanley's c, i.e., tree obtained by discarding the outermost edges of the binary tree) is isomorphic to a valid plane binary tree (Stanley's d).
+A080302 a(n) = A080292(n)/3.
+A080312 Positions of A080313 in A014486.
+A080313 Breadth-first-wise A014486-like encoding of A080299-trees.
+A080314 Breadth-first-wise A063171-like-encoding of A080299-trees.
+A080315 a(n) = A080313(n)/2.
+A080316 a(n) = A080315(n) - 2^A000523(A080315(n)), i.e., the terms of A080315 without their most significant bit.
+A080317 a(n) = A007088(A080316(n)).
+A080318 Breadth-first-wise A014486-like encoding of the branch-reduced binomial-mod-2 binary trees (A080293).
+A080319 Breadth-first-wise A063171-like-encoding of the branch-reduced binomial-mod-2 binary trees (A080294).
+A080320 a(n) = A057118(A080295(n)) = A080300(A080318(n)). Positions of A080318 in A014486.
+A080321 a(n) = A080301(A080318(n)).

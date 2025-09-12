@@ -12,6 +12,6 @@ public class A061094 extends ComplementSequence {
 
   /** Construct the sequence. */
   public A061094() {
-    super(new FiniteSequence(1, 2, 5, 6, 10, 14), Z.ONE);
+    super(Z.ONE, new FiniteSequence(1, 2, 5, 6, 10, 14));
   }
 }

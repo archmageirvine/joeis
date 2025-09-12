@@ -12,6 +12,6 @@ public class A000548 extends IntersectionSequence {
 
   /** Default constructor. */
   public A000548() {
-    super(new A000290(), new ComplementSequence(new A000404(), Z.ONE));
+    super(new A000290(), new ComplementSequence(Z.ONE, new A000404()));
   }
 }

@@ -49,7 +49,7 @@ public class A385848 extends ComplementSequence {
 
   /** Construct the sequence. */
   public A385848() {
-    super(1, new Sequence1() {
+    super(1, Z.ONE, new Sequence1() {
       private final TreeSet<State> mA = new TreeSet<>();
       {
         mA.add(new State(1, 1));
@@ -62,6 +62,6 @@ public class A385848 extends ComplementSequence {
         mA.add(new State(s.mM, s.mK + 1));
         return s.mN;
       }
-    }, Z.ONE);
+    });
   }
 }

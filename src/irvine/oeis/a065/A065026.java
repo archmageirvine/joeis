@@ -24,10 +24,10 @@ public class A065026 extends MemorySequence {
     if (n == 0) {
       return Z.ONE;
     }
-    return new ComplementSequence(new UnionSequence(
+    return new ComplementSequence(a(n - 1), new UnionSequence(
       new DistinctAdditiveClosureSequence(new FiniteSequence(toList())),
       new DistinctMultiplicativeClosureSequence(new FiniteSequence(toList()))
-    ), a(n - 1)).next();
+    )).next();
   }
 }
 

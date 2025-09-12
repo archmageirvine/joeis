@@ -14,6 +14,6 @@ public class A063096 extends ComplementSequence {
 
   /** Construct the sequence. */
   public A063096() {
-    super(new UnionSequence(new A005250(), new A005408()), Z.TEN);
+    super(Z.TEN, new UnionSequence(new A005250(), new A005408()));
   }
 }

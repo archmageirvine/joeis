@@ -23,7 +23,7 @@ public class A003258 extends A003231 {
   @Override
   public Z next() {
     final Z n = get(super.next().intValueExact());
-    final Sequence s = new ComplementSequence(new A003231(), Z.ONE);
+    final Sequence s = new ComplementSequence(Z.ONE, new A003231());
     long m = 1;
     while (!s.next().equals(n)) {
       ++m;

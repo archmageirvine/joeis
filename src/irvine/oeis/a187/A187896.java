@@ -12,6 +12,6 @@ public class A187896 extends ComplementSequence {
 
   /** Construct the sequence. */
   public A187896() {
-    super(1, new A187895(), Z.ONE);
+    super(1, Z.ONE, new A187895());
   }
 }

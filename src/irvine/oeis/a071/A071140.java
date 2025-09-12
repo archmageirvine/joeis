@@ -13,7 +13,7 @@ import irvine.oeis.a000.A000961;
  */
 public class A071140 extends Sequence1 {
 
-  private final Sequence mA = new ComplementSequence(1, new A000961(), Z.ONE);
+  private final Sequence mA = new ComplementSequence(1, Z.ONE, new A000961());
 
   @Override
   public Z next() {

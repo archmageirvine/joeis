@@ -20,13 +20,13 @@ public class A022159 extends MemorySequence {
     return SQRT3;
   }
 
-  private final ComplementSequence mB = new ComplementSequence(new Sequence0() {
+  private final ComplementSequence mB = new ComplementSequence(Z.ONE, new Sequence0() {
     private long mN = 0;
     @Override
     public Z next() {
       return h().multiply(++mN).floor();
     }
-  }, Z.ONE);
+  });
 
   private final ArrayList<Z> mBTerms = new ArrayList<>();
 

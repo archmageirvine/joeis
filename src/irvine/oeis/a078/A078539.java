@@ -18,7 +18,7 @@ public class A078539 extends Sequence2 {
   @Override
   public Z next() {
     mN += 2;
-    final Sequence seq = new ComplementSequence(new A020492(), Z.ONE);
+    final Sequence seq = new ComplementSequence(Z.ONE, new A020492());
     while (true) {
       final Z k = seq.next();
       if (Functions.SIGMA.z(mN, k).mod(Functions.PHI.l(k)) == 0) {

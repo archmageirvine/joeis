@@ -14,7 +14,7 @@ import irvine.oeis.a003.A003814;
  */
 public class A031399 extends Sequence1 {
 
-  private final Sequence mA = new ComplementSequence(new A003814(), Z.TWO);
+  private final Sequence mA = new ComplementSequence(Z.TWO, new A003814());
 
   private boolean is4kp3Free(final FactorSequence fs) {
     for (final Z p : fs.toZArray()) {

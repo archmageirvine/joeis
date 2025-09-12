@@ -16,7 +16,7 @@ public class A078540 extends A000040 {
   @Override
   public Z next() {
     final long p = super.next().longValueExact();
-    final Sequence seq = new ComplementSequence(new A020492(), Z.ONE);
+    final Sequence seq = new ComplementSequence(Z.ONE, new A020492());
     while (true) {
       final Z k = seq.next();
       if (Functions.SIGMA.z(p, k).mod(Functions.PHI.l(k)) == 0) {

@@ -67,6 +67,6 @@ public class A061310 extends ComplementSequence {
 
   /** Construct the sequence. */
   public A061310() {
-    super(new FiniteSequence(build()), Z.ONE);
+    super(Z.ONE, new FiniteSequence(build()));
   }
 }

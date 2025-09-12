@@ -19,6 +19,6 @@ public class A022807 extends Combiner {
 
   /** Construct the sequence. */
   public A022807() {
-    super(1, new MySequence(), new ComplementSequence(new MySequence(), Z.ONE), ADD);
+    super(1, new MySequence(), new ComplementSequence(Z.ONE, new MySequence()), ADD);
   }
 }

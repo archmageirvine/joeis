@@ -11,7 +11,7 @@ import irvine.oeis.a000.A000045;
  */
 public class A014242 extends A000045 {
 
-  private final Sequence mNotFibo = new ComplementSequence(new A000045().skip(3), Z.ONE);
+  private final Sequence mNotFibo = new ComplementSequence(Z.ONE, new A000045().skip(3));
 
   {
     setOffset(1);

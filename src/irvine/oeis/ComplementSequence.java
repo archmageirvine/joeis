@@ -15,11 +15,11 @@ public class ComplementSequence extends AbstractSequence {
 
   /**
    * Complement of a sequence.
-   * @param seq sequence to complement
    * @param start start value
+   * @param seq sequence to complement
    */
-  public ComplementSequence(final Sequence seq, final Z start) {
-    this(DEFOFF, seq, start);
+  public ComplementSequence(final Z start, final Sequence seq) {
+    this(DEFOFF, start, seq);
   }
 
   /**
@@ -27,16 +27,16 @@ public class ComplementSequence extends AbstractSequence {
    * @param seq sequence to complement
    */
   public ComplementSequence(final Sequence seq) {
-    this(DEFOFF, seq, Z.ZERO);
+    this(DEFOFF, Z.ZERO, seq);
   }
 
   /**
    * Complement of a sequence.
    * @param offset first index of target sequence
-   * @param seq sequence to complement
    * @param start start value
+   * @param seq sequence to complement
    */
-  public ComplementSequence(final int offset, final Sequence seq, final Z start) {
+  public ComplementSequence(final int offset, final Z start, final Sequence seq) {
     super(offset);
     mSeq = seq;
     mN = start;
@@ -49,7 +49,7 @@ public class ComplementSequence extends AbstractSequence {
    * @param seq sequence to complement
    */
   public ComplementSequence(final int offset, final Sequence seq) {
-    this(offset, seq, Z.ZERO);
+    this(offset, Z.ZERO, seq);
   }
 
   @Override

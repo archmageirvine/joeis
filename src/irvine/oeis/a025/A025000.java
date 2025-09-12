@@ -12,7 +12,7 @@ import irvine.oeis.a000.A000040;
  */
 public class A025000 extends Sequence1 {
 
-  private final Sequence mNonPrimes = new ComplementSequence(new A000040(), start());
+  private final Sequence mNonPrimes = new ComplementSequence(start(), new A000040());
   private Z mN = null;
   private Z mM = Z.ZERO;
 

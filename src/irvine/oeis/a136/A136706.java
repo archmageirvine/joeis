@@ -12,8 +12,8 @@ import irvine.oeis.AbstractSequence;
 public class A136706 extends AbstractSequence {
 
   private int mN;
-  private int mK;
-  private int[] mDc; // total occurrences of digits so far
+  private final int mK;
+  private final int[] mDc; // total occurrences of digits so far
 
   /** Construct the sequence. */
   public A136706() {
@@ -22,10 +22,10 @@ public class A136706 extends AbstractSequence {
 
   /**
    * Generic constructor with parameters
-   * @param offset
+   * @param offset the offset
    * @param k modulus
    */
-  public A136706(final int offset, final int k) {
+  protected A136706(final int offset, final int k) {
     super(offset);
     mN = 0;
     mK = k;

@@ -22,7 +22,7 @@ public class A080338 extends Sequence1 {
 
   @Override
   public Z next() {
-    Z v = mSet.pollFirst();
+    final Z v = mSet.pollFirst();
     mA.add(v);
     Z s = Z.ONE;
     for (int i = mA.size() - 1; i >= 0; --i) {

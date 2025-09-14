@@ -4,7 +4,7 @@ package irvine.oeis.a386;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A386889 Number of ways to use 1 X 1 squares and 1 X 2 dominos (in any orientation) to tile a 3 X (2*n - 1) strip with every other cell in the top row removed.
+ * A386889 allocated for Greg Dresden.
  * @author Georg Fischer
  */
 public class A386889 extends HolonomicRecurrence {

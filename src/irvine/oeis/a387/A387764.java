@@ -4,7 +4,7 @@ package irvine.oeis.a387;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A387764 a(n) = Sum_{k=0..n} 2^k * binomial(2*k+1,2*n-2*k).
+ * A387764 allocated for Seiichi Manyama.
  * @author Georg Fischer
  */
 public class A387764 extends HolonomicRecurrence {

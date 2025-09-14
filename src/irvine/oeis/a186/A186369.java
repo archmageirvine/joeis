@@ -4,7 +4,7 @@ package irvine.oeis.a186;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A186369 Number of excedances in all cycle-up-down permutations of {1,2,...,n}. A permutation is said to be cycle-up-down if it is a product of up-down cycles. A cycle (b(1), b(2), ...) is said to be up-down if, when written with its smallest element in the first p
+ * A186369 Number of excedances in all cycle-up-down permutations of {1,2,...,n}. A permutation is said to be cycle-up-down if it is a product of up-down cycles. A cycle (b(1), b(2), ...) is said to be up-down if, when written with its smallest element in the first position, it satisfies b(1) &lt; b(2) &gt; b(3) &lt; ... .
  * @author Georg Fischer
  */
 public class A186369 extends PolynomialFieldSequence {

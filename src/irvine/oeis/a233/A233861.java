@@ -4,7 +4,7 @@ package irvine.oeis.a233;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A233861 E.g.f. satisfies: A&apos;(x) = Product_{n&gt;=1} (1 + A(x)^n), where A(0) = 0.
+ * A233861 E.g.f. satisfies: A'(x) = Product_{n&gt;=1} (1 + A(x)^n), where A(0) = 0.
  * @author Georg Fischer
  */
 public class A233861 extends PolynomialFieldSequence {

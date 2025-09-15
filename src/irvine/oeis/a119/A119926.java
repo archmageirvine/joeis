@@ -4,7 +4,7 @@ package irvine.oeis.a119;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
- * A119926 Continued fraction expansion of the value of Minkowski&apos;s question mark function at 1/Pi.
+ * A119926 Continued fraction expansion of the value of Minkowski's question mark function at 1/Pi.
  * @author Georg Fischer
  */
 public class A119926 extends ContinuedFractionSequence {

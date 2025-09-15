@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A074738 Decimal expansion of d = 1-(1+log(log(2)))/log(2) = 0.08607133....
+ * A074738 Decimal expansion of 1-(1+log(log(2)))/log(2).
  * @author Georg Fischer
  */
 public class A074738 extends DecimalExpansionSequence {

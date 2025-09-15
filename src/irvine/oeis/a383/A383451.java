@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A383451 3nd diagonal (from right) in A104978.
+ * A383451 3rd diagonal (from right) in A104978.
  * @author Georg Fischer
  */
 public class A383451 extends LambdaSequence {

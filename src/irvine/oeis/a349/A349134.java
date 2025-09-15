@@ -6,7 +6,7 @@ import irvine.oeis.DirichletInverseSequence;
 import irvine.oeis.a003.A003602;
 
 /**
- * A349134 Dirichlet inverse of Kimberling's paraphrases, A003602.
+ * A349134 Dirichlet inverse of Kimberling's paraphrase, A003602.
  * @author Georg Fischer
  */
 public class A349134 extends DirichletInverseSequence {

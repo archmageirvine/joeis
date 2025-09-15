@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387356 allocated for Paolo Xausa.
+ * A387356 Numbers whose set of cyclic permutations has GCD = 1.
  * @author Sean A. Irvine
  */
 public class A387356 extends Sequence1 {

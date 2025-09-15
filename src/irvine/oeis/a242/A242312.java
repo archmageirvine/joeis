@@ -6,7 +6,7 @@ import irvine.oeis.a007.A007318;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A242312 Digital roots in Pascal&apos;s triangle, triangle read by rows, 0 &lt;= k &lt;= n.
+ * A242312 Digital roots in Pascal's triangle, triangle read by rows, 0 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A242312 extends SingleTransformSequence {

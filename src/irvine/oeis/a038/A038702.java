@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A038702 Prime(n)^2 mod prime(n-1).
+ * A038702 a(n) = prime(n)^2 mod prime(n-1).
  * @author Sean A. Irvine
  */
 public class A038702 extends A000040 {

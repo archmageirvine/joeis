@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A056561 Numbers n such that n^2 + n + 41 is prime.
+ * A056561 Numbers n such that n^2 + n + 41 (known as Euler's polynomial) is prime.
  * @author Georg Fischer
  */
 public class A056561 extends PrimePositionSubsequence {

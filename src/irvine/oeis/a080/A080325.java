@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A080325 Multiple of coefficients in expansion of 1/sin(x)^2.
+ * A080325 a(n) = ((n+1)!*(2*n+1)!/4) * [x^(2*n-2)] 1/sin(x)^2.
  * @author Sean A. Irvine
  */
 public class A080325 extends Sequence0 {

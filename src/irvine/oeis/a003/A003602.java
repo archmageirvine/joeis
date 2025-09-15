@@ -5,7 +5,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A003602 Kimberling's paraphrases: if n = (2k-1)*2^m then a(n) = k.
+ * A003602 Kimberling's paraphrase of the binary number system: if n = (2k-1)*2^m then a(n) = k.
  * @author Sean A. Irvine
  */
 public class A003602 extends Sequence1 implements DirectSequence {

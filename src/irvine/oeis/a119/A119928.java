@@ -4,7 +4,7 @@ package irvine.oeis.a119;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
- * A119928 Continued fraction expansion of the value of Minkowski&apos;s question mark function at Khinchin&apos;s constant (A002210).
+ * A119928 Continued fraction expansion of the value of Minkowski's question mark function at Khinchin's constant (A002210).
  * @author Georg Fischer
  */
 public class A119928 extends ContinuedFractionSequence {

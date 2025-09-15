@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387738 allocated for Sean A. Irvine.
+ * A387738 Number of partitions of n such that the largest part is &gt;= n/2 and if the partition has k parts then the smallest part is &gt;= k+1.
  * @author Sean A. Irvine
  */
 public class A387738 extends Sequence1 {

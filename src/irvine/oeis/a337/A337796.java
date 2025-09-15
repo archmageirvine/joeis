@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A337796 Number of graceful labelings of the n X n grid graph.
+ * A337796 Total number of graceful labelings of the n X n grid graph.
  *
  * @author Georg Fischer
  */

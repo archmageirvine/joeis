@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387501 allocated for Chris R. Rehmann.
+ * A387501 Even numbers k such that the difference between k and the largest prime less than k is not prime.
  * @author Sean A. Irvine
  */
 public class A387501 extends Sequence1 {

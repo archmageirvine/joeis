@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A242958 Numbers n such that 3^phi(n) == 1 (mod n^2), where phi(n) is Euler&apos;s totient function.
+ * A242958 Numbers n such that 3^phi(n) == 1 (mod n^2), where phi(n) is Euler's totient function.
  * @author Georg Fischer
  */
 public class A242958 extends FilterNumberSequence {

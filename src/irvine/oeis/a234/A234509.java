@@ -5,7 +5,7 @@ package irvine.oeis.a234;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A234509 2*binomial(9*n+6,n)/(3*n+2).
+ * A234509 a(n) = 2*binomial(9*n+6,n)/(3*n+2).
  * @author Georg Fischer
  */
 public class A234509 extends HolonomicRecurrence {

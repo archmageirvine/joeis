@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a284.A284570;
 
 /**
- * A276553 Numbers n such that n^2 and (n + 1)^2 have the same number of divisors.
+ * A276553 Numbers k such that k^2 and (k + 1)^2 have the same number of divisors.
  * @author Georg Fischer
  */
 public class A276553 extends FilterPositionSequence {

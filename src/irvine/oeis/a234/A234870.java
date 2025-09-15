@@ -5,7 +5,7 @@ package irvine.oeis.a234;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A234870 4*binomial(11*n+4,n)/(11*n+4).
+ * A234870 a(n) = 4*binomial(11*n+4,n)/(11*n+4).
  * @author Georg Fischer
  */
 public class A234870 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387270 allocated for Ahmet Caglar Saygili.
+ * A387270 Numbers whose binary expansion consists of alternating runs of 1's and 0's where each run of 0's is exactly one shorter than the preceding run of 1's, and the expansion ends with a 0-run.
  * @author Sean A. Irvine
  */
 public class A387270 extends Sequence1 {

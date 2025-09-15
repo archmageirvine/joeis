@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384995 allocated for Aidan Chen.
+ * A384995 Numbers m such that phi(m) is a pentagonal number.
  * @author Sean A. Irvine
  */
 public class A384995 extends Sequence1 {

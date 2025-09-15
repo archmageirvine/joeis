@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A386431 allocated for Binay Krishna Maity.
+ * A386431 Triangle T(n,k) read by rows, where row n contains the numbers 1, ..., n^2, written columnwise into a square matrix and read rowwise.
  * @author Sean A. Irvine
  */
 public class A386431 extends Sequence1 {

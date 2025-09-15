@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A068544 Numbers n such that n*tau(n) &gt; 2*prime(n).
+ * A068544 Numbers k such that k*tau(k) &gt; 2*prime(k).
  * @author Sean A. Irvine
  */
 public class A068544 extends A000040 {

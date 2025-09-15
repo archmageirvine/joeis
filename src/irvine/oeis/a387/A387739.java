@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387739 allocated for Sean A. Irvine.
+ * A387739 Number of partitions of n such that the largest part is &gt;= n/2 and each part is congruent to 1 or 4 (mod 5).
  * @author Sean A. Irvine
  */
 public class A387739 extends Sequence1 {

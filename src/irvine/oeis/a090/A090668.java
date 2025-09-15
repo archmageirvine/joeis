@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A090668 a(n)=[prime(n)*(n-pi(n))/(pi(n)+1)], where pi=A000720, [x]=floor(x).
+ * A090668 a(n) = floor( prime(n)*(n-pi(n))/(pi(n)+1) ) where pi=A000720.
  * @author Georg Fischer
  */
 public class A090668 extends LambdaSequence {

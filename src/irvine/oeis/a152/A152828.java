@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A152828 Triangle read by rows, A007318 rows repeated three times .
+ * A152828 Triangle read by rows, A007318 rows repeated three times.
  * @author Georg Fischer
  */
 public class A152828 extends BaseTriangle {

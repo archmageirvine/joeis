@@ -4,7 +4,7 @@ package irvine.oeis.a387;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A387549 allocated for Vladimir Pletser.
+ * A387549 Numbers k such that k^2 + 23 is twice a square.
  * @author Georg Fischer
  */
 public class A387549 extends HolonomicRecurrence {

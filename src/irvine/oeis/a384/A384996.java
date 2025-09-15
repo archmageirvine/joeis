@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384996 allocated for Aidan Chen.
+ * A384996 Numbers m such that phi(m) is a hexagonal number.
  * @author Sean A. Irvine
  */
 public class A384996 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A245529 Numbers n such that 12^phi(n) == 1 (mod n^2), where phi(n) is Euler&apos;s totient function.
+ * A245529 Numbers n such that 12^phi(n) == 1 (mod n^2), where phi(n) is Euler's totient function.
  * @author Georg Fischer
  */
 public class A245529 extends FilterNumberSequence {

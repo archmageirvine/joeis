@@ -4,7 +4,7 @@ package irvine.oeis.a120;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
- * A120028 Continued fraction expansion of the value of Minkowski&apos;s question mark function at Levy&apos;s constant (Exp[Pi^2/(12*Log[2])], A086702).
+ * A120028 Continued fraction expansion of the value of Minkowski's question mark function at Levy's constant (Exp[Pi^2/(12*Log[2])], A086702).
  * @author Georg Fischer
  */
 public class A120028 extends ContinuedFractionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A177061 Primes p formed from single-digit primes only, each used at most once.
+ * A177061 Duplicate of A124674.
  * @author Georg Fischer
  */
 public class A177061 extends FiniteSequence {

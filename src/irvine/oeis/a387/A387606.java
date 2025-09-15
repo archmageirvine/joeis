@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A387606 allocated for Stefano Spezia.
+ * A387606 Decimal expansion of the area of the half-plane of the positive ordinates bounded between the curves of equations x^2 + y^2 = 1 and y = x^2.
  * @author Sean A. Irvine
  */
 public class A387606 extends DecimalExpansionSequence {

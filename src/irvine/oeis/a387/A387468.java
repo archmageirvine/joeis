@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A387468 allocated for Najeem Ziauddin.
+ * A387468 Decimal expansion of 3*Pi/(8*sqrt(2)).
  * @author Sean A. Irvine
  */
 public class A387468 extends DecimalExpansionSequence {

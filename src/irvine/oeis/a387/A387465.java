@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A387465 allocated for Michael De Vlieger.
+ * A387465 Irregular triangle T(n,k), n &gt;= 0, 0 &lt;= k &lt; 2^(n-1), where T(n,k) = Product_{j=0..n-1} prime(n-j)^((j+1)*d_j), where d_j is the bit with digit weight 2^j in the binary expansion of 2^(n-1)+k.
  * @author Sean A. Irvine
  */
 public class A387465 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence3;
 
 /**
- * A386948 allocated for Michael De Vlieger.
+ * A386948 Let s = A386482 and let D = s(n)-s(n-1); a(n) = position i of |D| in row s(n-1) of A121998, multiplied by sign(D).
  * @author Sean A. Irvine
  */
 public class A386948 extends Sequence3 {

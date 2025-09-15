@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A080334 n^2 read backwards, for n = 51, 50, 49, ...
+ * A080334 n^2 read backwards, for n = 51, 50, 49, ..., 1.
  * @author Sean A. Irvine
  */
 public class A080334 extends FiniteSequence {

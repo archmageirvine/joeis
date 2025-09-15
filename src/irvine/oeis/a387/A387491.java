@@ -6,7 +6,7 @@ import irvine.oeis.TwoParameterFormSequence;
 import irvine.oeis.a006.A006939;
 
 /**
- * A387491 allocated for Michael De Vlieger.
+ * A387491 Numbers of the form P(k)^m * Q(k), m &gt;= 0, with P(k) = Product_{i=1..k} prime(i) = A002110(k) and Q(k) = Product_{j=1..k} P(j) = A006939(k).
  * @author Sean A. Irvine
  */
 public class A387491 extends TwoParameterFormSequence {

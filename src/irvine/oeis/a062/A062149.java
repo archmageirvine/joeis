@@ -5,7 +5,7 @@ package irvine.oeis.a062;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A062149 Third column sequence of triangle A062138 (generalized a=5 Laguerre).
+ * A062149 Third column of triangle A062138 (generalized a=5 Laguerre).
  * @author Georg Fischer
  */
 public class A062149 extends HolonomicRecurrence {

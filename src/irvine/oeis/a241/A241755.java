@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.RationalLambdaSequence;
 
 /**
- * A241755 A finite sum of products of binomial coefficients: Sum_(m=0..n) binomial(-1/4, m)^2*binomial(-1/4, n-m)^2 (C. C. Grosjean&apos;s problem, numerators).
+ * A241755 A finite sum of products of binomial coefficients: Sum_(m=0..n) binomial(-1/4, m)^2*binomial(-1/4, n-m)^2 (C. C. Grosjean's problem, numerators).
  * @author Georg Fischer
  */
 public class A241755 extends RationalLambdaSequence {

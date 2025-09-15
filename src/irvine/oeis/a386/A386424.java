@@ -7,7 +7,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a003.A003557;
 
 /**
- * A386424 Numbers k such that sigma(k) has the same powerful part as k, where sigma is the sum of divisors function.
+ * A386424 Numbers k such that sigma(k) has the same powerful part as k has, where sigma is the sum of divisors function.
  * @author Georg Fischer
  */
 public class A386424 extends FilterNumberSequence {

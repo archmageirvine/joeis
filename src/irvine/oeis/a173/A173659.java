@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A173659 a(n) = a(n-1) + 8a(n-2) - 3a(n-3) - 17a(n-4) + a(n-5) + 13a(n-6) + 4a(n-7) - 6a(n-8) - a(n-9).
+ * A173659 a(n) = a(n-1) + 8*a(n-2) - 3*a(n-3) - 17*a(n-4) + a(n-5) + 13*a(n-6) + 4*a(n-7) - 6*a(n-8) - a(n-9).
  * @author Georg Fischer
  */
 public class A173659 extends HolonomicRecurrence {

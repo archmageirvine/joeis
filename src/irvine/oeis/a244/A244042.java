@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A244042 In ternary representation of n, replace 2&apos;s with 0&apos;s.
+ * A244042 In ternary representation of n, replace 2's with 0's.
  * @author Georg Fischer
  */
 public class A244042 extends LambdaSequence {

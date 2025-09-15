@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A080310 Rewrite 0-&gt;100 in the binary expansion of n (but leaving single zero as zero) and append 10 to the right.
+ * A080310 a(0) = 2 and, for n &gt;= 1, rewrite 0-&gt;100 in the binary expansion of n and append 10 to the right.
  * @author Sean A. Irvine
  */
 public class A080310 extends SimpleTransformSequence {

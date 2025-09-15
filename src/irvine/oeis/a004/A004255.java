@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A004255 n(n+1)(n^2 -3n + 6)/8.
+ * A004255 a(n) = n*(n + 1)*(n^2 - 3*n + 6)/8.
  * @author Sean A. Irvine
  */
 public class A004255 extends Sequence1 {

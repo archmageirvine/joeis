@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A176007 Numbers n such that 3^(2n-1)-3^n+1 is prime.
+ * A176007 Numbers k such that 3^(2*k-1)-3^k+1 is prime.
  * @author Georg Fischer
  */
 public class A176007 extends FilterNumberSequence {

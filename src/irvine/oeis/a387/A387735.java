@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387735 allocated for Sean A. Irvine.
+ * A387735 Number of partitions of n such that the largest part is &gt;= n/2 and adjacent parts differ by at least 2.
  * @author Sean A. Irvine
  */
 public class A387735 extends Sequence1 {

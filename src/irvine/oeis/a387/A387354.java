@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387354 allocated for Clark Kimberling.
+ * A387354 a(n) = least prime m such that m/prime(n) &gt; a(n-1)/prime(n-1), where a(1) = 3.
  * @author Sean A. Irvine
  */
 public class A387354 extends Sequence1 {

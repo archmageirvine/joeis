@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A387697 allocated for Daniel Hoyt.
+ * A387697 Decimal expansion of the probability that a Poisson(1) random variable is a power of 2.
  * @author Sean A. Irvine
  */
 public class A387697 extends DecimalExpansionSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A241978 Numbers n such that 6^phi(n) == 1 (modulo n^2), where phi(n) is Euler&apos;s totient function.
+ * A241978 Numbers n such that 6^phi(n) == 1 (modulo n^2), where phi(n) is Euler's totient function.
  * @author Georg Fischer
  */
 public class A241978 extends FilterNumberSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A384993 allocated for John Tyler Rascoe.
+ * A384993 Triangle read by rows: T(n,k) is the number of compositions (p_0,p_1,...,p_m) of n such that max(i + p_i) = k for 0 &lt;= i &lt;= m.
  * @author Sean A. Irvine
  */
 public class A384993 extends Sequence0 {

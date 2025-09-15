@@ -7,7 +7,7 @@ import irvine.math.q.Rationals;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A073014 (n!/2)*sum(k=1,n,(n+k)!/(k!)^3).
+ * A073014 a(n) = (n!/2)*Sum_{k=1..n} (n+k)!/(k!)^3.
  * @author Georg Fischer
  */
 public class A073014 extends LambdaSequence {

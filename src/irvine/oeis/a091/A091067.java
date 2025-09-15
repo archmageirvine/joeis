@@ -5,7 +5,7 @@ import irvine.oeis.a060.A060833;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A091067 Numbers whose odd part is of the form 4k+3.
+ * A091067 Numbers whose odd part is of the form 4*k+3.
  * @author Georg Fischer
  */
 public class A091067 extends SimpleTransformSequence {

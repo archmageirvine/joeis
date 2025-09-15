@@ -4,7 +4,7 @@ package irvine.oeis.a347;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A347978 E.g.f.: 1/(1 + x)^(1/(1 - x)).
+ * A347978 Expansion of e.g.f. 1/(1 + x)^(1/(1 - x)).
  * E.g.f.: <code>1/(1+x)^(1/(1-x))</code>.
  * @author Georg Fischer
  */

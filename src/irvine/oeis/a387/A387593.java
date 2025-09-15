@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387593 allocated for Clark Kimberling.
+ * A387593 Rectangular array (d(n,k)) read by descending antidiagonals: d(n,k) is the denominator array of the increasing (2)-prime-fractions array, defined in Comments.
  * @author Sean A. Irvine
  */
 public class A387593 extends Sequence1 {

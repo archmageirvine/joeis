@@ -4,7 +4,7 @@ package irvine.oeis.a156;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A156887 a(n) = Sum_{k=0..n} C(n,k)*C(4*n+k,k).
+ * A156887 a(n) = Sum_{k=0..n} C(n,k) * C(4*n+k,k).
  * sumrecursion((-1)^(n-k)*C(n,k)*C(4*n+k,n)*2^k,k,a(n));
  * @author Georg Fischer
  */

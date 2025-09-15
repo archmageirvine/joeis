@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A154412 Primes of the form 10n^2+14n+5, n &gt;= 0.
+ * A154412 Primes of the form 10*k^2+14*k+5, k &gt;= 0.
  * @author Georg Fischer
  */
 public class A154412 extends PrimeSubsequence {

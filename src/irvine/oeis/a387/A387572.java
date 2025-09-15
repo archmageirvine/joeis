@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A387572 allocated for Joseph Rozhenko.
+ * A387572 a(n) is the length of the disturbed prefix after n steps of the iterative process defined in the Comments.
  * @author Sean A. Irvine
  */
 public class A387572 extends Sequence0 {

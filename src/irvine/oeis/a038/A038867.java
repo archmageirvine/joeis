@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A038867 (n+5)^3 - n^3.
+ * A038867 a(n) = (n+5)^3 - n^3.
  * @author Sean A. Irvine
  */
 public class A038867 extends LinearRecurrence {

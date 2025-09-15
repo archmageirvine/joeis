@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387514 allocated for Greg Dresden.
+ * A387514 Number of ways to tile a fixed circular strip of length n with squares and dominos of two different colors where there must be the same number of each color of domino.
  * @author Sean A. Irvine
  */
 public class A387514 extends Sequence1 {

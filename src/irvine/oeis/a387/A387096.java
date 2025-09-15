@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387096 allocated for Felix Huber.
+ * A387096 Numbers k such that k &lt; prime(bigomega(k))#, where prime(bigomega(k))# is the product of the first bigomega(k) primes and bigomega(k) is the number of prime divisors of k (counted multiplicity).
  * @author Sean A. Irvine
  */
 public class A387096 extends Sequence1 {

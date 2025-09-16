@@ -25,6 +25,9 @@ public class A387685 extends Sequence1 {
       sum += v;
     }
     if (sum == n) {
+//      if (n == 469) {
+//        System.out.println(n + " " + s + " " + t + " " + r);
+//      }
       ++mCount;
     }
   }

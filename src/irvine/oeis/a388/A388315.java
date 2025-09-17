@@ -1,0 +1,17 @@
+package irvine.oeis.a388;
+
+import irvine.math.cr.CR;
+import irvine.math.q.Q;
+import irvine.oeis.cons.DecimalExpansionSequence;
+
+/**
+ * A388315 Decimal expansion of (1/16) * exp(25*Pi/24) * 2^(7/8).
+ * @author Sean A. Irvine
+ */
+public class A388315 extends DecimalExpansionSequence {
+
+  /** Construct the sequence. */
+  public A388315() {
+    super(1, CR.PI.multiply(new Q(25, 24)).exp().divide(16).multiply(CR.TWO.pow(new Q(7, 8))));
+  }
+}

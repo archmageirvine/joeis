@@ -15,16 +15,16 @@ public class A387687 extends Sequence0 {
   private final Fast mPrime = new Fast();
   private final HashSet<Long> mUsed = new HashSet<>();
   private Z mProd = Z.ONE;
+  private long mP = 1;
 
   @Override
   public Z next() {
-    long p = 1;
     while (true) {
-      p = mPrime.nextPrime(p);
-      if (!mUsed.contains(p) && mProd.add(p).isProbablePrime()) {
-        mProd = mProd.multiply(p);
-        mUsed.add(p);
-        return Z.valueOf(p);
+      mP = mPrime.nextPrime(mP);
+      if (!mUsed.contains(mP) && mProd.add(mP).isProbablePrime()) {
+        mProd = mProd.multiply(mP);
+        mUsed.add(mP);
+        return Z.valueOf(mP);
       }
     }
   }

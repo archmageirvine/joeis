@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
  */
 public class A079101 extends Sequence1 {
 
-  private final StringBuilder mS = new StringBuilder();
+  protected final StringBuilder mS = new StringBuilder();
   private int mLongestRepeat = 0;
 
   @Override

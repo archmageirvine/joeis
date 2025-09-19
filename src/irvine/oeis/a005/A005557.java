@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A005557 Number of walks on square lattice.
+ * A005557 a(n) is the number of Dyck paths of semilength n+6 having its first peak at height n+1.
  * @author Sean A. Irvine
  */
 public class A005557 extends Sequence0 {

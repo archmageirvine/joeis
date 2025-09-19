@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
- * A123934 Triangle T(n,k), 1&lt;=k&lt;=n :forms the odd-indexed trinomial coefficients (A027907).
+ * A123934 Triangle T(n,k), 1&lt;=k&lt;=n: forms the odd-indexed trinomial coefficients (A027907).
  * @author Georg Fischer
  */
 public class A123934 extends PrependSequence {

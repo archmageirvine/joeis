@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A387775.
+ * A080366 Numbers k whose least and greatest prime divisors are non-unitary.
  * @author Sean A. Irvine
  */
 public class A080366 extends A002808 {

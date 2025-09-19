@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A168006 Primes n with property that first digit of 2*n = last digit of n.
+ * A168006 Primes p with property that first digit of 2*p = last digit of p.
  * @author Georg Fischer
  */
 public class A168006 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387685 allocated for Felix Huber.
+ * A387685 a(n) is the number of geometric progressions of three or more positive integers, strictly increasing with sum n.
  * @author Sean A. Irvine
  */
 public class A387685 extends Sequence1 {

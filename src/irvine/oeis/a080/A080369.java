@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003022;
 
 /**
- * A003022.
+ * A080369 a(n) is the value of Vandermonde determinant for lexicographically earliest n-mark Golomb-ruler.
  * @author Sean A. Irvine
  */
 public class A080369 extends A003022 {

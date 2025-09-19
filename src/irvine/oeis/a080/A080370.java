@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A003022.
+ * A080370 Number of distinct values among the differences prime(j)-prime(i), 1 &lt;= i &lt; j &lt;= n.
  * @author Sean A. Irvine
  */
 public class A080370 extends Sequence1 {

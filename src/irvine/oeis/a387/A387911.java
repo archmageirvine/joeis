@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A003022.
+ * A387911 Numbers which are the concatenation of two numbers whose digital roots are equal.
  * @author Sean A. Irvine
  */
 public class A387911 extends Sequence1 {

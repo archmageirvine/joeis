@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A003022.
+ * A080395 Even numbers k such that the central binomial coefficient A000984(k, k/2) is divisible by k^2.
  * @author Sean A. Irvine
  */
 public class A080395 extends Sequence1 {

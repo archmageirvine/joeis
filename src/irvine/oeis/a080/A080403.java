@@ -5,7 +5,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterSequence;
 
 /**
- * A003022.
+ * A080403 Numbers n such that both A000203(n) and A001157(n) are squarefree: sum of divisors and squares of divisors of n are squarefree.
  * @author Sean A. Irvine
  */
 public class A080403 extends FilterSequence {

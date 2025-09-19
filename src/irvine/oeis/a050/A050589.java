@@ -6,7 +6,7 @@ import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 
 /**
- * A050589 Numbers n such that 127*2^n-1 is prime.
+ * A050589 Numbers k such that 127*2^k - 1 is prime.
  * @author Georg Fischer
  */
 public class A050589 extends PowerFactorPrimeSequence {

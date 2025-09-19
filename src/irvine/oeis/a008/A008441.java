@@ -4,7 +4,7 @@ package irvine.oeis.a008;
 import irvine.oeis.transform.EtaProductSequence;
 
 /**
- * A008441 Number of ways of writing n as the sum of 2 triangular numbers.
+ * A008441 Number of ordered ways of writing n as the sum of 2 triangular numbers.
  * Eta product <code>psi(q) * psi(q^1)</code>
  * @author Georg Fischer
  */

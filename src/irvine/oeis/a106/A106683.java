@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003022;
 
 /**
- * A003022 Length of shortest (or optimal) Golomb ruler with n marks.
+ * A106683 Triangle read by rows: row n gives marks on lexicographically earliest n-mark optimal Golomb ruler.
  * @author Sean A. Irvine
  */
 public class A106683 extends A003022 {

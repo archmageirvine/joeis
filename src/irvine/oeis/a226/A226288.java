@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A226288 T(n,k) = [n/2]!*[(n+1)/2]!*C([n/2],k-1)*C([(n+1)/2],k-1).
+ * A226288 T(n,k) = [n/2]!*[(n+1)/2]!*C([n/2],k-1)*C([(n+1)/2],k-1) where [x] = floor(x).
  * @author Georg Fischer
  */
 public class A226288 extends UpperLeftTriangle {

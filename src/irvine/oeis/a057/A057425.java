@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A057425 Number of rotationally symmetric 2n-celled polyominoes with 1 hole.
+ * A057425 Number of 2n-celled free polyominoes with 1 hole that have the 180-degree rotation symmetry and no others.
  * @author Sean A. Irvine
  */
 public class A057425 extends AbstractSequence {

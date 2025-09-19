@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A003022.
+ * A080386 Numbers k such that there are exactly 8 numbers j for which binomial(k, floor(k/2)) / binomial(k,j) is an integer, i.e., A080383(k) = 8.
  * @author Sean A. Irvine
  */
 public class A080386 extends FilterPositionSequence {

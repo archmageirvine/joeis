@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388193 Decimal expansion of (1/4) * exp(3/8 * Pi) * Pi^(3/4) * 2^(1/8) / Gamma(3/4)^3.
+ * A388193 Decimal expansion of (1/4) * exp(3*Pi/8) * Pi^(3/4) * 2^(1/8) / Gamma(3/4)^3.
  * @author Sean A. Irvine
  */
 public class A388193 extends DecimalExpansionSequence {

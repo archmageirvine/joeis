@@ -4,7 +4,7 @@ package irvine.oeis.a168;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A168000 Numbers n with property that first digit of 6*n = last digit of n.
+ * A168000 Numbers k with property that first digit of 6*k = last digit of k.
  * @author Georg Fischer
  */
 public class A168000 extends FilterNumberSequence {

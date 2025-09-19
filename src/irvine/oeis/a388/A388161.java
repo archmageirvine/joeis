@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388161 Decimal expansion of 5/8 * Pi^3 / Gamma(3/4)^12.
+ * A388161 Decimal expansion of (5/8) * Pi^3 / Gamma(3/4)^12.
  * @author Sean A. Irvine
  */
 public class A388161 extends DecimalExpansionSequence {

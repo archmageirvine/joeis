@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A003022.
+ * A080372 a(n) is the smallest x such that the quotient d(x)/d(x+1) equals n, where d = A000005.
  * @author Sean A. Irvine
  */
 public class A080372 extends Sequence1 {

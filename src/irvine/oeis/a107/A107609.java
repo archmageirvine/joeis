@@ -7,7 +7,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a000.A000720;
 
 /**
- * A107609 a(n) = round(n / pi(n)) = round(A000027(n) / A000720(n)) where round(x) rounds half to even.
+ * A107609 a(n) = round(n / pi(n)) = round(n / A000720(n)) where round(x) rounds half to even.
  * @author Sean A. Irvine
  */
 public class A107609 extends Sequence2 {

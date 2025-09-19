@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A003022.
+ * A387271 Positive integers whose ternary expansion has equal run-length multisets for digits 1 and 2.
  * @author Sean A. Irvine
  */
 public class A387271 extends Sequence1 {

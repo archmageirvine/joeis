@@ -5,7 +5,7 @@ package irvine.oeis.a197;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A197272 a(n) = 6/((4*n+1)*(4*n+2))*binomial(5*n,n).
+ * A197272 a(n) = (6/((4*n+1)*(4*n+2)))*binomial(5*n,n).
  * @author Georg Fischer
  */
 public class A197272 extends HolonomicRecurrence {

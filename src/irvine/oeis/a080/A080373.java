@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A003022.
+ * A080373 a(n) is the smallest number k such that GCD of n values of prime(j)-1 for successive j values starting with k is greater than 2.
  * @author Sean A. Irvine
  */
 public class A080373 extends Sequence1 {

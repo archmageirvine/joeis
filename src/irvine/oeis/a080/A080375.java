@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.DistinctSequence;
 
 /**
- * A003022.
+ * A080375 Distinct values of A080374, where A080374(n) is the lcm of the first n consecutive prime differences.
  * @author Sean A. Irvine
  */
 public class A080375 extends DistinctSequence {

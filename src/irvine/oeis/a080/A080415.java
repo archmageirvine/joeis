@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a079.A079101;
 
 /**
- * A003022.
+ * A080415 a(n) is the number of distinct substrings in the initial string of length n of the repetition-resistant sequence A079101.
  * @author Sean A. Irvine
  */
 public class A080415 extends A079101 {

@@ -5,7 +5,7 @@ import irvine.oeis.a076.A076115;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A076115 Squares (or 0) from A076114.
+ * A386931 a(n) is the smallest positive integer k such that k^2 is equal to the sum of n consecutive positive integers, or 0 if no such k exists.
  * @author Sean A. Irvine
  */
 public class A386931 extends SimpleTransformSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 
 /**
- * A224880 a(n) = 2n + sum of divisors of n.
+ * A224880 a(n) = 2*n + sum of divisors of n.
  * @author Georg Fischer
  */
 public class A224880 extends Sequence1 {

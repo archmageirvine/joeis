@@ -6,7 +6,7 @@ package irvine.oeis.a190;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A190878 E.g.f. exp(x/(1-x-x^4)).
+ * A190878 Expansion of e.g.f. exp(x/(1-x-x^4)).
  * @author Georg Fischer
  */
 public class A190878 extends HolonomicRecurrence {

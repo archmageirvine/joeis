@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.math.z.Z;
 
 /**
- * A003022.
+ * A080376 Numbers where A080374 increases.
  * @author Sean A. Irvine
  */
 public class A080376 extends A080374 {

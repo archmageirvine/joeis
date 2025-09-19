@@ -5,7 +5,7 @@ package irvine.oeis.a233;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A233658 7*binomial(4*n + 7, n)/(4*n + 7).
+ * A233658 a(n) = 7*binomial(4*n + 7, n)/(4*n + 7).
  * @author Georg Fischer
  */
 public class A233658 extends HolonomicRecurrence {

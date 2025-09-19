@@ -4,7 +4,7 @@ package irvine.oeis.a140;
 import irvine.oeis.prime.CongruenceForm;
 
 /**
- * A140013 Primes of the form 41x^2+38xy+41y^2.
+ * A140013 Primes of the form 41*x^2+38*x*y+41*y^2.
  * @author Georg Fischer
  */
 public class A140013 extends CongruenceForm {

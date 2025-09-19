@@ -5,7 +5,7 @@ package irvine.oeis.a234;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A234528 Binomial(10*n+5,n)/(2*n+1).
+ * A234528 a(n) = binomial(10*n+5,n)/(2*n+1).
  * @author Georg Fischer
  */
 public class A234528 extends HolonomicRecurrence {

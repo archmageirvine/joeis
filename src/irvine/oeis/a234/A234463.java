@@ -5,7 +5,7 @@ package irvine.oeis.a234;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A234463 Binomial(8*n+4,n)/(2*n+1).
+ * A234463 a(n) = binomial(8*n+4,n)/(2*n+1).
  * @author Georg Fischer
  */
 public class A234463 extends HolonomicRecurrence {

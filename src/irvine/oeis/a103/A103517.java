@@ -4,7 +4,7 @@ package irvine.oeis.a103;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A103517 Expansion of (1+2*x-x^2)/(1-x)^2.
+ * A103517 Expansion of g.f. (1+2*x-x^2)/(1-x)^2.
  * @author Georg Fischer
  */
 public class A103517 extends GeneratingFunctionSequence {

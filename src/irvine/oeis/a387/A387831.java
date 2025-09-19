@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387683.
+ * A387831 Nonnegative numbers k such that the octal expansions of k and 2*k are anagrams.
  * @author Sean A. Irvine
  */
 public class A387831 extends Sequence1 {

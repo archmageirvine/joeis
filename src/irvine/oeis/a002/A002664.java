@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A002664 a(n) = 2^n - C(n,0)- ... - C(n,4).
+ * A002664 a(n) = 2^n - C(n,0) - ... - C(n,4).
  * @author Sean A. Irvine
  */
 public class A002664 extends Sequence0 {

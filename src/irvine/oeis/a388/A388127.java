@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388127 Decimal expansion of 1 / Pi^3 * Gamma(3/4)^12.
+ * A388127 Decimal expansion of (1 / Pi^3) * Gamma(3/4)^12.
  * @author Sean A. Irvine
  */
 public class A388127 extends DecimalExpansionSequence {

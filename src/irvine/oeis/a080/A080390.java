@@ -6,7 +6,7 @@ import irvine.oeis.InverseSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A003022.
+ * A080390 Least k such that gcd(k+1, binomial(k, k/2)) = n.
  * @author Sean A. Irvine
  */
 public class A080390 extends InverseSequence {

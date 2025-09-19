@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A387775.
+ * A080363 Nonprime numbers k such that the largest prime divisor of k is unitary.
  * @author Sean A. Irvine
  */
 public class A080363 extends A002808 {

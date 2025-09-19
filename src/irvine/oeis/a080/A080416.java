@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A003022.
+ * A080416 Stirling-like number triangle defined by paired decomposition of C(n+3,3) = A000292.
  * @author Sean A. Irvine
  */
 public class A080416 extends Sequence0 {

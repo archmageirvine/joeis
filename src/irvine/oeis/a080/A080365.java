@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A387775.
+ * A080365 Composite numbers k whose smallest and largest prime factors are unitary prime factors.
  * @author Sean A. Irvine
  */
 public class A080365 extends A002808 {

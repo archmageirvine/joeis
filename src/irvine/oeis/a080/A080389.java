@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A003022.
+ * A080389 Numbers n such that gcd( n+1, binomial(n, floor(n/2)) ) = 1.
  * @author Sean A. Irvine
  */
 public class A080389 extends Sequence1 {

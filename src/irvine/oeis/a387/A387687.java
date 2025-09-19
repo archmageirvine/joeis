@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A003022.
+ * A387687 a(n) is the smallest prime p greater than all previous terms such that the product of the previous terms plus p is prime.
  * @author Sean A. Irvine
  */
 public class A387687 extends Sequence0 {

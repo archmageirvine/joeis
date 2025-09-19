@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A003022.
+ * A387866 Numbers that can be split into two numbers whose products of digits are equal.
  * @author Sean A. Irvine
  */
 public class A387866 extends Sequence1 {

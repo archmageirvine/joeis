@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A057418 Number of n-celled polyominoes with 1 hole.
+ * A057418 Number of n-celled free polyominoes with 1 hole.
  * @author Sean A. Irvine
  */
 public class A057418 extends AbstractSequence {

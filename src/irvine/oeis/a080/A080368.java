@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387775.
+ * A080368 a(n) is the least unitary prime divisor of n, or 0 if no such prime divisor exists.
  * @author Sean A. Irvine
  */
 public class A080368 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001223;
 
 /**
- * A003022.
+ * A080377 Prime gaps where A080374 increases.
  * @author Sean A. Irvine
  */
 public class A080377 extends A001223 {

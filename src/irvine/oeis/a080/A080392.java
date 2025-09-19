@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A003022.
+ * A080392 Numbers k such that A000984(k) mod k = 0 and A080383(k) != 7.
  * @author Sean A. Irvine
  */
 public class A080392 extends Sequence1 {

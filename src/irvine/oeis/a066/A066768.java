@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066768 Sum_{d|n} binomial(2*d-2,d-1).
+ * A066768 a(n) = Sum_{d|n} binomial(2*d-2,d-1).
  * @author Sean A. Irvine
  */
 public class A066768 extends Sequence1 {

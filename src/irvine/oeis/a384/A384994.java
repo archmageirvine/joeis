@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A003022.
+ * A384994 Positive numbers whose prime indices of their prime factors, together with their exponents are distinct.
  * @author Sean A. Irvine
  */
 public class A384994 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A387775.
+ * A080364 Composite numbers whose least prime factor appears with multiplicity 1.
  * @author Sean A. Irvine
  */
 public class A080364 extends A002808 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A008277 Triangle of Stirling numbers of the second kind, S2(n,k), n &gt;= 1, 1 &lt;= k &lt;= n.
+ * A080417 Signed Stirling numbers of the second kind.
  * @author Sean A. Irvine
  */
 public class A080417 extends Sequence1 {

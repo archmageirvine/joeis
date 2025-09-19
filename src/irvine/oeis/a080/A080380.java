@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A003022.
+ * A080380 Least n such that n consecutive values in A080378 equal 0; i.e., exactly n differences between consecutive primes are divisible by 4.
  * @author Sean A. Irvine
  */
 public class A080380 extends A080378 {

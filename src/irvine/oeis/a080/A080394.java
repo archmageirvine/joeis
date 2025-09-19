@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A003022.
+ * A080394 Numbers k such that binomial(k, floor(k/2)) is divisible by k^2.
  * @author Sean A. Irvine
  */
 public class A080394 extends Sequence1 {

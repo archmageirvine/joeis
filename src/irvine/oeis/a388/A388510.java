@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388510 Decimal expansion of (1/2) * 2^(7/8).
+ * A388510 Decimal expansion of 2^(-1/8).
  * @author Sean A. Irvine
  */
 public class A388510 extends DecimalExpansionSequence {

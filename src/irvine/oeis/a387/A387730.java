@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A003022.
+ * A387730 allocated for Jwalin Bhatt.
  * @author Sean A. Irvine
  */
 public class A387730 extends Sequence1 {

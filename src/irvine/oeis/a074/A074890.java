@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A074890 Decimal form of binary integers produced by a modified version of Wolfram's Rule 30 one-dimensional cellular automaton.
+ * A074890 a(n) is the action of recursively applying 'Rule 30' elementary cellular automata on the binary representation of n if the cells may only expand into the significant bit, a(0) = 1.
  * @author Georg Fischer
  */
 public class A074890 extends Sequence0 {

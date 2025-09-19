@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A003022.
+ * A080391 Number of integers among the following n+1 quotients: A001405(n)/A001405(k), k=0,..,n. Number of values k for which the n-th central binomial coefficient is divisible by the k-th central binomial coefficient for 0&lt;=k=n.
  * @author Sean A. Irvine
  */
 public class A080391 extends Sequence1 {

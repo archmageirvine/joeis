@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A383941 allocated for Felix Huber.
+ * A383941 a(0) = 0; for n &gt;= 1, a(n) is the smallest positive integer not already in the sequence that is coprime to both a(n-1) and the sum of all preceding terms.
  * @author Sean A. Irvine
  */
 public class A383941 extends Sequence0 {

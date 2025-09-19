@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A057422 Axially symmetric (about axis 2) 2n-celled polyominoes with 1 hole.
+ * A057422 Number of 2n-celled free polyominoes with 1 hole that are symmetric about two orthogonal axes (and therefore centrally symmetric) but have no other symmetries.
  * @author Sean A. Irvine
  */
 public class A057422 extends AbstractSequence {

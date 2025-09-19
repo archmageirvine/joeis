@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A056882 Number of n-celled polyominoes without holes, symmetric about diagonal 2.
+ * A056882 Number of n-celled free polyominoes that have no holes and are symmetric about two diagonal axes (and therefore centrally symmetric) but have no other symmetries.
  * @author Sean A. Irvine
  */
 public class A056882 extends Sequence1 {

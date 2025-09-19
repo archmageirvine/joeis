@@ -9,7 +9,7 @@ import irvine.oeis.a046.A046083;
 import irvine.oeis.a046.A046084;
 
 /**
- * A386306 allocated for Felix Huber.
+ * A386306 a(n) is the total number of prime factors (with multiplicity) of the three sides of the Pythagorean triangle (A046083(n), A046084(n), A009000(n)).
  * @author Sean A. Irvine
  */
 public class A386306 extends Sequence1 {

@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A003022.
+ * A387318 a(n) is the maximum number of water-pouring moves needed to reach (1, 1, ..., 1) from any valid initial configuration for n bottles.
  * @author Sean A. Irvine
  */
 public class A387318 extends Sequence1 {

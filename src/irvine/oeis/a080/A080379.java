@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A003022.
+ * A080379 Least n such that n consecutive values in A080378 equals 2; i.e., exactly n differences between consecutive primes give residues 2 when divided by 4.
  * @author Sean A. Irvine
  */
 public class A080379 extends A080378 {

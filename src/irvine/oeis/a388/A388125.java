@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388125 Decimal expansion of 1 / Pi^(5/2) * Gamma(3/4)^10.
+ * A388125 Decimal expansion of (1 / Pi^(5/2)) * Gamma(3/4)^10.
  * @author Sean A. Irvine
  */
 public class A388125 extends DecimalExpansionSequence {

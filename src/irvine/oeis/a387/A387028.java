@@ -8,7 +8,7 @@ import irvine.oeis.a262.A262690;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A387028 allocated for J. Lowell.
+ * A387028 a(n) is the minimum value where A262690(k) &gt;= n^2 for all k &gt;= a(n).
  * @author Sean A. Irvine
  */
 public class A387028 extends Sequence1 {

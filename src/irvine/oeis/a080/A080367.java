@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387775.
+ * A080367 Largest unitary prime divisor of n or a(n) = 0 if no such prime divisor exists.
  * @author Sean A. Irvine
  */
 public class A080367 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A156066 Numbers n with property that n^2 is a square arising in A154138.
+ * A156066 Numbers k such that k^2 is a square arising in A154138.
  * @author Sean A. Irvine
  */
 public class A156066 extends LinearRecurrence {

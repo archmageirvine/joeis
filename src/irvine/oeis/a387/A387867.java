@@ -3,7 +3,7 @@ package irvine.oeis.a387;
 import irvine.math.z.Z;
 
 /**
- * A003022.
+ * A387867 a(n) is the number of n-digit terms in A387866.
  * @author Sean A. Irvine
  */
 public class A387867 extends A387866 {

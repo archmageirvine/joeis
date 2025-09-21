@@ -21,7 +21,7 @@ public class A080433 extends Sequence1 {
       long k = mN;
       while (true) {
         k += mN;
-        if (k % 10 != 0 && String.valueOf(k).charAt(0) - '0' == r) {
+        if ((mN % 10 == 0 || k % 10 != 0) && String.valueOf(k).charAt(0) - '0' == r) {
           mA = Z.valueOf(k);
           break;
         }

@@ -15,7 +15,7 @@ public class A080467 extends Sequence1 {
     if (n == 0) {
       return true;
     }
-    long parity = n & 1;
+    final long parity = n & 1;
     while (n != 0) {
       if ((n & 1) != parity) {
         return false;

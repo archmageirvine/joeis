@@ -16,7 +16,7 @@ public class A080474 extends Sequence1 {
     if (++mN == 1) {
       return Z.ONE;
     }
-    long m = mN * (mN - 1) / 2 + 1;
+    final long m = mN * (mN - 1) / 2 + 1;
     Z sum = Z.ZERO;
     for (long k = 0; k < mN; ++k) {
       sum = sum.add(m + k);

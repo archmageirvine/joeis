@@ -14,7 +14,7 @@ public class A080473 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    long m = mN * (mN - 1) / 2 + 1;
+    final long m = mN * (mN - 1) / 2 + 1;
     Z prod = Z.ONE;
     for (long k = 0; k < mN; ++k) {
       prod = prod.multiply(m + k);

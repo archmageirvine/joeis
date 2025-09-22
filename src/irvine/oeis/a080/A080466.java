@@ -12,7 +12,7 @@ public class A080466 extends Sequence1 {
   private long mN = 110;
 
   private boolean is(long n) {
-    long parity = n & 1;
+    final long parity = n & 1;
     while (n != 0) {
       if ((n & 1) != parity) {
         return false;

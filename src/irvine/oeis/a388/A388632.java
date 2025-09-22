@@ -13,6 +13,6 @@ public class A388632 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A388632() {
-    super(1,CR.PI.exp().divide(200).multiply(CR.PI.pow(new Q(4, 3))).multiply(CR.TWO.pow(new Q(4, 5))).multiply(CR.FIVE.sqrt().add(1).pow(Q.ONE_THIRD)).multiply(CrFunctions.GAMMA.cr(new Q(9, 10)).pow(Q.ONE_THIRD)).multiply(CR.FIVE.sqrt().subtract(1).pow(new Q(4, 3))).multiply(CR.FIVE.pow(new Q(5, 12))).divide(CrFunctions.GAMMA.cr(new Q(3, 4)).pow(4)).divide(CrFunctions.GAMMA.cr(new Q(3, 5)).pow(new Q(2, 3))).divide(CrFunctions.GAMMA.cr(new Q(7, 10)).pow(Q.ONE_THIRD)));
+    super(1, CR.PI.exp().divide(200).multiply(CR.PI.pow(new Q(4, 3))).multiply(CR.TWO.pow(new Q(4, 5))).multiply(CR.FIVE.sqrt().add(1).pow(Q.ONE_THIRD)).multiply(CrFunctions.GAMMA.cr(new Q(9, 10)).pow(Q.ONE_THIRD)).multiply(CR.FIVE.sqrt().subtract(1).pow(new Q(4, 3))).multiply(CR.FIVE.pow(new Q(5, 12))).divide(CrFunctions.GAMMA.cr(new Q(3, 4)).pow(4)).divide(CrFunctions.GAMMA.cr(new Q(3, 5)).pow(new Q(2, 3))).divide(CrFunctions.GAMMA.cr(new Q(7, 10)).pow(Q.ONE_THIRD)));
   }
 }

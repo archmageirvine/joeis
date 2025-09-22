@@ -12,6 +12,6 @@ public class A078972 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A078972() {
-    super(1, 0, k -> Predicates.BRILLIANT.is(k));
+    super(1, 0, Predicates.BRILLIANT::is);
   }
 }

@@ -3,7 +3,7 @@ package irvine.oeis.a387;
 import irvine.math.z.Z;
 
 /**
- * A387661 allocated for Yifan Xie.
+ * A387661 a(n) is the number of valid initial configurations P with the maximum distance to I.
  * @author Sean A. Irvine
  */
 public class A387661 extends A387318 {

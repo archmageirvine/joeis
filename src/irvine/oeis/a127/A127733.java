@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000290;
 import irvine.oeis.triangle.WrappedConstantTriangle;
 
 /**
- * A127733 Square of A127648 = Triangle read by rows, n^2 preceded by (n-1) zeros.
+ * A127733 Triangle read by rows: n-th row is n^2 preceded by (n-1) zeros.
  * @author Georg Fischer
  */
 public class A127733 extends WrappedConstantTriangle {

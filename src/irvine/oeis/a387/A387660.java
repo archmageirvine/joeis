@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A387660 allocated for Kelvin Voskuijl.
+ * A387660 a(0) = 0; thereafter a(n) = a(n-1) - n if a(n-1) &gt; 2*n and not already in the sequence, otherwise a(n) = a(n-1) + n.
  * @author Sean A. Irvine
  */
 public class A387660 extends Sequence0 {

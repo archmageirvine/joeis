@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A080454.
+ * A080479 Smallest number formed by using all the digits (with multiplicity) of next n numbers.
  * @author Sean A. Irvine
  */
 public class A080479 extends Sequence1 {

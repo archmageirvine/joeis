@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ComplementSequence;
 import irvine.oeis.a224.A224467;
 /**
- * A228373 Numbers n such that 27*n + 1 is not prime.
+ * A228373 Numbers k such that 27*k + 1 is not prime.
  * @author Georg Fischer
  */
 public class A228373 extends ComplementSequence {

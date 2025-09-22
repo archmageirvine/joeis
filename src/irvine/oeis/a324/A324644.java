@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A324644 a(n) = gcd(sigma(n), A276086(n)).
+ * A324644 a(n) = gcd(sigma(n), A276086(n)), where A276086 is the primorial base exp-function, and sigma gives the sum of divisors of its argument.
  * @author Georg Fischer
  */
 public class A324644 extends LambdaSequence {

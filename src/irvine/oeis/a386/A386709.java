@@ -4,7 +4,7 @@ package irvine.oeis.a386;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A386709 Number of length n binary palindromic words which are not all zero in which 1&apos;s occur in blocks of at least 4.
+ * A386709 Number of length n binary palindromic words which are not all zero in which 1's occur in blocks of at least 4.
  * @author Georg Fischer
  */
 public class A386709 extends HolonomicRecurrence {

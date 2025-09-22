@@ -5,7 +5,7 @@ import irvine.oeis.a062.A062067;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A080454.
+ * A080478 Square roots of A062067(n).
  * @author Sean A. Irvine
  */
 public class A080478 extends SimpleTransformSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A029707 Numbers n such that the n-th and the (n+1)-st primes are twin primes.
+ * A029707 Numbers k such that the k-th and the (k+1)-st primes are twin primes.
  * @author Sean A. Irvine
  */
 public class A029707 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001694;
 import irvine.oeis.a010.A010846;
 
 /**
- * A388044 allocated for Michael De Vlieger.
+ * A388044 a(n) = number of k &lt;= m such that rad(k) | m, where m = A001694(n) and rad(n) = A007947(n).
  * @author Sean A. Irvine
  */
 public class A388044 extends A001694 {

@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a001.A001764;
 
 /**
- * A385149 Number of chiral pairs of asymmetric polyominoes with n cells of the regular tiling with Schl\u00e4fli symbol {4,oo}.
+ * A385149 Number of chiral pairs of asymmetric polyominoes with n cells of the hyperbolic regular tiling with Schl\u00e4fli symbol {4,oo}.
  * new A001764()
  * @author Georg Fischer
  */

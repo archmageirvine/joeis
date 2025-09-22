@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080454.
+ * A080467 Multiples of 11 in which the even positioned digits from left are odd and the odd positioned ones are even.
  * @author Sean A. Irvine
  */
 public class A080467 extends Sequence1 {

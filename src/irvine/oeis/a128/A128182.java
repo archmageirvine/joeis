@@ -5,7 +5,7 @@ import irvine.oeis.a007.A007318;
 import irvine.oeis.triangle.Product;
 
 /**
- * A128182 Binomial transform of A128180.
+ * A128182 Triangle read by rows: A007318 * A128180 as infinite lower triangular matrices.
  * @author Georg Fischer
  */
 public class A128182 extends Product {

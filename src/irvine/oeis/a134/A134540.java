@@ -6,7 +6,7 @@ import irvine.oeis.a054.A054525;
 import irvine.oeis.triangle.Product;
 
 /**
- * A134540 A054525 * A000012.
+ * A134540 Triangle read by rows: T(n,k) = Sum_{d|n, d&gt;=k} moebius(n/d).
  * @author Georg Fischer
  */
 public class A134540 extends Product {

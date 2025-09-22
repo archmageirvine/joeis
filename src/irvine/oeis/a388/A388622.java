@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388622 Decimal expansion of 4-2 * sqrt(2).
+ * A388622 Decimal expansion of 4 - 2*sqrt(2).
  * @author Sean A. Irvine
  */
 public class A388622 extends DecimalExpansionSequence {

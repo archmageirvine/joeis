@@ -4,7 +4,7 @@ package irvine.oeis.a185;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A185097 a(1)=1; thereafter a(n+1) = T(8*a(n)), where T(i)=i*(i+1)/2 is the i-th triangular number.
+ * A185097 a(1) = 1; thereafter a(n+1) = T(8*a(n)), where T(i) = i*(i+1)/2 is the i-th triangular number.
  * @author Georg Fischer
  */
 public class A185097 extends HolonomicRecurrence {

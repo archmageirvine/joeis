@@ -4,7 +4,7 @@ package irvine.oeis.a137;
 import irvine.oeis.triangle.RowSumSequence;
 
 /**
- * A137630 Row sums of triangle A137629 (square of the partition triangle A026794).
+ * A137630 Row sums of triangle A137629.
  * @author Georg Fischer
  */
 public class A137630 extends RowSumSequence {

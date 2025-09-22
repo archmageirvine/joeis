@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A196517 Decimal expansion of the number x satisfying x*e^x=4.
+ * A196517 Decimal expansion of the number x satisfying x*e^x = 4.
  * Equation; x*e^x-(4)
  * @author Georg Fischer
  */

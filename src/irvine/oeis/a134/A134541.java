@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002321;
 import irvine.oeis.a101.A101688;
 
 /**
- * A134541 Triangle read by rows: A000012 * A054525 regarded as infinite lower triangular matrices.
+ * A134541 Triangle read by rows: T(n,k) = A002321(floor(n/k)).
  * @author Georg Fischer
  */
 public class A134541 extends A101688 {

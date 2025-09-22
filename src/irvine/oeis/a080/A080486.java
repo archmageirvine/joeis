@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080454.
+ * A080486 a(1) = 1, a(n) = smallest multiple of a(n-1) (not equal to 10^k*a(n-1)) obtained by inserting digits anywhere in a(n-1).
  * @author Sean A. Irvine
  */
 public class A080486 extends Sequence1 {
@@ -21,7 +21,7 @@ public class A080486 extends Sequence1 {
     this(Z.ONE);
   }
 
-  private static boolean is(Z f, Z n) {
+  static boolean is(Z f, Z n) {
     while (!n.isZero() && !f.isZero()) {
       final Z[] qr = f.divideAndRemainder(10);
       if (qr[1].equals(n.mod(10))) {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080454.
+ * A080475 Integers not expressible as the sum of a brilliant number and a prime.
  * @author Sean A. Irvine
  */
 public class A080475 extends Sequence1 {

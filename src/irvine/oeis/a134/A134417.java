@@ -6,7 +6,7 @@ import irvine.oeis.a133.A133632;
 import irvine.oeis.triangle.VectorProduct;
 
 /**
- * A134417 A007318 * Triangle with A133632 as the diagonal and the rest zeros.
+ * A134417 Triangle read by rows: T(n,k) = binomial(n,k)*A133632(k + 1).
  * @author Georg Fischer
  */
 public class A134417 extends VectorProduct {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A080454.
+ * A080463 Sum of the two numbers formed by alternate digits of n.
  * @author Sean A. Irvine
  */
 public class A080463 extends Sequence0 {

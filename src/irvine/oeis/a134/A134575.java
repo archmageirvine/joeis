@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000290;
 import irvine.oeis.a130.A130162;
 
 /**
- * A134575 A051731 * A127733.
+ * A134575 Triangle read by rows: T(n,k) = k^2*A051731(n,k).
  * @author Georg Fischer
  */
 public class A134575 extends A130162 {

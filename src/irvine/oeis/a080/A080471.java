@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
 
 /**
- * A080454.
+ * A080471 a(n) is the smallest Fibonacci number that is obtained by placing digits anywhere in n; a(n) = n if n is a Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A080471 extends Sequence1 {

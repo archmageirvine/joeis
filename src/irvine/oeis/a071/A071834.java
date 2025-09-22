@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A071834 Numbers n &gt; 1 such that n and sigma(n) have the same largest prime factor.
+ * A071834 Numbers k &gt; 1 such that k and sigma(k) have the same largest prime factor.
  * @author Sean A. Irvine
  */
 public class A071834 extends Sequence1 {

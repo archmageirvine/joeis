@@ -4,7 +4,7 @@ package irvine.oeis.a275;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A275458 G.f.: 3F2([4/9, 5/9, 7/9], [2/3, 1], 729 x).
+ * A275458 Expansion of g.f. hypergeom([4/9, 5/9, 7/9], [2/3, 1], 729 x).
  * @author Georg Fischer
  */
 public class A275458 extends HolonomicRecurrence {

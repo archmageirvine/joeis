@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080454.
+ * A080473 a(n) = sum of the products of taking n-1 numbers from the next n numbers. The next n numbers can be grouped like this (1), (2,3), (4,5,6), (7,8,9,10),... and a(n) is the (sum of the reciprocals of all members) multiplied by (the product of all members).
  * @author Sean A. Irvine
  */
 public class A080473 extends Sequence1 {

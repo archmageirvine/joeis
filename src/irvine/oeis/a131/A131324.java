@@ -7,7 +7,7 @@ import irvine.oeis.a097.A097807;
 import irvine.oeis.a168.A168561;
 
 /**
- * A131324 2*A049310 - A000012(signed).
+ * A131324 Triangle read by rows: T(n,k) = 2*|A049310(n,k)| - (-1)^(n+k).
  * @author Georg Fischer
  */
 public class A131324 extends AbstractSequence {

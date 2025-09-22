@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388647 Decimal expansion of (1/20) * exp(-Pi/8) * 2^(7/8) * (5+5^(1/2)) * 5^(1/2).
+ * A388647 Decimal expansion of exp(-Pi/8)*(1 + sqrt(5))/(2*2^(1/8)).
  * @author Sean A. Irvine
  */
 public class A388647 extends DecimalExpansionSequence {

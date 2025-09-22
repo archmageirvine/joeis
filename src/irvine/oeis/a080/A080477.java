@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A080454.
+ * A080477 Weight distribution of [120,60,20] double circulant code.
  * @author Sean A. Irvine
  */
 public class A080477 extends FiniteSequence {

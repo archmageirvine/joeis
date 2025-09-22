@@ -5,7 +5,7 @@ package irvine.oeis.a262;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A262717 a(n) = (n-1)*binomial(3*n-2,n)/(2*n-1)+(n+1)*binomial(3*n,n)/(2*n+1)-binomial(3*n-1,n).
+ * A262717 a(n) = (n-1)*binomial(3*n-2,n)/(2*n-1) + (n+1)*binomial(3*n,n)/(2*n+1) - binomial(3*n-1,n).
  * @author Georg Fischer
  */
 public class A262717 extends HolonomicRecurrence {

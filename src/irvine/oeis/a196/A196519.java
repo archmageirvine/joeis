@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A196519 Decimal expansion of the number x satisfying x*e^x=6.
+ * A196519 Decimal expansion of the number x satisfying x*e^x = 6.
  * Equation; x*e^x-(6)
  * @author Georg Fischer
  */

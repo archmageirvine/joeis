@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080454.
+ * A080470 a(n) = smallest composite number that is obtained by placing digits anywhere in n; a(n) = n if n is composite.
  * @author Sean A. Irvine
  */
 public class A080470 extends Sequence1 {

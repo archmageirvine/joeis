@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A124200 Numbers n such that 1 + n + n^3 + n^5 + n^7 + n^9 + n^11 + n^13 + n^15 + n^17 + n^19 + n^21 + n^23 + n^25 + n^27 + n^29 + n^31 + n^33 + n^35 + n^37 + n^39 + n^41 + n^43 is prime.
+ * A124200 Numbers k such that 1 + k + k^3 + k^5 + k^7 + k^9 + k^11 + k^13 + k^15 + k^17 + k^19 + k^21 + k^23 + k^25 + k^27 + k^29 + k^31 + k^33 + k^35 + k^37 + k^39 + k^41 + k^43 is prime.
  * @author Georg Fischer
  */
 public class A124200 extends PrimePositionSubsequence {

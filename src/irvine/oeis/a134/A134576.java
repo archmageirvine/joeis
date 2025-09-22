@@ -6,7 +6,7 @@ import irvine.oeis.a127.A127733;
 import irvine.oeis.triangle.Product;
 
 /**
- * A134576 A127733 * A051731.
+ * A134576 Triangle read by rows: T(n,k) = n^2*A051731(n,k).
  * @author Georg Fischer
  */
 public class A134576 extends Product {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A080454.
+ * A080469 Composite n such that binomial(3*n,n)==3^n (mod n).
  * @author Sean A. Irvine
  */
 public class A080469 extends A002808 {

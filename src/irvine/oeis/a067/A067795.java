@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067795 Numbers n such that 2*n+1 is the next prime after sigma(n).
+ * A067795 Numbers k such that 2*k+1 is the next prime after sigma(k).
  * @author Sean A. Irvine
  */
 public class A067795 extends Sequence1 {

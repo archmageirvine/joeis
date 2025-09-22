@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012131 cosh(arcsin(tanh(x)))=1+1/2!*x^2-3/4!*x^4+21/6!*x^6-263/8!*x^8...
+ * A012131 Expansion of e.g.f. cosh(arcsin(tanh(x))) (even powers only).
  * @author Sean A. Irvine
  */
 public class A012131 extends Sequence0 {

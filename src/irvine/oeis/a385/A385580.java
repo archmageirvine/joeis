@@ -5,7 +5,7 @@ import java.util.List;
 import irvine.oeis.a384.A384311;
 
 /**
- * A385580 a(n) is the number of ways to partition an n X n X n cube with four noncongruent cuboids of different volumes.
+ * A385580 a(n) is the number of ways to partition an n X n X n cube into four noncongruent cuboids of different volumes.
  * @author Sean A. Irvine
  */
 public class A385580 extends A384311 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A080454.
+ * A080465 Absolute difference between the two numbers formed by alternate digits of n.
  * @author Sean A. Irvine
  */
 public class A080465 extends AbstractSequence {

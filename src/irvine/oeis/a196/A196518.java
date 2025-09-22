@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A196518 Decimal expansion of the number x satisfying x*e^x=5.
+ * A196518 Decimal expansion of the number x satisfying x*e^x = 5.
  * Equation; x*e^x-(5)
  * @author Georg Fischer
  */

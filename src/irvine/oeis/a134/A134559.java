@@ -6,7 +6,7 @@ import irvine.oeis.a127.A127093;
 import irvine.oeis.triangle.Product;
 
 /**
- * A134559 A127093 * A000012.
+ * A134559 Triangle read by rows: T(n,k) is the sum of the divisors of n that are &gt;= k.
  * @author Georg Fischer
  */
 public class A134559 extends Product {

@@ -1,7 +1,6 @@
 package irvine.oeis.a388;
 
 import irvine.math.cr.CR;
-import irvine.math.cr.functions.CrFunctions;
 import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 

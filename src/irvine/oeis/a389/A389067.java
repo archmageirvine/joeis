@@ -1,0 +1,18 @@
+package irvine.oeis.a389;
+
+import irvine.math.cr.CR;
+import irvine.math.cr.functions.CrFunctions;
+import irvine.math.q.Q;
+import irvine.oeis.cons.DecimalExpansionSequence;
+
+/**
+ * A389067 Decimal expansion of 2 * exp(-Pi/8) * 2^(5/8) * Gamma(3/4)^5 / Pi^(5/4).
+ * @author Sean A. Irvine
+ */
+public class A389067 extends DecimalExpansionSequence {
+
+  /** Construct the sequence. */
+  public A389067() {
+    super(1, CR.PI.divide(-8).exp().multiply(CR.TWO.pow(new Q(13, 8))).multiply(CrFunctions.GAMMA.cr(new Q(3, 4)).pow(5)).divide(CR.PI.pow(new Q(5, 4))));
+  }
+}

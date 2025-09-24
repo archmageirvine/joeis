@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a056.A056040;
 
 /**
- * A163087 Product{k|n} k$. Here &apos;$&apos; denotes the swinging factorial function (A056040).
+ * A163087 Product{k|n} k$. Here '$' denotes the swinging factorial function (A056040).
  * @author Georg Fischer
  */
 public class A163087 extends LambdaSequence {

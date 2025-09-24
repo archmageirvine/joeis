@@ -95,6 +95,13 @@ public class RubikCube {
   }
 
   /**
+   * Construct a copy.
+   */
+  public RubikCube(final RubikCube cube) {
+    mState = Arrays.copyOf(cube.mState, cube.mState.length);
+  }
+
+  /**
    * Test if the cube is in the identity state.
    * @return true iff the cube is in the identity state
    */
@@ -112,5 +119,18 @@ public class RubikCube {
     for (int k = 0; k < t.length; k += 2) {
       mState[t[k + 1]] = orig[t[k]];
     }
+  }
+
+  @Override
+  public boolean equals(final Object obj) {
+    if (!(obj instanceof RubikCube)) {
+      return false;
+    }
+    return Arrays.equals(mState, ((RubikCube) obj).mState);
+  }
+
+  @Override
+  public int hashCode() {
+    return Arrays.hashCode(mState);
   }
 }

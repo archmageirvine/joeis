@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A171262 Numbers n such that phi(n) = 2*phi(n+1).
+ * A171262 Numbers k such that phi(k) = 2*phi(k+1).
  * @author Georg Fischer
  */
 public class A171262 extends FilterNumberSequence {

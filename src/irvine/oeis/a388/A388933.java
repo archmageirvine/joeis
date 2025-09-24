@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388933 allocated for Sean A. Irvine.
+ * A388933 Decimal expansion of (1/2) * exp(7*Pi/24) * 2^(15/16) / (sqrt(2) * (2-sqrt(2))^(1/2))^(1/2) / (sqrt(2) * (2+sqrt(2))^(1/2))^(1/2) / (2+sqrt(2))^(1/4).
  * @author Sean A. Irvine
  */
 public class A388933 extends DecimalExpansionSequence {

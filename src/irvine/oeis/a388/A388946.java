@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388946 allocated for Sean A. Irvine.
+ * A388946 Decimal expansion of (1/36) * exp(Pi / 2) * Gamma(2/3)^2 * Gamma(3/4)^2 * (1+3^(1/2))^2 / Pi / Gamma(11/12)^2.
  * @author Sean A. Irvine
  */
 public class A388946 extends DecimalExpansionSequence {

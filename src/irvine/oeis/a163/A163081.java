@@ -8,7 +8,7 @@ import irvine.oeis.a056.A056040;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A163081 Primes of the form p$ + 1 where p is prime, where &apos;$&apos; denotes the swinging factorial (A056040).
+ * A163081 Primes of the form p$ + 1 where p is prime, where '$' denotes the swinging factorial (A056040).
  * @author Georg Fischer
  */
 public class A163081 extends FilterSequence {

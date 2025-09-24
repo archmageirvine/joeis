@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388948 allocated for Sean A. Irvine.
+ * A388948 Decimal expansion of (1/32) * exp(Pi) * Pi^(5/4) / Gamma(3/4)^5.
  * @author Sean A. Irvine
  */
 public class A388948 extends DecimalExpansionSequence {

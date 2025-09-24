@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A159031 Primes of the form &quot;1 [0]_n 7&quot; - with zeros between 1 and 7.
+ * A159031 Primes of the form "1 [0]_n 7" - with zeros between 1 and 7.
  * @author Georg Fischer
  */
 public class A159031 extends FilterSequence {

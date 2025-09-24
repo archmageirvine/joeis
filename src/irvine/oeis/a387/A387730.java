@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A387730 allocated for Jwalin Bhatt.
+ * A387730 Indices where the cumulative sum of sin(2k+1)^(2k+1) reaches a record low value.
  * @author Sean A. Irvine
  */
 public class A387730 extends Sequence1 {

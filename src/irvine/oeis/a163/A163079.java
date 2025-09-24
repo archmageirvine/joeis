@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a056.A056040;
 
 /**
- * A163079 Primes p such that p$ + 1 is also prime. Here &apos;$&apos; denotes the swinging factorial function (A056040).
+ * A163079 Primes p such that p$ + 1 is also prime. Here '$' denotes the swinging factorial function (A056040).
  * @author Georg Fischer
  */
 public class A163079 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a027.A027760;
 
 /**
- * A282773 Numbers n such that Bernoulli number B_{n} has denominator 498.
+ * A282773 Numbers k such that Bernoulli number B_{k} has denominator 498.
  * @author Georg Fischer
  */
 public class A282773 extends FilterPositionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080608
+ * A080612 Numbers n such that 1/p(2n+1)*sum(k=1,n,p(2k+1)-p(2k)) &gt;= 1/p(2*n)*sum(k=1,n,p(2k)-p(2k-1)) where p(k) denotes the k-th prime.
  * @author Sean A. Irvine
  */
 public class A080612 extends Sequence1 {

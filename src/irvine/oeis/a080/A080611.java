@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080608
+ * A080611 a(n) is the smallest number m &gt;= 2 for which the set of prime factors of m, m-1 and m+1 contains at least the first n primes.
  * @author Sean A. Irvine
  */
 public class A080611 extends Sequence1 {

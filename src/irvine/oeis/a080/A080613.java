@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080608
+ * A080613 Minimal sequence such that Omega(a(m))&lt;=Omega(a(n)) for m&lt;n, where Omega=A001222 (sum of exponents in prime factorization).
  * @author Sean A. Irvine
  */
 public class A080613 extends Sequence1 {

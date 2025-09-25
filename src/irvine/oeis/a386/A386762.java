@@ -7,7 +7,7 @@ import irvine.oeis.TwoParameterFormSequence;
 import irvine.oeis.a013.A013929;
 
 /**
- * A013929.
+ * A386762 Perfect powers of nonsquarefree numbers k that are not squareful.
  * @author Sean A. Irvine
  */
 public class A386762 extends TwoParameterFormSequence {

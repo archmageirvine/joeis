@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A080601 Number of positions of the Rubik's cube at a distance of n moves from the solved state, in the half-turn metric.
+ * A080618 Consider 3 X 3 X 3 Rubik cube, but only allow a certain set of 5 moves; sequence gives number of positions that are exactly n moves from the start.
  * @author Sean A. Irvine
  */
 public class A080618 extends Sequence0 {

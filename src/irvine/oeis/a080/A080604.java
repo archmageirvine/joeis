@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060010.
+ * A080604 Triangular array of hypotenuses of right triangles with integer legs: T(n,k) = round(sqrt(n^2 + k^2)), 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A080604 extends Sequence1 {

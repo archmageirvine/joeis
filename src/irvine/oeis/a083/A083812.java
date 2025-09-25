@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A083812 4n-1 is the digit reversal of n-1.
+ * A083812 Numbers k such that 4*k-1 is the digit reversal of k-1.
  * @author Sean A. Irvine
  */
 public class A083812 extends LinearRecurrence {

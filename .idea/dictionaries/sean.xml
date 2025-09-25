@@ -188,6 +188,7 @@
       <w>critcal</w>
       <w>crochemore</w>
       <w>csize</w>
+      <w>cubefull</w>
       <w>cyclotomic</w>
       <w>cyclotomy</w>
       <w>dabc</w>
@@ -735,6 +736,7 @@
       <w>sqrt</w>
       <w>sqrtn</w>
       <w>squarefree</w>
+      <w>squareful</w>
       <w>squarings</w>
       <w>squbes</w>
       <w>squfof</w>

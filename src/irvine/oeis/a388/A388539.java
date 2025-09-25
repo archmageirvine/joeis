@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A080591.
+ * A388539 Sum of decimal digits of Fibonacci(n)^2.
  * @author Sean A. Irvine
  */
 public class A388539 extends SimpleTransformSequence {

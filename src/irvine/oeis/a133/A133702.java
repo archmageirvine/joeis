@@ -7,7 +7,7 @@ import irvine.oeis.transform.InverseMobiusTransformSequence;
 
 
 /**
- * A133702 A051731 * A023136.
+ * A133702 Inverse Moebius transform of A023136.
  * @author Georg Fischer
  */
 public class A133702 extends InverseMobiusTransformSequence {

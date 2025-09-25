@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A060010.
+ * A080608 Deletable primes: primes such that removing some digit leaves either the empty string or another deletable prime (possibly preceded by some zeros).
  * @author Sean A. Irvine
  */
 public class A080608 extends A000040 {

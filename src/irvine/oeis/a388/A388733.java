@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060010.
+ * A388733 Triangle read by rows: T(n,k) = numerators of "across the board" style tournament payouts.
  * @author Sean A. Irvine
  */
 public class A388733 extends Sequence1 {

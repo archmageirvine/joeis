@@ -66,7 +66,7 @@ public class TwoParameterFormSequence extends AbstractSequence {
    * @param rule rule to generate the value from <code>m</code> and <code>r</code>
    * (may return <code>null</code> if the combination of parameters is invalid)
    */
-  protected TwoParameterFormSequence(final int offset, final long m, final long r, final BiFunction<Long, Long, Z> rule) {
+  public TwoParameterFormSequence(final int offset, final long m, final long r, final BiFunction<Long, Long, Z> rule) {
     super(offset);
     mRule = rule;
     add(new State(m, r));

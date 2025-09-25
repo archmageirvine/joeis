@@ -6,7 +6,7 @@ import irvine.oeis.a051.A051731;
 import irvine.oeis.triangle.Product;
 
 /**
- * A134544 A051731 * A002260.
+ * A134544 Triangle read by rows: T(n,k) = Sum_{d|n, d&gt;=k} k.
  * @author Georg Fischer
  */
 public class A134544 extends Product {

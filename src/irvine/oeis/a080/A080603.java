@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A060010.
+ * A080603 Primes such that deleting some digit yields a prime.
  * @author Sean A. Irvine
  */
 public class A080603 extends A000040 {

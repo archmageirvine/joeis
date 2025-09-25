@@ -8,7 +8,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A060010.
+ * A388148 allocated for Kelvin Voskuijl.
  * @author Sean A. Irvine
  */
 public class A388148 extends DecimalExpansionSequence {

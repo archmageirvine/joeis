@@ -4,7 +4,7 @@ package irvine.oeis.a116;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A116400 E.g.f. Bessel_I(2,2x)+Bessel_I(3,2x)+Bessel_I(4,2x).
+ * A116400 Expansion of e.g.f. Bessel_I(2,2x) + Bessel_I(3,2x) + Bessel_I(4,2x).
  * BesselI(2,2*x)+BesselI(3,2*x)+BesselI(4,2*x)
  * @author Georg Fischer
  */

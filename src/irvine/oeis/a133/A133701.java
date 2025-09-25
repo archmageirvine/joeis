@@ -5,7 +5,7 @@ import irvine.oeis.a051.A051731;
 import irvine.oeis.triangle.Product;
 
 /**
- * A133701 A133698 * A051731.
+ * A133701 Triangle read by rows: T(n, k) = A001227(n) if k divides n, T(n, k) = 0 otherwise.
  * @author Georg Fischer
  */
 public class A133701 extends Product {

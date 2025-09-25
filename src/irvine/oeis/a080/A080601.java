@@ -9,19 +9,18 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A060010.
+ * A080601 Number of positions of the Rubik's cube at a distance of n moves from the solved state, in the half-turn metric.
  * @author Sean A. Irvine
  */
 public class A080601 extends Sequence0 {
 
   private static final RubikCube.RubikMove[] SQUAREABLE = {RubikCube.RubikMove.F, RubikCube.RubikMove.U, RubikCube.RubikMove.D, RubikCube.RubikMove.L, RubikCube.RubikMove.R, RubikCube.RubikMove.B};
-  private int mN = -1;
   private final Set<RubikCube> mSeen = new HashSet<>();
   private Set<RubikCube> mStates = null;
 
   @Override
   public Z next() {
-    if (++mN == 0) {
+    if (mStates == null) {
       mStates = Collections.singleton(new RubikCube());
       mSeen.addAll(mStates);
       return Z.ONE;

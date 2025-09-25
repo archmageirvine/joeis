@@ -76,7 +76,7 @@ public class RubikCube {
     }
   }
 
-  private static final int[] IDENTITY = {
+  private static final byte[] IDENTITY = {
     0, 0, 0, 0, 0, 0, 0, 0,
     1, 1, 1, 1, 1, 1, 1, 1,
     2, 2, 2, 2, 2, 2, 2, 2,
@@ -85,7 +85,7 @@ public class RubikCube {
     5, 5, 5, 5, 5, 5, 5, 5
   };
 
-  private final int[] mState;
+  private final byte[] mState;
 
   /**
    * Construct a fresh cube in the identity state (i.e., complete).
@@ -111,14 +111,21 @@ public class RubikCube {
 
   /**
    * Apply the specified move to the cube.
-   * @param move move to apply
+   * @param t move to apply
    */
-  public void apply(final RubikMove move) {
-    final int[] orig = Arrays.copyOf(mState, mState.length);
-    final int[] t = move.mTransitions;
+  public void apply(final int[] t) {
+    final byte[] orig = Arrays.copyOf(mState, mState.length);
     for (int k = 0; k < t.length; k += 2) {
       mState[t[k + 1]] = orig[t[k]];
     }
+  }
+
+  /**
+   * Apply the specified move to the cube.
+   * @param move move to apply
+   */
+  public void apply(final RubikMove move) {
+    apply(move.mTransitions);
   }
 
   @Override

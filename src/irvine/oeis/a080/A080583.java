@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A060010.
+ * A080583 Number of positions that the 3 X 3 X 3 Rubik cube puzzle can be in after exactly n moves.
  * @author Sean A. Irvine
  */
 public class A080583 extends Sequence0 {

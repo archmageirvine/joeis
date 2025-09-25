@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
- * A131049 (1/4) * (A007318^3 - A007318^(-1)).
+ * A131049 Triangle read by rows: (1/4) * (A007318^3 - A007318^(-1)) as infinite lower triangular matrices.
  * @author Georg Fischer
  */
 public class A131049 extends PrependSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a079.A079000;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A080591.
+ * A080589 a(n) is smallest nonnegative integer which is consistent with sequence being monotonically increasing and satisfying a(a(n)) = 5n.
  * @author Sean A. Irvine
  */
 public class A080589 extends PrependSequence {

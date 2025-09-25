@@ -5,7 +5,7 @@ import irvine.oeis.TwoParameterFormSequence;
 import irvine.oeis.a006.A006939;
 
 /**
- * A080591.
+ * A368507 Powers of superprimorials.
  * @author Sean A. Irvine
  */
 public class A368507 extends TwoParameterFormSequence {

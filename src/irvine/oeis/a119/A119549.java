@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A119549 Binomial( Catalan(n), 4).
+ * A119549 a(n) = binomial(Catalan(n), 4).
  * @author Georg Fischer
  */
 public class A119549 extends AbstractSequence {

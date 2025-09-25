@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080573.
+ * A080577 Triangle in which n-th row lists all partitions of n, in graded reverse lexicographic ordering.
  * @author Sean A. Irvine
  */
 public class A080577 extends Sequence1 {

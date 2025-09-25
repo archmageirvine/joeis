@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A060010.
+ * A080602 Number of positions of the Rubik's cube at a distance of n moves from the solved state, in the quarter-turn metric.
  * @author Sean A. Irvine
  */
 public class A080602 extends Sequence0 {

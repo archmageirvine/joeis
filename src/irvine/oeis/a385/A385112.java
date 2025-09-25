@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000079;
 import irvine.oeis.a368.A368507;
 
 /**
- * A080591.
+ * A385112 Powers of superprimorials that are not powers of 2.
  * @author Sean A. Irvine
  */
 public class A385112 extends SetDifferenceSequence {

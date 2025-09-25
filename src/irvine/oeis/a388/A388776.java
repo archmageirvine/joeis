@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388776 Decimal expansion of (1/2000) * exp(-Pi) * (5+5^(1/2))^5*5^(1/2).
+ * A388776 Decimal expansion of (11+5 * sqrt(5)) * exp(-Pi).
  * @author Sean A. Irvine
  */
 public class A388776 extends DecimalExpansionSequence {

@@ -28,8 +28,12 @@ public final class Predicates {
   public static final Predicate POWER_OF_TWO = new PowerOfTwo(); // =A000079
   /** Test if a number is triangular. */
   public static final Predicate TRIANGULAR = new Triangular(); // =A000217
+  /** Test if a number is squareful. */
+  public static final Predicate SQUAREFUL = new Squareful();
   /** Test if a number is square free. */
   public static final Predicate SQUARE_FREE = new SquareFree(); // =A005117
+  /** Test if a number is cubeful. */
+  public static final Predicate CUBEFUL = new Cubeful(); // =A036966
   /** Test if a number is cube free. */
   public static final Predicate CUBE_FREE = new CubeFree(); // =A004709
   /** Test if a number is a Fibonacci number. */

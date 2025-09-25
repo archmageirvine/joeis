@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A080570 Number of 1's in partition of n-th Ulam number into sum of two distinct Ulam numbers.
+ * A080598 For numbers k such that A080570(k) and 2*A080571(k) are distinct Ulam numbers, sequence gives A002858(k).
  * @author Sean A. Irvine
  */
 public class A080598 extends Sequence1 {

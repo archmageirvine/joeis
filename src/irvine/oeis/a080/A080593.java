@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060010.
+ * A080593 Consider the standard game of Nim with 3 heaps and make a list of the losing positions (x,y,z) with x &lt;= y &lt;= z in reverse lexicographic order; sequence gives x values.
  * @author Sean A. Irvine
  */
 public class A080593 extends Sequence1 {

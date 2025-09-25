@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080573.
+ * A080575 Triangle of multinomial coefficients, read by rows (version 2).
  * @author Sean A. Irvine
  */
 public class A080575 extends Sequence1 {

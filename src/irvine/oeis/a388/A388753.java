@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388753 Decimal expansion of 2^(1/4) * (2-sqrt(2))^(1/2).
+ * A388753 Decimal expansion of sqrt(2 * (-1+sqrt(2))).
  * @author Sean A. Irvine
  */
 public class A388753 extends DecimalExpansionSequence {

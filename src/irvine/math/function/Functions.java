@@ -171,6 +171,8 @@ public final class Functions {
   public static final Function1 GLOBAL_CATALAN_RANK = new GlobalCatalanRank(); // =A057120
   /** Number of primes contained in the decimal representation of a number. */
   public static final Function1 PRIME_MEMORY = new PrimeMemory(); // =A039997
+  /** Number of primes contained in the decimal representation of a number. */
+  public static final Function1 RUNS_OF_1 = new RunsOfOne(); // =A069010
 
   // Two argument functions with default first parameter
 

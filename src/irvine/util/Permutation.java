@@ -204,6 +204,21 @@ public class Permutation {
   }
 
   /**
+   * Count the number of fixed points in the permutation.
+   * @param p permutation
+   * @return number of fixed points
+   */
+  public static int fixedPoints(final int[] p) {
+    int cnt = 0;
+    for (int k = 0; k < p.length; ++k) {
+      if (p[k] == k) {
+        ++cnt;
+      }
+    }
+    return cnt;
+  }
+
+  /**
    * Example use.
    * @param args ignored
    */

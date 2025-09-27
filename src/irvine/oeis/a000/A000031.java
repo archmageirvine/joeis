@@ -4,12 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A000031 Number of n-bead necklaces with 2 colors when turning over is not allowed; also number of output sequences from a simple n-stage cycling shift register; also number of binary irreducible polynomials whose degree divides n.
  * @author Sean A. Irvine
  */
-public class A000031 extends AbstractSequence {
+public class A000031 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -28,14 +29,32 @@ public class A000031 extends AbstractSequence {
 
   @Override
   public Z next() {
-    if (++mN < 4) {
-      return Z.valueOf(mN + 1);
+    return a(++mN);
+  }
+
+
+  @Override
+  public Z a(final Z n) {
+    if (n.compareTo(Z.FOUR) < 0) {
+      return n.add(1);
     }
     Z sum = Z.ZERO;
-    for (final Z d : Jaguar.factor(mN).divisors()) {
-      sum = sum.add(Functions.PHI.z(d).shiftLeft(mN / d.longValue()));
+    for (final Z d : Jaguar.factor(n).divisors()) {
+      sum = sum.add(Functions.PHI.z(d).shiftLeft(n.longValue() / d.longValue()));
     }
-    return sum.divide(mN);
+    return sum.divide(n);
+  }
+
+  @Override
+  public Z a(final int n) {
+    if (n < 4) {
+      return Z.valueOf(n + 1);
+    }
+    Z sum = Z.ZERO;
+    for (final Z d : Jaguar.factor(n).divisors()) {
+      sum = sum.add(Functions.PHI.z(d).shiftLeft(n / d.longValue()));
+    }
+    return sum.divide(n);
   }
 
 }

@@ -1,5 +1,6 @@
 package irvine.oeis.a080;
 
+import irvine.math.z.Z;
 import irvine.oeis.a079.A079000;
 
 /**
@@ -11,5 +12,10 @@ public class A080646 extends A079000 {
   /** Construct the sequence. */
   public A080646() {
     super(1, 3, 1, n -> n.mod(4) == 0);
+  }
+
+  @Override
+  protected Z special(final int n) {
+    return n == 2 ? Z.FOUR : null;
   }
 }

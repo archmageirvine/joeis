@@ -5,7 +5,6 @@ import java.util.function.Function;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.a080.A080646;
 
 /**
  * A079000 a(n) is taken to be the smallest positive integer greater than a(n-1) which is consistent with the condition "n is a member of the sequence if and only if a(n) is odd".
@@ -42,6 +41,10 @@ public class A079000 extends AbstractSequence {
     mMembers = new TreeSet<>();
   }
 
+  protected Z special(final int n) {
+    return null;
+  }
+
   @Override
   public Z next() {
     final Z nz = Z.valueOf(++mN);
@@ -50,8 +53,9 @@ public class A079000 extends AbstractSequence {
       mMembers.add(mC);
       return mC;
     }
-    if (this instanceof A080646 && mMembers.size() == 1) {
-      mC = mC.add(1);
+    final Z special = special(mN);
+    if (special != null) {
+      mC = special;
       mMembers.add(mC);
       return mC;
     }

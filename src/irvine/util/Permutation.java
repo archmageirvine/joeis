@@ -219,6 +219,42 @@ public class Permutation {
   }
 
   /**
+   * Count the number of cycles in the permutation.
+   * @param p permutation
+   * @return number of cycles
+   */
+  public static int countCycles(final int[] p) {
+    final boolean[] seen = new boolean[p.length];
+    int count = 0;
+    for (int k = 0; k < p.length; ++k) {
+      if (!seen[k]) {
+        ++count;
+        int j = k;
+        while (!seen[j]) {
+          seen[j] = true;
+          j = p[j];
+        }
+      }
+    }
+    return count;
+  }
+
+  /**
+   * Count the number of runs in the permutation.
+   * @param p permutation
+   * @return number of runs
+   */
+  public static int countRuns(final int[] p) {
+    int runs = 1;
+    for (int k = 2; k < p.length; ++k) {
+      if (((p[k] > p[k - 1]) && p[k - 1] < p[k - 2]) || (p[k] < p[k - 1] && p[k - 1] > p[k - 2])) {
+        ++runs;
+      }
+    }
+    return runs;
+  }
+
+  /**
    * Example use.
    * @param args ignored
    */

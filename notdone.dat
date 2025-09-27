@@ -2699,3 +2699,5 @@ A080321 a(n) = A080301(A080318(n)).
 A080433 a(1) = 2; for n>1, a(n) = smallest multiple of n beginning with the least significant digit of a(n-1) > n and not divisible by 10 if n is not of the type 10k; otherwise a(n) ends in 0 and a(n+1) begins with the first nonzero digit from the right(LSD) of a(n).
 A080632 Consider 3 X 3 X 3 Rubik cube, but consider only positions of edges; sequence gives number of positions that are exactly n moves from the start up to equivalence under the full group of order 48 of the cube.
 A080638 Number of positions that the 3 X 3 X 3 Rubik cube puzzle can be in after exactly n moves, up to equivalence under the full group of order 48 of the cube and with a half-turn is considered to be 1 move.
+A080690 Number of acyclic orientations of n X n grid graph.
+A080691 Number of spanning forests of the n X n grid graph.

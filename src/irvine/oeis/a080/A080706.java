@@ -7,12 +7,12 @@ import irvine.oeis.Sequence1;
  * A080662.
  * @author Sean A. Irvine
  */
-public class A080689 extends Sequence1 {
+public class A080706 extends Sequence1 {
 
   private long mN = 1;
 
   private boolean is(final long n) {
-    Z m = Z.FIVE.pow(n);
+    Z m = Z.THREE.pow(n);
     while (!m.isOne()) {
       if (Z.SEVEN.equals(m)) {
         return true;

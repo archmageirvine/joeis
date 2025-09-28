@@ -1,43 +1,24 @@
 package irvine.oeis.a001;
 
-import java.util.TreeSet;
-
-import irvine.math.z.Z;
-import irvine.oeis.AbstractSequence;
-import irvine.oeis.a000.A000040;
-import irvine.oeis.memory.MemorySequence;
+import irvine.math.function.Functions;
+import irvine.oeis.TwoParameterFormSequence;
 
 /**
  * A001358 Semiprimes (or biprimes): products of two primes.
  * @author Sean A. Irvine
  */
-public class A001358 extends AbstractSequence {
+public class A001358 extends TwoParameterFormSequence {
 
   /**
    * Constructor with offset.
    * @param offset first index
    */
   protected A001358(final int offset) {
-    super(offset);
+    super(offset, 1, 1, (a, b) -> a <= b ? Functions.PRIME.z(a).multiply(Functions.PRIME.z(b)) : null);
   }
 
   /** Construct the sequence. */
   public A001358() {
-    super(1);
-  }
-
-  private final MemorySequence mPrimes = MemorySequence.cachedSequence(new A000040());
-  private final TreeSet<Z> mA = new TreeSet<>();
-  private Z mP = mPrimes.next();
-
-  @Override
-  public Z next() {
-    while (mA.isEmpty() || mA.first().compareTo(mP.multiply2()) >= 0) {
-      for (int k = 0; k < mPrimes.size(); ++k) {
-        mA.add(mP.multiply(mPrimes.a(k)));
-      }
-      mP = mPrimes.next();
-    }
-    return mA.pollFirst();
+    this(1);
   }
 }

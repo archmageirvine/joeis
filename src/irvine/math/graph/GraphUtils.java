@@ -1746,5 +1746,13 @@ public final class GraphUtils {
     return false;
   }
 
+  /**
+   * Test is the (connected) graph is asteroidal triple free.
+   * @param graph graph to test
+   * @return true iff the graph is asteroidal triple free
+   */
+  public static boolean isAsteroidalTripleFree(final Graph graph) {
+    return new AsteroidalTripleFree(graph).is();
+  }
 }
 

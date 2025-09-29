@@ -4,7 +4,7 @@ package irvine.oeis.a090;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A090666 Number of repetitions (defined as the number of appearances minus one) of L quantum number for a given value of N=2*nb+tau=0,1,2,... principal quantum number for the 5 dimensional harmonic oscillator (connected to the solution of Bohr equation in 5 dimensional). For each tau, nu=0,1,..,[tau/3] and K=tau-2*nu. Finally L=K,K+1,K+2,...,2*K-2,2*K (or alternatively from K to 2*K with the exception of 2*K-1).
+ * A090666 For each possible representation of n as n = 2*nb + 3*nu + K with nb, nu, K nonnegative integers, add numbers K, K+1, ..., 2*K except for 2*K-1 into a multiset. a(n) is the size of the resulting multiset minus the number of distinct numbers in it.
  * @author Georg Fischer
  */
 public class A090666 extends GeneratingFunctionSequence {

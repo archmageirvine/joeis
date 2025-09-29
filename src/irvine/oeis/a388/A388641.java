@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388641 Decimal expansion of (1 / (2^57*5^5)) * exp(Pi) * 5^(1/4) * Pi * Gamma(4/5)^34*2^(3/5) * (5-5^(1/2))^14 * (5+5^(1/2))^3 * (5^(1/2)-1)^17 * (5^(1/2)+1)^17 / Gamma(3/4)^4 / Gamma(7/10)^17 / Gamma(9/10)^17.
+ * A388641 Decimal expansion of (Pi * exp(Pi)) / (2 * sqrt(110+50 * sqrt(5)) * Gamma(3/4)^4).
  * @author Sean A. Irvine
  */
 public class A388641 extends DecimalExpansionSequence {

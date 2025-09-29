@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A181714 Solutions of A181712(n)=1.
+ * A181714 Numbers k such that A181712(k) = 1.
  * @author Georg Fischer
  */
 public class A181714 extends FilterPositionSequence {

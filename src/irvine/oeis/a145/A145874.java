@@ -4,7 +4,7 @@ package irvine.oeis.a145;
 import irvine.oeis.a147.A147681;
 
 /**
- * A145874 Number of permutations of the numbers 1, 2, ..., n such that for all 1 &lt;= k &lt;= n the average of the first k numbers is at least the average of all n numbers.
+ * A145874 Duplicate of A147681.
  * @author Georg Fischer
  */
 public class A145874 extends A147681 {

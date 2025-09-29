@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388124 Decimal expansion of (1 / Pi^(9/4)) * Gamma(3/4)^9.
+ * A388124 Decimal expansion of Gamma(3/4)^9 / Pi^(9/4).
  * @author Sean A. Irvine
  */
 public class A388124 extends DecimalExpansionSequence {

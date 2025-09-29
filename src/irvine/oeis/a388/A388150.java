@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388150 Decimal expansion of (1 / Pi^(7/2)) * Gamma(3/4)^14.
+ * A388150 Decimal expansion of Gamma(3/4)^14 / Pi^(7/2).
  * @author Sean A. Irvine
  */
 public class A388150 extends DecimalExpansionSequence {

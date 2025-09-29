@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A080662.
+ * A080694 Let u(1)=u(2)=1 and u(k)=abs(u(k-1)-u(k-2)-n); sequence gives length of period of u(k).
  * @author Sean A. Irvine
  */
 public class A080694 extends Sequence1 {

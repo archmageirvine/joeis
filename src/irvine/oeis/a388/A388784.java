@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388784 Decimal expansion of (1/1024) * exp(2 * Pi).
+ * A388784 Decimal expansion of exp(2 * Pi) / 1024.
  * @author Sean A. Irvine
  */
 public class A388784 extends DecimalExpansionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a049.A049419;
 
 /**
- * A388970 allocated for Amiram Eldar.
+ * A388970 Lexicographically earliest sequence of strictly increasing numbers such that the number of exponential divisors of its partial products is strictly increasing.
  * @author Sean A. Irvine
  */
 public class A388970 extends Sequence1 {

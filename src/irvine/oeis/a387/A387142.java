@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A387142 allocated for Felix Huber.
+ * A387142 a(n) is the smallest integer k &gt;= 2 such that the digit string of prime(n) is contained as a substring in the digit string of prime(n)^k.
  * @author Sean A. Irvine
  */
 public class A387142 extends A000040 {

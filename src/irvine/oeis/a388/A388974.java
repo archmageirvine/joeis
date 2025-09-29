@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A388974 allocated for Amiram Eldar.
+ * A388974 a(n) = log_2(A388973(n)).
  * @author Sean A. Irvine
  */
 public class A388974 extends SimpleTransformSequence {

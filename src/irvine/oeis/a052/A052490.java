@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A052490 Numbers n with only one nonzero solution to "numbers that are n times sum of their digits".
+ * A052490 Numbers k such that there is exactly one number which is k times the sum of its digits.
  * @author Sean A. Irvine
  */
 public class A052490 extends Sequence1 {

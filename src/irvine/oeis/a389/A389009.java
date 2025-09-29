@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A080688.
+ * A389009 allocated for Dwight Boddorf.
  * @author Sean A. Irvine
  */
 public class A389009 extends Sequence1 {

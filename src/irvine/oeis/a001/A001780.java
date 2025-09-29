@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A001780 Expansion of 1/((1+x)(1-x)^9).
+ * A001780 Expansion of 1/((1+x)*(1-x)^9).
  * @author Sean A. Irvine
  */
 public class A001780 extends Sequence0 {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001359;
 
 /**
- * A177139 Numbers n such that (3*n-4, 3*n-2) is a twin prime pair.
+ * A177139 Numbers k such that (3*k-4, 3*k-2) is a twin prime pair.
  * @author Georg Fischer
  */
 public class A177139 extends Sequence1 {

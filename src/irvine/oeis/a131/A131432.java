@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.a000.A000012;
 
 /**
- * A131432 Triangle read by rows: (A000012 * A131431) + (A131431 * A000012) - A000012 as infinite lower triangular matrices.
+ * A131432 Triangle read by rows: T(n,k) = 3*(n + k) + 1, 0 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A131432 extends A131416 {

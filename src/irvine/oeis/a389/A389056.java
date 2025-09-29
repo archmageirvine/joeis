@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A389056 Decimal expansion of (1/24) * exp(-Pi/24) * 2^(1/4).
+ * A389056 Decimal expansion of exp(-Pi/24) / (12*2^(3/4)).
  * @author Sean A. Irvine
  */
 public class A389056 extends DecimalExpansionSequence {

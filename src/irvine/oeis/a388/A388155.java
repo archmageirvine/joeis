@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388155 Decimal expansion of (1 / Pi^(19/4)) * Gamma(3/4)^19.
+ * A388155 Decimal expansion of Gamma(3/4)^19 / Pi^(19/4).
  * @author Sean A. Irvine
  */
 public class A388155 extends DecimalExpansionSequence {

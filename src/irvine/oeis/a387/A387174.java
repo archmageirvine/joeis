@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387174 allocated for Tamas Sandor Nagy.
+ * A387174 a(n) is a prime that is the average of two distinct primes p and q, neither of which has been used before as such. However, the average can be any prime, including previous p's or q's.
  * @author Sean A. Irvine
  */
 public class A387174 extends Sequence1 {

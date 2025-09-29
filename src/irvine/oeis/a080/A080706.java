@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080662.
+ * A080706 Powers of 3 that reach ...,7,8,4,2,1 under the mapping: if n is even divide by 2 else add 1.
  * @author Sean A. Irvine
  */
 public class A080706 extends Sequence1 {

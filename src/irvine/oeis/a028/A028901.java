@@ -5,7 +5,7 @@ package irvine.oeis.a028;
 import irvine.oeis.a037.A037454;
 
 /**
- * A028901 Map n = Sum c_i 10^i to a(n) = Sum c_i 6^i.
+ * A028901 Map n = Sum c_i*10^i to a(n) = Sum c_i*6^i.
  * @author Georg Fischer
  */
 public class A028901 extends A037454 {

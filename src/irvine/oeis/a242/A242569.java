@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A242569 n!-2n.
+ * A242569 a(n) = n! - 2*n.
  * @author Georg Fischer
  */
 public class A242569 extends HolonomicRecurrence {

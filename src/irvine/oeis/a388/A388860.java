@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A388860 allocated for Ahmet Caglar Saygili.
+ * A388860 Numbers k such that the number of runs of 1's in k is the same as the number of runs on 1's in k^2.
  * @author Sean A. Irvine
  */
 public class A388860 extends Sequence1 {

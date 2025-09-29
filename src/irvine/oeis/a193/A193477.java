@@ -8,7 +8,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a056.A056040;
 
 /**
- * A193477 Denominator(n!/floor(n/2)!^4).
+ * A193477 a(n) = denominator(n!/floor(n/2)!^4).
  * @author Georg Fischer
  */
 public class A193477 extends LambdaSequence {

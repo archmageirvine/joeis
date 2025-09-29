@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a081.A081053;
 
 /**
- * A080633
+ * A080713 Numbers not of the form p + q^2.
  * @author Sean A. Irvine
  */
 public class A080713 extends ComplementSequence {

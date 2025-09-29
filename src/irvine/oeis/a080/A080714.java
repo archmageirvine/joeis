@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080688.
+ * A080714 a(n) is taken to be the (n-th)-smallest positive integer greater than a(n-1) that is consistent with the condition "n is a member of the sequence if and only if a(n) is odd.".
  * @author Sean A. Irvine
  */
 public class A080714 extends Sequence1 {

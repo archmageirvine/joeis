@@ -9,7 +9,7 @@ import irvine.oeis.a097.A097806;
 import irvine.oeis.triangle.Product;
 
 /**
- * A133807 A007318 * (A097806 + A133566 - I), where I is the identity matrix.
+ * A133807 Triangle read by rows: A007318 * (A097806 + A133566 - I) as infinite lower triangular matrices, where I is the identity matrix.
  * @author Georg Fischer
  */
 public class A133807 extends Product {

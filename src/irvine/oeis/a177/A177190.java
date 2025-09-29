@@ -4,7 +4,7 @@ package irvine.oeis.a177;
 import irvine.oeis.a050.A050528;
 
 /**
- * A177190 Primes of the form 5*10^n - 3.
+ * A177190 Primes of the form 5*10^k - 3.
  * @author Georg Fischer
  */
 public class A177190 extends A050528 {

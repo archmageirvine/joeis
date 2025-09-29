@@ -5,7 +5,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.util.Permutation;
 
 /**
- * A388139 allocated for Manolopoulos Panagiotis.
+ * A388139 Total number of fixed points in all heapable permutations of length n.
  * @author Sean A. Irvine
  */
 public class A388139 extends AbstractSequence {

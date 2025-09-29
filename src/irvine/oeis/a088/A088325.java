@@ -6,7 +6,7 @@ import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.transform.RationalProductTransform;
 
 /**
- * A088325 Piet Hut&apos;s &quot;coat-hanger&quot; sequence: unlabeled forests of rooted trees with n edges, where there can be any number of components, the outdegree of each node is &lt;= 2 and the symmetric group acts on the components.
+ * A088325 Piet Hut's "coat-hanger" sequence: unlabeled forests of rooted trees with n edges, where there can be any number of components, the outdegree of each node is &lt;= 2 and the symmetric group acts on the components.
  * @author Georg Fischer
  */
 public class A088325 extends RationalProductTransform {

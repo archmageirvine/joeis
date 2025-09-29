@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080636 Number of real invertible (0,1) n X n matrices with (-1,0,1) inverses.
+ * A080636 Number of symmetric real invertible (0,1) n X n matrices with (-1,0,1) inverses.
  * @author Sean A. Irvine
  */
 public class A080636 extends Sequence1 {

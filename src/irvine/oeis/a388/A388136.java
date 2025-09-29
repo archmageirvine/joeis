@@ -3,7 +3,7 @@ package irvine.oeis.a388;
 import irvine.util.Permutation;
 
 /**
- * A336282 Number of heapable permutations of length n.
+ * A388136 Total number of cycles in all heapable permutations of length n.
  * @author Sean A. Irvine
  */
 public class A388136 extends A388139 {

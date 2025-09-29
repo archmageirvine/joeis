@@ -8,7 +8,7 @@ import irvine.oeis.RationalLambdaSequence;
 import irvine.oeis.a002.A002487;
 
 /**
- * A355075 a(n) is the numerator of Sum_{k = 0..n} fusc(k)/fusc(k+1) (where fusc is Stern&apos;s diatomic series A002487).
+ * A355075 a(n) is the numerator of Sum_{k = 0..n} fusc(k)/fusc(k+1) (where fusc is Stern's diatomic series A002487).
  * @author Georg Fischer
  */
 public class A355075 extends RationalLambdaSequence {

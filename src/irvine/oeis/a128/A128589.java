@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.a130.A130162;
 
 /**
- * A128589 A051731 * A127647.
+ * A128589 Triangle read by rows: T(n,k) = Fibonacci(k) * A051731(n,k).
  * @author Georg Fischer
  */
 public class A128589 extends A130162 {

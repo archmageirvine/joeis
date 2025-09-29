@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a049.A049419;
 
 /**
- * A388971 allocated for Amiram Eldar.
+ * A388971 Positive numbers whose factorial has more exponential divisors than all smaller factorials.
  * @author Sean A. Irvine
  */
 public class A388971 extends Sequence1 {

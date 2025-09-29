@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001358;
 
 /**
- * A080688.
+ * A080718 1, together with numbers n that are the product of two primes p and q such that the multiset of the digits of n coincides with the multiset of the digits of p and q.
  * @author Sean A. Irvine
  */
 public class A080718 extends Sequence1 {

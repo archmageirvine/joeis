@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080662.
+ * A080693 Numbers of the form p^2*q + r*s where p,q,r,s are (not necessarily distinct) primes.
  * @author Sean A. Irvine
  */
 public class A080693 extends Sequence1 {

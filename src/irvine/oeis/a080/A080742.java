@@ -1,5 +1,6 @@
 package irvine.oeis.a080;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -8,16 +9,9 @@ import irvine.math.z.Z;
  */
 public class A080742 extends A080738 {
 
-  private Z mA = Z.TWO;
-
   @Override
   public Z next() {
-    while (true) {
-      final Z t = mA;
-      mA = super.next();
-      if (mA.compareTo(t) < 0) {
-        return t;
-      }
-    }
+    step();
+    return Functions.MAX.z(mList);
   }
 }

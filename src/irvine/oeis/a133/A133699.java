@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001227;
 import irvine.oeis.a130.A130162;
 
 /**
- * A133699 A051731 * A133698.
+ * A133699 Triangle read by rows: T(n, k) = A001227(k) if k divides n, T(n, k) = 0 otherwise.
  * @author Georg Fischer
  */
 public class A133699 extends A130162 {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a028.A028334;
 
 /**
- * A388737 allocated for Ruud H.G. van Tol.
+ * A388737 a(1) = 0, a(n) = abs(x) + abs(y), with x and y the next coordinates by using A028334 as a rectangular spiral.
  * @author Sean A. Irvine
  */
 public class A388737 extends Sequence1 {

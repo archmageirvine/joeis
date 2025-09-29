@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080688.
+ * A080715 Numbers k such that for any positive integers (a, b), if a * b = k then a + b is prime.
  * @author Sean A. Irvine
  */
 public class A080715 extends Sequence1 {

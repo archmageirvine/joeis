@@ -11,21 +11,17 @@ import irvine.oeis.Sequence0;
  */
 public class A080738 extends Sequence0 {
 
-  private int mN = 0;
-  private int mM = -1;
-  private final ArrayList<Z> mList = new ArrayList<>();
+  private int mN = -1;
+  private int mM = 0;
+  protected final ArrayList<Z> mList = new ArrayList<>();
 
-  {
-    mList.add(Z.ONE);
-    mList.add(Z.TWO);
-  }
-
-  @Override
-  public Z next() {
-    if (++mM >= mList.size()) {
-      ++mN;
-      mList.clear();
-      mM = 0;
+  protected int step() {
+    mList.clear();
+    mM = 0;
+    if (++mN == 0) {
+      mList.add(Z.ONE);
+      mList.add(Z.TWO);
+    } else {
       final A080737 seq = new A080737();
       final Z n = Z.valueOf(2L * mN);
       final Z limit = Z.ONE.shiftLeft(mN + 2);
@@ -34,6 +30,14 @@ public class A080738 extends Sequence0 {
           mList.add(k);
         }
       }
+    }
+    return mList.size();
+  }
+
+  @Override
+  public Z next() {
+    if (++mM >= mList.size()) {
+      step();
     }
     return mList.get(mM);
   }

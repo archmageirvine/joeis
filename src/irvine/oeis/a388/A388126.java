@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388126 Decimal expansion of (1 / Pi^(11/4)) * Gamma(3/4)^11.
+ * A388126 Decimal expansion of Gamma(3/4)^11 / Pi^(11/4).
  * @author Sean A. Irvine
  */
 public class A388126 extends DecimalExpansionSequence {

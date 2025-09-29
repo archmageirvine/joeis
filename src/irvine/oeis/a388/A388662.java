@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388662 Decimal expansion of (1/2) * exp(Pi / 24) * sqrt(Pi) * 2^(5/8) / Gamma(3/4)^2.
+ * A388662 Decimal expansion of (sqrt(Pi) * exp(Pi / 24)) / (2^(3/8) * Gamma(3/4)^2).
  * @author Sean A. Irvine
  */
 public class A388662 extends DecimalExpansionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a156;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A156125 a(n)=10^n*C(2n,n)/C(n+3,3).
+ * A156125 a(n) = 10^n*C(2n,n)/C(n+3,3).
  * @author Georg Fischer
  */
 public class A156125 extends HolonomicRecurrence {

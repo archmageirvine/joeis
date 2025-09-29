@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080662.
+ * A080676 a(1) = 1; for n&gt;1, a(n) is the smallest number &gt; a(n-1) such that the first n terms of the sequence contain a total of a(n) digits.
  * @author Sean A. Irvine
  */
 public class A080676 extends Sequence1 {

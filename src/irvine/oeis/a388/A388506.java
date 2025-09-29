@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388506 Decimal expansion of -(1/16) * exp(Pi) * sqrt(2) * (sqrt(2)-2).
+ * A388506 Decimal expansion of ((-1+sqrt(2)) * exp(Pi)) / 8.
  * @author Sean A. Irvine
  */
 public class A388506 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.a000.A000005;
 
 /**
- * A130210 Triangle read by rows: matrix product A051731 * A130209.
+ * A130210 Triangle read by rows: T(n, k) = A000005(k) if k divides n, T(n, k) = 0 otherwise.
  * @author Georg Fischer
  */
 public class A130210 extends A130162 {

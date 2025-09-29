@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080662.
+ * A080695 Concatenation of the prime power factors (with maximal exponent) of n; a(1) = 1 by convention.
  * @author Sean A. Irvine
  */
 public class A080695 extends Sequence1 {

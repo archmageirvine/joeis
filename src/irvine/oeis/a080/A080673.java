@@ -8,7 +8,7 @@ import irvine.oeis.a025.A025429;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A080662.
+ * A080673 Largest number with exactly n representations as sum of five positive squares (or 0 if no number with exactly n representations exists).
  * @author Sean A. Irvine
  */
 public class A080673 extends Sequence0 implements Conjectural {

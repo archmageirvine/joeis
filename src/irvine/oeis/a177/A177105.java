@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A177105 Primes of the form 2*n^3-1.
+ * A177105 Primes of the form 2*k^3-1.
  * @author Georg Fischer
  */
 public class A177105 extends PrimeSubsequence {

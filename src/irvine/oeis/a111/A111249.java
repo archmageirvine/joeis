@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A111249 Numbers n such that 7*n + 8 is prime.
+ * A111249 Numbers k such that 7*k + 8 is prime.
  * @author Georg Fischer
  */
 public class A111249 extends PrimePositionSubsequence {

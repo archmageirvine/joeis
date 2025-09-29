@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A128265 a(n) = Sum_{m=1..n} lcm(s(n,m),S(n,m)), where s(n,m) is an unsigned Stirling number of the first kind and S(n,m) is a Stirling number of the second kind. (a(n) = sum of terms in n-th row of triangle A128264.)
+ * A128265 a(n) = Sum_{m=1..n} lcm(s(n,m),S(n,m)), where s(n,m) is an unsigned Stirling number of the first kind and S(n,m) is a Stirling number of the second kind. (a(n) = sum of terms in n-th row of triangle A128264.).
  * @author Georg Fischer
  */
 public class A128265 extends LambdaSequence {

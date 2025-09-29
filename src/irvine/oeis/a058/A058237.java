@@ -7,7 +7,7 @@ import irvine.math.polynomial.IrreduciblePolynomials;
 import irvine.math.z.Z;
 
 /**
- * A058237 Numbers n such that x^n + x^4 + 2 is irreducible over GF(3).
+ * A058237 Numbers k such that x^k + x^4 + 2 is irreducible over GF(3).
  * @author Sean A. Irvine
  */
 public class A058237 extends A058059 {

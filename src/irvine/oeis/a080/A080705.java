@@ -5,7 +5,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A080662.
+ * A080705 Numbers n such that A080704(n+1) - A080704(n) = 1.
  * @author Sean A. Irvine
  */
 public class A080705 extends FilterPositionSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A388788 allocated for Natalia L. Skirrow.
+ * A388788 Array read by downward antidiagonals: T(n,k) is the number of partitions of [n], n &gt;= 1, k &gt;= 1, into cycles labeled with positive integers, such that the labels sum to k.
  * @author Sean A. Irvine
  */
 public class A388788 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A143060 A007318 * [1, 15, 65, 90, 31, 1, 0, 0, 0, ...].
+ * A143060 a(n) = (n^5 + 145*n^4 + 905*n^3 + 155*n^2 + 594*n + 120)/120.
  * @author Sean A. Irvine
  */
 public class A143060 extends LinearRecurrence {

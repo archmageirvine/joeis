@@ -6,7 +6,7 @@ package irvine.oeis.a131;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A131051 Row sums of triangle A133805.
+ * A131051 a(n) = 5*2^(n-2) - 2 for n &gt; 1, with a(1) = 1.
  * @author Georg Fischer
  */
 public class A131051 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388499 Decimal expansion of (1/2) * 2^(15/16) / (2-sqrt(2))^(1/4).
+ * A388499 Decimal expansion of (2+sqrt(2))^(1/4) / 2^(5/16).
  * @author Sean A. Irvine
  */
 public class A388499 extends DecimalExpansionSequence {

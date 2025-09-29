@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.TwoParameterFormSequence;
 
 /**
- * A061862.
+ * A081053 Sum of a prime and the square of a prime.
  * @author Sean A. Irvine
  */
 public class A081053 extends TwoParameterFormSequence {

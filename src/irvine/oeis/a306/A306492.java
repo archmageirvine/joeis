@@ -13,6 +13,6 @@ public class A306492 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A306492() {
-    super(1, 1, k -> Predicates.PRIME.is(Functions.SIGMA1.z(k).subtract(3 * k)));
+    super(1, 1, k -> Predicates.PRIME.is(Functions.SIGMA1.z(k).subtract(3L * k)));
   }
 }

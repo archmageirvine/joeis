@@ -13,6 +13,6 @@ public class A241755 extends RationalLambdaSequence {
 
   /** Construct the sequence. */
   public A241755() {
-    super(0, NUM, n -> new Q(Binomial.binomial(2 * n, n).square()).multiply(Binomial.binomial(new Q(2 * n - 1, 2), 2 * n)).multiply(new Q(-1, 4).pow(n)));
+    super(0, NUM, n -> new Q(Binomial.binomial(2L * n, n).square()).multiply(Binomial.binomial(new Q(2L * n - 1, 2), 2 * n)).multiply(new Q(-1, 4).pow(n)));
   }
 }

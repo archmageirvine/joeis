@@ -15,6 +15,6 @@ public class A091768 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A091768() {
-    super(0, (self, n) -> Functions.CATALAN.z(n).add(Rationals.SINGLETON.sum(0, n - 1, k -> new Q(self.a(k)).multiply(Binomial.binomial(2 * n - k - 1, n - k - 1)).multiply(k + 2).divide(n + 1)).num()), "1");
+    super(0, (self, n) -> Functions.CATALAN.z(n).add(Rationals.SINGLETON.sum(0, n - 1, k -> new Q(self.a(k)).multiply(Binomial.binomial(2L * n - k - 1, n - k - 1)).multiply(k + 2).divide(n + 1)).num()), "1");
   }
 }

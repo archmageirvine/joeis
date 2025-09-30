@@ -13,6 +13,6 @@ public class A383776 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A383776() {
-    super(0, n -> new Q(11 * n + 3).add(new Q(6, n + 2)).multiply(Functions.CATALAN.z(n)).num());
+    super(0, n -> new Q(11L * n + 3).add(new Q(6, n + 2)).multiply(Functions.CATALAN.z(n)).num());
   }
 }

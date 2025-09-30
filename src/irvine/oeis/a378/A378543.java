@@ -14,6 +14,6 @@ public class A378543 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A378543() {
-    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> Z.valueOf((Functions.BIG_OMEGA.z(n / d).testBit(0) ? 1 : 0) * d)));
+    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> Z.valueOf((long) (Functions.BIG_OMEGA.z(n / d).testBit(0) ? 1 : 0) * d)));
   }
 }

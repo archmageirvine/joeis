@@ -16,7 +16,7 @@ public class A379482 extends MultiplicativeSequence {
   public A379482() {
     super(1, (p, e) -> {
       final Z q = Functions.NEXT_PRIME.z(p);
-      return q.pow(2 * e + 1).subtract(1).divide(q.subtract(1));
+      return q.pow(2L * e + 1).subtract(1).divide(q.subtract(1));
     });
   }
 }

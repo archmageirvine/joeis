@@ -13,6 +13,6 @@ public class A083215 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A083215() {
-    super(1, n -> Integers.SINGLETON.sum(1, n, i -> Functions.PRIME.z(i).multiply(2 * i - 1)).add(1));
+    super(1, n -> Integers.SINGLETON.sum(1, n, i -> Functions.PRIME.z(i).multiply(2L * i - 1)).add(1));
   }
 }

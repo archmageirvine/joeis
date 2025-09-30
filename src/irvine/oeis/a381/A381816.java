@@ -12,6 +12,6 @@ public class A381816 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A381816() {
-    super(1, n -> Z.valueOf(n).multiply(4 * n).subtract(Z.NEG_ONE.pow(n)).subtract(2 * n + 7).divide(4));
+    super(1, n -> Z.valueOf(n).multiply(4L * n).subtract(Z.NEG_ONE.pow(n)).subtract(2L * n + 7).divide(4));
   }
 }

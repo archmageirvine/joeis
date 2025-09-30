@@ -24,7 +24,7 @@ public class A262690 extends Sequence0 {
     int k = Functions.SQRT.i(mN);
     while (true) {
       if (mA.a(mN - k * k).equals(t)) {
-        return Z.valueOf(k * k);
+        return Z.valueOf((long) k * k);
       }
       --k;
     }

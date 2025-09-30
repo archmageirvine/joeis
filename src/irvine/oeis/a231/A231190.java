@@ -12,6 +12,6 @@ public class A231190 extends RationalLambdaSequence {
 
   /** Construct the sequence. */
   public A231190() {
-    super(1, NUM, n -> new Q(n - 8, 2 * n).abs());
+    super(1, NUM, n -> new Q(n - 8, 2L * n).abs());
   }
 }

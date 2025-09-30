@@ -13,6 +13,6 @@ public class A160144 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A160144() {
-    super(0, n -> new Q(2 * n + 1, Z.TWO.pow(2 * n + 1).subtract(1)).num());
+    super(0, n -> new Q(2L * n + 1, Z.TWO.pow(2L * n + 1).subtract(1)).num());
   }
 }

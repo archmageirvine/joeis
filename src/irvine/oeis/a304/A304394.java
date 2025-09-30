@@ -14,6 +14,6 @@ public class A304394 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A304394() {
-    super(0, (self, n) -> new Q(n + 1).pow(4 * n + 4).divide(Functions.FACTORIAL.z(n + 1)).subtract(Rationals.SINGLETON.sum(1, n, k -> new Q(n + 1).pow(4 * k).divide(Functions.FACTORIAL.z(k)).multiply(self.a(n - k)))).num(), "1");
+    super(0, (self, n) -> new Q(n + 1).pow(4L * n + 4).divide(Functions.FACTORIAL.z(n + 1)).subtract(Rationals.SINGLETON.sum(1, n, k -> new Q(n + 1).pow(4L * k).divide(Functions.FACTORIAL.z(k)).multiply(self.a(n - k)))).num(), "1");
   }
 }

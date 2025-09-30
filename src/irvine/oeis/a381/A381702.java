@@ -16,6 +16,6 @@ public class A381702 extends LeastLambdaSequence {
 
   /** Construct the sequence. */
   public A381702() {
-    super(1, (n, k) -> A277847.a(k).equals(Z.valueOf(2 * n)), 1, ONE);
+    super(1, (n, k) -> A277847.a(k).equals(Z.valueOf(2L * n)), 1, ONE);
   }
 }

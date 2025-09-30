@@ -16,6 +16,6 @@ public class A274611 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A274611() {
-    super(1, n -> Z.valueOf(A007814.a(n).mod(4) == 3 ? n / 8 : 2 * n));
+    super(1, n -> Z.valueOf(A007814.a(n).mod(4) == 3 ? n / 8 : 2L * n));
   }
 }

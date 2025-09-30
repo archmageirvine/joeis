@@ -14,6 +14,6 @@ public class A219931 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A219931() {
-    super(1, (term, n) -> new Q(term, Z.valueOf(-2).pow(n - 1).multiply(2 * n - 1)).den(), "", new A002105());
+    super(1, (term, n) -> new Q(term, Z.valueOf(-2).pow(n - 1).multiply(2L * n - 1)).den(), "", new A002105());
   }
 }

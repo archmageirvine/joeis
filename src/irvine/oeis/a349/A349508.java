@@ -17,7 +17,7 @@ public class A349508 extends LambdaSequence {
     super(1, n -> {
       final Z n2 = Z.valueOf(n).square();
       final Z n3 = n2.multiply(n);
-      return new Q(Binomial.binomial(n3.add(n2.multiply(6)).add(2 - 6 * n), n3.subtract(1)), n3).num();
+      return new Q(Binomial.binomial(n3.add(n2.multiply(6)).add(2 - 6L * n), n3.subtract(1)), n3).num();
     });
   }
 }

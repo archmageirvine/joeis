@@ -12,6 +12,6 @@ public class A292608 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A292608() {
-    super(1, n -> Functions.VALUATION.z(n, 2).add(2 * n + 1));
+    super(1, n -> Functions.VALUATION.z(n, 2).add(2L * n + 1));
   }
 }

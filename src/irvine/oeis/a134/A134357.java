@@ -13,6 +13,6 @@ public class A134357 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A134357() {
-    super(0, n -> new Q(Binomial.binomial(6 * n - 2, 2 * n), Binomial.binomial(4 * n - 1, 2 * n).multiply(2)).den());
+    super(0, n -> new Q(Binomial.binomial(6L * n - 2, 2L * n), Binomial.binomial(4L * n - 1, 2L * n).multiply(2)).den());
   }
 }

@@ -14,6 +14,6 @@ public class A376957 extends LeastLambdaSequence {
 
   /** Construct the sequence. */
   public A376957() {
-    super(0, (n, k) -> CR.HALF_PI.multiply(n).pow(2 * k + 1).divide(Functions.FACTORIAL.z(2 * k + 1)).floor().compareTo(Z.ZERO) <= 0, 1);
+    super(0, (n, k) -> CR.HALF_PI.multiply(n).pow(2L * k + 1).divide(Functions.FACTORIAL.z(2 * k + 1)).floor().compareTo(Z.ZERO) <= 0, 1);
   }
 }

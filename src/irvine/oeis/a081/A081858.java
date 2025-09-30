@@ -12,6 +12,6 @@ public class A081858 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A081858() {
-    super(1, 0, k -> Z.TWO.pow(k).subtract(1).mod(2 * k + 1) == 0);
+    super(1, 0, k -> Z.TWO.pow(k).subtract(1).mod(2L * k + 1) == 0);
   }
 }

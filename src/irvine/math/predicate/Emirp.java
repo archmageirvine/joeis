@@ -7,14 +7,19 @@ import irvine.math.z.Z;
  * Test if a number is an emirp.
  * @author Sean A. Irvine
  */
-class Emirp extends AbstractPredicate {
+class Emirp extends AbstractPredicate2 {
 
   @Override
-  public boolean is(final Z n) {
+  public boolean is(final long base, final Z n) {
     if (!n.isProbablePrime()) {
       return false;
     }
-    final Z r = Functions.REVERSE.z(n);
+    final Z r = Functions.REVERSE.z(base, n);
     return !r.equals(n) && r.isProbablePrime();
+  }
+
+  @Override
+  public long getDefault() {
+    return 10;
   }
 }

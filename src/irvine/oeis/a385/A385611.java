@@ -19,7 +19,7 @@ public class A385611 extends Sequence1 {
 
   @Override
   public Z next() {
-    while (mA.isEmpty() || mA.first().compareTo(Z.ONE.shiftLeft(mN).add(mN * mN)) > 0) { // This condition could be made tighter
+    while (mA.isEmpty() || mA.first().compareTo(Z.ONE.shiftLeft(mN).add((long) mN * mN)) > 0) { // This condition could be made tighter
       final Bumper bumper = BumperFactory.increasing(mN);
       final int[] b = {2, 3, 4};
       do {

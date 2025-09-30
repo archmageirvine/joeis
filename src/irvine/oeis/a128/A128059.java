@@ -14,6 +14,6 @@ public class A128059 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A128059() {
-    super(0, n -> new Q(Z.valueOf(2 * n - 1).square(), Functions.FACTORIAL.z(2 * n).multiply(2)).num());
+    super(0, n -> new Q(Z.valueOf(2L * n - 1).square(), Functions.FACTORIAL.z(2 * n).multiply(2)).num());
   }
 }

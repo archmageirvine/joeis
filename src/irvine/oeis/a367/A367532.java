@@ -14,7 +14,7 @@ public class A367532 extends LambdaSequence {
   public A367532() {
     super(1, n -> {
       final int n2 = n / 2 + (n & 1);
-      return (n & 1) == 1 ? Z.valueOf(256).pow(n2 * (n2 - 1)) : Z.FOUR.pow(n2 * n2 - 1).multiply(Z.FOUR.pow(n2 * n2).add(2).add(Z.valueOf(64).pow(n2 * n2)));
+      return (n & 1) == 1 ? Z.valueOf(256).pow((long) n2 * (n2 - 1)) : Z.FOUR.pow((long) n2 * n2 - 1).multiply(Z.FOUR.pow((long) n2 * n2).add(2).add(Z.valueOf(64).pow((long) n2 * n2)));
     });
   }
 }

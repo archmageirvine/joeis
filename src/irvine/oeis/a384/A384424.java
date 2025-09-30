@@ -90,7 +90,7 @@ public class A384424 extends Sequence1 {
     mPath[0] = mN + 1;
     search(mN + 1, mN * mN - 1, 0);
     mUsed[mN + 1] = false;
-    return Z.valueOf(mN * mN - mBad);
+    return Z.valueOf((long) mN * mN - mBad);
   }
 }
 

@@ -14,6 +14,6 @@ public class A220371 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A220371() {
-    super(0, (self, n) -> Integers.SINGLETON.product(1, 2 * n, i -> Z.valueOf(4 * i + 2)).multiply(self.s(0)), "", new A060818());
+    super(0, (self, n) -> Integers.SINGLETON.product(1, 2 * n, i -> Z.valueOf(4L * i + 2)).multiply(self.s(0)), "", new A060818());
   }
 }

@@ -20,6 +20,6 @@ public class A172398 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A172398() {
-    super(1, n -> Integers.SINGLETON.sum(1, n / 2, i -> Z.valueOf(eval2(i, Functions.SIGMA0.i(i)) * eval2(n - i, Functions.SIGMA0.i(n - i)))));
+    super(1, n -> Integers.SINGLETON.sum(1, n / 2, i -> Z.valueOf((long) eval2(i, Functions.SIGMA0.i(i)) * eval2(n - i, Functions.SIGMA0.i(n - i)))));
   }
 }

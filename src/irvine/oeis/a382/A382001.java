@@ -15,6 +15,6 @@ public class A382001 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A382001() {
-    super(0, n -> new Q(Functions.FACTORIAL.z(n)).multiply(Rationals.SINGLETON.sum(0, n, k -> new Q(2 * k).pow(n - k).multiply(Binomial.binomial(6 * k + 1, k)).divide(new Q(6 * k + 1).multiply(Functions.FACTORIAL.z(n - k))))).num());
+    super(0, n -> new Q(Functions.FACTORIAL.z(n)).multiply(Rationals.SINGLETON.sum(0, n, k -> new Q(2L * k).pow(n - k).multiply(Binomial.binomial(6L * k + 1, k)).divide(new Q(6L * k + 1).multiply(Functions.FACTORIAL.z(n - k))))).num());
   }
 }

@@ -12,6 +12,6 @@ public class A382253 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A382253() {
-    super(0, 0, 0, (n, k) -> new Q(n + k, n * k + 1).den());
+    super(0, 0, 0, (n, k) -> new Q(n + k, (long) n * k + 1).den());
   }
 }

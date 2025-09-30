@@ -14,6 +14,6 @@ public class A385547 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A385547() {
-    super(0, (self, n) -> Integers.SINGLETON.sum(0, n - 1, k -> self.a(k).multiply(Z.valueOf(n - k).pow(2 * k).multiply(Binomial.binomial(n, k)))), "1");
+    super(0, (self, n) -> Integers.SINGLETON.sum(0, n - 1, k -> self.a(k).multiply(Z.valueOf(n - k).pow(2L * k).multiply(Binomial.binomial(n, k)))), "1");
   }
 }

@@ -18,7 +18,7 @@ public class A309484 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A309484() {
-    super(0, n -> Integers.SINGLETON.sum(1, n / 8, p -> Integers.SINGLETON.sum(p, (n - p) / 7, o -> Integers.SINGLETON.sum(o, (n - o - p) / 6, m -> Integers.SINGLETON.sum(m, (n - m - o - p) / 5, l -> Integers.SINGLETON.sum(l, (n - l - m - o - p) / 4, k -> Integers.SINGLETON.sum(k, (n - k - l - m - o - p) / 3, j -> Integers.SINGLETON.sum(j, (n - j - k - l - m - o - p) / 2, i -> Z.valueOf(i * eval1(i) + j * eval1(j) + k * eval1(k) + l * eval1(l) + m * eval1(m) + o * eval1(o) + p * eval1(p) + (n - i - j - k - l - m - o - p) * eval1(n - i - j - k - l - m - o - p))))))))));
+    super(0, n -> Integers.SINGLETON.sum(1, n / 8, p -> Integers.SINGLETON.sum(p, (n - p) / 7, o -> Integers.SINGLETON.sum(o, (n - o - p) / 6, m -> Integers.SINGLETON.sum(m, (n - m - o - p) / 5, l -> Integers.SINGLETON.sum(l, (n - l - m - o - p) / 4, k -> Integers.SINGLETON.sum(k, (n - k - l - m - o - p) / 3, j -> Integers.SINGLETON.sum(j, (n - j - k - l - m - o - p) / 2, i -> Z.valueOf((long) i * eval1(i) + (long) j * eval1(j) + (long) k * eval1(k) + (long) l * eval1(l) + (long) m * eval1(m) + (long) o * eval1(o) + (long) p * eval1(p) + (long) (n - i - j - k - l - m - o - p) * eval1(n - i - j - k - l - m - o - p))))))))));
   }
 }
 

@@ -12,6 +12,6 @@ public class A386558 extends LambdaArray {
 
   /** Construct the sequence. */
   public A386558() {
-    super(0, 0, 0, -1, (n, k) -> Binomial.binomial((k + 1) * n + k - 1, n).divide(n + 1));
+    super(0, 0, 0, -1, (n, k) -> Binomial.binomial((long) (k + 1) * n + k - 1, n).divide(n + 1));
   }
 }

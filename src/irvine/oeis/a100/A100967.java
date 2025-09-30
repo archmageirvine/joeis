@@ -12,6 +12,6 @@ public class A100967 extends LeastLambdaSequence {
 
   /** Construct the sequence. */
   public A100967() {
-    super(1, (n, k) -> Binomial.binomial(2 * k + 1, k - n).compareTo(Binomial.binomial(2 * k, k)) >= 0, 1, ONE);
+    super(1, (n, k) -> Binomial.binomial(2L * k + 1, k - n).compareTo(Binomial.binomial(2L * k, k)) >= 0, 1, ONE);
   }
 }

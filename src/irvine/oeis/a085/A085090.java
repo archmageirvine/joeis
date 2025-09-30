@@ -13,6 +13,6 @@ public class A085090 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A085090() {
-    super(1, (self, n) -> Functions.MULTIFACTORIAL.z(2, 4 * n - 5).mod(Z.valueOf(2 * n - 1).square()), "");
+    super(1, (self, n) -> Functions.MULTIFACTORIAL.z(2, 4L * n - 5).mod(Z.valueOf(2L * n - 1).square()), "");
   }
 }

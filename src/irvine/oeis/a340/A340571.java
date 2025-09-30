@@ -13,7 +13,7 @@ public class A340571 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A340571() {
-    super(0, n -> Integers.SINGLETON.sum(1, n / 4, k -> Integers.SINGLETON.sum(k, (n - k) / 3, j -> Integers.SINGLETON.sum(j, (n - j - k) / 2, i -> Z.valueOf(1 - (k & 1) * (j & 1) * (i & 1) * (n - i - j - k & 1))))));
+    super(0, n -> Integers.SINGLETON.sum(1, n / 4, k -> Integers.SINGLETON.sum(k, (n - k) / 3, j -> Integers.SINGLETON.sum(j, (n - j - k) / 2, i -> Z.valueOf(1 - (long) (k & 1) * (j & 1) * (i & 1) * (n - i - j - k & 1))))));
   }
 }
 

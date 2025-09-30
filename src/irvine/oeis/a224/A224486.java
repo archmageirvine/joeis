@@ -12,6 +12,6 @@ public class A224486 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A224486() {
-    super(1, 1, k -> Z.TWO.pow(k).add(1).mod(2 * k + 1) == 0);
+    super(1, 1, k -> Z.TWO.pow(k).add(1).mod(2L * k + 1) == 0);
   }
 }

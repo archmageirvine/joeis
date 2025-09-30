@@ -15,6 +15,6 @@ public class A060918 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A060918() {
-    super(4, n -> Rationals.SINGLETON.sum(0, (n - 4) / 4, i -> new Q(1).divide(Functions.FACTORIAL.z(i).multiply(Z.FOUR.pow(i))).multiply(Z.valueOf(n).pow(n - (i + 1) * 4)).divide(Functions.FACTORIAL.z(n - (i + 1) * 4))).multiply(Functions.FACTORIAL.z(n - 1)).divide(6).num());
+    super(4, n -> Rationals.SINGLETON.sum(0, (n - 4) / 4, i -> new Q(1).divide(Functions.FACTORIAL.z(i).multiply(Z.FOUR.pow(i))).multiply(Z.valueOf(n).pow(n - (i + 1) * 4L)).divide(Functions.FACTORIAL.z(n - (i + 1) * 4))).multiply(Functions.FACTORIAL.z(n - 1)).divide(6).num());
   }
 }

@@ -12,6 +12,6 @@ public class A369543 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A369543() {
-    super(0, (self, n) -> self.a(n - 1).testBit(0) ? Z.valueOf(n - 1).subtract(self.a(n - 1)) : Z.valueOf(3 * n - 3).add(self.a(n - 1)).divide(2), "1");
+    super(0, (self, n) -> self.a(n - 1).testBit(0) ? Z.valueOf(n - 1).subtract(self.a(n - 1)) : Z.valueOf(3L * n - 3).add(self.a(n - 1)).divide(2), "1");
   }
 }

@@ -20,6 +20,6 @@ public class A381848 extends Sequence1 {
     final int t = mA << 2;
     mA = mB;
     mB = mSeq.next().intValue();
-    return Z.valueOf((t + (mA << 1) + mB) - 1);
+    return Z.valueOf((t + ((long) mA << 1) + mB) - 1);
   }
 }

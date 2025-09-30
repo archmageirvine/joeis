@@ -14,6 +14,6 @@ public class A184777 extends FilterSequence {
 
   /** Construct the sequence. */
   public A184777() {
-    super(1, new LambdaSequence(0, k -> Z.valueOf(2 * k).add(CR.SQRT2.multiply(k).floor())), PRIME);
+    super(1, new LambdaSequence(0, k -> Z.valueOf(2L * k).add(CR.SQRT2.multiply(k).floor())), PRIME);
   }
 }

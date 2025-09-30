@@ -17,6 +17,6 @@ public class A326543 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A326543() {
-    super(0, n -> Integers.SINGLETON.sum(1, n / 9, q -> Integers.SINGLETON.sum(q, (n - q) / 8, p -> Integers.SINGLETON.sum(p, (n - p - q) / 7, o -> Integers.SINGLETON.sum(o, (n - o - p - q) / 6, m -> Integers.SINGLETON.sum(m, (n - m - o - p - q) / 5, l -> Integers.SINGLETON.sum(l, (n - l - m - o - p - q) / 4, k -> Integers.SINGLETON.sum(k, (n - k - l - m - o - p - q) / 3, j -> Integers.SINGLETON.sum(j, (n - j - k - l - m - o - p - q) / 2, i -> Z.valueOf(eval1(q) * eval1(p) * eval1(o) * eval1(m) * eval1(l) * eval1(k) * eval1(j) * eval1(i) * eval1(n - i - j - k - l - m - o - p - q) * o))))))))));
+    super(0, n -> Integers.SINGLETON.sum(1, n / 9, q -> Integers.SINGLETON.sum(q, (n - q) / 8, p -> Integers.SINGLETON.sum(p, (n - p - q) / 7, o -> Integers.SINGLETON.sum(o, (n - o - p - q) / 6, m -> Integers.SINGLETON.sum(m, (n - m - o - p - q) / 5, l -> Integers.SINGLETON.sum(l, (n - l - m - o - p - q) / 4, k -> Integers.SINGLETON.sum(k, (n - k - l - m - o - p - q) / 3, j -> Integers.SINGLETON.sum(j, (n - j - k - l - m - o - p - q) / 2, i -> Z.valueOf((long) eval1(q) * eval1(p) * eval1(o) * eval1(m) * eval1(l) * eval1(k) * eval1(j) * eval1(i) * eval1(n - i - j - k - l - m - o - p - q) * o))))))))));
   }
 }

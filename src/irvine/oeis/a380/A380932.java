@@ -15,6 +15,6 @@ public class A380932 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A380932() {
-    super(1, 0, k -> (k & 1) == 1 && A380845.a(k).compareTo(Z.valueOf(2 * k)) > 0);
+    super(1, 0, k -> (k & 1) == 1 && A380845.a(k).compareTo(Z.valueOf(2L * k)) > 0);
   }
 }

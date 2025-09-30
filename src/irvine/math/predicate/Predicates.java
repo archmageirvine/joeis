@@ -10,8 +10,6 @@ public final class Predicates {
 
   /** Test if a number is a prime. */
   public static final Predicate PRIME = new Prime(); // =A000040
-  /** Test if a number is an emirp (both the number and its reversal is a different prime). */
-  public static final Predicate EMIRP = new Emirp(); // =A006567
   /** Test if a number is a semiprime. */
   public static final Predicate SEMIPRIME = new Semiprime(); // =A001358
   /** Test if a number is a square. */
@@ -44,7 +42,6 @@ public final class Predicates {
   public static final Predicate PERFECT = new Perfect(); // =A000396
   /** Test if a number is a primorial. */
   public static final Predicate PRIMORIAL = new Primorial(); // =A002110
-
   /** Test if a number is arithmetic. */
   public static final Predicate ARITHMETIC = new Arithmetic(); // =A003601
   /** Test if a number is balanced. */
@@ -92,6 +89,8 @@ public final class Predicates {
   /** Test if a number is a 2-dense. */
   public static final Predicate TWO_DENSE = new TwoDense(); // =A174973
 
+  /** Test if a number is an emirp (both the number and its reversal is a different prime). */
+  public static final Predicate2 EMIRP = new Emirp(); // =A006567
   /** Test if a number is brilliant: semiprime, and both primes with the same decimal length. */
   public static final Predicate2 BRILLIANT = new Brilliant(); // =A078972(10
   /** Test if a number is a palindrome in a base. */

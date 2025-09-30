@@ -14,6 +14,6 @@ public class A380241 extends LambdaArray {
 
   /** Construct the sequence. */
   public A380241() {
-    super(0, 0, 0, -1, (n, k) -> (k == 0) ? Z.ONE : Binomial.binomial(2 * k - 1, k).pow(n).multiply(2).multiply(Functions.FACTORIAL.z(n * k)).divide(Functions.FACTORIAL.z(n).multiply(Functions.FACTORIAL.z(n * k - n + 2))));
+    super(0, 0, 0, -1, (n, k) -> (k == 0) ? Z.ONE : Binomial.binomial(2L * k - 1, k).pow(n).multiply(2).multiply(Functions.FACTORIAL.z(n * k)).divide(Functions.FACTORIAL.z(n).multiply(Functions.FACTORIAL.z(n * k - n + 2))));
   }
 }

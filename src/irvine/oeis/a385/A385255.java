@@ -12,6 +12,6 @@ public class A385255 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A385255() {
-    super(1, 1, k -> Functions.SIGMA1.z(k).subtract(2 * k).add(24).isZero());
+    super(1, 1, k -> Functions.SIGMA1.z(k).subtract(2L * k).add(24).isZero());
   }
 }

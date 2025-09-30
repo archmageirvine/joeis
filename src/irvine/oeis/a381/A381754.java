@@ -12,6 +12,6 @@ public class A381754 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A381754() {
-    super(1, 0, k -> Functions.DIGIT_LENGTH.i(2, k) - Functions.DIGIT_SUM.i(2, k) == Functions.DIGIT_LENGTH.i(2, 3 * k) - Functions.DIGIT_SUM.i(2, 3 * k));
+    super(1, 0, k -> Functions.DIGIT_LENGTH.i(2, k) - Functions.DIGIT_SUM.i(2, k) == Functions.DIGIT_LENGTH.i(2, 3L * k) - Functions.DIGIT_SUM.i(2, 3L * k));
   }
 }

@@ -12,6 +12,6 @@ public class A387458 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A387458() {
-    super(1, n -> Z.valueOf(8 * n - 17).multiply(n).add(23).multiply(4));
+    super(1, n -> Z.valueOf(8L * n - 17).multiply(n).add(23).multiply(4));
   }
 }

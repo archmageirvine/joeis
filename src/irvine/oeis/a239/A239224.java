@@ -23,7 +23,7 @@ public class A239224 extends RationalRecurrence {
   @Override
   public Z next() {
     ++mN;
-    final Z result = Q.valueOf(mN * 2).divide(nextQ().square()).num();
+    final Z result = Q.valueOf(mN * 2L).divide(nextQ().square()).num();
     return mN == 1 ? Z.ONE : result;
   }
 }

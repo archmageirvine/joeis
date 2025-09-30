@@ -13,6 +13,6 @@ public class A309624 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A309624() {
-    super(0, n -> Integers.SINGLETON.sum(1, n / 7, o -> Integers.SINGLETON.sum(o, (n - o) / 6, m -> Integers.SINGLETON.sum(m, (n - m - o) / 5, l -> Integers.SINGLETON.sum(l, (n - l - m - o) / 4, k -> Integers.SINGLETON.sum(k, (n - k - l - m - o) / 3, j -> Integers.SINGLETON.sum(j, (n - j - k - l - m - o) / 2, i -> Z.valueOf(o * (o & 1) + m * (m & 1) + l * (l & 1) + k * (k & 1) + j * (j & 1) + i * (i & 1) + (n - i - j - k - l - m - o) * ((n - i - j - k - l - m - o) & 1)))))))));
+    super(0, n -> Integers.SINGLETON.sum(1, n / 7, o -> Integers.SINGLETON.sum(o, (n - o) / 6, m -> Integers.SINGLETON.sum(m, (n - m - o) / 5, l -> Integers.SINGLETON.sum(l, (n - l - m - o) / 4, k -> Integers.SINGLETON.sum(k, (n - k - l - m - o) / 3, j -> Integers.SINGLETON.sum(j, (n - j - k - l - m - o) / 2, i -> Z.valueOf((long) o * (o & 1) + (long) m * (m & 1) + (long) l * (l & 1) + (long) k * (k & 1) + (long) j * (j & 1) + (long) i * (i & 1) + (long) (n - i - j - k - l - m - o) * ((n - i - j - k - l - m - o) & 1)))))))));
   }
 }

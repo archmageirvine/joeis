@@ -13,6 +13,6 @@ public class A368361 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A368361() {
-    super(0, n -> Z.valueOf(2 * n + 1).mod(Z.TEN).multiply(10).add(Functions.LEADING_DIGIT.z(2 * n + 3)));
+    super(0, n -> Z.valueOf(2L * n + 1).mod(Z.TEN).multiply(10).add(Functions.LEADING_DIGIT.z(2 * n + 3)));
   }
 }

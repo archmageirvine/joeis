@@ -13,6 +13,6 @@ public class A380612 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A380612() {
-    super(0, n -> Z.NEG_ONE.pow(n).multiply(Integers.SINGLETON.product(1, n, k -> Z.valueOf(2 * k + 1).multiply(2 * k - 3))));
+    super(0, n -> Z.NEG_ONE.pow(n).multiply(Integers.SINGLETON.product(1, n, k -> Z.valueOf(2L * k + 1).multiply(2L * k - 3))));
   }
 }

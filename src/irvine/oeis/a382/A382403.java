@@ -14,6 +14,6 @@ public class A382403 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A382403() {
-    super(0, (term, n) -> Binomial.binomial(2 * n, n).multiply(Z.FOUR.multiply(Binomial.binomial(2 * n, n).square()).subtract(Z.THREE.multiply(term))), "", new A112029());
+    super(0, (term, n) -> Binomial.binomial(2L * n, n).multiply(Z.FOUR.multiply(Binomial.binomial(2L * n, n).square()).subtract(Z.THREE.multiply(term))), "", new A112029());
   }
 }

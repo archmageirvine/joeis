@@ -12,6 +12,6 @@ public class A265613 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A265613() {
-    super(0, n -> Functions.CATALAN.z(n + 1).multiply(n).multiply(1 + n).multiply(2 + 3 * n).divide(4 + n).divide(3 + n));
+    super(0, n -> Functions.CATALAN.z(n + 1).multiply(n).multiply(1 + n).multiply(2 + 3L * n).divide(4 + n).divide(3 + n));
   }
 }

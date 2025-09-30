@@ -13,6 +13,6 @@ public class A127650 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A127650() {
-    super(1, n -> Z.valueOf(n).pow(n).subtract(Functions.MULTIFACTORIAL.z(2, 2 * n - 1)));
+    super(1, n -> Z.valueOf(n).pow(n).subtract(Functions.MULTIFACTORIAL.z(2, 2L * n - 1)));
   }
 }

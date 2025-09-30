@@ -14,6 +14,6 @@ public class A387153 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A387153() {
-    super(1, 1, k -> Predicates.SQUARE_FREE.is(k) && Functions.SIGMA1.z(k).compareTo(Z.valueOf(3 * k)) > 0);
+    super(1, 1, k -> Predicates.SQUARE_FREE.is(k) && Functions.SIGMA1.z(k).compareTo(Z.valueOf(3L * k)) > 0);
   }
 }

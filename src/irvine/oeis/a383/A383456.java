@@ -12,6 +12,6 @@ public class A383456 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A383456() {
-    super(0, n -> Binomial.binomial(2 * n + 4, n).multiply(n + 3).multiply(2).divide(n + 2));
+    super(0, n -> Binomial.binomial(2L * n + 4, n).multiply(n + 3).multiply(2).divide(n + 2));
   }
 }

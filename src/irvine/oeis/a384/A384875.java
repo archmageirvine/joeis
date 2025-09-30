@@ -13,6 +13,6 @@ public class A384875 extends LambdaTable {
 
   /** Construct the sequence. */
   public A384875() {
-    super(3, 3, n -> new Integer[] {0, n / 3 - 1}, (n, k) -> Functions.NEXT_PRIME.z(Z.TWO.pow(n - 2 * (n / 3 - k))).shiftLeft(n / 3 - k));
+    super(3, 3, n -> new Integer[] {0, n / 3 - 1}, (n, k) -> Functions.NEXT_PRIME.z(Z.TWO.pow(n - 2L * (n / 3 - k))).shiftLeft(n / 3 - k));
   }
 }

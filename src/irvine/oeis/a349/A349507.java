@@ -14,6 +14,6 @@ public class A349507 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A349507() {
-    super(1, n -> new Q(Functions.FACTORIAL.z(n).pow(2 * n), Z.valueOf(n).pow(n * n)).den());
+    super(1, n -> new Q(Functions.FACTORIAL.z(n).pow(2L * n), Z.valueOf(n).pow((long) n * n)).den());
   }
 }

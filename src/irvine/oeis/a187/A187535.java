@@ -24,7 +24,7 @@ public class A187535 extends HolonomicRecurrence implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    return Functions.LAH.z(2 * n, n);
+    return Functions.LAH.z(2L * n, n);
   }
 
 }

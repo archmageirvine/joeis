@@ -23,7 +23,7 @@ public class A065036 extends AbstractSequence {
   public A065036(final int offset, final int exponent) {
     super(offset);
     mExponent = exponent;
-    mN = (1 << mExponent) * 3 - 1;
+    mN = (1L << mExponent) * 3L - 1;
   }
 
   @Override

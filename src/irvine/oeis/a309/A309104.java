@@ -22,7 +22,7 @@ public class A309104 extends LambdaSequence {
           return v;
         }
         v = v.add(d.floor());
-        d = d.multiply(new Q(n * n, k * (k + 1)));
+        d = d.multiply(new Q((long) n * n, (long) k * (k + 1)));
         k += 2;
       }
     });

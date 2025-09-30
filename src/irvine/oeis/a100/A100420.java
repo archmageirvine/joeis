@@ -14,7 +14,7 @@ public class A100420 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A100420() {
     super(1, 1, k -> {
-      final Z k30 = Z.valueOf(30 * k);
+      final Z k30 = Z.valueOf(30L * k);
       return Predicates.PRIME.is(k30.add(1)) && Predicates.PRIME.is(k30.add(7)) && Predicates.PRIME.is(k30.add(11)) && Predicates.PRIME.is(k30.add(17)) && Predicates.PRIME.is(k30.add(19)) && Predicates.PRIME.is(k30.add(23)) && Predicates.PRIME.is(k30.add(29));
     });
   }

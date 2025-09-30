@@ -14,6 +14,6 @@ public class A308078 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A308078() {
-    super(1, 1, k -> Predicates.SQUARE_FREE.is(Binomial.binomial(k * k, k).subtract(Z.valueOf(k).pow(k))));
+    super(1, 1, k -> Predicates.SQUARE_FREE.is(Binomial.binomial((long) k * k, k).subtract(Z.valueOf(k).pow(k))));
   }
 }

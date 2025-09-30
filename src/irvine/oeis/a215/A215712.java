@@ -14,6 +14,6 @@ public class A215712 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A215712() {
-    super(1, n -> Rationals.SINGLETON.sum(1, n, i -> new Q(3 * i, Z.FOUR.pow(i))).num());
+    super(1, n -> Rationals.SINGLETON.sum(1, n, i -> new Q(3L * i, Z.FOUR.pow(i))).num());
   }
 }

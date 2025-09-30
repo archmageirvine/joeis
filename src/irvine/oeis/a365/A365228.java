@@ -14,6 +14,6 @@ public class A365228 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A365228() {
-    super(1, n -> Rationals.SINGLETON.sum(1, n, j -> Rationals.SINGLETON.sum(j, n, k -> Functions.GCD.i(j, k) == 1 ? new Q(1, j * k) : Q.ZERO)).den());
+    super(1, n -> Rationals.SINGLETON.sum(1, n, j -> Rationals.SINGLETON.sum(j, n, k -> Functions.GCD.i(j, k) == 1 ? new Q(1, (long) j * k) : Q.ZERO)).den());
   }
 }

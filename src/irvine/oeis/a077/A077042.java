@@ -29,7 +29,7 @@ public class A077042 extends AbstractSequence {
     }
     final int h = m * (n - 1) / 2;
     return Integers.SINGLETON.sum(0, h / n,
-      k -> Z.NEG_ONE.pow(k).multiply(Binomial.binomial(m, k)).multiply(Binomial.binomial(m - 1 + h - n * k, m - 1)));
+      k -> Z.NEG_ONE.pow(k).multiply(Binomial.binomial(m, k)).multiply(Binomial.binomial(m - 1 + h - (long) n * k, m - 1)));
   }
 
   @Override

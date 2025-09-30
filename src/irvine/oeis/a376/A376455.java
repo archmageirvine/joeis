@@ -14,6 +14,6 @@ public class A376455 extends LeastLambdaSequence {
 
   /** Construct the sequence. */
   public A376455() {
-    super(0, (n, k) -> new Q(Z.valueOf(n).pow(2 * k + 1), Functions.FACTORIAL.z(2 * k + 1)).floor().compareTo(Z.ONE) < 0, 1, ONE);
+    super(0, (n, k) -> new Q(Z.valueOf(n).pow(2L * k + 1), Functions.FACTORIAL.z(2 * k + 1)).floor().compareTo(Z.ONE) < 0, 1, ONE);
   }
 }

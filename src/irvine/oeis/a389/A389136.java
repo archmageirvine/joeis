@@ -17,6 +17,6 @@ public class A389136 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A389136() {
-    super(1, n -> Functions.SQRT.z(Z.valueOf(4 * n).divide(A037449.a(n))));
+    super(1, n -> Functions.SQRT.z(Z.valueOf(4L * n).divide(A037449.a(n))));
   }
 }

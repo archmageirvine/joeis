@@ -12,6 +12,6 @@ public class A385086 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A385086() {
-    super(0, n -> new Q(5 * n + 2).pow(n - 1).multiply(2).num());
+    super(0, n -> new Q(5L * n + 2).pow(n - 1).multiply(2).num());
   }
 }

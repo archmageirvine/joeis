@@ -12,6 +12,6 @@ public class A104255 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A104255() {
-    super(1, n -> Functions.MULTIFACTORIAL.z(2, 2 * n - 1).divide(2 * n));
+    super(1, n -> Functions.MULTIFACTORIAL.z(2, 2L * n - 1).divide(2L * n));
   }
 }

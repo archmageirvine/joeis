@@ -13,6 +13,6 @@ public class A153151 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A153151() {
-    super(0, n -> n < 2 ? Z.valueOf(n) : (Functions.DIGIT_SUM.i(2, n) == 1 ? Z.valueOf(2 * n - 1) : Z.valueOf(n - 1)));
+    super(0, n -> n < 2 ? Z.valueOf(n) : (Functions.DIGIT_SUM.i(2, n) == 1 ? Z.valueOf(2L * n - 1) : Z.valueOf(n - 1)));
   }
 }

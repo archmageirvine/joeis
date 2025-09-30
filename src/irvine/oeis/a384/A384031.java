@@ -13,6 +13,6 @@ public class A384031 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A384031() {
-    super(0, n -> Integers.SINGLETON.sum(0, n, i -> Integers.SINGLETON.sum(0, 3 * n - i, j -> Integers.SINGLETON.sum(0, 3 * n - i - j, k -> (Functions.STIRLING1.z(n + 1, i + 1).multiply(Functions.STIRLING1.z(n + 1, j + 1)).multiply(Functions.STIRLING1.z(n + 1, k + 1)).multiply(Functions.STIRLING1.z(n + 1, 3 * n - i - j - k + 1))).abs()))));
+    super(0, n -> Integers.SINGLETON.sum(0, n, i -> Integers.SINGLETON.sum(0, 3 * n - i, j -> Integers.SINGLETON.sum(0, 3 * n - i - j, k -> (Functions.STIRLING1.z(n + 1, i + 1).multiply(Functions.STIRLING1.z(n + 1, j + 1)).multiply(Functions.STIRLING1.z(n + 1, k + 1)).multiply(Functions.STIRLING1.z(n + 1, 3L * n - i - j - k + 1))).abs()))));
   }
 }

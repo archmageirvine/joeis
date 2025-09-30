@@ -13,6 +13,6 @@ public class A347840 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A347840() {
-    super(1, n -> Z.valueOf((2 * n - 1) >> (Functions.VALUATION.i(3 * n - 1, 2) / 2 * 2)));
+    super(1, n -> Z.valueOf((2L * n - 1) >> (Functions.VALUATION.i(3L * n - 1, 2) / 2 * 2)));
   }
 }

@@ -16,7 +16,7 @@ public class A104251 extends SingleTransformSequence {
   public A104251() {
     super(1, (term, n) -> {
       final int[] dc = ZUtils.digitCounts(term);
-      return Z.valueOf(dc[1] + dc[4] * 4 + dc[6] * 6 + dc[8] * 8 + dc[9] * 9);
+      return Z.valueOf(dc[1] + dc[4] * 4L + dc[6] * 6L + dc[8] * 8L + dc[9] * 9L);
     }, "", new A000040());
   }
 }

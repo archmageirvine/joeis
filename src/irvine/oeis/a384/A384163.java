@@ -13,6 +13,6 @@ public class A384163 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A384163() {
-    super(0, n -> Integers.SINGLETON.product(0, n - 1, k -> Z.valueOf(2 * n + 3 * k)));
+    super(0, n -> Integers.SINGLETON.product(0, n - 1, k -> Z.valueOf(2L * n + 3L * k)));
   }
 }

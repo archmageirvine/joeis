@@ -12,6 +12,6 @@ public class A232620 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A232620() {
-    super(1, 1, k -> Functions.MULTIFACTORIAL.z(2, 2 * k).mod(Functions.MULTIFACTORIAL.z(2, 2 * k - 1)).compareTo(Functions.MULTIFACTORIAL.z(2, 2 * k + 2).mod(Functions.MULTIFACTORIAL.z(2, 2 * k + 1))) > 0);
+    super(1, 1, k -> Functions.MULTIFACTORIAL.z(2, 2L * k).mod(Functions.MULTIFACTORIAL.z(2, 2L * k - 1)).compareTo(Functions.MULTIFACTORIAL.z(2, 2L * k + 2).mod(Functions.MULTIFACTORIAL.z(2, 2L * k + 1))) > 0);
   }
 }

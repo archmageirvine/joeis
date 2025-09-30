@@ -14,8 +14,8 @@ public class A080909 extends LambdaSequence {
   /** Construct the sequence. */
   public A080909() {
     super(0, n -> {
-      final long v = Functions.FACTORIAL.z(2 * n + 1).mod(4 * n + 3);
-      return Z.valueOf(2 * v > 4 * n + 3 ? v - (4 * n + 3) : v);
+      final long v = Functions.FACTORIAL.z(2 * n + 1).mod(4L * n + 3);
+      return Z.valueOf(2 * v > 4L * n + 3 ? v - (4L * n + 3) : v);
     });
   }
 }

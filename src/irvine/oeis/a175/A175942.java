@@ -12,6 +12,6 @@ public class A175942 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A175942() {
-    super(1, 0, k -> (k & 1) == 1 && Z.FOUR.modPow(k, Z.valueOf(3 * k)).equals(Z.FOUR) && Z.TWO.modPow(k - 1, Z.valueOf(3 * (k - 1))).equals(Z.FOUR));
+    super(1, 0, k -> (k & 1) == 1 && Z.FOUR.modPow(k, Z.valueOf(3L * k)).equals(Z.FOUR) && Z.TWO.modPow(k - 1, Z.valueOf(3L * (k - 1))).equals(Z.FOUR));
   }
 }

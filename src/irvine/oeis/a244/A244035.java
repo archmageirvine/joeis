@@ -16,6 +16,6 @@ public class A244035 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A244035() {
-    super(1, n -> Rationals.SINGLETON.sumdiv(n, d -> Rationals.SINGLETON.sumdiv(d, t -> new Q(Functions.MOEBIUS.z(d / t).multiply(Binomial.binomial(3 * t, t)), Z.valueOf(d).multiply(3 * d)))).num());
+    super(1, n -> Rationals.SINGLETON.sumdiv(n, d -> Rationals.SINGLETON.sumdiv(d, t -> new Q(Functions.MOEBIUS.z(d / t).multiply(Binomial.binomial(3L * t, t)), Z.valueOf(d).multiply(3L * d)))).num());
   }
 }

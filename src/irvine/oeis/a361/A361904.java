@@ -14,6 +14,6 @@ public class A361904 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A361904() {
-    super(1, 0, k -> (k & 1) == 1 && Integers.SINGLETON.countdiv(k * k + 1, d -> (d & 1) == 0 && !Predicates.PRIME.is(Z.valueOf(d).multiply(d).add(1))).isZero());
+    super(1, 0, k -> (k & 1) == 1 && Integers.SINGLETON.countdiv((long) k * k + 1, d -> (d & 1) == 0 && !Predicates.PRIME.is(Z.valueOf(d).multiply(d).add(1))).isZero());
   }
 }

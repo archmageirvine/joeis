@@ -13,6 +13,6 @@ public class A163115 extends FilterSequence {
 
   /** Construct the sequence. */
   public A163115() {
-    super(1, new LambdaSequence(0, k -> Z.TWO.pow(k).add(2 * k + 1)), PRIME);
+    super(1, new LambdaSequence(0, k -> Z.TWO.pow(k).add(2L * k + 1)), PRIME);
   }
 }

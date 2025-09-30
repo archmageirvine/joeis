@@ -13,6 +13,6 @@ public class A096430 extends RationalLambdaSequence {
 
   /** Construct the sequence. */
   public A096430() {
-    super(1, NUM, n -> new Q(Z.valueOf(9 * n).multiply(Z.valueOf(n).multiply(Z.valueOf(n).multiply(n - 2).add(2)).subtract(1)).add(2), Z.valueOf(2 * (2 * n - 1))));
+    super(1, NUM, n -> new Q(Z.valueOf(9L * n).multiply(Z.valueOf(n).multiply(Z.valueOf(n).multiply(n - 2).add(2)).subtract(1)).add(2), Z.valueOf(2 * (2L * n - 1))));
   }
 }

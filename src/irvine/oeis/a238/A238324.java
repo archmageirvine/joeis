@@ -12,6 +12,6 @@ public class A238324 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A238324() {
-    super(1, (self, n) -> self.a(n - 1).compareTo(Z.valueOf(2 * n - 1)) > 0 ? self.a(n - 1).subtract(2 * n - 1) : self.a(n - 1).add(2 * n - 1), "1");
+    super(1, (self, n) -> self.a(n - 1).compareTo(Z.valueOf(2L * n - 1)) > 0 ? self.a(n - 1).subtract(2L * n - 1) : self.a(n - 1).add(2L * n - 1), "1");
   }
 }

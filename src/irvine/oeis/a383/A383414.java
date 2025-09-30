@@ -12,6 +12,6 @@ public class A383414 extends LambdaArray {
 
   /** Construct the sequence. */
   public A383414() {
-    super(0, 0, 0, 1, (n, k) -> Z.FOUR.pow(n).multiply(8 * k + 7));
+    super(0, 0, 0, 1, (n, k) -> Z.FOUR.pow(n).multiply(8L * k + 7));
   }
 }

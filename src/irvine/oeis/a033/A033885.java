@@ -25,7 +25,7 @@ public class A033885 extends Sequence1 implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    return Z.valueOf(n * 3).subtract(Functions.SIGMA1.z(n));
+    return Z.valueOf(n * 3L).subtract(Functions.SIGMA1.z(n));
   }
 
 }

@@ -14,6 +14,6 @@ public class A331503 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A331503() {
-    super(1, n -> Z.valueOf(Functions.SIGMA1.i(n)).add(Z.valueOf(n).multiply(Z.valueOf(Functions.SIGMA0.i(n) - 1 - 3 * (n / 2)).add(Integers.SINGLETON.sum(1, n / 2, i -> Z.valueOf(n / Functions.GCD.i(n, i)))))));
+    super(1, n -> Z.valueOf(Functions.SIGMA1.i(n)).add(Z.valueOf(n).multiply(Z.valueOf(Functions.SIGMA0.i(n) - 1 - 3L * (n / 2)).add(Integers.SINGLETON.sum(1, n / 2, i -> Z.valueOf(n / Functions.GCD.i(n, i)))))));
   }
 }

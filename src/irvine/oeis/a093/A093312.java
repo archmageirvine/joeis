@@ -13,6 +13,6 @@ public class A093312 extends LeastLambdaSequence {
 
   /** Construct the sequence. */
   public A093312() {
-    super(1, (n, k) -> Predicates.PRIME.is(2 * n + 2 * k + 1) && Predicates.PRIME.is(Z.valueOf(2 * n).multiply(2 * k).add(1)), 1, ONE);
+    super(1, (n, k) -> Predicates.PRIME.is(2 * n + 2 * k + 1) && Predicates.PRIME.is(Z.valueOf(2L * n).multiply(2L * k).add(1)), 1, ONE);
   }
 }

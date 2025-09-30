@@ -17,6 +17,6 @@ public class A191300 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A191300() {
-    super(0, n -> n == 0 ? Z.ONE : Integers.SINGLETON.sum(1, n, k -> Z.NEG_ONE.pow(n - k).multiply(Rationals.SINGLETON.sum(0, 2 * n, i -> new Q(Z.TWO.pow(i)).multiply(Functions.STIRLING1.z(i + k, k)).multiply(Binomial.binomial(2 * n - k - 1, i + k - 1)).divide(Functions.FACTORIAL.z(i + k))).multiply(Functions.FACTORIAL.z(2 * n - 1)).num())));
+    super(0, n -> n == 0 ? Z.ONE : Integers.SINGLETON.sum(1, n, k -> Z.NEG_ONE.pow(n - k).multiply(Rationals.SINGLETON.sum(0, 2 * n, i -> new Q(Z.TWO.pow(i)).multiply(Functions.STIRLING1.z(i + k, k)).multiply(Binomial.binomial(2L * n - k - 1, i + k - 1)).divide(Functions.FACTORIAL.z(i + k))).multiply(Functions.FACTORIAL.z(2 * n - 1)).num())));
   }
 }

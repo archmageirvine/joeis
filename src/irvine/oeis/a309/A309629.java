@@ -13,6 +13,6 @@ public class A309629 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A309629() {
-    super(0, n -> Integers.SINGLETON.sum(1, n / 8, p -> Integers.SINGLETON.sum(p, (n - p) / 7, o -> Integers.SINGLETON.sum(o, (n - o - p) / 6, m -> Integers.SINGLETON.sum(m, (n - m - o - p) / 5, l -> Integers.SINGLETON.sum(l, (n - l - m - o - p) / 4, k -> Integers.SINGLETON.sum(k, (n - k - l - m - o - p) / 3, j -> Integers.SINGLETON.sum(j, (n - j - k - l - m - o - p) / 2, i -> Z.valueOf(i * (i & 1) + j * (j & 1) + k * (k & 1) + l * (l & 1) + m * (m & 1) + o * (o & 1) + p * (p & 1) + (n - i - j - k - l - m - o - p) * ((n - i - j - k - l - m - o - p) & 1))))))))));
+    super(0, n -> Integers.SINGLETON.sum(1, n / 8, p -> Integers.SINGLETON.sum(p, (n - p) / 7, o -> Integers.SINGLETON.sum(o, (n - o - p) / 6, m -> Integers.SINGLETON.sum(m, (n - m - o - p) / 5, l -> Integers.SINGLETON.sum(l, (n - l - m - o - p) / 4, k -> Integers.SINGLETON.sum(k, (n - k - l - m - o - p) / 3, j -> Integers.SINGLETON.sum(j, (n - j - k - l - m - o - p) / 2, i -> Z.valueOf((long) i * (i & 1) + (long) j * (j & 1) + (long) k * (k & 1) + (long) l * (l & 1) + (long) m * (m & 1) + (long) o * (o & 1) + (long) p * (p & 1) + (long) (n - i - j - k - l - m - o - p) * ((n - i - j - k - l - m - o - p) & 1))))))))));
   }
 }

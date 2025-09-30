@@ -13,6 +13,6 @@ public class A379222 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A379222() {
-    super(1, n -> Functions.VALUATION.z(Functions.SIGMA1.z(Z.valueOf(2 * n - 1).square()).add(1), Z.TWO));
+    super(1, n -> Functions.VALUATION.z(Functions.SIGMA1.z(Z.valueOf(2L * n - 1).square()).add(1), Z.TWO));
   }
 }

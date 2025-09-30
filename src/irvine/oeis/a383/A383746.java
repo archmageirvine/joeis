@@ -13,6 +13,6 @@ public class A383746 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A383746() {
-    super(1, 1, k -> Functions.DIGIT_SUM.z(Z.valueOf(k).pow(3 * k)).mod(k) == 0);
+    super(1, 1, k -> Functions.DIGIT_SUM.z(Z.valueOf(k).pow(3L * k)).mod(k) == 0);
   }
 }

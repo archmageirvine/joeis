@@ -14,6 +14,6 @@ public class A285021 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A285021() {
-    super(0, n -> new Q(Binomial.binomial(2 * n, n), Z.valueOf(20).pow(n)).den());
+    super(0, n -> new Q(Binomial.binomial(2L * n, n), Z.valueOf(20).pow(n)).den());
   }
 }

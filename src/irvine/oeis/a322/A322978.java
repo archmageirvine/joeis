@@ -13,6 +13,6 @@ public class A322978 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A322978() {
-    super(1, n -> Integers.SINGLETON.countdiv(2 * n, d -> d > 1 && ((d & 1) == 0) && Z.valueOf(d - 1).isProbablePrime()));
+    super(1, n -> Integers.SINGLETON.countdiv(2L * n, d -> d > 1 && ((d & 1) == 0) && Z.valueOf(d - 1).isProbablePrime()));
   }
 }

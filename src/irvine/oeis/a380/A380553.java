@@ -16,6 +16,6 @@ public class A380553 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A380553() {
-    super(1, n -> Rationals.SINGLETON.sumdiv(n, d -> new Q(Functions.MOEBIUS.z(n / d).multiply(Binomial.binomial(5 * d - 1, d - 1)).multiply(4), Z.valueOf(5 * d - 1))).num());
+    super(1, n -> Rationals.SINGLETON.sumdiv(n, d -> new Q(Functions.MOEBIUS.z(n / d).multiply(Binomial.binomial(5L * d - 1, d - 1)).multiply(4), Z.valueOf(5L * d - 1))).num());
   }
 }

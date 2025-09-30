@@ -15,6 +15,6 @@ public class A180591 extends PolynomialFieldSequence {
 
   /** Construct the sequence. */
   public A180591() {
-    super(0, "[1]", "x,B,/n,exp", 0, 0, 1, 1, new LambdaSequence(1, n -> Z.TWO.pow(Functions.VALUATION.z(2 * n, 2).square())));
+    super(0, "[1]", "x,B,/n,exp", 0, 0, 1, 1, new LambdaSequence(1, n -> Z.TWO.pow(Functions.VALUATION.z(2L * n, 2).square())));
   }
 }

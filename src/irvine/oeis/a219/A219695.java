@@ -13,6 +13,6 @@ public class A219695 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A219695() {
-    super(1, (term, n) -> Functions.SQRT.z(term.square().subtract(2 * n - 1)), "", new A377499());
+    super(1, (term, n) -> Functions.SQRT.z(term.square().subtract(2L * n - 1)), "", new A377499());
   }
 }

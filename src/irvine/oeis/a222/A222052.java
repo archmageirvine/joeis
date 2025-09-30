@@ -12,6 +12,6 @@ public class A222052 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A222052() {
-    super(0, (term, n) -> Z.valueOf(2 * n + 1).multiply(term), "", new A222050());
+    super(0, (term, n) -> Z.valueOf(2L * n + 1).multiply(term), "", new A222050());
   }
 }

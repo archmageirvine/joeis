@@ -13,6 +13,6 @@ public class A383476 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A383476() {
-    super(1, 1, k -> Predicates.PRIME.is(Binomial.binomial(2 * k, k).add(k)));
+    super(1, 1, k -> Predicates.PRIME.is(Binomial.binomial(2L * k, k).add(k)));
   }
 }

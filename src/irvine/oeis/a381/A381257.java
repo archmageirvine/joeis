@@ -12,6 +12,6 @@ public class A381257 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A381257() {
-    super(1, 0, k -> Z.SIX.pow(k).add(1).mod(6 * k + 1) == 0);
+    super(1, 0, k -> Z.SIX.pow(k).add(1).mod(6L * k + 1) == 0);
   }
 }

@@ -12,6 +12,6 @@ public class A386858 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A386858() {
-    super(1, n -> Z.valueOf(5 * n).multiply(n).divide(8));
+    super(1, n -> Z.valueOf(5L * n).multiply(n).divide(8));
   }
 }

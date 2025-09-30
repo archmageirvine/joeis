@@ -12,6 +12,6 @@ public class A081862 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A081862() {
-    super(1, n -> Functions.SIGMA.z(7, 2 * n - 1).subtract(Functions.SIGMA.z(1, 2 * n - 1)).divide(168));
+    super(1, n -> Functions.SIGMA.z(7, 2L * n - 1).subtract(Functions.SIGMA.z(1, 2L * n - 1)).divide(168));
   }
 }

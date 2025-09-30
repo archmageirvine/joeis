@@ -12,6 +12,6 @@ public class A384504 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A384504() {
-    super(0, n -> Functions.STIRLING1.z(n * n, n));
+    super(0, n -> Functions.STIRLING1.z((long) n * n, n));
   }
 }

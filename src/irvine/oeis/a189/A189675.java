@@ -14,6 +14,6 @@ public class A189675 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A189675() {
-    super(1, 1, 1, (n, k) -> Binomial.binomial(2 * n - k, n - k).multiply(Functions.FIBONACCI.z(k + 1)).multiply(Z.NEG_ONE.pow(k + n)).multiply(k).divide(2 * n - k));
+    super(1, 1, 1, (n, k) -> Binomial.binomial(2L * n - k, n - k).multiply(Functions.FIBONACCI.z(k + 1)).multiply(Z.NEG_ONE.pow(k + n)).multiply(k).divide(2L * n - k));
   }
 }

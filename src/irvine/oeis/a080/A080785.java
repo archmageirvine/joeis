@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080758.
+ * A080785 Least p-smooth number not less than n, where p is the smallest prime factor of n.
  * @author Sean A. Irvine
  */
 public class A080785 extends Sequence1 {

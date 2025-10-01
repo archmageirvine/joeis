@@ -10,13 +10,12 @@ import irvine.oeis.CachedSequence;
  */
 public class A077225 extends CachedSequence {
 
-  /** Construct the sequence. */
-  public A077225() {
+  protected A077225(final Z mStart) {
     super(0, Integer.class, (self, n) -> {
       if (n == 0) {
-        return Z.ONE;
+        return mStart;
       }
-      Z t = self.a(n - 1);
+      Z t = n == 1 ? Z.ONE : self.a(n - 1);
       while (true) {
         t = t.add(1);
         if (Predicates.SQUARE_FREE.is(t)) {
@@ -33,6 +32,11 @@ public class A077225 extends CachedSequence {
         }
       }
     });
+  }
+
+  /** Construct the sequence. */
+  public A077225() {
+    this(Z.ONE);
   }
 }
 

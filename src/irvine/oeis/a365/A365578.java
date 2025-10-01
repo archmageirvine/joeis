@@ -3,7 +3,7 @@ package irvine.oeis.a365;
 import irvine.oeis.transform.EulerTransform;
 
 /**
- * A365578 allocated for Jim Nastos.
+ * A365578 Number of asteroidal triple-free graphs on n vertices.
  * @author Sean A. Irvine
  */
 public class A365578 extends EulerTransform {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080758.
+ * A080786 Triangle T(n,k) = number of k-smooth numbers &lt;= n, read by rows.
  * @author Sean A. Irvine
  */
 public class A080786 extends Sequence1 {

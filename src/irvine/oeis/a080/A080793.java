@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A080758.
+ * A080793 Starting with a(0) = 1, smallest number k &gt; a(n-1) such that, for all a(m) with m &lt; n, k + a(m) is not squarefree.
  * @author Sean A. Irvine
  */
 public class A080793 extends CachedSequence {

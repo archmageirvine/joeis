@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 import irvine.oeis.gf.DenominatorGfSequence;
 
 /**
- * A202520 Denominator of [x^(4n+2)] in the Taylor series log(cosec(x)*sinh(x))= x^2/3 +2*x^6/2835 +2*x^10/467775 +4*x^14/127702575 +...
+ * A202520 Denominator of [x^(4n+2)] in the Taylor series log(cosec(x)*sinh(x)).
  * @author Sean A. Irvine
  */
 public class A202520 extends DenominatorGfSequence {

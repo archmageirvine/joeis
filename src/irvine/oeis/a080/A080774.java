@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002144;
 import irvine.oeis.a002.A002145;
 
 /**
- * A001358.
+ * A080774 Numbers with two prime factors: (4*i+1)*(4*j+3).
  * @author Sean A. Irvine
  */
 public class A080774 extends TwoParameterFormSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A080758.
+ * A080790 Binary emirps, primes whose binary reversal is a different prime.
  * @author Sean A. Irvine
  */
 public class A080790 extends FilterSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A387835 allocated for Felix Huber.
+ * A387835 Irregular table read by rows: T(n,k) is the greatest number m such that m^k divides n, where k = 1..A051903(n).
  * @author Sean A. Irvine
  */
 public class A387835 extends Sequence2 {

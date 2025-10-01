@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A080758.
+ * A389275 Decimal expansion of Sum_{i&gt;=2} 1/(i^12 - i^6).
  * @author Sean A. Irvine
  */
 public class A389275 extends DecimalExpansionSequence {

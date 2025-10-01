@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.Conjectural;
 
 /**
- * A080758.
+ * A080762 Positive numbers not of the form y^2 - x^3, x and y &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A080762 extends ComplementSequence implements Conjectural {

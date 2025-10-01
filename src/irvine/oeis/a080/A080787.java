@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080758.
+ * A080787 a(1)=a(2)=1; a(n) = a(n-1) + last decimal digit of a(n-2).
  * @author Sean A. Irvine
  */
 public class A080787 extends Sequence1 {

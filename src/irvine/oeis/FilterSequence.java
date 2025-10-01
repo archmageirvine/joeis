@@ -48,7 +48,7 @@ public class FilterSequence extends AbstractSequence {
   /** Power of 2 terms. */
   public static final Predicate<Z> POWER2 = k -> k.bitCount() == 1;
   /** Semiprime terms. */
-  public static final Predicate<Z> SEMIPRIME = k -> Jaguar.factor(k).isSemiprime();
+  public static final Predicate<Z> SEMIPRIME = k -> Jaguar.factorUpToSemiprime(k).isSemiprime();
 
   /** Divisible by index. */
   public static final BiPredicate<Integer, Z> DIVISIBLE_BY_INDEX = (k, v) -> v.mod(k) == 0;

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A386476 allocated for Juri-Stepan Gerasimov.
+ * A386476 Number of divisors d of n such that d^2 - 1 is relatively prime to n.
  * @author Sean A. Irvine
  */
 public class A386476 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A365796 allocated for Jim Nastos.
+ * A365796 Number of connected asteroidal triple-free graphs on n vertices.
  * @author Sean A. Irvine
  */
 public class A365796 extends ParallelGenerateGraphsSequence {

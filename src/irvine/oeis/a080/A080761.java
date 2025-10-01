@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**
- * A080758.
+ * A080761 Positive numbers of the form y^2 - x^3, x and y &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A080761 extends Sequence1 implements Conjectural {

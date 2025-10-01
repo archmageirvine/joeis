@@ -4,7 +4,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A057183 Numbers n such that (17^n + 1)/18 is a prime.
+ * A057183 Numbers k such that (17^k + 1)/18 is a prime.
  * @author Georg Fischer
  */
 public class A057183 extends PrimePositionSubsequence {

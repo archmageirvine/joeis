@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000027;
 
 /**
- * A080758.
+ * A080789 Numbers that are primes when turned upside down.
  * @author Sean A. Irvine
  */
 public class A080789 extends FilterSequence {

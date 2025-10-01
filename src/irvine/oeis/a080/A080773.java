@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080758.
+ * A080773 In binary representation: sum of number of 1's in prime factors of n (with repetition).
  * @author Sean A. Irvine
  */
 public class A080773 extends Sequence1 {

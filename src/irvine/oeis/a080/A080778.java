@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006882;
 
 /**
- * A080758.
+ * A080778 Double factorial primes; values k for which k!! + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A080778 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A080758.
+ * A080779 Triangle read by rows: n-th row gives expansion of the series for HarmonicNumber(n, -r).
  * @author Sean A. Irvine
  */
 public class A080779 extends Sequence0 {

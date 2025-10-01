@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080758.
+ * A389187 allocated for Michael S. Branicky.
  * @author Sean A. Irvine
  */
 public class A389187 extends Sequence1 {

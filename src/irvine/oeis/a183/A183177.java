@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A183177 Numbers n such that (10^(2n+1)+15*10^n-1)/3 is prime.
+ * A183177 Numbers k such that (10^(2*k+1)+15*10^k-1)/3 is prime.
  * @author Sean A. Irvine
  */
 public class A183177 extends FilterNumberSequence {

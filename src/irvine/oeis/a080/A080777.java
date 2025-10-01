@@ -6,7 +6,7 @@ import irvine.util.array.DynamicIntArray;
 import irvine.util.string.English;
 
 /**
- * A080758.
+ * A080777 a(n), when spelled in English, is the smallest positive integer with exactly n letters.
  * @author Sean A. Irvine
  */
 public class A080777 extends Sequence3 {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A389009 allocated for Dwight Boddorf.
+ * A389009 Numbers of the form j^k*h^i = k^j*i^h where h, i, j, and k are distinct integers greater than one.
  * @author Sean A. Irvine
  */
 public class A389009 extends Sequence1 {

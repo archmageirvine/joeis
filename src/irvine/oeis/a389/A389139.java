@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A080756.
+ * A389139 Primes that remain prime when their digits are rotated once to the right in both binary and decimal.
  * @author Sean A. Irvine
  */
 public class A389139 extends FilterSequence {

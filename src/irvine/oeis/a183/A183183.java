@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A183183 Numbers n such that (7*10^(2n+1)+18*10^n-7)/9 is prime.
+ * A183183 Numbers k such that (7*10^(2*k+1)+18*10^k-7)/9 is prime.
  * @author Sean A. Irvine
  */
 public class A183183 extends FilterNumberSequence {

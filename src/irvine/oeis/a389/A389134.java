@@ -8,7 +8,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A389134 allocated for Kelvin Voskuijl.
+ * A389134 Decimal expansion of the icosahedral root of 2.
  * @author Sean A. Irvine
  */
 public class A389134 extends DecimalExpansionSequence {

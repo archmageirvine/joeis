@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080758.
+ * A080772 Numbers of numbers &lt;= n having prime factors &lt;= k, triangular array read by rows.
  * @author Sean A. Irvine
  */
 public class A080772 extends Sequence1 {

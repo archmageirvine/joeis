@@ -3,15 +3,15 @@ package irvine.oeis.a387;
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A387736 Number of partitions of n such that the largest part is &gt;= n/2, adjacent parts differ by at least 2, and the smallest part &gt;= 2.
  * @author Sean A. Irvine
  */
-public class A387736 extends Sequence1 {
+public class A387736 extends Sequence0 {
 
-  private int mN = 0;
+  private int mN = -1;
   private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int m) {

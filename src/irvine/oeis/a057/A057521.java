@@ -13,6 +13,7 @@ public class A057521 extends Sequence1 {
 
   private final Sequence mA055231 = new A055231();
   protected long mN;
+
   /** Construct the sequence. */
   public A057521() {
     mN = 0;

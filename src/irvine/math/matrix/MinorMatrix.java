@@ -4,7 +4,6 @@ import irvine.math.api.Matrix;
 
 /**
  * Proxy for matrix with a deleted row and column.
- *
  * @author Sean A. Irvine
  * @param <E> element type
  */

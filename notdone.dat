@@ -2701,3 +2701,5 @@ A080632 Consider 3 X 3 X 3 Rubik cube, but consider only positions of edges; seq
 A080638 Number of positions that the 3 X 3 X 3 Rubik cube puzzle can be in after exactly n moves, up to equivalence under the full group of order 48 of the cube and with a half-turn is considered to be 1 move.
 A080690 Number of acyclic orientations of n X n grid graph.
 A080691 Number of spanning forests of the n X n grid graph.
+A080865 Order of symmetry groups of n points on 3-dimensional sphere with minimal distance between them maximized, also known as hostile neighbor or Tammes problem.
+A080866 Number of equal shortest edges in the solutions of the Tammes' problem.

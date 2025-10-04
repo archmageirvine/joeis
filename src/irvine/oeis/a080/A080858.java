@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080816.
+ * A080858 Triangle read by rows: T(n,k), n &gt;=1, 0 &lt;= k &lt;= C(n,k), = number of n X n symmetric positive definite matrices with 2's on the main diagonal and 1's and 0's elsewhere and with k 1's above the diagonal.
  * @author Sean A. Irvine
  */
 public class A080858 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a046.A046117;
 
 /**
- * A080816.
+ * A080841 Number of pairs (p,q) of (not necessarily consecutive) primes with q-p = 6 and q &lt; 10^n.
  * @author Sean A. Irvine
  */
 public class A080841 extends A046117 {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a024.A024493;
 
 /**
- * A080816.
+ * A080850 Number triangle related to a problem of Knuth.
  * @author Sean A. Irvine
  */
 public class A080850 extends Sequence1 {

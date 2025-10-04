@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080816.
+ * A080869 a(n+1) = floor( (a(n) + 1)^(1 + 1/n) ), with a(1) = 1.
  * @author Sean A. Irvine
  */
 public class A080869 extends Sequence1 {

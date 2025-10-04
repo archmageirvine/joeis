@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A080816.
+ * A080829 Primes that terminate at 20,10,5 in the 3x-1 problem: Repeat, if x is even divide by 2 else multiply by 3 and subtract 1, until 5 is reached.
  * @author Sean A. Irvine
  */
 public class A080829 extends A000040 {

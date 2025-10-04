@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.transform.GilbreathTransformSequence;
 
 /**
- * A080816.
+ * A080839 Number of positive increasing integer sequences of length n with Gilbreath transform (that is, the diagonal of leading successive absolute differences) given by {1,1,1,1,1,...}.
  * @author Sean A. Irvine
  */
 public class A080839 extends Sequence1 {

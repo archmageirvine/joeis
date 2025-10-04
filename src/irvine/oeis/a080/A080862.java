@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a117.A117929;
 
 /**
- * A078299.
+ * A080862 Numbers which can be expressed as the sum of two distinct primes in exactly six ways.
  * @author Sean A. Irvine
  */
 public class A080862 extends FilterPositionSequence {

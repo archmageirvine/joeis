@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080816.
+ * A080898 a(1)=2; for n&gt;1, a(n+1) = least prime &gt; a(n) and congruent to a prime modulo prime successor of a(n).
  * @author Sean A. Irvine
  */
 public class A080898 extends Sequence1 {

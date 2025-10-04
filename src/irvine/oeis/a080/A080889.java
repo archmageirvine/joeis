@@ -7,7 +7,7 @@ import irvine.math.series.SeriesRing;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A080816.
+ * A080889 Expansion of 1/Sum_{k&gt;=0} (-x)^Fibonacci(k).
  * @author Sean A. Irvine
  */
 public class A080889 extends GfSequence {

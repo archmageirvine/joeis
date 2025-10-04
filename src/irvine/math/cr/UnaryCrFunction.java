@@ -96,5 +96,15 @@ public abstract class UnaryCrFunction implements Serializable {
     return new MonotoneDerivative(this, low, high);
   }
 
+  /**
+   * Compute the definite integral of a function.
+   * @param low low end
+   * @param high high end
+   * @return integral
+   */
+  public CR definiteIntegral(final CR low, final CR high) {
+    return new DefiniteIntegral(this, low, high);
+  }
+
 }
 

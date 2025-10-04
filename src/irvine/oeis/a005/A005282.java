@@ -15,7 +15,12 @@ public class A005282 extends MemorySequence {
   private final Z mFirst;
   private final Z mSecond;
 
-  protected A005282(final Z first, final Z second) {
+  /**
+   * Construct a Mian-Chowla sequence
+   * @param first first term
+   * @param second second term
+   */
+  public A005282(final Z first, final Z second) {
     mFirst = first;
     mSecond = second;
     setOffset(1); // SAI: For some reason A058335 breaks if this is super(1) instead

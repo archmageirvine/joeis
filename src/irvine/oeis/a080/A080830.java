@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A080816.
+ * A080830 Primes that terminate at 68,34,17 in the 3x-1 problem: Repeat, if x is even divide by 2 else multiply by 3 and subtract 1, until 17 is reached.
  * @author Sean A. Irvine
  */
 public class A080830 extends A000040 {

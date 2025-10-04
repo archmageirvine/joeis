@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a065.A065091;
 
 /**
- * A080816.
+ * A080899 Primes p(k) such that every composite number between p(k) and p(k+1) has exactly three distinct prime factors.
  * @author Sean A. Irvine
  */
 public class A080899 extends A065091 {

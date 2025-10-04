@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080816.
+ * A085657 Number of n X n symmetric positive definite matrices with 2's on the main diagonal and 1's and 0's elsewhere.
  * @author Sean A. Irvine
  */
 public class A085657 extends Sequence1 {

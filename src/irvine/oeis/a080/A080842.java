@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080816.
+ * A080842 Numbers in the x/3 + 1 conjecture: Repeat until 1 is reached: if x is divisible by 3 then divide by 3, otherwise add 1.
  * @author Sean A. Irvine
  */
 public class A080842 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.oeis.a202.A202343;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A387380 allocated for Clark Kimberling.
+ * A389268 allocated for Chris R. Rehmann.
  * @author Sean A. Irvine
  */
 public class A389268 extends DecimalExpansionSequence {

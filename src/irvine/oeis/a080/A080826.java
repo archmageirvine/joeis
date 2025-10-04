@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A080816.
+ * A080826 Successive factors of the Thue-Morse word defined by sequence A001285.
  * @author Sean A. Irvine
  */
 public class A080826 extends CachedSequence {

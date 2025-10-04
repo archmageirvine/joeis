@@ -6,7 +6,7 @@ import irvine.oeis.a003.A003849;
 import irvine.oeis.a010.A010060;
 
 /**
- * A080816.
+ * A080886 Boolean OR of (0,1) versions of Thue-Morse word (A010060) and Fibonacci word (A003849).
  * @author Sean A. Irvine
  */
 public class A080886 extends Combiner {

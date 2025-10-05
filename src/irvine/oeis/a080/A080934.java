@@ -12,7 +12,7 @@ public class A080934 extends AbstractSequence {
 
   // After Alois P. Heinz
 
-  public A080934(final int offset) {
+  protected A080934(final int offset) {
     super(offset);
   }
 

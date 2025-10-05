@@ -13,9 +13,7 @@ import irvine.oeis.a005.A005282;
  */
 public class A080933 extends Sequence2 implements Conjectural {
 
-  // todo this suggests some existing values in the OEIS are wrong!
-
-  private static final long HEURISTIC = 100000;
+  private static final long HEURISTIC = 500000;
   private long mN = 1;
 
   @Override
@@ -23,7 +21,7 @@ public class A080933 extends Sequence2 implements Conjectural {
     final Z v = Z.valueOf(++mN);
     final A005282 s = new A005282(Z.ONE, v);
     final HashSet<Z> diffs = new HashSet<>();
-    Z a = v;
+    Z a = Z.ZERO;
     while (diffs.size() < HEURISTIC) {
       final Z t = s.next();
       for (final Z u : s) {

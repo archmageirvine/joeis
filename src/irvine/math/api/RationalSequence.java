@@ -19,5 +19,12 @@ public interface RationalSequence {
    * be computed or represented.
    */
   Q nextQ();
+
+  /**
+   * Return the index of the first term of this sequence.
+   * @return the offset
+   */
+  int getOffset();
+
 }
 

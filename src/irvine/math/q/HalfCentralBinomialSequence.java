@@ -19,5 +19,10 @@ public class HalfCentralBinomialSequence implements RationalSequence {
     }
     return mA;
   }
+
+  @Override
+  public int getOffset() {
+    return 1;
+  }
 }
 

@@ -47,6 +47,11 @@ public class A003280 extends Sequence0 {
       }
       return mC;
     }
+
+    @Override
+    public int getOffset() {
+      return 0;
+    }
   }
 
   protected Q b0() {

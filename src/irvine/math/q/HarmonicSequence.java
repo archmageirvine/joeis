@@ -34,5 +34,10 @@ public class HarmonicSequence implements RationalSequence, Serializable {
     mA = mA.add(new Q(1, ++mN).pow(mExponent));
     return mA;
   }
+
+  @Override
+  public int getOffset() {
+    return 1;
+  }
 }
 

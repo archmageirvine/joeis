@@ -41,6 +41,11 @@ public class A003301 extends Sequence0 {
       }
       return mB;
     }
+
+    @Override
+    public int getOffset() {
+      return 0;
+    }
   }
 
   private final B003301 mSeq = new B003301(b0(), b1());

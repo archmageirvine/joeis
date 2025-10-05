@@ -12,10 +12,6 @@ import irvine.oeis.Sequence0;
  */
 public class A051716 extends Sequence0 {
 
-  /*
-  C:=proc(n) if n=0 then RETURN(1); fi; if n mod 2 = 0 then RETURN(bernoulli(n)+bernoulli(n-1)); else RETURN(-bernoulli(n)-bernoulli(n-1)); fi; end;
-   */
-
   private final RationalSequence mC = new RationalSequence() {
 
     private long mN = -1;
@@ -32,6 +28,11 @@ public class A051716 extends Sequence0 {
         final Q res = mA.add(t);
         return (mN & 1) == 0 ? res : res.negate();
       }
+    }
+
+    @Override
+    public int getOffset() {
+      return 0;
     }
   };
 

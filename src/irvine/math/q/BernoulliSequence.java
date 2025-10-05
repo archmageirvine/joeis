@@ -12,6 +12,7 @@ import irvine.util.array.LongDynamicArray;
 public class BernoulliSequence implements RationalSequence {
 
   private long mN = -1;
+  private int mOffset;
   private final LongDynamicArray<Q> mB = new LongDynamicArray<>();
   {
     mB.set(0, Q.ONE);
@@ -23,9 +24,15 @@ public class BernoulliSequence implements RationalSequence {
    * @param skip number of terms to be skipped
    */
   public BernoulliSequence(final long skip) {
+    mOffset = (int) skip;
     for (long k = 0; k < skip; ++k) {
       nextQ();
     }
+  }
+
+  @Override
+  public int getOffset() {
+    return mOffset;
   }
 
   @Override

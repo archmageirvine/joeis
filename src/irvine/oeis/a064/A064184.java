@@ -31,6 +31,11 @@ public class A064184 extends Sequence0 {
       mB = t;
       return t;
     }
+
+    @Override
+    public int getOffset() {
+      return 0;
+    }
   };
 
   @Override

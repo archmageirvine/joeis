@@ -11,6 +11,6 @@ public class A065738 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A065738() {
-    super(1, new A000984().skip(), k -> k.sqrt().square());
+    super(0, new A000984(), k -> k.sqrt().square());
   }
 }

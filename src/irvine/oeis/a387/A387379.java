@@ -17,11 +17,8 @@ public class A387379 extends Sequence1 {
     long cnt = 0;
     for (long u = 1; u < mN; ++u) {
       final long t = mN * (mN - u);
-      for (long v = 1; v < mN; ++v) {
+      for (long v = 2; v < mN; ++v) {
         if (t % v == 0 && t / v - v > 0) {
-          if (mN == 2) {
-            System.out.println("(" + mN + "," + u + "," + v + "," + (t / v - v) + ")");
-          }
           ++cnt;
         }
       }

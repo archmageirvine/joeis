@@ -247,7 +247,37 @@ public class Permutation {
   public static int countRuns(final int[] p) {
     int runs = 1;
     for (int k = 2; k < p.length; ++k) {
-      if (((p[k] > p[k - 1]) && p[k - 1] < p[k - 2]) || (p[k] < p[k - 1] && p[k - 1] > p[k - 2])) {
+      if ((p[k] > p[k - 1] && p[k - 1] < p[k - 2]) || (p[k] < p[k - 1] && p[k - 1] > p[k - 2])) {
+        ++runs;
+      }
+    }
+    return runs;
+  }
+
+  /**
+   * Count the number of runs in the permutation.
+   * @param p permutation
+   * @return number of runs
+   */
+  public static int countIncreasingRuns(final int[] p) {
+    int runs = 1;
+    for (int k = 1; k < p.length; ++k) {
+      if (p[k] < p[k - 1]) {
+        ++runs;
+      }
+    }
+    return runs;
+  }
+
+  /**
+   * Count the number of runs in the permutation.
+   * @param p permutation
+   * @return number of runs
+   */
+  public static int countDecreasingRuns(final int[] p) {
+    int runs = 1;
+    for (int k = 1; k < p.length; ++k) {
+      if (p[k] > p[k - 1]) {
         ++runs;
       }
     }

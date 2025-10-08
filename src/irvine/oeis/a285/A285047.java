@@ -6,13 +6,13 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.transform.RationalProductTransform;
 
 /**
- * A285243 Expansion of Product_{k&gt;=1} 1/(1 - k*x^(k^2))^k.
+ * A285047 Expansion of Product_{k&gt;=1} 1/(1-x^(k^2))^k.
  * @author Georg Fischer
  */
-public class A285243 extends RationalProductTransform {
+public class A285047 extends RationalProductTransform {
 
   /** Construct the sequence. */
-  public A285243() {
-    super(0, new Builder().fl(k -> Functions.SQRT.l(k)).gl(k -> Predicates.SQUARE.is(k) ? Functions.SQRT.l(k) : 0L));
+  public A285047() {
+    super(0, new Builder().gl(k -> Predicates.SQUARE.is(k) ? 1L : 0L).fl(k -> Functions.SQRT.l(k)));
   }
 }

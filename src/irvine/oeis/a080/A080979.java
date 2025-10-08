@@ -11,7 +11,7 @@ import irvine.oeis.a014.A014486;
  */
 public class A080979 extends A014486 {
 
-  static SExpression branchReducedZigzagTree(SExpression bt) {
+  static SExpression branchReducedZigzagTree(final SExpression bt) {
     if (bt.isPair()) {
       if (bt.car().isPair() && !bt.caar().isEmpty() && bt.cdar().isEmpty()) {
         bt.setCar(bt.caar());

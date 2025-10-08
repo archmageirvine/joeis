@@ -2703,11 +2703,6 @@ A080690 Number of acyclic orientations of n X n grid graph.
 A080691 Number of spanning forests of the n X n grid graph.
 A080865 Order of symmetry groups of n points on 3-dimensional sphere with minimal distance between them maximized, also known as hostile neighbor or Tammes problem.
 A080866 Number of equal shortest edges in the solutions of the Tammes' problem.
-A080968 Orbit size of each branch-reduced tree encoded by A080981(n) under Donaghey's "Map M" Catalan automorphism.
-A080969 Orbit size of each non-branch-reduced tree encoded by A080971(n) under Donaghey's "Map M" Catalan automorphism.
-A080970 A014486-indices of the trees whose interior zigzag-tree (Stanley's c) is not branch-reduced (in the sense defined by Donaghey).
-A080971 A014486-encodings of the trees whose interior zigzag-tree (Stanley's c) is not branch-reduced (in the sense defined by Donaghey).
-A080972 a(n) = A080969(n)/A080967(A080979(A080970(n))).
 A080973 A014486-encoding of the "Moose trees".
 A080974 A063171-encoding of the "Moose trees".
 A080975 A014486-index of the "Moose trees".

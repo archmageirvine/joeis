@@ -165,23 +165,33 @@ public final class SExpression extends ArrayList<SExpression> {
 
   /**
    * Return the first element of the first element in the expression.
-   * @return first of the first element.
+   * @return first of the first element
    */
   public SExpression caar() {
     return car().car();
   }
 
   /**
-   * Return the remaining elements of the first element in the expression.
-   * @return tail of the first element.
+   * Return the first element of the remaining elements in the expression.
+   * Essentially the second element of the list.
+   * @return head of the remaining elements
    */
   public SExpression cadr() {
+    return get(1);
+    //return cdr().car();
+  }
+
+  /**
+   * Return the remaining elements of the first element in the expression.
+   * @return tail of the first element
+   */
+  public SExpression cdar() {
     return car().cdr();
   }
 
   /**
    * Return the tail of the tail.
-   * @return tail of the fail.
+   * @return tail of the fail
    */
   public SExpression cddr() {
     return cdr().cdr();

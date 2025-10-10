@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A000560 Number of ways of folding a strip of n labeled stamps.
+ * A000560 Number of symmetric ways of folding a strip of n labeled stamps.
  * @author Sean A. Irvine
  */
 public class A000560 extends AbstractSequence {

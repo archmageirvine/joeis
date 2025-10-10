@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.math.z.Z;
 
 /**
- * A080767 A unitary phi reciprocal amicable number: consider two different numbers a, b which satisfy the following equation for some integer k: uphi(a)=uphi(b)=1/k*a*b/(a-b); or equivalently, 1/uphi(a)=1/uphi(b)=k*(-1/a+1/b); sequence gives b numbers.
+ * A080767 A unitary phi reciprocal amicable number: consider two different numbers r, s which satisfy the following equation for some integer k: uphi(r) = uphi(s) = (1/k) * r * s / (r-s); or equivalently, 1/uphi(r) = 1/uphi(s) = k * (1/s - 1/r); sequence gives s numbers.
  * @author Sean A. Irvine
  */
 public class A080767 extends A080766 {

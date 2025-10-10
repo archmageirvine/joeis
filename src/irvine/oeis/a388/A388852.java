@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388852 allocated for Daniel Hoyt.
+ * A388852 Decimal expansion of 6*Sum_{k&gt;=0} 12^(-2^k).
  * @author Sean A. Irvine
  */
 public class A388852 extends DecimalExpansionSequence {

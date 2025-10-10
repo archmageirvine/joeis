@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A013233 Expansion of e.g.f.: sech(log(x+1)-arcsin(x))=1-3/4!*x^4+10/5!*x^5-100/6!*x^6+525/7!*x^7...
+ * A013233 Expansion of e.g.f.: sech(log(x+1)-arcsin(x)).
  * @author Sean A. Irvine
  */
 public class A013233 extends Sequence0 {

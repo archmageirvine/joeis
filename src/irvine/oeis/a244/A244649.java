@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A244649 Decimal expansion of the sum of the reciprocals of the Dodecagonal numbers (A051624).
+ * A244649 Decimal expansion of the sum of the reciprocals of the 12-gonal (or dodecagonal) numbers (A051624).
  * @author Georg Fischer
  */
 public class A244649 extends DecimalExpansionSequence {

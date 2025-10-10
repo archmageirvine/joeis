@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080910.
+ * A389119 Numbers that only use the digits 0 and 1 in both base 3 and 10.
  * @author Sean A. Irvine
  */
 public class A389119 extends Sequence1 {

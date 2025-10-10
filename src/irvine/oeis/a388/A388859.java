@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A080910.
+ * A388859 a(n) is the smallest number k such that A384204(k) = n.
  * @author Sean A. Irvine
  */
 public class A388859 extends Sequence0 {

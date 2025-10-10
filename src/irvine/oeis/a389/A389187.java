@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389187 allocated for Michael S. Branicky.
+ * A389187 a(n) is the least number ending in at least n identical digits that has exactly n distinct prime divisors.
  * @author Sean A. Irvine
  */
 public class A389187 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A101861 n*(n+5)*(50+45*n+n^2)/24.
+ * A101861 a(n) = n*(n+5)*(50+45*n+n^2)/24.
  * @author Sean A. Irvine
  */
 public class A101861 extends LinearRecurrence {

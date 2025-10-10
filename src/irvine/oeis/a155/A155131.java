@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A155131 Numbers n such that 2^44+n is prime.
+ * A155131 Numbers k such that 2^44+k is prime.
  * @author Georg Fischer
  */
 public class A155131 extends PrimePositionSubsequence {

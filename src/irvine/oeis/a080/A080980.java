@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.DistinctSequence;
 
 /**
- * A080910.
+ * A080980 A014486-indices of the trees whose interior zigzag-tree (Stanley's c) is branch-reduced (in the sense defined by Donaghey).
  * @author Sean A. Irvine
  */
 public class A080980 extends DistinctSequence {

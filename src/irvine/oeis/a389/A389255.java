@@ -5,7 +5,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.util.Permutation;
 
 /**
- * A388139 Total number of fixed points in all heapable permutations of length n.
+ * A389255 Triangle read by rows: T(n,k) = number of heapable permutations of length n with exactly k decreasing runs.
  * @author Sean A. Irvine
  */
 public class A389255 extends AbstractSequence {

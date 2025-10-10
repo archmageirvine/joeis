@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A231885 Primes of the form Catalan(n) - 1.
+ * A231885 Primes of the form Catalan(k) - 1.
  * @author Georg Fischer
  */
 public class A231885 extends FilterSequence {

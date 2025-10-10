@@ -6,7 +6,7 @@ package irvine.oeis.a155;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A155135 Integers n such that n^3+28*n^2 is a square.
+ * A155135 Integers k such that k^3+28*k^2 is a square.
  * @author Georg Fischer
  */
 public class A155135 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A080910.
+ * A080955 Square array of numbers related to the incomplete gamma function, read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A080955 extends Sequence0 {

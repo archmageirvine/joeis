@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A036038 Triangle of multinomial coefficients.
+ * A036038 Triangle T(n,k) read by rows: multinomial coefficients for the partitions of n listed in Abramowitz-Stegun order, 1 &lt;= k &lt;= A000041(n).
  * @author Sean A. Irvine
  */
 public class A036038 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A365194 G.f. satisfies A(x) = 1 + x*A(x)^5 / (1 - x*A(x)^6).
+ * A365194 G.f. A(x) satisfies A(x) = 1 + x*A(x)^5 / (1 - x*A(x)^6).
  * a(n)=sum(k=0,n,binom(6*n-k+1,k) * binom(n-1,n-k)/(6*n-k+1))
  * @author Georg Fischer
  */

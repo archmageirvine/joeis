@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A098664 E.g.f. BesselI(0,4x)+BesselI(1,4x)/2.
+ * A098664 Expansion of e.g.f. BesselI(0,4*x)+BesselI(1,4*x)/2.
  * Recurrence: -(3*n+1)*(n+1)*a(n)+8*a(n-1)+16*(3*n+4)*(n-1)*a(n-2) = 0.
  * @author Georg Fischer
  */

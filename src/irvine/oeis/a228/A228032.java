@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A228032 Primes of the form 8^n + 3.
+ * A228032 Primes of the form 8^k + 3.
  * @author Georg Fischer
  */
 public class A228032 extends PrimeSubsequence {

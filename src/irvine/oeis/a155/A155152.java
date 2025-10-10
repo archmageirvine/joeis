@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A155152 Numbers n such that 13n^2+3n+1 is prime.
+ * A155152 Numbers k such that 13*k^2 + 3*k + 1 is prime.
  * @author Georg Fischer
  */
 public class A155152 extends PrimePositionSubsequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A364742 G.f. satisfies A(x) = 1 / (1 - x*(1 + x*A(x))^3).
+ * A364742 G.f. A(x) satisfies A(x) = 1 / (1 - x*(1 + x*A(x))^3).
  * a(n) = sum(k=0,n,binom(n+1,k)*binom(3*k,n-k))/(n+1);
  * @author Georg Fischer
  */

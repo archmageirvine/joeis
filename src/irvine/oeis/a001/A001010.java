@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000682;
 import irvine.oeis.a007.A007822;
 
 /**
- * A001010 Number of symmetric foldings of a strip of n stamps.
+ * A001010 Number of symmetric foldings of a strip of n blank stamps.
  * @author Sean A. Irvine
  */
 public class A001010 extends InterleaveSequence {

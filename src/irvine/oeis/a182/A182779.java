@@ -6,7 +6,7 @@ import irvine.oeis.a118.A118851;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A182779 a(n) = A049019(n) * A118851(n). Irregular table read by rows.
+ * A182779 Irregular triangle T(n,k) = A049019(n,k) * A118851(n,k), read by rows, 1 &lt;= k &lt;= A000041(n).
  * @author Georg Fischer
  */
 public class A182779 extends MultiTransformSequence {

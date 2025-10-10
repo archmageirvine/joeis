@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A228028 Primes of the form 5^n + 4.
+ * A228028 Primes of the form 5^k + 4.
  * @author Georg Fischer
  */
 public class A228028 extends PrimeSubsequence {

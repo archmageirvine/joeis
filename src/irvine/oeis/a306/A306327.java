@@ -5,7 +5,7 @@ import irvine.oeis.a008.A008683;
 import irvine.oeis.transform.RationalProductTransform;
 
 /**
- * A306327 Expansion of Product_{k&gt;=1} 1/(1 - mu(k)*x^k), where mu() is the M√∂bius function (A008683).
+ * A306327 Expansion of Product_{k&gt;=1} 1/(1 - mu(k)*x^k), where mu() is the M\u00f6bius function (A008683).
  * @author Georg Fischer
  */
 public class A306327 extends RationalProductTransform {

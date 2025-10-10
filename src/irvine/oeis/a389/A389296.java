@@ -4,7 +4,7 @@ import irvine.oeis.InverseSequence;
 import irvine.oeis.a386.A386476;
 
 /**
- * A080910.
+ * A389296 Smallest k for which A386476(k) = n.
  * @author Sean A. Irvine
  */
 public class A389296 extends InverseSequence {

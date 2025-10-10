@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A115418 Define a k-th-power loop of length m&gt;1 to be a circular permutation of the numbers 1 to m such that the sum of any two consecutive numbers is a perfect k-th-power; these numbers are the lengths of the possible k-th-power loops.
+ * A115418 a(n) is the shortest possible n-th-power loop where an n-th-power loop of length m &gt; 1 is a circular permutation of the numbers 1 to m such that the sum of any two consecutive numbers is a perfect n-th power.
  * @author Sean A. Irvine
  */
 public class A115418 extends Sequence1 {

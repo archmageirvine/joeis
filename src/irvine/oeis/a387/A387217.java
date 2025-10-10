@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A388139.
+ * A387217 The smallest prime factor of (10*n + 5)^4 + 4^(10*n + 5).
  * @author Sean A. Irvine
  */
 public class A387217 extends Sequence0 {

@@ -3,7 +3,7 @@ package irvine.oeis.a389;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A005224.
+ * A389305 Numbers that can terminate in 3 by successively dividing a contiguous substring of digits by 2 but cannot terminate in 1.
  * @author Sean A. Irvine
  */
 public class A389305 extends FiniteSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A005224.
+ * A389362 Number of divisors d of n such that d^2 - 1 is not relatively prime to n.
  * @author Sean A. Irvine
  */
 public class A389362 extends Sequence1 {

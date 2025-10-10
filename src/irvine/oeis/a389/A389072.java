@@ -5,7 +5,7 @@ import irvine.oeis.a325.A325974;
 import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
- * A389072 M√∂bius transform of A325974, where A325974 is the arithmetic mean of {sum of non-unitary divisors} and {sum of nonsquarefree divisors}.
+ * A389072 M\u00f6bius transform of A325974, where A325974 is the arithmetic mean of {sum of non-unitary divisors} and {sum of nonsquarefree divisors}.
  * @author Georg Fischer
  */
 public class A389072 extends MobiusTransformSequence {

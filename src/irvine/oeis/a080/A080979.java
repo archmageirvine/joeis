@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a014.A014486;
 
 /**
- * A080910.
+ * A080979 Each tree encoded in A014486 mapped to the corresponding branch-reduced zigzag-tree (positions in A014486).
  * @author Sean A. Irvine
  */
 public class A080979 extends A014486 {

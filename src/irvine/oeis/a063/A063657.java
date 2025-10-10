@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063657 Numbers with property that truncated square root is unequal to rounded square root.
+ * A063657 Numbers whose truncated square root is unequal to rounded square root.
  * Also: skip 1, take 0, skip 2, take 1, skip 3, take 2, -&gt; (3, 7, 8, 13, 14, 15, 21, 22)
  * @author Georg Fischer
  */

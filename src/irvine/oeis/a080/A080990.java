@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.math.z.Z;
 
 /**
- * A080910.
+ * A080990 Ratios of successive terms of A080988.
  * @author Sean A. Irvine
  */
 public class A080990 extends A080988 {

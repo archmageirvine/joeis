@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A080910.
+ * A389308 Lexicographically earliest sequence, where a(n+1) - a(n) is unique and if a(i) = a(n+1), i &lt;= n, then the minimal n+1 - i is also unique.
  * @author Sean A. Irvine
  */
 public class A389308 extends CachedSequence {

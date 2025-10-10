@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002997;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A080910.
+ * A389338 Final digit of Carmichael(n).
  * @author Sean A. Irvine
  */
 public class A389338 extends SimpleTransformSequence {

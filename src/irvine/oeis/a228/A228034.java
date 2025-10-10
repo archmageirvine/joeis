@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A228034 Primes of the form 9^n + 2.
+ * A228034 Primes of the form 9^k + 2.
  * @author Georg Fischer
  */
 public class A228034 extends PrimeSubsequence {

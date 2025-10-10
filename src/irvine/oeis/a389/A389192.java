@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A080910.
+ * A389192 Lexicographically earliest sequence, where a(n) - a(n-1) is unique, and a(a(n)) = n.
  * @author Sean A. Irvine
  */
 public class A389192 extends Sequence0 {

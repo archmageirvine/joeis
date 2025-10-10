@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012742 arctan(arctanh(x)*cos(x))=x-3/3!*x^3+53/5!*x^5-1799/7!*x^7...
+ * A012742 Expansion of e.g.f. arctan(arctanh(x)*cos(x)) (odd powers only).
  * @author Sean A. Irvine
  */
 public class A012742 extends Sequence0 {

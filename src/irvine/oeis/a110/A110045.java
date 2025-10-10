@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.RationalProductTransform;
 
 /**
- * A110045 Number of hierarchical orderings (&quot;societies&quot;) of n unlabeled elements (&quot;individuals&quot;) with at least two occupied levels.
+ * A110045 Number of hierarchical orderings ("societies") of n unlabeled elements ("individuals") with at least two occupied levels.
  * @author Georg Fischer
  */
 public class A110045 extends RationalProductTransform {

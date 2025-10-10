@@ -4,7 +4,7 @@ package irvine.oeis.a108;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A108308 Expansion of 1/(1-x^2*c(2x)), c(x) the g.f. of A000108.
+ * A108308 Expansion of 1/(1-x^2*c(2*x)), c(x) the g.f. of A000108.
  * 1/(1-1/4*x*(1-(1-8*x)^(1/2)))
  * @author Georg Fischer
  */

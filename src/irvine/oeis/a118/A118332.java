@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A118332 Primes of the form n!! + (n+1)!!.
+ * A118332 Primes of the form k!! + (k+1)!!.
  * @author Georg Fischer
  */
 public class A118332 extends FiniteSequence {

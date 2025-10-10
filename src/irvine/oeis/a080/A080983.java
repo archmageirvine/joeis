@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080910.
+ * A080983 Smallest triangular number having n^2 as divisor.
  * @author Sean A. Irvine
  */
 public class A080983 extends Sequence1 {

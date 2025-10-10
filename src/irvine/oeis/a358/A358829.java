@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000041;
 import irvine.oeis.transform.RationalProductTransform;
 
 /**
- * A358829 Number of twice-partitions of n with no (1)&apos;s.
+ * A358829 Number of twice-partitions of n with no (1)'s.
  * @author Georg Fischer
  */
 public class A358829 extends RationalProductTransform {

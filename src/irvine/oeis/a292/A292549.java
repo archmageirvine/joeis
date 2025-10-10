@@ -5,7 +5,7 @@ import irvine.oeis.a027.A027306;
 import irvine.oeis.transform.RationalProductTransform;
 
 /**
- * A292549 Number of multisets of exactly n nonempty binary words with a total of 2n letters such that no word has a majority of 0&apos;s.
+ * A292549 Number of multisets of exactly n nonempty binary words with a total of 2n letters such that no word has a majority of 0's.
  * @author Georg Fischer
  */
 public class A292549 extends RationalProductTransform {

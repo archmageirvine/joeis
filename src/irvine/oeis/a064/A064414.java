@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064414 Fix a &gt; 0, b &gt; 0, k &gt; 0 and define G_1 = a, G_2 = b, G_k = G_(k-1) + G_(k-2); sequence gives numbers m such that there exists (a, b) where G_k is divisible by m.
+ * A064414 Numbers that divide at least one term in every Fibonacci sequence.
  * @author Sean A. Irvine
  */
 public class A064414 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A080934 Square array read by antidiagonals of number of Catalan paths (nonnegative, starting and ending at 0, step +/-1) of 2n steps with all values less than or equal to k.
+ * A080934 Square array read by antidiagonals of number of Catalan paths (nonnegative, starting and ending at 0, step +-1) of 2n steps with all values less than or equal to k.
  * @author Sean A. Irvine
  */
 public class A080934 extends AbstractSequence {

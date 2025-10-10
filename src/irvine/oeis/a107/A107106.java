@@ -6,7 +6,7 @@ import irvine.oeis.a036.A036039;
 import irvine.oeis.a036.A036040;
 
 /**
- * A107106 Divide A036039(n) by A036040(n).
+ * A107106 Irregular triangle T(n,k) = A036039(n,k) / A036040(n,k), read by rows, 1 &lt;= k &lt;= A000041(n).
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

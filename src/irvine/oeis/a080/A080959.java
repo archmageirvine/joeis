@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080910.
+ * A080959 Square array of coefficients of binomial polynomials, read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A080959 extends Sequence1 {

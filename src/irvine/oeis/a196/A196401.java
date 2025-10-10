@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A196401 Decimal expansion of the least positive number x satisfying e^(-x)=cos(x).
+ * A196401 Decimal expansion of the least positive number x satisfying exp(-x) = cos(x).
  * Equation; 1/exp(x)-cos(x)
  * @author Georg Fischer
  */

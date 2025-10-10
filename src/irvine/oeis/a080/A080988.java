@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080910.
+ * A080988 Define b by b(1) = 1 and for n&gt;1, b(n) = b(n-1)+1/(3+1/b(n-1)); sequence gives numerator of b(n).
  * @author Sean A. Irvine
  */
 public class A080988 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A368333 The largest term of A054744 that divide n.
+ * A368333 The largest term of A054744 that divides n.
  * Multiplicative with: 1 if e <  p, and a(p^e) = p^e if e >= p
  * @author Georg Fischer
  */

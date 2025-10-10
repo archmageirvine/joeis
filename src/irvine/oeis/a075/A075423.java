@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A075423 rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
+ * A075423 a(n) = rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
  * @author Georg Fischer
  */
 public class A075423 extends LambdaSequence {

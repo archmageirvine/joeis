@@ -5,7 +5,7 @@ import irvine.oeis.a057.A057162;
 import irvine.oeis.a057.A057164;
 
 /**
- * A080910.
+ * A080968 Orbit size of each branch-reduced tree encoded by A080981(n) under Donaghey's "Map M" Catalan automorphism.
  * @author Sean A. Irvine
  */
 public class A080968 extends A080981 {

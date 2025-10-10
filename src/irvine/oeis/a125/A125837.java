@@ -3,7 +3,7 @@ package irvine.oeis.a125;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A125837 Numbers whose base 8 or octal representation is 6666666......6.
+ * A125837 a(n) = 6*(8^n - 1)/7.
  * @author Sean A. Irvine
  */
 public class A125837 extends LinearRecurrence {

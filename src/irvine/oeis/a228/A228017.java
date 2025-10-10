@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A228017 Numbers n divisible by the sum of any k-subset of digits of n with k &gt;= 1.
+ * A228017 Numbers m divisible by the sum of any k-subset of digits of m with k &gt;= 1.
  * @author Georg Fischer
  */
 public class A228017 extends FiniteSequence {

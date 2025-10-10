@@ -4,7 +4,7 @@ package irvine.oeis.a175;
 import irvine.oeis.FilterLambdaSequence;
 
 /**
- * A175514 Numbers n such that the base-2 expansion of n ends with the base-5 expansion of n.
+ * A175514 Numbers k such that the base-2 expansion of k ends with the base-5 expansion of k.
  * @author Georg Fischer
  */
 public class A175514 extends FilterLambdaSequence {

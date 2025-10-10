@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387377 allocated for Cade Spaulding.
+ * A387377 In the prime factorization of n, replace 2's with 3's, replace 3's with 5's and replace 5's with 2's.
  * @author Sean A. Irvine
  */
 public class A387377 extends Sequence1 {

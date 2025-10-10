@@ -5,7 +5,7 @@ import irvine.oeis.a014.A014197;
 import irvine.oeis.transform.RationalProductTransform;
 
 /**
- * A305353 Expansion of Product_{k&gt;=1} (1 - x^phi(k)), where phi is Euler&apos;s totient function.
+ * A305353 Expansion of Product_{k&gt;=1} (1 - x^phi(k)), where phi is Euler's totient function.
  * @author Georg Fischer
  */
 public class A305353 extends RationalProductTransform {

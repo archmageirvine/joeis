@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A228030 Primes of the form 7^n + 6.
+ * A228030 Primes of the form 7^k + 6.
  * @author Georg Fischer
  */
 public class A228030 extends PrimeSubsequence {

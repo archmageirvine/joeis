@@ -1,8 +1,8 @@
 package irvine.math.group;
 
+import irvine.math.api.Matrix;
 import irvine.math.api.Ring;
 import irvine.math.matrix.DefaultMatrix;
-import irvine.math.api.Matrix;
 import irvine.math.matrix.SmallDenseMatrix;
 
 /**
@@ -101,6 +101,30 @@ public class MatrixGroupRing<E> extends MatrixGroup<E> {
       }
     }
     return product;
+  }
+
+  /**
+   * Test if the matrix is idempotent; that test if <code>M^2=M</code>
+   * @param m matrix
+   * @return true iff <code>m</code> is idempotent
+   */
+  public boolean isIdempotent(final Matrix<E> m) {
+    final long r = m.cols();
+    if (m == zero()) {
+      return true;
+    }
+    for (long i = 0; i < m.rows(); ++i) {
+      for (long j = 0; j < m.cols(); ++j) {
+        E sum = mZero;
+        for (long k = 0; k < r; ++k) {
+          sum = mElementRing.add(sum, mElementRing.multiply(m.get(i, k), m.get(k, j)));
+        }
+        if (!sum.equals(m.get(i, j))) {
+          return false;
+        }
+      }
+    }
+    return true;
   }
 
   private Matrix<E> createResultMatrix(final Matrix<E> a, final Matrix<E> b) {

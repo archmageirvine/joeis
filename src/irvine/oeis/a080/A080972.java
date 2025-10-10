@@ -5,7 +5,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A080910.
+ * A080972 a(n) = A080969(n)/A080967(A080979(A080970(n))).
  * @author Sean A. Irvine
  */
 public class A080972 extends A080970 {

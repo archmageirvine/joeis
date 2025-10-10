@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000041;
 import irvine.oeis.transform.RationalProductTransform;
 
 /**
- * A001970 Functional determinants; partitions of partitions; Euler transform applied twice to all 1&apos;s sequence.
+ * A001970 Functional determinants; partitions of partitions; Euler transform applied twice to all 1's sequence.
  * @author Georg Fischer
  */
 public class A001970 extends RationalProductTransform {

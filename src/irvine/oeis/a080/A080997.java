@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a018.A018804;
 
 /**
- * A080910.
+ * A080997 The positive integers arranged in nonincreasing order of centrality (the fraction of n represented by the average gcd of n and the other positive integers).
  * @author Sean A. Irvine
  */
 public class A080997 extends Sequence1 {

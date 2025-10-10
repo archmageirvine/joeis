@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.RationalProductTransform;
 
 /**
- * A032304 &quot;EFK&quot; (unordered, size, unlabeled) transform of 1,3,5,7,...
+ * A032304 "EFK" (unordered, size, unlabeled) transform of 1,3,5,7,...
  * @author Georg Fischer
  */
 public class A032304 extends RationalProductTransform {

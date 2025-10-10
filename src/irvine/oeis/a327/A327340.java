@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RationalLambdaSequence;
 
 /**
- * A327340 Numerator of the rationals r(n) = (1/n^2)*Phi_1(n), with Phi_1(n) = Sum{k=1..n} psi(k), with Dedekind&apos;s psi function.
+ * A327340 Numerator of the rationals r(n) = (1/n^2)*Phi_1(n), with Phi_1(n) = Sum{k=1..n} psi(k), with Dedekind's psi function.
  * @author Georg Fischer
  */
 public class A327340 extends RationalLambdaSequence {

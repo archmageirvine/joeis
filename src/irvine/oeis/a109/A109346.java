@@ -5,7 +5,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterSequence;
 
 /**
- * A109346 Chen primes p such that p + 2 is a brilliant number.
+ * A109346 Primes p such that p + 2 is a brilliant number.
  * @author Georg Fischer
  */
 public class A109346 extends FilterSequence {

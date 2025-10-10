@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a051.A051674;
 
 /**
- * A101339 Prime(n)^prime(n)-prime(n).
+ * A101339 a(n) = prime(n)^prime(n)-prime(n).
  * @author Georg Fischer
  */
 public class A101339 extends Sequence1 {

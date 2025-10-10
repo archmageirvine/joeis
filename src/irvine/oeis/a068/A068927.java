@@ -5,7 +5,7 @@ package irvine.oeis.a068;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A068927 Number of incongruent ways to tile a 2 X n room with 1x2 Tatami mats. At most 3 Tatami mats may meet at a point.
+ * A068927 Number of incongruent ways to tile a 2 X n room with 1 X 2 Tatami mats. At most 3 Tatami mats may meet at a point.
  * @author Georg Fischer
  */
 public class A068927 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.a014.A014612;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A110934 Difference between 3-almostprime(n) and 3-almostprime(n+2).
+ * A110934 a(n) = A014612(n+2) - A014612(n).
  * @author Georg Fischer
  */
 public class A110934 extends MultiTransformSequence {

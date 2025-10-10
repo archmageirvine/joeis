@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A364723 G.f. satisfies A(x) = 1 + x*A(x) / (1 - x*A(x)^4).
+ * A364723 G.f. A(x) satisfies A(x) = 1 + x*A(x) / (1 - x*A(x)^4).
  * @author Georg Fischer
  */
 public class A364723 extends LambdaSequence {

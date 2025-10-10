@@ -5,7 +5,7 @@ import irvine.oeis.a034.A034460;
 import irvine.oeis.transform.PairTransformSequence;
 
 /**
- * A325977 a(n) = (1/2)*(A034460(n) + A325313(n)).
+ * A325977 a(n) = (1/2)*(A034448(n)+A048250(n)-2*n), where A034448 is the sum of unitary divisors and A048250 is the sum of squarefree divisors.
  * @author Georg Fischer
  */
 public class A325977 extends PairTransformSequence {

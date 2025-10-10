@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003056;
 
 /**
- * A388063 allocated for Omar E. Pol.
+ * A388063 Irregular triangle read by rows: T(n,k) is the total number of parts in all partitions of n with k designated summands, n &gt;= 1, 1 &lt;= k &lt;= A003056(n).
  * @author Sean A. Irvine
  */
 public class A388063 extends Sequence1 {

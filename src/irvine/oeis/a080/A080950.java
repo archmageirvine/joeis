@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A080910 Number of numbers that differ from n in decimal representation by exactly one edit-operation: deletion, insertion, or substitution.
+ * A080950 Number of numbers that differ from n in binary representation by exactly one edit-operation: deletion, insertion, or substitution.
  * @author Sean A. Irvine
  */
 public class A080950 extends Sequence0 {

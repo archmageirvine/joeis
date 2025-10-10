@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A244648 Decimal expansion of the sum of the reciprocals of the hendecagonal numbers (A051682).
+ * A244648 Decimal expansion of the sum of the reciprocals of the 11-gonal (or hendecagonal) numbers (A051682).
  * @author Georg Fischer
  */
 public class A244648 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A080910.
+ * A080953 Weight distribution of [151,76,19] binary quadratic-residue (or QR) code.
  * @author Sean A. Irvine
  */
 public class A080953 extends FiniteSequence {

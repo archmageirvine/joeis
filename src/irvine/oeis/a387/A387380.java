@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387380 allocated for Clark Kimberling.
+ * A387380 a(n) = number of strict quartets (n,u,v,w) of type 4; see Comments.
  * @author Sean A. Irvine
  */
 public class A387380 extends Sequence1 {

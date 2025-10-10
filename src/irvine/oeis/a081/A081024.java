@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ComplementSequence;
 
 /**
- * A005224 T is the first, fourth, eleventh, ... letter in this sentence, not counting spaces or commas (Aronson's sequence).
+ * A081024 Complement of A081023: actual locations of "t" in this wholly inaccurate variation of the Aronson sentence: "T is the second, third, fifth, sixth, seventh . . . letter of this sentence, not counting commas or spaces".
  * @author Sean A. Irvine
  */
 public class A081024 extends ComplementSequence {

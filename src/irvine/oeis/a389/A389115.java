@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A389115 allocated for Martin LACOUR.
+ * A389115 Primes p such that ord_p(2) = 2*r with r prime and 2*r &lt; p-1, where ord_p(2) = A014664(p).
  * @author Sean A. Irvine
  */
 public class A389115 extends FilterSequence {

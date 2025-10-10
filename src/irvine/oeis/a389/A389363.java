@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080910.
+ * A389363 allocated for Valentin Bakoev.
  * @author Sean A. Irvine
  */
 public class A389363 extends Sequence1 {

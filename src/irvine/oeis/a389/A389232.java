@@ -4,7 +4,7 @@ import irvine.oeis.a388.A388139;
 import irvine.util.Permutation;
 
 /**
- * A386382.
+ * A389232 Total number of decreasing runs in all heapable permutations of length n.
  * @author Sean A. Irvine
  */
 public class A389232 extends A388139 {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.English;
 
 /**
- * A005224 T is the first, fourth, eleventh, ... letter in this sentence, not counting spaces or commas (Aronson's sequence).
+ * A081023 Sequence based on wholly inaccurate version of Aronson's sentence (cf. A005224): "T is the second, third, fifth, sixth, seventh . . . letter of this sentence, not counting commas or spaces", where the sentence indicates exactly those letters that are not "T"s.
  * @author Sean A. Irvine
  */
 public class A081023 extends Sequence1 {

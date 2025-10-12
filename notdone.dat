@@ -2708,3 +2708,7 @@ A080974 A063171-encoding of the "Moose trees".
 A080975 A014486-index of the "Moose trees".
 A080976 a(n) = A080301(A080973(n)).
 A080977 a(n) = A080272(2*n)/A080292(n)
+A081086 Smallest partial quotients of an infinite simple continued fraction such that the fractional remainders sum to unity.
+A081087 Decimal expansion of the number whose simple continued fraction (A081086) has the smallest partial quotients such that the fractional remainders sum to unity.
+A081088 Smallest partial quotients of a series of continued fractions that have a sum of unity, where the n-th continued fraction term is [0; a(n),a(n-1),...,a(1)], so that sum(n>0, [0; a(n),a(n-1),...,a(1)] ) = 1, with a(1)=2.
+A081089 Ratios of the terms of A081088: a(n) = A081088(n+1)/A081088(n); involves the partial quotients of a series of continued fractions that sum to unity.

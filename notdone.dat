@@ -2723,3 +2723,4 @@ A081160 Number of even cycles in range [A014137(n-1)..A014138(n-1)] of permutati
 A081161 Number of even cycles in range [A014137(2n)..A014138(2n)] of permutation A057505/A057506, with two fixed-points of A057164.
 A081162 Number of even cycles in range [A014137(n-1)..A014138(n-1)] of permutation A057505/A057506, with two fixed-points of A057163.
 A081163 Number of even cycles in range [A014137(2n)..A014138(2n)] of permutation A057505/A057506, with two fixed-points of A057163.
+A081174 Numerators of constants arising in calculation of higher correlations of short divisor sums.

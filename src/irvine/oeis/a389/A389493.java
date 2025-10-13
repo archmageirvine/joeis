@@ -14,7 +14,7 @@ public class A389493 extends Sequence1 {
   private boolean isRepunit(final Z n) {
     Z t = n.multiply(9).add(1);
     while (!t.isOne()) {
-      final Z[] qr =t.divideAndRemainder(Z.TEN);
+      final Z[] qr = t.divideAndRemainder(Z.TEN);
       if (!qr[1].isZero()) {
         return false;
       }

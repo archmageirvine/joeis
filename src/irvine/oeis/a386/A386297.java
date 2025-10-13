@@ -19,15 +19,19 @@ public class A386297 extends A386296 {
 
   @Override
   protected boolean accept(final int[] set) {
+    final long defect = getDefect(set);
     synchronized (A386297.this) {
-      return getDefect(set) < mMinDefect;
+      return defect < mMinDefect;
     }
   }
 
   @Override
   protected void process(final int[] set) {
+    final long defect = getDefect(set);
     synchronized (A386297.this) {
-      mMinDefect = getDefect(set);
+      if (defect < mMinDefect) { // recheck in case another thread changed in interim
+        mMinDefect = defect;
+      }
     }
   }
 

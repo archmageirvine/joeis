@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389408 allocated for Xander Lee Luo.
+ * A389408 a(1)=2; thereafter a(n) = a(n-1) + gpf(a(n-1)) - 1, where gpf = greatest prime factor = A006530.
  * @author Sean A. Irvine
  */
 public class A389408 extends Sequence1 {

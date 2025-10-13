@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A128027 Numbers n such that (11^n - 3^n)/8 is prime.
+ * A128027 Numbers k such that (11^k - 3^k)/8 is prime.
  * @author Georg Fischer
  */
 public class A128027 extends PrimePositionSubsequence {

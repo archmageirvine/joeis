@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002145;
 
 /**
- * A389481 allocated for Rhys Feltman.
+ * A389481 Primes that remain prime when their binary digits are rotated once to the right.
  * @author Sean A. Irvine
  */
 public class A389481 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387662 allocated for Alex Ratushnyak.
+ * A387662 a(n) is the least k&gt;0 such that n divides 1^1 + 2^2 + ... + k^k.
  * @author Sean A. Irvine
  */
 public class A387662 extends Sequence1 {

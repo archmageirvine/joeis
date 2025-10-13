@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389267 allocated for Xander Lee Luo.
+ * A389267 a(1) = 2; thereafter a(n) = a(n-1) + b(a(n-1)), where b(k) is the second greatest distinct prime factor of k, or the greatest if there is only one distinct prime factor.
  * @author Sean A. Irvine
  */
 public class A389267 extends Sequence1 {

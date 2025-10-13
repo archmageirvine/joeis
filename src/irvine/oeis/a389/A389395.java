@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389395 allocated for Rachel L. A. Hunter.
+ * A389395 Sequence which is the partial sums of the proper divisors of its own elements.
  * @author Sean A. Irvine
  */
 public class A389395 extends Sequence1 {

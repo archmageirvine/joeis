@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A173034 Sequence whose G.f is f such that: f(z)=8/(1-2*z)-12/(1-z)+z+5.
+ * A173034 Expansion of g.f. 8/(1-2*z)-12/(1-z)+z+5.
  * @author Georg Fischer
  */
 public class A173034 extends HolonomicRecurrence {

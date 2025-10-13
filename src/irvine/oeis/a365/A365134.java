@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A365134 G.f. satisfies A(x) = (1 + x*A(x)/(1 - x*A(x))^2)^3.
+ * A365134 G.f. A(x) satisfies A(x) = (1 + x*A(x)/(1 - x*A(x))^2)^3.
  * @author Georg Fischer
  */
 public class A365134 extends LambdaSequence {

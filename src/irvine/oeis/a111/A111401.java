@@ -5,7 +5,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a273.A273399;
 
 /**
- * A111401 f(f(n+1))-f(f(n)), where f() = Catalan() = A000108.
+ * A111401 a(n) = f(f(n+1)) - f(f(n)), where f() = Catalan() = A000108.
  * @author Georg Fischer
  */
 public class A111401 extends DifferenceSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.TwoParameterFormSequence;
 import irvine.oeis.a378.A378002;
 
 /**
- * A389260 allocated for Michael De Vlieger.
+ * A389260 Powers k^m, m &gt; 1, where k is an Achilles number that is a product of primorials.
  * @author Sean A. Irvine
  */
 public class A389260 extends TwoParameterFormSequence {

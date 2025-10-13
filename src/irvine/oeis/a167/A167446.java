@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A167446 (Fibonacci(n)!!)!.
+ * A167446 a(n) = (Fibonacci(n)!!)!.
  * @author Georg Fischer
  */
 public class A167446 extends LambdaSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389340 allocated for Felix Huber.
+ * A389340 Positive integers k = p_1^e_1*p_2^e_2*p_3^e_3, such that the points (p_1, e_1), (p_2, e_2) and (p_3, e_3) lie on a straight line with nonzero slope.
  * @author Sean A. Irvine
  */
 public class A389340 extends Sequence1 {

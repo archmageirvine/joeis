@@ -6,7 +6,6 @@ import irvine.oeis.a006.A006906;
 
 /**
  * A297329 a(n) = [x^n] Product_{k&gt;=1} 1/(1 - k*x^k)^n.
- * new A006906()
  * @author Georg Fischer
  */
 public class A297329 extends PolynomialFieldSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389146 allocated for Michael De Vlieger.
+ * A389146 Classification of positive integers into numbers in A387487, primes, proper prime powers, weak composites, and powerful numbers that are not prime powers.
  * @author Sean A. Irvine
  */
 public class A389146 extends Sequence1 {

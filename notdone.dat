@@ -2712,3 +2712,14 @@ A081086 Smallest partial quotients of an infinite simple continued fraction such
 A081087 Decimal expansion of the number whose simple continued fraction (A081086) has the smallest partial quotients such that the fractional remainders sum to unity.
 A081088 Smallest partial quotients of a series of continued fractions that have a sum of unity, where the n-th continued fraction term is [0; a(n),a(n-1),...,a(1)], so that sum(n>0, [0; a(n),a(n-1),...,a(1)] ) = 1, with a(1)=2.
 A081089 Ratios of the terms of A081088: a(n) = A081088(n+1)/A081088(n); involves the partial quotients of a series of continued fractions that sum to unity.
+A081153 Number of odd cycles in range [A014137(n-1)..A014138(n-1)] of permutation A057505/A057506, with no fixed points of either A057163 or A057164.
+A081154 Number of odd cycles in range [A014137(2n)..A014138(2n)] of permutation A057505/A057506, with no fixed points of either A057163 or A057164.
+A081155 Number of odd cycles in range [A014137(n-1)..A014138(n-1)] of permutation A057505/A057506, with fixed-points of both A057163 and A057164.
+A081156 Number of odd cycles in range [A014137(2n)..A014138(2n)] of permutation A057505/A057506, with fixed-points of both A057163 and A057164.
+A081157 Number of even cycles in range [A014137(n-1)..A014138(n-1)] of permutation A057505/A057506, with no fixed points of either A057163 or A057164.
+A081158 Number of even cycles in range [A014137(2n-1)..A014138(2n-1)] of permutation A057505/A057506, with no fixed points of A057164.
+A081159 Number of even cycles in range [A014137(2n)..A014138(2n)] of permutation A057505/A057506, with no fixed points of either A057163 or A057164.
+A081160 Number of even cycles in range [A014137(n-1)..A014138(n-1)] of permutation A057505/A057506, with two fixed-points of A057164.
+A081161 Number of even cycles in range [A014137(2n)..A014138(2n)] of permutation A057505/A057506, with two fixed-points of A057164.
+A081162 Number of even cycles in range [A014137(n-1)..A014138(n-1)] of permutation A057505/A057506, with two fixed-points of A057163.
+A081163 Number of even cycles in range [A014137(2n)..A014138(2n)] of permutation A057505/A057506, with two fixed-points of A057163.

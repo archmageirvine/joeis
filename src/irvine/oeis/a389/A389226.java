@@ -5,7 +5,7 @@ import irvine.oeis.TwoParameterFormSequence;
 import irvine.oeis.a377.A377854;
 
 /**
- * A389226 allocated for Michael De Vlieger.
+ * A389226 Powers k^m, m &gt; 1, where k is an Achilles number whose squarefree kernel is a primorial.
  * @author Sean A. Irvine
  */
 public class A389226 extends TwoParameterFormSequence {

@@ -4,7 +4,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A128005 Numbers n such that (40^n - 1)/39 is prime.
+ * A128005 Numbers k such that (40^k - 1)/39 is prime.
  * @author Georg Fischer
  */
 public class A128005 extends PrimePositionSubsequence {

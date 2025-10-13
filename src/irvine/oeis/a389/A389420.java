@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A389420 allocated for Aitzaz Imtiaz.
+ * A389420 Arrangement of numbers such that every digit rotation of the number n is included in ascending order after those of n-1.
  * @author Sean A. Irvine
  */
 public class A389420 extends Sequence0 {

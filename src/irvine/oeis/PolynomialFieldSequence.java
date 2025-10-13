@@ -830,7 +830,7 @@ public class PolynomialFieldSequence extends AbstractSequence implements Rationa
     POST_MAP.put("ellipticD", 50);
     POST_MAP.put("ellipticE", 51);
     POST_MAP.put("ellipticK", 52);
-    POST_MAP.put("pow", 53);  // if exponent is polynomimal
+    POST_MAP.put("pow", 53);  // if exponent is polynomial
     POST_MAP.put(">", 54);
     POST_MAP.put("B", 55);
     POST_MAP.put("C", 56);

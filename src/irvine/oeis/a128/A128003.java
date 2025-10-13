@@ -4,7 +4,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A128003 Numbers n such that (37^n - 1)/36 is prime.
+ * A128003 Numbers k such that (37^k - 1)/36 is prime.
  * @author Georg Fischer
  */
 public class A128003 extends PrimePositionSubsequence {

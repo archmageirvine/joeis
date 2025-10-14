@@ -285,6 +285,22 @@ public class Permutation {
   }
 
   /**
+   * Compute the major index of a permutation.
+   * The major index is the sum of (1-based) positions where a descent occurs.
+   * @param p permutation
+   * @return major index
+   */
+  public static int majorIndex(final int[] p) {
+    int sum = 0;
+    for (int k = 1; k < p.length; ++k) {
+      if (p[k - 1] > p[k]) {
+        sum += k;
+      }
+    }
+    return sum;
+  }
+
+  /**
    * Example use.
    * @param args ignored
    */

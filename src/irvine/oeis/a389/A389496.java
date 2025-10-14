@@ -8,32 +8,28 @@ import irvine.util.Permutation;
  * A389255 Triangle read by rows: T(n,k) = number of heapable permutations of length n with exactly k decreasing runs.
  * @author Sean A. Irvine
  */
-public class A389255 extends A336282 {
+public class A389496 extends A336282 {
 
   private long[] mRow = new long[0];
   private int mM = 0;
 
   /** Construct the sequence. */
-  public A389255() {
+  public A389496() {
     super(1);
   }
 
   @Override
   protected long count(final int[] p) {
-    synchronized (A389255.this) {
-      ++mRow[contribution(p) - 1];
+    synchronized (A389496.this) {
+      ++mRow[Permutation.majorIndex(p)];
     }
     return 0;
-  }
-
-  protected int contribution(final int[] p) {
-    return Permutation.countDecreasingRuns(p);
   }
 
   @Override
   public Z next() {
     if (++mM >= mRow.length) {
-      mRow = new long[mN + 1];
+      mRow = new long[mN * (mN + 1) / 2 + 1];
       super.next(); // trigger the parallel search
       mM = 0;
     }

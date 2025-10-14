@@ -23,7 +23,6 @@ public class DispersionArray extends Triangle {
   private final ArrayList<Z> mS; // cache for the underlying sequence s, starting at offset 1, with terms <= 1 skipped
   private Z mT; // last computed term of the complementary sequence t
   private int mSix; // index of the least element in s that is > mT
-  private static final boolean DEBUG = "true".equals(System.getProperty("oeis.verbose"));
 
   /**
    * Constructor with offset, sequence, default corner (1,1) and direction (-1 = descending)
@@ -89,9 +88,6 @@ public class DispersionArray extends Triangle {
   private Z getS(final int index) {
     while (index >= mS.size()) {
       final Z s = mSeq.next();
-//*   if (sDebug) {
-//*     System.out.println("  gets(" + index + "): " + s + ", size=" + mS.size());
-//*   }
       mS.add(s);
     }
     return mS.get(index);
@@ -107,10 +103,6 @@ public class DispersionArray extends Triangle {
       mT = nextS.add(1);
       nextS = getS(++mSix);
     }
-    // now mT < getS(mSix)
-//* if (sDebug) {
-//*   System.out.println("  advanceT() -> " + mT + ", mSix=" + mSix + ", nextS=" + nextS);
-//* }
   }
 
   /**
@@ -121,9 +113,6 @@ public class DispersionArray extends Triangle {
    * @return M(i, j)
    */
   public Z getElement(final int i, final int j) {
-//* if (sDebug) {
-//*   System.out.println("getElement(" + i + ", " + j + ") -> [" + String.valueOf(j - mCol0) + "," + String.valueOf(i - mRow0 - (j - mCol0)) + "]");
-//* }
     return mDir < 0
       ? super.get(j - mCol0 + i - mRow0, i - mRow0)
       : super.get(i - mRow0            , j - mCol0 + i - mRow0)
@@ -138,9 +127,6 @@ public class DispersionArray extends Triangle {
    * @return M(i, j)
    */
   public Z matrixElement(final int i, final int j) {
-//* if (sDebug) {
-//*   System.out.println("matrixElement(" + i + ", " + j + ")");
-//* }
     if (j == 1) { // column 1 = sequence t
       if (i > 1) {
         advanceT();
@@ -148,9 +134,6 @@ public class DispersionArray extends Triangle {
       return mT;
     }
     final Z elem = getElement(i, j - 1);
-//* if (sDebug) {
-//*   System.out.println("  elem=" + elem);
-//* }
     return getS(elem.intValueExact());
   }
 

@@ -8,13 +8,8 @@ import irvine.oeis.a388.A388139;
  */
 public class A389488 extends A388139 {
 
-  /** Construct the sequence. */
-  public A389488() {
-    super(1);
-  }
-
   @Override
-  protected long contribution(final int[] p) {
+  protected long count(final int[] p) {
     // Length of leading run
     for (int k = 1; k < p.length; ++k) {
       if (p[k] < p[k - 1]) {

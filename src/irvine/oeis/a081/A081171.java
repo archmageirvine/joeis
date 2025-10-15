@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080825.
+ * A081171 Triangle in which n-th row gives trajectory of n (including n itself) under the map x -&gt; x/2 if x is even, x -&gt; 3x-3 if x is odd, stopping when reaching one of 1, 3, 5, 15, 51.
  * @author Sean A. Irvine
  */
 public class A081171 extends Sequence1 {

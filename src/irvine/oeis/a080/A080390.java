@@ -13,12 +13,12 @@ public class A080390 extends InverseSequence {
 
   /** Construct the sequence. */
   public A080390() {
-    super(1, new Sequence1() {
+    super(1, 1, new Sequence1() {
       private long mN = 0;
       @Override
       public Z next() {
         return Binomial.binomial(++mN, mN / 2).gcd(mN + 1);
       }
-    }, 1);
+    });
   }
 }

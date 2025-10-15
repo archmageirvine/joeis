@@ -11,6 +11,6 @@ public class A065194 extends InverseSequence implements Conjectural {
 
   /** Construct the sequence. */
   public A065194() {
-    super(1, new A065191(), 1);
+    super(1, 1, new A065191());
   }
 }

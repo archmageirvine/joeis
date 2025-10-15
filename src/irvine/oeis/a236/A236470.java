@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A236470 a(n) = |{0 &lt; k &lt; n: p = prime(k) + phi(n-k), p + 2 and prime(p) + 2 are all prime}|, where phi(.) is Euler&apos;s totient function.
+ * A236470 a(n) = |{0 &lt; k &lt; n: p = prime(k) + phi(n-k), p + 2 and prime(p) + 2 are all prime}|, where phi(.) is Euler's totient function.
  * @author Georg Fischer
  */
 public class A236470 extends LambdaSequence {

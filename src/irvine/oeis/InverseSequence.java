@@ -22,11 +22,11 @@ public class InverseSequence extends AbstractSequence {
   /**
    * Construct a new sequence of positions.
    * @param offset first index of target sequence
-   * @param seq underlying sequence
    * @param initial starting value to search for
+   * @param seq underlying sequence
    * @param offset1 offset of seq
    */
-  public InverseSequence(final int offset, final Sequence seq, final long initial, final long offset1) {
+  public InverseSequence(final int offset, final long initial, final Sequence seq, final long offset1) {
     super(offset);
     mS = seq;
     mN = initial - 1;
@@ -40,16 +40,16 @@ public class InverseSequence extends AbstractSequence {
    * @param offset1 offset of seq
    */
   public InverseSequence(final Sequence seq, final long initial, final int offset1) {
-    this(DEFOFF, seq, initial, offset1);
+    this(DEFOFF, initial, seq, offset1);
   }
 
   /**
    * Construct a new sequence of positions.
-   * @param seq underlying sequence
    * @param initial starting value to search for
+   * @param seq underlying sequence
    */
-  public InverseSequence(final int offset, final Sequence seq, final long initial) {
-    this(offset, seq, initial, seq.getOffset());
+  public InverseSequence(final int offset, final long initial, final Sequence seq) {
+    this(offset, initial, seq, seq.getOffset());
   }
 
   /**
@@ -58,7 +58,7 @@ public class InverseSequence extends AbstractSequence {
    * @param initial starting value to search for
    */
   public InverseSequence(final Sequence seq, final long initial) {
-    this(DEFOFF, seq, initial, seq.getOffset());
+    this(DEFOFF, initial, seq, seq.getOffset());
   }
 
   /**
@@ -66,7 +66,7 @@ public class InverseSequence extends AbstractSequence {
    * @param seq underlying sequence
    */
   public InverseSequence(final int offset, final Sequence seq) {
-    this(offset, seq, 1);
+    this(offset, 1, seq);
   }
 
   /**
@@ -74,7 +74,7 @@ public class InverseSequence extends AbstractSequence {
    * @param seq underlying sequence
    */
   public InverseSequence(final Sequence seq) {
-    this(DEFOFF, seq, 1);
+    this(DEFOFF, 1, seq);
   }
 
   @Override

@@ -4,7 +4,7 @@ import irvine.oeis.a006.A006257;
 import irvine.oeis.a062.A062383;
 
 /**
- * A080825.
+ * A388855 allocated for Clark Kimberling.
  * @author Sean A. Irvine
  */
 public class A388855 extends A388853 {

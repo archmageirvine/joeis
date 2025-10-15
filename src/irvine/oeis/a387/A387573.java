@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A387573 Total number of runs of 1&apos;s in all length n binary words in which 1&apos;s occur in runs of at least 3.
+ * A387573 Total number of runs of 1's in all length n binary words in which 1's occur in runs of at least 3.
  * @author Georg Fischer
  */
 public class A387573 extends LambdaSequence {

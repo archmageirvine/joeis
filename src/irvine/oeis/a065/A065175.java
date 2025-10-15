@@ -10,6 +10,6 @@ public class A065175 extends InverseSequence {
 
   /** Construct the sequence. */
   public A065175() {
-    super(1, new A065174(), 1);
+    super(1, 1, new A065174());
   }
 }

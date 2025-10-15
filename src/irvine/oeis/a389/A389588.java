@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000328;
 
 /**
- * A080825.
+ * A389588 allocated for Safwan Jaradat.
  * @author Sean A. Irvine
  */
 public class A389588 extends Sequence1 {

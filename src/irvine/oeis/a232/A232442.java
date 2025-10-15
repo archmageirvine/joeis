@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A232442 a(n) = |{0 &lt; k &lt; n: m*prime(m) - 1 and m*prime(m) + 1 are both prime with m = sigma(k) + phi(n-k)}|, where sigma(k) is the sum of all positive divisors of k and phi(.) is Euler&apos;s totient function.
+ * A232442 a(n) = |{0 &lt; k &lt; n: m*prime(m) - 1 and m*prime(m) + 1 are both prime with m = sigma(k) + phi(n-k)}|, where sigma(k) is the sum of all positive divisors of k and phi(.) is Euler's totient function.
  * @author Georg Fischer
  */
 public class A232442 extends LambdaSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a004.A004009;
 
 /**
- * A289636 Coefficients in expansion of -q*E&apos;_4/E_4 where E_4 is the Eisenstein Series (A004009).
+ * A289636 Coefficients in expansion of -q*E'_4/E_4 where E_4 is the Eisenstein Series (A004009).
  * new A004009()
  * @author Georg Fischer
  */

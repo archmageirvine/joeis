@@ -5,7 +5,7 @@ import irvine.oeis.a006.A006752;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A080825.
+ * A389529 allocated for Artur Jasinski.
  * @author Sean A. Irvine
  */
 public class A389529 extends DecimalExpansionSequence {

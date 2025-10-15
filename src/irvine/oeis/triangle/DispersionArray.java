@@ -69,7 +69,7 @@ public class DispersionArray extends Triangle {
     mCol0 = col0;
     mDir = dir;
     mSeq = seq;
-    mS = new ArrayList<Z>(16);
+    mS = new ArrayList<>(16);
     mS.add(Z.ZERO); // [0] is not used, always start at offset 1
     Z term = mSeq.next();
     while (term.compareTo(Z.ONE) <= 0) { // skip any terms <= 1

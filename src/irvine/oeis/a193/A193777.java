@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000085;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A193777 Number of signed permutations of size 2n invariant under D and D&apos;bar and avoiding (-2, 1) and (2, -1).
+ * A193777 Number of signed permutations of size 2n invariant under D and D'bar and avoiding (-2, 1) and (2, -1).
  * @author Georg Fischer
  */
 public class A193777 extends MultiTransformSequence {

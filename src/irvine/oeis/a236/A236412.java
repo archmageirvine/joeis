@@ -8,7 +8,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A236412 a(n) = |{0 &lt; k &lt; n: m = phi(k)/2 + phi(n-k)/8 is an integer with p(m)^2 + q(m)^2 prime}|, where phi(.) is Euler&apos;s totient, p(.) is the partition function (A000041) and q(.) is the strict partition function (A000009).
+ * A236412 a(n) = |{0 &lt; k &lt; n: m = phi(k)/2 + phi(n-k)/8 is an integer with p(m)^2 + q(m)^2 prime}|, where phi(.) is Euler's totient, p(.) is the partition function (A000041) and q(.) is the strict partition function (A000009).
  * @author Georg Fischer
  */
 public class A236412 extends LambdaSequence {

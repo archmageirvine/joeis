@@ -9,7 +9,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a011.A011757;
 
 /**
- * A080825.
+ * A389525 allocated for Zhi-Wei Sun.
  * @author Sean A. Irvine
  */
 public class A389525 extends Sequence0 {

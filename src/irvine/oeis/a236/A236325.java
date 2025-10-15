@@ -8,7 +8,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A236325 a(n) = |{0 &lt; k &lt; n: m = phi(k)/2 + phi(n-k)/12 is an integer with m! + prime(m) prime}|, where phi(.) is Euler&apos;s totient function.
+ * A236325 a(n) = |{0 &lt; k &lt; n: m = phi(k)/2 + phi(n-k)/12 is an integer with m! + prime(m) prime}|, where phi(.) is Euler's totient function.
  * @author Georg Fischer
  */
 public class A236325 extends LambdaSequence {

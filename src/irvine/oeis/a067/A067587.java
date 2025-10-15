@@ -11,6 +11,6 @@ public class A067587 extends InverseSequence {
 
   /** Construct the sequence. */
   public A067587() {
-    super(1, new A066884(), 1);
+    super(1, 1, new A066884());
   }
 }

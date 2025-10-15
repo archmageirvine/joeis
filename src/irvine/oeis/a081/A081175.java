@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.TwoParameterFormSequence;
 
 /**
- * A080825.
+ * A081175 Numbers of the form Sum_{i=1..k} i^j, j &gt;= 1, k &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A081175 extends TwoParameterFormSequence {

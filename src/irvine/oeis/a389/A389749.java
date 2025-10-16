@@ -14,9 +14,9 @@ import irvine.oeis.Sequence0;
 public class A389749 extends Sequence0 {
 
   private static final SeriesRing<Q> SQ = SeriesRing.SQ;
-  private final Series<Q> S0 = SeriesParser.parse("(3-3*x)/(2*x^2-6*x+3)");
-  private final Series<Q> S1 = SeriesParser.parse("3/(2*x^2-6*x+3)");
-  private final Series<Q> S = SeriesParser.parse("((1-3*x)-sqrt(5*x^2-6*x+1))/(2*x)");
+  private static final Series<Q> S0 = SeriesParser.parse("(3-3*x)/(2*x^2-6*x+3)");
+  private static final Series<Q> S1 = SeriesParser.parse("3/(2*x^2-6*x+3)");
+  private static final Series<Q> S = SeriesParser.parse("((1-3*x)-sqrt(5*x^2-6*x+1))/(2*x)");
   private int mN = 0;
   private int mM = -1;
 

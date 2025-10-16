@@ -12,7 +12,7 @@ import irvine.oeis.Sequence1;
  */
 public class A007774 extends Sequence1 {
 
-  private static class State implements Comparable<State> {
+  private static final class State implements Comparable<State> {
     private final long mP;
     private final long mQ;
     private final long mE;

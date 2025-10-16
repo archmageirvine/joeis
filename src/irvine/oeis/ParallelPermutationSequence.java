@@ -75,7 +75,7 @@ public class ParallelPermutationSequence extends AbstractSequence implements Dir
   }
 
   /** "Importunate" is an anagram of "permutation". */
-  private class Importunate {
+  private final class Importunate {
 
     private Z mCount = Z.ZERO;
     private final int[] mP;

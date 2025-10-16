@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a014.A014263;
 
 /**
- * A085586 n, n^2 and n^3 all use only even digits.
+ * A353342 Numbers k such that k and k^3 use only even digits.
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

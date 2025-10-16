@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081210.
+ * A081222 Smallest number m with Sum_{k=n..n+m} mu(k) = 0, where mu=A008683 (M\u00f6bius function).
  * @author Sean A. Irvine
  */
 public class A081222 extends Sequence1 {

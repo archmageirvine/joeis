@@ -5,7 +5,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A057173 Numbers n such that (7^n + 1)/8 is a prime.
+ * A057173 Numbers k such that (7^k + 1)/8 is a prime.
  * @author Georg Fischer
  */
 public class A057173 extends PrimePositionSubsequence {

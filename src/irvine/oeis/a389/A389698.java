@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A388063.
+ * A389698 Multiplicative sequence a(n) with a(p^e) = 4 * e^2 + 2 for prime p and e &gt; 0.
  * @author Sean A. Irvine
  */
 public class A389698 extends Sequence1 {

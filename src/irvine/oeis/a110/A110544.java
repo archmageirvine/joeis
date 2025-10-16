@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A110544 Decimal expansion of -Integral {x=1..2} log gamma(x) dx.
+ * A110544 Decimal expansion of -Integral {x=1..2} log Gamma(x) dx.
  * Formula:
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A388063.
+ * A389673 a(n) is the length of the sequence obtained by repeated iteration of the "rebase-and-read" operation (A389674), starting at n until one reaches a number already in the sequence.
  * @author Sean A. Irvine
  */
 public class A389673 extends Sequence1 {

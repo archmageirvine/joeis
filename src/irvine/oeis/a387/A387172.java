@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007774;
 
 /**
- * A387172 allocated for Felix Huber.
+ * A387172 Numbers k = p1^e1*p2^e2, with e1 != e2, such that the Euclidean distance between points (p1, e1) and (p2, e2) is an integer.
  * @author Sean A. Irvine
  */
 public class A387172 extends A007774 {

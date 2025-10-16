@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A081210.
+ * A389720 a(n) is the largest prime number obtainable by inserting a single digit anywhere in n (including at the beginning or end), or -1 if no such prime is obtainable.
  * @author Sean A. Irvine
  */
 public class A389720 extends Sequence0 {

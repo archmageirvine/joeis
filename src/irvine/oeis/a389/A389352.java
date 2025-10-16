@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Point;
 
 /**
- * A389532 allocated for Gus Wiseman.
+ * A389352 Manhattan distance to the origin of point n while traversing the half plane by integer points in rectangular layers starting from n=1 at the origin.
  * @author Sean A. Irvine
  */
 public class A389352 extends Sequence1 {

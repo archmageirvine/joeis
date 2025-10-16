@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005117;
 
 /**
- * A081210.
+ * A389393 Least k such that k + A005117(i) is squarefree with i prime factors, for 1 &lt;= i &lt;= n.
  * @author Sean A. Irvine
  */
 public class A389393 extends Sequence1 {

@@ -9,7 +9,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a011.A011757;
 
 /**
- * A389525 allocated for Zhi-Wei Sun.
+ * A389525 Number of ways to write 2*n + 1 as prime(i^2) + prime(j^2) + prime(k^2) + 2*prime(m^2) with i &gt;= j &gt;= k &gt;= m &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A389525 extends Sequence0 {

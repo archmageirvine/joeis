@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a051.A051225;
 
 /**
- * A119480 Numbers n such that the Bernoulli number B_{4n} has denominator 30.
+ * A119480 Numbers k such that the Bernoulli number B_{4k} has denominator 30.
  * @author Georg Fischer
  */
 public class A119480 extends AbstractSequence {

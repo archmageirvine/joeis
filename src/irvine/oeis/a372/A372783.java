@@ -6,7 +6,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A372783 In the ternary expansion of n: keep the initial digit, and then replace 0&apos;s with 1&apos;s and 1&apos;s with 0&apos;s.
+ * A372783 In the ternary expansion of n: keep the initial digit, and then replace 0's with 1's and 1's with 0's.
  * @author Georg Fischer
  */
 public class A372783 extends LambdaSequence {

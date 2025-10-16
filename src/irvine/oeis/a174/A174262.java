@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A174262 Primes of the form 21^(2^n) + 2.
+ * A174262 Primes of the form 21^(2^k) + 2.
  *
  * @author Georg Fischer
  */

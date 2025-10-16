@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A135674 Floor(n+n^(2/3)).
+ * A135674 a(n) = floor(n + n^(2/3)).
  * @author Georg Fischer
  */
 public class A135674 extends FloorSequence {

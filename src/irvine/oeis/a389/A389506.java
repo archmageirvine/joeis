@@ -6,7 +6,7 @@ import irvine.oeis.Sequence2;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A389506 allocated for Stijn Cambie.
+ * A389506 Smallest even number which cannot be written as the difference of two numbers which are less than and relatively prime to (the primorial) p(n)#.
  * @author Sean A. Irvine
  */
 public class A389506 extends Sequence2 {

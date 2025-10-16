@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
- * A000929 Dimension of n-th degree part of Steenrod algebra.
+ * A000929 Dimension of the n-th graded piece of the mod-2 Steenrod algebra A_2.
  * @author Sean A. Irvine
  */
 public class A000929 extends MemoryFunction2Sequence<Long, Z> {

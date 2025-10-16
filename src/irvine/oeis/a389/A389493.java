@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389493 allocated for Ctibor O. Zizka.
+ * A389493 Numbers k &gt;= 1 such that k^2 - r^2 is a repunit (A002275) for some 1 &lt;= r &lt; k.
  * @author Sean A. Irvine
  */
 public class A389493 extends Sequence1 {

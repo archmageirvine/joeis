@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a066.A066328;
 
 /**
- * A066328.
+ * A386280 Numbers k &gt; 1 such that A066328(k) / A001222(k) = x + 1/2 for some x &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A386280 extends A066328 {

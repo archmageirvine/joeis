@@ -5,7 +5,7 @@ import irvine.oeis.a006.A006752;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A389529 allocated for Artur Jasinski.
+ * A389529 Decimal expansion of Sum_{n&gt;=0} 1/((2*n + 1)*(4*n + 1)*(4*n + 3)^2).
  * @author Sean A. Irvine
  */
 public class A389529 extends DecimalExpansionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A119409 Numbers n such that 235*n + 1 is prime.
+ * A119409 Numbers k such that 235*k + 1 is prime.
  * @author Georg Fischer
  */
 public class A119409 extends PrimePositionSubsequence {

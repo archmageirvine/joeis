@@ -5,7 +5,7 @@ import irvine.oeis.a336.A336282;
 import irvine.util.Permutation;
 
 /**
- * A389496 allocated for Manolopoulos Panagiotis.
+ * A389496 Triangle T(n,k) read by rows: T(n,k) is the number of heapable permutations of length n whose major index is k.
  * @author Sean A. Irvine
  */
 public class A389496 extends A336282 {

@@ -5,7 +5,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A081210.
+ * A081212 Let r(n,k) = if k=0 then n else r(A081210(n),k-1), then a(n) = Min{i:r(n,i) = r(n,i+1)}.
  * @author Sean A. Irvine
  */
 public class A081212 extends Sequence1 {

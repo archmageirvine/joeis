@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A385573 allocated for Clark Kimberling.
+ * A385573 Decreasing partition array based on the sequence (sin(n)); see Comments.
  * @author Sean A. Irvine
  */
 public class A385573 extends Sequence1 {

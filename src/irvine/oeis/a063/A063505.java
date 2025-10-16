@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A063505 Number of n X n upper triangular binary matrices over GF(2) B such that B^2 = 0.
+ * A063505 Erroneous version of A008964.
  * @author Sean A. Irvine
  */
 public class A063505 extends Sequence2 {

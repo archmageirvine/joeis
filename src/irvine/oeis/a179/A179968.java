@@ -5,7 +5,7 @@ import irvine.oeis.a051.A051168;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A179968 &apos;AT(n,k)&apos; triangle read by rows. AT(n,k) is the number of aperiodic k-compositions of n.
+ * A179968 'AT(n,k)' triangle read by rows. AT(n,k) is the number of aperiodic k-compositions of n.
  * @author Georg Fischer
  */
 public class A179968 extends BaseTriangle {

@@ -5,7 +5,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A081210 In prime factorization of n replace each prime power p^e with the greatest squarefree number &lt;= p^e.
+ * A081211 a(n) = A081210(A081210(n)).
  * @author Sean A. Irvine
  */
 public class A081211 extends Sequence1 {

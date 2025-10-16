@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000961;
 
 /**
- * A081210.
+ * A081217 Greatest squarefree number not exceeding n-th prime power.
  * @author Sean A. Irvine
  */
 public class A081217 extends A000961 {

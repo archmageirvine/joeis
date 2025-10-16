@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.a388.A388856;
 
 /**
- * A389578 allocated for Clark Kimberling.
+ * A389578 Increasing partition array based on the fractional parts of (tan(n)); see Comments.
  * @author Sean A. Irvine
  */
 public class A389578 extends A388856 {

@@ -6,7 +6,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A174300 Ceiling(n!*exp(-n)).
+ * A174300 a(n) = ceiling(n!*exp(-n)).
  * @author Georg Fischer
  */
 public class A174300 extends LambdaSequence {

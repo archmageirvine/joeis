@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003056;
 
 /**
- * A388063 Irregular triangle read by rows: T(n,k) is the total number of parts in all partitions of n with k designated summands, n &gt;= 1, 1 &lt;= k &lt;= A003056(n).
+ * A389679 Irregular triangle read by rows: T(n,k) is the total number of parts in all partitions with k designated summands of all positive integers &lt;= n, with n &gt;= 1, 1 &lt;= k &lt;= A003056(n).
  * @author Sean A. Irvine
  */
 public class A389679 extends Sequence1 {

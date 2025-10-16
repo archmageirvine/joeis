@@ -6,7 +6,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A388063.
+ * A389674 If n is a power of 10, then leave n untouched, else rewrite n in the base given by the sum of its digits, and 'read' those new digits in base 10.
  * @author Sean A. Irvine
  */
 public class A389674 extends Sequence1 implements DirectSequence {

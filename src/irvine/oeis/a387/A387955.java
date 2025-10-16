@@ -4,7 +4,7 @@ import irvine.oeis.a336.A336282;
 import irvine.util.Permutation;
 
 /**
- * A386382.
+ * A387955 Total sum of major indices of heapable permutations of length n.
  * @author Sean A. Irvine
  */
 public class A387955 extends A336282 {

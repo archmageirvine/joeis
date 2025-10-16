@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A223578 Positive integers n for which f(-n-1) &lt; f(-n) &lt; f(-n+1), where f(m) = floor(cot(Pi/(2m))).
+ * A223578 Positive integers k for which f(-k-1) &lt; f(-k) &lt; f(-k+1), where f(m) = floor(cot(Pi/(2m))).
  * @author Georg Fischer
  */
 public class A223578 extends GeneratingFunctionSequence implements Conjectural {

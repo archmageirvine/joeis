@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007504;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A387790 allocated for Zhi-Wei Sun.
+ * A387790 Number of ways to write n as S(i) + S(j) + 2*S(k), where i,j,k are positive integers with i &gt;= j, and S(k) is the sum of the first k primes.
  * @author Sean A. Irvine
  */
 public class A387790 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063035 Number of integers m &lt;= 10^n that contain a square factor (i.e., belong to A013929).
+ * A063035 Number of integers &lt;= 10^n that contain a square factor (i.e., belong to A013929).
  * @author Sean A. Irvine
  */
 public class A063035 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a389;
 import irvine.oeis.a388.A388139;
 
 /**
- * A389488 allocated for Manolopoulos Panagiotis.
+ * A389488 Total sum of the lengths of the first runs in heapable permutations of length n.
  * @author Sean A. Irvine
  */
 public class A389488 extends A388139 {

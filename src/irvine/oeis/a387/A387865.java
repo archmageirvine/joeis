@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A003022.
+ * A387865 allocated for Zhi-Wei Sun.
  * @author Sean A. Irvine
  */
 public class A387865 extends Sequence1 {

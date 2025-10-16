@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A191111 Describe 10^n. Also called the &quot;Say What You See&quot; or &quot;Look and Say&quot; sequence LS(10^n).
+ * A191111 Describe 10^n. Also called the "Say What You See" or "Look and Say" sequence LS(10^n).
  * @author Georg Fischer
  */
 public class A191111 extends LambdaSequence {

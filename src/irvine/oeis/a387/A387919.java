@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a369.A369361;
 
 /**
- * A388063.
+ * A387919 Numbers k that are neither squarefree, nor squareful, nor a product of primorials.
  * @author Sean A. Irvine
  */
 public class A387919 extends FilterSequence {

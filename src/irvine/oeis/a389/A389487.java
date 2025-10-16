@@ -3,7 +3,7 @@ package irvine.oeis.a389;
 import irvine.util.Permutation;
 
 /**
- * A389487 allocated for Manolopoulos Panagiotis.
+ * A389487 Triangle T(n,k) read by rows, where T(n,k) = number of heapable permutations of length n with exactly k increasing runs.
  * @author Sean A. Irvine
  */
 public class A389487 extends A389255 {

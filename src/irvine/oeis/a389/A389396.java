@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389396 allocated for Stijn Cambie.
+ * A389396 Numbers k such that binomial(2*k,k) is divisible by (k+1)^2*(k+2)^2.
  * @author Sean A. Irvine
  */
 public class A389396 extends Sequence1 {

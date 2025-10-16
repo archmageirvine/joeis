@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000217;
 import irvine.oeis.a008.A008585;
 
 /**
- * A186355 Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=3i and g(j)=j(j+1)/2 (triangular number).  Complement of A186354.
+ * A186355 Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=3i and g(j)=j(j+1)/2 (triangular number). Complement of A186354.
  * @author Georg Fischer
  */
 public class A186355 extends RankSequence {

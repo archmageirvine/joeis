@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A388063.
+ * A387960 Multiplicative sequence a(n) with a(p^e) = 1 + (e mod 3) * (2 - (e mod 3)) for prime p and e &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A387960 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a389;
 import irvine.oeis.RecordSequence;
 
 /**
- * A389391 allocated for James C. McMahon.
+ * A389391 Records in A389240.
  * @author Sean A. Irvine
  */
 public class A389391 extends RecordSequence {

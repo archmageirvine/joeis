@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A000057 Primes dividing all Fibonacci sequences.
+ * A000057 Primes that divide at least one term in every Fibonacci sequence.
  * @author Sean A. Irvine
  */
 public class A000057 extends Sequence1 {

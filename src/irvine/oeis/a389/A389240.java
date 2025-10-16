@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389240 allocated for James C. McMahon.
+ * A389240 Start the sequence S with S(1) = n and extend S with S(m+1) = S(m)/2 when S(m) is even, otherwise with S(m) + the smallest odd number not yet added. a(n) is the number of steps to reach 1, or -1 if 1 is never reached.
  * @author Sean A. Irvine
  */
 public class A389240 extends Sequence1 {

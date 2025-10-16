@@ -6,7 +6,7 @@ import irvine.oeis.a066.A066903;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A177951 PrimePi(A066903(n)), the index of A066903(n) in the primes.
+ * A177951 a(n) = PrimePi(A066903(n)), the index of A066903(n) in the primes.
  * @author Georg Fischer
  */
 public class A177951 extends DirectTransformSequence {

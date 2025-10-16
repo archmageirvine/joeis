@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389363 allocated for Valentin Bakoev.
+ * A389363 a(n) is the number of isosceles trapezoids in a triangular grid of side length n.
  * @author Sean A. Irvine
  */
 public class A389363 extends Sequence1 {

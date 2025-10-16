@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a162.A162296;
 
 /**
- * A389459 Numbers whose sum of non-unitary divisors (A162296) is congruent to 2 modulo 4.
+ * A389459 Numbers whose sum of nonsquarefree divisors (A162296) is congruent to 2 modulo 4.
  * @author Georg Fischer
  */
 public class A389459 extends FilterPositionSequence {

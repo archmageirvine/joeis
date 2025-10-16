@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A388063.
+ * A389681 Numbers k such that k^2 - round(k/phi)^2 is a square where phi = (1+sqrt(5))/2.
  * @author Sean A. Irvine
  */
 public class A389681 extends Sequence1 {

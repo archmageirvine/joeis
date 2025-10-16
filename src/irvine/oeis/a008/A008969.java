@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A008969 Triangle of differences of reciprocals of unity.
+ * A008969 Triangle read by rows of differences of reciprocals of unity.
  * @author Sean A. Irvine
  */
 public class A008969 extends Sequence1 {

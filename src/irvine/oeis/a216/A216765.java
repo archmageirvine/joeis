@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a045.A045542;
 
 /**
- * A216765 Perfect powers (squares, cubes, etc.) plus 1.
+ * A216765 Perfect powers (squares, cubes, etc., not including 1) plus 1.
  * @author Georg Fischer
  */
 public class A216765 extends Sequence1 {

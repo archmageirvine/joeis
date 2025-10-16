@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A389360 allocated for Stijn Cambie.
+ * A389360 Smallest m &gt;= 2*n such that binomial(m,n) is a multiple of m-i for all 0&lt;=i&lt;n, but one.
  * @author Sean A. Irvine
  */
 public class A389360 extends Sequence2 {

@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.InverseSequence;
 
 /**
- * A081210.
+ * A081214 Least m such that A081212(m) = n.
  * @author Sean A. Irvine
  */
 public class A081214 extends InverseSequence {

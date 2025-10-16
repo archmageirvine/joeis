@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A177359 a(n) contains the nonzero frequencies f(d) of digits d=0 .. 9 in all terms up to a(n-1)
+ * A177359 a(n) contains the nonzero frequencies f(d) of digits d=0 .. 9 in all terms up to a(n-1) in concatenated form sorted with respect to d: f(0)//0//f(1)//1//...//f(9)//9. Initial term a(1)=0.
  * in concatenated form sorted with respect to d: f(0)//0//f(1)//1//...//f(9)//9. Initial term a(1)=0.
  * 0, 10, 2011, 303112, 40512223
  * @author Georg Fischer

@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a014.A014263;
 
 /**
- * A085586 n, n^2 and n^3 all use only even digits.
+ * A383939 Numbers k such that k and the k-th triangular number T(k) = k*(k+1)/2 have only even digits.
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

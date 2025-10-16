@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A388063.
+ * A389572 allocated for Yifan Xie.
  * @author Sean A. Irvine
  */
 public class A389572 extends Sequence1 {

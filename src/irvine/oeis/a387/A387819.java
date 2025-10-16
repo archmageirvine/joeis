@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081210.
+ * A387819 a(n) is the smallest final value obtainable from n by repeatedly choosing a contiguous substring of at least two digits that is divisible by some d in 2..9, replacing it with (substring)/d, and continuing until no further division is possible.
  * @author Sean A. Irvine
  */
 public class A387819 extends Sequence1 {

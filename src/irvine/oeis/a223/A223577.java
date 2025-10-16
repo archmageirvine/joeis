@@ -4,7 +4,7 @@ package irvine.oeis.a223;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A223577 Positive integers n for which there is exactly one negative integer m such that -n = floor(cot(Pi/(2*m))).
+ * A223577 Positive integers k for which there is exactly one negative integer m such that -k = floor(cot(Pi/(2*m))).
  * @author Georg Fischer
  */
 public class A223577 extends GeneratingFunctionSequence {

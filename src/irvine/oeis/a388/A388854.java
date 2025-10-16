@@ -11,7 +11,7 @@ import irvine.oeis.a038.A038566;
 import irvine.oeis.a038.A038567;
 
 /**
- * A388854 allocated for Clark Kimberling.
+ * A388854 Decreasing partition array read by antidiagonals based on Farey fractions, (A038566(n+1)/A038567(n)); see Comments.
  * @author Sean A. Irvine
  */
 public class A388854 extends Sequence1 {

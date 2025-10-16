@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389591 allocated for Omar E. Pol.
+ * A389591 Sum of the divisors r of n such that r is not greater than twice the adjacent previous divisor of n.
  * @author Sean A. Irvine
  */
 public class A389591 extends Sequence1 {

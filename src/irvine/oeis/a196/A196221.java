@@ -4,7 +4,7 @@ package irvine.oeis.a196;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A196221 Binomial(n+10, 10)*9^n.
+ * A196221 a(n) = binomial(n+10, 10)*9^n.
  * @author Georg Fischer
  */
 public class A196221 extends GeneratingFunctionSequence {

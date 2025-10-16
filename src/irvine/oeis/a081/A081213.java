@@ -5,7 +5,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A081210.
+ * A081213 Let r(n,k) = if k=0 then n, else r(A081210(n),k-1), then a(n)=r(n, A081212(n)).
  * @author Sean A. Irvine
  */
 public class A081213 extends Sequence1 {

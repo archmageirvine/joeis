@@ -4,13 +4,14 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
  * A081210 In prime factorization of n replace each prime power p^e with the greatest squarefree number &lt;= p^e.
  * @author Sean A. Irvine
  */
-public class A081210 extends Sequence1 {
+public class A081210 extends Sequence1 implements DirectSequence {
 
   private long mN = 0;
 
@@ -24,12 +25,22 @@ public class A081210 extends Sequence1 {
 
   @Override
   public Z next() {
-    final FactorSequence fs = Jaguar.factor(++mN);
+    return a(Z.valueOf(++mN));
+  }
+
+  @Override
+  public Z a(final Z n) {
+    final FactorSequence fs = Jaguar.factor(n);
     Z prod = Z.ONE;
     for (final Z p : fs.toZArray()) {
       final int e = fs.getExponent(p);
       prod = prod.multiply(e == 1 ? p : f(p.pow(e)));
     }
     return prod;
+  }
+
+  @Override
+  public Z a(final int n) {
+    return a(Z.valueOf(n));
   }
 }

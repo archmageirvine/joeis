@@ -10,13 +10,17 @@ import irvine.util.Point;
  * A389532 allocated for Gus Wiseman.
  * @author Sean A. Irvine
  */
-public class A389532 extends Sequence1 {
+public class A389352 extends Sequence1 {
 
   private int mArch = 0;
   private int mSign = 1;
   private final LinkedList<Point> mPoints = new LinkedList<>();
   {
     mPoints.add(new Point(0, 0));
+  }
+
+  protected Z select(final Point pt) {
+    return Z.valueOf(Math.abs(pt.left()) + pt.right());
   }
 
   @Override
@@ -34,7 +38,6 @@ public class A389532 extends Sequence1 {
         mPoints.add(new Point(mSign * mArch, y));
       }
     }
-    final Point pt = mPoints.poll();
-    return Z.valueOf(Math.abs(pt.left()) + pt.right());
+    return select(mPoints.poll());
   }
 }

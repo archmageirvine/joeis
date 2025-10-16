@@ -53,10 +53,11 @@ public class ParallelPermutationSequence extends AbstractSequence implements Dir
    * function is called, remaining elements should be ignored.
    * This method must be re-entrant.
    * @param p the (partial) permutation
+   * @param sum sum of elements in the (partial) permutation
    * @param pos exclusive upper bound on set values in p
    * @return true iff exploration of this permutation should continue
    */
-  protected boolean accept(final int[] p, final int pos) {
+  protected boolean accept(final int[] p, final int sum, final int pos) {
     return true;
   }
 
@@ -91,26 +92,35 @@ public class ParallelPermutationSequence extends AbstractSequence implements Dir
       }
     }
 
-    private void search(final int pos) {
+    private void search(final int sum, final int pos) {
       if (pos == mP.length) {
         mCount = mCount.add(count(mP));
         return;
       }
       // Simply take the next element
-      if (accept(mP, pos + 1)) {
-        search(pos + 1);
+      if (accept(mP, sum + mP[pos], pos + 1)) {
+        search(sum + mP[pos], pos + 1);
       }
       // Swap (pos, k) for following k
       final int t = mP[pos];
       for (int k = pos + 1; k < mP.length; ++k) {
         mP[pos] = mP[k];
         mP[k] = t;
-        if (accept(mP, pos + 1)) {
-          search(pos + 1);
+        final int s = sum + mP[pos];
+        if (accept(mP, s, pos + 1)) {
+          search(s, pos + 1);
         }
         mP[k] = mP[pos];
       }
       mP[pos] = t;
+    }
+
+    private void search() {
+      // elements 0 and 1 already selected
+      final int sum = mP[0] + mP[1];
+      if (accept(mP, sum, 2)) {
+        search(sum, 2);
+      }
     }
   }
 
@@ -119,20 +129,20 @@ public class ParallelPermutationSequence extends AbstractSequence implements Dir
     Z count = Z.ZERO;
     switch (n) {
       case 0:
-        if (accept(EMPTY, 0)) {
+        if (accept(EMPTY, 0, 0)) {
           count = count.add(count(EMPTY));
         }
         break;
       case 1:
-        if (accept(UNIT, 1)) {
+        if (accept(UNIT, 0, 1)) {
           count = count.add(count(UNIT));
         }
         break;
       case 2:
-        if (accept(TWO0, 2)) {
+        if (accept(TWO0, 1, 2)) {
           count = count.add(count(TWO0));
         }
-        if (accept(TWO1, 2)) {
+        if (accept(TWO1, 1, 2)) {
           count = count.add(count(TWO1));
         }
         break;
@@ -145,9 +155,7 @@ public class ParallelPermutationSequence extends AbstractSequence implements Dir
             if (p0 != p1) {
               final Importunate job = new Importunate(n, p0, p1);
               jobs.add(job);
-              executor.submit(() -> {
-                job.search(2); // elements 0 and 1 already selected
-              });
+              executor.submit((Runnable) job::search);
             }
           }
         }

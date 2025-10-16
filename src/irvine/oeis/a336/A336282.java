@@ -19,7 +19,7 @@ public class A336282 extends ParallelPermutationSequence {
   }
 
   @Override
-  protected boolean accept(final int[] p, final int pos) {
+  protected boolean accept(final int[] p, final int sum, final int pos) {
     if (p.length < 1) {
       return true;
     }

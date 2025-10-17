@@ -19,7 +19,7 @@ public class A387981 extends Sequence1 {
   private final Sequence mCoords = new A296030();
   private final HashMap<Long, Point> mPrimeToCoords = new HashMap<>();
   private long mP = 2;
-  private long mN = 3;
+  private long mN = 0;
 
   private Point getCoords(final long p) {
     while (mP < p) {

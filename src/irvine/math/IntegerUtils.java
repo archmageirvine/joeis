@@ -476,4 +476,26 @@ public final class IntegerUtils {
     return false;
   }
 
+  /**
+   * Convert a list of integers specified as a string into an array of integers.
+   * The numbers in the string can be space or comma separated.
+   * @param string string containing numbers
+   * @return long array
+   */
+  public static int[] toInt(final String string) {
+    String s = string;
+    if (s.startsWith("[") || s.startsWith("(") || s.startsWith("{")) {
+      s = s.substring(1);
+    }
+    if (s.endsWith("]") || s.endsWith(")") || s.endsWith("}")) {
+      s = s.substring(0, s.length() - 1);
+    }
+    final String[] parts = s.split("[, ]+");
+    final int[] res = new int[parts.length];
+    for (int k = 0; k < parts.length; ++k) {
+      res[k] = Integer.parseInt(parts[k]);
+    }
+    return res;
+  }
+
 }

@@ -1,0 +1,33 @@
+package irvine.oeis.a387;
+
+import irvine.math.predicate.Predicates;
+import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
+import irvine.oeis.Sequence2;
+import irvine.oeis.a005.A005117;
+
+/**
+ * A387630 allocated for Miles Englezou.
+ * @author Sean A. Irvine
+ */
+public class A387630 extends Sequence2 {
+
+  private final DirectSequence mA = DirectSequence.create(new A005117());
+  private int mN = 1;
+  private int mBest = 0;
+
+  @Override
+  public Z next() {
+    while (true) {
+      final Z t = mA.a(++mN).subtract(1);
+      int cnt = 1;
+      while (Predicates.SQUARE_FREE.is(t.add(mA.a(cnt)))) {
+        ++cnt;
+      }
+      if (cnt > mBest) {
+        mBest = cnt;
+        return t;
+      }
+    }
+  }
+}

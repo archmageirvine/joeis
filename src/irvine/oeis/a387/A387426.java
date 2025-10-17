@@ -12,15 +12,13 @@ import irvine.oeis.Sequence1;
  */
 public class A387426 extends Sequence1 {
 
-  private long mN = 1;
+  private long mN = 0;
 
   private boolean is(final long n) {
+    final long m = 2 * n;
     final HashSet<Q> seen = new HashSet<>();
     for (long k = 1; k <= n; ++ k) {
-      Q t = new Q(n % k, k);
-      if (t.compareTo(Q.HALF) >= 0) {
-        t = t.subtract(Q.HALF);
-      }
+      Q t = new Q(m % k, k);
       if (!seen.add(t) && !t.isZero()) {
         return false;
       }

@@ -478,12 +478,12 @@ public final class ZUtils {
     return true;
   }
 
-  private static List<Z> baseFunction(final Function1 fn, final Z n) {
+  private static ArrayList<Z> baseFunction(final Function1 fn, final Z n) {
     int b = 1;
     while (fn.z(b).compareTo(n) <= 0) {
       ++b;
     }
-    final List<Z> res = new ArrayList<>();
+    final ArrayList<Z> res = new ArrayList<>();
     Z m = n;
     do {
       final Z[] qr = m.divideAndRemainder(fn.z(--b));
@@ -498,7 +498,7 @@ public final class ZUtils {
    * @param n number to convert
    * @return factorial base digits
    */
-  public static List<Z> factorialBaseList(final Z n) {
+  public static ArrayList<Z> factorialBaseList(final Z n) {
     return baseFunction(Functions.FACTORIAL, n);
   }
 
@@ -507,7 +507,7 @@ public final class ZUtils {
    * @param n number to convert
    * @return superfactorial base digits
    */
-  public static List<Z> superfactorialBaseList(final Z n) {
+  public static ArrayList<Z> superfactorialBaseList(final Z n) {
     return baseFunction(Functions.SUPERFACTORIAL, n);
   }
 

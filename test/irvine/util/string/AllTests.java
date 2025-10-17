@@ -18,6 +18,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(DanishTest.class);
     suite.addTestSuite(DateTest.class);
     suite.addTestSuite(DutchTest.class);
+    suite.addTestSuite(EditDistTest.class);
     suite.addTestSuite(EnglishTest.class);
     suite.addTestSuite(EsperantoTest.class);
     suite.addTestSuite(FinnishTest.class);

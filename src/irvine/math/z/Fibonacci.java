@@ -80,6 +80,24 @@ public final class Fibonacci  {
     return ring.pow(mat, n).get(0, 1).mod(m);
   }
 
+
+  /**
+   * Compute a Lucas number mod <code>m</code>.
+   * @param n index
+   * @param m modulus
+   * @return Lucas number
+   */
+  public static Z lucas(final Z n, final Z m) {
+    if (m.signum() < 1) {
+      throw new IllegalArgumentException();
+    }
+    final MatrixRing<Z> ring = new MatrixRing<>(2, new IntegersMod(m));
+    final Matrix<Z> mat = new DefaultMatrix<>(new Z[][] {{Z.ZERO, Z.ONE}, {Z.ONE, Z.ONE}}, Z.ZERO);
+    final Matrix<Z> pow = ring.pow(mat, n);
+    final Matrix<Z> t = ring.multiply(pow, new DefaultMatrix<Z>(new Z[][] {{Z.TWO}, {Z.ONE}}, Z.ZERO));
+    return t.get(0, 0).mod(m);
+  }
+
   /**
    * Print Fibonacci numbers.
    * @param args indexes to print

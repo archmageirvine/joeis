@@ -1,16 +1,16 @@
 package irvine.oeis.a081;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.util.string.EditDist;
 
 /**
  * A081230 a(n) is the Levenshtein distance between n and n^n (where each is treated as a string).
  * @author Sean A. Irvine
  */
-public class A081230 extends Sequence1 {
+public class A081230 extends Sequence0 {
 
-  private long mN = 0;
+  private long mN = -1;
 
   @Override
   public Z next() {

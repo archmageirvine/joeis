@@ -4,12 +4,13 @@ package irvine.oeis.a093;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A093653 Total number of 1's in binary expansion of all divisors of n.
  * @author Georg Fischer
  */
-public class A093653 extends AbstractSequence {
+public class A093653 extends AbstractSequence implements DirectSequence {
 
   private int mN = 0;
 
@@ -20,7 +21,17 @@ public class A093653 extends AbstractSequence {
 
   @Override
   public Z next() {
-    ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> Z.valueOf(Integer.bitCount(d)));
+    return a(++mN);
   }
+
+  @Override
+  public Z a(final Z n) {
+    return Integers.SINGLETON.sumdiv(n, d -> Z.valueOf(Integer.bitCount(d)));
+  }
+
+  @Override
+  public Z a(final int n) {
+    return Integers.SINGLETON.sumdiv(n, d -> Z.valueOf(Integer.bitCount(d)));
+  }
+
 }

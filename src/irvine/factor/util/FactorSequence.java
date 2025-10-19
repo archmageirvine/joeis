@@ -793,6 +793,20 @@ public final class FactorSequence {
   }
 
   /**
+   * Test if the number represented by this sequence is a square.
+   * @return true iff the number is square
+   */
+  public boolean isSquare() {
+    completeOrException();
+    for (final Factor f : mFactors.values()) {
+      if ((f.mExponent & 1) == 1) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  /**
    * Return the sum of prime factors without multiplicity.
    * @return <code>sopf(this)</code>
    */

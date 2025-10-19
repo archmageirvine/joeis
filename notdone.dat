@@ -2727,3 +2727,4 @@ A081174 Numerators of constants arising in calculation of higher correlations of
 A081176 Loony stack sizes in Top Entails.
 A081198 Smallest stack size with an unentailed Grundy value of 2^n in Top Entails.
 A081262 Number of distinct (modulo rotation and reflection) n X n associative magic squares.
+A081263 Number of distinct (modulo rotation and reflection) n X n associative panmagic squares.

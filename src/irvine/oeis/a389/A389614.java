@@ -4,7 +4,7 @@ package irvine.oeis.a389;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A389614 a(n) = 2*n^2 + 1 - (m*n - 3*m*(m+1)/2) where m = floor(n/3).
+ * A389614 allocated for N. J. A. Sloane.
  * @author Georg Fischer
  */
 public class A389614 extends HolonomicRecurrence {

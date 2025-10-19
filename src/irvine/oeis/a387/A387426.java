@@ -18,7 +18,7 @@ public class A387426 extends Sequence1 {
     final long m = 2 * n;
     final HashSet<Q> seen = new HashSet<>();
     for (long k = 1; k <= n; ++ k) {
-      Q t = new Q(m % k, k);
+      final Q t = new Q(m % k, k);
       if (!seen.add(t) && !t.isZero()) {
         return false;
       }

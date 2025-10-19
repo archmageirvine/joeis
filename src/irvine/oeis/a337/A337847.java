@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A337829 Odd integers k such that 5^((k-1)/2) + 1 == 0 (mod k*(k-1)/2).
+ * A337847 Odd integers k such that 3^((k-1)/2) == 1 (mod k*(k-2)).
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

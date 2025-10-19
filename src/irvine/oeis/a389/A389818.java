@@ -8,7 +8,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A389818 E.g.f. A(x) satisfies A(x) = (1+x) * exp(x^2 * (1+x) * A(x)).
+ * A389818 allocated for Seiichi Manyama.
  * @author Georg Fischer
  */
 public class A389818 extends LambdaSequence {

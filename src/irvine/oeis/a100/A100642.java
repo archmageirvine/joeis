@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002176;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A100642 Triangle read by rows: numerators of Cotesian numbers C(n,k) (0 &lt;= k &lt;= n) if the denominators are set to the lcm&apos;s of the rows (A002176).
+ * A100642 Triangle read by rows: numerators of Cotesian numbers C(n,k) (0 &lt;= k &lt;= n) if the denominators are set to the lcm's of the rows (A002176).
  * @author Georg Fischer
  */
 public class A100642 extends LambdaTriangle {

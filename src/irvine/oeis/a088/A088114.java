@@ -4,7 +4,7 @@ package irvine.oeis.a088;
 import irvine.oeis.DeadSequence;
 
 /**
- * A088114 Near duplicate of A071277.
+ * A088114 Smallest palindrome which can be expressed as the product of n palindromes &gt; 1 (not necessarily distinct).
  * @author Georg Fischer
  */
 public class A088114 extends DeadSequence {

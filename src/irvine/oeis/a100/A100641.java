@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A100641 Triangle read by rows: denominators of Cotesian numbers C(n,k) (0 &lt;= k &lt;= n).
+ * A100641 Triangle read by rows: denominators of Cotesian numbers C(n,k) (0 &lt;= k &lt;= k).
  * @author Georg Fischer
  */
 public class A100641 extends LambdaTriangle {

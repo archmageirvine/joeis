@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A152004.
+ * A389772 allocated for Robin Jones.
  * @author Sean A. Irvine
  */
 public class A389772 extends Sequence1 {

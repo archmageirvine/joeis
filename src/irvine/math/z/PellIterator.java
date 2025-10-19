@@ -15,6 +15,10 @@ public final class PellIterator extends AbstractIterator<Z[]> {
   private Z mX = null;
   private Z mY = null;
 
+  /**
+   * Construct an iterator for the given discriminant.
+   * @param d discriminant
+   */
   public PellIterator(final Z d) {
     mD = d;
   }

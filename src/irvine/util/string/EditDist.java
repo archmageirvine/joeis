@@ -80,9 +80,9 @@ public class EditDist {
     this(a, b, true);
   }
 
-  private void calcEditDist(String a, String b) {
-    int l1, l2, l3;
-    final int mLena, mLenb;
+  private void calcEditDist(final String a, final String b) {
+    final int mLena;
+    final int mLenb;
 
     mStringA = a.toLowerCase(Locale.getDefault());
     mStringB = b.toLowerCase(Locale.getDefault());
@@ -111,9 +111,9 @@ public class EditDist {
           mArrCh[i][j] = mStringB.charAt(j - 1);
           // mArr[i][j];
         } else {
-          l1 = mArr[i - 1][j - 1] + 1;
-          l2 = mArr[i - 1][j] + 1;
-          l3 = mArr[i][j - 1] + 1;
+          final int l1 = mArr[i - 1][j - 1] + 1;
+          final int l2 = mArr[i - 1][j] + 1;
+          final int l3 = mArr[i][j - 1] + 1;
           mArr[i][j] = Math.min(Math.min(l1, l2), l3);
           if (mArr[i][j] == l1) {
             // mArr[i][j]+=3;

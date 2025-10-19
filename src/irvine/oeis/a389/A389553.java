@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A152004.
+ * A389553 allocated for Paolo Xausa.
  * @author Sean A. Irvine
  */
 public class A389553 extends Sequence1 {

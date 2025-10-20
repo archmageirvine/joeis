@@ -272,4 +272,26 @@ public final class Reals extends AbstractOrderedField<Double> implements Exp<Dou
   public Z round(final Double n) {
     return Z.valueOf(Math.round(n));
   }
+
+  private static final double[] LN_GAMMA_C = {
+    76.18009172947146, -86.50532032941677,
+    24.01409824083091, -1.231739572450155,
+    0.001208650973866179, -0.000005395239384953
+  };
+
+  /**
+   * Log gamma function.
+   * @param x argument
+   * @return value
+   */
+  public Double lnGamma(final Double x) {
+    double y = x;
+    double tmp = x + 5.5;
+    tmp -= (x + 0.5) * Math.log(tmp);
+    double ser = 1.000000000190015;
+    for (final double ci : LN_GAMMA_C) {
+      ser += ci / ++y;
+    }
+    return Math.log(2.5066282746310005 * ser / x) - tmp;
+  }
 }

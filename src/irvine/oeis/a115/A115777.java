@@ -1,16 +1,16 @@
 package irvine.oeis.a115;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.util.string.EditDist;
 
 /**
  * A115777 Levenshtein distance between n considered as a decimal string and n considered as a binary string.
  * @author Sean A. Irvine
  */
-public class A115777 extends Sequence1 {
+public class A115777 extends Sequence0 {
 
-  private long mN = 0;
+  private long mN = -1;
 
   @Override
   public Z next() {

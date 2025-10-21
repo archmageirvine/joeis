@@ -9,13 +9,23 @@ import irvine.oeis.Sequence1;
  */
 public class A389721 extends Sequence1 {
 
+  private final Z mStart;
   private Z mA = null;
+
+  protected A389721(final Z start) {
+    mStart = start;
+  }
+
+  /** Construct the sequence. */
+  public A389721() {
+    this(Z.ONE);
+  }
 
   @Override
   public Z next() {
     if (mA == null) {
-      mA = Z.ONE;
-      return Z.ONE;
+      mA = mStart;
+      return mStart;
     }
     final String s = String.valueOf(mA);
     Z max = Z.ZERO;

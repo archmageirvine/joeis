@@ -7,7 +7,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a033.A033880;
 
 /**
- * A275702 Numbers n whose deficiency is 26: 2n - sigma(n) = 26.
+ * A275702 Numbers k whose deficiency is 26: 2*k - sigma(k) = 26.
  * @author Georg Fischer
  */
 public class A275702 extends FilterNumberSequence {

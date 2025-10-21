@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A388006 allocated for Ctibor O. Zizka.
+ * A388006 Numbers k = p_i^e_i *...* p_r^e_r such that i/e_i +...+ r/e_r = 1 for e_i,..., e_r &gt;= 1; p_i,..., p_r distinct prime numbers (A000040).
  * @author Sean A. Irvine
  */
 public class A388006 extends Sequence1 {

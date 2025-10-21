@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A387985 allocated for Jason Bard.
+ * A387985 Decimal expansion of Sum_{k&gt;=1} (-1)^(k+1) * k*(zeta(2*k))^2 / 2^k.
  * @author Sean A. Irvine
  */
 public class A387985 extends DecimalExpansionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A248547 Numbers n such that 75^n+2 is prime.
+ * A248547 Numbers k such that 75^k+2 is prime.
  * @author Georg Fischer
  */
 public class A248547 extends PrimePositionSubsequence {

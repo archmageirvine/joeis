@@ -9,7 +9,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A389645 allocated for R\u00e9my Sigrist.
+ * A389645 The factorial base expansion of A389644(n), when read backwards, corresponds to that of A389644(a(n)).
  * @author Sean A. Irvine
  */
 public class A389645 extends Sequence1 {

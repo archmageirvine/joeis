@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A177114 4*(10^n-9).
+ * A177114 a(n) = 4*(10^n-9).
  * @author Sean A. Irvine
  */
 public class A177114 extends LinearRecurrence {

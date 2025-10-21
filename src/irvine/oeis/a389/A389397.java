@@ -5,7 +5,7 @@ import irvine.oeis.TwoParameterFormSequence;
 import irvine.oeis.a386.A386223;
 
 /**
- * A389397 allocated for Michael De Vlieger.
+ * A389397 Powers k^m, m &gt; 1, where k is neither squarefree nor squareful and is a product of primorials.
  * @author Sean A. Irvine
  */
 public class A389397 extends TwoParameterFormSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a033.A033880;
 
 /**
- * A101259 Numbers n whose deficiency is 54.
+ * A101259 Numbers whose deficiency is 54.
  * @author Georg Fischer
  */
 public class A101259 extends FilterNumberSequence {

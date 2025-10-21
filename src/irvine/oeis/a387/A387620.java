@@ -5,7 +5,7 @@ import irvine.oeis.a131.A131605;
 import irvine.oeis.a369.A369361;
 
 /**
- * A387620 allocated for Michael De Vlieger.
+ * A387620 Perfect powers that are neither prime powers nor products of primorials.
  * @author Sean A. Irvine
  */
 public class A387620 extends IntersectionSequence {

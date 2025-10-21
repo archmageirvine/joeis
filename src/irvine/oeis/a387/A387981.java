@@ -10,7 +10,7 @@ import irvine.oeis.a296.A296030;
 import irvine.util.Point;
 
 /**
- * A387981 allocated for Ya-Ping Lu.
+ * A387981 Positive integers m such that 2*m is not the sum of two horizontal, vertical or diagonal neighboring primes in a square spiral with odd primes.
  * @author Sean A. Irvine
  */
 public class A387981 extends Sequence1 {

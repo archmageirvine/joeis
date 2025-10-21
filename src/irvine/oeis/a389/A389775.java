@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389775 allocated for Aloe Poliszuk.
+ * A389775 Absolute value of the inverse Mobius transform of mu(n)*phi(n^2).
  * @author Sean A. Irvine
  */
 public class A389775 extends Sequence1 {

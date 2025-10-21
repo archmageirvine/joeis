@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387991 allocated for Zhi-Wei Sun.
+ * A387991 Number of ways to write n as i*prime(i) + j*prime(j) + k*prime(k) + m*prime(m) with 1 &lt;= i &lt;= j &lt;= k &lt;= m.
  * @author Sean A. Irvine
  */
 public class A387991 extends Sequence1 {

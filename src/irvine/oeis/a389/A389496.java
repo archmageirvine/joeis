@@ -10,7 +10,7 @@ import irvine.util.Permutation;
  */
 public class A389496 extends A336282 {
 
-  private long[] mRow = new long[0];
+  protected long[] mRow = new long[0];
   private int mM = 0;
 
   /** Construct the sequence. */

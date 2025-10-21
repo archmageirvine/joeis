@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A098725 a(4n) = 0, a(2n+1) = 1, a(4n+2) = a(n+1).
+ * A098725 a(4*n) = 0, a(2*n+1) = 1, a(4*n+2) = a(n+1).
  * @author Georg Fischer
  */
 public class A098725 extends MultiTransformSequence {

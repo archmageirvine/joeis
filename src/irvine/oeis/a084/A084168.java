@@ -4,7 +4,7 @@ package irvine.oeis.a084;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A084168 Count of primitive roots p = 2 or 1 mod 4 of elements in A084167.
+ * A084168 Number of primitive roots p = 2 or 1 mod 4 of elements in A084167.
  * @author Georg Fischer
  */
 public class A084168 extends FiniteSequence {

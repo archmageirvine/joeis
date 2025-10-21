@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A387169 allocated for Kelvin Voskuijl.
+ * A387169 Decimal expansion of Product_{k&gt;=1} (1 + 1/A005900(k)) (octahedral numbers).
  * @author Sean A. Irvine
  */
 public class A387169 extends DecimalExpansionSequence {

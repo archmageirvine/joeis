@@ -7,7 +7,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a033.A033880;
 
 /**
- * A223608 Numbers n whose deficiency is 18: sigma(n) - 2*n = -18.
+ * A223608 Numbers k whose deficiency is 18: sigma(k) - 2*k = -18.
  * @author Georg Fischer
  */
 public class A223608 extends FilterNumberSequence {

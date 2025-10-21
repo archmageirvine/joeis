@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000328;
 
 /**
- * A389588 allocated for Safwan Jaradat.
+ * A389588 Number of integer lattice points (x,y) with x^2 + y^2 &lt;= n^2 that lie outside the interior of the regular hexagon inscribed in the circle of radius n centered at the origin.
  * @author Sean A. Irvine
  */
 public class A389588 extends Sequence1 {

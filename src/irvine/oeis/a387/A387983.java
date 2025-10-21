@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A387983 allocated for Jason Bard.
+ * A387983 Decimal expansion of Sum_{k&gt;=1} k^(-5*k).
  * @author Sean A. Irvine
  */
 public class A387983 extends DecimalExpansionSequence {

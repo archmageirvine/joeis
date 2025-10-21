@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A152004 This is a sequence from 4 X n Chomp. Values of p for which there is a P-position (p,p,r,r).
+ * A152004 Values of p for which there is a P-position (p,p,r,r) in 4 X n Chomp with p &gt;= r.
  * @author Sean A. Irvine
  */
 public class A152004 extends Sequence0 {

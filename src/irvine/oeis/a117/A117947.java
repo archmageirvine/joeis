@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A117947 T(n,k)=L(C(n,k)/3) where L(j/p) is the Legendre symbol of j and p.
+ * A117947 T(n,k) = L(C(n,k)/3) where L(j/p) is the Legendre symbol of j and p.
  * @author Georg Fischer
  */
 public class A117947 extends LambdaTriangle {

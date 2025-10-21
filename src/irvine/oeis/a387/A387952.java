@@ -5,7 +5,7 @@ import irvine.oeis.TwoParameterFormSequence;
 import irvine.oeis.a073.A073024;
 
 /**
- * A387952 allocated for Pierre Abbat.
+ * A387952 Squarefree semiprimes whose prime factors are in A073024.
  * @author Sean A. Irvine
  */
 public class A387952 extends TwoParameterFormSequence {

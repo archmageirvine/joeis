@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A389644 allocated for R\u00e9my Sigrist.
+ * A389644 Nonnegative numbers k such that for some integer m the factorial base expansion of k (without leading zeros), when read backwards, corresponds to that of m, and conversely, the factorial base expansion of m (without leading zeros), when read backwards, corresponds to that of k.
  * @author Sean A. Irvine
  */
 public class A389644 extends Sequence1 {

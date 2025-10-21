@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A388051 allocated for Paul Duckett.
+ * A388051 Integers which can be represented as a sum of two nontrivial powers in two or more ways.
  * @author Sean A. Irvine
  */
 public class A388051 extends Sequence1 {

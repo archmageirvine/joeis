@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A389785 allocated for Michel Lagneau.
+ * A389785 Least prime p such that (2^n*p)^2+1 is also prime, or 0 if no such p exists.
  * @author Sean A. Irvine
  */
 public class A389785 extends Sequence0 {

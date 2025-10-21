@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388002 allocated for Jason Bard.
+ * A389828 Decimal expansion of 15/8 + Pi/4 * coth(Pi) - zeta(2) - zeta(6).
  * @author Sean A. Irvine
  */
 public class A389828 extends DecimalExpansionSequence {

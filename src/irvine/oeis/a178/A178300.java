@@ -5,7 +5,7 @@ import irvine.oeis.a176.A176992;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A178300 Triangle T(n,k) = binomial(n+k-1,n) read by rows, 1 &lt;= k &lt;= n.
+ * A178300 Triangle T(n, k) = binomial(n+k-1, n) read by rows, 1 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A178300 extends Transpose {

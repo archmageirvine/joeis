@@ -2728,3 +2728,4 @@ A081176 Loony stack sizes in Top Entails.
 A081198 Smallest stack size with an unentailed Grundy value of 2^n in Top Entails.
 A081262 Number of distinct (modulo rotation and reflection) n X n associative magic squares.
 A081263 Number of distinct (modulo rotation and reflection) n X n associative panmagic squares.
+A081287 Excess area when consecutive squares of sizes 1 to n are packed into the smallest possible rectangle.

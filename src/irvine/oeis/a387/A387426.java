@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387426 allocated for Kenneth J Scheller.
+ * A387426 Numbers k such that all nonzero fractions (2*k mod m)/m (for 1 &lt;= m &lt;= k) are distinct.
  * @author Sean A. Irvine
  */
 public class A387426 extends Sequence1 {

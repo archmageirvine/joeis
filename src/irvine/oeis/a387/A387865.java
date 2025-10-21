@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387865 allocated for Zhi-Wei Sun.
+ * A387865 Number of ways to write 2*n as p + p' + q, where p is a prime, p' is the first prime after p, and q is a practical number.
  * @author Sean A. Irvine
  */
 public class A387865 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.a030.A030190;
 import irvine.oeis.a388.A388856;
 
 /**
- * A389576 allocated for Clark Kimberling.
+ * A389576 Increasing partition array based on the tails of the binary Champernowne constant (A030190); see Comments.
  * @author Sean A. Irvine
  */
 public class A389576 extends A388856 {

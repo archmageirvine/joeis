@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389553 allocated for Paolo Xausa.
+ * A389553 Irregular triangle read by rows: row n lists all the triples (a,b,c) such that a!*b!*c! is a perfect square, with 1 &lt;= a &lt; b &lt; c = A388851(n). Within a row, triples are sorted by increasing a, then by increasing b.
  * @author Sean A. Irvine
  */
 public class A389553 extends Sequence1 {

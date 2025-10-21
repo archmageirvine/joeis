@@ -4,7 +4,7 @@ package irvine.oeis.a187;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A187366 One half of a trisection of A001700: binomial(6n+5,3(n+1))/2, n&gt;=0.
+ * A187366 One half of a trisection of A001700: binomial(6n+5,3(n+1))/2, n &gt;= 0.
  * @author Georg Fischer
  */
 public class A187366 extends HolonomicRecurrence {

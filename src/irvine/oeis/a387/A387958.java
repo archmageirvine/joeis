@@ -5,7 +5,7 @@ import irvine.oeis.a052.A052486;
 import irvine.oeis.a369.A369361;
 
 /**
- * A387958 allocated for Michael De Vlieger.
+ * A387958 Achilles numbers that are not products of primorials.
  * @author Sean A. Irvine
  */
 public class A387958 extends IntersectionSequence {

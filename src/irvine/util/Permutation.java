@@ -301,6 +301,23 @@ public class Permutation {
   }
 
   /**
+   * Compute the number of inversions in permutation.
+   * @param p permutation
+   * @return inversions
+   */
+  public static int inversions(final int[] p) {
+    int count = 0;
+    for (int k = 0; k < p.length - 1; ++k) {
+      for (int j = k + 1; j < p.length; ++j) {
+        if (p[k] > p[j]) {
+          ++count;
+        }
+      }
+    }
+    return count;
+  }
+
+  /**
    * Example use.
    * @param args ignored
    */

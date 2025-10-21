@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387975 allocated for Ali Sada.
+ * A387975 Number of distinct positive integers reachable from n by successively dividing any contiguous substring of at least two digits by an integer d in 2..9, including n itself.
  * @author Sean A. Irvine
  */
 public class A387975 extends Sequence1 {

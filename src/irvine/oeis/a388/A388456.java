@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388456 Decimal expansion of 2^(1/8).
+ * A388456 allocated for Robert G. Wilson v.
  * @author Sean A. Irvine
  */
 public class A388456 extends DecimalExpansionSequence {

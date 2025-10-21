@@ -6,7 +6,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**
- * A389110 allocated for Pablo Cadena-Urz\u00faa.
+ * A389110 Least m such that the two-sided exact 95% Clopper-Pearson binomial confidence interval has worst-case width &lt;= 1/n.
  * @author Sean A. Irvine
  */
 public class A389110 extends Sequence1 implements Conjectural {

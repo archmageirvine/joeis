@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a013.A013929;
 
 /**
- * A388005 allocated for Henri Lifchitz.
+ * A388005 Sum of numbers &lt;= 10^n which are not squarefree.
  * @author Sean A. Irvine
  */
 public class A388005 extends Sequence0 {

@@ -8,7 +8,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
- * A387909 allocated for R\u00e9my Sigrist.
+ * A387909 Consider the factorial base expansion of n, without leading zeros, say (d(1), ..., d(w)); for k = 2..floor(w/2), if d(k) &lt;= k then exchange d(k) and d(w+1-k); the resulting digits correspond to the factorial base expansion of a(n).
  * @author Sean A. Irvine
  */
 public class A387909 extends Sequence0 {

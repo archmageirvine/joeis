@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A389557 allocated for Paolo Xausa.
+ * A389557 Decimal expansion of the largest dihedral angle, in radians, in an augmented hexagonal prism (Johnson solid J_54).
  * @author Sean A. Irvine
  */
 public class A389557 extends DecimalExpansionSequence {

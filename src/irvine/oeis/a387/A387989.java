@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A387989 allocated for Michal Paulovic.
+ * A387989 Decimal expansion of the perimeter equal to the area of an equable decagon (10-gon).
  * @author Sean A. Irvine
  */
 public class A387989 extends DecimalExpansionSequence {

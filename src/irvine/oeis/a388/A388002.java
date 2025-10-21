@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388002 allocated for Jason Bard.
+ * A388002 Decimal expansion of Sum_{k&gt;=2} 1/(k^10-1).
  * @author Sean A. Irvine
  */
 public class A388002 extends DecimalExpansionSequence {

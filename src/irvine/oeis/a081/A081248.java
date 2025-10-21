@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081248 Number of numbers k&lt;=n with mu(k+n)+mu(k)=0, where mu=A008683 (Moebius function).
+ * A081248 Number of numbers 1&lt;=k&lt;=n with mu(k+n)+mu(k)=0, where mu=A008683 (Moebius function).
  * @author Sean A. Irvine
  */
 public class A081248 extends Sequence1 {

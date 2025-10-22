@@ -16,7 +16,7 @@ public class A389684 extends Sequence0 {
   public Z next() {
     ++mN;
     long count = 0;
-    for (long i = 0, bi; (bi = mN - Binomial.binomial(i, 4).longValueExact()) >=0; ++i) {
+    for (long i = 0, bi; (bi = mN - Binomial.binomial(i, 4).longValueExact()) >= 0; ++i) {
       for (long j = 0, bj; (bj = bi - Binomial.binomial(j, 3).longValueExact()) >= 0; ++j) {
         for (long k = 0; bj - Binomial.binomial(k, 2).longValueExact() >= 0; ++k) {
           ++count;

@@ -22,7 +22,7 @@ public class A389791 extends Sequence1 {
       mA = 1;
       return Z.ONE;
     }
-    long p = mQ;
+    final long p = mQ;
     mQ = mPrime.nextPrime(mQ);
     final String s = String.valueOf(mA);
     final String sp = String.valueOf(p);

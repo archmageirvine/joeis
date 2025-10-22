@@ -72,7 +72,7 @@ public class A388006 extends Sequence1 {
         return s.mN;
       }
       // Add next prime into the mix
-      int k = s.mPrimeIndex + 1;
+      final int k = s.mPrimeIndex + 1;
       // We want sum + k/e <= 1
       int e = Q.valueOf(k).divide(Q.ONE.subtract(s.mSum)).toZ().intValueExact();
       if (s.mSum.add(new Q(k, e)).compareTo(Q.ONE) > 0) {

@@ -33,20 +33,6 @@ public class A383394 extends Sequence1 {
       }
       return right().compareTo(pair.right());
     }
-
-    @Override
-    public boolean equals(final Object obj) {
-      if (!(obj instanceof State)) {
-        return false;
-      }
-      final State other = (State) obj;
-      return left().equals(other.left()) && right().equals(other.right());
-    }
-
-    @Override
-    public int hashCode() {
-      return left().hashCode();
-    }
   }
 
   private final Sequence mParent;

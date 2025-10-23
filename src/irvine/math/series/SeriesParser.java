@@ -58,13 +58,13 @@ public class SeriesParser {
       final Matcher matcher = pattern.matcher(mInput);
       while (matcher.find()) {
         final String match = matcher.group();
-        if (match.equals("x")) {
+        if ("x".equals(match)) {
           mTokens.add(new Token(TokenType.VARIABLE, match));
         } else if (match.matches("[+\\-*/^]")) {
           mTokens.add(new Token(TokenType.OP, match));
-        } else if (match.equals("(")) {
+        } else if ("(".equals(match)) {
           mTokens.add(new Token(TokenType.LPAREN, match));
-        } else if (match.equals(")")) {
+        } else if (")".equals(match)) {
           mTokens.add(new Token(TokenType.RPAREN, match));
         } else if (match.matches("\\d+/\\d+|\\d+")) {
           mTokens.add(new Token(TokenType.NUMBER, match));

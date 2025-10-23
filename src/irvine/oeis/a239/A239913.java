@@ -6,7 +6,7 @@ import irvine.oeis.a005.A005185;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A239913 a(n) = n - Q(n), where Q(n) is Hofstadter&apos;s Q-sequence A005185.
+ * A239913 a(n) = n - Q(n), where Q(n) is Hofstadter's Q-sequence A005185.
  * @author Georg Fischer
  */
 public class A239913 extends SingleTransformSequence {

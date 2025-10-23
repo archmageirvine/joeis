@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a002.A002129;
 
 /**
- * A122858 Expansion of E(k) * K(k) * (2/Pi)^2 in powers of q^2 where E(), K() are complete elliptic integrals and the nome q = exp( -Pi * K(k&apos;) / K(k)).
+ * A122858 Expansion of E(k) * K(k) * (2/Pi)^2 in powers of q^2 where E(), K() are complete elliptic integrals and the nome q = exp( -Pi * K(k') / K(k)).
  * @author Georg Fischer
  */
 public class A122858 extends LambdaSequence {

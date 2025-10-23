@@ -1256,13 +1256,11 @@ A034648 Theta series of (putative) extremal 3-modular even lattice in dimension 
 A034649 Theta series of (putative) extremal 3-modular even lattice in dimension 78.
 A034650 Theta series of (putative) extremal 3-modular even lattice in dimension 80.
 A034651 Theta series of (putative) extremal 3-modular even lattice in dimension 82.
-A034652 Theta series of (putative) extremal 3-modular even lattice in dimension 84.
 A034653 Theta series of (putative) extremal 3-modular even lattice in dimension 86.
 A034654 Theta series of (putative) extremal 3-modular even lattice in dimension 88.
 A034655 Theta series of (putative) extremal 3-modular even lattice in dimension 90.
 A034656 Theta series of (putative) extremal 3-modular even lattice in dimension 92.
 A034657 Theta series of (putative) extremal 3-modular even lattice in dimension 94.
-A034658 Theta series of (putative) extremal 3-modular even lattice in dimension 96.
 A034786 Number of linearly ordered Girard monoids of size n; number of t-norms on an n-chain inducing an involutive residual negator.
 A034889 Number of embeddings on the sphere of two-connected planar graphs with n nodes.
 A034997 Number of generalized retarded functions in quantum field theory.
@@ -2729,3 +2727,5 @@ A081198 Smallest stack size with an unentailed Grundy value of 2^n in Top Entail
 A081262 Number of distinct (modulo rotation and reflection) n X n associative magic squares.
 A081263 Number of distinct (modulo rotation and reflection) n X n associative panmagic squares.
 A081287 Excess area when consecutive squares of sizes 1 to n are packed into the smallest possible rectangle.
+A081314 Order of symmetry groups of n points on 3-dimensional sphere with the volume enclosed by their convex hull maximized.
+A081319 Smallest squarefree integer k such that Q(sqrt(-k)) has class number n, or 0 if no such k exists.

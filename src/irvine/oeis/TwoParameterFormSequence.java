@@ -37,7 +37,7 @@ public class TwoParameterFormSequence extends AbstractSequence {
         return false;
       }
       final State other = (State) obj;
-      return mN.equals(other.mN) && mR == other.mR;
+      return mR == other.mR && mN.equals(other.mN);
     }
 
     @Override

@@ -4,7 +4,7 @@ package irvine.oeis.a255;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.a048.A048050;
-import irvine.oeis.a228.A228483;
+import irvine.oeis.a129.A129979;
 
 /**
  * A255369 a(n) = (sigma(n)-n-1)*(2-mu(n)), where sigma(n) is the sum of the divisors of n and mu(n) is the M\u00f6bius function.
@@ -14,7 +14,7 @@ public class A255369 extends AbstractSequence {
 
   private int mN = 0;
   private final A048050 mSeq1 = new A048050();
-  private final A228483 mSeq2 = new A228483();
+  private final A129979 mSeq2 = new A129979();
 
   /** Construct the sequence. */
   public A255369() {

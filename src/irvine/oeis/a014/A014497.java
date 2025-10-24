@@ -9,7 +9,7 @@ import irvine.oeis.a004.A004016;
 import irvine.oeis.a007.A007332;
 
 /**
- * A034652 Theta series of (putative) extremal 3-modular even lattice in dimension 48.
+ * A014497 Theta series of hypothetical extremal 3-modular even 48-dimensional lattice with minimal norm 10 and det = 3^24.
  * @author Sean A. Irvine
  */
 public class A014497 extends Sequence0 {

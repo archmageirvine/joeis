@@ -12,16 +12,12 @@ import irvine.util.Point;
  */
 public class A081349 extends Sequence1 {
 
-  private static final int[] DELTA_X = {1, 0, 1, 0, -1};
-  private static final int[] DELTA_Y = {0, -1, 0, 1, 0, -1};
   private int mN = 0;
   private int mM = -1;
   private int mX = 0;
   private int mY = 3;
   private long mV = 4;
   private int mD = 0;
-  private int mDeltaX = 0;
-  private int mDeltaY = 0;
   private final HashMap<Point, Long> mMaze = new HashMap<>();
   {
     mMaze.put(new Point(0, 0), 1L);

@@ -2673,3 +2673,6 @@ A081263 Number of distinct (modulo rotation and reflection) n X n associative pa
 A081287 Excess area when consecutive squares of sizes 1 to n are packed into the smallest possible rectangle.
 A081314 Order of symmetry groups of n points on 3-dimensional sphere with the volume enclosed by their convex hull maximized.
 A081319 Smallest squarefree integer k such that Q(sqrt(-k)) has class number n, or 0 if no such k exists.
+A081364 Smallest d such that real quadratic field with discriminant d has class number n.
+A081365 Numbers whose name in American English is a word-palindrome, reading the same forward and backward.
+A081366 Number of distinct edge lengths in the convex hull of the maximal volume arrangements of n points on a sphere.

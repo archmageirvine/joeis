@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A135394 Number of walks of length 2n+2 from origin to (1,1,0) on a cubic lattice.
+ * A135394 Number of walks of length 2*n+2 from origin to (1,1,0) on a cubic lattice.
  * @author Georg Fischer
  */
 public class A135394 extends LambdaSequence {

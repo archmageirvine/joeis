@@ -3,7 +3,7 @@ package irvine.oeis.a387;
 import irvine.oeis.FixedPointPositionSequence;
 
 /**
- * A387963 allocated for Ali Sada.
+ * A387963 Fixed points of A387819.
  * @author Sean A. Irvine
  */
 public class A387963 extends FixedPointPositionSequence {

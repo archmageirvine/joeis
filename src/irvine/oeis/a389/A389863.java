@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389863 allocated for Kenneth J Scheller.
+ * A389863 Numbers k with exactly two distinct repeated values among the fractions (2*k mod m)/m for 1 &lt;= m &lt;= k.
  * @author Sean A. Irvine
  */
 public class A389863 extends Sequence1 {

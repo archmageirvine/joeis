@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A202115 Numbers n such that 90n + 17 is prime.
+ * A202115 Numbers k such that 90*k + 17 is prime.
  * @author Georg Fischer
  */
 public class A202115 extends PrimePositionSubsequence {

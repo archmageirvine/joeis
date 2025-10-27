@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001113;
 
 /**
- * A081349.
+ * A081368 Next n digits of e, base of the natural logarithms.
  * @author Sean A. Irvine
  */
 public class A081368 extends A001113 {

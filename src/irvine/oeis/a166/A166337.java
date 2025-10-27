@@ -4,7 +4,7 @@ package irvine.oeis.a166;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A166337 a(n)=(2n+0^n)*C(4n,2n).
+ * A166337 a(n) = (2n+0^n)*C(4n,2n).
  * @author Georg Fischer
  */
 public class A166337 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A389572 allocated for Yifan Xie.
+ * A389572 a(n) is the minimum possible value of max{x_1, x_2, ..., x_n}, where x_1, ..., x_n are distinct positive integers such that x_1^2+1, ..., x_n^2+1 are pairwise coprime.
  * @author Sean A. Irvine
  */
 public class A389572 extends Sequence1 {

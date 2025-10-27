@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081349.
+ * A081372 a(n) is the number of j from 1 to n such that binomial(n,j) is divisible by j.
  * @author Sean A. Irvine
  */
 public class A081372 extends Sequence1 {

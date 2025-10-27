@@ -6,7 +6,7 @@ import irvine.oeis.a005.A005117;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A081349.
+ * A081363 Smallest squarefree integer k such that Q(sqrt(k)) has class number n.
  * @author Sean A. Irvine
  */
 public class A081363 extends A005117 {

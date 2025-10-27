@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A180169 Sigma(A180162(n)), where A180162(n) is the smallest N such that sigma(N) is an n-th power, or 0 if no such N can be found.
+ * A180169 a(n) = sigma(A180162(n)), where A180162(n) is the smallest N such that sigma(N) is an n-th power, or 0 if no such N can be found.
  * @author Georg Fischer
  */
 public class A180169 extends GeneratingFunctionSequence implements Conjectural {

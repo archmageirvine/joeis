@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389832 allocated for Werner Schulte.
+ * A389832 Multiplicative sequence a(n) with a(p^e) = abs(2 - (e mod 4)) for prime p and e &gt; 0.
  * @author Sean A. Irvine
  */
 public class A389832 extends Sequence1 {

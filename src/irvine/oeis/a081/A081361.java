@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.English;
 
 /**
- * A081349.
+ * A081361 Triangle read by rows: T(n,1) = number of letters in English name for n, T(n,k+1) = number of letters in T(n,k), but stop if T(n,k+1) would equal T(n,k).
  * @author Sean A. Irvine
  */
 public class A081361 extends Sequence1 {

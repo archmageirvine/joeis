@@ -4,7 +4,7 @@ package irvine.oeis.a107;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A107962 a(n) = (n+1)(n+2)^2*(n+3)(n+4)(5n^2 + 18n + 15)/720.
+ * A107962 a(n) = (n+1)*(n+2)^2*(n+3)*(n+4)*(5*n^2 + 18*n + 15)/720.
  * @author Georg Fischer
  */
 public class A107962 extends GeneratingFunctionSequence {

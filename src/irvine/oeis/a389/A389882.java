@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A389882 allocated for Paolo Xausa.
+ * A389882 Row sums of A389420 and A389875.
  * @author Sean A. Irvine
  */
 public class A389882 extends Sequence0 {

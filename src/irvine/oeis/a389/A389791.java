@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389791 allocated for Tamas Sandor Nagy.
+ * A389791 a(n) is the smallest nonprime such that a suffix of a(n) concatenated with a prefix of a(n+1) gives prime(n+4).
  * @author Sean A. Irvine
  */
 public class A389791 extends Sequence1 {

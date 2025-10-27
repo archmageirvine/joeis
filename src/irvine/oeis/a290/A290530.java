@@ -4,7 +4,7 @@ package irvine.oeis.a290;
 import irvine.oeis.prime.CongruenceForm;
 
 /**
- * A290530 Primes congruent to (11,17) mod 30.
+ * A290530 Primes congruent to {11, 17} mod 30.
  * @author Georg Fischer
  */
 public class A290530 extends CongruenceForm {

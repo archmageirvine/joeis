@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389524 allocated for Mats Granvik.
+ * A389524 Triangle read by rows. T(1, 1) = 1, T(n, k) = [n &gt;= k](1 + Sum_{i=1..k-1} T(n - i, k - 1) - Sum_{i=1..n-1} T(n - i, k)).
  * @author Sean A. Irvine
  */
 public class A389524 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A155611 6^n - 3^n + 1.
+ * A155611 a(n) = 6^n - 3^n + 1.
  * @author Sean A. Irvine
  */
 public class A155611 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.oeis.a336.A336282;
 import irvine.util.Permutation;
 
 /**
- * A388138 allocated for Manolopoulos Panagiotis.
+ * A388138 Total number of inversions in all heapable permutations of length n.
  * @author Sean A. Irvine
  */
 public class A388138 extends A336282 {

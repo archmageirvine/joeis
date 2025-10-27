@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081349.
+ * A081377 Numbers k such that the set of prime divisors of phi(k) is equal to the set of prime divisors of sigma(k).
  * @author Sean A. Irvine
  */
 public class A081377 extends Sequence1 {
@@ -18,7 +18,7 @@ public class A081377 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (Arrays.equals(Jaguar.factor(Functions.PHI.l(++mN)).toZArray(), Jaguar.factor(Functions.SIGMA.z(mN)).toZArray())) {
+      if (Arrays.equals(Jaguar.factor(Functions.PHI.l(++mN)).toZArray(), Jaguar.factor(Functions.SIGMA1.z(mN)).toZArray())) {
         return Z.valueOf(mN);
       }
     }

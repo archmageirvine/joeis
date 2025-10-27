@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a010.A010051;
 
 /**
- * A036680 Expansion of C in Egyptian fractions, where C contains the primes in binary.
+ * A036680 Expansion of C in Egyptian fractions, where C is the prime constant A051006.
  * @author Sean A. Irvine
  */
 public class A036680 extends EgyptianFractionSequence {

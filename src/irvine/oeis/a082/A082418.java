@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A082418 Numbers n such that P(n) &gt; P(n+1) &lt; P(n+2), where P(n) = largest prime factor of n (A006530).
+ * A082418 Numbers k such that P(k) &gt; P(k+1) &lt; P(k+2), where P(n) = largest prime factor of n (A006530).
  * @author Georg Fischer
  */
 public class A082418 extends FilterNumberSequence {

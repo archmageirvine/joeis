@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A081349.
+ * A389881 a(1) = 3; thereafter, a(n) is the smallest number k that hasn't been used such that gcd(k, n) &gt; gcd(k, a(n-1)), and k != n.
  * @author Sean A. Irvine
  */
 public class A389881 extends Sequence1 {

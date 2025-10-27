@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.TwoParameterFormSequence;
 
 /**
- * A146748 Numbers of the form n^k * k^n, where n,k &gt; 1.
+ * A146748 Numbers of the form j^k * k^j, where j,k &gt; 1.
  * @author Georg Fischer
  */
 public class A146748 extends TwoParameterFormSequence {

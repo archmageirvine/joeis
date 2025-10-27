@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012028 E.g.f. sec(sin(arctan(x))) = 1/cos(x/sqrt(1+x^2)).
+ * A012028 Expansion of e.g.f. sec(sin(arctan(x))) = 1/cos(x/sqrt(1+x^2)) (even powers only).
  * @author Sean A. Irvine
  */
 public class A012028 extends Sequence0 {

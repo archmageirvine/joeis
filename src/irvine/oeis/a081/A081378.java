@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081349.
+ * A081378 Numbers k for which the sums of prime factors (ignoring multiplicity) of sigma(k) and phi(k) are equal but the sets of prime factors of sigma and phi are different.
  * @author Sean A. Irvine
  */
 public class A081378 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A081349.
+ * A389950 Sum of cubefree numbers &lt;= 10^n.
  * @author Sean A. Irvine
  */
 public class A389950 extends Sequence0 {

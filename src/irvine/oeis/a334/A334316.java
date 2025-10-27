@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a000.A000240;
 
 /**
- * A334316 E.g.f. A(x) satisfies: A(x) = x * exp(A(x)) * (1 - A(x)).
+ * A334316 E.g.f. A(x) satisfies A(x) = x * exp(A(x)) * (1 - A(x)).
  * new A000240()
  * @author Georg Fischer
  */

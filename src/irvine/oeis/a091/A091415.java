@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007749;
 
 /**
- * A091415 Numbers n such that n!*2^n - 1 is prime.
+ * A091415 Numbers k such that k!*2^k - 1 is prime.
  * @author Georg Fischer
  */
 public class A091415 extends A007749 {

@@ -3,7 +3,7 @@ package irvine.oeis.a141;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A141536 Orders, sorted, of embeddable Wythoffians in dimension 4.
+ * A141536 Orders of embeddable Wythoffians in dimension 4.
  * @author Georg Fischer
  */
 public class A141536 extends FiniteSequence {

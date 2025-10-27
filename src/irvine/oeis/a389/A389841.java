@@ -7,7 +7,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A389841 allocated for Allan Bickle.
+ * A389841 Triangle read by rows: T(n,k) is the number of k-critical graphs with n vertices and degree k, (4 &lt;= k &lt;= n).
  * @author Sean A. Irvine
  */
 public class A389841 extends AbstractSequence {

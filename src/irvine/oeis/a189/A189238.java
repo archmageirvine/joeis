@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A189238 E.g.f. x/cos(x)*exp(x/cos(x)).
+ * A189238 Expansion of e.g.f. x/cos(x)*exp(x/cos(x)).
  * E.g.f.: x/cos(x)*exp(x/cos(x))
  * @author Georg Fischer
  */

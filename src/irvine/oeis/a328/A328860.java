@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A328860 Numbers that are 4-imperfect.
+ * A328860 4-imperfect numbers.
  *
  * @author Georg Fischer
  */

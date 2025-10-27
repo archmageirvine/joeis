@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A081349.
+ * A389809 Sequence containing k-1 occurrences of prime(k) ordered by k.
  * @author Sean A. Irvine
  */
 public class A389809 extends A000040 {

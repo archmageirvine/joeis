@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A389892 allocated for Jason Bard.
+ * A389892 Decimal expansion of Pi^2/3 - gamma/2, where gamma is the Euler-Mascheroni constant.
  * @author Sean A. Irvine
  */
 public class A389892 extends DecimalExpansionSequence {

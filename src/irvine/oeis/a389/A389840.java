@@ -5,7 +5,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A389840 allocated for Allan Bickle.
+ * A389840 Number of (edge) 5-critical graphs on n vertices.
  * @author Sean A. Irvine
  */
 public class A389840 extends ParallelGenerateGraphsSequence {

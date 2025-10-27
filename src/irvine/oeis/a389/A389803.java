@@ -3,7 +3,7 @@ package irvine.oeis.a389;
 import irvine.math.z.Z;
 
 /**
- * A389803 allocated for Hu Junhua.
+ * A389803 a(n) = A389802(2n+1).
  * @author Sean A. Irvine
  */
 public class A389803 extends A389802 {

@@ -13,7 +13,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicArray;
 
 /**
- * A388849.
+ * A388849 Number of polynomials P in the set S such that P(1)=n, where S is defined by: (i) 1 is in S; (ii) P is in S implies 1+x*P is in S; (iii) P is in S and Q is in S implies P*Q is in S.
  * @author Sean A. Irvine
  */
 public class A388849 extends Sequence1 {

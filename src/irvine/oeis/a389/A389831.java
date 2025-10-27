@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389831 allocated for Werner Schulte.
+ * A389831 Multiplicative sequence a(n) with a(p^e) = 2 + e^2 for prime p and e &gt; 0.
  * @author Sean A. Irvine
  */
 public class A389831 extends Sequence1 {

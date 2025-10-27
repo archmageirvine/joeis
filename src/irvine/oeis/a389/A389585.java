@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.a385.A385573;
 
 /**
- * A389585 allocated for Clark Kimberling.
+ * A389585 Decreasing partition array based on the fractional parts of (n*sqrt(5)); see A388853.
  * @author Sean A. Irvine
  */
 public class A389585 extends A385573 {

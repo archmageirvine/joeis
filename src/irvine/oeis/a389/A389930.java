@@ -4,7 +4,7 @@ import irvine.oeis.a137.A137914;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A389930 allocated for Paolo Xausa.
+ * A389930 Decimal expansion of the largest dihedral angle, in radians, in an augmented tridiminished icosahedron (Johnson solid J_64).
  * @author Sean A. Irvine
  */
 public class A389930 extends DecimalExpansionSequence {

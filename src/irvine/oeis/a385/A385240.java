@@ -227,18 +227,24 @@ public class A385240 extends AbstractSequence {
     return rectangles;
   }
 
-//  protected int getDefect(final int[] set) {
-//    int min = Integer.MAX_VALUE;
-//    int max = 0;
-//    for (final int s : set) {
-//      final Rectangle rectangle = mRectangles.get(s);
-//      final int vol = rectangle.getArea();
-//      min = Math.min(min, vol);
-//      max = Math.max(max, vol);
-//    }
-//    return max - min;
-//  }
-//
+  protected int getDefect(final int[] set) {
+    int min = Integer.MAX_VALUE;
+    int max = 0;
+    for (final int s : set) {
+      final Rectangle rectangle = mRectangles.get(s);
+      final int vol = rectangle.getArea();
+      min = Math.min(min, vol);
+      max = Math.max(max, vol);
+    }
+    if (max - min == 18) {
+      for (final int s : set) {
+        System.out.println(mRectangles.get(s));
+      }
+    }
+    return max - min;
+  }
+
+  //
 //  // Used by A387040
 //  protected boolean isDistinctVolumes(final int[] set) {
 //    for (int k = 1; k < set.length; ++k) {
@@ -263,7 +269,7 @@ public class A385240 extends AbstractSequence {
   }
 
   /**
-   * Called with each valid partition of the cube.
+   * Called with each valid partition of the square.
    * @param set the partition indexes
    */
   protected void process(final int[] set) {

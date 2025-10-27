@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A109577 E.g.f.: 2x/[1-exp(-2x)+2exp(-x)].
+ * A109577 Expansion of e.g.f. 2*x/(1-exp(-2*x)+2*exp(-x)).
  * E.g.f.: 2*x/(1-exp(-2*x)+2*exp(-x))
  * @author Georg Fischer
  */

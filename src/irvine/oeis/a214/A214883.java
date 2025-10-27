@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a016.A016090;
 
 /**
- * A214883 A016090(n)/2^n.
+ * A214883 a(n) = A016090(n)/2^n.
  * @author Georg Fischer
  */
 public class A214883 extends Sequence1 {

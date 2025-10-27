@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import irvine.math.z.Z;
 
 /**
- * A389805 allocated for Hu Junhua.
+ * A389805 The number of partitions of [n] into a set of irreducible balanced subsets.
  * @author Sean A. Irvine
  */
 public class A389805 extends A389802 {

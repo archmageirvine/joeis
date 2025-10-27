@@ -4,7 +4,7 @@ package irvine.oeis.a290;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A290094 Restricted growth sequence transform of A290093.
+ * A290094 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; A278222(A289813(i)) = A278222(A289813(j)) and A278222(A289814(i)) = A278222(A289814(j)) for all i, j &gt;= 0.
  * @author Georg Fischer
  */
 public class A290094 extends RestrictedGrowthTransformSequence {

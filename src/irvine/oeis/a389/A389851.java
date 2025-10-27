@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A389851 allocated for Paolo Xausa.
+ * A389851 Decimal expansion of the largest dihedral angle, in radians, in an augmented dodecahedron (Johnson solid J_58).
  * @author Sean A. Irvine
  */
 public class A389851 extends DecimalExpansionSequence {

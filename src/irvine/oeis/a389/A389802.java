@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A389802 allocated for Hu Junhua.
+ * A389802 The number of irreducible balanced subsets of [n].
  * @author Sean A. Irvine
  */
 public class A389802 extends AbstractSequence {

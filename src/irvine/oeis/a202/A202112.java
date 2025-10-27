@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A202112 Numbers n such that 90n + 79 is prime.
+ * A202112 Numbers k such that 90*k + 79 is prime.
  * @author Georg Fischer
  */
 public class A202112 extends PrimePositionSubsequence {

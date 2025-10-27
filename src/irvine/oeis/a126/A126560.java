@@ -4,7 +4,7 @@ package irvine.oeis.a126;
 import irvine.oeis.recur.PaddingSequence;
 
 /**
- * A126560 a(n) = gcd(4(n+1)(n+2), n(n+3)), periodic with 8-cycle 4,2,2,4,8,2,2,8.
+ * A126560 a(n) = gcd(4*(n+1)*(n+2), n*(n+3)), periodic with 8-cycle 4,2,2,4,8,2,2,8.
  * @author Georg Fischer
  */
 public class A126560 extends PaddingSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a064;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A064203 n*(n^2 - 1)*(n+2)*(2*n^5 + 14*n^4 + 49*n^3 + 91*n^2 + 90*n + 18)/324.
+ * A064203 a(n) = n*(n^2 - 1)*(n+2)*(2*n^5 + 14*n^4 + 49*n^3 + 91*n^2 + 90*n + 18)/324.
  * @author Georg Fischer
  */
 public class A064203 extends GeneratingFunctionSequence {

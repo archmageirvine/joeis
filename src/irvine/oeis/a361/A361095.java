@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A361095 E.g.f. satisfies A(x) = exp( 1/(1 - x/A(x)) - 1 ).
+ * A361095 E.g.f. A(x) satisfies A(x) = exp( 1/(1 - x/A(x)) - 1 ).
  * @author Georg Fischer
  */
 public class A361095 extends LambdaSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a369.A369361;
 import irvine.oeis.a386.A386762;
 
 /**
- * A389695 allocated for Michael De Vlieger.
+ * A389695 Powers k^m, m &gt; 1, where k is neither squarefree, squareful, nor a product of primorials.
  * @author Sean A. Irvine
  */
 public class A389695 extends IntersectionSequence {

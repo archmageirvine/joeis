@@ -301,7 +301,7 @@ public class Permutation {
   }
 
   /**
-   * Compute the number of inversions in permutation.
+   * Compute the number of inversions in a permutation.
    * @param p permutation
    * @return inversions
    */
@@ -312,6 +312,36 @@ public class Permutation {
         if (p[k] > p[j]) {
           ++count;
         }
+      }
+    }
+    return count;
+  }
+
+  /**
+   * Compute the number of descents in a permutation.
+   * @param p permutation
+   * @return descents
+   */
+  public static int countDescents(final int[] p) {
+    int count = 0;
+    for (int k = 1; k < p.length; ++k) {
+      if (p[k] < p[k - 1]) {
+        ++count;
+      }
+    }
+    return count;
+  }
+
+  /**
+   * Compute the number of ascents in a permutation.
+   * @param p permutation
+   * @return descents
+   */
+  public static int countAscents(final int[] p) {
+    int count = 0;
+    for (int k = 1; k < p.length; ++k) {
+      if (p[k] > p[k - 1]) {
+        ++count;
       }
     }
     return count;

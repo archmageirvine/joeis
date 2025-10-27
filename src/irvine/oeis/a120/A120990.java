@@ -4,7 +4,7 @@ package irvine.oeis.a120;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A120990 5^n-3^n-2n.
+ * A120990 a(n) = 5^n - 3^n - 2*n.
  * @author Georg Fischer
  */
 public class A120990 extends GeneratingFunctionSequence {

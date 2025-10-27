@@ -4,7 +4,7 @@ package irvine.oeis.a211;
 import irvine.oeis.recur.PaddingSequence;
 
 /**
- * A211770  a(n) = concatenation of periods of periodic sequences of ending digits of multiples of n.
+ * A211770 a(n) = concatenation of periods of periodic sequences of ending digits of multiples of n.
  * @author Georg Fischer
  */
 public class A211770 extends PaddingSequence {

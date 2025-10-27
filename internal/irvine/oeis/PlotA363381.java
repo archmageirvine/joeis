@@ -132,7 +132,7 @@ public final class PlotA363381 {
    * @param args see Usage above
    * @throws IOException if an I/O error occurs
    */
-  public static void main(String[] args) throws IOException {
+  public static void main(final String[] args) throws IOException {
     final String outputType = args[0];
     final File outputDir = new File(args[1]);
     outputDir.mkdirs();

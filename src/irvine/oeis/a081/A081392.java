@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
  * A081391 Numbers k such that the central binomial coefficient C(2*k,k) has only one prime divisor whose exponent equals one.
  * @author Sean A. Irvine
  */
-public class A081391 extends Sequence1 {
+public class A081392 extends Sequence1 {
 
   private final PrimeDivision mFactor = new PrimeDivision();
   private long mN = 2;
@@ -18,7 +18,7 @@ public class A081391 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Z b = Binomial.binomial(2 * ++mN, mN);
+      final Z b = Binomial.binomial(++mN, mN / 2);
       if (b.mod(4 * 9) != 0 && b.mod(4 * 25) != 0 && b.mod(9 * 25) != 0) {
         final FactorSequence fs = mFactor.factorize(b);
         int cnt = 0;

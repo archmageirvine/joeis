@@ -6,16 +6,16 @@ import java.util.List;
 import irvine.math.group.IntegerField;
 import irvine.math.polynomial.MultivariatePolynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A007081 Number of labeled Eulerian oriented graphs with n nodes.
  * @author Sean A. Irvine
  */
-public class A007081 extends Sequence1 {
+public class A007081 extends Sequence0 {
 
   private static final List<Z> C = Arrays.asList(Z.ONE, Z.ONE, Z.ONE);
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {

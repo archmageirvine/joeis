@@ -15,7 +15,7 @@ public class A033870 extends FiniteSequence {
 
   private static List<Z> build() {
     final ArrayList<Z> res = new ArrayList<>();
-    for (final Z d : new PrimeDivision().factorize(Z.valueOf(198585576189L)).divisorsSorted()) {
+    for (final Z d : new PrimeDivision().factor(Z.valueOf(198585576189L)).divisorsSorted()) {
       if (d.mod(4) == 1) {
         res.add(d);
       }

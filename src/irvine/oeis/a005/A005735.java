@@ -24,7 +24,7 @@ public class A005735 extends Sequence1 {
     long m = Long.MAX_VALUE;
     long m0 = m;
     while (k < m) {
-      if (mF.factorize(Binomial.binomial(k, mN)).omega() < mN) {
+      if (mF.factor(Binomial.binomial(k, mN)).omega() < mN) {
         m = HEURISTIC_SCALE_FACTOR * k;
         m0 = k;
       }

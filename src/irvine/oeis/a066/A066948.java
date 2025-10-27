@@ -21,7 +21,7 @@ public class A066948 extends Sequence1 {
   @Override
   public Z next() {
     if (++mM >= mA.length) {
-      final FactorSequence fs = mFactor.factorize(mSeq.next());
+      final FactorSequence fs = mFactor.factor(mSeq.next());
       mA = new int[fs.omega()];
       if (mA.length == 0) {
         return Z.ZERO;

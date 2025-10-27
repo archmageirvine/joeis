@@ -19,15 +19,15 @@ public class A019491 extends Sequence1 {
     while (true) {
       ++mN;
       final long t = mN / 2;
-      final long mid = mFactor.factorize(Binomial.binomial(mN, t)).omega();
+      final long mid = mFactor.factor(Binomial.binomial(mN, t)).omega();
       for (long k = t - 1; k >= 0; --k) {
-        final long left = mFactor.factorize(Binomial.binomial(mN, k)).omega();
+        final long left = mFactor.factor(Binomial.binomial(mN, k)).omega();
         if (mid > left) {
           break; // not a minimum
         }
         if (mid < left) {
           for (long j = t + 1; j <= mN; ++j) {
-            final long right = mFactor.factorize(Binomial.binomial(mN, j)).omega();
+            final long right = mFactor.factor(Binomial.binomial(mN, j)).omega();
             if (mid > right) {
               break; // not a minimum
             }

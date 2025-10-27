@@ -45,7 +45,7 @@ public class A035796 extends A025487 {
     if (Z.ONE.equals(t)) {
       return Z.ONE;
     }
-    final FactorSequence fs = mFactor.factorize(t);
+    final FactorSequence fs = mFactor.factor(t);
     final int[] sig = new int[fs.omega()];
     int k = 0;
     for (final Z p : fs.toZArray()) {

@@ -24,7 +24,7 @@ public class A056670 extends A001405 {
 
   @Override
   public Z next() {
-    final FactorSequence fs = mFactor.factorize(super.next());
+    final FactorSequence fs = mFactor.factor(super.next());
     final Z[] f = fs.toZArray();
     for (int k = f.length - 1; k >= 0; --k) {
       if (fs.getExponent(f[k]) > 1) {

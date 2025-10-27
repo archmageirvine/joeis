@@ -20,7 +20,7 @@ public class A004788 extends Sequence0 {
     ++mN;
     final FactorSequence fs = new FactorSequence();
     for (long k = 1; k <= mN / 2; ++k) {
-      fs.merge(mFactor.factorize(Binomial.binomial(mN, k)));
+      fs.merge(mFactor.factor(Binomial.binomial(mN, k)));
     }
     if (!fs.isComplete()) {
       throw new UnsupportedOperationException();

@@ -31,7 +31,7 @@ public class A359070 extends Sequence1 {
     while (true) {
       final Z t = Z.valueOf(++k).pow(mN).subtract(1);
       if (precheck(t)) {
-        final FactorSequence fs = mFactorizer.factorize(t);
+        final FactorSequence fs = mFactorizer.factor(t);
         if (fs.omega() == mN && fs.isSquareFree()) {
           return Z.valueOf(k);
         }

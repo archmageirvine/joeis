@@ -47,11 +47,11 @@ public class InverseEuler {
     if (m.isOdd()) {
       return;
     }
-    final Z[] primeFactors = mFactor.factorize(m).toZArray();
+    final Z[] primeFactors = mFactor.factor(m).toZArray();
     final Z largestPrime = primeFactors[primeFactors.length - 1];
     final boolean divisibilityTest = n.mod(largestPrime).isZero();
 
-    for (Z div : mFactor.factorize(m.divide(largestPrime)).divisors()) {
+    for (Z div : mFactor.factor(m.divide(largestPrime)).divisors()) {
       div = div.multiply(largestPrime);
       // Case 2 of observation
       final Z div1 = div.add(1);

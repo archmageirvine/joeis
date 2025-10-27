@@ -19,7 +19,7 @@ public class A048273 extends Sequence0 {
     ++mN;
     long max = 0;
     for (long k = 0; k <= mN / 2; ++k) {
-      final long t = mFactor.factorize(Binomial.binomial(mN, k)).omega();
+      final long t = mFactor.factor(Binomial.binomial(mN, k)).omega();
       if (t > max) {
         max = t;
       }

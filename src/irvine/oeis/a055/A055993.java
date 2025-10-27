@@ -13,7 +13,7 @@ public class A055993 extends A055772 {
 
   @Override
   public Z next() {
-    return mFactor.factorize(super.next()).sigma0();
+    return mFactor.factor(super.next()).sigma0();
   }
 }
 

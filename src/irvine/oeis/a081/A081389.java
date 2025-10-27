@@ -1,6 +1,6 @@
 package irvine.oeis.a081;
 
-import irvine.factor.factor.Jaguar;
+import irvine.factor.factor.PrimeDivision;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -13,11 +13,12 @@ import irvine.oeis.a000.A000108;
  */
 public class A081389 extends Sequence1 {
 
+  private final PrimeDivision mFactor = new PrimeDivision();
   private final Sequence mCatalan = new A000108().skip();
 
   @Override
   public Z next() {
-    final FactorSequence fs = Jaguar.factor(mCatalan.next());
+    final FactorSequence fs = mFactor.factor(mCatalan.next());
     long cnt = 0;
     for (final Z p : fs.toZArray()) {
       if (fs.getExponent(p) > 1) {

@@ -18,9 +18,9 @@ public class A020740 extends Sequence1 {
   public Z next() {
     final long lim = ++mN / 2;
     Z best = Z.ZERO;
-    final Z s0 = mFactor.factorize(Binomial.binomial(mN, lim)).sigma0();
+    final Z s0 = mFactor.factor(Binomial.binomial(mN, lim)).sigma0();
     for (long k = 0; k < lim; ++k) {
-      final Z c = mFactor.factorize(Binomial.binomial(mN, k)).sigma0().subtract(s0);
+      final Z c = mFactor.factor(Binomial.binomial(mN, k)).sigma0().subtract(s0);
       if (c.compareTo(best) > 0) {
         best = c;
       }

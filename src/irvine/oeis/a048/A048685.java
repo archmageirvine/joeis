@@ -20,7 +20,7 @@ public class A048685 extends Sequence1 {
     long max = 0;
     long cnt = 0;
     for (long k = 0; k <= mN / 2; ++k) {
-      final long omega = mFactor.factorize(Binomial.binomial(mN, k)).bigOmega();
+      final long omega = mFactor.factor(Binomial.binomial(mN, k)).bigOmega();
       if (omega > max) {
         max = omega;
         cnt = 2 * k == mN ? 1 : 2;

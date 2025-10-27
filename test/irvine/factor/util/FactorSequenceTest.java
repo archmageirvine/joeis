@@ -507,10 +507,10 @@ public class FactorSequenceTest extends TestCase {
 
   public void testLambda() {
     final PrimeDivision f = new PrimeDivision(100);
-    assertEquals(1, f.factorize(Z.ONE).lambda());
-    assertEquals(-1, f.factorize(Z.TWO).lambda());
-    assertEquals(-1, f.factorize(Z.THREE).lambda());
-    assertEquals(1, f.factorize(Z.FOUR).lambda());
+    assertEquals(1, f.factor(Z.ONE).lambda());
+    assertEquals(-1, f.factor(Z.TWO).lambda());
+    assertEquals(-1, f.factor(Z.THREE).lambda());
+    assertEquals(1, f.factor(Z.FOUR).lambda());
   }
 
   public void testSquareFree() {

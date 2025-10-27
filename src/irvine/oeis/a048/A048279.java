@@ -20,7 +20,7 @@ public class A048279 extends Sequence1 {
       ++mN;
       boolean ok = true;
       for (long k = 1; k <= mN / 2; ++k) {
-        if (mFactor.factorize(Binomial.binomial(mN, k)).isSquareFree()) {
+        if (mFactor.factor(Binomial.binomial(mN, k)).isSquareFree()) {
           ok = false;
           break;
         }

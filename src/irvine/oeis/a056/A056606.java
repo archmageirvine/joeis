@@ -14,7 +14,7 @@ public class A056606 extends A001142 {
 
   @Override
   public Z next() {
-    return mFactor.factorize(super.next()).squareFreeKernel();
+    return mFactor.factor(super.next()).squareFreeKernel();
   }
 }
 

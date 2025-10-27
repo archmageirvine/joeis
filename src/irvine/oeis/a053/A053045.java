@@ -21,7 +21,7 @@ public class A053045 extends Sequence1 {
     if (++mN == 1) {
       return Z.ONE;
     }
-    mFactorSequence.merge(mFactor.factorize(Z.valueOf(mN)));
+    mFactorSequence.merge(mFactor.factor(Z.valueOf(mN)));
     if (mN == 2) {
       return Z.TWO;
     }

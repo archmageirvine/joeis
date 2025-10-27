@@ -20,7 +20,7 @@ public class A081391 extends Sequence1 {
     while (true) {
       final Z b = Binomial.binomial(2 * ++mN, mN);
       if (b.mod(4 * 9) != 0 && b.mod(4 * 25) != 0 && b.mod(9 * 25) != 0) {
-        final FactorSequence fs = mFactor.factorize(b);
+        final FactorSequence fs = mFactor.factor(b);
         int cnt = 0;
         for (final Z p : fs.toZArray()) {
           if (fs.getExponent(p) > 1 && ++cnt > 1) {

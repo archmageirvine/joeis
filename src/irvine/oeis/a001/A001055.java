@@ -32,7 +32,7 @@ public class A001055 extends AbstractSequence implements DirectSequence {
 
     long sum = 0;
     final long excl = Math.min(m + 1, n);
-    for (final Z dd : mFactor.factorize(Z.valueOf(n)).divisors()) {
+    for (final Z dd : mFactor.factor(Z.valueOf(n)).divisors()) {
       final long d = dd.longValue();
       if (d != 1 && d < excl) {
         sum += t(n / d, d);

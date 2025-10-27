@@ -15,7 +15,7 @@ public class A048682 extends Sequence1 {
   private long mN = 0;
 
   private Z squareFreePart(final long n, final long k) {
-    return mFactor.factorize(Binomial.binomial(n, k)).squareFreeKernel();
+    return mFactor.factor(Binomial.binomial(n, k)).squareFreeKernel();
   }
 
   @Override

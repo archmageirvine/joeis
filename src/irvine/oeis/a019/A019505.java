@@ -18,10 +18,10 @@ public class A019505 extends Sequence1 {
     if (mA == null) {
       mA = Z.ONE;
     } else {
-      final long sigma0 = mFactor.factorize(mA.multiply2()).sigma0AsLong();
+      final long sigma0 = mFactor.factor(mA.multiply2()).sigma0AsLong();
       do {
         mA = mA.add(1);
-      } while (mFactor.factorize(mA).sigma0AsLong() != sigma0);
+      } while (mFactor.factor(mA).sigma0AsLong() != sigma0);
     }
     return mA;
   }

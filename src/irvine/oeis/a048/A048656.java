@@ -18,6 +18,6 @@ public class A048656 extends A000142 {
 
   @Override
   public Z next() {
-    return mFactor.factorize(super.next()).unitarySigma0();
+    return mFactor.factor(super.next()).unitarySigma0();
   }
 }

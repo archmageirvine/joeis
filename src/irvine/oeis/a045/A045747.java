@@ -23,6 +23,6 @@ public class A045747 extends A007662 {
 
   @Override
   public Z next() {
-    return Z.valueOf(mFactor.factorize(super.next()).bigOmega());
+    return Z.valueOf(mFactor.factor(super.next()).bigOmega());
   }
 }

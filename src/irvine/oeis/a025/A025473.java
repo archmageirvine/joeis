@@ -14,7 +14,7 @@ public class A025473 extends A000961 {
 
   @Override
   public Z next() {
-    final Z[] p = mFactor.factorize(super.next()).toZArray();
+    final Z[] p = mFactor.factor(super.next()).toZArray();
     return p.length == 0 ? Z.ONE : p[0];
   }
 }

@@ -15,6 +15,6 @@ public class A056648 extends A056057 {
 
   @Override
   public Z next() {
-    return Z.ONE.shiftLeft(mFactor.factorize(super.next().sqrt().divide(mA.next())).omega());
+    return Z.ONE.shiftLeft(mFactor.factor(super.next().sqrt().divide(mA.next())).omega());
   }
 }

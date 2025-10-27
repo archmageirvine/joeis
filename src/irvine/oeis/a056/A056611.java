@@ -20,8 +20,8 @@ public class A056611 extends A002944 {
 
   @Override
   public Z next() {
-    return mFactor.factorize(super.next()).squareFreeKernel()
-      .divide(mFactor.factorize(mA.next()).squareFreeKernel());
+    return mFactor.factor(super.next()).squareFreeKernel()
+      .divide(mFactor.factor(mA.next()).squareFreeKernel());
   }
 }
 

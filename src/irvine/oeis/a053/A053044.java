@@ -21,7 +21,7 @@ public class A053044 extends Sequence1 {
     if (++mN == 1) {
       return Z.ZERO;
     }
-    mFactorSequence.merge(mFactor.factorize(Z.valueOf(mN)));
+    mFactorSequence.merge(mFactor.factor(Z.valueOf(mN)));
     long cnt = 0;
     FactorSequence fs = mFactorSequence;
     Z s;

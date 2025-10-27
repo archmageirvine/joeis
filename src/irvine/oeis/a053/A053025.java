@@ -18,7 +18,7 @@ public class A053025 extends Sequence1 {
 
   @Override
   public Z next() {
-    mFactorSequence.merge(mFactor.factorize(Z.valueOf(++mN)));
+    mFactorSequence.merge(mFactor.factor(Z.valueOf(++mN)));
     if (mN <= 2) {
       return Z.ONE;
     }

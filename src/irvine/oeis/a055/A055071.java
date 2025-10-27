@@ -17,7 +17,7 @@ public class A055071 extends Sequence1 {
 
   @Override
   public Z next() {
-    mFactorSequence.merge(mFactor.factorize(Z.valueOf(++mN)));
+    mFactorSequence.merge(mFactor.factor(Z.valueOf(++mN)));
     Z prod = Z.ONE;
     for (final Z p : mFactorSequence.toZArray()) {
       final int e = mFactorSequence.getExponent(p) / 2;

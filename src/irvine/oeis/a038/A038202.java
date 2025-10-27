@@ -28,7 +28,7 @@ public class A038202 extends AbstractSequence {
       mF = mF.multiply(mN);
     }
     final Z s = mF.sqrt();
-    final FactorSequence fs = mFactor.factorize(mF);
+    final FactorSequence fs = mFactor.factor(mF);
     Z e = null;
     for (final Z d : fs.divisorsSorted()) {
       if (d.compareTo(s) > 0) {

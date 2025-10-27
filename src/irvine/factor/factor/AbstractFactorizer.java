@@ -97,7 +97,7 @@ public abstract class AbstractFactorizer implements Factorizer {
   }
 
   @Override
-  public FactorSequence factorize(final Z n) {
+  public FactorSequence factor(final Z n) {
     final FactorSequence fs = new FactorSequence(n);
     factor(fs);
     if (!fs.isComplete()) {

@@ -21,7 +21,7 @@ public class A020738 extends Sequence1 {
     long bestc = 0;
     final long lim = mN / 2;
     for (long k = 0; k <= lim; ++k) {
-      final Z c = mFactor.factorize(Binomial.binomial(mN, k)).sigma0();
+      final Z c = mFactor.factor(Binomial.binomial(mN, k)).sigma0();
       if (c.compareTo(best) >= 0) {
         if (c.compareTo(best) > 0) {
           best = c;

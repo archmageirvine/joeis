@@ -20,7 +20,7 @@ public class A048475 extends Sequence1 {
     Z max = Z.ZERO;
     long maxk = 0;
     for (long k = 0; k <= mN / 2; ++k) {
-      final Z sigma0 = mFactor.factorize(Binomial.binomial(mN, k)).sigma0();
+      final Z sigma0 = mFactor.factor(Binomial.binomial(mN, k)).sigma0();
       if (sigma0.compareTo(max) > 0) {
         max = sigma0;
         maxk = k;

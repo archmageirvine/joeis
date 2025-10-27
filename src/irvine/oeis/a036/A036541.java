@@ -17,6 +17,6 @@ public class A036541 extends A000720 {
 
   @Override
   public Z next() {
-    return super.next().subtract(mFactor.factorize(mA.next()).omega());
+    return super.next().subtract(mFactor.factor(mA.next()).omega());
   }
 }

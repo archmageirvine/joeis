@@ -17,7 +17,7 @@ public class A046098 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (mFactor.factorize(Binomial.binomial(++mN, mN / 2)).isSquareFree()) {
+      if (mFactor.factor(Binomial.binomial(++mN, mN / 2)).isSquareFree()) {
         return Z.valueOf(mN);
       }
     }

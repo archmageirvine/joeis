@@ -10,6 +10,6 @@ public class A056061 extends A056056 {
 
   @Override
   public Z next() {
-    return mFactor.factorize(super.next()).sigma0();
+    return mFactor.factor(super.next()).sigma0();
   }
 }

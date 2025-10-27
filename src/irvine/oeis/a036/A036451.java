@@ -27,7 +27,7 @@ public class A036451 extends AbstractSequence {
     mLim = mLim == null ? Z.ONE : mLim.multiply2();
     Z sigma0 = Z.ZERO;
     while (mA.compareTo(mLim) <= 0) {
-      sigma0 = sigma0.max(mFactor.factorize(mA).sigma0());
+      sigma0 = sigma0.max(mFactor.factor(mA).sigma0());
       mA = mSeq1.next();
     }
     return sigma0;

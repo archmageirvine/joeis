@@ -19,7 +19,7 @@ public class A060737 extends A000142 {
   public Z next() {
     Z prev = Z.ZERO;
     final HashSet<Z> diffs = new HashSet<>();
-    for (final Z d : mFactor.factorize(super.next()).divisorsSorted()) {
+    for (final Z d : mFactor.factor(super.next()).divisorsSorted()) {
       if (!prev.isZero()) {
         diffs.add(d.subtract(prev));
       }

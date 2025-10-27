@@ -25,7 +25,7 @@ public class A066676 extends Sequence1 {
     } else {
       final Z halfPrimorial = pm.divide2();
       final Z s = halfPrimorial.sqrt();
-      for (final Z d : mFactor.factorize(halfPrimorial).divisorsSorted()) {
+      for (final Z d : mFactor.factor(halfPrimorial).divisorsSorted()) {
         if (d.compareTo(s) < 0) {
           continue;
         }

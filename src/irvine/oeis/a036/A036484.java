@@ -28,7 +28,7 @@ public class A036484 extends AbstractSequence {
     Z sigma0 = Z.ZERO;
     Z bestA = Z.ZERO;
     while (mA.compareTo(mLim) <= 0) {
-      final Z s = mFactor.factorize(mA).sigma0();
+      final Z s = mFactor.factor(mA).sigma0();
       if (s.compareTo(sigma0) > 0) {
         sigma0 = s;
         bestA = mA;

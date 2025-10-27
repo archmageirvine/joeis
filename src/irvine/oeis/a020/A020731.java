@@ -19,9 +19,9 @@ public class A020731 extends Sequence1 {
     outer:
     while (true) {
       ++mN;
-      final long c = mFactor.factorize(Binomial.binomial(mN, mN / 2)).omega();
+      final long c = mFactor.factor(Binomial.binomial(mN, mN / 2)).omega();
       for (long k = 0; k < mN / 2; ++k) {
-        if (mFactor.factorize(Binomial.binomial(mN, k)).omega() > c) {
+        if (mFactor.factor(Binomial.binomial(mN, k)).omega() > c) {
           continue outer;
         }
       }

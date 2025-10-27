@@ -110,7 +110,7 @@ public class A096098 extends Sequence1 implements Closeable {
       fs = new FactorSequence();
       fs.add(p0, FactorSequence.PROB_PRIME);
     } else {
-      fs = mFactor.factorize(p0);
+      fs = mFactor.factor(p0);
     }
     for (int k = 1; k < parts.length; ++k) {
       final String pk = parts[k];

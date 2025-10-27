@@ -19,7 +19,7 @@ public class A048681 extends Sequence1 {
     ++mN;
     Z max = Z.ZERO;
     for (long k = 0; k <= mN / 2; ++k) {
-      final Z sf = mFactor.factorize(Binomial.binomial(mN, k)).squareFreeKernel();
+      final Z sf = mFactor.factor(Binomial.binomial(mN, k)).squareFreeKernel();
       if (sf.compareTo(max) > 0) {
         max = sf;
       }

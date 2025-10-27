@@ -19,7 +19,7 @@ public class A048275 extends Sequence1 {
     ++mN;
     Z max = Z.ZERO;
     for (long k = 0; k <= mN / 2; ++k) {
-      max = max.max(mFactor.factorize(Binomial.binomial(mN, k)).sigma0());
+      max = max.max(mFactor.factor(Binomial.binomial(mN, k)).sigma0());
     }
     return max;
   }

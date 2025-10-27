@@ -19,7 +19,7 @@ public class A005733 extends Sequence1 {
     ++mN;
     long k = 2;
     while (true) {
-      if (mF.factorize(Binomial.binomial(k, mN)).omega() >= mN) {
+      if (mF.factor(Binomial.binomial(k, mN)).omega() >= mN) {
         return Z.valueOf(k);
       }
       ++k;

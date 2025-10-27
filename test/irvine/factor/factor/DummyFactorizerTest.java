@@ -14,7 +14,7 @@ public class DummyFactorizerTest extends StandardIoTestCase {
     final Cheetah cheetah = new Cheetah(false);
     cheetah.setVerbose(true);
     assertTrue(cheetah.isVerbose());
-    assertEquals("<2>\n<3>\n<7>\n", cheetah.factorize(Z.valueOf(42)).toString());
+    assertEquals("<2>\n<3>\n<7>\n", cheetah.factor(Z.valueOf(42)).toString());
     assertEquals("", getOut());
     assertEquals("", getErr());
   }

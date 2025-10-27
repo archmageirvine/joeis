@@ -29,7 +29,7 @@ public class A045997 extends Sequence0 {
     long c = 1;
     while (t.compareTo(Z.THREE) >= 0) {
       ++c;
-      t = mFactor.factorize(t).sigma0();
+      t = mFactor.factor(t).sigma0();
     }
     return Z.valueOf(c);
   }

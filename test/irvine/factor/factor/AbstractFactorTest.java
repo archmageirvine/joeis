@@ -1,6 +1,7 @@
 package irvine.factor.factor;
 
 import irvine.factor.util.FactorSequence;
+import irvine.math.z.Z;
 import junit.framework.TestCase;
 
 /**
@@ -18,7 +19,7 @@ public abstract class AbstractFactorTest extends TestCase {
   }
 
   public void testNullInput() {
-    mF.factor(null);
+    mF.factor((Z) null);
   }
 
   public void testZeroLengthInput() {

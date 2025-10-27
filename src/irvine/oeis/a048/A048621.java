@@ -16,7 +16,7 @@ public class A048621 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Z.valueOf(mFactor.factorize(Binomial.binomial(++mN, mN / 2)).bigOmega());
+    return Z.valueOf(mFactor.factor(Binomial.binomial(++mN, mN / 2)).bigOmega());
   }
 }
 

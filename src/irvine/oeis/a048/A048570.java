@@ -21,7 +21,7 @@ public class A048570 extends Sequence0 {
       ++mN;
       mM = 0;
     }
-    return mFactor.factorize(Binomial.binomial(mN, mM)).sigma0();
+    return mFactor.factor(Binomial.binomial(mN, mM)).sigma0();
   }
 }
 

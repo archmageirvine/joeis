@@ -24,6 +24,6 @@ public class A056058 extends A001405 {
   @Override
   public Z next() {
     final Z n = super.next();
-    return mFactor.factorize(n).core();
+    return mFactor.factor(n).core();
   }
 }

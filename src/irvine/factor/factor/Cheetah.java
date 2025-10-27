@@ -204,7 +204,7 @@ public class Cheetah extends AbstractFactorizer {
    * @return factor sequence
    * @exception UnsupportedOperationException if factorization cannot be completed
    */
-  static FactorSequence factor(final Z n) {
+  static FactorSequence factorDirect(final Z n) {
     return getFactorSequence(new FactorSequence(n));
   }
 
@@ -214,7 +214,7 @@ public class Cheetah extends AbstractFactorizer {
    * @return factor sequence
    * @exception UnsupportedOperationException if factorization cannot be completed
    */
-  static FactorSequence factor(final long n) {
+  static FactorSequence factorDirect(final long n) {
     return getFactorSequence(new FactorSequence(n));
   }
 }

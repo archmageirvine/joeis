@@ -22,7 +22,7 @@ public class A055767 extends A002110 {
 
   @Override
   public Z next() {
-    final Z phi = mFactor.factorize(super.next()).phi();
+    final Z phi = mFactor.factor(super.next()).phi();
     while (phi.mod(mA).isZero()) {
       ++mK;
       mA = mASeq.next();

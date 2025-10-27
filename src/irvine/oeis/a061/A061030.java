@@ -25,7 +25,7 @@ public class A061030 extends Sequence3 {
 
   @Override
   public Z next() {
-    mFactorSequence.merge(mFactor.factorize(Z.valueOf(++mN)));
+    mFactorSequence.merge(mFactor.factor(Z.valueOf(++mN)));
     mF = mF.multiply(mN);
     final Z cubeRoot = mF.root(3);
 

@@ -14,6 +14,6 @@ public class A054640 extends A002110 {
 
   @Override
   public Z next() {
-    return mFactor.factorize(super.next()).sigma();
+    return mFactor.factor(super.next()).sigma();
   }
 }

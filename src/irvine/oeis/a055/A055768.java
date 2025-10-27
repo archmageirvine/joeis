@@ -18,6 +18,6 @@ public class A055768 extends A002110 {
 
   @Override
   public Z next() {
-    return Z.valueOf(mFactor.factorize(mFactor.factorize(super.next()).phi()).omega());
+    return Z.valueOf(mFactor.factor(mFactor.factor(super.next()).phi()).omega());
   }
 }

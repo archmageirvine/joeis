@@ -43,5 +43,5 @@ public interface Factorizer {
    * @return factor sequence
    * @exception UnsupportedOperationException if factorization cannot be completed
    */
-  FactorSequence factorize(final Z n);
+  FactorSequence factor(final Z n);
 }

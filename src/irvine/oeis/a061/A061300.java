@@ -21,7 +21,7 @@ public class A061300 extends A000142 {
     if (mN == 4) {
       return Z.valueOf(360); // Special case
     }
-    final FactorSequence fs = mFactor.factorize(f);
+    final FactorSequence fs = mFactor.factor(f);
     final Z[] p = fs.toZArray();
     Z prod = Z.ONE;
     Z q = Z.ONE;

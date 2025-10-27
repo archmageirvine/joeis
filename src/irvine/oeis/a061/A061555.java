@@ -15,6 +15,6 @@ public class A061555 extends A000142 {
   @Override
   public Z next() {
     final Z f = super.next();
-    return mFactor.factorize(f).sigma().divide(f);
+    return mFactor.factor(f).sigma().divide(f);
   }
 }

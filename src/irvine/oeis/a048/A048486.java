@@ -21,7 +21,7 @@ public class A048486 extends Sequence1 {
       int max = 0;
       long maxk = 0;
       for (long k = 0; k <= mN / 2; ++k) {
-        final int omega = mFactor.factorize(Binomial.binomial(mN, k)).omega();
+        final int omega = mFactor.factor(Binomial.binomial(mN, k)).omega();
         if (omega > max) {
           max = omega;
           maxk = k;

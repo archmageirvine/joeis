@@ -88,7 +88,7 @@ public class EllipticCurve extends AbstractGroup<EllipticCurvePoint> {
     }
     final Z delta = deltaQ.toZ();
     final Z g = c6s.gcd(delta);
-    final FactorSequence pf = new PrimeDivision().factorize(g);
+    final FactorSequence pf = new PrimeDivision().factor(g);
     if (!pf.isComplete()) {
       throw new UnsupportedOperationException();
     }

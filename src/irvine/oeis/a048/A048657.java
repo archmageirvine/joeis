@@ -19,7 +19,7 @@ public class A048657 extends A000142 {
 
   @Override
   public Z next() {
-    final FactorSequence fs = mFactor.factorize(super.next());
+    final FactorSequence fs = mFactor.factor(super.next());
     return fs.sigma0().subtract(fs.unitarySigma0());
   }
 }

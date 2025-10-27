@@ -82,7 +82,7 @@ public final class MeshIncrement {
       final Z n = new Z(line.substring(openParen + 1, closeParen));
       System.err.println("Attempting to Tillman factor level " + level + " n=" + n);
       ++sNewTillman;
-      writeFactors(line, openParen, TILLMAN.factorize(n), System.out);
+      writeFactors(line, openParen, TILLMAN.factor(n), System.out);
     } else if (level <= jaguar[0] && length <= jaguar[1]) {
       final Z n = new Z(line.substring(openParen + 1, closeParen));
       System.err.println("Attempting to Jaguar factor level " + level + " n=" + n);

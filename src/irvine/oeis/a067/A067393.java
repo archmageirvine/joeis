@@ -17,7 +17,7 @@ public class A067393 extends A000142 {
   @Override
   public Z next() {
     final Z f = super.next();
-    final Z phi = mFactor.factorize(f).phi();
+    final Z phi = mFactor.factor(f).phi();
     return phi.subtract(Functions.PRIME_PI.z(f)).add(Functions.PRIME_PI.l(++mN));
   }
 }

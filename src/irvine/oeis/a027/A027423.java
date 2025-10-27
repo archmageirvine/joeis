@@ -30,7 +30,7 @@ public class A027423 extends AbstractSequence {
 
   @Override
   public Z next() {
-    mFactorSequence.merge(mFactor.factorize(Z.valueOf(++mN)));
+    mFactorSequence.merge(mFactor.factor(Z.valueOf(++mN)));
     return mFactorSequence.sigma0();
   }
 }

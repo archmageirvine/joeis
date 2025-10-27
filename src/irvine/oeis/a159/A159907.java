@@ -52,7 +52,7 @@ public class A159907 extends Sequence1 {
       return;
     }
     final Z n2 = n.multiply(k2);
-    final FactorSequence u = mFactor.factorize(si2);
+    final FactorSequence u = mFactor.factor(si2);
     Z pr = Z.NEG_ONE;
     Z prim = Z.NEG_ONE;
     Z sz = Z.ONE;

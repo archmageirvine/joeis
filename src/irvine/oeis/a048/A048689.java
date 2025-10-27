@@ -21,7 +21,7 @@ public class A048689 extends Sequence1 {
     ++mN;
     final TreeSet<Long> seen = new TreeSet<>();
     for (long k = 0; k <= mN / 2; ++k) {
-      seen.add(mFactor.factorize(Binomial.binomial(mN, k)).bigOmega());
+      seen.add(mFactor.factor(Binomial.binomial(mN, k)).bigOmega());
     }
     return Z.valueOf(seen.size());
   }

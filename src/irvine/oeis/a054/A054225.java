@@ -21,7 +21,7 @@ public class A054225 extends MemoryFunction2Sequence<Z, Z> {
   protected Z compute(final Z n, final Z k) {
     Z s = Z.ZERO;
     if (!n.isPrime()) {
-      for (final Z d : mFactor.factorize(n).divisors()) {
+      for (final Z d : mFactor.factor(n).divisors()) {
         if (!Z.ONE.equals(d) && !n.equals(d) && d.compareTo(k) <= 0) {
           s = s.add(get(n.divide(d), d));
         }

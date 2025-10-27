@@ -22,7 +22,7 @@ public class A035166 extends Sequence1 {
     while (true) {
       final Z n = Z.valueOf(++mN);
       mSum = mSum.add(new Q(Z.ONE, n.square()));
-      final FactorSequence fs = mFactor.factorize(mSum.den());
+      final FactorSequence fs = mFactor.factor(mSum.den());
       Z prod = Z.ONE;
       for (final Z p : fs.toZArray()) {
         if ((fs.getExponent(p) & 1) == 1) {

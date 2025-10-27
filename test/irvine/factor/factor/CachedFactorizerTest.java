@@ -19,7 +19,7 @@ public class CachedFactorizerTest extends TestCase {
     final File cache = TestUtils.createTempDir("cache", "test");
     try {
       final CachedFactorizer cf = new CachedFactorizer(new Cheetah(), cache);
-      assertEquals("3.109", FactorSequence.toString(cf.factorize(Z.valueOf(327))));
+      assertEquals("3.109", FactorSequence.toString(cf.factor(Z.valueOf(327))));
       final File f = new File(cache, "00");
       assertTrue(f.exists());
       final File f0 = new File(f, "00");
@@ -29,7 +29,7 @@ public class CachedFactorizerTest extends TestCase {
       final File f2 = new File(f1, "47");
       assertTrue(f2.exists());
       assertEquals("3", IOUtils.readAll(f2).trim());
-      assertEquals("3.109", FactorSequence.toString(cf.factorize(Z.valueOf(327))));
+      assertEquals("3.109", FactorSequence.toString(cf.factor(Z.valueOf(327))));
     } finally {
       assertTrue(IOUtils.deleteAll(cache));
     }

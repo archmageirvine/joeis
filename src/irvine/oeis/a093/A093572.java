@@ -14,6 +14,6 @@ public class A093572 extends A093570 {
 
   @Override
   public Z next() {
-    return mFactor.factorize(super.next()).largestPrimeFactor();
+    return mFactor.factor(super.next()).largestPrimeFactor();
   }
 }

@@ -31,7 +31,7 @@ public class A359069 extends Sequence1 {
       p = mPrime.nextPrime(p);
       final Z t = p.pow(n).subtract(1);
       if (precheck(t)) {
-        final FactorSequence fs = TILLMAN.factorize(t);
+        final FactorSequence fs = TILLMAN.factor(t);
         if (fs.omega() == n && fs.isSquareFree()) {
           return p;
         }

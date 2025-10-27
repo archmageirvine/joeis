@@ -19,7 +19,7 @@ public class A053034 extends Sequence1 {
 
   @Override
   public Z next() {
-    mFactorSequence.merge(mFactor.factorize(Z.valueOf(++mN)));
+    mFactorSequence.merge(mFactor.factor(Z.valueOf(++mN)));
     mF = mF.multiply(mN);
     long cnt = 1;
     FactorSequence fs = mFactorSequence;

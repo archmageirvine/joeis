@@ -19,7 +19,7 @@ public class A048277 extends Sequence0 {
     ++mN;
     long cnt = 0;
     for (long k = 0; k <= mN / 2; ++k) {
-      if (!mFactor.factorize(Binomial.binomial(mN, k)).isSquareFree()) {
+      if (!mFactor.factor(Binomial.binomial(mN, k)).isSquareFree()) {
         cnt += 2 * k == mN ? 1 : 2;
       }
     }

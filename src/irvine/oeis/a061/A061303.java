@@ -21,7 +21,7 @@ public class A061303 extends Sequence0 {
     while (true) {
       final Z prev = mF.gcd(mFactorSequence.phi());
       mF = mF.multiply(++mN);
-      mFactorSequence.merge(mFactor.factorize(Z.valueOf(mN)));
+      mFactorSequence.merge(mFactor.factor(Z.valueOf(mN)));
       final Z current = mF.gcd(mFactorSequence.phi());
       if (current.equals(prev)) {
         return Z.valueOf(mN);

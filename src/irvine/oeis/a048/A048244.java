@@ -17,7 +17,7 @@ public class A048244 extends Sequence1 {
 
   @Override
   public Z next() {
-    final FactorSequence fs = mFactor.factorize(Binomial.binomial(++mN, mN / 2));
+    final FactorSequence fs = mFactor.factor(Binomial.binomial(++mN, mN / 2));
     return fs.unitarySigma0().multiply2().subtract(fs.sigma0());
   }
 }

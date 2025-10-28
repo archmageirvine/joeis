@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.German;
 
 /**
- * A389982 allocated for Johann Peters.
+ * A389982 Triangle in which row n contains values from 1 to n in alphabetical order (in German).
  * @author Sean A. Irvine
  */
 public class A389982 extends Sequence1 {

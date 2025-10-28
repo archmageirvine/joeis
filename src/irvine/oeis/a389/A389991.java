@@ -4,7 +4,7 @@ import irvine.oeis.a336.A336282;
 import irvine.util.Permutation;
 
 /**
- * A389991 allocated for Manolopoulos Panagiotis.
+ * A389991 Total number of descents in all heapable permutations of length n.
  * @author Sean A. Irvine
  */
 public class A389991 extends A336282 {

@@ -6,7 +6,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A084345 Numbers with a nonprime number of 1&apos;s in their binary expansion (complement of A052294).
+ * A084345 Numbers with a nonprime number of 1's in their binary expansion (complement of A052294).
  * @author Georg Fischer
  */
 public class A084345 extends FilterNumberSequence {

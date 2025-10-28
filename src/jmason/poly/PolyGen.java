@@ -12,7 +12,11 @@ public abstract class PolyGen<U extends Element<U>, T extends CoordSetGen<U>> ex
   protected String mUniq;
   protected CoordSetGen<U> mCs;
 
-  int size() {
+  /**
+   * Return the size of this animal.
+   * @return size
+   */
+  public int size() {
     return mCs.mSize;
   }
 

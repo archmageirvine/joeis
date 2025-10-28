@@ -84,7 +84,7 @@ public class A098891 extends Sequence1 {
       }
     }
 
-    // Finally we have the answer, the total number of edges.
+    // Finally, we have the answer, the total number of edges.
     return Z.valueOf(edges.size());
   }
 

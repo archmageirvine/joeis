@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a007.A007500;
 
 /**
- * A199305 Palindromic primes in the sense of A007500 with digits &apos;0&apos;, &apos;1&apos; and &apos;5&apos; only.
+ * A199305 Palindromic primes in the sense of A007500 with digits '0', '1' and '5' only.
  * @author Georg Fischer
  */
 public class A199305 extends FilterSequence {

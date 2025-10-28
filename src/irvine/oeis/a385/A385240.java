@@ -236,11 +236,6 @@ public class A385240 extends AbstractSequence {
       min = Math.min(min, vol);
       max = Math.max(max, vol);
     }
-    if (max - min == 18) {
-      for (final int s : set) {
-        System.out.println(mRectangles.get(s));
-      }
-    }
     return max - min;
   }
 

@@ -4,7 +4,7 @@ package irvine.oeis.a156;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A156760 5*4^n-1.
+ * A156760 a(n) = 5*4^n - 1.
  * @author Georg Fischer
  */
 public class A156760 extends HolonomicRecurrence {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Point;
 
 /**
- * A390012.
+ * A390012 allocated for Giedrius Alkauskas.
  * @author Sean A. Irvine
  */
 public class A390012 extends Sequence1 {

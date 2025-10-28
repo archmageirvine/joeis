@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A046838 Numbers n such that n^2 can be obtained from n by inserting a block of digits.
+ * A046838 Numbers k such that k^2 can be obtained from k by inserting a block of digits.
  * @author Sean A. Irvine
  */
 public class A046838 extends Sequence1 {

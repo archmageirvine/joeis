@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390009 allocated for Safwan Jaradat.
+ * A390009 Numbers k such that the sum of the digits of k equals the sum of the digits of |k - reverse(k)|.
  * @author Sean A. Irvine
  */
 public class A390009 extends Sequence1 {

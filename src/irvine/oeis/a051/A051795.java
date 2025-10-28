@@ -12,7 +12,7 @@ public class A051795 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP0 = Z.valueOf(18713);
-  private Z mP1 = Z.valueOf(18719);
+  private Z mP1 = mPrime.nextPrime(mP0);
 
   @Override
   public Z next() {

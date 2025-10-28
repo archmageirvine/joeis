@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081391 Numbers k such that the central binomial coefficient C(2*k,k) has only one prime divisor whose exponent equals one.
+ * A081392 Numbers k such that the central binomial coefficient C(k, floor(k/2)) has only one prime divisor whose exponent is greater than one.
  * @author Sean A. Irvine
  */
 public class A081392 extends Sequence1 {

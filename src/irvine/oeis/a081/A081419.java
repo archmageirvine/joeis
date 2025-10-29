@@ -22,7 +22,7 @@ public class A081419 extends Sequence1 {
   private static final int HALT = 0;
   private static final int INC = 1;
   private static final int DEC = 2;
-  private static final int[] HALT_INS = new int[] {HALT};
+  private static final int[] HALT_INS = {HALT};
 
   private static final long STEPS = 50; // Too small for n>=8
 
@@ -56,16 +56,6 @@ public class A081419 extends Sequence1 {
 
     for (long k = 0; k < STEPS; ++k) {
       switch(program[state][0]) {
-        case HALT:
-          for (final long v : reg) {
-            if (v > mMaxRegAttained) {
-              mMaxRegAttained = v;
-              if (mVerbose) {
-                StringUtils.message("n=" + mN + " program " + Arrays.deepToString(program) + " achieved " + mMaxRegAttained + ": " + Arrays.toString(reg));
-              }
-            }
-          }
-          return;
         case INC:
           ++reg[program[state][1]];
           state = program[state][2];
@@ -78,6 +68,17 @@ public class A081419 extends Sequence1 {
             state = program[state][2];
           }
           break;
+        case HALT:
+        default:
+          for (final long v : reg) {
+            if (v > mMaxRegAttained) {
+              mMaxRegAttained = v;
+              if (mVerbose) {
+                StringUtils.message("n=" + mN + " program " + Arrays.deepToString(program) + " achieved " + mMaxRegAttained + ": " + Arrays.toString(reg));
+              }
+            }
+          }
+          return;
       }
     }
     // Did not terminate in reasonable number of steps

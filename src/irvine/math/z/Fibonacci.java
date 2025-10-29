@@ -94,8 +94,28 @@ public final class Fibonacci  {
     final MatrixRing<Z> ring = new MatrixRing<>(2, new IntegersMod(m));
     final Matrix<Z> mat = new DefaultMatrix<>(new Z[][] {{Z.ZERO, Z.ONE}, {Z.ONE, Z.ONE}}, Z.ZERO);
     final Matrix<Z> pow = ring.pow(mat, n);
-    final Matrix<Z> t = ring.multiply(pow, new DefaultMatrix<Z>(new Z[][] {{Z.TWO}, {Z.ONE}}, Z.ZERO));
+    final Matrix<Z> t = ring.multiply(pow, new DefaultMatrix<>(new Z[][] {{Z.TWO}, {Z.ONE}}, Z.ZERO));
     return t.get(0, 0).mod(m);
+  }
+
+  /**
+   * Compute a Pell number mod <code>m</code>.
+   * @param n index
+   * @param m modulus
+   * @return Pell number
+   */
+  public static Z pell(final Z n, final Z m) {
+    if (m.signum() < 1) {
+      throw new IllegalArgumentException();
+    }
+    if (n.isZero() || n.isOne()) {
+      return n.mod(m);
+    }
+    final MatrixRing<Z> ring = new MatrixRing<>(2, new IntegersMod(m));
+    final Matrix<Z> mat = new DefaultMatrix<>(new Z[][] {{Z.TWO, Z.ONE}, {Z.ONE, Z.ZERO}}, Z.ZERO);
+    final Matrix<Z> pow = ring.pow(mat, n.subtract(1));
+    //final Matrix<Z> t = ring.multiply(pow, new DefaultMatrix<Z>(new Z[][] {{Z.TWO}, {Z.ONE}}, Z.ZERO));
+    return pow.get(0, 0).add(m).mod(m);
   }
 
   /**

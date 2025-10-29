@@ -14,7 +14,7 @@ public class A387793 extends A389524 {
 
   @Override
   public Z next() {
-    return ++mN == 1 ? Z.ONE : Integers.SINGLETON.sum(1, (mN + 1) / 2, k -> mB.get(mN, mN - 2 * k + 1));
+    return Integers.SINGLETON.sum(1, ++mN / 2, k -> mB.get(mN, mN - 2 * k + 1));
   }
 }
 

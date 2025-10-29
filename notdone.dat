@@ -2673,3 +2673,4 @@ A081319 Smallest squarefree integer k such that Q(sqrt(-k)) has class number n, 
 A081364 Smallest d such that real quadratic field with discriminant d has class number n.
 A081365 Numbers whose name in American English is a word-palindrome, reading the same forward and backward.
 A081366 Number of distinct edge lengths in the convex hull of the maximal volume arrangements of n points on a sphere.
+A081420 Let f(1)=f(2)=1, f(k)=f(k-1)+f(k-2)+ (k (mod n)). Then f(k)=floor(r(n)*F(k))+g(k) where F(k) denotes the k-th Fibonacci number and g(k) a function becoming periodic. Sequence depends on r(n) which is the largest positive root of : a(3n-2)*X^2-a(3n-1)*X+a(3n)=0.

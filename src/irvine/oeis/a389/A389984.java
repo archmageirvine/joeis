@@ -1,11 +1,8 @@
 package irvine.oeis.a389;
 
-import java.util.HashSet;
-
 import irvine.math.function.Functions;
 import irvine.math.graph.Graph;
 import irvine.math.graph.GraphFactory;
-import irvine.math.graph.GraphUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -55,32 +52,24 @@ public class A389984 extends Sequence0 {
   @Override
   public Z next() {
     final Graph g = GraphFactory.hypercube(++mN);
-    System.out.println(g);
+    //System.out.println(g);
     final int v = g.order();
-    if (v >= Long.SIZE) {
-      // > would work except for lim calculation below
+    if (v > Long.SIZE) {
       throw new UnsupportedOperationException();
     }
     long cnt = 0;
-    long foo = 0;
     // Do splitting by number of vertices
-    final long lim = 1L << v;
+    final long lim = (1L << v) - 1;
     for (int wt = 1; wt <= v / 2; ++wt) {
-      final HashSet<Graph> canons = new HashSet<>();
-      for (long set = (1L << wt) - 1; set < lim; set = Functions.SWIZZLE.l(set)) {
-        // WLOG assume vertex 0 is part of the set
-        if ((set & 1) == 1) {
-          final Graph[] split = split(g, set);
-          if (split[0].isConnected() && split[1].isConnected()) {
-            ++foo;
-            canons.add(GraphUtils.canon(split[0]));
-          }
+      final long add = 2 * wt == v ? 1 : 2;
+      for (long set = (1L << wt) - 1; set <= lim; set = Functions.SWIZZLE.l(set)) {
+        final Graph[] split = split(g, set);
+        if (split[0].isConnected() && split[1].isConnected()) {
+          cnt += add;
         }
       }
-      System.out.println("Splits into: " + wt + " " + canons.size() + " " + foo);
-      cnt += canons.size();
     }
-    return Z.valueOf(cnt);
+    return Z.valueOf(cnt / 2);
   }
 }
 

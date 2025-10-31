@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a071.A071562;
 
 /**
- * A081418.
+ * A280295 Smallest number with middle divisors whose distance to the next number with middle divisors is n.
  * @author Sean A. Irvine
  */
 public class A280295 extends Sequence1 {

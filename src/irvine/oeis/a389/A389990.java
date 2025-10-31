@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A389990 allocated for Marc Morgenegg.
+ * A389990 Decimal expansion of the product of alternating ratio's of consecutive positive integer pairs.
  * @author Sean A. Irvine
  */
 public class A389990 extends DecimalExpansionSequence {

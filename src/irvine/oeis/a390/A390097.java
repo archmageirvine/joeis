@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a384.A384237;
 
 /**
- * A081418.
+ * A390097 Numbers k such that A000005(k) = A384237(k).
  * @author Sean A. Irvine
  */
 public class A390097 extends FilterPositionSequence {

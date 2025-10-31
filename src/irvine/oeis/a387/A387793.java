@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a389.A389524;
 
 /**
- * A387793 allocated for Mats Granvik.
+ * A387793 a(n) = Sum_{k=1..floor(n/2)} A389524(n, n - 2*k + 1).
  * @author Sean A. Irvine
  */
 public class A387793 extends A389524 {

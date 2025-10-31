@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081418.
+ * A081449 Smallest squares such that partial sums of the sequence plus 17 are primes.
  * @author Sean A. Irvine
  */
 public class A081449 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A378535 M√∂bius transform of A378542, where A378542 is the sum of divisors d of n such that n/d has an even number of prime factors (counted with multiplicity).
+ * A378535 M\u00f6bius transform of A378542, where A378542 is the sum of divisors d of n such that n/d has an even number of prime factors (counted with multiplicity).
  * @author Georg Fischer
  */
 public class A378535 extends LambdaSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389414 allocated for Felix Huber.
+ * A389414 Numbers k whose (not necessarily distinct) prime factors can be side lengths of a simple polygon.
  * @author Sean A. Irvine
  */
 public class A389414 extends Sequence1 {

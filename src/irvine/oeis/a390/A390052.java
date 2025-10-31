@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A389978.
+ * A390052 a(1) = 1. For n &gt; 1, a(n) is the smallest number obtainable by rearranging the digits of n whose value has the largest prime factor among all such rearrangements.
  * @author Sean A. Irvine
  */
 public class A390052 extends Sequence1 {

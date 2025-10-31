@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A386598 allocated for Robert Israel.
+ * A386598 a(n) is the least k such that k - sopfr(k) has exactly n prime factors, counted with multiplicity.
  * @author Sean A. Irvine
  */
 public class A386598 extends Sequence0 {

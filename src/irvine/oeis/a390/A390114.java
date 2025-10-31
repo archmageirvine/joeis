@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a071.A071562;
 
 /**
- * A081418.
+ * A390114 allocated for Omar E. Pol.
  * @author Sean A. Irvine
  */
 public class A390114 extends Sequence1 {

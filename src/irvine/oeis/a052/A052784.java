@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A052784 E.g.f.: x^3*(exp(x)-1)^3.
+ * A052784 Expansion of e.g.f.: x^3*(exp(x)-1)^3.
  * @author Georg Fischer
  */
 public class A052784 extends HolonomicRecurrence {

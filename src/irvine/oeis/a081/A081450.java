@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081418.
+ * A081450 a(n) = sqrt(A081449(n))/6.
  * @author Sean A. Irvine
  */
 public class A081450 extends Sequence1 {

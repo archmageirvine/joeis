@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a385.A385240;
 
 /**
- * A390007 allocated for Janaka Rodrigo.
+ * A390007 a(n) is the least possible difference between the areas of the largest and smallest rectangles in a 3 element set of distinct integer sided rectangles filling an n X n square.
  * @author Sean A. Irvine
  */
 public class A390007 extends A385240 {

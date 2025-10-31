@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081418.
+ * A081433 Numbers n such that RevBinary(RevDecimal(n))=RevDecimal(RevBinary(n)), where RevDecimal(n) is the decimal reversal of n (A004086) and RevBinary(n) is the binary reversal of n (A030101).
  * @author Sean A. Irvine
  */
 public class A081433 extends Sequence1 {

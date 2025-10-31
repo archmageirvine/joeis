@@ -8,14 +8,14 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081418.
+ * A081454 Triangle read by rows in which the n-th row contains n distinct numbers whose product is a square, which is minimal over all choices for n distinct numbers.
  * @author Sean A. Irvine
  */
 public class A081454 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;
-  private long[] mRow = {};
+  protected long[] mRow = {};
   private Z mMin = null;
 
   private void search(final long[] row, final Z prod, final int pos) {
@@ -35,9 +35,11 @@ public class A081454 extends Sequence1 {
         }
         // Take account of the smallest possible product of extension
         final int remaining = row.length - (pos + 1);
-        final Z q = p.multiply(Functions.FACTORIAL.z(k + remaining).divide(Functions.FACTORIAL.z(k)));
-        if (q.compareTo(mMin) > 0) {
-          break;
+        if (remaining > 1) {
+          final Z q = p.multiply(Functions.FACTORIAL.z(k + remaining).divide(Functions.FACTORIAL.z(k)));
+          if (q.compareTo(mMin) > 0) {
+            break;
+          }
         }
       }
       row[pos] = k;
@@ -45,14 +47,18 @@ public class A081454 extends Sequence1 {
     }
   }
 
+  protected void step() {
+    mM = 0;
+    final long[] row = new long[++mN];
+    row[0] = 1;
+    mMin = null;
+    search(row, Z.ONE, 1);
+  }
+
   @Override
   public Z next() {
     if (++mM >= mRow.length) {
-      mM = 0;
-      final long[] row = new long[++mN];
-      row[0] = 1;
-      mMin = null;
-      search(row, Z.ONE, 1);
+      step();
     }
     return Z.valueOf(mRow[mM]);
   }

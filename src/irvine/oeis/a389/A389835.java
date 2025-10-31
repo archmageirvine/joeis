@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081418.
+ * A389835 Numbers k such that wt(Fibonacci(k)) * e &gt; k, where wt(x) is the binary weight of x (A000120), and e is the natural logarithm base.
  * @author Sean A. Irvine
  */
 public class A389835 extends Sequence1 {

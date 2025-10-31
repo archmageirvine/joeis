@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A229272 Numbers n for which n&apos; + n and n&apos; - n are both prime, n&apos; being the arithmetic derivative of n.
+ * A229272 Numbers n for which n' + n and n' - n are both prime, n' being the arithmetic derivative of n.
  * @author Georg Fischer
  */
 public class A229272 extends FilterNumberSequence {

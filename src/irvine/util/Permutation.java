@@ -305,7 +305,7 @@ public class Permutation {
    * @param p permutation
    * @return inversions
    */
-  public static int inversions(final int[] p) {
+  public static int countInversions(final int[] p) {
     int count = 0;
     for (int k = 0; k < p.length - 1; ++k) {
       for (int j = k + 1; j < p.length; ++j) {
@@ -341,6 +341,21 @@ public class Permutation {
     int count = 0;
     for (int k = 1; k < p.length; ++k) {
       if (p[k] > p[k - 1]) {
+        ++count;
+      }
+    }
+    return count;
+  }
+
+  /**
+   * Compute the number of consecutive pairs.
+   * @param p permutation
+   * @return consecutive pairs
+   */
+  public static int countPairs(final int[] p) {
+    int count = 0;
+    for (int k = 1; k < p.length; ++k) {
+      if (Math.abs(p[k] - p[k - 1]) == 1) {
         ++count;
       }
     }

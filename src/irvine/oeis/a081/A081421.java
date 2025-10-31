@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A081418.
+ * A081421 a(n) = (3^(2*n) + 5^(2*n)) / 2.
  * @author Sean A. Irvine
  */
 public class A081421 extends Sequence0 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A389877 allocated for Jwalin Bhatt.
+ * A389877 Number of digits in numerators of zeta(2*n)/Pi^(2*n).
  * @author Sean A. Irvine
  */
 public class A389877 extends Sequence0 {

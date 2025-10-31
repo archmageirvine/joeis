@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081418.
+ * A081422 Triangle read by rows in which row n consists of the first n+1 n-gonal numbers.
  * @author Sean A. Irvine
  */
 public class A081422 extends Sequence1 {

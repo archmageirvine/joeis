@@ -4,7 +4,7 @@ package irvine.oeis.a138;
 import irvine.oeis.a038.A038702;
 
 /**
- * A138673 Prime(n)^4 mod prime(n-1).
+ * A138673 a(n) = prime(n)^4 mod prime(n-1).
  * @author Georg Fischer
  */
 public class A138673 extends A038702 {

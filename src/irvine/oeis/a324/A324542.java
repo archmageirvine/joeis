@@ -7,7 +7,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A324542 M√∂bius transform of A324118, where A324118(n) = A000593(A156552(n)).
+ * A324542 M\u00f6bius transform of A324118, where A324118(n) = A000593(A156552(n)).
  * @author Georg Fischer
  */
 public class A324542 extends LambdaSequence {

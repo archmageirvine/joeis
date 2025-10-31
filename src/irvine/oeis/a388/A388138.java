@@ -16,6 +16,6 @@ public class A388138 extends A336282 {
 
   @Override
   protected long count(final int[] p) {
-    return Permutation.inversions(p);
+    return Permutation.countInversions(p);
   }
 }

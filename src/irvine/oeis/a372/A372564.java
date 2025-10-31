@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a346.A346242;
 
 /**
- * A372564 Positions of -4&apos;s in A346242.
+ * A372564 Positions of -4's in A346242.
  * @author Georg Fischer
  */
 public class A372564 extends FilterPositionSequence {

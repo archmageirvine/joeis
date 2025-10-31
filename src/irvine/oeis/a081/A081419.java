@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A081419 Largest value held in any register at the end of a halting computation by an n-instruction register Minski machine.
+ * A081419 Largest value held in any register at the end of a halting computation by an n-instruction register Minsky machine.
  * @author Sean A. Irvine
  */
 //public class A081419 extends NoncomputableSequence {

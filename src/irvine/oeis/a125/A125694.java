@@ -5,7 +5,7 @@ import irvine.oeis.a152.A152681;
 import irvine.oeis.triangle.PartitionTransformTriangle;
 
 /**
- * A125694 Riordan array ((1+3x-sqrt(1+2x+9x^2))/(2x),(1+3x-sqrt(1+2x+9x^2))/2).
+ * A125694 Riordan array ((1+3*x-sqrt(1+2*x+9*x^2))/(2*x),(1+3*x-sqrt(1+2*x+9*x^2))/2).
  * @author Georg Fischer
  */
 public class A125694 extends PartitionTransformTriangle {

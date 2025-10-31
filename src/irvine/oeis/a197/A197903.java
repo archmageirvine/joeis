@@ -3,7 +3,7 @@ package irvine.oeis.a197;
 // DO NOT EDIT here!
 
 /**
- * A197903 Ceiling((n+1/n)^4).
+ * A197903 a(n) = ceiling((n+1/n)^4).
  * @author Georg Fischer
  */
 public class A197903 extends A197773 {

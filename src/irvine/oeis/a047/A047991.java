@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A047991 Triangle formed from expansion of (x-1)(x+2)(x-3)...(x+-n).
+ * A047991 Triangle formed from expansion of (x-1)*(x+2)*(x-3)*...*(x+-n).
  *
  * @author Sean A. Irvine
  */

@@ -4,7 +4,7 @@ package irvine.oeis.a138;
 import irvine.oeis.a038.A038702;
 
 /**
- * A138675 Prime(n)^6 mod prime(n-1).
+ * A138675 a(n) = prime(n)^6 mod prime(n-1).
  * @author Georg Fischer
  */
 public class A138675 extends A038702 {

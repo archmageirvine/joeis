@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A081418 A000720 applied to Pascal-triangle as follows: C(pi(n),pi(j)), j=0..n and n=0,1,2,...
+ * A081418 Triangle read by rows: T(n,k) = binomial(primepi(n), primepi(j)), j=0..n and n&gt;=0.
  * @author Sean A. Irvine
  */
 public class A081418 extends Sequence0 {

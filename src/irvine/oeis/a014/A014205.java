@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A014205 (1/12)*(n+5)*(n+1)*n^2.
+ * A014205 a(n) = (1/12)*(n+5)*(n+1)*n^2.
  * @author Sean A. Irvine
  */
 public class A014205 extends Sequence0 {

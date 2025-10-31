@@ -7,7 +7,7 @@ import irvine.oeis.a367.A367865;
 import irvine.oeis.a367.A367866;
 
 /**
- * A389978 allocated for Aloe Poliszuk.
+ * A389978 Arithmetic mean of A367866(n), A389977(n), A367865(n), and A389775(n).
  * @author Sean A. Irvine
  */
 public class A389978 extends Sequence1 {

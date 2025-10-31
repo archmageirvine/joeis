@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A389978.
+ * A389984 Number of partitions of the vertex set of the labeled n-dimensional hypercube graph into 2 connected subsets.
  * @author Sean A. Irvine
  */
 public class A389984 extends Sequence0 {

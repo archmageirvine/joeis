@@ -7,7 +7,7 @@ import irvine.oeis.a128.A128418;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A387012 Number of ternary strings of length 2*n that have fewer 0&apos;s than the combined number of 1&apos;s and 2&apos;s.
+ * A387012 Number of ternary strings of length 2*n that have fewer 0's than the combined number of 1's and 2's.
  * @author Georg Fischer
  */
 public class A387012 extends SingleTransformSequence {

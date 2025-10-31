@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390019 allocated for Michael S. Branicky.
+ * A390019 Smallest prime number != n obtained by removing or adding a single digit anywhere in n, or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A390019 extends Sequence0 {

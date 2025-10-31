@@ -5,7 +5,7 @@ import irvine.oeis.TwoParameterFormSequence;
 import irvine.oeis.a052.A052486;
 
 /**
- * A386762.
+ * A389959 allocated for Michael De Vlieger.
  * @author Sean A. Irvine
  */
 public class A389959 extends TwoParameterFormSequence {

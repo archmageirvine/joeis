@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A389978.
+ * A390053 a(1) = 1. For n &gt; 1, a(n) is the largest prime factor of A390052(n).
  * @author Sean A. Irvine
  */
 public class A390053 extends Sequence1 {

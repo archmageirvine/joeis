@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389780 allocated for Juri-Stepan Gerasimov.
+ * A389780 Number of divisors d of n such that gcd(d^2 - 1, n) = 1 and gcd((n/d)^2 - 1, n) != 1.
  * @author Sean A. Irvine
  */
 public class A389780 extends Sequence1 {

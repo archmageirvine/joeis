@@ -4,7 +4,7 @@ package irvine.oeis.a099;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A099195 a(n) = (n^2)*( n^6 + 28*n^4 + 154*n^2 + 132 )/315.
+ * A099195 a(n) = n^2*(n^6 + 28*n^4 + 154*n^2 + 132)/315.
  * @author Georg Fischer
  */
 public class A099195 extends LinearRecurrence {

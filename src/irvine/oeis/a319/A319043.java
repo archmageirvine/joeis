@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002808;
 
 /**
- * A319042 Composite numbers k such that Pell(k) == 1 (mod k).
+ * A319043 Composite numbers k such that Pell(k) == -1 (mod k).
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

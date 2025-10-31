@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081418.
+ * A081451 Partial maxima of A081446.
  * @author Sean A. Irvine
  */
 public class A081451 extends Sequence1 {

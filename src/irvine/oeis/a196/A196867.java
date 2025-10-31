@@ -6,7 +6,7 @@ package irvine.oeis.a196;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A196867  G.f. A(x) satisfies: A(x)^-4 + A(-x)^-4 = 2 and A(x)^4 - A(-x)^4 = 32*x.
+ * A196867 G.f. A(x) satisfies: A(x)^-4 + A(-x)^-4 = 2 and A(x)^4 - A(-x)^4 = 32*x.
  * @author Georg Fischer
  */
 public class A196867 extends HolonomicRecurrence {

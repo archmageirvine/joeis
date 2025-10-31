@@ -5,7 +5,7 @@ import irvine.oeis.TwoParameterFormSequence;
 import irvine.oeis.a052.A052486;
 
 /**
- * A386762.
+ * A383394 Perfect powers of Achilles numbers.
  * @author Sean A. Irvine
  */
 public class A383394 extends TwoParameterFormSequence {

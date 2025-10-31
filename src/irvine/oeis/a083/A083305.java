@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A083305 (4*(n+10)^n+n^n)/5.
+ * A083305 a(n) = (4*(n+10)^n+n^n)/5.
  * a(n)= (4*(n+10)^n+n^n)/5
  * @author Georg Fischer
  */

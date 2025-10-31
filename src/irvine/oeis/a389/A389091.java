@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A081418.
+ * A389091 Sum over i of the i-th digit of n raised to the i-th power.
  * @author Sean A. Irvine
  */
 public class A389091 extends Sequence0 {

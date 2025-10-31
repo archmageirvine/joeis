@@ -6,7 +6,7 @@ import irvine.oeis.a244.A244042;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A359602 Sum of A244042 and its Dirichlet inverse, where A244042(n) replaces 2&apos;s with 0&apos;s in the ternary representation of n.
+ * A359602 Sum of A244042 and its Dirichlet inverse, where A244042(n) replaces 2's with 0's in the ternary representation of n.
  * @author Georg Fischer
  */
 public class A359602 extends SingleTransformSequence {

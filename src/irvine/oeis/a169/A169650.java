@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A169650 a(1) = 3; thereafter a(n) = 3*a(n-1)+2^n-6.
+ * A169650 a(n) = 3*a(n-1) + 2^n - 6, with a(1) = 3.
  * <code>a(n)=3*a(n-1)+2^n-6</code>
  * @author Georg Fischer
  */

@@ -12,7 +12,7 @@ public class A387977 extends A389496 {
   @Override
   protected long count(final int[] p) {
     synchronized (A387977.this) {
-      ++mRow[Permutation.inversions(p)];
+      ++mRow[Permutation.countInversions(p)];
     }
     return 0;
   }

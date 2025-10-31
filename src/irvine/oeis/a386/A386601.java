@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A389978.
+ * A386601 allocated for Tamas Sandor Nagy.
  * @author Sean A. Irvine
  */
 public class A386601 extends A000040 {

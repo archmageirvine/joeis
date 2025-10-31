@@ -21,7 +21,7 @@ import irvine.oeis.DirectSequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A081418.
+ * A389766 allocated for Hamidreza Maleki Tirabadi.
  * @author Sean A. Irvine
  */
 public class A389766 extends AbstractSequence implements DirectSequence {

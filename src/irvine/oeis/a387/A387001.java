@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a005.A005408;
 
 /**
- * A387001 Number of vertices in the diagram called &quot;symmetric representation of sigma(n)&quot; where its &quot;parts&quot; or polygons are dissected into unit squares (see the example).
+ * A387001 Number of vertices in the diagram called "symmetric representation of sigma(n)" where its "parts" or polygons are dissected into unit squares (see the example).
  * @author Georg Fischer
  */
 public class A387001 extends LambdaSequence {

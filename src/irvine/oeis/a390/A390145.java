@@ -7,7 +7,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A388853.
+ * A390145 allocated for Paolo Xausa.
  * @author Sean A. Irvine
  */
 public class A390145 extends DecimalExpansionSequence {

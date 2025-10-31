@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390002 allocated for Vincenzo Manto.
+ * A390002 Leading digit of 15^n.
  * @author Sean A. Irvine
  */
 public class A390002 extends Sequence0 {

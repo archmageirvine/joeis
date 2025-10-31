@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A387793 allocated for Mats Granvik.
+ * A388201 Decimal expansion of (1/398) * (235 + 17 * sqrt(293)).
  * @author Sean A. Irvine
  */
 public class A388201 extends DecimalExpansionSequence {

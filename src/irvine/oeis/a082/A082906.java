@@ -4,7 +4,7 @@ package irvine.oeis.a082;
 import irvine.oeis.triangle.RowSumSequence;
 
 /**
- * A082906 Sum of terms in n-th row of modified Pascal&apos;s triangle displayed in A082905.
+ * A082906 Sum of terms in n-th row of modified Pascal's triangle displayed in A082905.
  * @author Georg Fischer
  */
 public class A082906 extends RowSumSequence {

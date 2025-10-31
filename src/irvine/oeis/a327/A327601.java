@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A327601 E.g.f.: exp(x) * Product_{k&gt;=1} (1 + (1 - exp(x))^k).
+ * A327601 Expansion of e.g.f. exp(x) * Product_{k&gt;=1} 1/(1 - (1 - exp(x))^k).
  * @author Georg Fischer
  */
 public class A327601 extends LambdaSequence {

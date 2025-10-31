@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A229269 Numbers k for which k - k&apos; is prime, k&apos; being the arithmetic derivative of k.
+ * A229269 Numbers k for which k - k' is prime, k' being the arithmetic derivative of k.
  * @author Georg Fischer
  */
 public class A229269 extends FilterNumberSequence {

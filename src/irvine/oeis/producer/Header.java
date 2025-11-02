@@ -8,45 +8,76 @@ package irvine.oeis.producer;
  */
 public class Header {
 
+  private static final String NSTART_TAG = "nstart=";
   private static final String OFFSET_TAG = "offset=";
+  private static final String SOURCE_TAG = "source=";
   private static final String TYPE_TAG = "type=";
 
   private String mType = null;
   private String mUrl = null;
-  private int mOffset = 0;
+  private int mOffset = 0; // first index of the sequence
+  private int mNStart = 0; // where to start mN
 
   /**
    * Construct a new object capturing information from the header line of a program.
    * @param program program in PARI, Mathematica, etc.
    */
-  Header(final String program) {
+  public Header(final String program) {
     final int endOfline = program.indexOf('\n');
     final String header = endOfline < 0 ? program : program.substring(0, endOfline);
     final String[] parts = header.split("\\s+");
     for (final String p : parts) {
-      if (p.startsWith(OFFSET_TAG)) {
+      if (p.startsWith(NSTART_TAG)) {
+        try {
+          mNStart = Integer.parseInt(p.substring(NSTART_TAG.length()));
+        } catch (final NumberFormatException e) {
+          mNStart = 0;
+        }
+      } else if (p.startsWith(OFFSET_TAG)) {
         try {
           mOffset = Integer.parseInt(p.substring(OFFSET_TAG.length()));
         } catch (final NumberFormatException e) {
           mOffset = 0;
         }
+      } else if (p.startsWith(SOURCE_TAG)) {
+        mUrl = p.substring(SOURCE_TAG.length());
       } else if (p.startsWith(TYPE_TAG)) {
         mType = p.substring(TYPE_TAG.length());
-      } else if (p.startsWith("http")) {
-        mUrl = p;
+      } else {
+        // ignore other tags
       }
     }
   }
 
-  int getOffset() {
+  /**
+   * Get the starting value for the variable <code>n</code>
+   * @return first value
+   */
+  public int getNStart() {
+    return mNStart;
+  }
+
+  /**
+   * Get the first index
+   * @return index of the first term of the sequence
+   */
+  public int getOffset() {
     return mOffset;
   }
 
-  String getType() {
+  /**
+   * Get the type of the program
+   * @return for example: "an", "isok"
+   */
+  public String getType() {
     return mType;
   }
 
-  String getUrl() {
+  /**
+   * Get the URL of the sequence where the program is specified
+   * @return for example "https://oeis.org/A101907"
+   */
+  public String getUrl() {
     return mUrl;
   }
 }

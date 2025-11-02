@@ -14,7 +14,7 @@ public class A390095 extends Sequence1 {
 
   @Override
   public Z next() {
-    Z res = mA.compareTo(CR.PHI) >= 0 ? Z.ONE : Z.ZERO;
+    final Z res = mA.compareTo(CR.PHI) >= 0 ? Z.ONE : Z.ZERO;
     mA = mA.subtract(CR.PHI.multiply(res)).multiply(CR.PHI);
     return res;
   }

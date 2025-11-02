@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.concurrent.TimeUnit;
+import java.util.regex.Pattern;
 
 import irvine.oeis.Sequence;
 import irvine.util.io.IOUtils;
@@ -85,7 +86,10 @@ public class PariProducer implements Producer {
     }
     final String pariProgram;
     try {
-      pariProgram = IOUtils.readAll(path);
+      pariProgram = Pattern.quote(IOUtils.readAll(path));
+      if (mVerbose) {
+        StringUtils.message("Program sent to PARI:\n" + pariProgram);
+      }
     } catch (final IOException e) {
       if (mVerbose) {
         StringUtils.message("Failed to read: " + path);

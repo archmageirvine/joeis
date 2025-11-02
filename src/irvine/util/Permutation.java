@@ -333,6 +333,24 @@ public class Permutation {
   }
 
   /**
+   * Compute the longest decreasing subsequence in a permutation.
+   * @param p permutation
+   * @return longest decreasing subsequence
+   */
+  public static int longestDecreasingSubsequence(final int[] p) {
+    final int[] lds = new int[p.length];
+    Arrays.fill(lds, 1);
+    for (int k = 1; k < p.length; ++k) {
+      for (int j = 0; j < k; ++j) {
+        if (p[j] > p[k]) {
+          lds[k] = Math.max(lds[k], lds[j] + 1);
+        }
+      }
+    }
+    return Functions.MAX.i(lds);
+  }
+
+  /**
    * Compute the number of ascents in a permutation.
    * @param p permutation
    * @return descents

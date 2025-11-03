@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A178556 Primes with exactly seven 7&apos;s.
+ * A178556 Primes with exactly seven 7's.
  * @author Georg Fischer
  */
 public class A178556 extends FilterSequence {

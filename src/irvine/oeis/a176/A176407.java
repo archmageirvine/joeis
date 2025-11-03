@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A176407 Omit all 1&apos;s and 2&apos;s from n.
+ * A176407 Omit all 1's and 2's from n.
  * @author Georg Fischer
  */
 public class A176407 extends LambdaSequence {

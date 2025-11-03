@@ -7,7 +7,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A100594 Decimal expansion of Pi^(2*n)/Zeta(2*n).
+ * A100594 Floor of Pi^(2*n)/Zeta(2*n).
  * @author Georg Fischer
  */
 public class A100594 extends LambdaSequence {

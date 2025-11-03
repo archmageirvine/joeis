@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A178552 Primes with exactly three 3&apos;s.
+ * A178552 Primes with exactly three 3's.
  * @author Georg Fischer
  */
 public class A178552 extends FilterSequence {

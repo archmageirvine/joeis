@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A178554 Primes with exactly five 5&apos;s.
+ * A178554 Primes with exactly five 5's.
  * @author Georg Fischer
  */
 public class A178554 extends FilterSequence {

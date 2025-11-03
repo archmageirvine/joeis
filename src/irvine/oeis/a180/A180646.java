@@ -6,7 +6,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A180646 Numbers k such that 3 + phi(k)^3 is prime, where phi is Euler&apos;s totient function.
+ * A180646 Numbers k such that 3 + phi(k)^3 is prime, where phi is Euler's totient function.
  * @author Georg Fischer
  */
 public class A180646 extends FilterNumberSequence {

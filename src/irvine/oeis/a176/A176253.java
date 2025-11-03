@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A176253 Indices n corresponding to Fibonacci numbers Fib(n) whose decimal expansion does not contain the digit &quot;5&quot;.
+ * A176253 Indices n corresponding to Fibonacci numbers Fib(n) whose decimal expansion does not contain the digit "5".
  * @author Georg Fischer
  */
 public class A176253 extends FilterPositionSequence {

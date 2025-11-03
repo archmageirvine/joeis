@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A178551 Primes with exactly two 2&apos;s.
+ * A178551 Primes with exactly two 2's.
  * @author Georg Fischer
  */
 public class A178551 extends FilterSequence {

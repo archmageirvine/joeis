@@ -6,7 +6,7 @@ import irvine.oeis.a377.A377560;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A390077 Decimal expansion of the negated value of psi&apos;&apos;(1/6).
+ * A390077 Decimal expansion of the negated value of psi''(1/6).
  * Formula:
  * @author Georg Fischer
  */

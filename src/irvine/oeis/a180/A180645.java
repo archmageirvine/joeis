@@ -6,7 +6,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A180645 Numbers n such that 5+phi(n)^2 is prime. Phi(n) is Euler&apos;s totient.
+ * A180645 Numbers n such that 5+phi(n)^2 is prime. Phi(n) is Euler's totient.
  * @author Georg Fischer
  */
 public class A180645 extends FilterNumberSequence {

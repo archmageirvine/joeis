@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A178553 Primes with exactly four 4&apos;s.
+ * A178553 Primes with exactly four 4's.
  * @author Georg Fischer
  */
 public class A178553 extends FilterSequence {

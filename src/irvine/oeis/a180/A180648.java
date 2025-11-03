@@ -6,7 +6,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A180648 Numbers k such that 1 + phi(k)^4 is a prime. Phi is Euler&apos;s totient function.
+ * A180648 Numbers k such that 1 + phi(k)^4 is a prime. Phi is Euler's totient function.
  * @author Georg Fischer
  */
 public class A180648 extends FilterNumberSequence {

@@ -6,7 +6,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A180647 Numbers n such that 5 + phi(n)^3 is prime. Phi is Euler&apos;s totient function.
+ * A180647 Numbers n such that 5 + phi(n)^3 is prime. Phi is Euler's totient function.
  * @author Georg Fischer
  */
 public class A180647 extends FilterNumberSequence {

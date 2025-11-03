@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A178555 Primes with exactly six 6&apos;s.
+ * A178555 Primes with exactly six 6's.
  * @author Georg Fischer
  */
 public class A178555 extends FilterSequence {

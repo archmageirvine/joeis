@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A309946 Decimal expansion of Pi^n/Zeta(n).
+ * A309946 a(n) = floor(Pi^n/Zeta(n)).
  * @author Georg Fischer
  */
 public class A309946 extends LambdaSequence {

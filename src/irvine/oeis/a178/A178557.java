@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A178557 Primes with exactly eight 8&apos;s.
+ * A178557 Primes with exactly eight 8's.
  * @author Georg Fischer
  */
 public class A178557 extends FilterSequence {

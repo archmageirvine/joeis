@@ -4,7 +4,7 @@ package irvine.oeis.a180;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A180739 Number of numerical semigroups of multiplicity n and genus n+2.
+ * A180739 Diagonal of array arising in computing the number of numerical semigroups using generating functions.
  * @author Georg Fischer
  */
 public class A180739 extends HolonomicRecurrence {

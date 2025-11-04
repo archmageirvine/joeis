@@ -4,7 +4,7 @@ package irvine.oeis.a215;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A215342 Expansion of series reversion of x*(1-x^3*sum(k&gt;=1, x^k)).
+ * A215342 Expansion of series reversion of x*(1 - x^3*Sum_{k&gt;=1} x^k).
  * @author Georg Fischer
  */
 public class A215342 extends HolonomicRecurrence {

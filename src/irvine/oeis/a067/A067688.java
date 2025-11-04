@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A067688 Composite n such that for some integer r, n equals the sum of the r-th powers of the prime factors of n (counted with multiplicity).
+ * A067688 Composite numbers that are equal to the sum of the r-th powers of its prime factors (counted with multiplicity) for some integer r.
  * @author Sean A. Irvine
  */
 public class A067688 extends A002808 {

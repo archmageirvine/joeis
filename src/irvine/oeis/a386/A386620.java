@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A386620 allocated for Giorgos Kalogeropoulos.
+ * A386620 a(n) is the smallest integer k &gt; 2*n such that Product_{i=1..n} (k - i) has no prime factor p in n &lt; p &lt; 2*n.
  * @author Sean A. Irvine
  */
 public class A386620 extends Sequence1 {

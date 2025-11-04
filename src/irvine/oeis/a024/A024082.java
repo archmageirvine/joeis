@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001015;
 
 /**
- * A024082 7^n-n^7.
+ * A024082 a(n) = 7^n - n^7.
  * @author Sean A. Irvine
  */
 public class A024082 extends A001015 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A386601 allocated for Tamas Sandor Nagy.
+ * A386601 Primes that change into other primes of the same length at each of the four possible stages when all of their digits simultaneously shift along the ...8-9-0-1-2-3-4-5-6-7-8-9-0-1-2-3... cycle. No leading zeros and so no differing lengths of the changing primes are allowed.
  * @author Sean A. Irvine
  */
 public class A386601 extends A000040 {

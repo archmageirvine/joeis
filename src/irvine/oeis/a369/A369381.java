@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A369381 Triangle of numbers read by rows T(n,k) = binomial(n+1,k+1)*Stirling2(n+k,k).
+ * A369381 Triangle read by rows: T(n,k) = binomial(n+1,k+1)*Stirling2(n+k,k).
  * @author Georg Fischer
  */
 public class A369381 extends LambdaTriangle {

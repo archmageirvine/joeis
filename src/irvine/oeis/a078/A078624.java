@@ -4,7 +4,7 @@ package irvine.oeis.a078;
 import irvine.oeis.a114.A114350;
 
 /**
- * A078624 Primes of the form 7x^3 + 5x^2 + 3x + 2.
+ * A078624 Primes of the form 7*x^3 + 5*x^2 + 3*x + 2.
  * @author Georg Fischer
  */
 public class A078624 extends A114350 {

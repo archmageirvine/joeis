@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064776 a(n) is smallest number &gt;= a(n-1) such that a(n) plus any set of the previous values of the sequence is a nonsquare.
+ * A064776 a(n) is smallest number &gt;= a(n-1) such that a(n) plus any set of the previous values of the sequence is a nonsquare; starting with a(1) = 2.
  * @author Sean A. Irvine
  */
 public class A064776 extends Sequence1 {

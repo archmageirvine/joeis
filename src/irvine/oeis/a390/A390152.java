@@ -14,7 +14,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A390152 allocated for Ruediger Jehn.
+ * A390152 Numerator of average duration of the game "Tug of Luck" played with n coins.
  * @author Sean A. Irvine
  */
 public class A390152 extends Sequence1 {

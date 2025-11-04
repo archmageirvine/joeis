@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A389886 allocated for Julian Allagan.
+ * A389886 Number of proper 3-partitions of the vertices of the fan graph on n vertices such that every triangle uses exactly 2 colors.
  * @author Sean A. Irvine
  */
 public class A389886 extends Sequence3 {

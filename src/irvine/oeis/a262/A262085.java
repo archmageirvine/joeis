@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A262085 Numbers n such that phi(n + 8) = phi(n) + 8 where phi(n) = A000010(n) is Euler&apos;s totient function.
+ * A262085 Numbers n such that phi(n + 8) = phi(n) + 8 where phi(n) = A000010(n) is Euler's totient function.
  * @author Georg Fischer
  */
 public class A262085 extends FilterNumberSequence {

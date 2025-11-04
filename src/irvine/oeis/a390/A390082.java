@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a389.A389803;
 
 /**
- * A390082 allocated for Hu Junhua.
+ * A390082 The number of irreducible zero-sum subsets of {-n..n} that contain -n but not n.
  * @author Sean A. Irvine
  */
 public class A390082 extends A389803 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A153425 Numbers n such that n = p*phi(p) where p is product of the digits of n.
+ * A153425 Numbers k such that k = p*phi(p) where p is the product of digits of k.
  * @author Sean A. Irvine
  */
 public class A153425 extends Sequence1 {

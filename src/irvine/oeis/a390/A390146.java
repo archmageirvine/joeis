@@ -5,7 +5,7 @@ import irvine.oeis.a336.A336282;
 import irvine.util.Permutation;
 
 /**
- * A390146 allocated for Manolopoulos Panagiotis.
+ * A390146 Triangle read by rows: T(n,k) = number of heapable permutations of length n whose longest decreasing subsequence has length k.
  * @author Sean A. Irvine
  */
 public class A390146 extends A336282 {

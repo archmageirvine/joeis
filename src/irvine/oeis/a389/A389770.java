@@ -21,7 +21,7 @@ import irvine.oeis.DirectSequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A389770 allocated for Hamidreza Maleki Tirabadi.
+ * A389770 Number of ways to place 3 non-attacking kings in each row and column of an n X n board.
  * @author Sean A. Irvine
  */
 public class A389770 extends AbstractSequence implements DirectSequence {

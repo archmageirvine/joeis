@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389116 allocated for Ali Sada.
+ * A389116 a(1) = 1; for n &gt; 1, a(n) is the least number not already in the sequence that is a multiple of the smallest nonzero digit of a(n-1).
  * @author Sean A. Irvine
  */
 public class A389116 extends Sequence1 {

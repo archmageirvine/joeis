@@ -134,6 +134,15 @@ public final class BumperFactory {
   }
 
   /**
+   * Strictly decreasing bumper.
+   * @param min minimum element value
+   * @return bumper
+   */
+  public static Bumper decreasing(final int min) {
+    return new DecreasingBumper(min);
+  }
+
+  /**
    * Strictly increasing patterns.
    * @return bumper
    */

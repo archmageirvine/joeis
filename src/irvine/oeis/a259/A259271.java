@@ -4,7 +4,7 @@ package irvine.oeis.a259;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A259271 G.f. A(x) satisfies: A&apos;(x) = 2 * Series_Reversion( x - A(x)*A&apos;(x) ).
+ * A259271 G.f. A(x) satisfies: A'(x) = 2 * Series_Reversion( x - A(x)*A'(x) ).
  * @author Georg Fischer
  */
 public class A259271 extends PolynomialFieldSequence {

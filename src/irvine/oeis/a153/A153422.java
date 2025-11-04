@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A153422 Primes of the form n^2+15n+13.
+ * A153422 Primes of the form k^2 + 15*k + 13.
  * @author Georg Fischer
  */
 public class A153422 extends PrimeSubsequence {

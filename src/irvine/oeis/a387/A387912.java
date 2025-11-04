@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387912 allocated for Dimana Pramatarova.
+ * A387912 Triangle read by rows: T(n,k) is the number of 3-dimensional balanced ballot paths of 3n steps such that the height is exactly k, 2 &lt;= k &lt;= 2*n.
  * @author Sean A. Irvine
  */
 public class A387912 extends Sequence1 {

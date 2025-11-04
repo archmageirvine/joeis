@@ -4,7 +4,7 @@ import irvine.oeis.a168.A168265;
 import irvine.oeis.a388.A388853;
 
 /**
- * A389587 allocated for Clark Kimberling.
+ * A389587 Increasing partition array based on the fractions A168265(n)/A389810(n); see Comments.
  * @author Sean A. Irvine
  */
 public class A389587 extends A388853 {

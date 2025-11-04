@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A048880 Primes of form pq+2 where p and q are consecutive primes.
+ * A048880 Primes of the form p*q+2 where p and q are consecutive primes.
  * @author Sean A. Irvine
  */
 public class A048880 extends A000040 {

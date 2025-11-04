@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A070325 Numbers n such that n+1, n^2+1 and n^4+1 are primes.
+ * A070325 Numbers k such that k+1, k^2+1 and k^4+1 are primes.
  * @author Georg Fischer
  */
 public class A070325 extends FilterNumberSequence {

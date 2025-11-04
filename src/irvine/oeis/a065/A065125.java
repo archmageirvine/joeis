@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000396;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A065125 Numbers n such that the sums of the odd and even aliquot parts of n both divide n.
+ * A065125 Numbers k such that the sums of the odd and even aliquot parts of k both divide k.
  * @author Sean A. Irvine
  */
 public class A065125 extends PrependSequence {

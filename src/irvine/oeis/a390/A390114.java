@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a071.A071562;
 
 /**
- * A390114 allocated for Omar E. Pol.
+ * A390114 a(n) is the index where n appears for first time in the list of first differences of the numbers with middle divisors.
  * @author Sean A. Irvine
  */
 public class A390114 extends Sequence1 {

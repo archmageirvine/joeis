@@ -5,7 +5,7 @@ import irvine.oeis.InverseSequence;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A386603 allocated for Felix Huber.
+ * A386603 Smallest prime p for which there are exactly n smaller primes q such that p - q is a perfect square.
  * @author Sean A. Irvine
  */
 public class A386603 extends SimpleTransformSequence {

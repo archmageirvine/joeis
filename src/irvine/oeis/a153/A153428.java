@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A153428 Numbers n such that phi(n) = p^3, where p is product of digits of n.
+ * A153428 Numbers k such that phi(k) = p^3, where p is product of digits of k.
  * @author Georg Fischer
  */
 public class A153428 extends FilterNumberSequence {

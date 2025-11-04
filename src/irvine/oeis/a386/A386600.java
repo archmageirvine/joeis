@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A386600 allocated for Felix Huber.
+ * A386600 a(n) is the number of primes q &lt; p = prime(n) such that p - q is a perfect square.
  * @author Sean A. Irvine
  */
 public class A386600 extends A000040 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389221 allocated for Kenneth J Scheller.
+ * A389221 Numbers k with exactly four coincident values among the fractions (2*k mod m)/m for 1 &lt;= m &lt;= k.
  * @author Sean A. Irvine
  */
 public class A389221 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a239;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A239065 n^3*(n^4 + n^2 - 1).
+ * A239065 a(n) = n^3*(n^4 + n^2 - 1).
  * @author Georg Fischer
  */
 public class A239065 extends GeneratingFunctionSequence {

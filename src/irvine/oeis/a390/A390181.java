@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390181 allocated for Husnain Raza.
+ * A390181 Numbers not able to be represented in the form c*p^2+b for p prime, c &gt;= 1 and 0 &lt;= b &lt; p.
  * @author Sean A. Irvine
  */
 public class A390181 extends Sequence1 {

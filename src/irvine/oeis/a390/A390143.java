@@ -7,7 +7,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A390143 allocated for Paolo Xausa.
+ * A390143 Decimal expansion of the smallest dihedral angle, in radians, in a snub disphenoid (Johnson solid J_84).
  * @author Sean A. Irvine
  */
 public class A390143 extends DecimalExpansionSequence {

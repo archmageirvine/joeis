@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065758 Numbers n divided by n - phi(n) in approximately the golden ratio, i.e., n such that for some r, n is an r-digit minimizer of abs(k / (k - EulerPhi(k)) - (golden ratio phi)).
+ * A065758 Numbers m that minimize | k /(k- EulerPhi(k)) - golden ratio phi | when k runs over all the numbers with the same number of digits as m.
  * @author Sean A. Irvine
  */
 public class A065758 extends Sequence1 {

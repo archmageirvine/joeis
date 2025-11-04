@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389606 allocated for Ryan Z. Liu.
+ * A389606 Triangle T(n,k) read by rows where T(n,k) = (n+1)*(1+(-1)^x)/2 - k*(-1)^x where x = (n-1)/2 - |k-(n+1)/2|.
  * @author Sean A. Irvine
  */
 public class A389606 extends Sequence1 {

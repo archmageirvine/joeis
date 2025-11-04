@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A262086 Numbers k such that phi(k + 10) = phi(k) + 10, where phi(k) = A000010(k) is Euler&apos;s totient function.
+ * A262086 Numbers k such that phi(k + 10) = phi(k) + 10, where phi(k) = A000010(k) is Euler's totient function.
  * @author Georg Fischer
  */
 public class A262086 extends FilterNumberSequence {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Point;
 
 /**
- * A390012 allocated for Giedrius Alkauskas.
+ * A390012 a(n) is the largest possible smallest nonsquare missed by a union of n squarefree arithmetic progressions.
  * @author Sean A. Irvine
  */
 public class A390012 extends Sequence1 {

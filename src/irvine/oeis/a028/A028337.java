@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A028337 Palindromes of the form n(n+1).
+ * A028337 Palindromes of the form k*(k + 1).
  * @author Sean A. Irvine
  */
 public class A028337 extends Sequence1 {

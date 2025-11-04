@@ -98,22 +98,29 @@ public class A237270 extends Sequence1 {
     return segments;
   }
 
-  private void compute(final int n) {
+  /**
+   * Compute the symmetric representation of sigma.
+   * @param n value
+   * @return list of parts
+   */
+  public static ArrayList<Z> symmetricRepresentationSigma(final int n) {
+    final ArrayList<Z> res = new ArrayList<>();
     for (final List<Long> seg : segments(n)) {
       long sum = 0;
       for (final long v : seg) {
         sum += v;
       }
       if (sum != 0) {
-        mA.add(Z.valueOf(sum));
+        res.add(Z.valueOf(sum));
       }
     }
+    return res;
   }
 
   @Override
   public Z next() {
     if (mA.isEmpty()) {
-      compute(++mN);
+      mA.addAll(symmetricRepresentationSigma(++mN));
     }
     return mA.pollFirst();
   }

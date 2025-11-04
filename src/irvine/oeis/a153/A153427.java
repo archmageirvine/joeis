@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A153427 Numbers n such that phi(n)=p^2, where p is product of digits of n.
+ * A153427 Numbers k such that phi(k)=p^2, where p is product of digits of k.
  * @author Georg Fischer
  */
 public class A153427 extends FilterNumberSequence {

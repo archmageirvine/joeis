@@ -5,7 +5,7 @@ package irvine.oeis.a057;
 import irvine.oeis.a015.A015889;
 
 /**
- * A057842 Numbers n such that n | 6^n + 4^n + 2^n + 1.
+ * A057842 Numbers k such that k | 6^k + 4^k + 2^k + 1.
  *
  * @author Georg Fischer
  */

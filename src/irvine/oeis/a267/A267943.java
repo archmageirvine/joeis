@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002235;
 import irvine.oeis.a050.A050414;
 
 /**
- * A267943 Numbers n such that 2^n - 3 and 3*2^n - 1 are both prime.
+ * A267943 Numbers k such that 2^k - 3 and 3*2^k - 1 are both prime.
  * @author Georg Fischer
  */
 public class A267943 extends IntersectionSequence {

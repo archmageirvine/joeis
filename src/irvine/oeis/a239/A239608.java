@@ -6,7 +6,7 @@ package irvine.oeis.a239;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A239608 Sin( arcsin(n)- 2*arccos(n) )^2.
+ * A239608 a(n) = sin( arcsin(n)- 2*arccos(n) )^2.
  * @author Georg Fischer
  */
 public class A239608 extends HolonomicRecurrence {

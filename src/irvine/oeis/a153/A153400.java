@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A153400 Numbers n such that 18*n+1 is not prime.
+ * A153400 Numbers k such that 18*k+1 is not prime.
  * @author Georg Fischer
  */
 public class A153400 extends FilterNumberSequence {

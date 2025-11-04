@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A390279 Triangle read by rows: T(n, k) = Sum_{d | gcd(n, k)} d*M√∂bius(n/d).
+ * A390279 Triangle read by rows: T(n, k) = Sum_{d | gcd(n, k)} d*M\u00f6bius(n/d).
  * @author Georg Fischer
  */
 public class A390279 extends LambdaTriangle {

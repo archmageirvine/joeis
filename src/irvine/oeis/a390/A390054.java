@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390054 allocated for Ali Sada.
+ * A390054 a(1) = 1; for n &gt; 1, a(n) is the least number not already in the sequence that is a multiple of the largest digit of a(n-1).
  * @author Sean A. Irvine
  */
 public class A390054 extends Sequence1 {

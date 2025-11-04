@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001511;
 import irvine.oeis.a051.A051903;
 
 /**
- * A386260 Maximum exponent in the prime factorization of the exponent of the highest power of 2 dividing 2*n.
+ * A386260 Maximum exponent in the prime factorization of the exponent of the highest power of 2 dividing 4*n.
  * @author Georg Fischer
  */
 public class A386260 extends LambdaSequence {

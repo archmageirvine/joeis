@@ -6,7 +6,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A225054 Triangle read by rows: Eulerian numbers T(n,k) = A008292(n,k) reduced mod n+1.
+ * A225054 Triangle read by rows: Eulerian numbers T(n, k) = A173018(n + 1, k) reduced mod n + 1.
  * @author Georg Fischer
  */
 public class A225054 extends LambdaTriangle {

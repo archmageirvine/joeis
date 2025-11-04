@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A033997 Numbers n such that sum of first n primes is a square.
+ * A033997 Numbers k such that the sum of the first k primes is a square.
  * @author Sean A. Irvine
  */
 public class A033997 extends A000040 {

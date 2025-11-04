@@ -4,7 +4,7 @@ import irvine.oeis.a336.A336282;
 import irvine.util.Permutation;
 
 /**
- * A389301 allocated for Manolopoulos Panagiotis.
+ * A389301 Total number of consecutive pairs across all heapable permutations of length n.
  * @author Sean A. Irvine
  */
 public class A389301 extends A336282 {

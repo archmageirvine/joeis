@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A153423 Primes of the form n^2+9n+241.
+ * A153423 Primes of the form k^2 + 9*k + 241.
  * @author Georg Fischer
  */
 public class A153423 extends PrimeSubsequence {

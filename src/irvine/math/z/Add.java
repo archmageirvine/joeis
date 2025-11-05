@@ -2,7 +2,6 @@ package irvine.math.z;
 
 /**
  * Addition.
- *
  * @author Sean A. Irvine
  */
 final class Add {
@@ -48,7 +47,6 @@ final class Add {
 
   /**
    * Return the sum of this integer and <code>n</code>.
-   *
    * @param a addend
    * @param b addend
    * @return <code>a+b</code>
@@ -123,5 +121,4 @@ final class Add {
       }
     }
   }
-
 }

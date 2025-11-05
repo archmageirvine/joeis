@@ -1,0 +1,30 @@
+package irvine.oeis.a081;
+
+import irvine.math.function.Functions;
+import irvine.math.z.Binomial;
+import irvine.math.z.Integers;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
+
+/**
+ * A081572 Square array of binomial transforms of Fibonacci numbers, read by ascending antidiagonals.
+ * @author Sean A. Irvine
+ */
+public class A081572 extends Sequence1 {
+
+  private int mN = 0;
+  private int mM = -1;
+
+  private Z t(final int n, final int m) {
+    return Integers.SINGLETON.sum(0, m, k -> Binomial.binomial(m, k).multiply(Z.valueOf(n - m).pow(m - k)).multiply(Functions.FIBONACCI.z(k + 1)));
+  }
+
+  @Override
+  public Z next() {
+    if (++mM > mN) {
+      ++mN;
+      mM = 0;
+    }
+    return t(mN, mM);
+  }
+}

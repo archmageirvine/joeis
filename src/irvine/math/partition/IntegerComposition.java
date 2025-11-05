@@ -33,9 +33,7 @@ public final class IntegerComposition {
   }
 
   /**
-   * Return the next integer composition or null of all compositions have been
-   * produced.
-   *
+   * Return the next integer composition or null of all compositions have been produced.
    * @return integer compositions
    */
   public int[] next() {

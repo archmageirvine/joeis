@@ -7,6 +7,7 @@ import java.util.TreeMap;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicArray;
 import irvine.util.array.DynamicLongArray;
@@ -15,7 +16,7 @@ import irvine.util.array.DynamicLongArray;
  * A038547 Least number with exactly n odd divisors.
  * @author Sean A. Irvine
  */
-public class A038547 extends Sequence1 {
+public class A038547 extends Sequence1 implements DirectSequence {
 
   private final Fast mPrime = new Fast();
   private final DynamicLongArray mPrimes = new DynamicLongArray();
@@ -44,8 +45,17 @@ public class A038547 extends Sequence1 {
 
   @Override
   public Z next() {
-    ++mN;
-    while (mLeast.get(mN) == null) {
+    return a(++mN);
+  }
+
+  @Override
+  public Z a(final Z n) {
+    return a(n.intValueExact());
+  }
+
+  @Override
+  public Z a(final int n) {
+    while (mLeast.get(n) == null) {
       final Map.Entry<Z, int[]> e = mS.pollFirstEntry();
       final Z m = e.getKey();
       final int[] v = e.getValue();
@@ -90,6 +100,6 @@ public class A038547 extends Sequence1 {
         }
       }
     }
-    return mLeast.get(mN);
+    return mLeast.get(n);
   }
 }

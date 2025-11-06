@@ -3,6 +3,8 @@ package irvine.math.z;
 import java.math.BigInteger;
 import java.util.Random;
 
+import irvine.math.r.DoubleUtils;
+
 /**
  * Test timing of big integer implementations.
  * @author Sean A. Irvine
@@ -58,7 +60,7 @@ public final class Timing {
       if (timeBigInteger[1] != timeZ[1]) {
         System.out.println("Calculation mismatch: " + timeBigInteger[1] + " cf. " + timeZ[1]);
       }
-      System.out.println(k + " " + timeBigInteger[0] + " " + timeZ[0]);
+      System.out.println(k + " BigInteger=" + timeBigInteger[0] + " Z=" + timeZ[0] + " r=" + DoubleUtils.NF3.format((double) timeBigInteger[0] / (double) timeZ[0]));
     }
   }
 
@@ -77,6 +79,8 @@ public final class Timing {
    * @param args ignored
    */
   public static void main(final String... args) {
-    timeTest(BigInteger::add, Z::add);
+    //timeTest(BigInteger::add, Z::add);
+    timeTest(BigInteger::multiply, Z::multiply);
+    //timeTest(BigInteger::mod, Z::mod);
   }
 }

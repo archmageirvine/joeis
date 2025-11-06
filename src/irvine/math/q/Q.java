@@ -479,6 +479,15 @@ public class Q implements Comparable<Q>, IsInteger, Serializable {
   }
 
   /**
+   * Return the square root of this rational.
+   * This is only sensible if the numerator and denominators are squares.
+   * @return square root
+   */
+  public Q sqrt() {
+    return new Q(num().sqrt(), den().sqrt());
+  }
+
+  /**
    * Return the maximum of two rationals.
    * @param other other number
    * @return maximum

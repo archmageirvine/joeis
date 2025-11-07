@@ -2,7 +2,6 @@ package irvine.math.z;
 
 /**
  * Modulo.
- *
  * @author Sean A. Irvine
  */
 final class Mod {

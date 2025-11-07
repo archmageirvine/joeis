@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 /**
  * Multiplication.
- *
  * @author Sean A. Irvine
  */
 final class Mul {
@@ -12,7 +11,7 @@ final class Mul {
   private Mul() { }
 
   /** Number of digits to use Karatsuba multiplication for. */
-  private static final int KAR_MUL = 30;
+  private static final int KAR_MUL = 100;
   /** Depth of Karatsuba multiplication. */
   static final int KAR_DEPTH = 20;
 
@@ -27,29 +26,29 @@ final class Mul {
       final int[] cc = new int[clen];
       if (alen <= blen) {
         for (int i = 0; i < alen; ++i) {
-          final int s = a.mValue[i];
+          final long s = a.mValue[i];
           int k = i;
-          int carry = 0;
+          long carry = 0;
           for (int j = 0; j < blen; ++j, ++k) {
             final int bb = b.mValue[j];
-            final int tt = cc[k] + carry;
-            final int aa = (tt + bb * s) & Z.BASE_MASK;
-            carry = (int) (0.25 + Z.BASE_INV * (((double) (tt - aa)) + (double) bb * (double) s));
-            cc[k] = aa;
+            final long tt = cc[k] + carry;
+            final long aa = tt + bb * s;
+            carry = aa >>> Z.BASE_BITS;
+            cc[k] = (int) (aa & Z.BASE_MASK);
           }
           cc[k] += carry;
         }
       } else {
         for (int i = 0; i < blen; ++i) {
-          final int s = b.mValue[i];
+          final long s = b.mValue[i];
           int k = i;
-          int carry = 0;
+          long carry = 0;
           for (int j = 0; j < alen; ++j, ++k) {
             final int bb = a.mValue[j];
-            final int tt = cc[k] + carry;
-            final int aa = (tt + bb * s) & Z.BASE_MASK;
-            carry = (int) (0.25 + Z.BASE_INV * (((double) (tt - aa)) + (double) bb * (double) s));
-            cc[k] = aa;
+            final long tt = cc[k] + carry;
+            final long aa = tt + bb * s;
+            carry = aa >>> Z.BASE_BITS;
+            cc[k] = (int) (aa & Z.BASE_MASK);
           }
           cc[k] += carry;
         }
@@ -189,15 +188,15 @@ final class Mul {
     }
 
     final int[] av = Arrays.copyOf(a.mValue, size + 1);
-    final int s = (int) b - 1; // safe since b < BASE
-    int carry = 0;
+    final long s = b - 1; // safe since b < BASE
+    long carry = 0;
     int i;
     for (i = 0; i < size; ++i) {
       final int bb = av[i];
-      final int tt = bb + carry;
-      final int aa = (tt + bb * s) & Z.BASE_MASK;
-      carry = (int) (0.25 + Z.BASE_INV * ((double) (tt - aa) + (double) bb * (double) s));
-      av[i] = aa;
+      final long tt = bb + carry;
+      final long aa = tt + bb * s;
+      carry = aa >>> Z.BASE_BITS;
+      av[i] = (int) (aa & Z.BASE_MASK);
     }
     av[i] += carry;
 

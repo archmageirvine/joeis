@@ -7,13 +7,11 @@ import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
- *
  * @author Sean A. Irvine
  */
 public class MulTest extends TestCase {
 
   private static final Random RANDOM = new Random();
-
 
   public void testMultiplyLong() {
     final Z z = Z.valueOf(4L);

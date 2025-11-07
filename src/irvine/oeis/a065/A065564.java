@@ -14,7 +14,11 @@ public class A065564 extends Sequence1 {
   private long mN = 0;
   private Q mQ;
 
-  protected A065564(final Q constant) {
+  /**
+   * Construct this sequence for a particular constant.
+   * @param constant the constant
+   */
+  public A065564(final Q constant) {
     mC = constant;
     mQ = constant;
   }

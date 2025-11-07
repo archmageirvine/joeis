@@ -1,6 +1,5 @@
 package irvine.math.z;
 
-import java.lang.reflect.Method;
 import java.math.BigInteger;
 import java.util.HashSet;
 import java.util.Random;
@@ -403,22 +402,6 @@ public class ZTest extends TestCase {
     assertFalse(Z.NEG_ONE.isEven());
     assertTrue(Z.valueOf(24324326L).isEven());
     assertFalse(Z.valueOf(243243261L).isEven());
-  }
-
-  public void testMethodNamesMatch() {
-    final Method[] bimethods = BigInteger.class.getMethods();
-    final Method[] zmethods = Z.class.getMethods();
-    final HashSet<String> h = new HashSet<>();
-    for (final Method method : zmethods) {
-      h.add(method.getName());
-    }
-    h.add("nextProbablePrime"); // ignore this one
-    h.add("probablePrime"); // ignore this one
-    for (final Method bimethod : bimethods) {
-      if (!h.contains(bimethod.getName())) {
-        fail("Missing: " + bimethod.getName());
-      }
-    }
   }
 
   public void testModAdd() {

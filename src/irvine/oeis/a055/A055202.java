@@ -10,7 +10,7 @@ import irvine.oeis.a016.A016067;
 public class A055202 extends A016067 {
 
   private long mRecord = 0;
-  private long mN = 1;
+  private long mN = -1;
 
   @Override
   public Z next() {

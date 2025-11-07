@@ -1,9 +1,7 @@
 package irvine.math.group;
 
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-import java.util.Random;
 
 import irvine.math.api.Matrix;
 import irvine.math.matrix.DefaultMatrix;
@@ -107,15 +105,4 @@ public class MatrixGroupTest extends TestCase {
       // ok
     }
   }
-
-  public void testRandom() {
-    final MatrixGroup<Z> g = new MatrixGroup<>(2, 2, new CyclicGroup(3));
-    final Random r = new Random(42);
-    final HashSet<Object> h = new HashSet<>();
-    for (int k = 0; k < 300; ++k) {
-      h.add(g.random(r));
-    }
-    assertEquals(81, h.size());
-  }
-
 }

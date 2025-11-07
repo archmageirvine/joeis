@@ -21,7 +21,7 @@ public class ConvertTest extends TestCase {
     for (long i = 1123L; i > 0; i <<= 1) {
       assertEquals(BigInteger.valueOf(i), Convert.valueOf(i).bigIntegerValue());
     }
-    assertEquals(3, Convert.valueOf(5).mValue.length);
+    assertEquals(1, Convert.valueOf(5).mValue.length);
   }
 
   public void testValueOfBigInteger() {

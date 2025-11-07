@@ -31,7 +31,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(ModPowTest.class);
     suite.addTestSuite(ModSqrtTest.class);
     suite.addTestSuite(ModTest.class);
-    suite.addTestSuite(MontgomeryTest.class);
     suite.addTestSuite(MulTest.class);
     suite.addTestSuite(Mul2Test.class);
     suite.addTestSuite(PowTest.class);

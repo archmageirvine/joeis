@@ -23,13 +23,13 @@ final class Sqr {
         i += 2;
         final int qs = a.mValue[j];
         int qa = i;
-        int qc = 0;
+        long qc = 0;
         for (int qi = alen - j, qb = j; qi > 1; --qi) {
-          final int pat = c[qa] + qc;
+          final long pat = c[qa] + qc;
           final int aqv = a.mValue[++qb];
-          final int paa = (pat + aqv * qs) & Z.BASE_MASK;
-          qc = (int) (0.25 + Z.BASE_INV * ((double) (pat - paa) + (double) aqv * (double) qs));
-          c[qa++] = paa;
+          final long paa = pat + (long) aqv * qs;
+          qc = paa >>> Z.BASE_BITS;
+          c[qa++] = (int) (paa & Z.BASE_MASK);
         }
         c[qa] += qc;
 
@@ -37,12 +37,11 @@ final class Sqr {
         c[i - 1] = u & Z.BASE_MASK;
         u >>>= Z.BASE_BITS;
         u += c[i] << 1;
-        final int p = a.mValue[j];
+        final long p = a.mValue[j];
         final int at = c[i - 1];
-        final int aa = (at + p * p) & Z.BASE_MASK;
-        final double dp = (double) p;
-        carry = (int) (0.25 + Z.BASE_INV * ((double) (at - aa) + dp * dp));
-        c[i - 1] = aa;
+        final long aa = at + p * p;
+        carry = (int) (aa >>> Z.BASE_BITS);
+        c[i - 1] = (int) (aa & Z.BASE_MASK);
         u += carry;
         carry = u >>> Z.BASE_BITS;
         c[i] = u & Z.BASE_MASK;
@@ -72,7 +71,7 @@ final class Sqr {
     a.mSign = alen;
     final Z c = karSqr(aTopHalf, shi + 1);
     final Z a0 = Sub.sub(Sub.sub(a2, a1), c).shiftLeft((long) hlen * Z.BASE_BITS);
-    final Z cc = c.shiftLeft((long) ((long) hlen << 1) * Z.BASE_BITS);
+    final Z cc = c.shiftLeft(((long) hlen << 1) * Z.BASE_BITS);
     System.arraycopy(a1.mValue, 0, cc.mValue, 0, a1.mSign);
     return cc.add(a0);
   }

@@ -73,16 +73,20 @@ public final class Convert {
     if (n == 0L) {
       return Z.ZERO;
     }
-    final int[] a = new int[1 + 64 / Z.BASE_BITS];
     if (n == Long.MIN_VALUE) {
-      // Very tricky case of a value that cannot be made positive
-      a[a.length - 1] = 1 << (63 % Z.BASE_BITS);
-      return new Z(a, -a.length);
+      // Tricky case of a value that cannot be made positive
+      final int[] s = new int[1 + (Long.SIZE - 1) / Z.BASE_BITS];
+      s[s.length - 1] = 1 << ((Long.SIZE - 1) % Z.BASE_BITS);
+      return new Z(s, -s.length);
     }
     long val = Math.abs(n);
+    if (val < Z.BASE) {
+      return new Z(new int[] {(int) val}, n < 0 ? -1 : 1);
+    }
+    final int[] a = new int[1 + Long.SIZE / Z.BASE_BITS]; // this is suboptimal!
     int i = 0;
     while (val > 0L) {
-      a[i++] = (int) val & Z.BASE_MASK;
+      a[i++] = (int) (val & Z.BASE_MASK);
       val >>>= Z.BASE_BITS;
     }
     return new Z(a, n < 0 ? -i : i);

@@ -1,5 +1,7 @@
 package irvine.math.z;
 
+import java.util.Arrays;
+
 /**
  * Logical operations.
  *
@@ -133,7 +135,7 @@ final class Logical {
     if (sa == 0 || sn == 0) {
       return Z.ZERO;
     }
-    final int[] c = new int[sa > sn ? sa : sn];
+    final int[] c = new int[Math.max(sa, sn)];
     for (int i = 0; i < c.length; ++i) {
       c[i] = getDigit(a, i) & getDigit(n, i);
     }
@@ -161,7 +163,7 @@ final class Logical {
     if (sa == 0) {
       return Z.ZERO;
     }
-    final int[] c = new int[sa > sn ? sa : sn];
+    final int[] c = new int[Math.max(sa, sn)];
     for (int i = 0; i < c.length; ++i) {
       c[i] = getDigit(a, i) & ~getDigit(n, i);
     }
@@ -189,7 +191,7 @@ final class Logical {
     if (sn == 0) {
       return a;
     }
-    final int[] c = new int[sa > sn ? sa : sn];
+    final int[] c = new int[Math.max(sa, sn)];
     for (int i = 0; i < c.length; ++i) {
       c[i] = getDigit(a, i) | getDigit(n, i);
     }
@@ -217,7 +219,7 @@ final class Logical {
     if (sn == 0) {
       return a;
     }
-    final int[] c = new int[sa > sn ? sa : sn];
+    final int[] c = new int[Math.max(sa, sn)];
     for (int i = 0; i < c.length; ++i) {
       c[i] = getDigit(a, i) ^ getDigit(n, i);
     }
@@ -309,8 +311,7 @@ final class Logical {
         r.mValue[digit] |= mask;
         return r;
       }
-      final int[] c = new int[digit + 1];
-      System.arraycopy(n.mValue, 0, c, 0, n.getSize());
+      final int[] c = Arrays.copyOf(n.mValue, digit + 1);
       c[digit] = mask;
       return new Z(c, digit + 1);
     }

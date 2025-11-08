@@ -1,5 +1,7 @@
 package irvine.math.z;
 
+import java.util.Arrays;
+
 /**
  * Modulo.
  * @author Sean A. Irvine
@@ -54,8 +56,7 @@ final class Mod {
         topinv += n.mValue[sn - 3];
       }
       topinv = Div.FUDGE / topinv;
-      final int[] c = new int[sa + 1];
-      System.arraycopy(a.mValue, 0, c, 0, sa);
+      final int[] c = Arrays.copyOf(a.mValue, sa + 1);
       for (int i = sa; i >= sn; --i) {
         double aux = Z.DBASE * (c[i] * Z.DBASE + c[i - 1]); // + 1.0;
         if (i > 1) {
@@ -67,7 +68,7 @@ final class Mod {
             qq = Z.BASE_MASK;
           }
           final int dr = Z.BASE - qq;
-          final double ddr = (double) dr;
+          final double ddr = dr;
           int cc = Z.BASE;
           for (int j = 0, jj = i - sn; jj < i;) {
             final int nv = n.mValue[j++];

@@ -216,17 +216,17 @@ public class DivTest extends TestCase {
     assertEquals(274356870, z.auxiliary());
 
     z = new Z("223465312562490822560");
-    assertEquals(-1453662490, z.divide(976885430L).hashCode());
+    assertEquals(Z.valueOf(228752836002L), z.divide(976885430L));
     assertEquals(957571700L, z.auxiliary());
-    assertEquals(-904221348, z.divide(198766157L).hashCode());
+    assertEquals(Z.valueOf(1124262379145L), z.divide(198766157L));
     assertEquals(162226795L, z.auxiliary());
 
     z = new Z("763210106792267353483183732705366208227978145139630379");
-    assertEquals(-938956756, z.divide(81036346L).hashCode());
+    assertEquals("9418120935416650616048059875569490858188227602", z.divide(81036346L).toString());
     assertEquals(57208087L, z.auxiliary());
 
     z = new Z("3330836469671163716794760377986233290893470180890985561605050568946286691447313087734861508349208973889788370843100430353148521852904533720803410731744820");
-    assertEquals(-1084550785, z.divide(1556212L).hashCode());
+    assertEquals("2140348789028206771824635960901363882872944162421948655841910079697551934728245950895418817197919675397560467881689917795999852110705054144810225555", z.divide(1556212L).toString());
     assertEquals(347160, z.auxiliary());
 
     // random search over <= long size numbers
@@ -316,16 +316,16 @@ public class DivTest extends TestCase {
     assertEquals(expected, Div.divide(a, Z.BASE));
     assertEquals(0, a.auxiliary());
     final Z b = expected.subtract(Z.ONE);
-    assertEquals(new Z("1180591620717411303423"), Div.divide(b, Z.BASE));
+    assertEquals(b.bigIntegerValue().divide(BigInteger.valueOf(Z.BASE)).toString(), Div.divide(b, Z.BASE).toString());
     assertEquals(Z.BASE - 1, b.auxiliary());
     final Z c = expected.add(1);
-    assertEquals(new Z("1180591620717411303424"), Div.divide(c, Z.BASE));
+    assertEquals(c.bigIntegerValue().divide(BigInteger.valueOf(Z.BASE)).toString(), Div.divide(c, Z.BASE).toString());
     assertEquals(1, c.auxiliary());
     final Z d = expected.add(Z.BASE - 1);
-    assertEquals(new Z("1180591620717411303424"), Div.divide(d, Z.BASE));
-    assertEquals(1073741823, d.auxiliary());
+    assertEquals(d.bigIntegerValue().divide(BigInteger.valueOf(Z.BASE)).toString(), Div.divide(d, Z.BASE).toString());
+    assertEquals(Z.BASE - 1, d.auxiliary());
     final Z e = expected.add(Z.BASE);
-    assertEquals(new Z("1180591620717411303425"), Div.divide(e, Z.BASE));
+    assertEquals(e.bigIntegerValue().divide(BigInteger.valueOf(Z.BASE)).toString(), Div.divide(e, Z.BASE).toString());
     assertEquals(0, e.auxiliary());
     final Z f = Z.ONE.shiftLeft(2 * Z.BASE_BITS);
     assertEquals(3, f.getSize());

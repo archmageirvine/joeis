@@ -1,8 +1,9 @@
 package irvine.math.z;
 
+import java.util.Arrays;
+
 /**
  * Squaring.
- *
  * @author Sean A. Irvine
  */
 final class Sqr {
@@ -63,8 +64,7 @@ final class Sqr {
     a.mSign = z + 1;
 
     // final Z aTopHalf = a.shiftRight(hlen * BASE_BITS);
-    final int[] aTop = new int[alen - hlen];
-    System.arraycopy(a.mValue, hlen, aTop, 0, aTop.length);
+    final int[] aTop = Arrays.copyOfRange(a.mValue, hlen, alen);
     final Z aTopHalf = new Z(aTop, aTop.length);
     final Z a1 = karSqr(a, shi + 1);
     final Z a2 = karSqr(a.add(aTopHalf), shi + 1);
@@ -78,7 +78,6 @@ final class Sqr {
 
   /**
    * Return the square of an integer.
-   *
    * @param n number to square
    * @return <code>n^2</code>
    */

@@ -1,5 +1,7 @@
 package irvine.math.z;
 
+import java.util.Arrays;
+
 /**
  * Division.
  * @author Sean A. Irvine
@@ -68,8 +70,7 @@ final class Div {
     final double t = Z.DBASE * (top * Z.DBASE + b.mValue[sb - 2]);
     final double topinv = FUDGE / (sb != 2 ? t + b.mValue[sb - 3] : t);
 
-    final int[] c = new int[sa + 1];
-    System.arraycopy(a.mValue, 0, c, 0, sa);
+    final int[] c = Arrays.copyOf(a.mValue, sa + 1);
     int sq = sa - sb; // size of quotient
     assert sq >= 0;
     final int[] d = new int[sa];

@@ -6,13 +6,12 @@ import irvine.util.array.LongDynamicArray;
 
 /**
  * Generate terms of the Bernoulli sequence.
- *
  * @author Sean A. Irvine
  */
 public class BernoulliSequence implements RationalSequence {
 
   private long mN = -1;
-  private int mOffset;
+  private final int mOffset;
   private final LongDynamicArray<Q> mB = new LongDynamicArray<>();
   {
     mB.set(0, Q.ONE);

@@ -22,7 +22,7 @@ public class A249223 extends A237048 {
       if ((k & 1) == 1) {
         sum += v;
       } else {
-        sum -=v;
+        sum -= v;
       }
     }
     return sum;

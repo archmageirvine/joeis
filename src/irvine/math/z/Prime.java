@@ -108,7 +108,7 @@ final class Prime {
         if (isKnownMersennePrime(exponent)) {
           return true;
         }
-        if (exponent < 23249425) {
+        if (exponent < 77232917) {
           return false;
         }
         // 2^n-1 is never prime for n composite

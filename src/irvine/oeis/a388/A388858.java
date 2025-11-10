@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a390.A390148;
 
 /**
- * A390332 a(n) = Sum_{k=0..n} binomial(5*n+k,n-k).
+ * A388858 Column 2 of table A390148.
  * @author Sean A. Irvine
  */
 public class A388858 extends A390148 {

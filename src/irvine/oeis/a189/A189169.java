@@ -5,7 +5,7 @@ import irvine.oeis.a005.A005563;
 import irvine.oeis.a183.A183299;
 
 /**
- * A189169 Zero-one sequence based on the sequence n(n+2):  a(A005563(k))=a(k); a(A183299(k))=1-a(k), a(1)=0, a(2)=1.
+ * A189169 Zero-one sequence based on the sequence n(n+2):  a(A005563(k))=a(k); a(A183299(k))=1-a(k), a(1)=1, a(2)=0.
  * @author Georg Fischer
  */
 public class A189169 extends A189011 {

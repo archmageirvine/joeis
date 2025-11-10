@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a001.A001951;
 
 /**
- * A325664 First term of n-th difference sequence of (floor[k*r]), r = sqrt(2), k &gt;= 0.
+ * A325664 First term of n-th difference sequence of (floor(k*r)), r = sqrt(2), k &gt;= 0.
  * new A001951()
  * @author Georg Fischer
  */

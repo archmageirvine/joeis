@@ -7,7 +7,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a005.A005117;
 
 /**
- * A389412 Length k of the series {(A005117(n) - 1) + A005117(i)} such that every number (A005117(n) - 1) + A005117(i) is squarefree, for n &gt;= 2 and 1 &lt;= i &lt;= k.
+ * A389412 a(n) is the largest k such that (A005117(n) - 1) + A005117(i) is squarefree for 1 &lt;= i &lt;= k.
  * @author Sean A. Irvine
  */
 public class A389412 extends Sequence2 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390258 allocated for Werner Schulte.
+ * A390258 Multiplicative sequence a(n) with a(p^e) = p^(e-1) * (e + 1) * (p * (2 + e) - e) / 2 for prime p and e &gt; 0.
  * @author Sean A. Irvine
  */
 public class A390258 extends Sequence1 {

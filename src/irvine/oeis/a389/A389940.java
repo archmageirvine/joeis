@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a390.A390148;
 
 /**
- * A389940 allocated for Charles L. Hohn.
+ * A389940 Numbers k for which a sphere of radius k is a member of at least 1 set of 4 spheres of coprime positive integer radii which are tangent to a plane when arranged as mutually tangent to one another.
  * @author Sean A. Irvine
  */
 public class A389940 extends A390148 {

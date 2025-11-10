@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000326;
 import irvine.oeis.a183.A183217;
 
 /**
- * A189014 Zero-one sequence based on pentagonal numbers:  a(A000325(k))=a(k); a(A183217(k))=1-a(k); a(1)=0.
+ * A189014 Zero-one sequence based on pentagonal numbers:  a(A000326(k))=a(k); a(A183217(k))=1-a(k); a(1)=0.
  * @author Georg Fischer
  */
 public class A189014 extends A189011 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A081709 Decimal expansion of lim_{i-&gt;infinity} Product_{j=2..i} gamma(i+zeta(i+1))/gamma(i+zeta(i)).
+ * A081709 Decimal expansion of lim_{i-&gt;infinity} Product_{j=2..i} Gamma(j+zeta(j+1)) / Gamma(j+zeta(j)).
  * @author Sean A. Irvine
  */
 public class A081709 extends DecimalExpansionSequence {

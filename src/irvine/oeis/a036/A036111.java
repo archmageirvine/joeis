@@ -1,7 +1,7 @@
 package irvine.oeis.a036;
 
 /**
- * A036111 A summarize Fibonacci sequence: summarize the previous two terms!.
+ * A036111 A summarize Fibonacci sequence starting with a(0)=2 and a(1)=3: summarize the previous two terms!.
  * @author Sean A. Irvine
  */
 public class A036111 extends A036066 {

@@ -5,7 +5,7 @@ import irvine.oeis.a008.A008908;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A081613 Length of iteration list when Collatz-function is iterated with initial value n!=A000142[n].
+ * A081613 Length of iteration list when Collatz-function is iterated with initial value n!.
  * @author Georg Fischer
  */
 public class A081613 extends DirectTransformSequence {

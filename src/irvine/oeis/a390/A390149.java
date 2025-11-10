@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390149 allocated for Ludovic Schwob.
+ * A390149 Number of rhombus tilings of a triangular shape formed by n*(n+1)/2 adjacent hexagons.
  * @author Sean A. Irvine
  */
 public class A390149 extends Sequence0 {

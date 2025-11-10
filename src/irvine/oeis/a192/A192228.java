@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A192228 Primes of the form (n+1)^6+(n+2)^6+(n+3)^6-666.
+ * A192228 Primes of the form (k+1)^6 + (k+2)^6 + (k+3)^6 - 666.
  * @author Georg Fischer
  */
 public class A192228 extends FilterSequence {

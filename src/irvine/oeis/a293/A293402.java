@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A293402 The integer k that minimizes |k/n^2 - tau|, where tau = (1+sqrt(5))/2 (golden ratio).
+ * A293402 The integer k that minimizes |k/n^2 - phi|, where phi = (1+sqrt(5))/2 (golden ratio).
  * @author Georg Fischer
  */
 public class A293402 extends LambdaSequence {

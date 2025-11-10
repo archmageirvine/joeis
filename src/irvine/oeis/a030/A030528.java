@@ -5,7 +5,7 @@ import irvine.oeis.a019.A019590;
 import irvine.oeis.triangle.PartitionTransformTriangle;
 
 /**
- * A030528 Triangle read by rows: a(n,k) = binomial(k,n-k).
+ * A030528 Triangle read by rows: T(n,k) = binomial(k,n-k).
  * @author Georg Fischer
  */
 public class A030528 extends PartitionTransformTriangle {

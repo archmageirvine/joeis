@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A293321 The integer k that minimizes |k/2^n - tau^2|, where tau = (1+sqrt(5))/2 = golden ratio.
+ * A293321 The integer k that minimizes |k/2^n - phi^2|, where phi = (1+sqrt(5))/2 = golden ratio.
  * @author Georg Fischer
  */
 public class A293321 extends LambdaSequence {

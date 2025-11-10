@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390213 allocated for Juri-Stepan Gerasimov.
+ * A390213 Number of divisors d of n such that d^(n/d) == d (mod (n/d)).
  * @author Sean A. Irvine
  */
 public class A390213 extends Sequence1 {

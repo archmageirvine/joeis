@@ -4,7 +4,7 @@ package irvine.oeis.a242;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A242850 32*n^5 - 32*n^3 + 6*n.
+ * A242850 a(n) = 32*n^5 - 32*n^3 + 6*n.
  * @author Georg Fischer
  */
 public class A242850 extends GeneratingFunctionSequence {

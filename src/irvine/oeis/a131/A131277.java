@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.a128.A128171;
 
 /**
- * A131277 Numbers m such that m divides Sum_{k=1..m} prime(k)^17.
+ * A131277 Numbers m that divide Sum_{k=1..m} prime(k)^17.
  * @author Georg Fischer
  */
 public class A131277 extends A128171 {

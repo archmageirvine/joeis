@@ -4,7 +4,7 @@ package irvine.oeis.a243;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A243132 32*n^6 - 48*n^4 + 18*n^2 - 1.
+ * A243132 a(n) = 32*n^6 - 48*n^4 + 18*n^2 - 1.
  * @author Georg Fischer
  */
 public class A243132 extends GeneratingFunctionSequence {

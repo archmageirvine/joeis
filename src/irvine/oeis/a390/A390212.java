@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A390212 allocated for Jason Bard.
+ * A390212 Decimal expansion of 197/1728 - (3/32) * zeta(3).
  * @author Sean A. Irvine
  */
 public class A390212 extends DecimalExpansionSequence {

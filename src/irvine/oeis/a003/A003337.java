@@ -5,7 +5,7 @@ import irvine.oeis.SumOfLikePowersSequence;
 
 
 /**
- * A003337 Numbers n which are the sum of 3 nonzero 4th powers.
+ * A003337 Numbers which are the sum of 3 nonzero 4th powers.
  * @author Sean A. Irvine
  */
 public class A003337 extends SumOfLikePowersSequence {

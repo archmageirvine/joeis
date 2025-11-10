@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a237.A237270;
 
 /**
- * A389238 allocated for Hartmut F. W. Hoft.
+ * A389238 Odd numbers k whose symmetric representation of sigma, SRS(k), consists of an odd number, &gt;1, of parts and whose center part is the minimum of all parts.
  * @author Sean A. Irvine
  */
 public class A389238 extends Sequence1 {

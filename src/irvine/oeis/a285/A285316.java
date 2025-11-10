@@ -7,7 +7,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a019.A019565;
 
 /**
- * A285316 Numbers n for which A019565(n) &gt; n.
+ * A285316 Numbers k for which A019565(k) &gt; k.
  * @author Georg Fischer
  */
 public class A285316 extends FilterNumberSequence {

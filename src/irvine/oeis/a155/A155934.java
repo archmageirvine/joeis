@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A155934 The sequence {k(m)} defined in A005991.
+ * A155934 a(n) denotes the least integer such that every n X n {0,1}-matrix with exactly a(n) ones in each row and in each column contains a 2 X 2 submatrix without zeros. (This sequence is referred to as k(m) in A003509 and A005991.).
  * @author Sean A. Irvine
  */
 public class A155934 extends AbstractSequence {

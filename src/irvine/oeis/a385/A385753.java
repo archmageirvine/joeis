@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A385753 allocated for Chittaranjan Pardeshi.
+ * A385753 Integer part of the greedy base sqrt(Pi) representation of n.
  * @author Sean A. Irvine
  */
 public class A385753 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a390;
 import irvine.math.z.Z;
 
 /**
- * A390332 a(n) = Sum_{k=0..n} binomial(5*n+k,n-k).
+ * A390465 allocated for Charles L. Hohn.
  * @author Sean A. Irvine
  */
 public class A390465 extends A390148 {

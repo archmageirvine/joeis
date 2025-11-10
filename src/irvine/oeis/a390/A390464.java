@@ -3,7 +3,7 @@ package irvine.oeis.a390;
 import irvine.math.z.Z;
 
 /**
- * A390332 a(n) = Sum_{k=0..n} binomial(5*n+k,n-k).
+ * A390464 Column 3 of table A390148.
  * @author Sean A. Irvine
  */
 public class A390464 extends A390148 {

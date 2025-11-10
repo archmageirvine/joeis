@@ -4,7 +4,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A231604 Numbers n such that (42^n + 1)/43 is prime.
+ * A231604 Numbers k such that (42^k + 1)/43 is prime.
  * @author Georg Fischer
  */
 public class A231604 extends PrimePositionSubsequence {

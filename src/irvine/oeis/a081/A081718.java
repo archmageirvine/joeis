@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A081718 Array T(m,n) read by antidiagonals, where T(m,n) = number of m X infinity multiplicity integer partition (mip) matrix of n (m &gt;= 0, n &gt;= 0).
+ * A081718 Array T(n,m) read by antidiagonals, where T(n,m) = number of n X infinity multiplicity integer partition (mip) matrix of m (n &gt;= 0, m &gt;= 0).
  * @author Sean A. Irvine
  */
 public class A081718 extends Sequence0 {

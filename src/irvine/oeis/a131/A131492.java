@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A131492 Numbers n such that the sum of the Carmichael lambda functions of the divisors is a proper divisor of n.
+ * A131492 Numbers k such that the sum of the Carmichael lambda functions of the divisors is a proper divisor of k.
  * @author Georg Fischer
  */
 public class A131492 extends FilterNumberSequence {

@@ -3,6 +3,7 @@ package irvine.oeis.a387;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence0;
 
 /**
@@ -13,6 +14,7 @@ public class A387665 extends Sequence0 {
 
   // After Marco Ripa, only good for a few terms
 
+  private final DirectSequence mA = new A373387();
   private final ArrayList<Z> mS = new ArrayList<>();
   private Z mK = Z.ZERO;
   private int mN = 0;
@@ -22,7 +24,7 @@ public class A387665 extends Sequence0 {
     while (mS.size() <= mN || mS.get(mN) == null) {
       mK = mK.add(1);
       if (mK.mod(5) != 0) {
-        final long t = A387664.v(mK);
+        final long t = mA.a(mK).longValueExact();
         while (mS.size() <= t) {
           mS.add(null);
         }

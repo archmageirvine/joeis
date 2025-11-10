@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A128919 Numbers simultaneously heptagonal and centered heptagonal.
+ * A128919 Numbers which are both heptagonal and centered heptagonal.
  * @author Sean A. Irvine
  */
 public class A128919 extends LinearRecurrence {

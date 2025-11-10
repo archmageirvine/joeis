@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelPermutationSequence;
 
 /**
- * A390187 allocated for Daniel Leary.
+ * A390187 Minimum number of distinct consecutive sums of a permutation of [n].
  * @author Sean A. Irvine
  */
 public class A390187 extends ParallelPermutationSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387319 allocated for Kenneth J Scheller.
+ * A387319 Numbers k for which modulo 3 and modulo another multiple of 3 are coincident among the fractions (2*k mod m)/m for 1 &lt;= m &lt;= k.
  * @author Sean A. Irvine
  */
 public class A387319 extends Sequence1 {

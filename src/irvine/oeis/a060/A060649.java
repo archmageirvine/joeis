@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060649 Smallest number k==3 (mod 4) such that Q(sqrt(-k)) has class number n, or 0 if no such k exists.
+ * A060649 Smallest squarefree number k == 3 (mod 4) such that Q(sqrt(-k)) has class number n, or 0 if no such k exists.
  * @author Sean A. Irvine
  */
 public class A060649 extends Sequence1 {

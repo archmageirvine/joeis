@@ -3,7 +3,7 @@ package irvine.oeis.a043;
 // DO NOT EDIT here!
 
 /**
- * A043080 a(n)=(s(n)+9)/10, where s(n)=n-th base 10 palindrome that starts with 1.
+ * A043080 a(n) = (s(n) + 9)/10, where s(n) is the n-th base 10 palindrome that starts with 1.
  * @author Georg Fischer
  */
 public class A043080 extends A043045 {

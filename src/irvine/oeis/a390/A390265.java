@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a385.A385240;
 
 /**
- * A390265 allocated for Janaka Rodrigo.
+ * A390265 Array read by descending antidiagonals: T(n,k) is the minimal defect across all k element sets of distinct integer sided rectangles that fill an n X n square, n &gt;= 4, k &gt;= 2.
  * @author Sean A. Irvine
  */
 public class A390265 extends A385240 {

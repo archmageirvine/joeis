@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389443 allocated for Felix Huber.
+ * A389443 a(n) is the number of ways n can be written as (w + x)*(y + z), where w, x, y and z are distinct positive integers with w &lt; x, y &lt; z, and w &lt; y.
  * @author Sean A. Irvine
  */
 public class A389443 extends Sequence1 {

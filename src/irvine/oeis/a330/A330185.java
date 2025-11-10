@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 /**
- * A330185 a(n) = n + floor(ns/r) + floor(nt/r), where r = tau - 1/2, s = tau, t = tau + 1/2, tau = golden ratio = (1+sqrt(5))/2.
+ * A330185 a(n) = n + floor(n*s/r) + floor(n*t/r), where r = phi - 1/2, s = phi, t = phi + 1/2, and phi is the golden ratio = (1+sqrt(5))/2.
  * @author Georg Fischer
  */
 public class A330185 extends FloorSequence {

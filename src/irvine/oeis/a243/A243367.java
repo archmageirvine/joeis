@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A243367 Primes p such that p^2+10 is prime.
+ * A243367 Primes p such that p^2 + 10 is prime.
  * @author Georg Fischer
  */
 public class A243367 extends FilterSequence {

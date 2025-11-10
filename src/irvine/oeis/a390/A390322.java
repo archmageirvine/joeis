@@ -3,7 +3,7 @@ package irvine.oeis.a390;
 import irvine.math.z.Z;
 
 /**
- * A390322 allocated for Charles L. Hohn.
+ * A390322 Column 1 of table A390148.
  * @author Sean A. Irvine
  */
 public class A390322 extends A390148 {

@@ -7,7 +7,7 @@ import irvine.oeis.recur.HolonomicRecurrence;
 
 
 /**
- * A339600 a(0) = a(1) = 1, a(2) = 3, a(3) = 6, a(n) = a(n-1) + 6*a(n-3) + 2*a(n-4) for n &gt;= 4.
+ * A339600 a(n) = a(n-1) + 6*a(n-3) + 2*a(n-4), with a(0) = a(1) = 1, a(2) = 3, a(3) = 6.
  * @author Georg Fischer
  */
 public class A339600 extends HolonomicRecurrence {

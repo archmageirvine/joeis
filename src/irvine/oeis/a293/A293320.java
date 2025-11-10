@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A293320 Least integer k such that k/2^n &gt; tau^2, where tau = (1+sqrt(5))/2 = golden ratio.
+ * A293320 Least integer k such that k/2^n &gt; phi^2, where phi = (1+sqrt(5))/2 = golden ratio.
  * @author Georg Fischer
  */
 public class A293320 extends LambdaSequence {

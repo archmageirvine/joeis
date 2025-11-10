@@ -5,7 +5,7 @@ import irvine.oeis.a258.A258261;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A228353 Primes of the form 3p - 4 where p is prime.
+ * A228353 Primes of the form 3*p - 4 where p is prime.
  * @author Georg Fischer
  */
 public class A228353 extends SimpleTransformSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A390056 allocated for Daniel Mondot.
+ * A390056 Smallest k for which a chain of linked rods of length 1, ..., k can be folded in half in exactly n dictinct ways.
  * @author Sean A. Irvine
  */
 public class A390056 extends Sequence1 {

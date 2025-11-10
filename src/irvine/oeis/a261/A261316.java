@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A261316 Numbers n such that n!!! - 3^n is prime.
+ * A261316 Numbers k such that k!!! - 3^k is prime.
  * @author Georg Fischer
  */
 public class A261316 extends FilterNumberSequence {

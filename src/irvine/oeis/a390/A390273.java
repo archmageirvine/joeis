@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import irvine.oeis.a336.A336282;
 
 /**
- * A390273 allocated for Manolopoulos Panagiotis.
+ * A390273 Total sum of the heights of the trees associated with all heapable permutations of length n.
  * @author Sean A. Irvine
  */
 public class A390273 extends A336282 {

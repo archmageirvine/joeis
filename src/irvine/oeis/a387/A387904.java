@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387904 allocated for James S. DeArmon.
+ * A387904 Numbers in which there exist two, distinct, non-overlapping prime substrings that can be swapped to form a prime number.
  * @author Sean A. Irvine
  */
 public class A387904 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A005041 A self-generating sequence.
+ * A005041 Positive integers k repeated ceiling(k/3) + 1 times.
  * @author Sean A. Irvine
  */
 public class A005041 extends Sequence0 {

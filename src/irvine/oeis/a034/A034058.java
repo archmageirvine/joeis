@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A034058 Decimal part of a(n)^(1/3) starts with n (cubes excluded).
+ * A034058 a(n) is the first k such that the fractional part of k^(1/3) starts with n.
  * @author Sean A. Irvine
  */
 public class A034058 extends Sequence0 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A386607 allocated for Pieter Post.
+ * A386607 Smallest exponent b &gt;= 2 such that the absolute value of the alternating digit sum of n^b = n or 0 if no such b exists.
  * @author Sean A. Irvine
  */
 public class A386607 extends Sequence0 {

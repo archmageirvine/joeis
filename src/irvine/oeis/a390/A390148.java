@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390148 Rectangular array by row of quadruples of coprime positive integers {r1..r4} for which spheres of radius r1..r4 are tangent to a plane when arranged as mutually tangent to one another, in increasing order within each quadruple row and then by column left to right.
+ * A390148 Rectangular array read by rows of ordered quadruples of coprime positive integers {r1..r4} for which spheres of radius r1..r4 are tangent to a plane when arranged as mutually tangent to one another, with rows in lexicographic order.
  * @author Sean A. Irvine
  */
 public class A390148 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a065.A065560;
 
 /**
- * A081725 A065560(n) + n - prime(n).
+ * A081725 a(n) = A065560(n) + n - prime(n).
  * @author Sean A. Irvine
  */
 public class A081725 extends Sequence2 {

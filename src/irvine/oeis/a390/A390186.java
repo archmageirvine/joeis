@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390186 allocated for Toby Walsh.
+ * A390186 Numbers k such that |s(k) - k| &lt; |s(s(k)) - s(k)|, where s(k) is the sum of the proper divisors of k.
  * @author Sean A. Irvine
  */
 public class A390186 extends Sequence1 {

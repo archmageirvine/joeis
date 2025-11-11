@@ -189,7 +189,7 @@ final class Prime {
 
     // Perform additional tests up to the required certainty level
     for (int k = 8; k < certainty; ++k) {
-      if (!Predicates.STRONG_PSEUDOPRIME.is(19L + RANDOM.nextInt(Integer.MAX_VALUE), n)) {
+      if (!Predicates.STRONG_PSEUDOPRIME.is(29L + RANDOM.nextInt(Integer.MAX_VALUE), n)) {
         return false;
       }
     }

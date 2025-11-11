@@ -14,6 +14,6 @@ public class A136030 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A136030() {
-    super(1, new FilterSequence(1, new A001348(), v -> !v.isProbablePrime()), v -> Functions.LPF.z(v));
+    super(1, new FilterSequence(1, new A001348(), v -> !v.isProbablePrime()), Functions.LPF::z);
   }
 }

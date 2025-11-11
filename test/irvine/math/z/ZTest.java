@@ -457,12 +457,12 @@ public class ZTest extends TestCase {
     assertFalse(Z.FOUR.isPrime());
     assertEquals(new Z("268294310"), z1.modSqrt(p));
     try {
-      Z.valueOf(341550071728361L).isPrime();
+      Z.valueOf(3825123056546413057L).isPrime();
       fail();
     } catch (final ArithmeticException e) {
       // ok
     }
-    assertTrue(Z.valueOf(341550071728361L).isProbablePrime(1));
+    assertTrue(Z.valueOf(3825123056546413057L).isProbablePrime(1));
     assertEquals(Jacobi.jacobi(z1, p), z1.jacobi(p));
     try {
       z1.modMultiply(5, Z.ZERO);

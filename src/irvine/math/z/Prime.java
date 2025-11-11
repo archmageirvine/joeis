@@ -15,6 +15,8 @@ final class Prime {
   private static final Z Z11 = Z.valueOf(11);
   private static final Z Z13 = Z.valueOf(13);
   private static final Z Z17 = Z.valueOf(17);
+  private static final Z Z19 = Z.valueOf(19);
+  private static final Z Z23 = Z.valueOf(23);
   /** Special limits used in primality testing. */
   private static final int P2L = (int) (2152302898747L & Z.BASE_MASK);
   private static final int P2H = (int) (2152302898747L >>> Z.BASE_BITS);
@@ -22,6 +24,7 @@ final class Prime {
   private static final int P3H = (int) (3474749660383L >>> Z.BASE_BITS);
   private static final int P4L = (int) (341550071728321L & Z.BASE_MASK);
   private static final int P4H = (int) (341550071728321L >>> Z.BASE_BITS);
+  private static final Z P5 = Z.valueOf(3825123056546413051L);
   private static final Random RANDOM = new Random();
 
   private static boolean isKnownMersennePrime(final int exponent) {
@@ -171,10 +174,21 @@ final class Prime {
       // n < 341550071728321 // [Jae93]
       return true;
     }
-    // [n > 341550071728321, n odd]
+
+    if (!ZUtils.sprpTest(Z19, n)) {
+      return false;
+    }
+    if (!ZUtils.sprpTest(Z23, n)) {
+      return false;
+    }
+    if (n.compareTo(P5) < 0) {
+      return true;
+    }
+
+    // [n >= 3825123056546413051, n odd]
 
     // Perform additional tests up to the required certainty level
-    for (int k = 7; k < certainty; ++k) {
+    for (int k = 8; k < certainty; ++k) {
       if (!Predicates.STRONG_PSEUDOPRIME.is(19L + RANDOM.nextInt(Integer.MAX_VALUE), n)) {
         return false;
       }

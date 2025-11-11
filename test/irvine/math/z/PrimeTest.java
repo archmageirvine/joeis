@@ -157,7 +157,7 @@ public class PrimeTest extends TestCase {
     assertFalse(Prime.primeTest(Z.valueOf(341550071728319L), 0, true));
     assertTrue(Prime.primeTest(Z.valueOf(341550071728361L), 0, false));
     assertTrue(Prime.primeTest(Z.valueOf(2305843009213693951L), 0, true));
-    checkFail(Z.valueOf(341550071728361L));
+    checkFail(Z.valueOf(3825123056546413057L));
     checkFail(new Z("1237940039285381461383839753"));
     checkFail(new Z("1237940039285382426677739581"));
     checkFail(new Z("1237940039285383749527666869"));

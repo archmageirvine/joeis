@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A160935 Primes of the form (n+1)^1+(n+2)^2+(n+3)^3+(n+4)^4+(n+5)^5+(n+6)^6+(n+7)^7+(n+8)^8+(n+9)^9.
+ * A160935 Primes of the form (k+1)^1+(k+2)^2+(k+3)^3+(k+4)^4+(k+5)^5+(k+6)^6+(k+7)^7+(k+8)^8+(k+9)^9.
  * @author Georg Fischer
  */
 public class A160935 extends FilterSequence {

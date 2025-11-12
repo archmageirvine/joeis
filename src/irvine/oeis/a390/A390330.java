@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390330 allocated for Clark Kimberling.
+ * A390330 Numbers k such that the number of distinct prime divisors of binomial(2k, k) is odd.
  * @author Sean A. Irvine
  */
 public class A390330 extends Sequence1 {

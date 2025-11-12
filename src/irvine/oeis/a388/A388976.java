@@ -7,7 +7,7 @@ import irvine.oeis.a003.A003961;
 import irvine.oeis.a033.A033885;
 
 /**
- * A388976 a(n) = A033885(n) * A003961(n)), where A033885(n) = 3*n-sigma(n), and A003961 is fully multiplicative with a(p) = nextprime(p).
+ * A388976 a(n) = A033885(n) * A003961(n), where A033885(n) = 3*n-sigma(n), and A003961 is fully multiplicative with a(p) = nextprime(p).
  * @author Georg Fischer
  */
 public class A388976 extends LambdaSequence {

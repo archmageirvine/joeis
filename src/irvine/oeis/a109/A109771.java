@@ -6,7 +6,7 @@ package irvine.oeis.a109;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A109771 G.f.: sqrt(1+6*x+x^2).
+ * A109771 Expansion of g.f.: sqrt(1+6*x+x^2).
  * @author Georg Fischer
  */
 public class A109771 extends HolonomicRecurrence {

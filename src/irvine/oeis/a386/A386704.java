@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A386704 allocated for Aloe Poliszuk.
+ * A386704 a(n) is the arithmetic mean of all multiplicative arithmetic functions f(n) with f(p^e) returning a monic degree 3 Littlewood polynomial of p.
  * @author Sean A. Irvine
  */
 public class A386704 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390297.
+ * A390399 Number of increasing interval-labeled restricted ternary trees on the label set {0,1,...,n}.
  * @author Sean A. Irvine
  */
 public class A390399 extends Sequence0 {

@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.math.z.Z;
 
 /**
- * A053237 Numbers n such that both A053230(n) and A053230(n+1) = 1.
+ * A053237 Numbers k such that both A053230(k) and A053230(k+1) = 1.
  * @author Sean A. Irvine
  */
 public class A053237 extends A053230 {

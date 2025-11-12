@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390108 allocated for Davide Oliveri.
+ * A390108 Smallest b &gt;= 2 for which P_{n}(b) = Sum_{k=1..n} b^(prime(n)-prime(k)) is prime or 0 if such a number does not exist.
  * @author Sean A. Irvine
  */
 public class A390108 extends Sequence1 {

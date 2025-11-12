@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a188.A188999;
 
 /**
- * A292982 Bi-unitary abundant numbers: numbers n such that bsigma(n) &gt; 2n, where bsigma is the sum of the bi-unitary divisors function (A188999).
+ * A292982 Bi-unitary abundant numbers: numbers k such that bsigma(k) &gt; 2*k, where bsigma is the sum of the bi-unitary divisors function (A188999).
  * @author Georg Fischer
  */
 public class A292982 extends FilterPositionSequence {

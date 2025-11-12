@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A389367 allocated for Ralph L. Childress.
+ * A389367 Semilengths of the Dyck natural numbers.
  * @author Sean A. Irvine
  */
 public class A389367 extends CachedSequence {

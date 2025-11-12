@@ -4,7 +4,7 @@ package irvine.oeis.a096;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A096227 Number of different triangles created when a square sheet of paper is folded n times, the first time by one of the diagonal of the square sheet and the by the median of the square triangle.
+ * A096227 Number of triangles created when a square sheet of paper is folded n times, the first time by one of the diagonals of the square and then by the median of the square triangle.
  * @author Georg Fischer
  */
 public class A096227 extends GeneratingFunctionSequence {

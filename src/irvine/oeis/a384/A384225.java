@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384225 Irregular triangle read by rows: T(n,k) is the number of odd divisors in the k-th 2-dense sublist of divisors of n, with n &gt;= 1, k &gt;= 1.
+ * A384225 Irregular triangle read by rows: T(n,k) is the number of odd numbers in the k-th 2-dense sublist of divisors of n, with n &gt;= 1, k &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A384225 extends Sequence1 {

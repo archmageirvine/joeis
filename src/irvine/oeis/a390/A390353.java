@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387030.
+ * A390353 allocated for Matthew Crawford.
  * @author Sean A. Irvine
  */
 public class A390353 extends Sequence1 {

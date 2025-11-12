@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A001707 Generalized Stirling numbers.
+ * A001707 Generalized Stirling numbers, [n+5,5]_2.
  * @author Sean A. Irvine
  */
 public class A001707 extends Sequence0 {

@@ -7,7 +7,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a051.A051377;
 
 /**
- * A236474 Numbers such that the sum of unitary divisors (A034448) is equal to the sum of exponential divisors (A051377).
+ * A236474 Numbers whose sum of unitary divisors (A034448) is equal to the sum of exponential divisors (A051377).
  * @author Georg Fischer
  */
 public class A236474 extends FilterNumberSequence {

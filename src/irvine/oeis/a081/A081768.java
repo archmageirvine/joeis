@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081767.
+ * A081768 Number of k, 1&lt;=k&lt;=n, such that C(n,k) divides C(2n,2k).
  * @author Sean A. Irvine
  */
 public class A081768 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390327 allocated for Clark Kimberling.
+ * A390327 Numbers k such that the number of prime divisors of binomial(2k, k), including multiplicities, is even.
  * @author Sean A. Irvine
  */
 public class A390327 extends Sequence1 {

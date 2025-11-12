@@ -10,7 +10,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**
- * A081765.
+ * A081778 Maximum element in the continued fraction for n * Sum_{k&gt;=0} 1/2^(2^k).
  * @author Sean A. Irvine
  */
 public class A081778 extends Sequence1 implements Conjectural {

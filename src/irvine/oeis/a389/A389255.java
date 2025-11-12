@@ -20,8 +20,11 @@ public class A389255 extends A336282 {
 
   @Override
   protected long count(final int[] p) {
-    synchronized (A389255.this) {
-      ++mRow[contribution(p) - 1];
+    final int contrib = contribution(p);
+    if (contrib > 0) {
+      synchronized (A389255.this) {
+        ++mRow[contrib - 1];
+      }
     }
     return 0;
   }

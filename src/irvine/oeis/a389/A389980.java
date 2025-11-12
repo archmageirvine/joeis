@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a387.A373387;
 
 /**
- * A389980 allocated for Marco Rip\u00e0.
+ * A389980 Positive integers (not multiples of 10) whose constant congruence speed is smaller than the maximum of the constant congruence speeds of all their prime factors (see A373387 for the definition of "constant congruence speed").
  * @author Sean A. Irvine
  */
 public class A389980 extends Sequence1 {

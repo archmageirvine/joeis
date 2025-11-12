@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081765 Numbers k such that (k+2) divides 2^(k-1) - 1.
+ * A081765 Numbers k such that k+2 divides 2^(k-1) - 1.
  * @author Sean A. Irvine
  */
 public class A081765 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A081760 Decimal expansion of the conjectured Landau's constant L.
+ * A081760 Decimal expansion of Gamma(1/3)*Gamma(5/6)/Gamma(1/6).
  * @author Sean A. Irvine
  */
 public class A081760 extends DecimalExpansionSequence {

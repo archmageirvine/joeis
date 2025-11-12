@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A390368 allocated for Manolopoulos Panagiotis.
+ * A390368 Triangle read by rows: number of permutations of length n that require exactly k removals from the beginning to become heapable.
  * @author Sean A. Irvine
  */
 public class A390368 extends Sequence1 {

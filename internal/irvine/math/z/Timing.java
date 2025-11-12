@@ -80,7 +80,8 @@ public final class Timing {
    */
   public static void main(final String... args) {
     //timeTest(BigInteger::add, Z::add);
-    timeTest(BigInteger::multiply, Z::multiply);
+    //timeTest(BigInteger::multiply, Z::multiply);
     //timeTest(BigInteger::mod, Z::mod);
+    timeTest(BigInteger::divide, Z::divide);
   }
 }

@@ -1230,6 +1230,14 @@ public abstract class CR extends Number implements Comparable<CR>, IsInteger {
   }
 
   /**
+   * Returns the tangent.
+   * @return tangent
+   */
+  public CR tan() {
+    return ComputableReals.SINGLETON.tan(this);
+  }
+
+  /**
    * Returns the hyperbolic sine.
    * @return hyperbolic sine
    */

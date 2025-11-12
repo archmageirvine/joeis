@@ -4,7 +4,7 @@ import irvine.oeis.RecordSequence;
 import irvine.oeis.a034.A034058;
 
 /**
- * A390297.
+ * A389568 Record values in A034058.
  * @author Sean A. Irvine
  */
 public class A389568 extends RecordSequence {

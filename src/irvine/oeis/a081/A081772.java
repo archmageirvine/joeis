@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.FoldedContinuedFraction;
 
 /**
- * A006466 Continued fraction expansion of C = 2*Sum_{n&gt;=0} 1/2^(2^n).
+ * A081772 Continued fraction for Sum_{k&gt;=0} 1/4^(2^k-1).
  * @author Sean A. Irvine
  */
 public class A081772 extends FoldedContinuedFraction {

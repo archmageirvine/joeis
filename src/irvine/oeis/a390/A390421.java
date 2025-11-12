@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390297.
+ * A390421 Numbers k such that sigma(k) = psi(k) + phi(k) + tau(k)^2.
  * @author Sean A. Irvine
  */
 public class A390421 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a276;
 import irvine.oeis.DifferenceSequence;
 
 /**
- * A276868 First differences of the Beatty sequence A276855 for 3 + tau, where tau = golden ratio = (1 + sqrt(5))/2.
+ * A276868 First differences of the Beatty sequence A276855 for 3 + phi, where phi = golden ratio = (1 + sqrt(5))/2.
  * @author Georg Fischer
  */
 public class A276868 extends DifferenceSequence {

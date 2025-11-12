@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390318 allocated for Dwight Boddorf.
+ * A390318 a(n) = floor(gamma^(-n)) where gamma is Euler's constant A001620.
  * @author Sean A. Irvine
  */
 public class A390318 extends Sequence0 {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a045.A045944;
 
 /**
- * A145577 A045944 mod 9. Period 9: repeat 0,5,7,6,2,4,3,8,1.
+ * A145577 Period 9: repeat 0,5,7,6,2,4,3,8,1.
  * @author Georg Fischer
  */
 public class A145577 extends Sequence0 {

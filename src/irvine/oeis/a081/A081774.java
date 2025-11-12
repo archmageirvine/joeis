@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.FoldedContinuedFraction;
 
 /**
- * A006466.
+ * A081774 Continued fraction for Sum_{k&gt;=0} 1/6^(2^k-1).
  * @author Sean A. Irvine
  */
 public class A081774 extends FoldedContinuedFraction {

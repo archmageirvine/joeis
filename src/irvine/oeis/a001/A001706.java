@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000254;
 
 /**
- * A001706 Generalized Stirling numbers.
+ * A001706 Generalized Stirling numbers, [n+4,4]_2.
  * @author Sean A. Irvine
  */
 public class A001706 extends A000254 {

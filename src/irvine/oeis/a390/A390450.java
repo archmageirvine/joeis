@@ -3,7 +3,7 @@ package irvine.oeis.a390;
 import irvine.oeis.a336.A336282;
 
 /**
- * A390377 allocated for Manolopoulos Panagiotis.
+ * A390450 allocated for Manolopoulos Panagiotis.
  * @author Sean A. Irvine
  */
 public class A390450 extends A336282 {

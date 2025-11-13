@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390466 allocated for Robert Israel.
+ * A390466 a(n) is the least k such that k + n * A001414(k) and k - n * A001414(k) are both prime.
  * @author Sean A. Irvine
  */
 public class A390466 extends Sequence1 {

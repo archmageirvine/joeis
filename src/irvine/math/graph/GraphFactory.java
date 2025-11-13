@@ -384,4 +384,17 @@ public final class GraphFactory {
     return g;
   }
 
+  /**
+   * Construct the cycle graph of given number of vertices.
+   * @param n number of vertices
+   * @return cycle graph
+   */
+  public static Graph cycle(final int n) {
+    final Graph g = GraphFactory.create(n);
+    for (int k = 0; k < n; ++k) {
+      g.addEdge(k, (k + 1) % n);
+    }
+    return g;
+  }
+
 }

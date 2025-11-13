@@ -7,7 +7,7 @@ import irvine.oeis.InverseSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A390392 allocated for Juri-Stepan Gerasimov.
+ * A390392 Smallest k for which the number of divisors d of k such that d == -d^(k/d) (mod k) is equal to n, or -1 if no such k exists.
  * @author Sean A. Irvine
  */
 public class A390392 extends InverseSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390353 allocated for Matthew Crawford.
+ * A390353 Integrals of stable envelopes of fixed points in T^*Gr(2,n).
  * @author Sean A. Irvine
  */
 public class A390353 extends Sequence1 {

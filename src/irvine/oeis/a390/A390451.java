@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A390451 allocated for Jean-Marc Rebert.
+ * A390451 Numbers k such that the concatenation of a permutation of its divisors is prime.
  * @author Sean A. Irvine
  */
 public class A390451 extends Sequence1 {

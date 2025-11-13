@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A001026 Powers of 17.
+ * A001026 Powers of 17: a(n) = 17^n.
  * @author Sean A. Irvine
  */
 public class A001026 extends Sequence0 {

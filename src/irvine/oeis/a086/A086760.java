@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A086760 a(n) = 8n^2 + 88n + 43.
+ * A086760 a(n) = 8*n^2 + 88*n + 43.
  * @author Sean A. Irvine
  */
 public class A086760 extends LinearRecurrence {

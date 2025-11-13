@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A001022 Powers of 13.
+ * A001022 Powers of 13: a(n) = 13^n.
  * @author Sean A. Irvine
  */
 public class A001022 extends Sequence0 {

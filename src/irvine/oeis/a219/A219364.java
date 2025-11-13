@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A219364 Numbers such that the product of divisors of n is greater than the product of divisors of sigma(n).
+ * A219364 Numbers k whose product of divisors is greater than the product of divisors of sigma(k).
  * @author Georg Fischer
  */
 public class A219364 extends FilterNumberSequence {

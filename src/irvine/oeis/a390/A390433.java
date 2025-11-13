@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390433 allocated for Aleks Zigon Tankosic.
+ * A390433 Triangle read by rows, Lah numbers with level 2.
  * @author Sean A. Irvine
  */
 public class A390433 extends Sequence0 {

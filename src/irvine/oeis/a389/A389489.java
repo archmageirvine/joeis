@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389489 allocated for Robert Israel.
+ * A389489 a(n) is the least k such that k + the sum of the n-th powers of the prime factors of k, counted with multiplicity, is prime.
  * @author Sean A. Irvine
  */
 public class A389489 extends Sequence1 {

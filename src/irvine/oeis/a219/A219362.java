@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A219362 Numbers n such that the product of divisors of sigma(n) is divisible by the product of divisors of n.
+ * A219362 Numbers k such that the product of divisors of sigma(k) is divisible by the product of divisors of k.
  * @author Georg Fischer
  */
 public class A219362 extends FilterNumberSequence {

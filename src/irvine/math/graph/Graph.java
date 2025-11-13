@@ -127,6 +127,14 @@ public interface Graph {
   Graph delete(final int v);
 
   /**
+   * Return the contraction of this graph with the specified vertices identified together.
+   * @param u first vertex
+   * @param v second vertex
+   * @return contracted graph
+   */
+  Graph contraction(final int u, final int v);
+
+  /**
    * Return the biconnected components of this graph.
    * @return collection of biconnected components
    */

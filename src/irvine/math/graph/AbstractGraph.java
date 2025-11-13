@@ -508,4 +508,22 @@ public abstract class AbstractGraph implements Graph {
   public boolean hasHole(final int minLength) {
     return new HoleFinder(this, minLength).hasHole();
   }
+
+  @Override
+  public Graph contraction(final int u, final int v) {
+    if (u == v) {
+      return delete(u);
+    }
+    final Graph g = delete(u);
+    // Add edges associated with u to v accounting for change in vertex numbering
+    final int vp = v > u ? v - 1 : v;
+    for (int w = nextVertex(u, -1); w >= 0; w = nextVertex(u, w)) {
+      if (w == v) {
+        g.addEdge(vp, vp); // Contraction introduces a loop since u and v were connected
+      } else {
+        g.addEdge(vp, w > u ? w - 1 : w);
+      }
+    }
+    return g;
+  }
 }

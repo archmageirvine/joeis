@@ -4,7 +4,7 @@ package irvine.oeis.a089;
 import irvine.oeis.recur.PeriodicSequence;
 
 /**
- * A089146 Greatest common divisor of n^2 - 4 and n^2 + 4.
+ * A089146 a(n) = gcd(n^2 - 4, n^2 + 4).
  * @author Georg Fischer
  */
 public class A089146 extends PeriodicSequence {

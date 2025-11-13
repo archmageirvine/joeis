@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001348;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A136030 Smallest prime factor of composite Mersenne numbers.
+ * A136030 Smallest prime factor of composite Mersenne numbers: lpf(2^p-1) where 2^p-1 is composite and p is prime.
  * @author Georg Fischer
  */
 public class A136030 extends SimpleTransformSequence {

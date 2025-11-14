@@ -18,7 +18,7 @@ public class A013593 extends Sequence1 {
     while (true) {
       final Polynomial<Z> cyclo = CyclotomicPolynomials.cyclotomic(++mN);
       for (final Z c : cyclo) {
-        if (c.abs().compareTo(Z.FOUR) > 0) {
+        if (c.compareAbs(Z.FOUR) > 0) {
           return Z.valueOf(mN);
         }
       }

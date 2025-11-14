@@ -16,7 +16,7 @@ public class A077041 extends A000040 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (mA.next().abs().compareTo(p) > 0) {
+      if (mA.next().compareAbs(p) > 0) {
         return p;
       }
     }

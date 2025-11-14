@@ -52,15 +52,15 @@ public class A060465 extends AbstractSequence {
           res = x1;
         }
         final Z x2 = check(nz3.add(y3), y, z, n);
-        if (x2 != null && (res == null || x2.abs().compareTo(res.abs()) < 0)) {
+        if (x2 != null && (res == null || x2.compareAbs(res) < 0)) {
           res = x2;
         }
         final Z x3 = check(pz3.subtract(y3), y, z, n);
-        if (x3 != null && (res == null || x3.abs().compareTo(res.abs()) < 0)) {
+        if (x3 != null && (res == null || x3.compareAbs(res) < 0)) {
           res = x3;
         }
         final Z x4 = check(pz3.add(y3), y, z, n);
-        if (x4 != null && (res == null || x4.abs().compareTo(res.abs()) < 0)) {
+        if (x4 != null && (res == null || x4.compareAbs(res) < 0)) {
           res = x4;
         }
         if (res != null) {

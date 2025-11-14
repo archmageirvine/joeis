@@ -13,6 +13,6 @@ public class A317585 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A317585() {
-    super(1, (self, n) -> Integers.SINGLETON.count(1, n - 1, k -> self.a(k).subtract(self.a(n - k)).abs().compareTo(Z.TWO) <= 0), "");
+    super(1, (self, n) -> Integers.SINGLETON.count(1, n - 1, k -> self.a(k).subtract(self.a(n - k)).compareAbs(Z.TWO) <= 0), "");
   }
 }

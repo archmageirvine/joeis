@@ -47,13 +47,13 @@ public class A048429 extends A002113 {
         final String p2s = l2 + new StringBuilder(l2).reverse();
         final Z p2 = new Z(p2s);
         final Z e = n.subtract(p2);
-        return e.abs().compareTo(d.abs()) < 0 ? p2 : p1;
+        return e.compareAbs(d) < 0 ? p2 : p1;
       } else {
         final String l2 = new Z(left).add(1).toString();
         final String p2s = l2 + new StringBuilder(l2).reverse();
         final Z p2 = new Z(p2s);
         final Z e = n.subtract(p2);
-        return e.abs().compareTo(d.abs()) < 0 ? p2 : p1;
+        return e.compareAbs(d) < 0 ? p2 : p1;
       }
     } else {
       final String left = ns.substring(0, (ns.length() + 1) / 2);
@@ -65,13 +65,13 @@ public class A048429 extends A002113 {
         final String p2s = l2 + new StringBuilder(l2.substring(0, l2.length() - 1)).reverse();
         final Z p2 = new Z(p2s);
         final Z e = n.subtract(p2);
-        return e.abs().compareTo(d.abs()) < 0 ? p2 : p1;
+        return e.compareAbs(d) < 0 ? p2 : p1;
       } else {
         final String l2 = new Z(left).add(1).toString();
         final String p2s = l2 + new StringBuilder(l2.substring(0, l2.length() - 1)).reverse();
         final Z p2 = new Z(p2s);
         final Z e = n.subtract(p2);
-        return e.abs().compareTo(d.abs()) < 0 ? p2 : p1;
+        return e.compareAbs(d) < 0 ? p2 : p1;
       }
     }
   }

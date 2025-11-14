@@ -35,7 +35,7 @@ public class PowerClosureSequence extends AbstractSequence {
       mB = mSeq.next();
     }
     final Map.Entry<Z, Z> e = mA.pollFirstEntry();
-    if (e.getKey().abs().compareTo(Z.ONE) > 0) {
+    if (e.getKey().compareAbs(Z.ONE) > 0) {
       mA.put(e.getKey().multiply(e.getValue()), e.getValue());
     }
     return e.getKey();

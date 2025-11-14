@@ -16,7 +16,7 @@ public class A390186 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z s = Functions.ALIQUOT.z(++mN);
-      if (s.subtract(mN).abs().compareTo(Functions.ALIQUOT.z(s).subtract(s).abs()) < 0) {
+      if (s.subtract(mN).compareAbs(Functions.ALIQUOT.z(s).subtract(s)) < 0) {
         return Z.valueOf(mN);
       }
     }

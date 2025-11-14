@@ -417,7 +417,7 @@ public class Q implements Comparable<Q>, IsInteger, Serializable {
    * @return true for a proper fraction
    */
   public boolean isProperFraction() {
-    return num().abs().compareTo(den()) < 0;
+    return num().compareAbs(den()) < 0;
   }
 
   /**

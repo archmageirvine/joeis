@@ -44,7 +44,7 @@ public class A072148 extends Sequence1 {
   private boolean is(final Matrix<Q> m) {
     for (long k = 0; k < m.rows(); ++k) {
       for (long j = 0; j < m.cols(); ++j) {
-        if (m.get(k, j).toZ().abs().compareTo(Z.ONE) > 0) {
+        if (m.get(k, j).toZ().compareAbs(Z.ONE) > 0) {
           return false;
         }
       }

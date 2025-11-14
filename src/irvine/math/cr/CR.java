@@ -402,7 +402,7 @@ public abstract class CR extends Number implements Comparable<CR>, IsInteger {
   int msd(final int n) {
     if (!mApprValid || (mMaxAppr.compareTo(Z.ONE) <= 0 && mMaxAppr.compareTo(Z.NEG_ONE) >= 0)) {
       getApprox(n - 1);
-      if (mMaxAppr.abs().compareTo(Z.ONE) <= 0) {
+      if (mMaxAppr.compareAbs(Z.ONE) <= 0) {
         // msd could still be arbitrarily far to the right.
         return Integer.MIN_VALUE;
       }
@@ -1136,8 +1136,7 @@ public abstract class CR extends Number implements Comparable<CR>, IsInteger {
    */
   public CR cos() {
     final Z roughAppr = getApprox(-1);
-    final Z absRoughAppr = roughAppr.abs();
-    if (absRoughAppr.compareTo(Z.SIX) >= 0) {
+    if (roughAppr.compareAbs(Z.SIX) >= 0) {
       // Subtract multiples of PI
       final Z multiplier = roughAppr.divide(Z.SIX);
       final CR adjustment = PI.multiply(multiplier);
@@ -1146,7 +1145,7 @@ public abstract class CR extends Number implements Comparable<CR>, IsInteger {
       } else {
         return subtract(adjustment).cos();
       }
-    } else if (absRoughAppr.compareTo(Z.TWO) >= 0) {
+    } else if (roughAppr.compareAbs(Z.TWO) >= 0) {
       // Scale further with double angle formula
       final CR cosHalf = shiftRight(1).cos();
       return cosHalf.multiply(cosHalf).shiftLeft(1).subtract(ONE);

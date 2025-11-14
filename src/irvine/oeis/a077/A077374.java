@@ -16,7 +16,7 @@ public class A077374 extends Sequence1 {
   public Z next() {
     while (true) {
       mN += 2;
-      if (Functions.SIGMA1.z(mN).subtract(2 * mN).abs().compareTo(Z.TEN) <= 0) {
+      if (Functions.SIGMA1.z(mN).subtract(2 * mN).compareAbs(Z.TEN) <= 0) {
         return Z.valueOf(mN);
       }
     }

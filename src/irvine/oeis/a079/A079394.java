@@ -16,7 +16,7 @@ public class A079394 extends A000594 {
     final Z s = mT;
     mT = super.next();
     final long p = s.signum() < 0 ? (mT.signum() < 0 ? 1 : 3) : (mT.signum() < 0 ? 2 : 4);
-    final long q = s.abs().compareTo(mT.abs()) <= 0 ? 1 : 2;
+    final long q = s.compareAbs(mT) <= 0 ? 1 : 2;
     return Z.valueOf(p * 10 + q);
   }
 }

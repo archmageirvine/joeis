@@ -16,7 +16,7 @@ public class A068543 extends A000040 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (super.next().subtract(Functions.SIGMA0.z(mN).multiply(mN)).abs().square().compareTo(mN) < 0) {
+      if (super.next().subtract(Functions.SIGMA0.z(mN).multiply(mN)).square().compareTo(mN) < 0) {
         return mN;
       }
     }

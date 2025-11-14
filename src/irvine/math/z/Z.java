@@ -51,9 +51,9 @@ public class Z extends Number implements Comparable<Z>, IsInteger {
   /** Holds the valid length of <code>mValue</code> multiplied by its sign. */
   int mSign;
   private int mCachedBitLength = -1;
-  private int mCachedBitCount = mCachedBitLength;
+  private int mCachedBitCount = -1;
   /** Cached first nonzero digit in the representation. */
-  int mFirstNonzeroDigitIndex = mCachedBitLength;
+  int mFirstNonzeroDigitIndex = -1;
   /* Holds an auxiliary long output, used by certain functions. */
   long mAuxiliary = 0;
 

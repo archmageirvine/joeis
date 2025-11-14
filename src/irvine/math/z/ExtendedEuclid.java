@@ -3,7 +3,6 @@ package irvine.math.z;
 /**
  * Implementation of the extended Euclidean algorithm. In general to be
  * accessed via the Z class.
- *
  * @author Sean A. Irvine
  */
 final class ExtendedEuclid {
@@ -26,12 +25,12 @@ final class ExtendedEuclid {
     if (b.isZero()) {
       return new Z[] {a, Z.ONE, Z.ZERO};
     }
-    final Z aabs = a.abs();
-    final Z babs = b.abs();
-    final int signDelta = aabs.compareTo(babs);
+    final int signDelta = a.compareAbs(b);
     if (signDelta == 0) {
       return new Z[] {a, Z.ONE, Z.ZERO};
     }
+    final Z aabs = a.abs();
+    final Z babs = b.abs();
     final Z d, u, v;
     if (signDelta > 0) {
       // a is larger than b

@@ -31,7 +31,7 @@ public class A078783 extends Sequence0 {
     }
     Z k = mLeastUnused;
     while (true) {
-      if (k.subtract(mB).abs().compareTo(mB.subtract(mA).abs()) > 0) {
+      if (k.subtract(mB).compareAbs(mB.subtract(mA)) > 0) {
         mA = mB;
         mB = k;
         mUsed.add(k);

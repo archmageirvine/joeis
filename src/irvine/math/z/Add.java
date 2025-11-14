@@ -20,14 +20,14 @@ final class Add {
     // Add common parts
     while (k < sb) {
       final int t = a[k] + b[k] + carry;
-      carry = t >>> Z.BASE_BITS;
       c[k++] = t & Z.BASE_MASK;
+      carry = t >>> Z.BASE_BITS;
     }
     // Handle any extra part of a
     while (k < sa) {
       final int t = a[k] + carry;
-      carry = t >>> Z.BASE_BITS;
       c[k++] = t & Z.BASE_MASK;
+      carry = t >>> Z.BASE_BITS;
     }
     // Handle any remaining carry
     if (carry != 0) {

@@ -16,7 +16,8 @@ public final class Timing {
   private static final Random RANDOM = new Random(42); // Deterministic set
   private static final int START_BITS = 30;
   private static final int INCREMENT_FACTOR = 2;
-  private static final int VECTOR_LENGTH = 20000;
+  private static final int VECTOR_LENGTH = 10000;
+  private static final int ITERATIONS = 3;
 
   private static BigInteger random(final int bits) {
     assert bits > 0;
@@ -76,13 +77,19 @@ public final class Timing {
   private static void timeTest(final Operation<BigInteger> op1, final Operation<Z> op2) {
     for (int k = START_BITS; k <= 1966080; k *= INCREMENT_FACTOR) {
       final BigInteger[] vector = vector(k);
-      final long[] timeBigInteger = time(op1, vector);
       final Z[] z = vector(vector);
-      final long[] timeZ = time(op2, z);
-      if (timeBigInteger[1] != timeZ[1]) {
-        System.out.println("Calculation mismatch: " + timeBigInteger[1] + " cf. " + timeZ[1]);
+      long totalBigIntegerTime = 0;
+      long totalZTime = 0;
+      for (int j = 0; j < ITERATIONS; ++j) {
+        final long[] timeBigInteger = time(op1, vector);
+        final long[] timeZ = time(op2, z);
+        if (timeBigInteger[1] != timeZ[1]) {
+          System.out.println("Calculation mismatch: " + timeBigInteger[1] + " cf. " + timeZ[1]);
+        }
+        totalBigIntegerTime += timeBigInteger[0];
+        totalZTime += timeZ[0];
       }
-      System.out.println(k + " BigInteger=" + timeBigInteger[0] + " Z=" + timeZ[0] + " r=" + DoubleUtils.NF3.format((double) timeBigInteger[0] / (double) timeZ[0]));
+      System.out.println(k + " BigInteger=" + totalBigIntegerTime + " Z=" + totalZTime + " r=" + DoubleUtils.NF3.format((double) totalBigIntegerTime / (double) totalZTime));
     }
   }
 

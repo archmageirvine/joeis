@@ -19,25 +19,15 @@ final class Add {
     int k = 0;
     // Add common parts
     while (k < sb) {
-      int t = a[k] + b[k] + carry;
-      if (t < Z.BASE) {
-        carry = 0;
-      } else {
-        t -= Z.BASE;
-        carry = 1;
-      }
-      c[k++] = t;
+      final int t = a[k] + b[k] + carry;
+      carry = t >>> Z.BASE_BITS;
+      c[k++] = t & Z.BASE_MASK;
     }
     // Handle any extra part of a
     while (k < sa) {
-      int t = a[k] + carry;
-      if (t < Z.BASE) {
-        carry = 0;
-      } else {
-        t -= Z.BASE;
-        carry = 1;
-      }
-      c[k++] = t;
+      final int t = a[k] + carry;
+      carry = t >>> Z.BASE_BITS;
+      c[k++] = t & Z.BASE_MASK;
     }
     // Handle any remaining carry
     if (carry != 0) {

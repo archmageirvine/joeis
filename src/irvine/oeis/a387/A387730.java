@@ -2,19 +2,19 @@ package irvine.oeis.a387;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
  * A387730 Indices where the cumulative sum of sin(2k+1)^(2k+1) reaches a record low value.
  * @author Sean A. Irvine
  */
-public class A387730 extends Sequence1 {
+public class A387730 extends Sequence0 {
 
   // Too slow ...
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
-  private long mN = 0;
+  private long mN = -1;
   private CR mMin = CR.ONE;
   private CR mSum = CR.ZERO;
 

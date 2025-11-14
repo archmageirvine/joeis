@@ -37,9 +37,7 @@ final class Compare {
   }
 
   /**
-   * Return -1, 0, or +1 depending on whether a &lt; b, a = b, or
-   * a &gt; b, respectively
-   *
+   * Return -1, 0, or +1 depending on whether a &lt; b, a = b, or a &gt; b, respectively
    * @param a first number
    * @param b second number
    * @return comparison of a and b
@@ -65,6 +63,35 @@ final class Compare {
       }
       if (a.mValue[sa] < b.mValue[sa]) {
         return sb < 0 ? 1 : -1;
+      }
+    }
+    return 0;
+  }
+
+  /**
+   * Compare the absolute value of two numbers.
+   * @param a first number
+   * @param b second number
+   * @return comparison of a and b
+   */
+  static int compareAbs(final Z a, final Z b) {
+    if (a == b) {
+      return 0;
+    }
+    final int sb = Math.abs(b.getSize());
+    final int sa = Math.abs(a.getSize());
+    if (sa < sb) {
+      return -1;
+    }
+    if (sa > sb) {
+      return 1;
+    }
+    for (int k = sa - 1; k >= 0; --k) {
+      if (a.mValue[k] > b.mValue[k]) {
+        return 1;
+      }
+      if (a.mValue[k] < b.mValue[k]) {
+        return -1;
       }
     }
     return 0;

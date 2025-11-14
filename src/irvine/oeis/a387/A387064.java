@@ -2,19 +2,21 @@ package irvine.oeis.a387;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A387064 Total number of entries in rows 0 to n of Pascal's triangle multiple of n.
  * @author Sean A. Irvine
  */
-public class A387064 extends Sequence1 {
+public class A387064 extends Sequence0 {
 
-  private long mN = 0;
+  private long mN = -1;
 
   @Override
   public Z next() {
-    ++mN;
+    if (++mN == 0) {
+      return Z.ZERO;
+    }
     long cnt = 0;
     for (int r = 0; r <= mN; ++r) {
       for (int k = 0; k <= r; ++k) {

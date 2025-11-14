@@ -19,7 +19,7 @@ public class A389979 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (++mN % 10 != 0){
+      if (++mN % 10 != 0) {
         final FactorSequence fs = Jaguar.factor(mN);
         Z sum = Z.ZERO;
         for (final Z p : fs.toZArray()) {

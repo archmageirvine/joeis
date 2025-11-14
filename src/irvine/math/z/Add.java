@@ -9,40 +9,41 @@ final class Add {
   private Add() { }
 
   /*
-   * Perform a+b where a and b have same sign and abs(a)&gt;=abs(b). The
+   * Perform a+b where a and b have the same sign and abs(a) >= abs(b). The
    * result is placed in c and the size of the result returned. The array
-   * <code>c</code> is assumed to have sufficient space for the result.
+   * c is assumed to have sufficient space for the result.
    */
   private static int add(final int[] a, final int sa, final int[] b, final int sb, final int[] c) {
+    assert sa >= sb;
     int carry = 0;
-    int i = 0;
+    int k = 0;
     // Add common parts
-    while (i < sb) {
-      int t = a[i] + b[i] + carry;
+    while (k < sb) {
+      int t = a[k] + b[k] + carry;
       if (t < Z.BASE) {
         carry = 0;
       } else {
         t -= Z.BASE;
         carry = 1;
       }
-      c[i++] = t;
+      c[k++] = t;
     }
-    // Handle extra part of a
-    while (i < sa) {
-      int t = a[i] + carry;
+    // Handle any extra part of a
+    while (k < sa) {
+      int t = a[k] + carry;
       if (t < Z.BASE) {
         carry = 0;
       } else {
         t -= Z.BASE;
         carry = 1;
       }
-      c[i++] = t;
+      c[k++] = t;
     }
     // Handle any remaining carry
     if (carry != 0) {
-      c[i++] = 1;
+      c[k++] = 1;
     }
-    return i;
+    return k;
   }
 
   /**
@@ -54,70 +55,43 @@ final class Add {
   static Z add(final Z a, final Z b) {
     int sa = a.getSize();
     if (sa == 0) {
-      return b;
+      return b; // i.e., a==0
     }
     int sb = b.getSize();
     if (sb == 0) {
-      return a;
+      return a; // i.e., b==0
     }
     final boolean signa = sa < 0;
-    final int[] c;
     if (signa == (sb < 0)) {
       // Addends have same sign
       if (signa) {
         sa = -sa;
         sb = -sb;
       }
-      // Allocate space for the result, +1 allows for carry, but will not be
-      // used in most cases.
-      c = new int[Math.max(sa, sb) + 1];
-      if (sa == sb) {
-        // Same size
-        int carry = 0;
-        for (int i = 0; i < sa; ++i) {
-          int t = a.mValue[i] + b.mValue[i] + carry;
-          if (t < Z.BASE) {
-            carry = 0;
-          } else {
-            t -= Z.BASE;
-            carry = 1;
-          }
-          c[i] = t;
-        }
-        if (carry != 0) {
-          c[sa++] = 1;
-        }
-      } else if (sa > sb) {
-        sa = add(a.mValue, sa, b.mValue, sb, c);
-      } else {
-        sa = add(b.mValue, sb, a.mValue, sa, c);
-      }
-      return new Z(c, signa ? -sa : sa);
+      assert sa > 0 && sb > 0;
+      // Allocate space for the result, +1 allows for carry
+      final int[] c = new int[Math.max(sa, sb) + 1];
+      final int sc = sa >= sb
+        ? add(a.mValue, sa, b.mValue, sb, c)
+        : add(b.mValue, sb, a.mValue, sa, c);
+      return new Z(c, signa ? -sc : sc);
     } else {
-      // Signs are different
-      final Z aa, bb;
-      if (signa) {
-        aa = a.negate();
-        bb = b;
-      } else {
-        aa = a;
-        bb = b.negate();
-      }
-      final int t = Compare.compare(aa, bb);
+      // Signs are different; i.e., this is actually a subtraction
+      final int t = Compare.compareAbs(a, b);
       if (t == 0) {
         return Z.ZERO;
       } else if (t > 0) {
-        final Z zd = Sub.sub(aa, bb);
-        if (signa) {
-          zd.mSign = -zd.getSize();
-        }
-        return zd;
+        // |a| > |b|, perform a-b
+        final int saa = Math.abs(sa);
+        final int[] c = new int[saa];
+        final int sc = Sub.sub(a.mValue, saa, b.mValue, Math.abs(sb), c);
+        return new Z(c, signa ? -sc : sc);
       } else {
-        final Z zd = Sub.sub(bb, aa);
-        if (!signa) {
-          zd.mSign = -zd.getSize();
-        }
-        return zd;
+        // |b| > |a|, perform b-a
+        final int sba = Math.abs(sb);
+        final int[] c = new int[sba];
+        final int sc = Sub.sub(b.mValue, sba, a.mValue, Math.abs(sa), c);
+        return new Z(c, signa ? sc : -sc);
       }
     }
   }

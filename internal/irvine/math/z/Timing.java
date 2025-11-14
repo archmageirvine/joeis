@@ -74,7 +74,7 @@ public final class Timing {
   }
 
   private static void timeTest(final Operation<BigInteger> op1, final Operation<Z> op2) {
-    for (int k = START_BITS; k > 0; k *= INCREMENT_FACTOR) {
+    for (int k = START_BITS; k <= 1966080; k *= INCREMENT_FACTOR) {
       final BigInteger[] vector = vector(k);
       final long[] timeBigInteger = time(op1, vector);
       final Z[] z = vector(vector);
@@ -88,7 +88,7 @@ public final class Timing {
 
   // This handle Z.divide(long)
   private static void timeTest2(final Operation<BigInteger> op1, final Operation2<Z, Long> op2) {
-    for (int k = START_BITS; k > 0; k *= INCREMENT_FACTOR) {
+    for (int k = START_BITS; k <= 1966080; k *= INCREMENT_FACTOR) {
       final BigInteger[] vec1 = vector(k);
       final BigInteger[] vec3 = new BigInteger[vec1.length];
       final BigInteger mod = BigInteger.valueOf(Z.BASE_MASK);
@@ -135,10 +135,10 @@ public final class Timing {
    */
   public static void main(final String... args) {
     //timeTest(BigInteger::add, Z::add);
-    //timeTest(BigInteger::subtract, Z::subtract);
+    timeTest(BigInteger::subtract, Z::subtract);
     //timeTest(BigInteger::multiply, Z::multiply);
     //timeTest(BigInteger::mod, Z::mod);
     //timeTest(BigInteger::divide, Z::divide);
-    timeTest2(BigInteger::divide, Z::divide);
+    //timeTest2(BigInteger::divide, Z::divide);
   }
 }

@@ -2675,3 +2675,4 @@ A081365 Numbers whose name in American English is a word-palindrome, reading the
 A081366 Number of distinct edge lengths in the convex hull of the maximal volume arrangements of n points on a sphere.
 A081420 Let f(1)=f(2)=1, f(k)=f(k-1)+f(k-2)+ (k (mod n)). Then f(k)=floor(r(n)*F(k))+g(k) where F(k) denotes the k-th Fibonacci number and g(k) a function becoming periodic. Sequence depends on r(n) which is the largest positive root of : a(3n-2)*X^2-a(3n-1)*X+a(3n)=0.
 A081797 Maximal coefficient (in absolute value) of the minimal polynomial P with integer coefficients such that P(sin(Pi/n)) = 0.
+A081833 a(n) is the smallest number that can be expressed as the product of three positive integers in n distinct ways, or 0 if no such number exists.

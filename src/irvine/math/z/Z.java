@@ -343,6 +343,15 @@ public class Z extends Number implements Comparable<Z>, IsInteger {
   }
 
   /**
+   * Compares the absolute value of this integer with the absolute value of the specified integer.
+   * @param n integer to compare against
+   * @return -1, 0 or 1.
+   */
+  public int compareAbs(final Z n) {
+    return Compare.compareAbs(this, n);
+  }
+
+  /**
    * Compares this integer with the specified integer. This method is provided in
    * preference to individual methods for each of the six boolean comparison operators
    * (&lt;, ==, &gt;, &gt;=, !=, &lt;=). The suggested idiom for performing these

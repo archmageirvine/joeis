@@ -29,7 +29,7 @@ final class Sub {
       c[k++] = t & Z.BASE_MASK;
       carry = t >> Z.BASE_BITS;
     }
-    // Truncate
+    // Truncate any leading 0s
     while (--k >= 0 && c[k] == 0) {
       // DO NOTHING
     }
@@ -68,25 +68,30 @@ final class Sub {
     int sb = b.getSize();
     final boolean signa = sa < 0;
     if (signa == sb < 0) {
-      // signs are the same
-      final int cf = Compare.compare(a, b);
-      if (cf == 0) {
+      // Signs are the same, a - b or (-a) - (-b)
+      final int cmp = Compare.compare(a, b);
+      if (cmp == 0) {
         return Z.ZERO;
       }
       final int saa = Math.abs(sa);
       final int sba = Math.abs(sb);
-      if ((cf > 0 && signa) || (cf < 0 && !signa)) {
+      if (signa == cmp > 0) {
+        // (a < 0, a > b) or (a > 0, a < b)
+        // (-b) - (-a) or b - a with |b| > |a|
         final int[] c = new int[sba];
         final int sc = sub(b.mValue, sba, a.mValue, saa, c);
         return new Z(c, signa ? sc : -sc);
       } else {
+        // (a > 0, a > b) or (a < 0, a < b)
+        // a - b or (-a) - (-b) with |a| > |b|
         final int[] c = new int[saa];
         final int sc = sub(a.mValue, saa, b.mValue, sba, c);
         return new Z(c, signa ? -sc : sc);
       }
     } else {
-      // signs are different, convert to an addition problem
-      // todo avoid these negates!
+      // Signs are different, a - (-b) or (-a) - b
+      // Convert to an addition
+      // Note negation is comparatively cheap
       return signa ? a.negate().add(b).negate() : Add.add(a, b.negate());
     }
   }

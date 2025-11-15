@@ -1,7 +1,5 @@
 package irvine.math.z;
 
-import java.util.Arrays;
-
 /**
  * Multiplication.
  * @author Sean A. Irvine
@@ -156,9 +154,7 @@ final class Mul {
 
   /**
    * Multiply an integer by a long.  Provided the long is smaller than the
-   * base this is more efficient than first converting the long into an
-   * integer.
-   *
+   * base this is more efficient than first converting the long into Z.
    * @param a multiplicand
    * @param b multiplicand
    * @return <code>a * b</code>
@@ -169,39 +165,38 @@ final class Mul {
     } else if (a.getSize() == 0 || b == 0L) {
       return Z.ZERO;
     }
-    final boolean negative;
-    final int size;
-    if (a.getSize() < 0) {
-      size = -a.getSize();
+
+    // Arrange for both arguments to be positive, but keep track of the
+    // sign necessary for the final result
+    int sa = a.getSize();
+    final boolean resultNegative;
+    if (sa < 0) {
+      sa = -sa;
       if (b < 0L) {
         b = -b;
-        negative = false;
+        resultNegative = false;
       } else {
-        negative = true;
+        resultNegative = true;
       }
     } else {
-      size = a.getSize();
-      negative = b < 0L;
-      if (negative) {
+      resultNegative = b < 0L;
+      if (resultNegative) {
         b = -b;
       }
     }
 
-    final int[] av = Arrays.copyOf(a.mValue, size + 1);
-    final long s = b - 1; // safe since b < BASE
+    final int[] aa = a.mValue;
+    final int[] c = new int[sa + 1]; // Can be at most one limb longer
     long carry = 0;
-    int i;
-    for (i = 0; i < size; ++i) {
-      final int bb = av[i];
-      final long tt = bb + carry;
-      final long aa = tt + bb * s;
-      carry = aa >>> Z.BASE_BITS;
-      av[i] = (int) (aa & Z.BASE_MASK);
+    int k;
+    for (k = 0; k < sa; ++k) {
+      final long t = aa[k] * b + carry;
+      c[k] = (int) (t & Z.BASE_MASK);
+      carry = t >>> Z.BASE_BITS;
     }
-    av[i] += carry;
-
-    final int productSize = av[size] != 0 ? size + 1 : size;
-    return new Z(av, negative ? -productSize : productSize);
+    c[k] = (int) carry;
+    final int productSize = c[sa] != 0 ? sa + 1 : sa;
+    return new Z(c, resultNegative ? -productSize : productSize);
   }
 
 }

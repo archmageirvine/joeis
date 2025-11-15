@@ -16,7 +16,7 @@ public final class Timing {
   private static final Random RANDOM = new Random(42); // Deterministic set
   private static final int START_BITS = 30;
   private static final int INCREMENT_FACTOR = 2;
-  private static final int VECTOR_LENGTH = 10000;
+  private static final int VECTOR_LENGTH = 500000000;
   private static final int ITERATIONS = 3;
 
   private static BigInteger random(final int bits) {
@@ -26,7 +26,7 @@ public final class Timing {
   }
 
   private static BigInteger[] vector(final int bits) {
-    final BigInteger[] res = new BigInteger[VECTOR_LENGTH];
+    final BigInteger[] res = new BigInteger[VECTOR_LENGTH / bits];
     for (int k = 0; k < res.length; ++k) {
       res[k] = random(bits);
     }
@@ -44,8 +44,8 @@ public final class Timing {
   private static <T extends Number> long[] time(final Operation<T> op, final T[] vector) {
     long sum = 0;
     final long startTime = System.nanoTime();
-    for (int k = 0; k < vector.length; k += 2) {
-      final T v = op.op(vector[k], vector[k + 1]);
+    for (int k = 1; k < vector.length; k += 2) {
+      final T v = op.op(vector[k - 1], vector[k]);
       sum += v.longValue();
     }
     final long endTime = System.nanoTime();
@@ -74,7 +74,8 @@ public final class Timing {
     return new long[] {endTime - startTime, sum};
   }
 
-  private static void timeTest(final Operation<BigInteger> op1, final Operation<Z> op2) {
+  private static void timeTest(final String name, final Operation<BigInteger> op1, final Operation<Z> op2) {
+    System.out.println("Timing for: " + name);
     for (int k = START_BITS; k <= 1966080; k *= INCREMENT_FACTOR) {
       final BigInteger[] vector = vector(k);
       final Z[] z = vector(vector);
@@ -94,9 +95,11 @@ public final class Timing {
   }
 
   // This handle Z.divide(long)
-  private static void timeTest2(final Operation<BigInteger> op1, final Operation2<Z, Long> op2) {
+  private static void timeTest2(final String name, final Operation<BigInteger> op1, final Operation2<Z, Long> op2) {
+    System.out.println("Timing for: " + name);
     for (int k = START_BITS; k <= 1966080; k *= INCREMENT_FACTOR) {
       final BigInteger[] vec1 = vector(k);
+      final Z[] z = vector(vec1);
       final BigInteger[] vec3 = new BigInteger[vec1.length];
       final BigInteger mod = BigInteger.valueOf(Z.BASE_MASK);
       for (int j = 0; j < vec1.length; ++j) {
@@ -106,13 +109,18 @@ public final class Timing {
       for (int j = 0; j < vec1.length; ++j) {
         vec2[j] = vec3[j].longValue();
       }
-      final long[] timeBigInteger = time(op1, vec1, vec3);
-      final Z[] z = vector(vec1);
-      final long[] timeZ = time2(op2, z, vec2);
-      if (timeBigInteger[1] != timeZ[1]) {
-        System.out.println("Calculation mismatch: " + timeBigInteger[1] + " cf. " + timeZ[1]);
+      long totalBigIntegerTime = 0;
+      long totalZTime = 0;
+      for (int j = 0; j < ITERATIONS; ++j) {
+        final long[] timeBigInteger = time(op1, vec1, vec3);
+        final long[] timeZ = time2(op2, z, vec2);
+        if (timeBigInteger[1] != timeZ[1]) {
+          System.out.println("Calculation mismatch: " + timeBigInteger[1] + " cf. " + timeZ[1]);
+        }
+        totalBigIntegerTime += timeBigInteger[0];
+        totalZTime += timeZ[0];
       }
-      System.out.println(k + " BigInteger=" + timeBigInteger[0] + " Z=" + timeZ[0] + " r=" + DoubleUtils.NF3.format((double) timeBigInteger[0] / (double) timeZ[0]));
+      System.out.println(k + " BigInteger=" + totalBigIntegerTime + " Z=" + totalZTime + " r=" + DoubleUtils.NF3.format((double) totalBigIntegerTime / (double) totalZTime));
     }
   }
 
@@ -141,11 +149,12 @@ public final class Timing {
    * @param args ignored
    */
   public static void main(final String... args) {
-    //timeTest(BigInteger::add, Z::add);
-    timeTest(BigInteger::subtract, Z::subtract);
-    //timeTest(BigInteger::multiply, Z::multiply);
-    //timeTest(BigInteger::mod, Z::mod);
-    //timeTest(BigInteger::divide, Z::divide);
-    //timeTest2(BigInteger::divide, Z::divide);
+    //timeTest("add", BigInteger::add, Z::add);
+    //timeTest("subtract", BigInteger::subtract, Z::subtract);
+    //timeTest("multiply", BigInteger::multiply, Z::multiply);
+    timeTest2("multiply-long", BigInteger::multiply, Z::multiply);
+    //timeTest("mod", BigInteger::mod, Z::mod);
+    //timeTest("divide", BigInteger::divide, Z::divide);
+    //timeTest2("divide-long", BigInteger::divide, Z::divide);
   }
 }

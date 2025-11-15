@@ -151,8 +151,8 @@ public final class Timing {
   public static void main(final String... args) {
     //timeTest("add", BigInteger::add, Z::add);
     //timeTest("subtract", BigInteger::subtract, Z::subtract);
-    //timeTest("multiply", BigInteger::multiply, Z::multiply);
-    timeTest2("multiply-long", BigInteger::multiply, Z::multiply);
+    timeTest("multiply", BigInteger::multiply, Z::multiply);
+    //timeTest2("multiply-long", BigInteger::multiply, Z::multiply);
     //timeTest("mod", BigInteger::mod, Z::mod);
     //timeTest("divide", BigInteger::divide, Z::divide);
     //timeTest2("divide-long", BigInteger::divide, Z::divide);

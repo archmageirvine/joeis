@@ -19,23 +19,15 @@ final class Sub {
     int k = 0;
     // Handle common parts
     while (k < sb) {
-      if ((c[k] = a[k] - b[k] - carry) >= 0) {
-        carry = 0;
-      } else {
-        c[k] += Z.BASE;
-        carry = 1;
-      }
-      ++k;
+      final int t = a[k] - b[k] + carry;
+      c[k++] = t & Z.BASE_MASK;
+      carry = t >> Z.BASE_BITS;
     }
     // Handle any extra part from a
     while (k < sa) {
-      if ((c[k] = a[k] - carry) >= 0) {
-        carry = 0;
-      } else {
-        c[k] += Z.BASE;
-        carry = 1;
-      }
-      ++k;
+      final int t = a[k] + carry;
+      c[k++] = t & Z.BASE_MASK;
+      carry = t >> Z.BASE_BITS;
     }
     // Truncate
     while (--k >= 0 && c[k] == 0) {
@@ -67,63 +59,35 @@ final class Sub {
    */
   static Z subtract(final Z a, final Z b) {
     if (b.getSize() == 0) {
-      return a;
+      return a; // i.e., b == 0
     }
     if (a.getSize() == 0) {
-      return b.negate();
+      return b.negate(); // i.e., a == 0
     }
-
     int sa = a.getSize();
     int sb = b.getSize();
-    final boolean na = sa < 0;
-    if (na == sb < 0) {
+    final boolean signa = sa < 0;
+    if (signa == sb < 0) {
       // signs are the same
       final int cf = Compare.compare(a, b);
       if (cf == 0) {
         return Z.ZERO;
       }
-      final Z aa, bb;
-      if ((cf > 0 && na) || (cf < 0 && !na)) {
-        // swap argument order
-        aa = b;
-        bb = a;
-        sa = sb;
-        sb = a.getSize();
+      final int saa = Math.abs(sa);
+      final int sba = Math.abs(sb);
+      if ((cf > 0 && signa) || (cf < 0 && !signa)) {
+        final int[] c = new int[sba];
+        final int sc = sub(b.mValue, sba, a.mValue, saa, c);
+        return new Z(c, signa ? sc : -sc);
       } else {
-        aa = a;
-        bb = b;
+        final int[] c = new int[saa];
+        final int sc = sub(a.mValue, saa, b.mValue, sba, c);
+        return new Z(c, signa ? -sc : sc);
       }
-      if (na) {
-        sa = -sa;
-        sb = -sb;
-      }
-      final int[] c = new int[sa];
-      int carry = 0;
-      int i = 0;
-      for (; i < sb; ++i) {
-        if ((c[i] = aa.mValue[i] - bb.mValue[i] - carry) >= 0) {
-          carry = 0;
-        } else {
-          c[i] += Z.BASE;
-          carry = 1;
-        }
-      }
-      for (; i < sa; ++i) {
-        if ((c[i] = aa.mValue[i] - carry) >= 0) {
-          carry = 0;
-        } else {
-          c[i] += Z.BASE;
-          carry = 1;
-        }
-      }
-      while (--sa > 0 && c[sa] == 0) {
-        // DO NOTHING
-      }
-      ++sa;
-      return new Z(c, cf > 0 ? sa : -sa);
     } else {
       // signs are different, convert to an addition problem
-      return na ? a.negate().add(b).negate() : Add.add(a, b.negate());
+      // todo avoid these negates!
+      return signa ? a.negate().add(b).negate() : Add.add(a, b.negate());
     }
   }
 }

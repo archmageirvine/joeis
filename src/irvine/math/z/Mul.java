@@ -96,17 +96,26 @@ final class Mul {
    * @return the product <code>a*b</code>
    */
   static Z multiply(final Z a, final Z b) {
-    if (a.getSize() == 0 || b.getSize() == 0) {
-      return Z.ZERO;
+    // Check for small cases
+    final int sa = a.getSize();
+    if (Math.abs(sa) <= 1) {
+      return sa == 0 ? Z.ZERO : multiply(b, sa < 0 ? -a.mValue[0] : a.mValue[0]);
     }
-    if (a == b) {
+    final int sb = b.getSize();
+    if (Math.abs(sb) <= 1) {
+      return sb == 0 ? Z.ZERO : multiply(a, sb < 0 ? -b.mValue[0] : b.mValue[0]);
+    }
+    if (a == b) { // Deliberate use of == rather than equals()
+      // Squaring is faster than general multiply
       return a.square();
     }
-    final boolean na = a.getSize() < 0;
+
+    // todo avoid this modification of internal state!
+    final boolean na = sa < 0;
     if (na) {
       a.mSign = -a.getSize();
     }
-    final boolean nb = b.getSize() < 0;
+    final boolean nb = sb < 0;
     if (nb) {
       b.mSign = -b.getSize();
     }
@@ -133,13 +142,24 @@ final class Mul {
   static Z multiply(final Z a, long b) {
     if (b >= Z.BASE || b <= -Z.BASE) {
       return Mul.multiply(a, Z.valueOf(b));
-    } else if (a.getSize() == 0 || b == 0L) {
+    }
+    // Special cases
+    if (b == 0) {
+      return Z.ZERO;
+    }
+    if (b == 1) {
+      return a;
+    }
+    if (b == -1) {
+      return a.negate();
+    }
+    int sa = a.getSize();
+    if (sa == 0) {
       return Z.ZERO;
     }
 
     // Arrange for both arguments to be positive, but keep track of the
     // sign necessary for the final result
-    int sa = a.getSize();
     final boolean resultNegative;
     if (sa < 0) {
       sa = -sa;

@@ -1,5 +1,7 @@
 package irvine.math.z;
 
+import java.util.Arrays;
+
 /**
  * Multiplication.
  * @author Sean A. Irvine
@@ -9,7 +11,7 @@ final class Mul {
   private Mul() { }
 
   /** Number of digits to use Karatsuba multiplication for. */
-  private static final int KAR_MUL = 100;
+  private static final int KAR_MUL = 20;
   /** Depth of Karatsuba multiplication. */
   static final int KAR_DEPTH = 20;
 
@@ -37,79 +39,58 @@ final class Mul {
     assert sa >= 0;
     assert sb >= 0;
     if (shi >= KAR_DEPTH || sa < KAR_MUL || sb < KAR_MUL) {
+      // Base case, ordinary multiplication
       int sc = sa + sb; // Maximum possible length of the product
       final int[] c = new int[sc];
       mul(a.mValue, sa, b.mValue, sb, c);
-      if (c[sc - 1] == 0) {
+      while (sc > 0 && c[sc - 1] == 0) {
         --sc;
       }
-      assert c[sc - 1] != 0;
+      assert sc == 0 || c[sc - 1] != 0;
       return new Z(c, sc);
     }
 
     // Karatsuba
-    final int hlen = (sa + 1) >>> 1;
+    final int hlen = (sa + 1) >>> 1; // Half the size of a
 
-    // construct the top half of a, equivalent to a >>> hlen * BASE_BITS
-    // final Z aTopHalf = a.shiftRight(hlen * BASE_BITS);
-    final int[] aTop = new int[sa - hlen];
-    System.arraycopy(a.mValue, hlen, aTop, 0, aTop.length);
-    final Z aTopHalf = new Z(aTop, aTop.length);
-
-    // now truncate a to its bottom half, taking care with the special
+    // Construct the top half, equivalent to a >>> hlen * BASE_BITS
+    final int[] ahi = Arrays.copyOfRange(a.mValue, hlen, sa);
+    final Z aHi = new Z(ahi, ahi.length);
+    // Truncate "a" to its bottom half, taking care with the special
     // case where leading digits of the bottom half are zero
-    int z = hlen;
-    while (--z >= 0 && a.mValue[z] == 0) {
-      // DO NOTHING
+    int saLo = hlen;
+    while (saLo > 0 && a.mValue[saLo - 1] == 0) {
+      --saLo;
     }
-    a.mSign = z + 1;
+    final Z aLo = new Z(a.mValue, saLo);
 
-    final boolean bigb = hlen < b.getSize();
-    if (bigb) {
-      // truncate b to its bottom half
-      z = hlen;
-      while (--z >= 0 && b.mValue[z] == 0) {
-        // DO NOTHING
+    if (hlen < b.getSize()) {
+      // Truncate b to its bottom half
+      int sbLo = hlen;
+      while (sbLo > 0 && b.mValue[sbLo - 1] == 0) {
+        --sbLo;
       }
-      b.mSign = z + 1;
-    }
-
-    final Z abBottom = karMul(a, b, shi + 1);
-    final Z aAdd = Add.add(a, aTopHalf);
-    a.mSign = sa; // restore a to full value
-
-    Z r;
-    Z ccc = null;
-    if (bigb) {
-      // final Z bTopHalf = b.shiftRight(hlen * BASE_BITS);
-      final int[] bTop = new int[sb - hlen];
-      System.arraycopy(b.mValue, hlen, bTop, 0, bTop.length);
-      final Z bTopHalf = new Z(bTop, bTop.length);
-      ccc = karMul(aTopHalf, bTopHalf, shi + 1);
-      r = karMul(aAdd, Add.add(b, bTopHalf), shi + 1);
-      b.mSign = sb; // restore b to full value
+      final Z bLo = new Z(b.mValue, sbLo);
+      final Z abLo = karMul(aLo, bLo, shi + 1);
+      final Z aAdd = Add.add(aLo, aHi);
+      final int[] bhi = Arrays.copyOfRange(b.mValue, hlen, sb);
+      final Z bTopHalf = new Z(bhi, bhi.length);
+      final Z c = karMul(aHi, bTopHalf, shi + 1);
+      final Z r = Sub.sub(Sub.sub(karMul(aAdd, Add.add(bLo, bTopHalf), shi + 1), abLo), c);
+      final Z rs = r.shiftLeft((long) hlen * Z.BASE_BITS);
+      final Z cs = c.shiftLeft((long) hlen * 2 * Z.BASE_BITS);
+      System.arraycopy(abLo.mValue, 0, cs.mValue, 0, abLo.getSize());
+      return Add.add(cs, rs);
     } else {
-      r = karMul(aAdd, b, shi + 1);
+      final Z abLo = karMul(aLo, b, shi + 1);
+      final Z aAdd = Add.add(aLo, aHi);
+      final Z r = Sub.sub(karMul(aAdd, b, shi + 1), abLo).shiftLeft((long) hlen * Z.BASE_BITS);
+      return Add.add(abLo, r);
     }
-
-    r = Sub.sub(r, abBottom);
-    if (bigb) {
-      r = Sub.sub(r, ccc);
-    }
-    r = r.shiftLeft((long) hlen * Z.BASE_BITS);
-    if (bigb) {
-      ccc = ccc.shiftLeft(((long) hlen << 1) * Z.BASE_BITS);
-      // ccc = ccc + abBottom (can do with copy since no overlap)
-      System.arraycopy(abBottom.mValue, 0, ccc.mValue, 0, abBottom.getSize());
-    } else {
-      ccc = abBottom;
-    }
-    return Add.add(ccc, r);
   }
 
   /**
    * Compute the product of this integer with another integer.
-   *
    * @param a multiplicand
    * @param b multiplicand
    * @return the product <code>a*b</code>

@@ -75,7 +75,7 @@ public final class Timing {
   }
 
   private static void timeTest(final String name, final Operation<BigInteger> op1, final Operation<Z> op2) {
-    System.out.println("Timing for: " + name);
+    System.out.println("Timing for: " + name + " bits=" + Z.BASE_BITS);
     for (int k = START_BITS; k <= 1966080; k *= INCREMENT_FACTOR) {
       final BigInteger[] vector = vector(k);
       final Z[] z = vector(vector);
@@ -96,7 +96,7 @@ public final class Timing {
 
   // This handle Z.divide(long)
   private static void timeTest2(final String name, final Operation<BigInteger> op1, final Operation2<Z, Long> op2) {
-    System.out.println("Timing for: " + name);
+    System.out.println("Timing for: " + name + " bits=" + Z.BASE_BITS);
     for (int k = START_BITS; k <= 1966080; k *= INCREMENT_FACTOR) {
       final BigInteger[] vec1 = vector(k);
       final Z[] z = vector(vec1);
@@ -149,12 +149,30 @@ public final class Timing {
    * @param args ignored
    */
   public static void main(final String... args) {
-    //timeTest("add", BigInteger::add, Z::add);
-    //timeTest("subtract", BigInteger::subtract, Z::subtract);
-    timeTest("multiply", BigInteger::multiply, Z::multiply);
-    //timeTest2("multiply-long", BigInteger::multiply, Z::multiply);
-    //timeTest("mod", BigInteger::mod, Z::mod);
-    //timeTest("divide", BigInteger::divide, Z::divide);
-    //timeTest2("divide-long", BigInteger::divide, Z::divide);
+    switch (args[0]) {
+      case "add":
+        timeTest("add", BigInteger::add, Z::add);
+        break;
+      case "subtract":
+        timeTest("subtract", BigInteger::subtract, Z::subtract);
+        break;
+      case "multiply":
+        timeTest("multiply", BigInteger::multiply, Z::multiply);
+        break;
+      case "multiply-long":
+        timeTest2("multiply-long", BigInteger::multiply, Z::multiply);
+        break;
+      case "mod":
+        timeTest("mod", BigInteger::mod, Z::mod);
+        break;
+      case "divide":
+        timeTest("divide", BigInteger::divide, Z::divide);
+        break;
+      case "divide-long":
+        timeTest2("divide-long", BigInteger::divide, Z::divide);
+        break;
+      default:
+        throw new RuntimeException("Unknown test: " + args[0]);
+    }
   }
 }

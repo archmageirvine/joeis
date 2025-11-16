@@ -13,56 +13,46 @@ final class Mul {
   /** Depth of Karatsuba multiplication. */
   static final int KAR_DEPTH = 20;
 
+  /*
+   * Perform a * b placing the result in c (assumed to have enough space).
+   */
+  private static void mul(final int[] a, final int sa, final int[] b, final int sb, final int[] c) {
+    for (int i = 0; i < sa; ++i) {
+      final long s = a[i];
+      int k = i;
+      long carry = 0;
+      for (int j = 0; j < sb; ++j, ++k) {
+        final long t = b[j] * s + c[k] + carry;
+        c[k] = (int) (t & Z.BASE_MASK);
+        carry = t >>> Z.BASE_BITS;
+      }
+      c[k] += carry;
+    }
+  }
+
   /* Karatsuba multiplication. */
   static Z karMul(final Z a, final Z b, final int shi) {
-    final int alen = a.getSize();
-    final int blen = b.getSize();
-    assert alen >= 0;
-    assert blen >= 0;
-    if (shi >= KAR_DEPTH || alen < KAR_MUL || blen < KAR_MUL) {
-      int clen = alen + blen; // inside first loop?
-      final int[] cc = new int[clen];
-      if (alen <= blen) {
-        for (int i = 0; i < alen; ++i) {
-          final long s = a.mValue[i];
-          int k = i;
-          long carry = 0;
-          for (int j = 0; j < blen; ++j, ++k) {
-            final int bb = b.mValue[j];
-            final long tt = cc[k] + carry;
-            final long aa = tt + bb * s;
-            carry = aa >>> Z.BASE_BITS;
-            cc[k] = (int) (aa & Z.BASE_MASK);
-          }
-          cc[k] += carry;
-        }
-      } else {
-        for (int i = 0; i < blen; ++i) {
-          final long s = b.mValue[i];
-          int k = i;
-          long carry = 0;
-          for (int j = 0; j < alen; ++j, ++k) {
-            final int bb = a.mValue[j];
-            final long tt = cc[k] + carry;
-            final long aa = tt + bb * s;
-            carry = aa >>> Z.BASE_BITS;
-            cc[k] = (int) (aa & Z.BASE_MASK);
-          }
-          cc[k] += carry;
-        }
+    final int sa = a.getSize();
+    final int sb = b.getSize();
+    assert sa >= 0;
+    assert sb >= 0;
+    if (shi >= KAR_DEPTH || sa < KAR_MUL || sb < KAR_MUL) {
+      int sc = sa + sb; // Maximum possible length of the product
+      final int[] c = new int[sc];
+      mul(a.mValue, sa, b.mValue, sb, c);
+      if (c[sc - 1] == 0) {
+        --sc;
       }
-      while (clen-- > 0 && cc[clen] == 0) {
-        // DO NOTHING
-      }
-      return new Z(cc, clen + 1);
+      assert c[sc - 1] != 0;
+      return new Z(c, sc);
     }
 
     // Karatsuba
-    final int hlen = (alen + 1) >>> 1;
+    final int hlen = (sa + 1) >>> 1;
 
     // construct the top half of a, equivalent to a >>> hlen * BASE_BITS
     // final Z aTopHalf = a.shiftRight(hlen * BASE_BITS);
-    final int[] aTop = new int[alen - hlen];
+    final int[] aTop = new int[sa - hlen];
     System.arraycopy(a.mValue, hlen, aTop, 0, aTop.length);
     final Z aTopHalf = new Z(aTop, aTop.length);
 
@@ -86,35 +76,35 @@ final class Mul {
 
     final Z abBottom = karMul(a, b, shi + 1);
     final Z aAdd = Add.add(a, aTopHalf);
-    a.mSign = alen; // restore a to full value
+    a.mSign = sa; // restore a to full value
 
     Z r;
-    Z c = null;
+    Z ccc = null;
     if (bigb) {
       // final Z bTopHalf = b.shiftRight(hlen * BASE_BITS);
-      final int[] bTop = new int[blen - hlen];
+      final int[] bTop = new int[sb - hlen];
       System.arraycopy(b.mValue, hlen, bTop, 0, bTop.length);
       final Z bTopHalf = new Z(bTop, bTop.length);
-      c = karMul(aTopHalf, bTopHalf, shi + 1);
+      ccc = karMul(aTopHalf, bTopHalf, shi + 1);
       r = karMul(aAdd, Add.add(b, bTopHalf), shi + 1);
-      b.mSign = blen; // restore b to full value
+      b.mSign = sb; // restore b to full value
     } else {
       r = karMul(aAdd, b, shi + 1);
     }
 
     r = Sub.sub(r, abBottom);
     if (bigb) {
-      r = Sub.sub(r, c);
+      r = Sub.sub(r, ccc);
     }
     r = r.shiftLeft((long) hlen * Z.BASE_BITS);
     if (bigb) {
-      c = c.shiftLeft(((long) hlen << 1) * Z.BASE_BITS);
-      // c = c + abBottom (can do with copy since no overlap)
-      System.arraycopy(abBottom.mValue, 0, c.mValue, 0, abBottom.getSize());
+      ccc = ccc.shiftLeft(((long) hlen << 1) * Z.BASE_BITS);
+      // ccc = ccc + abBottom (can do with copy since no overlap)
+      System.arraycopy(abBottom.mValue, 0, ccc.mValue, 0, abBottom.getSize());
     } else {
-      c = abBottom;
+      ccc = abBottom;
     }
-    return Add.add(c, r);
+    return Add.add(ccc, r);
   }
 
   /**

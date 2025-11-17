@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A216979 Primes of the form n^6+2.
+ * A216979 Primes of the form k^6+2.
  * @author Georg Fischer
  */
 public class A216979 extends PrimeSubsequence {

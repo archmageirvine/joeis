@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.math.z.Z;
 
 /**
- * A025696 Index of 3^n within sequence of numbers of form 3^i*4^j.
+ * A025696 Index of 3^n within the sequence of the numbers of the form 3^i*4^j.
  * @author Sean A. Irvine
  */
 public class A025696 extends A025613 {

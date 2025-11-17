@@ -12,10 +12,10 @@ import irvine.oeis.a032.A032445;
  */
 public class A176341 extends Sequence0 {
 
-  final Sequence mA032445 = new A032445();
+  private final Sequence mA032445 = new A032445();
+
   @Override
   public Z next() {
     return mA032445.next().subtract(Z.ONE);
   }
-
 }

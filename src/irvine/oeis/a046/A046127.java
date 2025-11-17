@@ -4,7 +4,7 @@ package irvine.oeis.a046;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A046127 Maximal number of regions into which space can be divided by n spheres.
+ * A046127 a(0) = 0; for n&gt;0, a(n) = maximal number of regions into which space can be divided by n spheres.
  * @author Georg Fischer
  */
 public class A046127 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A126435 Primes of the form n^7-n-1.
+ * A126435 Primes of the form k^7-k-1.
  * @author Georg Fischer
  */
 public class A126435 extends PrimeSubsequence {

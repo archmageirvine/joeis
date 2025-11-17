@@ -5,7 +5,7 @@ import irvine.oeis.a139.A139250;
 import irvine.oeis.a147.A147562;
 
 /**
- * A390468 allocated for Omar E. Pol.
+ * A390468 Average of the number of "ON" cells at n-th stage in the "Ulam-Warburton" two-dimensional cellular automaton (A147562) and the number of toothpicks at n-th stage in the "Toothpick" two-dimensional automaton (A139250).
  * @author Sean A. Irvine
  */
 public class A390468 extends Combiner {

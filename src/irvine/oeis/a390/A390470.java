@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A390470 allocated for Juri-Stepan Gerasimov.
+ * A390470 Number of positive z &lt;= n such that z^2 - 25^g is relatively prime to n (for any particular positive integer g).
  * @author Sean A. Irvine
  */
 public class A390470 extends MultiplicativeSequence {

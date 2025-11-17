@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002385;
 
 /**
- * A088271 Palindromic primes that yield a prime when sandwiched between two 7&apos;s. (Prefixing and suffixing a &apos;seven&apos; on both sides yields another pal prime).
+ * A088271 Palindromic primes that yield a prime when sandwiched between two 7's. (Prefixing and suffixing a 'seven' on both sides yields another pal prime).
  * @author Georg Fischer
  */
 public class A088271 extends FilterSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003595;
 
 /**
- * A025708 Index of 5^n within sequence of numbers of form 5^i*7^j.
+ * A025708 Index of 5^n within the sequence of the numbers of the form 5^i*7^j.
  * @author Sean A. Irvine
  */
 public class A025708 extends A003595 {

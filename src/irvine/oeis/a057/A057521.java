@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a055.A055231;
 /**
- * A057521 Powerful (1) part of n: if n = Product_i (pi^ei) then a(n) = Product_{i : ei &gt; 1} (pi^ei); if n=b*c^2*d^3 then a(n)=c^2*d^3 when b is minimized.
+ * A057521 Powerful part of n: if n = Product_i (pi^ei) then a(n) = Product_{i : ei &gt; 1} (pi^ei); if n = b*c^2*d^3 then a(n) = c^2*d^3 when b is minimized.
  * @author Georg Fischer
  */
 public class A057521 extends Sequence1 {

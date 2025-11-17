@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a075.A075834;
 
 /**
- * A390400 allocated for Juan B. Gil.
+ * A390400 Number of chord-connected permutations on [n].
  * @author Sean A. Irvine
  */
 public class A390400 extends Sequence1 {

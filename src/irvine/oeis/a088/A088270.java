@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002385;
 
 /**
- * A088270 Palindromic primes that yield a prime when sandwiched between two 3&apos;s. (Prefixing and suffixing a -three&apos; on both sides yields another pal prime).
+ * A088270 Palindromic primes that yield a prime when sandwiched between two 3's. (Prefixing and suffixing a -three' on both sides yields another pal prime).
  * @author Georg Fischer
  */
 public class A088270 extends FilterSequence {

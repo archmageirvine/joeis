@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A096344 Number of 1&apos;s in binary expansion(sum of digits(n^n)).
+ * A096344 Number of 1's in binary expansion(sum of digits(n^n)).
  * @author Georg Fischer
  */
 public class A096344 extends LambdaSequence {

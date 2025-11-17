@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002385;
 
 /**
- * A088272 Palindromic primes that yield a prime when sandwiched between two 9&apos;s.
+ * A088272 Palindromic primes that yield a prime when sandwiched between two 9's.
  * @author Georg Fischer
  */
 public class A088272 extends FilterSequence {

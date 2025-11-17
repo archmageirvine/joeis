@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A390396 allocated for Marc Morgenegg.
+ * A390396 Least positive integer not the sum, product or power of any previous pair of distinct terms.
  * @author Sean A. Irvine
  */
 public class A390396 extends CachedSequence {

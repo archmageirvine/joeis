@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A216996 Numbers n such that the digit sum of n*7 is a multiple of 7.
+ * A216996 Numbers k such that the digit sum of k*7 is a multiple of 7.
  * @author Georg Fischer
  */
 public class A216996 extends FilterNumberSequence {

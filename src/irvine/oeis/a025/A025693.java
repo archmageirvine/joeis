@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003591;
 
 /**
- * A025693 Index of 2^n within sequence of numbers of form 2^i*7^j.
+ * A025693 Index of 2^n within the sequence of the numbers of the form 2^i*7^j.
  * @author Sean A. Irvine
  */
 public class A025693 extends A003591 {

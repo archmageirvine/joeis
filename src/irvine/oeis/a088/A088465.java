@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A088465 Primes whose leftmost decimal digit is 1 and whose other decimal digits are all 7&apos;s.
+ * A088465 Primes whose leftmost decimal digit is 1 and whose other decimal digits are all 7's.
  * @author Georg Fischer
  */
 public class A088465 extends FilterSequence {

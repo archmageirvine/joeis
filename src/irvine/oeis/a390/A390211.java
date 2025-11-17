@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390211 allocated for Heath Davison Lunt.
+ * A390211 Canonical coin systems; numbers k where the positions of 1-bits in the binary expansion of k give the coin denominations of a canonical coin system.
  * @author Sean A. Irvine
  */
 public class A390211 extends Sequence1 {

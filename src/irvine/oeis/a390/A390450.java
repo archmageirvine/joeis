@@ -3,7 +3,7 @@ package irvine.oeis.a390;
 import irvine.oeis.a336.A336282;
 
 /**
- * A390450 allocated for Manolopoulos Panagiotis.
+ * A390450 Sum of indices of the positions of 2 in all heapable permutations of length n (positions starting from 0).
  * @author Sean A. Irvine
  */
 public class A390450 extends A336282 {

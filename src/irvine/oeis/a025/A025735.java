@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.math.z.Z;
 
 /**
- * A025735 Index of 9^n within sequence of numbers of form 5^i*9^j.
+ * A025735 Index of 9^n within the sequence of the numbers of the form 5^i*9^j.
  * @author Sean A. Irvine
  */
 public class A025735 extends A025624 {

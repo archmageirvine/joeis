@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A126421 Numbers n for which n^3-n-1 is prime.
+ * A126421 Numbers k for which k^3-k-1 is prime.
  * @author Georg Fischer
  */
 public class A126421 extends PrimePositionSubsequence {

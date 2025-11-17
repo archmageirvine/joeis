@@ -4,7 +4,7 @@ package irvine.oeis.a080;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A080485 a(1) = 1, a(2) = a(1), a(3) = a(1) + a(2)^2, etc. a(n) = a(n-1) + a(n-1)^(n-1).
+ * A080485 a(1) = 1; thereafter a(n) = a(n-1) + a(n-1)^(n-1).
  * @author Georg Fischer
  */
 public class A080485 extends MultiTransformSequence {

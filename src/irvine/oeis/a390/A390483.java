@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002819;
 
 /**
- * A390483 allocated for Henri Lifchitz.
+ * A390483 Values of L(2^n), where L(n) is the summatory function of the Liouville function A008836(n).
  * @author Sean A. Irvine
  */
 public class A390483 extends Sequence0 {

@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 import irvine.oeis.a053.A053433;
 
 /**
- * A247809 Numbers in decimal representation with distinct digits, such that in Norwegian and Swedish their digits are in alphabetic order.
+ * A247809 Numbers in decimal representation with distinct digits, such that in Swedish their digits are in alphabetic order.
  * @author Sean A. Irvine
  */
 public class A247809 extends A053433 {

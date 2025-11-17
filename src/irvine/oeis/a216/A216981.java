@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A216981 Primes of the form n^7+2.
+ * A216981 Primes of the form k^7+2.
  * @author Georg Fischer
  */
 public class A216981 extends FilterSequence {

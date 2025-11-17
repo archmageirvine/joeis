@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a024.A024451;
 
 /**
- * A389596 allocated for Pablo Cadena-Urz\u00faa.
+ * A389596 Harmonic-mean index of primes: a(1) = 0 and thereafter a(n) = floor( n / (2*H(n)) ), where H(n) = Sum_{k=1..n} 1/prime(k).
  * @author Sean A. Irvine
  */
 public class A389596 extends Sequence1 {

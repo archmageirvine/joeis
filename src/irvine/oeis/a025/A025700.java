@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A025700 Index of 3^n within sequence of numbers of form 3^i * 10^j.
+ * A025700 Index of 3^n within the sequence of the numbers of the form 3^i * 10^j.
  * @author Sean A. Irvine
  */
 public class A025700 extends AbstractSequence {

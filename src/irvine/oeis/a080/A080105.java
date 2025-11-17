@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A080105 Round(113*phi^n).
+ * A080105 a(n) = round(113*phi^n).
  * @author Georg Fischer
  */
 public class A080105 extends FloorSequence {

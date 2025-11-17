@@ -4,7 +4,7 @@ package irvine.oeis.a273;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A273324 Integers n such that n^2 + 3 is the sum of 4 but no fewer nonzero squares.
+ * A273324 Integers m such that m^2 + 3 is the sum of 4 but no fewer nonzero squares.
  * @author Georg Fischer
  */
 public class A273324 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
 
 /**
- * A188527 a(n) = A188526(n) / 7.
+ * A188527 a(n) = A188526(n)/7.
  * @author Georg Fischer
  */
 public class A188527 extends Sequence0 {

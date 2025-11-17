@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005185;
 
 /**
- * A081829 Numbers n such that the n-th term of Hofstadter Q-sequence is &gt; (n+1)-th term.
+ * A081829 Numbers k such that the k-th term of Hofstadter Q-sequence is &gt; (k+1)-th term.
  * @author Sean A. Irvine
  */
 public class A081829 extends A005185 {

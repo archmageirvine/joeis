@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A390484 allocated for Jean-Marc Rebert.
+ * A390484 Smallest prime obtained by concatenating a permutation of the divisors of A390451(n).
  * @author Sean A. Irvine
  */
 public class A390484 extends Sequence1 {

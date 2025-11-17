@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A216968 Numbers n such that 2*n^2 + 3 is prime.
+ * A216968 Numbers k such that 2*k^2 + 3 is prime.
  * @author Georg Fischer
  */
 public class A216968 extends PrimePositionSubsequence {

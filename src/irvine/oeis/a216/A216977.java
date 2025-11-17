@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A216977 Primes of the form n^5+2.
+ * A216977 Primes of the form k^5+2.
  * @author Georg Fischer
  */
 public class A216977 extends PrimeSubsequence {

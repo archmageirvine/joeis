@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002385;
 
 /**
- * A088269 Palindromic primes that yield a prime when sandwiched between two 1&apos;s. (Prefixing and suffixing a 1 on both sides yields another palindromic prime.)
+ * A088269 Palindromic primes that yield a prime when sandwiched between two 1's. (Prefixing and suffixing a 1 on both sides yields another palindromic prime.).
  * @author Georg Fischer
  */
 public class A088269 extends FilterSequence {

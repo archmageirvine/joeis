@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390524 allocated for Stefano Spezia.
+ * A390524 Array read by ascending antidiagonals: A(n, k) = k * Fibonacci(n).
  * @author Sean A. Irvine
  */
 public class A390524 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000105;
 import irvine.oeis.a000.A000988;
 
 /**
- * A030228 Number of chiral polyominoes with n cells.
+ * A030228 Number of chiral pairs of polyominoes with n cells.
  * @author Sean A. Irvine
  */
 public class A030228 extends Combiner {

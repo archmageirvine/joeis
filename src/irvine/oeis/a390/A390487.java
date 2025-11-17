@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A390487 allocated for Benjamin W P Cornish.
+ * A390487 Numbers k with the property that k is the next lexicographically earliest number that cannot be expressed as a linear sum of the squares of preceding terms of the sequence with coefficients of 0, +1 or -1, with a(1)=1.
  * @author Sean A. Irvine
  */
 public class A390487 extends Sequence1 {

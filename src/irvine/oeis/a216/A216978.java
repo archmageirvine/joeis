@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A216978 Numbers n such that n^6+2 is prime.
+ * A216978 Numbers k such that k^6+2 is prime.
  * @author Georg Fischer
  */
 public class A216978 extends PrimePositionSubsequence {

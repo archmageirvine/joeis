@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.math.z.Z;
 
 /**
- * A025703 Index of 4^n within sequence of numbers of form 4^i*6^j.
+ * A025703 Index of 4^n within the sequence of the numbers of the form 4^i*6^j.
  * @author Sean A. Irvine
  */
 public class A025703 extends A025618 {

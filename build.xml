@@ -195,9 +195,10 @@
   </target>
   
   <target name="prepare-tests" depends="compile-internal" description="Get the file stripped.gz from the OEIS server and preprocess it for the tests">
-    <subant target="expand-vectors">
-      <filelist dir="${test.dir}/irvine/oeis" files="build.xml"/>
-    </subant>
+    <get src="http://oeis.org/stripped.gz" dest="${test.dir}/irvine/oeis/stripped.zip"/>
+    <java classname="irvine.oeis.Stripped" classpath="${build.dir}/classes">
+      <arg value="."/>
+    </java>
   </target>
 
   <target name="all-tests" depends="prepare-tests,all-jar" description="Run all JUnit tests">

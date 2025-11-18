@@ -8,7 +8,7 @@ MAKE_DIR:=$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 all: seq/000
 
 seq/000: stripped.gz
-	java irvine.oeis.Stripped ../../..
+	java -cp $(CLASSPATH) irvine.oeis.Stripped ../../..
 
 stripped.gz:
 	wget --quiet http://oeis.org/stripped.gz

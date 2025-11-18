@@ -1,0 +1,38 @@
+package irvine.oeis.a389;
+
+import irvine.math.MemoryFunction1;
+import irvine.math.q.Q;
+import irvine.math.series.RationalSeriesEnum;
+import irvine.math.series.Series;
+import irvine.math.series.SeriesRing;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
+
+/**
+ * A389567 allocated for Thomas Scheuerle.
+ * @author Sean A. Irvine
+ */
+public class A389567 extends Sequence1 {
+
+  private int mN = 0;
+  private final MemoryFunction1<Series<Q>> mE = new MemoryFunction1<>() {
+    @Override
+    protected Series<Q> compute(final int n) {
+      return SeriesRing.SQ.pow(RationalSeriesEnum.ETA.s(), n);
+    }
+  };
+
+  @Override
+  public Z next() {
+    ++mN;
+    int cnt = 0;
+    for (int k = 0; k <= 4 * mN; ++k) {
+      final Q c = mE.get(k).coeff(mN);
+      if (c.isZero()) {
+        ++cnt;
+      }
+    }
+    return Z.valueOf(cnt);
+  }
+}
+

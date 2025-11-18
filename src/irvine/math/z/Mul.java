@@ -11,14 +11,14 @@ final class Mul {
   private Mul() { }
 
   /** Number of digits to use Karatsuba multiplication for. */
-  private static final int KAR_MUL = 20;
+  private static final int KAR_MUL = 30;
   /** Depth of Karatsuba multiplication. */
   static final int KAR_DEPTH = 20;
 
   /*
    * Perform a * b placing the result in c (assumed to have enough space).
    */
-  private static void mul(final int[] a, final int sa, final int[] b, final int sb, final int[] c) {
+  private static int mul(final int[] a, final int sa, final int[] b, final int sb, final int[] c) {
     for (int i = 0; i < sa; ++i) {
       final long s = a[i];
       int k = i;
@@ -30,6 +30,12 @@ final class Mul {
       }
       c[k] += carry;
     }
+    int sc = c.length;
+    while (sc > 0 && c[sc - 1] == 0) {
+      --sc;
+    }
+    assert sc == 0 || c[sc - 1] != 0;
+    return sc;
   }
 
   /* Karatsuba multiplication. */
@@ -40,13 +46,8 @@ final class Mul {
     assert sb >= 0;
     if (shi >= KAR_DEPTH || sa < KAR_MUL || sb < KAR_MUL) {
       // Base case, ordinary multiplication
-      int sc = sa + sb; // Maximum possible length of the product
-      final int[] c = new int[sc];
-      mul(a.mValue, sa, b.mValue, sb, c);
-      while (sc > 0 && c[sc - 1] == 0) {
-        --sc;
-      }
-      assert sc == 0 || c[sc - 1] != 0;
+      final int[] c = new int[sa + sb]; // Maximum possible length of the product
+      final int sc = mul(a.mValue, sa, b.mValue, sb, c);
       return new Z(c, sc);
     }
 

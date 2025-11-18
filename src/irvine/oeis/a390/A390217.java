@@ -13,12 +13,21 @@ import irvine.oeis.Sequence0;
  */
 public class A390217 extends Sequence0 {
 
-  private static final int COLOURS = 4;
+  protected final int mColours;
   private int mN = -1;
   private final HashMap<String, Long> mCounts = new HashMap<>();
 
+  protected A390217(final int colours) {
+    mColours = colours;
+  }
+
+  /** Construct the sequence. */
+  public A390217() {
+    this(4);
+  }
+
   protected boolean accept(final int sum) {
-    return (sum & 3) == 0;
+    return (sum % mColours) == 0;
   }
 
   private long count(final int[] p, final int pos, final int prevColor, final int sum) {
@@ -27,7 +36,7 @@ public class A390217 extends Sequence0 {
     }
     final int startColour = pos == 0 || p[pos - 1] != p[pos] ? 0 : prevColor;
     long total = 0;
-    for (int c = startColour; c < COLOURS; ++c) {
+    for (int c = startColour; c < mColours; ++c) {
       total += count(p, pos + 1, c, sum + c);
     }
     return total;

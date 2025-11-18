@@ -195,7 +195,7 @@
   </target>
   
   <target name="prepare-tests" depends="compile-internal" description="Get the file stripped.gz from the OEIS server and preprocess it for the tests">
-    <get src="http://oeis.org/stripped.gz" dest="${test.dir}/irvine/oeis/stripped.zip"/>
+    <get src="https://oeis.org/stripped.gz" dest="${test.dir}/irvine/oeis/stripped.zip"/>
     <java classname="irvine.oeis.Stripped" classpath="${build.dir}/classes">
       <arg value="."/>
     </java>

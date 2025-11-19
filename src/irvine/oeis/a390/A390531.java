@@ -35,6 +35,9 @@ public class A390531 extends Sequence1 {
             }
           }
           used[k] = false;
+          if (current == 0) {
+            break; // WLOG, starting a new bin should always be able to use largest unused
+          }
         }
       }
     }
@@ -44,11 +47,10 @@ public class A390531 extends Sequence1 {
   private boolean is(final int k, final long sum) {
     final long m = sum / mN; // size of each bin
     final boolean[] used = new boolean[k];
-    used[k - 1] = true; // WLOG place the largest prime in first bin
     if (mVerbose) {
       StringUtils.message("Trying bins=" + mN + " binsize=" + m + " primes=" + k);
     }
-    return is(used, m, Functions.PRIME.l(k), 0, used.length);
+    return is(used, m, 0, 0, used.length);
   }
 
   @Override

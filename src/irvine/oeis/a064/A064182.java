@@ -10,7 +10,7 @@ import irvine.oeis.Sequence0;
  */
 public class A064182 extends Sequence0 {
 
-  private long mLim = 0;
+  protected long mLim = 0;
   private long mN = 1;
   private Z mSum = Z.ZERO;
 

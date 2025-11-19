@@ -11,8 +11,6 @@ import irvine.oeis.Sequence1;
  */
 public class A115396 extends Sequence1 {
 
-  // todo does not reproduce data
-
   private final Fast mPrime = new Fast();
   private long mN = 0;
 

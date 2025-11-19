@@ -89,7 +89,9 @@ public final class FactorSequence {
    * @param n number with unknown status
    */
   public FactorSequence(final Z n) {
-    add(n);
+    if (n != null) {
+      add(n);
+    }
   }
 
   /**
@@ -762,7 +764,7 @@ public final class FactorSequence {
    * @param power the power
    * @return this factor sequence for chaining
    */
-  public FactorSequence pow(final int power) {
+  public FactorSequence pow(final long power) {
     final FactorSequence fs = mLocked ? new FactorSequence(this) : this;
     for (final Factor f : fs.mFactors.values()) {
       f.mExponent *= power;

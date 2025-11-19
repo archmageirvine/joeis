@@ -5,7 +5,7 @@ package irvine.oeis.a098;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A098662 E.g.f. BesselI(0,2*sqrt(3)*x) + BesselI(1,2*sqrt(3)*x)/sqrt(3).
+ * A098662 Expansion of e.g.f. BesselI(0,2*sqrt(3)*x) + BesselI(1,2*sqrt(3)*x)/sqrt(3).
  * radtorec(1/6*(1+6*x-(-12*x^2+1)^(1/2))/x/(-12*x^2+1)^(1/2))
  * @author Georg Fischer
  */

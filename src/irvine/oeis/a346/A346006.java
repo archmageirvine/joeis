@@ -4,7 +4,7 @@ package irvine.oeis.a346;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A346006 Successive numbers arising from the Moessner construction of the sequence of fourth powers on page 64 of Conway-Guy&apos;s &quot;Book of Numbers&quot;.
+ * A346006 Successive numbers arising from the Moessner construction of the sequence of fourth powers on page 64 of Conway-Guy's "Book of Numbers".
  * @author Georg Fischer
  */
 public class A346006 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390421.
+ * A390578 Numbers k such that sigma(k) = psi(k) + phi(k) + tau(k)^3.
  * @author Sean A. Irvine
  */
 public class A390578 extends Sequence1 {

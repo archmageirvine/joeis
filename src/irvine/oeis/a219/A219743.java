@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterLambdaSequence;
 
 /**
- * A219743 Number for which the number of distinct base 10 digits is 8.
+ * A219743 Numbers for which the number of distinct base 10 digits is 8.
  * @author Georg Fischer
  */
 public class A219743 extends FilterLambdaSequence {

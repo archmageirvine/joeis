@@ -64,8 +64,8 @@ final class Sub {
     if (a.getSize() == 0) {
       return b.negate(); // i.e., a == 0
     }
-    int sa = a.getSize();
-    int sb = b.getSize();
+    final int sa = a.getSize();
+    final int sb = b.getSize();
     final boolean signa = sa < 0;
     if (signa == sb < 0) {
       // Signs are the same, a - b or (-a) - (-b)

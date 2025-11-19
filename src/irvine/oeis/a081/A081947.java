@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081942.
+ * A081947 Smallest prime which is one more than the product of n distinct numbers.
  * @author Sean A. Irvine
  */
 public class A081947 extends Sequence1 {

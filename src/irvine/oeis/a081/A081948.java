@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081942.
+ * A081948 Smallest square which is one more than the product of n distinct numbers &gt; 1.
  * @author Sean A. Irvine
  */
 public class A081948 extends Sequence1 {

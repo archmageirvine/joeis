@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a085.A085753;
 
 /**
- * A089542 a(n) is the least semiprime &gt; n^n.
+ * A089542 a(n) is the least semiprime &gt;= n^n.
  * @author Georg Fischer
  */
 public class A089542 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A389357 allocated for Patrick Demichel.
+ * A389357 Numerators E(n) in the closed form of the integral J(2n+1) = Integral_{x=0..Pi/2} x * cos(x)^(2n+1) dx = binomial(2n+1,n)/2^(2n+2) * Pi - E(n)/F(n).
  * @author Sean A. Irvine
  */
 public class A389357 extends Sequence0 {

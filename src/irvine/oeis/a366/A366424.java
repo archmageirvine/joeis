@@ -4,7 +4,7 @@ package irvine.oeis.a366;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A366424 The Bo Diddley beat. Periodic musical rhythm, embedded into a sequence of measured regular units of duration for both notes and rests. All terms except a(3 + 6*k) = 2 mark the lengths of notes. a(3 + 6*k) = 2 being a single rest of length 2 within each per
+ * A366424 The Bo Diddley beat. Periodic musical rhythm, embedded into a sequence of measured regular units of duration for both notes and rests. All terms except a(3 + 6*k) = 2 mark the lengths of notes. a(3 + 6*k) = 2 being a single rest of length 2 within each period of 6, where k &gt;= 0.
  * @author Georg Fischer
  */
 public class A366424 extends HolonomicRecurrence {

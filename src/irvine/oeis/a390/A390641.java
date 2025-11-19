@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390421.
+ * A390641 Numbers k such that the sum of k and 3 times the sum of its prime factors, counted with multiplicity, is prime.
  * @author Sean A. Irvine
  */
 public class A390641 extends Sequence1 {

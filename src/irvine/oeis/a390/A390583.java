@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390583 allocated for Charles L. Hohn.
+ * A390583 Rectangular array read by rows of ordered quadruples of coprime positive integers {r1..r4} for which circles of radius r1..r4 can be arranged as mutually externally tangent to one another, with rows in lexicographic order.
  * @author Sean A. Irvine
  */
 public class A390583 extends Sequence1 {

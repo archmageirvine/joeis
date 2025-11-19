@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A179161 Numbers n such that Mordell's equation y^2 = x^3 + n has exactly 24 integral solutions.
+ * A179161 Numbers k such that Mordell's equation y^2 = x^3 + k has exactly 24 integral solutions.
  *
  * @author Georg Fischer
  */

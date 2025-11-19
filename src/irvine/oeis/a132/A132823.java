@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000012;
 import irvine.oeis.a007.A007318;
 import irvine.oeis.a103.A103451;
 /**
- * A132823 A007318 + 2*A103451 - 2*A000012.
+ * A132823 Triangle read by rows: T(n,k) = binomial(n,k) - 2 for 0 &lt; k &lt; n, with T(n,0) = T(n,n) = 1.
  * @author Georg Fischer
  */
 public class A132823 extends Sequence0 {

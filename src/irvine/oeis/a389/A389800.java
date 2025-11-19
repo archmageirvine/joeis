@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A389800 allocated for Stefano Spezia.
+ * A389800 Array read by ascending antidiagonals: A(n, k) = A000045(n)^2 + A000045(n+k)^2.
  * @author Sean A. Irvine
  */
 public class A389800 extends Sequence0 {

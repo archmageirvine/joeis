@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390521 allocated for Augusto Santi.
+ * A390521 a(n) = limiting prime of the recurrence x(k) = 1 + (phi(x(k-1)) + phi(x(k-2))) / 2 started at x(0) = x(1) = n.
  * @author Sean A. Irvine
  */
 public class A390521 extends Sequence1 {

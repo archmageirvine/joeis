@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a064.A064182;
 
 /**
- * A390421.
+ * A390602 allocated for Henri Lifchitz.
  * @author Sean A. Irvine
  */
 public class A390602 extends A064182 {

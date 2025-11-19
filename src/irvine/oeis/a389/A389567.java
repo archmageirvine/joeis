@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389567 allocated for Thomas Scheuerle.
+ * A389567 Number of integer exponents k such that in the expansion in powers of q of (q^(-1/24) * eta(q))^k the term q^n has a zero coefficient and eta is the Dedekind eta function.
  * @author Sean A. Irvine
  */
 public class A389567 extends Sequence1 {

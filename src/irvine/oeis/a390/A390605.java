@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390421.
+ * A390605 allocated for Felix Huber.
  * @author Sean A. Irvine
  */
 public class A390605 extends Sequence1 {

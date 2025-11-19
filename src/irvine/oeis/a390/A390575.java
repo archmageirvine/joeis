@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a065.A065560;
 
 /**
- * A390575 allocated for Paolo Xausa.
+ * A390575 Numbers k such that A065560(k) &gt;= A065560(k+1).
  * @author Sean A. Irvine
  */
 public class A390575 extends Sequence1 {

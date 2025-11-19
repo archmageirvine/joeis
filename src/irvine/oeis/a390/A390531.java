@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A081942.
+ * A390531 allocated for Dean D. Ballard.
  * @author Sean A. Irvine
  */
 public class A390531 extends Sequence1 {

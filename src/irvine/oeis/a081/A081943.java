@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081942.
+ * A081943 a(1) = 1, a(n)= smallest number not occurring earlier such that a(n-1)*a(n) -1 is a prime. re-arrangement of natural numbers such that the product of adjacent terms is one more than a prime.
  * @author Sean A. Irvine
  */
 public class A081943 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a381;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A381517 Perimeter of the SierpiŇĄski carpet at iteration n.
+ * A381517 Perimeter of the Sierpi\u0144ski carpet at iteration n.
  * @author Georg Fischer
  */
 public class A381517 extends HolonomicRecurrence {

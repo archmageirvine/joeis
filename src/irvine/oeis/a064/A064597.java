@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064597 Nonunitary abundant numbers: the sum of the nonunitary divisors of n is larger than n; i.e., sigma(n) - usigma(n) &gt; n.
+ * A064597 Nonunitary abundant numbers: the sum of the nonunitary divisors of k is larger than k; i.e., sigma(k) - usigma(k) &gt; k.
  * @author Sean A. Irvine
  */
 public class A064597 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A390549 allocated for Davide Oliveri.
+ * A390549 Smallest b&gt;=2 for which Q_{n}(b) = prime(n) + Sum{k=1..n-1} b^(prime(n) - prime(k)) is prime, or -1 if no such b exists.
  * @author Sean A. Irvine
  */
 public class A390549 extends A000040 {

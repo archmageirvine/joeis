@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390119 allocated for Taylor McAdam.
+ * A390119 Reduced endpoint numerators in the construction of the middle-thirds Cantor set, naturally ordered.
  * @author Sean A. Irvine
  */
 public class A390119 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a091;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A091307 a(n)=6*2^n+4 (Bode Number A003461(n+2)) except for a(1)=6.
+ * A091307 a(n) = 6*2^n + 4 (Bode Number A003461(n+2)) except for a(1)=6.
  * @author Georg Fischer
  */
 public class A091307 extends GeneratingFunctionSequence {

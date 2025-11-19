@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A086662 Stirling transform of Catalan numbers: Sum_{k=0..n} |Stirling1(n,k)|*C(2*k,k)/(k+1).
+ * A086662 Stirling transform of Catalan numbers: Sum_{k=0..n} |Stirling1(n, k)|*binomial(2*k, k)/(k+1).
  * @author Georg Fischer
  */
 public class A086662 extends LambdaSequence {

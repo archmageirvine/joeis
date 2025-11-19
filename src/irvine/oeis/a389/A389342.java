@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A389342 allocated for Patrick Demichel.
+ * A389342 Numerators C(n) of the rational part in J(n) = Integral_{x=0..Pi/2} x*cos(x)^(2n) dx.
  * @author Sean A. Irvine
  */
 public class A389342 extends Sequence0 {

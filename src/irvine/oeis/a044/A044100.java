@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A044100 Numbers n such that string 4,3 occurs in the base 5 representation of n but not of n-1.
+ * A044100 Numbers k such that string 4,3 occurs in the base 5 representation of k but not of k-1.
  * @author Georg Fischer
  */
 public class A044100 extends RunsBaseSequence {

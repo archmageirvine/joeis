@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A390421.
+ * A387122 Greatest prime divisor of 2*prime(n) + 3.
  * @author Sean A. Irvine
  */
 public class A387122 extends SimpleTransformSequence {

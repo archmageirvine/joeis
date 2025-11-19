@@ -6,7 +6,7 @@ import irvine.oeis.a016.A016789;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A190642 Numbers 3n+2 written in base 3.
+ * A190642 Numbers 3*n + 2 written in base 3.
  * @author Georg Fischer
  */
 public class A190642 extends SimpleTransformSequence {

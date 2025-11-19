@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390421.
+ * A388004 Number of n X n grids with 1 non-attacking king on each row.
  * @author Sean A. Irvine
  */
 public class A388004 extends Sequence0 {

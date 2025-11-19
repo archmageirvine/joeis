@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081942.
+ * A081942 a(1) = 1, a(n) = smallest number greater than a(n-1) such that a(n-1)*a(n) + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A081942 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081942.
+ * A081944 Numbers k such that both k*(k+1) - 1 and k*(k-1) - 1 are primes.
  * @author Sean A. Irvine
  */
 public class A081944 extends Sequence1 {

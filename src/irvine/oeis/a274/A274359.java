@@ -5,7 +5,7 @@ package irvine.oeis.a274;
 import irvine.oeis.a039.A039832;
 
 /**
- * A274359 Numbers n such that n and n+1 both have 16 divisors.
+ * A274359 Numbers k such that k and k+1 both have 16 divisors.
  * @author Georg Fischer
  */
 public class A274359 extends A039832 {

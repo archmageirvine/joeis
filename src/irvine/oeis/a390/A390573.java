@@ -3,7 +3,7 @@ package irvine.oeis.a390;
 import irvine.oeis.gf.EgfSequence;
 
 /**
- * A390573 allocated for Enrique Navarrete.
+ * A390573 Expansion of e.g.f. 2/(2 - x^2*sinh(x)).
  * @author Sean A. Irvine
  */
 public class A390573 extends EgfSequence {

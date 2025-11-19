@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A390421.
+ * A390299 Number of positive z &lt;= n such that z^2 - 9^g is relatively prime to n (for any particular positive integer g).
  * @author Sean A. Irvine
  */
 public class A390299 extends MultiplicativeSequence {

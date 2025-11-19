@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390495 allocated for Omar E. Pol.
+ * A390495 Irregular triangle read by rows: T(n,k) is the sum of prime numbers in the k-th 2-dense sublist of divisors of n, with n &gt;= 1, k &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A390495 extends Sequence1 {

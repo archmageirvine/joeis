@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389594 allocated for Dmitry Yampolsky.
+ * A389594 a(1) = 1; a(n+1) = a(n)-th positive integer that is not a power of 2.
  * @author Sean A. Irvine
  */
 public class A389594 extends Sequence1 {

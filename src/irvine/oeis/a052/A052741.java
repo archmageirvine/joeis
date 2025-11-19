@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A052741 A simple context-free grammar in a labeled universe.
+ * A052741 A simple context-free grammar in a labeled universe: labeled version of A000245.
  * @author Georg Fischer
  */
 public class A052741 extends HolonomicRecurrence {

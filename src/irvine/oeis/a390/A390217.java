@@ -73,7 +73,7 @@ public class A390217 extends Sequence0 {
   public Z next() {
     final IntegerPartition part = new IntegerPartition(++mN);
     int[] p;
-    int[] c = new int[mN + 1];
+    final int[] c = new int[mN + 1];
     long cnt = 0;
     while ((p = part.next()) != null) {
       IntegerPartition.toCountForm(p, c);

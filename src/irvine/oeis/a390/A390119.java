@@ -19,7 +19,6 @@ public class A390119 extends Sequence1 {
     if (++mN == 1) {
       return Z.ZERO;
     }
-    long h = mN >>> 1;
-    return new Z(Long.toBinaryString(Functions.MAKE_ODD.l(h)), 3).multiply2().subtract(1 - (mN & 1));
+    return new Z(Long.toBinaryString(Functions.MAKE_ODD.l(mN >>> 1)), 3).multiply2().subtract(1 - (mN & 1));
   }
 }

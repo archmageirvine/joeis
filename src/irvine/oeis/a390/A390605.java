@@ -1,7 +1,6 @@
 package irvine.oeis.a390;
 
 import irvine.factor.factor.Jaguar;
-import irvine.factor.util.FactorSequence;
 import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -23,9 +22,6 @@ public class A390605 extends Sequence1 {
         break;
       }
       if (Predicates.POWER.is(d) && Predicates.POWER.is(nn.divide(d))) {
-        if (mN == 22) {
-          System.out.println(d + "*" + nn.divide(d) + " = " + FactorSequence.toString(Jaguar.factor(d)) + " * " + FactorSequence.toString(Jaguar.factor(nn.divide(d))));
-        }
         ++cnt;
       }
     }

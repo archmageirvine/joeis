@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A020963 Sum of Floor[ 2*(1+sqrt(2))^(n-k) ] for k from 1 to infinity.
+ * A020963 a(n) = Sum_{k&gt;=1} floor( 2*(1+sqrt(2))^(n-k) ).
  * @author Sean A. Irvine
  */
 public class A020963 extends Sequence1 {

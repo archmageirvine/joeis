@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390605 allocated for Felix Huber.
+ * A390605 a(n) is the number of unordered pairs of perfect powers whose product equals n^n.
  * @author Sean A. Irvine
  */
 public class A390605 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a064.A064182;
 
 /**
- * A390602 allocated for Henri Lifchitz.
+ * A390602 Number of numbers m &lt;= 10^n that have a prime divisor greater than sqrt(10^n) (i.e., A006530(m)&gt;sqrt(10^n)).
  * @author Sean A. Irvine
  */
 public class A390602 extends A064182 {

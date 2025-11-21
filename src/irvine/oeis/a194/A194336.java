@@ -3,7 +3,7 @@ package irvine.oeis.a194;
 
 import irvine.math.cr.CR;
 /**
- * A194336 Triangular array:  g(n,k)=number of fractional parts (i*r) in interval [(k-1)/n, k/n], for 1&lt;=i&lt;=2^n, 1&lt;=k&lt;=n, r=2-tau, where tau=(1+sqrt(5))/2, the golden ratio.
+ * A194336 Triangular array:  g(n,k)=number of fractional parts (i*r) in interval [(k-1)/n, k/n], for 1&lt;=i&lt;=2^n, 1&lt;=k&lt;=n, r=2-phi, where phi=(1+sqrt(5))/2, the golden ratio.
  * @author Georg Fischer
  */
 public class A194336 extends A194285 {

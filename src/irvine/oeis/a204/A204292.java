@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A204292 Binomial(n, d(n)), where d(n) = A000005(n) is the number of divisors of n.
+ * A204292 a(n) = binomial(n, d(n)), where d(n) = A000005(n) is the number of divisors of n.
  * @author Georg Fischer
  */
 public class A204292 extends LambdaSequence {

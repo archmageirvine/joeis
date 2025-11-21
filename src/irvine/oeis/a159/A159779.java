@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A159779 Decimal expansion of (56211+34510*sqrt(2))/167^2.
+ * A159779 Decimal expansion of (56211 + 34510*sqrt(2))/167^2.
  * @author Georg Fischer
  */
 public class A159779 extends DecimalExpansionSequence {

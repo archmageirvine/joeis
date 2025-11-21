@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A190181 Decimal expansion of (15+sqrt(465))/12.
+ * A190181 Decimal expansion of (15 + sqrt(465))/12.
  * @author Georg Fischer
  */
 public class A190181 extends DecimalExpansionSequence {

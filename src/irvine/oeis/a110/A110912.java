@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A110912 Numbers n such that 23*n^2 - 36 is prime.
+ * A110912 Numbers k such that abs(23*k^2 - 36) is prime.
  * @author Georg Fischer
  */
 public class A110912 extends FilterNumberSequence {

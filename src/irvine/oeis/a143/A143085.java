@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A143085 Triangle sequence: t(n,m)=(n+1)*(n+m)!.
+ * A143085 Triangle read by rows: T(n,k) = (n + 1)*(n + k)!.
  * @author Georg Fischer
  */
 public class A143085 extends BaseTriangle {

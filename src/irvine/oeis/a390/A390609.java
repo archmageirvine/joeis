@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390609 allocated for Omar E. Pol.
+ * A390609 Irregular triangle read by rows: T(n,k) is the sum of noncomposite numbers in the k-th 2-dense sublist of divisors of n, with n &gt;= 1, k &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A390609 extends Sequence1 {

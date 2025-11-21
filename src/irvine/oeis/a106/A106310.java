@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A106310 Primes p such that p^2 divides some T(k), yet p does not divide any T(j) for any j&lt;k, where T(n) is the n-th tribonacci number (A000073).
+ * A106310 Primes p such that p^2 divides tribonacci number A000073(k) for some k &gt; 1, yet p does not divide A000073(j) for any 1 &lt; j &lt; k.
  *
  * @author Georg Fischer
  */

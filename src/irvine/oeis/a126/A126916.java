@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A126916 Numbers n such that 1 + n^2 + n^4 + n^6 + n^8 + n^10 + n^12 + n^14 + n^16 + n^18 + n^20 + n^22 + n^23 is prime.
+ * A126916 Numbers k such that 1 + k^2 + k^4 + k^6 + k^8 + k^10 + k^12 + k^14 + k^16 + k^18 + k^20 + k^22 + k^23 is prime.
  * @author Georg Fischer
  */
 public class A126916 extends PrimePositionSubsequence {

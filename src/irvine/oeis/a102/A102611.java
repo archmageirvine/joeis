@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A102611 Numbers n such that the number n77 is prime.
+ * A102611 Numbers k such that the number k77 is prime.
  * @author Georg Fischer
  */
 public class A102611 extends FilterNumberSequence {

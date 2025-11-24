@@ -3,7 +3,7 @@ package irvine.oeis.a390;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A390650 allocated for Hugo Cardoza.
+ * A390650 Number of tic-tac-toe positions after n plays.
  * @author Sean A. Irvine
  */
 public class A390650 extends FiniteSequence {

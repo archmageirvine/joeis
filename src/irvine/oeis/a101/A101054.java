@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A101054 E.g.f.: exp(exp(x)-1)/(1-x)^2.
+ * A101054 Expansion of e.g.f. exp(exp(x)-1)/(1-x)^2.
  * E.g.f.: exp(exp(x)-1)/(1-x)^2
  * @author Georg Fischer
  */

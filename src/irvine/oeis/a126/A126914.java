@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A126914 Numbers n such that 1 + k^2 + k^4 + k^6 + k^8 + k^10 + k^12 + k^14 + k^16 + k^18 + k^19 is prime.
+ * A126914 Numbers k such that 1 + k^2 + k^4 + k^6 + k^8 + k^10 + k^12 + k^14 + k^16 + k^18 + k^19 is prime.
  * @author Georg Fischer
  */
 public class A126914 extends PrimePositionSubsequence {

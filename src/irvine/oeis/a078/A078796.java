@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A078796 a(n) = 2*ceiling(n*tau) - ceiling(n*sqrt(5)) where tau=(1+sqrt(5))/2 is the Golden ratio.
+ * A078796 a(n) = 2*ceiling(n*phi) - ceiling(n*sqrt(5)) where phi=(1+sqrt(5))/2 is the Golden ratio.
  * @author Georg Fischer
  */
 public class A078796 extends FloorSequence {

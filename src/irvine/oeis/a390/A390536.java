@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A390536 allocated for Szymon Lukaszyk.
+ * A390536 Composite integers k = b * c such that A029837(k) &lt; A029837(b) + A029837(c) for all b&gt;1, c&gt;1, where A029837(x) = ceiling(log_2(x)).
  * @author Sean A. Irvine
  */
 public class A390536 extends A002808 {

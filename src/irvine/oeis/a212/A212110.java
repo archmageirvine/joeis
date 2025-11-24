@@ -4,7 +4,7 @@ package irvine.oeis.a212;
 import irvine.oeis.a210.A210286;
 
 /**
- * A212110 Number of (w,x,y,z) with all terms in {1,...,n} and w*x+y*z=n^2.
+ * A212110 Number of (w,x,y,z) with all terms in {1,...,n} and w*x + y*z = n^2.
  * @author Georg Fischer
  */
 public class A212110 extends A210286 {

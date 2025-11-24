@@ -4,7 +4,7 @@ package irvine.oeis.a138;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A138334 C(n+11, 11)*(n+6)*(-1)^(n+1)*512/3.
+ * A138334 a(n) = C(n+11, 11)*(n+6)*(-1)^(n+1)*512/3.
  * @author Georg Fischer
  */
 public class A138334 extends GeneratingFunctionSequence {

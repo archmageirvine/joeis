@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390679 allocated for Stefano Spezia.
+ * A390679 a(n) is the permanent of the square matrix A(n) of order 2*n whose generic entry is A(i, j) = n*(2*i - (-1)^i - 3) + 2*j - (-1)^j/2 + (-1)^i - 3/2 with 1 &lt;= i,j &lt;= 2*n.
  * @author Sean A. Irvine
  */
 public class A390679 extends Sequence0 {

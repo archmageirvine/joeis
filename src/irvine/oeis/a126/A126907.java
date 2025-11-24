@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A126907 Numbers n such that 1 + n^2 + n^4 + n^5 is prime.
+ * A126907 Numbers k such that 1 + k^2 + k^4 + k^5 is prime.
  * @author Georg Fischer
  */
 public class A126907 extends PrimePositionSubsequence {

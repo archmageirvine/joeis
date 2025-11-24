@@ -4,7 +4,7 @@ package irvine.oeis.a234;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A234294 E.g.f. satisfies: A(x) = 1 + A(x)^4 * Integral 1/A(x)^4 dx.
+ * A234294 E.g.f. A(x) satisfies A(x) = 1 + A(x)^4 * Integral 1/A(x)^4 dx.
  * 1+A(x)^4*int(1/A(x)^4)
  * @author Georg Fischer
  */

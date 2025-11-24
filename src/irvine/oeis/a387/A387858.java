@@ -4,7 +4,7 @@ package irvine.oeis.a387;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A387858 Sum of squares of the multiplicities of pairwise distances among the vertices of a regular n\u2011gon.
+ * A387858 Sum of squares of the multiplicities of pairwise distances among the vertices of a regular n-gon.
  * @author Georg Fischer
  */
 public class A387858 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
- * A390668 allocated for Aleks Zigon Tankosic.
+ * A390668 Row sums of A390434.
  * @author Sean A. Irvine
  */
 public class A390668 extends A390434 {

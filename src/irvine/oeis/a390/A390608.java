@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390608 allocated for Ridouane Oudra.
+ * A390608 a(n) = phi(n) * omega(n).
  * @author Sean A. Irvine
  */
 public class A390608 extends Sequence1 {

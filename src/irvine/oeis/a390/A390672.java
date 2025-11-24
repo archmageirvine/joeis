@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390672 allocated for Ralph L. Childress.
+ * A390672 Nonzero Dyck natural numbers encoded as binary integers.
  * @author Sean A. Irvine
  */
 public class A390672 extends Sequence1 {

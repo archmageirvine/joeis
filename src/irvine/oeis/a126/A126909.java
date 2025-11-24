@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A126909 Numbers n such that 1 + n^2 + n^4 + n^6 + n^8 + n^9 is prime.
+ * A126909 Numbers k such that 1 + k^2 + k^4 + k^6 + k^8 + k^9 is prime.
  * @author Georg Fischer
  */
 public class A126909 extends PrimePositionSubsequence {

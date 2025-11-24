@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390395 a(n) is the size of the maximum size of a subset S of {1,...,n} such that there are no solutions to 1/a = 1/b + 1/c for distinct a,b,c in S.
+ * A390395 a(n) is the maximum size of a subset S of {1,...,n} such that there are no solutions to 1/a = 1/b + 1/c for distinct a,b,c in S.
  * @author Sean A. Irvine
  */
 public class A390395 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A389829 allocated for David Pasino.
+ * A389829 a(n) is the number of closed binary operations on n elements, labeled, that satisfy both x(yz) = (xy)z and x(yz) = xz identically.
  * @author Sean A. Irvine
  */
 public class A389829 extends Sequence0 {

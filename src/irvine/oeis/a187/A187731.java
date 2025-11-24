@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A187731 Numbers n such that rad(phi(n)) divides n-1.
+ * A187731 Numbers k such that rad(phi(k)) divides k-1.
  * @author Georg Fischer
  */
 public class A187731 extends FilterNumberSequence {

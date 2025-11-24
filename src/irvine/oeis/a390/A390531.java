@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A390531 allocated for Dean D. Ballard.
+ * A390531 a(n) is the smallest number k such that the first k prime numbers can be partitioned into n subsets of equal sums.
  * @author Sean A. Irvine
  */
 public class A390531 extends Sequence1 {

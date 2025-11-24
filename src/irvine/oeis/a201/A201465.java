@@ -4,7 +4,7 @@ package irvine.oeis.a201;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A201465 E.g.f. satisfies: A(x) = (x + 2*exp(A(x)) - 2)/3.
+ * A201465 E.g.f. A(x) satisfies A(x) = (x + 2*exp(A(x)) - 2)/3.
  * E.g.f.: <code>1+reverse(2+3*x-2*exp(x))</code>.
  * @author Georg Fischer
  */

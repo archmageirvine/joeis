@@ -3,7 +3,7 @@ package irvine.oeis.a390;
 import irvine.math.z.Z;
 
 /**
- * A390130 allocated for Julian Allagan.
+ * A390130 Number of 4-partitions of the fan graph F_{1,n} where every triangle uses exactly 2 parts.
  * @author Sean A. Irvine
  */
 public class A390130 extends A390491 {

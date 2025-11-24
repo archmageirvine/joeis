@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A390246 a(n) is the least integer k such that in (n, n+k) there exist at least n distinct integers divisible by m for all 1 &lt;= m &lt;= n.
+ * A390246 a(n) is the least integer k such that there exist n distinct integers b_1, ..., b_n with n &lt; b_i &lt; n+k and b_i is divisible by i for 1 &lt;= i &lt;= n.
  * @author Sean A. Irvine
  */
 public class A390246 extends Sequence1 {

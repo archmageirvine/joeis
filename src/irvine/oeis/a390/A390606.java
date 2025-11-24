@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390606 allocated for Felix Huber.
+ * A390606 a(n) is the maximal number of perfect powers (not including 1) whose product is n^n, counting each perfect power as many times as it can be written with different exponents.
  * @author Sean A. Irvine
  */
 public class A390606 extends Sequence1 {

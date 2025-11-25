@@ -5,16 +5,30 @@ import java.util.Arrays;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A003681 a(n) = min { p +- q : p +- q &gt; 1 and p*q = Product_{k=1..n-1} a(k) }.
  * @author Sean A. Irvine
  */
-public class A003681 extends Sequence1 {
+public class A003681 extends AbstractSequence {
 
+  private static final int THRESHOLD = 64;
   private final FactorSequence mFS = new FactorSequence(); // Accumulates factorization
   private Z mProd = Z.ONE; // Accumulates terms (saves multiplying out mFS)
+  private final Z mFirst;
+  private final Z mSecond;
+
+  protected A003681(final int offset, final Z first, final Z second) {
+    super(offset);
+    mFirst = first;
+    mSecond = second;
+  }
+
+  /** Construct the sequence. */
+  public A003681() {
+    this(1, Z.TWO, Z.THREE);
+  }
 
   // The following is derived from the implementation in FactorSequence, but retains only
   // the divisors closest to the "middle" which are needed for this sequence.
@@ -62,25 +76,38 @@ public class A003681 extends Sequence1 {
   public Z next() {
     final Z t;
     if (mProd.equals(Z.ONE)) {
-      t = Z.TWO;
-    } else if (mProd.equals(Z.TWO)) {
-      t = Z.THREE;
+      t = mFirst;
+    } else if (mProd.equals(mFirst)) {
+      t = mSecond;
+    } else if (mProd.bitLength() < THRESHOLD) {
+      // For certain small cases the central divisors are not sufficient
+      final Z[] divisors = Jaguar.factor(mProd).divisorsSorted();
+      for (int k = (divisors.length - 1) / 2; true; --k) {
+        final Z diff = divisors[divisors.length - 1 - k].subtract(divisors[k]);
+        if (diff.compareTo(Z.ONE) > 0) {
+          t = diff;
+          break;
+        }
+      }
     } else {
+      Jaguar.factor(mFS);
       final Z[] divisors = centralDivisors(mProd.sqrt());
       final Z a = divisors[1];
       final Z b = mProd.divide(a);
       final Z d1 = b.subtract(a);
-      if (Z.ONE.equals(d1)) {
+      if (d1.compareTo(Z.ONE) <= 0) {
         final Z x = divisors[0];
         final Z y = mProd.divide(x);
         t = y.subtract(x);
+        if (t.compareTo(Z.ONE) <= 0) {
+          throw new UnsupportedOperationException();
+        }
       } else {
         t = d1;
       }
     }
     mProd = mProd.multiply(t);
-    final FactorSequence fs = Jaguar.factor(t);
-    mFS.merge(fs);
+    mFS.add(t, FactorSequence.UNKNOWN);
     return t;
   }
 }

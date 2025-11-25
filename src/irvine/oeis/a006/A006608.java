@@ -27,9 +27,10 @@ public class A006608 extends Sequence1 implements GraphProcessor {
   private final HashMap<Polynomial<Z>, Long> mCharPolyCounts = new HashMap<>();
 
   private Polynomial<Z> characteristicPolynomial(final Graph graph) {
-    final Matrix<Polynomial<Z>> lambda = new DefaultMatrix<>(mN, mN, POLY.zero());
-    for (int row = 0; row < mN; ++row) {
-      for (int col = 0; col < mN; ++col) {
+    final int n = graph.order();
+    final Matrix<Polynomial<Z>> lambda = new DefaultMatrix<>(n, n, POLY.zero());
+    for (int row = 0; row < n; ++row) {
+      for (int col = 0; col < n; ++col) {
         final Polynomial<Z> p = new Polynomial<>("x", Z.ZERO, Z.ONE);
         p.add(graph.isAdjacent(row, col) ? Z.NEG_ONE : Z.ZERO); // Add constant term
         if (row == col) {

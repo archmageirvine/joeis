@@ -43,7 +43,7 @@ public class A390628 extends A249223 {
       final ArrayList<Long> pat1 = widthPattern(++mN);
       final ArrayList<Long> pat2 = widthPattern(2 * mN);
       if (pat1.equals(pat2)) {
-        return Z.valueOf(2L * mN);
+        return Z.valueOf(mN);
       }
     }
   }

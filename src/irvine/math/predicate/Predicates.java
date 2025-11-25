@@ -50,6 +50,8 @@ public final class Predicates {
   public static final Predicate CARMICHAEL = new Carmichael(); // =A002997
   /** Test if a number is a Chen prime: p is prime and p+2 is either prime or semiprime. */
   public static final Predicate CHEN_PRIME = new ChenPrime(); // =A109611
+  /** Test if a number is a Sophie-Germain prime: p and 2p+1 are prime. */
+  public static final Predicate SOPHIE_GERMAIN = new SophieGermain(); // =A005384
   /** Test if a number is a Perrin number. */
   public static final Predicate PERRIN = new Perrin(); // =A013998
   /** Test if a number is a harmonic number as defined by Ore. */

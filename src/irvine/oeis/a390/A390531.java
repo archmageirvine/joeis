@@ -60,6 +60,7 @@ public class A390531 extends Sequence1 {
   private boolean is(final int k, final int sum) {
     // Precompute static information for a given bin packing instance
     mBinSize = sum / mN;
+
     // For maximum speed during the packing, precompute the primes we need as int
     mPrimes = new int[k];
     mPrimes[0] = 2;
@@ -73,6 +74,54 @@ public class A390531 extends Sequence1 {
     return is(0, 0, mUsed.length);
   }
 
+  private boolean isFeasible(final int n, final int sum, final int primes, final long maxp) {
+    if (sum % n != 0) {
+      return false;
+    }
+    if (n == 1) {
+      return true;
+    }
+    final int binSize = sum / n;
+    // The following condition due to Ballard eliminates certain difficult cases.
+    if ((binSize & 1) == 0) {
+      // An even sized bin must contain an even number of odd primes
+      if (4 * n > primes) {
+        // We do not have sufficient odd primes for at least 4 in every bin,
+        // therefore at least one bin must contain only two odd primes.
+        // So check how many bins with only 2 primes can be constructed
+        final int deficit = 4 * n - primes;
+        long p = maxp;
+        int possiblePairs = 0;
+        boolean use2 = false;
+        while (p > 2) {
+          final long q = binSize - p;
+          if (q < p && mPrimeGenerator.isPrime(q)) {
+            ++possiblePairs;
+          }
+          if (!use2) {
+            // We can also have a bin containing the prime 2 and two odd primes.
+            // But we can only ever use 2 once.
+            final long r = binSize - 2 - p;
+            if (r < p && mPrimeGenerator.isPrime(r)) {
+              use2 = true;
+            }
+          }
+          p = mPrimeGenerator.prevPrime(p);
+        }
+        if (use2) {
+          ++possiblePairs;
+        }
+        if (possiblePairs < (deficit + 1) / 2) {
+          if (mVerbose) {
+            StringUtils.message("Pigeonhole rejects bins=" + n + " binsize=" + binSize + " primes=" + primes);
+          }
+          return false;
+        }
+      }
+    }
+    return true;
+  }
+
   @Override
   public Z next() {
     ++mN;
@@ -80,7 +129,7 @@ public class A390531 extends Sequence1 {
     int k = 1;
     long p = 2;
     while (true) {
-      if (sum % mN == 0 && is(k, sum)) {
+      if (isFeasible(mN, sum, k, p) && is(k, sum)) {
         return Z.valueOf(k);
       }
       p = mPrimeGenerator.nextPrime(p);

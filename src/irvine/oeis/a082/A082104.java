@@ -23,7 +23,7 @@ public class A082104 extends ParallelGenerateGraphsSequence {
 
   private static final PolynomialRing<Z> POLY = new PolynomialRing<>(IntegerField.SINGLETON);
   private static final Set<Polynomial<Z>> SEEN = Collections.synchronizedSet(new HashSet<>());
-  private static MatrixRing<Polynomial<Z>> RING = null;
+  private static MatrixRing<Polynomial<Z>> sRing = null;
 
   private static Polynomial<Z> characteristicPolynomial(final Graph graph) {
     final int n = graph.order();
@@ -39,7 +39,7 @@ public class A082104 extends ParallelGenerateGraphsSequence {
         lambda.set(row, col, p);
       }
     }
-    return RING.det(lambda);
+    return sRing.det(lambda);
   }
 
   /** Construct the sequence. */
@@ -58,7 +58,7 @@ public class A082104 extends ParallelGenerateGraphsSequence {
   @Override
   public Z next() {
     SEEN.clear();
-    RING = new MatrixRing<>(mN + 1, POLY);
+    sRing = new MatrixRing<>(mN + 1, POLY);
     return super.next();
   }
 }

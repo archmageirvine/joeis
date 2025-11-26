@@ -44,23 +44,28 @@ public class A390670 extends Sequence0 {
     return Integer.bitCount(s);
   }
 
+  private boolean is(final List<Integer> x, final int j) {
+    int w = 0;
+    for (final int v : x) {
+      if ((j & v) != 0) {
+        if (w > 0 && v < w) {
+          return false;
+        }
+        w = v;
+      }
+    }
+    return true;
+  }
+
   // Returns the size of the maximal subset C of S for x
   private int findC(final List<Integer> x) {
     final int lim = 1 << mN; // note this differs from Rascoe in that we try all possible sets
     // Try sets in decreasing size
     for (int i = mN; i > 0; --i) {
-      outer:
       for (int j = (1 << i) - 1; j < lim; j = Functions.SWIZZLE.i(j)) {
-        int w = 0;
-        for (final int v : x) {
-          if ((j & v) != 0) {
-            if (w > 0 && v < w) {
-              continue outer;
-            }
-            w = v;
-          }
+        if (is(x, j)) {
+          return i;
         }
-        return i;
       }
     }
     throw new RuntimeException();

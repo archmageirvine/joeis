@@ -14,12 +14,35 @@ import irvine.oeis.Sequence1;
  */
 public class A337867 extends Sequence1 {
 
+  // Sector encoding, thus using bottom and left is 1|2 = 3.
+  //   8
+  //  +-+
+  // 4| |2
+  //  +-+
+  //   1
+  private static final int NONE = 0;
+  private static final int S = 1;
+  private static final int E = 2;
+  private static final int W = 4;
+  private static final int N = 8;
+  private static final int SE = S | E;
+  private static final int SW = S | W;
+  private static final int NE = N | E;
+  private static final int NW = N | W;
+  private static final int ALL = N | S | E | W;
+  private static final int NOT_N = S | E | W;
+  private static final int NOT_S = N | E | W;
+  private static final int NOT_E = N | S | W;
+  private static final int NOT_W = N | S | E;
+
   private static final int MAX = 100;
+  // Sector left-right reflection
   private static final int[] REFL_BITS = {
-    0, 1, 4, 5, 2, 3, 6, 7, 8, 9, 12, 13, 10, 11, 14, 15
+    NONE, S, W, SW, E, SE, E | W, NOT_N, N, N | S, NW, NOT_E, NE, NOT_W, NOT_S, ALL
   };
+  // Sector anticlockwise rotation by 90 degrees
   private static final int[] ROT_BITS = {
-    0, 2, 8, 10, 1, 3, 9, 11, 4, 6, 12, 14, 5, 7, 13, 15
+    NONE, E, N, NE, S, SE, N | S, NOT_W, W, W | E, NW, NOT_S, SW, NOT_N, NOT_W, ALL
   };
 
   private int mN = 0;
@@ -85,6 +108,7 @@ public class A337867 extends Sequence1 {
       mCells[mNCells].mSector = sector;
       ++mNCells;
     }
+    //System.out.println("Considering: " + toString(mCells, mNCells));
     canonize();      /* Writes into bcells[] */
     show();        /* Retain the contents */
 
@@ -193,93 +217,93 @@ public class A337867 extends Sequence1 {
 
   protected void update(final int x, final int y, final int v) {
     // Orthogonal moves
-    if ((v & 0x7) != 0) {  /* go down */
+    if ((v & NOT_N) != 0) {  /* go down */
       final int ynew = y + 1;
       if (vacant(x, ynew)) {
-        add(x, ynew, 0xc);
-        add(x, ynew, 0xa);
-        if ((v & 0x2) != 0) {
-          add(x, ynew, 0x3);
+        add(x, ynew, NW);
+        add(x, ynew, NE);
+        if ((v & E) != 0) {  // Note excluding (v & S) here (and other similar situations) causes certain seemingly valid polyfetts to be missed
+          add(x, ynew, SE);
         }
-        if ((v & 0x4) != 0) {
-          add(x, ynew, 0x5);
+        if ((v & W) != 0) {
+          add(x, ynew, SW);
         }
       }
     }
-    if ((v & 0xb) != 0) {  /* go right */
+    if ((v & NOT_W) != 0) {  /* go right */
       final int xnew = x + 1;
       if (vacant(xnew, y)) {
-        add(xnew, y, 0xc);
-        add(xnew, y, 0x5);
-        if ((v & 1) != 0) {
-          add(xnew, y, 0x3);
+        add(xnew, y, NW);
+        add(xnew, y, SW);
+        if ((v & S) != 0) {
+          add(xnew, y, SE);
         }
-        if ((v & 8) != 0) {
-          add(xnew, y, 0xa);
+        if ((v & N) != 0) {
+          add(xnew, y, NE);
         }
       }
     }
-    if ((v & 0xd) != 0) {  /* go left */
+    if ((v & NOT_E) != 0) {  /* go left */
       final int xnew = x - 1;
       if (vacant(xnew, y)) {
-        add(xnew, y, 0xa);
-        add(xnew, y, 0x3);
-        if ((v & 1) != 0) {
-          add(xnew, y, 0x5);
+        add(xnew, y, NE);
+        add(xnew, y, SE);
+        if ((v & S) != 0) {
+          add(xnew, y, SW);
         }
-        if ((v & 8) != 0) {
-          add(xnew, y, 0xc);
+        if ((v & N) != 0) {
+          add(xnew, y, NW);
         }
       }
     }
-    if ((v & 0xe) != 0) {  /* go up */
+    if ((v & NOT_S) != 0) {  /* go up */
       final int ynew = y - 1;
       if (vacant(x, ynew)) {
-        add(x, ynew, 0x5);
-        add(x, ynew, 0x3);
-        if ((v & 2) != 0) {
-          add(x, ynew, 0xa);
+        add(x, ynew, SW);
+        add(x, ynew, SE);
+        if ((v & E) != 0) {
+          add(x, ynew, NE);
         }
-        if ((v & 4) != 0) {
-          add(x, ynew, 0xc);
+        if ((v & W) != 0) {
+          add(x, ynew, NW);
         }
       }
     }
     // Diagonal moves.
-    if ((v & 0x3) != 0) {  /* down right. */
+    if ((v & SE) != 0) {  /* down right. */
       final int xnew = x + 1;
       final int ynew = y + 1;
       if (vacant(xnew, ynew)) {
-        add(xnew, ynew, 0x5);
-        add(xnew, ynew, 0xa);
-        add(xnew, ynew, 0xc);
+        add(xnew, ynew, SW);
+        add(xnew, ynew, NE);
+        add(xnew, ynew, NW);
       }
     }
-    if ((v & 0x5) != 0) {  /* down left. */
+    if ((v & SW) != 0) {  /* down left. */
       final int xnew = x - 1;
       final int ynew = y + 1;
       if (vacant(xnew, ynew)) {
-        add(xnew, ynew, 0x3);
-        add(xnew, ynew, 0xa);
-        add(xnew, ynew, 0xc);
+        add(xnew, ynew, SE);
+        add(xnew, ynew, NE);
+        add(xnew, ynew, NW);
       }
     }
-    if ((v & 0xa) != 0) {  /* up right. */
+    if ((v & NE) != 0) {  /* up right. */
       final int xnew = x + 1;
       final int ynew = y - 1;
       if (vacant(xnew, ynew)) {
-        add(xnew, ynew, 0x3);
-        add(xnew, ynew, 0x5);
-        add(xnew, ynew, 0xc);
+        add(xnew, ynew, SE);
+        add(xnew, ynew, SW);
+        add(xnew, ynew, NW);
       }
     }
-    if ((v & 0xc) != 0) {  /* up left. */
+    if ((v & NW) != 0) {  /* up left. */
       final int xnew = x - 1;
       final int ynew = y - 1;
       if (vacant(xnew, ynew)) {
-        add(xnew, ynew, 0x3);
-        add(xnew, ynew, 0x5);
-        add(xnew, ynew, 0xa);
+        add(xnew, ynew, SE);
+        add(xnew, ynew, SW);
+        add(xnew, ynew, NE);
       }
     }
   }
@@ -293,7 +317,7 @@ public class A337867 extends Sequence1 {
       final Cell t = new Cell();
       t.mX = 0;
       t.mY = 0;
-      t.mSector = 3;
+      t.mSector = SE;
       mRetained.put(toString(mCells, 1), new Cell[] {t});
       return Z.ONE;
     } else {
@@ -314,8 +338,8 @@ public class A337867 extends Sequence1 {
           final int x = mCells[c].mX;
           final int y = mCells[c].mY;
           final int v = mCells[c].mSector;
-          if (v != 0x0 && v != 0xf) {  /* fill out the cell */
-            mCells[c].mSector = 0xf;
+          if (v != NONE && v != ALL) {  /* fill out the cell */
+            mCells[c].mSector = ALL;
             add(0, 0, 0);    /* 0 means change nothing */
             mCells[c].mSector = v;  /* restore the value */
           }

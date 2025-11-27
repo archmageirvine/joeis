@@ -15,6 +15,6 @@ public class A386438 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A386438() {
-    super(1, n -> Functions.SIGMA1.z(n).add(Functions.OMEGA.z(n)).subtract(Rationals.SINGLETON.sumdiv(n, d -> Predicates.PRIME.is(d) ? new Q(1, d) : new Q(0)).multiply(n).num()));
+    super(1, n -> Functions.SIGMA1.z(n).add(Functions.OMEGA.z(n)).subtract(Rationals.SINGLETON.sumdiv(n, d -> Predicates.PRIME.is(d) ? new Q(1, d) : Q.ZERO).multiply(n).num()));
   }
 }

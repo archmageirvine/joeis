@@ -14,6 +14,6 @@ public class A203319 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A203319() {
-    super(1, n -> new Q(n).multiply(Functions.FIBONACCI.z(n)).multiply(Rationals.SINGLETON.sumdiv(n, d -> new Q(1).divide(new Q(d).multiply(Functions.FIBONACCI.z(d))))).num());
+    super(1, n -> new Q(n).multiply(Functions.FIBONACCI.z(n)).multiply(Rationals.SINGLETON.sumdiv(n, d -> Q.ONE.divide(new Q(d).multiply(Functions.FIBONACCI.z(d))))).num());
   }
 }

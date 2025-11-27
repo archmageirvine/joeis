@@ -16,6 +16,6 @@ public class A385450 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A385450() {
-    super(0, CR.TWO.multiply(CR.valueOf(110).add(CR.valueOf(110).multiply(CR.valueOf(75).multiply(CR.FIVE.sqrt()).add(CR.valueOf(151))).sqrt().multiply(REALS.acsc(CR.TWO.multiply(CR.ZERO.subtract(CR.ONE).add(CR.FIVE.sqrt())).sqrt()))).add(CR.valueOf(110).multiply(CR.valueOf(75).multiply(CR.FIVE.sqrt()).subtract(CR.valueOf(151))).sqrt().multiply(REALS.atanh(CR.TWO.multiply(CR.FIVE.sqrt()).subtract(CR.THREE).divide(CR.valueOf(11)).sqrt()))).divide(CR.valueOf(605))));
+    super(0, CR.TWO.multiply(CR.valueOf(110).add(CR.valueOf(110).multiply(CR.valueOf(75).multiply(CR.FIVE.sqrt()).add(CR.valueOf(151))).sqrt().multiply(REALS.acsc(CR.TWO.multiply(CR.ONE.negate().add(CR.FIVE.sqrt())).sqrt()))).add(CR.valueOf(110).multiply(CR.valueOf(75).multiply(CR.FIVE.sqrt()).subtract(CR.valueOf(151))).sqrt().multiply(REALS.atanh(CR.TWO.multiply(CR.FIVE.sqrt()).subtract(CR.THREE).divide(CR.valueOf(11)).sqrt()))).divide(CR.valueOf(605))));
   }
 }

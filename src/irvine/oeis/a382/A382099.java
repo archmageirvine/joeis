@@ -14,6 +14,6 @@ public class A382099 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A382099() {
-    super(1, (term, n) -> new Q(9).subtract(new Q(Z.FOUR, term.square())).den(), "", new A002559());
+    super(1, (term, n) -> Q.NINE.subtract(new Q(Z.FOUR, term.square())).den(), "", new A002559());
   }
 }

@@ -13,6 +13,6 @@ public class A372340 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A372340() {
-    super(0, CR.ZERO.subtract(CR.TWO).add(CR.THREE.multiply(CR.ONE.cosh())).subtract(CR.TWO.multiply(CR.ONE.sinh())));
+    super(0, CR.TWO.negate().add(CR.THREE.multiply(CR.ONE.cosh())).subtract(CR.TWO.multiply(CR.ONE.sinh())));
   }
 }

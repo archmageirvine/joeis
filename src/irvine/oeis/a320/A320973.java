@@ -15,6 +15,6 @@ public class A320973 extends LambdaArray {
 
   /** Construct the sequence. */
   public A320973() {
-    super(1, 1, 1, -1, (n, k) -> Rationals.SINGLETON.productdiv(n, p -> !Predicates.PRIME.is(p) ? new Q(1) : new Q(1).add(new Q(1).divide(p).pow(k - 1))).multiply(Z.valueOf(n).pow(k - 1)).num());
+    super(1, 1, 1, -1, (n, k) -> Rationals.SINGLETON.productdiv(n, p -> !Predicates.PRIME.is(p) ? Q.ONE : Q.ONE.add(Q.ONE.divide(p).pow(k - 1))).multiply(Z.valueOf(n).pow(k - 1)).num());
   }
 }

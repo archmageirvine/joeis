@@ -16,6 +16,6 @@ public class A380705 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A380705() {
-    super(1, REALS.acos(CR.ZERO.subtract(CR.ONE.divide(CR.FOUR)).subtract(CR.SQRT2.divide(CR.EIGHT))));
+    super(1, REALS.acos(CR.ONE.divide(CR.FOUR).negate().subtract(CR.SQRT2.divide(CR.EIGHT))));
   }
 }

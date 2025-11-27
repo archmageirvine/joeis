@@ -12,6 +12,6 @@ public class A370827 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A370827() {
-    super(1, n -> new Q(3, 5).pow(n).multiply(new Q(5, 2).pow(n).subtract(1)).divide(new Q(1).subtract(new Q(3, 5).pow(n))).multiply(new Q(2, 3)).num());
+    super(1, n -> new Q(3, 5).pow(n).multiply(new Q(5, 2).pow(n).subtract(1)).divide(Q.ONE.subtract(new Q(3, 5).pow(n))).multiply(new Q(2, 3)).num());
   }
 }

@@ -14,6 +14,6 @@ public class A300489 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A300489() {
-    super(0, n -> new Q(Functions.FACTORIAL.z(n)).multiply(new Q(n).pow(n)).multiply(Rationals.SINGLETON.sum(1, n, k -> new Q(1).divide(new Q(k).multiply(new Q(n).pow(k))))).num());
+    super(0, n -> new Q(Functions.FACTORIAL.z(n)).multiply(new Q(n).pow(n)).multiply(Rationals.SINGLETON.sum(1, n, k -> Q.ONE.divide(new Q(k).multiply(new Q(n).pow(k))))).num());
   }
 }

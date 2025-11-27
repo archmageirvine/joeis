@@ -15,7 +15,7 @@ public class A309087 extends LambdaSequence {
   public A309087() {
     super(0, n -> {
       Z v = Z.ZERO;
-      Q d = new Q(1);
+      Q d = Q.ONE;
       int k = 1;
       while (true) {
         if (d.compareTo(Q.ONE) < 0) {

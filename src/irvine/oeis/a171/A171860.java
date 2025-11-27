@@ -12,6 +12,6 @@ public class A171860 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A171860() {
-    super(2, n -> new Q(2).pow(n - 3).multiply(new Q(n).pow(n - 5)).multiply(n - 2).multiply(new Q(2).multiply(new Q(n).square()).subtract(new Q(6).multiply(n)).add(9)).num());
+    super(2, n -> Q.TWO.pow(n - 3).multiply(new Q(n).pow(n - 5)).multiply(n - 2).multiply(Q.TWO.multiply(new Q(n).square()).subtract(Q.SIX.multiply(n)).add(9)).num());
   }
 }

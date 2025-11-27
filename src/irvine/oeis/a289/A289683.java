@@ -15,6 +15,6 @@ public class A289683 extends RationalLambdaSequence {
 
   /** Construct the sequence. */
   public A289683() {
-    super(0, NUM, n -> n == 0 ? new Q(1) : Rationals.SINGLETON.sum(0, n - 1, k -> new Q(1, 2).pow(k).multiply(Functions.CATALAN.z(k)).multiply(Binomial.binomial(n - 1 + k, n - 1 - k))).multiply(Functions.FACTORIAL.z(n)));
+    super(0, NUM, n -> n == 0 ? Q.ONE : Rationals.SINGLETON.sum(0, n - 1, k -> new Q(1, 2).pow(k).multiply(Functions.CATALAN.z(k)).multiply(Binomial.binomial(n - 1 + k, n - 1 - k))).multiply(Functions.FACTORIAL.z(n)));
   }
 }

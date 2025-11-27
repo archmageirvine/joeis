@@ -18,6 +18,6 @@ public class A384247 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A384247() {
-    super(1, (p, e) -> new Q(p.pow(e)).multiply(new Q(1).subtract(new Q(Z.ONE, p.pow(A006519.a(e))))).num());
+    super(1, (p, e) -> new Q(p.pow(e)).multiply(Q.ONE.subtract(new Q(Z.ONE, p.pow(A006519.a(e))))).num());
   }
 }

@@ -11,9 +11,7 @@ import irvine.oeis.recur.PaddingSequence;
  */
 public class A049150 extends PolynomialFieldSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A049150() {
     this(0, new long[] {+1, -1, +1, -1}, new long[] {-1});
   }

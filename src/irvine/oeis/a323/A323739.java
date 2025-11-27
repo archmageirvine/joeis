@@ -14,6 +14,6 @@ public class A323739 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A323739() {
-    super(0, n -> new Q(2).pow(1 - n).multiply(Integers.SINGLETON.product(1, n, j -> Functions.PRIME.z(j).subtract(1))).num());
+    super(0, n -> Q.TWO.pow(1 - n).multiply(Integers.SINGLETON.product(1, n, j -> Functions.PRIME.z(j).subtract(1))).num());
   }
 }

@@ -13,6 +13,6 @@ public class A380023 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A380023() {
-    super(1, (self, n) -> new Q(1).subtract(new Q(Z.TWO, Z.valueOf(n).multiply(n - 1))).multiply(self.a(n - 1)).multiply(self.a(n - 2)).num(), "2,3");
+    super(1, (self, n) -> Q.ONE.subtract(new Q(Z.TWO, Z.valueOf(n).multiply(n - 1))).multiply(self.a(n - 1)).multiply(self.a(n - 2)).num(), "2,3");
   }
 }

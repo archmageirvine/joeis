@@ -16,6 +16,6 @@ public class A365750 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A365750() {
-    super(1, CR.ONE_THIRD.add(CR.TWO.divide(CR.THREE).multiply(CR.TEN.sqrt()).multiply(CR.ONE_THIRD.multiply(REALS.acos(CR.TEN.pow(CR.ZERO.subtract(CR.THREE.divide(CR.TWO))))).cos())));
+    super(1, CR.ONE_THIRD.add(CR.TWO.divide(CR.THREE).multiply(CR.TEN.sqrt()).multiply(CR.ONE_THIRD.multiply(REALS.acos(CR.TEN.pow(CR.THREE.divide(CR.TWO).negate()))).cos())));
   }
 }

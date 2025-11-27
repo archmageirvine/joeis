@@ -21,6 +21,6 @@ public class A389932 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A389932() {
-    super(1, REALS.acos(CR.ZERO.subtract(A020760.getCR()).subtract(A020763.getCR())));
+    super(1, REALS.acos(A020760.getCR().negate().subtract(A020763.getCR())));
   }
 }

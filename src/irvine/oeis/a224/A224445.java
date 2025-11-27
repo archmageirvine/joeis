@@ -15,6 +15,6 @@ public class A224445 extends RationalLambdaSequence {
 
   /** Construct the sequence. */
   public A224445() {
-    super(0, NUM, n -> new Q(2).subtract(Rationals.SINGLETON.sum(1, n, k -> new Q(Functions.CATALAN.z(k - 1), Z.FOUR.pow(2L * k))).multiply(4)));
+    super(0, NUM, n -> Q.TWO.subtract(Rationals.SINGLETON.sum(1, n, k -> new Q(Functions.CATALAN.z(k - 1), Z.FOUR.pow(2L * k))).multiply(4)));
   }
 }

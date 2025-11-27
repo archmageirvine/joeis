@@ -13,6 +13,6 @@ public class A383450 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A383450() {
-    super(0, n -> new Q(Functions.FACTORIAL.z(3 * n + 4)).divide(new Q(2).multiply(Functions.FACTORIAL.z(n)).multiply(Functions.FACTORIAL.z(3 + 2 * n))).num());
+    super(0, n -> new Q(Functions.FACTORIAL.z(3 * n + 4)).divide(Q.TWO.multiply(Functions.FACTORIAL.z(n)).multiply(Functions.FACTORIAL.z(3 + 2 * n))).num());
   }
 }

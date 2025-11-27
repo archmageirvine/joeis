@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A188166 New York City streets that are 100 feet wide instead of 60.
  * @author Georg Fischer
  */
-
 public class A188166 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A287172 Years when a President of the USA died in office.
  * @author Georg Fischer
  */
-
 public class A287172 extends NoncomputableSequence {
 
   /** Construct the sequence. */

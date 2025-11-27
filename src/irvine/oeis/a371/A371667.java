@@ -14,6 +14,6 @@ public class A371667 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A371667() {
-    super(0, CR.ZERO.subtract(CrFunctions.EI.cr(CR.ZERO.subtract(CR.ONE)).divide(CR.TWO.log())));
+    super(0, CR.ZERO.subtract(CrFunctions.EI.cr(CR.ONE.negate()).divide(CR.TWO.log())));
   }
 }

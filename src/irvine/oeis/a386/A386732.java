@@ -16,6 +16,6 @@ public class A386732 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A386732() {
-    super(0, CR.ZERO.subtract(CR.SIX.multiply(CR.PI)).subtract(CR.FOUR.multiply(CR.THREE.sqrt()).multiply(CR.PI)).add(CR.valueOf(12).multiply(REALS.atan(CR.TWO))).subtract(CR.THREE.multiply(REALS.atan(CR.valueOf(12).divide(CR.FIVE)))).add(CR.SIX.multiply(CR.THREE.sqrt()).multiply(REALS.atan(CR.FIVE.divide(CR.THREE.sqrt())))).add(CR.SIX.multiply(CR.THREE.sqrt()).multiply(REALS.atanh(CR.TWO.multiply(CR.THREE.sqrt()).divide(CR.FIVE)))).add(CR.valueOf(9261).log()).divide(CR.valueOf(72)));
+    super(0, CR.SIX.multiply(CR.PI).negate().subtract(CR.FOUR.multiply(CR.THREE.sqrt()).multiply(CR.PI)).add(CR.valueOf(12).multiply(REALS.atan(CR.TWO))).subtract(CR.THREE.multiply(REALS.atan(CR.valueOf(12).divide(CR.FIVE)))).add(CR.SIX.multiply(CR.THREE.sqrt()).multiply(REALS.atan(CR.FIVE.divide(CR.THREE.sqrt())))).add(CR.SIX.multiply(CR.THREE.sqrt()).multiply(REALS.atanh(CR.TWO.multiply(CR.THREE.sqrt()).divide(CR.FIVE)))).add(CR.valueOf(9261).log()).divide(CR.valueOf(72)));
   }
 }

@@ -14,6 +14,6 @@ public class A363091 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A363091() {
-    super(1, n -> Rationals.SINGLETON.sumdiv(n, d -> d % Functions.TAU.i(d) == 0 && Functions.GCD.i(d, n / d) == 1 ? new Q(1, d) : new Q(0)).multiply(n).num());
+    super(1, n -> Rationals.SINGLETON.sumdiv(n, d -> d % Functions.TAU.i(d) == 0 && Functions.GCD.i(d, n / d) == 1 ? new Q(1, d) : Q.ZERO).multiply(n).num());
   }
 }

@@ -15,6 +15,6 @@ public class A349088 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A349088() {
-    super(0, (self, n) -> n == 0 ? Z.ZERO : Rationals.SINGLETON.sum(0, (n - 1) / 3, k -> new Q(1).divide(Functions.FACTORIAL.z(3 * k + 1))).multiply(Functions.FACTORIAL.z(n)).num(), "");
+    super(0, (self, n) -> n == 0 ? Z.ZERO : Rationals.SINGLETON.sum(0, (n - 1) / 3, k -> Q.ONE.divide(Functions.FACTORIAL.z(3 * k + 1))).multiply(Functions.FACTORIAL.z(n)).num(), "");
   }
 }

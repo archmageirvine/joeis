@@ -10,7 +10,7 @@ import irvine.oeis.Sequence0;
  */
 public class A363249 extends Sequence0 {
 
-  private static final CR LOG = CR.valueOf(9).log10();
+  private static final CR LOG = CR.NINE.log10();
   private long mN = -1;
 
   @Override

@@ -14,6 +14,6 @@ public class A285227 extends FilterSequence {
 
   /** Construct the sequence. */
   public A285227() {
-    super(1, new A000040(), p -> new Q(Functions.DIGIT_SUM.z(10, p), Functions.DIGIT_LENGTH.z(10, p)).equals(new Q(7)));
+    super(1, new A000040(), p -> new Q(Functions.DIGIT_SUM.z(10, p), Functions.DIGIT_LENGTH.z(10, p)).equals(Q.SEVEN));
   }
 }

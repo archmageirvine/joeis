@@ -12,6 +12,6 @@ public class A293078 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A293078() {
-    super(1, (term, n) -> (new Q(1).divide(2)).multiply(term).num(), "", new A293077());
+    super(1, (term, n) -> (Q.ONE.divide(2)).multiply(term).num(), "", new A293077());
   }
 }

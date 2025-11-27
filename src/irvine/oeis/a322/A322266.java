@@ -13,6 +13,6 @@ public class A322266 extends LambdaArray {
 
   /** Construct the sequence. */
   public A322266() {
-    super(1, 1, 1, -1, (n, k) -> Rationals.SINGLETON.sum(1, n, j -> new Q(1).divide(j).pow(k - 1)).den());
+    super(1, 1, 1, -1, (n, k) -> Rationals.SINGLETON.sum(1, n, j -> Q.ONE.divide(j).pow(k - 1)).den());
   }
 }

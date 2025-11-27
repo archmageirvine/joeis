@@ -14,6 +14,6 @@ public class A385692 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A385692() {
-    super(0, (self, n) -> Rationals.SINGLETON.sum(0, n - 1, i -> Rationals.SINGLETON.sum(0, n - 1, j -> Rationals.SINGLETON.sum(0, n - 1, k -> i + j + 3 * k != n - 1 ? new Q(0) : new Q(n - i).multiply(self.a(i)).multiply(self.a(j)).multiply(self.a(3 * k)).divide(Functions.FACTORIAL.z(i).multiply(Functions.FACTORIAL.z(j)).multiply(Functions.FACTORIAL.z(3 * k)))))).multiply(Functions.FACTORIAL.z(n - 1)).num(), "1");
+    super(0, (self, n) -> Rationals.SINGLETON.sum(0, n - 1, i -> Rationals.SINGLETON.sum(0, n - 1, j -> Rationals.SINGLETON.sum(0, n - 1, k -> i + j + 3 * k != n - 1 ? Q.ZERO : new Q(n - i).multiply(self.a(i)).multiply(self.a(j)).multiply(self.a(3 * k)).divide(Functions.FACTORIAL.z(i).multiply(Functions.FACTORIAL.z(j)).multiply(Functions.FACTORIAL.z(3 * k)))))).multiply(Functions.FACTORIAL.z(n - 1)).num(), "1");
   }
 }

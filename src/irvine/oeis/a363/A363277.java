@@ -15,6 +15,6 @@ public class A363277 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A363277() {
-    super(1, n -> Rationals.SINGLETON.sumdiv(n, d -> d > Functions.SQRT.i(n) ? new Q(0) : new Q(Functions.MOEBIUS.z(d).square(), Z.valueOf(d))).multiply(n).num());
+    super(1, n -> Rationals.SINGLETON.sumdiv(n, d -> d > Functions.SQRT.i(n) ? Q.ZERO : new Q(Functions.MOEBIUS.z(d).square(), Z.valueOf(d))).multiply(n).num());
   }
 }

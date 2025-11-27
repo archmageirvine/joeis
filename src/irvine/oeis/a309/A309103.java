@@ -15,7 +15,7 @@ public class A309103 extends LambdaSequence {
   public A309103() {
     super(0, n -> {
       Z v = Z.ZERO;
-      Q d = new Q(1);
+      Q d = Q.ONE;
       int k = 1;
       int s = 1;
       while (true) {

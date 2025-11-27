@@ -14,6 +14,6 @@ public class A378826 extends PolynomialRootExpansionSequence {
 
   /** Construct the sequence */
   public A378826() {
-    super(1, Polynomial.create(-1, 0, 12, 0, -144, 0, 32), CR.valueOf(2), CR.valueOf(3));
+    super(1, Polynomial.create(-1, 0, 12, 0, -144, 0, 32), CR.TWO, CR.THREE);
   }
 }

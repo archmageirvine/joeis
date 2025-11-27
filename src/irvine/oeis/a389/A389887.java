@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A390774.
+ * A389887 allocated for Werner Schulte.
  * @author Sean A. Irvine
  */
 public class A389887 extends MultiplicativeSequence {

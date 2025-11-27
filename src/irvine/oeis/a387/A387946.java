@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A390774 allocated for J. Lowell.
+ * A387946 allocated for Robert Israel.
  * @author Sean A. Irvine
  */
 public class A387946 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001223;
 
 /**
- * A390774.
+ * A390769 allocated for Giorgos Kalogeropoulos.
  * @author Sean A. Irvine
  */
 public class A390769 extends Sequence1 {

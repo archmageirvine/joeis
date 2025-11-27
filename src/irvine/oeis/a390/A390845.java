@@ -3,7 +3,7 @@ package irvine.oeis.a390;
 import irvine.oeis.gf.EgfSequence;
 
 /**
- * A390546 allocated for Manolopoulos Panagiotis.
+ * A390845 allocated for Ilya Gutkovskiy.
  * @author Sean A. Irvine
  */
 public class A390845 extends EgfSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A082120.
+ * A082159 Number of deterministic completely defined acyclic automata with 2 inputs and n+1 transient labeled states including a unique state having all transitions to the absorbing state.
  * @author Sean A. Irvine
  */
 public class A082159 extends CachedSequence {

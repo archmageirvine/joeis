@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A390774.
+ * A390797 allocated for Robert Israel.
  * @author Sean A. Irvine
  */
 public class A390797 extends A000040 {

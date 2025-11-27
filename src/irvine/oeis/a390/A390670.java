@@ -12,7 +12,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
 
 /**
- * A390774.
+ * A390670 allocated for John Tyler Rascoe.
  * @author Sean A. Irvine
  */
 public class A390670 extends Sequence0 {

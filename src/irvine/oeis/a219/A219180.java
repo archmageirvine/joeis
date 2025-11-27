@@ -43,7 +43,11 @@ public class A219180 extends MemoryFunction2Sequence<Integer, Z[]> {
     return res;
   }
 
-  protected Z[] nextRow() {
+  /**
+   * Compute the next row of the sequence.
+   * @return next row
+   */
+  public Z[] nextRow() {
     if (mFast.isPrime(++mN)) {
       ++mPi;
     }

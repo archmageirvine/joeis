@@ -1,4 +1,4 @@
-package irvine.oeis.a337;
+package irvine.oeis.a354;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -8,11 +8,14 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A337867 Number of polyfetts (or polifetti) with n cells, identifying mirror images.
+ * A354380 Number of free pseudo-polytans with n cells.
  * @author George Sicherman
- * @author Sean A. Irvine (Java port)
+ * @author Sean A. Irvine
  */
-public class A337867 extends Sequence1 {
+public class A354380 extends Sequence1 {
+
+  // Note the original C code from Sicherman fails to consider all relevant extension
+  // of the current polyfett. This version includes a fix for that problem.
 
   // Sector encoding, thus using bottom and left is 1|2 = 3.
   //   8
@@ -20,20 +23,20 @@ public class A337867 extends Sequence1 {
   // 4| |2
   //  +-+
   //   1
-  private static final int NONE = 0;
-  private static final int S = 1;
-  private static final int E = 2;
-  private static final int W = 4;
-  private static final int N = 8;
-  private static final int SE = S | E;
-  private static final int SW = S | W;
-  private static final int NE = N | E;
-  private static final int NW = N | W;
-  private static final int ALL = N | S | E | W;
-  private static final int NOT_N = S | E | W;
-  private static final int NOT_S = N | E | W;
-  private static final int NOT_E = N | S | W;
-  private static final int NOT_W = N | S | E;
+  protected static final int NONE = 0;
+  protected static final int S = 1;
+  protected static final int E = 2;
+  protected static final int W = 4;
+  protected static final int N = 8;
+  protected static final int SE = S | E;
+  protected static final int SW = S | W;
+  protected static final int NE = N | E;
+  protected static final int NW = N | W;
+  protected static final int ALL = N | S | E | W;
+  protected static final int NOT_N = S | E | W;
+  protected static final int NOT_S = N | E | W;
+  protected static final int NOT_E = N | S | W;
+  protected static final int NOT_W = N | S | E;
 
   private static final int MAX = 100;
   // Sector left-right reflection
@@ -222,10 +225,10 @@ public class A337867 extends Sequence1 {
       if (vacant(x, ynew)) {
         add(x, ynew, NW);
         add(x, ynew, NE);
-        if ((v & E) != 0) {  // Note excluding (v & S) here (and other similar situations) causes certain seemingly valid polyfetts to be missed
+        if ((v & SE) != 0) {
           add(x, ynew, SE);
         }
-        if ((v & W) != 0) {
+        if ((v & SW) != 0) {
           add(x, ynew, SW);
         }
       }
@@ -235,10 +238,10 @@ public class A337867 extends Sequence1 {
       if (vacant(xnew, y)) {
         add(xnew, y, NW);
         add(xnew, y, SW);
-        if ((v & S) != 0) {
+        if ((v & SE) != 0) {
           add(xnew, y, SE);
         }
-        if ((v & N) != 0) {
+        if ((v & NE) != 0) {
           add(xnew, y, NE);
         }
       }
@@ -248,10 +251,10 @@ public class A337867 extends Sequence1 {
       if (vacant(xnew, y)) {
         add(xnew, y, NE);
         add(xnew, y, SE);
-        if ((v & S) != 0) {
+        if ((v & SW) != 0) {
           add(xnew, y, SW);
         }
-        if ((v & N) != 0) {
+        if ((v & NW) != 0) {
           add(xnew, y, NW);
         }
       }
@@ -261,10 +264,10 @@ public class A337867 extends Sequence1 {
       if (vacant(x, ynew)) {
         add(x, ynew, SW);
         add(x, ynew, SE);
-        if ((v & E) != 0) {
+        if ((v & NE) != 0) {
           add(x, ynew, NE);
         }
-        if ((v & W) != 0) {
+        if ((v & NW) != 0) {
           add(x, ynew, NW);
         }
       }

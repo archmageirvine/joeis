@@ -17,7 +17,7 @@ public class A386651 extends LambdaSequence {
   public A386651() {
     super(1, n -> Rationals.SINGLETON.sum(1, 8 * n, k -> {
       final Z k2 = Z.TWO.pow(k);
-      return new Q(Binomial.binomial(n + k - 1, k).mod(k2), k2);
+      return new Q(Binomial.binomial(n + k - 1, k, k2), k2);
     }).round());
   }
 }

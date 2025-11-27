@@ -15,7 +15,7 @@ public class A246133 extends Sequence1 {
 
   /** Construct the sequence. */
   public A246133() {
-    mN = Z.valueOf(1 - 1);
+    mN = Z.ZERO;
   }
 
   @Override

@@ -15,12 +15,12 @@ public class A133889 extends Sequence0 {
 
   /** Construct the sequence. */
   public A133889() {
-    mN = Z.valueOf(0 - 1);
+    mN = Z.NEG_ONE;
   }
 
   @Override
   public Z next() {
     mN = mN.add(Z.ONE);
-    return Binomial.binomial(mN.add(9), mN).mod(Z.NINE);
+    return Binomial.binomial(mN.add(9), mN, Z.NINE);
   }
 }

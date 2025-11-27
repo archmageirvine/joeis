@@ -21,6 +21,6 @@ public class A133623 extends Sequence1 {
   @Override
   public Z next() {
     mN = mN.add(Z.ONE);
-    return Binomial.binomial(mN.add(3), mN).mod(mN);
+    return Binomial.binomial(mN.add(3), mN, mN);
   }
 }

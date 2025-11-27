@@ -17,7 +17,7 @@ public class A006048 extends Sequence0 {
   public Z next() {
     ++mRow;
     for (long col = 0; col <= mRow; ++col) {
-      if (Binomial.binomial(mRow, col).mod(3) != 0) {
+      if (Binomial.binomial(mRow, col, 3) != 0) {
         ++mC;
       }
     }

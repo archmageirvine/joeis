@@ -20,7 +20,7 @@ public class A387064 extends Sequence0 {
     long cnt = 0;
     for (int r = 0; r <= mN; ++r) {
       for (int k = 0; k <= r; ++k) {
-        if (Binomial.binomial(r, k).mod(mN) == 0) {
+        if (Binomial.binomial(r, k, mN) == 0) {
           ++cnt;
         }
       }

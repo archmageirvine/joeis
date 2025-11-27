@@ -16,7 +16,7 @@ public class A242473 extends LambdaSequence {
   public A242473() {
     super(1, n -> {
       final long p = Functions.PRIME.l(n);
-      return Binomial.binomial(2 * p - 1, p - 1).mod(Z.valueOf(p).pow(4));
+      return Binomial.binomial(2 * p - 1, p - 1, Z.valueOf(p).pow(4));
     });
   }
 }

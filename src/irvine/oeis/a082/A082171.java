@@ -15,7 +15,7 @@ public class A082171 extends Sequence0 {
   private int mN = 0;
   private int mM = 0;
   /** S2 function. */
-  public final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
+  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int m) {
       return n == 0 ? Z.ONE : Integers.SINGLETON.sum(0, n - 1, k -> Binomial.binomial(n, k).multiply(Z.NEG_ONE.pow(n - k - 1)).multiply(Z.valueOf(k + m + 1).square().subtract(1).pow(n - k)).multiply(mB.get(k, m)));

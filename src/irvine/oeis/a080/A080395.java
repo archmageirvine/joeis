@@ -16,7 +16,7 @@ public class A080395 extends Sequence1 {
   public Z next() {
     while (true) {
       mN += 2;
-      if (Binomial.binomial(mN, mN / 2).mod(mN * mN) == 0) {
+      if (Binomial.binomial(mN, mN / 2, mN * mN) == 0) {
         return Z.valueOf(mN);
       }
     }

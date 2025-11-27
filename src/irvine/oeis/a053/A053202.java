@@ -24,6 +24,6 @@ public class A053202 extends AbstractSequence {
       ++mN;
       mM = 2;
     }
-    return Binomial.binomial(mN, mM).mod(Z.valueOf(mN));
+    return Z.valueOf(Binomial.binomial(mN, mM, mN));
   }
 }

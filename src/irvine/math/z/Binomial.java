@@ -2,6 +2,7 @@ package irvine.math.z;
 
 import irvine.math.LongUtils;
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.q.Q;
 
 /**
@@ -171,10 +172,10 @@ public final class Binomial {
     return b;
   }
 
-  private static long factorialExponent(long n, final long p) {
+  private static long factorialExponent(long n, final long m) {
     long ex = 0;
     do {
-      n /= p;
+      n /= m;
       ex += n;
     } while (n > 0);
     return ex;
@@ -211,24 +212,100 @@ public final class Binomial {
   }
 
   /**
-   * Compute binomial coefficients modulo a prime.
+   * Compute binomial coefficients modulo a number.
    * @param n upper index (can be negative)
    * @param m lower index
-   * @param p modulus
+   * @param mod modulus
    * @return binomial coefficient
    */
-  public static long binomial(final long n, final long m, final long p) {
-    if (m < 0 || n < m) {
+  public static long binomial(final long n, final long m, final long mod) {
+    if (m < 0 || n < m || mod == 1) {
       return 0;
     }
     if (m == 0 || m == n) {
       return 1;
     }
-    // Check whether binomial(n,k) is divisible by p
-    if (factorialExponent(n, p) > factorialExponent(m, p) + factorialExponent(n - m, p)) {
-      return 0;
+    if (Predicates.PRIME.is(mod)) {
+      // Check whether binomial(n,k) is divisible by mod
+      if (factorialExponent(n, mod) > factorialExponent(m, mod) + factorialExponent(n - m, mod)) {
+        return 0;
+      }
+      return binomial1(n, m, mod);
     }
-    return binomial1(n, m, p);
+    long res = 1;
+    final long nm = n - m;
+    for (long p = 2; p <= n; p = Functions.NEXT_PRIME.l(p)) {
+      for (long pow = p; pow <= n; pow *= p) {
+        final long cnt = n / pow - m / pow - nm / pow;
+        for (long j = 0; j < cnt; ++j) {
+          res *= p;
+          res %= mod;
+        }
+      }
+    }
+    return res;
   }
 
+  /**
+   * Compute a binomial coefficient modulo a number
+   * @param n upper index
+   * @param m lower index
+   * @param mod modulus
+   * @return coefficient
+   */
+  public static Z binomial(final Z n, final Z m, final Z mod) {
+    if (m.signum() < 0 || n.compareTo(m) < 0 || mod.isOne()) {
+      return Z.ZERO;
+    }
+    if (m.isZero() || m.equals(n)) {
+      return Z.ONE;
+    }
+    if (n.bitLength() < Long.SIZE && m.bitLength() < Long.SIZE && mod.bitLength() < Integer.SIZE) {
+      // Drop to primitives for the calculation
+      return Z.valueOf(binomial(n.longValue(), m.longValue(), mod.longValue()));
+    }
+    // Note the following could be made better for prime mod
+    // Note other approaches factor modulus and compute over prime powers using CRT to put back together
+    Z res = Z.ONE;
+    final Z nm = n.subtract(m);
+    for (Z p = Z.TWO; p.compareTo(n) <= 0; p = Functions.NEXT_PRIME.z(p)) {
+      for (Z pow = p; pow.compareTo(n) <= 0; pow = pow.multiply(p)) {
+        final Z cnt = n.divide(pow).subtract(m.divide(pow)).subtract(nm.divide(pow));
+        for (Z j = Z.ZERO; j.compareTo(cnt) < 0; j = j.add(1)) {
+          res = res.modMultiply(p, mod);
+        }
+      }
+    }
+    return res;
+  }
+
+  /**
+   * Compute a binomial coefficient modulo a number
+   * @param n upper index
+   * @param m lower index
+   * @param mod modulus
+   * @return coefficient
+   */
+  public static Z binomial(final long n, final long m, final Z mod) {
+    if (mod.bitLength() < Integer.SIZE) {
+      return Z.valueOf(binomial(n, m, mod.longValue()));
+    } else {
+      return binomial(Z.valueOf(n), Z.valueOf(m), mod);
+    }
+  }
+
+  /**
+   * Compute a binomial coefficient modulo a number
+   * @param n upper index
+   * @param m lower index
+   * @param mod modulus
+   * @return coefficient
+   */
+  public static Z binomial(final Z n, final long m, final Z mod) {
+    if (n.bitLength() < Long.SIZE && mod.bitLength() < Integer.SIZE) {
+      return Z.valueOf(binomial(n.longValue(), m, mod.longValue()));
+    } else {
+      return binomial(n, Z.valueOf(m), mod);
+    }
+  }
 }

@@ -19,7 +19,7 @@ public class A081371 extends Sequence1 {
       ++mN;
       mM = 1;
     }
-    return Binomial.binomial(mN, mM).modZ(mM);
+    return Z.valueOf(Binomial.binomial(mN, mM, mM));
   }
 }
 

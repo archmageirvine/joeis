@@ -17,7 +17,7 @@ public class A042943 extends Sequence1 {
     while (true) {
       if ((++mN & 3) != 0) {
         final Z mod = Z.ONE.shiftLeft(mN).subtract(1).shiftLeft(mN - 1);
-        if (Z.ZERO.equals(Binomial.binomial(Z.ONE.shiftLeft(mN), Z.valueOf(mN)).mod(mod))) {
+        if (Binomial.binomial(Z.ONE.shiftLeft(mN), Z.valueOf(mN)).mod(mod).isZero()) {
           return Z.valueOf(mN);
         }
       }

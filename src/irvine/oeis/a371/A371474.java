@@ -14,7 +14,7 @@ public class A371474 extends FilterNumberSequence {
   public A371474() {
     super(1, 1, k -> {
       final Z z = Z.valueOf(k);
-      return Binomial.binomial(z.square(), z).mod(z.pow(3)).isZero();
+      return Binomial.binomial(z.square(), z, z.pow(3)).isZero();
     });
   }
 }

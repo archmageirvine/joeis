@@ -17,7 +17,7 @@ public class A080216 extends Sequence1 {
     ++mN;
     Z max = Z.ZERO;
     for (long k = 1; k <= mN; ++k) {
-      max = max.max(Binomial.binomial(mN, k).mod(k));
+      max = max.max(Binomial.binomial(mN, k, k));
     }
     return max;
   }

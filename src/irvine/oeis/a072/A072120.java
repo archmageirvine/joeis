@@ -19,7 +19,7 @@ public class A072120 extends Sequence1 {
     long k = 0;
     while (true) {
       ++k;
-      if (Binomial.binomial(2 * k, k).mod(f).isZero()) {
+      if (Binomial.binomial(2 * k, k, f).isZero()) {
         return Z.valueOf(k);
       }
     }

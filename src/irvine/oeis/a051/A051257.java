@@ -19,7 +19,7 @@ public class A051257 extends Sequence0 {
     Z f = Z.ONE;
     for (long k = 0; k <= mN; ++k) {
       f = f.multiply(k + 1);
-      sum = sum.add(f.multiply(Binomial.binomial(mN, k).mod(2 + k)));
+      sum = sum.add(f.multiply(Binomial.binomial(mN, k, 2 + k)));
     }
     return sum;
   }

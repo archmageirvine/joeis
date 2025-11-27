@@ -22,6 +22,6 @@ public class A081369 extends Sequence1 {
   public Z next() {
     mN = mN.add(Z.ONE);
     final Z n2 = mN.square();
-    return Binomial.binomial(n2, mN).mod(n2);
+    return Binomial.binomial(n2, mN, n2);
   }
 }

@@ -25,4 +25,14 @@ public class BinomialTest extends TestCase {
   public void testMultinomial() {
     assertEquals(Z.valueOf(151200), Binomial.multinomial(10, 2, 3, 2));
   }
+
+  public void testBinomialMod() {
+    for (long n = 0; n < 8; ++n) {
+      for (long m = 0; m <= n; ++m) {
+        for (long mod = 1; mod <= 10; ++mod) {
+          assertEquals("binomial(" + n + "," + m + ")(mod " + mod + ")", Binomial.binomial(n, m).mod(mod), Binomial.binomial(n, m, mod));
+        }
+      }
+    }
+  }
 }

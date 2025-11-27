@@ -16,7 +16,7 @@ public class A081384 extends A000040 {
   public Z next() {
     while (true) {
       ++mN;
-      if (Binomial.binomial(super.next(), mN).mod(Z.valueOf(mN).square()).isZero()) {
+      if (Binomial.binomial(super.next(), mN, Z.valueOf(mN).square()).isZero()) {
         return Z.valueOf(mN);
       }
     }

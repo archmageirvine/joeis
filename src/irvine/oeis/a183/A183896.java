@@ -15,6 +15,6 @@ public class A183896 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A183896() {
-    super(0, n -> Binomial.binomial(n + 1, 2).modZ(2).multiply(A183895.a(n)));
+    super(0, n -> A183895.a(n).multiply(Binomial.binomial(n + 1, 2, 2)));
   }
 }

@@ -13,6 +13,6 @@ public class A385396 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A385396() {
-    super(1, 0, k -> Integers.SINGLETON.count(0, k, j -> Binomial.binomial(k, j).mod(8) == 0).isZero());
+    super(1, 0, k -> Integers.SINGLETON.count(0, k, j -> Binomial.binomial(k, j, 8) == 0).isZero());
   }
 }

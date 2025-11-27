@@ -17,7 +17,7 @@ public class A073078 extends Sequence1 {
     ++mN;
     long k = 0;
     while (true) {
-      if (Binomial.binomial(2 * ++k, k).mod(mN) == 0) {
+      if (Binomial.binomial(2 * ++k, k, mN) == 0) {
         return Z.valueOf(k);
       }
     }

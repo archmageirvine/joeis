@@ -15,7 +15,7 @@ public class A060430 extends Sequence1 {
   @Override
   public Z next() {
     final Z up = Z.ONE.shiftLeft(++mN);
-    return Binomial.binomial(up, Z.valueOf(mN)).mod(Binomial.binomial(up, Z.TWO));
+    return Binomial.binomial(up, Z.valueOf(mN)).mod(Binomial.binomial(up, Z.TWO)); // too slow with 3 arg mod
   }
 }
 

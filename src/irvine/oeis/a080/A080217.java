@@ -19,7 +19,7 @@ public class A080217 extends Sequence1 {
     ++mN;
     final HashSet<Long> set = new HashSet<>();
     for (long k = 1; k <= mN; ++k) {
-      set.add(Binomial.binomial(mN, k).mod(k));
+      set.add(Binomial.binomial(mN, k, k));
     }
     return Z.valueOf(set.size());
   }

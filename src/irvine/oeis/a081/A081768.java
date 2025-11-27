@@ -17,7 +17,7 @@ public class A081768 extends Sequence1 {
     ++mN;
     long cnt = 0;
     for (long k = 1; k <= mN; ++k) {
-      if (Binomial.binomial(2 * mN, 2 * k).mod(Binomial.binomial(mN, k)).isZero()) {
+      if (Binomial.binomial(2 * mN, 2 * k, Binomial.binomial(mN, k)).isZero()) {
         ++cnt;
       }
     }

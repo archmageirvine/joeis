@@ -11,16 +11,17 @@ import irvine.oeis.Sequence0;
  */
 public class A133885 extends Sequence0 {
 
+  private static final Z Z25 = Z.valueOf(25);
   protected Z mN;
 
   /** Construct the sequence. */
   public A133885() {
-    mN = Z.valueOf(0 - 1);
+    mN = Z.NEG_ONE;
   }
 
   @Override
   public Z next() {
     mN = mN.add(Z.ONE);
-    return Binomial.binomial(mN.add(5), mN).mod(Z.valueOf(25));
+    return Binomial.binomial(mN.add(5), mN, Z25);
   }
 }

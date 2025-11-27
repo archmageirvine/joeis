@@ -18,10 +18,9 @@ public class A007012 extends Sequence0 {
       return Z.ONE;
     }
     long c = 0;
-    // This is not that efficient, could halve the work due to symmetry,
-    // and potential use direct mod n binomial calculation
+    // This is not that efficient, could halve the work due to symmetry.
     for (long k = 0; k <= mN; ++k) {
-      if (Binomial.binomial(mN, k).mod(mN) != 0) {
+      if (Binomial.binomial(mN, k, mN) != 0) {
         ++c;
       }
     }

@@ -17,7 +17,7 @@ public class A060567 extends Sequence2 {
     long cnt = 0;
     final Z t = Binomial.binomial(++mN, 2);
     for (long k = 0; k <= mN; ++k) {
-      if (Binomial.binomial(mN, k).mod(t).isZero()) {
+      if (Binomial.binomial(mN, k, t).isZero()) {
         ++cnt;
       }
     }

@@ -19,7 +19,7 @@ public class A072119 extends Sequence1 {
     long k = 0;
     while (true) {
       ++k;
-      if (Binomial.binomial(2 * k, k).mod(Functions.POCHHAMMER.z(k, mN + 1)).isZero()) {
+      if (Binomial.binomial(2 * k, k, Functions.POCHHAMMER.z(k, mN + 1)).isZero()) {
         return Z.valueOf(k);
       }
     }

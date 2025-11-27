@@ -14,6 +14,6 @@ public class A127318 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A127318() {
-    super(1, n -> n == 0 ? Z.ZERO : Binomial.binomial(n, Functions.DIGIT_SUM.i(n)).mod(Functions.DIGIT_SUM.z(n)));
+    super(1, n -> n == 0 ? Z.ZERO : Binomial.binomial(n, Functions.DIGIT_SUM.i(n), Functions.DIGIT_SUM.z(n)));
   }
 }

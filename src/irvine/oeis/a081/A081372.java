@@ -17,7 +17,7 @@ public class A081372 extends Sequence1 {
     ++mN;
     long cnt = 0;
     for (long k = 1; k <= mN; ++k) {
-      if (Binomial.binomial(mN, k).mod(k) == 0) {
+      if (Binomial.binomial(mN, k, k) == 0) {
         ++cnt;
       }
     }

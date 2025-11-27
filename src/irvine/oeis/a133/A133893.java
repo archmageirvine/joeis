@@ -12,6 +12,6 @@ public class A133893 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A133893() {
-    super(0, 1, m -> Binomial.binomial(m + 3, m).mod(3) == 0);
+    super(0, 1, m -> Binomial.binomial(m + 3, m, 3) == 0);
   }
 }

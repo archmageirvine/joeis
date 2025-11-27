@@ -3,6 +3,7 @@ package irvine.oeis.a113;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
+import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
@@ -13,6 +14,6 @@ public class A113046 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A113046() {
-    super(0, n -> Integers.SINGLETON.sum(0, n / 2, k -> Binomial.binomial(n - k, (n - 2L * k) / 2).modZ(3)));
+    super(0, n -> Integers.SINGLETON.sum(0, n / 2, k -> Z.valueOf(Binomial.binomial(n - k, (n - 2L * k) / 2, 3))));
   }
 }

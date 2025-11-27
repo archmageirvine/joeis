@@ -22,13 +22,23 @@ public class A082171 extends Sequence0 {
     }
   };
 
+  /**
+   * Get a value of the function.
+   * @param n first parameter
+   * @param m second parameter
+   * @return value
+   */
+  public Z t(final int n, final int m) {
+    return mB.get(n, m);
+  }
+
   @Override
   public Z next() {
     if (++mM >= mN) {
       ++mN;
       mM = 0;
     }
-    return mB.get(mM, mN - mM);
+    return t(mM, mN - mM);
   }
 }
 

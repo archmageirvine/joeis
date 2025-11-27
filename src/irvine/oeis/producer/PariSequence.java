@@ -8,6 +8,7 @@ import java.io.PrintWriter;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.util.string.StringUtils;
 
 /**
  * Produce a sequence from a PARI program.
@@ -24,7 +25,7 @@ public class PariSequence extends AbstractSequence implements Closeable {
   private final Process mProc;
   private final PrintWriter mOut;
   private final BufferedReader mIn;
-  private final String mTimeOut;
+  private int mTimeOut;
 
   /**
    * Construct a sequence backed by a PARI program with default offset = 0.
@@ -42,9 +43,11 @@ public class PariSequence extends AbstractSequence implements Closeable {
   public PariSequence(int offset, final String pariProgram) {
     super(offset);
     final ProcessBuilder pb = new ProcessBuilder(PariProducer.PARI_COMMAND, "--fast", "--quiet");
+    final boolean verbose = "true".equals(System.getProperty("oeis.verbose", "false"));
     try {
+//      pb.redirectErrorStream(true);
+//      pb.redirectOutput(Redirect.INHERIT);
       mProc = pb.start();
-      final boolean verbose = "true".equals(System.getProperty("oeis.verbose", "false"));
       new DrainStreamThread(mProc.getErrorStream(), verbose);
       mOut = new PrintWriter(mProc.getOutputStream());
       mIn = new BufferedReader(new InputStreamReader(mProc.getInputStream()));
@@ -56,26 +59,31 @@ public class PariSequence extends AbstractSequence implements Closeable {
     offset = header.getOffset();
     setOffset(offset);
     final int nStart = header.getNStart();
+    try {
+      mTimeOut = Integer.parseInt(System.getProperty("oeis.timeout", "360000")) - 1; // 100 hours = almost never
+    } catch (final RuntimeException exc) {
+      mTimeOut = 3;
+    }
+
+    if (verbose) {
+      StringUtils.warning("# Text sent to PARI process:\n" + pariProgram);
+    }
     final String programType = header.getType();
-    mOut.println(pariProgram); // Send the program to PARI
-    mTimeOut = System.getProperty("oeis.timeout", "3600000"); // 1000 hours = almost never
     switch (programType) {
-      case "an0":
-        mOut.println("alarm(" + mTimeOut + ",for(n=0,+oo,print(floor(a(n)))));"); // special for P.H.
-        break;
       case "an":
+        mOut.println(pariProgram);
         mOut.println("alarm(" + mTimeOut + ",for(n=" + offset + ",+oo,print(floor(a(n)))));");
         break;
-//      case "dex": // A036792
-//        default(realprecision, 20080);
-//        y=0; x=Pi; m=x; x2=x*x; n=1; nf=1; s=1; while (x!=y, y=x; n++; nf*=n; n++; nf*=n; m*=x2; s=-s; x+=s*m/(n*nf));
-//        for (n=1, 20000, d=floor(x); x=(x-d)*10; print(d));
-//        break;
-      case "isok0":
-        mOut.println("alarm(" + mTimeOut + ",for(n=0,+oo,if(isok(n),print(n))));");
+      case "decexp":
+        mOut.println(pariProgram);
+        mOut.println("alarm(" + mTimeOut + ",for(n=" + offset + ",+oo, d=floor(XX); XX=(XX-d)*10; print(d)));");
         break;
       case "isok":
+        mOut.println(pariProgram);
         mOut.println("alarm(" + mTimeOut + ",for(n=" + nStart + ",+oo,if(isok(n),print(n))));");
+        break;
+      case "print": // the program has a trailing "print()" function
+        mOut.println(pariProgram);
         break;
       default:
         throw new RuntimeException("Unknown type of PARI program " + programType + "\n" + pariProgram);
@@ -94,13 +102,25 @@ public class PariSequence extends AbstractSequence implements Closeable {
         throw new UnsupportedOperationException("PARI process no longer alive", e); // too bad, we tried to clean up
       }
     }
-    try {
+    try { 
+/*
+      int loop = 4;
+      while (--loop >= 0 && !mIn.ready()) {
+          Thread.sleep(500);
+      }
+*/
       final String line = mIn.readLine();
       if (line == null) {
         close();
-        throw new UnsupportedOperationException("PARI did not answer during " + mTimeOut + "s");
+//        throw new TimeoutException("PARI did not answer during " + mTimeOut + "s");
+//        return null;
+        throw new UnsupportedOperationException("Timeout after " + mTimeOut + "s");
       }
       return new Z(line);
+/*
+    } catch (final InterruptedException e) {
+      throw new UnsupportedOperationException("PARI: InterruptedException", e);
+*/
     } catch (final IOException e) {
       throw new UnsupportedOperationException("PARI failed to produce more terms", e);
     }

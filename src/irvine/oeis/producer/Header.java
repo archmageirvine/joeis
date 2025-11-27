@@ -8,15 +8,17 @@ package irvine.oeis.producer;
  */
 public class Header {
 
+  private static final String BFIMAX_TAG = "bfimax=";
   private static final String NSTART_TAG = "nstart=";
   private static final String OFFSET_TAG = "offset=";
   private static final String SOURCE_TAG = "source=";
   private static final String TYPE_TAG = "type=";
 
+  private int mBfiMax = 100; // last index in b-file
+  private int mNStart = 0; // where to start mN
+  private int mOffset = 0; // first index of the sequence
   private String mType = null;
   private String mUrl = null;
-  private int mOffset = 0; // first index of the sequence
-  private int mNStart = 0; // where to start mN
 
   /**
    * Construct a new object capturing information from the header line of a program.
@@ -27,7 +29,13 @@ public class Header {
     final String header = endOfline < 0 ? program : program.substring(0, endOfline);
     final String[] parts = header.split("\\s+");
     for (final String p : parts) {
-      if (p.startsWith(NSTART_TAG)) {
+      if (p.startsWith(BFIMAX_TAG)) {
+        try {
+          mBfiMax = Integer.parseInt(p.substring(BFIMAX_TAG.length()));
+        } catch (final NumberFormatException e) {
+          mBfiMax = 100;
+        }
+      } else if (p.startsWith(NSTART_TAG)) {
         try {
           mNStart = Integer.parseInt(p.substring(NSTART_TAG.length()));
         } catch (final NumberFormatException e) {
@@ -47,6 +55,14 @@ public class Header {
         // ignore other tags
       }
     }
+  }
+
+  /**
+   * Get the last index in the b-file
+   * @return max(index)
+   */
+  public int getBfiMax() {
+    return mBfiMax;
   }
 
   /**

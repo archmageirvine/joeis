@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.concurrent.TimeUnit;
-import java.util.regex.Pattern;
 
 import irvine.oeis.Sequence;
 import irvine.util.io.IOUtils;
@@ -61,6 +60,7 @@ public class PariProducer implements Producer {
             }
           }
         }
+        pb.redirectErrorStream(true);
       } catch (final IOException | InterruptedException e) {
         // Something went wrong, assume no PARI is available
         mPariVersion = "";
@@ -86,7 +86,8 @@ public class PariProducer implements Producer {
     }
     final String pariProgram;
     try {
-      pariProgram = Pattern.quote(IOUtils.readAll(path));
+      // pariProgram = Pattern.quote(IOUtils.readAll(path));
+      pariProgram = IOUtils.readAll(path);
       if (mVerbose) {
         StringUtils.message("Program sent to PARI:\n" + pariProgram);
       }

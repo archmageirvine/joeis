@@ -20,13 +20,13 @@ public class MetaProducer implements Producer {
    * @return general purpose Producer
    */
   public static Producer createDefaultProducer() {
-    return new MetaProducer(
+    final String priorityList = System.getProperty("oeis.priority", "");
+    return priorityList.length() > 0 ? createProducer(priorityList) : new MetaProducer(
       new ReaderProducer(),
       new JavaProducer(),
       new PariProducer(),
       new GapProducer(),
-      new PseudoProducer()
-    );
+      new PseudoProducer());
   }
 
   /**

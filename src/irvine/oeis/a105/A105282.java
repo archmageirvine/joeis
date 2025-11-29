@@ -4,7 +4,7 @@ package irvine.oeis.a105;
 import irvine.oeis.a104.A104238;
 
 /**
- * A105282 Positive integers n such that n^20 + 1 is semiprime (A001358).
+ * A105282 Positive integers k such that k^20 + 1 is semiprime (A001358).
  * @author Georg Fischer
  */
 public class A105282 extends A104238 {

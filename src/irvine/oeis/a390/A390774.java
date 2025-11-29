@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390774 allocated for J. Lowell.
+ * A390774 Numbers whose final digit is at most 3.
  * @author Sean A. Irvine
  */
 public class A390774 extends Sequence1 {

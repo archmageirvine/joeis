@@ -6,7 +6,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence0;
 
 /**
- * A390598 allocated for Marco Rip\u00e0.
+ * A390598 Constant congruence speed in the senary numeral system of the tetration base n, or -1 if n is a multiple of 6.
  * @author Sean A. Irvine
  */
 public class A390598 extends Sequence0 implements DirectSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A082059 Numbers k such that k, sigma(k) and phi(k) have the same decimal digits.
+ * A082059 Numbers k such that k, sigma(k) and phi(k) have the same decimal digits (ignoring multiplicity).
  * @author Sean A. Irvine
  */
 public class A082059 extends Sequence1 {

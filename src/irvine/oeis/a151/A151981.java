@@ -3,7 +3,7 @@ package irvine.oeis.a151;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A151981 Numbers n such that n^2 - n is divisible by 48.
+ * A151981 Numbers k such that k^2 - k is divisible by 48.
  * @author Sean A. Irvine
  */
 public class A151981 extends LinearRecurrence {

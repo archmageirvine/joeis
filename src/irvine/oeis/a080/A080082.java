@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A080082 Smallest prime p such that there is a gap of 2*prime(n) between p and next prime.
+ * A080082 Smallest prime p such that there is a gap of exactly 2*prime(n) between p and the next prime.
  * @author Sean A. Irvine
  */
 public class A080082 extends A000040 {

@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002808;
 import irvine.oeis.a387.A373387;
 
 /**
- * A390600 allocated for Marco Rip\u00e0.
+ * A390600 Composite numbers (not multiples of 10) whose constant congruence speed equals the sum of the constant congruence speeds of all its prime factors counted with multiplicity.
  * @author Sean A. Irvine
  */
 public class A390600 extends A002808 {

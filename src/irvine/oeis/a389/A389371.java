@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A389371 allocated for Dirk Broeders.
+ * A389371 Number of distinct branching structures with up to 3 branches per node after n generations.
  * @author Sean A. Irvine
  */
 public class A389371 extends Sequence0 {

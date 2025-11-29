@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390731 allocated for Robert Israel.
+ * A390731 Numbers k not in A000961 such that A001414(k) is in A000961.
  * @author Sean A. Irvine
  */
 public class A390731 extends Sequence1 {

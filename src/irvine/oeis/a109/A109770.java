@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a011.A011757;
 
 /**
- * A109770 Prime(1^2) + prime(2^2) + ... + prime(n^2).
+ * A109770 Partial sums of A011757.
  * @author Sean A. Irvine
  */
 public class A109770 extends PartialSumSequence {

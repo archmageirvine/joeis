@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A354380 Number of free pseudo-polytans with n cells.
+ * A354380 Number of free pseudo-polytans (or polyfetts) with n cells.
  * @author George Sicherman
  * @author Sean A. Irvine
  */

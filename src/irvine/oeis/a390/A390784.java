@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a219.A219180;
 
 /**
- * A390784 allocated for Felix Huber.
+ * A390784 a(n) is the number of positive integers k for which Sum_{i=1..r} p_i = Sum_{i=1..r} e_i = n, where p_1^e_1*...*p_r^e_r is the canonical prime factorization of k.
  * @author Sean A. Irvine
  */
 public class A390784 extends Sequence1 {

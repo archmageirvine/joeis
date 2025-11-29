@@ -24,6 +24,9 @@ class Valuation extends AbstractFunction2 {
     if (n == 0) {
       return 0;
     }
+    if (m == 1) {
+      throw new IllegalArgumentException("m=1");
+    }
     if (m == 2) {
       return Long.numberOfTrailingZeros(n);
     }

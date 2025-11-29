@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A387842 allocated for Jason Bard.
+ * A387842 a(1) = 1, a(n) = Sum_{k=1..n-1} a(k)^n.
  * @author Sean A. Irvine
  */
 public class A387842 extends CachedSequence {

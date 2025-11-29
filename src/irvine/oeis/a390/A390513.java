@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A390513 allocated for Clark Kimberling.
+ * A390513 Rectangular array, (U(n,k)), read by descending antidiagonals. Let S be the sequence of all 01 words in lexicographic order. Then U(n,k) is the position in A390512 of the index of the word 0^(k-1)w(n), where w(n) is the n-th word in S that is 0 or has first letter 1.
  * @author Sean A. Irvine
  */
 public class A390513 extends Sequence1 {

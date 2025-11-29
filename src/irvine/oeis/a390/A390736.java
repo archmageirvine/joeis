@@ -11,7 +11,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.Triple;
 
 /**
- * A390736 allocated for Hamidreza Maleki Tirabadi.
+ * A390736 Number of n X n grids with 3 non-attacking kings on each row.
  * @author Sean A. Irvine
  */
 public class A390736 extends Sequence0 implements DirectSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a390;
 import irvine.oeis.gf.EgfSequence;
 
 /**
- * A390845 allocated for Ilya Gutkovskiy.
+ * A390845 Expansion of e.g.f. exp( x^3/6 + x^4/24 ).
  * @author Sean A. Irvine
  */
 public class A390845 extends EgfSequence {

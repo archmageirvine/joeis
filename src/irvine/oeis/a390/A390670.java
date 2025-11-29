@@ -12,7 +12,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
 
 /**
- * A390670 allocated for John Tyler Rascoe.
+ * A390670 Triangle read by rows: T(n,k) is the number of irreducible words covering the alphabet [n] such that the maximal cardinality of C is k, where C is a subset of the alphabet such that all letters in C appear in weakly increasing order within the word.
  * @author Sean A. Irvine
  */
 public class A390670 extends Sequence0 {

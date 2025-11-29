@@ -5,7 +5,7 @@ import irvine.oeis.a073.A073233;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
- * A159824 Continued fraction for Pi^Pi (cf. A073233).
+ * A159824 Continued fraction for Pi^Pi.
  * @author Georg Fischer
  */
 public class A159824 extends ContinuedFractionSequence {

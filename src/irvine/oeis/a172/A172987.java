@@ -4,7 +4,7 @@ package irvine.oeis.a172;
 import irvine.oeis.prime.PrimeConditionListSequence;
 
 /**
- * A172987 Numbers n such that n+10 and n+100 are prime.
+ * A172987 Numbers k such that k + 10 and k + 100 are prime.
  * @author Georg Fischer
  */
 public class A172987 extends PrimeConditionListSequence {

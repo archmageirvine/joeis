@@ -7,7 +7,7 @@ import irvine.oeis.recur.HolonomicRecurrence;
 
 
 /**
- * A069993 a(n) = 2^(2n+1)*Sum_{k=1..2*n} binomial(2n+1,k)*Bernoulli(k)/2^k.
+ * A069993 a(n) = 2^(2*n+1)*Sum_{k=1..2*n} binomial(2*n+1,k)*Bernoulli(k)/2^k.
  * @author Georg Fischer
  */
 public class A069993 extends HolonomicRecurrence {

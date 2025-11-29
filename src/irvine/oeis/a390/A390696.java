@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390696 allocated for Ruud H.G. van Tol.
+ * A390696 a(n) = floor(n * log_10(2^64)).
  * @author Sean A. Irvine
  */
 public class A390696 extends Sequence0 {

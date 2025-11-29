@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A075888 Difference of successive primes squared divided by 24, (prime(n+1)^2-prime(n)^2)/24.
+ * A075888 Difference of successive primes squared divided by 24, (prime(n+1)^2 - prime(n)^2)/24.
  * @author Georg Fischer
  */
 public class A075888 extends LambdaSequence {

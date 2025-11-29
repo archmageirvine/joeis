@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001223;
 
 /**
- * A390769 allocated for Giorgos Kalogeropoulos.
+ * A390769 Least even positive integer k that does not appear in the first n prime gaps.
  * @author Sean A. Irvine
  */
 public class A390769 extends Sequence1 {

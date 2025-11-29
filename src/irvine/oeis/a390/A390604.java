@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390604 allocated for Felix Huber.
+ * A390604 a(n) is the number of ways n^n can be written as s^t*u^v, where s, t, u, v are integers &gt; 1 and s^t &lt;= u^v.
  * @author Sean A. Irvine
  */
 public class A390604 extends Sequence1 {

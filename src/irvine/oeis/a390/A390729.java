@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a067.A067666;
 
 /**
- * A390729 allocated for Robert Israel.
+ * A390729 Numbers k not in A000961 such that A001414(k) and A067666(k) are in A000961.
  * @author Sean A. Irvine
  */
 public class A390729 extends Sequence1 {

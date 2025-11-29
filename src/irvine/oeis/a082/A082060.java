@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A082060 Numbers n such that n and phi(n) have the same distinct decimal digits.
+ * A082060 Numbers k such that k and phi(k) have the same distinct decimal digits.
  * @author Sean A. Irvine
  */
 public class A082060 extends Sequence1 {

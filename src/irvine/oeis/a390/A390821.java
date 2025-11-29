@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390821 allocated for Stefano Spezia.
+ * A390821 a(n) is the permanent of the unipotent Sylvester-Kac tridiagonal matrix of order n having main diagonal [0, 2, ..., 2*(n-1)], superdiagonal [1, 2, ..., n-1], and [subdiagonal 1-n, 2-n, ..., -1].
  * @author Sean A. Irvine
  */
 public class A390821 extends Sequence0 {

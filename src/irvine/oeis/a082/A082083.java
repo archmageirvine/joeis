@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000142;
 import irvine.oeis.a008.A008475;
 
 /**
- * A082083 a(n)=A082081[n! ]=A082081[A000142[n]] Fixed points of iterated A008475 function initiated at factorials as initial values.
+ * A082083 a(n) = A082081(n!) = A082081(A000142(n)); fixed points of iterated A008475 function initiated at factorials as initial values.
  * @author Sean A. Irvine
  */
 public class A082083 extends Sequence1 {

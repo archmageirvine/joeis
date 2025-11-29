@@ -3,7 +3,7 @@ package irvine.oeis.a151;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A151971 Numbers n such that n^2 - n is divisible by 21.
+ * A151971 Numbers k such that k^2 - k is divisible by 21.
  * @author Sean A. Irvine
  */
 public class A151971 extends LinearRecurrence {

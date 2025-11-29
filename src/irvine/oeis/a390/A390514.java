@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390514 Table read by rows: T(n,k) is the number of points missed by the longest non-intersecting loop starting at (0,0) on the n X k torus consisting of steps up and to the right, 1 &lt;= k &lt;= n.
+ * A390514 Triangle read by rows: T(n,k) is the number of points missed by the longest non-intersecting loop starting at (0,0) on the n X k torus consisting of steps up and to the right, 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A390514 extends Sequence1 {

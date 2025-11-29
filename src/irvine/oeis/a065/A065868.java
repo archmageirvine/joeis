@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001622;
 import irvine.util.string.StringUtils;
 
 /**
- * A065868 Initial n digits in decimal portion of golden ratio phi (or tau) = (1 + sqrt 5)/2 form a prime number.
+ * A065868 Initial n digits in decimal portion of golden ratio phi = (1 + sqrt 5)/2 form a prime number.
  * @author Sean A. Irvine
  */
 public class A065868 extends Sequence1 {

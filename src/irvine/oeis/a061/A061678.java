@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.FoldedContinuedFraction;
 
 /**
- * A061678 Continued fraction for Sum_{n&gt;=0} 1/3^(3^n).
+ * A061678 Continued fraction for Sum_{k&gt;=0} 1/3^(3^k).
  * @author Georg Fischer
  */
 public class A061678 extends FoldedContinuedFraction {

@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A084856 Prime(n+2)^2-prime(n)^2.
+ * A084856 a(n) = prime(n+2)^2 - prime(n)^2.
  * a(n)=prime(n+2)^2-prime(n)^2
  * @author Georg Fischer
  */

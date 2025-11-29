@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A387946 allocated for Robert Israel.
+ * A387946 Numbers of the form Product_{k=i..j} prime(k) - Sum_{k=i..j} prime(k) where i &lt; j.
  * @author Sean A. Irvine
  */
 public class A387946 extends Sequence1 {

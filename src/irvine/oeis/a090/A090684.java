@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A090684 Primes of the form 8*n^2 - 1.
+ * A090684 Primes of the form 8*k^2 - 1.
  * @author Georg Fischer
  */
 public class A090684 extends PrimeSubsequence {

@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A082089 a(n)-th prime is the fixed point if function A008472[=sum of prime factors with no repetition] is iterated when started at factorial of n-th prime.
+ * A082089 a(n)-th prime is the fixed point if function A008472 is iterated when started at factorial of n-th prime.
  * @author Sean A. Irvine
  */
 public class A082089 extends SimpleTransformSequence {

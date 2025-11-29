@@ -5,7 +5,7 @@ import irvine.oeis.a131.A131563;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
- * A159820 Continued fraction for e*Pi*phi A131563, where phi = (1 + sqrt(5))/2.
+ * A159820 Continued fraction for e*Pi*phi, where phi = (1 + sqrt(5))/2.
  * @author Georg Fischer
  */
 public class A159820 extends ContinuedFractionSequence {

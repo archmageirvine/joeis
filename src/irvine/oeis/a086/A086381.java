@@ -6,7 +6,7 @@ import irvine.oeis.a007.A007591;
 import irvine.oeis.a067.A067201;
 
 /**
- * A086381 Numbers n such that p=n^2+2 and p+2 are primes.
+ * A086381 Numbers k such that p=k^2+2 and p+2 are primes.
  * @author Georg Fischer
  */
 public class A086381 extends IntersectionSequence {

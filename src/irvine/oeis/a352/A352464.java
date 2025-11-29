@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A352464 Numbers k whose decimal expansion ends in the product of digits of k.
+ * A352464 Positive numbers k whose decimal expansion ends in the product of digits of k.
  * @author Georg Fischer
  */
 public class A352464 extends FilterNumberSequence {

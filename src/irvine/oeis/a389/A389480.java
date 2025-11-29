@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A389480 allocated for A.H.M. Smeets.
+ * A389480 Triangle read by rows where T(n,k) is the algebraic degree of cos(k*Pi/n).
  * @author Sean A. Irvine
  */
 public class A389480 extends Sequence0 {

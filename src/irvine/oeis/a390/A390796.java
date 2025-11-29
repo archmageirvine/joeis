@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A390796 allocated for Robert Israel.
+ * A390796 Primes of the form (p*q*r + p + q + r)/4, where p, q, r are consecutive primes.
  * @author Sean A. Irvine
  */
 public class A390796 extends A000040 {

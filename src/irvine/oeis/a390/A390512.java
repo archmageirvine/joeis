@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390512 allocated for Clark Kimberling.
+ * A390512 The all-integers indexing of lexicographically ordered 01 words; a bijection from the positive integers to the integers.
  * @author Sean A. Irvine
  */
 public class A390512 extends Sequence1 {

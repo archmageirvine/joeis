@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012935 sech(tan(x)+log(x+1))=1-4/2!*x^2+6/3!*x^3+45/4!*x^4-300/5!*x^5...
+ * A012935 Expansion of e.g.f.: sech(tan(x)+log(x+1))=1-4/2!*x^2+6/3!*x^3+45/4!*x^4-300/5!*x^5...
  * @author Sean A. Irvine
  */
 public class A012935 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A114974 Numbers n such that 7^n + n^7 is a semiprime.
+ * A114974 Numbers k such that 7^k + k^7 is a semiprime.
  * @author Georg Fischer
  */
 public class A114974 extends FilterNumberSequence {

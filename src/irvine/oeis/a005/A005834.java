@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A005834 a(n) = floor( tau*a(n-2) ) + a(n-1) where tau is the golden ratio.
+ * A005834 a(n) = floor(phi*a(n-2)) + a(n-1) where phi is the golden ratio.
  * @author Sean A. Irvine
  */
 public class A005834 extends Sequence0 {

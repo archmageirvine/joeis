@@ -11,7 +11,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.Quadruple;
 
 /**
- * A390782 allocated for Hamidreza Maleki Tirabadi.
+ * A390782 Number of n X n grids with 4 non-attacking kings on each row.
  * @author Sean A. Irvine
  */
 public class A390782 extends Sequence0 implements DirectSequence {

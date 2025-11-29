@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A082174.
+ * A082180 Composite integers k such that binomial(2*k, k) == 2 (mod k).
  * @author Sean A. Irvine
  */
 public class A082180 extends A002808 {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008475;
 
 /**
- * A082081 a(n) = fixed point when the pseudo-log function A008475[ ] is iterated.
+ * A082081 a(n) = fixed point reached when the pseudo-log function A008475 is iterated starting from n.
  * @author Sean A. Irvine
  */
 public class A082081 extends Sequence1 {

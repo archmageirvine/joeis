@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A387214 allocated for Ruud H.G. van Tol.
+ * A387214 Sturmian word of slope log(3)/log(2) - 1.
  * @author Sean A. Irvine
  */
 public class A387214 extends Sequence0 {

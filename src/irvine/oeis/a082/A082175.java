@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A082174 Number of primitive reduced indefinite quadratic forms over the integers in two variables with discriminants D(n)=A079896(n).
+ * A082175 Number of reduced indefinite quadratic forms over the integers in two variables with discriminants D(n)=A079896(n).
  * @author Sean A. Irvine
  */
 public class A082175 extends Sequence1 {

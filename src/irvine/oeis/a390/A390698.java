@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A390698 allocated for A.H.M. Smeets.
+ * A390698 Decimal expansion of cos(5*Pi/33).
  * @author Sean A. Irvine
  */
 public class A390698 extends DecimalExpansionSequence {

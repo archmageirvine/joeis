@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A386886 allocated for Franck Maminirina Ramaharo.
+ * A386886 Triangle read by rows: T(n,k) is the maximum number of strong k-tournaments in any n-tournament.
  * @author Sean A. Irvine
  */
 public class A386886 extends Sequence3 {

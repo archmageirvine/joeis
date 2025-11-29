@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a060.A060254;
 
 /**
- * A096784 Numbers n such that both n and n+1 are composite numbers that sum up to a prime.
+ * A096784 Numbers k such that both k and k+1 are composite numbers that sum up to a prime.
  * @author Georg Fischer
  */
 public class A096784 extends AbstractSequence {

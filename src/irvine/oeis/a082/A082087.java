@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000142;
 import irvine.oeis.a008.A008472;
 
 /**
- * A082087 a(n) is the fixed point if function A008472 (= sum of prime factors with no repetition) is iterated when started at initial value n!.
+ * A082087 a(n) is the fixed point if function A008472 is iterated when started at initial value n!.
  * @author Sean A. Irvine
  */
 public class A082087 extends Sequence1 {

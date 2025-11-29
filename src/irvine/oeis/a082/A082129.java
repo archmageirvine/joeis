@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A082129 Rounded base-2 logarithm of A082128(n+4).
+ * A082129 Rounded base-2 logarithm of A082128(n).
  * @author Sean A. Irvine
  */
 public class A082129 extends SimpleTransformSequence {

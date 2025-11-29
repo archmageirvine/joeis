@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A057730 Number of polyominoes (A000105) with perimeter 2n.
+ * A057730 Number of free polyominoes (A000105) with perimeter 2n.
  * @author Sean A. Irvine
  */
 public class A057730 extends Sequence1 {

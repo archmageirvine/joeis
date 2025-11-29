@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A215111 Numbers n such that n^2+1 divides n!!.
+ * A215111 Numbers k such that k^2+1 divides k!!.
  * @author Georg Fischer
  */
 public class A215111 extends FilterNumberSequence {

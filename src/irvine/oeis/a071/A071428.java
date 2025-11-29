@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a019.A019334;
 
 /**
- * A071428 Numbers n such that x^n + x^(n-1) + x^(n-2) + ... + x + 1 is irreducible over GF(3).
+ * A071428 Numbers k such that x^k + x^(k-1) + x^(k-2) + ... + x + 1 is irreducible over GF(3).
  * @author Georg Fischer
  */
 public class A071428 extends AbstractSequence {

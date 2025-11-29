@@ -5,7 +5,7 @@ package irvine.oeis.a228;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A228888 a(n) = binomial(3*n + 2, 3).
+ * A228888 a(n) = binomial(3*n+2,3).
  * @author Georg Fischer
  */
 public class A228888 extends HolonomicRecurrence {

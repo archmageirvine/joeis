@@ -8,7 +8,7 @@ import irvine.oeis.a003.A003056;
 import irvine.oeis.a249.A249223;
 
 /**
- * A390628 allocated for Hartmut F. W. Hoft.
+ * A390628 Numbers k such that the symmetric representation of sigma, SRS(k), and SRS(2k) have the same width pattern.
  * @author Sean A. Irvine
  */
 public class A390628 extends A249223 {

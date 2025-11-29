@@ -5,7 +5,7 @@ package irvine.oeis.a193;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A193215 Number of Dyck paths of semilength n having the property that the heights of the first and the last peaks coincide.
+ * A193215 Number of Dyck paths of semilength n having the property that the heights of the first and the last peaks do not disagree.
  * @author Georg Fischer
  */
 public class A193215 extends HolonomicRecurrence {

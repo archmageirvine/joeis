@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A060144 a(n) = floor(n/(1+tau)), or equivalently floor(n/(tau)^2), where tau is the golden ratio (A001622).
+ * A060144 a(n) = floor(n/(1+phi)), or equivalently floor(n/phi^2), where phi is the golden ratio (A001622).
  * @author Georg Fischer
  */
 public class A060144 extends FloorSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a080.A080082;
 
 /**
- * A390840 allocated for M. F. Hasler.
+ * A390840 a(n) = number of primes q &lt;= A080082(n) such that prime(n) divides q + 1.
  * @author Sean A. Irvine
  */
 public class A390840 extends A080082 {

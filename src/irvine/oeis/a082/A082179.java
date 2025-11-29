@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A082174.
+ * A082179 (c(p)-2)/p where p runs through the primes and where c(p) denotes the p-th Catalan number = binomial(2*p,p)/(p+1).
  * @author Sean A. Irvine
  */
 public class A082179 extends A000040 {

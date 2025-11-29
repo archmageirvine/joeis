@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A389887 allocated for Werner Schulte.
+ * A389887 Multiplicative sequence a(n) with a(p^e) = (3 + (-1)^e * (2*e+1)) / 4 for prime p and e &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A389887 extends MultiplicativeSequence {

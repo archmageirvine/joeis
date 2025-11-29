@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A087426 a(n) = S(n,4) where S(n,m) = sum(k=0,n,binomial(n,k)*Fibonacci(m*k)).
+ * A087426 a(n) = S(n,4) where S(n,m) = Sum_{k=0..n} binomial(n,k)*Fibonacci(m*k).
  * @author Sean A. Irvine
  */
 public class A087426 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000203;
 import irvine.oeis.a018.A018804;
 
 /**
- * A082174.
+ * A390881 a(n) = gcd(A018804(n), A000203(n)).
  * @author Sean A. Irvine
  */
 public class A390881 extends Combiner {

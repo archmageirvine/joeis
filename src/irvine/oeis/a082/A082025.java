@@ -21,7 +21,6 @@ public class A082025 extends Sequence0 {
   protected final MemoryFunctionInt2<Long> mB = new MemoryFunctionInt2<>() {
 
     private boolean isOk(final int n, final int m, final long k) {
-      // Check row
       if (m > 0 && Functions.GCD.l(get(n, m - 1), k) != 1) {
         return false;
       }

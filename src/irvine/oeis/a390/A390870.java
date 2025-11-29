@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000720;
 
 /**
- * A390773 allocated for S. I. Dimitrov.
+ * A390870 Numbers k such that sigma(k) = phi(k) + tau(k)^5 + pi(k).
  * @author Sean A. Irvine
  */
 public class A390870 extends Sequence1 {

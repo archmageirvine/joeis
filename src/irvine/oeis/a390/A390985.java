@@ -11,10 +11,10 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence0;
 
 /**
- * A390920 allocated for Hamidreza Maleki Tirabadi.
+ * A390985 allocated for Hamidreza Maleki Tirabadi.
  * @author Sean A. Irvine
  */
-public class A390920 extends Sequence0 implements DirectSequence {
+public class A390985 extends Sequence0 implements DirectSequence {
 
   private int mN = -1;
 
@@ -40,17 +40,21 @@ public class A390920 extends Sequence0 implements DirectSequence {
       for (final Map.Entry<List<Integer>, Z> e : states.entrySet()) {
         final List<Integer> prev = e.getKey();
         final Z count = e.getValue();
-        for (int king1 = 0; king1 < n - 8; ++king1) {
+        for (int king1 = 0; king1 < n - 10; ++king1) {
           if (allowed(prev, king1)) {
-            for (int king2 = king1 + 2; king2 < n - 6; ++king2) {
+            for (int king2 = king1 + 2; king2 < n - 8; ++king2) {
               if (allowed(prev, king2)) {
-                for (int king3 = king2 + 2; king3 < n - 4; ++king3) {
+                for (int king3 = king2 + 2; king3 < n - 6; ++king3) {
                   if (allowed(prev, king3)) {
-                    for (int king4 = king3 + 2; king4 < n - 2; ++king4) {
+                    for (int king4 = king3 + 2; king4 < n - 4; ++king4) {
                       if (allowed(prev, king4)) {
-                        for (int king5 = king4 + 2; king5 < n; ++king5) {
+                        for (int king5 = king4 + 2; king5 < n - 2; ++king5) {
                           if (allowed(prev, king5)) {
-                            nextStates.merge(List.of(king1, king2, king3, king4, king5), count, Z::add);
+                            for (int king6 = king5 + 2; king6 < n; ++king6) {
+                              if (allowed(prev, king6)) {
+                                nextStates.merge(List.of(king1, king2, king3, king4, king5, king6), count, Z::add);
+                              }
+                            }
                           }
                         }
                       }

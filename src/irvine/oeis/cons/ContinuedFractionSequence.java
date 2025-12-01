@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
  */
 public class ContinuedFractionSequence extends AbstractSequence {
 
-  private static final int DEFOFF = 1;
+  private static final int DEFOFF = 0;
   private final DecimalExpansionSequence mSeq;
   private final int mAccuracy;
   protected long mN = -1;

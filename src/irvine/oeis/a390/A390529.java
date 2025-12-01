@@ -4,7 +4,7 @@ package irvine.oeis.a390;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A390529 Weighted count of equivalence classes of words w of length n+1 over {a, b, c, d, A, *} having exactly n letters, exactly one *, an even number of lowercase a&apos;s, and weight (-1)^(A(w)), where A(w) is the number of uppercase letters A.
+ * A390529 Weighted count of equivalence classes of words w of length n+1 over {a, b, c, d, A, *} having exactly n letters, exactly one *, an even number of lowercase a's, and weight (-1)^(A(w)), where A(w) is the number of uppercase letters A.
  * @author Georg Fischer
  */
 public class A390529 extends HolonomicRecurrence {

@@ -9,7 +9,7 @@ import irvine.oeis.a389.A389804;
  */
 public class A390083 extends A389804 {
 
-  private Z mA = super.next();
+  private Z mA = Z.ZERO;
 
   @Override
   public Z next() {

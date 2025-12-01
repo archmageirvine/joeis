@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000668;
 import irvine.oeis.a006.A006667;
 
 /**
- * A390817 allocated for Stephen R. Campbell.
+ * A390817 Number of tripling steps to reach 1 in the 3x+1 (Collatz) problem starting with the n-th Mersenne prime.
  * @author Sean A. Irvine
  */
 public class A390817 extends A000668 {

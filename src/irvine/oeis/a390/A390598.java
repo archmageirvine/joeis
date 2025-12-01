@@ -23,7 +23,7 @@ public class A390598 extends Sequence0 implements DirectSequence {
     switch (r) {
       case 1:
       case 5:
-        return Functions.VALUATION.z(n1, 2).min(Functions.VALUATION.z(n1, 3));
+        return Functions.VALUATION.z(n1, 2).subtract(1).min(Functions.VALUATION.z(n1, 3));
       case 3:
         return Functions.VALUATION.z(n1, 2).subtract(1);
       case 2:

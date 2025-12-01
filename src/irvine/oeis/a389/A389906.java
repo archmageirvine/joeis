@@ -8,7 +8,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a003.A003961;
 
 /**
- * A389906 a(n) = min(2*n, A003961(n)), where A003961 is fully multiplicative with a(p) = nextprime(p)
+ * A389906 a(n) = min(2*n, A003961(n)), where A003961 is fully multiplicative with a(p) = nextprime(p).
  * @author Georg Fischer
  */
 public class A389906 extends LambdaSequence {

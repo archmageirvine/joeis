@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A173714 Floor(Lucas(n+1)/2), Lucas(n) = A000032(n).
+ * A173714 a(n) = floor(Lucas(n+1)/2), Lucas(n) = A000032(n).
  * @author Sean A. Irvine
  */
 public class A173714 extends LinearRecurrence {

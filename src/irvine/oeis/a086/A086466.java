@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A086466 Decimal expansion of 2*sqrt(5)/5 arccsch(2).
+ * A086466 Decimal expansion of 2*arccsch(2)/sqrt(5).
  * Formula: <code>2*sqrt(5)/5arccsch(2)</code>
  * @author Georg Fischer
  */

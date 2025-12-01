@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A339470 Decimal expansion of log(phi)^2, where phi is the golden ratio (A002390^2).
+ * A339470 Decimal expansion of log(phi)^2, where phi is the golden ratio.
  * Formula: log(phi)^2
  * @author Georg Fischer
  */

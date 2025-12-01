@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A119553 Binomial(binomial(2*n,n)*n^2,n).
+ * A119553 a(n) = binomial(n^2 * binomial(2*n,n), n).
  * @author Georg Fischer
  */
 public class A119553 extends LambdaSequence {

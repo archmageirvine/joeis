@@ -15,7 +15,7 @@ public class A390603 extends Sequence0 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sum(1, ++mN, k -> Binomial.binomial(mN, k).multiply(Z.valueOf(k).pow((long) (mN - k) * mN)));
+    return ++mN == 0 ? Z.ONE : Integers.SINGLETON.sum(1, mN, k -> Binomial.binomial(mN, k).multiply(Z.valueOf(k).pow((long) (mN - k) * mN)));
   }
 }
 

@@ -2,7 +2,6 @@ package irvine.oeis.a390;
 
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import irvine.math.function.Functions;
@@ -16,6 +15,8 @@ import irvine.oeis.Sequence0;
  */
 public class A390984 extends Sequence0 implements DirectSequence {
 
+  // This could be made to support larger n by replacing Long with BitSet
+
   private int mN = -1;
 
   @Override
@@ -23,22 +24,18 @@ public class A390984 extends Sequence0 implements DirectSequence {
     return a(n.intValueExact());
   }
 
-  private boolean allowed(final List<Integer> state, final int pos) {
-    for (final int v : state) {
-      if (Math.abs(v - pos) <= 1) {
-        return false;
-      }
-    }
-    return true;
+  private boolean allowed(final Long state, final int pos) {
+    final long mask = (0b111L << pos) >> 1;
+    return (state & mask) == 0;
   }
 
   @Override
   public Z a(final int n) {
-    Map<List<Integer>, Z> states = Collections.singletonMap(List.of(Integer.MAX_VALUE), Z.ONE);
+    Map<Long, Z> states = Collections.singletonMap(0L, Z.ONE);
     for (int k = 0; k < n; ++k) {
-      final Map<List<Integer>, Z> nextStates = new HashMap<>();
-      for (final Map.Entry<List<Integer>, Z> e : states.entrySet()) {
-        final List<Integer> prev = e.getKey();
+      final Map<Long, Z> nextStates = new HashMap<>();
+      for (final Map.Entry<Long, Z> e : states.entrySet()) {
+        final Long prev = e.getKey();
         final Z count = e.getValue();
         for (int king1 = 0; king1 < n - 12; ++king1) {
           if (allowed(prev, king1)) {
@@ -54,7 +51,14 @@ public class A390984 extends Sequence0 implements DirectSequence {
                               if (allowed(prev, king6)) {
                                 for (int king7 = king6 + 2; king7 < n; ++king7) {
                                   if (allowed(prev, king7)) {
-                                    nextStates.merge(List.of(king1, king2, king3, king4, king5, king6, king7), count, Z::add);
+                                    final long next = (1L << king1)
+                                      | (1L << king2)
+                                      | (1L << king3)
+                                      | (1L << king4)
+                                      | (1L << king5)
+                                      | (1L << king6)
+                                      | (1L << king7);
+                                    nextStates.merge(next, count, Z::add);
                                   }
                                 }
                               }
@@ -77,6 +81,9 @@ public class A390984 extends Sequence0 implements DirectSequence {
 
   @Override
   public Z next() {
-    return a(++mN);
+    if (++mN >= Long.SIZE) {
+      throw new UnsupportedOperationException();
+    }
+    return a(mN);
   }
 }

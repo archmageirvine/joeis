@@ -12,7 +12,6 @@ import irvine.oeis.CachedSequence;
  */
 public class A390642 extends CachedSequence {
 
-  //private final TreeSet<Long> mSums = new TreeSet<>(); // todo meaning of distinct in name is misleading
   private final TreeMap<Long, Long> mSums = new TreeMap<>();
 
   /** Construct the sequence. */

@@ -15,10 +15,10 @@ public class A000530 extends Sequence1 {
   private int mN = 0;
 
   // Cache of small results.  The lowest two bits of an entry determine
-  // whether or not the cache entry is valid for sides 0 and 1 respectively.
+  // whether the cache entry is valid for sides 0 and 1 respectively.
   // The next two bits then give the value of the corresponding p-value.
   // The top 4 bits are not used.
-  private static final int CACHE_BITS_LIMIT = 22;
+  private static final int CACHE_BITS_LIMIT = 24;
   private final byte[][] mCache = new byte[CACHE_BITS_LIMIT][];
 
   private void resetCache() {

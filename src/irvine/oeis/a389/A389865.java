@@ -1,0 +1,31 @@
+package irvine.oeis.a389;
+
+import irvine.math.cr.CR;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
+
+/**
+ * A389865 allocated for Jamal Agbanwa.
+ * @author Sean A. Irvine
+ */
+public class A389865 extends Sequence1 {
+
+  private static final CR SQRT3 = CR.THREE.sqrt();
+  private long mN = 0;
+
+  private CR s(final long x, final long y) {
+    return SQRT3.multiply(y).add(x);
+  }
+
+  @Override
+  public Z next() {
+    ++mN;
+    final CR s4 = s(7, -4).pow(mN);
+    final CR t4 = s(7, 4).pow(mN);
+    final CR u = s4.multiply(s(15, -7)).add(t4.multiply(s(15, 7))).multiply(3).subtract(18).divide(4);
+    final CR x = u.add(9);
+    final CR y = s4.multiply(s(7, -5)).add(t4.multiply(s(7, 5))).multiply(3).subtract(54).divide(4);
+    //final CR w = y.add(27);
+    return x.pow(3).add(y.pow(3)).round();
+  }
+}

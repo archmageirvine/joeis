@@ -70,7 +70,7 @@ public class A391022 extends Sequence1 {
     if (mMin == null) {
       throw new RuntimeException("Length bound " + mMaxLength + " was insufficient");
     }
-    mMaxLength = Math.min(2 * mMin.length(), mMin.length() + 5); // set a length limit for the next term
+    mMaxLength = Math.min(2 * mMin.length(), mMin.length() + 8); // set a length limit for the next term
     return new Z(mMin);
   }
 }

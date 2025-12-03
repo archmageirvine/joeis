@@ -1,7 +1,8 @@
 package irvine.oeis.a390;
 
 import java.util.Collections;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
 import java.util.Map;
 
 import irvine.math.z.Z;
@@ -13,23 +14,28 @@ import irvine.oeis.Sequence0;
  */
 public class A390938 extends Sequence0 {
 
-  // Note this sequence actually has a simpler program possible, see formulas
-
   private Map<Z, Z> mA = null;
+  private final LinkedList<Z> mRow = new LinkedList<>();
 
   @Override
   public Z next() {
-    if (mA == null) {
-      mA = Collections.singletonMap(Z.ONE, Z.ONE);
-      return Z.ONE;
+    while (mRow.isEmpty()) {
+      if (mA == null) {
+        mA = Collections.singletonMap(Z.ONE, Z.ONE);
+        mRow.add(Z.ONE);
+      } else {
+        final Map<Z, Z> prev = mA;
+        mA = new LinkedHashMap<>(prev); // We need to ensure chronological ordering!
+        for (final Map.Entry<Z, Z> e : prev.entrySet()) {
+          final Z k = e.getKey();
+          final Z v = e.getValue();
+          if (mA.merge(v, k, Z::add).equals(k)) {
+            // i.e., this is the first time v was added
+            mRow.add(v);
+          }
+        }
+      }
     }
-    final Map<Z, Z> prev = mA;
-    mA = new HashMap<>(prev);
-    for (final Map.Entry<Z, Z> e : prev.entrySet()) {
-      final Z k = e.getKey();
-      final Z v = e.getValue();
-      mA.merge(v, k, Z::add); // Deliberate swap of key and value (that's what the sequence is)
-    }
-    return Z.valueOf(mA.size() - prev.size());
+    return mRow.pollFirst();
   }
 }

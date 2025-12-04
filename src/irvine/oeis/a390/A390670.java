@@ -21,7 +21,7 @@ public class A390670 extends Sequence0 {
 
   private int mN = 0;
   private int mM = -1;
-  private Z[] mRow = {Z.ONE};
+  protected Z[] mRow = {Z.ONE};
 
   private int[] letters(final int n) {
     // Rather than 1..n, we use 1,2,4,...,2^n so we can use bitsets
@@ -97,16 +97,19 @@ public class A390670 extends Sequence0 {
   }
 
   // Builds row n
-  private void step(final int n) {
-    if (n == 1) {
+  protected void step() {
+    if (++mN >= Integer.SIZE) {
+      throw new UnsupportedOperationException();
+    }
+    if (mN == 1) {
       mRow = new Z[] {Z.ZERO, Z.ONE};
       return;
     }
-    mRow = new Z[n + 1];
+    mRow = new Z[mN + 1];
     Arrays.fill(mRow, Z.ZERO);
     final HashSet<List<Integer>> seen = new HashSet<>();
-    for (int i = n; i <= 2 * (n - 1); ++i) {
-      final Permutation perm = new Permutation(letters(n));
+    for (int i = mN; i <= 2 * (mN - 1); ++i) {
+      final Permutation perm = new Permutation(letters(mN));
       int[] p;
       while ((p = perm.next()) != null) {
         final List<Integer> r = reduce(p);
@@ -121,10 +124,7 @@ public class A390670 extends Sequence0 {
   @Override
   public Z next() {
     if (++mM >= mRow.length) {
-      if (++mN >= Integer.SIZE) {
-        throw new UnsupportedOperationException();
-      }
-      step(mN);
+      step();
       mM = 0;
     }
     return mRow[mM];

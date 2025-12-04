@@ -2,23 +2,31 @@ package irvine.oeis.a037;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A037897 (Greatest base 3 digit of n)-(least base 3 digit of n).
  * @author Sean A. Irvine
  */
-public class A037897 extends Sequence1 {
+public class A037897 extends AbstractSequence {
 
-  private Z mN = Z.ZERO;
+  private Z mN;
+  private final int mBase;
 
-  protected int base() {
-    return 3;
+  protected A037897(final int offset, final int base) {
+    super(offset);
+    mBase = base;
+    mN = Z.valueOf(offset - 1);
+  }
+
+  /** Construct the sequence. */
+  public A037897() {
+    this(1, 3);
   }
 
   @Override
   public Z next() {
     mN = mN.add(1);
-    return Z.valueOf(Functions.DIGIT_SORT_ASCENDING.z(base(), mN).mod(base()) - Functions.DIGIT_SORT_DESCENDING.z(base(), mN).mod(base()));
+    return Z.valueOf(Functions.DIGIT_SORT_ASCENDING.z(mBase, mN).mod(mBase) - Functions.DIGIT_SORT_DESCENDING.z(mBase, mN).mod(mBase));
   }
 }

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a179.A179454;
 
 /**
- * A390861 allocated for Jiang Chenyang.
+ * A390861 Sum of maximum depths over all increasing rooted trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A390861 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A135235 Numbers n such that n=s^phi(s) where s is sum of its digits.
+ * A135235 Numbers k such that k = s^phi(s) where s is sum of its digits.
  *
  * @author Georg Fischer
  */

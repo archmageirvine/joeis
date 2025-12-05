@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389977 Absolute value of the inverse Mobius transform of n*mu(n)*sigma(n).
+ * A389977 Absolute value of the inverse M\u00f6bius transform of n*mu(n)*sigma(n).
  * @author Sean A. Irvine
  */
 public class A389977 extends Sequence1 {

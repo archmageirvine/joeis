@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A390642 allocated for Giorgos Kalogeropoulos.
+ * A390642 a(n) is the smallest integer k such that the number of sums a(i) + a(j) &lt;= k for i &lt;= j &lt; n is less than k - n + 1.
  * @author Sean A. Irvine
  */
 public class A390642 extends CachedSequence {

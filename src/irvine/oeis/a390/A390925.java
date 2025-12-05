@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390925 allocated for Robert P. P. McKone.
+ * A390925 a(n) is the number of 3 X 3 matrices with elements 1..n where at least one row and at least one column is strictly increasing.
  * @author Sean A. Irvine
  */
 public class A390925 extends Sequence0 {

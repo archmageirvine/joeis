@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A390915 allocated for Marco Rip\u00e0.
+ * A390915 Number of n-adic integer solutions of y^(2*n - 1) = y in Z_n.
  * @author Sean A. Irvine
  */
 public class A390915 extends Sequence2 {

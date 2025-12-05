@@ -6,7 +6,7 @@ package irvine.oeis.a069;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A069121 a(n) = n^4*binomial(2n,n).
+ * A069121 a(n) = n^4*binomial(2*n,n).
  * @author Georg Fischer
  */
 public class A069121 extends HolonomicRecurrence {

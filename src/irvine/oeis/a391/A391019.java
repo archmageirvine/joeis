@@ -3,7 +3,7 @@ package irvine.oeis.a391;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A391019 allocated for Arkadiusz Wesolowski.
+ * A391019 The unique set of nine distinct squarefree numbers whose reciprocals add to 1/2, with the property that each number has exactly two distinct prime factors.
  * @author Sean A. Irvine
  */
 public class A391019 extends FiniteSequence {

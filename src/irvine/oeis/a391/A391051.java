@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A391051 allocated for Ognjen Papaz.
+ * A391051 Number of combinatorially distinct (n-1)-dimensional links in all edgewise triangulations of a simplex.
  * @author Sean A. Irvine
  */
 public class A391051 extends GfSequence {

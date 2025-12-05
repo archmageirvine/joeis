@@ -11,16 +11,16 @@ import irvine.oeis.a014.A014486;
  */
 public class A082347 extends A014486 {
 
-  private static SExpression s082345(SExpression s) {
+  private static SExpression s082347(SExpression s) {
     if (s.isPair()) {
       s = s.knack();
-      s.setCdr(s082345(s.cdr()));
+      s.setCdr(s082347(s.cdr()));
     }
     return s;
   }
 
   @Override
   public Z next() {
-    return Functions.GLOBAL_CATALAN_RANK.z(s082345(SExpression.binexp2pars(super.next())).toZ());
+    return Functions.GLOBAL_CATALAN_RANK.z(s082347(SExpression.binexp2pars(super.next())).toZ());
   }
 }

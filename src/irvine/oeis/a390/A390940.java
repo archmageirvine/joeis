@@ -10,7 +10,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
- * A390940 allocated for M. F. Hasler.
+ * A390940 Terms of A390939 sorted in increasing order, where A390939 lists the keys added in the map initialized with T[1] = 1 and repeatedly T[v] := k + (T[v] if defined else 0) for all key-value pairs (k, v) in T.
  * @author Sean A. Irvine
  */
 public class A390940 extends Sequence0 {

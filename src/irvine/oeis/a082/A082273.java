@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002113;
 
 /**
- * A082273 Palindromes arising in A082272.
+ * A082273 Palindromes arising in A082272, or 0 if A082272(n) is 0.
  * @author Sean A. Irvine
  */
 public class A082273 extends Sequence1 {

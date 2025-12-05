@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A390786 allocated for Clark Kimberling.
+ * A390786 a(n) is the least k such that the number of integers between (1/5)*prime(k) and (1/5)*prime(k+1) is n.
  * @author Sean A. Irvine
  */
 public class A390786 extends A000040 {

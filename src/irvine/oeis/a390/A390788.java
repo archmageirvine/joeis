@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390788 allocated for Clark Kimberling.
+ * A390788 Numbers k such that 2*k - (greatest prime &lt; 2*k) &lt; (least prime &gt; 2*k) - 2*k.
  * @author Sean A. Irvine
  */
 public class A390788 extends Sequence1 {

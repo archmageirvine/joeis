@@ -11,9 +11,9 @@ import irvine.oeis.a014.A014486;
  */
 public class A082346 extends A014486 {
 
-  private static SExpression s082345(SExpression s) {
+  private static SExpression s082346(SExpression s) {
     if (s.isPair()) {
-      s.setCdr(s082345(s.cdr()));
+      s.setCdr(s082346(s.cdr()));
       s = s.knack();
     }
     return s;
@@ -21,6 +21,6 @@ public class A082346 extends A014486 {
 
   @Override
   public Z next() {
-    return Functions.GLOBAL_CATALAN_RANK.z(s082345(SExpression.binexp2pars(super.next())).toZ());
+    return Functions.GLOBAL_CATALAN_RANK.z(s082346(SExpression.binexp2pars(super.next())).toZ());
   }
 }

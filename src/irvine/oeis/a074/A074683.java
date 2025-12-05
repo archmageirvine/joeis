@@ -11,7 +11,12 @@ import irvine.oeis.a014.A014486;
  */
 public class A074683 extends A014486 {
 
-  private static SExpression s074683(final SExpression s) {
+  /**
+   * Apply the automorphism of this sequence.
+   * @param s S-expression
+   * @return automorphism
+   */
+  public static SExpression s074683(final SExpression s) {
     if (s.isPair()) {
       final SExpression t = SExpression.createTree(s074683(s.car()), s074683(s.cdr()));
       return A074679.rotateLeftOrSwap(t);

@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a061.A061346;
 
 /**
- * A083390 m such that 2m + 1 divides lcm(1,3,5,...,2m - 1).
+ * A083390 Integers m such that 2m + 1 divides lcm(1,3,5,...,2m - 1).
  * @author Georg Fischer
  */
 public class A083390 extends AbstractSequence {

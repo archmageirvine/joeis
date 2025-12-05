@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390938 allocated for M. F. Hasler.
+ * A390938 Number of new keys inserted at iteration n in a map initialized with T[1] := 1, then iterate: for each (key, value) already in T, T[value] := T[value]+key if T[value] already exists, else T[value] := key.
  * @author Sean A. Irvine
  */
 public class A390938 extends Sequence0 {

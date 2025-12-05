@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.Permutation;
 
 /**
- * A390697 allocated for Jean-Marc Rebert.
+ * A390697 Primes k for which the concatenation, in ascending order, of all prime digit permutations, yields a prime.
  * @author Sean A. Irvine
  */
 public class A390697 extends A000040 {

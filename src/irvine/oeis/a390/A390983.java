@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A390983 allocated for Nicolas B\u011blohoubek.
+ * A390983 The smallest prime whose representation in base n contains the digit 0.
  * @author Sean A. Irvine
  */
 public class A390983 extends Sequence2 {

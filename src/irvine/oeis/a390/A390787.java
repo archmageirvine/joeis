@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A390787 allocated for Clark Kimberling.
+ * A390787 a(n) is the least k such that there are exactly n integers between (1/6)*prime(k) and (1/6)*prime(k+1).
  * @author Sean A. Irvine
  */
 public class A390787 extends A000040 {

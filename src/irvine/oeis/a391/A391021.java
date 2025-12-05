@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.Permutation;
 
 /**
- * A391021 allocated for Jean-Marc Rebert.
+ * A391021 Primes in A390697 where the concatenation, in non-decreasing order, of all prime digit permutations, read as a decimal integer, attains a new record.
  * @author Sean A. Irvine
  */
 public class A391021 extends A000040 {

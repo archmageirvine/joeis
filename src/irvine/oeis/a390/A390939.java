@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390938 allocated for M. F. Hasler.
+ * A390939 Keys added to a map T initialized with T[1] = 1 and updated at each iteration according to T[value] := (T[value] if defined else 0) + key, for all (key, value) pairs already in T; listed in order the keys are added to the map (cf. comments for details).
  * @author Sean A. Irvine
  */
 public class A390939 extends Sequence0 {

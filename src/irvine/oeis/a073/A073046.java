@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A073046 Write 2*n = p+q (p,q prime), p*q minimal; then a(n) = p*q.
+ * A073046 Write 2*n = p + q (p, q prime), p*q minimal; then a(n) = p*q.
  * @author Sean A. Irvine
  */
 public class A073046 extends Sequence2 {

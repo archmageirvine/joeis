@@ -4,7 +4,7 @@ import irvine.oeis.DirichletConvolutionSequence;
 import irvine.oeis.a328.A328254;
 
 /**
- * A390954 allocated for Aloe Poliszuk.
+ * A390954 Dirichlet convolution of A390554 and A328254.
  * @author Sean A. Irvine
  */
 public class A390954 extends DirichletConvolutionSequence {

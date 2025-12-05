@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390986 allocated for Michel Lagneau.
+ * A390986 Integers k such that all prime factors of k^2+1 are Sophie Germain primes.
  * @author Sean A. Irvine
  */
 public class A390986 extends Sequence1 {

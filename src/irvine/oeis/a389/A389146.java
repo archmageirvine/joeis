@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A389146 Classification of positive integers into numbers in A387487, primes, proper prime powers, weak composites, and powerful numbers that are not prime powers.
+ * A389146 Classification of nonnegative integers into numbers in A387487, primes, proper prime powers, weak composites, and powerful numbers that are not prime powers.
  * @author Sean A. Irvine
  */
 public class A389146 extends Sequence0 {

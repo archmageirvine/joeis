@@ -7,7 +7,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A390776 a(n) = (1/(4*n+2)) * Sum_{k=0..n} (4*k+2) * binomial(4*n+2,n-k).
+ * A390776 a(n) = (1/(2*n+1)) * Sum_{k=0..n} (2*k+1) * binomial(4*n+2,n-k).
  * @author Georg Fischer
  */
 public class A390776 extends LambdaSequence {

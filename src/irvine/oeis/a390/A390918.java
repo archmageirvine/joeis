@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A390918 allocated for Robert Israel.
+ * A390918 Primes p such that the difference of the product of 4 consecutive primes starting with p and the sum of those 4 primes is a prime.
  * @author Sean A. Irvine
  */
 public class A390918 extends A000040 {

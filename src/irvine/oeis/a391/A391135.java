@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a105.A105126;
 
 /**
- * A390759.
+ * A391135 Primes p == 9 (mod 16) for which the real part of the octonic Gauss sum ("normalized", i.e., divided by sqrt(p) ) is greater than 1.
  * @author Sean A. Irvine
  */
 public class A391135 extends A105126 {

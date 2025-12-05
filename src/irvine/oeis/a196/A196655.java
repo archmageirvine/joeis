@@ -3,7 +3,7 @@ package irvine.oeis.a196;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A196655 33*2^(n+1) + 7.
+ * A196655 a(n) = 33*2^(n+1) + 7.
  * @author Sean A. Irvine
  */
 public class A196655 extends LinearRecurrence {

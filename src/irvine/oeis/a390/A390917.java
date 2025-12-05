@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A390917 allocated for Robert Israel.
+ * A390917 Numbers k such that prime(k) * prime(k+1) * prime(k+2) * prime(k+3) - (prime(k) + prime(k+1) + prime(k+2) + prime(k+3)) is prime.
  * @author Sean A. Irvine
  */
 public class A390917 extends A000040 {

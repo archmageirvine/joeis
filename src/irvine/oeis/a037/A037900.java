@@ -8,6 +8,6 @@ public class A037900 extends A037897 {
 
   /** Construct the sequence. */
   public A037900() {
-    super(1, 6);
+    super(0, 6);
   }
 }

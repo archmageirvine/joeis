@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A002901 n^3 - floor( n/3 ).
+ * A002901 a(n) = n^3 - floor( n/3 ).
  * @author Sean A. Irvine
  */
 public class A002901 extends Sequence0 {

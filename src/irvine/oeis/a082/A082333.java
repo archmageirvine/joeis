@@ -10,7 +10,7 @@ import irvine.oeis.a057.A057501;
 import irvine.oeis.a057.A057502;
 
 /**
- * A082333 Permutation of natural numbers induced by the composition of involutions A057163 &amp; A082313.
+ * A082333 Permutation of natural numbers induced by the composition of involutions A057163 and A082313.
  * @author Sean A. Irvine
  */
 public class A082333 extends A057502 {

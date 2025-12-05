@@ -5,7 +5,7 @@ package irvine.oeis.a081;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A081808 Numbers n such that the largest prime power in the factorization of n equals phi(n).
+ * A081808 Numbers m such that the largest prime power in the factorization of m equals phi(m).
  * @author Georg Fischer
  */
 public class A081808 extends HolonomicRecurrence {

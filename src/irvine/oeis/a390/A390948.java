@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000720;
 
 /**
- * A390948 allocated for S. I. Dimitrov.
+ * A390948 Numbers k such that sigma(k) = psi(k) + tau(k)^3 + pi(k).
  * @author Sean A. Irvine
  */
 public class A390948 extends Sequence1 {

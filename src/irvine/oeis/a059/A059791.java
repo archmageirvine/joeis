@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A059791 Numbers n such that floor(phi^n) is prime, where phi = golden ratio.
+ * A059791 Numbers k such that floor(phi^k) is prime, where phi is the golden ratio.
  * @author Sean A. Irvine
  */
 public class A059791 extends Sequence1 {

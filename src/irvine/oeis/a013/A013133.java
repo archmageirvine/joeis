@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A013133 exp(tanh(x)+tan(x))=1+2*x+4/2!*x^2+8/3!*x^3+16/4!*x^4+64/5!*x^5...
+ * A013133 Expansion of e.g.f.: exp(tanh(x)+tan(x))=1+2*x+4/2!*x^2+8/3!*x^3+16/4!*x^4+64/5!*x^5...
  * @author Sean A. Irvine
  */
 public class A013133 extends Sequence0 {

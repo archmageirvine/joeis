@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391114 allocated for Werner Schulte.
+ * A391114 Array read by antidiagonals upwards: A(n, k) = if(n mod 2 = 0, floor((n+2^k-2) / 2^k), n * (k*2^k+1) + 1).
  * @author Sean A. Irvine
  */
 public class A391114 extends Sequence1 {

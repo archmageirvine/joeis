@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A390929 allocated for Robert Israel.
+ * A390929 Primes p such that, if q,r,s are the next three primes, both p*q*r*s - (p+q+r+s) and p*q*r*s + (p+q+r+s) are primes.
  * @author Sean A. Irvine
  */
 public class A390929 extends A000040 {

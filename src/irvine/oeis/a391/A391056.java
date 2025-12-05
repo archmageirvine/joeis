@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391056 allocated for Werner Schulte.
+ * A391056 Triangle read by rows: T(n,k) = 9*(q+1)*q/2 + (3*q+2)*(n mod 3) - 3*k + 3 for 1 &lt;= k &lt;= n, where q = floor(n/3).
  * @author Sean A. Irvine
  */
 public class A391056 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A082292 a(n) = (2n+1) * (2n)! / sqrt(4*(n+1)*Product_{k=1..2n+1} lcm(k, 2n+2-k)).
+ * A082292 a(n) = (2*n+1) * (2*n)! / (sqrt(4*(n+1)*Product_{k=1..2*n+1} lcm(k, 2*n+2-k))).
  * @author Sean A. Irvine
  */
 public class A082292 extends Sequence2 {

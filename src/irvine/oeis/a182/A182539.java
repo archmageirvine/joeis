@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A182539 a(n) = a(n-1) + (a(n-2) AND n).
+ * A182539 a(0)=0, a(1)=1, a(n) = a(n-1) + (a(n-2) AND n), where AND is the bitwise AND operator.
  * @author Georg Fischer
  */
 public class A182539 extends Sequence0 {

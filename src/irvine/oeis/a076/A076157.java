@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.FoldedContinuedFraction;
 
 /**
- * A076157 Continued fraction expansion for c=sum_{k&gt;=0} 1/2^(k!).
+ * A076157 Continued fraction expansion for c = Sum_{k&gt;=0} 1/2^(k!).
  * a(3*2^n) = 2^((n+1)*((n+2)!)) - 1
  * @author Georg Fischer
  */

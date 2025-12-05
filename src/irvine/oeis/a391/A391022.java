@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A391022 allocated for Jean-Marc Rebert.
+ * A391022 Minimal square obtained by concatenating n distinct nonzero squares in ascending order.
  * @author Sean A. Irvine
  */
 public class A391022 extends Sequence1 {

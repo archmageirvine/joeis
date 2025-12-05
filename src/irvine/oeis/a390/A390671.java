@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390671 allocated for Alessandro M. Pettinari.
+ * A390671 Minimum number of hyperoperations to get n using only 1s.
  * @author Sean A. Irvine
  */
 public class A390671 extends Sequence1 {

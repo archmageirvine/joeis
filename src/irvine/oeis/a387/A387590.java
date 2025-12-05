@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387590 allocated for Robert Israel.
+ * A387590 a(n) is the first prime that is (product + sum) of 2*n consecutive primes.
  * @author Sean A. Irvine
  */
 public class A387590 extends Sequence1 {

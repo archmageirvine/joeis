@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A173248 a(0)=1, a(n) = (-1)^n*(n^3-15*n^2-12+2*n)/6, n&gt;0.
+ * A173248 a(0) = -1, otherwise a(n) = (-1)^n*(n^3 - 15*n^2 + 2*n - 12)/6.
  * @author Georg Fischer
  */
 public class A173248 extends GeneratingFunctionSequence {

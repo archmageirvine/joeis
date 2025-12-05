@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a094.A094407;
 
 /**
- * A390758 allocated for Zoltan Reti.
+ * A390758 Primes == 1 (mod 16), for which the octonic Gauss sum is greater than the quartic one.
  * @author Sean A. Irvine
  */
 public class A390758 extends A094407 {

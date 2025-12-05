@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068088 n-3, n-2, n-1, n+1, n+2 and n+3 are squarefree.
+ * A068088 Numbers k such that k-3, k-2, k-1, k+1, k+2 and k+3 are squarefree.
  * @author Sean A. Irvine
  */
 public class A068088 extends Sequence1 {

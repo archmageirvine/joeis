@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a060.A060822;
 
 /**
- * A212738 a(n) = (7^p - 6^p -  1)/(1806p) where p is the n-th prime.
+ * A212738 a(n) = (7^p - 6^p - 1)/(1806*p) where p is the n-th prime.
  * @author Georg Fischer
  */
 public class A212738 extends A060822 {

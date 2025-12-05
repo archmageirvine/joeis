@@ -21,7 +21,7 @@ public class A037897 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A037897() {
-    this(1, 3);
+    this(0, 3);
   }
 
   @Override

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390932 allocated for Noah A Rosenberg.
+ * A390932 Triangle read by rows: T(n,k) is the number of rooted binary perfect phylogenies with sample size n and k leaves.
  * @author Sean A. Irvine
  */
 public class A390932 extends Sequence1 {

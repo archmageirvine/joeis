@@ -15,19 +15,19 @@ import irvine.oeis.Sequence0;
  */
 public class A390940 extends Sequence0 {
 
-  private static final Z[] SPECIAL = ZUtils.toZ(1, 2, 4, 24, 28, 30, 32, 64, 88, 128, 132, 134, 268, 416, 1920, 3712, 7424);
+  private static final Z[] SPECIAL = ZUtils.toZ(1, 2, 4, 24, 28, 30, 32, 64, 88, 128, 132, 134, 268, 416, 1920, 3712, 7424); // A390943
   private Map<Z, Z> mA = null;
-  private final TreeSet<Z> mRow = new TreeSet<>();
+  private final TreeSet<Z> mS = new TreeSet<>();
 
   private void step() {
     final Map<Z, Z> prev = mA;
-    mA = new HashMap<>(prev); // We need to ensure chronological ordering!
+    mA = new HashMap<>(prev);
     for (final Map.Entry<Z, Z> e : prev.entrySet()) {
       final Z k = e.getKey();
       final Z v = e.getValue();
       if (mA.merge(v, k, Z::add).equals(k)) {
         // i.e., this is the first time v was added
-        mRow.add(v);
+        mS.add(v);
       }
     }
   }
@@ -49,11 +49,15 @@ public class A390940 extends Sequence0 {
   public Z next() {
     if (mA == null) {
       mA = Collections.singletonMap(Z.ONE, Z.ONE);
-      mRow.add(Z.ONE);
+      mS.add(Z.ONE);
+      // Do some initial steps to handle 6
+      for (int k = 0; k < 9; ++k) {
+        step();
+      }
     }
-    while (mRow.isEmpty() || mRow.first().compareTo(getMin()) > 0) {
+    while (mS.isEmpty() || mS.first().compareTo(getMin()) > 0) {
       step();
     }
-    return mRow.pollFirst();
+    return mS.pollFirst();
   }
 }

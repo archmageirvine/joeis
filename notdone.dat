@@ -2679,3 +2679,4 @@ A081833 a(n) is the smallest number that can be expressed as the product of thre
 A082379 Number of length-n 7/3-power-free words over the alphabet {0,1}.
 A082380 Number of 7/3+-power-free words over the alphabet {0,1}.
 A082424 Coefficient of s(2n) in s(n,n) * s(n,n) * s(n,n) * s(n,n) * s(n,n) * s(n,n), where s(n,n) is the Schur function indexed by two parts of size n, s(2n) is the Schur function corresponding to the trivial representation and * represents the inner or Kronecker product.
+A082437 Coefficient of s(2n) in s(n,n) * s(n,n) * s(n,n) * s(n,n) * s(n,n), where s(2n) is the Schur function corresponding to the trivial representation, s(n,n) is a Schur function corresponding two the two row partition and * represents the inner or Kronecker product of symmetric functions.

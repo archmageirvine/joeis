@@ -4,6 +4,7 @@ import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
+import irvine.util.string.StringUtils;
 
 /**
  * A096695 Least balanced prime (A090403) of index n (A096693).
@@ -11,6 +12,7 @@ import irvine.util.array.DynamicLongArray;
  */
 public class A096695 extends Sequence1 {
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final Fast mPrime = new Fast();
   private final DynamicLongArray mFirsts = new DynamicLongArray();
   private int mN = 0;
@@ -38,6 +40,9 @@ public class A096695 extends Sequence1 {
       }
       if (mFirsts.get(cnt) == 0) {
         mFirsts.set(cnt, mP);
+        if (mVerbose) {
+          StringUtils.message("Found solution for " + cnt + " is " + mP);
+        }
       }
     }
     return Z.valueOf(mFirsts.get(mN));

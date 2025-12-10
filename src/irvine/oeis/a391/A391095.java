@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a036.A036044;
 
 /**
- * A391095 allocated for Paolo P. Lava.
+ * A391095 Integers k such that Sum_{j|k, j!=k} A036044(j) = A036044(k).
  * @author Sean A. Irvine
  */
 public class A391095 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A389430 allocated for Neo Jing Min.
+ * A389430 Number of nodes on a hexagonal lattice where the side lengths increase in this pattern: (x, x, x, x, x, x) -&gt; (x+1, x, x, x+1, x, x) -&gt; (x+1, x, x+1, x, x+1, x) -&gt; (x+1, x+1, x, x+1, x+1, x) -&gt; (x+1, x+1, x+1, x+1, x+1, x+1).
  * @author Sean A. Irvine
  */
 public class A389430 extends Sequence0 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A082374 Set of n such that the prime quadruple prime(n), prime(n+1), prime(n+2), prime(n+3) does not have a solution for the congruence prime(n+1)^x - prime(n)^x == prime(n+2) mod prime(n+3).
+ * A082374 Numbers k such that the congruence prime(k+1)^x - prime(k)^x == prime(k+2) mod prime(k+3) does not have a solution.
  * @author Sean A. Irvine
  */
 public class A082374 extends A000040 {

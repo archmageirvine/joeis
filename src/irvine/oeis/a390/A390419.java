@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390419 Triangle read by rows: T(n,k) is the number of ways to place k non-attacking kings in each row of an n X n board, 0 &lt;= k &lt;= floor(n/4) + [n=1].
+ * A390419 Triangle read by rows: T(n,k) is the number of ways to place k non-attacking kings in each row of an n X n board, 0 &lt;= k &lt;= floor((n+1)/4) + [n=1].
  * @author Sean A. Irvine
  */
 public class A390419 extends Sequence1 {

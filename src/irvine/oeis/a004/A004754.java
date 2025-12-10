@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A004754 Numbers n whose binary expansion starts 10.
+ * A004754 Numbers whose binary expansion starts 10.
  * @author Sean A. Irvine
  */
 public class A004754 extends Sequence1 {

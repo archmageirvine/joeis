@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390944 allocated for M. F. Hasler.
+ * A390944 Value of T[4] after the n-th iteration, when the map T is initialized with T[1] = 1 and in subsequent iterations, T[v] = k + (T[v] if defined else 0) for all key-value pairs (k, v) in T; a(n) = 0 if T[4] isn't defined yet.
  * @author Sean A. Irvine
  */
 public class A390944 extends Sequence0 {

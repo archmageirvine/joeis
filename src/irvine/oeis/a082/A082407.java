@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A082407 define u(k) as u(1)=1 u(k)=binomial(2*u(k-1),u(k-1)) (mod k), sequence gives values of k such that u(k)=0.
+ * A082407 Define u(k) as u(1)=1, u(k)=binomial(2*u(k-1),u(k-1)) (mod k), sequence gives values of k such that u(k)=0.
  * @author Sean A. Irvine
  */
 public class A082407 extends Sequence1 {

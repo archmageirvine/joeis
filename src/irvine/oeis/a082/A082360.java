@@ -8,7 +8,7 @@ import irvine.oeis.a057.A057162;
 import irvine.oeis.a074.A074684;
 
 /**
- * A082360 Permutation of natural numbers: composition of permutations A057163 &amp; A074684.
+ * A082360 Permutation of natural numbers: composition of permutations A057163 and A074684.
  * @author Sean A. Irvine
  */
 public class A082360 extends A014486 {

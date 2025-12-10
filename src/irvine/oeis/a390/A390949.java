@@ -5,7 +5,7 @@ import irvine.oeis.a332.A332785;
 import irvine.oeis.a375.A375055;
 
 /**
- * A390949 allocated for Michael De Vlieger.
+ * A390949 Nonsquarefree weak numbers that have more than 2 distinct prime factors.
  * @author Sean A. Irvine
  */
 public class A390949 extends IntersectionSequence {

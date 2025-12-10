@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A111412 f(f(n+1))-f(f(n)), where f(m) = wt(m) = A000120(m).
+ * A111412 a(n) = f(f(n+1))-f(f(n)), where f(m) = wt(m) = A000120(m).
  * @author Georg Fischer
  */
 public class A111412 extends LambdaSequence {

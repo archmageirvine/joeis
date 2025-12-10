@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391120 allocated for Robert Israel.
+ * A391120 a(n) is the least k for which n^k contains at least one decimal digit 9, or -1 if there is no such k.
  * @author Sean A. Irvine
  */
 public class A391120 extends Sequence1 {

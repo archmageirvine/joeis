@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A152619 n*(n+2)^2.
+ * A152619 a(n) = n*(n+2)^2.
  * @author Georg Fischer
  */
 public class A152619 extends GeneratingFunctionSequence {

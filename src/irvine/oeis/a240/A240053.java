@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A240053 3rd Arithmetic derivation of products of 2 successive prime numbers (A006094).
+ * A240053 3rd arithmetic derivation of products of 2 successive prime numbers (A006094).
  * @author Georg Fischer
  */
 public class A240053 extends SingleTransformSequence {

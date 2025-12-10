@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001358;
 
 /**
- * A390934 allocated for Ctibor O. Zizka.
+ * A390934 Least k such that n divides A001358(k) - A001358(j) for some 1 &lt;= j &lt; k.
  * @author Sean A. Irvine
  */
 public class A390934 extends Sequence1 {

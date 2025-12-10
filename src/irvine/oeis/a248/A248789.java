@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A248789 Decimal expansion of the variance associated with the fraction of guests without a napkin in Conway\u2019s napkin problem.
+ * A248789 Decimal expansion of the variance associated with the fraction of guests without a napkin in Conway's napkin problem.
  * Formula: (3-e)*(2-sqrt(e))^2
  * @author Georg Fischer
  */

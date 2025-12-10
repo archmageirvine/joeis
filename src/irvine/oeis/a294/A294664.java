@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A294664 Numbers n such that the largest digit of n^3 is 4.
+ * A294664 Numbers m such that the largest digit of m^3 is 4.
  * @author Georg Fischer
  */
 public class A294664 extends FilterNumberSequence {

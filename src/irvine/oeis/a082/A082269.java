@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A082269 Number of terms in row n of A082268.
+ * A082269 Number of positive terms in row n of A082268.
  * @author Sean A. Irvine
  */
 public class A082269 extends Sequence1 {

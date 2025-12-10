@@ -4,7 +4,7 @@ package irvine.oeis.a258;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A258902 E.g.f.: Series_Reversion(x - x^2/2 - x^3/3).
+ * A258902 Expansion of e.g.f. Series_Reversion(x - x^2/2 - x^3/3).
  * E.g.f.: <code>reverse(x-x^2/2-x^3/3)</code>.
  * @author Georg Fischer
  */

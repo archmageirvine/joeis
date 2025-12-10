@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A037897 (Greatest base 3 digit of n)-(least base 3 digit of n).
+ * A037897 a(n) = (Greatest base 3 digit of n) - (least base 3 digit of n).
  * @author Sean A. Irvine
  */
 public class A037897 extends AbstractSequence {

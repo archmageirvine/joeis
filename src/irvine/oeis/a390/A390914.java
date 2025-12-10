@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390914 allocated for Marco Rip\u00e0.
+ * A390914 a(n) = (n^(n - 1) + 1)^n.
  * @author Sean A. Irvine
  */
 public class A390914 extends Sequence1 {

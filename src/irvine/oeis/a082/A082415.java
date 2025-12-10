@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A082415 Numbers n such that in all partitions of n into distinct coprimes these coprimes are also mutually relatively prime.
+ * A082415 Numbers k such that in all partitions of k into distinct coprimes these coprimes are also mutually relatively prime.
  * @author Sean A. Irvine
  */
 public class A082415 extends Sequence1 {

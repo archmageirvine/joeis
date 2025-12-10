@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391048 allocated for Yu Hin Au.
+ * A391048 Triangle read by rows: T(n,k) = binomial(n+1,k+1) * binomial(5*n-4*k+1,k) / (n+1), 0&lt;=k&lt;=n.
  * @author Sean A. Irvine
  */
 public class A391048 extends Sequence0 {

@@ -6,7 +6,7 @@ package irvine.oeis.a155;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A155721 Positions of parity change in A033035.
+ * A155721 Duplicate of A080674.
  * @author Georg Fischer
  */
 public class A155721 extends HolonomicRecurrence {

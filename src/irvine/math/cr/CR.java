@@ -452,9 +452,9 @@ public abstract class CR extends Number implements Comparable<CR>, IsInteger {
    * they differ by less than the tolerance, anything
    * may happen.  The tolerance allowed is
    * the maximum of <code>(abs(this)+abs(x))*(2^r)</code> and <code>2^a</code>
-   * @param x  The other computable real
-   * @param r Relative tolerance in bits
-   * @param a Absolute tolerance in bits
+   * @param x the other computable real
+   * @param r relative tolerance in bits
+   * @param a absolute tolerance in bits
    * @return result of comparison
    */
   public int compareTo(final CR x, final int r, final int a) {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A386606 allocated for A.H.M. Smeets.
+ * A386606 Numbers with exactly 3 distinct odd prime factors.
  * @author Sean A. Irvine
  */
 public class A386606 extends Sequence1 {

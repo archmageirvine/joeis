@@ -6,7 +6,7 @@ import irvine.oeis.a005.A005374;
 import irvine.oeis.a263.A263719;
 
 /**
- * A082401 a(n)=A005374(n)-floor(r*n) where r is the positive root of x^3+x-1=0.
+ * A082401 a(n) = A005374(n) - floor(r*n) where r is the positive root of x^3+x-1=0.
  * @author Sean A. Irvine
  */
 public class A082401 extends A005374 {

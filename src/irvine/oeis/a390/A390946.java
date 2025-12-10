@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390946 allocated for Jwalin Bhatt.
+ * A390946 Irregular triangle read by rows of continued fraction expansions of prime(i)/prime(j+1) for j &gt;= 1, 1 &lt;= i &lt; j.
  * @author Sean A. Irvine
  */
 public class A390946 extends Sequence1 {

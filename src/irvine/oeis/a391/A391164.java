@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391164 allocated for Jason Bard.
+ * A391164 Numbers whose final digit is at most 5.
  * @author Sean A. Irvine
  */
 public class A391164 extends Sequence0 {

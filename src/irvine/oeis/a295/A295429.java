@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A295429 Number of minimal connected dominating sets in the n X n torus grid graph.
+ * A295429 Number of connected minimal dominating sets in the n X n torus grid graph.
  *
  * @author Georg Fischer
  */

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A391043 allocated for Michel Eduardo Beleza Yamagishi.
+ * A391043 Triangle read by rows: T(n,k) is the number of i &lt;= n such that A020481(i) = prime(k).
  * @author Sean A. Irvine
  */
 public class A391043 extends Sequence2 {

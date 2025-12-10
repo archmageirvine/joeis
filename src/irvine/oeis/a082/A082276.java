@@ -76,7 +76,7 @@ public class A082276 extends Sequence1 {
       while (j < m.length && m[j] == 0) {
         ++j;
       }
-      Z cnt;
+      final Z cnt;
       if (m[m.length - 1] != 0) { // Don't bother if entire set is 0
         if (j == 0) {
           // No 0s

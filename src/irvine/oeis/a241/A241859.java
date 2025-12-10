@@ -7,7 +7,7 @@ import irvine.oeis.a003.A003415;
 import irvine.oeis.a157.A157037;
 
 /**
- * A241859 1st Arithmetic derivative of numbers with prime arithmetic derivative (A157037).
+ * A241859 1st arithmetic derivative of numbers with prime arithmetic derivative (A157037).
  * Formula: <code>a(n) = A003415(A157037(n)).</code>
  * @author Georg Fischer
  */

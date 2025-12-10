@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A391050 allocated for Felix Huber.
+ * A391050 Greatest prime q such that A391049(n)^2 - 8*q = s^2 for some s &gt; 0.
  * @author Sean A. Irvine
  */
 public class A391050 extends Sequence1 {

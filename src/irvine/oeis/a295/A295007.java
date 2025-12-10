@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A295007 Numbers n such that the largest digit of n^2 is 7.
+ * A295007 Numbers k such that the largest digit of k^2 is 7.
  * @author Georg Fischer
  */
 public class A295007 extends FilterNumberSequence {

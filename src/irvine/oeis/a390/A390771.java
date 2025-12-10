@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A390771 allocated for James S. DeArmon.
+ * A390771 a(n) is the minimal concatenation pq of two primes p &lt;= q such that p + q = 2*n.
  * @author Sean A. Irvine
  */
 public class A390771 extends Sequence2 {

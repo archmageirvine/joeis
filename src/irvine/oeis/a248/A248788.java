@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A248788 Decimal expansion of (2-sqrt(e))^2, the mean fraction of guests without a napkin in Conway\u2019s napkin problem.
+ * A248788 Decimal expansion of (2-sqrt(e))^2, the mean fraction of guests without a napkin in Conway's napkin problem.
  * Formula: (2-sqrt(e))^2
  * @author Georg Fischer
  */

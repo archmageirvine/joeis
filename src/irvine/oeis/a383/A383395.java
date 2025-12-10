@@ -5,7 +5,7 @@ import irvine.oeis.a024.A024365;
 import irvine.oeis.a050.A050936;
 
 /**
- * A383395 allocated for Robert Israel.
+ * A383395 Areas of primitive Pythagorean triangles that are sums of two or more consecutive primes.
  * @author Sean A. Irvine
  */
 public class A383395 extends IntersectionSequence {

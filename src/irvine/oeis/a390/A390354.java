@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007519;
 
 /**
- * A390354 allocated for Zoltan Reti.
+ * A390354 Primes p == 1 (mod 8) for which the quartic Gauss sum (divided by sqrt(p)) is less than one, g(4,p) &lt; 1 = g(2,p).
  * @author Sean A. Irvine
  */
 public class A390354 extends A007519 {

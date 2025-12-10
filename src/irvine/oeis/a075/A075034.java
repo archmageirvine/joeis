@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075034 Numbers n such that tau(n) &gt;= tau(n+1) &gt;= tau(n+2) where tau(n) = number of divisors of n.
+ * A075034 Numbers k such that tau(k) &gt;= tau(k+1) &gt;= tau(k+2) where tau(k) = number of divisors of k.
  * @author Sean A. Irvine
  */
 public class A075034 extends Sequence1 {

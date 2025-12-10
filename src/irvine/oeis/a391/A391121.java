@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A391121 allocated for Robert Israel.
+ * A391121 First of four consecutive primes with product p and sum s such that |s^2-p| and s^2+p are both prime.
  * @author Sean A. Irvine
  */
 public class A391121 extends A000040 {

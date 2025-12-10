@@ -8,7 +8,7 @@ import irvine.oeis.a045.A045763;
 import irvine.oeis.a073.A073757;
 
 /**
- * A083250 Numbers n for which abs(A045763(n) - A073757(n)) = 3, i.e., signed difference of size of related and unrelated sets to n equals either 3 or -3.
+ * A083250 Numbers m for which abs(A045763(m) - A073757(m)) = 3, i.e., signed difference of size of related and unrelated sets to n equals either 3 or -3.
  * @author Georg Fischer
  */
 public class A083250 extends FilterNumberSequence {

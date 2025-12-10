@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391105 allocated for Gary Detlefs.
+ * A391105 a(n) = binomial(4*n,n) - binomial(3*n,n).
  * @author Sean A. Irvine
  */
 public class A391105 extends Sequence0 {

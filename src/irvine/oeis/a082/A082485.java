@@ -1,0 +1,26 @@
+package irvine.oeis.a082;
+
+import irvine.math.function.Functions;
+import irvine.math.q.Q;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
+
+/**
+ * A082485 Numbers k such that 1/(2-s(k)) is an integer where s(k) = Sum_{i=1..k} 1/3^floor(sqrt(i)).
+ * @author Sean A. Irvine
+ */
+public class A082485 extends Sequence1 {
+
+  private Q mS = Q.TWO;
+  private long mN = 0;
+
+  @Override
+  public Z next() {
+    while (true) {
+      mS = mS.subtract(new Q(1, Z.THREE.pow(Functions.SQRT.l(++mN))));
+      if (mS.num().isOne()) {
+        return Z.valueOf(mN);
+      }
+    }
+  }
+}

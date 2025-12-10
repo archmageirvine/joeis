@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002088;
 
 /**
- * A385682 allocated for Jean-Louis Lascoux.
+ * A385682 Number of pairs (r/s, k) with gcd(r,s)=1, 1 &lt;= r &lt; s &lt;= n and 1 &lt;= k &lt;= n-1.
  * @author Sean A. Irvine
  */
 public class A385682 extends Sequence1 {

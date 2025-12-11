@@ -126,7 +126,7 @@ public final class BumperFactory {
 
   /**
    * Strictly increasing bumper.
-   * @param max maximum element value
+   * @param max exclusive maximum element value
    * @return bumper
    */
   public static Bumper increasing(final int max) {

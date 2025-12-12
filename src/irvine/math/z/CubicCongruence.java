@@ -74,6 +74,9 @@ public final class CubicCongruence {
     if (c.modPow(Z.THREE, p).equals(ap)) {
       res.add(c);
     }
+    if (a.isOne()) {
+      res.add(Z.ONE); // Kludge to include a trivial solution that seems otherwise to get omitted
+    }
     if (VERBOSE) {
       System.out.println(StringUtils.rep(' ', sIndent) + " -> " + res);
     }

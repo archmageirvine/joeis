@@ -152,8 +152,7 @@ public class A082499 extends Sequence1 {
     throw new RuntimeException("Unknown expr");
   }
 
-  @Override
-  public Z next() {
+  protected TreeSet<CR> step() {
     if (++mN == 1) {
       mExprs.add(Collections.singletonList(XX));
     } else {
@@ -172,6 +171,12 @@ public class A082499 extends Sequence1 {
       final CR value = eval(log(log(expr)));
       uniq.add(value);
     }
+    return uniq;
+  }
+
+  @Override
+  public Z next() {
+    final TreeSet<CR> uniq = step();
     return Z.valueOf(uniq.size());
   }
 }

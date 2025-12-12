@@ -293,4 +293,19 @@ public final class StringUtils {
     return result.toString();
   }
 
+  /**
+   * Count the number of occurrences of a character in a string.
+   * @param s string
+   * @param c character
+   * @return number of occurrences
+   */
+  public static int count(final CharSequence s, final char c) {
+    int cnt = 0;
+    for (int k = 0; k < s.length(); ++k) {
+      if (s.charAt(k) == c) {
+        ++cnt;
+      }
+    }
+    return cnt;
+  }
 }

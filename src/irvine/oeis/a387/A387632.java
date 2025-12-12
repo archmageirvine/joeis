@@ -53,7 +53,7 @@ public class A387632 extends Sequence2 {
       }
       return false;
     }
-    // WLOG rhe next subset should include only values less than least unused or the least unused
+    // WLOG the next subset should include only values less than least unused or the least unused
     // Find the least unused number
     long wlogBit = 1L;
     while ((used & wlogBit) != 0) {
@@ -77,13 +77,27 @@ public class A387632 extends Sequence2 {
       ++mN;
       final long pairs = Functions.TRIANGULAR.l(mN - 1);
       final long lim = 1L << mN;
-      // todo could special case k = 2
       final long[] set = new long[1000];
       for (long k = 2; k <= mN; ++k) {
+        if (pairs % Functions.TRIANGULAR.l(k - 1) != 0) {
+          continue;
+        }
+        if ((mN - 1) % (k - 1) != 0) {
+          continue;
+        }
+        if (k < mN) {
+          final long b = pairs / Functions.TRIANGULAR.l(k - 1);
+          if (b < mN) {
+            continue;
+          }
+        }
         if (pairs % Functions.TRIANGULAR.l(k - 1) == 0) {
           if (mVerbose) {
             StringUtils.message("Starting search for n=" + mN + " sets of size " + k);
           }
+//          final long start = (1L << k) - 1;
+//          set[0] = start;
+//          search(set, 1, start, lim, Functions.SWIZZLE.l(start));
           search(set, 0, 0, lim, (1L << k) - 1);
         }
       }

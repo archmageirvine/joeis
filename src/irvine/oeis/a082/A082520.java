@@ -16,7 +16,7 @@ public class A082520 extends FilterSequence {
   public A082520() {
     super(1, new A002385(), p -> {
       final Z sp = p.multiply(2).add(1);
-      return Predicates.PRIME.is(sp) && Predicates.PALINDROME.is(sp);
+      return Predicates.PALINDROME.is(sp) && Predicates.PRIME.is(sp);
     });
   }
 }

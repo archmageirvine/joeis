@@ -7,7 +7,7 @@ import irvine.oeis.a019.A019565;
 import irvine.oeis.a087.A087207;
 
 /**
- * A391066 allocated for Fl\u00e1vio V. Fernandes.
+ * A391066 a(n) is the last term of the map x -&gt; A087207(x) starting with A019565(n) before reaching 1 or -1 if 1 is never reached.
  * @author Sean A. Irvine
  */
 public class A391066 extends Sequence1 {

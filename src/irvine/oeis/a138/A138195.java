@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A138195 Floor(8*n/(5*log(n))).
+ * A138195 a(n) = floor(8*n/(5*log(n))).
  * @author Georg Fischer
  */
 public class A138195 extends FloorSequence {

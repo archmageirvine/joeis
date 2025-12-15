@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391287 allocated for Tamas Sandor Nagy.
+ * A391287 a(n) is the number of twin prime pairs entirely within the sets of length prime(n) that are incrementally taken from the sequence of odd consecutive primes.
  * @author Sean A. Irvine
  */
 public class A391287 extends Sequence1 {

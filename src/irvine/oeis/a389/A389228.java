@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389228 allocated for Miles Englezou.
+ * A389228 a(n) is the length of the shortest path in the rooted tree T_n defined in A390207 and in the comments.
  * @author Sean A. Irvine
  */
 public class A389228 extends Sequence1 {

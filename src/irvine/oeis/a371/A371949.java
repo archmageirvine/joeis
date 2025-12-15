@@ -12,7 +12,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A390514.
+ * A371949 Array read by antidiagonals: T(n,k) is the numerator of the probability of attacker victory in the game of Risk when n attacking armies face k defending armies in a territory.
  * @author Sean A. Irvine
  */
 public class A371949 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a147;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A147672 a(n)=a(n-2)+2^(n-1)+5 for n&gt;3, a(0..3)=(0,1,2,7).
+ * A147672 a(n) = a(n-2) + 2^(n-1) + 5 for n&gt;3, a(0..3) = (0,1,2,7).
  * @author Georg Fischer
  */
 public class A147672 extends GeneratingFunctionSequence {

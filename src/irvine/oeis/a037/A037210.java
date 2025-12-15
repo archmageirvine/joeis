@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A037210 Numbers n such that p-n=p#-n#, where p=nextprime(n), n#=nextprime(square root of n), p#=nextprime(square root of p).
+ * A037210 Numbers k such that p-k=p#-k#, where p=nextprime(k), k#=nextprime(square root of k), p#=nextprime(square root of p).
  * @author Sean A. Irvine
  */
 public class A037210 extends Sequence1 {

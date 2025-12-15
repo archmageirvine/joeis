@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053091 F^3-convex polyominoes on the honeycomb lattice by number of cells.
+ * A053091 Number of F^3-convex polyominoes on the honeycomb lattice by number of cells.
  * @author Sean A. Irvine
  */
 public class A053091 extends Sequence1 {

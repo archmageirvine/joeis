@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072978 Numbers of the form m*2^Omega(m), where m&gt;1 is odd and Omega(m)=A001222(m), the number of prime factors of m.
+ * A072978 Numbers of the form m * 2^bigomega(m), where m&gt;1 is odd and bigomega(m) = A001222(m), the number of prime factors of m.
  * @author Sean A. Irvine
  */
 public class A072978 extends Sequence1 {

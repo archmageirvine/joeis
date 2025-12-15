@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391024 allocated for Michael De Vlieger.
+ * A391024 Classification of numbers predicated according to prime powers, squarefree, powerful, and perfect powers.
  * @author Sean A. Irvine
  */
 public class A391024 extends Sequence0 {

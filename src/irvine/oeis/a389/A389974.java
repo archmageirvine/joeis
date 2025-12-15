@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389974 allocated for Peter Munn.
+ * A389974 A generalization of Euclid-Mullin sequence A000945 applied to generate only primes of the form 4k+3: let Q be the product of all preceding terms, then a(n) is the smallest prime factor of the form 4k+3 of whichever of {Q+2, Q+4} has the form 4k+3.
  * @author Sean A. Irvine
  */
 public class A389974 extends Sequence1 {

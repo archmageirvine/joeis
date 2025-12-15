@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A390274 allocated for Matt Enlow.
+ * A390274 The least k such that each possible decimal digit string of length n occurs in some 2^i for 0 &lt;= i &lt;= k.
  * @author Sean A. Irvine
  */
 public class A390274 extends Sequence1 {

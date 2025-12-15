@@ -6,7 +6,7 @@ import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
 
 /**
- * A390505 allocated for Clark Kimberling.
+ * A390505 a(n) = AN-run sequence of the n-th 01-word, where all 01-words are lexicographically ordered as in A076478; see Comments.
  * @author Sean A. Irvine
  */
 public class A390505 extends Sequence1 {

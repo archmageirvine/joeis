@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A108082 Sum_{i=0..n} binomial(2n+i,2i).
+ * A108082 a(n) = Sum_{i=0..n} binomial(2n+i,2i).
  * a(n)=sum(i=0,n,binom(2*n+i,2*i))
  * @author Georg Fischer
  */

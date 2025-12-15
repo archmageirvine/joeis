@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Triple;
 
 /**
- * A082552/
+ * A082554 Primes whose base-2 representation is a block of 1's, followed by a block of 0's, followed by a block of 1's.
  * @author Sean A. Irvine
  */
 public class A082554 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A082483 Numbers n such that 1/(5-s(n)) is an integer where s(k)=sum(i=1,k,1/2^floor(sqrt(i))).
+ * A082483 Numbers k such that 1/(5-s(k)) is an integer where s(k) = Sum_{i=1..k} 1/2^floor(sqrt(i)).
  * @author Sean A. Irvine
  */
 public class A082483 extends Sequence1 {

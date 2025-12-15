@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064109 Product_{k=1..n} prime(k) - prime(4n).
+ * A064109 (Product_{k=1..n} prime(k)) - prime(4n).
  * @author Sean A. Irvine
  */
 public class A064109 extends Sequence1 {

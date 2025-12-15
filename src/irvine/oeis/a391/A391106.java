@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391106 allocated for Tamas Sandor Nagy.
+ * A391106 When constructing the sequence of the positive integers &gt; 1 from prime factors, we reuse the prime factors of the smallest earlier constructed numbers where we can. The sequence is the numbers whose prime factors were first reused entirely in the process.
  * @author Sean A. Irvine
  */
 public class A391106 extends Sequence1 {

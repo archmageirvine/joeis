@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A082527 Least k such that x(k)=0 where x(1)=n x(k)=k^2*floor(x(k-1)/k^2).
+ * A082527 Least k such that x(k)=0 where x(1)=n and x(k)=k^2*floor(x(k-1)/k^2).
  * @author Sean A. Irvine
  */
 public class A082527 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a371.A371949;
 
 /**
- * A390514.
+ * A390860 a(n) is the minimum number of armies required for an attacker to have a 50% or better chance of beating a defender with n armies in the game Risk.
  * @author Sean A. Irvine
  */
 public class A390860 extends A371949 {

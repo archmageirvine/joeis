@@ -5,7 +5,7 @@ import java.util.HashSet;
 import irvine.math.z.Z;
 
 /**
- * A082546 Numbers n such that n=A082534(x)=A082534(y), where x&lt;y.
+ * A082546 Numbers occurring more than once in A082534.
  * @author Sean A. Irvine
  */
 public class A082546 extends A082534 {

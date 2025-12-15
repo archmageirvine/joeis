@@ -3,6 +3,7 @@ package irvine.math.function;
 import java.util.HashMap;
 
 import irvine.math.z.Z;
+import irvine.util.Pair;
 
 /**
  * Stirling numbers of the second kind.
@@ -10,7 +11,7 @@ import irvine.math.z.Z;
  */
 class Stirling2 extends AbstractFunction2 {
 
-  private final HashMap<String, Z> mSecondKind = new HashMap<>();
+  private final HashMap<Pair<Integer, Integer>, Z> mSecondKind = new HashMap<>();
 
   @Override
   public Z z(final long n, final long m) {
@@ -26,7 +27,10 @@ class Stirling2 extends AbstractFunction2 {
     if (n == 0 || m == 0 || n < m) {
       return Z.ZERO;
     }
-    final String key = n + "_" + m;
+    if (n > Integer.MAX_VALUE) {
+      throw new UnsupportedOperationException();
+    }
+    final Pair<Integer, Integer> key = new Pair<>((int) n, (int) (m));
     final Z s = mSecondKind.get(key);
     if (s != null) {
       return s;

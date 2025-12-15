@@ -4,7 +4,7 @@ package irvine.oeis.a384;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A384219 Areas of triangles whose three vertices are consecutive ordered pairs of consecutive odd Fibonacci numbers such that an ordered pair\u2019s y-value is the next ordered pair\u2019s x-value.
+ * A384219 Areas of triangles whose three vertices are consecutive ordered pairs of consecutive odd Fibonacci numbers such that an ordered pair's y-value is the next ordered pair's x-value.
  * @author Georg Fischer
  */
 public class A384219 extends GeneratingFunctionSequence {

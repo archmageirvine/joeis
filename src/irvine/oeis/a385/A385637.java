@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A385637 Primes whose decimal expansion consists of the concatenation of m i\u2019s followed by m j\u2019s, ..., iiijjj, iijj and ij, i != j, where 1 &lt;= i, j &lt;= 9 and m &gt; 0.
+ * A385637 Primes whose decimal expansion consists of the concatenation of m i's followed by m j's, ..., iiijjj, iijj and ij, i != j, where 1 &lt;= i, j &lt;= 9 and m &gt; 0.
  * @author Sean A. Irvine
  */
 public class A385637 extends Sequence1 {

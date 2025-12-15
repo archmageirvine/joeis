@@ -5,7 +5,7 @@ import irvine.oeis.TwoParameterFormSequence;
 import irvine.oeis.a001.A001597;
 
 /**
- * A391195 allocated for Paul Duckett.
+ * A391195 Integers which can be expressed as the sum of two distinct perfect powers.
  * @author Sean A. Irvine
  */
 public class A391195 extends TwoParameterFormSequence {

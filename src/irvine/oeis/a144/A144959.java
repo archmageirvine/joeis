@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a134.A134955;
 
 /**
- * A144959 A134955(n) - A134955(n-1). Number of hyperforests spanning n unlabeled nodes without isolated vertices.
+ * A144959 a(n) = A134955(n) - A134955(n-1). Number of hyperforests spanning n unlabeled nodes without isolated vertices.
  * @author Sean A. Irvine
  */
 public class A144959 extends DifferenceSequence {

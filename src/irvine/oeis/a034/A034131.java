@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.math.z.Z;
 
 /**
- * A034131 Decimal part of cube root of a(n) starts with 5: first term of runs.
+ * A034131 a(n) = ceiling((n + 1/2)^3).
  * @author Sean A. Irvine
  */
 public class A034131 extends A034121 {

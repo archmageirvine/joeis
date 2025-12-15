@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A086228 Determinant of n X n matrix M(i,j)=binomial(2i+1, j).
+ * A086228 Determinant of n X n matrix M(i,j) = binomial(2i+1, j).
  * a(n) = 2^(n*(n-3)/2)*(n+1)*binom(2*n+1,n)
  * @author Georg Fischer
  */

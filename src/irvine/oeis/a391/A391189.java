@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A391189 allocated for Jean-Marc Rebert.
+ * A391189 a(n) = least integer m such that concatenating n distinct nonzero squares &lt;= m^2 in ascending order yields a perfect square.
  * @author Sean A. Irvine
  */
 public class A391189 extends Sequence1 {

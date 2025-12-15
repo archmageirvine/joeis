@@ -3,7 +3,7 @@ package irvine.oeis.a390;
 import irvine.oeis.InverseSequence;
 
 /**
- * A390534 allocated for F\u00fcl\u00f6p Tam\u00e1s.
+ * A390534 Index of first occurrence of n in A390514.
  * @author Sean A. Irvine
  */
 public class A390534 extends InverseSequence {

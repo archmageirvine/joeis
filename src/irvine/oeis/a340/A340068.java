@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a151.A151774;
 
 /**
- * A340068 a(n) is the number of integers in the set {n+1,n+2, . . . ,2n} whose representation in base 2 contain exactly three digits 1\u2019s.
+ * A340068 a(n) is the number of integers in the set {n+1, n+2, ..., 2*n} whose representation in base 2 contain exactly three digits 1's.
  * @author Sean A. Irvine
  */
 public class A340068 extends PartialSumSequence {

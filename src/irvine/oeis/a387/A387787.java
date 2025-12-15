@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387787 allocated for Aied Sulaiman.
+ * A387787 Positive integers k for which the Collatz 3x+1 dropping value (first value &lt; k) is prime.
  * @author Sean A. Irvine
  */
 public class A387787 extends Sequence1 {

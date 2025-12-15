@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006450;
 
 /**
- * A391116 allocated for Bruce Nye.
+ * A391116 Prime-indexed primes that are the average of the preceding and following prime-indexed primes.
  * @author Sean A. Irvine
  */
 public class A391116 extends A006450 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterSequence;
 
 /**
- * A082520.
+ * A082566 Primes p such that p, 2p+1, 4p+3 are palindromic primes.
  * @author Sean A. Irvine
  */
 public class A082566 extends FilterSequence {

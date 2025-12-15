@@ -6,7 +6,7 @@ import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
 
 /**
- * A390506 allocated for Clark Kimberling.
+ * A390506 a(n) = length of A390505(n).
  * @author Sean A. Irvine
  */
 public class A390506 extends Sequence1 {

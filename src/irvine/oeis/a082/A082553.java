@@ -10,7 +10,7 @@ import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
 
 /**
- * A082552/
+ * A082553 Number of sets of distinct positive integers whose geometric mean is an integer, the largest integer of a set is n.
  * @author Sean A. Irvine
  */
 public class A082553 extends CachedSequence {

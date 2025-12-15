@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A110055 Numbers n such that the string 333n is the decimal expansion of a prime number.
+ * A110055 Numbers k such that the string 333k is the decimal expansion of a prime number.
  * @author Georg Fischer
  */
 public class A110055 extends FilterNumberSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391308 allocated for Ludovic Schwob.
+ * A391308 Triangle read by rows: T(n,k) is the number of linear intervals of height k in the weak order on permutations of length n (0 &lt;= k &lt; n).
  * @author Sean A. Irvine
  */
 public class A391308 extends Sequence1 {

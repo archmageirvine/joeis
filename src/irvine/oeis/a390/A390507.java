@@ -6,7 +6,7 @@ import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
 
 /**
- * A390507 allocated for Clark Kimberling.
+ * A390507 a(n) = number of 1's in A390505(n).
  * @author Sean A. Irvine
  */
 public class A390507 extends Sequence1 {

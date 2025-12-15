@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A389257 allocated for Juri-Stepan Gerasimov.
+ * A389257 a(n) is the smallest integer k such that ((2^n - 1)^k + 1)/2^n is prime, or -1 if no such k exists.
  * @author Sean A. Irvine
  */
 public class A389257 extends Sequence2 {

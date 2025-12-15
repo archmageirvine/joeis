@@ -7,7 +7,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a333.A333242;
 
 /**
- * A391211 allocated for Michael P. May.
+ * A391211 Difference between A333242(n) and the next lower prime number.
  * @author Sean A. Irvine
  */
 public class A391211 extends Sequence2 {

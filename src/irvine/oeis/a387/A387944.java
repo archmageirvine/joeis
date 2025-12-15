@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a120.A120944;
 
 /**
- * A387944 allocated for Charles Kusniec.
+ * A387944 Number of squarefree composites &lt;= n.
  * @author Sean A. Irvine
  */
 public class A387944 extends Sequence1 {

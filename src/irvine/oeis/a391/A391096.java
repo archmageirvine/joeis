@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391096 allocated for Jim Hays.
+ * A391096 a(n) is largest number such that the sequence contains a total of a(n) base 10 digits + commas through n terms (assuming one comma between each pair of terms).
  * @author Sean A. Irvine
  */
 public class A391096 extends Sequence1 {

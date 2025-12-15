@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A082552/
+ * A082565 Palindromic primes associated with A082520.
  * @author Sean A. Irvine
  */
 public class A082565 extends SimpleTransformSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a182;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A182462 a(n) = 3a(n-1) - 2a(n-2) with a(0)=20 and a(1)=50.
+ * A182462 a(n) = 3*a(n-1) - 2*a(n-2) with a(0)=20 and a(1)=50.
  * @author Georg Fischer
  */
 public class A182462 extends GeneratingFunctionSequence {

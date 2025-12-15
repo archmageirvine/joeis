@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389369 allocated for Jean-Marc Rebert.
+ * A389369 Least prime starting a run of 2*n consecutive primes whose product minus sum is prime.
  * @author Sean A. Irvine
  */
 public class A389369 extends Sequence1 {

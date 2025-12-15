@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.InverseSequence;
 
 /**
- * A082468 a(n) is the smallest positive integer such that k=n where k is the least positive integer such that n-k and n+k are both primes.
+ * A082468 a(n) is the smallest positive integer k such that A082467(k)=n.
  * @author Sean A. Irvine
  */
 public class A082468 extends InverseSequence {

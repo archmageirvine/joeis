@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391269 allocated for Alain Rocchelli.
+ * A391269 a(n) is the number of iterations of x-&gt; gpf(2*x+1) starting at n until the value 3 is reached; a(n)=-1 if 3 is not reached.
  * @author Sean A. Irvine
  */
 public class A391269 extends Sequence1 {

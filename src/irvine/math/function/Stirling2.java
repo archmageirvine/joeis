@@ -30,7 +30,7 @@ class Stirling2 extends AbstractFunction2 {
     if (n > Integer.MAX_VALUE) {
       throw new UnsupportedOperationException();
     }
-    final Pair<Integer, Integer> key = new Pair<>((int) n, (int) (m));
+    final Pair<Integer, Integer> key = new Pair<>((int) n, (int) m);
     final Z s = mSecondKind.get(key);
     if (s != null) {
       return s;

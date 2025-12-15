@@ -20,7 +20,10 @@ public class A008479 extends Sequence1 {
   @Override
   public Z next() {
     final List<Z> primes = Arrays.asList(Jaguar.factor(++mN).toZArray());
-    final int res = mCounts.merge(primes, 1, (x, y) -> x + y);
+    final int res = mCounts.merge(primes, 1, Integer::sum);
+    if (res <= 0) {
+      throw new UnsupportedOperationException("Integer count overflow");
+    }
     return Z.valueOf(res);
   }
 }

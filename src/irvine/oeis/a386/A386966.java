@@ -6,7 +6,6 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
@@ -15,8 +14,6 @@ import irvine.util.Permutation;
  * @author Sean A. Irvine
  */
 public class A386966 extends Sequence1 {
-
-  // This works but is very slow
 
   private static final class Generator implements Comparable<Generator> {
 
@@ -39,14 +36,33 @@ public class A386966 extends Sequence1 {
   }
 
   private final int mTarget;
+  private final int mBits;
+  private final long mLimit;
+  private final long[][] mPowers;
   private final TreeSet<Generator> mGenerators = new TreeSet<>();
   private final TreeMap<Long, Integer> mRepresentations = new TreeMap<>();
   {
     mGenerators.add(new Generator(new int[] {2}, 4));
   }
 
-  protected A386966(final int target) {
+  protected A386966(final int target, final int bits) {
     mTarget = target;
+    mBits = bits;
+    mLimit = 1L << mBits;
+    mPowers = new long[mBits + 1][mBits + 1];
+    for (int x = 2; x < mPowers.length; ++x) {
+      final Z z = Z.valueOf(x);
+      for (int y = 2; y < mPowers.length; ++y) {
+        final Z t = z.pow(y);
+        if (t.bitLength() <= mBits) {
+          mPowers[x][y] = t.longValue();
+        }
+      }
+    }
+  }
+
+  protected A386966(final int target) {
+    this(target, 32);
   }
 
   /** Construct the sequence. */
@@ -54,20 +70,47 @@ public class A386966 extends Sequence1 {
     this(2);
   }
 
+  private long computeSum(final int[] gen) {
+    long t = 0;
+    for (int k = gen.length - 1, j = 0; k >= 0; --k, ++j) {
+      final long u = mPowers[gen[k]][gen[j]];
+      if (u == 0) {
+        return 0;
+      }
+      t += u;
+      if (t > mLimit) {
+        return 0;
+      }
+    }
+    return t;
+  }
+
   private void add(final int[] gen) {
-    Z t = Z.ZERO;
-    for (int k = 0; k < gen.length; ++k) {
-      t = t.add(Z.valueOf(gen[k]).pow(gen[gen.length - k - 1]));
+    final long t = computeSum(gen);
+    if (t > 0) {
+      mGenerators.add(new Generator(gen, t));
     }
-    if (t.bitLength() < Long.SIZE) {
-      mGenerators.add(new Generator(gen, t.longValue()));
+  }
+
+  private long computeSum(final int[] gen, final int[] p) {
+    long t = 0;
+    for (int k = gen.length - 1; k >= 0; --k) {
+      final long v = mPowers[gen[k]][p[k]];
+      if (v == 0) {
+        return 0;
+      }
+      t += v;
+      if (t > mLimit) {
+        return 0;
+      }
     }
+    return t;
   }
 
   @Override
   public Z next() {
     while (true) {
-      if (!mRepresentations.isEmpty() && mRepresentations.firstKey().compareTo(mGenerators.first().mMin) < 0) {
+      while (!mRepresentations.isEmpty() && mRepresentations.firstKey() < mGenerators.first().mMin) {
         final Map.Entry<Long, Integer> e = mRepresentations.pollFirstEntry();
         if (e.getValue() == mTarget) {
           return Z.valueOf(e.getKey());
@@ -75,17 +118,14 @@ public class A386966 extends Sequence1 {
       }
       final Generator g = mGenerators.pollFirst();
       final int[] gen = g.mGen;
+      //System.out.println("Expanding: " + g.mMin + " " + Arrays.toString(gen) + " " + (mRepresentations.isEmpty() ? "EMPTY" : mRepresentations.firstKey()));
       final int len = gen.length;
-      final Z[] gz = ZUtils.toZ(gen);
       final Permutation perm = new Permutation(gen);
       int[] p;
       while ((p = perm.next()) != null) {
-        Z sum = Z.ZERO;
-        for (int k = 0; k < len; ++k) {
-          sum = sum.add(gz[k].pow(p[k]));
-        }
-        if (sum.bitLength() < Long.SIZE) {
-          mRepresentations.merge(sum.longValue(), 1, Integer::sum);
+        final long sum = computeSum(gen, p);
+        if (sum > 0) {
+          mRepresentations.merge(sum, 1, Integer::sum);
         }
       }
       for (int k = 0; k < len - 1; ++k) {
@@ -101,6 +141,10 @@ public class A386966 extends Sequence1 {
       // Can now safely reuse gen
       ++gen[len - 1];
       add(gen);
+      if (mGenerators.isEmpty()) {
+        // Exceed long
+        throw new UnsupportedOperationException();
+      }
     }
   }
 }

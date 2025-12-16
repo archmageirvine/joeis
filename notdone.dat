@@ -2682,3 +2682,6 @@ A082424 Coefficient of s(2n) in s(n,n) * s(n,n) * s(n,n) * s(n,n) * s(n,n) * s(n
 A082437 Coefficient of s(2n) in s(n,n) * s(n,n) * s(n,n) * s(n,n) * s(n,n), where s(2n) is the Schur function corresponding to the trivial representation, s(n,n) is a Schur function corresponding two the two row partition and * represents the inner or Kronecker product of symmetric functions.
 A082501 Grundy numbers for start position in 1 X n closed Dots and Boxes.
 A082503 Grundy numbers for start position of 1 X n triangular Dots and Boxes.
+A082606 n-th powers arising in A083205.
+A082609 Begin with 1 and then smallest number not included earlier such that a(n)*a(n+1) -1 is a cube
+A082610 Cubes pertaining to A082609. a(n) = A082609(n)*A082609(n+1)- 1.

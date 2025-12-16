@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a002.A002293;
 
 /**
- * A391606 Expansion of g^3/(1 + x*g)^2, where g = 1+x*g^4 is the g.f. of A002293.
+ * A391606 allocated for Seiichi Manyama.
  * new A002293()
  * @author Georg Fischer
  */

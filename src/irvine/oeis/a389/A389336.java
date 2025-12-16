@@ -36,14 +36,24 @@ public class A389336 extends Sequence1 {
     ++mK;
   }
 
-  private String encode(final int n) {
+  /**
+   * Encode a position as a string.
+   * @param n position
+   * @return string
+   */
+  public String encode(final int n) {
     while (n >= mEncode.size()) {
       stepCode();
     }
     return mEncode.get(n);
   }
 
-  private int decode(final String s) {
+  /**
+   * Decode a string as a position.
+   * @param s string
+   * @return position
+   */
+  public int decode(final String s) {
     while (!mDecode.containsKey(s)) {
       stepCode();
     }

@@ -1,19 +1,22 @@
 package irvine.oeis.a386;
 
 import java.util.Arrays;
-import java.util.Map;
-import java.util.TreeMap;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
+import irvine.util.array.LongDynamicByteArray;
+import irvine.util.string.StringUtils;
 
 /**
  * A386966 Numbers that can be written in exactly two different ways as s_1^x_1 + ... + s_t^x_t, with 1 &lt; s_1 &lt; ... &lt; s_t and {s_1,..., s_t} = {x_1,..., x_t} for some t &gt; 0.
  * @author Sean A. Irvine
  */
 public class A386966 extends Sequence1 {
+
+  // This can be increased for a bigger search range
+  private static final int DEFAULT_BITS = 32;
 
   private static final class Generator implements Comparable<Generator> {
 
@@ -35,15 +38,17 @@ public class A386966 extends Sequence1 {
     }
   }
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final int mTarget;
   private final int mBits;
   private final long mLimit;
   private final long[][] mPowers;
   private final TreeSet<Generator> mGenerators = new TreeSet<>();
-  private final TreeMap<Long, Integer> mRepresentations = new TreeMap<>();
+  private final LongDynamicByteArray mRepresentations = new LongDynamicByteArray();
   {
     mGenerators.add(new Generator(new int[] {2}, 4));
   }
+  long mN = 1;
 
   protected A386966(final int target, final int bits) {
     mTarget = target;
@@ -62,7 +67,7 @@ public class A386966 extends Sequence1 {
   }
 
   protected A386966(final int target) {
-    this(target, 32);
+    this(target, DEFAULT_BITS);
   }
 
   /** Construct the sequence. */
@@ -110,22 +115,26 @@ public class A386966 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      while (!mRepresentations.isEmpty() && mRepresentations.firstKey() < mGenerators.first().mMin) {
-        final Map.Entry<Long, Integer> e = mRepresentations.pollFirstEntry();
-        if (e.getValue() == mTarget) {
-          return Z.valueOf(e.getKey());
+      while (mN < mGenerators.first().mMin) {
+        if (mRepresentations.get(mN) == mTarget) {
+          return Z.valueOf(mN++);
+        }
+        ++mN;
+        if (mVerbose && mN % 10000000 == 0) {
+          StringUtils.message("Search completed to n=" + mN + " queued generators=" + mGenerators.size());
         }
       }
       final Generator g = mGenerators.pollFirst();
       final int[] gen = g.mGen;
-      //System.out.println("Expanding: " + g.mMin + " " + Arrays.toString(gen) + " " + (mRepresentations.isEmpty() ? "EMPTY" : mRepresentations.firstKey()));
       final int len = gen.length;
       final Permutation perm = new Permutation(gen);
       int[] p;
       while ((p = perm.next()) != null) {
         final long sum = computeSum(gen, p);
         if (sum > 0) {
-          mRepresentations.merge(sum, 1, Integer::sum);
+          if (mRepresentations.increment(sum) < 0) {
+            mRepresentations.set(sum, Byte.MAX_VALUE);
+          }
         }
       }
       for (int k = 0; k < len - 1; ++k) {
@@ -138,11 +147,11 @@ public class A386966 extends Sequence1 {
       final int[] longer = Arrays.copyOf(gen, len + 1);
       longer[len] = gen[len - 1] + 1;
       add(longer);
-      // Can now safely reuse gen
+      // Can now safely reuse gen in a new generator
       ++gen[len - 1];
       add(gen);
       if (mGenerators.isEmpty()) {
-        // Exceed long
+        // Exceeded search limits
         throw new UnsupportedOperationException();
       }
     }

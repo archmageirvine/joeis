@@ -5,6 +5,7 @@ import java.util.function.BiFunction;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.Sequence;
 
 /**
  * A sequence comprising the transform of an other sequence.
@@ -23,7 +24,7 @@ import irvine.oeis.AbstractSequence;
 public class SingleTransformSequence extends AbstractSequence {
 
   private final BiFunction<Z, Integer, Z> mLambda;
-  private final AbstractSequence mSeq; // underlying source sequences 
+  private final Sequence mSeq; // underlying source sequences
   private final Z[] mInits; // initial terms
   private final int mInitNo; // mInits.length
   private int mIn; // index for mInits
@@ -40,7 +41,7 @@ public class SingleTransformSequence extends AbstractSequence {
    * @param seq underlying source sequence
    */
   public SingleTransformSequence(final int offset, final BiFunction<Z, Integer, Z> lambda,
-                                 final String initTerms, final AbstractSequence seq) {
+                                 final String initTerms, final Sequence seq) {
     super(offset);
     mN = offset - 1;
     mSeq = seq;
@@ -61,8 +62,7 @@ public class SingleTransformSequence extends AbstractSequence {
    * @param lambda function mapping (self, n) to the terms of the target sequence
    * @param seq underlying source sequence
    */
-  public SingleTransformSequence(final int offset, final BiFunction<Z, Integer, Z> lambda,
-                                 final AbstractSequence seq) {
+  public SingleTransformSequence(final int offset, final BiFunction<Z, Integer, Z> lambda, final Sequence seq) {
     this(offset, lambda, "", seq);
   }
 

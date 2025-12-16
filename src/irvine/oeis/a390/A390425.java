@@ -4,7 +4,7 @@ package irvine.oeis.a390;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A390425 Number of distinct lattice points on the L√©vy C curve after n iterations.
+ * A390425 Number of distinct lattice points on the L\u00e9vy C curve after n iterations.
  * @author Georg Fischer
  */
 public class A390425 extends HolonomicRecurrence {

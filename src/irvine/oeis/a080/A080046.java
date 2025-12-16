@@ -12,7 +12,7 @@ public class A080046 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;
-  private final MemoryFunctionInt2<Z> mT = new MemoryFunctionInt2<>() {
+  protected final MemoryFunctionInt2<Z> mT = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int m) {
       return m == 1 || m == n ? Z.valueOf(n) : get(n - 1, m - 1).multiply(get(n - 1, m));

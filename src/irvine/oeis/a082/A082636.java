@@ -42,7 +42,7 @@ public class A082636 extends Sequence1 {
       }
       while (mM < mP) {
         final int soln = mCounts.get(++mM);
-        if (mFirsts.get(soln) == 0) {
+        if (soln >= mN && mFirsts.get(soln) == 0) {
           mFirsts.set(soln, mM);
         }
       }

@@ -8,8 +8,8 @@ import irvine.oeis.Sequence1;
 
 public class A391217 extends Sequence1 {
 
-  private static class Generator {
-    private final int mMax;                 // fixed large N
+  private static final class Generator {
+    private final int mMax;
     private final int[] mSeq;
     private ArrayList<Integer> mZeroIdx;
 

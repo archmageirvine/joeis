@@ -7,12 +7,15 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A082626.
+ * A082636 a(n) = smallest number which can be expressed as sum of d consecutive primes in exactly n ways (where d&gt;0 is a divisor of the number).
  * @author Sean A. Irvine
  */
 public class A082636 extends Sequence1 {
 
-  private static final long LIMIT = 1L << 32; // Limits memory use, cannot find solutions that exceed this
+  // Limits memory use, cannot find solutions that exceed this
+  // You can safely increase this if you have the memory
+  // 32 is more than enough to compute a(6) but insufficient for further terms
+  private static final long LIMIT = 1L << 32;
   private final LongDynamicByteArray mCounts = new LongDynamicByteArray();
   private final DynamicLongArray mFirsts = new DynamicLongArray();
   private final Fast mPrime = new Fast();

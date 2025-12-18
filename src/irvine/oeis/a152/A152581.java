@@ -6,7 +6,6 @@ import irvine.oeis.LambdaSequence;
 
 /**
  * A152581 Generalized Fermat numbers: a(n) = 8^(2^n) + 1, n &gt;= 0.
- * a(n)=1<<(3*2^n)+1
  * @author Georg Fischer
  */
 public class A152581 extends LambdaSequence {

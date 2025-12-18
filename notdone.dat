@@ -2685,3 +2685,6 @@ A082503 Grundy numbers for start position of 1 X n triangular Dots and Boxes.
 A082606 n-th powers arising in A083205.
 A082609 Begin with 1 and then smallest number not included earlier such that a(n)*a(n+1) -1 is a cube
 A082610 Cubes pertaining to A082609. a(n) = A082609(n)*A082609(n+1)- 1.
+A082632 Decimal expansion of lim_{y->infinity} y^2*(Re(zeta(1 + i/y)) - gamma).
+A082633 Decimal expansion of the 1st Stieltjes constant gamma_1 (negated).
+A082640 Triangle T(m,n) read by rows: unimodular triangulations of the grid P(m,n), m,n > 0, n <= m.

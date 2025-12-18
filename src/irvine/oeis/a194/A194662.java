@@ -19,7 +19,7 @@ public class A194662 extends A194733 {
    * Generic constructor with parameters.
    * @param offset first index
    * @param r constant factor
-   * @param rel relation: 1 for ">", -1 for "<" 
+   * @param rel relation: 1 for "&gt;", -1 for "&lt;"
    */
   public A194662(final int offset, final CR r, final int rel) {
     super(offset, r, rel);

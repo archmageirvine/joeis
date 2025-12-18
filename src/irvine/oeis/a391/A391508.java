@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a336.A336282;
 
 /**
- * A390832.
+ * A391508 allocated for Manolopoulos Panagiotis.
  * @author Sean A. Irvine
  */
 public class A391508 extends A336282 {

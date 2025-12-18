@@ -34,8 +34,7 @@ public class A389392 extends Sequence1 {
   }
 
   /*
-   * Return the three trapezoids (PFAD, PDBE, PECF).
-   * as lists of Point points.
+   * Return the three trapezoids (PFAD, PDBE, PECF) as lists of points.
    */
   private static List<List<Point>> threeTrapezoidPolygons(final int side, final int h, final int k) {
     final Point p = new Point(h, k);

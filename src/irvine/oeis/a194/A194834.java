@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 
 /**
  * A194834 Inverse permutation of A194833; every positive integer occurs exactly once.
- * @author Georg FIschere
+ * @author Georg Fischer
  */
 public class A194834 extends InverseSequence {
 

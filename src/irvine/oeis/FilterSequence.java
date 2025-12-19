@@ -22,13 +22,13 @@ public class FilterSequence extends AbstractSequence {
   /** Zero terms. */
   public static final Predicate<Z> ZERO = Z::isZero;
   /** One terms. */
-  public static final Predicate<Z> ONE = k -> k.equals(Z.ONE);
+  public static final Predicate<Z> ONE = Z::isOne;
   /** Nonzero terms. */
   public static final Predicate<Z> NONZERO = k -> !k.isZero();
   /** Positive terms. */
-  public static final Predicate<Z> POSITIVE = k -> k.compareTo(Z.ZERO) > 0;
+  public static final Predicate<Z> POSITIVE = k -> k.signum() > 0;
   /** Negative terms. */
-  public static final Predicate<Z> NEGATIVE = k -> k.compareTo(Z.ZERO) < 0;
+  public static final Predicate<Z> NEGATIVE = k -> k.signum() < 0;
   /** Palindromic terms. */
   public static final Predicate<Z> PALINDROME = Predicates.PALINDROME::is;
   /** Odd terms. */

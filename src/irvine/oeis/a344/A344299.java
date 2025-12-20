@@ -6,7 +6,6 @@ import irvine.oeis.MultiplicativeSequence;
 
 /**
  * A344299 Expansion of Sum_{k&gt;=1} (-1)^(k+1) * x^(k^2) / (1 - x^(k^2)).
- * Multiplicative with: a(2^e) = 1 - floor(e/2), and a(p^e) = 1 + floor(e/2) for p > 2.
  * @author Georg Fischer
  */
 public class A344299 extends MultiplicativeSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.LambdaSequence;
 
 /**
  * A175908 3*sum(k=1..n, floor(k^2/n)) - n^2.
- * a(n) = 3*sum(k=1,n,k^2\n) - n^2;
  * @author Georg Fischer
  */
 public class A175908 extends LambdaSequence {

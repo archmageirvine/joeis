@@ -19,7 +19,7 @@ public class A152940 extends FilterSequence {
   /**
    * Generic constructor with parameters
    * @param offset first ind
-   * @param h desired heigth = absolute maximum value of coefficients
+   * @param h desired height = absolute maximum value of coefficients
    */
   public A152940(final int offset, final int h) {
     super(offset, new A056911(), t -> PolynomialUtils.height(CyclotomicPolynomials.cyclotomic(t.intValue())).equals(h));

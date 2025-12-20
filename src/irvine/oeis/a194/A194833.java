@@ -36,16 +36,12 @@ public class A194833 extends UpperLeftTriangle {
     final Z nz = Z.valueOf(n);
     Z result = Z.NEG_ONE; // assume not found
     int i = start;
-//**System.out.print("# n=" + n + ", k=" + k + ", search " + n + " in row " + row + " = [" + start + ".." + String.valueOf(after - 1) + "]: ");
     while (i < after) { // search for n in the kth row
-//**  System.out.print(mSeq.a(i) + ", ");
       if (mSeq.a(i).equals(nz)) {
         result = Z.valueOf(i + 1);
       }
       ++i;
     }
-//**System.out.println("result=" + result);
     return result; // should not occur
   }
-
 }

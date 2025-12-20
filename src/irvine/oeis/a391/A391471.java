@@ -1,21 +1,21 @@
-package irvine.oeis.a387;
+package irvine.oeis.a391;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387941 allocated for Xander Lee Luo.
+ * A391471 allocated for Masato Wada.
  * @author Sean A. Irvine
  */
-public class A387941 extends Sequence1 {
+public class A391471 extends Sequence1 {
 
   private long mN = 0;
 
   @Override
   public Z next() {
     while (true) {
-      if (Functions.GPF.z(++mN).square().compareTo(2L * mN) < 0) {
+      if (Functions.DIGIT_SORT_DESCENDING.l(++mN) == Functions.DIGIT_SORT_DESCENDING.l((11 * mN + 5) / 10)) {
         return Z.valueOf(mN);
       }
     }

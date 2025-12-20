@@ -372,6 +372,15 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
   }
 
   /**
+   * Return the monomial series <code>x^n</code>.
+   * @param n power
+   * @return monomial
+   */
+  public Series<E> monomial(final int n) {
+    return new Monomial<>(mElementField.zero(), mElementField.one(), n);
+  }
+
+  /**
    * Raise a series to a power.
    * This can handle both positive and negative powers provided <code>s</code>
    * is a formal power series; that is, provided <code>s(0)!=0</code>.

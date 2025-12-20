@@ -2689,3 +2689,7 @@ A082632 Decimal expansion of lim_{y->infinity} y^2*(Re(zeta(1 + i/y)) - gamma).
 A082633 Decimal expansion of the 1st Stieltjes constant gamma_1 (negated).
 A082640 Triangle T(m,n) read by rows: unimodular triangulations of the grid P(m,n), m,n > 0, n <= m.
 A082668 (10^n)-th zero of the Riemann zeta function rounded to the nearest integer.
+A082677 Arises from a social choice theory problem. Sequence is a transformation of the number of non-transitive quasitransitive distinct profiles with 3 alternatives and strict individual preferences.
+A082678 Arises from a social choice theory problem. Sequence is a transformation of the number of non-transitive non-quasitransitive acyclical distinct profiles with 3 alternatives and strict individual preferences.
+A082682 Algebraic degree of R(e^(-n * Pi)), where R(q) is the Rogers-Ramanujan continued fraction.
+

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A249283 Decimal expansion of K(3/4), where K is the complete elliptic integral of the first kind.
- * Formula:
  * @author Georg Fischer
  */
 public class A249283 extends DecimalExpansionSequence {

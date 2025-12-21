@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A369880 Decimal expansion of sinh(Pi/2)/(Pi/2)^2.
- * Formula:
  * @author Georg Fischer
  */
 public class A369880 extends DecimalExpansionSequence {

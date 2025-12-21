@@ -9,7 +9,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A262177 Decimal expansion of Q_5 = zeta(5) / (Sum_{k&gt;=1} (-1)^(k+1) / (k^5 * binomial(2k, k))), a conjecturally irrational constant defined by an Ap\u00e9ry-like formula.
- * Formula:
  * @author Georg Fischer
  */
 public class A262177 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377797 Decimal expansion of the volume of a truncated icosidodecahedron (great rhombicosidodecahedron) with unit edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A377797 extends DecimalExpansionSequence {

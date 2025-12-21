@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A365823 Decimal expansion of 2*(2 + sqrt(2)).
- * Formula:
  * @author Georg Fischer
  */
 public class A365823 extends DecimalExpansionSequence {

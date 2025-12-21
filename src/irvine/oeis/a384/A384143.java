@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A384143 Decimal expansion of the volume of an elongated triangular cupola with unit edge.
- * Formula:
  * @author Georg Fischer
  */
 public class A384143 extends DecimalExpansionSequence {

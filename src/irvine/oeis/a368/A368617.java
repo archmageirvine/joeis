@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A368617 Decimal expansion of 878/323.
- * Formula:
  * @author Georg Fischer
  */
 public class A368617 extends DecimalExpansionSequence {

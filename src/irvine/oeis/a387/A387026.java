@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A387026 Decimal expansion of hypergeom([1/12, 5/12], [1/2], 1323/1331).
- * Formula:
  * @author Georg Fischer
  */
 public class A387026 extends DecimalExpansionSequence {

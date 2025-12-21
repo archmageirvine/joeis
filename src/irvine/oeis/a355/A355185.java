@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A355185 Decimal expansion of the volume of the region that represents the set of points in a unit cube that are closer to the center of the cube than to the closest face.
- * Formula:
  * @author Georg Fischer
  */
 public class A355185 extends DecimalExpansionSequence {

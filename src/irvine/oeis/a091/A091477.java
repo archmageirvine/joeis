@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A091477 Decimal expansion of (3*Catalan*Pi)/4 - Pi^3/64 + (Pi^2*log(64))/64 - (105*zeta(3))/64.
- * Formula:
  * @author Georg Fischer
  */
 public class A091477 extends DecimalExpansionSequence {

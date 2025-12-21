@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A329081 Decimal expansion of Sum_{k&gt;=0} 1/(k^2-3).
- * Formula:
  * @author Georg Fischer
  */
 public class A329081 extends DecimalExpansionSequence {

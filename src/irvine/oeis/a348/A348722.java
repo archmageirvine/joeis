@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A348722 Decimal expansion of 4*cos(8*Pi/13)*cos(12*Pi/13).
- * Formula:
  * @author Georg Fischer
  */
 public class A348722 extends DecimalExpansionSequence {

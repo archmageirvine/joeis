@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A349605 Decimal expansion of the probability that the intersection of a cube with random plane that passes through its center is a hexagon.
- * Formula:
  * @author Georg Fischer
  */
 public class A349605 extends DecimalExpansionSequence {

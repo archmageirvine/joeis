@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A383859 Central angle of the solution of the Tammes problem for 7 points on the sphere (in radians).
- * Formula:
  * @author Georg Fischer
  */
 public class A383859 extends DecimalExpansionSequence {

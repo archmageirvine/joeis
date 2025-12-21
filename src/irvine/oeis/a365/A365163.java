@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A365163 Length of the perimeter of the regular heptagon with unit circumradius.
- * Formula:
  * @author Georg Fischer
  */
 public class A365163 extends DecimalExpansionSequence {

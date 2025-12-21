@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A391040 Area of the Pythagoras tree with triangles formed by successive stages of the fractal filled in.
- * Formula:
  * @author Georg Fischer
  */
 public class A391040 extends DecimalExpansionSequence {

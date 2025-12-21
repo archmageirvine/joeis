@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A335589 Decimal expansion of the sum of the reciprocals of the squares of composite numbers.
- * Formula:
  * @author Georg Fischer
  */
 public class A335589 extends DecimalExpansionSequence {

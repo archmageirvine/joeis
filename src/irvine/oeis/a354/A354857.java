@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A354857 Decimal expansion of Sum_{k,m&gt;=1} (-1)^(k+m+1)/floor(sqrt(k+m))^3.
- * Formula:
  * @author Georg Fischer
  */
 public class A354857 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A145436 Decimal expansion of Sum_{n&gt;=0} (-1)^n/((2n+1)^2*binomial(2n,n)).
- * Formula:
  * @author Georg Fischer
  */
 public class A145436 extends DecimalExpansionSequence {

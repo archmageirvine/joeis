@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A373021 Decimal expansion of Sum_{k&gt;=0} sin(k*Pi/5)/2^k.
- * Formula:
  * @author Georg Fischer
  */
 public class A373021 extends DecimalExpansionSequence {

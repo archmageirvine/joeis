@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A143233 Decimal expansion of the dimer constant.
- * Formula:
  * @author Georg Fischer
  */
 public class A143233 extends DecimalExpansionSequence {

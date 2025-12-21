@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A380005 Decimal expansion of (7/3)*log(log(12)) - exp(gamma)*log(log(12))^2, where gamma is the Euler-Mascheroni constant (A001620).
- * Formula:
  * @author Georg Fischer
  */
 public class A380005 extends DecimalExpansionSequence {

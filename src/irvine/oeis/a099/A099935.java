@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A099935 Decimal expansion of Sum_{k&gt;=0} (-1)^(k+1)*A000045(k)/k!.
- * Formula:
  * @author Georg Fischer
  */
 public class A099935 extends DecimalExpansionSequence {

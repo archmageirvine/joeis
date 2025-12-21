@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A289917 Decimal expansion of the limiting ratio of consecutive terms of A289916.
- * Formula:
  * @author Georg Fischer
  */
 public class A289917 extends DecimalExpansionSequence {

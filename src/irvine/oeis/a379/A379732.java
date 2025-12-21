@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A379732 Decimal expansion of 207/208.
- * Formula:
  * @author Georg Fischer
  */
 public class A379732 extends DecimalExpansionSequence {

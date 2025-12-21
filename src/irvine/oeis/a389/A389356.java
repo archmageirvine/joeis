@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A389356 Decimal expansion of Integral_{x=0..Pi/2} {sqrt(tan(x))} dx, where {} denotes fractional part.
- * Formula:
  * @author Georg Fischer
  */
 public class A389356 extends DecimalExpansionSequence {

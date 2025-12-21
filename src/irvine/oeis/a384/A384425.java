@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A384425 Decimal expansion of Sum_{k&gt;=1} (-1)^(k+1)/(6k-5)^7 + (-1)^(k-1)/(6k-1)^7.
- * Formula:
  * @author Georg Fischer
  */
 public class A384425 extends DecimalExpansionSequence {

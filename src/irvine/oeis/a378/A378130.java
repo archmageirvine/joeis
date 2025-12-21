@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A378130 Decimal expansion of 24*L^2/(5^(7/4)*Pi^2), where L is the lemniscate constant (A062539).
- * Formula:
  * @author Georg Fischer
  */
 public class A378130 extends DecimalExpansionSequence {

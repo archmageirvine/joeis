@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A097469 Decimal expansion of growth constant C for dimer model on square grid.
- * Formula:
  * @author Georg Fischer
  */
 public class A097469 extends DecimalExpansionSequence {

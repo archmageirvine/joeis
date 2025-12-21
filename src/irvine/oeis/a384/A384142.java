@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A384142 Decimal expansion of the volume of a gyroelongated square bipyramid with unit edge.
- * Formula:
  * @author Georg Fischer
  */
 public class A384142 extends DecimalExpansionSequence {

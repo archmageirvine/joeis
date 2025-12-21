@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A349004 Decimal expansion of lim_{n-&gt;infinity} B(2*n, n)/n^(2*n), where B(n, x) is the n-th Bernoulli polynomial.
- * Formula:
  * @author Georg Fischer
  */
 public class A349004 extends DecimalExpansionSequence {

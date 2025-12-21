@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A356869 Decimal expansion of 4 / sqrt(5).
- * Formula:
  * @author Georg Fischer
  */
 public class A356869 extends DecimalExpansionSequence {

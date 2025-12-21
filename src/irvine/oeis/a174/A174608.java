@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A174608 Decimal expansion of (1/log(2))*Sum_{k&gt;=0} log(1+1/2^k) = 2.253...
- * Formula:
  * @author Georg Fischer
  */
 public class A174608 extends DecimalExpansionSequence {

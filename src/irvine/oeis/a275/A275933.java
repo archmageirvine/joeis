@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A275933 Decimal expansion of constant related to complexity of the tribonacci word (A080843).
- * Formula:
  * @author Georg Fischer
  */
 public class A275933 extends DecimalExpansionSequence {

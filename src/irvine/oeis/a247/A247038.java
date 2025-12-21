@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A247038 Decimal expansion of Integral_{x=0..1} log(floor(1/x))/(1+x) dx.
- * Formula:
  * @author Georg Fischer
  */
 public class A247038 extends DecimalExpansionSequence {

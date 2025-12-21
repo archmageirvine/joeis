@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A091723 Decimal expansion of the root x of Ei(x)=0, where Ei is the exponential integral.
- * Formula:
  * @author Georg Fischer
  */
 public class A091723 extends DecimalExpansionSequence {

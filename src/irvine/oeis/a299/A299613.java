@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A299613 Decimal expansion of 2*W(1), where W is the Lambert W function (or PowerLog); see Comments.
- * Formula:
  * @author Georg Fischer
  */
 public class A299613 extends DecimalExpansionSequence {

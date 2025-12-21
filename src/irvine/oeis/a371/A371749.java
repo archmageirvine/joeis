@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A371749 Decimal expansion of Product_{k&gt;=0} 1 / (1 + 1/4^k).
- * Formula:
  * @author Georg Fischer
  */
 public class A371749 extends DecimalExpansionSequence {

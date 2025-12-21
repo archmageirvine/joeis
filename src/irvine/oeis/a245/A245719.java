@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A245719 Decimal expansion of the skewness of the Gumbel distribution.
- * Formula:
  * @author Georg Fischer
  */
 public class A245719 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A350048 Decimal expansion of 3/8 - 1/e.
- * Formula:
  * @author Georg Fischer
  */
 public class A350048 extends DecimalExpansionSequence {

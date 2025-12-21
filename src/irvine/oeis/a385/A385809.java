@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A385809 Decimal expansion of the Product_{p prime} (p^3-1)/(p^3+1).
- * Formula:
  * @author Georg Fischer
  */
 public class A385809 extends DecimalExpansionSequence {

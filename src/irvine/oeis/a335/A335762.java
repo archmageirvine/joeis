@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A335762 Decimal expansion of Product_{p prime} (1 + p/((p-1)*(p+1)^2)).
- * Formula:
  * @author Georg Fischer
  */
 public class A335762 extends DecimalExpansionSequence {

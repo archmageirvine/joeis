@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A378353 Decimal expansion of the inradius of a (small) triakis octahedron with unit shorter edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A378353 extends DecimalExpansionSequence {

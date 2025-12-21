@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A246726 Decimal expansion of r_4, the 4th smallest radius &lt; 1 for which a compact packing of the plane exists, with disks of radius 1 and r_4.
- * Formula:
  * @author Georg Fischer
  */
 public class A246726 extends DecimalExpansionSequence {

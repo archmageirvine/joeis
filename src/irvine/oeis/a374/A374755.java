@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A374755 Decimal expansion of the surface area of a regular dodecahedron having unit inradius.
- * Formula:
  * @author Georg Fischer
  */
 public class A374755 extends DecimalExpansionSequence {

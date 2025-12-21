@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A354213 Decimal expansion of Sum_{k&gt;=1} 1/sinh((k - 1/2)*Pi)^4.
- * Formula:
  * @author Georg Fischer
  */
 public class A354213 extends DecimalExpansionSequence {

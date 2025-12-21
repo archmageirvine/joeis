@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A378394 Decimal expansion of the dihedral angle, in radians, between any two adjacent faces in a deltoidal icositetrahedron.
- * Formula:
  * @author Georg Fischer
  */
 public class A378394 extends DecimalExpansionSequence {

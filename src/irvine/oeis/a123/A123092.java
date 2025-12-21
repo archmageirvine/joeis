@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A123092 Decimal expansion of Sum_{k&gt;=1} 1/((2k-1)^2(2k+1)^2) = (Pi^2-8)/16.
- * Formula:
  * @author Georg Fischer
  */
 public class A123092 extends DecimalExpansionSequence {

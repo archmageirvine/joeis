@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A387771 Decimal expansion of the third largest dihedral angle, in radians, in a gyroelongated pentagonal rotunda (Johnson solid J_25).
- * Formula:
  * @author Georg Fischer
  */
 public class A387771 extends DecimalExpansionSequence {

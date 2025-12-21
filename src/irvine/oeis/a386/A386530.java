@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A386530 Decimal expansion of the largest dihedral angle, in radians, in an elongated pentagonal rotunda (Johnson solid J_21).
- * Formula:
  * @author Georg Fischer
  */
 public class A386530 extends DecimalExpansionSequence {

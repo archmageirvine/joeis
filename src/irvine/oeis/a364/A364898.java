@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A364898 Decimal expansion of the number of kilograms per cubic meter (kg/m^3) in 1 pound per cubic foot (lb/ft^3).
- * Formula:
  * @author Georg Fischer
  */
 public class A364898 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A348896 Decimal expansion of 2*(sin(Pi/38) - sin((7*Pi)/38) + cos((4*Pi)/19)).
- * Formula:
  * @author Georg Fischer
  */
 public class A348896 extends DecimalExpansionSequence {

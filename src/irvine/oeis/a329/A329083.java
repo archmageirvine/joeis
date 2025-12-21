@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A329083 Decimal expansion of Sum_{k&gt;=0} 1/(k^2+2).
- * Formula:
  * @author Georg Fischer
  */
 public class A329083 extends DecimalExpansionSequence {

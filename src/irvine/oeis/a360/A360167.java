@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A360167 Decimal expansion of csch(Pi).
- * Formula:
  * @author Georg Fischer
  */
 public class A360167 extends DecimalExpansionSequence {

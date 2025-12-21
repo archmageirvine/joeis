@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A383289 Decimal expansion of Integral_{x=0..1} Integral_{y=0..1} Integral_{z=0..1} ({x/y}*{y/z}*{z/x})^2 dx dy dz, where {w} is the fractional part of w.
- * Formula:
  * @author Georg Fischer
  */
 public class A383289 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A350089 Decimal expansion of 3*Pi^2/256 - 1/9.
- * Formula:
  * @author Georg Fischer
  */
 public class A350089 extends DecimalExpansionSequence {

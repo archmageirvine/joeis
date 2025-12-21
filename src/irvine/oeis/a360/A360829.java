@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A360829 Decimal expansion of the ratio between the area of the first Morley triangle of an isosceles right triangle and its area.
- * Formula:
  * @author Georg Fischer
  */
 public class A360829 extends DecimalExpansionSequence {

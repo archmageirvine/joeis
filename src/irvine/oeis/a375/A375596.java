@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A375596 Decimal expansion of 1/(1 - W(1/e)), where W is the Lambert W function.
- * Formula:
  * @author Georg Fischer
  */
 public class A375596 extends DecimalExpansionSequence {

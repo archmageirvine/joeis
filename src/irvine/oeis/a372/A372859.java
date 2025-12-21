@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A372859 Decimal expansion of (1 + log(4))/16.
- * Formula:
  * @author Georg Fischer
  */
 public class A372859 extends DecimalExpansionSequence {

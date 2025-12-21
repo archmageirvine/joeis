@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A374948 Decimal expansion of the Euclidean length of the minimum Steiner tree joining all the vertices of a unit cube.
- * Formula:
  * @author Georg Fischer
  */
 public class A374948 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A365307 Decimal expansion of 1/(2*e-5).
- * Formula:
  * @author Georg Fischer
  */
 public class A365307 extends DecimalExpansionSequence {

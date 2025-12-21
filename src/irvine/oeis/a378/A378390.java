@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A378390 Decimal expansion of the surface area of a deltoidal icositetrahedron with unit shorter edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A378390 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A145431 Decimal expansion of Sum_{n&gt;=1} n^3/binomial(2n,n).
- * Formula:
  * @author Georg Fischer
  */
 public class A145431 extends DecimalExpansionSequence {

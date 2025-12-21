@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A339259 Decimal expansion of the volume of the regular icosahedron inscribed in the unit sphere.
- * Formula:
  * @author Georg Fischer
  */
 public class A339259 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A384139 Decimal expansion of the volume of an elongated triangular bipyramid with unit edges.
- * Formula:
  * @author Georg Fischer
  */
 public class A384139 extends DecimalExpansionSequence {

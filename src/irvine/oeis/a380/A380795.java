@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A380795 Decimal expansion of the smallest acute vertex angles, in radians, in a pentakis dodecahedron face.
- * Formula:
  * @author Georg Fischer
  */
 public class A380795 extends DecimalExpansionSequence {

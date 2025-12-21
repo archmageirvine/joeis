@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A367480 Decimal expansion of the radius of a common circle surrounded by seven tangent unit circles.
- * Formula:
  * @author Georg Fischer
  */
 public class A367480 extends DecimalExpansionSequence {

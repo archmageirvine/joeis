@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A372860 Decimal expansion of (1 + log(8))/72.
- * Formula:
  * @author Georg Fischer
  */
 public class A372860 extends DecimalExpansionSequence {

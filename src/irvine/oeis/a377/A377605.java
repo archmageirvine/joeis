@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377605 Decimal expansion of the midradius of a snub cube (snub cuboctahedron) with unit edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A377605 extends DecimalExpansionSequence {

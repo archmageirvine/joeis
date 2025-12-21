@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A387022 Decimal expansion of 697*Pi^8/6613488.
- * Formula:
  * @author Georg Fischer
  */
 public class A387022 extends DecimalExpansionSequence {

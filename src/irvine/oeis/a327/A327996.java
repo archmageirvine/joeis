@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A327996 Decimal expansion of (1/2)*Pi^(3/4)/Gamma(3/4).
- * Formula:
  * @author Georg Fischer
  */
 public class A327996 extends DecimalExpansionSequence {

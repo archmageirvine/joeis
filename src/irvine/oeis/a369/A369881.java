@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A369881 Decimal expansion of 1/(2*sqrt(e)).
- * Formula:
  * @author Georg Fischer
  */
 public class A369881 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A385505 Decimal expansion of the volume of a biaugmented triangular prism with unit edge.
- * Formula:
  * @author Georg Fischer
  */
 public class A385505 extends DecimalExpansionSequence {

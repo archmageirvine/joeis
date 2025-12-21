@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377296 Decimal expansion of 24*arctan(sqrt(2)).
- * Formula:
  * @author Georg Fischer
  */
 public class A377296 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A384283 Decimal expansion of the volume of a gyroelongated pentagonal cupola with unit edge.
- * Formula:
  * @author Georg Fischer
  */
 public class A384283 extends DecimalExpansionSequence {

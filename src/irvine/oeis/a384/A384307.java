@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A384307 Decimal expansion of sqrt(6/Pi)*Gamma(2/3)/3^(1/3).
- * Formula:
  * @author Georg Fischer
  */
 public class A384307 extends DecimalExpansionSequence {

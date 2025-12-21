@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A384138 Decimal expansion of the volume of an elongated pentagonal pyramid with unit edge.
- * Formula:
  * @author Georg Fischer
  */
 public class A384138 extends DecimalExpansionSequence {

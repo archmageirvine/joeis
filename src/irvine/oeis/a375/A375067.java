@@ -6,7 +6,6 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 /**
  * A375067 Decimal expansion of the apothem (inradius) of a regular pentagon with unit side length.
- * Formula:
  * @author Georg Fischer
  */
 public class A375067 extends DecimalExpansionSequence {

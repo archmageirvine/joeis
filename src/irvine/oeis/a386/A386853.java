@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A386853 Decimal expansion of the dihedral angle, in radians, between the 10-gonal face and a triangular face in a pentagonal rotunda (Johnson solid J_6).
- * Formula:
  * @author Georg Fischer
  */
 public class A386853 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A386852 Decimal expansion of the dihedral angle, in radians, between the pentagonal face and a triangular face in a pentagonal pyramid with equal edges (Johnson solid J_2).
- * Formula:
  * @author Georg Fischer
  */
 public class A386852 extends DecimalExpansionSequence {

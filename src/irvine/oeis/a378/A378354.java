@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A378354 Decimal expansion of the dihedral angle, in radians, between any two adjacent faces in a (small) triakis octahedron.
- * Formula:
  * @author Georg Fischer
  */
 public class A378354 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A380738 Decimal expansion of the largest vertex angle, in radians, in a disdyakis dodecahedron face.
- * Formula:
  * @author Georg Fischer
  */
 public class A380738 extends DecimalExpansionSequence {

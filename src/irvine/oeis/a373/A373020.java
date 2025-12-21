@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A373020 Decimal expansion of Sum_{k&gt;=0} |sin(k*Pi/6)|/2^k.
- * Formula:
  * @author Georg Fischer
  */
 public class A373020 extends DecimalExpansionSequence {

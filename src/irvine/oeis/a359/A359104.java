@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A359104 Decimal expansion of the area enclosed by Sylvester's Bicorn curve.
- * Formula:
  * @author Georg Fischer
  */
 public class A359104 extends DecimalExpansionSequence {

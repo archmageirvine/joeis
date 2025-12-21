@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A351055 Decimal expansion of sqrt(2 - Pi/2), the coefficient for standard distribution of the Rayleigh random variable.
- * Formula:
  * @author Georg Fischer
  */
 public class A351055 extends DecimalExpansionSequence {

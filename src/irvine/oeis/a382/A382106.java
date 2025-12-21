@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A382106 Decimal expansion of the weight factor for Legendre-Gauss quadrature corresponding to abscissa A372270.
- * Formula:
  * @author Georg Fischer
  */
 public class A382106 extends DecimalExpansionSequence {

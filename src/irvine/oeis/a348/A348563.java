@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A348563 Decimal expansion of Sum_{k&gt;=1} H(k) * binomial(2*k,k)/((2*k+1)*4^k), where H(k) = A001008(k)/A002805(k) is the k-th harmonic number.
- * Formula:
  * @author Georg Fischer
  */
 public class A348563 extends DecimalExpansionSequence {

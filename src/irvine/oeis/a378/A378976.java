@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A378976 Decimal expansion of the midradius of a triakis icosahedron with unit shorter edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A378976 extends DecimalExpansionSequence {

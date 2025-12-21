@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A242600 Decimal expansion of -dilog(phi) = -polylog(2, 1-phi) with phi = (1 + sqrt(5))/2.
- * Formula:
  * @author Georg Fischer
  */
 public class A242600 extends DecimalExpansionSequence {

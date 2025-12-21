@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A380736 Decimal expansion of the smallest vertex angle, in radians, in a disdyakis dodecahedron face.
- * Formula:
  * @author Georg Fischer
  */
 public class A380736 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A384624 Decimal expansion of the volume of a pentagonal orthobicupola with unit edge.
- * Formula:
  * @author Georg Fischer
  */
 public class A384624 extends DecimalExpansionSequence {

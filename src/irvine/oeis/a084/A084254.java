@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A084254 Decimal expansion of Sum_{k&gt;=1} 1/(k*(exp(2*Pi*k)-1)).
- * Formula:
  * @author Georg Fischer
  */
 public class A084254 extends DecimalExpansionSequence {

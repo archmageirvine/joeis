@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A374643 Decimal expansion of 12*Li_2(1/2), where Li_2(z) is the dilogarithm function.
- * Formula:
  * @author Georg Fischer
  */
 public class A374643 extends DecimalExpansionSequence {

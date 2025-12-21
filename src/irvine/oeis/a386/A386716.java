@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A386716 Decimal expansion of Integral_{x=0..1} {1/x}^3 * x^3 dx, where {} denotes fractional part.
- * Formula:
  * @author Georg Fischer
  */
 public class A386716 extends DecimalExpansionSequence {

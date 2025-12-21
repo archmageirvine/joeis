@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A348763 Decimal expansion of Sum_{n&gt;=1} ((-1)^(n+1)*n)/(n+1)^2.
- * Formula:
  * @author Georg Fischer
  */
 public class A348763 extends DecimalExpansionSequence {

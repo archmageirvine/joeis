@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377799 Decimal expansion of the midradius of a truncated icosidodecahedron (great rhombicosidodecahedron) with unit edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A377799 extends DecimalExpansionSequence {

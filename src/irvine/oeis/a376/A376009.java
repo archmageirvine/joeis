@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A376009 Decimal expansion of the hypergeometric series 3F2(3/4,5/4,1; 2,2 ;1).
- * Formula:
  * @author Georg Fischer
  */
 public class A376009 extends DecimalExpansionSequence {

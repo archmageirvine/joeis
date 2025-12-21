@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A387444 Decimal expansion of cos(Pi/23).
- * Formula:
  * @author Georg Fischer
  */
 public class A387444 extends DecimalExpansionSequence {

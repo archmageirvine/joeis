@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A145963 Decimal expansion of Hypergeometric2F1[1, 1/8, 9/8, 1/16] used in BBP Pi formula.
- * Formula:
  * @author Georg Fischer
  */
 public class A145963 extends DecimalExpansionSequence {

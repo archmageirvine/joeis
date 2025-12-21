@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A386733 Decimal expansion of Integral_{x=0..1} Integral_{y=0..1} {1/(x+y)} dx dy, where {} denotes fractional part.
- * Formula:
  * @author Georg Fischer
  */
 public class A386733 extends DecimalExpansionSequence {

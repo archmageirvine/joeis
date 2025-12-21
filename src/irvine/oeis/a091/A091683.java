@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A091683 Decimal expansion of HypergeometricPFQ[{1,1,1},{1/3,2/3},1/27].
- * Formula:
  * @author Georg Fischer
  */
 public class A091683 extends DecimalExpansionSequence {

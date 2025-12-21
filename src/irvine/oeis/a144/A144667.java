@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A144667 Decimal expansion of product_{n=2..infinity} (n^8-1)/(n^8+1).
- * Formula:
  * @author Georg Fischer
  */
 public class A144667 extends DecimalExpansionSequence {

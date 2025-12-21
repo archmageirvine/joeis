@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A357418 Decimal expansion of (207 - 33*sqrt(33))/32.
- * Formula:
  * @author Georg Fischer
  */
 public class A357418 extends DecimalExpansionSequence {

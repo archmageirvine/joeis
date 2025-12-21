@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A358191 Decimal expansion of Sum_{n &gt;= 2} (n-1)/(n^n).
- * Formula:
  * @author Georg Fischer
  */
 public class A358191 extends DecimalExpansionSequence {

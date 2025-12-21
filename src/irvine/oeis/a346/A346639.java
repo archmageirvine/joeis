@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A346639 Decimal expansion of the Hausdorff dimension of Hironaka's curve and equivalent carpets.
- * Formula:
  * @author Georg Fischer
  */
 public class A346639 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377274 Decimal expansion of the surface area of a truncated tetrahedron with unit edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A377274 extends DecimalExpansionSequence {

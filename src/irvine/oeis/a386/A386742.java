@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A386742 Decimal expansion of the surface area of a hebesphenomegacorona with unit edges.
- * Formula:
  * @author Georg Fischer
  */
 public class A386742 extends DecimalExpansionSequence {

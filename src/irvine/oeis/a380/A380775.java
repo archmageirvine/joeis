@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A380775 Decimal expansion of the long/short edge length ratio of a pentagonal icositetrahedron.
- * Formula:
  * @author Georg Fischer
  */
 public class A380775 extends DecimalExpansionSequence {

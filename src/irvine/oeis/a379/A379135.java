@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A379135 Decimal expansion of the midradius of a pentakis dodecahedron with unit shorter edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A379135 extends DecimalExpansionSequence {

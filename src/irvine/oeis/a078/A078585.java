@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A078585 Decimal expansion of Sum_{n&gt;=0} 1/4^(2^n).
- * Formula:
  * @author Georg Fischer
  */
 public class A078585 extends DecimalExpansionSequence {

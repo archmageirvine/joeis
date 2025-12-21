@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A332915 Decimal expansion of the constant W(1) + 1/W(1), where W is Lambert's function.
- * Formula:
  * @author Georg Fischer
  */
 public class A332915 extends DecimalExpansionSequence {

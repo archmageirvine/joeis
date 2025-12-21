@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A389307 Decimal expansion of the second smallest dihedral angle, in radians, in a pentagonal orthocupolarotunda (Johnson solid J_32).
- * Formula:
  * @author Georg Fischer
  */
 public class A389307 extends DecimalExpansionSequence {

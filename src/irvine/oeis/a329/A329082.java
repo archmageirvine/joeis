@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A329082 Decimal expansion of Sum_{k&gt;=0} 1/(k^2-2), negated.
- * Formula:
  * @author Georg Fischer
  */
 public class A329082 extends DecimalExpansionSequence {

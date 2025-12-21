@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A363966 Decimal expansion of the probability that a sphere that is passing through 4 points uniformly and independently chosen at random in a 3D ball is completely lying inside the ball.
- * Formula:
  * @author Georg Fischer
  */
 public class A363966 extends DecimalExpansionSequence {

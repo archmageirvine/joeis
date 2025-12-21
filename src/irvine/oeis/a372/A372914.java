@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A372914 Decimal expansion of (3/13)*sqrt(3).
- * Formula:
  * @author Georg Fischer
  */
 public class A372914 extends DecimalExpansionSequence {

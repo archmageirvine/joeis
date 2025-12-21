@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A364966 Decimal expansion of the solution to exp(-x^2) = x.
- * Formula:
  * @author Georg Fischer
  */
 public class A364966 extends DecimalExpansionSequence {

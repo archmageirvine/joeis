@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A193025 Decimal expansion of the coefficient of x in the reduction of cosh(x) by x^2-&gt;x+1.
- * Formula:
  * @author Georg Fischer
  */
 public class A193025 extends DecimalExpansionSequence {

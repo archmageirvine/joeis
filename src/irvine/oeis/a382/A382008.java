@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A382008 Decimal expansion of the isoperimetric quotient of a rhombic triacontahedron.
- * Formula:
  * @author Georg Fischer
  */
 public class A382008 extends DecimalExpansionSequence {

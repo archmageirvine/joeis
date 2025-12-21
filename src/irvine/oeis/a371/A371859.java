@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A371859 Decimal expansion of Integral_{x=0..oo} 1 / sqrt(1 + x^5) dx.
- * Formula:
  * @author Georg Fischer
  */
 public class A371859 extends DecimalExpansionSequence {

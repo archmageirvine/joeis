@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A379710 Decimal expansion of the inradius of a disdyakis triacontahedron with unit shorter edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A379710 extends DecimalExpansionSequence {

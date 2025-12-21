@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A350760 Decimal expansion of Pi/(2*sqrt(5)) * tan(Pi/(2*sqrt(5))).
- * Formula:
  * @author Georg Fischer
  */
 public class A350760 extends DecimalExpansionSequence {

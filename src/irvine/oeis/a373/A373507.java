@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A373507 Decimal expansion of 1/2 - sqrt(3)*Pi/18.
- * Formula:
  * @author Georg Fischer
  */
 public class A373507 extends DecimalExpansionSequence {

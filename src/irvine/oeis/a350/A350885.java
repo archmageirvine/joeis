@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A350885 Decimal expansion of 1 - 2*cotan(2).
- * Formula:
  * @author Georg Fischer
  */
 public class A350885 extends DecimalExpansionSequence {

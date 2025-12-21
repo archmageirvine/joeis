@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A378131 Decimal expansion of sqrt(1 + sqrt(3))*L/(Pi*12^(1/8)), where L is the lemniscate constant (A062539).
- * Formula:
  * @author Georg Fischer
  */
 public class A378131 extends DecimalExpansionSequence {

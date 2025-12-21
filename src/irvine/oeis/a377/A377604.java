@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377604 Decimal expansion of the circumradius of a snub cube (snub cuboctahedron) with unit edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A377604 extends DecimalExpansionSequence {

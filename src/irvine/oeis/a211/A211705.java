@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A211705 Decimal expansion of Sum_{n&gt;=1} A006218(n)*2^(-n).
- * Formula:
  * @author Georg Fischer
  */
 public class A211705 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A145439 Decimal expansion of Sum_{k&gt;=0} binomial(4*k, 2*k)/2^(6*k).
- * Formula:
  * @author Georg Fischer
  */
 public class A145439 extends DecimalExpansionSequence {

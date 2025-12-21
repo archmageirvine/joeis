@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A358516 Decimal expansion of Sum_{k &gt;= 1} (-1)^(k+1)*1/((k+2)*(k+3)).
- * Formula:
  * @author Georg Fischer
  */
 public class A358516 extends DecimalExpansionSequence {

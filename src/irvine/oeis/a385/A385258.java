@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A385258 Decimal expansion of the volume of a gyroelongated square bicupola with unit edge.
- * Formula:
  * @author Georg Fischer
  */
 public class A385258 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A357715 Decimal expansion of sqrt(16 + 32 / sqrt(5)).
- * Formula:
  * @author Georg Fischer
  */
 public class A357715 extends DecimalExpansionSequence {

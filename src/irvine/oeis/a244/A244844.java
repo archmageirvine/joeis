@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A244844 Decimal expansion of 2F1(1, 1/4; 5/4; -1/4), where 2F1 is a Gaussian hypergeometric function.
- * Formula:
  * @author Georg Fischer
  */
 public class A244844 extends DecimalExpansionSequence {

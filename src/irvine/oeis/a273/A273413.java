@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A273413 Decimal expansion of Product_{k&gt;=0} (1 + 1/2^(2k))^(-1/2).
- * Formula:
  * @author Georg Fischer
  */
 public class A273413 extends DecimalExpansionSequence {

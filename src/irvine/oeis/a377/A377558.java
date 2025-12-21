@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377558 Decimal expansion of Pi^3/64 + 7*zeta(3)/16.
- * Formula:
  * @author Georg Fischer
  */
 public class A377558 extends DecimalExpansionSequence {

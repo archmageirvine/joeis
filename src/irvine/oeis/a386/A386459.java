@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A386459 Decimal expansion of the volume of an augmented truncated cube with unit edges.
- * Formula:
  * @author Georg Fischer
  */
 public class A386459 extends DecimalExpansionSequence {

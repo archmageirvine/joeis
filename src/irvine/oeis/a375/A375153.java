@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A375153 Decimal expansion of the sagitta of a regular 9-gon with unit side length.
- * Formula:
  * @author Georg Fischer
  */
 public class A375153 extends DecimalExpansionSequence {

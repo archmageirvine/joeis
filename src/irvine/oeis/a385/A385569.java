@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A385569 Decimal expansion of the volume of an augmented hexagonal prism with unit edge.
- * Formula:
  * @author Georg Fischer
  */
 public class A385569 extends DecimalExpansionSequence {

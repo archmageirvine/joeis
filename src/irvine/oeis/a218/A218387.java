@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A218387 Decimal expansion of the spanning tree constant of the square lattice.
- * Formula:
  * @author Georg Fischer
  */
 public class A218387 extends DecimalExpansionSequence {

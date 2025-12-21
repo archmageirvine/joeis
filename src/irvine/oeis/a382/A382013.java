@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A382013 Decimal expansion of the isoperimetric quotient of a pentagonal hexecontahedron.
- * Formula:
  * @author Georg Fischer
  */
 public class A382013 extends DecimalExpansionSequence {

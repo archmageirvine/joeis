@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A368663 Decimal expansion of the probability that the L tromino appears when the 3rd cell is added in diffusion-limited aggregation on the square lattice.
- * Formula:
  * @author Georg Fischer
  */
 public class A368663 extends DecimalExpansionSequence {

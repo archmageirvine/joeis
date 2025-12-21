@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A375190 Decimal expansion of the circumradius of a regular 11-gon with unit side length.
- * Formula:
  * @author Georg Fischer
  */
 public class A375190 extends DecimalExpansionSequence {

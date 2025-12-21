@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A349578 Decimal expansion of the volume of the solid formed by the intersection of 6 right circular unit-diameter cylinders whose axes are parallel to the face diagonals of a cube and intersect at a single point.
- * Formula:
  * @author Georg Fischer
  */
 public class A349578 extends DecimalExpansionSequence {

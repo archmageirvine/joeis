@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377522 Decimal expansion of 1/3 - sqrt(3)/(4*Pi).
- * Formula:
  * @author Georg Fischer
  */
 public class A377522 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A229728 Decimal expansion of the square of the constant A130834.
- * Formula:
  * @author Georg Fischer
  */
 public class A229728 extends DecimalExpansionSequence {

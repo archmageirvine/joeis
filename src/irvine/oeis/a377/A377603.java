@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377603 Decimal expansion of the volume of a snub cube (snub cuboctahedron) with unit edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A377603 extends DecimalExpansionSequence {

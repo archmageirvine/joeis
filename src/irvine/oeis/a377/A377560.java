@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377560 Decimal expansion of Pi^3/(36*sqrt(3)) + 91*zeta(3)/216.
- * Formula:
  * @author Georg Fischer
  */
 public class A377560 extends DecimalExpansionSequence {

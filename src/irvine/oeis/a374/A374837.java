@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A374837 Decimal expansion of Bezdek and Dar\u00f3czy-Kiss's upper bound for the surface area density of a unit ball in any face cone of a Voronoi cell in an arbitrary packing of unit balls in the Euclidean 3-space.
- * Formula:
  * @author Georg Fischer
  */
 public class A374837 extends DecimalExpansionSequence {

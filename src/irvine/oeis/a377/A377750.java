@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377750 Decimal expansion of the surface area of a truncated icosahedron with unit edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A377750 extends DecimalExpansionSequence {

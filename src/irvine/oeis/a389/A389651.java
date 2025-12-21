@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A389651 Decimal expansion of (127/128) * zeta(7).
- * Formula:
  * @author Georg Fischer
  */
 public class A389651 extends DecimalExpansionSequence {

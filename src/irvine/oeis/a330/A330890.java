@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A330890 Decimal expansion of Product_{prime p == 1 (mod 4)} (1 + 1/p^2)/(1 - 1/p^2).
- * Formula:
  * @author Georg Fischer
  */
 public class A330890 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A378132 Decimal expansion of L^4/15, where L is the lemniscate constant (A062539).
- * Formula:
  * @author Georg Fischer
  */
 public class A378132 extends DecimalExpansionSequence {

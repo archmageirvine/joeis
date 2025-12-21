@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A258983 Decimal expansion of the multiple zeta value (Euler sum) zetamult(3,2).
- * Formula:
  * @author Georg Fischer
  */
 public class A258983 extends DecimalExpansionSequence {

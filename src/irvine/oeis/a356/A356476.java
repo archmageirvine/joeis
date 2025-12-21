@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A356476 Decimal expansion of Loschmidt constant in m^-3 (273.15 K, 100 kPa).
- * Formula:
  * @author Georg Fischer
  */
 public class A356476 extends DecimalExpansionSequence {

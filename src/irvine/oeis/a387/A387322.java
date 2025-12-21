@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A387322 Decimal expansion of the fourth largest dihedral angle, in radians, in a gyroelongated square cupola (Johnson solid J_23).
- * Formula:
  * @author Georg Fischer
  */
 public class A387322 extends DecimalExpansionSequence {

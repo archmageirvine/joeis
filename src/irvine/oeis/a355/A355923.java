@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A355923 Decimal expansion of Sum_{k&gt;=2} (arctanh(1/k) - 1/k).
- * Formula:
  * @author Georg Fischer
  */
 public class A355923 extends DecimalExpansionSequence {

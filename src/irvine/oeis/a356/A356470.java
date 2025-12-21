@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A356470 Decimal expansion of (3 - sqrt(5))/(2*sqrt(2)).
- * Formula:
  * @author Georg Fischer
  */
 public class A356470 extends DecimalExpansionSequence {

@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A389931 Decimal expansion of the largest dihedral angle, in radians, in an augmented truncated tetrahedron (Johnson solid J_65).
- * Formula:
  * @author Georg Fischer
  */
 public class A389931 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A354052 Decimal expansion of Sum_{k&gt;=0} 1 / (k^6 + 1).
- * Formula:
  * @author Georg Fischer
  */
 public class A354052 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A354222 Decimal expansion of 2 / (Pi+2).
- * Formula:
  * @author Georg Fischer
  */
 public class A354222 extends DecimalExpansionSequence {

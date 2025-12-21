@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A370562 Decimal expansion of (2*Pi - 3*sqrt(3))/2.
- * Formula:
  * @author Georg Fischer
  */
 public class A370562 extends DecimalExpansionSequence {

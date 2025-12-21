@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A368666 Decimal expansion of the probability that the square tetromino appears when the 4th cell is added in diffusion-limited aggregation on the square lattice.
- * Formula:
  * @author Georg Fischer
  */
 public class A368666 extends DecimalExpansionSequence {

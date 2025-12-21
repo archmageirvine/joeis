@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A374838 Decimal expansion of Bezdek and Dar\u00f3czy-Kiss's lower bound for the surface area of any Voronoi cell in an arbitrary packing of unit balls in the Euclidean 3-space.
- * Formula:
  * @author Georg Fischer
  */
 public class A374838 extends DecimalExpansionSequence {

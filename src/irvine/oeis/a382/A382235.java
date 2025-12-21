@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A382235 Decimal expansion of the multiple prime zeta value primezetamult(3, 3).
- * Formula:
  * @author Georg Fischer
  */
 public class A382235 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A371466 Decimal expansion of Product_{k&gt;=1} (1 - 1/(3*k+1)^2).
- * Formula:
  * @author Georg Fischer
  */
 public class A371466 extends DecimalExpansionSequence {

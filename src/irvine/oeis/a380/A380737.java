@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A380737 Decimal expansion of the medium vertex angle, in radians, in a disdyakis dodecahedron face.
- * Formula:
  * @author Georg Fischer
  */
 public class A380737 extends DecimalExpansionSequence {

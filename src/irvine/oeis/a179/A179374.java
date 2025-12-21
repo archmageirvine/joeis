@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A179374 Decimal expansion of the central angle in degrees corresponding to a circular segment with area r^2 of a circle with radius r.
- * Formula:
  * @author Georg Fischer
  */
 public class A179374 extends DecimalExpansionSequence {

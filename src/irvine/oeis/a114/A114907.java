@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A114907 Decimal expansion of twice the twin primes constant defined in A005597.
- * Formula:
  * @author Georg Fischer
  */
 public class A114907 extends DecimalExpansionSequence {

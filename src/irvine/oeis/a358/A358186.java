@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A358186 Decimal expansion of the positive real root r of 3*x^4 - 1.
- * Formula:
  * @author Georg Fischer
  */
 public class A358186 extends DecimalExpansionSequence {

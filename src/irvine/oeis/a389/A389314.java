@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A389314 Decimal expansion of 1/3432.
- * Formula:
  * @author Georg Fischer
  */
 public class A389314 extends DecimalExpansionSequence {

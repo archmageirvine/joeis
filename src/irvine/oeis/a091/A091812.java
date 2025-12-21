@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A091812 Decimal expansion of Sum_{k&gt;=1} (-1)^k*log(k)/k.
- * Formula:
  * @author Georg Fischer
  */
 public class A091812 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A222183 Decimal expansion of Sum_{k &gt;= 0} 1/(4*k+1)^2.
- * Formula:
  * @author Georg Fischer
  */
 public class A222183 extends DecimalExpansionSequence {

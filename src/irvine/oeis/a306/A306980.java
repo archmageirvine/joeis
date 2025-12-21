@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A306980 Decimal expansion of the sum of the reciprocals of the star numbers (A003154).
- * Formula:
  * @author Georg Fischer
  */
 public class A306980 extends DecimalExpansionSequence {

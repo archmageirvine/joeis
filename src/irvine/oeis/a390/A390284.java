@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A390284 Decimal expansion of the fourth smallest dihedral angle, in radians, in a sphenocorona (Johnson solid J_86).
- * Formula:
  * @author Georg Fischer
  */
 public class A390284 extends DecimalExpansionSequence {

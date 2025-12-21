@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A358664 Decimal expansion of ((phi + 1)^phi - 1) / phi, where phi is the golden ratio.
- * Formula:
  * @author Georg Fischer
  */
 public class A358664 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A382003 Decimal expansion of the isoperimetric quotient of a (small) triakis octahedron.
- * Formula:
  * @author Georg Fischer
  */
 public class A382003 extends DecimalExpansionSequence {

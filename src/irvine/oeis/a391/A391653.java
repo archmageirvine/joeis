@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A391653 Decimal expansion of the volume of a D√ľrer&apos;s solid with unit shorter edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A391653 extends DecimalExpansionSequence {

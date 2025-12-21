@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A254666 Decimal expansion of the right Alzer's constant.
- * Formula:
  * @author Georg Fischer
  */
 public class A254666 extends DecimalExpansionSequence {

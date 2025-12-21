@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A349003 Decimal expansion of lim_{n-&gt;infinity} E(2*n, n)/n^(2*n), where E(n, x) is the n-th Euler polynomial.
- * Formula:
  * @author Georg Fischer
  */
 public class A349003 extends DecimalExpansionSequence {

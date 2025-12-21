@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A374491 Decimal expansion of zeta(-11).
- * Formula:
  * @author Georg Fischer
  */
 public class A374491 extends DecimalExpansionSequence {

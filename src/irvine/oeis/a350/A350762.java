@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A350762 Decimal expansion of Sum_{k&gt;=1} ((-1)^(k+1) * (log(2) - Sum_{j=1..k} 1/(k+j))^2).
- * Formula:
  * @author Georg Fischer
  */
 public class A350762 extends DecimalExpansionSequence {

@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A380776 Decimal expansion of the acute vertex angle, in radians, in a pentagonal icositetrahedron face.
- * Formula:
  * @author Georg Fischer
  */
 public class A380776 extends DecimalExpansionSequence {

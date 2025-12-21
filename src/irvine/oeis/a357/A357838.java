@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A357838 Decimal expansion of Wien frequency displacement law constant.
- * Formula:
  * @author Georg Fischer
  */
 public class A357838 extends DecimalExpansionSequence {

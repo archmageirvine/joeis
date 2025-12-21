@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A363747 Decimal expansion of 2*Integral_{x=0..1} 1/sqrt(1-x^16) dx.
- * Formula:
  * @author Georg Fischer
  */
 public class A363747 extends DecimalExpansionSequence {

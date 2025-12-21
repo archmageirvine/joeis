@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A347407 Decimal expansion of Sum_{i&gt;=1} of i/Pi^i.
- * Formula:
  * @author Georg Fischer
  */
 public class A347407 extends DecimalExpansionSequence {

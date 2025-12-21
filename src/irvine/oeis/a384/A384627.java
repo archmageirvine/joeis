@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A384627 Decimal expansion of 1/998001.
- * Formula:
  * @author Georg Fischer
  */
 public class A384627 extends DecimalExpansionSequence {

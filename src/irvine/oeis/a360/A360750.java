@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A360750 Decimal expansion of the elementary charge over h-bar according to the 2019 SI system in units A/J.
- * Formula:
  * @author Georg Fischer
  */
 public class A360750 extends DecimalExpansionSequence {

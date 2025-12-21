@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A358029 Decimal expansion of the ratio between step sizes of the diatonic and chromatic semitones produced by a circle of 12 perfect fifths in Pythagorean tuning.
- * Formula:
  * @author Georg Fischer
  */
 public class A358029 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A092678 Decimal expansion of the probable error.
- * Formula:
  * @author Georg Fischer
  */
 public class A092678 extends DecimalExpansionSequence {

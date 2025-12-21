@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A372806 Decimal expansion of 90/781.
- * Formula:
  * @author Georg Fischer
  */
 public class A372806 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A378128 Decimal expansion of 2/L, where L is the lemniscate constant (A062539).
- * Formula:
  * @author Georg Fischer
  */
 public class A378128 extends DecimalExpansionSequence {

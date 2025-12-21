@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A240985 Decimal expansion of the infinite product of e*(1-1/(4*n^2))^(4*n^2) for n &gt;= 2.
- * Formula:
  * @author Georg Fischer
  */
 public class A240985 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A389746 Decimal expansion of Sum_{k&gt;=1} zeta(2*k)/(k*(k+1)*(2*k+1)*4^k).
- * Formula:
  * @author Georg Fischer
  */
 public class A389746 extends DecimalExpansionSequence {

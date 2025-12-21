@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A349580 Decimal expansion of the 5-dimensional Steinmetz solid formed by the intersection of 5 unit-diameter 5-dimensional cylinders whose axes are mutually orthogonal and intersect at a single point.
- * Formula:
  * @author Georg Fischer
  */
 public class A349580 extends DecimalExpansionSequence {

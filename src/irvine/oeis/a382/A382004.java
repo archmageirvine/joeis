@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A382004 Decimal expansion of the isoperimetric quotient of a tetrakis hexahedron.
- * Formula:
  * @author Georg Fischer
  */
 public class A382004 extends DecimalExpansionSequence {

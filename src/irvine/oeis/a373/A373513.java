@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A373513 Decimal expansion of 3*zeta(3)/2.
- * Formula:
  * @author Georg Fischer
  */
 public class A373513 extends DecimalExpansionSequence {

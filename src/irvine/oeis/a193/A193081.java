@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A193081 Decimal expansion of the constant term of the reduction of cosh(2x) by x^2-&gt;x+1.
- * Formula:
  * @author Georg Fischer
  */
 public class A193081 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A131265 Decimal expansion of the negative of the first derivative of the Gamma Function at 1/2.
- * Formula:
  * @author Georg Fischer
  */
 public class A131265 extends DecimalExpansionSequence {

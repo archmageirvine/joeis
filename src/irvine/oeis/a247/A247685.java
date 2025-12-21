@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A247685 Decimal expansion of the integral over the square (0,1)x(0,1) of 1/((x+y)*sqrt((1-x)*(1-y))) dx dy.
- * Formula:
  * @author Georg Fischer
  */
 public class A247685 extends DecimalExpansionSequence {

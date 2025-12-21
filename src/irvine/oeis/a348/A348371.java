@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A348371 Decimal expansion of Sum_{k&gt;=0} binomial(2*k,k)^2/(16^k*(k+1)^3).
- * Formula:
  * @author Georg Fischer
  */
 public class A348371 extends DecimalExpansionSequence {

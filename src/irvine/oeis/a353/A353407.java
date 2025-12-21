@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A353407 Decimal expansion of the gravitational force between two unit-edge-length unit-mass cubes whose centers are a unit distance apart, so they are in contact along one face, in units where the gravitational constant is G = 1.
- * Formula:
  * @author Georg Fischer
  */
 public class A353407 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A133358 Decimal expansion of 46/127.
- * Formula:
  * @author Georg Fischer
  */
 public class A133358 extends DecimalExpansionSequence {

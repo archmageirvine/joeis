@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A387884 Decimal expansion of the Rogers-Ramanujan R(q) function evaluated at q = exp(-Pi).
- * Formula:
  * @author Georg Fischer
  */
 public class A387884 extends DecimalExpansionSequence {

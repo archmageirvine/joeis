@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A359837 Decimal expansion of the unsigned ratio of similitude between an equilateral reference triangle and its first Morley triangle.
- * Formula:
  * @author Georg Fischer
  */
 public class A359837 extends DecimalExpansionSequence {

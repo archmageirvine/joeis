@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A365238 Decimal expansion of 1/A066716 (Binary Champernowne constant).
- * Formula:
  * @author Georg Fischer
  */
 public class A365238 extends DecimalExpansionSequence {

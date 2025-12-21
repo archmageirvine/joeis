@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A369872 Decimal expansion of -2*gamma + 2*log(2*Pi), where gamma=A001620 is the Euler-Mascheroni constant.
- * Formula:
  * @author Georg Fischer
  */
 public class A369872 extends DecimalExpansionSequence {

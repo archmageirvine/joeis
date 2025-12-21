@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A374957 Decimal expansion of the circumradius of a regular heptagon with unit side length.
- * Formula:
  * @author Georg Fischer
  */
 public class A374957 extends DecimalExpansionSequence {

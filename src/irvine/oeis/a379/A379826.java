@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A379826 Decimal expansion of the alternating double sum zeta(-2,-1) = Sum_{i&gt;=2} (Sum_{j=1..i-1} (-1)^(i+j)/(i^2*j)) (negated).
- * Formula:
  * @author Georg Fischer
  */
 public class A379826 extends DecimalExpansionSequence {

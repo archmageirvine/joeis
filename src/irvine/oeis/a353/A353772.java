@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A353772 Decimal expansion of the gravitational acceleration generated at a vertex by a unit-mass regular tetrahedron with edge length 2 in units where the gravitational constant is G = 1.
- * Formula:
  * @author Georg Fischer
  */
 public class A353772 extends DecimalExpansionSequence {

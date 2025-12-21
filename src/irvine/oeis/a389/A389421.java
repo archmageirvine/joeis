@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A389421 Decimal expansion of the largest dihedral angle, in radians, in a pentagonal orthobirotunda (Johnson solid J_34).
- * Formula:
  * @author Georg Fischer
  */
 public class A389421 extends DecimalExpansionSequence {

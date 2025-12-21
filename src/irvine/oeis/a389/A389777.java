@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A389777 Decimal expansion of Sum_{k&gt;=2} 1/(k^10 - k^2).
- * Formula:
  * @author Georg Fischer
  */
 public class A389777 extends DecimalExpansionSequence {

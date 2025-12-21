@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A390286 Decimal expansion of the third largest dihedral angle, in radians, in a sphenocorona (Johnson solid J_86).
- * Formula:
  * @author Georg Fischer
  */
 public class A390286 extends DecimalExpansionSequence {

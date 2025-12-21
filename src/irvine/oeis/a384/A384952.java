@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A384952 Decimal expansion of the volume of an elongated pentagonal orthobirotunda with unit edge.
- * Formula:
  * @author Georg Fischer
  */
 public class A384952 extends DecimalExpansionSequence {

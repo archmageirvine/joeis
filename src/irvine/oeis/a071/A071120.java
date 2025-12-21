@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A071120 Decimal expansion of Sum_{n &gt;= 1} 1/S(n)!, where S(n) is the Kempner number A002034.
- * Formula:
  * @author Georg Fischer
  */
 public class A071120 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A371861 Decimal expansion of Integral_{x=0..1} sqrt(1 - x^3) dx.
- * Formula:
  * @author Georg Fischer
  */
 public class A371861 extends DecimalExpansionSequence {

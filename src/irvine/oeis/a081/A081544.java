@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A081544 Decimal expansion of Sum_(1/(2^q-1)) with the summation extending over all pairs of integers gcd(p,q) = 1, 0 &lt; p/q &lt; phi, where phi is the Golden ratio.
- * Formula:
  * @author Georg Fischer
  */
 public class A081544 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A386754 Decimal expansion of the surface area of a triangular hebesphenorotunda with unit edges.
- * Formula:
  * @author Georg Fischer
  */
 public class A386754 extends DecimalExpansionSequence {

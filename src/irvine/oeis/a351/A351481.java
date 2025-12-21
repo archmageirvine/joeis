@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A351481 Decimal expansion of log_2((611 + sqrt(73))/36)/2.
- * Formula:
  * @author Georg Fischer
  */
 public class A351481 extends DecimalExpansionSequence {

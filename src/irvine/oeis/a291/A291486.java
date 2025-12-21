@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A291486 Decimal expansion of Gamma''''(1).
- * Formula:
  * @author Georg Fischer
  */
 public class A291486 extends DecimalExpansionSequence {

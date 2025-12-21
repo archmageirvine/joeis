@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A344964 Decimal expansion of the sum of the reciprocals of the squares of the zeros of the digamma function.
- * Formula:
  * @author Georg Fischer
  */
 public class A344964 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A380705 Decimal expansion of the obtuse vertex angle, in radians, in a deltoidal icositetrahedron face.
- * Formula:
  * @author Georg Fischer
  */
 public class A380705 extends DecimalExpansionSequence {

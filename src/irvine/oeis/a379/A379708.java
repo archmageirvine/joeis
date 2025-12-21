@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A379708 Decimal expansion of the surface area of a disdyakis triacontahedron with unit shorter edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A379708 extends DecimalExpansionSequence {

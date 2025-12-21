@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A385510 Decimal expansion of the surface area of an augmented pentagonal prism with unit edge.
- * Formula:
  * @author Georg Fischer
  */
 public class A385510 extends DecimalExpansionSequence {

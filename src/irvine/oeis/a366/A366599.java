@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A366599 Decimal expansion of arcsinh(e).
- * Formula:
  * @author Georg Fischer
  */
 public class A366599 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A086728 Decimal expansion of sum(1/(6*m+2)^2,m=0..infinity).
- * Formula:
  * @author Georg Fischer
  */
 public class A086728 extends DecimalExpansionSequence {

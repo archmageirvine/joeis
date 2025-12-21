@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A385568 Decimal expansion of Pi^(3/4).
- * Formula:
  * @author Georg Fischer
  */
 public class A385568 extends DecimalExpansionSequence {

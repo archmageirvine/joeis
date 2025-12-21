@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A384473 Decimal expansion of the middle interior angle (in degrees) in Albrecht D\u00fcrer's approximate construction of the regular pentagon.
- * Formula:
  * @author Georg Fischer
  */
 public class A384473 extends DecimalExpansionSequence {

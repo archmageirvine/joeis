@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A349851 Decimal expansion of Sum_{k&gt;=1} H(k)*L(k)/2^k, where H(k) = A001008(k)/A002805(k) is the k-th harmonic number and L(k) = A000032(k) is the k-th Lucas number.
- * Formula:
  * @author Georg Fischer
  */
 public class A349851 extends DecimalExpansionSequence {

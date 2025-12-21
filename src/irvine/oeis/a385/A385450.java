@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A385450 Decimal expansion of Sum_{k&gt;=1} Fibonacci(k)/binomial(2*k, k).
- * Formula:
  * @author Georg Fischer
  */
 public class A385450 extends DecimalExpansionSequence {

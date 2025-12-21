@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377804 Decimal expansion of the surface area of a snub dodecahedron with unit edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A377804 extends DecimalExpansionSequence {

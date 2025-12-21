@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A386753 Decimal expansion of the surface area of a bilunabirotunda with unit edges.
- * Formula:
  * @author Georg Fischer
  */
 public class A386753 extends DecimalExpansionSequence {

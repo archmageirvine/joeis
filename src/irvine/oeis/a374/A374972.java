@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A374972 Decimal expansion of the sagitta of a regular heptagon with unit side length.
- * Formula:
  * @author Georg Fischer
  */
 public class A374972 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A342361 Decimal expansion of 1/(omega+1)^2, where omega=1/LambertW(1).
- * Formula:
  * @author Georg Fischer
  */
 public class A342361 extends DecimalExpansionSequence {

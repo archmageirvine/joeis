@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A385696 Decimal expansion of the surface area of an augmented dodecahedron with unit edge.
- * Formula:
  * @author Georg Fischer
  */
 public class A385696 extends DecimalExpansionSequence {

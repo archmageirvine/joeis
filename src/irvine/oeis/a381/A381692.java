@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A381692 Decimal expansion of the isoperimetric quotient of a truncated dodecahedron.
- * Formula:
  * @author Georg Fischer
  */
 public class A381692 extends DecimalExpansionSequence {

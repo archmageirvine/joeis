@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A346589 Decimal expansion of the real principal square root of the Euler-Mascheroni constant.
- * Formula:
  * @author Georg Fischer
  */
 public class A346589 extends DecimalExpansionSequence {

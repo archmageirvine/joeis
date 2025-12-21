@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A356526 Decimal expansion of number of millimeters of mercury (mmHg) in 1 standard atmosphere (atm).
- * Formula:
  * @author Georg Fischer
  */
 public class A356526 extends DecimalExpansionSequence {

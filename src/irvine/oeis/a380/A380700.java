@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A380700 Decimal expansion of the acute vertex angles, in radians, in a triakis tetrahedron face.
- * Formula:
  * @author Georg Fischer
  */
 public class A380700 extends DecimalExpansionSequence {

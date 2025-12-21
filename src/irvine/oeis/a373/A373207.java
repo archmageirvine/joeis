@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A373207 Decimal expansion of Product_{k&gt;=1} f(2*k)^2/(f(2*k-1) * f(2*k+1)), where f(k) = k^(1/k).
- * Formula:
  * @author Georg Fischer
  */
 public class A373207 extends DecimalExpansionSequence {

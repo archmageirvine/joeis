@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A375068 Decimal expansion of the sagitta of a regular pentagon with unit side length.
- * Formula:
  * @author Georg Fischer
  */
 public class A375068 extends DecimalExpansionSequence {

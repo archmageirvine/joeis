@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A346713 Decimal expansion of sqrt(log 2).
- * Formula:
  * @author Georg Fischer
  */
 public class A346713 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A376642 Decimal expansion of the area of Moss's egg constructed from a unit-hypotenuse right isosceles triangle.
- * Formula:
  * @author Georg Fischer
  */
 public class A376642 extends DecimalExpansionSequence {

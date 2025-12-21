@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A206161 Decimal expansion of the Fresnel integral int_{x=0..infinity} cos(x^4) dx.
- * Formula:
  * @author Georg Fischer
  */
 public class A206161 extends DecimalExpansionSequence {

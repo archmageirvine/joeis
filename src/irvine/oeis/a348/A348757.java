@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A348757 Decimal expansion of the area of a regular pentagram inscribed in a unit-radius circle.
- * Formula:
  * @author Georg Fischer
  */
 public class A348757 extends DecimalExpansionSequence {

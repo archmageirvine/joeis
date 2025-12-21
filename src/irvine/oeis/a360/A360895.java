@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A360895 Decimal expansion of exp(exp(-gamma)) where gamma is the Euler-Mascheroni constant A001620.
- * Formula:
  * @author Georg Fischer
  */
 public class A360895 extends DecimalExpansionSequence {

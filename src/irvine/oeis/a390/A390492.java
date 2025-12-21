@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A390492 Decimal expansion of log_2(1 + 1/15)*log_2(1 + 1/3)*log_2(1 + 1/24).
- * Formula:
  * @author Georg Fischer
  */
 public class A390492 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A376234 Decimal expansion of log_2(1/2 + sqrt(1/4 + log_3(2))).
- * Formula:
  * @author Georg Fischer
  */
 public class A376234 extends DecimalExpansionSequence {

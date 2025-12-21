@@ -9,7 +9,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A357319 Decimal expansion of 6*Pi*Gamma(2/3)^2/(sqrt(3)*Gamma(1/3)^4).
- * Formula:
  * @author Georg Fischer
  */
 public class A357319 extends DecimalExpansionSequence {

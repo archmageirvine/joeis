@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A385508 Decimal expansion of Sum_{k&gt;=1} Fibonacci(k)/Catalan(k).
- * Formula:
  * @author Georg Fischer
  */
 public class A385508 extends DecimalExpansionSequence {

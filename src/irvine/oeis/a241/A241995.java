@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A241995 Decimal expansion of the limit when n -&gt; infinity of the product Product_{k=1..2n+1} (1 - 2/(2*k+1))^(k*(-1)^k).
- * Formula:
  * @author Georg Fischer
  */
 public class A241995 extends DecimalExpansionSequence {

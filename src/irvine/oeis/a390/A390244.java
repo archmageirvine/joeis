@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A390244 Decimal expansion of Sum_{k&gt;=0} (-2)^k/Catalan(k).
- * Formula:
  * @author Georg Fischer
  */
 public class A390244 extends DecimalExpansionSequence {

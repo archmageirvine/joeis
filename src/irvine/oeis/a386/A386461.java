@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A386461 Decimal expansion of the surface area of a biaugmented truncated cube with unit edges.
- * Formula:
  * @author Georg Fischer
  */
 public class A386461 extends DecimalExpansionSequence {

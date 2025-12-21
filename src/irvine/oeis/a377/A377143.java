@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377143 Decimal expansion of Integral_{x=0..oo} erfc(x)^2 dx, where erfc is the complementary error function.
- * Formula:
  * @author Georg Fischer
  */
 public class A377143 extends DecimalExpansionSequence {

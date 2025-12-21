@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A373508 Decimal expansion of sqrt(3)*Pi/6 + Pi^2/36 - 1.
- * Formula:
  * @author Georg Fischer
  */
 public class A373508 extends DecimalExpansionSequence {

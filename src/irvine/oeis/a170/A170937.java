@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A170937 Decimal expansion of Im(tan(1+I)).
- * Formula:
  * @author Georg Fischer
  */
 public class A170937 extends DecimalExpansionSequence {

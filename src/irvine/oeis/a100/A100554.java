@@ -6,7 +6,6 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 /**
  * A100554 Decimal expansion of the fractional part of Sum_{n&gt;=1} cos((n + 1)*Pi)*zeta(2*n) = zeta(2) - zeta(4) + zeta(6) - zeta(8) + ..., where Zeta is the Riemann zeta function.
- * Formula:
  * @author Georg Fischer
  */
 public class A100554 extends DecimalExpansionSequence {

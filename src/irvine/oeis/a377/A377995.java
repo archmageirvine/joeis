@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377995 Decimal expansion of the dihedral angle, in radians, between square and pentagonal faces in a (small) rhombicosidodecahedron.
- * Formula:
  * @author Georg Fischer
  */
 public class A377995 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A257535 Decimal expansion of the imaginary part of -E_1(i), i being the imaginary unit.
- * Formula:
  * @author Georg Fischer
  */
 public class A257535 extends DecimalExpansionSequence {

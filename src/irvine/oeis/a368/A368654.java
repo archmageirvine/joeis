@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A368654 Decimal expansion of 158452/21444.
- * Formula:
  * @author Georg Fischer
  */
 public class A368654 extends DecimalExpansionSequence {

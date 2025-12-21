@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A380794 Decimal expansion of the obtuse vertex angle, in radians, in a triakis icosahedron face.
- * Formula:
  * @author Georg Fischer
  */
 public class A380794 extends DecimalExpansionSequence {

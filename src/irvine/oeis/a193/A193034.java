@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A193034 Decimal expansion of the coefficient of x in the reduction of 3^x by x^2-&gt;x+1.
- * Formula:
  * @author Georg Fischer
  */
 public class A193034 extends DecimalExpansionSequence {

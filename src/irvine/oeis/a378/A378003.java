@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A378003 Decimal expansion of Pi*G - 7*zeta(3)/4, where G = A006752.
- * Formula:
  * @author Georg Fischer
  */
 public class A378003 extends DecimalExpansionSequence {

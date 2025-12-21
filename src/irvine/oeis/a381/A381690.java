@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A381690 Decimal expansion of the isoperimetric quotient of a snub cube (snub cuboctahedron).
- * Formula:
  * @author Georg Fischer
  */
 public class A381690 extends DecimalExpansionSequence {

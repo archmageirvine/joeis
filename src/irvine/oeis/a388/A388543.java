@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A388543 Decimal expansion of e^(-9).
- * Formula:
  * @author Georg Fischer
  */
 public class A388543 extends DecimalExpansionSequence {

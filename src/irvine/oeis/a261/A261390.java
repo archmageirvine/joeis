@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A261390 2 * Sum_{n&gt;=3} 1/Fibonacci(n).
- * Formula:
  * @author Georg Fischer
  */
 public class A261390 extends DecimalExpansionSequence {

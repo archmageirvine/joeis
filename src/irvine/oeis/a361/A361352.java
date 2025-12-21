@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A361352 Decimal expansion of the conventional value of farad-90 (F_{90}).
- * Formula:
  * @author Georg Fischer
  */
 public class A361352 extends DecimalExpansionSequence {

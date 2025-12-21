@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377764 Decimal expansion of (Pi/8)*exp(4*G/Pi), where G is the Catalan constant (A006752).
- * Formula:
  * @author Georg Fischer
  */
 public class A377764 extends DecimalExpansionSequence {

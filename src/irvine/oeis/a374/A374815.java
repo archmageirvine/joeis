@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A374815 Decimal expansion of Sum_{k&gt;=0} cos(4k*Pi/5)/2^k.
- * Formula:
  * @author Georg Fischer
  */
 public class A374815 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A384962 Decimal expansion of coth(2*Pi).
- * Formula:
  * @author Georg Fischer
  */
 public class A384962 extends DecimalExpansionSequence {

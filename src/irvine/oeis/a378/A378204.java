@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A378204 Decimal expansion of the surface area of a triakis tetrahedron with unit shorter edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A378204 extends DecimalExpansionSequence {

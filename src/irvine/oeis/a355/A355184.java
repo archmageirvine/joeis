@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A355184 Decimal expansion of the perimeter of the region that represents the set of points in a unit square that are closer to the center of the square than to the closest edge.
- * Formula:
  * @author Georg Fischer
  */
 public class A355184 extends DecimalExpansionSequence {

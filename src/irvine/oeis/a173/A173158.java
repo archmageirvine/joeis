@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A173158 Decimal expansion of x such that x^x=3.
- * Formula:
  * @author Georg Fischer
  */
 public class A173158 extends DecimalExpansionSequence {

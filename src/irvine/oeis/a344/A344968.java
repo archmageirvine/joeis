@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A344968 Decimal expansion of Sum_{k&gt;=0} 1/(x_k^2 - x_k), where x_k is the k-th zero of the digamma function.
- * Formula:
  * @author Georg Fischer
  */
 public class A344968 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A364945 Decimal expansion of 1-Catalan.
- * Formula:
  * @author Georg Fischer
  */
 public class A364945 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A346062 Decimal expansion of the minimum value of the area of a rhombus circumscribed around a cosine-shaped lens, whose vertices lie on coordinate axes.
- * Formula:
  * @author Georg Fischer
  */
 public class A346062 extends DecimalExpansionSequence {

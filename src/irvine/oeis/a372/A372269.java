@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A372269 Decimal expansion of the smallest positive zero of the Legendre polynomial of degree 5.
- * Formula:
  * @author Georg Fischer
  */
 public class A372269 extends DecimalExpansionSequence {

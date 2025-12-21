@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A357331 Decimal expansion of sigma(N) / (exp(gamma) * N * log(log(N))) for N = 5040, where sigma = A000203 and gamma = A001620 is the Euler-Mascheroni constant.
- * Formula:
  * @author Georg Fischer
  */
 public class A357331 extends DecimalExpansionSequence {

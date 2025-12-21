@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A373165 Decimal expansion of 1/(5 + 2*sqrt(3)).
- * Formula:
  * @author Georg Fischer
  */
 public class A373165 extends DecimalExpansionSequence {

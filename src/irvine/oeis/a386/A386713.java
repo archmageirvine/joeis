@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A386713 Decimal expansion of Integral_{x=0..1} {1/x}^2 * {1/(1-x)}^2 dx, where {} denotes fractional part.
- * Formula:
  * @author Georg Fischer
  */
 public class A386713 extends DecimalExpansionSequence {

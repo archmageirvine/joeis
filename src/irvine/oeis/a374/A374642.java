@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A374642 Decimal expansion of log(1111111111/387420489).
- * Formula:
  * @author Georg Fischer
  */
 public class A374642 extends DecimalExpansionSequence {

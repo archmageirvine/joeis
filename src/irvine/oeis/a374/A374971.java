@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A374971 Decimal expansion of the apothem (inradius) of a regular heptagon with unit side length.
- * Formula:
  * @author Georg Fischer
  */
 public class A374971 extends DecimalExpansionSequence {

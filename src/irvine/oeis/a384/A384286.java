@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A384286 Decimal expansion of the surface area of a gyroelongated pentagonal rotunda with unit edge.
- * Formula:
  * @author Georg Fischer
  */
 public class A384286 extends DecimalExpansionSequence {

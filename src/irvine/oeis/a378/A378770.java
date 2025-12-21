@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A378770 Decimal expansion of 7*sqrt(3)/27.
- * Formula:
  * @author Georg Fischer
  */
 public class A378770 extends DecimalExpansionSequence {

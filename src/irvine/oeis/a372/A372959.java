@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A372959 Decimal expansion of the least positive solution of cos(x) - sin(x) = 5/4.
- * Formula:
  * @author Georg Fischer
  */
 public class A372959 extends DecimalExpansionSequence {

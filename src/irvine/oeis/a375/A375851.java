@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A375851 Decimal expansion of the 7th root of 306.
- * Formula:
  * @author Georg Fischer
  */
 public class A375851 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A372426 Decimal expansion of 2 - (log(Pi) - gamma)/log(2).
- * Formula:
  * @author Georg Fischer
  */
 public class A372426 extends DecimalExpansionSequence {

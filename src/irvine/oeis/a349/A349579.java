@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A349579 Decimal expansion of the 4-dimensional Steinmetz solid formed by the intersection of 4 unit-diameter 4-dimensional cylinders whose axes are mutually orthogonal and intersect at a single point.
- * Formula:
  * @author Georg Fischer
  */
 public class A349579 extends DecimalExpansionSequence {

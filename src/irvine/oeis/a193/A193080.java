@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A193080 Decimal expansion of the coefficient of x in the reduction of sinh(2x) by x^2-&gt;x+1.
- * Formula:
  * @author Georg Fischer
  */
 public class A193080 extends DecimalExpansionSequence {

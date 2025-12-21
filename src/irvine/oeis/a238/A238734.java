@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A238734 Log of twice the twin prime constant, C_2, log(2*A005597).
- * Formula:
  * @author Georg Fischer
  */
 public class A238734 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A367453 Decimal expansion of (-1 + sqrt(21))/10 = 1/A222134.
- * Formula:
  * @author Georg Fischer
  */
 public class A367453 extends DecimalExpansionSequence {

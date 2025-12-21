@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A372777 Decimal expansion of (4 + 5*sqrt(2))/17.
- * Formula:
  * @author Georg Fischer
  */
 public class A372777 extends DecimalExpansionSequence {

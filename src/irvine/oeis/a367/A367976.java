@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A367976 Decimal expansion of Sum_{k &gt;= 0} (-1)^k/(1+k^2).
- * Formula:
  * @author Georg Fischer
  */
 public class A367976 extends DecimalExpansionSequence {

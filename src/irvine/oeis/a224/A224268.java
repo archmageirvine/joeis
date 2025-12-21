@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A224268 Decimal expansion of Product_{n&gt;=1} (1 - 1/(4n+1)^2).
- * Formula:
  * @author Georg Fischer
  */
 public class A224268 extends DecimalExpansionSequence {

@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A387856 Decimal expansion of the smallest dihedral angle, in radians, in a square gyrobicupola (Johnson solid J_29).
- * Formula:
  * @author Georg Fischer
  */
 public class A387856 extends DecimalExpansionSequence {

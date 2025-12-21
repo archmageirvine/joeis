@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A374753 Decimal expansion of the volume of a regular dodecahedron having unit inradius.
- * Formula:
  * @author Georg Fischer
  */
 public class A374753 extends DecimalExpansionSequence {

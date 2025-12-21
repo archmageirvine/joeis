@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A248181 Decimal expansion of Sum_{h &gt;= 0} 1/binomial(h, floor(h/2)).
- * Formula:
  * @author Georg Fischer
  */
 public class A248181 extends DecimalExpansionSequence {

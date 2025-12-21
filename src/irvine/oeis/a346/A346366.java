@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A346366 Decimal expansion of Mertens's constant multiplied by zeta(2).
- * Formula:
  * @author Georg Fischer
  */
 public class A346366 extends DecimalExpansionSequence {

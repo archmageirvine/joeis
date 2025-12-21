@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A371858 Decimal expansion of Integral_{x=0..oo} 1 / (1 + x^7) dx.
- * Formula:
  * @author Georg Fischer
  */
 public class A371858 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A369522 Decimal expansion of log(4/3) / log(3/2).
- * Formula:
  * @author Georg Fischer
  */
 public class A369522 extends DecimalExpansionSequence {

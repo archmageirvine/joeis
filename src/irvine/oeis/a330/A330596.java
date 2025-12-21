@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A330596 Decimal expansion of Product_{primes p} (1 - 1/p^2 + 1/p^3).
- * Formula:
  * @author Georg Fischer
  */
 public class A330596 extends DecimalExpansionSequence {

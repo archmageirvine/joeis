@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A371465 Decimal expansion of Product_{k&gt;=1} (1 - 1/(2*k+1)^6).
- * Formula:
  * @author Georg Fischer
  */
 public class A371465 extends DecimalExpansionSequence {

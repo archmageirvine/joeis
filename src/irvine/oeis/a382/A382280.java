@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A382280 Area of the Pythagoras Tree.
- * Formula:
  * @author Georg Fischer
  */
 public class A382280 extends DecimalExpansionSequence {

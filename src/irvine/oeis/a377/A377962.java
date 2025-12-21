@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377962 Decimal expansion of (8*G - Pi*log(2 + sqrt(3)))/3, where G = A006752.
- * Formula:
  * @author Georg Fischer
  */
 public class A377962 extends DecimalExpansionSequence {

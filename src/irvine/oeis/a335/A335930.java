@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A335930 Decimal expansion of the arclength on y = sin(x) from (0,0) to (Pi,0).
- * Formula:
  * @author Georg Fischer
  */
 public class A335930 extends DecimalExpansionSequence {

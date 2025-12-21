@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A130818 Decimal expansion of number whose Engel expansion is the sequence of squares, that is, 1, 4, 9, 16,...
- * Formula:
  * @author Georg Fischer
  */
 public class A130818 extends DecimalExpansionSequence {

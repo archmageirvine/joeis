@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A378942 Decimal expansion of (1/sqrt(Pi) + e*erfc(-1))/2.
- * Formula:
  * @author Georg Fischer
  */
 public class A378942 extends DecimalExpansionSequence {

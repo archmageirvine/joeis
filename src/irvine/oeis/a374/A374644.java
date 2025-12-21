@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A374644 Decimal expansion of 24*Li_3(1/2), where Li_m(z) is the polylogarithm function.
- * Formula:
  * @author Georg Fischer
  */
 public class A374644 extends DecimalExpansionSequence {

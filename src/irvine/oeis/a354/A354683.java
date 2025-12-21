@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A354683 Decimal expansion of -2 - (1 - gamma - log(2))*Pi (negated).
- * Formula:
  * @author Georg Fischer
  */
 public class A354683 extends DecimalExpansionSequence {

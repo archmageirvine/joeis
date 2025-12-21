@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A088454 Decimal expansion of 6/(Catalan*Pi^2).
- * Formula:
  * @author Georg Fischer
  */
 public class A088454 extends DecimalExpansionSequence {

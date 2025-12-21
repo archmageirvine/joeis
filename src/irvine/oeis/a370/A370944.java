@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A370944 Decimal expansion of ((1+sqrt(5))/2)*sqrt(3) = A001622*A002194.
- * Formula:
  * @author Georg Fischer
  */
 public class A370944 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A372605 Decimal expansion of sqrt(Pi/log(10)).
- * Formula:
  * @author Georg Fischer
  */
 public class A372605 extends DecimalExpansionSequence {

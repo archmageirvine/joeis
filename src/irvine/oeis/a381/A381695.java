@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A381695 Decimal expansion of the isoperimetric quotient of a truncated icosidodecahedron (great rhombicosidodecahedron).
- * Formula:
  * @author Georg Fischer
  */
 public class A381695 extends DecimalExpansionSequence {

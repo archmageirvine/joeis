@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A385496 Decimal expansion of 1 - exp(1/2)/2.
- * Formula:
  * @author Georg Fischer
  */
 public class A385496 extends DecimalExpansionSequence {

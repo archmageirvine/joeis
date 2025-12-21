@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A349577 Decimal expansion of the volume of the solid formed by the intersection of 4 right circular unit-diameter cylinders whose axes pass through the diagonals of a cube.
- * Formula:
  * @author Georg Fischer
  */
 public class A349577 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A382010 Decimal expansion of the isoperimetric quotient of a pentakis dodecahedron.
- * Formula:
  * @author Georg Fischer
  */
 public class A382010 extends DecimalExpansionSequence {

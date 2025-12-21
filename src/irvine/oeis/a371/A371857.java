@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A371857 Decimal expansion of Integral_{x=0..oo} exp(-x^7) dx.
- * Formula:
  * @author Georg Fischer
  */
 public class A371857 extends DecimalExpansionSequence {

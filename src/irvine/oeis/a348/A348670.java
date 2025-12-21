@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A348670 Decimal expansion of 10 - Pi^2.
- * Formula:
  * @author Georg Fischer
  */
 public class A348670 extends DecimalExpansionSequence {

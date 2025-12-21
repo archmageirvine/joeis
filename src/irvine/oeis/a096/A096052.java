@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A096052 Decimal expansion of lim_{n-&gt;oo} B(2n,5)/(B(2n)*25^n) (see comment for B(n,k) definition).
- * Formula:
  * @author Georg Fischer
  */
 public class A096052 extends DecimalExpansionSequence {

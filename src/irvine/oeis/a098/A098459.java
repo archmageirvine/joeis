@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A098459 Decimal expansion of G/2 + (1/8)*Pi*log(2), where G is Catalan's constant (often also denoted K).
- * Formula:
  * @author Georg Fischer
  */
 public class A098459 extends DecimalExpansionSequence {

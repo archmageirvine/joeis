@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A276709 Decimal expansion of the derivative of logarithmic integral at its positive real root.
- * Formula:
  * @author Georg Fischer
  */
 public class A276709 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A387296 Decimal expansion of the third largest dihedral angle, in radians, in a gyroelongated triangular cupola (Johnson solid J_22).
- * Formula:
  * @author Georg Fischer
  */
 public class A387296 extends DecimalExpansionSequence {

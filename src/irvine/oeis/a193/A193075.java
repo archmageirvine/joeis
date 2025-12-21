@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A193075 Decimal expansion of the constant term of the reduction of phi^x by x^2-&gt;x+1, where phi=(1+sqrt(5))/2 is the golden ratio (A001622).
- * Formula:
  * @author Georg Fischer
  */
 public class A193075 extends DecimalExpansionSequence {

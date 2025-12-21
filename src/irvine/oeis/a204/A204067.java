@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A204067 Decimal expansion of the Fresnel Integral, Integral_{x &gt;= 0} cos(x^3) dx.
- * Formula:
  * @author Georg Fischer
  */
 public class A204067 extends DecimalExpansionSequence {

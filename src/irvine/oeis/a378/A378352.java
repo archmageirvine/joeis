@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A378352 Decimal expansion of the volume of a (small) triakis octahedron with unit shorter edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A378352 extends DecimalExpansionSequence {

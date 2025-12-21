@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A346839 Decimal expansion of Sum_{n&gt;=0} A346838(n) / n!.
- * Formula:
  * @author Georg Fischer
  */
 public class A346839 extends DecimalExpansionSequence {

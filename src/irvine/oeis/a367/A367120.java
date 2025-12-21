@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A367120 Decimal expansion of continued fraction 2+1/(4+3/(6+5/(8+7/(...)))).
- * Formula:
  * @author Georg Fischer
  */
 public class A367120 extends DecimalExpansionSequence {

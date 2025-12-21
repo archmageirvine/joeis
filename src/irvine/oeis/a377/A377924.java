@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377924 Decimal expansion of 1 + Pi/arccos(9/16).
- * Formula:
  * @author Georg Fischer
  */
 public class A377924 extends DecimalExpansionSequence {

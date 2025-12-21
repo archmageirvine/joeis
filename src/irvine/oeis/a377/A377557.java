@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377557 Decimal expansion of 2*Pi^3/(81*sqrt(3)) + 13*zeta(3)/27.
- * Formula:
  * @author Georg Fischer
  */
 public class A377557 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A361100 Decimal expansion of 2^(2^(2^(2^2))) = 2^^5.
- * Formula:
  * @author Georg Fischer
  */
 public class A361100 extends DecimalExpansionSequence {

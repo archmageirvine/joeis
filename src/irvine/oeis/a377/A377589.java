@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377589 Decimal expansion of 9*zeta(3)/(2*Pi^2) - log(2) + 1/3.
- * Formula:
  * @author Georg Fischer
  */
 public class A377589 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A387289 Decimal expansion of Sum_{n&gt;=1} (-1)^(n+1) P(3*n)/(3*n), where P(x) is the prime zeta function.
- * Formula:
  * @author Georg Fischer
  */
 public class A387289 extends DecimalExpansionSequence {

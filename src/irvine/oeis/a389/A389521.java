@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A389521 Decimal expansion of the hexagonal pyramidal root of 2.
- * Formula:
  * @author Georg Fischer
  */
 public class A389521 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A353908 Decimal expansion of Pi^2/36.
- * Formula:
  * @author Georg Fischer
  */
 public class A353908 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A218505 Decimal expansion of Sum_{k&gt;=1} (H(k)/k)^2, where H(k) = Sum_{j=1..k} 1/j.
- * Formula:
  * @author Georg Fischer
  */
 public class A218505 extends DecimalExpansionSequence {

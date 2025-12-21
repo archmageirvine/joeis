@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377981 Decimal expansion of G/2 - Pi*log(2)/8, where G = A006752.
- * Formula:
  * @author Georg Fischer
  */
 public class A377981 extends DecimalExpansionSequence {

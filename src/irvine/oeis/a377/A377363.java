@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377363 Decimal expansion of 12/Pi^2.
- * Formula:
  * @author Georg Fischer
  */
 public class A377363 extends DecimalExpansionSequence {

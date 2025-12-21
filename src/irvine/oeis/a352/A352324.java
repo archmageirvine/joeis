@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A352324 Decimal expansion of 4*Pi / (5*sqrt(10-2*sqrt(5))).
- * Formula:
  * @author Georg Fischer
  */
 public class A352324 extends DecimalExpansionSequence {

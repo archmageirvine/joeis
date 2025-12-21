@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A330380 Decimal expansion of the y-coordinate for the largest solution to e^x = Gamma(x+1).
- * Formula:
  * @author Georg Fischer
  */
 public class A330380 extends DecimalExpansionSequence {

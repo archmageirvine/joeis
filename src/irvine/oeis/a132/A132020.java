@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A132020 Decimal expansion of Product_{k&gt;=0} (1 - 1/(2*4^k)).
- * Formula:
  * @author Georg Fischer
  */
 public class A132020 extends DecimalExpansionSequence {

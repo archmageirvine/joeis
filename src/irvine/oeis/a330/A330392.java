@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A330392 Decimal expansion of smallest x &gt; 1 satisfying x^(i*x) = 1, where i is the imaginary unit.
- * Formula:
  * @author Georg Fischer
  */
 public class A330392 extends DecimalExpansionSequence {

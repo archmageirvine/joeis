@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A374172 Decimal expansion of 1/(6*Pi).
- * Formula:
  * @author Georg Fischer
  */
 public class A374172 extends DecimalExpansionSequence {

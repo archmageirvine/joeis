@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A370393 Decimal expansion of the area of a unit heptadecagon (17-gon).
- * Formula:
  * @author Georg Fischer
  */
 public class A370393 extends DecimalExpansionSequence {

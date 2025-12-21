@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377787 Decimal expansion of 30*arctan(2).
- * Formula:
  * @author Georg Fischer
  */
 public class A377787 extends DecimalExpansionSequence {

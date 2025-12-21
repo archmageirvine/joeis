@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A348683 Decimal expansion of the average length of a chord in a unit cube defined by the intersection of the surface with a straight line passing through 2 points uniformly and independently chosen at random in the interior of the cube.
- * Formula:
  * @author Georg Fischer
  */
 public class A348683 extends DecimalExpansionSequence {

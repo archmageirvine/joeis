@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A213053 Decimal expansion of the absolute minimum of sinc(x) = sin(x)/x (negated).
- * Formula:
  * @author Georg Fischer
  */
 public class A213053 extends DecimalExpansionSequence {

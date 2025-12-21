@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A127266 Expansion of 1/Pi in base 2.
- * Formula:
  * @author Georg Fischer
  */
 public class A127266 extends DecimalExpansionSequence {

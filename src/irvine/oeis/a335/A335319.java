@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A335319 Decimal expansion of Sum_{n&gt;=2} (-1)^n/(n*phi(n)), where phi(n) is the Euler totient function A000010.
- * Formula:
  * @author Georg Fischer
  */
 public class A335319 extends DecimalExpansionSequence {

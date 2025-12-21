@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A386000 Decimal expansion of the volume of a tridiminished icosahedron with unit edge.
- * Formula:
  * @author Georg Fischer
  */
 public class A386000 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A387189 Decimal expansion of the smallest dihedral angle, in radians, in a pentagonal bipyramid (Johnson solid J_13).
- * Formula:
  * @author Georg Fischer
  */
 public class A387189 extends DecimalExpansionSequence {

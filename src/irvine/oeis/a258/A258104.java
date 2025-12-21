@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A258104 Decimal expansion of W_3(-1), the average reciprocal distance to the origin in a 3-step random walk in the plane.
- * Formula:
  * @author Georg Fischer
  */
 public class A258104 extends DecimalExpansionSequence {

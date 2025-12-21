@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A354004 Decimal expansion of Sum_{n&gt;0} n^2 / (n^4 + 1).
- * Formula:
  * @author Georg Fischer
  */
 public class A354004 extends DecimalExpansionSequence {

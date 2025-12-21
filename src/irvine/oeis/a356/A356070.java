@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A356070 Number of astronomical units (A163103) in a light-year (A213614).
- * Formula:
  * @author Georg Fischer
  */
 public class A356070 extends DecimalExpansionSequence {

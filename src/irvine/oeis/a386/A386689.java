@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A386689 Decimal expansion of the volume of a diminished rhombicosidodecahedron with unit edges.
- * Formula:
  * @author Georg Fischer
  */
 public class A386689 extends DecimalExpansionSequence {

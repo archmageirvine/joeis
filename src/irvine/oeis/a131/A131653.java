@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A131653 Decimal expansion of the sum of the reciprocals of squared 3-almost primes.
- * Formula:
  * @author Georg Fischer
  */
 public class A131653 extends DecimalExpansionSequence {

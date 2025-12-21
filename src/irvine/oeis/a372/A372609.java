@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A372609 Decimal expansion of (10/9)*log(2).
- * Formula:
  * @author Georg Fischer
  */
 public class A372609 extends DecimalExpansionSequence {

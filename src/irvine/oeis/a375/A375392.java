@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A375392 Decimal expansion of the hyperbolic volume of the link complement of the Borromean rings.
- * Formula:
  * @author Georg Fischer
  */
 public class A375392 extends DecimalExpansionSequence {

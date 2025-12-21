@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A385488 Decimal expansion of the surface area of a gyroelongated pentagonal birotunda with unit edge.
- * Formula:
  * @author Georg Fischer
  */
 public class A385488 extends DecimalExpansionSequence {

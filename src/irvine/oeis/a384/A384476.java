@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A384476 Decimal expansion of the smallest interior angle (in radians) in Albrecht D\u00fcrer's approximate construction of the regular pentagon.
- * Formula:
  * @author Georg Fischer
  */
 public class A384476 extends DecimalExpansionSequence {

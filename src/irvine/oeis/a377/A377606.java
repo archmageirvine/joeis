@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377606 Decimal expansion of -30*arcsin((5 - 4*sqrt(5))/15).
- * Formula:
  * @author Georg Fischer
  */
 public class A377606 extends DecimalExpansionSequence {

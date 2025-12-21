@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A289502 Mean width of the regular tetrahedron of unit length.
- * Formula:
  * @author Georg Fischer
  */
 public class A289502 extends DecimalExpansionSequence {

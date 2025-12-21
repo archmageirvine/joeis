@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A344323 Number of light-years in a parsec, as defined in 2015.
- * Formula:
  * @author Georg Fischer
  */
 public class A344323 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A376845 Decimal expansion of Product_{p prime} (p^5 + 1)/(p^5 - 1).
- * Formula:
  * @author Georg Fischer
  */
 public class A376845 extends DecimalExpansionSequence {

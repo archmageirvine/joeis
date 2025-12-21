@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A339083 Decimal expansion of Sum_{k&gt;=0} (zeta(4*k+2)-1).
- * Formula:
  * @author Georg Fischer
  */
 public class A339083 extends DecimalExpansionSequence {

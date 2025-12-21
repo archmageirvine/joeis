@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A365927 Decimal expansion of arccosh(e).
- * Formula:
  * @author Georg Fischer
  */
 public class A365927 extends DecimalExpansionSequence {

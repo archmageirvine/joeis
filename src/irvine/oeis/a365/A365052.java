@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A365052 Decimal expansion of continued fraction [1; 4, 9, 16, 25, ... n^2, ... ].
- * Formula:
  * @author Georg Fischer
  */
 public class A365052 extends DecimalExpansionSequence {

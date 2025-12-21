@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A371534 Decimal expansion of (1/8) * Pi^(3/2).
- * Formula:
  * @author Georg Fischer
  */
 public class A371534 extends DecimalExpansionSequence {

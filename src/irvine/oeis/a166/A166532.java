@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A166532 Decimal expansion of A060295^6.
- * Formula:
  * @author Georg Fischer
  */
 public class A166532 extends DecimalExpansionSequence {

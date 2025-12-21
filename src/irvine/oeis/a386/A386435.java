@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A386435 Decimal expansion of the largest dihedral angle, in radians, in a triangular bipyramid (Johnson solid J_12).
- * Formula:
  * @author Georg Fischer
  */
 public class A386435 extends DecimalExpansionSequence {

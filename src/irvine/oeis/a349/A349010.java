@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A349010 Decimal expansion of the perimeter of the convex hull around the R5 dragon fractal.
- * Formula:
  * @author Georg Fischer
  */
 public class A349010 extends DecimalExpansionSequence {

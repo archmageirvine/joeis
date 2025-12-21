@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A352548 Decimal expansion of 22*Pi^4.
- * Formula:
  * @author Georg Fischer
  */
 public class A352548 extends DecimalExpansionSequence {

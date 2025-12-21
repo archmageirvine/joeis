@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A346790 Decimal expansion of the cotangent of an arcsecond.
- * Formula:
  * @author Georg Fischer
  */
 public class A346790 extends DecimalExpansionSequence {

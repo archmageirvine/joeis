@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A360166 Decimal expansion of sech(Pi).
- * Formula:
  * @author Georg Fischer
  */
 public class A360166 extends DecimalExpansionSequence {

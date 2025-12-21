@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A391656 Decimal expansion of the dihedral angle, in radians, between two adjacent pentagonal faces (meeting at their longest edge) in a D√ľrer&apos;s solid.
- * Formula:
  * @author Georg Fischer
  */
 public class A391656 extends DecimalExpansionSequence {

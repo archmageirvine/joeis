@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A376875 Decimal expansion of ((1 + 1/a)*exp(-a) + (1 - 1/a)*exp(a))*sqrt(12/121) where a = Pi*sqrt(11/36).
- * Formula:
  * @author Georg Fischer
  */
 public class A376875 extends DecimalExpansionSequence {

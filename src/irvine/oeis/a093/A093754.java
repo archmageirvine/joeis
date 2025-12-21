@@ -9,7 +9,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A093754 Decimal expansion of -Catalan + (Pi*arcsinh(1))/2 + HypergeometricPFQ[{1/2, 1, 1}, {3/2, 3/2}, 1/9]/6.
- * Formula:
  * @author Georg Fischer
  */
 public class A093754 extends DecimalExpansionSequence {

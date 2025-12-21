@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A380152 Decimal expansion of 864/275.
- * Formula:
  * @author Georg Fischer
  */
 public class A380152 extends DecimalExpansionSequence {

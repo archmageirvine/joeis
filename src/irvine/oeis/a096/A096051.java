@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A096051 Decimal expansion of lim_{n-&gt;oo} B(2n,8)/(B(2n)*64^n) (see comment for B(n,k) definition).
- * Formula:
  * @author Georg Fischer
  */
 public class A096051 extends DecimalExpansionSequence {

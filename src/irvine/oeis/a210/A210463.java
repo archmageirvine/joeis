@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A210463 Decimal expansion of the absolute value of the imaginary part of the two complex roots of x^3-x^2+1.
- * Formula:
  * @author Georg Fischer
  */
 public class A210463 extends DecimalExpansionSequence {

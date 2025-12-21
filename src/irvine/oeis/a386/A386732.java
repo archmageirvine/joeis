@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A386732 Decimal expansion of Integral_{x&gt;=2} 1/(x^12-1) dx.
- * Formula:
  * @author Georg Fischer
  */
 public class A386732 extends DecimalExpansionSequence {

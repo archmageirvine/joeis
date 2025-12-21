@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A345737 Decimal expansion of the initial angle in radians above the horizon that maximizes the length of a projectile's trajectory.
- * Formula:
  * @author Georg Fischer
  */
 public class A345737 extends DecimalExpansionSequence {

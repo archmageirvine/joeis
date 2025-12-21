@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377696 Decimal expansion of the circumradius of a truncated dodecahedron with unit edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A377696 extends DecimalExpansionSequence {

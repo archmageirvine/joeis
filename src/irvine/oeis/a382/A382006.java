@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A382006 Decimal expansion of the isoperimetric quotient of a disdyakis dodecahedron.
- * Formula:
  * @author Georg Fischer
  */
 public class A382006 extends DecimalExpansionSequence {

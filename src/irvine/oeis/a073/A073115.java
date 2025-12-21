@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A073115 Decimal expansion of sum(k&gt;=0, 1/2^floor(k*phi) ) where phi = (1+sqrt(5))/2.
- * Formula:
  * @author Georg Fischer
  */
 public class A073115 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A346640 Decimal expansion of 2 - log_3(2).
- * Formula:
  * @author Georg Fischer
  */
 public class A346640 extends DecimalExpansionSequence {

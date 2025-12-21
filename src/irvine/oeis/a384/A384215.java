@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A384215 Decimal expansion of the surface area of a gyroelongated square cupola with unit edge.
- * Formula:
  * @author Georg Fischer
  */
 public class A384215 extends DecimalExpansionSequence {

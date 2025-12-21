@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A348668 Decimal expansion of the probability that a triangle formed by three points uniformly and independently chosen at random in a rectangle with dimensions 1 X 2 is obtuse.
- * Formula:
  * @author Georg Fischer
  */
 public class A348668 extends DecimalExpansionSequence {

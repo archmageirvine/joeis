@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A391654 Decimal expansion of the surface area of a D√ľrer&apos;s solid with unit shorter edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A391654 extends DecimalExpansionSequence {

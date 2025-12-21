@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A371935 Decimal expansion of Sum_{k&gt;=0} (-1)^k / ((k+1)*(2*k+1)!).
- * Formula:
  * @author Georg Fischer
  */
 public class A371935 extends DecimalExpansionSequence {

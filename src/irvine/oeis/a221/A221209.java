@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A221209 Decimal expansion of two times the Catalan constant.
- * Formula:
  * @author Georg Fischer
  */
 public class A221209 extends DecimalExpansionSequence {

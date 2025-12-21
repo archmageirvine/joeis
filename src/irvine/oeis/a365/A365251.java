@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A365251 Decimal expansion of the absolute value of psi^(4)(1), the fourth derivative of the digamma function at 1.
- * Formula:
  * @author Georg Fischer
  */
 public class A365251 extends DecimalExpansionSequence {

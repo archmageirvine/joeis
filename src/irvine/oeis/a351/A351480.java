@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A351480 Decimal expansion of (611 + sqrt(73))/36.
- * Formula:
  * @author Georg Fischer
  */
 public class A351480 extends DecimalExpansionSequence {

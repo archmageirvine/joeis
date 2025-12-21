@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A353049 Decimal expansion of 8*sqrt(2) / 3.
- * Formula:
  * @author Georg Fischer
  */
 public class A353049 extends DecimalExpansionSequence {

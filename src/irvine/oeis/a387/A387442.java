@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A387442 Decimal expansion of cos(Pi/19).
- * Formula:
  * @author Georg Fischer
  */
 public class A387442 extends DecimalExpansionSequence {

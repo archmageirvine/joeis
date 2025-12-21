@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A359532 Decimal expansion of 2*log(2)/Pi.
- * Formula:
  * @author Georg Fischer
  */
 public class A359532 extends DecimalExpansionSequence {

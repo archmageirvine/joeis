@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A380796 Decimal expansion of the largest acute vertex angle, in radians, in a pentakis dodecahedron face.
- * Formula:
  * @author Georg Fischer
  */
 public class A380796 extends DecimalExpansionSequence {

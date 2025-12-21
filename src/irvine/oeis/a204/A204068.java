@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A204068 Decimal expansion of the Fresnel Integral Integral_{x&gt;=0} sin(x^3) dx.
- * Formula:
  * @author Georg Fischer
  */
 public class A204068 extends DecimalExpansionSequence {

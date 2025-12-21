@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A365350 Decimal expansion of 1/(Pi-3).
- * Formula:
  * @author Georg Fischer
  */
 public class A365350 extends DecimalExpansionSequence {

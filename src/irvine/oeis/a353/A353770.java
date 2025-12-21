@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A353770 Decimal expansion of the gravitational acceleration generated at a vertex by a unit-mass cube with edge length 2 in units where the gravitational constant is G = 1.
- * Formula:
  * @author Georg Fischer
  */
 public class A353770 extends DecimalExpansionSequence {

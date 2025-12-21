@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A086773 Decimal expansion of the continued fraction 1/(Pi+1/(Pi+1/(Pi+1/(Pi+...)))).
- * Formula:
  * @author Georg Fischer
  */
 public class A086773 extends DecimalExpansionSequence {

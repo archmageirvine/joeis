@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A346205 Decimal expansion of solution to LambertW(-x) - LambertW(-1,-x) = 2.
- * Formula:
  * @author Georg Fischer
  */
 public class A346205 extends DecimalExpansionSequence {

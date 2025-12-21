@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A375594 Decimal expansion of Pi*(Pi^2*log(2) + 4*log(2)^3 + 6*zeta(3))/48.
- * Formula:
  * @author Georg Fischer
  */
 public class A375594 extends DecimalExpansionSequence {

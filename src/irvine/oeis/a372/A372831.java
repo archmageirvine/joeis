@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A372831 Decimal expansion of (16 + 5*sqrt(2))/15.
- * Formula:
  * @author Georg Fischer
  */
 public class A372831 extends DecimalExpansionSequence {

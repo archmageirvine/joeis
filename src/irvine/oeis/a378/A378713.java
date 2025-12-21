@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A378713 Decimal expansion of the volume of a disdyakis dodecahedron with unit shorter edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A378713 extends DecimalExpansionSequence {

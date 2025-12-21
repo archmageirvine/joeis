@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A387917 Decimal expansion of 5*sqrt(5)/3.
- * Formula:
  * @author Georg Fischer
  */
 public class A387917 extends DecimalExpansionSequence {

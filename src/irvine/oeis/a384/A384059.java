@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A384059 Decimal expansion of the circumradius of a regular pentagonal prism of edge length 1.
- * Formula:
  * @author Georg Fischer
  */
 public class A384059 extends DecimalExpansionSequence {

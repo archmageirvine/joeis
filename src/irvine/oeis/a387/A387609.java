@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A387609 Decimal expansion of the fifth largest (second smallest) dihedral angle, in radians, in a gyroelongated pentagonal cupola (Johnson solid J_24).
- * Formula:
  * @author Georg Fischer
  */
 public class A387609 extends DecimalExpansionSequence {

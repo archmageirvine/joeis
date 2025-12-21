@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A353771 Decimal expansion of the gravitational acceleration generated at the center of a face by unit-mass regular tetrahedron with edge length 2 in units where the gravitational constant is G = 1.
- * Formula:
  * @author Georg Fischer
  */
 public class A353771 extends DecimalExpansionSequence {

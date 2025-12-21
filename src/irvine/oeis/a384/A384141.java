@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A384141 Decimal expansion of the surface area of an elongated pentagonal bipyramid with unit edge.
- * Formula:
  * @author Georg Fischer
  */
 public class A384141 extends DecimalExpansionSequence {

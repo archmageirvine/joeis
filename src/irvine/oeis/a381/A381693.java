@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A381693 Decimal expansion of the isoperimetric quotient of a truncated icosahedron.
- * Formula:
  * @author Georg Fischer
  */
 public class A381693 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A193032 Decimal expansion of the coefficient of x in the reduction of 2^x by x^2-&gt;x+1.
- * Formula:
  * @author Georg Fischer
  */
 public class A193032 extends DecimalExpansionSequence {

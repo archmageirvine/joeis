@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A093753 Decimal expansion of (-2*Catalan + Pi*log(2))/2.
- * Formula:
  * @author Georg Fischer
  */
 public class A093753 extends DecimalExpansionSequence {

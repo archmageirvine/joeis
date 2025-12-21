@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A340168 Decimal expansion of a constant related to the asymptotics of A004003.
- * Formula:
  * @author Georg Fischer
  */
 public class A340168 extends DecimalExpansionSequence {

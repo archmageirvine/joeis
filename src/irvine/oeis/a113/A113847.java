@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A113847 Decimal expansion of beta'(0) : the derivative of the Dirichlet beta function evaluated at zero.
- * Formula:
  * @author Georg Fischer
  */
 public class A113847 extends DecimalExpansionSequence {

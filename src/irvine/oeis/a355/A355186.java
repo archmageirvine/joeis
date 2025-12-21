@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A355186 Decimal expansion of 2*log(sqrt(2)+1)/Pi.
- * Formula:
  * @author Georg Fischer
  */
 public class A355186 extends DecimalExpansionSequence {

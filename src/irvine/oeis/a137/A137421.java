@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A137421 Decimal expansion of growth constant in random Fibonacci sequence.
- * Formula:
  * @author Georg Fischer
  */
 public class A137421 extends DecimalExpansionSequence {

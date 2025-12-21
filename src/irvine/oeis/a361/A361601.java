@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A361601 Decimal expansion of the maximum possible disorientation angle between two identical cubes (in radians).
- * Formula:
  * @author Georg Fischer
  */
 public class A361601 extends DecimalExpansionSequence {

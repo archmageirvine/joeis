@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A379136 Decimal expansion of the dihedral angle, in radians, between any two adjacent faces in a pentakis dodecahedron.
- * Formula:
  * @author Georg Fischer
  */
 public class A379136 extends DecimalExpansionSequence {

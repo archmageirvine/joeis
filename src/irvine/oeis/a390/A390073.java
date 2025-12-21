@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A390073 Decimal expansion of the negated value of psi''(1/3).
- * Formula:
  * @author Georg Fischer
  */
 public class A390073 extends DecimalExpansionSequence {

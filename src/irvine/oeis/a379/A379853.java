@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A379853 Decimal expansion of the fraction of a population falling beyond +- 1 standard deviation of the mean, assuming a normal distribution.
- * Formula:
  * @author Georg Fischer
  */
 public class A379853 extends DecimalExpansionSequence {

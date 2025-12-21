@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A346916 Decimal expansion of the limit as N-&gt;oo of the mean number of singletons per forest in the rooted forests of N vertices.
- * Formula:
  * @author Georg Fischer
  */
 public class A346916 extends DecimalExpansionSequence {

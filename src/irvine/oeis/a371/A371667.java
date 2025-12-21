@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A371667 Decimal expansion of -Ei(-1) / log(2).
- * Formula:
  * @author Georg Fischer
  */
 public class A371667 extends DecimalExpansionSequence {

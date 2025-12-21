@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A193079 Decimal expansion of the constant term of the reduction of sinh(2x) by x^2-&gt;x+1.
- * Formula:
  * @author Georg Fischer
  */
 public class A193079 extends DecimalExpansionSequence {

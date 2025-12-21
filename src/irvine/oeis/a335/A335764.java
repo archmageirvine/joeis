@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A335764 Decimal expansion of Sum_{k&gt;=1} sigma(k)/(k*2^k) where sigma(k) is the sum of divisors of k (A000203).
- * Formula:
  * @author Georg Fischer
  */
 public class A335764 extends DecimalExpansionSequence {

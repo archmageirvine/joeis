@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A351400 Decimal expansion of e * erf(1), where erf is the error function.
- * Formula:
  * @author Georg Fischer
  */
 public class A351400 extends DecimalExpansionSequence {

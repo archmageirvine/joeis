@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A370000 Decimal expansion of Sum_{k&gt;=0} (-1)^k/(3*k+2)^3.
- * Formula:
  * @author Georg Fischer
  */
 public class A370000 extends DecimalExpansionSequence {

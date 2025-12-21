@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A143820 Decimal expansion of the constant 1/1! + 1/4! + 1/7! + ...
- * Formula:
  * @author Georg Fischer
  */
 public class A143820 extends DecimalExpansionSequence {

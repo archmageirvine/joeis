@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377312 Decimal expansion of Sum_{k,m&gt;=1} (-1)^(k+m) * H(k) * H(m) / (k+m+1)^2, where H(k) = A001008(k)/A002805(k) is the k-th harmonic number.
- * Formula:
  * @author Georg Fischer
  */
 public class A377312 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A210462 Decimal expansion of the real part of the complex roots of x^3-x^2+1.
- * Formula:
  * @author Georg Fischer
  */
 public class A210462 extends DecimalExpansionSequence {

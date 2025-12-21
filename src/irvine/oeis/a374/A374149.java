@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A374149 Decimal expansion of the minimum volume of an axis-aligned bounding box which includes the shortest minimum-link polygonal chain joining all the vertices of the cube {0,1}^3.
- * Formula:
  * @author Georg Fischer
  */
 public class A374149 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A350219 Decimal expansion of 16*(Pi-1) / (5*Pi^2 - 4*(Pi-1)): an approximation for sin(1) from Bh\u0101skara I's sine approximation formula.
- * Formula:
  * @author Georg Fischer
  */
 public class A350219 extends DecimalExpansionSequence {

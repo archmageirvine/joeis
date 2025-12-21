@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A116191 Decimal expansion of imaginary part of i^(i^i), that is, Im(i^(i^i)).
- * Formula:
  * @author Georg Fischer
  */
 public class A116191 extends DecimalExpansionSequence {

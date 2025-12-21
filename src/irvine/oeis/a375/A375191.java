@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A375191 Decimal expansion of the apothem (inradius) of a regular 11-gon with unit side length.
- * Formula:
  * @author Georg Fischer
  */
 public class A375191 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A373702 Decimal expansion of (2 - zeta(2))*zeta(2)*zeta(3)/zeta(6).
- * Formula:
  * @author Georg Fischer
  */
 public class A373702 extends DecimalExpansionSequence {

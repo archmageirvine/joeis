@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A386854 Decimal expansion of the largest dihedral angle, in radians, in an elongated triangular pyramid (Johnson solid J_7).
- * Formula:
  * @author Georg Fischer
  */
 public class A386854 extends DecimalExpansionSequence {

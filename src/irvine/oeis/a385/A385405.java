@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A385405 Decimal expansion of 1/(2*cosh(1)^2).
- * Formula:
  * @author Georg Fischer
  */
 public class A385405 extends DecimalExpansionSequence {

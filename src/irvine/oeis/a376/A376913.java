@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A376913 Decimal expansion of Product_{k=1..8} Gamma(k/3).
- * Formula:
  * @author Georg Fischer
  */
 public class A376913 extends DecimalExpansionSequence {

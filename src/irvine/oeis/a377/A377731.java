@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377731 Decimal expansion of 4 * sqrt(2*Pi) * Gamma(5/4) / (3 * Gamma(3/4)).
- * Formula:
  * @author Georg Fischer
  */
 public class A377731 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A390287 Decimal expansion of the second largest dihedral angle, in radians, in a sphenocorona (Johnson solid J_86).
- * Formula:
  * @author Georg Fischer
  */
 public class A390287 extends DecimalExpansionSequence {

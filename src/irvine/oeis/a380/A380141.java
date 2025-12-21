@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A380141 Decimal expansion of the real part of (-1)^sqrt(i), negated, where i is the imaginary unit.
- * Formula:
  * @author Georg Fischer
  */
 public class A380141 extends DecimalExpansionSequence {

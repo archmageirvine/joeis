@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A357597 Decimal expansion of real part of zeta'(0, 1-sqrt(2)).
- * Formula:
  * @author Georg Fischer
  */
 public class A357597 extends DecimalExpansionSequence {

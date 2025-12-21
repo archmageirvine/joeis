@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A282469 Decimal expansion of sum of reciprocals of fourth powers of the nonprime numbers.
- * Formula:
  * @author Georg Fischer
  */
 public class A282469 extends DecimalExpansionSequence {

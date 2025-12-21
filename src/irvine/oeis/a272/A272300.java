@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A272300 Decimal expansion of lim_{N-&gt;infinity} (1/N^2 Sum_{n=1..N} K(n)), where K(n) is the squarefree kernel of n.
- * Formula:
  * @author Georg Fischer
  */
 public class A272300 extends DecimalExpansionSequence {

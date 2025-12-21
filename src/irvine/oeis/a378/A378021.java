@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A378021 Decimal expansion of Pi*G - 33*zeta(3)/16, where G = A006752.
- * Formula:
  * @author Georg Fischer
  */
 public class A378021 extends DecimalExpansionSequence {

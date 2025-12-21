@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A390072 Decimal expansion of psi'(1/3).
- * Formula:
  * @author Georg Fischer
  */
 public class A390072 extends DecimalExpansionSequence {

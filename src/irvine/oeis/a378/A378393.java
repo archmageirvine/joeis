@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A378393 Decimal expansion of the midradius of a deltoidal icositetrahedron with unit shorter edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A378393 extends DecimalExpansionSequence {

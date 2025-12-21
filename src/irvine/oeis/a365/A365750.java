@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A365750 Decimal expansion of the largest root of the polynomial x^3 - x^2 - 3*x + 1.
- * Formula:
  * @author Georg Fischer
  */
 public class A365750 extends DecimalExpansionSequence {

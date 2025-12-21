@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A365319 Decimal expansion of abs(Gamma(exp(i*Pi/3))).
- * Formula:
  * @author Georg Fischer
  */
 public class A365319 extends DecimalExpansionSequence {

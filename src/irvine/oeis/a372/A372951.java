@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A372951 Decimal expansion of 1/(2 - log(2)).
- * Formula:
  * @author Georg Fischer
  */
 public class A372951 extends DecimalExpansionSequence {

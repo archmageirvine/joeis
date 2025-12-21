@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A385857 Decimal expansion of the volume of a metabidiminished icosahedron with unit edge.
- * Formula:
  * @author Georg Fischer
  */
 public class A385857 extends DecimalExpansionSequence {

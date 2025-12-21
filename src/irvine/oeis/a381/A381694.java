@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A381694 Decimal expansion of the isoperimetric quotient of a (small) rhombicosidodecahedron.
- * Formula:
  * @author Georg Fischer
  */
 public class A381694 extends DecimalExpansionSequence {

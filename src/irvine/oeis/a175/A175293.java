@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A175293 Decimal expansion of Pi * 2F3(1/2,1/2; 3/2,3/2,3/2; -Pi^2/4).
- * Formula:
  * @author Georg Fischer
  */
 public class A175293 extends DecimalExpansionSequence {

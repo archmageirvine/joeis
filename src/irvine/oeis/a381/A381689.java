@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A381689 Decimal expansion of the isoperimetric quotient of a truncated cuboctahedron (great rhombicuboctahedron).
- * Formula:
  * @author Georg Fischer
  */
 public class A381689 extends DecimalExpansionSequence {

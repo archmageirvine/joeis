@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377695 Decimal expansion of the volume of a truncated dodecahedron with unit edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A377695 extends DecimalExpansionSequence {

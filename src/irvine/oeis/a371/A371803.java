@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A371803 Decimal expansion of Sum_{k&gt;=0} (-1)^k / (k^2 + 4).
- * Formula:
  * @author Georg Fischer
  */
 public class A371803 extends DecimalExpansionSequence {

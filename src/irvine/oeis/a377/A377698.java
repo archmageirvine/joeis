@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377698 Decimal expansion of 30*arcsin(sqrt(5)/3).
- * Formula:
  * @author Georg Fischer
  */
 public class A377698 extends DecimalExpansionSequence {

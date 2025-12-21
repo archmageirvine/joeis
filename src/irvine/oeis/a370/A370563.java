@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A370563 Decimal expansion of expected number of trials needed for the sum of uniform random variables from the interval [0,1] to exceed e.
- * Formula:
  * @author Georg Fischer
  */
 public class A370563 extends DecimalExpansionSequence {

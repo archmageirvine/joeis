@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A380734 Decimal expansion of the medium/short edge length ratio of a disdyakis dodecahedron.
- * Formula:
  * @author Georg Fischer
  */
 public class A380734 extends DecimalExpansionSequence {

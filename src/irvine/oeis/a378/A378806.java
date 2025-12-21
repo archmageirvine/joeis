@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A378806 Decimal expansion of Sum_{k&gt;=1} 1/binomial(4*k, k).
- * Formula:
  * @author Georg Fischer
  */
 public class A378806 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377203 Decimal expansion of Integral_{x=0..oo} exp(-x)*erf(sqrt(x))^3 dx, where erf is the error function.
- * Formula:
  * @author Georg Fischer
  */
 public class A377203 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A345736 Decimal expansion of the surface area of the catenoid-shaped soap film between two parallel coaxial unit-radius circular rings whose distance between their centers is maximal (2*A033259).
- * Formula:
  * @author Georg Fischer
  */
 public class A345736 extends DecimalExpansionSequence {

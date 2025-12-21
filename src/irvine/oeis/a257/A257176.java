@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A257176 Decimal expansion of Integral_{x=0..1} Integral_{y=0..x} sin(x*y) dy dx.
- * Formula:
  * @author Georg Fischer
  */
 public class A257176 extends DecimalExpansionSequence {

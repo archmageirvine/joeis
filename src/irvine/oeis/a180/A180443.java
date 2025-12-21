@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A180443 Decimal expansion of constant defined in A030315.
- * Formula:
  * @author Georg Fischer
  */
 public class A180443 extends DecimalExpansionSequence {

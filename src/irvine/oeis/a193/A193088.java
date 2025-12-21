@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A193088 Decimal expansion of the coefficient of x in the reduction of (cos(x))^2 by x^2-&gt;x+1 (negated).
- * Formula:
  * @author Georg Fischer
  */
 public class A193088 extends DecimalExpansionSequence {

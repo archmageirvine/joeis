@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A370325 Decimal expansion of exp(1)/(1+exp(1)).
- * Formula:
  * @author Georg Fischer
  */
 public class A370325 extends DecimalExpansionSequence {

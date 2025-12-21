@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A335263 Decimal expansion of -(Pi/8 + EulerGamma/4 + log(8*Pi)/4 - 2).
- * Formula:
  * @author Georg Fischer
  */
 public class A335263 extends DecimalExpansionSequence {

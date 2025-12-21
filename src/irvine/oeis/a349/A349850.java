@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A349850 Decimal expansion of Sum_{k&gt;=1} H(k)*F(k)/2^k, where H(k) = A001008(k)/A002805(k) is the k-th harmonic number and F(k) = A000045(k) is the k-th Fibonacci number.
- * Formula:
  * @author Georg Fischer
  */
 public class A349850 extends DecimalExpansionSequence {

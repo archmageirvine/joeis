@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A301865 Decimal expansion of the probability that 2 planes, each passes through 3 random points inside a sphere, will intersect within the sphere.
- * Formula:
  * @author Georg Fischer
  */
 public class A301865 extends DecimalExpansionSequence {

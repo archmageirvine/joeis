@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A372919 Decimal expansion of (Pi/4)*log(2) + Catalan.
- * Formula:
  * @author Georg Fischer
  */
 public class A372919 extends DecimalExpansionSequence {

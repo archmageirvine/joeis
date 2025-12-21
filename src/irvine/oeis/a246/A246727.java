@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A246727 Decimal expansion of r_5, the 5th smallest radius &lt; 1 for which a compact packing of the plane exists, with disks of radius 1 and r_5.
- * Formula:
  * @author Georg Fischer
  */
 public class A246727 extends DecimalExpansionSequence {

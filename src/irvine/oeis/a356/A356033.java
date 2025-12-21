@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A356033 Decimal expansion of (-1 + sqrt(13))/6 = A223139/3.
- * Formula:
  * @author Georg Fischer
  */
 public class A356033 extends DecimalExpansionSequence {

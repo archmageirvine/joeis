@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A371942 Decimal expansion of Sum_{k&gt;=0} (k+2)! / (2k+1)!.
- * Formula:
  * @author Georg Fischer
  */
 public class A371942 extends DecimalExpansionSequence {

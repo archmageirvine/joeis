@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A346602 Decimal expansion of 3*zeta(3)/Pi^2.
- * Formula:
  * @author Georg Fischer
  */
 public class A346602 extends DecimalExpansionSequence {

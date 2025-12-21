@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A348680 Decimal expansion of the average length of a chord in a unit square defined by a point on the perimeter and a direction, both uniformly and independently chosen at random.
- * Formula:
  * @author Georg Fischer
  */
 public class A348680 extends DecimalExpansionSequence {

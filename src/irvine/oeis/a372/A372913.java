@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A372913 Decimal expansion of (1/31)*(14*sqrt(5 - 2*sqrt(5)) + 4*sqrt(5 + 2*sqrt(5))).
- * Formula:
  * @author Georg Fischer
  */
 public class A372913 extends DecimalExpansionSequence {

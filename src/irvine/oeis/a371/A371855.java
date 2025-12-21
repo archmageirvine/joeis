@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A371855 Decimal expansion of Integral_{x=-oo..oo} exp(-x^4) dx.
- * Formula:
  * @author Georg Fischer
  */
 public class A371855 extends DecimalExpansionSequence {

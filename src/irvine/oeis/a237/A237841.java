@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A237841 Decimal expansion of Ramanujan's AGM Continued Fraction R(2) = R_1(2,2).
- * Formula:
  * @author Georg Fischer
  */
 public class A237841 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377795 Decimal expansion of the midradius of a (small) rhombicosidodecahedron with unit edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A377795 extends DecimalExpansionSequence {

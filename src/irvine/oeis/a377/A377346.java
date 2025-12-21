@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377346 Decimal expansion of the midradius of a truncated cuboctahedron (great rhombicuboctahedron) with unit edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A377346 extends DecimalExpansionSequence {

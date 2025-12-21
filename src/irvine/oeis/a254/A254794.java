@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A254794 Decimal expansion of L^2/Pi where L is the lemniscate constant A062539.
- * Formula:
  * @author Georg Fischer
  */
 public class A254794 extends DecimalExpansionSequence {

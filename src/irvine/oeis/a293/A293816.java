@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A293816 Decimal expansion of the volume of one cubic parsec in cubic meters, as defined in 2015.
- * Formula:
  * @author Georg Fischer
  */
 public class A293816 extends DecimalExpansionSequence {

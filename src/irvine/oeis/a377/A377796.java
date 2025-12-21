@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377796 Decimal expansion of the surface area of a truncated icosidodecahedron (great rhombicosidodecahedron) with unit edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A377796 extends DecimalExpansionSequence {

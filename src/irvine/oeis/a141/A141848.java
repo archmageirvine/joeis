@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A141848 Decimal expansion of the Pell constant.
- * Formula:
  * @author Georg Fischer
  */
 public class A141848 extends DecimalExpansionSequence {

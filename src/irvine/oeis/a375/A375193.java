@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A375193 Decimal expansion of the apothem (inradius) of a regular 12-gon with unit side length.
- * Formula:
  * @author Georg Fischer
  */
 public class A375193 extends DecimalExpansionSequence {

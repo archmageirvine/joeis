@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A372830 Decimal expansion of (16 + 3*sqrt(2))/17.
- * Formula:
  * @author Georg Fischer
  */
 public class A372830 extends DecimalExpansionSequence {

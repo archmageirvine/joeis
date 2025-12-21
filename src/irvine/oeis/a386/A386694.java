@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A386694 Decimal expansion of the surface area of a tridiminished rhombicosidodecahedron with unit edges.
- * Formula:
  * @author Georg Fischer
  */
 public class A386694 extends DecimalExpansionSequence {

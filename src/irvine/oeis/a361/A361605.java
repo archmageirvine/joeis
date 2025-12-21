@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A361605 Decimal expansion of the standard deviation of the probability distribution function of angles of random rotations in 3D space uniformly distributed with respect to Haar measure (in radians).
- * Formula:
  * @author Georg Fischer
  */
 public class A361605 extends DecimalExpansionSequence {

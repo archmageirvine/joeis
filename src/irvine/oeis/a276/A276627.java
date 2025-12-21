@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A276627 Decimal expansion of K(3-2*sqrt(2)), where K is the complete elliptic integral of the first kind.
- * Formula:
  * @author Georg Fischer
  */
 public class A276627 extends DecimalExpansionSequence {

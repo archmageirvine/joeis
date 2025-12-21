@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A372387 Decimal expansion of Sum_{k&gt;=0} (-1)^k*(k^2+1) / (k^4+1).
- * Formula:
  * @author Georg Fischer
  */
 public class A372387 extends DecimalExpansionSequence {

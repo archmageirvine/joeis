@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A130834 Decimal expansion of the limit of the (2/n^2)-th power of the number of distinct dimer coverings on the n X n square grid, n even, as n goes to infinity.
- * Formula:
  * @author Georg Fischer
  */
 public class A130834 extends DecimalExpansionSequence {

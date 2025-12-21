@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A320639 Decimal expansion of (C + sqrt(4 + C^2))/2, where C is the Catalan constant.
- * Formula:
  * @author Georg Fischer
  */
 public class A320639 extends DecimalExpansionSequence {

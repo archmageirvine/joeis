@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A382005 Decimal expansion of the isoperimetric quotient of a deltoidal icositetrahedron.
- * Formula:
  * @author Georg Fischer
  */
 public class A382005 extends DecimalExpansionSequence {

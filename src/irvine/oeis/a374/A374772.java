@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A374772 Decimal expansion of the upper bound of the density of sphere packing in the Euclidean 3-space resulting from the dodecahedral conjecture.
- * Formula:
  * @author Georg Fischer
  */
 public class A374772 extends DecimalExpansionSequence {

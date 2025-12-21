@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A389520 Decimal expansion of the pentagonal pyramidal root of 2.
- * Formula:
  * @author Georg Fischer
  */
 public class A389520 extends DecimalExpansionSequence {

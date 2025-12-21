@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A365165 Length of the perimeter of the regular 9-gon with unit circumradius.
- * Formula:
  * @author Georg Fischer
  */
 public class A365165 extends DecimalExpansionSequence {

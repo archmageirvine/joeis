@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377008 Decimal expansion of Sum_{k&gt;=1} (zeta(2*k)/k)*(2/3)^(2*k).
- * Formula:
  * @author Georg Fischer
  */
 public class A377008 extends DecimalExpansionSequence {

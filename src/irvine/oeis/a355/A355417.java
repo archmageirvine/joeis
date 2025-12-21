@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A355417 Decimal expansion of Pi + gamma, where gamma is Euler's constant (or the Euler-Mascheroni constant).
- * Formula:
  * @author Georg Fischer
  */
 public class A355417 extends DecimalExpansionSequence {

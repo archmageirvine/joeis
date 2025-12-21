@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A379092 Decimal expansion of sqrt(A224273).
- * Formula:
  * @author Georg Fischer
  */
 public class A379092 extends DecimalExpansionSequence {

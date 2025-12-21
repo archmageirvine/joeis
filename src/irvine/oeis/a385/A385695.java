@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A385695 Decimal expansion of the volume of an augmented dodecahedron with unit edge.
- * Formula:
  * @author Georg Fischer
  */
 public class A385695 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377343 Decimal expansion of the surface area of a truncated cuboctahedron (great rhombicuboctahedron) with unit edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A377343 extends DecimalExpansionSequence {

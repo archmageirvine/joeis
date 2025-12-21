@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A179378 Decimal expansion of the ratio of the area of the triangle corresponding to a circular segment with area r^2 of a circle with radius r to r^2 itself.
- * Formula:
  * @author Georg Fischer
  */
 public class A179378 extends DecimalExpansionSequence {

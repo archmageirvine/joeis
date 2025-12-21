@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A145429 Decimal expansion of Sum_{n &gt; 0} n*(n!)^2/(2n)!.
- * Formula:
  * @author Georg Fischer
  */
 public class A145429 extends DecimalExpansionSequence {

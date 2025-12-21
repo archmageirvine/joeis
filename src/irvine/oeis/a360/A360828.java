@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A360828 Decimal expansion of the ratio between the perimeter of the first Morley triangle of an isosceles right triangle and the perimeter of this isosceles right triangle.
- * Formula:
  * @author Georg Fischer
  */
 public class A360828 extends DecimalExpansionSequence {

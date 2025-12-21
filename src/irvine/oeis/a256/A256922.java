@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A256922 Decimal expansion of Sum_{k&gt;=2} (-1)^k*zeta(k)/(k*2^k).
- * Formula:
  * @author Georg Fischer
  */
 public class A256922 extends DecimalExpansionSequence {

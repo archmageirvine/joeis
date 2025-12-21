@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A363117 Decimal expansion of Product_{k&gt;=1} (1 - exp(-7*Pi*k)).
- * Formula:
  * @author Georg Fischer
  */
 public class A363117 extends DecimalExpansionSequence {

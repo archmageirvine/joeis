@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A354617 Decimal expansion of 3*sqrt(5483/2)/50.
- * Formula:
  * @author Georg Fischer
  */
 public class A354617 extends DecimalExpansionSequence {

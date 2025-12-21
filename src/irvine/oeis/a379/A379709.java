@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A379709 Decimal expansion of the volume of a disdyakis triacontahedron with unit shorter edge length.
- * Formula:
  * @author Georg Fischer
  */
 public class A379709 extends DecimalExpansionSequence {

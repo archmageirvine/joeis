@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A348374 Decimal expansion of e + sin(1).
- * Formula:
  * @author Georg Fischer
  */
 public class A348374 extends DecimalExpansionSequence {

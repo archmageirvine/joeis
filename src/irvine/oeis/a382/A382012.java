@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A382012 Decimal expansion of the isoperimetric quotient of a disdyakis triacontahedron.
- * Formula:
  * @author Georg Fischer
  */
 public class A382012 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A390242 Decimal expansion of Sum_{k&gt;=0} 3^k/Catalan(k).
- * Formula:
  * @author Georg Fischer
  */
 public class A390242 extends DecimalExpansionSequence {

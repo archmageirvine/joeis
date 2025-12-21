@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A356528 Decimal expansion of number of millimeters of water (mmH2O) in 1 standard atmosphere (atm).
- * Formula:
  * @author Georg Fischer
  */
 public class A356528 extends DecimalExpansionSequence {

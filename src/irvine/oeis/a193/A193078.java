@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A193078 Decimal expansion of the coefficient of x in the reduction of phi^(-x) by x^2-&gt;x+1, where phi=(1+sqrt(5))/2 is the golden ratio (A001622) (negated).
- * Formula:
  * @author Georg Fischer
  */
 public class A193078 extends DecimalExpansionSequence {

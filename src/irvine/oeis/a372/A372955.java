@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A372955 Decimal expansion of the least positive solution of cos(x) - sin(x) = 2/3.
- * Formula:
  * @author Georg Fischer
  */
 public class A372955 extends DecimalExpansionSequence {

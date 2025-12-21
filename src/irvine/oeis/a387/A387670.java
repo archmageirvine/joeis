@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A387670 Decimal expansion of the second largest dihedral angle, in radians, in an augmented triangular prism (Johnson solid J_49).
- * Formula:
  * @author Georg Fischer
  */
 public class A387670 extends DecimalExpansionSequence {

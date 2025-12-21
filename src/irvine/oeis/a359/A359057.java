@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A359057 Decimal expansion of 1/(1 - e^(-gamma)).
- * Formula:
  * @author Georg Fischer
  */
 public class A359057 extends DecimalExpansionSequence {

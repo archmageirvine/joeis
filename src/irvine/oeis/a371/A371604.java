@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A371604 Decimal expansion of 5 * sqrt(3 - phi) / (2 * Pi).
- * Formula:
  * @author Georg Fischer
  */
 public class A371604 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A090998 Decimal expansion of lim_{k -&gt; +-oo} k^2*(1 - Gamma(1+i/k)) where i^2 = -1 and Gamma is the Gamma function.
- * Formula:
  * @author Georg Fischer
  */
 public class A090998 extends DecimalExpansionSequence {

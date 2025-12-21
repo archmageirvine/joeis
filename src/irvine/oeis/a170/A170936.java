@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A170936 Decimal expansion of Re(tan(1+i)).
- * Formula:
  * @author Georg Fischer
  */
 public class A170936 extends DecimalExpansionSequence {

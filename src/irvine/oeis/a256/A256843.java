@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A256843 Decimal expansion of the generalized Euler constant gamma(2,3).
- * Formula:
  * @author Georg Fischer
  */
 public class A256843 extends DecimalExpansionSequence {

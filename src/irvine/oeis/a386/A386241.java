@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A386241 Decimal expansion of sqrt(5)*sin(Pi/8).
- * Formula:
  * @author Georg Fischer
  */
 public class A386241 extends DecimalExpansionSequence {

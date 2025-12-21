@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377999 Decimal expansion of L^4/(80*Pi^4) - 1/240, where L is the lemniscate constant (A062539).
- * Formula:
  * @author Georg Fischer
  */
 public class A377999 extends DecimalExpansionSequence {

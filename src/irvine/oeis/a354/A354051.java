@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A354051 Decimal expansion of Sum_{k&gt;=0} 1 / (k^4 + 1).
- * Formula:
  * @author Georg Fischer
  */
 public class A354051 extends DecimalExpansionSequence {

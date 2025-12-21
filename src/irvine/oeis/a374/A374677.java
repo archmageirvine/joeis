@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A374677 Decimal expansion of (5/96)*Pi^2 - (log(2)^2)/8.
- * Formula:
  * @author Georg Fischer
  */
 public class A374677 extends DecimalExpansionSequence {

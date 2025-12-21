@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A390463 Decimal expansion of Integral_{x=0..1} PolyLog(2, 1/1(x+1)) dx.
- * Formula:
  * @author Georg Fischer
  */
 public class A390463 extends DecimalExpansionSequence {

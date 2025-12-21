@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A389494 Decimal expansion of x such that exp(x) - arccos(x) = 0.
- * Formula:
  * @author Georg Fischer
  */
 public class A389494 extends DecimalExpansionSequence {

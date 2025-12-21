@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A371856 Decimal expansion of Integral_{x=0..oo} exp(-x^5) dx.
- * Formula:
  * @author Georg Fischer
  */
 public class A371856 extends DecimalExpansionSequence {

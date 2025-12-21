@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A382556 Decimal expansion of Sum_{p prime} (p - 1)/p^3.
- * Formula:
  * @author Georg Fischer
  */
 public class A382556 extends DecimalExpansionSequence {

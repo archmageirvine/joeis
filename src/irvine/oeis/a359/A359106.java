@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A359106 Decimal expansion of Integral_{x=0..1} ([1/x]^(-1) + {1/x}) dx, where [x] denotes the integer part of x and {x} the fractional part of x.
- * Formula:
  * @author Georg Fischer
  */
 public class A359106 extends DecimalExpansionSequence {

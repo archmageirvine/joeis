@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A341901 Decimal expansion of 1/zeta(9).
- * Formula:
  * @author Georg Fischer
  */
 public class A341901 extends DecimalExpansionSequence {

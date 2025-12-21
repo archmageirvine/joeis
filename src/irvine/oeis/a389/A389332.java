@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A389332 Decimal expansion of the smallest dihedral angle, in radians, in a pentagonal gyrocupolarotunda (Johnson solid J_33).
- * Formula:
  * @author Georg Fischer
  */
 public class A389332 extends DecimalExpansionSequence {

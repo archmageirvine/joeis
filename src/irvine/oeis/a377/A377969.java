@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377969 Decimal expansion of the dihedral angle, in radians, between triangular faces in a snub cube.
- * Formula:
  * @author Georg Fischer
  */
 public class A377969 extends DecimalExpansionSequence {

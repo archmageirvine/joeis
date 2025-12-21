@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A256319 Decimal expansion of Sum_{k&gt;=0} (zeta(2k)/(2k+1))*(3/4)^(2k) (negated).
- * Formula:
  * @author Georg Fischer
  */
 public class A256319 extends DecimalExpansionSequence {

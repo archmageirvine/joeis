@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A145433 Decimal expansion of Sum_{n&gt;=1} (-1)^(n-1)*n/binomial(2n,n).
- * Formula:
  * @author Georg Fischer
  */
 public class A145433 extends DecimalExpansionSequence {

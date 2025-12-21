@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A389274 Decimal expansion of 91*Pi^6/87480.
- * Formula:
  * @author Georg Fischer
  */
 public class A389274 extends DecimalExpansionSequence {

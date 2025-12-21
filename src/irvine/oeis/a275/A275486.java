@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A275486 Decimal expansion of Pi_3, the analog of Pi for generalized trigonometric functions of order p=3.
- * Formula:
  * @author Georg Fischer
  */
 public class A275486 extends DecimalExpansionSequence {

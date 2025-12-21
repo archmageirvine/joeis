@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A193027 Decimal expansion of the constant term of the reduction of e^(2x) by x^2-&gt;x+1.
- * Formula:
  * @author Georg Fischer
  */
 public class A193027 extends DecimalExpansionSequence {

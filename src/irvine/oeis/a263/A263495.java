@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A263495 Decimal expansion of the generalized hypergeometric function 3F2(3/2, 3/2, 3/2; 2, 2; x) at x=1/4.
- * Formula:
  * @author Georg Fischer
  */
 public class A263495 extends DecimalExpansionSequence {

@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A387190 Decimal expansion of the second smallest dihedral angle, in radians, in an elongated pentagonal cupola (Johnson solid J_20).
- * Formula:
  * @author Georg Fischer
  */
 public class A387190 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A379016 Decimal expansion of 50*Pi/1296.
- * Formula:
  * @author Georg Fischer
  */
 public class A379016 extends DecimalExpansionSequence {

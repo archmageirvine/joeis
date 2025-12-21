@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A179376 Decimal expansion of the ratio of the height of a circular segment with area r^2 of a circle with radius r to r itself.
- * Formula:
  * @author Georg Fischer
  */
 public class A179376 extends DecimalExpansionSequence {

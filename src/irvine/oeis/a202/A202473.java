@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A202473 Decimal expansion of the surface area of a unit Reuleaux triangle.
- * Formula:
  * @author Georg Fischer
  */
 public class A202473 extends DecimalExpansionSequence {

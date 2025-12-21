@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A385264 Decimal expansion of the volume of a gyroelongated pentagonal birotunda with unit edge.
- * Formula:
  * @author Georg Fischer
  */
 public class A385264 extends DecimalExpansionSequence {

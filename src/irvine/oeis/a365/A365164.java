@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A365164 Length of the perimeter of the regular octagon with unit circumradius.
- * Formula:
  * @author Georg Fischer
  */
 public class A365164 extends DecimalExpansionSequence {

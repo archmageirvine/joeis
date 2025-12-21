@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A386001 Decimal expansion of the surface area of a tridiminished icosahedron with unit edge.
- * Formula:
  * @author Georg Fischer
  */
 public class A386001 extends DecimalExpansionSequence {

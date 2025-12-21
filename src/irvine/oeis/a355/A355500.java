@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A355500 Decimal expansion of Product_{k&gt;=1} (k - 1/2)^(1/(k - 1/2)) / k^(1/k).
- * Formula:
  * @author Georg Fischer
  */
 public class A355500 extends DecimalExpansionSequence {

@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A352454 Decimal expansion of the volume of intersection of 8 unit-radius spheres that have the vertices of a unit-side cube as centers.
- * Formula:
  * @author Georg Fischer
  */
 public class A352454 extends DecimalExpansionSequence {

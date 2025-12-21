@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A362922 Decimal expansion of cos(2*Pi/7) = sin(3*Pi/14) = A255249/2.
- * Formula:
  * @author Georg Fischer
  */
 public class A362922 extends DecimalExpansionSequence {

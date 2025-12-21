@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A248682 Decimal expansion of Sum_{n &gt;= 0} (floor(n/2)!)^2/n!.
- * Formula:
  * @author Georg Fischer
  */
 public class A248682 extends DecimalExpansionSequence {

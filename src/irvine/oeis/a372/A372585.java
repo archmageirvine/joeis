@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A372585 Decimal expansion of (25/297)*Pi^2.
- * Formula:
  * @author Georg Fischer
  */
 public class A372585 extends DecimalExpansionSequence {

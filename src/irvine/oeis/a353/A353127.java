@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A353127 Decimal expansion of Pi^2/4 - log(2).
- * Formula:
  * @author Georg Fischer
  */
 public class A353127 extends DecimalExpansionSequence {

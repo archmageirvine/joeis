@@ -5,7 +5,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A179375 Decimal expansion of the ratio of the chord length of a circular segment with area r^2 of a circle with radius r to r itself.
- * Formula:
  * @author Georg Fischer
  */
 public class A179375 extends DecimalExpansionSequence {

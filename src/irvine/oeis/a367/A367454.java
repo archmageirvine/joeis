@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A367454 Decimal expansion of (-1 + sqrt(29))/14 = 1/A223140.
- * Formula:
  * @author Georg Fischer
  */
 public class A367454 extends DecimalExpansionSequence {

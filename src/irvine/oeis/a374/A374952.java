@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A374952 Decimal expansion of 7*zeta(3)/16 + Pi^2*log(2)/8, where zeta is the Riemann zeta function.
- * Formula:
  * @author Georg Fischer
  */
 public class A374952 extends DecimalExpansionSequence {

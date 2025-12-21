@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A282823 Decimal expansion of Pi^2 + 8*K, where K is Catalan's constant.
- * Formula:
  * @author Georg Fischer
  */
 public class A282823 extends DecimalExpansionSequence {

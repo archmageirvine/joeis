@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A348432 Decimal expansion of h/(4*Pi) in Joule * seconds, half of the reduced Planck constant.
- * Formula:
  * @author Georg Fischer
  */
 public class A348432 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A082486 Decimal expansion of the constant c satisfying Sum_{k&gt;=1} 1/c^sqrtint(k) = 1 where sqrtint(k) = floor(sqrt(k)).
- * Formula:
  * @author Georg Fischer
  */
 public class A082486 extends DecimalExpansionSequence {

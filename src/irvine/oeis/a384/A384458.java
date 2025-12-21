@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A384458 Decimal expansion of Sum_{k&gt;=1} (-1)^(k+1)*H(k)^3/k, where H(k) = A001008(k)/A002805(k) is the k-th harmonic number.
- * Formula:
  * @author Georg Fischer
  */
 public class A384458 extends DecimalExpansionSequence {

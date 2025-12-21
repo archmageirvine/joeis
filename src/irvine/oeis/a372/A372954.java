@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A372954 Decimal expansion of the least positive solution of cos(x) - sin(x) = 1/3.
- * Formula:
  * @author Georg Fischer
  */
 public class A372954 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A347341 Decimal expansion of (Pi^2-3)/12.
- * Formula:
  * @author Georg Fischer
  */
 public class A347341 extends DecimalExpansionSequence {

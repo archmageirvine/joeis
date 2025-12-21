@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A373562 Decimal expansion of Sum_{k&gt;=0} (-1)^(k+1)*( log(2k+1)/(2k+1) + log(2k+2)/(2k+2) ).
- * Formula:
  * @author Georg Fischer
  */
 public class A373562 extends DecimalExpansionSequence {

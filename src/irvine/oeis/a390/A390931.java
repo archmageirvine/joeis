@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A390931 Decimal expansion of 2^(1/6)*sqrt(1+phi^2)/2, where phi = A001622.
- * Formula:
  * @author Georg Fischer
  */
 public class A390931 extends DecimalExpansionSequence {

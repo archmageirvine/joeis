@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A384625 Decimal expansion of the surface area of a pentagonal orthobicupola with unit edge.
- * Formula:
  * @author Georg Fischer
  */
 public class A384625 extends DecimalExpansionSequence {

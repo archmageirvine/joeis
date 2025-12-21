@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A384287 Decimal expansion of the volume of a square orthobicupola with unit edge.
- * Formula:
  * @author Georg Fischer
  */
 public class A384287 extends DecimalExpansionSequence {

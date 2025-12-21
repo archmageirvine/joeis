@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A216186 Decimal expansion of the topological entropy of a two step random Fibonacci substitution.
- * Formula:
  * @author Georg Fischer
  */
 public class A216186 extends DecimalExpansionSequence {

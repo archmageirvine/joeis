@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A263719 Decimal expansion of the real root r of r^3 + r - 1 = 0.
- * Formula:
  * @author Georg Fischer
  */
 public class A263719 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A387451 Decimal expansion of cos(Pi/34).
- * Formula:
  * @author Georg Fischer
  */
 public class A387451 extends DecimalExpansionSequence {

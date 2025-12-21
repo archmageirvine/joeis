@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A363438 Decimal expansion of the volume of the regular dodecahedron inscribed in the unit-radius sphere.
- * Formula:
  * @author Georg Fischer
  */
 public class A363438 extends DecimalExpansionSequence {

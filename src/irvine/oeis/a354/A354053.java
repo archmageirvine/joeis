@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A354053 Decimal expansion of Sum_{k&gt;=0} 1 / (k^8 + 1).
- * Formula:
  * @author Georg Fischer
  */
 public class A354053 extends DecimalExpansionSequence {

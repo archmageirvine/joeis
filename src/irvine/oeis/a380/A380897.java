@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A380897 Decimal expansion of (108)^(1/5).
- * Formula:
  * @author Georg Fischer
  */
 public class A380897 extends DecimalExpansionSequence {

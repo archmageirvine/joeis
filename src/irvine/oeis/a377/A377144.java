@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377144 Decimal expansion of Integral_{x=0..oo} sin(x^2)*erfc(x) dx, where erfc is the complementary error function.
- * Formula:
  * @author Georg Fischer
  */
 public class A377144 extends DecimalExpansionSequence {

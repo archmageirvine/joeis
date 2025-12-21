@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A145425 Decimal expansion of Sum_{k&gt;=1} 1/(k*(36k^2-1)).
- * Formula:
  * @author Georg Fischer
  */
 public class A145425 extends DecimalExpansionSequence {

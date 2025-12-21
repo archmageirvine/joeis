@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A379556 Decimal expansion of the square root of 5312.
- * Formula:
  * @author Georg Fischer
  */
 public class A379556 extends DecimalExpansionSequence {

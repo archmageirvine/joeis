@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A228041 Decimal expansion of sum of reciprocals, row 3 of Wythoff array, W = A035513.
- * Formula:
  * @author Georg Fischer
  */
 public class A228041 extends DecimalExpansionSequence {

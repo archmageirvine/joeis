@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A343620 Decimal expansion of the Hausdorff dimension of 4 X 2 carpets with rows of 3 and 1 sub-parts.
- * Formula:
  * @author Georg Fischer
  */
 public class A343620 extends DecimalExpansionSequence {

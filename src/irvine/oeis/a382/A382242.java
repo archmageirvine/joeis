@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A382242 Decimal expansion of Gamma(1/4)^2/(8*sqrt(2*Pi)).
- * Formula:
  * @author Georg Fischer
  */
 public class A382242 extends DecimalExpansionSequence {

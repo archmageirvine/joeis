@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A303617 Decimal expansion of Sum_{k &gt;= 0} 2^(2*k+1)/Product_{i = 0..k} (2*i+1).
- * Formula:
  * @author Georg Fischer
  */
 public class A303617 extends DecimalExpansionSequence {

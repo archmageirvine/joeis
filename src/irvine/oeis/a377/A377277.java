@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377277 Decimal expansion of 12*arctan(sqrt(2)).
- * Formula:
  * @author Georg Fischer
  */
 public class A377277 extends DecimalExpansionSequence {

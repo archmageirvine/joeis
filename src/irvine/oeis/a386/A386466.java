@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A386466 Decimal expansion of the volume of a parabiaugmented truncated dodecahedron with unit edges.
- * Formula:
  * @author Georg Fischer
  */
 public class A386466 extends DecimalExpansionSequence {

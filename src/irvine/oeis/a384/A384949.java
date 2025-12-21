@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A384949 Decimal expansion of Sum_{k&gt;=0} 1/(2*k+1)^9.
- * Formula:
  * @author Georg Fischer
  */
 public class A384949 extends DecimalExpansionSequence {

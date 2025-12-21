@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A145428 Decimal expansion of Sum_{n&gt;=1} 3^n*(n!)^2/(2n)!.
- * Formula:
  * @author Georg Fischer
  */
 public class A145428 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A364806 Decimal expansion of 1/(Re((-sqrt(2))^^9) - 1), where ^^ indicates tetration.
- * Formula:
  * @author Georg Fischer
  */
 public class A364806 extends DecimalExpansionSequence {

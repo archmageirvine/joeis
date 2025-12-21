@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A364899 Decimal expansion of the number of grams per cubic centimeter (g/cm^3) in 1 ounce per cubic inch (oz/in^3).
- * Formula:
  * @author Georg Fischer
  */
 public class A364899 extends DecimalExpansionSequence {

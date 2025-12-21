@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A379334 Decimal expansion of the minimum value of the function s(t) = (Pi + 2*sqrt(1 + t^2))/(1 + Pi/2 + t) for t &gt; 0.
- * Formula:
  * @author Georg Fischer
  */
 public class A379334 extends DecimalExpansionSequence {

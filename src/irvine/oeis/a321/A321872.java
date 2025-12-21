@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A321872 Decimal expansion of the sum of reciprocals of repunit numbers base 3, Sum_{k&gt;=1} 2/(3^k - 1).
- * Formula:
  * @author Georg Fischer
  */
 public class A321872 extends DecimalExpansionSequence {

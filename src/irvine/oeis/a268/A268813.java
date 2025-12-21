@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A268813 Decimal expansion of sum(k&gt;=0, 1/C(k)), where C(k) is a Catalan Number (A000108).
- * Formula:
  * @author Georg Fischer
  */
 public class A268813 extends DecimalExpansionSequence {

@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A377968 Decimal expansion of tan(arctan(4)/4).
- * Formula:
  * @author Georg Fischer
  */
 public class A377968 extends DecimalExpansionSequence {

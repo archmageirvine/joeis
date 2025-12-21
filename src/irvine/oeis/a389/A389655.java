@@ -8,7 +8,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A389655 Decimal expansion of (1/64) * (1/2 - 3/Pi + 5/(Pi^2)).
- * Formula:
  * @author Georg Fischer
  */
 public class A389655 extends DecimalExpansionSequence {

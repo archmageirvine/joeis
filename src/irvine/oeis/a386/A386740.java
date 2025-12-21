@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A386740 Decimal expansion of the volume of an augmented sphenocorona with unit edges.
- * Formula:
  * @author Georg Fischer
  */
 public class A386740 extends DecimalExpansionSequence {

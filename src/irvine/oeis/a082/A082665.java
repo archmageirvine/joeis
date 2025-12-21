@@ -16,7 +16,7 @@ public class A082665 extends DecimalExpansionSequence {
       @Override
       protected Z approximate(final int precision) {
         Z sum = Z.ZERO;
-        Z one = CR.ONE.getApprox(precision);
+        final Z one = CR.ONE.getApprox(precision);
         long k = 2;
         while (true) {
           final CR z = CR.valueOf(++k);

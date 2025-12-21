@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A391374 allocated for Joe Anderson.
+ * A391374 Number of positive integers k such that k's arithmetic mean of divisors is at most n.
  * @author Sean A. Irvine
  */
 public class A391374 extends Sequence1 {

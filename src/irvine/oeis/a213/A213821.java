@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001477;
 import irvine.oeis.a016.A016789;
 
 /**
- * A213821 Rectangular array:  (row n) = b**c, where b(h) = 3*h-1, c(h) = n-1+h, n&gt;=1, h&gt;=1, and ** = convolution.
+ * A213821 Rectangular array: (row n) = b**c, where b(h) = 3*h-1, c(h) = n-1+h, n&gt;=1, h&gt;=1, and ** = convolution.
  * @author Georg Fischer
  */
 public class A213821 extends A213500 {

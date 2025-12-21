@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A321798 G.f. satisfies: A(x) = 1/(1 - x/(1 - x*A(x))^4).
+ * A321798 G.f. A(x) satisfies A(x) = 1/(1 - x/(1 - x*A(x))^4).
  * <code>sumrecursion((C(n,k)/(n-k+1)) * C(n+3*k-1,n-k),k,a(n));</code>
  * @author Georg Fischer
  */

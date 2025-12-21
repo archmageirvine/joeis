@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A086166 (2^n - 1)^(2^n - 1).
+ * A086166 a(n) = (2^n - 1)^(2^n - 1).
  * @author Georg Fischer
  */
 public class A086166 extends Sequence1 {

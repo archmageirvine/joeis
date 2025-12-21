@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Point;
 
 /**
- * A391453 allocated for Janaka Rodrigo.
+ * A391453 a(n) is the number of 5 element sets of distinct integer-sided trapezoids whose base angles are 60 degrees that fill an equilateral triangular grid of side n units, where one trapezoid has a larger base of n units.
  * @author Sean A. Irvine
  */
 public class A391453 extends Sequence1 {

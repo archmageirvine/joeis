@@ -6,7 +6,7 @@ import irvine.oeis.cons.ContinuedFractionDenominatorSequence;
 import irvine.oeis.cons.DecimalExpansionFromContinuedFractionSequence;
 
 /**
- * A391510 allocated for Jwalin Bhatt.
+ * A391510 Denominators of the convergents given by treating A241773 as continued fraction coefficients after the leading 0.
  * @author Sean A. Irvine
  */
 public class A391510 extends ContinuedFractionDenominatorSequence {

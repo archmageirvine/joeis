@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A245380 (7*n^5+5*n^3)/12.
+ * A245380 a(n) = (7*n^5+5*n^3)/12.
  * @author Georg Fischer
  */
 public class A245380 extends GeneratingFunctionSequence {

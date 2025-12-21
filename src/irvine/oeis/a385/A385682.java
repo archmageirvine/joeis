@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002088;
 
 /**
- * A385682 Number of pairs (r/s, k) with gcd(r,s)=1, 1 &lt;= r &lt; s &lt;= n and 1 &lt;= k &lt;= n-1.
+ * A385682 a(n) = (n - 1) * Sum_{k=2..n} A000010(k).
  * @author Sean A. Irvine
  */
 public class A385682 extends Sequence1 {

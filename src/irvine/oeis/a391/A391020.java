@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391020 allocated for Hermann Stamm-Wilbrandt.
+ * A391020 Numbers k such that no numbers of the form 1 + (product of k distinct primes of first k+1 primes) are prime.
  * @author Sean A. Irvine
  */
 public class A391020 extends Sequence1 {

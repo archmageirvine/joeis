@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A391373 allocated for Joe Anderson.
+ * A391373 The largest number with an arithmetic mean of divisors equal to n or 0 is there is no such number.
  * @author Sean A. Irvine
  */
 public class A391373 extends Sequence1 {

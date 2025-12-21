@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a014.A014574;
 
 /**
- * A390295 allocated for Juri-Stepan Gerasimov.
+ * A390295 Average k of twin prime pairs such that gcd(d^2 - 4, k) = 1 for only one divisor d of k.
  * @author Sean A. Irvine
  */
 public class A390295 extends FilterSequence {

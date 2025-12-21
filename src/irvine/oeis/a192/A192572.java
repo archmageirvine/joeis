@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A192572 a(n) = sum((-1)^(n-k)*floor(sqrt(Bell(k))),k=0..n).
+ * A192572 a(n) = Sum_{k=0..n} (-1)^(n-k)*floor(sqrt(Bell(k))).
  * @author Georg Fischer
  */
 public class A192572 extends LambdaSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A153327 Numbers n such that 16*n+5 is not prime.
+ * A153327 Numbers k such that 16*k+5 is not prime.
  * @author Georg Fischer
  */
 public class A153327 extends FilterNumberSequence {

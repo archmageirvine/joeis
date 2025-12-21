@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A153348 Numbers n such that 16*n+3 is not prime.
+ * A153348 Numbers k such that 16*k+3 is not prime.
  * @author Georg Fischer
  */
 public class A153348 extends FilterNumberSequence {

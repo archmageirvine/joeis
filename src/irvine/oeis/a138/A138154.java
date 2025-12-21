@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A138154 Numbers n such that sigma(sigma(n))-phi(phi(n)) = 2n.
+ * A138154 Numbers k such that sigma(sigma(k))-phi(phi(k)) = 2k.
  *
  * @author Georg Fischer
  */

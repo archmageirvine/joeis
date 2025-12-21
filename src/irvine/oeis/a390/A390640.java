@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A390640 allocated for Michal Paulovic.
+ * A390640 Decimal expansion of 72 / log(7).
  * @author Sean A. Irvine
  */
 public class A390640 extends DecimalExpansionSequence {

@@ -5,7 +5,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A153350 Numbers n such that 7n+11 is not prime.
+ * A153350 Numbers k such that 7*k+11 is not prime.
  * @author Georg Fischer
  */
 public class A153350 extends FilterNumberSequence {

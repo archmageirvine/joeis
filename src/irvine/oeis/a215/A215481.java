@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A215481 Decimal expansion of positive root of  x^sinh(x) = sinh(x)^x.
+ * A215481 Decimal expansion of positive root of x^sinh(x) = sinh(x)^x.
  * Equation; x^sinh(x)-(sinh(x)^x)
  * @author Georg Fischer
  */

@@ -1,0 +1,39 @@
+package irvine.oeis.a391;
+
+import java.util.HashSet;
+
+import irvine.math.function.Functions;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
+import irvine.util.Permutation;
+
+/**
+ * A391476 allocated for Ctibor O. Zizka.
+ * @author Sean A. Irvine
+ */
+public class A391476 extends Sequence1 {
+
+  private long mN = 0;
+
+  @Override
+  public Z next() {
+    final Permutation perm = Permutation.permuter(Z.valueOf(++mN));
+    final HashSet<Long> set = new HashSet<>();
+    int[] p;
+    while ((p = perm.next()) != null) {
+      long r = 0;
+      for (final int v : p) {
+        r *= 10;
+        r += v;
+        if (r != 0) {
+          set.add(r);
+        }
+      }
+    }
+    Z sum = Z.ZERO;
+    for (final long t : set) {
+      sum = sum.add(Functions.SIGMA0.l(t));
+    }
+    return sum;
+  }
+}

@@ -5,7 +5,7 @@ import irvine.oeis.TwoParameterFormSequence;
 import irvine.oeis.a390.A390953;
 
 /**
- * A391375 allocated for Michael De Vlieger.
+ * A391375 Powers k^m, m &gt; 1, where k is an odd Achilles number.
  * @author Sean A. Irvine
  */
 public class A391375 extends TwoParameterFormSequence {

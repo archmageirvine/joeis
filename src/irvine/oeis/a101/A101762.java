@@ -5,7 +5,7 @@ import irvine.oeis.a014.A014260;
 import irvine.oeis.a102.A102131;
 
 /**
- * A101762 Iccanobif prime indices: Indices of prime numbers in A014260.
+ * A101762 Indices of prime numbers in A014260.
  * @author Georg Fischer
  */
 public class A101762 extends A102131 {

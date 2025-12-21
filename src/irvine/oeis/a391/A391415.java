@@ -5,7 +5,7 @@ import irvine.oeis.a046.A046099;
 import irvine.oeis.a303.A303946;
 
 /**
- * A391415 allocated for Michael De Vlieger.
+ * A391415 Nonsquarefree numbers that are neither cubefree nor perfect powers.
  * @author Sean A. Irvine
  */
 public class A391415 extends IntersectionSequence {

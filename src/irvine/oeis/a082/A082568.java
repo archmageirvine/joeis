@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a033.A033949;
 
 /**
- * A082568 First nontrivial square root of unity mod A033949(n), i.e., smallest x &gt; 1 such that x^2 == 1 mod A033949(n).
+ * A082568 First nontrivial square root of unity mod A033949(n); i.e., smallest x &gt; 1 such that x^2 == 1 mod A033949(n).
  * @author Sean A. Irvine
  */
 public class A082568 extends A033949 {

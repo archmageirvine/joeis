@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A216090 Numbers n such that k^(n-1) == k (mod n) for every k = 1, 2, ..., n-1.
+ * A216090 Numbers m such that k^(m-1) == k (mod m) for every k = 1, 2, ..., m-1.
  * @author Georg Fischer
  */
 public class A216090 extends FilterNumberSequence {

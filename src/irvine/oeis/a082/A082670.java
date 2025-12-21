@@ -5,7 +5,7 @@ import irvine.oeis.a006.A006512;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A082670 Let p(n) = upper member of n-th pair of twin primes; sequence gives a(n) = p(n)!/2.
+ * A082670 a(n) = p(n)!/2 where p(n) is the upper member of n-th pair of twin primes.
  * @author Sean A. Irvine
  */
 public class A082670 extends SimpleTransformSequence {

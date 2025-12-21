@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A153381 Numbers n such that 11*n+5 is not prime.
+ * A153381 Numbers k such that 11*k+5 is not prime.
  * @author Georg Fischer
  */
 public class A153381 extends FilterNumberSequence {

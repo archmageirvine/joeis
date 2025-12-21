@@ -4,7 +4,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
- * A390406 allocated for Hamidreza Maleki Tirabadi.
+ * A390406 Row sums of triangle A390419.
  * @author Sean A. Irvine
  */
 public class A390406 extends A390419 {

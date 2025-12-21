@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001129;
 import irvine.oeis.a102.A102171;
 
 /**
- * A101763 Iccanobif semiprime indices: Indices of semiprime numbers in A001129.
+ * A101763 Indices of semiprime numbers in A001129.
  * @author Georg Fischer
  */
 public class A101763 extends A102171 {

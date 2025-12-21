@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A215479 Decimal expansion of root of  cos(x)^sinh(x) = sinh(x)^cos(x).
+ * A215479 Decimal expansion of root of cos(x)^sinh(x) = sinh(x)^cos(x).
  * Equation; cos(x)^sinh(x)-(sinh(x)^cos(x))
  * @author Georg Fischer
  */

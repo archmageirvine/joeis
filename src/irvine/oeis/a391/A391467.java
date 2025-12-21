@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391467 allocated for M\u00e9lika Tebni.
+ * A391467 Triangle read by rows: T(n,0) = T(n,n) = 0 and T(n,k) = T(n, k-1) + T(n-1, k-1) + T(n-2, k-1) + k for 0 &lt; k &lt; n.
  * @author Sean A. Irvine
  */
 public class A391467 extends Sequence0 {

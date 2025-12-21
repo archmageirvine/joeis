@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A031225 a(n)=least k such that base 5 representation of n begins at s(k), where s=A031219.
+ * A031225 a(n) = least k such that base 5 representation of n begins at s(k), where s = A031219.
  * @author Sean A. Irvine
  */
 public class A031225 extends Sequence1 {

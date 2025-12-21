@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A113955 Riordan array (1/((1-4x)c(x)),xc(x)/sqrt(1-4x)), c(x) the g.f. of A000108.
+ * A113955 Riordan array (1/((1-4*x)*c(x)),x*c(x)/sqrt(1-4*x)), c(x) the g.f. of A000108.
  * @author Georg Fischer
  */
 public class A113955 extends LambdaTriangle {

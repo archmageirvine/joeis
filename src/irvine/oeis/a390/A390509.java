@@ -6,7 +6,7 @@ import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
 
 /**
- * A390509 allocated for Clark Kimberling.
+ * A390509 Indices k such that (number of 0's) = (number of 1's) in the NA-run 01-word indexed by a(k) in A390508(k).
  * @author Sean A. Irvine
  */
 public class A390509 extends Sequence1 {

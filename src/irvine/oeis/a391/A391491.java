@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001694;
 
 /**
- * A391491 allocated for Michael De Vlieger.
+ * A391491 Powerful numbers that are both divisible by only one prime cube and have more than 1 distinct prime factor.
  * @author Sean A. Irvine
  */
 public class A391491 extends A001694 {

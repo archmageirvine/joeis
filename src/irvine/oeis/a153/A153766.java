@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A153766 Numbers n such that 8n-9 is prime.
+ * A153766 Numbers k such that 8k-9 is prime.
  * @author Georg Fischer
  */
 public class A153766 extends PrimePositionSubsequence {

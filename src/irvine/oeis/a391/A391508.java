@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a336.A336282;
 
 /**
- * A391508 allocated for Manolopoulos Panagiotis.
+ * A391508 Triangle read by rows: T(n,k) = number of heapable permutations of length n with exactly k-1 213 patterns.
  * @author Sean A. Irvine
  */
 public class A391508 extends A336282 {

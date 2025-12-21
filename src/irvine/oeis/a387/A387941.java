@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387941 allocated for Xander Lee Luo.
+ * A387941 Positive numbers k such that gpf(k)^2 &lt; 2*k where gpf = A006530.
  * @author Sean A. Irvine
  */
 public class A387941 extends Sequence1 {

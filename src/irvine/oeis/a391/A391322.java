@@ -7,7 +7,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A391322 allocated for Enrique Navarrete.
+ * A391322 a(n) is the smallest number not yet in the sequence that shares at least 3 prime factors (repetitions allowed) with a(n-1); a(1)=8.
  * @author Sean A. Irvine
  */
 public class A391322 extends AbstractSequence {

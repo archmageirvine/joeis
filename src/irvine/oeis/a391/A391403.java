@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391403 allocated for Richard Ehrenborg.
+ * A391403 Triangle read by rows: T(n,k) is k-th entry of the gamma-vector of the n-dimensional cyclohedron, 0 &lt;= k &lt;= floor(n/2).
  * @author Sean A. Irvine
  */
 public class A391403 extends Sequence0 {

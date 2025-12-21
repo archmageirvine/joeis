@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A391072 allocated for Leif Nordqvist.
+ * A391072 Numbers of twin prime candidates in primorial interval of prime(n)# after elimination by prime factor prime(n-1).
  * @author Sean A. Irvine
  */
 public class A391072 extends A000040 {

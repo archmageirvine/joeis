@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A002013 Filaments with n square cells.
+ * A002013 Number of filaments with n square cells.
  * @author Sean A. Irvine
  */
 public class A002013 extends Sequence0 {

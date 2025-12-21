@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390397 allocated for Felix Huber.
+ * A390397 Numbers whose sum of prime divisors equals the sum of square divisors.
  * @author Sean A. Irvine
  */
 public class A390397 extends Sequence1 {

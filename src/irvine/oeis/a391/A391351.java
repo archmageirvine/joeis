@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391351 allocated for Clark Kimberling.
+ * A391351 Numbers k such that 3*k - (greatest prime &lt; 3*k) &lt; (least prime &gt; 3*k) - 3*k.
  * @author Sean A. Irvine
  */
 public class A391351 extends Sequence1 {

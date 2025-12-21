@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391595 allocated for John Tyler Rascoe.
+ * A391595 Number of compositions of n such that one maximal run is the longest.
  * @author Sean A. Irvine
  */
 public class A391595 extends Sequence0 {

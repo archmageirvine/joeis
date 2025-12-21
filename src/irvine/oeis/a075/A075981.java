@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075981 Numbers n such that |2^n - n^5| is prime.
+ * A075981 Numbers k such that |2^k - k^5| is prime.
  * @author Sean A. Irvine
  */
 public class A075981 extends Sequence1 {

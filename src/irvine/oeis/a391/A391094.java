@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391094 allocated for David Pasino.
+ * A391094 a(n) is the number of closed binary operations on a set of n labeled elements with empty center.
  * @author Sean A. Irvine
  */
 public class A391094 extends Sequence0 {

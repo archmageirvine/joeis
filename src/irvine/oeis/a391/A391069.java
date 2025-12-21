@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a386.A386606;
 
 /**
- * A391069 allocated for A.H.M. Smeets.
+ * A391069 Numbers k with exactly 3 distinct odd prime factors such that all coefficients in the cyclotomic polynomial Phi(k) are in {-1, 0, 1}.
  * @author Sean A. Irvine
  */
 public class A391069 extends A386606 {

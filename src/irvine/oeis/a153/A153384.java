@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A153384 Numbers n such that 24*n+1 is not prime.
+ * A153384 Numbers k such that 24*k+1 is not prime.
  * @author Georg Fischer
  */
 public class A153384 extends FilterNumberSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006881;
 
 /**
- * A387940 allocated for Gonzalo Mart\u00ednez.
+ * A387940 a(n) is the smallest squarefree semiprime k such that n^2 + k is a perfect square.
  * @author Sean A. Irvine
  */
 public class A387940 extends Sequence1 {

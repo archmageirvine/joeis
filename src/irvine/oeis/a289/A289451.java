@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A289451 Related to number of mesh patterns of length 2 that avoid the pattern 231.
+ * A289451 a(n) is the number of permutations of length n that avoid the pattern 231 and the mesh pattern (12, 409) or the same sequence for the mesh pattern (12, 473).
  * @author Georg Fischer
  */
 public class A289451 extends HolonomicRecurrence implements Conjectural {

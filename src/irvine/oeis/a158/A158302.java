@@ -4,7 +4,7 @@ package irvine.oeis.a158;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A158302 "1" followed by repeats of 2^k deleting all 4^k, k&gt;0.
+ * A158302 "1" followed by repeats of 2^k deleting all 4^k, k &gt; 0.
  * @author Georg Fischer
  */
 public class A158302 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A153351 Numbers n such that 7*n+2 is not prime.
+ * A153351 Numbers k such that 7*k+2 is not prime.
  * @author Georg Fischer
  */
 public class A153351 extends FilterNumberSequence {

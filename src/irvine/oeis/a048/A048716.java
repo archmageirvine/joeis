@@ -4,7 +4,7 @@ package irvine.oeis.a048;
 import irvine.oeis.a098.A098941;
 
 /**
- * A048716 Numbers n such that binary expansion matches ((0)*00(1?)1)*(0*).
+ * A048716 Numbers k such that binary expansion matches ((0)*00(1?)1)*(0*).
  * @author Georg Fischer
  */
 public class A048716 extends A098941 {

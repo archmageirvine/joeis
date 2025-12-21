@@ -8,7 +8,7 @@ import irvine.oeis.transform.SimpleTransformSequence;
 
 
 /**
- * A259045 Numbers n such that n!! - 2^6 is prime.
+ * A259045 Numbers k such that k!! - 2^6 is prime.
  * @author Georg Fischer
  */
 public class A259045 extends PrimePositionSubsequence {

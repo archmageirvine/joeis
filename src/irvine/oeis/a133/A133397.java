@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A133397 Triangular array read by rows: T(n,m)=prime(m+1)^n*prime(m)^(n*(n-1)/2).
+ * A133397 Triangular array read by rows: T(n, k) = prime(n+1)^k * prime(n)^(k*(k-1)/2) with T(0,0) = 1.
  * @author Georg Fischer
  */
 public class A133397 extends LambdaTriangle {

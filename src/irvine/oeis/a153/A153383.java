@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A153383 Numbers n such that 12*n+1 is not prime.
+ * A153383 Numbers k such that 12*k+1 is not prime.
  * @author Georg Fischer
  */
 public class A153383 extends FilterNumberSequence {

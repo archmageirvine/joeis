@@ -9,7 +9,7 @@ import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
 
 /**
- * A389336 allocated for Clark Kimberling.
+ * A389336 Rectangular array, (C(n,k)), read by descending antidiagonals: C(n,k) = n++k, the concatenation sum of n and k, defined as the index of the concatenation w(n)w(k) in the sequence S = (w(n)) of all 01-words in lexicographic order.
  * @author Sean A. Irvine
  */
 public class A389336 extends Sequence1 {

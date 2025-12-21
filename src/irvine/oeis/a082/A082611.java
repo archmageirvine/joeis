@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a080.A080046;
 
 /**
- * A082611 a(n) = Sum_{i=1..k} T(i,k)/(i*(k-i+1)), (k&gt;=1, 1&lt;=n&lt;=k), where T(,) is given in A080046.
+ * A082611 a(n) = Sum_{k=1..n} T(n,k) / (k * (n-k+1)) where T is given in A080046.
  * @author Sean A. Irvine
  */
 public class A082611 extends A080046 {

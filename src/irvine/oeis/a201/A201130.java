@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A201130 Decimal expansion of root of  x^(e^x) = (e^x)^x.
+ * A201130 Decimal expansion of root of x^(e^x) = (e^x)^x.
  * Equation; x^(e^x)-((e^x)^x)
  * @author Georg Fischer
  */

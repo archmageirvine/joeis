@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A321799 G.f. satisfies: A(x) = 1/(1 - x/(1 - x*A(x))^5).
+ * A321799 G.f. A(x) satisfies A(x) = 1/(1 - x/(1 - x*A(x))^5).
  * @author Georg Fischer
  */
 public class A321799 extends LambdaSequence {

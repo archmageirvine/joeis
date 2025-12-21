@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002275;
 
 /**
- * A391473 allocated for Gonzalo Mart\u00ednez.
+ * A391473 a(n) is the smallest positive integer k such that k*R_n has digits with alternating parity, where R_n is the n-th repunit.
  * @author Sean A. Irvine
  */
 public class A391473 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A153380 Numbers n such that 10*n+9 is not prime.
+ * A153380 Numbers k such that 10*k+9 is not prime.
  * @author Georg Fischer
  */
 public class A153380 extends FilterNumberSequence {

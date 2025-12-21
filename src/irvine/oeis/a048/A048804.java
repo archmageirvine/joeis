@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A048804 Triangle: T(n,k)=b(n)/(b(k)*b(n-k)) where b is A048803.
+ * A048804 Triangle: T(n,k) = b(n)/(b(k)*b(n-k)) where b is A048803.
  * @author Sean A. Irvine
  */
 public class A048804 extends Sequence0 {

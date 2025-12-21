@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A082665 Decimal expansion of Y = sum(k&gt;2, 1/2^floor(k^log(log(k)))).
+ * A082665 Decimal expansion of Y = Sum_{k&gt;2} 1/2^floor(k^log(log(k))).
  * @author Sean A. Irvine
  */
 public class A082665 extends DecimalExpansionSequence {

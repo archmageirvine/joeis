@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A249600 Decimal expansion of 1/phi + 1/phi^3 + 1/phi^5, where phi is the Golden Ratio.
+ * A249600 Decimal expansion of 1/phi + 1/phi^3 + 1/phi^5, where phi is the golden ratio.
  * Formula: 1/phi+1/phi^3+1/phi^5
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a016.A016777;
 
 /**
- * A213773 Rectangular array:  (row n) = b**c, where b(h) = 3*h-2, c(h) = 3*n-5+3*h, n&gt;=1, h&gt;=1, and ** = convolution.
+ * A213773 Rectangular array: (row n) = b**c, where b(h) = 3*h-2, c(h) = 3*n-5+3*h, n&gt;=1, h&gt;=1, and ** = convolution.
  * @author Georg Fischer
  */
 public class A213773 extends A213500 {

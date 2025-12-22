@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391318 allocated for Leonidas Liponis.
+ * A391318 Triangle array read by rows: T(n,k) = T(n-1,k) + T(n-1,k-1) + T(n-2,k-1) + 1 with T(0,0) = T(n,-1) = T(n,n+1) = 0.
  * @author Sean A. Irvine
  */
 public class A391318 extends Sequence0 {

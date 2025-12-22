@@ -6,6 +6,7 @@ import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
+import irvine.oeis.a373.A373387;
 
 /**
  * A387664 Smallest prime number with a constant convergence speed &gt;= n.

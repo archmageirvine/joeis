@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A052038 First nonzero digit in expansion of 1/n.
+ * A052038 First nonzero digit in the decimal expansion of 1/n.
  * @author Sean A. Irvine
  */
 public class A052038 extends Sequence1 {

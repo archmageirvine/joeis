@@ -4,7 +4,7 @@ package irvine.oeis.a382;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A382316 G.f. satisfies A(x) = A(x^2) + A(x^2)^2*A(x^3)/A(x^6), with A(0) = 0 and A&apos;(0) = 1.
+ * A382316 G.f. satisfies A(x) = A(x^2) + A(x^2)^2*A(x^3)/A(x^6), with A(0) = 0 and A'(0) = 1.
  * @author Georg Fischer
  */
 public class A382316 extends PolynomialFieldSequence {

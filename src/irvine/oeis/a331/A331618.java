@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A331618 E.g.f.: exp(1 / (1 - arctanh(x)) - 1).
+ * A331618 Expansion of e.g.f. exp(1 / (1 - arctanh(x)) - 1).
  * E.g.f.: exp(1 / (1 - arctanh(x)) - 1)
  * @author Georg Fischer
  */

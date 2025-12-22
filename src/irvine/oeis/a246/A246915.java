@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A246915 Numbers n such that sigma(n + sigma(n)) = sigma((n+1) + sigma(n+1)).
+ * A246915 Numbers k such that sigma(k + sigma(k)) = sigma((k+1) + sigma(k+1)).
  * @author Georg Fischer
  */
 public class A246915 extends FilterNumberSequence {

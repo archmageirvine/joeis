@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A391476 allocated for Ctibor O. Zizka.
+ * A391476 For n &gt;= 1, a(n) is the sum of the number of divisors A000005(r) for all distinct, nonzero numbers r formed by permuting subsets of the digits of n.
  * @author Sean A. Irvine
  */
 public class A391476 extends Sequence1 {

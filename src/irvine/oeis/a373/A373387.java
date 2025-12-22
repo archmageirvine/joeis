@@ -1,4 +1,4 @@
-package irvine.oeis.a387;
+package irvine.oeis.a373;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;

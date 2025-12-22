@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A082728 Numbers expressible as a sum of 2 Fibonacci numbers in exactly 1 way.
+ * A082728 Numbers expressible as a sum of 2 nonzero Fibonacci numbers in exactly 1 way.
  * @author Sean A. Irvine
  */
 public class A082728 extends Sequence1 {

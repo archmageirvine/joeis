@@ -1,18 +1,18 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
 
 /**
  * A056876 Number of permutations (p_1, ..., p_n) of {1,...,n} that are "balanced" in the sense that the sum of k*p_k equals the sum of (n+1-k)*p_k; equivalently, the expected value of k*p_k is (expected value of k) times (expected value of p_k), assuming the uniform distribution.
  * @author Sean A. Irvine
  */
-public class A056876 extends Sequence1 {
+public class A056876 extends Sequence0 {
 
   // Too slow to be useful
 
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {

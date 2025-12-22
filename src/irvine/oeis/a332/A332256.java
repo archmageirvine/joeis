@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A332256 E.g.f.: 1 / (2 - exp(sinh(x))).
+ * A332256 Expansion of e.g.f. 1 / (2 - exp(sinh(x))).
  * E.g.f.: 1 / (2 - exp(sinh(x)))
  * @author Georg Fischer
  */

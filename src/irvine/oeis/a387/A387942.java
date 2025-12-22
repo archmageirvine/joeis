@@ -4,7 +4,7 @@ import irvine.oeis.MultiplicativeSequence;
 import irvine.oeis.a005.A005812;
 
 /**
- * A387942 allocated for C. S. Davis.
+ * A387942 In the prime factorization of n, replace each prime with the number of nonzero digits in its balanced ternary representation.
  * @author Sean A. Irvine
  */
 public class A387942 extends MultiplicativeSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391610 allocated for F. Chapoton.
+ * A391610 Triangle T(n,k) read by rows: T(n,k) is the coefficient of x^k of the monic polynomial (1+x)^n + ((2*(1+x))^n - (2+x)^n) / x.
  * @author Sean A. Irvine
  */
 public class A391610 extends Sequence0 {

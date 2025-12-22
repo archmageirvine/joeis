@@ -5,7 +5,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.a002.A002808;
-import irvine.oeis.a387.A373387;
+import irvine.oeis.a373.A373387;
 
 /**
  * A390600 Composite numbers (not multiples of 10) whose constant congruence speed equals the sum of the constant congruence speeds of all its prime factors counted with multiplicity.

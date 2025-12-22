@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence0;
+import irvine.oeis.a373.A373387;
 
 /**
  * A387665 Smallest nonnegative integer coprime to 5 with a constant congruence speed &gt;= n (see A373387 for the definition of "constant congruence speed").

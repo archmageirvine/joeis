@@ -10,7 +10,7 @@ import irvine.oeis.a007.A007837;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A332024 E.g.f.: Product_{k&gt;=1} (1 + x^k/(k!*(1 - x)^k)).
+ * A332024 Expansion of e.g.f. Product_{k&gt;=1} (1 + x^k/(k!*(1 - x)^k)).
  * @author Georg Fischer
  */
 public class A332024 extends LambdaSequence {

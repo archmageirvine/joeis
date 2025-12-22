@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A244324 Numbers n such that floor(antisigma(n) / n) = antisigma(n) mod n.
+ * A244324 Numbers m such that floor(antisigma(m) / m) = antisigma(m) mod m.
  * @author Georg Fischer
  */
 public class A244324 extends FilterNumberSequence {

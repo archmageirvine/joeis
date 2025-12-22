@@ -13,7 +13,7 @@ public class A391652 extends Sequence2 {
 
   // After Alois P. Heinz
 
-  private int mN = 2;
+  private int mN = 1;
   private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<>() {
     @Override
     protected Z compute(final int n, final int x, final int y) {

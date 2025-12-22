@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391076 allocated for Jonathon Martodam.
+ * A391076 Carmichael numbers of the form (30*k+7) * (60*k+13) * (150*k+31) * (300*k+61) * (900*k+181), k&gt;=0, where all five factors are prime.
  * @author Sean A. Irvine
  */
 public class A391076 extends Sequence1 {

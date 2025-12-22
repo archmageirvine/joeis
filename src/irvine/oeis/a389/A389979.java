@@ -5,7 +5,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
-import irvine.oeis.a387.A373387;
+import irvine.oeis.a373.A373387;
 
 /**
  * A389979 Positive integers (not multiples of 10) whose constant congruence speed is greater than the sum of the constant congruence speeds of all their prime factors counted with multiplicity.

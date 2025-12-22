@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A191363 Numbers m such that sigma(m) = 2*m - 2.
+ * A191363 Numbers m whose deficiency is 2: sigma(m) - 2*m  = -2.
  * @author Georg Fischer
  */
 public class A191363 extends FilterNumberSequence {

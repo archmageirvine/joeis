@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A331818 E.g.f.: exp(1 - sec(x)) (even powers only).
+ * A331818 Expansion of e.g.f. exp(1 - sec(x)) (even powers only).
  * E.g.f.: exp(1 - sec(x)), even powers
  * @author Georg Fischer
  */

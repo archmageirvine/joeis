@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A391657 Decimal expansion of the dihedral angle, in radians, between a pentagonal face and a triangular face in a D√ľrer&apos;s solid.
+ * A391657 Decimal expansion of the dihedral angle, in radians, between a pentagonal face and a triangular face in a D\u00fcrer's solid.
  * @author Georg Fischer
  */
 public class A391657 extends DecimalExpansionSequence {

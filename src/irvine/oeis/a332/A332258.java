@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A332258 E.g.f.: 1 / (1 + x - sinh(x)).
+ * A332258 Expansion of e.g.f. 1 / (1 + x - sinh(x)).
  * E.g.f.: 1 / (1 + x - sinh(x))
  * @author Georg Fischer
  */

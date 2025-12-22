@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A331726 E.g.f.: -LambertW(-x/(1 - x)) / (1 - x).
+ * A331726 Expansion of e.g.f. -LambertW(-x/(1 - x)) / (1 - x).
  * a(n)=sum(k=0,n-1,binom(n,k)^2 * k! * (n - k)^(n - k - 1))
  * @author Georg Fischer
  */

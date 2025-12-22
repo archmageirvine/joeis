@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002163;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A391655 Decimal expansion of the circumradius of a D√ľrer&apos;s solid with unit shorter edge length.
+ * A391655 Decimal expansion of the circumradius of a D\u00fcrer's solid with unit shorter edge length.
  * @author Georg Fischer
  */
 public class A391655 extends DecimalExpansionSequence {

@@ -16,6 +16,8 @@ import irvine.oeis.Sequence1;
  */
 public class A082789 extends Sequence1 {
 
+  // This code can find up to a(8) is less than a day
+
   private final HashSet<Graph> mGraphs = new HashSet<>();
   private long[] mTriples;
   private int mN = 0;
@@ -29,24 +31,40 @@ public class A082789 extends Sequence1 {
     return true;
   }
 
-  private void search(final int pos, final long used, final int nv) {
-    if (pos == mN) {
-      final Graph g = GraphFactory.create(nv);
-      for (int k = 0; k < mN; ++k) {
-        final long s = mTriples[k];
-        for (int j = 1; j < nv; ++j) {
-          if ((s & (1L << j)) != 0) {
-            for (int i = 0; i < j; ++i) {
-              if ((s & (1L << i)) != 0) {
-                g.addEdge(j, i);
-              }
+  private Graph createGraph(final int nv) {
+    // Vertices 0..(nv-1) are the labels of the individual triple elements
+    // Vertices nv..nv+n-1 represent the triples themselves
+    final Graph g = GraphFactory.create(nv + mN);
+    for (int k = 0; k < mN; ++k) {
+      final long s = mTriples[k];
+      long bj = 1;
+      for (int j = 0; bj <= s; ++j, bj <<= 1) {
+        if ((s & bj) != 0) {
+          g.addEdge(j, nv + k); // Links for specific triple
+          long bi = 1;
+          for (int i = 0; i < j; ++i, bi <<= 1) {
+            if ((s & bi) != 0) {
+              g.addEdge(i, j); // Within triple links
             }
           }
         }
       }
-      mGraphs.add(GraphUtils.canon(g));
+    }
+    return GraphUtils.canon(g);
+  }
+
+  protected boolean accept(final long[] triples) {
+    return true;
+  }
+
+  private void search(final int pos, final long used, final int nv) {
+    if (pos == mN) {
+      if (accept(mTriples)) {
+        mGraphs.add(createGraph(nv));
+      }
       return;
     }
+
     final long lim = 1L << (nv + 3);
     for (long s = mTriples[pos - 1]; s < lim; s = Functions.SWIZZLE.l(s)) {
       if (Predicates.POWER_OF_TWO.is((used | s) + 1) && ok(mTriples, pos, s)) {

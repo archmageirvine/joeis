@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A155794 Triangle read by rows: t(n,m)=(m*(m-n))!
+ * A155794 Triangle read by rows: t(n,m)=(m*(m-n))!.
  * @author Georg Fischer
  */
 public class A155794 extends LambdaTriangle {

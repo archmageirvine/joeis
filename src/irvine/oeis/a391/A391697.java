@@ -3,7 +3,7 @@ package irvine.oeis.a391;
 import irvine.oeis.a336.A336282;
 
 /**
- * A391181 Total sum of 132 patterns in all heapable permutations of length n.
+ * A391697 allocated for Manolopoulos Panagiotis.
  * @author Sean A. Irvine
  */
 public class A391697 extends A336282 {

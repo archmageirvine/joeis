@@ -16,46 +16,6 @@ public class A390320 extends Sequence1 {
   private final DirectSequence mA = new A373387();
   private int mN = 1;
 
-  /*
-  from sympy import factorint
-
-def upto(n):
-
- s=[]
-
- for k in range(2, n+1):
-
-  if k%10==0:
-
-   continue
-
-  Vk=A373387(k)
-
-  if Vk is None:
-
-   continue
-
-  minVp=None
-
-  for p, e in factorint(k).items():
-
-   Vp=A373387(p)
-
-   if Vp is not None:
-
-    if minVp is None or Vp<minVp:
-
-     minVp=Vp
-
-  if minVp is not None and Vk>minVp:
-
-     s.append(k)
-
-  return s
-
-print(upto(10000))
-   */
-
   private boolean is(final int n) {
     if (n % 10 == 0) {
       return false;

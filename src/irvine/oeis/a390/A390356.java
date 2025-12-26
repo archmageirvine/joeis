@@ -5,7 +5,7 @@ import irvine.oeis.a111.A111035;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A390356 allocated for Bruce Nye.
+ * A390356 a(n) = A000045(A111035(n)).
  * @author Sean A. Irvine
  */
 public class A390356 extends SimpleTransformSequence {

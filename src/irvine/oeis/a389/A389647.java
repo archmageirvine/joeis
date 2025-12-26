@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A389647 allocated for Ilya Gutkovskiy.
+ * A389647 a(n) is the smallest k &gt; n such that prime(k) contains the digits of prime(n) as a substring.
  * @author Sean A. Irvine
  */
 public class A389647 extends A000040 {

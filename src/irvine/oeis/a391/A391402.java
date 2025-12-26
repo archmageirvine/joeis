@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391402 allocated for Richard Ehrenborg.
+ * A391402 Triangle read by rows: T(n,k) is k-th entry of the toric g-vector of the n-dimensional cyclohedron, 0 &lt;= k &lt;= floor(n/2).
  * @author Sean A. Irvine
  */
 public class A391402 extends Sequence0 {

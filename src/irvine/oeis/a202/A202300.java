@@ -6,7 +6,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A202300 Decimal expansion of the real root of x^3 + 2x^2 + 10x - 20.
+ * A202300 Decimal expansion of the real root of x^3 + 2*x^2 + 10*x - 20.
  * Polynomial: <code>x^3+2x^2+10x-20</code>
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391539 allocated for Heinrich Puschmann.
+ * A391539 Positive integer multipliers m such that each integer can be written as a sum of progressive powers 5^t multiplied by coefficients in (-m,-1,0,1,m).
  * @author Sean A. Irvine
  */
 public class A391539 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a391;
 import irvine.oeis.a336.A336282;
 
 /**
- * A391286 Total sum of 123 patterns in all heapable permutations of length n.
+ * A391286 Total number of 123 patterns in all heapable permutations of length n.
  * @author Sean A. Irvine
  */
 public class A391286 extends A336282 {

@@ -7,7 +7,7 @@ import irvine.oeis.recur.HolonomicRecurrence;
 
 
 /**
- * A333718 a(n) = L(8*n+4)/7, where L=A000032 (the Lucas sequence).
+ * A333718 a(n) = L(8*n+4)/7, where L = A000032 (the Lucas sequence).
  * @author Georg Fischer
  */
 public class A333718 extends HolonomicRecurrence {

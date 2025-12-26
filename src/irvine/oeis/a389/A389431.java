@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.TwoParameterFormSequence;
 
 /**
- * A389431 allocated for Felix Huber.
+ * A389431 Primes of the form p^q - 2, where p and q are primes.
  * @author Sean A. Irvine
  */
 public class A389431 extends PrependSequence {

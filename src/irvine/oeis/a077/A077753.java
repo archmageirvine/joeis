@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077753 a(1) = 1, a(2) = 2, a(2n) = a(2n-1)*a(2n-2), a(2n+1)= a(2n-1) + a(2n).
+ * A077753 a(0) = 2, a(1) = 1, a(2n) = a(2n-1) * a(2n-2), a(2n+1) = a(2n-1) + a(2n).
  * @author Sean A. Irvine
  */
 public class A077753 extends Sequence1 {

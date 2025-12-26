@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A391520 allocated for Tamilselvi Annamalai.
+ * A391520 Square array T(n,k) read by ascending antidiagonals: T(n,k) = (p - 1)/2*(2*(n - 1)*p^(n - 1) - (2*n - 3)*p^(n - 2)), n&gt;=2, where p is the k-th odd prime.
  * @author Sean A. Irvine
  */
 public class A391520 extends Sequence2 {

@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A391672 allocated for A.H.M. Smeets.
+ * A391672 Decimal expansion of sqrt(2+sqrt(2+sqrt(2))).
  * @author Sean A. Irvine
  */
 public class A391672 extends DecimalExpansionSequence {

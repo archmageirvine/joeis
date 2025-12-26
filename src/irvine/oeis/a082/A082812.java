@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A082812 Positions of sign changes in running sum of mu(k)/k: n such that sign(Sum(k=1..n; mu(k)/k)) &lt;&gt; sign(Sum(k=1..n+1; mu(k)/k)).
+ * A082812 Positions of sign changes in running sum of mu(k)/k: n such that sign(Sum_{k=1..n} mu(k)/k) &lt;&gt; sign(Sum_{k=1..n+1} mu(k)/k).
  * @author Sean A. Irvine
  */
 public class A082812 extends Sequence1 {

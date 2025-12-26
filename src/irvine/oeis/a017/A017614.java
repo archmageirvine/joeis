@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A017614 (12n+7)^10.
+ * A017614 a(n) = (12*n + 7)^10.
  * @author Sean A. Irvine
  */
 public class A017614 extends Sequence0 {

@@ -2692,4 +2692,13 @@ A082668 (10^n)-th zero of the Riemann zeta function rounded to the nearest integ
 A082677 Arises from a social choice theory problem. Sequence is a transformation of the number of non-transitive quasitransitive distinct profiles with 3 alternatives and strict individual preferences.
 A082678 Arises from a social choice theory problem. Sequence is a transformation of the number of non-transitive non-quasitransitive acyclical distinct profiles with 3 alternatives and strict individual preferences.
 A082682 Algebraic degree of R(e^(-n * Pi)), where R(q) is the Rogers-Ramanujan continued fraction.
-
+A082830 Decimal expansion of Kempner series Sum_{k>=1, k has no digit 1 in base 10} 1/k.
+A082831 Decimal expansion of Sum_{k >= 1, k has no digit 2 in base 10} 1/k.
+A082832 Decimal expansion of Sum_{k >= 1, k has no digit 3 in base 10} 1/k.
+A082833 Decimal expansion of Kempner series Sum_{k >= 1, k has no digit 4 in base 10} 1/k.
+A082834 Decimal expansion of Kempner series Sum_{k>=1, k has no digit 5 in base 10} 1/k.
+A082835 Decimal expansion of Kempner series Sum_{k >= 1, k has no digit 6 in base 10} 1/k.
+A082836 Decimal expansion of Kempner series Sum_{k >= 1, k has no digit 7 in base 10} 1/k.
+A082837 Decimal expansion of Kempner series Sum_{k >= 1, k has no digit 8 in base 10} 1/k.
+A082838 Decimal expansion of Kempner series Sum_{k>=1, k has no digit 9 in base 10} 1/k.
+A082839 Decimal expansion of Kempner series Sum_{k >= 1, k has no digit 0 in base 10} 1/k.

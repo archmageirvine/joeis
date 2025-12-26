@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391668 allocated for Elijah Beregovsky.
+ * A391668 Table read by antidiagonals. T(n,k) is the least number coprime to all numbers in [n+1, n+k].
  * @author Sean A. Irvine
  */
 public class A391668 extends Sequence1 {

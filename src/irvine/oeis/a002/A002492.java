@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A002492 Sum of the first n even squares: 2*n*(n+1)*(2*n+1)/3.
+ * A002492 Sum of the first n even squares: a(n) = 2*n*(n+1)*(2*n+1)/3.
  * @author Sean A. Irvine
  */
 public class A002492 extends Sequence0 {

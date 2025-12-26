@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391696 allocated for Clark Kimberling.
+ * A391696 Irregular triangular array read by rows: T(n,k) = position of 1st letter of 1st appearance of the k-th word of length n in the lexicographic ordering of all 01-words, as in A076478.
  * @author Sean A. Irvine
  */
 public class A391696 extends Sequence1 {

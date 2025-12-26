@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391685 allocated for Stefano Spezia.
+ * A391685 Array read by ascending antidiagonals: A(n,k) = (2*n + 1)*2^(2*k+1) - 1 with k &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A391685 extends Sequence0 {

@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A289450 Related to number of mesh patterns of length 2 that avoid the pattern 231.
+ * A289450 Related to number of mesh patterns of length 2 that avoid the pattern 231 or 321. For details see the comment section.
  * @author Georg Fischer
  */
 public class A289450 extends HolonomicRecurrence {

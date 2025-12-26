@@ -7,7 +7,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a033.A033880;
 
 /**
- * A223607 Numbers n whose deficiency is 20: sigma(n) - 2*n = -20.
+ * A223607 Numbers whose deficiency is 20: sigma(k) - 2*k = -20.
  * @author Georg Fischer
  */
 public class A223607 extends FilterNumberSequence {

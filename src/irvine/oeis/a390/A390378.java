@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390378 allocated for Ilya Gutkovskiy.
+ * A390378 a(n) is the smallest k &gt; n such that prime(k)# contains the digits of prime(n)# as a substring.
  * @author Sean A. Irvine
  */
 public class A390378 extends Sequence0 {

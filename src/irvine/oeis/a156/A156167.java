@@ -8,7 +8,7 @@ import irvine.oeis.transform.SimpleTransformSequence;
 
 
 /**
- * A156167 Numbers n such that n![7]-1 is prime (where n![7] = A114799(n) = septuple factorial).
+ * A156167 Numbers k such that k![7]-1 is prime (where k![7] = A114799(k) = septuple factorial).
  * @author Georg Fischer
  */
 public class A156167 extends PrimePositionSubsequence {

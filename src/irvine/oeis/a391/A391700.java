@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391700 allocated for Karol A. Penson.
+ * A391700 a(n) = (8*n)!/(n!*(2*n)!*(5*n)!).
  * @author Sean A. Irvine
  */
 public class A391700 extends Sequence0 {

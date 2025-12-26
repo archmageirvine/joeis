@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A318363 Multiplicative with a(prime(i)^k) = prime(k)^2^(i-1).
+ * A318363 Multiplicative with a(prime(i)^k) = prime(k)^(2^(i-1)).
  * Multiplicative with: a(prime(i)^k) = prime(k)^2^(i-1).
  * @author Georg Fischer
  */

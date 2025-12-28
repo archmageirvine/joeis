@@ -2702,3 +2702,8 @@ A082836 Decimal expansion of Kempner series Sum_{k >= 1, k has no digit 7 in bas
 A082837 Decimal expansion of Kempner series Sum_{k >= 1, k has no digit 8 in base 10} 1/k.
 A082838 Decimal expansion of Kempner series Sum_{k>=1, k has no digit 9 in base 10} 1/k.
 A082839 Decimal expansion of Kempner series Sum_{k >= 1, k has no digit 0 in base 10} 1/k.
+A082857 Inverse function of N -> N injection A082856.
+A082858 Array A(x,y): the greatest common subtree (intersect) of the binary trees x and y, (x,y) running as (0,0),(1,0),(0,1),(2,0),(1,1),(0,2) and each index referring to a binary tree encoded by A014486(j).
+A082859 Lower triangular region of A082858.
+A082860 Array A(x,y): the least common supertree (union) of the binary trees x and y, (x,y) running as (0,0),(1,0),(0,1),(2,0),(1,1),(0,2) and each index referring to a binary tree encoded by A014486(j).
+A082861 Lower triangular region of A082860.

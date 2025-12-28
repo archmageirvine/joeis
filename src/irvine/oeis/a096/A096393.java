@@ -13,6 +13,6 @@ public class A096393 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A096393() {
-    super(1, new A000668(), v -> Functions.LEAST_PRIMITIVE_ROOT.z(v));
+    super(1, new A000668(), Functions.LEAST_PRIMITIVE_ROOT::z);
   }
 }

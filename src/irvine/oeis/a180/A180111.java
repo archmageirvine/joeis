@@ -13,6 +13,6 @@ public class A180111 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A180111() {
-    super(0, (term, n) -> Functions.FACTORIAL.z(n).add(term).divide(2), "", new A056876().prepend(1));
+    super(0, (term, n) -> Functions.FACTORIAL.z(n).add(term).divide(2), "", new A056876());
   }
 }

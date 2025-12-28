@@ -131,7 +131,7 @@ public final class Functions {
   public static final Function1 SYNDROME = new Syndrome();
   /** Step to the next number with the same number of set bits. */
   public static final Function1 SWIZZLE = new Swizzle(); // =A057168
-  /** Least primitive root of a modulus. */
+  /** Least primitive root of a modulus, or 0 if there is no primitive root. */
   public static final Function1 LEAST_PRIMITIVE_ROOT = new LeastPrimitiveRoot(); // =A001918
   /** Triangular numbers. */
   public static final Function1 TRIANGULAR = new Triangular(); // =A000217

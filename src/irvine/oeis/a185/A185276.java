@@ -3,7 +3,7 @@ package irvine.oeis.a185;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A185276 Kronecker symbol (-100 / n).
+ * A185276 a(n) = Kronecker symbol (-100 / n).
  * @author Sean A. Irvine
  */
 public class A185276 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012429 cosh(arctan(x)*sin(x))=1+12/4!*x^4-360/6!*x^6+17360/8!*x^8...
+ * A012429 Expansion of e.g.f. cosh(arctan(x)*sin(x)) (only even powers).
  * @author Sean A. Irvine
  */
 public class A012429 extends Sequence0 {

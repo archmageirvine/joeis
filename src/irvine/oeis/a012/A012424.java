@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012424 cos(arctan(x)*sin(x))=1-12/4!*x^4+360/6!*x^6-14000/8!*x^8...
+ * A012424 Expansion of e.g.f. cos(arctan(x)*sin(x)) (only even powers).
  * @author Sean A. Irvine
  */
 public class A012424 extends Sequence0 {

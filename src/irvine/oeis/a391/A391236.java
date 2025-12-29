@@ -5,7 +5,7 @@ import irvine.oeis.ParallelPermutationSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A391236 allocated for Donghwi Park.
+ * A391236 Number of trihexagonal magic figures of order n using the numbers 1 through 3*n*(n+1)/2 (the 2*n X 2*n triangular array), obtained by applying the trihexagonal tiling so that triangular and hexagonal faces appear alternately, such that all triangular faces share a common sum and all hexagonal faces share a common sum (the latter being exactly twice the former), counted up to rotations and reflections of the overall triangular shape.
  * @author Sean A. Irvine
  */
 public class A391236 extends Sequence1 {

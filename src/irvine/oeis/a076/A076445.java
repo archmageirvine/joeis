@@ -14,6 +14,6 @@ public class A076445 extends FilterSequence {
 
   /** Construct the sequence. */
   public A076445() {
-    super(new A001694(), k -> Predicates.POWERFUL.is(k.add(2)));
+    super(new A001694(), k -> Predicates.SQUAREFUL.is(k.add(2)));
   }
 }

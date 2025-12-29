@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012430 sec(arctan(x)*sin(x))=1+12/4!*x^4-360/6!*x^6+24080/8!*x^8...
+ * A012430 Expansion of e.g.f. sec(arctan(x)*sin(x)) (only even powers).
  * @author Sean A. Irvine
  */
 public class A012430 extends Sequence0 {

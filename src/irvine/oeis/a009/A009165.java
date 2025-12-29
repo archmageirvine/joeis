@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A009165 Expansion of cosh(tan(x)*sinh(x)).
+ * A009165 Expansion of e.g.f. cosh(tan(x)*sinh(x)) (only even powers).
  * @author Sean A. Irvine
  */
 public class A009165 extends Sequence0 {

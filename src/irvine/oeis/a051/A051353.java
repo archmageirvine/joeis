@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A051353 a(n) = a(n-1) + n^2 if n prime else a(n-1) - n.
+ * A051353 a(n) = a(n-1) + n^2 if n prime else a(n-1) - n, starting with a(0) = 0.
  * @author Sean A. Irvine
  */
 public class A051353 extends Sequence0 {

@@ -12,6 +12,6 @@ public class A387901 extends FilterSequence {
 
   /** Construct the sequence. */
   public A387901() {
-    super(1, new A055932(), Predicates.POWERFUL::is);
+    super(1, new A055932(), Predicates.SQUAREFUL::is);
   }
 }

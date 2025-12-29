@@ -13,6 +13,6 @@ public class A335988 extends FilterSequence {
 
   /** Construct the sequence. */
   public A335988() {
-    super(1, new A268335(), v -> Predicates.POWERFUL.is(v));
+    super(1, new A268335(), v -> Predicates.SQUAREFUL.is(v));
   }
 }

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012386 sech(tan(x)*arcsin(x))=1-12/4!*x^4-360/6!*x^6-7280/8!*x^8...
+ * A012386 Expansion of e.g.f. sech(tan(x)*arcsin(x)) (only even powers).
  * @author Sean A. Irvine
  */
 public class A012386 extends Sequence0 {

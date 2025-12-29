@@ -4,7 +4,7 @@ package irvine.oeis.a147;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A147644 Triangle read by rows: t(n,m)=Binomial[n, m] + If[n &gt; 2, 2*Binomial[n - 2, m - 1], 0]; Mod[If[n &gt; 2, 2*Binomial[n - 2, m - 1], 0],2]=0.
+ * A147644 Triangle read by rows: T(n, k) = binomial(n, k) if n &lt; 3, otherwise T(n, k) = binomial(n, k) + 2*binomial(n-2, k-1).
  * @author Georg Fischer
  */
 public class A147644 extends Triangle {

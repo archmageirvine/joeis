@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391765 allocated for Ruud H.G. van Tol.
+ * A391765 a(n) is smallest k such that prime(k) - 1 == 0 (mod n).
  * @author Sean A. Irvine
  */
 public class A391765 extends Sequence1 {

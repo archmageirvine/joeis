@@ -20,7 +20,7 @@ public class A076444 extends Sequence1 {
     final Sequence powerful = new A001694();
     while (true) {
       final Z a = powerful.next();
-      if (Predicates.POWERFUL.is(a.add(mN))) {
+      if (Predicates.SQUAREFUL.is(a.add(mN))) {
         return a;
       }
     }

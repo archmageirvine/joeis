@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A115422 Integers n &gt; 0 such that n XOR 20*n = 21*n.
+ * A115422 Numbers k &gt; 0 such that k XOR 20*k = 21*k.
  * @author Georg Fischer
  */
 public class A115422 extends AbstractSequence {

@@ -14,6 +14,6 @@ public class A379012 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A379012() {
-    super(1, n -> Predicates.POWERFUL.is(Z.valueOf(n)) ? Functions.USIGMA0.z(n) : Z.ZERO);
+    super(1, n -> Predicates.SQUAREFUL.is(Z.valueOf(n)) ? Functions.USIGMA0.z(n) : Z.ZERO);
   }
 }

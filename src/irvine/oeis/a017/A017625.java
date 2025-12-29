@@ -3,7 +3,7 @@ package irvine.oeis.a017;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A017625 (12n+8)^9.
+ * A017625 a(n) = (12*n + 8)^9.
  * @author Sean A. Irvine
  */
 public class A017625 extends LinearRecurrence {

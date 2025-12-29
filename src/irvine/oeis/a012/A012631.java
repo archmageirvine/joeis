@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012631 cosh(arcsinh(x)*arctan(x))=1+12/4!*x^4-360/6!*x^6+20048/8!*x^8...
+ * A012631 Expansion of e.g.f. cosh(arcsinh(x)*arctan(x)) (only even powers).
  * @author Sean A. Irvine
  */
 public class A012631 extends Sequence0 {

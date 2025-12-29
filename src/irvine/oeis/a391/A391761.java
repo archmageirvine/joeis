@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391761 allocated for Jason Bard.
+ * A391761 Continued fraction that converts to its own decimal expansion; the sequence becomes strictly increasing when all zero terms are removed.
  * @author Sean A. Irvine
  */
 public class A391761 extends Sequence0 {

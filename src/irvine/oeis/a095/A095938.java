@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a007.A007097;
 
 /**
- * A095938 a(n+1) = (a(n)-1)-th prime + 1.
+ * A095938 a(n+1) = (a(n)-1)-th prime + 1, a(1) = 2.
  * @author Georg Fischer
  */
 public class A095938 extends AbstractSequence {

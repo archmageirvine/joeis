@@ -4,7 +4,7 @@ package irvine.oeis.a126;
 import irvine.oeis.prime.PrimeConditionListSequence;
 
 /**
- * A126956 Numbers n such that 3n+2, 4n+3 and 5n+4 are primes.
+ * A126956 Numbers k such that 3*k+2, 4*k+3 and 5*k+4 are primes.
  * @author Georg Fischer
  */
 public class A126956 extends PrimeConditionListSequence {

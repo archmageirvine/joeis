@@ -27,7 +27,7 @@ public final class Predicates {
   /** Test if a number is triangular. */
   public static final Predicate TRIANGULAR = new Triangular(); // =A000217
   /** Test if a number is squareful. */
-  public static final Predicate SQUAREFUL = new Squareful();
+  public static final Predicate SQUAREFUL = new Squareful(); // =A001694
   /** Test if a number is square free. */
   public static final Predicate SQUARE_FREE = new SquareFree(); // =A005117
   /** Test if a number is cubeful. */
@@ -56,8 +56,6 @@ public final class Predicates {
   public static final Predicate PERRIN = new Perrin(); // =A013998
   /** Test if a number is a harmonic number as defined by Ore. */
   public static final Predicate ORE_HARMONIC = new OreHarmonic(); // =A001599
-  /** Test if a number is powerful. */
-  public static final Predicate POWERFUL = new Powerful(); // =A001694
   /** Test if a number is happy. */
   public static final Predicate HAPPY = new Happy(); // =A007770
   /** Test if a number is a Cyclops number. */

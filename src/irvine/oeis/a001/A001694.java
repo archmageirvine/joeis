@@ -16,7 +16,7 @@ public class A001694 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z n = Z.valueOf(++mN);
-      if (Predicates.POWERFUL.is(n)) {
+      if (Predicates.SQUAREFUL.is(n)) {
         return n;
       }
     }

@@ -13,6 +13,6 @@ public class A389905 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A389905() {
-    super(1, k -> Z.valueOf((!Predicates.SQUARE_FREE.is(k) && !Predicates.POWERFUL.is(k)) ? 1 : 0));
+    super(1, k -> Z.valueOf((!Predicates.SQUARE_FREE.is(k) && !Predicates.SQUAREFUL.is(k)) ? 1 : 0));
   }
 }

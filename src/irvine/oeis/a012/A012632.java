@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012632 sec(arcsinh(x)*arctan(x))=1+12/4!*x^4-360/6!*x^6+26768/8!*x^8...
+ * A012632 Expansion of e.g.f. sec(arcsinh(x)*arctan(x)) (only even powers).
  * @author Sean A. Irvine
  */
 public class A012632 extends Sequence0 {

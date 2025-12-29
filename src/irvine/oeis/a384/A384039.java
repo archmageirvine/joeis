@@ -14,6 +14,6 @@ public class A384039 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A384039() {
-    super(1, n -> Integers.SINGLETON.count(1, n, k -> Predicates.POWERFUL.is(Functions.GCD.z(n, k))));
+    super(1, n -> Integers.SINGLETON.count(1, n, k -> Predicates.SQUAREFUL.is(Functions.GCD.z(n, k))));
   }
 }

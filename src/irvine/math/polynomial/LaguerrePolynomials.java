@@ -23,7 +23,7 @@ public final class LaguerrePolynomials {
    * Compute Laguerre polynomial as a polynomial over rationals.
    * @param alpha alpha parameter
    * @param n index
-   * @return Jacobi polynomial
+   * @return Laguerre polynomial
    */
   public static Polynomial<Q> p(final int alpha, final long n) {
     final Polynomial<Q> res = RING.empty();

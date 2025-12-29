@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A211409 Numbers n such that (9^n + 4^n)/13 is prime.
+ * A211409 Numbers k such that (9^k + 4^k)/13 is prime.
  * @author Georg Fischer
  */
 public class A211409 extends PrimePositionSubsequence {

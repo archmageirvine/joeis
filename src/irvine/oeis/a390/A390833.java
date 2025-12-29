@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390833 Array read by antidiagonals: A(k, n) is the number of (undirected) Hamiltonian paths on the k X n knight graph.
+ * A390833 Array read by antidiagonals: A(k, n) is the number of undirected Hamiltonian paths on the k X n knight graph.
  * @author Sean A. Irvine
  */
 public class A390833 extends Sequence0 {

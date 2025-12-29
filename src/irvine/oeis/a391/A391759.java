@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391759 allocated for Jason Bard.
+ * A391759 Strictly increasing continued fraction that produces its own decimal expansion (no leading zeros).
  * @author Sean A. Irvine
  */
 public class A391759 extends Sequence0 {

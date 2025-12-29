@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012627 cos(arcsinh(x)*arctan(x))=1-12/4!*x^4+360/6!*x^6-16688/8!*x^8...
+ * A012627 Expansion of e.g.f. cos(arcsinh(x)*arctan(x)) (only even powers).
  * @author Sean A. Irvine
  */
 public class A012627 extends Sequence0 {

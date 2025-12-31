@@ -27,6 +27,9 @@ class LeastPrimitiveRoot extends AbstractFunction1 {
       return true;
     }
     final FactorSequence fs = Jaguar.factor(n);
+    if (n.isOdd() && fs.omega() == 1) {
+      return true;
+    }
     if (fs.omega() == 2 && Z.TWO.equals(fs.toZArray()[0]) && fs.getExponent(Z.TWO) == 1) {
       return true;
     }

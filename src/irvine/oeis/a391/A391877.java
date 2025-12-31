@@ -32,7 +32,7 @@ public class A391877 extends Sequence1 {
   public Z next() {
     ++mN;
     final Bumper bumper = BumperFactory.range(1, mN);
-    int[] k = new int[mParts];
+    final int[] k = new int[mParts];
     Arrays.fill(k, 1);
     Z sum = Z.ZERO;
     do {

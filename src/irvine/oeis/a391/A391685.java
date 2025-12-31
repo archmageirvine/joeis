@@ -13,7 +13,7 @@ public class A391685 extends Sequence0 {
   private long mM = -1;
 
   private Z t(final long n, final long m) {
-    return Z.valueOf(2 *n + 1).shiftLeft(2 * m + 1).subtract(1);
+    return Z.valueOf(2 * n + 1).shiftLeft(2 * m + 1).subtract(1);
   }
 
   @Override

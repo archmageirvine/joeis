@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391538 allocated for Ruediger Jehn.
+ * A391538 Guaranteed win if opponent chooses one of three baskets and the player chooses the coins with values from 1 to n (see Comments for details).
  * @author Sean A. Irvine
  */
 public class A391538 extends Sequence1 {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390645 allocated for Elijah Beregovsky.
+ * A390645 Triangle read by rows: T(n,r) is maximal such that there exists a family F of subsets of {1,...,n} of size T(n,r) such that the intersection of no two sets in F has r elements.
  * @author Sean A. Irvine
  */
 public class A390645 extends Sequence0 {

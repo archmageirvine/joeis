@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391797 allocated for Clark Kimberling.
+ * A391797 Numbers k such that prime(2*k + 2) - prime(2*k) &lt; prime(2*k + 1) - prime(2*k - 1).
  * @author Sean A. Irvine
  */
 public class A391797 extends Sequence1 {

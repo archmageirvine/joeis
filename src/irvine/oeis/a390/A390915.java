@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A390915 Number of n-adic integer solutions of y^(2*n - 1) = y in Z_n.
+ * A390915 Number of elements of the ring of n-adic integers that satisfy y^k = y for at least one integer k &gt; 1.
  * @author Sean A. Irvine
  */
 public class A390915 extends Sequence2 {

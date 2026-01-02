@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391910 allocated for Mikhail Kurkov.
+ * A391910 Triangle read by rows: T(n,k) are the unique integer coefficients such that Sum_{k=0..n} T(n,k)*A125790(k,m)/2^(n*k) = (m+2)^n for all n &gt;= 0, m &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A391910 extends Sequence0 {

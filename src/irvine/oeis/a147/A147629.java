@@ -5,7 +5,7 @@ package irvine.oeis.a147;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A147629 9-factorial numbers (4).
+ * A147629 a(n) = Product_{k = 1..n-1} (9*k - 4).
  * Recurrence: a(n)=a(n-1)+(4+9*(n-2))*a(n-1)=(9*n-13)*a(n-1)
  * @author Georg Fischer
  */

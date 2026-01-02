@@ -5,7 +5,7 @@ import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.a082.A082469;
 
 /**
- * A083908 Numbers n at which record values of A082469(n) occur.
+ * A083908 Record positions in A082469.
  * @author Georg Fischer
  */
 public class A083908 extends RecordPositionSequence {

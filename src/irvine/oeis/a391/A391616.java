@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A391616 allocated for Kaloian Ivanov.
+ * A391616 a(n) = a(n-1) + prime(a(n-1)) + 1 for n &gt; 1, with a(1) = 1.
  * @author Sean A. Irvine
  */
 public class A391616 extends A000040 {

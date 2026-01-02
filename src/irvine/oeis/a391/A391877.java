@@ -11,7 +11,7 @@ import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
 
 /**
- * A391877 allocated for Medet Jumadildayev.
+ * A391877 Number of directed Hamiltonian cycles in the complete 5-partite graph K_{n,n,n,n,n}.
  * @author Sean A. Irvine
  */
 public class A391877 extends Sequence1 {

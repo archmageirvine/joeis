@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A003519 a(n) = 10*C(2n+1, n-4)/(n+6).
+ * A003519 a(n) = 10*binomial(2*n + 1, n - 4)/(n + 6).
  * @author Sean A. Irvine
  */
 public class A003519 extends AbstractSequence {

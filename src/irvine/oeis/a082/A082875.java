@@ -20,7 +20,7 @@ public class A082875 extends Sequence1 {
     Z f = Functions.FACTORIAL.z(mN);
     while (mA.isEmpty() || mA.first().compareTo(f) > 0) {
       for (long k = 0; k <= mN; ++k) {
-        for (long j = 0; j <= mN; ++j) {
+        for (long j = 0; j <= k; ++j) {
           final Z s = f.add(Functions.FACTORIAL.z(k)).add(Functions.FACTORIAL.z(j));
           if (s.isSquare()) {
             mA.add(s);

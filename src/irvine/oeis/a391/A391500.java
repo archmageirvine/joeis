@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391500 allocated for Felix Huber.
+ * A391500 a(n) is the number of ways to decompose A152242(n) into primes.
  * @author Sean A. Irvine
  */
 public class A391500 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391842 allocated for Ho\u00e0n To\u00e1n.
+ * A391842 Integers k such that d(k)*d(k+1) is a divisor of k*(k+1) where d(k) = A000005(k) is the number of divisors of k.
  * @author Sean A. Irvine
  */
 public class A391842 extends Sequence1 {

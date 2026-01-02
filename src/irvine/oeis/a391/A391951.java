@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A391951 Decimal expansion of the volume of an Escher&apos;s solid with unit shorter edge length.
+ * A391951 Decimal expansion of the volume of an Escher's solid with unit shorter edge length.
  * Formula:
  * @author Georg Fischer
  */

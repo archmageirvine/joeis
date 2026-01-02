@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A013463 E.g.f.: sin(arctan(x) - arctanh(x)) (odd powers only).
+ * A013463 Expansion of e.g.f. sin(arctan(x) - arctanh(x)) (odd powers only).
  * @author Sean A. Irvine
  */
 public class A013463 extends Sequence0 {

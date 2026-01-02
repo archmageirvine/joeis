@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A391952 Decimal expansion of the surface area of an Escher&apos;s solid with unit shorter edge length.
+ * A391952 Decimal expansion of the surface area of an Escher's solid with unit shorter edge length.
  * Formula:
  * @author Georg Fischer
  */

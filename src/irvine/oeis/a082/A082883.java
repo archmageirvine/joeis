@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a075.A075860;
 
 /**
- * A082883 Primes p(x) satisfying the following conditions: [1]# A082882(x)=1; [2]# {p(x),p(x+1)} are not twin primes; [3]# values of A075860(j) for j composites between these two non-twin primes are identical. See also A075860, A082880-A082882.
+ * A082883 Primes p(x) satisfying the following conditions: (a) A082882(x)=1; (b) {p(x),p(x+1)} are not twin primes; (c) values of A075860(j) for j composites between these two non-twin primes are identical.
  * @author Sean A. Irvine
  */
 public class A082883 extends Sequence1 {

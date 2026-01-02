@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A391840 allocated for Kaloian Ivanov.
+ * A391840 Base 16 sum of digits of prime(n).
  * @author Sean A. Irvine
  */
 public class A391840 extends SimpleTransformSequence {

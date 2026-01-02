@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391701 allocated for Aloe Poliszuk.
+ * A391701 a(n) = phi(n) * (sigma(n) - tau(n)).
  * @author Sean A. Irvine
  */
 public class A391701 extends Sequence1 {

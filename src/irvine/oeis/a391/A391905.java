@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391905 allocated for Charles L. Hohn.
+ * A391905 Numbers which are the hypotenuse of a primitive Pythagorean quadruple whose legs are also members of a smaller primitive Pythagorean quadruple.
  * @author Sean A. Irvine
  */
 public class A391905 extends Sequence1 {

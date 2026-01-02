@@ -4,7 +4,7 @@ package irvine.oeis.a227;
 import irvine.oeis.a114.A114350;
 
 /**
- * A227412 Primes of the form n^3 + (n+1)^3 + 2.
+ * A227412 Primes of the form k^3 + (k+1)^3 + 2.
  * @author Georg Fischer
  */
 public class A227412 extends A114350 {

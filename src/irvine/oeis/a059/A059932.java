@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A059932 Prime groupings.
+ * A059932 a(n) is formed by concatenating the next prime(n) primes.
  * @author Sean A. Irvine
  */
 public class A059932 extends Sequence0 {

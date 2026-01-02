@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A082887 a(n)=gcd[mod[n!,2^n],mod[(n+1)!,2^(n+1)]].
+ * A082887 a(n) = gcd(n! mod 2^n, (n+1)! mod 2^(n+1)).
  * @author Sean A. Irvine
  */
 public class A082887 extends Sequence0 {

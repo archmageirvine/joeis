@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391887 allocated for Adolf Cusmariu.
+ * A391887 Alternately add and multiply the last two terms starting with 2, 1.
  * @author Sean A. Irvine
  */
 public class A391887 extends Sequence0 {

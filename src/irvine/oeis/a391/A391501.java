@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a350.A350352;
 
 /**
- * A391501 allocated for Felix Huber.
+ * A391501 a(n) is the number of composites k such that radical(k) = sopfr(k) = A350352(n).
  * @author Sean A. Irvine
  */
 public class A391501 extends A350352 {

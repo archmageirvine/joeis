@@ -6,7 +6,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A153584 Integers n such that floor((e + Pi)^n) is prime.
+ * A153584 Integers k such that floor((e + Pi)^k) is prime.
  * @author Georg Fischer
  */
 public class A153584 extends FilterNumberSequence {

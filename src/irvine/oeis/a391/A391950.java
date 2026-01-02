@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391950 allocated for Gabriele Celebre.
+ * A391950 Triangle T(n,k) of coefficients of polynomials arising from Gaussian-weighted Chebyshev integrals.
  * @author Sean A. Irvine
  */
 public class A391950 extends Sequence1 {

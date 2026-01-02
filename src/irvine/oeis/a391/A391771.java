@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A391771 allocated for Jean-Marc Rebert.
+ * A391771 Smallest number that is the sum of n &gt; 2 consecutive primes and also the sum of n consecutive composites.
  * @author Sean A. Irvine
  */
 public class A391771 extends Sequence3 {

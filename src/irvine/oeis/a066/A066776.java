@@ -5,7 +5,7 @@ import irvine.oeis.a043.A043347;
 import irvine.oeis.prime.PrimePositionSubsequence;
 
 /**
- * A066776 Numbers n such that A043347(n) is a prime.
+ * A066776 Numbers k such that A043347(k) is a prime.
  * @author Georg Fischer
  */
 public class A066776 extends PrimePositionSubsequence {

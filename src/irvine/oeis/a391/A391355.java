@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391355 allocated for Clark Kimberling.
+ * A391355 Numbers k such that 4*k - (greatest prime &lt; 4*k) = (least prime &gt; 4*k) - 4*k.
  * @author Sean A. Irvine
  */
 public class A391355 extends Sequence1 {

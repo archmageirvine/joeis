@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a373.A373387;
 
 /**
- * A390320 allocated for Gabriele Di Pietro.
+ * A390320 Positive integers (not multiples of 10 and greater than 1) whose constant congruence speed is greater than the maximum of the constant congruence speeds of all their prime factors (see A373387 for the definition of "constant congruence speed").
  * @author Sean A. Irvine
  */
 public class A390320 extends Sequence1 {

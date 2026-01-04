@@ -17,32 +17,36 @@ public class A054252 extends Sequence0 {
 
   private static final PolynomialRing<Q> RING = new PolynomialRing<>(Rationals.SINGLETON);
   private static final Q ONE_EIGHTH = new Q(1, 8);
-  private Polynomial<Q> mA = RING.one();
+  protected Polynomial<Q> mA = RING.one();
   private long mN = 0;
   private int mM = -1;
+
+  protected void step() {
+    CycleIndex ci = new CycleIndex();
+    if ((++mN & 1) == 0) {
+      ci.add(MultivariateMonomial.create(1, mN * mN, ONE_EIGHTH));
+      ci.add(MultivariateMonomial.create(2, mN * mN / 2, ONE_EIGHTH));
+      ci.add(MultivariateMonomial.create(4, mN * mN / 4, Q.ONE_QUARTER));
+      ci.add(MultivariateMonomial.create(2, mN * mN / 2, Q.ONE_QUARTER));
+      final MultivariateMonomial mm = MultivariateMonomial.create(1, mN, Q.ONE_QUARTER);
+      mm.add(2, (mN * mN - mN) / 2);
+      ci.add(mm);
+    } else {
+      ci.add(MultivariateMonomial.create(1, mN * mN - 1, ONE_EIGHTH));
+      ci.add(MultivariateMonomial.create(2, (mN * mN - 1) / 2, ONE_EIGHTH));
+      ci.add(MultivariateMonomial.create(4, (mN * mN - 1) / 4, Q.ONE_QUARTER));
+      ci = ci.multiply(MultivariateMonomial.create(1, 1));
+      final MultivariateMonomial mm = MultivariateMonomial.create(1, mN, Q.HALF);
+      mm.add(2, mN * (mN - 1) / 2);
+      ci.add(mm);
+    }
+    mA = ci.applyOnePlusXToTheN();
+  }
 
   @Override
   public Z next() {
     if (++mM > mA.degree()) {
-      CycleIndex ci = new CycleIndex();
-      if ((++mN & 1) == 0) {
-        ci.add(MultivariateMonomial.create(1, mN * mN, ONE_EIGHTH));
-        ci.add(MultivariateMonomial.create(2, mN * mN / 2, ONE_EIGHTH));
-        ci.add(MultivariateMonomial.create(4, mN * mN / 4, Q.ONE_QUARTER));
-        ci.add(MultivariateMonomial.create(2, mN * mN / 2, Q.ONE_QUARTER));
-        final MultivariateMonomial mm = MultivariateMonomial.create(1, mN, Q.ONE_QUARTER);
-        mm.add(2, (mN * mN - mN) / 2);
-        ci.add(mm);
-      } else {
-        ci.add(MultivariateMonomial.create(1, mN * mN - 1, ONE_EIGHTH));
-        ci.add(MultivariateMonomial.create(2, (mN * mN - 1) / 2, ONE_EIGHTH));
-        ci.add(MultivariateMonomial.create(4, (mN * mN - 1) / 4, Q.ONE_QUARTER));
-        ci = ci.multiply(MultivariateMonomial.create(1, 1));
-        final MultivariateMonomial mm = MultivariateMonomial.create(1, mN, Q.HALF);
-        mm.add(2, mN * (mN - 1) / 2);
-        ci.add(mm);
-      }
-      mA = ci.applyOnePlusXToTheN();
+      step();
       mM = 0;
     }
     return mA.coeff(mM).toZ();

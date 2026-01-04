@@ -21,9 +21,7 @@ public class A391646 extends Sequence0 {
 
   @Override
   public Z next() {
-    if (++mN == 0) {
-      return Z.TWO; // Feels contrived, should be 1
-    }
+    ++mN;
     while (mFirsts.get(mN) == 0) {
       if (Predicates.SQUAREFUL.is(++mM)) {
         long sum = 0;

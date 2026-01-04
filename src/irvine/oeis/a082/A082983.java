@@ -22,12 +22,12 @@ public class A082983 extends Sequence0 {
     mQueue.add(n.multiply(4).add(1));
     final long r = n.mod(3);
     if (r == 1) {
-      Z m = n.multiply(4).subtract(1).divide(3).makeOdd();
+      final Z m = n.multiply(4).subtract(1).divide(3).makeOdd();
       if (m.compareTo(Z.ONE) > 0) {
         mQueue.add(m);
       }
     } else if (r == 2) {
-      Z m = n.multiply(2).subtract(1).divide(3).makeOdd();
+      final Z m = n.multiply(2).subtract(1).divide(3).makeOdd();
       if (m.compareTo(Z.ONE) > 0) {
         mQueue.add(m);
       }

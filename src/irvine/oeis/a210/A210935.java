@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A210935 Numbers n for which n*n&apos;/(n+n&apos;) is an integer, where n&apos; is the arithmetic derivative of n.
+ * A210935 Numbers n for which n*n'/(n+n') is an integer, where n' is the arithmetic derivative of n.
  * @author Georg Fischer
  */
 public class A210935 extends FilterNumberSequence {

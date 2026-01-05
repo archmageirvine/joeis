@@ -15,6 +15,6 @@ public class A093880 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A093880() {
-    super(1, n -> A003418.a(2 * n).divide(A003418.a(n)));
+    super(0, n -> A003418.a(2 * n).divide(A003418.a(n)));
   }
 }

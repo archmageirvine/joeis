@@ -6,7 +6,7 @@ import irvine.oeis.a023.A023416;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A216431 a(0)=0; thereafter a(n+1) = a(n) + 1 + number of 0&apos;s in binary representation of a(n), counted with A023416.
+ * A216431 a(0)=0; thereafter a(n+1) = a(n) + 1 + number of 0's in binary representation of a(n), counted with A023416.
  * @author Georg Fischer
  */
 public class A216431 extends MultiTransformSequence {

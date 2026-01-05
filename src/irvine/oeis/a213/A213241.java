@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A213241 Numbers n for which n=(n&apos;&apos; mod n&apos;), where n&apos; and n&apos;&apos; are the first and second arithmetic derivative of n.
+ * A213241 Numbers n for which n=(n'' mod n'), where n' and n'' are the first and second arithmetic derivative of n.
  * @author Georg Fischer
  */
 public class A213241 extends FilterNumberSequence {

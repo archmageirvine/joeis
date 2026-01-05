@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.triangle.LambdaArray;
 
 /**
- * A211367 Array read by antidiagonals: T(m,n) = m * Sum(1&lt;=i&lt;=m) (m+n-2+i)!
+ * A211367 Array read by antidiagonals: T(m,n) = m * Sum(1&lt;=i&lt;=m) (m+n-2+i)!.
  * @author Georg Fischer
  */
 public class A211367 extends LambdaArray {

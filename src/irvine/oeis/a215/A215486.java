@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A215486 n - 1 mod phi(n), where phi(n) is Euler&apos;s totient function.
+ * A215486 n - 1 mod phi(n), where phi(n) is Euler's totient function.
  * @author Georg Fischer
  */
 public class A215486 extends LambdaSequence {

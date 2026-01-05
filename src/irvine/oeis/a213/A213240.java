@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A213240 Numbers k such that sum of digits of k = sum of digits of k&apos;, where k&apos; is the arithmetic derivative of k.
+ * A213240 Numbers k such that sum of digits of k = sum of digits of k', where k' is the arithmetic derivative of k.
  * @author Georg Fischer
  */
 public class A213240 extends FilterNumberSequence {

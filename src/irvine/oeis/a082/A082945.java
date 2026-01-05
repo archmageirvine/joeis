@@ -26,7 +26,7 @@ public class A082945 extends Sequence1 {
         continue;
       }
       final Z left = new Z(s.substring(0, s.length() / 2));
-      if (left.multiply(mid - '0').equals(new Z(s.substring(s.length() / 2 + 1)))) {
+      if (left.equals(new Z(s.substring(s.length() / 2 + 1)).multiply(mid - '0'))) {
         return p;
       }
     }

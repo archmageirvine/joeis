@@ -15,10 +15,10 @@ import irvine.oeis.Sequence1;
  */
 public class A080858 extends Sequence1 {
 
-  private int mN = 0;
+  protected int mN = 0;
   private int mM = 0;
 
-  private boolean is(final DefaultMatrix<Q> m) {
+  protected boolean is(final DefaultMatrix<Q> m) {
     final MatrixField<Q> fld = new MatrixField<>(mN, Rationals.SINGLETON);
     if (fld.det(m).signum() <= 0) {
       return false;

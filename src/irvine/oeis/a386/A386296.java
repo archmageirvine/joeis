@@ -113,7 +113,9 @@ public class A386296 extends AbstractSequence {
     }
 
     private int[] findFirstEmpty(final int depth) {
-      final int x0 = mEmptyPositions[depth][0], y0 = mEmptyPositions[depth][1], z0 = mEmptyPositions[depth][2];
+      final int x0 = mEmptyPositions[depth][0];
+      final int y0 = mEmptyPositions[depth][1];
+      final int z0 = mEmptyPositions[depth][2];
       for (int z = z0; z < mN; z++) {
         for (int y = z == z0 ? y0 : 0; y < mN; y++) {
           for (int x = z == z0 && y == y0 ? x0 : 0; x < mN; x++) {

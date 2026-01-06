@@ -42,6 +42,15 @@ public class CC extends Number implements Comparable<CC>, IsInteger {
   }
 
   /**
+   * Construct a complex number with specified real and imaginary parts.
+   * @param re real part
+   * @param im imaginary part
+   */
+  public CC(final long re, final long im) {
+    this(CR.valueOf(re), CR.valueOf(im));
+  }
+
+  /**
    * Construct the complex number <code>n+0i</code>.
    * @param x double value
    */

@@ -2,6 +2,7 @@ package irvine.math.group;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 import irvine.math.api.Field;
@@ -845,5 +846,25 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
       b = bp;
     }
     return b;
+  }
+
+  /**
+   * Return the Sturm sequence for a polynomial
+   * @param p polynomial
+   * @return Sturm sequence
+   */
+  public List<Polynomial<E>> sturmSequence(final Polynomial<E> p) {
+    final List<Polynomial<E>> seq = new ArrayList<>();
+    Polynomial<E> p0 = p;
+    Polynomial<E> p1 = diff(p);
+    seq.add(p0);
+    seq.add(p1);
+    while (!isZero(p1)) {
+      final Polynomial<E> r = negate(mod(p0, p1));
+      seq.add(r);
+      p0 = p1;
+      p1 = r;
+    }
+    return seq;
   }
 }

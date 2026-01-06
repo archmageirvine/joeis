@@ -606,4 +606,23 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
     final E coeff = p.leadingCoeff();
     return ((OrderedIntegralDomain<E>) mElementRing).abs(coeff).equals(coeff) ? p : negate(p);
   }
+
+  /**
+   * Remove any common factors of <code>x</code> from the polynomial.
+   * Effectively shifts the polynomial down, so that the <code>x^0</code>
+   * coefficient is nonzero.
+   * @param p polynomial
+   * @return shifted polynomial
+   */
+  public Polynomial<E> stripZeroRoots(final Polynomial<E> p) {
+    if (isZero(p)) {
+      return p;
+    }
+    int k = 0;
+    while (mElementRing.isZero(p.coeff(k))) {
+      ++k;
+    }
+    return shift(p, -k);
+  }
+
 }

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392008 allocated for Charles Kusniec.
+ * A392008 Odd squarefree integers with at least 3 prime factors.
  * @author Sean A. Irvine
  */
 public class A392008 extends Sequence1 {

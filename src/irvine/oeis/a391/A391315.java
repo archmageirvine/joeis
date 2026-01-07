@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000108;
 import irvine.oeis.a061.A061552;
 
 /**
- * A391315 allocated for Charles Cornell Norton.
+ * A391315 Number of 1324-avoiding permutations of [n] in which the largest element is not in the final position.
  * @author Sean A. Irvine
  */
 public class A391315 extends Combiner {

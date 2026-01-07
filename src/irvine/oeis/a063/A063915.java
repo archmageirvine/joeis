@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A063915 G.f.: (1 + Sum_{ i &gt;= 0 } 2^i*x^(2^(i+1)-1)) / (1-x)^2.
+ * A063915 Expansion of g.f. (1 + Sum_{ i &gt;= 0 } 2^i*x^(2^(i+1)-1)) / (1-x)^2.
  * @author Sean A. Irvine
  */
 public class A063915 extends MemorySequence {

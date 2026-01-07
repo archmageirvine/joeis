@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A083020 Prime factors of 3^(3^n) + 2.
+ * A083020 Irregular triangle read by row of the prime factors of 3^(3^n) + 2.
  * @author Sean A. Irvine
  */
 public class A083020 extends Sequence0 {

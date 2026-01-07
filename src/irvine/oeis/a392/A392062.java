@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392062 allocated for Robert Israel.
+ * A392062 Numbers k such that every prime factor of the sum of decimal digits of k is greater than every prime factor of k.
  * @author Sean A. Irvine
  */
 public class A392062 extends Sequence1 {

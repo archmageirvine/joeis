@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391496 allocated for Juri-Stepan Gerasimov.
+ * A391496 a(n) is the smallest k which has exactly 2*n divisors d such that tau(k) = tau(k/d + d).
  * @author Sean A. Irvine
  */
 public class A391496 extends Sequence0 {

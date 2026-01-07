@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392031 allocated for Juri-Stepan Gerasimov.
+ * A392031 a(n) is the smallest k which has exactly n divisors d such that sigma(d) = sigma(d + k/d) where sigma = A000203.
  * @author Sean A. Irvine
  */
 public class A392031 extends Sequence1 {

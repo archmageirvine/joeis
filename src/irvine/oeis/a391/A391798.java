@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391798 allocated for Clark Kimberling.
+ * A391798 Numbers k such that prime(2*k + 2) - prime(2*k) = prime(2*k + 1) - prime(2*k - 1).
  * @author Sean A. Irvine
  */
 public class A391798 extends Sequence1 {

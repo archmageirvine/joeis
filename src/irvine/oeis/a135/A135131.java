@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A135131 Integers n such that 10^n + 79 is a prime number.
+ * A135131 Integers k such that 10^k + 79 is a prime number.
  * @author Georg Fischer
  */
 public class A135131 extends PrimePositionSubsequence {

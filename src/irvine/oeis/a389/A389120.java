@@ -4,7 +4,7 @@ package irvine.oeis.a389;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A389120 a(n) = 2*a(n-1) + 2*a(n-2) + 2*a(n-3) - a(n-4) with a(0)=0, a(1)=1, a(2)=2, a(3)=7, a(4)=20.
+ * A389120 a(n) = 2*a(n-1) + 2*a(n-2) + 2*a(n-3) - a(n-4) with a(0)=0, a(1)=1, a(2)=2, a(3)=7.
  * @author Georg Fischer
  */
 public class A389120 extends HolonomicRecurrence {

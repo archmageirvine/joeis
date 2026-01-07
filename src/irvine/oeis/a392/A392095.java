@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392095 allocated for Mikhail Kurkov.
+ * A392095 Array read by downward antidiagonals: A(n,k) = A(n-1,k+1) + Sum_{j=0..k} A(n-1,j)*A(k-j,0) with A(0,k) = 1.
  * @author Sean A. Irvine
  */
 public class A392095 extends Sequence0 {

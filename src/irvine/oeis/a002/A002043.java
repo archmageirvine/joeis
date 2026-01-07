@@ -7,7 +7,7 @@ import irvine.math.series.SeriesRing;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A002043 Solid partitions.
+ * A002043 MacMahon's solid partitions of n in which 2 is the smallest summand.
  * @author Sean A. Irvine
  */
 public class A002043 extends GfSequence {

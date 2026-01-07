@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000045;
 
 /**
- * A051656 Sum_{i=0..n} (C(n,i) mod 2)*Fibonacci(2*i).
+ * A051656 a(n) = Sum_{i=0..n} (C(n,i) mod 2)*Fibonacci(2*i).
  * @author Sean A. Irvine
  */
 public class A051656 extends Sequence0 {

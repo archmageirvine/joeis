@@ -5,7 +5,7 @@ import irvine.oeis.a050.A050249;
 import irvine.oeis.a125.A125001;
 
 /**
- * A391722 allocated for Emmanuel Vantieghem.
+ * A391722 Weakly primes (A050249) that are also non-insertable primes (A125001).
  * @author Sean A. Irvine
  */
 public class A391722 extends FilterSequence {

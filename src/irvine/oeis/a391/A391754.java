@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A391754 allocated for Michael De Vlieger.
+ * A391754 a(n) = number of solutions involving 3 smaller numbers {i,j,k} that each exceed 0 such that i*n^2 + j*n + k, j*n^2 + k*n + i, and k*n^2 + i*n + j are distinct and have the same squarefree kernel.
  * @author Sean A. Irvine
  */
 public class A391754 extends Sequence3 {

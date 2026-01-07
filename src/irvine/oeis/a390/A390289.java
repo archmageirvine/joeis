@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a004.A004709;
 
 /**
- * A390289 allocated for Michael De Vlieger.
+ * A390289 Cubefree numbers that are not prime powers.
  * @author Sean A. Irvine
  */
 public class A390289 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391800 allocated for Clark Kimberling.
+ * A391800 Primes indexed by A391797.
  * @author Sean A. Irvine
  */
 public class A391800 extends Sequence1 {

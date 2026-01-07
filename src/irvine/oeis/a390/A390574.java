@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390574 allocated for Charles L. Hohn.
+ * A390574 Numbers for which the square of its largest prime factor equals the sum of the squares of its other prime factors.
  * @author Sean A. Irvine
  */
 public class A390574 extends Sequence1 {

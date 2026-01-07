@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A294997 Numbers n such that the largest digit of n^3 is 7.
+ * A294997 Numbers k such that the largest digit of k^3 is 7.
  * @author Georg Fischer
  */
 public class A294997 extends FilterNumberSequence {

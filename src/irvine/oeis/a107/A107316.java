@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A107316 Floor(exp(n)/n).
+ * A107316 a(n) = floor(exp(n)/n).
  * @author Georg Fischer
  */
 public class A107316 extends FloorSequence {

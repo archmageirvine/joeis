@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A391948 allocated for Gavin A. Forrester.
+ * A391948 Primes p such that f(p) is prime and f(f(p)) = p, where f(k) = 10 * (10^(floor(log_10(k)) + 1) - 1)/9 - k.
  * @author Sean A. Irvine
  */
 public class A391948 extends A000040 {

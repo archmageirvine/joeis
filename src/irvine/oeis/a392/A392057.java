@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392057 allocated for Alex Ratushnyak.
+ * A392057 a(0)=0, a(n) = wt(a(n-1)) + wt(n), where wt(x) is the binary weight of x, A000120.
  * @author Sean A. Irvine
  */
 public class A392057 extends Sequence0 {

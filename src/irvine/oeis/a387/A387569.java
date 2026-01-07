@@ -7,7 +7,7 @@ import irvine.math.zi.Zi;
 import irvine.oeis.Sequence1;
 
 /**
- * A387569 allocated for Rick Zhou.
+ * A387569 a(n) is the smallest positive integer y such that there exists an integer x such that binomial(x + i*y, n) is a Gaussian integer.
  * @author Sean A. Irvine
  */
 public class A387569 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a072.A072522;
 
 /**
- * A080824 Numbers n such that T(n)=T(A072522(n))+T(A072522(n+1)), T(i) being the triangular numbers.
+ * A080824 Numbers k such that T(k) = T(A072522(k)) + T(A072522(k+1)), T(i) being the triangular numbers.
  * @author Sean A. Irvine
  */
 public class A080824 extends A072522 {

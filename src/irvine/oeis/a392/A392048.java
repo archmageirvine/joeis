@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002487;
 
 /**
- * A392048 allocated for Frederik G. Faye.
+ * A392048 a(n) is the number of distinct integers that can be created by summing combinations of the n+1 first rationals {b(0)/b(1), ..., b(n)/b(n+1)}, where b(k)=A002487(k) is Stern's diatomic series.
  * @author Sean A. Irvine
  */
 public class A392048 extends Sequence1 {

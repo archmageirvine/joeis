@@ -115,8 +115,8 @@ public class A391498 extends AbstractSequence {
       final int x0 = mEmptyPositions[depth][0];
       final int y0 = mEmptyPositions[depth][1];
       for (int y = y0; y < mN; y++) {
-        for (int x = y == y0 ? x0 : 0; x < mN; x++) {
-          if (!mOccupied[x][y]) {
+        for (int x = y == y0 ? x0 : 0; x < mOccupied[y].length; x++) {
+          if (!mOccupied[y][x]) {
             mEmptyPositions[depth + 1][0] = x;
             mEmptyPositions[depth + 1][1] = y;
             return new int[] {x, y};
@@ -131,12 +131,12 @@ public class A391498 extends AbstractSequence {
     }
 
     private boolean canPlace(final int x0, final int y0, final int dx, final int dy) {
-      if (mOccupied[x0 + dx - 1][y0 + dy - 1]) {
+      if (mOccupied[y0 + dy - 1][x0 + dx - 1]) {
         return false;
       }
       for (int x = x0; x < x0 + dx; ++x) {
         for (int y = y0; y < y0 + dy; ++y) {
-          if (mOccupied[x][y]) {
+          if (mOccupied[y][x]) {
             return false;
           }
         }
@@ -147,7 +147,7 @@ public class A391498 extends AbstractSequence {
     private void place(final int x0, final int y0, final int dx, final int dy, final boolean value) {
       for (int x = x0; x < x0 + dx; ++x) {
         for (int y = y0; y < y0 + dy; ++y) {
-          mOccupied[x][y] = value;
+          mOccupied[y][x] = value;
         }
       }
     }
@@ -156,8 +156,7 @@ public class A391498 extends AbstractSequence {
       return (x == 0 || x + dx == mN) && (y == 0 || y + dy == mN);
     }
 
-    private boolean backtrack(final int[] trapezoids, final long usedCuboids, final int firstCuboid, final int depth) {
-
+    private boolean backtrack(final int[] trapezoids, final long usedTrapezoids, final int firstTrapezoid, final int depth) {
       final int[] cell = findFirstEmpty(depth);
       if (cell == null) {
         return true; // all cells filled
@@ -167,25 +166,25 @@ public class A391498 extends AbstractSequence {
       final int y0 = cell[1];
 
       for (int i = 0; i < trapezoids.length; ++i) {
-        if ((usedCuboids & (1L << i)) == 0) {
+        if ((usedTrapezoids & (1L << i)) == 0) {
           for (final int[] orient : mOrientations.get(trapezoids[i])) {
             final int dx = orient[0];
             final int dy = orient[1];
             if (fits(x0, y0, dx, dy)) {
-              if (i < firstCuboid && isCornerPlacement(x0, y0, dx, dy)) {
+              if (i < firstTrapezoid && isCornerPlacement(x0, y0, dx, dy)) {
                 // This trapezoid was previously tried in a corner and no solution was found,
                 // so there is no point in trying it in such a placement now.
                 continue;
               }
               if (canPlace(x0, y0, dx, dy)) {
                 place(x0, y0, dx, dy, true);
-                if (backtrack(trapezoids, usedCuboids | (1L << i), depth == 0 ? i : firstCuboid, depth + 1)) {
+                if (backtrack(trapezoids, usedTrapezoids | (1L << i), depth == 0 ? i : firstTrapezoid, depth + 1)) {
                   return true;
                 }
                 place(x0, y0, dx, dy, false);
               }
             }
-            if (usedCuboids == 0) {
+            if (usedTrapezoids == 0) {
               break; // If placing the first trapezoid, by symmetry, we need only consider one orientation
             }
           }
@@ -195,8 +194,12 @@ public class A391498 extends AbstractSequence {
     }
 
     private boolean canPack(final int[] trapezoids) {
-      mOccupied = new boolean[mN][mN];
-      mEmptyPositions = new int[trapezoids.length + 1][3];
+      // Make up empty equilateral triangle
+      mOccupied = new boolean[mN][];
+      for (int k = 0; k < mN; ++k) {
+        mOccupied[k] = new boolean[2 * mN + 1];
+      }
+      mEmptyPositions = new int[trapezoids.length + 1][2];
       return backtrack(trapezoids, 0, 0, 0);
     }
   }

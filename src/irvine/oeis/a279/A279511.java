@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A279511 Sierpinski square-based pyramid numbers: a(n) = 5*a(n-1) - (2^(n+1)+7).
+ * A279511 Sierpinski square-based pyramid numbers: a(n) = 5*a(n-1) - (2^(n+1) + 7).
  * @author Sean A. Irvine
  */
 public class A279511 extends LinearRecurrence {

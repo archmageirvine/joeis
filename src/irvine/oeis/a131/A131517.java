@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A131517 Jazz chord substitution: Aminor,Cminor,DMajor,GMajor Uses a start vector based on these: {1, 4, 6, 11}.
+ * A131517 Jazz chord substitution: A-minor, C-minor, D-major, G-major Uses a start vector based on these: {1, 4, 6, 11}.
  * @author Georg Fischer
  */
 public class A131517 extends MorphismFixedPointSequence {

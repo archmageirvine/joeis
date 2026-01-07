@@ -5,7 +5,7 @@ import irvine.oeis.a291.A291463;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A392034 allocated for Anthony S. Wright.
+ * A392034 a(n) = prime(n)*(prime(n+1) - prime(n))/2.
  * @author Sean A. Irvine
  */
 public class A392034 extends SimpleTransformSequence {

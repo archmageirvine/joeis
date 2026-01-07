@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a046.A046951;
 
 /**
- * A391841 allocated for Felix Huber.
+ * A391841 Positive integers k with exactly sqrt(tau(k)) square divisors.
  * @author Sean A. Irvine
  */
 public class A391841 extends FilterPositionSequence {

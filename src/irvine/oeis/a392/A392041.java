@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392041 allocated for Jean-Marc Rebert.
+ * A392041 Smallest prime number whose decimal digits include the consecutive pattern 1, 2, ..., n.
  * @author Sean A. Irvine
  */
 public class A392041 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A392017 allocated for Artur Jasinski.
+ * A392017 Decimal expansion of sqrt(3)*log(2+sqrt(3)).
  * @author Sean A. Irvine
  */
 public class A392017 extends DecimalExpansionSequence {

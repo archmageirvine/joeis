@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a052.A052486;
 
 /**
- * A391923 allocated for Michael De Vlieger.
+ * A391923 Achilles numbers divisible by only 1 cube greater than 1.
  * @author Sean A. Irvine
  */
 public class A391923 extends FilterSequence {

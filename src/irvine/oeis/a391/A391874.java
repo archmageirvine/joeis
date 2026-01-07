@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a390.A390574;
 
 /**
- * A391874 allocated for Charles L. Hohn.
+ * A391874 Nonsquare integers &gt;= 2 for which the square of its largest prime factor equals the sum of the squares of its other prime factors, with multiplicity.
  * @author Sean A. Irvine
  */
 public class A391874 extends FilterSequence {

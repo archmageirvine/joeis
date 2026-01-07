@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A115396 Smallest prime p such that p+-2n are semiprimes.
+ * A115396 Smallest prime p such that p +- 2*n are semiprimes.
  * @author Sean A. Irvine
  */
 public class A115396 extends Sequence1 {

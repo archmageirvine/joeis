@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A082663 Odd semiprimes pq with p &lt; q &lt; 2p.
+ * A082663 Odd semiprimes p*q with p &lt; q &lt; 2*p.
  * @author Sean A. Irvine
  */
 public class A082663 extends Sequence1 {

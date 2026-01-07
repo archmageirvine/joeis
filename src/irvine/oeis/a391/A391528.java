@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391528 allocated for Paolo P. Lava.
+ * A391528 Consider the following process: take an integer k&gt;9, sum the digits, repeat the sum deleting the first addendum and adding the previous sum and so on. Sequence lists the minimum integer k such that, after exactly n steps of this process, reaches an integer j which in turn, applying the same process, reaches k again, in a number of steps not necessarily equal to n.
  * @author Sean A. Irvine
  */
 public class A391528 extends Sequence1 {

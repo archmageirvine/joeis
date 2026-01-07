@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A391803 allocated for Clark Kimberling.
+ * A391803 a(n) = floor(Sum_{k=1..n} n/prime(k)).
  * @author Sean A. Irvine
  */
 public class A391803 extends A000040 {

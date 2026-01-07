@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A389565 allocated for Ryota Inagaki.
+ * A389565 Total number of firings in a certain chip-firing game that starts with 2^n chips and is described in the comments.
  * @author Sean A. Irvine
  */
 public class A389565 extends Sequence0 {

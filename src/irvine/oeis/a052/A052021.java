@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A052021 Sum of digits of n is the largest prime factor of n.
+ * A052021 Numbers with a sum of digits equal to their greatest prime factor.
  * @author Sean A. Irvine
  */
 public class A052021 extends Sequence1 {

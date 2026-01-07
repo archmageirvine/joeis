@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390129 allocated for Ryota Inagaki.
+ * A390129 The number of layers of vertices that ever have chips in a certain chip-firing game that starts with 2^n chips and is described in the comments.
  * @author Sean A. Irvine
  */
 public class A390129 extends Sequence0 {

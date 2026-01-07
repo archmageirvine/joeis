@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A392026 allocated for Artur Jasinski.
+ * A392026 Decimal expansion of 113*Pi + 355.
  * @author Sean A. Irvine
  */
 public class A392026 extends DecimalExpansionSequence {

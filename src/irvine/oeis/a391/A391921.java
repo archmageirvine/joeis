@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a372.A372404;
 
 /**
- * A391921 allocated for Michael De Vlieger.
+ * A391921 Powerful numbers that are not cubefree and are divisible by exactly 2 distinct primes.
  * @author Sean A. Irvine
  */
 public class A391921 extends FilterSequence {

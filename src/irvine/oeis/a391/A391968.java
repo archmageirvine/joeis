@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a046.A046099;
 
 /**
- * A391968 allocated for Michael De Vlieger.
+ * A391968 Numbers divisible by at least 2 cubes greater than 1.
  * @author Sean A. Irvine
  */
 public class A391968 extends Sequence1 {

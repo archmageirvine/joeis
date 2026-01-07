@@ -7,7 +7,7 @@ import irvine.math.series.SeriesRing;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A387674 allocated for Nour Abouyoussef.
+ * A387674 Expansion of g.f. (Sum_{i&gt;=0} (i!-1)*x^i)/(Sum_{i&gt;=0} i!*x^i).
  * @author Sean A. Irvine
  */
 public class A387674 extends GfSequence {

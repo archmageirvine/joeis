@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a052.A052486;
 
 /**
- * A391980 allocated for Michael De Vlieger.
+ * A391980 Achilles numbers divisible by at least 2 cubes greater than 1.
  * @author Sean A. Irvine
  */
 public class A391980 extends Sequence1 {

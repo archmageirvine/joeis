@@ -9,7 +9,7 @@ import irvine.util.array.LongDynamicLongArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A391646 allocated for Jean-Marc Rebert.
+ * A391646 a(n) is the least integer k such that the sum of the prime divisors of k, each taken modulo its exponent in the prime factorization of k, equals n.
  * @author Sean A. Irvine
  */
 public class A391646 extends Sequence0 {

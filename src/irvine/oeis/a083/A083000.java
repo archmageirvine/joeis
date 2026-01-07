@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083000 Values of x for which 9y^2 = x^2 + 2xy - 2x has integer solutions with positive y.
+ * A083000 Values of x for which 9*y^2 = x^2 + 2*x*y - 2*x has integer solutions with positive y.
  * @author Sean A. Irvine
  */
 public class A083000 extends Sequence1 {

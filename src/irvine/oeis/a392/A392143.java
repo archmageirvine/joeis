@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390129.
+ * A392143 a(n) = (n^(n - 1) - 1)^n.
  * @author Sean A. Irvine
  */
 public class A392143 extends Sequence1 {

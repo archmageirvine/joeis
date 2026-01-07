@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterSequence;
 
 /**
- * A391922 allocated for Michael De Vlieger.
+ * A391922 Numbers that are neither cubefree nor powerful and have exactly 2 distinct prime factors.
  * @author Sean A. Irvine
  */
 public class A391922 extends FilterSequence {

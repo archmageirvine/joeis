@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A147630 a(1) = 1; for n&gt;1, a(n) = Product_{k = 1..n-1} (9k - 3).
+ * A147630 a(n) = Product_{k = 1..n-1} (9*k - 3).
  * @author Georg Fischer
  */
 public class A147630 extends Sequence1 {

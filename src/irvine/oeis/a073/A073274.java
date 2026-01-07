@@ -4,7 +4,7 @@ import irvine.oeis.Combiner;
 import irvine.oeis.a000.A000040;
 
 /**
- * A073274 A000040(n+1) - A073273(n).
+ * A073274 a(n) = A000040(n+1) - A073273(n).
  * @author Sean A. Irvine
  */
 public class A073274 extends Combiner {

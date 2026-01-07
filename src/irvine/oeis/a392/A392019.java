@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392019 allocated for Elijah Beregovsky.
+ * A392019 If binomial(n,k) = u*v where the only primes dividing u are &lt;= k and the only primes dividing v are &gt; k, then a(n) is the least k such that u &gt; n^2, or 0 if such a k doesn't exist.
  * @author Sean A. Irvine
  */
 public class A392019 extends Sequence1 {

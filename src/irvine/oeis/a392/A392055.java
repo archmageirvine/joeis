@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392055 allocated for Rick Zhou.
+ * A392055 a(n) = p if n = p^k is a perfect power of either a ramified or inert prime in the Gaussian integers and 1 otherwise.
  * @author Sean A. Irvine
  */
 public class A392055 extends Sequence1 {

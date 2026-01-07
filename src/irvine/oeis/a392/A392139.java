@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390129.
+ * A392139 Number of ways to write n^4 as an ordered sum of n fourth powers of integers.
  * @author Sean A. Irvine
  */
 public class A392139 extends Sequence0 {

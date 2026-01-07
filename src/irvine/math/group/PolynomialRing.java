@@ -499,6 +499,16 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
   }
 
   /**
+   * Substitute a polynomial for the unknown in another polynomial.
+   * @param p polynomial
+   * @param v value to substitute
+   * @return substituted polynomial
+   */
+  public Polynomial<E> substitute(final Polynomial<E> p, final Polynomial<E> v) {
+    return substitute(p, v, Integer.MAX_VALUE);
+  }
+
+  /**
    * Replaces the power series sum of <code>a_n*x^n/n!</code> by sum of <code>a_n*x^n</code>
    * @param p polynomial
    * @return Laplace series

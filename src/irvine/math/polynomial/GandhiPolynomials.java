@@ -20,6 +20,6 @@ public final class GandhiPolynomials extends MemoryFunction<Integer, Polynomial<
   @Override
   protected Polynomial<Z> compute(final Integer n) {
     final Polynomial<Z> g = get(n - 1);
-    return RING.multiply(RING.subtract(RING.multiply(RING.substitute(g, X1, Integer.MAX_VALUE), X1), g.shift(1)), X1);
+    return RING.multiply(RING.subtract(RING.multiply(RING.substitute(g, X1), X1), g.shift(1)), X1);
   }
 }

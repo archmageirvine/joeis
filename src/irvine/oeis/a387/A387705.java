@@ -14,7 +14,7 @@ public class A387705 extends A336282 {
 
   /** Construct the sequence. */
   public A387705() {
-    super(1);
+    super(0);
   }
 
   @Override

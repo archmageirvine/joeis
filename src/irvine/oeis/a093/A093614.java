@@ -32,7 +32,7 @@ public class A093614 extends Sequence1 {
   public Z next() {
     while (true) {
       final Polynomial<Z> t = mF.get(++mN);
-      if (!RING.gcd(t, RING.substitute(t, RING.oneMinusXToTheN(1), Integer.MAX_VALUE)).equals(RING.one())) {
+      if (!RING.gcd(t, RING.substitute(t, RING.oneMinusXToTheN(1))).equals(RING.one())) {
         return Z.valueOf(mN);
       }
     }

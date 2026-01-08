@@ -266,7 +266,7 @@ public class A342053 extends AbstractSequence {
     final Polynomial<Polynomial<Z>> q1 = bgfTrim(q1(ds, j), m + 1, 2 * n + 1);
     final Polynomial<Polynomial<Z>> q2 = bgfTrim(RING.leftTruncate(q2(ds, j), 1), m + 1, 2 * n + 1);
     final Polynomial<Polynomial<Z>> q3 = bgfTrim(RING.leftTruncate(q3(ds, j), 1), m + 1, 2 * n + 1);
-    final Polynomial<Polynomial<Z>> a = RING.subtract(RING.substitute(q1.shift(1), fi, Integer.MAX_VALUE).shift(1), X3);
+    final Polynomial<Polynomial<Z>> a = RING.subtract(RING.substitute(q1.shift(1), fi).shift(1), X3);
     return RING.add(a, ring.divide(RING.add(
           RING.substitute(q2, fi, j.degree()).shift(2),
           RING.substitute(q3.shift(1), fi, j.degree())),

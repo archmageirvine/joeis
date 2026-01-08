@@ -33,7 +33,7 @@ public class A003203 extends Sequence0 {
         }
       };
       h.count(mN);
-      mS = RING.add(mS, RING.multiply(RING.substitute(Polynomial.create(mPerimeterCounts), C, Integer.MAX_VALUE), Z.valueOf(mN).square()).shift(mN));
+      mS = RING.add(mS, RING.multiply(RING.substitute(Polynomial.create(mPerimeterCounts), C), Z.valueOf(mN).square()).shift(mN));
       if (mVerbose) {
         System.out.println(mN + " perimeter polynomial " + Arrays.toString(mPerimeterCounts));
       }

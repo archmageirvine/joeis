@@ -19,7 +19,7 @@ public class A065755 extends Sequence1 {
   @Override
   public Z next() {
     if (++mM > mG.degree()) {
-      mG = RING.subtract(RING.substitute(mG, RING.onePlusXToTheN(1), Integer.MAX_VALUE), mG).shift(5);
+      mG = RING.subtract(RING.substitute(mG, RING.onePlusXToTheN(1)), mG).shift(5);
       mM = 5;
     }
     return mG.coeff(mM);

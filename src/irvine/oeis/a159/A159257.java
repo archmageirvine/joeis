@@ -25,7 +25,7 @@ public class A159257 extends Sequence1 {
       p = q;
       q = r;
     }
-    p = RING.substitute(q, Polynomial.create(1, 1), Integer.MAX_VALUE);
+    p = RING.substitute(q, Polynomial.create(1, 1));
     final Polynomial<Z> t = RING.gcd(p, q);
     return Z.valueOf(t.degree());
   }

@@ -22,7 +22,7 @@ public class A005989 extends MemoryFunction1Sequence<Polynomial<Z>> {
     if (n == 0) {
       return RING.x();
     }
-    return RING.subtract(RING.substitute(get(n - 1), X1, Integer.MAX_VALUE), get(n - 1)).shift(2);
+    return RING.subtract(RING.substitute(get(n - 1), X1), get(n - 1)).shift(2);
   }
 
   @Override

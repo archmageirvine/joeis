@@ -29,7 +29,7 @@ public class A053979 extends Sequence0 {
   public Z next() {
     final int n = mS.size();
     if (++mM > mS.get(n - 1).degree()) {
-      Polynomial<Z> sum = RING.substitute(mS.get(n - 1), X1, Integer.MAX_VALUE).shift(1);
+      Polynomial<Z> sum = RING.substitute(mS.get(n - 1), X1).shift(1);
       mR.add(sum);
       for (int k = 0; k < n; ++k) {
         sum = RING.add(sum, RING.multiply(mR.get(k), mS.get(n - 1 - k)));

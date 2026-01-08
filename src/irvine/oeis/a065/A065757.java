@@ -17,7 +17,7 @@ public class A065757 extends Sequence0 {
 
   @Override
   public Z next() {
-    mG = RING.subtract(RING.substitute(mG, RING.onePlusXToTheN(1), Integer.MAX_VALUE), mG).shift(5);
+    mG = RING.subtract(RING.substitute(mG, RING.onePlusXToTheN(1)), mG).shift(5);
     return mG.coeff(6);
   }
 }

@@ -1,0 +1,18 @@
+package irvine.oeis.a083;
+
+import irvine.math.z.Z;
+
+/**
+ * A083051.
+ * @author Sean A. Irvine
+ */
+public class A083090 extends A083087 {
+
+  private int mN = 0;
+
+  @Override
+  public Z next() {
+    return matrixElement(++mN, mN);
+  }
+}
+

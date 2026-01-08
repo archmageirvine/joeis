@@ -23,11 +23,11 @@ public class A073403 extends Sequence0 {
         return Polynomial.create(1);
       }
       // p(k, x) = 2*(2*(x+2)*p(k-1, x+1) + 2*(x+2*(k+1))*p(k-1, x) + (x+3)*q(k-1, x))
-      final Polynomial<Z> a = RING.substitute(get(k - 1), RING.onePlusXToTheN(1), Integer.MAX_VALUE);
+      final Polynomial<Z> a = RING.substitute(get(k - 1), RING.onePlusXToTheN(1));
       final Polynomial<Z> as = RING.multiply(RING.add(RING.multiply(a, Z.TWO), a.shift(1)), Z.TWO);
       final Polynomial<Z> b = RING.multiply(get(k - 1), Z.TWO);
       final Polynomial<Z> bs = RING.add(RING.multiply(b, Z.valueOf(2L * (k + 1))), b.shift(1));
-      final Polynomial<Z> c = RING.substitute(mQ.get(k - 1), RING.onePlusXToTheN(1), Integer.MAX_VALUE);
+      final Polynomial<Z> c = RING.substitute(mQ.get(k - 1), RING.onePlusXToTheN(1));
       final Polynomial<Z> cs = RING.add(RING.multiply(c, Z.THREE), c.shift(1));
       return RING.multiply(RING.add(as, bs, cs), Z.TWO);
     }
@@ -39,7 +39,7 @@ public class A073403 extends Sequence0 {
         return Polynomial.create(2);
       }
       // q(k, x) = 4*((x+1)*p(k-1, x+1) + (x+2*(k+1))*q(k-1, x))
-      final Polynomial<Z> a = RING.substitute(mP.get(k - 1), RING.onePlusXToTheN(1), Integer.MAX_VALUE);
+      final Polynomial<Z> a = RING.substitute(mP.get(k - 1), RING.onePlusXToTheN(1));
       final Polynomial<Z> as = RING.add(a, a.shift(1));
       final Polynomial<Z> b = get(k - 1);
       final Polynomial<Z> bs = RING.add(RING.multiply(b, Z.valueOf(2L * (k + 1))), b.shift(1));

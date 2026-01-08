@@ -1,7 +1,9 @@
 package irvine.oeis.a392;
 
-import java.util.HashSet;
+import java.util.HashMap;
 
+import irvine.math.MemoryFunctionInt2;
+import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -11,35 +13,50 @@ import irvine.oeis.Sequence0;
  */
 public class A392038 extends Sequence0 {
 
-  // Only good for a few terms
+  // After Michael S. Branicky
 
-  private long mN = -1;
+  private int mN = -1;
+  private final MemoryFunctionInt2<Z> mP = new MemoryFunctionInt2<>() {
+    @Override
+    protected Z compute(final int n, final int m) {
+      return Z.valueOf(n).pow(m);
+    }
+  };
+
+  private final HashMap<String, Boolean> mB = new HashMap<>();
+
+  private boolean computeB(final int nn, final Z n, final int i) {
+    final Z m = Integers.SINGLETON.sum(1, i, j -> Z.valueOf(j).pow(nn));
+    final int c = m.compareTo(n);
+    if (c == 0) {
+      return true;
+    }
+    if (c < 0) {
+      return false;
+    }
+    final Z t = mP.get(i, nn);
+    return b(nn, n.add(t), i - 1) || b(nn, n.subtract(t).abs(), i - 1);
+  }
+
+  private boolean b(final int nn, final Z n, final int i) {
+    final String key = nn + "," + n + "," + i;
+    final Boolean res = mB.get(key);
+    if (res != null) {
+      return res;
+    }
+    final boolean b = computeB(nn, n, i);
+    mB.put(key, b);
+    return b;
+  }
 
   @Override
   public Z next() {
-    if (++mN == 1) {
-      return Z.ONE;
-    }
-    final Z n = Z.valueOf(mN);
-    HashSet<Z> values = new HashSet<>();
-    values.add(Z.ONE.pow(mN)); // WLOG assume sign=1 for 1
-    long k = 1;
+    ++mN;
+    int k = 0;
     while (true) {
-      final Z t = Z.valueOf(++k).pow(mN);
-      final HashSet<Z> next = new HashSet<>();
-      for (final Z v : values) {
-        final Z a = v.add(t);
-        if (a.equals(n)) {
-          return Z.valueOf(k);
-        }
-        next.add(a);
-        final Z b = v.subtract(t).abs();
-        if (b.equals(n)) {
-          return Z.valueOf(k);
-        }
-        next.add(b);
+      if (b(mN, Z.valueOf(mN), ++k)) {
+        return Z.valueOf(k);
       }
-      values = next;
     }
   }
 }

@@ -19,7 +19,7 @@ public class A065756 extends Sequence1 {
   public Z next() {
     mG = mG == null
       ? RING.monomial(Z.ONE, 5)
-      : RING.subtract(RING.substitute(mG, RING.onePlusXToTheN(1), Integer.MAX_VALUE), mG).shift(5);
+      : RING.subtract(RING.substitute(mG, RING.onePlusXToTheN(1)), mG).shift(5);
     return mG.coeff(5);
   }
 }

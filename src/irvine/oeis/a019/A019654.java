@@ -32,7 +32,7 @@ public class A019654 extends AbstractSequence {
   // search whenever a violation of some constraint is detected.
   //
   // We keep track of the number of queens attacking each square on the board; in fact,
-  // we actually use bit sets so we can also tell the directions those attacks are
+  // we actually use bit sets, so we can also tell the directions those attacks are
   // coming from.  This makes it easier to incrementally add a new queen.
   //
   // Partially inspired by C code by Manfred Scheucher

@@ -27,11 +27,11 @@ public class A392045 extends Sequence1 {
     final int b = p.right();
     Z prod = Z.ONE;
     if ((a & 1) == 0) {
-      for (int k = a + 1, j = b - 1; k <= b; k += 2, j-= 2) {
+      for (int k = a + 1, j = b - 1; k <= b; k += 2, j -= 2) {
         prod = prod.multiply(Z.valueOf(k).pow(j));
       }
     } else {
-      for (int k = a, j = b; k <= b; k += 2, j-= 2) {
+      for (int k = a, j = b; k <= b; k += 2, j -= 2) {
         prod = prod.multiply(Z.valueOf(k).pow(j));
       }
     }

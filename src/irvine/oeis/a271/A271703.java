@@ -4,15 +4,21 @@ import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A271703 Triangle read by rows: the unsigned Lah numbers T(n, k) = binomial(n-1, k-1)*n!/k! if n &gt; 0 and k &gt; 0, T(n, 0) = 0^n and otherwise 0, for n &gt;= 0 and 0 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
-public class A271703 extends Sequence0 {
+public class A271703 extends Sequence0 implements DirectArray {
 
   protected int mN = -1;
   protected int mM = 0;
+
+  @Override
+  public Z a(final int n, final int m) {
+    return t(n, m);
+  }
 
   protected Z t(final int n, final int m) {
     if (m == 0) {

@@ -237,6 +237,8 @@ public final class Functions {
   public static final Function2 KRONECKER = new Kronecker();
   /** Pochhammer symbol. */
   public static final Function2 POCHHAMMER = new Pochhammer();
+  /** Rising factorial function (alias for POCHHAMMER). */
+  public static final Function2 RISING_FACTORIAL = new Pochhammer();
   /** Falling factorial function. */
   public static final Function2 FALLING_FACTORIAL = new FallingFactorial(); // =A008279
   /** Stirling numbers of the first kind. */
@@ -249,14 +251,18 @@ public final class Functions {
   public static final Function2 CANTOR_PAIRING = new CantorPairing();
   /** One-based pairing function (Hopcroft and Ullman) */
   public static final Function2 ONE_BASED_PAIRING = new OneBasedPairing();
+  /** Eulerian numbers of the first kind. */
+  public static final Function2 EULERIAN1 = new Eulerian1(); // =A173018
   /** Eulerian numbers of the second kind. */
-  public static final Function2 EULERIAN2 = new Eulerian2();
+  public static final Function2 EULERIAN2 = new Eulerian2(); // =A008517
   /** Cyclotomic function. */
   public static final Function2 CYCLOTOMIC = new Cyclotomic();
   /** Lah numbers. */
   public static final Function2 LAH = new Lah(); // =A008297
   /** Local Catalan rank function. */
   public static final Function2 LOCAL_CATALAN_RANK = new LocalCatalanRank(); // =A057121
+  /** Binomial coefficients (possibly negative parameters) */
+  public static final Function2 BINOMIAL = new Binomial2(); // =A007318
 
   // Aggregating functions
 

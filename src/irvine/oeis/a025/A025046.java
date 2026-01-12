@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A025046 a(n) = the least odd prime p such that there are exactly n consecutive quadratic remainders modulo p.
+ * A025046 a(n) is the least odd prime p such that the maximum run length of consecutive quadratic residues modulo p is n.
  * @author Sean A. Irvine
  */
 public class A025046 extends Sequence2 {

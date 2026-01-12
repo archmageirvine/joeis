@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390355 allocated for Ryota Inagaki.
+ * A390355 Maximum number of vertices that ever have chips in a layer in a certain chip-firing game that starts with 2^n chips and is described in the comments.
  * @author Sean A. Irvine
  */
 public class A390355 extends Sequence0 {

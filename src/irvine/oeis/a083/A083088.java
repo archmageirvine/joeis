@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A083051.
+ * A083088 First column of table A083087.
  * @author Sean A. Irvine
  */
 public class A083088 extends Sequence0 {

@@ -11,7 +11,7 @@ import irvine.util.Pair;
 import irvine.util.Permutation;
 
 /**
- * A083051.
+ * A392045 Odd positive integers whose canonical prime factorization p_1^e_1*...*p_r^e_r satisfies that {p_1, ..., p_r, e_1, ..., e_r} is a set of 2*r consecutive integers.
  * @author Sean A. Irvine
  */
 public class A392045 extends Sequence1 {

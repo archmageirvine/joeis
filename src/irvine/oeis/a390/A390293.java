@@ -4,7 +4,7 @@ import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.a196.A196047;
 
 /**
- * A083051.
+ * A390293 Positions of records in A196047.
  * @author Sean A. Irvine
  */
 public class A390293 extends RecordPositionSequence {

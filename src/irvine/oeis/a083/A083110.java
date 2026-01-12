@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083051.
+ * A083110 Triangle read by rows in which the n-th row contains lexicographically earliest increasing sequence of n positive integers whose product == -1 (mod n).
  * @author Sean A. Irvine
  */
 public class A083110 extends Sequence1 {

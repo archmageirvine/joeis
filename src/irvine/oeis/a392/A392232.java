@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A015921.
+ * A392232 Numbers k for which omega(k)*omega(k + 1)*omega(k + 2)*omega(k + 3)*omega(k + 4) = 4 where omega = A001221.
  * @author Sean A. Irvine
  */
 public class A392232 extends Sequence1 {

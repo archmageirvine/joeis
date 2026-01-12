@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.a001.A001747;
 
 /**
- * A100484 The primes doubled; Even semiprimes.
+ * A100484 The primes doubled; even semiprimes.
  * @author Georg Fischer
  */
 public class A100484 extends A001747 {

@@ -10,7 +10,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A316773 Triangle read by rows: T(n,m) = Sum_{k=m+1..n} (n-1)!/(k-1)!*binomial(2*n-k-1, n-1)*E(k,m) where E(n,m) is Euler&apos;s triangle A173018, T(0,0) = 1, n &gt;= m &gt;= 0.
+ * A316773 Triangle read by rows: T(n,m) = Sum_{k=m+1..n} (n-1)!/(k-1)!*binomial(2*n-k-1, n-1)*E(k,m) where E(n,m) is Euler's triangle A173018, T(0,0) = 1, n &gt;= m &gt;= 0.
  * @author Georg Fischer
  */
 public class A316773 extends LambdaTriangle {

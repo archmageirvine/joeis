@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A078468 Distinct compositions of the complete graph with one edge removed (K^-_n).
+ * A078468 Distinct compositions of the complete graph on n+2 vertices with one edge removed (K^-_{n+2}).
  * E.g.f.: (-1+exp(x)+exp(2*x))*exp(exp(x)-1)
  * @author Georg Fischer
  */

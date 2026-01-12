@@ -4,7 +4,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
- * A083051.
+ * A083112 Product of terms in row n of A083110.
  * @author Sean A. Irvine
  */
 public class A083112 extends A083110 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A015921.
+ * A391828 Numbers k such that the map k -&gt; k' reaches a nonzero cycle, where k' is the arithmetic derivative.
  * @author Sean A. Irvine
  */
 public class A391828 extends Sequence1 {

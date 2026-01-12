@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A176542 Numbers n such that there are only a finite nonzero number of sets of n consecutive triangular numbers that sum to a square.
+ * A176542 Numbers k such that there are only a finite nonzero number of sets of k consecutive triangular numbers that sum to a square.
  * @author Georg Fischer
  */
 public class A176542 extends GeneratingFunctionSequence implements Conjectural {

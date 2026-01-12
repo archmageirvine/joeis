@@ -3,7 +3,7 @@ package irvine.oeis.a004;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A004296 Expansion of (1+2*x+x^2)/(1-50*x+x^2).
+ * A004296 Expansion of g.f. (1+2*x+x^2)/(1-50*x+x^2).
  * @author Sean A. Irvine
  */
 public class A004296 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A292935 E.g.f.: exp(exp(-x) - 1).
+ * A292935 Expansion of e.g.f.: exp(exp(-x) - 1).
  * Offset 0.
  * Formula: <code>a(n) = (-1)^n * A000110(n)</code>.
  * @author Georg Fischer

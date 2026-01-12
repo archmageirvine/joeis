@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392038 allocated for Jean-Marc Rebert.
+ * A392218 Product of the divisors of phi(n).
  * @author Sean A. Irvine
  */
 public class A392218 extends Sequence1 {

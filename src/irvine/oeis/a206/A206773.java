@@ -6,7 +6,7 @@ import irvine.oeis.a105.A105221;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A206773 Sum of nonprime proper divisors (or nonprime aliquot parts) of n.
+ * A206773 Sum of the nonprime proper divisors (or nonprime aliquot parts) of n.
  * @author Georg Fischer
  */
 public class A206773 extends MultiTransformSequence {

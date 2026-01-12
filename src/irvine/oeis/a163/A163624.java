@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A163624 Numbers n such that 120n+1 is prime.
+ * A163624 Numbers k such that 120*k+1 is prime.
  * @author Georg Fischer
  */
 public class A163624 extends PrimePositionSubsequence {

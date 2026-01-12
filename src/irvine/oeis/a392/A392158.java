@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392158 allocated for Rodolfo Kurchan.
+ * A392158 For each starting value n, the number of distinct terms in the sequence obtained by repeatedly doubling and then deleting repeated digits (keeping the first occurrence) until a term repeats.
  * @author Sean A. Irvine
  */
 public class A392158 extends Sequence1 {

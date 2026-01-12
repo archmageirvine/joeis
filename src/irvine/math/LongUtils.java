@@ -476,4 +476,18 @@ public final class LongUtils {
     return res;
   }
 
+  /**
+   * Return the largest value in a collection.
+   * @param c collection
+   * @return largest value
+   */
+  public static long max(final Collection<Long> c) {
+    long max = Long.MIN_VALUE;
+    for (long v : c) {
+      if (v > max) {
+        max = v;
+      }
+    }
+    return max;
+  }
 }

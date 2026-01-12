@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.TwoParameterFormSequence;
 
 /**
- * A155717 Numbers of the form N = a^2 + 7b^2 for some positive integers a,b.
+ * A155717 Numbers of the form N = a^2 + 7*b^2 for some positive integers a, b.
  * @author Georg Fischer
  */
 public class A155717 extends TwoParameterFormSequence {

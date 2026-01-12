@@ -4,7 +4,7 @@ package irvine.oeis.a145;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A145827 Numbers n such that A145768(n) is a square.
+ * A145827 Numbers k such that A145768(k) is a square.
  * @author Georg Fischer
  */
 public class A145827 extends FilterPositionSequence {

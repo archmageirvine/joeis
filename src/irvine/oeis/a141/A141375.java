@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a107.A107008;
 
 /**
- * A141375 Primes of the form x^2 + 8*x*y - 8*y^2 (as well as of the form x^2 + 10*x*y + y^2).
+ * A141375 Duplicate of A107008.
  * @author Georg Fischer
  */
 public class A141375 extends AbstractSequence {

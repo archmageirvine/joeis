@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A083056 a(n) = 3*A083055(n)-n.
+ * A083057 Partial sums of A083056.
  * @author Sean A. Irvine
  */
 public class A083057 extends PartialSumSequence {

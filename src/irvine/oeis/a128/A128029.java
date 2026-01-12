@@ -4,7 +4,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A128029 Numbers n such that (14^n - 3^n)/11 is prime.
+ * A128029 Numbers k such that (14^k - 3^k)/11 is prime.
  * @author Georg Fischer
  */
 public class A128029 extends PrimePositionSubsequence {

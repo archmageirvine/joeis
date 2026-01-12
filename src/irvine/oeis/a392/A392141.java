@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392141 allocated for Rodolfo Kurchan.
+ * A392141 a(0) = 1 and a(1) = 2, then each subsequent term is obtained by multiplying the two previous terms and then deleting repeated digits, keeping only the first occurrence of each digit.
  * @author Sean A. Irvine
  */
 public class A392141 extends Sequence0 {

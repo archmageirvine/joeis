@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A002338 x such that p = (x^2 + 27*y^2)/4, where p is the n-th prime of the form 3k+1.
+ * A002338 x such that p = (x^2 + 27*y^2)/4, where p is the n-th prime of the form 3*k+1.
  * @author Sean A. Irvine
  */
 public class A002338 extends Sequence1 {

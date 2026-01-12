@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A248856 Numbers n such that n + pi(n) is a power of 10.
+ * A248856 Numbers k such that k + pi(k) is a power of 10.
  * @author Georg Fischer
  */
 public class A248856 extends FilterNumberSequence {

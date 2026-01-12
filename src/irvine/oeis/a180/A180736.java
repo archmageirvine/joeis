@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A180736 a(n) = [r]*[2r]*...[nr], where r=sqrt(2) and []=floor.
+ * A180736 a(n) = [r]*[2*r]*...*[n*r], where r=sqrt(2) and []=floor.
  * @author Georg Fischer
  */
 public class A180736 extends LambdaSequence {

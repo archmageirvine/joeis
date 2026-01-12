@@ -4,7 +4,7 @@ package irvine.oeis.a141;
 import irvine.oeis.prime.CongruenceForm;
 
 /**
- * A141376 Primes of the form -x^2 + 8*x*y + 8*y^2 (as well as of the form 15*x^2 + 24*x*y + 8*y^2).
+ * A141376 Duplicate of A134517.
  * @author Georg Fischer
  */
 public class A141376 extends CongruenceForm {

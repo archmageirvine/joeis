@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002113;
 
 /**
- * A083051.
+ * A083125 a(1) = 1, then the smallest number not occurring earlier such that the product of a pair of successive terms is a palindrome.
  * @author Sean A. Irvine
  */
 public class A083125 extends Sequence1 {

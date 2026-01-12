@@ -7,7 +7,7 @@ import irvine.oeis.transform.EulerTransform;
 
 
 /**
- * A264923 G.f.: 1 / Product_{n&gt;=0} (1 - x^(n+3))^((n+1)*(n+2)/2!).
+ * A264923 Expansion of g.f. 1 / Product_{n&gt;=0} (1 - x^(n+3))^((n+1)*(n+2)/2!).
  * ET(ogf=x^2/(-x^3+3*x^2-3*x+1), order=4)
  * @author Georg Fischer
  */

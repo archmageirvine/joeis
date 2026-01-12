@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002808;
 import irvine.oeis.a373.A373387;
 
 /**
- * A389981 Positive integers (not multiples of 10) whose constant congruence speed is greater than the product of the constant congruence speeds of all their prime factors (see A373387 for the definition of "constant congruence speed").
+ * A392233 Composite numbers (not multiples of 10) whose constant congruence speed equals the product of the constant congruence speeds of all their prime factors.
  * @author Sean A. Irvine
  */
 public class A392233 extends A002808 {

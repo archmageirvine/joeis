@@ -95,9 +95,6 @@ public class A387632 extends Sequence2 {
           if (mVerbose) {
             StringUtils.message("Starting search for n=" + mN + " sets of size " + k);
           }
-//          final long start = (1L << k) - 1;
-//          set[0] = start;
-//          search(set, 1, start, lim, Functions.SWIZZLE.l(start));
           search(set, 0, 0, lim, (1L << k) - 1);
         }
       }

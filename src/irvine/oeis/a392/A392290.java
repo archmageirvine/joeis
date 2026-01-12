@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A083029.
+ * A392290 Decimal expansion of 1/sqrt(7) - 2/7.
  * @author Sean A. Irvine
  */
 public class A392290 extends DecimalExpansionSequence {

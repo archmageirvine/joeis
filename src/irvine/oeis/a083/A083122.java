@@ -7,7 +7,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A083051.
+ * A083122 a(1) = 1, then the smallest number not included earlier and not a string of 1's such that the concatenation a(n), a(n+1) is a palindrome.
  * @author Sean A. Irvine
  */
 public class A083122 extends PrependSequence {

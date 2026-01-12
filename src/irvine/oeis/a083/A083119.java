@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A083051.
+ * A083119 Sum of n terms from the n-th term is a square: a(1), a(2) + a(3), a(3) + a(4) + a(5),..., a(n) + a(n+1) + ...+ a(2n-1) are squares.
  * @author Sean A. Irvine
  */
 public class A083119 extends CachedSequence {

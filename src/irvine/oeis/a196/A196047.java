@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083051.
+ * A196047 Path length of the rooted tree with Matula-Goebel number n.
  * @author Sean A. Irvine
  */
 public class A196047 extends Sequence1 {

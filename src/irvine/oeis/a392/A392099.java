@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A083051.
+ * A392099 Smallest prime p such that p + 3^n - 1 is also a prime.
  * @author Sean A. Irvine
  */
 public class A392099 extends Sequence0 {

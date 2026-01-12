@@ -7,7 +7,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A141690 Triangle t(n,m) = 2*A008292(n+1,m+1) - A007318(n,m), a linear combination of Eulerian numbers and Pascal&apos;s triangle, 0 &lt;= m &lt;= n.
+ * A141690 Triangle t(n,m) = 2*A008292(n+1,m+1) - A007318(n,m), a linear combination of Eulerian numbers and Pascal's triangle, 0 &lt;= m &lt;= n.
  * @author Georg Fischer
  */
 public class A141690 extends LambdaTriangle {

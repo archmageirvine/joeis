@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083051.
+ * A083116 Smallest multiple of n using a single digit with multiplicity, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A083116 extends Sequence1 {

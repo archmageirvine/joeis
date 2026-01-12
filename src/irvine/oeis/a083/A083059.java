@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A083051.
+ * A083059 a(n) is the number of natural numbers k such that A078496(k)=n.
  * @author Sean A. Irvine
  */
 public class A083059 extends AbstractSequence {

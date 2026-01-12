@@ -6,7 +6,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A083051.
+ * A237271 Number of parts in the symmetric representation of sigma(n).
  * @author Sean A. Irvine
  */
 public class A237271 extends Sequence1 implements DirectSequence {

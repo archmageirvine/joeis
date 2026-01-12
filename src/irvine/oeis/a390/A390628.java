@@ -16,7 +16,12 @@ public class A390628 extends A249223 {
   private final DirectSequence mRowLengths = new A003056();
   private int mN = 0;
 
-  private ArrayList<Long> widthPattern(final int n) {
+  /**
+   * Return the width pattern for a number.
+   * @param n number
+   * @return with pattern
+   */
+  public ArrayList<Long> widthPattern(final int n) {
     final int len = mRowLengths.a(n).intValueExact();
     // Get forward terms
     final ArrayList<Long> pattern = new ArrayList<>();

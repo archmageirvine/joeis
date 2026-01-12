@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A163667 Numbers n such that sigma(n) = 9*phi(n).
+ * A163667 Numbers k such that sigma(k) = 9*phi(k).
  * @author Georg Fischer
  */
 public class A163667 extends FilterNumberSequence {

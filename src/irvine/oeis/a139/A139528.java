@@ -4,7 +4,7 @@ package irvine.oeis.a139;
 import irvine.oeis.prime.PrimeConditionListSequence;
 
 /**
- * A139528 Numbers n such that numbers 24n+11 are primes.
+ * A139528 Numbers k such that 24*k + 11 is prime.
  * @author Georg Fischer
  */
 public class A139528 extends PrimeConditionListSequence {

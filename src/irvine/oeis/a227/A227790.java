@@ -9,7 +9,7 @@ import irvine.oeis.a033.A033428;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A227790 Difference between 3n^2 and the nearest square number.
+ * A227790 Difference between 3*n^2 and the nearest square number.
  * @author Georg Fischer
  */
 public class A227790 extends SingleTransformSequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A083051.
+ * A083061 Triangle of coefficients of a companion polynomial to the Gandhi polynomial.
  * @author Sean A. Irvine
  */
 public class A083061 extends Sequence0 {

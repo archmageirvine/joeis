@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A226471 Numbers n such that n^2 XOR triangular(n) is a triangular number. XOR is the bitwise logical exclusive-or operator.
+ * A226471 Numbers k such that k^2 XOR triangular(k) is a triangular number. XOR is the bitwise logical exclusive-or operator.
  * @author Georg Fischer
  */
 public class A226471 extends FilterNumberSequence {

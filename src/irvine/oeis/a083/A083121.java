@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083051.
+ * A083121 Bases of the squares arising in A083119.
  * @author Sean A. Irvine
  */
 public class A083121 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083051.
+ * A083106 Triangle read by rows in which the n-th row contains n smallest numbers whose product == 1 mod n.
  * @author Sean A. Irvine
  */
 public class A083106 extends Sequence1 {

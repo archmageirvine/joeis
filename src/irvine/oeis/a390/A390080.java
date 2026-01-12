@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392038.
+ * A390080 Even numbers k such that Sum_{i=1..r} i*(k-i) = Sum_{j=1..s} j*(j+k) for some integers r and s.
  * @author Sean A. Irvine
  */
 public class A390080 extends Sequence1 {

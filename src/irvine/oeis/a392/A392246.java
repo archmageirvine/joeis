@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007908;
 
 /**
- * A083051.
+ * A392246 Smallest prime number whose decimal digits include the consecutive pattern 0, 1, 2, ..., n.
  * @author Sean A. Irvine
  */
 public class A392246 extends Sequence0 {

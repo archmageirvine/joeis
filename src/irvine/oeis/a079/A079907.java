@@ -5,7 +5,7 @@ package irvine.oeis.a079;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A079907 Numbers n such that 11*12^n -1 is prime.
+ * A079907 Numbers k such that 11*12^k - 1 is prime.
  * @author Georg Fischer
  */
 public class A079907 extends PowerFactorPrimeSequence {

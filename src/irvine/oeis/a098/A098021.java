@@ -7,7 +7,7 @@ import irvine.oeis.a187.A187967;
 
 
 /**
- * A098021 Positions of 0's in the zero-one sequence [nr+2r]-[nr]-[2r], where r=sqrt(2) and [ ]=floor; see A187967.
+ * A098021 Positions of 0's in the zero-one sequence [n*r+2*r]-[n*r]-[2*r], where r=sqrt(2) and [ ]=floor; see A187967.
  * @author Georg Fischer
  */
 public class A098021 extends FilterPositionSequence {

@@ -21,7 +21,6 @@ public class A237270 extends Sequence1 {
   private int mN = 0;
   private final LinkedList<Z> mA = new LinkedList<>();
 
-  // T[n, k] := Ceiling[(n + 1)/k - (k + 1)/2]
   private static long t(final long n, final long k) {
     return (2 * n + 1 - k * k + k) / (2 * k);
   }
@@ -100,6 +99,7 @@ public class A237270 extends Sequence1 {
 
   /**
    * Compute the symmetric representation of sigma.
+   * Also called partSRS.
    * @param n value
    * @return list of parts
    */

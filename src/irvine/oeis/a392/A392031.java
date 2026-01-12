@@ -3,15 +3,15 @@ package irvine.oeis.a392;
 import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A392031 a(n) is the smallest k which has exactly n divisors d such that sigma(d) = sigma(d + k/d) where sigma = A000203.
  * @author Sean A. Irvine
  */
-public class A392031 extends Sequence1 {
+public class A392031 extends Sequence0 {
 
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {

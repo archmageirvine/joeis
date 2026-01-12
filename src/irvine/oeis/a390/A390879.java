@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a237.A237271;
 
 /**
- * A083051.
+ * A390879 Triangle read by rows: T(n,k) = A237271(k)*(n-k+1), 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A390879 extends Sequence1 {

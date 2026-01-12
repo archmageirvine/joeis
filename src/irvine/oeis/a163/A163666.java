@@ -6,7 +6,7 @@ import irvine.oeis.a018.A018784;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A163666 Numbers n such that n=prime(sigma(phi(pi(n)))).
+ * A163666 Numbers k such that k=prime(sigma(phi(pi(k)))).
  * @author Georg Fischer
  */
 public class A163666 extends DirectTransformSequence {

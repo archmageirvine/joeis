@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A083029.
+ * A392289 Decimal expansion of sqrt((3 - sqrt(7))/2).
  * @author Sean A. Irvine
  */
 public class A392289 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ import irvine.oeis.InverseSequence;
 import irvine.oeis.a391.A391449;
 
 /**
- * A083051.
+ * A392229 Index of first occurrence of n in A391449.
  * @author Sean A. Irvine
  */
 public class A392229 extends InverseSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.math.z.Z;
 
 /**
- * A083051.
+ * A083111 Diagonal of A083110.
  * @author Sean A. Irvine
  */
 public class A083111 extends A083110 {

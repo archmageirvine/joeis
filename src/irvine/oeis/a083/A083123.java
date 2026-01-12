@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A083051.
+ * A083123 Smallest n-digit palindromic multiple of n, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A083123 extends Sequence1 {

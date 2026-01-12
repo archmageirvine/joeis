@@ -4,7 +4,7 @@ package irvine.oeis.a345;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A345652 Expansion of the e.g.f. exp(-1 + (x + 1)*exp(-x)).
+ * A345652 Expansion of the e.g.f. exp(-1 + (1 + x)*exp(-x)).
  * @author Georg Fischer
  */
 public class A345652 extends PolynomialFieldSequence {

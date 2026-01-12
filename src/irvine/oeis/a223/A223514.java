@@ -5,7 +5,7 @@ import irvine.oeis.a111.A111594;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A223514 Triangle T(n,k) represents the coefficients of (x^12*d/dx)^n, where n=1,2,3,...; generalization of Stirling numbers of second kind A008277, Lah-numbers A008297.
+ * A223514 Triangle T(n,k) represents the coefficients of (x^12*d/dx)^n, where n&gt;=1; generalization of Stirling numbers of second kind A008277, Lah-numbers A008297.
  * @author Georg Fischer
  */
 public class A223514 extends A111594 {

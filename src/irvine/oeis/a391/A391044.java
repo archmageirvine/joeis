@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A015921.
+ * A391044 Numbers k for which omega(k)*omega(k + 1)*omega(k + 2) = 2 where omega = A001221.
  * @author Sean A. Irvine
  */
 public class A391044 extends Sequence1 {

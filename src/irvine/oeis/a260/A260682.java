@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a202.A202822;
 
 /**
- * A260682 L√∂schian numbers (A003136) of the form 6*k+1.
+ * A260682 L\u00f6schian numbers (A003136) of the form 6*k+1.
  * @author Georg Fischer
  */
 public class A260682 extends FilterSequence {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392038.
+ * A392217 Irregular triangle read by rows: the n-th row gives the divisors of phi(n).
  * @author Sean A. Irvine
  */
 public class A392217 extends Sequence1 {

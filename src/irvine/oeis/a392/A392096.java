@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A392096 allocated for Hartmut F. W. Hoft.
+ * A392096 Numbers k for which the width pattern of the symmetric representation of sigma for k, SRS(k), has the form 1 2 1 0 1 2 1 0 . . . 0 1 2 1 0 1 2 1 containing at least one 0.
  * @author Sean A. Irvine
  */
 public class A392096 extends Sequence1 {

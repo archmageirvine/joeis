@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A391966 allocated for Marco Rip\u00e0.
+ * A391966 Smallest integer k greater than 1 such that every solution of y^m = y (for all integers m &gt; 1) in the commutative ring of n-adic integers is also a solution of y^k = y.
  * @author Sean A. Irvine
  */
 public class A391966 extends Sequence2 {

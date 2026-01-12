@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a060.A060006;
 
 /**
- * A051016 Numbers n for which r^n-floor(r^n) &lt; 1/2, where r is the real root of x^3-x-1.
+ * A051016 Numbers k for which r^k-floor(r^k) &lt; 1/2, where r is the real root of x^3-x-1.
  * @author Sean A. Irvine
  */
 public class A051016 extends A060006 {

@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392164 allocated for Elijah Beregovsky.
+ * A392164 a(n) is the size of the largest subset S of {1,...,N} such that every element of S+S is squarefree.
  * @author Sean A. Irvine
  */
 public class A392164 extends Sequence1 {

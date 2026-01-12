@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000027;
 import irvine.oeis.a237.A237271;
 
 /**
- * A083051.
+ * A390880 Convolution of A000027 and A237271.
  * @author Sean A. Irvine
  */
 public class A390880 extends ConvolutionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A139483 Numbers n such that 24n+7 is prime.
+ * A139483 Numbers k such that 24*k + 7 is prime.
  * @author Georg Fischer
  */
 public class A139483 extends PrimePositionSubsequence {

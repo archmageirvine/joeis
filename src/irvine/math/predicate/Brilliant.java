@@ -8,6 +8,7 @@ import irvine.math.z.Z;
 /**
  * Test if a number is (k-)brilliant: semiprime = 2-smooth or k-smooth, and all primes have the same decimal length (see A078972).
  * @author Georg Fischer
+ * @author Sean A. Irvine
  */
 public class Brilliant extends AbstractPredicate2 {
 
@@ -17,25 +18,17 @@ public class Brilliant extends AbstractPredicate2 {
   }
 
   @Override
-  public boolean is(final long smooth, final Z n) {
+  public boolean is(final long k, final Z n) {
     final FactorSequence fs = Jaguar.factor(n);
-    final Z[] p = fs.toZArray();
-    if (fs.bigOmega() == smooth) {
-      int k = 0;
-      final int len =  Functions.DIGIT_LENGTH.i(p[k]);
-      while (++k < p.length) {
-        if (Functions.DIGIT_LENGTH.i(p[k]) != len) {
-          return false;
-        }
-      }
-      return true;
-    } else {
+    if (fs.bigOmega() != k) {
       return false;
     }
+    final Z[] p = fs.toZArray();
+    return Functions.DIGIT_LENGTH.i(p[0]) == Functions.DIGIT_LENGTH.i(p[p.length - 1]);
   }
 
   @Override
-  public boolean is(final long smooth, final long n) { 
-    return is(smooth, Z.valueOf(n));
+  public boolean is(final long k, final long n) {
+    return is(k, Z.valueOf(n));
   }
 }

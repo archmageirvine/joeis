@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A166966 Eigensequence of A047999, Sierpinski&apos;s gasket.
+ * A166966 Eigensequence of A047999, Sierpinski's gasket.
  * @author Georg Fischer
  */
 public class A166966 extends MultiTransformSequence {

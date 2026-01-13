@@ -8,7 +8,7 @@ import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A384801 Square array A(n,k), n &gt;= 0, k &gt;= 0, read by antidiagonals downwards,
+ * A384801 Square array A(n,k), n &gt;= 0, k &gt;= 0, read by antidiagonals downwards, where column k is the expansion of e.g.f. B(x)^k, where B(x) is the e.g.f. of A213108.
  * where column k is the expansion of e.g.f. B(x)^k, where B(x) is the e.g.f. of A213108.
  * @author Georg Fischer
  */

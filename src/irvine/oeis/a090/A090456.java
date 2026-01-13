@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A090456 Primes prime(k) having more binary 1&apos;s than k.
+ * A090456 Primes prime(k) having more binary 1's than k.
  * @author Georg Fischer
  */
 public class A090456 extends FilterSequence {

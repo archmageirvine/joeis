@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A152904 Triangle read by rows: T(n,k) = A008683(n-k+1); 1&lt;=k&lt;=n; mu(n) &quot;decrescendo&quot;.
+ * A152904 Triangle read by rows: T(n,k) = A008683(n-k+1); 1&lt;=k&lt;=n; mu(n) "decrescendo".
  * @author Georg Fischer
  */
 public class A152904 extends LambdaTriangle {

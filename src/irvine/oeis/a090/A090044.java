@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A090044 Triangle read by rows: T(n,k) = A083093 with 1&apos;s and 2&apos;s interchanged.
+ * A090044 Triangle read by rows: T(n,k) = A083093 with 1's and 2's interchanged.
  * @author Georg Fischer
  */
 public class A090044 extends LambdaTriangle {

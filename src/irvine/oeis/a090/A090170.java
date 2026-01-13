@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A090170 a(n) = floor(e^(n*g)), where g = Euler&apos;s Gamma constant, 0.57721566490153...
+ * A090170 a(n) = floor(e^(n*g)), where g = Euler's Gamma constant, 0.57721566490153...
  * @author Georg Fischer
  */
 public class A090170 extends LambdaSequence {

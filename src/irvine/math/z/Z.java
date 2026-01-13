@@ -664,8 +664,8 @@ public class Z extends Number implements Comparable<Z>, IsInteger {
   }
 
   /**
-   * Return the square root of this integer. Sets auxiliary to 1
-   * for a perfect square and 0 otherwise.
+   * Return the square root of this integer.
+   * Sets auxiliary to 1 for a perfect square and 0 otherwise.
    * @return square root
    * @exception ArithmeticException for an attempt to take the square
    * root of a negative number.

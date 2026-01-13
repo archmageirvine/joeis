@@ -4,7 +4,7 @@ package irvine.oeis.a153;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A153034 Numbers with adjacent 0&apos;s and no adjacent 1&apos;s in binary expansion.
+ * A153034 Numbers with adjacent 0's and no adjacent 1's in binary expansion.
  * @author Georg Fischer
  */
 public class A153034 extends FilterNumberSequence {

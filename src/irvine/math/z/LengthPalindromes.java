@@ -20,7 +20,10 @@ public final class LengthPalindromes extends Sequence1 {
   public LengthPalindromes(final int length) {
     mEven = (length & 1) == 0;
     final int h = length / 2 - 1;
-    if (h < 0) {
+    if (length == 1) {
+      mLeft = null;
+      mLim = null;
+    } else if (h < 0) {
       mLeft = Z.ZERO;
       mLim = Z.ONE;
     } else {
@@ -31,6 +34,12 @@ public final class LengthPalindromes extends Sequence1 {
 
   @Override
   public Z next() {
+    if (mLeft == null) {
+      if (++mMid >= 10) {
+        return null;
+      }
+      return Z.valueOf(mMid);
+    }
     if (mLeft.equals(mLim)) {
       return null;
     }

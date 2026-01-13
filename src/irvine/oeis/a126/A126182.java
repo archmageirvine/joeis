@@ -6,7 +6,7 @@ import irvine.oeis.a007.A007318;
 import irvine.oeis.triangle.Product;
 
 /**
- * A126182 Let P be Pascal&apos;s triangle A007318 and let N be Narayana&apos;s triangle A001263, both regarded as lower triangular matrices. Sequence gives triangle obtained from P*N, read by rows.
+ * A126182 Let P be Pascal's triangle A007318 and let N be Narayana's triangle A001263, both regarded as lower triangular matrices. Sequence gives triangle obtained from P*N, read by rows.
  * @author Georg Fischer
  */
 public class A126182 extends Product {

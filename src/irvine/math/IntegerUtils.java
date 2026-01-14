@@ -498,4 +498,18 @@ public final class IntegerUtils {
     return res;
   }
 
+  /**
+   * Return the largest value in a collection.
+   * @param c collection
+   * @return largest value
+   */
+  public static int max(final Collection<Integer> c) {
+    int max = Integer.MIN_VALUE;
+    for (final int v : c) {
+      if (v > max) {
+        max = v;
+      }
+    }
+    return max;
+  }
 }

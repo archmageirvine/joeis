@@ -483,7 +483,7 @@ public final class LongUtils {
    */
   public static long max(final Collection<Long> c) {
     long max = Long.MIN_VALUE;
-    for (long v : c) {
+    for (final long v : c) {
       if (v > max) {
         max = v;
       }

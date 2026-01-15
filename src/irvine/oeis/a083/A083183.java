@@ -6,7 +6,7 @@ import irvine.oeis.a045.A045336;
 import irvine.util.array.DynamicArray;
 
 /**
- * A083128.
+ * A083183 Smallest palindromic prime using only prime digits (2,3,5,7) and having a sum of digits = prime(n), or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A083183 extends A045336 {

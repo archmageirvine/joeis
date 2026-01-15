@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083128 Least 3-brilliant number of size n.
+ * A083182 Greatest 3-brilliant number of size n.
  * @author Sean A. Irvine
  */
 public class A083182 extends Sequence1 {

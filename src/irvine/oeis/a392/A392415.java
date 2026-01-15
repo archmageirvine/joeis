@@ -4,7 +4,7 @@ package irvine.oeis.a392;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A392415 Number of partitions of the vertices of the n-ladder graph into total dominating sets.
+ * A392415 allocated for Andrew Howroyd.
  * @author Georg Fischer
  */
 public class A392415 extends HolonomicRecurrence {

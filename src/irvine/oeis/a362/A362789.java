@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A362789 Triangle read by rows. T(n, k) = FallingFactorial(n - k, k) * Stirling2(n - k, k), for n &gt;= 0 and 0 &lt;= k &lt;= n//2, where &apos;//&apos; denotes integer division.
+ * A362789 Triangle read by rows. T(n, k) = FallingFactorial(n - k, k) * Stirling2(n - k, k), for n &gt;= 0 and 0 &lt;= k &lt;= n//2, where '//' denotes integer division.
  * @author Georg Fischer
  */
 public class A362789 extends LambdaTable {

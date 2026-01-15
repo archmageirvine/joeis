@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A392263 Numbers k such that sigma(k) = psi(k) + tau(k) + omega(k)^3.
+ * A391447 allocated for S. I. Dimitrov.
  * @author Sean A. Irvine
  */
 public class A391447 extends FilterNumberSequence {

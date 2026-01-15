@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392099.
+ * A389715 allocated for James S. DeArmon.
  * @author Sean A. Irvine
  */
 public class A389715 extends Sequence0 {

@@ -21,7 +21,7 @@ public class A019654 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A019654() {
-    super(3);
+    super(1);
   }
 
   // Placing queens so that they attack a precise number of other queens.
@@ -232,7 +232,7 @@ public class A019654 extends AbstractSequence {
       System.out.println("Solving for board size " + n);
     }
     mSize = n;
-    mMaximalQueens = 1; // It could be argued that placing no queens is a solution -- but we avoid that here for consistency with the OEIS
+    mMaximalQueens = 0;
     if (attack == 4 && n > 5) {
       // Known result from theory, see A063724
       mMaximalQueens = 3L * n - 3;
@@ -245,7 +245,7 @@ public class A019654 extends AbstractSequence {
     return mMaximalCount;
   }
 
-  private int mN = 2;
+  private int mN = 0;
 
   @Override
   public Z next() {

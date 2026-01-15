@@ -4,7 +4,7 @@ package irvine.oeis.a391;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A391468 Number of words of length 3n formed with 3 types of letter where the number of each type == 0 (mod 3).
+ * A391468 allocated for Pablo Serra.
  * @author Georg Fischer
  */
 public class A391468 extends HolonomicRecurrence {

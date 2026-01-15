@@ -7,22 +7,25 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A083188 Lexicographically earliest sequence of distinct primes with the property that for all n &gt;= 1, the concatenation of a(n), a(n+1), ..., a(2n-1) is a prime.
+ * A083190 a(1) = 1; for n&gt;1 a(n) is smallest prime not occurring earlier such that the concatenation of a(n), a(n+1), ..., a(2n-1) is a composite number.
  * @author Sean A. Irvine
  */
-public class A083188 extends CachedSequence {
+public class A083190 extends CachedSequence {
 
   private final Fast mPrime = new Fast();
   private final HashSet<Long> mUsed = new HashSet<>();
 
   /** Construct the sequence. */
-  public A083188() {
+  public A083190() {
     super(1);
   }
 
   @Override
   protected Z compute(final Z m) {
     final int n = m.intValue();
+    if (n == 1) {
+      return Z.ONE;
+    }
     long p = 1;
     final StringBuilder sb = new StringBuilder();
     for (int k = n / 2 + 1; k < n; ++k) {
@@ -31,7 +34,7 @@ public class A083188 extends CachedSequence {
     final String s = sb.toString();
     while (true) {
       p = mPrime.nextPrime(p);
-      if (!mUsed.contains(p) && ((n & 1) == 0 || new Z(s + p).isProbablePrime())) {
+      if (!mUsed.contains(p) && ((n & 1) == 0 || !new Z(s + p).isProbablePrime())) {
         mUsed.add(p);
         return Z.valueOf(p);
       }

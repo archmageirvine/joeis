@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A362788 Triangle read by rows, T(n, k) = RisingFactorial(n - k, k) * Stirling2(n - k, k), for n &gt;= 0 and 0 &lt;= k &lt;= n//2, where &apos;//&apos; denotes integer division.
+ * A362788 Triangle read by rows, T(n, k) = RisingFactorial(n - k, k) * Stirling2(n - k, k), for n &gt;= 0 and 0 &lt;= k &lt;= n//2, where '//' denotes integer division.
  * @author Georg Fischer
  */
 public class A362788 extends LambdaTable {

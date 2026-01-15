@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a003.A003558;
 
 /**
- * A294673 Order of the &quot;inside-out&quot; permutation on 2n+1 letters.
+ * A294673 Order of the "inside-out" permutation on 2n+1 letters.
  * @author Georg Fischer
  */
 public class A294673 extends FilterSequence {

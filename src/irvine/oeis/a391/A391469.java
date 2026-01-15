@@ -4,7 +4,7 @@ package irvine.oeis.a391;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A391469 Number of words of length 3*n that can be formed with a three-letter alphabet when the number of letters of each type is == 1 (mod 3).
+ * A391469 allocated for Pablo Serra.
  * @author Georg Fischer
  */
 public class A391469 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a392;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A392416 Number of partitions of the vertices of the n X 3 grid graph into total dominating sets.
+ * A392416 allocated for Andrew Howroyd.
  * @author Georg Fischer
  */
 public class A392416 extends HolonomicRecurrence {

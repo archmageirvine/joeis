@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A392382 Numbers m with deficiency 28: sigma(m) - 2*m = -28.
+ * A392382 allocated for Max Alekseyev.
  * @author Georg Fischer
  */
 public class A392382 extends FilterNumberSequence {

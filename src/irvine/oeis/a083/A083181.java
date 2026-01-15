@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A083179 a(1)=1, a(n) = smallest positive integer not included earlier such that the partial sums of a(A000040) are prime and the partial sums of a(A002808) are composite.
+ * A083181 a(1)=1, a(n) = smallest positive integer not included earlier such that the partial sums of a(A000040) are composite and the partial sums of a(A002808) are primes.
  * @author Sean A. Irvine
  */
 public class A083181 extends Sequence1 {

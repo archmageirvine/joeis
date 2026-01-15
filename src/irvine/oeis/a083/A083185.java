@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002385;
 
 /**
- * A083128.
+ * A083185 Palindromic primes using only nonprime digits (0,1,4,6,8,9).
  * @author Sean A. Irvine
  */
 public class A083185 extends FilterSequence {

@@ -2,7 +2,6 @@ package irvine.oeis.a391;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashSet;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -11,7 +10,6 @@ import java.util.concurrent.atomic.AtomicLong;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.util.Pair;
 import irvine.util.string.StringUtils;
 
 /**
@@ -33,9 +31,10 @@ public class A391498 extends AbstractSequence {
   private static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
     String.valueOf(Runtime.getRuntime().availableProcessors())));
 
-  protected static final class Trapezoid implements Comparable<Trapezoid> {
-    private final int mBase;
-    private final int mHeight;
+  // todo fix access
+  public static final class Trapezoid implements Comparable<Trapezoid> {
+    final int mBase;
+    final int mHeight;
     private final int mArea;
 
     /**
@@ -84,123 +83,22 @@ public class A391498 extends AbstractSequence {
 
   private static final class Packer {
     private final int mN;
-    private final List<List<int[]>> mOrientations;
+    private final List<Trapezoid> mTrapezoids;
     private boolean[][] mOccupied;
     private int[][] mEmptyPositions;
 
     private Packer(final int n, final List<Trapezoid> trapezoids) {
       mN = n;
-      mOrientations = buildOrientations(trapezoids);
-    }
-
-    // todo this is likely bogus!
-    private List<List<int[]>> buildOrientations(final List<Trapezoid> trapezoids) {
-      final ArrayList<List<int[]>> lst = new ArrayList<>();
-      for (final Trapezoid c : trapezoids) {
-        final HashSet<Pair<Integer, Integer>> h = new HashSet<>();
-        final int x = c.mBase;
-        final int y = c.mHeight;
-        h.add(new Pair<>(x, y));
-        h.add(new Pair<>(y, x));
-        final ArrayList<int[]> cl = new ArrayList<>();
-        for (final Pair<Integer, Integer> t : h) {
-          cl.add(new int[] {t.left(), t.right()});
-        }
-        lst.add(cl);
-      }
-      return lst;
-    }
-
-    private int[] findFirstEmpty(final int depth) {
-      final int x0 = mEmptyPositions[depth][0];
-      final int y0 = mEmptyPositions[depth][1];
-      for (int y = y0; y < mN; y++) {
-        for (int x = y == y0 ? x0 : 0; x < mOccupied[y].length; x++) {
-          if (!mOccupied[y][x]) {
-            mEmptyPositions[depth + 1][0] = x;
-            mEmptyPositions[depth + 1][1] = y;
-            return new int[] {x, y};
-          }
-        }
-      }
-      return null;
-    }
-
-    private boolean fits(final int x, final int y, final int dx, final int dy) {
-      return x + dx <= mN && y + dy <= mN;
-    }
-
-    private boolean canPlace(final int x0, final int y0, final int dx, final int dy) {
-      if (mOccupied[y0 + dy - 1][x0 + dx - 1]) {
-        return false;
-      }
-      for (int x = x0; x < x0 + dx; ++x) {
-        for (int y = y0; y < y0 + dy; ++y) {
-          if (mOccupied[y][x]) {
-            return false;
-          }
-        }
-      }
-      return true;
-    }
-
-    private void place(final int x0, final int y0, final int dx, final int dy, final boolean value) {
-      for (int x = x0; x < x0 + dx; ++x) {
-        for (int y = y0; y < y0 + dy; ++y) {
-          mOccupied[y][x] = value;
-        }
-      }
-    }
-
-    private boolean isCornerPlacement(final int x, final int y, final int dx, final int dy) {
-      return (x == 0 || x + dx == mN) && (y == 0 || y + dy == mN);
-    }
-
-    private boolean backtrack(final int[] trapezoids, final long usedTrapezoids, final int firstTrapezoid, final int depth) {
-      final int[] cell = findFirstEmpty(depth);
-      if (cell == null) {
-        return true; // all cells filled
-      }
-
-      final int x0 = cell[0];
-      final int y0 = cell[1];
-
-      for (int i = 0; i < trapezoids.length; ++i) {
-        if ((usedTrapezoids & (1L << i)) == 0) {
-          for (final int[] orient : mOrientations.get(trapezoids[i])) {
-            final int dx = orient[0];
-            final int dy = orient[1];
-            if (fits(x0, y0, dx, dy)) {
-              if (i < firstTrapezoid && isCornerPlacement(x0, y0, dx, dy)) {
-                // This trapezoid was previously tried in a corner and no solution was found,
-                // so there is no point in trying it in such a placement now.
-                continue;
-              }
-              if (canPlace(x0, y0, dx, dy)) {
-                place(x0, y0, dx, dy, true);
-                if (backtrack(trapezoids, usedTrapezoids | (1L << i), depth == 0 ? i : firstTrapezoid, depth + 1)) {
-                  return true;
-                }
-                place(x0, y0, dx, dy, false);
-              }
-            }
-            if (usedTrapezoids == 0) {
-              break; // If placing the first trapezoid, by symmetry, we need only consider one orientation
-            }
-          }
-        }
-      }
-      return false; // no valid placement found
+      mTrapezoids = trapezoids;
     }
 
     private boolean canPack(final int[] trapezoids) {
-      // Make up empty equilateral triangle
-      mOccupied = new boolean[mN][];
-      for (int k = 0; k < mN; ++k) {
-        mOccupied[k] = new boolean[2 * mN + 1];
+      final List<Trapezoid> lst = new ArrayList<>();
+      for (final int v : trapezoids) {
+        lst.add(mTrapezoids.get(v));
       }
-      mEmptyPositions = new int[trapezoids.length + 1][2];
-      return backtrack(trapezoids, 0, 0, 0);
+      final TriangleTrapezoidPacker p = new TriangleTrapezoidPacker(mN, lst);
+      return p.canPack();
     }
   }
 

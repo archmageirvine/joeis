@@ -97,8 +97,9 @@ public class A391498 extends AbstractSequence {
       for (final int v : trapezoids) {
         lst.add(mTrapezoids.get(v));
       }
-      final TriangleTrapezoidPacker p = new TriangleTrapezoidPacker(mN, lst);
-      return p.canPack();
+      return false; // todo
+//      final TriangleTrapezoidPacker p = new TriangleTrapezoidPacker(mN, lst);
+//      return p.canPack();
     }
   }
 

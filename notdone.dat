@@ -1380,9 +1380,7 @@ A046873 Number of total orders extending inclusion on P({1,...,n}).
 A046880 Number of isolated-pentagon (IPR) fullerenes with 2n vertices (or carbon atoms).
 A046904 Number of isomorphism classes of posets with n points with property that there is no nonsingelton proper subset T for which x not in T implies x<T or x>T or x incomparable with every element of T.
 A046905 Posets with n points with property that there is no nonsingelton proper subset T for which x not in T implies x<T or x>T or x incomparable with every element of T.
-A046906 Number of connected irreducible posets with n labeled points.
 A046909 Number of isomorphism classes of connected irreducible quasiorders with n labeled points.
-A046910 Number of connected irreducible quasiorders with n labeled points.
 A046911 Number of isomorphism classes of irreducible quasiorders with n labeled points.
 A046943 Continued fraction for Fransen-Robinson constant Integral_{x>=0} 1/Gamma(x).
 A046958 Theta series of 14-dimensional integral laminated lattice LAMBDA14.2 with minimal norm 4
@@ -2709,3 +2707,4 @@ A082959 Number of inequivalent optimal linear codes of length 2n over GF(4).
 A082960 Number of inequivalent optimal Hermitian self-dual codes of length 2n over GF(4).
 A082961 Number of inequivalent optimal Hermitian formally self-dual but not self-dual codes of length 2n over GF(4).
 A082965 a(n) = A000252(n) / A065558(n).
+A083205 a(1) = 1, then smallest number not included earlier such that a(n)*a(n+1) + 1 is an n-th power.

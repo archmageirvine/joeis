@@ -8,9 +8,12 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
 
+import irvine.math.lattice.Lattice;
+import irvine.math.lattice.Lattices;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.util.string.StringUtils;
+import jmason.poly.CoordSet2T;
 
 /**
  * A391498 allocated for Janaka Rodrigo.
@@ -78,6 +81,25 @@ public class A391498 extends AbstractSequence {
         return c;
       }
       return Integer.compare(mBase, other.mBase);
+    }
+
+    private static final Lattice L = Lattices.HEXAGONAL;
+
+    private CoordSet2T canonicalOrientation() {
+      final int a = getArea();
+      final CoordSet2T cs = new CoordSet2T(a, true, false, false);
+      int k = 0;
+      for (int y = 0; y < mHeight; ++y) {
+        final int startX = 2 * y;
+        for (int x = 0; x < mBase - y; ++x) {
+          cs.setTriangle(k++, startX + 2 * x + 1, 2 * -y, 0);
+        }
+        for (int x = 0; x < mBase - y - 1; ++x) {
+          cs.setTriangle(k++, startX + 2 * x + 2, 2 * -y, 0);
+        }
+      }
+      assert k == a;
+      return cs;
     }
   }
 
@@ -268,6 +290,8 @@ public class A391498 extends AbstractSequence {
    * @param args n k
    */
   public static void main(final String[] args) {
+    final CoordSet2T cs = new Trapezoid(5, 2).canonicalOrientation();
+    System.out.println(cs.makeDiagram());
     final A391498 s = new A391498();
     final int n = Integer.parseInt(args[0]);
     for (final Trapezoid t : s.buildTrapezoids(n)) {

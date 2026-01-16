@@ -1,6 +1,7 @@
 package irvine.oeis.a391;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
@@ -8,8 +9,7 @@ import java.util.Set;
 
 /**
  * Pack trapezoids into an equilateral triangle of side n on the triangular lattice.
- * Uses parity-grid model: cell (x,y) is a unit triangle, orientation = (x+y)&1.
- * Coordinates are doubled to make 60° rotations integer.
+ * Uses square board with inTriangle masking; coordinates doubled for trapezoids.
  */
 public class TriangleTrapezoidPacker {
 
@@ -22,17 +22,27 @@ public class TriangleTrapezoidPacker {
     public Trapezoid(final int base, final int height) {
       mBase = base;
       mHeight = height;
-      mArea = base * base - (base - height) * (base - height); // h*(2b-h)
+      mArea = base * base - (base - height) * (base - height);
     }
 
-    public int getBase() { return mBase; }
-    public int getHeight() { return mHeight; }
-    public int getArea() { return mArea; }
+    public int getBase() {
+      return mBase;
+    }
+
+    public int getHeight() {
+      return mHeight;
+    }
+
+    public int getArea() {
+      return mArea;
+    }
 
     @Override
     public int compareTo(final Trapezoid other) {
-      int c = Integer.compare(other.mArea, mArea); // descending by area
-      if (c != 0) return c;
+      int c = Integer.compare(other.mArea, mArea);
+      if (c != 0) {
+        return c;
+      }
       return Integer.compare(other.mBase, mBase);
     }
 
@@ -42,7 +52,7 @@ public class TriangleTrapezoidPacker {
     }
   }
 
-  /* ---------- shape representation ---------- */
+  /* ---------- internal shape ---------- */
   private static final class Shape {
     final int[][] cells;
 
@@ -53,14 +63,19 @@ public class TriangleTrapezoidPacker {
 
   /* ---------- board ---------- */
   private final int n;
-  private final int width;
   private final boolean[][] board;
+  private final int[][] boardId;
+  private final int width;
   private final List<List<Shape>> shapes;
 
   public TriangleTrapezoidPacker(int n, List<Trapezoid> traps) {
     this.n = n;
-    this.width = 4 * n; // doubled coordinates, safe for placements
+    this.width = 2 * n;
     this.board = new boolean[width][width];
+    this.boardId = new int[width][width];
+    for (int[] row : boardId) {
+      Arrays.fill(row, -1);
+    }
     this.shapes = new ArrayList<>();
 
     for (Trapezoid t : traps) {
@@ -75,10 +90,16 @@ public class TriangleTrapezoidPacker {
 
   /* ---------- backtracking ---------- */
   private boolean backtrack(int idx) {
-    if (idx == shapes.size()) return true;
+    if (idx == shapes.size()) {
+      System.out.println("Found a packing:");
+      dumpPacking();
+      return true;
+    }
 
     int[] hole = findFirstEmpty();
-    if (hole == null) return false;
+    if (hole == null) {
+      return false;
+    }
 
     int hx = hole[0];
     int hy = hole[1];
@@ -89,20 +110,23 @@ public class TriangleTrapezoidPacker {
         int oy = hy - anchor[1];
 
         if (canPlace(s, ox, oy)) {
-          place(s, ox, oy, true);
-          if (backtrack(idx + 1)) return true;
-          place(s, ox, oy, false);
+          place(s, ox, oy, true, idx);
+          if (backtrack(idx + 1)) {
+            return true;
+          }
+          place(s, ox, oy, false, -1);
         }
       }
     }
     return false;
   }
 
-  // Find first empty board cell (step by 2 to match doubled coords)
   private int[] findFirstEmpty() {
-    for (int y = 0; y < width; y += 2) {
-      for (int x = 0; x < width; x += 2) {
-        if (inTriangle(x, y) && !board[x][y]) return new int[]{x, y};
+    for (int y = 0; y < width; ++y) {
+      for (int x = 0; x < width; ++x) {
+        if (inTriangle(x, y) && !board[x][y]) {
+          return new int[] {x, y};
+        }
       }
     }
     return null;
@@ -112,23 +136,28 @@ public class TriangleTrapezoidPacker {
     for (int[] c : s.cells) {
       int x = ox + c[0];
       int y = oy + c[1];
-      if (!inTriangle(x, y) || board[x][y]) return false;
+      if (!inTriangle(x, y) || board[x][y]) {
+        return false;
+      }
     }
     return true;
   }
 
-  private void place(Shape s, int ox, int oy, boolean v) {
+  private void place(Shape s, int ox, int oy, boolean v, int id) {
     for (int[] c : s.cells) {
-      board[ox + c[0]][oy + c[1]] = v;
+      int x = ox + c[0];
+      int y = oy + c[1];
+      board[x][y] = v;
+      boardId[x][y] = v ? id : -1;
     }
   }
 
   /* ---------- geometry ---------- */
   private boolean inTriangle(int x, int y) {
-    return x >= 0 && y >= 0 && x + y <= 4 * n - 4;
+    return x >= 0 && y >= 0 && x + y <= 2 * n - 2;
   }
 
-  /* ---------- trapezoid orientations ---------- */
+  /* ---------- trapezoid generation ---------- */
   private List<Shape> generateOrientations(Trapezoid t) {
     List<int[]> base = buildCanonical(t);
     Set<String> seen = new HashSet<>();
@@ -136,14 +165,16 @@ public class TriangleTrapezoidPacker {
 
     for (int r = 0; r < 6; ++r) {
       List<int[]> cur = base;
-      for (int k = 0; k < r; ++k) cur = rotate60(cur);
-
+      for (int k = 0; k < r; ++k) {
+        cur = rotate60(cur);
+      }
       for (int f = 0; f < 2; ++f) {
         List<int[]> pts = (f == 0) ? cur : reflect(cur);
         List<int[]> norm = normalize(pts);
-
         String key = keyOf(norm);
-        if (seen.add(key)) out.add(new Shape(norm));
+        if (seen.add(key)) {
+          out.add(new Shape(norm));
+        }
       }
     }
     return out;
@@ -153,31 +184,27 @@ public class TriangleTrapezoidPacker {
     int b = t.getBase();
     int h = t.getHeight();
     int maxWidth = 2 * b - 1;
-
     List<int[]> pts = new ArrayList<>();
     for (int i = 0; i < h; ++i) {
       int len = 2 * (b - h + i) + 1;
       int startX = (maxWidth - len) / 2;
       for (int k = 0; k < len; ++k) {
-        pts.add(new int[]{(startX + k) * 2, i * 2}); // double coordinates
+        pts.add(new int[] {(startX + k) * 2, i * 2});
       }
     }
-
     if (pts.size() != t.getArea()) {
       throw new IllegalStateException("Area mismatch for " + t + " got " + pts.size());
     }
-
     return normalize(pts);
   }
 
   private List<int[]> rotate60(List<int[]> in) {
     List<int[]> out = new ArrayList<>();
     for (int[] p : in) {
-      int X = p[0];
-      int Y = p[1];
-      int nx = (X - 3 * Y) / 2;
-      int ny = (X + Y) / 2;
-      out.add(new int[]{nx, ny});
+      int x = p[0], y = p[1];
+      int nx = (x - 3 * y) / 2;
+      int ny = (x + y) / 2;
+      out.add(new int[] {nx, ny});
     }
     return normalize(out);
   }
@@ -185,7 +212,7 @@ public class TriangleTrapezoidPacker {
   private List<int[]> reflect(List<int[]> in) {
     List<int[]> out = new ArrayList<>();
     for (int[] p : in) {
-      out.add(new int[]{-p[0], p[1]});
+      out.add(new int[] {-p[0], p[1]});
     }
     return out;
   }
@@ -198,7 +225,7 @@ public class TriangleTrapezoidPacker {
     }
     List<int[]> out = new ArrayList<>();
     for (int[] p : in) {
-      out.add(new int[]{p[0] - minx, p[1] - miny});
+      out.add(new int[] {p[0] - minx, p[1] - miny});
     }
     return out;
   }
@@ -212,7 +239,22 @@ public class TriangleTrapezoidPacker {
     return sb.toString();
   }
 
-  /* ---------- dump for debugging ---------- */
+  /* ---------- packing dump ---------- */
+  private void dumpPacking() {
+    for (int y = 0; y < width; ++y) {
+      StringBuilder sb = new StringBuilder();
+      for (int x = 0; x < width; ++x) {
+        if (!inTriangle(x, y)) {
+          sb.append("· ");
+        } else {
+          sb.append(boardId[x][y] >= 0 ? boardId[x][y] : "·").append(" ");
+        }
+      }
+      System.out.println(sb);
+    }
+    System.out.println();
+  }
+
   private static void dumpShape(Shape s) {
     int minx = Integer.MAX_VALUE, miny = Integer.MAX_VALUE;
     int maxx = Integer.MIN_VALUE, maxy = Integer.MIN_VALUE;
@@ -222,18 +264,19 @@ public class TriangleTrapezoidPacker {
       miny = Math.min(miny, p[1]);
       maxx = Math.max(maxx, p[0]);
       maxy = Math.max(maxy, p[1]);
-      set.add((((long)p[0])<<32) ^ (p[1] & 0xffffffffL));
+      set.add((((long) p[0]) << 32) ^ (p[1] & 0xffffffffL));
     }
     for (int y = miny; y <= maxy; y += 2) {
       StringBuilder sb = new StringBuilder();
       for (int x = minx; x <= maxx; x += 2) {
-        long key = (((long)x)<<32) ^ y;
-        sb.append(set.contains(key) ? "■" : "·");
+        long key = (((long) x) << 32) ^ y;
+        sb.append(set.contains(key) ? "#" : "·");
         sb.append(" ");
       }
       System.out.println(sb);
     }
   }
+
 
   private void dumpOrientations(Trapezoid t) {
     List<Shape> list = generateOrientations(t);
@@ -245,47 +288,24 @@ public class TriangleTrapezoidPacker {
     }
   }
 
-  /* ---------- demo / tests ---------- */
+
+  /* ---------- demo ---------- */
+  public static void main(String[] args) {
+    test(4, List.of(new Trapezoid(3, 2), new Trapezoid(3, 1), new Trapezoid(2, 1)));
+    test(6, List.of(new Trapezoid(4, 2), new Trapezoid(5, 1), new Trapezoid(4, 1), new Trapezoid(3, 1), new Trapezoid(2, 1)));
+    test(7, List.of(new Trapezoid(5, 3), new Trapezoid(7, 1), new Trapezoid(4, 1), new Trapezoid(3, 1), new Trapezoid(2, 1)));
+
+    // Debug: dump orientations
+    TriangleTrapezoidPacker p = new TriangleTrapezoidPacker(7, List.of());
+    p.dumpOrientations(new Trapezoid(5, 3));
+    p.dumpOrientations(new Trapezoid(5, 1));
+
+  }
+
   private static void test(int n, List<Trapezoid> t) {
     List<Trapezoid> list = new ArrayList<>(t);
     Collections.sort(list);
     TriangleTrapezoidPacker p = new TriangleTrapezoidPacker(n, list);
     System.out.println("n=" + n + " " + list + " -> " + p.canPack());
-  }
-
-  public static void main(String[] args) {
-    test(4, List.of(
-      new Trapezoid(3,2),
-      new Trapezoid(3,1),
-      new Trapezoid(2,1)
-    ));
-
-    test(6, List.of(
-      new Trapezoid(2,1),
-      new Trapezoid(3,1),
-      new Trapezoid(4,1),
-      new Trapezoid(5,1),
-      new Trapezoid(4,2)
-    ));
-
-    test(7, List.of(
-      new Trapezoid(5,3),
-      new Trapezoid(7,1),
-      new Trapezoid(4,1),
-      new Trapezoid(3,1),
-      new Trapezoid(2,1)
-    ));
-
-    test(7, List.of(
-      new Trapezoid(4,3),
-      new Trapezoid(4,2),
-      new Trapezoid(6,1),
-      new Trapezoid(3,2),
-      new Trapezoid(2,1)
-    ));
-
-    // Debug: dump orientations
-    TriangleTrapezoidPacker p = new TriangleTrapezoidPacker(7, List.of());
-    p.dumpOrientations(new Trapezoid(5,3));
   }
 }

@@ -5,16 +5,18 @@ import java.util.HashSet;
 import irvine.util.Pair;
 
 /**
- * A set of <code>xy</code> coordinates of triangles in a polyiamond
- * 
+ * A set of <code>xy</code> coordinates of triangles in a polyiamond.
+ *
+ * <pre>
  *  1   ^       /
  *  |  / \     /
  *  | /   \   /
  *  |/     \ /
  *  0   1   2
- * 
- * a coordinate pair x,y, for x+(y+1)/2 even, means there is a point-up triangle with x,y as its midpoint
- * a coordinate pair x,y, for x+(y+1)/2 odd, means there is a point-down triangle with x,y as its midpoint
+ * </pre>
+ *
+ * A coordinate pair x,y, for x+(y+1)/2 even, means there is a point-up triangle with x,y as its midpoint.
+ * A coordinate pair x,y, for x+(y+1)/2 odd, means there is a point-down triangle with x,y as its midpoint.
  * @author jmason
  */
 public class CoordSet2T extends CoordSetGen<Triangle> {
@@ -82,7 +84,14 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
     return mHeight;
   }
 
-  void setTriangle(final int i, final int x, final int y, final int colour) {
+  /**
+   * Set a particular triangle
+   * @param i index
+   * @param x x-coordinate
+   * @param y y-coordinate
+   * @param colour colour to use (or 0)
+   */
+  public void setTriangle(final int i, final int x, final int y, final int colour) {
     ((TriangleSet) mSet).setTriangle(i, x, y, colour);
   }
 
@@ -219,7 +228,7 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
   }
 
   @Override
-  protected String makeDiagram() {
+  public String makeDiagram() {
     final String[][] array = new String[mSize + 1][mSize * 2];
     int maxy = 0;
     for (int x = 0; x < mSize + 1; ++x) {

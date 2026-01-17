@@ -15,7 +15,7 @@ public class A392307 extends Sequence0 {
 
   @Override
   public Z next() {
-    long lim = 1L << (++mN + 2) + 3;
+    final long lim = 1L << (++mN + 2) + 3;
     long p = 3;
     long cnt = 2;
     while (true) {

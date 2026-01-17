@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000290;
 
 /**
- * A392304 allocated for Yunus Emre Yaman.
+ * A392304 Squares whose sum of prime factors (with multiplicity) is also a perfect square.
  * @author Sean A. Irvine
  */
 public class A392304 extends Sequence1 {

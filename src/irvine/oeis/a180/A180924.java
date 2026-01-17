@@ -6,7 +6,7 @@ import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 
 /**
- * A180924 Numbers n such that 12321*2^n + 1 is prime.
+ * A180924 Numbers k such that 12321*2^k + 1 is prime.
  * @author Georg Fischer
  */
 public class A180924 extends PowerFactorPrimeSequence {

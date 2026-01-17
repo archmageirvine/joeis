@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060318 Powers of 3 in the odd Catalan numbers Catalan(2^n - 1).
+ * A060318 Exponent of highest power of 3 dividing the n-th odd Catalan number Catalan(2^n - 1).
  * @author Sean A. Irvine
  */
 public class A060318 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A020108 Ceiling of GAMMA(n+1/10)/GAMMA(1/10).
+ * A020108 Ceiling of Gamma(n+1/10)/Gamma(1/10).
  * @author Sean A. Irvine
  */
 public class A020108 extends Sequence0 {

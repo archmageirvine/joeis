@@ -4,7 +4,7 @@ package irvine.oeis.a392;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A392138 allocated for A.H.M. Smeets.
+ * A392138 a(n) = 7*a(n-1) + 2*7^n - 1, a(0) = 0.
  * @author Georg Fischer
  */
 public class A392138 extends HolonomicRecurrence {

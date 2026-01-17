@@ -8,7 +8,7 @@ import irvine.oeis.TwoParameterFormSequence;
 import irvine.oeis.a332.A332785;
 
 /**
- * A392098 allocated for Michael De Vlieger.
+ * A392069 Powers k^m divisible by only 1 prime cube, with m &gt; 1 and nonsquarefree weak k (in A332785).
  * @author Sean A. Irvine
  */
 public class A392069 extends TwoParameterFormSequence {

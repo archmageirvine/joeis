@@ -7,7 +7,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a033.A033880;
 
 /**
- * A141548 Numbers n whose deficiency is 6.
+ * A141548 Numbers k whose deficiency is 6.
  * @author Georg Fischer
  */
 public class A141548 extends FilterNumberSequence {

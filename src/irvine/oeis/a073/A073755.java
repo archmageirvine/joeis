@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A073755 Number of steps needed to reach a prime when the following map is repeatedly applied to n: if n is even then 2n + int(sqrt(n)) + 1, otherwise 2n - int(sqrt(n)) - 1; or -1 if no prime is ever reached.
+ * A073755 Number of steps needed to reach a prime when the following map is repeatedly applied to n: if n is even then 2*n + floor(sqrt(n)) + 1, otherwise 2*n - floor(sqrt(n)) - 1; or -1 if no prime is ever reached.
  * @author Sean A. Irvine
  */
 public class A073755 extends Sequence2 {

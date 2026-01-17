@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A000095 Number of fixed points of GAMMA_0 (n) of type i.
+ * A000095 Number of fixed points of Gamma_0 (n) of type i.
  * @author Sean A. Irvine
  */
 public class A000095 extends Sequence1 {

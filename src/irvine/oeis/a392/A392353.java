@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002808;
 
 /**
- * A392353 allocated for Aitzaz Imtiaz.
+ * A392353 Composite numbers k such that the Chebyshev distance from 1 to k in the Ulam spiral is a prime number.
  * @author Sean A. Irvine
  */
 public class A392353 extends FilterSequence {

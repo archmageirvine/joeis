@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A132859 a(0)=0, a(n)=n^a(n-1) for n&gt;=1 .
+ * A132859 a(0) = 0, a(n) = n^a(n-1) for n&gt;=1.
  * @author Georg Fischer
  */
 public class A132859 extends Sequence0 {

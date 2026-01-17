@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001694;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A056828 Numbers that are not the sum of at most three powerful (1) numbers.
+ * A056828 Numbers that are not the sum of at most three powerful numbers (A001694).
  * @author Sean A. Irvine
  */
 public class A056828 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a039.A039653;
 
 /**
- * A248792 Numbers n such that sigma(n) - 1 is a prime p.
+ * A248792 Numbers k such that sigma(k) - 1 is a prime p.
  * @author Georg Fischer
  */
 public class A248792 extends FilterPositionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002113;
 
 /**
- * A033621 n-1 is a palindrome in base 10, n+1 is a palindrome in base 17.
+ * A033621 Numbers k such that k-1 is a palindrome in base 10, and k+1 is a palindrome in base 17.
  * @author Sean A. Irvine
  */
 public class A033621 extends A002113 {

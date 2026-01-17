@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083193 a(1) = 1 and then primes arising in A083192. Concatenation of n-th term to (2n-1)th term of A083192.
+ * A083193 a(1) = 1 and then primes arising in A083192. Concatenation of n-th term to (2n-1)-th term of A083192.
  * @author Sean A. Irvine
  */
 public class A083193 extends Sequence1 {

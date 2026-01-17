@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A392383 allocated for Max Alekseyev.
+ * A392383 Numbers m with abundance 28: sigma(m) - 2*m = 28.
  * @author Georg Fischer
  */
 public class A392383 extends FilterNumberSequence {

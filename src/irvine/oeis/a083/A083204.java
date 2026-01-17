@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.math.z.Z;
 
 /**
- * A083203.
+ * A083204 Bases for the cubes arising in A083203.
  * @author Sean A. Irvine
  */
 public class A083204 extends A083203 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A049384 a(0)=1, a(n+1) = (n+1)^a(n).
+ * A049384 a(0) = 1, a(n+1) = (n+1)^a(n).
  * @author Sean A. Irvine
  */
 public class A049384 extends Sequence0 {

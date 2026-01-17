@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001223;
 
 /**
- * A259366.
+ * A389714 Numbers k such that the product of the first k prime gaps minus 1 is prime.
  * @author Sean A. Irvine
  */
 public class A389714 extends A001223 {

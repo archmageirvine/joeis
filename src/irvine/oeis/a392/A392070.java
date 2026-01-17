@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A392070 allocated for Juri-Stepan Gerasimov.
+ * A392070 Exponents k such that 2^k - 1 has exactly one representation of the form (2^k-1)/d + d with omega((2^k - 1)/d + d) = omega(2^k - 1) where omega = A001221.
  * @author Sean A. Irvine
  */
 public class A392070 extends Sequence1 {

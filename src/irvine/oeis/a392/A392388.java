@@ -4,7 +4,7 @@ import irvine.oeis.a241.A241773;
 import irvine.oeis.cons.DecimalExpansionFromContinuedFractionSequence;
 
 /**
- * A392388 allocated for Jwalin Bhatt.
+ * A392388 Decimal expansion of the number whose continued fraction coefficients are given in A241773.
  * @author Sean A. Irvine
  */
 public class A392388 extends DecimalExpansionFromContinuedFractionSequence {

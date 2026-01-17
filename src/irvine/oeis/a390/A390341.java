@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390341 allocated for Ludovic Schwob.
+ * A390341 Number of vertically centered alternating sign matrices of size 2*n+1.
  * @author Sean A. Irvine
  */
 public class A390341 extends Sequence0 {

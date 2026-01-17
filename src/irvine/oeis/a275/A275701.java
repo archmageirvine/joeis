@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A275701 Numbers n whose abundance is 26: sigma(n) - 2n = 26.
+ * A275701 Numbers k whose abundance is 26: sigma(k) - 2*k = 26.
  * @author Georg Fischer
  */
 public class A275701 extends FilterNumberSequence {

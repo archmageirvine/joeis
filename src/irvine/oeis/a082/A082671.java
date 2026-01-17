@@ -4,7 +4,7 @@ package irvine.oeis.a082;
 import irvine.oeis.a139.A139056;
 
 /**
- * A082671 Numbers n such that (n!-2)/2 is a prime.
+ * A082671 Numbers k such that (k! - 2)/2 is a prime.
  * @author Georg Fischer
  */
 public class A082671 extends A139056 {

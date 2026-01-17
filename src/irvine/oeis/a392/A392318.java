@@ -4,7 +4,7 @@ package irvine.oeis.a392;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A392318 allocated for Gonzalo Mart\u00ednez.
+ * A392318 Decimal expansion of 37/72.
  * @author Georg Fischer
  */
 public class A392318 extends HolonomicRecurrence {

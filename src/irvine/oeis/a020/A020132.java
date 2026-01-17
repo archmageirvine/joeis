@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A020132 Ceiling of GAMMA(n+1/4)/GAMMA(1/4).
+ * A020132 Ceiling of Gamma(n+1/4)/Gamma(1/4).
  * @author Sean A. Irvine
  */
 public class A020132 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.TwoParameterFormSequence;
 
 /**
- * A019654.
+ * A389663 Semiprimes that are (perimeter^3 - hypotenuse^3) of a Pythagorean triple.
  * @author Sean A. Irvine
  */
 public class A389663 extends TwoParameterFormSequence {

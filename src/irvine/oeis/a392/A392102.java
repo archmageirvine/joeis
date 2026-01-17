@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392102 allocated for Rhys Feltman.
+ * A392102 Squares which are the concatenation of two or more powers of 2.
  * @author Sean A. Irvine
  */
 public class A392102 extends Sequence1 {

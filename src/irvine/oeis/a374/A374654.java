@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A374654 a(n) = Product_{k=0..n} L(k)+1, where L=A000032 (Lucas numbers).
+ * A374654 a(n) = Product_{k=0..n} (L(k)+1), where L=A000032 (Lucas numbers).
  * @author Georg Fischer
  */
 public class A374654 extends LambdaSequence {

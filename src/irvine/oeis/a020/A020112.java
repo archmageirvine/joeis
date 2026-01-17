@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A020112 Ceiling of GAMMA(n+4/9)/GAMMA(4/9).
+ * A020112 Ceiling of Gamma(n+4/9)/Gamma(4/9).
  * @author Sean A. Irvine
  */
 public class A020112 extends Sequence0 {

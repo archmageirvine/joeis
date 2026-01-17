@@ -6,13 +6,13 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083203.
+ * A083206 a(n) is the number of ways of partitioning the divisors of n into two disjoint sets with equal sum.
  * @author Sean A. Irvine
  */
 public class A083206 extends Sequence1 {
 
   private int mN = 0;
-  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<>() {
+  protected final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<>() {
     @Override
     protected Z compute(final int n, final int m, final int k) {
       if (k <= m) {

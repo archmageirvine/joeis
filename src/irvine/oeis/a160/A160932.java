@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A160932 Primes of the form (k+1)^1+(k+2)^2+(k+3)^3+(k+4)^4+(k+5)^5+(k+6)^6.
+ * A160932 Primes of the form Sum_{i=1..6} (k+i)^i with k&gt;=0.
  * @author Georg Fischer
  */
 public class A160932 extends FilterSequence {

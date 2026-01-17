@@ -7,7 +7,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A068068 Number of odd unitary divisors of n. d is a unitary divisor of n if d divides n and gcd(d,n/d)=1.
+ * A068068 Number of odd unitary divisors of n. d is a unitary divisor of n if d divides n and gcd(d,n/d) = 1.
  * @author Sean A. Irvine
  */
 public class A068068 extends Sequence1 implements DirectSequence {

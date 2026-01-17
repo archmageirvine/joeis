@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a057.A057716;
 
 /**
- * A177712 Even numbers that have a nontrivial odd divisor.
+ * A177712 Even numbers divisible by an odd prime.
  * @author Georg Fischer
  */
 public class A177712 extends AbstractSequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392079 allocated for Felix Huber.
+ * A392079 a(n) is the maximum count of equal differences among consecutive divisors of A259366(n).
  * @author Sean A. Irvine
  */
 public class A392079 extends Sequence1 {

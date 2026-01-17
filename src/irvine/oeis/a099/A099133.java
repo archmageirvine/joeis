@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A099133 4^(n-1)*Fibonacci(n).
+ * A099133 a(n) = 4^(n-1)*Fibonacci(n).
  * @author Sean A. Irvine
  */
 public class A099133 extends LinearRecurrence {

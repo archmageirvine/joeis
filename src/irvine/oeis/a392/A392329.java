@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392329 allocated for Alain Rocchelli.
+ * A392329 a(n) is the number of iterations x-&gt;gpf(6*x+1) starting at n until the value 13 or 47 is reached; a(n) = -1 if neither of these two values is reached.
  * @author Sean A. Irvine
  */
 public class A392329 extends Sequence1 {

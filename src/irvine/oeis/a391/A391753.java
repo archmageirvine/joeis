@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A391753 allocated for Michael De Vlieger.
+ * A391753 Number of pairs {j,k}, 0 &lt; j &lt; k &lt; n, such that j*n + k and k*n + j are distinct and have the same squarefree kernel.
  * @author Sean A. Irvine
  */
 public class A391753 extends Sequence3 {

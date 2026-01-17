@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A088466 a(n)=(1/2)*4^n*(2*GAMMA(n + 1/2)^2*hypergeom([n + 1/2, n + 1/2], [1/2, 1/2, 3/2], 1/4) + Pi*n!^2*hypergeom([n + 1, n + 1], [1, 3/2, 2], 1/4))/exp(1)/Pi.
+ * A088466 a(n)=(1/2)*4^n*(2*Gamma(n + 1/2)^2*hypergeom([n + 1/2, n + 1/2], [1/2, 1/2, 3/2], 1/4) + Pi*n!^2*hypergeom([n + 1, n + 1], [1, 3/2, 2], 1/4))/exp(1)/Pi.
  * @author Georg Fischer
  */
 public class A088466 extends HolonomicRecurrence {

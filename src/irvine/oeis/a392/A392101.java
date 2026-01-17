@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A392101 allocated for Rhys Feltman.
+ * A392101 Numbers whose square is the concatenation of two or more powers of 2.
  * @author Sean A. Irvine
  */
 public class A392101 extends SimpleTransformSequence {

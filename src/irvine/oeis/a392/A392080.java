@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A259366 Numbers for which the differences between consecutive divisors (ordered by size) are not distinct.
+ * A392080 a(n) is the number of repeated difference values among the consecutive divisors of A259366(n).
  * @author Sean A. Irvine
  */
 public class A392080 extends Sequence1 {

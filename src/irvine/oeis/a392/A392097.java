@@ -11,7 +11,7 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A392097 allocated for Hartmut F. W. Hoft.
+ * A392097 a(n) is the smallest number k for which the symmetric representation of sigma for k, SRS(k), has n parts and each i-th part up to the diagonal is unimodal of width i.
  * @author Sean A. Irvine
  */
 public class A392097 extends Sequence1 {

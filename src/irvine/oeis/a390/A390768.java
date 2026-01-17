@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a139.A139391;
 
 /**
- * A083191.
+ * A390768 Binary length of A139391(n) - binary length of n.
  * @author Sean A. Irvine
  */
 public class A390768 extends A139391 {

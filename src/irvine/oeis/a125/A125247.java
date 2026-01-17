@@ -7,7 +7,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a033.A033880;
 
 /**
- * A125247 Numbers n whose abundance sigma(n) - 2n = -8. Numbers n whose deficiency is 8.
+ * A125247 Numbers k whose abundance sigma(k) - 2*k = -8. Numbers k whose deficiency is 8.
  * @author Georg Fischer
  */
 public class A125247 extends FilterNumberSequence {

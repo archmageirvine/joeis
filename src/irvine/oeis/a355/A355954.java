@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A392098 allocated for Michael De Vlieger.
+ * A355954 Decimal expansion of the constant A in the asymptotic behavior R(d) = log(d)/(Pi*sqrt(3)) + A of the resistance between two nodes separated by the Euclidean distance d in an infinite triangular lattice of one-ohm resistors.
  * @author Sean A. Irvine
  */
 public class A355954 extends DecimalExpansionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A083191.
+ * A391118 Let B_n = {b_1 &lt; b_2 &lt; ...} be the set of those integers in [n, n^2] which have a divisor in (n, 2n). a(n) = max(b_(i+1) - b_i).
  * @author Sean A. Irvine
  */
 public class A391118 extends Sequence3 {

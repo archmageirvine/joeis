@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.TwoParameterFormSequence;
 
 /**
- * A019654.
+ * A391598 Primes that are perimeter^2 + hypotenuse^2 of a Pythagorean triple.
  * @author Sean A. Irvine
  */
 public class A391598 extends TwoParameterFormSequence {

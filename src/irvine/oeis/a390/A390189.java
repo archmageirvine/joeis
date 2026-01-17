@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A390189 allocated for Soko Kosaka.
+ * A390189 Primes k such that k-2 is a semiprime and k+2 is the product of 4 consecutive primes.
  * @author Sean A. Irvine
  */
 public class A390189 extends A000040 {

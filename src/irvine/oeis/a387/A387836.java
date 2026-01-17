@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A019654.
+ * A387836 Primes prime(i) such that (prime(i-1)+prime(i))^2 + prime(i)^2 is prime.
  * @author Sean A. Irvine
  */
 public class A387836 extends A000040 {

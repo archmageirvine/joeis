@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A020130 Ceiling of GAMMA(n+1/5)/GAMMA(1/5).
+ * A020130 Ceiling of Gamma(n+1/5)/Gamma(1/5).
  * @author Sean A. Irvine
  */
 public class A020130 extends Sequence0 {

@@ -6,7 +6,7 @@ package irvine.oeis.a166;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A166750 a(n) = (A001147(n))^3 = 2^(3*n)*GAMMA(n+1/2)^3/Pi^(3/2).
+ * A166750 a(n) = (A001147(n))^3 = 2^(3*n)*Gamma(n+1/2)^3/Pi^(3/2).
  * @author Georg Fischer
  */
 public class A166750 extends HolonomicRecurrence {

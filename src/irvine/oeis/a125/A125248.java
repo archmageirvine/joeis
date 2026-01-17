@@ -7,7 +7,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a033.A033880;
 
 /**
- * A125248 Numbers n whose abundance sigma(n)-2n = -16. Numbers n whose deficiency is 16.
+ * A125248 Numbers k whose abundance sigma(k) - 2*k = -16. Numbers k whose deficiency is 16.
  * @author Georg Fischer
  */
 public class A125248 extends FilterNumberSequence {

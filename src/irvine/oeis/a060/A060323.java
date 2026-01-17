@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060323 The first n digits of n! form a prime number.
+ * A060323 The first k digits of k! form a prime number.
  * @author Sean A. Irvine
  */
 public class A060323 extends Sequence1 {

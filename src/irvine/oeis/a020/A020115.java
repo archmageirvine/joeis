@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A020115 Ceiling of GAMMA(n+7/8)/GAMMA(7/8).
+ * A020115 Ceiling of Gamma(n+7/8)/Gamma(7/8).
  * @author Sean A. Irvine
  */
 public class A020115 extends Sequence0 {

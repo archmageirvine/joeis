@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A083203.
+ * A390914 a(n) is the maximum number of divisors (A000005) among all unique, nonzero numbers formed by permuting subsets of the digits of n.
  * @author Sean A. Irvine
  */
 public class A390914 extends Sequence1 {

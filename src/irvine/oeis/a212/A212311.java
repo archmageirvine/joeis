@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A212311 Numbers n such that 3^8*2^n - 1 is prime.
+ * A212311 Numbers k such that 3^8*2^k - 1 is prime.
  * @author Georg Fischer
  */
 public class A212311 extends FilterNumberSequence {

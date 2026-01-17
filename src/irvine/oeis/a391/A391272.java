@@ -4,7 +4,7 @@ package irvine.oeis.a391;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A391272 Row sums of the triangle A391318, given by T(n,k) = T(n-1,k) + T(n-1,k-1) + T(n-2,k-1) + 1, assuming T(0,0) = T(n,-1) = T(n,n+1) = 0.
+ * A391272 Row sums of the triangle A391318, given by T(n,k) = T(n-1,k) + T(n-1,k-1) + T(n-2,k-1) + 1, with T(0,0) = T(n,-1) = T(n,n+1) = 0.
  * @author Georg Fischer
  */
 public class A391272 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A392162 allocated for Enrique Navarrete.
+ * A392162 a(n) is the smallest number not yet in the sequence that has exactly one prime factor in common with a(n-1) and has at least two other different prime factors that are not factors of a(n-1); a(1) = 2.
  * @author Sean A. Irvine
  */
 public class A392162 extends Sequence1 {

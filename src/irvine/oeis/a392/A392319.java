@@ -6,7 +6,7 @@ import irvine.oeis.TwoParameterFormSequence;
 import irvine.oeis.UnionSequence;
 
 /**
- * A392319 allocated for Gonzalo Mart\u00ednez.
+ * A392319 Palindromes of the form b^k + 1 or b^k - 1, with b, k &gt; 1.
  * @author Sean A. Irvine
  */
 public class A392319 extends UnionSequence {

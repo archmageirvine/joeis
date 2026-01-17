@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a045.A045770;
 
 /**
- * A088833 Numbers n whose abundance is 8: sigma(n) - 2n = 8.
+ * A088833 Numbers k whose abundance is 8: sigma(k) - 2*k = 8.
  * @author Georg Fischer
  */
 public class A088833 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a018.A018188;
 
 /**
- * A092153 1/24 * (A018188(n)-11).
+ * A092153 a(n) = (1/24) * (A018188(n)-11).
  * @author Georg Fischer
  */
 public class A092153 extends LambdaSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083203.
+ * A392347 Numbers k such that A000005(k) = A000005(k/d + d) for some d.
  * @author Sean A. Irvine
  */
 public class A392347 extends Sequence1 {

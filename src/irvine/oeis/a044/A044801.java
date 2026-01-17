@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A044801 Numbers n such that string 8,8 occurs in the base 10 representation of n but not of n+1.
+ * A044801 Numbers k such that string 8,8 occurs in the base 10 representation of k but not of k+1.
  * @author Georg Fischer
  */
 public class A044801 extends RunsBaseSequence {

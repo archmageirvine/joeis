@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083203.
+ * A390783 Least k &gt; a(n-1) such that k + the sum of all previous terms = 0 (mod (k-2)), with a(1)=1 and a(2)=2.
  * @author Sean A. Irvine
  */
 public class A390783 extends Sequence1 {

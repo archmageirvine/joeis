@@ -4,7 +4,7 @@ import irvine.oeis.a072.A072193;
 import irvine.oeis.cons.DecimalExpansionFromContinuedFractionSequence;
 
 /**
- * A392098.
+ * A392472 Decimal expansion of the number whose continued fraction coefficients are given in A072193.
  * @author Sean A. Irvine
  */
 public class A392472 extends DecimalExpansionFromContinuedFractionSequence {

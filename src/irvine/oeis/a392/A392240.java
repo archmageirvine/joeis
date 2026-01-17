@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392240 allocated for Alain Rocchelli.
+ * A392240 Largest prime factor of 6*n+1.
  * @author Sean A. Irvine
  */
 public class A392240 extends Sequence1 {

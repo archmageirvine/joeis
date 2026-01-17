@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000079;
 import irvine.oeis.a039.A039956;
 
 /**
- * A392262 allocated for Charles Kusniec.
+ * A392262 Even composite numbers that are squarefree or powers of 2.
  * @author Sean A. Irvine
  */
 public class A392262 extends UnionSequence {

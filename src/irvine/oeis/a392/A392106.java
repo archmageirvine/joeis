@@ -5,7 +5,7 @@ import irvine.oeis.a076.A076478;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A392106 allocated for Clark Kimberling.
+ * A392106 Concatenation of binary words using letters 1 and 2, in numerical order.
  * @author Sean A. Irvine
  */
 public class A392106 extends SimpleTransformSequence {

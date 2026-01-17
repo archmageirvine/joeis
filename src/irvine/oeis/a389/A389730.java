@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000037;
 
 /**
- * A390574.
+ * A389730 Nonsquare integers &gt;= 2 for which the cube of its largest prime factor equals the sum of the cubes of its other prime factors, with multiplicity.
  * @author Sean A. Irvine
  */
 public class A389730 extends A000037 {

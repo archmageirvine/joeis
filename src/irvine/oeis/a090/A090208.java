@@ -4,7 +4,7 @@ package irvine.oeis.a090;
 import irvine.math.z.Z;
 
 /**
- * A090208 Partial sums of sequence (A090206) of consecutive nonprime Fibonacci numbers.
+ * A090208 Sums of two consecutive nonprime Fibonacci numbers (A090206).
  * @author Georg Fischer
  */
 public class A090208 extends A090206 {

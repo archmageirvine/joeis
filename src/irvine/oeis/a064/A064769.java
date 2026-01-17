@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000142;
 
 /**
- * A064769 Numbers n such that (n!)^2 + prime(n) is prime.
+ * A064769 Numbers k such that (k!)^2 + prime(k) is prime.
  * @author Sean A. Irvine
  */
 public class A064769 extends A000142 {

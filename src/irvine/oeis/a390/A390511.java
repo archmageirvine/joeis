@@ -5,7 +5,7 @@ import irvine.oeis.a391.A391807;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A391807.
+ * A390511 a(n) = prime(A391807(n)).
  * @author Sean A. Irvine
  */
 public class A390511 extends SimpleTransformSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A389715 allocated for James S. DeArmon.
+ * A389715 Smallest prime p such that p - 3^n + 1 is also a prime.
  * @author Sean A. Irvine
  */
 public class A389715 extends Sequence0 {

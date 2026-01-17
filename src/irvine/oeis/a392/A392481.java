@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083203.
+ * A392481 Numbers k such that both (3*k-3)^2 + k^2 and (3*k)^2 + (k+1)^2 are prime.
  * @author Sean A. Irvine
  */
 public class A392481 extends Sequence1 {

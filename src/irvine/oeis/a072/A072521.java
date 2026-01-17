@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072521 a(1) = 6 and then the smallest triangular numbers such that sum of two neighbors is also a triangular number.
+ * A072521 a(1) = 6 and then the smallest triangular numbers, larger than the previous term, such that sum of two neighbors is also a triangular number.
  * @author Sean A. Irvine
  */
 public class A072521 extends Sequence1 {

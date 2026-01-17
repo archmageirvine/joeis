@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A079831 Numbers n such that floor(reverse(n)/n) = 2.
+ * A079831 Numbers k such that floor(reverse(k)/k) = 2.
  * @author Sean A. Irvine
  */
 public class A079831 extends Sequence1 {

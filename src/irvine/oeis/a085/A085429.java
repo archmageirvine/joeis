@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A085429 Numbers k such that the number of 1&apos;s in the binary expansion of k is equal to the number of 1&apos;s in the binary expansion of the reversal of k.
+ * A085429 Numbers k such that the number of 1's in the binary expansion of k is equal to the number of 1's in the binary expansion of the reversal of k.
  * @author Georg Fischer
  */
 public class A085429 extends FilterNumberSequence {

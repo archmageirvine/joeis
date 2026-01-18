@@ -6,7 +6,7 @@ import irvine.math.q.Rationals;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A144653 Denominator of Sum_{k=1..n} k^2*H_{n+k} where H_m = Sum_{i=1..m}.
+ * A144653 Denominator of Sum_{k=1..n} k^2*H_{n+k} where H_m = Sum_{i=1..m} 1/i.
  * @author Georg Fischer
  */
 public class A144653 extends LambdaSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a391;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A391641 Number of integer compositions of n that are not the first sums of any composition with no 1&apos;s.
+ * A391641 Number of integer compositions of n that are not the first sums of any composition with no 1's.
  * @author Georg Fischer
  */
 public class A391641 extends HolonomicRecurrence {

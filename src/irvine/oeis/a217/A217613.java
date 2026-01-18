@@ -6,7 +6,7 @@ import irvine.oeis.a097.A097393;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A217613 Absolute value of difference between the n-th &quot;emirpimes&quot; A097393(n) and its reversal.
+ * A217613 Absolute value of difference between the n-th "emirpimes" A097393(n) and its reversal.
  * @author Georg Fischer
  */
 public class A217613 extends SingleTransformSequence {

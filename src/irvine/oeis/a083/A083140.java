@@ -15,7 +15,7 @@ public class A083140 extends Sequence1 {
   private int mN = -1;
   private int mM = 0;
 
-  private Z t(final int n) {
+  protected Z t(final int n) {
     final Z p = Functions.PRIME.z(n + 1);
     Z a = mA.get(n);
     if (a == null) {

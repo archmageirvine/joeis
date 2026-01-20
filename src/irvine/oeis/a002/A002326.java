@@ -43,5 +43,4 @@ public class A002326 extends AbstractSequence implements DirectSequence {
     final Z n21 = Z.valueOf(2L * n + 1);
     return new IntegersMod(n21).ord(Z.TWO.mod(n21));
   }
-
 }

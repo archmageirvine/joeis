@@ -8,8 +8,6 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
 
-import irvine.math.lattice.Lattice;
-import irvine.math.lattice.Lattices;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.util.string.StringUtils;
@@ -82,8 +80,6 @@ public class A391498 extends AbstractSequence {
       }
       return Integer.compare(mBase, other.mBase);
     }
-
-    private static final Lattice L = Lattices.HEXAGONAL;
 
     private CoordSet2T canonicalOrientation() {
       final int a = getArea();

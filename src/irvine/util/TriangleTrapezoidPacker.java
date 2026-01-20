@@ -1,4 +1,4 @@
-package irvine.oeis.a391;
+package irvine.util;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -12,6 +12,8 @@ import java.util.Set;
  * Uses square board with inTriangle masking; coordinates doubled for trapezoids.
  */
 public class TriangleTrapezoidPacker {
+
+  // todo temporary
 
   /* ---------- trapezoid ---------- */
   protected static final class Trapezoid implements Comparable<Trapezoid> {

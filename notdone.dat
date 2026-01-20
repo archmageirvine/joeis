@@ -2708,3 +2708,7 @@ A082960 Number of inequivalent optimal Hermitian self-dual codes of length 2n ov
 A082961 Number of inequivalent optimal Hermitian formally self-dual but not self-dual codes of length 2n over GF(4).
 A082965 a(n) = A000252(n) / A065558(n).
 A083205 a(1) = 1, then smallest number not included earlier such that a(n)*a(n+1) + 1 is an n-th power.
+A083276 Number of distinct chess positions after n plies including differences due to availability and possibility of castling and en passant captures.
+A083280 Number of 2-generator non-Abelian groups of order n.
+A083281 Decimal expansion of h = Product_{p prime}(sqrt(p(p-1))*log(1/(1-1/p))).
+A083343 Decimal expansion of constant B3 (or B_3) related to the Mertens constant.

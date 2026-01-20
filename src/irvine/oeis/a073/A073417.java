@@ -10,7 +10,7 @@ import irvine.util.string.English;
  */
 public class A073417 extends Sequence1 {
 
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {

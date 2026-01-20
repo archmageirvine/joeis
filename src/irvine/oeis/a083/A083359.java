@@ -23,7 +23,7 @@ public class A083359 extends A002808 {
       return false;
     }
     final String q = p.get(pos);
-    final long mask = (1L << q.length()) -1;
+    final long mask = (1L << q.length()) - 1;
     for (int k = s.indexOf(q); k >= 0; k = s.indexOf(q, k + 1)) {
       final long u = used | (mask << k);
       if (u != used && is(p, pos - 1, s, u)) {

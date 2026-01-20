@@ -34,4 +34,26 @@ class Practical extends AbstractPredicate {
     }
     return true;
   }
+
+  @Override
+  public boolean is(final Z n) {
+    if (n.bitCount() == 1) {
+      return true; // Powers of 2 are members
+    }
+    if (n.testBit(0)) {
+      return false; // All other terms are even
+    }
+    final FactorSequence fs = Jaguar.factor(n);
+    final Z[] fn = fs.toZArray();
+    Arrays.sort(fn);
+    Z p = Z.ONE;
+    for (int k = 1; k < fn.length; ++k) {
+      final Z sigma = Functions.SIGMA1.z(fn[k - 1].pow(fs.getExponent(fn[k - 1])));
+      p = p.multiply(sigma);
+      if (fn[k].compareTo(p.add(1)) > 0) {
+        return false;
+      }
+    }
+    return true;
+  }
 }

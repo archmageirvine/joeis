@@ -1,37 +1,37 @@
 package irvine.oeis.a083;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence1;
+import irvine.oeis.a002.A002808;
 
 /**
  * A083359 Visible Factor Numbers, or VFNs: numbers n with the property that every prime factor of n can be found in the decimal expansion of n and every digit of n can be found in a prime factor.
  * @author Sean A. Irvine
  */
-public class A083359 extends Sequence1 {
+public class A083359 extends A002808 {
 
-  private long mN = 734;
-
-  // Deeper checking avoiding reuse of digits in s
-//  private boolean is(final String[] p, final int[] e, final String s, final int pos) {
-//    if (pos >= s.length()) {
-//      return true;
-//    }
-//    final char c = s.charAt(pos);
-//    for (int k = 0; k < p.length; ++k) {
-//      if (e[k] > 0 && p[k].indexOf(c) >= 0) {
-//        --e[k];
-//        if (is(p, e, s, pos + 1)) {
-//          return true;
-//        }
-//        ++e[k];
-//      }
-//    }
-//    return false;
-//  }
+  private boolean is(final List<String> p, final int pos, final String s, final long used) {
+    if (used == (1L << s.length()) - 1) {
+      return true;
+    }
+    if (pos < 0) {
+      return false;
+    }
+    final String q = p.get(pos);
+    final long mask = (1L << q.length()) -1;
+    for (int k = s.indexOf(q); k >= 0; k = s.indexOf(q, k + 1)) {
+      final long u = used | (mask << k);
+      if (u != used && is(p, pos - 1, s, u)) {
+        return true;
+      }
+    }
+    return is(p, pos - 1, s, used); // i.e., don't used a particular factor
+  }
 
   private boolean is(final long n) {
     final String s = String.valueOf(n);
@@ -55,21 +55,23 @@ public class A083359 extends Sequence1 {
         return false;
       }
     }
-    return true;
-//    final String[] ps = new String[f.length];
-//    final int[] e = new int[f.length];
-//    for (int k = 0; k < f.length; ++k) {
-//      ps[k] = f[k].toString();
-//      e[k] = fs.getExponent(f[k]);
-//    }
-//    return is(ps, e, s, 0);
+    final ArrayList<String> g = new ArrayList<>();
+    for (final Z p : f) {
+      final String h = p.toString();
+      final int e = fs.getExponent(p);
+      for (int k = 0; k < e; ++k) {
+        g.add(h);
+      }
+    }
+    return is(g, g.size() - 1, s, 0);
   }
 
   @Override
   public Z next() {
     while (true) {
-      if (!Predicates.PRIME.is(++mN) && is(mN)) {
-        return Z.valueOf(mN);
+      final Z c = super.next();
+      if (is(c.longValue())) {
+        return c;
       }
     }
   }

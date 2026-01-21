@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /** Canonical trapezoid builder + display */
-public class TrapezoidCanonicalXYZ {
+public class ConcreteTrapezoid {
 
   static class Triangle {
     final int mX, mY, mZ;  // z = 0 (▲), 1 (▼)
@@ -34,6 +34,29 @@ public class TrapezoidCanonicalXYZ {
     return cells;
   }
 
+  /** Normalize a list of triangles so that min y = 0 and (0,0) is in the list. z remains unchanged. */
+  static List<Triangle> normalize(final List<Triangle> triangles) {
+    int minX = Integer.MAX_VALUE;
+    int minY = Integer.MAX_VALUE;
+
+    for (final Triangle t : triangles) {
+      if (t.mY <= minY) {
+        if (t.mY < minY) {
+          minY = t.mY;
+          minX = t.mX;
+        } else {
+          minX = Math.min(minX, t.mX);
+        }
+      }
+    }
+
+    final List<Triangle> out = new ArrayList<>();
+    for (final Triangle t : triangles) {
+      out.add(new Triangle(t.mX - minX, t.mY - minY, t.mZ));
+    }
+    return out;
+  }
+
   static void dump(final List<Triangle> cells) {
     //System.out.println(cells);
     int minX = Integer.MAX_VALUE;
@@ -46,12 +69,13 @@ public class TrapezoidCanonicalXYZ {
       minY = Math.min(minY, t.mY);
       maxY = Math.max(maxY, t.mY);
     }
+
+    System.out.println("X: " + minX + "--" + maxX + " Y: " + minY + "--" + maxY);
     final int w = maxX - minX + 1;
     final int h = maxY - minY + 1;
 
     // two chars per cell
     final char[][][] grid = new char[h][w][2];
-
     for (int y = 0; y < h; ++y) {
       for (int x = 0; x < w; ++x) {
         grid[y][x][0] = '·';
@@ -75,22 +99,23 @@ public class TrapezoidCanonicalXYZ {
     }
   }
 
-  // demo
-  public static void main(String[] args) {
-    test(5, 3);
-    test(5, 1);
-    test(4, 2);
-
-    List<Triangle> shape = canonical(5, 3); // canonical shape
+  private static void demo(final int b, final int h) {
+    List<Triangle> shape = canonical(b, h); // canonical shape
     System.out.println("Original:");
     dump(shape);
-
     List<Triangle> rotated = shape;
     for (int r = 0; r < 6; ++r) {
       rotated = rotate60(rotated);
       System.out.println("Rotated 60°:");
       dump(rotated);
     }
+  }
+
+  // demo
+  public static void main(String[] args) {
+    demo(5, 3);
+    demo(5, 1);
+    demo(4, 2);
 
 //    System.out.println("Test normalize");
 //    dumpXYZ(normalize(Collections.singletonList(new Tri(0, 0, 0))));
@@ -128,7 +153,7 @@ public class TrapezoidCanonicalXYZ {
     System.out.println();
   }
 
-  /** Rotate a single triangle 60° anticlockwise (your coordinate system). */
+  /** Rotate a single triangle 60 degrees anticlockwise (your coordinate system). */
   static Triangle rotate60(final Triangle t) {
     final int x = t.mX;
     final int y = t.mY;
@@ -147,20 +172,4 @@ public class TrapezoidCanonicalXYZ {
     return normalize(rot);
   }
 
-  /** Normalize a list of triangles so that min x = min y = 0. z remains unchanged. */
-  static List<Triangle> normalize(final List<Triangle> triangles) {
-    int minX = Integer.MAX_VALUE;
-    int minY = Integer.MAX_VALUE;
-
-    for (final Triangle t : triangles) {
-      minX = Math.min(minX, t.mX);
-      minY = Math.min(minY, t.mY);
-    }
-
-    final List<Triangle> out = new ArrayList<>();
-    for (final Triangle t : triangles) {
-      out.add(new Triangle(t.mX - minX, t.mY - minY, t.mZ));
-    }
-    return out;
-  }
 }

@@ -2712,3 +2712,4 @@ A083276 Number of distinct chess positions after n plies including differences d
 A083280 Number of 2-generator non-Abelian groups of order n.
 A083281 Decimal expansion of h = Product_{p prime}(sqrt(p(p-1))*log(1/(1-1/p))).
 A083343 Decimal expansion of constant B3 (or B_3) related to the Mertens constant.
+A083386 Number (undirected) Hamiltonian paths in the 5 X n knight graph.

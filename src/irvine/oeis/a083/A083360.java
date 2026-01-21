@@ -10,25 +10,30 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a002.A002808;
 
 /**
- * A083359 Visible Factor Numbers, or VFNs: numbers n with the property that every prime factor of n can be found in the decimal expansion of n and every digit of n can be found in a prime factor.
+ * A083360 Subsequence of sequence A083359 in which factors do not overlap in the number.
  * @author Sean A. Irvine
  */
-public class A083359 extends A002808 {
+public class A083360 extends A002808 {
 
   private boolean is(final List<String> p, final int pos, final String s, final long used) {
-    if (used == (1L << s.length()) - 1) {
-      return true;
-    }
     if (pos < 0) {
-      return false;
+      return used == (1L << s.length()) - 1;
+    }
+    if (pos > 0 && used == (1L << s.length()) - 1 && !p.get(pos).equals(p.get(0))) {
+      return false; // Efficiency
     }
     final String q = p.get(pos);
     final long mask = (1L << q.length()) - 1;
     for (int k = s.indexOf(q); k >= 0; k = s.indexOf(q, k + 1)) {
-      final long u = used | (mask << k);
-      if (u != used && is(p, pos - 1, s, u)) {
-        return true;
+      if ((used & (mask << k)) == 0) {
+        final long u = used | (mask << k);
+        if (is(p, pos - 1, s, u)) {
+          return true;
+        }
       }
+    }
+    if (pos == p.size() - 1 || !q.equals(p.get(pos + 1))) {
+      return false;
     }
     return is(p, pos - 1, s, used); // i.e., don't use a particular factor
   }

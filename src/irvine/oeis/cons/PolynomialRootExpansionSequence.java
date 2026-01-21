@@ -43,9 +43,25 @@ public class PolynomialRootExpansionSequence extends DecimalExpansionSequence {
    * @param poly the polynomial
    * @param lo lower bound
    * @param hi upper bound
+   * @param abs use absolute value
+   */
+  protected PolynomialRootExpansionSequence(final int offset, final Polynomial<Z> poly, final CR lo, final CR hi, final boolean abs) {
+    super(offset, abs
+      ? new ZPolynomialFunction(poly).inverseMonotone(lo, hi).execute(CR.ZERO).abs()
+      : new ZPolynomialFunction(poly).inverseMonotone(lo, hi).execute(CR.ZERO),
+      10);
+  }
+
+  /**
+   * Construct the decimal expansion of the root of a polynomial. The polynomial must
+   * be monotonically increasing or decreasing in <code>[lo,hi]</code>
+   * @param offset first index
+   * @param poly the polynomial
+   * @param lo lower bound
+   * @param hi upper bound
    */
   protected PolynomialRootExpansionSequence(final int offset, final Polynomial<Z> poly, final CR lo, final CR hi) {
-    super(offset, new ZPolynomialFunction(poly).inverseMonotone(lo, hi).execute(CR.ZERO), 10);
+    this(offset, poly, lo, hi, false);
   }
 
   /**

@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A109742 a(n) = d(n-1) + d(n-2) + (n-1)[d(n-2) + 2d(n-3) + d(n-4)], where d(n), the derangement numbers, are given in A000166. (Let d(n) = 0 if n &lt; 0.)
+ * A109742 a(n) = d(n-1) + d(n-2) + (n-1)[d(n-2) + 2d(n-3) + d(n-4)], where d(n), the derangement numbers, are given in A000166. (Let d(n) = 0 if n &lt; 0.).
  * @author Georg Fischer
  */
 public class A109742 extends HolonomicRecurrence {

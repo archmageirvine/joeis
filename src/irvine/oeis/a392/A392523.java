@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392523 allocated for Hyeonjun Ahn.
+ * A392523 Indices k such that the determinant of the 3 X 3 Hankel matrix of consecutive primes starting at prime(k) is 0.
  * @author Sean A. Irvine
  */
 public class A392523 extends Sequence1 {

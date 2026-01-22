@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392361 allocated for Robert Israel.
+ * A392361 a(n) is the minimum number of proper divisors of the semiperfect number k = A005835(n) that sum to k.
  * @author Sean A. Irvine
  */
 public class A392361 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389544 allocated for Touch Sungkawichai.
+ * A389544 a(n) is the smallest integer greater than a(n-1) such that all consecutive products in a(1)..a(n) are distinct, with a(1) = 2.
  * @author Sean A. Irvine
  */
 public class A389544 extends Sequence1 {

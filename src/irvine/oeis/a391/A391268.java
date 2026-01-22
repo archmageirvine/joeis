@@ -6,7 +6,7 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A391268 allocated for Daniel Mondot.
+ * A391268 Smallest numbers k such that 2^k-1 when written in ternary contains its least significant zero in position n.
  * @author Sean A. Irvine
  */
 public class A391268 extends Sequence0 {

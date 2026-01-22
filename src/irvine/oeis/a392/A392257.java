@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A392257 allocated for Zhicheng Wei.
+ * A392257 Smallest value of rad(t*(n-t)) where t is coprime to n and in the range 1 &lt;= t &lt;= n/2 where rad = A007947.
  * @author Sean A. Irvine
  */
 public class A392257 extends Sequence2 {

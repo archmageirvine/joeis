@@ -8,7 +8,7 @@ import irvine.oeis.a007.A007691;
 import irvine.oeis.a054.A054030;
 
 /**
- * A081756 Numbers n such that there is a proper divisor d of n satisfying sigma(d)=n.
+ * A081756 Numbers k such that there is a proper divisor d of k satisfying sigma(d)=k.
  * @author Sean A. Irvine
  */
 public class A081756 extends A007691 {

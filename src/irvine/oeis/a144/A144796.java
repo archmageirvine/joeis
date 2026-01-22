@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A144796 Expansion of x(5+215x-1253x^2-23x^3)/((1+34x+x^2)(1-34x+x^2)).
+ * A144796 Expansion of x*(5 + 215*x - 1253*x^2 - 23*x^3)/((1 + 34*x + x^2)*(1 - 34*x + x^2)).
  * @author Sean A. Irvine
  */
 public class A144796 extends LinearRecurrence {

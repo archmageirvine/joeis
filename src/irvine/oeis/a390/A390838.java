@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A390838 allocated for M. F. Hasler.
+ * A390838 Irregular table, where row n holds the lower left triangle of the reduced multiplication table modulo n (without row/column 0), read by rows.
  * @author Sean A. Irvine
  */
 public class A390838 extends Sequence2 {

@@ -8,7 +8,7 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A391603 allocated for Juri-Stepan Gerasimov.
+ * A391603 Smallest k for which the number of divisors d of k such that A000005(d) = A000005(k/d) is equal to n.
  * @author Sean A. Irvine
  */
 public class A391603 extends Sequence0 {

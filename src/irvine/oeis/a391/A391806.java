@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a071.A071148;
 
 /**
- * A391806 allocated for Clark Kimberling.
+ * A391806 a(n) = least k such that the sum of the first k odd primes is divisible by n.
  * @author Sean A. Irvine
  */
 public class A391806 extends Sequence1 {

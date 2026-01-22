@@ -5,7 +5,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
- * A392446 allocated for Marko Riedel.
+ * A392446 Toroidal factorizations: row sums of A392445.
  * @author Sean A. Irvine
  */
 public class A392446 extends A392445 {

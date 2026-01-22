@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A117547 Numbers n such that 2*n^2+1 is a perfect power.
+ * A117547 Numbers k such that 2*k^2+1 is a perfect power.
  * @author Georg Fischer
  */
 public class A117547 extends GeneratingFunctionSequence implements Conjectural {

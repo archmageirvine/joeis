@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a154.A154402;
 
 /**
- * A068869.
+ * A392630 The number of exponential divisors of n that are numbers whose number of divisors is a power of 2.
  * @author Sean A. Irvine
  */
 public class A392630 extends Sequence1 {

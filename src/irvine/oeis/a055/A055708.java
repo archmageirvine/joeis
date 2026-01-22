@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A055708 Numbers n such that n - 1 | sigma(n).
+ * A055708 Numbers k such that k - 1 | sigma(k).
  * @author Sean A. Irvine
  */
 public class A055708 extends Sequence1 {

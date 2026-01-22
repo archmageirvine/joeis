@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391693 allocated for Jeffrey Shallit.
+ * A391693 Number of invertible n X n Hankel matrices with entries in {0,1}.
  * @author Sean A. Irvine
  */
 public class A391693 extends Sequence1 {

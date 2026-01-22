@@ -4,7 +4,7 @@ import irvine.oeis.a030.A030101;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A389826 allocated for Ctibor O. Zizka.
+ * A389826 a(n) = floor(n*A030101(n)/(n + A030101(n))).
  * @author Sean A. Irvine
  */
 public class A389826 extends SimpleTransformSequence {

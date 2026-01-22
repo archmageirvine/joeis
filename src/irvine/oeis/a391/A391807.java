@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a039.A039701;
 
 /**
- * A391807 a(n) = least k such that the residues mod 3 of the primes prime(k), prime(k+1),... include a string of n 1's followed by 2.
+ * A391807 a(n) is the least k such that the residues mod 3 of the primes prime(k), prime(k+1),... include a string of n 1's followed by 2.
  * @author Sean A. Irvine
  */
 public class A391807 extends Sequence1 {

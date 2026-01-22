@@ -6,7 +6,7 @@ package irvine.oeis.a255;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A255819 E.g.f.: exp(Sum_{k&gt;=1} k^3 * x^k).
+ * A255819 Expansion of e.g.f. exp(Sum_{k&gt;=1} k^3 * x^k).
  * @author Georg Fischer
  */
 public class A255819 extends HolonomicRecurrence {

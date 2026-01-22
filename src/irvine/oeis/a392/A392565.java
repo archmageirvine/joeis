@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002808;
 import irvine.oeis.a373.A373387;
 
 /**
- * A392565 allocated for Gabriele Di Pietro.
+ * A392565 Positive integers (not multiples of 10) whose constant congruence speed is smaller than the sum of the constant congruence speeds of all their prime factors.
  * @author Sean A. Irvine
  */
 public class A392565 extends A002808 {

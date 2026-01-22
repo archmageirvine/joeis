@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390669 allocated for Jeffrey Shallit.
+ * A390669 Minimum determinant of a n X n Hankel matrix with entries in {0,1}.
  * @author Sean A. Irvine
  */
 public class A390669 extends Sequence1 {

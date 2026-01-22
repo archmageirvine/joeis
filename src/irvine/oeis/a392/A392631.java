@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390788.
+ * A392631 Numbers whose exponential divisors are all numbers whose number of divisors is a power of 2.
  * @author Sean A. Irvine
  */
 public class A392631 extends Sequence1 {

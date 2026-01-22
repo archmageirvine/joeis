@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002808;
 import irvine.oeis.a373.A373387;
 
 /**
- * A391434 allocated for Marco Rip\u00e0.
+ * A391434 Composite numbers (not multiples of 10) whose (radix-10) constant congruence speed equals the maximum of the constant congruence speeds of all their prime factors.
  * @author Sean A. Irvine
  */
 public class A391434 extends A002808 {

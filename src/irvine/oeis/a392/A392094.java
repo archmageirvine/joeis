@@ -5,7 +5,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A392094 allocated for Felix Huber.
+ * A392094 a(n) is the number of iterations of process A392093 applied to n required until the remaining single number equals 1.
  * @author Sean A. Irvine
  */
 public class A392094 extends Sequence1 {

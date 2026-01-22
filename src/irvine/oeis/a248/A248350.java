@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A248350 Numbers n such that 10^n - 123456789 is prime.
+ * A248350 Numbers k such that 10^k - 123456789 is prime.
  * @author Georg Fischer
  */
 public class A248350 extends PrimePositionSubsequence {

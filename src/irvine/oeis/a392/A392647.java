@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068869.
+ * A392647 a(n) is the number of solutions of the Diophantine equation x*y - x*z + y*z = n such that x, y, z are in {1,2,...,n}.
  * @author Sean A. Irvine
  */
 public class A392647 extends Sequence1 {

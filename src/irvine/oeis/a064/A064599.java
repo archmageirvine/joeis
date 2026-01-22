@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064599 The sum of the nonunitary divisors of n is a divisor of n; i.e., sigma(n) - usigma(n) divides n.
+ * A064599 Numbers k such that the sum of the nonunitary divisors of k is a divisor of k; i.e., sigma(k) - usigma(k) divides k.
  * @author Sean A. Irvine
  */
 public class A064599 extends Sequence1 {

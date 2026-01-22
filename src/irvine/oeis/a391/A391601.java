@@ -5,7 +5,7 @@ import irvine.oeis.a008.A008454;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A391601 allocated for Bruce Nye.
+ * A391601 Smallest prime &gt; n^10.
  * @author Sean A. Irvine
  */
 public class A391601 extends SimpleTransformSequence {

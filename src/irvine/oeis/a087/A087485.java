@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a141.A141548;
 
 /**
- * A087485 Odd numbers n such that 2n - sigma(n) = 6.
+ * A087485 Odd numbers m such that 2*m - sigma(m) = 6.
  * @author Georg Fischer
  */
 public class A087485 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A392473 allocated for Robert Israel.
+ * A392473 a(0) = 0, a(1) = 1; otherwise, a(n) = a(n-1) + a(m), where m is the greatest square &lt; n.
  * @author Sean A. Irvine
  */
 public class A392473 extends CachedSequence {

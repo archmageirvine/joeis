@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A386588 allocated for Alex Daley.
+ * A386588 a(n) = 2^a(n-1) mod n, with a(1) = 1.
  * @author Sean A. Irvine
  */
 public class A386588 extends Sequence1 {

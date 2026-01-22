@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392386 allocated for Juri-Stepan Gerasimov.
+ * A392386 Numbers k such that omega(2*k) = omega(k + 2), where omega = A001221.
  * @author Sean A. Irvine
  */
 public class A392386 extends Sequence1 {

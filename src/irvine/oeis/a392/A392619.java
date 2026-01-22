@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A083264.
+ * A392619 a(n) = denominator((2^n*(n!)^2/(1+2*n)!)^2).
  * @author Sean A. Irvine
  */
 public class A392619 extends Sequence0 {

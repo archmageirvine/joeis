@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068869.
+ * A392632 Numbers k whose squarefree kernel is the only exponential divisor of k that is a number whose number of divisors is a power of 2.
  * @author Sean A. Irvine
  */
 public class A392632 extends Sequence1 {

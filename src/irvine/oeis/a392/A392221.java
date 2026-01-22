@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392221 allocated for Kaloian Ivanov.
+ * A392221 Sum of depths of leaves in a complete binary tree with n nodes.
  * @author Sean A. Irvine
  */
 public class A392221 extends Sequence1 {

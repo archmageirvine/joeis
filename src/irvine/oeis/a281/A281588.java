@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A281588 E.g.f. z*(2*(exp(z) + 1)/(cosh(z) + cos(z)) - 1).
+ * A281588 Expansion of e.g.f. z*(2*(exp(z) + 1)/(cosh(z) + cos(z)) - 1).
  * E.g.f.: x*(2*(exp(x) + 1)/(cosh(x) + cos(x)) - 1)
  * @author Georg Fischer
  */

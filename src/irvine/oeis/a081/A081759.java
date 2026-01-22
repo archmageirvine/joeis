@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A081759 Numbers n such that 5n+6 is prime.
+ * A081759 Numbers k such that 5*k+6 is prime.
  * @author Georg Fischer
  */
 public class A081759 extends PrimePositionSubsequence {

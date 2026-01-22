@@ -3,7 +3,7 @@ package irvine.oeis.a229;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A229757 Numbers n such that no convex hexagon exists that can be dissected into n congruent equilateral triangles.
+ * A229757 Numbers m such that no convex hexagon exists that can be dissected into m congruent equilateral triangles.
  * @author Georg Fischer
  */
 public class A229757 extends FiniteSequence {

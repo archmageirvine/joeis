@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068869.
+ * A392628 The number of infinitary divisors of n that are numbers whose number of divisors is a power of 2.
  * @author Sean A. Irvine
  */
 public class A392628 extends Sequence1 {

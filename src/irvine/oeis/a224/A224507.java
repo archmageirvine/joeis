@@ -4,7 +4,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A224507 Numbers n such that (17^n + 2^n)/19 is prime.
+ * A224507 Numbers k such that (17^k + 2^k)/19 is prime.
  * @author Georg Fischer
  */
 public class A224507 extends PrimePositionSubsequence {

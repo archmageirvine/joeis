@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066509 a(n) is the first of a triple of consecutive integers, each of which is both the product of three distinct primes and also the product of three primes counted with multiplicity.
+ * A066509 a(n) is the first of a triple of consecutive integers, each of which is the product of three distinct primes.
  * @author Sean A. Irvine
  */
 public class A066509 extends Sequence1 {

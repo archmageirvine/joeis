@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A201791 Primes of the form 6n^2 - 5.
+ * A201791 Primes of the form 6*k^2 - 5.
  * @author Georg Fischer
  */
 public class A201791 extends PrimeSubsequence {

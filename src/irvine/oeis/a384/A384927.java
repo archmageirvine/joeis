@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A384927 a(n) is the maximum size of a subset S of {1, 2, ..., n} such that for any distinct elements a, b in S, a + b does not divide a*b.
+ * A384927 a(n) is the maximum size of a subset S of {1, 2, ..., n} such that for any distinct elements t, u in S, t + u does not divide t*u.
  * @author Sean A. Irvine
  */
 public class A384927 extends Sequence1 {

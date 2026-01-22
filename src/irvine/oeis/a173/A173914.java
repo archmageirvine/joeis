@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A173914 Primes of the form R(n!-1), where R is the digit reversal.
+ * A173914 Primes of the form R(m!-1), where R is the digit reversal.
  *
  * @author Georg Fischer
  */

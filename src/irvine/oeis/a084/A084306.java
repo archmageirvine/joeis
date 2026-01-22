@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A084306 Numbers x such that sigma(x) mod x = 12 and x is not divisible by 6. Singular solutions mentioned in A076496.
+ * A084306 Numbers m not divisible by 6 such that sigma(m) == 12 (mod m).
  * @author Georg Fischer
  */
 public class A084306 extends FilterNumberSequence {

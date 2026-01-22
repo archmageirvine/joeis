@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392522 allocated for Hyeonjun Ahn.
+ * A392522 Determinant of the 3 X 3 Hankel matrix of consecutive primes starting at prime(n).
  * @author Sean A. Irvine
  */
 public class A392522 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392110 Numbers k such that 5*k - (greatest prime &lt; 5*n) &lt; (least prime &gt; 5*n) - 5*k.
+ * A392110 Numbers k such that 5*k - (greatest prime &lt; 5*k) &lt; (least prime &gt; 5*k) - 5*k.
  * @author Sean A. Irvine
  */
 public class A392110 extends Sequence1 {

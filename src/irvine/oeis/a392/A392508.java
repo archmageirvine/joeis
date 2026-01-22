@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A392508 allocated for Alain Rocchelli.
+ * A392508 a(n) is the number of iterations prime(x) -&gt; gpf(2*prime(x)+prime(x+1)) starting at prime(n) until the value prime(3) = 5 is reached where gpf(x) is the greatest prime factor of x; a(n) = -1 if the value 5 is not reached.
  * @author Sean A. Irvine
  */
 public class A392508 extends A000040 {

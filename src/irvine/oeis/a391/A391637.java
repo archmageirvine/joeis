@@ -4,7 +4,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a094.A094345;
 
 /**
- * A391637 allocated for George Lamont.
+ * A391637 Partial sums of A094345.
  * @author Sean A. Irvine
  */
 public class A391637 extends PartialSumSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392113 allocated for Clark Kimberling.
+ * A392113 Numbers k such that 6*k - (greatest prime &lt; 6*n) &lt; (least prime &gt; 6*n) - 6*k.
  * @author Sean A. Irvine
  */
 public class A392113 extends Sequence1 {

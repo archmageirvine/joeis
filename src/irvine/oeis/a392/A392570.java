@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392570 allocated for Stefano Spezia.
+ * A392570 a(n) = numerator(b(n)), where b(n) = b(n-1) + n if n is odd and b(n-1)*n/(b(n-1) + n) if n is even, with b(0) = 0.
  * @author Sean A. Irvine
  */
 public class A392570 extends Sequence0 {

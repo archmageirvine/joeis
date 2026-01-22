@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000290;
 
 /**
- * A392480 allocated for Michael S. Branicky.
+ * A392480 Squares with non-distinct digits.
  * @author Sean A. Irvine
  */
 public class A392480 extends FilterSequence {

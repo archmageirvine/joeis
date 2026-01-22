@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a046.A046073;
 
 /**
- * A081754 Numbers n such that the number of noncongruent solutions to x^(2^m) == 1 (mod n) is the same for any m&gt;=1.
+ * A081754 Numbers k such that the number of noncongruent solutions to x^(2^m) == 1 (mod k) is the same for any m&gt;=1.
  * @author Georg Fischer
  */
 public class A081754 extends FilterPositionSequence {

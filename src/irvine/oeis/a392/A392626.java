@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068869.
+ * A392626 a(n) is the smallest k such that omega(k*n) = omega(k + n) where omega = A001221.
  * @author Sean A. Irvine
  */
 public class A392626 extends Sequence1 {

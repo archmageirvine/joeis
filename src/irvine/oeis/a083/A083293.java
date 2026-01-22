@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A083293 e=sum(n&gt;=0, a(n)/2^n/n!).
+ * A083293 e = Sum_{n&gt;=0} a(n) / 2^n / n!.
  * @author Sean A. Irvine
  */
 public class A083293 extends Sequence0 {

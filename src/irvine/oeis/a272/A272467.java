@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A272467 E.g.f.: (sin(2*x) + sin(3*x)) / sin(5*x).
+ * A272467 Expansion of e.g.f. (sin(2*x) + sin(3*x)) / sin(5*x).
  * E.g.f.: (cos(2*x) + cos(3*x)) / (1 + cos(5*x)), even powers
  * @author Georg Fischer
  */

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a047.A047716;
 
 /**
- * A186655 Total number of positive integers below 10^n requiring 5 positive biquadrates in their representation as sum of biquadrates.
+ * A186655 Total number of positive integers below 10^n requiring exactly 5 positive biquadrates in their representation as sum of biquadrates.
  * @author Sean A. Irvine
  */
 public class A186655 extends Sequence1 {

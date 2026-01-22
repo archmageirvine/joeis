@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A392510 allocated for Gonzalo Mart\u00ednez.
+ * A392510 Decimal expansion of the total number of possible books in the fictional library described in the short story "The Library of Babel" by J. L. Borges (1941).
  * @author Sean A. Irvine
  */
 public class A392510 extends AbstractSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A075114 Perfect powers n such that 2n + 1 is a perfect power; the value of y^b in the solution of the Diophantine equation x^a - 2y^b = 1.
+ * A075114 Perfect powers k such that 2*k + 1 is a perfect power; the value of y^b in the solution of the Diophantine equation x^a - 2y^b = 1.
  * @author Georg Fischer
  */
 public class A075114 extends AbstractSequence {

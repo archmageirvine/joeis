@@ -14,7 +14,7 @@ import irvine.oeis.Sequence2;
 import irvine.util.Pair;
 
 /**
- * A392445 allocated for Marko Riedel.
+ * A392445 Irregular triangle read by rows: T(n, k) is the number of factorizations of n into k factors (where 0 &lt; k &lt;= Omega(n)) that are inequivalent under toroidal symmetry.
  * @author Sean A. Irvine
  */
 public class A392445 extends Sequence2 {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392093 allocated for Felix Huber.
+ * A392093 a(n) is the terminal value obtained by repeatedly replacing the sorted set of positive divisors of n with the sorted set of consecutive differences, continuing until only one number remains.
  * @author Sean A. Irvine
  */
 public class A392093 extends Sequence1 {

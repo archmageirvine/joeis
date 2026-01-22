@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006472;
 
 /**
- * A392560 allocated for Diego Artacho.
+ * A392560 a(n) = nextprime(P(n)+1) - P(n), where P(n) is the product of the first n triangular numbers and nextprime(i) is the smallest prime &gt; i.
  * @author Sean A. Irvine
  */
 public class A392560 extends A006472 {

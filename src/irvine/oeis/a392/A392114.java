@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392114 allocated for Clark Kimberling.
+ * A392114 Numbers k such that 6*k - (greatest prime &lt; 6*n) = (least prime &gt; 6*n) - 6*k.
  * @author Sean A. Irvine
  */
 public class A392114 extends Sequence1 {

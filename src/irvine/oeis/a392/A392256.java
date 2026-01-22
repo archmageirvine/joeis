@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051038;
 
 /**
- * A392256 allocated for Zhicheng Wei.
+ * A392256 a(n) is the conjectured largest number such that both a(n) and a(n) - n are 11-smooth numbers, or 0 if no such number exists. a(n) can be less than n.
  * @author Sean A. Irvine
  */
 public class A392256 extends Sequence1 implements Conjectural {

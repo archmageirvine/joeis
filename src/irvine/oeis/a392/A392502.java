@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A392502 allocated for A.H.M. Smeets.
+ * A392502 Decimal expansion of the absolute value of the second smallest real root of the minimal polynomial of Conway's constant.
  * @author Sean A. Irvine
  */
 public class A392502 extends PolynomialRootExpansionSequence {

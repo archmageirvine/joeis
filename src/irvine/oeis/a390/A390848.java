@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a389.A389544;
 
 /**
- * A390848 allocated for Touch Sungkawichai.
+ * A390848 Complement of A389544.
  * @author Sean A. Irvine
  */
 public class A390848 extends ComplementSequence {

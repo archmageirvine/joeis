@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A143155 E.g.f.: A(x) = -log(1 - x - A(x)^2).
+ * A143155 E.g.f. A(x) satisfies A(x) = -log(1 - x - A(x)^2).
  * -log(1-x-A(x)^2)
  * @author Georg Fischer
  */

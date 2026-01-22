@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
- * A392477 allocated for Paolo Xausa.
+ * A392477 A modified Sisyphus function: a(n) = concatenation of (number of odd digits in n) (number of even digits in n) (number of digits in n).
  * @author Sean A. Irvine
  */
 public class A392477 extends Sequence0 {

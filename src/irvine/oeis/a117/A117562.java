@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a034.A034087;
 
 /**
- * A117562 Numbers n such that n is a multiple of the sum of decimal digits squared of n.
+ * A117562 Numbers k such that k is a multiple of the sum of decimal digits squared of k.
  * @author Georg Fischer
  */
 public class A117562 extends PrependSequence {

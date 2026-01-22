@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392038 allocated for Jean-Marc Rebert.
+ * A392038 Least number k such that n can be represented as a linear combination of 1^n, 2^n, ..., k^n with coefficients +-1 only.
  * @author Sean A. Irvine
  */
 public class A392038 extends Sequence0 {

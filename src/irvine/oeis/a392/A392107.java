@@ -10,7 +10,7 @@ import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
 
 /**
- * A392107 allocated for Clark Kimberling.
+ * A392107 a(n) = position of first occurrence of the n-th binary word (using letters 1 and 2 as in A392106) in the sequence of residues modulo 3 of the primes.
  * @author Sean A. Irvine
  */
 public class A392107 extends Sequence1 {

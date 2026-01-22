@@ -7,7 +7,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a123.A123269;
 
 /**
- * A124045 Numbers n such that n^2 divide A123269(n) = Sum[ i^j^k, {i,1,n}, {j,1,n}, {k,1,n} ].
+ * A124045 Numbers n such that n^2 divides A123269(n) = Sum[ i^j^k, {i,1,n}, {j,1,n}, {k,1,n} ].
  * @author Georg Fischer
  */
 public class A124045 extends FilterNumberSequence {

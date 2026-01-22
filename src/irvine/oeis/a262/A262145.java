@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a000.A000182;
 
 /**
- * A262145 O.g.f.: exp( Sum_{n &gt;= 1} A000182(n+1)*x^n/n ), where A000182 is the sequence of tangent numbers.
+ * A262145 Expansion of o.g.f. exp( Sum_{n &gt;= 1} A000182(n+1)*x^n/n ), where A000182 is the sequence of tangent numbers.
  * new A000182().skip(1)
  * @author Georg Fischer
  */

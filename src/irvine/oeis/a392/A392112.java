@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392112 allocated for Clark Kimberling.
+ * A392112 Numbers k such that 5*k - (greatest prime &lt; 5*k) &gt; (least prime &gt; 5*k) - 5*k.
  * @author Sean A. Irvine
  */
 public class A392112 extends Sequence1 {

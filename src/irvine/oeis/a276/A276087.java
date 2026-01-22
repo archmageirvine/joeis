@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A276087 a(n) = A276086(A276086(n)).
+ * A276087 a(n) = A276086(A276086(n)), where A276086 is the primorial base exp-function.
  * @author Georg Fischer
  */
 public class A276087 extends LambdaSequence {

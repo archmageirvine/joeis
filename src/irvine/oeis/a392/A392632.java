@@ -2,7 +2,7 @@ package irvine.oeis.a392;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.predicate.Predicates;
+import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -14,10 +14,19 @@ public class A392632 extends Sequence1 {
 
   private long mN = 0;
 
+  private boolean isExp(final int e) {
+    for (int i = IntegerUtils.floorLog2(e + 1); i >= 2; --i) {
+      if (e % ((1 << i) - 1) == 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+
   private boolean is(final long n) {
     final FactorSequence fs = Jaguar.factor(n);
     for (final Z p : fs.toZArray()) {
-      if (!Predicates.POWER_OF_TWO.is(fs.getExponent(p))) {
+      if (!isExp(fs.getExponent(p))) {
         return false;
       }
     }

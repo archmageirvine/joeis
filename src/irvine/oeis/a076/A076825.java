@@ -9,11 +9,15 @@ import irvine.oeis.Sequence1;
  */
 public class A076825 extends Sequence1 {
 
-  private Z mU = Z.ONE;
+  private Z mU = null;
   private int mN = 1;
 
   @Override
   public Z next() {
+    if (mU == null) {
+      mU = Z.ONE;
+      return Z.ONE;
+    }
     while (true) {
       mU = Z.TWO.modPow(mU, Z.valueOf(++mN));
       if (mU.equals(Z.ONE)) {

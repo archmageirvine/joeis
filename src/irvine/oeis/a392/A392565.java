@@ -24,7 +24,7 @@ public class A392565 extends A002808 {
     Z sum = Z.ZERO;
     for (final Z p : fs.toZArray()) {
       sum = sum.add(mA.a(p).multiply(fs.getExponent(p)));
-      if (sum.compareTo(cs) >= 0) {
+      if (sum.compareTo(cs) > 0) {
         return true;
       }
     }

@@ -1204,6 +1204,14 @@ public abstract class CR extends Number implements Comparable<CR>, IsInteger {
   }
 
   /**
+   * Logarithm base 2.
+   * @return logarithm
+   */
+  public CR log2() {
+    return log().divide(LOG2);
+  }
+
+  /**
    * The square root of a computable real.
    * @return square root
    */

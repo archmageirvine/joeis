@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A066531.
+ * A392411 allocated for Thaddanai Ratudom.
  * @author Sean A. Irvine
  */
 public class A392411 extends DecimalExpansionSequence {

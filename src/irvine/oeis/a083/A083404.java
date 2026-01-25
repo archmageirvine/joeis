@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A392622.
+ * A083404 Illustration of Viswanath's constant A078416.
  * @author Sean A. Irvine
  */
 public class A083404 extends Sequence0 {

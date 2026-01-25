@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392622.
+ * A390121 allocated for Geoffrey Critzer.
  * @author Sean A. Irvine
  */
 public class A390121 extends Sequence0 {

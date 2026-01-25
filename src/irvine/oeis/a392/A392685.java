@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A066531.
+ * A392685 allocated for Stefano Spezia.
  * @author Sean A. Irvine
  */
 public class A392685 extends Sequence0 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a066.A066531;
 
 /**
- * A066531 Numbers which can be expressed as the product of a number and its reversal in at least two different ways.
+ * A083405 Odd numbers which can be expressed as the product of a number and its reversal in at least two different ways.
  * @author Sean A. Irvine
  */
 public class A083405 extends A066531 {

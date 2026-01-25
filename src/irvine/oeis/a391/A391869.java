@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A066531.
+ * A391869 allocated for Ali Sada.
  * @author Sean A. Irvine
  */
 public class A391869 extends Sequence0 {

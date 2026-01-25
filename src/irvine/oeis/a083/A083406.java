@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066531 Numbers which can be expressed as the product of a number and its reversal in at least two different ways.
+ * A083406 Even squares which can be expressed as the product of a number and its reversal in at least two different ways.
  * @author Sean A. Irvine
  */
 public class A083406 extends Sequence1 {

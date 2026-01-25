@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066531.
+ * A083407 Odd squares which can be expressed as the product of a number and its reversal in at least two different ways.
  * @author Sean A. Irvine
  */
 public class A083407 extends Sequence1 {

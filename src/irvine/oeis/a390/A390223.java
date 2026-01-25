@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A066531.
+ * A390223 allocated for Robert Israel.
  * @author Sean A. Irvine
  */
 public class A390223 extends FilterPositionSequence {

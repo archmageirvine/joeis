@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.Sequence2;
 
 /**
- * A066531.
+ * A391868 allocated for Ali Sada.
  * @author Sean A. Irvine
  */
 public class A391868 extends Sequence1 {

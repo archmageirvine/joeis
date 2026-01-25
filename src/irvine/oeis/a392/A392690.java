@@ -4,10 +4,10 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A392686 allocated for Stefano Spezia.
+ * A392690 allocated for Stefano Spezia.
  * @author Sean A. Irvine
  */
-public class A392686 extends A392685 {
+public class A392690 extends A392689 {
 
   @Override
   protected Z select(final Q n) {

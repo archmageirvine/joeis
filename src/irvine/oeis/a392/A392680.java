@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ThreeParameterFormSequence;
 
 /**
- * A066531.
+ * A392680 allocated for Enrique Navarrete.
  * @author Sean A. Irvine
  */
 public class A392680 extends ThreeParameterFormSequence {

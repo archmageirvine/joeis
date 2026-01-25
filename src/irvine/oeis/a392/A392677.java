@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392243 a(n) = Sum_{i=1..n} i*(-1)^ceiling(sqrt(i)).
+ * A392677 allocated for Dwight Boddorf.
  * @author Sean A. Irvine
  */
 public class A392677 extends Sequence1 {

@@ -5,18 +5,17 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392120 allocated for Clark Kimberling.
+ * A392692 allocated for Aloe Poliszuk.
  * @author Sean A. Irvine
  */
-public class A392120 extends Sequence1 {
+public class A392692 extends Sequence1 {
 
-  private long mN = 0;
+  private long mN = 7319;
 
   @Override
   public Z next() {
     while (true) {
-      final Z n3 = Z.valueOf(++mN).pow(3);
-      if (n3.subtract(Functions.PREV_PRIME.z(n3)).compareTo(Functions.NEXT_PRIME.z(n3).subtract(n3)) < 0) {
+      if (Functions.SIGMA1.z(++mN).equals(Functions.PHI.z(mN).multiply(4).add(2 * mN))) {
         return Z.valueOf(mN);
       }
     }

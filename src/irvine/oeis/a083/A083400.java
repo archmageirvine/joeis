@@ -7,7 +7,7 @@ import irvine.oeis.a053.A053664;
 import irvine.oeis.a073.A073605;
 
 /**
- * A392622.
+ * A083400 Numbers n such that A053664(n) and A073605(n) are primes.
  * @author Sean A. Irvine
  */
 public class A083400 extends Sequence1 {

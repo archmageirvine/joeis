@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066531.
+ * A392471 allocated for Marko Riedel.
  * @author Sean A. Irvine
  */
 public class A392471 extends Sequence1 {

@@ -2714,3 +2714,4 @@ A083281 Decimal expansion of h = Product_{p prime}(sqrt(p(p-1))*log(1/(1-1/p))).
 A083343 Decimal expansion of constant B3 (or B_3) related to the Mertens constant.
 A083386 Number (undirected) Hamiltonian paths in the 5 X n knight graph.
 A083391 n-th Payam number E_{-}(n), defined as the smallest positive odd integer k such that for every positive integer n, the number k*2^n-1 is not divisible by any primes p such that the multiplicative order of 2 mod p is less than or equal to e.
+A083409 Number of prime k-tuplet constellations; i.e., patterns with minimal diameter A008407.

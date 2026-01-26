@@ -3,7 +3,10 @@ package irvine.util;
 import java.util.ArrayList;
 import java.util.List;
 
-/** Canonical trapezoid builder + display */
+/**
+ * Canonical trapezoid builder + display
+ * @author Sean A. Irvine
+ */
 public final class ConcreteTrapezoid {
 
   private ConcreteTrapezoid() { }

@@ -2,15 +2,17 @@ package irvine.oeis.a027;
 
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
+import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A027907 Triangle of trinomial coefficients T(n,k) (n &gt;= 0, 0 &lt;= k &lt;= 2*n), read by rows: n-th row is obtained by expanding (1 + x + x^2)^n.
  * @author Sean A. Irvine
  */
-public class A027907 extends Sequence0 {
+public class A027907 extends Sequence0 implements DirectArray {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> C = Polynomial.create(1, 1, 1);
@@ -25,5 +27,11 @@ public class A027907 extends Sequence0 {
       mM = 0;
     }
     return mRow.coeff(mM);
+  }
+
+  @Override
+  public Z a(final int n, final int k) {
+    // T(n,k) = Sum_{r=0..floor(k/3)} (-1)^r*binomial(n, r)*binomial(k-3*r+n-1, n-1). 
+    return Integers.SINGLETON.sum(0, k / 3, r -> Binomial.binomial(n, r).multiply((r & 1) == 1 ? -1 : 1).multiply(Binomial.binomial(k - 3 * r + n - 1, n - 1)));
   }
 }

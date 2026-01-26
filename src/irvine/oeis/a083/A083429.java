@@ -12,7 +12,7 @@ import irvine.util.Permutation;
 public class A083429 extends Sequence1 {
 
   private int mN = 0;
-  private final int[] mCounts = new int[] {0, -1, 0, 0, 0, 0, 0, 0, 0, 0}; // first 1 is implicit
+  private final int[] mCounts = {0, -1, 0, 0, 0, 0, 0, 0, 0, 0}; // first 1 is implicit
 
   @Override
   public Z next() {

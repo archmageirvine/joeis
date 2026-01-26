@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392622 allocated for Leo Hennig.
+ * A392622 Lexicographically least increasing sequence of positive integers so that no term is the sum of two consecutive terms, or except for the first term a partial sum of the sequence.
  * @author Sean A. Irvine
  */
 public class A392622 extends Sequence1 {

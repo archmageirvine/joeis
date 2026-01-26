@@ -5,7 +5,7 @@ import irvine.oeis.a392.A392686;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A390227 allocated for Stefano Spezia.
+ * A390227 a(n) = A392686(n)/2.
  * @author Sean A. Irvine
  */
 public class A390227 extends SimpleTransformSequence {

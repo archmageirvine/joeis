@@ -490,4 +490,16 @@ public final class LongUtils {
     }
     return max;
   }
+
+  /**
+   * Return <code>ceiling(log2(n))</code>
+   * @param n number
+   * @return ceiling of number of bits
+   */
+  public static int ceilLog2(final long n) {
+    if (n <= 0) {
+      throw new IllegalArgumentException();
+    }
+    return 64 - Long.numberOfLeadingZeros(n - 1);
+  }
 }

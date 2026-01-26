@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392685 allocated for Stefano Spezia.
+ * A392685 a(n) = numerator( (1/(4*n + 2))*Sum_{i=0..2*n} (-1)^i/(2*i+1) ).
  * @author Sean A. Irvine
  */
 public class A392685 extends Sequence0 {

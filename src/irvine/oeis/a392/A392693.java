@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392693 allocated for Aloe Poliszuk.
+ * A392693 Numbers k such that sigma(k) = 2*k + 5*phi(k).
  * @author Sean A. Irvine
  */
 public class A392693 extends Sequence1 {

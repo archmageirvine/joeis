@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A390038 allocated for Charles L. Hohn.
+ * A390038 Decimal expansion of the arc length of the golden spiral to maximum radius 1.
  * @author Sean A. Irvine
  */
 public class A390038 extends DecimalExpansionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a392;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A392737 allocated for Benoit Cloitre.
+ * A392737 Positions of 1's in A392736.
  * @author Sean A. Irvine
  */
 public class A392737 extends FilterPositionSequence {

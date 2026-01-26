@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.math.z.Z;
 
 /**
- * A066390 Smallest cube that contains exactly n consecutive internal 0's and no other 0s.
+ * A066390 Smallest cube that contains exactly n consecutive internal 0's and no other 0's.
  * @author Sean A. Irvine
  */
 public class A066390 extends A066391 {

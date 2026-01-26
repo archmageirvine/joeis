@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a006.A006967;
 
 /**
- * A112362 A006967(n)/2.
+ * A112362 a(n) = A006967(n)/2.
  * @author Georg Fischer
  */
 public class A112362 extends AbstractSequence {

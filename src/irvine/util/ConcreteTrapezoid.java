@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /** Canonical trapezoid builder + display */
-public class ConcreteTrapezoid {
+public final class ConcreteTrapezoid {
+
+  private ConcreteTrapezoid() { }
 
   static class Triangle {
     final int mX, mY, mZ;  // z = 0 (▲), 1 (▼)
@@ -86,7 +88,7 @@ public class ConcreteTrapezoid {
     for (final Triangle t : cells) {
       final int gx = t.mX - minX;
       final int gy = t.mY - minY;
-      grid[gy][gx][t.mZ] = (t.mZ == 0 ? '▲' : '▼');
+      grid[gy][gx][t.mZ] = t.mZ == 0 ? '▲' : '▼';
     }
 
     for (int y = h - 1; y >= 0; --y) {
@@ -100,7 +102,7 @@ public class ConcreteTrapezoid {
   }
 
   private static void demo(final int b, final int h) {
-    List<Triangle> shape = canonical(b, h); // canonical shape
+    final List<Triangle> shape = canonical(b, h); // canonical shape
     System.out.println("Original:");
     dump(shape);
     List<Triangle> rotated = shape;
@@ -111,8 +113,11 @@ public class ConcreteTrapezoid {
     }
   }
 
-  // demo
-  public static void main(String[] args) {
+  /**
+   * Demo.
+   * @param args ignored
+   */
+  public static void main(final String[] args) {
     demo(5, 3);
     demo(5, 1);
     demo(4, 2);
@@ -138,19 +143,6 @@ public class ConcreteTrapezoid {
 //    System.out.println(rotate60(new Tri(2, 2, 0)));
 //
 //    testCycle();
-  }
-
-  static Triangle rotN(Triangle t, int n) {
-    Triangle r = t;
-    for (int i = 0; i < n; i++) r = rotate60(r);
-    return r;
-  }
-
-  private static void test(final int b, final int h) {
-    System.out.println("Trapezoid (" + b + "," + h + ")");
-    final List<Triangle> s = canonical(b, h);
-    dump(s);
-    System.out.println();
   }
 
   /** Rotate a single triangle 60 degrees anticlockwise (your coordinate system). */

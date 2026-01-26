@@ -6,7 +6,7 @@ import irvine.oeis.a051.A051628;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A114206 Length of the preperiodic part of the decimal expansion of 1/n, and also leading zeros from the period part if the preperiodic digits are all 0s (if any).
+ * A114206 Length of the preperiodic part of the decimal expansion of 1/n, and also leading zeros from the period part if the preperiodic digits are all 0's (if any).
  * @author Georg Fischer
  */
 public class A114206 extends MultiTransformSequence {

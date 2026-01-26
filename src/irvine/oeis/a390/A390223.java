@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A390223 allocated for Robert Israel.
+ * A390223 Numbers k such that for the k-th almost-equilateral Heronian triangle (triangle with consecutive integer sides and integer area), perimeter - inradius is a prime or semiprime.
  * @author Sean A. Irvine
  */
 public class A390223 extends FilterPositionSequence {

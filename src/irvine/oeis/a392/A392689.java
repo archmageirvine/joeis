@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392689 allocated for Stefano Spezia.
+ * A392689 a(n) = numerator( (-1)^(n-1)*H(2*n)/(2*n + 1) ), where H(n) is the n-th harmonic number.
  * @author Sean A. Irvine
  */
 public class A392689 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392482 allocated for Courtney Gibbons.
+ * A392482 Triangle read by rows, with T(n,k) giving the number of n X n Boolean matrices with exactly k ones that have no zero rows and at least one zero column.
  * @author Sean A. Irvine
  */
 public class A392482 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a362;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A362435 a(1) = 18; thereafter a(n) = a(n-1) + difference between first two digits of a(n-1).
+ * A362435 a(1) = 18; thereafter a(n) = a(n-1) + abs(difference between first two digits of a(n-1)).
  * @author Georg Fischer
  */
 public class A362435 extends GeneratingFunctionSequence {

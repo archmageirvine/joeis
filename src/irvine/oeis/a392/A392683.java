@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392683 allocated for Jason Zimba.
+ * A392683 a(n) is the number of n-element families of nonempty subsets of {1, ..., n} in which every number in 1..n appears the same nonzero number of times.
  * @author Sean A. Irvine
  */
 public class A392683 extends Sequence1 {

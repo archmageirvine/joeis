@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390231 allocated for Ctibor O. Zizka.
+ * A390231 Numbers k such that tau(k) and sigma(k) are both Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A390231 extends Sequence1 {

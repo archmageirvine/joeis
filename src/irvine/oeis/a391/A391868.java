@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.Sequence2;
 
 /**
- * A391868 allocated for Ali Sada.
+ * A391868 Start with the list of positive integers 1,2,3,... . After each integer k, insert k empty positions. Fill these positions, from left to right, with the positive integers in order. Repeat this spacing-and-filling process indefinitely. The sequence consists of the positions of the last occurrence of 1 after each step.
  * @author Sean A. Irvine
  */
 public class A391868 extends Sequence1 {

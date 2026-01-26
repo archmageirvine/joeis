@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A392308 allocated for Scott Duke Kominers.
+ * A392308 Composite numbers c satisfying the congruence c * sigma_k(c) == 2 (mod phi(c)) that are "flanked" by 14 at k-1 and k+1.
  * @author Sean A. Irvine
  */
 public class A392308 extends A000040 {

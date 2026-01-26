@@ -55,7 +55,7 @@ public class A392117 extends Sequence1 {
     }
     int k = 2;
     Z u;
-    while (mU.contains((u = mS.a(k))) || mV.contains(u)) {
+    while (mU.contains(u = mS.a(k)) || mV.contains(u)) {
       ++k;
     }
     final Z t = u.add(mS.a(mN));

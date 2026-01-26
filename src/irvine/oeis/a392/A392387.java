@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A392387 allocated for Thore Posske.
+ * A392387 Nullspace dimension of the periodic XX Heisenberg chain with n &gt; 1 sites.
  * @author Sean A. Irvine
  */
 public class A392387 extends Sequence2 {

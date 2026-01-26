@@ -16,7 +16,7 @@ public class A066699 extends Sequence1 {
 
   /** Construct the sequence. */
   public A066699() {
-    this(1, 2, 1);
+    this(0, 2, 1);
   }
 
   /**

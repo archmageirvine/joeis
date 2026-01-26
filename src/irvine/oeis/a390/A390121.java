@@ -23,11 +23,11 @@ public class A390121 extends Sequence0 {
     }
     final int[] c = new int[mN + 1];
     IntegerPartition.toCountForm(p, c);
-    Z num = Functions.FACTORIAL.z(mN).pow(3);
+    final Z num = Functions.FACTORIAL.z(mN).pow(3);
     Z den = Z.ONE;
     int d = 0;
     for (int i = 1; i < c.length; i++) {
-      int ki = c[i];
+      final int ki = c[i];
       if (ki != 0) {
         d += ki;
         den = den.multiply(Functions.FACTORIAL.z(i).pow(2L * ki)).multiply(Functions.FACTORIAL.z(ki));

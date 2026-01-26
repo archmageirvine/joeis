@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A392157 allocated for Felix Huber.
+ * A392157 a(n) is the number of prime-to-prime deletion paths from prime(n) to a one-digit prime, where at each step exactly one decimal digit is removed and the resulting number, interpreted without leading zeros, is prime.
  * @author Sean A. Irvine
  */
 public class A392157 extends A000040 {

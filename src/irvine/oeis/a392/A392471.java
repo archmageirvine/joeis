@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392471 allocated for Marko Riedel.
+ * A392471 Triangle read by rows: T(n,k) is the number of nested cycle partitions of n labeled nodes into k components.
  * @author Sean A. Irvine
  */
 public class A392471 extends Sequence1 {

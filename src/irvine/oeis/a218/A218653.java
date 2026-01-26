@@ -4,7 +4,7 @@ package irvine.oeis.a218;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A218653 E.g.f. satisfies: A(x) = 1 + log(1 + x^2*A(x)^2)/x.
+ * A218653 E.g.f. A(x) satisfies A(x) = 1 + log(1 + x^2*A(x)^2)/x.
  * @author Georg Fischer
  */
 public class A218653 extends PolynomialFieldSequence {

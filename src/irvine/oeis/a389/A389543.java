@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A389543 allocated for Benjamin W P Cornish.
+ * A389543 a(n) is the largest value t such that the sequence defined by b(t+2) = (b(t+1) * b(t)) mod n with b(1) = b(2) = 2 mod n where all pairs of terms {b(t-1),b(t)} are distinct.
  * @author Sean A. Irvine
  */
 public class A389543 extends Sequence1 {

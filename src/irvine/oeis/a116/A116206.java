@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A116206 Primes of the form n^2 + n + 55661, with n &gt;= 0.
+ * A116206 Primes of the form k^2 + k + 55661, with k &gt;= 0.
  * @author Georg Fischer
  */
 public class A116206 extends PrimeSubsequence {

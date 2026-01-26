@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ThreeParameterFormSequence;
 
 /**
- * A392680 allocated for Enrique Navarrete.
+ * A392680 Primes which can be written as 2^a + p^b where a &gt; 1, p is an odd prime and b &gt; 1 is odd.
  * @author Sean A. Irvine
  */
 public class A392680 extends ThreeParameterFormSequence {

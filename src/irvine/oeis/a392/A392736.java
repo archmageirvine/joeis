@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A392736 allocated for Benoit Cloitre.
+ * A392736 A 4-automatic binary sequence with irreducible nested recurrence.
  * @author Sean A. Irvine
  */
 public class A392736 extends CachedSequence {

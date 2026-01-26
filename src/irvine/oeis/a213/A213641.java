@@ -4,7 +4,7 @@ package irvine.oeis.a213;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A213641 E.g.f. satisfies: A(x) = 1 - log(1 - x^2*A(x)^2) / x.
+ * A213641 E.g.f. A(x) satisfies A(x) = 1 - log(1 - x^2*A(x)^2) / x.
  * @author Georg Fischer
  */
 public class A213641 extends SimpleTransformSequence {

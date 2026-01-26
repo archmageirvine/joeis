@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A076373 Solutions to n + 2*phi(n) = sigma(n) where phi is A000010 and sigma is A000203.
+ * A076373 Solutions to k + 2*phi(k) = sigma(k) where phi is A000010 and sigma is A000203.
  * @author Sean A. Irvine
  */
 public class A076373 extends Sequence1 {

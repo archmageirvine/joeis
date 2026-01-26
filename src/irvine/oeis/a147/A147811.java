@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A147811 Alexandrian integers: numbers of the form n=pqr such that 1/n = 1/p - 1/q - 1/r for some integers p,q,r.
+ * A147811 Alexandrian integers: numbers of the form n = p*q*r such that 1/n = 1/p - 1/q - 1/r for some integers p,q,r.
  * @author Sean A. Irvine
  */
 public class A147811 extends Sequence1 {

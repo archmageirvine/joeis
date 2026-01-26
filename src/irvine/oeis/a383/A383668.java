@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A383668 Numbers whose binary representation has a positive number of 0s, all with even runlength.
+ * A383668 Numbers whose binary representation has a positive number of 0's, all with even runlength.
  * @author Sean A. Irvine
  */
 public class A383668 extends Sequence1 {

@@ -1,15 +1,15 @@
-package irvine.oeis.a391;
+package irvine.oeis.a392;
 
 import irvine.oeis.a336.A336282;
 
 /**
- * A391697 Total number of 213 patterns in all heapable permutations of length n.
+ * A392533 allocated for Manolopoulos Panagiotis.
  * @author Sean A. Irvine
  */
-public class A391697 extends A336282 {
+public class A392533 extends A336282 {
 
   /** Construct the sequence. */
-  public A391697() {
+  public A392533() {
     super(0);
   }
 
@@ -20,7 +20,7 @@ public class A391697 extends A336282 {
       for (int j = k + 1; j < p.length - 1; ++j) {
         if (p[k] > p[j]) {
           for (int i = j + 1; i < p.length; ++i) {
-            if (p[k] < p[i]) {
+            if (p[j] > p[i]) {
               ++cnt;
             }
           }

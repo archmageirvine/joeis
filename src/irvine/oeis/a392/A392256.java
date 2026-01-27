@@ -6,7 +6,8 @@ import irvine.math.z.Z;
 import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
-import irvine.oeis.a051.A051038;
+import irvine.oeis.SequenceFactory;
+import irvine.oeis.UnimplementedException;
 
 /**
  * A392256 a(n) is the conjectured largest number such that both a(n) and a(n) - n are 11-smooth numbers, or 0 if no such number exists. a(n) can be less than n.
@@ -16,12 +17,27 @@ public class A392256 extends Sequence1 implements Conjectural {
 
   private static final long HEURISTIC = 1000; // maybe this should depend on n
   private long mN = 0;
+  private final String mSmoothSeq;
+
+  protected A392256(final String smoothSeq) {
+    mSmoothSeq = smoothSeq;
+  }
+
+  /** Construct the sequence. */
+  public A392256() {
+    this("A051038");
+  }
 
   @Override
   public Z next() {
     ++mN;
     final TreeSet<Z> smooth = new TreeSet<>();
-    final Sequence seq = new A051038();
+    final Sequence seq;
+    try {
+      seq = SequenceFactory.sequence(mSmoothSeq);
+    } catch (final UnimplementedException e) {
+      throw new RuntimeException(e);
+    }
     Z max = null;
     while (true) {
       final Z t = seq.next();

@@ -21,9 +21,12 @@ public class FiniteSequence extends AbstractSequence implements Serializable, Di
   private int mN = 0;
   private final ArrayList<Z> mList;
   protected String mAttr; // attribute: one of the following
-  protected static final String FINITE = "finite";
-  protected static final String NONCOMPUTABLE = "noncomputable";
-  protected static final String BRIEF = "brief";
+  /** Sequence is finite. */
+  public static final String FINITE = "finite";
+  /** Sequence is noncomputable. */
+  public static final String NONCOMPUTABLE = "noncomputable";
+  /** Sequence is brief. */
+  public static final String BRIEF = "brief";
   protected static final String PAD_ZERO = "pad_zero";
 
   /**

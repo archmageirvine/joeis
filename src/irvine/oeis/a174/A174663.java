@@ -15,6 +15,6 @@ public class A174663 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A174663() {
-    super(1, n -> Functions.FACTORIAL.z(n - 1).multiply(Integers.SINGLETON.sumdiv(n, d -> Z.NEG_ONE.pow(n + d).multiply(Functions.MOEBIUS.z(n / d)).multiply(Binomial.binomial(2 * d, d)))).divide(2));
+    super(1, n -> Functions.FACTORIAL.z(n - 1).multiply(Integers.SINGLETON.sumdiv(n, d -> Z.NEG_ONE.pow(n + d).multiply(Functions.MOEBIUS.z(n / d)).multiply(Binomial.binomial(2L * d, d)))).divide(2));
   }
 }

@@ -13,6 +13,6 @@ public class A392037 extends LambdaArray {
 
   /** Construct the sequence. */
   public A392037() {
-    super(0, 0, 0, -1, (n, k) -> (k == 0) ? Z.ONE : Integers.SINGLETON.product(0, k - 1, i -> Z.valueOf(9 * i + n)));
+    super(0, 0, 0, -1, (n, k) -> (k == 0) ? Z.ONE : Integers.SINGLETON.product(0, k - 1, i -> Z.valueOf(9L * i + n)));
   }
 }

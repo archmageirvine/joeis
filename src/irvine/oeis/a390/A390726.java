@@ -13,6 +13,6 @@ public class A390726 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A390726() {
-    super(0, n -> Z.NEG_ONE.pow(n).multiply(Functions.STIRLING1.z(2 * n, n)).multiply(Functions.FACTORIAL.z(2 * n)).divide(Functions.FACTORIAL.z(n + 1)));
+    super(0, n -> Z.NEG_ONE.pow(n).multiply(Functions.STIRLING1.z(2L * n, n)).multiply(Functions.FACTORIAL.z(2 * n)).divide(Functions.FACTORIAL.z(n + 1)));
   }
 }

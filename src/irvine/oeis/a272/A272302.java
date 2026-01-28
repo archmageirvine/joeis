@@ -13,6 +13,6 @@ public class A272302 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A272302() {
-    super(1, 0, new LambdaSequence(0, n -> Z.valueOf(3 * n - 183).multiply(n).add(3318).multiply(n).subtract(18757).abs()), PRIME);
+    super(1, 0, new LambdaSequence(0, n -> Z.valueOf(3L * n - 183).multiply(n).add(3318).multiply(n).subtract(18757).abs()), PRIME);
   }
 }

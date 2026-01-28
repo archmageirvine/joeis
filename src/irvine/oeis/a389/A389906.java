@@ -17,6 +17,6 @@ public class A389906 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A389906() {
-    super(1, k -> Functions.MIN.z(Z.valueOf(2 * k), A003961.a(k)));
+    super(1, k -> Functions.MIN.z(Z.valueOf(2L * k), A003961.a(k)));
   }
 }

@@ -13,6 +13,6 @@ public class A293926 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A293926() {
-    super(0, 0, 0, (n, k) -> (n == 0) ? Z.ONE : Functions.POCHHAMMER.z(n, k).multiply(Functions.STIRLING2.z(2 * n, k + n)));
+    super(0, 0, 0, (n, k) -> (n == 0) ? Z.ONE : Functions.POCHHAMMER.z(n, k).multiply(Functions.STIRLING2.z(2L * n, k + n)));
   }
 }

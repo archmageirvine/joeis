@@ -12,6 +12,6 @@ public class A182210 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A182210() {
-    super(1, 1, 1, (n, k) -> new Q(k * (n + 1), k + 1).floor());
+    super(1, 1, 1, (n, k) -> new Q((long) k * (n + 1), k + 1).floor());
   }
 }

@@ -12,6 +12,6 @@ public class A321967 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A321967() {
-    super(0, 0, 0, (n, k) -> Functions.BINOMIAL.z(-k - n - 1, -2 * n - 1).multiply(Functions.EULERIAN1.z(k + n, n)));
+    super(0, 0, 0, (n, k) -> Functions.BINOMIAL.z(-k - n - 1, -2L * n - 1).multiply(Functions.EULERIAN1.z(k + n, n)));
   }
 }

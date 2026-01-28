@@ -14,7 +14,7 @@ public class A154775 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A154775() {
     super(1, 1, k -> {
-      final Z av = Z.valueOf(k).multiply(36 * k).multiply(13);
+      final Z av = Z.valueOf(k).multiply(36L * k).multiply(13);
       return Predicates.PRIME.is(av.subtract(1)) && Predicates.PRIME.is(av.add(1));
     });
   }

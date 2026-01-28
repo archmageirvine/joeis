@@ -15,6 +15,6 @@ public class A212296 extends RationalLambdaSequence {
 
   /** Construct the sequence. */
   public A212296() {
-    super(1, NUM, n -> Rationals.SINGLETON.sum(1, n, k -> new Q(Z.valueOf(n).multiply(n), Integers.SINGLETON.product(1, k, j -> Z.valueOf(4 * j).multiply(j)))).add(1));
+    super(1, NUM, n -> Rationals.SINGLETON.sum(1, n, k -> new Q(Z.valueOf(n).multiply(n), Integers.SINGLETON.product(1, k, j -> Z.valueOf(4L * j).multiply(j)))).add(1));
   }
 }

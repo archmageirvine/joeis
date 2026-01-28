@@ -1,14 +1,17 @@
 package irvine.oeis.a046;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
+import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.a123.A123125;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A046802 T(n, k) = Sum_{j=k..n} binomial(n, j)*E1(j, j-k), where E1 are the Eulerian numbers A173018. Triangle read by rows, T(n, k) for 0 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
-public class A046802 extends A123125 {
+public class A046802 extends A123125 implements DirectArray {
 
   private int mN = 0;
   private int mM = 0;
@@ -25,4 +28,10 @@ public class A046802 extends A123125 {
     }
     return sum;
   }
+
+  @Override
+  public Z a(final int n, final int k) {
+    return Integers.SINGLETON.sum(k, n, j -> Binomial.binomial(n, j).multiply(Functions.EULERIAN1.z(j, j - k)));
+  }
+
 }

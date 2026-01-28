@@ -13,6 +13,6 @@ public class A156197 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A156197() {
-    super(0, 0, 0, (n, k) -> Z.valueOf(n - k + 1).multiply(Functions.BINOMIAL.z(n + k, n)).add(Z.valueOf(k + 1).multiply(Functions.BINOMIAL.z(-k + 2 * n, n))).divide(n + 1));
+    super(0, 0, 0, (n, k) -> Z.valueOf(n - k + 1).multiply(Functions.BINOMIAL.z(n + k, n)).add(Z.valueOf(k + 1).multiply(Functions.BINOMIAL.z(-k + 2L * n, n))).divide(n + 1));
   }
 }

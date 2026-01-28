@@ -14,7 +14,7 @@ public class A144656 extends MultiTransformSequence {
   /** Construct the sequence. */
   public A144656() {
     super(0, (self, n) -> {
-      final Z n257 = Z.valueOf(n).square().subtract(5 * n - 7);
+      final Z n257 = Z.valueOf(n).square().subtract(5L * n - 7);
       return new Q(self.a(n - 1).multiply(n - 2).multiply(n257), n - 3).add(self.a(n - 2).multiply(n257)).subtract(new Q(self.a(n - 3).multiply(n - 2), n - 3)).num();
     }, "0,1,0,1");
   }

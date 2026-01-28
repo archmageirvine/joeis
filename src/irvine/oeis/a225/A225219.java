@@ -16,7 +16,7 @@ public class A225219 extends FilterNumberSequence {
   public A225219() {
     super(1, 2, k -> {
       final Z fi = Functions.FIBONACCI.z(k);
-      return Integers.SINGLETON.count(0, 1, i -> fi.mod(k - 1 + 2 * i) != 0).isZero();
+      return Integers.SINGLETON.count(0, 1, i -> fi.mod(k - 1 + 2L * i) != 0).isZero();
     });
   }
 }

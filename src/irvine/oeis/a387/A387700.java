@@ -13,6 +13,6 @@ public class A387700 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A387700() {
-    super(0, 0, 0, (n, k) -> (k == 0) ? Z.ONE : (k == 1 ? Z.valueOf(n - 1) : Binomial.binomial(2 * k + n - 1, k - 2).multiply(n * n - 2 * k + n).divide(k * (k - 1))));
+    super(0, 0, 0, (n, k) -> (k == 0) ? Z.ONE : (k == 1 ? Z.valueOf(n - 1) : Binomial.binomial(2L * k + n - 1, k - 2).multiply((long) n * n - 2L * k + n).divide((long) k * (k - 1))));
   }
 }

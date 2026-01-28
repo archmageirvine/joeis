@@ -13,6 +13,6 @@ public class A220703 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A220703() {
-    super(1, 1, k -> Predicates.PRIME.is(Z.valueOf(k).pow(7).add(7 * k).add(Z.SEVEN.pow(k))));
+    super(1, 1, k -> Predicates.PRIME.is(Z.valueOf(k).pow(7).add(7L * k).add(Z.SEVEN.pow(k))));
   }
 }

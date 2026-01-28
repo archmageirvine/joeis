@@ -13,6 +13,6 @@ public class A387893 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A387893() {
-    super(1, 0, k -> Functions.DEDEKIND_PSI.z(k).compareTo(Z.valueOf(2 * k)) > 0);
+    super(1, 0, k -> Functions.DEDEKIND_PSI.z(k).compareTo(Z.valueOf(2L * k)) > 0);
   }
 }

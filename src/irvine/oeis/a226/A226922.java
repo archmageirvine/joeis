@@ -19,7 +19,7 @@ public class A226922 extends AbstractSequence {
   }
 
   private Z fL(final int n, final int k) {
-    return Z.valueOf(n + 1).multiply(n).add(1).multiply(Z.ONE.shiftLeft(2 * k)).add(Z.ONE.shiftLeft(k).multiply(2 * n + 1)).add(1);
+    return Z.valueOf(n + 1).multiply(n).add(1).multiply(Z.ONE.shiftLeft(2L * k)).add(Z.ONE.shiftLeft(k).multiply(2L * n + 1)).add(1);
   }
 
   private Z fN(final int n, final int k) {

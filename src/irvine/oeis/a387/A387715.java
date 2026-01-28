@@ -17,6 +17,6 @@ public class A387715 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A387715() {
-    super(1, n -> Integers.SINGLETON.countdiv(n, d -> A003959.a(d).compareTo(Z.valueOf(2 * d)) > 0));
+    super(1, n -> Integers.SINGLETON.countdiv(n, d -> A003959.a(d).compareTo(Z.valueOf(2L * d)) > 0));
   }
 }

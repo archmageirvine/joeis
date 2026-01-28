@@ -14,6 +14,6 @@ public class A348618 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A348618() {
-    super(0, n -> Binomial.binomial(new Q(3 * n, 2), n).multiply(Z.FOUR.pow(n)).divide(3).ceiling());
+    super(0, n -> Binomial.binomial(new Q(3L * n, 2), n).multiply(Z.FOUR.pow(n)).divide(3).ceiling());
   }
 }

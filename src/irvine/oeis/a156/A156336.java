@@ -14,6 +14,6 @@ public class A156336 extends PolynomialFieldSequence {
 
   /** Construct the sequence. */
   public A156336() {
-    super(0, "[1]", "x,B,/n,exp", 0, 0, 1, 1, new LambdaSequence(1, n -> Z.THREE.pow((n * n + 1) / 2)));
+    super(0, "[1]", "x,B,/n,exp", 0, 0, 1, 1, new LambdaSequence(1, n -> Z.THREE.pow(((long) n * n + 1) / 2)));
   }
 }

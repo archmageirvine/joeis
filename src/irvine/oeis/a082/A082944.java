@@ -13,6 +13,6 @@ public class A082944 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A082944() {
-    super(1, n -> new Z(Integer.toString(n) + Functions.DIGIT_SUM_ROOT.z(10, 2 * n).toString() + Functions.REVERSE.z(n * 10 + 1).toString().substring(1)));
+    super(1, n -> new Z(Integer.toString(n) + Functions.DIGIT_SUM_ROOT.z(10, 2L * n).toString() + Functions.REVERSE.z(n * 10 + 1).toString().substring(1)));
   }
 }

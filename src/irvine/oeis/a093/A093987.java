@@ -11,6 +11,6 @@ public class A093987 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A093987() {
-    super(1, (self, n) -> self.a(n - 1).pow(2 * n - 2).divide(self.a(n - 2)), "1,2");
+    super(1, (self, n) -> self.a(n - 1).pow(2L * n - 2).divide(self.a(n - 2)), "1,2");
   }
 }

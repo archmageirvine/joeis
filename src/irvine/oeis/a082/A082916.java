@@ -14,6 +14,6 @@ public class A082916 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A082916() {
-    super(1, 0, k -> k == 0 ? true : Functions.GCD.z(Z.valueOf(k), Binomial.binomial(2 * k, k)).equals(Z.ONE));
+    super(1, 0, k -> k == 0 ? true : Functions.GCD.z(Z.valueOf(k), Binomial.binomial(2L * k, k)).equals(Z.ONE));
   }
 }

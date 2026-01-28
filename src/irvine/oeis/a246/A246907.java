@@ -13,6 +13,6 @@ public class A246907 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A246907() {
-    super(1, 1, k -> Functions.SIGMA1.z(Functions.SIGMA1.z(k).add(k)).equals(Z.valueOf(3 * k)));
+    super(1, 1, k -> Functions.SIGMA1.z(Functions.SIGMA1.z(k).add(k)).equals(Z.valueOf(3L * k)));
   }
 }

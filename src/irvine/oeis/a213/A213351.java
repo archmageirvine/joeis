@@ -13,6 +13,6 @@ public class A213351 extends LambdaTable {
 
   /** Construct the sequence. */
   public A213351() {
-    super(9, 9, n -> new Integer[] {0, (n - 9) / 2}, (n, k) -> Z.TWO.pow(n - 9 - 2 * k).multiply(Binomial.binomial(n, k)).multiply(Binomial.binomial(n - k, 9 + k)));
+    super(9, 9, n -> new Integer[] {0, (n - 9) / 2}, (n, k) -> Z.TWO.pow(n - 9 - 2L * k).multiply(Binomial.binomial(n, k)).multiply(Binomial.binomial(n - k, 9 + k)));
   }
 }

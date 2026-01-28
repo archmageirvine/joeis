@@ -32,6 +32,6 @@ public class A027907 extends Sequence0 implements DirectArray {
   @Override
   public Z a(final int n, final int k) {
     // T(n,k) = Sum_{r=0..floor(k/3)} (-1)^r*binomial(n, r)*binomial(k-3*r+n-1, n-1). 
-    return Integers.SINGLETON.sum(0, k / 3, r -> Binomial.binomial(n, r).multiply((r & 1) == 1 ? -1 : 1).multiply(Binomial.binomial(k - 3 * r + n - 1, n - 1)));
+    return Integers.SINGLETON.sum(0, k / 3, r -> Binomial.binomial(n, r).multiply((r & 1) == 1 ? -1 : 1).multiply(Binomial.binomial(k - 3L * r + n - 1, n - 1)));
   }
 }

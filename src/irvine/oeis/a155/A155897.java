@@ -13,6 +13,6 @@ public class A155897 extends LambdaArray {
 
   /** Construct the sequence. */
   public A155897() {
-    super(1, 1, 1, -1, (m, n) -> Predicates.PRIME.is(Z.valueOf(2 * m + 1).pow(n).subtract(2)) ? Z.ONE : Z.ZERO);
+    super(1, 1, 1, -1, (m, n) -> Predicates.PRIME.is(Z.valueOf(2L * m + 1).pow(n).subtract(2)) ? Z.ONE : Z.ZERO);
   }
 }

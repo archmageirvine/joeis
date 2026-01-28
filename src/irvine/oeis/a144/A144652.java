@@ -12,6 +12,6 @@ public class A144652 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A144652() {
-    super(1, 1, 1, (n, m) -> Z.valueOf(2 * m + 1).multiply(n).add(m).divide(2));
+    super(1, 1, 1, (n, m) -> Z.valueOf(2L * m + 1).multiply(n).add(m).divide(2));
   }
 }

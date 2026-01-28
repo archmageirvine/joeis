@@ -12,6 +12,6 @@ public class A384718 extends LambdaArray {
 
   /** Construct the sequence. */
   public A384718() {
-    super(0, 0, 0, -1, (n, k) -> (n * k == 0) ? (n == 0 ? Z.ONE : Z.ZERO) : Z.valueOf(2 * n + k).pow(n - 1).multiply(k));
+    super(0, 0, 0, -1, (n, k) -> (n * k == 0) ? (n == 0 ? Z.ONE : Z.ZERO) : Z.valueOf(2L * n + k).pow(n - 1).multiply(k));
   }
 }

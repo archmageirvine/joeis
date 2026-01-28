@@ -13,6 +13,6 @@ public class A392771 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A392771() {
-    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Functions.STIRLING1.z(3 * n, k).abs()));
+    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Functions.STIRLING1.z(3L * n, k).abs()));
   }
 }

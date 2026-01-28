@@ -13,6 +13,6 @@ public class A178182 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A178182() {
-    super(1, n -> Z.valueOf(4 * n).divide(Functions.GCD.z(n - 4, 16)).abs());
+    super(1, n -> Z.valueOf(4L * n).divide(Functions.GCD.z(n - 4, 16)).abs());
   }
 }

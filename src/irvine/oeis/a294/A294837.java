@@ -12,6 +12,6 @@ public class A294837 extends RationalProductTransform {
 
   /** Construct the sequence. */
   public A294837() {
-    super(0, new Builder().f(k -> Z.valueOf(-(k * (5 * k - 3) / 2))).g(-1));
+    super(0, new Builder().f(k -> Z.valueOf(-(k * (5L * k - 3) / 2))).g(-1));
   }
 }

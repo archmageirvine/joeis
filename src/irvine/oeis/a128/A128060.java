@@ -15,6 +15,6 @@ public class A128060 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A128060() {
-    super(0, n -> Z.valueOf(2 * n).subtract(A128059.a(n)));
+    super(0, n -> Z.valueOf(2L * n).subtract(A128059.a(n)));
   }
 }

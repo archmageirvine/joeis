@@ -12,6 +12,6 @@ public class A210530 extends LambdaArray {
 
   /** Construct the sequence. */
   public A210530() {
-    super(1, 1, 1, -1, (n, k) -> Z.valueOf(k + 3 * n - 2).subtract(Z.valueOf(k + n - 2).multiply(Z.NEG_ONE.pow(k + n))).divide(2));
+    super(1, 1, 1, -1, (n, k) -> Z.valueOf(k + 3L * n - 2).subtract(Z.valueOf(k + n - 2).multiply(Z.NEG_ONE.pow(k + n))).divide(2));
   }
 }

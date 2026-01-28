@@ -12,6 +12,6 @@ public class A283263 extends RationalProductTransform {
 
   /** Construct the sequence. */
   public A283263() {
-    super(0, new Builder().f(k -> Z.valueOf(-k * k)));
+    super(0, new Builder().f(k -> Z.valueOf((long) -k * k)));
   }
 }

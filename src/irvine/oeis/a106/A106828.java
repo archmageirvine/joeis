@@ -13,6 +13,6 @@ public class A106828 extends LambdaTable {
 
   /** Construct the sequence. */
   public A106828() {
-    super(0, 0, n -> new Integer[] {0, n / 2}, (n, k) -> Integers.SINGLETON.sum(0, n - k, j -> Functions.BINOMIAL.z(j, n - 2 * k).multiply(Functions.EULERIAN2.z(n - k, j))));
+    super(0, 0, n -> new Integer[] {0, n / 2}, (n, k) -> Integers.SINGLETON.sum(0, n - k, j -> Functions.BINOMIAL.z(j, n - 2L * k).multiply(Functions.EULERIAN2.z(n - k, j))));
   }
 }

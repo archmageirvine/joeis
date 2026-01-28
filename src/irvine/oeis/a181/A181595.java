@@ -13,7 +13,7 @@ public class A181595 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A181595() {
     super(1, 1, k -> {
-      final long d = Functions.SIGMA1.z(k).subtract(2 * k).longValueExact();
+      final long d = Functions.SIGMA1.z(k).subtract(2L * k).longValueExact();
       return d > 0L && d < k && k % d == 0L;
     });
   }

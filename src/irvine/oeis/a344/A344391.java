@@ -12,6 +12,6 @@ public class A344391 extends LambdaTable {
 
   /** Construct the sequence. */
   public A344391() {
-    super(0, 0, n -> new Integer[] {0, n / 2}, (n, k) -> Functions.POCHHAMMER.z(n + 1 - 2 * k, k));
+    super(0, 0, n -> new Integer[] {0, n / 2}, (n, k) -> Functions.POCHHAMMER.z(n + 1 - 2L * k, k));
   }
 }

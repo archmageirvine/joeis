@@ -49,7 +49,7 @@ public class A384864 extends MemoryFunctionInt2Sequence<Q> implements DirectArra
     }
     Q sum = Q.ZERO;
     for (int j = 1; j <= n; ++j) {
-      final Z sbin = Functions.BINOMIAL.z(mA * n + mB * j + k - 1, j - 1);
+      final Z sbin = Functions.BINOMIAL.z((long) mA * n + (long) mB * j + k - 1, j - 1);
       final Q sget = get(n - j, mC * j);
       //* System.err.println("    n=" + n + "\tk=" + k + "\tj=" + j + "\tp1=" + (mA*n + mB*j + k - 1) + "\tbinomial(p1, j-1)=" + (sbin) + "\tsget=" + sget);
       sum = sum.add(sget.multiply(sbin).divide(j));

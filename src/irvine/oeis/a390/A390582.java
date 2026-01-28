@@ -15,7 +15,7 @@ public class A390582 extends LambdaSequence {
   public A390582() {
     super(1, n -> {
       final Z s = Functions.SIGMA1.z(n);
-      return Z.valueOf(2 * n).subtract(s).divide(Functions.GCD.z(Z.valueOf(n), s));
+      return Z.valueOf(2L * n).subtract(s).divide(Functions.GCD.z(Z.valueOf(n), s));
     });
   }
 }

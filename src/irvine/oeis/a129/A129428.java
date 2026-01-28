@@ -12,6 +12,6 @@ public class A129428 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A129428() {
-    super(0, n -> Z.valueOf(n + 1).multiply(n * 47).add(2).divide(2));
+    super(0, n -> Z.valueOf(n + 1).multiply(n * 47L).add(2).divide(2));
   }
 }

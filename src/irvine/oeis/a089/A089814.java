@@ -12,6 +12,6 @@ public class A089814 extends RationalProductTransform {
 
   /** Construct the sequence. */
   public A089814() {
-    super(0, new Builder().fl(k -> -2L).h(k -> Z.valueOf(10 * k - 5)));
+    super(0, new Builder().fl(k -> -2L).h(k -> Z.valueOf(10L * k - 5)));
   }
 }

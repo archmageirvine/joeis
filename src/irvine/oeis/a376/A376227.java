@@ -14,6 +14,6 @@ public class A376227 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A376227() {
-    super(0, n -> (n == 0) ? Z.ONE : Rationals.SINGLETON.product(1, n, k -> new Q(Z.TWO.pow(3 * k).subtract(1), Z.TWO.pow(k).subtract(1))).num());
+    super(0, n -> (n == 0) ? Z.ONE : Rationals.SINGLETON.product(1, n, k -> new Q(Z.TWO.pow(3L * k).subtract(1), Z.TWO.pow(k).subtract(1))).num());
   }
 }

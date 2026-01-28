@@ -12,6 +12,6 @@ public class A389625 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A389625() {
-    super(0, n -> (n == 0) ? Z.ONE : Z.valueOf(11 * n - 9).multiply(n).add(4).divide(2));
+    super(0, n -> (n == 0) ? Z.ONE : Z.valueOf(11L * n - 9).multiply(n).add(4).divide(2));
   }
 }

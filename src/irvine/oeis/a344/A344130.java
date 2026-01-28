@@ -13,6 +13,6 @@ public class A344130 extends RationalProductTransform {
 
   /** Construct the sequence. */
   public A344130() {
-    super(0, new Builder().fq(k -> new Q(Binomial.binomial(2 * k, k).negate())).g(-1));
+    super(0, new Builder().fq(k -> new Q(Binomial.binomial(2L * k, k).negate())).g(-1));
   }
 }

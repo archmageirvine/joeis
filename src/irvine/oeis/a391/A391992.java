@@ -13,6 +13,6 @@ public class A391992 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A391992() {
-    super(0, n -> Functions.DIGIT_LENGTH.z(Binomial.binomial(2 * n, n)));
+    super(0, n -> Functions.DIGIT_LENGTH.z(Binomial.binomial(2L * n, n)));
   }
 }

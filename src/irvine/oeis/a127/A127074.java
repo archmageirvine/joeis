@@ -12,6 +12,6 @@ public class A127074 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A127074() {
-    super(1, 1, k -> Z.THREE.pow(k).subtract(Z.TWO.pow(k)).subtract(1).mod(k * k) == 0);
+    super(1, 1, k -> Z.THREE.pow(k).subtract(Z.TWO.pow(k)).subtract(1).mod((long) k * k) == 0);
   }
 }

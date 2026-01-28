@@ -13,6 +13,6 @@ public class A111808 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A111808() {
-    super(1, 0, 0, (n, k) -> Integers.SINGLETON.sum(0, k / 2, i -> Binomial.binomial(n, n - k + 2 * i).multiply(Binomial.binomial(n - k + 2 * i, i))));
+    super(1, 0, 0, (n, k) -> Integers.SINGLETON.sum(0, k / 2, i -> Binomial.binomial(n, n - k + 2L * i).multiply(Binomial.binomial(n - k + 2L * i, i))));
   }
 }

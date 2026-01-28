@@ -13,6 +13,6 @@ public class A380113 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A380113() {
-    super(0, 0, 0, (n, k) -> (k == 0) ? Z.NEG_ONE.pow(n).multiply(Functions.BINOMIAL.z(-n, n)) : ((k == n) ? Z.ONE : Functions.BINOMIAL.z(2 * n, n - k)));
+    super(0, 0, 0, (n, k) -> (k == 0) ? Z.NEG_ONE.pow(n).multiply(Functions.BINOMIAL.z(-n, n)) : ((k == n) ? Z.ONE : Functions.BINOMIAL.z(2L * n, n - k)));
   }
 }

@@ -14,6 +14,6 @@ public class A253076 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A253076() {
-    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> (d & 1) == 0 ? Z.ZERO : Functions.MOEBIUS.z(d).multiply(Z.THREE.pow(2 * n / d).subtract(1))).divide(8 * n));
+    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> (d & 1) == 0 ? Z.ZERO : Functions.MOEBIUS.z(d).multiply(Z.THREE.pow(2L * n / d).subtract(1))).divide(8L * n));
   }
 }

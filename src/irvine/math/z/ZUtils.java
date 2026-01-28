@@ -538,29 +538,35 @@ public final class ZUtils {
   }
 
   /**
-   * The concatenation of the base expansion of a function from lo to hi inclusive.
-   * @param lo lower bound
-   * @param hi upper bound
+   * The concatenation of the base expansion of a function from r1 up to r2 (or from r1 down to r2) inclusive.
+   * @param r1 start of range
+   * @param r2 end of range
    * @param function the function
    * @param base number base for the expansion
    * @return new integer
    */
-  public static Z concatenate(final int lo, final int hi, final Function<Integer, Z> function, final int base) {
-    final StringBuilder sb = new StringBuilder();
-    for (int k = lo; k <= hi; ++k) {
-      sb.append(function.apply(k).toString(base));
+  public static Z concatenate(final int r1, final int r2, final Function<Integer, Z> function, final int base) {
+    final StringBuilder sb = new StringBuilder('0');
+    if (r1 <= r2) { // upwards
+      for (int k = r1; k <= r2; ++k) {
+        sb.append(function.apply(k).toString(base));
+      }
+    } else { // downwards
+      for (int k = r1; k >= r2; --k) {
+        sb.append(function.apply(k).toString(base));
+      }
     }
     return new Z(sb.toString(), base);
   }
 
   /**
-   * The concatenation of the decimal expansion of a function from lo to hi inclusive.
-   * @param lo lower bound
-   * @param hi upper bound
+   * The concatenation of the base expansion of a function from r1 up to r2 (or from r1 down to r2) inclusive.
+   * @param r1 start of range
+   * @param r2 end of range
    * @param function the function
    * @return new integer
    */
-  public static Z concatenate(final int lo, final int hi, final Function<Integer, Z> function) {
-    return concatenate(lo, hi, function, 10);
+  public static Z concatenate(final int r1, final int r2, final Function<Integer, Z> function) {
+    return concatenate(r1, r2, function, 10);
   }
 }

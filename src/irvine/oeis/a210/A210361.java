@@ -14,6 +14,6 @@ public class A210361 extends FilterSequence {
 
   /** Construct the sequence. */
   public A210361() {
-    super(1, new A000040(), p -> !Predicates.PRIME.is(p.add(3 * (3 + 1))) && Integers.SINGLETON.count(0, 2, x -> !Predicates.PRIME.is(p.add(x * (x + 1)))).isZero());
+    super(1, new A000040(), p -> !Predicates.PRIME.is(p.add(3 * (3 + 1))) && Integers.SINGLETON.count(0, 2, x -> !Predicates.PRIME.is(p.add((long) x * (x + 1)))).isZero());
   }
 }

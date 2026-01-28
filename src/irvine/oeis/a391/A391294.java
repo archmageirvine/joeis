@@ -15,6 +15,6 @@ public class A391294 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A391294() {
-    super(0, n -> Rationals.SINGLETON.sum(0, n, k -> new Q(Z.NEG_ONE.pow(k).multiply(k + 2).multiply(Binomial.binomial(3 * n - 2 * k + 2, n - k)), Z.valueOf(3 * n - 2 * k + 2))).num());
+    super(0, n -> Rationals.SINGLETON.sum(0, n, k -> new Q(Z.NEG_ONE.pow(k).multiply(k + 2).multiply(Binomial.binomial(3L * n - 2L * k + 2, n - k)), Z.valueOf(3L * n - 2L * k + 2))).num());
   }
 }

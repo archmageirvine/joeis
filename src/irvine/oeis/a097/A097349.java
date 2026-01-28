@@ -14,6 +14,6 @@ public class A097349 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A097349() {
-    super(1, 1, n -> Predicates.PRIME.is(Integers.SINGLETON.sum(1, n, k -> Z.valueOf(2 * k).pow(k)).add(1)));
+    super(1, 1, n -> Predicates.PRIME.is(Integers.SINGLETON.sum(1, n, k -> Z.valueOf(2L * k).pow(k)).add(1)));
   }
 }

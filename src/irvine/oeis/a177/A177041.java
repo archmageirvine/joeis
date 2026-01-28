@@ -13,6 +13,6 @@ public class A177041 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A177041() {
-    super(1, n -> Integers.SINGLETON.sum(1, n, k -> new Q(k * k, n).round()));
+    super(1, n -> Integers.SINGLETON.sum(1, n, k -> new Q((long) k * k, n).round()));
   }
 }

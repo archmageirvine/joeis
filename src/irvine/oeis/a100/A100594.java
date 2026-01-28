@@ -16,6 +16,6 @@ public class A100594 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A100594() {
-    super(1, n -> REALS.pow(CR.PI, 2 * n).divide(Zeta.zeta(2 * n)).floor());
+    super(1, n -> REALS.pow(CR.PI, 2L * n).divide(Zeta.zeta(2 * n)).floor());
   }
 }

@@ -12,6 +12,6 @@ public class A390277 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A390277() {
-    super(0, n -> Functions.CATALAN.z(n).multiply(Functions.STIRLING2.z(2 * n, n)));
+    super(0, n -> Functions.CATALAN.z(n).multiply(Functions.STIRLING2.z(2L * n, n)));
   }
 }

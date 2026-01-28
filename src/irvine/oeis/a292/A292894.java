@@ -15,6 +15,6 @@ public class A292894 extends LambdaArray {
 
   /** Construct the sequence. */
   public A292894() {
-    super(0, 0, 0, -1, (n, k) -> Rationals.SINGLETON.sum(0, n / (k + 1), j -> new Q(Z.NEG_ONE.pow(j).multiply(Functions.STIRLING2.z(n - k * j, j)), Functions.FACTORIAL.z(n - k * j))).multiply(Functions.FACTORIAL.z(n)).num());
+    super(0, 0, 0, -1, (n, k) -> Rationals.SINGLETON.sum(0, n / (k + 1), j -> new Q(Z.NEG_ONE.pow(j).multiply(Functions.STIRLING2.z(n - (long) k * j, j)), Functions.FACTORIAL.z(n - k * j))).multiply(Functions.FACTORIAL.z(n)).num());
   }
 }

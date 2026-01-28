@@ -14,6 +14,6 @@ public class A391176 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A391176() {
-    super(0, n -> Rationals.SINGLETON.sum(0, n, k -> new Q(k + 3).multiply(Binomial.binomial(k + 3, 3)).multiply(Binomial.binomial(3 * n - 2 * k + 3, n - k)).divide(3 * n - 2 * k + 3)).num());
+    super(0, n -> Rationals.SINGLETON.sum(0, n, k -> new Q(k + 3).multiply(Binomial.binomial(k + 3, 3)).multiply(Binomial.binomial(3L * n - 2L * k + 3, n - k)).divide(3L * n - 2L * k + 3)).num());
   }
 }

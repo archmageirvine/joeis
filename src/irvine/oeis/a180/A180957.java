@@ -14,6 +14,6 @@ public class A180957 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A180957() {
-    super(0, 0, 0, (n, k) -> Integers.SINGLETON.sum(0, n, j -> Z.NEG_ONE.pow(k - j).multiply(Binomial.binomial(n, j)).multiply(Binomial.binomial(n - j, 2 * (k - j)))));
+    super(0, 0, 0, (n, k) -> Integers.SINGLETON.sum(0, n, j -> Z.NEG_ONE.pow(k - j).multiply(Binomial.binomial(n, j)).multiply(Binomial.binomial(n - j, 2L * (k - j)))));
   }
 }

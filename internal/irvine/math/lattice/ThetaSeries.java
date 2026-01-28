@@ -35,7 +35,7 @@ public final class ThetaSeries {
     final int m = wt / d;
     final Matrix<Q> mat = new DefaultMatrix<>(m + 1, m + 1, Q.ZERO);
     for (int k = 0; k <= wt / d; ++k) {
-      final Series<Q> s = SQ.multiply(SQ.pow(delta, k), SQ.pow(theta, (wt - k * d) / a));
+      final Series<Q> s = SQ.multiply(SQ.pow(delta, k), SQ.pow(theta, (wt - (long) k * d) / a));
       for (int j = 0; j <= m; ++j) {
         mat.set(j, k, s.coeff(j));
       }

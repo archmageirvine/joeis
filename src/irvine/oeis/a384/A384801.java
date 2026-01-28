@@ -60,9 +60,9 @@ public class A384801 extends MemoryFunctionInt2Sequence<Q> implements DirectArra
     }
     Q sum = Q.ZERO;
     for (int j = mJStart; j <= n; ++j) {
-      sum = sum.add(get(n - j, mC * j).multiply(Q.valueOf(mA * n + mB * j + k).pow(j - 1)).multiply(Functions.BINOMIAL.z(n, j)));
+      sum = sum.add(get(n - j, mC * j).multiply(Q.valueOf((long) mA * n + (long) mB * j + k).pow(j - 1)).multiply(Functions.BINOMIAL.z(n, j)));
     }
-    return sum.multiply((n & 1) == 0 ? k : mKNeg * k);
+    return sum.multiply((n & 1) == 0 ? k : (long) mKNeg * k);
   }
 
   protected Q t(final int n, final int m) {

@@ -17,7 +17,7 @@ public class A061390 extends RecordPositionSequence {
 
   /** Construct the sequence. */
   public A061390() {
-    super(1, new Sequence2() {
+    super(1, 2, new Sequence2() {
 
       private long mN = 1;
 
@@ -52,7 +52,7 @@ public class A061390 extends RecordPositionSequence {
           }
         }
       }
-    }, 2);
+    });
     next();
   }
 }

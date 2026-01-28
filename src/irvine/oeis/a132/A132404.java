@@ -12,7 +12,7 @@ public class A132404 extends RecordPositionSequence {
 
   /** Construct the sequence. */
   public A132404() {
-    super(1, new A024359(), 1);
+    super(1, 1, new A024359());
     super.next();
   }
 }

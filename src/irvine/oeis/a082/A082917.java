@@ -12,7 +12,7 @@ public class A082917 extends RecordPositionSequence {
 
   /** Construct the sequence. */
   public A082917() {
-    super(1, new A002375().skip(2), 3);
+    super(1, 3, new A002375().skip(2));
   }
 
   @Override

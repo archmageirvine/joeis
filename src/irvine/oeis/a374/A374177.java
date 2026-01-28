@@ -12,6 +12,6 @@ public class A374177 extends RecordPositionSequence {
 
   /** Construct the sequence. */
   public A374177() {
-    super(1, new A373330(), 0);
+    super(1, 0, new A373330());
   }
 }

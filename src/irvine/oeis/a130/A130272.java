@@ -14,6 +14,6 @@ public class A130272 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A130272() {
-    super(1, new RecordPositionSequence(1, new A054269(), 1), v -> Functions.PRIME.z(v));
+    super(1, new RecordPositionSequence(1, 1, new A054269()), v -> Functions.PRIME.z(v));
   }
 }

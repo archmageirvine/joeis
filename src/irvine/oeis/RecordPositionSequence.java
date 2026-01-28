@@ -35,16 +35,16 @@ public class RecordPositionSequence extends AbstractSequence {
    * @param initialPosition the initial offset of the sequence
    */
   public RecordPositionSequence(final Sequence seq, final long initialPosition) {
-    this(DEFOFF, seq, initialPosition);
+    this(DEFOFF, initialPosition, seq);
   }
 
   /**
    * Creates a record position sequence of another sequence.
    * @param offset first index of target sequence
-   * @param seq underlying sequence
    * @param initialPosition the initial offset of the sequence
+   * @param seq underlying sequence
    */
-  public RecordPositionSequence(final int offset, final Sequence seq, final long initialPosition) {
+  public RecordPositionSequence(final int offset, final long initialPosition, final Sequence seq) {
     this(offset, seq, initialPosition, true);
   }
 

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A067274.
+ * A389272 allocated for Leo Hennig.
  * @author Sean A. Irvine
  */
 public class A389272 extends Sequence1 {
@@ -18,6 +18,7 @@ public class A389272 extends Sequence1 {
 
   @Override
   public Z next() {
+    // This is significantly faster than dynamically creating sums downward from mP
     while (true) {
       mP = mPrime.nextPrime(mP);
       if (mP > mM) {

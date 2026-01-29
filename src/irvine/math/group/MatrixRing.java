@@ -244,6 +244,10 @@ public class MatrixRing<E> extends MatrixGroupRing<E> implements Ring<Matrix<E>>
     if (mat.rows() > mat.cols()) {
       return permanent(mat.transpose()); // transpose does not change value of permanent
     }
+    final long n = mat.rows();
+    if (n == 0) {
+      return mOne; // permanent of empty matrix
+    }
     if (zero().equals(mat)) {
       return mZero;
     }
@@ -251,12 +255,8 @@ public class MatrixRing<E> extends MatrixGroupRing<E> implements Ring<Matrix<E>>
       return mOne;
     }
     // Using Ryser inclusion-exclusion method
-    final long n = mat.rows();
     if (n > 64) {
       throw new UnsupportedOperationException();
-    }
-    if (n == 0) {
-      return mZero;
     }
     final long m = mat.cols();
     E sum = mZero;

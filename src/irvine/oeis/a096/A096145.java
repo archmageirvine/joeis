@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A096145 Sum of digits in Pascal&apos;s triangle (A007318) in decimal representation, triangle read by rows, 0&lt;=k&lt;=n.
+ * A096145 Sum of digits in Pascal's triangle (A007318) in decimal representation, triangle read by rows, 0&lt;=k&lt;=n.
  * @author Georg Fischer
  */
 public class A096145 extends LambdaTriangle {

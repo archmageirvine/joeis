@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A141689 Average of Eulerian numbers (A008292) and Pascal&apos;s triangle (A007318): t(n,m) = (A008292(n,m) + A007318(n,m))/2.
+ * A141689 Average of Eulerian numbers (A008292) and Pascal's triangle (A007318): t(n,m) = (A008292(n,m) + A007318(n,m))/2.
  * @author Georg Fischer
  */
 public class A141689 extends LambdaTable {

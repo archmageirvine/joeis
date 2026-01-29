@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A363849 Triangular array read by rows. T(n,k) is the number of Green&apos;s H-classes of rank k in the semigroup of partial transformations, n &gt;= 0, 0 &lt;= k &lt;= n.
+ * A363849 Triangular array read by rows. T(n,k) is the number of Green's H-classes of rank k in the semigroup of partial transformations, n &gt;= 0, 0 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A363849 extends LambdaTriangle {

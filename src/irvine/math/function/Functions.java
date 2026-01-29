@@ -173,6 +173,8 @@ public final class Functions {
   public static final Function1 PRIME_MEMORY = new PrimeMemory(); // =A039997
   /** Number of primes contained in the decimal representation of a number. */
   public static final Function1 RUNS_OF_1 = new RunsOfOne(); // =A069010
+  /** The smallest palindrome not less than given number. */
+  public static final Function1 NEXT_PALINDROME = new NextPalindrome();
 
   // Two argument functions with default first parameter
 

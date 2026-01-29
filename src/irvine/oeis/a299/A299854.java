@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A299854 G.f. S(x) satisfies C(x)^(1/2) - S(x)^(1/2) = 1 such that C&apos;(x)*S(x)^(1/2) = S&apos;(x)*C(x)^(1/2) = 72*x.
+ * A299854 G.f. S(x) satisfies C(x)^(1/2) - S(x)^(1/2) = 1 such that C'(x)*S(x)^(1/2) = S'(x)*C(x)^(1/2) = 72*x.
  * @author Georg Fischer
  */
 public class A299854 extends LambdaSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A085880 Triangle T(n,k) read by rows: multiply row n of Pascal&apos;s triangle (A007318) by the n-th Catalan number (A000108).
+ * A085880 Triangle T(n,k) read by rows: multiply row n of Pascal's triangle (A007318) by the n-th Catalan number (A000108).
  * @author Georg Fischer
  */
 public class A085880 extends LambdaTriangle {

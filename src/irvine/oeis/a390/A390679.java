@@ -21,15 +21,12 @@ public class A390679 extends Sequence0 {
 
   @Override
   public Z next() {
-    if (++mN == 0) {
-      return Z.ONE;
-    }
-    final DefaultMatrix<Q> mat = new DefaultMatrix<>(2L * mN, 2L * mN, Q.ZERO);
+    final DefaultMatrix<Q> mat = new DefaultMatrix<>(2L * ++mN, 2L * mN, Q.ZERO);
     for (int k = 0; k < 2 * mN; ++k) {
       for (int j = 0; j < 2 * mN; ++j) {
         mat.set(k, j, t(k + 1, j + 1, mN));
       }
     }
-    return new MatrixField<Q>(mN, Rationals.SINGLETON).permanent(mat).toZ();
+    return new MatrixField<>(mN, Rationals.SINGLETON).permanent(mat).toZ();
   }
 }

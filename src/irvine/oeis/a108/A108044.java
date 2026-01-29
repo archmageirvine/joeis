@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A108044 Triangle read by rows: right half of Pascal&apos;s triangle (A007318) interspersed with 0&apos;s.
+ * A108044 Triangle read by rows: right half of Pascal's triangle (A007318) interspersed with 0's.
  * @author Georg Fischer
  */
 public class A108044 extends LambdaTriangle {

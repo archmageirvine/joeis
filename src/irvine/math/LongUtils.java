@@ -502,4 +502,17 @@ public final class LongUtils {
     }
     return 64 - Long.numberOfLeadingZeros(n - 1);
   }
+
+  /**
+   * Sum the values in a collection.
+   * @param collection values to sum
+   * @return sum
+   */
+  public static long sum(final Collection<Long> collection) {
+    long sum = 0;
+    for (final long v : collection) {
+      sum += v;
+    }
+    return sum;
+  }
 }

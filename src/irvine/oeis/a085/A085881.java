@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001147;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A085881 Triangle T(n,k) read by rows: multiply row n of Pascal&apos;s triangle (A007318) by A001147(n).
+ * A085881 Triangle T(n,k) read by rows: multiply row n of Pascal's triangle (A007318) by A001147(n).
  * @author Georg Fischer
  */
 public class A085881 extends LambdaTriangle {

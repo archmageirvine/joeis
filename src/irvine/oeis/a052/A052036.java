@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.math.predicate.Predicates;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -14,11 +14,6 @@ public class A052036 extends Sequence0 {
 
   @Override
   public Z next() {
-    ++mN;
-    long k = 0;
-    while (!Predicates.PALINDROME.is(mN + k)) {
-      ++k;
-    }
-    return Z.valueOf(k);
+    return Functions.NEXT_PALINDROME.z(++mN).subtract(mN);
   }
 }

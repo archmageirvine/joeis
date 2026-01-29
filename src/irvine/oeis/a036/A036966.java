@@ -1,7 +1,6 @@
 package irvine.oeis.a036;
 
 import irvine.factor.factor.Jaguar;
-import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -24,16 +23,7 @@ public class A036966 extends Sequence1 {
   }
 
   private boolean is(final long n) {
-    if (n == 1) {
-      return true;
-    }
-    final FactorSequence fs = Jaguar.factor(n);
-    for (final Z p : fs.toZArray()) {
-      if (fs.getExponent(p) < mMinExponent) {
-        return false;
-      }
-    }
-    return true;
+    return n == 1 || Jaguar.factor(n).minExponent() >= mMinExponent;
   }
 
   @Override

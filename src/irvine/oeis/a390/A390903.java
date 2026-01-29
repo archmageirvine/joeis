@@ -18,10 +18,7 @@ public class A390903 extends Sequence0 {
 
   @Override
   public Z next() {
-    if (++mN == 0) {
-      return Z.ONE;
-    }
-    final Matrix<Q> m = new DefaultMatrix<>(mN, mN, Q.ZERO);
+    final Matrix<Q> m = new DefaultMatrix<>(++mN, mN, Q.ZERO);
     for (long k = 0; k < mN; ++k) {
       for (long j = 0; j < mN; ++j) {
         m.set(k, j, Q.valueOf(2 * mN - k - j - 2));

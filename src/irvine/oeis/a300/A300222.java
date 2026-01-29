@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A300222 In ternary (base-3) representation of n, replace 1&apos;s with 0&apos;s.
+ * A300222 In ternary (base-3) representation of n, replace 1's with 0's.
  * @author Georg Fischer
  */
 public class A300222 extends LambdaSequence {

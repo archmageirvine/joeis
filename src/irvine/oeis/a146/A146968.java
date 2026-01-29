@@ -6,7 +6,6 @@ import irvine.oeis.BriefSequence;
 
 /**
  * A146968 Brocard's problem: positive integers n such that n!+1 = m^2.
- *
  * @author Georg Fischer
  */
 public class A146968 extends BriefSequence {

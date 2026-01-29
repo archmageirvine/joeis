@@ -31,7 +31,9 @@ public class A046802 extends A123125 implements DirectArray {
 
   @Override
   public Z a(final int n, final int k) {
-    return Integers.SINGLETON.sum(k, n, j -> Binomial.binomial(n, j).multiply(Functions.EULERIAN1.z(j, j - k)));
+    final Z result = Integers.SINGLETON.sum(k, n, j -> Binomial.binomial(n, j).multiply(Functions.EULERIAN1.z(j, j - k)));
+    // System.err.println("A046802(" + n + "," + k + ") = " + result);
+    return result;
   }
 
 }

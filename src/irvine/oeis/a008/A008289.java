@@ -3,12 +3,13 @@ package irvine.oeis.a008;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A008289 Triangle read by rows: Q(n,m) = number of partitions of n into m distinct parts, n&gt;=1, m&gt;=1.
  * @author Sean A. Irvine
  */
-public class A008289 extends MemoryFunction2Sequence<Integer, Z> {
+public class A008289 extends MemoryFunction2Sequence<Integer, Z> implements DirectArray {
 
   protected A008289(final int offset) {
     super(offset);
@@ -40,5 +41,10 @@ public class A008289 extends MemoryFunction2Sequence<Integer, Z> {
       mM = 1;
     }
     return get(mN, mM);
+  }
+
+  @Override
+  public Z a(final int n, final int k) {
+    return get(n, k);
   }
 }

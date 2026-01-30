@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
- * A116452 Number of prime factors of A116451.
+ * A116452 Number of prime factors of A116451(n).
  * @author Georg Fischer
  */
 public class A116452 extends A116451 {

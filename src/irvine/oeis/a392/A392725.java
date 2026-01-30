@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392725 allocated for Joshua B. Weinstein.
+ * A392725 a(1) = 1; if the digit sum of |a(n)| is odd, then a(n+1) = a(n)-n, otherwise a(n+1) = a(n)+n.
  * @author Sean A. Irvine
  */
 public class A392725 extends Sequence1 {

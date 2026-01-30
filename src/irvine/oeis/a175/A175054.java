@@ -6,7 +6,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a377.A377167;
 
 /**
- * A175054 A positive integer n is included if there is no run of 0&apos;s in the binary representation of n that is only one digit long.
+ * A175054 A positive integer n is included if there is no run of 0's in the binary representation of n that is only one digit long.
  * @author Georg Fischer
  */
 public class A175054 extends ComplementSequence {

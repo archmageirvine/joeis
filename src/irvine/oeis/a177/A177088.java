@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A177088 Numbers n such that n^5-n^3-2*n^2+1 is semiprime.
+ * A177088 Numbers k such that k^5-k^3-2*k^2+1 is semiprime.
  * @author Georg Fischer
  */
 public class A177088 extends FilterNumberSequence {

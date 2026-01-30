@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A136291 Array read by rows: each row is a sequence of numbers k such that n^k does not contain the digit n.
+ * A136291 Array read by rows: row n is a sequence of numbers k such that n^k does not contain the digit n.
  * @author Georg Fischer
  */
 public class A136291 extends FiniteSequence {

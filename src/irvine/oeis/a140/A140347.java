@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a002.A002808;
 
 /**
- * A140347 Composites of the form ((x+y)/3+2)/(x-y), where x=composite and y=prime.
+ * A140347 Duplicate of A002808.
  * @author Georg Fischer
  */
 public class A140347 extends PrependSequence {

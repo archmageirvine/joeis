@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392283 allocated for Tyler Yu.
+ * A392283 Numbers k such that phi(k) divides k + 3.
  * @author Sean A. Irvine
  */
 public class A392283 extends Sequence1 {

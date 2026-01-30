@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A177070 Numbers n such that 2^n + n^2 + 2 is prime.
+ * A177070 Numbers k such that 2^k + k^2 + 2 is prime.
  * @author Georg Fischer
  */
 public class A177070 extends FilterNumberSequence {

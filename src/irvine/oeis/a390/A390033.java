@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390033 allocated for Ali Sada.
+ * A390033 Number of different digit-cycles that can appear when you repeatedly multiply by a single digit in base n, tracking only the last digit.
  * @author Sean A. Irvine
  */
 public class A390033 extends Sequence1 {

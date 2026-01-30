@@ -5,7 +5,7 @@ import irvine.oeis.a332.A332785;
 import irvine.oeis.a391.A391115;
 
 /**
- * A392360 allocated for Michael De Vlieger.
+ * A392360 Nonsquarefree numbers that are neither squareful or biquadratefree.
  * @author Sean A. Irvine
  */
 public class A392360 extends IntersectionSequence {

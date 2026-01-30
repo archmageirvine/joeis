@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000005;
 import irvine.oeis.a257.A257993;
 
 /**
- * A392758 allocated for Juri-Stepan Gerasimov.
+ * A392758 Number of divisors of n which are not primorials.
  * @author Sean A. Irvine
  */
 public class A392758 extends Combiner {

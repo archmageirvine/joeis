@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A005835 Pseudoperfect (or semiperfect) numbers n: some subset of the proper divisors of n sums to n.
+ * A005835 Pseudoperfect (or semiperfect) numbers k: some subset of the proper divisors of k sums to k.
  * @author Sean A. Irvine
  */
 public class A005835 extends Sequence1 {

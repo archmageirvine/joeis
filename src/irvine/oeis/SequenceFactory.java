@@ -68,6 +68,7 @@ public final class SequenceFactory {
   private static final String TERMS = "terms";
   private static final String TIMESTAMP = "timestamp";
   private static final String TRIANGLE = "triangle";
+  private static final String TRANSPOSE = "transpose";
 
   /**
    * Convert a sequence identifier to a padded out A-number.
@@ -312,6 +313,19 @@ public final class SequenceFactory {
     return rowCount > 0 || rowLimit > 0;
   }
 
+  private static List<List<String>> transpose(final List<List<String>> table) {
+    final List<List<String>> transpose = new ArrayList<>();
+    for (int k = 0; k < table.get(0).size(); ++k) {
+      transpose.add(new ArrayList<>());
+    }
+    for (final List<String> r : table) {
+      for (int k = 0; k < r.size(); ++k) {
+        transpose.get(k).add(r.get(k));
+      }
+    }
+    return transpose;
+  }
+
   private static void generateOutput(final OutputStream out, final List<List<String>> table) throws IOException {
     // Compute width for each column
     final int[] padding = new int[table.get(0).size()];
@@ -378,7 +392,7 @@ public final class SequenceFactory {
     return true;
   }
 
-  private static boolean squareArrayOutputMode(final CliFlags flags, final OutputStream out, final Sequence seq) throws IOException {
+  private static boolean squareArrayOutputMode(final CliFlags flags, final OutputStream out, final Sequence seq, final boolean transpose) throws IOException {
     // This output mode needs to know exactly how many terms are to be produced in advance.
     // We precompute the entire square before output.
     final long numberOfTerms = getEffectiveMax(flags, TERMS);
@@ -421,7 +435,7 @@ public final class SequenceFactory {
         asSquareTable.get(row).add(".");
       }
     }
-    generateOutput(out, asSquareTable);
+    generateOutput(out, transpose ? transpose(asSquareTable) : asSquareTable);
     return true;
   }
 
@@ -522,6 +536,7 @@ public final class SequenceFactory {
     flags.registerOptional('a', AUTHOR, String.class, "name", "Specify author name for b-file output");
     flags.registerOptional(PRIORITY, String.class, "string", "Comma separated list of priority for programs (e.g., java,gp)");
     flags.registerOptional(ROW_NUMBERS, "Include row numbers in triangle (-T) output");
+    flags.registerOptional(TRANSPOSE, "Transpose the square (-S) output");
     flags.registerRequired(String.class, "A-number", "Sequence to generate (or \"-\" to read standard input)");
     flags.setValidator(VALIDATOR);
     flags.setFlags(args);
@@ -566,7 +581,7 @@ public final class SequenceFactory {
         } else if (flags.isSet(RIGHT)) {
           generated = upperRightTriangleOutputMode(flags, out, seq);
         } else if (flags.isSet(SQUARE)) {
-          generated = squareArrayOutputMode(flags, out, seq);
+          generated = squareArrayOutputMode(flags, out, seq, flags.isSet(TRANSPOSE));
         } else {
           Z z;
           long termCnt = 0;

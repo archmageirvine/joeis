@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ComplementSequence;
 
 /**
- * A268415 Balanced odious numbers: numbers with an odd number of runs of 1&apos;s in their binary expansion.
+ * A268415 Balanced odious numbers: numbers with an odd number of runs of 1's in their binary expansion.
  * @author Georg Fischer
  */
 public class A268415 extends ComplementSequence {

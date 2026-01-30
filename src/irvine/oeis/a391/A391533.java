@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A391533 allocated for Leonidas Liponis.
+ * A391533 The truncated (4,4,1)-Pascal triangle, given by 4*C(n-2, k) + 4*C(n-2, k-1) + C(n-2, k-2) for n&gt;=2.
  * @author Sean A. Irvine
  */
 public class A391533 extends Sequence2 {

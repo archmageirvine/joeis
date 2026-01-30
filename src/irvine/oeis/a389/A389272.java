@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A389272 allocated for Leo Hennig.
+ * A389272 Primes p such that a sequence of consecutive primes ending on p sums to a power of 10.
  * @author Sean A. Irvine
  */
 public class A389272 extends Sequence1 {

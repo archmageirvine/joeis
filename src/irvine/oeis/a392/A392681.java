@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392681 allocated for Kaloian Ivanov.
+ * A392681 Square array read by upward antidiagonals: T(n,k) = sum of depths of leaves in a complete k-ary tree with n nodes; n &gt;= 1, k &gt;= 2.
  * @author Sean A. Irvine
  */
 public class A392681 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a055.A055520;
 
 /**
- * A089017 n for which the number consisting of a string of n 3&apos;s and a terminal 1 is not prime.
+ * A089017 n for which the number consisting of a string of n 3's and a terminal 1 is not prime.
  * @author Georg Fischer
  */
 public class A089017 extends ComplementSequence {

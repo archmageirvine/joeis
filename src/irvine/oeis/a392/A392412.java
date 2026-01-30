@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392412 allocated for Paul Duckett.
+ * A392412 Smallest sum of n powers, where all bases and exponents are different primes.
  * @author Sean A. Irvine
  */
 public class A392412 extends Sequence1 {

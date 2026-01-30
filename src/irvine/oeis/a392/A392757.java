@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.TwoParameterFormSequence;
 
 /**
- * A392757 allocated for Gonzalo Mart\u00ednez.
+ * A392757 Primes of the form k!*m! + 1, with k &lt;= m.
  * @author Sean A. Irvine
  */
 public class A392757 extends TwoParameterFormSequence {

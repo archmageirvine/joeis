@@ -10,7 +10,7 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A391445 allocated for Paolo P. Lava.
+ * A391445 Take a prime p&gt;9, sum the digits, repeat the sum deleting the first addendum and adding the previous sum and so on. Sequence lists the minimum prime p that produces a run of exactly n consecutive primes.
  * @author Sean A. Irvine
  */
 public class A391445 extends Sequence1 {

@@ -6,7 +6,7 @@ package irvine.oeis.a203;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A203799  G.f.: Sum_{n&gt;=0} (n-2*x)^n * x^n / (1 + n*x - 2*x^2)^n.
+ * A203799 G.f.: Sum_{n&gt;=0} (n-2*x)^n * x^n / (1 + n*x - 2*x^2)^n.
  * @author Georg Fischer
  */
 public class A203799 extends HolonomicRecurrence {

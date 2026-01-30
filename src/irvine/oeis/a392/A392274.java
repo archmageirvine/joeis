@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392274 Number of length n words over the alphabet [5] such that any prefix satisfies #1 &gt;= #2, #1 &gt;= #3, #2 &gt;= #4, #3 &gt;= #5, and #4 &gt;= #5, where #i is the number of occurrences of the letter i.
+ * A392274 Number of length n words over the alphabet [5] such that any prefix satisfies c(1) &gt;= c(2), c(1) &gt;= c(3), c(2) &gt;= c(4), c(3) &gt;= c(5), and c(4) &gt;= c(5), where c(i) is the number of occurrences of the letter i.
  * @author Sean A. Irvine
  */
 public class A392274 extends Sequence0 {

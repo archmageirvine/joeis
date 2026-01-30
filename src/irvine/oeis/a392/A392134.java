@@ -5,7 +5,7 @@ import irvine.oeis.a052.A052486;
 import irvine.oeis.a391.A391115;
 
 /**
- * A392134 allocated for Michael De Vlieger.
+ * A392134 Achilles numbers that are neither 4-free nor 4-full.
  * @author Sean A. Irvine
  */
 public class A392134 extends IntersectionSequence {

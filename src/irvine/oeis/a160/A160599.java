@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A160599 Composite numbers n for which n - phi(n) divides n-1.
+ * A160599 Composite numbers k for which k - phi(k) divides k-1.
  * @author Sean A. Irvine
  */
 public class A160599 extends Sequence1 {

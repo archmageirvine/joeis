@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A177089 Numbers n &gt;= 0 such that n^3-n-1 is not prime.
+ * A177089 Numbers k &gt;= 0 such that k^3-k-1 is not prime.
  * @author Georg Fischer
  */
 public class A177089 extends FilterNumberSequence {

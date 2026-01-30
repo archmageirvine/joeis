@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391618 allocated for Aitzaz Imtiaz.
+ * A391618 Chebyshev distance from n to the origin in a square spiral of positive integers and 1 at the origin.
  * @author Sean A. Irvine
  */
 public class A391618 extends Sequence1 {

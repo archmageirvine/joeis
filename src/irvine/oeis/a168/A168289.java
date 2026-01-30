@@ -7,7 +7,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A168289 T(n,k) = 4*A046802(n+1,k+1) - 3*A007318(n,k), triangle read by rows (0 &lt;= k &lt;= n).
+ * A168289 T(n,k) = 4*A046802(n,k) - 3*A007318(n,k), triangle read by rows (0 &lt;= k &lt;= n).
  * @author Georg Fischer
  */
 public class A168289 extends LambdaTriangle {

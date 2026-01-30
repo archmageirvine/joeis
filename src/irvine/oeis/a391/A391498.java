@@ -14,7 +14,7 @@ import irvine.util.string.StringUtils;
 import jmason.poly.CoordSet2T;
 
 /**
- * A391498 allocated for Janaka Rodrigo.
+ * A391498 a(n) is the number of five element sets of distinct integer-sided trapezoids whose base angles are 60 degrees that fill an equilateral triangular grid of side n units.
  * @author Sean A. Irvine
  */
 public class A391498 extends AbstractSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A083418 Smallest positive Integer m such that m+i^2=0 mod p_i (i-th prime) for 1&lt;=i&lt;=n.
+ * A083418 Smallest positive integer m such that m+i^2=0 mod p_i (i-th prime) for 1&lt;=i&lt;=n.
  * @author Sean A. Irvine
  */
 public class A083418 extends Sequence1 {

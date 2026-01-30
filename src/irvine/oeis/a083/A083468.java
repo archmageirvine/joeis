@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083468 Smallest multiple of n which is the reverse concatenation of n consecutive numbers.0 if no such number exists.
+ * A083468 Smallest multiple of n which is the reverse concatenation of n consecutive numbers; or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A083468 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A177076 Primes of the form n^5-n^3-2*n^2+1.
+ * A177076 Primes of the form k^5 - k^3 - 2*k^2 + 1.
  * @author Georg Fischer
  */
 public class A177076 extends PrimeSubsequence {

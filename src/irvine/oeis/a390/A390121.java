@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390121 allocated for Geoffrey Critzer.
+ * A390121 Irregular triangular array read by rows: T(n,k) is the number of compatible pairs (f,g) of functions from [n] into [n] such that the integer partition induced by f and g is the k-th partition in the canonical (reverse lexicographic) ordering of the partitions, n&gt;=0, 1&lt;=k&lt;=A000041(n).
  * @author Sean A. Irvine
  */
 public class A390121 extends Sequence0 {

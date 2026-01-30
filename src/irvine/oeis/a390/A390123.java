@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390123 allocated for Lucca B. Matias.
+ * A390123 Even integers x such that x + sqrt(y) = sqrt(x || y), where || denotes decimal concatenation and y is a perfect square.
  * @author Sean A. Irvine
  */
 public class A390123 extends Sequence1 {

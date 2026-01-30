@@ -5,7 +5,7 @@ import java.util.Map;
 import irvine.math.z.Z;
 
 /**
- * A179407 Values x for records of minima of positive distance d between a fifth power of positive integer x and a square of integer y such d = x^5 - y^2 (x != k^2 and y != k^5).
+ * A179407 Values x corresponding to the records d in A179406.
  * @author Sean A. Irvine
  */
 public class A179407 extends A179406 {

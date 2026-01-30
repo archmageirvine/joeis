@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003072;
 
 /**
- * A389852 allocated for Zhining Yang.
+ * A389852 Least positive integer d such that n + d^3 is the sum of 3 positive cubes.
  * @author Sean A. Irvine
  */
 public class A389852 extends Sequence1 {

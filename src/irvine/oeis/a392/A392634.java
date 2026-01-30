@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a020.A020882;
 
 /**
- * A392634 allocated for Robert Israel.
+ * A392634 Array listed by rows: Pythagorean triples a &lt; b &lt; c with inradius r such that a*b*c*r - (a+b+c+r) and a*b*c*r + (a+b+c+r) are both prime, sorted first by increasing hypotenuse c and then by the even term.
  * @author Sean A. Irvine
  */
 public class A392634 extends A020882 {

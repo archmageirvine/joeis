@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A177091 Numbers n such that n^4-n-1 is not prime.
+ * A177091 Numbers k such that k^4-k-1 is composite.
  * @author Georg Fischer
  */
 public class A177091 extends FilterNumberSequence {

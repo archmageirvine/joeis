@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083437.
+ * A389685 a(n) is the unique nonnegative integer whose binary expansion is the parity sequence of the Collatz orbit of n, interpreted through a particular conjugacy (see Comments).
  * @author Sean A. Irvine
  */
 public class A389685 extends Sequence1 {

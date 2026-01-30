@@ -7,7 +7,7 @@ import irvine.oeis.a143.A143512;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A392778 allocated for Frank M Jackson.
+ * A392778 Practical numbers of the form 2*f where f is a product of multiples of Fermat primes (A143512).
  * @author Sean A. Irvine
  */
 public class A392778 extends FilterSequence {

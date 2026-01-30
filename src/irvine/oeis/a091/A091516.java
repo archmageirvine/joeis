@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A091516 Primes of the form 4^n - 2^(n+1) - 1.
+ * A091516 Primes of the form 4^k - 2^(k+1) - 1.
  * @author Georg Fischer
  */
 public class A091516 extends FilterSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002202;
 
 /**
- * A392633 allocated for Jud McCranie.
+ * A392633 Totient numbers where a record gap appears in the list (A002202).
  * @author Sean A. Irvine
  */
 public class A392633 extends A002202 {

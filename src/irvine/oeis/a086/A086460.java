@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A086460 Square array read by antidiagonals: T(n,k)=nk+0^n.
+ * A086460 Square array read by antidiagonals: A(n, k) = n*k + 0^k.
  * @author Georg Fischer
  */
 public class A086460 extends UpperLeftTriangle {

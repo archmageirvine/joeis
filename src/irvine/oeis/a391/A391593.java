@@ -4,7 +4,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.oeis.FilterSequence;
 
 /**
- * A391593 allocated for Michael De Vlieger.
+ * A391593 Cubefull numbers that are neither biquadratefree nor biquadratefull.
  * @author Sean A. Irvine
  */
 public class A391593 extends FilterSequence {

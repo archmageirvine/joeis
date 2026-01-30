@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A390906 allocated for Artur Jasinski.
+ * A390906 Decimal expansion of Mahler measure for polynomial x^6 - x^5 - x^3 + x^2 + 1.
  * @author Sean A. Irvine
  */
 public class A390906 extends PolynomialRootExpansionSequence {

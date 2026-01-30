@@ -4,7 +4,7 @@ package irvine.oeis.a392;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A392917 Name?
+ * A392917 Expansion of e.g.f. 1/(1 + LambertW(x*log(1-x)^3)).
  * @author Georg Fischer
  */
 public class A392917 extends PolynomialFieldSequence {

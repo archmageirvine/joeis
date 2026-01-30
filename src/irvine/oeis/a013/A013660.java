@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A013660 Elementary catastrophes on n-dimensional manifold (the next term is infinite).
+ * A013660 Number of elementary catastrophes on n-dimensional manifold (the next term is infinite).
  * @author Sean A. Irvine
  */
 public class A013660 extends Sequence1 {

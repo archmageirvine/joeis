@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392730 allocated for Ctibor O. Zizka.
+ * A392730 Odd squares k such that k has an odd number of digits and the sum of digits of k is an odd number.
  * @author Sean A. Irvine
  */
 public class A392730 extends Sequence1 {

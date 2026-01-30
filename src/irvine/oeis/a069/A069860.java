@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.UnionSequence;
 
 /**
- * A069860 Numbers n that divide the concatenation of n+1 and n+2.
+ * A069860 Numbers m that divide the concatenation of m+1 and m+2.
  * @author Sean A. Irvine
  */
 public class A069860 extends UnionSequence {

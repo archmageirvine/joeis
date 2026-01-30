@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a173.A173143;
 
 /**
- * A392801 allocated for Gonzalo Mart\u00ednez.
+ * A392801 Integers k such that the sum of the first k squarefree numbers is a square.
  * @author Sean A. Irvine
  */
 public class A392801 extends FilterPositionSequence {

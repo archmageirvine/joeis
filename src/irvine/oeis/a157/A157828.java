@@ -4,7 +4,7 @@ package irvine.oeis.a157;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A157828 Coefficients of polynomial expansion of Golay C_12 enumeration Polynomial: p(x)=24 + 440*x^3 + 264*x^6 + x^12; q(x)=x^12*p(1/x).
+ * A157828 Expansion of 1/q(x) where q(x)=x^12*p(1/x) and p(x)=24 + 440*x^3 + 264*x^6 + x^12.
  * @author Georg Fischer
  */
 public class A157828 extends GeneratingFunctionSequence {

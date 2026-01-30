@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A050705 Composite number such that when sum of its prime factors is added or subtracted becomes prime.
+ * A050705 Composite number such that when the sum of its prime factors is added or subtracted it results in a prime.
  * @author Sean A. Irvine
  */
 public class A050705 extends Sequence1 {

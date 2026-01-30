@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A003706 E.g.f. sin(tan(x)), zeros omitted.
+ * A003706 Expansion of e.g.f. sin(tan(x)), zeros omitted.
  * @author Sean A. Irvine
  */
 public class A003706 extends Sequence0 {

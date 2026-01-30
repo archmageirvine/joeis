@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A083462 Smallest palindrome k such that k - n is a distinct power of 2, i.e., a power of 2 that has not arisen earlier.
+ * A083462 Smallest palindrome k such that k - n is a distinct power of 2; i.e., a power of 2 that has not arisen earlier.
  * @author Sean A. Irvine
  */
 public class A083462 extends Sequence0 {

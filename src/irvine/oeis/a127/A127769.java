@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A127769 a(n)=3*C(4n-2,2n)/(2n+1)-2*0^n.
+ * A127769 a(n) = 3*C(4*n-2,2*n)/(2*n+1) - 2*0^n.
  * @author Georg Fischer
  */
 public class A127769 extends LambdaSequence {

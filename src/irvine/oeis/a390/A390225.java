@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390225 allocated for Joshua B. Weinstein.
+ * A390225 Positive numbers whose base-3, base-5, and base-7 expansions have the same digit sum.
  * @author Sean A. Irvine
  */
 public class A390225 extends Sequence1 {

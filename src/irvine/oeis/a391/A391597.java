@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a067.A067274;
 
 /**
- * A391597 allocated for Lorenzo Sauras Altuzarra.
+ * A391597 a(n) is the number of quadratic polynomials with coefficients in {-n, ..., n}, positive leading coefficient, and having two integer roots.
  * @author Sean A. Irvine
  */
 public class A391597 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392010 allocated for Scott R. Shannon.
+ * A392010 The smallest nonnegative number k such that n! does not contain k as a substring.
  * @author Sean A. Irvine
  */
 public class A392010 extends Sequence0 {

@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A179406 Record minima of the positive distance d between the fifth power of a positive integer x and the square of an integer y such that d = x^5 - y^2 (x != k^2 and y != k^5).
+ * A179406 Conjectured records d such that for all nonsquare x &gt; A179407(n), all positive differences x^5-y^2 exceed d.
  * @author Sean A. Irvine
  */
 public class A179406 extends Sequence1 {

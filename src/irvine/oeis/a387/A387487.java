@@ -1,15 +1,31 @@
 package irvine.oeis.a387;
 
-import irvine.oeis.FiniteSequence;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence2;
 
 /**
- * A387487 Numbers in the ring of integers Z such that k * k = k, the idempotents of Z.
- * @author Georg Fischer
+ * A083468.
+ * @author Sean A. Irvine
  */
-public class A387487 extends FiniteSequence {
+public class A387487 extends Sequence2 {
 
-  /** Construct the sequence. */
-  public A387487() {
-    super(1, FINITE, "0,1");
+  private final StringBuilder mS = new StringBuilder();
+  private int mN = 0;
+  private int mK = 0;
+
+  @Override
+  public Z next() {
+    ++mN;
+    if (mS.length() < mN + 100) { // 100 digits way more than we will match
+      for (int j = 0; j < 100; ++j) { // Add 100 new numbers (simply to avoid doing this too often)
+        mS.append(++mK);
+      }
+    }
+    long matches = 0;
+    int k = -1; // position in mS
+    while (mS.charAt(++k) == mS.charAt(mN + k)) {
+      ++matches;
+    }
+    return Z.valueOf(matches);
   }
 }

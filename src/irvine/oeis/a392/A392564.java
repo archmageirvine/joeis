@@ -4,7 +4,7 @@ import irvine.oeis.a332.A332785;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A392564 allocated for Michael De Vlieger.
+ * A392564 Cubes of numbers that are neither squarefree nor squareful.
  * @author Sean A. Irvine
  */
 public class A392564 extends SimpleTransformSequence {

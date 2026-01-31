@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392380 allocated for Felix Huber.
+ * A392380 Positive integers k whose multiset of prime factors can be partitioned into three nonempty subsets whose sums form a nondegenerate triangle.
  * @author Sean A. Irvine
  */
 public class A392380 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.a085.A085524;
 import irvine.oeis.a085.A085528;
 
 /**
- * A165156 n^(2*n-1)-(2*n-1)^n.
+ * A165156 a(n) = n^(2*n-1)-(2*n-1)^n.
  * @author Georg Fischer
  */
 public class A165156 extends AbstractSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A171630 10^n*(5+3*10^n)+3.
+ * A171630 a(n) = 10^n*(5+3*10^n)+3.
  * @author Georg Fischer
  */
 public class A171630 extends LambdaSequence {

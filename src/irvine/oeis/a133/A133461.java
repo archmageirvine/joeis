@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000302;
 import irvine.oeis.a060.A060722;
 
 /**
- * A133461 4^n*3^(n^2).
+ * A133461 a(n) = 4^n*3^(n^2).
  * @author Georg Fischer
  */
 public class A133461 extends Sequence0 {

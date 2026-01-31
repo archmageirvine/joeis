@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A256512 n*(1+(2*n)^n).
+ * A256512 a(n) = n*(1+(2*n)^n).
  * @author Georg Fischer
  */
 public class A256512 extends LambdaSequence {

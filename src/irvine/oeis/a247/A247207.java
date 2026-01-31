@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A247207 4^(2^n) + 3^(2^n) + 2^(2^n) + 1.
+ * A247207 a(n) = 4^(2^n) + 3^(2^n) + 2^(2^n) + 1.
  * a(n)=1+sum(k=2,4,k^(2^n))
  * @author Georg Fischer
  */

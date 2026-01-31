@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A120802 5^(n^2)+3^n.
+ * A120802 a(n) = 5^(n^2)+3^n.
  * a(n)=5^(n^2)+3^n
  * @author Georg Fischer
  */

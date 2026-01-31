@@ -5,7 +5,7 @@ package irvine.oeis.a196;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A196411 n! - n^4.
+ * A196411 a(n) = n! - n^4.
  * @author Georg Fischer
  */
 public class A196411 extends HolonomicRecurrence {

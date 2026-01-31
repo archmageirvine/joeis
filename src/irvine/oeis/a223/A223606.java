@@ -7,7 +7,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a033.A033880;
 
 /**
- * A223606 Numbers n whose deficiency is 22: sigma(n) - 2*n = -22.
+ * A223606 Numbers k whose deficiency is 22: sigma(k) - 2*k = -22.
  * @author Georg Fischer
  */
 public class A223606 extends FilterNumberSequence {

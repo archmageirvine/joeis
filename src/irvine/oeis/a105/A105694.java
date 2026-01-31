@@ -4,7 +4,7 @@ package irvine.oeis.a105;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A105694 10^n-10^(n-2).
+ * A105694 a(n) = 10^n-10^(n-2).
  * @author Georg Fischer
  */
 public class A105694 extends GeneratingFunctionSequence {

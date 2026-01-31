@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A125048 2^(10n) - 10^(3n).
+ * A125048 a(n) = 2^(10n) - 10^(3n).
  * a(n)=2^(10*n)-10^(3*n)
  * @author Georg Fischer
  */

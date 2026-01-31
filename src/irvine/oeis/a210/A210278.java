@@ -5,7 +5,7 @@ package irvine.oeis.a210;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A210278 (5n)!/5^n.
+ * A210278 a(n) = (5n)!/5^n.
  * @author Georg Fischer
  */
 public class A210278 extends HolonomicRecurrence {

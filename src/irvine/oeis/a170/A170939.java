@@ -3,7 +3,7 @@ package irvine.oeis.a170;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A170939 4^n-2^n+2.
+ * A170939 a(n) = 4^n-2^n+2.
  * @author Sean A. Irvine
  */
 public class A170939 extends LinearRecurrence {

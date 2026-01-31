@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A234811 (6^n - 1)^n.
+ * A234811 a(n) = (6^n - 1)^n.
  * a(n)=(6^n-1)^n
  * @author Georg Fischer
  */

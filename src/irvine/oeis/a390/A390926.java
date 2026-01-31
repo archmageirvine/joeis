@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A083468.
+ * A390926 Square array read by upward diagonals: A(n,k) is the position of the k-th occurrence of the decimal string n in the infinite Champernowne word 123456789101112... (A033307).
  * @author Sean A. Irvine
  */
 public class A390926 extends Sequence1 {

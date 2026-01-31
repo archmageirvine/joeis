@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A168122 n^2*(n^4+1)/2.
+ * A168122 a(n) = n^2*(n^4+1)/2.
  * @author Sean A. Irvine
  */
 public class A168122 extends LinearRecurrence {

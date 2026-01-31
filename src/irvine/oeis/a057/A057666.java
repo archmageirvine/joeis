@@ -5,7 +5,7 @@ package irvine.oeis.a057;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A057666 n*(n+1)^2*(n+2)*(n+3)^2*(n+4).
+ * A057666 a(n) = n*(n+1)^2*(n+2)*(n+3)^2*(n+4).
  * @author Georg Fischer
  */
 public class A057666 extends HolonomicRecurrence {

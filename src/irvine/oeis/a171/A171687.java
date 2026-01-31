@@ -4,7 +4,7 @@ package irvine.oeis.a171;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A171687 (10^n)^4+(10^n+1)^4.
+ * A171687 a(n) = (10^n)^4+(10^n+1)^4.
  * @author Georg Fischer
  */
 public class A171687 extends HolonomicRecurrence {

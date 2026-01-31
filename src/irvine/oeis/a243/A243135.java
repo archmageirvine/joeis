@@ -6,7 +6,7 @@ package irvine.oeis.a243;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A243135 256*n^9 - 576*n^7 + 432*n^5 - 120*n^3 + 9*n.
+ * A243135 a(n) = 256*n^9 - 576*n^7 + 432*n^5 - 120*n^3 + 9*n.
  * @author Georg Fischer
  */
 public class A243135 extends HolonomicRecurrence {

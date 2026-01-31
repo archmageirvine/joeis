@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A130885 3n^3 - 2n^2 + n - 1.
+ * A130885 a(n) = 3n^3 - 2n^2 + n - 1.
  * @author Sean A. Irvine
  */
 public class A130885 extends LinearRecurrence {

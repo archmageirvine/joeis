@@ -5,7 +5,7 @@ package irvine.oeis.a210;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A210280 (7n)!/7^n.
+ * A210280 a(n) = (7n)!/7^n.
  * @author Georg Fischer
  */
 public class A210280 extends HolonomicRecurrence {

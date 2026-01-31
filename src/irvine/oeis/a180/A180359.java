@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A180359 n^9+9n.
+ * A180359 a(n) = n^9+9n.
  * @author Sean A. Irvine
  */
 public class A180359 extends LinearRecurrence {

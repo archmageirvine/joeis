@@ -5,7 +5,7 @@ package irvine.oeis.a215;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A215646 n * (11*n^2 + 6*n + 1) / 6.
+ * A215646 a(n) = n * (11*n^2 + 6*n + 1) / 6.
  * @author Georg Fischer
  */
 public class A215646 extends HolonomicRecurrence {

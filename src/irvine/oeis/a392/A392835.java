@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392835 allocated for Pang Ern.
+ * A392835 Number of ordered pairs (i,j) with 1&lt;=i,j&lt;=n such that gcd(i+j,i*j) = gcd(i,j).
  * @author Sean A. Irvine
  */
 public class A392835 extends Sequence1 {

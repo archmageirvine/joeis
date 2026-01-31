@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A083476 Indices of terms of A083475 with a zero entry.
+ * A083476 Positions of 0's in A083475.
  * @author Sean A. Irvine
  */
 public class A083476 extends FilterPositionSequence {

@@ -21,7 +21,7 @@ public class A036057 extends Sequence1 {
   private static final double TOLERANCE = 1E-7;
 
   /** Structure for entries in hash table. */
-  private static class Node {
+  protected static class Node {
     double mValue;
     int mUsed;
     final String mDesc;
@@ -38,6 +38,14 @@ public class A036057 extends Sequence1 {
     @Override
     public int hashCode() {
       return mUsed ^ (int) (mValue * 1000.0);
+    }
+
+    /**
+     * Return the condensed description.
+     * @return description
+     */
+    public String getDesc() {
+      return mDesc;
     }
   }
 
@@ -188,7 +196,7 @@ public class A036057 extends Sequence1 {
     }
   }
 
-  private boolean isFriedman(final int n) {
+  protected boolean isFriedman(final int n) {
     //System.out.println("trying: " + n);
     final String s = String.valueOf(n);
     final String[] digits = new String[s.length()];

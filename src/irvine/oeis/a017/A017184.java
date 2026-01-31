@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A017184 (9n+1)^12.
+ * A017184 a(n) = (9n+1)^12.
  * @author Sean A. Irvine
  */
 public class A017184 extends Sequence0 {

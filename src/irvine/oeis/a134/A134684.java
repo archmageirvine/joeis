@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A134684 n^(n+9).
+ * A134684 a(n) = n^(n+9).
  * a(n) = n^(n+9);
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A216147 2*n^n + 1.
+ * A216147 a(n) = 2*n^n + 1.
  * @author Georg Fischer
  */
 public class A216147 extends LambdaSequence {

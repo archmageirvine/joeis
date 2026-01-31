@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A085532 (2n)^(n+1).
+ * A085532 a(n) = (2n)^(n+1).
  * @author Georg Fischer
  */
 public class A085532 extends Sequence0 {

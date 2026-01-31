@@ -4,7 +4,7 @@ package irvine.oeis.a229;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A229788 6*2^n - n^2 - 5*n - 6.
+ * A229788 a(n) = 6*2^n - n^2 - 5*n - 6.
  * @author Georg Fischer
  */
 public class A229788 extends GeneratingFunctionSequence {

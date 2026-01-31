@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A392846 allocated for Stefano Spezia.
+ * A392846 Decimal expansion of e^(9/2).
  * @author Sean A. Irvine
  */
 public class A392846 extends DecimalExpansionSequence {

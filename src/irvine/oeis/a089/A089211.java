@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A089211 10*n^n+(n-1).
+ * A089211 a(n) = 10*n^n+(n-1).
  * a(n)=10n^n+(n-1)
  * @author Georg Fischer
  */

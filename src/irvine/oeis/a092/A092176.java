@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000079;
 import irvine.oeis.a067.A067076;
 
 /**
- * A092176 A067076 + A000079/2.
+ * A092176 a(n) = A067076(n) + A000079(n)/2 with A067076(0)=0.
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A172047 n*(n+1)*(15*n^2-n-8)/12.
+ * A172047 a(n) = n*(n+1)*(15*n^2-n-8)/12.
  * @author Sean A. Irvine
  */
 public class A172047 extends LinearRecurrence {

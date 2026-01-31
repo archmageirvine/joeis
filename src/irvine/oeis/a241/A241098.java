@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A241098 (4^n - 1)^n.
+ * A241098 a(n) = (4^n - 1)^n.
  * @author Georg Fischer
  */
 public class A241098 extends LambdaSequence {

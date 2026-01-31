@@ -3,6 +3,7 @@ package irvine.oeis.gf;
 import irvine.math.q.Q;
 import irvine.math.series.Series;
 import irvine.math.series.SeriesParser;
+import irvine.math.series.SeriesRing;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
@@ -13,6 +14,8 @@ import irvine.oeis.DirectSequence;
  */
 public class GfSequence extends AbstractSequence implements DirectSequence {
 
+  // Make ring easily available to subclasses
+  protected static SeriesRing<Q> SQ = SeriesRing.SQ;
   private int mN;
   private final int mStep;
   private final Series<Q> mSeries;

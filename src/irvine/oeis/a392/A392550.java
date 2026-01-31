@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392550 allocated for Juri-Stepan Gerasimov.
+ * A392550 Smallest k for which the number of divisors d of k such that tau(d*k) = tau(k/d + d) is equal to n, where tau = A000005.
  * @author Sean A. Irvine
  */
 public class A392550 extends Sequence0 {

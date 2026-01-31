@@ -5,7 +5,7 @@ package irvine.oeis.a210;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A210281 (8n)!/8^n.
+ * A210281 a(n) = (8n)!/8^n.
  * @author Georg Fischer
  */
 public class A210281 extends HolonomicRecurrence {

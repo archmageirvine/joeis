@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A120840 5^(n^2)-3^(n^2).
+ * A120840 a(n) = 5^(n^2)-3^(n^2).
  * @author Georg Fischer
  */
 public class A120840 extends Sequence0 {

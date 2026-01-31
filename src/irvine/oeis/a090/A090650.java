@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A090650 n^(n+6).
+ * A090650 a(n) = n^(n+6).
  * a(n)=n^(n+6)
  * @author Georg Fischer
  */

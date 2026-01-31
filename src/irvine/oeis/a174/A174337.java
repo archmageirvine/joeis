@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A174337 94*n^2.
+ * A174337 a(n) = 94*n^2.
  * @author Sean A. Irvine
  */
 public class A174337 extends LinearRecurrence {

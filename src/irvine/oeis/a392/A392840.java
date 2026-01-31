@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392840 allocated for Stefano Spezia.
+ * A392840 a(n) is the permanent of the n X n matrix whose generic element is given by F(2*i-1)*L(2*i) if i = j and F(2*j)*L(2*j-1) if i != j with 1 &lt;= i,j &lt;= n, where F(n) = A000045(n) and L(n) = A000032(n).
  * @author Sean A. Irvine
  */
 public class A392840 extends Sequence0 {

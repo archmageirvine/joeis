@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A154682 (2n-1)^(2n+1) + (2n+1)^(2n-1).
+ * A154682 a(n) = (2n-1)^(2n+1) + (2n+1)^(2n-1).
  * a(n) = (2*n-1)^(2*n+1) + (2*n+1)^(2*n-1); n>=0.
  * @author Georg Fischer
  */

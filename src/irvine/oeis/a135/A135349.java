@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 // DO NOT EDIT here!
 
 /**
- * A135349 6^n*5^(n^2).
+ * A135349 a(n) = 6^n*5^(n^2).
  * @author Georg Fischer
  */
 public class A135349 extends A135292 {

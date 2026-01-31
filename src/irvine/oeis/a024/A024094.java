@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001014;
 
 /**
- * A024094 8^n-n^6.
+ * A024094 a(n) = 8^n-n^6.
  * @author Sean A. Irvine
  */
 public class A024094 extends A001014 {

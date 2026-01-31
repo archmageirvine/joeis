@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A155595 11^n+2^n-1.
+ * A155595 a(n) = 11^n+2^n-1.
  * @author Sean A. Irvine
  */
 public class A155595 extends LinearRecurrence {

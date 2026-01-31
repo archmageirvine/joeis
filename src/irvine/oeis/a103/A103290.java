@@ -6,7 +6,7 @@ package irvine.oeis.a103;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A103290 n*(n-1)*(n^2-n+4)/6.
+ * A103290 a(n) = n*(n-1)*(n^2-n+4)/6.
  * @author Georg Fischer
  */
 public class A103290 extends GeneratingFunctionSequence {

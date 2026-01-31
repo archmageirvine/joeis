@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A392883 allocated for Claude H. R. Dequatre.
+ * A392883 Decimal expansion of e/(Pi*(Pi-e)).
  * @author Sean A. Irvine
  */
 public class A392883 extends DecimalExpansionSequence {

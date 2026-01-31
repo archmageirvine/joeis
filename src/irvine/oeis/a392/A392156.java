@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A392156 allocated for Felix Huber.
+ * A392156 a(n) is the number of distinct primes obtainable by inserting exactly one decimal digit into the decimal representation of prime(n) (at any position, including before the first digit or after the last), with the resulting number required to have no leading zero.
  * @author Sean A. Irvine
  */
 public class A392156 extends A000040 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A210846 (5^(3^(n-1)) + 1)/(2*3^n).
+ * A210846 a(n) = (5^(3^(n-1)) + 1)/(2*3^n).
  * @author Georg Fischer
  */
 public class A210846 extends LambdaSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A109546 (4^(n+1)-(-1)^n 9 )/5.
+ * A109546 a(n) = (4^(n+1)-(-1)^n 9 )/5.
  * @author Georg Fischer
  */
 public class A109546 extends Sequence1 {

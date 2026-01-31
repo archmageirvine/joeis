@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000290;
 
 /**
- * A024142 12^n-n^2.
+ * A024142 a(n) = 12^n-n^2.
  * @author Sean A. Irvine
  */
 public class A024142 extends A000290 {

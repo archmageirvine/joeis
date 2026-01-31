@@ -4,7 +4,7 @@ package irvine.oeis.a073;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A073351 n^2(n+1)(2n+1)^2(7n+1)/36.
+ * A073351 a(n) = n^2(n+1)(2n+1)^2(7n+1)/36.
  * @author Georg Fischer
  */
 public class A073351 extends GeneratingFunctionSequence {

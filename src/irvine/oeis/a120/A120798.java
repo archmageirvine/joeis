@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A120798 3^(n^2)+2^n.
+ * A120798 a(n) = 3^(n^2)+2^n.
  * @author Georg Fischer
  */
 public class A120798 extends Sequence0 {

@@ -4,7 +4,7 @@ package irvine.oeis.a110;
 import irvine.oeis.a109.A109345;
 
 /**
- * A110147 10^((n^2-n)/2).
+ * A110147 a(n) = 10^((n^2-n)/2).
  * @author Georg Fischer
  */
 public class A110147 extends A109345 {

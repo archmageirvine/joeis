@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A106842 (1 + n + n^2)^n.
+ * A106842 a(n) = (1 + n + n^2)^n.
  * a(n)=(1+n+n^2)^n
  * @author Georg Fischer
  */

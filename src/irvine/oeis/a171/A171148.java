@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A171148 3+10^n+3*100^n.
+ * A171148 a(n) = 3+10^n+3*100^n.
  * @author Georg Fischer
  */
 public class A171148 extends LambdaSequence {

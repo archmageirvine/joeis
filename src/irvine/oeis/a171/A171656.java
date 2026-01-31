@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A171656 10^n*(7+3*10^n)+3.
+ * A171656 a(n) = 10^n*(7+3*10^n)+3.
  * a(n)=10^n*(7+3*10^n)+3
  * @author Georg Fischer
  */

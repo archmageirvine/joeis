@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083486 Triangle read by rows in which the n-th row contains the smallest set of n distinct numbers beginning with n with a product which is a square.
+ * A083486 Triangle read by rows in which the n-th row contains the smallest set of n increasing numbers beginning with n with a product which is a square.
  * @author Sean A. Irvine
  */
 public class A083486 extends Sequence1 {

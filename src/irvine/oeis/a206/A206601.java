@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a047.A047656;
 
 /**
- * A206601 3^(n(n+1)/2) - 1.
+ * A206601 a(n) = 3^(n(n+1)/2) - 1.
  * @author Georg Fischer
  */
 public class A206601 extends Sequence0 {

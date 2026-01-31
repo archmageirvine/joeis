@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A237419 4^(n+1)^2 - 3.
+ * A237419 a(n) = 4^(n+1)^2 - 3.
  * a(n)=(4^(n+1)^2-3)
  * @author Georg Fischer
  */

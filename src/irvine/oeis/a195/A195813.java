@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A195813 Primes of the form 3^n - 2^n + n^2 - n^3.
+ * A195813 Primes of the form 3^k - 2^k + k^2 - k^3.
  * @author Georg Fischer
  */
 public class A195813 extends FilterSequence {

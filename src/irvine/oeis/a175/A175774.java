@@ -4,7 +4,7 @@ package irvine.oeis.a175;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A175774 7*(10^n-5).
+ * A175774 a(n) = 7*(10^n-5).
  * @author Georg Fischer
  */
 public class A175774 extends GeneratingFunctionSequence {

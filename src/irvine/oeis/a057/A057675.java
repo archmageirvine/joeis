@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A057675 1 - (5/6)*n + (5/2)*n^2 + (10/3)*n^3 + n^4.
+ * A057675 a(n) = 1 - (5/6)*n + (5/2)*n^2 + (10/3)*n^3 + n^4.
  * @author Sean A. Irvine
  */
 public class A057675 extends LinearRecurrence {

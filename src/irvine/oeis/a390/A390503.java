@@ -5,7 +5,7 @@ import java.util.Arrays;
 import irvine.oeis.a392.A392989;
 
 /**
- * A083468.
+ * A390503 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A390503 extends A392989 {

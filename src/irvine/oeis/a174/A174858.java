@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a022.A022004;
 
 /**
- * A174858 Primes p of a prime triple (p,p+2,p+6) such that the concatenation p//(p+2)//(p+6) is prime.
+ * A174858 Primes p such that p + 2, p + 6, and the concatenation p (p+2) (p+6) is prime.
  * @author Sean A. Irvine
  */
 public class A174858 extends FilterSequence {

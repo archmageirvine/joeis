@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A119737 a(n) = Sum{k=1..n} Fibonacci(floor(n/k)).
+ * A119737 a(n) = Sum_{k=1..n} Fibonacci(floor(n/k)).
  * @author Georg Fischer
  */
 public class A119737 extends LambdaSequence {

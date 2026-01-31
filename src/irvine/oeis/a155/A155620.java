@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A155620 9^n+4^n-1.
+ * A155620 a(n) = 9^n+4^n-1.
  * @author Sean A. Irvine
  */
 public class A155620 extends LinearRecurrence {

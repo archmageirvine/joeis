@@ -12,7 +12,7 @@ public final class ConcreteTrapezoid {
   private ConcreteTrapezoid() { }
 
   static class Triangle {
-    final int mX, mY, mZ;  // z = 0 (▲), 1 (▼)
+    final int mX, mY, mZ;  // z = 0 (up), 1 (down)
 
     Triangle(final int x, final int y, final int z) {
       mX = x;
@@ -22,7 +22,7 @@ public final class ConcreteTrapezoid {
 
     @Override
     public String toString() {
-      return (mZ == 0 ? "▲" : "▼") + "(" + mX + "," + mY + ")";
+      return (mZ == 0 ? "\u25B2" : "\u25BC") + "(" + mX + "," + mY + ")";
     }
   }
 
@@ -83,20 +83,20 @@ public final class ConcreteTrapezoid {
     final char[][][] grid = new char[h][w][2];
     for (int y = 0; y < h; ++y) {
       for (int x = 0; x < w; ++x) {
-        grid[y][x][0] = '·';
-        grid[y][x][1] = '·';
+        grid[y][x][0] = '\u00B7';
+        grid[y][x][1] = '\u00B7';
       }
     }
 
     for (final Triangle t : cells) {
       final int gx = t.mX - minX;
       final int gy = t.mY - minY;
-      grid[gy][gx][t.mZ] = t.mZ == 0 ? '▲' : '▼';
+      grid[gy][gx][t.mZ] = t.mZ == 0 ? '\u25B2' : '\u25BC';
     }
 
     for (int y = h - 1; y >= 0; --y) {
       final StringBuilder sb = new StringBuilder();
-      sb.append("·".repeat(y));
+      sb.append("\u00B7".repeat(y));
       for (int x = 0; x < w; ++x) {
         sb.append(grid[y][x][0]).append(grid[y][x][1]);
       }
@@ -111,7 +111,7 @@ public final class ConcreteTrapezoid {
     List<Triangle> rotated = shape;
     for (int r = 0; r < 6; ++r) {
       rotated = rotate60(rotated);
-      System.out.println("Rotated 60°:");
+      System.out.println("Rotated 60\u00B0:");
       dump(rotated);
     }
   }

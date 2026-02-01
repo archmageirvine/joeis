@@ -1,0 +1,28 @@
+package irvine.oeis.a083;
+
+import irvine.math.q.Q;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
+
+/**
+ * A036057.
+ * @author Sean A. Irvine
+ */
+public class A083514 extends Sequence1 {
+
+  private static final Q C = new Q(4, 3);
+  private Z mN = Z.valueOf(-2);
+
+  @Override
+  public Z next() {
+    mN = mN.add(3);
+    Q t = Q.valueOf(mN);
+    long cnt = 0;
+    do {
+      ++cnt;
+      t = C.multiply(t.ceiling());
+    } while (!t.isInteger() || t.toZ().compareTo(mN) < 0);
+    return Z.valueOf(cnt);
+  }
+}
+

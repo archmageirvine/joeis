@@ -2,23 +2,34 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence0;
 
 /**
  * A001850 Central Delannoy numbers: a(n) = Sum_{k=0..n} C(n,k)*C(n+k,k).
  * @author Sean A. Irvine
  */
-public class A001850 extends Sequence0 {
+public class A001850 extends Sequence0 implements DirectSequence {
 
-  private long mN = -1;
+  private int mN = -1;
 
   @Override
   public Z next() {
-    ++mN;
+    return a(++mN);
+  }
+
+  @Override
+  public Z a(final Z n) {
+    return a(n.intValueExact());
+  }
+
+  @Override
+  public Z a(final int n) {
     Z s = Z.ZERO;
-    for (long k = 0; k <= mN; ++k) {
-      s = s.add(Binomial.binomial(mN, k).multiply(Binomial.binomial(mN + k, k)));
+    for (int k = 0; k <= n; ++k) {
+      s = s.add(Binomial.binomial(n, k).multiply(Binomial.binomial(n + k, k)));
     }
     return s;
   }
+
 }

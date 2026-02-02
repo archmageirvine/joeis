@@ -6,6 +6,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.channels.Channels;
 
+import irvine.oeis.base.MorphismFixedPointSequence;
+import irvine.oeis.base.MorphismTransform;
+import irvine.oeis.triangle.DirectArray;
+import irvine.oeis.triangle.BaseTriangle;
+import irvine.oeis.triangle.Triangle;
+import irvine.oeis.triangle.UpperLeftTriangle;
 import irvine.util.string.Date;
 
 /**
@@ -14,7 +20,7 @@ import irvine.util.string.Date;
  * <ul>
  * <li>the deviations from the offsets in the OEIS</li>
  * <li>whether the sequence extends AbstractSequence</li>
- * <li>whether the sequence stille implements SequenceWithOffset, without extending AbstractSequence</li>
+ * <li>whether the sequence still implements SequenceWithOffset, without extending AbstractSequence</li>
  * </ul>
  * @author Georg Fischer
  */
@@ -50,8 +56,10 @@ public final class AbstractInspector {
     }
     if (fileName.matches("\\-\\-?h(elp)?")) {
       System.out.print("Usage: java irvine.oeis.AbstractInspector [mode [- | filename]]\n"
+          + "    mode = dirarr    : which sequences implement triangle.DirectArray\n"
           + "    mode = direct    : which sequences implement DirectSequence\n"
           + "    mode = finite    : check number of terms against OEIS data\n"
+          + "    mode = hasram    : which sequences extend triangle.Triangle with hasRAM()=true\n"
           + "    mode = morphism  : return the parameters of morphism related sequences\n"
           + "    mode = noabstract: which sequences do not extend AbstractSequence\n"
           + "    mode = offinspect: check getOffset against OEIS offsets\n"
@@ -85,14 +93,24 @@ public final class AbstractInspector {
               final Sequence seq = SequenceFactory.sequence(aNumber);
               if (false) {
 
+              } else if (mode.startsWith("dirarr")) {
+                if (seq instanceof DirectArray) {
+                  final AbstractSequence seq2 = (AbstractSequence) seq;
+                  final int seqOffset = seq2.getOffset();
+                  ++pass;
+                  System.out.println(aNumber + "\t" + seqOffset + "\t" + superClass);
+                } else {
+                  ++fail;
+                }
+
               } else if (mode.startsWith("direct")) {
                 if (seq instanceof DirectSequence) {
                   final AbstractSequence seq2 = (AbstractSequence) seq;
                   final int seqOffset = seq2.getOffset();
-                  ++fail;
+                  ++pass;
                   System.out.println(aNumber + "\t" + seqOffset + "\t" + superClass);
                 } else {
-                  ++pass;
+                  ++fail;
                 }
 
               } else if (mode.startsWith("finit")) {
@@ -109,23 +127,43 @@ public final class AbstractInspector {
                   ++miss;
                 }
 
-//              } else if (mode.startsWith("morph")) {
-//                if (seq instanceof MorphismTransform) { // must be tested first because it is a subclass of MorphismFixedPointSequence
-//                  final MorphismTransform seq2 = (MorphismTransform) seq;
-//                  System.out.println(aNumber + "\tmortra\t" + seq2.getOffset()
-//                      + "\tnew " + seq2.getSequenceName() + "()"
-//                      + "\t" + seq2.getStart()
-//                      + "\t" + seq2.getAnchor()
-//                      + "\t" + seq2.getMappings()
-//                      );
-//                } else if (seq instanceof MorphismFixedPointSequence) {
-//                  final MorphismFixedPointSequence seq2 = (MorphismFixedPointSequence) seq;
-//                  System.out.println(aNumber + "\tmorfps\t" + seq2.getOffset()
-//                      + "\t" + seq2.getStart()
-//                      + "\t" + seq2.getAnchor()
-//                      + "\t" + seq2.getMappings()
-//                      );
-//                }
+              } else if (mode.startsWith("hasram")) {
+                if (seq instanceof Triangle) {
+                  final Triangle seq2 = (Triangle) seq;
+                  if (seq2.hasRAM()) {
+                    ++pass;
+                    String method = "get";
+                    if (seq instanceof BaseTriangle) {
+                      method = "triangleElement";
+                    } else if (seq instanceof UpperLeftTriangle) {
+                      method = "matrixElement";
+                    } else {
+                    }
+                    System.out.println(aNumber + "\t" + method + "(\t" + superClass);
+                  }
+                } else {
+                  ++fail;
+                }
+
+              } else if (mode.startsWith("morph")) {
+                if (seq instanceof MorphismTransform) { // must be tested first because it is a subclass of MorphismFixedPointSequence
+                  final MorphismTransform seq2 = (MorphismTransform) seq;
+                  System.out.println(aNumber + "\tmortra\t" + seq2.getOffset() 
+                      + "\tnew " + seq2.getSequenceName() + "()"
+                      + "\t" + seq2.getStart() 
+                      + "\t" + seq2.getAnchor()
+                      + "\t" + seq2.getMappings()
+                      );
+                      ++pass;
+                } else if (seq instanceof MorphismFixedPointSequence) {
+                  final MorphismFixedPointSequence seq2 = (MorphismFixedPointSequence) seq;
+                  System.out.println(aNumber + "\tmorfps\t" + seq2.getOffset() 
+                      + "\t" + seq2.getStart() 
+                      + "\t" + seq2.getAnchor()
+                      + "\t" + seq2.getMappings()
+                      );
+                      ++pass;
+                }
 
               } else if (mode.startsWith("noabs")) {
                 if (!(seq instanceof AbstractSequence)) {
@@ -172,12 +210,21 @@ public final class AbstractInspector {
     // 2023-06-19      07:58:43        159501  Java classes =  43.8967 % out of        363355  OEIS sequences are implemented by jOEIS
     String subset = "";
     if (false) {
+    } else if (mode.startsWith("dirarr")) {
+      total -= pass;
+      subset = " implement triangle.DirectArray";
+    } else if (mode.startsWith("direct")) {
+      total -= pass;
+      subset = " implement DirectSequence";
     } else if (mode.startsWith("finit")) {
       subset = " with wrong size of FiniteSequence";
+    } else if (mode.startsWith("hasram")) {
+      total -= pass;
+      subset = " extend Triangle with hasRAM()";
     } else if (mode.startsWith("morph")) {
       return;
     } else if (mode.startsWith("noabs")) {
-      subset = " do not extend AbstractSequence";
+      subset = " do not extend AbstractSequence";;
     } else if (mode.startsWith("offin")) {
       total -= miss;
       subset = " with defined, but wrong offset";

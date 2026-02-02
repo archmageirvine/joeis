@@ -4,13 +4,14 @@ package irvine.oeis.a071;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A071090 Sum of middle divisors of n.
  * @author Georg Fischer
  * @author Sean A. Irvine
  */
-public class A071090 extends AbstractSequence {
+public class A071090 extends AbstractSequence implements DirectSequence {
 
   private int mN = 0;
 
@@ -21,15 +22,32 @@ public class A071090 extends AbstractSequence {
 
   @Override
   public Z next() {
-    ++mN;
-    // Some care needed here, d^2 easily exceeds int
+    return a(++mN);
+  }
+
+  @Override
+  public Z a(final Z n) {
     Z sum = Z.ZERO;
-    for (final Z d : Jaguar.factor(mN).divisors()) {
+    for (final Z d : Jaguar.factor(n).divisors()) {
       final Z d2 = d.square();
-      if (d2.multiply2().compareTo(mN) >= 0 && d2.compareTo(2L * mN) < 0) {
+      if (d2.multiply2().compareTo(n) >= 0 && d2.compareTo(n.multiply2()) < 0) {
         sum = sum.add(d);
       }
     }
     return sum;
   }
+
+  @Override
+  public Z a(final int n) {
+    // Some care needed here, d^2 easily exceeds int
+    Z sum = Z.ZERO;
+    for (final Z d : Jaguar.factor(n).divisors()) {
+      final Z d2 = d.square();
+      if (d2.multiply2().compareTo(n) >= 0 && d2.compareTo(2L * n) < 0) {
+        sum = sum.add(d);
+      }
+    }
+    return sum;
+  }
+
 }

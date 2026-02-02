@@ -15,7 +15,7 @@ import irvine.oeis.DirectSequence;
 public class GfSequence extends AbstractSequence implements DirectSequence {
 
   // Make ring easily available to subclasses
-  protected static SeriesRing<Q> SQ = SeriesRing.SQ;
+  protected static final SeriesRing<Q> SQ = SeriesRing.SQ;
   private int mN;
   private final int mStep;
   private final Series<Q> mSeries;

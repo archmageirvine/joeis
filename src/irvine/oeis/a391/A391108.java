@@ -24,7 +24,7 @@ public class A391108 extends Sequence1 {
     return quadraticHasTwoIntegerRoots(a, b + a * r, c + b * r + a * r * r);
   }
 
-  private static boolean quadraticHasTwoIntegerRoots(long a, long b, long c) {
+  private static boolean quadraticHasTwoIntegerRoots(final long a, final long b, final long c) {
     // Discriminant
     final long disc = b * b - 4 * a * c;
     if (disc < 0 || !Predicates.SQUARE.is(disc)) {
@@ -36,7 +36,7 @@ public class A391108 extends Sequence1 {
     return (-b + s) % denom == 0 && (-b - s) % denom == 0;
   }
 
-  private boolean is(long a, long b, long c, long d) {
+  private boolean is(final long a, final long b, final long c, final long d) {
     // Quick necessary conditions from Viete
     if (b % a != 0 || c % a != 0 || d % a != 0) {
       return false;

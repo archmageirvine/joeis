@@ -11,7 +11,7 @@ public class A393101 extends A392989 {
   @Override
   protected long countComparisons(final String pattern) {
     // Initialise Knuth-Morris-Pratt shifts
-    int length = pattern.length();
+    final int length = pattern.length();
     int i = 1;
     int j = 0;
     final int[] shift = new int[length + 1];

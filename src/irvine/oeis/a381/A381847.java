@@ -40,6 +40,17 @@ public class A381847 extends Sequence1 {
       return Functions.PRODUCT.i(mTriple);
     }
 
+    /**
+     * Surface area of this cuboid.
+     * @return the volume
+     */
+    public int getSurface() {
+      final int x = mTriple[0];
+      final int y = mTriple[1];
+      final int z = mTriple[2];
+      return 2 * (x * y + x * z + y * z);
+    }
+
     @Override
     public boolean equals(final Object obj) {
       if (!(obj instanceof Cuboid)) {

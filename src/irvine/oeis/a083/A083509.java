@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A036057 Friedman numbers: can be written in a nontrivial way using their digits and the operations + - * / ^ and concatenation of digits (but not of results).
+ * A083509 Friedman numbers that involve the "^" sign.
  * @author Sean A. Irvine
  */
 public class A083509 extends Sequence1 {

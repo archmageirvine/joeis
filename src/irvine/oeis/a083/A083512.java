@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A036057.
+ * A083512 Multiples of 11 with digit sum 11, with no zero digits in odd places.
  * @author Sean A. Irvine
  */
 public class A083512 extends FiniteSequence {

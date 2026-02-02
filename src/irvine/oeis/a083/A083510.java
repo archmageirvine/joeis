@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000124;
 
 /**
- * A036057.
+ * A083510 Members of A000124 which are the arithmetic mean of two other members.
  * @author Sean A. Irvine
  */
 public class A083510 extends Sequence1 {

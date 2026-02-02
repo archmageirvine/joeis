@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000124;
 
 /**
- * A036057.
+ * A083511 Members of A000124 which are multiples of 11.
  * @author Sean A. Irvine
  */
 public class A083511 extends FilterSequence {

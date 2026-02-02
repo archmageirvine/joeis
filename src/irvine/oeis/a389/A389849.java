@@ -3,7 +3,7 @@ package irvine.oeis.a389;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A036057.
+ * A389849 allocated for Jean-Marc Rebert.
  * @author Sean A. Irvine
  */
 public class A389849 extends FiniteSequence {

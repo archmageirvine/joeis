@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A036057.
+ * A083514 Number of steps for iteration of map x -&gt; (4/3)*ceiling(x) to reach an integer &gt; 3n+1 when started at 3n+1, or -1 if no such integer is ever reached.
  * @author Sean A. Irvine
  */
 public class A083514 extends Sequence1 {

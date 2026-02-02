@@ -70,7 +70,7 @@ public final class PlotA363381 {
       final ImageWriteParam params = writer.getDefaultWriteParam();
       // Enable compression and set quality (0.0 = lowest, 1.0 = highest)
       params.setCompressionMode(ImageWriteParam.MODE_EXPLICIT);
-      params.setCompressionQuality(0.3f); // adjust this value between 0.3f–0.8f to balance quality/size
+      params.setCompressionQuality(0.3f); // adjust this value between 0.3f-0.8f to balance quality/size
       try (final ImageOutputStream outputStream = ImageIO.createImageOutputStream(file)) {
         writer.setOutput(outputStream);
         writer.write(null, new javax.imageio.IIOImage(image, null, null), params);

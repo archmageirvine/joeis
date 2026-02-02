@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008303;
 
 /**
- * A008303 Triangle read by rows: T(n,k) (n &gt;= 1, 0 &lt;= k &lt;= ceiling(n/2)-1) = number of permutations of [n] with k peaks.
+ * A392124 allocated for Clark Kimberling.
  * @author Sean A. Irvine
  */
 public class A392124 extends A008303 {

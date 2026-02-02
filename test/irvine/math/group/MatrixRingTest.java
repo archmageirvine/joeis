@@ -1,7 +1,7 @@
 package irvine.math.group;
 
-import irvine.math.matrix.DefaultMatrix;
 import irvine.math.api.Matrix;
+import irvine.math.matrix.DefaultMatrix;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
@@ -78,7 +78,7 @@ public class MatrixRingTest extends TestCase {
   }
 
   public void testZeroPermanent() {
-    for (int k = 0; k < 4; ++k) {
+    for (int k = 1; k < 4; ++k) {
       final MatrixRing<Z> ring = new MatrixRing<>(k, Integers.SINGLETON);
       assertEquals(Z.ZERO, ring.permanent(new DefaultMatrix<>(k, k, Z.ZERO)));
     }

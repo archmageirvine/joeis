@@ -6,11 +6,10 @@ import irvine.oeis.ca.TuringMachineRuntimeSequence;
  * A036057.
  * @author Sean A. Irvine
  */
-public class A393103 extends TuringMachineRuntimeSequence {
+public class A393146 extends TuringMachineRuntimeSequence {
 
   /** Construct the sequence. */
-  public A393103() {
-    super(1, 1285);
+  public A393146() {
+    super(1, 3333);
   }
 }
-

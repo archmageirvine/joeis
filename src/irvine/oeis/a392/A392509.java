@@ -17,8 +17,6 @@ import irvine.util.Point;
  */
 public class A392509 extends Sequence1 {
 
-  // todo doesn't match later rows
-
   // After Jaap Spies
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
@@ -82,7 +80,7 @@ public class A392509 extends Sequence1 {
   private Polynomial<Z> step(final int n) {
     // f(m, h) = sum_{k=0}^m (-1)^k * total_rv[k] * falling_factorial(m+h-k, m-k)
     final Z[] total = row(n);
-    System.out.println(Arrays.toString(total));
+    //System.out.println(Arrays.toString(total));
     Polynomial<Z> f = RING.zero();
     for (int k = 0; k <= n; ++k) {
       final Polynomial<Z> t = RING.multiply(fallingFactorial(n - k, n - k), Z.NEG_ONE.pow(k).multiply(total[k]));

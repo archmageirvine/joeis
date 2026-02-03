@@ -3,6 +3,8 @@ package irvine.math.graph;
 import java.util.Arrays;
 
 import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
+import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
@@ -393,6 +395,27 @@ public final class GraphFactory {
     final Graph g = GraphFactory.create(n);
     for (int k = 0; k < n; ++k) {
       g.addEdge(k, (k + 1) % n);
+    }
+    return g;
+  }
+
+  /**
+   * Construct the Kneser graph on <code>n</code> and <code>k</code>.
+   * @param n set size
+   * @param k subset size
+   * @return Kneser graph
+   */
+  public static Graph kneser(final int n, final int k) {
+    assert k >= 1;
+    final int vertices = Binomial.binomial(n, k).intValueExact();
+    final Graph g = GraphFactory.create(vertices);
+    final long lo = (1L << k) - 1;
+    for (long j = 0, s = lo; j < vertices; ++j, s = Functions.SWIZZLE.l(s)) {
+      for (long i = 0, t = lo; i < j; ++i, t = Functions.SWIZZLE.l(t)) {
+        if ((s & t) == 0) {
+          g.addEdge((int) i, (int) j);
+        }
+      }
     }
     return g;
   }

@@ -96,8 +96,7 @@ public class A392406 extends Sequence1 {
     return res;
   }
 
-  private static List<List<Object>> getCases(final int[] composition) {
-    final List<List<Object>> res = new ArrayList<>();
+  private static int getMaxForComposition(final int[] composition) {
     final List<Character> genSeq = inverseRunLength(composition);
     final int next = getRunsResistance(genSeq);
     final List<Object> unequal = new ArrayList<>(genSeq);
@@ -108,9 +107,7 @@ public class A392406 extends Sequence1 {
       equal.add(o.equals(last) ? next : o);
     }
     equal.add(next);
-    res.add(unequal);
-    res.add(equal);
-    return res;
+    return Math.max(getExtensions(unequal, true), getExtensions(equal, true));
   }
 
   private static int getExtensions(final List<Object> seedSeq, final boolean seedInclFirstExt) {
@@ -126,20 +123,6 @@ public class A392406 extends Sequence1 {
     extended.add(last + "s");
     final int start = seedLength - (seedInclFirstExt ? 1 : 0);
     return Math.max(0, extended.size() - start);
-  }
-
-  private List<int[]> compositions(final int n) {
-    final ArrayList<int[]> res = new ArrayList<>();
-    final IntegerPartition part = new IntegerPartition(n);
-    int[] p;
-    while ((p = part.next()) != null) {
-      final Permutation perm = new Permutation(p);
-      int[] composition;
-      while ((composition = perm.next()) != null) {
-        res.add(composition.clone());
-      }
-    }
-    return res;
   }
 
   private List<int[]> partitions(final int n) {
@@ -164,11 +147,9 @@ public class A392406 extends Sequence1 {
         final Permutation perm = new Permutation(partition);
         int[] composition;
         while ((composition = perm.next()) != null) {
-          for (final List<Object> c : getCases(composition)) {
-            final int ext = getExtensions(c, true);
-            if (ext > localBest) {
-              localBest = ext;
-            }
+          final int ext = getMaxForComposition(composition);
+          if (ext > localBest) {
+            localBest = ext;
           }
         }
         best.accumulateAndGet(localBest, Math::max);

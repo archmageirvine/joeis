@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A075324.
+ * A392963 allocated for Martin Fuller.
  * @author Sean A. Irvine
  */
 public class A392963 extends Sequence2 {

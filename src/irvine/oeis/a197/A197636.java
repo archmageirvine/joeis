@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A007540 Wilson primes: primes p such that (p-1)! == -1 (mod p^2).
+ * A197636 Non-Wilson primes: primes p such that (p-1)! =/= -1 mod p^2.
  * @author Sean A. Irvine
  */
 public class A197636 extends Sequence1 {

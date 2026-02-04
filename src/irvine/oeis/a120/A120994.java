@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RationalLambdaSequence;
 
 /**
- * A120994 Numerators of rationals related to John Wallis&apos; product formula for Pi/2 from his &apos;Arithmetica infinitorum&apos; from 1659.
+ * A120994 Numerators of rationals related to John Wallis' product formula for Pi/2 from his 'Arithmetica infinitorum' from 1659.
  * @author Georg Fischer
  */
 public class A120994 extends RationalLambdaSequence {

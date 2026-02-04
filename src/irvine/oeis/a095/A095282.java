@@ -5,7 +5,7 @@ import irvine.oeis.SetDifferenceSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A095282 Primes whose binary-expansion ends with an even number of 1&apos;s.
+ * A095282 Primes whose binary-expansion ends with an even number of 1's.
  * @author Georg Fischer
  */
 public class A095282 extends SetDifferenceSequence {

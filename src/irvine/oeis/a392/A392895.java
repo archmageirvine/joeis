@@ -11,7 +11,7 @@ import irvine.util.array.LongDynamicLongArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A007540.
+ * A392895 allocated for Jean-Marc Rebert.
  * @author Sean A. Irvine
  */
 public class A392895 extends Sequence1 {

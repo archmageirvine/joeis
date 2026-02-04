@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a001.A001850;
 
 /**
- * A110914 &quot;Self-convolution mod 3&quot; of central Delannoy numbers (see comment).
+ * A110914 "Self-convolution mod 3" of central Delannoy numbers (see comment).
  * @author Georg Fischer
  */
 public class A110914 extends LambdaSequence {

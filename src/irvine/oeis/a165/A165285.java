@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A392509.
+ * A165285 Primes which are the sum of at least 2 consecutive pars "Prime and PreviousNumber".
  * @author Sean A. Irvine
  */
 public class A165285 extends Sequence1 {

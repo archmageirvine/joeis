@@ -9,7 +9,7 @@ import irvine.oeis.RationalLambdaSequence;
 import irvine.oeis.a003.A003961;
 
 /**
- * A349633 Numerators of the M√∂bius transform of ratio A003961(n)/n.
+ * A349633 Numerators of the M\u00f6bius transform of ratio A003961(n)/n.
  * @author Georg Fischer
  */
 public class A349633 extends RationalLambdaSequence {

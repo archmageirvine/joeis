@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A007540.
+ * A392694 allocated for Gus Wiseman.
  * @author Sean A. Irvine
  */
 public class A392694 extends Sequence1 {

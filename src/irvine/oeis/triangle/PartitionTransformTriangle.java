@@ -87,13 +87,8 @@ public class PartitionTransformTriangle extends BaseTriangle {
     }
   }
 
-  /**
-   * Gets an element of the triangle.
-   * @param n row number
-   * @param k column number
-   * @return T(n, k), or 0 for k &lt; 0 or k &gt; n.
-   */
-  protected Z get(final int n, final int k) {
+  @Override
+  public Z get(final int n, final int k) {
     if (k > n || k < 0) {
       return Z.ZERO;
     } else if (n == 0) {

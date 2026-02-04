@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RationalLambdaSequence;
 
 /**
- * A259852 Numerators of the terms of Lehmer&apos;s series S_2(2), where S_k(x) = Sum_{n&gt;=1} n^k*x^n/binomial(2*n, n).
+ * A259852 Numerators of the terms of Lehmer's series S_2(2), where S_k(x) = Sum_{n&gt;=1} n^k*x^n/binomial(2*n, n).
  * @author Georg Fischer
  */
 public class A259852 extends RationalLambdaSequence {

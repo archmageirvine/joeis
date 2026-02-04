@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RationalLambdaSequence;
 
 /**
- * A157165 Numerators of partial sums of a series related to Lebesgue&apos;s constant L(0) = 1.
+ * A157165 Numerators of partial sums of a series related to Lebesgue's constant L(0) = 1.
  * @author Georg Fischer
  */
 public class A157165 extends RationalLambdaSequence {

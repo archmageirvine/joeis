@@ -101,7 +101,7 @@ public class Triangle extends AbstractSequence {
    * @param k column number
    * @return T(n,k), or 0 for k &lt; 0 or k &gt; n.
    */
-  protected Z get(final int n, final int k) {
+  public Z get(final int n, final int k) {
     if (k > n || k < 0) {
       return Z.ZERO;
     } else if (n == mRow && k <= mCol) {

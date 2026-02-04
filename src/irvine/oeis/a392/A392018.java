@@ -6,7 +6,7 @@ import irvine.oeis.Sequence2;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A392509.
+ * A392018 allocated for Jean-Marc Rebert.
  * @author Sean A. Irvine
  */
 public class A392018 extends Sequence2 {

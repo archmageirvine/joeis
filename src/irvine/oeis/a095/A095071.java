@@ -5,7 +5,7 @@ import irvine.oeis.SetDifferenceSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A095071 Zero-bit dominant primes, i.e., primes whose binary expansion contains more 0&apos;s than 1&apos;s.
+ * A095071 Zero-bit dominant primes, i.e., primes whose binary expansion contains more 0's than 1's.
  * @author Georg Fischer
  */
 public class A095071 extends SetDifferenceSequence {

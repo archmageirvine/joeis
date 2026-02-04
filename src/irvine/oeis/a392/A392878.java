@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A392878 a(n) = A276086(A276085(n)), where A276085 and A276086 are primorial base log and exp-functions.
+ * A392878 allocated for Antti Karttunen.
  * @author Georg Fischer
  */
 public class A392878 extends LambdaSequence {

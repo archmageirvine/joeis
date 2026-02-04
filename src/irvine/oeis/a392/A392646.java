@@ -3,7 +3,7 @@ package irvine.oeis.a392;
 import irvine.math.z.Z;
 
 /**
- * A392509.
+ * A392646 allocated for Michael Shmoish.
  * @author Sean A. Irvine
  */
 public class A392646 extends A392201 {

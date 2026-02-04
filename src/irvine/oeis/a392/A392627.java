@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392509.
+ * A392627 allocated for Natalia L. Skirrow.
  * @author Sean A. Irvine
  */
 public class A392627 extends Sequence0 {

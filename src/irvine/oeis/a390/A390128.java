@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a391.A391319;
 
 /**
- * A392509.
+ * A390128 allocated for Michael De Vlieger.
  * @author Sean A. Irvine
  */
 public class A390128 extends FilterSequence {

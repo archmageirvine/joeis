@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RationalLambdaSequence;
 
 /**
- * A122252 Binet&apos;s factorial series. Numerators of the coefficients of a convergent series for the logarithm of the Gamma function.
+ * A122252 Binet's factorial series. Numerators of the coefficients of a convergent series for the logarithm of the Gamma function.
  * @author Georg Fischer
  */
 public class A122252 extends RationalLambdaSequence {

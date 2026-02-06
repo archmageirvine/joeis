@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392743 allocated for Benoit Cloitre.
+ * A392743 a(n) = A392736(2*n + 1 - A392736(n)).
  * @author Sean A. Irvine
  */
 public class A392743 extends Sequence0 {

@@ -2715,3 +2715,6 @@ A083343 Decimal expansion of constant B3 (or B_3) related to the Mertens constan
 A083386 Number (undirected) Hamiltonian paths in the 5 X n knight graph.
 A083391 n-th Payam number E_{-}(n), defined as the smallest positive odd integer k such that for every positive integer n, the number k*2^n-1 is not divisible by any primes p such that the multiplicative order of 2 mod p is less than or equal to e.
 A083409 Number of prime k-tuplet constellations; i.e., patterns with minimal diameter A008407.
+A083544 a(n) = maximal value of the sum of Mobius function values over a block of n consecutive natural numbers.
+A083556 n-th Payam number E_{+}(n), defined as the smallest positive odd integer k such that for every positive integer n, the number k*2^n+1 is not divisible by any primes p such that the multiplicative order of 2 mod p is less than or equal to e.
+A083573 Maximal number of subgroups in a non-Abelian group with n elements, or zero if there are no non-Abelian groups of order n.

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A163587 A sequence of primes suggested by Ramanujan's: 2*n*log(2*n) &lt; R(n) &lt; 4*n*log(4*n) : floor((2n+m)* log(2*n+m)) if Prime.
+ * A163587 Primes of the form floor(2 * (k+j) * log(2*(k+j)), 0 &lt;= j &lt;= k.
  * @author Sean A. Irvine
  */
 public class A163587 extends Sequence1 {

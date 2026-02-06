@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012079 cos(arcsin(tan(x)))=1-1/2!*x^2-11/4!*x^4-301/6!*x^6-16631/8!*x^8...
+ * A012079 Even coefficients in expansion of e.g.f. cos(arcsin(tan(x))).
  * @author Sean A. Irvine
  */
 public class A012079 extends Sequence0 {

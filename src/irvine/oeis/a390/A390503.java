@@ -5,7 +5,7 @@ import java.util.Arrays;
 import irvine.oeis.a392.A392989;
 
 /**
- * A390503 allocated for Sean A. Irvine.
+ * A390503 Number of character comparisons needed by Boyer-Moore string search to identify the first occurrence of string n in the infinite Champernowne word 123456789101112... (A033307).
  * @author Sean A. Irvine
  */
 public class A390503 extends A392989 {

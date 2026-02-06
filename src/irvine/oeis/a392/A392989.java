@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392989 allocated for Sean A. Irvine.
+ * A392989 Number of character comparisons needed by naive string search to identify the first occurrence of string n in the infinite Champernowne word 123456789101112... (A033307).
  * @author Sean A. Irvine
  */
 public class A392989 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a132.A132393;
 
 /**
- * A388456 allocated for Emil Verkama.
+ * A388456 Triangle read by rows: coefficient [t^k] of the Ehrhart polynomial of the n-dimensional cross-polytope, multiplied by n!.
  * @author Sean A. Irvine
  */
 public class A388456 extends Sequence0 {

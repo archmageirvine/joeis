@@ -8,7 +8,7 @@ import irvine.math.z.Z;
  */
 class NextPalindrome extends AbstractFunction1 {
 
-  private static void mirror(final char[] a) {
+  static void mirror(final char[] a) {
     int i = 0;
     int j = a.length - 1;
     while (i < j) {

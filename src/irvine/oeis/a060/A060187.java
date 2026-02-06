@@ -24,5 +24,4 @@ public class A060187 extends ModifiedPascalTriangle {
   protected Z factorG(final long n, final long k) {
     return Z.valueOf(2 * k + 1);
   }
-
 }

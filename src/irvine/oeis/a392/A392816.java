@@ -7,7 +7,7 @@ import irvine.math.series.Series;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A392816 allocated for Miles Englezou.
+ * A392816 Number of occurrences of n in A392781.
  * @author Sean A. Irvine
  */
 public class A392816 extends GfSequence {

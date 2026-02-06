@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391636 allocated for Gonzalo Mart\u00ednez.
+ * A391636 Integers k such that the sum of the products of each digit of k and the number obtained by removing that digit is equal to k.
  * @author Sean A. Irvine
  */
 public class A391636 extends Sequence1 {

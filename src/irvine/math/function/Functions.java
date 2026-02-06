@@ -175,6 +175,8 @@ public final class Functions {
   public static final Function1 RUNS_OF_1 = new RunsOfOne(); // =A069010
   /** The smallest palindrome not less than given number. */
   public static final Function1 NEXT_PALINDROME = new NextPalindrome();
+  /** The largest palindrome not more than given number. */
+  public static final Function1 PREV_PALINDROME = new PreviousPalindrome();
 
   // Two argument functions with default first parameter
 

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A387487 allocated for Sean A. Irvine.
+ * A387487 a(n) is the length of the longest prefix of S matching the substring of S starting at n where S = 123456789101112... is the Champernowne word (A033307).
  * @author Sean A. Irvine
  */
 public class A387487 extends Sequence2 {

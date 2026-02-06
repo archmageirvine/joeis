@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A083518 Beginning with 3, a(i)*a(j) + 2 is prime for all i, j, i&lt;&gt;j.
+ * A083518 Beginning with 3, a(i)*a(j) + 2 is prime for all i, j, i != j.
  * @author Sean A. Irvine
  */
 public class A083518 extends CachedSequence {

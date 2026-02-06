@@ -6,7 +6,7 @@ package irvine.oeis.a097;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A097829 Partial sums of Chebyshev sequence S(n,15)= U(n,15/2)=A078364(n).
+ * A097829 Partial sums of Chebyshev sequence S(n,15) = U(n,15/2) = A078364(n).
  * @author Georg Fischer
  */
 public class A097829 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A057175 Numbers n such that (9^n + 1)/10 is a prime.
+ * A057175 Numbers k such that (9^k + 1)/10 is a prime.
  * @author Georg Fischer
  */
 public class A057175 extends PrimePositionSubsequence {

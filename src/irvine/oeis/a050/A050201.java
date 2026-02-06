@@ -1,7 +1,8 @@
 package irvine.oeis.a050;
 
+import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000796;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
@@ -9,14 +10,13 @@ import irvine.util.string.StringUtils;
  * @author Georg Fischer
  * @author Sean A. Irvine
  */
-public class A050201 extends A000796 {
+public class A050201 extends Sequence1 {
 
+  private static final CR PI10 = CR.PI.divide(10); // shift decimal point
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
-  private final int mOccur;
-  private final int mDigit;
-  private int mCount;
+  private final String mMatch;
+  private String mS = PI10.toString(1024);
   private int mPos;
-  private boolean mState;
 
   /** Construct the sequence. */
   public A050201() {
@@ -29,39 +29,23 @@ public class A050201 extends A000796 {
    * @param digit desired digit
    */
   public A050201(final int occurrences, final int digit) {
-    mOccur = occurrences;
-    mDigit = digit;
-    mCount = 0;
+    assert occurrences > 0;
+    mMatch = String.valueOf(digit).repeat(occurrences);
     mPos = 0;
-    mState = true;
   }
 
   @Override
   public Z next() {
     while (true) {
-      if (mState) {
-        final int digit = super.next().intValue();
-        ++mPos;
-        if (digit == mDigit) {
-          mCount = 1;
-          mState = false;
+      final int nextPos = mS.indexOf(mMatch, mPos);
+      if (nextPos < 0) {
+        mS = PI10.toString(2 * mS.length());
+        if (mVerbose) {
+          StringUtils.message("pi expanded to " + (mS.length() - 3) + " digits");
         }
       } else {
-        if (mCount >= mOccur) {
-          mCount = mOccur - 1;
-          return Z.valueOf(mPos - mOccur);
-        } else {
-          final int digit = super.next().intValue();
-          ++mPos;
-          if (digit == mDigit) {
-            ++mCount;
-          } else {
-            mState = true;
-          }
-        }
-      }
-      if (mVerbose && mPos % 100000 == 0) {
-        StringUtils.message("Search completed to " + mPos);
+        mPos = nextPos + 1;
+        return Z.valueOf(mPos - 3);
       }
     }
   }

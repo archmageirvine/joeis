@@ -11,7 +11,7 @@ import irvine.util.array.LongDynamicLongArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A392895 allocated for Jean-Marc Rebert.
+ * A392895 Least number k for which there exist exactly n subsets of divisors of k such that k is divisible by their sum.
  * @author Sean A. Irvine
  */
 public class A392895 extends Sequence1 {

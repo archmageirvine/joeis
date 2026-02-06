@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391816 allocated for Felix Huber.
+ * A391816 a(n) is the smallest integer k &gt;= 2 such that the decimal expansion of n is a subsequence of the decimal expansion of n^k.
  * @author Sean A. Irvine
  */
 public class A391816 extends Sequence0 {

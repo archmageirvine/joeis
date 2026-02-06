@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391108 allocated for Lorenzo Sauras Altuzarra.
+ * A391108 a(n) is the number of cubic polynomials with coefficients in {-n, ..., n}, positive leading coefficient, and having three integer roots.
  * @author Sean A. Irvine
  */
 public class A391108 extends Sequence1 {

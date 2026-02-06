@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a102.A102342;
 
 /**
- * A068677 Numbers that yield a prime when a 7 is prefixed or suffixed to them.
+ * A068677 Numbers that yield primes when a 7 is prefixed or suffixed to them.
  * @author Sean A. Irvine
  */
 public class A068677 extends FilterSequence {

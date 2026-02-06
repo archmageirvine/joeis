@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A392067 allocated for Jwalin Bhatt.
+ * A392067 Decimal expansion of the limit mean of the number of continued fraction coefficients required per decimal digit for the golden ratio.
  * @author Sean A. Irvine
  */
 public class A392067 extends DecimalExpansionSequence {

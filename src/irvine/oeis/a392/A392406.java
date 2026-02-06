@@ -14,7 +14,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A392406 allocated for Frederik G. Faye.
+ * A392406 a(n) is the maximum possible number of extensions of a sequence of any n integers, where an extension is the runs-resistance of the sequence including all previous extensions.
  * @author Sean A. Irvine
  */
 public class A392406 extends Sequence1 {

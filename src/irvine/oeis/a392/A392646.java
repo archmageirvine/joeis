@@ -3,7 +3,7 @@ package irvine.oeis.a392;
 import irvine.math.z.Z;
 
 /**
- * A392646 allocated for Michael Shmoish.
+ * A392646 a(n) is the number of solutions of the equation (x^2 + y^2 + z^2)/(x*y-x*z+y*z) = A392201(n) such that x, y, z are in {1,..., A392201(n)}.
  * @author Sean A. Irvine
  */
 public class A392646 extends A392201 {

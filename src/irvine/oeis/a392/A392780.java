@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A392780 allocated for Felix Huber.
+ * A392780 Positive integers whose maximal prime power divisors can be partitioned into two subsets of equal sum.
  * @author Sean A. Irvine
  */
 public class A392780 extends CachedSequence {

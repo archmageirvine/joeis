@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A391113 allocated for Claude H. R. Dequatre.
+ * A391113 Triangle read by rows: T(n,k) is the area of the irregular hexagon, rounded to the nearest integer, where its vertices lie on the co-vertices and the endpoints of the two latus rectums of an ellipse, where n and k are respectively the integer major and minor axes with n &gt;= 2 and k &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A391113 extends Sequence2 {

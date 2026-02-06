@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a392.A392781;
 
 /**
- * A391716 allocated for Miles Englezou.
+ * A391716 Let f be an additive function with f(2^e) = (e + e mod 2)/2, f(p^e) = e*(p-1)/2, p an odd prime. a(n) is the number of iterations of f(n) required to reach 0.
  * @author Sean A. Irvine
  */
 public class A391716 extends Sequence1 {

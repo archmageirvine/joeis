@@ -6,7 +6,7 @@ package irvine.oeis.a146;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A146529 A two level sequence: v(n)=2*(If[n == 0, 0, 2^(n - 1)] + 2); a(n)=If[n == 0, 6, (v[n] + v[n - 1] - 2)].
+ * A146529 a(0) = 6, a(n) = v(n) + v(n-1) - 2 where v(0)=4 and v(n) = 2^n + 4.
  * @author Georg Fischer
  */
 public class A146529 extends HolonomicRecurrence {

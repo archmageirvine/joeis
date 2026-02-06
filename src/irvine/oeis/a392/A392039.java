@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a026.A026794;
 
 /**
- * A392039 allocated for Mikhail Kurkov.
+ * A392039 Irregular triangle, read by rows: T(n,k) is the unique natural number such that the T(n,k)-th row of A125106 is equivalent to k-th partition of n in A026792.
  * @author Sean A. Irvine
  */
 public class A392039 extends A026794 {

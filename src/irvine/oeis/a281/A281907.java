@@ -6,7 +6,7 @@ import irvine.oeis.recur.HolonomicRecurrence;
 
 
 /**
- * A281907 Numbers congruent to 47867742232066880047611079 modulo 66483034025018711639862527490.
+ * A281907 a(n) = 66483034025018711639862527490*n + 47867742232066880047611079.
  *
  * @author Georg Fischer
  */

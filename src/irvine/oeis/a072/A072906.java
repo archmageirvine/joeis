@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072906 Least k &gt;=1 such that floor(n/k) is squarefree.
+ * A072906 Least k &gt;= 1 such that floor(n/k) is squarefree.
  * @author Sean A. Irvine
  */
 public class A072906 extends Sequence1 {

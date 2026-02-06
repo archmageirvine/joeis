@@ -5,7 +5,7 @@ import irvine.oeis.RecordSequence;
 import irvine.oeis.a031.A031165;
 
 /**
- * A115401 Record differences between prime(n+3) and prime(n). Records in A031165.
+ * A115401 Record differences between prime(n+3) and prime(n). Differences in A031165.
  * @author Georg Fischer
  */
 public class A115401 extends RecordSequence {

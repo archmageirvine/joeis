@@ -4,7 +4,7 @@ package irvine.oeis.a113;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A113070 Expansion of ((1+x)/(1-2x))^2.
+ * A113070 Expansion of ((1+x)/(1-2*x))^2.
  * @author Georg Fischer
  */
 public class A113070 extends GeneratingFunctionSequence {

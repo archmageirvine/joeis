@@ -3,7 +3,7 @@ package irvine.oeis.a392;
 import irvine.oeis.a050.A050922;
 
 /**
- * A392904 allocated for Paolo Xausa.
+ * A392904 Irregular triangle read by rows: row n lists the distinct prime factors of the generalized Fermat number F_n(11) = 11^(2^n) + 1.
  * @author Sean A. Irvine
  */
 public class A392904 extends A050922 {

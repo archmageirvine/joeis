@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A392914 allocated for Jens Ahlstr\u00f6m.
+ * A392914 Primes starting a run of at least 4 consecutive primes with binary Hamming distance 1.
  * @author Sean A. Irvine
  */
 public class A392914 extends A000040 {

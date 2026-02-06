@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A164649 Numbers n such that sigma(n)/phi(n) = 36/25.
+ * A164649 Numbers k such that sigma(k)/phi(k) = 36/25.
  * @author Sean A. Irvine
  */
 public class A164649 extends Sequence1 {

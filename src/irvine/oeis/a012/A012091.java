@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012091 cos(arcsin(arctan(x)))=1-1/2!*x^2+5/4!*x^4-109/6!*x^6+4521/8!*x^8...
+ * A012091 Even coefficients in expansion of e.g.f. cos(arcsin(arctan(x))).
  * @author Sean A. Irvine
  */
 public class A012091 extends Sequence0 {

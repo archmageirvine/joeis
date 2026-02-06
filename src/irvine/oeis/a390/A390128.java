@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a391.A391319;
 
 /**
- * A390128 allocated for Michael De Vlieger.
+ * A390128 Biquadratefree numbers that are neither cubefree nor squareful.
  * @author Sean A. Irvine
  */
 public class A390128 extends FilterSequence {

@@ -69,6 +69,7 @@ public class TuringMachine {
    * @param n binary initializer
    */
   public void initialTape(final long n) {
+    mTape = new LongDynamicByteArray();
     long m = n;
     long k = 0;
     while (m != 0) {

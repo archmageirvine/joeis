@@ -6,7 +6,7 @@ import irvine.oeis.Sequence2;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A392018 allocated for Jean-Marc Rebert.
+ * A392018 Least prime p such that the sum of consecutive primes ending at p sums to a power of n &gt; 1.
  * @author Sean A. Irvine
  */
 public class A392018 extends Sequence2 {

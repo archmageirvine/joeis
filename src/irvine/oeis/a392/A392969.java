@@ -3,7 +3,7 @@ package irvine.oeis.a392;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A392969 allocated for Patrick Cash.
+ * A392969 Positive integers whose multiset of digits cannot be reduced to {0} by repeatedly replacing two digits with the digits of their sum, absolute difference, or product.
  * @author Sean A. Irvine
  */
 public class A392969 extends FiniteSequence {

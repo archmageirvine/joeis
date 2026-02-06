@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A392968 allocated for Charles L. Hohn.
+ * A392968 Decimal expansion of the area swept by 1 complete rotation about its origin of the radius of the golden spiral to maximum radius 1.
  * @author Sean A. Irvine
  */
 public class A392968 extends DecimalExpansionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392950 allocated for Aloe Poliszuk.
+ * A392950 Numbers k such that sigma(k) = 2*k - tau(phi(k)).
  * @author Sean A. Irvine
  */
 public class A392950 extends Sequence1 {

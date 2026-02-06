@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A392963 allocated for Martin Fuller.
+ * A392963 Irregular triangle read by rows: T(n,k) is the domination number of the Kneser graph K(n,k), 1 &lt;= k &lt;= n/2.
  * @author Sean A. Irvine
  */
 public class A392963 extends Sequence2 {

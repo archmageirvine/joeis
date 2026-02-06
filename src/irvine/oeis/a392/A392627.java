@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392627 allocated for Natalia L. Skirrow.
+ * A392627 Tetrahedron read by slices read by antidiagonals: T(n,i,j) is the number of paths from (0,0,0) to (n,i,j) consisting of moves {(1,0,0), (1,1,0), (1,0,1), (1,1,1)} that remain confined to i+j&lt;=n at each step.
  * @author Sean A. Irvine
  */
 public class A392627 extends Sequence0 {

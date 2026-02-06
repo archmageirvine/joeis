@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 
 /**
- * A062968 n + 1 - d(n), where d(n) is the number of divisors function.
+ * A062968 a(n) = n + 1 - d(n), where d(n) is the number of divisors function.
  * @author Georg Fischer
  */
 public class A062968 extends Sequence1 {

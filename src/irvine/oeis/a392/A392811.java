@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392811 allocated for Ben Spitz.
+ * A392811 Number of transfer systems on the horizontal join lattice [n]*[n].
  * @author Sean A. Irvine
  */
 public class A392811 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391527 allocated for Lorenzo Sauras Altuzarra.
+ * A391527 a(n) is the number of quadratic polynomials with coefficients in {-n, ..., n}, positive leading coefficient, and having two rational roots.
  * @author Sean A. Irvine
  */
 public class A391527 extends Sequence1 {

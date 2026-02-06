@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A392773 allocated for Martin Hutchings.
+ * A392773 The smallest x for which x^2 == 2 (mod F(n)), where F(n) is the n-th Fermat number.
  * @author Sean A. Irvine
  */
 public class A392773 extends Sequence2 {

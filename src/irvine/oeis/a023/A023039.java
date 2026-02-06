@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A023039 a(n) = 18*a(n-1) - a(n-2).
+ * A023039 a(n) = 18*a(n-1) - a(n-2), with a(0) = 1 and a(1) = 9.
  * @author Sean A. Irvine
  */
 public class A023039 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A388722 allocated for Miles Reed.
+ * A388722 a(n) is the number of steps to reach 0 or the start of a cycle using the iteration x -&gt; |sigma(x)-2*x| starting from x=n.
  * @author Sean A. Irvine
  */
 public class A388722 extends Sequence1 {

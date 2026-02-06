@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A388969 allocated for Ludovic Schwob.
+ * A388969 Number of symmetric planar subpartitions of the size n pyramidal planar partition.
  * @author Sean A. Irvine
  */
 public class A388969 extends Sequence0 {

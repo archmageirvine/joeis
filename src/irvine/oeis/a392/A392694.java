@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392694 allocated for Gus Wiseman.
+ * A392694 Numbers whose weakly increasing prime indices are the 0-prepended first sums of some reversed integer partition.
  * @author Sean A. Irvine
  */
 public class A392694 extends Sequence1 {

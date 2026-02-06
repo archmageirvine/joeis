@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a381.A381847;
 
 /**
- * A392884 allocated for Janaka Rodrigo.
+ * A392884 a(n) is the minimum total surface area of four-element sets of distinct integer-sided cuboids that fill an n X n X n cube.
  * @author Sean A. Irvine
  */
 public class A392884 extends A381847 {

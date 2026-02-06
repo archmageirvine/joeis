@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083509 Friedman numbers that involve the "^" sign.
+ * A083509 Friedman numbers having a representation that involves the "^" sign.
  * @author Sean A. Irvine
  */
 public class A083509 extends Sequence1 {

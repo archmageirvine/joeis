@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A083506 n-th row of the following triangle contains all distinct numbers that can be obtained as the product of two distinct numbers chosen from 1 to n. (n&gt;1). Sequence contains the triangle read by rows.
+ * A083506 Triangle read by rows where the n-th row contains all distinct numbers that can be obtained as the product of two distinct numbers chosen from [1..n].
  * @author Sean A. Irvine
  */
 public class A083506 extends Sequence2 {

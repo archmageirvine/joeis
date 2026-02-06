@@ -3,7 +3,7 @@ package irvine.oeis.a393;
 import irvine.oeis.a392.A392989;
 
 /**
- * A390503 allocated for Sean A. Irvine.
+ * A393101 Number of character comparisons needed by Knuth-Morris-Pratt string search to identify the first occurrence of string n in the infinite Champernowne word 123456789101112... (A033307).
  * @author Sean A. Irvine
  */
 public class A393101 extends A392989 {

@@ -12,7 +12,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Point;
 
 /**
- * A392509 allocated for Jaap Spies.
+ * A392509 Triangle of coefficients of the permanent polynomial of rectangular Dancing School matrices.
  * @author Sean A. Irvine
  */
 public class A392509 extends Sequence1 {

@@ -19,7 +19,7 @@ public class A068805 extends Sequence1 {
   public Z next() {
     ++mN;
     while (mFirsts.get(mN) == 0) {
-      final Permutation perm = Permutation.permuter(Z.valueOf(++mM));
+      final Permutation perm = Permutation.permuter(++mM);
       int[] p;
       int cnt = 0;
       while ((p = perm.next()) != null) {

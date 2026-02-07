@@ -154,6 +154,16 @@ public class Permutation {
   }
 
   /**
+   * Construct a permutation object that runs over all the permutations of the digits
+   * in an integer.
+   * @param n integer
+   * @return permutation object
+   */
+  public static Permutation permuter(final long n) {
+    return permuter(Z.valueOf(n));
+  }
+
+  /**
    * Convert a permutation into an integer.
    * @param p permutation
    * @param base the base

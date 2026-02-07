@@ -18,7 +18,7 @@ public class A179933 extends Sequence1 {
   @Override
   public Z next() {
     if (mA.isEmpty()) {
-      final Permutation perm = Permutation.permuter(Z.valueOf(++mN));
+      final Permutation perm = Permutation.permuter(++mN);
       int[] p;
       while ((p = perm.next()) != null) {
         long r = 0;

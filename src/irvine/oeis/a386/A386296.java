@@ -51,6 +51,17 @@ public class A386296 extends AbstractSequence {
       return mVolume;
     }
 
+    /**
+     * Surface area of this cuboid.
+     * @return the volume
+     */
+    public int getSurface() {
+      final int x = mTriple[0];
+      final int y = mTriple[1];
+      final int z = mTriple[2];
+      return 2 * (x * y + x * z + y * z);
+    }
+
     @Override
     public boolean equals(final Object obj) {
       if (!(obj instanceof Cuboid)) {
@@ -251,6 +262,15 @@ public class A386296 extends AbstractSequence {
       max = Math.max(max, vol);
     }
     return max - min;
+  }
+
+  protected int getSurface(final int[] set) {
+    int surface = 0;
+    for (final int s : set) {
+      final Cuboid cuboid = mCuboids.get(s);
+      surface += cuboid.getSurface();
+    }
+    return surface;
   }
 
   // Used by A387040

@@ -15,7 +15,7 @@ public class A076084 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Permutation perm = Permutation.permuter(Z.valueOf(++mN));
+    final Permutation perm = Permutation.permuter(++mN);
     int[] p;
     Z maxS = Z.ZERO;
     Z max = Z.ZERO;

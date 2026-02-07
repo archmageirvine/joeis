@@ -31,7 +31,7 @@ public class A076449 extends Sequence0 {
           t *= 10;
           t += v;
         }
-        final Permutation perm = Permutation.permuter(Z.valueOf(t));
+        final Permutation perm = Permutation.permuter(t);
         int[] p;
         final Set<Z> primes = new HashSet<>();
         while ((p = perm.next()) != null) {

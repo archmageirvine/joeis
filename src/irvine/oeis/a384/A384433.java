@@ -28,7 +28,7 @@ public class A384433 extends Sequence1 {
   }
 
   private boolean is(final long n) {
-    final Permutation perm = Permutation.permuter(Z.valueOf(n));
+    final Permutation perm = Permutation.permuter(n);
     final List<Long> lst = new ArrayList<>();
     int[] p;
     while ((p = perm.next()) != null) {

@@ -17,7 +17,7 @@ public class A061487 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Permutation perm = Permutation.permuter(Z.valueOf(++mN));
+    final Permutation perm = Permutation.permuter(++mN);
     final HashSet<Z> set = new HashSet<>();
     int[] p;
     while ((p = perm.next()) != null) {

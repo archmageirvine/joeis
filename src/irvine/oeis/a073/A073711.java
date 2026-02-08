@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A073711 G.f. satisfies: A(x) = A(x^2) + x*A(x^2)^2.
+ * A073711 G.f. A(x) satisfies A(x) = A(x^2) + x*A(x^2)^2.
  * @author Sean A. Irvine
  */
 public class A073711 extends Sequence0 {

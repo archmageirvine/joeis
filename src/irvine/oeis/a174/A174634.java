@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A174634 a(n) = 3^n*F(n+2).
+ * A174634 a(n) = 3^n * Fibonacci(n+2).
  * @author Sean A. Irvine
  */
 public class A174634 extends LinearRecurrence {

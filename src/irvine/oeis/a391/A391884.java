@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a067.A067128;
 
 /**
- * A083659.
+ * A391884 Numbers k such that k^2 - 1 is one of Ramanujan's largely composite numbers (A067128).
  * @author Sean A. Irvine
  */
 public class A391884 extends Sequence1 {

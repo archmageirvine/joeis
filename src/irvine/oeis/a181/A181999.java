@@ -4,7 +4,7 @@ package irvine.oeis.a181;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A181999 G.f. satisfies: A(x) = A(x^2) + x*A(x)^2.
+ * A181999 G.f. A(x) satisfies A(x) = A(x^2) + x*A(x)^2.
  * A(x^2)+x*A(x)^2
  * @author Georg Fischer
  */

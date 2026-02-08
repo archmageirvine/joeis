@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007504;
 
 /**
- * A083659.
+ * A083677 Define f(n, k) to be the concatenation of the first n primes, with n-1 k's inserted between the primes. Then a(n) is the smallest k &gt;= 0 such that f(n, k) is prime, or -1 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A083677 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A083659.
+ * A083666 Palindromes arising when building A083664.
  * @author Sean A. Irvine
  */
 public class A083666 extends Sequence1 {

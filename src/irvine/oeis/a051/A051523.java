@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 
 /**
- * A051523 Generalized Stirling number triangle of first kind.
+ * A051523 Generalized Stirling number triangle of first kind read by rows: T(n, k) = [x^k] Product_{m=1..n} (x - m - r), with r = 9.
  * @author Sean A. Irvine
  */
 public class A051523 extends A051338 {

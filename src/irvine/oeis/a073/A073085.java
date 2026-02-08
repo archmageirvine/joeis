@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A073085 Numbers n such that 210*n+1 is prime.
+ * A073085 Numbers k such that 210*k+1 is prime.
  * @author Georg Fischer
  */
 public class A073085 extends PrimePositionSubsequence {

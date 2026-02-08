@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A393038 Maximum Mahler measure of all pentic polynomials with coefficients in {-1, 0, 1}.
+ * A393038 Maximum Mahler measure of all quintic polynomials with coefficients in {-1, 0, 1}.
  * @author Sean A. Irvine
  */
 public class A393038 extends PolynomialRootExpansionSequence {

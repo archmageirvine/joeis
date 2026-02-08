@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
- * A048176 Generalized Stirling number triangle of first kind.
+ * A048176 Triangle read by rows: T(n, m) = S1(n, m)*10^(n-m), where S1 are the signed Stirling numbers of first kind A008275 (n &gt;= 1, 1 &lt;= m &lt;= n).
  * @author Sean A. Irvine
  */
 public class A048176 extends MemoryFunction2Sequence<Integer, Z> {

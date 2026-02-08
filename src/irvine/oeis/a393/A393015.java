@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a134.A134970;
 
 /**
- * A393015 allocated for Alexander Yutkin.
+ * A393015 Palindromic canyon numbers.
  * @author Sean A. Irvine
  */
 public class A393015 extends FilterSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392063 allocated for Beimar Naranjo.
+ * A392063 Number of colored partitions of n into distinct parts such that all parts have distinct colors and the color of a part of size i is in {1..i}.
  * @author Sean A. Irvine
  */
 public class A392063 extends Sequence0 {

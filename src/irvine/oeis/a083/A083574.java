@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a071.A071904;
 
 /**
- * A083574 Triangle: rows list the factors of composite odd n.
+ * A083574 Triangle read by rows: the prime factors of composite odd n with multiplicity.
  * @author Sean A. Irvine
  */
 public class A083574 extends Sequence1 {

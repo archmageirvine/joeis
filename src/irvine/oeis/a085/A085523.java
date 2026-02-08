@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A085523 Product_{k=0..n} (4^(2k+1)+1).
+ * A085523 a(n) = Product_{k=0..n} (4^(2k+1)+1).
  * @author Georg Fischer
  */
 public class A085523 extends AbstractSequence {

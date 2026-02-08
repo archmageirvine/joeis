@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.InverseSequence;
 
 /**
- * A083659.
+ * A083665 Inverse of A083664.
  * @author Sean A. Irvine
  */
 public class A083665 extends InverseSequence {

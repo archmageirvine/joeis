@@ -3,7 +3,7 @@ package irvine.oeis.a393;
 import irvine.oeis.ca.TuringMachineRuntimeSequence;
 
 /**
- * A392245 allocated for Sean A. Irvine.
+ * A393210 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A393210 extends TuringMachineRuntimeSequence {

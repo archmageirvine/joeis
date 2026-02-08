@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393111 allocated for Pontus von Br\u00f6mssen.
+ * A393111 Distance from 2^n to the nearest base-10 palindrome.
  * @author Sean A. Irvine
  */
 public class A393111 extends Sequence0 {

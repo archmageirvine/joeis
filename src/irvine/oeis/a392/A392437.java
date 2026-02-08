@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A392437 3-composable numbers: numbers k divisible by 3 but not by 2, for which k/3 is a sum of nontrivial divisors of k.
+ * A392437 3-composable numbers: numbers k divisible by 3 but not by 2, for which k/3 is a sum of the other nontrivial divisors of k.
  * @author Sean A. Irvine
  */
 public class A392437 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a386.A386296;
 
 /**
- * A386297.
+ * A393104 allocated for Janaka Rodrigo.
  * @author Sean A. Irvine
  */
 public class A393104 extends A386296 {

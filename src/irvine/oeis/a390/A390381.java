@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a386.A386762;
 
 /**
- * A390381 allocated for Michael De Vlieger.
+ * A390381 Powers k^m, m &gt; 3, with k neither squarefree nor squareful.
  * @author Sean A. Irvine
  */
 public class A390381 extends FilterSequence {

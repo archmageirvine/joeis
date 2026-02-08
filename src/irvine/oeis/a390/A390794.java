@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390794 allocated for Robert Israel.
+ * A390794 Numbers of the form p^2 - b^2 where p is prime and b &gt; 0.
  * @author Sean A. Irvine
  */
 public class A390794 extends Sequence1 {

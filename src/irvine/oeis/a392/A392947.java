@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A392947 allocated for Arkadiusz Wesolowski.
+ * A392947 Primes p such that the multiplicative order of -2 modulo p is a multiple of 4.
  * @author Sean A. Irvine
  */
 public class A392947 extends A000040 {

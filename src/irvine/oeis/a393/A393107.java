@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000960;
 
 /**
- * A393107 allocated for Aminos Abijad.
+ * A393107 Primes in the Flavius Josephus's Sieve sequence (A000960).
  * @author Sean A. Irvine
  */
 public class A393107 extends FilterSequence {

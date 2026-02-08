@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A083659.
+ * A083670 Number of different antisymmetric relations on n unlabeled points.
  * @author Sean A. Irvine
  */
 public class A083670 extends Sequence0 {

@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 
 /**
- * A051186 Generalized Stirling number triangle of first kind.
+ * A051186 Triangle read by rows: T(n, m) = S1(n, m)*7^(n-m), where S1 are the signed Stirling numbers of first kind A008275 (n &gt;= 1, 1 &lt;= m &lt;= n).
  * @author Sean A. Irvine
  */
 public class A051186 extends A051141 {

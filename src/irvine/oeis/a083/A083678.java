@@ -8,7 +8,7 @@ import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
 
 /**
- * A083659.
+ * A083678 Numbers m = d_1 d_2 ... d_k (in base 10) with properties that k is even and d_i + d_{k+1-i} = 10 for all i.
  * @author Sean A. Irvine
  */
 public class A083678 extends Sequence1 {

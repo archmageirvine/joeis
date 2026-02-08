@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000079;
 import irvine.oeis.a092.A092176;
 
 /**
- * A083659.
+ * A093304 a(n) = A000071(n+1) + A000079(n-1) - A092176(n-1).
  * @author Sean A. Irvine
  */
 public class A093304 extends Sequence1 {

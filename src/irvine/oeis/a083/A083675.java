@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000217;
 
 /**
- * A083659.
+ * A083675 Triangular numbers whose sum of aliquot divisors is also a triangular number.
  * @author Sean A. Irvine
  */
 public class A083675 extends FilterSequence {

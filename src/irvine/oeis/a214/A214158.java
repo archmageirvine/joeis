@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.math.function.Functions;
 import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 import irvine.util.string.StringUtils;
 
@@ -11,7 +11,7 @@ import irvine.util.string.StringUtils;
  * A214158 Smallest number with n as least nonnegative primitive root, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
-public class A214158 extends Sequence1 {
+public class A214158 extends Sequence0 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final LongDynamicLongArray mFirsts = new LongDynamicLongArray();

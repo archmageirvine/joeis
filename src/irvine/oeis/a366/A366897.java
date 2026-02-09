@@ -17,7 +17,7 @@ public class A366897 extends Sequence1 {
 
   private static final long START = 100003;
   private static final int PANDIGITAL = 0b1111111111;
-  private final TreeSet<Long> mA = build();
+  private TreeSet<Long> mA = null;
 
   private TreeSet<Long> build() {
     // Computes the entire list of terms
@@ -48,6 +48,9 @@ public class A366897 extends Sequence1 {
 
   @Override
   public Z next() {
+    if (mA == null) {
+      mA = build();
+    }
     return mA.isEmpty() ? null : Z.valueOf(mA.pollFirst());
   }
 }

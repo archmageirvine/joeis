@@ -4,11 +4,11 @@ package irvine.oeis.a118;
 import irvine.math.z.Z;
 
 /**
- * A118392 Denominator of sum of reciprocals of first n tetrahedral numbers A000292.
- * Numerator is A118391
+ * A118432 Denominator of sum of reciprocals of first n 5-simplex numbers A000389.
+ * Numerator is A118431
  * @author Georg Fischer
  */
-public class A118392 extends A118391 {
+public class A118432 extends A118431 {
 
   @Override
   public Z next() {

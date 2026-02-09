@@ -9,7 +9,7 @@ import irvine.oeis.AbstractSequence;
  */
 public class A392510 extends AbstractSequence {
 
-  private final String mS = Z.valueOf(25).pow(1312000).toString();
+  private String mS = null;
   private int mN = 0;
 
   /** Construct the sequence. */
@@ -19,6 +19,9 @@ public class A392510 extends AbstractSequence {
 
   @Override
   public Z next() {
+    if (mN == 0) {
+      mS = Z.valueOf(25).pow(1312000).toString();
+    }
     if (mN >= mS.length()) {
       return null;
     }

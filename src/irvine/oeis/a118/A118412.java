@@ -4,11 +4,11 @@ package irvine.oeis.a118;
 import irvine.math.z.Z;
 
 /**
- * A118392 Denominator of sum of reciprocals of first n tetrahedral numbers A000292.
- * Numerator is A118391
+ * A118412 Denominator of sum of reciprocals of first n pentatope numbers A000332.
+ * Numerator is A118411
  * @author Georg Fischer
  */
-public class A118392 extends A118391 {
+public class A118412 extends A118411 {
 
   @Override
   public Z next() {

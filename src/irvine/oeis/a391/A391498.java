@@ -29,7 +29,7 @@ public class A391498 extends AbstractSequence {
   private static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
     String.valueOf(Runtime.getRuntime().availableProcessors())));
 
-  public static class Triangle {
+  private static final class Triangle {
     private final int mX;
     private final int mY;
     private final int mZ;  // z = 0 (up), 1 (down)
@@ -129,13 +129,13 @@ public class A391498 extends AbstractSequence {
      * @param base base (in grid units)
      * @param height height (in 60 degree grid units)
      */
-    public Trapezoid(final int base, final int height) {
+    private Trapezoid(final int base, final int height) {
       mBase = base;
       mHeight = height;
       mArea = base * base - (base - height) * (base - height);
     }
 
-    public int getArea() {
+    private int getArea() {
       return mArea;
     }
 

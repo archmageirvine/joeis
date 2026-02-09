@@ -53,7 +53,6 @@ public class TuringMachine {
         mRules.put(new Point(state, c), new Triple<>(q1 + 1, q2, 2 * q3 - 1));
       }
     }
-
   }
 
   /**

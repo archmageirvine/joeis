@@ -23,7 +23,7 @@ public class A083653 extends Sequence0 {
     while ((pos = mS.indexOf(s)) < 0) {
       // Avoid extending the string too often but doing it in blocks
       for (int k = 0; k < STEP; ++k) {
-        int t = mS.length();
+        final int t = mS.length();
         mS.append(Long.toBinaryString(++mM));
         for (int j = t; j < mS.length(); ++j) {
           mPosToM.set(j, mM);

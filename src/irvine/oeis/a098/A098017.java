@@ -25,15 +25,15 @@ public class A098017 extends Sequence2 {
     {Z.ONE, Z.NEG_ONE, Z.ZERO, Z.ONE},
     {Z.NEG_ONE, Z.ONE, Z.NEG_ONE, Z.ZERO}
   }, Z.ZERO);
-  private static final MatrixRing<Z> RING = new MatrixRing<>(4, Integers.SINGLETON);
+  private static final MatrixRing<Z> RING = new MatrixRing<>(M.rows(), Integers.SINGLETON);
   private Matrix<Z> mM = RING.multiply(M, C);
-  private int mR = 4;
-  private int mC = 4;
+  private long mR = mM.rows();
+  private long mC = mM.cols();
 
   @Override
   public Z next() {
-    if (++mC >= 4) {
-      if (++mR >= 4) {
+    if (++mC >= mM.rows()) {
+      if (++mR >= mM.cols()) {
         mM = RING.multiply(M, mM);
         mR = 0;
       }

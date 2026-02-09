@@ -19,10 +19,11 @@ public class A388722 extends Sequence1 {
     Z x = Z.valueOf(++mN);
     long cnt = 0;
     final HashMap<Z, Long> map = new HashMap<>();
-    while (map.putIfAbsent(x, cnt) == null) {
+    while (!x.isZero() && map.putIfAbsent(x, cnt) == null) {
       ++cnt;
       x = Functions.SIGMA1.z(x).subtract(x.multiply2()).abs();
     }
     return Z.valueOf(x.isZero() ? cnt : map.get(x));
   }
 }
+

@@ -74,6 +74,13 @@ public class ParallelPermutationSequence extends AbstractSequence implements Dir
     return 1;
   }
 
+  /**
+   * Called once at the start of a new counting requested (i.e., once for each n).
+   * @param n permutation size
+   */
+  protected void prepare(final int n) {
+  }
+
   /** "Importunate" is an anagram of "permutation". */
   private final class Importunate {
 
@@ -126,6 +133,7 @@ public class ParallelPermutationSequence extends AbstractSequence implements Dir
 
   @Override
   public Z a(final int n) {
+    prepare(n);
     Z count = Z.ZERO;
     switch (n) {
       case 0:

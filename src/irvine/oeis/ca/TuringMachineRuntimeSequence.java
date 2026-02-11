@@ -13,7 +13,7 @@ public class TuringMachineRuntimeSequence extends AbstractSequence {
   private final TuringMachine mTuringMachine;
   private long mN;
 
-  public TuringMachineRuntimeSequence(final int offset, final int machineNumber) {
+  protected TuringMachineRuntimeSequence(final int offset, final int machineNumber) {
     super(offset);
     mTuringMachine = new TuringMachine(machineNumber);
     mN = offset - 1;

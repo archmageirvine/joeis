@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A081049 Generalized Stirling numbers of the first kind.
+ * A081049 a(n) = n! - Stirling1(n+1, 2) where Stirling1 is A048994.
  * E.g.f.: 1/(1-x) - log(1+x)/(1+x)
  * @author Georg Fischer
  */

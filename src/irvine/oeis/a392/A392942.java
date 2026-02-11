@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392942 allocated for Felix Huber.
+ * A392942 Distinct semiperimeters of triangles with integer sides, integer area, and integer circumradius.
  * @author Sean A. Irvine
  */
 public class A392942 extends Sequence1 {

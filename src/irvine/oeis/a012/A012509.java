@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012509 E.g.f.: -log(cos(x)*cos(x)) (even powers only).
+ * A012509 Expansion of e.g.f. -log(cos(x)*cos(x)) (even powers only).
  * @author Sean A. Irvine
  */
 public class A012509 extends Sequence0 {

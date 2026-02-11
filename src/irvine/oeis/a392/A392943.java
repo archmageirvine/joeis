@@ -3,7 +3,7 @@ package irvine.oeis.a392;
 import irvine.math.z.Z;
 
 /**
- * A392943 allocated for Felix Huber.
+ * A392943 a(n) is the number of integer-sided triangles whose area and circumradius are integers, and whose semiperimeter equals A392942(n).
  * @author Sean A. Irvine
  */
 public class A392943 extends A392942 {

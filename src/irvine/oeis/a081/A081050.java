@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A081050 Generalized Stirling numbers of the first kind.
+ * A081050 a(n) = (n! - Stirling1(n+1, 2))*(-1)^n where Stirling1 is A048994.
  * @author Georg Fischer
  */
 public class A081050 extends LambdaSequence {

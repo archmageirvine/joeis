@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A330769 a(n) = Product_{k=n..2*n} prime(k).
+ * A330769 a(n) = Product_{k=max(1,n)..2*n} prime(k).
  * a(n) = prod(k=n,2*n,prime(k))
  * @author Georg Fischer
  */

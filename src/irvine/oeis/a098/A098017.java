@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A098017 M={{0, 1, -1, 1}, {-1, 0, 1, -1}, {1, -1, 0, 1}, {-1, 1, -1, 0}}; a(n) =M*a(n-1); a(0):={{0, 1, 1, 2}, {1, 1, 2, 3}, {1, 2, 3, 5}, {2, 3, 5, 8}}.
+ * A098017 Absolute values of elements of flattened successive matrices B(k), k&gt;=2, read by rows where B(k) = M^k*C, where M=[[0, 1, -1, 1], [-1, 0, 1, -1], [1, -1, 0, 1], [-1, 1, -1, 0]] and C = [[0, 1, 1, 2], [1, 1, 2, 3], [1, 2, 3, 5], [2, 3, 5, 8]].
  * @author Sean A. Irvine
  */
 public class A098017 extends Sequence2 {

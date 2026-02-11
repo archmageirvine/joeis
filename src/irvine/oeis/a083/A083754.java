@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A083747.
+ * A083754 a(1) = 1 and then smallest odd number not occurring earlier such that the concatenation a(1)a(2)a(3)... is a prime.
  * @author Sean A. Irvine
  */
 public class A083754 extends Sequence1 {

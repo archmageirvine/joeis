@@ -6,7 +6,7 @@ import irvine.oeis.ParallelPermutationSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A391687 allocated for Donghwi Park.
+ * A391687 Number of bordered magic squares of order n composed of the numbers from 1 to n^2, counted up to rotations and reflections.
  * @author Sean A. Irvine
  */
 public class A391687 extends Sequence1 {

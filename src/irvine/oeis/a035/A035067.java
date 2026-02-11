@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a034.A034886;
 
 /**
- * A035067 n! has a palindromic prime number of digits.
+ * A035067 Numbers k such that k! has a palindromic prime number of digits.
  * @author Sean A. Irvine
  */
 public class A035067 extends A034886 {

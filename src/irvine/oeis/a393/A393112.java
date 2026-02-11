@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A083747.
+ * A393112 Integers k &gt;= 4 such that 2^k is record-close to a base-10 palindrome, in the sense that A393111(k)/2^(k/2) sets a new minimum.
  * @author Sean A. Irvine
  */
 public class A393112 extends Sequence1 {

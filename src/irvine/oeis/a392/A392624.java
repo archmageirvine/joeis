@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392624 allocated for Natalia L. Skirrow.
+ * A392624 Parallelized coupon collector's problem: With n fair n-sided dice, a(n) = numerator(E(n)) where E(n) is the expected number of turns for n coordinating mice to have every face present.
  * @author Sean A. Irvine
  */
 public class A392624 extends Sequence1 {

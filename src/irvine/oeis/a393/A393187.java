@@ -3,7 +3,7 @@ package irvine.oeis.a393;
 import irvine.oeis.ca.TuringMachineSequence;
 
 /**
- * A393187 allocated for Sean A. Irvine.
+ * A393187 a(n) = n XOR (2 * (n AND -n)) assuming a two's complement representation of negative values.
  * @author Sean A. Irvine
  */
 public class A393187 extends TuringMachineSequence {

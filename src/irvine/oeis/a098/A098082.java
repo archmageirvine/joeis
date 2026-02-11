@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A098054 Let M={{0,1},{1,1}}, M0=MatrixPower[(M-IdentityMatrix[2]),2], Det[M0]; a[n_]:=M0.a[n-1]; a[0]:={{0,1},{1,1}}.
+ * A098082 Absolute values of elements of flattened successive matrices B(k), k&gt;=0, read by rows where B(k) = M^k*C where M=[[-1, 1, 0], [0, -1, 1], [1, 1, -1]] and C = [[0, 1, 1], [1, 1, 1], [1, 1, 2]].
  * @author Sean A. Irvine
  */
 public class A098082 extends Sequence2 {

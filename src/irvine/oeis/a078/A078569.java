@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A078569 Numbers n such that A078568(n) is prime.
+ * A078569 Numbers k such that A078568(k) is prime.
  * @author Sean A. Irvine
  */
 public class A078569 extends FilterPositionSequence {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002113;
 
 /**
- * A083747.
+ * A083753 Smallest palindromic number with exactly n divisors, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A083753 extends Sequence1 implements Conjectural {

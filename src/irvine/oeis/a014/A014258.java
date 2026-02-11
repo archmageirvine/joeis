@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A014258 Iccanobif numbers: add previous two terms and reverse the sum.
+ * A014258 Iccanobif numbers: add previous two terms and reverse the sum, starting with 0, 1.
  * @author Sean A. Irvine
  */
 public class A014258 extends Sequence0 {

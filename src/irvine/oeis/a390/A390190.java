@@ -4,7 +4,7 @@ package irvine.oeis.a390;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A390190 a(n) is the number of square tiles in ring n (n &gt;= 0) symmetric about a vertex of the hyperbolic regular tiling with Schl√§fli symbol {4,5}.
+ * A390190 a(n) is the number of square tiles in ring n (n &gt;= 0) symmetric about a vertex of the hyperbolic regular tiling with Schl\u00e4fli symbol {4,5}.
  * @author Georg Fischer
  */
 public class A390190 extends HolonomicRecurrence {

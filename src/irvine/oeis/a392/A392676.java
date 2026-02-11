@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392676 allocated for Clark Kimberling.
+ * A392676 Irregular triangular array read by rows: row n shows the coefficients of the irreducible polynomial p(u) when the expansion of the n-th derivative of tan(x) is expressed in the form 2^q*(1 + u^2)*p(u) if n is odd, and 2^q*u*(1 + u^2)*p(u) if n is even, where u = tan(x).
  * @author Sean A. Irvine
  */
 public class A392676 extends Sequence1 {

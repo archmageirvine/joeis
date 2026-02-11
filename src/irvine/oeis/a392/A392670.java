@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002487;
 import irvine.oeis.a046.A046699;
 
 /**
- * A392670 allocated for V. V. Muromtsev.
+ * A392670 Triangle read by rows where row n is the numerators of the node values in a preorder traversal of the Calkin-Wilf tree with n levels, columns 0 &lt;= k &lt; 2^n-1.
  * @author Sean A. Irvine
  */
 public class A392670 extends Sequence1 {

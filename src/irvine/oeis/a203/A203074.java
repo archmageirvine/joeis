@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a014.A014210;
 
 /**
- * A203074 a(0)=1; for n &gt; 0, a(n) = next prime after 2^(n-1).
+ * A203074 a(0) = 1; for n &gt; 0, a(n) = next prime after 2^(n-1).
  * @author Georg Fischer
  */
 public class A203074 extends PrependSequence {

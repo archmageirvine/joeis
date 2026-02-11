@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A083747.
+ * A083750 Numbers k such that 2111131111...p(k-1)1111p(k) is prime.
  * @author Sean A. Irvine
  */
 public class A083750 extends A000040 {

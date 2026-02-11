@@ -6,7 +6,7 @@ package irvine.oeis.a081;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A081048 Signed Stirling numbers of the first kind.
+ * A081048 a(n) = Stirling1(n+1, 2) where Stirling1 is A048994.
  * @author Georg Fischer
  */
 public class A081048 extends HolonomicRecurrence {

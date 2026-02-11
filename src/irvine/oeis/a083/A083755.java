@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A083747.
+ * A083755 Primes arising in A083754.
  * @author Sean A. Irvine
  */
 public class A083755 extends Sequence1 {

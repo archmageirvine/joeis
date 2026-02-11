@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A082922 Numbers n such that when the digits of Fibonacci(n) are sorted into decreasing order and zeros are dropped it is a prime.
+ * A082922 Numbers k such that when the digits of Fibonacci(k) are sorted into decreasing order and zeros are dropped it is a prime.
  * @author Sean A. Irvine
  */
 public class A082922 extends Sequence1 {

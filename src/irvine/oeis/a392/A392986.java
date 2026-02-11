@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001597;
 
 /**
- * A366897.
+ * A392986 allocated for Michael De Vlieger.
  * @author Sean A. Irvine
  */
 public class A392986 extends A001597 {

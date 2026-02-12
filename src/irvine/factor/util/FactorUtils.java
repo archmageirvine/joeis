@@ -69,6 +69,15 @@ public final class FactorUtils {
   }
 
   /**
+   * Return the smallest number have the same prime signature as the given number.
+   * @param n number to get corresponding least prime signature for
+   * @return least number with same prime signature
+   */
+  public static Z leastPrimeSignature(final long n) {
+    return leastPrimeSignature(Z.valueOf(n));
+  }
+
+  /**
    * Concatenate the non-trivial divisors of the given number.
    * @param n number to evaluate
    * @return concatenation of non-trivial divisors

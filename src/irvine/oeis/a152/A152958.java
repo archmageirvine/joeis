@@ -8,7 +8,7 @@ import irvine.oeis.a019.A019554;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A152958 Alladi&apos;s third-order function phi_3(n).
+ * A152958 Alladi's third-order function phi_3(n).
  * @author Georg Fischer
  */
 public class A152958 extends SingleTransformSequence {

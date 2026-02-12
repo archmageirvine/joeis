@@ -8,7 +8,7 @@ import irvine.oeis.a006.A006752;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A393256 Decimal expansion of Pi*G - (3/8)*zeta(3), where G is Catalan&apos;s constant (A006752).
+ * A393256 Decimal expansion of Pi*G - (3/8)*zeta(3), where G is Catalan's constant (A006752).
  * @author Georg Fischer
  */
 public class A393256 extends DecimalExpansionSequence {

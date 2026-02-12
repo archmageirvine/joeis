@@ -11,7 +11,7 @@ import irvine.oeis.Sequence1;
 public class A083773 extends Sequence1 {
 
   private int mN = -1;
-  private int mI = 0;
+  private int mM = 0;
 
   @Override
   public Z next() {
@@ -20,28 +20,28 @@ public class A083773 extends Sequence1 {
       return Z.ONE;
     }
     if (mN == 0) {
-      final Z res = Z.valueOf(++mI);
-      if (mI > 1) {
+      final Z res = Z.valueOf(++mM);
+      if (mM > 1) {
         ++mN;
-        mI = 0;
+        mM = 0;
       }
       return res;
     }
-    if (mI < mN) {
-      return Z.valueOf(++mI);
+    if (mM < mN) {
+      return Z.valueOf(++mM);
     }
     // Second to last term of row
     final Z fac = Functions.FACTORIAL.z(mN);
-    if (mI == mN) {
-      while (!fac.multiply(++mI).add(1).isProbablePrime()) {
+    if (mM == mN) {
+      while (!fac.multiply(++mM).add(1).isProbablePrime()) {
         // do nothing
       }
-      return Z.valueOf(mI);
+      return Z.valueOf(mM);
     }
     // Final term of the row
     boolean fails = true;
-    final Z fi = fac.multiply(mI);
-    long j = mI;
+    final Z fi = fac.multiply(mM);
+    long j = mM;
     while (fails) {
       ++j;
       final Z t = fi.multiply(j);
@@ -55,7 +55,7 @@ public class A083773 extends Sequence1 {
         }
       }
     }
-    mI = 0;
+    mM = 0;
     ++mN;
     return Z.valueOf(j);
   }

@@ -106,6 +106,21 @@ public class TuringMachine {
   }
 
   /**
+   * Check if this Turing machine never halts because it only ever moves left.
+   * Machines might, of course, also fail to halt only for some inputs or for
+   * other reasons not tested here.
+   * @return true if the machine provably never halts
+   */
+  public boolean neverHalts() {
+    for (final Triple<Integer> t : mRules.values()) {
+      if (t.right() > 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  /**
    * Run a particular machine.
    * @param args machine-number tape
    */

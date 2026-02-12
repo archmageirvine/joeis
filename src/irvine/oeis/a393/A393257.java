@@ -6,7 +6,7 @@ import irvine.oeis.a006.A006752;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A393257 Decimal expansion of Pi*G, where G is Catalan&apos;s constant (A006752).
+ * A393257 Decimal expansion of Pi*G, where G is Catalan's constant (A006752).
  * @author Georg Fischer
  */
 public class A393257 extends DecimalExpansionSequence {

@@ -7,7 +7,7 @@ import irvine.math.q.Rationals;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A111177 Number of base n numbers in which each digit appears at most once (all unnecessary 0&apos;s deleted).
+ * A111177 Number of base n numbers in which each digit appears at most once (all unnecessary 0's deleted).
  * @author Georg Fischer
  */
 public class A111177 extends LambdaSequence {

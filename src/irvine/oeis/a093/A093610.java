@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.BeattySequence;
 
 /**
- * A093610 Lower Beatty sequence for e^G, G = Euler&apos;s gamma constant.
+ * A093610 Lower Beatty sequence for e^G, G = Euler's gamma constant.
  * @author Georg Fischer
  */
 public class A093610 extends BeattySequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a079.A079900;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A120447 a(n) is the multiplier of the primorial which furnishes the &quot;one-line proof&quot; for primality of prime(n) associated with A079900(n); i.e., k*(p+k) = primorial(q)*a(n), where k = A079900(n), p = prime(n) and q = sqrt(p).
+ * A120447 a(n) is the multiplier of the primorial which furnishes the "one-line proof" for primality of prime(n) associated with A079900(n); i.e., k*(p+k) = primorial(q)*a(n), where k = A079900(n), p = prime(n) and q = sqrt(p).
  * @author Georg Fischer
  */
 public class A120447 extends SingleTransformSequence {

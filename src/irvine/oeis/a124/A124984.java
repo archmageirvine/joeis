@@ -8,17 +8,17 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A124984 Primes of the form 8*k + 3 generated recursively. Initial prime is 3. General term is a(n) = Min_{p is prime; p divides 2 + Q^2; p == 3 (mod 8)},
- * where Q is the product of previous terms in the sequence.
+ * A124984 Primes of the form 8*k + 3 generated recursively. Initial prime is 3. General term is a(n) = Min_{p is prime; p divides 2 + Q^2; p == 3 (mod 8)}, where Q is the product of previous terms in the sequence.
  * @author Georg Fischer
+ * @author Sean A. Irvine
  */
 public class A124984 extends AbstractSequence {
 
-  private int mN; // current index
-  private int mFactor; // p == mResidue mod mFactor
-  private int mResidue;
-  private Function<Z, Z> mLambda; // 
-  private Z mQ; // product of previous terms in the sequence 
+  private final int mFactor; // p == mResidue mod mFactor
+  private final int mResidue;
+  private final Function<Z, Z> mLambda; // function defining the form
+  private boolean mFirst = true;
+  private Z mQ; // product of previous terms in the sequence
 
   /** Construct the sequence. */
   public A124984() {
@@ -26,37 +26,52 @@ public class A124984 extends AbstractSequence {
   }
 
   /**
-   * Generic constructor with parameters
+   * Construct a sequence based on finding prime factors of a particular modulo class.
    * @param offset first index
    * @param init initial prime
    * @param factor p == residue mod factor
    * @param residue the residue
    * @param lambda expression in mQ that is divisible by p
    */
-  public A124984(final int offset, final Z init, final int factor, final int residue, final Function<Z, Z> lambda) {
+  protected A124984(final int offset, final Z init, final int factor, final int residue, final Function<Z, Z> lambda) {
     super(offset);
-    mN = 0;
     mQ = init;
     mFactor = factor;
     mResidue = residue;
     mLambda = lambda;
+    Jaguar.setVerbose("true".equals(System.getProperty("oeis.verbose")));
   }
 
   @Override
   public Z next() {
-//  (PARI) lista(nn) = my(f, q=3); print1(q); 
-//  for(n=2, nn, f=factor(2+q^2)[, 1]~; for(i=1, #f, if(f[i]%8==3, print1(", ", f[i]); q*=f[i]; break)));
-    if (++mN == 1) {
+    if (mFirst) {
+      mFirst = false;
       return mQ;
     }
-    final FactorSequence fs = Jaguar.factor(mLambda.apply(mQ));
+    // Because we only need the least prime factor of a particular form
+    // we can often get away with using a partial factorization.
+    // This has some chance of making a mistake, if any unfactored part
+    // happens to contain a smaller prime of the required form, but
+    // this is unlikely to occur in practice.
+    final Z m = mLambda.apply(mQ);
+    final FactorSequence fs = Jaguar.factorAllowIncomplete(m);
     for (final Z f : fs.toZArray()) {
-      if (f.mod(mFactor) == mResidue) {
-        mQ = mQ.multiply(f);
-        return f;
+      if (fs.getStatus(f) == FactorSequence.PRIME || fs.getStatus(f) == FactorSequence.PROB_PRIME) {
+        if (f.mod(mFactor) == mResidue) {
+          mQ = mQ.multiply(f);
+          return f;
+        }
+      } else {
+        // Composite factor found prior to finding a prime of the required form.
+        // Since we cannot know if composite factor is divisible by a prime of
+        // required form we give up.
+        break;
       }
     }
-    return mQ;
+    if (!fs.isComplete()) {
+      throw new UnsupportedOperationException("Unfactored: " + m + " -> " + FactorSequence.toString(fs));
+    }
+    return mQ; // rare case where m has no factor of the required form
   }
 
 }

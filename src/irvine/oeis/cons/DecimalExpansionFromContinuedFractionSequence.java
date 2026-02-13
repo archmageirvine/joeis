@@ -28,6 +28,9 @@ public class DecimalExpansionFromContinuedFractionSequence extends DecimalExpans
 
       private void step() {
         final Z a = mCf.next();
+        if (a == null) {
+          return;
+        }
         final Z h = a.multiply(mH1).add(mH0);
         final Z k = a.multiply(mK1).add(mK0);
         mH0 = mH1;

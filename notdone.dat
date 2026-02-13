@@ -2718,3 +2718,9 @@ A083409 Number of prime k-tuplet constellations; i.e., patterns with minimal dia
 A083544 a(n) = maximal value of the sum of Mobius function values over a block of n consecutive natural numbers.
 A083556 n-th Payam number E_{+}(n), defined as the smallest positive odd integer k such that for every positive integer n, the number k*2^n+1 is not divisible by any primes p such that the multiplicative order of 2 mod p is less than or equal to e.
 A083573 Maximal number of subgroups in a non-Abelian group with n elements, or zero if there are no non-Abelian groups of order n.
+A083779 n-th row of the following triangle contains n even numbers such that every sum of n-1 of them + 1 is a prime. Sequence contains the triangle by rows.
+A083780 Diagonal of A083779.
+A083781 Triangle of primes associated with A083779.
+A083782 n-th row of the following triangle contains n distinct natural numbers such that every sum of n-1 of them +1 is a prime, n>1, with a(1) = 1 by convention. Sequence contains the triangle by rows.
+A083783 Diagonal of A083782.
+A083784 Triangle of primes derived from A083782.

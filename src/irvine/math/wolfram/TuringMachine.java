@@ -16,21 +16,29 @@ import irvine.util.array.LongDynamicByteArray;
  */
 public class TuringMachine {
 
-  // Maps (state,symbol) -> (state,symbols,direction)
+  // Maps (state,symbol) -> (state,symbol,direction)
   private final Map<Point, Triple<Integer>> mRules = new HashMap<>();
   private LongDynamicByteArray mTape = new LongDynamicByteArray();
   private long mPosition = 0;
   private int mState = 1;
 
   // Untested for states and symbols != 2
-  private TuringMachine(final int machineNumber, final int states, final int symbols) {
+
+  /**
+   * Construct a Turing machine
+   * @param machineNumber Wolfram machine number
+   * @param states number of states
+   * @param symbols number of symbols
+   */
+  public TuringMachine(final int machineNumber, final int states, final int symbols) {
     // Reverse engineered from description on p. 888 of ANKOS
 
     // Step 1: digits = Reverse[IntegerDigits[machineNumber, 8, 4]] (LSB first)
     final List<Integer> digits = new ArrayList<>();
-    for (int i = 0, temp = machineNumber; i < states * symbols; i++) {
-      digits.add(temp & 7);
-      temp >>>= 3;
+    final int mod = 2 * states * symbols;
+    for (int i = 0, m = machineNumber; i < states * symbols; i++) {
+      digits.add(m % mod);
+      m /= mod;
     }
 
     // Step 2: Partition digits into rows of length symbols
@@ -47,8 +55,8 @@ public class TuringMachine {
         // Correct LHS: state = states + 1 - (r+1), read = 0-based
         final int state = states + 1 - (r + 1);
         // Compute RHS
-        final int q1 = (val >>> 2) & 1;
-        final int q2 = (val >>> 1) & 1;
+        final int q1 = val >>> 2;
+        final int q2 = (val >>> 1) & 1; // todo this only value for symbols == 2
         final int q3 = val & 1;
         mRules.put(new Point(state, c), new Triple<>(q1 + 1, q2, 2 * q3 - 1));
       }

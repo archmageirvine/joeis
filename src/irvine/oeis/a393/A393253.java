@@ -9,9 +9,7 @@ import irvine.oeis.CachedSequence;
  */
 public class A393253 extends CachedSequence {
 
-  // todo doesn't reproduce
-
-  private static final long[] SMALL = {0, 1, 1, 2, 2};
+  private static final long[] SMALL = {0, 1, 1, 2};
 
   /** Construct the sequence. */
   public A393253() {
@@ -22,13 +20,12 @@ public class A393253 extends CachedSequence {
       final int m = n >>> 2;
       switch (n & 3) {
         case 0:
-          return self.a(n / 2).multiply2();
+          return self.a(m).multiply2();
         case 1:
         case 2:
           return self.a(m).multiply2().subtract(self.a(2 * m)).add(self.a(2 * m + 1));
         case 3:
         default:
-          //2*a(n) - 2*a(2n) - 2*a(2n+1)
           return self.a(m).subtract(self.a(2 * m)).add(self.a(2 * m + 1)).multiply2();
       }
     });

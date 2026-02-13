@@ -1,21 +1,38 @@
 package irvine.oeis.a061;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A061480 n-th digit in decimal expansion of 1/n.
  * @author Sean A. Irvine
  */
-public class A061480 extends Sequence1 {
+public class A061480 extends AbstractSequence {
 
-  private long mN = 0;
+  private int mN;
   private Z mT = Z.ONE;
+  private final Z mBase;
+
+  /** Construct the sequence. */
+  public A061480() {
+    this(1, 10);
+  }
+
+  /**
+   * Generic constructor with parameter.
+   * @param offset first index
+   * @param base number base
+   */
+  public A061480(final int offset, final int base) {
+    super(1);
+    mN = 0;
+    mBase = Z.valueOf(base);
+  }
 
   @Override
   public Z next() {
-    mT = mT.multiply(10);
-    return mT.divide(++mN).mod(Z.TEN);
+    mT = mT.multiply(mBase);
+    return mT.divide(++mN).mod(mBase);
   }
 }
 

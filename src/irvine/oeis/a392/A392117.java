@@ -59,7 +59,7 @@ public class A392117 extends Sequence1 {
       ++k;
     }
     final Z t = u.add(mS.a(mN));
-    while (mS.a(++k).compareTo(t) <= 0 /* || mV.contains(mS.a(k))*/) {
+    while (mS.a(++k).compareTo(t) < 0 || mV.contains(mS.a(k))) {
       // do nothing
     }
     final Z v = mS.a(k);

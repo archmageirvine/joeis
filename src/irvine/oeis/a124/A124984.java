@@ -6,6 +6,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.util.string.StringUtils;
 
 /**
  * A124984 Primes of the form 8*k + 3 generated recursively. Initial prime is 3. General term is a(n) = Min_{p is prime; p divides 2 + Q^2; p == 3 (mod 8)}, where Q is the product of previous terms in the sequence.
@@ -14,6 +15,7 @@ import irvine.oeis.AbstractSequence;
  */
 public class A124984 extends AbstractSequence {
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final int mFactor; // p == mResidue mod mFactor
   private final int mResidue;
   private final Function<Z, Z> mLambda; // function defining the form
@@ -39,7 +41,6 @@ public class A124984 extends AbstractSequence {
     mFactor = factor;
     mResidue = residue;
     mLambda = lambda;
-    Jaguar.setVerbose("true".equals(System.getProperty("oeis.verbose")));
   }
 
   @Override
@@ -54,6 +55,9 @@ public class A124984 extends AbstractSequence {
     // happens to contain a smaller prime of the required form, but
     // this is unlikely to occur in practice.
     final Z m = mLambda.apply(mQ);
+    if (mVerbose) {
+      StringUtils.message("Factoring: " + m);
+    }
     final FactorSequence fs = Jaguar.factorAllowIncomplete(m);
     for (final Z f : fs.toZArray()) {
       if (fs.getStatus(f) == FactorSequence.PRIME || fs.getStatus(f) == FactorSequence.PROB_PRIME) {

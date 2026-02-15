@@ -15,13 +15,7 @@ import irvine.oeis.Sequence0;
  */
 public class A393296 extends Sequence0 {
 
-  // After Ludovic Schwob
-
   private Set<Set<List<Integer>>> mL = null;
-
-  /** Construct the sequence. */
-  public A393296() {
-  }
 
   private static Set<List<Integer>> up(final List<Integer> p) {
     final Set<List<Integer>> res = new HashSet<>();
@@ -62,6 +56,10 @@ public class A393296 extends Sequence0 {
   @Override
   public Z next() {
     if (mL == null) {
+      mL = Collections.emptySet();
+      return Z.ONE;
+    }
+    if (mL.isEmpty()) {
       final Set<List<Integer>> base = new HashSet<>();
       base.add(Collections.emptyList());
       mL = Collections.singleton(base);

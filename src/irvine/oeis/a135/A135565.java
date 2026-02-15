@@ -8,7 +8,7 @@ import irvine.oeis.a007.A007569;
 import irvine.oeis.a007.A007678;
 
 /**
- * A135565 Number of line segments in regular n-gon with all diagonals drawn.
+ * A135565 Number of line segments (or edges) in regular n-gon with all diagonals drawn.
  * @author Georg Fischer
  */
 public class A135565 extends Sequence1 {

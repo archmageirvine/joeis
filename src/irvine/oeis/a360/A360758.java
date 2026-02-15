@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A360758 Numbers k for which k&apos; - 1 and k&apos; + 1 are twin primes, where the prime denotes the arithmetic derivative.
+ * A360758 Numbers k for which k' - 1 and k' + 1 are twin primes, where the prime denotes the arithmetic derivative.
  * @author Georg Fischer
  */
 public class A360758 extends FilterNumberSequence {

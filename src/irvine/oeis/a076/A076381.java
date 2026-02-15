@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterLambdaSequence;
 
 /**
- * A076381 Numbers n such that sum of digits in base 3 is a divisor of sum of prime divisors (A008472).
+ * A076381 Numbers k such that sum of digits in base 3 is a divisor of sum of prime divisors (A008472).
  * @author Georg Fischer
  */
 public class A076381 extends FilterLambdaSequence {

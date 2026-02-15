@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A111415 f(f(n+1))-f(f(n)), where f(m) = Pell(m) = A000129(m).
+ * A111415 a(n) = f(f(n+1)) - f(f(n)), where f(m) = Pell(m) = A000129(m).
  * @author Georg Fischer
  */
 public class A111415 extends LambdaSequence {

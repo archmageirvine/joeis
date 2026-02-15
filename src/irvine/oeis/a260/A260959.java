@@ -4,7 +4,7 @@ package irvine.oeis.a260;
 import irvine.oeis.a257.A257638;
 
 /**
- * A260959 Numbers n such that n is the average of four consecutive primes n-13, n-1, n+1 and n+13.
+ * A260959 Numbers k such that k is the average of four consecutive primes k-13, k-1, k+1 and k+13.
  * @author Georg Fischer
  */
 public class A260959 extends A257638 {

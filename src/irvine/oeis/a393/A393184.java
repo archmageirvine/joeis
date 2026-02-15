@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393184 allocated for Felix Huber.
+ * A393184 Numbers that are the larger of two distinct positive integers with opposite abundances, where this pair of abundances occurs for the first time; sorted by the larger term.
  * @author Sean A. Irvine
  */
 public class A393184 extends Sequence1 {

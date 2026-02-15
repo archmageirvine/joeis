@@ -6,7 +6,7 @@ import irvine.oeis.a066.A066158;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A192074 a(n) = A066158(n)-2 with a(0)=1.
+ * A192074 a(1) = 0 and a(n) = A066158(n)-2 for n &gt; 1.
  * @author Georg Fischer
  */
 public class A192074 extends SimpleTransformSequence {

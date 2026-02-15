@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007310;
 
 /**
- * A393012 allocated for David A. Corneth.
+ * A393012 List giving least 5-rough number (A007310) of each prime signature.
  * @author Sean A. Irvine
  */
 public class A393012 extends A007310 {

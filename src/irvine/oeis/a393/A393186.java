@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393186 allocated for Felix Huber.
+ * A393186 a(n) is the abundance of A393184(n) or, equivalently, the deficiency of A393185(n).
  * @author Sean A. Irvine
  */
 public class A393186 extends Sequence1 {

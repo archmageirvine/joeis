@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a392.A392758;
 
 /**
- * A391879 allocated for Juri-Stepan Gerasimov.
+ * A391879 Numbers k such that A392758(k) = A392758(k + 1), where A392758(k) = number of divisors of k which are not primorials.
  * @author Sean A. Irvine
  */
 public class A391879 extends A392758 {

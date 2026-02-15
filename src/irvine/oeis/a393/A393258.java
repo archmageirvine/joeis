@@ -8,7 +8,7 @@ import irvine.oeis.a025.A025487;
 import irvine.oeis.a147.A147516;
 
 /**
- * A393258 allocated for David A. Corneth.
+ * A393258 a(n) is the position of A003961(A025487(n)) in A147516.
  * @author Sean A. Irvine
  */
 public class A393258 extends A025487 {

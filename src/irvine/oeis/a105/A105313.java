@@ -4,7 +4,7 @@ package irvine.oeis.a105;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A105313 From the 4-symbol substitution 1-&gt;{2, 3, 4}, 2-&gt;{1, 3, 4}, 3-&gt;{1, 2, 4}, 4-&gt;{1, 2, 3}.
+ * A105313 Triangle read by rows, based on the morphism f: 1-&gt;432, 2-&gt;431, 3-&gt;421, 4-&gt;321. First row is 1. If current row is a,b,c,..., then the next row is a,b,c,...,f(a),f(b),f(c),...
  * @author Georg Fischer
  */
 public class A105313 extends MorphismFixedPointSequence {

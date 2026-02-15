@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A057687 Trajectory of 29 under the `29x+1' map.
+ * A057687 Trajectory of 29 under the `29x+1' map: x -&gt; x/p if p = least prime factor(x) &lt; 29, else x*29 + 1.
  * @author Sean A. Irvine
  */
 public class A057687 extends Sequence0 {

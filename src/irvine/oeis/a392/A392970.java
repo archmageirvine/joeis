@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392970 allocated for Michael De Vlieger.
+ * A392970 a(n) = prime(n)^(prime(n+prime(n)-1) - prime(n) + 1) * Product_{k=1..prime(n)-1} prime(k+n).
  * @author Sean A. Irvine
  */
 public class A392970 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393168 allocated for Emmanuel Osalotioman Osazuwa.
+ * A393168 Integers k which can be written in the form x^2 + y^2 - z^2, where x, y, z are integers and x^2, y^2, z^2 &lt;= k.
  * @author Sean A. Irvine
  */
 public class A393168 extends Sequence1 {

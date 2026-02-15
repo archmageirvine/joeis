@@ -6,7 +6,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**
- * A083747.
+ * A393317 Maximum halting time for any of the 4096 Wolfram 2-state 2-symbol Turing machines across all n-bit inputs.
  * @author Sean A. Irvine
  */
 public class A393317 extends Sequence1 implements Conjectural {

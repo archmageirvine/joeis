@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A061306 Bell Bell numbers: a(n+1) = B(a(n)), where B() are the Bell numbers, A000110.
+ * A061306 Bell Bell numbers: a(n) = B(B(n)), where B() are the Bell numbers, A000110.
  * @author Sean A. Irvine
  */
 public class A061306 extends Sequence0 {

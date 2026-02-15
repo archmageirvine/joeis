@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a386.A386296;
 
 /**
- * A393267 allocated for Janaka Rodrigo.
+ * A393267 Array read by descending antidiagonals T(n,k) is the minimum total surface area of k-element sets of distinct integer-sided cuboids that fill an n X n X n cube.
  * @author Sean A. Irvine
  */
 public class A393267 extends A386296 {

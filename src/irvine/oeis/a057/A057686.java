@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A057686 Trajectory of 23 under the `23x+1' map.
+ * A057686 Trajectory of 23 under the `23x+1' map: x -&gt; x/p if p = least prime factor &lt; 23, else x*23 + 1.
  * @author Sean A. Irvine
  */
 public class A057686 extends Sequence0 {

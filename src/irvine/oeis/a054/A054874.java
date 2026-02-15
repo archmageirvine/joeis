@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A054874 a(n) = 2^(sum of a(i) where i&lt;n).
+ * A054874 a(n) = 2^(Sum_{i&lt;n} a(i)).
  * @author Sean A. Irvine
  */
 public class A054874 extends Sequence0 {

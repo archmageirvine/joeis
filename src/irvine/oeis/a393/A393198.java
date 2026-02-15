@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence3;
 
 /**
- * A393198 allocated for Diego Artacho.
+ * A393198 a(n) is the least value of m such that n has a prime number of ones in its base m expansion.
  * @author Sean A. Irvine
  */
 public class A393198 extends Sequence3 {

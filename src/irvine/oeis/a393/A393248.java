@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393248 allocated for Ctibor O. Zizka.
+ * A393248 a(n) is the period length of the Ducci sequence, where the initial vector are the binary digits of A007088(n).
  * @author Sean A. Irvine
  */
 public class A393248 extends Sequence1 {

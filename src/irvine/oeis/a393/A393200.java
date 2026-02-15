@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A393200 allocated for Diego Artacho.
+ * A393200 a(n) is the least value of m such that the sum of the digits of n in base m is coprime with n.
  * @author Sean A. Irvine
  */
 public class A393200 extends Sequence2 {

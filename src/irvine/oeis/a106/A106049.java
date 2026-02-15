@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A106049 Silver dragon four-symbol substitution: characteristic polynomial:x^4-2x^3+x^2-4.
+ * A106049 Triangle read by rows, based on the morphism f: 1-&gt;212, 2-&gt;3, 3-&gt;434, 4-&gt;1.
  * @author Georg Fischer
  */
 public class A106049 extends MorphismFixedPointSequence {

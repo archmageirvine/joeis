@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002473;
 
 /**
- * A393237 allocated for Zhicheng Wei.
+ * A393237 Numbers k such that k is a 7-smooth number, and k + 11, k + 13, k + 17, k + 19 are prime number quadruples.
  * @author Sean A. Irvine
  */
 public class A393237 extends FilterSequence {

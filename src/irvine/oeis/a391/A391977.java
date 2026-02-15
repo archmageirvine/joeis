@@ -7,7 +7,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**
- * A083747.
+ * A391977 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A391977 extends Sequence1 implements Conjectural {

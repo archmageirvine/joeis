@@ -7,7 +7,7 @@ import irvine.oeis.a005.A005652;
 import irvine.oeis.a035.A035508;
 
 /**
- * A391432 allocated for Clark Kimberling.
+ * A391432 Complement of the union of A005652(k), k&gt;=2 and A035508(k), k&gt;=1.
  * @author Sean A. Irvine
  */
 public class A391432 extends ComplementSequence {

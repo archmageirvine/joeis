@@ -6,7 +6,7 @@ import irvine.oeis.a074.A074664;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A127745 Counts Bell numbers (except for Catalans) associated with the partition number [n].
+ * A127745 a(n) = A074664(n) - A000108(n-1).
  * @author Georg Fischer
  */
 public class A127745 extends SingleTransformSequence {

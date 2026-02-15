@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A103089 Numbers n such that 8*10^n + 7*R_n - 6 is prime, where R_n = 11...1 is the repunit (A002275) of length n.
+ * A103089 Numbers k such that 8*10^k + 7*R_k - 6 is prime, where R_k = 11...1 is the repunit (A002275) of length k.
  * @author Georg Fischer
  */
 public class A103089 extends PrimePositionSubsequence {

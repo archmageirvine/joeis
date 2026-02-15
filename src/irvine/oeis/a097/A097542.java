@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A097542 Sum_{k=1..2*n-1} J(4*n,k)*k, where J(i,j) is the Jacobi symbol.
+ * A097542 a(n) = Sum_{k=1..2*n-1} J(4*n,k)*k, where J(i,j) is the Jacobi symbol.
  * @author Georg Fischer
  */
 public class A097542 extends LambdaSequence {

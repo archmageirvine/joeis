@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A111517 Numbers n such that (7*n + 1)/2 is prime.
+ * A111517 Numbers k such that (7*k + 1)/2 is prime.
  * @author Georg Fischer
  */
 public class A111517 extends FilterNumberSequence {

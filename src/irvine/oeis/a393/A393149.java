@@ -5,7 +5,7 @@ import irvine.oeis.a035.A035137;
 import irvine.oeis.a084.A084843;
 
 /**
- * A393149 allocated for Dmitry Kamenetsky.
+ * A393149 Numbers that cannot be represented as a sum or difference of two palindromes.
  * @author Sean A. Irvine
  */
 public class A393149 extends IntersectionSequence {

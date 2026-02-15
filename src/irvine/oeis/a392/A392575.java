@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000032;
 
 /**
- * A392575 allocated for Alyssa Beck.
+ * A392575 Smallest number k such that Lucas(n) + 2^k is prime, or -1 if there is no such prime.
  * @author Sean A. Irvine
  */
 public class A392575 extends A000032 {

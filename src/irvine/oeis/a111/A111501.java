@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A111501 Numbers n such that n^3 - n^2 + 1 is prime.
+ * A111501 Numbers k such that k^3 - k^2 + 1 is prime.
  * @author Georg Fischer
  */
 public class A111501 extends PrimePositionSubsequence {

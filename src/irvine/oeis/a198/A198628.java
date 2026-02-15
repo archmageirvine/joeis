@@ -4,7 +4,7 @@ package irvine.oeis.a198;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A198628 Alternating sums of powers for 1,2,3,4 and 5.
+ * A198628 a(n) = 1-2^n+3^n-4^n+5^n.
  * @author Georg Fischer
  */
 public class A198628 extends HolonomicRecurrence {

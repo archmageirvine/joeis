@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068834 Square such that the next three squares also having a square digit sum.
+ * A068834 Squares k such that k and the next three squares also have a square digit sum.
  * @author Sean A. Irvine
  */
 public class A068834 extends Sequence1 {

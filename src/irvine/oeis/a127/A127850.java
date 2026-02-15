@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A127850 a(n)=(2^n-1)*2^(n(n-1)/2)/(2^(n-1)).
+ * A127850 a(n) = (2^n-1)*2^(n(n-1)/2)/(2^(n-1)).
  * a(n) = 2^binom( n-1,2) * (2^n - 1);
  * @author Georg Fischer
  */

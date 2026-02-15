@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A384932 Decimal expansion of tan(1) + sec(1).
- * Formula: Decimal expansion of tan(1) + sec(1).
  * @author Georg Fischer
  */
 public class A384932 extends DecimalExpansionSequence {

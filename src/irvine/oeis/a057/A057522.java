@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A057522 a(n+1) = a(n)/2 if 2|a(n), a(n)/3 if 3|a(n), a(n)/5 if 5|a(n), a(n)/7 if 7|a(n), a(n)/11 if 11|a(n), otherwise 13*a(n)+1.
+ * A057522 Start with 73, to get the next term divide by the smallest prime factor &lt; 13 if it exists, else multiply by 13 and add 1.
  * @author Georg Fischer
  */
 public class A057522 extends Sequence0 {

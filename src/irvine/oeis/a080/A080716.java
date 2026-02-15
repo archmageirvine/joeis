@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080716 Numbers n such that sum of the divisors of n equals the sum of the reversals of the divisors of n.
+ * A080716 Numbers k such that sum of the divisors of k equals the sum of the reversals of the divisors of k.
  * @author Sean A. Irvine
  */
 public class A080716 extends Sequence1 {

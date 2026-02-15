@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A393039 allocated for Artur Jasinski.
+ * A393039 Maximum Mahler measure of all quartic polynomials with coefficients in {-1, 0, 1}.
  * @author Sean A. Irvine
  */
 public class A393039 extends PolynomialRootExpansionSequence {

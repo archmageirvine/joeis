@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a059.A059261;
 
 /**
- * A393255 allocated for Jeffrey Shallit.
+ * A393255 Indices k where A059261(k)=A393253(k).
  * @author Sean A. Irvine
  */
 public class A393255 extends Sequence1 {

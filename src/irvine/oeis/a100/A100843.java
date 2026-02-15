@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A100843 F(P(n)) where P(n) is the unrestricted partition number of n and F(n) is the Fibonacci number.
+ * A100843 a(n) = F(P(n)) where P(n) is the unrestricted partition number of n and F(n) is the Fibonacci number.
  * @author Georg Fischer
  */
 public class A100843 extends LambdaSequence {

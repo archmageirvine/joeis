@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a058.A058529;
 
 /**
- * A144407 A058529(n+1)^2.
+ * A144407 a(n) = A058529(n+1)^2.
  * @author Georg Fischer
  */
 public class A144407 extends A058529 {

@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002385;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A075807 Numbers n such that n-th prime is palindromic.
+ * A075807 Numbers k such that k-th prime is palindromic.
  * @author Georg Fischer
  */
 public class A075807 extends SimpleTransformSequence {

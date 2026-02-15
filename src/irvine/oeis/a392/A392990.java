@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007770;
 
 /**
- * A392990 allocated for Xander Lee Luo.
+ * A392990 Unhappy numbers that are sandwiched between two consecutive happy numbers.
  * @author Sean A. Irvine
  */
 public class A392990 extends A007770 {

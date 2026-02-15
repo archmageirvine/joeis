@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a392.A392806;
 
 /**
- * A393079 allocated for A.H.M. Smeets.
+ * A393079 First column of A392806.
  * @author Sean A. Irvine
  */
 public class A393079 extends Sequence0 {

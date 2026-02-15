@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393016 allocated for Vincenzo Librandi.
+ * A393016 Triangle read by rows: T(n, k) = numerator(8*n^3*k/(k^2+4*n^2)).
  * @author Sean A. Irvine
  */
 public class A393016 extends Sequence1 {

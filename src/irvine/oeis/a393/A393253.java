@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A393253 allocated for Jeffrey Shallit.
+ * A393253 Manhattan distance from 0 to n in perfect shuffle array of base-2 expansions.
  * @author Sean A. Irvine
  */
 public class A393253 extends CachedSequence {

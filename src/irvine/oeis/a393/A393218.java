@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393218 allocated for Gonzalo Mart\u00ednez.
+ * A393218 Integers m such that the digits 0 and 1 are not present in the decimal expansion of m^10.
  * @author Sean A. Irvine
  */
 public class A393218 extends Sequence1 {

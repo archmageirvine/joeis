@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A087886 Numbers n such that 29^n + 2 is prime.
+ * A087886 Numbers k such that 29^k + 2 is prime.
  * @author Georg Fischer
  */
 public class A087886 extends PrimePositionSubsequence {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A115104 Numbers n such that 4*n^3 + 1 is prime.
+ * A115104 Numbers k such that 4*k^3 + 1 is prime.
  * @author Georg Fischer
  */
 public class A115104 extends PrimePositionSubsequence {

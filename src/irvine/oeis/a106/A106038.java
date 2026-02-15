@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A106038 Triangle Loop von Koch substitution: characteristic polynomial:x^3-6x^2+8*x.
+ * A106038 Triangle read by rows, based on the morphism f: 1-&gt;1231, 2-&gt;2112, 3-&gt;3113.
  * @author Georg Fischer
  */
 public class A106038 extends MorphismFixedPointSequence {

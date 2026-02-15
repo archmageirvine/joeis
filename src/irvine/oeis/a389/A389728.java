@@ -3,7 +3,7 @@ package irvine.oeis.a389;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A389728 allocated for Ben Whitmore.
+ * A389728 Number of positions of the 15-puzzle at a distance of n multi-tile moves from an initial state with the empty square in one of the corners.
  * @author Sean A. Irvine
  */
 public class A389728 extends FiniteSequence {

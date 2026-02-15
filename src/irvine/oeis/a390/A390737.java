@@ -23,11 +23,17 @@ public class A390737 extends A084580 {
   @Override
   public Z next() {
     mCf.add(super.next());
-    final Sequence cLo = new DecimalExpansionSequence(CR.valueOf(ContinuedFractionUtils.toQ(mCf)));
+    if (mCf.size() == 2) {
+      return Z.ZERO;
+    }
+    final CR zLo = CR.valueOf(ContinuedFractionUtils.toQ(mCf));
+    final Sequence cLo = new DecimalExpansionSequence(1, zLo);
     mCf.add(Z.ONE);
-    final Sequence cHi = new DecimalExpansionSequence(CR.valueOf(ContinuedFractionUtils.toQ(mCf)));
+    final CR zHi = CR.valueOf(ContinuedFractionUtils.toQ(mCf));
+    final Sequence cHi = new DecimalExpansionSequence(1, zHi);
     mCf.remove(mCf.size() - 1);
-    long cnt = 0;
+    //System.out.println(mCf + " " + zLo + " " + zHi);
+    long cnt = 1;
     while (true) {
       final Z lo = cLo.next();
       final Z hi = cHi.next();

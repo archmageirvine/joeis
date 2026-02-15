@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A104115 Primes of the form 6^n+7.
+ * A104115 Primes of the form 6^k+7.
  * @author Georg Fischer
  */
 public class A104115 extends PrimeSubsequence {

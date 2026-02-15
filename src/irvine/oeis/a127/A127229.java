@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A127229 a(n)= numerator of ((n + 5)! - (n - 5)!)/(n!).
+ * A127229 a(n) = numerator of ((n + 5)! - (n - 5)!)/n!.
  * @author Georg Fischer
  */
 public class A127229 extends LambdaSequence {

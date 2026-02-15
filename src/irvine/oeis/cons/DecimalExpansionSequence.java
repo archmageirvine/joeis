@@ -82,7 +82,12 @@ public class DecimalExpansionSequence extends RealConstantSequence implements Se
     this(offset, x, base, 32);
   }
 
-  protected DecimalExpansionSequence(final int offset, final CR x) {
+  /**
+   * Construct a new expansion of a computable real number.
+   * @param offset OEIS offset
+   * @param x the number
+   */
+  public DecimalExpansionSequence(final int offset, final CR x) {
     this(offset, x, 10);
   }
 

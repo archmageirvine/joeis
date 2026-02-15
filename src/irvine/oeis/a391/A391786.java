@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a045.A045723;
 
 /**
- * A391786 Triangle read by rows: T(n,k) = number of reversible strings with n black beads and k white beads, n &gt;= 0, 0 &lt;= k &lt;= n.
+ * A391786 Triangle read by rows: T(n, k) = number of reversible strings with n black beads and k white beads, 0 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A391786 extends Sequence0 {

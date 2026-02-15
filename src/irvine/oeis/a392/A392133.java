@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392133 allocated for Stefano Spezia.
+ * A392133 a(n) is the permanent of the symmetric n X n matrix M defined by M(i,j) = gcd(2i-1,2j-1) for 1 &lt;= i,j &lt;= n.
  * @author Sean A. Irvine
  */
 public class A392133 extends Sequence0 {

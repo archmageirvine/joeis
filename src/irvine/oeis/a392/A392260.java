@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392260 allocated for S. I. Dimitrov.
+ * A392260 Numbers k such that sigma(k) = psi(k) + pi(k) + omega(k)^10.
  * @author Sean A. Irvine
  */
 public class A392260 extends Sequence1 {

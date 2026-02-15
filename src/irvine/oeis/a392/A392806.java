@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A392806 allocated for A.H.M. Smeets.
+ * A392806 Irregular triangle read by rows: exponents of the primes in the prime factorization of A392805(n) (primes in increasing order).
  * @author Sean A. Irvine
  */
 public class A392806 extends Sequence3 {

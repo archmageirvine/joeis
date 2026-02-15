@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A129313 Numbers k such that 6*p(k)*p(k+1)*p(k+2)*p(k+3)*p(k+4)*(k+5)*p(k+6)-1 and 6*p(k)*p(k+1)*p(k+2)*p(k+3)*p(k+4)*(k+5)*p(k+6)+1 are twin primes with p(h) = h-th prime.
+ * A129313 Numbers k such that 6*p(k)*p(k+1)*p(k+2)*p(k+3)*p(k+4)*p(k+5)*p(k+6)-1 and 6*p(k)*p(k+1)*p(k+2)*p(k+3)*p(k+4)*p(k+5)*p(k+6)+1 are twin primes with p(h) = h-th prime.
  * @author Georg Fischer
  */
 public class A129313 extends FilterNumberSequence {

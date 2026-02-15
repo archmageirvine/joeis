@@ -5,7 +5,7 @@ package irvine.oeis.a231;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A231552 G.f. satisfies: A(x) = (1 + x*A(x))^2 * (1 + 2*A(x)) / 3.
+ * A231552 G.f. A(x) satisfies A(x) = (1 + x*A(x))^2 * (1 + 2*A(x)) / 3.
  * @author Georg Fischer
  */
 public class A231552 extends HolonomicRecurrence {

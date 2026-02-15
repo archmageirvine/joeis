@@ -3,7 +3,7 @@ package irvine.oeis.a209;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A209547 1/4 the number of (n+1)X3 0..3 arrays with every 2X2 subblock having exactly two distinct clockwise edge differences.
+ * A209547 1/4 the number of (n+1) X 3 0..3 arrays with every 2 X 2 subblock having exactly two distinct clockwise edge differences.
  * @author Sean A. Irvine
  */
 public class A209547 extends LinearRecurrence {

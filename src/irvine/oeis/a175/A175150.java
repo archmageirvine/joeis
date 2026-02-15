@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A175150 a(1)=0. If d(n)&gt;d(n-1), then a(n)=a(n-1)+1. If d(n)&lt;d(n-1), then a(n)=a(n-1)-1. If d(n)=d(n-1), then a(n)=a(n-1). (d(n) is the number of divisors of n.)
+ * A175150 a(1)=0. If d(n)&gt;d(n-1), then a(n)=a(n-1)+1. If d(n)&lt;d(n-1), then a(n)=a(n-1)-1. If d(n)=d(n-1), then a(n)=a(n-1). (d(n) is the number of divisors of n.).
  * @author Georg Fischer
  */
 public class A175150 extends MultiTransformSequence {

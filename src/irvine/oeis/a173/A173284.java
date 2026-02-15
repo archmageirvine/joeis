@@ -6,7 +6,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A173284 Triangle by columns, Fibonacci numbers in every column shifted down twice, for k &gt; 0.
+ * A173284 Triangle by columns, positive Fibonacci numbers in every column shifted down twice, for k &gt; 0.
  * @author Georg Fischer
  */
 public class A173284 extends LambdaTable {

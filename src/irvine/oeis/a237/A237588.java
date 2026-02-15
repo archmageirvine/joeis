@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033879;
 
 /**
- * A237588 Sigma(n) - 2n + 1.
+ * A237588 a(n) = sigma(n) - 2n + 1.
  * @author Georg Fischer
  */
 public class A237588 extends Sequence1 {

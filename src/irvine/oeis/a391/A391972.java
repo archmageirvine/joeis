@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391972 allocated for Andrey Mateshko.
+ * A391972 a(n) = 1 if n=1 or a(n-1) is prime; a(n) = a(n-1) + i otherwise, where i = n - r and r is the number of occurrences of 1 among terms a(1) to a(n-1).
  * @author Sean A. Irvine
  */
 public class A391972 extends Sequence1 {

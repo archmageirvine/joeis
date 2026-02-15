@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.TwoParameterFormSequence;
 
 /**
- * A393217 allocated for Gonzalo Mart\u00ednez.
+ * A393217 Perfect powers m^k, with m, k &gt; 1, such that no digit of m^k is present in k^m.
  * @author Sean A. Irvine
  */
 public class A393217 extends TwoParameterFormSequence {

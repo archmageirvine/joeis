@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002110;
 
 /**
- * A390737.
+ * A391395 Primes of the form (A002110(k) + A002110(k + 1)) / 2 - 1.
  * @author Sean A. Irvine
  */
 public class A391395 extends Sequence1 {

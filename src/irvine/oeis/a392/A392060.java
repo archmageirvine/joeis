@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A392060 allocated for Jwalin Bhatt.
+ * A392060 Number of decimal places which are known after n terms of the continued fraction for the golden ratio.
  * @author Sean A. Irvine
  */
 public class A392060 extends Sequence1 {

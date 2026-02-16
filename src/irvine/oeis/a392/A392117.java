@@ -23,7 +23,7 @@ public class A392117 extends Sequence1 {
    *  u(1) = s(1);
    *  v(1) = least term of s that is >= u(1) + s(1);
    *  u(n) = least term of s that is not in {u(k) : k < n} and not in {v(k) : k < n};
-   * v(n) = least term of s that is >= u(n) + s(n), for n >= 1.
+   *  v(n) = least unused term of s that is >= u(n) + s(n), for n >= 1.
    * Then u is the lower Wythoff partition sequence of s, and v is the upper Wythoff partition sequence of s.
    */
 

@@ -16,10 +16,10 @@ public class A393296 extends Sequence0 {
 
   // After Ludovic Schwob
 
-  private static class Wrapper {
+  private static final class Wrapper {
     private final byte[] mData;
 
-    private Wrapper(byte[] data) {
+    private Wrapper(final byte[] data) {
       mData = data;
     }
 
@@ -28,11 +28,8 @@ public class A393296 extends Sequence0 {
     }
 
     @Override
-    public boolean equals(Object other) {
-      if (!(other instanceof Wrapper)) {
-        return false;
-      }
-      return Arrays.equals(this.mData, ((Wrapper) other).mData);
+    public boolean equals(final Object other) {
+      return other instanceof Wrapper && Arrays.equals(mData, ((Wrapper) other).mData);
     }
 
     @Override

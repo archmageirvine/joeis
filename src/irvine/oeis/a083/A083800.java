@@ -6,9 +6,9 @@ import irvine.math.z.Z;
  * A083799 Main diagonal of A083798.
  * @author Sean A. Irvine
  */
-public class A083799 extends A083798 {
+public class A083800 extends A083798 {
 
-  protected int mN = -1;
+  private int mN = -2;
 
   @Override
   public Z next() {

@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A083799.
+ * A393331 allocated for Pontus von Br\u00f6mssen.
  * @author Sean A. Irvine
  */
 public class A393331 extends Sequence1 {

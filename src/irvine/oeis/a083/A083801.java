@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.math.z.Z;
 
 /**
- * A083798 Triangle obtained by replacing each term in A083796 with the sum of all other terms in that row.
+ * A083801 Triangle read by rows obtained by replacing each term T(n,k) in A083796 with the sum, divided by r, of the other n-1 terms in the n-th row.
  * @author Sean A. Irvine
  */
 public class A083801 extends A083796 {

@@ -4,7 +4,7 @@ package irvine.oeis.a393;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A393315 G.f. A(x) satisfies: A(x) = A(x^3) / (1 - x - x^2).
+ * A393315 allocated for Ilya Gutkovskiy.
  * @author Georg Fischer
  */
 public class A393315 extends PolynomialFieldSequence {

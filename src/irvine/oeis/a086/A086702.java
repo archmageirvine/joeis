@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A086702 Decimal expansion of L√©vy&apos;s constant.
+ * A086702 Decimal expansion of L\u00e9vy's constant.
  * Formula: exp(Pi^2/(12*log(2))).
  * @author Georg Fischer
  */

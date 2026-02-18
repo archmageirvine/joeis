@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083799 Main diagonal of A083798.
+ * A083803 Smallest number k such that the concatenations k 2n-1 and 2n-1 k are both primes, or 0 if n = 5m+3.
  * @author Sean A. Irvine
  */
 public class A083803 extends Sequence1 {

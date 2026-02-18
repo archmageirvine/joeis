@@ -19,6 +19,6 @@ public final class HermitePolynomials extends MemoryFunction<Integer, Polynomial
 
   @Override
   protected Polynomial<Z> compute(final Integer n) {
-    return RING.subtract(RING.multiply(get(n - 1), Z.TWO).shift(1), RING.multiply(get(n - 2), Z.valueOf(2L * (n - 1))));
+    return RING.subtract(RING.multiply(getValue(n - 1), Z.TWO).shift(1), RING.multiply(getValue(n - 2), Z.valueOf(2L * (n - 1))));
   }
 }

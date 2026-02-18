@@ -1,0 +1,16 @@
+package irvine.oeis.a393;
+
+import irvine.oeis.ca.TuringMachineRuntimeSequence;
+
+/**
+ * A393188.
+ * @author Sean A. Irvine
+ */
+public class A393505 extends TuringMachineRuntimeSequence {
+
+  /** Construct the sequence. */
+  public A393505() {
+    super(1, 1955095, 3, 2, 100000000);
+  }
+}
+

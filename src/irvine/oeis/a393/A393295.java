@@ -4,7 +4,7 @@ package irvine.oeis.a393;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A393295 Number of transitive relations on an n-set with at most three ordered pairs.
+ * A393295 allocated for Firdous Ahmad Mala.
  * @author Georg Fischer
  */
 public class A393295 extends HolonomicRecurrence {

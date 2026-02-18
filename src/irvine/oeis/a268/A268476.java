@@ -4,7 +4,7 @@ package irvine.oeis.a268;
 import irvine.oeis.FilterSequence;
 
 /**
- * A268476 Balanced evil primes: primes with an even number of runs of 1&apos;s in their binary expansion.
+ * A268476 Balanced evil primes: primes with an even number of runs of 1's in their binary expansion.
  * @author Georg Fischer
  */
 public class A268476 extends FilterSequence {

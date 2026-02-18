@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007310;
 
 /**
- * A393105.
+ * A389368 allocated for Alain Rocchelli.
  * @author Sean A. Irvine
  */
 public class A389368 extends A007310 {

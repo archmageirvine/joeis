@@ -4,7 +4,7 @@ package irvine.oeis.a393;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A393314 G.f. A(x) satisfies: A(x) = (1 + x + x^2 + x^3)^2 * A(x^4) / (1 - x).
+ * A393314 allocated for Ilya Gutkovskiy.
  * @author Georg Fischer
  */
 public class A393314 extends PolynomialFieldSequence {

@@ -15,10 +15,10 @@ public class A014258 extends Sequence0 {
 
   @Override
   public Z next() {
-    final Z n = Functions.REVERSE.z(mA.add(mB));
+    final Z t = Functions.REVERSE.z(mA.add(mB));
     mA = mB;
-    mB = n;
-    return n;
+    mB = t;
+    return t;
   }
 }
 

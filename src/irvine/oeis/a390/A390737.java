@@ -16,14 +16,15 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 public class A390737 extends A084580 {
 
   private final ArrayList<Z> mCf = new ArrayList<>();
-  {
-    mCf.add(Z.ZERO);
-  }
 
   @Override
   public Z next() {
-    mCf.add(super.next());
-    if (mCf.size() == 2) {
+    if (mCf.isEmpty()) {
+      mCf.add(Z.ZERO);
+    } else {
+      mCf.add(super.next());
+    }
+    if (mCf.size() <= 2) {
       return Z.ZERO;
     }
     final CR zLo = CR.valueOf(ContinuedFractionUtils.toQ(mCf));

@@ -20,7 +20,7 @@ public class A393334 extends Sequence1 {
   // At around n=60 the long keys for the maps might become unreliable
 
   private Z[] mPrecomputed = compute(1);
-  private int mN = 0;
+  private int mN = -1;
 
   /** Compute maximum height for strictly decreasing sequences. */
   private int maxHeight(final int n) {

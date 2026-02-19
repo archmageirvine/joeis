@@ -538,8 +538,9 @@ public final class FactorSequence {
   /**
    * Merge the contents of another factor sequence into this sequence.
    * @param fs a <code>FactorSequence</code> value
+   * @return self (for chaining)
    */
-  public void merge(final FactorSequence fs) {
+  public FactorSequence merge(final FactorSequence fs) {
     if (fs != null) {
       if (mLocked) {
         throw new RuntimeException("Attempt to modify locked object");
@@ -548,6 +549,7 @@ public final class FactorSequence {
         add(n, fs.getStatus(n), fs.getExponent(n));
       }
     }
+    return this;
   }
 
   /**

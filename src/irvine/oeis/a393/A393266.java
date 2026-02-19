@@ -13,7 +13,7 @@ import irvine.oeis.Sequence1;
  */
 public class A393266 extends Sequence1 {
 
-  private Q mRecord = Q.ONE;
+  private Q mRecord = Q.TWO;
   private Z mN = null;
 
   @Override

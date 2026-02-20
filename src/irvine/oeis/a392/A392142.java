@@ -1,13 +1,13 @@
 package irvine.oeis.a392;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A392142 Starting with a(1) = 1, each term is obtained by doubling the previous term and then deleting repeated digits, keeping only the first occurrence of each digit.
  * @author Sean A. Irvine
  */
-public class A392142 extends Sequence0 {
+public class A392142 extends Sequence1 {
 
   private Z mA = null;
 

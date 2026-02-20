@@ -12,7 +12,7 @@ public class A123472 extends EulerTransform {
 
   /** Construct the sequence. */
   public A123472() {
-    super(new A079457(), 1);
+    super(1, new A079457(), 1);
     next();
   }
 }

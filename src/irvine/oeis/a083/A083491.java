@@ -2,13 +2,13 @@ package irvine.oeis.a083;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A083491 Multiples of 3 in which there is no common digit in successive terms.
  * @author Sean A. Irvine
  */
-public class A083491 extends Sequence1 {
+public class A083491 extends Sequence0 {
 
   private final long mS;
   private Z mA = Z.ZERO;

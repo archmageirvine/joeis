@@ -4,13 +4,13 @@ import irvine.factor.factor.PrimeDivision;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A081393 a(n) is the smallest k such that number of non-unitary prime divisors of central binomial coefficient, A000984(k) = C(2*k,k) equals n.
  * @author Sean A. Irvine
  */
-public class A081393 extends Sequence1 {
+public class A081393 extends Sequence0 {
 
   private final PrimeDivision mFactor = new PrimeDivision();
   private long mN = -1;

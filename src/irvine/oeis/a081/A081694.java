@@ -3,14 +3,14 @@ package irvine.oeis.a081;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A081694 From P-positions in a certain game.
  * @author Sean A. Irvine
  */
-public class A081694 extends Sequence1 {
+public class A081694 extends Sequence0 {
 
   protected final TreeSet<Z> mB = new TreeSet<>();
   private final LongDynamicBooleanArray mA = new LongDynamicBooleanArray();

@@ -1,13 +1,13 @@
 package irvine.oeis.a390;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A390774 Numbers whose final digit is at most 3.
  * @author Sean A. Irvine
  */
-public class A390774 extends Sequence1 {
+public class A390774 extends Sequence0 {
 
   private long mN = -1;
 

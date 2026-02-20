@@ -5,13 +5,13 @@ import java.util.TreeSet;
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A082002 Square array read by antidiagonals, alternating upwards and downwards: T(1, 1) = 1 and every other entry is the smallest number not already used that has a common factor with every number in its row and column, not including the 1.
  * @author Sean A. Irvine
  */
-public class A082002 extends Sequence0 {
+public class A082002 extends Sequence1 {
 
   // We number the triangle from (0,0)
   private final TreeSet<Long> mUsed = new TreeSet<>();

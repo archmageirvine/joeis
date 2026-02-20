@@ -13,6 +13,6 @@ public class A388174 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A388174() {
-    super(1, CR.PI.multiply(new Q(3, 4)).exp().multiply(new Q(15, 4)).multiply(CR.PI.pow(new Q(7, 4))).multiply(CR.TWO.pow(Q.ONE_QUARTER)).divide(CrFunctions.GAMMA.cr(new Q(3, 4)).pow(7)));
+    super(2, CR.PI.multiply(new Q(3, 4)).exp().multiply(new Q(15, 4)).multiply(CR.PI.pow(new Q(7, 4))).multiply(CR.TWO.pow(Q.ONE_QUARTER)).divide(CrFunctions.GAMMA.cr(new Q(3, 4)).pow(7)));
   }
 }

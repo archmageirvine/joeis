@@ -2,13 +2,13 @@ package irvine.oeis.a014;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A014133 Sum of a square and a triangular number.
  * @author Sean A. Irvine
  */
-public class A014133 extends Sequence0 {
+public class A014133 extends Sequence1 {
 
   private long mN = -1;
 

@@ -3,14 +3,14 @@ package irvine.oeis.a081;
 import java.util.HashMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.util.Point;
 
 /**
  * A081349 Square maze arrangement of the natural numbers, read by antidiagonals.
  * @author Sean A. Irvine
  */
-public class A081349 extends Sequence1 {
+public class A081349 extends Sequence0 {
 
   private int mN = 0;
   private int mM = -1;
@@ -19,6 +19,7 @@ public class A081349 extends Sequence1 {
   private long mV = 4;
   private int mD = 0;
   private final HashMap<Point, Long> mMaze = new HashMap<>();
+
   {
     mMaze.put(new Point(0, 0), 1L);
     mMaze.put(new Point(0, 1), 2L);

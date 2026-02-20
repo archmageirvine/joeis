@@ -3,13 +3,13 @@ package irvine.oeis.a079;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A079276 Multiplicative inverse in the finite field F(prime(n)) of the product of the first n-1 primes modulo prime(n).
  * @author Sean A. Irvine
  */
-public class A079276 extends Sequence0 {
+public class A079276 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mMod = 0;

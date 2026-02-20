@@ -13,7 +13,7 @@ public class A195070 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A195070() {
-    super(0, new CR() {
+    super(1, new CR() {
       @Override
       protected Z approximate(final int precision) {
         final Z one = CR.ONE.getApprox(precision);

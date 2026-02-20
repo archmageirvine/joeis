@@ -1,13 +1,13 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A046808 a(n) is the least integer greater than a(n-1) such that a(n-1)*2^a(n) + 1 is prime, a(1) = 1.
  * @author Sean A. Irvine
  */
-public class A046808 extends Sequence0 {
+public class A046808 extends Sequence1 {
 
   private Z mA = null;
 

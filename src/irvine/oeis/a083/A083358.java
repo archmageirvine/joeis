@@ -13,6 +13,6 @@ public class A083358 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A083358() {
-    super(new FilterSequence(new A083356(), Predicates.SQUARE::is), Z::sqrt);
+    super(1, new FilterSequence(new A083356(), Predicates.SQUARE::is), Z::sqrt);
   }
 }

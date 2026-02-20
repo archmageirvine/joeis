@@ -1,26 +1,32 @@
 package irvine.oeis.a060;
 
+import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.a000.A000040;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A060504 Let p be a prime that has a primitive root between 0 and p that is not also a primitive root of p^2 (A060503); sequence gives smallest such primitive root.
  * @author Sean A. Irvine
  */
-public class A060504 extends A000040 {
+public class A060504 extends AbstractSequence {
 
-  {
-    setOffset(0);
+  private Z mP;
+  private final Fast mPrime = new Fast();
+
+  /** Construct the sequence. */
+  public A060504() {
+    super(1);
+    mP = Z.ONE;
   }
 
   @Override
   public Z next() {
     while (true) {
-      final Z p = super.next();
-      final Z pp = p.square();
-      for (Z k = Z.ONE; k.compareTo(p) < 0; k = k.add(1)) {
-        if (ZUtils.isPrimitiveRoot(k, p) && !ZUtils.isPrimitiveRoot(k, pp)) {
+      mP = mPrime.nextPrime(mP);
+      final Z pp = mP.square();
+      for (Z k = Z.ONE; k.compareTo(mP) < 0; k = k.add(1)) {
+        if (ZUtils.isPrimitiveRoot(k, mP) && !ZUtils.isPrimitiveRoot(k, pp)) {
           return k;
         }
       }

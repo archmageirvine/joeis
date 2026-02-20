@@ -12,6 +12,6 @@ public class A081242 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A081242() {
-    super(1, new A007931(), k -> Functions.REVERSE.z(k));
+    super(2, new A007931(), k -> Functions.REVERSE.z(k));
   }
 }

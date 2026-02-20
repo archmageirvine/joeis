@@ -11,6 +11,6 @@ public class A389373 extends GeneratingFunctionSequence {
 
   /** Construct the sequence. */
   public A389373() {
-    super(0, "[0,1]", "[1,-2,-3,6,3,-6,-1,2]");
+    super(1, "[0,1]", "[1,-2,-3,6,3,-6,-1,2]");
   }
 }

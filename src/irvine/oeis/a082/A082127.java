@@ -13,6 +13,6 @@ public class A082127 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A082127() {
-    super(0, new A082126(), k -> CR.valueOf(k).log().divide(LOG3).round());
+    super(1, new A082126(), k -> CR.valueOf(k).log().divide(LOG3).round());
   }
 }

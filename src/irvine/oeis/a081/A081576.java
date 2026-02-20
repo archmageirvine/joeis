@@ -4,13 +4,13 @@ import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A081576 Square array of binomial transforms of Fibonacci numbers, read by antidiagonals.
  * @author Sean A. Irvine
  */
-public class A081576 extends Sequence1 {
+public class A081576 extends Sequence0 {
 
   private int mN = 0;
   private int mM = -1;

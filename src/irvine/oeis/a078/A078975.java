@@ -11,6 +11,6 @@ public class A078975 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A078975() {
-    super(0, new A272037().getCR().inverse());
+    super(1, new A272037().getCR().inverse());
   }
 }

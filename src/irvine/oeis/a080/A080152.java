@@ -12,6 +12,6 @@ public class A080152 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A080152() {
-    super(0, new A073640(), Functions.PRIME_PI::z);
+    super(1, new A073640(), Functions.PRIME_PI::z);
   }
 }

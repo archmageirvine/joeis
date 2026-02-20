@@ -5,13 +5,13 @@ import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence2;
+import irvine.oeis.Sequence0;
 
 /**
  * A098054 Absolute values of elements of flattened successive matrices B(k), k&gt;=0, read by rows where B(k) = M^k*C where M=[[2, -1], [-1, 1]] and C = [[0, 1], [1, 1]].
  * @author Sean A. Irvine
  */
-public class A098054 extends Sequence2 {
+public class A098054 extends Sequence0 {
 
   private static final Matrix<Z> M = new DefaultMatrix<>(new Z[][] {
     {Z.TWO, Z.NEG_ONE},

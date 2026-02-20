@@ -15,6 +15,6 @@ public class A092153 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A092153() {
-    super(0, n -> A018188.a(n).subtract(11).divide(24));
+    super(1, n -> A018188.a(n - 1).subtract(11).divide(24));
   }
 }

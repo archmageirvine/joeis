@@ -3,14 +3,14 @@ package irvine.oeis.a080;
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a024.A024493;
 
 /**
  * A080850 Number triangle related to a problem of Knuth.
  * @author Sean A. Irvine
  */
-public class A080850 extends Sequence1 {
+public class A080850 extends Sequence0 {
 
   private int mN = 0;
   private int mM = 0;

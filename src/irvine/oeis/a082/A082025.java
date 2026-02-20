@@ -5,13 +5,13 @@ import java.util.TreeSet;
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A082025 Square array of distinct positive integers, in which neighboring entries (both orthogonal and diagonal) are coprime. The array is read by antidiagonals, alternating upwards and downwards. Each entry is the smallest positive integer not already used that is coprime to all of the neighboring entries that are earlier in the sequence.
  * @author Sean A. Irvine
  */
-public class A082025 extends Sequence0 {
+public class A082025 extends Sequence1 {
 
   // We number the triangle from (0,0)
   private final TreeSet<Long> mUsed = new TreeSet<>();

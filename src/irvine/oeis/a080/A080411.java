@@ -10,6 +10,6 @@ public class A080411 extends DecimalExpansionFromContinuedFractionSequence {
 
   /** Construct the sequence. */
   public A080411() {
-    super(1, new A080410());
+    super(0, new A080410());
   }
 }

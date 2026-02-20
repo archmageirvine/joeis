@@ -2,14 +2,14 @@ package irvine.oeis.a083;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence2;
 import irvine.util.array.DynamicArray;
 
 /**
  * A083140 Sieve of Eratosthenes arranged as an array and read by antidiagonals in the up direction; n-th row has property that smallest prime factor is prime(n).
  * @author Sean A. Irvine
  */
-public class A083140 extends Sequence1 {
+public class A083140 extends Sequence2 {
 
   private final DynamicArray<Z> mA = new DynamicArray<>();
   private int mN = -1;

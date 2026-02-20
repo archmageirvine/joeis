@@ -2,7 +2,7 @@ package irvine.oeis.a096;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicLongArray;
 import irvine.util.string.StringUtils;
 
@@ -10,7 +10,7 @@ import irvine.util.string.StringUtils;
  * A096695 Least balanced prime (A090403) of index n (A096693).
  * @author Sean A. Irvine
  */
-public class A096695 extends Sequence1 {
+public class A096695 extends Sequence0 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final Fast mPrime = new Fast();

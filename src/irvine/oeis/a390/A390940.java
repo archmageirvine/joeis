@@ -7,13 +7,13 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A390940 Terms of A390939 sorted in increasing order, where A390939 lists the keys added in the map initialized with T[1] = 1 and repeatedly T[v] := k + (T[v] if defined else 0) for all key-value pairs (k, v) in T.
  * @author Sean A. Irvine
  */
-public class A390940 extends Sequence0 {
+public class A390940 extends Sequence1 {
 
   private static final Z[] SPECIAL = ZUtils.toZ(1, 2, 4, 24, 28, 30, 32, 64, 88, 128, 132, 134, 268, 416, 1920, 3712, 7424); // A390943
   private Map<Z, Z> mA = null;

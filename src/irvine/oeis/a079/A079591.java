@@ -14,7 +14,7 @@ public class A079591 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A079591() {
-    super(1, new UnaryCrFunction() {
+    super(0, new UnaryCrFunction() {
       @Override
       public CR execute(final CR x) {
         return new CR() {

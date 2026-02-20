@@ -3,13 +3,13 @@ package irvine.oeis.a333;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Conjectural;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A333633 Smallest m such that sigma(m) == 2*n (mod phi(m)) or 0 if no solution exists.
  * @author Georg Fischer
  */
-public class A333633 extends Sequence1 implements Conjectural {
+public class A333633 extends Sequence0 implements Conjectural {
 
   private static final long HEURISTIC = 70000000;
   private long mN = -1;

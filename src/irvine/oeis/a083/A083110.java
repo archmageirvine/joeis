@@ -2,13 +2,13 @@ package irvine.oeis.a083;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence2;
 
 /**
  * A083110 Triangle read by rows in which the n-th row contains lexicographically earliest increasing sequence of n positive integers whose product == -1 (mod n).
  * @author Sean A. Irvine
  */
-public class A083110 extends Sequence1 {
+public class A083110 extends Sequence2 {
 
   private long mN = 0;
   private long mM = 0;

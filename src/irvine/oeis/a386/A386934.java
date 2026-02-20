@@ -11,6 +11,6 @@ public class A386934 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A386934() {
-    super(0, new A363679().getCR().divide(new A386710().getCR()));
+    super(1, new A363679().getCR().divide(new A386710().getCR()));
   }
 }

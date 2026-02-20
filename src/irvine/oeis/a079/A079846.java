@@ -2,13 +2,13 @@ package irvine.oeis.a079;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A079846 Powers of 3 which differ at all digits from the previous term.
  * @author Sean A. Irvine
  */
-public class A079846 extends Sequence1 {
+public class A079846 extends Sequence0 {
 
   private Z mA = null;
 

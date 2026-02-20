@@ -2,13 +2,13 @@ package irvine.oeis.a082;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A082843 Primitive roots x of sequence A082842.
  * @author Sean A. Irvine
  */
-public class A082843 extends Sequence1 {
+public class A082843 extends Sequence0 {
 
   private long mN = 0;
   private Z mX = Z.ZERO;

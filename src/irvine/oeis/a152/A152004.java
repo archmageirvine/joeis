@@ -3,13 +3,13 @@ package irvine.oeis.a152;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A152004 Values of p for which there is a P-position (p,p,r,r) in 4 X n Chomp with p &gt;= r.
  * @author Sean A. Irvine
  */
-public class A152004 extends Sequence0 {
+public class A152004 extends Sequence1 {
 
   private static final int BITS_PER_VALUE = 16;
   protected final TreeSet<Long> mPPositions = new TreeSet<>();

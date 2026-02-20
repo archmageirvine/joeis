@@ -12,6 +12,6 @@ public class A363679 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A363679() {
-    super(0, CrFunctions.BESSEL_I.cr(1, CR.SQRT2.multiply(2)).divide(CR.SQRT2));
+    super(1, CrFunctions.BESSEL_I.cr(1, CR.SQRT2.multiply(2)).divide(CR.SQRT2));
   }
 }

@@ -3,13 +3,13 @@ package irvine.oeis.a079;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A079040 Fractional part of 1/(1-tanh(n)) decreases monotonically to zero.
  * @author Sean A. Irvine
  */
-public class A079040 extends Sequence1 {
+public class A079040 extends Sequence0 {
 
   private CR mBest = CR.TWO;
   private long mN = 0;

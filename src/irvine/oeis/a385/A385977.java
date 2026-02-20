@@ -11,6 +11,6 @@ public class A385977 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A385977() {
-    super(1, new A002315(), k -> k.add(1).multiply(k).multiply2());
+    super(0, new A002315(), k -> k.add(1).multiply(k).multiply2());
   }
 }

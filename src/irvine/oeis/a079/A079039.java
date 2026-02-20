@@ -3,13 +3,13 @@ package irvine.oeis.a079;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A079039 Fractional part of cosh(n) decreases monotonically to zero.
  * @author Sean A. Irvine
  */
-public class A079039 extends Sequence1 {
+public class A079039 extends Sequence0 {
 
   private CR mBest = CR.TWO;
   private long mN = 0;

@@ -1,16 +1,18 @@
 package irvine.oeis.a038;
 
+import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000040;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A038702 a(n) = prime(n)^2 mod prime(n-1).
  * @author Sean A. Irvine
  */
-public class A038702 extends A000040 {
+public class A038702 extends AbstractSequence {
 
-  private Z mA = super.next();
-  protected int mExpon;
+  private Z mP;
+  private final Fast mPrime = new Fast();
+  private int mExpon;
 
   /** Construct the sequence. */
   public A038702() {
@@ -22,14 +24,16 @@ public class A038702 extends A000040 {
    * @param expon exponent
    */
   public A038702(final int expon) {
-    setOffset(2);
+    super(2);
     mExpon = expon;
+    mP = Z.ONE;
+    mP = mPrime.nextPrime(mP);
   }
 
   @Override
   public Z next() {
-    final Z t = mA;
-    mA = super.next();
-    return mA.pow(mExpon).mod(t);
+    final Z t = mP;
+    mP = mPrime.nextPrime(mP);
+    return mP.pow(mExpon).mod(t);
   }
 }

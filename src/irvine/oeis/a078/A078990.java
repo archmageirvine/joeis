@@ -3,13 +3,13 @@ package irvine.oeis.a078;
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A078990 Triangle arising from (4,2) tennis ball problem, read by rows.
  * @author Sean A. Irvine
  */
-public class A078990 extends Sequence1 {
+public class A078990 extends Sequence0 {
 
   private int mN = 0;
   private int mM = -1;

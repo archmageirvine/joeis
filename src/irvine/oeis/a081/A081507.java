@@ -1,13 +1,13 @@
 package irvine.oeis.a081;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A081507 Numbers k for which 2^k + 3^k + 4^k is prime.
  * @author Sean A. Irvine
  */
-public class A081507 extends Sequence0 {
+public class A081507 extends Sequence1 {
 
   private int mN = -1;
 

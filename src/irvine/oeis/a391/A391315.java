@@ -12,6 +12,6 @@ public class A391315 extends Combiner {
 
   /** Construct the sequence. */
   public A391315() {
-    super(2, new A061552().skip(), new A000108(), SUBTRACT);
+    super(1, new A061552().skip(), new A000108(), SUBTRACT);
   }
 }

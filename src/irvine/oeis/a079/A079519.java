@@ -5,13 +5,13 @@ import irvine.math.series.Series;
 import irvine.math.series.SeriesParser;
 import irvine.math.series.SeriesRing;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A079519 Related to tennis ball problem.
  * @author Sean A. Irvine
  */
-public class A079519 extends Sequence0 {
+public class A079519 extends Sequence1 {
 
   private static final SeriesRing<Q> SQ = SeriesRing.SQ;
   private int mN = 0;

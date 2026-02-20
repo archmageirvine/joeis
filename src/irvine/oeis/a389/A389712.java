@@ -2,7 +2,7 @@ package irvine.oeis.a389;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence3;
 import irvine.util.array.DynamicLongArray;
 import irvine.util.string.StringUtils;
 
@@ -10,7 +10,7 @@ import irvine.util.string.StringUtils;
  * A389712 a(n) is the least number k such that there is a set of n proper divisors of k whose sum is k, and no set of fewer than n proper divisors of k whose sum is k.
  * @author Sean A. Irvine
  */
-public class A389712 extends Sequence1 {
+public class A389712 extends Sequence3 {
 
   private final DynamicLongArray mFirsts = new DynamicLongArray();
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));

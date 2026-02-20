@@ -27,7 +27,7 @@ public class A393399 extends Sequence1 {
     mFactorSequences.get(mN).lock(); // safety
     long count = 0;
     final FactorSequence fs = new FactorSequence(mFactorSequences.get(mN)); // use a copy
-    Z p = fs.largestPrimeFactor();
+    final Z p = fs.largestPrimeFactor();
     for (int d = mN - 1; d > 0; --d) {
       final FactorSequence fsD = mFactorSequences.get(d);
       final Z lpfD = fsD.largestPrimeFactor();

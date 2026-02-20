@@ -16,7 +16,7 @@ public class A083826 extends Sequence1 implements Conjectural {
 
   @Override
   public Z next() {
-    long r = ++mN % 10;
+    final long r = ++mN % 10;
     if (r == 0) {
       return Z.ZERO;
     }
@@ -24,8 +24,8 @@ public class A083826 extends Sequence1 implements Conjectural {
       return Z.valueOf(12);
     }
 
-    long m = (mN - 1) / 10;
-    Z p = Z.TEN.pow(m + 1);
+    final long m = (mN - 1) / 10;
+    final Z p = Z.TEN.pow(m + 1);
     if (r == 9) {
       return p.multiply(9);
     }

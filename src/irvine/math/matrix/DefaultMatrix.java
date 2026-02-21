@@ -58,7 +58,7 @@ public class DefaultMatrix<E> extends AbstractMatrix<E> {
    * @exception IllegalArgumentException if rows or columns is non-positive.
    */
   public DefaultMatrix(final E[][] elements, final E zero) {
-    this(elements.length, elements[0].length, zero);
+    this(elements.length, elements.length == 0 ? 0 : elements[0].length, zero);
     for (int r = 0; r < elements.length; ++r) {
       for (int c = 0; c < elements[r].length; ++c) {
         set(r, c, elements[r][c]);

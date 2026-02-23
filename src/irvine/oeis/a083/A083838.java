@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002113;
 
 /**
- * A083828.
+ * A083838 Smallest palindrome of the form nk+1 where k is also a palindrome:, or 0 if no such number exists; palindromes arising in A083837.
  * @author Sean A. Irvine
  */
 public class A083838 extends Sequence1 {

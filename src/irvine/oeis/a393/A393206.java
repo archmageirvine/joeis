@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393206 allocated for Felix Huber.
+ * A393206 a(n) is the number of partitions of A005101(n) into distinct abundant numbers.
  * @author Sean A. Irvine
  */
 public class A393206 extends Sequence1 {

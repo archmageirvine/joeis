@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A393300 allocated for Scott R. Shannon.
+ * A393300 a(1) = 0; for n &gt; 1, a(n) is the smallest unused number k such that k! contains a(1), a(2), ..., a(n-1) as substrings.
  * @author Sean A. Irvine
  */
 public class A393300 extends CachedSequence {

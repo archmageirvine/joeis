@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A108924 J(n)^2+J(n+1)^2, with J(n) the Jacobsthal number A001045(n).
+ * A108924 a(n) = J(n)^2 + J(n+1)^2, with J(n) the Jacobsthal number A001045(n).
  * @author Sean A. Irvine
  */
 public class A108924 extends LinearRecurrence {

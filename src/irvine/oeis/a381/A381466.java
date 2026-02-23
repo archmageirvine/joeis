@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A381466 a(0) = 4; for n &gt; 0, a(n) = a(n-1) + n if G = 1 or a(n) = n/G if G &gt; 1, where G = gcd(a(n-1), n).
+ * A381466 a(0) = 4; for n &gt; 0, a(n) = a(n-1) + n if g = 1, otherwise a(n) = n/g, where g = gcd(a(n-1), n).
  * @author Sean A. Irvine
  */
 public class A381466 extends Sequence0 {

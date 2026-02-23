@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A226779 Numbers n such that n&apos;=(n+1)&apos;, where n&apos; is the arithmetic derivative of n.
+ * A226779 Numbers n such that n'=(n+1)', where n' is the arithmetic derivative of n.
  * @author Georg Fischer
  */
 public class A226779 extends FilterNumberSequence {

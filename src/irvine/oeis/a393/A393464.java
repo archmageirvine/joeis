@@ -4,7 +4,7 @@ package irvine.oeis.a393;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A393464 Number of maximum independent vertex sets in the n-necklace graph.
+ * A393464 Number of maximum independent vertex sets and minimum vertex covers in the n-necklace graph.
  * @author Georg Fischer
  */
 public class A393464 extends HolonomicRecurrence {

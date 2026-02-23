@@ -5,7 +5,7 @@ import irvine.math.polynomial.HermitePolynomials;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A393354 allocated for A.H.M. Smeets.
+ * A393354 Decimal expansion of the largest positive zero of the Hermite polynomial of degree 4.
  * @author Sean A. Irvine
  */
 public class A393354 extends PolynomialRootExpansionSequence {

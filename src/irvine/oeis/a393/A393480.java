@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392412.
+ * A393480 a(n) is the hafnian of the 2n X 2n symmetric matrix whose generic element M[i,j] is equal to the digit reversal of i*j.
  * @author Sean A. Irvine
  */
 public class A393480 extends Sequence0 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A101651 a(n)=Product{k=0..n, 1+0^A010060(k)}/2.
+ * A101651 a(n) = Product_{k=0..n} (1 + 0^A010060(k))/2.
  * @author Georg Fischer
  */
 public class A101651 extends LambdaSequence {

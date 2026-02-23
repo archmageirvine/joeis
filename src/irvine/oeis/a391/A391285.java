@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A392060 Number of decimal places which are known after n terms of the continued fraction for the golden ratio.
+ * A391285 Number of decimal places which are known after n terms of the continued fraction for the silver ratio.
  * @author Sean A. Irvine
  */
 public class A391285 extends Sequence1 {

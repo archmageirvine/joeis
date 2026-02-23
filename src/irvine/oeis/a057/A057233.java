@@ -5,7 +5,7 @@ package irvine.oeis.a057;
 import irvine.oeis.a015.A015889;
 
 /**
- * A057233 Numbers n such that n | 8^n + 7^n + 6^n.
+ * A057233 Numbers k such that k | 8^k + 7^k + 6^k.
  *
  * @author Georg Fischer
  */

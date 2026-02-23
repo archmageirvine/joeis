@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A009535 Expansion of sin(x)*cos(tan(x)).
+ * A009535 Expansion of e.g.f.: sin(x)*cos(tan(x)).
  * @author Sean A. Irvine
  */
 public class A009535 extends Sequence0 {

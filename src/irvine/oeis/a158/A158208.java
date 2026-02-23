@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A158208 Triangle read by rows: p(x,n) = 2 if n = 0, Sum_{i=0..floor((n-1)/2)} binomial(n, i)*(x - 1)^i + x^n*Sum_{i=0..floor((n-1)/2)} binomial(n, i)*(1/x - 1)^i otherwise.
+ * A158208 Triangle read by rows: T(n,k) = [x^k] P(n), 0&lt;=k&lt;=n, where P(0) = 2 and P(n) = Sum_{k=0..floor((n-1)/2)} binomial(n, k) * (x - 1)^k + x^n*Sum_{k=0..floor((n-1)/2)} binomial(n, k) * (1/x-1)^k, otherwise.
  * @author Sean A. Irvine
  */
 public class A158208 extends Sequence0 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A163587 Primes of the form floor(2 * (k+j) * log(2*(k+j)), 0 &lt;= j &lt;= k.
+ * A163587 Primes of the form floor(2 * (k+j) * log(2*(k+j))), 0 &lt;= j &lt;= k.
  * @author Sean A. Irvine
  */
 public class A163587 extends Sequence1 {

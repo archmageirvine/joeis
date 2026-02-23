@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A181598 Numbers m with divisor 8 | m and abundance sigma(m)-2*m = 8.
+ * A181598 Numbers m divisible by 8 and with abundance sigma(m)-2*m = 8.
  * @author Georg Fischer
  */
 public class A181598 extends FilterSequence {

@@ -11,7 +11,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006881;
 
 /**
- * A393286 allocated for Clark Kimberling.
+ * A393286 Rectangular array, read by descending antidiagonals; row n gives the positions in A006881 of numbers whose least prime divisor is prime(n).
  * @author Sean A. Irvine
  */
 public class A393286 extends Sequence1 {

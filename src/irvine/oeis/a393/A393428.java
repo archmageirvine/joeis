@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A393428 allocated for Amiram Eldar.
+ * A393428 Decimal expansion of the probability that the centroid of a given regular pentagon lies within the triangle formed by three points chosen uniformly and independently at random from the interior of that pentagon.
  * @author Sean A. Irvine
  */
 public class A393428 extends DecimalExpansionSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391671 allocated for Frank Hollstein.
+ * A391671 Number of different pawn structures on an n X n chessboard.
  * @author Sean A. Irvine
  */
 public class A391671 extends Sequence0 {

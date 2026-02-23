@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005101;
 
 /**
- * A393350 allocated for Felix Huber.
+ * A393350 a(n) is the number of primes between A005101(n) and A005101(n + 1).
  * @author Sean A. Irvine
  */
 public class A393350 extends A005101 {

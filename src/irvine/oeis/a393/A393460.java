@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A083828.
+ * A393460 a(n) is the least prime p such that n - p is the reverse of a prime, where leading 0's are not allowed, or -1 if there is no such p.
  * @author Sean A. Irvine
  */
 public class A393460 extends AbstractSequence {

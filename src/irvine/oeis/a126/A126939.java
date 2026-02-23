@@ -4,7 +4,7 @@ package irvine.oeis.a126;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A126939 &quot;Model 1&quot; for number of free alkanes on n points.
+ * A126939 "Model 1" for number of free alkanes on n points.
  * @author Georg Fischer
  */
 public class A126939 extends HolonomicRecurrence {

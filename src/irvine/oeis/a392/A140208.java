@@ -5,7 +5,7 @@ import irvine.oeis.a128.A128913;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A140208 a(n) = floor(n*Pi(n)/2).
+ * A140208 a(n) = floor(n*pi(n)/2) where pi(n) is the number of primes &lt;= n.
  * @author Sean A. Irvine
  */
 public class A140208 extends SimpleTransformSequence {

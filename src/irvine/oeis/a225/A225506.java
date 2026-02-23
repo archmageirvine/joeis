@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A225506 -2-Knödel numbers.
+ * A225506 -2-Kn\u00f6del numbers.
  * @author Georg Fischer
  */
 public class A225506 extends AbstractSequence {

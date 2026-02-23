@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001597;
 
 /**
- * A392986 allocated for Michael De Vlieger.
+ * A392986 Irregular table T(n,k) where row n lists roots r such that A001597(n) = r^m for some m &gt; 1.
  * @author Sean A. Irvine
  */
 public class A392986 extends A001597 {

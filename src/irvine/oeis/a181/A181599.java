@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A181599 Numbers m with divisor 16 | m and abundance sigma(m)-2*m = 16.
+ * A181599 Numbers m divisible by 16 and with abundance sigma(m)-2*m = 16.
  * @author Georg Fischer
  */
 public class A181599 extends FilterSequence {

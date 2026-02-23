@@ -5,7 +5,7 @@ import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A392412.
+ * A392453 Decimal expansion of Gamma(1/3)^18/(8960*Pi^6).
  * @author Sean A. Irvine
  */
 public class A392453 extends DecimalExpansionSequence {

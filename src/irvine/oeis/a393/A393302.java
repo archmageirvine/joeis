@@ -10,7 +10,7 @@ import irvine.oeis.a002.A002430;
 import irvine.oeis.a036.A036279;
 
 /**
- * A393302 allocated for Amiram Eldar.
+ * A393302 Numerator of Sum_{k=1..floor((n+1)/2)} binomial(n, 2*k-2) * c(k), where c(k) = A002430(k)/A036279(k) is the k-th positive coefficient in the Taylor series for tan(x).
  * @author Sean A. Irvine
  */
 public class A393302 extends Sequence1 {

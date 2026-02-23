@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A108027 Numbers n such that 137*n + 139 is prime.
+ * A108027 Numbers k such that 137*k + 139 is prime.
  * @author Georg Fischer
  */
 public class A108027 extends PrimePositionSubsequence {

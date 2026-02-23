@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393287 allocated for Robert Israel.
+ * A393287 a(n) is the least k &gt;= 1 such that n + k^2 is the digit reversal of a square.
  * @author Sean A. Irvine
  */
 public class A393287 extends Sequence1 {

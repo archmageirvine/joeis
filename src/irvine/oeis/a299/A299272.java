@@ -4,7 +4,7 @@ package irvine.oeis.a299;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A299272 Coordination sequence for &quot;flu&quot; 3D uniform tiling formed from tetrahedra, rhombicuboctahedra, and cubes.
+ * A299272 Coordination sequence for "flu" 3D uniform tiling formed from tetrahedra, rhombicuboctahedra, and cubes.
  * @author Georg Fischer
  */
 public class A299272 extends HolonomicRecurrence {

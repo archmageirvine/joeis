@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A393331 allocated for Pontus von Br\u00f6mssen.
+ * A393331 Nonnegative integers k such that the Euclidean distance between the vector of proportions of the digits 0-9 in 2^k and the uniform distribution (1/10, ..., 1/10) sets a new minimum.
  * @author Sean A. Irvine
  */
 public class A393331 extends Sequence1 {

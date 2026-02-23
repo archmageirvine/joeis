@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A043853 Numbers n such that number of runs in the base 4 representation of n is congruent to 3 mod 8.
+ * A043853 Numbers k such that number of runs in the base 4 representation of k is congruent to 3 mod 8.
  * @author Georg Fischer
  */
 public class A043853 extends RunsBaseSequence {

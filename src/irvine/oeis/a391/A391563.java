@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083828.
+ * A391563 a(n) is the number of ways to write n = p + q where p is prime and q is the reverse of a prime.
  * @author Sean A. Irvine
  */
 public class A391563 extends Sequence1 {

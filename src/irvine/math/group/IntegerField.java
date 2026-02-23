@@ -21,6 +21,9 @@ public final class IntegerField extends Integers implements Field<Z> {
 
   @Override
   public Z inverse(final Z element) {
+    if (element.abs().isOne()) {
+      return element;
+    }
     throw new UnsupportedOperationException();
   }
 

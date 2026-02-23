@@ -1,5 +1,7 @@
 package irvine.math;
 
+import irvine.math.z.Z;
+
 /**
  * Provides various functions operating on bytes.
  * @author Sean A. Irvine
@@ -54,5 +56,17 @@ public final class ByteUtils {
     return identity(a, a.length);
   }
 
+  /**
+   * Convert a byte array to an unsigned hexadecimal value.
+   * @param a byte array
+   * @return hex value
+   */
+  public static String toHex(final byte[] a) {
+    Z v = Z.ZERO;
+    for (final int t : a) {
+      v = v.shiftLeft(8).add(t & 0xFF);
+    }
+    return v.toString(16);
+  }
 }
 

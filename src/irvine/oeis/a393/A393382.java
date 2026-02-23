@@ -4,7 +4,7 @@ package irvine.oeis.a393;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A393382 allocated for Ilya Gutkovskiy.
+ * A393382 a(0) = 1; a(n) = 2 * a(n-1) + a(floor(n/3)).
  * @author Georg Fischer
  */
 public class A393382 extends PolynomialFieldSequence {

@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A393288 allocated for Paolo Xausa.
+ * A393288 Decimal expansion of 1 + e - gamma, where gamma is the Euler-Mascheroni constant (A001620).
  * @author Sean A. Irvine
  */
 public class A393288 extends DecimalExpansionSequence {

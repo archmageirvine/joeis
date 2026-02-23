@@ -2724,3 +2724,4 @@ A083781 Triangle of primes associated with A083779.
 A083782 n-th row of the following triangle contains n distinct natural numbers such that every sum of n-1 of them +1 is a prime, n>1, with a(1) = 1 by convention. Sequence contains the triangle by rows.
 A083783 Diagonal of A083782.
 A083784 Triangle of primes derived from A083782.
+A083843 Total number of distinct cycles in a particular cellular automata of size n.

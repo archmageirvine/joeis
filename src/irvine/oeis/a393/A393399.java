@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393399 allocated for Robert G. Wilson v.
+ * A393399 The number of quintuplets where a!b!c!d!n! is a perfect square, with 0&lt;a&lt;b&lt;c&lt;d&lt;n.
  * @author Sean A. Irvine
  */
 public class A393399 extends Sequence1 {

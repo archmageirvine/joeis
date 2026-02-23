@@ -4,17 +4,17 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A066863 Number of binary arrangements without adjacent 1's on n X n staggered hexagonal grid.
  * @author Sean A. Irvine
  */
-public class A066863 extends Sequence1 {
+public class A066863 extends Sequence0 {
 
   // Computes left to right with respect to the Example picture in the OEIS.
 
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {

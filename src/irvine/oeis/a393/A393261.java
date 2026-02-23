@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A393261 allocated for Michael De Vlieger.
+ * A393261 Irregular table T(n,k) = 2^(prime(n)-k) * prime(n)^k, n &gt;= 1, k = 1..prime(n)-1.
  * @author Sean A. Irvine
  */
 public class A393261 extends A000040 {

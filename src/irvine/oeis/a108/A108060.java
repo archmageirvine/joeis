@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A108060 Numbers n such that 191*n + 193 is prime.
+ * A108060 Numbers k such that 191*k + 193 is prime.
  * @author Georg Fischer
  */
 public class A108060 extends PrimePositionSubsequence {

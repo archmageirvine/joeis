@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393283 allocated for Benjamin W P Cornish.
+ * A393283 A triangular array where each value is the sum of points on or adjacent to the ray connecting the value to the apex of the triangle, with first rows terms [0], [1,0].
  * @author Sean A. Irvine
  */
 public class A393283 extends Sequence0 {

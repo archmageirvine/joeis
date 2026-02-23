@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001597;
 
 /**
- * A393085 allocated for Michael De Vlieger.
+ * A393085 Irregular table T(n,k) where row n lists exponents m such that A001597(n) = r^m for some integer r.
  * @author Sean A. Irvine
  */
 public class A393085 extends A001597 {

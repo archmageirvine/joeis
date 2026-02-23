@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392285 allocated for Ridouane Oudra.
+ * A392285 a(n) = omega(n) * (-1)^(bigomega(n) + 1).
  * @author Sean A. Irvine
  */
 public class A392285 extends Sequence1 {

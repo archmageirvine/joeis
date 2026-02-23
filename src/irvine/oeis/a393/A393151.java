@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A392412.
+ * A393151 Least prime representable as a sum of n prime powers using each of the first 2n primes exactly once as bases and exponents, and -1 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A393151 extends Sequence1 {

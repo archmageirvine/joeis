@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002113;
 
 /**
- * A083828.
+ * A083837 Smallest palindrome n such that kn + 1 is a palindrome, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A083837 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A055696 Numbers n such that n | Sigma_2(n) + Phi(n)^2.
+ * A055696 Numbers k such that k | sigma_2(k) + phi(k)^2.
  * @author Sean A. Irvine
  */
 public class A055696 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393311 allocated for Zhuorui He.
+ * A393311 Triangle read by rows: T(n,k) = (n-k-2)!!^2 * binomial(n,k) if n+k is odd, else 0.
  * @author Sean A. Irvine
  */
 public class A393311 extends Sequence0 {

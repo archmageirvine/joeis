@@ -5,7 +5,7 @@ import irvine.oeis.a388.A388753;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A392358 allocated for Paolo Xausa.
+ * A392358 Decimal expansion of (2 - sqrt(2*sqrt(2) - 2)/(2^2))^2.
  * @author Sean A. Irvine
  */
 public class A392358 extends DecimalExpansionSequence {

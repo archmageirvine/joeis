@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A083819.
+ * A391365 Array read by antidiagonals: A(n,k) = reverse(n*k) = A004086(n*k).
  * @author Sean A. Irvine
  */
 public class A391365 extends Sequence0 {

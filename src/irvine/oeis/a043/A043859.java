@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A043859 Numbers n such that number of runs in the base 4 representation of n is congruent to 1 mod 9.
+ * A043859 Numbers k such that number of runs in the base 4 representation of k is congruent to 1 mod 9.
  * @author Georg Fischer
  */
 public class A043859 extends RunsBaseSequence {

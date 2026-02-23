@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A178429 Numbers n such that 10^n - 51 is prime.
+ * A178429 Numbers k such that 10^k - 51 is prime.
  * @author Georg Fischer
  */
 public class A178429 extends PrimePositionSubsequence {

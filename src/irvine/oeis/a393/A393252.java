@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a083.A083207;
 
 /**
- * A393252 allocated for Felix Huber.
+ * A393252 Number of partitions of A083207(n) into distinct Zumkeller numbers.
  * @author Sean A. Irvine
  */
 public class A393252 extends Sequence1 {

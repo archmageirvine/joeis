@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393226 allocated for George B. Salomon.
+ * A393226 Maximum difference between b^c and c^b, where b,c are natural numbers such that b*c=n.
  * @author Sean A. Irvine
  */
 public class A393226 extends Sequence1 {

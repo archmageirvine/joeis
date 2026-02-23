@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393301 allocated for Scott R. Shannon.
+ * A393301 a(1) = 0; for n &gt; 1, a(n) is the smallest unused number k such that k! contains the concatenation of a(1), a(2), ..., a(n-1) as a substring.
  * @author Sean A. Irvine
  */
 public class A393301 extends Sequence1 {

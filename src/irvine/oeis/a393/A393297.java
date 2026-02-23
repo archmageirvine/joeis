@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393297 allocated for Aminos Abijad.
+ * A393297 a(n) = Pell(Pell(n)) where Pell(n) = A000129(n).
  * @author Sean A. Irvine
  */
 public class A393297 extends Sequence0 {

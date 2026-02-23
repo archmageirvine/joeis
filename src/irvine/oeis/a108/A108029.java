@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A108029 Numbers n such that 149*k + 151 is prime.
+ * A108029 Numbers k such that 149*k + 151 is prime.
  * @author Georg Fischer
  */
 public class A108029 extends PrimePositionSubsequence {

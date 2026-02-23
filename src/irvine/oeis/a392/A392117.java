@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
- * A392117 allocated for Clark Kimberling.
+ * A392117 Lower Wythoff partition sequence of the primes; see Comments.
  * @author Sean A. Irvine
  */
 public class A392117 extends Sequence1 {
@@ -36,7 +36,7 @@ public class A392117 extends Sequence1 {
     this(DirectSequence.create(new A000040()));
   }
 
-  protected Z select(final Z lower, final Z upper) {
+  protected Z select(final Z lower, final Z upper, final int lowerIndex, final int upperIndex) {
     return lower;
   }
 
@@ -51,13 +51,14 @@ public class A392117 extends Sequence1 {
       final Z v = mS.a(k);
       mU.add(u);
       mV.add(v);
-      return select(u, v);
+      return select(u, v, 1, k);
     }
     int k = 2;
     Z u;
     while (mU.contains(u = mS.a(k)) || mV.contains(u)) {
       ++k;
     }
+    final int lo = k;
     final Z t = u.add(mS.a(mN));
     while (mS.a(++k).compareTo(t) < 0 || mV.contains(mS.a(k))) {
       // do nothing
@@ -65,6 +66,6 @@ public class A392117 extends Sequence1 {
     final Z v = mS.a(k);
     mU.add(u);
     mV.add(v);
-    return select(u, v);
+    return select(u, v, lo, k);
   }
 }

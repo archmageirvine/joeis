@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A387786 allocated for Aminos Abijad.
+ * A387786 a(0)=2, a(1)=1, and thereafter a(n) = R(a(n-1) + a(n-2)) where R(x) = A004086(x) is the decimal digit reversal of x.
  * @author Sean A. Irvine
  */
 public class A387786 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A108058 Numbers n such that 179*n + 181 is prime.
+ * A108058 Numbers k such that 179*k + 181 is prime.
  * @author Georg Fischer
  */
 public class A108058 extends PrimePositionSubsequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393157 allocated for Paolo P. Lava.
+ * A393157 Smallest positive number m such that A000538(m) is divisible by n.
  * @author Sean A. Irvine
  */
 public class A393157 extends Sequence1 {

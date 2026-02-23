@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083804 a(1) = 1. If the (n-1)th partial concatenation is divisible by n then a(n) = 0. Otherwise, a(n) is the smallest positive number such that the n-th partial concatenation is divisible by n.
+ * A083804 a(1) = 1. If the (n-1)-th partial concatenation is divisible by n then a(n) = 0; otherwise, a(n) is the smallest positive number such that the n-th partial concatenation is divisible by n.
  * @author Sean A. Irvine
  */
 public class A083804 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A271438 Numbers n such that the number formed by concatenating in ascending order the first n multidigit palindromic primes is prime.
+ * A271438 Numbers k such that the number formed by concatenating in ascending order the first k multidigit palindromic primes is prime.
  *
  * @author Georg Fischer
  */

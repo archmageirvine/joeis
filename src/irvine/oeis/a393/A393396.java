@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393396 allocated for Stefano Spezia.
+ * A393396 Irregular triangle read by rows: the n-th row gives the list of d^(n/d) where d is a divisor of n.
  * @author Sean A. Irvine
  */
 public class A393396 extends Sequence1 {

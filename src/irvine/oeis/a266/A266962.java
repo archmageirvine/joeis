@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A266962 Numbers n such that (2^(n+8) * 5^(n+5) - 409949) / 9 is prime (n &gt; 0).
+ * A266962 Numbers k such that (2^(k+8) * 5^(k+5) - 409949) / 9 is prime (k &gt; 0).
  * @author Georg Fischer
  */
 public class A266962 extends FilterNumberSequence {

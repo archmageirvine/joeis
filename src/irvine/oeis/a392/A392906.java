@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a393.A393283;
 
 /**
- * A392906 allocated for Benjamin W P Cornish.
+ * A392906 Number of odd terms in row n of A393283.
  * @author Sean A. Irvine
  */
 public class A392906 extends A393283 {

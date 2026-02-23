@@ -5,7 +5,7 @@ import irvine.oeis.a046.A046868;
 import irvine.oeis.a233.A233671;
 
 /**
- * A391658 allocated for Clark Kimberling.
+ * A391658 a(n) = A233671(n) - A046868(n).
  * @author Sean A. Irvine
  */
 public class A391658 extends Combiner {

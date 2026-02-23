@@ -14,7 +14,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**
- * A390016 allocated for Sean A. Irvine.
+ * A390016 Maximum halting time across all Wolfram 3-state 2-symbol Turning machines started with n on the tape.
  * @author Sean A. Irvine
  */
 public class A390016 extends Sequence1 implements Conjectural {

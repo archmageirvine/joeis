@@ -5,7 +5,7 @@ import irvine.oeis.Sequence2;
 import irvine.util.Permutation;
 
 /**
- * A393306 allocated for Robert Israel.
+ * A393306 a(n) is the greatest number k that contains, in base n, every digit exactly once, and such that k/(n-1) (if n is even) or 2*k/(n-1) (if n is odd) is prime.
  * @author Sean A. Irvine
  */
 public class A393306 extends Sequence2 {

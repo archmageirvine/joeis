@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007310;
 
 /**
- * A389368 allocated for Alain Rocchelli.
+ * A389368 a(n) = R(A007310(n)), where R(k) = (5*k+1)/(2^r*3^s), with r and s as large as possible, that is R(k) = A065330(A016861(k)).
  * @author Sean A. Irvine
  */
 public class A389368 extends A007310 {

@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A120617 Hankel transform of g.f. 1/sqrt(1+4x^2).
+ * A120617 Hankel transform of g.f. 1/sqrt(1+4*x^2).
  * @author Sean A. Irvine
  */
 public class A120617 extends LinearRecurrence {

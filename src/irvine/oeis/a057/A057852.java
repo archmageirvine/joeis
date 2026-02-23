@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A057852 Numbers n such that n | Sigma_2(n) + Sigma_1(n) + Sigma_0(n).
+ * A057852 Numbers k such that k | sigma_2(k) + sigma_1(k) + sigma_0(k).
  * @author Sean A. Irvine
  */
 public class A057852 extends Sequence1 {

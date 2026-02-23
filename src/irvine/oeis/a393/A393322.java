@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A393322 allocated for Ctibor O. Zizka.
+ * A393322 Prime numbers prime(i) such that reversal(prime(i)) = prime(reversal(i)).
  * @author Sean A. Irvine
  */
 public class A393322 extends FilterSequence {

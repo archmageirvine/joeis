@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A393430 allocated for Amiram Eldar.
+ * A393430 Decimal expansion of the probability that the cusp of a given cardioid lies within the triangle formed by three points chosen uniformly and independently at random from the interior of that cardioid.
  * @author Sean A. Irvine
  */
 public class A393430 extends DecimalExpansionSequence {

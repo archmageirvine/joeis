@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392412.
+ * A393417 a(n) = p is the smallest prime number, such that the sequence of 2n+1 consecutive prime numbers modulo n starting with p mod n is palindromic.
  * @author Sean A. Irvine
  */
 public class A393417 extends Sequence1 {

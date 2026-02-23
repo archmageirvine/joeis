@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393334 allocated for Robert P. P. McKone.
+ * A393334 Number of unlabeled rooted trees with n nodes whose level sizes are strictly decreasing away from the root, excluding the root level.
  * @author Sean A. Irvine
  */
 public class A393334 extends Sequence1 {

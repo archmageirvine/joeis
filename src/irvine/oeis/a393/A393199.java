@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence3;
 
 /**
- * A393199 allocated for Andreas Vermeiren.
+ * A393199 a(n) is the least m such that the base m expansion of n contains exactly two ones.
  * @author Sean A. Irvine
  */
 public class A393199 extends Sequence3 {

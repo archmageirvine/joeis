@@ -9,7 +9,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004001;
 
 /**
- * A083819.
+ * A169636 a(n) is the number of permutations of the first n terms of the Hofstadter-Conway $10000 sequence (A004001).
  * @author Sean A. Irvine
  */
 public class A169636 extends Sequence0 {

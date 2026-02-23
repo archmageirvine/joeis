@@ -9,12 +9,12 @@ import irvine.oeis.a005.A005326;
  */
 public class A009679 extends A005326 {
 
-  private int mN = 0;
+  private int mN = -2;
 
   @Override
   public Z next() {
     mN += 2;
-    return permanent(mN).sqrt();
+    return mN == 0 ? Z.ONE : permanent(mN).sqrt();
   }
 }
 

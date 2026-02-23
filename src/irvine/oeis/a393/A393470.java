@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A083828.
+ * A393470 Triangle read by rows: T(n, k) is the number of ordered pairs (i, j) of integers with 0 &lt;= i, j &lt; n such that floor((i*j) / n) = k.
  * @author Sean A. Irvine
  */
 public class A393470 extends Sequence2 {

@@ -15,7 +15,7 @@ public class A392657 extends A392117 {
   }
 
   @Override
-  protected Z select(final Z lower, final Z upper) {
+  protected Z select(final Z lower, final Z upper, final int lowerIndex, final int upperIndex) {
     return upper;
   }
 }

@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002385;
 
 /**
- * A083828.
+ * A083840 Palindromic primes which are a member of a twin prime pair.
  * @author Sean A. Irvine
  */
 public class A083840 extends FilterSequence {

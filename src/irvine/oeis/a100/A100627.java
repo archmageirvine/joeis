@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a060.A060205;
 
 /**
- * A100627 3^(2p + 1) where p is prime.
+ * A100627 a(n) = 3^(2*prime(n) + 1).
  * @author Georg Fischer
  */
 public class A100627 extends A060205 {

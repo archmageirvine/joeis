@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083828 Let x(n) = 123...n, y(n) = n...321; c(n) = delete the LSD of y(n) and concatenated with x(n); d(n) = delete LSD of x(n) and concatenate with y(n). a(n) = c(n) - d(n).
+ * A083828 Let x(n) = 123...n, y(n) = n...321; c(n) = delete the least significant digit of y(n) and concatenate with x(n); d(n) = delete the least significant digit of x(n) and concatenate with y(n). a(n) = c(n) - d(n).
  * @author Sean A. Irvine
  */
 public class A083828 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A266963 Numbers n such that (2^(n+7)*5^(n+6)-1024877)/9 is prime (n &gt; 0).
+ * A266963 Numbers k such that (2^(k+7) * 5^(k+6) - 1024877)/9 is prime (k &gt; 0).
  * @author Georg Fischer
  */
 public class A266963 extends FilterNumberSequence {

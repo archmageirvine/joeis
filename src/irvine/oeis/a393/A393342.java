@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392412.
+ * A393342 allocated for Michel Lagneau.
  * @author Sean A. Irvine
  */
 public class A393342 extends Sequence1 {

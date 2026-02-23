@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393248 a(n) is the period length of the Ducci sequence, where the initial vector are the binary digits of A007088(n).
+ * A393248 a(n) is the period length of the Ducci sequence, where the initial vector consists of the binary digits of n.
  * @author Sean A. Irvine
  */
 public class A393248 extends Sequence1 {

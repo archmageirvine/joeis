@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002385;
 
 /**
- * A083828.
+ * A083841 Palindromic primes p such that p+2 is also a prime: members of A083840 which are the smaller member of a twin prime pair.
  * @author Sean A. Irvine
  */
 public class A083841 extends FilterSequence {

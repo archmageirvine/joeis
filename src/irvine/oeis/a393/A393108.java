@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393108 allocated for Juri-Stepan Gerasimov.
+ * A393108 Numbers k for which omega(k)*omega(k + 1)*omega(k + 2)*omega(k + 3) = 4 where omega = A001221.
  * @author Sean A. Irvine
  */
 public class A393108 extends Sequence1 {

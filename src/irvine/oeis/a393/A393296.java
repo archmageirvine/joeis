@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393296 allocated for Ludovic Schwob.
+ * A393296 Number of lower sets of size n in the Young lattice.
  * @author Sean A. Irvine
  */
 public class A393296 extends Sequence0 {

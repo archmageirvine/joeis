@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A181601 Numbers m with divisor 32 | m and abundance sigma(m)-2*m = 32.
+ * A181601 Numbers m divisible by 32 and with abundance sigma(m)-2*m = 32.
  * @author Georg Fischer
  */
 public class A181601 extends FilterSequence {

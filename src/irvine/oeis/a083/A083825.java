@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083825 a(1) = 12; then numbers obtained at every stage of division by 9 in the following process. multiply by 9, reverse the digits, divide by 9, reverse the digits, multiply by 9, reverse the digit, divide by 9, ...
+ * A083825 a(1) = 12; then numbers obtained at every stage of division by 9 in the following process: multiply by 9, reverse the digits, divide by 9, reverse the digits, multiply by 9, reverse the digits, divide by 9, ...
  * @author Sean A. Irvine
  */
 public class A083825 extends Sequence1 {

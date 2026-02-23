@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A083828.
+ * A391384 Primes p such that p - 1 has exactly as many odd divisors as p + 1.
  * @author Sean A. Irvine
  */
 public class A391384 extends FilterSequence {

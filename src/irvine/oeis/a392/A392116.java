@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A392116 allocated for Clark Kimberling.
+ * A392116 a(n) = f(n+1) - f(n), where f(n) = floor(prime(n)/5).
  * @author Sean A. Irvine
  */
 public class A392116 extends A000040 {

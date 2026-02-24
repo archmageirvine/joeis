@@ -15,7 +15,7 @@ public class A083737 extends FilterNumberSequence {
   public A083737() {
     super(1, 1, k -> {
       final Z v = Z.valueOf(k);
-      return Z.TWO.modPow(v.subtract(1), v).equals(Z.ONE) && Z.THREE.modPow(v.subtract(1), v).equals(Z.ONE) && Z.FIVE.modPow(v.subtract(1), v).equals(Z.ONE) && !Predicates.PRIME.is(v);
+      return Z.TWO.modPow(v.subtract(1), v).isOne() && Z.THREE.modPow(v.subtract(1), v).isOne() && Z.FIVE.modPow(v.subtract(1), v).isOne() && !Predicates.PRIME.is(v);
     });
   }
 }

@@ -73,6 +73,7 @@ find src/irvine/oeis -name "A[0-9][0-9][0-9][0-9][0-9][0-9].java" | while read s
         -e 's/[A-Z]*\.ZERO.subtract(\(\([^()]*([^()]*)\)\+[^()]*\))/\1.negate()/g' \
         -e 's/[A-Z]*\.ZERO.subtract(\(\(\([^()]*([^()]*([^()]*)\)*[^()]*)\)\*[^()]*\))/\1.negate()/g' \
         -e '/^public class/,$ b; /@author/,$ {/^$/d}' \
+        -e 's/\.equals(Z\.ONE)/.isOne()/g' \
         <"${s}" >"${s}.t"
     if cmp -s "${s}" "${s}.t" >&/dev/null; then
         /bin/rm "${s}.t"

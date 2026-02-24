@@ -25,7 +25,7 @@ public class A140875 extends BaseTriangle {
   @Override
   public Z next() {
     Z result = super.next();
-    while (result.equals(Z.ONE)) { // cannot occur as valid value
+    while (result.isOne()) { // cannot occur as valid value
       result = super.next();
     }
     return result;

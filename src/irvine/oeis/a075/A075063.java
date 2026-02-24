@@ -17,7 +17,7 @@ public class A075063 extends A000040 {
   private boolean is(final Z p, final int n) {
     final Sequence comp = new A002808();
     for (int k = 0; k < n; ++k) {
-      if (!p.mod(comp.next()).equals(Z.ONE)) {
+      if (!p.mod(comp.next()).isOne()) {
         return false;
       }
     }

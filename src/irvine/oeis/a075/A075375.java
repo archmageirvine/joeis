@@ -29,7 +29,7 @@ public class A075375 extends Sequence1 {
     while (true) {
       if (!mUsed.isSet(++k)) {
         final Z t = mA.add(k);
-        if (Functions.GCD.z(t, mB).equals(Z.ONE)) {
+        if (Functions.GCD.z(t, mB).isOne()) {
           mUsed.set(k);
           mA = mB;
           mB = Z.valueOf(k);

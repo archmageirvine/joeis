@@ -18,7 +18,7 @@ public class A005184 extends Sequence1 {
       Z t = mN;
       while (true) {
         t = t.makeOdd();
-        if (t.equals(Z.ONE)) {
+        if (t.isOne()) {
           break;
         }
         t = t.multiply(3).add(1);

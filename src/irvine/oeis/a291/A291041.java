@@ -47,7 +47,7 @@ public class A291041 extends Sequence1 {
 
   protected static Z ceilDiv(final Z num, final Z den) {
     Z result = num.divide(den);
-    if (! num.remainder(den).equals(Z.ZERO)) {
+    if (! num.remainder(den).isZero()) {
       result = result.add(1);
     }
     return result;

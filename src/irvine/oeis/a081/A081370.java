@@ -23,7 +23,7 @@ public class A081370 extends Sequence1 {
     while (true) {
       mK = mK.add(Z.ONE);
       final Z n2 = mK.square();
-      if (Binomial.binomial(n2, mK, n2).equals(Z.ZERO)) {
+      if (Binomial.binomial(n2, mK, n2).isZero()) {
         return mK;
       }
     }

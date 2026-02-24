@@ -12,6 +12,6 @@ public class A074648 extends FilterSequence {
 
   /** Construct the sequence. */
   public A074648() {
-    super(1, new A074639(), (n, k) -> n > 0 && Functions.GCD.z(k, Functions.PHI.z(n)).equals(Z.ONE));
+    super(1, new A074639(), (n, k) -> n > 0 && Functions.GCD.z(k, Functions.PHI.z(n)).isOne());
   }
 }

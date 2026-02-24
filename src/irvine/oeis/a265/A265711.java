@@ -15,6 +15,6 @@ public class A265711 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A265711() {
-    super(1, 1, k -> Rationals.SINGLETON.sumdiv(k, d -> Q.ONE.divide(Functions.SIGMA1.z(d))).floor().equals(Z.ONE));
+    super(1, 1, k -> Rationals.SINGLETON.sumdiv(k, d -> Q.ONE.divide(Functions.SIGMA1.z(d))).floor().isOne());
   }
 }

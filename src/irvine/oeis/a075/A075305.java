@@ -21,7 +21,7 @@ public class A075305 extends A002808 {
     Z p = Z.ONE;
     while (true) {
       p = mPrime.nextPrime(p);
-      if (p.mod(mod).equals(Z.ONE) && mSeen.add(p)) {
+      if (p.mod(mod).isOne() && mSeen.add(p)) {
         return p;
       }
     }

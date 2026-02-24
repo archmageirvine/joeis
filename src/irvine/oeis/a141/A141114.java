@@ -13,6 +13,6 @@ public class A141114 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A141114() {
-    super(1, 1, k -> Functions.GCD.z(Functions.TAU.z(Functions.TAU.z(k)), Z.valueOf(k)).equals(Z.ONE));
+    super(1, 1, k -> Functions.GCD.z(Functions.TAU.z(Functions.TAU.z(k)), Z.valueOf(k)).isOne());
   }
 }

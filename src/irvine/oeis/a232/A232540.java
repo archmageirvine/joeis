@@ -13,6 +13,6 @@ public class A232540 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A232540() {
-    super(1, 1, k -> Functions.TRIANGULAR.z(k).mod(Functions.SIGMA1.z(k)).equals(Z.ONE));
+    super(1, 1, k -> Functions.TRIANGULAR.z(k).mod(Functions.SIGMA1.z(k)).isOne());
   }
 }

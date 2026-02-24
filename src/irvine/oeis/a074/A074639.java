@@ -20,7 +20,7 @@ public class A074639 extends Sequence0 implements DirectSequence {
     }
     Z sum = Z.ZERO;
     for (Z h = Z.ONE; h.compareTo(n) < 0; h = h.add(1)) {
-      if (Functions.GCD.z(h, n).equals(Z.ONE)) {
+      if (Functions.GCD.z(h, n).isOne()) {
         sum = sum.add(h.multiply(h.modInverse(n)));
       }
     }

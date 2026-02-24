@@ -17,7 +17,7 @@ public class A067236 extends Sequence1 {
     while (true) {
       ++mN;
       final Z sign = Functions.SIGMA1.z(mN);
-      if (sign.gcd(Functions.SIGMA1.z(sign)).equals(Z.ONE)) {
+      if (sign.gcd(Functions.SIGMA1.z(sign)).isOne()) {
         return Z.valueOf(mN);
       }
     }

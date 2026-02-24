@@ -23,7 +23,7 @@ public class A058894 extends A006881 {
     while (true) {
       final Z s = super.next();
       final Z t = mA.next();
-      if (s.subtract(t).abs().equals(Z.ONE)) {
+      if (s.subtract(t).abs().isOne()) {
         return s;
       }
     }

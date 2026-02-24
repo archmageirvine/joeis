@@ -23,7 +23,7 @@ public class A064014 extends Sequence1 {
         mD = mD.multiply(10);
       }
       final Z[] qr = s.divideAndRemainder(mD);
-      if (qr[0].subtract(qr[1]).abs().equals(Z.ONE)) {
+      if (qr[0].subtract(qr[1]).abs().isOne()) {
         return s;
       }
     }

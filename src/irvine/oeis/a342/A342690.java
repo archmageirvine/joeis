@@ -14,6 +14,6 @@ public class A342690 extends FilterSequence {
 
   /** Construct the sequence. */
   public A342690() {
-    super(1, new A002384(), v -> !v.equals(Z.ONE) && Predicates.PRIME_POWER.is(v));
+    super(1, new A002384(), v -> !v.isOne() && Predicates.PRIME_POWER.is(v));
   }
 }

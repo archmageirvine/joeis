@@ -11,6 +11,6 @@ public class A080763 extends A006337 {
 
   @Override
   public Z next() {
-    return super.next().equals(Z.ONE) ? Z.TWO : Z.ONE;
+    return super.next().isOne() ? Z.TWO : Z.ONE;
   }
 }

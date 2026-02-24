@@ -12,6 +12,6 @@ public class A117660 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A117660() {
-    super(1, (p, e) -> p.equals(Z.THREE) ? (e == 1 ? Z.TWO : Z.THREE.pow(e - 1).add(3)) : p.pow(e - 1).add(p.mod(Z.THREE).equals(Z.ONE) ? 3 : 1));
+    super(1, (p, e) -> p.equals(Z.THREE) ? (e == 1 ? Z.TWO : Z.THREE.pow(e - 1).add(3)) : p.pow(e - 1).add(p.mod(Z.THREE).isOne() ? 3 : 1));
   }
 }

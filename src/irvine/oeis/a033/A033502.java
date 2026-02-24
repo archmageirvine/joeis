@@ -38,7 +38,7 @@ public class A033502 extends AbstractSequence {
           final Z c = Z.valueOf(18 * mN + 1);
           if (mPrime.isPrime(c)) {
             final Z n = a.multiply(b).multiply(c);
-            if (!mPrime.isPrime(n) && n.mod(Functions.CARMICHAEL_LAMBDA.z(n)).equals(Z.ONE)) {
+            if (!mPrime.isPrime(n) && n.mod(Functions.CARMICHAEL_LAMBDA.z(n)).isOne()) {
               return n;
             }
           }

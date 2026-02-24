@@ -18,6 +18,6 @@ public class A242411 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A242411() {
-    super(1, (self, n) -> Functions.OMEGA.z(n).equals(Z.ONE) ? Z.ZERO : A061395.a(n).subtract(A061395.a(self.s(0))), "", new A051119());
+    super(1, (self, n) -> Functions.OMEGA.z(n).isOne() ? Z.ZERO : A061395.a(n).subtract(A061395.a(self.s(0))), "", new A051119());
   }
 }

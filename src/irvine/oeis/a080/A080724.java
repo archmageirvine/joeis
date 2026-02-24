@@ -12,6 +12,6 @@ public class A080724 extends A079000 {
 
   /** Construct the sequence. */
   public A080724() {
-    super(0, 2, 1, n -> n.mod(Z.THREE).equals(Z.ONE));
+    super(0, 2, 1, n -> n.mod(Z.THREE).isOne());
   }
 }

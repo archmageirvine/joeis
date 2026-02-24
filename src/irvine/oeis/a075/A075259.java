@@ -23,7 +23,7 @@ public class A075259 extends Sequence1 {
         final long lim = Q.TWO.divide(t).toZ().longValueExact();
         for (long y = (Math.max(t.reciprocal().toZ().longValueExact(), x) + 1) | 1; y < lim; y += 2) {
           final Q u = t.subtract(new Q(1, y));
-          if (u.num().equals(Z.ONE)) {
+          if (u.num().isOne()) {
             ++cnt;
           }
         }

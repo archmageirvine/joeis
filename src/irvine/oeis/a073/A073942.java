@@ -18,7 +18,7 @@ public class A073942 extends A002977 {
       ++mN;
       final Z t = mA;
       mA = super.next();
-      if (mA.subtract(t).equals(Z.ONE)) {
+      if (mA.subtract(t).isOne()) {
         return Z.valueOf(mN);
       }
     }

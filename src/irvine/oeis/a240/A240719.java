@@ -15,7 +15,7 @@ public class A240719 extends Sequence1 {
   public Z next() {
     while (true) {
       ++mK;
-      if (Z.ONE.shiftLeft(mK).mod(Z.valueOf(mK + 1).square()).equals(Z.ONE)) {
+      if (Z.ONE.shiftLeft(mK).mod(Z.valueOf(mK + 1).square()).isOne()) {
         return Z.valueOf(mK);
       }
     }

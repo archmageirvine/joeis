@@ -16,7 +16,7 @@ public class A038844 extends Sequence1 {
     while (true) {
       mN = mN.add(1);
       final Z mod = mN.multiply(6).add(1);
-      if (Z.TWO.modPow(mN, mod).equals(Z.ONE)) {
+      if (Z.TWO.modPow(mN, mod).isOne()) {
         return mN;
       }
     }

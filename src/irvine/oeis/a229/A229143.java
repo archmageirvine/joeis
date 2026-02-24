@@ -12,6 +12,6 @@ public class A229143 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A229143() {
-    super(1, (p, e) -> is3(p) ? Z.valueOf(e == 1 ? -3 : 0) : (p.mod(Z.THREE).equals(Z.ONE) ? Z.valueOf(e + 1) : Z.valueOf((1 + (neg1(e))) / 2)));
+    super(1, (p, e) -> is3(p) ? Z.valueOf(e == 1 ? -3 : 0) : (p.mod(Z.THREE).isOne() ? Z.valueOf(e + 1) : Z.valueOf((1 + (neg1(e))) / 2)));
   }
 }

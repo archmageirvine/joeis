@@ -21,7 +21,7 @@ public class A076537 extends Sequence1 {
     CR s;
     do {
       mA = mA.add(1);
-    } while (Functions.GCD.z(mA.subtract(Binomial.binomial(CR.HALF.add(s = CR.valueOf(mA.multiply2()).sqrt()).floor(), Z.TWO)), Binomial.binomial(T.add(s).floor(), 2).subtract(mA).add(1)).equals(Z.ONE));
+    } while (Functions.GCD.z(mA.subtract(Binomial.binomial(CR.HALF.add(s = CR.valueOf(mA.multiply2()).sqrt()).floor(), Z.TWO)), Binomial.binomial(T.add(s).floor(), 2).subtract(mA).add(1)).isOne());
     return mA;
   }
 }

@@ -12,6 +12,6 @@ public class A072438 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A072438() {
-    super(1, (p, e) -> p.mod(Z.FOUR).equals(Z.ONE) ? Z.ONE : p.pow(e));
+    super(1, (p, e) -> p.mod(Z.FOUR).isOne() ? Z.ONE : p.pow(e));
   }
 }

@@ -17,7 +17,7 @@ public class A076735 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    while (!mSum.mod(mK.pow(mN)).equals(Z.ZERO)) {
+    while (!mSum.mod(mK.pow(mN)).isZero()) {
       mK = mK.add(1);
       mSum = Z.ZERO;
       final long k = mK.longValueExact();

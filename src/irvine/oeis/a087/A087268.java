@@ -13,6 +13,6 @@ public class A087268 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A087268() {
-    super(1, 0, k -> Functions.GCD.z(Z.valueOf(k), Functions.PRIME_PI.z(k)).equals(Z.ONE));
+    super(1, 0, k -> Functions.GCD.z(Z.valueOf(k), Functions.PRIME_PI.z(k)).isOne());
   }
 }

@@ -20,7 +20,7 @@ public class A074725 extends Sequence1 {
   public Z next() {
     while (true) {
       ++mN;
-      if (mF.next().gcd(mC.next()).equals(Z.ONE)) {
+      if (mF.next().gcd(mC.next()).isOne()) {
         return Z.valueOf(mN);
       }
     }

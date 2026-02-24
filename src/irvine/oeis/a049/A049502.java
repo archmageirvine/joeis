@@ -33,7 +33,7 @@ public class A049502 extends Sequence0 implements DirectSequence {
     Z sum = Z.ZERO;
     long k = 1;
     while (m.compareTo(Z.ONE) > 0) {
-      if (m.and(Z.THREE).equals(Z.ONE)) {
+      if (m.and(Z.THREE).isOne()) {
         sum = sum.add(k);
       }
       ++k;

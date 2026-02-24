@@ -14,7 +14,7 @@ public class A052409 extends Sequence1 {
   @Override
   public Z next() {
     mN = mN.add(1);
-    if (mN.equals(Z.ONE)) {
+    if (mN.isOne()) {
       return Z.ZERO;
     }
     return mN.isPower() == null ? Z.ONE : Z.valueOf(mN.auxiliary());

@@ -13,6 +13,6 @@ public class A242482 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A242482() {
-    super(1, 1, k -> Functions.TRIANGULAR.z(k).modZ(k).add(Functions.SIGMA1.z(k).modZ(k)).add(Functions.ANTISIGMA.z(k).modZ(k)).divide(k).equals(Z.ONE));
+    super(1, 1, k -> Functions.TRIANGULAR.z(k).modZ(k).add(Functions.SIGMA1.z(k).modZ(k)).add(Functions.ANTISIGMA.z(k).modZ(k)).divide(k).isOne());
   }
 }

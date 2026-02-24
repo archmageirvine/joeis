@@ -12,6 +12,6 @@ public class A071695 extends FilterSequence {
 
   /** Construct the sequence. */
   public A071695() {
-    super(new A001359(), p -> p.and(Z.THREE).equals(Z.ONE));
+    super(new A001359(), p -> p.and(Z.THREE).isOne());
   }
 }

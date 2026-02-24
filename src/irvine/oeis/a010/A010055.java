@@ -26,7 +26,7 @@ public class A010055 extends A000961 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return n.equals(Z.ONE) ? Z.ONE : (Predicates.PRIME_POWER.is(n) ? Z.ONE : Z.ZERO);
+    return n.isOne() ? Z.ONE : (Predicates.PRIME_POWER.is(n) ? Z.ONE : Z.ZERO);
   }
 
   @Override

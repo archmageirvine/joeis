@@ -35,7 +35,7 @@ public class A130433 extends AbstractSequence {
     while (true) {
       mN += 2;
       final Z nz = Z.valueOf(mN);
-      if (mBase.modPow(Z.valueOf(mN - 1), nz).equals(Z.ONE)) {
+      if (mBase.modPow(Z.valueOf(mN - 1), nz).isOne()) {
         return nz;
       }
     }

@@ -13,6 +13,6 @@ public class A355962 extends FilterSequence {
 
   /** Construct the sequence. */
   public A355962() {
-    super(1, new A000040(), p -> p.add(7).modPow(p.subtract(1), p.square()).equals(Z.ONE));
+    super(1, new A000040(), p -> p.add(7).modPow(p.subtract(1), p.square()).isOne());
   }
 }

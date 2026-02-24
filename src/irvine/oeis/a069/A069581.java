@@ -16,7 +16,7 @@ public class A069581 extends Sequence3 {
   private long count(Q n) {
     Z den = Z.THREE;
     long cnt = 0;
-    while (!n.num().equals(Z.ONE)) {
+    while (!n.num().isOne()) {
       final Q t = new Q(Z.ONE, den);
       final Q u = n.subtract(t);
       if (u.signum() >= 0) {

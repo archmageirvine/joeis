@@ -18,7 +18,7 @@ public class A076818 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z t = mTetrahedral.next();
-      if (mLcm.gcd(t).equals(Z.ONE)) {
+      if (mLcm.gcd(t).isOne()) {
         mLcm = mLcm.lcm(t);
         return t;
       }

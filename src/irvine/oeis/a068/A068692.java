@@ -19,7 +19,7 @@ public class A068692 extends Sequence1 {
       mA = Z.ONE;
       return Z.SEVEN;
     }
-    if (mA.equals(Z.ONE)) {
+    if (mA.isOne()) {
       mA = Z.EIGHT;
       return Z.valueOf(89);
     }

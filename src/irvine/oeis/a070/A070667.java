@@ -33,7 +33,7 @@ public class A070667 extends Sequence1 {
     final Z n = Z.valueOf(mN);
     while (m < mN) {
       final Z mz = Z.valueOf(m);
-      if (mz.pow(mPow).mod(n).equals(Z.ONE)) {
+      if (mz.pow(mPow).mod(n).isOne()) {
         return mz;
       }
       ++m;

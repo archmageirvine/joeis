@@ -17,7 +17,7 @@ public class A075064 extends A002808 {
   private boolean is(final Z c, final int n) {
     final Sequence primes = new A000040();
     for (int k = 0; k < n; ++k) {
-      if (!c.mod(primes.next()).equals(Z.ONE)) {
+      if (!c.mod(primes.next()).isOne()) {
         return false;
       }
     }

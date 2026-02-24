@@ -28,7 +28,7 @@ public class A068899 extends Sequence1 {
       final FactorSequence fs = Jaguar.factor(f);
       for (final Z d : fs.divisors()) {
         final Z fd = f.divide(d);
-        if (d.gcd(fd).equals(Z.ONE)) {
+        if (d.gcd(fd).isOne()) {
           for (int e = 1; e <= 3; e += 2) {
             final Z u = ZUtils.chineseRemainderTheorem(new Z[] {Z.ONE, Z.NEG_ONE, Z.valueOf(e)}, new Z[] {d, fd, Z.FOUR});
             final Z y = u.square().subtract(1).divide(8).divide(f);

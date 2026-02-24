@@ -13,6 +13,6 @@ public class A281085 extends RationalLambdaSequence {
 
   /** Construct the sequence. */
   public A281085() {
-    super(1, NUM, n -> Rationals.SINGLETON.sum(1, n - 1, k -> n % k == 0 ? new Q(0) : new Q(1, k)));
+    super(1, NUM, n -> Rationals.SINGLETON.sum(1, n - 1, k -> n % k == 0 ? Q.ZERO : new Q(1, k)));
   }
 }

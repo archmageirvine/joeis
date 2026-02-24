@@ -16,7 +16,7 @@ public class A077007 extends A000040 {
       final Z q = mPrime.nextPrime(p);
       final Z r = mPrime.nextPrime(q);
       final Z pq = p.modMultiply(q, r);
-      if (pq.equals(Z.ONE) || pq.equals(r.subtract(1))) {
+      if (pq.isOne() || pq.equals(r.subtract(1))) {
         return p;
       }
     }

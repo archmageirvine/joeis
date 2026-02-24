@@ -19,7 +19,7 @@ public class A141182 extends CongruenceForm {
   public Z next() {
     while (true) {
       final Z result = super.next();
-      if (result.mod(Z.FOUR).equals(Z.ONE)) {
+      if (result.mod(Z.FOUR).isOne()) {
         return result;
       }
     }

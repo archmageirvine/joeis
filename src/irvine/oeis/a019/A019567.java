@@ -18,7 +18,7 @@ public class A019567 extends Sequence0 {
     while (true) {
       m = m.add(1);
       final Z mod = Z.TWO.modPow(m, mN);
-      if (mod.equals(Z.ONE) || mod.equals(mN.subtract(1))) {
+      if (mod.isOne() || mod.equals(mN.subtract(1))) {
         return m;
       }
     }

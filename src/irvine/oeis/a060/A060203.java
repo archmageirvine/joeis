@@ -19,7 +19,7 @@ public class A060203 extends Sequence1 {
     Z k = Z.ONE;
     while (true) {
       k = k.add(1);
-      if (k.modPow(Z.THREE, p).equals(Z.ONE)) {
+      if (k.modPow(Z.THREE, p).isOne()) {
         return k;
       }
     }

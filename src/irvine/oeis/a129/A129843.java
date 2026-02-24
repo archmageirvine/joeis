@@ -16,7 +16,7 @@ public class A129843 extends LambdaSequence {
   public A129843() {
     super(1, n -> {
       final Z df = Functions.MULTIFACTORIAL.z(2, n);
-      return Integers.SINGLETON.count(1, n, k -> Functions.GCD.z(Z.valueOf(k), df).equals(Z.ONE));
+      return Integers.SINGLETON.count(1, n, k -> Functions.GCD.z(Z.valueOf(k), df).isOne());
     });
   }
 }

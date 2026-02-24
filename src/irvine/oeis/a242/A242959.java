@@ -13,6 +13,6 @@ public class A242959 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A242959() {
-    super(1, 1, k -> Z.FIVE.modPow(Functions.PHI.l(k), Z.valueOf(k).multiply(k)).equals(Z.ONE));
+    super(1, 1, k -> Z.FIVE.modPow(Functions.PHI.l(k), Z.valueOf(k).multiply(k)).isOne());
   }
 }

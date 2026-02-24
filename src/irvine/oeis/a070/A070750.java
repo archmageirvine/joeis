@@ -15,6 +15,6 @@ public class A070750 extends A000040 {
   public Z next() {
     ++mN;
     final Z nextPrime = super.next();
-    return mN == 1 ? Z.ZERO : (nextPrime.mod(Z.FOUR).equals(Z.ONE) ? Z.ONE : Z.NEG_ONE);
+    return mN == 1 ? Z.ZERO : (nextPrime.mod(Z.FOUR).isOne() ? Z.ONE : Z.NEG_ONE);
   }
 }

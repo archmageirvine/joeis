@@ -18,7 +18,7 @@ public class A001598 extends A001597 {
     mSeq.add(t);
     long c = 0;
     for (final Z v : mSeq) {
-      if (t.gcd(v).equals(Z.ONE)) {
+      if (t.gcd(v).isOne()) {
         ++c;
       }
     }

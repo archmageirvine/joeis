@@ -13,6 +13,6 @@ public class A343107 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A343107() {
-    super(1, 1, k -> Integers.SINGLETON.sumdiv(k, d -> (d % 8 == 1) ? Z.ONE : Z.ZERO).equals(Z.ONE));
+    super(1, 1, k -> Integers.SINGLETON.sumdiv(k, d -> (d % 8 == 1) ? Z.ONE : Z.ZERO).isOne());
   }
 }

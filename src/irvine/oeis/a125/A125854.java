@@ -16,7 +16,7 @@ public class A125854 extends A000040 {
     while (true) {
       final Z p = super.next();
       final Z pm1 = p.subtract(1);
-      if (pm1.divide2().pow(pm1).mod(p.square()).equals(Z.ONE)) {
+      if (pm1.divide2().pow(pm1).mod(p.square()).isOne()) {
         return p;
       }
     }

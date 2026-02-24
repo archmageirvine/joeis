@@ -14,6 +14,6 @@ public class A144293 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A144293() {
-    super(0, new A000110(), v -> v.equals(Z.ONE) ? Z.ONE : Functions.GPF.z(v));
+    super(0, new A000110(), v -> v.isOne() ? Z.ONE : Functions.GPF.z(v));
   }
 }

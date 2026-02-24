@@ -17,7 +17,7 @@ public class A068629 extends Sequence1 {
     ++mN;
     if (mA.mod(mN) == 0) {
       mA = mA.divide(mN);
-    } else if (mA.gcd(Z.valueOf(mN)).equals(Z.ONE)) {
+    } else if (mA.gcd(Z.valueOf(mN)).isOne()) {
       mA = mA.multiply(mN);
     }
     return mA;

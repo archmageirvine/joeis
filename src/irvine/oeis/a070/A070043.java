@@ -18,7 +18,7 @@ public class A070043 extends Sequence1 {
       mN = mN.add(1);
       final Z t = mN.multiply(6).add(1);
       for (final Z d : Jaguar.factor(t).divisors()) {
-        if (d.mod(6) == 1 && !d.equals(Z.ONE) && !d.equals(t)) {
+        if (d.mod(6) == 1 && !d.isOne() && !d.equals(t)) {
           return mN;
         }
       }

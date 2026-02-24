@@ -14,6 +14,6 @@ public class A152217 extends FilterSequence {
 
   /** Construct the sequence. */
   public A152217() {
-    super(1, new A000040(), p -> p.mod(3) == 1 && Functions.FACTORIAL.z(p.subtract(1).divide(3)).mod(p).equals(Z.ONE));
+    super(1, new A000040(), p -> p.mod(3) == 1 && Functions.FACTORIAL.z(p.subtract(1).divide(3)).mod(p).isOne());
   }
 }

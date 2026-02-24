@@ -20,7 +20,7 @@ public class A039951 extends Sequence1 {
     while (true) {
       p = mPrime.nextPrime(p);
       final Z p2 = p.square();
-      if (mN.modPow(p.subtract(1), p2).equals(Z.ONE)) {
+      if (mN.modPow(p.subtract(1), p2).isOne()) {
         return p;
       }
     }

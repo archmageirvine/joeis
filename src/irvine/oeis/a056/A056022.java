@@ -33,7 +33,7 @@ public class A056022 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (mN.modPow(mExm1, mMod).equals(Z.ONE)) {
+      if (mN.modPow(mExm1, mMod).isOne()) {
         return mN;
       }
     }

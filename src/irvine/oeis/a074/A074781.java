@@ -20,7 +20,7 @@ public class A074781 extends A000040 {
       final Z p = super.next();
       final Z p1 = p.subtract(1);
       final Z t = p1.divide(Functions.GPF.z(p1));
-      if (t.makeOdd().equals(Z.ONE)) {
+      if (t.makeOdd().isOne()) {
         return p;
       }
     }

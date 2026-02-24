@@ -21,7 +21,7 @@ public class A050205 extends Sequence2 {
     }
     Q f = new Q(mM, mN);
     long cnt = 1;
-    while (!f.num().equals(Z.ONE)) {
+    while (!f.num().isOne()) {
       ++cnt;
       f = f.subtract(new Q(Z.ONE, f.den().add(f.num()).subtract(1).divide(f.num())));
     }

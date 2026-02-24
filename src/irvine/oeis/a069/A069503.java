@@ -21,7 +21,7 @@ public class A069503 extends Sequence1 {
     } else {
       while (true) {
         final Z t = mPalindromicPrimes.next();
-        if (t.mod(mA).equals(Z.ONE)) {
+        if (t.mod(mA).isOne()) {
           mA = t;
           break;
         }

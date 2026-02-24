@@ -12,7 +12,7 @@ public class A392290 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A392290() {
-    super(0, CR.valueOf(7).sqrt().inverse().subtract(CR.valueOf(new Q(2, 7))));
+    super(0, CR.SEVEN.sqrt().inverse().subtract(CR.valueOf(new Q(2, 7))));
   }
 }
 

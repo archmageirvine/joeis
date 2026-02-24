@@ -27,16 +27,16 @@ public class A072893 extends Sequence1 {
       }
       final Z v = c[c.length - 1];
       final Z u = c[c.length - 2];
-      if (v.equals(Z.ONE) && u.equals(Z.ONE)) {
+      if (v.isOne() && u.isOne()) {
         return true;
       }
       if (v.equals(Z.NEG_ONE) && u.equals(Z.NEG_ONE)) {
         return false;
       }
-      if (v.equals(Z.NEG_ONE) && u.equals(Z.TWO) && c[c.length - 3].equals(Z.ONE) && c[c.length - 4].equals(Z.THREE)) {
+      if (v.equals(Z.NEG_ONE) && u.equals(Z.TWO) && c[c.length - 3].isOne() && c[c.length - 4].equals(Z.THREE)) {
         return false;
       }
-      if (v.equals(Z.ONE) && u.equals(NEG_TWO) && c[c.length - 3].equals(Z.NEG_ONE) && c[c.length - 4].equals(NEG_THREE)) {
+      if (v.isOne() && u.equals(NEG_TWO) && c[c.length - 3].equals(Z.NEG_ONE) && c[c.length - 4].equals(NEG_THREE)) {
         return false;
       }
       // c(k+2) = c(k+1)/2 + c(k)/2 if c(k+1) and c(k) have the same parity; c(k+2) = c(k+1) - c(k) otherwise

@@ -23,7 +23,7 @@ public class A279392 extends Sequence1 {
     while (true) {
       final Z a1 = mSeq1.next();
       final Z a2 = mSeq2.next().add(mSeq3.next().multiply(2)).mod(Z.FOUR);
-      if (a2.equals(Z.ONE)) {
+      if (a2.isOne()) {
         return a1;
       }
     }

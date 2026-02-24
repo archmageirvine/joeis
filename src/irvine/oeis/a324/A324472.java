@@ -22,6 +22,6 @@ public class A324472 extends Sequence1 {
   @Override
   public Z next() {
     mN = mN.add(1);
-    return mN.equals(Z.ZERO) ? Z.ZERO : mParm.mod(mN);
+    return mN.isZero() ? Z.ZERO : mParm.mod(mN);
   }
 }

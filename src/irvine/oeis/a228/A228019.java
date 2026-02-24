@@ -17,7 +17,7 @@ public class A228019 extends FilterSequence {
   public A228019() {
     super(1, new A002808(), v -> {
       final Z ds = Functions.DIGIT_SUM.z(v);
-      return !ds.equals(Z.ONE) && !Predicates.PRIME.is(ds);
+      return !ds.isOne() && !Predicates.PRIME.is(ds);
     });
   }
 }

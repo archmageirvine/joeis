@@ -19,7 +19,7 @@ public class A063400 extends Sequence3 {
     Z m = mN;
     while (true) {
       m = m.subtract(1);
-      if (!m.isProbablePrime() && m.mod(Functions.CARMICHAEL_LAMBDA.z(m)).equals(Z.ONE)) {
+      if (!m.isProbablePrime() && m.mod(Functions.CARMICHAEL_LAMBDA.z(m)).isOne()) {
         return m;
       }
     }

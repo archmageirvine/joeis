@@ -13,6 +13,6 @@ public class A275665 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A275665() {
-    super(1, 1, k -> Functions.GCD.z(Z.valueOf(k), Functions.SOPF.z(k)).equals(Z.ONE));
+    super(1, 1, k -> Functions.GCD.z(Z.valueOf(k), Functions.SOPF.z(k)).isOne());
   }
 }

@@ -19,7 +19,7 @@ public class A067845 extends Sequence3 {
     Z t = mN.add(1);
     while (true) {
       t = t.subtract(2);
-      if (!mPrime.isPrime(t) && Z.TWO.modPow(t.subtract(1), t).equals(Z.ONE)) {
+      if (!mPrime.isPrime(t) && Z.TWO.modPow(t.subtract(1), t).isOne()) {
         return t;
       }
     }

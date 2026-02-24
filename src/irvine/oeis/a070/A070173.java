@@ -18,7 +18,7 @@ public class A070173 extends Sequence1 {
     while (true) {
       mF = mF.multiply(++mN);
       mT = mT.multiply2();
-      if (mF.gcd(mT.add(1)).equals(Z.ONE)) {
+      if (mF.gcd(mT.add(1)).isOne()) {
         return Z.valueOf(mN);
       }
     }

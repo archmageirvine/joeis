@@ -21,7 +21,7 @@ public class A052006 extends A052005 {
       mSum = mSum.add(mA);
       final Z t = mA;
       mA = super.next();
-      if (t.equals(Z.ONE) && mA.equals(Z.ONE)) {
+      if (t.isOne() && mA.isOne()) {
         return mSum;
       }
     }

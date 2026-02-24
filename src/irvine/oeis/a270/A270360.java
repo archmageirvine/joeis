@@ -12,6 +12,6 @@ public class A270360 extends A060035 {
 
   /** Construct the sequence. */
   public A270360() {
-    super(1, 1, (n, k) -> Z.FIVE.pow(n).subtract(1).gcd(Z.valueOf(k).pow(n).subtract(1)).equals(Z.ONE));
+    super(1, 1, (n, k) -> Z.FIVE.pow(n).subtract(1).gcd(Z.valueOf(k).pow(n).subtract(1)).isOne());
   }
 }

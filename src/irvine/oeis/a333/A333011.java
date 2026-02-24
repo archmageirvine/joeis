@@ -18,6 +18,6 @@ public class A333011 extends FilterNumberSequence {
     super(1, 1, k -> Integers.SINGLETON.count(1, Functions.SQRT.i(1 + 12 * k) / 6, i -> {
       final int ik = 1 + 24 * k + 12 * i - 36 * i * i;
       return Predicates.SQUARE.is(ik) && Functions.SQRT.i(ik) % 6 == 5;
-    }).equals(Z.ONE));
+    }).isOne());
   }
 }

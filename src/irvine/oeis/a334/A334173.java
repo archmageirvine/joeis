@@ -18,6 +18,6 @@ public class A334173 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A334173() {
-    super(1, (term, n) -> Functions.THUE_MORSE.z(n).equals(Z.ONE) ? Z.ZERO : (term.testBit(0) ? A006519.a(n) : A006519.a(n).multiply(2)), new A089309());
+    super(1, (term, n) -> Functions.THUE_MORSE.z(n).isOne() ? Z.ZERO : (term.testBit(0) ? A006519.a(n) : A006519.a(n).multiply(2)), new A089309());
   }
 }

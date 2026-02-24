@@ -22,7 +22,7 @@ public class A138302 extends AbstractSequence implements DirectPredicate {
 
   @Override
   public boolean is(final Z n) {
-    if (n.equals(Z.ONE)) {
+    if (n.isOne()) {
       return true;
     }
     final FactorSequence fs = Jaguar.factor(n);

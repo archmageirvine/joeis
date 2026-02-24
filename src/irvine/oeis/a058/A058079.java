@@ -10,7 +10,7 @@ public class A058079 extends A058078 {
 
   @Override
   public Z next() {
-    while (!super.next().equals(Z.ONE)) {
+    while (!super.next().isOne()) {
       // do nothing
     }
     return mP;

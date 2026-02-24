@@ -15,6 +15,6 @@ public class A112539 extends A112865 {
   @Override
   public Z next() {
     final Z result = super.next();
-    return result.equals(Z.ONE) ? result : Z.ZERO;
+    return result.isOne() ? result : Z.ZERO;
   }
 }

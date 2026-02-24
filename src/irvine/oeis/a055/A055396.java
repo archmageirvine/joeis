@@ -20,7 +20,7 @@ public class A055396 extends Sequence1 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return n.equals(Z.ONE) ? Z.ZERO : Functions.PRIME_PI.z(Functions.LPF.z(n));
+    return n.isOne() ? Z.ZERO : Functions.PRIME_PI.z(Functions.LPF.z(n));
   }
 
   @Override

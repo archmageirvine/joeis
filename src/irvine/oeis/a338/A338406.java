@@ -17,7 +17,7 @@ public class A338406 extends FilterNumberSequence {
       final Z t = Functions.TAU.z(k);
       final Z sg = Functions.SIGMA1.z(k);
       final Z pd = Functions.POD.z(k);
-      return Functions.GCD.z(t, sg).equals(Z.ONE) && Functions.GCD.z(t, pd).equals(Z.ONE) && Functions.GCD.z(pd, sg).equals(Z.ONE);
+      return Functions.GCD.z(t, sg).isOne() && Functions.GCD.z(t, pd).isOne() && Functions.GCD.z(pd, sg).isOne();
     });
   }
 }

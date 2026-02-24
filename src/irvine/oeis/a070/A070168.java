@@ -14,7 +14,7 @@ public class A070168 extends Sequence1 {
 
   @Override
   public Z next() {
-    if (mA.equals(Z.ONE)) {
+    if (mA.isOne()) {
       mA = Z.valueOf(++mN);
     } else {
       mA = mA.isEven() ? mA.divide2() : mA.multiply(3).add(1).divide2();

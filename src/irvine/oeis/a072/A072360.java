@@ -20,7 +20,7 @@ public class A072360 extends A072330 {
       final Z a = b.subtract(d);
       final Z c = b.add(d);
       final Q p = new Q(a.add(b).add(c), 2);
-      if (p.isInteger() && Functions.GCD.z(a, b, c).equals(Z.ONE)) {
+      if (p.isInteger() && Functions.GCD.z(a, b, c).isOne()) {
         final Z q = p.toZ();
         final Z a2 = q.multiply(q.subtract(a)).multiply(q.subtract(b)).multiply(q.subtract(c));
         final Z[] sqrt = a2.sqrtAndRemainder();

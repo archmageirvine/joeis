@@ -21,7 +21,7 @@ public class A069509 extends Sequence1 {
     } else {
       while (true) {
         final Z t = mPalindromes.next();
-        if (t.mod(mA).equals(Z.ONE) && t.subtract(mA).compareTo(Z.ONE) > 0) {
+        if (t.mod(mA).isOne() && t.subtract(mA).compareTo(Z.ONE) > 0) {
           mA = t;
           break;
         }

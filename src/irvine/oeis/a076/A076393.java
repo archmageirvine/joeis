@@ -23,7 +23,7 @@ public class A076393 extends DecimalExpansionSequence {
         long k = 0;
         while (true) {
           final Z t = CR.ONE.add(CR.valueOf(a.next().multiply2().subtract(1).square()).inverse()).log().getApprox(precision).shiftRight(++k);
-          if (t.equals(Z.ZERO)) {
+          if (t.isZero()) {
             return sum;
           }
           sum = sum.add(t);

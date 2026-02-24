@@ -13,6 +13,6 @@ public class A385734 extends A385732 {
   @Override
   protected Z compute(final int n, final int k) {
     final Q fr = super.computeQ(n, k);
-    return !Functions.GCD.z(fr.den(), Z.TWO).equals(Z.ONE) ? Z.NEG_ONE : fr.num().and(Z.ONE);
+    return !Functions.GCD.z(fr.den(), Z.TWO).isOne() ? Z.NEG_ONE : fr.num().and(Z.ONE);
   }
 }

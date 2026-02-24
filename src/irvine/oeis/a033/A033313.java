@@ -31,7 +31,7 @@ public class A033313 extends A000037 {
     final Convergents cv = new Convergents(CR.valueOf(d).sqrt());
     while (true) {
       final Q conv = cv.next();
-      if (conv.num().square().subtract(d.multiply(conv.den().square())).equals(Z.ONE)) {
+      if (conv.num().square().subtract(d.multiply(conv.den().square())).isOne()) {
         return conv;
       }
     }

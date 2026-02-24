@@ -16,7 +16,7 @@ public class A038512 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (mN.gcd(Z2310).equals(Z.ONE) && !mN.isProbablePrime()) {
+      if (mN.gcd(Z2310).isOne() && !mN.isProbablePrime()) {
         return mN;
       }
     }

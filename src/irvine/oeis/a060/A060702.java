@@ -23,7 +23,7 @@ public class A060702 extends A056868 {
       final Z n = super.next();
       for (final Group<?> g : GroupFactory.smallGroups(n.intValueExact())) {
         final Z sizeCenter = g.center().size();
-        if (sizeCenter.equals(Z.ONE)) {
+        if (sizeCenter.isOne()) {
           return n;
         }
       }

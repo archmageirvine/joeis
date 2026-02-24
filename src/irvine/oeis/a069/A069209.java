@@ -17,7 +17,7 @@ public class A069209 extends Sequence1 {
     final FactorSequence fs = Jaguar.factor(n);
     for (final Z p : fs.toZArray()) {
       for (final Z q : fs.toZArray()) {
-        if (q.mod(p).equals(Z.ONE)) {
+        if (q.mod(p).isOne()) {
           return true;
         }
       }

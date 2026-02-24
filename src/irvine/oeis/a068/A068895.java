@@ -32,7 +32,7 @@ public class A068895 extends Sequence1 {
     Z x = mPrev;
     while (true) {
       x = x.add(1);
-      if (x.modPow(Z.THREE, mPrev).equals(Z.ONE)) {
+      if (x.modPow(Z.THREE, mPrev).isOne()) {
         mPrev = x.pow(3);
         return mPrev;
       }

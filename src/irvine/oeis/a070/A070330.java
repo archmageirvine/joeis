@@ -11,6 +11,6 @@ public class A070330 extends FilterSequence {
 
   /** Construct the sequence. */
   public A070330() {
-    super(1, new A070331(), k -> k.gcd(30).equals(Z.ONE));
+    super(1, new A070331(), k -> k.gcd(30).isOne());
   }
 }

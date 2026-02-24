@@ -17,7 +17,7 @@ public class A131492 extends FilterNumberSequence {
     super(1, 1, k -> {
       final Z sum = Integers.SINGLETON.sumdiv(k, d -> Functions.CARMICHAEL_LAMBDA.z(d));
       final Z zk = Z.valueOf(k);
-      return !zk.equals(sum) && !sum.equals(Z.ONE) && zk.mod(sum).isZero();
+      return !zk.equals(sum) && !sum.isOne() && zk.mod(sum).isZero();
     });
   }
 }

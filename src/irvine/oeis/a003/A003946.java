@@ -15,7 +15,7 @@ public class A003946 extends Sequence0 {
   public Z next() {
     if (mA == null) {
       mA = Z.ONE;
-    } else if (mA.equals(Z.ONE)) {
+    } else if (mA.isOne()) {
       mA = Z.FOUR;
     } else {
       mA = mA.multiply(3);

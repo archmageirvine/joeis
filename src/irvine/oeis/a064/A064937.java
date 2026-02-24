@@ -20,7 +20,7 @@ public class A064937 extends Sequence1 {
       mP = mPrime.nextPrime(mP);
       if (!mPrime.isPrime(++mN)) {
         final Z m = Z.valueOf(mN);
-        if (Z.valueOf(mP).square().subtract(1).gcd(m).equals(Z.ONE)) {
+        if (Z.valueOf(mP).square().subtract(1).gcd(m).isOne()) {
           return m;
         }
       }

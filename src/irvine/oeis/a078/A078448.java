@@ -14,7 +14,7 @@ public class A078448 extends Sequence1 {
 
   private boolean is(final Z v, final int pos) {
     for (int k = 0; k < pos; ++k) {
-      if (!v.gcd(mRow[k]).equals(Z.ONE)) {
+      if (!v.gcd(mRow[k]).isOne()) {
         return false;
       }
     }

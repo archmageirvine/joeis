@@ -20,7 +20,7 @@ public class A065190 extends GeneratingFunctionSequence implements DirectSequenc
 
   @Override
   public Z a(final Z n) {
-    return n.equals(Z.ONE) ? Z.ONE : (n.testBit(0) ? Z.NEG_ONE : Z.ONE).add(n);
+    return n.isOne() ? Z.ONE : (n.testBit(0) ? Z.NEG_ONE : Z.ONE).add(n);
   }
 
   @Override

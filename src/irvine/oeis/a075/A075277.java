@@ -33,7 +33,7 @@ public class A075277 extends AbstractSequence {
     while (true) {
       final Z term = mSeq.next();
       final Z[] quot = term.divideAndRemainder(mMult);
-      if (quot[1].equals(Z.ZERO) && quot[0].isProbablePrime()) {
+      if (quot[1].isZero() && quot[0].isProbablePrime()) {
         return term;
       }
     }

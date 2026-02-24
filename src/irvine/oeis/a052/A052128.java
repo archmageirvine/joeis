@@ -17,7 +17,7 @@ public class A052128 extends Sequence1 {
     final Z[] d = Jaguar.factor(++mN).divisorsSorted();
     for (int k = d.length - 1; k >= 0; --k) {
       for (int j = k + 1; j < d.length; ++j) {
-        if (d[k].gcd(d[j]).equals(Z.ONE)) {
+        if (d[k].gcd(d[j]).isOne()) {
           return d[k];
         }
       }

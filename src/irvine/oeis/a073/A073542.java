@@ -17,7 +17,7 @@ public class A073542 extends Sequence1 {
   public Z next() {
     while (true) {
       ++mN;
-      if (new Q(Z.ONE, Functions.PHI.z(mN)).add(new Q(Z.ONE, Functions.PHI.z(mN + 1))).num().equals(Z.ONE)) {
+      if (new Q(Z.ONE, Functions.PHI.z(mN)).add(new Q(Z.ONE, Functions.PHI.z(mN + 1))).num().isOne()) {
         return Z.valueOf(mN);
       }
     }

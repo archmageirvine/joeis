@@ -12,6 +12,6 @@ public class A307382 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A307382() {
-    super(1, (p, e) -> p.equals(Z.SEVEN) && e == 2 || p.mod(Z.SEVEN).equals(Z.ONE) && e == 1 ? Z.SIX : Z.ZERO);
+    super(1, (p, e) -> p.equals(Z.SEVEN) && e == 2 || p.mod(Z.SEVEN).isOne() && e == 1 ? Z.SIX : Z.ZERO);
   }
 }

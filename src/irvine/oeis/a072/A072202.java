@@ -20,7 +20,7 @@ public class A072202 extends Sequence1 {
       long balance = 0;
       for (final Z p : fs.toZArray()) {
         final Z t = p.and(Z.THREE);
-        if (t.equals(Z.ONE)) {
+        if (t.isOne()) {
           balance += fs.getExponent(p);
         } else if (t.equals(Z.THREE)) {
           balance -= fs.getExponent(p);

@@ -13,6 +13,6 @@ public class A358772 extends FilterLambdaSequence {
 
   /** Construct the sequence. */
   public A358772() {
-    super(1, 1, k -> Jaguar.factor(k).arithmeticDerivative().and(Z.THREE).equals(Z.ONE));
+    super(1, 1, k -> Jaguar.factor(k).arithmeticDerivative().and(Z.THREE).isOne());
   }
 }

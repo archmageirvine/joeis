@@ -15,7 +15,7 @@ public class A078170 extends FilterNumberSequence {
   public A078170() {
     super(1, 1, k -> {
       final Z p = Functions.PHI.z(k);
-      return p.equals(Z.ONE) || (p.isPower() != null && p.auxiliary() % 10 == 0);
+      return p.isOne() || (p.isPower() != null && p.auxiliary() % 10 == 0);
     });
   }
 }

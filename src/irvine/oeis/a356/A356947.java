@@ -17,7 +17,7 @@ public class A356947 extends FilterSequence {
     super(1, new A006567(), p -> {
       final Z q = Functions.REVERSE.z(p);
       final Z s = Functions.DIGIT_SUM.z(p);
-      return p.mod(s).equals(Z.ONE) && q.mod(s).equals(Z.ONE);
+      return p.mod(s).isOne() && q.mod(s).isOne();
     });
   }
 }

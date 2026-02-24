@@ -18,7 +18,7 @@ public class A034029 extends A002479 {
         if (x2.compareTo(y2) < 0) {
           break;
         }
-        if (x2.isSquare() && y.gcd(x2.sqrt()).equals(Z.ONE)) {
+        if (x2.isSquare() && y.gcd(x2.sqrt()).isOne()) {
           return n;
         }
       }

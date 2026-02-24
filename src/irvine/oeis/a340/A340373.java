@@ -11,6 +11,6 @@ import irvine.oeis.a005.A005087;
 public class A340373 extends A005087 {
   @Override
   public Z next() {
-    return super.next().equals(Z.ONE) ? Z.ONE : Z.ZERO;
+    return super.next().isOne() ? Z.ONE : Z.ZERO;
   }
 }

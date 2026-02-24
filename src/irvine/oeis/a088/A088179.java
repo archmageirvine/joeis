@@ -14,6 +14,6 @@ public class A088179 extends FilterSequence {
 
   /** Construct the sequence. */
   public A088179() {
-    super(1, new A000040(), p -> Functions.MOEBIUS.z(p.subtract(1)).equals(Z.ONE));
+    super(1, new A000040(), p -> Functions.MOEBIUS.z(p.subtract(1)).isOne());
   }
 }

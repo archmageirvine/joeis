@@ -13,7 +13,7 @@ public class A005053 extends Sequence0 {
 
   @Override
   public Z next() {
-    mA = mA == null ? Z.ONE : mA.multiply(mA.equals(Z.ONE) ? 3 : 5);
+    mA = mA == null ? Z.ONE : mA.multiply(mA.isOne() ? 3 : 5);
     return mA;
   }
 }

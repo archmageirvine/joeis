@@ -23,7 +23,7 @@ public class A074737 extends Sequence1 {
       final Z t = Functions.GCD.z(Functions.FACTORIAL.z(mN - 2), mA.add(mB));
       mA = mB;
       mB = t;
-      if (t.equals(Z.ONE)) {
+      if (t.isOne()) {
         return Z.valueOf(mN);
       }
     }

@@ -15,6 +15,6 @@ public class A143692 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A143692() {
-    super(1, (self, n) -> self.s(0).equals(Z.ONE) ? self.s(1).multiply(2) : self.s(2).multiply(2).subtract(1), "", new A066829(), new A055038(), new A055037());
+    super(1, (self, n) -> self.s(0).isOne() ? self.s(1).multiply(2) : self.s(2).multiply(2).subtract(1), "", new A066829(), new A055038(), new A055037());
   }
 }

@@ -14,6 +14,6 @@ public class A371034 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A371034() {
-    super(1, (self, n) -> self.s(1).equals(Z.ONE) ? self.s(0) : Z.valueOf(n).divide(self.s(1)), "1", new A004086(), new A055483());
+    super(1, (self, n) -> self.s(1).isOne() ? self.s(0) : Z.valueOf(n).divide(self.s(1)), "1", new A004086(), new A055483());
   }
 }

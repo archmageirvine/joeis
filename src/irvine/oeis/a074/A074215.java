@@ -17,7 +17,7 @@ public class A074215 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (mF.next().gcd(++mN).equals(Z.ONE)) {
+      if (mF.next().gcd(++mN).isOne()) {
         return Z.valueOf(mN);
       }
     }

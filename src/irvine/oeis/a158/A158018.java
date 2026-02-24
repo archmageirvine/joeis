@@ -15,7 +15,7 @@ public class A158018 extends FilterSequence {
   public A158018() {
     super(1, new A000040(), p -> {
       final Z p2 = p.add(-1);
-      return p2.modZ(12).equals(Z.ZERO) && p2.divide(12).isProbablePrime();
+      return p2.modZ(12).isZero() && p2.divide(12).isProbablePrime();
     });
   }
 }

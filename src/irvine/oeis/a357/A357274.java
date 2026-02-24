@@ -40,7 +40,7 @@ public class A357274 extends Sequence1 {
         if (b2.isEven()) {
           final Z bz = b2.divide2();
           final Z az = Z.valueOf(mA);
-          if (az.gcd(bz).equals(Z.ONE) && az.compareTo(bz) < 0) {
+          if (az.gcd(bz).isOne() && az.compareTo(bz) < 0) {
             mTuple[0] = az;
             mTuple[1] = bz;
             mTuple[2] = Z.valueOf(mC);

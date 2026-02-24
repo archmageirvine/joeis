@@ -31,7 +31,7 @@ public class A075249 extends Sequence3 {
           break;
         }
         final Q u = t.subtract(new Q(1, y));
-        if (u.num().equals(Z.ONE)) {
+        if (u.num().isOne()) {
           c = u;
           return select(x, y, c.reciprocal().toZ().longValueExact()); // temp
         }

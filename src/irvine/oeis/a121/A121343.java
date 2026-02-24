@@ -19,6 +19,6 @@ public class A121343 extends A000045 {
   @Override
   public Z next() {
     mN = mN.add(1);
-    return mN.equals(Z.ZERO) ? Z.ZERO : super.next().mod(mN.multiply(mN.add(1)).divide2());
+    return mN.isZero() ? Z.ZERO : super.next().mod(mN.multiply(mN.add(1)).divide2());
   }
 }

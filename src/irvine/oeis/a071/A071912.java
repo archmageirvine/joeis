@@ -28,12 +28,12 @@ public class A071912 extends CachedSequence {
           ratios.add(new Q(self.a(k), self.a(k + 1)));
         }
         for (Z k = m.subtract(1); k.compareTo(1) >= 0; k = k.subtract(1)) {
-          if (Functions.GCD.z(m, k).equals(Z.ONE) && !ratios.contains(new Q(m, k))) {
+          if (Functions.GCD.z(m, k).isOne() && !ratios.contains(new Q(m, k))) {
             return k;
           }
         }
         for (Z k = m.add(1); true; k = k.add(1)) {
-          if (Functions.GCD.z(m, k).equals(Z.ONE) && !ratios.contains(new Q(m, k))) {
+          if (Functions.GCD.z(m, k).isOne() && !ratios.contains(new Q(m, k))) {
             return k;
           }
         }

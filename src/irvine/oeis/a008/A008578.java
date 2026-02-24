@@ -19,7 +19,7 @@ public class A008578 extends PrependSequence implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return n.equals(Z.ONE) ? Z.ONE : Functions.PRIME.z(n.subtract(1));
+    return n.isOne() ? Z.ONE : Functions.PRIME.z(n.subtract(1));
   }
 
   @Override

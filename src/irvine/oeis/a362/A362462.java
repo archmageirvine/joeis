@@ -12,6 +12,6 @@ public class A362462 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A362462() {
-    super(1, 1, new A362460(), v -> v.equals(Z.ONE));
+    super(1, 1, new A362460(), v -> v.isOne());
   }
 }

@@ -23,7 +23,7 @@ public class A216993 extends Sequence1 {
       return;
     }
     if (pos == soFar.length - 1) {
-      if (remaining.num().equals(Z.ONE)) {
+      if (remaining.num().isOne()) {
         final Z t = remaining.den();
         if (t.bitLength() < Long.SIZE) {
           final long u = t.longValue();

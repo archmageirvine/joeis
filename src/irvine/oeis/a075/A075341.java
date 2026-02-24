@@ -29,7 +29,7 @@ public class A075341 extends Sequence1 {
       Z t = mA;
       while (true) {
         t = t.add(1);
-        if (!t.isProbablePrime() && t.mod(mA).equals(Z.ONE)) {
+        if (!t.isProbablePrime() && t.mod(mA).isOne()) {
           mA = t;
           return mA;
         }
@@ -38,7 +38,7 @@ public class A075341 extends Sequence1 {
       Z t = mA;
       while (true) {
         t = mPrime.nextPrime(t);
-        if (t.mod(mA).equals(Z.ONE)) {
+        if (t.mod(mA).isOne()) {
           mA = t;
           return mA;
         }

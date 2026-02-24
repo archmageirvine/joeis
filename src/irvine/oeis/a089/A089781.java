@@ -23,7 +23,7 @@ public class A089781 extends Sequence1 {
       Z t = mPrev.add(mMinDelta);
       while (true) {
         t = t.add(1);
-        if (mPrev.gcd(t).equals(Z.ONE)) {
+        if (mPrev.gcd(t).isOne()) {
           final Z d = t.subtract(mPrev);
           if (mSeenDelta.add(d)) {
             if (mMinDelta.add(1).equals(d)) {

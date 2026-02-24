@@ -26,7 +26,7 @@ public class A133058 extends Sequence0 {
     if (mN > 1) {
       final Z n = Z.valueOf(mN);
       final Z common = mAn1.gcd(n);
-      mAn = common.equals(Z.ONE) ? mAn1.add(n).add(Z.ONE) : mAn1.divide(common);
+      mAn = common.isOne() ? mAn1.add(n).add(Z.ONE) : mAn1.divide(common);
     }
     mAn1 = mAn;
     return mAn;

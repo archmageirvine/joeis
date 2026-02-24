@@ -21,7 +21,7 @@ public class A214959 extends FilterNumberSequence {
           sum = sum.add(new Q(dc[i], i));
         }
       }
-      return sum.equals(new Q(1));
+      return sum.equals(Q.ONE);
     });
   }
 }

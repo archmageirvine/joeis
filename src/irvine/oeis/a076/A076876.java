@@ -51,7 +51,7 @@ public class A076876 extends A005316 {
     public Iterable<Pair<Integer, Z>> enumerate(final Pair<Integer, Z> state) {
       final ArrayList<Pair<Integer, Z>> list = new ArrayList<>();
       for (Pair<Integer, Z> next : enumeratePossibilities(state.right(),
-        (action, lower, upper) -> new Pair<>(state.left() < 0 && upper.equals(Z.ONE) ? -state.left() : state.left(), pack(lower, upper)))) {
+        (action, lower, upper) -> new Pair<>(state.left() < 0 && upper.isOne() ? -state.left() : state.left(), pack(lower, upper)))) {
         if (mLimit.signum() < 0 || next.right().compareTo(mLimit) < 0) {
           for (Pair<Integer, Z> s : fork(next)) {
             list.add(s);
@@ -71,8 +71,8 @@ public class A076876 extends A005316 {
         final Z lower = extractLower(state.right());
         final Z upper = (state.right().subtract(lower)).divide2();
         final boolean canAdvance = (state.left() & 1) == mSign
-          ? lower.equals(Z.ONE)
-          : state.left() < 0 ? upper.equals(Z.ONE.shiftLeft(WORD_SHIFT).or(Z.ONE)) : upper.equals(Z.ONE);
+          ? lower.isOne()
+          : state.left() < 0 ? upper.equals(Z.ONE.shiftLeft(WORD_SHIFT).or(Z.ONE)) : upper.isOne();
         if (canAdvance) {
           list.add(new Pair<>(state.left() + (state.left() < 0 ? -1 : 1), state.right()));
         }

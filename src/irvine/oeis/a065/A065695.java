@@ -33,7 +33,7 @@ public class A065695 extends A000040 {
       if ((m1 = m.multiply(mB).add(1)).isProbablePrime() && (m2 = m.multiply(mC).add(1)).isProbablePrime()) {
         final Z n = p.multiply(m1).multiply(m2);
         final Z lambda = Functions.CARMICHAEL_LAMBDA.z(n);
-        if (n.mod(lambda).equals(Z.ONE)) {
+        if (n.mod(lambda).isOne()) {
           return m;
         }
       }

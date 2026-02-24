@@ -20,7 +20,7 @@ public class A064219 extends Sequence1 {
     }
     if (k <= 1) {
       final Z[] egcd = a.extendedGcd(b);
-      assert egcd[0].equals(Z.ONE);
+      assert egcd[0].isOne();
       final Z v = a.multiply(egcd[1]);
       final Z u = b.multiply(egcd[2]);
       final Z m = v.abs().min(u.abs());

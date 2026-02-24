@@ -14,6 +14,6 @@ public class A346041 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A346041() {
-    super(1, 1, k -> Integers.SINGLETON.countdiv(k, d -> Functions.BIG_OMEGA.i(d) == 2).equals(Z.ONE));
+    super(1, 1, k -> Integers.SINGLETON.countdiv(k, d -> Functions.BIG_OMEGA.i(d) == 2).isOne());
   }
 }

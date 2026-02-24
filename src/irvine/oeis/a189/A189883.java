@@ -17,6 +17,6 @@ public class A189883 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A189883() {
-    super(1, 1, k -> A008833.a(k).subtract(Functions.CORE.z(k)).equals(Z.ONE));
+    super(1, 1, k -> A008833.a(k).subtract(Functions.CORE.z(k)).isOne());
   }
 }

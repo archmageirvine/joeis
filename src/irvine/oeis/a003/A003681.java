@@ -75,7 +75,7 @@ public class A003681 extends AbstractSequence {
   @Override
   public Z next() {
     final Z t;
-    if (mProd.equals(Z.ONE)) {
+    if (mProd.isOne()) {
       t = mFirst;
     } else if (mProd.equals(mFirst)) {
       t = mSecond;

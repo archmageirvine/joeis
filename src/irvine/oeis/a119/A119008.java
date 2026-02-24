@@ -51,7 +51,7 @@ public class A119008 extends Sequence1 {
     long c = 0;
     Matrix<Z> mat;
     while ((mat = it.next()) != null) {
-      if (embed.det(mat).equals(Z.ONE)) {
+      if (embed.det(mat).isOne()) {
         ++c;
       }
     }

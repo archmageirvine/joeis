@@ -12,6 +12,6 @@ public class A224516 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A224516() {
-    super(1, (p, e) -> p.equals(Z.THREE) ? (e == 1 ? Z.TWO : Z.FOUR) : (p.mod(Z.THREE).equals(Z.ONE) ? Z.FOUR : Z.TWO));
+    super(1, (p, e) -> p.equals(Z.THREE) ? (e == 1 ? Z.TWO : Z.FOUR) : (p.mod(Z.THREE).isOne() ? Z.FOUR : Z.TWO));
   }
 }

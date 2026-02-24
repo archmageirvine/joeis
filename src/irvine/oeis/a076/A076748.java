@@ -18,7 +18,7 @@ public class A076748 extends Sequence1 {
     while (true) {
       final Z u = mN.multiply(++k);
       final Z t = u.add(1);
-      if (!t.isProbablePrime() && Z.TWO.modPow(u, t).equals(Z.ONE)) {
+      if (!t.isProbablePrime() && Z.TWO.modPow(u, t).isOne()) {
         return Z.valueOf(k);
       }
     }

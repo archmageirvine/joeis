@@ -17,7 +17,7 @@ public class A069899 extends Sequence1 {
   public Z next() {
     while (true) {
       final FactorSequence fs = Jaguar.factor(++mN);
-      if (fs.largestPrimeFactor().divide(fs.leastPrimeFactor()).equals(Z.ONE)) {
+      if (fs.largestPrimeFactor().divide(fs.leastPrimeFactor()).isOne()) {
         return Z.valueOf(mN);
       }
     }

@@ -16,7 +16,7 @@ public class A074278 extends A000002 {
   public Z next() {
     while (true) {
       ++mN;
-      if (super.next().equals(Z.ONE) && (++mOnes % 3) == 0) {
+      if (super.next().isOne() && (++mOnes % 3) == 0) {
         return Z.valueOf(mN);
       }
     }

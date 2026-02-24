@@ -14,6 +14,6 @@ public class A230020 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A230020() {
-    super(1, 1, k -> !Predicates.PRIME.is(k) && Functions.SIGMA1.z(k).subtract(Functions.REVERSE.z(k)).equals(Z.ONE));
+    super(1, 1, k -> !Predicates.PRIME.is(k) && Functions.SIGMA1.z(k).subtract(Functions.REVERSE.z(k)).isOne());
   }
 }

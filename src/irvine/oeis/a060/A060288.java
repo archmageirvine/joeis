@@ -16,7 +16,7 @@ public class A060288 extends A005349 {
     while (true) {
       final Z t = mA;
       mA = super.next();
-      if (mA.subtract(t).equals(Z.ONE)) {
+      if (mA.subtract(t).isOne()) {
         final Z u = mA.add(t);
         mA = super.next(); // Avoid overlaps
         if (u.isProbablePrime()) {

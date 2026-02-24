@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A086340 Numbers n such that 1 + (n-1)*n*(n+1) is a square.
  * @author Georg Fischer
  */
-
 public class A086340 extends FiniteSequence {
 
   /** Construct the sequence. */

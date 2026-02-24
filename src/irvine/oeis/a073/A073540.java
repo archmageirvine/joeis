@@ -15,7 +15,7 @@ public class A073540 extends A002808 {
   public Z next() {
     while (true) {
       final Z c = super.next();
-      if (new Q(c, Functions.PHI.z(c)).subtract(new Q(Functions.SIGMA1.z(c), c)).num().equals(Z.ONE)) {
+      if (new Q(c, Functions.PHI.z(c)).subtract(new Q(Functions.SIGMA1.z(c), c)).num().isOne()) {
         return c;
       }
     }

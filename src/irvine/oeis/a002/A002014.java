@@ -34,7 +34,7 @@ public class A002014 extends A002013 {
 
   @Override
   public Z next() {
-    if (super.next().equals(Z.ONE)) {
+    if (super.next().isOne()) {
       return Z.ONE;
     }
     long c = 0;

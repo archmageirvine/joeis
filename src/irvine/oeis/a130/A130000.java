@@ -14,6 +14,6 @@ public class A130000 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A130000() {
-    super(1, 4, k -> !Predicates.PRIME.is(k) && Functions.REVERSE.z(k).subtract(Functions.PHI.z(k)).equals(Z.ONE));
+    super(1, 4, k -> !Predicates.PRIME.is(k) && Functions.REVERSE.z(k).subtract(Functions.PHI.z(k)).isOne());
   }
 }

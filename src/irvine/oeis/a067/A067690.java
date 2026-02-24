@@ -19,7 +19,7 @@ public class A067690 extends Sequence1 {
       mF = mF.multiply(++mN);
       mF2 = mF2.multiply(2 * mN).multiply(2 * mN - 1);
       final Z d = mF2.add(1).gcd(mF.add(1));
-      if (!d.equals(Z.ONE)) {
+      if (!d.isOne()) {
         return d;
       }
     }

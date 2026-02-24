@@ -18,7 +18,7 @@ public class A059806 extends Sequence1 {
     Z min = null;
     for (final Group<?> g : GroupFactory.smallGroups(++mN)) {
       final Z sizeCenter = g.center().size();
-      if (sizeCenter.equals(Z.ONE)) {
+      if (sizeCenter.isOne()) {
         return Z.ONE;
       } else if (min == null) {
         min = sizeCenter;

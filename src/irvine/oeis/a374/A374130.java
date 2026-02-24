@@ -13,6 +13,6 @@ public class A374130 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A374130() {
-    super(1, (term, n) -> Z.valueOf(term.equals(Z.ONE) ? 1 : 0), "", new A268387());
+    super(1, (term, n) -> Z.valueOf(term.isOne() ? 1 : 0), "", new A268387());
   }
 }

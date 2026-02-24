@@ -26,7 +26,7 @@ public class A215782 extends Sequence1 {
         if (c.isZero()) {
           break;
         }
-        if (c.equals(Z.ONE) && a.equals(Z.ONE) && b.equals(Z.ONE)) {
+        if (c.isOne() && a.isOne() && b.isOne()) {
           return mN;
         }
       }

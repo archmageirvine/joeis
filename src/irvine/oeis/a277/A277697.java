@@ -18,6 +18,6 @@ public class A277697 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A277697() {
-    super(1, (self, n) -> A067029.a(n).equals(Z.ONE) ? self.s(0) : self.a(self.s(1).intValueExact()), "0", new A055396(), new A028234());
+    super(1, (self, n) -> A067029.a(n).isOne() ? self.s(0) : self.a(self.s(1).intValueExact()), "0", new A055396(), new A028234());
   }
 }

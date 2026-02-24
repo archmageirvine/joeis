@@ -31,7 +31,7 @@ public class A066732 extends Sequence1 {
         long p = 1;
         while (true) {
           p = mPrime.nextPrime(p);
-          if (zk.modPow(phi, Z.valueOf(p)).equals(Z.ONE)) {
+          if (zk.modPow(phi, Z.valueOf(p)).isOne()) {
             mLeast.set(k, p);
             if (p == mP) {
               return Z.valueOf(k);

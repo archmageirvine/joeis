@@ -14,6 +14,6 @@ public class A336368 extends FilterSequence {
 
   /** Construct the sequence. */
   public A336368() {
-    super(1, new A000040(), (k, v) -> Functions.GCD.z(Z.valueOf(k), Functions.PRIME.z(k).add(Functions.PRIME.z(k + 1))).equals(Z.ONE));
+    super(1, new A000040(), (k, v) -> Functions.GCD.z(Z.valueOf(k), Functions.PRIME.z(k).add(Functions.PRIME.z(k + 1))).isOne());
   }
 }

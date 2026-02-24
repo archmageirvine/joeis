@@ -21,7 +21,7 @@ public class A359767 extends Sequence1 {
       ++mN;
       final Z t1 = mSeq1.next();
       final Z t2 = mSeq2.next();
-      if (t1.equals(Z.ONE) && t2.isZero()) {
+      if (t1.isOne() && t2.isZero()) {
         return Z.valueOf(mN);
       }
     }

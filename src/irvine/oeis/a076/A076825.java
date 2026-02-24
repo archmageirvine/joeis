@@ -20,7 +20,7 @@ public class A076825 extends Sequence1 {
     }
     while (true) {
       mU = Z.TWO.modPow(mU, Z.valueOf(++mN));
-      if (mU.equals(Z.ONE)) {
+      if (mU.isOne()) {
         return Z.valueOf(mN);
       }
     }

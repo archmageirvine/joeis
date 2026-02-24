@@ -40,7 +40,7 @@ public class A118119 extends AbstractSequence {
     Z m = Z.ZERO;
     while (true) {
       m = m.add(1);
-      if (!m.pow(mN).add(mAdd).gcd(m.add(1).pow(mN).add(mAdd)).equals(Z.ONE)) {
+      if (!m.pow(mN).add(mAdd).gcd(m.add(1).pow(mN).add(mAdd)).isOne()) {
         return m;
       }
     }

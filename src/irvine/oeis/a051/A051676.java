@@ -33,7 +33,7 @@ public class A051676 extends A000040 {
         if (!k.equals(v)) {
           // i.e. k is not prime
           long exp = 0;
-          while (!k.equals(Z.ONE)) {
+          while (!k.isOne()) {
             k = k.divide(v);
             ++exp;
           }

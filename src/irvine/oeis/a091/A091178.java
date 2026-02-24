@@ -13,7 +13,7 @@ public class A091178 extends A000040 {
   protected long mK = 0;
   protected Z mNP = null;
   protected boolean isOk() {
-    return mNP.mod(Z.SIX).equals(Z.ONE);
+    return mNP.mod(Z.SIX).isOne();
   }
   
   @Override

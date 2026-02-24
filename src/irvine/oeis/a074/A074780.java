@@ -21,7 +21,7 @@ public class A074780 extends Sequence1 {
     while (true) {
       ++mN;
       mA = mA.multiply2().add(1);
-      if (Functions.GCD.z(mA, mF.next()).equals(Z.ONE)) {
+      if (Functions.GCD.z(mA, mF.next()).isOne()) {
         return Z.valueOf(mN);
       }
     }

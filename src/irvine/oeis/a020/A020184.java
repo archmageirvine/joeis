@@ -16,7 +16,7 @@ public class A020184 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(2);
-      if (BASE.modPow(mN.subtract(1), mN).equals(Z.ONE) && !mN.isPrime()) {
+      if (BASE.modPow(mN.subtract(1), mN).isOne() && !mN.isPrime()) {
         return mN;
       }
     }

@@ -23,7 +23,7 @@ public class A057990 extends A057985 {
     while (true) {
       ++mN;
       final Z t = super.next();
-      if (t.equals(mPrev) && t.equals(Z.ZERO)) {
+      if (t.equals(mPrev) && t.isZero()) {
         mPrev = t;
         return Z.valueOf(mN - 1);
       } else {

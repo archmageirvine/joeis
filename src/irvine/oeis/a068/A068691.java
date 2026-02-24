@@ -19,7 +19,7 @@ public class A068691 extends Sequence1 {
       mA = Z.ONE;
       return Z.THREE;
     }
-    if (mA.equals(Z.ONE)) {
+    if (mA.isOne()) {
       mA = Z.TWO;
       return Z.valueOf(23);
     }

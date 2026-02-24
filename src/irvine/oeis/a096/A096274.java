@@ -12,6 +12,6 @@ public class A096274 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A096274() {
-    super(1, 0, new A096535(), v -> v.equals(Z.ZERO));
+    super(1, 0, new A096535(), v -> v.isZero());
   }
 }

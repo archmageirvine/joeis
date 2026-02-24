@@ -15,6 +15,6 @@ public class A245529 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A245529() {
-    super(1, 2692, k -> Z12.modPow(Functions.PHI.l(k), Z.valueOf(k).multiply(k)).equals(Z.ONE));
+    super(1, 2692, k -> Z12.modPow(Functions.PHI.l(k), Z.valueOf(k).multiply(k)).isOne());
   }
 }

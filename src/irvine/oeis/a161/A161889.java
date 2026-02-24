@@ -24,7 +24,7 @@ public class A161889 extends Sequence1 {
       while (true) {
         g = g.add(1);
         ++q;
-        if (g.gcd(n).equals(Z.ONE) && mN % q != 0) {
+        if (g.gcd(n).isOne() && mN % q != 0) {
           mPrev = g;
           break;
         }

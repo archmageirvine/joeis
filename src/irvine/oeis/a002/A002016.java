@@ -19,7 +19,7 @@ public class A002016 extends Sequence1 {
     long c = 0;
     final Z n = Z.valueOf(++mN);
     for (long k = 0; k < mN; ++k) {
-      if (tetra.next().gcd(n).equals(Z.ONE)) {
+      if (tetra.next().gcd(n).isOne()) {
         ++c;
       }
     }

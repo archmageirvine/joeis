@@ -16,7 +16,7 @@ public class A068189 extends Sequence1 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    if (n.equals(Z.ONE)) {
+    if (n.isOne()) {
       return Z.ONE;
     }
     final FactorSequence fs = Jaguar.factor(n);

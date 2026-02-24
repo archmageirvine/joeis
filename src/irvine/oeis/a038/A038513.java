@@ -16,7 +16,7 @@ public class A038513 extends Sequence0 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (mN.gcd(Z.SIX).equals(Z.ONE) && Functions.BIG_OMEGA.l(mN) == 3) {
+      if (mN.gcd(Z.SIX).isOne() && Functions.BIG_OMEGA.l(mN) == 3) {
         return mN;
       }
     }

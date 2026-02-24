@@ -13,6 +13,6 @@ public class A214713 extends A060035 {
 
   /** Construct the sequence. */
   public A214713() {
-    super(1, 1, (n, m) -> Functions.FIBONACCI.z(n + 1).subtract(m).gcd(Z.valueOf(n - m)).equals(Z.ONE));
+    super(1, 1, (n, m) -> Functions.FIBONACCI.z(n + 1).subtract(m).gcd(Z.valueOf(n - m)).isOne());
   }
 }

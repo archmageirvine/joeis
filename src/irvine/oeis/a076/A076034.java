@@ -21,7 +21,7 @@ public class A076034 extends Sequence1 {
 
   private boolean isOk(final Z m) {
     for (final Z t : mA) {
-      if (!t.gcd(m).equals(Z.ONE)) {
+      if (!t.gcd(m).isOne()) {
         return false;
       }
     }

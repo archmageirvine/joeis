@@ -13,6 +13,6 @@ public class A270191 extends FilterLambdaSequence {
 
   /** Construct the sequence. */
   public A270191() {
-    super(1, 1, k -> Functions.PRIME.z(k.add(1)).subtract(Functions.PRIME.z(k)).mod(Z.THREE).equals(Z.ONE));
+    super(1, 1, k -> Functions.PRIME.z(k.add(1)).subtract(Functions.PRIME.z(k)).mod(Z.THREE).isOne());
   }
 }

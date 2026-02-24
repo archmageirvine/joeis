@@ -12,6 +12,6 @@ public class A170818 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A170818() {
-    super(1, (p, e) -> p.mod(Z.FOUR).equals(Z.ONE) ? p.pow(e) : Z.ONE);
+    super(1, (p, e) -> p.mod(Z.FOUR).isOne() ? p.pow(e) : Z.ONE);
   }
 }

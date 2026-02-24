@@ -14,6 +14,6 @@ public class A107793 extends DifferenceSequence {
 
   /** Construct the sequence. */
   public A107793() {
-    super(0, new FilterPositionSequence(0, 0, new A305390(), v -> v.equals(Z.ONE)));
+    super(0, new FilterPositionSequence(0, 0, new A305390(), v -> v.isOne()));
   }
 }

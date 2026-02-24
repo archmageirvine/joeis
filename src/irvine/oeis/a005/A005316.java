@@ -171,18 +171,18 @@ public class A005316 extends AbstractSequence {
 
       // There are four possible state transitions.
       // 1. Leg of arch crosses from below road to above road. Allowed if not at edge guard.
-      if (!lower.equals(Z.ONE)) {
+      if (!lower.isOne()) {
         list.add(capture.f(Action.MOVE_UP, lower.shiftRight(WORD_SHIFT), (upper.shiftLeft(WORD_SHIFT)).xor(crossRoad(lower))));
       }
       // 2. Leg of arch crosses from above road to below road. Allowed if not at edge guard.
-      if (!upper.equals(Z.ONE)) {
+      if (!upper.isOne()) {
         list.add(capture.f(Action.MOVE_DOWN, (lower.shiftLeft(WORD_SHIFT)).xor(crossRoad(upper)), upper.shiftRight(WORD_SHIFT)));
       }
       // 3. Introduction of new arch. Allowed always.
       list.add(capture.f(Action.NEW_ARCH, (lower.shiftLeft(WORD_SHIFT)).or(Z.ONE), (upper.shiftLeft(WORD_SHIFT)).or(Z.ONE)));
 
       // 4. Arch connection. Possible if not at edge guard on either side.
-      if (!lower.equals(Z.ONE) && !upper.equals(Z.ONE)) {
+      if (!lower.isOne() && !upper.isOne()) {
         final Action test = closingAction(lower, upper);
         if (test != Action.NONE) {
           list.add(capture.f(test, joinArch(lower, upper).shiftRight(WORD_SHIFT), joinArch(upper, lower).shiftRight(WORD_SHIFT)));

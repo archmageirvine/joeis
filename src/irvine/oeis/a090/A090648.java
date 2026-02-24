@@ -15,6 +15,6 @@ public class A090648 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A090648() {
-    super(0, (self, n) -> new Q(2).multiply(Z.FOUR.pow(n).subtract(1)).divide(self.s(1)).num(), "", new A000367(), new A002445());
+    super(0, (self, n) -> Q.TWO.multiply(Z.FOUR.pow(n).subtract(1)).divide(self.s(1)).num(), "", new A000367(), new A002445());
   }
 }

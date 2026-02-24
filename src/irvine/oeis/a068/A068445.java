@@ -17,7 +17,7 @@ public class A068445 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z palin = mPalindromes.next();
-      if (!palin.isProbablePrime() && Z.TWO.modPow(palin.subtract(1), palin).equals(Z.ONE)) {
+      if (!palin.isProbablePrime() && Z.TWO.modPow(palin.subtract(1), palin).isOne()) {
         return palin;
       }
     }

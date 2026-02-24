@@ -12,6 +12,6 @@ public class A099797 extends A079000 {
 
   /** Construct the sequence. */
   public A099797() {
-    super(1, 1, 1, n -> !n.isProbablePrime() && !n.equals(Z.ONE));
+    super(1, 1, 1, n -> !n.isProbablePrime() && !n.isOne());
   }
 }

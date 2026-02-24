@@ -18,7 +18,7 @@ public class A075304 extends A002808 {
     final Z mod = super.next();
     while (true) {
       mP = mPrime.nextPrime(mP);
-      if (mP.mod(mod).equals(Z.ONE)) {
+      if (mP.mod(mod).isOne()) {
         return mP;
       }
     }

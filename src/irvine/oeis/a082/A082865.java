@@ -14,6 +14,6 @@ public class A082865 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A082865() {
-    super(1, (self, n) -> Integers.SINGLETON.sum(1, n - 1, j -> Functions.GCD.z(Z.valueOf(n), self.a(j)).equals(Z.ONE) ? self.a(j) : Z.ZERO), "1,2");
+    super(1, (self, n) -> Integers.SINGLETON.sum(1, n - 1, j -> Functions.GCD.z(Z.valueOf(n), self.a(j)).isOne() ? self.a(j) : Z.ZERO), "1,2");
   }
 }

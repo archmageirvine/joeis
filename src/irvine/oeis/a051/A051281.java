@@ -20,7 +20,7 @@ public class A051281 extends Sequence1 {
       final Z s0 = fs.sigma0();
       Z s = fs.sigma();
       while (true) {
-        if (s.equals(Z.ONE)) {
+        if (s.isOne()) {
           return Z.valueOf(mN);
         }
         final Z[] qr = s.divideAndRemainder(s0);

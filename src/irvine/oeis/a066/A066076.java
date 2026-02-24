@@ -11,7 +11,7 @@ public class A066076 extends A066075 {
   @Override
   public Z next() {
     while (true) {
-      if (super.next().equals(Z.ONE)) {
+      if (super.next().isOne()) {
         return Z.valueOf(mP);
       }
     }

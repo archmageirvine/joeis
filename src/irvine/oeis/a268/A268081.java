@@ -12,6 +12,6 @@ public class A268081 extends A060035 {
 
   /** Construct the sequence. */
   public A268081() {
-    super(1, 1, (n, k) -> Z.THREE.pow(n).subtract(1).gcd(Z.valueOf(k).pow(n).subtract(1)).equals(Z.ONE));
+    super(1, 1, (n, k) -> Z.THREE.pow(n).subtract(1).gcd(Z.valueOf(k).pow(n).subtract(1)).isOne());
   }
 }

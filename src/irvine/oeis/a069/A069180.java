@@ -20,7 +20,7 @@ public class A069180 extends Sequence1 {
   public Z next() {
     while (true) {
       ++mN;
-      if (mFactorial.next().gcd(mFibonacci.next()).equals(Z.ONE)) {
+      if (mFactorial.next().gcd(mFibonacci.next()).isOne()) {
         return Z.valueOf(mN);
       }
     }

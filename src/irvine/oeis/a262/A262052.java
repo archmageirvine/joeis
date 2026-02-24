@@ -18,7 +18,7 @@ public class A262052 extends FilterNumberSequence {
         return false;
       }
       final Z a = Z.FIVE.modPow((k - 1) / 2, Z.valueOf(k));
-      return a.equals(Z.ONE) || a.equals(Z.valueOf(k - 1));
+      return a.isOne() || a.equals(Z.valueOf(k - 1));
     });
   }
 }

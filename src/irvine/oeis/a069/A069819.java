@@ -20,7 +20,7 @@ public class A069819 extends Sequence1 {
       for (final Z p : Jaguar.factor(++mN).toZArray()) {
         sum = sum.add(new Q(1, p));
       }
-      if (sum.num().equals(Z.ONE)) {
+      if (sum.num().isOne()) {
         return Z.valueOf(mN);
       }
     }

@@ -17,7 +17,7 @@ public class A048983 extends A002808 {
     final Sequence comp = new A002808();
     Z a;
     while (!(a = comp.next()).equals(t)) {
-      if (t.gcd(a).equals(Z.ONE)) {
+      if (t.gcd(a).isOne()) {
         ++cnt;
       }
     }

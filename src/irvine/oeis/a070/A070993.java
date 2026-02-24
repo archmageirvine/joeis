@@ -17,7 +17,7 @@ public class A070993 extends Sequence1 {
       mN = mN.add(1);
       final Z n1 = mN.add(1);
       Z t = mN;
-      while (!t.equals(Z.ONE)) {
+      while (!t.isOne()) {
         t = t.isEven() ? t.divide2() : t.multiply(3).add(1);
         if (t.equals(n1)) {
           return mN;

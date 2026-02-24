@@ -24,7 +24,7 @@ public class A322993 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return n.equals(Z.ONE) ? Z.ZERO : Functions.MAKE_ODD.z(A156552.a(n));
+    return n.isOne() ? Z.ZERO : Functions.MAKE_ODD.z(A156552.a(n));
   }
 
   @Override

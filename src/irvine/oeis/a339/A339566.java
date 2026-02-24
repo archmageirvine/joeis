@@ -17,6 +17,6 @@ public class A339566 extends FilterSequence {
 
   /** Construct the sequence. */
   public A339566() {
-    super(1, new A000040(), p -> A007088.a(p).mod(p).equals(Z.ONE));
+    super(1, new A000040(), p -> A007088.a(p).mod(p).isOne());
   }
 }

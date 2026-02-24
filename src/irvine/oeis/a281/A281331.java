@@ -14,6 +14,6 @@ public class A281331 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A281331() {
-    super(1, new A001067(), v -> v.abs().equals(Z.ONE) ? Z.ONE : Functions.LPF.z(v.abs()));
+    super(1, new A001067(), v -> v.abs().isOne() ? Z.ONE : Functions.LPF.z(v.abs()));
   }
 }

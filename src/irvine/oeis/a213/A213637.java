@@ -15,7 +15,7 @@ public class A213637 extends A007978 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (mN.mod(super.next()).equals(Z.ONE)) {
+      if (mN.mod(super.next()).isOne()) {
         return mN;
       }
     }

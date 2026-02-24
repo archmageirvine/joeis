@@ -14,6 +14,6 @@ public class A270539 extends FilterSequence {
 
   /** Construct the sequence. */
   public A270539() {
-    super(1, new A000040(), p -> Functions.GCD.z(Functions.PHI.z(p.subtract(1)), Functions.SIGMA1.z(p.subtract(1))).equals(Z.ONE));
+    super(1, new A000040(), p -> Functions.GCD.z(Functions.PHI.z(p.subtract(1)), Functions.SIGMA1.z(p.subtract(1))).isOne());
   }
 }

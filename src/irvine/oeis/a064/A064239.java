@@ -39,7 +39,7 @@ public class A064239 extends Sequence1 {
           final Z c = Z.valueOf(mC * mN + 1);
           if (mPrime.isPrime(c)) {
             final Z t = a.multiply(b).multiply(c);
-            if (t.mod(Functions.CARMICHAEL_LAMBDA.z(t)).equals(Z.ONE)) {
+            if (t.mod(Functions.CARMICHAEL_LAMBDA.z(t)).isOne()) {
               return Z.valueOf(6 * mN);
             }
           }

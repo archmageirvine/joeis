@@ -15,7 +15,7 @@ public class A369963 extends FilterNumberSequence {
   public A369963() {
     super(1, 0, k -> {
       final Z x = Functions.GCD.z(k, Functions.ARD.z(k));
-      return !x.equals(Z.ONE) && x.equals(Functions.GCD.z(k, Functions.PRIMORIAL_BASE_EXP.z(k)));
+      return !x.isOne() && x.equals(Functions.GCD.z(k, Functions.PRIMORIAL_BASE_EXP.z(k)));
     });
   }
 }

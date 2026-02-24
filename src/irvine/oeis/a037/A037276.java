@@ -34,7 +34,7 @@ public class A037276 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    if (n.equals(Z.ONE)) {
+    if (n.isOne()) {
       return Z.ONE;
     }
     final StringBuilder sb = new StringBuilder();

@@ -13,6 +13,6 @@ public class A133902 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A133902() {
-    super(0, (n, s) -> (n == 0) ? Z.ONE : s[0].gcd(Z.valueOf(n)).equals(Z.ONE) ? s[0].multiply(Functions.SIGMA0.z(n)) : s[0].divide(s[0].gcd(Z.valueOf(n))), "1", PREVIOUS);
+    super(0, (n, s) -> (n == 0) ? Z.ONE : s[0].gcd(Z.valueOf(n)).isOne() ? s[0].multiply(Functions.SIGMA0.z(n)) : s[0].divide(s[0].gcd(Z.valueOf(n))), "1", PREVIOUS);
   }
 }

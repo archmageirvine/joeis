@@ -12,6 +12,6 @@ public class A214719 extends A060035 {
 
   /** Construct the sequence. */
   public A214719() {
-    super(1, 1, (n, m) -> Z.SIX.pow(n).subtract(m).gcd(Z.valueOf(n - m)).equals(Z.ONE));
+    super(1, 1, (n, m) -> Z.SIX.pow(n).subtract(m).gcd(Z.valueOf(n - m)).isOne());
   }
 }

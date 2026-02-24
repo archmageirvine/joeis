@@ -14,6 +14,6 @@ public class A085759 extends FilterSequence {
 
   /** Construct the sequence. */
   public A085759() {
-    super(1, new LambdaSequence(0, n -> Z.valueOf(4 * n + 1)), v -> v.equals(Z.ONE) || Predicates.PRIME_POWER.is(v));
+    super(1, new LambdaSequence(0, n -> Z.valueOf(4 * n + 1)), v -> v.isOne() || Predicates.PRIME_POWER.is(v));
   }
 }

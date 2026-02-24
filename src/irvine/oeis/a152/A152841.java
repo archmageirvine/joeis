@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A152841 a(0)=1; a(n)=Floor[n^(n+a(n-1))-a(n-1)^(n+a(n-1))].
  * @author Georg Fischer
  */
-
 public class A152841 extends FiniteSequence {
 
   /** Construct the sequence. */

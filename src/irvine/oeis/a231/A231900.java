@@ -13,6 +13,6 @@ public class A231900 extends FilterSequence {
 
   /** Construct the sequence. */
   public A231900() {
-    super(1, new A134744(), v -> !v.equals(Z.ONE));
+    super(1, new A134744(), v -> !v.isOne());
   }
 }

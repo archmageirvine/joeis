@@ -27,7 +27,7 @@ public class A051532 extends Sequence1 {
     }
     for (int i = 0; i < v.length; ++i) {
       for (int j = i + 1; j < v.length; ++j) {
-        if (v[i].mod(p[j]).equals(Z.ONE) || v[j].mod(p[i]).equals(Z.ONE)) {
+        if (v[i].mod(p[j]).isOne() || v[j].mod(p[i]).isOne()) {
           return false;
         }
       }

@@ -16,7 +16,7 @@ public class A393053 extends LambdaSequence {
   public A393053() {
     super(1, n -> {
       final Z f = Functions.PRIMORIAL_BASE_EXP.z(n);
-      return Integers.SINGLETON.sumdiv(n, d -> Functions.GCD.z(Z.valueOf(d), f).equals(Z.ONE) ? Z.ONE : Z.ZERO);
+      return Integers.SINGLETON.sumdiv(n, d -> Functions.GCD.z(Z.valueOf(d), f).isOne() ? Z.ONE : Z.ZERO);
     });
   }
 }

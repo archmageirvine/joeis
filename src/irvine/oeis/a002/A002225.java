@@ -41,7 +41,7 @@ public class A002225 extends Sequence1 {
   public Z next() {
     ++mN;
     while (true) {
-      if (mP.mod(mPowerResidue).equals(Z.ONE)) {
+      if (mP.mod(mPowerResidue).isOne()) {
         final HashSet<Z> residues = residues(mP);
         Z p = Z.ONE;
         boolean ok = true;

@@ -66,7 +66,7 @@ public class A393334 extends Sequence1 {
           final Z c = entry.getValue();
 
           final Z[] coeffs;
-          if (!c.equals(Z.ONE)) {
+          if (!c.isOne()) {
             coeffs = new Z[kmaxGlobal + 1];
             coeffs[0] = Z.ONE;
             Z ck = Z.ONE;

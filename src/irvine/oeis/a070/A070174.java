@@ -15,7 +15,7 @@ public class A070174 extends A000040 {
     while (true) {
       final Z p = super.next();
       final Z p2 = p.square();
-      if (!Functions.FACTORIAL.z(p2).gcd(Z.ONE.shiftLeft(p2.longValueExact()).subtract(1)).equals(Z.ONE)) {
+      if (!Functions.FACTORIAL.z(p2).gcd(Z.ONE.shiftLeft(p2.longValueExact()).subtract(1)).isOne()) {
         return p;
       }
     }

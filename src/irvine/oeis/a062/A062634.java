@@ -41,7 +41,7 @@ public class A062634 extends Sequence1 {
       if (!mComposite || divisors.length > 2) {
         boolean busy = true;
         for (final Z d : divisors) {
-          if (mDigit == 1 || !d.equals(Z.ONE)) {
+          if (mDigit == 1 || !d.isOne()) {
             if (String.valueOf(d).indexOf(mDigitChar) < 0) {
               busy = false;
             }

@@ -13,6 +13,6 @@ public class A356311 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A356311() {
-    super(1, 0, k -> Functions.GCD.z(Functions.ARD.z(k), Functions.PRIMORIAL_BASE_EXP.z(k)).equals(Z.ONE));
+    super(1, 0, k -> Functions.GCD.z(Functions.ARD.z(k), Functions.PRIMORIAL_BASE_EXP.z(k)).isOne());
   }
 }

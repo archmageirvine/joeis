@@ -18,7 +18,7 @@ public class A334074 extends RationalLambdaSequence {
   public A334074() {
     super(1, NUM, n -> {
       final Z b = Binomial.binomial(2 * n, n);
-      return Rationals.SINGLETON.sum(2, n, k -> (Predicates.PRIME.is(k) && b.mod(k) != 0) ? new Q(1, k) : new Q(0));
+      return Rationals.SINGLETON.sum(2, n, k -> (Predicates.PRIME.is(k) && b.mod(k) != 0) ? new Q(1, k) : Q.ZERO);
     });
   }
 }

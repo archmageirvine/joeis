@@ -25,7 +25,7 @@ public class A064130 extends Sequence0 {
   private boolean is(final Z d, final Z t) {
     Z u = Z.valueOf(mBase);
     while (u.compareTo(t) < 0) {
-      if (!u.subtract(1).gcd(d).equals(Z.ONE)) {
+      if (!u.subtract(1).gcd(d).isOne()) {
         return false;
       }
       u = u.multiply(mBase);

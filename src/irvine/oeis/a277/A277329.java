@@ -14,6 +14,6 @@ public class A277329 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A277329() {
-    super(0, new A260443(), v -> v.equals(Z.ONE) ? Z.ZERO : Functions.PRIME_PI.z(Functions.GPF.z(v)));
+    super(0, new A260443(), v -> v.isOne() ? Z.ZERO : Functions.PRIME_PI.z(Functions.GPF.z(v)));
   }
 }

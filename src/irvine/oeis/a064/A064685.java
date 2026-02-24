@@ -16,7 +16,7 @@ public class A064685 extends Sequence0 {
     mN = mN.add(2);
     Z m = mN;
     long orbit = 1;
-    while (!m.equals(Z.ONE)) {
+    while (!m.isOne()) {
       ++orbit;
       m = m.isEven() ? m.divide2() : m.multiply(3).add(1);
     }

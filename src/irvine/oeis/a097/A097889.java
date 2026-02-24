@@ -14,6 +14,6 @@ public class A097889 extends FilterSequence {
 
   /** Construct the sequence. */
   public A097889() {
-    super(1, new A073485(), v -> !Predicates.PRIME.is(v) && !v.equals(Z.ONE));
+    super(1, new A073485(), v -> !Predicates.PRIME.is(v) && !v.isOne());
   }
 }

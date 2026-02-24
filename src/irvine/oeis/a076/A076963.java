@@ -22,7 +22,7 @@ public class A076963 extends Sequence0 {
     final Z t = mA;
     while (true) {
       mA = mA.add(1);
-      if (Functions.GCD.z(t, mA).equals(Z.ONE)) {
+      if (Functions.GCD.z(t, mA).isOne()) {
         final Z s0 = Functions.SIGMA0.z(mA);
         if (s0.compareTo(mD) >= 0) {
           mD = s0;

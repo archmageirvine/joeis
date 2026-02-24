@@ -18,7 +18,7 @@ public class A048123 extends Sequence3 {
     mN = mN.multiply(10);
     Z m = mN;
     while (true) {
-      if (!m.isProbablePrime() && m.mod(Functions.CARMICHAEL_LAMBDA.z(m)).equals(Z.ONE)) {
+      if (!m.isProbablePrime() && m.mod(Functions.CARMICHAEL_LAMBDA.z(m)).isOne()) {
         return m;
       }
       m = m.add(1);

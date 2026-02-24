@@ -24,7 +24,7 @@ public class A063907 extends AbstractSequence {
     while (true) {
       final Z t = mA;
       mA = mSeq1.next();
-      if (mA.subtract(t).equals(Z.ONE)) {
+      if (mA.subtract(t).isOne()) {
         return t;
       }
     }

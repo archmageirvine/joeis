@@ -29,7 +29,7 @@ public class A064936 extends Sequence1 {
         }
       }
       final Z p = Z.valueOf(mP);
-      if (!Z.valueOf(mQ).square().subtract(1).gcd(p).equals(Z.ONE)) {
+      if (!Z.valueOf(mQ).square().subtract(1).gcd(p).isOne()) {
         return p;
       }
     }

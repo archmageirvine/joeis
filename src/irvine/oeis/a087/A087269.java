@@ -14,6 +14,6 @@ public class A087269 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A087269() {
-    super(1, 0, k -> !Predicates.PRIME.is(k) && Functions.GCD.z(Z.valueOf(k), Functions.PRIME_PI.z(k)).equals(Z.ONE));
+    super(1, 0, k -> !Predicates.PRIME.is(k) && Functions.GCD.z(Z.valueOf(k), Functions.PRIME_PI.z(k)).isOne());
   }
 }

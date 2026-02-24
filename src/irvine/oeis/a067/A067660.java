@@ -19,7 +19,7 @@ public class A067660 extends Sequence1 {
         mF = mF.multiply(mN);
       }
       final Z d = mF.add(1).gcd(Z.ONE.shiftLeft(mN).add(1));
-      if (!d.equals(Z.ONE)) {
+      if (!d.isOne()) {
         return d;
       }
     }

@@ -22,7 +22,7 @@ public class A006585 extends Sequence1 {
     }
     if (k == mLimits.length - 1) {
       final Q last = Q.ONE.subtract(sum);
-      if (last.num().equals(Z.ONE) && last.den().compareTo(prev) > 0 && last.den().compareTo(mLimits[k]) <= 0) {
+      if (last.num().isOne() && last.den().compareTo(prev) > 0 && last.den().compareTo(mLimits[k]) <= 0) {
         ++mSolutions;
       }
       return;

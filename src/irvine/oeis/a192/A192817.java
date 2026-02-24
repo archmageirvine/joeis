@@ -14,6 +14,6 @@ public class A192817 extends FilterSequence {
 
   /** Construct the sequence. */
   public A192817() {
-    super(1, new A000027(), v -> v.gcd(new A061601().a(v)).equals(Z.ONE));
+    super(1, new A000027(), v -> v.gcd(new A061601().a(v)).isOne());
   }
 }

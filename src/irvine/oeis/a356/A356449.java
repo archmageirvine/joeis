@@ -15,7 +15,7 @@ public class A356449 extends FilterNumberSequence {
   public A356449() {
     super(1, 1, k -> {
       final Z k2 = Z.valueOf(k).square().multiply(2);
-      return Functions.GCD.z(k2, Functions.SIGMA1.z(k2)).equals(Z.ONE);
+      return Functions.GCD.z(k2, Functions.SIGMA1.z(k2)).isOne();
     });
   }
 }

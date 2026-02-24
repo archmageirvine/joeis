@@ -21,7 +21,7 @@ public class A037916 extends Sequence1 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    if (n.equals(Z.ONE)) {
+    if (n.isOne()) {
       return Z.ZERO;
     }
     final StringBuilder sb = new StringBuilder();

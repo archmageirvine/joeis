@@ -21,7 +21,7 @@ public class A050210 extends Sequence2 {
     }
     Q f = new Q(mM, mN);
     Z maxDen = Z.ONE;
-    while (!f.num().equals(Z.ONE)) {
+    while (!f.num().isOne()) {
       final Q unitFraction = new Q(Z.ONE, f.den().add(f.num()).subtract(1).divide(f.num()));
       f = f.subtract(unitFraction);
       maxDen = maxDen.max(unitFraction.den());

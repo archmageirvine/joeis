@@ -15,7 +15,7 @@ public class A066488 extends A002808 {
       final Z n = super.next();
       if (n.mod(3) != 0) {
         final Z m = n.subtract(1);
-        if (Z.TWO.modPow(m, n).equals(Z.ONE)) {
+        if (Z.TWO.modPow(m, n).isOne()) {
           return n;
         }
       }

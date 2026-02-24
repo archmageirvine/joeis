@@ -30,7 +30,7 @@ public class A062062 extends Sequence1 {
     Z t = mC;
     while (true) {
       t = t.add(1);
-      if (t.gcd(mC).equals(Z.ONE) && t.gcd(mB).equals(Z.ONE) && t.gcd(mA).equals(Z.ONE)) {
+      if (t.gcd(mC).isOne() && t.gcd(mB).isOne() && t.gcd(mA).isOne()) {
         mA = mB;
         mB = mC;
         mC = t;

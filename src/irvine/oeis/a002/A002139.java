@@ -21,7 +21,7 @@ public class A002139 extends A002326 {
   @Override
   public Z next() {
     final Z f = super.next();
-    if (!mN.equals(Z.ONE) && ZUtils.isPrimitiveRoot(Z.TWO, mN)) {
+    if (!mN.isOne() && ZUtils.isPrimitiveRoot(Z.TWO, mN)) {
       if (mPrime.isPrime(mN)) {
         return f.add(1);
       }

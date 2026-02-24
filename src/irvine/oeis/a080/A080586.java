@@ -16,7 +16,7 @@ public class A080586 extends Sequence0 {
   @Override
   public Z next() {
     if (mCount <= 0) {
-      if (mToggle.equals(Z.ONE)) {
+      if (mToggle.isOne()) {
         mToggle = Z.TWO;
       } else {
         mToggle = Z.ONE;

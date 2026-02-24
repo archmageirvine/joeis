@@ -46,7 +46,7 @@ public class A345709 extends Sequence1 {
     Z t = mState < 2 ? Z.NEG_ONE : Z.ZERO; // select even/odd starting point
     while (true) {
       t = t.add(2);
-      if (!mS.contains(t) && mA.gcd(t).compareTo(Z.ONE) > 0 && mB.gcd(t).equals(Z.ONE)) {
+      if (!mS.contains(t) && mA.gcd(t).compareTo(Z.ONE) > 0 && mB.gcd(t).isOne()) {
         mA = mB;
         mB = t;
         mS.add(t);

@@ -23,7 +23,7 @@ public class A007732 extends Sequence1 implements DirectSequence {
     while (n.mod(5) == 0) {
       n = n.divide(5);
     }
-    return n.equals(Z.ONE) ? Z.ONE : new IntegersModMul(n).order(Z.TEN);
+    return n.isOne() ? Z.ONE : new IntegersModMul(n).order(Z.TEN);
   }
 
   @Override

@@ -14,6 +14,6 @@ public class A344202 extends FilterSequence {
 
   /** Construct the sequence. */
   public A344202() {
-    super(1, new A000040().skip(2), p -> new IntegersModMul(p).order(Z.TWO).gcd(new IntegersModMul(p).order(Z.THREE)).equals(Z.ONE));
+    super(1, new A000040().skip(2), p -> new IntegersModMul(p).order(Z.TWO).gcd(new IntegersModMul(p).order(Z.THREE)).isOne());
   }
 }

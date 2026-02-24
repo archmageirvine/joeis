@@ -25,7 +25,7 @@ public class A008783 extends Sequence1 {
     while (true) {
       conv.next();
       final Z t = conv.frac();
-      if (!cf.isEmpty() && !t.equals(Z.ONE)) {
+      if (!cf.isEmpty() && !t.isOne()) {
         nonUnit = true;
       }
       cf.add(t);

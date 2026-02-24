@@ -19,7 +19,7 @@ public class A060289 extends A005349 {
     while (mA.compareTo(mLim) < 0) {
       final Z t = mA;
       mA = super.next();
-      if (mA.subtract(t).equals(Z.ONE)) {
+      if (mA.subtract(t).isOne()) {
         final Z u = mA.add(t);
         mA = super.next(); // Avoid overlaps
         if (u.isProbablePrime()) {

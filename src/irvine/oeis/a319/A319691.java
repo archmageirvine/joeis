@@ -12,6 +12,6 @@ public class A319691 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A319691() {
-    super(1, (p, e) -> p.mod(Z.THREE).equals(Z.ONE) ? Z.ONE : Z.ZERO);
+    super(1, (p, e) -> p.mod(Z.THREE).isOne() ? Z.ONE : Z.ZERO);
   }
 }

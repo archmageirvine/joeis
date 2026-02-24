@@ -16,7 +16,7 @@ public class A003276 extends A001274 {
   public Z next() {
     while (true) {
       final Z n = super.next();
-      if (n.equals(Z.ONE)) {
+      if (n.isOne()) {
         return n;
       }
       final IntegersModMul g = new IntegersModMul(n);

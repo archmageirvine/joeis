@@ -14,7 +14,7 @@ public class A000946 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Z res = mA.equals(Z.ONE) ? Z.TWO : Functions.GPF.z(mA.add(1));
+    final Z res = mA.isOne() ? Z.TWO : Functions.GPF.z(mA.add(1));
     mA = mA.multiply(res);
     return res;
   }

@@ -13,7 +13,7 @@ public class A063844 extends A006753 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (!t.isProbablePrime() && Z.TWO.modPow(t.subtract(1), t).equals(Z.ONE)) {
+      if (!t.isProbablePrime() && Z.TWO.modPow(t.subtract(1), t).isOne()) {
         return t;
       }
     }

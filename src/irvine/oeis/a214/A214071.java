@@ -12,6 +12,6 @@ public class A214071 extends A060035 {
 
   /** Construct the sequence. */
   public A214071() {
-    super(1, 1, (n, m) -> Z.ONE.shiftLeft(n).subtract(m).gcd(Z.valueOf(n - m)).equals(Z.ONE));
+    super(1, 1, (n, m) -> Z.ONE.shiftLeft(n).subtract(m).gcd(Z.valueOf(n - m)).isOne());
   }
 }

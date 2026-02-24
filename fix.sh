@@ -28,6 +28,8 @@ find src/irvine/oeis -name "A[0-9][0-9][0-9][0-9][0-9][0-9].java" | while read s
         -e 's/new Z("9")/Z.NINE/g' \
         -e 's/new Z("10")/Z.TEN/g' \
         -e 's/new Z("-1")/Z.NEG_ONE/g' \
+        -e 's/\.equals(Z\.ONE)/.isOne()/g' \
+        -e 's/\.equals(Z\.ZERO)/.isZero()/g' \
         -e 's/new Q(0)/Q.ZERO/g' \
         -e 's/new Q(1)/Q.ONE/g' \
         -e 's/new Q(2)/Q.TWO/g' \
@@ -40,18 +42,18 @@ find src/irvine/oeis -name "A[0-9][0-9][0-9][0-9][0-9][0-9].java" | while read s
         -e 's/new Q(9)/Q.NINE/g' \
         -e 's/new Q(10)/Q.TEN/g' \
         -e 's/new Q(-1)/Q.NEG_ONE/g' \
-        -e 's/Q.valueOf(0)/Q.ZERO/g' \
-        -e 's/Q.valueOf(1)/Q.ONE/g' \
-        -e 's/Q.valueOf(2)/Q.TWO/g' \
-        -e 's/Q.valueOf(3)/Q.THREE/g' \
-        -e 's/Q.valueOf(4)/Q.FOUR/g' \
-        -e 's/Q.valueOf(5)/Q.FIVE/g' \
-        -e 's/Q.valueOf(6)/Q.SIX/g' \
-        -e 's/Q.valueOf(7)/Q.SEVEN/g' \
-        -e 's/Q.valueOf(8)/Q.EIGHT/g' \
-        -e 's/Q.valueOf(9)/Q.NINE/g' \
-        -e 's/Q.valueOf(10)/Q.TEN/g' \
-        -e 's/Q.valueOf(-1)/Q.NEG_ONE/g' \
+        -e 's/Q\.valueOf(0)/Q.ZERO/g' \
+        -e 's/Q\.valueOf(1)/Q.ONE/g' \
+        -e 's/Q\.valueOf(2)/Q.TWO/g' \
+        -e 's/Q\.valueOf(3)/Q.THREE/g' \
+        -e 's/Q\.valueOf(4)/Q.FOUR/g' \
+        -e 's/Q\.valueOf(5)/Q.FIVE/g' \
+        -e 's/Q\.valueOf(6)/Q.SIX/g' \
+        -e 's/Q\.valueOf(7)/Q.SEVEN/g' \
+        -e 's/Q\.valueOf(8)/Q.EIGHT/g' \
+        -e 's/Q\.valueOf(9)/Q.NINE/g' \
+        -e 's/Q\.valueOf(10)/Q.TEN/g' \
+        -e 's/Q\.valueOf(-1)/Q.NEG_ONE/g' \
         -e 's/= 2 - 1;/= 1;/g' \
         -e 's/= 1 - 1;/= 0;/g' \
         -e 's/= 0 - 1;/= -1;/g' \
@@ -73,7 +75,6 @@ find src/irvine/oeis -name "A[0-9][0-9][0-9][0-9][0-9][0-9].java" | while read s
         -e 's/[A-Z]*\.ZERO.subtract(\(\([^()]*([^()]*)\)\+[^()]*\))/\1.negate()/g' \
         -e 's/[A-Z]*\.ZERO.subtract(\(\(\([^()]*([^()]*([^()]*)\)*[^()]*)\)\*[^()]*\))/\1.negate()/g' \
         -e '/^public class/,$ b; /@author/,$ {/^$/d}' \
-        -e 's/\.equals(Z\.ONE)/.isOne()/g' \
         <"${s}" >"${s}.t"
     if cmp -s "${s}" "${s}.t" >&/dev/null; then
         /bin/rm "${s}.t"

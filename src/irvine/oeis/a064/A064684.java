@@ -16,7 +16,7 @@ public class A064684 extends Sequence0 {
     mN = mN.add(2);
     Z m = mN;
     long primeCount = 0;
-    while (!m.equals(Z.ONE)) {
+    while (!m.isOne()) {
       if (m.isProbablePrime()) {
         ++primeCount;
       }

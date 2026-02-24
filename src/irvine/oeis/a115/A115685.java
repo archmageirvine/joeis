@@ -17,7 +17,7 @@ public class A115685 extends FilterSequence {
   public A115685() {
     super(1, new A000040(), v -> {
       final Z w = Functions.REVERSE.z(v);
-      return w.equals(Z.ONE) || Jaguar.factor(w).minExponent() > 1;
+      return w.isOne() || Jaguar.factor(w).minExponent() > 1;
     });
   }
 }

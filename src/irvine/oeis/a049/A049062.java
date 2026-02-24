@@ -14,7 +14,7 @@ public class A049062 extends A002808 {
   public Z next() {
     while (true) {
       final Z comp = super.next();
-      if (comp.gcd(Z.FIVE).equals(Z.ONE)) {
+      if (comp.gcd(Z.FIVE).isOne()) {
         long a = 0;
         long b = 1;
         final long n = comp.longValueExact();

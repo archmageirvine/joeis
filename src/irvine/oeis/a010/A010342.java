@@ -23,7 +23,7 @@ public class A010342 extends Sequence1 {
         final List<Z> c = Convergents.continuedFractionConvergentsSqrt(mN.longValueExact());
         if (c.size() > 2) {
           for (int k = 1; k < c.size() - 1; ++k) {
-            if (!c.get(k).equals(Z.ONE)) {
+            if (!c.get(k).isOne()) {
               ok = false;
               break;
             }

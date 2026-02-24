@@ -24,7 +24,7 @@ public class A068068 extends Sequence1 implements DirectSequence {
     long c = 0;
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final long d = dd.longValueExact();
-      if (dd.testBit(0) && Functions.GCD.z(dd, n.divide(dd)).equals(Z.ONE)) {
+      if (dd.testBit(0) && Functions.GCD.z(dd, n.divide(dd)).isOne()) {
         ++c;
       }
     }

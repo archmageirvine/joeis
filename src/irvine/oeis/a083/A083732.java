@@ -14,6 +14,6 @@ public class A083732 extends FilterSequence {
 
   /** Construct the sequence. */
   public A083732() {
-    super(1, new A005936(), v -> Z.TWO.modPow(v.subtract(1), v).equals(Z.ONE) && !Predicates.PRIME.is(v));
+    super(1, new A005936(), v -> Z.TWO.modPow(v.subtract(1), v).isOne() && !Predicates.PRIME.is(v));
   }
 }

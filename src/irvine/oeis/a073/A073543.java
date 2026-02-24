@@ -20,7 +20,7 @@ public class A073543 extends Sequence1 {
       if (new Q(Z.ONE, Functions.PHI.z(mN))
         .add(new Q(Z.ONE, Functions.PHI.z(mN + 1)))
         .add(new Q(Z.ONE, Functions.PHI.z(mN + 2)))
-        .num().equals(Z.ONE)) {
+        .num().isOne()) {
         return Z.valueOf(mN);
       }
     }

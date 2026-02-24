@@ -28,7 +28,7 @@ public class A160135 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return n.equals(Z.ONE) ? Z.ONE : Functions.SIGMA1.z(n).subtract(mA051377.a(n));
+    return n.isOne() ? Z.ONE : Functions.SIGMA1.z(n).subtract(mA051377.a(n));
   }
 
   @Override

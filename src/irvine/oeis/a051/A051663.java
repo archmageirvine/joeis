@@ -25,7 +25,7 @@ public class A051663 extends A000040 {
         if (q.isInteger() && r.isInteger()) {
           final Z qz = q.toZ();
           final Z rz = r.toZ();
-          if (rz.compareTo(qz) > 0 && qz.multiply(rz).mod(p.subtract(1)).equals(Z.ONE) && qz.isProbablePrime() && rz.isProbablePrime()) {
+          if (rz.compareTo(qz) > 0 && qz.multiply(rz).mod(p.subtract(1)).isOne() && qz.isProbablePrime() && rz.isProbablePrime()) {
             return false;
           }
         }

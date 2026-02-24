@@ -18,7 +18,7 @@ public class A070994 extends Sequence1 {
       mN = mN.add(1);
       final Z phi = Functions.PHI.z(mN);
       Z t = mN;
-      while (!t.equals(Z.ONE)) {
+      while (!t.isOne()) {
         t = t.isEven() ? t.divide2() : t.multiply(3).add(1);
         if (t.equals(phi)) {
           return mN;

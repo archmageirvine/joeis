@@ -20,6 +20,6 @@ public class A329642 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A329642() {
-    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> (Functions.MOBIUS.z(n / d).equals(Z.ONE) ? Z.ONE : Z.ZERO).multiply(A156552.a(d).multiply(2).subtract(A323243.a(d)))));
+    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> (Functions.MOBIUS.z(n / d).isOne() ? Z.ONE : Z.ZERO).multiply(A156552.a(d).multiply(2).subtract(A323243.a(d)))));
   }
 }

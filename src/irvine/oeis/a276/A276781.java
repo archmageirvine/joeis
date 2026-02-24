@@ -16,6 +16,6 @@ public class A276781 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A276781() {
-    super(1, (self, n) -> A010055.a(n).equals(Z.ONE) ? Z.ONE : self.a(n - 1).add(1), "1");
+    super(1, (self, n) -> A010055.a(n).isOne() ? Z.ONE : self.a(n - 1).add(1), "1");
   }
 }

@@ -41,7 +41,7 @@ public class A216201 extends Triangle {
     } else if (n - k >= mRangeN + 1 || k - n >= mRangeK + 1) {
       // Z.ZERO already set
   */
-    } else if (get(n - 2, k - 1).equals(Z.ZERO)) {
+    } else if (get(n - 2, k - 1).isZero()) {
       // Z.ZERO already set
     } else {
       result = get(n - 1, k - 1).add(get(n - 1, k)); // Pascal's rule

@@ -27,7 +27,7 @@ public class A006702 extends Sequence1 {
       final Z x = next.num();
       final Z y = next.den();
       final Z r = x.square().subtract(y.square().multiply(n)).abs();
-      if (r.equals(Z.ONE)) {
+      if (r.isOne()) {
         return next;
       }
     }

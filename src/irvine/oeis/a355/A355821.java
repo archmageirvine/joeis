@@ -17,6 +17,6 @@ public class A355821 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A355821() {
-    super(1, 1, k -> Functions.GCD.z(A003961.a(k), Functions.PRIMORIAL_BASE_EXP.z(k)).equals(Z.ONE));
+    super(1, 1, k -> Functions.GCD.z(A003961.a(k), Functions.PRIMORIAL_BASE_EXP.z(k)).isOne());
   }
 }

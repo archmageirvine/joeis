@@ -18,7 +18,7 @@ public class A077618 extends Sequence1 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    if (n.equals(Z.ONE)) {
+    if (n.isOne()) {
       return Z.ONE;
     }
     if (!Predicates.SQUARE_FREE.is(n)) {

@@ -125,7 +125,7 @@ public class ParallelPermutationSequence extends AbstractSequence implements Dir
     private void search() {
       // elements 0 and 1 already selected
       final int sum = mP[0] + mP[1];
-      if (accept(mP, sum, 2)) {
+      if (accept(mP, mP[0], 1) && accept(mP, sum, 2)) {
         search(sum, 2);
       }
     }

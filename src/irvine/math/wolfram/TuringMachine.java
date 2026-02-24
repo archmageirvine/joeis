@@ -18,11 +18,10 @@ public class TuringMachine {
 
   // Maps (state,symbol) -> (state,symbol,direction)
   private final Map<Point, Triple<Integer>> mRules = new HashMap<>();
+  private final int mSymbols;
   private LongDynamicByteArray mTape = new LongDynamicByteArray();
   private long mPosition = 0;
   private int mState = 1;
-
-  // Untested for states and symbols != 2
 
   /**
    * Construct a Turing machine
@@ -31,12 +30,13 @@ public class TuringMachine {
    * @param symbols number of symbols
    */
   public TuringMachine(final int machineNumber, final int states, final int symbols) {
+    mSymbols = symbols;
     // Reverse engineered from description on p. 888 of ANKOS
 
     // Step 1: digits = Reverse[IntegerDigits[machineNumber, 8, 4]] (LSB first)
     final List<Integer> digits = new ArrayList<>();
     final int mod = 2 * states * symbols;
-    for (int i = 0, m = machineNumber; i < states * symbols; i++) {
+    for (int i = 0, m = machineNumber; i < states * symbols; ++i) {
       digits.add(m % mod);
       m /= mod;
     }
@@ -48,16 +48,16 @@ public class TuringMachine {
     }
 
     // Step 3: MapIndexed over level 2
-    for (int r = 0; r < partitioned.size(); r++) {
+    for (int r = 0; r < partitioned.size(); ++r) {
       final List<Integer> row = partitioned.get(r);
-      for (int c = 0; c < row.size(); c++) {
+      for (int c = 0; c < row.size(); ++c) {
         final int val = row.get(c);
         // Correct LHS: state = states + 1 - (r+1), read = 0-based
         final int state = states + 1 - (r + 1);
         // Compute RHS
-        final int q1 = val >>> 2;
-        final int q2 = (val >>> 1) & 1; // todo this only value for symbols == 2
-        final int q3 = val & 1;
+        final int q1 = val / (2 * symbols);
+        final int q2 = (val >>> 1) % symbols;
+        final int q3 = val & 1; // move head left or right
         mRules.put(new Point(state, c), new Triple<>(q1 + 1, q2, 2 * q3 - 1));
       }
     }
@@ -72,17 +72,18 @@ public class TuringMachine {
   }
 
   /**
-   * Initialize the tape to the given value (treated as binary).
-   * @param n binary initializer
+   * Initialize the tape to the given value
+   * (treated as a number in the base equal to the number of symbols).
+   * @param n initializer
    */
   public void initialTape(final long n) {
     mTape = new LongDynamicByteArray();
     long m = n;
     long k = 0;
     while (m != 0) {
-      mTape.set(k, (byte) (m & 1));
+      mTape.set(k, (byte) (m % mSymbols));
       ++k;
-      m >>>= 1;
+      m /= mSymbols;
     }
     mPosition = 0;
     mState = 1;
@@ -107,7 +108,7 @@ public class TuringMachine {
   public Z readTape() {
     Z res = Z.ZERO;
     for (long k = mTape.length() - 1; k >= 0; --k) {
-      res = res.multiply2();
+      res = res.multiply(mSymbols);
       res = res.add(mTape.get(k));
     }
     return res;
@@ -130,20 +131,26 @@ public class TuringMachine {
 
   /**
    * Run a particular machine.
-   * @param args machine-number tape
+   * @param args machine-number states symbols tape
    */
   public static void main(final String[] args) {
     final int machine = Integer.parseInt(args[0]);
-    final long tape = Long.parseLong(args[1]);
-    final TuringMachine tm = new TuringMachine(machine);
+    final int states = Integer.parseInt(args[1]);
+    final int symbols = Integer.parseInt(args[2]);
+    final long tape = Long.parseLong(args[3]);
+    final long max = args.length > 4 ? Long.parseLong(args[4]) : Long.MAX_VALUE;
+    final TuringMachine tm = new TuringMachine(machine, states, symbols);
     System.out.println(tm.mRules);
     tm.initialTape(tape);
     long runtime = 0;
     while (true) {
-      System.out.println(tm.mState + " " + tm.mPosition + " " + tm.readTape().toString(2));
-      ++runtime;
+      System.out.println(tm.mState + " " + tm.mPosition + " " + tm.readTape().toString(symbols));
+      if (++runtime > max) {
+        System.out.println("Computation aborted");
+        return;
+      }
       if (tm.step() < 0) {
-        System.out.println("Total runtime: " + runtime);
+        System.out.println("Total runtime: " + runtime + " output: " + tm.readTape().toString(symbols));
         return;
       }
     }

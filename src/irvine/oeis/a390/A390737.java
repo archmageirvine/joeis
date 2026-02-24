@@ -6,6 +6,7 @@ import irvine.math.ContinuedFractionUtils;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a084.A084580;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
@@ -13,17 +14,14 @@ import irvine.oeis.cons.DecimalExpansionSequence;
  * A390737 a(n) is the number of reliable digits produced by using n terms of A084580 and treating them as the coefficients of a continued fraction.
  * @author Sean A. Irvine
  */
-public class A390737 extends A084580 {
+public class A390737 extends Sequence0 {
 
+  private final Sequence mS = new A084580().prepend(0);
   private final ArrayList<Z> mCf = new ArrayList<>();
 
   @Override
   public Z next() {
-    if (mCf.isEmpty()) {
-      mCf.add(Z.ZERO);
-    } else {
-      mCf.add(super.next());
-    }
+    mCf.add(mS.next());
     if (mCf.size() <= 2) {
       return Z.ZERO;
     }

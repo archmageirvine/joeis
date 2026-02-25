@@ -1,6 +1,5 @@
 package irvine.oeis.a070;
 
-import irvine.math.z.Z;
 import irvine.oeis.FilterSequence;
 
 /**

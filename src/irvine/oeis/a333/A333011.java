@@ -4,7 +4,6 @@ package irvine.oeis.a333;
 import irvine.math.function.Functions;
 import irvine.math.predicate.Predicates;
 import irvine.math.z.Integers;
-import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**

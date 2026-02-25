@@ -3,7 +3,6 @@ package irvine.oeis.a346;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Integers;
-import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**

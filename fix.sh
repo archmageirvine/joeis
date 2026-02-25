@@ -88,3 +88,5 @@ done
 for f in $(ag -G [.]java -l ' \* Construct the sequence'); do
     perl -0777 -pi -e 's/\/\*\* *\n   \* Construct the sequence.\n   \*\//\/** Construct the sequence. *\//igs' "${f}"
 done
+
+echo "It is a good idea to run Optimize Imports across the changed files now"

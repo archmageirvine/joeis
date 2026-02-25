@@ -3,7 +3,6 @@ package irvine.oeis.a230;
 
 import irvine.math.function.Functions;
 import irvine.math.predicate.Predicates;
-import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**

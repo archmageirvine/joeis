@@ -2,8 +2,8 @@ package irvine.oeis.a007;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.InterleaveSequence;
 import irvine.oeis.DirectSequence;
+import irvine.oeis.InterleaveSequence;
 import irvine.oeis.a000.A000004;
 import irvine.oeis.a001.A001511;
 

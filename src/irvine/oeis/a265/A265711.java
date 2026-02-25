@@ -4,7 +4,6 @@ package irvine.oeis.a265;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
-import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**

@@ -1,7 +1,6 @@
 package irvine.oeis.a074;
 
 import irvine.math.function.Functions;
-import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**

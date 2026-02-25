@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083875.
+ * A083876 Least pseudoprime to base 2 through base prime(n).
  * @author Sean A. Irvine
  */
 public class A083876 extends Sequence1 {

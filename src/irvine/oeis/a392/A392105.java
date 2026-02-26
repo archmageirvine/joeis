@@ -4,7 +4,7 @@ package irvine.oeis.a392;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A392105 Upper (1,1/2) midsequence of (n^2) and (n^3); see Comments.
+ * A392105 allocated for Clark Kimberling.
  * @author Georg Fischer
  */
 public class A392105 extends HolonomicRecurrence {

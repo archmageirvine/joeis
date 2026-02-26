@@ -6,7 +6,7 @@ import irvine.oeis.a010.A010815;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A218173 Expansion of f(x^7, x^17) - x^2 * f(x, x^23) in powers of x where f(,) is Ramanujan&apos;s two-variable theta function.
+ * A218173 Expansion of f(x^7, x^17) - x^2 * f(x, x^23) in powers of x where f(,) is Ramanujan's two-variable theta function.
  * @author Georg Fischer
  */
 public class A218173 extends FilterSequence {

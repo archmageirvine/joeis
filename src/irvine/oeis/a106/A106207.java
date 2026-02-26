@@ -6,7 +6,7 @@ import irvine.oeis.a007.A007241;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A106207 Expansion of 64(g_n^(24) + g_n^(-24)) where q = e^(-Pi sqrt(n)) and g_n is Ramanujan&apos;s class invariant.
+ * A106207 Expansion of 64(g_n^(24) + g_n^(-24)) where q = e^(-Pi sqrt(n)) and g_n is Ramanujan's class invariant.
  * @author Georg Fischer
  */
 public class A106207 extends SingleTransformSequence {

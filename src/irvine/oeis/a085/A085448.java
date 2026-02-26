@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A085448 Primes having a semiprime number of 1&apos;s in their binary representation.
+ * A085448 Primes having a semiprime number of 1's in their binary representation.
  * @author Georg Fischer
  */
 public class A085448 extends FilterSequence {

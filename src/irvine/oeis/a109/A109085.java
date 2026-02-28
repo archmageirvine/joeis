@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A109085 G.f. A(x) satisfies: A(x) = P(x*A(x)) where P(x) = A(x/P(x)) is the g.f. of the partition numbers A000041.
+ * A109085 G.f. A(x) satisfies A(x) = P(x*A(x)) where P(x) = A(x/P(x)) is the g.f. of the partition numbers A000041.
  * G.f.A(x) satisfies: A(x) = P(x*A(x)) where P(x) = A(x/P(x)) is the g.f.of the partition numbers F000041.
  * @author Georg Fischer
  */

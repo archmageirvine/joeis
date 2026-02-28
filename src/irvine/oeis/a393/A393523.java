@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393523 allocated for Benjamin Testart.
+ * A393523 Triangle T(n,k) read by rows: number of unordered increasing trees on n nodes, with k nodes colored blue and n-k nodes colored red, such that each red node has at least two children.
  * @author Sean A. Irvine
  */
 public class A393523 extends Sequence1 {

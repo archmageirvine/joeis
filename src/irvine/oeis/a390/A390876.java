@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A390876 allocated for Claude H. R. Dequatre.
+ * A390876 Decimal expansion of Pi/2 + log(2) - 2.
  * @author Sean A. Irvine
  */
 public class A390876 extends DecimalExpansionSequence {

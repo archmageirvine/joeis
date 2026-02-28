@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A013465 cos(arctan(x)-arctanh(x))=1-160/6!*x^6-691200/10!*x^10+3942400/12!*x^12...
+ * A013465 Expansion of e.g.f. cos(arctan(x) - arctanh(x)) (even powers only).
  * @author Sean A. Irvine
  */
 public class A013465 extends Sequence0 {

@@ -4,7 +4,7 @@ package irvine.oeis.a393;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A393327 allocated for Enrique Navarrete.
+ * A393327 a(n) = (1/2)*n*(n+3)*(n+4).
  * @author Georg Fischer
  */
 public class A393327 extends HolonomicRecurrence {

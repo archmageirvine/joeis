@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.math.z.Z;
 
 /**
- * A080309 n-th even number equals n-th multiple of a Fermat number.
+ * A080309 Numbers k such that the k-th positive even number equals the k-th multiple of a Fermat number.
  * @author Sean A. Irvine
  */
 public class A080309 extends A080307 {

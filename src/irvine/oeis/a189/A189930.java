@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A189930 b(n) = n + [n*r/s] + [n*t/s]; r=1, s=sin(2pi/5), t=cos(2pi/5).
+ * A189930 b(n) = n + [n*r/s] + [n*t/s]; r=1, s=sin(2*Pi/5), t=cos(2*Pi/5).
  * @author Georg Fischer
  */
 public class A189930 extends FloorSequence {

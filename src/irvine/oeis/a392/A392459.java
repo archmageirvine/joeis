@@ -3,7 +3,7 @@ package irvine.oeis.a392;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A392459 allocated for Nick Griffey.
+ * A392459 Numbers that cannot be expressed as the sum of the partial products of some sequence of primes.
  * @author Sean A. Irvine
  */
 public class A392459 extends FiniteSequence {

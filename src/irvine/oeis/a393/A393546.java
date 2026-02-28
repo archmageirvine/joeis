@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A393546 allocated for Jwalin Bhatt.
+ * A393546 Number of decimal places which are known after n terms of the continued fraction for the bronze ratio.
  * @author Sean A. Irvine
  */
 public class A393546 extends Sequence1 {

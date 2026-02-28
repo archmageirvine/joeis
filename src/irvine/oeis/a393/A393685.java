@@ -3,7 +3,7 @@ package irvine.oeis.a393;
 import irvine.oeis.RecordSequence;
 
 /**
- * A393542 allocated for Sean A. Irvine.
+ * A393685 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A393685 extends RecordSequence {

@@ -6,7 +6,7 @@ import irvine.math.series.Series;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A393016.
+ * A393637 allocated for Stanislav Sykora.
  * @author Sean A. Irvine
  */
 public class A393637 extends GfSequence {

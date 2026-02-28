@@ -4,7 +4,7 @@ package irvine.oeis.a266;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A266550 Independence number of the n-Mycielski graph.
+ * A266550 Independence number, upper domination number, and upper irredundance number of the n-Mycielski graph.
  * @author Georg Fischer
  */
 public class A266550 extends GeneratingFunctionSequence {

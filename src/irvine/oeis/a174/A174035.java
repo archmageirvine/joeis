@@ -7,7 +7,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A174035 A triangle sequence of the form: T(n,m) = binomial(n, m) + floor(Eulerian(n + 1, m)/2).
+ * A174035 Triangle read by rows: T(n,m) = binomial(n, m) + floor(Eulerian(n + 1, m)/2).
  * @author Georg Fischer
  */
 public class A174035 extends LambdaTriangle {

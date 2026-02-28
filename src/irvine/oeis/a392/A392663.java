@@ -3,7 +3,7 @@ package irvine.oeis.a392;
 import irvine.math.z.Z;
 
 /**
- * A392663 allocated for Clark Kimberling.
+ * A392663 Indices of the upper Wythoff partition sequence of the triangular numbers; see A392660.
  * @author Sean A. Irvine
  */
 public class A392663 extends A392660 {

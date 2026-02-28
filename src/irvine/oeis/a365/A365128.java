@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A365128 G.f. satisfies A(x) = (1 + x*A(x)*(1 + x*A(x)))^3.
+ * A365128 G.f. A(x) satisfies A(x) = (1 + x*A(x)*(1 + x*A(x)))^3.
  * @author Georg Fischer
  */
 public class A365128 extends LambdaSequence {

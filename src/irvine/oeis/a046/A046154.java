@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000010;
 
 /**
- * A046154 Primes of the form n*2^phi(n)+1 with phi the Euler function.
+ * A046154 Primes of the form k*2^phi(k) + 1 with phi the Euler function.
  * @author Sean A. Irvine
  */
 public class A046154 extends A000010 {

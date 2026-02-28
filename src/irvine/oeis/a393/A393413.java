@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A393413 allocated for Jwalin Bhatt.
+ * A393413 Decimal expansion of the limit mean of the number of continued fraction coefficients required per decimal digit for the bronze ratio.
  * @author Sean A. Irvine
  */
 public class A393413 extends DecimalExpansionSequence {

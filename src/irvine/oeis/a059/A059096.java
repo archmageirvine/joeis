@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A059096 Numbers n such that 405*n^8 + 108*n^6 + 27*n^4 + 6*n^2 + 1 is prime.
+ * A059096 Numbers k such that 405*k^8 + 108*k^6 + 27*k^4 + 6*k^2 + 1 is prime.
  * @author Georg Fischer
  */
 public class A059096 extends PrimePositionSubsequence {

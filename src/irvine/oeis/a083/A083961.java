@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004151;
 
 /**
- * A083961 a(n) = A083960(n)/A004151(n).
+ * A083961 a(n) = A083960(n) / A004151(n).
  * @author Sean A. Irvine
  */
 public class A083961 extends Sequence1 {

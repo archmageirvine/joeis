@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a157.A157711;
 
 /**
- * A393530 allocated for Hans Havermann.
+ * A393530 Emirps in A157711.
  * @author Sean A. Irvine
  */
 public class A393530 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392467 allocated for B Mittou.
+ * A392467 Numbers whose sum of odd indexed divisors divides the sum of its divisors.
  * @author Sean A. Irvine
  */
 public class A392467 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a393;
 import irvine.math.z.Z;
 
 /**
- * A393531 allocated for Hans Havermann.
+ * A393531 Number of n-digit emirp pairs in A393530.
  * @author Sean A. Irvine
  */
 public class A393531 extends A393530 {

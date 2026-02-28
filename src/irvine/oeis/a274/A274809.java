@@ -5,7 +5,7 @@ package irvine.oeis.a274;
 import irvine.oeis.a039.A039832;
 
 /**
- * A274809 Numbers n such that n and n+1 both have 36 divisors.
+ * A274809 Numbers k such that k and k+1 both have 36 divisors.
  * @author Georg Fischer
  */
 public class A274809 extends A039832 {

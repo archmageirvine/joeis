@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A057754 Integer nearest to Li(10^n), where Li(x) = integral(0..x, dt/log(t)).
+ * A057754 Integer nearest to Li(10^n), where Li(x) = Integral_{t=0..x} dt/log(t).
  * @author Sean A. Irvine
  */
 public class A057754 extends Sequence1 {

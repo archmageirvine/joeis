@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A393453 allocated for Paolo P. Lava.
+ * A393453 Integers k, not divisible by any of their digits, such that k = Sum_{j = digits of k} k/j.
  * @author Sean A. Irvine
  */
 public class A393453 extends Sequence1 {

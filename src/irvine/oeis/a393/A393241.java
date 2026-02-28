@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393241 allocated for Felix Huber.
+ * A393241 a(n) is the number of divisors of n! with exactly n prime factors (counted with multiplicity).
  * @author Sean A. Irvine
  */
 public class A393241 extends Sequence0 {

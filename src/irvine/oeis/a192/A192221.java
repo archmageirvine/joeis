@@ -5,7 +5,7 @@ import irvine.oeis.a179.A179186;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A192221 Numbers n such that phi(n-2)=phi(n+2) where phi=A000010.
+ * A192221 Numbers k such that phi(k-2)=phi(k+2) where phi=A000010.
  * @author Georg Fischer
  */
 public class A192221 extends SingleTransformSequence {

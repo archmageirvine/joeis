@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A059112 floor(prime(n) - n*log(n) - n*log(log(n)) + n).
+ * A059112 a(n) = floor(prime(n) - n*log(n) - n*log(log(n)) + n).
  * @author Sean A. Irvine
  */
 public class A059112 extends A000040 {

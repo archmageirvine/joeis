@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393016.
+ * A393595 Sequence where k is appended after every k^k occurrences of 1, with multiple values following a 1 listed in order.
  * @author Sean A. Irvine
  */
 public class A393595 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002808;
 import irvine.oeis.a373.A373387;
 
 /**
- * A391695 allocated for Marco Rip\u00e0.
+ * A391695 Composite numbers k, not multiples of 10, whose (radix-10) constant congruence speed equals the minimum of the (radix-10) constant congruence speeds of all the prime factors of k.
  * @author Sean A. Irvine
  */
 public class A391695 extends A002808 {

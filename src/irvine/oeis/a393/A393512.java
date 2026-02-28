@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393512 allocated for Juri-Stepan Gerasimov.
+ * A393512 a(n) = ((2n)^(2n + 1) + 1)/(2n + 1)^2.
  * @author Sean A. Irvine
  */
 public class A393512 extends Sequence0 {

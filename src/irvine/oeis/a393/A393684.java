@@ -3,7 +3,7 @@ package irvine.oeis.a393;
 import irvine.oeis.ca.TuringMachineRuntimeSequence;
 
 /**
- * A393542 allocated for Sean A. Irvine.
+ * A393684 Halting time for Wolfram's 2-state 3-symbol Turing machine 840971 when started with n on the tape.
  * @author Sean A. Irvine
  */
 public class A393684 extends TuringMachineRuntimeSequence {

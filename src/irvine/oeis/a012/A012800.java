@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012800 sech(sec(x)*tan(x))=1-1/2!*x^2-15/4!*x^4-177/6!*x^6+8225/8!*x^8...
+ * A012800 Expansion of e.g.f. sech(sec(x)*tan(x)) (only even powers).
  * @author Sean A. Irvine
  */
 public class A012800 extends Sequence0 {

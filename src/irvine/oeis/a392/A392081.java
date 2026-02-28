@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392081 allocated for Sean Lipton.
+ * A392081 Number of distinct orders of derangements of n items.
  * @author Sean A. Irvine
  */
 public class A392081 extends Sequence0 {

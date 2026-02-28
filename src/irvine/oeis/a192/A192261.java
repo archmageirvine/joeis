@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a081.A081220;
 
 /**
- * A192261 Numbers n such that 4n+1 is a palindromic prime.
+ * A192261 Numbers k such that 4k+1 is a palindromic prime.
  * @author Georg Fischer
  */
 public class A192261 extends AbstractSequence {

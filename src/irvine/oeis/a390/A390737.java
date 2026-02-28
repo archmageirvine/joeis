@@ -11,7 +11,7 @@ import irvine.oeis.a084.A084580;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A390737 a(n) is the number of reliable digits produced by using n terms of A084580 and treating them as the coefficients of a continued fraction.
+ * A390737 Number of decimal places which are known after using n terms of A084580 and treating them as the coefficients of a continued fraction.
  * @author Sean A. Irvine
  */
 public class A390737 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A393377 allocated for Artur Jasinski.
+ * A393377 Minimum Mahler measure of all irreducible and non-cyclotomic quintic polynomials with coefficients in {-1, 0, 1}.
  * @author Sean A. Irvine
  */
 public class A393377 extends PolynomialRootExpansionSequence {

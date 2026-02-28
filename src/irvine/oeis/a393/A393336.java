@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393336 allocated for Ruud H.G. van Tol.
+ * A393336 a(n) is the sum of positions of 1's minus sum of positions of 0's in the binary expansion of n.
  * @author Sean A. Irvine
  */
 public class A393336 extends Sequence0 {

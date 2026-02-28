@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001542;
 import irvine.oeis.a393.A393016;
 
 /**
- * A391748 allocated for O\u011fuz Serdar Uzunlar.
+ * A391748 Indices k such that y^2 + x*y - x^2 is prime, where (x,y) is the k-th fundamental solution to the Pell equation x^2 - 2*y^2 = 1.
  * @author Sean A. Irvine
  */
 public class A391748 extends A393016 {

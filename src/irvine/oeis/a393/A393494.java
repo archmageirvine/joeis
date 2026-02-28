@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393494 allocated for Amiram Eldar.
+ * A393494 Starts of runs of 3 consecutive integers that are all s-practical numbers (A393492).
  * @author Sean A. Irvine
  */
 public class A393494 extends Sequence1 {

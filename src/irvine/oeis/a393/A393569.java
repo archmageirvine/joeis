@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393569 allocated for Maximiliano Nicol\u00e1s Cardich.
+ * A393569 Number of iterations required to reach the fixed point (strictly interleaved state) in the prime-composite merging process starting from {1, 2, ..., n}.
  * @author Sean A. Irvine
  */
 public class A393569 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393102 allocated for Michael De Vlieger.
+ * A393102 Numbers k whose smallest prime factor index is equal to the number of distinct prime factors of k and whose largest prime factor index is equal to the number of prime factors of k counted with multiplicity.
  * @author Sean A. Irvine
  */
 public class A393102 extends Sequence1 {

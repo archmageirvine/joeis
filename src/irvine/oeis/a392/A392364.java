@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392364 allocated for Ctibor O. Zizka.
+ * A392364 a(n) is the least positive integer k such that tau(k)*tau(n)/(tau(k) + tau(n)) is an integer. If no such k exists a(n) = -1. tau(i) = A000005(i).
  * @author Sean A. Irvine
  */
 public class A392364 extends Sequence1 {

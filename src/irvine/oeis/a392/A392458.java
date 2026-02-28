@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A392458 allocated for Michal Paulovic.
+ * A392458 Decimal expansion of the area of a 16-gon with unit side lengths.
  * @author Sean A. Irvine
  */
 public class A392458 extends DecimalExpansionSequence {

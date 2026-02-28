@@ -3,6 +3,7 @@ package irvine.math.z;
 import java.util.Iterator;
 
 import irvine.math.LongUtils;
+import irvine.util.string.StringUtils;
 
 /**
  * An iterator for all decimal palindromes with a given prefix.
@@ -16,6 +17,7 @@ public final class PrefixedPalindromes implements Iterator<Z> {
   private int mLength;
   private long mCounter;
   private long mLimit;
+  private boolean mEmitPrefix;
 
   private static String reverse(final String s) {
     return new StringBuilder(s).reverse().toString();
@@ -27,6 +29,7 @@ public final class PrefixedPalindromes implements Iterator<Z> {
    */
   public PrefixedPalindromes(final String prefix) {
     mPrefix = prefix;
+    mEmitPrefix = StringUtils.isPalindrome(prefix);
     mK = prefix.length();
     mLength = mK;
     reset();
@@ -48,9 +51,8 @@ public final class PrefixedPalindromes implements Iterator<Z> {
   @Override
   public Z next() {
     // prefix itself
-    if (mLength == mK) {
-      mLength = mK + 1;
-      reset();
+    if (mEmitPrefix) {
+      mEmitPrefix = false;
       return new Z(mPrefix);
     }
     final String left = buildLeft();

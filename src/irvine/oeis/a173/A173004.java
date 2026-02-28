@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A173004 Antidiagonal triangle sequence based on recursion: f(n,a)=a*f(n-1,a)+n*f(n-2,a).
+ * A173004 Square array A(n,k) read by antidiagonals: T(n,k) = A(n-k+1,k) where A(n,0)=0, A(n,1)=1, and A(n,k) = n*A(n,k-1) + k*A(n,k-2).
  * @author Sean A. Irvine
  */
 public class A173004 extends Sequence0 {

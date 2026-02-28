@@ -6,7 +6,7 @@ import irvine.oeis.a082.A082551;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A392332 allocated for Felix Huber.
+ * A392332 a(n) is the excess of deficient numbers over abundant numbers in the first n positive integers.
  * @author Sean A. Irvine
  */
 public class A392332 extends PartialSumSequence {

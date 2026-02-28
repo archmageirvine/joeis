@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393294 allocated for Charles L. Hohn.
+ * A393294 Iteration numbers k such that MD5^{k}(128 bits of 0) is a record high value.
  * @author Sean A. Irvine
  */
 public class A393294 extends Sequence1 {

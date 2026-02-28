@@ -13,6 +13,6 @@ public class A083970 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A083970() {
-    super(1, 1, k -> new Z(Functions.REVERSE.z(k).toString() + Integer.toString(k)).mod(k) == 0);
+    super(1, 1, k -> new Z(Functions.REVERSE.z(k).toString() + k).mod(k) == 0);
   }
 }

@@ -3,7 +3,7 @@ package irvine.oeis.a393;
 import irvine.oeis.ParallelPermutationSequence;
 
 /**
- * A393394 allocated for Vincent Vatter.
+ * A393394 Number of separable derangements on [n].
  * @author Sean A. Irvine
  */
 public class A393394 extends ParallelPermutationSequence {

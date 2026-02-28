@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002473;
 
 /**
- * A392635 allocated for Zhicheng Wei.
+ * A392635 7-smooth numbers k such that k / (next 7-smooth number after k) reaches a record large value.
  * @author Sean A. Irvine
  */
 public class A392635 extends A002473 {

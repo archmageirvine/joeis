@@ -7,7 +7,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A174036 A triangle sequence of the form:t(n,m]=If[m == 0 || m == n, 1, Binomial[Eulerian[n + 1, m], If[Floor[n/2] &lt; m, n - m, m]]].
+ * A174036 Triangle read by rows: T(n,k) = 1 if k=0 or k=n, otherwise T(n,k) = binomial(Eulerian(n+1, k), min(n-k,k)).
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

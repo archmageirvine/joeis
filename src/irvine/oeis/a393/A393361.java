@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A393361 allocated for A.H.M. Smeets.
+ * A393361 Decimal expansion of the weight factor for Hermite-Gauss quadrature of degree 5 corresponding to abscissa A393358.
  * @author Sean A. Irvine
  */
 public class A393361 extends DecimalExpansionSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A174160 A symmetrical triangular sequence:t(n,m)=2*Eulerian[n, m - 1] - (Binomial[n - 1, m - 1]*Binomial[n, m - 1]/m)^2.
+ * A174160 Triangle read by rows: T(n,m) = 2*Eulerian(n, m-1) - (binomial(n-1, m-1) * binomial(n, m-1) / m)^2.
  * @author Georg Fischer
  */
 public class A174160 extends LambdaTriangle {

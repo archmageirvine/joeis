@@ -4,7 +4,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
- * A393474 allocated for Vincenzo Librandi.
+ * A393474 Row sums of A393016.
  * @author Sean A. Irvine
  */
 public class A393474 extends A393016 {

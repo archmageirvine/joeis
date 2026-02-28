@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393242 allocated for Felix Huber.
+ * A393242 a(n) is the number of divisors of n! with exactly n divisors.
  * @author Sean A. Irvine
  */
 public class A393242 extends Sequence0 {

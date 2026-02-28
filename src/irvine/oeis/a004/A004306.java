@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001644;
 
 /**
- * A004306 Rook polynomials.
+ * A004306 Rook polynomials; fourth column of A008305.
  * @author Sean A. Irvine
  */
 public class A004306 extends A001644 {

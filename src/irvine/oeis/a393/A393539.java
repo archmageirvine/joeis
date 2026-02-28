@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393539 allocated for Darij Grinberg.
+ * A393539 Dimension of the random-to-random subalgebra of the n-th symmetric group algebra.
  * @author Sean A. Irvine
  */
 public class A393539 extends Sequence0 {

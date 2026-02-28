@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.prime.PrimePositionSubsequence;
 
 /**
- * A059803 Numbers n such that 9^n - 8^n is prime or a strong pseudoprime.
+ * A059803 Numbers k such that 9^k - 8^k is prime.
  * @author Sean A. Irvine
  */
 public class A059803 extends PrimePositionSubsequence {

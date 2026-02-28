@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A392504 allocated for Jean-Marc Rebert.
+ * A392504 Smallest prime\u202fp, distinct from prime(n), that uses exactly the same set of digits as prime(n), and -1 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A392504 extends A000040 {

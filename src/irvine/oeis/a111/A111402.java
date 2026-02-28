@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A111402 f(f(n+1))-f(f(n)), where f() = Bell numbers = A000110.
+ * A111402 a(n) = f(f(n+1)) - f(f(n)), where f() = Bell numbers = A000110.
  * @author Georg Fischer
  */
 public class A111402 extends LambdaSequence {

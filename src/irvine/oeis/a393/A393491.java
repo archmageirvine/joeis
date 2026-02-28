@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A393491 allocated for Werner Schulte.
+ * A393491 Multiplicative sequence a(n) with a(p^e) = floor((e+1)/3) for prime p and e &gt; 0.
  * @author Sean A. Irvine
  */
 public class A393491 extends MultiplicativeSequence {

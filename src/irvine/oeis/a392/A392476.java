@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A392476 allocated for Austin Blake.
+ * A392476 a(n) = a(n-1) - a(a(n-1)) if a(n-1) has appeared exactly once; otherwise a(n) = number of times a(n-1) has appeared; a(0) = 0.
  * @author Sean A. Irvine
  */
 public class A392476 extends CachedSequence {

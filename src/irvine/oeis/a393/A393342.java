@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393342 allocated for Michel Lagneau.
+ * A393342 a(n) is the smallest prime number p, such that the sequence of n consecutive prime numbers modulo n starting with p is a palindromic.
  * @author Sean A. Irvine
  */
 public class A393342 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A393358 allocated for A.H.M. Smeets.
+ * A393358 Decimal expansion of the largest positive zero of the Hermite polynomial of degree 5.
  * @author Sean A. Irvine
  */
 public class A393358 extends DecimalExpansionSequence {

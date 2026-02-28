@@ -12,7 +12,7 @@ import irvine.oeis.Sequence1;
 public class A083962 extends Sequence1 {
 
   private Z mA = Z.ONE;
-  private long mN = 0;
+  protected long mN = 0;
 
   @Override
   public Z next() {

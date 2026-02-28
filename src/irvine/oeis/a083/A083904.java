@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A083904 G.f. 1/(1-x) * Sum_{k&gt;=0} 3^k * x^2^(k+1)/(1+x^2^k).
+ * A083904 Expansion of g.f. 1/(1-x) * Sum_{k&gt;=0} 3^k * x^2^(k+1)/(1+x^2^k).
  * @author Sean A. Irvine
  */
 public class A083904 extends CachedSequence {

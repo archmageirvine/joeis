@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392974 allocated for Nishant R. Gautam.
+ * A392974 Numbers k such that sopfr(k-1) = sopfr(k+1), where sopfr = A001414.
  * @author Sean A. Irvine
  */
 public class A392974 extends Sequence1 {

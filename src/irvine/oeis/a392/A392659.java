@@ -3,7 +3,7 @@ package irvine.oeis.a392;
 import irvine.math.z.Z;
 
 /**
- * A392659 allocated for Clark Kimberling.
+ * A392659 Indices of the upper Wythoff partition sequence of the squares; see A392656.
  * @author Sean A. Irvine
  */
 public class A392659 extends A392656 {

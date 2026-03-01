@@ -18,7 +18,7 @@ public class A326129 extends AbstractSequence implements DirectSequence {
 
   /** Construct the sequence. */
   public A326129() {
-    super(0);
+    super(1);
     mN = 0;
   }
 

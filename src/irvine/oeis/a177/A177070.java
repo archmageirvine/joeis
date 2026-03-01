@@ -12,6 +12,6 @@ public class A177070 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A177070() {
-    super(0, 0, n -> Z.TWO.pow(n).add(Z.valueOf(n).square()).add(2).isProbablePrime());
+    super(1, 0, n -> Z.TWO.pow(n).add(Z.valueOf(n).square()).add(2).isProbablePrime());
   }
 }

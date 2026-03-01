@@ -13,7 +13,7 @@ public class A392467 extends Sequence1 {
   private long mN = 0;
 
   private boolean is(final long n) {
-    Z[] sums = {Z.ZERO, Z.ZERO};
+    final Z[] sums = {Z.ZERO, Z.ZERO};
     int j = 1;
     for (final Z d : Jaguar.factor(n).divisorsSorted()) {
       sums[j] = sums[j].add(d);

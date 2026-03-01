@@ -10,14 +10,14 @@ import java.util.TreeSet;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
 import irvine.util.string.StringUtils;
 
 /**
  * A381847 Number of 3 element sets of distinct integer sided rectangles that fill an n X n square.
  * @author Sean A. Irvine
  */
-public class A381847 extends Sequence1 {
+public class A381847 extends AbstractSequence {
 
   protected static final class Cuboid implements Comparable<Cuboid> {
     private final int[] mTriple;
@@ -88,6 +88,7 @@ public class A381847 extends Sequence1 {
   private int mN;
 
   protected A381847(final int offset, final int cuboids) {
+    super(offset);
     if (cuboids > 4) {
       throw new UnsupportedOperationException("Use the A386296 implementation instead");
     }
@@ -101,7 +102,7 @@ public class A381847 extends Sequence1 {
 
   /** Construct the sequence. */
   public A381847() {
-    this(3);
+    this(1, 3);
   }
 
   protected boolean accept(final List<Cuboid> lst) {

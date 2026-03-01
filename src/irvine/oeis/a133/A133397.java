@@ -13,6 +13,6 @@ public class A133397 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A133397() {
-    super(1, 0, 0, (k, n) -> (k == 0) ? Z.ONE : Functions.PRIME.z(k + 1).pow(n).multiply(Functions.PRIME.z(k).pow((long) n * (n - 1) / 2)));
+    super(0, 0, 0, (k, n) -> (k == 0) ? Z.ONE : Functions.PRIME.z(k + 1).pow(n).multiply(Functions.PRIME.z(k).pow((long) n * (n - 1) / 2)));
   }
 }

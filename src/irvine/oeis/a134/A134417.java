@@ -13,6 +13,6 @@ public class A134417 extends VectorProduct {
 
   /** Construct the sequence. */
   public A134417() {
-    super(1, new A007318(), new A133632());
+    super(0, new A007318(), new A133632());
   }
 }

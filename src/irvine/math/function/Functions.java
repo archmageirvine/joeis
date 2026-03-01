@@ -177,6 +177,8 @@ public final class Functions {
   public static final Function1 NEXT_PALINDROME = new NextPalindrome();
   /** The largest palindrome not more than given number. */
   public static final Function1 PREV_PALINDROME = new PreviousPalindrome();
+  /** The ten's complement of a number. */
+  public static final Function1 TENS_COMPLEMENT = new TensComplement();
 
   // Two argument functions with default first parameter
 

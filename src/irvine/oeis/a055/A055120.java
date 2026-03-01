@@ -18,10 +18,6 @@ public class A055120 extends Sequence0 implements DirectSequence {
     return a(Z.valueOf(++mN));
   }
 
-//  private Z a2(final Z n) {
-//    return n.isZero() ? Z.ZERO : Z.TEN.pow(n.toString().length()).subtract(n);
-//  }
-
   @Override
   public Z a(final Z n) {
     final String s = n.toString();

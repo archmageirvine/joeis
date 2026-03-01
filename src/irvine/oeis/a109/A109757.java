@@ -1,5 +1,6 @@
 package irvine.oeis.a109;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.SemiprimeSequence;
 
@@ -9,18 +10,10 @@ import irvine.oeis.SemiprimeSequence;
  */
 public class A109757 extends SemiprimeSequence {
 
-  private static long tensComplement(final long n) {
-    long s = 1;
-    while (s <= n) {
-      s *= 10L;
-    }
-    return s - n;
-  }
-
   static Z tensComplementFactorial(final long n) {
     Z p = Z.ONE;
     for (long k = 1; k <= n; ++k) {
-      p = p.multiply(tensComplement(k));
+      p = p.multiply(Functions.TENS_COMPLEMENT.l(k));
     }
     return p;
   }

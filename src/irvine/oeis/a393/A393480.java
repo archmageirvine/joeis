@@ -72,7 +72,9 @@ public class A393480 extends Sequence0 {
 
   @Override
   public Z next() {
-    ++mN;
+    if (++mN == 0) {
+      return Z.ONE;
+    }
     final long[][] mat = matrix(2 * mN);
     final ExecutorService pool = Executors.newFixedThreadPool(THREADS);
     final CompletionService<Z> ecs = new ExecutorCompletionService<>(pool);

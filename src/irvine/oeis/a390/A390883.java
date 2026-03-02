@@ -5,10 +5,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390833 Array read by antidiagonals: A(k, n) is the number of undirected Hamiltonian paths on the k X n knight graph.
+ * A390883 Triangle read by rows: T(n,k) is k-th entry of the toric g-vector of the n-dimensional associahedron, 0 &lt;= k &lt;= floor(n/2).
  * @author Sean A. Irvine
  */
-public class A390833 extends Sequence0 {
+public class A390883 extends Sequence0 {
 
   private long mN = 0;
   private long mM = -1;

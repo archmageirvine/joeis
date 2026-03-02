@@ -18,15 +18,13 @@ public class A080464 extends AbstractSequence {
 
   @Override
   public Z next() {
-    long m = ++mN;
-    final long[] sum = new long[2];
-    int k = 0;
-    while (m != 0) {
-      sum[k] += m % 10;
-      k = 1 - k;
-      m /= 10;
+    final String s = String.valueOf(++mN);
+    final long[] h = new long[2];
+    for (int k = 0; k < s.length(); ++k) {
+      h[k & 1] *= 10;
+      h[k & 1] += s.charAt(k) - '0';
     }
-    return Z.valueOf(sum[0]).multiply(sum[1]);
+    return Z.valueOf(h[0]).multiply(h[1]);
   }
 }
 

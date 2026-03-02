@@ -60,7 +60,7 @@ public class PolynomialRootExpansionSequence extends DecimalExpansionSequence {
    * @param lo lower bound
    * @param hi upper bound
    */
-  protected PolynomialRootExpansionSequence(final int offset, final Polynomial<Z> poly, final CR lo, final CR hi) {
+  public PolynomialRootExpansionSequence(final int offset, final Polynomial<Z> poly, final CR lo, final CR hi) {
     this(offset, poly, lo, hi, false);
   }
 

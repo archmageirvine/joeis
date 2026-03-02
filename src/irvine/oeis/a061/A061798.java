@@ -12,16 +12,23 @@ import irvine.oeis.Sequence1;
 public class A061798 extends Sequence1 {
 
   private final HashSet<Z> mSums = new HashSet<>();
+  private final HashSet<Z> mSeenTwice = new HashSet<>();
   private long mN = 0;
 
   @Override
   public Z next() {
     final Z s = Z.valueOf(++mN).pow(3);
-    mSums.add(s.multiply2());
-    for (long q = 1; q < mN; ++q) {
-      mSums.add(s.add(Z.valueOf(q).pow(3)));
+    final Z s2 = s.multiply2();
+    if (!mSums.add(s2)) {
+      mSeenTwice.add(s2);
     }
-    return Z.valueOf(mN * (mN + 1) / 2 - mSums.size());
+    for (long q = 1; q < mN; ++q) {
+      final Z v = s.add(Z.valueOf(q).pow(3));
+      if (!mSums.add(v)) {
+        mSeenTwice.add(v);
+      }
+    }
+    return Z.valueOf(mSeenTwice.size());
   }
 }
 

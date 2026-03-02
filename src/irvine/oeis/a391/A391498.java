@@ -348,10 +348,6 @@ public class A391498 extends AbstractSequence {
     if (remainingTrapezoids == 0) {
       if (remainingArea == 0) {
         mPrepackCount.incrementAndGet();
-        if (mVerbose) {
-          // todo temp
-          StringUtils.message("Potential set: " + describe(mTrapezoids, set));
-        }
         if (accept(set) && packer.canPack(set)) {
           if (mVerbose) {
             StringUtils.message(describe(mTrapezoids, set));
@@ -377,6 +373,10 @@ public class A391498 extends AbstractSequence {
         search(packer, set, remainingArea - v, remainingTrapezoids - 1, j);
       }
     }
+  }
+
+  protected Z select(final long prepack, final long count) {
+    return Z.valueOf(count);
   }
 
   protected Z t(final int n, final int m) {
@@ -412,7 +412,7 @@ public class A391498 extends AbstractSequence {
     if (mVerbose) {
       StringUtils.message("n=" + n + " m=" + m + " pre-packing count=" + mPrepackCount);
     }
-    return Z.valueOf(mCount.get());
+    return select(mPrepackCount.get(), mCount.get());
   }
 
   @Override

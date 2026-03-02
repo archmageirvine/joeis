@@ -14,13 +14,17 @@ public class A033306 extends Sequence0 {
   private int mN = -1;
   private int mM = 0;
 
+  protected Z t(final int n, final int m) {
+    return Binomial.binomial(n, m).multiply(Functions.BELL.z(m)).multiply(Functions.BELL.z(n - m));
+  }
+
   @Override
   public Z next() {
     if (++mM > mN) {
       ++mN;
       mM = 0;
     }
-    return Binomial.binomial(mN, mM).multiply(Functions.BELL.z(mM)).multiply(Functions.BELL.z(mN - mM));
+    return t(mN, mM);
   }
 }
 

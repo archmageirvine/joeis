@@ -17,7 +17,7 @@ public class A281980 extends TwoParameterFormSequence {
 
   @Override
   protected boolean accept(final long x, final long y, final Z n, final Z prev) {
-    return Predicates.SQUARE.is(Z.valueOf(x).square().add(24 * y));
+    return !n.equals(prev) && Predicates.SQUARE.is(Z.valueOf(x).square().add(24 * y));
   }
 }
 

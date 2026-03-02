@@ -4,13 +4,14 @@ package irvine.oeis.a392;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A392844 Stellated octahemioctahedral numbers.
+ * A392807 Number of plane partitions of n with 3 parts.
+ * 3 parts
  * @author Georg Fischer
  */
-public class A392844 extends HolonomicRecurrence {
+public class A392807 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
-  public A392844() {
-    super(1, "[0,-1,4,-6,4,-1]", "1,45,185,469", 0, 0);
+  public A392807() {
+    super(3, "[0,1,-1,-1,0,1,1,-1]", "3,3,7", 0, 0);
   }
 }

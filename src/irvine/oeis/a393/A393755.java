@@ -4,7 +4,7 @@ package irvine.oeis.a393;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A393755 E.g.f.: exp( x * Sum_{n&gt;=0} n! * 5^n * x^n ).
+ * A393755 allocated for Paul D. Hanna.
  * @author Georg Fischer
  */
 public class A393755 extends PolynomialFieldSequence {

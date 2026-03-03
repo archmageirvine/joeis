@@ -4,7 +4,7 @@ package irvine.oeis.a391;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A391659 Number of plane partitions of n with 5 parts.
+ * A391659 allocated for John Tyler Rascoe.
  * 5 parts
  * @author Georg Fischer
  */

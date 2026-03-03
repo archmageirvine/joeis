@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A368701 a(n) = 1 if n satisfies the arithmetic differential equation 2n&quot; - n&apos; - 4 = 0, otherwise 0. Cf. A003415.
+ * A368701 a(n) = 1 if n satisfies the arithmetic differential equation 2n" - n' - 4 = 0, otherwise 0. Cf. A003415.
  * @author Georg Fischer
  */
 public class A368701 extends LambdaSequence {

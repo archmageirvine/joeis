@@ -4,7 +4,7 @@ package irvine.oeis.a393;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A393414 Fibonacci sequence beginning 29, 21.
+ * A393414 allocated for Birhanu Gebrehanna Habtemariam.
  * @author Georg Fischer
  */
 public class A393414 extends HolonomicRecurrence {

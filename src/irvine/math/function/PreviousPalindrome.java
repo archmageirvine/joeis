@@ -37,6 +37,11 @@ class PreviousPalindrome extends AbstractFunction1 {
 
     --p[i];
     NextPalindrome.mirror(p);
+    if (p[0] == '0') {
+      final char[] r = new char[len - 1];
+      Arrays.fill(r, '9');
+      return new Z(new String(r));
+    }
     return new Z(new String(p));
   }
 }

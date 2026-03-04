@@ -51,6 +51,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(OmegaTest.class);
     suite.addTestSuite(PartitionsTest.class);
     suite.addTestSuite(PhiTest.class);
+    suite.addTestSuite(PreviousPalindromeTest.class);
     suite.addTestSuite(PrimorialTest.class);
     suite.addTestSuite(ReverseTest.class);
     suite.addTestSuite(RotateRightTest.class);

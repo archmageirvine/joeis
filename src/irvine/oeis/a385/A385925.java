@@ -30,7 +30,7 @@ public class A385925 extends Sequence3 {
         for (long q = 2; q < mN; q = mPrime.nextPrime(q)) {
           final Q r = new Q(p, q);
           final Q u = v.subtract(r).abs();
-          if (!u.isZero() && u.compareTo(min) < 0) {
+          if (!u.isZero() && u.compareTo(min) <= 0) {
             min = u;
             best = r;
             bestv = v;

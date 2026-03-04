@@ -1,4 +1,4 @@
-package irvine.oeis.a390;
+package irvine.oeis.a393;
 
 import java.util.ArrayList;
 
@@ -7,16 +7,16 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
-import irvine.oeis.a084.A084580;
+import irvine.oeis.a241.A241773;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A390737 Number of decimal places which are known after using n terms of A084580 and treating them as the coefficients of a continued fraction.
+ * A393695 allocated for Jwalin Bhatt.
  * @author Sean A. Irvine
  */
-public class A390737 extends Sequence0 {
+public class A393695 extends Sequence0 {
 
-  private final Sequence mS = new A084580().prepend(0);
+  private final Sequence mS = new A241773().prepend(0);
   private final ArrayList<Z> mCf = new ArrayList<>();
 
   @Override

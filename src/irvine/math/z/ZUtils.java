@@ -569,4 +569,18 @@ public final class ZUtils {
   public static Z concatenate(final int r1, final int r2, final Function<Integer, Z> function) {
     return concatenate(r1, r2, function, 10);
   }
+
+  /**
+   * Test if the given array is palindromic.
+   * @param a array
+   * @return true if the array is a palindrome
+   */
+  public static boolean isPalindrome(final Z[] a) {
+    for (int k = 0, j = a.length - 1; k < j; ++k, --j) {
+      if (!a[j].equals(a[k])) {
+        return false;
+      }
+    }
+    return true;
+  }
 }

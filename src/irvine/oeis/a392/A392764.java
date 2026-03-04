@@ -1,0 +1,60 @@
+package irvine.oeis.a392;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.Arrays;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
+
+/**
+ * A393294 Iteration numbers k such that MD5^{k}(128 bits of 0) is a record high value.
+ * @author Sean A. Irvine
+ */
+public class A392764 extends Sequence1 {
+
+  private static final MessageDigest SHA1;
+  static {
+    try {
+      SHA1 = MessageDigest.getInstance("SHA1");
+    } catch (final NoSuchAlgorithmException e) {
+      throw new RuntimeException(e);
+    }
+  }
+
+  private static byte[] sha1(final byte[] s) {
+    SHA1.reset();
+    return SHA1.digest(s);
+  }
+
+  private byte[] mLargest = null;
+  private byte[] mHash = null;
+  private long mIterations = 0;
+
+  @Override
+  public Z next() {
+    if (mHash == null) {
+      mHash = new byte[20];
+      mLargest = mHash;
+      return Z.ZERO;
+    }
+    while (true) {
+      ++mIterations;
+      mHash = sha1(mHash);
+      //System.out.println("hash 0x" + ByteUtils.toHex(mHash));
+      final int c = Arrays.compareUnsigned(mHash, mLargest);
+      if (c == 0) {
+        // Actually this check is not strong enough to guarantee cycle
+        // detection, since we might enter a smaller cycle that does
+        // not contain the current largest value.  But short of doing
+        // a double step arrangement or remembering intermediate values
+        // this is the simplest test to try.
+        return null;
+      }
+      if (c > 0) {
+        mLargest = mHash;
+        return Z.valueOf(mIterations);
+      }
+    }
+  }
+}

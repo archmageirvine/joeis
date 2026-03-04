@@ -12,7 +12,7 @@ public class A141266 extends A118385 {
 
   /** Construct the sequence. */
   public A141266() {
-    super(0, new A006882(), 10);
+    super(1, new A006882(), 10);
     mSeq.next();
   }
 }

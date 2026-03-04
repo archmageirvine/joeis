@@ -4,14 +4,14 @@ import irvine.math.q.Q;
 import irvine.math.series.Series;
 import irvine.math.series.SeriesRing;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence3;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a003.A003296;
 
 /**
  * A005759 Coefficients of modular function g_6(tau).
  * @author Sean A. Irvine
  */
-public class A005759 extends Sequence3 {
+public class A005759 extends AbstractSequence {
 
   private static final SeriesRing<Q> SQ = SeriesRing.SQ;
 
@@ -20,6 +20,7 @@ public class A005759 extends Sequence3 {
 
   /** Construct the sequence. */
   public A005759() {
+    super(4);
     final Series<Q> bg5 = Series.create(new A005757());
     final Series<Q> g2 = Series.create(new A003296());
     mG6 = SQ.multiply(bg5, g2);

@@ -11,6 +11,6 @@ public class A084007 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A084007() {
-    super(1, new A084006(), Z::sqrt);
+    super(0, new A084006(), Z::sqrt);
   }
 }

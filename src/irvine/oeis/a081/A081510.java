@@ -1,13 +1,13 @@
 package irvine.oeis.a081;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A081510 Numbers k such that 1 + 2^k + 4^k + 6^k is prime.
  * @author Sean A. Irvine
  */
-public class A081510 extends Sequence0 {
+public class A081510 extends Sequence1 {
 
   private int mN = 0;
 

@@ -1,21 +1,29 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A025709 Index of 5^n within the sequence of the numbers of the form 5^i*8^j.
  * @author Sean A. Irvine
  */
-public class A025709 extends A025623 {
+public class A025709 extends AbstractSequence {
 
   private long mN = 0;
   private Z mA = Z.ONE;
+
+  private final A025623 mSeq = new A025623();
+
+  /** Construct the sequence. */
+  public A025709() {
+    super(0);
+  }
 
   @Override
   public Z next() {
     do {
       ++mN;
-    } while (!mA.equals(super.next()));
+    } while (!mA.equals(mSeq.next()));
     mA = mA.multiply(5);
     return Z.valueOf(mN);
   }

@@ -11,6 +11,10 @@ public class A009679 extends A005326 {
 
   private int mN = -2;
 
+  {
+    setOffset(0);
+  }
+
   @Override
   public Z next() {
     mN += 2;

@@ -11,6 +11,10 @@ import irvine.oeis.a019.A019654;
  */
 public class A051567 extends A019654 {
 
+  {
+    setOffset(3);
+  }
+
   @Override
   protected void search(final int[] attacks, final int queen, final int x, final int y, final int remaining) {
     if (y >= mSize) {

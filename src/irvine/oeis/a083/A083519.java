@@ -11,15 +11,15 @@ public class A083519 extends CachedSequence {
 
   /** Construct the sequence. */
   public A083519() {
-    super(1, Integer.class, (self, n) -> {
-      if (n == 1) {
+    super(0, Integer.class, (self, n) -> {
+      if (n == 0) {
         return Z.ONE;
       }
       Z t = self.a(n - 1);
       while (true) {
         t = t.add(2);
         boolean ok = true;
-        for (int k = 1; k < n; ++k) {
+        for (int k = 0; k < n; ++k) {
           if (!t.multiply(self.a(k)).add(2).isProbablePrime()) {
             ok = false;
             break;

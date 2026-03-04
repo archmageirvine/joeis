@@ -2,13 +2,13 @@ package irvine.oeis.a081;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A081876 a(n) is the starting position of the second occurrence of a string of the initial n decimal digits of Pi in the decimal expansion of Pi.
  * @author Sean A. Irvine
  */
-public class A081876 extends Sequence0 {
+public class A081876 extends Sequence1 {
 
   private static final CR PI0 = CR.PI.divide(CR.TEN); // So we can ignore the period
   private int mDigits = 1000;

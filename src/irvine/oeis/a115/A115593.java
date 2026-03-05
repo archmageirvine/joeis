@@ -35,7 +35,7 @@ public class A115593 extends Sequence0 {
       }
       Q sum = Q.ZERO;
       for (int j = 1; j <= n; ++j) {
-        sum = sum.add(Rationals.SINGLETON.sumdiv(j, d -> getB(d).multiply(d)).multiply(get(n - j)));
+        sum = sum.add(Rationals.SINGLETON.sumdiv(j, d -> getB(d.intValue()).multiply(d)).multiply(get(n - j)));
       }
       return sum.divide(n);
     }

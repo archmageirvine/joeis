@@ -14,7 +14,7 @@ public class A113650 extends LambdaSequence {
   /** Construct the sequence. */
   public A113650() {
     super(1, n -> {
-      final int p = Functions.PRIME.i(n);
+      final long p = Functions.PRIME.i(n);
       return Functions.FIBONACCI.z(p - Functions.JACOBI.i(p, 5)).mod(Z.valueOf(p).square());
     });
   }

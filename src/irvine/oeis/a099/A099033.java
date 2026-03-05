@@ -13,6 +13,6 @@ public class A099033 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A099033() {
-    super(1, n -> Integers.SINGLETON.sum(1, n, k -> Z.NEG_ONE.pow(Integer.bitCount(3 * k))));
+    super(1, n -> Integers.SINGLETON.sum(1, n, k -> Z.NEG_ONE.pow(Long.bitCount(3 * k))));
   }
 }

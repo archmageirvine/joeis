@@ -24,7 +24,7 @@ public class A020639 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.LPF.z(n);
   }
 

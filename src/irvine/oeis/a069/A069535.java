@@ -14,7 +14,7 @@ public class A069535 extends FilterNumberSequence {
   public A069535() {
     super(1, 1, n -> {
       final String fas = Functions.FACTORIAL.z(n).toString();
-      return fas.indexOf(Integer.toString(n)) >= 0 && fas.indexOf(String.valueOf(Functions.REVERSE.l(n))) >= 0;
+      return fas.indexOf(Long.toString(n)) >= 0 && fas.indexOf(String.valueOf(Functions.REVERSE.l(n))) >= 0;
     });
   }
 }

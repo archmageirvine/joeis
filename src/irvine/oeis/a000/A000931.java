@@ -44,7 +44,7 @@ public class A000931 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return n == 0 ? Z.ONE : (n < 3 ? Z.ZERO : Integers.SINGLETON.sum(0, (n - 3) / 2, k -> Binomial.binomial(k, n - 3 - 2L * k)));
   }
 }

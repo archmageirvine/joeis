@@ -15,7 +15,7 @@ public class A370182 extends LambdaSequence {
   public A370182() {
     super(1, n -> {
       final Z p = Z.SEVEN;
-      final int e = Functions.VALUATION.i(n, p);
+      final long e = Functions.VALUATION.i(n, p);
       final Z pe = p.pow(e);
       return pe.multiply(p.subtract(1).gcd(Z.valueOf(n).divide(pe)));
     });

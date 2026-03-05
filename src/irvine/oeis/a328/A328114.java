@@ -27,7 +27,7 @@ public class A328114 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Z.valueOf(Jaguar.factor(Functions.PRIMORIAL_BASE_EXP.z(n)).maxExponent());
   }
 

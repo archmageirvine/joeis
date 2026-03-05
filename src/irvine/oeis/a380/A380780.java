@@ -16,11 +16,11 @@ public class A380780 extends LambdaSequence {
   /** Construct the sequence. */
   public A380780() {
     super(0, n -> {
-      final int q = 1;
-      final int r = 1;
-      final int s = 1;
-      final int t = 1;
-      final int u = 2;
+      final long q = 1;
+      final long r = 1;
+      final long s = 1;
+      final long t = 1;
+      final long u = 2;
       return Rationals.SINGLETON.sum(0, n, k -> new Q((long) r * n + (long) (s - r) * k + q).pow(k - 1).multiply(Binomial.binomial((long) r * u * n + ((s - r) * u + t) * k + q * u, n - k)).divide(Functions.FACTORIAL.z(k))).multiply(Functions.FACTORIAL.z(n).multiply(q)).num();
     });
   }

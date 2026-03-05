@@ -74,11 +74,11 @@ public class PeriodicSequence extends AbstractSequence implements DirectSequence
   }
 
   @Override
-  public Z a(int n) {
+  public Z a(long n) {
     while (n < 0) {
       n += mSeq.length;
     }
-    return mSeq[(n - getOffset()) % mSeq.length];
+    return mSeq[(int) ((n - getOffset()) % mSeq.length)];
   }
   
   @Override

@@ -12,6 +12,6 @@ public class A275019 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A275019() {
-    super(1, n -> Z.valueOf(Integer.numberOfTrailingZeros(n) + Integer.numberOfTrailingZeros(n + 1) + Integer.numberOfTrailingZeros(n + 2) - 1));
+    super(1, n -> Z.valueOf(Long.numberOfTrailingZeros(n) + Long.numberOfTrailingZeros(n + 1) + Long.numberOfTrailingZeros(n + 2) - 1));
   }
 }

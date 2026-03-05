@@ -20,7 +20,7 @@ public class A058371 extends Sequence0 {
   @Override
   public Z next() {
     if (++mN > 0) {
-      final Polynomial<Q> c = RING.sum(1, mN, k -> RING.divide(RING.add(RING.monomial(Q.ONE, k), RING.multiply(mS.substitutePower(k, mN), Q.TWO)), new Q(k)));
+      final Polynomial<Q> c = RING.sum(1, mN, k -> RING.divide(RING.add(RING.monomial(Q.ONE, k.intValue()), RING.multiply(mS.substitutePower(k.intValue(), mN), Q.TWO)), new Q(k)));
       mS = RING.subtract(RING.subtract(RING.exp(c, mN), RING.onePlusXToTheN(1)), RING.multiply(mS, Q.TWO));
     }
     return mS.coeff(mN).toZ();

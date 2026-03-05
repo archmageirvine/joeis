@@ -111,7 +111,7 @@ public class QuotientRing<T> extends DefaultQuotientGroup<T> implements Ring<Set
   }
 
   @Override
-  public Set<T> sum(final int lo, final int hi, final Function<Integer, Set<T>> function) {
+  public Set<T> sum(final long lo, final long hi, final Function<Long, Set<T>> function) {
     throw new UnsupportedOperationException();
   }
 }

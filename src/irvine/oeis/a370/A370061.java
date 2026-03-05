@@ -13,7 +13,7 @@ public class A370061 extends LambdaSequence {
   /** Construct the sequence. */
   public A370061() {
     super(1, n -> {
-      final int n2 = n / 2;
+      final long n2 = n / 2;
       return ((n & 1) == 0) ? Binomial.binomial(5L * n2 + 1, n2 - 1).multiply(6).divide(5L * n2 + 1) : Binomial.binomial(5L * n2 + 4, n2).multiply(4).divide(5L * n2 + 4);
     });
   }

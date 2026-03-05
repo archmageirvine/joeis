@@ -13,6 +13,6 @@ public class A268823 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A268823() {
-    super(0, n -> (n <= 2) ? Z.valueOf(new int[] {0, 1, 3}[n]) : Functions.GRAY_ENCODE.z(Z.THREE.add(Functions.GRAY_DECODE.z(n - 3))));
+    super(0, n -> (n <= 2) ? Z.valueOf(new int[] {0, 1, 3}[n.intValue()]) : Functions.GRAY_ENCODE.z(Z.THREE.add(Functions.GRAY_DECODE.z(n - 3))));
   }
 }

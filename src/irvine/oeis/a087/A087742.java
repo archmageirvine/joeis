@@ -7,7 +7,7 @@ import irvine.oeis.a005.A005185;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A087742 a(n) = 1+Abs[Prime[A005185[n]]-A005185[Prime[n]]].
+ * A087742 a(n) = 1+Abs[Prime[A005185[n.intValue()]]-A005185[Prime[n.intValue()]]].
  * @author Georg Fischer
  */
 public class A087742 extends LambdaSequence {

@@ -25,7 +25,7 @@ public class A152175 extends FunctionInt3ZSequence {
     if (n == 0 || k == 0) {
       return n == k ? Z.ONE : Z.ZERO;
     }
-    return get(d, n - 1, k).multiply(k).add(Integers.SINGLETON.sumdiv(d, j -> get(d, n - 1, k - j)));
+    return get(d, n - 1, k).multiply(k).add(Integers.SINGLETON.sumdiv(d, j -> get(d, n - 1, k - j.intValue())));
   }
 
   protected Z t(final int n, final int k) {

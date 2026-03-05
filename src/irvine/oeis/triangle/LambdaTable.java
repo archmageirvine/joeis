@@ -43,12 +43,12 @@ public abstract class LambdaTable extends AbstractSequence implements DirectArra
    * @param k shifted column index
    * @return T[n, k]
    */
-  public Z a(final int n, final int k) {
-    final Integer[] range = mColRange.apply(n);
+  public Z a(final long n, final long k) {
+    final Integer[] range = mColRange.apply((int) n);
     if (k < range[0] || k > range[1]) {
       return Z.ZERO;
     }
-    return mLambda.apply(n, k);
+    return mLambda.apply((int) n, (int) k);
   }
 
   /**

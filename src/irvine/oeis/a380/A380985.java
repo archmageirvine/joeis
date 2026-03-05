@@ -12,6 +12,6 @@ public class A380985 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A380985() {
-    super(1, n -> n <= 3 ? Z.valueOf(new int[] {0, 1, 20, 110}[n]) : Z.TEN.pow(n - 1).multiply(2).add(100));
+    super(1, n -> n <= 3 ? Z.valueOf(new int[] {0, 1, 20, 110}[n.intValue()]) : Z.TEN.pow(n - 1).multiply(2).add(100));
   }
 }

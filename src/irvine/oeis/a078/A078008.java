@@ -22,7 +22,7 @@ public class A078008 extends LinearRecurrence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Z.TWO.pow(n).add(Z.NEG_ONE.pow(n).multiply2()).divide(3);
   }
 }

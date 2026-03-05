@@ -29,7 +29,7 @@ public class A079499 extends Sequence0 {
         mProd = SZ.multiply(mProd, SZ.oneMinusXToTheN(2 * ++mK));
         mSums.add(SZ.divide(SZ.monomial(Z.valueOf(mK), mK * mK), mProd));
       }
-      return Integers.SINGLETON.sum(0, mSums.size() - 1, k -> mSums.get(k).coeff(n));
+      return Integers.SINGLETON.sum(0, mSums.size() - 1, k -> mSums.get(k.intValue()).coeff(n));
     }
   };
 

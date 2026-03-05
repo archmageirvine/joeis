@@ -16,7 +16,7 @@ public class A070228 extends Sequence0 {
   @Override
   public Z next() {
     final Z t = Z.ONE.shiftLeft(++mN);
-    return Z.ONE.subtract(Integers.SINGLETON.sum(2, mN, k -> Functions.MOBIUS.z(k).multiply(t.root(k).subtract(1))));
+    return Z.ONE.subtract(Integers.SINGLETON.sum(2, mN, k -> Functions.MOBIUS.z(k).multiply(t.root(k.intValue()).subtract(1))));
   }
 }
 

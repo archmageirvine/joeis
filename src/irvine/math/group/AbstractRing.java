@@ -303,18 +303,18 @@ public abstract class AbstractRing<E> extends AbstractGroup<E> implements Ring<E
    * @param function the function
    * @return product
    */
-  public E product(final int lo, final int hi, final Function<Integer, E> function) {
+  public E product(final long lo, final long hi, final Function<Long, E> function) {
     E product = one();
-    for (int k = lo; k <= hi; ++k) {
+    for (long k = lo; k <= hi; ++k) {
       product = multiply(product, function.apply(k));
     }
     return product;
   }
 
   @Override
-  public E sum(final int lo, final int hi, final Function<Integer, E> function) {
+  public E sum(final long lo, final long hi, final Function<Long, E> function) {
     E sum = zero();
-    for (int k = lo; k <= hi; ++k) {
+    for (long k = lo; k <= hi; ++k) {
       sum = add(sum, function.apply(k));
     }
     return sum;
@@ -326,10 +326,10 @@ public abstract class AbstractRing<E> extends AbstractGroup<E> implements Ring<E
    * @param function the function
    * @return sum
    */
-  public E sumdiv(final long n, final Function<Integer, E> function) {
+  public E sumdiv(final long n, final Function<Long, E> function) {
     E sum = zero();
     for (final Z d : Jaguar.factor(n).divisors()) {
-      sum = add(sum, function.apply(d.intValueExact()));
+      sum = add(sum, function.apply(d.longValueExact()));
     }
     return sum;
   }
@@ -340,10 +340,10 @@ public abstract class AbstractRing<E> extends AbstractGroup<E> implements Ring<E
    * @param function the function
    * @return sum
    */
-  public E sumdiv(final Z n, final Function<Integer, E> function) {
+  public E sumdiv(final Z n, final Function<Long, E> function) {
     E sum = zero();
     for (final Z d : Jaguar.factor(n).divisors()) {
-      sum = add(sum, function.apply(d.intValueExact()));
+      sum = add(sum, function.apply(d.longValueExact()));
     }
     return sum;
   }

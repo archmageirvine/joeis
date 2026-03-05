@@ -22,7 +22,7 @@ public class A011782 extends PrependSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return (n == 0) ? Z.ONE : Z.TWO.pow(n - 1);
   }
 

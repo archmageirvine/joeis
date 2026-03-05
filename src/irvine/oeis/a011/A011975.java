@@ -39,9 +39,9 @@ public class A011975 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     Z b = Z.ONE;
-    for (int k = n - 1; k <= n; ++k) {
+    for (long k = n - 1; k <= n; ++k) {
       b = b.multiply(k).add(k - n + mP3).divide(k - n + mP2);
     }
     return b;

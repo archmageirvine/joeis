@@ -16,7 +16,7 @@ public class A085773 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A085773() {
     super(1, 1, k -> {
-      if (Integer.toString(k).indexOf('0') >= 0) {
+      if (Long.toString(k).indexOf('0') >= 0) {
         return false;
       } else {
         final Q quot = new Q(Z.valueOf(k), Functions.DIGIT_PRODUCT.z(k));

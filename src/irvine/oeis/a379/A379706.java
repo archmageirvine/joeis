@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A379706 Number of nonempty labeled antichains of subsets of [n] such that the largest subset is of size 2.
+ * A379706 Number of nonempty labeled antichains of subsets of [n.intValue()] such that the largest subset is of size 2.
  * @author Georg Fischer
  */
 public class A379706 extends LambdaSequence {

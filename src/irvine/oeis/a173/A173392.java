@@ -14,7 +14,7 @@ public class A173392 extends LambdaSequence {
   /** Construct the sequence. */
   public A173392() {
     super(1, n -> Integers.SINGLETON.product(1, n, k -> {
-      final int r = n % k;
+      final long r = n % k;
       return Z.valueOf(r == 0 ? 1 : r);
     }));
   }

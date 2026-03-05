@@ -111,7 +111,7 @@ public class DirectSum<T, U> extends DirectProduct<T, U> implements Ring<Pair<T,
   }
 
   @Override
-  public Pair<T, U> sum(final int lo, final int hi, final Function<Integer, Pair<T, U>> function) {
+  public Pair<T, U> sum(final long lo, final long hi, final Function<Long, Pair<T, U>> function) {
     throw new UnsupportedOperationException();
   }
 }

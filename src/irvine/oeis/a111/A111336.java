@@ -12,6 +12,6 @@ public class A111336 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A111336() {
-    super(1, n -> Z.valueOf((n <= 3) ? 1 : ((n == 4 || (n & 1) == 1 && n >= 5) ? 2 : ((n == 12 || n == 20 || n == 24 || n == 120 || n == 600 || n >= 8 && Integer.bitCount(n) == 1) ? 4 : 3))));
+    super(1, n -> Z.valueOf((n <= 3) ? 1 : ((n == 4 || (n & 1) == 1 && n >= 5) ? 2 : ((n == 12 || n == 20 || n == 24 || n == 120 || n == 600 || n >= 8 && Long.bitCount(n) == 1) ? 4 : 3))));
   }
 }

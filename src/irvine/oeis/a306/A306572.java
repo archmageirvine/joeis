@@ -12,6 +12,6 @@ public class A306572 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A306572() {
-    super(1, 1, k -> Integer.toString(k).endsWith(Functions.PRIME_PI.z(k).toString()));
+    super(1, 1, k -> Long.toString(k).endsWith(Functions.PRIME_PI.z(k).toString()));
   }
 }

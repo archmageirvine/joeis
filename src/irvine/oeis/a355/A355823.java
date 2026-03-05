@@ -25,7 +25,7 @@ public class A355823 extends CharacteristicFunction implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return mSeq.is(n) ? Z.ONE : Z.ZERO;
   }
 

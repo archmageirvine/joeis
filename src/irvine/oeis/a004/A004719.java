@@ -24,8 +24,8 @@ public class A004719 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    return new Z(Integer.toString(n).replace("0", ""));
+  public Z a(final long n) {
+    return new Z(Long.toString(n).replace("0", ""));
   }
 
 }

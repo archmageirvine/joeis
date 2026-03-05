@@ -36,8 +36,8 @@ public class A001285 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    return Z.valueOf(1 + (Integer.bitCount(n) & 1));
+  public Z a(final long n) {
+    return Z.valueOf(1 + (Long.bitCount(n) & 1));
   }
 
 }

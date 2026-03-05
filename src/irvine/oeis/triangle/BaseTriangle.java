@@ -107,6 +107,17 @@ public abstract class BaseTriangle extends Triangle {
   public abstract Z triangleElement(final int n, final int k);
 
   /**
+   * Compute an element of the BaseTriangle with shifted indexes.
+   * In contrast to {@link #get} and {@link #compute}, the indexes are shifted by {@link #mRowShift}, {@link #mColShift}.
+   * @param n shifted row index
+   * @param k shifted column index
+   * @return T(n, k)
+   */
+  public Z triangleElement(final long n, final long k) {
+    return triangleElement((int) n, (int) k);
+  }
+
+  /**
    * Return next term, reading the triangle row by row from left to right, starting with T(0,0).
    * @return the next term of the sequence.
    */

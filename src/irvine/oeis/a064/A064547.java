@@ -19,7 +19,7 @@ public class A064547 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Z.valueOf(Functions.INFINITARY_SIGMA0.z(n).bitLength() - 1);
   }
 

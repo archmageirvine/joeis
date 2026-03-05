@@ -11,7 +11,7 @@ import irvine.oeis.LambdaSequence;
  */
 public class A308974 extends LambdaSequence {
 
-  private static int eval1(final int i) {
+  private static int eval1(final long i) {
     return Z.valueOf(i).isProbablePrime() ? 1 : 0; // A01005 corr.1
   }
 

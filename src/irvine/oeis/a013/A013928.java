@@ -25,7 +25,7 @@ public class A013928 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Integers.SINGLETON.sum(1, n - 1, k -> Predicates.SQUARE_FREE.is(k) ? Z.ONE : Z.ZERO);
   }
 

@@ -32,7 +32,7 @@ public class A008518 extends A008292 implements DirectArray {
   }
 
   @Override
-  public Z a(final int n, final int k) {
+  public Z a(final long n, final long k) {
     Z result = mA123125.a(n, k);
     if (k < n) {
       result = result.add(mA123125.a(n, k + 1));

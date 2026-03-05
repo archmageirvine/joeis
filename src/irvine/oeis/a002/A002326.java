@@ -39,7 +39,7 @@ public class A002326 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     final Z n21 = Z.valueOf(2L * n + 1);
     return new IntegersMod(n21).ord(Z.TWO.mod(n21));
   }

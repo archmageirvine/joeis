@@ -11,12 +11,12 @@ import irvine.oeis.LambdaSequence;
  */
 public class A348588 extends LambdaSequence {
 
-  private static int eval1(final int i) {
+  private static int eval1(final long i) {
     return Z.valueOf(i).isProbablePrime() ? 1 : 0; // A010051
   }
 
   /** Construct the sequence. */
   public A348588() {
-    super(0, n -> Integers.SINGLETON.sum(1, n / 3, j -> Integers.SINGLETON.sum(j, (n - j) / 2, i -> Z.valueOf(Integer.signum(eval1(i) + eval1(j) + eval1(n - i - j))))));
+    super(0, n -> Integers.SINGLETON.sum(1, n / 3, j -> Integers.SINGLETON.sum(j, (n - j) / 2, i -> Z.valueOf(Long.signum(eval1(i) + eval1(j) + eval1(n - i - j))))));
   }
 }

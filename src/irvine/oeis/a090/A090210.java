@@ -24,14 +24,14 @@ public class A090210 extends AbstractSequence {
     this(1);
   }
 
-  private Z s2(final int m, final int k, final int p) {
+  private Z s2(final long m, final long k, final long p) {
     final Z sum = Integers.SINGLETON.sum(m, p, r -> Z.NEG_ONE.pow(r).multiply(Binomial.binomial(p, r)).multiply(Functions.FALLING_FACTORIAL.z(r, m).pow(k)))
       .multiply(Z.NEG_ONE.pow(p));
     final Z den = Functions.FACTORIAL.z(p);
     return sum.divide(den);
   }
 
-  protected Z bell(final int m, final int k) {
+  protected Z bell(final long m, final long k) {
     return k == 0 ? Z.ONE : Integers.SINGLETON.sum(m, m * k, p -> s2(m, k, p));
   }
 

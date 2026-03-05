@@ -12,6 +12,6 @@ public class A160173 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A160173() {
-    super(0, n -> (n <= 1) ? Z.valueOf(n) : ((n == 2) ? Z.THREE : Z.THREE.pow(Integer.bitCount(n - 1)).add(Z.THREE.pow(Integer.bitCount(n - 2))).multiply2().divide(3).add(1)));
+    super(0, n -> (n <= 1) ? Z.valueOf(n) : ((n == 2) ? Z.THREE : Z.THREE.pow(Long.bitCount(n - 1)).add(Z.THREE.pow(Long.bitCount(n - 2))).multiply2().divide(3).add(1)));
   }
 }

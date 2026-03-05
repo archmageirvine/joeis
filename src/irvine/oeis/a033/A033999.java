@@ -23,7 +23,7 @@ public class A033999 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return ((n & 1) == 1) ? Z.NEG_ONE : Z.ONE;
   }
 

@@ -47,7 +47,7 @@ public class A059376 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     Z sum = Z.ZERO;
     for (final Z d : Jaguar.factor(n).divisors()) {
       sum = sum.add(d.pow(mExp).multiply(Functions.MOBIUS.i(Z.valueOf(n).divide(d))));

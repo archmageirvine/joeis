@@ -18,9 +18,9 @@ public class A000792 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int m) {
-    final int n = m / 3;
-    switch (m % 3) {
+  public Z a(final long m) {
+    final long n = m / 3;
+    switch ((int) (m % 3)) {
       case 0:
         return Z.THREE.pow(n);
       case 1:

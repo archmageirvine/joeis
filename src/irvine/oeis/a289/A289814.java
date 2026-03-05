@@ -24,8 +24,8 @@ public class A289814 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    return new Z(Integer.toString(n, 3).replace('1', '0').replace('2', '1'), 2);
+  public Z a(final long n) {
+    return new Z(Long.toString(n, 3).replace('1', '0').replace('2', '1'), 2);
   }
 
   @Override

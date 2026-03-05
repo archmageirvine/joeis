@@ -24,7 +24,7 @@ public class A100735 extends LambdaSequence {
    * @param offset first index
    * @param base base in final factor
    */
-  public A100735(final int offset, final int base) {
+  public A100735(final int offset, final long base) {
     super(offset, n -> Integers.SINGLETON.sum(0, n, k -> (Functions.THUE_MORSE.z(n - k).testBit(0) ? Z.NEG_ONE : Z.ONE)
       .multiply(Binomial.binomial(n, k).and(Z.ONE)).multiply(Z.valueOf(base).pow(k))));
   }

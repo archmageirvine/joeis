@@ -10,8 +10,8 @@ import irvine.math.z.Z;
  */
 public class FilterNumberSequence extends AbstractSequence {
 
-  private final Predicate<Integer> mPredicate;
-  private int mN; // current index to be tested
+  private final Predicate<Long> mPredicate;
+  private long mN; // current index to be tested
 
   /**
    * Filter with just the sequence value.
@@ -19,7 +19,7 @@ public class FilterNumberSequence extends AbstractSequence {
    * @param start first index to be tested
    * @param predicate predicate used for filtering
    */
-  public FilterNumberSequence(final int offset, final int start, final Predicate<Integer> predicate) {
+  public FilterNumberSequence(final int offset, final long start, final Predicate<Long> predicate) {
     super(offset);
     mN = start - 1;
     mPredicate = predicate;
@@ -30,7 +30,7 @@ public class FilterNumberSequence extends AbstractSequence {
    * @param offset offset of filtered sequence
    * @param predicate predicate used for filtering
    */
-  public FilterNumberSequence(final int offset, final Predicate<Integer> predicate) {
+  public FilterNumberSequence(final int offset, final Predicate<Long> predicate) {
     this(offset, offset, predicate);
   }
 

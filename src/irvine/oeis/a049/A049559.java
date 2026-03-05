@@ -12,7 +12,7 @@ import irvine.oeis.a000.A000010;
 public class A049559 extends A000010 implements DirectSequence {
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Z.valueOf(Functions.PHI.l(n)).gcd(Z.valueOf(n - 1));
   }
 

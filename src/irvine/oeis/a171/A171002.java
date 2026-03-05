@@ -13,7 +13,7 @@ public class A171002 extends LambdaSequence {
   /** Construct the sequence. */
   public A171002() {
     super(1, n -> {
-      final int k = ((n & 3) == 0) ? n / 4 : n / 4 + 1;
+      final long k = ((n & 3) == 0) ? n / 4 : n / 4 + 1;
       return Binomial.binomial(n - k, k).multiply(Binomial.binomial(n - k - 1, k + 1));
     });
   }

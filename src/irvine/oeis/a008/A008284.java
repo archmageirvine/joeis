@@ -44,7 +44,7 @@ public class A008284 extends MemoryFunction2Sequence<Long, Z> implements DirectA
   }
 
   @Override
-  public Z a(final int n, final int k) {
+  public Z a(final long n, final long k) {
     return get(Long.valueOf(n), Long.valueOf(k));
   }
 }

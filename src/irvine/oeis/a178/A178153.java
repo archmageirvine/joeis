@@ -14,7 +14,7 @@ public class A178153 extends LambdaSequence {
   /** Construct the sequence. */
   public A178153() {
     super(2, n -> {
-      final int p = Functions.PRIME.i(n);
+      final long p = Functions.PRIME.i(n);
       return Integers.SINGLETON.sum(1, (p - 1) / 2, j -> Functions.JACOBI.z(j, p));
     });
   }

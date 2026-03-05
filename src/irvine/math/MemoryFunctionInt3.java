@@ -35,6 +35,17 @@ public abstract class MemoryFunctionInt3<R> extends HashMap<String, R> {
     put(key, r);
     return r;
   }
+
+  /**
+   * Return the value of the function at specified parameters.
+   * @param a first parameter
+   * @param b second parameter
+   * @param c third parameter
+   * @return value of function
+   */
+  public R get(final long a, final long b, final long c) {
+    return get((int) a, (int) b, (int) c);
+  }
 }
 
 

@@ -13,7 +13,7 @@ public class A287051 extends MultiTransformSequence {
   /** Construct the sequence. */
   public A287051() {
     super(0, (self, n2) -> {
-      final int n = n2 / 2;
+      final long n = n2 / 2;
       return (n2 & 1) == 0 ? Functions.GPF.z(self.a(n)) : self.a(n).add(self.a(n + 1));
     }, "0, 1");
   }

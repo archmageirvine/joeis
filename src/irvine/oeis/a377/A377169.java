@@ -12,7 +12,7 @@ public class A377169 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A377169() {
     super(1, 1, k -> {
-      final String sk = Integer.toString(k * 2, 2);
+      final String sk = Long.toString(k * 2, 2);
       return k == 1 || sk.startsWith("10") || sk.indexOf("010") >= 0;
     });
   }

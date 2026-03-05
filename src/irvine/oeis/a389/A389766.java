@@ -164,7 +164,7 @@ public class A389766 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     int p = 1 << 30; // Allow headroom of 1 bit in positive to (x + y) % p is safe
     Z[] divs = {};
     Z[] mods = {};
@@ -174,7 +174,7 @@ public class A389766 extends AbstractSequence implements DirectSequence {
       mods = Arrays.copyOf(mods, mods.length + 1);
       p = Functions.PREV_PRIME.i(p);
       mods[mods.length - 1] = Z.valueOf(p);
-      divs[divs.length - 1] = Z.valueOf(a(n, p));
+      divs[divs.length - 1] = Z.valueOf(a((int) n, p));
       final Z cnt = ZUtils.chineseRemainderTheorem(divs, mods);
       if (cnt.equals(prev)) {
         return cnt;

@@ -12,6 +12,6 @@ public class A255588 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A255588() {
-    super(0, n -> (n < 3) ? Z.valueOf(n) : new Z(Integer.toString(n % 3) + Integer.toString(n / 3, 3), 3));
+    super(0, n -> (n < 3) ? Z.valueOf(n) : new Z(Long.toString(n % 3) + Long.toString(n / 3, 3), 3));
   }
 }

@@ -50,7 +50,7 @@ public class A007376 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     if (n <= 9) {
       return Z.valueOf(n);
     }
@@ -61,12 +61,12 @@ public class A007376 extends AbstractSequence implements DirectSequence {
       ++il;
     }
     // now mLimit[il - 1] <= n < mLimit[il]; il = number of digits in num; pow10 = 10^(il - 1); range [pow10..pow10*10-1]
-    final int num = (n - LIMIT[il - 1]) / il + pow10;
-    final int mod = (n - LIMIT[il - 1]) % il;
+    final long num = (n - LIMIT[il - 1]) / il + pow10;
+    final long mod = (n - LIMIT[il - 1]) % il;
 //  if (mVerbose) {
 //    System.out.println("\n# n=" + n + ", il=" + il + ",pow10=" + pow10 + ", mLimit[il - 1]=" + mLimit[il - 1] + ", num=" + num + ", mod=" + mod);
 //  }
-    return Z.valueOf(Integer.toString(num).charAt(mod) - '0');
+    return Z.valueOf(Long.toString(num).charAt((int) mod) - '0');
   }
 
   @Override

@@ -13,7 +13,7 @@ import irvine.oeis.Sequence1;
 public class A321543 extends Sequence1 {
 
   protected int mK;
-  protected Function<Integer, Z> mF;
+  protected Function<Long, Z> mF;
 
   /** Construct the sequence. */
   public A321543() {

@@ -43,7 +43,7 @@ public class A000166 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     // a(n) = n!*Sum_{k=0..n} (-1)^k/k!.
     return Rationals.SINGLETON.sum(0, n, k -> new Q(Z.NEG_ONE.pow(k), Functions.FACTORIAL.z(k))).multiply(Functions.FACTORIAL.z(n)).num();
   }

@@ -37,7 +37,7 @@ public class A001065 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.ALIQUOT.z(n);
   }
 

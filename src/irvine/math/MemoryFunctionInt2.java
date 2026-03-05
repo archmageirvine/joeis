@@ -33,6 +33,16 @@ public abstract class MemoryFunctionInt2<R> extends HashMap<String, R> {
     put(key, r);
     return r;
   }
+
+  /**
+   * Return the value of the function at specified parameters.
+   * @param n first parameter
+   * @param m second parameter
+   * @return value of function
+   */
+  public R get(final long n, final long m) {
+    return get((int) n, (int) m);
+  }
 }
 
 

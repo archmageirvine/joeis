@@ -16,7 +16,7 @@ public class A390800 extends LambdaSequence {
   /** Construct the sequence. */
   public A390800() {
     super(1, n -> Integers.SINGLETON.sum(1, n, k -> {
-      final int g = Functions.GCD.i(n, k);
+      final long g = Functions.GCD.i(n, k);
       return (g == 1 || Predicates.PRIME_POWER.is(g)) ? Z.valueOf(k) : Z.ZERO;
     }));
   }

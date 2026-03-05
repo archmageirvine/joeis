@@ -24,6 +24,6 @@ public class A388456 extends Sequence0 {
       mM = 0;
     }
     return Integers.SINGLETON.sum(0, mN, k -> Binomial.binomial(mN, k)
-      .multiply(Integers.SINGLETON.sum(0, Math.min(mN - k, mM), j -> mA.get(mN - k + 1, j + 1).multiply(Functions.STIRLING1.z(k, mM - j)))));
+      .multiply(Integers.SINGLETON.sum(0, Math.min(mN - k, mM), j -> mA.get(mN - k.intValue() + 1, j.intValue() + 1).multiply(Functions.STIRLING1.z(k, mM - j)))));
   }
 }

@@ -31,7 +31,7 @@ public class A008908 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return A006577.a(n).add(1);
   }
 

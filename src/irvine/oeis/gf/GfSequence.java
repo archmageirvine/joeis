@@ -90,7 +90,7 @@ public class GfSequence extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    return q(n).num();
+  public Z a(final long n) {
+    return q((int) n).num();
   }
 }

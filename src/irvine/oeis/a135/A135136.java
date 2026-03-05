@@ -12,6 +12,6 @@ public class A135136 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A135136() {
-    super(0, n -> Z.valueOf((Integer.bitCount(n) / 2) & 1));
+    super(0, n -> Z.valueOf((Long.bitCount(n) / 2) & 1));
   }
 }

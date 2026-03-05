@@ -141,5 +141,5 @@ public interface Ring<E> extends Group<E> {
    * @param function the function
    * @return sum
    */
-  E sum(final int lo, final int hi, final Function<Integer, E> function);
+  E sum(final long lo, final long hi, final Function<Long, E> function);
 }

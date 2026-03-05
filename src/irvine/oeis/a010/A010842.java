@@ -30,7 +30,7 @@ public class A010842 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     // a(n) = Sum_{k=0..n} k!*binomial(n, k)*2^(n-k)
     return Integers.SINGLETON.sum(0, n, k -> Functions.FACTORIAL.z(k).multiply(Binomial.binomial(n, k)).multiply(Z.TWO.pow(n - k)));
   }

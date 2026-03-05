@@ -37,7 +37,7 @@ public class A079216 extends Sequence0 {
     if (n == 0) {
       return Z.ONE;
     }
-    return Integers.SINGLETON.sum(1, n, r -> pFixedByA057511(n, k, r));
+    return Integers.SINGLETON.sum(1, n, r -> pFixedByA057511(n, k, r.intValue()));
   }
 
   @Override

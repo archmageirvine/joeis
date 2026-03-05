@@ -13,7 +13,7 @@ public class A352464 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A352464() {
     super(1, 1, k -> {
-      final String ks = Integer.toString(k);
+      final String ks = Long.toString(k);
       return ks.endsWith(Functions.DIGIT_PRODUCT.z(k).toString(10));
     });
   }

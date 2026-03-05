@@ -17,14 +17,14 @@ import irvine.math.z.Z;
  */
 public class LambdaSequence extends AbstractSequence implements DirectSequence {
 
-  private int mN; // current index
-  private final Function<Integer, Z> mLambda; // lambda expression n -> f(n)
+  private long mN; // current index
+  private final Function<Long, Z> mLambda; // lambda expression n -> f(n)
 
   /**
    * Construct the sequence with default offset 0 and no initial terms.
    * @param lambda lambda expression for an index variable starting at <code>offset</code>.
    */
-  public LambdaSequence(final Function<Integer, Z> lambda) {
+  public LambdaSequence(final Function<Long, Z> lambda) {
     this(0, lambda);
   }
 
@@ -33,7 +33,7 @@ public class LambdaSequence extends AbstractSequence implements DirectSequence {
    * @param offset first index
    * @param lambda lambda expression for an index variable starting at <code>offset</code>.
    */
-  public LambdaSequence(final int offset, final Function<Integer, Z> lambda) {
+  public LambdaSequence(final int offset, final Function<Long, Z> lambda) {
     super(offset);
     mN = offset - 1;
     mLambda = lambda;
@@ -50,7 +50,7 @@ public class LambdaSequence extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return mLambda.apply(n);
   }
 }

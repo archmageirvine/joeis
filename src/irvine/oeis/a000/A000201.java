@@ -23,7 +23,7 @@ public class A000201 extends BeattySequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return CR.PHI.multiply(n).floor();
   }
 

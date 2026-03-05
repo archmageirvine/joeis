@@ -15,7 +15,7 @@ public class A210112 extends LambdaSequence {
   /** Construct the sequence. */
   public A210112() {
     super(2, n -> {
-      final int m = 1;
+      final long m = 1;
       return Z.valueOf(n).pow(n).divide(Binomial.binomial(n, m).multiply(Integers.SINGLETON.sum(0, n - m - 1, v -> Z.NEG_ONE.pow(v).multiply(Binomial.binomial(n - m, v)).multiply(Z.valueOf(n - m - v).pow(n)))));
     });
   }

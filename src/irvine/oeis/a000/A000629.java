@@ -24,7 +24,7 @@ public class A000629 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     Z r = Z.ZERO;
     for (int k = 0; k <= n; ++k) {
       final Z t = Functions.STIRLING2.z(n, k).multiply(Functions.FACTORIAL.z(k)).shiftLeft(k);

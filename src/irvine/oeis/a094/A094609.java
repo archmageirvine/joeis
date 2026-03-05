@@ -13,6 +13,6 @@ public class A094609 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A094609() {
-    super(1, 1, k -> Predicates.TRIANGULAR.is(new Z(Integer.toString(k) + Integer.toString(k + 1))));
+    super(1, 1, k -> Predicates.TRIANGULAR.is(new Z(Long.toString(k) + Long.toString(k + 1))));
   }
 }

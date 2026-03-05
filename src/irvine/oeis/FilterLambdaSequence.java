@@ -29,7 +29,7 @@ public class FilterLambdaSequence extends FilterSequence {
    * @param start first index to be tested
    * @param predicate predicate used for filtering
    */
-  public FilterLambdaSequence(final int offset, final int start, final Predicate<Z> predicate) {
+  public FilterLambdaSequence(final int offset, final long start, final Predicate<Z> predicate) {
     super(offset, new A001477(), predicate);
     mN = Z.valueOf(start - 1);
     mPredicate = predicate;

@@ -10,7 +10,7 @@ import irvine.oeis.memory.MemorySequence;
 public class A038135 extends MemorySequence {
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return n > size() ? Z.ZERO : super.a(n);
   }
 

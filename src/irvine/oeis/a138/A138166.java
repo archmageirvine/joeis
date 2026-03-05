@@ -12,8 +12,8 @@ public class A138166 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A138166() {
     super(1, 1, n -> {
-      final String sn = Integer.toString(n, 10);
-      return sn.indexOf(Integer.toString(sn.length(), 10)) >= 0;
+      final String sn = Long.toString(n, 10);
+      return sn.indexOf(Long.toString(sn.length(), 10)) >= 0;
     });
   }
 }

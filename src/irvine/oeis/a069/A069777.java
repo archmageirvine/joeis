@@ -12,7 +12,7 @@ public class A069777 extends A104878 {
 
   @Override
   protected Z t(final int n, final int k) {
-    return Integers.SINGLETON.product(k, n - 1, j -> super.t(j, k));
+    return Integers.SINGLETON.product(k, n - 1, j -> super.t(j.intValue(), k));
   }
 }
 

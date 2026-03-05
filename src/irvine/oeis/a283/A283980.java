@@ -29,7 +29,7 @@ public class A283980 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return A003961.a(n).multiply(A006519.a(n));
   }
 

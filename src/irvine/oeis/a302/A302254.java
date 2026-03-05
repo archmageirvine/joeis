@@ -12,6 +12,6 @@ public class A302254 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A302254() {
-    super(0, n -> (n <= 5) ? Z.valueOf(new int[] {1, 1, 2, 4, 4, 4}[n]) : Z.TWO.pow((Z.valueOf(n / 2)).subtract(Z.ONE)));
+    super(0, n -> (n <= 5) ? Z.valueOf(new int[] {1, 1, 2, 4, 4, 4}[n.intValue()]) : Z.TWO.pow((Z.valueOf(n / 2)).subtract(Z.ONE)));
   }
 }

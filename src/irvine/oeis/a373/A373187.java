@@ -14,8 +14,8 @@ public class A373187 extends MultiTransformSequence {
   /** Construct the sequence. */
   public A373187() {
     super(1, (self, n) -> {
-      final int n4 = n / 4;
-      final int m = n % 4;
+      final long n4 = n / 4;
+      final long m = n % 4;
       return Functions.TETRAHEDRAL.z(4 * n4 + m).add((m != 0) ? Z.ZERO : self.a(n4));
     }, "1");
   }

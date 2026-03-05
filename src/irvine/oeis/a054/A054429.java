@@ -29,8 +29,8 @@ public class A054429 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    return Z.valueOf(n ^ (Integer.highestOneBit(n) - 1));
+  public Z a(final long n) {
+    return Z.valueOf(n ^ (Long.highestOneBit(n) - 1));
   }
 
 }

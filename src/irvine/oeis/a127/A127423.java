@@ -12,6 +12,6 @@ public class A127423 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A127423() {
-    super(1, n -> (n == 1) ? Z.ONE : new Z(Integer.toString(n) + Integer.toString(n - 1)));
+    super(1, n -> (n == 1) ? Z.ONE : new Z(Long.toString(n) + Long.toString(n - 1)));
   }
 }

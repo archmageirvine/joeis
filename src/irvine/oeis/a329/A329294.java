@@ -13,6 +13,6 @@ public class A329294 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A329294() {
-    super(1, 0, k -> Predicates.DIGIT_NONDECREASING.is(new Z(Integer.toString(k, 4))) && Predicates.DIGIT_NONDECREASING.is(new Z(Integer.toString(k, 5))));
+    super(1, 0, k -> Predicates.DIGIT_NONDECREASING.is(new Z(Long.toString(k, 4))) && Predicates.DIGIT_NONDECREASING.is(new Z(Long.toString(k, 5))));
   }
 }

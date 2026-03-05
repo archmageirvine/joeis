@@ -12,6 +12,6 @@ public class A257224 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A257224() {
-    super(1, 1, k -> !Integers.SINGLETON.countdiv(k, d -> Integer.toString(d).indexOf('7') >= 0).isZero());
+    super(1, 1, k -> !Integers.SINGLETON.countdiv(k, d -> Long.toString(d).indexOf('7') >= 0).isZero());
   }
 }

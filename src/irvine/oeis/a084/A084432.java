@@ -13,7 +13,7 @@ public class A084432 extends MultiTransformSequence {
   /** Construct the sequence. */
   public A084432() {
     super(1, (self, n) -> {
-      final int h = n / 2;
+      final long h = n / 2;
       return ((n & 1) == 0) ? self.a(h).add(Z.valueOf(2 * h + 1)) : Z.valueOf(2 * h + 2);
     }, "2");
   }

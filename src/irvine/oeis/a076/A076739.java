@@ -67,8 +67,8 @@ public class A076739 extends AbstractSequence implements DirectSequence {
   };
 
   @Override
-  public Z a(final int n) {
-    return mF.get(n);
+  public Z a(final long n) {
+    return mF.get((int) n);
   }
 
   @Override

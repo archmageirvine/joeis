@@ -17,9 +17,9 @@ public class A066452 extends Sequence2 implements DirectSequence {
 
   private int mN = 1;
 
-  static List<Integer> antidivisors(final int n) {
-    final List<Integer> res = new ArrayList<>();
-    for (int k = 2; k < n; ++k) {
+  static List<Long> antidivisors(final long n) {
+    final List<Long> res = new ArrayList<>();
+    for (long k = 2; k < n; ++k) {
       if (Math.abs(2 * (n % k) - k) < 2) {
         res.add(k);
       }
@@ -38,8 +38,8 @@ public class A066452 extends Sequence2 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    final List<Integer> ad = antidivisors(n);
+  public Z a(final long n) {
+    final List<Long> ad = antidivisors(n);
     long cnt = 0;
     for (long j = 1; j < n; ++j) {
       long isAd = 1;

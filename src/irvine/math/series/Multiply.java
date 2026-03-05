@@ -30,7 +30,7 @@ class Multiply<E> implements Series<E> {
     }
     final int lo = Math.max(0, n - mT.bound());
     final int hi = Math.min(n, mS.bound());
-    return mElementField.sum(lo, hi, k -> mElementField.multiply(mS.coeff(k), mT.coeff(n - k)));
+    return mElementField.sum(lo, hi, k -> mElementField.multiply(mS.coeff(k.intValue()), mT.coeff(n - k.intValue())));
   }
 
   @Override

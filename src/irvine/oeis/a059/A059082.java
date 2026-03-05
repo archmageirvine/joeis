@@ -61,6 +61,6 @@ public class A059082 extends Sequence0 {
     if (++mN > 64) {
       return null;
     }
-    return Integers.SINGLETON.sum(0, PARMS.length - 1, k -> f(PARMS[k][1], mN).multiply(PARMS[k][0])).divide(720);
+    return Integers.SINGLETON.sum(0, PARMS.length - 1, k -> f(PARMS[k.intValue()][1], mN).multiply(PARMS[k.intValue()][0])).divide(720);
   }
 }

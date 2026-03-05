@@ -17,6 +17,6 @@ public class A270419 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A270419() {
-    super(1, (p, e) -> ((Integer.bitCount(e) & 1) == 0) ? p.pow(A065620.a(e).negate().intValueExact()) : Z.ONE);
+    super(1, (p, e) -> ((Long.bitCount(e) & 1) == 0) ? p.pow(A065620.a(e).negate().intValueExact()) : Z.ONE);
   }
 }

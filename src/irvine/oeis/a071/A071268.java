@@ -24,7 +24,7 @@ public class A071268 extends Sequence1 {
       total += mDigitCounts[k];
     }
     return Binomial.multinomial(total, mDigitCounts)
-      .multiply(Integers.SINGLETON.sum(1, 9, k -> Z.valueOf(mDigitCounts[k]).multiply(k)))
+      .multiply(Integers.SINGLETON.sum(1, 9, k -> Z.valueOf(mDigitCounts[k.intValue()]).multiply(k)))
       .multiply(Z.TEN.pow(total).subtract(1).divide(9))
       .divide(total);
   }

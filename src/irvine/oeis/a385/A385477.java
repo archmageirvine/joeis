@@ -12,6 +12,6 @@ public class A385477 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A385477() {
-    super(1, 4, k -> !Predicates.PRIME.is(k) && Integer.toString(k).matches("[357]+"));
+    super(1, 4, k -> !Predicates.PRIME.is(k) && Long.toString(k).matches("[357]+"));
   }
 }

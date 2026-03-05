@@ -14,7 +14,7 @@ public class A377379 extends LambdaSequence {
   /** Construct the sequence. */
   public A377379() {
     super(1, n -> {
-      final int om = Functions.OMEGA.i(n);
+      final long om = Functions.OMEGA.i(n);
       return Functions.RAD.z(n).pow(Binomial.binomial(Functions.BIG_OMEGA.i(n) + om, om + 1));
     });
   }

@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A308729 a(n)/n! is the expected number of left-to-right maxima in the lexicographical or colexicographical ordering of all the 2-subsets of [n] under a random permutation of [n], when the 2-subsets hold the worst order of ranks.
+ * A308729 a(n)/n! is the expected number of left-to-right maxima in the lexicographical or colexicographical ordering of all the 2-subsets of [n.intValue()] under a random permutation of [n.intValue()], when the 2-subsets hold the worst order of ranks.
  * @author Georg Fischer
  */
 public class A308729 extends LambdaSequence {

@@ -23,7 +23,7 @@ public class A135318 extends LinearRecurrence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Z.TWO.pow(n / 2).multiply(5 - (((n & 1) == 1) ? -1 : 1)).add((((n / 2) & 1) == 1 ? -1 : 1) * (1 + (((n & 1) == 1) ? -1 : 1))).divide(6);
   }
 

@@ -28,7 +28,7 @@ public class A002487 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     if (n == 0) {
       return Z.ZERO;
     }

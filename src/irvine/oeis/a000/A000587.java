@@ -30,7 +30,7 @@ public class A000587 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Integers.SINGLETON.sum(0, n, k -> ((k & 1) == 0) ? Functions.STIRLING2.z(n, k) : Functions.STIRLING2.z(n, k).negate());
   }
 

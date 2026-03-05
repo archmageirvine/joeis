@@ -13,8 +13,8 @@ public class A135586 extends MultiTransformSequence {
   /** Construct the sequence. */
   public A135586() {
     super(1, (self, n2) -> {
-      final int n = n2 / 2;
-      return (n2 & 1) == 0 ? self.a(n).add(Z.TWO.pow(Integer.bitCount(n))).subtract(1) : self.a(2 * n).multiply(2);
+      final long n = n2 / 2;
+      return (n2 & 1) == 0 ? self.a(n).add(Z.TWO.pow(Long.bitCount(n))).subtract(1) : self.a(2 * n).multiply(2);
     }, "0");
   }
 }

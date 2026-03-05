@@ -13,7 +13,7 @@ import irvine.oeis.a000.A000040;
 public class A123157 extends A000040 implements DirectSequence {
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return a(Z.valueOf(n));
   }
 

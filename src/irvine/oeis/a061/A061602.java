@@ -30,8 +30,8 @@ public class A061602 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    int m = n;
+  public Z a(final long n) {
+    long m = n;
     Z sum = Z.ZERO;
     do {
       sum = sum.add(Functions.FACTORIAL.z(m % 10));

@@ -26,11 +26,11 @@ public class A166086 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     int count = -1; // why not 0?
     int sum = 0;
-    final int n43 = 4 * n + 3;
-    for (int u = 1; u <= n43; u++) {
+    final long n43 = 4 * n + 3;
+    for (long u = 1; u <= n43; u++) {
       sum += Functions.JACOBI.i(u, n43);
       if (sum == 0L) {
         ++count;

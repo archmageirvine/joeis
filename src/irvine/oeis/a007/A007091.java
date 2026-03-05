@@ -23,8 +23,8 @@ public class A007091 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    return new Z(Integer.toString(n, 5));
+  public Z a(final long n) {
+    return new Z(Long.toString(n, 5));
   }
 
 }

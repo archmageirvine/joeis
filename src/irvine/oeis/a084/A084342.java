@@ -13,6 +13,6 @@ public class A084342 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A084342() {
-    super(1, n -> new Z(Functions.REVERSE.z(n).toString() + Integer.toString(n)).modZ(n));
+    super(1, n -> new Z(Functions.REVERSE.z(n).toString() + Long.toString(n)).modZ(n));
   }
 }

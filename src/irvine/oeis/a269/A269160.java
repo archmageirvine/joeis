@@ -24,7 +24,7 @@ public class A269160 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Z.valueOf(n).xor(Z.valueOf(2L * n).or(Z.valueOf(4L * n)));
   }
 

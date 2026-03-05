@@ -65,8 +65,8 @@ public class A384864 extends MemoryFunctionInt2Sequence<Q> implements DirectArra
   }
 
   @Override
-  public Z a(final int n, final int k) {
-    return t(n, k).num();
+  public Z a(final long n, final long k) {
+    return t((int) n, (int) k).num();
   }
 
   @Override

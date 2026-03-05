@@ -13,6 +13,6 @@ public class A317934 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A317934() {
-    super(1, (p, e) -> Z.TWO.pow(e - Integer.bitCount(e)));
+    super(1, (p, e) -> Z.TWO.pow(e - Long.bitCount(e)));
   }
 }

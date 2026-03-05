@@ -15,7 +15,7 @@ public class A070075 extends Sequence0 {
 
   private int mN = -1;
 
-  private Q laguerre(final int n, final int x) {
+  private Q laguerre(final long n, final int x) {
     Q sum = Q.ZERO;
     Z xk = Z.ONE;
     for (int k = 0; k <= n; ++k, xk = xk.multiply(x)) {

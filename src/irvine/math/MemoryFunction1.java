@@ -29,6 +29,15 @@ public abstract class MemoryFunction1<R> {
     }
     return mCache.get(n);
   }
+
+  /**
+   * Return the value of the function at specified parameter.
+   * @param n parameter
+   * @return value of function
+   */
+  public R get(final long n) {
+    return get((int) n);
+  }
 }
 
 

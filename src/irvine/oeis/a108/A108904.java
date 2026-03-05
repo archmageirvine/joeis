@@ -13,6 +13,6 @@ public class A108904 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A108904() {
-    super(0, n -> new Z("9" + StringUtils.rep('7', n) + "9"));
+    super(0, n -> new Z("9" + StringUtils.rep('7', n.intValue()) + "9"));
   }
 }

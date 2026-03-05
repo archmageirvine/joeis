@@ -13,6 +13,6 @@ public class A133603 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A133603() {
-    super(0, n -> (n <= 2) ? Z.valueOf(new int[] {1, 1, 3}[n]) : (((n & 1) == 1) ? Functions.CATALAN.z(n) : Functions.CATALAN.z(n).add(Functions.CATALAN.z(n - 1))));
+    super(0, n -> (n <= 2) ? Z.valueOf(new int[] {1, 1, 3}[n.intValue()]) : (((n & 1) == 1) ? Functions.CATALAN.z(n) : Functions.CATALAN.z(n).add(Functions.CATALAN.z(n - 1))));
   }
 }

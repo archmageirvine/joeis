@@ -16,6 +16,6 @@ public class A064939 extends Sequence1 {
   @Override
   public Z next() {
     final Z[] p = Jaguar.factor(++mN).toZArray();
-    return Integers.SINGLETON.sum(0, p.length - 1, k -> p[k].multiply(k + 1));
+    return Integers.SINGLETON.sum(0, p.length - 1, k -> p[k.intValue()].multiply(k + 1));
   }
 }

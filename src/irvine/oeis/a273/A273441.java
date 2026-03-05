@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A273441 Number of endofunctions on [n] with exactly ten cycles.
+ * A273441 Number of endofunctions on [n.intValue()] with exactly ten cycles.
  * @author Georg Fischer
  */
 public class A273441 extends LambdaSequence {
@@ -16,7 +16,7 @@ public class A273441 extends LambdaSequence {
   /** Construct the sequence. */
   public A273441() {
     super(10, n -> {
-      final int k = 10;
+      final long k = 10;
       return Integers.SINGLETON.sum(0, n - 1, j -> Binomial.binomial(n - 1, j).multiply(Z.valueOf(n).pow(n - 1 - j)).multiply(Z.NEG_ONE.pow(k + j + 1)).multiply(Functions.STIRLING1.z(j + 1, k)));
     });
   }

@@ -14,9 +14,9 @@ public class A066997 extends LambdaSequence {
   /** Construct the sequence. */
   public A066997() {
     super(2, n -> {
-      final int m = IntegerUtils.floorLog2(n);
-      final int k = n - (1 << m);
-      return Z.valueOf((k < (1 << (m - 1))) ? 1 + k + (1L << (m - 1)) : (1L << m));
+      final long m = IntegerUtils.floorLog2(n.intValue());
+      final long k = n - (1L << m);
+      return Z.valueOf((k < (1L << (m - 1))) ? 1 + k + (1L << (m - 1)) : (1L << m));
     });
   }
 }

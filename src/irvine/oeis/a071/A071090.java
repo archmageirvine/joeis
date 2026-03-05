@@ -38,7 +38,7 @@ public class A071090 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     // Some care needed here, d^2 easily exceeds int
     Z sum = Z.ZERO;
     for (final Z d : Jaguar.factor(n).divisors()) {

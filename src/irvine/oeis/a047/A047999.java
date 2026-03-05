@@ -23,7 +23,7 @@ public class A047999 extends A007318 implements DirectArray {
   }
 
   @Override
-  public Z a(final int n, final int k) {
+  public Z a(final long n, final long k) {
     return Binomial.binomial(n, k).modZ(2L);
   }
 

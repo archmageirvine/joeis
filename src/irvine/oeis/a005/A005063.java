@@ -36,7 +36,7 @@ public class A005063 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Integers.SINGLETON.sopf(n, p -> Z.valueOf(p).pow(mE));
   }
 

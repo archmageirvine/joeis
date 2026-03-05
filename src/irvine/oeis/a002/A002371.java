@@ -35,7 +35,7 @@ public class A002371 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     if (n <= 3) {
       return Z.valueOf((n & 1) ^ 1);
     }

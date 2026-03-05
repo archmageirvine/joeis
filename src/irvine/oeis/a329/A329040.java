@@ -28,7 +28,7 @@ public class A329040 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.OMEGA.z(A324886.a(n));
   }
 

@@ -24,7 +24,7 @@ public class A001453 extends Sequence2 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.CATALAN.z(n).subtract(1);
   }
 

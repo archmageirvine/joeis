@@ -14,7 +14,7 @@ public class A002321 extends Sequence1 implements DirectSequence {
   protected long mN = 0;
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.MERTENS.z(n);
   }
 

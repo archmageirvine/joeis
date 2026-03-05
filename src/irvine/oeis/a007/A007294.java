@@ -23,14 +23,14 @@ public class A007294 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     Polynomial<Z> den = RING.one();
     int p;
     int k = 1;
     while ((p = Binomial.binomial(++k, 2).intValueExact()) <= n) {
-      den = RING.multiply(den, RING.oneMinusXToTheN(p), n);
+      den = RING.multiply(den, RING.oneMinusXToTheN(p), (int) n);
     }
-    return RING.coeff(RING.one(), den, n);
+    return RING.coeff(RING.one(), den, (int) n);
   }
 
   @Override

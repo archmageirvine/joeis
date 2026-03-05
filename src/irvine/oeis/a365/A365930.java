@@ -13,6 +13,6 @@ public class A365930 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A365930() {
-    super(1, n -> Integers.SINGLETON.sum(2, n, y -> Z.TWO.pow(n).subtract(1).root(y).subtract(Z.TWO.pow(n - 1).subtract(1).root(y))));
+    super(1, n -> Integers.SINGLETON.sum(2, n, y -> Z.TWO.pow(n).subtract(1).root(y.intValue()).subtract(Z.TWO.pow(n - 1).subtract(1).root(y.intValue()))));
   }
 }

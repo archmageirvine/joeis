@@ -11,6 +11,6 @@ public class A308071 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A308071() {
-    super(1, 0, k -> Integer.toString(k, 8).startsWith(Integer.toString(k)));
+    super(1, 0, k -> Long.toString(k, 8).startsWith(Long.toString(k)));
   }
 }

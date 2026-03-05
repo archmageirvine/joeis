@@ -30,7 +30,7 @@ public class A073148 extends Sequence0 {
       if (m == 0) {
         return mC.a(n);
       }
-      return Integers.SINGLETON.sum(0, m, k -> mA.a(k).multiply(get(n - k, 0)));
+      return Integers.SINGLETON.sum(0, m, k -> mA.a(k).multiply(get((int) (n - k), 0)));
     }
   };
 

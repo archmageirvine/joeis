@@ -27,7 +27,7 @@ public class A000010 extends AbstractSequence implements DirectSequence {
   protected long mN = 0;
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.PHI.z(n);
   }
 

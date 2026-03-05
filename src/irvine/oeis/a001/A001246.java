@@ -22,7 +22,7 @@ public class A001246 extends A000108 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.CATALAN.z(n).square();
   }
 }

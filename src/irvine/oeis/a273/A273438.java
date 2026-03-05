@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A273438 Number of endofunctions on [n] with exactly seven cycles.
+ * A273438 Number of endofunctions on [n.intValue()] with exactly seven cycles.
  * @author Georg Fischer
  */
 public class A273438 extends LambdaSequence {
@@ -16,7 +16,7 @@ public class A273438 extends LambdaSequence {
   /** Construct the sequence. */
   public A273438() {
     super(7, n -> {
-      final int k = 7;
+      final long k = 7;
       return Integers.SINGLETON.sum(0, n - 1, j -> Binomial.binomial(n - 1, j).multiply(Z.valueOf(n).pow(n - 1 - j)).multiply(Z.NEG_ONE.pow(k + j + 1)).multiply(Functions.STIRLING1.z(j + 1, k)));
     });
   }

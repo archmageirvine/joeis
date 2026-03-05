@@ -15,6 +15,6 @@ public class A076124 extends A076123 {
       super.next();
     }
     super.next();
-    return Integers.SINGLETON.product(mA.size() / 2, mA.size() - 1, k -> Z.valueOf(mA.get(k))).sqrt();
+    return Integers.SINGLETON.product(mA.size() / 2, mA.size() - 1, k -> Z.valueOf(mA.get(k.intValue()))).sqrt();
   }
 }

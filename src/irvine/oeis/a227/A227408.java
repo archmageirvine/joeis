@@ -12,9 +12,9 @@ public class A227408 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A227408() {
     super(1, 0, n -> {
-      final int npbc = n + Integer.bitCount(n);
-      final int nmbc = n - Integer.bitCount(n);
-      return n == npbc - Integer.bitCount(npbc) && n == nmbc + Integer.bitCount(nmbc);
+      final long npbc = n + Long.bitCount(n);
+      final long nmbc = n - Long.bitCount(n);
+      return n == npbc - Long.bitCount(npbc) && n == nmbc + Long.bitCount(nmbc);
     });
   }
 }

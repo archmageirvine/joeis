@@ -15,6 +15,6 @@ public class A318162 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A318162() {
-    super(1, n -> A180281.triangleElement(2 * n - 1, n));
+    super(1, n -> A180281.triangleElement(2 * n.intValue() - 1, n));
   }
 }

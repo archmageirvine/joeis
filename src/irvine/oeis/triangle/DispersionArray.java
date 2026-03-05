@@ -38,7 +38,7 @@ public class DispersionArray extends Triangle {
    * @param offset first index 
    * @param lambda expression for a simple sequence
    */
-  public DispersionArray(final int offset, final Function<Integer, Z> lambda) {
+  public DispersionArray(final int offset, final Function<Long, Z> lambda) {
     this(offset, 1, 1, -1, lambda);
   }
 
@@ -50,7 +50,7 @@ public class DispersionArray extends Triangle {
    * @param dir direction: +1 = ascending, -1 = descending
    * @param lambda expression for a simple sequence
    */
-  public DispersionArray(final int offset, final int row0, final int col0, final int dir, final Function<Integer, Z> lambda) {
+  public DispersionArray(final int offset, final int row0, final int col0, final int dir, final Function<Long, Z> lambda) {
     this(offset, row0, col0, dir, new LambdaSequence(0, lambda));
   }
 

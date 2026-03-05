@@ -19,7 +19,7 @@ public class A116623 extends MultiTransformSequence {
   /** Construct the sequence. */
   public A116623() {
     super(0, (self, n) -> {
-      final int h = n / 2;
+      final long h = n / 2;
       return ((n & 1) == 0) ? self.a(h).add(A000079.a(A000523.a(n))) : Z.THREE.multiply(self.a(h)).add(A000079.a(A000523.a(n).add(1)));
     }, "1");
   }

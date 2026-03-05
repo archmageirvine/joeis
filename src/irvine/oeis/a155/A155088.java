@@ -12,6 +12,6 @@ public class A155088 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A155088() {
-    super(1, 0, k -> Integer.toString(k).matches("[2357]+") && Functions.PRIME.z(k).toString().matches("[2357]+"));
+    super(1, 0, k -> Long.toString(k).matches("[2357]+") && Functions.PRIME.z(k).toString().matches("[2357]+"));
   }
 }

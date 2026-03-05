@@ -389,7 +389,7 @@ public class MatrixRing<E> extends MatrixGroupRing<E> implements Ring<Matrix<E>>
   }
 
   @Override
-  public Matrix<E> sum(final int lo, final int hi, final Function<Integer, Matrix<E>> function) {
+  public Matrix<E> sum(final long lo, final long hi, final Function<Long, Matrix<E>> function) {
     throw new UnsupportedOperationException();
   }
 }

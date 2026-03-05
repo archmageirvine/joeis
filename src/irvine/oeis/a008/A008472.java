@@ -19,7 +19,7 @@ public class A008472 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.SOPF.z(n);
   }
 

@@ -14,7 +14,7 @@ public class A067925 extends Sequence1 {
 
   private int mN = 0;
 
-  private Z c1(final int r, final int s) {
+  private Z c1(final long r, final long s) {
     if (s <= 0) {
       return Z.ZERO;
     }
@@ -24,7 +24,7 @@ public class A067925 extends Sequence1 {
     return c2(r, s - 1).add(s == 1 ? 1 : 0);
   }
 
-  private Z c2(final int r, final int s) {
+  private Z c2(final long r, final long s) {
     if (s <= 0) {
       return Z.ZERO;
     }
@@ -34,7 +34,7 @@ public class A067925 extends Sequence1 {
     return c1(r, s - r + 2).add(c1(r, s - r)).add(s == r - 2 ? 1 : 0).add(s == r ? 1 : 0);
   }
 
-  private Z c(final int r, final int s) {
+  private Z c(final long r, final long s) {
     if (s < 0) {
       return Z.ZERO;
     }
@@ -50,7 +50,7 @@ public class A067925 extends Sequence1 {
     return c1(r, s).add(c2(r, s)).add(s == 0 ? 1 : 0);
   }
 
-  private Z t(final int r, final int s) {
+  private Z t(final long r, final long s) {
     if (r > s) {
       return t(s, r);
     }

@@ -22,7 +22,7 @@ public class A078266 extends Sequence1 {
     }
     final int[] cnts = ZUtils.digitCounts(new Z(sb));
     return Z.TEN.pow(sb.length()).subtract(1)
-      .multiply(Integers.SINGLETON.sum(1, 9, k -> Z.valueOf(cnts[k]).multiply(k)))
+      .multiply(Integers.SINGLETON.sum(1, 9, k -> Z.valueOf(cnts[k.intValue()]).multiply(k)))
       .divide(9L * sb.length());
   }
 }

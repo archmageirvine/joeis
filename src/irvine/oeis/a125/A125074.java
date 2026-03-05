@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A125074 A051442[p-2]/p for p = Prime[n]&gt;2.
+ * A125074 A051442[p-2]/p for p = Prime[n.intValue()]&gt;2.
  * a(n)=((prime(n)-2)^(prime(n)-1)+(prime(n)-1)^(prime(n)-2))/prime(n)
  * @author Georg Fischer
  */

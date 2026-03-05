@@ -12,6 +12,6 @@ public class A164032 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A164032() {
-    super(1, n -> Z.FOUR.pow(Integer.bitCount((n - 1) / 2)).multiply(((n & 1) == 0) ? 9 : 1));
+    super(1, n -> Z.FOUR.pow(Long.bitCount((n - 1) / 2)).multiply(((n & 1) == 0) ? 9 : 1));
   }
 }

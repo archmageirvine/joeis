@@ -21,7 +21,7 @@ public class A142150 extends LinearRecurrence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Z.valueOf((n & 1) == 0 ? n / 2 : 0);
   }
 

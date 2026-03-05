@@ -16,6 +16,6 @@ public class A082548 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A082548() {
-    super(1, n -> (n <= 4) ? Z.valueOf(new int[] {1, 2, 4, 7}[n - 1]) : A007504.a(n - 1).subtract(5));
+    super(1, n -> (n <= 4) ? Z.valueOf(new int[] {1, 2, 4, 7}[n.intValue() - 1]) : A007504.a(n - 1).subtract(5));
   }
 }

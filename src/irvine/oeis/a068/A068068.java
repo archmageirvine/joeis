@@ -32,7 +32,7 @@ public class A068068 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     long c = 0;
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final long d = dd.longValueExact();

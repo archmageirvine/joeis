@@ -19,7 +19,7 @@ public class A007947 extends AbstractSequence implements DirectSequence {
   private long mN = 0;
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.SQUARE_FREE_KERNEL.z(n);
   }
 

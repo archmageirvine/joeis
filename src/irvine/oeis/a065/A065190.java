@@ -24,7 +24,7 @@ public class A065190 extends GeneratingFunctionSequence implements DirectSequenc
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return n == 1 ? Z.ONE : ((n & 1) == 1 ? Z.NEG_ONE : Z.ONE).add(n);
   }
 

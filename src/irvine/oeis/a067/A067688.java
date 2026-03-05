@@ -21,7 +21,7 @@ public class A067688 extends A002808 {
       long r = 0;
       while (true) {
         final long rr = ++r;
-        final Z sum = Integers.SINGLETON.sum(0, p.length - 1, k -> p[k].pow(rr).multiply(fs.getExponent(p[k])));
+        final Z sum = Integers.SINGLETON.sum(0, p.length - 1, k -> p[k.intValue()].pow(rr).multiply(fs.getExponent(p[k.intValue()])));
         final int c = sum.compareTo(n);
         if (c == 0) {
           return n;

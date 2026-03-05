@@ -12,7 +12,7 @@ public class A074364 extends MultiTransformSequence {
   /** Construct the sequence. */
   public A074364() {
     super(0, (self, n) -> {
-      final int h = n / 2;
+      final long h = n / 2;
       return ((n & 1) == 0) ? self.a(h) : self.a(2 * h).add(self.a(2 * h - 1)).add(self.a(2 * h - 2));
     }, "0, 1");
   }

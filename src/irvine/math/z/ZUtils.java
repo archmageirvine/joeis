@@ -545,14 +545,14 @@ public final class ZUtils {
    * @param base number base for the expansion
    * @return new integer
    */
-  public static Z concatenate(final int r1, final int r2, final Function<Integer, Z> function, final int base) {
+  public static Z concatenate(final long r1, final long r2, final Function<Long, Z> function, final int base) {
     final StringBuilder sb = new StringBuilder("0");
     if (r1 <= r2) { // upwards
-      for (int k = r1; k <= r2; ++k) {
+      for (long k = r1; k <= r2; ++k) {
         sb.append(function.apply(k).toString(base));
       }
     } else { // downwards
-      for (int k = r1; k >= r2; --k) {
+      for (long k = r1; k >= r2; --k) {
         sb.append(function.apply(k).toString(base));
       }
     }
@@ -566,7 +566,7 @@ public final class ZUtils {
    * @param function the function
    * @return new integer
    */
-  public static Z concatenate(final int r1, final int r2, final Function<Integer, Z> function) {
+  public static Z concatenate(final long r1, final long r2, final Function<Long, Z> function) {
     return concatenate(r1, r2, function, 10);
   }
 

@@ -17,7 +17,7 @@ public class A116637 extends LambdaSequence {
       if (m == 0) {
         return Z.ONE;
       }
-      final int n = m / 2;
+      final long n = m / 2;
       return (m & 1) == 1 ? Binomial.binomial(3L * n + 1, n).divide(n + 1).multiply(2) : Binomial.binomial(3L * n, n).divide(2 * n + 1).multiply(2);
     });
   }

@@ -28,7 +28,7 @@ public class A001813 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Integers.SINGLETON.product(n + 1, 2 * n, k -> Z.valueOf(k));
   }
 

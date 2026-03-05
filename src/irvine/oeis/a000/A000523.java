@@ -21,8 +21,8 @@ public class A000523 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    return Z.valueOf(IntegerUtils.floorLog2(n));
+  public Z a(final long n) {
+    return Z.valueOf(IntegerUtils.floorLog2((int) n));
   }
 
   @Override

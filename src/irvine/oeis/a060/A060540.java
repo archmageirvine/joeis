@@ -15,7 +15,7 @@ public class A060540 extends Sequence1 implements DirectArray {
   private int mM = 0;
 
   @Override
-  public Z a(final int n, final int m) {
+  public Z a(final long n, final long m) {
     return Functions.FACTORIAL.z(n * m)
       .divide(Functions.FACTORIAL.z(m).pow(n))
       .divide(Functions.FACTORIAL.z(n));

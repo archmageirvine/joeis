@@ -9,7 +9,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a000.A000085;
 
 /**
- * A364819 Number of permutations p of [n] such that max(|p(p(i)) - i|)=1.
+ * A364819 Number of permutations p of [n.intValue()] such that max(|p(p(i)) - i|)=1.
  * @author Georg Fischer
  */
 public class A364819 extends LambdaSequence {

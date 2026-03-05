@@ -29,7 +29,7 @@ public class A064600 extends Sequence0 {
         }
 
         @Override
-        public Z a(final int n) {
+        public Z a(final long n) {
           return Z.valueOf(n + 1);
         }
       };

@@ -12,6 +12,6 @@ public class A094387 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A094387() {
-    super(1, 1, k -> Functions.GCD.i(k, Integer.bitCount(k)) == 1);
+    super(1, 1, k -> Functions.GCD.i(k, Long.bitCount(k)) == 1);
   }
 }

@@ -21,8 +21,8 @@ public class A254049 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public final Z a(final int n) {
-    final int m = 2 * n - 1;
+  public final Z a(final long n) {
+    final long m = 2 * n - 1;
     if (m < 0) {
       throw new UnsupportedOperationException();
     }

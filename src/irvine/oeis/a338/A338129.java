@@ -12,6 +12,6 @@ public class A338129 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A338129() {
-    super(1, 0, k -> Z.valueOf(k).pow(k).toString(2).endsWith(Integer.toString(k, 2)));
+    super(1, 0, k -> Z.valueOf(k).pow(k).toString(2).endsWith(Long.toString(k, 2)));
   }
 }

@@ -14,7 +14,7 @@ public class A127366 extends LambdaSequence {
   /** Construct the sequence. */
   public A127366() {
     super(0, n -> {
-      final int m = Functions.SQRT.i(n);
+      final long m = Functions.SQRT.i(n);
       return (n & 1) == (m & 1) ? Z.valueOf(n + m) : Z.valueOf(n - m);
     });
   }

@@ -30,7 +30,7 @@ public class A079944 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.PARITY.z(A004526.a(A030101.a(n + 2)));
   }
 

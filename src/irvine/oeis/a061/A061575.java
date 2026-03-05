@@ -27,6 +27,6 @@ public class A061575 extends Sequence0 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sum(1, ++mN, k -> s(k).multiply(t(mN, k)).divide(k));
+    return Integers.SINGLETON.sum(1, ++mN, k -> s(k.intValue()).multiply(t(mN, k.intValue())).divide(k));
   }
 }

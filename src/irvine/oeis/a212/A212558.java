@@ -14,7 +14,7 @@ public class A212558 extends LambdaSequence {
   /** Construct the sequence. */
   public A212558() {
     super(10, n -> {
-      final int s = Functions.DIGIT_SUM.i(n);
+      final long s = Functions.DIGIT_SUM.i(n);
       return Z.valueOf(n - s).square().modZ(n + s).subtract(Z.valueOf(n + s).square().modZ(n - s));
     });
   }

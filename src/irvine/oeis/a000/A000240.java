@@ -28,7 +28,7 @@ public class A000240 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     // a(n) = Sum_{k=0..n-1} (-1)^k*n!/k!
     return Integers.SINGLETON.sum(0, n - 1, k -> Z.NEG_ONE.pow(k).multiply(Functions.FALLING_FACTORIAL.z(n, n - k)));
   }

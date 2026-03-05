@@ -15,7 +15,7 @@ public class A165964 extends Sequence1 {
   private final DirectSequence mA = DirectSequence.create(new A095816());
   private int mN = 0;
 
-  private Z a(final int n) {
+  private Z a(final long n) {
     return n < 0 ? Z.ZERO : mA.a(n);
   }
 

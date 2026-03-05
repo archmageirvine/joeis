@@ -19,7 +19,7 @@ public class A156552 extends A005941 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return super.a(Z.valueOf(n)).subtract(1);
   }
 

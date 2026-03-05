@@ -140,20 +140,12 @@ public class FiniteSequence extends AbstractSequence implements Serializable, Di
     return mN < mList.size() ? mList.get(mN++) : (PAD_ZERO.equals(mAttr) ? Z.ZERO : null);
   }
 
-  /**
-   * Directly return the specified element of this sequence.
-   * @param index index (from 0)
-   * @return specified element
-   */
-  public Z a(final int index) {
-    return mList.get(index - mOffset);
+  @Override
+  public Z a(final long index) {
+    return mList.get((int) (index - mOffset));
   }
 
-  /**
-   * Directly return the specified element of this sequence.
-   * @param index index (from 0)
-   * @return specified element
-   */
+  @Override
   public Z a(final Z index) {
     return mList.get(index.intValueExact() - mOffset);
   }

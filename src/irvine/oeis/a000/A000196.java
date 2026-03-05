@@ -25,7 +25,7 @@ public class A000196 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.SQRT.z(n);
   }
 

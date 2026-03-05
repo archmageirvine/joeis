@@ -20,8 +20,8 @@ public final class CyclotomicPolynomials extends MemoryFunction1<Polynomial<Z>> 
    * @param n parameter
    * @return cyclotomic polynomial
    */
-  public static Polynomial<Z> cyclotomic(final int n) {
-    return CYCLOTOMIC_POLYNOMIALS.get(n);
+  public static Polynomial<Z> cyclotomic(final long n) {
+    return CYCLOTOMIC_POLYNOMIALS.get((int) n);
   }
 
   /**
@@ -29,8 +29,8 @@ public final class CyclotomicPolynomials extends MemoryFunction1<Polynomial<Z>> 
    * @param n parameter
    * @return cyclotomic polynomial
    */
-  public static Polynomial<Z> inverse(final int n) {
-    return CYCLOTOMIC_POLYNOMIALS.inverseP(n);
+  public static Polynomial<Z> inverse(final long n) {
+    return CYCLOTOMIC_POLYNOMIALS.inverseP((int) n);
   }
 
   @Override

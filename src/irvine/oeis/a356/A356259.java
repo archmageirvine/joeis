@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A356259 Number of labeled rooted trees on [n] that have a primary branch.
+ * A356259 Number of labeled rooted trees on [n.intValue()] that have a primary branch.
  * a(n)=sum(i=1,floor(n/2),binom(n,n-i)*(n-i)^(n-i-1)*i^(i-1))
  * @author Georg Fischer
  */

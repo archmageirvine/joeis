@@ -18,7 +18,7 @@ public class A236358 extends LambdaSequence {
   public A236358() {
     super(1, n -> Integers.SINGLETON.count(1, n - 1, k -> {
       final Q mq = new Q(Functions.PHI.z(k), 2).add(new Q(Functions.PHI.z(n - k), 12));
-      final int m = mq.num().intValueExact();
+      final long m = mq.num().intValueExact();
       return mq.isInteger() && Predicates.PRIME.is(Z.THREE.pow(m).multiply(2).add(1));
     }));
   }

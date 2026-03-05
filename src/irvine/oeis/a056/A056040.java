@@ -23,7 +23,7 @@ public class A056040 extends HolonomicRecurrence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.FACTORIAL.z(n).divide(Functions.FACTORIAL.z(n / 2).square());
   }
 

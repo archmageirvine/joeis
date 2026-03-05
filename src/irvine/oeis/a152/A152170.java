@@ -7,7 +7,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A152170 a(n) is the total size of all the image sets of all functions from [n] to [n]. I.e., a(n) is the sum of the cardinalities of every image set of every function whose domain and co-domain is {1,2,...,n}.
+ * A152170 a(n) is the total size of all the image sets of all functions from [n.intValue()] to [n.intValue()]. I.e., a(n) is the sum of the cardinalities of every image set of every function whose domain and co-domain is {1,2,...,n}.
  * a(n)=sum(i=1,n,stirl2(n,i)*i!binom(n,i)*i)
  * @author Georg Fischer
  */

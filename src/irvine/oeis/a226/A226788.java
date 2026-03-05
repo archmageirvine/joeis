@@ -14,6 +14,6 @@ public class A226788 extends FilterSequence {
 
   /** Construct the sequence. */
   public A226788() {
-    super(1, new LambdaSequence(1, n -> new Z(Integer.toString(n) + Integer.toString(n + 1))), v -> Predicates.TRIANGULAR.is(v));
+    super(1, new LambdaSequence(1, n -> new Z(Long.toString(n) + Long.toString(n + 1))), v -> Predicates.TRIANGULAR.is(v));
   }
 }

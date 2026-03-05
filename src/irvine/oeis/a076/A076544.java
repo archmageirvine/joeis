@@ -14,7 +14,7 @@ public class A076544 extends LambdaSequence {
   /** Construct the sequence. */
   public A076544() {
     super(1, n -> {
-      final int mu = Functions.MOEBIUS.i(n);
+      final long mu = Functions.MOEBIUS.i(n);
       return Z.valueOf(mu + ((1 + Math.abs(mu) & 1) == 0 ? 1 : -1));
     });
   }

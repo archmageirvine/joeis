@@ -45,8 +45,8 @@ public class A020338 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    final String s = Integer.toString(n, mIBase);
+  public Z a(final long n) {
+    final String s = Long.toString(n, mIBase);
     return new Z(s + s);
   }
 

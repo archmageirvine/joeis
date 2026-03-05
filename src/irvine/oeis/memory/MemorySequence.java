@@ -81,12 +81,12 @@ public abstract class MemorySequence extends AbstractSequence implements Iterabl
    * @param n index
    * @return value of <code>a(n)</code>
    */
-  public Z a(final int n) {
-    final int m = n - mOffset;
+  public Z a(final long n) {
+    final long m = n - mOffset;
     while (m >= mTerms.size()) {
       mTerms.add(computeNext());
     }
-    return mTerms.get(n - mOffset);
+    return mTerms.get((int) (n - mOffset));
   }
 
   /**

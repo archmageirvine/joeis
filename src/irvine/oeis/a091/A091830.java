@@ -13,7 +13,7 @@ public class A091830 extends MultiTransformSequence {
   /** Construct the sequence. */
   public A091830() {
     super(1, (self, n2) -> {
-      final int n = n2 / 2;
+      final long n = n2 / 2;
       return (n2 & 1) == 0 ? self.a(n).add(1).and(Z.ONE) : self.a(n * 2).add(1);
     }, "1");
   }

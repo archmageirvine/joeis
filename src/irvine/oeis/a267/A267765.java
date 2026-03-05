@@ -13,6 +13,6 @@ public class A267765 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A267765() {
-    super(1, 0, k -> Predicates.SQUARE.is(new Z(Integer.toString(k, 5))));
+    super(1, 0, k -> Predicates.SQUARE.is(new Z(Long.toString(k, 5))));
   }
 }

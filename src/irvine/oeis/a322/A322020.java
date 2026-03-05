@@ -16,7 +16,7 @@ public class A322020 extends LambdaSequence {
   /** Construct the sequence. */
   public A322020() {
     super(1, n -> Integers.SINGLETON.productdiv(n, d -> {
-      final int g = Functions.GCD.i(d, n / d);
+      final long g = Functions.GCD.i(d, n / d);
       return Predicates.PRIME_POWER.is(g) ? Z.valueOf(g) : Z.ONE;
     }));
   }

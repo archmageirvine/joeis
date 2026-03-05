@@ -14,8 +14,8 @@ public class A165265 extends LambdaSequence {
   /** Construct the sequence. */
   public A165265() {
     super(0, n -> {
-      final int bc = Functions.DIGIT_SUM.i(2, n);
-      return (n == 0) ? Z.ONE : new Z(Integer.toString(bc) + Integer.toString(Functions.DIGIT_LENGTH.i(2, n) - bc));
+      final long bc = Functions.DIGIT_SUM.i(2, n);
+      return (n == 0) ? Z.ONE : new Z(Long.toString(bc) + Long.toString(Functions.DIGIT_LENGTH.i(2, n) - bc));
     });
   }
 }

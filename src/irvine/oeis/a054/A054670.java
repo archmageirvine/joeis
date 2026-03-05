@@ -23,11 +23,11 @@ public class A054670 extends MemoryFunction1Sequence<Q> {
       if (t == k) {
         return Q.ONE;
       } else if (t > k) {
-        return Rationals.SINGLETON.sum(0, k, j -> mU.get(n - 1, j).multiply(mU.get(n - 1, k - j)));
+        return Rationals.SINGLETON.sum(0, k, j -> mU.get(n - 1, j.intValue()).multiply(mU.get(n - 1, k - j.intValue())));
       } else if ((1 << (n + 1)) - 1 > k) {
         return Q.ZERO;
       } else {
-        return mU.get(n + 1, k).subtract(Rationals.SINGLETON.sum(1, k - 1, j -> mU.get(n, j).multiply(mU.get(n, k - j)))).divide(2);
+        return mU.get(n + 1, k).subtract(Rationals.SINGLETON.sum(1, k - 1, j -> mU.get(n, j.intValue()).multiply(mU.get(n, k - j.intValue())))).divide(2);
       }
     }
   };
@@ -47,7 +47,7 @@ public class A054670 extends MemoryFunction1Sequence<Q> {
         return sum;
       } else {
         return mV.get(1, j - k + 1).add(mV.get(k - 1, j - 1))
-          .add(Rationals.SINGLETON.sum(2, j - k, l -> mV.get(1, l).multiply(mV.get(k - 1, j - l))));
+          .add(Rationals.SINGLETON.sum(2, j - k, l -> mV.get(1, l.intValue()).multiply(mV.get(k - 1, j - l.intValue()))));
       }
     }
   };

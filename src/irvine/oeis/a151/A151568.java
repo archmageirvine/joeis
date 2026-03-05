@@ -17,13 +17,13 @@ public class A151568 extends MultiTransformSequence {
   /**
    * Generic constructor with parameters.
    * @param offset first index
-   * @param mul1 first multiplicant
-   * @param mul2 second multiplicant
+   * @param mul1 first multiplicand
+   * @param mul2 second multiplicand
    * @param init initial terms
    */
   public A151568(final int offset, final int mul1, final int mul2, final String inits) {
     super(0, (self, n) -> {
-      final int j = n - Integer.highestOneBit(n);
+      final long j = n - Long.highestOneBit(n);
       return self.a(j).multiply(mul1).add(self.a(j + 1).multiply(mul2));
     }, inits);
   }

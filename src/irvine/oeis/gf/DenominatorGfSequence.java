@@ -50,7 +50,7 @@ public class DenominatorGfSequence extends GfSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    return q(n).den();
+  public Z a(final long n) {
+    return q((int) n).den();
   }
 }

@@ -12,7 +12,7 @@ import irvine.oeis.LambdaSequence;
  */
 public class A294210 extends LambdaSequence {
 
-  private static int eval1(final int i) {
+  private static int eval1(final long i) {
     return Predicates.SQUARE_FREE.is(i) ? 1 : 0; // A008966
   }
 

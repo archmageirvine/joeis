@@ -22,6 +22,6 @@ public class A390784 extends Sequence1 {
   public Z next() {
     ++mN;
     final Z[] t = mT.nextRow();
-    return Integers.SINGLETON.sum(1, t.length - 1, k -> t[k].multiply(Binomial.binomial(mN, k - 1)));
+    return Integers.SINGLETON.sum(1, t.length - 1, k -> t[k.intValue()].multiply(Binomial.binomial(mN, k - 1)));
   }
 }

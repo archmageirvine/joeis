@@ -24,7 +24,7 @@ public class A393519 extends Sequence0 {
       if (n == 0) {
         return m == 0 ? Q.ONE : Q.ZERO;
       }
-      return Rationals.SINGLETON.sum(0, n - 1, q -> get(n - 1 - q, m - 1).multiply(mTau3.a(q + 1))).divide(n);
+      return Rationals.SINGLETON.sum(0, n - 1, q -> get((int) (n - 1 - q), m - 1).multiply(mTau3.a(q + 1))).divide(n);
     }
   };
 

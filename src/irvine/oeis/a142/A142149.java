@@ -18,7 +18,7 @@ public class A142149 extends MultiTransformSequence {
   /** Construct the sequence. */
   public A142149() {
     super(0, (self, n) -> {
-      final int h = n / 2;
+      final long h = n / 2;
       return ((n & 1) == 0) ? A048724.a(h) : A005408.a(h);
     }, "");
   }

@@ -11,6 +11,6 @@ public class A118950 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A118950() {
-    super(1, 0, k -> Integer.toString(k).matches("[^2357]*[2357]\\d*"));
+    super(1, 0, k -> Long.toString(k).matches("[^2357]*[2357]\\d*"));
   }
 }

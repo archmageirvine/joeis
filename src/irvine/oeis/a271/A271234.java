@@ -14,7 +14,7 @@ public class A271234 extends LambdaSequence {
   /** Construct the sequence. */
   public A271234() {
     super(1, n -> {
-      final int p = Functions.PRIME.i(n);
+      final long p = Functions.PRIME.i(n);
       return Z.TWO.pow(p - 1).mod(Z.valueOf(p).pow(3));
     });
   }

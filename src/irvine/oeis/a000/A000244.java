@@ -41,7 +41,7 @@ public class A000244 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Z.THREE.pow(n);
   }
 

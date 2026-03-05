@@ -15,7 +15,7 @@ public class A390809 extends LambdaSequence {
   /** Construct the sequence. */
   public A390809() {
     super(1, n -> Integers.SINGLETON.sum(1, n, k -> {
-      final int g = Functions.GCD.i(n, k);
+      final long g = Functions.GCD.i(n, k);
       return (g == 1 || g == 2) ? Z.valueOf(k) : Z.ZERO;
     }));
   }

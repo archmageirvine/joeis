@@ -44,7 +44,7 @@ public class A008289 extends MemoryFunction2Sequence<Integer, Z> implements Dire
   }
 
   @Override
-  public Z a(final int n, final int k) {
-    return get(n, k);
+  public Z a(final long n, final long k) {
+    return get((int) n, (int) k);
   }
 }

@@ -13,7 +13,7 @@ public class A283166 extends MultiTransformSequence {
   /** Construct the sequence. */
   public A283166() {
     super(0, (self, n) -> {
-      final int h = n / 2;
+      final long h = n / 2;
       return ((n & 1) == 0) ? Functions.SIGMA1.z(self.a(h)) : Functions.SIGMA1.z(self.a(h)).add(Functions.SIGMA1.z(self.a(h + 1)));
     }, "0, 1");
   }

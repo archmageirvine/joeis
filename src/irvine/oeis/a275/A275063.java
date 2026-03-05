@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A275063 Number of permutations p of [n] such that p(i)-i is a multiple of eight for all i in [n].
+ * A275063 Number of permutations p of [n.intValue()] such that p(i)-i is a multiple of eight for all i in [n.intValue()].
  * a(n)=prod(i=0,7,floor((n+i)/8)!)
  * @author Georg Fischer
  */

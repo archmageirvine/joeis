@@ -33,8 +33,8 @@ public class A005940 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    int m = n - 1;
+  public Z a(final long n) {
+    long m = n - 1;
     Z prod = Z.ONE;
     Z p = Z.TWO;
     do {

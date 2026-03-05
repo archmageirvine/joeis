@@ -20,7 +20,7 @@ public class A062881 extends Sequence1 {
     ++mN;
     final DegreeLimitedPolynomialRingField<Z> inner = new DegreeLimitedPolynomialRingField<>(IntegerField.SINGLETON, mN * mN);
     final PolynomialRingField<Polynomial<Z>> ring = new PolynomialRingField<>("y", inner);
-    return ring.product(1, 2 * mN - 1, k -> ring.sum(0, mN - Math.abs(k - mN), j -> ring.monomial(inner.monomial(Z.ONE, k * j), j))).coeff(mN).coeff(mN * mN);
+    return ring.product(1, 2 * mN - 1, k -> ring.sum(0, mN - Math.abs(k - mN), j -> ring.monomial(inner.monomial(Z.ONE, (int) (k * j)), j.intValue()))).coeff(mN).coeff(mN * mN);
   }
 }
 

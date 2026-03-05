@@ -28,7 +28,7 @@ public class A062383 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.NEXT_POWER_OF_2.z(n);
   }
 

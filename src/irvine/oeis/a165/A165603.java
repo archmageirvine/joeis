@@ -14,7 +14,7 @@ public class A165603 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A165603() {
     super(0, 1, k -> {
-      final int n = k / 4;
+      final long n = k / 4;
       return k % 4 == 3 && Integers.SINGLETON.sum(0, 2 * n + 1, i -> Functions.JACOBI.z(i, 4 * n + 3)).isZero();
     });
   }

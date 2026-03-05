@@ -12,6 +12,6 @@ public class A118943 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A118943() {
-    super(1, n -> Z.valueOf(Z.valueOf(11).pow(n).toString().charAt(n - 1) - '0'));
+    super(1, n -> Z.valueOf(Z.valueOf(11).pow(n).toString().charAt(n.intValue() - 1) - '0'));
   }
 }

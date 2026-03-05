@@ -12,6 +12,6 @@ public class A249166 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A249166() {
-    super(1, n -> new Z(Integer.toString(2 * n - 1) + Integer.toString(2 * n - 1)));
+    super(1, n -> new Z(Long.toString(2 * n - 1) + Long.toString(2 * n - 1)));
   }
 }

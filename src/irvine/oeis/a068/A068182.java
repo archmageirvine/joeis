@@ -28,7 +28,7 @@ public class A068182 extends Sequence0 {
     return g >= 0 ? new Q(Z.THREE.pow(g)) : new Q(Z.THREE.pow(-g)).reciprocal();
   }
 
-  private Q innerSum(final int k) {
+  private Q innerSum(final long k) {
     final Z a = Z.TWO.pow(2L * mN - 1 - 3L * k).add(Z.NEG_ONE.pow(k));
     return Rationals.SINGLETON.sum(0, k - mN / 2,
       g -> new Q(
@@ -36,7 +36,7 @@ public class A068182 extends Sequence0 {
         Functions.FACTORIAL.z(g)
           .multiply(Functions.FACTORIAL.z(k - g))
           .multiply(Functions.FACTORIAL.z(4 * k + 3 - 2 * mN - 4 * g))
-      ).multiply(pow3(g - 2)).divide(Functions.FACTORIAL.z(2 * mN - 1 - 3 * k)));
+      ).multiply(pow3(g.intValue() - 2)).divide(Functions.FACTORIAL.z(2 * mN - 1 - 3 * k)));
   }
 
   private Q pow34(final int g) {
@@ -58,7 +58,7 @@ public class A068182 extends Sequence0 {
     return Rationals.SINGLETON.sum(0, (n + 1) / 3,
         g -> new Q(
           Z.TWO.pow(n + 1 - 3L * g).add(Z.NEG_ONE.pow(n - g)),
-          Functions.FACTORIAL.z(g).multiply(Functions.FACTORIAL.z(n + 1 - 3 * g))).multiply(pow34(g - 1)))
+          Functions.FACTORIAL.z(g).multiply(Functions.FACTORIAL.z(n + 1 - 3 * g))).multiply(pow34(g.intValue() - 1)))
       .multiply(new Q(Functions.FACTORIAL.z(2 * n - 2), Functions.FACTORIAL.z(n - 1).multiply(6)));
   }
 

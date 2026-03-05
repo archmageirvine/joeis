@@ -12,7 +12,7 @@ public class A365472 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A365472() {
     super(1, 0, k -> {
-      final String s = Integer.toString(k);
+      final String s = Long.toString(k);
       return (s.indexOf('2') < 0 && s.indexOf('3') < 0 && s.indexOf('5') < 0 && s.indexOf('7') < 0) || (s.indexOf('0') < 0 && s.indexOf('1') < 0 && s.indexOf('4') < 0 && s.indexOf('6') < 0 && s.indexOf('8') < 0 && s.indexOf('9') < 0);
     });
   }

@@ -12,6 +12,6 @@ public class A151782 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A151782() {
-    super(1, n -> (n == 1) ? Z.ONE : Z.SEVEN.pow(Integer.bitCount(n - 1) - 1).multiply(8));
+    super(1, n -> (n == 1) ? Z.ONE : Z.SEVEN.pow(Long.bitCount(n - 1) - 1).multiply(8));
   }
 }

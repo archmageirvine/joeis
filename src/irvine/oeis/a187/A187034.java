@@ -18,7 +18,7 @@ public class A187034 extends GeneratingFunctionTriangle implements DirectArray {
   }
 
   @Override
-  public Z a(final int n, final int k) {
+  public Z a(final long n, final long k) {
     final Z bi = Functions.BINOMIAL.z(k, n - k);
     return bi.compareTo(Z.ZERO) > 0 ? Z.NEG_ONE.pow(n - k) : Z.ZERO;
   }

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A350102 Number of self-measuring subsets of the initial segment of the natural numbers strictly below n. Number of subsets S of [n] with S = distset(S).
+ * A350102 Number of self-measuring subsets of the initial segment of the natural numbers strictly below n. Number of subsets S of [n.intValue()] with S = distset(S).
  * a(n) = 2 + sum(k=1,n-1,floor((n - 1)/k))
  * @author Georg Fischer
  */

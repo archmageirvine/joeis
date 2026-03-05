@@ -27,7 +27,7 @@ public class A007732 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int k) {
+  public Z a(final long k) {
     long n = k;
     while ((n & 1) == 0) {
       n >>>= 1;

@@ -28,8 +28,8 @@ public class A000069 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    return Z.valueOf((n * 4L - 3 + ((Integer.bitCount(n - 1) & 1) == 0 ? 1 : -1)) / 2);
+  public Z a(final long n) {
+    return Z.valueOf((n * 4L - 3 + ((Long.bitCount(n - 1) & 1) == 0 ? 1 : -1)) / 2);
   }
 
 }

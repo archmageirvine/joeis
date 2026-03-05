@@ -17,7 +17,7 @@ public class A102370 extends Sequence0 implements DirectSequence {
     for l from 1 to n do if n+l mod 2^l = 0 then t1:=t1+2^l; fi; od: t1; end;
   */
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     Z t1 = Z.valueOf(n);
     for (int k = 1; k <= n; ++k) {
       final Z k2 = Z.ONE.shiftLeft(k);

@@ -16,7 +16,7 @@ public class A271834 extends LambdaSequence {
   /** Construct the sequence. */
   public A271834() {
     super(1, n -> Z.TWO.pow(n).subtract(Integers.SINGLETON.sum(0, n, m -> {
-      final int g = Functions.GCD.i(n, m);
+      final long g = Functions.GCD.i(n, m);
       return Binomial.binomial(n / g, m / g);
     })));
   }

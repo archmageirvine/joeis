@@ -136,7 +136,7 @@ public class A061526 extends Sequence1 {
   Z btd(final int n, final int p, final int q, final int k) {
     return p + q < k * n
       ? Z.ZERO
-      : Integers.SINGLETON.sum(1, k - 1, i -> c(n, i, k - i).multiply(c(n * (n - k), p - i * n, q - (k - i) * n)));
+      : Integers.SINGLETON.sum(1, k - 1, i -> c(n, i.intValue(), k - i.intValue()).multiply(c(n * (n - k), p - i.intValue() * n, q - (k - i.intValue()) * n)));
   }
 
   // Counts the positions with main diagonal an x n-in-a-row; the
@@ -199,12 +199,12 @@ public class A061526 extends Sequence1 {
 
   // The number of games of n x n tic-tac-toe won by x
   protected Z gx(final int n) {
-    return Integers.SINGLETON.sum(n, (n * n + 1) / 2, t -> gxt(n, t));
+    return Integers.SINGLETON.sum(n, (n * n + 1) / 2, t -> gxt(n, t.intValue()));
   }
 
   // The number of games of n x n tic-tac-toe won by o
   protected Z go(final int n) {
-    return Integers.SINGLETON.sum(n, (n * n) / 2, t -> got(n, t));
+    return Integers.SINGLETON.sum(n, (n * n) / 2, t -> got(n, t.intValue()));
   }
 
   // The number of games of n x n tic-tac-toe that end in a draw

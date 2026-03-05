@@ -11,6 +11,6 @@ public class A175332 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A175332() {
-    super(1, 1, k -> Integer.toString(k, 2).matches("11+0*"));
+    super(1, 1, k -> Long.toString(k, 2).matches("11+0*"));
   }
 }

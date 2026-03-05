@@ -13,6 +13,6 @@ public class A179636 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A179636() {
-    super(1, n -> Z.valueOf(Integer.toString(n).charAt(Functions.DIGIT_LENGTH.i(n) / 2) - '0'));
+    super(1, n -> Z.valueOf(Long.toString(n).charAt(Functions.DIGIT_LENGTH.i(n) / 2) - '0'));
   }
 }

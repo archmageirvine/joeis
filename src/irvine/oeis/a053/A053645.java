@@ -30,8 +30,8 @@ public class A053645 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    return Z.valueOf(n ^ Integer.highestOneBit(n));
+  public Z a(final long n) {
+    return Z.valueOf(n ^ Long.highestOneBit(n));
   }
 
 }

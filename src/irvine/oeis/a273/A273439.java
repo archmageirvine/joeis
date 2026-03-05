@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A273439 Number of endofunctions on [n] with exactly eight cycles.
+ * A273439 Number of endofunctions on [n.intValue()] with exactly eight cycles.
  * @author Georg Fischer
  */
 public class A273439 extends LambdaSequence {
@@ -16,7 +16,7 @@ public class A273439 extends LambdaSequence {
   /** Construct the sequence. */
   public A273439() {
     super(8, n -> {
-      final int k = 8;
+      final long k = 8;
       return Integers.SINGLETON.sum(0, n - 1, j -> Binomial.binomial(n - 1, j).multiply(Z.valueOf(n).pow(n - 1 - j)).multiply(Z.NEG_ONE.pow(k + j + 1)).multiply(Functions.STIRLING1.z(j + 1, k)));
     });
   }

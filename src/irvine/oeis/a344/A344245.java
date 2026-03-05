@@ -12,7 +12,7 @@ import irvine.oeis.LambdaSequence;
  */
 public class A344245 extends LambdaSequence {
 
-  private static int eval1(final int i) {
+  private static int eval1(final long i) {
     return Functions.BIG_OMEGA.i(i);
   }
 

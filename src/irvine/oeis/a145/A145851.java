@@ -14,6 +14,6 @@ public class A145851 extends FilterSequence {
 
   /** Construct the sequence. */
   public A145851() {
-    super(1, new LambdaSequence(0, k -> new Z(Integer.toString(k) + StringUtils.rep('9', k))), PRIME);
+    super(1, new LambdaSequence(0, k -> new Z(k + StringUtils.rep('9', k.intValue()))), PRIME);
   }
 }

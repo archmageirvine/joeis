@@ -15,7 +15,7 @@ public class A380844 extends LambdaSequence {
   /** Construct the sequence. */
   public A380844() {
     super(1, n -> {
-      final int h = Functions.DIGIT_SUM.i(2, n);
+      final long h = Functions.DIGIT_SUM.i(2, n);
       return Integers.SINGLETON.sumdiv(n, d -> Functions.DIGIT_SUM.i(2, d) == h ? Z.ONE : Z.ZERO);
     });
   }

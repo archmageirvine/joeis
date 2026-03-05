@@ -25,7 +25,7 @@ public class A013632 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Z.valueOf(mPrime.nextPrime(n) - n);
   }
 

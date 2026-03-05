@@ -26,7 +26,7 @@ public class A285012 extends A285037 {
   }
 
   protected Z t(final Integer n, final Integer k) {
-    return Integers.SINGLETON.sumdiv(n, d -> get(d, k));
+    return Integers.SINGLETON.sumdiv(n, d -> get(d.intValue(), k));
   }
 
   @Override

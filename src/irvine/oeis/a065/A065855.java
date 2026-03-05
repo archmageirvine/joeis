@@ -30,7 +30,7 @@ public class A065855 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Z.valueOf(n).subtract(Functions.PRIME_PI.z(n)).subtract(Z.ONE);
   }
 

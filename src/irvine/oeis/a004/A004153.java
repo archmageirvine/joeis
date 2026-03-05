@@ -17,7 +17,7 @@ public class A004153 extends A000142 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.REVERSE.z(Functions.FACTORIAL.z(n));
   }
 

@@ -173,9 +173,9 @@ public class Integers extends AbstractOrderedIntegralDomain<Z> implements Pow<Z>
    * @param predicate the predicate
    * @return count
    */
-  public Z count(final int lo, final int hi, final Function<Integer, Boolean> predicate) {
+  public Z count(final long lo, final long hi, final Function<Long, Boolean> predicate) {
     long sum = 0;
-    for (int k = lo; k <= hi; ++k) {
+    for (long k = lo; k <= hi; ++k) {
       if (predicate.apply(k)) {
         ++sum;
       }

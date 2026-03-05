@@ -23,7 +23,7 @@ public class A071568 extends GeneratingFunctionSequence implements DirectSequenc
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Z.valueOf(n).pow(3).add(n + 1);
   }
 }

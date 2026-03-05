@@ -37,7 +37,7 @@ public class A390149 extends Sequence0 {
         l1[l1.length - 1] += m - k;
         --l2[l2.length - 1];
         l2[0] += n - k;
-        s = s.signedAdd((c.length & 1) == 1, Integers.SINGLETON.product(0, l1.length - 1, j -> Binomial.binomial(l1[j] + l2[j], l1[j])));
+        s = s.signedAdd((c.length & 1) == 1, Integers.SINGLETON.product(0, l1.length - 1, j -> Binomial.binomial(l1[j.intValue()] + l2[j.intValue()], l1[j.intValue()])));
       }
     }
     return s;

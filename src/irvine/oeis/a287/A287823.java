@@ -16,9 +16,9 @@ public class A287823 extends LambdaSequence {
   /** Construct the sequence. */
   public A287823() {
     super(1, n -> {
-      final int b = Integer.highestOneBit(n);
-      final int k = n - b;
-      final int m = IntegerUtils.floorLog2(n);
+      final long b = Long.highestOneBit(n);
+      final long k = n - b;
+      final long m = IntegerUtils.floorLog2(n.intValue());
       return (m & 1) == 0 ? SEQ.a(b - k) : SEQ.a(k);
     });
   }

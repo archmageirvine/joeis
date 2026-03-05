@@ -13,6 +13,6 @@ public class A360825 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A360825() {
-    super(0, n -> (n <= 3) ? Z.valueOf(new int[]{1, 1, 2, 2}[n]) : Functions.FACTORIAL.z(n).mod(Functions.NEXT_PRIME.z(n)));
+    super(0, n -> (n <= 3) ? Z.valueOf(new int[]{1, 1, 2, 2}[n.intValue()]) : Functions.FACTORIAL.z(n).mod(Functions.NEXT_PRIME.z(n)));
   }
 }

@@ -20,7 +20,7 @@ public class A073075 extends Sequence0 {
   @Override
   public Z next() {
     if (++mN > 0) {
-      mA = RING.exp(RING.sum(0, mN / 2, k -> RING.multiply(mA.substitutePower(2 * k + 1, mN - 2 * k - 1), new Q(2, 2L * k + 1)).shift(2 * k + 1)), mN);
+      mA = RING.exp(RING.sum(0, mN / 2, k -> RING.multiply(mA.substitutePower(2 * k.intValue() + 1, mN - 2 * k.intValue() - 1), new Q(2, 2L * k + 1)).shift(2 * k.intValue() + 1)), mN);
     }
     return mA.coeff(mN).toZ();
   }

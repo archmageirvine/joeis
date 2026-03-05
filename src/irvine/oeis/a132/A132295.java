@@ -14,7 +14,7 @@ public class A132295 extends LambdaSequence {
   /** Construct the sequence. */
   public A132295() {
     super(1, n -> {
-      final int r = Functions.SQRT.i(n);
+      final long r = Functions.SQRT.i(n);
       return Functions.TRIANGULAR.z(n).subtract(Z.valueOf(r).multiply(Z.valueOf(r + 1)).multiply(Z.valueOf(2L * r + 1)).divide(6));
     });
   }

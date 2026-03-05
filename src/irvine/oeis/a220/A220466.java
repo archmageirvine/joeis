@@ -12,6 +12,6 @@ public class A220466 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A220466() {
-    super(1, (self, n) -> ((n & 1) == 0) ? self.a(n / 2).multiply(4).subtract(Integer.lowestOneBit(n / 2)) : Z.valueOf(n / 2 + 1), "1");
+    super(1, (self, n) -> ((n & 1) == 0) ? self.a(n / 2).multiply(4).subtract(Long.lowestOneBit(n / 2)) : Z.valueOf(n / 2 + 1), "1");
   }
 }

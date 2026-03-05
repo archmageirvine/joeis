@@ -13,7 +13,7 @@ public class A077503 extends LambdaSequence {
   /** Construct the sequence. */
   public A077503() {
     super(1, n -> {
-      final int d = n - n.toString().length();
+      final long d = n - n.toString().length();
       final Z x = Z.TEN.pow(d).multiply(n);
       final Z y = x.sqrt();
       return (x.auxiliary() == 0 ? y.add(1) : y).square();

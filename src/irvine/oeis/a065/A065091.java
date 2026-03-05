@@ -21,7 +21,7 @@ public class A065091 extends A000040 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.PRIME.z(n + 1);
   }
 

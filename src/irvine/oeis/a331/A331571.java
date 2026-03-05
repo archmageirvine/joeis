@@ -56,7 +56,7 @@ public class A331571 extends A188445 {
         }
       }
       final int jj = j;
-      final Q t = Rationals.SINGLETON.sum(j, m, i -> q.coeff(i - jj).multiply(f.coeff(i - 1)));
+      final Q t = Rationals.SINGLETON.sum(j, m, i -> q.coeff((int) (i - jj)).multiply(f.coeff((int) (i - 1))));
       sum = sum.add(s.multiply(t));
     }
     return sum.toZ();

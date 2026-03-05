@@ -12,6 +12,6 @@ public class A117973 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A117973() {
-    super(0, n -> Z.TWO.pow(Integer.bitCount(n) + 1));
+    super(0, n -> Z.TWO.pow(Long.bitCount(n) + 1));
   }
 }

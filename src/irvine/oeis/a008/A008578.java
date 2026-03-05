@@ -23,7 +23,7 @@ public class A008578 extends PrependSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return (n == 1) ? Z.ONE : Functions.PRIME.z(n - 1);
   }
 

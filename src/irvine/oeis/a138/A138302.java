@@ -35,7 +35,7 @@ public class A138302 extends AbstractSequence implements DirectPredicate {
   }
 
   @Override
-  public boolean is(final int n) {
+  public boolean is(final long n) {
     return is(Z.valueOf(n));
   }
 

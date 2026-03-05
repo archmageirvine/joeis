@@ -13,6 +13,6 @@ public class A379578 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A379578() {
-    super(0, n -> new Z(StringUtils.translate(Integer.toString(n, 4), "0123", "1302"), 4));
+    super(0, n -> new Z(StringUtils.translate(Long.toString(n, 4), "0123", "1302"), 4));
   }
 }

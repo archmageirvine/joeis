@@ -13,7 +13,7 @@ public class A249629 extends MultiTransformSequence {
   /** Construct the sequence. */
   public A249629() {
     super(0, (self, n) -> {
-      final int c = (n & 1) != 0 ? n / 2 + 1 : n / 2;
+      final long c = (n & 1) != 0 ? n / 2 + 1 : n / 2;
       return self.a(n - 1).multiply(4).add(Z.FOUR.pow(c)).subtract(self.a(c));
     }, "0,0");
   }

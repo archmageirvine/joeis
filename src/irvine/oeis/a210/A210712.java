@@ -14,7 +14,7 @@ public class A210712 extends FilterSequence {
   /** Construct the sequence. */
   public A210712() {
     super(1, new LambdaSequence(1, n -> {
-      final String sn = Integer.toString(n);
+      final String sn = Long.toString(n);
       return new Z(sn + sn + sn + "1");
     }), PRIME);
   }

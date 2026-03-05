@@ -13,7 +13,7 @@ public class A176716 extends MultiTransformSequence {
   /** Construct the sequence. */
   public A176716() {
     super(1, (self, m) -> {
-      final int n = m / 2;
+      final long n = m / 2;
       return (m & 1) == 0 ? Functions.PRIME.z(n).multiply(self.a(n)) : Functions.PRIME.z(n).multiply(self.a(n)).add(self.a(n + 1));
     }, "1");
   }

@@ -13,7 +13,7 @@ public class A392225 extends LambdaSequence {
   /** Construct the sequence. */
   public A392225() {
     super(1, n -> {
-      final String sn = Integer.toString(n);
+      final String sn = Long.toString(n);
       return new Z(sn + "1" + sn);
     });
   }

@@ -16,7 +16,7 @@ public class A186182 extends LambdaSequence {
   /** Construct the sequence. */
   public A186182() {
     super(0, n -> {
-      final int m = 4;
+      final long m = 4;
       return (n == 0) ? Z.ONE : Rationals.SINGLETON.sum(1, n, k -> new Q(Binomial.binomial((long) n * (m + 1) - (long) m * k - 1, n - k).multiply(k)).divide(n * m - (long) (m - 1) * k)).num();
     });
   }

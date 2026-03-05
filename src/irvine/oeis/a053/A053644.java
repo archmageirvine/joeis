@@ -23,8 +23,8 @@ public class A053644 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    return Z.valueOf(Integer.highestOneBit(n));
+  public Z a(final long n) {
+    return Z.valueOf(Long.highestOneBit(n));
   }
 
 }

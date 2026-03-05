@@ -24,7 +24,7 @@ public class A010786 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     Z prod = Z.ONE;
     for (long k = 1; k <= n; ++k) {
       prod = prod.multiply(n / k);

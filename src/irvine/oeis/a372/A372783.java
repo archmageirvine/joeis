@@ -14,7 +14,7 @@ public class A372783 extends LambdaSequence {
   /** Construct the sequence. */
   public A372783() {
     super(0, n -> {
-      final String sn = Integer.toString(n, 3);
+      final String sn = Long.toString(n, 3);
       return new Z(sn.substring(0, 1) + StringUtils.translate(sn.substring(1), "01", "10"), 3);
     });
   }

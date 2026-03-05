@@ -14,6 +14,6 @@ public class A393422 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A393422() {
-    super(1, n -> Integers.SINGLETON.sum(0, Functions.DIGIT_LENGTH.i(2, n) - 2, e -> Z.valueOf(e + 1).square().multiply(Z.valueOf(n).testBit(e) ? -1 : 1)));
+    super(1, n -> Integers.SINGLETON.sum(0, Functions.DIGIT_LENGTH.i(2, n) - 2, e -> Z.valueOf(e + 1).square().multiply(Z.valueOf(n).testBit(e.intValue()) ? -1 : 1)));
   }
 }

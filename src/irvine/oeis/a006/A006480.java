@@ -25,7 +25,7 @@ public class A006480 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Binomial.binomial(2L * n, n).multiply(Binomial.binomial(3L * n, n));
   }
 

@@ -284,8 +284,8 @@ public class HypergeometricSequence extends AbstractSequence implements DirectSe
   }
 
   @Override
-  public Z a(final int n) {
-    return mInitNo > n - mOffset ? mInits[n - mOffset] : mLambdaQ.apply(mN, getTerm(n));
+  public Z a(final long n) {
+    return mInitNo > n - mOffset ? mInits[(int) (n - mOffset)] : mLambdaQ.apply(mN, getTerm((int) n));
   }
 
   @Override

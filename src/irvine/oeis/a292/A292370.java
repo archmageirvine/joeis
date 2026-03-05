@@ -12,6 +12,6 @@ public class A292370 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A292370() {
-    super(0, n -> (n == 0) ? Z.ZERO : new Z(Integer.toString(n, 4).replaceAll("[123]", "x").replaceAll("0", "1").replaceAll("x", "0"), 2));
+    super(0, n -> (n == 0) ? Z.ZERO : new Z(Long.toString(n, 4).replaceAll("[123]", "x").replaceAll("0", "1").replaceAll("x", "0"), 2));
   }
 }

@@ -12,7 +12,7 @@ public class A385298 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A385298() {
     super(1, 0, k -> {
-      final String s = Integer.toString(k);
+      final String s = Long.toString(k);
       return s.matches("[09]+|1+|2+|3+|4+|5+|6+|7+|8+");
     });
   }

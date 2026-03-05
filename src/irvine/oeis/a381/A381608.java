@@ -13,6 +13,6 @@ public class A381608 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A381608() {
-    super(0, 0, k -> !Pattern.compile("21*2").matcher(Integer.toString(k, 3)).find());
+    super(0, 0, k -> !Pattern.compile("21*2").matcher(Long.toString(k, 3)).find());
   }
 }

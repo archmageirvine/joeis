@@ -12,8 +12,8 @@ public class A389428 extends Sequence0 {
 
   private int mN = -1;
 
-  protected long m(final int i, final int j, final int n) {
-    return 1 - j + (long) i * n + (2L * j - n - 1) * (i & 1);
+  protected long m(final long i, final long j, final long n) {
+    return 1 - j + i * n + (2L * j - n - 1) * (i & 1);
   }
 
   @Override

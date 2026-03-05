@@ -39,7 +39,7 @@ public class A049711 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Z.valueOf(n).subtract(Functions.PREV_PRIME.z(n));
   }
 

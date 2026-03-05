@@ -38,11 +38,11 @@ public class A059715 extends Sequence1 {
 
   private Polynomial<Z> c(final int g, final int n, final int m) {
     return RING.subtract(p(g, n, m),
-      RING.sum(0, n - 1, k -> RING.multiply(c(g, k, m), p(g, n - k - 1, m), m)));
+      RING.sum(0, n - 1, k -> RING.multiply(c(g, k.intValue(), m), p(g, n - k.intValue() - 1, m), m)));
   }
 
   private Polynomial<Z> c(final int g, final int m) {
-    return RING.sum(0, 2 * m, n -> c(g, n, m));
+    return RING.sum(0, 2L * m, n -> c(g, n.intValue(), m));
   }
 
   @Override

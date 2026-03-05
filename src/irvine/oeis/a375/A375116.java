@@ -10,10 +10,10 @@ import irvine.oeis.LambdaSequence;
  */
 public class A375116 extends LambdaSequence {
 
-  private static final int[] SMALL = {16, 25, 35, 45, 55, 66};
+  private static final long[] SMALL = {16, 25, 35, 45, 55, 66};
 
   /** Construct the sequence. */
   public A375116() {
-    super(4, n -> (n < 10) ? Z.valueOf(SMALL[n - 4]) : Z.valueOf(12L * n - 43).subtract(n & 1));
+    super(4, n -> (n < 10) ? Z.valueOf(SMALL[n.intValue() - 4]) : Z.valueOf(12L * n - 43).subtract(n & 1));
   }
 }

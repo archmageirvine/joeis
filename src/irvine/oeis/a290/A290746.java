@@ -37,7 +37,7 @@ public class A290746 extends Sequence1 {
   }
 
   protected Z lyndon(final int s, final int n) {
-    return Integers.SINGLETON.sum(1, n, m -> Z.valueOf(mS).pow(n - m).multiply(n - m + 1).multiply(inner(m, mS)).divide(m));
+    return Integers.SINGLETON.sum(1, n, m -> Z.valueOf(mS).pow(n - m).multiply(n - m + 1).multiply(inner(m.intValue(), mS)).divide(m));
   }
 
   @Override

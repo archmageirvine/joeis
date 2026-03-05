@@ -22,11 +22,11 @@ public class A067710 extends Sequence1 {
     mH.add(Q.ZERO);
   }
 
-  private Q h(final int k) {
+  private Q h(final long k) {
     while (k >= mH.size()) {
       mH.add(mHarmonicSequence.nextQ());
     }
-    return mH.get(k);
+    return mH.get((int) k);
   }
 
   @Override

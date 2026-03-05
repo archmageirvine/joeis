@@ -11,6 +11,6 @@ public class A132141 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A132141() {
-    super(1, 1, k -> Integer.toString(k, 3).matches("1[012]*"));
+    super(1, 1, k -> Long.toString(k, 3).matches("1[012]*"));
   }
 }

@@ -80,6 +80,6 @@ public class A059050 extends Sequence0 {
     if (++mN > 128) {
       return null;
     }
-    return Integers.SINGLETON.sum(0, PARMS.length - 1, k -> Binomial.binomial(PARMS[k][1], mN).multiply(PARMS[k][0]));
+    return Integers.SINGLETON.sum(0, PARMS.length - 1, k -> Binomial.binomial(PARMS[k.intValue()][1], mN).multiply(PARMS[k.intValue()][0]));
   }
 }

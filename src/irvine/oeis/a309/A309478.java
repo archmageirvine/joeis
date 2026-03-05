@@ -12,7 +12,7 @@ import irvine.oeis.LambdaSequence;
  */
 public class A309478 extends LambdaSequence {
 
-  private static int eval1(final int i) {
+  private static int eval1(final long i) {
     return Math.abs(Functions.MOEBIUS.i(i)); // A008966
   }
 

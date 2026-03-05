@@ -16,6 +16,6 @@ public class A318161 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A318161() {
-    super(0, n -> (n <= 0) ? Z.ONE : A180281.triangleElement(2 * n, n));
+    super(0, n -> (n <= 0) ? Z.ONE : A180281.triangleElement((int) (2 * n), n.intValue()));
   }
 }

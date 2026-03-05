@@ -101,11 +101,11 @@ public class LambdaArray extends AbstractSequence implements DirectArray {
    * @param k column number
    * @return A[n, k], or 0 for k &lt; 0 or k &gt; n.
    */
-  public Z a(final int n, final int k) {
+  public Z a(final long n, final long k) {
     if (k < mColMin || k > n) {
       return Z.ZERO;
     }
-    return mLambda.apply(n, k);
+    return mLambda.apply((int) n, (int) k);
   }
 
   /**

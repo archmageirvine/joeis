@@ -46,7 +46,7 @@ public class A000031 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     if (n < 4) {
       return Z.valueOf(n + 1);
     }

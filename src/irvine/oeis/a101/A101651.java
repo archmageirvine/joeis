@@ -22,7 +22,7 @@ public class A101651 extends LambdaSequence {
    * @param offset first index
    * @param base raise this to the power of A010060
    */
-  public A101651(final int offset, final int base) {
+  public A101651(final int offset, final long base) {
     super(offset, n -> Integers.SINGLETON.product(0, n, k -> Z.ONE.add(Z.valueOf(base).pow(Functions.THUE_MORSE.i(k)))).divide(2));
   }
 }

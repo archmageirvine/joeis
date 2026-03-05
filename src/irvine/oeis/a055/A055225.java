@@ -24,7 +24,7 @@ public class A055225 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Integers.SINGLETON.sumdiv(n, k -> Z.valueOf(n / k).pow(k));
   }
 

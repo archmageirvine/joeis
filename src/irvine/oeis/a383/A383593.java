@@ -12,6 +12,6 @@ public class A383593 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A383593() {
-    super(0, n -> new Z(Integer.toString(n, 2).replaceFirst("0", "1"), 2));
+    super(0, n -> new Z(Long.toString(n, 2).replaceFirst("0", "1"), 2));
   }
 }

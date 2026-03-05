@@ -24,7 +24,7 @@ public interface DirectPredicate extends Sequence {
    * @return term
    * @throws UnsupportedOperationException if the term cannot be computed or represented.
    */
-  boolean is(final int n);
+  boolean is(final long n);
 
 }
 

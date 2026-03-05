@@ -12,6 +12,6 @@ public class A387154 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A387154() {
-    super(2, n -> n <= 6 ? Z.valueOf(new long[] {0L, 0L, 401120980260L, 360360L, 55440L, 110880L, 100800L}[n]) : Z.TWO.pow(n).multiply(945));
+    super(2, n -> n <= 6 ? Z.valueOf(new long[] {0L, 0L, 401120980260L, 360360L, 55440L, 110880L, 100800L}[n.intValue()]) : Z.TWO.pow(n).multiply(945));
   }
 }

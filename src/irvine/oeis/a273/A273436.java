@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A273436 Number of endofunctions on [n] with exactly five cycles.
+ * A273436 Number of endofunctions on [n.intValue()] with exactly five cycles.
  * @author Georg Fischer
  */
 public class A273436 extends LambdaSequence {
@@ -16,7 +16,7 @@ public class A273436 extends LambdaSequence {
   /** Construct the sequence. */
   public A273436() {
     super(5, n -> {
-      final int k = 5;
+      final long k = 5;
       return Integers.SINGLETON.sum(0, n - 1, j -> Binomial.binomial(n - 1, j).multiply(Z.valueOf(n).pow(n - 1 - j)).multiply(Z.NEG_ONE.pow(k + j + 1)).multiply(Functions.STIRLING1.z(j + 1, k)));
     });
   }

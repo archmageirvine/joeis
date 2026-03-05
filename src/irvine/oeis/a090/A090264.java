@@ -14,7 +14,7 @@ public class A090264 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A090264() {
     super(1, 1, k -> {
-      final String ks = Integer.toString(k);
+      final String ks = Long.toString(k);
       return Predicates.PRIME.is(new Z(ks + "7" + ks)) && Predicates.PRIME.is(new Z("7" + ks + "7"));
     });
   }

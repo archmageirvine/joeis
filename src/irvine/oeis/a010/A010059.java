@@ -23,8 +23,8 @@ public class A010059 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    return ((Integer.bitCount(n) & 1) == 0) ? Z.ONE : Z.ZERO;
+  public Z a(final long n) {
+    return ((Long.bitCount(n) & 1) == 0) ? Z.ONE : Z.ZERO;
   }
 
 }

@@ -14,6 +14,6 @@ public class A339893 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A339893() {
-    super(1, n -> Z.valueOf(IntegerUtils.floorLog2(n) - Functions.BIG_OMEGA.l(n)));
+    super(1, n -> Z.valueOf(IntegerUtils.floorLog2(n.intValue()) - Functions.BIG_OMEGA.l(n)));
   }
 }

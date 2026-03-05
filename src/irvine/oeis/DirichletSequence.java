@@ -37,7 +37,7 @@ public class DirichletSequence extends AbstractSequence implements DirectSequenc
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return mDs.coeff(n);
   }
 

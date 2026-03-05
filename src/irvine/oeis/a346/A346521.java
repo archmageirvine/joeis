@@ -15,6 +15,6 @@ public class A346521 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A346521() {
-    super(0, n -> Integers.SINGLETON.sum(0, n, j -> A346520.matrixElement(n - j, j)));
+    super(0, n -> Integers.SINGLETON.sum(0, n, j -> A346520.matrixElement((int) (n - j), j.intValue())));
   }
 }

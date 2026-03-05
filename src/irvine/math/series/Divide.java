@@ -29,7 +29,7 @@ class Divide<E> extends MemoryFunction1<E> implements Series<E> {
     if (n < 0) {
       return mElementField.zero();
     }
-    final E sum = mElementField.sum(1, Math.min(n, mT.bound()), k -> mElementField.multiply(get(n - k), mT.coeff(k)));
+    final E sum = mElementField.sum(1, Math.min(n, mT.bound()), k -> mElementField.multiply(get(n - k), mT.coeff(k.intValue())));
     return mElementField.divide(mElementField.subtract(mS.coeff(n), sum), mT.coeff(0));
   }
 

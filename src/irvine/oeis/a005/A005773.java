@@ -24,7 +24,7 @@ public class A005773 extends HolonomicRecurrence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     // a(n) = Sum_{q=0..n} binomial(q, floor(q/2))*binomial(n-1, q) for n > 0
     return n == 0 ? Z.ONE : Integers.SINGLETON.sum(0, n, k -> Binomial.binomial(k, k / 2).multiply(Binomial.binomial(n - 1, k)));
   }

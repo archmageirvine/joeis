@@ -69,8 +69,8 @@ public abstract class LambdaTriangle extends Triangle implements DirectArray {
    * @param k shifted column index
    * @return T(n, k)
    */
-  public Z a(final int n, final int k) {
-    return mLambda.apply(n, k);
+  public Z a(final long n, final long k) {
+    return mLambda.apply((int) n, (int) k);
   }
 
 }

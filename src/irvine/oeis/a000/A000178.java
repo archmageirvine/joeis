@@ -23,7 +23,7 @@ public class A000178 extends PartialProductSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     // a(0) = 1, a(n) = 1^n * 2^(n-1) * 3^(n-2) * ... * n = Product_{r=1..n} r^(n-r+1).
     return n == 0 ? Z.ONE : Integers.SINGLETON.product(1, n, r -> Z.valueOf(r).pow(n - r + 1));
   }

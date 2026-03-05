@@ -12,7 +12,7 @@ public class A225722 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A225722() {
     super(1, 1, k -> {
-      final int d = k % 10;
+      final long d = k % 10;
       return d > 1 && k % (d * d * d) == 0;
     });
   }

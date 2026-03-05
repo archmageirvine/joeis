@@ -36,7 +36,7 @@ public class A391877 extends Sequence1 {
     Arrays.fill(k, 1);
     Z sum = Z.ZERO;
     do {
-      final Z prod = Integers.SINGLETON.product(0, mParts - 1, j -> Binomial.binomial(mN - 1, k[j] - 1).multiply(Functions.FACTORIAL.z(mN).divide(Functions.FACTORIAL.z(k[j])).multiply(Z.NEG_ONE.pow(mN + k[j]))));
+      final Z prod = Integers.SINGLETON.product(0, mParts - 1, j -> Binomial.binomial(mN - 1, k[j.intValue()] - 1).multiply(Functions.FACTORIAL.z(mN).divide(Functions.FACTORIAL.z(k[j.intValue()])).multiply(Z.NEG_ONE.pow(mN + k[j.intValue()]))));
       sum = sum.add(prod.multiply(Functions.FACTORIAL.z(Functions.SUM.l(k) - 1)));
     } while (bumper.bump(k));
     return sum;

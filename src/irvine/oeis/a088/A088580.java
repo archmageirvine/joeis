@@ -24,7 +24,7 @@ public class A088580 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.SIGMA1.z(n).add(1);
   }
 

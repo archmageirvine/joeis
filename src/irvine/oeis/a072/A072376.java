@@ -12,6 +12,6 @@ public class A072376 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A072376() {
-    super(0, n -> Z.valueOf((n <= 1) ? n : Integer.highestOneBit(n) / 2));
+    super(0, n -> Z.valueOf((n <= 1) ? n : Long.highestOneBit(n) / 2));
   }
 }

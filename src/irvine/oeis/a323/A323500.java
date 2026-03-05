@@ -14,7 +14,7 @@ public class A323500 extends LambdaSequence {
   /** Construct the sequence. */
   public A323500() {
     super(1, n -> {
-      final int n4 = n & 3;
+      final long n4 = n & 3;
       if (n == 1) {
         return Z.ONE;
       } else if (n4 == 0) {

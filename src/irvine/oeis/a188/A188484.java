@@ -19,7 +19,7 @@ public class A188484 extends FilterNumberSequence {
   public A188484() {
     super(1, 1, k -> {
       final Z ab = A033880.a(k).abs();
-      return Integer.bitCount(k) != 1 && ab.testBit(0) && Predicates.SQUARE.is(ab);
+      return Long.bitCount(k) != 1 && ab.testBit(0) && Predicates.SQUARE.is(ab);
     });
   }
 }

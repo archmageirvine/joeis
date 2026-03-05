@@ -13,8 +13,8 @@ public class A274102 extends LambdaSequence {
   /** Construct the sequence. */
   public A274102() {
     super(0, n -> {
-      final int k = n / 2;
-      final int j = n % 2;
+      final long k = n / 2;
+      final long j = n % 2;
       return CR.valueOf(k).sqrt().add(CR.PI.multiply(j)).sin().multiply(k).round();
     });
   }

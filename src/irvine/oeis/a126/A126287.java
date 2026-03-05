@@ -17,6 +17,6 @@ public class A126287 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A126287() {
-    super(1, n -> (n <= 3) ? Z.valueOf(new int[] {1, 1, 2}[n - 1]) : A032742.a(n).multiply(Functions.LPF.z(n - 1)));
+    super(1, n -> (n <= 3) ? Z.valueOf(new int[] {1, 1, 2}[n.intValue() - 1]) : A032742.a(n).multiply(Functions.LPF.z(n - 1)));
   }
 }

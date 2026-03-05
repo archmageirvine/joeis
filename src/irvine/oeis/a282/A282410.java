@@ -15,7 +15,7 @@ public class A282410 extends LambdaSequence {
   /** Construct the sequence. */
   public A282410() {
     super(1, n -> {
-      final int p = Functions.PRIME.i(n);
+      final long p = Functions.PRIME.i(n);
       return Binomial.binomial(2L * p - 1, p - 1, Z.valueOf(p).pow(5));
     });
   }

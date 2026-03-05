@@ -28,7 +28,7 @@ public class A073151 extends Sequence0 {
       if (m == 0) {
         return mA.a(n);
       }
-      return Integers.SINGLETON.sum(0, m, k -> mA.a(k).multiply(get(n - k, 0)));
+      return Integers.SINGLETON.sum(0, m, k -> mA.a(k).multiply(get((int) (n - k), 0)));
     }
   };
 

@@ -36,7 +36,7 @@ public class A122111 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return A181819.a(A108951.a(n));
   }
 

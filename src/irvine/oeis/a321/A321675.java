@@ -14,6 +14,6 @@ public class A321675 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A321675() {
-    super(0, n -> Integers.SINGLETON.sum(1, new int[] {1, 10, 100, 1000, 10000, 100000, 1000000, 10000000}[n], k -> Z.valueOf(k).multiply(Functions.SIGMA1.z(k))));
+    super(0, n -> Integers.SINGLETON.sum(1, new int[] {1, 10, 100, 1000, 10000, 100000, 1000000, 10000000}[n.intValue()], k -> Z.valueOf(k).multiply(Functions.SIGMA1.z(k))));
   }
 }

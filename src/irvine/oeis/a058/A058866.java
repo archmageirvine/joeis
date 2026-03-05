@@ -34,10 +34,10 @@ public class A058866 extends Sequence1 {
       final Polynomial<Q> n2 = RING.multiply(mN, Q.TWO);
       mM1 = RING.add(RING.one(), mM.substitutePower(2, mK), n2.substitutePower(2, mK)).shift(1);
       mN1 = A2Z2.apply(RING.add(RING.one(), mM, n2), mK).shift(1);
-      final Polynomial<Q> s0 = RING.sum(1, mK, k -> RING.divide(RING.add(mM1.substitutePower(k, mK), mN1.substitutePower(2 * k, mK)), new Q(k)));
+      final Polynomial<Q> s0 = RING.sum(1, mK, k -> RING.divide(RING.add(mM1.substitutePower(k.intValue(), mK), mN1.substitutePower(2 * k.intValue(), mK)), new Q(k)));
       mM = RING.subtract(RING.exp(s0, mK), RING.one());
       final Polynomial<Q> n12 = RING.multiply(mN1, Q.TWO);
-      final Polynomial<Q> s1 = RING.sum(1, mK, k -> RING.divide(RING.add(mM1.substitutePower(k, mK), n12.substitutePower(k, mK)), new Q(k)));
+      final Polynomial<Q> s1 = RING.sum(1, mK, k -> RING.divide(RING.add(mM1.substitutePower(k.intValue(), mK), n12.substitutePower(k.intValue(), mK)), new Q(k)));
       mN = RING.divide(RING.subtract(RING.subtract(RING.exp(s1, mK), RING.one()), mM), Q.TWO);
     }
   }

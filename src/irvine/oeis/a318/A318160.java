@@ -16,6 +16,6 @@ public class A318160 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A318160() {
-    super(0, n -> (n <= 3) ? Z.valueOf(new int[] {1, 1, 1, 6}[n]) : (A180281.triangleElement(n, ((n & 1) == 0) ? n / 2 : (n + 1) / 2)));
+    super(0, n -> (n <= 3) ? Z.valueOf(new int[] {1, 1, 1, 6}[n.intValue()]) : (A180281.triangleElement(n, ((n & 1) == 0) ? n / 2 : (n + 1) / 2)));
   }
 }

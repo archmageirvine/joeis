@@ -13,7 +13,7 @@ public class A113790 extends LambdaSequence {
   /** Construct the sequence. */
   public A113790() {
     super(1, n -> {
-      final int m = ((n - 1) / 5) * 5 + 3;
+      final long m = ((n - 1) / 5) * 5 + 3;
       return Z.valueOf(m).add(Z.valueOf(n - m).multiply(Z.FIVE.subtract(Z.valueOf(n - m).square())).divide(2));
     });
   }

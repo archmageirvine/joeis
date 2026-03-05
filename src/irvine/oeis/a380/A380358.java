@@ -11,6 +11,6 @@ public class A380358 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A380358() {
-    super(1, 1, k -> (k & 3) == 3 && Integer.toString(k, 2).indexOf("00") < 0);
+    super(1, 1, k -> (k & 3) == 3 && !Long.toString(k, 2).contains("00"));
   }
 }

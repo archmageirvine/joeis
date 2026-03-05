@@ -15,8 +15,8 @@ import irvine.oeis.Sequence0;
 public class A054718 extends Sequence0 {
 
   protected Z mBase;
-  protected int mN;
-  protected Function<Integer, Z> mF;
+  protected long mN;
+  protected Function<Long, Z> mF;
 
   /** Construct the sequence. */
   public A054718() {
@@ -25,7 +25,7 @@ public class A054718 extends Sequence0 {
 
   /**
    * Generic constructor with parameters
-   * @param base
+   * @param base sequence base
    */
   public A054718(final int base) {
     mBase = Z.valueOf(base);

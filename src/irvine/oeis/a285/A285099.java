@@ -13,6 +13,6 @@ public class A285099 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A285099() {
-    super(0, n -> Integer.bitCount(n) < 2 ? Z.ZERO : Functions.VALUATION.z(n & (n - 1), 2));
+    super(0, n -> Long.bitCount(n) < 2 ? Z.ZERO : Functions.VALUATION.z(n & (n - 1), 2));
   }
 }

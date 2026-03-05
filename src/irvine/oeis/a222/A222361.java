@@ -13,7 +13,7 @@ public class A222361 extends LambdaSequence {
   /** Construct the sequence. */
   public A222361() {
     super(1, n -> {
-      final int p = Functions.PRIME.i(n);
+      final long p = Functions.PRIME.i(n);
       return Functions.FIBONACCI.z(p).subtract(Functions.JACOBI.i(p, 5)).divide(p);
     });
   }

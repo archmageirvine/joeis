@@ -13,8 +13,8 @@ public class A122155 extends LambdaSequence {
   /** Construct the sequence. */
   public A122155() {
     super(0, n -> {
-      final int m = Integer.highestOneBit(n);
-      final int j = n - m;
+      final long m = Long.highestOneBit(n);
+      final long j = n - m;
       return (j == 0) ? Z.valueOf(n) : Z.valueOf(2L * m - j);
     });
   }

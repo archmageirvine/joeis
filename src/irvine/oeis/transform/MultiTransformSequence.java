@@ -22,17 +22,17 @@ import irvine.oeis.AbstractSequence;
 public class MultiTransformSequence extends AbstractSequence {
 
   @FunctionalInterface
-  public interface MultiFunction<MultiTransformSequence, Integer, Z> {
+  public interface MultiFunction<MultiTransformSequence, Long, Z> {
     /**
      * Apply the function.
      * @param self reference to enclosing class
      * @param n current index
      * @return value of <code>a(n)</code>
      */
-    Z apply(MultiTransformSequence self, Integer n);
+    Z apply(MultiTransformSequence self, Long n);
   }
 
-  private final MultiFunction<MultiTransformSequence, Integer, Z> mLambda; // maps (self, n) to next term
+  private final MultiFunction<MultiTransformSequence, Long, Z> mLambda; // maps (self, n) to next term
   private final AbstractSequence[] mSeqs; // underlying source sequences 
   private final int[] mOffsets; // offsets of mSeqs
   private final int mSeqNo; // number of underlying sequences s(i) + 1
@@ -41,12 +41,12 @@ public class MultiTransformSequence extends AbstractSequence {
   private final Z[] mInits; // initial terms
   private final int mInitNo; // mInits.length
   private int mIn; // index for mInits
-  private int mN; // current index of target sequence a(n)
+  private long mN; // current index of target sequence a(n)
 
   /** seq1 + seq2 */
-  public static final MultiFunction<MultiTransformSequence, Integer, Z> ADD = (self, n) -> self.s(0).add(self.s(1));
+  public static final MultiFunction<MultiTransformSequence, Long, Z> ADD = (self, n) -> self.s(0).add(self.s(1));
   /** seq1 - seq2 */
-  public static final MultiFunction<MultiTransformSequence, Integer, Z> SUB = (self, n) -> self.s(0).subtract(self.s(1));
+  public static final MultiFunction<MultiTransformSequence, Long, Z> SUB = (self, n) -> self.s(0).subtract(self.s(1));
 
   /**
    * An indicator that instead of the current term of a sequence <code>s[i]</code>,
@@ -82,7 +82,7 @@ public class MultiTransformSequence extends AbstractSequence {
    * Existing target terms can be accessed with <code>self.a(n-1), self.a(n-2), self.a(n-k)</code> and so on,
    * thus allowing recurrences and memorized terms.
    */
-  public MultiTransformSequence(final int offset, final MultiFunction<MultiTransformSequence, Integer, Z> lambda,
+  public MultiTransformSequence(final int offset, final MultiFunction<MultiTransformSequence, Long, Z> lambda,
                                 final String initTerms, final AbstractSequence... seqs) {
     super(offset);
     mA = new ArrayList<>();
@@ -120,7 +120,7 @@ public class MultiTransformSequence extends AbstractSequence {
    * @param lambda function mapping (self, n) to the terms of the target sequence
    * @param initTerms initial terms for a(n)
    */
-  public MultiTransformSequence(final int offset, final MultiFunction<MultiTransformSequence, Integer, Z> lambda,
+  public MultiTransformSequence(final int offset, final MultiFunction<MultiTransformSequence, Long, Z> lambda,
                                 final String initTerms) {
     this(offset, lambda, initTerms, new AbstractSequence[]{});
   }
@@ -130,8 +130,8 @@ public class MultiTransformSequence extends AbstractSequence {
    * @param n index of target sequence
    * @return a(n)
    */
-  public Z a(final int n) {
-    return mA.get(n);
+  public Z a(final long n) {
+    return mA.get((int) n);
   }
 
   /**

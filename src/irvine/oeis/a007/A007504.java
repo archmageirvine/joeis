@@ -28,7 +28,7 @@ public class A007504 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     if (mPrime == null) {
       mPrime = new Fast();
     }

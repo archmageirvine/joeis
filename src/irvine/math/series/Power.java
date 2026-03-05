@@ -40,7 +40,7 @@ class Power<E> extends MemoryFunction1<E> implements Series<E> {
       return mElementField.pow(mS.coeff(0), mN);
     }
     // Some potential for overflow in k * mN -- if necessary this could be made to work over Z
-    final E sum = mElementField.sum(1, Math.min(m, mS.bound()), k -> mElementField.multiply(get(m - k), mElementField.multiply(mS.coeff(k), mElementField.coerce(k * mN - m + k))));
+    final E sum = mElementField.sum(1, Math.min(m, mS.bound()), k -> mElementField.multiply(get(m - k), mElementField.multiply(mS.coeff(k.intValue()), mElementField.coerce(k * mN - m + k))));
     return mElementField.divide(sum, mElementField.multiply(mS.coeff(0), mElementField.coerce(m)));
   }
 

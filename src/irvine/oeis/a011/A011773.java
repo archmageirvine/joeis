@@ -24,7 +24,7 @@ public class A011773 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.CARMICHAEL_LAMBDA_VARIANT.z(n);
   }
 }

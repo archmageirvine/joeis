@@ -48,11 +48,11 @@ public class A054055 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    int m = n;
-    int max = 0;
+  public Z a(final long n) {
+    long m = n;
+    long max = 0;
     while (m != 0 && max != mBase - 1) {
-      final int r = m % mBase;
+      final long r = m % mBase;
       m /= mBase;
       if (r > max) {
         max = r;

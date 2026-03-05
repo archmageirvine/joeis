@@ -18,7 +18,7 @@ public class A046854 extends GeneratingFunctionTriangle implements DirectArray {
   }
 
   @Override
-  public Z a(final int n, final int k) {
+  public Z a(final long n, final long k) {
     if (n < 0 || k < 0 || k > n) {
       return Z.ZERO;
     }

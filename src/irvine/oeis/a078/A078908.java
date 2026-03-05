@@ -43,7 +43,7 @@ public class A078908 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int m) {
+  public Z a(final long m) {
     final Zi n = new Zi(m, 0);
     Zi sum = Zi.ZERO;
     // Not very efficient, essentially trial division

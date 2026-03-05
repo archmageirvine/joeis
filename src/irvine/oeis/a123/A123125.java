@@ -28,7 +28,7 @@ public class A123125 extends A173018 implements DirectArray {
   }
 
   @Override
-  public Z a(final int n, final int k) {
+  public Z a(final long n, final long k) {
     // System.err.println("A123125(" + n + "," + k + ") = " + Functions.EULERIAN1.z(n, n - k));
     return Functions.EULERIAN1.z(n, n - k);
   }

@@ -34,7 +34,7 @@ public class A070939 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return n == 0 ? Z.ONE : Functions.DIGIT_LENGTH.z(2, n);
   }
 

@@ -12,6 +12,6 @@ public class A326729 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A326729() {
-    super(0, n -> Z.valueOf(n).xor(Z.TWO.pow(Integer.bitCount(n) - 1)));
+    super(0, n -> Z.valueOf(n).xor(Z.TWO.pow(Long.bitCount(n) - 1)));
   }
 }

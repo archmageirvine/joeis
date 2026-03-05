@@ -19,7 +19,7 @@ public class A122075 extends GeneratingFunctionTriangle implements DirectArray {
   }
 
   @Override
-  public Z a(final int n, final int k) {
+  public Z a(final long n, final long k) {
     // T(n,k) = Sum_{j=0..n-k+1} binomial(n-k-j+1,j)*binomial(n-j,k).
     return Integers.SINGLETON.sum(0, n - k + 1, j -> Binomial.binomial(n - k - j + 1, j).multiply(Binomial.binomial(n - j, k)));
   }

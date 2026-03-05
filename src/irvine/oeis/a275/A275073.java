@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A275073 Number of set partitions of [n] such that i-j is a multiple of six for all i,j belonging to the same block.
+ * A275073 Number of set partitions of [n.intValue()] such that i-j is a multiple of six for all i,j belonging to the same block.
  * @author Georg Fischer
  */
 public class A275073 extends LambdaSequence {

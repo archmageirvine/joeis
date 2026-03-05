@@ -53,8 +53,8 @@ public class A258172 extends AbstractSequence implements DirectSequence {
   };
 
   @Override
-  public Z a(final int n) {
-    return mF.get(2 * n, 0, 0);
+  public Z a(final long n) {
+    return mF.get(2 * (int) n, 0, 0);
   }
 
   @Override

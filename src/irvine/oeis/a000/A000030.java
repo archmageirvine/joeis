@@ -23,7 +23,7 @@ public class A000030 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Z.valueOf(String.valueOf(n).charAt(0) - '0');
   }
 

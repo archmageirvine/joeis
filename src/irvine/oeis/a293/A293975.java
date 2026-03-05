@@ -14,7 +14,7 @@ public class A293975 extends Sequence0 implements DirectSequence {
   private int mN = -1;
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return a(Z.valueOf(n));
   }
 

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A275549 Number of classes of endofunctions of [n] under reversal.
+ * A275549 Number of classes of endofunctions of [n.intValue()] under reversal.
  * a(n) = (n^n + n^((n+1)\2))/2
  * @author Georg Fischer
  */

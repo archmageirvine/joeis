@@ -43,7 +43,7 @@ public class A048385 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     final StringBuilder sb = new StringBuilder();
     long m = n;
     do {

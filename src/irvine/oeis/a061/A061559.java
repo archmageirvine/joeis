@@ -34,7 +34,7 @@ public class A061559 extends Sequence1 {
   }
 
   private Z t(final int n, final int m) {
-    return Integers.SINGLETON.sum(0, m - 1, k -> m(m + 1 - k, n).multiply2().add(m(m - k, n)).multiply(Binomial.binomial(m, k)).shiftLeft(m - k - 1));
+    return Integers.SINGLETON.sum(0, m - 1, k -> m((int) (m + 1 - k), n).multiply2().add(m((int) (m - k), n)).multiply(Binomial.binomial(m, k)).shiftLeft(m - k - 1));
   }
 
   @Override

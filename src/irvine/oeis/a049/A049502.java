@@ -13,7 +13,7 @@ public class A049502 extends Sequence0 implements DirectSequence {
   private int mN = -1;
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     long m = n;
     long sum = 0;
     long k = 1;

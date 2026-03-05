@@ -15,6 +15,6 @@ public class A181088 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A181088() {
-    super(0, n -> (A060821.triangleElement(2 * n + 1, n).add(A060821.triangleElement(2 * n + 1, n + 1))).divide(n + 2));
+    super(0, n -> (A060821.triangleElement(2 * n.intValue() + 1, n.intValue()).add(A060821.triangleElement(2 * n.intValue() + 1, n.intValue() + 1))).divide(n + 2));
   }
 }

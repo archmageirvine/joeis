@@ -28,8 +28,8 @@ public class A196047 extends Sequence1 {
         v[k] = getValue(Functions.PRIME_PI.l(p[k]));
       }
       return new Z[] {
-        Z.ONE.add(Integers.SINGLETON.sum(0, p.length - 1, k -> v[k][0].multiply(fs.getExponent(p[k])))),
-        Integers.SINGLETON.sum(0, p.length - 1, k -> v[k][0].add(v[k][1]).multiply(fs.getExponent(p[k])))
+        Z.ONE.add(Integers.SINGLETON.sum(0, p.length - 1, k -> v[k.intValue()][0].multiply(fs.getExponent(p[k.intValue()])))),
+        Integers.SINGLETON.sum(0, p.length - 1, k -> v[k.intValue()][0].add(v[k.intValue()][1]).multiply(fs.getExponent(p[k.intValue()])))
       };
     }
   };

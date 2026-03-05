@@ -24,7 +24,7 @@ public class A066571 extends Sequence1 {
     if (++mN > 1) {
       mA = RING.multiply(mA, RING.onePlusXToTheN(mN - 1));
     }
-    return Integers.SINGLETON.sum(0, mN * (mN - 1) / 2, k -> mA.coeff(k).multiply(mB.a(k))).multiply2().subtract(1);
+    return Integers.SINGLETON.sum(0, mN * (mN - 1) / 2, k -> mA.coeff(k.intValue()).multiply(mB.a(k))).multiply2().subtract(1);
   }
 }
 

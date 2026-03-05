@@ -20,20 +20,20 @@ public class A075774 extends Sequence0 implements DirectSequence {
   private static final Set<Long> C = new HashSet<>(Arrays.asList(0L, 7L, 13L, 14L, 15L, 16L, 18L, 19L));
   private int mN = -1;
 
-  private long a(final long n) {
+  private long al(final long n) {
     if (n > 99) {
       for (int k = 0; k < T.length; k += 2) {
         if (n >= T[k]) {
           final long q = n / T[k];
           final long r = n % T[k];
-          return a(q) + T[k + 1] + (r == 0 ? 0 : a(r));
+          return al(q) + T[k + 1] + (r == 0 ? 0 : al(r));
         }
       }
     }
     if (n < 20) {
       return 1 + (C.contains(n) ? 1 : 0) + (n == 11 || n == 17 ? 2 : 0);
     }
-    return 2 + (n / 10 == 7 ? 1 : 0) + (n % 10 == 0 ? 0 : a(n % 10));
+    return 2 + (n / 10 == 7 ? 1 : 0) + (n % 10 == 0 ? 0 : al(n % 10));
   }
 
   @Override
@@ -42,8 +42,8 @@ public class A075774 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    return Z.valueOf(a((long) n));
+  public Z a(final long n) {
+    return Z.valueOf(al(n));
   }
 
   @Override

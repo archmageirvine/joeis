@@ -13,5 +13,4 @@ public class A005706 extends MemorySequence {
   protected Z computeNext() {
     return size() == 0 ? Z.ONE : a(size() - 1).add(a(size() / 5));
   }
-
 }

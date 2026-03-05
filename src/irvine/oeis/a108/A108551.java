@@ -12,6 +12,6 @@ public class A108551 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A108551() {
-    super(1, n -> n <= 3 ? Z.valueOf(new int[] {0, 100, 136, 1425}[n]) : Z.valueOf(n - 1).multiply(Z.valueOf(n + 3).pow(n + 2)).add(Z.TWO.multiply(Z.valueOf(n + 3).pow(n + 1))).add(Z.valueOf(n + 3).pow(n)).add(Z.valueOf(n + 3).pow(3)));
+    super(1, n -> n <= 3 ? Z.valueOf(new int[] {0, 100, 136, 1425}[n.intValue()]) : Z.valueOf(n - 1).multiply(Z.valueOf(n + 3).pow(n + 2)).add(Z.TWO.multiply(Z.valueOf(n + 3).pow(n + 1))).add(Z.valueOf(n + 3).pow(n)).add(Z.valueOf(n + 3).pow(3)));
   }
 }

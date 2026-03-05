@@ -31,7 +31,7 @@ public class A095112 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Integers.SINGLETON.sumdiv(n, d -> (1 == Functions.OMEGA.i(d)) ? Z.valueOf(n / d) : Z.ZERO);
   }
 

@@ -14,6 +14,6 @@ public class A154965 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A154965() {
-    super(1, 4, k -> !Predicates.PRIME.is(k) && Predicates.PRIME.is(new Z(Integer.toString(k, 10) + Functions.PRIME.z(k).toString())));
+    super(1, 4, k -> !Predicates.PRIME.is(k) && Predicates.PRIME.is(new Z(Long.toString(k, 10) + Functions.PRIME.z(k).toString())));
   }
 }

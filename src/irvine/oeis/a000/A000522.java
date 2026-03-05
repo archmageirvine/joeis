@@ -40,7 +40,7 @@ public class A000522 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Integers.SINGLETON.sum(0, n, k -> Functions.FACTORIAL.z(n).divide(Functions.FACTORIAL.z(k)));
   }
 

@@ -28,7 +28,7 @@ public class A003266 extends A000045 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     Z a = Z.ONE;
     Z b = Z.ZERO;
     Z prod = Z.ONE;

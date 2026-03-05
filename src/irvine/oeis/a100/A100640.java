@@ -19,7 +19,7 @@ public class A100640 extends Sequence0 {
    * @param k lower index
    * @return cotesian number
    */
-  public static Q cotesian(final int n, final int k) {
+  public static Q cotesian(final long n, final long k) {
     if (k == 0 || k == n) {
       Q s = Q.ZERO;
       Z m = Z.ONE;

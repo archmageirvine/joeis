@@ -28,7 +28,7 @@ public class A322993 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return n == 1 ? Z.ZERO : Functions.MAKE_ODD.z(A156552.a(n));
   }
 

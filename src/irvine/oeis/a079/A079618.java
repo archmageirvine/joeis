@@ -23,7 +23,7 @@ public class A079618 extends Sequence1 {
         return m == 1 ? Z.ONE : Z.ZERO;
       }
       if (m == 1) {
-        return mSeq.a(n - 1).subtract(Integers.SINGLETON.sum(2, n, k -> get(n, k)));
+        return mSeq.a(n - 1).subtract(Integers.SINGLETON.sum(2, n, k -> get(n, k.intValue())));
       }
       return get(n - 1, m - 1).multiply(n - 1).multiply(mSeq.a(n - 1)).divide(m).divide(mSeq.a(n - 2));
     }

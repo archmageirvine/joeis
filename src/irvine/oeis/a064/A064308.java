@@ -15,7 +15,7 @@ public class A064308 extends Sequence1 {
   private int mN = 0;
   private int mM = 0;
 
-  private Z catalan(final int n, final int m) {
+  private Z catalan(final long n, final long m) {
     return Binomial.binomial(n + m, n).multiply(n - m + 1).divide(n + 1);
   }
 

@@ -21,7 +21,7 @@ public class A070976 extends AbstractSequence implements DirectSequence {
   private Z mA = null;
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return A006577.a(Z.valueOf(n));
   }
 

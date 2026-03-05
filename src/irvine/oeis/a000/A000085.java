@@ -24,7 +24,7 @@ public class A000085 extends A013989 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     // a(n) = Sum_{k=0..floor(n/2)} n!/((n-2*k)!*2^k*k!).
     return Integers.SINGLETON.sum(0, n / 2,
       k -> Functions.FACTORIAL.z(n).divide(Z.ONE.shiftLeft(k).multiply(Functions.FACTORIAL.z(k))

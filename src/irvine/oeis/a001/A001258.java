@@ -28,7 +28,7 @@ public class A001258 extends Sequence2 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return (n <= 3) ? Z.ONE : Integers.SINGLETON.sum(2, n - 1, k -> A213262.a(n, k));
   }
 

@@ -16,6 +16,6 @@ public class A064945 extends Sequence1 {
   @Override
   public Z next() {
     final Z[] divisors = Jaguar.factor(++mN).divisorsSorted();
-    return Integers.SINGLETON.sum(0, divisors.length - 1, k -> divisors[k].multiply(divisors.length - k));
+    return Integers.SINGLETON.sum(0, divisors.length - 1, k -> divisors[k.intValue()].multiply(divisors.length - k));
   }
 }

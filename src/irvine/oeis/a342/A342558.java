@@ -12,6 +12,6 @@ public class A342558 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A342558() {
-    super(1, n -> Z.valueOf(n <= 18 ? new int[] {0, 1, 1, 1, 1, 1, 2, 2, 3, 4, 5, 6, 7, 9, 10, 12, 15, 16, 18}[n] : n));
+    super(1, n -> Z.valueOf(n <= 18 ? new int[] {0, 1, 1, 1, 1, 1, 2, 2, 3, 4, 5, 6, 7, 9, 10, 12, 15, 16, 18}[n.intValue()] : n));
   }
 }

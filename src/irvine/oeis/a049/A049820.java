@@ -23,7 +23,7 @@ public class A049820 extends A000005 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Z.valueOf(n).subtract(Functions.SIGMA0.z(n));
   }
 

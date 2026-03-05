@@ -25,7 +25,7 @@ public class A060418 extends A000040 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.DIGIT_SORT_ASCENDING.z(Functions.PRIME.z(n)).modZ(10);
   }
 

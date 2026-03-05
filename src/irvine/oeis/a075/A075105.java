@@ -13,6 +13,6 @@ public class A075105 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A075105() {
-    super(2, n -> new Q(n, IntegerUtils.floorLog2(n)).num());
+    super(2, n -> new Q(n, IntegerUtils.floorLog2(n.intValue())).num());
   }
 }

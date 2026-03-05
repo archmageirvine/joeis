@@ -19,6 +19,6 @@ public class A390861 extends Sequence1 {
     if (++mN <= 2) {
       return Z.valueOf(mN);
     }
-    return Integers.SINGLETON.sum(1, mN - 1, k -> mA.t(mN - 1, k).multiply(k + 1));
+    return Integers.SINGLETON.sum(1, mN - 1, k -> mA.t(mN - 1, k.intValue()).multiply(k + 1));
   }
 }

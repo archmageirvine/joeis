@@ -15,7 +15,7 @@ public class A054336 extends A053121 {
   private int mM = 0;
 
   protected Z t(final int n, final int m) {
-    return Integers.SINGLETON.sum(0, n, k -> get(n, k).multiply(Binomial.binomial(k, m)));
+    return Integers.SINGLETON.sum(0, n, k -> get(n, k.intValue()).multiply(Binomial.binomial(k, m)));
   }
 
   @Override

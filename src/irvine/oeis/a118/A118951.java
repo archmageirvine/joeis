@@ -11,6 +11,6 @@ public class A118951 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A118951() {
-    super(1, 0, k -> Integer.toString(k).matches("[^4689]*[4689]\\d*"));
+    super(1, 0, k -> Long.toString(k).matches("[^4689]*[4689]\\d*"));
   }
 }

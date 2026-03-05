@@ -12,6 +12,6 @@ public class A255968 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A255968() {
-    super(1, 1, k -> Functions.ANTISIGMA.z(k).toString().indexOf(Integer.toString(k)) >= 0);
+    super(1, 1, k -> Functions.ANTISIGMA.z(k).toString().contains(Long.toString(k)));
   }
 }

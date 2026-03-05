@@ -42,9 +42,9 @@ public class A030101 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    int s = n;
-    int r = 0;
+  public Z a(final long n) {
+    long s = n;
+    long r = 0;
     while (s != 0) {
       r <<= 1;
       r |= s & 1;

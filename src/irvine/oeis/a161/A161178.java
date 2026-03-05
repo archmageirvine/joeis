@@ -14,7 +14,7 @@ import irvine.oeis.DirectSequence;
 public class A161178 extends AbstractSequence implements DirectSequence {
 
   private int mN;
-  private Function<Integer, Z> mLambda;
+  private final Function<Long, Z> mLambda;
 
   /** Construct the sequence. */
   public A161178() {
@@ -27,7 +27,7 @@ public class A161178 extends AbstractSequence implements DirectSequence {
    * @param offset first index
    * @param lambda function to be applied to the digits of n
    */
-  public A161178(final int offset, final Function<Integer, Z> lambda) {
+  public A161178(final int offset, final Function<Long, Z> lambda) {
     super(offset);
     mN = offset - 1;
     mLambda = lambda;
@@ -43,15 +43,15 @@ public class A161178 extends AbstractSequence implements DirectSequence {
     Z m = n;
     Z sum = Z.ZERO;
     do {
-      sum = sum.add(mLambda.apply(m.modZ(10).intValueExact()));
+      sum = sum.add(mLambda.apply(m.mod(10)));
       m = m.divide(10);
     } while (!m.isZero());
     return sum;
   }
 
   @Override
-  public Z a(final int n) {
-    int m = n;
+  public Z a(final long n) {
+    long m = n;
     Z sum = Z.ZERO;
     do {
       sum = sum.add(mLambda.apply(m % 10));

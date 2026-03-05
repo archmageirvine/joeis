@@ -43,7 +43,7 @@ public class CachedSequence extends AbstractSequence implements DirectSequence {
 
   private final Map<Z, Z> mCache = new HashMap<>(); // stores previously computed terms
   private final BiFunction<DirectSequence, Z, Z> mLambda; // lambda expression (this, n) -> f(n)
-  private int mN; // current index for next()
+  private long mN; // current index for next()
 
   /**
    * Construct the sequence backed by a lambda function including a self reference.
@@ -151,7 +151,7 @@ public class CachedSequence extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return a(Z.valueOf(n));
   }
 

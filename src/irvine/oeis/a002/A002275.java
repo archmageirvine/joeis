@@ -45,7 +45,7 @@ public class A002275 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Z.TEN.pow(n).subtract(1).divide(9);
   }
 

@@ -20,6 +20,6 @@ public class A364933 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A364933() {
-    super(1, n -> Integers.SINGLETON.sum(1, n, k -> A191898.a(n, k).multiply(A191904.matrixElement(n, k).equals(A191898.a(n, k)) ? Z.ONE : Z.ZERO)));
+    super(1, n -> Integers.SINGLETON.sum(1, n, k -> A191898.a(n, k).multiply(A191904.matrixElement(n.intValue(), k.intValue()).equals(A191898.a(n, k)) ? Z.ONE : Z.ZERO)));
   }
 }

@@ -336,7 +336,7 @@ public final class PolynomialUtils {
     final int n = p.degree();
     final PolynomialRingField<E> r = new PolynomialRingField<>(fld);
     final Polynomial<E> q = r.log(p, n);
-    return r.sum(1, n, i -> r.divide(r.multiply(r.deepSubstitute(q.truncate(n / i), i), fld.coerce(Functions.MOBIUS.i(i))), fld.coerce(i)));
+    return r.sum(1, n, i -> r.divide(r.multiply(r.deepSubstitute(q.truncate(n / i.intValue()), i.intValue()), fld.coerce(Functions.MOBIUS.i(i))), fld.coerce(i)));
   }
 
   /**
@@ -349,7 +349,7 @@ public final class PolynomialUtils {
   public static <E> Polynomial<E> eulerTransform(final Field<E> fld, final Polynomial<E> p) {
     final int n = p.degree();
     final PolynomialRingField<E> ring = new PolynomialRingField<>(fld);
-    final Polynomial<E> sum = ring.sum(1, n, i -> ring.divide(deepSubstitute(ring, p.truncate(n / i), i), fld.coerce(i)));
+    final Polynomial<E> sum = ring.sum(1, n, i -> ring.divide(deepSubstitute(ring, p.truncate(n / i.intValue()), i.intValue()), fld.coerce(i)));
     return ring.exp(sum, n);
   }
 

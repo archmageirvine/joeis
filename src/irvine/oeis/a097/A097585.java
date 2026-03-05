@@ -13,6 +13,6 @@ public class A097585 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A097585() {
-    super(1, n -> new Z(Integer.toString(n, Predicates.PRIME.is(n) ? 2 : 3)));
+    super(1, n -> new Z(Long.toString(n, Predicates.PRIME.is(n) ? 2 : 3)));
   }
 }

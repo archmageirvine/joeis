@@ -24,8 +24,8 @@ public class A209229 extends CharacteristicFunction implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    return (n == 0) ? Z.ZERO : ((Integer.bitCount(n) == 1) ? Z.ONE : Z.ZERO);
+  public Z a(final long n) {
+    return (n == 0) ? Z.ZERO : ((Long.bitCount(n) == 1) ? Z.ONE : Z.ZERO);
   }
 
 }

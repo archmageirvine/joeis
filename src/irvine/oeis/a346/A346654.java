@@ -15,6 +15,6 @@ public class A346654 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A346654() {
-    super(0, n -> A189233.matrixElement(2 * n, n));
+    super(0, n -> A189233.matrixElement(2 * n.intValue(), n.intValue()));
   }
 }

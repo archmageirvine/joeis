@@ -37,7 +37,7 @@ public class A000670 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     Z s = Z.ZERO;
     for (int k = 0; k <= n; ++k) {
       s = s.add(Functions.FACTORIAL.z(k).multiply(Functions.STIRLING2.z(n, k)));

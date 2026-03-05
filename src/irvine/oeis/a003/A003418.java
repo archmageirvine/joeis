@@ -29,7 +29,7 @@ public class A003418 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     // a(n) = Product_{k=2..n} (1 + (A007947(k)-1)*floor(1/A001221(k))), for n > 1.
     if (n <= 1) {
       return Z.ONE;

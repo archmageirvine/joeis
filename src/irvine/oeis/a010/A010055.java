@@ -30,7 +30,7 @@ public class A010055 extends A000961 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return n == 1 ? Z.ONE : (Predicates.PRIME_POWER.is(n) ? Z.ONE : Z.ZERO);
   }
 

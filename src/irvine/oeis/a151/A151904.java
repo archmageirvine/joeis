@@ -12,6 +12,6 @@ public class A151904 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A151904() {
-    super(0, n -> Z.THREE.pow(Integer.bitCount(n / 6) + (new int[]{0, 0, 1, 1, 1, 2})[n % 6]).subtract(1).divide2());
+    super(0, n -> Z.THREE.pow(Long.bitCount(n / 6) + (new int[]{0, 0, 1, 1, 1, 2})[(int) (n % 6)]).subtract(1).divide2());
   }
 }

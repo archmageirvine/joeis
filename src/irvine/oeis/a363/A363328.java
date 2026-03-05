@@ -12,7 +12,7 @@ import irvine.oeis.LambdaSequence;
  */
 public class A363328 extends LambdaSequence {
 
-  private static int eval2(final int i, final int j) {
+  private static int eval2(final long i, final long j) {
     return Functions.GCD.i(i, j) == 1 ? 1 : 0;
   }
 

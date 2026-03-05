@@ -26,7 +26,7 @@ public class A051403 extends HolonomicRecurrence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return A003422.a(n + 1).multiply(n + 2).divide2();
   }
 

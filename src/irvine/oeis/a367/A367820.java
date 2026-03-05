@@ -6,7 +6,7 @@ import irvine.oeis.a113.A113547;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A367820 Number of partitions of [2n] that have at most one block contained in [n].
+ * A367820 Number of partitions of [2n] that have at most one block contained in [n.intValue()].
  * @author Georg Fischer
  */
 public class A367820 extends LambdaSequence {

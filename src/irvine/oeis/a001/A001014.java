@@ -23,7 +23,7 @@ public class A001014 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Z.valueOf(n).pow(6);
   }
 

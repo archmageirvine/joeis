@@ -37,7 +37,7 @@ public class A002176 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     Z s = Z.ONE;
     for (int k = 0; k <= n; ++k) {
       s = s.lcm(A100640.cotesian(n, k).den());

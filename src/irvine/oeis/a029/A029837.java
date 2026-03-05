@@ -26,8 +26,8 @@ public class A029837 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    final int n1 = n - 1;
+  public Z a(final long n) {
+    final long n1 = n - 1;
     return n1 <= 0 ? Z.ZERO : Functions.DIGIT_LENGTH.z(2, n1);
   }
 

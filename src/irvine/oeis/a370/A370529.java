@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A370529 Number of permutations of [n] having exactly three adjacent 2-cycles.
+ * A370529 Number of permutations of [n.intValue()] having exactly three adjacent 2-cycles.
  * @author Georg Fischer
  */
 public class A370529 extends LambdaSequence {
@@ -16,8 +16,8 @@ public class A370529 extends LambdaSequence {
   /** Construct the sequence. */
   public A370529() {
     super(0, n -> {
-      final int k = 3;
-      final int q = 2;
+      final long k = 3;
+      final long q = 2;
       return Rationals.SINGLETON.sum(0, n / q - k, j -> new Q(Z.NEG_ONE.pow(j).multiply(Functions.FACTORIAL.z(n - (q - 1) * (j + k))), Functions.FACTORIAL.z(j).multiply(Functions.FACTORIAL.z(k)))).num();
     });
   }

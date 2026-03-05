@@ -27,7 +27,7 @@ public class A354112 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     Z sum = Z.ZERO;
     final Z nz = Z.TWO.pow(n).subtract(1);
     for (final Z d : Jaguar.factor(nz).divisors()) {

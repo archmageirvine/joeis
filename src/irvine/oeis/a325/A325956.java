@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A325956 Number of cyclic permutations of [n] with symmetry order s=1.
+ * A325956 Number of cyclic permutations of [n.intValue()] with symmetry order s=1.
  * a(n) = (1/n)*sumdiv(n,d,moebius(d)*eulerphi(d)*d^(n/d)*(n/d)!)
  * @author Georg Fischer
  */

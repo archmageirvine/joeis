@@ -12,6 +12,6 @@ public class A379268 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A379268() {
-    super(1, 0, n -> Functions.DIGIT_LENGTH.i(10, n) - Functions.DIGIT_SUM.i(10, n) == 2 && Integer.toString(n).matches("[01]+"));
+    super(1, 0, n -> Functions.DIGIT_LENGTH.i(10, n) - Functions.DIGIT_SUM.i(10, n) == 2 && Long.toString(n).matches("[01]+"));
   }
 }

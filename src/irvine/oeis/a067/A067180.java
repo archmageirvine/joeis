@@ -35,7 +35,8 @@ public class A067180 extends Sequence1 implements DirectSequence {
     return res;
   }
 
-  private Z a(final long n) {
+  @Override
+  public Z a(final long n) {
     if (n == 1) {
       return Z.ZERO;
     }
@@ -66,11 +67,6 @@ public class A067180 extends Sequence1 implements DirectSequence {
   @Override
   public Z a(final Z n) {
     return a(n.longValueExact());
-  }
-
-  @Override
-  public Z a(final int n) {
-    return a((long) n);
   }
 
   @Override

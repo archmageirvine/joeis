@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A262970 Total cycle length of all iteration trajectories of all elements of random mappings from [n] to [n].
+ * A262970 Total cycle length of all iteration trajectories of all elements of random mappings from [n.intValue()] to [n.intValue()].
  * @author Georg Fischer
  */
 public class A262970 extends LambdaSequence {

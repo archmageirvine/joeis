@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A370524 Number of permutations of [n] having exactly one adjacent 2-cycle.
+ * A370524 Number of permutations of [n.intValue()] having exactly one adjacent 2-cycle.
  * @author Georg Fischer
  */
 public class A370524 extends LambdaSequence {
@@ -16,8 +16,8 @@ public class A370524 extends LambdaSequence {
   /** Construct the sequence. */
   public A370524() {
     super(0, n -> {
-      final int k = 1;
-      final int q = 2;
+      final long k = 1;
+      final long q = 2;
       return Rationals.SINGLETON.sum(0, n / q - k, j -> new Q(Z.NEG_ONE.pow(j).multiply(Functions.FACTORIAL.z(n - (q - 1) * (j + k))), Functions.FACTORIAL.z(j).multiply(Functions.FACTORIAL.z(k)))).num();
     });
   }

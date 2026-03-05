@@ -14,7 +14,7 @@ public class A392367 extends FilterNumberSequence {
   public A392367() {
     super(1, 1, k -> {
       final int p1 = Functions.GPF.i(k);
-      return Integer.bitCount(p1) == 2 && (p1 & 1) == 1 && Integer.bitCount(Integer.numberOfTrailingZeros(p1 - 1)) == 1;
+      return Long.bitCount(p1) == 2 && (p1 & 1) == 1 && Long.bitCount(Integer.numberOfTrailingZeros(p1 - 1)) == 1;
     });
   }
 }

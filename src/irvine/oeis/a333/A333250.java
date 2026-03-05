@@ -12,6 +12,6 @@ public class A333250 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A333250() {
-    super(0, (self, n) -> new Z(Integer.toString(n - 1) + self.a(n - 1).toString()).modZ(n), "0");
+    super(0, (self, n) -> new Z(Long.toString(n - 1) + self.a(n - 1).toString()).modZ(n), "0");
   }
 }

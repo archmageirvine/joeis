@@ -20,7 +20,7 @@ public class A115230 extends LambdaSequence {
   /** Construct the sequence. */
   public A115230() {
     super(1, n -> {
-      final int p = Functions.PRIME.i(n);
+      final long p = Functions.PRIME.i(n);
       return Integers.SINGLETON.sum(1, p - 1, k -> A036987.a(k - 1).multiply(Functions.PARITY.z(p - k)).multiply(A010055.a(p - k)));
     });
   }

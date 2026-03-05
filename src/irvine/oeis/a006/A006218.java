@@ -39,7 +39,7 @@ public class A006218 extends PartialSumSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     final Z nz = Z.valueOf(n);
     return Integers.SINGLETON.sum(1, n, nz::divide);
   }

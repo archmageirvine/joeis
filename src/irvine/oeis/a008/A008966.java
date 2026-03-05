@@ -25,7 +25,7 @@ public class A008966 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Predicates.SQUARE_FREE.is(n) ? Z.ONE : Z.ZERO;
   }
 

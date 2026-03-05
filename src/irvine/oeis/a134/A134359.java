@@ -15,7 +15,7 @@ public class A134359 extends LambdaSequence {
   /** Construct the sequence. */
   public A134359() {
     super(4, n -> {
-      final int m = 4;
+      final long m = 4;
       return Functions.FACTORIAL.z(n).pow(m).divide(Functions.FACTORIAL.z(m)).multiply(Integers.SINGLETON.product(0, m - 1, k -> Z.valueOf(n - k)));
     });
   }

@@ -14,7 +14,7 @@ public class A387644 extends LambdaSequence {
   /** Construct the sequence. */
   public A387644() {
     super(1, n -> {
-      final int m = CR.valueOf(n).divide(3).sqrt().floor().intValueExact();
+      final long m = CR.valueOf(n).divide(3).sqrt().floor().intValueExact();
       return n > m * (3 * m + 1) ? Z.valueOf(n + m) : Z.valueOf(n + m - 1);
     });
   }

@@ -35,7 +35,7 @@ public class A079190 extends A001329 {
 
   private Z innerSum(final int[] s, final int i, final int j) {
     if (i == j) {
-      final Z sd = Integers.SINGLETON.sumdiv(i, d -> Z.valueOf((long) s[d] * d));
+      final Z sd = Integers.SINGLETON.sumdiv(i, d -> Z.valueOf((long) s[d.intValue()] * d));
       if ((i & 1) == 1) {
         final Z u = sd.pow(s[i] * ((long) i * s[i] + 1) / 2);
         final Z v = sd.subtract(1).pow(s[i] * ((long) i * s[i] - 1) / 2);
@@ -47,10 +47,10 @@ public class A079190 extends A001329 {
         return u.multiply(v).multiply(w);
       }
     } else if (i < j) {
-      final Z sd = Integers.SINGLETON.sumdiv(Functions.LCM.i(i, j), d -> d < s.length ? Z.valueOf((long) s[d] * d) : Z.ZERO);
+      final Z sd = Integers.SINGLETON.sumdiv(Functions.LCM.i(i, j), d -> d < s.length ? Z.valueOf((long) s[d.intValue()] * d) : Z.ZERO);
       return sd.pow((long) Functions.GCD.i(i, j) * s[i] * s[j]);
     } else {
-      final Z sd = Integers.SINGLETON.sumdiv(Functions.LCM.i(i, j), d -> d < s.length ? Z.valueOf((long) s[d] * d) : Z.ZERO);
+      final Z sd = Integers.SINGLETON.sumdiv(Functions.LCM.i(i, j), d -> d < s.length ? Z.valueOf((long) s[d.intValue()] * d) : Z.ZERO);
       return sd.subtract(1).pow((long) Functions.GCD.i(i, j) * s[i] * s[j]);
     }
   }

@@ -2,7 +2,7 @@ package irvine.oeis.a068;
 
 import java.util.Arrays;
 
-import irvine.math.IntegerUtils;
+import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Binomial;
@@ -69,19 +69,19 @@ public class A068596 extends Sequence1 {
     final int s2 = (trace * trace + 2 * (m2 - subtrace)) % m2;
     assert s2 >= 0;
     return Integers.SINGLETON.sumdiv(n, d -> {
-      final int nd = n / d;
+      final long nd = n / d;
       final int mobius = Functions.MOBIUS.i(nd);
       if (mobius != 0) {
         final int g1 = Functions.GCD.i(nd, m);
         final int g2 = Functions.GCD.i(nd, m2);
         if (trace % g1 == 0 && s2 % g2 == 0) {
-          final int n1 = nd / g1;
-          final int n2 = nd / g2;
+          final long n1 = nd / g1;
+          final long n2 = nd / g2;
           final int mg1 = m / g1;
           final int mg2 = m2 / g2;
-          final int i1 = IntegerUtils.modInverse(n1, mg1);
-          final int i2 = IntegerUtils.modInverse(n2, mg2);
-          return s(d, m, ((trace / g1) * i1) % mg1, ((s2 / g2) * i2) % mg2, mg1, mg2).multiply(mobius);
+          final long i1 = LongUtils.modInverse(n1, mg1);
+          final long i2 = LongUtils.modInverse(n2, mg2);
+          return s(d.intValue(), m, (int) (((trace / g1) * i1) % mg1), (int) (((s2 / g2) * i2) % mg2), mg1, mg2).multiply(mobius);
         }
       }
       return Z.ZERO;

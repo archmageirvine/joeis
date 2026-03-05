@@ -28,7 +28,7 @@ public class A037278 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     final StringBuilder sb = new StringBuilder();
     for (final Z d : Jaguar.factor(n).divisorsSorted()) {
       sb.append(d);

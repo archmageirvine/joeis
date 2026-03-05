@@ -23,7 +23,7 @@ public class A126120 extends HolonomicRecurrence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return (n & 1) == 1 ? Z.ZERO : Functions.CATALAN.z(n >> 1);
   }
 }

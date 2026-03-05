@@ -15,7 +15,7 @@ public class A179635 extends LambdaSequence {
   public A179635() {
     super(1, n -> {
       final int len = Functions.DIGIT_LENGTH.i(n);
-      return Z.valueOf(Integer.toString(n).charAt(((len & 1) == 1) ? len / 2 : len / 2 - 1) - '0');
+      return Z.valueOf(Long.toString(n).charAt(((len & 1) == 1) ? len / 2 : len / 2 - 1) - '0');
     });
   }
 }

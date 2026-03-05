@@ -12,7 +12,7 @@ import irvine.oeis.LambdaSequence;
  */
 public class A348535 extends LambdaSequence {
 
-  private static int eval2(final int i, final int j) {
+  private static int eval2(final long i, final long j) {
     final Q qv = new Q(i, j);
     return 1 - qv.ceiling().intValue() + qv.floor().intValue(); // f1chi
   }

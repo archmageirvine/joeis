@@ -31,7 +31,7 @@ public class A049419 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     Z prod = Z.ONE;
     final FactorSequence fs = Jaguar.factor(n);
     for (final Z p : fs.toZArray()) {

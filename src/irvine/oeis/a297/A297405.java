@@ -14,7 +14,7 @@ public class A297405 extends LambdaSequence {
   /** Construct the sequence. */
   public A297405() {
     super(1, n -> {
-      final int p = IntegerUtils.floorLog2(n) + 1;
+      final long p = IntegerUtils.floorLog2(n.intValue()) + 1;
       return Z.valueOf(n).multiply(Z.ONE.add(Z.TWO.pow(p)).add(Z.FOUR.pow(p)));
     });
   }

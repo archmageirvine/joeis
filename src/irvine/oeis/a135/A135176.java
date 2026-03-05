@@ -14,7 +14,7 @@ public class A135176 extends LambdaSequence {
   /** Construct the sequence. */
   public A135176() {
     super(1, n -> {
-      final int p = Functions.PRIME.i(n);
+      final long p = Functions.PRIME.i(n);
       return Z.FIVE.pow(p).add(Z.THREE.pow(p)).add(Z.TWO.pow(p));
     });
   }

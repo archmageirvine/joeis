@@ -13,11 +13,11 @@ public class A068518 extends Sequence0 {
 
   private int mN = -1;
 
-  private Z t(final int k, final int j) {
+  private Z t(final long k, final long j) {
     return Integers.SINGLETON.sum(0, j, i -> Z.NEG_ONE.pow(i).multiply(Binomial.binomial(j, i).multiply(Z.valueOf(i).pow(k))));
   }
 
-  private Z b(final int k) {
+  private Z b(final long k) {
     return Z.NEG_ONE.pow(k)
       .multiply(Integers.SINGLETON.sum(0, k, j -> t(k, j).multiply(Z.valueOf(j + 1).pow(3))));
   }

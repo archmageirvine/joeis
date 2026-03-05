@@ -12,8 +12,8 @@ public class A086638 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A086638() {
     super(0, 0, k -> {
-      final String bk = Integer.toString(k, 2);
-      return bk.indexOf("11") < 0 && bk.indexOf("000") < 0;
+      final String bk = Long.toString(k, 2);
+      return !bk.contains("11") && !bk.contains("000");
     });
   }
 }

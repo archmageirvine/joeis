@@ -15,9 +15,9 @@ public class A353138 extends LambdaSequence {
   public A353138() {
     super(1, n -> {
       final String digs = Z.valueOf(n).toString();
-      final int l = digs.length();
+      final long l = digs.length();
       final Z zl = Z.valueOf(l);
-      return Integers.SINGLETON.sum(1, l, k -> zl.pow(digs.charAt(k - 1) - '0'));
+      return Integers.SINGLETON.sum(1, l, k -> zl.pow(digs.charAt(k.intValue() - 1) - '0'));
     });
   }
 }

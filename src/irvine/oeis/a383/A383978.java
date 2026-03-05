@@ -13,6 +13,6 @@ public class A383978 extends FilterSequence {
 
   /** Construct the sequence. */
   public A383978() {
-    super(1, new LambdaSequence(0, n -> Z.valueOf(n / 4).multiply(100).add(new int[] {11, 33, 77, 99}[n % 4])), PRIME);
+    super(1, new LambdaSequence(0, n -> Z.valueOf(n / 4).multiply(100).add(new int[] {11, 33, 77, 99}[(int) (n & 3)])), PRIME);
   }
 }

@@ -24,7 +24,7 @@ public class A057168 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.SWIZZLE.z(n);
   }
 }

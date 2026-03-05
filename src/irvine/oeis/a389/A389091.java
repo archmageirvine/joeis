@@ -15,6 +15,6 @@ public class A389091 extends Sequence0 {
   @Override
   public Z next() {
     final String s = String.valueOf(++mN);
-    return Integers.SINGLETON.sum(0, s.length() - 1, k -> Z.valueOf(s.charAt(k) - '0').pow(k + 1));
+    return Integers.SINGLETON.sum(0, s.length() - 1, k -> Z.valueOf(s.charAt(k.intValue()) - '0').pow(k + 1));
   }
 }

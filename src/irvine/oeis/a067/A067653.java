@@ -27,7 +27,7 @@ public class A067653 extends Sequence0 {
     if (++mN == 0) {
       res = Q.ONE;
     } else {
-      res = Rationals.SINGLETON.sum(0, mN - 1, k -> mA.get(k).multiply(mN - k)).divide(mN);
+      res = Rationals.SINGLETON.sum(0, mN - 1, k -> mA.get(k.intValue()).multiply(mN - k)).divide(mN);
     }
     mA.add(res);
     return select(res);

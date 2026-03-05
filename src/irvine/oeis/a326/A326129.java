@@ -28,7 +28,7 @@ public class A326129 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.GCD.z(A326127.a(n), A326128.a(n));
   }
 

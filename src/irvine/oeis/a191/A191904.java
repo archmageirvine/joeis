@@ -22,7 +22,7 @@ public class A191904 extends UpperLeftTriangle implements DirectArray {
   }
 
   @Override
-  public Z a(final int n, final int k) {
+  public Z a(final long n, final long k) {
     return matrixElement(n, k);
   }
 

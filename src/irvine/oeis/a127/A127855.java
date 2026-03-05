@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a120.A120492;
 
 /**
- * A127855 Quotients A120492(p)/p, where p = Prime[n].
+ * A127855 Quotients A120492(p)/p, where p = Prime[n.intValue()].
  * @author Georg Fischer
  */
 public class A127855 extends LambdaSequence {

@@ -31,7 +31,7 @@ public class A001318 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.TRIANGULAR.z(n).subtract(Functions.TRIANGULAR.z(n / 2));
   }
 

@@ -23,7 +23,7 @@ public class A267263 extends LambdaSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.OMEGA.z(Functions.PRIMORIAL_BASE_EXP.z(n));
   }
 

@@ -13,7 +13,7 @@ public class A303767 extends MultiTransformSequence {
   /** Construct the sequence. */
   public A303767() {
     super(0, (self, n) -> {
-      final int h1 = Integer.highestOneBit(n);
+      final long h1 = Long.highestOneBit(n);
       return (n == h1) ? self.a(n - 1).add(n) : Z.valueOf(h1).add(self.a(n - h1 - 1));
     }, "0");
   }

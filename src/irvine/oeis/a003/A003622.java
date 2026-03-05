@@ -24,7 +24,7 @@ public class A003622 extends BeattySequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return super.a(n).subtract(1);
   }
 

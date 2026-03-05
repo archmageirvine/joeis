@@ -31,7 +31,6 @@ public class A058865 extends Sequence1 {
     }
   };
 
-  // a(n,q) = Sum_{k=1..n-2} binomial(n,k)*(A(n-k, q - k(k-1)/2 - k(n-k)) - a(n-k, q - k(k-1)/2 - k(n-k))) for q < n(n-1)/2 =: T(n), a(n, T(n)) = 1. [Corrected by M. F. Hasler, Sep 03 2022]
   private final MemoryFunctionInt2<Z> mLittleA = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int m) {
@@ -40,7 +39,7 @@ public class A058865 extends Sequence1 {
         return Z.ONE;
       }
       return Integers.SINGLETON.sum(1, n - 2, k -> {
-        final int t = m - k * (k - 1) / 2 - k * (n - k);
+        final long t = m - k * (k - 1) / 2 - k * (n - k);
         return Binomial.binomial(n, k).multiply(mBigA.get(n - k, t).subtract(mLittleA.get(n - k, t)));
       });
     }

@@ -50,7 +50,7 @@ public class A007662 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.MULTIFACTORIAL.z(4, n);
   }
 

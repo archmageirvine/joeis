@@ -22,7 +22,7 @@ public class A058534 extends Sequence0 {
 
   private Polynomial<Q> update(final Polynomial<Q> q) {
     return RING.subtract(RING.subtract(
-      RING.exp(RING.sum(1, mN, k -> RING.divide(RING.add(RING.monomial(Q.ONE, k), q.substitutePower(k, mN)), new Q(k))), mN),
+      RING.exp(RING.sum(1, mN, k -> RING.divide(RING.add(RING.monomial(Q.ONE, k.intValue()), q.substitutePower(k.intValue(), mN)), new Q(k))), mN),
       C1), q);
   }
 

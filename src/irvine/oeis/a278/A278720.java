@@ -15,7 +15,7 @@ public class A278720 extends LambdaSequence {
   /** Construct the sequence. */
   public A278720() {
     super(1, n -> {
-      final int p = Functions.PRIME.i(n);
+      final long p = Functions.PRIME.i(n);
       return Integers.SINGLETON.sum(1, p - 3, k -> Functions.KRONECKER.z(Z.valueOf(k).multiply(k + 1).multiply(k + 2), p)).negate();
     });
   }

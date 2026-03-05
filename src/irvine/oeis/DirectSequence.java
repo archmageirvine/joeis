@@ -24,7 +24,7 @@ public interface DirectSequence extends Sequence {
    * @return term
    * @throws UnsupportedOperationException if the term cannot be computed or represented.
    */
-  Z a(final int n);
+  Z a(final long n);
 
   /**
    * A helper method to convert an arbitrary sequence into a direct sequence.

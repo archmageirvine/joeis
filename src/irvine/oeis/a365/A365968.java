@@ -13,6 +13,6 @@ public class A365968 extends LambdaTable {
 
   /** Construct the sequence. */
   public A365968() {
-    super(0, 0, n -> new Integer[]{0, (1 << n) - 1}, (n, k) -> Integers.SINGLETON.sum(0, n - 1, i -> Z.valueOf(k).testBit(i) ? Z.valueOf(i + 1) : Z.valueOf(-i - 1)));
+    super(0, 0, n -> new Integer[]{0, (1 << n) - 1}, (n, k) -> Integers.SINGLETON.sum(0, n - 1, i -> Z.valueOf(k).testBit(i.intValue()) ? Z.valueOf(i + 1) : Z.valueOf(-i - 1)));
   }
 }

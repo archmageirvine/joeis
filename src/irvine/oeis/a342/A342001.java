@@ -34,7 +34,7 @@ public class A342001 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.ARD.z(n).divide(A003557.a(n));
   }
 

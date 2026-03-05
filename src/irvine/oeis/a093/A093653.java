@@ -26,12 +26,12 @@ public class A093653 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return Integers.SINGLETON.sumdiv(n, d -> Z.valueOf(Integer.bitCount(d)));
+    return Integers.SINGLETON.sumdiv(n, d -> Z.valueOf(Long.bitCount(d)));
   }
 
   @Override
-  public Z a(final int n) {
-    return Integers.SINGLETON.sumdiv(n, d -> Z.valueOf(Integer.bitCount(d)));
+  public Z a(final long n) {
+    return Integers.SINGLETON.sumdiv(n, d -> Z.valueOf(Long.bitCount(d)));
   }
 
 }

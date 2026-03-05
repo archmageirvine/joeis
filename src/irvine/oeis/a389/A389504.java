@@ -7,7 +7,7 @@ package irvine.oeis.a389;
 public class A389504 extends A389428 {
 
   @Override
-  protected long m(final int i, final int j, final int n) {
+  protected long m(final long i, final long j, final long n) {
     return (i <= j ? 1 : n) + Math.abs(i - j);
   }
 }

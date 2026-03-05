@@ -11,6 +11,6 @@ public class A152834 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A152834() {
-    super(1, 0, k -> k % 6 == 1 && Integer.toString(k).matches("[23]+"));
+    super(1, 0, k -> k % 6 == 1 && Long.toString(k).matches("[23]+"));
   }
 }

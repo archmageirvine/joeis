@@ -12,7 +12,7 @@ public class A320008 extends MultiTransformSequence {
   /** Construct the sequence. */
   public A320008() {
     super(0, (self, n) -> {
-      final int bc = Integer.bitCount(n);
+      final int bc = Long.bitCount(n);
       return self.a(n - bc).multiply(bc);
     }, "1");
   }

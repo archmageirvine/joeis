@@ -14,6 +14,6 @@ public class A180365 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A180365() {
-    super(0, n -> Integers.SINGLETON.sum(1, new int[] {1, 10, 100, 1000, 10000, 100000, 10000000, 10000000}[n], k -> Functions.SIGMA0.z(k).multiply(Z.TEN.pow(n).divide(k))));
+    super(0, n -> Integers.SINGLETON.sum(1, new int[] {1, 10, 100, 1000, 10000, 100000, 10000000, 10000000}[n.intValue()], k -> Functions.SIGMA0.z(k).multiply(Z.TEN.pow(n).divide(k))));
   }
 }

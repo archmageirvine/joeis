@@ -20,6 +20,6 @@ public class A072576 extends A008289 {
 
   @Override
   public Z next() {
-    return ++mN == 0 ? Z.ONE : Integers.SINGLETON.sum(0, (Functions.SQRT.i(8 * mN + 1) - 1) / 2, k -> get(mN, k).multiply(Functions.FACTORIAL.z(k + 1)));
+    return ++mN == 0 ? Z.ONE : Integers.SINGLETON.sum(0, (Functions.SQRT.i(8 * mN + 1) - 1) / 2, k -> get(mN, k.intValue()).multiply(Functions.FACTORIAL.z(k + 1)));
   }
 }

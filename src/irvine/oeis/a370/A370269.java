@@ -14,9 +14,9 @@ public class A370269 extends LambdaSequence {
   /** Construct the sequence. */
   public A370269() {
     super(0, n -> {
-      final int s = 2;
-      final int t = 3;
-      final int u = 1;
+      final long s = 2;
+      final long t = 3;
+      final long u = 1;
       return Integers.SINGLETON.sum(0, n / s, k -> Binomial.binomial((long) t * n + k - 1, k).multiply(Binomial.binomial((long) (u + 1) * n - (long) s * k - 1, n - (long) s * k)));
     });
   }

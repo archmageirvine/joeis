@@ -24,7 +24,7 @@ public class A001850 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     Z s = Z.ZERO;
     for (int k = 0; k <= n; ++k) {
       s = s.add(Binomial.binomial(n, k).multiply(Binomial.binomial(n + k, k)));

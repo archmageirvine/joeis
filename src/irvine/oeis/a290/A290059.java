@@ -14,7 +14,7 @@ public class A290059 extends LambdaSequence {
   /** Construct the sequence. */
   public A290059() {
     super(1, n -> {
-      final int p = Functions.PRIME.i(n);
+      final long p = Functions.PRIME.i(n);
       return Binomial.binomial(2L * p - 1, p - 1);
     });
   }

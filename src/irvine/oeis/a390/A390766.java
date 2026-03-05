@@ -12,6 +12,6 @@ public class A390766 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A390766() {
-    super(0, n -> Z.valueOf(Integer.toString(n, 8).length()));
+    super(0, n -> Z.valueOf(Long.toString(n, 8).length()));
   }
 }

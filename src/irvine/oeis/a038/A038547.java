@@ -54,8 +54,8 @@ public class A038547 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    while (mLeast.get(n) == null) {
+  public Z a(final long n) {
+    while (mLeast.get((int) n) == null) {
       final Map.Entry<Z, int[]> e = mS.pollFirstEntry();
       final Z m = e.getKey();
       final int[] v = e.getValue();
@@ -100,6 +100,6 @@ public class A038547 extends Sequence1 implements DirectSequence {
         }
       }
     }
-    return mLeast.get(n);
+    return mLeast.get((int) n);
   }
 }

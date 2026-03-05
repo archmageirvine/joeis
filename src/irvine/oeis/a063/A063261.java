@@ -37,7 +37,7 @@ public class A063261 extends Sequence0 {
         if (n < mMod) {
           return RING.one();
         }
-        return RING.sum(1, mMod, j -> RING.multiply(RING.pow(C, j - 1), get(n - j)).shift(b(c(n), j)));
+        return RING.sum(1, mMod, j -> RING.multiply(RING.pow(C, j - 1), get(n - j)).shift(b(c(n), j.intValue())));
       }
     };
   }

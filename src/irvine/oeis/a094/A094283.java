@@ -12,6 +12,6 @@ public class A094283 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A094283() {
-    super(1, n -> n <= 3 ? Z.valueOf(new int[] {1, 5, 15}[n - 1]) : Z.valueOf(45).shiftLeft(n - 4));
+    super(1, n -> n <= 3 ? Z.valueOf(new int[] {1, 5, 15}[n.intValue() - 1]) : Z.valueOf(45).shiftLeft(n - 4));
   }
 }

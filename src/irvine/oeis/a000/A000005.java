@@ -32,7 +32,7 @@ public class A000005 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.SIGMA0.z(n);
   }
 

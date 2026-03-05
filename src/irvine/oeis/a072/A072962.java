@@ -38,7 +38,7 @@ public class A072962 extends Sequence2 {
   private Z a(final int s, final int t) {
     final Polynomial<Polynomial<Q>> w = w(s, t);
     return Integers.SINGLETON.sum(0, s - 2, k -> Z.NEG_ONE.pow(k).multiply(Binomial.binomial(s - 1, k))
-      .multiply(w.coeff(s - 1 - k).coeff(t).multiply(Functions.FACTORIAL.z(s - 1 - k)).multiply(Functions.FACTORIAL.z(t)).toZ()));
+      .multiply(w.coeff((int) (s - 1 - k)).coeff(t).multiply(Functions.FACTORIAL.z(s - 1 - k)).multiply(Functions.FACTORIAL.z(t)).toZ()));
   }
 
   @Override

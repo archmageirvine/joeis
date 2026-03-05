@@ -15,7 +15,7 @@ public class A161818 extends LambdaSequence {
   public A161818() {
     super(2, n -> {
       final Z[] divisors = Jaguar.factor(n).divisorsSorted();
-      final int bn = divisors[divisors.length - 2].intValueExact();
+      final long bn = divisors[divisors.length - 2].intValueExact();
       return Z.TWO.pow(n).subtract(1).divide(Z.TWO.pow(bn).subtract(1));
     });
   }

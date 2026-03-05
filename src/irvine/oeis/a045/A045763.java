@@ -26,7 +26,7 @@ public class A045763 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     final FactorSequence fs = Jaguar.factor(n);
     return Z.valueOf(n + 1).subtract(fs.sigma0()).subtract(fs.phi());
   }

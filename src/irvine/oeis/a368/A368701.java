@@ -14,7 +14,7 @@ public class A368701 extends LambdaSequence {
   /** Construct the sequence. */
   public A368701() {
     super(1, n -> {
-      final int na = Functions.ARD.i(n);
+      final long na = Functions.ARD.i(n);
       return (2 * Functions.ARD.i(na) - na - 4 == 0) ? Z.ONE : Z.ZERO;
     });
   }

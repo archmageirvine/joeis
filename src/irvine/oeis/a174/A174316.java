@@ -12,6 +12,6 @@ public class A174316 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A174316() {
-    super(0, n -> (n <= 4) ? Z.valueOf(new int[]{1, 1, 1, 2, 6}[n]) : Z.TWO.pow(n - 2).add(2));
+    super(0, n -> (n <= 4) ? Z.valueOf(new int[]{1, 1, 1, 2, 6}[n.intValue()]) : Z.TWO.pow(n - 2).add(2));
   }
 }

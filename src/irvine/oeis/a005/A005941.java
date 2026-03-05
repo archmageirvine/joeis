@@ -72,7 +72,7 @@ public class A005941 extends MemoryFunction2Sequence<Z, Z> implements DirectSequ
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return get(mG.get(Z.valueOf(n), Z.ONE, Z.ONE), Z.ZERO).add(1).divide2();
   }
 

@@ -21,7 +21,7 @@ public class A073063 extends Sequence0 {
   @Override
   public Z next() {
     if (++mN > 0) {
-      mA = RING.exp(RING.sum(1, mN, k -> RING.multiply(mA.substitutePower(k, mN - k), new Q(Functions.LUCAS.z(k), k)).shift(k)), mN);
+      mA = RING.exp(RING.sum(1, mN, k -> RING.multiply(mA.substitutePower(k.intValue(), (int) (mN - k)), new Q(Functions.LUCAS.z(k), k)).shift(k.intValue())), mN);
     }
     return mA.coeff(mN).toZ();
   }

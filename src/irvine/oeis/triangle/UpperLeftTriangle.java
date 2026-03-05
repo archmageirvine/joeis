@@ -82,6 +82,10 @@ public class UpperLeftTriangle extends Triangle {
     return Z.valueOf(i + j);
   }
 
+  public Z matrixElement(final long i, final long j) {
+    return matrixElement((int) i, (int) j);
+  }
+
   /**
    * Computes an element of the resulting triangle.
    * @param n row number

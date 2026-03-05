@@ -27,7 +27,7 @@ public class A001147 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.MULTIFACTORIAL.z(2, 2L * n - 1);
   }
 

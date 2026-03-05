@@ -36,7 +36,7 @@ public class A007088 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return new Z(Long.toBinaryString(n));
   }
 

@@ -13,6 +13,6 @@ public class A130250 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A130250() {
-    super(0, n -> (n == 0) ? Z.ZERO : Z.valueOf(IntegerUtils.ceilingLog2(3 * n - 1)));
+    super(0, n -> (n == 0) ? Z.ZERO : Z.valueOf(IntegerUtils.ceilingLog2(3 * n.intValue() - 1)));
   }
 }

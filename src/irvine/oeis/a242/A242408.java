@@ -12,7 +12,7 @@ public class A242408 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A242408() {
     super(1, 1, n -> {
-      final String s = Integer.toString(n, 3);
+      final String s = Long.toString(n, 3);
       return s.contains("12") || s.contains("21") || s.contains("22");
     });
   }

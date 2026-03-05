@@ -157,7 +157,8 @@ public final class Zeta {
    * @param n argument
    * @return zeta function
    */
-  public static CR zeta(final int n) {
+  public static CR zeta(final long nn) {
+    final int n = (int) nn;
     final CR res = ZETA_CACHE.get(n);
     if (res != null) {
       return res;

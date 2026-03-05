@@ -25,7 +25,7 @@ public class A071986 extends SimpleTransformSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return a(Z.valueOf(n));
   }
 

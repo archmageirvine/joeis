@@ -101,9 +101,9 @@ public final class Binomial {
    * @param m lower index
    * @return binomial coefficient
    */
-  public static Q binomial(final Q n, final int m) {
+  public static Q binomial(final Q n, final long m) {
     Q prod = Q.ONE;
-    for (int j = 0; j < m; ++j) {
+    for (long j = 0; j < m; ++j) {
       prod = prod.multiply(n.subtract(j)).divide(j + 1);
     }
     return prod;
@@ -154,18 +154,18 @@ public final class Binomial {
    * @param q base
    * @return Gaussian binomial
    */
-  public static Z gaussianBinomial(final int m, final int r, final int q) {
+  public static Z gaussianBinomial(final long m, final long r, final long q) {
     if (r > m) {
       return Z.ZERO;
     }
     Z t = q == 2 ? Z.ONE.shiftLeft(m - r + 1) : Z.valueOf(q).pow(m - r + 1);
     Z b = Z.ONE;
-    for (int k = 0; k < r; k++) {
+    for (long k = 0; k < r; k++) {
       b = b.multiply(Z.ONE.subtract(t));
       t = t.multiply(q);
     }
     t = Z.valueOf(q);
-    for (int k = 0; k < r; k++) {
+    for (long k = 0; k < r; k++) {
       b = b.divide(Z.ONE.subtract(t));
       t = t.multiply(q);
     }

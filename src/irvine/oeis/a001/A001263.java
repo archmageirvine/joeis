@@ -15,7 +15,7 @@ public class A001263 extends Sequence1 implements DirectArray {
   private long mK = 0;
 
   @Override
-  public Z a(final int n, final int k) {
+  public Z a(final long n, final long k) {
     return Binomial.binomial(n - 1, k - 1).multiply(Binomial.binomial(n, k - 1)).divide(k);
   }
 

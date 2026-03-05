@@ -55,7 +55,7 @@ public class A392445 extends Sequence2 {
           Z interm = Z.ZERO;
           for (int j = 1; j <= expon; ++j) {
             final int fj = j;
-            final Z bigF = Integers.SINGLETON.product(0, nroot.size() - 1, i -> Binomial.binomial(nroot.get(i).right() + fj - 1, fj - 1));
+            final Z bigF = Integers.SINGLETON.product(0, nroot.size() - 1, i -> Binomial.binomial(nroot.get(i.intValue()).right() + fj - 1, fj - 1));
             interm = interm.add(Binomial.binomial(expon, j).multiply(Z.NEG_ONE.pow(expon - j)).multiply(bigF));
           }
           res = res.add(interm.multiply(Functions.PHI.l(d)).multiply(Functions.PHI.l(f)));

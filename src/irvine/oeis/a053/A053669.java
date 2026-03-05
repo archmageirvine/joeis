@@ -24,7 +24,7 @@ public class A053669 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     long p = 2;
     while (n % p == 0) {
       p = mPrime.nextPrime(p);

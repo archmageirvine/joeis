@@ -88,12 +88,12 @@ public abstract class ParallelGenerateGraphsSequence extends AbstractSequence im
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     if (n < mFirstNonZero) {
       return Z.ZERO;
     }
-    mN = n;
-    init(n);
+    mN = (int) n;
+    init(mN);
     final MyThread[] jobs = new MyThread[THREADS];
     for (int k = 0; k < jobs.length; ++k) {
       jobs[k] = new MyThread(k, mCounterFactory.get());

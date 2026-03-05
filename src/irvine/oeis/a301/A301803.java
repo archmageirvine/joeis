@@ -12,6 +12,6 @@ public class A301803 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A301803() {
-    super(1, n -> n < 4 ? Z.valueOf(new int[] {0, 9, 41, 420}[n]) : Z.TEN.pow(n - 2).multiply(1177).add(Z.FOUR.multiply(new int[] {0, -1, 4, -2, 1, -4, 2}[n % 6 + 1])).divide(28));
+    super(1, n -> n < 4 ? Z.valueOf(new int[] {0, 9, 41, 420}[n.intValue()]) : Z.TEN.pow(n - 2).multiply(1177).add(Z.FOUR.multiply(new int[] {0, -1, 4, -2, 1, -4, 2}[n.intValue() % 6 + 1])).divide(28));
   }
 }

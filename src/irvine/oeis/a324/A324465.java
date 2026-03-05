@@ -13,6 +13,6 @@ public class A324465 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A324465() {
-    super(0, n -> (n == 0) ? Z.ZERO : Z.valueOf(3 * Integer.bitCount(n) - Functions.VALUATION.i(Z.valueOf(n + 1).multiply(n + 2).multiply(n + 3), Z.TWO)));
+    super(0, n -> (n == 0) ? Z.ZERO : Z.valueOf(3 * Long.bitCount(n) - Functions.VALUATION.i(Z.valueOf(n + 1).multiply(n + 2).multiply(n + 3), Z.TWO)));
   }
 }

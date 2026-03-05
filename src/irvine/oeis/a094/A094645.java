@@ -25,7 +25,7 @@ public class A094645 extends Triangle implements DirectArray {
   }
 
   @Override
-  public Z a(final int n, final int k) {
+  public Z a(final long n, final long k) {
     return Z.NEG_ONE.pow(n + k).multiply(Integers.SINGLETON.sum(0, n, m -> Functions.STIRLING1.z(n, m).multiply(Binomial.binomial(m, k))));
   }
 }

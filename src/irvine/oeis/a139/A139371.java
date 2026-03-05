@@ -11,6 +11,6 @@ public class A139371 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A139371() {
-    super(1, 0, n -> Integer.bitCount(n & 0xAAAA) >= Integer.bitCount(n & 0x5555));
+    super(1, 0, n -> Long.bitCount(n & 0xAAAA) >= Long.bitCount(n & 0x5555));
   }
 }

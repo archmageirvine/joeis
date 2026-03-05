@@ -26,17 +26,13 @@ public class A001764 extends AbstractSequence implements DirectSequence {
 
   private long mN = -1;
 
-  protected Z a(final long n) {
-    return Binomial.binomial(3 * n, n).divide(2 * n + 1);
-  }
-
   @Override
   public Z a(final Z n) {
     return Binomial.binomial(n.multiply(3), n).divide(n.multiply2().add(1));
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Binomial.binomial(3L * n, n).divide(2L * n + 1);
   }
 

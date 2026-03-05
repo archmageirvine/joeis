@@ -13,6 +13,6 @@ public class A300557 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A300557() {
-    super(1, n -> ZUtils.concatenate(1, n, k -> ZUtils.concatenate(1, k, j -> new Z(Integer.toString(k, 2)))));
+    super(1, n -> ZUtils.concatenate(1, n, k -> ZUtils.concatenate(1, k, j -> new Z(Long.toString(k, 2)))));
   }
 }

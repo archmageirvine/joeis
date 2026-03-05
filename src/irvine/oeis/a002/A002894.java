@@ -22,7 +22,7 @@ public class A002894 extends A000984 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Binomial.binomial(n * 2L, n).square();
   }
 

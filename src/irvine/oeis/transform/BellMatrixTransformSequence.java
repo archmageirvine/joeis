@@ -28,6 +28,6 @@ public class BellMatrixTransformSequence extends MemoryFunction2<Integer, Z> {
     if (k == 0) {
       return n == 0 ? Z.ONE : Z.ZERO;
     }
-    return Integers.SINGLETON.sum(1, n - k + 1, j -> Binomial.binomial(n - 1, j - 1).multiply(get(n - j, k - 1)).multiply(mA.get(j - 1)));
+    return Integers.SINGLETON.sum(1, n - k + 1, j -> Binomial.binomial(n - 1, j - 1).multiply(get((int) (n - j), k - 1)).multiply(mA.get(j.intValue() - 1)));
   }
 }

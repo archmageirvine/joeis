@@ -24,7 +24,7 @@ public class A057427 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return (n == 0) ? Z.ZERO : Z.ONE;
   }
 

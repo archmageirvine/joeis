@@ -12,14 +12,14 @@ import irvine.oeis.LambdaSequence;
  */
 public class A343246 extends LambdaSequence {
 
-  private static int eval2(final int i, final int j) {
+  private static int eval2(final long i, final long j) {
     final Q qv = new Q(i, j);
     return 1 - qv.ceiling().intValue() + qv.floor().intValue(); // f1chi
   }
 
   /** Construct the sequence. */
   public A343246() {
-    super(1, n -> Integers.SINGLETON.sum(1, n / 3, j -> Integers.SINGLETON.sum(j, (n - j) / 2, i -> Z.valueOf(Integer.signum(eval2(i, j) + eval2(n - i - j, j) + eval2(n - i - j, i))))));
+    super(1, n -> Integers.SINGLETON.sum(1, n / 3, j -> Integers.SINGLETON.sum(j, (n - j) / 2, i -> Z.valueOf(Long.signum(eval2(i, j) + eval2(n - i - j, j) + eval2(n - i - j, i))))));
   }
 }
 

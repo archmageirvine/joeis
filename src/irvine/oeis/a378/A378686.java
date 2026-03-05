@@ -15,10 +15,10 @@ public class A378686 extends LambdaSequence {
   /** Construct the sequence. */
   public A378686() {
     super(0, n -> {
-      final int r = 3;
-      final int s = 1;
-      final int t = 7;
-      final int u = 3;
+      final long r = 3;
+      final long s = 1;
+      final long t = 7;
+      final long u = 3;
       return Rationals.SINGLETON.sum(0, n, k -> new Q(Binomial.binomial((long) t * k + (long) u * (n - k) + r, k)).multiply(Binomial.binomial(n + (long) (s - 1) * k - 1, n - k)).divide((long) t * k + (long) u * (n - k) + r)).multiply(r).num();
     });
   }

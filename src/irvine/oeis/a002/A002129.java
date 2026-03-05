@@ -30,7 +30,7 @@ public class A002129 extends Sequence1 implements Serializable, DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     Z s = Z.ZERO;
     for (final Z d : Jaguar.factor(n).divisors()) {
       s = s.signedAdd(d.isOdd(), d);

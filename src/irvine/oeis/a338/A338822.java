@@ -14,7 +14,7 @@ public class A338822 extends LambdaSequence {
   /** Construct the sequence. */
   public A338822() {
     super(1, n -> {
-      final int digs = Functions.DIGIT_LENGTH.i(n);
+      final long digs = Functions.DIGIT_LENGTH.i(n);
       return Integers.SINGLETON.countdiv(n, d -> d % 10 == digs);
     });
   }

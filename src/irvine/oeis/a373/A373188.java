@@ -13,8 +13,8 @@ public class A373188 extends MultiTransformSequence {
   /** Construct the sequence. */
   public A373188() {
     super(1, (self, n) -> {
-      final int n4 = n / 4;
-      final int m = n % 4;
+      final long n4 = n / 4;
+      final long m = n % 4;
       return Z.valueOf(4 * n4 + m).add((m != 0) ? Z.ZERO : self.a(n4));
     }, "1");
   }

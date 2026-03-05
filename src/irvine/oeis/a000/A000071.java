@@ -30,7 +30,7 @@ public class A000071 extends A000045 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.FIBONACCI.z(n).subtract(1);
   }
 

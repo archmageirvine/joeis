@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A273440 Number of endofunctions on [n] with exactly nine cycles.
+ * A273440 Number of endofunctions on [n.intValue()] with exactly nine cycles.
  * @author Georg Fischer
  */
 public class A273440 extends LambdaSequence {
@@ -16,7 +16,7 @@ public class A273440 extends LambdaSequence {
   /** Construct the sequence. */
   public A273440() {
     super(9, n -> {
-      final int k = 9;
+      final long k = 9;
       return Integers.SINGLETON.sum(0, n - 1, j -> Binomial.binomial(n - 1, j).multiply(Z.valueOf(n).pow(n - 1 - j)).multiply(Z.NEG_ONE.pow(k + j + 1)).multiply(Functions.STIRLING1.z(j + 1, k)));
     });
   }

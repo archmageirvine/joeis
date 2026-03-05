@@ -15,7 +15,7 @@ public class A334860 extends MultiTransformSequence {
   /** Construct the sequence. */
   public A334860() {
     super(0, (self, n) -> {
-      final int h = n / 2;
+      final long h = n / 2;
       return ((n & 1) == 0) ? A334747.a(self.a(h)) : self.a(h).square();
     }, "1, 2");
   }

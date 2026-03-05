@@ -17,7 +17,7 @@ public class A068218 extends Sequence0 {
   private int mN = -1;
   private int mM = 0;
 
-  private Z a069466(final int n, final int m) {
+  private Z a069466(final long n, final long m) {
     return Binomial.binomial(2L * n, n).multiply(Binomial.binomial(n, m).square());
   }
 

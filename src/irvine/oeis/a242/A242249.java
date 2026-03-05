@@ -20,7 +20,7 @@ public class A242249 extends MemoryFunction2Sequence<Integer, Z> {
     }
     Z sum = Z.ZERO;
     for (int j = 1; j < n; ++j) {
-      sum = sum.add(Integers.SINGLETON.sumdiv(j, d -> get(d, k).multiply(d)).multiply(get(n - j, k).multiply(k)));
+      sum = sum.add(Integers.SINGLETON.sumdiv(j, d -> get(d.intValue(), k).multiply(d)).multiply(get(n - j, k).multiply(k)));
     }
     return sum.divide(n - 1);
   }

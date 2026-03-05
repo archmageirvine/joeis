@@ -15,8 +15,8 @@ public class A216078 extends LambdaSequence {
   /** Construct the sequence. */
   public A216078() {
     super(1, n -> {
-      final int m = (n - 1) / 2;
-      final int e = (n + 1) & 1;
+      final long m = (n - 1) / 2;
+      final long e = (n + 1) & 1;
       return Integers.SINGLETON.sum(0, m, k -> Binomial.binomial(m, k).multiply(Functions.BELL.z(m + k + e)));
     });
   }

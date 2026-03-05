@@ -19,7 +19,7 @@ public class A000009 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.DISTINCT_PARTITIONS.z(n);
   }
 

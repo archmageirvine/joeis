@@ -15,7 +15,7 @@ public class A372832 extends LambdaSequence {
   /** Construct the sequence. */
   public A372832() {
     super(1, n -> {
-      final int sn = Functions.SQRT.i(n);
+      final long sn = Functions.SQRT.i(n);
       return Rationals.SINGLETON.sumdiv(n, d -> d <= sn ? new Q(1, d) : Q.ZERO).num();
     });
   }

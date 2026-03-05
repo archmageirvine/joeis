@@ -18,10 +18,10 @@ public class A005315 extends A005316 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     final SimpleProcessor<Z> processor = new SimpleProcessor<>();
     processor.setCreateStateMachine(BasicMeanderProblem::new);
-    return processor.process(n, new BasicMeanderProblem(n).initialStates());
+    return processor.process((int) n, new BasicMeanderProblem((int) n).initialStates());
   }
 
   @Override

@@ -132,7 +132,8 @@ public class ParallelPermutationSequence extends AbstractSequence implements Dir
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long nn) {
+    final int n = (int) nn;
     prepare(n);
     Z count = Z.ZERO;
     switch (n) {

@@ -24,7 +24,7 @@ public class Stirling1TransformSequence extends AbstractSequence {
    * @return the next term in the transformed sequence
    */
   public static Z stirling1(final List<Z> seq, final int n) {
-    return Integers.SINGLETON.sum(1, n, k -> Functions.STIRLING1.z(n, k).multiply(seq.get(k)));
+    return Integers.SINGLETON.sum(1, n, k -> Functions.STIRLING1.z(n, k).multiply(seq.get(k.intValue())));
   }
 
   /**
@@ -62,7 +62,7 @@ public class Stirling1TransformSequence extends AbstractSequence {
    * Creates a new Stirling transform sequence of the given sequence, skipping
    * the specified number of terms in advance.
    * @param offset sequence offset
-   * @param skip number of terms to skip (or insert)
+   * @param seq underlying sequence
    */
   public Stirling1TransformSequence(final int offset, final Sequence seq) {
     this(offset, seq, 0);

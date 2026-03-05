@@ -24,7 +24,7 @@ public class A060850 extends Sequence1 {
       if (n == 0) {
         return RING.one();
       }
-      return RING.sum(1, n, k -> RING.multiply(get(n - k), Functions.PARTITIONS.z(k - 1)).shift(k - 1));
+      return RING.sum(1, n, k -> RING.multiply(get(n - k), Functions.PARTITIONS.z(k - 1)).shift(k.intValue() - 1));
     }
   };
 

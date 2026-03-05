@@ -38,7 +38,7 @@ public class A033879 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public final Z a(final int n) {
+  public final Z a(final long n) {
     return Z.valueOf(2L * n).subtract(Functions.SIGMA1.z(n));
   }
 }

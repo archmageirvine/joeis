@@ -13,11 +13,11 @@ public class A389886 extends Sequence3 {
 
   private int mN = 1;
 
-  private Z binomial(final int m, final int t) {
+  private Z binomial(final long m, final long t) {
     return m < 0 || t < 0 ? Z.ZERO : Binomial.binomial(m, t);
   }
 
-  private Z t(final int m, final int t) {
+  private Z t(final long m, final long t) {
     return binomial(m - t, t - 1).add(binomial(m - t - 1, t - 1).multiply2()).add(binomial(m - t - 2, t - 1));
   }
 

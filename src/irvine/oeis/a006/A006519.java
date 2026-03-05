@@ -38,7 +38,7 @@ public class A006519 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    return Z.ONE.shiftLeft(Integer.numberOfTrailingZeros(n));
+  public Z a(final long n) {
+    return Z.ONE.shiftLeft(Long.numberOfTrailingZeros(n));
   }
 }

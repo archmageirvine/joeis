@@ -25,7 +25,7 @@ public class A181549 extends MultiplicativeSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return a(Z.valueOf(n));
   }
 

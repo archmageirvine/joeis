@@ -23,7 +23,7 @@ public abstract class BeattySequence extends RealConstantSequence implements Dir
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return getCR().multiply(n).floor();
   }
 

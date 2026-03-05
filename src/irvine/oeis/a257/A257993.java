@@ -28,7 +28,7 @@ public class A257993 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.PRIME_PI.z(A053669.a(n));
   }
 

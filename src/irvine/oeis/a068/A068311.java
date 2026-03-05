@@ -26,7 +26,7 @@ public class A068311 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.ARD.z(Functions.FACTORIAL.z(n));
   }
 

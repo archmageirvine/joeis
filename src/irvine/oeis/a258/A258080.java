@@ -12,6 +12,6 @@ public class A258080 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A258080() {
-    super(1, n -> new Z(Integer.toString(n) + Integer.toString(n + 1)).add(new Z(Integer.toString(n + 1) + Integer.toString(n))).mod(Z.valueOf(n).multiply(n + 1)));
+    super(1, n -> new Z(Long.toString(n) + Long.toString(n + 1)).add(new Z(Long.toString(n + 1) + Long.toString(n))).mod(Z.valueOf(n).multiply(n + 1)));
   }
 }

@@ -14,7 +14,7 @@ public class A367274 extends LambdaSequence {
   /** Construct the sequence. */
   public A367274() {
     super(0, n -> {
-      final int k = n / 2;
+      final long k = n / 2;
       return Binomial.binomial(n, k).multiply(Z.valueOf(n - k).pow(k));
     });
   }

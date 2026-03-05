@@ -22,10 +22,10 @@ public class A071302 extends LambdaSequence {
    * @param offset first index
    * @param base in the formula, for example 7 in A071306:
    */
-  public A071302(final int offset, final int base) {
+  public A071302(final int offset, final long base) {
     super(offset, n -> {
       final Z baze = Z.valueOf(base);
-      final int k = n / 2;
+      final long k = n / 2;
       return baze.pow(k).add((n & 1) == 1
         ? Z.ZERO
         : Z.NEG_ONE.pow(k + 1)).multiply(

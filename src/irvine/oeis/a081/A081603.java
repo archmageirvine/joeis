@@ -26,7 +26,7 @@ public class A081603 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Z.valueOf(ZUtils.digitCounts(Z.valueOf(n), 3)[2]);
   }
 

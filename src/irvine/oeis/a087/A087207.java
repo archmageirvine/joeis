@@ -27,7 +27,7 @@ public class A087207 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return mSeq1.a(mSeq2.a(n));
   }
 }

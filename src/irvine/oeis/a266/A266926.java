@@ -12,6 +12,6 @@ public class A266926 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A266926() {
-    super(0, n -> (n <= 2) ? new Z(Integer.toString(n, 2)) : Z.valueOf(110).multiply(Z.TEN.pow(Z.THREE.multiply(Z.TWO.pow(n - 3))).subtract(Z.ONE)).divide(Z.valueOf(999)));
+    super(0, n -> (n <= 2) ? new Z(Long.toString(n, 2)) : Z.valueOf(110).multiply(Z.TEN.pow(Z.THREE.multiply(Z.TWO.pow(n - 3))).subtract(Z.ONE)).divide(Z.valueOf(999)));
   }
 }

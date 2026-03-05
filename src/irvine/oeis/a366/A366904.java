@@ -14,6 +14,6 @@ public class A366904 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A366904() {
-    super(1, (p, e) -> Integers.SINGLETON.sum(1, e, k -> (Integer.bitCount(k) & 1) == 0 ? p.pow(k) : Z.ZERO).add(1));
+    super(1, (p, e) -> Integers.SINGLETON.sum(1, e, k -> (Long.bitCount(k) & 1) == 0 ? p.pow(k) : Z.ZERO).add(1));
   }
 }

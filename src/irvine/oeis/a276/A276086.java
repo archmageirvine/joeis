@@ -25,7 +25,7 @@ public class A276086 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.PRIMORIAL_BASE_EXP.z(n);
   }
 

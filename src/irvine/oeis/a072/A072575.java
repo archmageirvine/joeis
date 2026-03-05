@@ -47,7 +47,7 @@ public class A072575 extends Sequence1 {
 
   private Z t(final int n, final int m) {
     final List<Z> l = mB.get(n - m, m - 1);
-    return Integers.SINGLETON.sum(0, l.size() - 1, k -> l.get(k).multiply(Functions.FACTORIAL.z(k + 1)));
+    return Integers.SINGLETON.sum(0, l.size() - 1, k -> l.get(k.intValue()).multiply(Functions.FACTORIAL.z(k + 1)));
   }
 
   @Override

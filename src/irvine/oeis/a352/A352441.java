@@ -12,8 +12,8 @@ public class A352441 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A352441() {
     super(1, 100, k -> {
-      final String ks = Integer.toString(k);
-      return ks.endsWith(Integer.toString((ks.charAt(0) - '0') + (ks.charAt(1) - '0') + (ks.charAt(2) - '0')));
+      final String ks = Long.toString(k);
+      return ks.endsWith(Long.toString((ks.charAt(0) - '0') + (ks.charAt(1) - '0') + (ks.charAt(2) - '0')));
     });
   }
 }

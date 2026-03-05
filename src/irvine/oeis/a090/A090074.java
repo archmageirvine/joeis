@@ -12,6 +12,6 @@ public class A090074 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A090074() {
-    super(0, n -> n <= 5 ? new Z[] {Z.valueOf(3654563L), Z.valueOf(678736545637876L), Z.valueOf(663305503366L), Z.valueOf(663787366L), new Z("88352682264077046228625388"), Z.valueOf(365468864563L), Z.valueOf(3654566654563L), Z.valueOf(36545633654563L)}[n] : Z.TEN.pow(n).multiply(3654563).add(3654563));
+    super(0, n -> n <= 5 ? new Z[] {Z.valueOf(3654563L), Z.valueOf(678736545637876L), Z.valueOf(663305503366L), Z.valueOf(663787366L), new Z("88352682264077046228625388"), Z.valueOf(365468864563L), Z.valueOf(3654566654563L), Z.valueOf(36545633654563L)}[n.intValue()] : Z.TEN.pow(n).multiply(3654563).add(3654563));
   }
 }

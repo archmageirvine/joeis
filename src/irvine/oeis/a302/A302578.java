@@ -12,6 +12,6 @@ public class A302578 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A302578() {
-    super(1, 1, k -> Integer.toString(k).indexOf(String.valueOf(k % Functions.DIGIT_SUM.i(k))) >= 0);
+    super(1, 1, k -> Long.toString(k).indexOf(String.valueOf(k % Functions.DIGIT_SUM.i(k))) >= 0);
   }
 }

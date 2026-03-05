@@ -27,7 +27,7 @@ public class A059384 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Integers.SINGLETON.product(1, n, i -> mSeq.a(i));
   }
 

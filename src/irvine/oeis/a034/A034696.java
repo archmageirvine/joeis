@@ -21,7 +21,7 @@ public class A034696 extends A000040 {
   @Override
   public Z next() {
     mPrimes.add(super.next());
-    return Integers.SINGLETON.sumdiv(++mN, d -> mPrimes.get(d).multiply(mPrimes.get(mN / d)));
+    return Integers.SINGLETON.sumdiv(++mN, d -> mPrimes.get(d.intValue()).multiply(mPrimes.get(mN / d.intValue())));
   }
 }
 

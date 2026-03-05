@@ -13,6 +13,6 @@ public class A122698 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A122698() {
-    super(1, n -> n <= 2 ? Z.ONE : (Integer.bitCount(n) == 1 ? Functions.CATALAN.z(Integer.numberOfTrailingZeros(n) - 1) : Z.ZERO));
+    super(1, n -> n <= 2 ? Z.ONE : (Long.bitCount(n) == 1 ? Functions.CATALAN.z(Integer.numberOfTrailingZeros(n.intValue()) - 1) : Z.ZERO));
   }
 }

@@ -13,6 +13,6 @@ public class A104186 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A104186() {
-    super(1, n -> Functions.OMEGA.z(new Z(Integer.toString(2 * n - 1) + Integer.toString(2 * n + 1) + Integer.toString(2 * n + 3) + Integer.toString(2 * n + 5))));
+    super(1, n -> Functions.OMEGA.z(new Z(Long.toString(2 * n - 1) + Long.toString(2 * n + 1) + Long.toString(2 * n + 3) + Long.toString(2 * n + 5))));
   }
 }

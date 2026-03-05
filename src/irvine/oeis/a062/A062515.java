@@ -34,6 +34,6 @@ public class A062515 extends Sequence0 {
       return Z.ONE;
     }
     final int[] p = nextPartition();
-    return Integers.SINGLETON.product(0, p.length - 1, k -> mPrimorial.a(p[k]));
+    return Integers.SINGLETON.product(0, p.length - 1, k -> mPrimorial.a(p[k.intValue()]));
   }
 }

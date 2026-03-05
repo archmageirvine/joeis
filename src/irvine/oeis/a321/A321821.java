@@ -12,9 +12,9 @@ import irvine.oeis.Sequence1;
  */
 public class A321821 extends Sequence1 {
 
-  protected int mK;
-  protected Function<Integer, Z> mF;
-  protected Function<Integer, Z> mG;
+  protected long mK;
+  protected Function<Long, Z> mF;
+  protected Function<Long, Z> mG;
 
   /** Construct the sequence. */
   public A321821() {

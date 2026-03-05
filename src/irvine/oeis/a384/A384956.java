@@ -14,7 +14,7 @@ public class A384956 extends LambdaSequence {
   /** Construct the sequence. */
   public A384956() {
     super(0, n -> {
-      final int hw = Functions.DIGIT_SUM.i(2, n);
+      final long hw = Functions.DIGIT_SUM.i(2, n);
       return n == 0 ? Z.ONE : Z.valueOf(hw ^ (Functions.DIGIT_LENGTH.i(2, n) - hw));
     });
   }

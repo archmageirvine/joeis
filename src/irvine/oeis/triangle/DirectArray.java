@@ -16,6 +16,6 @@ public interface DirectArray {
    * @param k column index
    * @return A[n, k]
    */
-  Z a(final int n, final int k);
+  Z a(final long n, final long k);
 
 }

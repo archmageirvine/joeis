@@ -27,7 +27,7 @@ public class A173557 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.PHI.z(n).divide(mA003557.a(n));
   }
 

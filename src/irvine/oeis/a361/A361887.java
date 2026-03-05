@@ -19,7 +19,7 @@ public class A361887 extends LambdaSequence {
    * @param n index
    * @return Sum_{k = 0..floor(n/2)} ( binomial(n,k) - binomial(n,k-1) )^r
    */
-  public static Z bisum(final int r, final int n) {
+  public static Z bisum(final long r, final long n) {
     return Integers.SINGLETON.sum(0, n / 2, k -> Binomial.binomial(n, k).subtract(Binomial.binomial(n, k - 1)).pow(r));
   }
 

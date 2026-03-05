@@ -27,7 +27,7 @@ public class A173018 extends MemoryFunction2Sequence<Integer, Z> implements Dire
   private int mP = 0;
 
   @Override
-  public Z a(final int n, final int k) {
+  public Z a(final long n, final long k) {
     // T(n, k) = if(n==0, 1, sum(j=0, k+1, (-1)^(k-j+1)*binomial(n+1, k-j+1)*j^n)); 
     return n == 0 ? Z.ONE : Integers.SINGLETON.sum(0, k + 1, j -> Binomial.binomial(n + 1, k - j + 1).multiply(Z.valueOf(j).pow(n))
       .multiply(((k - j + 1) & 1) == 0 ? 1 : -1));

@@ -12,7 +12,7 @@ import irvine.oeis.a271.A271703;
 public class A059110 extends A271703 {
 
   @Override
-  protected Z t(final int n, final int m) {
+  protected Z t(final long n, final long m) {
     return Integers.SINGLETON.sum(0, n, k -> super.t(n, k).multiply(Binomial.binomial(k, m)));
   }
 }

@@ -32,7 +32,7 @@ public class A000695 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(int n) {
+  public Z a(long n) {
     Z sum = Z.ZERO;
     int j = 0;
     while (n != 0) {

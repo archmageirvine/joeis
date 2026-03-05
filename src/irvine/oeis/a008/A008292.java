@@ -29,7 +29,7 @@ public class A008292 extends MemoryFunction2Sequence<Long, Z> implements DirectA
   }
 
   @Override
-  public Z a(final int n, final int k) {
+  public Z a(final long n, final long k) {
     return Integers.SINGLETON.sum(0, k, j -> Binomial.binomial(n + 1, j).multiply(Z.valueOf(k - j).pow(n))
       .multiply((j & 1) == 0 ? 1 : -1)); //  Sum_{j=0..k} (-1)^j * (k-j)^n * binomial(n+1, j).
   }

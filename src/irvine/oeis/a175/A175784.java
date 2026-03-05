@@ -13,7 +13,7 @@ public class A175784 extends LambdaSequence {
   /** Construct the sequence. */
   public A175784() {
     super(1, n -> {
-      final int k = 2 * n - 1;
+      final long k = 2 * n - 1;
       return new Q(k, 10 + k).add(1).num();
     });
   }

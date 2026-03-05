@@ -60,11 +60,11 @@ public class A038502 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     if (n == 0) {
       return Z.ZERO;
     }
-    int m = n;
+    long m = n;
     while (m % mBaseInt == 0) {
       m /= mBaseInt;
     }

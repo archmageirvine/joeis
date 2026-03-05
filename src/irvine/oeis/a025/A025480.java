@@ -28,7 +28,7 @@ public class A025480 extends A000265 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.MAKE_ODD.z(n + 1).subtract(1).divide2();
   }
 

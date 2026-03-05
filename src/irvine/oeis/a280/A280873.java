@@ -12,7 +12,7 @@ public class A280873 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A280873() {
     super(0, 0, k -> {
-      final String ks = Integer.toString(k, 2);
+      final String ks = Long.toString(k, 2);
       return ks.indexOf("00") < 0 && !ks.matches("10[01]*");
     });
   }

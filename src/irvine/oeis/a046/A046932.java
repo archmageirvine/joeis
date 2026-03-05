@@ -26,11 +26,11 @@ public class A046932 extends A055061 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    final long[] c = new long[n + 1];
+  public Z a(final long n) {
+    final long[] c = new long[(int) n + 1];
     c[0] = 1;
     c[1] = 1;
-    c[n] = 1;
+    c[(int) n] = 1;
     final Polynomial<Z> f = Polynomial.create(c);
     final List<Polynomial<Z>> factors = factor(f);
     Z per = Z.ONE;

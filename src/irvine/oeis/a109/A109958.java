@@ -13,6 +13,6 @@ public class A109958 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A109958() {
-    super(1, n -> new Z(Integer.toString(n) + Functions.SOPFR.z(n).toString()));
+    super(1, n -> new Z(Long.toString(n) + Functions.SOPFR.z(n).toString()));
   }
 }

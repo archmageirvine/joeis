@@ -31,7 +31,7 @@ public class A003422 extends Sequence0 implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     Z sum = Z.ZERO;
     Z kf = Z.ONE;
     int k = 0;

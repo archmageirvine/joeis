@@ -16,11 +16,11 @@ public class A271703 extends Sequence0 implements DirectArray {
   protected int mM = 0;
 
   @Override
-  public Z a(final int n, final int m) {
+  public Z a(final long n, final long m) {
     return t(n, m);
   }
 
-  protected Z t(final int n, final int m) {
+  protected Z t(final long n, final long m) {
     if (m == 0) {
       return n == 0 ? Z.ONE : Z.ZERO;
     }

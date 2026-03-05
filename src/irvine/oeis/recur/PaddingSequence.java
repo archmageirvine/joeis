@@ -36,7 +36,6 @@ public class PaddingSequence extends AbstractSequence implements DirectSequence 
 
   /**
    * Construct the sequence.
-   * @param offset first index
    * @param leftList the left list
    * @param rightList the right list
    */
@@ -85,12 +84,12 @@ public class PaddingSequence extends AbstractSequence implements DirectSequence 
   }
 
   @Override
-  public Z a(int n) {
+  public Z a(long n) {
     while (n < 0) {
       n += mRLen;
     }
     n -= mOffset;
-    return n < mLLen ? mLList[n] : (mRLen == 1 ? mRList[0] : mRList[n % mRLen]);
+    return n < mLLen ? mLList[(int) n] : (mRLen == 1 ? mRList[0] : mRList[(int) (n % mRLen)]);
   }
 
   @Override

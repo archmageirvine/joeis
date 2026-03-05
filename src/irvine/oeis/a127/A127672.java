@@ -25,7 +25,7 @@ public class A127672 extends Triangle implements DirectArray {
   }
 
   @Override
-  public Z a(final int n, final int k) {
+  public Z a(final long n, final long k) {
     if (n < k || ((n + k) & 1) == 1) {
       return Z.ZERO;
     } else if (k == 0) {

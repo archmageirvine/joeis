@@ -12,6 +12,6 @@ public class A363873 extends LeastLambdaSequence {
 
   /** Construct the sequence. */
   public A363873() {
-    super(1, (n, k) -> Z.TWO.pow(k).toString().startsWith(Integer.toString(n)) && !Z.TWO.pow(k).equals(Z.valueOf(n)), 1, ONE);
+    super(1, (n, k) -> Z.TWO.pow(k).toString().startsWith(Long.toString(n)) && !Z.TWO.pow(k).equals(Z.valueOf(n)), 1, ONE);
   }
 }

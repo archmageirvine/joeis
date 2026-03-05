@@ -12,6 +12,6 @@ public class A151784 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A151784() {
-    super(1, n -> Z.SIX.pow(Integer.bitCount(n) - 1));
+    super(1, n -> Z.SIX.pow(Long.bitCount(n) - 1));
   }
 }

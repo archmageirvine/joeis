@@ -19,11 +19,11 @@ import irvine.math.z.Z;
  */
 public class RationalLambdaSequence extends AbstractSequence implements DirectSequence, RationalSequence {
 
-  protected static final int NUM = 0; // indicates that the numerator should be returned.
-  protected static final int DEN = 4; // indicates that the denominator should be returned.
-  private int mN; // current index
-  private int mNumDen; // either NUM or DEN
-  protected final Function<Integer, Q> mLambda; // lambda expression n -> f(n)
+  protected static final long NUM = 0; // indicates that the numerator should be returned.
+  protected static final long DEN = 4; // indicates that the denominator should be returned.
+  private long mN; // current index
+  private long mNumDen; // either NUM or DEN
+  protected final Function<Long, Q> mLambda; // lambda expression n -> f(n)
   // protected DirectSequence mAssociate; // the associated sequence
 
   /**
@@ -32,7 +32,7 @@ public class RationalLambdaSequence extends AbstractSequence implements DirectSe
    * @param numDen indicates whether the numerator or the denominator should be returned.
    * @param lambda lambda expression returning a rational
    */
-  public RationalLambdaSequence(final int offset, final int numDen, final Function<Integer, Q> lambda) {
+  public RationalLambdaSequence(final int offset, final long numDen, final Function<Long, Q> lambda) {
     super(offset);
     mN = offset - 1;
     mLambda = lambda;
@@ -44,7 +44,7 @@ public class RationalLambdaSequence extends AbstractSequence implements DirectSe
    * @param offset first index.
    * @param lambda lambda expression returning a rational
    */
-  public RationalLambdaSequence(final int offset, final Function<Integer, Q> lambda) {
+  public RationalLambdaSequence(final int offset, final Function<Long, Q> lambda) {
     this(offset, NUM, lambda);
   }
 
@@ -80,7 +80,7 @@ public class RationalLambdaSequence extends AbstractSequence implements DirectSe
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return mNumDen == NUM ? mLambda.apply(n).num() : mLambda.apply(n).den();
   }
 }

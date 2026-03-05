@@ -14,7 +14,7 @@ public class A058926 extends Sequence1 {
 
   private int mN = 0;
 
-  private static long delta1(final int n) {
+  private static long delta1(final long n) {
     return n == 1 ? 1 : 0;
   }
 

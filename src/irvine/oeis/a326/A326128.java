@@ -26,7 +26,7 @@ public class A326128 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Z.valueOf(n).subtract(Functions.CORE.z(n));
   }
 

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A351932 Number of set partitions of [n] such that block sizes are either 1 or 4.
+ * A351932 Number of set partitions of [n.intValue()] such that block sizes are either 1 or 4.
  * @author Georg Fischer
  */
 public class A351932 extends LambdaSequence {

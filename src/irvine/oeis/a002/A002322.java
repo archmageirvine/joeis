@@ -29,7 +29,7 @@ public class A002322 extends AbstractSequence implements DirectSequence {
   protected long mN = 0;
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.CARMICHAEL_LAMBDA.z(n);
   }
 

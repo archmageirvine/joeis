@@ -15,7 +15,7 @@ public class A225578 extends LambdaSequence {
   /** Construct the sequence. */
   public A225578() {
     super(1, n -> {
-      final int p1 = Functions.PRIME.i(n) - 1;
+      final long p1 = Functions.PRIME.i(n) - 1;
       return Integers.SINGLETON.sum(1, p1, i -> Z.valueOf(i).pow(p1));
     });
   }

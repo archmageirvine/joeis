@@ -20,7 +20,7 @@ public class A075226 extends Sequence2 {
   private Z mLcm = Z.ONE;
 
   private Z sumList(final List<Z> lst, final int pos) {
-    return Integers.SINGLETON.sum(0, pos - 1, lst::get);
+    return Integers.SINGLETON.sum(0, pos - 1, k -> lst.get(k.intValue()));
   }
 
   @Override

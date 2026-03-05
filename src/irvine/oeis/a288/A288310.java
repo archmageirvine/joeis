@@ -13,7 +13,7 @@ public class A288310 extends MultiTransformSequence {
   /** Construct the sequence. */
   public A288310() {
     super(0, (self, n2) -> {
-      final int n = n2 / 2;
+      final long n = n2 / 2;
       return (n2 & 1) == 0 ? self.a(n).subtract(self.a(n - 1)) : Integers.SINGLETON.sum(0, n, k -> self.a(n - k));
     }, "1, 1");
   }

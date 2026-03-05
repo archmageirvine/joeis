@@ -19,7 +19,7 @@ public class A007733 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(int n) {
+  public Z a(long n) {
     while ((n & 1) == 0) {
       n >>>= 1;
     }

@@ -14,7 +14,7 @@ public class A284322 extends MultiTransformSequence {
   /** Construct the sequence. */
   public A284322() {
     super(0, (self, n) -> Integers.SINGLETON.sum(1, n, k -> (Integers.SINGLETON.sumdiv(k, d -> {
-      final int m = d % 5;
+      final long m = d % 5;
       return (m == 2 || m == 3) ? Z.valueOf(d) : Z.ZERO;
     })).multiply(self.a(n - k))).divide(-n), "1");
   }

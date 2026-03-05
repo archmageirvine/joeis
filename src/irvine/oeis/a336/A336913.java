@@ -13,6 +13,6 @@ public class A336913 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A336913() {
-    super(1, n -> ((n & 1) == 0) ? Z.valueOf(IntegerUtils.floorLog2(n)) : Z.THREE.pow(n).add(1));
+    super(1, n -> ((n & 1) == 0) ? Z.valueOf(IntegerUtils.floorLog2(n.intValue())) : Z.THREE.pow(n).add(1));
   }
 }

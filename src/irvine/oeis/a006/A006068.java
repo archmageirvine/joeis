@@ -24,7 +24,7 @@ public class A006068 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
+  public Z a(final long n) {
     return Functions.GRAY_DECODE.z(n);
   }
 

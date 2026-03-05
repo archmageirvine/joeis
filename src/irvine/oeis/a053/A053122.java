@@ -18,7 +18,7 @@ public class A053122 extends GeneratingFunctionTriangle implements DirectArray {
   }
 
   @Override
-  public Z a(final int n, final int m) {
+  public Z a(final long n, final long m) {
     // a(n, m) := 0 if n<m else ((-1)^(n-m))*binomial(n+m+1, 2*m+1);
     return n < m ? Z.ZERO : (((n - m) & 1) == 1 ? Z.NEG_ONE : Z.ONE).multiply(Binomial.binomial(n + m + 1, 2 * m + 1));
   }

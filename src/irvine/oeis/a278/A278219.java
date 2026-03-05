@@ -28,8 +28,8 @@ public class A278219 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(final int n) {
-    final int m = n ^ (n / 2);
+  public Z a(final long n) {
+    final long m = n ^ (n / 2);
     return FactorUtils.leastPrimeSignature(mSeq.a(m + 1)); // from A278222
   }
 

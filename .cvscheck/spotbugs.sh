@@ -10,8 +10,8 @@ export config=${HOME}/joeis/.cvscheck/spotbugs_config.xml
 
 function spotbugsall() {
     if type -p spotbugs >/dev/null 2>&1; then
-        echo "Using spotbugs $SPOTBUGS_OPTS -auxclasspath ${CLASSPATH} -exclude ${config} -textui ${HOME}/joeis/build.tmp/classes-debug"
-        spotbugs ${SPOTBUGS_OPTS} -auxclasspath "${CLASSPATH}" -exclude "${config}" -textui "${HOME}/joeis/build.tmp/classes-debug" 2> /dev/null | awk '{print $0}END{print "spotbugsall completed: "NR" warnings"}'
+        echo "Using spotbugs ${SPOTBUGS_OPTS} -exclude ${config} -textui ${HOME}/joeis/build.tmp/classes-debug"
+        spotbugs ${SPOTBUGS_OPTS} -exclude "${config}" -textui "${HOME}/joeis/build.tmp/classes-debug"
     else
         echo "spotbugs not found"
     fi

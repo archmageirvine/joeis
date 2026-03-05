@@ -19,7 +19,7 @@
      <!-- SnVI not needed because we do not use serialization for persistence -->
      <!-- PZLA is a stupid test about returning null arrays -->
      <!-- SPP is a stupid test about non-standard math constant -->
-     <!-- CNT complains about values code to pi -->
+     <!-- CNT complains about values close to pi -->
      <!-- CT don't complain about exceptions in constructors -->
      <!-- DLC only for A070566, but filtering that one class did not work -->
      <Match classregex=".*">

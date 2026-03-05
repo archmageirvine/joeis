@@ -170,7 +170,7 @@ public class VertexTypeArray {
    * of the long call to {@link #decodeNotation}
    */
   public String toString() {
-    StringBuffer result = new StringBuffer(1024);
+    StringBuilder result = new StringBuilder(1024);
     for (int ind = 0; ind < size(); ind ++) {
       result.append(get(ind).toString());
       result.append("\n");
@@ -183,12 +183,12 @@ public class VertexTypeArray {
    * @return JSON for all vertices in linear order
    */
   public String toJSON() {
-    String result  = "{ \"mTAFree\": " + mTAFree + "\n" + ", \"mVertexTypes\":\n";
+    StringBuilder result  = new StringBuilder("{ \"mTAFree\": " + mTAFree + "\n" + ", \"mVertexTypes\":\n");
     for (int ind = 0; ind < size(); ind ++) {
-      result += (ind == 0 ? "  [ " : "  , ") + get(ind).toJSON();
+      result.append(ind == 0 ? "  [ " : "  , ").append(get(ind).toJSON());
     } // for types
-    result += "  ]\n}\n";
-    return result;
+    result.append("  ]\n}\n");
+    return result.toString();
   } // toJSON
 
 } // class VertexTypeArray

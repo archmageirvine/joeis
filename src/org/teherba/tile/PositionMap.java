@@ -5,8 +5,6 @@
  * 2020-05-16, Georg Fischer: extracted from Tiling.java
  */
 package org.teherba.tile;
-import org.teherba.tile.Position;
-import org.teherba.tile.Vertex;
 import java.util.HashMap;
 import java.util.Iterator;
 
@@ -16,18 +14,17 @@ import java.util.Iterator;
  * @author Georg Fischer
  */
 public class PositionMap {
-  public final static String CVSID = "@(#) $Id: PositionMap.java $";
-  
+
   /**
    * Maps exact {@link Position}s of vertices to the {@link Vertex} at that position
    */
-  private HashMap<String, Integer> mPositionHash;
+  private final HashMap<String, Integer> mPositionHash;
 
   /** 
    * Empty Constructor.
    */
   public PositionMap() {
-    mPositionHash = new HashMap<String, Integer>(1024);
+    mPositionHash = new HashMap<>(1024);
   } // Constructor()
   
   /**

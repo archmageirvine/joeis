@@ -99,12 +99,12 @@ public class Position implements Serializable {
    * @return the cartesian coordinates like "[-3.0981,1.3660]"
    */
   public String toString() {
-    StringBuffer result = new StringBuffer(64);
+    StringBuilder result = new StringBuilder(64);
     for (int ipos = 0; ipos < 4; ipos ++) {
       result.append(',');
-      result.append(String.valueOf(xtuple[ipos]));
+      result.append(xtuple[ipos]);
       result.append(',');
-      result.append(String.valueOf(ytuple[ipos]));
+      result.append(ytuple[ipos]);
     } // for ipos
     result.append(']');
     result.setCharAt(0, '[');

@@ -3,11 +3,10 @@ package irvine.util.string;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
+import java.nio.charset.StandardCharsets;
 
 /**
  * Functions associated with delimiters in strings.
- *
  * @author Sean A. Irvine
  */
 public final class Brackets {
@@ -104,7 +103,7 @@ public final class Brackets {
    * @exception IOException if an I/O error occurs
    */
   public static void main(final String[] args) throws IOException {
-    try (final BufferedReader r = new BufferedReader(new InputStreamReader(System.in))) {
+    try (final BufferedReader r = new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8))) {
       String line;
       while ((line = r.readLine()) != null) {
         if (!isBalanced(line)) {

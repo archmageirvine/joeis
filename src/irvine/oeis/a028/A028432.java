@@ -21,7 +21,7 @@ public class A028432 extends Sequence1 {
     final StringBuilder sb = new StringBuilder();
     while (m > 0) {
       sb.append(Long.toBinaryString(m));
-      m = LongUtils.log2(m);
+      m = LongUtils.floorLog2(m);
     }
     return new Z(sb, 2);
   }

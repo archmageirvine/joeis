@@ -40,7 +40,7 @@ public class A038540 extends Sequence1 {
     }
     Ds v = Dgf.multiply(ds1, ds2);
     final Ds bigZ = v;
-    for (int j = 2; j <= LongUtils.log2(mN); ++j) {
+    for (int j = 2; j <= LongUtils.floorLog2(mN); ++j) {
       final FiniteDs u = Dgf.empty();
       for (Z k = Z.ONE; k.compareTo(Z.valueOf(mN).root(j)) <= 0; k = k.add(1)) {
         u.put(k.pow(j), bigZ.coeff(k));

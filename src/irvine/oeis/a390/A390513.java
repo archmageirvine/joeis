@@ -31,7 +31,7 @@ public class A390513 extends Sequence1 {
     if (m == 0) {
       return inv(n);
     }
-    return inv(-(n + (1L << (m + LongUtils.log2(n))) - 1));
+    return inv(-(n + (1L << (m + LongUtils.floorLog2(n))) - 1));
   }
 
   @Override

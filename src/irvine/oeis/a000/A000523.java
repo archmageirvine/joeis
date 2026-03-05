@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.math.IntegerUtils;
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
@@ -22,7 +22,7 @@ public class A000523 extends Sequence1 implements DirectSequence {
 
   @Override
   public Z a(final long n) {
-    return Z.valueOf(IntegerUtils.floorLog2((int) n));
+    return Z.valueOf(LongUtils.floorLog2(n));
   }
 
   @Override

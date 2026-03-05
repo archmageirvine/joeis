@@ -19,7 +19,7 @@ public class A068597 extends Sequence1 {
     if (!mPrime.isPrime(n - 1) || !mPrime.isPrime(n / 2 - 1)) {
       return n < 5 && n > 1;
     }
-    for (long m = 3; m <= LongUtils.log2(n); ++m) {
+    for (long m = 3; m <= LongUtils.floorLog2(n); ++m) {
       if (Functions.BIG_OMEGA.l(n - m) > m) {
         return false;
       }

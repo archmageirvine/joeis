@@ -44,9 +44,9 @@ public class A068594 extends Sequence1 {
     final long lim = (1L << mN) - 1; // 11....1 (mN ones)
     // a and b are bit sets
     for (long a = 2; a < lim; ++a) {   // proper and non-trivial subsets!
-      final long am = LongUtils.log2(a) + 1;
+      final long am = LongUtils.floorLog2(a) + 1;
       for (long b = 2; b <= a; ++b) {
-        final long bm = LongUtils.log2(b) + 1;
+        final long bm = LongUtils.floorLog2(b) + 1;
         if (am * bm > mN) {
           break;
         }

@@ -16,8 +16,8 @@ public class A082007 extends CachedSequence {
       if (n == 0) {
         return Z.ZERO;
       }
-      final long y = 1L << LongUtils.log2(n + 1);
-      final long col = 1L << (1L << LongUtils.log2(LongUtils.log2(y)));
+      final long y = 1L << LongUtils.floorLog2(n + 1);
+      final long col = 1L << (1L << LongUtils.floorLog2(LongUtils.floorLog2(y)));
       final long row = y / col;
       return Z.valueOf(col - 1).multiply((n + 1 - y) / row + 1).add(self.a(Z.valueOf(row + (n + 1) % row - 1)));
     });

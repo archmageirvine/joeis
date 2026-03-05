@@ -14,6 +14,6 @@ public class A063511 extends Sequence1 {
 
   @Override
   public Z next() {
-    return ++mN == 1 ? Z.ONE : Z.TWO.shiftLeft(LongUtils.log2(LongUtils.log2(mN)));
+    return ++mN == 1 ? Z.ONE : Z.TWO.shiftLeft(LongUtils.floorLog2(LongUtils.floorLog2(mN)));
   }
 }

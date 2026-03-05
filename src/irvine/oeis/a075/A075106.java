@@ -1,7 +1,7 @@
 package irvine.oeis.a075;
 // manually 2023-10-03/simtraf at 2023-10-03 12:50
 
-import irvine.math.IntegerUtils;
+import irvine.math.LongUtils;
 import irvine.math.q.Q;
 import irvine.oeis.LambdaSequence;
 
@@ -13,6 +13,6 @@ public class A075106 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A075106() {
-    super(2, n -> new Q(n, IntegerUtils.floorLog2(n.intValue())).den());
+    super(2, n -> new Q(n, LongUtils.floorLog2(n)).den());
   }
 }

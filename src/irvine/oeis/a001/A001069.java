@@ -17,7 +17,7 @@ public class A001069 extends Sequence1 {
     long k = ++mN;
     long c = 0;
     while (k > 1) {
-      k = LongUtils.log2(k);
+      k = LongUtils.floorLog2(k);
       ++c;
     }
     return Z.valueOf(c);

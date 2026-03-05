@@ -14,7 +14,7 @@ public class A392221 extends Sequence1 {
 
   @Override
   public Z next() {
-    final long h = LongUtils.log2(++mN);
+    final long h = LongUtils.floorLog2(++mN);
     return Z.valueOf(mN + 1 - (1L << h) + (h - 1) * ((mN + 1) / 2));
   }
 }

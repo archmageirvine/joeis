@@ -17,6 +17,6 @@ public class A054438 extends A038570 {
       return Z.ZERO;
     }
     final long m = t.longValueExact();
-    return Z.valueOf((m ^ (m >>> 1)) - (1L << LongUtils.log2(m)));
+    return Z.valueOf((m ^ (m >>> 1)) - (1L << LongUtils.floorLog2(m)));
   }
 }

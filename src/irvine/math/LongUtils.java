@@ -97,8 +97,17 @@ public final class LongUtils {
    * @param n number to take logarithm of.
    * @return base 2 logarithm of <code>|n|</code>
    */
-  public static long log2(final long n) {
+  public static long floorLog2(final long n) {
     return n == 0 ? 0 : Long.SIZE - 1 - Long.numberOfLeadingZeros(Math.abs(n));
+  }
+
+  /**
+   * Binary logarithm of a positive integer rounded up.
+   * @param n integer to get logarithm of, must be &gt;= 1
+   * @return binary logarithm for powers of 2, and integer part of binary logarithm + 1 otherwise
+   */
+  public static int ceilingLog2(final long n) {
+    return (Long.bitCount(n) == 1 ? Long.SIZE - 1 : Long.SIZE) - Long.numberOfLeadingZeros(n);
   }
 
   /**
@@ -333,7 +342,7 @@ public final class LongUtils {
    * @return rotated value
    */
   public static long rotateRight(final long n) {
-    return (n >>> 1) | ((n & 1) << LongUtils.log2(n));
+    return (n >>> 1) | ((n & 1) << LongUtils.floorLog2(n));
   }
 
   /**

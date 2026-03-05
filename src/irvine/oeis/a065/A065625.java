@@ -16,8 +16,8 @@ public class A065625 extends Sequence0 {
   private long mN = -1;
 
   protected long rotateNodeRight(final long t, final long x) {
-    final long u = LongUtils.log2(t) + 1;
-    final long y = LongUtils.log2(x) + 1;
+    final long u = LongUtils.floorLog2(t) + 1;
+    final long y = LongUtils.floorLog2(x) + 1;
     if (y < u) {
       return x;
     }

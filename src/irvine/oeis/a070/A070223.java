@@ -20,7 +20,7 @@ public class A070223 extends A069191 {
   @Override
   public Z next() {
     ++mN;
-    while (mSort.size() < LongUtils.log2(mN) * HEURISTIC) {
+    while (mSort.size() < LongUtils.floorLog2(mN) * HEURISTIC) {
       mSort.add(super.next().abs().sqrt());
     }
     final Z res = mSort.pollFirst();

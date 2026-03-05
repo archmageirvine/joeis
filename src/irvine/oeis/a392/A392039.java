@@ -18,7 +18,7 @@ public class A392039 extends A026794 {
   private int mM = 0;
 
   private int q(final int n, final int k) {
-    return Integers.SINGLETON.sum(k, n / 2, j -> get((long) n, (long) j)).intValueExact();
+    return Integers.SINGLETON.sum(k, n / 2, j -> get((long) n, j)).intValueExact();
   }
 
   private final MemoryFunctionInt2<Z> mT = new MemoryFunctionInt2<>() {

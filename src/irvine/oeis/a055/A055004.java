@@ -14,7 +14,7 @@ public class A055004 extends Sequence0 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sum(2, ++mN, k -> Z.valueOf(k - 1).multiply(mN * (long) (k - 1) / k));
+    return Integers.SINGLETON.sum(2, ++mN, k -> Z.valueOf(k - 1).multiply(mN * (k - 1) / k));
   }
 }
 

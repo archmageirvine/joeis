@@ -21,7 +21,7 @@ public class A064636 extends A008290 {
     return Integers.SINGLETON.sumdiv(mN,
       d -> Functions.PHI.z(mN / d)
         .multiply(Integers.SINGLETON.sum(0, d,
-          k -> Z.valueOf(mN / d).pow(d - k).multiply(Z.valueOf(mN / d - 1).pow(k)).multiply(get((long) d, (long) k)))
+          k -> Z.valueOf(mN / d).pow(d - k).multiply(Z.valueOf(mN / d - 1).pow(k)).multiply(get(d, k)))
         )
     ).divide(mN);
   }

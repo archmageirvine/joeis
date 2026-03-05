@@ -24,7 +24,7 @@ public class A006125 extends Sequence0 implements DirectSequence {
 
   @Override
   public Z a(final long n) {
-    return Z.ONE.shiftLeft((long) n * (n - 1) / 2);
+    return Z.ONE.shiftLeft(n * (n - 1) / 2);
   }
 
 }

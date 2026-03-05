@@ -14,7 +14,7 @@ public class A353012 extends FilterNumberSequence {
   public A353012() {
     super(1, 1, k -> {
       final int d = Functions.TAU.i(k);
-      return Functions.GCD.i(k - d, (long) k * d) >= d * d;
+      return Functions.GCD.i(k - d, k * d) >= d * d;
     });
   }
 }

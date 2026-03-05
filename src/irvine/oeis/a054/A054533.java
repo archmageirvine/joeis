@@ -20,6 +20,6 @@ public class A054533 extends Sequence1 {
       ++mN;
       mM = 1;
     }
-    return Integers.SINGLETON.sumdiv(Functions.GCD.i(mN, mM), d -> Z.valueOf((long) d * Functions.MOBIUS.i(mN / d)));
+    return Integers.SINGLETON.sumdiv(Functions.GCD.i(mN, mM), d -> Z.valueOf(d * Functions.MOBIUS.i(mN / d)));
   }
 }

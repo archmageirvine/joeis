@@ -20,7 +20,7 @@ public class A392482 extends Sequence1 {
       ++mN;
       mM = 0;
     }
-    return Integers.SINGLETON.sum(1, mN, i -> Integers.SINGLETON.sum(0, mN, j -> Z.NEG_ONE.pow(i + j).multiply(Binomial.binomial(mN, j)).multiply(Binomial.binomial((long) (mN - i) * (mN - j), mM))).multiply(Binomial.binomial(mN, i))).negate();
+    return Integers.SINGLETON.sum(1, mN, i -> Integers.SINGLETON.sum(0, mN, j -> Z.NEG_ONE.pow(i + j).multiply(Binomial.binomial(mN, j)).multiply(Binomial.binomial((mN - i) * (mN - j), mM))).multiply(Binomial.binomial(mN, i))).negate();
   }
 }
 

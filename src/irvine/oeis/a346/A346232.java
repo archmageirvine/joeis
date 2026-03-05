@@ -12,6 +12,6 @@ public class A346232 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A346232() {
-    super(1, n -> Functions.SQRT.z((long) n * n * 2 - 2).add(3));
+    super(1, n -> Functions.SQRT.z(n * n * 2 - 2).add(3));
   }
 }

@@ -21,6 +21,6 @@ public class A063483 extends Sequence0 {
       return Z.ZERO;
     }
     final int n = mSeq.next().intValueExact();
-    return Integers.SINGLETON.sum(2, n, k -> Z.valueOf(k - 1).multiply(n * (long) (k - 1) / k));
+    return Integers.SINGLETON.sum(2, n, k -> Z.valueOf(k - 1).multiply(n * (k - 1) / k));
   }
 }

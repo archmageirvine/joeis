@@ -17,9 +17,9 @@ public class A080572 extends CachedSequence {
       }
       final long m = n / 2;
       if ((n & 1) == 0) {
-        return self.a(m).multiply(3).add((long) m * m);
+        return self.a(m).multiply(3).add(m * m);
       }
-      return self.a(m).add(self.a(m + 1).multiply2()).add((long) m * m - 1);
+      return self.a(m).add(self.a(m + 1).multiply2()).add(m * m - 1);
     });
   }
 }

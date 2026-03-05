@@ -23,7 +23,7 @@ public class A067310 extends Sequence0 {
       return Z.ONE;
     }
     return Integers.SINGLETON.sum(0, n - 1, j -> Z.NEG_ONE.pow(j)
-      .multiply(c((long) (n - j) * (n - j + 1) / 2 - 1 - k, n - 1))
+      .multiply(c((n - j) * (n - j + 1) / 2 - 1 - k, n - 1))
       .multiply(c(2L * n, j).subtract(c(2L * n, j - 1))));
   }
 

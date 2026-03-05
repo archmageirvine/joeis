@@ -20,7 +20,7 @@ public class A054534 extends Sequence1 {
       mM = ++mN;
     }
     final int k = mN - mM + 1;
-    return Integers.SINGLETON.sumdiv(Functions.GCD.i(mM, k), d -> Z.valueOf((long) d * Functions.MOBIUS.i(k / d)));
+    return Integers.SINGLETON.sumdiv(Functions.GCD.i(mM, k), d -> Z.valueOf(d * Functions.MOBIUS.i(k / d)));
   }
 }
 

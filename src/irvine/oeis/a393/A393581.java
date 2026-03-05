@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A084017.
+ * A393581 allocated for Prathamesh Koshe.
  * @author Sean A. Irvine
  */
 public class A393581 extends Sequence1 {

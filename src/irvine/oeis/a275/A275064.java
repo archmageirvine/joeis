@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A275064 Number of permutations p of [n.intValue()] such that p(i)-i is a multiple of nine for all i in [n.intValue()].
+ * A275064 Number of permutations p of [n] such that p(i)-i is a multiple of nine for all i in [n].
  * a(n)=prod(i=0,8,floor((n+i)/9)!)
  * @author Georg Fischer
  */

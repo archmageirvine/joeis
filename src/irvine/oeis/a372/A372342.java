@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A372342 Number of noncrossing partitions of [n.intValue()] that contain exactly one singleton.
+ * A372342 Number of noncrossing partitions of [n] that contain exactly one singleton.
  * @author Georg Fischer
  */
 public class A372342 extends LambdaSequence {

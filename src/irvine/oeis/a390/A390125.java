@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A390125 allocated for Artur Jasinski.
+ * A390125 Decimal expansion of imaginary part of Integral_{x=1/e..1} log(log(x))/(1+x^2) dx.
  * @author Sean A. Irvine
  */
 public class A390125 extends DecimalExpansionSequence {

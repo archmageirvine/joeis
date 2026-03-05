@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A083123 Smallest n-digit palindromic multiple of n, or 0 if no such number exists.
+ * A388042 allocated for Artur Jasinski.
  * @author Sean A. Irvine
  */
 public class A388042 extends DecimalExpansionSequence {

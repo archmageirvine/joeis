@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A273437 Number of endofunctions on [n.intValue()] with exactly six cycles.
+ * A273437 Number of endofunctions on [n] with exactly six cycles.
  * @author Georg Fischer
  */
 public class A273437 extends LambdaSequence {

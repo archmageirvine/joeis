@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001519;
 import irvine.oeis.a035.A035614;
 
 /**
- * A392841 allocated for Jeffrey Shallit.
+ * A392841 Number of trailing zeros in a type of Zeckendorf expansion based on the Fibonacci numbers of odd index.
  * @author Sean A. Irvine
  */
 public class A392841 extends Sequence1 {

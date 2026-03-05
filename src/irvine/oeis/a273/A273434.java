@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A273434 Number of endofunctions on [n.intValue()] with exactly three cycles.
+ * A273434 Number of endofunctions on [n] with exactly three cycles.
  * @author Georg Fischer
  */
 public class A273434 extends LambdaSequence {

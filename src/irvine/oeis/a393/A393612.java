@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A393612 allocated for Clark Kimberling.
+ * A393612 a(n) = least positive integer k such that prime(n) + 2^k + 2 is prime, or -1 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A393612 extends A000040 {

@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A272514 Number of set partitions of [n.intValue()] into two blocks with distinct sizes.
+ * A272514 Number of set partitions of [n] into two blocks with distinct sizes.
  * a(n)=sum(i=1,floor((n-1)/2),binom(n,i))
  * @author Georg Fischer
  */

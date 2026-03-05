@@ -5,7 +5,7 @@ import irvine.math.polynomial.HermitePolynomials;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A393362 allocated for A.H.M. Smeets.
+ * A393362 Decimal expansion of the smallest positive zero of the Hermite polynomial of degree 6.
  * @author Sean A. Irvine
  */
 public class A393362 extends PolynomialRootExpansionSequence {

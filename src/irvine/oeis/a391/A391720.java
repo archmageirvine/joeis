@@ -4,7 +4,7 @@ import irvine.oeis.InverseSequence;
 import irvine.oeis.a243.A243917;
 
 /**
- * A084018.
+ * A391720 allocated for Juri-Stepan Gerasimov.
  * @author Sean A. Irvine
  */
 public class A391720 extends InverseSequence {

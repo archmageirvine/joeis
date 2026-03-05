@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393401 allocated for Juri-Stepan Gerasimov.
+ * A393401 Numbers k such that k*2^d + 1 is composite for any of its divisors d.
  * @author Sean A. Irvine
  */
 public class A393401 extends Sequence1 {

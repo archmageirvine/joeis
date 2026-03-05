@@ -6,7 +6,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A242936 Numbers n such that n*prime(n) + (n+1)*(prime(n+1)) is semiprime.
+ * A242936 Numbers k such that k*prime(k) + (k+1)*(prime(k+1)) is semiprime.
  * @author Georg Fischer
  */
 public class A242936 extends FilterNumberSequence {

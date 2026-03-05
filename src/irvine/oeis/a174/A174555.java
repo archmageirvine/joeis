@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A174555 Triangle read by rows:s(n,m)=Sum[StirlingS2[n, k]*StirlingS1[n - k, m]* Binomial[n, k]*(-1)^(m - k), {k, 0, n}];t[n,m]=s[n,m]+s[n,n-m].
+ * A174555 Triangle read by rows: T(n,m) = S(n,m) + S(n,n-m) where S(n,m) = Sum_{k=0..n} Stirling2(n, k) * Stirling1(n - k, m) * binomial(n, k) * (-1)^(m - k).
  * @author Georg Fischer
  */
 public class A174555 extends LambdaTriangle {

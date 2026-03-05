@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.math.z.Z;
 
 /**
- * A083123 Smallest n-digit palindromic multiple of n, or 0 if no such number exists.
+ * A084028 Average of n-th row of A084024.
  * @author Sean A. Irvine
  */
 public class A084028 extends A084024 {

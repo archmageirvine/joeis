@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A370653 Number of permutations of [n.intValue()] having exactly three adjacent 4-cycles.
+ * A370653 Number of permutations of [n] having exactly three adjacent 4-cycles.
  * @author Georg Fischer
  */
 public class A370653 extends LambdaSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a171.A171367;
 
 /**
- * A363071 Number of partitions of [n.intValue()] into m blocks that are ordered with increasing least elements and where block j contains n+1-j (m in {0..ceiling(n/2)}, j in {1..m}).
+ * A363071 Number of partitions of [n] into m blocks that are ordered with increasing least elements and where block j contains n+1-j (m in {0..ceiling(n/2)}, j in {1..m}).
  * @author Georg Fischer
  */
 public class A363071 extends LambdaSequence {

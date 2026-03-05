@@ -10,7 +10,7 @@ import irvine.oeis.a206.A206400;
 import irvine.util.string.StringUtils;
 
 /**
- * A393704 allocated for S. I. Dimitrov.
+ * A393703 allocated for Michel Lagneau.
  * @author Sean A. Irvine
  */
 public class A393703 extends Sequence1 {

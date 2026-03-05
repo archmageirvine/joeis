@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083964 Smallest palindromic multiple of 2n-1 beginning with the digit string of 2n-1; or 0 if no such number exists.
+ * A083964 Smallest palindromic multiple of 2*n-1 beginning with the digit string of 2*n-1; or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A083964 extends Sequence1 {

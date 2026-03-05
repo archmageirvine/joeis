@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A066274 Number of endofunctions of [n.intValue()] such that 1 is not a fixed point.
+ * A066274 Number of endofunctions of [n] such that 1 is not a fixed point.
  * a(n)=(n-1)*n^(n-1)
  * @author Georg Fischer
  */

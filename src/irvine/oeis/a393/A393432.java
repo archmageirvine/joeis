@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a391.A391498;
 
 /**
- * A393432 allocated for Janaka Rodrigo.
+ * A393432 a(n) is the number of three-element sets of distinct integer-sided trapezoids whose base angles are 60 degrees of total area n^2 but which cannot fill an equilateral triangular grid of side n units.
  * @author Sean A. Irvine
  */
 public class A393432 extends A391498 {

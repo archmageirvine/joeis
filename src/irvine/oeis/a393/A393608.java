@@ -6,7 +6,7 @@ import irvine.oeis.Sequence2;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A393608 allocated for Clark Kimberling.
+ * A393608 Rectangular array R read by descending antidiagonals: R(n,k) = prime(k) mod n, for n&gt;=2.
  * @author Sean A. Irvine
  */
 public class A393608 extends Sequence2 {

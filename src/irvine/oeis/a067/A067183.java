@@ -4,7 +4,7 @@ package irvine.oeis.a067;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A067183 Product of the prime factors of n equals the product of the digits of n.
+ * A067183 Numbers k such that the product of the prime factors of k equals the product of the digits of k.
  * @author Georg Fischer
  */
 public class A067183 extends FiniteSequence {

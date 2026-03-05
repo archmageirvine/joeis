@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A094810 Primes of the form F(k)*F(k+1) + F(k+2).
+ * A094810 Primes of the form F(k)*F(k+1) + F(k+2) where F[x] = Fibonacci[x].
  * @author Georg Fischer
  */
 public class A094810 extends FilterSequence {

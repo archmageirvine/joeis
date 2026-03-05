@@ -82,6 +82,13 @@ public class UpperLeftTriangle extends Triangle {
     return Z.valueOf(i + j);
   }
 
+  /**
+   * Computes an element of the matrix.
+   * The indices are shifted with <code>mRow0, mCol0</code>.
+   * @param i shifted row number
+   * @param j shifted column number
+   * @return M(i, j)
+   */
   public Z matrixElement(final long i, final long j) {
     return matrixElement((int) i, (int) j);
   }

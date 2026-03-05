@@ -7,7 +7,7 @@ import irvine.math.q.Rationals;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A262973 Total tail length of all iteration trajectories of all elements of random mappings from [n.intValue()] to [n.intValue()].
+ * A262973 Total tail length of all iteration trajectories of all elements of random mappings from [n] to [n].
  * @author Georg Fischer
  */
 public class A262973 extends LambdaSequence {

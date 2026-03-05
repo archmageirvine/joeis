@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A370524 Number of permutations of [n.intValue()] having exactly one adjacent 2-cycle.
+ * A370524 Number of permutations of [n] having exactly one adjacent 2-cycle.
  * @author Georg Fischer
  */
 public class A370524 extends LambdaSequence {

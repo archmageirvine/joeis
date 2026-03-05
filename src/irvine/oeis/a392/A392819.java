@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392819 allocated for Felix Huber.
+ * A392819 Numbers k such that p + e divides k for every prime power p^e in the canonical prime factorization of k.
  * @author Sean A. Irvine
  */
 public class A392819 extends Sequence1 {

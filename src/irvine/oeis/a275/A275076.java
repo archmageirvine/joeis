@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A275076 Number of set partitions of [n.intValue()] such that i-j is a multiple of nine for all i,j belonging to the same block.
+ * A275076 Number of set partitions of [n] such that i-j is a multiple of nine for all i,j belonging to the same block.
  * @author Georg Fischer
  */
 public class A275076 extends LambdaSequence {

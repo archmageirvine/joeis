@@ -6,7 +6,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A090484 a(n) = Floor[(Exp[Prime[n.intValue()]/n]-1)/Log[n.intValue()]].
+ * A090484 a(n) = Floor[(Exp[Prime[n]/n]-1)/Log[n]].
  * @author Georg Fischer
  */
 public class A090484 extends LambdaSequence {

@@ -9,7 +9,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A174553 Triangle read by rows:t(n,m)=Sum[StirlingS2[n, k]*Eulerian[n - k + 1, m]*(-1)^(n - k - m)*k!, {k, 0, n}].
+ * A174553 Triangle read by rows: T(n,m) = Sum_{k=0..n} StirlingS2(n, k) * Eulerian(n - k + 1, m) *(-1)^(n - k - m) * k!.
  * @author Georg Fischer
  */
 public class A174553 extends LambdaTriangle {

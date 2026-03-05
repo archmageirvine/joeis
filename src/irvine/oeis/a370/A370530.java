@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A370530 Number of permutations of [n.intValue()] having exactly three adjacent 3-cycles.
+ * A370530 Number of permutations of [n] having exactly three adjacent 3-cycles.
  * @author Georg Fischer
  */
 public class A370530 extends LambdaSequence {

@@ -10,7 +10,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007425;
 
 /**
- * A393519 allocated for Marko Riedel.
+ * A393519 Triangular array: T(n,k) is the number of set partitions of [n] into k labeled 3-tori.
  * @author Sean A. Irvine
  */
 public class A393519 extends Sequence0 {

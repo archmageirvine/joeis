@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390836 allocated for Claude H. R. Dequatre.
+ * A390836 Numerators of ratio n!/sigma(n), when the denominators are &gt; 1 and where n! = factorial(n) (A000142) and sigma(n) = sum of divisors of n (A000203).
  * @author Sean A. Irvine
  */
 public class A390836 extends Sequence1 {

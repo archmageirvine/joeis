@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A052895 E.g.f.: (1/2)/(exp(x) - 1) * (1 - (5 - 4*exp(x))^(1/2)).
+ * A052895 Expansion of e.g.f. (1/2)/(exp(x) - 1) * (1 - (5 - 4*exp(x))^(1/2)).
  * @author Sean A. Irvine
  */
 public class A052895 extends Sequence0 {

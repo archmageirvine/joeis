@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A225737 Numbers n such that n &lt; d(n)^(29/10), where d(n) is the number of divisors of n.
+ * A225737 Numbers k such that k &lt; d(k)^(29/10), where d(k) is the number of divisors of k.
  * @author Georg Fischer
  */
 public class A225737 extends FilterNumberSequence {

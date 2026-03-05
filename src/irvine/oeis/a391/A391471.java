@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A391471 Integers n such that floor((11/10)*n + 1/2) is a digit permutation of n.
+ * A391471 Integers k such that floor((11/10)*k + 1/2) is a digit permutation of k.
  * @author Sean A. Irvine
  */
 public class A391471 extends Sequence1 {

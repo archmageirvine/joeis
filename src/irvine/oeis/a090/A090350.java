@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A090350 a(n) = Floor[(n-PrimePi[n.intValue()])/(2-PrimePi[n.intValue()]+PrimePi[n-1])].
+ * A090350 a(n) = Floor[(n-PrimePi[n])/(2-PrimePi[n]+PrimePi[n-1])].
  * @author Georg Fischer
  */
 public class A090350 extends LambdaSequence {

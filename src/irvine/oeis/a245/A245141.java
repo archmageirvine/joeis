@@ -10,7 +10,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a000.A000085;
 
 /**
- * A245141 Number of endofunctions f on [2n] that are self-inverse on [n.intValue()].
+ * A245141 Number of endofunctions f on [2n] that are self-inverse on [n].
  * @author Georg Fischer
  */
 public class A245141 extends LambdaSequence {

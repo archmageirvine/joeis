@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393527 allocated for James S. DeArmon.
+ * A393527 a(0) = a(1) = a(2) = 1; thereafter odd indexed terms are the sum of the last 3 terms and even indexed terms are the sum of all previous terms.
  * @author Sean A. Irvine
  */
 public class A393527 extends Sequence0 {

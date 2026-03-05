@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A217390 Numbers n such that sum of squares of digits of n equals the sum of prime divisors of n.
+ * A217390 Numbers k such that sum of squares of digits of k equals the sum of prime divisors of k.
  * @author Georg Fischer
  */
 public class A217390 extends FilterNumberSequence {

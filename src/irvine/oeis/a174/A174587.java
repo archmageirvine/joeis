@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A083123.
+ * A174587 A symmetrical triangular sequence adjusted by -t[n,-1]+1 :t(n,m)=If[n == 0, 1, Sum[Eulerian[n + 1, k]*(-1)^k*(m + 1 - k)^n, {k, 0, n}]].
  * @author Sean A. Irvine
  */
 public class A174587 extends Sequence1 {

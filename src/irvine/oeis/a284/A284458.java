@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A284458 Number of pairs (f,g) of endofunctions on [n.intValue()] such that the composite function gf has no fixed point.
+ * A284458 Number of pairs (f,g) of endofunctions on [n] such that the composite function gf has no fixed point.
  * a(n) = sum(k=0,n,(-1)^k * binom(n,k)^2 * k! * n^(2*(n-k)));
  * @author Georg Fischer
  */

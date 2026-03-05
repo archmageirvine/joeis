@@ -6,7 +6,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A350105 Number of subsets of the initial segment of the natural numbers strictly below n which are not self-measuring. Number of subsets S of [n.intValue()] with S != distset(S).
+ * A350105 Number of subsets of the initial segment of the natural numbers strictly below n which are not self-measuring. Number of subsets S of [n] with S != distset(S).
  * @author Georg Fischer
  */
 public class A350105 extends LambdaSequence {

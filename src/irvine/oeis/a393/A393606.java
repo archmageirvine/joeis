@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A393606 allocated for Clark Kimberling.
+ * A393606 Rectangular array read by descending antidiagonals: row n shows the indices m such that prime(m) (mod n) = n-1.
  * @author Sean A. Irvine
  */
 public class A393606 extends Sequence1 {

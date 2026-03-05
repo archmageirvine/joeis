@@ -5,7 +5,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A099019 Odd composite numbers n such that n-2 and n+2 are also composite.
+ * A099019 Odd composite numbers k such that k-2 and k+2 are also composite.
  * @author Georg Fischer
  */
 public class A099019 extends FilterNumberSequence {

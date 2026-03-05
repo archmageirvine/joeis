@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A174546 A symmetrical triangle based on Stirling numbers of the second kind :q=3;t(n,m,q)=If[m == 0 Or m == n, 1, If[Floor[n/2] greater than or equal to m, StirlingS2[ n, m]*q^m, StirlingS2[n, n - m]*q^(n - m)]].
+ * A174546 Triangle read by rows: T(n,0) = T(n,n) = 1, T(n,k) = Stirling2(n,m) * 3^m where m = min(k,n-k).
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

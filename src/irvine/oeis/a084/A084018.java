@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A084018 A084017(n)/n.
+ * A084018 a(n) = A084017(n)/n.
  * @author Sean A. Irvine
  */
 public class A084018 extends SimpleTransformSequence {

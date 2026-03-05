@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390230.
+ * A390230 allocated for Frank M Jackson.
  * @author Sean A. Irvine
  */
 public class A390230 extends Sequence0 {

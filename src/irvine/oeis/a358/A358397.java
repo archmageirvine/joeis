@@ -7,7 +7,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A358397 Number of pairs of partitions (A&lt;=B, that is, A is a refinement of B) of [n.intValue()] such that A is noncrossing and its nontrivial blocks are of type {a,b} with a &lt;= n and b &gt; n.
+ * A358397 Number of pairs of partitions (A&lt;=B, that is, A is a refinement of B) of [n] such that A is noncrossing and its nontrivial blocks are of type {a,b} with a &lt;= n and b &gt; n.
  * @author Georg Fischer
  */
 public class A358397 extends LambdaSequence {

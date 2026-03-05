@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A275065 Number of permutations p of [n.intValue()] such that p(i)-i is a multiple of ten for all i in [n.intValue()].
+ * A275065 Number of permutations p of [n] such that p(i)-i is a multiple of ten for all i in [n].
  * a(n)=prod(i=0,9,floor((n+i)/10)!)
  * @author Georg Fischer
  */

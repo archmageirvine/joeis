@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393351 allocated for Felix Huber.
+ * A393351 a(n) is the lcm of n and all (p_i + e_i) in the canonical prime factorization of n.
  * @author Sean A. Irvine
  */
 public class A393351 extends Sequence1 {

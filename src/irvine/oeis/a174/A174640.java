@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a033.A033306;
 
 /**
- * A174640 A triangular sequence:t(n,m)=A033306(n,m)-A033306(n,0)+1.
+ * A174640 Triangle read by rows: T(n,k) = A033306(n,k) - A033306(n,0) + 1.
  * @author Sean A. Irvine
  */
 public class A174640 extends A033306 {

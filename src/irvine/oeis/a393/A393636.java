@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A393636 allocated for Stanislav Sykora.
+ * A393636 Decimal expansion of 2*cos(Pi/8)/(1+cos(Pi/8)).
  * @author Sean A. Irvine
  */
 public class A393636 extends DecimalExpansionSequence {

@@ -13,6 +13,6 @@ public class A152424 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A152424() {
-    super(1, n -> Functions.PRIME.z(Z.valueOf(n).pow(n)).root(n.intValue()));
+    super(1, n -> Functions.PRIME.z(Z.valueOf(n).pow(n)).root(n));
   }
 }

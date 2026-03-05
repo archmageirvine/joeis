@@ -22,7 +22,7 @@ public class A076700 extends Sequence1 {
     final long lim = Functions.DIGIT_LENGTH.l(2, t);
     Z count = Z.ZERO;
     for (long p = 2; p < lim; p = mPrime.nextPrime(p)) {
-      count = count.add(Functions.PRIME_PI.z(t.root((int) p)));
+      count = count.add(Functions.PRIME_PI.z(t.root(p)));
     }
     return count;
   }

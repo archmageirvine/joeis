@@ -58,7 +58,7 @@ public class BalasubramanianNagaraj extends AbstractFactorizer {
     while (p <= primeLimit) {
       if (p <= smallLimit ? sieveTest(n, p, (int) Math.pow(primeLimit, 0.75)) : sieveTest(n, p, (int) Math.ceil(2.0 * Math.log(primeLimit) / Math.log(p)))) {
         // check p-th power
-        final Z r = n.root((int) p);
+        final Z r = n.root(p);
         if (n.auxiliary() != 0) {
           fs.remove(n);
           fs.add(r, FactorSequence.UNKNOWN, exponent * (int) p);

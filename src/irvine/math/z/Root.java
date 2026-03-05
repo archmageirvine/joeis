@@ -1,6 +1,6 @@
 package irvine.math.z;
 
-import irvine.math.IntegerUtils;
+import irvine.math.LongUtils;
 
 /**
  * Root finding.
@@ -12,12 +12,12 @@ final class Root {
   private Root() { }
 
   /** nth root by Newton's method, sets auxiliary. */
-  private static Z rootNewton(final Z z, final int n) {
+  private static Z rootNewton(final Z z, final long n) {
     final int lga = z.bitLength();
-    int k = (lga + n - 1) / n;
+    long k = (lga + n - 1) / n;
     Z b = Z.ONE.shiftLeft(k);
     // choose between bisection method and Newton's method
-    if (n >= 16 && 2 * IntegerUtils.log2(lga) + IntegerUtils.log2(n) > k) {
+    if (n >= 16 && 2 * LongUtils.log2(lga) + LongUtils.log2(n) > k) {
       // bisection method
       Z lowb = Z.ONE.shiftLeft((lga - n + 1) / n);
       Z highb = b;
@@ -74,7 +74,7 @@ final class Root {
    * @exception ArithmeticException for n zero or even root of
    * negative number or negative root of zero.
    */
-  static Z root(final Z aa, final int n) {
+  static Z root(final Z aa, final long n) {
     final int sa = aa.signum();
     final boolean oknegative = sa < 0 && (n & 1) != 0;
     final Z a = oknegative ? aa.negate() : aa;

@@ -644,7 +644,7 @@ public class Z extends Number implements Comparable<Z>, IsInteger {
    * @exception ArithmeticException for n zero or even root of
    * negative number or negative root of zero.
    */
-  public Z root(final int n) {
+  public Z root(final long n) {
     return Root.root(this, n);
   }
 

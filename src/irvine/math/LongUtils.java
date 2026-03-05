@@ -93,6 +93,17 @@ public final class LongUtils {
   }
 
   /**
+   * Approximate binary logarithm of an integer. If the given integer is 0 then
+   * 0 is the result, otherwise the result is the binary logarithm of the
+   * absolute value of the given number.
+   * @param n integer to get logarithm of
+   * @return binary logarithm
+   */
+  public static long log2(final long n) {
+    return Long.SIZE - Long.numberOfLeadingZeros(Math.abs(n));
+  }
+
+  /**
    * Compute the number of bits in <code>|n|</code>.
    * @param n number to take logarithm of.
    * @return base 2 logarithm of <code>|n|</code>

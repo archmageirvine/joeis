@@ -14,6 +14,6 @@ public class A387141 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A387141() {
-    super(0, n -> n == 0 ? Z.ONE : Integers.SINGLETON.product(1, n, Functions.RAD::z).root(n.intValue()));
+    super(0, n -> n == 0 ? Z.ONE : Integers.SINGLETON.product(1, n, Functions.RAD::z).root(n));
   }
 }

@@ -13,6 +13,6 @@ public class A152425 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A152425() {
-    super(1, n -> Functions.DISTINCT_PARTITIONS.z(Z.valueOf(n).pow(n)).root(n.intValue()));
+    super(1, n -> Functions.DISTINCT_PARTITIONS.z(Z.valueOf(n).pow(n)).root(n));
   }
 }

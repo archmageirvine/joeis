@@ -106,7 +106,7 @@ public final class QUtils {
       final String exponentStr = matcher.group(3);
 
       coeffStr = coeffStr.replace("(", "").replace(")", "");
-      if (sign != null && sign.equals("-")) {
+      if ("-".equals(sign)) {
         coeffStr = "-" + coeffStr;
       }
 

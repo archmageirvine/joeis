@@ -100,11 +100,11 @@ public class PolynomialFieldSequence extends AbstractSequence implements Rationa
     int iseq = 0;
     for (Sequence seq : mSeqs) {
       if (iseq > 0) {
-        sb.append(",");
+        sb.append(',');
       }
       sb.append(((seq instanceof EgfWrapper) ? ((EgfWrapper) seq).getSequence() : seq).getClass().getSimpleName());
       if (mTypes.get(iseq) == EGF) {
-        sb.append("!");
+        sb.append('!');
       }
       ++iseq;
     }
@@ -166,7 +166,7 @@ public class PolynomialFieldSequence extends AbstractSequence implements Rationa
       } else if (pelem.length() >= 2 && Character.isDigit(pelem.charAt(1))) { // one of p, i, ^ with 1 or 2 additional int parameter(s)
         parms = pelem.substring(1);
         pelem = pelem.substring(0, 1); // single character code
-      } else if (pelem.compareTo("S") >= 0 && pelem.compareTo("V") <= 0) { // S...U -> B...E
+      } else if ("S".compareTo(pelem) <= 0 && "V".compareTo(pelem) >= 0) { // S...U -> B...E
         pelem = Character.toString(pelem.charAt(0) - 'S' + 'B');
         mPostStrings[k] = pelem;
       }

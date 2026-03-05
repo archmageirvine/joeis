@@ -36,6 +36,20 @@ public class A386966 extends Sequence1 {
       }
       return Arrays.compare(mGen, generator.mGen);
     }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (!(obj instanceof Generator)) {
+        return false;
+      }
+      final Generator other = (Generator) obj;
+      return mMin == other.mMin && Arrays.equals(mGen, other.mGen);
+    }
+
+    @Override
+    public int hashCode() {
+      return Arrays.hashCode(mGen);
+    }
   }
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));

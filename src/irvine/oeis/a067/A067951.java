@@ -12,7 +12,7 @@ public class A067951 extends CachedSequence {
 
   /** Construct the sequence. */
   public A067951() {
-    super(0, Integer.class, (self, n) -> n == 0
+    super(0, Long.class, (self, n) -> n == 0
       ? Z.ONE
       : Integers.SINGLETON.sumdiv(n, k -> self.a(n - k)));
   }

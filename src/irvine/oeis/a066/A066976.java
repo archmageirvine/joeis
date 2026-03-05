@@ -12,6 +12,6 @@ public class A066976 extends CachedSequence {
 
   /** Construct the sequence. */
   public A066976() {
-    super(0, Integer.class, (self, k) -> k == 0 ? Z.ONE : Integers.SINGLETON.sum(0, k - 1, j -> self.a(j).multiply(Z.valueOf(k).pow(j))));
+    super(0, Long.class, (self, k) -> k == 0 ? Z.ONE : Integers.SINGLETON.sum(0, k - 1, j -> self.a(j).multiply(Z.valueOf(k).pow(j))));
   }
 }

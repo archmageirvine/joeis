@@ -11,14 +11,14 @@ public class A080678 extends CachedSequence {
 
   /** Construct the sequence. */
   public A080678() {
-    super(0, Integer.class, (self, n) -> {
+    super(0, Long.class, (self, n) -> {
       if (n == 0) {
         return Z.ZERO;
       }
       if (n <= 3) {
         return Z.ONE;
       }
-      switch (n & 3) {
+      switch ((int) (n & 3)) {
         case 0:
           return self.a(n / 4).multiply(4);
         case 1:

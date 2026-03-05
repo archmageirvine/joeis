@@ -11,15 +11,15 @@ public class A072726 extends CachedSequence {
 
   /** Construct the sequence. */
   public A072726() {
-    super(0, Integer.class, (self, n) -> {
+    super(0, Long.class, (self, n) -> {
       if (n == 0) {
         return Z.ONE;
       }
-      if (n == Integer.highestOneBit(n)) {
-        return Z.valueOf(2 * Integer.numberOfTrailingZeros(n) + 2);
+      if (n == Long.highestOneBit(n)) {
+        return Z.valueOf(2 * Long.numberOfTrailingZeros(n) + 2);
       }
-      if (n - 1 == Integer.highestOneBit(n - 1)) {
-        return Z.valueOf(4 * Integer.numberOfTrailingZeros(n - 1) + 1);
+      if (n - 1 == Long.highestOneBit(n - 1)) {
+        return Z.valueOf(4 * Long.numberOfTrailingZeros(n - 1) + 1);
       }
       // Determine n = 2^k + 2^j + m, 2^k > 2^ j > m >= 0
       int v = 1;
@@ -30,7 +30,7 @@ public class A072726 extends CachedSequence {
       }
       --k;
       v >>>= 1;
-      final int m = n - v;
+      final long m = n - v;
       int j = k;
       while (v > m) {
         v >>>= 1;

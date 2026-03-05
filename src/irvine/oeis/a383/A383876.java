@@ -11,7 +11,7 @@ public class A383876 extends CachedSequence {
 
   /** Construct the sequence. */
   public A383876() {
-    super(0, Integer.class, (self, n) -> {
+    super(0, Long.class, (self, n) -> {
       if (n == 0) {
         return Z.ZERO;
       }
@@ -21,7 +21,7 @@ public class A383876 extends CachedSequence {
       final Z t = self.a(n - 1);
       boolean isRecord = true;
       int cnt = 0;
-      for (int k = n - 2; k >= 0; --k) {
+      for (long k = n - 2; k >= 0; --k) {
         final Z v = self.a(k);
         if (v.equals(t)) {
           ++cnt;
@@ -32,7 +32,7 @@ public class A383876 extends CachedSequence {
       }
       if (isRecord) {
         Z max = Z.ZERO;
-        for (int k = n - 2; k >= 0; --k) {
+        for (long k = n - 2; k >= 0; --k) {
           max = max.max(self.a(k));
         }
         return self.a(max);

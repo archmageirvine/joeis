@@ -12,7 +12,7 @@ public class A078479 extends CachedSequence {
 
   /** Construct the sequence. */
   public A078479() {
-    super(1, Integer.class, (self, n) -> n == 1 ? Z.ONE : self.a(Functions.LPF.z(n - 1)).add(self.a(Functions.GPF.z(n - 1))));
+    super(1, Long.class, (self, n) -> n == 1 ? Z.ONE : self.a(Functions.LPF.z(n - 1)).add(self.a(Functions.GPF.z(n - 1))));
   }
 }
 

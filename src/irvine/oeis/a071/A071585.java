@@ -12,13 +12,13 @@ import irvine.oeis.DirectSequence;
  */
 public class A071585 extends CachedSequence {
 
-  private static BiFunction<DirectSequence, Integer, Z> create() {
+  private static BiFunction<DirectSequence, Long, Z> create() {
     return new BiFunction<>() {
       private int mP = 1;
       private int mK = -1;
 
       @Override
-      public Z apply(final DirectSequence self, final Integer n) {
+      public Z apply(final DirectSequence self, final Long n) {
         // WARNING: This implementation does not really support random access
         if (n <= 1) {
           return n == 0 ? Z.ONE : Z.TWO;
@@ -34,7 +34,7 @@ public class A071585 extends CachedSequence {
 
   /** Construct the sequence. */
   public A071585() {
-    super(0, Integer.class, create());
+    super(0, Long.class, create());
   }
 }
 

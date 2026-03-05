@@ -12,7 +12,7 @@ public class A078346 extends CachedSequence {
 
   /** Construct the sequence. */
   public A078346() {
-    super(1, Integer.class, (self, n) -> n == 1 ? Z.ONE : Integers.SINGLETON.sum(1, n - 1, k -> self.a((n - 1) / k)));
+    super(1, Long.class, (self, n) -> n == 1 ? Z.ONE : Integers.SINGLETON.sum(1, n - 1, k -> self.a((n - 1) / k)));
   }
 }
 

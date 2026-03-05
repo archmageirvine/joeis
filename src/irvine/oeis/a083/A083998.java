@@ -11,15 +11,15 @@ public class A083998 extends CachedSequence {
 
   /** Construct the sequence. */
   public A083998() {
-    super(1, Integer.class, (self, n) -> {
+    super(1, Long.class, (self, n) -> {
       if (n == 1) {
         return Z.THREE;
       }
       final StringBuilder sb = new StringBuilder();
-      for (int k = n - 1; k > 0; --k) {
+      for (long k = n - 1; k > 0; --k) {
         sb.append(self.a(k));
       }
-      for (int k = 2; k < n; ++k) {
+      for (long k = 2; k < n; ++k) {
         sb.append(self.a(k));
       }
       long j = -1;

@@ -12,7 +12,7 @@ public class A078465 extends CachedSequence {
 
   /** Construct the sequence. */
   public A078465() {
-    super(1, Integer.class, (self, n) -> {
+    super(1, Long.class, (self, n) -> {
       if (n <= 2) {
         return Z.ONE;
       }

@@ -12,12 +12,12 @@ public class A001137 extends CachedSequence {
 
   /** Construct the sequence. */
   public A001137() {
-    super(1, Integer.class, (self, n) -> {
+    super(1, Long.class, (self, n) -> {
       if (n <= 1) {
         return Z.ONE;
       }
       Z t = Z.ZERO;
-      for (int m = (n + 4) / 4; m <= (n + 1) / 2; ++m) {
+      for (long m = (n + 4) / 4; m <= (n + 1) / 2; ++m) {
         t = t.add(Binomial.binomial(2L * m, n + 1 - 2L * m).multiply(self.a(m - 1)));
       }
       return t;

@@ -11,6 +11,6 @@ public class A081832 extends CachedSequence {
 
   /** Construct the sequence. */
   public A081832() {
-    super(1, Integer.class, (self, n) -> n <= 2 ? Z.ONE : self.a(n + 1 - self.a(n - 1).multiply2().intValueExact()).add(self.a(n - self.a(n - 2).multiply2().intValueExact())));
+    super(1, Long.class, (self, n) -> n <= 2 ? Z.ONE : self.a(n + 1 - self.a(n - 1).multiply2().intValueExact()).add(self.a(n - self.a(n - 2).multiply2().intValueExact())));
   }
 }

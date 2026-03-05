@@ -12,6 +12,6 @@ public class A080655 extends CachedSequence {
 
   /** Construct the sequence. */
   public A080655() {
-    super(1, Integer.class, (self, n) -> n <= 2 ? Z.ONE : self.a(n - 1).add(self.a((n - 1) / Functions.LPF.i(n - 1))));
+    super(1, Long.class, (self, n) -> n <= 2 ? Z.ONE : self.a(n - 1).add(self.a((n - 1) / Functions.LPF.i(n - 1))));
   }
 }

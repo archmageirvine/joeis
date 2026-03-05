@@ -11,6 +11,6 @@ public class A076902 extends CachedSequence {
 
   /** Construct the sequence. */
   public A076902() {
-    super(1, Integer.class, (self, n) -> n == 1 ? Z.ONE : Z.valueOf(n / 2).subtract(self.a(n / 2)));
+    super(1, Long.class, (self, n) -> n == 1 ? Z.ONE : Z.valueOf(n / 2).subtract(self.a(n / 2)));
   }
 }

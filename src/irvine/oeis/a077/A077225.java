@@ -11,7 +11,7 @@ import irvine.oeis.CachedSequence;
 public class A077225 extends CachedSequence {
 
   protected A077225(final Z mStart) {
-    super(0, Integer.class, (self, n) -> {
+    super(0, Long.class, (self, n) -> {
       if (n == 0) {
         return mStart;
       }

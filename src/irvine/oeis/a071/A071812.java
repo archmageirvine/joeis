@@ -16,7 +16,7 @@ public class A071812 extends CachedSequence {
 
   /** Construct the sequence. */
   public A071812() {
-    super(0, Integer.class, (self, k) -> {
+    super(0, Long.class, (self, k) -> {
       if (k == 0) {
         return Z.THREE;
       }

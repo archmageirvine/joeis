@@ -11,12 +11,12 @@ public class A392736 extends CachedSequence {
 
   /** Construct the sequence. */
   public A392736() {
-    super(0, Integer.class, (self, n) -> {
+    super(0, Long.class, (self, n) -> {
       if (n <= 1) {
         return Z.valueOf(n);
       }
-      final int q = n >>> 2;
-      switch (n & 3) {
+      final long q = n >>> 2;
+      switch ((int) (n & 3)) {
         case 0:
           return self.a(q);
         case 1:

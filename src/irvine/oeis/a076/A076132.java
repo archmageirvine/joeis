@@ -12,6 +12,6 @@ public class A076132 extends CachedSequence {
 
   /** Construct the sequence. */
   public A076132() {
-    super(1, Integer.class, (self, n) -> n == 1 ? Z.ONE : Integers.SINGLETON.sum(1, n - 1, k -> self.a(n - k).pow(k)));
+    super(1, Long.class, (self, n) -> n == 1 ? Z.ONE : Integers.SINGLETON.sum(1, n - 1, k -> self.a(n - k).pow(k)));
   }
 }

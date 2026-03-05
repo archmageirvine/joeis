@@ -11,7 +11,7 @@ public class A076935 extends CachedSequence {
 
   /** Construct the sequence. */
   public A076935() {
-    super(1, Integer.class, (self, n) -> n == 1
+    super(1, Long.class, (self, n) -> n == 1
       ? Z.ONE
       : Z.valueOf(n)
       .subtract(self.a(n - 1))

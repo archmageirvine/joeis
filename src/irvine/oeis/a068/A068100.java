@@ -14,7 +14,7 @@ public class A068100 extends CachedSequence {
 
   /** Construct the sequence. */
   public A068100() {
-    super(1, Integer.class, (self, n) -> n == 1
+    super(1, Long.class, (self, n) -> n == 1
       ? Z.ONE
       : Integers.SINGLETON.sumdiv(n - 1, d -> self.a(d).multiply(Functions.FACTORIAL.z(n - 1).divide(Functions.FACTORIAL.z(d)))));
   }

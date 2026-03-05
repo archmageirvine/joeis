@@ -13,15 +13,15 @@ public class A392742 extends CachedSequence {
 
   /** Construct the sequence. */
   public A392742() {
-    super(0, Integer.class, (self, n) -> {
+    super(0, Long.class, (self, n) -> {
       if (n == 0) {
         return Z.ZERO;
       }
       if (n == 1) {
         return Z.ONE;
       }
-      final int m = n >>> 2;
-      switch (n & 3) {
+      final long m = n >>> 2;
+      switch ((int) (n & 3)) {
         case 0:
           return self.a(m);
         case 1:

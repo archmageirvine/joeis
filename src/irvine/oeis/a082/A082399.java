@@ -11,13 +11,13 @@ public class A082399 extends CachedSequence {
 
   /** Construct the sequence. */
   public A082399() {
-    super(1, Integer.class, (self, n) -> {
+    super(1, Long.class, (self, n) -> {
       if (n == 1) {
         return Z.ONE;
       }
       long r = 0;
       long t = 1;
-      for (int k = n - 1; k > 0; --k) {
+      for (long k = n - 1; k > 0; --k) {
         final long u = self.a(k).mod(n);
         t *= 10;
         t %= n;

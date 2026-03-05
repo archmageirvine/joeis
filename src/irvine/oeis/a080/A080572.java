@@ -11,11 +11,11 @@ public class A080572 extends CachedSequence {
 
   /** Construct the sequence. */
   public A080572() {
-    super(0, Integer.class, (self, n) -> {
+    super(0, Long.class, (self, n) -> {
       if (n <= 1) {
         return Z.ZERO;
       }
-      final int m = n / 2;
+      final long m = n / 2;
       if ((n & 1) == 0) {
         return self.a(m).multiply(3).add((long) m * m);
       }

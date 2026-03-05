@@ -13,7 +13,7 @@ public class A383614 extends CachedSequence {
 
   /** Construct the sequence. */
   public A383614() {
-    super(1, Integer.class, (self, n) -> {
+    super(1, Long.class, (self, n) -> {
       Z sum = Z.ZERO;
       final FactorSequence fs = Jaguar.factor(n);
       for (final Z dd : fs.divisors()) {

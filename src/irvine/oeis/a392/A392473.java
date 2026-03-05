@@ -12,7 +12,7 @@ public class A392473 extends CachedSequence {
 
   /** Construct the sequence. */
   public A392473() {
-    super(0, Integer.class, (self, n) -> n <= 1 ? Z.valueOf(n) : self.a(n - 1).add(self.a(Functions.SQRT.z(n - 1).square())));
+    super(0, Long.class, (self, n) -> n <= 1 ? Z.valueOf(n) : self.a(n - 1).add(self.a(Functions.SQRT.z(n - 1).square())));
   }
 }
 

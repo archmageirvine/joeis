@@ -9,8 +9,8 @@ import irvine.oeis.CachedSequence;
  */
 public class A139250 extends CachedSequence {
 
-  private static int msb(final int n) {
-    int t = 1;
+  private static long msb(final long n) {
+    long t = 1;
     while (n >= t) {
       t <<= 1;
     }
@@ -19,11 +19,11 @@ public class A139250 extends CachedSequence {
 
   /** Construct the sequence. */
   public A139250() {
-    super(0, Integer.class, (self, n) -> {
+    super(0, Long.class, (self, n) -> {
       if (n == 0) {
         return Z.ZERO;
       }
-      final int msb = msb(n);
+      final long msb = msb(n);
       final Z k = Z.valueOf(msb).square().multiply2().add(1).divide(3);
       if (msb == n) {
         return k;

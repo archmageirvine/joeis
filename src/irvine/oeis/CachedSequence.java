@@ -30,7 +30,7 @@ import irvine.math.z.Z;
  *
  * For example, Fibonacci numbers done with this approach could be:
  * <code>
- *   new CachedSequence(0, Integer.class,
+ *   new CachedSequence(0, Long.class,
  *     (self, n) -> n <= 1 ? Z.valueOf(n) : self.a(n - 1).add(self.a(n - 2)));
  * </code>
  *

@@ -12,7 +12,7 @@ public class A393300 extends CachedSequence {
 
   /** Construct the sequence. */
   public A393300() {
-    super(1, Integer.class, (self, n) -> {
+    super(1, Long.class, (self, n) -> {
       if (n == 1) {
         return Z.ZERO;
       }
@@ -20,7 +20,7 @@ public class A393300 extends CachedSequence {
       while (true) {
         final String s = Functions.FACTORIAL.z(++k).toString();
         boolean ok = true;
-        for (int j = n - 1; j > 0; --j) {
+        for (long j = n - 1; j > 0; --j) {
           if (!s.contains(self.a(j).toString())) {
             ok = false;
             break;

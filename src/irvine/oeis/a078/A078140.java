@@ -10,13 +10,13 @@ import irvine.oeis.CachedSequence;
  */
 public class A078140 extends CachedSequence {
 
-  private static Z w(final int n) {
+  private static Z w(final long n) {
     return CR.PHI.multiply(n).floor();
   }
 
   /** Construct the sequence. */
   public A078140() {
-    super(1, Integer.class, (self, n) -> {
+    super(1, Long.class, (self, n) -> {
       if (n == 1) {
         return Z.ONE;
       }

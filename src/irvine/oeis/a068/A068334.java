@@ -12,6 +12,6 @@ public class A068334 extends CachedSequence {
 
   /** Construct the sequence. */
   public A068334() {
-    super(1, Integer.class, (self, k) -> k == 1 ? Z.ONE : Integers.SINGLETON.productdiv(k - 1, self::a).add(1));
+    super(1, Long.class, (self, k) -> k == 1 ? Z.ONE : Integers.SINGLETON.productdiv(k - 1, self::a).add(1));
   }
 }

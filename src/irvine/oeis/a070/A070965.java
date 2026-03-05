@@ -13,6 +13,6 @@ public class A070965 extends CachedSequence {
 
   /** Construct the sequence. */
   public A070965() {
-    super(1, Integer.class, (self, n) -> n == 1 ? Z.ONE : Integers.SINGLETON.sumdiv(n - 1, d -> self.a(d).multiply(Functions.MOBIUS.l(d))));
+    super(1, Long.class, (self, n) -> n == 1 ? Z.ONE : Integers.SINGLETON.sumdiv(n - 1, d -> self.a(d).multiply(Functions.MOBIUS.l(d))));
   }
 }

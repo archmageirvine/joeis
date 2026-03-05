@@ -15,7 +15,7 @@ public class A078510 extends CachedSequence {
 
   /** Construct the sequence. */
   public A078510() {
-    super(0, Integer.class, (self, n) -> n <= 1 ? Z.valueOf(n) : self.a(n - 1).add(self.a(A265409.a(n))));
+    super(0, Long.class, (self, n) -> n <= 1 ? Z.valueOf(n) : self.a(n - 1).add(self.a(A265409.a(n))));
   }
 }
 

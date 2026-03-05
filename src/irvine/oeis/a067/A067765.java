@@ -13,6 +13,6 @@ public class A067765 extends CachedSequence {
 
   /** Construct the sequence. */
   public A067765() {
-    super(0, Integer.class, (self, k) -> k == 0 ? Z.ONE : Integers.SINGLETON.product(0, k - 1, j -> self.a(j).add(1).pow(Binomial.binomial(k, j))));
+    super(0, Long.class, (self, k) -> k == 0 ? Z.ONE : Integers.SINGLETON.product(0, k - 1, j -> self.a(j).add(1).pow(Binomial.binomial(k, j))));
   }
 }

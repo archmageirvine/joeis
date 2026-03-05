@@ -17,6 +17,6 @@ public class A071673 extends CachedSequence {
 
   /** Construct the sequence. */
   public A071673() {
-    super(0, Integer.class, (self, n) -> n == 0 ? Z.ZERO : self.a(A025581.a(n - 1).intValueExact()).add(self.a(A002262.a(n - 1).intValueExact())).add(1));
+    super(0, Long.class, (self, n) -> n == 0 ? Z.ZERO : self.a(A025581.a(n - 1).intValueExact()).add(self.a(A002262.a(n - 1).intValueExact())).add(1));
   }
 }

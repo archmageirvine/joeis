@@ -13,6 +13,6 @@ public class A079512 extends CachedSequence {
 
   /** Construct the sequence. */
   public A079512() {
-    super(0, Integer.class, (self, n) -> n <= 1 ? Z.ONE : Integers.SINGLETON.sum(0, n / 2, k -> Binomial.binomial(n - k - 1, k).multiply(self.a(n - 2 * k - 1))).add((n + 1) & 1));
+    super(0, Long.class, (self, n) -> n <= 1 ? Z.ONE : Integers.SINGLETON.sum(0, n / 2, k -> Binomial.binomial(n - k - 1, k).multiply(self.a(n - 2 * k - 1))).add((n + 1) & 1));
   }
 }

@@ -13,7 +13,7 @@ public class A082158 extends CachedSequence {
 
   /** Construct the sequence. */
   public A082158() {
-    super(0, Integer.class, (self, n) -> n == 0
+    super(0, Long.class, (self, n) -> n == 0
       ? Z.ONE
       : Integers.SINGLETON.sum(0, n - 1, k -> Binomial.binomial(n, k).multiply(Z.valueOf(k + 1).pow(3L * (n - k))).multiply(self.a(k)).multiply(Z.NEG_ONE.pow(n - k + 1))));
   }

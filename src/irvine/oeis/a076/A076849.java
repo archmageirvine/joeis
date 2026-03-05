@@ -11,7 +11,7 @@ import irvine.oeis.Sequence1;
 public class A076849 extends Sequence1 {
 
   private long mN = 0;
-  private final CachedSequence mU = new CachedSequence(1, Integer.class,
+  private final CachedSequence mU = new CachedSequence(1, Long.class,
     (self, n) -> n == 1 ? Z.ONE : Z.valueOf(n).add(self.a((n + 1) / 2).subtract(self.a(n / 2)).abs()));
 
   @Override

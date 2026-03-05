@@ -12,12 +12,12 @@ public class A083561 extends CachedSequence {
 
   /** Construct the sequence. */
   public A083561() {
-    super(1, Integer.class, (self, n) -> {
+    super(1, Long.class, (self, n) -> {
       if (n == 1) {
         return Z.ONE;
       }
       Z max = Z.ONE;
-      for (int k = n - 1; k > 0; --k) {
+      for (long k = n - 1; k > 0; --k) {
         if (Functions.GCD.z(self.a(k), n).isOne()) {
           max = max.max(self.a(k));
         }

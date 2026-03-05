@@ -17,7 +17,7 @@ public class A082553 extends CachedSequence {
 
   /** Construct the sequence. */
   public A082553() {
-    super(1, Integer.class, (self, n) -> {
+    super(1, Long.class, (self, n) -> {
       if (Predicates.SQUARE_FREE.is(n)) {
         return Z.ONE;
       }

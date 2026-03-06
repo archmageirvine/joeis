@@ -10,7 +10,7 @@ import irvine.oeis.a002.A002113;
 public class A014186 extends A002113 {
 
   {
-    setOffset(0);
+    setOffset(1);
   }
 
   @Override

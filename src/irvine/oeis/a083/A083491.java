@@ -18,10 +18,6 @@ public class A083491 extends AbstractSequence {
     mS = s;
   }
 
-  protected A083491(final int s) {
-    this(0, s);
-  }
-
   /** Construct the sequence. */
   public A083491() {
     this(0, 3);

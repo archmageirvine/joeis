@@ -15,7 +15,7 @@ import irvine.util.bumper.BumperFactory;
 public class A393807 extends Sequence1 {
 
   private final Bumper mBumper = BumperFactory.range(1, 9);
-  private int[] mA = new int[] {};
+  private int[] mA = {};
   private int mCenter = -1;
 
   @Override

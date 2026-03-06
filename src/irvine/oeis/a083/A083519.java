@@ -19,7 +19,7 @@ public class A083519 extends CachedSequence {
       while (true) {
         t = t.add(2);
         boolean ok = true;
-        for (int k = 0; k < n; ++k) {
+        for (long k = 0; k < n; ++k) {
           if (!t.multiply(self.a(k)).add(2).isProbablePrime()) {
             ok = false;
             break;

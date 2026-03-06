@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393748 Number of pyramidal planar partitions of size n.
+ * A393748 allocated for Ludovic Schwob.
  * @author Sean A. Irvine
  */
 public class A393748 extends Sequence0 {

@@ -17,7 +17,7 @@ public class DenominatorGfSequence extends GfSequence {
    * @param step increment to apply
    * @param gf the generating function
    */
-  public DenominatorGfSequence(final int offset, final int step, final Series<Q> gf) {
+  public DenominatorGfSequence(final int offset, final long step, final Series<Q> gf) {
     super(offset, step, gf);
   }
 
@@ -36,7 +36,7 @@ public class DenominatorGfSequence extends GfSequence {
    * @param step increment to apply
    * @param gf the generating function
    */
-  public DenominatorGfSequence(final int offset, final int step, final String gf) {
+  public DenominatorGfSequence(final int offset, final long step, final String gf) {
     this(offset, step, SeriesParser.parse(gf));
   }
 
@@ -51,6 +51,6 @@ public class DenominatorGfSequence extends GfSequence {
 
   @Override
   public Z a(final long n) {
-    return q((int) n).den();
+    return q(n).den();
   }
 }

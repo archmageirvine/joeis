@@ -16,8 +16,8 @@ public class GfSequence extends AbstractSequence implements DirectSequence {
 
   // Make ring easily available to subclasses
   protected static final SeriesRing<Q> SQ = SeriesRing.SQ;
-  private int mN;
-  private final int mStep;
+  private long mN;
+  private final long mStep;
   private final Series<Q> mSeries;
 
   /**
@@ -26,7 +26,7 @@ public class GfSequence extends AbstractSequence implements DirectSequence {
    * @param step increment to apply
    * @param gf the generating function
    */
-  public GfSequence(final int offset, final int step, final Series<Q> gf) {
+  public GfSequence(final int offset, final long step, final Series<Q> gf) {
     super(offset);
     mN = offset * step - step;
     mStep = step;
@@ -48,7 +48,7 @@ public class GfSequence extends AbstractSequence implements DirectSequence {
    * @param step increment to apply
    * @param gf the generating function
    */
-  public GfSequence(final int offset, final int step, final String gf) {
+  public GfSequence(final int offset, final long step, final String gf) {
     this(offset, step, SeriesParser.parse(gf));
   }
 
@@ -74,7 +74,7 @@ public class GfSequence extends AbstractSequence implements DirectSequence {
    * @param n term number
    * @return term value
    */
-  protected Q q(final int n) {
+  protected Q q(final long n) {
     return mSeries.coeff(n);
   }
 
@@ -86,11 +86,11 @@ public class GfSequence extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return a(n.intValueExact());
+    return a(n.longValueExact());
   }
 
   @Override
   public Z a(final long n) {
-    return q((int) n).num();
+    return q(n).num();
   }
 }

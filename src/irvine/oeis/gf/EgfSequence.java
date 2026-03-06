@@ -17,7 +17,7 @@ public class EgfSequence extends GfSequence {
    * @param step increment to apply
    * @param gf the generating function
    */
-  public EgfSequence(final int offset, final int step, final Series<Q> gf) {
+  public EgfSequence(final int offset, final long step, final Series<Q> gf) {
     super(offset, step, gf);
   }
 
@@ -36,7 +36,7 @@ public class EgfSequence extends GfSequence {
    * @param step increment to apply
    * @param gf the generating function
    */
-  public EgfSequence(final int offset, final int step, final String gf) {
+  public EgfSequence(final int offset, final long step, final String gf) {
     this(offset, step, SeriesParser.parse(gf));
   }
 
@@ -50,7 +50,7 @@ public class EgfSequence extends GfSequence {
   }
 
   @Override
-  protected Q q(final int n) {
+  protected Q q(final long n) {
     return super.q(n).multiply(Functions.FACTORIAL.z(n));
   }
 }

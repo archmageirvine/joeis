@@ -19,7 +19,7 @@ public class A081757 extends GfSequence {
       private int mK = 0;
 
       @Override
-      public Q coeff(final int n) {
+      public Q coeff(final long n) {
         while (n > mK * mK + 3 * mK) {
           mS = SeriesRing.SQ.add(mS, SeriesRing.SQ.divide(SeriesRing.SQ.monomial(++mK * mK + 3 * mK), SeriesRing.SQ.oneMinusXToTheN(mK)));
         }

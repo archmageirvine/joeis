@@ -19,12 +19,12 @@ class Laplace<E> implements Series<E> {
   }
 
   @Override
-  public E coeff(final int n) {
+  public E coeff(final long n) {
     return mElementField.multiply(mS.coeff(n), mElementField.coerce(Functions.FACTORIAL.z(n)));
   }
 
   @Override
-  public int bound() {
+  public long bound() {
     return mS.bound();
   }
 }

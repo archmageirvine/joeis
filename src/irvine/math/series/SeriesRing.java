@@ -158,9 +158,9 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @param s the series
    * @return first non-zero index.
    */
-  public int firstNonzeroIndex(final Series<E> s) {
+  public long firstNonzeroIndex(final Series<E> s) {
     // This will eventually fail if s is 0.
-    int k = 0;
+    long k = 0;
     while (mElementField.isZero(s.coeff(k))) {
       if (++k > s.bound() || k < 0) {
         throw new RuntimeException("Series is 0 or very high order");
@@ -257,7 +257,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
       // t is not technically a formal power series.
       // We try to "shift" it down u(x) = x^k*t(x) where k is the least non-zero term of t.
       // Then we form s(x)/u(x) for which [x^n] s(x)/t(x) = [x^(n-k)] s(x)/u(x)
-      final int shift = firstNonzeroIndex(t);
+      final long shift = firstNonzeroIndex(t);
       // This will actually be valid for -shift <= n as well, a Laurent series,
       // although many functions will be oblivious to those terms.
       return new Shift<>(mElementField, new Divide<>(mElementField, s, new Shift<>(mElementField, t, -shift)), -shift);
@@ -272,7 +272,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @param shift power
    * @return shifted series
    */
-  public Series<E> shift(final Series<E> s, final int shift) {
+  public Series<E> shift(final Series<E> s, final long shift) {
     return shift == 0 ? s : new Shift<>(mElementField, s, shift);
   }
 
@@ -301,7 +301,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @param s series to truncate
    * @return truncated series
    */
-  public Series<E> truncate(final Series<E> s, final int n) {
+  public Series<E> truncate(final Series<E> s, final long n) {
     return new Truncate<>(mElementField, s, n);
   }
 
@@ -312,7 +312,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @param s series to truncate
    * @return truncated series
    */
-  public Series<E> leftTruncate(final Series<E> s, final int n) {
+  public Series<E> leftTruncate(final Series<E> s, final long n) {
     return new LeftTruncate<>(mElementField, s, n);
   }
 
@@ -322,7 +322,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @param n the power
    * @return the series
    */
-  public Series<E> onePlusXToTheN(final E a, final int n) {
+  public Series<E> onePlusXToTheN(final E a, final long n) {
     // Special case here for n==0, where [x^0] becomes 1+a
     return n == 0
       ? new FiniteSeries<>(mElementField.zero(), Collections.singletonList(mElementField.add(a, mElementField.one())))
@@ -334,7 +334,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @param n the power
    * @return the series
    */
-  public Series<E> onePlusXToTheN(final int n) {
+  public Series<E> onePlusXToTheN(final long n) {
     return onePlusXToTheN(mElementField.one(), n);
   }
 
@@ -344,7 +344,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @param n the power
    * @return the series
    */
-  public Series<E> oneMinusXToTheN(final E a, final int n) {
+  public Series<E> oneMinusXToTheN(final E a, final long n) {
     // Special case here for n==0, where [x^0] becomes 1-a
     final E negA = mElementField.negate(a);
     return n == 0
@@ -357,7 +357,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @param n the power
    * @return the series
    */
-  public Series<E> oneMinusXToTheN(final int n) {
+  public Series<E> oneMinusXToTheN(final long n) {
     return oneMinusXToTheN(mElementField.one(), n);
   }
 
@@ -367,7 +367,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @param n power
    * @return monomial
    */
-  public Series<E> monomial(final E a, final int n) {
+  public Series<E> monomial(final E a, final long n) {
     return mElementField.isZero(a) ? zero() : new Monomial<>(mElementField.zero(), a, n);
   }
 
@@ -376,7 +376,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @param n power
    * @return monomial
    */
-  public Series<E> monomial(final int n) {
+  public Series<E> monomial(final long n) {
     return new Monomial<>(mElementField.zero(), mElementField.one(), n);
   }
 
@@ -403,9 +403,9 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
     }
     // Adjust for s(x) = s_k*x^k + ...
     // Move the series down, power up, and scaled it back
-    final int k = firstNonzeroIndex(s);
+    final long k = firstNonzeroIndex(s);
     // Careful to ensure k * n does not overflow
-    return shift(pow(shift(s, -k), n), Z.valueOf(k).multiply(n).intValueExact());
+    return shift(pow(shift(s, -k), n), Z.valueOf(k).multiply(n).longValueExact());
   }
 
   /**
@@ -454,7 +454,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @param e power to substitute
    * @return substituted series
    */
-  public Series<E> substitute(final Series<E> s, final int e) {
+  public Series<E> substitute(final Series<E> s, final long e) {
     // [x^n] s(x^k) = [x^(n/k)] s(x) when n % k == 0
     return new SubstitutePower<>(mElementField.zero(), s, e);
   }
@@ -529,9 +529,9 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @param n maximum degree
    * @return string representation
    */
-  public String toString(final Series<E> s, final int n) {
+  public String toString(final Series<E> s, final long n) {
     final StringBuilder sb = new StringBuilder();
-    for (int k = 0; k <= n; ++k) {
+    for (long k = 0; k <= n; ++k) {
       final E c = s.coeff(k);
       if (!mElementField.isZero(c)) {
         final String sc = c.toString();
@@ -584,9 +584,9 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @param n maximum degree
    * @return polynomial
    */
-  public Polynomial<E> toPolynomial(final Series<E> s, final int n) {
+  public Polynomial<E> toPolynomial(final Series<E> s, final long n) {
     final Polynomial<E> p = new PolynomialRing<>(mElementField).empty();
-    for (int k = 0; k <= n; ++k) {
+    for (long k = 0; k <= n; ++k) {
       p.add(s.coeff(k));
     }
     return p;
@@ -600,10 +600,10 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @param n maximum degree term to include in sum
    * @return polynomial
    */
-  public E eval(final Series<E> s, final E x, final int n) {
+  public E eval(final Series<E> s, final E x, final long n) {
     E sum = mElementField.zero();
     E xk = mElementField.one();
-    for (int k = 0; k <= n; ++k, xk = mElementField.multiply(xk, x)) {
+    for (long k = 0; k <= n; ++k, xk = mElementField.multiply(xk, x)) {
       sum = mElementField.add(sum, mElementField.multiply(s.coeff(k), xk));
     }
     return sum;
@@ -622,7 +622,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
     if (s == zero()) {
       return true;
     }
-    int k = 0;
+    long k = 0;
     while (k >= 0) {
       if (!mElementField.isZero(s.coeff(++k))) {
         return false;

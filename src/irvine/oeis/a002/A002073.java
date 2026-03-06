@@ -15,7 +15,7 @@ public class A002073 extends Sequence0 {
 
   private final Series<Q> mGf = SeriesRing.SQ.reversion(SeriesRing.SQ.shift(SeriesRing.SQ.powE(new AbstractInfiniteSeries<>() {
     @Override
-    public Q coeff(final int n) {
+    public Q coeff(final long n) {
       return (n & 1) == 1 ? Q.ZERO : new Q(3, n + 3);
     }
   }, Q.ONE_THIRD), 1));

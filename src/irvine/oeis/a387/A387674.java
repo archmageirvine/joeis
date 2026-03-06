@@ -17,13 +17,13 @@ public class A387674 extends GfSequence {
     super(0, SeriesRing.SQ.divide(
       new AbstractInfiniteSeries<>() {
         @Override
-        public Q coeff(final int n) {
+        public Q coeff(final long n) {
           return Q.valueOf(Functions.FACTORIAL.z(n).subtract(1));
         }
       },
       new AbstractInfiniteSeries<>() {
         @Override
-        public Q coeff(final int n) {
+        public Q coeff(final long n) {
           return Q.valueOf(Functions.FACTORIAL.z(n));
         }
       }

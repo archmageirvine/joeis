@@ -16,7 +16,7 @@ public class A392981 extends EgfSequence {
   public A392981() {
     super(0, SeriesRing.SQ.divide(SeriesRing.SQ.one(), new AbstractInfiniteSeries<>() {
       @Override
-      public Q coeff(final int n) {
+      public Q coeff(final long n) {
         return n == 0 ? Q.ONE : new Q(Functions.FIBONACCI.z(n + 1).negate(), Functions.FACTORIAL.z(n));
       }
     }));

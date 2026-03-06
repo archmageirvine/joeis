@@ -18,12 +18,12 @@ class Derivative<E> implements Series<E> {
   }
 
   @Override
-  public E coeff(final int n) {
+  public E coeff(final long n) {
     return mElementField.multiply(mS.coeff(n + 1), mElementField.coerce(n + 1));
   }
 
   @Override
-  public int bound() {
-    return mS.bound() - 1;
+  public long bound() {
+    return mS.bound() == Long.MAX_VALUE ? Long.MAX_VALUE : mS.bound() - 1;
   }
 }

@@ -22,12 +22,12 @@ class FiniteSeries<E> implements Series<E> {
   }
 
   @Override
-  public E coeff(final int n) {
-    return n < 0 || n >= bound() ? mZero : mCoeffs.get(n);
+  public E coeff(final long n) {
+    return n < 0 || n >= bound() ? mZero : mCoeffs.get(Math.toIntExact(n));
   }
 
   @Override
-  public int bound() {
+  public long bound() {
     return mCoeffs.size();
   }
 }

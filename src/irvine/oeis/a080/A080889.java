@@ -16,7 +16,7 @@ public class A080889 extends GfSequence {
   public A080889() {
     super(0, SeriesRing.SQ.divide(SeriesRing.SQ.one(), new AbstractInfiniteSeries<>() {
       @Override
-      public Q coeff(final int n) {
+      public Q coeff(final long n) {
         if (n == 1) {
           return Q.valueOf(-2); // F(1)=F(2)=1
         }

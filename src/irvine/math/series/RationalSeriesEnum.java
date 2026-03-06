@@ -18,17 +18,17 @@ public enum RationalSeriesEnum {
   /** exp(x). */
   EXP(new AbstractInfiniteSeries<>() {
     @Override
-    public Q coeff(final int n) {
+    public Q coeff(final long n) {
       return new Q(Z.ONE, Functions.FACTORIAL.z(n));
     }
   }),
   /** Dedekind eta(x). */
   ETA(new AbstractInfiniteSeries<>() {
     private Series<Q> mEta = SeriesRing.SQ.oneMinusXToTheN(1);
-    private int mK = 1;
+    private long mK = 1;
 
     @Override
-    public Q coeff(final int n) {
+    public Q coeff(final long n) {
       while (n > mK) {
         mEta = SeriesRing.SQ.multiply(mEta, SeriesRing.SQ.oneMinusXToTheN(++mK));
       }
@@ -38,21 +38,21 @@ public enum RationalSeriesEnum {
   /** log(1+x). */
   LOG1P(new AbstractInfiniteSeries<>() {
     @Override
-    public Q coeff(final int n) {
+    public Q coeff(final long n) {
       return n == 0 ? Q.ZERO : new Q(Z.NEG_ONE.pow(n + 1), n);
     }
   }),
   /** sin(x). */
   SIN(new AbstractInfiniteSeries<>() {
     @Override
-    public Q coeff(final int n) {
+    public Q coeff(final long n) {
       return (n & 1) == 0 ? Q.ZERO : new Q(Z.NEG_ONE.pow(n >>> 1), Functions.FACTORIAL.z(n));
     }
   }),
   /** cos(x). */
   COS(new AbstractInfiniteSeries<>() {
     @Override
-    public Q coeff(final int n) {
+    public Q coeff(final long n) {
       return (n & 1) == 1 ? Q.ZERO : new Q(Z.NEG_ONE.pow(n >>> 1), Functions.FACTORIAL.z(n));
     }
   }),
@@ -67,7 +67,7 @@ public enum RationalSeriesEnum {
   /** asin(x). */
   ASIN(new AbstractInfiniteSeries<>() {
     @Override
-    public Q coeff(final int n) {
+    public Q coeff(final long n) {
       return (n & 1) == 0 ? Q.ZERO : new Q(Binomial.binomial(n - 1, n / 2), Z.valueOf(n).shiftLeft(n - 1));
     }
   }),
@@ -76,21 +76,21 @@ public enum RationalSeriesEnum {
   /** atan(x). */
   ATAN(new AbstractInfiniteSeries<>() {
     @Override
-    public Q coeff(final int n) {
+    public Q coeff(final long n) {
       return (n & 1) == 0 ? Q.ZERO : new Q(((n / 2) & 1) == 0 ? 1 : -1, n);
     }
   }),
   /** sinh(x). */
   SINH(new AbstractInfiniteSeries<>() {
     @Override
-    public Q coeff(final int n) {
+    public Q coeff(final long n) {
       return (n & 1) == 0 ? Q.ZERO : new Q(1, Functions.FACTORIAL.z(n));
     }
   }),
   /** cosh(x). */
   COSH(new AbstractInfiniteSeries<>() {
     @Override
-    public Q coeff(final int n) {
+    public Q coeff(final long n) {
       return (n & 1) == 1 ? Q.ZERO : new Q(1, Functions.FACTORIAL.z(n));
     }
   }),
@@ -105,43 +105,43 @@ public enum RationalSeriesEnum {
   /** asinh(x). */
   ASINH(new AbstractInfiniteSeries<>() {
     @Override
-    public Q coeff(final int n) {
+    public Q coeff(final long n) {
       return (n & 1) == 0 ? Q.ZERO : new Q(Binomial.binomial(n - 1, n / 2).multiply(Z.NEG_ONE.pow(n / 2)), Z.valueOf(n).shiftLeft(n - 1));
     }
   }),
   /** atanh(x). */
   ATANH(new AbstractInfiniteSeries<>() {
     @Override
-    public Q coeff(final int n) {
+    public Q coeff(final long n) {
       return (n & 1) == 0 ? Q.ZERO : new Q(1, n);
     }
   }),
   /** LambertW(x). */
   LAMBERTW(new AbstractInfiniteSeries<>() {
     @Override
-    public Q coeff(final int n) {
+    public Q coeff(final long n) {
       return new Q(Z.NEG_ONE.pow(n + 1).multiply(Z.valueOf(n).pow(n - 1)), Functions.FACTORIAL.z(n));
     }
   }),
   /** elliptic K(x) multiplied by 2/Pi. */
   ELLIPTICK(new AbstractInfiniteSeries<>() {
     @Override
-    public Q coeff(final int n) {
+    public Q coeff(final long n) {
       return (n & 1) == 0 ? new Q(Functions.FACTORIAL.z(n), Functions.FACTORIAL.z(n / 2).square().shiftLeft(n)).square() : Q.ZERO;
     }
   }),
   /** elliptic E(x) multiplied by 2/Pi. */
   ELLIPTICE(new AbstractInfiniteSeries<>() {
     @Override
-    public Q coeff(final int n) {
+    public Q coeff(final long n) {
       return (n & 1) == 0 ? new Q(Functions.FACTORIAL.z(n), Functions.FACTORIAL.z(n / 2).square().shiftLeft(n)).square().divide(1 - n) : Q.ZERO;
     }
   }),
   /** elliptic D(x) multiplied by 1/Pi. */
   ELLIPTICD(new AbstractInfiniteSeries<>() {
     @Override
-    public Q coeff(final int n) {
-      final int m = n + 2;
+    public Q coeff(final long n) {
+      final long m = n + 2;
       return (n & 1) == 0 ? new Q(Functions.FACTORIAL.z(m), Functions.FACTORIAL.z(m / 2).square().shiftLeft(m)).square().multiply(m / 2).divide(m - 1) : Q.ZERO;
     }
   }),

@@ -1,6 +1,6 @@
 package irvine.math.series;
 
-import irvine.math.MemoryFunction1;
+import irvine.math.MemoryFunction;
 import irvine.math.api.Field;
 
 /**
@@ -8,7 +8,7 @@ import irvine.math.api.Field;
  * @param <E> underlying element type
  * @author Sean A. Irvine
  */
-class PowerE<E> extends MemoryFunction1<E> implements Series<E> {
+class PowerE<E> extends MemoryFunction<Long, E> implements Series<E> {
 
   // NOTE: This method is flakey.  It appears to work in some circumstances
   // but can give wrong answers for integers, and non-monic rationals
@@ -25,26 +25,26 @@ class PowerE<E> extends MemoryFunction1<E> implements Series<E> {
   }
 
   @Override
-  protected E compute(final int n) {
+  protected E compute(final Long n) {
     if (n == 0) {
       return mElementField.one();
     }
     E bk = mElementField.zero();
-    for (int j = 0; j < n; ++j) {
+    for (long j = 0; j < n; ++j) {
       final E d = mElementField.multiply(mPower, mElementField.coerce(n - j));
-      final E t = mElementField.multiply(mElementField.multiply(mS.coeff(n - j), get(j)), mElementField.subtract(d, mElementField.coerce(j)));
+      final E t = mElementField.multiply(mElementField.multiply(mS.coeff(n - j), getValue(j)), mElementField.subtract(d, mElementField.coerce(j)));
       bk = mElementField.add(bk, t);
     }
     return mElementField.divide(bk, mElementField.coerce(n));
   }
 
   @Override
-  public E coeff(final int n) {
-    return get(n);
+  public E coeff(final long n) {
+    return getValue(n);
   }
 
   @Override
-  public int bound() {
-    return Integer.MAX_VALUE; // todo this could be refined
+  public long bound() {
+    return Long.MAX_VALUE; // todo this could be refined
   }
 }

@@ -14,7 +14,7 @@ import irvine.oeis.a007.A007332;
  */
 public class A014496 extends Sequence0 {
 
-  private int mN = -1;
+  private long mN = -1;
   private static final SeriesRing<Q> SQ = SeriesRing.SQ;
   private final Series<Q> mThetaA2 = Series.create(new A004016());
   private final Series<Q> mDelta6 = Series.create(new A007332());

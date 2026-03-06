@@ -20,7 +20,7 @@ class ScalarMultiply<E> implements Series<E> {
   }
 
   @Override
-  public E coeff(final int n) {
+  public E coeff(final long n) {
     if (n > mS.bound()) {
       return mElementField.zero();
     }
@@ -28,7 +28,7 @@ class ScalarMultiply<E> implements Series<E> {
   }
 
   @Override
-  public int bound() {
+  public long bound() {
     return mS.bound();
   }
 }

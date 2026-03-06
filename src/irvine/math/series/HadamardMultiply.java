@@ -13,7 +13,7 @@ class HadamardMultiply<E> implements Series<E> {
   private final Field<E> mElementField;
   private final Series<E> mS;
   private final Series<E> mT;
-  private final int mBound;
+  private final long mBound;
 
   HadamardMultiply(final Field<E> elementField, final Series<E> s, final Series<E> t) {
     mElementField = elementField;
@@ -23,7 +23,7 @@ class HadamardMultiply<E> implements Series<E> {
   }
 
   @Override
-  public E coeff(final int n) {
+  public E coeff(final long n) {
     if (n > mBound) {
       return mElementField.zero();
     }
@@ -31,7 +31,7 @@ class HadamardMultiply<E> implements Series<E> {
   }
 
   @Override
-  public int bound() {
+  public long bound() {
     return mBound;
   }
 }

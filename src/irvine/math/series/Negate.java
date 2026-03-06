@@ -18,12 +18,12 @@ class Negate<E> implements Series<E> {
   }
 
   @Override
-  public E coeff(final int n) {
+  public E coeff(final long n) {
     return mElementField.negate(mS.coeff(n));
   }
 
   @Override
-  public int bound() {
+  public long bound() {
     return mS.bound();
   }
 }

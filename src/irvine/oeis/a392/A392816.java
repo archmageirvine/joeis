@@ -20,7 +20,7 @@ public class A392816 extends GfSequence {
       private long mP = 3;
 
       @Override
-      public Q coeff(final int n) {
+      public Q coeff(final long n) {
         while (n >= (mP - 1) / 2) {
           mP = Functions.NEXT_PRIME.l(mP);
           mS = SQ.multiply(mS, SQ.oneMinusXToTheN((int) ((mP - 1) / 2)));

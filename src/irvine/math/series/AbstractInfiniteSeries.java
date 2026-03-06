@@ -8,7 +8,7 @@ package irvine.math.series;
 public abstract class AbstractInfiniteSeries<E> implements Series<E> {
 
   @Override
-  public int bound() {
-    return Integer.MAX_VALUE;
+  public long bound() {
+    return Long.MAX_VALUE;
   }
 }

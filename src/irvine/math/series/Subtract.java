@@ -12,7 +12,7 @@ class Subtract<E> implements Series<E> {
   private final Field<E> mElementField;
   private final Series<E> mS;
   private final Series<E> mT;
-  private final int mBound;
+  private final long mBound;
 
   Subtract(final Field<E> elementField, final Series<E> s, final Series<E> t) {
     mElementField = elementField;
@@ -22,12 +22,12 @@ class Subtract<E> implements Series<E> {
   }
 
   @Override
-  public E coeff(final int n) {
+  public E coeff(final long n) {
     return mElementField.subtract(mS.coeff(n), mT.coeff(n));
   }
 
   @Override
-  public int bound() {
+  public long bound() {
     return mBound;
   }
 }

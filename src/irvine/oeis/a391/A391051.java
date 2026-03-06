@@ -24,7 +24,7 @@ public class A391051 extends GfSequence {
       private int mK = 0;
 
       @Override
-      public Q coeff(final int n) {
+      public Q coeff(final long n) {
         while (n > mK) {
           mS = SQ.multiply(mS, SQ.pow(SQ.oneMinusXToTheN(++mK), Z.ONE.subtract(Functions.PARTITIONS.l(mK + 1))));
         }

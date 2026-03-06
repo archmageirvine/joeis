@@ -155,15 +155,15 @@ public class Polynomial<E> extends ArrayList<E> implements Series<E> {
    * @param n coefficient index
    * @return value of coefficient
    */
-  public E coeff(final int n) {
+  public E coeff(final long n) {
     if (n < 0 || n >= size()) {
       return mZero;
     }
-    return get(n);
+    return get((int) n);
   }
 
   @Override
-  public int bound() {
+  public long bound() {
     return degree();
   }
 

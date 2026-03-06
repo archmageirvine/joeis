@@ -13,7 +13,7 @@ class Sqrt<E> implements Series<E> {
 
   Sqrt(final SeriesRing<E> ring, final Series<E> s) {
     final Field<E> elementField = ring.coefficientField();
-    int m = 0;
+    long m = 0;
     while (elementField.isZero(s.coeff(m))) {
       ++m;
     }
@@ -27,12 +27,12 @@ class Sqrt<E> implements Series<E> {
   }
 
   @Override
-  public E coeff(final int n) {
+  public E coeff(final long n) {
     return mS.coeff(n);
   }
 
   @Override
-  public int bound() {
-    return Integer.MAX_VALUE;
+  public long bound() {
+    return Long.MAX_VALUE;
   }
 }

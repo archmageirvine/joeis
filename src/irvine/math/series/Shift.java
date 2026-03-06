@@ -12,18 +12,18 @@ class Shift<E> implements Series<E> {
 
   private final Field<E> mElementField;
   private final Series<E> mS;
-  private final int mShift;
-  private final int mBound;
+  private final long mShift;
+  private final long mBound;
 
-  Shift(final Field<E> elementField, final Series<E> s, final int shift) {
+  Shift(final Field<E> elementField, final Series<E> s, final long shift) {
     mElementField = elementField;
     mS = s;
     mShift = shift;
-    mBound = s.bound() == Integer.MAX_VALUE ? Integer.MAX_VALUE : s.bound() + shift;
+    mBound = s.bound() == Long.MAX_VALUE ? Long.MAX_VALUE : s.bound() + shift;
   }
 
   @Override
-  public E coeff(final int n) {
+  public E coeff(final long n) {
     // Note: avoids requesting negative powers from the underlying series.
     // In some cases, it would be possible to make that work, but overall it is
     // better to avoid triggering calculations of negative powers in s.
@@ -31,7 +31,7 @@ class Shift<E> implements Series<E> {
   }
 
   @Override
-  public int bound() {
+  public long bound() {
     return mBound;
   }
 }

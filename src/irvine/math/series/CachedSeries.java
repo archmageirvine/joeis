@@ -11,7 +11,7 @@ class CachedSeries<E> implements Series<E> {
 
   private final Series<E> mSeries;
   private final E mZero;
-  private final HashMap<Integer, E> mCache = new HashMap<>();
+  private final HashMap<Long, E> mCache = new HashMap<>();
 
   CachedSeries(final Series<E> s, final E zero) {
     mSeries = s;
@@ -19,12 +19,12 @@ class CachedSeries<E> implements Series<E> {
   }
 
   @Override
-  public E coeff(final int n) {
+  public E coeff(final long n) {
     return n <= bound() ? mCache.computeIfAbsent(n, mSeries::coeff) : mZero;
   }
 
   @Override
-  public int bound() {
+  public long bound() {
     return mSeries.bound();
   }
 }

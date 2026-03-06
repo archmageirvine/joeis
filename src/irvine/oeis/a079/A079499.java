@@ -24,7 +24,7 @@ public class A079499 extends Sequence0 {
     private int mK = 0;
 
     @Override
-    public Z coeff(final int n) {
+    public Z coeff(final long n) {
       while (n * n > mK) {
         mProd = SZ.multiply(mProd, SZ.oneMinusXToTheN(2 * ++mK));
         mSums.add(SZ.divide(SZ.monomial(Z.valueOf(mK), mK * mK), mProd));

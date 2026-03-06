@@ -11,24 +11,24 @@ class SubstitutePower<E> implements Series<E> {
 
   private final E mZero;
   private final Series<E> mS;
-  private final int mE;
-  private final int mBound;
+  private final long mE;
+  private final long mBound;
 
-  SubstitutePower(final E zero, final Series<E> s, final int e) {
+  SubstitutePower(final E zero, final Series<E> s, final long e) {
     mZero = zero;
     mS = s;
     mE = e;
     final Z b = Z.valueOf(mS.bound()).multiply(e);
-    mBound = b.bitLength() < Integer.SIZE ? b.intValue() : Integer.MAX_VALUE;
+    mBound = b.bitLength() < Long.SIZE ? b.longValue() : Long.MAX_VALUE;
   }
 
   @Override
-  public E coeff(final int n) {
+  public E coeff(final long n) {
     return n % mE == 0 ? mS.coeff(n / mE) : mZero;
   }
 
   @Override
-  public int bound() {
+  public long bound() {
     return mBound;
   }
 }

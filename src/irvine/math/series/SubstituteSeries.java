@@ -14,7 +14,7 @@ class SubstituteSeries<E> implements Series<E> {
   private final Field<E> mElementField;
   private final Series<E> mS;
   private final Series<E> mT;
-  private final int mBound;
+  private final long mBound;
 
   SubstituteSeries(final SeriesRing<E> ring, final Series<E> s, final Series<E> t) {
     mRing = ring;
@@ -22,18 +22,18 @@ class SubstituteSeries<E> implements Series<E> {
     mS = s;
     mT = t;
     final Z b = Z.valueOf(mT.bound()).multiply(mS.bound());
-    mBound = b.bitLength() < Integer.SIZE ? b.intValue() : Integer.MAX_VALUE;
+    mBound = b.bitLength() < Long.SIZE ? b.longValue() : Long.MAX_VALUE;
   }
 
   @Override
-  public E coeff(final int n) {
+  public E coeff(final long n) {
     // [x^n] s(t(x)) = Sum_{k=0..n} s(k) * [x^n] t(x)^k
     if (n == 0) {
       return mS.coeff(0);
     }
     E sum = mElementField.zero();
     Series<E> tk = mT;
-    for (int k = 1; k <= Math.min(n, mS.bound()); ++k) {
+    for (long k = 1; k <= Math.min(n, mS.bound()); ++k) {
       final E sk = mS.coeff(k);
       if (!mElementField.isZero(sk)) {
         sum = mElementField.add(sum, mElementField.multiply(sk, tk.coeff(n)));
@@ -44,7 +44,7 @@ class SubstituteSeries<E> implements Series<E> {
   }
 
   @Override
-  public int bound() {
+  public long bound() {
     return mBound;
   }
 }

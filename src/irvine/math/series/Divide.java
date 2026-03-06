@@ -1,6 +1,6 @@
 package irvine.math.series;
 
-import irvine.math.MemoryFunction1;
+import irvine.math.MemoryFunction;
 import irvine.math.api.Field;
 
 /**
@@ -8,7 +8,7 @@ import irvine.math.api.Field;
  * @param <E> underlying element type
  * @author Sean A. Irvine
  */
-class Divide<E> extends MemoryFunction1<E> implements Series<E> {
+class Divide<E> extends MemoryFunction<Long, E> implements Series<E> {
 
   // [x^n] s(x)/t(x) = (1/t_0)(s_n - Sum_{k=1..n} u_{n-k}t_k), assuming t_0 != 0.
   private final Field<E> mElementField;
@@ -25,21 +25,21 @@ class Divide<E> extends MemoryFunction1<E> implements Series<E> {
   }
 
   @Override
-  protected E compute(final int n) {
+  protected E compute(final Long n) {
     if (n < 0) {
       return mElementField.zero();
     }
-    final E sum = mElementField.sum(1, Math.min(n, mT.bound()), k -> mElementField.multiply(get(n - k), mT.coeff(k.intValue())));
+    final E sum = mElementField.sum(1, Math.min(n, mT.bound()), k -> mElementField.multiply(getValue(n - k), mT.coeff(k)));
     return mElementField.divide(mElementField.subtract(mS.coeff(n), sum), mT.coeff(0));
   }
 
   @Override
-  public E coeff(final int n) {
-    return get(n);
+  public E coeff(final long n) {
+    return getValue(n);
   }
 
   @Override
-  public int bound() {
-    return Integer.MAX_VALUE;
+  public long bound() {
+    return Long.MAX_VALUE;
   }
 }

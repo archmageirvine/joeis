@@ -19,7 +19,7 @@ public class A392637 extends GfSequence {
       private int mK = 0;
 
       @Override
-      public Q coeff(final int n) {
+      public Q coeff(final long n) {
         if (n > mK) {
           ++mK;
           mS = SQ.multiply(mS, SQ.divide(SQ.oneMinusXToTheN(6 * mK - 4), SQ.pow(SQ.oneMinusXToTheN(mK), (mK + 5) / 6)));

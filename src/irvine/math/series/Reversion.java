@@ -57,12 +57,13 @@ class Reversion<E> extends MemoryFunction1<E> implements Series<E> {
   }
 
   @Override
-  public E coeff(final int n) {
-    return get(n);
+  public E coeff(final long n) {
+    // Reversion currently restricted to 31-bits
+    return get(Math.toIntExact(n));
   }
 
   @Override
-  public int bound() {
+  public long bound() {
     return mS.bound();
   }
 }

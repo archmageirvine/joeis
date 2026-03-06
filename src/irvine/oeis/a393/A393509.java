@@ -22,7 +22,7 @@ public class A393509 extends GfSequence {
       private int mK = 0;
 
       @Override
-      public Q coeff(final int n) {
+      public Q coeff(final long n) {
         while (n > 7 * mK) {
           ++mK;
           mProd1 = SQ.multiply(mProd1, SQ.oneMinusXToTheN(2 * mK));

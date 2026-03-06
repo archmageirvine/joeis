@@ -14,12 +14,12 @@ class Zero<E> implements Series<E> {
   }
 
   @Override
-  public E coeff(final int n) {
+  public E coeff(final long n) {
     return mZero;
   }
 
   @Override
-  public int bound() {
+  public long bound() {
     return 0;
   }
 }

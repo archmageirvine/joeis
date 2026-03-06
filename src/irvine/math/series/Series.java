@@ -26,12 +26,12 @@ public interface Series<E> {
     return new Series<>() {
 
       @Override
-      public Z coeff(final int n) {
-        return n < coeffs.length ? Z.valueOf(coeffs[n]) : Z.ZERO;
+      public Z coeff(final long n) {
+        return n < coeffs.length ? Z.valueOf(coeffs[(int) n]) : Z.ZERO;
       }
 
       @Override
-      public int bound() {
+      public long bound() {
         return coeffs.length - 1;
       }
     };
@@ -46,12 +46,12 @@ public interface Series<E> {
     return new Series<>() {
 
       @Override
-      public Z coeff(final int n) {
-        return n < coeffs.length ? coeffs[n] : Z.ZERO;
+      public Z coeff(final long n) {
+        return n < coeffs.length ? coeffs[(int) n] : Z.ZERO;
       }
 
       @Override
-      public int bound() {
+      public long bound() {
         return coeffs.length - 1;
       }
     };
@@ -66,12 +66,12 @@ public interface Series<E> {
     return new Series<>() {
 
       @Override
-      public Q coeff(final int n) {
-        return n < coeffs.size() ? coeffs.get(n) : Q.ZERO;
+      public Q coeff(final long n) {
+        return n < coeffs.size() ? coeffs.get((int) n) : Q.ZERO;
       }
 
       @Override
-      public int bound() {
+      public long bound() {
         return coeffs.size() - 1;
       }
     };
@@ -94,12 +94,12 @@ public interface Series<E> {
   static Series<Q> toQ(final Series<Z> series) {
     return new Series<>() {
       @Override
-      public Q coeff(final int n) {
+      public Q coeff(final long n) {
         return new Q(series.coeff(n));
       }
 
       @Override
-      public int bound() {
+      public long bound() {
         return series.bound();
       }
     };
@@ -113,7 +113,7 @@ public interface Series<E> {
   static Series<Q> create(final DirectSequence sequence) {
     return new AbstractInfiniteSeries<>() {
       @Override
-      public Q coeff(final int n) {
+      public Q coeff(final long n) {
         return new Q(sequence.a(n));
       }
     };
@@ -129,11 +129,11 @@ public interface Series<E> {
     final List<Z> seq = new ArrayList<>();
     return new AbstractInfiniteSeries<>() {
       @Override
-      public Q coeff(final int n) {
+      public Q coeff(final long n) {
         while (seq.size() <= n) {
           seq.add(sequence.next());
         }
-        return new Q(seq.get(n));
+        return new Q(seq.get(Math.toIntExact(n)));
       }
     };
   }
@@ -143,17 +143,17 @@ public interface Series<E> {
    * @param n coefficient index
    * @return the coefficient
    */
-  E coeff(final int n);
+  E coeff(final long n);
 
   /**
    * Return an upper bound on the maximum nonzero term of the series.
    * Most users should ignore this method, it is only relevant for the
    * construction of series.
-   * The value <code>Integer.MAX_VALUE</code> corresponds to an
+   * The value <code>Long.MAX_VALUE</code> corresponds to an
    * infinite series.
-   * It is always safe to use <code>Integer.MAX_VALUE</code> for this
+   * It is always safe to use <code>Long.MAX_VALUE</code> for this
    * value, but a smaller value can lead to more efficient computation.
    * @return upper bound on nonzero terms
    */
-  int bound();
+  long bound();
 }

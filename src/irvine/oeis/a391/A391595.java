@@ -29,7 +29,7 @@ public class A391595 extends Sequence0 {
         private int mK = 0;
 
         @Override
-        public Q coeff(final int n) {
+        public Q coeff(final long n) {
           while (n > mK) {
             ++mK;
             mS = SQ.add(mS, b(mK, j));
@@ -46,7 +46,7 @@ public class A391595 extends Sequence0 {
     private int mK = 0;
 
     @Override
-    public Q coeff(final int n) {
+    public Q coeff(final long n) {
       while (n > mK) {
         ++mK;
         final Series<Q> i2 = SQ.square(SQ.subtract(SQ.monomial(mK), SQ.one()));
@@ -55,7 +55,7 @@ public class A391595 extends Sequence0 {
           private Series<Q> mSK = SQ.zero();
           private int mJ = 0;
           @Override
-          public Q coeff(final int m) {
+          public Q coeff(final long m) {
             while (m > mI * mJ) {
               ++mJ;
               final Series<Q> cjxs = SQ.square(SQ.add(mC.get(mJ), SQ.one()));

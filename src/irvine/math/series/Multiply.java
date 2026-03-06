@@ -13,28 +13,28 @@ class Multiply<E> implements Series<E> {
   private final Field<E> mElementField;
   private final Series<E> mS;
   private final Series<E> mT;
-  private final int mBound;
+  private final long mBound;
 
   Multiply(final Field<E> elementField, final Series<E> s, final Series<E> t) {
     mElementField = elementField;
     mS = s;
     mT = t;
     final Z b = Z.valueOf(mS.bound()).add(mT.bound());
-    mBound = b.bitLength() < Integer.SIZE ? b.intValue() : Integer.MAX_VALUE;
+    mBound = b.bitLength() < Long.SIZE ? b.longValue() : Long.MAX_VALUE;
   }
 
   @Override
-  public E coeff(final int n) {
+  public E coeff(final long n) {
     if (n > mBound) {
       return mElementField.zero();
     }
-    final int lo = Math.max(0, n - mT.bound());
-    final int hi = Math.min(n, mS.bound());
-    return mElementField.sum(lo, hi, k -> mElementField.multiply(mS.coeff(k.intValue()), mT.coeff(n - k.intValue())));
+    final long lo = Math.max(0, n - mT.bound());
+    final long hi = Math.min(n, mS.bound());
+    return mElementField.sum(lo, hi, k -> mElementField.multiply(mS.coeff(k), mT.coeff(n - k)));
   }
 
   @Override
-  public int bound() {
+  public long bound() {
     return mBound;
   }
 }

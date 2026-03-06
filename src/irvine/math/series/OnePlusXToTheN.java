@@ -10,9 +10,9 @@ class OnePlusXToTheN<E> implements Series<E> {
   private final E mZero;
   private final E mOne;
   private final E mA;
-  private final int mN;
+  private final long mN;
 
-  OnePlusXToTheN(final E zero, final E one, final E a, final int n) {
+  OnePlusXToTheN(final E zero, final E one, final E a, final long n) {
     mZero = zero;
     mOne = one;
     mA = a;
@@ -20,12 +20,12 @@ class OnePlusXToTheN<E> implements Series<E> {
   }
 
   @Override
-  public E coeff(final int n) {
+  public E coeff(final long n) {
     return n == mN ? mA : n == 0 ? mOne : mZero;
   }
 
   @Override
-  public int bound() {
+  public long bound() {
     return mN;
   }
 }

@@ -11,21 +11,21 @@ class LeftTruncate<E> implements Series<E> {
 
   private final Field<E> mElementField;
   private final Series<E> mS;
-  private final int mN;
+  private final long mN;
 
-  LeftTruncate(final Field<E> elementField, final Series<E> s, final int n) {
+  LeftTruncate(final Field<E> elementField, final Series<E> s, final long n) {
     mElementField = elementField;
     mS = s;
     mN = n;
   }
 
   @Override
-  public E coeff(final int n) {
+  public E coeff(final long n) {
     return n < mN ? mElementField.zero() : mS.coeff(n);
   }
 
   @Override
-  public int bound() {
+  public long bound() {
     return mS.bound();
   }
 }

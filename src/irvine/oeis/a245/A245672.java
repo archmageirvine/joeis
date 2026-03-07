@@ -6,7 +6,7 @@ import irvine.oeis.a086.A086231;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A245672 Decimal expansion of k_3 = 3/(2*Pi*m_3), a constant associated with the asymptotic expansion of the probability that a three-dimensional random walk reaches a given point for the first time, where m_3 is A086231 (Watson&apos;s integral).
+ * A245672 Decimal expansion of k_3 = 3/(2*Pi*m_3), a constant associated with the asymptotic expansion of the probability that a three-dimensional random walk reaches a given point for the first time, where m_3 is A086231 (Watson's integral).
  * Formula:
  * @author Georg Fischer
  */

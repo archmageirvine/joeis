@@ -6,7 +6,7 @@ import irvine.oeis.a006.A006752;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A244238 Decimal expansion of K = exp(8*G/(3*Pi)), a Kneser-Mahler constant related to an asymptotic inequality involving Bombieri&apos;s supremum norm, where G is Catalan&apos;s constant. K can be evaluated as Mahler&apos;s generalized height measure of the bivariate polynomi
+ * A244238 Decimal expansion of K = exp(8*G/(3*Pi)), a Kneser-Mahler constant related to an asymptotic inequality involving Bombieri's supremum norm, where G is Catalan's constant. K can be evaluated as Mahler's generalized height measure of the bivariate polynomial (1+x+x^2+y)^2.
  * Formula:
  * @author Georg Fischer
  */

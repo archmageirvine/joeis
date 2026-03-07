@@ -7,7 +7,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A215447 Decimal expansion of the Oloid&apos;s volume.
+ * A215447 Decimal expansion of the Oloid's volume.
  * Formula:
  * @author Georg Fischer
  */

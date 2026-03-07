@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393807.
+ * A393799 allocated for Robert G. Wilson v.
  * @author Sean A. Irvine
  */
 public class A393799 extends Sequence1 {

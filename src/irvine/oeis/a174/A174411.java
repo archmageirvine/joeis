@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A174411 A product triangle sequence based on:a=1;f(n, a) = f(n - 1, a) + a*f(n - 2, a); c(n,a)=If[n == 0, 1, Product[f(i, a)*f(i + 1, a), {i, 1, n}]]; t(n,m,a)=If[Floor[n/2] &gt;= m, c(n, a)/c(n - m, a), c(n, a)/c(m, a)].
+ * A174411 Triangle read by rows: T(n,k) = c(n) / c(max(k, n-k)) where c(n) = Product_{i=1..n} F(i)*F(i+1) and F(i) the Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A174411 extends Sequence0 {

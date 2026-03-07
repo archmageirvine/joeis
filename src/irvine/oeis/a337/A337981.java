@@ -6,7 +6,7 @@ import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A337981 Decimal expansion of Pi*BesselY(0,2)/(2*BesselJ(0,2)) - gamma, where BesselJ and BesselY are the Bessel functions of the first and second kind, respectively, and gamma is Euler&apos;s constant (A001620).
+ * A337981 Decimal expansion of Pi*BesselY(0,2)/(2*BesselJ(0,2)) - gamma, where BesselJ and BesselY are the Bessel functions of the first and second kind, respectively, and gamma is Euler's constant (A001620).
  * Formula: Pi*BesselY(0, 2)/(2*BesselJ(0, 2)) - gamma
  * @author Georg Fischer
  */

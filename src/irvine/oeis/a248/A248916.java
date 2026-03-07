@@ -5,7 +5,7 @@ import irvine.oeis.a033.A033259;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A248916 Decimal expansion of gamma = 8*lambda^2, a critical threshold of a boundary value problem, where lambda is Laplace&apos;s limit constant A033259.
+ * A248916 Decimal expansion of gamma = 8*lambda^2, a critical threshold of a boundary value problem, where lambda is Laplace's limit constant A033259.
  * Formula: , a critical threshold of a boundary value problem, where lambda is Laplaces limit constant J033259.
  * @author Georg Fischer
  */

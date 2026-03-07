@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A110617 Decimal expansion of 1/64532 (related to an optimal mixed strategy for Hofstadter&apos;s million dollar game).
+ * A110617 Decimal expansion of 1/64532 (related to an optimal mixed strategy for Hofstadter's million dollar game).
  * Formula:
  * @author Georg Fischer
  */

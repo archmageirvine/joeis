@@ -9,7 +9,7 @@ import irvine.oeis.a077.A077761;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A345413 Decimal expansion of exp(gamma + M)*(G - 7*zeta(3)/(4*Pi))/4, where gamma is Euler&apos;s constant (A001620), M is Mertens&apos;s constant (A077761) and G is Catalan&apos;s constant (A006752).
+ * A345413 Decimal expansion of exp(gamma + M)*(G - 7*zeta(3)/(4*Pi))/4, where gamma is Euler's constant (A001620), M is Mertens's constant (A077761) and G is Catalan's constant (A006752).
  * Formula: exp(gamma + A006752.getCR())*(A006752.getCR() - 7*zeta(3)/(4*Pi))/4, where gamma is Eulers constant(A001620.getCR()), M is Mertens's constant(A077761.getCR()) and G is Catalan's constant(A006752.getCR())
  * @author Georg Fischer
  */

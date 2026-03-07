@@ -6,7 +6,7 @@ import irvine.oeis.a006.A006752;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A383851 Decimal expansion of exp(8*G/Pi)*((1 - exp(-Pi/2))/(1 + exp(-Pi/2)))^2, where G is Catalan&apos;s constant (A006752).
+ * A383851 Decimal expansion of exp(8*G/Pi)*((1 - exp(-Pi/2))/(1 + exp(-Pi/2)))^2, where G is Catalan's constant (A006752).
  * Formula:
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.oeis.a065.A065442;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A242000 Decimal expansion of delta = (1+alpha)/4, a constant appearing in Koecher&apos;s formula for Euler&apos;s gamma constant, where alpha is A065442, the ErdŇĎs-Borwein Constant.
+ * A242000 Decimal expansion of delta = (1+alpha)/4, a constant appearing in Koecher's formula for Euler's gamma constant, where alpha is A065442, the Erd\u0151s-Borwein Constant.
  * Formula: , a constant appearing in Koecher's formula for Euler's gamma constant, where alpha is J065442, the ErdŇáńés-Borwein Constant.
  * @author Georg Fischer
  */

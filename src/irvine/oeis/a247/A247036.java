@@ -6,7 +6,7 @@ import irvine.oeis.a006.A006752;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A247036 Decimal expansion of 2*G/(Pi*log(2)), a constant appearing in the average root bifurcation ratio of binary trees, where G is Catalan&apos;s constant.
+ * A247036 Decimal expansion of 2*G/(Pi*log(2)), a constant appearing in the average root bifurcation ratio of binary trees, where G is Catalan's constant.
  * Formula: a constant appearing in the average root bifurcation ratio of binary trees, where G is Catalans constant.
  * @author Georg Fischer
  */

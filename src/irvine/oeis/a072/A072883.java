@@ -12,7 +12,7 @@ import irvine.oeis.a097.A097792;
 public class A072883 extends Sequence1 {
 
   private final Sequence mReducible = new A097792().skip(); // skip 4
-  private long mN = 0;
+  protected long mN = 0;
   private long mR = mReducible.next().longValueExact();
 
   @Override

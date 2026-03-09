@@ -12,6 +12,9 @@ import irvine.oeis.Sequence1;
  */
 public class A034011 extends Sequence1 {
 
+  // Note: this currently does not match the b-file.
+  // This codes accepts 6137 which is not in the b-file
+
   private long mN = -1;
 
   private long[] val(final long a, final long p) {
@@ -25,6 +28,7 @@ public class A034011 extends Sequence1 {
   }
 
   private boolean isSquare(final long a, final long mod) {
+    //return ZUtils.isQuadraticResidue(Z.valueOf(a), Z.valueOf(mod));
     return Functions.JACOBI.i(a, mod) == 1;
   }
 
@@ -45,16 +49,23 @@ public class A034011 extends Sequence1 {
     return true;
   }
 
+  private long quadDisc(final long d) {
+    final long sqf = Functions.CORE.l(-d);
+    return sqf % 4 == 3 ? -sqf : -sqf * 4;
+  }
+
   @Override
   public Z next() {
+    //System.out.println("ok: " + isOk(-6137) + " " + (LongUtils.classNumber(quadDisc(-6137)) + " " + (LongUtils.classNumber(quadDisc(5 * -6137)))) + " r=" + (-6137 % 25) + " " + Arrays.toString(val(-6137, 2)) + " " + isOk(-6137));
+
     while (true) {
       final long r = --mN % 25;
       if (r == -2 || r == -12 || r == -23 || r == -13) {
         final long[] v2a = val(mN, 2);
         final long v2 = v2a[0];
         final long a2 = v2a[1];
-        if (v2 == 8 || (v2 & 1) == 1 || a2 % 4 == -1) {
-          if (isOk(mN) && LongUtils.hurwitzClassNumber(4 * mN) % 5 != 0 && LongUtils.hurwitzClassNumber(4 * 5 * mN) % 5 != 0) {
+        if (v2 == 8 || (v2 & 1) == 1 || a2 % 4 == -1) { // 8 == 2*5-2
+          if (isOk(mN) && LongUtils.classNumber(quadDisc(mN)) % 5 != 0 && LongUtils.classNumber(quadDisc(5 * mN)) % 5 != 0) {
             return Z.valueOf(-mN);
           }
         }

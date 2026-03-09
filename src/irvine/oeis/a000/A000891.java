@@ -10,11 +10,11 @@ import irvine.oeis.Sequence0;
  */
 public class A000891 extends Sequence0 {
 
-  private int mN = -1;
+  private long mN = -1;
 
   @Override
   public Z next() {
-    final int t = 2 * ++mN + 1;
+    final long t = 2 * ++mN + 1;
     return Binomial.binomial(t, mN).square().divide(t);
   }
 }

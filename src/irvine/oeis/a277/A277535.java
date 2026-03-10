@@ -10,7 +10,7 @@ public class A277535 extends A000796 {
 
   /** Construct the sequence. */
   public A277535() {
-    super();
+    super(0);
     skip(762);
   }
 

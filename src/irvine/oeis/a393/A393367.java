@@ -13,7 +13,7 @@ public class A393367 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A393367() {
-    super(1, new PolynomialRootExpansionSequence(Polynomial.create(-1, 405, -5400, 10800), CR.ZERO, CR.valueOf(0.004)).getCR().multiply(CR.SQRT_PI));
+    super(0, new PolynomialRootExpansionSequence(Polynomial.create(-1, 405, -5400, 10800), CR.ZERO, CR.valueOf(0.004)).getCR().multiply(CR.SQRT_PI));
   }
 }
 

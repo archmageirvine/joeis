@@ -4,15 +4,15 @@ import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A174588 A symmetrical triangular sequence adjusted by -t[n,-1]+1 :t(n,m)=If[n == 0, 1, Sum[Binomial[n, k]*Eulerian[n + 1, k]*(-1)^k*(m + 1 - k)^n, {k, 0, n}]].
  * @author Sean A. Irvine
  */
-public class A174588 extends Sequence1 {
+public class A174588 extends Sequence0 {
 
-  private int mN = 0;
+  private int mN = -1;
   private int mM = -1;
 
   private Z s(final int n, final int k) {

@@ -15,7 +15,7 @@ public class A100032 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A100032() {
-    super(0);
+    super(1);
     mSeq.next();
   }
 

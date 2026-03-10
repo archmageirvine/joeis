@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
- * A390230 allocated for Frank M Jackson.
+ * A390230 Norms of primitive Pythagorean quadruples (PPQs) derived from primitive Pythagorean triangles (PPTs) ordered within a Berggren ternary tree of PPTs.
  * @author Sean A. Irvine
  */
-public class A390230 extends Sequence0 {
+public class A390230 extends Sequence1 {
 
   // ChatGPT assisted conversion of Frank M Jackson's Mathematica
 

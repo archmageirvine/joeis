@@ -13,6 +13,6 @@ public class A121090 extends DirectTransformSequence {
 
   /** Construct the sequence. */
   public A121090() {
-    super(0, new A007732(), new A085837());
+    super(1, new A007732(), new A085837());
   }
 }

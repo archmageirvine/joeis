@@ -7,7 +7,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A378482 Decimal expansion of 1/(8*log(2)*A005597), where A005597 is the twin prime constant C_2.
- * Formula:
+ * Formula: 
  * @author Georg Fischer
  */
 public class A378482 extends DecimalExpansionSequence {

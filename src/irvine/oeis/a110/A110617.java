@@ -7,7 +7,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A110617 Decimal expansion of 1/64532 (related to an optimal mixed strategy for Hofstadter's million dollar game).
- * Formula:
+ * Formula: 
  * @author Georg Fischer
  */
 public class A110617 extends DecimalExpansionSequence {

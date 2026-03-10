@@ -7,7 +7,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A094962 Decimal expansion of A064582*sqrt(3)/2, i.e., imaginary part of omega_1 in the equianharmonic case.
- * Formula:
+ * Formula: 
  * @author Georg Fischer
  */
 public class A094962 extends DecimalExpansionSequence {

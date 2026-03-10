@@ -7,7 +7,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A358450 Decimal expansion of 2*EllipticK(i) - EllipticE(i), reciprocal of A088375.
- * Formula:
+ * Formula: 
  * @author Georg Fischer
  */
 public class A358450 extends DecimalExpansionSequence {

@@ -4,7 +4,6 @@ package irvine.oeis.a297;
 import irvine.math.z.Z;
 import irvine.oeis.ComplementSequence;
 import irvine.oeis.a072.A072099;
-
 /**
  * A297190 Numbers not in A072099.
  * @author Georg Fischer

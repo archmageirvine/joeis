@@ -12,9 +12,6 @@ import irvine.oeis.Sequence1;
  */
 public class A034011 extends Sequence1 {
 
-  // Note: this currently does not match the b-file.
-  // This codes accepts 6137 which is not in the b-file
-
   private long mN = -1;
 
   private long[] val(final long a, final long p) {
@@ -33,7 +30,7 @@ public class A034011 extends Sequence1 {
   }
 
   private boolean isEvenOrder(final long l, final long p) {
-    return Functions.ORDER.z(p, l).isEven();
+    return Functions.ORDER.z(l, p).isEven();
   }
 
   private boolean isOk(final long a) {
@@ -56,8 +53,6 @@ public class A034011 extends Sequence1 {
 
   @Override
   public Z next() {
-    //System.out.println("ok: " + isOk(-6137) + " " + (LongUtils.classNumber(quadDisc(-6137)) + " " + (LongUtils.classNumber(quadDisc(5 * -6137)))) + " r=" + (-6137 % 25) + " " + Arrays.toString(val(-6137, 2)) + " " + isOk(-6137));
-
     while (true) {
       final long r = --mN % 25;
       if (r == -2 || r == -12 || r == -23 || r == -13) {

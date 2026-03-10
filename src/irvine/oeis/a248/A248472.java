@@ -7,7 +7,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A248472 Decimal expansion of C_1 = gamma + log(log(2)) - 2*Ei(-log(2)), one of the Tauberian constants, where Ei is the exponential integral function.
- * Formula:
+ * Formula: 
  * @author Georg Fischer
  */
 public class A248472 extends DecimalExpansionSequence {

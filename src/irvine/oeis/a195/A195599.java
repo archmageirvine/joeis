@@ -6,7 +6,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A195599 Decimal expansion of beta = 3/(2*log(alpha/2)), where alpha = A195596.
- * Formula:
  * @author Georg Fischer
  */
 public class A195599 extends DecimalExpansionSequence {

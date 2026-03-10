@@ -16,7 +16,7 @@ public class A393716 extends Sequence1 {
   private static final MessageDigest SHA256;
   static {
     try {
-      SHA256 = MessageDigest.getInstance("SHA256");
+      SHA256 = MessageDigest.getInstance("SHA-256");
     } catch (final NoSuchAlgorithmException e) {
       throw new RuntimeException(e);
     }

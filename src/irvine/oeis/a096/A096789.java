@@ -7,7 +7,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A096789 Decimal expansion of BesselI(1,2).
- * Formula:
+ * Formula: 
  * @author Georg Fischer
  */
 public class A096789 extends DecimalExpansionSequence {

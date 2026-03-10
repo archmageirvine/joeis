@@ -5,7 +5,6 @@ import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
-
 /**
  * A102888 Decimal expansion of volume of the Reuleaux tetrahedron.
  * Formula: (8/3)*Pi -(27/4)*arccos(1/3) + sqrt(2)/4

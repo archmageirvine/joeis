@@ -8,7 +8,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A298242 Decimal expansion of BesselI(1,1/2)/BesselI(0,1/2).
- * Formula:
+ * Formula: 
  * @author Georg Fischer
  */
 public class A298242 extends DecimalExpansionSequence {

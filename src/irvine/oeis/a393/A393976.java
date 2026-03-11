@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A393976 a(n) = phi(n)^2 + phi(n) + 1, where phi is Euler&apos;s totient function.
+ * A393976 a(n) = phi(n)^2 + phi(n) + 1, where phi is Euler's totient function.
  * @author Georg Fischer
  */
 public class A393976 extends LambdaSequence {

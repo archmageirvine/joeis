@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A048783 Numbers n such that prime(n) - sigma(n) - phi(n) = prime(n+1) - sigma(n+1) - phi(n+1), where sigma(n) = sum of divisors of n.
+ * A048783 Numbers k such that prime(k) - sigma(k) - phi(k) = prime(k+1) - sigma(k+1) - phi(k+1), where sigma(k) = sum of divisors of k.
  * @author Sean A. Irvine
  */
 public class A048783 extends A000040 {

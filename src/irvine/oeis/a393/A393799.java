@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393799 allocated for Robert G. Wilson v.
+ * A393799 The least prime p of three consecutive primes p,q,r such that q - p = 2n + 2 and r - q = 2n.
  * @author Sean A. Irvine
  */
 public class A393799 extends Sequence1 {

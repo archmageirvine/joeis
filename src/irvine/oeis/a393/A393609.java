@@ -5,7 +5,7 @@ import irvine.oeis.a035.A035513;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A393609 allocated for Clark Kimberling.
+ * A393609 Square array A read by descending antidiagonals: A(n,k) = prime(A035513(n, k)).
  * @author Sean A. Irvine
  */
 public class A393609 extends SimpleTransformSequence {

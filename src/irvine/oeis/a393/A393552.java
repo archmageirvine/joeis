@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A393552 allocated for Rhys Feltman.
+ * A393552 Number of distinct line sets in an n-gon connecting vertices and midpoints, disallowing same-edge connections, up to rotations and reflections.
  * @author Sean A. Irvine
  */
 public class A393552 extends Sequence3 {

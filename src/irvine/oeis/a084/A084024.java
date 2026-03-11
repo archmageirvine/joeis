@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A084024 Triangle read by rows in which row n gives n smallest n-digit multiples of n that are palindromes.
+ * A084024 Triangle read by rows in which row n gives n smallest n-digit multiples of n that are palindromes with rows padded with 0 if there are insufficient palindromes.
  * @author Sean A. Irvine
  */
 public class A084024 extends Sequence1 {

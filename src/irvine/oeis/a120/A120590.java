@@ -5,7 +5,7 @@ package irvine.oeis.a120;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A120590 G.f. satisfies: 4*A(x) = 3 + x + A(x)^3, starting with [1,1,3].
+ * A120590 G.f. A(x) satisfies 4*A(x) = 3 + x + A(x)^3, starting with [1,1,3].
  * @author Georg Fischer
  */
 public class A120590 extends HolonomicRecurrence {

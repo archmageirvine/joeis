@@ -7,7 +7,7 @@ import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
 
 /**
- * A393806 allocated for Alexander Yutkin.
+ * A393806 Palindromes that have only one largest digit (strict maximum).
  * @author Sean A. Irvine
  */
 public class A393806 extends Sequence1 {

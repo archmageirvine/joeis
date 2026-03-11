@@ -6,7 +6,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A085607 Non-palindromic n and its digit reversal have the same sum of prime factors (with repetition).
+ * A085607 Non-palindromic numbers whose digit reversal have the same sum of prime factors (with repetition).
  * @author Georg Fischer
  */
 public class A085607 extends FilterNumberSequence {

@@ -5,7 +5,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A393086 allocated for Artur Jasinski.
+ * A393086 Decimal expansion of x for maximum of function log(log(x))/(1+x^2).
  * @author Sean A. Irvine
  */
 public class A393086 extends DecimalExpansionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393591 allocated for Robert G. Wilson v.
+ * A393591 Greatest integer b such that the sum of the integer digits of n in bases 2..b strictly increases.
  * @author Sean A. Irvine
  */
 public class A393591 extends Sequence1 {

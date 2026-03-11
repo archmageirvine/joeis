@@ -3,7 +3,7 @@ package irvine.oeis.a393;
 import irvine.oeis.InverseSequence;
 
 /**
- * A393592 allocated for Robert G. Wilson v.
+ * A393592 Position of the first occurrence of n in A393591.
  * @author Sean A. Irvine
  */
 public class A393592 extends InverseSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A174588 A symmetrical triangular sequence adjusted by -t[n,-1]+1 :t(n,m)=If[n == 0, 1, Sum[Binomial[n, k]*Eulerian[n + 1, k]*(-1)^k*(m + 1 - k)^n, {k, 0, n}]].
+ * A174588 Triangle read by rows: T(n,k) = S(n,k) - S(n,0) + 1 where S(n,k) = Sum_{j=0..n} (-1)^j * (k-j)^n * binomial(n, j)* Eulerian1(n+1, j) with S(0,k)=1.
  * @author Sean A. Irvine
  */
 public class A174588 extends Sequence0 {

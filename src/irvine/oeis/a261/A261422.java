@@ -5,7 +5,7 @@ import irvine.oeis.a136.A136522;
 import irvine.oeis.transform.RootSequence;
 
 /**
- * A261422 Number of ordered triples (u,v,w) of palindromes such that u+v+w=n.
+ * A261422 Number of ordered triples (u,v,w) of palindromes such that u+v+w = n.
  * @author Georg Fischer
  */
 public class A261422 extends RootSequence {

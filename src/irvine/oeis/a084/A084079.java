@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A084079 Sum of absolute values of lists created by n substitutions k -&gt; Range[ -Abs[k+1],Abs[k-1],2] starting with {1}.
+ * A084079 Sum of absolute values of lists created by n substitutions k -&gt; Range(-abs(k+1),abs(k-1),2) starting with {1}.
  * @author Sean A. Irvine
  */
 public class A084079 extends Sequence0 {

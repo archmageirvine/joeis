@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393746 allocated for Fr\u00e9d\u00e9ric D. W. Heidenthal-K\u00f6nig.
+ * A393746 Triangle read by rows: T(n, k) is the number of ordered pairs (i, j) of integers with 0 &lt;= i, j &lt; n such that i*j = k*n, for n&gt;=1 and k=0 to n-1.
  * @author Sean A. Irvine
  */
 public class A393746 extends Sequence1 {

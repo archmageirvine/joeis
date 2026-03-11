@@ -4,7 +4,7 @@ package irvine.oeis.a252;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A252480 Numbers whose decimal representation has at least one &apos;0&apos; digit in a position other than the final digit.
+ * A252480 Numbers whose decimal representation has at least one '0' digit in a position other than the final digit.
  * @author Georg Fischer
  */
 public class A252480 extends FilterNumberSequence {

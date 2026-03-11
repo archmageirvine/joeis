@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a062.A062964;
 
 /**
- * A392198 allocated for James S. DeArmon.
+ * A392198 Position of the first instance of n, expressed in hexadecimal, in the hexadecimal representation of Pi.
  * @author Sean A. Irvine
  */
 public class A392198 extends Sequence0 {

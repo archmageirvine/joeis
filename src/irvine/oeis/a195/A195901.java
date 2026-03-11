@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A195901 Integers n&gt;1 such that A141822(n)=5.
+ * A195901 Integers k&gt;1 such that A141822(k)=5.
  *
  * @author Georg Fischer
  */

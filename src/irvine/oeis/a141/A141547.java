@@ -7,7 +7,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a033.A033880;
 
 /**
- * A141547 Numbers n whose abundance is 16.
+ * A141547 Numbers whose abundance is 16.
  * @author Georg Fischer
  */
 public class A141547 extends FilterNumberSequence {

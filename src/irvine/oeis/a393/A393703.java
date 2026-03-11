@@ -10,7 +10,7 @@ import irvine.oeis.a206.A206400;
 import irvine.util.string.StringUtils;
 
 /**
- * A393703 allocated for Michel Lagneau.
+ * A393703 a(n) is the smallest index k such that the subsequence b(k), b(k+1),..., b(k+n-1) is a palindrome of length n, where b(k) = A206400(k).
  * @author Sean A. Irvine
  */
 public class A393703 extends Sequence1 {

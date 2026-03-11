@@ -7,7 +7,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A174692 A symmetrical triangle sequence: t(n,m)=n!*Eulerian[n + 1, m]^2 - n! + 1.
+ * A174692 Triangle read by rows: T(n,k) = n! * Eulerian(n + 1, k)^2 - k! + 1.
  * @author Georg Fischer
  */
 public class A174692 extends LambdaTriangle {

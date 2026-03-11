@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A393704 allocated for S. I. Dimitrov.
+ * A393704 Numbers k such that sigma(k) = psi(k) + phi(k) + Omega(k)^10.
  * @author Sean A. Irvine
  */
 public class A393704 extends FilterNumberSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A084048 Integers m such that the base-10 digit concatenation 2//m//3//m//5//m...//prime(49)//m//prime(50) is prime.
+ * A084048 Integers m such that the base-10 digit concatenation 2 m 3 m 5 m ... prime(49) m prime(50) is prime.
  * @author Sean A. Irvine
  */
 public class A084048 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A243055 Difference between the indices of the smallest and the largest prime dividing n:
+ * A243055 Difference between the indices of the smallest and the largest prime dividing n: If n = p_i * ... * p_k, where p_i &lt;= ... &lt;= p_k, where p_h = A000040(h), then a(n) = (k-i), a(1) = 0 by convention.
  * If n = p_i * ... * p_k, where p_i &lt;= ... &lt;= p_k, where p_h = A000040(h), then a(n) = (k-i), a(1) = 0 by convention.
  * @author Georg Fischer
  */

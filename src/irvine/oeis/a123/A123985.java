@@ -4,7 +4,7 @@ package irvine.oeis.a123;
 import irvine.oeis.prime.PrimeConditionListSequence;
 
 /**
- * A123985 Numbers n for which 12n+1, 12n+5, 12n+7 and 12n+11 are primes.
+ * A123985 Numbers k for which 12*k+1, 12*k+5, 12*k+7 and 12*k+11 are primes.
  * @author Georg Fischer
  */
 public class A123985 extends PrimeConditionListSequence {

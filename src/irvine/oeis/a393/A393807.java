@@ -9,7 +9,7 @@ import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
 
 /**
- * A393807 allocated for Alexander Yutkin.
+ * A393807 Palindromes that have only one smallest digit (strict minimum).
  * @author Sean A. Irvine
  */
 public class A393807 extends Sequence1 {

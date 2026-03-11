@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A393498 allocated for Jean-Marc Rebert.
+ * A393498 The triangle T(n,k) read by rows for n &gt;= 4 and 2 &lt;= k &lt;= n-2, where T(n,k) counts the number of n-digit primes p that can be written as the concatenation of a k-digit prime p1 and another prime p2, with the additional constraint that p, p1, and p2 all use exactly the same set of digits.
  * @author Sean A. Irvine
  */
 public class A393498 extends AbstractSequence {

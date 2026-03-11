@@ -3,7 +3,7 @@ package irvine.oeis.a393;
 import irvine.oeis.InverseSequence;
 
 /**
- * A393797 allocated for Ruud H.G. van Tol.
+ * A393797 Position where n first occurs in A393336.
  * @author Sean A. Irvine
  */
 public class A393797 extends InverseSequence {

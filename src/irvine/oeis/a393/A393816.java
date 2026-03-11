@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a052.A052486;
 
 /**
- * A393816 allocated for Michael De Vlieger.
+ * A393816 Achilles numbers with exactly 2 distinct prime factors.
  * @author Sean A. Irvine
  */
 public class A393816 extends FilterSequence {

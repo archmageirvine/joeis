@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388042 allocated for Artur Jasinski.
+ * A388042 Decimal expansion of Integral_{x&gt;=e} log(log(x))/(1+x^2) dx.
  * @author Sean A. Irvine
  */
 public class A388042 extends DecimalExpansionSequence {

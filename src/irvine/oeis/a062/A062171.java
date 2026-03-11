@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062171 Number of non-unitary divisors of n (A048105) &gt; number of distinct prime divisors of n (A001221).
+ * A062171 Numbers k such that number of non-unitary divisors of k (A048105) &gt; number of distinct prime divisors of k (A001221).
  * @author Sean A. Irvine
  */
 public class A062171 extends Sequence1 {

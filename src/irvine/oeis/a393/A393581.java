@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393581 allocated for Prathamesh Koshe.
+ * A393581 Numbers k such that the sum of the digits of k raised to the power of their respective positions has unique digits in strictly ascending order.
  * @author Sean A. Irvine
  */
 public class A393581 extends Sequence1 {

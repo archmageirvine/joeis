@@ -3,7 +3,7 @@ package irvine.oeis.a392;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A392163 allocated for Ken Clements.
+ * A392163 Terms of A055932 that are products of two or more consecutive composite integers.
  * @author Sean A. Irvine
  */
 public class A392163 extends FiniteSequence {

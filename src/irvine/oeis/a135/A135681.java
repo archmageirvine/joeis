@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A135681 a(n)=n if n=1 or if n=prime. Otherwise, n=4 if n is even and n=1 if n is odd.
+ * A135681 a(n)=n if n=prime. Otherwise, a(n)=4 if n is even and a(n)=1 if n is odd.
  * @author Georg Fischer
  */
 public class A135681 extends LambdaSequence {

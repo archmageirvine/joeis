@@ -4,7 +4,7 @@ package irvine.oeis.a322;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A322595 a(n) = (n^3 + 9*n + 14*n + 9)/3.
+ * A322595 a(n) = (n^3 + 9*n^2 + 14*n + 9)/3.
  * @author Georg Fischer
  */
 public class A322595 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A174639 A triangular sequence:f(n)=Sum[StirlingS2[n, k], {k, 1, n}];t(n,m)=Binomial[n, m]*f(m + 1)*f(n - m + 1)-Binomial[n,0]*f(1)*f(n+1)+1.
+ * A174639 Triangle read by rows: T(n,k) = binomial(n,k) * bell(k+1) * bell(n-k+1) - bell(n+1) + 1 where bell(n) = A000110(n) are the Bell numbers.
  * @author Sean A. Irvine
  */
 public class A174639 extends Sequence0 {

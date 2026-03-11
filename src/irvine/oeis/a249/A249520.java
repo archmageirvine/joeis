@@ -5,7 +5,7 @@ package irvine.oeis.a249;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A249520 Expansion of: G.f.: 2-(2*x)/(1-sqrt(sqrt(1-16*x)+1)/sqrt(2)).
+ * A249520 Expansion of g.f. 2-(2*x)/(1-sqrt(sqrt(1-16*x)+1)/sqrt(2)).
  * Recurrence: n*(n-1)*(2*n-3)*a(n)-2*(n-1)*(32*n^2-128*n+135)*a(n-1)+16*(2*n-5)*(4*n-9)*(4*n-11)*a(n-2)=0
  * @author Georg Fischer
  */

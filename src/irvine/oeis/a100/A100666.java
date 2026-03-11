@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
- * A100666 Sum_{k&gt;=1} k^n/Catalan(k) rounded to nearest integer.
+ * A100666 a(n) = Sum_{k&gt;=0} k^n/Catalan(k) rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A100666 extends Sequence0 {

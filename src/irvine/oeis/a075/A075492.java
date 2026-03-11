@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075492 Sum of digits of n &lt; number of divisors of n.
+ * A075492 Numbers k such that sum of digits of k &lt; number of divisors of k.
  * @author Sean A. Irvine
  */
 public class A075492 extends Sequence1 {

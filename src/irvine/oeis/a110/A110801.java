@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A110801 Numbers n such that 12n + 1 is prime.
+ * A110801 Numbers k such that 12k + 1 is prime.
  * @author Georg Fischer
  */
 public class A110801 extends PrimePositionSubsequence {

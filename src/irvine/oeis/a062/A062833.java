@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062833 2n! / number of divisors of n.
+ * A062833 a(n) = 2 * n! / number of divisors of n.
  * @author Sean A. Irvine
  */
 public class A062833 extends Sequence1 {

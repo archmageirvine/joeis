@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a055.A055932;
 
 /**
- * A392344 allocated for Ken Clements.
+ * A392344 a(n) is the greatest integer m such that m*(m+n) has a complete contiguous set of prime divisors from 2 to its greatest prime divisor.
  * @author Sean A. Irvine
  */
 public class A392344 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066689 Least number k such that the square root of {k^2 + (Prime[n + k] - Prime[n])^2} is an integer; or 0 if no such number exists.
+ * A066689 Least number k such that the square root of {k^2 + (prime(n + k) - prime(n))^2} is an integer; or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A066689 extends Sequence1 {

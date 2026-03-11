@@ -6,7 +6,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.a381.A381617;
 
 /**
- * A393793 allocated for Jwalin Bhatt.
+ * A393793 A sequence constructed by greedily sampling the discrete probability distribution p(k)=zeta(k+1)-1 to minimize discrepancy.
  * @author Sean A. Irvine
  */
 public class A393793 extends A381617 {

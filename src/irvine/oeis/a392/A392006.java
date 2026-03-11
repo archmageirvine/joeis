@@ -6,7 +6,7 @@ import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A392006 allocated for Zhicheng Wei.
+ * A392006 Indices corresponding to records in A392071.
  * @author Sean A. Irvine
  */
 public class A392006 extends RecordPositionSequence {

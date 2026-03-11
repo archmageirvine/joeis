@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a393.A393336;
 
 /**
- * A392980 allocated for Paolo Xausa.
+ * A392980 Positions of zeros in A393336.
  * @author Sean A. Irvine
  */
 public class A392980 extends FilterPositionSequence {

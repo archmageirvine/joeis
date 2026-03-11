@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002113;
 
 /**
- * A048343 Total number of distinct palindromes of form 'n-digit number' x 'n-digit number_reversed' (n-digit number not palindromic).
+ * A048343 Number of palindromes of the form k*rev(k), where k is a non-palindromic n-digit number and rev(k) = A004086(k) is the digit reversal of k.
  * @author Sean A. Irvine
  */
 public class A048343 extends A002113 {

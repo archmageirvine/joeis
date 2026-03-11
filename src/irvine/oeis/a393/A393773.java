@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051038;
 
 /**
- * A393773 allocated for Zhicheng Wei.
+ * A393773 11-smooth numbers k = s(i) such that s(i)/s(i+1) sets a record high, where s = A051038.
  * @author Sean A. Irvine
  */
 public class A393773 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a154.A154692;
 
 /**
- * A174667 Sequence A154692 adjusted to leading one:t(n,m)=A154692(n,m)-A154692(n,0)+1.
+ * A174667 Triangle read by rows: T(n, k) = A154692(n, k) - A154692(n, 0) + 1.
  * @author Sean A. Irvine
  */
 public class A174667 extends A154692 {

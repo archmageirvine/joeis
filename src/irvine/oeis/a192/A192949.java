@@ -4,7 +4,7 @@ package irvine.oeis.a192;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A192949 E.g.f. satisfies: A(x) = 1 + x*Sum_{n&gt;=0} (A(x)^2 - 1)^n/n!.
+ * A192949 E.g.f. A(x) satisfies A(x) = 1 + x*Sum_{n&gt;=0} (A(x)^2 - 1)^n/n!.
  * E.g.f.: <code>1+reverse(x/exp(2*x+x^2))</code>.
  * @author Georg Fischer
  */

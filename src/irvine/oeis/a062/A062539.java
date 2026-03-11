@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A062539 Decimal expansion of the Lemniscate constant or Gauss's constant.
+ * A062539 Decimal expansion of the lemniscate constant or Gauss's constant.
  * Formula: Pi/agm(1,sqrt(2))
  * @author Georg Fischer
  */

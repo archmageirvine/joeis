@@ -26,15 +26,14 @@ public class A390734 extends Sequence1 {
   private final A000040 mPrime = new A000040();
   private final ArrayList<Long> mPrimes = new ArrayList<>();
   private final ArrayList<Long> mP5mod = new ArrayList<>();
-
-  private final HashMap<Long, List<BitSet>> mThree = new HashMap<>();
+  private final HashMap<Long, List<BitSet>> mPrecomputedSums = new HashMap<>();
 
   private static long modAdd(final long a, final long b) {
     final long s = a + b;
     return s >= MOD ? s - MOD : s;
   }
 
-  private void extendThree(final int k) {
+  private void extend(final int k) {
     final long pk = mP5mod.get(k);
     for (int i = 0; i < k; ++i) {
       final long si = modAdd(mP5mod.get(i), pk);
@@ -44,11 +43,11 @@ public class A390734 extends Sequence1 {
         set.set(i);
         set.set(j);
         set.set(k);
-        final List<BitSet> lst = mThree.get(s);
+        final List<BitSet> lst = mPrecomputedSums.get(s);
         if (lst == null) {
           final ArrayList<BitSet> sets = new ArrayList<>();
           sets.add(set);
-          mThree.put(s, sets);
+          mPrecomputedSums.put(s, sets);
         } else {
           lst.add(set);
         }
@@ -58,27 +57,26 @@ public class A390734 extends Sequence1 {
 
   private boolean representable(final long targetMod, final Z targetExact) {
     final int n = mPrimes.size();
+    final BitSet mask4 = new BitSet();
     for (int i = 0; i < n; ++i) {
       final long a = mP5mod.get(i);
+      mask4.set(i);
       for (int j = i + 1; j < n; ++j) {
+        mask4.set(j);
         final long b = modAdd(a, mP5mod.get(j));
         for (int k = j + 1; k < n; ++k) {
+          mask4.set(k);
           final long c = modAdd(b, mP5mod.get(k));
           for (int l = k + 1; l < n; ++l) {
+            mask4.set(l);
             final long s4 = modAdd(c, mP5mod.get(l));
             long need = targetMod - s4;
             if (need < 0) {
               need += MOD;
             }
-            final List<BitSet> lst = mThree.get(need);
+            final List<BitSet> lst = mPrecomputedSums.get(need);
             if (lst != null) {
               for (final BitSet mask3 : lst) {
-                final BitSet mask4 = new BitSet();
-                mask4.set(i);
-                mask4.set(j);
-                mask4.set(k);
-                mask4.set(l);
-
                 if (!(mask3.intersects(mask4))) {
                   if (mVerbose) {
                     StringUtils.message("Detected putative solution, doing exact check");
@@ -96,9 +94,13 @@ public class A390734 extends Sequence1 {
                 }
               }
             }
+            mask4.clear(l);
           }
+          mask4.clear(k);
         }
+        mask4.clear(j);
       }
+      mask4.clear(i);
     }
     return false;
   }
@@ -111,7 +113,7 @@ public class A390734 extends Sequence1 {
       final Z p5exact = p.pow(5);
       mPrimes.add(p.longValueExact());
       mP5mod.add(p5mod);
-      extendThree(mPrimes.size() - 1);
+      extend(mPrimes.size() - 1);
       if (mVerbose) {
         StringUtils.message("Testing p=" + p);
       }

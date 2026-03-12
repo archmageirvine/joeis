@@ -1,18 +1,18 @@
-package irvine.oeis.a146;
+package irvine.oeis.a393;
 
 import java.util.TreeSet;
 
-import irvine.math.z.InverseSigma;
+import irvine.math.z.InverseEuler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000396;
 
 /**
- * A146542 Numbers m such that sigma(m) is a perfect number.
+ * A393942 allocated for Jaroslav Krizek.
  * @author Sean A. Irvine
  */
-public class A146542 extends Sequence1 {
+public class A393942 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private final Sequence mPerfect = new A000396();
@@ -20,8 +20,8 @@ public class A146542 extends Sequence1 {
 
   @Override
   public Z next() {
-    while (mA.isEmpty() || mA.first().multiply2().compareTo(mP) > 0) {
-      mA.addAll(InverseSigma.inverseSigma(mP, 1));
+    while (mA.isEmpty()) {
+      mA.addAll(InverseEuler.inversePhi(mP));
       mP = mPerfect.next();
     }
     return mA.pollFirst();

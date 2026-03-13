@@ -1,6 +1,7 @@
 package irvine.oeis.a393;
 
 import irvine.factor.prime.Fast;
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -13,15 +14,6 @@ public class A393417 extends Sequence1 {
   private final Fast mPrime = new Fast();
   private int mN = 0;
 
-  private boolean palindrome(final long[] s) {
-    for (int k = 0, j = s.length - 1; k < j; ++k, --j) {
-      if (s[k] != s[j]) {
-        return false;
-      }
-    }
-    return true;
-  }
-
   @Override
   public Z next() {
     ++mN;
@@ -32,7 +24,7 @@ public class A393417 extends Sequence1 {
       s[k] = p % mN;
     }
     long q = 2;
-    while (!palindrome(s)) {
+    while (!LongUtils.isPalindrome(s)) {
       q = mPrime.nextPrime(q);
       p = mPrime.nextPrime(p);
       System.arraycopy(s, 1, s, 0, s.length - 1);

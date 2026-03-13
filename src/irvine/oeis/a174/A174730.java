@@ -17,8 +17,8 @@ public class A174730 extends LambdaTriangle {
   /** Construct the sequence. */
   public A174730() {
     super(0, 0, 0, (n, k) -> {
-      final Z q1 = Z.ONE.subtract(Z.FOUR.pow(n));
-      return q1.multiply(A173018.a(n + 1, k)).subtract(q1).add(1);
+      final Z f = Z.FOUR.pow(n);
+      return Z.ONE.subtract(f).multiply(A173018.a(n + 1, k)).add(f);
     });
   }
 }

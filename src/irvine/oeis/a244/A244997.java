@@ -6,7 +6,7 @@ import irvine.oeis.a253.A253905;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A244997 Decimal expansion of the moment derivative W_4&apos;(0) associated with the radial probability distribution of a 4-step uniform random walk.
+ * A244997 Decimal expansion of the moment derivative W_4'(0) associated with the radial probability distribution of a 4-step uniform random walk.
  * Formula:
  * @author Georg Fischer
  */

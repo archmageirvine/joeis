@@ -4,7 +4,7 @@ package irvine.oeis.a393;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A393694 Numbers that are sums of two positive cubes in two or more ways corresponding to the Pell-type equation X^2 - 3*Y^2 = 6318.
+ * A393694 allocated for Jamal Agbanwa.
  * @author Georg Fischer
  */
 public class A393694 extends HolonomicRecurrence {

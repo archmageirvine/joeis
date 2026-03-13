@@ -535,4 +535,19 @@ public final class LongUtils {
     }
     return sum;
   }
+
+  /**
+   * Test if the given array is palindromic.
+   * @param s array to test
+   * @return true iff the array is palindromic
+   */
+  public static boolean isPalindrome(final long[] s) {
+    for (int k = 0, j = s.length - 1; k < j; ++k, --j) {
+      if (s[k] != s[j]) {
+        return false;
+      }
+    }
+    return true;
+  }
+
 }

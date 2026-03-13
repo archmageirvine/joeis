@@ -7,7 +7,7 @@ import irvine.oeis.ThreeParameterFormSequence;
 import irvine.oeis.a007.A007097;
 
 /**
- * A393587.
+ * A393587 allocated for Dominique Manchon.
  * @author Sean A. Irvine
  */
 public class A393587 extends ThreeParameterFormSequence {

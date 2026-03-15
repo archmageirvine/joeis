@@ -25,6 +25,7 @@ public class MetaProducer implements Producer {
       new ReaderProducer(),
       new JavaProducer(),
       new PariProducer(),
+      new MapleProducer(),
       new GapProducer(),
       new PseudoProducer());
   }

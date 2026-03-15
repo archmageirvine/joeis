@@ -1282,7 +1282,6 @@ A038140 Number of planar polyhexes with n cells and a single hole
 A038141 Number of planar polyhexes with n cells with at least two holes, all holes having size at least two
 A038142 Number of planar cata-polyhexes with n cells
 A038143 Hexagonal cata-condensed helicenes with n cells (non-planar cata-fused benzenoid hydrocarbons)
-A038144 Number of planar n-hexes, or polyhexes (in the sense of A000228, so rotations and reflections count as the same shape) with at least one hole
 A038145 Number of n-celled helicenes without holes
 A038146 Number of n-celled helicenes with peri-fragments
 A038147 Number of polyhexes with n cells

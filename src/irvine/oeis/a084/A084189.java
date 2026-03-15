@@ -15,7 +15,7 @@ public class A084189 extends A046376 {
   public Z next() {
     long min = 10;
     for (final Z p : Jaguar.factor(super.next()).toZArray()) {
-      int syn = Functions.SYNDROME.i(p);
+      final int syn = Functions.SYNDROME.i(p);
       for (int m = 0; m < min; ++m) {
         if ((syn & (1L << m)) != 0) {
           min = Math.min(min, m);

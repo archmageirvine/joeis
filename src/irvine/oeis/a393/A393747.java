@@ -75,7 +75,7 @@ result = count_paths_with_s_peaks(n, n, n, 0, 0, 0, -1, s)
     if (res != null) {
       return res;
     }
-    Z t = compute(xRem, yRem, zRem, xUsed, yUsed, zUsed, lastChar, sNeeded);
+    final Z t = compute(xRem, yRem, zRem, xUsed, yUsed, zUsed, lastChar, sNeeded);
     mCache.put(key, t);
     return t;
   }

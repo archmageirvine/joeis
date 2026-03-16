@@ -21,6 +21,53 @@ public class A393702 extends Sequence0 {
   private int mN = -1;
   private long mM = 0;
 
+  private Z handle2p(final int n) {
+    // This could be generalized to handle semiprimes
+
+    // n = 2 * p
+    // We have patterns p, 2, 1 and 2*p, 1, 1
+    final Sequence omegan = new A033992(n);
+    final Sequence omegap = new A033992(n / 2);
+    Z kn = omegan.next();
+    Z kp = omegap.next();
+    while (true) {
+      if (kn.compareTo(kp) <= 0) {
+        final int om1 = Functions.OMEGA.i(kn.subtract(1));
+        if (om1 == 1) {
+          final int om2 = Functions.OMEGA.i(kn.subtract(2));
+          if (om2 == 1) {
+            return kn.subtract(2);
+          }
+          final int op1 = Functions.OMEGA.i(kn.add(1));
+          if (op1 == 1) {
+            return kn.subtract(1);
+          }
+        } else {
+          final int op1 = Functions.OMEGA.i(kn.add(1));
+          if (op1 == 1 && Functions.OMEGA.i(kn.add(2)) == 1) {
+            return kn;
+          }
+        }
+        kn = omegan.next();
+      } else {
+        final int om1 = Functions.OMEGA.i(kp.subtract(1));
+        final int om2 = Functions.OMEGA.i(kp.subtract(2));
+        if (om1 * om2 == 2) {
+          return kp.subtract(2);
+        }
+        final int op1 = Functions.OMEGA.i(kp.add(1));
+        if (om1 * op1 == 2) {
+          return kp.subtract(1);
+        }
+        final int op2 = Functions.OMEGA.i(kp.add(2));
+        if (op1 * op2 == 2) {
+          return kp;
+        }
+        kp = omegap.next();
+      }
+    }
+  }
+
   @Override
   public Z next() {
     if (Predicates.PRIME.is(++mN)) {
@@ -48,6 +95,9 @@ public class A393702 extends Sequence0 {
           }
         }
       }
+    }
+    if ((mN & 1) == 0 && Predicates.PRIME.is(mN / 2)) {
+      return handle2p(mN);
     }
     while (mFirsts.get(mN) == 0) {
       final int omega = Functions.OMEGA.i(++mM) * Functions.OMEGA.i(mM + 1) * Functions.OMEGA.i(mM + 2);

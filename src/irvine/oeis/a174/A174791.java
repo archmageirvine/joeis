@@ -7,7 +7,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A174791 A symmetrical triangular sequence:t(n,m)=(n!^2/(m!(n - m)!))*Eulerian[n + 1, m] - (n!^2/(m!(n - m)!)) + 1.
+ * A174791 Triangle ready by rows: T(n,k) = n! * binomial(n,k) * (Eulerian(n+1,k) - 1) + 1.
  * @author Sean A. Irvine
  */
 public class A174791 extends LambdaTriangle {

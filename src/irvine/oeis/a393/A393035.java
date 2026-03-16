@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a134.A134816;
 
 /**
- * A393035 allocated for F\u0131rat Karay\u0131ld\u0131z.
+ * A393035 Indices k such that P(k)^2 + P(k+1)^2 is prime, where P(n) is the Padovan sequence A134816(n+1).
  * @author Sean A. Irvine
  */
 public class A393035 extends Sequence1 {

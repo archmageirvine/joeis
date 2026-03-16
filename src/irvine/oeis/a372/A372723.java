@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A174834.
+ * A372723 Triangle read by rows: Column k has e.g.f. t^k / ((1 - t)^(k + 1) * exp(t)).
  * @author Sean A. Irvine
  */
 public class A372723 extends Sequence0 {

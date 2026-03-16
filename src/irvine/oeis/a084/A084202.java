@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393747.
+ * A084202 G.f. A(x) defined by: A(x)^2 consists entirely of integer coefficients between 1 and 2 (A083952); A(x) is the unique power series solution with A(0)=1.
  * @author Sean A. Irvine
  */
 public class A084202 extends Sequence0 {

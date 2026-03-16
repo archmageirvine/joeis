@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A018839 Squares on infinite chessboard at n moves from center using a {2,3} fairy knight.
+ * A018839 Squares on infinite chessboard at n moves from center using a {2,3} fairy knight (or zebra).
  * @author Sean A. Irvine
  */
 public class A018839 extends Sequence0 {

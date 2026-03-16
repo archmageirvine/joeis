@@ -4,7 +4,7 @@ package irvine.oeis.a187;
 import irvine.oeis.transform.ConvolutionProduct;
 
 /**
- * A187096 Coefficients of L-series for elliptic curve &quot;19a3&quot;: y^2 + y = x^3 + x^2 + x.
+ * A187096 Coefficients of L-series for elliptic curve "19a3": y^2 + y = x^3 + x^2 + x.
  * @author Georg Fischer
  */
 public class A187096 extends ConvolutionProduct {

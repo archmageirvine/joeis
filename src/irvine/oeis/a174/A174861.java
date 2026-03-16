@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A174834 A symmetrical triangular sequence:t(n,m)=(StirlingS1[n, m] + StirlingS1[n, n - m])*Binomial[n, m] - (StirlingS1[n, 0] + StirlingS1[n, n - 0])* Binomial[n, 0] + 1.
+ * A174861 A symmetrical triangular sequence:t(n,m)=n!*(StirlingS1[n, m] + StirlingS1[n, n - m] - (StirlingS1[n, 0] + StirlingS1[n, n]) + 1) - n! + 1.
  * @author Sean A. Irvine
  */
 public class A174861 extends Sequence0 {

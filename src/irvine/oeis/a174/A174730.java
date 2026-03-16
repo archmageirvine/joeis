@@ -7,7 +7,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A174730 A symmetrical triangle sequence:q=4:t(n,m,q)=(1 - q^n)*Eulerian[n + 1, m] - (1 - q^n) + 1.
+ * A174730 Triangle read by rows: T(n,k) = (1-4^n) * Eulerian(n + 1, m) + 4^n.
  * @author Georg Fischer
  */
 public class A174730 extends LambdaTriangle {

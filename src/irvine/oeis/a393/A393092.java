@@ -8,7 +8,7 @@ import irvine.oeis.a036.A036040;
 import irvine.oeis.a036.A036043;
 
 /**
- * A393092 allocated for Mohammad Alminawi.
+ * A393092 Irregular triangle read by rows: T(n,k) is the number of ways to partition n labeled elements into pie slices whose part sizes are given by the k-th partition of n, allowing the pie to be turned over, partitions given in Abramowitz-Stegun order.
  * @author Sean A. Irvine
  */
 public class A393092 extends Sequence1 {

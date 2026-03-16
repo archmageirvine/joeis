@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A074944 Number of k with 1 &lt;= k &lt;= n such that gcd(n,k)=tau(k), where tau is A000005, number of divisors function.
+ * A074944 Number of k with 1 &lt;= k &lt;= n such that gcd(n,k) = tau(k), where tau is A000005, number of divisors function.
  * @author Georg Fischer
  */
 public class A074944 extends LambdaSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A393747.
+ * A084201 Primes p such that the sum of the digits is prime and the sum of the digits of 2p is also prime.
  * @author Sean A. Irvine
  */
 public class A084201 extends FilterSequence {

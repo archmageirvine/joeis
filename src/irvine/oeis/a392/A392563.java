@@ -8,7 +8,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A392563 allocated for Robert Israel.
+ * A392563 a(n) is the least number that can be written in exactly n ways as p + r, where p is a prime and r is an anagram of p.
  * @author Sean A. Irvine
  */
 public class A392563 extends Sequence1 {

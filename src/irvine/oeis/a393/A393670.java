@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393670 allocated for Clark Kimberling.
+ * A393670 Irregular triangular array T, read by rows: when the partitions of n are arranged in reverse lexicographic order, T(n,k) is the position of the k-th partition in which adjacent parts differ by at least 2.
  * @author Sean A. Irvine
  */
 public class A393670 extends Sequence1 {

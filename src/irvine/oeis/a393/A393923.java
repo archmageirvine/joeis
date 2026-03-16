@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393923 allocated for Michael De Vlieger.
+ * A393923 Product of numbers k &lt;= n that have the same squarefree kernel as n.
  * @author Sean A. Irvine
  */
 public class A393923 extends Sequence1 {

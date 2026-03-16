@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393689 allocated for Dimana Pramatarova.
+ * A393689 Array read by antidiagonals: A(n, k) is the minimum number of whole unit squares under the polygonal path (i, h_k(v_i)), associated to a k-dimensional balanced ballot path, n &gt;= 1, k &gt;= 2.
  * @author Sean A. Irvine
  */
 public class A393689 extends Sequence1 {

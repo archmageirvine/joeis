@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A084080 Length of lists created by n substitutions k -&gt; Range[k+1,1,-3] starting with {1}, counting down from k+1 to 1 step -3.
+ * A084080 Length of lists created by n substitutions k -&gt; range(k+1,1,-3) starting with {1}, counting down from k+1 to 1 step -3.
  * @author Sean A. Irvine
  */
 public class A084080 extends Sequence0 {

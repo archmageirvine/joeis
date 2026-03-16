@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393672 allocated for Clark Kimberling.
+ * A393672 a(n) = number of partitions of n into distinct odd parts, no two of which differ by 2.
  * @author Sean A. Irvine
  */
 public class A393672 extends Sequence0 {

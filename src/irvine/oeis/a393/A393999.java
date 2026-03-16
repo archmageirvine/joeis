@@ -14,7 +14,16 @@ import irvine.oeis.a052.A052486;
  */
 public class A393999 extends Sequence1 {
 
-  private final Sequence mS = new A052486();
+  private final Sequence mS;
+
+  protected A393999(final Sequence seq) {
+    mS = seq;
+  }
+
+  /** Construct the sequence. */
+  public A393999() {
+    this(new A052486());
+  }
 
   private boolean is(final Z n) {
     final FactorSequence fs = Jaguar.factor(n);

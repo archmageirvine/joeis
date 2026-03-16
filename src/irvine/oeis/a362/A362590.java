@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A362590 Decimal expansion of the conventional value of von Klitzing constant (R{K-90}) in ohms (Omega).
+ * A362590 Decimal expansion of the conventional value of von Klitzing constant (R_{K-90}) in ohms (Omega).
  * Formula: ohms
  * @author Georg Fischer
  */

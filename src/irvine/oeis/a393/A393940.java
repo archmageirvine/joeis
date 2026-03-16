@@ -5,7 +5,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A393940 allocated for Jaroslav Krizek.
+ * A393940 Numbers m such that tau(m) is a perfect number (A000396).
  * @author Sean A. Irvine
  */
 public class A393940 extends FilterNumberSequence {

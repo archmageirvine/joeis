@@ -7,7 +7,7 @@ import irvine.oeis.a381.A381466;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A392755 allocated for Sam Chapman.
+ * A392755 a(n) = the largest value of k such that A381466(k) = n or -1 if no such k exists.
  * @author Sean A. Irvine
  */
 public class A392755 extends Sequence1 {

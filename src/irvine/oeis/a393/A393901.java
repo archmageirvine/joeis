@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393901 allocated for Aitzaz Imtiaz.
+ * A393901 Triangle read by rows: T(n,k) = (2*n + k - 1) * 2^(k-2).
  * @author Sean A. Irvine
  */
 public class A393901 extends Sequence1 {

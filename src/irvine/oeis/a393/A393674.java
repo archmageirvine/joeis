@@ -8,7 +8,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a018.A018252;
 
 /**
- * A393674 allocated for Clark Kimberling.
+ * A393674 a(n) = number of partitions of n into distinct nonprime parts, no two of which are consecutive in A018252.
  * @author Sean A. Irvine
  */
 public class A393674 extends Sequence0 {

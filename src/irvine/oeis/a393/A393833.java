@@ -9,7 +9,7 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A393833 allocated for Michel Lagneau.
+ * A393833 Least integer k having exactly 2n+2 divisors such that the sequence of its 2n+1 proper divisors modulo n is a palindrome.
  * @author Sean A. Irvine
  */
 public class A393833 extends Sequence1 {

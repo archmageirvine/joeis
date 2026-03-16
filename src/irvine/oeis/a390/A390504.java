@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A390504 allocated for Akshaj Arora.
+ * A390504 Positive integers whose binary representation can be reduced to length zero by removing palindromic substrings of length at least 2.
  * @author Sean A. Irvine
  */
 public class A390504 extends Sequence1 {

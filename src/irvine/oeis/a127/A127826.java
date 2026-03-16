@@ -6,7 +6,7 @@ import irvine.oeis.a112.A112172;
 import irvine.oeis.a138.A138515;
 
 /**
- * A127826 Coefficients of L-series for elliptic curve &quot;256a1&quot;: y^2 = x^3 + x^2 - 3*x + 1.
+ * A127826 Coefficients of L-series for elliptic curve "256a1": y^2 = x^3 + x^2 - 3*x + 1.
  * new A138515(), new A112172()
  * @author Georg Fischer
  */

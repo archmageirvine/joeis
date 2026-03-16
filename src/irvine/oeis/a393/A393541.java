@@ -9,7 +9,7 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A393541 allocated for Paolo P. Lava.
+ * A393541 Least composite divisible by the sum of three of its distinct prime divisors in exactly n different ways.
  * @author Sean A. Irvine
  */
 public class A393541 extends Sequence1 {

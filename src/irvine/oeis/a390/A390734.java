@@ -11,7 +11,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.string.StringUtils;
 
 /**
- * A390734 allocated for Zhining Yang.
+ * A390734 Primes whose fifth power are sums of fifth powers of seven distinct primes.
  * @author Sean A. Irvine
  */
 public class A390734 extends Sequence1 {

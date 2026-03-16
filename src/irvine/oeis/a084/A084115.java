@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A084115 A084113(n) minus A084114(n).
+ * A084115 a(n) = A084113(n) - A084114(n).
  * @author Sean A. Irvine
  */
 public class A084115 extends Sequence1 {

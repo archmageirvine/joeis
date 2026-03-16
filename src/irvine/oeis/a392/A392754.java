@@ -7,7 +7,7 @@ import irvine.oeis.a381.A381466;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A392754 allocated for Sam Chapman.
+ * A392754 a(n) = the smallest value k such that A381466(k) = n or -1 if no such k exists.
  * @author Sean A. Irvine
  */
 public class A392754 extends Sequence1 {

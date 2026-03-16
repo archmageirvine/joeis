@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393134 allocated for M. F. Hasler.
+ * A393134 Iteration numbers k for which MD5^k(128 bits 1) yields record lows.
  * @author Sean A. Irvine
  */
 public class A393134 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A191469 Numbers n such that 7^n - 6 is prime.
+ * A191469 Numbers k such that 7^k - 6 is prime.
  * @author Georg Fischer
  */
 public class A191469 extends PrimePositionSubsequence {

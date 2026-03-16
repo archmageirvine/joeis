@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393812 allocated for Felix Huber.
+ * A393812 Irregular triangle read by rows; integers with identical sigma values occurring at least twice, rows ordered by their smallest term.
  * @author Sean A. Irvine
  */
 public class A393812 extends Sequence1 {

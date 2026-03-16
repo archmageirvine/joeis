@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A174834 A symmetrical triangular sequence:t(n,m)=(StirlingS1[n, m] + StirlingS1[n, n - m])*Binomial[n, m] - (StirlingS1[n, 0] + StirlingS1[n, n - 0])* Binomial[n, 0] + 1.
+ * A174834 Triangle read by rows: T(n,k) = (Stirling1(n,k) + Stirling1(n,n-k)) * binomial(n,k) with T(0,0)=1.
  * @author Sean A. Irvine
  */
 public class A174834 extends Sequence0 {

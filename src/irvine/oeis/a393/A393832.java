@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A393832 allocated for Stefano Spezia.
+ * A393832 Nonnegative integers that have only one largest digit m and the sum of the digits equal to 2*m.
  * @author Sean A. Irvine
  */
 public class A393832 extends Sequence1 {

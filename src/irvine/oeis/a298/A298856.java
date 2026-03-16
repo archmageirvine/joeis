@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a240.A240542;
 
 /**
- * A298856 Triangular numbers n for which A240542(n) = A240542(n-1).
+ * A298856 Triangular numbers k for which A240542(k) = A240542(k-1).
  * @author Sean A. Irvine
  */
 public class A298856 extends Sequence1 {

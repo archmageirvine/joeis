@@ -7,7 +7,7 @@ import irvine.oeis.a381.A381466;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A392750 allocated for Sam Chapman.
+ * A392750 Positive integers that appear in A381466.
  * @author Sean A. Irvine
  */
 public class A392750 extends Sequence1 {

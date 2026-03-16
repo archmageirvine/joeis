@@ -8,7 +8,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a060.A060715;
 
 /**
- * A084138 a(n) is the number of times n is in sequence A060715, i.e., there are exactly a(n) cases where there are exactly n primes between m and 2m, exclusively, for m &gt; 0.
+ * A084138 a(n) is the number of times n is in sequence A060715; i.e., there are exactly a(n) cases where there are exactly n primes between m and 2m, exclusively, for m &gt; 0.
  * @author Sean A. Irvine
  */
 public class A084138 extends Sequence0 {

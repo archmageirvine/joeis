@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A393917 allocated for Karl-Heinz Hofmann.
+ * A393917 Number of primes strictly between (prime(n) + prime(n+1)) and (prime(n) * prime(n+1)).
  * @author Sean A. Irvine
  */
 public class A393917 extends A000040 {

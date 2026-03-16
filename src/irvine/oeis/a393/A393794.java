@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393794 allocated for Remco Havenaar.
+ * A393794 Fixed points of the 1089-trick map T(n) = |n - reverse(n)| + reverse(|n - reverse(n)|).
  * @author Sean A. Irvine
  */
 public class A393794 extends Sequence1 {

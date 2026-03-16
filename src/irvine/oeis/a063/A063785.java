@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063785 Numbers n such that sigma(n) = 2n + omega(n), where omega(n) is the number of distinct prime divisors of n.
+ * A063785 Numbers k such that sigma(k) = 2k + omega(k), where omega(k) is the number of distinct prime divisors of k.
  * @author Sean A. Irvine
  */
 public class A063785 extends Sequence1 {

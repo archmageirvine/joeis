@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394048 allocated for Steven Lu.
+ * A394048 The product of the smallest primes in every congruence class modulo n which are relatively prime to n.
  * @author Sean A. Irvine
  */
 public class A394048 extends Sequence1 {

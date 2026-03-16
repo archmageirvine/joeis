@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A084121 Primes p_n such that n*p_n is a palindrome.
+ * A084121 Primes p(n) such that n*p(n) is a palindrome.
  * @author Sean A. Irvine
  */
 public class A084121 extends FilterSequence {

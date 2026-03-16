@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A392777 allocated for Jwalin Bhatt.
+ * A392777 Decimal expansion of Product_{k&gt;=2} k^(zeta(k+1)-1).
  * @author Sean A. Irvine
  */
 public class A392777 extends DecimalExpansionSequence {

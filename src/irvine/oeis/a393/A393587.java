@@ -7,7 +7,7 @@ import irvine.oeis.ThreeParameterFormSequence;
 import irvine.oeis.a007.A007097;
 
 /**
- * A393587 allocated for Dominique Manchon.
+ * A393587 Matula-Goebel numbers of two-leaf rooted trees.
  * @author Sean A. Irvine
  */
 public class A393587 extends ThreeParameterFormSequence {

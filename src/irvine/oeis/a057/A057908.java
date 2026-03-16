@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A057908 Numbers n such that 4^n - n is prime.
+ * A057908 Numbers k such that 4^k - k is prime.
  * @author Sean A. Irvine
  */
 public class A057908 extends Sequence1 {

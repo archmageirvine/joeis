@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393798 allocated for Lei Zhou.
+ * A393798 a(n) is the least prime p such that a(n)-a(n-1) is a 3-smooth number, starting with a(1) = 2.
  * @author Sean A. Irvine
  */
 public class A393798 extends Sequence1 {

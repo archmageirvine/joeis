@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000396;
 
 /**
- * A393942 allocated for Jaroslav Krizek.
+ * A393942 Numbers m such that phi(m) is a perfect number (A000396).
  * @author Sean A. Irvine
  */
 public class A393942 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005132;
 
 /**
- * A393814 allocated for Benjamin Chaffin.
+ * A393814 Minimum value taken by Recam\u00e1n's sequence (A005132) between terms where A005132(k) mod k increases.
  * @author Sean A. Irvine
  */
 public class A393814 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.oeis.FilterSequence;
 
 /**
- * A068355 Odd n such that sigma(n)*tau(n)&gt;prime(2*n) where sigma(n) is the sum of divisors of n and tau(n) the number of divisors of n = A000005(n).
+ * A068355 Odd numbers k such that sigma(k)*tau(k) &gt; prime(2*k), where sigma(k) is the sum of divisors of k and tau(k) is the number of divisors of k.
  * @author Sean A. Irvine
  */
 public class A068355 extends FilterSequence {

@@ -3,26 +3,37 @@ package irvine.oeis.a053;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
  * A053818 a(n) = Sum_{k=1..n, gcd(n,k) = 1} k^2.
  * @author Georg Fischer
  */
-public class A053818 extends Sequence1 {
+public class A053818 extends Sequence1 implements DirectSequence {
 
-  private int mN = 0;
+  private long mN = 0;
 
   @Override
   public Z next() {
-    ++mN;
+    return a(++mN);
+  }
+
+  @Override
+  public Z a(final Z n) {
+    return a(n.longValueExact());
+  }
+
+  @Override
+  public Z a(final long n) {
     Z sum = Z.ZERO;
-    for (int k = 1; k <= mN; ++k) {
-      final long gd = Functions.GCD.l(mN, k);
+    for (int k = 1; k <= n; ++k) {
+      final long gd = Functions.GCD.l(n, k);
       if (gd == 1) {
         sum = sum.add(Z.valueOf(k).square());
       }
     }
     return sum;
   }
+
 }

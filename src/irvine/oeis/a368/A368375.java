@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a005.A005220;
 
 /**
- * A368375 Arises from enumeration of a certain class of partial knight&apos;s paths on the square grid.
+ * A368375 Arises from enumeration of a certain class of partial knight's paths on the square grid.
  * new A005220()
  * @author Georg Fischer
  */

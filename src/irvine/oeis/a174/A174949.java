@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393702.
+ * A174949 A symmetrical triangle sequence based on:q=2/12;t(n,m,q)=12*(Binomial[n, m]*(1 - q) + (((n + m + 1)!/((n + 1)!* m!)) + ((2*n - m + 1)!/((n + 1)!*(n - m)!)))*q).
  * @author Sean A. Irvine
  */
 public class A174949 extends Sequence0 {

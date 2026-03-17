@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a083.A083952;
 
 /**
- * A108783 Positions of 1&apos;s in A083952, where A083952 gives the integer coefficients a(n) of A(x), where a(n) = 1 or 2 for all n, such that A(x)^(1/2) has only integer coefficients.
+ * A108783 Positions of 1's in A083952, where A083952 gives the integer coefficients a(n) of A(x), where a(n) = 1 or 2 for all n, such that A(x)^(1/2) has only integer coefficients.
  * @author Georg Fischer
  */
 public class A108783 extends FilterPositionSequence {

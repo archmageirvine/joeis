@@ -30,21 +30,14 @@ public class A003120 extends Sequence1 {
     return RING_XY.create(Arrays.asList(RING_X.zero(), s1, s2, s3));
   }
 
-  private static Polynomial<Polynomial<Q>> innerTruncate(final Polynomial<Polynomial<Q>> p, final int truncate) {
-    final ArrayList<Polynomial<Q>> newCoeff = new ArrayList<>();
-    for (int k = 0; k <= p.degree(); ++k) {
-      newCoeff.add(p.coeff(k).truncate(truncate));
-    }
-    return RING_XY.create(newCoeff);
-  }
-
   private static Polynomial<Polynomial<Q>> expm1(final Polynomial<Polynomial<Q>> p, final int n) {
     Z f = Z.ONE;
     Polynomial<Polynomial<Q>> s = RING_XY.zero();
     if (!RING_XY.zero().equals(p)) {
       for (int k = 1; k <= n; ++k) {
         f = f.multiply(k);
-        s = RING_XY.add(s, RING_XY.multiply(innerTruncate(RING_XY.pow(p, k, n), n), RING_X.monomial(new Q(Z.ONE, f), 0)));
+        final Polynomial<Polynomial<Q>> p1 = RING_XY.pow(p, k, n);
+        s = RING_XY.add(s, RING_XY.multiply(PolynomialUtils.deepTruncate(p1, p1.degree(), n), RING_X.monomial(new Q(Z.ONE, f), 0)));
       }
     }
     return s;

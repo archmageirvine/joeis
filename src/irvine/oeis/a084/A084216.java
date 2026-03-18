@@ -15,16 +15,6 @@ public class A084216 extends Sequence1 {
   @Override
   public Z next() {
     mN += 2;
-//    for (long x = 1; x * x < mN; ++x) {
-//      final long dy2 = mN - x * x;
-//      for (long d = 1; d <= dy2; ++d) {
-//        if (dy2 % d == 0 && Predicates.SQUARE.is(dy2 / d)) {
-//          return Z.valueOf(d);
-//        }
-//      }
-//    }
-//    throw new UnsupportedOperationException();
-
     long d = 0;
     while (true) {
       ++d;

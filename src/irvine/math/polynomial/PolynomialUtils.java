@@ -452,4 +452,20 @@ public final class PolynomialUtils {
     }
     return sum;
   }
+
+  /**
+   * Truncate a bivariate polynomial in both variables.
+   * @param poly polynomial
+   * @param outer degree limit for outer variable
+   * @param inner degree limit for inner variable
+   * @param <E> type of polynomial
+   * @return truncated polynomial
+   */
+  public static <E> Polynomial<Polynomial<E>> deepTruncate(final Polynomial<Polynomial<E>> poly, final int outer, final int inner) {
+    final Polynomial<Polynomial<E>> res = poly.truncate(outer);
+    for (int k = 0; k <= res.degree(); ++k) {
+      res.set(k, poly.coeff(k).truncate(inner));
+    }
+    return res;
+  }
 }

@@ -1,5 +1,6 @@
 package irvine.oeis.a393;
 
+import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
@@ -21,13 +22,13 @@ public class A393702 extends Sequence0 {
   private int mN = -1;
   private long mM = 0;
 
-  private Z handle2p(final int n) {
+  private Z handleSemiprime(final int p, final int q) {
     // This could be generalized to handle semiprimes
 
     // n = 2 * p
     // We have patterns p, 2, 1 and 2*p, 1, 1
-    final Sequence omegan = new A033992(n);
-    final Sequence omegap = new A033992(n / 2);
+    final Sequence omegan = new A033992(p * q);
+    final Sequence omegap = new A033992(q);
     Z kn = omegan.next();
     Z kp = omegap.next();
     while (true) {
@@ -51,17 +52,21 @@ public class A393702 extends Sequence0 {
         kn = omegan.next();
       } else {
         final int om1 = Functions.OMEGA.i(kp.subtract(1));
-        final int om2 = Functions.OMEGA.i(kp.subtract(2));
-        if (om1 * om2 == 2) {
-          return kp.subtract(2);
+        if (om1 == 1 || om1 == p) {
+          final int om2 = Functions.OMEGA.i(kp.subtract(2));
+          if (om1 * om2 == p) {
+            return kp.subtract(2);
+          }
         }
         final int op1 = Functions.OMEGA.i(kp.add(1));
-        if (om1 * op1 == 2) {
+        if (om1 * op1 == p) {
           return kp.subtract(1);
         }
-        final int op2 = Functions.OMEGA.i(kp.add(2));
-        if (op1 * op2 == 2) {
-          return kp;
+        if (op1 == 1 || op1 == p) {
+          final int op2 = Functions.OMEGA.i(kp.add(2));
+          if (op1 * op2 == p) {
+            return kp;
+          }
         }
         kp = omegap.next();
       }
@@ -96,8 +101,14 @@ public class A393702 extends Sequence0 {
         }
       }
     }
-    if ((mN & 1) == 0 && Predicates.PRIME.is(mN / 2)) {
-      return handle2p(mN);
+    if (Functions.BIG_OMEGA.l(mN) == 2) {
+      // Semiprimes
+      final Z[] p = Jaguar.factor(mN).toZArray();
+      if (p.length == 1) {
+        return handleSemiprime(p[0].intValue(), p[0].intValue());
+      } else {
+        return handleSemiprime(p[0].intValue(), p[1].intValue());
+      }
     }
     while (mFirsts.get(mN) == 0) {
       final int omega = Functions.OMEGA.i(++mM) * Functions.OMEGA.i(mM + 1) * Functions.OMEGA.i(mM + 2);
@@ -106,5 +117,16 @@ public class A393702 extends Sequence0 {
       }
     }
     return Z.valueOf(mFirsts.get(mN));
+  }
+
+  /**
+   * Run a specific value.
+   * @param args value of n to run
+   */
+  public static void main(final String... args) {
+    final int n = Integer.parseInt(args[0]);
+    final A393702 s = new A393702();
+    s.mN = n - 1;
+    System.out.println(s.next());
   }
 }

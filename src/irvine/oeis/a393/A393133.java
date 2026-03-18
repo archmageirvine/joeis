@@ -1,8 +1,8 @@
 package irvine.oeis.a393;
 
-import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.Arrays;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -13,7 +13,6 @@ import irvine.oeis.Sequence1;
  */
 public class A393133 extends Sequence1 {
 
-  private static final String HEX = "0123456789abcdef";
   private static final MessageDigest MD5;
   static {
     try {
@@ -23,39 +22,35 @@ public class A393133 extends Sequence1 {
     }
   }
 
-  private static String md5(final String s) {
-    final byte[] bytesOfMessage = s.getBytes(StandardCharsets.UTF_8);
-    final StringBuilder sb = new StringBuilder();
+  private static byte[] md5(final byte[] s) {
     MD5.reset();
-    for (final byte b : MD5.digest(bytesOfMessage)) {
-      sb.append(HEX.charAt((b >>> 4) & 0xF));
-      sb.append(HEX.charAt(b & 0xF));
-    }
-    return sb.toString();
+    return MD5.digest(s);
   }
 
-  private Z mSmallest = Z.ONE.shiftLeft(128);
-  private String mPrev = "";
+  private byte[] mHash = new byte[0];
+  private byte[] mSmallest = new byte[16];
   private long mIterations = 0;
+  {
+    Arrays.fill(mSmallest, (byte) -1);
+  }
 
   @Override
   public Z next() {
     while (true) {
       ++mIterations;
-      mPrev = md5(mPrev);
-      System.out.println(mIterations + " " + mPrev);
-      final Z v = new Z(mPrev, 16);
-      if (v.compareTo(mSmallest) <= 0) {
-        if (v.equals(mSmallest)) {
-          // Actually this check is not strong enough to guarantee cycle
-          // detection, since we might enter a smaller cycle that does
-          // not contain the current largest value.  But short of doing
-          // a double step arrangement or remembering intermediate values
-          // this is the simplest test to try.
-          return null;
-        }
-        mSmallest = v;
-        //System.out.println("hash " + mPrev);
+      mHash = md5(mHash);
+      //System.out.println("hash 0x" + ByteUtils.toHex(mHash));
+      final int c = Arrays.compareUnsigned(mHash, mSmallest);
+      if (c == 0) {
+        // Actually this check is not strong enough to guarantee cycle
+        // detection, since we might enter a smaller cycle that does
+        // not contain the current largest value.  But short of doing
+        // a double step arrangement or remembering intermediate values
+        // this is the simplest test to try.
+        return null;
+      }
+      if (c < 0) {
+        mSmallest = mHash;
         return Z.valueOf(mIterations);
       }
     }

@@ -14,16 +14,16 @@ class Pochhammer extends AbstractFunction2 {
 
   @Override
   public Z z(final long n, final long m) {
-    if (n == 0) {
-      return Z.ZERO;
-    }
     if (m == 0) {
       return Z.ONE;
+    }
+    if (n == 0) {
+      return Z.ZERO;
     }
     if (n == 1) {
       return Functions.FACTORIAL.z(m);
     }
-    if (m > USE_FACTORIAL_M && n <= USE_FACTORIAL_N) {
+    if (n > 0 && m > USE_FACTORIAL_M && n <= USE_FACTORIAL_N) {
       return Functions.FACTORIAL.z(n + m - 1).divide(Functions.FACTORIAL.z(n - 1));
     }
     Z prod = Z.ONE;

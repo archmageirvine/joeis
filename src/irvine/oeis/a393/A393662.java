@@ -4,7 +4,7 @@ package irvine.oeis.a393;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A393662 A sequence arising from the 3-Bratteli diagram, a(n) = 3^(n - 3)*(16*n - 15), n&gt;=3.
+ * A393662 allocated for Tamilselvi Annamalai.
  * @author Georg Fischer
  */
 public class A393662 extends HolonomicRecurrence {

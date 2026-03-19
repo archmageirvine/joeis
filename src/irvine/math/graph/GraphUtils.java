@@ -1231,6 +1231,15 @@ public final class GraphUtils {
   }
 
   /**
+   * Compute the chromatic number of a graph.
+   * @param graph the graph
+   * @return chromatic number
+   */
+  public static int chromaticNumber(final Graph graph) {
+    return new ChromaticNumber(graph).chromaticNumber();
+  }
+
+  /**
    * Return the adjacency matrix for a graph.
    * @param graph the graph
    * @return adjacency matrix

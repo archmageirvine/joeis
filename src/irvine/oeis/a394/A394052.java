@@ -1,6 +1,5 @@
 package irvine.oeis.a394;
 
-import irvine.math.MemoryFunction1;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
@@ -19,20 +18,16 @@ public class A394052 extends Sequence1 {
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = 0;
   private int mM = 0;
-  private final MemoryFunction1<Polynomial<Z>> mB = new MemoryFunction1<>() {
-    @Override
-    protected Polynomial<Z> compute(final int n) {
-      return n == 0 ? RING.zero() : RING.add(get(n - 1), RING.monomial(Z.ONE, Functions.SIGMA0.i(n)));
-    }
-  };
+  private Polynomial<Z> mP = RING.zero();
 
   @Override
   public Z next() {
-    if (++mM > mB.get(mN).degree()) {
+    if (++mM > mP.degree()) {
       ++mN;
+      mP = RING.add(mP, RING.monomial(Z.ONE, Functions.SIGMA0.i(mN)));
       mM = 1;
     }
-    return mB.get(mN).coeff(mM);
+    return mP.coeff(mM);
   }
 }
 

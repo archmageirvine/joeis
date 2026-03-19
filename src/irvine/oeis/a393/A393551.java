@@ -4,18 +4,24 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393551: Number of irreducible independent-set complements on an n X k grid,
+ * A393551 allocated for Douglas Boffey.
  * @author Sean Irvine (Java port)
  */
 public class A393551 extends Sequence1 {
 
   // Port of Douglas Boffey's C++ implementation: https://oeis.org/A393551/a393551.cc.txt
 
+  private static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
+    String.valueOf(Runtime.getRuntime().availableProcessors())));
   private int mX = 0;
   private int mY = 0;
 
@@ -75,53 +81,74 @@ public class A393551 extends Sequence1 {
 
   private boolean connectedUnshaded(final int[] grid) {
     final int h = grid.length;
-    final boolean[][] visited = new boolean[h][mX];
-    int sx = -1;
-    int sy = -1;
-    outer:
-    for (int i = 0; i < h; ++i) {
-      for (int j = 0; j < mX; ++j) {
-        if (!bitSet(grid[i], j)) {
-          sx = i;
-          sy = j;
-          break outer;
-        }
+    final int mask = (1 << mX) - 1;
+
+    // Find first unshaded cell
+    int sr = -1;
+    int sc = -1;
+    for (int r = 0; r < h; ++r) {
+      final int unshaded = (~grid[r]) & mask;
+      if (unshaded != 0) {
+        sr = r;
+        sc = Integer.numberOfTrailingZeros(unshaded);
+        break;
       }
     }
-    if (sx < 0) {
+
+    if (sr < 0) {
       return false;
     }
-    final int[] qx = new int[h * mX];
-    final int[] qy = new int[h * mX];
-    int qs = 0;
-    int qe = 0;
-    qx[qe] = sx;
-    qy[qe++] = sy;
-    visited[sx][sy] = true;
-    final int[] dx = {1, -1, 0, 0};
-    final int[] dy = {0, 0, 1, -1};
-    while (qs < qe) {
-      final int x = qx[qs];
-      final int y = qy[qs++];
-      for (int k = 0; k < 4; ++k) {
-        final int nx = x + dx[k];
-        final int ny = y + dy[k];
-        if (nx >= 0 && ny >= 0 && nx < h && ny < mX) {
-          if (!visited[nx][ny] && !bitSet(grid[nx], ny)) {
-            visited[nx][ny] = true;
-            qx[qe] = nx;
-            qy[qe++] = ny;
+
+    // visited rows as bitmasks
+    final int[] vis = new int[h];
+    vis[sr] = 1 << sc;
+
+    boolean changed;
+    do {
+      changed = false;
+      for (int r = 0; r < h; ++r) {
+        int v = vis[r];
+        if (v == 0) {
+          continue;
+        }
+        final int allowed = (~grid[r]) & mask;
+        // horizontal expansion
+        int expand = v;
+        expand |= (expand << 1) & mask;
+        expand |= (expand >>> 1);
+        expand &= allowed;
+        if ((expand & ~vis[r]) != 0) {
+          vis[r] |= expand;
+          changed = true;
+        }
+        // vertical expansion
+        if (r > 0) {
+          int up = vis[r] & ((~grid[r - 1]) & mask);
+          if ((up & ~vis[r - 1]) != 0) {
+            vis[r - 1] |= up;
+            changed = true;
+          }
+        }
+
+        if (r + 1 < h) {
+          int down = vis[r] & ((~grid[r + 1]) & mask);
+          if ((down & ~vis[r + 1]) != 0) {
+            vis[r + 1] |= down;
+            changed = true;
           }
         }
       }
-    }
-    for (int i = 0; i < h; ++i) {
-      for (int j = 0; j < mX; ++j) {
-        if (!bitSet(grid[i], j) && !visited[i][j]) {
-          return false;
-        }
+
+    } while (changed);
+
+    // check all unshaded visited
+    for (int r = 0; r < h; ++r) {
+      int unshaded = (~grid[r]) & mask;
+      if ((unshaded & ~vis[r]) != 0) {
+        return false;
       }
     }
+
     return true;
   }
 
@@ -269,17 +296,34 @@ public class A393551 extends Sequence1 {
     buildRowStates();
     initFlipped();
 
-    final Set<String> uniq = new HashSet<>();
-    final int[] grid = new int[mY];
-
+    final ExecutorService pool = Executors.newFixedThreadPool(THREADS);
+    final List<Future<Set<String>>> futures = new ArrayList<>();
     for (int i = 0; i < mRowStates.size(); ++i) {
+      final int idx = i;
       final int top = mRowStates.get(i);
-      if (top <= mFlipped[top]) {
+      if (top > mFlipped[top]) {
+        continue;
+      }
+      futures.add(pool.submit(() -> {
+        final Set<String> local = new HashSet<>();
+        final int[] grid = new int[mY];
         grid[0] = top;
-        dfs(1, i, grid, uniq);
+        dfs(1, idx, grid, local);
+        return local;
+      }));
+    }
+
+    // merge results
+    final Set<String> uniq = new HashSet<>();
+    for (Future<Set<String>> f : futures) {
+      try {
+        uniq.addAll(f.get());
+      } catch (final InterruptedException | ExecutionException e) {
+        throw new RuntimeException(e);
       }
     }
 
+    pool.shutdown();
     return Z.valueOf(uniq.size());
   }
 }

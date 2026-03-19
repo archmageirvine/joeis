@@ -4,7 +4,7 @@ package irvine.oeis.a394;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A394120 G.f. A(x) satisfies A(x)^4 + (x-1)*A(x)^3 + 3*x*A(x)^2 + (x^2-x)*A(x) + x^2 = 0.
+ * A394120 G.f. A(x) satisfies A(x)^4+(x-1)*A(x)^3+3x*A(x)^2+(x^2-x)*A(x)^2+x^2=0.
  * G.f.A(x) satisfies A^4+(x-1)*A^3+3*x*A^2+(x^2-x)*A+x^2=0
  * @author Georg Fischer
  */

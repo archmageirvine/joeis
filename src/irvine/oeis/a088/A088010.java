@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A088010 Odd numbers n such that abs(sigma(n)-2n) &lt;= n^(1/3). Abundance-radius = abs(sigma(n)-2n) does not exceed cubic root of n and n is odd.
+ * A088010 Odd numbers k such that abs(sigma(k)-2k) &lt;= k^(1/3). Abundance-radius = abs(sigma(k)-2k) does not exceed cubic root of k and k is odd.
  * @author Georg Fischer
  */
 public class A088010 extends FilterNumberSequence {

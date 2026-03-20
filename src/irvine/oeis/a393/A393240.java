@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393240 allocated for Stefano Spezia.
+ * A393240 a(n) is the permanent of the n-th order Hankel matrix whose generic element is given by A000045(i+j-1) with i,j = 1, ..., n.
  * @author Sean A. Irvine
  */
 public class A393240 extends Sequence0 {

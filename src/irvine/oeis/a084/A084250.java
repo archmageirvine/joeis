@@ -9,7 +9,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A084250 Let a(1) = 1; for n&gt;1, let a(n) be smallest positive integer distinct from all earlier terms such that exp(sum(n&gt;=1,a(n)*x^n/n)) has integer coefficients (cf. A084251).
+ * A084250 Let a(1) = 1; for n&gt;1, let a(n) be smallest positive integer distinct from all earlier terms such that exp(Sum_{n&gt;=1} a(n)*x^n/n) has integer coefficients (cf. A084251).
  * @author Sean A. Irvine
  */
 public class A084250 extends AbstractSequence {

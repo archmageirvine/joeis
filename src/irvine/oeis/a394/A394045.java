@@ -8,7 +8,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a053.A053507;
 
 /**
- * A394045 allocated for M\u00e9lika Tebni.
+ * A394045 a(0) = 0, a(n) = Sum_{k=1..n} binomial(n+1, k+1)*A053507(k) for n &gt; 0.
  * @author Sean A. Irvine
  */
 public class A394045 extends Sequence0 {

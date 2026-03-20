@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A176063 Asymmetrical triangle sequence:t(n,m)=(-1)^m* Binomial[n, m] Pochhammer[ -n, m] - (-1)^n Pochhammer[ -n, n] + (-1)^( n - m)* Binomial[n, -m + n] Pochhammer[ -n, -m + n].
+ * A176063 Triangle read by rows: T(n,k) = (-1)^k * binomial(n,k) * pochhammer(-n,k) + (-1)^(n-k) * binomial(n,n-k) * pochhammer(-n,n-k) - n!.
  * @author Sean A. Irvine
  */
 public class A176063 extends Sequence0 {

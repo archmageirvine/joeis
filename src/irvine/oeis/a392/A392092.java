@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392092 allocated for Adam Karol Dra\u017cyk.
+ * A392092 a(n+1) = a(n) + 2*d(a(n)) if s(a(n)) &lt;= a(n), else 2*a(n) - s(a(n)), with a(1) = 2; d(k) is the number of divisors of k A000005 and s(k) is the aliquot sum of k A001065.
  * @author Sean A. Irvine
  */
 public class A392092 extends Sequence1 {

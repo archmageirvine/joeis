@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A387632 allocated for Natalia L. Skirrow.
+ * A387632 Triangle read by rows: T(n,k) is the number of connected endofunctions on [n] in which k nodes have no nonrecurrent preimages, n &gt;= 1, 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A387632 extends Sequence1 {

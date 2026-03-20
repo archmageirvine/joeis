@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.EgyptianFractionSequence;
 
 /**
- * A142725 Denominators of an Egyptian fraction for 1/Sqrt[17] = 0.242535625...
+ * A142725 Denominators of an Egyptian fraction for 1/sqrt(17) = 0.242535625...
  * @author Georg Fischer
  */
 public class A142725 extends EgyptianFractionSequence {

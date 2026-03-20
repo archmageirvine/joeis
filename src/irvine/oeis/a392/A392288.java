@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a130.A130092;
 
 /**
- * A392288 allocated for Michael De Vlieger.
+ * A392288 Nonsquarefree numbers whose canonical prime factorization has at least two prime power factors with equal exponents.
  * @author Sean A. Irvine
  */
 public class A392288 extends FilterSequence {

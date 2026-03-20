@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392195 allocated for Felix Huber.
+ * A392195 Positive integers with canonical prime factorization Product_{i=1..m} p_i^(p_i - p_{i-1}), where p_0 = 1.
  * @author Sean A. Irvine
  */
 public class A392195 extends Sequence1 {

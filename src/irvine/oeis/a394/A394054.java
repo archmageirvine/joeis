@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a237.A237271;
 
 /**
- * A394054 allocated for Omar E. Pol.
+ * A394054 Irregular triangle read by rows: T(n,k) is the number of positive integers &lt;= n with exactly k 2-dense sublists of divisors.
  * @author Sean A. Irvine
  */
 public class A394054 extends A237271 {

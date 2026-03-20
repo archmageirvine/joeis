@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394034 allocated for Clark Kimberling.
+ * A394034 Rectangular array, read by descending antidiagonals: numerators in the best lower approximating array to the golden ratio, phi (A001622). (See A394033.).
  * @author Sean A. Irvine
  */
 public class A394034 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A079345 Fibonacci(n) mod 16.
+ * A079345 a(n) = Fibonacci(n) mod 16.
  * @author Sean A. Irvine
  */
 public class A079345 extends LinearRecurrence {

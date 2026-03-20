@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000142;
 
 /**
- * A393254 allocated for Fan Yu.
+ * A393254 Smallest k such that both n! + k and n! + k + 2 are primes.
  * @author Sean A. Irvine
  */
 public class A393254 extends A000142 {

@@ -5,7 +5,7 @@ import irvine.oeis.a393.A393096;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A394061 allocated for Guy Siviour.
+ * A394061 Prime number produced by summing the distinct prime factors of the numbers in A393096.
  * @author Sean A. Irvine
  */
 public class A394061 extends SimpleTransformSequence {

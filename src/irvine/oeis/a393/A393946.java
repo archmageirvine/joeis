@@ -3,7 +3,7 @@ package irvine.oeis.a393;
 import irvine.oeis.a332.A332785;
 
 /**
- * A393946 allocated for Michael De Vlieger.
+ * A393946 Numbers that are neither squarefree nor squareful, with prime power factor exponents that are pairwise coprime.
  * @author Sean A. Irvine
  */
 public class A393946 extends A393999 {

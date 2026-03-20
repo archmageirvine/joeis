@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393573 allocated for Ryota Inagaki.
+ * A393573 Triangle read by rows, T(n, k) is the number of 3-dimensional balanced ballot paths of 3n steps and semisymmetric height of exactly 2k, where the semisymmetric height of point (x_1, x_2, x_3, x_4) is defined as h_3'(x) = 2*x_1 - 2*x_3 for 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A393573 extends Sequence1 {

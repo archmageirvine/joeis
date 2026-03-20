@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393123.
+ * A391640 a(n) is the hafnian of the 2n X 2n Hankel matrix whose generic element is given by A000045(i+j-1) with i,j = 1, ..., n.
  * @author Sean A. Irvine
  */
 public class A391640 extends Sequence0 {

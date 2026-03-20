@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394168 allocated for Jean-Marc Rebert.
+ * A394168 Smallest term of A392774 that starts a run of n consecutive terms with identical (tau, sigma).
  * @author Sean A. Irvine
  */
 public class A394168 extends Sequence1 {

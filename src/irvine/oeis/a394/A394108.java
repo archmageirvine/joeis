@@ -6,7 +6,7 @@ import irvine.oeis.a004.A004164;
 import irvine.oeis.a007.A007953;
 
 /**
- * A394108 allocated for Martin Raab.
+ * A394108 Numbers k that set a new record for A007953(k) - A004164(k).
  * @author Sean A. Irvine
  */
 public class A394108 extends RecordPositionSequence {

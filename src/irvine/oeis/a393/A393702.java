@@ -10,7 +10,7 @@ import irvine.oeis.a033.A033992;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A393702 allocated for Juri-Stepan Gerasimov.
+ * A393702 a(n) is the smallest k for which omega(k)*omega(k + 1)*omega(k + 2) = n where omega = A001221.
  * @author Sean A. Irvine
  */
 public class A393702 extends Sequence0 {

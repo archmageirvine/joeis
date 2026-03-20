@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393747 allocated for Dimana Pramatarova.
+ * A393747 Triangle read by rows: T(n, k) is the number of 3-dimensional balanced ballot paths of length 3n with exactly k semisymmetric peaks for 0 &lt;= k &lt; n if n &gt;=1 and for k=0 if n=0.
  * @author Sean A. Irvine
  */
 public class A393747 extends Sequence0 {

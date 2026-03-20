@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A393978 allocated for Robert Israel.
+ * A393978 Numbers x such that x^2 = y^2 + r for some y, where r is an anagram of y^2.
  * @author Sean A. Irvine
  */
 public class A393978 extends FilterNumberSequence {

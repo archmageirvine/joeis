@@ -4,7 +4,7 @@ package irvine.oeis.a365;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A365744 Number of perfect matchings on [2n] with n short pairs.
+ * A365744 Number of perfect matchings on [4n] with n short pairs.
  * @author Georg Fischer
  */
 public class A365744 extends HolonomicRecurrence {

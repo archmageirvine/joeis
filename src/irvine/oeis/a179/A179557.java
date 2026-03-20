@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A179557 a(1)=10; a(n)=a(n-1)*10 -/+ 1 (alternating).
+ * A179557 a(1)=10; a(n) = a(n-1)*10 - (-1)^n.
  * @author Sean A. Irvine
  */
 public class A179557 extends LinearRecurrence {

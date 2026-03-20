@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394216 allocated for Yury Belousov.
+ * A394216 Triangle read by rows: T(n,k) is the number of iterated snakes with n intersections and k tangential intersections.
  * @author Sean A. Irvine
  */
 public class A394216 extends Sequence0 {

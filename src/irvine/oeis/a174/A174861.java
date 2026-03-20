@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A174861 A symmetrical triangular sequence:t(n,m)=n!*(StirlingS1[n, m] + StirlingS1[n, n - m] - (StirlingS1[n, 0] + StirlingS1[n, n]) + 1) - n! + 1.
+ * A174861 Triangle read by rows: T(n,k) = n! * (Stirling1(n,k) + Stirling1(n,n-k) - 1) + 1 with T(0,0)=1.
  * @author Sean A. Irvine
  */
 public class A174861 extends Sequence0 {

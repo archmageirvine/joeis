@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393944 allocated for Felix Huber.
+ * A393944 Number of subsets of [n] in which exactly one third of the elements are primes and one third of the elements are squares.
  * @author Sean A. Irvine
  */
 public class A393944 extends Sequence0 {

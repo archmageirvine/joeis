@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a052.A052486;
 
 /**
- * A394000 allocated for Michael De Vlieger.
+ * A394000 Achilles numbers whose prime power factor exponents are not all pairwise coprime.
  * @author Sean A. Irvine
  */
 public class A394000 extends Sequence1 {

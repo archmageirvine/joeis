@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A084216 a(n) = smallest integer d such that a quadratic representation (2n+1)= x^2+ d*y^2 exists (x,y positive integers).
+ * A084216 a(n) = smallest integer d such that a quadratic representation 2n+1 = x^2 + d*y^2 exists (x,y positive integers).
  * @author Sean A. Irvine
  */
 public class A084216 extends Sequence1 {

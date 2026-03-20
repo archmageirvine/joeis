@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394222 allocated for Remco Havenaar.
+ * A394222 a(n) = n * gcd(5, n).
  * @author Sean A. Irvine
  */
 public class A394222 extends Sequence1 {

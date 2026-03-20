@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A234641 Odd numbers n such that sigma(sigma(n^2)) is odd.
+ * A234641 Odd numbers k such that sigma(sigma(k^2)) is odd.
  * @author Georg Fischer
  */
 public class A234641 extends FilterNumberSequence {

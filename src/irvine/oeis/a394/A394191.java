@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A394191 allocated for Ludovic Schwob.
+ * A394191 Total number of linear intervals in the weak order on the Coxeter group B_n.
  * @author Sean A. Irvine
  */
 public class A394191 extends Sequence2 {

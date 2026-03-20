@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393676 allocated for Clark Kimberling.
+ * A393676 a(n) = number of partitions of n into distinct parts such that if x and y are parts and x &lt; y then y - x != 2.
  * @author Sean A. Irvine
  */
 public class A393676 extends Sequence0 {

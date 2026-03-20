@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A394193 allocated for Ludovic Schwob.
+ * A394193 Irregular triangle read by rows: T(n,k) is the number of linear intervals of height k in the weak order on D_n (0 &lt;= k &lt;= n-1).
  * @author Sean A. Irvine
  */
 public class A394193 extends AbstractSequence {

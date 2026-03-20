@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A081505 Primes of form 4^n+3^n.
+ * A081505 Primes of form 4^k + 3^k.
  * @author Georg Fischer
  */
 public class A081505 extends PrimeSubsequence {

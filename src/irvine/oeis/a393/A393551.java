@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393551 allocated for Douglas Boffey.
+ * A393551 T(n,k) is the number of distinct enforceable unique-solution shadings in an n X k Hitori puzzle up to rotation and reflection, read by rows.
  * @author Sean Irvine (Java port)
  */
 public class A393551 extends Sequence1 {
@@ -107,7 +107,7 @@ public class A393551 extends Sequence1 {
     do {
       changed = false;
       for (int r = 0; r < h; ++r) {
-        int v = vis[r];
+        final int v = vis[r];
         if (v == 0) {
           continue;
         }
@@ -115,7 +115,7 @@ public class A393551 extends Sequence1 {
         // horizontal expansion
         int expand = v;
         expand |= (expand << 1) & mask;
-        expand |= (expand >>> 1);
+        expand |= expand >>> 1;
         expand &= allowed;
         if ((expand & ~vis[r]) != 0) {
           vis[r] |= expand;
@@ -123,7 +123,7 @@ public class A393551 extends Sequence1 {
         }
         // vertical expansion
         if (r > 0) {
-          int up = vis[r] & ((~grid[r - 1]) & mask);
+          final int up = vis[r] & ((~grid[r - 1]) & mask);
           if ((up & ~vis[r - 1]) != 0) {
             vis[r - 1] |= up;
             changed = true;
@@ -131,7 +131,7 @@ public class A393551 extends Sequence1 {
         }
 
         if (r + 1 < h) {
-          int down = vis[r] & ((~grid[r + 1]) & mask);
+          final int down = vis[r] & ((~grid[r + 1]) & mask);
           if ((down & ~vis[r + 1]) != 0) {
             vis[r + 1] |= down;
             changed = true;
@@ -143,7 +143,7 @@ public class A393551 extends Sequence1 {
 
     // check all unshaded visited
     for (int r = 0; r < h; ++r) {
-      int unshaded = (~grid[r]) & mask;
+      final int unshaded = (~grid[r]) & mask;
       if ((unshaded & ~vis[r]) != 0) {
         return false;
       }

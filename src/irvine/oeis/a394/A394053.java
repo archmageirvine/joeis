@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394053 allocated for Omar E. Pol.
+ * A394053 Irregular triangle read by rows: T(n,k) is the number of positive integers &lt;= n with k odd divisors.
  * @author Sean A. Irvine
  */
 public class A394053 extends Sequence1 {

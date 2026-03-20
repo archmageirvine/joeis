@@ -6,7 +6,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A393372 allocated for A.H.M. Smeets.
+ * A393372 Decimal expansion of the weight factor for Hermite-Gauss quadrature of degree 7 corresponding to abscissa A393368.
  * @author Sean A. Irvine
  */
 public class A393372 extends DecimalExpansionSequence {

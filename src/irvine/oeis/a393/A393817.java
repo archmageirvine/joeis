@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393817 allocated for Robert FERREOL.
+ * A393817 Return time for an n X n picture by the baker's map.
  * @author Sean A. Irvine
  */
 public class A393817 extends Sequence1 {

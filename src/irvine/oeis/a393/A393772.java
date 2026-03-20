@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A393772 allocated for Paul D. Hanna.
+ * A393772 Imaginary part of Sum_{n&gt;=0} (2*Pi*i + 1/2^n)^n / n!.
  * @author Sean A. Irvine
  */
 public class A393772 extends DecimalExpansionSequence {

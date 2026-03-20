@@ -3,7 +3,7 @@ package irvine.oeis.a394;
 import irvine.oeis.DifferenceSequence;
 
 /**
- * A394213 allocated for Yaroslav Deryavko.
+ * A394213 First differences of A394212.
  * @author Sean A. Irvine
  */
 public class A394213 extends DifferenceSequence {

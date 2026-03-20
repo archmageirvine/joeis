@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393796 allocated for Janaka Rodrigo.
+ * A393796 a(n) is the number of different ways to move from A to B along grid paths in an equilateral triangular grid ABC of side n units such that the distance between A and each successive point of the path increases.
  * @author Sean A. Irvine
  */
 public class A393796 extends Sequence0 {

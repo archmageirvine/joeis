@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterLambdaSequence;
 
 /**
- * A393096 allocated for Guy Siviour.
+ * A393096 Numbers k such that sopf(k) and k-sopf(k) are prime, where sopf() is the sum of distinct prime factors.
  * @author Sean A. Irvine
  */
 public class A393096 extends FilterLambdaSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A178438 Numbers n such that 10^n - 83 is prime.
+ * A178438 Numbers k such that 10^k - 83 is prime.
  * @author Georg Fischer
  */
 public class A178438 extends PrimePositionSubsequence {

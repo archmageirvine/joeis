@@ -6,7 +6,7 @@ import irvine.oeis.a005.A005282;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A394212 allocated for Yaroslav Deryavko.
+ * A394212 Difference set of Mian-Chowla sequence in order of appearance.
  * @author Sean A. Irvine
  */
 public class A394212 extends Sequence1 {

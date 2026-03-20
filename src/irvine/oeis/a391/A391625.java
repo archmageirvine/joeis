@@ -5,7 +5,7 @@ import irvine.oeis.a381.A381498;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A391625 allocated for Michael De Vlieger.
+ * A391625 Squarefree kernel of the sum of numbers k &lt;= n such that the squarefree kernel of k equals the squarefree kernel of n.
  * @author Sean A. Irvine
  */
 public class A391625 extends SimpleTransformSequence {

@@ -26,20 +26,18 @@ public class A385925 extends Sequence3 {
     Q min = new Q(mN);
     Q best = null;
     Q bestv = null;
-    //long bestm = 0;
     for (long m = 1; m < mN; ++m) {
       final Q v = new Q(m, mN);
-      for (long p = 1; p < mN; p = mPrime.nextPrime(p)) {
-        for (long q = 2; q < mN; q = mPrime.nextPrime(q)) {
+      for (long q = 2; q < mN; q = mPrime.nextPrime(q)) {
+        for (long p = 1; p < mN; p = mPrime.nextPrime(p)) {
           final Q r = new Q(p, q);
           final Q u = v.subtract(r).abs();
           if (!u.isZero()) {
             final int c = u.compareTo(min);
-            if (c < 0 /*|| (c == 0 && m > bestm)*/) {
+            if (c < 0) {
               min = u;
               best = r;
               bestv = v;
-              //bestm = m;
             }
           }
         }

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a305.A305161;
 
 /**
- * A318115 Number of compositions of n into exactly n nonnegative parts &lt;= 7.
+ * A318115 Number of compositions of n into exactly n nonnegative parts &lt;= seven.
  * @author Georg Fischer
  */
 public class A318115 extends A305161 {

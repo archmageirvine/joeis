@@ -1,14 +1,14 @@
 package irvine.oeis.a176;
 
-import irvine.math.z.Binomial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A176160 Triangle read by rows: T(n,k) = (1 + 4*binomial(n, k))^n.
+ * A176161 A polynomial coefficient sequence:p(x,n,m)=(1 + Eulerian[n+1, m]*x)^n.
  * @author Sean A. Irvine
  */
-public class A176160 extends Sequence0 {
+public class A176161 extends Sequence0 {
 
   private int mN = 0;
   private int mM = -1;
@@ -19,6 +19,6 @@ public class A176160 extends Sequence0 {
       ++mN;
       mM = 0;
     }
-    return Binomial.binomial(mN, mM).multiply(4).add(1).pow(mN);
+    return Functions.EULERIAN1.z(mN + 1, mM).add(1).pow(mN);
   }
 }

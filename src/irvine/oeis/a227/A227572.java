@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A227572 A sequence related to Le Corbusier&apos;s Modulor: round(phi^(-13 + n)*175).
+ * A227572 A sequence related to Le Corbusier's Modulor: round(phi^(-13 + n)*175).
  * @author Georg Fischer
  */
 public class A227572 extends LambdaSequence {

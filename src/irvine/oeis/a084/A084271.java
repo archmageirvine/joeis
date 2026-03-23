@@ -4,7 +4,7 @@ import irvine.oeis.Combiner;
 import irvine.oeis.a047.A047864;
 
 /**
- * A084269.
+ * A084271 Number of labeled 3-chromatic (i.e., chromatic number = 3) graphs on n nodes.
  * @author Sean A. Irvine
  */
 public class A084271 extends Combiner {

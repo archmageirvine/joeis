@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A228295 The &apos;Honeycomb&apos; or &apos;Beehive&apos; sequence: a(n) = ceiling(12^(1/4)*n).
+ * A228295 The 'Honeycomb' or 'Beehive' sequence: a(n) = ceiling(12^(1/4)*n).
  * @author Georg Fischer
  */
 public class A228295 extends LambdaSequence {

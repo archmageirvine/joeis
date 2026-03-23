@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A084269.
+ * A394350 Decimal expansion of Sum_{n&gt;=1} 1/(e^(2*Pi*n)-1).
  * @author Sean A. Irvine
  */
 public class A394350 extends DecimalExpansionSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000027;
 import irvine.oeis.a056.A056239;
 
 /**
- * A178503 n minus totally additive with a(p)=PrimePi(p), where PrimePi(n)=A000720(n).
+ * A178503 n minus totally additive with a(p) = PrimePi(p), where PrimePi = A000720.
  * @author Georg Fischer
  */
 public class A178503 extends AbstractSequence {

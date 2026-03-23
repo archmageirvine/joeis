@@ -8,7 +8,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a393.A393708;
 
 /**
- * A084269.
+ * A394224 Achilles numbers with more than 2 distinct prime factors, whose prime power factor exponents are pairwise coprime.
  * @author Sean A. Irvine
  */
 public class A394224 extends FilterSequence {

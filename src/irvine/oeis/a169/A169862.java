@@ -7,7 +7,6 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A169862 Decimal expansion of root of x^(x-1) = (x-1)^x.
- * Equation; x^(x-1)-((x-1)^x)
  * @author Georg Fischer
  */
 public class A169862 extends DecimalExpansionSequence {

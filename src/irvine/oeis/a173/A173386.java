@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002822;
 import irvine.oeis.a008.A008578;
 
 /**
- * A173386 The absolute values of n-th natural noncomposite number minus n-th number k such that 6*k-+1 is a twin prime pair.
+ * A173386 The absolute values of n-th natural noncomposite number minus n-th number k such that 6*k +- 1 is a twin prime pair.
  * @author Georg Fischer
  */
 public class A173386 extends Sequence1 {

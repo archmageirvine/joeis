@@ -6,7 +6,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A084269.
+ * A084279 Number of labeled 3-colorable (i.e., chromatic number &lt;= 3) graphs on n nodes.
  * @author Sean A. Irvine
  */
 public class A084279 extends ParallelGenerateGraphsSequence {

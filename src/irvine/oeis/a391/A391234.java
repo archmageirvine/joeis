@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391234 allocated for Steven Kotlarz.
+ * A391234 Diagonal of the 3-dimensional geode array: a(n) = G(n,n,n).
  * @author Sean A. Irvine
  */
 public class A391234 extends Sequence0 {

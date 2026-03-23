@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392920 allocated for Ludovic Schwob.
+ * A392920 Number of gapless Gog triangles of size n such that the corresponding alternating sign matrix is symmetric.
  * @author Sean A. Irvine
  */
 public class A392920 extends Sequence0 {

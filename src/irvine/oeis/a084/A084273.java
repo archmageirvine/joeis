@@ -6,7 +6,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A084269.
+ * A084273 Number of labeled connected 3-chromatic (i.e., chromatic number = 3) graphs on n nodes.
  * @author Sean A. Irvine
  */
 public class A084273 extends ParallelGenerateGraphsSequence {

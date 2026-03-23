@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A015775 Numbers n such that (phi(n) + 1) | sigma(n + 1), where phi is Euler's totient function A000010.
+ * A015775 Numbers j such that (phi(j) + 1) | sigma(j + 1), where phi is Euler's totient function A000010.
  * @author Sean A. Irvine
  */
 public class A015775 extends Sequence1 {

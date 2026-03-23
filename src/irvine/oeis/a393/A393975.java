@@ -5,7 +5,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A393975 allocated for Robert Israel.
+ * A393975 Primes that can be written as p + r where p is a prime and r is an anagram of p.
  * @author Sean A. Irvine
  */
 public class A393975 extends A000040 {

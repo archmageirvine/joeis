@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A394057 allocated for Dmitry Kamenetsky.
+ * A394057 Conjectured least positive integer k such that n^k has the largest average of digits and k&gt;1.
  * @author Sean A. Irvine
  */
 public class A394057 extends Sequence1 {

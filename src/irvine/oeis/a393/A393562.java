@@ -8,7 +8,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
 
 /**
- * A393562 a(n) is the number of unit squares in the square lattice, divided by 4, that have
+ * A393562 a(n) is the number of unit squares in the square lattice, divided by 4, that have at least one vertex strictly inside and at least one vertex strictly outside the circle x^2 + y^2 = n.
  * at least one vertex strictly inside and at least one vertex strictly outside the circle x^2 + y^2 = n.
  * @author Georg Fischer
  */

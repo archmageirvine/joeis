@@ -107,4 +107,3 @@ public abstract class UnaryCrFunction implements Serializable {
   }
 
 }
-

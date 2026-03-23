@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A394058 allocated for Dmitry Kamenetsky.
+ * A394058 Conjectured least integer k&gt;1 such that n^k has the smallest average of digits, or -1 if no such k exists.
  * @author Sean A. Irvine
  */
 public class A394058 extends Sequence1 {

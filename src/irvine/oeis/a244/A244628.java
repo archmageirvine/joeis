@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a017.A017101;
 
 /**
- * A244628 Composite numbers n such that n == 3 (mod 8) and 2^((n-1)/2) == -1 (mod n).
+ * A244628 Composite numbers k such that k == 3 (mod 8) and 2^((k-1)/2) == -1 (mod k).
  * @author Georg Fischer
  */
 public class A244628 extends FilterSequence {

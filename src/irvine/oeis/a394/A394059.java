@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394059 allocated for Michel Lagneau.
+ * A394059 a(n) is the smallest index k such that the subsequence b(k), b(k+1),..., b(k+n-1) is a palindrome of length n, where b(k) = prime(k) mod 6 = A039704(k).
  * @author Sean A. Irvine
  */
 public class A394059 extends Sequence1 {

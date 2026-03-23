@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A224299 Collatz problem with rational negative numbers: number of steps to reach the end of the cycle starting with 1/(2n+1) where n is negative (the initial term is not counted).
  * @author Sean A. Irvine
  */
-public class A224299 extends Sequence0 {
+public class A224299 extends Sequence1 {
 
   private long mN = 0;
 

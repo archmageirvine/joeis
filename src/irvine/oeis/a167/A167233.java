@@ -1,15 +1,34 @@
 package irvine.oeis.a167;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
+import irvine.util.Permutation;
 
 /**
- * A167233 Prime anagrams of 12345769.
- * @author Georg Fischer
+ * A167233
+ * @author Sean A. Irvine
  */
 public class A167233 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A167233() {
-    super(1, FINITE, 12345769, 12346597, 12354967, 12356749, 12356947, 12357649, 12359647, 12369547, 12374569, 12375469, 12394567, 12435679, 12436597, 12453769, 12453967, 12457639, 12457693, 12459673, 12463579, 12463597, 12469357);
+    super(1, FINITE, build());
+  }
+
+  private static List<Z> build() {
+    final Permutation perm = new Permutation(new int[] {1, 2, 3, 4, 5, 6, 7, 9});
+    final ArrayList<Z> res = new ArrayList<>();
+    int[] p;
+    while ((p = perm.next()) != null) {
+      final Z t = Permutation.permToZ(p);
+      if (t.isProbablePrime()) {
+        res.add(t);
+      }
+    }
+    return res;
   }
 }
+

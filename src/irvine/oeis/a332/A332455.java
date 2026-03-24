@@ -7,7 +7,7 @@ import irvine.oeis.a006.A006667;
 import irvine.oeis.a088.A088580;
 
 /**
- * A332455 Starting from sigma(n)+1, number of tripling steps to reach 1 in &apos;3x+1&apos; problem, or -1 if 1 is never reached.
+ * A332455 Starting from sigma(n)+1, number of tripling steps to reach 1 in '3x+1' problem, or -1 if 1 is never reached.
  * @author Georg Fischer
  */
 public class A332455 extends LambdaSequence {

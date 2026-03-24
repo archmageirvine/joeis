@@ -6,7 +6,7 @@ import irvine.oeis.a389.A389072;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A388286 M√∂bius transform of A325973, where A325973 is the arithmetic mean of {sum of unitary divisors} and {sum of squarefree divisors}.
+ * A388286 M\u00f6bius transform of A325973, where A325973 is the arithmetic mean of {sum of unitary divisors} and {sum of squarefree divisors}.
  * @author Georg Fischer
  */
 public class A388286 extends SingleTransformSequence {

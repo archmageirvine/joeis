@@ -10,7 +10,7 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A394473 allocated for Sean A. Irvine.
+ * A394474 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A394474 extends Sequence1 {

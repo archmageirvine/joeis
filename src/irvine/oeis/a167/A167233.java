@@ -8,7 +8,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.util.Permutation;
 
 /**
- * A167233
+ * A167233 Prime anagrams of 12345769.
  * @author Sean A. Irvine
  */
 public class A167233 extends FiniteSequence {

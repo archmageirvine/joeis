@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A264906 a(n) is the denominator of the 2nd term of the power series which is the loop length in a regular n-gon. (See comment.)
+ * A264906 a(n) is the denominator of the 2nd term of the power series which is the loop length in a regular n-gon. (See comment.).
  * @author Georg Fischer
  */
 public class A264906 extends LambdaSequence {

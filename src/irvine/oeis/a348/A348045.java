@@ -9,7 +9,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a252.A252463;
 
 /**
- * A348045 M√∂bius transform of A252463, where A252463 shifts the prime factorization of odd numbers one step towards smaller primes and divides even numbers by two.
+ * A348045 M\u00f6bius transform of A252463, where A252463 shifts the prime factorization of odd numbers one step towards smaller primes and divides even numbers by two.
  * @author Georg Fischer
  */
 public class A348045 extends LambdaSequence {

@@ -14,6 +14,7 @@ import irvine.util.array.DynamicLongArray;
  */
 public class A386016 extends Sequence1 {
 
+  private static final int PRECISION = -1000;
   private final DynamicLongArray mCounts = new DynamicLongArray();
   private final MemoryFunction1<CR> mPdf;
   private final int mStart;
@@ -49,7 +50,7 @@ public class A386016 extends Sequence1 {
     while (true) {
       final long c = mCounts.get(++k);
       final CR p = CR.valueOf(c + 1).divide(mPdf.get(k));
-      if (min == null || p.compareTo(min) < 0) {
+      if (min == null || p.compareTo(min, PRECISION) < 0) {
         min = p;
         argmin = k;
       }

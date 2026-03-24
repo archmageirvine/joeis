@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000796;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A392893.
+ * A392893 allocated for Carlos Magno.
  * @author Sean A. Irvine
  */
 public class A392893 extends Sequence0 {

@@ -32,6 +32,7 @@ public class PariProducer implements Producer {
       final ProcessBuilder pb = new ProcessBuilder(PARI_COMMAND, "--fast", "--version");
       try {
         final Process proc = pb.start();
+        proc.getOutputStream().close();
         final String res;
         // PARI version information is on standard error
         new DrainStreamThread(proc.getInputStream(), mVerbose);

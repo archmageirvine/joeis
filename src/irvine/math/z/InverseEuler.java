@@ -20,6 +20,15 @@ public class InverseEuler {
     return new InverseEuler().inversePhiC(m);
   }
 
+  /**
+   * Find solutions to the equation <code>phi(n) = m</code>.
+   * @param m euler value
+   * @return set of solutions
+   */
+  public static TreeSet<Z> inversePhi(final long m) {
+    return inversePhi(Z.valueOf(m));
+  }
+
   private final PrimeDivision mFactor = new PrimeDivision();
   private final Fast mPrime = new Fast();
   private final TreeSet<Z> mInverses = new TreeSet<>();

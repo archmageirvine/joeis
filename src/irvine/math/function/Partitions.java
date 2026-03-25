@@ -40,7 +40,7 @@ class Partitions extends AbstractFunction1 {
   }
 
   @Override
-  public Z z(final int n) {
+  public synchronized Z z(final int n) {
     if (n < 0) {
       return Z.ZERO;
     }
@@ -52,9 +52,6 @@ class Partitions extends AbstractFunction1 {
 
   @Override
   public Z z(final long n) {
-    if (n > Integer.MAX_VALUE) {
-      throw new UnsupportedOperationException();
-    }
-    return z((int) n);
+    return z(Math.toIntExact(n));
   }
 }

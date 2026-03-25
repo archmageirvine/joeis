@@ -55,6 +55,9 @@ public class MetaProducer implements Producer {
         case "gp":
           prods[++k] = new PariProducer();
           break;
+        case "m":
+          prods[++k] = new MapleProducer();
+          break;
         case "oeis":
         case "pseudo":
         case "ps":

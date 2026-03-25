@@ -23,7 +23,7 @@ class PrimorialCount extends AbstractFunction1 {
   private long mHighestPrimeInCache = 1;
 
   @Override
-  public Z z(final long n) {
+  public synchronized Z z(final long n) {
     if (n < mCache.size()) {
       return mCache.get((int) n);
     }

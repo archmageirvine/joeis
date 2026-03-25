@@ -54,7 +54,8 @@ class Factorial extends AbstractFunction1 {
   }
 
   @Override
-  public Z z(final int n) {
+  public synchronized Z z(final int n) {
+    // This method is synchronized because we cannot have multiple updates to the array at once
     if (n >= mFactorials.size()) {
       // Test if the new value is not too much longer than the existing table
       if (n <= mFactorials.size() + EXTEND) {

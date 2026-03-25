@@ -23,7 +23,7 @@ class BellNumbers extends AbstractFunction1 {
   }
 
   @Override
-  public Z z(final int n) {
+  public synchronized Z z(final int n) {
     if (n < 0) {
       throw new UnsupportedOperationException();
     }

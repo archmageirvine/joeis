@@ -10,7 +10,6 @@ final class ChromaticNumber {
 
   private final Graph mGraph;
   private int mBest;
-
   private final int[] mColor;
 
   ChromaticNumber(final Graph graph) {

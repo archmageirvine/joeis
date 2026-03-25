@@ -30,6 +30,7 @@ public class MapleProducer implements Producer {
       final ProcessBuilder pb = new ProcessBuilder(MAPLE_COMMAND);
       try {
         final Process proc = pb.start();
+        proc.getOutputStream().close();
         final String res;
         try (final InputStream is = proc.getInputStream()) {
           res = IOUtils.readAll(is);

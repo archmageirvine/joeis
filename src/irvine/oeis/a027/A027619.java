@@ -9,11 +9,13 @@ import irvine.oeis.a005.A005185;
  */
 public class A027619 extends A005185 {
 
+  private long mN = 0;
+
   @Override
   public Z next() {
-    while (!super.next().multiply2().equals(Z.valueOf(size() - 1))) {
+    while (!super.next().multiply2().equals(++mN)) {
       // do nothing
     }
-    return Z.valueOf(size() - 1);
+    return Z.valueOf(mN);
   }
 }

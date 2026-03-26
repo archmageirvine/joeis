@@ -3,7 +3,6 @@ package irvine.oeis.a175;
 
 import irvine.oeis.LambdaSequence;
 import irvine.oeis.a005.A005185;
-import irvine.oeis.memory.MemorySequence;
 
 /**
  * A175018 A005185(n)-floor(A005185(n)/2).
@@ -11,7 +10,7 @@ import irvine.oeis.memory.MemorySequence;
  */
 public class A175018 extends LambdaSequence {
 
-  private static final MemorySequence A005185 = new A005185();
+  private static final A005185 A005185 = new A005185();
 
   /** Construct the sequence. */
   public A175018() {

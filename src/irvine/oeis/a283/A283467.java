@@ -4,7 +4,6 @@ package irvine.oeis.a283;
 import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 import irvine.oeis.a005.A005185;
-import irvine.oeis.memory.MemorySequence;
 
 /**
  * A283467 a(n) = A005185(n+1-A005185(n)).
@@ -12,7 +11,7 @@ import irvine.oeis.memory.MemorySequence;
  */
 public class A283467 extends LambdaSequence {
 
-  private static final MemorySequence A005185 = new A005185();
+  private static final A005185 A005185 = new A005185();
 
   /** Construct the sequence. */
   public A283467() {

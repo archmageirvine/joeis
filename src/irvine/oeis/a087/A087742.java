@@ -4,7 +4,6 @@ package irvine.oeis.a087;
 import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 import irvine.oeis.a005.A005185;
-import irvine.oeis.memory.MemorySequence;
 
 /**
  * A087742 a(n) = 1 + abs(prime(A005185(n)) - A005185(prime(n))).
@@ -12,7 +11,7 @@ import irvine.oeis.memory.MemorySequence;
  */
 public class A087742 extends LambdaSequence {
 
-  private static final MemorySequence A005185 = new A005185();
+  private static final A005185 A005185 = new A005185();
 
   /** Construct the sequence. */
   public A087742() {

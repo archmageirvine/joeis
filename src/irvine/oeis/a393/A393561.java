@@ -3,16 +3,16 @@ package irvine.oeis.a393;
 import irvine.factor.prime.Fast;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence2;
 
 /**
  * A393561 allocated for Jean-Marc Rebert.
  * @author Sean A. Irvine
  */
-public class A393561 extends Sequence1 {
+public class A393561 extends Sequence2 {
 
   private final Fast mPrime = new Fast();
-  private int mN = 0;
+  private int mN = 1;
 
   private boolean is(final long p) {
     final Z s0 = Functions.SIGMA0.z(p + 1);
@@ -30,9 +30,7 @@ public class A393561 extends Sequence1 {
 
   @Override
   public Z next() {
-    if (++mN == 1) {
-      return Z.TWO;
-    }
+    ++mN;
     long q = 3;
     while (true) {
       final long p = q;

@@ -11,7 +11,9 @@ import irvine.util.Quadruple;
  * A394097.
  * @author Sean A. Irvine
  */
-public class A394097 extends Sequence1 {
+public class A394098 extends Sequence1 {
+
+  // Cf. A394097
 
   // We use a quadruple to hold (x,y), (u,v) the coordinate pairs of both points.
   // Further, we pretend that both points start at (0,0) and reflect in the vertical
@@ -19,13 +21,13 @@ public class A394097 extends Sequence1 {
   // second particle actually is.
   // We keep track of the number of ways of reaching a configuration (x,y,u,v).
 
-  private static final int[] DELTA_X = {1, 0,  1};
-  private static final int[] DELTA_Y = {0, 1, -1};
+  private static final int[] DELTA_X = {1, 0, -1};
+  private static final int[] DELTA_Y = {0, 1,  1};
 
   private int mN = 0;
 
   private void update(final HashMap<Quadruple<Integer>, Z> map, final Z value, final int x0, final int y0, final int x1, final int y1, final int u0, final int v0, final int u1, final int v1) {
-    if (x1 == mN - u1 - v1 && y1 == v1) {
+    if (x1 == mN - u1 - v1 && y1 == v1 && (x1 != 0 || y1 != mN)) {
       return; // end points coincide
     }
     // Check if particles traversed the same edge
@@ -41,7 +43,7 @@ public class A394097 extends Sequence1 {
 
   private boolean check(final int x0, final int y0, final int x1, final int y1) {
     // Check that particle remains inside the triangle.
-    if (y1 < 0 || x1 + y1 > mN || 2 * y1 > mN) {
+    if (x1 < 0 || y1 < 0 || x1 + y1 > mN || y1 > mN) {
       return false;
     }
     // Check the distance from the origin increases
@@ -73,11 +75,11 @@ public class A394097 extends Sequence1 {
         final int y = key.b();
         final int u = key.c();
         final int v = key.d();
-        if (x == mN && y == 0 && u == mN && v == 0) {
+        if (x == 0 && y == mN && u == 0 && v == mN) {
           // Both points are at end, contribute to the total sum.
           total = total.add(value);
           // No further extension of the paths occurs
-        } else if (x == mN && y == 0) {
+        } else if (x == 0 && y == mN) {
           // (x,y) is already complete, only update second point
           for (int k = 0; k < DELTA_X.length; ++k) {
             final int nu = u + DELTA_X[k];
@@ -86,7 +88,7 @@ public class A394097 extends Sequence1 {
               update(newCounts, value, x, y, x, y, u, v, nu, nv);
             }
           }
-        } else if (u == mN && v == 0) {
+        } else if (u == 0 && v == mN) {
           // (u,v) is already complete, only update first point
           for (int k = 0; k < DELTA_X.length; ++k) {
             final int nx = x + DELTA_X[k];
@@ -113,6 +115,7 @@ public class A394097 extends Sequence1 {
         }
       }
       counts = newCounts;
+      //dump(counts);
     }
     return total;
   }

@@ -9,6 +9,8 @@ import java.util.regex.Pattern;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
+import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
 /**
@@ -124,5 +126,22 @@ public final class QUtils {
       result.add(terms.getOrDefault(k, Q.ZERO));
     }
     return result;
+  }
+
+  /**
+   * Compute a binomial coefficient with a rational upper index.
+   * @param n upper index
+   * @param k lower index
+   * @return binomial coefficient
+   */
+  public static Q binomial(final Q n, final long k) {
+    if (n.isInteger()) {
+      return Q.valueOf(Binomial.binomial(n.toZ(), k));
+    }
+    Q prod = Q.ONE;
+    for (long j = 0; j < k; ++j) {
+      prod = prod.multiply(n.subtract(j));
+    }
+    return prod.divide(Functions.FACTORIAL.z(k));
   }
 }

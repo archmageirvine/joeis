@@ -1,5 +1,7 @@
 package irvine.oeis.a393;
 
+import java.util.Arrays;
+
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
@@ -29,18 +31,21 @@ public class A393833 extends Sequence1 {
         final int len = s0.intValueExact() - 1;
         if (mFirsts.get(len) == 0) {
           final long[] s = new long[len];
-          int k = 0;
-          for (final Z d : fs.divisorsSorted()) {
-            s[k] = d.mod(mN);
-            if (++k == s.length) {
-              break;
+          final int n = (len - 1) / 2;
+          if (n != 0) {
+            int k = 0;
+            for (final Z d : fs.divisorsSorted()) {
+              s[k] = d.mod(n);
+              if (++k == s.length) {
+                break;
+              }
             }
-          }
-          if (LongUtils.isPalindrome(s)) {
-            if (mVerbose) {
-              StringUtils.message("Solution for n=" + len / 2 + " is " + mM);
+            if (LongUtils.isPalindrome(s)) {
+              if (mVerbose) {
+                StringUtils.message("Solution for n=" + len / 2 + " is " + mM + " " + Arrays.toString(s));
+              }
+              mFirsts.set(len, mM);
             }
-            mFirsts.set(len, mM);
           }
         }
       }

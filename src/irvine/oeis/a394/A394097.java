@@ -1,6 +1,6 @@
 package irvine.oeis.a394;
 
-import irvine.math.MemoryFunctionInt4;
+import irvine.math.MemoryFunctionInt6;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -10,75 +10,76 @@ import irvine.oeis.Sequence1;
  */
 public class A394097 extends Sequence1 {
 
-  // todo this is somehow still plain wrong
+  // todo this is somehow wrong
 
   private int mN = 0;
-  private final MemoryFunctionInt4<Z> mB = new MemoryFunctionInt4<>() {
+  private final MemoryFunctionInt6<Z> mB = new MemoryFunctionInt6<>() {
     @Override
-    protected Z compute(final int x, final int y, final int u, final int v) {
+    protected Z compute(final int x, final int y, final int u, final int v, final int k, final int j) {
       if (y == v && x == mN - u - v) {
         // Points have collided
         // Note this reflects (u,v) in x-axis to (n-u-v,v)
         return Z.ZERO;
       }
       if (x == 0 && y == 0 && u == 0 && v == 0) {
-        return Z.ONE;
+        // break symmetry for situations where one path ends early
+        return k >= j ? Z.ONE : Z.ZERO;
       }
       Z sum = Z.ZERO;
       if (x == 0 && y == 0) {
         // (x,y) is already complete
         if (u > 0) {
-          sum = sum.add(get(x, y, u - 1, v));
+          sum = sum.add(get(x, y, u - 1, v, k, j + 1));
         }
         if (v > 0) {
-          sum = sum.add(get(x, y, u, v - 1));
+          sum = sum.add(get(x, y, u, v - 1, k, j + 1));
         }
         if (u > 0 && v < u - 1) {
-          sum = sum.add(get(x, y, u - 1, v + 1));
+          sum = sum.add(get(x, y, u - 1, v + 1, k, j + 1));
         }
       } else if (u == 0 && v == 0) {
         // (u,v) is already complete
         if (x > 0) {
-          sum = sum.add(get(x - 1, y, u, v));
+          sum = sum.add(get(x - 1, y, u, v, k + 1, j));
         }
         if (y > 0) {
-          sum = sum.add(get(x, y - 1, u, v));
+          sum = sum.add(get(x, y - 1, u, v, k + 1, j));
         }
         if (x > 0 && y < x - 1) {
-          sum = sum.add(get(x - 1, y + 1, u, v));
+          sum = sum.add(get(x - 1, y + 1, u, v, k + 1, j));
         }
       } else {
         if (x > 0) {
           if (u > 0 && !isSameEdge(x, y, x - 1, y, u, v, u - 1, v)) {
-            sum = sum.add(get(x - 1, y, u - 1, v));
+            sum = sum.add(get(x - 1, y, u - 1, v, k + 1, j + 1));
           }
           if (v > 0 && !isSameEdge(x, y, x - 1, y, u, v, u, v - 1)) {
-            sum = sum.add(get(x - 1, y, u, v - 1));
+            sum = sum.add(get(x - 1, y, u, v - 1, k + 1, j + 1));
           }
           if (u > 0 && v < u - 1 && !isSameEdge(x, y, x - 1, y, u, v, u - 1, v + 1)) {
-            sum = sum.add(get(x - 1, y, u - 1, v + 1));
+            sum = sum.add(get(x - 1, y, u - 1, v + 1, k + 1, j + 1));
           }
         }
         if (y > 0) {
           if (u > 0 && !isSameEdge(x, y, x, y - 1, u, v, u - 1, v)) {
-            sum = sum.add(get(x, y - 1, u - 1, v));
+            sum = sum.add(get(x, y - 1, u - 1, v, k + 1, j + 1));
           }
           if (v > 0 && !isSameEdge(x, y, x, y - 1, u, v, u, v - 1)) {
-            sum = sum.add(get(x, y - 1, u, v - 1));
+            sum = sum.add(get(x, y - 1, u, v - 1, k + 1, j + 1));
           }
           if (u > 0 && v < u - 1 && !isSameEdge(x, y, x, y - 1, u, v, u - 1, v + 1)) {
-            sum = sum.add(get(x, y - 1, u - 1, v + 1));
+            sum = sum.add(get(x, y - 1, u - 1, v + 1, k + 1, j + 1));
           }
         }
         if (x > 0 && y < x - 1) {
           if (u > 0 && !isSameEdge(x, y, x - 1, y + 1, u, v, u - 1, v)) {
-            sum = sum.add(get(x - 1, y + 1, u - 1, v));
+            sum = sum.add(get(x - 1, y + 1, u - 1, v, k + 1, j + 1));
           }
           if (v > 0 && !isSameEdge(x, y, x - 1, y + 1, u, v, u, v - 1)) {
-            sum = sum.add(get(x - 1, y + 1, u, v - 1));
+            sum = sum.add(get(x - 1, y + 1, u, v - 1, k + 1, j + 1));
           }
           if (u > 0 && v < u - 1 && !isSameEdge(x, y, x - 1, y + 1, u, v, u - 1, v + 1)) {
-            sum = sum.add(get(x - 1, y + 1, u - 1, v + 1));
+            sum = sum.add(get(x - 1, y + 1, u - 1, v + 1, k + 1, j + 1));
           }
         }
       }
@@ -86,9 +87,9 @@ public class A394097 extends Sequence1 {
     }
 
     @Override
-    public Z get(final int a, final int b, final int c, final int d) {
-      final Z t = super.get(a, b, c, d);
-      System.out.println("(" + a + "," + b + "), (" + (mN - c - d) + "," + d + ") = " + t);
+    public Z get(final int a, final int b, final int c, final int d, final int k, final int j) {
+      final Z t = super.get(a, b, c, d, k, j);
+      System.out.println("(" + a + "," + b + "), (" + (mN - c - d) + "," + d + ") = " + t + " [" + k + "," + j + "]");
       return t;
     }
   };
@@ -103,7 +104,7 @@ public class A394097 extends Sequence1 {
   @Override
   public Z next() {
     mB.clear(); // Depends on n, so reset
-    return mB.get(++mN, 0, mN, 0);
+    return mB.get(++mN, 0, mN, 0, 0, 0);
   }
 }
 

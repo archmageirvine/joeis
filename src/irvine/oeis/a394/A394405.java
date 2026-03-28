@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000798;
 import irvine.oeis.a006.A006905;
 
 /**
- * A394405 allocated for Firdous Ahmad Mala.
+ * A394405 Number of transitive relations, on an n-set, that are not quasi-orders.
  * @author Sean A. Irvine
  */
 public class A394405 extends Combiner {

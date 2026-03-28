@@ -5,7 +5,7 @@ package irvine.oeis.a263;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A263823 a(n) = n!*Sum_{k=0..n} Fibonacci(k-1)/k!, where Fibonacci(-1) = 1, Fibonacci(n) = A000045(n) for n&gt;=0.
+ * A263823 a(n) = n! * Sum_{k=0..n} Fibonacci(k-1)/k!, where Fibonacci(-1) = 1, Fibonacci(n) = A000045(n) for n&gt;=0.
  * @author Georg Fischer
  */
 public class A263823 extends HolonomicRecurrence {

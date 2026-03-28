@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A394051 allocated for Marco Mantovanelli.
+ * A394051 Hofstadter Q-sequence perturbed by (-1)^n.
  * @author Sean A. Irvine
  */
 public class A394051 extends CachedSequence {

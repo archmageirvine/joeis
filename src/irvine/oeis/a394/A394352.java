@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394352 allocated for Robert Israel.
+ * A394352 a(n) is the least positive k such that n and 10^n - k are coprime.
  * @author Sean A. Irvine
  */
 public class A394352 extends Sequence1 {

@@ -10,7 +10,7 @@ import irvine.util.array.DynamicArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A393561 allocated for Jean-Marc Rebert.
+ * A394457 Least Lucas-Carmichael number (A006972) that is the product of exactly n primes congruent to 1 modulo 4.
  * @author Sean A. Irvine
  */
 public class A394457 extends Sequence3 {

@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A394469 allocated for Amiram Eldar.
+ * A394469 Decimal expansion of the average reciprocal of Euclidean distance between two randomly picked points, one of which is located in a unit cube and the other in an adjacent unit cube, both axis-parallel, with the two cubes sharing one common vertex.
  * @author Sean A. Irvine
  */
 public class A394469 extends DecimalExpansionSequence {

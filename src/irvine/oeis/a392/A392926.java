@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a390.A390949;
 
 /**
- * A392926 allocated for Michael De Vlieger.
+ * A392926 Numbers that are neither squarefree nor squareful, with at least 1 repeated exponent of prime power factors.
  * @author Sean A. Irvine
  */
 public class A392926 extends FilterSequence {

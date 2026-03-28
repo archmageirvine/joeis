@@ -4,7 +4,7 @@ import irvine.oeis.PartialProductSequence;
 import irvine.oeis.a062.A062481;
 
 /**
- * A076955 Product_{i=1..n} i^prime(i).
+ * A076955 a(n) = Product_{i=1..n} i^prime(i).
  * @author Sean A. Irvine
  */
 public class A076955 extends PartialProductSequence {

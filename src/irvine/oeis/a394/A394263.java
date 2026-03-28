@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000796;
 
 /**
- * A394263 allocated for Pontus von Br\u00f6mssen.
+ * A394263 Positive integers k for which the Euclidean distance between the vector of proportions of the first k decimal digits of Pi and the uniform distribution (1/10, ..., 1/10) sets a new minimum.
  * @author Sean A. Irvine
  */
 public class A394263 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A176161 A polynomial coefficient sequence:p(x,n,m)=(1 + Eulerian[n+1, m]*x)^n.
+ * A176161 Triangle read by rows: T(n,k) = (1 + Eulerian(n+1, k))^n.
  * @author Sean A. Irvine
  */
 public class A176161 extends Sequence0 {

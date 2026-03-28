@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a079.A079502;
 
 /**
- * A006326 Total preorders.
+ * A006326 Number of total preorders on a n-set.
  * @author Sean A. Irvine
  */
 public class A006326 extends A079502 {

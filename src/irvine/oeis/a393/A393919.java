@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a391.A391625;
 
 /**
- * A393919 allocated for Michael De Vlieger.
+ * A393919 Nonsquarefree k such that rad(Sum({m &lt;= k : rad(m) = rad(k)})) = rad(k), where rad = A007947.
  * @author Sean A. Irvine
  */
 public class A393919 extends A391625 {

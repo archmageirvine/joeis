@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.a381.A381617;
 
 /**
- * A394401 allocated for Jwalin Bhatt.
+ * A394401 A sequence constructed by greedily sampling the probability distribution given by 1/log_2(i+1) - 1/log_2(i+2) to minimize discrepancy.
  * @author Sean A. Irvine
  */
 public class A394401 extends A381617 {

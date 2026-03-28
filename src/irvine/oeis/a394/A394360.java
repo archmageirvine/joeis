@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394360 allocated for Thierry London.
+ * A394360 Smallest number which can be written as the sum of n distinct primes in at least n different ways.
  * @author Sean A. Irvine
  */
 public class A394360 extends Sequence1 {

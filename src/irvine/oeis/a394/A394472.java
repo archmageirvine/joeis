@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A394472 allocated for Ahmad J. Masad.
+ * A394472 a(n) = Product_{k=1..n} (2*prime(n)-prime(k)).
  * @author Sean A. Irvine
  */
 public class A394472 extends A000040 {

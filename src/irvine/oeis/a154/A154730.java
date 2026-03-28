@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a033.A033308;
 
 /**
- * A154730 Decimal expansion of 1 minus the Copeland-Erdos constant.
+ * A154730 Decimal expansion of 1 minus the Copeland-Erd\u0151s constant.
  * @author Georg Fischer
  */
 public class A154730 extends A033308 {

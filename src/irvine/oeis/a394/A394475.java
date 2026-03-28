@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A305213.
+ * A394475 Number of distinct primes not dividing n that are adjacent to a divisor of n.
  * @author Sean A. Irvine
  */
 public class A394475 extends Sequence1 {

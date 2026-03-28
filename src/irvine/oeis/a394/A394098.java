@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Quadruple;
 
 /**
- * A394097.
+ * A394098 allocated for Janaka Rodrigo.
  * @author Sean A. Irvine
  */
 public class A394098 extends Sequence1 {
@@ -28,7 +28,7 @@ public class A394098 extends Sequence1 {
 
   private void update(final HashMap<Quadruple<Integer>, Z> map, final Z value, final int x0, final int y0, final int x1, final int y1, final int u0, final int v0, final int u1, final int v1) {
     if (x1 == mN - u1 - v1 && y1 == v1 && (x1 != 0 || y1 != mN)) {
-      return; // end points coincide
+      return; // end points coincide (except for the final target point)
     }
     // Check if particles traversed the same edge
     // We only need this one way round because we already know (x0,y0) != (u0,v0)

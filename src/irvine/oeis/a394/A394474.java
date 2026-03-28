@@ -10,7 +10,7 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A394474 allocated for Sean A. Irvine.
+ * A394474 Triangle read by rows: T(n,k) is the number of connected simple graphs on n labeled nodes having chromatic number k, 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A394474 extends Sequence1 {

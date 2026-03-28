@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A393561 allocated for Jean-Marc Rebert.
+ * A393561 Smallest prime p such that p+1 starts a run of exactly n consecutive numbers having exactly the same number of divisors.
  * @author Sean A. Irvine
  */
 public class A393561 extends Sequence2 {

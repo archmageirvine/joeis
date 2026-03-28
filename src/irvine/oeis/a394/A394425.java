@@ -6,7 +6,7 @@ import irvine.oeis.a046.A046100;
 import irvine.oeis.a049.A049419;
 
 /**
- * A394425 allocated for Amiram Eldar.
+ * A394425 The number of exponential divisors of the biquadratefree numbers.
  * @author Sean A. Irvine
  */
 public class A394425 extends A046100 {

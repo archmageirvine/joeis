@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A305213.
+ * A394471 Primes of the form prime(k) + prime(k+2) - 1, where prime(k) is the k-th prime.
  * @author Sean A. Irvine
  */
 public class A394471 extends A000040 {

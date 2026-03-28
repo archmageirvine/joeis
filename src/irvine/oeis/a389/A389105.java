@@ -8,7 +8,7 @@ import irvine.oeis.a381.A381466;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A389105 allocated for Sam Chapman.
+ * A389105 a(n) is the smallest value of k such that gcd(A381466(k-1), k) = n.
  * @author Sean A. Irvine
  */
 public class A389105 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A394356 allocated for Clark Kimberling.
+ * A394356 a(n) = numerator m of the prime-fraction m/n that most closely approximates p/q as in A394354.
  * @author Sean A. Irvine
  */
 public class A394356 extends A394354 {

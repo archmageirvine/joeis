@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394446 allocated for F. Chapoton.
+ * A394446 Triangle T(n,k), where row n lists the coefficients of the n-th palindromic polynomial p(n) defined by a recurrence of order 2.
  * @author Sean A. Irvine
  */
 public class A394446 extends Sequence0 {

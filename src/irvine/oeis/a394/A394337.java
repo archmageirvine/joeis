@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence2;
 
 /**
- * A394337 allocated for Steven Lu.
+ * A394337 The largest prime p which is less than n^2 and n is a primitive root modulo p, or 0 if n is a square.
  * @author Sean A. Irvine
  */
 public class A394337 extends Sequence2 {

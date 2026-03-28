@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a019.A019434;
 
 /**
- * A393485 allocated for Arkadiusz Wesolowski.
+ * A393485 Areas of Heron triangles whose sides all have prime power lengths.
  * @author Sean A. Irvine
  */
 public class A393485 extends A019434 {

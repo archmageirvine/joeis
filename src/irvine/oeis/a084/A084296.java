@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A084296 Triangle: number of distinct prime factors in n-th primorial numbers when n prime factors first appears and in n-1 subsequent integers after.
+ * A084296 Triangle read by rows: T(n,k) = omega(prime(n)#+k) where prime(n)# is the n-th primorial (A002110) and omega is the number of distinct prime factors (A001221), 0 &lt;= k &lt; n.
  * @author Sean A. Irvine
  */
 public class A084296 extends Sequence0 {

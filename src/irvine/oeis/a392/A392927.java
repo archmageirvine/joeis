@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a393.A393708;
 
 /**
- * A392927 allocated for Michael De Vlieger.
+ * A392927 Achilles numbers k with at least 1 repeated exponent of prime power factors.
  * @author Sean A. Irvine
  */
 public class A392927 extends FilterSequence {

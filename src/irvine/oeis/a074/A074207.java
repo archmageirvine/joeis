@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A074207 Numbers n such that the sum of the first n primes divides n!.
+ * A074207 Numbers k such that the sum of the first k primes divides k!.
  * @author Sean A. Irvine
  */
 public class A074207 extends A000040 {

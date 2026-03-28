@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a163.A163300;
 /**
- * A174008 n-th prime plus n-th even nonnegative nonprime.
+ * A174008 a(n) = n-th prime plus n-th even nonnegative nonprime.
  * @author Georg Fischer
  */
 public class A174008 extends Sequence1 {

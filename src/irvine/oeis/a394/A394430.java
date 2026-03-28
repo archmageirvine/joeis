@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A394430 allocated for Miles Englezou.
+ * A394430 Totient numbers k for which there does not exist an m = p^e or 2*p^e, p an odd prime and e &gt;= 1, such that phi(m) = k.
  * @author Sean A. Irvine
  */
 public class A394430 extends FilterNumberSequence {

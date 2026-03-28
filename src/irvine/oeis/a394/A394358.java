@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A394358 allocated for Mecibah Mohammed.
+ * A394358 Integers k such that 8*k^2 + m*k is a pronic number (A002378) for some m in {-6, -2, 2, 6}.
  * @author Sean A. Irvine
  */
 public class A394358 extends FilterNumberSequence {

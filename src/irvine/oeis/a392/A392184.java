@@ -1,4 +1,4 @@
-package irvine.oeis.a393;
+package irvine.oeis.a392;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
@@ -10,13 +10,10 @@ import irvine.oeis.a033.A033992;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A393702 a(n) is the smallest k for which omega(k)*omega(k + 1)*omega(k + 2) = n where omega = A001221.
+ * A392184 a(n) is the least k for which omega(k)*omega(k + 1)*omega(k + 2) = n where omega = A001221, or -1 if no such k exists.
  * @author Sean A. Irvine
  */
-public class A393702 extends Sequence0 {
-
-  // This probably needs to be more sophisticated to get a(22)
-  //  - it would need patterns which are permutations of 22, 1, 1 or 11, 2, 1
+public class A392184 extends Sequence0 {
 
   private final DynamicLongArray mFirsts = new DynamicLongArray();
   private int mN = -1;
@@ -125,7 +122,7 @@ public class A393702 extends Sequence0 {
    */
   public static void main(final String... args) {
     final int n = Integer.parseInt(args[0]);
-    final A393702 s = new A393702();
+    final A392184 s = new A392184();
     s.mN = n - 1;
     System.out.println(s.next());
   }

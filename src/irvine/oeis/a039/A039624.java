@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004601;
 
 /**
- * A039624 Numbers n such that there are equal numbers of 0's and 1's in first n digits of binary representation of Pi.
+ * A039624 Numbers k such that there are equal numbers of 0's and 1's in first k digits of binary representation of Pi.
  * @author Sean A. Irvine
  */
 public class A039624 extends A004601 {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Quadruple;
 
 /**
- * A394097.
+ * A394097 allocated for Janaka Rodrigo.
  * @author Sean A. Irvine
  */
 public class A394097 extends Sequence1 {

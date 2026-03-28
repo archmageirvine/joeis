@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393179 allocated for Juri-Stepan Gerasimov.
+ * A393179 Number of k &lt;= 2^(n-1) such that tau(k) = n where tau = A000005.
  * @author Sean A. Irvine
  */
 public class A393179 extends Sequence1 {

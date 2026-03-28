@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A176565 A symmetrical triangle:t(n,m)=Binomial[PartitionsP[n] + m, m] + Binomial[PartitionsP[n] + n - m, n - m] - (Binomial[PartitionsP[n] + 0, 0] + Binomial[PartitionsP[ n] + n - 0, n - 0]) + 1.
+ * A176565 Triangle read by rows: T(n,k) = binomial(P(n)+k,k) + binomial(P(n)+n-k,n-k) - binomial(P(n)+n,n) where P(n) = A000041(n) is the number of partitions of n.
  * @author Sean A. Irvine
  */
 public class A176565 extends Sequence0 {

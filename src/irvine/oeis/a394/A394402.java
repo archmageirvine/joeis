@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394315 Numbers k such that sigma(k) = psi(k) + pi(k) + Omega(k)^6.
+ * A394402 Numbers k such that sigma(k) = psi(k) + pi(k) + Omega(k)^7.
  * @author Sean A. Irvine
  */
 public class A394402 extends Sequence1 {

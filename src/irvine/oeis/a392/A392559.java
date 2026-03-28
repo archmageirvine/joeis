@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392559 allocated for Alex Ratushnyak.
+ * A392559 Numbers x such that for some y, a divisor of x such that 1&lt;y&lt;x, the following four numbers are prime: x*y+1, x*y-1, x/y+1, x/y-1.
  * @author Sean A. Irvine
  */
 public class A392559 extends Sequence1 {

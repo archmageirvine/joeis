@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000796;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A392893 allocated for Carlos Magno.
+ * A392893 Number of distinct nonempty substrings in the first 10^n digits of the decimal expansion of Pi.
  * @author Sean A. Irvine
  */
 public class A392893 extends Sequence0 {

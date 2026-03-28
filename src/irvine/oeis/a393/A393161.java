@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a386.A386016;
 
 /**
- * A393161 allocated for Jwalin Bhatt.
+ * A393161 A sequence constructed by greedily sampling the Hermite distribution, with both parameters as 1, to minimize ratio discrepancy. The distribution indexing is adjusted to be strictly decreasing and support all positive integers.
  * @author Sean A. Irvine
  */
 public class A393161 extends A386016 {

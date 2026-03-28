@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A305213.
+ * A305213 a(n) is the smallest nonnegative integer whose first n binary digits coincide with its first n decimal digits.
  * @author Sean A. Irvine
  */
 public class A305213 extends Sequence1 {

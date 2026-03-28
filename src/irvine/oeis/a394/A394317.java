@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
 
 /**
- * A394317 allocated for Rhys Evans.
+ * A394317 Concatenated permutations of integers in decimal.
  * @author Sean A. Irvine
  */
 public class A394317 extends Sequence0 {

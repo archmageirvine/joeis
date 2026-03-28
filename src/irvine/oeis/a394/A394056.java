@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A305213.
+ * A394056 Number of positive integers &lt;= n with 4 divisors.
  * @author Sean A. Irvine
  */
 public class A394056 extends Sequence1 {

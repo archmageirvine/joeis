@@ -21,10 +21,10 @@ public class A051037 extends Sequence1 {
   }
 
   /**
-   * Generic Constructor with parameter
+   * Generate numbers containing only primes from the given set.
    * @param primes list of primes
    */
-  protected A051037(final int[] primes) {
+  public A051037(final int[] primes) {
     mPrimes = primes;
     mPriority.add(Z.ONE);
   }

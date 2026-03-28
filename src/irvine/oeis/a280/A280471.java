@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A280471 Solutions to the Gamow-Stern Elevator Problem, a(n) = ceiling((log_10(5))/(log_10 (1+2/(n-2)))) for n &gt;= 3.
+ * A280471 Solutions to the Gamow-Stern Elevator Problem, a(n) = ceiling((log_10(5))/(log_10(1+2/(n-2)))) for n &gt;= 3.
  * @author Georg Fischer
  */
 public class A280471 extends LambdaSequence {

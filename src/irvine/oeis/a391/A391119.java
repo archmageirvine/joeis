@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391119 allocated for Michael Shanahan.
+ * A391119 allocated for Karol A. Penson.
  * @author Sean A. Irvine
  */
 public class A391119 extends Sequence0 {

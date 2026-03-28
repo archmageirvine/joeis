@@ -4,7 +4,7 @@ package irvine.oeis.a072;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A072845 {1, 3, 7, 9} -&gt; Mod[ {1*{1, 3, 7, 9}, 3*{1, 3, 7, 9}, 7*{1, 3, 7, 9}, 9*{1, 3, 7, 9}}, 10}.
+ * A072845 Let S(1) = {1, 3, 7, 9}, S(n) be obtained from S(n-1) via 1 -&gt; {1, 3, 7, 9}, 3 -&gt; {3, 9, 1, 7}, 7 -&gt; {7, 1, 9, 3}, 9 -&gt; {9, 7, 3, 1}, then this sequence is the concatenation of S(1), S(2), ...
  * @author Georg Fischer
  */
 public class A072845 extends MorphismFixedPointSequence {

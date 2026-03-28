@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A305213.
+ * A394496 Decimal expansion of (1/2)*Sum_{n&gt;=3} (1 - n*sin(2*Pi/n)/(2*Pi)).
  * @author Sean A. Irvine
  */
 public class A394496 extends DecimalExpansionSequence {

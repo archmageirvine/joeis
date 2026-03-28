@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394031 allocated for Aleksei Udovenko.
+ * A394031 Maximum size of a subset of GF(2)^n being a Sidon set.
  * @author Sean A. Irvine
  */
 public class A394031 extends Sequence1 {

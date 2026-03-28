@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393128 allocated for M. F. Hasler.
+ * A393128 Positive integers not of the form floor(k + log(k) + log(Pi)).
  * @author Sean A. Irvine
  */
 public class A393128 extends Sequence1 {

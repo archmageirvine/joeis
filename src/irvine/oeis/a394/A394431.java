@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394431 allocated for Jean-Marc Rebert.
+ * A394431 The smallest base b &lt; n where the sum of the digits for the number n in the base b is the largest, with 1 &lt; b &lt; n and a(1) = a(2) = 1.
  * @author Sean A. Irvine
  */
 public class A394431 extends Sequence1 {

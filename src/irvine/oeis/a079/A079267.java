@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
- * A079267 d(n,s) = number of perfect matchings on {1, 2, ..., n} with s short pairs.
+ * A079267 d(n,s) = number of perfect matchings on {1, 2, ..., 2*n} with s short pairs.
  * @author Sean A. Irvine
  */
 public class A079267 extends MemoryFunction2Sequence<Integer, Z> {

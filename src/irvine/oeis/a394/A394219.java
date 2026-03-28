@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A394219.
+ * A394219 Earliest monotonic sequence satisfying a(1)=1 and a(a(n)+a(n-1)+a(n-2)+a(n-3)) = n for n&gt;=1 (with a(k)=0 for k&lt;=0).
  * @author Sean A. Irvine
  */
 public class A394219 extends CachedSequence {

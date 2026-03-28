@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A394219.
+ * A113899 Number parallelogram based on Pascal's triangle.
  * @author Sean A. Irvine
  */
 public class A113899 extends FiniteSequence {

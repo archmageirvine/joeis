@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A176862 A symmetrical triangle sequence:t(n,m)=(-1)^m*(n - m)!*Binomial[n - 1, m] + (-1)^(n - m + 1)*(n - (n - m + 1))!*Binomial[n - 1, n - m + 1].
+ * A176862 Triangle read by rows: T(n,m) = (-1)^m * (n-m)! * binomial(n-1, m) + (-1)^(n-m+1) * (m-1)! * binomial(n - 1, n - m + 1), n&gt;=3, 2&lt;=m&lt;n.
  * @author Sean A. Irvine
  */
 public class A176862 extends Sequence3 {

@@ -7,7 +7,7 @@ import irvine.oeis.a214.A214664;
 import irvine.oeis.a214.A214665;
 
 /**
- * A388723 allocated for Aitzaz Imtiaz.
+ * A388723 Manhattan distance of prime(n) on the Ulam spiral from origin.
  * @author Sean A. Irvine
  */
 public class A388723 extends Sequence1 {

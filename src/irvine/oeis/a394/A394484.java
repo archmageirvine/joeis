@@ -7,7 +7,7 @@ import irvine.oeis.a214.A214664;
 import irvine.oeis.a214.A214665;
 
 /**
- * A394484 allocated for Aitzaz Imtiaz.
+ * A394484 Chebyshev distance between prime(n) and prime(n+1) on Ulam spiral.
  * @author Sean A. Irvine
  */
 public class A394484 extends Sequence1 {

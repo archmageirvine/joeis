@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000720;
 
 /**
- * A084295 n is such that pi(n*prime(n))/n is an integer.
+ * A084295 Numbers k such that pi(k*prime(k))/k is an integer.
  * @author Sean A. Irvine
  */
 public class A084295 extends A000720 {

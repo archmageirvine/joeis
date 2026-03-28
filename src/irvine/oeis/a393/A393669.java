@@ -3,7 +3,7 @@ package irvine.oeis.a393;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A393669 allocated for Lorenzo Sauras Altuzarra.
+ * A393669 Size of the free implicative semilattice on n generators.
  * @author Sean A. Irvine
  */
 public class A393669 extends NoncomputableSequence {

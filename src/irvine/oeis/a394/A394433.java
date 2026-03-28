@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A394433 allocated for Aied Sulaiman.
+ * A394433 Numbers k such that gcd(k, phi(k)) is prime.
  * @author Sean A. Irvine
  */
 public class A394433 extends FilterNumberSequence {

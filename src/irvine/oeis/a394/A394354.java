@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A394354 allocated for Clark Kimberling.
+ * A394354 a(n) = denominator q of the fraction p/q that minimizes |m/n - p/q| with m/n != p/q, where p is 1 or prime, q is prime, q &lt; n, and m ranges from 1 to n - 1, with this rule to ensure uniqueness: if for given n there is more than one minimizing triple (m, p, q), then choose the greatest such m, then greatest q, then greatest p.
  * @author Sean A. Irvine
  */
 public class A394354 extends Sequence3 {

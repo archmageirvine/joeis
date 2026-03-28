@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A394218 allocated for Benoit Cloitre.
+ * A394218 Earliest monotonic sequence satisfying a(1)=1 and a(a(n)+a(n-1)+a(n-2)) = n for n&gt;=1 (with a(k)=0 for k&lt;=0).
  * @author Sean A. Irvine
  */
 public class A394218 extends CachedSequence {

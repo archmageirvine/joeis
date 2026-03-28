@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394311 allocated for Juri-Stepan Gerasimov.
+ * A394311 a(n) is the smallest prime p for which ((n+1)*p - 1)/n is also prime.
  * @author Sean A. Irvine
  */
 public class A394311 extends Sequence1 {

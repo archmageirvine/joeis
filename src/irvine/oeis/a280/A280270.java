@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A280270 Numbers n such that A278981(n) &lt; 2*n^2.
+ * A280270 Numbers k such that A278981(k) &lt; 2*k^2.
  * @author Sean A. Irvine
  */
 public class A280270 extends Sequence1 {

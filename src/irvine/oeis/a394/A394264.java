@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000796;
 
 /**
- * A394264 allocated for Pontus von Br\u00f6mssen.
+ * A394264 Positive integers k for which the Manhattan distance between the vector of proportions of the first k decimal digits of Pi and the uniform distribution (1/10, ..., 1/10) sets a new minimum.
  * @author Sean A. Irvine
  */
 public class A394264 extends Sequence1 {

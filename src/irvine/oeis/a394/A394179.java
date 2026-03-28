@@ -10,7 +10,7 @@ import irvine.util.array.DynamicArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A393561 allocated for Jean-Marc Rebert.
+ * A394179 Least Carmichael number (A002997) that is the product of exactly n primes congruent to 3 modulo 4.
  * @author Sean A. Irvine
  */
 public class A394179 extends Sequence3 {

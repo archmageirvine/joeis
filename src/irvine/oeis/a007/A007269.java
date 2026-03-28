@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A007269 General partition graphs on n vertices.
+ * A007269 Number of general partition graphs on n vertices.
  * @author Sean A. Irvine
  */
 public class A007269 extends ParallelGenerateGraphsSequence {

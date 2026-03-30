@@ -119,7 +119,7 @@ public class A391498 extends AbstractSequence {
     return normalize(rot);
   }
 
-  private static final class Trapezoid implements Comparable<Trapezoid> {
+  protected static final class Trapezoid implements Comparable<Trapezoid> {
     final int mBase;
     final int mHeight;
     private final int mArea;
@@ -135,7 +135,11 @@ public class A391498 extends AbstractSequence {
       mArea = base * base - (base - height) * (base - height);
     }
 
-    private int getArea() {
+    /**
+     * Return the area of the trapezoid.
+     * @return area
+     */
+    public int getArea() {
       return mArea;
     }
 
@@ -322,7 +326,7 @@ public class A391498 extends AbstractSequence {
    * @param set the partition indexes
    * @return true if processing should continue
    */
-  protected boolean accept(final int[] set) {
+  protected boolean accept(final int[] set, final List<Trapezoid> trapezoids) {
     return true;
   }
 
@@ -333,7 +337,7 @@ public class A391498 extends AbstractSequence {
   protected void process(final int[] set) {
   }
 
-  private static String describe(final List<Trapezoid> trapezoids, final int[] set) {
+  private static String describe(final int[] set, final List<Trapezoid> trapezoids) {
     final StringBuilder sb = new StringBuilder();
     for (final int s : set) {
       if (sb.length() > 0) {
@@ -348,9 +352,9 @@ public class A391498 extends AbstractSequence {
     if (remainingTrapezoids == 0) {
       if (remainingArea == 0) {
         mPrepackCount.incrementAndGet();
-        if (accept(set) && packer.canPack(set)) {
+        if (accept(set, mTrapezoids) && packer.canPack(set)) {
           if (mVerbose) {
-            StringUtils.message(describe(mTrapezoids, set));
+            StringUtils.message(describe(set, mTrapezoids));
           }
           process(set); // Let subclasses do their own thing with this set
           mCount.incrementAndGet();

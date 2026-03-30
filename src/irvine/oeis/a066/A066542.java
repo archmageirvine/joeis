@@ -1,5 +1,6 @@
 package irvine.oeis.a066;
 
+import irvine.factor.util.FactorUtils;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -12,7 +13,7 @@ public class A066542 extends A000040 {
   private int mN = 2;
 
   private boolean is(final int n) {
-    for (final long d : A066452.antidivisors(n)) {
+    for (final long d : FactorUtils.antidivisors(n)) {
       if ((d & 1) == 0 && d != 2) {
         return false;
       }

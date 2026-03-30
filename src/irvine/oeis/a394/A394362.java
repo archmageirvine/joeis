@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394059.
+ * A394362 Number of divisors d of n which also divide n/d + 1.
  * @author Sean A. Irvine
  */
 public class A394362 extends Sequence1 {

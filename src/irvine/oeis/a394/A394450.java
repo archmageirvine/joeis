@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A000959 Lucky numbers.
+ * A394450 Primes that survive the lucky number sieve when applied to the sequence of primes.
  * @author Sean A. Irvine
  */
 public class A394450 extends Sequence1 {

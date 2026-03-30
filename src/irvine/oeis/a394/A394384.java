@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394384 allocated for Sylvia Zevi Abrams.
+ * A394384 Power tower of descending prime factors of n with multiplicity.
  * @author Sean A. Irvine
  */
 public class A394384 extends Sequence1 {

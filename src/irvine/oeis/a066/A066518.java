@@ -1,5 +1,6 @@
 package irvine.oeis.a066;
 
+import irvine.factor.util.FactorUtils;
 import irvine.math.z.Z;
 
 /**
@@ -16,7 +17,8 @@ public class A066518 extends A066452 {
   @Override
   public Z next() {
     long sum = 0;
-    for (final long d : antidivisors(++mN)) {
+    final long n = ++mN;
+    for (final long d : FactorUtils.antidivisors(n)) {
       final long r = 2 * (mN % d);
       if (r == d - 1) {
         --sum;

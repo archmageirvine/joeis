@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A065445 Decimal expansion of Product{k=0..inf} (1+1/2^(2k))^(1/2).
+ * A065445 Decimal expansion of Product_{k&gt;=0} (1+1/2^(2k))^(1/2).
  * @author Sean A. Irvine
  */
 public class A065445 extends DecimalExpansionSequence {

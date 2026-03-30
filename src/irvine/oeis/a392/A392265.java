@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a286.A286708;
 
 /**
- * A000959 Lucky numbers.
+ * A392265 Number of divisors d | A286708(n) such that d is also in A286708.
  * @author Sean A. Irvine
  */
 public class A392265 extends A286708 {

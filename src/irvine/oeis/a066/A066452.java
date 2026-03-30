@@ -1,8 +1,8 @@
 package irvine.oeis.a066;
 
-import java.util.ArrayList;
 import java.util.List;
 
+import irvine.factor.util.FactorUtils;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence2;
@@ -17,16 +17,6 @@ public class A066452 extends Sequence2 implements DirectSequence {
 
   private int mN = 1;
 
-  static List<Long> antidivisors(final long n) {
-    final List<Long> res = new ArrayList<>();
-    for (long k = 2; k < n; ++k) {
-      if (Math.abs(2 * (n % k) - k) < 2) {
-        res.add(k);
-      }
-    }
-    return res;
-  }
-
   @Override
   public Z next() {
     return a(++mN);
@@ -39,7 +29,7 @@ public class A066452 extends Sequence2 implements DirectSequence {
 
   @Override
   public Z a(final long n) {
-    final List<Long> ad = antidivisors(n);
+    final List<Long> ad = FactorUtils.antidivisors(n);
     long cnt = 0;
     for (long j = 1; j < n; ++j) {
       long isAd = 1;

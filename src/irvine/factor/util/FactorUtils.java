@@ -1,6 +1,8 @@
 package irvine.factor.util;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
@@ -91,4 +93,20 @@ public final class FactorUtils {
     }
     return new Z(sb);
   }
+
+  /**
+   * Return the anti-divisors of a number
+   * @param n number
+   * @return anti-divisors
+   */
+  public static List<Long> antidivisors(final long n) {
+    final List<Long> res = new ArrayList<>();
+    for (long k = 2; k < n; ++k) {
+      if (Math.abs(2 * (n % k) - k) < 2) {
+        res.add(k);
+      }
+    }
+    return res;
+  }
+
 }

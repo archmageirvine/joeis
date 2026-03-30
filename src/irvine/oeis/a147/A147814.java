@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A147814.
+ * A147814 Number of bits in Elias omega-coded prime numbers.
  * @author Sean A. Irvine
  */
 public class A147814 extends A000040 {

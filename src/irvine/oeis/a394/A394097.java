@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Quadruple;
 
 /**
- * A394097 allocated for Janaka Rodrigo.
+ * A394097 a(n) is the number of different ways for two particles to reach each other's starting corner on an equilateral triangular grid of side n units starting simultaneously and moving at the same constant speed along the grid lines, such that the distance between each particle and its own starting corner is always increasing, and the two particles never meet.
  * @author Sean A. Irvine
  */
 public class A394097 extends Sequence1 {

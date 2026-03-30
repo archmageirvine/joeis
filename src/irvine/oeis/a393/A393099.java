@@ -3,7 +3,7 @@ package irvine.oeis.a393;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A393099 allocated for Simone Rinaldi.
+ * A393099 Number of 4-stack polyominoes having semiperimeter equal to n.
  * @author Sean A. Irvine
  */
 public class A393099 extends GfSequence {

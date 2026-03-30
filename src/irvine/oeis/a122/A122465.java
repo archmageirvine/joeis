@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394059.
+ * A122465 Smooth Power Quartets: The m-th number in the sequence, n, is part of the minimum quartet of numbers n through n-3 such that the highest prime factor of each number x &lt;= floor(x^(1/m)).
  * @author Sean A. Irvine
  */
 public class A122465 extends Sequence1 {

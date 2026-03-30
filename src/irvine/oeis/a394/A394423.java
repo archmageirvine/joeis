@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001223;
 
 /**
- * A394059.
+ * A394423 a(n) is the smallest index k such that the subsequence of prime gaps b(k), b(k+1),..., b(k+2n) is a palindrome of length 2n+1, where b(k) = A001223(k).
  * @author Sean A. Irvine
  */
 public class A394423 extends Sequence1 {

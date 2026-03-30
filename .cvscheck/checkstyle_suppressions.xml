@@ -50,6 +50,8 @@
     <suppress checks="MethodLength" files=".*A070911.java"/>
     <suppress checks="MethodLength" files=".*A335798.java"/>
     <suppress checks="ParameterNumber" files=".*A295193.java"/>
+    <suppress checks="ParameterNumber" files=".*A394097.java"/>
+    <suppress checks="ParameterNumber" files=".*A394098.java"/>
     <suppress checks="ParameterNumber" files=".*BipExtensionFinder.java"/>
     <suppress checks="ParameterNumber" files=".*BipScanner.java"/>
     <suppress checks="ParameterNumber" files=".*Canon.java"/>

@@ -32,64 +32,78 @@ import irvine.oeis.Sequence;
 public class RationalProductTransform extends AbstractSequence implements RationalSequence {
 
   private static int sDebug = 0;
-  private static final int ESTLEN = 1024; // estimated length of arrays
-  private final ArrayList<Q> mFs = new ArrayList<>(ESTLEN); // first underlying sequence (Manyama's f(k))
-  private final ArrayList<Q> mGs = new ArrayList<>(ESTLEN); // second underlying sequence (Manyama's g(k))
-  private final ArrayList<Q> mBs = new ArrayList<>(ESTLEN); // resulting sequence (Manyama's a(n))
-  private final ArrayList<Q> mCs = new ArrayList<>(ESTLEN); // auxiliary sequence (Manyama's b(n))
-  private int mN; // index of resulting term
-  private int mIn; // index for initial terms
-  private int mK; // current index k >= 1 for f() and g()
+  protected static final int ESTLEN = 1024; // estimated length of arrays
+  protected final ArrayList<Q> mFs = new ArrayList<>(ESTLEN); // first underlying sequence (Manyama's f(k))
+  protected final ArrayList<Q> mGs = new ArrayList<>(ESTLEN); // second underlying sequence (Manyama's g(k))
+  protected final ArrayList<Q> mBs = new ArrayList<>(ESTLEN); // resulting sequence (Manyama's a(n))
+  protected final ArrayList<Q> mCs = new ArrayList<>(ESTLEN); // auxiliary sequence (Manyama's b(n))
+  protected int mN; // index of resulting term
+  protected int mIn; // index for initial terms
+  protected int mK; // current index k >= 1 for f() and g()
   private int mH; // current index for h()
   private Z mNextH; // next term of the sequence h(k)
-  private Z mFactorial; // = k!
+  protected Z mFactorial; // = k!
 
 
   /* Caution, the following are bitmasks, c.f. usage at the end of <code>compute()</code>: */
   /** Bitmask indicating the numerators of an ordinary target generating function. */
   private static final int OGF = 0;
   /** Bitmask indicating the numerators of an exponential target or an exponential source generating function. */
-  private static final int EGF = 1;
+  protected static final int EGF = 1;
   /** Bitmask indicating the denominators of an ordinary target generating function. */
   private static final int DEN_OGF = 4;
   /** Bitmask indicating the denominators of an exponential target generating function. */
   private static final int DEN_EGF = 5;
 
   /** Function types for f(), g() and h(). */
-  private enum FunctionType {
-    TYPE_NULL         // parameter is absent, take the default (usually 1)
-    , TYPE_CONST_L    // a constant long
-    , TYPE_LAMBDA_L   // a lambda expression k -> Long
-    , TYPE_LAMBDA_Z   // a lambda expression k -> Z
-    , TYPE_LAMBDA_Q   // a lambda expression k -> Q
-    , TYPE_SEQUENCE_Z // next,  successive terms of a Sequence
-    , TYPE_SEQUENCE_Q // nextQ, successive terms of a RationalSequence
-    , TYPE_LAMBDA2_Z  // function(k, t) of successive terms t of a Sequence
-    , TYPE_LAMBDA2_Q  // function(k, t) of successive terms t of a RationalSequence
+  public enum FunctionType {
+    /** Parameter is absent, take the default (usually 1). */
+    TYPE_NULL,
+    /** A constant long. */
+    TYPE_CONST_L,
+    /** A lambda expression k -> Long. */
+    TYPE_LAMBDA_L,
+    /** A lambda expression k -> Z. */
+    TYPE_LAMBDA_Z,
+    /** A lambda expression k -> Q. */
+    TYPE_LAMBDA_Q,
+    /** next, successive terms of a Sequence. */
+    TYPE_SEQUENCE_Z,
+    /** nextQ, successive terms of a RationalSequence. */
+    TYPE_SEQUENCE_Q,
+    /** function(k, t) of successive terms t of a Sequence. */
+    TYPE_LAMBDA2_Z,
+    /** function(k, t) of successive terms t of a RationalSequence. */
+    TYPE_LAMBDA2_Q,
+  }
+
+  public Builder getBuilder() {
+    return mBuilder;
   }
 
   /** Encapsulate the parameters. */
-  private final Builder mBuilder; //
+  private final Builder mBuilder;
 
   /**
    * Builder inner class for flexible parameter setup.
    */
   public static class Builder {
 
-    private int mGfType; // type of the resulting generating function
-    private Q[] mPreTerms; // initial terms to be prepended
-    private int mMinK; // starting value for k
-    private int mSkipNo; // how many leading terms to skip from the resulting sequence
+    int mGfType; // type of the resulting generating function
+    Q[] mPreTerms; // initial terms to be prepended
+    int mMinK; // starting value for k
+    int mSkipNo; // how many leading terms to skip from the resulting sequence
 
+    /** Type of function. */
     private FunctionType mFType; // type of function f()
-    private long mFVal;
-    private Function<Long, Long> mFLambdaL;
-    private Function<Integer, Z> mFLambdaZ;
-    private Function<Integer, Q> mFLambdaQ;
-    private BiFunction<Integer, Z, Z> mFLambda2Z;
-    private BiFunction<Integer, Q, Q> mFLambda2Q;
-    private Sequence mFSequenceZ; // sequence for the exponent of the parenthesis: 1/(1-x^k)^f(k)
-    private RationalSequence mFSequenceQ; // RationalSequence for the exponent of the parenthesis: 1/(1-x^k)^f(k)
+    long mFVal;
+    Function<Long, Long> mFLambdaL;
+    Function<Integer, Z> mFLambdaZ;
+    Function<Integer, Q> mFLambdaQ;
+    BiFunction<Integer, Z, Z> mFLambda2Z;
+    BiFunction<Integer, Q, Q> mFLambda2Q;
+    Sequence mFSequenceZ; // sequence for the exponent of the parenthesis: 1/(1-x^k)^f(k)
+    RationalSequence mFSequenceQ; // RationalSequence for the exponent of the parenthesis: 1/(1-x^k)^f(k)
 
     private FunctionType mGType; // type of function g()
     private long mGVal;
@@ -424,6 +438,9 @@ public class RationalProductTransform extends AbstractSequence implements Ration
       return this;
     }
 
+    public FunctionType getFType() {
+      return mFType;
+    }
   } // inner class Builder
 
   /**

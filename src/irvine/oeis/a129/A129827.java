@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A129827 Numbers k such that Euler&apos;s totient phi(k) divided by 2 is a perfect square.
+ * A129827 Numbers k such that Euler's totient phi(k) divided by 2 is a perfect square.
  * @author Georg Fischer
  */
 public class A129827 extends FilterNumberSequence {

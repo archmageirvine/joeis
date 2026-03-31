@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A171008 Write the n-th prime in binary and change all 0&apos;s to 1&apos;s and all 1&apos;s to 0&apos;s.
+ * A171008 Write the n-th prime in binary and change all 0's to 1's and all 1's to 0's.
  * @author Georg Fischer
  */
 public class A171008 extends SingleTransformSequence {

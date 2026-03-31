@@ -32,6 +32,7 @@ public class A025046 extends Sequence2 {
     int longestFirstValue = 0;
     int runLength = 0;
 
+    // Find longest run of consecutive quadratic residues
     for (int k = 0; k < p; ++k) {
       if (!seen[k]) {
         if (runLength > longest) {

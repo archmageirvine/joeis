@@ -88,6 +88,8 @@ public final class Predicates {
   public static final Predicate SUPER_POULET = new SuperPoulet(); // =A050217
   /** Test if a number is a 2-dense. */
   public static final Predicate TWO_DENSE = new TwoDense(); // =A174973
+  /** Test if a number is indivisible. */
+  public static final Predicate INDIVISIBLE = new Indivisible(); // =A317101
 
   /** Test if a number is an emirp (both the number and its reversal is a different prime). */
   public static final Predicate2 EMIRP = new Emirp(); // =A006567

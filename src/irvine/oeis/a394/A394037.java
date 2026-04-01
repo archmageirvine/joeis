@@ -15,8 +15,6 @@ import irvine.oeis.Sequence1;
  */
 public class A394037 extends Sequence1 {
 
-  // todo not working right, order dependent?
-
   private final CR mX;
   private final List<HashSet<Z>> mUsedDen = new ArrayList<>();
   private final ArrayList<List<Q>> mB = new ArrayList<>();
@@ -62,11 +60,17 @@ public class A394037 extends Sequence1 {
             rd = r.get(r.size() - 1).den();
           }
         }
-        final Q q = new Q(mX.multiply(d).round(), d);
+        // Ugliness to pick value
+        Q q = new Q(mX.multiply(d).round(), d);
+        if (mUsed.contains(q)) {
+          q = new Q(mX.multiply(d).floor(), d);
+          if (mUsed.contains(q)) {
+            q = new Q(mX.multiply(d).ceil(), d);
+          }
+        }
+        //System.out.println("n=" + n + " m=" + m + " trying: " + q + " -> " + mX.subtract(CR.valueOf(q)).abs() + " cf. " + prev + " d=" + d + " used=" + mUsed.contains(q));
         if (!mUsed.contains(q)) {
-          // todo this is not right?
-          System.out.println("n=" + n + " m=" + m + " trying: " + q + " -> " + mX.subtract(CR.valueOf(q)).abs() + " cf. " + prev);
-          if (mX.subtract(CR.valueOf(q)).abs().compareTo(prev, -500) < 0 && used.add(q.den())) {
+          if (mX.subtract(CR.valueOf(q)).abs().compareTo(prev) < 0 && used.add(q.den())) {
             if (n >= mB.size()) {
               final List<Q> lst = new ArrayList<>();
               lst.add(q);

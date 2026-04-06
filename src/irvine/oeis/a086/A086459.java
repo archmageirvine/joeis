@@ -12,6 +12,6 @@ public class A086459 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A086459() {
-    super(1, n -> Z.ONE.subtract(Z.TWO.pow(n)).pow(n - 1));
+    super(0, n -> n <= 1 ? Z.ONE : Z.ONE.subtract(Z.TWO.pow(n)).pow(n - 1));
   }
 }

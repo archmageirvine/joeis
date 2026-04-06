@@ -6,15 +6,15 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.MatrixField;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A118704 a(n) = determinant of n X n circulant matrix whose first row is the first n distinct Fibonacci numbers A000045(2), A000045(3), ... A000045(n+1).
  * @author Sean A. Irvine
  */
-public class A118704 extends Sequence1 {
+public class A118704 extends Sequence0 {
 
-  private long mN = 0;
+  private long mN = -1;
 
   @Override
   public Z next() {

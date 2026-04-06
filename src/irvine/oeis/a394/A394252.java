@@ -14,7 +14,7 @@ public class A394252 extends CachedSequence {
     super(1);
   }
 
-  private boolean isRepresentable(Z n, final long pos, final long remaining) {
+  private boolean isRepresentable(final Z n, final long pos, final long remaining) {
     if (remaining == 0) {
       return n.isZero();
     }

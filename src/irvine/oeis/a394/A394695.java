@@ -4,10 +4,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A394696
+ * A394696.
  * @author Sean A. Irvine
  */
-public class A394696 extends Sequence2 {
+public class A394695 extends Sequence2 {
 
   private int mN = 1;
 
@@ -18,8 +18,10 @@ public class A394696 extends Sequence2 {
     if (k >= 63) {
       throw new UnsupportedOperationException("n too large for 64-bit implementation");
     }
+
     final long lim = 1L << k;
-    // Edge list
+
+    // Build edge list
     final int[] eu = new int[(int) k];
     final int[] ev = new int[(int) k];
     int pos = 0;
@@ -31,18 +33,21 @@ public class A394696 extends Sequence2 {
       }
     }
 
-    final int[] di = new int[mN];
-    final long[] adj = new long[mN];
+    final int[] di = new int[mN];   // degrees
+    final long[] adj = new long[mN]; // adjacency bitsets
+
     long count = 0;
     long prevGray = 0;
     for (long mask = 0; mask < lim; ++mask) {
       final long gray = mask ^ (mask >> 1);
+
       if (mask != 0) {
         final long diff = prevGray ^ gray;
         final int bit = Long.numberOfTrailingZeros(diff);
         final int u = eu[bit];
         final int v = ev[bit];
         final boolean add = ((gray >>> bit) & 1L) != 0;
+
         if (add) {
           adj[u] |= 1L << v;
           adj[v] |= 1L << u;
@@ -70,28 +75,26 @@ public class A394696 extends Sequence2 {
         continue;
       }
 
-      // Compute dij
-      final long[] dij = new long[mN];
-      for (int j = 0; j < mN; ++j) {
-        long sum = 0;
-        long bits = adj[j];
+      // Row-wise majority check variant
+      final int[] nI = new int[mN];
+      for (int i = 0; i < mN; ++i) {
+        int countPos = 0;
+        long bits = adj[i];
         while (bits != 0) {
-          final int i = Long.numberOfTrailingZeros(bits);
-          sum += di[i];
+          final int j = Long.numberOfTrailingZeros(bits);
+          if (di[j] - di[i] > 0) { // dij[i][j] - di[i] > 0
+            ++countPos;
+          }
           bits &= bits - 1;
         }
-        dij[j] = sum;
+        nI[i] = countPos > Long.bitCount(adj[i]) / 2 ? 1 : 0;
       }
 
-      // Count friendship condition
-      int countPos = 0;
-      for (int i = 0; i < mN; ++i) {
-        if (dij[i] > (long) di[i] * di[i]) {
-          ++countPos;
-        }
+      int sum = 0;
+      for (final int x : nI) {
+        sum += x;
       }
-
-      if (countPos > mN / 2) {
+      if (sum > mN / 2) {
         ++count;
       }
     }

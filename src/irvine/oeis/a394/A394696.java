@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A394696
+ * A394696 Number of social networks of n persons in which the statement "My friends have on average more friends than I have" is true for a majority of the persons.
  * @author Sean A. Irvine
  */
 public class A394696 extends Sequence2 {

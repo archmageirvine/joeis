@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A333024.
+ * A394688 Smallest number that differs from all previous terms at at least half of its binary digit positions; a(1) = 0.
  * @author Sean A. Irvine
  */
 public class A394688 extends Sequence1 {

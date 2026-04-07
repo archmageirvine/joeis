@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000142;
 
 /**
- * A084323 Fixed points reached when prime-factor-concatenation function [A084317] is started at n!.
+ * A084323 Fixed points reached when prime-factor-concatenation function (A084317) is started at n!.
  * @author Sean A. Irvine
  */
 public class A084323 extends Sequence1 {

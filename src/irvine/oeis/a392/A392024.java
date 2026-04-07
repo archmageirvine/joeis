@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A392024 allocated for Aied Sulaiman.
+ * A392024 Positive integers k such that gcd(k, tau(k)) is prime.
  * @author Sean A. Irvine
  */
 public class A392024 extends FilterNumberSequence {

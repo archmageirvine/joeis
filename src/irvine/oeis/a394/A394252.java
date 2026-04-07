@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A333024.
+ * A394252 a(1)=1; for n&gt;1, a(n) is the smallest integer greater than a(n-1) that cannot be written as the sum of exactly n-1 elements from {a(1),...,a(n-1)}, repetition allowed.
  * @author Sean A. Irvine
  */
 public class A394252 extends CachedSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a077.A077028;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A124326 T(n,m) = A007318(n,m) - A077028(n,m).
+ * A124326 Triangle read by rows: T(n,m) = A007318(n,m) - A077028(n,m) skipping zeros.
  * @author Georg Fischer
  */
 public class A124326 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394612 allocated for Zhicheng Wei.
+ * A394612 Records corresponding to A394361.
  * @author Sean A. Irvine
  */
 public class A394612 extends Sequence1 {

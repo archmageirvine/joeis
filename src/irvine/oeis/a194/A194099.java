@@ -3,7 +3,7 @@ package irvine.oeis.a194;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A194099 Numbers m&gt;=2, such that, if a prime p divides m^2-1, then every prime q&lt;p divides m^2-1 as well.
+ * A194099 Numbers m &gt;= 2, such that, if a prime p divides m^2 - 1, then every prime q &lt; p divides m^2 - 1 as well.
  * @author Sean A. Irvine
  */
 public class A194099 extends FiniteSequence {

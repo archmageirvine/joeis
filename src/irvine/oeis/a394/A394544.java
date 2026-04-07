@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002113;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A394544 allocated for Robin Jones.
+ * A394544 Largest prime factor of the n-th base 10 palindrome with a(1)=a(2)=1.
  * @author Sean A. Irvine
  */
 public class A394544 extends SimpleTransformSequence {

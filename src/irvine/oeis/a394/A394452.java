@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003592;
 
 /**
- * A394452 allocated for Michael De Vlieger.
+ * A394452 Greater of two consecutive numbers of the form 2^i*5^j with i, j &gt;= 0, that are coprime.
  * @author Sean A. Irvine
  */
 public class A394452 extends A003592 {

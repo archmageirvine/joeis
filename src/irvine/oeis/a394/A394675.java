@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A333024.
+ * A394675 Start with a(1) = 1, a(2) = 2, followed by a stream of 0's. At any step, the value of a(n-1) is added to the positions from a(n+1) to a(n+a(n)).
  * @author Sean A. Irvine
  */
 public class A394675 extends CachedSequence {

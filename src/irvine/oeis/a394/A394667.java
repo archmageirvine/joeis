@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.Permutation;
 
 /**
- * A333024.
+ * A394667 Integers which can be written as the sum of a prime and an anagram of that prime.
  * @author Sean A. Irvine
  */
 public class A394667 extends A000040 {

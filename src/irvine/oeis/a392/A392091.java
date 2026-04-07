@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A392091 allocated for Tsuyoshi Hanatate.
+ * A392091 Triangle read by rows: row n gives T(n,k) = Sum_{j=1..n} #{m &lt;= j : A001222(m)=k} for k=1..floor(log_2(n)).
  * @author Sean A. Irvine
  */
 public class A392091 extends Sequence2 {

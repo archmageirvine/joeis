@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394639 allocated for Jud McCranie.
+ * A394639 Start of exactly five even numbers that are totient numbers (A002202).
  * @author Sean A. Irvine
  */
 public class A394639 extends Sequence1 {

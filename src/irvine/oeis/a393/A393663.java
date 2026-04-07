@@ -6,7 +6,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.a386.A386016;
 
 /**
- * A393663 A sequence constructed by greedily sampling the discrete probability distribution p(k)=zeta(k+1)-1 to minimize ratio discrepancy.
+ * A393663 A sequence constructed by greedily sampling the discrete probability distribution p(k) = zeta(k+1)-1 to minimize ratio discrepancy.
  * @author Sean A. Irvine
  */
 public class A393663 extends A386016 {

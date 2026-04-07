@@ -4,7 +4,7 @@ package irvine.oeis.a154;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A154677 G.f. satisfies: A(x/A(x)) = G(x) where G(x) = 1 + x*G(x)^2 is the g.f. of A000108 (Catalan numbers).
+ * A154677 G.f. satisfies: A(x/A(x)) = C(x) where C(x) = 1 + x*C(x)^2 is the g.f. of A000108 (Catalan numbers).
  * 1+A^2*serreverse(x/(A)))
  * @author Georg Fischer
  */

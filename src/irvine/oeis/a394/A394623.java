@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A394623 allocated for Robert Israel.
+ * A394623 Primes containing as many 0's as 1's, 2's as 3's, 4's as 5's, 6's as 7's, and 8's as 9's.
  * @author Sean A. Irvine
  */
 public class A394623 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.Permutation;
 
 /**
- * A394686 allocated for Robert G. Wilson v.
+ * A394686 Primes, p, such that the sum of p and an anagram of itself produce another prime, q.
  * @author Sean A. Irvine
  */
 public class A394686 extends FilterSequence {

@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394670 allocated for Stefano Spezia.
+ * A394670 Triangle read by rows: T(n,k) is the number of ways n students take an exam one by one on any number of consecutive days as long as there are at least k students for each day.
  * @author Sean A. Irvine
  */
 public class A394670 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a003.A003849;
 
 /**
- * A394649 allocated for Clark Kimberling.
+ * A394649 Rectangular array, read by descending antidiagonals: the offset sum array of the infinite Fibonacci word, A003849; see Comments.
  * @author Sean A. Irvine
  */
 public class A394649 extends Sequence0 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391888 allocated for Stefano Spezia.
+ * A391888 a(0)=5 and a(n) = n*(a(n-1) + 2) for n &gt; 0.
  * @author Sean A. Irvine
  */
 public class A391888 extends Sequence0 {

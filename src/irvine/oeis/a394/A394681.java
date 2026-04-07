@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394681 allocated for Stefano Spezia.
+ * A394681 a(0) = 1 and a(n) = n^2*a(n-1) + n! for n &gt; 0.
  * @author Sean A. Irvine
  */
 public class A394681 extends Sequence0 {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a381.A381466;
 
 /**
- * A392200 allocated for Sam Chapman.
+ * A392200 a(n) = gcd(A381466(n-1), n).
  * @author Sean A. Irvine
  */
 public class A392200 extends Sequence1 {

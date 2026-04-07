@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394568 allocated for Miles Englezou.
+ * A394568 Numbers k such that every m that is a solution to phi(m) = k is a totient number.
  * @author Sean A. Irvine
  */
 public class A394568 extends Sequence1 {

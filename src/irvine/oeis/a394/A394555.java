@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a393.A393919;
 
 /**
- * A394555 allocated for Michael De Vlieger.
+ * A394555 Powerful k such that rad(Sum({m &lt;= k : rad(m) = rad(k)})) = rad(k), where rad = A007947.
  * @author Sean A. Irvine
  */
 public class A394555 extends FilterSequence {

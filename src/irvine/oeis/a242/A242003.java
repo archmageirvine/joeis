@@ -4,7 +4,7 @@ package irvine.oeis.a242;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A242003 G.f. satisfies: 2*A(x) = 1 + x + A(x*A(x)).
+ * A242003 G.f. A(x) satisfies 2*A(x) = 1 + x + A(x*A(x)).
  * G.f.satisfies: 2*A(x) = 1 + x + A(x*A(x)).
  * @author Georg Fischer
  */

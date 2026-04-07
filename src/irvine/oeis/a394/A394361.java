@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394361 allocated for Zhicheng Wei.
+ * A394361 Numbers k such that the values of d(k^2+1) set records, where d(k) is the number of divisors of k (A000005).
  * @author Sean A. Irvine
  */
 public class A394361 extends Sequence1 {

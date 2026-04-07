@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392896 allocated for Firdous Ahmad Mala.
+ * A392896 a(n) = least k &gt;= 2 such that Sum_{i=2..k} 1/log(i) &gt;= n.
  * @author Sean A. Irvine
  */
 public class A392896 extends Sequence1 {

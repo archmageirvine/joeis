@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002202;
 
 /**
- * A394635 allocated for Jud McCranie.
+ * A394635 Isolated totient numbers: even totient numbers k such that k-2 and k+2 are not totient numbers.
  * @author Sean A. Irvine
  */
 public class A394635 extends FilterSequence {

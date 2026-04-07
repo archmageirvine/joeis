@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394671 allocated for Sylvia Zevi Abrams.
+ * A394671 Power tower of ascending prime factors of n with multiplicity.
  * @author Sean A. Irvine
  */
 public class A394671 extends Sequence1 {

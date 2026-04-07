@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394648 allocated for Clark Kimberling.
+ * A394648 Rectangular array, read by descending antidiagonals: the offset sum array of the Thue-Morse sequence, A010060; see Comments.
  * @author Sean A. Irvine
  */
 public class A394648 extends Sequence0 {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394407 allocated for Felix Huber.
+ * A394407 Positive integers k such that there is no m &lt; k with phi(m)/tau(m) = phi(k)/tau(k).
  * @author Sean A. Irvine
  */
 public class A394407 extends Sequence1 {

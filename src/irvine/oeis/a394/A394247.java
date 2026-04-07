@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394247 allocated for Tanya Khovanova.
+ * A394247 Maximum number of parts i with multiplicity i possible in a partition of n.
  * @author Sean A. Irvine
  */
 public class A394247 extends Sequence0 {

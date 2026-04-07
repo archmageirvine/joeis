@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002110;
 
 /**
- * A084322 Fixed points if prime-factor-concatenation function (A084318) is iterated at primorial number initial values.
+ * A084322 Fixed points if prime-factor-concatenation function (A084317) is iterated at primorial number initial values.
  * @author Sean A. Irvine
  */
 public class A084322 extends Sequence1 {

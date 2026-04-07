@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A211173 (2n)!^n (modulo 2n+1).
+ * A211173 a(n) = (2n)!^n (modulo 2n+1).
  * @author Georg Fischer
  */
 public class A211173 extends LambdaSequence {

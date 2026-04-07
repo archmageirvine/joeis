@@ -5,7 +5,7 @@ import irvine.oeis.a092.A092392;
 import irvine.oeis.triangle.TruncatedTriangle;
 
 /**
- * A176992 Triangle T(n,m) = binomial(2n-k+1, n+1) read by rows, 0 &lt;= k &lt;= n.
+ * A176992 Triangle T(n,k) = binomial(2n-k+1, n+1) read by rows, 0 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A176992 extends TruncatedTriangle {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393127 allocated for M. F. Hasler.
+ * A393127 Least m such that 10^A393126(n) - 1 - 10^m is a reversible prime (emirp or palindromic prime).
  * @author Sean A. Irvine
  */
 public class A393127 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A255432 E.g.f. sqrt(1-t^2)*exp(t*(1+arctanh(t))).
+ * A255432 Expansion of e.g.f. sqrt(1-x^2) * exp(x*(1+arctanh(x))).
  * E.g.f.: sqrt(1-x^2)*exp(x*(1+arctanh(x)))
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A141399 Positive integers k such that all the distinct primes that divide k or k+1 are members of a set of consecutive primes. In other words, k is included if and only if k*(k+1) is contained in sequence A073491.
+ * A141399 Positive integers k such that the distinct primes that divide k or k+1 form a set of consecutive primes. In other words, k is included if and only if k*(k+1) is contained in sequence A073491.
  * @author Sean A. Irvine
  */
 public class A141399 extends Sequence1 {

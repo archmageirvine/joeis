@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002110;
 
 /**
- * A333024.
+ * A394581 Smallest prime(n)-smooth k &gt; primorial(n+1), where primorial = A002110.
  * @author Sean A. Irvine
  */
 public class A394581 extends A000040 {

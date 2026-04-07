@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A333024.
+ * A391768 Records k &gt;= 3 such that log((k-1)!)/log(k) is closer to an integer than any m &lt; k.
  * @author Sean A. Irvine
  */
 public class A391768 extends Sequence1 {

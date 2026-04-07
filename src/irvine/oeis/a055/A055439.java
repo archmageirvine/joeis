@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A055439 Distribution of first digit of mantissa following Benford's Law, using Sainte-Lague method to minimize chi-squared statistic.
+ * A055439 Distribution of first digit of mantissa following Benford's law, using Sainte-Lagu\u00eb method to minimize chi-squared statistic.
  * @author Sean A. Irvine
  */
 public class A055439 extends Sequence1 {

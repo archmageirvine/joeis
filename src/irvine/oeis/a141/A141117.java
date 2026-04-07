@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a091.A091713;
 
 /**
- * A141117 G.f.: A(x) = G(G(x)) = G(x)*[1 + A(A(x))] where G(x) = x + x*G(G(G(x))) = g.f. of A091713.
+ * A141117 G.f.: A(x) = G(G(x)) = G(x)*(1 + A(A(x))) where G(x) = x + x*G(G(G(x))) = g.f. of A091713.
  * new A091713()
  * @author Georg Fischer
  */

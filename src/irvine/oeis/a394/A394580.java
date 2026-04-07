@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002110;
 
 /**
- * A333024.
+ * A394580 Largest prime(n)-smooth k &lt; primorial(n+1), where primorial = A002110.
  * @author Sean A. Irvine
  */
 public class A394580 extends A000040 {

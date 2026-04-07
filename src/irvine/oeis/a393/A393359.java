@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A333024.
+ * A393359 a(n) is the number of ways to successively choose subsets of sizes equal to the proper divisors of n from [n], each choice taken from the remaining elements.
  * @author Sean A. Irvine
  */
 public class A393359 extends Sequence1 {

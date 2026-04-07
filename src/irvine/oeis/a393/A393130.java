@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393130 allocated for M. F. Hasler.
+ * A393130 Numbers k such that there is a reversible prime of the form 10^k - 4*10^m - 1.
  * @author Sean A. Irvine
  */
 public class A393130 extends Sequence1 {

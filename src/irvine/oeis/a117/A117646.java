@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A117646 Sets of three consecutive primes with equal gaps: prime(n) + 2*m = prime(n+1) and prime(n+1) + 2*m = prime(n+2) for some m.
+ * A117646 Triples of three consecutive primes (p,q,r) with equal gaps: q-p = r-q.
  * @author Sean A. Irvine
  */
 public class A117646 extends Sequence1 {

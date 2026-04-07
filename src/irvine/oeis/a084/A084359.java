@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394696
+ * A084359 a(n) = number of partitions of n into pair of parts n=p+q, p&gt;=q&gt;=1, with p-q equal to a square &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A084359 extends Sequence1 {

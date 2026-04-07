@@ -14,7 +14,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A392962 allocated for Igor Blokhin.
+ * A392962 Number of automorphism group orders that occur for exactly one unlabeled tree with n vertices.
  * @author Sean A. Irvine
  */
 public class A392962 extends ParallelGenerateGraphsSequence {

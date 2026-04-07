@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000055;
 import irvine.oeis.a023.A023359;
 
 /**
- * A333024.
+ * A084356 a(n) = A000055(n+2) - A023359(n).
  * @author Sean A. Irvine
  */
 public class A084356 extends Combiner {

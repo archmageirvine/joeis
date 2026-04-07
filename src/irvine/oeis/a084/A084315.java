@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A084315 a(n) = x is the smallest number such that gcd(prime(x)-1,x-1) = n.
+ * A084315 a(n) is the smallest number k such that gcd(prime(k)-1,k-1) = n.
  * @author Sean A. Irvine
  */
 public class A084315 extends Sequence1 {

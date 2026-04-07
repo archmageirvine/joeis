@@ -7,7 +7,7 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A393544 allocated for Jud McCranie.
+ * A393544 The first of exactly n consecutive even numbers that are totient numbers (A002202).
  * @author Sean A. Irvine
  */
 public class A393544 extends Sequence1 {

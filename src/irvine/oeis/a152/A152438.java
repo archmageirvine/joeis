@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A152438 a(n)=(19^n - 1)/(9*2^(3 - 2*Mod[n, 2])).
+ * A152438 a(n) = (19^n - 1)/(9*2^(3 - 2*(n mod 2))).
  * @author Georg Fischer
  */
 public class A152438 extends HolonomicRecurrence {

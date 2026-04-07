@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A152436 a(n)=(13^n - 1)/(3*2^(3 - Mod[n, 2])).
+ * A152436 a(n) = (13^n - 1)/(3*2^(3 - (n mod 2))).
  * @author Georg Fischer
  */
 public class A152436 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A084348 Triangle in which row n gives periodic part of a certain map.
+ * A084348 Triangle read by rows: T(n,k) = floor(e*k!) - n*floor(e*k!/n).
  * @author Sean A. Irvine
  */
 public class A084348 extends Sequence1 {

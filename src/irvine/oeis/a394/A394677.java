@@ -3,7 +3,7 @@ package irvine.oeis.a394;
 import irvine.math.z.Z;
 
 /**
- * A394677 allocated for Stefano Spezia.
+ * A394677 Row sums of A394670.
  * @author Sean A. Irvine
  */
 public class A394677 extends A394670 {

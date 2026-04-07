@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A013299 -sinh(log(x+1)-arctanh(x)) = 1/2!*x^2 + 6/4!*x^4 + 135/6!*x^6 + 6300/8!*x^8 + ...
+ * A013299 Expansion of e.g.f. -sinh(log(x+1) - arctanh(x)) (even powers only).
  * @author Sean A. Irvine
  */
 public class A013299 extends Sequence0 {

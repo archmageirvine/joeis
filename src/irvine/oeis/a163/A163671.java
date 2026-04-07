@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A163671 Expansion of Sum_( x^k / (1 - x^(k^2)) ).
+ * A163671 Expansion of Sum_{k&gt;=1} x^k / (1 - x^(k^2)).
  * @author Georg Fischer
  */
 public class A163671 extends AbstractSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a088.A088715;
 
 /**
- * A158884 G.f. A(x) satisfies: d/dx x*A(x) = 1+x + x*[d/dx log(A(x))].
+ * A158884 G.f. A(x) satisfies d/dx x*A(x) = 1+x + x*[d/dx log(A(x))].
  * new A088715()
  * @author Georg Fischer
  */

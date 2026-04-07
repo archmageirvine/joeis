@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a381.A381466;
 
 /**
- * A391446 allocated for Sam Chapman.
+ * A391446 Numbers k such that gcd(A381466(k-1),k) &gt; 1.
  * @author Sean A. Irvine
  */
 public class A391446 extends FilterPositionSequence {

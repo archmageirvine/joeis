@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A394504 allocated for Vincenzo Manto.
+ * A394504 Numbers such that each digit d_i is equal to the number of digits to its right that are strictly less than d_i.
  * @author Sean A. Irvine
  */
 public class A394504 extends Sequence1 {

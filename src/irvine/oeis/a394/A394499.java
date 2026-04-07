@@ -5,7 +5,7 @@ import irvine.oeis.a081.A081585;
 import irvine.oeis.a108.A108099;
 
 /**
- * A394499 allocated for Kiran Ananthpur Bacche.
+ * A394499 Starting at one corner of n X n grid of dots, the maximum number of edges that can be drawn without lifting the pencil or going over a previously drawn edge.
  * @author Sean A. Irvine
  */
 public class A394499 extends InterleaveSequence {

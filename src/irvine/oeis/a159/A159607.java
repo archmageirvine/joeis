@@ -4,7 +4,7 @@ package irvine.oeis.a159;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A159607 G.f. satisfies: A(x) = 1 + x*d/dx log(1 + x*A(x)^2).
+ * A159607 G.f. A(x) satisfies A(x) = 1 + x*d/dx log(1 + x*A(x)^2).
  * 1+x*A(x)^2*(2-A(x))+2*x^2*dif(A(x))*A(x)
  * @author Georg Fischer
  */

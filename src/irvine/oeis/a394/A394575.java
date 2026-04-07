@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A394575 allocated for Paolo P. Lava.
+ * A394575 Anti-admirable numbers. A number k is anti-admirable if there exists an anti-divisor d of k such that A066417(k) - 2d = 2k.
  * @author Sean A. Irvine
  */
 public class A394575 extends FilterNumberSequence {

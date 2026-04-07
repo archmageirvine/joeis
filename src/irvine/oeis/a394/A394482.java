@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a052.A052486;
 
 /**
- * A394482 allocated for Michael De Vlieger.
+ * A394482 Achilles numbers whose prime power factor multiplicities are not pairwise indivisible.
  * @author Sean A. Irvine
  */
 public class A394482 extends FilterSequence {

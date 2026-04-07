@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000110;
 import irvine.oeis.a000.A000798;
 
 /**
- * A394620 allocated for Firdous Ahmad Mala.
+ * A394620 Number of relations on an n-set that are reflexive but neither symmetric nor transitive.
  * @author Sean A. Irvine
  */
 public class A394620 extends Sequence0 {

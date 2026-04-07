@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A393126 allocated for M. F. Hasler.
+ * A393126 Numbers k such that there exists m &lt; k/2 such that 10^k - 10^m - 1 is a reversible prime; i.e., a palindromic prime or an emirp.
  * @author Sean A. Irvine
  */
 public class A393126 extends FilterNumberSequence {

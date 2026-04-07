@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002113;
 
 /**
- * A394545 allocated for Robin Jones.
+ * A394545 Base 10 palindromes greater than 1 such that division by their highest prime factor also results in a palindrome.
  * @author Sean A. Irvine
  */
 public class A394545 extends FilterSequence {

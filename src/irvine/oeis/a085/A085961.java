@@ -6,7 +6,7 @@ import irvine.oeis.a070.A070982;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A085961 Sigma of the least numbers k for which sigma is divisible by k (where sigma is the sum of the divisors of k, A000203(k)).
+ * A085961 Sigma of the least number for which sigma is divisible by n (where sigma is the sum of the divisors of n, A000203(n)).
  * @author Georg Fischer
  */
 public class A085961 extends SingleTransformSequence {

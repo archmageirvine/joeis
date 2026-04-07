@@ -4,7 +4,7 @@ package irvine.oeis.a350;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A350382 a(n) = 9 + 4 * 10^n.
+ * A350382 a(n) = 9 + 4*10^n.
  * @author Georg Fischer
  */
 public class A350382 extends HolonomicRecurrence {

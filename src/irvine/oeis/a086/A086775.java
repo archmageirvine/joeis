@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A086775 Decimal expansion of the number defined by the continued fraction shown below.
+ * A086775 Decimal expansion of the number defined by the continued fraction 1/(phi+1/(phi+1/(phi + ...))).
  * Formula: sqrt(5+phi)-phi)/2
  * @author Georg Fischer
  */

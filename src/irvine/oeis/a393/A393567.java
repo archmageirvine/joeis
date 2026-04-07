@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000025;
 import irvine.oeis.a053.A053256;
 
 /**
- * A393567 allocated for Joesph Daniel Burke III.
+ * A393567 Coefficients of the formal power series quotient of the '5th-order' mock theta function f_0(q) by the 3rd-order mock theta function f(q).
  * @author Sean A. Irvine
  */
 public class A393567 extends CachedSequence {

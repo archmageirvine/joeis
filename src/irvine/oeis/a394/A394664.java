@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A394664 Decimal expansion of the constant characterizing the complexity of Coppersmith&apos;s version of the general number field sieve (GNFS) factoring algorithm.
+ * A394664 Decimal expansion of the constant characterizing the complexity of Coppersmith's version of the general number field sieve (GNFS) factoring algorithm.
  * Formula:
  * @author Georg Fischer
  */

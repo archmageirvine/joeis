@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003592;
 
 /**
- * A394408 allocated for Michael De Vlieger.
+ * A394408 Lesser of two consecutive numbers of the form 2^i*5^j with i, j &gt;= 0, that are coprime.
  * @author Sean A. Irvine
  */
 public class A394408 extends A003592 {

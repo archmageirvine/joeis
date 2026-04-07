@@ -1,0 +1,24 @@
+package irvine.oeis.a394;
+
+import irvine.math.function.Functions;
+import irvine.math.z.Z;
+import irvine.oeis.a005.A005361;
+import irvine.oeis.a126.A126706;
+
+/**
+ * A394619 allocated for Michael De Vlieger.
+ * @author Sean A. Irvine
+ */
+public class A394619 extends A126706 {
+
+  // A000005(k) - A005361(k) - 2^A001221(k) + 1
+
+  private final A005361 mPE = new A005361();
+
+  @Override
+  public Z next() {
+    final Z k = super.next();
+    return Z.ONE.add(Functions.SIGMA0.z(k)).subtract(Z.ONE.shiftLeft(Functions.OMEGA.i(k))).subtract(mPE.a(k));
+  }
+
+}

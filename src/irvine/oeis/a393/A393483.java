@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001597;
 
 /**
- * A393483 allocated for Charles L. Hohn.
+ * A393483 For k &gt;= 1, perfect powers A001597(k) for which ratio A001597(k+1) / A001597(k) is smaller than that for any smaller k.
  * @author Sean A. Irvine
  */
 public class A393483 extends Sequence1 {

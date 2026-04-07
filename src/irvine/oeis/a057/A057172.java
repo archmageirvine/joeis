@@ -5,7 +5,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A057172 Numbers n such that (6^n + 1)/7 is a prime.
+ * A057172 Numbers k such that (6^k + 1)/7 is a prime.
  * @author Georg Fischer
  */
 public class A057172 extends PrimePositionSubsequence {

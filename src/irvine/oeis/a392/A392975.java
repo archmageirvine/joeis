@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A333024.
+ * A392975 A Sisyphus sequence: a(0) = 0, a(1) = 1, a(2) = 2; for n &gt; 2, a(n) is the smallest unused positive integer having the same greatest prime factor as the sum of the previous terms.
  * @author Sean A. Irvine
  */
 public class A392975 extends Sequence0 {

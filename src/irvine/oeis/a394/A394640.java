@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394640 allocated for Jud McCranie.
+ * A394640 Start of exactly six even numbers that are totient numbers (A002202).
  * @author Sean A. Irvine
  */
 public class A394640 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394016 allocated for Fr\u00e9d\u00e9ric D. W. Heidenthal-K\u00f6nig.
+ * A394016 Triangle read by rows: T(n, k) = 1 if k appears in the n X n multiplication table, otherwise 0.
  * @author Sean A. Irvine
  */
 public class A394016 extends Sequence1 {

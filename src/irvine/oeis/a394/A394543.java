@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394543 allocated for Ruud H.G. van Tol.
+ * A394543 Numbers k that reach a power of 2 in zero or more iterations of k -&gt; 2k - (sum of proper factors of 2k).
  * @author Sean A. Irvine
  */
 public class A394543 extends Sequence1 {

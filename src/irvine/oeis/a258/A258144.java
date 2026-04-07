@@ -4,7 +4,7 @@ package irvine.oeis.a258;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A258144 Alternating row sums of A257241, Stifel&apos;s version of the arithmetical triangle.
+ * A258144 Alternating row sums of A257241, Stifel's version of the arithmetical triangle.
  * @author Georg Fischer
  */
 public class A258144 extends HolonomicRecurrence {

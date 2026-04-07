@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394463 allocated for Felix Huber.
+ * A394463 Numbers k such that the sum of distinct prime factors and the sum of their exponents are divisible in at least one direction, while the corresponding products are divisible in neither direction.
  * @author Sean A. Irvine
  */
 public class A394463 extends Sequence1 {

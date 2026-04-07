@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074978 Prime(prime(n)) ends with n.
+ * A074978 Integers k such that prime(prime(k)) ends with k.
  * @author Sean A. Irvine
  */
 public class A074978 extends Sequence1 {

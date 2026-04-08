@@ -11,8 +11,6 @@ import irvine.oeis.a126.A126706;
  */
 public class A394619 extends A126706 {
 
-  // A000005(k) - A005361(k) - 2^A001221(k) + 1
-
   private final A005361 mPE = new A005361();
 
   @Override

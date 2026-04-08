@@ -1696,7 +1696,7 @@ public final class GraphUtils {
   /**
    * Test if a graph is prime.
    * That is, test if the graph has no module, where a module is a set S
-   * of vertices 1 < |S| < |G|, where every vertex outside of S is either
+   * of vertices 1 < |S| < |G|, where every vertex outside S is either
    * adjacent to every vertex in S or adjacent to none of them.
    * @param graph the graph
    * @return true iff the graph is prime

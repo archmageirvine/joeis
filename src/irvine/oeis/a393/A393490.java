@@ -12,17 +12,21 @@ import irvine.oeis.Sequence1;
  */
 public class A393490 extends Sequence1 {
 
-  // todo not currently correct
+  // todo not currently correct?
 
   // Cf. A394097
 
-  // We hold (x,y), (u,v), (s, t) the coordinate pairs of the three points.
-  // Further, we pretend that all points start at (0,0) and reflect in axes
-  // when it is necessary to check for collisions.
+  // We hold (x,y), (u,v), (s, t) the coordinate pairs of the three points;
+  // starting at (0,0), (n,0), and (0,n), respectively.
+  // The target points are (n,0), (0,n), and (0,0), respectively.
   // We keep track of the number of ways of reaching a configuration (x,y,u,v,s,t).
 
-  private static final int[] DELTA_X = {1, 0, -1};
-  private static final int[] DELTA_Y = {0, 1,  1};
+  private static final int[] DELTA_X = {1, 0,  1};
+  private static final int[] DELTA_Y = {0, 1, -1};
+  private static final int[] DELTA_U = {-1, 0, -1};
+  private static final int[] DELTA_V = { 0, 1,  1};
+  private static final int[] DELTA_S = {-1,  0, 1};
+  private static final int[] DELTA_T = { 0, -1, -1};
   private static final int[] DELTA_0 = {0};
 
   private static final class State {
@@ -56,58 +60,63 @@ public class A393490 extends Sequence1 {
     public int hashCode() {
       return ((((mX * 31 + mY) * 31 + mU) * 31 + mV) * 31 + mS) * 31 + mT;
     }
+
+    @Override
+    public String toString() {
+      return "(" + mX + "," + mY + "), (" + mU + "," + mV + "), (" + mS + "," + mT + ")";
+    }
   }
 
   private int mN = 0;
 
   private void update(final HashMap<State, Z> map, final Z value, final int x0, final int y0, final int x1, final int y1, final int u0, final int v0, final int u1, final int v1, final int s0, final int t0, final int s1, final int t1) {
-    final int w1 = mN - u1 - v1; // Reflection in vertical line
-    // (s,t) reflects as (t,s)
-    if (x1 == w1 && y1 == v1) {
+    if (x1 == u1 && y1 == v1) {
       return; // Points (x,y) and (u,v) coincide
     }
-    //final int r1 = mN - s1 - t1;
-    if (x1 == t1 && y1 == s1) {
+    if (x1 == s1 && y1 == t1) {
       return; // Points (x,y) and (s,t) coincide
     }
-    if (w1 == t1 && v1 == s1) {
+    if (u1 == s1 && v1 == t1) {
       return; // Points (u,v) and (s,t) coincide
     }
 
     // Check if particles traversed the same edge
     // We only need this one way round for each pair (because e.g. we already know (x0,y0) != (u0,v0))
-    // todo something here is wrong!
-    final int w0 = mN - u0 - v0;
-    if (w1 == x0 && v1 == y0 && w0 == x1 && v0 == y1) {
+    if (u1 == x0 && v1 == y0 && u0 == x1 && v0 == y1) {
       return; // used the same edge
     }
-    //final int r0 = mN - s0 - t0;
-    if (t0 == x0 && s1 == y0 && t0 == x1 && s0 == y1) {
+    if (s1 == x0 && t1 == y0 && s0 == x1 && t0 == y1) {
       return; // used the same edge
     }
-    if (t0 == w0 && s1 == v0 && t0 == w1 && s0 == v1) {
+    if (s1 == u0 && t1 == v0 && s0 == u1 && t0 == t1) {
       return; // used the same edge
     }
     map.merge(new State(x1, y1, u1, v1, s1, t1), value, Z::add);
   }
 
-  private boolean check(final int x0, final int y0, final int x1, final int y1) {
+  private boolean isInTriangle(final int x, final int y) {
     // Check that particle remains inside the triangle.
-    if (x1 < 0 || y1 < 0 || x1 + y1 > mN || y1 > mN) {
+    return x >= 0 && x <= mN && y >= 0 && y <= mN && x + y <= mN;
+  }
+
+  private boolean check(final int x0, final int y0, final int x1, final int y1) {
+    if (!isInTriangle(x1, y1)) {
       return false;
+    }
+    if (x0 == x1 && y0 == y1) {
+      return true; // This is a stationary point
     }
     // Check the distance from the origin increases
     final int d0 = x0 * x0 + y0 * y0 + x0 * y0;
     final int d1 = x1 * x1 + y1 * y1 + x1 * y1;
-    return d1 > d0; // distance from (0,0) did not increase
+    return d1 > d0;
   }
 
   private void dump(final HashMap<State, Z> counts) {
     System.out.println("Current states");
     for (final Map.Entry<State, Z> e : counts.entrySet()) {
       final State key = e.getKey();
-      //System.out.println("(" + key.mX + "," + key.mY + "), (" + key.mU + "," + key.mV + "), (" + key.mS + "," + key.mT + ") transforms to: (" + key.mX + "," + key.mY + "), (" + (mN - key.mU - key.mV) + "," + key.mV + "), (" + key.mS + "," + (mN - key.mS - key.mT) + ") = " + e.getValue());
-      System.out.println("(" + key.mX + "," + key.mY + "), (" + key.mU + "," + key.mV + "), (" + key.mS + "," + key.mT + ") transforms to: (" + key.mX + "," + key.mY + "), (" + (mN - key.mU - key.mV) + "," + key.mV + "), (" + key.mT + "," + key.mS + ") = " + e.getValue());
+      System.out.println(key + " = " + e.getValue());
     }
   }
 
@@ -115,44 +124,45 @@ public class A393490 extends Sequence1 {
   public Z next() {
     ++mN;
     HashMap<State, Z> counts = new HashMap<>();
-    counts.put(new State(0, 0, 0, 0, 0, 0), Z.ONE);
+    counts.put(new State(0, 0, mN, 0, 0, mN), Z.ONE);
     Z total = Z.ZERO;
     while (!counts.isEmpty()) {
       final HashMap<State, Z> newCounts = new HashMap<>();
       for (final Map.Entry<State, Z> e : counts.entrySet()) {
         final Z value = e.getValue();
         final State key = e.getKey();
+        //System.out.println("Expanding " + key);
         final int x = key.mX;
         final int y = key.mY;
         final int u = key.mU;
         final int v = key.mV;
         final int s = key.mS;
         final int t = key.mT;
-        if (x == mN && y == 0 && u == mN && v == 0 && s == mN && t == 0) {
+        if (x == mN && y == 0 && u == 0 && v == mN && s == 0 && t == 0) {
           // All points are at end, contribute to the total sum.
           total = total.add(value);
           // No further extension of the paths occurs
         } else {
           // Work out which points need to move
-          final int[] dkx = x == mN && y == 0 ? DELTA_0 : DELTA_X;
-          final int[] dky = x == mN && y == 0 ? DELTA_0 : DELTA_Y;
-          final int[] djx = u == mN && v == 0 ? DELTA_0 : DELTA_X;
-          final int[] djy = u == mN && v == 0 ? DELTA_0 : DELTA_Y;
-          final int[] dix = s == mN && t == 0 ? DELTA_0 : DELTA_X;
-          final int[] diy = s == mN && t == 0 ? DELTA_0 : DELTA_Y;
+          final int[] dx = x == mN && y == 0 ? DELTA_0 : DELTA_X;
+          final int[] dy = x == mN && y == 0 ? DELTA_0 : DELTA_Y;
+          final int[] du = u == 0 && v == mN ? DELTA_0 : DELTA_U;
+          final int[] dv = u == 0 && v == mN ? DELTA_0 : DELTA_V;
+          final int[] ds = s == 0 && t == 0 ? DELTA_0 : DELTA_S;
+          final int[] dt = s == 0 && t == 0 ? DELTA_0 : DELTA_T;
           // Move in all possible ways
-          for (int k = 0; k < dkx.length; ++k) {
-            final int nx = x + dkx[k];
-            final int ny = y + dky[k];
+          for (int k = 0; k < dx.length; ++k) {
+            final int nx = x + dx[k];
+            final int ny = y + dy[k];
             if (check(x, y, nx, ny)) {
-              for (int j = 0; j < djx.length; ++j) {
-                final int nu = u + djx[j];
-                final int nv = v + djy[j];
-                if (check(u, v, nu, nv)) {
-                  for (int i = 0; i < dix.length; ++i) {
-                    final int ns = s + dix[i];
-                    final int nt = t + diy[i];
-                    if (check(s, t, ns, nt)) {
+              for (int j = 0; j < du.length; ++j) {
+                final int nu = u + du[j];
+                final int nv = v + dv[j];
+                if (check(mN - u - v, v, mN - nu - nv, nv)) { // symmetry for distance check
+                  for (int i = 0; i < ds.length; ++i) {
+                    final int ns = s + ds[i];
+                    final int nt = t + dt[i];
+                    if (check(s, mN - s - t, ns, mN - ns - nt)) { // symmetry for distance check
                       update(newCounts, value, x, y, nx, ny, u, v, nu, nv, s, t, ns, nt);
                     }
                   }
@@ -163,7 +173,7 @@ public class A393490 extends Sequence1 {
         }
       }
       counts = newCounts;
-      dump(counts);
+      //dump(counts);
     }
     return total;
   }

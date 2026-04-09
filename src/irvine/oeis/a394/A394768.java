@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a052.A052486;
 
 /**
- * A029495.
+ * A394768 Number of Achilles numbers that do not exceed 2^n.
  * @author Sean A. Irvine
  */
 public class A394768 extends Sequence0 {

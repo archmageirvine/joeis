@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394720 allocated for Wang Yixiang.
+ * A394720 a(1)=2, a(2)=3; for n&gt;=3, a(n) = prime nearest to a(n-1) + a(n-2), with ties broken by taking the smaller prime.
  * @author Sean A. Irvine
  */
 public class A394720 extends Sequence1 {

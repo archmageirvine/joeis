@@ -4,7 +4,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A394774 allocated for John Mason.
+ * A394774 Numbers that have a base 10 representation in which, for any digit d (1 &lt;= d &lt;= 9), the number of occurrences of d is not less than the number of occurrences of d-1.
  * @author Sean A. Irvine
  */
 public class A394774 extends FilterNumberSequence {

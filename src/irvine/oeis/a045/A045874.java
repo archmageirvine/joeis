@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A045874 a(1)=1, a(n) is smallest multiple of n with same beginning as a(n-1).
+ * A045874 a(1)=1, a(n) is the smallest multiple of n that begins with a(n-1).
  * @author Sean A. Irvine
  */
 public class A045874 extends Sequence1 {

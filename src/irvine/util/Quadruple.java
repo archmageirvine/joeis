@@ -2,7 +2,6 @@ package irvine.util;
 
 /**
  * A quadruple of a particular type.
- *
  * @author Sean A. Irvine
  * @param <T> type
  */

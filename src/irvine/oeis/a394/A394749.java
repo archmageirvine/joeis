@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence2;
 
 /**
- * A394749 allocated for Charles L. Hohn.
+ * A394749 Largest GCD of the digits of n in any base b &lt; n, considering only cases where all digits are nonzero.
  * @author Sean A. Irvine
  */
 public class A394749 extends Sequence2 {

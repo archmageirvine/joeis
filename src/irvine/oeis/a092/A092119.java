@@ -7,7 +7,7 @@ import irvine.oeis.transform.EulerTransform;
 
 
 /**
- * A092119 EULER transform of A001511.
+ * A092119 Euler transform of A001511.
  *
  * @author Georg Fischer
  */

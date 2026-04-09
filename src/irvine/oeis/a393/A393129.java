@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A393129 allocated for M. F. Hasler.
+ * A393129 Numbers k such that there is a reversible prime of the form 10^k - 2*10^m - 1.
  * @author Sean A. Irvine
  */
 public class A393129 extends FilterNumberSequence {

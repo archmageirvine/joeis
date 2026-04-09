@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A001027 Powers of 18.
+ * A001027 Powers of 18: a(n) = 18^n.
  * @author Sean A. Irvine
  */
 public class A001027 extends Sequence0 {

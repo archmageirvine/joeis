@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A084366 Numbers n such that the n-th prime number has an odd number of digits and becomes composite if the central digit is removed.
+ * A084366 Numbers k such that the k-th prime number has an odd number of digits and becomes composite if the central digit is removed.
  * @author Sean A. Irvine
  */
 public class A084366 extends A000040 {

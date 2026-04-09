@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A394765 allocated for A.H.M. Smeets.
+ * A394765 Decimal expansion of the number defined by the continued fraction 1/(r+1/(r+1/(r + ...))), where r is the silver ratio (A014176).
  * @author Sean A. Irvine
  */
 public class A394765 extends DecimalExpansionSequence {

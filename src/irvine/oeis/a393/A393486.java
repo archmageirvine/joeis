@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393486 allocated for Morten Brydensholt.
+ * A393486 Triangle read by rows: T(n,k) (0 &lt;= k &lt;= n) such that b(e,e-n) = 2^(e-2n) * Sum_{k=0..n} T(n,k)*binomial(e,k), arising from excess-tail polynomials of row-word inversion clusters on standard Young tableaux of shape (m,m,m).
  * @author Sean A. Irvine
  */
 public class A393486 extends Sequence0 {

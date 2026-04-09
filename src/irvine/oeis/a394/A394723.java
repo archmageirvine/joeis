@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394723 allocated for Felix Huber.
+ * A394723 a(n) is the number of ways to assign signs +- to 1, 2, ..., A042948(n) such that the signed sum equals A042948(n).
  * @author Sean A. Irvine
  */
 public class A394723 extends Sequence0 {

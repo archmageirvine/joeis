@@ -6,7 +6,7 @@ import irvine.oeis.a005.A005361;
 import irvine.oeis.a126.A126706;
 
 /**
- * A394619 allocated for Michael De Vlieger.
+ * A394619 Number of divisors d | k such that d is neither squarefree nor squareful (in A332785) and k = A126706(n).
  * @author Sean A. Irvine
  */
 public class A394619 extends A126706 {

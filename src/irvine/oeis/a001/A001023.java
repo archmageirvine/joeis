@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A001023 Powers of 14.
+ * A001023 Powers of 14: a(n) = 14^n.
  * @author Sean A. Irvine
  */
 public class A001023 extends Sequence0 {

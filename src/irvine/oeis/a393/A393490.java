@@ -7,10 +7,12 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394098 a(n) is the number of different ways for two particles to reach a corner of an equilateral triangular grid of side n units, starting simultaneously from the other two corners and moving at the same constant speed along the grid lines, such that the distance between each particle and its own starting corner is always increasing and the two particles never meet before arriving the destination.
+ * A393490 allocated for Janaka Rodrigo.
  * @author Sean A. Irvine
  */
 public class A393490 extends Sequence1 {
+
+  // todo not currently correct
 
   // Cf. A394097
 
@@ -59,29 +61,31 @@ public class A393490 extends Sequence1 {
   private int mN = 0;
 
   private void update(final HashMap<State, Z> map, final Z value, final int x0, final int y0, final int x1, final int y1, final int u0, final int v0, final int u1, final int v1, final int s0, final int t0, final int s1, final int t1) {
-    final int w1 = mN - u1 - v1;
+    final int w1 = mN - u1 - v1; // Reflection in vertical line
+    // (s,t) reflects as (t,s)
     if (x1 == w1 && y1 == v1) {
       return; // Points (x,y) and (u,v) coincide
     }
-    final int r1 = mN - s1 - t1;
-    if (x1 == s1 && y1 == r1) {
+    //final int r1 = mN - s1 - t1;
+    if (x1 == t1 && y1 == s1) {
       return; // Points (x,y) and (s,t) coincide
     }
-    if (w1 == s1 && v1 == r1) {
+    if (w1 == t1 && v1 == s1) {
       return; // Points (u,v) and (s,t) coincide
     }
 
     // Check if particles traversed the same edge
     // We only need this one way round for each pair (because e.g. we already know (x0,y0) != (u0,v0))
+    // todo something here is wrong!
     final int w0 = mN - u0 - v0;
     if (w1 == x0 && v1 == y0 && w0 == x1 && v0 == y1) {
       return; // used the same edge
     }
-    final int r0 = mN - s0 - t0;
-    if (s0 == x0 && r1 == y0 && s0 == x1 && r0 == y1) {
+    //final int r0 = mN - s0 - t0;
+    if (t0 == x0 && s1 == y0 && t0 == x1 && s0 == y1) {
       return; // used the same edge
     }
-    if (s0 == w0 && r1 == v0 && s0 == w1 && r0 == v1) {
+    if (t0 == w0 && s1 == v0 && t0 == w1 && s0 == v1) {
       return; // used the same edge
     }
     map.merge(new State(x1, y1, u1, v1, s1, t1), value, Z::add);
@@ -102,7 +106,8 @@ public class A393490 extends Sequence1 {
     System.out.println("Current states");
     for (final Map.Entry<State, Z> e : counts.entrySet()) {
       final State key = e.getKey();
-      System.out.println("(" + key.mX + "," + key.mY + "), (" + key.mU + "," + key.mV + "), (" + key.mS + "," + key.mT + ") transforms to: (" + key.mX + "," + key.mY + "), (" + (mN - key.mU - key.mV) + "," + key.mV + "), (" + key.mS + "," + (mN - key.mS - key.mT) + ") = " + e.getValue());
+      //System.out.println("(" + key.mX + "," + key.mY + "), (" + key.mU + "," + key.mV + "), (" + key.mS + "," + key.mT + ") transforms to: (" + key.mX + "," + key.mY + "), (" + (mN - key.mU - key.mV) + "," + key.mV + "), (" + key.mS + "," + (mN - key.mS - key.mT) + ") = " + e.getValue());
+      System.out.println("(" + key.mX + "," + key.mY + "), (" + key.mU + "," + key.mV + "), (" + key.mS + "," + key.mT + ") transforms to: (" + key.mX + "," + key.mY + "), (" + (mN - key.mU - key.mV) + "," + key.mV + "), (" + key.mT + "," + key.mS + ") = " + e.getValue());
     }
   }
 

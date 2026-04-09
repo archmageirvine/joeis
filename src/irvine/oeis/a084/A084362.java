@@ -1,7 +1,6 @@
 package irvine.oeis.a084;
 
-import irvine.math.partition.IntegerPartition;
-import irvine.math.z.Binomial;
+import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -11,20 +10,25 @@ import irvine.oeis.Sequence1;
  */
 public class A084362 extends Sequence1 {
 
-  // a(n) = Sum{j_1 + ... + j_n = n} Sum_{k=1..n} k*C(n-1,k-1), where the outer sum is over all partitions of n.
-  // todo huh? inner sum doesn't depend on the partition
+  // After Alois P. Heinz
 
   private int mN = 0;
+  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
+    @Override
+    protected Z compute(final int n, final int i) {
+      if (n == 0 || i == 1) {
+        return Z.ONE;
+      }
+      return get(n, i - 1).add(get(n - i, Math.min(n - i, i)));
+    }
+  };
 
   @Override
   public Z next() {
-    final IntegerPartition part = new IntegerPartition(++mN);
+    ++mN;
     Z sum = Z.ZERO;
-    int[] p;
-    while ((p = part.next()) != null) {
-      for (int k = 0; k < p.length; ++k) {
-        sum = sum.add(Binomial.binomial(mN - 1, p[k]).multiply(k + 1));
-      }
+    for (int j = 1; j <= mN; ++j) {
+      sum = sum.add(mB.get(mN - j, Math.min(j, mN - j)).multiply(Z.valueOf(j + 1).shiftLeft(j - 2)));
     }
     return sum;
   }

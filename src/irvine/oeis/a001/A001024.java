@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A001024 Powers of 15.
+ * A001024 Powers of 15: a(n) = 15^n.
  * @author Sean A. Irvine
  */
 public class A001024 extends Sequence0 {

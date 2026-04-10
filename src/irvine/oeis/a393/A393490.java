@@ -12,8 +12,6 @@ import irvine.oeis.Sequence1;
  */
 public class A393490 extends Sequence1 {
 
-  // todo not currently correct?
-
   // Cf. A394097
 
   // We hold (x,y), (u,v), (s, t) the coordinate pairs of the three points;
@@ -88,7 +86,7 @@ public class A393490 extends Sequence1 {
     if (s1 == x0 && t1 == y0 && s0 == x1 && t0 == y1) {
       return; // used the same edge
     }
-    if (s1 == u0 && t1 == v0 && s0 == u1 && t0 == t1) {
+    if (s1 == u0 && t1 == v0 && s0 == u1 && t0 == v1) {
       return; // used the same edge
     }
     map.merge(new State(x1, y1, u1, v1, s1, t1), value, Z::add);
@@ -96,7 +94,7 @@ public class A393490 extends Sequence1 {
 
   private boolean isInTriangle(final int x, final int y) {
     // Check that particle remains inside the triangle.
-    return x >= 0 && x <= mN && y >= 0 && y <= mN && x + y <= mN;
+    return x >= 0 && y >= 0 && x + y <= mN;
   }
 
   private boolean check(final int x0, final int y0, final int x1, final int y1) {
@@ -112,13 +110,13 @@ public class A393490 extends Sequence1 {
     return d1 > d0;
   }
 
-  private void dump(final HashMap<State, Z> counts) {
-    System.out.println("Current states");
-    for (final Map.Entry<State, Z> e : counts.entrySet()) {
-      final State key = e.getKey();
-      System.out.println(key + " = " + e.getValue());
-    }
-  }
+//  private void dump(final HashMap<State, Z> counts) {
+//    System.out.println("Current states");
+//    for (final Map.Entry<State, Z> e : counts.entrySet()) {
+//      final State key = e.getKey();
+//      System.out.println(key + " = " + e.getValue());
+//    }
+//  }
 
   @Override
   public Z next() {

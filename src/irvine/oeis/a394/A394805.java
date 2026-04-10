@@ -3,19 +3,20 @@ package irvine.oeis.a394;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
+import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A394076 Smallest dihedral angle, in radians, in an uniform heptagonal antiprism.
- * Formula:
+ * A394805 Decimal expansion of 6 * arcsin(1/3) / Pi.
+ * Formula: 6 * arcsin(1/3) / Pi.
  * @author Georg Fischer
  */
-public class A394076 extends DecimalExpansionSequence {
+public class A394805 extends DecimalExpansionSequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
 
   /** Construct the sequence */
-  public A394076() {
-    super(1, REALS.acos(REALS.cot(CR.PI.divide(CR.SEVEN)).subtract(REALS.csc(CR.PI.divide(CR.SEVEN))).divide(CR.THREE.sqrt())));
+  public A394805() {
+    super(0, CR.SIX.multiply(REALS.asin(CR.valueOf(new Q(1, 3)))).divide(CR.PI));
   }
 }

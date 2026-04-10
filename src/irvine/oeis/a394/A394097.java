@@ -25,14 +25,14 @@ public class A394097 extends Sequence1 {
   private int mN = 0;
 
   private void update(final HashMap<Quadruple<Integer>, Z> map, final Z value, final int x0, final int y0, final int x1, final int y1, final int u0, final int v0, final int u1, final int v1) {
-    if (x1 == mN - u1 - v1 && y1 == v1) {
+    final int w1 = mN - u1 - v1;
+    if (x1 == w1 && y1 == v1) {
       return; // end points coincide
     }
     // Check if particles traversed the same edge
     // We only need this one way round because we already know (x0,y0) != (u0,v0)
     // Reflect u
     final int w0 = mN - u0 - v0;
-    final int w1 = mN - u1 - v1;
     if (w1 == x0 && v1 == y0 && w0 == x1 && v0 == y1) {
       return; // used the same edge
     }

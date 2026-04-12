@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A188145 Solutions of the equation n&quot; - n&apos; - n = 0, where n&apos; and n&quot; are the first and second arithmetic derivatives (see A003415).
+ * A188145 Solutions of the equation n" - n' - n = 0, where n' and n" are the first and second arithmetic derivatives (see A003415).
  * @author Georg Fischer
  */
 public class A188145 extends FilterNumberSequence {

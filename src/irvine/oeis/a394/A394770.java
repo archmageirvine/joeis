@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A394770 allocated for Charles L. Hohn.
+ * A394770 Smallest base b for which the average of the digits of n base b divided by b is the largest for any base b &lt;= n.
  * @author Sean A. Irvine
  */
 public class A394770 extends Sequence2 {

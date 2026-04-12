@@ -6,7 +6,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a007.A007521;
 
 /**
- * A392984 allocated for Joseph Farland.
+ * A392984 a(n) = (A_0 - A_2)/p where p is the n-th prime == 5 (mod 8) with p &gt;= 13, A_0 is the sum of quartic residues mod p, and A_2 is the sum of quadratic-non-quartic residues mod p.
  * @author Sean A. Irvine
  */
 public class A392984 extends Sequence2 {

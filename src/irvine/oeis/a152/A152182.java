@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001113;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A152182 The sequence is a lattice filling using the exponential "E" constant digits base ten.
+ * A152182 Number of overlapping n-digit blocks of e needed to see all 10^n possibilities.
  * @author Sean A. Irvine
  */
 public class A152182 extends Sequence0 {

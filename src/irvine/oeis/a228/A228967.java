@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A228967 Table read by rows; T(n,k) = 2n for k = 1, T(n,k) = 9n for k = 2.
+ * A228967 Table read by rows; T(n,k) = 2*n for k = 1, T(n,k) = 9*n for k = 2.
  * @author Sean A. Irvine
  */
 public class A228967 extends LinearRecurrence {

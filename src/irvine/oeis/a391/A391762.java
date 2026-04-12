@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A391762 allocated for Felix Huber.
+ * A391762 Positive integers k such that both 2*k + 1 and 4*k^2 + 1 are composite, and either 2*k is a perfect power with odd exponent &gt;= 3 or 2*k = 2^r with r &gt; 2 and r not a power of 2.
  * @author Sean A. Irvine
  */
 public class A391762 extends FilterNumberSequence {

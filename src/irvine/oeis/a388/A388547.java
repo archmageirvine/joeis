@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A388547 Triangle read by rows: T(n,k) is the number of length n binary words which are not all zero in which 1&apos;s occur in blocks of at least k.
+ * A388547 Triangle read by rows: T(n,k) is the number of length n binary words which are not all zero in which 1's occur in blocks of at least k.
  * @author Georg Fischer
  */
 public class A388547 extends LambdaTriangle {

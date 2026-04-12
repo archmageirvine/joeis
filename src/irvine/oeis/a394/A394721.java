@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394721 allocated for Leo Hennig.
+ * A394721 Numbers k such that the sum of its proper divisors, each to some power greater than zero, is equal to k itself.
  * @author Sean A. Irvine
  */
 public class A394721 extends Sequence1 {

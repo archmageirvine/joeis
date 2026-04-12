@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A393615 allocated for Dimas Saputra.
+ * A393615 a(n) is the largest integer m such that every integer from 1 to m can be represented as a sum of at most n squares from the set {1^2, 2^2, 3^2, ..., n^2}.
  * @author Sean A. Irvine
  */
 public class A393615 extends Sequence1 {

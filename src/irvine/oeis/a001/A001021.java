@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A001021 Powers of 12.
+ * A001021 Powers of 12: a(n) = 12^n.
  * @author Sean A. Irvine
  */
 public class A001021 extends Sequence0 {

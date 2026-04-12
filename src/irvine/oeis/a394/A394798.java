@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A394798 allocated for Charles L. Hohn.
+ * A394798 For n &gt;= 2, the number of bases b &lt;= n for which the average of the digits of n base b equals the average of the digits of n^2 base b.
  * @author Sean A. Irvine
  */
 public class A394798 extends Sequence2 {

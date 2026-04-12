@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393980 allocated for Ruud H.G. van Tol.
+ * A393980 On the nonnegative integer number line, go to the first next unused power of 2 minus 1, then spiral back to pick up any skipped numbers, and repeat.
  * @author Sean A. Irvine
  */
 public class A393980 extends Sequence0 {

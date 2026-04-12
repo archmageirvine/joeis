@@ -5,7 +5,7 @@ import irvine.oeis.a248.A248916;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A249136 Decimal expansion of the largest constant &apos;beta&apos; for which there exists a solution to the differential equation y&apos;&apos;(x)+exp(y(x))=0, with y(0)=y(beta)=0.
+ * A249136 Decimal expansion of the largest constant 'beta' for which there exists a solution to the differential equation y''(x)+exp(y(x))=0, with y(0)=y(beta)=0.
  * Formula:
  * @author Georg Fischer
  */

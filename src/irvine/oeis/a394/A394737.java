@@ -8,7 +8,7 @@ import irvine.oeis.Sequence2;
 import irvine.util.Permutation;
 
 /**
- * A394737 allocated for Gordon Hamilton.
+ * A394737 a(n) is the number of unordered sets of unit fractions with smallest element 1/n that can be made into a pie so that no consecutive subset may be replaced by a larger unit fraction.
  * @author Sean A. Irvine
  */
 public class A394737 extends Sequence2 {

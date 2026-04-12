@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393490 allocated for Janaka Rodrigo.
+ * A393490 a(n) is the number of different ways in which three particles move from A-&gt;B, B-&gt;C, and C-&gt;A on an equilateral triangular grid ABC of side n units, starting simultaneously and moving at the same constant speed along the grid lines, such that the distance of each particle from its starting corner is always increasing, and no two particles ever meet.
  * @author Sean A. Irvine
  */
 public class A393490 extends Sequence1 {

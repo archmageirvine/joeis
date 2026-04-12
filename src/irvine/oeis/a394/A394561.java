@@ -7,7 +7,7 @@ import irvine.oeis.a052.A052486;
 import irvine.oeis.a286.A286708;
 
 /**
- * A394561 allocated for Michael De Vlieger.
+ * A394561 Number of divisors d | A286708(n) such that d is an Achilles number (in A052486).
  * @author Sean A. Irvine
  */
 public class A394561 extends A286708 {

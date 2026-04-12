@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A388717 Triangle read by rows: T(n,k) is the total number of runs of 1&apos;s in all length n binary words in which 1&apos;s occur in runs of at least k.
+ * A388717 Triangle read by rows: T(n,k) is the total number of runs of 1's in all length n binary words in which 1's occur in runs of at least k.
  * @author Georg Fischer
  */
 public class A388717 extends LambdaTriangle {

@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000182;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A394396 allocated for U\u011fur Sezen.
+ * A394396 Decimal expansion of (1/2)*Sum_{k&gt;=3} (k*tan(Pi/k)/Pi - 1).
  * @author Sean A. Irvine
  */
 public class A394396 extends DecimalExpansionSequence {

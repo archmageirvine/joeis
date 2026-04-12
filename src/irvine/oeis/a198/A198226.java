@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A198226 Decimal expansion of least x having 3*x^2+2x=3*cos(x).
+ * A198226 Decimal expansion of least x having 3*x^2+2x=3*cos(x), negated.
  * Equation; 3*x^2+2*x-3*cos(x)
  * @author Georg Fischer
  */

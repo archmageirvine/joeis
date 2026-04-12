@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393845 allocated for Ali Sada.
+ * A393845 a(n) is the smallest positive multiple of n whose decimal representation contains every distinct digit of n-1.
  * @author Sean A. Irvine
  */
 public class A393845 extends Sequence1 {

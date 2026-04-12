@@ -5,7 +5,7 @@ import irvine.oeis.PartialProductSequence;
 import irvine.oeis.a002.A002313;
 
 /**
- * A185952 Partial products of A002313, the primes that are 1 or 2 (mod 4).
+ * A185952 Partial products of A002313.
  * @author Georg Fischer
  */
 public class A185952 extends PartialProductSequence {

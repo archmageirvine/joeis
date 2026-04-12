@@ -4,7 +4,7 @@ import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.a022.A022307;
 
 /**
- * A394771 allocated for Shyam Sunder Gupta.
+ * A394771 Numbers k such that Fibonacci(k) has a record number of distinct prime factors.
  * @author Sean A. Irvine
  */
 public class A394771 extends RecordPositionSequence {

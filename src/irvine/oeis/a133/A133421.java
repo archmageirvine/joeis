@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A133421 Image of n under one application of the "7x+1" map.
+ * A133421 The "7x+1" map: x/p if p is the least prime factor &lt; 7 of x, or 7x+1 if there's no such p.
  * @author Sean A. Irvine
  */
 public class A133421 extends Sequence1 {

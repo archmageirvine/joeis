@@ -7,7 +7,7 @@ import irvine.oeis.a081.A081493;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A394694 allocated for Gokul Padmanabhan.
+ * A394694 Number of occurrences of n in A081493.
  * @author Sean A. Irvine
  */
 public class A394694 extends Sequence2 {

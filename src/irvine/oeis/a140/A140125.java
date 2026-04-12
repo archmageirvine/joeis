@@ -4,7 +4,7 @@ package irvine.oeis.a140;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A140125 A prime chain of 147 terms consisting of the output of four equations that alternate sequentially. The equations are either subsequences of x^2 - 79x + 1601 or transforms. The four equations are 4x^2 - 146x + 1373, 4x^2 - 144x + 1459, 4x^2 - 142x + 1301, 4x^2 - 140x + 1877.
+ * A140125 A prime chain of 147 terms consisting of the output of four equations that alternate sequentially. The equations are either subsequences of x^2 - 79*x + 1601 or transforms. The four equations are 4*x^2 - 146*x + 1373, 4*x^2 - 144*x + 1459, 4*x^2 - 142*x + 1301, 4*x^2 - 140*x + 1877.
  * @author Georg Fischer
  */
 public class A140125 extends FiniteSequence {

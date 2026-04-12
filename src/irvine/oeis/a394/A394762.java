@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394762 allocated for Michael Shmoish.
+ * A394762 Minimum number of draws without replacement from an urn with n white and n black balls to ensure the probability of drawing at least one ball of each color is &gt;= n/(n+1).
  * @author Sean A. Irvine
  */
 public class A394762 extends Sequence1 {

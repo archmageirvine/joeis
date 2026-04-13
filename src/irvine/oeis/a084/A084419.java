@@ -15,7 +15,7 @@ public class A084419 extends Sequence1 {
 
   private long mN = 0;
 
-  private void search(final long[] d, final HashSet<Z> prods, Z prod, final int pos) {
+  private void search(final long[] d, final HashSet<Z> prods, final Z prod, final int pos) {
     if (pos >= d.length) {
       if (prod.add(1).isProbablePrime()) {
         prods.add(prod);

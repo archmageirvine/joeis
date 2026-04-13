@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
  */
 public class A061116 extends Sequence1 {
 
-  private long mN = 10;
+  private long mN = 0;
 
   private boolean is(final long n) {
     long m = n;

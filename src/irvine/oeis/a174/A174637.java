@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A174637 Number of n X n (0,1) matrices with two 1&apos;s in each row the permanent of which equals to 4.
+ * A174637 Number of n X n (0,1) matrices with two 1's in each row the permanent of which equals to 4.
  * @author Georg Fischer
  */
 public class A174637 extends LambdaSequence {

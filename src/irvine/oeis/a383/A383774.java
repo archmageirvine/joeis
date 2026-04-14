@@ -15,12 +15,12 @@ public class A383774 extends Combiner {
   public A383774() {
     super(1, new A052182() {
 
-      private int mN = -1;
+      private int mN = -2;
 
       @Override
       public Z next() {
         return super.next().multiply(Z.NEG_ONE.pow(++mN / 2));
       }
-    }, new A085719().skip(), (det, perm) -> det.subtract(perm).divide2());
+    }.skip(), new A085719().skip(), (det, perm) -> det.subtract(perm).divide2());
   }
 }

@@ -12,6 +12,6 @@ public class A383773 extends Combiner {
 
   /** Construct the sequence. */
   public A383773() {
-    super(1, new A052182(), new A085719().skip(), (det, perm) -> det.add(perm).divide2());
+    super(1, new A052182().skip(), new A085719().skip(), (det, perm) -> det.add(perm).divide2());
   }
 }

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A139104 Numbers whose binary representation shows the distribution of prime numbers up to the n-th prime, using &quot;0&quot; for primes and &quot;1&quot; for nonprime numbers.
+ * A139104 Numbers whose binary representation shows the distribution of prime numbers up to the n-th prime, using "0" for primes and "1" for nonprime numbers.
  * @author Georg Fischer
  */
 public class A139104 extends LambdaSequence {

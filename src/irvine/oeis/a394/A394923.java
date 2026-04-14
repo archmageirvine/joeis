@@ -7,7 +7,7 @@ import irvine.oeis.a244.A244847;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A394923 Decimal expansion of the probability that a straight line drawn through a point selected uniformly at random on the perimeter of a regular pentagon, with a direction selected independently and uniformly at random, intersects one of the two sides adjacent t
+ * A394923 Decimal expansion of the probability that a straight line drawn through a point selected uniformly at random on the perimeter of a regular pentagon, with a direction selected independently and uniformly at random, intersects one of the two sides adjacent to the side on which the point lies.
  * Formula:
  * @author Georg Fischer
  */

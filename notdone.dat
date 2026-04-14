@@ -2721,3 +2721,4 @@ A083942 Positions of breadth-first-wise encodings (A002542) of the complete bina
 A084192 Array read by antidiagonals: T(n,k) = solution to postage stamp problem with n stamps and k denominations (n >= 1, k >= 1).
 A084193 Array read by antidiagonals: T(k,n) = solution to postage stamp problem with n stamps and k denominations (n >= 1, k >= 1).
 A084233 Decimal expansion of area under the curve Zeta(1/2 + t*I) from zero to its first nontrivial zero (A058303).
+A084425 Let b(0) = n, b(2*k+1) = c, where c > b(m) is the smallest number such that gcd(c,b(2*k))=1, b(2*k+2) = e where e < b(m) is the smallest number such that gcd(e,b(2*k+1))=1 for m = 0..2*k, until reaching e = 1. Then a(n) = the last c.

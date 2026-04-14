@@ -1,35 +1,36 @@
 package irvine.oeis.a394;
 
+import java.util.HashSet;
+import java.util.Set;
+
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A394685: Number of convex subsets of {1,...,n} under divisibility.
+ * A394685 allocated for Thomas DiFiore.
  * @author Sean A. Irvine
  */
 public class A394685 extends Sequence1 {
 
   private int mN = 0;
+  private Set<Long> mStates = new HashSet<>();
+  {
+    mStates.add(0L); // empty set
+  }
 
-  private boolean isConvex(final long mask, final int n) {
-    for (int x = 1; x <= n; ++x) {
+  private boolean isValid(final long mask, final int k, final long[] d) {
+    for (final long x : d) {
       if ((mask & (1L << (x - 1))) == 0) {
         continue;
       }
-      for (int y = x + 1; y <= n; ++y) {
-        if ((mask & (1L << (y - 1))) == 0) {
+      for (long z = x + 1; z < k; ++z) {
+        if ((mask & (1L << (z - 1))) != 0) {
           continue;
         }
-        if (y % x == 0) {
-          // check for z with x | z | y but z not in set
-          for (int z = 1; z <= n; ++z) {
-            if ((mask & (1L << (z - 1))) != 0) {
-              continue;
-            }
-            if (z % x == 0 && y % z == 0) {
-              return false;
-            }
-          }
+        if (z % x == 0 && k % z == 0) {
+          return false;
         }
       }
     }
@@ -39,14 +40,18 @@ public class A394685 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    final long total = 1L << mN;
-    long count = 0;
-    for (long mask = 0; mask < total; ++mask) {
-      if (isConvex(mask, mN)) {
-        ++count;
+    final long[] d = ZUtils.toLong(Jaguar.factor(mN).divisorsSorted()); // precompute divisors
+    final Set<Long> next = new HashSet<>();
+    for (final long mask : mStates) {
+      // Don't include mN
+      next.add(mask);
+      // Include mN if valid
+      if (isValid(mask, mN, d)) {
+        next.add(mask | (1L << (mN - 1)));
       }
     }
-    return Z.valueOf(count);
+    mStates = next;
+    return Z.valueOf(mStates.size());
   }
-}
 
+}

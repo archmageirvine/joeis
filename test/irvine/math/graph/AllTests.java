@@ -18,6 +18,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(Graph6Test.class);
     suite.addTestSuite(GraphFactoryTest.class);
     suite.addTestSuite(GraphUtilsTest.class);
+    suite.addTestSuite(JoinTest.class);
     suite.addTestSuite(MaximalCliquesTest.class);
     suite.addTestSuite(MaximumIndependentSetTest.class);
     suite.addTestSuite(PlanarityTest.class);

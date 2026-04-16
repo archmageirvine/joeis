@@ -7,8 +7,8 @@ package irvine.math.expression;
 public class HyperbolicSine extends UnaryFunction {
 
   /**
-   * Construct the exponential of an expression.
-   * @param expr expression to compute the exponential of
+   * Construct the hyperbolic sine of an expression.
+   * @param expr expression to compute the hyperbolic sine of
    */
   public HyperbolicSine(final Expression expr) {
     super(expr, "sinh");

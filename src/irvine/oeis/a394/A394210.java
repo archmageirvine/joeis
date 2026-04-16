@@ -15,12 +15,12 @@ public class A394210 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    long k = 1; // todo I think this should start at 0 to allow a(1)=2 -- see pink box discussion
+    long k = 1;
     while (true) {
       final Z t = Z.valueOf(++k).shiftLeft(mN);
       if (Functions.GPF.z(t).compareTo(Functions.GPF.z(t.subtract(1))) > 0) {
-        return t;
-        //return Z.valueOf(k);
+        //return t;
+        return Z.valueOf(k);
       }
     }
   }

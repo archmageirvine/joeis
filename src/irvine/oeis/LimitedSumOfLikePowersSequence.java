@@ -96,7 +96,7 @@ public class LimitedSumOfLikePowersSequence extends Sequence1 {
       return;
     }
     // Add one more term into the sum and recurse
-    for (int k = prevBase + mAdd; k <= mM; ++k) {
+    for (int k = prevBase + mAdd; k <= mM - mAdd; ++k) {
       insertTerms(sumSoFar.add(pow(k)), termsSoFar + 1, k);
     }
   }
@@ -105,7 +105,7 @@ public class LimitedSumOfLikePowersSequence extends Sequence1 {
   public Z next() {
     while (true) {
       while (mA.isEmpty() || mA.firstKey().compareTo(pow(mM)) >= 0) {
-        insertTerms(pow(mM), 1, 1);
+        insertTerms(pow(mM), 1, 1 - mAdd);
         ++mM; // we finished adding all sums of powers up to mM^p
         if (mVerbose && mM % 10 == 0) {
           StringUtils.message("Search done to " + mM + "^" + mPower);

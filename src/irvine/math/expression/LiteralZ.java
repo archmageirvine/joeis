@@ -11,7 +11,8 @@ import irvine.math.z.Z;
 public class LiteralZ extends Literal<Z, Integers> {
 
   static final LiteralZ LIT_NEG_ONE = new LiteralZ(Z.NEG_ONE);
-  static final LiteralZ LIT_ZERO = new LiteralZ(Z.ZERO);
+  /** The literal 0. */
+  public static final LiteralZ LIT_ZERO = new LiteralZ(Z.ZERO);
   /** The literal 1. */
   public static final LiteralZ LIT_ONE = new LiteralZ(Z.ONE);
   static final LiteralZ LIT_TWO = new LiteralZ(Z.TWO);

@@ -13,6 +13,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
+import java.util.Set;
 import java.util.function.Function;
 
 import irvine.graph.Vertex;
@@ -1762,6 +1763,32 @@ public final class GraphUtils {
    */
   public static boolean isAsteroidalTripleFree(final Graph graph) {
     return new AsteroidalTripleFree(graph).is();
+  }
+
+  /**
+   * Construct all the graphs that can be formed by adding any number of
+   * edges between <code>g</code> and <code>h</code>.
+   * @param g graph
+   * @param h graph
+   * @return set of graphs
+   */
+  public static Set<Graph> join(final Graph g, final Graph h) {
+    return Join.join(g, h);
+  }
+
+  /**
+   * Retain the connected graphs from a collection.
+   * @param graphs collection
+   * @return connected graphs
+   */
+  public static List<Graph> filterConnected(final Collection<Graph> graphs) {
+    final ArrayList<Graph> res = new ArrayList<>();
+    for (final Graph g : graphs) {
+      if (g.isConnected()) {
+        res.add(g);
+      }
+    }
+    return res;
   }
 }
 

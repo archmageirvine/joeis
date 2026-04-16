@@ -1,17 +1,17 @@
 package irvine.math.expression;
 
 /**
- * An expression for the hyperbolic cosine.
+ * An expression for the cosine.
  * @author Sean A. Irvine
  */
-public class HyperbolicCosine extends UnaryFunction {
+public class Cosine extends UnaryFunction {
 
   /**
-   * Construct the hyperbolic cosine of an expression.
-   * @param expr expression to compute the hyperbolic consine of
+   * Construct the  cosine of an expression.
+   * @param expr expression to compute the cosine of
    */
-  public HyperbolicCosine(final Expression expr) {
-    super(expr, "cosh");
+  public Cosine(final Expression expr) {
+    super(expr, "cos");
   }
 
   @Override
@@ -26,18 +26,18 @@ public class HyperbolicCosine extends UnaryFunction {
     if (expr == arg()) {
       return this;
     } else {
-      return new HyperbolicCosine(expr);
+      return new Cosine(expr);
     }
   }
 
   @Override
   public Expression substitute(final Identifier var, final Expression value) {
-    return new HyperbolicCosine(arg().substitute(var, value));
+    return new Cosine(arg().substitute(var, value));
   }
 
   @Override
   public Expression diff(final Identifier var) {
-    // d(cosh(f(x))/dx -> (sinh(f(x))) * f'(x)
-    return Multiply.create(arg().diff(var).eval(), new HyperbolicSine(arg()));
+    // d(cos(f(x))/dx -> -(sin(f(x))) * f'(x)
+    return Multiply.create(arg().diff(var).eval(), new Negate(new Sine(arg())));
   }
 }

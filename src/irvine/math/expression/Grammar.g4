@@ -51,6 +51,16 @@ expr returns [Expression v]
       $ctx.v = new Exponential($a.v);
     }
 
+  | 'cos' '(' a=expr ')'
+    {
+      $ctx.v = new Cosine($a.v);
+    }
+
+  | 'sin' '(' a=expr ')'
+    {
+      $ctx.v = new Sine($a.v);
+    }
+
   | 'cosh' '(' a=expr ')'
     {
       $ctx.v = new HyperbolicCosine($a.v);

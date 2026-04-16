@@ -48,7 +48,7 @@ public class SumOfLikePowersSequence extends AbstractSequence {
   }
 
   /**
-   * Construct the sequence. of powers.
+   * Construct the sequence of powers.
    * @param power the power to be used in each term
    * @param terms number of terms in the sum
    */
@@ -77,7 +77,7 @@ public class SumOfLikePowersSequence extends AbstractSequence {
       }
     }
     // Add one more term into the sum and recurse
-    for (int k = prevBase + mAdd; k <= mM; ++k) {
+    for (int k = prevBase + mAdd; k <= mM - mAdd; ++k) {
       insertTerms(sumSoFar.add(pow(k)), termsSoFar + 1, k);
     }
   }
@@ -85,7 +85,7 @@ public class SumOfLikePowersSequence extends AbstractSequence {
   @Override
   public Z next() {
     while (mA.isEmpty() || mA.first().compareTo(pow(mM)) >= 0) {
-      insertTerms(pow(mM), 1, 1);
+      insertTerms(pow(mM), 1, 1 - mAdd);
       ++mM; // we finished adding all sums of powers up to mM^p
     }
     return mA.pollFirst();

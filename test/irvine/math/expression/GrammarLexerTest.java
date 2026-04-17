@@ -75,7 +75,7 @@ public class GrammarLexerTest extends TestCase {
     while ((s = vocabulary.getLiteralName(++k)) != null) {
       vocab.add(s);
     }
-    assertEquals("['!', '##', '#', '%', '(', ')', '*', '+', ',', '-', '..', '/', '=', '^', 'cosh', 'diff', 'exp', 'fibonacci', 'log', 'lucas', 'sinh', 'subs', 'sum', 'tanh']", vocab.toString());
+    assertEquals("['!', '##', '#', '%', '(', ')', '*', '+', ',', '-', '..', '/', '=', '^', 'cos', 'cosh', 'diff', 'exp', 'fibonacci', 'log', 'lucas', 'sin', 'sinh', 'subs', 'sum', 'tanh']", vocab.toString());
     assertNull(new GrammarLexer(null).getVocabulary().getSymbolicName(2));
   }
 

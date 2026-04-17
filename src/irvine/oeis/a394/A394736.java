@@ -48,10 +48,22 @@ public class A394736 extends Sequence0 {
       mPrimeGraphs.add(Collections.emptyList());
       return Z.ZERO;
     }
-    final List<Graph> primes = new ArrayList<>();
+    Set<Graph> composites = new HashSet<>();
+    for (int k = 2; k < mN; ++k) {
+      if (mN % k == 0) {
+        build(composites, k, mN / k);
+      }
+    }
+    if (mVerbose) {
+      StringUtils.message("Total number of composites: " + composites.size());
+    }
+    final List<Graph> primes = Collections.synchronizedList(new ArrayList<>());
     mPrimeGraphs.add(primes);
     new ParallelGenerateGraphsSequence(mN, mN - 1, mN, 0, () -> (g) -> {
-      primes.add(GraphUtils.canon(g));
+      final Graph canon = GraphUtils.canon(g);
+      if (!composites.contains(canon)) {
+        primes.add(canon);
+      }
       return 0;
     }) {
       @Override
@@ -62,16 +74,6 @@ public class A394736 extends Sequence0 {
         gg.setMaxEdges(mN * (mN - 1));
       }
     }.next();
-    Set<Graph> composites = new HashSet<>();
-    for (int k = 2; k < mN; ++k) {
-      if (mN % k == 0) {
-        build(composites, k, mN / k);
-      }
-    }
-    if (mVerbose) {
-      StringUtils.message("Total number of composites: " + composites.size());
-    }
-    primes.removeAll(composites);
     //System.out.println(primes);
     return Z.valueOf(mPrimeGraphs.get(mN).size());
   }

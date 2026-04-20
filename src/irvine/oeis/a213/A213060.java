@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A213060 Lucas(n) mod n, Lucas(n)= A000032(n).
+ * A213060 Lucas(n) mod n, where Lucas = A000032.
  * @author Georg Fischer
  */
 public class A213060 extends LambdaSequence {

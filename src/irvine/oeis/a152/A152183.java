@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001622;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A152183 The sequence is a lattice filling using the Golden Ratio, (Sqrt[5]+1)/2, constant digits base ten.
+ * A152183 Number of overlapping n-digit blocks of the golden ratio phi = (sqrt(5)+1)/2 needed to see all 10^n possibilities.
  * @author Sean A. Irvine
  */
 public class A152183 extends Sequence0 {

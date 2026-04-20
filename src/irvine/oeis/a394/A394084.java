@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A394084 allocated for Jean-Marc Rebert.
+ * A394084 a(1) = 1, a(2) = 2; for n &gt; 2, a(n) is the smallest unused positive integer k whose greatest prime factor matches the greatest prime factor of the sum of the greatest prime factors of the previous terms.
  * @author Sean A. Irvine
  */
 public class A394084 extends Sequence1 {

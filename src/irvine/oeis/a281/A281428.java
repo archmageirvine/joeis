@@ -4,7 +4,7 @@ package irvine.oeis.a281;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A281428 E.g.f. C(x) satisfies: C(x) = cosh( Integral C(x)^4 dx ).
+ * A281428 E.g.f. C(x) satisfies C(x) = cosh( Integral C(x)^4 dx ).
  * @author Georg Fischer
  */
 public class A281428 extends PolynomialFieldSequence {

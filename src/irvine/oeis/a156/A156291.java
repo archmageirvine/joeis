@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A156291 A triangle sequence of Cyclotomic products: t(n,m)=Product[Cyclotomic[k, m + 1], {k, 1, n}].
+ * A156291 Triangle read by rows: T(n,m) = Product_{k=1..n} Phi(k, m+1) where Phi(k,m) is the k-th cyclotomic polynomial evaluated at m.
  * @author Sean A. Irvine
  */
 public class A156291 extends Sequence1 {

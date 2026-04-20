@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A084417 Triangle read by rows: T(n,k)=sum((n+1-i)!*stirling2(n,n+1-i),i=1..k), n&gt;=1, 1&lt;=k&lt;=n.
+ * A084417 Triangle read by rows: T(n,k) = Sum_{i=1..k} (n+1-i)! * Stirling2(n,n+1-i), n&gt;=1, 1&lt;=k&lt;=n.
  * @author Sean A. Irvine
  */
 public class A084417 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A036917 G.f.: (4/Pi^2)*EllipticK(4*x^(1/2))^2.
+ * A036917 Expansion of g.f. (4/Pi^2)*EllipticK(4*x^(1/2))^2.
  * @author Sean A. Irvine
  */
 public class A036917 extends AbstractSequence {

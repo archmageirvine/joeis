@@ -3,7 +3,7 @@ package irvine.oeis.a394;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A394914 allocated for Paolo Xausa.
+ * A394914 a(n) is the number of faces with the highest number of sides in Johnson solid J_n.
  * @author Sean A. Irvine
  */
 public class A394914 extends FiniteSequence {

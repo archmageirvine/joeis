@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394976 allocated for Jwalin Bhatt.
+ * A394976 Numerators of the coefficient of Pi^(2n+1) in Plouffe's formula for zeta(2n+1).
  * @author Sean A. Irvine
  */
 public class A394976 extends Sequence1 {

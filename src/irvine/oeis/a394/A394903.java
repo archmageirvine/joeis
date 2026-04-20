@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394903 allocated for William Parker.
+ * A394903 Number of square grid edges that are visible through the n-th order Sierpinski carpet fractal.
  * @author Sean A. Irvine
  */
 public class A394903 extends Sequence0 {

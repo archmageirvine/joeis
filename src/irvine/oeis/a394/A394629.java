@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394629 allocated for M. F. Hasler.
+ * A394629 Number of pairs of primes (p, q) such that n! = q^2 - p^2.
  * @author Sean A. Irvine
  */
 public class A394629 extends Sequence0 {

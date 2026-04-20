@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A100201 Primes of the form 23n+3.
+ * A100201 Primes of the form 23*k+3.
  * @author Georg Fischer
  */
 public class A100201 extends PrimeSubsequence {

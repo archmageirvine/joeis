@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001110;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A349766 Numbers of the form 2*t^2-4 when t &gt; 1 is a term in A001541.
+ * A349766 Numbers of the form 2*t^2 - 4 when t &gt; 1 is a term in A001541.
  * @author Georg Fischer
  */
 public class A349766 extends SimpleTransformSequence {

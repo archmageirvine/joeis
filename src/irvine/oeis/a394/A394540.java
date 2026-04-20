@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000058;
 
 /**
- * A394540 Sequence where, for every step t starting from 2, k is appended if t is a multiple of s(k-1) where s(k) is the Sylvester's sequence (A000058). If multiple numbers trigger on the same step, they are appended in increasing order.
+ * A394540 Sequence where, for every step t starting from 2, k is appended if t is a multiple of s(k-1), where s is Sylvester's sequence (A000058). If multiple numbers trigger on the same step, they are appended in increasing order.
  * @author Sean A. Irvine
  */
 public class A394540 extends Sequence1 {

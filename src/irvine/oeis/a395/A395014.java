@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a005.A005101;
 
 /**
- * A395014 allocated for Shyam Sunder Gupta.
+ * A395014 Abundant numbers k for which the k-th Fibonacci number is deficient.
  * @author Sean A. Irvine
  */
 public class A395014 extends FilterSequence {

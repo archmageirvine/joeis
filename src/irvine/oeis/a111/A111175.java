@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A111175 Numbers n such that 30*n + 1 is prime.
+ * A111175 Numbers k such that 30*k + 1 is prime.
  * @author Georg Fischer
  */
 public class A111175 extends PrimePositionSubsequence {

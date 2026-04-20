@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A099164 (L(n+2)+2*3^n)/5.
+ * A099164 a(n) = (L(n+2) + 2*3^n)/5.
  * @author Sean A. Irvine
  */
 public class A099164 extends LinearRecurrence {

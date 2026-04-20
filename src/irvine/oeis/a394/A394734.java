@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a023.A023196;
 
 /**
- * A394734 allocated for Felix Huber.
+ * A394734 a(n) is the number of subsets of proper divisors of A023196(n) that add to A023196(n).
  * @author Sean A. Irvine
  */
 public class A394734 extends A023196 {

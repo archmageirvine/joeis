@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393840 allocated for Arkadiusz Wesolowski.
+ * A393840 Number of prime factors of the form k*2^A228845(n) + 1 (with k odd) that divide the Fermat number 2^(2^n) + 1.
  * @author Sean A. Irvine
  */
 public class A393840 extends Sequence0 {

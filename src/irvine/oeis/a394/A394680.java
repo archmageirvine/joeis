@@ -6,7 +6,7 @@ import irvine.math.series.SeriesParser;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A394680 allocated for Alex Shvets.
+ * A394680 Expansion of 2F1(1/3, 2/3; 3/2; 27*x/(1-4*x)^3)^2.
  * @author Sean A. Irvine
  */
 public class A394680 extends GfSequence {

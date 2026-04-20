@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A071815 Decimal expansion of Sum_{k&gt;=0} d(k!)/k! where d is the number of divisors function.
+ * A071815 Decimal expansion of Sum_{k&gt;=1} d(k!)/k! where d is the number of divisors function.
  * @author Sean A. Irvine
  */
 public class A071815 extends DecimalExpansionSequence {

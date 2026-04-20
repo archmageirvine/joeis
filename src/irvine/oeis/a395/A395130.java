@@ -9,7 +9,7 @@ import irvine.oeis.a006.A006884;
 import irvine.oeis.a006.A006885;
 
 /**
- * A006577.
+ * A395130 In the '3x+1' problem, take the sequence of starting values which set new records for the highest point of the trajectory before reaching 1 (A006884); sequence gives the number of halving and tripling steps with which the maximal value is reached in the trajectory with that start.
  * @author Sean A. Irvine
  */
 public class A395130 extends Sequence1 {

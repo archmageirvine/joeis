@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012475 arctan(cos(x)*sin(x))=x-6/3!*x^3+120/5!*x^5-7056/7!*x^7+758400/9!*x^9...
+ * A012475 a(n) = (2*n+1) [x^(2*n+1)] arctan(cos(x)*sin(x)).
  * @author Sean A. Irvine
  */
 public class A012475 extends Sequence0 {

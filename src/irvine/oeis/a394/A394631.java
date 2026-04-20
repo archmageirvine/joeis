@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394631 allocated for M. F. Hasler.
+ * A394631 Least prime p such that p^2 + n! is again the square of a prime, or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A394631 extends Sequence0 {

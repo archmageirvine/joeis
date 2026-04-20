@@ -4,7 +4,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A393803 allocated for Vincenzo Manto.
+ * A393803 Numbers whose number of nonzero digits is identical in base 2 and 3.
  * @author Sean A. Irvine
  */
 public class A393803 extends FilterNumberSequence {

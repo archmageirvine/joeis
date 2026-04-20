@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A394854 allocated for Jwalin Bhatt.
+ * A394854 Sequence where k is appended after every F(k+1) occurrences of 1 where F(k) is k-th term of the Fibonacci sequence (A000045), with multiple values following a 1 listed in order.
  * @author Sean A. Irvine
  */
 public class A394854 extends Sequence1 {

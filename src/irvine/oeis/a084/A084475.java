@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A084475 a(n) defines the first brilliant number, b_n, greater than 10^n. If n is odd or zero, then b_n is 10^n+a(n); and if n is a positive even number, then b_n is {10^(n/2)+a(n)}^2.
+ * A084475 a(n) defines the first brilliant number, b_n, greater than or equal to 10^n. If n is odd or zero, then b_n is 10^n+a(n); and if n is a positive even number, then b_n is {10^(n/2)+a(n)}^2.
  * @author Sean A. Irvine
  */
 public class A084475 extends Sequence0 {
@@ -18,7 +18,7 @@ public class A084475 extends Sequence0 {
       return Z.THREE;
     }
     long k = -1;
-    if ((mN & 1)== 1) {
+    if ((mN & 1) == 1) {
       final Z t = Z.TEN.pow(mN);
       while (true) {
         if (Predicates.BRILLIANT.is(t.add(++k))) {

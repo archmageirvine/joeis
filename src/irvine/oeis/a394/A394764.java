@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a392.A392091;
 
 /**
- * A394764 allocated for Tsuyoshi Hanatate.
+ * A394764 Maximum absolute difference over adjacent pairs in row n of A392091.
  * @author Sean A. Irvine
  */
 public class A394764 extends A392091 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394917 allocated for Juri-Stepan Gerasimov.
+ * A394917 Irregular triangle read by rows in which row n lists all k from [1..2^(n - 1)] with exactly n divisors.
  * @author Sean A. Irvine
  */
 public class A394917 extends Sequence1 {

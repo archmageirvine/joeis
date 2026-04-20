@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394741 allocated for Clark Kimberling.
+ * A394741 a(n) = number of triples (x, y, z) such that x^2 + y*z = n, where x, y, z are primes, not necessarily distinct, and y &lt;= z.
  * @author Sean A. Irvine
  */
 public class A394741 extends Sequence0 {

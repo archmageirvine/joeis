@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A394742 allocated for Clark Kimberling.
+ * A394742 a(n) = number of triples (x, y, z) such that x^2 + y*z = n, where x &lt; y &lt; z are primes.
  * @author Sean A. Irvine
  */
 public class A394742 extends Sequence0 {

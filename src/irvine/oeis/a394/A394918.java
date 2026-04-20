@@ -3,7 +3,7 @@ package irvine.oeis.a394;
 import irvine.oeis.InverseSequence;
 
 /**
- * A394918 allocated for Robert G. Wilson v.
+ * A394918 Least integer k such that A394475(k) = n.
  * @author Sean A. Irvine
  */
 public class A394918 extends InverseSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a141.A141421;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A165823 Large denominators of Bernoulli numbers. Mix A002445, 2*A141421 .
+ * A165823 Interleaved terms of A002445 and 2*A141421.
  * @author Sean A. Irvine
  */
 public class A165823 extends InterleaveSequence {

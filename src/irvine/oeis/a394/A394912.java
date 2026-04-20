@@ -3,7 +3,7 @@ package irvine.oeis.a394;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A394912 allocated for Paolo Xausa.
+ * A394912 Irregular triangle read by rows: T(n,k) = number of k-gonal faces in Johnson solid J_n, with 3 &lt;= k &lt;= A394913(n).
  * @author Sean A. Irvine
  */
 public class A394912 extends FiniteSequence {

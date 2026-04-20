@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a063.A063486;
 
 /**
- * A130730 Fermat numbers of order 7 or F(n,7) = 2^(2^n)+7.
+ * A130730 Fermat numbers of order 7 or F(n,7) = 2^(2^n) + 7.
  * @author Georg Fischer
  */
 public class A130730 extends AbstractSequence {

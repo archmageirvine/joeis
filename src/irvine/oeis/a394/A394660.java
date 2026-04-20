@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A394660 allocated for Lei Zhou.
+ * A394660 a(n) is the largest prime number such that prime(n)-a(n) is a 3-smooth number where prime(n) denotes the n-th prime number, or zero if no such number exists.
  * @author Sean A. Irvine
  */
 public class A394660 extends Sequence2 {

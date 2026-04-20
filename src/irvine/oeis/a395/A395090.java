@@ -6,7 +6,7 @@ import irvine.oeis.Sequence2;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A395090 allocated for Connor O'Higgins.
+ * A395090 a(n) is the minimum number of moves needed to reach 0 from n, where a move subtracts a prime divisor of the current number.
  * @author Sean A. Irvine
  */
 public class A395090 extends Sequence2 {

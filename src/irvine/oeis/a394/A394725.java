@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394725 allocated for Leo Hennig.
+ * A394725 Numbers k such that the sum of its proper divisors, each to some power greater than zero, is equal to 2*k.
  * @author Sean A. Irvine
  */
 public class A394725 extends Sequence1 {

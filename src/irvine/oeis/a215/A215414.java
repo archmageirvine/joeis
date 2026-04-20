@@ -5,7 +5,7 @@ package irvine.oeis.a215;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A215414 Unix epoch timestamp for start of year, beginning with 1970.
+ * A215414 Timestamp for start of year, beginning with 1970, similar to Unix.
  * @author Georg Fischer
  */
 public class A215414 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394632 allocated for M. F. Hasler.
+ * A394632 Least prime q such that q^2 - n! is again the square of a prime, or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A394632 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A091508 Let b(1)=n; b(k+1)=b(k)/gcd(k,b(k)) if gcd(k,b(k))&gt;1; b(k+1)=b(k)+k otherwise, sequence gives least k such that b(k)=1.
+ * A091508 Least k such that b(k) = 1, where b(1) = n and b(k+1) = b(k)+k+1 if gcd(k+1, b(k)) = 1 or else b(k)/gcd(k+1, b(k)).
  * @author Sean A. Irvine
  */
 public class A091508 extends Sequence1 {

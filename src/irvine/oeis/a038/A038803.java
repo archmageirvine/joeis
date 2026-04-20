@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A038803 Largest number with n prime factors all of different lengths.
+ * A038803 Largest number with n prime factors of lengths 1, ..., n.
  * @author Sean A. Irvine
  */
 public class A038803 extends Sequence1 {

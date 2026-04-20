@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A395022 allocated for Husiev Andrii Alekseevich.
+ * A395022 Expansion of 1 + Sum_{k &gt;= 1} (x^(2k-1) + (k + 1) * x^(2k)) / Product_{j=1..k} (1 - j^2 * x^2).
  * @author Sean A. Irvine
  */
 public class A395022 extends Sequence0 {

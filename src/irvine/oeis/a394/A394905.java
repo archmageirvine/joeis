@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005811;
 
 /**
- * A394905 allocated for Vincenzo Manto.
+ * A394905 Smallest number k &gt; n such that the binary Hamming distance between n and k is equal to the number of runs in the binary representation of n, and k has more runs than n.
  * @author Sean A. Irvine
  */
 public class A394905 extends Sequence1 {

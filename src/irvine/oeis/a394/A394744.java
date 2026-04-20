@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394744 allocated for Clark Kimberling.
+ * A394744 a(n) = number of triples (x, y, z) such that x^2 + y*z = n, where x,y,z are distinct nonzero Fibonacci numbers and y &lt; z.
  * @author Sean A. Irvine
  */
 public class A394744 extends Sequence0 {

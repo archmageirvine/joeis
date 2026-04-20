@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394630 allocated for M. F. Hasler.
+ * A394630 Least index k such that prime(k)^2 + n! is again the square of a prime, or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A394630 extends Sequence0 {

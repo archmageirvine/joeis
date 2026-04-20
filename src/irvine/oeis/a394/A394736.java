@@ -16,7 +16,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
- * A394736 allocated for Gordon Hamilton.
+ * A394736 a(n) is the number of unlabeled connected prime graphs with n nodes (see Comments).
  * @author Sean A. Irvine
  */
 public class A394736 extends Sequence0 {
@@ -48,7 +48,7 @@ public class A394736 extends Sequence0 {
       mPrimeGraphs.add(Collections.emptyList());
       return Z.ZERO;
     }
-    Set<Graph> composites = new HashSet<>();
+    final Set<Graph> composites = new HashSet<>();
     for (int k = 2; k < mN; ++k) {
       if (mN % k == 0) {
         build(composites, k, mN / k);
@@ -59,7 +59,7 @@ public class A394736 extends Sequence0 {
     }
     final List<Graph> primes = Collections.synchronizedList(new ArrayList<>());
     mPrimeGraphs.add(primes);
-    new ParallelGenerateGraphsSequence(mN, mN - 1, mN, 0, () -> (g) -> {
+    new ParallelGenerateGraphsSequence(mN, mN - 1, mN, 0, () -> g -> {
       final Graph canon = GraphUtils.canon(g);
       if (!composites.contains(canon)) {
         primes.add(canon);

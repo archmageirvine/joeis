@@ -10,8 +10,8 @@ import irvine.oeis.DirectSequence;
 public class A084461 extends A084452 {
 
   private static final Z NEG3 = Z.valueOf(-3);
-  private final DirectSequence mA084452 = DirectSequence.create(new A084458());
-  private final DirectSequence mA084454 = DirectSequence.create(new A084460());
+  private final DirectSequence mA = DirectSequence.create(new A084458());
+  private final DirectSequence mB = DirectSequence.create(new A084460());
   private long mN = 0;
 
   private Z n2z(final long n) {
@@ -23,7 +23,7 @@ public class A084461 extends A084452 {
   }
 
   private Z f(final Z z) {
-    return z.add(z.signum() > 0 ? mA084452.a(z) : (z.compareTo(NEG3) >= 0 ? z.multiply(-2) : mA084452.a(mA084454.a(z.negate().subtract(3)))));
+    return z.add(z.signum() > 0 ? mA.a(z) : (z.compareTo(NEG3) >= 0 ? z.multiply(-2) : mA.a(mB.a(z.negate().subtract(3)))));
   }
 
   @Override

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394621 allocated for Bill McEachen.
+ * A394621 Numbers k of the form k = p1 + p2 = x^2 + y^2 + p1^2, where p1 and p2 are primes, x, y are integers.
  * @author Sean A. Irvine
  */
 public class A394621 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a281;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A281180 E.g.f. S(x) satisfies: S(x) = Integral (1 + S(x)^2)^2 dx.
+ * A281180 a(n) = (2*n-1)! * [x^(2*n-1)] S(x), where S(x) = Integral (1 + S(x)^2)^2 dx.
  * E.g.f.: <code>reverse((x/(1+x^2)+atan(x))/2)</code>.
  * @author Georg Fischer
  */

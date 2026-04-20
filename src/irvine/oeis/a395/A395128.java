@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A084451.
+ * A395128 Numbers k that are the concatenation of three divisors of k.
  * @author Sean A. Irvine
  */
 public class A395128 extends Sequence1 {

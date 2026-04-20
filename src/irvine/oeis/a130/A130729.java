@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A130729 Fermat numbers of order 3 or F(n,3) = 2^(2^n)+3.
+ * A130729 Fermat numbers of order 3 or F(n,3) = 2^(2^n) + 3.
  * @author Georg Fischer
  */
 public class A130729 extends LambdaSequence {

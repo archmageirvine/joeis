@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A394014 allocated for Vincenzo Librandi.
+ * A394014 a(1)=1; for n &gt;= 1, a(n+1) = prime(k) where k &gt; a(n) is least k such that prime(k) - k is prime.
  * @author Sean A. Irvine
  */
 public class A394014 extends A000040 {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.SumOfLikePowersSequence;
 
 /**
- * A394979 allocated for Zhining Yang.
+ * A394979 Minimum k such that k^5 can be expressed as the sum of n distinct positive 5th powers.
  * @author Sean A. Irvine
  */
 public class A394979 extends AbstractSequence {

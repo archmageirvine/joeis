@@ -3,7 +3,7 @@ package irvine.oeis.a394;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A394913 allocated for Paolo Xausa.
+ * A394913 a(n) is the number of sides of the highest-sided polygonal face in Johnson solid J_n.
  * @author Sean A. Irvine
  */
 public class A394913 extends FiniteSequence {

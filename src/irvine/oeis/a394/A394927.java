@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003056;
 
 /**
- * A394927 allocated for Felix Huber.
+ * A394927 a(n) is the minimal sum of squares over partitions of n into distinct parts.
  * @author Sean A. Irvine
  */
 public class A394927 extends A003056 {

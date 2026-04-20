@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A394906 allocated for David Dewan.
+ * A394906 Representation of n in a positional system with the k-th prime as the k-th place value, choosing the representation that maximizes the decimal value.
  * @author Sean A. Irvine
  */
 public class A394906 extends Sequence2 {

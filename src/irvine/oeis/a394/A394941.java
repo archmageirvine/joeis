@@ -3,7 +3,7 @@ package irvine.oeis.a394;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A394941 allocated for Yu Hin Au.
+ * A394941 Number of well-formed bracketed words of total length n built from the symbol * (of length 1) and four unary bracket types, with no empty bracket pair.
  * @author Sean A. Irvine
  */
 public class A394941 extends GfSequence {

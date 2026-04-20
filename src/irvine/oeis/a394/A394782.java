@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394782 allocated for Alain Rocchelli.
+ * A394782 a(n) is the largest prime of the form prime(n)#/d + d where p# denotes the product of all primes &lt;= p and d divides prime(n)#.
  * @author Sean A. Irvine
  */
 public class A394782 extends Sequence1 {

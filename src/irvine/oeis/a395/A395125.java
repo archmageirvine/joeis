@@ -6,7 +6,7 @@ import irvine.math.series.SeriesParser;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A084422.
+ * A395125 Expansion of 2F1(1/3, 1/3; 1; 27*x/(1-4*x)^3)^2.
  * @author Sean A. Irvine
  */
 public class A395125 extends GfSequence {

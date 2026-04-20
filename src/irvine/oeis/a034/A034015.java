@@ -8,7 +8,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a027.A027307;
 
 /**
- * A034015 Small 3-Schroeder numbers: a(n) = A027307(n+1)/2.
+ * A034015 Small 3-Schroeder numbers: a(n) = Sum_{k=0..n} 2^k*binomial(n, k)*binomial(2*n+2, k)/(k + 1).
  * @author Georg Fischer
  */
 public class A034015 extends Sequence0 {

@@ -4,16 +4,16 @@ import java.util.ArrayList;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence2;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A394737 a(n) is the number of unordered sets of unit fractions with smallest element 1/n that can be made into a pie so that no consecutive subset may be replaced by a larger unit fraction.
+ * A394737 a(n) is the number of Egyptian fraction representations of 1 (multisets of unit fractions with sum 1) with smallest element 1/n that can be made into a pie so that no consecutive subset may be replaced by a larger unit fraction.
  * @author Sean A. Irvine
  */
-public class A394737 extends Sequence2 {
+public class A394737 extends Sequence1 {
 
-  private int mN = 1;
+  private int mN = 0;
   private long mCount = 0;
 
   private boolean is(final int[] p) {

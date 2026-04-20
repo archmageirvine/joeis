@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a393.A393708;
 
 /**
- * A394050 allocated for Michael De Vlieger.
+ * A394050 Achilles numbers with more than 2 distinct prime factors, whose exponents that are all pairwise indivisible.
  * @author Sean A. Irvine
  */
 public class A394050 extends FilterSequence {

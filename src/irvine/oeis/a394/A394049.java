@@ -7,7 +7,7 @@ import irvine.oeis.a120.A120944;
 import irvine.oeis.a332.A332785;
 
 /**
- * A394049 allocated for Michael De Vlieger.
+ * A394049 Smallest number k that is neither squarefree nor squareful such that rad(k) | s(n), where s = A120944 is the sequence of squarefree composite numbers and rad = A007947.
  * @author Sean A. Irvine
  */
 public class A394049 extends A120944 {

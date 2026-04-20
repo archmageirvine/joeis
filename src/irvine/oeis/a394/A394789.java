@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394789 allocated for Omar E. Pol.
+ * A394789 Number of positive integers &lt;= n with exactly two odd divisors.
  * @author Sean A. Irvine
  */
 public class A394789 extends Sequence1 {

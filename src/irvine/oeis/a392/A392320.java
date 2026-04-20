@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392320 allocated for Patrick J. Millican.
+ * A392320 Indices of nonzero entries in the continued hyperbolic-tangent expansion of Pi.
  * @author Sean A. Irvine
  */
 public class A392320 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002476;
 
 /**
- * A394567 allocated for Dao Van Tam.
+ * A394567 Product of the three cubic Gauss periods for primes q == 1 (mod 3).
  * @author Sean A. Irvine
  */
 public class A394567 extends A002476 {

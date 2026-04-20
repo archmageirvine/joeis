@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006905;
 
 /**
- * A395037 allocated for Firdous Ahmad Mala.
+ * A395037 Number of relations on an n-set that are not transitive.
  * @author Sean A. Irvine
  */
 public class A395037 extends A006905 {

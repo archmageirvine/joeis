@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000192;
 
 /**
- * A352977 Expansion of e.g.f. cos(2x) cos(3x) / cos(6x) (even powers only).
+ * A352977 Expansion of e.g.f. cos(2*x) cos(3*x) / cos(6*x) (even powers only).
  * @author Georg Fischer
  */
 public class A352977 extends A000192 {

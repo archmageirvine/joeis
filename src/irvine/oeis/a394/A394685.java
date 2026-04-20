@@ -9,7 +9,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A394685 allocated for Thomas DiFiore.
+ * A394685 Number of order-convex subsets of the divisibility poset on {1, 2, ..., n}.
  * @author Sean A. Irvine
  */
 public class A394685 extends Sequence1 {

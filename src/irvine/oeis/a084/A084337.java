@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A084337 Rearrangement of positive integers so that the successive ratios (of the larger to the smaller term) are all distinct integers. a(m)/a(m-1) = a(k)/a(k-1) iff m = k (assuming a(m) &gt; a(m-1), otherwise the ratio a(m-1)/a(m) is to be considered). Priority is given to smallest number not included earlier rather than to the successive ratio that has not occurred earlier.
  * @author Sean A. Irvine
  */
-public class A084337 extends Sequence1 {
+public class A084337 extends Sequence0 {
 
   private Z mA = null;
   private final HashSet<Z> mUsed = new HashSet<>();

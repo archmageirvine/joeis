@@ -2,14 +2,14 @@ package irvine.oeis.a084;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002313;
 
 /**
  * A084162 a(n) is the length of the gap in sequence A084161.
  * @author Sean A. Irvine
  */
-public class A084162 extends Sequence1 {
+public class A084162 extends Sequence0 {
 
   private final Sequence mS = new A002313();
   private Z mA = mS.next();

@@ -13,6 +13,6 @@ public class A100927 extends RationalProductTransform {
 
   /** Construct the sequence. */
   public A100927() {
-    super(1, new Builder().f(-1).g(k -> Predicates.POLYGONAL.is(6, k) ? Z.ZERO : Z.NEG_ONE));
+    super(0, new Builder().f(-1).g(k -> Predicates.POLYGONAL.is(6, k) ? Z.ZERO : Z.NEG_ONE));
   }
 }

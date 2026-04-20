@@ -7,13 +7,13 @@ import java.util.TreeSet;
 import irvine.math.function.Functions;
 import irvine.math.z.InverseSigma;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence2;
 
 /**
  * A394168 Smallest term of A392774 that starts a run of n consecutive terms with identical (tau, sigma).
  * @author Sean A. Irvine
  */
-public class A394168 extends Sequence1 {
+public class A394168 extends Sequence2 {
 
   private final LinkedList<Z> mA = new LinkedList<>();
   private Z mM = Z.FIVE;

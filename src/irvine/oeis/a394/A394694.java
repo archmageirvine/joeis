@@ -2,7 +2,7 @@ package irvine.oeis.a394;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence2;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a081.A081493;
 import irvine.util.array.LongDynamicLongArray;
 
@@ -10,7 +10,7 @@ import irvine.util.array.LongDynamicLongArray;
  * A394694 Number of occurrences of n in A081493.
  * @author Sean A. Irvine
  */
-public class A394694 extends Sequence2 {
+public class A394694 extends Sequence1 {
 
   private final Sequence mA = new A081493();
   private final LongDynamicLongArray mCounts = new LongDynamicLongArray();

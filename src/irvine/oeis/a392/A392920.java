@@ -8,13 +8,13 @@ import java.util.Map;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A392920 Number of gapless Gog triangles of size n such that the corresponding alternating sign matrix is symmetric.
  * @author Sean A. Irvine
  */
-public class A392920 extends Sequence0 {
+public class A392920 extends Sequence1 {
 
   private Map<IntArray, Z> mD = new HashMap<>();
   private int mN = -1;

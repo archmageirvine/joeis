@@ -2,14 +2,14 @@ package irvine.oeis.a084;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002313;
 
 /**
  * A084161 Primes that are the sum of two squares and which set a record for the gap to the next prime of that form.
  * @author Sean A. Irvine
  */
-public class A084161 extends Sequence1 {
+public class A084161 extends Sequence0 {
 
   private final Sequence mS = new A002313();
   private Z mA = mS.next();

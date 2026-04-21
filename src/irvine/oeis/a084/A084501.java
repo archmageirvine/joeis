@@ -16,7 +16,7 @@ public class A084501 extends Sequence1 {
 
   // Based on Antti Karttunen, https://oeis.org/A084507/a084507.scm.txt
 
-  private static final class Belgthor {
+  static final class Belgthor {
     private final List<int[]> mCache = new ArrayList<>();
     private final int mBalls;
     private final int mType;
@@ -26,7 +26,12 @@ public class A084501 extends Sequence1 {
       mType = type;
     }
 
-    private int[] belgthor(final int n) {
+    /**
+     * Return the next row.
+     * @param n throw
+     * @return row
+     */
+    public int[] belgthor(final int n) {
       while (n >= mCache.size()) {
         mCache.add(null);
       }
@@ -132,7 +137,7 @@ public class A084501 extends Sequence1 {
     }
   }
 
-  private final Belgthor mS;
+  protected final Belgthor mS;
   private int[] mRow = {};
   private int mN = 0;
   private int mM = 0;

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A363980 Tom Greer&apos;s arithmetic progression of 27 primes.
+ * A363980 Tom Greer's arithmetic progression of 27 primes.
  * @author Georg Fischer
  */
 public class A363980 extends LambdaSequence {

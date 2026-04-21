@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A327760 Primes in Rob Gahan&apos;s arithmetic progression of 27 primes.
+ * A327760 Primes in Rob Gahan's arithmetic progression of 27 primes.
  * @author Georg Fischer
  */
 public class A327760 extends LambdaSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a007.A007729;
 
 /**
- * A174868 Partial sums of Stern&apos;s diatomic series A002487.
+ * A174868 Partial sums of Stern's diatomic series A002487.
  * @author Georg Fischer
  */
 public class A174868 extends PrependSequence {

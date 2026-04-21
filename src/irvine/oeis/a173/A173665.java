@@ -5,7 +5,7 @@ import irvine.oeis.a006.A006752;
 import irvine.oeis.a064.A064117;
 
 /**
- * A173665 Primes formed by the initial digits of the decimal expansion of 1/Catalan&apos;s constant.
+ * A173665 Primes formed by the initial digits of the decimal expansion of 1/Catalan's constant.
  * @author Georg Fischer
  */
 public class A173665 extends A064117 {

@@ -8,10 +8,8 @@ import irvine.math.cr.CR;
  */
 public class A023127 extends A023117 {
 
-  private static final CR N = CR.SIX.sqrt();
-
-  @Override
-  protected CR getN() {
-    return N;
+  /** Construct the sequence. */
+  public A023127() {
+    super(CR.SIX.sqrt());
   }
 }

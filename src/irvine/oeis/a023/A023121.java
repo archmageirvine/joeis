@@ -9,10 +9,8 @@ import irvine.math.q.Q;
  */
 public class A023121 extends A023117 {
 
-  private static final CR N = CR.valueOf(new Q(2, 3)).sqrt();
-
-  @Override
-  protected CR getN() {
-    return N;
+  /** Construct the sequence. */
+  public A023121() {
+    super(CR.valueOf(new Q(2, 3)).sqrt());
   }
 }

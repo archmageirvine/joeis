@@ -8,10 +8,8 @@ import irvine.math.cr.CR;
  */
 public class A023134 extends A023117 {
 
-  private static final CR N = CR.PI.inverse();
-
-  @Override
-  protected CR getN() {
-    return N;
+  /** Construct the sequence. */
+  public A023134() {
+    super(CR.PI.inverse());
   }
 }

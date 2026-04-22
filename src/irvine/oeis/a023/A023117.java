@@ -13,7 +13,16 @@ import irvine.util.Pair;
  */
 public class A023117 extends Sequence1 {
 
-  private static final CR N = CR.FIVE.sqrt();
+  private final CR mX;
+
+  protected A023117(final CR x) {
+    mX = x;
+  }
+
+  /** Construct the sequence. */
+  public A023117() {
+    this(CR.FIVE.sqrt());
+  }
 
   private final TreeSet<Pair<Long, Long>> mS = new TreeSet<>((a, b) -> {
     if (a.equals(b)) {
@@ -33,12 +42,8 @@ public class A023117 extends Sequence1 {
     mS.add(new Pair<>(1L, 1L));
   }
 
-  protected CR getN() {
-    return N;
-  }
-
   protected CR eval(final Pair<Long, Long> p) {
-    return getN().multiply(p.right()).add(CR.valueOf(p.left()));
+    return mX.multiply(p.right()).add(CR.valueOf(p.left()));
   }
 
   @Override

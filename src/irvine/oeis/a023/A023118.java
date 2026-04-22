@@ -8,10 +8,8 @@ import irvine.math.cr.CR;
  */
 public class A023118 extends A023117 {
 
-  private static final CR N = CR.FIVE.sqrt().inverse();
-
-  @Override
-  protected CR getN() {
-    return N;
+  /** Construct the sequence. */
+  public A023118() {
+    super(CR.FIVE.sqrt().inverse());
   }
 }

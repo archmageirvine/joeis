@@ -1,7 +1,10 @@
 package irvine.oeis.a392;
 
+import java.util.Arrays;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
+import irvine.util.string.StringUtils;
 
 /**
  * A392517 a(n) is the minimum diameter of a n-element set of integers for which no nonzero d has more than d-1 representations as a difference of elements of the set.
@@ -11,12 +14,16 @@ public class A392517 extends Sequence1 {
 
   // After Aditya A Gupta
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 0;
   private int[] mSet = null;
   private int[] mDiffCounts = null;
 
   private boolean backtrack(final int size, final int m, final int limit, final int startVal) {
     if (size == m) {
+      if (mVerbose) {
+        StringUtils.message(Arrays.toString(mSet));
+      }
       return true;
     }
     for (int v = startVal; v <= limit; ++v) {

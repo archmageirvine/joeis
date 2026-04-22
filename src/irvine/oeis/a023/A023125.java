@@ -8,10 +8,8 @@ import irvine.math.cr.CR;
  */
 public class A023125 extends A023117 {
 
-  private static final CR N = CR.E.multiply(CR.E);
-
-  @Override
-  protected CR getN() {
-    return N;
+  /** Construct the sequence. */
+  public A023125() {
+    super(CR.E.multiply(CR.E));
   }
 }

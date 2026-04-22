@@ -15,7 +15,7 @@ public class A249223 extends A237048 {
   private long mS = 1;
 
   @Override
-  protected long t(final long n, final long m) {
+  public long t(final long n, final long m) {
     long sum = 0;
     for (long k = 1; k <= m; ++k) {
       final long v = super.t(n, k);

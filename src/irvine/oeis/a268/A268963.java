@@ -14,6 +14,6 @@ public class A268963 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A268963() {
-    super(0, (self, n) -> (n == 0) ? Z.FIVE : self.s(0).add(self.s(1)), "", new A084161().skip(1), new A084162().skip(1));
+    super(0, (self, n) -> n == 0 ? Z.FIVE : self.s(0).add(self.s(1)), "", new A084161(), new A084162());
   }
 }

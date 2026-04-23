@@ -16,7 +16,7 @@ public class A395012 extends Sequence1 {
 
   private int mN = 0;
   private final List<Long> mPs = new ArrayList<>();
-  private long mNscan = 4;
+  private long mScan = 4;
   {
     mPs.add(2L);
     mPs.add(3L);
@@ -24,11 +24,11 @@ public class A395012 extends Sequence1 {
   private int mSafePrefix = 0;
 
   private void step() {
-    mNscan += 2;
+    mScan += 2;
     // Build pn = primes in (n - ps)
     final List<Long> pn = new ArrayList<>();
     for (final long p : mPs) {
-      final long candidate = mNscan - p;
+      final long candidate = mScan - p;
       if (Predicates.PRIME.is(candidate)) {
         pn.add(candidate);
       }
@@ -49,19 +49,19 @@ public class A395012 extends Sequence1 {
       mPs.removeIf(x -> x > p);
       mPs.add(p);
       // reset scan position
-      mNscan = mPs.get(mPs.size() - 1) + 1;
+      mScan = mPs.get(mPs.size() - 1) + 1;
     }
   }
 
   @Override
   public Z next() {
     ++mN;
-    final int requiredFullSize = (int) Math.ceil(mN / 0.75);
+    final int requiredFullSize = (int) Math.ceil(mN / 0.70);
     // Grow incrementally
     while (mPs.size() < requiredFullSize) {
       step();
     }
-    final int currentSafe = (int) Math.floor(mPs.size() * 0.75);
+    final int currentSafe = (int) Math.floor(mPs.size() * 0.70);
     if (currentSafe < mSafePrefix) {
       throw new RuntimeException("Rollback invalidated previously emitted terms");
     }

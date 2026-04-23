@@ -5,7 +5,7 @@ import irvine.oeis.a262.A262993;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395283 Decimal expansion of e*log(2).
+ * A395283 allocated for Stefano Spezia.
  * Formula:
  * @author Georg Fischer
  */

@@ -11,8 +11,6 @@ import irvine.oeis.Sequence0;
  */
 public class A394992 extends Sequence0 {
 
-  // a(n) = n! * Sum_{k=0..n} F(2*k)/k!, where F(n) is the n-th Fibonacci number, A000045(n).
-
   private long mN = -1;
 
   @Override

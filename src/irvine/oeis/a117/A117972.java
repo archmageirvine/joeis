@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A117972 Numerator of zeta&apos;(-2n), n &gt;= 0.
+ * A117972 Numerator of zeta'(-2n), n &gt;= 0.
  * @author Georg Fischer
  */
 public class A117972 extends LambdaSequence {

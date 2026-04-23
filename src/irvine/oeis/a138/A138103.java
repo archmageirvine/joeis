@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A138103 Numbers with an odd number of 1&apos;s in base 6 expansion.
+ * A138103 Numbers with an odd number of 1's in base 6 expansion.
  * @author Georg Fischer
  */
 public class A138103 extends FilterNumberSequence {

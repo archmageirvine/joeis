@@ -29,15 +29,25 @@ public class ParallelPermutationSequence extends AbstractSequence implements Dir
   private static final int[] TWO0 = {0, 1};
   private static final int[] TWO1 = {1, 0};
 
+  private final int mStep;
   protected int mN;
 
   /**
    * Construct a new sequence.
    * @param offset sequence offset
    */
-  public ParallelPermutationSequence(final int offset) {
+  public ParallelPermutationSequence(final int offset, final int step) {
     super(offset);
     mN = offset - 1;
+    mStep = step;
+  }
+
+  /**
+   * Construct a new sequence.
+   * @param offset sequence offset
+   */
+  public ParallelPermutationSequence(final int offset) {
+    this(offset, 1);
   }
 
   /**
@@ -193,7 +203,8 @@ public class ParallelPermutationSequence extends AbstractSequence implements Dir
 
   @Override
   public Z next() {
-    return a(++mN);
+    mN += mStep;
+    return a(mN);
   }
 
   /**

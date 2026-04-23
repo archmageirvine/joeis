@@ -2,6 +2,7 @@ package irvine.math.cc;
 
 import irvine.math.api.IsInteger;
 import irvine.math.cr.CR;
+import irvine.math.q.Q;
 
 /**
  * An object to hold an immutable computable complex number.
@@ -52,7 +53,7 @@ public class CC extends Number implements Comparable<CC>, IsInteger {
 
   /**
    * Construct the complex number <code>n+0i</code>.
-   * @param x double value
+   * @param x real value
    */
   public CC(final CR x) {
     this(x, CR.ZERO);
@@ -60,7 +61,15 @@ public class CC extends Number implements Comparable<CC>, IsInteger {
 
   /**
    * Construct the complex number <code>n+0i</code>.
-   * @param x double value
+   * @param x rational value
+   */
+  public CC(final Q x) {
+    this(CR.valueOf(x), CR.ZERO);
+  }
+
+  /**
+   * Construct the complex number <code>n+0i</code>.
+   * @param x integer value
    */
   public CC(final long x) {
     this(CR.valueOf(x), CR.ZERO);

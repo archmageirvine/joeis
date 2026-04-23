@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A395282 a(n) = Sum_{d|n} mu(d)*Fibonacci(2*(n/d)+1).
+ * A395282 allocated for Stefano Spezia.
  * @author Georg Fischer
  */
 public class A395282 extends LambdaSequence {

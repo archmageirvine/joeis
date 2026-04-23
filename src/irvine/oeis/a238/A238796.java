@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A238796 Symmetric (0,1)-matrices of order n where the numbers of 1&apos;s is equal to the order n.
+ * A238796 Symmetric (0,1)-matrices of order n where the numbers of 1's is equal to the order n.
  * @author Georg Fischer
  */
 public class A238796 extends LambdaSequence {

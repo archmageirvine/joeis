@@ -1405,7 +1405,6 @@ A047947 a(n) is the number of k values for which A023193(k) = n.
 A047995 Number of impartial misere games born on or before day n.
 A048139 Number of planar partitions of n, when partitions that are rotations of each other (when regarded as 3-D objects) are counted only once.
 A048142 Number of symmetrical planar partitions of n: planar partitions (A000219) that when regarded as 3-D objects have only a threefold axis of symmetry, i.e., C3 symmetry. 
-A048143 Number of labeled connected simplicial complexes with n nodes.
 A048283 For k >= a(n), there are A048284(n) numbers expressible as a sum of exactly k-n k-gonal numbers.
 A048284 For k >= A048283(n), there are a(n) numbers expressible as a sum of exactly k-n k-gonal numbers.
 A048289 Number of Go games with exactly n moves.
@@ -2724,3 +2723,4 @@ A084233 Decimal expansion of area under the curve Zeta(1/2 + t*I) from zero to i
 A084425 Let b(0) = n, b(2*k+1) = c, where c > b(m) is the smallest number such that gcd(c,b(2*k))=1, b(2*k+2) = e where e < b(m) is the smallest number such that gcd(e,b(2*k+1))=1 for m = 0..2*k, until reaching e = 1. Then a(n) = the last c.
 A084448 Decimal expansion of (negative of) Kinkelin constant.
 A084539 Continued fraction expansion of (negative of) Kinkelin constant.
+A084565 Number of connected switching classes of signed graphs with n nodes.

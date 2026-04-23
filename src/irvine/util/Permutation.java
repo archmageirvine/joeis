@@ -391,6 +391,22 @@ public class Permutation {
   }
 
   /**
+   * Return the excedance of the permutation.
+   * Number of positions <code>k</code> such that <code>p[k] &gt; k</code>.
+   * @param p permutation
+   * @return excedance
+   */
+  public static int excedance(final int[] p) {
+    int e = 0;
+    for (int k = 0; k < p.length; ++k) {
+      if (p[k] > k) {
+        ++e;
+      }
+    }
+    return e;
+  }
+
+  /**
    * Example use.
    * @param args ignored
    */

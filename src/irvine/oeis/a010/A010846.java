@@ -31,6 +31,12 @@ public class A010846 extends Sequence1 implements DirectSequence {
 
   @Override
   public Z a(final long n) {
-    return a(Z.valueOf(n));
+    Z sum = Z.ZERO;
+    for (long k = 1; k <= n; ++k) {
+      if (Functions.GCD.l(k, n) == 1) {
+        sum = sum.add((n / k) * Functions.MOBIUS.i(k));
+      }
+    }
+    return sum;
   }
 }

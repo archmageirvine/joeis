@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A392572 Decimal expansion of the probability that a straight line drawn through a point selected uniformly at random on the perimeter of a regular hexagon, with a direction selected independently and uniformly at random, intersects the side opposite to the side on
+ * A392572 Decimal expansion of the probability that a straight line drawn through a point selected uniformly at random on the perimeter of a regular hexagon, with a direction selected independently and uniformly at random, intersects the side opposite to the side on which the point lies.
  * Formula:
  * @author Georg Fischer
  */

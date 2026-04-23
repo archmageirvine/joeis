@@ -3,13 +3,13 @@ package irvine.oeis.a084;
 import java.time.LocalDate;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A084427 Gregorian calendar years with Ascension Day in April.
  * @author Sean A. Irvine
  */
-public class A084427 extends Sequence1 {
+public class A084427 extends Sequence0 {
 
   private int mN = 1582;
 

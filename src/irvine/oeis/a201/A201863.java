@@ -9,7 +9,7 @@ import irvine.oeis.a076.A076626;
  */
 public class A201863 extends A076626 {
 
-  private int mN = 0;
+  private int mN = -1;
   private int mM = -1;
 
   @Override

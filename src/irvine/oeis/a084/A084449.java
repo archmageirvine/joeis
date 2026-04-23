@@ -11,6 +11,6 @@ public class A084449 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A084449() {
-    super(1, 0, new A084451(), Z.SEVEN::equals);
+    super(0, 0, new A084451(), Z.SEVEN::equals);
   }
 }

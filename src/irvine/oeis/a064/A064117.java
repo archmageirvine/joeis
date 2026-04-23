@@ -16,7 +16,7 @@ public class A064117 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A064117() {
-    this(0, CR.PHI);
+    this(1, CR.PHI);
   }
 
   /**

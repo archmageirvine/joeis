@@ -14,8 +14,8 @@ public class A198128 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A198128() {
-    super(1, new UnaryCrFunction() {
-      @Override 
+    super(0, new UnaryCrFunction() {
+      @Override
       public CR execute(final CR x) {
         return CR.TWO.multiply(x.square()).add(CR.THREE.multiply(x)).subtract(x.cos());
       }

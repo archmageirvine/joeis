@@ -4,7 +4,7 @@ package irvine.oeis.a246;
 import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
- * A246694 Triangle read by rows: T(n,k) = T(n,k-2) + 1 if n &gt; 1 and 2 &lt;= k &lt;= n; T(0,0) = 1, T(1,0) = 1, T(1,1) = 2; if n &gt; 1 is odd, then T(n,0) = T(n-1,n-2) + 1 and T(n,1) = T(n-1,n-1) + 1; if n &gt; 1 is even, then T(n,0) = T(n-1,n-1) + 1 and T(n,1) = T(n-1,n-2) + 1
+ * A246694 Triangle read by rows: T(n,k) = T(n,k-2) + 1 if n &gt; 1 and 2 &lt;= k &lt;= n; T(0,0) = 1, T(1,0) = 1, T(1,1) = 2; if n &gt; 1 is odd, then T(n,0) = T(n-1,n-2) + 1 and T(n,1) = T(n-1,n-1) + 1; if n &gt; 1 is even, then T(n,0) = T(n-1,n-1) + 1 and T(n,1) = T(n-1,n-2) + 1.
  * @author Georg Fischer
  */
 public class A246694 extends GeneratingFunctionTriangle {

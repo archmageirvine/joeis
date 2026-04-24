@@ -4,7 +4,7 @@ package irvine.oeis.a103;
 import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
- * A103283 Triangle read by rows: T(n,k) is the coefficient of x^k in the monic characteristic polynomial of the n X n matrix with 2&apos;s on the diagonal and 1&apos;s elsewhere (n &gt;= 1 and  0 &lt;= k &lt;= n). Row 0 consists of the single term 1.
+ * A103283 Triangle read by rows: T(n,k) is the coefficient of x^k in the monic characteristic polynomial of the n X n matrix with 2's on the diagonal and 1's elsewhere (n &gt;= 1 and  0 &lt;= k &lt;= n). Row 0 consists of the single term 1.
  * @author Georg Fischer
  */
 public class A103283 extends GeneratingFunctionTriangle {

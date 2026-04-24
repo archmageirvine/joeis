@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
- * A117440 A cyclically signed version of Pascal&apos;s triangle.
+ * A117440 A cyclically signed version of Pascal's triangle.
  * @author Georg Fischer
  */
 public class A117440 extends GeneratingFunctionTriangle {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A395292 a(n) = (2*n)! * [x^(2*n)] cos(x)^3 / cos(sqrt(2)*x).
+ * A395292 allocated for Seiichi Manyama.
  * @author Georg Fischer
  */
 public class A395292 extends MultiTransformSequence {

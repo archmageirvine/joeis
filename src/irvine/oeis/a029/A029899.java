@@ -11,7 +11,7 @@ import irvine.oeis.Sequence0;
  */
 public class A029899 extends Sequence0 {
 
-  private static final int BITS_PER_VALUE = 21;
+  private static final int BITS_PER_VALUE = Long.SIZE / 3;
   protected final TreeSet<Long> mPPositions = new TreeSet<>();
   private int mN = -1;
 

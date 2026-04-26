@@ -11,8 +11,6 @@ import irvine.util.array.LongDynamicLongArray;
  */
 public class A395255 extends Sequence0 {
 
-  // todo definition wrong?
-
   private final Fast mPrime = new Fast();
   private final LongDynamicLongArray mCounts = new LongDynamicLongArray();
   private long mN = -1;
@@ -22,13 +20,8 @@ public class A395255 extends Sequence0 {
     ++mN;
     if (mPrime.isPrime(mN)) {
       for (long y = 2; y <= mN; y = mPrime.nextPrime(y)) {
-        for (long x = 2; x <= mN; x = mPrime.nextPrime(x)) {
-          mCounts.add(x * x + y * mN, y == mN ? 1 : 2);
-        }
-      }
-      for (long y = 2; y < mN; y = mPrime.nextPrime(y)) {
-        for (long z = 2; z < mN; z = mPrime.nextPrime(z)) {
-          mCounts.increment(mN * mN + y * z);
+        for (long x = 2; x <= y; x = mPrime.nextPrime(x)) {
+          mCounts.increment(x * x + y * mN);
         }
       }
     }

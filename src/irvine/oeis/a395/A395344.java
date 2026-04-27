@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395255 allocated for Clark Kimberling.
+ * A395344 a(n) is the integer obtained by inserting the sum (modulo 10) of adjacent digits of n between them.
  * @author Sean A. Irvine
  */
 public class A395344 extends Sequence1 {

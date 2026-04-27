@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395034 allocated for Janaka Rodrigo.
+ * A395034 a(n) is the number of different ways for two particles to reach each other's starting corner on a triangular grid of side n units while changing direction at each grid point, such that the distance between each particle and its own starting corner is always increasing, and the two particles never meet.
  * @author Sean A. Irvine
  */
 public class A395034 extends Sequence1 {

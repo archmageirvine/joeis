@@ -6,7 +6,7 @@ import irvine.oeis.a114.A114433;
 import irvine.oeis.a237.A237042;
 
 /**
- * A393653 allocated for Alonso del Arte.
+ * A393653 ISBN-10 numbers with the same check digit upon conversion to ISBN-13.
  * @author Sean A. Irvine
  */
 public class A393653 extends A114433 {

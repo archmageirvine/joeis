@@ -7,7 +7,7 @@ import irvine.util.array.DynamicArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A393324 allocated for Jean-Marc Rebert.
+ * A393324 Smallest prime p such that omega(q^2 - p^2) = n where q is the next prime after p.
  * @author Sean A. Irvine
  */
 public class A393324 extends A000040 {

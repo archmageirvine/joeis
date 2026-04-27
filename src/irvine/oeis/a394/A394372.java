@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394372 allocated for Wang Yixiang.
+ * A394372 a(1)=1, a(2)=2, a(3)=3; for n &gt; 3, a(n) = a(n-1) + gcd(n, a(n-2) * a(n-3)).
  * @author Sean A. Irvine
  */
 public class A394372 extends Sequence1 {

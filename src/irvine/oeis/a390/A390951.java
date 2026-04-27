@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390951 allocated for Juri-Stepan Gerasimov.
+ * A390951 a(1) = 1; for n &gt; 1, a(n) is the number of integers k in [prime(n-1)^3..prime(n)^3 - 1] with exactly 4 divisors.
  * @author Sean A. Irvine
  */
 public class A390951 extends Sequence1 {

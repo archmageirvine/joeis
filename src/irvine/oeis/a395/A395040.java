@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A395040 a(n) = A276085(A003415(A276086(n)).
+ * A395040 a(n) = A276085(A003415(A276086(n))).
  * @author Georg Fischer
  */
 public class A395040 extends LambdaSequence {

@@ -17,10 +17,7 @@ public class A027750 extends Sequence1 {
   @Override
   public Z next() {
     if (++mM >= mList.length) {
-      if (++mN == 1) {
-        return Z.ONE;
-      }
-      mList = Jaguar.factor(mN).divisorsSorted();
+      mList = Jaguar.factor(++mN).divisorsSorted();
       mM = 0;
     }
     return mList[mM];

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394626 allocated for M. F. Hasler.
+ * A394626 Numbers k such that k^2 + 1 has a prime factor between k and k^2.
  * @author Sean A. Irvine
  */
 public class A394626 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a395;
 import irvine.oeis.DifferenceSequence;
 
 /**
- * A395253 allocated for Benoit Cloitre.
+ * A395253 Differences of A395251.
  * @author Sean A. Irvine
  */
 public class A395253 extends DifferenceSequence {

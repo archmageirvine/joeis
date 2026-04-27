@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393568 allocated for Vincenzo Librandi.
+ * A393568 a(1)=1; for n &gt;= 1, a(n+1) = prime(k) where k &gt; a(n) is least k such that prime(k) + k is prime.
  * @author Sean A. Irvine
  */
 public class A393568 extends Sequence1 {

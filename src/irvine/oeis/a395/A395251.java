@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395251 allocated for Benoit Cloitre.
+ * A395251 a(n) gives positions k &gt;= 1 where the equation b(b(k)+b(k-1)) = k fails, for b(k) = floor(k/sqrt(2) + 2*(sqrt(2)-1)).
  * @author Sean A. Irvine
  */
 public class A395251 extends Sequence1 {

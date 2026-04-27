@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a052.A052486;
 
 /**
- * A393941 allocated for Michael De Vlieger.
+ * A393941 Achilles numbers whose prime power factors have distinct exponents.
  * @author Sean A. Irvine
  */
 public class A393941 extends FilterSequence {

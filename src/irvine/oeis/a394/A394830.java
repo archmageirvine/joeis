@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394830 allocated for Juri-Stepan Gerasimov.
+ * A394830 Number of divisors d of n that do not divide n/d - 1.
  * @author Sean A. Irvine
  */
 public class A394830 extends Sequence1 {

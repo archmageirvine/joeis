@@ -3,7 +3,7 @@ package irvine.oeis.a395;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A395131 allocated for David Dewan.
+ * A395131 Number of occurrences of digit n in 9^9^9.
  * @author Sean A. Irvine
  */
 public class A395131 extends FiniteSequence {

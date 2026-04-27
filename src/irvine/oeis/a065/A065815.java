@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001620;
 import irvine.util.string.StringUtils;
 
 /**
- * A065815 Numbers n such that initial n digits in decimal portion of the Euler-Mascheroni constant form a prime number.
+ * A065815 Numbers k such that initial k digits in decimal portion of the Euler-Mascheroni constant form a prime number.
  * @author Sean A. Irvine
  */
 public class A065815 extends Sequence1 {

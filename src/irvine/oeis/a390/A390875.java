@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A390875 allocated for Reed Silverstein.
+ * A390875 Positive integers k for which the 3-node triangle parity-routing process modulo k, starting from (1,1,1), does not halt for at least one of the 8 routing rules.
  * @author Sean A. Irvine
  */
 public class A390875 extends Sequence1 {

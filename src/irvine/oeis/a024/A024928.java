@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A024928 a(n) = Sum_{k=1..n} floor( (n + p(k))/k ).
+ * A024928 a(n) = Sum_{k=1..n} floor( (n + prime(k))/k ).
  * @author Sean A. Irvine
  */
 public class A024928 extends Sequence1 {

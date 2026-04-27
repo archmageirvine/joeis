@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A110611 Minimal value of sum(p(i)p(i+1),i=1..n), where p(n+1)=p(1), as p ranges over all permutations of {1,2,...,n}.
+ * A110611 Minimal value of Sum_{i=1..n} p(i)*p(i+1), where p(n+1)=p(1), as p ranges over all permutations of {1,2,...,n}.
  * @author Sean A. Irvine
  */
 public class A110611 extends LinearRecurrence {

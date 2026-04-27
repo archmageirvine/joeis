@@ -6,7 +6,7 @@ import irvine.oeis.a249.A249223;
 import irvine.oeis.a298.A298856;
 
 /**
- * A394935 allocated for Hartmut F. W. Hoft.
+ * A394935 a(n) is the smallest k for which the number of parts of the symmetric representation of sigma of k, SRS(k), is odd and the lower Dyck path of SRS(k) touches the diagonal at the same point as A298856(k).
  * @author Sean A. Irvine
  */
 public class A394935 extends A298856 {

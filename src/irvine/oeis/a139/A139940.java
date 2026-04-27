@@ -4,7 +4,7 @@ package irvine.oeis.a139;
 import irvine.oeis.prime.CongruenceForm;
 
 /**
- * A139940 Primes of the form 15x^2+23y^2.
+ * A139940 Primes of the form 15*x^2+23*y^2.
  * @author Georg Fischer
  */
 public class A139940 extends CongruenceForm {

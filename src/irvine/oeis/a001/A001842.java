@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A001842 Expansion of Sum_{n&gt;=0} x^(4*n+3)/(1 - x^(4*n+3)).
+ * A001842 Number of divisors of n of the form 4*k+3.
  * @author Sean A. Irvine
  */
 public class A001842 extends Sequence0 {

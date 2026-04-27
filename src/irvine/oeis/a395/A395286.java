@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A395286 allocated for Marco Rip\u00e0.
+ * A395286 Positive integers m such that gcd(m^10 - 1, m! - 1) &gt; 1.
  * @author Sean A. Irvine
  */
 public class A395286 extends Sequence1 {

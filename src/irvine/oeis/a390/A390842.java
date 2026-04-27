@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A390842 3-valuation of Product_{1 &lt;= k &lt;= n} (prime(k) + 1) / (prime(k+1) - prime(k)).
+ * A390842 3-valuation of Product_{k=1..n} (prime(k) + 1) / (prime(k+1) - prime(k)).
  * @author Sean A. Irvine
  */
 public class A390842 extends Sequence0 {

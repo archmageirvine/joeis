@@ -8,7 +8,7 @@ import irvine.util.array.DynamicArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A395284 allocated for Philip Jameson.
+ * A395284 Smallest semiprime that produces a chain of exactly n semiprimes when repeatedly replacing m=p*q (with primes p&lt;=q) by the decimal concatenation of p followed by q, stopping when the result is not semiprime.
  * @author Sean A. Irvine
  */
 public class A395284 extends A001358 {

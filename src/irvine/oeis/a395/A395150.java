@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A395150 allocated for F. Chapoton.
+ * A395150 Triangle of coefficients of the characteristic polynomial of the negative Pascal matrix with (i+1,j+1)-th entry -C(i+j+1,j).
  * @author Sean A. Irvine
  */
 public class A395150 extends Sequence0 {

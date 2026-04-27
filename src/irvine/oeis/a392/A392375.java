@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A392375 allocated for Vincenzo Manto.
+ * A392375 Numbers k such that k is coprime to each of its digits and to the sum of its digits.
  * @author Sean A. Irvine
  */
 public class A392375 extends FilterNumberSequence {

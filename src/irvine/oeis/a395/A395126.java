@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A395126 allocated for Arnav Garg.
+ * A395126 a(n) = fourth coordinate d of the n-th P-position (a,b,c,d) of 4 X n Chomp in lexicographic order, where a&gt;=b&gt;=c&gt;=d&gt;=0 gives row lengths.
  * @author Sean A. Irvine
  */
 public class A395126 extends Sequence0 {

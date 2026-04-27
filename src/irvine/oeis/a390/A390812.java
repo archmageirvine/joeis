@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A390812 allocated for Firdous Ahmad Mala.
+ * A390812 a(n) is the number of pairs (i, j) with 1 &lt;= i &lt; j &lt; n such that the prime-points (i, prime(i)), (j, prime(j)), and (n, prime(n)) are collinear.
  * @author Sean A. Irvine
  */
 public class A390812 extends A000040 {

@@ -2732,3 +2732,4 @@ A084592 Least positive integers, all distinct, that satisfy Sum_{n>0} 1/a(n)^z =
 A084593 Least positive integers, all distinct, that satisfy Sum_{n>0} 1/a(n)^z = 0, where z is the 100th nontrivial zero of the Riemann zeta function: z = (1/2 + i*y) with y=236.5242296658162058024755...
 A084616 Maximum number of circles of diameter 1 that can be packed in a square of area n (i.e., with side length n^(1/2)).
 A084617 Maximum number of circles with diameter 1 that can be packed in a square of side length n.
+A084618 Maximum number of circles of area 1 that can be packed in a circle of area n.

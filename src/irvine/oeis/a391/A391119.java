@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A391119 allocated for Karol A. Penson.
+ * A391119 allocated for Ruud H.G. van Tol.
  * @author Sean A. Irvine
  */
 public class A391119 extends Sequence0 {

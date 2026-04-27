@@ -4,7 +4,7 @@ package irvine.oeis.a395;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A395109 allocated for David Cleaver.
+ * A395109 Number of points covered by a regular level n H-Tree on a square lattice.
  * @author Georg Fischer
  */
 public class A395109 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A084575 Number of terms in polynomial expression for determinant of generic circulant matrix of order n.
+ * A084575 Number of terms in the polynomial expression for the determinant of generic circulant matrix of order n.
  * @author Sean A. Irvine
  */
 public class A084575 extends Sequence1 {

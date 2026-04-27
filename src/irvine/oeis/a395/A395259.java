@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395259 allocated for A.H.M. Smeets.
+ * A395259 Decimal expansion of the number defined by the continued fraction 1/(r+1/(r+1/(r + ...))), where r is the bronze ratio (A098316).
  * @author Sean A. Irvine
  */
 public class A395259 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395198 allocated for Robert Israel.
+ * A395198 Numbers k such that 2*k +- 1 and 5*k +- 1 are twin prime pairs.
  * @author Sean A. Irvine
  */
 public class A395198 extends Sequence1 {

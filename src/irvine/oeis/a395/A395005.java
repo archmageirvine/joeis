@@ -5,7 +5,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a003.A003418;
 
 /**
- * A395005 allocated for Zhicheng Wei.
+ * A395005 Numbers k such that k can be expressed as A003418(i)/j where j &lt;= i.
  * @author Sean A. Irvine
  */
 public class A395005 extends FilterNumberSequence {

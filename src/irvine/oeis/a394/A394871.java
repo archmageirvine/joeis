@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394871 allocated for Yifan Xie.
+ * A394871 a(n) is the minimum number m such that if there are 2*n cards face down on a table that are labeled 1, 1, 2, 2, ..., n, n, then one can select m sets of n cards such that at least one set is labeled 1, 2, ..., n exactly.
  * @author Sean A. Irvine
  */
 public class A394871 extends Sequence1 {

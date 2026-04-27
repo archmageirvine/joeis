@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a087.A087655;
 
 /**
- * A174218 An absolute difference sequence based on A087655: a(n)=If[Mod[A087655(n), 3] == 1, a(n - 1) - (-1)^n*n, a(n - 1) + (-1)^n*n].
+ * A174218 a(n) = a(n-1) + (-1)^(n + [A087655(n) mod 3 == 1])*n with a(0)=1, a(1)=0 where [] is the Iverson bracket.
  * @author Sean A. Irvine
  */
 public class A174218 extends Sequence0 {

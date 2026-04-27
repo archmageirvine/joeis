@@ -4,7 +4,7 @@ package irvine.oeis.a395;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A395184 allocated for Ahmet Caglar Saygili.
+ * A395184 Totals of the base-3 run-length transform of the Jacobsthal numbers.
  * @author Georg Fischer
  */
 public class A395184 extends HolonomicRecurrence {

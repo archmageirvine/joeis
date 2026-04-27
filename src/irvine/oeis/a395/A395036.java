@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395036 allocated for Janaka Rodrigo.
+ * A395036 a(n) is the number of different ways in which three particles move on a triangular grid ABC of side length n, each from one corner to the next, changing direction at each grid point, such that the distance from the starting point is always increasing, and no two particles ever meet.
  * @author Sean A. Irvine
  */
 public class A395036 extends Sequence1 {

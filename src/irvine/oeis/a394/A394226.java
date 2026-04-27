@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394226 allocated for Juri-Stepan Gerasimov.
+ * A394226 a(1) = 4; for n &gt; 1, a(n) is the number of integers k from [prime(n-1)^5..prime(n)^5 - 1] with exactly 6 divisors where prime(n) = n-th prime.
  * @author Sean A. Irvine
  */
 public class A394226 extends Sequence1 {

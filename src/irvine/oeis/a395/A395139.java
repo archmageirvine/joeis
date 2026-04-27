@@ -7,7 +7,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395139 allocated for A.H.M. Smeets.
+ * A395139 Decimal expansion of the absolute value of the imaginary part of the complex roots of x^3 - x^2 - 1 = 0.
  * @author Sean A. Irvine
  */
 public class A395139 extends DecimalExpansionSequence {

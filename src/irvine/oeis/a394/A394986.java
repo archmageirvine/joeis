@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394986 allocated for Leo Hennig.
+ * A394986 Numbers k whose set of proper divisors can be split into 2 subsets s1 and s2 such that Sum_{x in s1} x^2 - Sum_{x in s2} x^2 = k.
  * @author Sean A. Irvine
  */
 public class A394986 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A238986 Ground Pyramidalized Numbers: Write the decimal digits of 'n' (a nonnegative integer) and take successive absolute differences ("pyramidalization"), then sum all digits of each level of the pyramid. If total is greater than 9, repeat the process until result is between 0 and 9, which is 'a(n)' (0 &lt;= a(n) &lt;= 9).
+ * A238986 Write the decimal digits of n and take the absolute differences of the digits, repeating until a single digit remains. Then sum all digits of each level of the resulting triangle. If the sum is greater than 9, repeat the entire process until result is between 0 and 9, which is a(n).
  * @author Sean A. Irvine
  */
 public class A238986 extends Sequence0 {

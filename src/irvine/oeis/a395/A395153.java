@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A395153 allocated for Lu Zhuofan.
+ * A395153 a(n) = number of iterations of f(n) = sigma(n) if sigma(n) &lt; 2n (n deficient), else n / gpf(n) (where gpf(n) is the greatest prime factor), needed to reach a cycle, for n &gt;= 2.
  * @author Sean A. Irvine
  */
 public class A395153 extends Sequence2 {

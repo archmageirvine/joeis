@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394993 allocated for Hans J. H. Tuenter.
+ * A394993 a(n) = n! * Sum_{k=0..n} (-1)^(k+1)*F(k)/k!, where F(n) is the n-th Fibonacci number, A000045(n).
  * @author Sean A. Irvine
  */
 public class A394993 extends Sequence0 {

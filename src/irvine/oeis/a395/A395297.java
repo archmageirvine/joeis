@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A395297 allocated for Seiichi Manyama.
+ * A395297 a(n) = (2*n)! * [x^(2*n)] cosh(x)^4 / cos(x).
  * @author Georg Fischer
  */
 public class A395297 extends MultiTransformSequence {

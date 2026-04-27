@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
 
 /**
- * A395183 allocated for Ali Sada.
+ * A395183 a(n) is the least positive integer k such that k*n has a decimal expansion with exactly two nonzero digits with one or more zeros between them and any number of trailing zeros. If no such number exists, then a(n) = 0.
  * @author Sean A. Irvine
  */
 public class A395183 extends Sequence0 {

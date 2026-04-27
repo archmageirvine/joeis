@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395264 allocated for Jason D. Andoyo.
+ * A395264 Primes p such that the number of quadratic residues in the Lucas sequence A000032 modulo p over a full Lucas sequence period A106291(p) equals the number of nonresidues plus the number of terms divisible by p.
  * @author Sean A. Irvine
  */
 public class A395264 extends Sequence1 {

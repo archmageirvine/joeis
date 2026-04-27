@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A057866 Sum_{k&gt;=1} 1/(tanh(k*Pi) * k^(4n-1)) = Pi^(4n-1)*A057866(n)/A057867(n).
+ * A057866 Sum_{k&gt;=1} 1/(tanh(k*Pi) * k^(4n-1)) = Pi^(4n-1)*a(n)/A057867(n).
  * @author Sean A. Irvine
  */
 public class A057866 extends Sequence1 {

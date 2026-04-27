@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A099765 a(n) = (1/Pi)*(2^n/n)*(n-1)!*Integral_{t&gt;=0} (sin(t)/t)^n dt.
+ * A099765 a(n) = (1/Pi) * (2^n/n) * (n-1)! * Integral_{t&gt;=0} (sin(t)/t)^n dt.
  * a(n)=1/n*sum(k=0, floor(n/2), (-1)^k*binom(n, k)*(n-2*k)^(n-1))
  * @author Georg Fischer
  */

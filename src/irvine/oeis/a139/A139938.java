@@ -4,7 +4,7 @@ package irvine.oeis.a139;
 import irvine.oeis.prime.CongruenceForm;
 
 /**
- * A139938 Primes of the form 6x^2+6xy+59y^2.
+ * A139938 Primes of the form 6*x^2+6*x*y+59*y^2.
  * @author Georg Fischer
  */
 public class A139938 extends CongruenceForm {

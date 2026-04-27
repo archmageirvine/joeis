@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A395002 allocated for Lorenzo Sauras Altuzarra.
+ * A395002 Number of index 4*n subgroups of SL_2(Z) not containing the negative identity matrix.
  * @author Sean A. Irvine
  */
 public class A395002 extends CachedSequence {

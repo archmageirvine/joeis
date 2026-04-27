@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a256.A256357;
 
 /**
- * A258655 a(n) = A256357(n^2), where exp( Sum_{n&gt;=1} A256357(n)*x^n/n )  =  1 + Sum_{n&gt;=1} x^(n^2) + x^(2*n^2).
+ * A258655 a(n) = A256357(n^2), where exp( Sum_{n&gt;=1} A256357(n)*x^n/n ) = 1 + Sum_{n&gt;=1} x^(n^2) + x^(2*n^2).
  * @author Georg Fischer
  */
 public class A258655 extends LambdaSequence {

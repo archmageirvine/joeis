@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.Pair;
 
 /**
- * A394915 allocated for Paolo Xausa.
+ * A394915 Consider the following process: at step n, draw the line passing through the points (n, prime(n)) and (n+1, prime(n+1)). a(n) gives the total number of distinct single-point line intersections after step n.
  * @author Sean A. Irvine
  */
 public class A394915 extends A000040 {

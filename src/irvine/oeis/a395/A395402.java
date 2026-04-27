@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394658 Numbers k such that sigma(k) = psi(k) + tau(k) + Omega(k)^2.
+ * A395402 Numbers k such that sigma(k) = psi(k) + tau(k)^2 + Omega(k)^2.
  * @author Sean A. Irvine
  */
 public class A395402 extends Sequence1 {

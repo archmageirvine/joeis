@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395127 allocated for David Dewan.
+ * A395127 Number of distinct integers appearing in Collatz sequences with starting values &lt;= n.
  * @author Sean A. Irvine
  */
 public class A395127 extends Sequence1 {

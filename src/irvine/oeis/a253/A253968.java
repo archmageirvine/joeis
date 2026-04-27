@@ -5,7 +5,7 @@ package irvine.oeis.a253;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A253968 Numbers n such that (23*10^n - 26)/6 is prime.
+ * A253968 Numbers k such that (23*10^k - 26)/6 is prime.
  * @author Georg Fischer
  */
 public class A253968 extends PowerFactorPrimeSequence {

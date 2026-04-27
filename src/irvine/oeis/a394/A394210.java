@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394210 allocated for J. Lowell.
+ * A394210 a(n) is the least k &gt; 1 such that gpf(2^n*k) &gt; gpf(2^n*k-1) where gpf is the greatest prime factor (A006530).
  * @author Sean A. Irvine
  */
 public class A394210 extends Sequence1 {

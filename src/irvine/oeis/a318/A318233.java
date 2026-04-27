@@ -5,7 +5,7 @@ import irvine.oeis.ParallelPermutationSequence;
 import irvine.util.Permutation;
 
 /**
- * A318233 F_n.
+ * A318233 Difference between numbers of odd-excedance and even-excedance 123-avoiding derangements of [2n].
  * @author Sean A. Irvine
  */
 public class A318233 extends ParallelPermutationSequence {

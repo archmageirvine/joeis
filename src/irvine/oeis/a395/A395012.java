@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395012 allocated for Lei Zhou.
+ * A395012 {a(1), a(2), ..., a(n)} is a prime subset containing minimum number of primes such that all even numbers from 4 to 2e = a(n) + 2k - 1 can be written in the form of a(i) + a(j) at least once, and 2e + 2 = a(n) + a(m) is the smallest even number that cannot be written in the form a(i) + a(j), where 1 &lt;= i, j, m &lt; n.
  * @author Sean A. Irvine
  */
 public class A395012 extends Sequence1 {

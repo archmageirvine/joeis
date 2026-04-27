@@ -40,6 +40,11 @@ public class A084577 extends Sequence1 {
       final State other = (State) obj;
       return mM == other.mM && mK == other.mK;
     }
+
+    @Override
+    public int hashCode() {
+      return (int) (mM * 31 + mK);
+    }
   }
 
   private final TreeSet<State> mA = new TreeSet<>();

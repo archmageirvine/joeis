@@ -7,7 +7,7 @@ import irvine.oeis.a014.A014156;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A394229 allocated for Robert Israel.
+ * A394229 a(n) is the first start of exactly n consecutive numbers that are not the sum of a nonnegative cube and a triangular number.
  * @author Sean A. Irvine
  */
 public class A394229 extends Sequence1 {

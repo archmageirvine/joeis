@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A393710.
+ * A395309 Numbers k such that tau(k) = tau(k + d), where d is some divisor of k where tau(i) = A000005(i).
  * @author Sean A. Irvine
  */
 public class A395309 extends FilterNumberSequence {

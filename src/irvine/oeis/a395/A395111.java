@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A395111.
+ * A395111 a(n) is the number of partitions of n into distinct parts such that the sum of rad(k) over the parts k equals rad(n).
  * @author Sean A. Irvine
  */
 public class A395111 extends Sequence0 {

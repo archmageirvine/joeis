@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394868 allocated for Yifan Xie.
+ * A394868 a(n) is the final number of steps reached by Alice and Bob, in the optimization game on an n X n grid described in comments.
  * @author Sean A. Irvine
  */
 public class A394868 extends Sequence1 {

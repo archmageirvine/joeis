@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394980 allocated for Jean-Francois Im.
+ * A394980 Number of 2n-digit decimal strings where the second half is an anagram of the first half.
  * @author Sean A. Irvine
  */
 public class A394980 extends Sequence0 {

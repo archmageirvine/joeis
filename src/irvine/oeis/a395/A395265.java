@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A395265 allocated for Aditya A Gupta.
+ * A395265 a(n) is the minimum diameter of an n-element set of integers for which no nonzero d has more than 5 representations as a difference of elements of the set.
  * @author Sean A. Irvine
  */
 public class A395265 extends Sequence1 {

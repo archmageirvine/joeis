@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001412;
 import irvine.oeis.a046.A046171;
 
 /**
- * A394340 allocated for Alex Klotz.
+ * A394340 Number of self-avoiding walks on the cubic lattice with the first three orthogonal steps specified (see Comments).
  * @author Sean A. Irvine
  */
 public class A394340 extends Sequence1 {

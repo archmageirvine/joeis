@@ -5,7 +5,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A393201 allocated for Michael De Vlieger.
+ * A393201 Numbers k that are neither squarefree nor prime powers, such that k/rad(k) != lpf(k), where rad = A007947 and lpf = A020639.
  * @author Sean A. Irvine
  */
 public class A393201 extends FilterNumberSequence {

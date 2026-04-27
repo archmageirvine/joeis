@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A394745 allocated for Clark Kimberling.
+ * A394745 a(n) = number of triples (x, y, z) such that x^2 + y*z = n, where x,y,z are positive integers satisfying x &gt; max(y,z).
  * @author Sean A. Irvine
  */
 public class A394745 extends Sequence0 {

@@ -3,7 +3,7 @@ package irvine.oeis.a395;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A395145 allocated for Noel Friedrich.
+ * A395145 Maximum number of ISO A(n) sheets that fit orthogonally without overlap into a single ISO A0 sheet.
  * @author Sean A. Irvine
  */
 public class A395145 extends FiniteSequence {

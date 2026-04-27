@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001035;
 import irvine.oeis.a006.A006905;
 
 /**
- * A395256 allocated for Firdous Ahmad Mala.
+ * A395256 Number of transitive relations that are not posets.
  * @author Sean A. Irvine
  */
 public class A395256 extends Combiner {

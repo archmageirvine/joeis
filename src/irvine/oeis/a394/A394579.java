@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A394579 allocated for Boaz Cohen.
+ * A394579 Moduli m in which a multiplicative square-root function exists over the ring of integers Z_m.
  * @author Sean A. Irvine
  */
 public class A394579 extends FilterNumberSequence {

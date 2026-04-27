@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395280 allocated for Wesley Ivan Hurt.
+ * A395280 a(n) = Product_{k=1..n-2} (n*k + n - 1)! / (n*k + 1)!.
  * @author Sean A. Irvine
  */
 public class A395280 extends Sequence1 {

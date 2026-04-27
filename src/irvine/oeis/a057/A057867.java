@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A057867 Denominator of coefficient of Pi^n in Ramanujan-like series for Zeta[4n+3].
+ * A057867 Denominator of coefficient of Pi^(4n-1) in Ramanujan-like series for zeta(4n-1).
  * @author Sean A. Irvine
  */
 public class A057867 extends A057866 {

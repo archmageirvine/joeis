@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A084576.
+ * A395346 Primes that begin a pair of consecutive primes with the same number of digits and a prime\u2011valued digit dot product.
  * @author Sean A. Irvine
  */
 public class A395346 extends A000040 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A394731 allocated for Ctibor O. Zizka.
+ * A394731 Numbers k such that k*(k + 1)/2 + d is a triangular number (A000217), where d &gt; (k + 1) is a divisor of k*(k + 1)/2.
  * @author Sean A. Irvine
  */
 public class A394731 extends FilterNumberSequence {

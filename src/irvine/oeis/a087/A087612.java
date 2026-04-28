@@ -6,7 +6,7 @@ import irvine.oeis.a059.A059928;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A087612 A divisibility sequence derived from Lehmer&apos;s polynomial x^10+x^9-x^7-x^6-x^5-x^4-x^3+x+1. Square root of the terms in A059928.
+ * A087612 A divisibility sequence derived from Lehmer's polynomial x^10+x^9-x^7-x^6-x^5-x^4-x^3+x+1. Square root of the terms in A059928.
  * @author Georg Fischer
  */
 public class A087612 extends SingleTransformSequence {

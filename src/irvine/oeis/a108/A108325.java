@@ -7,7 +7,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000290;
 
 /**
- * A108325 &quot;Binary prime squares&quot;: values of k for which k^2, expressed in base two and read as a decimal number, is a prime.
+ * A108325 "Binary prime squares": values of k for which k^2, expressed in base two and read as a decimal number, is a prime.
  * @author Georg Fischer
  */
 public class A108325 extends FilterPositionSequence {

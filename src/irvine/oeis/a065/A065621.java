@@ -3,31 +3,22 @@ package irvine.oeis.a065;
 
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
-import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
-import irvine.oeis.a048.A048724;
 
 /**
  * A065621 Reversing binary representation of n. Converting sum of powers of 2 in binary representation of a(n) to alternating sum gives n.
  * in binary representation of a(n) to alternating sum gives n.
  * @author Georg Fischer
+ * @author Sean A. Irvine
  */
 public class A065621 extends Sequence1 implements DirectSequence {
 
-  private final Sequence mA048724 = new A048724();
-  protected long mN;
-
-  /** Construct the sequence. */
-  public A065621() {
-    mN = 0;
-  }
+  protected long mN = 0;
 
   @Override
   public Z next() {
-    ++mN;
-    return mA048724.next().subtract(Z.NEG_ONE.pow(mN));
+    return a(++mN);
   }
-
 
   @Override
   public Z a(final Z n) {
@@ -38,5 +29,4 @@ public class A065621 extends Sequence1 implements DirectSequence {
   public Z a(final long n) {
     return Z.valueOf((n - 1) ^ (2L * n - 1));
   }
-
 }

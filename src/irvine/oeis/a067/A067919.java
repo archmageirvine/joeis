@@ -4,7 +4,6 @@ package irvine.oeis.a067;
 import irvine.math.cr.CR;
 import irvine.oeis.EngelExpansionSequence;
 
-
 /**
  * A067919 Engel expansion of sin(1).
  * @author Georg Fischer

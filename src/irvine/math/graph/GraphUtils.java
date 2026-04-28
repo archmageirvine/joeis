@@ -46,7 +46,7 @@ import irvine.math.z.Z;
 import irvine.util.Pair;
 
 /**
- * Various graph counting functions.
+ * Various graph utility functions.
  * @author Sean A. Irvine
  */
 public final class GraphUtils {
@@ -1789,6 +1789,36 @@ public final class GraphUtils {
       }
     }
     return res;
+  }
+
+  /**
+   * Test if a graph is claw free.
+   * @param graph graph to test
+   * @return true if the graph is claw free
+   */
+  public static boolean isClawFree(final Graph graph) {
+    // Technically better algorithms are known
+    for (int u = 0; u < graph.order(); ++u) {
+      if (graph.degree(u) > 2) {
+        for (int v = graph.nextVertex(u, -1); v >= 0; v = graph.nextVertex(u, v)) {
+          for (int w = graph.nextVertex(u, v); w >= 0; w = graph.nextVertex(u, w)) {
+            if (!graph.isAdjacent(v, w)) {
+              for (int x = graph.nextVertex(u, w); x >= 0; x = graph.nextVertex(u, x)) {
+                if (!graph.isAdjacent(v, x) && !graph.isAdjacent(w, x)) {
+                  return false; // found a claw
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    return true;
+  }
+
+  public static boolean isThreeConnected(final Graph graph) {
+    // assumes graph is already 2-connected (biconnected)
+    return ThreeConnected.isThreeConnected(graph);
   }
 }
 

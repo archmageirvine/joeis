@@ -6,7 +6,7 @@ import irvine.oeis.a084.A084202;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A108336 Unique sequence of 1&apos;s and 0&apos;s such that (Sum_{n &gt;= 0} a(n)*x^n)^2 mod 4 has coefficients which are all 1&apos;s and 2&apos;s (A083952).
+ * A108336 Unique sequence of 1's and 0's such that (Sum_{n &gt;= 0} a(n)*x^n)^2 mod 4 has coefficients which are all 1's and 2's (A083952).
  * @author Georg Fischer
  */
 public class A108336 extends SingleTransformSequence {

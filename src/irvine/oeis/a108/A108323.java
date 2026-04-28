@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000290;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A108323 &quot;Binary prime squares&quot;: squares whose binary expansions, read as decimal expansions, are primes.
+ * A108323 "Binary prime squares": squares whose binary expansions, read as decimal expansions, are primes.
  * @author Georg Fischer
  */
 public class A108323 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a090.A090822;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A217206 Gijswijt&apos;s sequence A090822 read mod 2.
+ * A217206 Gijswijt's sequence A090822 read mod 2.
  * @author Georg Fischer
  */
 public class A217206 extends SingleTransformSequence {

@@ -3,6 +3,10 @@ package irvine.oeis.a395;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
+/**
+ * A395426 allocated for Hirotaka Sato.
+ * @author Sean A. Irvine
+ */
 public class A395426 extends Sequence1 {
 
   // After Hirotaka Sato

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A108322 &quot;Binary prime squares&quot;: a(n) = n^2 written in base 2 and interpreted as a base-10 number, if that number is prime; a(n) = 0 otherwise.
+ * A108322 "Binary prime squares": a(n) = n^2 written in base 2 and interpreted as a base-10 number, if that number is prime; a(n) = 0 otherwise.
  * @author Georg Fischer
  */
 public class A108322 extends LambdaSequence {

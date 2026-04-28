@@ -2733,3 +2733,4 @@ A084593 Least positive integers, all distinct, that satisfy Sum_{n>0} 1/a(n)^z =
 A084616 Maximum number of circles of diameter 1 that can be packed in a square of area n (i.e., with side length n^(1/2)).
 A084617 Maximum number of circles with diameter 1 that can be packed in a square of side length n.
 A084618 Maximum number of circles of area 1 that can be packed in a circle of area n.
+A084644 Best packings of m>1 equal circles into a larger circle setting a new density record.

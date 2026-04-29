@@ -1816,6 +1816,11 @@ public final class GraphUtils {
     return true;
   }
 
+  /**
+   * Test if a graph is 3-connected (assuming it is known to be 2-connected).
+   * @param graph graph to test
+   * @return true iff the graph is 3-connected
+   */
   public static boolean isThreeConnected(final Graph graph) {
     // assumes graph is already 2-connected (biconnected)
     return ThreeConnected.isThreeConnected(graph);

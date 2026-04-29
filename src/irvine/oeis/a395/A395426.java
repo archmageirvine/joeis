@@ -14,7 +14,7 @@ public class A395426 extends Sequence1 {
   private int mN = 1;
   private int mM = 0;
 
-  public static Z t(final int n, final int k) {
+  private static Z t(final int n, final int k) {
     if ((long) n * k > 64) {
       throw new IllegalArgumentException();
     }
@@ -48,7 +48,7 @@ public class A395426 extends Sequence1 {
       final int shift = -dc;
       // check left boundary: bits in first 'shift' columns must be zero
       for (int r = 0; r < n; ++r) {
-        long row = (pattern >>> (r * k)) & ((1L << k) - 1);
+        final long row = (pattern >>> (r * k)) & ((1L << k) - 1);
         if ((row & ((1L << shift) - 1)) != 0) {
           return -1;
         }
@@ -62,7 +62,7 @@ public class A395426 extends Sequence1 {
       pattern = res;
     } else if (dc > 0) {
       for (int r = 0; r < n; ++r) {
-        long row = (pattern >>> (r * k)) & ((1L << k) - 1);
+        final long row = (pattern >>> (r * k)) & ((1L << k) - 1);
         if ((row & (((1L << dc) - 1) << (k - dc))) != 0) {
           return -1;
         }

@@ -56,8 +56,8 @@ public class MorphismFixedPointSequence extends AbstractSequence {
   /**
    * Construct an instance which generates the fixed point of this morphism.
    * @param offset first index
-   * @param anchor start of the desired limiting word, or triangle of words if empty
    * @param start start with this word
+   * @param anchor start of the desired limiting word, or triangle of words if empty
    * @param mappings pairs of digit string mappings, for example "0-&gt;001,1-&gt;0"
    */
   protected MorphismFixedPointSequence(final int offset, final String start, final String anchor, final String mappings) {

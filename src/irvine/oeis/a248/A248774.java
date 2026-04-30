@@ -4,7 +4,7 @@ package irvine.oeis.a248;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A248774 Greatest k such that k^7 divides n!
+ * A248774 Greatest k such that k^7 divides n!.
  * @author Georg Fischer
  */
 public class A248774 extends SingleTransformSequence {

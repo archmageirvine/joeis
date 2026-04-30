@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000142;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A248780 Number of cubes that divide n!
+ * A248780 Number of cubes that divide n!.
  * @author Georg Fischer
  */
 public class A248780 extends DirectTransformSequence {

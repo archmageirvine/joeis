@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000142;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A248781 Number of integers k^4 that divide n!
+ * A248781 Number of integers k^4 that divide n!.
  * @author Georg Fischer
  */
 public class A248781 extends DirectTransformSequence {

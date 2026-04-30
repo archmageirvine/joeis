@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000142;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A248776 Greatest 8th power integer that divides n!
+ * A248776 Greatest 8th power integer that divides n!.
  * @author Georg Fischer
  */
 public class A248776 extends DirectTransformSequence {

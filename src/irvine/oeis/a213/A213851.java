@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LeastLambdaSequence;
 
 /**
- * A213851 Least m such that m!*2^m &gt;= n!
+ * A213851 Least m such that m!*2^m &gt;= n!.
  * @author Georg Fischer
  */
 public class A213851 extends LeastLambdaSequence {

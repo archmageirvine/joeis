@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000142;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A248764 Greatest 4th power integer that divides n!
+ * A248764 Greatest 4th power integer that divides n!.
  * @author Georg Fischer
  */
 public class A248764 extends DirectTransformSequence {

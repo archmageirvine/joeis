@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A248766 Greatest 4th-power-free divisor of n!
+ * A248766 Greatest 4th-power-free divisor of n!.
  * @author Georg Fischer
  */
 public class A248766 extends SingleTransformSequence {

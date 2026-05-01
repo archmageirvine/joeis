@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A395420 allocated for Leo Hennig.
+ * A395420 Numbers k = x + y such that there exists sigma(x) + sigma(y) = 3*(x+y).
  * @author Sean A. Irvine
  */
 public class A395420 extends FilterNumberSequence {

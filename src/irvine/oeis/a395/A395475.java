@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A395475 allocated for Taylor J. Smith.
+ * A395475 Number of 3 X n binary matrices that are "primitive"; that is, they cannot be expressed as a "tiling" by a smaller matrix.
  * @author Sean A. Irvine
  */
 public class A395475 extends Sequence1 {

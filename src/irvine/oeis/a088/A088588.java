@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A088588 Natural two base element sequence based on Pi and e and a prime sequence.
+ * A088588 a(0)=1, a(n) = floor(Pi * exp(f(n)*(f(n)+1)/2) * prime(n/2)#) where f(n)=floor((n+1)/2) and p(n)# is the n-th primorial.
  * @author Sean A. Irvine
  */
 public class A088588 extends Sequence0 {

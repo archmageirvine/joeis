@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001414;
 import irvine.oeis.a008.A008472;
 
 /**
- * A393914 allocated for Michael De Vlieger.
+ * A393914 Numbers k such that A008472(k) is coprime to A001414(k).
  * @author Sean A. Irvine
  */
 public class A393914 extends Sequence1 {

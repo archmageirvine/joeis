@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A088482 Let pk[n_]=n!/Product[i, {i, 1, n-Floor[n/2^k]}]. Then a(n) = Sum[Floor[pk[n]/pk[n-1]], {k, 1, 4}].
+ * A088482 a(n) = Sum_{k=1..4} floor(p(n,k) / p(n-1,k)) where p(n,k) = n! / (n-floor(n/2^k))!.
  * @author Sean A. Irvine
  */
 public class A088482 extends Sequence2 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395224 allocated for Dimitris Valianatos.
+ * A395224 Numerator of (zeta(4*n) / zeta(2*n)^2) * (4^n + 1) / (4^n - 1) for n &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A395224 extends Sequence1 {

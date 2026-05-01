@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395185 allocated for S. S. Krishna Chaitanya Bulusu.
+ * A395185 A triangle read by rows: T(n,k) = T(n-1,k-1) * T(n-1,k) for n &gt;= 3, 1 &lt;= k &lt;= n-1, with T(n,0) = T(n,n) = 1 and T(2,1) = 2.
  * @author Sean A. Irvine
  */
 public class A395185 extends Sequence1 {

@@ -16,7 +16,7 @@ public class A002329 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (Z.ONE.equals(mN.gcd(Z.TEN))) {
+      if (mN.gcd(Z.TEN).isOne()) {
         final IntegersMod ring = new IntegersMod(mN);
         return ring.ord(Z.TEN.mod(mN));
       }

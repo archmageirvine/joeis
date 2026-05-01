@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 
 import irvine.oeis.a088.A088878;
 /**
- * A136078 Father primes of order 9.
+ * A136078 Primes of the form 19*p + 18 with p prime.
  * @author Georg Fischer
  */
 public class A136078 extends A088878 {

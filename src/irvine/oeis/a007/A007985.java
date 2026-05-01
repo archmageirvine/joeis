@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A007985 Co-growth function of a certain group.
+ * A007985 Co-growth function of the group &lt; a, b, a^{-1}, b^{-1} | b &gt;, isomorphic to Z (counting only reduced words).
  * @author Sean A. Irvine
  */
 public class A007985 extends Sequence1 {

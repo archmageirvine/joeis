@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A095206 Let n = abcd...; a,b,c,d,... are digits of n. Define f(a) = bcd..., f(b) = acd..., f(c) = abd... and f(d) = abc..., i.e., f(i) = number obtained by deleting the digit i from n. Then a(n) = Sum f(i) mod i, where i ranges over all the nonzero digits of n.
+ * A095206 Let n = d(1),d(2),...,d(m) be the decimal representation of n and f(k) be the number obtained by deleting all occurrences of digit k from n, then a(n) = Sum_{k=1..m, d(k)!=0} f(d(k)) mod d(k).
  * @author Sean A. Irvine
  */
 public class A095206 extends AbstractSequence {

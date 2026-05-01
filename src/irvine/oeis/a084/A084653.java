@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001567;
 
 /**
- * A084653 Pseudoprimes whose prime factors do not divide any smaller pseudoprime.
+ * A084653 Fermat base-2 pseudoprimes whose prime factors do not divide any smaller pseudoprime.
  * @author Sean A. Irvine
  */
 public class A084653 extends A001567 {

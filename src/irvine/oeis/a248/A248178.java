@@ -8,7 +8,7 @@ import irvine.oeis.a079.A079586;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A248178 Least k such that r - sum{1/F(n), h = 1..k} &lt; 1/2^(n+1), where F(n) = A000045 (Fibonacci numbers) and r = sum{1/F(n), h = 1..infinity}.
+ * A248178 Least k such that r - sum{1/F(h), h = 1..k} &lt; 1/2^(n+1), where F(n) = A000045(n) (Fibonacci numbers) and r = sum{1/F(n), h = 1..infinity}.
  * @author Georg Fischer
  */
 public class A248178 extends A248148 {

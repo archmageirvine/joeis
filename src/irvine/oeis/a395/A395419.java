@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A395419 allocated for Leo Hennig.
+ * A395419 Numbers k = x + y, such that sigma(x) + sigma(y) = 2*(x+y).
  * @author Sean A. Irvine
  */
 public class A395419 extends FilterNumberSequence {

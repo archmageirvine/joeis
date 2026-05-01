@@ -5,7 +5,7 @@ import irvine.oeis.a033.A033677;
 import irvine.oeis.a135.A135034;
 
 /**
- * A395409 allocated for Fr\u00e9d\u00e9ric D. W. Heidenthal-K\u00f6nig.
+ * A395409 a(n) = A033677(n) - A135034(n); excess of the smallest divisor of n &gt;= sqrt(n) over ceiling(sqrt(n)).
  * @author Sean A. Irvine
  */
 public class A395409 extends Combiner {

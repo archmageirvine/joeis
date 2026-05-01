@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395281 allocated for Dimitris Valianatos.
+ * A395281 Decimal expansion of tan(3 * Pi / 13).
  * @author Sean A. Irvine
  */
 public class A395281 extends DecimalExpansionSequence {

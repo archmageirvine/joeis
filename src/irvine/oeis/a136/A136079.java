@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 
 import irvine.oeis.a088.A088878;
 /**
- * A136079 Father primes of order 10.
+ * A136079 Primes of the form 21*p + 20 with p prime.
  * @author Georg Fischer
  */
 public class A136079 extends A088878 {

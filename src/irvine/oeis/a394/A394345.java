@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394345 allocated for Lei Zhou.
+ * A394345 a(n) is the smallest prime in the form of ((2n)^m - 1)/(2n - 1) - (2n)^(k - 1), where k &lt; m are both positive integers.
  * @author Sean A. Irvine
  */
 public class A394345 extends Sequence1 {

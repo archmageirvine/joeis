@@ -5,7 +5,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A395258 allocated for Aied Sulaiman.
+ * A395258 Numbers k such that k-2 and k+2 are prime and gcd(k, sigma(k)) is prime.
  * @author Sean A. Irvine
  */
 public class A395258 extends FilterNumberSequence {

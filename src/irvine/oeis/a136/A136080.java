@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 
 import irvine.oeis.a088.A088878;
 /**
- * A136080 Father primes of order 11.
+ * A136080 Primes of the form 23*p + 22 with p prime.
  * @author Georg Fischer
  */
 public class A136080 extends A088878 {

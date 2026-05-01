@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A395400 allocated for Jean-Marc Rebert.
+ * A395400 Smallest prime beginning a pair of consecutive primes with the same number of digits and a digit dot product equal to prime(n), n&gt;=3, or -1 if none exists.
  * @author Sean A. Irvine
  */
 public class A395400 extends Sequence3 {

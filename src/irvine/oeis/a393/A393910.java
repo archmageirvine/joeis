@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A393910 Smallest prime\u202fp for which,\u202ffor every i with 1 &lt;= i &lt;= n, the numbers p - i and p + i have the same number of divisors.
+ * A393910 Smallest prime p for which, for every i with 1 &lt;= i &lt;= n, the numbers p - i and p + i have the same number of divisors.
  * @author Sean A. Irvine
  */
 public class A393910 extends A000040 {

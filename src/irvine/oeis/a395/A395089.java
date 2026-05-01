@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A395089 allocated for A.H.M. Smeets.
+ * A395089 Binary complement of A395088.
  * @author Sean A. Irvine
  */
 public class A395089 extends SimpleTransformSequence {

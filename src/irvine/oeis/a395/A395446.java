@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395446 allocated for Davide Limonta.
+ * A395446 Number of Hamiltonian paths on an n X n grid, starting from a fixed corner cell and ending anywhere, where the allowed moves are (+-3,0), (0,+-3), or (+-2,+-2).
  * @author Sean A. Irvine
  */
 public class A395446 extends Sequence1 {

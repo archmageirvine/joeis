@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a034.A034444;
 
 /**
- * A061537 Product of unitary divisors of n.
+ * A061537 Product of the unitary divisors of n: a(n) = Product_{d|n, gcd(d,n/d) = 1} d.
  * @author Georg Fischer
  */
 public class A061537 extends Sequence1 {

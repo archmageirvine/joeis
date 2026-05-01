@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A088589 An improved natural sequence based on two base scales Pi and e and the prime sequence.
+ * A088589 a(0)=1, a(n) = floor(Pi * exp(f(n)*(f(n)+1)/2) * prime((n-1)/2)#) where f(n)=floor(n/2) and p(n)# is the n-th primorial.
  * @author Sean A. Irvine
  */
 public class A088589 extends Sequence0 {

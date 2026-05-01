@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A001104 Numbers n such that n / product of digits of n is a square.
+ * A001104 Numbers k such that k / product of digits of k is a square.
  * @author Sean A. Irvine
  */
 public class A001104 extends Sequence1 {

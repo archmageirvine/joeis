@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006318;
 
 /**
- * A395133 allocated for Mansur Zubairu.
+ * A395133 Number of monotone and order decreasing transformations on an n-chain.
  * @author Sean A. Irvine
  */
 public class A395133 extends Sequence1 {

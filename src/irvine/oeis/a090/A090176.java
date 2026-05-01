@@ -4,7 +4,7 @@ package irvine.oeis.a090;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A090176 G.f.: (1+x^9)/((1-x^4)(1-x^6)(1-x^12)).
+ * A090176 Expansion of (1+x^9)/((1-x^4)*(1-x^6)*(1-x^12)).
  * @author Georg Fischer
  */
 public class A090176 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A394650 allocated for Lorenzo Sauras Altuzarra.
+ * A394650 Number of index 12*n free subgroups of SL_2(Z).
  * @author Sean A. Irvine
  */
 public class A394650 extends CachedSequence {

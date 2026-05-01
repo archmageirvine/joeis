@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a045.A045763;
 /**
- * A243823 Quantity of "semitotatives," numbers m &lt; n that are products of at least one prime divisor p of n and one prime q coprime to n.
+ * A243823 Number of k &lt; n such that gcd(k,n) &gt; 1 but rad(k) does not divide n, where rad = A007947.
  * @author Georg Fischer
  */
 public class A243823 extends Sequence1 {

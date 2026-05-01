@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A395396 allocated for Enrique Navarrete.
+ * A395396 a(n) = binomial(n,floor(n/2)) + (n mod 2) - 2.
  * @author Sean A. Irvine
  */
 public class A395396 extends Sequence0 {

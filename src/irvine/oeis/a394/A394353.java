@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394353 allocated for Michael Shmoish.
+ * A394353 Number of distinct primes of the form x*y + x*z + y*z with integers 0 &lt;= x &lt;= y &lt;= z &lt;= n.
  * @author Sean A. Irvine
  */
 public class A394353 extends Sequence0 {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A069800 Triangular array in which n-th row consists of numbers with digit sum n arranged in increasing numerical order.
+ * A069800 Triangular array in which n-th row consists of zeroless numbers with digit sum n arranged in increasing numerical order.
  * @author Sean A. Irvine
  */
 public class A069800 extends Sequence1 {

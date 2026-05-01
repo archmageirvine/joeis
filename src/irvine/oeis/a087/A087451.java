@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A087451 G.f.: (2-x)/((1+2x)(1-3x)); e.g.f.: exp(3x)+exp(-2x); a(n)=3^n+(-2)^n.
+ * A087451 G.f.: (2-x)/((1+2*x)*(1-3*x)); e.g.f.: exp(3*x) + exp(-2*x); a(n) = 3^n + (-2)^n.
  * @author Sean A. Irvine
  */
 public class A087451 extends LinearRecurrence {

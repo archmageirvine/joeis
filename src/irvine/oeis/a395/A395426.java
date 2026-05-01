@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395426 allocated for Hirotaka Sato.
+ * A395426 Triangle read by rows where T(n,k) is the number of distinct n X k (n &gt;= k) Braille patterns up to translations.
  * @author Sean A. Irvine
  */
 public class A395426 extends Sequence1 {

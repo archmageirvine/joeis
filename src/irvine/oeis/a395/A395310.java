@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.TwoParameterFormSequence;
 
 /**
- * A395310 allocated for Steven Lu.
+ * A395310 Prime numbers of the form 11*x^2 - 4*x*y + 20*y^2 where x and y are positive integers.
  * @author Sean A. Irvine
  */
 public class A395310 extends TwoParameterFormSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A029580 a(n+1) = [ A*a(n)+B ]/p^r, where p^r is the highest power of p diving [ A*a(n)+B ] and p=2, A=2.00013, B=3.0.
+ * A029580 a(0) = 1; for n &gt; 0, a(n) = [ A*a(n-1)+B ]/p^r, where p^r is the highest power of p dividing [ A*a(n)+B ] and p=2, A=2.00013, B=3.0.
  * @author Sean A. Irvine
  */
 public class A029580 extends Sequence0 {

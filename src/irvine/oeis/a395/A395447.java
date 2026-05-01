@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395447 allocated for Jwalin Bhatt.
+ * A395447 Numerators of the coefficient of Pi^(4n+1) in Plouffe's formula for zeta(4n+1).
  * @author Sean A. Irvine
  */
 public class A395447 extends Sequence1 {

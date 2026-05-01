@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 
 import irvine.oeis.a088.A088878;
 /**
- * A136075 Father primes of order 6.
+ * A136075 Primes of the form 13*p + 12 with p prime.
  * @author Georg Fischer
  */
 public class A136075 extends A088878 {

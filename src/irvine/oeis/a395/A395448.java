@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A395448 allocated for Jwalin Bhatt.
+ * A395448 Denominators of the coefficient of Pi^(4n+1) in Plouffe's formula for zeta(4n+1).
  * @author Sean A. Irvine
  */
 public class A395448 extends A395447 {

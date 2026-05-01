@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a014.A014574;
 
 /**
- * A394399 allocated for Aied Sulaiman.
+ * A394399 Numbers k in A014574 (averages of twin prime pairs) such that gcd(k, sigma(k)) = 3.
  * @author Sean A. Irvine
  */
 public class A394399 extends FilterSequence {

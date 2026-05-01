@@ -5,7 +5,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A394398 Number of integers k, 1&lt;= k &lt; n, such that n|(k^2-1) and k|n^2-1.
+ * A394398 Number of integers k, 1&lt;= k &lt; n, such that n|(k^2-1) and k|(n^2-1).
  * @author Georg Fischer
  */
 public class A394398 extends LambdaSequence {

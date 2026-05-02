@@ -2,9 +2,11 @@ package irvine.oeis.a002;
 
 import irvine.math.graph.Graph;
 import irvine.math.graph.GraphUtils;
+import irvine.math.nauty.Counter;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
+import irvine.oeis.ParallelGenerateGraphsSequence;
 import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicIntArray;
 import irvine.util.string.StringUtils;
@@ -17,6 +19,7 @@ public class A002887 extends Sequence1 implements GraphProcessor {
 
   // Only good for first few terms
 
+  private static final int MAX_TERM = 10;
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 0;
   protected int mM = 0;
@@ -45,28 +48,37 @@ public class A002887 extends Sequence1 implements GraphProcessor {
   @Override
   public void process(final Graph tree) {
     final int[] cc = cuttingCenter(tree);
-    if (mFirstCuttingCenter.get(cc[1]) == 0) {
-      mFirstCuttingCenter.set(cc[1], mN);
-      mFirstCuttingNumber.set(cc[1], cc[0]);
+    if (cc[1] >= mM && cc[1] <= MAX_TERM) {
+      synchronized (this) {
+        if (mFirstCuttingCenter.get(cc[1]) == 0) {
+          mFirstCuttingCenter.set(cc[1], mN);
+          mFirstCuttingNumber.set(cc[1], cc[0]);
+        }
+      }
     }
   }
 
   @Override
   public Z next() {
-    ++mM;
+    if (++mM >= MAX_TERM) {
+      throw new UnsupportedOperationException();
+    }
     while (mFirstCuttingCenter.get(mM) == 0) {
       ++mN;
       if (mVerbose) {
         StringUtils.message("Generating all trees of order " + mN);
       }
-      final GenerateGraphs gg = new GenerateGraphs(1);
-      gg.setVertices(mN);
-      gg.setMinEdges(mN - 1);
-      gg.setMaxEdges(mN - 1);
-      gg.setConnectionLevel(1);
-      gg.setProcessor(this);
-      gg.sanitizeParams();
-      gg.run(0, 0, 0);
+      final ParallelGenerateGraphsSequence gg = new ParallelGenerateGraphsSequence(mN - 1, 1, 0, () -> Counter.ONE) {
+        @Override
+        protected void graphGenInit(final GenerateGraphs gg) {
+          gg.setVertices(mN);
+          gg.setMinEdges(mN - 1);
+          gg.setMaxEdges(mN - 1);
+          gg.setConnectionLevel(1);
+          gg.setProcessor(A002887.this);
+        }
+      };
+      gg.next();
     }
     if (mVerbose) {
       StringUtils.message("Cutting center size=" + mM + " order=" + mFirstCuttingCenter.get(mM) + " cutting-number=" + mFirstCuttingNumber.get(mM));

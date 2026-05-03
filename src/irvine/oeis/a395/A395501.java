@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A395277 a(n) = number of 4-tuples (w, x, y, z) of distinct positive integers w, x, y, z such that w*x + y*z = n, where w*x &lt;= y*z, w &lt; x, and y &lt; z.
+ * A395501 allocated for David Radcliffe.
  * @author Sean A. Irvine
  */
 public class A395501 extends Sequence0 {

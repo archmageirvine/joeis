@@ -6,7 +6,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A395277.
+ * A085307 a(1) = 1; for n &gt; 1, concatenate distinct prime factors of n in decreasing order.
  * @author Sean A. Irvine
  */
 public class A085307 extends Sequence1 implements DirectSequence {

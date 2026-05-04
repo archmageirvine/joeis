@@ -9,13 +9,14 @@ import irvine.oeis.a191.A191690;
  */
 public class A117667 extends A191690 {
 
-  /** Construct the sequence. */
-  public A117667() {
-    setOffset(1);
-  }
+  private boolean mFirst = true;
 
   @Override
   public Z next() {
+    if (mFirst) {
+      mFirst = false;
+      return Z.ONE;
+    }
     return super.next().add(1);
   }
 }

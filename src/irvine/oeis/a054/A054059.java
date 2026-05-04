@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A054059 Least k for which the integers Floor(k*arctan(m)) for m=1,2,...,n are distinct.
+ * A054059 Least k for which the integers floor(k*arctan(m)) for m=1,2,...,n are distinct.
  * @author Sean A. Irvine
  */
 public class A054059 extends Sequence1 {

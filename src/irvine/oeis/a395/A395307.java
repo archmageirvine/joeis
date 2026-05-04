@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A395307 allocated for Paolo P. Lava.
+ * A395307 Let p1 and p2 be two consecutive primes. Take the sums p1*10^j+p2, with 0&lt;=j&lt;=(number of digits of p2), and p2*10^j+p1, with 1&lt;=j&lt;=(number of digits of p1). Sequence lists the least prime p1 that together with its successor p2 generates exactly n distinct primes through the described process.
  * @author Sean A. Irvine
  */
 public class A395307 extends A000040 {

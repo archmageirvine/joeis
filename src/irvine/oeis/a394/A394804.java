@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A002329 Periods of reciprocals of integers prime to 10.
+ * A394804 Decimal expansion of (4*log(2)-1)/(6*log(2)^2).
  * @author Sean A. Irvine
  */
 public class A394804 extends DecimalExpansionSequence {

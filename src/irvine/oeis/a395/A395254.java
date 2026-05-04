@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395254 allocated for Jean-Marc Rebert.
+ * A395254 Smallest prime p such that (q^2 - p^2) is divisible by n!, where q is the next prime after p, and -1 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A395254 extends Sequence1 {

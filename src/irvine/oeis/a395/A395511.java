@@ -10,7 +10,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A395511 allocated for Stefano Spezia.
+ * A395511 a(n) is the permanent of the symmetric tau(n) X tau(n) matrix M(n) defined by M(i,j) = gcd(d_i,d_j), where d_i, d_j run through the divisors of n.
  * @author Sean A. Irvine
  */
 public class A395511 extends Sequence1 {

@@ -946,6 +946,15 @@ public abstract class CR extends Number implements Comparable<CR>, IsInteger {
   }
 
   /**
+   * Subtract a rational number
+   * @param x subtrahend
+   * @return difference
+   */
+  public CR subtract(final Q x) {
+    return subtract(CR.valueOf(x));
+  }
+
+  /**
    * The product of two computable reals.
    * @param x factor
    * @return product

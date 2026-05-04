@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395503 allocated for Charles L. Hohn.
+ * A395503 Iteration numbers k such that SHA256^{k}(256 bits of 1) is a record low value.
  * @author Sean A. Irvine
  */
 public class A395503 extends Sequence1 {

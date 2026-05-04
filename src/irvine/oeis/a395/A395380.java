@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395380 allocated for Juri-Stepan Gerasimov.
+ * A395380 a(1) = 4; for n &gt; 1, a(n) is the number of integers k in [prime(n-1)^8..prime(n)^8 - 1] with exactly 9 divisors.
  * @author Sean A. Irvine
  */
 public class A395380 extends Sequence1 {

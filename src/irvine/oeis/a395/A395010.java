@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001190;
 import irvine.util.array.DynamicArray;
 
 /**
- * A395010 allocated for Vladimiro Miranda.
+ * A395010 Sum of total path lengths over all unlabeled rooted unordered unary-binary trees with n nodes, where the root has exactly one child (except for n=1, where the tree is a single node with total path length 0), internal nodes have 1 or 2 children, and left/right are indistinguishable.
  * @author Sean A. Irvine
  */
 public class A395010 extends Sequence1 {

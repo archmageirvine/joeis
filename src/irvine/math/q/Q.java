@@ -506,6 +506,15 @@ public class Q implements Comparable<Q>, IsInteger, Serializable {
   }
 
   /**
+   * Interpret this rational an integer modulo a prime.
+   * @param p prime
+   * @return integer value
+   */
+  public Z mod(final Z p) {
+    return num().modMultiply(den().modInverse(p), p);
+  }
+
+  /**
    * Return a rational number with the same value as the specified long.
    * @param val a long value
    * @return a rational number with the value <code>val</code>

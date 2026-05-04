@@ -8,7 +8,7 @@ import irvine.oeis.a005.A005097;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A394773 allocated for Paolo P. Lava.
+ * A394773 Let k and k+1 be two consecutive integers. Let x be the even number and y the odd one, and compute the different sums x*10^j + y, where 0 &lt;= j &lt;= (number of digits of y). a(n) is the smallest integer k that, together with k+1, generates exactly n distinct primes through the process described.
  * @author Sean A. Irvine
  */
 public class A394773 extends A005097 {

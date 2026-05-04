@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A106117 Substitution sequence that simulates a three level two state neural net in six symbols : Fibonacci-Silver Chain-Fibonacci.
+ * A106117 Fixed point of the morphism 1-&gt;3, 2-&gt;34, 3-&gt;565, 4-&gt;5, 5-&gt;1, 6-&gt;12.
  * @author Georg Fischer
  */
 public class A106117 extends MorphismFixedPointSequence {

@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a048.A048375;
 
 /**
- * A395338 Primes whose square is a concatenation of at least 2 nonzero squares.
+ * A395338 Primes whose square is a concatenation of exactly 2 distinct nonzero squares.
  * @author Sean A. Irvine
  */
 public class A395338 extends FilterSequence {

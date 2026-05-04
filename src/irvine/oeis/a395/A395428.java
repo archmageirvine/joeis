@@ -7,7 +7,7 @@ import irvine.oeis.a006.A006667;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A395428 allocated for M. F. Hasler.
+ * A395428 Square matrix where the n-th row lists the odd numbers which take n steps to reach 1 under the reduced Collatz map R: x -&gt; A000265(3x+1), read by falling antidiagonals.
  * @author Sean A. Irvine
  */
 public class A395428 extends Sequence1 {

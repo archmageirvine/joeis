@@ -4,7 +4,7 @@ package irvine.oeis.a050;
 import irvine.math.z.Z;
 
 /**
- * A050138 a(1)=2, a(2)=6.  For n &gt;= 2, a(n) = floor(a(n-1)/2) if this is not among 0,a(1),...,a(n-1); otherwise a(n) = 3*n.
+ * A050138 a(1)=2, a(2)=6. For n &gt;= 3, a(n) = floor(a(n-1)/2) if this is not among 0,a(1),...,a(n-1); otherwise a(n) = 3*n.
  * @author Georg Fischer
  */
 public class A050138 extends A050137 {

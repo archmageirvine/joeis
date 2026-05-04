@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A395501 allocated for David Radcliffe.
+ * A395501 Number of ordered quadruples (w, x, y, z) of distinct positive integers such that w*x + y*z = n.
  * @author Sean A. Irvine
  */
 public class A395501 extends Sequence0 {

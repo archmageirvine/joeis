@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A395539 allocated for M. F. Hasler.
+ * A395539 Successor function of Conway's PIGAME.
  * @author Sean A. Irvine
  */
 public class A395539 extends Sequence0 {

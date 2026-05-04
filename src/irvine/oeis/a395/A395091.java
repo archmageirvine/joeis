@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A395091 allocated for Felix Huber.
+ * A395091 a(n) is the number of partitions of n into distinct parts such that the sum of tau(k) over the parts k equals tau(n).
  * @author Sean A. Irvine
  */
 public class A395091 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A084678 a(n)=b(n,n) with b(n,1)=n and b(n,k)=binomial(b(n,k-1),d(n,n-k+1)) for 1&lt;k&lt;=n, where d(n,i) are the divisors of n, d(i)&lt;d(j), 1&lt;=i&lt;j&lt;=A000005(n).
+ * A084678 a(n) = b(n,n) with b(n,1) = n and b(n,k) = binomial(b(n,k-1),d(n,n-k+1)) for 1&lt;k&lt;=n, where d(n,i) are the divisors of n, d(i)&lt;d(j), 1&lt;=i&lt;j&lt;=A000005(n).
  * @author Sean A. Irvine
  */
 public class A084678 extends Sequence1 {

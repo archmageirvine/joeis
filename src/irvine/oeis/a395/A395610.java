@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A002329 Periods of reciprocals of integers prime to 10.
+ * A395610 Decimal expansion of 2*asinh(2) + 2*asinh(1/2) + (1 - sqrt(5))/2.
  * @author Sean A. Irvine
  */
 public class A395610 extends DecimalExpansionSequence {

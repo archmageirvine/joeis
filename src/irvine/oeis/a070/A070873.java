@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A070873 A070871(n) &gt; n.
+ * A070873 Integers k such that A070871(k) &gt; k.
  * @author Sean A. Irvine
  */
 public class A070873 extends FilterPositionSequence {

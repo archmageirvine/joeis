@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394248 allocated for Felix Huber.
+ * A394248 a(n) is the number of partitions of n into distinct parts such that the sum of sigma(k) over the parts k equals sigma(n).
  * @author Sean A. Irvine
  */
 public class A394248 extends Sequence0 {

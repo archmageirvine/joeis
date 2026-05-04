@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395536 allocated for Kelvin Voskuijl.
+ * A395536 Decimal expansion of the sum of the reciprocals of pentagonal polygorials A084939.
  * @author Sean A. Irvine
  */
 public class A395536 extends DecimalExpansionSequence {

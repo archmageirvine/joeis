@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A395231 allocated for Hoang Nguyen.
+ * A395231 a(n) is the minimum k so that at least one greedy Egyptian fraction representation of i/k (i &lt; k) has n terms.
  * @author Sean A. Irvine
  */
 public class A395231 extends Sequence1 {

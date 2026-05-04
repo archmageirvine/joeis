@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A395457 allocated for Petro Kolosov.
+ * A395457 Triangle read by rows: T(n,k) = (1/(2k)!) * Sum_{j=0..2k} (-1)^j * binomial(2k,j) * (3+k-j)^(2n).
  * @author Sean A. Irvine
  */
 public class A395457 extends Sequence0 {

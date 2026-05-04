@@ -10,7 +10,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A395509 allocated for Stefano Spezia.
+ * A395509 a(n) is the permanent of the symmetric tau(n) X tau(n) matrix M(n) defined by M(i,j) = sigma(d_i*d_j), where d_i, d_j run through the divisors of n.
  * @author Sean A. Irvine
  */
 public class A395509 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002426;
 import irvine.oeis.a005.A005773;
 
 /**
- * A394455 allocated for Yi-Zhong Wang.
+ * A394455 allocated for Jason D. Andoyo.
  * @author Sean A. Irvine
  */
 public class A394455 extends InterleaveSequence {

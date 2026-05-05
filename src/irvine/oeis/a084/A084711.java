@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A084711.
+ * A084711 -21*zeta_K(-1), where K runs through the simplest cubic fields.
  * @author Sean A. Irvine
  */
 public class A084711 extends Sequence1 {

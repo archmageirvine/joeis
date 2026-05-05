@@ -21,7 +21,7 @@ public class A394773 extends A005097 {
     ++mN;
     while (mFirsts.get(mN) == 0) {
       final long k = super.next().longValueExact();
-      long kk = k + 1;
+      final long kk = k + 1;
       final int len1 = Functions.DIGIT_LENGTH.i(kk);
       final HashSet<Z> primes = new HashSet<>();
       for (int j = 0; j <= len1; ++j) {

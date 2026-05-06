@@ -99,6 +99,16 @@ public final class Fibonacci  {
   }
 
   /**
+   * Compute a Lucas number mod <code>m</code>.
+   * @param n index
+   * @param m modulus
+   * @return Lucas number
+   */
+  public static long lucas(final long n, final long m) {
+    return lucas(Z.valueOf(n), Z.valueOf(m)).longValue();
+  }
+
+  /**
    * Compute a Pell number mod <code>m</code>.
    * @param n index
    * @param m modulus

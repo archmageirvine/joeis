@@ -6,10 +6,12 @@ import irvine.util.Permutation;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A395230.
+ * A395588.
  * @author Sean A. Irvine
  */
 public class A395588 extends Sequence0 {
+
+  // Brute force, slow for n > 11.
 
   private int mN = -1;
 
@@ -31,9 +33,9 @@ public class A395588 extends Sequence0 {
     if (++mN == 0) {
       return Z.ONE;
     }
+    int max = 1;
     final LongDynamicBooleanArray seen = new LongDynamicBooleanArray();
     final Permutation perm = new Permutation(mN);
-    int max = 1;
     int[] p;
     while ((p = perm.next()) != null) {
       long k = Permutation.pack(p);

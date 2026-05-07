@@ -1,9 +1,9 @@
 package irvine.oeis.a000;
 
 import irvine.factor.prime.Fast;
-import irvine.math.group.IntegerField;
-import irvine.math.group.PolynomialRingField;
-import irvine.math.polynomial.Polynomial;
+import irvine.math.series.AbstractInfiniteSeries;
+import irvine.math.series.Series;
+import irvine.math.series.SeriesRing;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -13,20 +13,26 @@ import irvine.oeis.Sequence0;
  */
 public class A000607 extends Sequence0 {
 
-  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
-  private int mN = -1;
-  private int mP = 1;
-  private final Fast mPrime = new Fast();
-  private Polynomial<Z> mPoly = RING.one();
+  private static final SeriesRing<Z> SZ = SeriesRing.SZ;
+  private long mN = -1;
+  protected final Series<Z> mS = SZ.divide(SZ.one(), new AbstractInfiniteSeries<>() {
+    private final Fast mPrime = new Fast();
+    private long mP = 1;
+    private Series<Z> mProd = SZ.one();
+
+    @Override
+    public Z coeff(final long n) {
+      while (n > mP) {
+        mP = mPrime.nextPrime(mP);
+        mProd = SZ.multiply(mProd, SZ.oneMinusXToTheN(mP));
+      }
+      return mProd.coeff(n);
+    }
+  });
 
   @Override
   public Z next() {
-    ++mN;
-    while (mN > mP) {
-      mP = (int) mPrime.nextPrime(mP);
-      mPoly = RING.multiply(mPoly, RING.oneMinusXToTheN(mP));
-    }
-    return RING.coeff(RING.one(), mPoly, mN);
+    return mS.coeff(++mN);
   }
 }
 

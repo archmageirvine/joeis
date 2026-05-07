@@ -407,6 +407,65 @@ public class Permutation {
   }
 
   /**
+   * Pack a permutation into a long using Lehmer code.
+   * @param perm the permutation
+   * @return the code
+   */
+  public static long pack(final int[] perm) {
+    final int n = perm.length;
+    if (n > 20) {
+      throw new IllegalArgumentException("n too large for long");
+    }
+    long code = 0;
+    long fact = 1;
+    // Build from right to left
+    for (int k = n - 1; k >= 0; --k) {
+      int smaller = 0;
+      for (int j = k + 1; j < n; ++j) {
+        if (perm[j] < perm[k]) {
+          ++smaller;
+        }
+      }
+      code += smaller * fact;
+      fact *= (n - k);
+    }
+    return code;
+  }
+
+  /**
+   * Unpack a permutation previously packed with <code>pack</code>.
+   * @param code packed permutation
+   * @param n number of elements
+   * @return permutation
+   */
+  public static int[] unpack(long code, final int n) {
+    if (n > 20) {
+      throw new IllegalArgumentException("n too large for long");
+    }
+    final int[] lehmer = new int[n];
+    // Extract factorial-base digits
+    for (int i = 1; i <= n; ++i) {
+      lehmer[n - i] = (int) (code % i);
+      code /= i;
+    }
+    final int[] perm = new int[n];
+    final boolean[] used = new boolean[n];
+    for (int i = 0; i < n; ++i) {
+      int k = lehmer[i];
+      int v = 0;
+      while (used[v] || k > 0) {
+        if (!used[v]) {
+          --k;
+        }
+        ++v;
+      }
+      perm[i] = v;
+      used[v] = true;
+    }
+    return perm;
+  }
+
+  /**
    * Example use.
    * @param args ignored
    */

@@ -6,7 +6,7 @@ import irvine.util.Permutation;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A395588.
+ * A395588 allocated for Nathan R. Krause.
  * @author Sean A. Irvine
  */
 public class A395588 extends Sequence0 {

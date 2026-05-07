@@ -22,18 +22,16 @@ public class A395230 extends Sequence0 {
     ++mN;
     if (Functions.FIBONACCI.l(mM) == mN) {
       // We use (w,x,y,mM) as indices of the Fibonacci numbers
-      for (long y = 2; y <= mM; ++y) {
-        final long inc = y == mM ? 1 : 2;
+      for (long y = 2; y < mM; ++y) {
         final long u = Functions.FIBONACCI.l(y) * mN;
         for (long x = 2; x <= mM; ++x) {
           final long fx = Functions.FIBONACCI.l(x);
-          for (long w = 2; w <= x; ++w) {
-            final long inc2 = inc * (w == x ? 1 : 2);
+          for (long w = 2; w < x; ++w) {
             final long v = Functions.FIBONACCI.l(w) * fx;
 //            if (u + v == 4) {
 //              System.out.println("(" + mN + "," + Functions.FIBONACCI.l(y) + "," + fx + "," + Functions.FIBONACCI.l(w) + ")");
 //            }
-            mCounts.add(v + u, inc2 * ((x == mM && w == y) ? 1 : 2));
+            mCounts.add(v + u, ((x == mM && w == y) ? 1 : 2));
           }
         }
       }

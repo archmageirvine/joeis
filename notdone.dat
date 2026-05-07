@@ -2735,3 +2735,4 @@ A084617 Maximum number of circles with diameter 1 that can be packed in a square
 A084618 Maximum number of circles of area 1 that can be packed in a circle of area n.
 A084644 Best packings of m>1 equal circles into a larger circle setting a new density record.
 A084719 8190*zeta_K(-3), where K runs through the simplest cubic fields.
+A084723 Primes arising in A083566. a(n) = n-th partial product of A083566 + 2.

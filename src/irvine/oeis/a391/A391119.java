@@ -1,24 +1,37 @@
 package irvine.oeis.a391;
 
-import irvine.math.function.Functions;
+import java.util.HashSet;
+
+import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.a000.A000040;
 
 /**
  * A391119 allocated for Ruud H.G. van Tol.
  * @author Sean A. Irvine
  */
-public class A391119 extends Sequence0 {
+public class A391119 extends A000040 {
 
-  private Z mSum = Z.ZERO;
-  private long mN = -1;
+  private long mN = 0;
 
   @Override
   public Z next() {
-    mSum = mSum.add(++mN);
-    if (mN >= 2) {
-      mSum = mSum.add(Functions.PREV_PRIME.l(mN + 1));
+    ++mN;
+    final Z p = super.next();
+    long j = 0;
+    Z q = Z.ONE;
+//    long j = mN;
+//    Z q = p;
+    final HashSet<Q> seen = new HashSet<>();
+    while (true) {
+      q = mPrime.nextPrime(q);
+      if (++j != mN) {
+        final Q slope = new Q(mP.subtract(q), mN - j).abs();
+        if (!seen.add(slope)) {
+          return Z.valueOf(Math.abs(j - mN));
+        }
+      }
     }
-    return mSum;
   }
 }
+

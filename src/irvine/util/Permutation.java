@@ -427,7 +427,7 @@ public class Permutation {
         }
       }
       code += smaller * fact;
-      fact *= (n - k);
+      fact *= n - k;
     }
     return code;
   }

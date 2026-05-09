@@ -4,7 +4,7 @@ package irvine.oeis.a395;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A395461 Expansion of e.g.f. x^3*(1 + x + x^2/2 + x^3/6)*exp(x).
+ * A395461 allocated for Enrique Navarrete.
  * @author Georg Fischer
  */
 public class A395461 extends HolonomicRecurrence {

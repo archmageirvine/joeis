@@ -4,7 +4,7 @@ package irvine.oeis.a249;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A249102 Numbers with no 1&apos;s in base-7 expansion.
+ * A249102 Numbers with no 1's in base-7 expansion.
  * @author Georg Fischer
  */
 public class A249102 extends FilterNumberSequence {

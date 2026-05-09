@@ -4,7 +4,7 @@ package irvine.oeis.a395;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A395431 Self-convolution of A001076.
+ * A395431 allocated for Alex Stokolos.
  * @author Georg Fischer
  */
 public class A395431 extends HolonomicRecurrence {

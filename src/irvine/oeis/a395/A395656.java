@@ -4,7 +4,7 @@ package irvine.oeis.a395;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A395656 Expansion of 1/(9*x) * (1/(4-3*g)^3 - 1), where g = 1+x*g^4 is the g.f. of A002293.
+ * A395656 allocated for Seiichi Manyama.
  * @author Georg Fischer
  */
 public class A395656 extends SingleTransformSequence {

@@ -16,6 +16,6 @@ public class A085056 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A085056() {
-    super(1, n -> Integers.SINGLETON.product(1, n, k -> A003557.a(k)));
+    super(1, n -> Integers.SINGLETON.product(1, n, A003557::a));
   }
 }

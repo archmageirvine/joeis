@@ -4,7 +4,7 @@ package irvine.oeis.a395;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A395657 Expansion of 1/(16*x) * (1/(5-4*g)^4 - 1), where g = 1+x*g^5 is the g.f. of A002294.
+ * A395657 allocated for Seiichi Manyama.
  * @author Georg Fischer
  */
 public class A395657 extends SingleTransformSequence {

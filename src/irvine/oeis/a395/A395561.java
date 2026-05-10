@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A395561 allocated for Aradhya Haldikar.
+ * A395561 Smallest positive integer k such that n - k is prime and n + k is composite.
  * @author Sean A. Irvine
  */
 public class A395561 extends Sequence3 {

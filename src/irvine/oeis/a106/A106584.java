@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A106584 6 symbol two center branched substitution with ends connected.
+ * A106584 3-limiting word of the morphism 1-&gt;323, 2-&gt;135, 3-&gt;121, 4-&gt;656, 5-&gt;246, 6-&gt;454 starting from 1.
  * @author Georg Fischer
  */
 public class A106584 extends MorphismFixedPointSequence {

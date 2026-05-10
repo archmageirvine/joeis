@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006577;
 
 /**
- * A395508 allocated for Anselm Hudde.
+ * A395508 Record lengths of runs of consecutive numbers whose numbers of Collatz steps to reach 1 are weakly increasing.
  * @author Sean A. Irvine
  */
 public class A395508 extends Sequence1 {

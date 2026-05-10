@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A084761 A sequence of primes such that {a(n)-a(n-1)}/{a(n-1)-a(n-2)} is a unique integer.
+ * A084761 A sequence of primes such that (a(n)-a(n-1)) / (a(n-1)-a(n-2)) is a unique integer.
  * @author Sean A. Irvine
  */
 public class A084761 extends Sequence1 {

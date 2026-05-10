@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A083566.
+ * A395793 Decimal expansion of the principal moment of inertia of an oloid with unit mass density, formed by two unit circles, about the axis passing through the centers of the circles.
  * @author Sean A. Irvine
  */
 public class A395793 extends DecimalExpansionSequence {

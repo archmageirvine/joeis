@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A084713.
+ * A395731 Decimal expansion of the mean width of a regular octahedron of unit edge length.
  * @author Sean A. Irvine
  */
 public class A395731 extends DecimalExpansionSequence {

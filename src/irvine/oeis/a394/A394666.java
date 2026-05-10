@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394666 allocated for Sabuhi A. Amirov.
+ * A394666 a(n) = n! mod (2*n - 1).
  * @author Sean A. Irvine
  */
 public class A394666 extends Sequence1 {

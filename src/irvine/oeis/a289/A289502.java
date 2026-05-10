@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A289502 Mean width of the regular tetrahedron of unit length.
+ * A289502 Decimal expansion of the mean width of the regular tetrahedron of unit edge length.
  * @author Georg Fischer
  */
 public class A289502 extends DecimalExpansionSequence {

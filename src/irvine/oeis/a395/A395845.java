@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395605 allocated for Simone Cammarasana.
+ * A395845 Decimal expansion of the expected distance of a point uniformly selected at random in the interior of a unit square to its farthest vertex.
  * @author Sean A. Irvine
  */
 public class A395845 extends DecimalExpansionSequence {

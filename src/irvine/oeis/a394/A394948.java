@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A394948 allocated for Yu Hin Au.
+ * A394948 Number of equivalence classes of well-formed bracketed words of total length 2n built from the symbol * (of length 2) and two unary bracket types () and [], with no empty bracket pair, modulo commutativity of concatenation.
  * @author Sean A. Irvine
  */
 public class A394948 extends CachedSequence {

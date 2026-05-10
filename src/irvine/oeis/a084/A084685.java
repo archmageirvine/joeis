@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a085.A085307;
 
 /**
- * A084685 a(n) is the least x such that length of fixed-point-list when A085307 is iterated and started at a(n) equals n.
+ * A084685 a(n) is the least k such that iterating A085307 starting from k requires exactly n steps to reach a fixed point.
  * @author Sean A. Irvine
  */
 public class A084685 extends Sequence1 {

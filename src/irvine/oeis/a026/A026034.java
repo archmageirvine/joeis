@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A026034 T(n,[ n/2 ]), where T is defined in A026022.
+ * A026034 a(n) = A026022(n,floor(n/2)).
  * @author Sean A. Irvine
  */
 public class A026034 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A395228 allocated for Clark Kimberling.
+ * A395228 a(n) = number of 4-tuples (w, x, y, z) such that w*x + y*z = n, where w, x, y, z are positive Fibonacci numbers satisfying w &lt; x &lt; y &lt; z.
  * @author Sean A. Irvine
  */
 public class A395228 extends AbstractSequence {

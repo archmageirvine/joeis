@@ -9,21 +9,23 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A395684 Triangle read by rows: T(n,k) = number of labeled simple graphs on n vertices with clique number exactly k.
+ * A395695 Triangle read by rows: T(n,k) = number of labeled simple graphs on n vertices with clique number &lt;= k (K_{k+1}-free graphs).
  * @author Sean A. Irvine
  */
-public class A395684 extends Sequence1 {
+public class A395695 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;
   private Z[] mCounts = null;
   private Object[] mLocks = null; // Used for safe parallelism
+  private Z mRowSum = Z.ZERO;
 
   @Override
   public Z next() {
     if (++mM > mN) {
       ++mN;
       mM = 1;
+      mRowSum = Z.ZERO;
       mCounts = new Z[mN + 1];
       mLocks = new Object[mN + 1];
       for (int k = 1; k < mLocks.length; ++k) {
@@ -46,6 +48,7 @@ public class A395684 extends Sequence1 {
         }
       }.next();
     }
-    return mCounts[mM];
+    mRowSum = mRowSum.add(mCounts[mM]);
+    return mRowSum;
   }
 }

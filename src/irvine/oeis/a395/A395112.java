@@ -10,7 +10,7 @@ import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
 
 /**
- * A395112 allocated for Robert P. P. McKone.
+ * A395112 Number of distinct Smith normal forms of 3 X 3 matrices with entries from {0, 1, ..., n}.
  * @author Sean A. Irvine
  */
 public class A395112 extends Sequence1 {

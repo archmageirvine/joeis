@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395605 allocated for Simone Cammarasana.
+ * A395848 Decimal expansion of the expected distance between the center of a unit-side regular hexagon to a randomly and uniformly selected point on its perimeter.
  * @author Sean A. Irvine
  */
 public class A395848 extends DecimalExpansionSequence {

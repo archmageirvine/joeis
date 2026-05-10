@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395317 allocated for Benny Wegner.
+ * A395317 Decimal expansion of the number Sum_{j&gt;=1} p_j/10^j with p_j being the j-th prime.
  * @author Sean A. Irvine
  */
 public class A395317 extends DecimalExpansionSequence {

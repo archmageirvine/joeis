@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001597;
 
 /**
- * A395562 allocated for Michael De Vlieger.
+ * A395562 Sum of roots r such that A001597(n) = r^m for some m &gt; 1.
  * @author Sean A. Irvine
  */
 public class A395562 extends A001597 {

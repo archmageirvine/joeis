@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000798;
 import irvine.oeis.a006.A006905;
 
 /**
- * A084726.
+ * A395713 Number of binary relations on an n-set that are neither reflexive nor symmetric nor transitive.
  * @author Sean A. Irvine
  */
 public class A395713 extends Sequence0 {

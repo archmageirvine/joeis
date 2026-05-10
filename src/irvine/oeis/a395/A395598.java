@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395598 allocated for Amiram Eldar.
+ * A395598 Decimal expansion of the aspect ratio of a rectangle with the property that a straight line drawn through a uniformly random point on one of the two larger sides, with direction chosen uniformly at random, intersects the other larger side with probability 1/2.
  * @author Sean A. Irvine
  */
 public class A395598 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A084713.
+ * A395728 Decimal expansion of the ratio of the maximum area to the mean area of the orthogonal projection of a regular dodecahedron.
  * @author Sean A. Irvine
  */
 public class A395728 extends DecimalExpansionSequence {

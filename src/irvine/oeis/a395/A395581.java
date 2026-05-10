@@ -4,7 +4,7 @@ package irvine.oeis.a395;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A395581 allocated for A.H.M. Smeets.
+ * A395581 a(n) = floor(r*a(n-1)) + floor(r*a(n-2)), a(0) = 0, a(1) = 1 and r = 1 + sqrt(2).
  * @author Georg Fischer
  */
 public class A395581 extends HolonomicRecurrence {

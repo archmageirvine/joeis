@@ -6,7 +6,7 @@ import irvine.oeis.cons.ZBaseExpansionSequence;
 
 
 /**
- * A003131 Order of Monster simple group.
+ * A003131 Decimal expansion of the order of Monster group.
  * @author Georg Fischer
  */
 public class A003131 extends ZBaseExpansionSequence {

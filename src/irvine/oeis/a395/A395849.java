@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395605 allocated for Simone Cammarasana.
+ * A395849 Decimal expansion of the expected distance between the center of a unit-side regular pentagon to a randomly and uniformly selected point in its interior.
  * @author Sean A. Irvine
  */
 public class A395849 extends DecimalExpansionSequence {

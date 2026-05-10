@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A395531 allocated for Christian Perfect.
+ * A395531 Lay down bricks of length 1, 2, 3, ... on the top-right quadrant of the x-y plane. Place a brick as close to x=0 as possible, and on the highest row with bricks directly underneath where the new brick does not overhang. a(n) is the length of the leftmost brick on each row.
  * @author Sean A. Irvine
  */
 public class A395531 extends Sequence1 {

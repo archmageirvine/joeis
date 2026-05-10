@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A393069 allocated for Bartlomiej Pawlik.
+ * A393069 Numbers whose prime divisors all start with the same digit.
  * @author Sean A. Irvine
  */
 public class A393069 extends FilterNumberSequence {

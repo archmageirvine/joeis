@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A395516 allocated for Michael De Vlieger.
+ * A395516 Numbers k such that A008472(k) and A001414(k) share the same squarefree kernel but neither divides the other.
  * @author Sean A. Irvine
  */
 public class A395516 extends FilterNumberSequence {

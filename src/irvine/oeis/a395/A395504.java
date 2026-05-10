@@ -3,7 +3,7 @@ package irvine.oeis.a395;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A395504 allocated for Srikanth Cherukupally.
+ * A395504 Integers m such that there are more than 2 integers k, 1 &lt;= k &lt; m, such that m divides k^2-1 and k divides m^2-1.
  * @author Sean A. Irvine
  */
 public class A395504 extends FilterNumberSequence {

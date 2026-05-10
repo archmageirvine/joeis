@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A395611 allocated for F. Chapoton.
+ * A395611 Triangle read by rows: coefficients of (1+x)*(1+(n+1)*x)^(n-1).
  * @author Sean A. Irvine
  */
 public class A395611 extends Sequence0 {

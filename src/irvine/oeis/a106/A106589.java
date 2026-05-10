@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A106589 Three-symbol substitution based on Rauzy: adding one 3 to second substitution: characteristic polynomial: x^3-x^2-2*x-2.
+ * A106589 2-limiting word of the morphism 1-&gt;2, 2-&gt;33 3-&gt;123 started from 2.
  * @author Georg Fischer
  */
 public class A106589 extends MorphismFixedPointSequence {

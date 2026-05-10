@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A084713.
+ * A395733 Decimal expansion of the mean width of a regular icosahedron of unit edge length.
  * @author Sean A. Irvine
  */
 public class A395733 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A394739 allocated for Nicolas B\u011blohoubek.
+ * A394739 a(1) = 1, a(n) is the number of previous terms that are greater than half of the previous term.
  * @author Sean A. Irvine
  */
 public class A394739 extends CachedSequence {

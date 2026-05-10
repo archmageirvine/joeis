@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A121057 Triangle read by rows: T(n,m) = Prime[m]^n*(Prime[m] - 1)/2.
+ * A121057 Triangle read by rows: T(n,m) = prime(n)^m*(prime(n) - 1)/2, 1 &lt;= m &lt;= n.
  * @author Georg Fischer
  */
 public class A121057 extends LambdaTriangle {

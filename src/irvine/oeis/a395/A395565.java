@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a065.A065091;
 
 /**
- * A395565 allocated for Alain Rocchelli.
+ * A395565 Primes p preceded and followed by primes whose difference is greater than 2*log(p).
  * @author Sean A. Irvine
  */
 public class A395565 extends A065091 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A084692 Sum of first n zeros of BesselJ function of zero order.
+ * A084692 10000 times the sum of first n zeros of BesselJ function of zero order, rounded.
  * @author Sean A. Irvine
  */
 public class A084692 extends Sequence1 {

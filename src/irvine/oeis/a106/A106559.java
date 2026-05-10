@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A106559 Peano-like substitution of four symbols that gives a narrow strip with a hole in it: characteristic polynomial:x^4-x^3-4x^2-x-15.
+ * A106559 2-limiting word of the morphism 1-&gt;232, 2-&gt;313, 3-&gt;424, 4-&gt;141 started from 1.
  * @author Georg Fischer
  */
 public class A106559 extends MorphismFixedPointSequence {

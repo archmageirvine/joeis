@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395617 allocated for Paolo P. Lava.
+ * A395617 Start with a(1) = 1. Thereafter, a(n) is the least integer with a set of divisors whose sum add to the sum of all previous terms.
  * @author Sean A. Irvine
  */
 public class A395617 extends Sequence1 {

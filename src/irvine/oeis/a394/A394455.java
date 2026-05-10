@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a106.A106291;
 
 /**
- * A394455 allocated for Jason D. Andoyo.
+ * A394455 a(n) = N(1,p)-N(-1,p)-N(0,p) where p is the n-th odd prime and N(j,p) is the number of i with 0&lt;=i&lt;A106291(p) for which the Legendre symbol (A000032(i)/p)=j.
  * @author Sean A. Irvine
  */
 public class A394455 extends Sequence1 {

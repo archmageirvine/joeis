@@ -8,7 +8,7 @@ import irvine.util.array.LongDynamicLongArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A395533 allocated for Hartmut F. W. Hoft.
+ * A395533 a(n) is the first occurrence k of an uninterrupted sequence of n adjacent center parts of the symmetric representation of sigma of i, SRS(i), i = k to i = k + n - 1 where each SRS(i) has an odd number of parts and SRS(k-1) and SRS(k+n) each have an even number of parts.
  * @author Sean A. Irvine
  */
 public class A395533 extends Sequence1 {

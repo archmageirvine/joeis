@@ -4,7 +4,7 @@ package irvine.oeis.a352;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A352980 a(n) = Sum_{1 &lt;= i &lt; j &lt; k &lt;= n} (k*j*i)^3.
+ * A352980 a(n) = Sum_{1 &lt;= i &lt; j &lt; k &lt;= n} (i*j*k)^3.
  * @author Georg Fischer
  */
 public class A352980 extends HolonomicRecurrence {

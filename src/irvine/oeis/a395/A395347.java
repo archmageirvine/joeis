@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395347 allocated for Chen Zhao.
+ * A395347 Squarefree part of b^2 - b*c + c^2 for triples (a,b,c) with a&lt;=b&lt;=c, a+b&gt;c, gcd(a,b,c)=1, ordered by perimeter.
  * @author Sean A. Irvine
  */
 public class A395347 extends Sequence1 {

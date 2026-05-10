@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a025.A025487;
 
 /**
- * A395406 allocated for Felix Huber.
+ * A395406 Triangle read by rows: T(n, k) is the number of unordered factorizations of A025487(n) into exactly k factors &gt;= 2, where 0 &lt;= k &lt;= A036041(n).
  * @author Sean A. Irvine
  */
 public class A395406 extends Sequence1 {

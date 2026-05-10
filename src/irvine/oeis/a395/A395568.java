@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395568 allocated for Jean-Marc Rebert.
+ * A395568 Largest prime of the form x*y + x*z + x*t + y*z + y*t + z*t for integers 0 &lt;= x &lt;= y &lt;= z &lt;= t &lt;= n.
  * @author Sean A. Irvine
  */
 public class A395568 extends Sequence1 {

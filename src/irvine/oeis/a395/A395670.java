@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A083566.
+ * A395670 Integers x&gt;0 such that there exists an integer y&gt;0 such that sigma(x)*psi(x) = x^2 + y^2.
  * @author Sean A. Irvine
  */
 public class A395670 extends FilterNumberSequence {

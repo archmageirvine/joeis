@@ -5,7 +5,7 @@ import irvine.oeis.TwoParameterFormSequence;
 import irvine.oeis.a024.A024619;
 
 /**
- * A394512 allocated for Michael De Vlieger.
+ * A394512 Powers k^(m*k), with k in A024619 and m &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A394512 extends TwoParameterFormSequence {

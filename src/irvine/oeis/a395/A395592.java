@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395592 allocated for A.H.M. Smeets.
+ * A395592 Decimal expansion of the positive real root of x^4 - 3*x^3 - 4*x^2 - 2*x - 1.
  * @author Sean A. Irvine
  */
 public class A395592 extends DecimalExpansionSequence {

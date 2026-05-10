@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395492 allocated for Wesley Ivan Hurt.
+ * A395492 Sum of the distinct primes not dividing n that are adjacent to a divisor of n.
  * @author Sean A. Irvine
  */
 public class A395492 extends Sequence1 {

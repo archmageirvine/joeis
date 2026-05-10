@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A395605 allocated for Simone Cammarasana.
+ * A395605 a(n) = ((Lucas(prime(n)) - 1) / prime(n)) mod prime(n).
  * @author Sean A. Irvine
  */
 public class A395605 extends A000040 {

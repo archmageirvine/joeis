@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a024.A024619;
 
 /**
- * A395414 allocated for Michael De Vlieger.
+ * A395414 Numbers k in A024619 such that A008472(k) is a proper divisor of A001414(k).
  * @author Sean A. Irvine
  */
 public class A395414 extends FilterSequence {

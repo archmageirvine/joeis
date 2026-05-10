@@ -4,7 +4,7 @@ package irvine.oeis.a394;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A394656 allocated for Enrique Navarrete.
+ * A394656 a(n) = binomial(n,3) + 4*binomial(n,4) + 10*binomial(n,5) + 20*binomial(n,6).
  * @author Georg Fischer
  */
 public class A394656 extends HolonomicRecurrence {

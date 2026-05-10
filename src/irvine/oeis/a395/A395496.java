@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395496 allocated for Wesley Ivan Hurt.
+ * A395496 a(n) = Sum_{d|n} gcd(d,n/d)*mu(d).
  * @author Sean A. Irvine
  */
 public class A395496 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395605 allocated for Simone Cammarasana.
+ * A395843 Decimal expansion of the expected distance of a point uniformly selected at random in the interior of a unit-side equilateral triangle to its closest vertex.
  * @author Sean A. Irvine
  */
 public class A395843 extends DecimalExpansionSequence {

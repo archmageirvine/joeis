@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A395278 allocated for Clark Kimberling.
+ * A395278 a(n) = number of 4-tuples (w, x, y, z)  of primes such that w &lt; x &lt; y &lt; z and w*x + y*z = n.
  * @author Sean A. Irvine
  */
 public class A395278 extends AbstractSequence {

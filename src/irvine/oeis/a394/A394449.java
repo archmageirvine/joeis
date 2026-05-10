@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394449 allocated for Firdous Ahmad Mala.
+ * A394449 Number of symmetric relations on an n-set that are neither reflexive nor transitive.
  * @author Sean A. Irvine
  */
 public class A394449 extends Sequence0 {

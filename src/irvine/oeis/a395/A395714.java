@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A083566.
+ * A395714 Integers x&gt;0 such that there exists an integer y&gt;0 such that sigma(x)*psi(x)*phi(x) = x^3 + y^3.
  * @author Sean A. Irvine
  */
 public class A395714 extends FilterNumberSequence {

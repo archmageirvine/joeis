@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A084748 Primes of the form n! + p where p is the smallest prime &gt; n.
+ * A084748 Primes of the form k! + p where p is the smallest prime &gt; k.
  * @author Sean A. Irvine
  */
 public class A084748 extends Sequence1 {

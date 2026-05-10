@@ -5,7 +5,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
- * A394952 allocated for Yu Hin Au.
+ * A394952 Number of equivalence classes of well-formed bracketed words of total length 2n built from the symbol * (of length 2) and three unary bracket types (), [], and {}, with no empty bracket pair, modulo commutativity of concatenation, where every maximal chain of unary brackets is written in canonical weakly increasing order.
  * @author Sean A. Irvine
  */
 public class A394952 extends A394948 {

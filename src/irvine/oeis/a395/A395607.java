@@ -4,7 +4,7 @@ package irvine.oeis.a395;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A395607 allocated for Alexander McCurdy.
+ * A395607 a(n) = a(n-1) + a(n-3) + a(n-4), a(0) = 1, a(1) = 6, a(2) = 36, a(3) = 42.
  * @author Georg Fischer
  */
 public class A395607 extends HolonomicRecurrence {

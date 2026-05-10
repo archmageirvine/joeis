@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A395082 allocated for Felix Huber.
+ * A395082 a(n) is the number of partitions of n into distinct parts with sum of phi values equals phi(n).
  * @author Sean A. Irvine
  */
 public class A395082 extends Sequence0 {

@@ -10,7 +10,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a000.A000040;
 
 /**
- * A395549 allocated for David Niedbala Giraudin.
+ * A395549 a(n) = E_p mod p, where p = prime(n) and E_p = [z^(p-1)] exp(Sum_{j=1..p-2} z^j/(j*(j+1))).
  * @author Sean A. Irvine
  */
 public class A395549 extends Sequence2 {

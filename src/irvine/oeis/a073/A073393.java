@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A073393 Sixth convolution of A002605(n) (generalized (2,2)-Fibonacci), n &gt;= 0, with itself.
+ * A073393 Seventh column of the convolution triangle A073387(n+6,6), for n &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A073393 extends LinearRecurrence {

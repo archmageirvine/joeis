@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000110;
 import irvine.oeis.a000.A000798;
 
 /**
- * A084726.
+ * A395715 Number of relations on an n-set that are reflexive and transitive, but not symmetric.
  * @author Sean A. Irvine
  */
 public class A395715 extends Combiner {

@@ -4,7 +4,7 @@ package irvine.oeis.a073;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A073394 Seventh convolution of A002605(n) (generalized (2,2)-Fibonacci), n &gt;= 0, with itself.
+ * A073394 Eighth column of the convolution triangle A073387(n+7, 7), for n &gt;= 0.
  * @author Georg Fischer
  */
 public class A073394 extends GeneratingFunctionSequence {

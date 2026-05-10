@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394221 allocated for Yifan Xie.
+ * A394221 a(n) is the maximum size of a set family F on {1, 2, ..., n} such that for any pair of distinct sets S, T in F, there exists s in S and t in T such that |s - t| = 1.
  * @author Sean A. Irvine
  */
 public class A394221 extends Sequence1 {

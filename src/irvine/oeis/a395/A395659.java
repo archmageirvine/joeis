@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a005.A005810;
 
 /**
- * A395659 allocated for Seiichi Manyama.
+ * A395659 Expansion of (Sum_{k&gt;=0} binomial(4*k,k) * x^k)^5.
  * new A005810()
  * @author Georg Fischer
  */

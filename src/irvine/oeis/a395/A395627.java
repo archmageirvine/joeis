@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395627 allocated for M. F. Hasler.
+ * A395627 Infinite square array T(n,k) = (prime(n)-1)*prime(n)^k/2; n, k &gt;= 1; read by falling antidiagonals.
  * @author Sean A. Irvine
  */
 public class A395627 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A117705 Numbers n such that 5^n-n^5 is prime.
+ * A117705 Numbers k such that 5^k - k^5 is prime.
  * @author Georg Fischer
  */
 public class A117705 extends FilterNumberSequence {

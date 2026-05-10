@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395615 allocated for Vincenzo Manto.
+ * A395615 a(n) is the integer obtained by inserting the product (modulo 10) of adjacent digits of n between them.
  * @author Sean A. Irvine
  */
 public class A395615 extends Sequence1 {

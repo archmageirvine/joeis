@@ -6,7 +6,7 @@ import irvine.oeis.a033.A033282;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A086810 Triangle obtained by adding a leading diagonal 1,0,0,0,... to A033282.
+ * A086810 Triangle read by rows: T(n, k) = binomial(n-1, k-1) * binomial(n + k, k) / (n + 1) for k &gt; 0 and T(n, 0) = 0^n.
  * @author Georg Fischer
  */
 public class A086810 extends PrependColumn {

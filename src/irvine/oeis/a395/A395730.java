@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A084713.
+ * A395730 Decimal expansion of the maximum area of cross-section of a regular dodecahedron of unit edge length.
  * @author Sean A. Irvine
  */
 public class A395730 extends DecimalExpansionSequence {

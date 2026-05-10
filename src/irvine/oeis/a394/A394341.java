@@ -1,4 +1,4 @@
-package irvine.oeis.a395;
+package irvine.oeis.a394;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -8,9 +8,7 @@ import irvine.oeis.Sequence1;
  * A395141 Square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals downwards, where A(n,k) = (2*n)! * [x^(2*n)] C(x)^k and C(x) satisfies C(x) = cosh( Integral C(x)^3 dx ).
  * @author Sean A. Irvine
  */
-public class A395141 extends Sequence1 {
-
-  // todo has wrng id!
+public class A394341 extends Sequence1 {
 
   private Z mGlobalMaxDen = Z.ZERO;
   private long mDen = 1;

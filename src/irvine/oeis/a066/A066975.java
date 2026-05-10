@@ -2,15 +2,15 @@ package irvine.oeis.a066;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A066975 a(n) = gcd(binomial(2n,n), 2^n + 1).
  * @author Sean A. Irvine
  */
-public class A066975 extends Sequence1 {
+public class A066975 extends Sequence0 {
 
-  private long mN = 0;
+  private long mN = -1;
 
   @Override
   public Z next() {

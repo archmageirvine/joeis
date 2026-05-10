@@ -12,6 +12,8 @@ import irvine.oeis.a000.A000040;
  */
 public class A391119 extends A000040 {
 
+  // todo this is not yet correct
+
   private long mN = 0;
 
   @Override

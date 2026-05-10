@@ -5,24 +5,40 @@ import java.util.Map;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A063454 Number of solutions to x^3 + y^3 = z^3 mod n.
  * @author Sean A. Irvine
  */
-public class A063454 extends Sequence1 {
+public class A063454 extends AbstractSequence {
 
   // After Chai Wah Wu
-
+  private int mExpon;
   private long mN = 0;
+
+  /** Construct the sequence. */
+  public A063454() {
+    this(1, 3);
+  }
+
+  /**
+   * Generic constructor with parameters
+   * @param offset
+   * @param expon
+   */
+  public A063454(final int offset, final int expon) {
+    super(offset);
+    mN = offset - 1;
+    mExpon = expon;
+  }
 
   @Override
   public Z next() {
     ++mN;
     final HashMap<Long, Long> cnts = new HashMap<>();
     for (long i = 0; i < mN; ++i) {
-      final long m = LongUtils.modPow(i, 3, mN);
+      final long m = LongUtils.modPow(i, mExpon, mN);
       cnts.merge(m, 1L, Long::sum);
     }
     long cnt = 0;

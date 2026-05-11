@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A106591.
+ * A106592 Six-symbol substitution based on doubling the Rauzy substitution : n=2 characteristic polynomial: x^6-9*x^4+24*x^2-16.
  * @author Sean A. Irvine
  */
 public class A106592 extends MorphismFixedPointSequence {

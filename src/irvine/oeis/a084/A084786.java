@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.math.z.Z;
 
 /**
- * A084783.
+ * A084786 Row sums of the triangle (A084783) and the differences of the main diagonal (A084785) and the first column (A084784).
  * @author Sean A. Irvine
  */
 public class A084786 extends A084783 {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a083.A083952;
 
 /**
- * A110627 Bisection of A083952 such that the self-convolution is congruent modulo 4 to A083952, which consists entirely of 1&apos;s and 2&apos;s.
+ * A110627 Bisection of A083952 such that the self-convolution is congruent modulo 4 to A083952, which consists entirely of 1's and 2's.
  * @author Georg Fischer
  */
 public class A110627 extends FilterSequence {

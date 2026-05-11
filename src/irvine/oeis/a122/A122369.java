@@ -4,7 +4,7 @@ package irvine.oeis.a122;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A122369 Dimension of 5-variable non-commutative harmonics (twisted derivative). The dimension of the space of non-commutative polynomials in 5 variables which are killed by all symmetric differential operators (where for a monomial w, d_{xi} ( xi w ) = w and d_{xi
+ * A122369 Dimension of 5-variable non-commutative harmonics (twisted derivative). The dimension of the space of non-commutative polynomials in 5 variables which are killed by all symmetric differential operators (where for a monomial w, d_{xi} ( xi w ) = w and d_{xi} ( xj w ) = 0 for i/=j).
  * @author Georg Fischer
  */
 public class A122369 extends HolonomicRecurrence {

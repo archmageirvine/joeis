@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelPermutationSequence;
 
 /**
- * A393394.
+ * A395725 allocated for Charles Cornell Norton.
  * @author Sean A. Irvine
  */
 public class A395725 extends ParallelPermutationSequence {

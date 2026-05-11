@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a083.A083953;
 
 /**
- * A110628 Trisection of A083953 such that the self-convolution cube is congruent modulo 9 to A083953, which consists entirely of 1&apos;s, 2&apos;s and 3&apos;s.
+ * A110628 Trisection of A083953 such that the self-convolution cube is congruent modulo 9 to A083953, which consists entirely of 1's, 2's and 3's.
  * @author Georg Fischer
  */
 public class A110628 extends FilterSequence {

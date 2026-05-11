@@ -5,7 +5,7 @@ import irvine.oeis.IntersectionSequence;
 import irvine.oeis.a026.A026430;
 
 /**
- * A360395 Intersection of A026430 and A360394.
+ * A360395 Intersection of A026430 and A360393.
  * @author Georg Fischer
  */
 public class A360395 extends IntersectionSequence {

@@ -1,7 +1,5 @@
 package irvine.oeis.a395;
 
-import java.util.concurrent.atomic.AtomicLong;
-
 import irvine.math.z.Z;
 import irvine.oeis.ParallelPermutationSequence;
 
@@ -11,7 +9,7 @@ import irvine.oeis.ParallelPermutationSequence;
  */
 public class A395725 extends ParallelPermutationSequence {
 
-  private AtomicLong[] mRow = new AtomicLong[0];
+  private long[] mRow = new long[0];
   private int mM = 0;
 
   /** Construct the sequence. */
@@ -23,7 +21,9 @@ public class A395725 extends ParallelPermutationSequence {
   protected long count(final int[] p) {
     for (int k = 0; k < p.length; ++k) {
       if (p[k] == p.length - 1) {
-        mRow[k].incrementAndGet();
+        synchronized (A395725.this) {
+          ++mRow[k];
+        }
         break;
       }
     }
@@ -56,13 +56,10 @@ public class A395725 extends ParallelPermutationSequence {
   @Override
   public Z next() {
     if (++mM >= mRow.length) {
-      mRow = new AtomicLong[mN + 1];
-      for (int k = 0; k < mRow.length; ++k) {
-        mRow[k] = new AtomicLong();
-      }
+      mRow = new long[mN + 1];
       super.next(); // trigger the parallel search
       mM = 0;
     }
-    return Z.valueOf(mRow[mM].longValue());
+    return Z.valueOf(mRow[mM]);
   }
 }

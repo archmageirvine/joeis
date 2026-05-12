@@ -2737,3 +2737,4 @@ A084644 Best packings of m>1 equal circles into a larger circle setting a new de
 A084719 8190*zeta_K(-3), where K runs through the simplest cubic fields.
 A084723 Primes arising in A083566. a(n) = n-th partial product of A083566 + 2.
 A084734 -3591*zeta_K(-5), where K runs through the simplest cubic fields.
+A084798 Least integer such that x^(n+1)/(ceiling(x^n) + a(n)) monotonically decreases to 1, where x=2.30553839092543...

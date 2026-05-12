@@ -16,7 +16,7 @@ public class A395744 extends Sequence1 {
 
   @Override
   public Z next() {
-    Z t = mA == null ? mS.next() : mA;
+    final Z t = mA == null ? mS.next() : mA;
     long len = 1;
     while ((mA = mS.next()).equals(t)) {
       ++len;

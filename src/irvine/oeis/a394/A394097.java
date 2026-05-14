@@ -19,8 +19,8 @@ public class A394097 extends Sequence1 {
   // second particle actually is.
   // We keep track of the number of ways of reaching a configuration (x,y,u,v).
 
-  private static final int[] DELTA_X = {1, 0,  1};
-  private static final int[] DELTA_Y = {0, 1, -1};
+  private static final int[] DELTA_X = {1, 0,  1, -1};
+  private static final int[] DELTA_Y = {0, 1, -1,  1};
 
   private int mN = 0;
 
@@ -41,7 +41,7 @@ public class A394097 extends Sequence1 {
 
   private boolean check(final int x0, final int y0, final int x1, final int y1) {
     // Check that particle remains inside the triangle.
-    if (y1 < 0 || x1 + y1 > mN || 2 * y1 > mN) {
+    if (x1 < 0 || y1 < 0 || x1 + y1 > mN || 2 * y1 > mN) {
       return false;
     }
     // Check the distance from the origin increases

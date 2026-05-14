@@ -2738,3 +2738,11 @@ A084719 8190*zeta_K(-3), where K runs through the simplest cubic fields.
 A084723 Primes arising in A083566. a(n) = n-th partial product of A083566 + 2.
 A084734 -3591*zeta_K(-5), where K runs through the simplest cubic fields.
 A084798 Least integer such that x^(n+1)/(ceiling(x^n) + a(n)) monotonically decreases to 1, where x=2.30553839092543...
+A084822 Signature sequence of x, where x=0.577284608955710564894... (A084823) is the unique number between 0 and 1 having the property that the signature sequence of x is equal to the continued fraction expansion of x.
+A084823 Decimal expansion of x, where x is the unique number, given floor(x)=0, having the property that the signature sequence of x is equal to the continued fraction expansion of x.
+A084824 Maximum number of spheres of diameter one that can be packed in a cube of volume n (i.e., with edge length n^(1/3)).
+A084825 Maximum number of spheres of diameter one that can be packed in a cube of edge length n.
+A084826 Best packing of m>1 equal spheres in a cube setting a new density record.
+A084827 Maximum number of spheres of volume one that can be packed in a sphere of volume n.
+A084828 Maximum number of spheres of radius one that can be packed in a sphere of radius n.
+A084829 Best packing of m>1 equal spheres in a sphere setting a new density record.

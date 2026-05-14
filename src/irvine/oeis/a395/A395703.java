@@ -1,0 +1,34 @@
+package irvine.oeis.a395;
+
+import irvine.math.predicate.Predicates;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
+import irvine.oeis.a000.A000796;
+
+/**
+ * A395703 allocated for Jean-Marc Rebert.
+ * @author Sean A. Irvine
+ */
+public class A395703 extends Sequence1 {
+
+  private int mN = 0;
+
+  @Override
+  public Z next() {
+    final Z mod = Z.TEN.pow(2L * ++mN - 1);
+    Z v = Z.ZERO;
+    final Sequence pi = new A000796();
+    for (int k = 1; k < 2 * mN; ++k) {
+      v = v.multiply(10).add(pi.next());
+    }
+    long m = 1;
+    while (true) {
+      if (Predicates.PALINDROME.is(v) && v.isProbablePrime()) {
+        return Z.valueOf(m);
+      }
+      v = v.multiply(10).mod(mod).add(pi.next());
+      ++m;
+    }
+  }
+}

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A101510 Diagonal sums of binomial-M√∂bius product.
+ * A101510 Diagonal sums of binomial-M\u00f6bius product.
  * @author Georg Fischer
  */
 public class A101510 extends LambdaSequence {

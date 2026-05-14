@@ -21,8 +21,8 @@ public class A394098 extends Sequence1 {
   // second particle actually is.
   // We keep track of the number of ways of reaching a configuration (x,y,u,v).
 
-  private static final int[] DELTA_X = {1, 0, -1};
-  private static final int[] DELTA_Y = {0, 1,  1};
+  private static final int[] DELTA_X = {1, 0, -1,  1};
+  private static final int[] DELTA_Y = {0, 1,  1, -1};
 
   private int mN = 0;
 

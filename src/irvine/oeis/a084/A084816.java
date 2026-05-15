@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A084816 Least integers that satisfy sum(n&gt;0,1/a(n)^z)=0, where a(1)=1, a(n+1)&gt;a(n) and z=I*2.
+ * A084816 Least integers that satisfy Sum_{n&gt;=1} 1/a(n)^z = 0, where a(1)=1, a(n+1)&gt;a(n) and z=I*2.
  * @author Sean A. Irvine
  */
 public class A084816 extends Sequence1 {

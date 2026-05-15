@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395663 allocated for Jwalin Bhatt.
+ * A395663 Coefficient of Pi^n in the linear equality by Plouffe for the odd values of the Riemann zeta function.
  * @author Sean A. Irvine
  */
 public class A395663 extends Sequence1 {

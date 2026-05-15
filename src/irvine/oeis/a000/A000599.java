@@ -10,16 +10,11 @@ import irvine.math.z.Z;
  */
 public class A000599 extends A000598 {
 
-  /** Construct the sequence. */
-  public A000599() {
-    super(1);
-  }
-
   @Override
   public Z next() {
     super.next();
     final Polynomial<Q> f = RING.subtract(mG, RING.one());
-    return RING.add(RING.pow(f, 2, mN), f.substitutePower(2, mN)).coeff(mN).toZ().divide2();
+    return RING.add(RING.pow(f, 2, mN - 1), f.substitutePower(2, mN - 1)).coeff(mN - 1).toZ().divide2();
   }
 }
 

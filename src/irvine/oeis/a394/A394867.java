@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394867 allocated for Zhao Hui Du.
+ * A394867 Number of distinct cycles under iteration of the sum of n-th powers of digits.
  * @author Sean A. Irvine
  */
 public class A394867 extends Sequence1 {

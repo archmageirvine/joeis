@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A006606 Nonperiodic autocorrelation functions of length n.
+ * A006606 Number of nonperiodic autocorrelation functions of length n {-1,1} sequences.
  * @author Sean A. Irvine
  */
 public class A006606 extends Sequence1 {

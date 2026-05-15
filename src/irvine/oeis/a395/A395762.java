@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A395762 allocated for Dalton Heilig.
+ * A395762 Array read by ascending antidiagonals: A(n, k) = Sum_{j=0..n} Stirling2(n, j)*5^j*(k)_j.
  * @author Sean A. Irvine
  */
 public class A395762 extends Sequence0 {

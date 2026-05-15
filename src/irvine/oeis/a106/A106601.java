@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A106601 Rauzy-like 3-symbol substitution that gives a tile: Characteristic polynomial: x^3-3*x^2-x-1.
+ * A106601 3-limiting word of the morphism 1-&gt;2, 2-&gt;3, 3-&gt;31233.
  * @author Georg Fischer
  */
 public class A106601 extends MorphismFixedPointSequence {

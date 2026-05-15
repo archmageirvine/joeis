@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A395634 allocated for Clark Kimberling.
+ * A395634 a(n) = number of triples (x, y, z) such that 2*x^2 + y*z = n, where x, y, z are positive integers with x coprime to y*z.
  * @author Sean A. Irvine
  */
 public class A395634 extends Sequence0 {

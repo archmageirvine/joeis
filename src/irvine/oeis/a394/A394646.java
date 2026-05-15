@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394646 allocated for Ahmad J. Masad.
+ * A394646 Triangle read by rows: row n gives y transposed, where y is the solution to the matrix equation M*y=b, where the matrix M and vector b are defined by M(i,j) = ((10^(i+1) + 1)^(j-1) + 9)/10 and b(i) = ((10^(i+1)+1)^n + 9)/10 for 1 &lt;= i,j &lt;= n.
  * @author Sean A. Irvine
  */
 public class A394646 extends Sequence1 {

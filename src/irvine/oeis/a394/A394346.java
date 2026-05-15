@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000005;
 import irvine.oeis.a007.A007955;
 
 /**
- * A394346 allocated for Jaroslav Krizek.
+ * A394346 a(n) = tau(n) * pod(n) where tau(k) = the number of the divisors of k (A000005) and pod(k) = the product of the divisors of k (A007955).
  * @author Sean A. Irvine
  */
 public class A394346 extends Combiner {

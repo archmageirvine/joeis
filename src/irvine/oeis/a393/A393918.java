@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393490.
+ * A393918 Triangle read by rows: T(n, k) is the number of compositions of n into parts at least k.
  * @author Sean A. Irvine
  */
 public class A393918 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.a051.A051037;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A395530 allocated for Zhicheng Wei.
+ * A395530 a(n) is the least number of 5-smooth numbers that add up to n.
  * @author Sean A. Irvine
  */
 public class A395530 extends Sequence1 {

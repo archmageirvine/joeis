@@ -3,19 +3,25 @@ package irvine.oeis.a000;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
  * A000224 Number of squares mod n.
  * @author Sean A. Irvine
  */
-public class A000224 extends Sequence1 {
+public class A000224 extends Sequence1 implements DirectSequence {
 
   private long mN = 0;
 
   @Override
   public Z next() {
-    final FactorSequence fs = Jaguar.factor(++mN);
+    return a(++mN);
+  }
+
+  @Override
+  public Z a(final Z n) {
+    final FactorSequence fs = Jaguar.factor(n);
     Z r = Z.ONE;
     for (final Z p : fs.toZArray()) {
       final int e = fs.getExponent(p);
@@ -26,6 +32,11 @@ public class A000224 extends Sequence1 {
       }
     }
     return r;
+  }
+
+  @Override
+  public Z a(final long n) {
+    return a(Z.valueOf(n));
   }
 }
 

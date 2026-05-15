@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395748 allocated for Jwalin Bhatt.
+ * A395748 Coefficient of S_p(n) in the linear equality by Plouffe for the odd values of the Riemann zeta function, where S_p(n) = Sum_{k&gt;=1} 1/((k^n)*(exp(2*Pi*k)+1)).
  * @author Sean A. Irvine
  */
 public class A395748 extends Sequence1 {

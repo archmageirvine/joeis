@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000793;
 
 /**
- * A395744 allocated for Markus Sigg.
+ * A395744 Number of occurrences of the n-th smallest value in A000793.
  * @author Sean A. Irvine
  */
 public class A395744 extends Sequence1 {

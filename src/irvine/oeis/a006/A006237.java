@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A006237 Complexity of tensor sum of n graphs; or spanning trees on n-cube.
+ * A006237 Number of spanning trees of n-cube.
  * @author Sean A. Irvine
  */
 public class A006237 extends Sequence0 {

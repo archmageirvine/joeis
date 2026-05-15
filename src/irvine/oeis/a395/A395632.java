@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A395632 allocated for Clark Kimberling.
+ * A395632 a(n) = number of triples (x, y, z) such that 2*x^2 + y*z = n, where x, y, z are positive integers satisfying x &lt; y &lt;= z.
  * @author Sean A. Irvine
  */
 public class A395632 extends Sequence0 {

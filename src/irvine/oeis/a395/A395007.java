@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A395007 allocated for S. I. Dimitrov.
+ * A395007 Integers x such that there exist two integers 0&lt;y&lt;=z such that sigma(x)*psi(x)*phi(x) = x^3 + y^3 + z^3.
  * @author Sean A. Irvine
  */
 public class A395007 extends FilterNumberSequence {

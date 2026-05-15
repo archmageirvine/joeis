@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A395788 allocated for Juri-Stepan Gerasimov.
+ * A395788 Numbers k for which sopfr(2*k) = sopfr(k + 2) where sopfr = A001414.
  * @author Sean A. Irvine
  */
 public class A395788 extends FilterNumberSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394183 allocated for Reed Silverstein.
+ * A394183 Maximum number of steps before halting among all 2-state 2-symbol Turing machines on an n-cell circular tape, over all binary starting tapes and starting head positions.
  * @author Sean A. Irvine
  */
 public class A394183 extends Sequence1 {

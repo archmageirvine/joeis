@@ -17,10 +17,10 @@ public class A395034 extends Sequence1 {
   // The target points are (0,n), and (0,0), respectively.
   // We keep track of the number of ways of reaching a configuration (x,y,d,u,v,e).
 
-  private static final int[] DELTA_X = {1, 0,  1};
-  private static final int[] DELTA_Y = {0, 1, -1};
-  private static final int[] DELTA_U = {-1,  0, -1};
-  private static final int[] DELTA_V = { 0, -1, 1};
+  private static final int[] DELTA_X = {1, 0,  1, -1};
+  private static final int[] DELTA_Y = {0, 1, -1,  1};
+  private static final int[] DELTA_U = {-1,  0, -1, 1};
+  private static final int[] DELTA_V = { 0, -1, 1, -1};
   private static final int[] DELTA_0 = {0};
 
   private static final class State {

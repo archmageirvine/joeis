@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005117;
 
 /**
- * A395721 allocated for Michael De Vlieger.
+ * A395721 Largest k &lt; m^2 such that both rad(k) and rad(k+1) divide m, where rad = A007947 and m = A005117(n), or -1 if such k does not exist.
  * @author Sean A. Irvine
  */
 public class A395721 extends Sequence1 {

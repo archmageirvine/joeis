@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A395371 allocated for Janaka Rodrigo.
+ * A395371 a(n) is the number of triples (A-&gt;B, B-&gt;C, C-&gt;A) of pairwise disjoint paths on a triangular grid ABC of side length n, such that the distance from the starting point to each point of a path is always increasing.
  * @author Sean A. Irvine
  */
 public class A395371 extends Sequence1 {
@@ -120,7 +120,6 @@ public class A395371 extends Sequence1 {
     }
     return true;
   }
-
 
   @Override
   public Z next() {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a055.A055932;
 
 /**
- * A394753 allocated for Michael De Vlieger.
+ * A394753 Number of k &lt;= m such that rad(k) | m, where rad = A007947 and m = A055932(n).
  * @author Sean A. Irvine
  */
 public class A394753 extends A055932 {

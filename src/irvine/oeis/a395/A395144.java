@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395144 allocated for Hoang Nguyen.
+ * A395144 Indices of records in A100140.
  * @author Sean A. Irvine
  */
 public class A395144 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A084805 Least positive integers, all distinct, that satisfy sum(n&gt;0,1/a(n)^z)=0, where z=(1+I)/sqrt(2).
+ * A084805 Least positive integers, all distinct, that satisfy Sum_{n&gt;0} 1/a(n)^z = 0, where z=(1+I)/sqrt(2).
  * @author Sean A. Irvine
  */
 public class A084805 extends Sequence1 {

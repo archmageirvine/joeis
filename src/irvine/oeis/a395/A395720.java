@@ -3,7 +3,7 @@ package irvine.oeis.a395;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A395720 allocated for Carole Dubois.
+ * A395720 Kangaroo numbers are numbers that are multiples of their inner number; that is, the number obtained by removing its first and last digits.
  * @author Sean A. Irvine
  */
 public class A395720 extends FilterNumberSequence {

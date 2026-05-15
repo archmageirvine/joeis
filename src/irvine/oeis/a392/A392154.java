@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392154 Left diagonal of the difference table of n! under the operator Delta + 2*Delta^2.
+ * A392154 First column of the difference table of n! under the operator Delta + 2*Delta^2.
  * @author Sean A. Irvine
  */
 public class A392154 extends Sequence0 {

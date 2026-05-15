@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A394046 allocated for A.H.M. Smeets.
+ * A394046 Decimal expansion of the positive real root of x^4 - 4*x^3 - 5*x^2 - 2*x - 1.
  * @author Sean A. Irvine
  */
 public class A394046 extends PolynomialRootExpansionSequence {

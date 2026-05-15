@@ -6,7 +6,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A227371 Numbers n such that prime(n) + reversal(prime(n)) is a square.
+ * A227371 Numbers k such that prime(k) + reversal(prime(k)) is a square.
  * @author Georg Fischer
  */
 public class A227371 extends FilterNumberSequence {

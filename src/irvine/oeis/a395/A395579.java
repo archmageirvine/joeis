@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395579 allocated for Bartlomiej Pawlik.
+ * A395579 Product of the least factors in all factorizations of n, up to permutation of factors, into factors &gt; 1, a(1) = 1 by convention.
  * @author Sean A. Irvine
  */
 public class A395579 extends Sequence1 {

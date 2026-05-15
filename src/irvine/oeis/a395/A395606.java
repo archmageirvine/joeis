@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A395606 allocated for Steven Lee Benjamin.
+ * A395606 Number of involutions (elements of order &lt;= 2) in the n-th iterated wreath product of S_3.
  * @author Sean A. Irvine
  */
 public class A395606 extends Sequence0 {

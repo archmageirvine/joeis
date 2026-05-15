@@ -3,7 +3,7 @@ package irvine.oeis.a185;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A185092 Numbers k such that j^j == j^j^j (mod k) for every j.
+ * A185092 Divisors of 12.
  * @author Georg Fischer
  */
 public class A185092 extends FiniteSequence {

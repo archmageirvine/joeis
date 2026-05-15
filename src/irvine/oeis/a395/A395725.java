@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelPermutationSequence;
 
 /**
- * A395725 allocated for Charles Cornell Norton.
+ * A395725 Triangle read by rows: T(n,k) is the number of permutations of [n] avoiding the pattern 1324 with the maximum element n in position k, 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A395725 extends ParallelPermutationSequence {

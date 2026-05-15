@@ -9,7 +9,7 @@ import irvine.oeis.a046.A046086;
 import irvine.oeis.a046.A046087;
 
 /**
- * A395177 allocated for Felix Huber.
+ * A395177 a(n) is the Frobenius number for the primitive Pythagorean triple (A046086(n), A046087(n), A020882(n)).
  * @author Sean A. Irvine
  */
 public class A395177 extends Sequence1 {

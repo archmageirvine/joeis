@@ -3,7 +3,7 @@ package irvine.oeis.a395;
 import irvine.oeis.gf.EgfSequence;
 
 /**
- * A393490.
+ * A395948 allocated for Enrique Navarrete.
  * @author Sean A. Irvine
  */
 public class A395948 extends EgfSequence {

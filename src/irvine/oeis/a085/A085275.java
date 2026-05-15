@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002808;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A085275 Sum of n-th composite number and its largest prime divisor.
+ * A085275 a(n) = Sum of n-th composite number and its largest prime divisor.
  * @author Georg Fischer
  */
 public class A085275 extends SingleTransformSequence {

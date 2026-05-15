@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a126.A126084;
 
 /**
- * A395766 allocated for Saish S. Kambali.
+ * A395766 Indices k such that the cumulative bitwise XOR of the first k primes is prime.
  * @author Sean A. Irvine
  */
 public class A395766 extends FilterPositionSequence {

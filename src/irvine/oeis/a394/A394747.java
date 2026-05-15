@@ -5,7 +5,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A394747 allocated for Aied Sulaiman.
+ * A394747 Numbers k such that k-4 and k+4 are prime and gcd(k, sigma(k)) is prime.
  * @author Sean A. Irvine
  */
 public class A394747 extends FilterNumberSequence {

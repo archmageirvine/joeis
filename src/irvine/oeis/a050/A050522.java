@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A050522 Primes of form 5*2^n-1.
+ * A050522 Primes of form 5*2^k-1.
  * @author Sean A. Irvine
  */
 public class A050522 extends Sequence1 {

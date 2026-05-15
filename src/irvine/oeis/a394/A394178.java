@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394178 allocated for Felix Huber.
+ * A394178 Triangle read by rows: T(n, k) is the Frobenius number for n and k if n and k coprime, and 0 otherwise, for 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A394178 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394341 allocated for Hoang Nguyen.
+ * A394341 Minimum numerators corresponding to the denominators in A395144.
  * @author Sean A. Irvine
  */
 public class A394341 extends Sequence1 {

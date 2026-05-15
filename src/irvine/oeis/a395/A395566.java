@@ -5,7 +5,7 @@ import irvine.oeis.a004.A004355;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A395566 allocated for Vincenzo Librandi.
+ * A395566 Sum of the distinct prime divisors of C(6*n, n).
  * @author Sean A. Irvine
  */
 public class A395566 extends SimpleTransformSequence {

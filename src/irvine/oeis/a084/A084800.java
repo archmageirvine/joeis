@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A084800 Least positive integers, all distinct, that satisfy sum(n&gt;0,1/a(n)^z)=0, where z=(4+I*3)/5.
+ * A084800 Least positive integers, all distinct, that satisfy Sum_{n&gt;0} 1/a(n)^z = 0, where z=(4+I*3)/5.
  * @author Sean A. Irvine
  */
 public class A084800 extends Sequence1 {

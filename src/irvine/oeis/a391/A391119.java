@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A391119 allocated for Ruud H.G. van Tol.
+ * A391119 a(n) is the involvement delay of prime(n) in A390812.
  * @author Sean A. Irvine
  */
 public class A391119 extends A000040 {

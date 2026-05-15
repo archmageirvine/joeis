@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A395635 allocated for Clark Kimberling.
+ * A395635 a(n) = number of triples (x, y, z) such that 2*x^2 + y*z = n, where x, y, z are positive integers with gcd(x,y*z)&gt;1.
  * @author Sean A. Irvine
  */
 public class A395635 extends AbstractSequence {

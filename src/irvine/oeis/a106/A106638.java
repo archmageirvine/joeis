@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A106638 3-symbol substitution that gives a dragon fractal.
+ * A106638 Limiting word of the morphism 1-&gt;1221, 2-&gt;2332, 3-&gt;3113 starting from 1.
  * @author Georg Fischer
  */
 public class A106638 extends MorphismFixedPointSequence {

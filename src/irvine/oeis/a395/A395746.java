@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a265.A265388;
 
 /**
- * A395746 allocated for Chai Wah Wu.
+ * A395746 Numbers m such that A265388(m) = A007947(m*(2*m-1)).
  * @author Sean A. Irvine
  */
 public class A395746 extends FilterPositionSequence {

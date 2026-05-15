@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000796;
 
 /**
- * A395673 allocated for Jean-Marc Rebert.
+ * A395673 The first (2*n-1)-digit palindromic prime occurring in the decimal expansion of Pi.
  * @author Sean A. Irvine
  */
 public class A395673 extends Sequence1 {

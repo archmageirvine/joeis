@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A084802 Least positive integers, all distinct, that satisfy sum(n&gt;0,1/a(n)^z)=0, where z=(24+i*7)/25.
+ * A084802 Least positive integers, all distinct, that satisfy Sum_{n&gt;0} 1/a(n)^z = 0, where z=(24+i*7)/25.
  * @author Sean A. Irvine
  */
 public class A084802 extends Sequence1 {

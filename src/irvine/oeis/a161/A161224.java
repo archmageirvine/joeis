@@ -7,7 +7,7 @@ import irvine.oeis.a196.A196087;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A161224 Triangular table a(n,m) that counts the occurrences of m in all partitions of 2n in exactly n parts.
+ * A161224 Triangular table a(n,m) that counts the occurrences of m in all partitions of 2*n in exactly n parts.
  * @author Georg Fischer
  */
 public class A161224 extends PrependColumn {

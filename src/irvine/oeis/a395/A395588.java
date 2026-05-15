@@ -6,7 +6,7 @@ import irvine.util.Permutation;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A395588 allocated for Nathan R. Krause.
+ * A395588 Maximum orbit size of the topdrop map on permutations of the positive integers 1 through n.
  * @author Sean A. Irvine
  */
 public class A395588 extends Sequence0 {

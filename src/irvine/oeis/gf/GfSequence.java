@@ -16,7 +16,7 @@ public class GfSequence extends AbstractSequence implements DirectSequence {
 
   // Make ring easily available to subclasses
   protected static final SeriesRing<Q> SQ = SeriesRing.SQ;
-  private long mN;
+  protected long mN;
   private final long mStep;
   private final Series<Q> mSeries;
 

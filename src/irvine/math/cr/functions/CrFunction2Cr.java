@@ -26,6 +26,16 @@ public abstract class CrFunction2Cr {
    * @param v second parameter
    * @return function value
    */
+  public CR cr(final Q u, final CR v) {
+    return cr(CR.valueOf(u), v);
+  }
+
+  /**
+   * Evaluate the function at an integer value.
+   * @param u first parameter
+   * @param v second parameter
+   * @return function value
+   */
   public CR cr(final Q u, final Q v) {
     return cr(CR.valueOf(u), CR.valueOf(v));
   }

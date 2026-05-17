@@ -8,13 +8,12 @@ import irvine.math.z.Z;
  * The bessel I function.
  * @author Sean A. Irvine
  */
-class BesselI extends CrFunction2 {
+class BesselI extends CrFunction2Cr {
 
   private static final int EXTRA_PRECISION = 3;
 
-  // Note: it would be straight-forward to generalize this to CR v
   @Override
-  public CR cr(final int v, final CR z) {
+  public CR cr(final long v, final CR z) {
     if (v == 0) {
       return CrFunctions.BESSEL_I0.cr(z);
     }
@@ -33,6 +32,29 @@ class BesselI extends CrFunction2 {
             break;
           }
           sum = sum.add(term);
+        }
+        return scale(sum, -EXTRA_PRECISION);
+      }
+    }.multiply(z.divide(CR.TWO).pow(v));
+  }
+
+  @Override
+  public CR cr(final CR v, final CR z) {
+    return new CR() {
+      @Override
+      protected Z approximate(final int precision) {
+        final int p = precision - EXTRA_PRECISION;
+        final CR z2approx = z.square().divide(CR.FOUR);
+        CR term = CrFunctions.GAMMA.cr(v.add(1)).inverse();
+        Z sum = term.getApprox(p);
+        long k = 0;
+        while (true) {
+          term = term.multiply(z2approx).divide(++k).divide(v.add(k));
+          final Z t = term.getApprox(p);
+          if (t.isZero()) {
+            break;
+          }
+          sum = sum.add(t);
         }
         return scale(sum, -EXTRA_PRECISION);
       }

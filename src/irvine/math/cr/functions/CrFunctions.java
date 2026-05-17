@@ -44,13 +44,17 @@ public final class CrFunctions {
   /** The bessel Y0 function. */
   public static final CrFunction1 BESSEL_Y0 = new BesselY0();
   /** The bessel I function. */
-  public static final CrFunction2 BESSEL_I = new BesselI();
+  public static final CrFunction2Cr BESSEL_I = new BesselI();
   /** The bessel I function. */
   public static final CrFunction2 BESSEL_K = new BesselK();
   /** The Airy Ai function. */
   public static final CrFunction1 AIRY_AI = new AiryAi();
   /** The Airy Bi function. */
   public static final CrFunction1 AIRY_BI = new AiryBi();
+  /** The Airy Ai derivative function. */
+  public static final CrFunction1 AIRY_AI_PRIME = new AiryAiPrime();
+  /** The Airy Bi derivative function. */
+  public static final CrFunction1 AIRY_BI_PRIME = new AiryBiPrime();
   /** The Neville <code>theta_c</code> function. */
   public static final CrFunction2Cr NEVILLE_THETA_C = new NevilleThetaC();
   /** The Neville <code>theta_d</code> function. */

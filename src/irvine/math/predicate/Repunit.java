@@ -3,10 +3,10 @@ package irvine.math.predicate;
 import irvine.math.z.Z;
 
 /**
- * Test if a number is a repeated digit.
+ * Test if a number is a repeated unit.
  * @author Sean A. Irvine
  */
-class Repdigit extends AbstractPredicate2 {
+class Repunit extends AbstractPredicate2 {
 
   @Override
   public long getDefault() {
@@ -16,14 +16,12 @@ class Repdigit extends AbstractPredicate2 {
   @Override
   public boolean is(final long base, final Z n) {
     if (n.compareTo(base) < 0) {
-      return true;
+      return n.isOne();
     }
-    final Z[] t = n.divideAndRemainder(base);
-    final Z r = t[1];
-    Z m = t[0];
-    while (!m.isZero()) {
+    Z m = n;
+    while (!m.isOne()) {
       final Z[] qr = m.divideAndRemainder(base);
-      if (!qr[1].equals(r)) {
+      if (!qr[1].isOne()) {
         return false;
       }
       m = qr[0];
@@ -34,12 +32,11 @@ class Repdigit extends AbstractPredicate2 {
   @Override
   public boolean is(final long base, final long n) {
     if (n < base) {
-      return true;
+      return n == 1;
     }
-    final long r = n % base;
-    long m = n / base;
-    while (m != 0) {
-      if (m % base != r) {
+    long m = n;
+    while (m != 1) {
+      if (m % base != 1) {
         return false;
       }
       m /= base;

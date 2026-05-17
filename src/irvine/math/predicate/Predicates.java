@@ -103,6 +103,8 @@ public final class Predicates {
   public static final Predicate2 POLYGONAL = new Polygonal(); // =A000217(3, =A000326(5, =A000384(6, =A000566(7, =A000567(8, =A001106(9, =A001107(10, =A051682(11, =A051624(12, =A051865(13, =A051866(14, =A051867(15, =A051868(16, =A051869(17, =A051870(18, =A051871(19, =A051872(20, =A051873(21, =A051874(22, =A051875(23, =A051876(24,
   /** Test if a number is a strong pseudoprime. */
   public static final Predicate2 STRONG_PSEUDOPRIME = new StrongPseudoprime(); // =A001262(2, =A020229(3, =A020230(4, =A020231(5, =A020232(6, =A020233(7, =A020326(100, etc.
+  /** Test if a number is a repeated unit (repunit) in a base. */
+  public static final Predicate2 REPUNIT = new Repunit();
   /** Test if a number is a repeated digit in a base. */
   public static final Predicate2 REPDIGIT = new Repdigit();
   /** Test if a number is zeroless in a base. */

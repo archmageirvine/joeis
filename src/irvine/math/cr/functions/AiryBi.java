@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.math.q.Q;
 
 /**
- * The Airy Ai function.
+ * The Airy Bi function.
  * @author Sean A. Irvine
  */
 class AiryBi extends CrFunction1 {

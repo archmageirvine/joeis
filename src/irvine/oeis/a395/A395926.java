@@ -8,8 +8,8 @@ import irvine.oeis.FilterNumberSequence;
  */
 public class A395926 extends FilterNumberSequence {
 
-  private static long K = 10000;
-  private static long M = 1000000;
+  private static long sK = 10000;
+  private static long sM = 1000000;
 
   private static boolean isGrandKangaroo(final long n) {
     final String s = String.valueOf(n);
@@ -20,11 +20,11 @@ public class A395926 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A395926() {
     super(1, 1125000, k -> {
-      if (k >= M) {
-        K = M;
-        M *= 10;
+      if (k >= sM) {
+        sK = sM;
+        sM *= 10;
       }
-      final long m = (k % K) / 10;
+      final long m = (k % sK) / 10;
       return m >= 11155 && k % m == 0 && isGrandKangaroo(m);
     });
   }

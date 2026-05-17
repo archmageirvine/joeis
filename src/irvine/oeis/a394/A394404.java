@@ -11,7 +11,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 public class A394404 extends DecimalExpansionSequence {
 
   private static Z build(final int n, final int precision) {
-    Z one = CR.ONE.getApprox(precision);
+    final Z one = CR.ONE.getApprox(precision);
     Z t = Z.ZERO;
     for (long k = n; k > 1; --k) {
       t = CR.valueOf(k).sqrt().getApprox(precision).shiftLeft(-precision).divide(t.add(Z.valueOf(k).shiftLeft(-precision)));

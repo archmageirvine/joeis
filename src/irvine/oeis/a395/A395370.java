@@ -59,7 +59,7 @@ public class A395370 extends Sequence1 {
   // Build all paths A -> B
   private List<int[]> buildPaths() {
     final List<int[]> paths = new ArrayList<>();
-    List<Integer> path = new ArrayList<>();
+    final List<Integer> path = new ArrayList<>();
     path.add(pack(0, 0));
     buildPaths(paths, path, 0, 0);
     return paths;

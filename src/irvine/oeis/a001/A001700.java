@@ -2,13 +2,14 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence0;
 
 /**
  * A001700 a(n) = binomial(2*n+1, n+1): number of ways to put n+1 indistinguishable balls into n+1 distinguishable boxes = number of (n+1)-st degree monomials in n+1 variables = number of monotone maps from 1..n+1 to 1..n+1.
  * @author Sean A. Irvine
  */
-public class A001700 extends Sequence0 {
+public class A001700 extends Sequence0 implements DirectSequence {
 
   private long mN = -1;
 
@@ -17,4 +18,15 @@ public class A001700 extends Sequence0 {
     ++mN;
     return Binomial.binomial(2 * mN + 1, mN + 1);
   }
+
+  @Override
+  public Z a(final Z n) {
+    return Binomial.binomial(n.multiply2().add(1), n.add(1));
+  }
+
+  @Override
+  public Z a(final long n) {
+    return Binomial.binomial(2 * n + 1, n + 1);
+  }
+
 }

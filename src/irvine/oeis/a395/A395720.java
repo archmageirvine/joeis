@@ -8,17 +8,17 @@ import irvine.oeis.FilterNumberSequence;
  */
 public class A395720 extends FilterNumberSequence {
 
-  private static long K = 100;
-  private static long M = 1000;
+  private static long sK = 100;
+  private static long sM = 1000;
 
   /** Construct the sequence. */
   public A395720() {
     super(1, 110, k -> {
-      if (k >= M) {
-        K = M;
-        M *= 10;
+      if (k >= sM) {
+        sK = sM;
+        sM *= 10;
       }
-      final long m = (k % K) / 10;
+      final long m = (k % sK) / 10;
       return m != 0 && k % m == 0;
     });
   }

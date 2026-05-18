@@ -6,7 +6,7 @@ import irvine.oeis.a267.A267700;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A266532 Total number of Y-toothpicks after n-th stage in the &quot;outward&quot; version of the cellular automaton of A160120.
+ * A266532 Total number of Y-toothpicks after n-th stage in the "outward" version of the cellular automaton of A160120.
  * @author Georg Fischer
  */
 public class A266532 extends PrependSequence {

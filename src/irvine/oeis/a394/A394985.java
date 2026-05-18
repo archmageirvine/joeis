@@ -4,7 +4,7 @@ package irvine.oeis.a394;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A394985 Number of 1&apos;s in the partitions of n into exactly 6 parts.
+ * A394985 Number of 1's in the partitions of n into exactly 6 parts.
  * @author Georg Fischer
  */
 public class A394985 extends HolonomicRecurrence {

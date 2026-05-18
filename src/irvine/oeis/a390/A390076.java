@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A390076 Decimal expansion of psi&apos;(1/6).
+ * A390076 Decimal expansion of psi'(1/6).
  * Formula:
  * @author Georg Fischer
  */

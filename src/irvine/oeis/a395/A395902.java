@@ -4,7 +4,7 @@ package irvine.oeis.a395;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A395902 Triple convolution of the modified Fibonacci sequence F(3n)/2 (A001076).
+ * A395902 allocated for Alex Stokolos.
  * @author Georg Fischer
  */
 public class A395902 extends HolonomicRecurrence {

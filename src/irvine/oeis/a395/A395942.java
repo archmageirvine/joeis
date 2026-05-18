@@ -17,7 +17,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A392575.
+ * A395942 allocated for Chuck Seggelin.
  * @author Sean A. Irvine
  */
 public class A395942 extends Sequence1 {
@@ -36,14 +36,7 @@ public class A395942 extends Sequence1 {
    */
   static class RectanglePackingsSymmetry {
 
-    /**
-     * Entry point.
-     *
-     * @param list tile lengths
-     * @param n board size
-     * @return number of packings modulo D4 symmetry
-     */
-    public static long countPackings(final int[] list, final int n) {
+    static long countPackings(final int[] list, final int n) {
 
       int sum = 0;
 

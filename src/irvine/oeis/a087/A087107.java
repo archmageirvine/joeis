@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A087107 This table shows the coefficients of combinatorial formulas needed for generating the sequential sums of p-th powers of tetrahedral numbers. The p-th row (p&gt;=1) contains a(i,p) for i=1 to 3*p-2, where a(i,p) satisfies Sum_{i=1..n} C(i+2,3)^p = 4 * C(n+3,4)
+ * A087107 This table shows the coefficients of combinatorial formulas needed for generating the sequential sums of p-th powers of tetrahedral numbers. The p-th row (p&gt;=1) contains a(i,p) for i=1 to 3*p-2, where a(i,p) satisfies Sum_{i=1..n} C(i+2,3)^p = 4 * C(n+3,4) * Sum_{i=1..3*p-2} a(i,p) * C(n-1,i-1)/(i+3).
  * @author Georg Fischer
  */
 public class A087107 extends LambdaTable {

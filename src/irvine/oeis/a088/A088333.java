@@ -4,7 +4,7 @@ package irvine.oeis.a088;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A088333 A version of Josephus problem: a(n) is the surviving integer under the following elimination process. Arrange 1,2,3,...,n in a circle, increasing clockwise. Starting with i=1, delete the integer 3 places clockwise from i. Repeat, counting 3 places from the
+ * A088333 A version of Josephus problem: a(n) is the surviving integer under the following elimination process. Arrange 1,2,3,...,n in a circle, increasing clockwise. Starting with i=1, delete the integer 3 places clockwise from i. Repeat, counting 3 places from the next undeleted integer, until only one integer remains.
  * @author Georg Fischer
  */
 public class A088333 extends MultiTransformSequence {

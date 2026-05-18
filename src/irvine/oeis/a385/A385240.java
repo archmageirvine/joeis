@@ -27,7 +27,7 @@ public class A385240 extends AbstractSequence {
   // General strategy used here:
   //  1. Compute all possible rectangles with dimensions in [1..n]
   //  2. Compute all possible orientations of those rectangles (for later convenience)
-  //  3. Iteratively generate combinations of rectangles from 1 that sum to a volume of n^3
+  //  3. Iteratively generate combinations of rectangles from 1 that sum to an area of n^2
   //  4. For each such combination, use backtracking to determined if it can physically pack the cube.
   //
   // For k < 4 faster approaches exist (see A381847).
@@ -238,20 +238,6 @@ public class A385240 extends AbstractSequence {
     }
     return max - min;
   }
-
-  //
-//  // Used by A387040
-//  protected boolean isDistinctVolumes(final int[] set) {
-//    for (int k = 1; k < set.length; ++k) {
-//      final int v = mRectangles.get(set[k]).getArea();
-//      for (int j = 0; j < k; ++j) {
-//        if (mRectangles.get(set[j]).getArea() == v) {
-//          return false;
-//        }
-//      }
-//    }
-//    return true;
-//  }
 
   /**
    * Called with each potential set of rectangles with correct volume sum,

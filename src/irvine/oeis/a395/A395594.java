@@ -4,7 +4,7 @@ package irvine.oeis.a395;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A395594 a(n) = a(n-1) + a(n-3) + a(n-4), a(0)=1, a(1)=9, a(2)=81, a(3)=90.
+ * A395594 allocated for Tom\u00e1s Guardia.
  * @author Georg Fischer
  */
 public class A395594 extends HolonomicRecurrence {

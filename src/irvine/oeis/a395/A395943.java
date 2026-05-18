@@ -2,6 +2,7 @@ package irvine.oeis.a395;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -16,7 +17,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A392575.
+ * A395943 allocated for Chuck Seggelin.
  * @author Sean A. Irvine
  */
 public class A395943 extends Sequence1 {
@@ -28,110 +29,82 @@ public class A395943 extends Sequence1 {
   private int mN = 0;
   private Z mCount;
 
-  static class RectanglePackings {
+  // Pack a row of the rectangle into a long
+  static class RectanglePackingsBit {
 
-    private static boolean canPlaceHorizontal(final boolean[][] board, final int r, final int c, final int len, final int n) {
-      if (c + len > n) {
-        return false;
-      }
-      for (int j = 0; j < len; ++j) {
-        if (board[r][c + j]) {
-          return false;
-        }
-      }
-      return true;
-    }
-
-    private static boolean canPlaceVertical(final boolean[][] board, final int r, final int c, final int len, final int n) {
-      if (r + len > n) {
-        return false;
-      }
-      for (int i = 0; i < len; ++i) {
-        if (board[r + i][c]) {
-          return false;
-        }
-      }
-      return true;
-    }
-
-    private static void placeHorizontal(final boolean[][] board, final int r, final int c, final int len, final boolean value) {
-      for (int j = 0; j < len; ++j) {
-        board[r][c + j] = value;
-      }
-    }
-
-    private static void placeVertical(final boolean[][] board, final int r, final int c, final int len, final boolean value) {
-      for (int i = 0; i < len; ++i) {
-        board[r + i][c] = value;
-      }
-    }
-
-    /**
-     * Count packings of 1 x k rectangles into an n x n square.
-     * @param list tile lengths
-     * @param n side length of square
-     * @return number of packings
-     */
-    public static long countPackings(final int[] list, final int n) {
-      // assumes sum of list is n^2, list elements > 1 (they're actually prime in A395943)
-      // Multiplicity map so equal tiles are indistinguishable
-      final TreeMap<Integer, Integer> counts = new TreeMap<>();
+    static long countPackings(final int[] list, final int n) {
+      int sum = 0;
+      final TreeMap<Integer, Integer> counts = new TreeMap<>(Comparator.reverseOrder());
       for (final int v : list) {
+        sum += v;
         counts.merge(v, 1, Integer::sum);
       }
-      final boolean[][] board = new boolean[n][n];
-      return search(board, counts, n, 0);
+      if (sum != n * n) {
+        return 0; // sum of items is not square size, should not happen in A395943
+      }
+      return search(new long[n], counts, n, 0);
     }
 
-    /**
-     * Recursive search.
-     */
-    private static long search(final boolean[][] board, final TreeMap<Integer, Integer> counts, final int n, final int filled) {
+    private static long search(final long[] rows, final TreeMap<Integer, Integer> counts, final int n, final int filled) {
       if (filled == n * n) {
         return 1;
       }
-      // Find first empty cell
+      final long full = (1L << n) - 1;
       int r = -1;
       int c = -1;
-      outer:
+
+      // Find first empty cell
       for (int i = 0; i < n; ++i) {
-        for (int j = 0; j < n; ++j) {
-          if (!board[i][j]) {
-            r = i;
-            c = j;
-            break outer;
-          }
+        if (rows[i] != full) {
+          r = i;
+          c = Long.numberOfTrailingZeros(~rows[i]);
+          break;
         }
       }
 
       long total = 0;
-      // Try each distinct tile length
       for (final Map.Entry<Integer, Integer> e : counts.entrySet()) {
         final int len = e.getKey();
         final int cnt = e.getValue();
         if (cnt == 0) {
           continue;
         }
-        // consume one copy
         counts.put(len, cnt - 1);
-        // Horizontal placement (1 x len)
-        if (canPlaceHorizontal(board, r, c, len, n)) {
-          placeHorizontal(board, r, c, len, true);
-          total += search(board, counts, n, filled + len);
-          placeHorizontal(board, r, c, len, false);
+
+        // Horizontal
+        if (c + len <= n) {
+          final long mask = ((1L << len) - 1) << c;
+          if ((rows[r] & mask) == 0) {
+            rows[r] |= mask;
+            total += search(rows, counts, n, filled + len);
+            rows[r] ^= mask;
+          }
         }
-        // Vertical placement (len x 1), assumes len!=1
-        if (canPlaceVertical(board, r, c, len, n)) {
-          placeVertical(board, r, c, len, true);
-          total += search(board, counts, n, filled + len);
-          placeVertical(board, r, c, len, false);
+
+        // Vertical
+        if (len > 1 && r + len <= n) {
+          final long bit = 1L << c;
+          boolean ok = true;
+          for (int k = 0; k < len; ++k) {
+            if ((rows[r + k] & bit) != 0) {
+              ok = false;
+              break;
+            }
+          }
+          if (ok) {
+            for (int k = 0; k < len; ++k) {
+              rows[r + k] |= bit;
+            }
+            total += search(rows, counts, n, filled + len);
+            for (int k = 0; k < len; ++k) {
+              rows[r + k] ^= bit;
+            }
+          }
         }
-        // restore
         counts.put(len, cnt);
       }
       return total;
     }
-
   }
 
   private void buildPartitions(final int remaining, final int side, final int p, final ArrayList<Integer> partition) {
@@ -148,7 +121,9 @@ public class A395943 extends Sequence1 {
 
   @Override
   public Z next() {
-    ++mN;
+    if (++mN >= Long.SIZE) {
+      throw new UnsupportedOperationException();
+    }
     mPartitions.clear();
     mCount = Z.ZERO;
     buildPartitions(mN * mN, mN, 2, new ArrayList<>());
@@ -161,11 +136,9 @@ public class A395943 extends Sequence1 {
       executor.submit(() -> {
         Z total = Z.ZERO;
         for (int k = mPartitions.size() - 1 - threadId; k >= 0; k -= THREADS) {
-          final long cnt = RectanglePackings.countPackings(mPartitions.get(k), mN);
+          final long cnt = RectanglePackingsBit.countPackings(mPartitions.get(k), mN);
           if (mVerbose) {
-            for (final int[] p : mPartitions) {
-              StringUtils.message("n=" + mN + " partition " + Arrays.toString(p) + " count " + cnt);
-            }
+            StringUtils.message("n=" + mN + " partition " + k + " " + Arrays.toString(mPartitions.get(k)) + " count " + cnt);
           }
           total = total.add(cnt);
         }

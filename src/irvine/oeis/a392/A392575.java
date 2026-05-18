@@ -15,7 +15,7 @@ public class A392575 extends A000032 {
     if (lucas.isEven()) {
       return lucas.add(1).isProbablePrime() ? Z.ZERO : Z.NEG_ONE;
     }
-    long k = 0;
+    long k = -1;
     while (true) {
       if (lucas.add(Z.ONE.shiftLeft(++k)).isProbablePrime()) {
         return Z.valueOf(k);

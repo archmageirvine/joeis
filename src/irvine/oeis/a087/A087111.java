@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A087111 This table shows the coefficients of combinatorial formulas needed for generating the sequential sums of p-th powers of binomial coefficients C(n,7). The p-th row (p&gt;=1) contains a(i,p) for i=1 to 7*p-6, where a(i,p) satisfies Sum_{i=1..n} C(i+6,7)^p = 8 *
+ * A087111 This table shows the coefficients of combinatorial formulas needed for generating the sequential sums of p-th powers of binomial coefficients C(n,7). The p-th row (p&gt;=1) contains a(i,p) for i=1 to 7*p-6, where a(i,p) satisfies Sum_{i=1..n} C(i+6,7)^p = 8 * C(n+7,8) * Sum_{i=1..7*p-6} a(i,p) * C(n-1,i-1)/(i+7).
  * @author Georg Fischer
  */
 public class A087111 extends LambdaTable {

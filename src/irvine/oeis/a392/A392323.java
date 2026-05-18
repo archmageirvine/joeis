@@ -4,7 +4,7 @@ package irvine.oeis.a392;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A392323 Number of ways to place non-attacking knights on a 4 X n chessboard.
+ * A392323 allocated for Sijie Wu.
  * @author Georg Fischer
  */
 public class A392323 extends HolonomicRecurrence {

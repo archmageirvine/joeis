@@ -1,262 +1,238 @@
 package irvine.oeis.a395;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
-
-import irvine.math.IntegerUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.string.StringUtils;
 
 /**
- * A395942 allocated for Chuck Seggelin.
+ * A395942 Number of ways to partition an n X n square
+ * into 1 X p rectangles, where p is prime,
+ * counted up to rotations/reflections of the square.
+ *
+ * Uses:
+ *  - occupancy-only memoization
+ *  - rectangle id board only for leaf symmetry test
+ *  - first-empty-cell branching
+ *
  * @author Sean A. Irvine
  */
 public class A395942 extends Sequence1 {
 
-  private static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
-    String.valueOf(Runtime.getRuntime().availableProcessors())));
-  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
-  private final List<int[]> mPartitions = new ArrayList<>();
   private int mN = 0;
-  private Z mCount;
+  private Z mFull;
+  private int[] mPrimes;
 
   /**
-   * Count packings of 1 x k rectangles into an n x n square,
-   * modulo rotations/reflections of the whole square.
-   * Equal tile lengths are indistinguishable.
+   * Compare transformed board against original.
+   * Returns:
+   *   negative if transform < original
+   *   positive if transform > original
+   *   zero if equal
+   *
+   * Uses canonical relabeling during comparison.
+   *
+   * @param b board
+   * @param transform transform number
+   * @return comparison
    */
-  static class RectanglePackingsSymmetry {
+  private int compareTransform(final int[][] b, final int transform) {
 
-    static long countPackings(final int[] list, final int n) {
+    final int[] mapA = new int[mN * mN + 1];
+    final int[] mapB = new int[mN * mN + 1];
 
-      int sum = 0;
+    int nextA = 1;
+    int nextB = 1;
 
-      // descending order = huge pruning improvement
-      final TreeMap<Integer, Integer> counts =
-        new TreeMap<>(Comparator.reverseOrder());
+    for (int r = 0; r < mN; ++r) {
+      for (int c = 0; c < mN; ++c) {
 
-      for (final int v : list) {
-        sum += v;
-        counts.merge(v, 1, Integer::sum);
+        //
+        // Original cell
+        //
+        int a = b[r][c];
+
+        if (mapA[a] == 0) {
+          mapA[a] = nextA++;
+        }
+
+        a = mapA[a];
+
+        //
+        // Transformed coordinates
+        //
+        final int tr;
+        final int tc;
+
+        switch (transform) {
+
+          case 0:
+            tr = r;
+            tc = c;
+            break;
+
+          case 1: // rot90
+            tr = mN - 1 - c;
+            tc = r;
+            break;
+
+          case 2: // rot180
+            tr = mN - 1 - r;
+            tc = mN - 1 - c;
+            break;
+
+          case 3: // rot270
+            tr = c;
+            tc = mN - 1 - r;
+            break;
+
+          case 4: // reflect vertical
+            tr = r;
+            tc = mN - 1 - c;
+            break;
+
+          case 5:
+            tr = mN - 1 - c;
+            tc = mN - 1 - r;
+            break;
+
+          case 6:
+            tr = mN - 1 - r;
+            tc = c;
+            break;
+
+          case 7:
+            tr = c;
+            tc = r;
+            break;
+
+          default:
+            throw new IllegalStateException();
+        }
+
+        int d = b[tr][tc];
+
+        if (mapB[d] == 0) {
+          mapB[d] = nextB++;
+        }
+
+        d = mapB[d];
+
+        //
+        // Lexicographic comparison
+        //
+        if (d < a) {
+          return -1;
+        }
+
+        if (d > a) {
+          return 1;
+        }
       }
-
-      if (sum != n * n) {
-        return 0; // should not happen in A395942
-      }
-
-      final long[] rows = new long[n];
-
-      // rectangle ids for symmetry testing
-      final int[][] ids = new int[n][n];
-
-      return search(rows, ids, counts, n, 0, 1);
     }
 
-    private static long search(final long[] rows, final int[][] ids, final TreeMap<Integer, Integer> counts, final int n, final int filled, final int nextId) {
-      if (filled == n * n) {
-        return isCanonical(ids, n) ? 1 : 0;
-      }
-      final long full = (1L << n) - 1;
-      int r = -1;
-      int c = -1;
-      // first empty cell
-      for (int i = 0; i < n; ++i) {
-        if (rows[i] != full) {
-          r = i;
-          c = Long.numberOfTrailingZeros(~rows[i]);
-          break;
-        }
-      }
+    return 0;
+  }
 
-      long total = 0;
-      for (final Map.Entry<Integer, Integer> e : counts.entrySet()) {
-        final int len = e.getKey();
-        final int cnt = e.getValue();
-        if (cnt == 0) {
-          continue;
-        }
-
-        counts.put(len, cnt - 1);
-        // Horizontal placement
-        if (c + len <= n) {
-          final long mask = ((1L << len) - 1) << c;
-          if ((rows[r] & mask) == 0) {
-            rows[r] |= mask;
-            for (int j = 0; j < len; ++j) {
-              ids[r][c + j] = nextId;
-            }
-            total += search(rows, ids, counts, n, filled + len, nextId + 1);
-            rows[r] ^= mask;
-            for (int j = 0; j < len; ++j) {
-              ids[r][c + j] = 0;
-            }
-          }
-        }
-
-        // Vertical placement
-        if (len > 1 && r + len <= n) {
-          final long bit = 1L << c;
-          boolean ok = true;
-          for (int k = 0; k < len; ++k) {
-            if ((rows[r + k] & bit) != 0) {
-              ok = false;
-              break;
-            }
-          }
-          if (ok) {
-            for (int k = 0; k < len; ++k) {
-              rows[r + k] |= bit;
-              ids[r + k][c] = nextId;
-            }
-            total += search(rows, ids, counts, n, filled + len, nextId + 1);
-            for (int k = 0; k < len; ++k) {
-              rows[r + k] ^= bit;
-              ids[r + k][c] = 0;
-            }
-          }
-        }
-        counts.put(len, cnt);
-      }
-      return total;
-    }
-
-    // Incrementally check for minimum representative
-    private static int compareTransform(final int[][] b, final int n, final int transform) {
-      final int[] mapA = new int[n * n + 1];
-      final int[] mapB = new int[n * n + 1];
-      int nextA = 1;
-      int nextB = 1;
-      for (int r = 0; r < n; ++r) {
-        for (int c = 0; c < n; ++c) {
-          int a = b[r][c];
-          if (a != 0) {
-            if (mapA[a] == 0) {
-              mapA[a] = nextA++;
-            }
-            a = mapA[a];
-          }
-          final int tr;
-          final int tc;
-          switch (transform) {
-            case 1: // rotate 90
-              tr = n - 1 - c;
-              tc = r;
-              break;
-            case 2: // rotate 180
-              tr = n - 1 - r;
-              tc = n - 1 - c;
-              break;
-            case 3: // rotate 270
-              tr = c;
-              tc = n - 1 - r;
-              break;
-            case 4: // reflect vertical
-              tr = r;
-              tc = n - 1 - c;
-              break;
-            case 5: // reflect + rotate 90
-              tr = n - 1 - c;
-              tc = n - 1 - r;
-              break;
-            case 6: // reflect + rotate 180
-              tr = n - 1 - r;
-              tc = c;
-              break;
-            case 7: // reflect + rotate 270
-              tr = c;
-              tc = r;
-              break;
-            default:
-              throw new RuntimeException();
-          }
-          int d = b[tr][tc];
-          if (d != 0) {
-            if (mapB[d] == 0) {
-              mapB[d] = nextB++;
-            }
-            d = mapB[d];
-          }
-          if (d < a) {
-            return -1;
-          }
-          if (d > a) {
-            return 1;
-          }
-        }
-      }
-      return 0;
-    }
-
-    private static boolean isCanonical(final int[][] board, final int n) {
+  private boolean isCanonical(final int[][] board) {
       for (int t = 1; t < 8; ++t) {
-        if (compareTransform(board, n, t) < 0) {
+        if (compareTransform(board, t) < 0) {
           return false;
         }
       }
       return true;
     }
 
-  }
+  /**
+   * Recursive search.
+   * @param board occupancy board
+   * @param ids rectangle ids
+   * @param pos lower bound for next empty position
+   * @param nextId next rectangle id
+   * @return number of completions
+   */
+  private long search(final Z board,
+                      final int[][] ids,
+                      int pos,
+                      final int nextId) {
 
-  private void buildPartitions(final int remaining, final int side, final int p, final ArrayList<Integer> partition) {
-    if (remaining == 0) {
-      mPartitions.add(IntegerUtils.toInt(partition));
-      return;
+    // Completely tiled
+    if (board.equals(mFull)) {
+      return isCanonical(ids) ? 1 : 0;
     }
-    for (int q = p; q <= Math.min(remaining, side); q = Functions.NEXT_PRIME.i(q)) {
-      partition.add(q);
-      buildPartitions(remaining - q, side, q, partition);
-      partition.remove(partition.size() - 1);
+
+    while (board.testBit(pos)) {
+      ++pos;
     }
+
+    final int r = pos / mN;
+    final int c = pos % mN;
+
+    long total = 0;
+
+    // Try every prime length
+    for (final int p : mPrimes) {
+
+      // Horizontal
+      if (c + p <= mN) {
+        final Z mask = Z.valueOf((1L << p) - 1).shiftLeft(pos);
+
+        if (board.and(mask).isZero()) {
+          for (int j = 0; j < p; ++j) {
+            ids[r][c + j] = nextId;
+          }
+
+//          if (isCanonical(ids)) {
+            total += search(board.or(mask), ids, pos + p, nextId + 1);
+//          }
+
+          for (int j = 0; j < p; ++j) {
+            ids[r][c + j] = 0;
+          }
+        }
+      }
+
+      // Vertical
+      if (r + p <= mN) {
+        Z mask = Z.ZERO;
+
+        for (int k = 0; k < p; ++k) {
+          mask = mask.setBit(pos + k * mN);
+        }
+
+        if (board.and(mask).isZero()) {
+
+          for (int k = 0; k < p; ++k) {
+            ids[r + k][c] = nextId;
+          }
+
+//          if (isCanonical(ids)) {
+            total += search(board.or(mask), ids, pos + 1, nextId + 1);
+//          }
+
+          for (int k = 0; k < p; ++k) {
+            ids[r + k][c] = 0;
+          }
+        }
+      }
+    }
+    return total;
   }
 
   @Override
   public Z next() {
-    if (++mN >= Long.SIZE) {
-      throw new UnsupportedOperationException();
+    if (++mN == 1) {
+      return Z.ZERO;
     }
-    mPartitions.clear();
-    mCount = Z.ZERO;
-    buildPartitions(mN * mN, mN, 2, new ArrayList<>());
-    if (mVerbose) {
-      StringUtils.message("n=" + mN + " number of partitions " + mPartitions.size());
+
+    // Set up for n, determine primes
+    mFull = Z.ONE.shiftLeft((long) mN * mN).subtract(1);
+    mPrimes = new int[Functions.PRIME_PI.i(mN)];
+    mPrimes[0] = 2;
+    for (int k = 1; k < mPrimes.length; ++k) {
+      mPrimes[k] = Functions.NEXT_PRIME.i(mPrimes[k - 1]);
     }
-    final ExecutorService executor = Executors.newFixedThreadPool(THREADS);
-    for (int t = 0; t < THREADS; ++t) {
-      final int threadId = t;
-      executor.submit(() -> {
-        Z total = Z.ZERO;
-        for (int k = mPartitions.size() - 1 - threadId; k >= 0; k -= THREADS) {
-          final long cnt = RectanglePackingsSymmetry.countPackings(mPartitions.get(k), mN);
-          if (mVerbose) {
-            StringUtils.message("n=" + mN + " partition " + k + " " + Arrays.toString(mPartitions.get(k)) + " count " + cnt);
-          }
-          total = total.add(cnt);
-        }
-        synchronized (A395942.this) {
-          mCount = mCount.add(total);
-        }
-      });
-    }
-    executor.shutdown();
-    try {
-      // Ten years!
-      if (!executor.awaitTermination(3650, TimeUnit.DAYS)) {
-        throw new RuntimeException("Timeout");
-      }
-    } catch (final InterruptedException e) {
-      Thread.currentThread().interrupt();  // Restore interrupt status
-      throw new RuntimeException(e);
-    }
-    return mCount;
+    return Z.valueOf(search(Z.ZERO, new int[mN][mN], 0, 1));
   }
 }
+
+

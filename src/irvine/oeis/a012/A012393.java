@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012393 E.g.f. arctanh(tan(x)*tan(x)) (even powers only).
+ * A012393 Expansion of e.g.f. arctanh(tan(x)*tan(x)) (even powers only).
  * @author Sean A. Irvine
  */
 public class A012393 extends Sequence0 {

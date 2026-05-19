@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
 
 /**
- * A205505 Fibonacci(n*(n+1)) / Fibonacci(n).
+ * A205505 a(n) = Fibonacci(n*(n+1)) / Fibonacci(n).
  * @author Georg Fischer
  */
 public class A205505 extends Sequence1 {

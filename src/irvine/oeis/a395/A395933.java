@@ -3,7 +3,7 @@ package irvine.oeis.a395;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A395933 allocated for Remco Havenaar.
+ * A395933 Number of fixed points of the longest-run operator with radius 2 on binary configurations of the cycle graph C_n.
  * @author Sean A. Irvine
  */
 public class A395933 extends GfSequence {

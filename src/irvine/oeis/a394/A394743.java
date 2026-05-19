@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A394743 a(n) = number of triples (x, y, z) such that x^2 + y*z = n, where x,y,z are nonzero Fibonacci numbers.
+ * A394743 a(n) = number of triples (x, y, z) such that x^2 + y*z = n, where x,y,z are positive Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A394743 extends Sequence0 {

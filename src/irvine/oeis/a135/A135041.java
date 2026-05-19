@@ -6,7 +6,7 @@ import irvine.oeis.cons.ZBaseExpansionSequence;
 
 
 /**
- * A135041 Decimal expansion of the number of partitions of 1729, the second taxicab number, also called the Hardy-Ramanujan number.
+ * A135041 Decimal expansion of the number of partitions of 1729, the taxicab number, also called the Hardy-Ramanujan number.
  * @author Georg Fischer
  */
 public class A135041 extends ZBaseExpansionSequence {

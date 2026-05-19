@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395952 allocated for Juri-Stepan Gerasimov.
+ * A395952 a(n) is the largest integer k &lt; 2^(n-1) for which the number of divisors is equal to n, or 0 if no such k exists.
  * @author Sean A. Irvine
  */
 public class A395952 extends Sequence1 {

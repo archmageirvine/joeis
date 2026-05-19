@@ -4,7 +4,7 @@ package irvine.oeis.a119;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A119647 Fixed point of the morphism 1-&gt;{1,2}, 2-&gt;{1,3}, 3-&gt;{1}.
+ * A119647 Duplicate of A092782.
  * @author Georg Fischer
  */
 public class A119647 extends MorphismFixedPointSequence {

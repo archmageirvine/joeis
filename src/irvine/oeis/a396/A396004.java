@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395653.
+ * A396004 Decimal expansion of Sum_{n&gt;=2} (zeta(2*n + 1) - 1)*n^2/(n + 1).
  * @author Sean A. Irvine
  */
 public class A396004 extends DecimalExpansionSequence {

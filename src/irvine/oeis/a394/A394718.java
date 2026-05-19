@@ -5,7 +5,7 @@ import irvine.oeis.a083.A083869;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A394718 allocated for S. S. Krishna Chaitanya Bulusu.
+ * A394718 a(n) such that the n-th partial nested radical sqrt(a(1) + sqrt(a(2) + ... + sqrt(a(n)))) = n.
  * @author Sean A. Irvine
  */
 public class A394718 extends SimpleTransformSequence {

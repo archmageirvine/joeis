@@ -4,7 +4,7 @@ import irvine.oeis.InverseSequence;
 import irvine.oeis.a057.A057853;
 
 /**
- * A395738 allocated for Ruud H.G. van Tol.
+ * A395738 Index of first occurrence of n in A057853.
  * @author Sean A. Irvine
  */
 public class A395738 extends InverseSequence {

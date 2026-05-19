@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002110;
 
 /**
- * A395922 allocated for Jean-Marc Rebert.
+ * A395922 Largest k such that k*(k+1)/2 divides A002110(n).
  * @author Sean A. Irvine
  */
 public class A395922 extends Sequence1 {

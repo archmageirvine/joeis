@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395190 allocated for Felix Huber.
+ * A395190 a(n) is the number of partitions of n into distinct parts that contain a subset whose product is n.
  * @author Sean A. Irvine
  */
 public class A395190 extends Sequence1 {

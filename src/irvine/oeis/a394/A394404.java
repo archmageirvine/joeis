@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A394404 allocated for Maya S. Popova.
+ * A394404 Decimal expansion of the generalized continued fraction 1 + sqrt(2)/(2 + sqrt(3)/(3 + sqrt(4)/(4 + sqrt(5)/(5 + ...)))).
  * @author Sean A. Irvine
  */
 public class A394404 extends DecimalExpansionSequence {

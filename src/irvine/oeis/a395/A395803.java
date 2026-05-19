@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A395803 allocated for Hoang Nguyen.
+ * A395803 Minimum numerators corresponding to the denominators in A395231.
  * @author Sean A. Irvine
  */
 public class A395803 extends Sequence1 {

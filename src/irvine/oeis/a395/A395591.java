@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395591 allocated for Akimenko Daniil.
+ * A395591 Triangle read by rows: T(n,k) is the number of triangles formed in an n X k rectangular grid of unit squares with diagonals drawn in all squares, 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A395591 extends Sequence1 {

@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395653 allocated for Marc LeBrun.
+ * A395653 a(n) is the number of positive integers k &lt;= n whose divisors, listed in increasing order, have the same sequence of prime signatures as the divisors of n.
  * @author Sean A. Irvine
  */
 public class A395653 extends Sequence1 {

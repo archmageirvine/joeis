@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A106641 A four-symbol four-at-a-time substitution with an ordering change: q=0.
+ * A106641 1-limiting word of the morphism 1-&gt;3443, 2-&gt;2332, 3-&gt;1221, 4-&gt;4114 starting from 1.
  * @author Georg Fischer
  */
 public class A106641 extends MorphismFixedPointSequence {

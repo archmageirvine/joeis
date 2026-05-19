@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a070.A070939;
 
 /**
- * A296349 Position where binary expansion of n starts in the binary Champernowne sequence A030190.
+ * A296349 Position where the row corresponding to the binary expansion of n starts in the (flattened) binary Champernowne triangle A030190.
  * @author Sean A. Irvine
  */
 public class A296349 extends PartialSumSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A395764 allocated for Dalton Heilig.
+ * A395764 First column of the triangular array with T(0, m) = m! and T(n, m) = T(n - 1, m + 3) - 2*T(n - 1, m + 2) + T(n - 1, m + 1).
  * @author Sean A. Irvine
  */
 public class A395764 extends Sequence0 {

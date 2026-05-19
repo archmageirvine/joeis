@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393983 allocated for Alex Shvets.
+ * A393983 a(n) = 108^n * [z^n] hypergeom([1/6, 1/3], [1], z)^3.
  * @author Sean A. Irvine
  */
 public class A393983 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395905 allocated for Stefano Spezia.
+ * A395905 Decimal expansion of Jacobi theta function theta_3(0, 1/2) where theta_3 is the 3rd Jacobi theta function.
  * @author Sean A. Irvine
  */
 public class A395905 extends DecimalExpansionSequence {

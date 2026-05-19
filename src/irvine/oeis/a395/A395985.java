@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A395985 allocated for Mital Ashok.
+ * A395985 Smallest base such that n is a repunit in that base.
  * @author Sean A. Irvine
  */
 public class A395985 extends Sequence3 {

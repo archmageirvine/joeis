@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A394554 Smallest number m such that m*(m+1)*(m+2)*(m+3) has at least n distinct prime factors.
+ * A394554 Smallest number m such that m*(m+1)*(m+2)*(m+3) has exactly n distinct prime factors.
  * @author Sean A. Irvine
  */
 public class A394554 extends Sequence2 {

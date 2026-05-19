@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A395778 allocated for Michael De Vlieger.
+ * A395778 Squarefree numbers k with least prime factor p and m distinct prime factors, such that not all larger prime factors q &gt; p are less than p^m.
  * @author Sean A. Irvine
  */
 public class A395778 extends FilterNumberSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395895 allocated for John Tyler Rascoe.
+ * A395895 Number of nonperiodic autocorrelation functions of length n {-1,0,1} sequences.
  * @author Sean A. Irvine
  */
 public class A395895 extends Sequence1 {

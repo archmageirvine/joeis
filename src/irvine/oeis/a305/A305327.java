@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A305327 Decimal expansion of the middle x such that 1/x + 1/(x+1) + 1/(x+2) = 1.
+ * A305327 Decimal expansion of the middle x such that 1/x + 1/(x+1) + 1/(x+2) = 1, negated.
  * Equation; x^3-4*x-2
  * @author Georg Fischer
  */

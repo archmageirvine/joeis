@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A395623 allocated for M. F. Hasler.
+ * A395623 Infinite square array where the n-th row lists the starting points of runs of n consecutive primes with same digit sum; read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A395623 extends Sequence1 {

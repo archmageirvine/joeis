@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A036982 a(n)=[ a*a(n-1)+b ]/p^r, where a=2.001, b=3.2, p=2 and p^r is the highest power of p dividing [ a*a(n-1)+b ].
+ * A036982 a(n) = [a*a(n-1)+b]/p^r, where a=2.001, b=3.2, p=2 and p^r is the highest power of p dividing [a*a(n-1)+b], starting with a(0) = 1.
  * @author Sean A. Irvine
  */
 public class A036982 extends Sequence0 {

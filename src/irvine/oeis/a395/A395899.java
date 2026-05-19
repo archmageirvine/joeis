@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Triple;
 
 /**
- * A395899 allocated for Michael De Vlieger.
+ * A395899 Sphenic numbers k = p*q*r, primes p &lt; q &lt; r, such that r &lt; p^3.
  * @author Sean A. Irvine
  */
 public class A395899 extends Sequence1 {

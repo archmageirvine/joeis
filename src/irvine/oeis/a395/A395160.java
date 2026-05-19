@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395160 allocated for Omar E. Pol.
+ * A395160 Irregular triangle read by rows: T(n,k) is the average of the odd numbers of the k-th 2-dense sublist of divisors of n and of its conjugate, with n &gt;= 1, k &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A395160 extends Sequence1 {

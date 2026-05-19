@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A004604 Expansion of Pi in base 5.
+ * A396089 allocated for Stefano Spezia.
  * @author Sean A. Irvine
  */
 public class A396089 extends DecimalExpansionSequence {

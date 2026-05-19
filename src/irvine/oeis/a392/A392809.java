@@ -12,11 +12,11 @@ import irvine.oeis.Sequence0;
  */
 public class A392809 extends Sequence0 {
 
-  // todo does not match
-
   private long mN = -1;
 
-  // a(n) = Sum_{k = 1..n} C(n - 1 - k*(ceiling(log(n)) - 1), k - 1).
+  private Z binomial(final long n, final long m) {
+    return n < 0 ? Z.ZERO : Binomial.binomial(n, m);
+  }
 
   @Override
   public Z next() {
@@ -24,6 +24,6 @@ public class A392809 extends Sequence0 {
       return Z.ONE;
     }
     final long ceil = CR.valueOf(mN).log().ceil().longValueExact() - 1;
-    return Integers.SINGLETON.sum(1, mN, k -> Binomial.binomial(mN - 1 - k * ceil, k - 1));
+    return Integers.SINGLETON.sum(1, mN, k -> binomial(mN - 1 - k * ceil, k - 1));
   }
 }

@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000027;
 import irvine.oeis.a178.A178914;
 
 /**
- * A109625 Numbers n such that concatenation of n and its 10's complement is a palindrome.
+ * A109625 Numbers k such that concatenation of k and its 10's complement is a palindrome.
  * @author Georg Fischer
  */
 public class A109625 extends FilterSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a395;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A395761 Grand-kangaroo numbers: kangaroo numbes whose inner number is itself a kangaroo number (A395720).
+ * A395761 Grand-kangaroo numbers: kangaroo numbers whose inner number is itself a kangaroo number (A395720).
  * @author Sean A. Irvine
  */
 public class A395761 extends FilterNumberSequence {

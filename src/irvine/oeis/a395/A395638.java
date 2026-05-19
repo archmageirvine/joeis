@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A395638 allocated for Clark Kimberling.
+ * A395638 a(n) = number of triples (x, y, z) such that 2*x^2 + y*z = n, where x, y, z are positive Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A395638 extends Sequence0 {

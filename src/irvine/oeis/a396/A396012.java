@@ -4,7 +4,7 @@ package irvine.oeis.a396;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A396012 Number of 3&apos;s in the partitions of n into exactly 5 parts.
+ * A396012 Number of 3's in the partitions of n into exactly 5 parts.
  * @author Georg Fischer
  */
 public class A396012 extends HolonomicRecurrence {

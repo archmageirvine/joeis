@@ -1,11 +1,15 @@
 package irvine.oeis.a395;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
- * A395942 Number of ways to partition an n X n square
+ * A395942 allocated for Chuck Seggelin.
  * into 1 X p rectangles, where p is prime,
  * counted up to rotations/reflections of the square.
  *
@@ -16,148 +20,147 @@ import irvine.oeis.Sequence1;
  *
  * @author Sean A. Irvine
  */
-public class A395942 extends Sequence1 {
+public class A395942 extends Sequence0 {
 
-  private int mN = 0;
+  // todo this version is currently broken
+
+  private int mN = -1;
   private Z mFull;
   private int[] mPrimes;
 
-  /**
-   * Compare transformed board against original.
-   * Returns:
-   *   negative if transform < original
-   *   positive if transform > original
-   *   zero if equal
-   *
-   * Uses canonical relabeling during comparison.
-   *
-   * @param b board
-   * @param transform transform number
-   * @return comparison
-   */
-  private int compareTransform(final int[][] b, final int transform) {
+  private long search180(final Z board, int pos) {
 
-    final int[] mapA = new int[mN * mN + 1];
-    final int[] mapB = new int[mN * mN + 1];
+//    final Long cached = mMemo180.get(board);
+//    if (cached != null) {
+//      return cached;
+//    }
 
-    int nextA = 1;
-    int nextB = 1;
+    if (board.equals(mFull)) {
+      return 1;
+    }
 
-    for (int r = 0; r < mN; ++r) {
-      for (int c = 0; c < mN; ++c) {
+    while (board.testBit(pos)) {
+      ++pos;
+    }
 
-        //
-        // Original cell
-        //
-        int a = b[r][c];
+    final int r = pos / mN;
+    final int c = pos % mN;
 
-        if (mapA[a] == 0) {
-          mapA[a] = nextA++;
+    long total = 0;
+    for (final int p : mPrimes) {
+      // horizontal
+      if (c + p <= mN) {
+        Z mask1 = Z.ZERO;
+        for (int j = 0; j < p; ++j) {
+          mask1 = mask1.setBit(pos + j);
+        }
+        final int rr = mN - 1 - r;
+        final int cc = mN - c - p;
+        Z mask2 = Z.ZERO;
+        for (int j = 0; j < p; ++j) {
+          mask2 = mask2.setBit(rr * mN + cc + j);
+        }
+        if (mask1.equals(mask2) || mask1.and(mask2).isZero()) {
+          final Z mask = mask1.or(mask2);
+          if (board.and(mask).isZero()) {
+            total += search180(board.or(mask), pos + 1);
+          }
+        }
+      }
+
+      // vertical
+      if (r + p <= mN) {
+        Z mask1 = Z.ZERO;
+        for (int k = 0; k < p; ++k) {
+          mask1 = mask1.setBit(pos + k * mN);
+        }
+        final int rr = mN - r - p;
+        final int cc = mN - 1 - c;
+        Z mask2 = Z.ZERO;
+        for (int k = 0; k < p; ++k) {
+          mask2 = mask2.setBit((rr + k) * mN + cc);
         }
 
-        a = mapA[a];
-
-        //
-        // Transformed coordinates
-        //
-        final int tr;
-        final int tc;
-
-        switch (transform) {
-
-          case 0:
-            tr = r;
-            tc = c;
-            break;
-
-          case 1: // rot90
-            tr = mN - 1 - c;
-            tc = r;
-            break;
-
-          case 2: // rot180
-            tr = mN - 1 - r;
-            tc = mN - 1 - c;
-            break;
-
-          case 3: // rot270
-            tr = c;
-            tc = mN - 1 - r;
-            break;
-
-          case 4: // reflect vertical
-            tr = r;
-            tc = mN - 1 - c;
-            break;
-
-          case 5:
-            tr = mN - 1 - c;
-            tc = mN - 1 - r;
-            break;
-
-          case 6:
-            tr = mN - 1 - r;
-            tc = c;
-            break;
-
-          case 7:
-            tr = c;
-            tc = r;
-            break;
-
-          default:
-            throw new IllegalStateException();
-        }
-
-        int d = b[tr][tc];
-
-        if (mapB[d] == 0) {
-          mapB[d] = nextB++;
-        }
-
-        d = mapB[d];
-
-        //
-        // Lexicographic comparison
-        //
-        if (d < a) {
-          return -1;
-        }
-
-        if (d > a) {
-          return 1;
+        if (mask1.equals(mask2) || mask1.and(mask2).isZero()) {
+          final Z mask = mask1.or(mask2);
+          if (board.and(mask).isZero()) {
+            total += search180(board.or(mask), pos + 1);
+          }
         }
       }
     }
 
-    return 0;
+    //mMemo180.put(board, total);
+    return total;
   }
 
-  private boolean isCanonical(final int[][] board) {
-      for (int t = 1; t < 8; ++t) {
-        if (compareTransform(board, t) < 0) {
-          return false;
+  private long searchAxis(final Z board, int pos) {
+//    final Long cached = mMemoAxis.get(board);
+//    if (cached != null) {
+//      return cached;
+//    }
+    if (board.equals(mFull)) {
+      return 1;
+    }
+    while (board.testBit(pos)) {
+      ++pos;
+    }
+    final int r = pos / mN;
+    final int c = pos % mN;
+
+    long total = 0;
+    for (final int p : mPrimes) {
+      // horizontal
+      if (c + p <= mN) {
+        Z mask1 = Z.ZERO;
+        for (int j = 0; j < p; ++j) {
+          mask1 = mask1.setBit(pos + j);
+        }
+        final int cc = mN - c - p;
+        Z mask2 = Z.ZERO;
+        for (int j = 0; j < p; ++j) {
+          mask2 = mask2.setBit(r * mN + cc + j);
+        }
+        if (mask1.equals(mask2) || mask1.and(mask2).isZero()) {
+          final Z mask = mask1.or(mask2);
+          if (board.and(mask).isZero()) {
+            total += searchAxis(board.or(mask), pos + 1);
+          }
         }
       }
-      return true;
+      // vertical
+      if (r + p <= mN) {
+        Z mask1 = Z.ZERO;
+        for (int k = 0; k < p; ++k) {
+          mask1 = mask1.setBit(pos + k * mN);
+        }
+        final int cc = mN - 1 - c;
+        Z mask2 = Z.ZERO;
+        for (int k = 0; k < p; ++k) {
+          mask2 = mask2.setBit((r + k) * mN + cc);
+        }
+        if (mask1.equals(mask2) || mask1.and(mask2).isZero()) {
+          final Z mask = mask1.or(mask2);
+          if (board.and(mask).isZero()) {
+            total += searchAxis(board.or(mask), pos + 1);
+          }
+        }
+      }
     }
 
-  /**
-   * Recursive search.
-   * @param board occupancy board
-   * @param ids rectangle ids
-   * @param pos lower bound for next empty position
-   * @param nextId next rectangle id
-   * @return number of completions
-   */
-  private long search(final Z board,
-                      final int[][] ids,
-                      int pos,
-                      final int nextId) {
+    //mMemoAxis.put(board, total);
+    return total;
+  }
 
-    // Completely tiled
+  private long searchDiag(final Z board, int pos) {
+
+//    final Long cached = mMemoDiag.get(board);
+//    if (cached != null) {
+//      return cached;
+//    }
+
     if (board.equals(mFull)) {
-      return isCanonical(ids) ? 1 : 0;
+      return 1;
     }
 
     while (board.testBit(pos)) {
@@ -169,69 +172,129 @@ public class A395942 extends Sequence1 {
 
     long total = 0;
 
-    // Try every prime length
     for (final int p : mPrimes) {
 
-      // Horizontal
+      // horizontal placement
       if (c + p <= mN) {
-        final Z mask = Z.valueOf((1L << p) - 1).shiftLeft(pos);
 
-        if (board.and(mask).isZero()) {
-          for (int j = 0; j < p; ++j) {
-            ids[r][c + j] = nextId;
-          }
+        Z mask1 = Z.ZERO;
 
-//          if (isCanonical(ids)) {
-            total += search(board.or(mask), ids, pos + p, nextId + 1);
-//          }
-
-          for (int j = 0; j < p; ++j) {
-            ids[r][c + j] = 0;
-          }
-        }
-      }
-
-      // Vertical
-      if (r + p <= mN) {
-        Z mask = Z.ZERO;
-
-        for (int k = 0; k < p; ++k) {
-          mask = mask.setBit(pos + k * mN);
+        for (int j = 0; j < p; ++j) {
+          mask1 = mask1.setBit(pos + j);
         }
 
-        if (board.and(mask).isZero()) {
+        Z mask2 = Z.ZERO;
 
-          for (int k = 0; k < p; ++k) {
-            ids[r + k][c] = nextId;
-          }
+        for (int j = 0; j < p; ++j) {
+          mask2 = mask2.setBit((c + j) * mN + r);
+        }
 
-//          if (isCanonical(ids)) {
-            total += search(board.or(mask), ids, pos + 1, nextId + 1);
-//          }
-
-          for (int k = 0; k < p; ++k) {
-            ids[r + k][c] = 0;
+        if (mask1.equals(mask2) || mask1.and(mask2).isZero()) {
+          final Z mask = mask1.or(mask2);
+          if (board.and(mask).isZero()) {
+            total += searchDiag(board.or(mask), pos + 1);
           }
         }
       }
     }
+
+//    mMemoDiag.put(board, total);
+
     return total;
   }
 
-  @Override
-  public Z next() {
-    if (++mN == 1) {
-      return Z.ZERO;
+  private long search90(final Z board, int pos) {
+
+//    final Long cached = mMemo90.get(board);
+//    if (cached != null) {
+//      return cached;
+//    }
+
+    if (board.equals(mFull)) {
+      return 1;
     }
 
-    // Set up for n, determine primes
+    while (board.testBit(pos)) {
+      ++pos;
+    }
+
+    final int r = pos / mN;
+    final int c = pos % mN;
+
+    long total = 0;
+
+    for (final int p : mPrimes) {
+
+      if (c + p <= mN) {
+
+        Z mask = Z.ZERO;
+
+        // original horizontal
+        for (int j = 0; j < p; ++j) {
+          mask = mask.setBit(pos + j);
+        }
+
+        // rot90 vertical
+        for (int j = 0; j < p; ++j) {
+          mask = mask.setBit((c + j) * mN + (mN - 1 - r));
+        }
+
+        // rot180 horizontal
+        for (int j = 0; j < p; ++j) {
+          mask = mask.setBit((mN - 1 - r) * mN + (mN - c - p + j));
+        }
+
+        // rot270 vertical
+        for (int j = 0; j < p; ++j) {
+          mask = mask.setBit((mN - c - p + j) * mN + r);
+        }
+
+        if (mask.bitCount() == 4 * p) {
+          if (board.and(mask).isZero()) {
+            total += search90(board.or(mask), pos + 1);
+          }
+        }
+      }
+    }
+
+//    mMemo90.put(board, total);
+
+    return total;
+  }
+
+  private final Map<Z, Long> mMemo90 = new HashMap<>();
+  private final Map<Z, Long> mMemoDiag = new HashMap<>();
+  private final Map<Z, Long> mMemoAxis = new HashMap<>();
+  private final Map<Z, Long> mMemo180 = new HashMap<>();
+  private final Sequence mUnrestricted = new A395943().skip(); // skip n==1 case
+
+  @Override
+  public Z next() {
+    if (++mN <= 1) {
+      return mN == 1 ? Z.ZERO : Z.ONE;
+    }
+
     mFull = Z.ONE.shiftLeft((long) mN * mN).subtract(1);
     mPrimes = new int[Functions.PRIME_PI.i(mN)];
     mPrimes[0] = 2;
     for (int k = 1; k < mPrimes.length; ++k) {
       mPrimes[k] = Functions.NEXT_PRIME.i(mPrimes[k - 1]);
     }
-    return Z.valueOf(search(Z.ZERO, new int[mN][mN], 0, 1));
+
+    final long fe = mUnrestricted.next().longValueExact();
+    final long f90 = (mN & 1) == 1 ? 0 : search90(Z.ZERO, 0); // rotate by 90 only possible with center cell
+    final long f180 = search180(Z.ZERO, 0);
+    final long fax = searchAxis(Z.ZERO, 0);
+    final long fdiag = searchDiag(Z.ZERO, 0);
+
+    System.out.println("n=" + mN);
+    System.out.println("fe=" + fe);
+    System.out.println("f90=" + f90);
+    System.out.println("f180=" + f180);
+    System.out.println("fax=" + fax);
+    System.out.println("fdiag=" + fdiag);
+
+    return Z.valueOf((fe + 2 * f90 + f180 + 2 * fax + 2 * fdiag) / 8);
   }
 }
 

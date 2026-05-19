@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A344525 a(n) = Sum_{1 &lt;= x_1, x_2, ... , x_n &lt;= n} gcd(x_1,x_2, ... ,x_n).
+ * A344525 a(n) = Sum_{1 &lt;= x_1, x_2, ..., x_n &lt;= n} gcd(x_1, x_2, ..., x_n).
  * @author Georg Fischer
  */
 public class A344525 extends LambdaSequence {

@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A395369 allocated for Janaka Rodrigo.
+ * A395369 a(n) is the number of pairs (A-&gt;B, B-&gt;A) of non-intersecting paths in a triangular grid ABC of side n units, such that the distance from the starting point to each point of a path is always increasing.
  * @author Sean A. Irvine
  */
 public class A395369 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395741 allocated for Yifan Xie.
+ * A395741 a(n) is the smallest positive integer m such that m mod k &lt; k/2 for each 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A395741 extends Sequence1 {

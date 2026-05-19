@@ -8,7 +8,7 @@ import irvine.oeis.a055.A055932;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A395529 allocated for Zhicheng Wei.
+ * A395529 Numbers k such that k cannot be written as m + t where m*t belongs to A055932.
  * @author Sean A. Irvine
  */
 public class A395529 extends Sequence1 {

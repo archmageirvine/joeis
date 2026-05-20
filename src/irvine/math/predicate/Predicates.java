@@ -92,6 +92,8 @@ public final class Predicates {
   public static final Predicate INDIVISIBLE = new Indivisible(); // =A317101
   /** Test if a number has distinct exponents in its prime factorization. */
   public static final Predicate DISTINCT_EXPONENTS = new DistinctExponents(); // =A130091
+  /** Test if a number is a kangaroo. */
+  public static final Predicate KANGAROO = new Kangaroo(); // =A395761
 
   /** Test if a number is an emirp (both the number and its reversal is a different prime). */
   public static final Predicate2 EMIRP = new Emirp(); // =A006567

@@ -1,5 +1,6 @@
 package irvine.oeis.a395;
 
+import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
@@ -14,7 +15,7 @@ public class A395926 extends FilterNumberSequence {
   private static boolean isGrandKangaroo(final long n) {
     final String s = String.valueOf(n);
     final long m = Long.parseLong(s.substring(1, s.length() - 1));
-    return m >= 110 && n % m == 0 && A395761.isKangaroo(m);
+    return m >= 110 && n % m == 0 && Predicates.KANGAROO.is(m);
   }
 
   /** Construct the sequence. */

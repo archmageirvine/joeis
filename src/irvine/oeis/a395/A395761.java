@@ -1,5 +1,6 @@
 package irvine.oeis.a395;
 
+import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
@@ -11,12 +12,6 @@ public class A395761 extends FilterNumberSequence {
   private static long sK = 10000;
   private static long sM = 100000;
 
-  static boolean isKangaroo(final long n) {
-    final String s = String.valueOf(n);
-    final long m = Long.parseLong(s.substring(1, s.length() - 1));
-    return m != 0 && n % m == 0;
-  }
-
   /** Construct the sequence. */
   public A395761() {
     super(1, 11155, k -> {
@@ -25,7 +20,7 @@ public class A395761 extends FilterNumberSequence {
         sM *= 10;
       }
       final long m = (k % sK) / 10;
-      return m >= 110 && k % m == 0 && isKangaroo(m);
+      return m >= 110 && k % m == 0 && Predicates.KANGAROO.is(m);
     });
   }
 }

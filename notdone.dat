@@ -2746,3 +2746,7 @@ A084826 Best packing of m>1 equal spheres in a cube setting a new density record
 A084827 Maximum number of spheres of volume one that can be packed in a sphere of volume n.
 A084828 Maximum number of spheres of radius one that can be packed in a sphere of radius n.
 A084829 Best packing of m>1 equal spheres in a sphere setting a new density record.
+A084892 Decimal expansion of Product_{j>=1, j!=2} zeta(j/2) (negated).
+A084893 Decimal expansion of Product_{j>=1, j!=2} zeta(j/3) (negated).
+A084911 Decimal expansion of linear asymptotic constant B in Sum_{k=1..n} 1/A000688(k) = ~B*n + ... 
+A084913 Number of monomial ideals in two variables that are Artinian, integrally closed and of colength n.

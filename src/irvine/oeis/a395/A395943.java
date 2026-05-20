@@ -80,7 +80,7 @@ public class A395943 extends Sequence0 {
       return mN == 1 ? Z.ZERO : Z.ONE;
     }
 
-    // Set up for n, clear the memory, determine primes
+    // Set up for n, clear the memory, determine allowed primes
     mMemo.clear();
     mFull = Z.ONE.shiftLeft((long) mN * mN).subtract(1);
     mPrimes = new int[Functions.PRIME_PI.i(mN)];

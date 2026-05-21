@@ -157,10 +157,8 @@ public class A395942 extends Sequence0 {
         for (int k = 0; k < p; ++k) {
           mask = mask.setBit(c * mN + (mN - r - p + k));
         }
-        if (mask.bitCount() == 4 * p) {
-          if (board.and(mask).isZero()) {
-            total += search90(board.or(mask), pos + 1);
-          }
+        if (mask.bitCount() == 4 * p && board.and(mask).isZero()) {
+          total += search90(board.or(mask), pos + 1);
         }
       }
     }

@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
  */
 public class A395579 extends Sequence1 {
 
-  private long mN = 0;
+  protected long mN = 0;
   private Z mProd = null;
 
   private void search(final long n, final long d, final long least) {

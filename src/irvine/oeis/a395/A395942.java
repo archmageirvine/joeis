@@ -1,254 +1,162 @@
 package irvine.oeis.a395;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
+import irvine.util.string.StringUtils;
 
 /**
  * A395942 allocated for Chuck Seggelin.
- * into 1 X p rectangles, where p is prime,
- * counted up to rotations/reflections of the square.
- *
- * Uses:
- *  - occupancy-only memoization
- *  - rectangle id board only for leaf symmetry test
- *  - first-empty-cell branching
- *
  * @author Sean A. Irvine
  */
 public class A395942 extends Sequence0 {
 
-  // todo this version is currently broken
-
   private int mN = -1;
   private Z mFull;
   private int[] mPrimes;
+  private final Sequence mUnrestricted = new A395943().skip(2);
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
 
   private long search180(final Z board, int pos) {
-
-//    final Long cached = mMemo180.get(board);
-//    if (cached != null) {
-//      return cached;
-//    }
-
     if (board.equals(mFull)) {
       return 1;
     }
-
     while (board.testBit(pos)) {
       ++pos;
     }
-
+    assert pos < mN * mN;
     final int r = pos / mN;
     final int c = pos % mN;
-
     long total = 0;
     for (final int p : mPrimes) {
-      // horizontal
+      // Horizontal
       if (c + p <= mN) {
-        Z mask1 = Z.ZERO;
-        for (int j = 0; j < p; ++j) {
-          mask1 = mask1.setBit(pos + j);
+        final Z block = Z.valueOf((1L << p) - 1);
+        Z mask = block.shiftLeft(pos);
+        final int rr = mN - 1 - r;
+        final int cc = mN - 1 - c;
+        final int pos2 = rr * mN + cc;
+        mask = mask.or(block.shiftLeft(pos2 - p + 1));
+        final int size = mask.bitCount();
+        if ((size == p || size == 2 * p) && board.and(mask).isZero()) {
+          total += search180(board.or(mask), pos + p);
+        }
+      }
+      // Vertical
+      if (r + p <= mN) {
+        Z mask = Z.ZERO;
+        for (int k = 0; k < p; ++k) {
+          mask = mask.setBit(pos + k * mN);
         }
         final int rr = mN - 1 - r;
-        final int cc = mN - c - p;
-        Z mask2 = Z.ZERO;
-        for (int j = 0; j < p; ++j) {
-          mask2 = mask2.setBit(rr * mN + cc + j);
-        }
-        if (mask1.equals(mask2) || mask1.and(mask2).isZero()) {
-          final Z mask = mask1.or(mask2);
-          if (board.and(mask).isZero()) {
-            total += search180(board.or(mask), pos + 1);
-          }
-        }
-      }
-
-      // vertical
-      if (r + p <= mN) {
-        Z mask1 = Z.ZERO;
-        for (int k = 0; k < p; ++k) {
-          mask1 = mask1.setBit(pos + k * mN);
-        }
-        final int rr = mN - r - p;
         final int cc = mN - 1 - c;
-        Z mask2 = Z.ZERO;
         for (int k = 0; k < p; ++k) {
-          mask2 = mask2.setBit((rr + k) * mN + cc);
+          mask = mask.setBit((rr - k) * mN + cc);
         }
-
-        if (mask1.equals(mask2) || mask1.and(mask2).isZero()) {
-          final Z mask = mask1.or(mask2);
-          if (board.and(mask).isZero()) {
-            total += search180(board.or(mask), pos + 1);
-          }
+        final int size = mask.bitCount();
+        if ((size == p || size == 2 * p) && board.and(mask).isZero()) {
+          total += search180(board.or(mask), pos + 1);
         }
       }
     }
-
-    //mMemo180.put(board, total);
     return total;
   }
+
 
   private long searchAxis(final Z board, int pos) {
-//    final Long cached = mMemoAxis.get(board);
-//    if (cached != null) {
-//      return cached;
-//    }
     if (board.equals(mFull)) {
       return 1;
     }
     while (board.testBit(pos)) {
       ++pos;
     }
+    assert pos < mN * mN;
     final int r = pos / mN;
     final int c = pos % mN;
-
     long total = 0;
     for (final int p : mPrimes) {
-      // horizontal
+      // Horizontal bar
       if (c + p <= mN) {
-        Z mask1 = Z.ZERO;
-        for (int j = 0; j < p; ++j) {
-          mask1 = mask1.setBit(pos + j);
-        }
+        final Z block = Z.valueOf((1L << p) - 1);
+        final Z mask1 = block.shiftLeft(pos);
         final int cc = mN - c - p;
-        Z mask2 = Z.ZERO;
-        for (int j = 0; j < p; ++j) {
-          mask2 = mask2.setBit(r * mN + cc + j);
-        }
+        final Z mask2 = block.shiftLeft(r * mN + cc);
         if (mask1.equals(mask2) || mask1.and(mask2).isZero()) {
           final Z mask = mask1.or(mask2);
           if (board.and(mask).isZero()) {
-            total += searchAxis(board.or(mask), pos + 1);
+            total += searchAxis(board.or(mask), pos + p);
           }
         }
       }
-      // vertical
+      // Vertical bar
       if (r + p <= mN) {
-        Z mask1 = Z.ZERO;
-        for (int k = 0; k < p; ++k) {
-          mask1 = mask1.setBit(pos + k * mN);
-        }
         final int cc = mN - 1 - c;
-        Z mask2 = Z.ZERO;
+        Z mask = Z.ZERO;
         for (int k = 0; k < p; ++k) {
-          mask2 = mask2.setBit((r + k) * mN + cc);
+          mask = mask.setBit(pos + k * mN).setBit((r + k) * mN + cc);
         }
-        if (mask1.equals(mask2) || mask1.and(mask2).isZero()) {
-          final Z mask = mask1.or(mask2);
-          if (board.and(mask).isZero()) {
-            total += searchAxis(board.or(mask), pos + 1);
-          }
+        if (board.and(mask).isZero()) {
+          total += searchAxis(board.or(mask), pos + 1);
         }
       }
     }
-
-    //mMemoAxis.put(board, total);
-    return total;
-  }
-
-  private long searchDiag(final Z board, int pos) {
-
-//    final Long cached = mMemoDiag.get(board);
-//    if (cached != null) {
-//      return cached;
-//    }
-
-    if (board.equals(mFull)) {
-      return 1;
-    }
-
-    while (board.testBit(pos)) {
-      ++pos;
-    }
-
-    final int r = pos / mN;
-    final int c = pos % mN;
-
-    long total = 0;
-
-    for (final int p : mPrimes) {
-
-      // horizontal placement
-      if (c + p <= mN) {
-
-        Z mask1 = Z.ZERO;
-
-        for (int j = 0; j < p; ++j) {
-          mask1 = mask1.setBit(pos + j);
-        }
-
-        Z mask2 = Z.ZERO;
-
-        for (int j = 0; j < p; ++j) {
-          mask2 = mask2.setBit((c + j) * mN + r);
-        }
-
-        if (mask1.equals(mask2) || mask1.and(mask2).isZero()) {
-          final Z mask = mask1.or(mask2);
-          if (board.and(mask).isZero()) {
-            total += searchDiag(board.or(mask), pos + 1);
-          }
-        }
-      }
-    }
-
-//    mMemoDiag.put(board, total);
-
     return total;
   }
 
   private long search90(final Z board, int pos) {
-
-//    final Long cached = mMemo90.get(board);
-//    if (cached != null) {
-//      return cached;
-//    }
-
     if (board.equals(mFull)) {
       return 1;
     }
-
     while (board.testBit(pos)) {
       ++pos;
     }
-
+    assert pos < mN * mN;
     final int r = pos / mN;
     final int c = pos % mN;
-
     long total = 0;
-
     for (final int p : mPrimes) {
-
       if (c + p <= mN) {
-
-        Z mask = Z.ZERO;
-
-        // original horizontal
-        for (int j = 0; j < p; ++j) {
-          mask = mask.setBit(pos + j);
-        }
-
-        // rot90 vertical
+        final Z block = Z.valueOf((1L << p) - 1);
+        // Horizontal
+        Z mask = block.shiftLeft(pos);
+        // rotate 90 vertical
         for (int j = 0; j < p; ++j) {
           mask = mask.setBit((c + j) * mN + (mN - 1 - r));
         }
-
-        // rot180 horizontal
+        // rotate 180 horizontal
         for (int j = 0; j < p; ++j) {
           mask = mask.setBit((mN - 1 - r) * mN + (mN - c - p + j));
         }
-
-        // rot270 vertical
+        // rotate 270 vertical
         for (int j = 0; j < p; ++j) {
           mask = mask.setBit((mN - c - p + j) * mN + r);
         }
-
+        if (mask.bitCount() == 4 * p) {
+          if (board.and(mask).isZero()) {
+            total += search90(board.or(mask), pos + p);
+          }
+        }
+      }
+      // Vertical
+      if (r + p <= mN) {
+        Z mask = Z.ZERO;
+        // original vertical
+        for (int k = 0; k < p; ++k) {
+          mask = mask.setBit(pos + k * mN);
+        }
+        // rotate 90 horizontal
+        for (int k = 0; k < p; ++k) {
+          mask = mask.setBit((mN - 1 - c) * mN + (r + k));
+        }
+        // rotate 180 vertical
+        for (int k = 0; k < p; ++k) {
+          mask = mask.setBit((mN - r - p + k) * mN + (mN - 1 - c));
+        }
+        // rotate 270 horizontal
+        for (int k = 0; k < p; ++k) {
+          mask = mask.setBit(c * mN + (mN - r - p + k));
+        }
         if (mask.bitCount() == 4 * p) {
           if (board.and(mask).isZero()) {
             total += search90(board.or(mask), pos + 1);
@@ -256,17 +164,9 @@ public class A395942 extends Sequence0 {
         }
       }
     }
-
-//    mMemo90.put(board, total);
-
     return total;
   }
 
-  private final Map<Z, Long> mMemo90 = new HashMap<>();
-  private final Map<Z, Long> mMemoDiag = new HashMap<>();
-  private final Map<Z, Long> mMemoAxis = new HashMap<>();
-  private final Map<Z, Long> mMemo180 = new HashMap<>();
-  private final Sequence mUnrestricted = new A395943().skip(); // skip n==1 case
 
   @Override
   public Z next() {
@@ -282,20 +182,26 @@ public class A395942 extends Sequence0 {
     }
 
     final long fe = mUnrestricted.next().longValueExact();
-    final long f90 = (mN & 1) == 1 ? 0 : search90(Z.ZERO, 0); // rotate by 90 only possible with center cell
+    if (mVerbose) {
+      StringUtils.message(mN + " Raw count from A395943 " + fe);
+    }
+    // If n is odd, there can never be a 90 degree rotation because the center cell cannot have it
+    final long f90 = (mN & 1) == 1 ? 0 : search90(Z.ZERO, 0);
+    if (mVerbose) {
+      StringUtils.message(mN + " Contribution of cases with rotation by 90 degrees symmetry " + f90);
+    }
     final long f180 = search180(Z.ZERO, 0);
+    if (mVerbose) {
+      StringUtils.message(mN + " Contribution of cases with rotation by 180 degrees symmetry " + f180);
+    }
     final long fax = searchAxis(Z.ZERO, 0);
-    final long fdiag = searchDiag(Z.ZERO, 0);
+    if (mVerbose) {
+      StringUtils.message(mN + " Contribution of cases with axial symmetry " + fax);
+    }
 
-    System.out.println("n=" + mN);
-    System.out.println("fe=" + fe);
-    System.out.println("f90=" + f90);
-    System.out.println("f180=" + f180);
-    System.out.println("fax=" + fax);
-    System.out.println("fdiag=" + fdiag);
-
-    return Z.valueOf((fe + 2 * f90 + f180 + 2 * fax + 2 * fdiag) / 8);
+    // Use Burnside to put all the pieces together
+    final Z total = Z.valueOf(fe).add(2 * f90).add(f180).add(2 * fax);
+    assert total.mod(8) == 0 : "Total: " + total + " should be disible by 8";
+    return total.divide(8);
   }
 }
-
-

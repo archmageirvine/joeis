@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002210;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A118786 Primes p such that the nearest integer to p * K is prime, where K is Khinchin&apos;s constant.
+ * A118786 Primes p such that the nearest integer to p * K is prime, where K is Khinchin's constant.
  * @author Georg Fischer
  */
 public class A118786 extends FilterSequence {

@@ -3,15 +3,15 @@ package irvine.oeis.a131;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A131553 a(n) = Product_{k=1..n, gcd(k,n)=1} (1+k).
  * @author Georg Fischer
  */
-public class A131553 extends Sequence1 {
+public class A131553 extends Sequence0 {
 
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {

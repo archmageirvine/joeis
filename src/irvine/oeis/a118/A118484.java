@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A118484 Primes p such that the nearest integer to p * gamma is prime, where gamma is Euler&apos;s constant.
+ * A118484 Primes p such that the nearest integer to p * gamma is prime, where gamma is Euler's constant.
  * @author Georg Fischer
  */
 public class A118484 extends FilterSequence {

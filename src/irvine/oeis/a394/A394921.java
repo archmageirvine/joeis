@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A394921 Decimal expansion of the probability that a straight line drawn through a point uniformly selected at random on the surface of a cube, with a direction independently and uniformly selected at random, intersects the opposite face to the face on which the po
+ * A394921 Decimal expansion of the probability that a straight line drawn through a point uniformly selected at random on the surface of a cube, with a direction independently and uniformly selected at random, intersects the opposite face to the face on which the point lies.
  * Formula:
  * @author Georg Fischer
  */

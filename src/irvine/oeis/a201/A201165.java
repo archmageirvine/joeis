@@ -6,7 +6,7 @@ import irvine.oeis.a139.A139375;
 import irvine.oeis.triangle.Product;
 
 /**
- * A201165 Triangle read by rows: Pascal&apos;s triangle (A007318) times the Fibonacci triangle (A139375).
+ * A201165 Triangle read by rows: Pascal's triangle (A007318) times the Fibonacci triangle (A139375).
  * @author Georg Fischer
  */
 public class A201165 extends Product {

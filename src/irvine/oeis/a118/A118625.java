@@ -8,7 +8,7 @@ import irvine.oeis.a006.A006752;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A118625 Primes p such that the nearest integer to p * K is prime, where K is Catalan&apos;s constant.
+ * A118625 Primes p such that the nearest integer to p * K is prime, where K is Catalan's constant.
  * @author Georg Fischer
  */
 public class A118625 extends FilterSequence {

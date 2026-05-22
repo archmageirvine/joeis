@@ -32,7 +32,7 @@ public class A138576 extends Sequence1 {
     while (true) {
       ++mN;
       if (2 * mN >= mParm) {
-        final Z term = Z.ONE.shiftLeft(2L * mN - mParm).subtract(mParm).abs();
+        final Z term = Z.ONE.shiftLeft(2L * mN - mParm).subtract(mParm);
         if (term.isProbablePrime()) {
           return Z.valueOf(mN);
         }

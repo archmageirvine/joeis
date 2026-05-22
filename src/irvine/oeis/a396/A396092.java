@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a025.A025235;
 
 /**
- * A396092 G.f. satisfies A(x) = 1 + x*A(x)^2 + 2*x^2*A(x)^4.
+ * A396092 allocated for Paul D. Hanna.
  * new A025235()
  * @author Georg Fischer
  */

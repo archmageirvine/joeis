@@ -6,7 +6,7 @@ import irvine.oeis.a240.A240935;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A396027 Decimal expansion of the probability that Buffon&apos;s needle will land on exactly two lines when dropped on a hexagonal tiling in which the inradius of each hexagon equals the length of the needle.
+ * A396027 Decimal expansion of the probability that Buffon's needle will land on exactly two lines when dropped on a hexagonal tiling in which the inradius of each hexagon equals the length of the needle.
  * Formula:
  * @author Georg Fischer
  */

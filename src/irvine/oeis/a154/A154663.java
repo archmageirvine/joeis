@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A154663 Numbers k such that k! + 767 and abs(k! - 767) are primes.
+ * A154663 Numbers n such that n!-+767 are primes.
  * @author Georg Fischer
  */
 public class A154663 extends FilterNumberSequence {

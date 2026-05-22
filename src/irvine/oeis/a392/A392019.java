@@ -17,7 +17,7 @@ public class A392019 extends Sequence1 {
   @Override
   public Z next() {
     final Z n2 = Z.valueOf(++mN).square();
-    for (long k = 1; k <= mN / 2; ++k) {
+    for (long k = 1; k <= mN; ++k) {
       final FactorSequence fs = Jaguar.factor(Binomial.binomial(mN, k));
       Z u = Z.ONE;
       for (final Z p : fs.toZArray()) {

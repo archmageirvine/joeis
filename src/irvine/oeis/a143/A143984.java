@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A143984 a(0) = 0; thereafter, a(n) = (a(n - 1) - 2)^2 - n.
+ * A143984 a(0) = 0; thereafter, a(n+1) = (a(n) - 2)^2 - n.
  * @author Georg Fischer
  */
 public class A143984 extends MultiTransformSequence {

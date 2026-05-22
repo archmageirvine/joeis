@@ -4,7 +4,7 @@ package irvine.oeis.a392;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A392966 Number of ordered rooted trees with non-root node weights summing to n. Such that non-root nodes are each labeled with a subset s of [n], the weight of a node is the number of elements in s, only non-root nodes labeled with singleton subsets can have child
+ * A392966 Number of ordered rooted trees with non-root node weights summing to n. Such that non-root nodes are each labeled with a subset s of [n], the weight of a node is the number of elements in s, only non-root nodes labeled with singleton subsets can have child nodes, and the labels of a given tree form a set partition of [n].
  * @author Georg Fischer
  */
 public class A392966 extends PolynomialFieldSequence {

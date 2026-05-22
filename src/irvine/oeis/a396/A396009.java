@@ -4,7 +4,7 @@ package irvine.oeis.a396;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A396009 Number of 2&apos;s in the partitions of n into exactly 4 parts.
+ * A396009 Number of 2's in the partitions of n into exactly 4 parts.
  * @author Georg Fischer
  */
 public class A396009 extends HolonomicRecurrence {

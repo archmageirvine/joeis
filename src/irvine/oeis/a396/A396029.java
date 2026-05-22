@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A396029 Decimal expansion of the probability that Buffon&apos;s needle will land on exactly one line when dropped on a triangular tiling in which the altitude of each triangle equals the length of the needle.
+ * A396029 Decimal expansion of the probability that Buffon's needle will land on exactly one line when dropped on a triangular tiling in which the altitude of each triangle equals the length of the needle.
  * Formula:
  * @author Georg Fischer
  */

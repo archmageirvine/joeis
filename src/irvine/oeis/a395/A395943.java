@@ -1,6 +1,6 @@
 package irvine.oeis.a395;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 import irvine.math.function.Functions;
@@ -17,11 +17,15 @@ public class A395943 extends Sequence0 {
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   // The memo is used for efficiency, small values will work but take longer
   // This default value is enough to do a(9) with complete memo
-  private final int mMemoSize = Integer.parseInt(System.getProperty("oeis.memo", "77198404"));
+  private final int mMemoSize = Integer.parseInt(System.getProperty("oeis.memo", "76923053"));
+  private final Map<Z, Z> mMemo = new LinkedHashMap<>(1 << 20, 0.75f, true) {
+    @Override
+    protected boolean removeEldestEntry(final Map.Entry<Z, Z> eldest) {
+      return size() > mMemoSize;
+    }
+  };
   private int mN = -1;
-  private Z mFull;
   private int[] mPrimes;
-  private final Map<Z, Z> mMemo = new HashMap<>();
 
   /**
    * Recursive memoized search.
@@ -29,14 +33,18 @@ public class A395943 extends Sequence0 {
    * @param pos lower bound on next empty position
    * @return number of completions
    */
-  private Z search(final Z board, int pos) {
-    final Z cached = mMemo.get(board);
-    if (cached != null) {
-      return cached;
-    }
+  private Z search(final Z board, int pos, final int usedCount) {
     // completely tiled
-    if (board.equals(mFull)) {
+    if (usedCount == mN * mN) {
       return Z.ONE;
+    }
+    final double frac = usedCount / (double)(mN * mN);
+    final boolean useCache = frac >= 0.15 && frac <= 0.85;
+    if (useCache) {
+      final Z cached = mMemo.get(board);
+      if (cached != null) {
+        return cached;
+      }
     }
 
     while (board.testBit(pos)) {
@@ -53,7 +61,7 @@ public class A395943 extends Sequence0 {
       if (c + p <= mN) {
         final Z mask = Z.valueOf((1L << p) - 1).shiftLeft(pos);
         if (board.and(mask).isZero()) {
-          total = total.add(search(board.or(mask), pos + p));
+          total = total.add(search(board.or(mask), pos + p, usedCount + p));
         }
       }
       // Vertical placement
@@ -63,12 +71,12 @@ public class A395943 extends Sequence0 {
           mask = mask.setBit(pos + k * mN);
         }
         if (board.and(mask).isZero()) {
-          total = total.add(search(board.or(mask), pos + 1));
+          total = total.add(search(board.or(mask), pos + 1, usedCount + p));
         }
       }
     }
 
-    if (mMemo.size() < mMemoSize) {
+    if (useCache) {
       mMemo.put(board, total);
     }
     return total;
@@ -82,7 +90,6 @@ public class A395943 extends Sequence0 {
 
     // Set up for n, clear the memory, determine allowed primes
     mMemo.clear();
-    mFull = Z.ONE.shiftLeft((long) mN * mN).subtract(1);
     mPrimes = new int[Functions.PRIME_PI.i(mN)];
     mPrimes[0] = 2;
     for (int k = 1; k < mPrimes.length; ++k) {
@@ -90,7 +97,7 @@ public class A395943 extends Sequence0 {
     }
 
     // Run the search
-    final Z res = search(Z.ZERO, 0);
+    final Z res = search(Z.ZERO, 0, 0);
     if (mVerbose) {
       StringUtils.message("Memo size: " + mMemo.size());
     }

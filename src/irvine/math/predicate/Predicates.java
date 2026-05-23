@@ -94,6 +94,12 @@ public final class Predicates {
   public static final Predicate DISTINCT_EXPONENTS = new DistinctExponents(); // =A130091
   /** Test if a number is a kangaroo. */
   public static final Predicate KANGAROO = new Kangaroo(); // =A395761
+  /** Test if a number is a sum of two squares. */
+  public static final Predicate SUM_OF_2_SQUARES = new SumOfTwoSquares(); // =A001481
+  /** Test if a number is a sum of three squares. */
+  public static final Predicate SUM_OF_3_SQUARES = new SumOfThreeSquares(); // =A000419
+  /** Test if a number is a sum of four squares. */
+  public static final Predicate SUM_OF_4_SQUARES = new SumOfFourSquares(); // =A004215
 
   /** Test if a number is an emirp (both the number and its reversal is a different prime). */
   public static final Predicate2 EMIRP = new Emirp(); // =A006567

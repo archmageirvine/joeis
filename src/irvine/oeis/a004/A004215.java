@@ -1,26 +1,16 @@
 package irvine.oeis.a004;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.math.predicate.Predicates;
+import irvine.oeis.FilterNumberSequence;
 
 /**
  * A004215 Numbers that are the sum of 4 but no fewer nonzero squares.
  * @author Sean A. Irvine
  */
-public class A004215 extends Sequence1 {
+public class A004215 extends FilterNumberSequence {
 
-  private long mN = 6;
-
-  @Override
-  public Z next() {
-    while (true) {
-      long m = ++mN;
-      while ((m & 3) == 0) {
-        m >>>= 2;
-      }
-      if ((m & 7) == 7) {
-        return Z.valueOf(mN);
-      }
-    }
+  /** Construct the sequence. */
+  public A004215() {
+    super(1, 6, Predicates.SUM_OF_4_SQUARES::is);
   }
 }

@@ -2751,3 +2751,5 @@ A084893 Decimal expansion of Product_{j>=1, j!=2} zeta(j/3) (negated).
 A084911 Decimal expansion of linear asymptotic constant B in Sum_{k=1..n} 1/A000688(k) = ~B*n + ... 
 A084913 Number of monomial ideals in two variables that are Artinian, integrally closed and of colength n.
 A084945 Decimal expansion of Golomb-Dickman constant.
+A084965 Number of labeled totally ordered semigroups with n elements.
+A084973 The maximum departure from the x axis, rounded to the nearest integer, in each cycle of the zeta function for increasingly larger negative values.

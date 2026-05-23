@@ -15,7 +15,12 @@ public class A083140 extends Sequence2 {
   private int mN = -1;
   private int mM = 0;
 
-  protected Z t(final int n) {
+  /**
+   * Return the next term of the indicated row.
+   * @param n row
+   * @return term
+   */
+  public Z t(final int n) {
     final Z p = Functions.PRIME.z(n + 1);
     Z a = mA.get(n);
     if (a == null) {

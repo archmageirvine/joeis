@@ -14,8 +14,6 @@ import irvine.oeis.Sequence1;
  */
 public class A395691 extends Sequence1 {
 
-  // todo the *2^E(G) is not apparently sufficient
-
   private int mN = 0;
   private int mM = 0;
   private Z[] mCounts = null;
@@ -32,8 +30,9 @@ public class A395691 extends Sequence1 {
         mLocks[k] = new Object();
         mCounts[k] = Z.ZERO;
       }
+      final long maxe = (long) mN * (mN - 1) / 2;
       new ParallelGenerateGraphsSequence(mN, mN - 1, 0, 0, () -> graph -> {
-        final Z labellings = Functions.FACTORIAL.z(graph.order()).divide(GraphUtils.automorphismSize(graph)).shiftLeft(graph.size());
+        final Z labellings = Functions.FACTORIAL.z(graph.order()).divide(GraphUtils.automorphismSize(graph)).shiftLeft(maxe - graph.size());
         final int i = MaximumIndependentSet.size(graph);
         synchronized (mLocks[i]) {
           mCounts[i] = mCounts[i].add(labellings);

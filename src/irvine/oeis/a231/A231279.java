@@ -6,13 +6,12 @@ import irvine.oeis.LambdaSequence;
 
 /**
  * A231279 a(n) = Jacobsthal(n^2), where Jacobsthal(n) = A001045(n), for n&gt;=1.
- * a(n)=(2^(n^2)-(-1)^n)/3
  * @author Georg Fischer
  */
 public class A231279 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A231279() {
-    super(1, n -> Z.ONE.shiftLeft((long) n * n).subtract(Z.NEG_ONE.pow(n)).divide(Z.THREE));
+    super(0, n -> Z.ONE.shiftLeft((long) n * n).subtract(Z.NEG_ONE.pow(n)).divide(Z.THREE));
   }
 }

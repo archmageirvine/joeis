@@ -3,7 +3,7 @@ package irvine.math.predicate;
 import irvine.math.z.Z;
 
 /**
- * Test if a number is a sum of three squares.
+ * Test if a number is a sum of four squares.
  * @author Sean A. Irvine
  */
 public class SumOfFourSquares extends AbstractPredicate {
@@ -14,6 +14,6 @@ public class SumOfFourSquares extends AbstractPredicate {
     while (!n.testBit(s) && !n.testBit(s + 1)) {
       s += 2;
     }
-    return n.shiftRight(s).mod(8)== 7;
+    return n.shiftRight(s).mod(8) == 7;
   }
 }

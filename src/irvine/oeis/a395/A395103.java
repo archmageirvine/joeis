@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396031.
+ * A395103 allocated for Philip Jameson.
  * @author Sean A. Irvine
  */
 public class A395103 extends Sequence1 {

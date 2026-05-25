@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A396031 Growth sequence for the standard generators of the Heisenberg group H_2.
+ * A396031 allocated for Alex Evetts.
  * @author Sean A. Irvine
  */
 public class A396031 extends Sequence0 {

@@ -1,7 +1,7 @@
 package irvine.oeis.a396;
 
 /**
- * A396031.
+ * A396032 allocated for Alex Evetts.
  * @author Sean A. Irvine
  */
 public class A396032 extends A396031 {

@@ -38,7 +38,7 @@ public class A395943 extends Sequence0 {
     if (usedCount == mN * mN) {
       return Z.ONE;
     }
-    final double frac = usedCount / (double)(mN * mN);
+    final double frac = usedCount / (double) (mN * mN);
     final boolean useCache = frac >= 0.15 && frac <= 0.85;
     if (useCache) {
       final Z cached = mMemo.get(board);

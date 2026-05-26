@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a095.A095076;
 
 /**
- * A395964 allocated for Benoit Cloitre.
+ * A395964 Second iterate of the Thue-Morse transform applied to the Fibonacci word A003849.
  * @author Sean A. Irvine
  */
 public class A395964 extends A095076 {

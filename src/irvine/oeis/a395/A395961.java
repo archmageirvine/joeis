@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A395961 allocated for Benoit Cloitre.
+ * A395961 Fourth iterate of the Thue-Morse transform applied to A000035.
  * @author Sean A. Irvine
  */
 public class A395961 extends Sequence0 {

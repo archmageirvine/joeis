@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394209 allocated for Shahin Saadati.
+ * A394209 Number of primes p such that 3^(n-1) &lt;= p &lt; 3^n.
  * @author Sean A. Irvine
  */
 public class A394209 extends Sequence1 {

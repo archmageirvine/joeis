@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396114 allocated for Nathan M Epstein.
+ * A396114 a(n) is the first multiple of n encountered when reading Pascal's triangle row-by-row, left to right.
  * @author Sean A. Irvine
  */
 public class A396114 extends Sequence1 {

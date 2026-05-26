@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A034946 Successive approximations to 11-adic integer sqrt(3).
+ * A034946 Successive approximations to the 11-adic integer sqrt(3).
  * @author Sean A. Irvine
  */
 public class A034946 extends Sequence0 {

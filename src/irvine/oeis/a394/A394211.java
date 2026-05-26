@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394211 allocated for Felix Huber.
+ * A394211 Triangle read by rows: T(n, k) is the number of partitions of n into parts having exactly k prime factors (counted with multiplicity), with 0 &lt;= k &lt;= floor(log_2(n)) for n &gt;= 1 and k = 0 for n = 0.
  * @author Sean A. Irvine
  */
 public class A394211 extends Sequence0 {

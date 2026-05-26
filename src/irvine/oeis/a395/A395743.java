@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395743 allocated for Vincenzo Manto.
+ * A395743 Sum of the cumulative number of previous occurrences of the digits of n in the sequence 1..n excluding the current occurrence of each digit.
  * @author Sean A. Irvine
  */
 public class A395743 extends Sequence1 {

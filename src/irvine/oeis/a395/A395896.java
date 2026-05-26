@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a019.A019565;
 
 /**
- * A395896 allocated for Michael De Vlieger.
+ * A395896 Number of k &lt; m^2 such that both rad(k) and rad(k+1) divide m, where rad = A007947 and m = A019565(n).
  * @author Sean A. Irvine
  */
 public class A395896 extends A019565 {

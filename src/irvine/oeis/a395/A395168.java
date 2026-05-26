@@ -6,7 +6,7 @@ import irvine.oeis.a332.A332437;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395168 Decimal expansion of the height of an uniform 9-gonal antiprism with unit edges.
+ * A395168 Decimal expansion of the height of a uniform 9-gonal antiprism with unit edges.
  * Formula:
  * @author Georg Fischer
  */

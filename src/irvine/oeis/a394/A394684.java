@@ -5,7 +5,7 @@ import irvine.oeis.a036.A036702;
 import irvine.oeis.a063.A063014;
 
 /**
- * A394684 allocated for Evan Balster.
+ * A394684 Number of ordered pairs of integers (x,y) with 0 &lt;= x &lt;= y and x^2+y^2 &lt; n^2.
  * @author Sean A. Irvine
  */
 public class A394684 extends Combiner {

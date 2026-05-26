@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A108770 Numbers n such that n^2 + (n+1)^2 is a brilliant number.
+ * A108770 Numbers k such that k^2 + (k+1)^2 is a brilliant number.
  * @author Georg Fischer
  */
 public class A108770 extends FilterNumberSequence {

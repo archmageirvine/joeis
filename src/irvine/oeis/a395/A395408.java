@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000129;
 
 /**
- * A084971.
+ * A395408 Primes of the form P(k)^2 - 2, where P(k) is the k-th Pell number.
  * @author Sean A. Irvine
  */
 public class A395408 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396067 allocated for Ilya Gutkovskiy.
+ * A396067 Product of odd divisors of n that are &lt;= sqrt(n).
  * @author Sean A. Irvine
  */
 public class A396067 extends Sequence1 {

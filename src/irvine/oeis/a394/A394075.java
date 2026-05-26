@@ -6,7 +6,7 @@ import irvine.oeis.a160.A160389;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A394075 Decimal expansion of the height of an uniform heptagonal antiprism with unit edges.
+ * A394075 Decimal expansion of the height of a uniform heptagonal antiprism with unit edges.
  * Formula:
  * @author Georg Fischer
  */

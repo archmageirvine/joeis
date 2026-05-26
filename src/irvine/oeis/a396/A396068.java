@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396068 allocated for Ilya Gutkovskiy.
+ * A396068 Product of squarefree divisors of n that are &lt;= sqrt(n).
  * @author Sean A. Irvine
  */
 public class A396068 extends Sequence1 {

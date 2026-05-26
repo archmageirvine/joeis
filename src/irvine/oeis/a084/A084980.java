@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A084980 Triangle of (multi)factorials: n-th row is (n+1)!!... {n "!"s}, (n+1)!... {n-1 "!"s}, ..., (n+1)!.
+ * A084980 Triangle of multifactorials: n-th row is (n+1)!!... {n "!"s}, (n+1)!... {n-1 "!"s}, ..., (n+1)!.
  * @author Sean A. Irvine
  */
 public class A084980 extends Sequence1 {

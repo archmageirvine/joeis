@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A395941 allocated for Chuck Seggelin.
+ * A395941 Number of partitions of n^2 into prime parts not exceeding n.
  * @author Sean A. Irvine
  */
 public class A395941 extends Sequence0 {

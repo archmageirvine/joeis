@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A190287 Decimal expansion of (5+sqrt(25+4r))/2, where r=sqrt(5).
+ * A190287 Decimal expansion of (5+sqrt(25+4*sqrt(5)))/2.
  * @author Georg Fischer
  */
 public class A190287 extends DecimalExpansionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396106 allocated for Daniel Sturm.
+ * A396106 n-th prime greater than 10^n.
  * @author Sean A. Irvine
  */
 public class A396106 extends Sequence1 {

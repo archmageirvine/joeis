@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A154665 Numbers n such that n!^2-+8663 are primes.
+ * A154665 Numbers k such that k!^2 + 8663 and abs(k!^2 - 8663) are primes.
  * @author Georg Fischer
  */
 public class A154665 extends FilterNumberSequence {

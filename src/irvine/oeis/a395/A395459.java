@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395459 allocated for Sah Deepak Kumar Sureshprasad.
+ * A395459 Triangle read by rows, T(1,0)=1, T(n,m) = (-1)^(n+m-1) * (n-2)! * (n+m-1) / m! for n &gt;= 2, 0 &lt;= m &lt;= n-1.
  * @author Sean A. Irvine
  */
 public class A395459 extends Sequence1 {

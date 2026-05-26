@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a151.A151950;
 
 /**
- * A395936 allocated for Hugo Pfoertner.
+ * A395936 Numbers of the form (A004186(k)-A004185(k))/9; i.e., numbers occurring in A151950.
  * @author Sean A. Irvine
  */
 public class A395936 extends Sequence1 {

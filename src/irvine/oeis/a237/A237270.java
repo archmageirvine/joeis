@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A237270 Triangle read by rows in which row n lists the parts of the symmetric representation of sigma(n).
+ * A237270 Irregular triangle read by rows in which row n lists the parts of the symmetric representation of sigma(n).
  * @author Sean A. Irvine
  */
 public class A237270 extends Sequence1 {

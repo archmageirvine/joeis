@@ -6,7 +6,7 @@ import irvine.oeis.a362.A362922;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A394073 Decimal expansion of the midradius of an uniform heptagonal antiprism with unit edges.
+ * A394073 Decimal expansion of the midradius of a uniform heptagonal antiprism with unit edges.
  * Formula:
  * @author Georg Fischer
  */

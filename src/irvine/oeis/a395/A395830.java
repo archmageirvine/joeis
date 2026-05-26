@@ -4,7 +4,7 @@ package irvine.oeis.a395;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A395830 allocated for A.H.M. Smeets.
+ * A395830 Number of hexadecimal strings of length n that contain a specific string xx (where x is a single digit).
  * @author Georg Fischer
  */
 public class A395830 extends HolonomicRecurrence {

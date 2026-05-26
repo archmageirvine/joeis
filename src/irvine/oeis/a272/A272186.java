@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a027.A027760;
 
 /**
- * A272186 Numbers n such that Bernoulli number B_{n} has denominator 690.
+ * A272186 Numbers k such that Bernoulli number B_{k} has denominator 690.
  * @author Georg Fischer
  */
 public class A272186 extends FilterPositionSequence {

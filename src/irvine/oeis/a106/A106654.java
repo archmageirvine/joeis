@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A106654 Four-symbol substitution, characteristic polynomial: x^4-x^2-x-1.
+ * A106654 4-limiting word of the morphism 1-&gt;2, 2-&gt;3, 3-&gt;4, 4-&gt;123.
  * @author Georg Fischer
  */
 public class A106654 extends MorphismFixedPointSequence {

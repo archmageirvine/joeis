@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395169 Decimal expansion of the smallest dihedral angle, in radians, in an uniform 9-gonal antiprism.
+ * A395169 Decimal expansion of the smallest dihedral angle, in radians, in a uniform 9-gonal antiprism.
  * Formula:
  * @author Georg Fischer
  */

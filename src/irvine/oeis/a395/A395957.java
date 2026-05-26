@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395957 allocated for Douglas Boffey.
+ * A395957 T(n,k) is a triangular array of the number of king's move self-avoiding walks of any length on an n X k grid.
  * @author Sean A. Irvine
  */
 public class A395957 extends Sequence1 {

@@ -5,7 +5,7 @@ package irvine.oeis.a091;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A091630 Numbers n + product of digits associated with A091628.
+ * A091630 a(n) = A091628(n) + product of digits of A091628(n).
  * Lin.rec. signature: (13,-32, 20)
  * @author Georg Fischer
  */

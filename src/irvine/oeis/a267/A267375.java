@@ -4,7 +4,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A267375 Numbers n such that (47^n - 1)/46 is prime.
+ * A267375 Numbers k such that (47^k - 1)/46 is prime.
  * @author Georg Fischer
  */
 public class A267375 extends PrimePositionSubsequence {

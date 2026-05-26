@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A388935 Decimal expansion of sqrt(2/5+1 / sqrt(5)).
+ * A388935 Decimal expansion of sqrt(2/5 + 1/sqrt(5)).
  * @author Sean A. Irvine
  */
 public class A388935 extends DecimalExpansionSequence {

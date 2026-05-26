@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A173974 Numbers k such that k^k+43 is prime.
+ * A173974 Numbers k such that k^k + 43 is prime.
  * @author Georg Fischer
  */
 public class A173974 extends FilterNumberSequence {

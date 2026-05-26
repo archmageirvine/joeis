@@ -7,7 +7,7 @@ import irvine.oeis.a073.A073052;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A394077 Largest dihedral angle, in radians, in an uniform heptagonal antiprism.
+ * A394077 Largest dihedral angle, in radians, in a uniform heptagonal antiprism.
  * Formula:
  * @author Georg Fischer
  */

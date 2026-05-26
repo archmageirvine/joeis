@@ -6,7 +6,7 @@ import irvine.oeis.a232.A232738;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A394536 Decimal expansion of the midradius of an uniform octagonal antiprism with unit edges.
+ * A394536 Decimal expansion of the midradius of a uniform octagonal antiprism with unit edges.
  * Formula:
  * @author Georg Fischer
  */

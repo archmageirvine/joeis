@@ -5,7 +5,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A396078 allocated for Jacob Lim.
+ * A396078 Decimal expansion of x such that x^(x^3) = e^(Pi/2).
  * @author Sean A. Irvine
  */
 public class A396078 extends DecimalExpansionSequence {

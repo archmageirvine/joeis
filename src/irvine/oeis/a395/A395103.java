@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395103 allocated for Philip Jameson.
+ * A395103 Numbers with exactly k prime factors, counting repeats, with k&gt;1, that are formed by concatenating k primes.
  * @author Sean A. Irvine
  */
 public class A395103 extends Sequence1 {

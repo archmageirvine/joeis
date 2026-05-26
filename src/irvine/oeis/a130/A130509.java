@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A130509 a(1)=3. a(2)=1. a(3)=2. a(n+3) = 3 + a(n), for all positive integers n.
+ * A130509 a(1)=3, a(2)=1, a(3)=2, a(n+3) = 3 + a(n), for all positive integers n.
  * @author Georg Fischer
  */
 public class A130509 extends HolonomicRecurrence {

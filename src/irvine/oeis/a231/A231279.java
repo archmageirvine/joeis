@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A231279 a(n) = Jacobsthal(n^2), where Jacobsthal(n) = A001045(n), for n&gt;=1.
+ * A231279 a(n) = Jacobsthal(n^2), where Jacobsthal(n) = A001045(n).
  * @author Georg Fischer
  */
 public class A231279 extends LambdaSequence {

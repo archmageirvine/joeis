@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A197602 Floor((n+1/n)^3).
+ * A197602 a(n) = floor((n + 1/n)^3).
  * @author Georg Fischer
  */
 public class A197602 extends Sequence1 {

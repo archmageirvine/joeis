@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395166 Decimal expansion of the midradius of an uniform 9-gonal antiprism with unit edges.
+ * A395166 Decimal expansion of the midradius of a uniform 9-gonal antiprism with unit edges.
  * Formula:
  * @author Georg Fischer
  */

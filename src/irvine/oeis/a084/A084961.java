@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A084961 Initial prime of the first prime chain of length n under the iteration x-&gt;6x+5.
+ * A084961 Smallest initial prime of the first prime chain of length n under the iteration x-&gt;6x+5.
  * @author Sean A. Irvine
  */
 public class A084961 extends A000040 {

@@ -6,7 +6,7 @@ import irvine.oeis.a179.A179260;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A394538 Decimal expansion of the height of an uniform octagonal antiprism with unit edges.
+ * A394538 Decimal expansion of the height of a uniform octagonal antiprism with unit edges.
  * Formula:
  * @author Georg Fischer
  */

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395193 allocated for Brandan Williams.
+ * A395193 Area of the n-th convex polyiamond formed by winding spirals of incrementing strips of polyiamonds.
  * @author Sean A. Irvine
  */
 public class A395193 extends Sequence1 {

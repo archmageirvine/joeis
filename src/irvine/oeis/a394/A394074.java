@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A394074 Decimal expansion of the circumradius of an uniform heptagonal antiprism with unit edges.
+ * A394074 Decimal expansion of the circumradius of a uniform heptagonal antiprism with unit edges.
  * Formula:
  * @author Georg Fischer
  */

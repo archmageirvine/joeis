@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A396045 allocated for Dalton Heilig.
+ * A396045 a(n) = T(n, 2*n), where T(n, m) is the forward-difference table of the Catalan numbers.
  * @author Sean A. Irvine
  */
 public class A396045 extends Sequence0 {

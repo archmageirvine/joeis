@@ -4,7 +4,7 @@ package irvine.oeis.a396;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A396093 allocated for Paul D. Hanna.
+ * A396093 G.f. A(x) = B(B(B(x))), the third iteration of B(x) = x/(1-x)^2.
  * @author Georg Fischer
  */
 public class A396093 extends HolonomicRecurrence {

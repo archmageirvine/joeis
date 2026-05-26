@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A106653 Five-symbol substitution, characteristic polynomial: x^5-x^3-x^2-x-1.
+ * A106653 1-limiting word of the morphism 1-&gt;2, 2-&gt;3, 3-&gt;4, 4-&gt;5, 5-&gt;1234.
  * @author Georg Fischer
  */
 public class A106653 extends MorphismFixedPointSequence {

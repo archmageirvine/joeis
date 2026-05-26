@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A085009.
+ * A085013 a(1) = 1; for n&gt;1, a(n) = smallest prime &gt; a(n-1) such that a(1)*...*a(n) + 2 is a prime.
  * @author Sean A. Irvine
  */
 public class A085013 extends Sequence1 {

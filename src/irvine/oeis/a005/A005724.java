@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008287;
 
 /**
- * A005724 Quadrinomial coefficients.
+ * A005724 Coefficient of x^(3*n-1) and of x^(3*n+1) in the expansion of (1+x+x^2+x^3)^(2*n).
  * @author Sean A. Irvine
  */
 public class A005724 extends A008287 {

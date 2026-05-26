@@ -6,7 +6,7 @@ import irvine.oeis.recur.PaddingSequence;
 
 
 /**
- * A133874 n modulo 4 repeated 4 times.
+ * A133874 N modulo 4 repeated 4 times.
  * @author Georg Fischer
  */
 public class A133874 extends PaddingSequence {

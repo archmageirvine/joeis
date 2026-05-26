@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A085012.
+ * A085014 For p = prime(n), a(n) is the number of primes q such that pq is a base-2 pseudoprime; that is, 2^(pq-1) = 1 mod pq.
  * @author Sean A. Irvine
  */
 public class A085014 extends Sequence2 {

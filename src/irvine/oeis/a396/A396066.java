@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A396066 allocated for Hoang Nguyen.
+ * A396066 a(1) = 1; a(n) is the smallest positive integer not already in the sequence so that a(n)^4+a(n-1)^4 is prime.
  * @author Sean A. Irvine
  */
 public class A396066 extends Sequence1 {

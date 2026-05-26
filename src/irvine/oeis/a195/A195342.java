@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A195342 Decimal expansion of shortest length, (C), of segment from side CA through incenter to side CB in right triangle ABC with sidelengths (a,b,c)=(1,2,sqrt(5)).
+ * A195342 Decimal expansion of shortest length, (C), of segment from side CA through incenter to side CB in right triangle ABC with sidelengths (a,b,c) = (1,2,sqrt(5)).
  * Formula: 4/(3+5^(1/2))*2^(1/2)
  * @author Georg Fischer
  */

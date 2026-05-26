@@ -3,7 +3,7 @@ package irvine.oeis.a395;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A395927 allocated for Douglas Boffey.
+ * A395927 a(n) is the number of different possible words of length n that can be found in a Boggle grid.
  * @author Sean A. Irvine
  */
 public class A395927 extends FiniteSequence {

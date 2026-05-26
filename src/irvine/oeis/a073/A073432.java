@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002808;
 
 /**
- * A073432 Numbers n such that prime(n) + composite(n) is even.
+ * A073432 Numbers k such that prime(k) + composite(k) is even.
  * @author Sean A. Irvine
  */
 public class A073432 extends A000040 {

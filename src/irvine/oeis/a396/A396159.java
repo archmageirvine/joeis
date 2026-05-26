@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A085009.
+ * A396159 Numerators in the asymptotic expansion of Gamma(1 + 2*x)/(Gamma(1 + x)*Gamma(2 + x)) = (4^x/sqrt(Pi))*Sum_{k&gt;=0} (1/x)^(3/2+k)*a(k)/A061549(k).
  * @author Sean A. Irvine
  */
 public class A396159 extends Sequence0 {

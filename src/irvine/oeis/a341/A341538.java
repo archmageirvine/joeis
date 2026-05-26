@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A341538 One of the two successive approximations up to 2^n for 2-adic integer sqrt(17). This is the 1 (mod 4) case.
+ * A341538 One of the two successive approximations up to 2^n for the 2-adic integer sqrt(17). This is the 1 (mod 4) case.
  * @author Georg Fischer
  */
 public class A341538 extends MultiTransformSequence {

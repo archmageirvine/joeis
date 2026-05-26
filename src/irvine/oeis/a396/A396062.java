@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396062 allocated for Jean-Marc Rebert.
+ * A396062 Define the level of a number in A395720 as the largest integer m such that repeated application of the inner operation can be performed m times, with each intermediate value remaining in A395720. Let a(n) be the smallest kangaroo number in A395720 of level n.
  * @author Sean A. Irvine
  */
 public class A396062 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394576 allocated for Hoang Xuan Thanh.
+ * A394576 a(1) = 1; a(n+1) as the smallest positive integer greater than a(n) that avoids violating the condition a(k) + a(k+1) + a(k+2) is not term.
  * @author Sean A. Irvine
  */
 public class A394576 extends Sequence1 {

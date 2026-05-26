@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A081694 From P-positions in a certain game.
+ * A081694 From P-positions in a certain game. Pile 1 tokens for select function (1+(-)^(y1+1))x1/2.
  * @author Sean A. Irvine
  */
 public class A081694 extends Sequence0 {

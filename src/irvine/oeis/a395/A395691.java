@@ -9,7 +9,7 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A395691 allocated for Alejandro Zarzuelo Urdiales.
+ * A395691 Triangle read by rows: T(n,k) = number of labeled 2-multigraphs on n vertices with clique number exactly k.
  * @author Sean A. Irvine
  */
 public class A395691 extends Sequence1 {

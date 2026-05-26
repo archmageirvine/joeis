@@ -8,7 +8,7 @@ import irvine.oeis.a178.A178818;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A394071 Decimal expansion of the volume of an uniform heptagonal antiprism with unit edges.
+ * A394071 Decimal expansion of the volume of a uniform heptagonal antiprism with unit edges.
  * Formula:
  * @author Georg Fischer
  */

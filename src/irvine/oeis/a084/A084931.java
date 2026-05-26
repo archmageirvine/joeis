@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A084931 Consider trajectory of n under repeated applications of the function f(x) = 'Sum of the prime factors of x (with multiplicity)' (see A029908). Sequence gives composite numbers n that end at a prime m that divides n and m is greater than any m's seen already.
+ * A084931 Consider trajectory of n under repeated applications of the function sopfr(x) (see A029908). Sequence gives composite numbers n that end at a prime m that divides n and m is greater than any m's seen already.
  * @author Sean A. Irvine
  */
 public class A084931 extends A002808 {

@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395759 allocated for Kelvin Voskuijl.
+ * A395759 Decimal expansion of the sum of the reciprocals of 12-gonal polygorials A276482.
  * @author Sean A. Irvine
  */
 public class A395759 extends DecimalExpansionSequence {

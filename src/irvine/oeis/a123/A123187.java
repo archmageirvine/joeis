@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A123187 Triangle of coefficients in expansion of (1+13x)^n.
+ * A123187 Triangle of coefficients in expansion of (1 + 13*x)^n.
  * @author Georg Fischer
  */
 public class A123187 extends Sequence1 {

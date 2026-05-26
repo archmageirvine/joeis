@@ -4,7 +4,7 @@ package irvine.oeis.a154;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A154660 Numbers n such that n!+37 and abs(n!-37) are primes.
+ * A154660 Numbers k such that k! + 37 and abs(k! - 37) are primes.
  * @author Georg Fischer
  */
 public class A154660 extends FiniteSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A084999 Determinant of a certain n X n matrix whose elements are the integers 1 to n^2.
+ * A084999 Determinant of a certain n X n matrix whose elements are the integers 1 to n^2 (see Comments).
  * @author Sean A. Irvine
  */
 public class A084999 extends Sequence1 {

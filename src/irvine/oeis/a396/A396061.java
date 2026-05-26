@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396061 allocated for Raghav Garg.
+ * A396061 Numbers k such that k &lt; reverse(k) and reverse(k^2) = reverse(k)^2.
  * @author Sean A. Irvine
  */
 public class A396061 extends Sequence1 {

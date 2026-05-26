@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a086.A086575;
 
 /**
- * A083811 Numbers n such that 2n+1 is the digit reversal of n+1.
+ * A083811 Numbers k such that 2*k+1 is the digit reversal of k+1.
  * @author Georg Fischer
  */
 public class A083811 extends AbstractSequence {

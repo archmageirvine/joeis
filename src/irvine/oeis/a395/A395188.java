@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395188 allocated for Thomas Scheuerle.
+ * A395188 Triangular array T(n, k) read by rows: Row n &gt; 0 gives the coefficient of x^k in the expansion of f_n(x) = Sum_{k=0..n} T(n, k)*x^k, where T(n, n) and T(0, n) = 1 for any n. The n-th falling diagonal has the ordinary generating function: 1/f_n(x).
  * @author Sean A. Irvine
  */
 public class A395188 extends Sequence1 {

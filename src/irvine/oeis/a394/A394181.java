@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicArray;
 
 /**
- * A394181 allocated for Gordon Hamilton.
+ * A394181 Simultaneously grow three sequences S, T and A starting with S(1)=T(1)=a(1)=2. Search for the smallest integer m in S so that one of its multiples k*m is larger than T(n) and closer to T(n) than (k-1)*m. If this is true, a(n+1) = m and T(n+1) = k*m. Otherwise, add the smallest positive integer, m, to S that holds this property.
  * @author Sean A. Irvine
  */
 public class A394181 extends Sequence1 {

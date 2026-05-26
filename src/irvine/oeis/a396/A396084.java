@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A396084 allocated for Felix Huber.
+ * A396084 Numbers k whose orbit under k -&gt; |sigma(k) - 2*k| avoids 0 and 1.
  * @author Sean A. Irvine
  */
 public class A396084 extends FilterNumberSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A035158 Floor of the Chebyshev function theta(n): a(n) = floor(Sum_{primes p &lt;= n } log(p)).
+ * A035158 Floor of the Chebyshev function theta(n): a(n) = floor(Sum_{primes p &lt;= n} log(p)).
  * @author Sean A. Irvine
  */
 public class A035158 extends Sequence1 {

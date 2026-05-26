@@ -4,7 +4,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A084929.
+ * A396149 Number of connected graphs on n vertices where every edge is part of at least one triangle.
  * @author Sean A. Irvine
  */
 public class A396149 extends ParallelGenerateGraphsSequence {

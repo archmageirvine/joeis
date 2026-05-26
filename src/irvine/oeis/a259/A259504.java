@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a045.A045920;
 
 /**
- * A259504 Numbers n such that n and n+1 are the product of exactly three (not necessarily distinct) primes.
+ * A259504 Numbers k such that k and k+1 are the product of exactly three (not necessarily distinct) primes.
  * @author Georg Fischer
  */
 public class A259504 extends FilterSequence {

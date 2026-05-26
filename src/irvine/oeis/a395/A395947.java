@@ -4,7 +4,7 @@ package irvine.oeis.a395;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A395947 allocated for Enrique Navarrete.
+ * A395947 Expansion of e.g.f.: x*sinh(x)^2*cosh(x) (odd powers only).
  * @author Georg Fischer
  */
 public class A395947 extends HolonomicRecurrence {

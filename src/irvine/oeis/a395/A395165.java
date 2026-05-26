@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395165 Decimal expansion of the surface area of an uniform 9-gonal antiprism with unit edges.
+ * A395165 Decimal expansion of the surface area of a uniform 9-gonal antiprism with unit edges.
  * Formula:
  * @author Georg Fischer
  */

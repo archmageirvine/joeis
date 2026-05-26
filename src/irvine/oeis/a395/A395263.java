@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A395263 allocated for Aditya A Gupta.
+ * A395263 allocated for Conner Silverstein.
  * @author Sean A. Irvine
  */
 public class A395263 extends Sequence1 {

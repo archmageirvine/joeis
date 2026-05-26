@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A394076 Smallest dihedral angle, in radians, in an uniform heptagonal antiprism.
+ * A394076 Smallest dihedral angle, in radians, in a uniform heptagonal antiprism.
  * Formula:
  * @author Georg Fischer
  */

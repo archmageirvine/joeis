@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A341600 One of the two successive approximations up to 2^n for 2-adic integer sqrt(-3/5). This is the 1 (mod 4) case.
+ * A341600 One of the two successive approximations up to 2^n for the 2-adic integer sqrt(-3/5). This is the 1 (mod 4) case.
  * @author Georg Fischer
  */
 public class A341600 extends MultiTransformSequence {

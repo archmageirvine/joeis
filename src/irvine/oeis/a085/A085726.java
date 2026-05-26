@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000032;
 
 /**
- * A085726 Numbers n such that n-th Lucas number is a semiprime.
+ * A085726 Numbers k such that k-th Lucas number is a semiprime.
  * @author Sean A. Irvine
  */
 public class A085726 extends FilterPositionSequence {

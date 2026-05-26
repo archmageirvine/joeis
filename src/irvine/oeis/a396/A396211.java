@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A396211 Decimal expansion of the volume of the solid of revolution formed by rotating Moss&apos;s egg constructed from a unit-hypotenuse right isosceles triangle about its axis of symmetry.
+ * A396211 Decimal expansion of the volume of the solid of revolution formed by rotating Moss's egg constructed from a unit-hypotenuse right isosceles triangle about its axis of symmetry.
  * Formula:
  * @author Georg Fischer
  */

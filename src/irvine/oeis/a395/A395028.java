@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395028 allocated for Hoang Nguyen.
+ * A395028 a(1) = 1; a(n) is the smallest integer so that a(n) &gt; a(n-1) and a(n)^4+a(n-1)^4 is prime.
  * @author Sean A. Irvine
  */
 public class A395028 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A394537 Decimal expansion of the circumradius of an uniform octagonal antiprism with unit edges.
+ * A394537 Decimal expansion of the circumradius of a uniform octagonal antiprism with unit edges.
  * Formula:
  * @author Georg Fischer
  */

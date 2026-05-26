@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A392672 allocated for Zhining Yang.
+ * A392672 Smallest number m such that m*(m+1)*(m+2) has exactly n distinct prime factors.
  * @author Sean A. Irvine
  */
 public class A392672 extends Sequence2 {

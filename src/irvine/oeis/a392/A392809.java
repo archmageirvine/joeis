@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392809 allocated for Johann Peters.
+ * A392809 Number of compositions of n into parts at least the natural logarithm of n.
  * @author Sean A. Irvine
  */
 public class A392809 extends Sequence0 {

@@ -7,7 +7,7 @@ import irvine.oeis.a332.A332437;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395164 Decimal expansion of the volume of an uniform 9-gonal antiprism with unit edges.
+ * A395164 Decimal expansion of the volume of a uniform 9-gonal antiprism with unit edges.
  * Formula:
  * @author Georg Fischer
  */

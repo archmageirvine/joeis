@@ -6,7 +6,7 @@ package irvine.oeis.a293;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A293986 E.g.f.: exp((1/(1-x)^7 - 1)/7).
+ * A293986 Expansion of e.g.f. exp((1/(1-x)^7 - 1)/7).
  * @author Georg Fischer
  */
 public class A293986 extends HolonomicRecurrence {

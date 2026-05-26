@@ -4,7 +4,7 @@ package irvine.oeis.a396;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A396011 allocated for Seiichi Manyama.
+ * A396011 Number of 2's in the partitions of n into exactly 5 parts.
  * @author Georg Fischer
  */
 public class A396011 extends HolonomicRecurrence {

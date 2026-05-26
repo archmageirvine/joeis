@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A394534 Decimal expansion of the volume of an uniform octagonal antiprism with unit edges.
+ * A394534 Decimal expansion of the volume of a uniform octagonal antiprism with unit edges.
  * Formula:
  * @author Georg Fischer
  */

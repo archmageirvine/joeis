@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A394072 Decimal expansion of the surface area of an uniform heptagonal antiprism with unit edges.
+ * A394072 Decimal expansion of the surface area of a uniform heptagonal antiprism with unit edges.
  * Formula:
  * @author Georg Fischer
  */

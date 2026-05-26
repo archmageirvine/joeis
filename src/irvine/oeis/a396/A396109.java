@@ -7,7 +7,7 @@ import irvine.oeis.a049.A049541;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A396109 allocated for Paolo Xausa.
+ * A396109 Decimal expansion of (1 + 1/Pi)^(1 + Pi).
  * Formula:
  * @author Georg Fischer
  */

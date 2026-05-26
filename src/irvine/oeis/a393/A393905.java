@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A393905 allocated for Aditya A Gupta.
+ * A393905 Square array read by antidiagonals: optimal diameter of g-Golomb Ruler of multiplicity n and length n+k, for k&gt;=1.
  * @author Sean A. Irvine
  */
 public class A393905 extends Sequence1 {

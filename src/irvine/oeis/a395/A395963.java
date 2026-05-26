@@ -3,7 +3,7 @@ package irvine.oeis.a395;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A395963 allocated for Benoit Cloitre.
+ * A395963 Numbers k such that A395961(k) = 1.
  * @author Sean A. Irvine
  */
 public class A395963 extends FilterPositionSequence {

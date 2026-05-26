@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A084813 Least integers that satisfy Sum_{n&gt;=1} 1/a(n)^z = 0, where a(1)=1, a(n+1)&gt;a(n) and z=I.
+ * A084813 Lexically least ascending sequence of positive integers such that |Sum_{k=1..n} 1/a(k)^z| is monotonically decreasing, with z=i.
  * @author Sean A. Irvine
  */
 public class A084813 extends Sequence1 {

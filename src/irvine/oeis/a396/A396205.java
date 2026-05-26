@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a033.A033676;
 
 /**
- * A084971.
+ * A396205 a(n) = number of integers k &lt;= n with g(k)^3 &lt; k, where g(k) is the largest divisor d of k satisfying d &lt;= sqrt(k) (A033676).
  * @author Sean A. Irvine
  */
 public class A396205 extends A033676 {

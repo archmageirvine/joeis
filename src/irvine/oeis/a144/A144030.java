@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A144030 Numbers n such that : a=a^2-n^3; a=a-2.
+ * A144030 a(0) = 0; thereafter, a(n) = (a(n - 1) - 2)^2 - n^3.
  * @author Georg Fischer
  */
 public class A144030 extends MultiTransformSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A272614 Numbers whose binary digits, except for the first &quot;1&quot;, are given by floor(((k-n)/n) mod 2) with 1&lt;=k&lt;=n.
+ * A272614 Numbers whose binary digits, except for the first "1", are given by floor(((k-n)/n) mod 2) with 1&lt;=k&lt;=n.
  * @author Georg Fischer
  */
 public class A272614 extends LambdaSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a046.A046974;
 
 /**
- * A396107 allocated for Ruud H.G. van Tol.
+ * A396107 Recam\u00e1n transform of the running sum of the decimal digits of Pi (A046974).
  * @author Sean A. Irvine
  */
 public class A396107 extends Sequence0 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A084956 Initial prime of the first prime chain of length n under the iteration x -&gt; 3x+4.
+ * A084956 Smallest initial prime of the first prime chain of length n under the iteration x -&gt; 3x+4.
  * @author Sean A. Irvine
  */
 public class A084956 extends A000040 {

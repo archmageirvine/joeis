@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395817 allocated for Vincenzo Manto.
+ * A395817 Strictly increasing minimal sequence where consecutive terms can be added digit-by-digit without carrying in base 10.
  * @author Sean A. Irvine
  */
 public class A395817 extends Sequence1 {

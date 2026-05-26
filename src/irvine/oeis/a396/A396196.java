@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A004215.
+ * A396196 The n-th digit of the n-th term of the Look-and-Say sequence (A005150), padded with 0 if the term has fewer than n digits.
  * @author Sean A. Irvine
  */
 public class A396196 extends Sequence1 {

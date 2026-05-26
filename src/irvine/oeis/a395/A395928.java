@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A395928 allocated for Stefano Spezia.
+ * A395928 Irregular triangle read by rows in which the row n lists the partition of n into the minimum number of prime parts, chosen greedily in decreasing order.
  * @author Sean A. Irvine
  */
 public class A395928 extends Sequence2 {

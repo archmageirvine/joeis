@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A106686 Triple loop substitution of eight symbols: characteristic polynomial: x^2*(x^3-x-1)*(x-1)*(x^2+x+1).
+ * A106686 Iterated expansion of the morphism 1-&gt;3, 2-&gt;1, 3-&gt;24, 4-&gt;6, 5-&gt;3, 6-&gt;78, 7-&gt;8, 8-&gt;6.
  * @author Georg Fischer
  */
 public class A106686 extends MorphismFixedPointSequence {

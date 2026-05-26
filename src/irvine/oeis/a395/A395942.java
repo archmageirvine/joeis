@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
- * A395942 allocated for Chuck Seggelin.
+ * A395942 Number of inequivalent tilings of an n X n grid by 1 X p rectangles using the prime partitions of n^2 into prime parts p &lt;= n up to symmetry.
  * @author Sean A. Irvine
  */
 public class A395942 extends Sequence0 {

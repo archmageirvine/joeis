@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A102769 Decimal expansion of the volume of a dodecahedron with each edge of unit length.
+ * A102769 Decimal expansion of the volume of a regular dodecahedron with each edge of unit length.
  * @author Georg Fischer
  */
 public class A102769 extends DecimalExpansionSequence {

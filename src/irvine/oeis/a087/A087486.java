@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A087486 Numbers n such that digital sum of n divides digital sum of n-th prime, p(n).
+ * A087486 Numbers k such that digital sum of k divides digital sum of k-th prime, p(k).
  * @author Georg Fischer
  */
 public class A087486 extends A000040 {

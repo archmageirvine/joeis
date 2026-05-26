@@ -4,7 +4,7 @@ package irvine.oeis.a396;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A396094 allocated for Paul D. Hanna.
+ * A396094 G.f. A(x) = B^4(x), the fourth iteration of B(x) = x/(1-x)^2.
  * @author Georg Fischer
  */
 public class A396094 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.a297.A297701;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A394535 Decimal expansion of the surface area of an uniform octagonal antiprism with unit edges.
+ * A394535 Decimal expansion of the surface area of a uniform octagonal antiprism with unit edges.
  * Formula:
  * @author Georg Fischer
  */

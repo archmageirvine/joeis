@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A396005 allocated for Juri-Stepan Gerasimov.
+ * A396005 Numbers k such that tau(2*k) = tau(k + 2) where tau = A000005.
  * @author Sean A. Irvine
  */
 public class A396005 extends FilterNumberSequence {

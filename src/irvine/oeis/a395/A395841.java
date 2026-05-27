@@ -4,7 +4,7 @@ package irvine.oeis.a395;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A395841 G.f. satisfies A(x) = sqrt( (1/x)*Series_Reversion( x/(1 + x*A(x)^3 + 2*x^2*A(x)^2*A&apos;(x))^2 ) ).
+ * A395841 G.f. satisfies A(x) = sqrt( (1/x)*Series_Reversion( x/(1 + x*A(x)^3 + 2*x^2*A(x)^2*A'(x))^2 ) ).
  * @author Georg Fischer
  */
 public class A395841 extends PolynomialFieldSequence {

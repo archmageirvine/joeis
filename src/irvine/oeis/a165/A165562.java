@@ -6,7 +6,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A165562 Numbers k for which k+k&apos; is prime, k&apos; being the arithmetic derivative of k.
+ * A165562 Numbers k for which k+k' is prime, k' being the arithmetic derivative of k.
  * @author Georg Fischer
  */
 public class A165562 extends FilterNumberSequence {

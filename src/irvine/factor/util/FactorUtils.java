@@ -2,10 +2,12 @@ package irvine.factor.util;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -109,4 +111,51 @@ public final class FactorUtils {
     return res;
   }
 
+  /**
+   * Return a sorted list of the unitary divisors of a number.
+   * @param n number
+   * @return unitary divisors
+   */
+  public static List<Z> unitaryDivisors(final long n) {
+    final List<Z> lst = new ArrayList<>();
+    for (final Z d : Jaguar.factor(n).divisors()) {
+      if (Functions.GCD.l(d, n / d.longValueExact()) == 1) {
+        lst.add(d);
+      }
+    }
+    Collections.sort(lst);
+    return lst;
+  }
+
+  /**
+   * Return the bi-unitary divisors of n.
+   * @param n number
+   * @return bi-unitary divisors
+   */
+  public static List<Long> biunitaryDivisors(final long n) {
+    final FactorSequence fs = Jaguar.factor(n);
+    final List<Long> res = new ArrayList<>();
+    res.add(1L);
+    for (final Z pz : fs.toZArray()) {
+      final long p = pz.longValue();
+      final int e = fs.getExponent(pz);
+      final List<Long> next = new ArrayList<>();
+      for (final long d : res) {
+        long pe = 1;
+        for (int k = 0; k <= e; ++k) {
+          // Skip the forbidden exponent e/2 when e is even
+          if ((e & 1) == 0 && k == e >> 1) {
+            pe *= p;
+            continue;
+          }
+          next.add(d * pe);
+          pe *= p;
+        }
+      }
+      res.clear();
+      res.addAll(next);
+    }
+    Collections.sort(res);
+    return res;
+  }
 }

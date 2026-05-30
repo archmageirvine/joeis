@@ -253,6 +253,14 @@ public class Q implements Comparable<Q>, IsInteger, Serializable {
   }
 
   /**
+   * Round this number in Mathematica or banker's style.
+   * @return round function
+   */
+  public Z bankersRound() {
+    return isInteger() ? toZ() : ceiling().clearBit(0);
+  }
+
+  /**
    * Add a rational to this rational.
    *
    * @param n rational to add

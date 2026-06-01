@@ -4,7 +4,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
- * A396404 allocated for Stefano Spezia.
+ * A396404 Antidiagonal sums of A396403.
  * @author Sean A. Irvine
  */
 public class A396404 extends A396403 {

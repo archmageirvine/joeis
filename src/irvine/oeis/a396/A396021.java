@@ -5,7 +5,7 @@ import irvine.oeis.a169.A169959;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A396021 allocated for Vincenzo Librandi.
+ * A396021 Sum of the distinct prime divisors of C(10*n, n).
  * @author Sean A. Irvine
  */
 public class A396021 extends SimpleTransformSequence {

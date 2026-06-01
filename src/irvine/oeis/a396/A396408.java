@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a075.A075254;
 
 /**
- * A396408 allocated for Robert Israel.
+ * A396408 Numbers k such that A075254(k) is the square of a prime.
  * @author Sean A. Irvine
  */
 public class A396408 extends FilterPositionSequence {

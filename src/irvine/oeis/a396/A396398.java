@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396398 allocated for Clark Kimberling.
+ * A396398 a(n) = r(n,n), where r(1,k)=f(k)=round(k*c), r(n,k)=f(r(n-1,k)), c=sqrt(2).
  * @author Sean A. Irvine
  */
 public class A396398 extends Sequence1 {

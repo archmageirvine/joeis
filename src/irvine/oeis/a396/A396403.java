@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A396403 allocated for Stefano Spezia.
+ * A396403 Array read by ascending antidiagonals: A(n,k) = k^(n*(n - 1)/2) for k &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A396403 extends Sequence0 {

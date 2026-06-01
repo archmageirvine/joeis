@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394678 allocated for C. Owen Prestwood.
+ * A394678 a(n) = (n! - 1) mod n^2.
  * @author Sean A. Irvine
  */
 public class A394678 extends Sequence1 {

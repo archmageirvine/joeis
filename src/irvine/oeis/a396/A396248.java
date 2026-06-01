@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A396248 allocated for Vincenzo Manto.
+ * A396248 Primes prime(k) such that prime(k) - prime(k-1) is a factorial.
  * @author Sean A. Irvine
  */
 public class A396248 extends A000040 {

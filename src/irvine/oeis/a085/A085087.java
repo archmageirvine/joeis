@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A085084.
+ * A085087 a(1) = 1; for n&gt;1, a(n) = a(n-1)*n if n is prime, a(n) = a(n-1)/n if n is composite dividing a(n-1) else a(n) = a(n-1).
  * @author Sean A. Irvine
  */
 public class A085087 extends Sequence1 {

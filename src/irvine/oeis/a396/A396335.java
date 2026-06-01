@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A396335 allocated for Andrey Samosyuk.
+ * A396335 Primes of the form k^2 + prime(k)^2.
  * @author Sean A. Irvine
  */
 public class A396335 extends A000040 {

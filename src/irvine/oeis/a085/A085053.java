@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A085053 Number of primes of the form nk+1, where k=1 to n; 0 if no such number exists.
+ * A085053 Number of primes of the form n*k+1, where k=1 to n.
  * @author Sean A. Irvine
  */
 public class A085053 extends Sequence1 {

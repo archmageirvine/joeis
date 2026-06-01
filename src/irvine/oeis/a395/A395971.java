@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A395971 allocated for Thomas Scheuerle.
+ * A395971 Triangular array T(n, k) read by rows: Row n gives the even coefficients of the polynomial P_n(x) = Sum_{k=0..n} x^(2*(n-k))*T(n, k), this is the polynomial of order 2*n that satisfies (-1)^n*P_n(k-n)/(n!)^2 = binomial(2*n, k) for integers k = 0..2*n.
  * @author Sean A. Irvine
  */
 public class A395971 extends Triangle {

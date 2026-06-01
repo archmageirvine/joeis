@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A187799 Decimal expansion of 20/phi^2, where phi is the golden ratio. Also (with a different offset), decimal expansion of 3 - sqrt(5).
+ * A187799 Decimal expansion of 20/phi^2, where phi is the golden ratio. Also (with offset 0), decimal expansion of 3 - sqrt(5).
  * Formula: 20/phi^2
  * @author Georg Fischer
  */

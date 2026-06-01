@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A013804 a(n) = 16^(4*n+1).
+ * A013804 a(n) = 16^(4*n + 1).
  * @author Sean A. Irvine
  */
 public class A013804 extends Sequence0 {

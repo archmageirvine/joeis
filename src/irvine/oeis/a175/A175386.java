@@ -4,7 +4,7 @@ package irvine.oeis.a175;
 import irvine.oeis.HypergeometricSequence;
 
 /**
- * A175386 a(n) = denominator of sum((1/i)*C(2n-i-1,i-1),i=1..n).
+ * A175386 a(n) = denominator of Sum_{i=1..n} (1/i)*C(2n-i-1,i-1).
  * @author Georg Fischer
  */
 public class A175386 extends HypergeometricSequence {

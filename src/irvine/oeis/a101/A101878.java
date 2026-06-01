@@ -7,7 +7,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A101878 Expansion of -LambertW(LambertW(-x))/x.
+ * A101878 Expansion of e.g.f. -LambertW(LambertW(-x))/x.
  * a(n) = sum(k=0,n,(k+1)^k*(n+1)^(n-k-1)*binom(n,k));
  * @author Georg Fischer
  */

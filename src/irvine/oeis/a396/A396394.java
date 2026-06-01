@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396394 allocated for Clark Kimberling.
+ * A396394 a(n) = r(n,n), where r(1,k)=f(k)=ceiling(k*c), r(n,k)=f(r(n-1,k)), c=(golden ratio)^2.
  * @author Sean A. Irvine
  */
 public class A396394 extends Sequence1 {

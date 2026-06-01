@@ -5,7 +5,7 @@ import irvine.oeis.a394.A394720;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A396176 allocated for N. J. A. Sloane.
+ * A396176 a(n) = primepi(A394720(n)).
  * @author Sean A. Irvine
  */
 public class A396176 extends SimpleTransformSequence {

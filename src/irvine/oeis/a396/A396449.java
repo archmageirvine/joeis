@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A085084.
+ * A396449 Decimal expansion of Sum_{k&gt;=0} 1/(k!)^4.
  * @author Sean A. Irvine
  */
 public class A396449 extends DecimalExpansionSequence {

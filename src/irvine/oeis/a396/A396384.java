@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A396384 allocated for Danila Ivanov.
+ * A396384 Decimal expansion of the constant D = Sum_{n&gt;=0} 1/(2*n! + 1).
  * @author Sean A. Irvine
  */
 public class A396384 extends DecimalExpansionSequence {

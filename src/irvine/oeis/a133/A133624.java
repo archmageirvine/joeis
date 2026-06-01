@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A133624 Binomial(n+p, n) mod n, where p=4.
+ * A133624 Binomial(n+4, 4) mod n.
  * @author Georg Fischer
  */
 public class A133624 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.AntidiagonalSequence;
 
 /**
- * A396348 allocated for Stefano Spezia.
+ * A396348 Array read by ascending antidiagonals: A(n,k) = prime(n)^A249344(n,k).
  * @author Sean A. Irvine
  */
 public class A396348 extends AntidiagonalSequence {

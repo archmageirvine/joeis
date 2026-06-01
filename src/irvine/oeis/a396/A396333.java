@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A396333 allocated for Jean-Marc Rebert.
+ * A396333 Number of ordered triples of integers (x,y,z) with 0 &lt;= x &lt;= y &lt;= z and x^2 + y^2 + z^2 &lt; n^2.
  * @author Sean A. Irvine
  */
 public class A396333 extends Sequence0 {

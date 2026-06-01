@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A392924 allocated for Tanya Khovanova.
+ * A392924 The number of partitions of n such that there exists a part p, that appears in exactly p*K/100 parts, where K is the total number of parts.
  * @author Sean A. Irvine
  */
 public class A392924 extends AbstractSequence {

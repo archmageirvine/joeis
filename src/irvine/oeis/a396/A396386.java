@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396386 allocated for Clark Kimberling.
+ * A396386 a(n) = r(n,n), where r(1,k)=f(k)=round(k*c), r(n,k)=f(r(n-1,k)), c=3/2, using banker's rounding.
  * @author Sean A. Irvine
  */
 public class A396386 extends Sequence1 {

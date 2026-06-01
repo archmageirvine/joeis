@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A085084.
+ * A085085 Numerator of Sum_{i=2..t} (d(i)/d(i-1)-1), where d(1), ..., d(t) are the divisors of n.
  * @author Sean A. Irvine
  */
 public class A085085 extends Sequence1 {

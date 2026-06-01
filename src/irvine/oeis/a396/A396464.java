@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A085084. a(1) = a(2) = 1. For even n, a(n) = a(n-1) + a(n-2). For odd n, a(n) = a(n-1) divided by the largest proper factor found in the previous terms. If no proper factor is present, then a(n) = a(n-1) + a(n-2).
+ * A396464 a(1) = a(2) = 1. For even n, a(n) = a(n-1) + a(n-2). For odd n, a(n) = a(n-1) divided by the largest proper factor found in the previous terms. If no proper factor is present, then a(n) = a(n-1) + a(n-2).
  * @author Sean A. Irvine
  */
 public class A396464 extends Sequence1 {

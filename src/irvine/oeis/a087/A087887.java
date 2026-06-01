@@ -4,7 +4,7 @@ package irvine.oeis.a087;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A087887 a(n) = 18n^3 + 6n^2.
+ * A087887 a(n) = 18*n^3 + 6*n^2.
  * @author Georg Fischer
  */
 public class A087887 extends GeneratingFunctionSequence {

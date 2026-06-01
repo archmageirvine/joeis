@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A033948 Numbers that have a primitive root (the multiplicative group modulo n is cyclic).
+ * A033948 Numbers that have a primitive root (k such that the multiplicative group modulo k is cyclic).
  * @author Sean A. Irvine
  */
 public class A033948 extends Sequence1 {

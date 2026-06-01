@@ -5,7 +5,7 @@ import irvine.math.LongUtils;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A396381 allocated for Ivan N. Ianakiev.
+ * A396381 Bi-unitary half-Zumkeller numbers: numbers whose set of bi-unitary proper divisors can be partitioned into two disjoint subsets of equal sum.
  * @author Sean A. Irvine
  */
 public class A396381 extends FilterNumberSequence {

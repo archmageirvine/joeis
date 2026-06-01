@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A072818 Possibly the only integers of the form sqrt(m^2*(m^2-1)*2/3) [only checked for the first 5 terms].
+ * A072818 Expansion of g.f. 20*x/(1-98*x+x^2).
  * @author Sean A. Irvine
  */
 public class A072818 extends LinearRecurrence {

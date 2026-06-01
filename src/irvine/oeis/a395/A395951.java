@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A085084.
+ * A395951 allocated for Alexander R. Povolotsky.
  * @author Sean A. Irvine
  */
 public class A395951 extends A000040 {

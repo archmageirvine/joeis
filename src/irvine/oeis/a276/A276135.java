@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A276135 Ben Ames Williams&apos;s Monkey and Coconuts Problem.
+ * A276135 Ben Ames Williams's Monkey and Coconuts Problem.
  * @author Georg Fischer
  */
 public class A276135 extends LambdaSequence {

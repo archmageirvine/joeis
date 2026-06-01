@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a008.A008726;
 
 /**
- * A396179 allocated for N. J. A. Sloane.
+ * A396179 Positive integers not in A008726.
  * @author Sean A. Irvine
  */
 public class A396179 extends ComplementSequence {

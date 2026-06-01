@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A396340 allocated for Vincenzo Manto.
+ * A396340 Primes prime(k) such that prime(k) - prime(k-1) is a Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A396340 extends A000040 {

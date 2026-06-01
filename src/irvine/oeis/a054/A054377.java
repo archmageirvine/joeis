@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a069.A069359;
 
 /**
- * A054377 Primary pseudoperfect numbers: numbers n &gt; 1 such that 1/n + sum 1/p = 1, where the sum is over the primes p | n.
+ * A054377 Primary pseudoperfect numbers: numbers k &gt; 1 such that 1/k + sum 1/p = 1, where the sum is over the primes p | k.
  * @author Sean A. Irvine
  */
 public class A054377 extends A069359 {

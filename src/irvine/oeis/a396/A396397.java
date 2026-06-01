@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396397 allocated for Clark Kimberling.
+ * A396397 a(n) = r(n,n), where r(1,k)=f(k)=ceiling(k*c), r(n,k)=f(r(n-1,k)), c=sqrt(2).
  * @author Sean A. Irvine
  */
 public class A396397 extends Sequence1 {

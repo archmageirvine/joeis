@@ -5,7 +5,7 @@ package irvine.oeis.a141;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A141528 Expansion of x/(1 + x + 41*x^2).
+ * A141528 Expansion of -x/(1 + x + 41*x^2).
  * Lin.rec. signature: (-1,-41)
  * @author Georg Fischer
  */

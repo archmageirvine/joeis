@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A106688 Six-symbol substitution: characteristic polynomial: x^6 - 4*x^4 - 3*x^3 - x - 1.
+ * A106688 2-limiting word of the morphism 1-&gt;2, 2-&gt;34, 3-&gt;24, 4-&gt;256, 5-&gt;36, 6-&gt;145.
  * @author Georg Fischer
  */
 public class A106688 extends MorphismFixedPointSequence {

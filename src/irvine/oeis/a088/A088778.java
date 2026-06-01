@@ -5,7 +5,7 @@ import irvine.oeis.SelfQuotientSequence;
 import irvine.oeis.a082.A082783;
 
 /**
- * A088778 a(n)=A082783(n+1)/A082783(n).
+ * A088778 a(n) = A082783(n+1)/A082783(n).
  * @author Georg Fischer
  */
 public class A088778 extends SelfQuotientSequence {

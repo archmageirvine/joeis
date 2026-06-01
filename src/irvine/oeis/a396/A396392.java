@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396392 allocated for Clark Kimberling.
+ * A396392 a(n) = r(n,n), where r(1,k)=f(k)=round(k*c), r(n,k)=f(r(n-1,k)), c=golden ratio.
  * @author Sean A. Irvine
  */
 public class A396392 extends Sequence1 {

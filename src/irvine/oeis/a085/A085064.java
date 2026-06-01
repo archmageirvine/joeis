@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A085064 a(n) = smallest k such that nk-1 as well as n+k are primes.
+ * A085064 a(n) = smallest k such that n*k-1 as well as n+k are primes.
  * @author Sean A. Irvine
  */
 public class A085064 extends Sequence1 {

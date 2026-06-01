@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a022.A022544;
 
 /**
- * A062316 Neither the sum or difference of 2 squares.
+ * A062316 Neither the sum nor difference of 2 squares.
  * @author Sean A. Irvine
  */
 public class A062316 extends FilterSequence {

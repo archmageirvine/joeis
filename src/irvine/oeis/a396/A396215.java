@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A085084.
+ * A396215 a(n) is the smallest number k so that the k-th n-simplex number has exactly n prime factors, counted with multiplicity.
  * @author Sean A. Irvine
  */
 public class A396215 extends Sequence1 {

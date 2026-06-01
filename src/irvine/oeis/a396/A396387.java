@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396387 allocated for Clark Kimberling.
+ * A396387 a(n) = r(n,n), where r(1,k)=f(k)=floor(k*c), r(n,k)=f(r(n-1,k)), c=e.
  * @author Sean A. Irvine
  */
 public class A396387 extends Sequence1 {

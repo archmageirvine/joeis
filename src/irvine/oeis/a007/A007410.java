@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A007410 Numerator of Sum_{k=1..4} k^(-4).
+ * A007410 Numerator of Sum_{k=1..n} k^(-4).
  * @author Sean A. Irvine
  */
 public class A007410 extends Sequence1 {

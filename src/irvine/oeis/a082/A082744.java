@@ -1,8 +1,9 @@
 package irvine.oeis.a082;
 
-import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
+import irvine.oeis.a002.A002113;
 
 /**
  * A082744 Smallest k such that n*k + 1 is a palindrome.
@@ -14,12 +15,16 @@ public class A082744 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Z n = Z.valueOf(++mN);
-    long k = 0;
+    if (++mN == 1) {
+      return Z.ONE;
+    }
+    final Sequence palin = new A002113().skip(2);
     while (true) {
-      if (Predicates.PALINDROME.is(n.multiply(++k).add(1))) {
-        return Z.valueOf(k);
+      final Z p = palin.next();
+      if (p.mod(mN) == 1) {
+        return p.subtract(1).divide(mN);
       }
     }
   }
 }
+

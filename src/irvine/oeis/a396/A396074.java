@@ -3,7 +3,7 @@ package irvine.oeis.a396;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A396074 allocated for Tanya Khovanova.
+ * A396074 a(n) is the smallest number P such that there exists a partition of P with K parts that has exactly n parts p, with the property that each p appears in exactly P*K/100 parts.
  * @author Sean A. Irvine
  */
 public class A396074 extends FiniteSequence {

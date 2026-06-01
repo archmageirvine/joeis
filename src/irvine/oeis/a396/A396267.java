@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396267 allocated for Zhining Yang.
+ * A396267 a(n) is the smallest number k such that k^n is the sum of 4n distinct positive n-th powers.
  * @author Sean A. Irvine
  */
 public class A396267 extends Sequence1 {

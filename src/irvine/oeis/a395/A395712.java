@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395712 allocated for Bowen Dang.
+ * A395712 Number of valid manual turn-on sequences for n computers in a line, where a computer turns on automatically if its two neighbors are already on.
  * @author Sean A. Irvine
  */
 public class A395712 extends Sequence1 {

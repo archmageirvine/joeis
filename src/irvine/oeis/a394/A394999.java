@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A394999 allocated for Rudra Jadhav.
+ * A394999 Decimal expansion of gamma*phi, where gamma is the Euler-Mascheroni constant and phi = (1+sqrt(5))/2 is the golden ratio.
  * @author Sean A. Irvine
  */
 public class A394999 extends DecimalExpansionSequence {

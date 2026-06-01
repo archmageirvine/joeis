@@ -8,7 +8,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a111.A111972;
 
 /**
- * A395312 allocated for Felix Huber.
+ * A395312 Triangle read by rows: T(n, k) is the number of partitions of n into parts having exactly k distinct prime factors, with 0 &lt;= k &lt;= A111972(n) for n &gt;= 1 and k = 0 for n = 0.
  * @author Sean A. Irvine
  */
 public class A395312 extends Sequence0 {

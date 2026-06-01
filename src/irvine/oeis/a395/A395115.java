@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395115 allocated for Marco Rip\u00e0.
+ * A395115 Smallest integer m &gt; 1 such that gcd(m^(3*n) - 1, m! - 1) &gt; 1.
  * @author Sean A. Irvine
  */
 public class A395115 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A190182 Decimal expansion of (1+x+sqrt(8+2x))/4, where x=sqrt(15).
+ * A190182 Decimal expansion of (1+x+sqrt(8+2x))/4, where x = sqrt(15).
  * @author Georg Fischer
  */
 public class A190182 extends DecimalExpansionSequence {

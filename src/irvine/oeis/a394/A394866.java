@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394866 allocated for Juri-Stepan Gerasimov.
+ * A394866 a(1) = 1; for n &gt; 1, a(n) is the number of integers m in [2^(n-1)..3^(n-1) - 1] such that A000005(m) = n.
  * @author Sean A. Irvine
  */
 public class A394866 extends Sequence1 {

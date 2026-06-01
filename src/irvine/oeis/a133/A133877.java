@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.recur.PaddingSequence;
 
 /**
- * A133877 n modulo 7 repeated 7 times.
+ * A133877 N modulo 7 repeated 7 times.
  * @author Georg Fischer
  */
 public class A133877 extends PaddingSequence {

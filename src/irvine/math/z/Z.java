@@ -454,6 +454,16 @@ public class Z extends Number implements Comparable<Z>, IsInteger {
   }
 
   /**
+   * Return the bitwise xor of this integer with <code>n</code>. The sign bits are
+   * also xored; thus the result is negative if and only if one of the inputs is negative.
+   * @param n number to and
+   * @return <code>this ^ n</code>
+   */
+  public Z xor(final long n) {
+    return Logical.xor(this, Z.valueOf(n));
+  }
+
+  /**
    * Return this integer with the specified bit cleared. This operation
    * never changes the sign unless the result becomes zero.
    * @param bitNumber bit number to clear

@@ -8,7 +8,7 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
 import irvine.oeis.Sequence0;
 
 /**
- * A396364 allocated for Banri Ogawa.
+ * A396364 Triangle T(n, k) read by rows: number of graphs in A396149 on n vertices containing exactly k triangles, for n &gt;= 0, 0 &lt;= k &lt;= binomial(n, 3).
  * @author Sean A. Irvine
  */
 public class A396364 extends Sequence0 {

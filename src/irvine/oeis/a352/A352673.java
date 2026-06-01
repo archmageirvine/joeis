@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A352673 Decimal expansion of r = (3/13)(4+sqrt(3)).
+ * A352673 Decimal expansion of (3/13)(4+sqrt(3)).
  * Formula: Decimal expansion of r =(3/13)(4+sqrt(3)).
  * @author Georg Fischer
  */

@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A173126 sum_{k=floor[(n+5)/2] mod 5} C(n,k).
+ * A173126 Sum_{k=floor[(n+5)/2] mod 5} C(n,k).
  * @author Sean A. Irvine
  */
 public class A173126 extends LinearRecurrence {

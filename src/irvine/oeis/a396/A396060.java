@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A396060 allocated for Michel Lagneau.
+ * A396060 Numbers m such that m^2 + 1 and m^2 - m + 1 are both prime numbers.
  * @author Sean A. Irvine
  */
 public class A396060 extends FilterNumberSequence {

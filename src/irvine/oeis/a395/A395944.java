@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395944 allocated for Marco Rip\u00e0.
+ * A395944 a(n) = gcd(A395115(n)^(3*n) - 1, A395115(n)! - 1).
  * @author Sean A. Irvine
  */
 public class A395944 extends Sequence1 {

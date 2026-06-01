@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A106693 3 symbols taken seven at a time symmetrically.
+ * A106693 Limiting word of the morphism 1-&gt;1132311, 2-&gt;2213122, 3-&gt;3321233 starting from 1.
  * @author Georg Fischer
  */
 public class A106693 extends MorphismFixedPointSequence {

@@ -5,7 +5,7 @@ import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A396365 allocated for Donghwi Park.
+ * A396365 Decimal expansion of the alpha constant in the SELU activation function.
  * @author Sean A. Irvine
  */
 public class A396365 extends DecimalExpansionSequence {

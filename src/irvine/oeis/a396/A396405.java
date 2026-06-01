@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.a386.A386016;
 
 /**
- * A396405 allocated for Jwalin Bhatt.
+ * A396405 A sequence constructed by greedily sampling the probability distribution given by 1/log_2(i+1)^2 - 1/log_2(i+2)^2 to minimize ratio discrepancy.
  * @author Sean A. Irvine
  */
 public class A396405 extends A386016 {

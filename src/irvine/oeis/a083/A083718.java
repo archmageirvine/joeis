@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A083718 (greatest prime &lt;= n) + (greatest prime factor of n).
+ * A083718 a(n) = (greatest prime &lt;= n) + (greatest prime factor of n), with a(1) = 2.
  * @author Georg Fischer
  */
 public class A083718 extends LambdaSequence {

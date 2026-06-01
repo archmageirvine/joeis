@@ -3,7 +3,7 @@ package irvine.oeis.a396;
 import irvine.oeis.DifferenceSequence;
 
 /**
- * A396177 allocated for N. J. A. Sloane.
+ * A396177 First differences of A396176.
  * @author Sean A. Irvine
  */
 public class A396177 extends DifferenceSequence {

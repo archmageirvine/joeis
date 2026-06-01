@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A193175 Numbers n such that there exists a two-dimensional generalized Bravais lattice with n-fold symmetry.
+ * A193175 Numbers k such that there exists a two-dimensional generalized Bravais lattice with k-fold symmetry.
  * @author Georg Fischer
  */
 public class A193175 extends FiniteSequence {

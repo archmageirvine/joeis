@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A396239 allocated for Edward Bernstein.
+ * A396239 Numerator of r(n) = (prime(n+2) - 2*prime(n+1) + prime(n)) / (prime(n+2) - prime(n)).
  * @author Sean A. Irvine
  */
 public class A396239 extends A000040 {

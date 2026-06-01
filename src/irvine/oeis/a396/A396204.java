@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396204 allocated for Jacob Vecht.
+ * A396204 Numbers whose decimal representation begins with their hexadecimal representation.
  * @author Sean A. Irvine
  */
 public class A396204 extends Sequence1 {

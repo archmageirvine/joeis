@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005101;
 
 /**
- * A396223 allocated for Felix Huber.
+ * A396223 a(n) is the largest integer area attainable by a polygon with side lengths divisors(A005101(n)).
  * @author Sean A. Irvine
  */
 public class A396223 extends Sequence1 {

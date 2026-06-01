@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A085084.
+ * A396455 Primes p such that p^2 = A075254(k) for some k.
  * @author Sean A. Irvine
  */
 public class A396455 extends Sequence1 {

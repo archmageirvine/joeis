@@ -14,7 +14,7 @@ import irvine.oeis.Sequence1;
 
 /**
  * A393551 T(n,k) is the number of distinct enforceable unique-solution shadings in an n X k Hitori puzzle up to rotation and reflection, read by rows.
- * @author Sean Irvine (Java port)
+ * @author Sean A. Irvine (Java port)
  */
 public class A393551 extends Sequence1 {
 

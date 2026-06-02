@@ -5,12 +5,12 @@
  * 2021-02-03: imply "[1]" for empty initTerms
  * 2020-09-24: gftype=2, adjunct(n) to be added to the constant term
  * 2020-07-20, Georg Fischer: public getInitTerms(), protected initialize()
- * 2020-04-13, Sean Irvine: jOEIS conventions
+ * 2020-04-13, Sean A. Irvine: jOEIS conventions
  * 2020-04-10: merge with joeis; gfType "egf"
  * 2020-01-07: preset mBuffer with ZEROes because of problems; also for single/self start
  * 2019-12-17: Constructors with prefix
  * 2019-12-08, Georg Fischer: optimize for the linear case
- * 2019-12-07, Sean Irvine: jOEIS conventions
+ * 2019-12-07, Sean A. Irvine: jOEIS conventions
  * 2019-12-04, Georg Fischer
  */
 package irvine.oeis.recur;

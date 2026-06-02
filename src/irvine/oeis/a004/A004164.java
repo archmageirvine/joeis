@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 
 /**
  * A004164 Sum of digits of n^3.
- * @author Sean Irvine
+ * @author Sean A. Irvine
  */
 public class A004164 extends Sequence0 {
 

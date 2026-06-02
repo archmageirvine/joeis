@@ -6,13 +6,13 @@ import irvine.oeis.recur.HolonomicRecurrence;
 import irvine.oeis.transform.ConvolutionProduct;
 
 /**
- * A320733 Number of partitions of n with two sorts of part 1 which are introduced in ascending order.
+ * A320737 Number of partitions of n with six sorts of part 1 which are introduced in ascending order.
  * @author Georg Fischer
  */
-public class A320733 extends ConvolutionProduct {
+public class A320737 extends ConvolutionProduct {
 
   /** Construct the sequence. */
-  public A320733() {
-    super(0, "1,1", new A000041(), new HolonomicRecurrence(0, "[0,2,-1]", "1,0,1", 0, 0));
+  public A320737() {
+    super(0, "1,1", new A000041(), new HolonomicRecurrence(0, "[0, -144, 180, -80, 15, -1]", "1,0,1,3,10,37", 0, 0));
   }
 }

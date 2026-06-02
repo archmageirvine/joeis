@@ -33,7 +33,7 @@ public class A085098 extends Sequence1 {
       }
       return Collections.emptyList();
     }
-    List<List<Q>> s = new ArrayList<>();
+    final List<List<Q>> s = new ArrayList<>();
     Q q;
     for (Z i = Q.ONE.divide(r.subtract(1)).floor().add(1); (q = new Q(i.add(1), i)).pow(n).compareTo(r) >= 0; i = i.add(1)) {
       final List<List<Q>> l = spl(r.divide(q), n - 1);

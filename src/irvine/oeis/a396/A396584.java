@@ -4,7 +4,7 @@ package irvine.oeis.a396;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A396584 a(n) = (4 - 3*(-1)^n) * 5^floor(n/2).
+ * A396584 allocated for Peter Luschny.
  * @author Georg Fischer
  */
 public class A396584 extends HolonomicRecurrence {

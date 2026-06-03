@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A186148 Rank of (1/4)n^3 when {(1/4)i^3: i&gt;=1} and {j^2&gt;: j&gt;=1} are jointly ranked with (1/4)i^3 before j^2 when (1/4)i^3=j^2. Complement of A186149.
+ * A186148 Rank of (1/4)n^3 when {(1/4)i^3: i&gt;=1} and {j^2&gt;: j&gt;=1} are jointly ranked with (1/4)i^3 before j^2 when (1/4)i^3=j^2.  Complement of A186149.
  * @author Georg Fischer
  */
 public class A186148 extends AbstractSequence {

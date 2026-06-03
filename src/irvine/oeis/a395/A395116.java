@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395116.
+ * A395116 allocated for Joesph Daniel Burke III.
  * @author Sean A. Irvine
  */
 public class A395116 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A396532.
+ * A085103 Indices of zeros in A085102.
  * @author Sean A. Irvine
  */
 public class A085103 extends FilterPositionSequence {

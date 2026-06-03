@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A186149 Rank of n^2 when {(1/4)i^3: i&gt;=1} and {j^2&gt;: j&gt;=1} are jointly ranked with (1/4)i^3 before j^2 when (1/4)i^3=j^2. Complement of A186148.
+ * A186149 Rank of n^2 when {(1/4)i^3: i&gt;=1} and {j^2&gt;: j&gt;=1} are jointly ranked with (1/4)i^3 before j^2 when  (1/4)i^3=j^2.  Complement of A186148.
  * @author Georg Fischer
  */
 public class A186149 extends A186148 {

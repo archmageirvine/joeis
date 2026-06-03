@@ -4,7 +4,7 @@ package irvine.oeis.a382;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A382161 &quot;Repunit&quot; Kaprekar numbers.
+ * A382161 "Repunit" Kaprekar numbers.
  * @author Georg Fischer
  */
 public class A382161 extends HolonomicRecurrence {

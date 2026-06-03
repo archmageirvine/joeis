@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A395764.
+ * A085119 a(n) = number at which the standard Ackermann function mod n stabilizes, or -1 if it does not stabilize.
  * @author Sean A. Irvine
  */
 public class A085119 extends Sequence2 {

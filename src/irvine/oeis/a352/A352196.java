@@ -1,18 +1,18 @@
-package irvine.oeis.a085;
+package irvine.oeis.a352;
 
 import java.util.HashSet;
 
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence2;
+import irvine.oeis.Sequence1;
 
 /**
- * A085119 a(n) = number at which the standard Ackermann function mod n stabilizes, or -1 if it does not stabilize.
+ * A352196 a(n) = number of steps for the standard mod-n Ackermann function to stabilize to a set consisting of only one value, or -1 if it does not stabilize.
  * @author Sean A. Irvine
  */
-public class A085119 extends Sequence2 {
+public class A352196 extends Sequence1 {
 
-  private long mN = 1;
+  private long mN = 0;
 
   @Override
   public Z next() {
@@ -34,7 +34,7 @@ public class A085119 extends Sequence2 {
         // do nothing
       }
       if (seen.size() == 1) {
-        return Z.valueOf(seen.iterator().next());
+        return Z.valueOf(i);
       }
     }
   }

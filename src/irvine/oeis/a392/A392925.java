@@ -15,7 +15,7 @@ public class A392925 extends Sequence2 {
   @Override
   public Z next() {
     ++mN;
-    long k = 1;
+    long k = 63;
     while (true) {
       k += 2;
       if (Functions.SIGMA.z(mN, k).mod(k) == 0) {

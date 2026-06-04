@@ -11,8 +11,6 @@ import irvine.oeis.a381.A381617;
  */
 public class A396505 extends A381617 {
 
-  // log_2(1+1/i)^2 - log_2(1+1/(i+1))^2
-
   /** Construct the sequence. */
   public A396505() {
     super(new MemoryFunction1<>() {

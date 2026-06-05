@@ -181,6 +181,8 @@ public final class SequenceFactory {
           return new SimpleTransformSequence(sequence(inner), Functions.PHI::z);
         case "prime":
           return new FilterSequence(sequence(inner), FilterSequence.PRIME);
+        case "pseudo":
+          return new PseudoSequence(getCanonicalId(inner));
         case "record":
           return new RecordSequence(sequence(inner));
         case "semiprime":

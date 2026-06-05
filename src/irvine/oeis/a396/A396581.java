@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000037;
 
 /**
- * A396581 allocated for David A. Corneth.
+ * A396581 The fractional part of A000037(n) is the a(n)-th smallest fractional part of all sqrt(m) where m is nonsquare and 1 &lt;= m &lt;= A000037(n).
  * @author Sean A. Irvine
  */
 public class A396581 extends A000037 {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A396158 allocated for A.H.M. Smeets.
+ * A396158 Triangle; T(n,m) is the number of possible outcomes having a run of m or more sixes when a die is rolled n times.
  * @author Sean A. Irvine
  */
 public class A396158 extends Sequence0 {

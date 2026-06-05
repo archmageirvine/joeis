@@ -21,7 +21,7 @@ public class A395286 extends Sequence1 {
   private final Fast mPrime = new Fast();
 
   private boolean is(final Z p, final int m) {
-    // Check m^10 ≡ 1 mod p
+    // Check m^10 == 1 mod p
     if (!Z.valueOf(m).modPow(Z.TEN, p).isOne()) {
       return false;
     }

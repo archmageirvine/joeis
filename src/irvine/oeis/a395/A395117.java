@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395117 allocated for Joesph Daniel Burke III.
+ * A395117 Absolute norms of finite mock theta sums S_p(zeta_p), where p runs through the odd primes.
  * @author Sean A. Irvine
  */
 public class A395117 extends Sequence1 {

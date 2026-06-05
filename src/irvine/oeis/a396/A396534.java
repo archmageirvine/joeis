@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A396534 allocated for Mohamed Bouhamida.
+ * A396534 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2 + (x + 79^2)^2 = y^2.
  * @author Sean A. Irvine
  */
 public class A396534 extends Sequence1 {

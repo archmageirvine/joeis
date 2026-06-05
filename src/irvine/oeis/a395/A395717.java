@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395717 allocated for Gordon Hamilton.
+ * A395717 a(n) is the maximal number achievable by taking any sequence of positive integers less than or equal to n: s(1), s(2), s(3)... and generating a new sequence T with t(1) = s(1) and t(k+1) being the multiple of s(k+1) closest to t(k). In case there are two multiples of s(k+1) equally close, the sequence T is undefined. a(n) = maximal element of any sequence, T.
  * @author Sean A. Irvine
  */
 public class A395717 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A396282 allocated for Sajid Hussain.
+ * A396282 Primes q such that q - p = floor(log_2(q)), where p is the largest prime strictly less than q.
  * @author Sean A. Irvine
  */
 public class A396282 extends A000040 {

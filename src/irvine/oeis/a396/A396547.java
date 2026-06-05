@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A396547 allocated for Vincenzo Manto.
+ * A396547 Primes p such that the sum of the distinct prime factors of p-1 is prime.
  * @author Sean A. Irvine
  */
 public class A396547 extends A000040 {

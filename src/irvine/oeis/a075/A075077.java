@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A075077 a(1) =1 and then the smallest number not occurring earlier such that a(n)+a(n+1) gives a different composite number (not obtained earlier).
+ * A075077 a(1) = 1 and then the smallest number not occurring earlier such that a(n) + a(n+1) gives a different composite number (not obtained earlier).
  * @author Sean A. Irvine
  */
 public class A075077 extends Sequence1 {

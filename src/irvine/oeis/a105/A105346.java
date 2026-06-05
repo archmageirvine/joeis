@@ -7,7 +7,7 @@ import irvine.oeis.a014.A014612;
 
 
 /**
- * A105346 3-almost primes whose indices are 3-almost primes.
+ * A105346 3-almost primes whose indices are 3-almost primes: a(n) = A014612(A014612(n)).
  * Formula: <code>a(n) = A014612(A014612(n)).</code>
  * @author Georg Fischer
  */

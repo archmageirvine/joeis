@@ -6,7 +6,7 @@ import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A178647 Decimal expansion of the fraction of a population falling within +- 1 standard deviation of the mean, assuming a normal distribution.
+ * A178647 Decimal expansion of erf(1/sqrt(2)): the probability of falling within +- 1 standard deviation of the mean, assuming a normal distribution.
  * @author Georg Fischer
  */
 public class A178647 extends DecimalExpansionSequence {

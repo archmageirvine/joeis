@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A209041 Number of n X 2 0..3 arrays with no element equal the average of immediate neighbors vertically above and horizontally left of it.
+ * A209041 Number of n X 2 0..3 arrays with no element equal to the average of  its immediate neighbors vertically above and horizontally left.
  * @author Georg Fischer
  */
 public class A209041 extends GeneratingFunctionSequence implements Conjectural {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a106.A106610;
 
 /**
- * A109050 a(n) = lcm(n, 9).
+ * A109050 a(n) = lcm(n,9).
  * @author Georg Fischer
  */
 public class A109050 extends Sequence0 {

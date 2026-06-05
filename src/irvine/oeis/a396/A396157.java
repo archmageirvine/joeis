@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A396157 allocated for A.H.M. Smeets.
+ * A396157 Triangle; T(n,m) is the number of possible outcomes having a run of m or more heads when a coin is tossed n times.
  * @author Sean A. Irvine
  */
 public class A396157 extends Sequence0 {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395950 allocated for Joesph Daniel Burke III.
+ * A395950 Odd parts of absolute field norms of first derivatives of regularized mock theta limits at primitive 2n-th roots of unity.
  * @author Sean A. Irvine
  */
 public class A395950 extends Sequence1 {

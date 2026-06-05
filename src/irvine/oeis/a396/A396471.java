@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A396471 allocated for Paolo Xausa.
+ * A396471 Irregular triangle read by rows: row n lists the coefficients of Product_{k=0..n-1} (1 + x^Fibonacci(k+2)).
  * @author Sean A. Irvine
  */
 public class A396471 extends Sequence0 {

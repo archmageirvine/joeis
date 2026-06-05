@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A396535 allocated for Noah A Rosenberg.
+ * A396535 Number of labeled histories for rooted at-most-6-furcating trees with n leaves, if simultaneous branching events are allowed.
  * @author Sean A. Irvine
  */
 public class A396535 extends CachedSequence {

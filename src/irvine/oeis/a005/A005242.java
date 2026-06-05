@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A005242 A self-generating sequence.
+ * A005242 Lexicographically earliest sequence of distinct positive integers such that sums of two or three consecutive earlier terms are excluded.
  * @author Sean A. Irvine
  */
 public class A005242 extends Sequence1 {

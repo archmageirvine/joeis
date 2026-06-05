@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395621 allocated for M. F. Hasler.
+ * A395621 Nonsquare integers k &gt; 0 such that there is a nonsquare integer 0 &lt; m &lt; k such that sqrt(k) + sqrt(m) is closer to an integer than for all smaller nonsquare k &gt; m &gt; 0.
  * @author Sean A. Irvine
  */
 public class A395621 extends Sequence1 {

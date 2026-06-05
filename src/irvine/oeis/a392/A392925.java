@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A392925 allocated for Alexander Violette.
+ * A392925 Smallest odd number k greater than 1 such that sigma_n(k)/k is an integer.
  * @author Sean A. Irvine
  */
 public class A392925 extends Sequence2 {

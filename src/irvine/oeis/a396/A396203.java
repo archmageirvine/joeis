@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A396203 allocated for Sajid Hussain.
+ * A396203 Primes p such that the gap to the next prime is floor(log_2(p)).
  * @author Sean A. Irvine
  */
 public class A396203 extends FilterSequence {

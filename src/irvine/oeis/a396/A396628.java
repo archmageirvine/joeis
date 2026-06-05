@@ -4,7 +4,7 @@ package irvine.oeis.a396;
 import irvine.oeis.a082.A082182;
 
 /**
- * A396628 allocated for Robert Price.
+ * A396628 Numbers k such that (22^k - 5^k)/17 is prime.
  * @author Georg Fischer
  */
 public class A396628 extends A082182 {

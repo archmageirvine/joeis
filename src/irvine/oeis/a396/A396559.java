@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A396559 allocated for Petro Kolosov.
+ * A396559 Triangle read by rows: T(n,k) = numerator(CF(n,k)), where CF(n,k) = (1/k!) * Sum_{j=0..k} (-1)^j * binomial(k,j) * (3+k/2-j)^n.
  * @author Sean A. Irvine
  */
 public class A396559 extends Sequence0 {

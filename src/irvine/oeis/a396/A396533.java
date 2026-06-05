@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A396533 allocated for Thomas Scheuerle.
+ * A396533 Decimal expansion of -P(0), where P(x) is the Lagrange interpolation polynomial that interpolates P(k!) = k for all integer k &gt; 0 in the limit of infinite order.
  * @author Sean A. Irvine
  */
 public class A396533 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A106698 Three-symbol substitution: characteristic polynomial: x^3-x^2-3*x-3.
+ * A106698 1-limiting word of the morphism 1-&gt;23, 2-&gt;121, 3-&gt;212.
  * @author Georg Fischer
  */
 public class A106698 extends MorphismFixedPointSequence {

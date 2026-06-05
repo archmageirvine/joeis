@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A292664 Rank of n*e when all the numbers j*(e+1) and k*e, for j&gt;=1, k&gt;=1, are jointly ranked.
+ * A292664 Rank of n*e when all the numbers j*(e-1) and k*e, for j&gt;=1, k&gt;=1, are jointly ranked.
  * @author Georg Fischer
  */
 public class A292664 extends LambdaSequence {

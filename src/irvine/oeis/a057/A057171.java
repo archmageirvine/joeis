@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A057171 Numbers n such that (5^n+1)/6 is a prime.
+ * A057171 Numbers k such that (5^k + 1)/6 is a prime.
  * @author Georg Fischer
  */
 public class A057171 extends PrimePositionSubsequence {

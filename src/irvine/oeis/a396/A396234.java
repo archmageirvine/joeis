@@ -8,7 +8,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a031.A031924;
 
 /**
- * A396234 allocated for Harry E. Neel.
+ * A396234 Smaller term of pairs of consecutive primes of the form p, p+6 where both primes eventually reach a value of 1 under iteration of the sums of the squares of their digits and the first iteration of both terms are also prime.
  * @author Sean A. Irvine
  */
 public class A396234 extends FilterSequence {

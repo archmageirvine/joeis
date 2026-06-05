@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006842;
 
 /**
- * A396587 allocated for Marko Riedel.
+ * A396587 a(n) / (4*n!) is the cubic moment of the Farey series of order n.
  * @author Sean A. Irvine
  */
 public class A396587 extends A006842 {

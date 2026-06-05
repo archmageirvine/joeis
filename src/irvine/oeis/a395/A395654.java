@@ -10,7 +10,7 @@ import irvine.oeis.a022.A022004;
 import irvine.oeis.a022.A022005;
 
 /**
- * A395654 allocated for Robert Israel.
+ * A395654 Numbers divisible by 6 that are not the sum of a member of A022004 and a member of A022005.
  * @author Sean A. Irvine
  */
 public class A395654 extends Sequence1 {

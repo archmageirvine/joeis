@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A396409 allocated for Natalia L. Skirrow.
+ * A396409 Number of iterations of x -&gt; x XOR 2^A000120(x) from x = n to reach a number of the form 2^m-1.
  * @author Sean A. Irvine
  */
 public class A396409 extends Sequence0 {

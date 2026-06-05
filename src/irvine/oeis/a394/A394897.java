@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394897 allocated for Zhining Yang.
+ * A394897 a(n) is the smallest number k such that k^n is the sum of 3n distinct positive n-th powers.
  * @author Sean A. Irvine
  */
 public class A394897 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396513 allocated for Banri Ogawa.
+ * A396513 a(n) is the minimum integer k such that rad(k)=rad(k+2n), where rad(x) is the squarefree kernel of x (A007947).
  * @author Sean A. Irvine
  */
 public class A396513 extends Sequence1 {

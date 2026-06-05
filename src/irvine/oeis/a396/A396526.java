@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A396526 allocated for Mohamed Bouhamida.
+ * A396526 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2 + (x + 71^2)^2 = y^2.
  * @author Sean A. Irvine
  */
 public class A396526 extends Sequence1 {

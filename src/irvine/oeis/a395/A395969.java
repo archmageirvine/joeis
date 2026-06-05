@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395969 allocated for Paolo P. Lava.
+ * A395969 Numbers k such that 3*(k+1) divides the decimal concatenation [k, k+1, k+2].
  * @author Sean A. Irvine
  */
 public class A395969 extends Sequence1 {

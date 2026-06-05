@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395116 allocated for Joesph Daniel Burke III.
+ * A395116 Odd part of the field norm of a regularized mock theta limit at a primitive 2n-th root of unity.
  * @author Sean A. Irvine
  */
 public class A395116 extends Sequence1 {

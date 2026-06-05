@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000081;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A396568 allocated for Chen Wei-Shi.
+ * A396568 Number of bracelets (turnover necklaces) of length 4 using exactly 2 colors, where the colors are chosen from a palette of size N = A000081(n) (the number of unlabeled rooted trees with n nodes), and each color corresponds to a distinct tree shape.
  * @author Sean A. Irvine
  */
 public class A396568 extends SimpleTransformSequence {

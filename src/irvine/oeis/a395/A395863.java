@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395863 allocated for Gordon Hamilton.
+ * A395863 a(n) = fewest number of integers 1..n in a sequence, S, that gets to the maximal possible value as recorded by A395717.
  * @author Sean A. Irvine
  */
 public class A395863 extends Sequence1 {

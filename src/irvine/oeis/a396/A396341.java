@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A396341 allocated for Artur Jasinski.
+ * A396341 Decimal expansion of the x(0)*Product_{k&gt;=0} x(k)*(1-x(k)) where x(k) = x(k-1)*(1-x(k-1))/5 with x(0)=1/2.
  * @author Sean A. Irvine
  */
 public class A396341 extends DecimalExpansionSequence {

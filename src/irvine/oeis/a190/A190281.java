@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A190281 Decimal expansion of (1+sqrt(1+r))/r, where r=sqrt(2).
+ * A190281 Decimal expansion of (1+sqrt(1+r))/r, where r = sqrt(2).
  * @author Georg Fischer
  */
 public class A190281 extends DecimalExpansionSequence {

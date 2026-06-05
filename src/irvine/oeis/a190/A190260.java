@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A190260 Decimal expansion of (1 + sqrt(1 + 2*x))/2, where x=sqrt(2).
+ * A190260 Decimal expansion of (1 + sqrt(1 + 2*x))/2, where x = sqrt(2).
  * @author Georg Fischer
  */
 public class A190260 extends DecimalExpansionSequence {

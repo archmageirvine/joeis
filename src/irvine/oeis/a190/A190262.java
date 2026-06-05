@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A190262 Decimal expansion of (3 + sqrt(9 + 12x))/6, where x=sqrt(3).
+ * A190262 Decimal expansion of (3 + sqrt(9 + 12x))/6, where x = sqrt(3).
  * @author Georg Fischer
  */
 public class A190262 extends DecimalExpansionSequence {

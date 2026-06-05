@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a001.A001358;
 
 /**
- * A084997 Numbers which can be written as the sum as well as the product of 2 primes, not necessarily the same.
+ * A084997 Erroneous version of A157931.
  * @author Sean A. Irvine
  */
 public class A084997 extends FilterSequence {

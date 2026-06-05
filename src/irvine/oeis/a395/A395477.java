@@ -10,7 +10,7 @@ import irvine.util.array.LongDynamicBooleanArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A395477 allocated for Hoang Nguyen.
+ * A395477 a(n) is the smallest semiprime that can be partitioned in exactly n unique ways into two coprime semiprimes.
  * @author Sean A. Irvine
  */
 public class A395477 extends Sequence0 {

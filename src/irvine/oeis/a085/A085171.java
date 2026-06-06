@@ -11,7 +11,7 @@ import irvine.oeis.a014.A014486;
  */
 public class A085171 extends A014486 {
 
-  private static SExpression appToXrt(final SExpression a, final SExpression b) {
+  static SExpression appToXrt(final SExpression a, final SExpression b) {
     if (a.isEmpty()) {
       return b;
     }

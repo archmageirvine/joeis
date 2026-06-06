@@ -2,6 +2,7 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
+import irvine.util.array.LongDynamicByteArray;
 
 /**
  * A007001 Trajectory of 1 under the morphism 1 -&gt; 12, 2 -&gt; 123, 3 -&gt; 1234, etc.
@@ -9,20 +10,26 @@ import irvine.oeis.Sequence1;
  */
 public class A007001 extends Sequence1 {
 
-  private static final String[] REPLACEMENTS = {null, "12", "123", "1234", "12345", "123456", "1234567", "12345678", "123456789", "123456789A"};
-  private final StringBuilder mSeq = new StringBuilder("12");
-  private int mN = -1;
+  private long mN = -1;
+  private long mM = 1;
+  protected final LongDynamicByteArray mSeq = new LongDynamicByteArray();
+  {
+    mSeq.set(0, (byte) 1);
+    mSeq.set(1, (byte) 2);
+  }
 
   @Override
   public Z next() {
-    final int r = mSeq.charAt(++mN) - '0';
-    if (r >= REPLACEMENTS.length) {
-      throw new UnsupportedOperationException();
+    if (++mN >= mSeq.length()) {
+      final int t = mSeq.get(mM++);
+      if (t >= 126) {
+        throw new UnsupportedOperationException();
+      }
+      for (int k = 1; k <= t + 1; ++k) {
+        mSeq.set(mSeq.length(), (byte) k);
+      }
     }
-    if (mN > 0) {
-      mSeq.append(REPLACEMENTS[r]);
-    }
-    return Z.valueOf(r);
+    return Z.valueOf(mSeq.get(mN));
   }
 
 }

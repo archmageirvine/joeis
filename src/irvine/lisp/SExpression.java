@@ -375,4 +375,29 @@ public final class SExpression extends ArrayList<SExpression> {
     }
     return s;
   }
+
+  /**
+   * Construct an <code>SExpression</code>.
+   * @param car first term
+   * @param cdr remaining terms
+   * @return expression
+   */
+  public static SExpression cons(final SExpression car, final SExpression cdr) {
+    final SExpression res = new SExpression();
+    res.add(car);
+    res.addAll(cdr);
+    return res;
+  }
+
+  /**
+   * Concatenated two expressions
+   * @param a first expression
+   * @param b second expression
+   * @return concatenation
+   */
+  public static SExpression append(final SExpression a, final SExpression b) {
+    final SExpression res = a.copy();
+    res.addAll(b);
+    return res;
+  }
 }

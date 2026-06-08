@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a002.A002034;
 
 /**
- * A215454 a(n) = least positive k such that n^2 divides k!
+ * A215454 a(n) = least positive k such that n^2 divides k!.
  * @author Georg Fischer
  */
 public class A215454 extends LambdaSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A133468 A080814 complemented, then interpreted as binary and then re-expressed in decimal form (e.g., &quot;1221&quot; = &quot;0110&quot;). Alternately, view as A080814 with &quot;1&quot; mapped to &quot;1&quot; and &quot;2&quot; mapped to &quot;0&quot;.
+ * A133468 A080814 complemented, then interpreted as binary and then re-expressed in decimal form (e.g., "1221" = "0110"). Alternately, view as A080814 with "1" mapped to "1" and "2" mapped to "0".
  * @author Georg Fischer
  */
 public class A133468 extends LambdaSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a006.A006752;
 import irvine.oeis.cons.ContinuedFractionNumeratorSequence;
 
 /**
- * A153069 Numerators of the convergents of the continued fraction for Catalan&apos;s constant L(2, chi4), where L(s, chi4) is the Dirichlet L-function for the non-principal character modulo 4.
+ * A153069 Numerators of the convergents of the continued fraction for Catalan's constant L(2, chi4), where L(s, chi4) is the Dirichlet L-function for the non-principal character modulo 4.
  * @author Georg Fischer
  */
 public class A153069 extends PrependSequence {

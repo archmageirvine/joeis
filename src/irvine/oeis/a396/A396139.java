@@ -16,7 +16,7 @@ public class A396139 extends Sequence1 {
   @Override
   public Z next() {
     if (++mN <= 1) {
-      return Z.ZERO;
+      return Z.ONE;
     }
     if (Predicates.PRIME.is(mN)) {
       return Z.THREE.pow(mN - 1);

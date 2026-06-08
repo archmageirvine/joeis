@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a216.A216607;
 
 /**
- * A167268 Janet&apos;s sequence: Number of elements for each successively filled electronic subshell of an atom.
+ * A167268 Janet's sequence: Number of elements for each successively filled electronic subshell of an atom.
  * @author Georg Fischer
  */
 public class A167268 extends LambdaSequence {

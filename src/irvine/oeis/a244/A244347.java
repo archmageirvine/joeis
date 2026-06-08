@@ -6,7 +6,7 @@ import irvine.oeis.a076.A076414;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A244347 Decimal expansion of &apos;mu&apos;, a Sobolev isoperimetric constant related to the &quot;rod inequality&quot;, arising from the elasticity study of a rod that is clamped at both ends.
+ * A244347 Decimal expansion of 'mu', a Sobolev isoperimetric constant related to the "rod inequality", arising from the elasticity study of a rod that is clamped at both ends.
  * Formula:
  * @author Georg Fischer
  */

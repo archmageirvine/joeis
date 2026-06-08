@@ -7,7 +7,7 @@ import irvine.oeis.a160.A160164;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A255166 Difference after n generations between the total number of single toothpicks in the I-toothpick structure of A160164 and the total number of ON cells in the &quot;Ulam-Warburton&quot; two-dimensional cellular automaton of A147562.
+ * A255166 Difference after n generations between the total number of single toothpicks in the I-toothpick structure of A160164 and the total number of ON cells in the "Ulam-Warburton" two-dimensional cellular automaton of A147562.
  * @author Georg Fischer
  */
 public class A255166 extends SingleTransformSequence {

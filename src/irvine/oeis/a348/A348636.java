@@ -5,7 +5,7 @@ import irvine.oeis.a265.A265316;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A348636 Greedy Cantor&apos;s Dust Partition.
+ * A348636 Greedy Cantor's Dust Partition.
  * @author Georg Fischer
  */
 public class A348636 extends SingleTransformSequence {

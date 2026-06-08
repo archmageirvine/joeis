@@ -1,0 +1,34 @@
+package irvine.oeis.a396;
+
+import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
+
+/**
+ * A396541 allocated for Juri-Stepan Gerasimov.
+ * @author Sean A. Irvine
+ */
+public class A396541 extends Sequence1 {
+
+  private static final Z Z11 = Z.valueOf(11);
+  private long mN = 0;
+
+  @Override
+  public Z next() {
+    if (++mN <= 1) {
+      return Z.ONE;
+    }
+    if (Predicates.PRIME.is(mN)) {
+      return Z11.pow(mN - 1);
+    }
+    Z k = Z.SEVEN.pow(mN - 1);
+    while (true) {
+      k = k.add(1);
+      if (Functions.SIGMA0.l(k) == mN) {
+        return k;
+      }
+    }
+  }
+}
+

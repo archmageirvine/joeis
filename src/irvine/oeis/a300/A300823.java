@@ -6,7 +6,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a244.A244042;
 
 /**
- * A300823 Difference between A244042 and its M√∂bius transform.
+ * A300823 Difference between A244042 and its M\u00f6bius transform.
  * @author Georg Fischer
  */
 public class A300823 extends LambdaSequence {

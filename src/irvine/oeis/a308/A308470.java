@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A308470 a(n) = (gcd(phi(n), 4*n^2 - 1) - 1)/2, where phi is A000010, Euler&apos;s totient function.
+ * A308470 a(n) = (gcd(phi(n), 4*n^2 - 1) - 1)/2, where phi is A000010, Euler's totient function.
  * @author Georg Fischer
  */
 public class A308470 extends LambdaSequence {

@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A244263 Decimal expansion of beta = 1.07869..., the best constant in Friedrichs&apos; inequality in one dimension.
+ * A244263 Decimal expansion of beta = 1.07869..., the best constant in Friedrichs' inequality in one dimension.
  * Formula: Beta = sqrt(1 + 1/theta^2) Cf.A244262.
  * @author Georg Fischer
  */

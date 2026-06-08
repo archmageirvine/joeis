@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000629;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A162312 Triangular array, inverse of 2*P - I, where P is Pascal&apos;s triangle and I is the identity matrix.
+ * A162312 Triangular array, inverse of 2*P - I, where P is Pascal's triangle and I is the identity matrix.
  * @author Georg Fischer
  */
 public class A162312 extends LambdaTriangle {

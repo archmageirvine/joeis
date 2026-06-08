@@ -6,7 +6,7 @@ import irvine.oeis.a389.A389591;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A379379 Sum of odd divisors of n except the &quot;e&quot; odd divisors described in A005279.
+ * A379379 Sum of odd divisors of n except the "e" odd divisors described in A005279.
  * @author Georg Fischer
  */
 public class A379379 extends SingleTransformSequence {

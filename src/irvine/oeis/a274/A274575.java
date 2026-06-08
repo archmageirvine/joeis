@@ -7,7 +7,7 @@ import irvine.oeis.a008.A008687;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A274575 For m=1,2,3,... write all the 2^m binary vectors of length m in increasing order, and replace each vector with (number of 1&apos;s) - (number of 0&apos;s). Start with an initial 0 for the empty vector.
+ * A274575 For m=1,2,3,... write all the 2^m binary vectors of length m in increasing order, and replace each vector with (number of 1's) - (number of 0's). Start with an initial 0 for the empty vector.
  * @author Georg Fischer
  */
 public class A274575 extends LambdaSequence {

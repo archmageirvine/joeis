@@ -468,4 +468,31 @@ public final class PolynomialUtils {
     }
     return res;
   }
+
+  /**
+   * Return the Lagrange interpolating polynomial through the points <code>(x[i], y[i])</code>.
+   * @param x distinct x-coordinates
+   * @param y corresponding y-coordinates
+   * @return interpolating polynomial over Q
+   */
+  public static Polynomial<Q> lagrangeInterpolate(final long[] x, final long[] y) {
+    if (x.length != y.length) {
+      throw new IllegalArgumentException("Array lengths differ");
+    }
+    final PolynomialRingField<Q> ring = new PolynomialRingField<>(Rationals.SINGLETON);
+    Polynomial<Q> result = ring.zero();
+    for (int k = 0; k < x.length; ++k) {
+      Polynomial<Q> basis = ring.one();
+      Q denom = Q.ONE;
+      for (int j = 0; j < x.length; ++j) {
+        if (j != k) {
+          // (t - x[j])
+          basis = ring.multiply(basis, Polynomial.create(new Q(-x[j]), Q.ONE));
+          denom = denom.multiply(x[k] - x[j]);
+        }
+      }
+      result = ring.add(result, ring.multiply(basis, new Q(y[k]).divide(denom)));
+    }
+    return result;
+  }
 }

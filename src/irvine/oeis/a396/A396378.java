@@ -14,7 +14,7 @@ public class A396378 extends Sequence1 {
 
   private long mN = 0;
 
-  private long is(final long k, final long n) {
+  static long is(final long k, final long n) {
     final Z prod = Integers.SINGLETON.product(n, n + k, Z::valueOf);
     for (long j = n; j <= n + k; ++j) {
       if (prod.mod(j * j) == 0) {

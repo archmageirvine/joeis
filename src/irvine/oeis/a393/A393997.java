@@ -17,7 +17,7 @@ public class A393997 extends Sequence0 {
   @Override
   public Z next() {
     Q t = new Q(++mN, 2 * mN + 1);
-    HashSet<Q> seen = new HashSet<>();
+    final HashSet<Q> seen = new HashSet<>();
     while (seen.add(t)) {
       t = t.num().isEven() ? t.divide(2) : t.multiply(3).add(1);
     }

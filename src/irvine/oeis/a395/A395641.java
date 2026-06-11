@@ -16,19 +16,12 @@ import irvine.oeis.Sequence0;
  */
 public class A395641 extends Sequence0 {
 
-  // todo does not match
-
   private Polynomial<Q> mP = Polynomial.create(Q.ZERO);
-  private int mN = 0;
+  private int mN = -1;
   private int mM = 0;
 
   @Override
   public Z next() {
-//    System.out.println(PolynomialUtils.lagrangeInterpolate(new long[] {0}, new long[] {-1}));
-//    System.out.println(PolynomialUtils.lagrangeInterpolate(new long[] {0, 1}, new long[] {-1, 1}));
-//    System.out.println(PolynomialUtils.lagrangeInterpolate(new long[] {0, 1, 2}, new long[] {-1, 1, 1}));
-//    System.out.println(PolynomialUtils.lagrangeInterpolate(new long[] {0, 1, 2, 3}, new long[] {-1, 1, 1, 1}));
-//    System.out.println(PolynomialUtils.lagrangeInterpolate(new long[] {0, 1, 2, 3, 4}, new long[] {-1, 1, 1, 1, 1}));
     if (++mM > mP.degree()) {
       final long[] x = LongUtils.identity(new long[++mN + 1]);
       final long[] y = new long[mN + 1];

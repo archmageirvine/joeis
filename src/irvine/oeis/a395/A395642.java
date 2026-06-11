@@ -17,7 +17,7 @@ import irvine.oeis.Sequence0;
 public class A395642 extends Sequence0 {
 
   private Polynomial<Q> mP = Polynomial.create(Q.ZERO);
-  private int mN = 0;
+  private int mN = -1;
   private int mM = 0;
 
   @Override
@@ -25,6 +25,7 @@ public class A395642 extends Sequence0 {
     if (++mM > mP.degree()) {
       final long[] x = LongUtils.identity(new long[++mN + 1]);
       final long[] y = new long[mN + 1];
+      y[0] = -1;
       for (int k = 1; k < y.length; ++k) {
         y[k] = (k & 1) == 1 ? 1 : -1;
       }

@@ -1,13 +1,13 @@
 package irvine.oeis.a084;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A084904 Number of places to insert a division operator in the decimal string of n such that an integer results.
  * @author Sean A. Irvine
  */
-public class A084904 extends Sequence1 {
+public class A084904 extends Sequence0 {
 
   private long mN = -1;
 

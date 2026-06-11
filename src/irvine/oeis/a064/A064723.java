@@ -3,14 +3,14 @@ package irvine.oeis.a064;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000032;
 
 /**
  * A064723 (L(p)-1)/p where L() are the Lucas numbers (A000032) and p runs through the primes.
  * @author Sean A. Irvine
  */
-public class A064723 extends Sequence0 {
+public class A064723 extends Sequence1 {
 
   // I think the offset of this sequence should really be 1, but painful to change
 

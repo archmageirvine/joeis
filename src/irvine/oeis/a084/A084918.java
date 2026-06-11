@@ -3,13 +3,13 @@ package irvine.oeis.a084;
 import irvine.factor.prime.Fast;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A084918 Numbers n &gt;= 1000, such that if prime P divides n, then so does each smaller prime.
  * @author Sean A. Irvine
  */
-public class A084918 extends Sequence1 {
+public class A084918 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = 1022;

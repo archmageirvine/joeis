@@ -4,14 +4,14 @@ import irvine.math.MemoryFunctionInt3;
 import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a350.A350174;
 
 /**
  * A395313 Triangle read by rows: T(n, k) is the number of partitions of n into distinct parts with exactly k prime parts, where 0 &lt;= k &lt;= A350174(n).
  * @author Sean A. Irvine
  */
-public class A395313 extends Sequence1 {
+public class A395313 extends Sequence0 {
 
   // After Felix Huber
 

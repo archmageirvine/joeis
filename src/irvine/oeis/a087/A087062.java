@@ -2,13 +2,13 @@ package irvine.oeis.a087;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A087062 Array T(n,k) = lunar product n*k (n &gt;= 1, k &gt;= 1) read by antidiagonals.
  * @author Sean A. Irvine
  */
-public class A087062 extends Sequence0 {
+public class A087062 extends Sequence1 {
 
   private long mN = 0;
   private long mM = -1;

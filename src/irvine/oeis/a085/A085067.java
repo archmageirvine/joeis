@@ -2,13 +2,13 @@ package irvine.oeis.a085;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A085067 a(1) = 6, a(n) = smallest number of the form k*a(n-1) + 1 with the same number of divisors, i.e., 4.
  * @author Sean A. Irvine
  */
-public class A085067 extends Sequence0 {
+public class A085067 extends Sequence1 {
 
   private Z mA = null;
 

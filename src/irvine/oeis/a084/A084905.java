@@ -1,13 +1,13 @@
 package irvine.oeis.a084;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A084905 Smallest positive integer resulting after inserting division operator in the decimal string of n.
  * @author Sean A. Irvine
  */
-public class A084905 extends Sequence1 {
+public class A084905 extends Sequence0 {
 
   private long mN = -1;
 

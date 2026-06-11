@@ -12,6 +12,6 @@ public class A084752 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A084752() {
-    super(1, new A064623(), k -> k.divide(Functions.SOPF.z(k)));
+    super(0, new A064623(), k -> k.divide(Functions.SOPF.z(k)));
   }
 }

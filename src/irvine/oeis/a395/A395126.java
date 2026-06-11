@@ -3,13 +3,13 @@ package irvine.oeis.a395;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A395126 a(n) = fourth coordinate d of the n-th P-position (a,b,c,d) of 4 X n Chomp in lexicographic order, where a&gt;=b&gt;=c&gt;=d&gt;=0 gives row lengths.
  * @author Sean A. Irvine
  */
-public class A395126 extends Sequence0 {
+public class A395126 extends Sequence1 {
 
   private static final int BITS_PER_VALUE = Long.SIZE / 4;
   protected final TreeSet<Long> mPPositions = new TreeSet<>();

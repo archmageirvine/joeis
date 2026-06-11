@@ -16,7 +16,7 @@ public class A084837 extends PrependSequence {
 
   /** Construct the sequence. */
   public A084837() {
-    super(new Sequence1() {
+    super(1, new Sequence1() {
       private final TreeSet<Z> mA = new TreeSet<>();
       private int mLen = 1;
 

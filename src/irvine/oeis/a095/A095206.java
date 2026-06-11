@@ -14,7 +14,7 @@ public class A095206 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A095206() {
-    super(20);
+    super(1);
   }
 
   @Override

@@ -1,13 +1,13 @@
 package irvine.oeis.a085;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A085065 a(1) = 4, a(n) = smallest number of the form k*a(n-1) +1 with the same prime signature p^2, where p is a prime.
  * @author Sean A. Irvine
  */
-public class A085065 extends Sequence0 {
+public class A085065 extends Sequence1 {
 
   private Z mA = null;
 

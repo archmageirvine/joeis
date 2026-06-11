@@ -6,13 +6,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A395191 Triangular array T(n, k) read by rows: Row n &gt; 0 gives the coefficient of x^(n-k) in the expansion of f_n(x) = Sum_{k=0..n} T(n, k)*x^(n-k), where T(n, n) and T(0, n) = 1 for any n. The n-th falling diagonal has the ordinary generating function: 1/f_n(x).
  * @author Sean A. Irvine
  */
-public class A395191 extends Sequence1 {
+public class A395191 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = 0;

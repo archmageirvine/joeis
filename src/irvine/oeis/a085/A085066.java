@@ -2,13 +2,13 @@ package irvine.oeis.a085;
 
 import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A085066 a(1) = 6, a(n) = smallest number of the form k*a(n-1) +1 with the same prime signature p*q (6 = 2*3), where p and q are primes.
  * @author Sean A. Irvine
  */
-public class A085066 extends Sequence0 {
+public class A085066 extends Sequence1 {
 
   private Z mA = null;
 

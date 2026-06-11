@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence3;
+import irvine.oeis.Sequence1;
 
 /**
  * A083439 a(1) = 3; then a(n+1) = smallest prime not already in the sequence such that the concatenations a(n)a(n+1) and a(n+1)a(n) are both primes.
  * @author Sean A. Irvine
  */
-public class A083439 extends Sequence3 {
+public class A083439 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private final HashSet<Long> mUsed = new HashSet<>();

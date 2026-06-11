@@ -5,7 +5,7 @@ import java.util.HashSet;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
 
@@ -13,7 +13,7 @@ import irvine.util.bumper.BumperFactory;
  * A395112 Number of distinct Smith normal forms of 3 X 3 matrices with entries from {0, 1, ..., n}.
  * @author Sean A. Irvine
  */
-public class A395112 extends Sequence1 {
+public class A395112 extends Sequence0 {
 
   // Precomputed permutations of {0,1,2}
   private static final int[][] PERMS = {

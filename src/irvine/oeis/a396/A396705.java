@@ -14,7 +14,7 @@ public class A396705 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A396705() {
-    super(1, new CR() {
+    super(0, new CR() {
       @Override
       protected Z approximate(final int precision) {
         Z sum = Z.ZERO;

@@ -11,6 +11,6 @@ public class A085222 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A085222() {
-    super(1, new A085220(), Functions.FACTORIAL_BASE::z);
+    super(0, new A085220(), Functions.FACTORIAL_BASE::z);
   }
 }

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A277937 Number of runs of 1&apos;s of length 1 in the binary expansion of n.
+ * A277937 Number of runs of 1's of length 1 in the binary expansion of n.
  * @author Georg Fischer
  */
 public class A277937 extends LambdaSequence {

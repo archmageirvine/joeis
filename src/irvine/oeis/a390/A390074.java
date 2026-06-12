@@ -6,7 +6,7 @@ import irvine.oeis.a175.A175572;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A390074 Decimal expansion of psi&apos;&apos;&apos;(1/4).
+ * A390074 Decimal expansion of psi'''(1/4).
  * Formula:
  * @author Georg Fischer
  */

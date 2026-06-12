@@ -6,7 +6,7 @@ import irvine.oeis.a091.A091518;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A143298 Decimal expansion of Gieseking&apos;s constant.
+ * A143298 Decimal expansion of Gieseking's constant.
  * Formula:
  * @author Georg Fischer
  */

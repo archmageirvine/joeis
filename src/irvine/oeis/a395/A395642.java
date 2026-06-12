@@ -1,7 +1,5 @@
 package irvine.oeis.a395;
 
-import java.util.Arrays;
-
 import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.polynomial.Polynomial;
@@ -31,9 +29,6 @@ public class A395642 extends Sequence0 {
       }
       mP = PolynomialUtils.lagrangeInterpolate(x, y);
       mM = 0;
-      if (mN == 4) {
-        System.out.println(Arrays.toString(x) + " " + Arrays.toString(y) + " -> " + mP);
-      }
     }
     return mP.coeff(mM).multiply(Functions.FACTORIAL.z(mN)).toZ().negate();
   }

@@ -4,7 +4,7 @@ package irvine.oeis.a396;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A396146 Expansion of 1/sqrt((1-x^2)*(1-2*x)).
+ * A396146 Expansion of e.g.f. 1/sqrt((1-x^2)*(1-2*x)).
  * @author Georg Fischer
  */
 public class A396146 extends HolonomicRecurrence {

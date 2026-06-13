@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A121568 Fibonacci[ (p - 1)/2 ], where p = Prime[n].
+ * A121568 a(n) = Fibonacci((prime(n)-1)/2), n&gt;1.
  * @author Georg Fischer
  */
 public class A121568 extends A000040 {

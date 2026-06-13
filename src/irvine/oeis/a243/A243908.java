@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A243908 Johannes Kepler's polyhedron inscribing constant.
+ * A243908 Decimal expansion of Johannes Kepler's polyhedron inscribing constant.
  * Decimal expansion of (5 + 2*sqrt(5))/135.
  * @author Georg Fischer
  */

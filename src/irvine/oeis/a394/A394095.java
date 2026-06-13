@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394095 Number of convex sets satisfying the condition.
+ * A394095 Number of 2-ary convexities on a set of n elements.
  * @author Sean A. Irvine
  */
 public class A394095 extends Sequence0 {

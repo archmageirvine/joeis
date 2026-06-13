@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007684;
 
 /**
- * A107705 a(n) is the least number of prime factors in any non-deficient number that has the n-th prime as its least prime factor.
+ * A107705 a(n) is the least number of prime factors in any nondeficient number that has the n-th prime as its least prime factor.
  * @author Georg Fischer
  */
 public class A107705 extends A007684 {

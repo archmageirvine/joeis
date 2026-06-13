@@ -4,7 +4,7 @@ package irvine.oeis.a209;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A209041 Number of n X 2 0..3 arrays with no element equal to the average of  its immediate neighbors vertically above and horizontally left.
+ * A209041 Number of n X 2 0..3 arrays with no element equal to the average of its immediate neighbors vertically above and horizontally left.
  * @author Georg Fischer
  */
 public class A209041 extends GeneratingFunctionSequence {

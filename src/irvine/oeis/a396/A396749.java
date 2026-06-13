@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A085249.
+ * A396749 Number of 2-ball multiplex prime juggling patterns of period n.
  * @author Sean A. Irvine
  */
 public class A396749 extends Sequence1 {

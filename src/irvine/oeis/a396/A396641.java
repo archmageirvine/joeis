@@ -4,7 +4,7 @@ import irvine.oeis.a253.A253880;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A396641 allocated for Steven Lu.
+ * A396641 Centered hexagonal numbers h such that 7*h is also a centered hexagonal number.
  * @author Sean A. Irvine
  */
 public class A396641 extends SimpleTransformSequence {

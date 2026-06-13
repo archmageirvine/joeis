@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394374 allocated for Rayhan Ahmed.
+ * A394374 a(n) = Sum_{i=1..n} (2*i-1)^(2*i).
  * @author Sean A. Irvine
  */
 public class A394374 extends Sequence1 {

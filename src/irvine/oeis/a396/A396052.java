@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396052 allocated for Paul Steendijk.
+ * A396052 Composite numbers in the odds-only Ulam spiral such that all its four orthogonal neighbors are prime: isolated composites.
  * @author Sean A. Irvine
  */
 public class A396052 extends Sequence1 {

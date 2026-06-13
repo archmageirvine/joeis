@@ -5,7 +5,7 @@ import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 
 /**
- * A395624 allocated for M. F. Hasler.
+ * A395624 a(n) = round(1/(b(n) - round(b(n)))), where b(n) = sqrt(k) + sqrt(m) with k = A395621(n) and positive nonsquare m &lt; k minimizing the distance of b(n) from the nearest integer.
  * @author Sean A. Irvine
  */
 public class A395624 extends A395621 {

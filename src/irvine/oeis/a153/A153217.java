@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A153217 a(n)=n^(n+3)-(n+3)^n.
+ * A153217 a(n) = n^(n+3)-(n+3)^n.
  * @author Georg Fischer
  */
 public class A153217 extends LambdaSequence {

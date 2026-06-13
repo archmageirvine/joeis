@@ -4,7 +4,7 @@ package irvine.oeis.a396;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A396100 allocated for Paul D. Hanna.
+ * A396100 G.f. satisfies A(x) = (1/x)*A(A(x^2)) + A(A(A(x^2))).
  * @author Georg Fischer
  */
 public class A396100 extends PolynomialFieldSequence {

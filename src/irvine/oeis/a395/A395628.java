@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A395628 allocated for M. F. Hasler.
+ * A395628 a(n) = f(n+1) * n! where f(n) = n/f(n-1), f(1) = 1.
  * @author Sean A. Irvine
  */
 public class A395628 extends Sequence0 {

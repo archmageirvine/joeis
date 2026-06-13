@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A394099 allocated for Eric Fodge.
+ * A394099 Largest composite number m with n &lt;= m &lt;= n^2 such that the largest divisor of n*m not exceeding sqrt(n*m) is equal to n.
  * @author Sean A. Irvine
  */
 public class A394099 extends Sequence2 {

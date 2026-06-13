@@ -4,7 +4,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
- * A396380 allocated for Bernard Schott.
+ * A396380 Number of integers m in {n, n+1, n+2, ..., n+A396377(n)} so that m divides the product of the other integers.
  * @author Sean A. Irvine
  */
 public class A396380 extends A396377 {

@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A396599 allocated for Alexander Violette.
+ * A396599 Odd numbers k where sigma_2(k)/k is an integer.
  * @author Sean A. Irvine
  */
 public class A396599 extends FilterNumberSequence {

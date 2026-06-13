@@ -4,7 +4,7 @@ package irvine.oeis.a113;
 import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 /**
- * A113786 Decimal expansion of the solution to the equation sqrt(n)+sqrt(n+1)+sqrt(n+2) = sqrt(9n+8).
+ * A113786 Decimal expansion of the solution to the equation sqrt(x) + sqrt(x+1) + sqrt(x+2) = sqrt(9*x+8).
  * Formula: (1/24)*(2*(3*(90+sqrt(1509)))^(1/3)+2*(3*(90-sqrt(1509)))^(1/3)-9)
  * @author Georg Fischer
  */

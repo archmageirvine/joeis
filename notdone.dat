@@ -389,7 +389,6 @@ A005865 The coding-theoretic function A(n,6)
 A005866 The coding-theoretic function A(n,8)
 A005873 Theta series of hexagonal close-packing with respect to tetrahedral hole, eqn error?
 A005924 From solution to a difference equation, simple conjecture, could not find seq in paper
-A005933 Theta series of laminated lattice LAMBDA_9, couldn't see formula (very slow with Gram matrix)
 A005944 Theta series of 18-dimensional lattice associated with Sp_4(4), with det 1024 and minimal norm 4, insufficient details
 A005950 Theta series of 18-dimensional lattice associated with Sp_4(4), with det 256 and minimal norm 3
 A005951 Theta series of P_{9a} packing
@@ -543,7 +542,6 @@ A006870 Number of quasi-orders with n elements (not in paper?)
 A006890 Decimal expansion of Feigenbaum bifurcation velocity
 A006891 Decimal expansion of Feigenbaum reduction parameter
 A006901 Number of caskets of order n (French paper, no obvious formula)
-A006909 Theta series of laminated lattice LAMBDA_10
 A006910 Theta series of laminated lattice LAMBDA_11^{min}
 A006911 Theta series of laminated lattice LAMBDA_11^{max}
 A006912 Theta series of laminated lattice LAMBDA_12^{min}

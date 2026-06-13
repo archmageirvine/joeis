@@ -4,7 +4,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A396579 allocated for Stefano Spezia.
+ * A396579 Nonnegative integers that contain a square as a suffix.
  * @author Sean A. Irvine
  */
 public class A396579 extends FilterNumberSequence {

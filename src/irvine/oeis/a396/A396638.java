@@ -4,7 +4,7 @@ package irvine.oeis.a396;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A396638 allocated for Ludovic Schwob.
+ * A396638 Number of geodesics of length n in the braid group B_3.
  * @author Georg Fischer
  */
 public class A396638 extends HolonomicRecurrence {

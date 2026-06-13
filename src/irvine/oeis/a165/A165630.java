@@ -4,7 +4,7 @@ package irvine.oeis.a165;
 import irvine.oeis.a164.A164649;
 
 /**
- * A165630 Numbers n such that sigma(n)/phi(n) = 25/9, where sigma = A000203, phi = A000010.
+ * A165630 Numbers k such that sigma(k)/phi(k) = 25/9, where sigma = A000203 and phi = A000010.
  * @author Georg Fischer
  */
 public class A165630 extends A164649 {

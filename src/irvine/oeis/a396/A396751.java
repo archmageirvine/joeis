@@ -3,7 +3,7 @@ package irvine.oeis.a396;
 import irvine.math.z.Z;
 
 /**
- * A085249.
+ * A396751 Number of 2-ball prime juggling patterns of period n containing the base state &lt;1, 1&gt;.
  * @author Sean A. Irvine
  */
 public class A396751 extends A396749 {

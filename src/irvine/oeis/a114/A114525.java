@@ -5,7 +5,7 @@ import irvine.oeis.a108.A108045;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A114525 Triangle of coefficients of the Lucas (w-)polynomials.
+ * A114525 Triangle of coefficients of the Lucas polynomials.
  * @author Georg Fischer
  */
 public class A114525 extends SimpleTransformSequence {

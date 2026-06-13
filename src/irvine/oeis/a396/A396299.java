@@ -5,7 +5,7 @@ import irvine.oeis.a005.A005606;
 import irvine.oeis.transform.RunLengthTransform;
 
 /**
- * A396299 allocated for N. J. A. Sloane.
+ * A396299 RUNS transform of A005606 (initial letter of English name for n).
  * @author Georg Fischer
  */
 public class A396299 extends RunLengthTransform {

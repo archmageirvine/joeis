@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a080.A080257;
 
 /**
- * A396031.
+ * A396828 Numbers in A080257 with record low abundancy index.
  * @author Sean A. Irvine
  */
 public class A396828 extends Sequence1 {

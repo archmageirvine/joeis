@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A396716 allocated for Eric Fodge.
+ * A396716 Number of composite numbers m, Omega(m) &gt;= 3, with k &lt;= m &lt;= k^2 such that the largest divisor of k*m that is &lt;= sqrt(k*m) equals k.
  * @author Sean A. Irvine
  */
 public class A396716 extends Sequence2 {

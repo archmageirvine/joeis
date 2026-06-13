@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A011923 [ n(n-1)(n-2)(n-3)/13 ].
+ * A011923 a(n) = floor(n*(n-1)*(n-2)*(n-3)/13).
  * @author Sean A. Irvine
  */
 public class A011923 extends Sequence0 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A396552 allocated for Thomas Scheuerle.
+ * A396552 Decimal expansion of lim_{n-&gt;oo} L_n(0), where L_n is the Lebesgue function associated with the interpolation nodes 1!, 2!, ..., n!.
  * @author Sean A. Irvine
  */
 public class A396552 extends DecimalExpansionSequence {

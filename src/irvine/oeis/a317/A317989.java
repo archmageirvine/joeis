@@ -7,7 +7,7 @@ import irvine.oeis.a003.A003658;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A317989 Number of genera of real quadratic field with discriminant A003658(n), n &gt;= 2.
+ * A317989 Number of genera of the real quadratic field with discriminant A003658(n), n &gt;= 2.
  * @author Georg Fischer
  */
 public class A317989 extends SimpleTransformSequence {

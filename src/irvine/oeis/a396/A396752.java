@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A085203.
+ * A396752 a(n) = n * floor(sqrt(n)).
  * @author Sean A. Irvine
  */
 public class A396752 extends Sequence0 {

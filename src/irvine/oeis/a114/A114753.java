@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A114753 First column of A114751.
+ * A114753 a(n) = n if odd, else 2n-1.
  * @author Sean A. Irvine
  */
 public class A114753 extends LinearRecurrence {

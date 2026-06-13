@@ -6,7 +6,7 @@ package irvine.oeis.a178;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A178390 a(n) = (n^2+1)^2+1.
+ * A178390 a(n) = (n^2 + 1)^2 + 1.
  * @author Georg Fischer
  */
 public class A178390 extends HolonomicRecurrence {

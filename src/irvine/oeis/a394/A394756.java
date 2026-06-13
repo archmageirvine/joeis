@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A085205.
+ * A394756 Decimal expansion of (6*sqrt(3) - Pi)/24.
  * @author Sean A. Irvine
  */
 public class A394756 extends DecimalExpansionSequence {

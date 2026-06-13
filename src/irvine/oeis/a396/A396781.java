@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A394095.
+ * A396781 a(n) is the largest integer of the form r^k (with 0 &lt; r &lt; n and k &gt; 0) whose base-n digital root is r, and whose number of digits in base-n is k.
  * @author Sean A. Irvine
  */
 public class A396781 extends Sequence2 {

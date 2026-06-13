@@ -8,7 +8,7 @@ import irvine.oeis.Sequence3;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A396670 allocated for Robert P. P. McKone.
+ * A396670 Binary colorings of the sunlet graph S_n up to rotation, with no monochromatic connected component of size 3 or more.
  * @author Sean A. Irvine
  */
 public class A396670 extends Sequence3 {

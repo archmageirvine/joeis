@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a023.A023200;
 
 /**
- * A152052 Number of cousin primes &lt; 10^n.
+ * A152052 Number of cousin primes &lt; 10^n, such that only the lower member of each prime cousin pair is counted.
  * @author Sean A. Irvine
  */
 public class A152052 extends A023200 {

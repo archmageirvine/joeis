@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A396715 allocated for Eric Fodge.
+ * A396715 Number of semiprimes m with k &lt;= m &lt;= k^2 such that the largest divisor of k*m that is &lt;= sqrt(k*m) equals k.
  * @author Sean A. Irvine
  */
 public class A396715 extends Sequence2 {

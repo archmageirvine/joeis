@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A396524 allocated for Paolo Xausa.
+ * A396524 Decimal expansion of the volume of the supersphere |x|^5 + |y|^5 + |z|^5 = 1.
  * @author Sean A. Irvine
  */
 public class A396524 extends DecimalExpansionSequence {

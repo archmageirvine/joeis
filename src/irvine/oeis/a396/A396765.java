@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396031.
+ * A396765 Number of distinct types of connected cyclic Alexander quandles of order 2n-1.
  * @author Sean A. Irvine
  */
 public class A396765 extends Sequence1 {

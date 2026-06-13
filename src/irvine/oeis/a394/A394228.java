@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A394228 allocated for Rhys Feltman.
+ * A394228 The exponent j of the first pair of powers of 2 (2^j, 2^k), j &lt; k, where 2^k is the smallest power whose last n digits are a non-identical anagram (besides n=1), no leading zeros, of the last n digits of 2^j.
  * @author Sean A. Irvine
  */
 public class A394228 extends Sequence1 {

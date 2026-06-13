@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A085249.
+ * A395186 a(n) is the number of pairwise incongruent triangles with distinct integer sides and positive integer area and longest side of length n.
  * @author Sean A. Irvine
  */
 public class A395186 extends Sequence1 {

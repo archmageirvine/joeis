@@ -7,7 +7,7 @@ import irvine.oeis.recur.HolonomicRecurrence;
 
 
 /**
- * A105452 Numerator of (7 n -1)/3.
+ * A105452 a(n) = numerator of (7*n - 1)/3.
  * @author Georg Fischer
  */
 public class A105452 extends HolonomicRecurrence {

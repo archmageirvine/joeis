@@ -4,7 +4,7 @@ package irvine.oeis.a107;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A107296 Three-symbol substitution with real Pisot characteristic polynomial: x^3-3*x^2-x-2.
+ * A107296 1-limiting word of the morphism 1-&gt;1311, 2-&gt;13, 3-&gt;2.
  * @author Georg Fischer
  */
 public class A107296 extends MorphismFixedPointSequence {

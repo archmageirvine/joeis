@@ -4,7 +4,7 @@ package irvine.oeis.a107;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A107292 3-symbol substitution with characteristic real root polynomial:m x^3-2*x^2-2*x+2.
+ * A107292 1-limiting word of the morphism 1-&gt;1331, 2-&gt;313, 3-&gt;2.
  * @author Georg Fischer
  */
 public class A107292 extends MorphismFixedPointSequence {

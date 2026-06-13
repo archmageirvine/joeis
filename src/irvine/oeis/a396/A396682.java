@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A396682 allocated for Ctibor O. Zizka.
+ * A396682 a(n) is twice the area of the convex hull of the cumulative prime-exponent coordinates of integers from 1 to n + 1.
  * @author Sean A. Irvine
  */
 public class A396682 extends Sequence0 {

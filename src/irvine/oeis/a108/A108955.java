@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A108955 Floor(Li(2n) - Li(n)).
+ * A108955 a(n) = floor(Li(2n) - Li(n)).
  * @author Georg Fischer
  */
 public class A108955 extends FloorSequence {

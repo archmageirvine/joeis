@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A211174 Johannes Kepler's polyhedron circumscribing constant.
+ * A211174 Decimal expansion of Johannes Kepler's polyhedron circumscribing constant.
  * Formula: 9*(15-6*sqrt(5))
  * @author Georg Fischer
  */

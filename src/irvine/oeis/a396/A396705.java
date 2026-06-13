@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A396705 allocated for Yunjae Shin.
+ * A396705 Decimal expansion of Sum_{k&gt;=1} ((2*k-1)!! / (2^(k+1) * (k+1)!)) * zeta(2*k+1).
  * @author Sean A. Irvine
  */
 public class A396705 extends DecimalExpansionSequence {

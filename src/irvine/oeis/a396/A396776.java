@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A395642.
+ * A396776 Square array read by upwards antidiagonals: T(p,q) is the number cells required to completely surround a single cell of the regular tiling with Schl\u00e4fli symbol {p,q}.
  * @author Sean A. Irvine
  */
 public class A396776 extends Sequence3 {

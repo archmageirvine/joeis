@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A000130 One-half the number of permutations of length n with exactly 1 rising or falling successions.
+ * A000130 One-half the number of permutations of length n with exactly 1 rising or falling succession.
  * @author Sean A. Irvine
  */
 public class A000130 extends AbstractSequence {

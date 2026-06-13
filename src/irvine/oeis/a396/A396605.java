@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A396605 allocated for Pierre Colmant.
+ * A396605 The smallest difference between n and the product of a nontrivial divisor of n with the totient of that divisor.
  * @author Sean A. Irvine
  */
 public class A396605 extends Sequence2 {

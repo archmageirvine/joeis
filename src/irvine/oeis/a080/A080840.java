@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a046.A046132;
 
 /**
- * A080840 Number of cousin primes &lt; 10^n.
+ * A080840 Number of cousin primes &lt; 10^n, such that only the upper member of each prime cousin pair is counted.
  * @author Sean A. Irvine
  */
 public class A080840 extends A046132 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396541 allocated for Juri-Stepan Gerasimov.
+ * A396541 a(1) = 1; for n &gt; 1, a(n) is the smallest number &gt; 7^(n-1) with exactly n divisors.
  * @author Sean A. Irvine
  */
 public class A396541 extends Sequence1 {

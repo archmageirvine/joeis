@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A396715.
+ * A396763 allocated for Hoang Nguyen.
  * @author Sean A. Irvine
  */
 public class A396763 extends FilterNumberSequence {

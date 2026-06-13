@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A395641 allocated for Clark Kimberling.
+ * A395641 Triangular array: row n shows the coefficients of the polynomial - n!*L(n, x), where L(n, x) is the Lagrange interpolating polynomial that passes through (0,-1) and (k,1) for k = 1..n.
  * @author Sean A. Irvine
  */
 public class A395641 extends Sequence0 {

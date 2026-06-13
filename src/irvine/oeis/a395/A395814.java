@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395642.
+ * A395814 Decimal expansion of 1/(5*cosh(Pi)) + 6*Pi^5 + 1/(5*sinh(Pi)).
  * @author Sean A. Irvine
  */
 public class A395814 extends DecimalExpansionSequence {

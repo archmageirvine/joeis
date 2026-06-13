@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396587.
+ * A396770 Number of unlabeled connected nonnegative partially ordered sets ("posets") of size n and Dynkin type A.
  * @author Sean A. Irvine
  */
 public class A396770 extends Sequence1 {

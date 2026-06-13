@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006842;
 
 /**
- * A396586 allocated for Marko Riedel.
+ * A396586 a(n) / (6*n!) is the quadratic moment of the Farey series of order n.
  * @author Sean A. Irvine
  */
 public class A396586 extends A006842 {

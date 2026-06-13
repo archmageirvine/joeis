@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A394095.
+ * A394570 Number of integers of the form r^k (with 0 &lt; r &lt; n and k &gt; 0) whose base n digital root is r, and whose number of digits in base n is k.
  * @author Sean A. Irvine
  */
 public class A394570 extends Sequence2 {

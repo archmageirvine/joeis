@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.Pair;
 
 /**
- * A395076 allocated for Marc Morgenegg.
+ * A395076 Lexicographically earliest nonnegative sequence, where all subsequences longer than 1 term are unique and |a(n)-a(n+1)| is minimal.
  * @author Sean A. Irvine
  */
 public class A395076 extends Sequence0 {

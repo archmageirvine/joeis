@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A001462 Golomb's sequence: a(n) is the number of times n occurs, starting with a(1) = 1.
+ * A001462 Golomb's sequence: a(n) is the number of times n occurs in the sequence, starting with a(1) = 1.
  * @author Sean A. Irvine
  */
 public class A001462 extends Sequence1 {

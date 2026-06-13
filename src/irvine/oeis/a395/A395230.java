@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A085205.
+ * A395230 Decimal expansion of the volume of the supersphere |x|^6 + |y|^6 + |z|^6 = 1.
  * @author Sean A. Irvine
  */
 public class A395230 extends DecimalExpansionSequence {

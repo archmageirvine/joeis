@@ -4,7 +4,7 @@ package irvine.oeis.a144;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A144681 E.g.f. satisfies: A(x/A(x)) = exp(x).
+ * A144681 E.g.f. A(x) satisfies A(x/A(x)) = exp(x).
  * @author Georg Fischer
  */
 public class A144681 extends PolynomialFieldSequence {

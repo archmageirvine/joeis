@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396250 allocated for Yifan Xie.
+ * A396250 a(n) is the number of ternary sequences of length n with characteristic value 0, as is defined in comments.
  * @author Sean A. Irvine
  */
 public class A396250 extends Sequence1 {

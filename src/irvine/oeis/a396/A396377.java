@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396377 allocated for Bernard Schott.
+ * A396377 Smallest k so that at least one of the k+1 integers in {n, n+1, n+2, ..., n+k} divides the product of the other integers.
  * @author Sean A. Irvine
  */
 public class A396377 extends Sequence1 {

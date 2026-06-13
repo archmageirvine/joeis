@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A074333 a(n+1) = a(n) + (a(n))^3 with a(0)=1.
+ * A074333 a(n) = a(n-1) + a(n-1)^3 with a(0) = 1.
  * <code>a(n+1) = a(n) + (a(n))^3</code>
  * @author Georg Fischer
  */

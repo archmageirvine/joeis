@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A396573 allocated for Sajid Hussain.
+ * A396573 Primes p such that the gap to the next prime is strictly less than floor(log_2(p)).
  * @author Sean A. Irvine
  */
 public class A396573 extends A000040 {

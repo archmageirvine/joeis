@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A396687 allocated for Ruud H.G. van Tol.
+ * A396687 Smallest k &gt; 0 such that 2*prime(n) - prime(n-k) is prime.
  * @author Sean A. Irvine
  */
 public class A396687 extends Sequence3 {

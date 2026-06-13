@@ -6,7 +6,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A238168 Decimal expansion of sum_(n&gt;=1) H(n)^2/n^5 where H(n) is the n-th harmonic number.
+ * A238168 Decimal expansion of Sum_{n&gt;=1} H(n)^2/n^5 where H(n) is the n-th harmonic number.
  * Formula: 6*zeta(7)-zeta(2)*zeta(5)-5/2*zeta(3)*zeta(4)
  * @author Georg Fischer
  */

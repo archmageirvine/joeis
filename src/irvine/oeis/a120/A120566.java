@@ -4,7 +4,7 @@ package irvine.oeis.a120;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A120566 G.f. satisfies: A(x) = A(A(x)) - x*A(A(A(x))), with A(0)=0.
+ * A120566 G.f. satisfies: A(x) = A(A(x)) - x*A(A(A(x))), with A(0) = 0.
  * x+A(A(x))*rev(A(x))
  * @author Georg Fischer
  */

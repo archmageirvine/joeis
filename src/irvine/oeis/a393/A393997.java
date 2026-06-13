@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393997 allocated for Michel Lagneau.
+ * A393997 Number of steps to reach the end of the cycle starting with n/(2n+1), or -1 if the end of the cycle is never reached, in the following process: If the numerator is even, divide the fraction by 2, otherwise multiply the fraction by 3 and add 1.
  * @author Sean A. Irvine
  */
 public class A393997 extends Sequence0 {

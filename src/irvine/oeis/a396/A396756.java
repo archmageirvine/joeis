@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394095 Number of convex sets satisfying the condition.
+ * A396756 a(n) is the number of Heronian triangles (p, q, k) with primes p &lt;= q &lt; k, where k = A396755(n).
  * @author Sean A. Irvine
  */
 public class A396756 extends Sequence1 {

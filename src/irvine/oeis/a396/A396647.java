@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396647 allocated for Ctibor O. Zizka.
+ * A396647 Numbers k = p_1^e_1 * ... * p_i^e_i such that the area of the convex hull of the planar coordinates [p_i, e_i] is not an integer, but &gt;= 1/2.
  * @author Sean A. Irvine
  */
 public class A396647 extends Sequence1 {

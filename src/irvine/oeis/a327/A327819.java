@@ -4,7 +4,7 @@ package irvine.oeis.a327;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A327819 Elements of the unique smallest MSTD set of primes.
+ * A327819 Elements of the unique smallest MSTD (More Sums Than Differences) set of primes.
  * @author Georg Fischer
  */
 public class A327819 extends FiniteSequence {

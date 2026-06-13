@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396467 allocated for Janaka Rodrigo.
+ * A396467 a(n) is the number of distinct triplets of triangles chosen from n^2 unit triangles of a triangular grid, excluding rotationally equivalent configurations and excluding the centers of three triangles in a same symmetrical axis.
  * @author Sean A. Irvine
  */
 public class A396467 extends Sequence1 {

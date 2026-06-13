@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A085218 Factorial expansions of the entries in A085216.
+ * A085218 Factorial expansions of the entries in A085217.
  * @author Sean A. Irvine
  */
 public class A085218 extends SimpleTransformSequence {

@@ -8,7 +8,7 @@ import irvine.oeis.TwoParameterFormSequence;
 import irvine.oeis.a006.A006512;
 
 /**
- * A396570 allocated for Robert Israel.
+ * A396570 Numbers == 2 (mod 6) that are not the sum of two distinct upper twin primes.
  * @author Sean A. Irvine
  */
 public class A396570 extends Sequence1 {

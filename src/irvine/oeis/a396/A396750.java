@@ -5,7 +5,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
- * A085249.
+ * A396750 Number of colored 2-ball prime juggling patterns of period n.
  * @author Sean A. Irvine
  */
 public class A396750 extends A396749 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A394826 allocated for Keith J. Bauer.
+ * A394826 The tetrahemihexahedral numbers.
  * @author Georg Fischer
  */
 public class A394826 extends LambdaSequence {

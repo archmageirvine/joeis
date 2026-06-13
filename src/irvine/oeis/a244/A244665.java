@@ -6,7 +6,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A244665 Decimal expansion of sum_(n&gt;=1) (H(n,3)/n^3) where H(n,3) = A007408(n)/A007409(n) is the n-th harmonic number of order 3.
+ * A244665 Decimal expansion of Sum_{n&gt;=1} (H(n,3)/n^3) where H(n,3) = A007408(n)/A007409(n) is the n-th harmonic number of order 3.
  * Formula: Decimal expansion of sum_(n>=1) (H(n,3)/n^3) where H(n,3) = A007408(n)/A007409(n) is the n-th harmonic number of order 3.       nonn,cons
  * @author Georg Fischer
  */

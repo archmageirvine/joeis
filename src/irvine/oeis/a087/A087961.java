@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a140.A140054;
 
 /**
- * A087961 Satisfies f(x*f(x)) = exp(x), where f(x)=sum(n=0,infinity, a(n)*x^n/n!).
+ * A087961 E.g.f. f(x) satisfies f(x*f(x)) = exp(x).
  * egf(new A140054())
  * @author Georg Fischer
  */

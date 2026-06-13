@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396378 allocated for Bernard Schott.
+ * A396378 Smallest m belonging to {n, n+1, n+2, ..., n+A396377(n)} that divides the product of the other integers.
  * @author Sean A. Irvine
  */
 public class A396378 extends Sequence1 {

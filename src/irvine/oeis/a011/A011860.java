@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A011860 Floor( n(n-1)/7 ).
+ * A011860 a(n) = floor(n*(n-1)/7).
  * @author Sean A. Irvine
  */
 public class A011860 extends Sequence0 {

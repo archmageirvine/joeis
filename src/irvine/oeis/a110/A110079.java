@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A110079 Numbers n such that sigma(n)=2n-2^d(n) where d(n) is number of positive divisors of n.
+ * A110079 Numbers k such that sigma(k) = 2k - 2^d(k) where d(k) = A000005(k) is the number of positive divisors of k.
  * @author Georg Fischer
  */
 public class A110079 extends FilterNumberSequence {

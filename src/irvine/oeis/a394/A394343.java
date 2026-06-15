@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A394343 allocated for Sam Rocket Muirhead.
+ * A394343 Numbers k &gt;= 2 not expressible as (x*y + gcd(x-1,y-1) + 1)/2 with x, y &gt;= 3.
  * @author Sean A. Irvine
  */
 public class A394343 extends FilterNumberSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a107;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A107333 Real root cubic substitution with characteristic polynomial:x^3-2*x^2-3*x+2.
+ * A107333 1-limiting word of the morphism 1-&gt;1331, 2-&gt;3, 3-&gt;12.
  * @author Georg Fischer
  */
 public class A107333 extends MorphismFixedPointSequence {

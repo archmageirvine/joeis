@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A001028 E.g.f. satisfies A'(x) = 1 + A(A(x)), A(0)=0.
+ * A001028 E.g.f. A(x) satisfies A'(x) = 1 + A(A(x)), with A(0) = 0.
  * @author Sean A. Irvine
  */
 public class A001028 extends Sequence1 {

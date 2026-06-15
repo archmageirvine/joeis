@@ -6,7 +6,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A114069 sigma(n) + n is a square.
+ * A114069 Numbers k such that sigma(k) + k is a square.
  * @author Georg Fischer
  */
 public class A114069 extends FilterNumberSequence {

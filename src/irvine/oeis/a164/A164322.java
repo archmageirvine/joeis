@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A164322 Numbers n such that n=prime(P)+sigma(P), where P is product of digits of n.
+ * A164322 Numbers m such that m = prime(P) + sigma(P), where P is product of digits of m.
  *
  * @author Georg Fischer
  */

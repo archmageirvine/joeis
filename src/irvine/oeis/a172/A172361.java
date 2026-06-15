@@ -5,7 +5,7 @@ package irvine.oeis.a172;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A172361 Number of walks within N^2 (the first quadrant of Z^2) starting and ending at (0,0), and consisting of n steps taken from {(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)}.
+ * A172361 Number of walks within N^2 (the first quadrant of Z^2) starting and ending at (0,0), and consisting of n steps taken from {(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)} (king moves).
  * Recurrence: -a(n)*((n+1)*(3*n-1)*(n+2)^2)+((n-1)*(n+1)*(9*n^2+9*n+4)*a(n-1)+4*(3*n-2)*(n-1)*(9*n^2+5*n-1)*a(n-2)+32*n*(n-1)*(n-2)*(3*n+2)*a(n-3))
  * @author Georg Fischer
  */

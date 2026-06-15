@@ -4,7 +4,7 @@ package irvine.oeis.a091;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A091713 G.f. satisfies A(x) = x + x*A(A(A(x))).
+ * A091713 G.f. A(x) satisfies A(x) = x + x*A(A(A(x))).
  * x+x*A(A(A(x)))
  * @author Georg Fischer
  */

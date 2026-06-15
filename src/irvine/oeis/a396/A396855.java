@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A396855 allocated for Ali Sada.
+ * A396855 Number of partitions of n into two parts with disjoint decimal digit sets.
  * @author Sean A. Irvine
  */
 public class A396855 extends Sequence0 {

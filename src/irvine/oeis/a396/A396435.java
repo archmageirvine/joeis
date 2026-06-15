@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000043;
 
 /**
- * A396435 allocated for Michael C.H. Lin.
+ * A396435 a(n) is the unique integer k in [0, p-1] such that 3^((M-1)/p) is congruent to 2^k modulo M = 2^p - 1 is the n-th Mersenne prime.
  * @author Sean A. Irvine
  */
 public class A396435 extends Sequence1 {

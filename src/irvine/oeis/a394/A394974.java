@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A394974 allocated for Karan Sharma.
+ * A394974 a(n) = number of pairs (c,d) of integers with 1 &lt;= c &lt;= n-1 and 1 &lt;= d &lt;= n-1 such that n*c + d divides (n-1)*d.
  * @author Sean A. Irvine
  */
 public class A394974 extends Sequence2 {

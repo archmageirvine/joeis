@@ -4,7 +4,7 @@ package irvine.oeis.a233;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A233335 E.g.f. A(x) satisfies: A( Integral 1/A(x) dx ) = exp(x).
+ * A233335 E.g.f. A(x) satisfies A( Integral 1/A(x) dx ) = exp(x).
  * exp(rev(int(1/A(x))))
  * @author Georg Fischer
  */

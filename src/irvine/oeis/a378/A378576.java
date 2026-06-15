@@ -4,7 +4,7 @@ package irvine.oeis.a378;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A378576 G.f. satisfies A(x) = x + x*A(A(A(A(A(A(x)))))), so that this sequence shifts left under the 6th self-COMPOSE.
+ * A378576 G.f. A(x) satisfies A(x) = x + x*A(A(A(A(A(A(x)))))), so that this sequence shifts left under the 6th self-COMPOSE.
  * G.f.satisfies A(x) = x + x*A(A(A(A(A(A(x)))))), so that this sequence shifts left under the 6th self-COMPOSE.
  * @author Georg Fischer
  */

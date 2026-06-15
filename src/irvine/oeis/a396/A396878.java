@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A396878 allocated for Robert Israel.
+ * A396878 Primes p such that the concatenation of p-1 and p is prime.
  * @author Sean A. Irvine
  */
 public class A396878 extends FilterSequence {

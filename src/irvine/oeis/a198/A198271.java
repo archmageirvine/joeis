@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A198271 Round(n*sqrt(13)).
+ * A198271 a(n) = round(n*sqrt(13)).
  * @author Georg Fischer
  */
 public class A198271 extends FloorSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A396898 allocated for James C. McMahon.
+ * A396898 Indices k such that prime(k) + 2*prime(k+1) is prime.
  * @author Sean A. Irvine
  */
 public class A396898 extends FilterPositionSequence {

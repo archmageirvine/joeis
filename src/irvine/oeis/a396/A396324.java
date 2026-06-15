@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396324 allocated for Michael De Vlieger.
+ * A396324 Numbers k for which there exists a residue class r (mod k) with s = r+m*k, m &gt;= 0, such that rad(s) | gcd(s,k), where rad = A007947.
  * @author Sean A. Irvine
  */
 public class A396324 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A089362 Numbers n such that n^2 - 5n + 5 is prime.
+ * A089362 Numbers k such that k^2 - 5k + 5 is prime.
  * @author Georg Fischer
  */
 public class A089362 extends PrimePositionSubsequence {

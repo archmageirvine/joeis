@@ -4,7 +4,7 @@ package irvine.oeis.a123;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A123168 Continued fraction for c = sqrt(2)*(exp(sqrt(2))-1)/(exp(sqrt(2))+1).
+ * A123168 Continued fraction for sqrt(2)*(exp(sqrt(2))-1)/(exp(sqrt(2))+1).
  * @author Georg Fischer
  */
 public class A123168 extends GeneratingFunctionSequence {

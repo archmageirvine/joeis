@@ -4,7 +4,7 @@ package irvine.oeis.a144;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A144679 a(n) = [n/5 + 1]*[n/5 + 2]*(3*n - 10*[n/5] + 3)/6, where [.] = floor.
+ * A144679 a(n) = floor(n/5 + 1) * floor(n/5 + 2) * (3*n - 10*floor(n/5) + 3)/6.
  * @author Georg Fischer
  */
 public class A144679 extends LinearRecurrence {

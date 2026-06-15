@@ -3,7 +3,7 @@ package irvine.oeis.a396;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A396883 allocated for Vjeran Crnjak.
+ * A396883 Number of symmetric Donaghey-primitive Dyck n-paths.
  * @author Sean A. Irvine
  */
 public class A396883 extends GfSequence {

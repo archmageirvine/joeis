@@ -6,7 +6,7 @@ import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
 
 /**
- * A396889 allocated for Yuanhao Ding.
+ * A396889 Number of polynomials f(x) of degree &lt;= n with f(0) = 1 and coefficients in {0, 1, ..., n} such that f(k) is prime for all k = 1, 2, ..., n.
  * @author Sean A. Irvine
  */
 public class A396889 extends Sequence1 {
@@ -15,7 +15,6 @@ public class A396889 extends Sequence1 {
 
   private boolean is(final int[] a) {
     for (int k = 1; k <= mN; ++k) {
-      long v = 0;
       Z t = Z.ZERO;
       for (final int c : a) {
         t = t.multiply(k).add(c);

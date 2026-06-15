@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A065330 a(n) = max { k | gcd(n, k) = k and gcd(k, 6) = 1 }.
+ * A065330 Largest divisor of n coprime to 6. I.e., a(n) = max { k | gcd(n,k)=k and gcd(k,6)=1 }.
  * @author Georg Fischer
  */
 public class A065330 extends MultiplicativeSequence {

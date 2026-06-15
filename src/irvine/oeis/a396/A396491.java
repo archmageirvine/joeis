@@ -43,7 +43,7 @@ public class A396491 extends Sequence1 {
     return (lit > 0) == val;
   }
 
-  private static List<Long> clauses(final int n) {
+  protected static List<Long> clauses(final int n) {
     final int[] lits = new int[2 * n];
     int k = 0;
     for (int j = -n; j < 0; ++j) {
@@ -64,7 +64,7 @@ public class A396491 extends Sequence1 {
     return res;
   }
 
-  private static boolean unsat(final int n, final long[] formula) {
+  protected static boolean unsat(final int n, final long[] formula) {
     final long lim = 1L << n;
     for (long assignment = 0; assignment < lim; ++assignment) {
       boolean ok = true;

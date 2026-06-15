@@ -5,6 +5,7 @@ import java.util.HashSet;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
+import irvine.util.string.StringUtils;
 
 /**
  * A085309 Initial values providing nontrivial cyclic attractor when function defined in A085307 is iterated.
@@ -23,14 +24,14 @@ public class A085309 extends Sequence1 {
       if (t.isProbablePrime()) {
         return false;
       }
-      if (mHeuristic) {
-        try {
-          t = mA.a(t);
-        } catch (final UnsupportedOperationException e) {
+      try {
+        t = mA.a(t);
+      } catch (final UnsupportedOperationException e) {
+        if (mHeuristic) {
           return false;
         }
-      } else {
-        t = mA.a(t);
+        StringUtils.message("Factorization failed for n=" + n);
+        throw e;
       }
     }
     return true;

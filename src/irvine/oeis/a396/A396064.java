@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A396064 allocated for Marc Morgenegg.
+ * A396064 Lexicographically earliest sequence, where for every term-pair the sum, difference and product is unique.
  * @author Sean A. Irvine
  */
 public class A396064 extends Sequence0 {

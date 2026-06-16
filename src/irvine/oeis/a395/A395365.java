@@ -37,22 +37,36 @@ public class A395365 extends Sequence0 {
   private final long[] mPositions;
   private final int mColors;
   private final int mKnight;
+  private final byte[] mMasks;
 
-  protected A395365(final int colors, final int knight) {
+  protected A395365(final int colors, final int knight, final byte[] masks) {
     if (colors > 8) {
       // Can do more if Byte in forbidden is promoted
       throw new UnsupportedOperationException();
     }
-    if (knight >= colors) {
+    if (knight >= colors || masks.length != colors) {
       throw new IllegalStateException();
     }
     mColors = colors;
     mKnight = knight;
+    mMasks = masks;
     mPositions = new long[colors];
     mSpirals = new HexSpiral[colors];
     for (int k = 0; k < colors; ++k) {
       mSpirals[k] = new HexSpiral();
     }
+  }
+
+  private static byte[] defaultMasks(final int colors) {
+    final byte[] masks = new byte[colors];
+    for (int k = 0; k < colors; ++k) {
+      masks[k] = (byte) ~(1 << k);
+    }
+    return masks;
+  }
+
+  protected A395365(final int colors, final int knight) {
+    this(colors, knight, defaultMasks(colors));
   }
 
   /** Construct the sequence. */
@@ -71,7 +85,7 @@ public class A395365 extends Sequence0 {
           final int r = HexSpiral.r(pos);
           for (int[] k : KNIGHT_ATTACKS) {
             final long pt = HexSpiral.pack(q + k[0], r + k[1]);
-            mForbidden.merge(pt, (byte) ~(1 << c), (u, v) -> (byte) (u | v));
+            mForbidden.merge(pt, mMasks[c], (u, v) -> (byte) (u | v));
           }
           mForbidden.put(pos, (byte) ~0); // Cell is occupied by a knight
           break;

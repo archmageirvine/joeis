@@ -33,7 +33,7 @@ public class A394082 extends Sequence0 {
     for (int i = 0; i <= mN; ++i) {
       for (int j = 0; j <= mN; ++j) {
         for (int k = 0; k <= mN; ++k) {
-          final Z t = Binomial.multinomial(i + j + k, i, j, k).multiply(c(mN + 1 + i + j + k, mN -i, mN - j, mN - k));
+          final Z t = Binomial.multinomial(i + j + k, i, j, k).multiply(c(mN + 1 + i + j + k, mN - i, mN - j, mN - k));
           res = res.signedAdd(((i + j + k) & 1) == 0, t);
         }
       }

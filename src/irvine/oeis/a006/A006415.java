@@ -2,13 +2,14 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence0;
 
 /**
  * A006415 Number of nonseparable toroidal tree-rooted maps with n + 3 edges and n + 1 vertices.
  * @author Sean A. Irvine
  */
-public class A006415 extends Sequence0 {
+public class A006415 extends Sequence0 implements Conjectural {
 
   private long mN = -1;
 

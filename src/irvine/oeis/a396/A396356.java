@@ -1,16 +1,29 @@
 package irvine.oeis.a396;
 
-import irvine.oeis.ConvolutionSequence;
-import irvine.oeis.a395.A395902;
+import irvine.math.z.Binomial;
+import irvine.math.z.Integers;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
 
 /**
  * A396356 allocated for Alex Stokolos.
  * @author Sean A. Irvine
  */
-public class A396356 extends ConvolutionSequence {
+public class A396356 extends Sequence1 {
 
-  /** Construct the sequence. */
-  public A396356() {
-    super(1, new A395902().skip());
+  private long mN = 1;
+  private long mM = 0;
+
+  private Z a(final long m, final long k) {
+    return Integers.SINGLETON.sum(0, (m - 1) / 2, i -> Binomial.binomial(k + m - 1 - i, k).multiply(Binomial.binomial(m - 1 - i, i)).shiftLeft(2 * (m - 1 - 2 * i)));
+  }
+
+  @Override
+  public Z next() {
+    if (++mM > mN) {
+      ++mN;
+      mM = 1;
+    }
+    return a(mN - mM + 1, mM);
   }
 }

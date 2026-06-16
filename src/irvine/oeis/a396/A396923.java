@@ -19,7 +19,7 @@ public class A396923 extends Sequence0 {
     Z sum = Z.ONE;
     for (long d = 1; d <= mN / 2; ++d) {
       final long dd = d;
-      final Z s = Integers.SINGLETON.sum(0, mN - 2 * d, k -> Binomial.binomial(mN - dd, k).multiply(Binomial.binomial(mN -dd - k - 1, dd - 1)));
+      final Z s = Integers.SINGLETON.sum(0, mN - 2 * d, k -> Binomial.binomial(mN - dd, k).multiply(Binomial.binomial(mN - dd - k - 1, dd - 1)));
       sum = sum.add(s.multiply(Binomial.binomial(mN - d + 1, d)));
     }
     return sum;

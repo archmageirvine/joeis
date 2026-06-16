@@ -1,0 +1,28 @@
+package irvine.oeis.a393;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
+import irvine.oeis.a003.A003557;
+import irvine.oeis.a053.A053669;
+
+/**
+ * A393981 allocated for Michael De Vlieger.
+ * @author Sean A. Irvine
+ */
+public class A393981 extends Sequence1 {
+
+  private final Sequence mA = new A003557();
+  private final Sequence mB = new A053669();
+  private long mN = 0;
+
+  @Override
+  public Z next() {
+    while (true) {
+      ++mN;
+      if (mA.next().compareTo(mB.next()) < 0) {
+        return Z.valueOf(mN);
+      }
+    }
+  }
+}

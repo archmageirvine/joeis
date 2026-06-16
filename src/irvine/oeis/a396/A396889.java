@@ -31,7 +31,7 @@ public class A396889 extends Sequence1 {
   public Z next() {
     ++mN;
     final Bumper bumper = BumperFactory.range(0, mN);
-    int[] a = new int[mN];
+    final int[] a = new int[mN];
     long cnt = 0;
     do {
       if (is(a)) {

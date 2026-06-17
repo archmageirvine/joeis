@@ -13,7 +13,7 @@ public class A085379 extends Sequence2 {
   private long mN = 1;
   private Z mMax = Z.ZERO;
 
-  private void search(final Z[] d, final int pos, Z sum) {
+  private void search(final Z[] d, final int pos, final Z sum) {
     if (sum.compareTo(mMax) > 0 && sum.isProbablePrime()) {
       mMax = sum;
     }

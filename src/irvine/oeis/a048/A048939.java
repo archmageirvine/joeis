@@ -1,19 +1,19 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.a014.A014575;
+import irvine.oeis.a392.A392325;
 
 /**
  * A048939 10-digit vampire numbers (definition 2).
  * @author Sean A. Irvine
  */
-public class A048939 extends A014575 {
+public class A048939 extends A392325 {
 
   private Z mA = super.next();
 
-  @Override
-  protected long start() {
-    return 1000174288;
+  /** Construct the sequence. */
+  public A048939() {
+    super(10, 1000174288);
   }
 
   @Override

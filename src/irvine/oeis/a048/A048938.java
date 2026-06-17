@@ -1,20 +1,20 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.a014.A014575;
+import irvine.oeis.a392.A392325;
 
 /**
  * A048938 8-digit vampire numbers (definition 2).
  * @author Sean A. Irvine
  */
-public class A048938 extends A014575 {
+public class A048938 extends A392325 {
 
   private static final Z LAST = Z.valueOf(96977920);
   private Z mA = super.next();
 
-  @Override
-  protected long start() {
-    return 10025010;
+  /** Construct the sequence. */
+  public A048938() {
+    super(10, 10025010);
   }
 
   @Override

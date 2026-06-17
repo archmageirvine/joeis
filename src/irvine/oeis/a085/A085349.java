@@ -1,12 +1,13 @@
 package irvine.oeis.a085;
 
+import irvine.oeis.Conjectural;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A085349 Ratio-determined insertion sequence I(0.26688) (see the link below).
  * @author Sean A. Irvine
  */
-public class A085349 extends LinearRecurrence {
+public class A085349 extends LinearRecurrence implements Conjectural {
 
   /** Construct the sequence. */
   public A085349() {

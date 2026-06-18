@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A397048 Name?
+ * A397048 allocated for Werner Schulte.
  * @author Georg Fischer
  */
 public class A397048 extends LambdaTriangle {

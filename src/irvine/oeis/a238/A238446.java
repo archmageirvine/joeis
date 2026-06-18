@@ -6,7 +6,7 @@ import irvine.oeis.a038.A038791;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A238446 Let B be a nonempty and proper subset of A_n = {1,2,...,p_n-1}, where p_n is the n-th prime. Let C be the complement of B, so that the union B and C is A_n. a(n) is half the number of sums of products of elements of B and elements of C which are divisible
+ * A238446 Let B be a nonempty and proper subset of A_n = {1,2,...,p_n-1}, where p_n is the n-th prime. Let C be the complement of B, so that the union B and C is A_n. a(n) is half the number of sums of products of elements of B and elements of C which are divisible by p_n, when B runs through all such subsets of A_n.
  * @author Georg Fischer
  */
 public class A238446 extends SingleTransformSequence {

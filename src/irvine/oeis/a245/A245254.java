@@ -6,7 +6,7 @@ import irvine.oeis.a085.A085291;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A245254 Decimal expansion of U = Product_{k&gt;=1} (k^(1/(k*(k+1)))), a Khintchine-like limiting constant related to L√ľroth&apos;s representation of real numbers.
+ * A245254 Decimal expansion of U = Product_{k&gt;=1} (k^(1/(k*(k+1)))), a Khintchine-like limiting constant related to L\u00fcroth's representation of real numbers.
  * Formula:
  * @author Georg Fischer
  */

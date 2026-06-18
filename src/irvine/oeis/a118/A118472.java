@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A118472 Decimal expansion of Freiman&apos;s constant.
+ * A118472 Decimal expansion of Freiman's constant.
  * Formula:
  * @author Georg Fischer
  */

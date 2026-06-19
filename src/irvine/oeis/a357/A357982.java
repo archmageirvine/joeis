@@ -14,6 +14,6 @@ public class A357982 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A357982() {
-    super(1, n -> FactorUtils.iterate(n, Z.valueOf(1), (x, p, e) -> x.multiply(Functions.DISTINCT_PARTITIONS.z(Functions.PRIME_PI.z(p)).pow(e))));
+    super(1, n -> FactorUtils.iterate(n, Z.ONE, (x, p, e) -> x.multiply(Functions.DISTINCT_PARTITIONS.z(Functions.PRIME_PI.z(p)).pow(e))));
   }
 }

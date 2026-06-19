@@ -14,6 +14,6 @@ public class A090624 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A090624() {
-    super(2, n -> FactorUtils.iterate(n, Z.valueOf(0), (x, p, e) -> Functions.MAX.z(x, p.subtract(1).multiply(e))));
+    super(2, n -> FactorUtils.iterate(n, Z.ZERO, (x, p, e) -> Functions.MAX.z(x, p.subtract(1).multiply(e))));
   }
 }

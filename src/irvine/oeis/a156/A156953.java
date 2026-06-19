@@ -15,6 +15,6 @@ public class A156953 extends LambdaArray {
 
   /** Construct the sequence. */
   public A156953() {
-    super(0, 0, 0, -1, (n, k) -> (k == 0) ? Functions.FACTORIAL.z(n) : Rationals.SINGLETON.product(1, n, j -> Rationals.SINGLETON.product(0, j - 1, i -> new Q(1).subtract(Z.valueOf(k + 1).multiply(Z.valueOf(k + 1).pow(i)))).divide(Z.valueOf(-k).pow(j))).num());
+    super(0, 0, 0, -1, (n, k) -> (k == 0) ? Functions.FACTORIAL.z(n) : Rationals.SINGLETON.product(1, n, j -> Rationals.SINGLETON.product(0, j - 1, i -> Q.ONE.subtract(Z.valueOf(k + 1).multiply(Z.valueOf(k + 1).pow(i)))).divide(Z.valueOf(-k).pow(j))).num());
   }
 }

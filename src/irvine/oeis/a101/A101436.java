@@ -14,6 +14,6 @@ public class A101436 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A101436() {
-    super(1, n -> FactorUtils.iterate(n, Z.valueOf(0), (x, p, e) -> x.add(Predicates.PRIME.is(e) ? 1 : 0)));
+    super(1, n -> FactorUtils.iterate(n, Z.ZERO, (x, p, e) -> x.add(Predicates.PRIME.is(e) ? 1 : 0)));
   }
 }

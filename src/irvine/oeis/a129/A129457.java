@@ -16,7 +16,7 @@ public class A129457 extends MultiTransformSequence {
   public A129457() {
     super(1, (self, n) -> {
       final Z cp = self.a(n - 1).add(n);
-      return Integers.SINGLETON.count(1, n - 1, k -> Functions.GCD.z(cp, self.a(k)).equals(Z.ONE));
+      return Integers.SINGLETON.count(1, n - 1, k -> Functions.GCD.z(cp, self.a(k)).isOne());
     }, "1");
   }
 }

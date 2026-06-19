@@ -14,6 +14,6 @@ public class A106546 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A106546() {
-    super(1, (term, n) -> term.equals(Z.ONE) || !term.testBit(0) || Predicates.PRIME.is(term.add(2)) ? term : Z.ZERO, "", new A000290());
+    super(1, (term, n) -> term.isOne() || !term.testBit(0) || Predicates.PRIME.is(term.add(2)) ? term : Z.ZERO, "", new A000290());
   }
 }

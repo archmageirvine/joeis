@@ -14,6 +14,6 @@ public class A381203 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A381203() {
-    super(2, n -> FactorUtils.iterate(n, Z.valueOf(1), (x, p, e) -> Functions.LCM.z(x, e == 1 ? p : Functions.LCM.z(p, e))));
+    super(2, n -> FactorUtils.iterate(n, Z.ONE, (x, p, e) -> Functions.LCM.z(x, e == 1 ? p : Functions.LCM.z(p, e))));
   }
 }

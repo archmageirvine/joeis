@@ -11,7 +11,7 @@ public class A186149 extends A186148 {
 
   /** Construct the sequence. */
   public A186149() {
-    this(1, new Q(1, 8), new Q(1, 4), new Q(1), 3, 2);
+    this(1, new Q(1, 8), new Q(1, 4), Q.ONE, 3, 2);
   }
 
   /**

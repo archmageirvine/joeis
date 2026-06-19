@@ -14,6 +14,6 @@ public class A164705 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A164705() {
-    super(0, 0, 0, (n, k) -> (n == 0 && k == 0) ? Z.ONE : new Q(2).pow(k - 1).multiply(Binomial.binomial(2 * n - k, n)).ceiling());
+    super(0, 0, 0, (n, k) -> (n == 0 && k == 0) ? Z.ONE : Q.TWO.pow(k - 1).multiply(Binomial.binomial(2 * n - k, n)).ceiling());
   }
 }

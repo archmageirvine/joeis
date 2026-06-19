@@ -14,6 +14,6 @@ public class A290974 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A290974() {
-    super(0, n -> Rationals.SINGLETON.product(0, n, j -> new Q(1).subtract(Q.HALF.multiply(Z.TWO.pow(2 * j)))).multiply(2).num());
+    super(0, n -> Rationals.SINGLETON.product(0, n, j -> Q.ONE.subtract(Q.HALF.multiply(Z.TWO.pow(2 * j)))).multiply(2).num());
   }
 }

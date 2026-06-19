@@ -11,6 +11,6 @@ public class A186151 extends A186149 {
 
   /** Construct the sequence. */
   public A186151() {
-    super(1, new Q(-1, 8), new Q(1, 4), new Q(1), 3, 2);
+    super(1, new Q(-1, 8), new Q(1, 4), Q.ONE, 3, 2);
   }
 }

@@ -14,6 +14,6 @@ public class A125030 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A125030() {
-    super(1, n -> FactorUtils.iterate(n, Z.valueOf(0), (x, p, e) -> (e == 1 || Predicates.PRIME.is(e)) ? x.add(e) : x));
+    super(1, n -> FactorUtils.iterate(n, Z.ZERO, (x, p, e) -> (e == 1 || Predicates.PRIME.is(e)) ? x.add(e) : x));
   }
 }

@@ -13,6 +13,6 @@ public class A381315 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A381315() {
-    super(1, 1, k -> FactorUtils.iterate(k, Z.ZERO, (x, p, e) -> x.add(e == 3 ? 1 : (e > 3 ? 2 : 0))).equals(Z.ONE));
+    super(1, 1, k -> FactorUtils.iterate(k, Z.ZERO, (x, p, e) -> x.add(e == 3 ? 1 : (e > 3 ? 2 : 0))).isOne());
   }
 }

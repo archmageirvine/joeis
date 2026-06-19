@@ -20,7 +20,7 @@ public class A186148 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A186148() {
-    this(1, new Q(1, 8), new Q(1, 4), new Q(1), 3, 2);
+    this(1, new Q(1, 8), new Q(1, 4), Q.ONE, 3, 2);
   }
 
   /**

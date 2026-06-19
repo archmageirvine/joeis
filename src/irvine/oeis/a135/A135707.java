@@ -13,6 +13,6 @@ public class A135707 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A135707() {
-    super(1, CR.valueOf(116).subtract(CR.EIGHT.multiply(CR.SQRT2)).subtract(CR.valueOf(20).multiply(CR.FIVE.sqrt())).add(CR.valueOf(140).multiply(CR.HALF.add(CR.FIVE.sqrt().divide(CR.TWO)).log())).subtract(CR.valueOf(40).multiply(CR.ONE.add(CR.SQRT2).log())).add(CR.valueOf(80).multiply(CR.TWO.add(CR.FIVE.sqrt()).log())).add(CR.valueOf(32).log()).add(CR.TEN.multiply(CR.ZERO.subtract(CR.ONE).add(CR.FIVE.sqrt()).log())).subtract(CR.valueOf(15).multiply(CR.valueOf(123).add(CR.valueOf(55).multiply(CR.FIVE.sqrt())).log())).divide(CR.valueOf(120)));
+    super(1, CR.valueOf(116).subtract(CR.EIGHT.multiply(CR.SQRT2)).subtract(CR.valueOf(20).multiply(CR.FIVE.sqrt())).add(CR.valueOf(140).multiply(CR.HALF.add(CR.FIVE.sqrt().divide(CR.TWO)).log())).subtract(CR.valueOf(40).multiply(CR.ONE.add(CR.SQRT2).log())).add(CR.valueOf(80).multiply(CR.TWO.add(CR.FIVE.sqrt()).log())).add(CR.valueOf(32).log()).add(CR.TEN.multiply(CR.ONE.negate().add(CR.FIVE.sqrt()).log())).subtract(CR.valueOf(15).multiply(CR.valueOf(123).add(CR.valueOf(55).multiply(CR.FIVE.sqrt())).log())).divide(CR.valueOf(120)));
   }
 }

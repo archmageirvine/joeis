@@ -13,6 +13,6 @@ public class A392109 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A392109() {
-    super(1, n -> FactorUtils.iterate(n, Z.valueOf(0), (x, p, e) -> (e >= 2 && p.compareTo(x) > 0) ? p : x));
+    super(1, n -> FactorUtils.iterate(n, Z.ZERO, (x, p, e) -> (e >= 2 && p.compareTo(x) > 0) ? p : x));
   }
 }

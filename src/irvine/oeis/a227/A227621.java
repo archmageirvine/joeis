@@ -13,6 +13,6 @@ public class A227621 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A227621() {
-    super(0, (self, n) -> new Q(self.s(0)).divide(new Q(2).pow(n - 3)).round(), "4", new A083313());
+    super(0, (self, n) -> new Q(self.s(0)).divide(Q.TWO.pow(n - 3)).round(), "4", new A083313());
   }
 }

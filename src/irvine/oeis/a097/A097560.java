@@ -14,6 +14,6 @@ public class A097560 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A097560() {
-    super(1, (self, n) -> Integers.SINGLETON.count(1, n - 1, k -> Functions.GCD.z(self.a(k), Z.valueOf(n)).equals(Z.ONE)), "3");
+    super(1, (self, n) -> Integers.SINGLETON.count(1, n - 1, k -> Functions.GCD.z(self.a(k), Z.valueOf(n)).isOne()), "3");
   }
 }

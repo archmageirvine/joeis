@@ -13,6 +13,6 @@ public class A267113 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A267113() {
-    super(1, n -> FactorUtils.iterate(n, Z.valueOf(0), (x, p, e) -> x.or(p.mod(4) == 1 ? Z.valueOf(e) : Z.ZERO)));
+    super(1, n -> FactorUtils.iterate(n, Z.ZERO, (x, p, e) -> x.or(p.mod(4) == 1 ? Z.valueOf(e) : Z.ZERO)));
   }
 }

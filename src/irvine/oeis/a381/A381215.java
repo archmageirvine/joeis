@@ -25,7 +25,7 @@ public class A381215 extends FilterNumberSequence {
           ts.add(Z.valueOf(e));
           return p;
         });
-        return ts.last().subtract(ts.first()).equals(Z.ONE);
+        return ts.last().subtract(ts.first()).isOne();
       }
     });
   }

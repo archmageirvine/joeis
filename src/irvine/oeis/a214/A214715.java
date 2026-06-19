@@ -13,6 +13,6 @@ public class A214715 extends LeastLambdaSequence {
 
   /** Construct the sequence. */
   public A214715() {
-    super(1, (n, k) -> Functions.GCD.z(Functions.PRIME.z(n + 1).subtract(k), Z.valueOf(n - k)).equals(Z.ONE), 1, (n, k) -> 1);
+    super(1, (n, k) -> Functions.GCD.z(Functions.PRIME.z(n + 1).subtract(k), Z.valueOf(n - k)).isOne(), 1, (n, k) -> 1);
   }
 }

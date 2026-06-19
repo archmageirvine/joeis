@@ -22,6 +22,6 @@ public class A395407 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A395407() {
-    super(0, A001620.getCR().multiply(CR.ONE.add(A001113.getCR())).subtract(A091725.getCR()).subtract(A001113.getCR().multiply(CR.ZERO.subtract(A099285.getCR()))));
+    super(0, A001620.getCR().multiply(CR.ONE.add(A001113.getCR())).subtract(A091725.getCR()).subtract(A001113.getCR().multiply(A099285.getCR().negate())));
   }
 }

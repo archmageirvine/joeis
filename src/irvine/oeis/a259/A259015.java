@@ -13,6 +13,6 @@ public class A259015 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A259015() {
-    super(4, n -> new Q(2).pow(n - 7).multiply(new Q(n).pow(n - 9)).multiply(n - 4).multiply(Z.valueOf(8 * n).subtract(128).multiply(n).add(828).multiply(n).subtract(2930).multiply(n).add(7404).multiply(n).subtract(17523).multiply(n).add(41527).multiply(n).subtract(114302).multiply(n).add(204960)).divide(6).num());
+    super(4, n -> Q.TWO.pow(n - 7).multiply(new Q(n).pow(n - 9)).multiply(n - 4).multiply(Z.valueOf(8 * n).subtract(128).multiply(n).add(828).multiply(n).subtract(2930).multiply(n).add(7404).multiply(n).subtract(17523).multiply(n).add(41527).multiply(n).subtract(114302).multiply(n).add(204960)).divide(6).num());
   }
 }

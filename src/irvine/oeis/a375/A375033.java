@@ -16,12 +16,12 @@ public class A375033 extends Sequence1 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return FactorUtils.iterate(n, Z.valueOf(0), (x, p, e) -> (e & 1) == 0 && Z.valueOf(e).compareTo(x) > 0 ? Z.valueOf(e) : x);
+    return FactorUtils.iterate(n, Z.ZERO, (x, p, e) -> (e & 1) == 0 && Z.valueOf(e).compareTo(x) > 0 ? Z.valueOf(e) : x);
   }
 
   @Override
   public Z a(final long n) {
-    return FactorUtils.iterate(n, Z.valueOf(0), (x, p, e) -> (e & 1) == 0 && Z.valueOf(e).compareTo(x) > 0 ? Z.valueOf(e) : x);
+    return FactorUtils.iterate(n, Z.ZERO, (x, p, e) -> (e & 1) == 0 && Z.valueOf(e).compareTo(x) > 0 ? Z.valueOf(e) : x);
   }
 
   @Override

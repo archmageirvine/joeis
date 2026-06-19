@@ -13,6 +13,6 @@ public class A181351 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A181351() {
-    super(1, n -> FactorUtils.iterate(n, Z.valueOf(1), (x, p, e) -> x.multiply((p.equals(Z.TWO) ? Z.FIVE : (p.equals(Z.FIVE) ? Z.TWO : p)).pow(e))));
+    super(1, n -> FactorUtils.iterate(n, Z.ONE, (x, p, e) -> x.multiply((p.equals(Z.TWO) ? Z.FIVE : (p.equals(Z.FIVE) ? Z.TWO : p)).pow(e))));
   }
 }

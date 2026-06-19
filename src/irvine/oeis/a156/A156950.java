@@ -16,7 +16,7 @@ import irvine.oeis.triangle.LambdaTriangle;
  */
 public class A156950 extends LambdaTriangle {
 
-  private static final BiFunction<Integer, Integer, Q> LAMBDA = (n, k) -> (k == 0) ? new Q(Functions.FACTORIAL.z(n)) : Rationals.SINGLETON.product(1, n, j -> Rationals.SINGLETON.product(0, j - 1, i -> new Q(1).subtract(Z.valueOf(k + 1).multiply(Z.valueOf(k + 1).pow(i)))).divide(Z.valueOf(-k).pow(j)));
+  private static final BiFunction<Integer, Integer, Q> LAMBDA = (n, k) -> (k == 0) ? new Q(Functions.FACTORIAL.z(n)) : Rationals.SINGLETON.product(1, n, j -> Rationals.SINGLETON.product(0, j - 1, i -> Q.ONE.subtract(Z.valueOf(k + 1).multiply(Z.valueOf(k + 1).pow(i)))).divide(Z.valueOf(-k).pow(j)));
 
   private static Q b(final int n, final int k) {
     return LAMBDA.apply(n, k);

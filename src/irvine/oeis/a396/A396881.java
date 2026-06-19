@@ -16,6 +16,6 @@ public class A396881 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A396881() {
-    super(1, CR.SIX.pow(CR.ONE_THIRD).exp().add(CR.TWO.multiply(CR.ZERO.subtract(CR.SIX.pow(CR.ONE_THIRD).divide(CR.TWO)).exp()).multiply(REALS.cos(CR.THREE.pow(CR.FIVE.divide(CR.SIX)).divide(CR.TWO.pow(CR.TWO.divide(CR.THREE)))))).divide(CR.THREE));
+    super(1, CR.SIX.pow(CR.ONE_THIRD).exp().add(CR.TWO.multiply(CR.SIX.pow(CR.ONE_THIRD).divide(CR.TWO).negate().exp()).multiply(REALS.cos(CR.THREE.pow(CR.FIVE.divide(CR.SIX)).divide(CR.TWO.pow(CR.TWO.divide(CR.THREE)))))).divide(CR.THREE));
   }
 }

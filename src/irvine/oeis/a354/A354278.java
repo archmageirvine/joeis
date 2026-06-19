@@ -14,6 +14,6 @@ public class A354278 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A354278() {
-    super(1, (self, n) -> new Q(1).subtract(Rationals.SINGLETON.sumdiv(n, d -> (d == 1 || d == n) ? new Q(0) : new Q(self.a(d), Functions.FACTORIAL.z(d)).pow(n / d).multiply(d))).multiply(Functions.FACTORIAL.z(n - 1)).num(), "0");
+    super(1, (self, n) -> Q.ONE.subtract(Rationals.SINGLETON.sumdiv(n, d -> (d == 1 || d == n) ? Q.ZERO : new Q(self.a(d), Functions.FACTORIAL.z(d)).pow(n / d).multiply(d))).multiply(Functions.FACTORIAL.z(n - 1)).num(), "0");
   }
 }

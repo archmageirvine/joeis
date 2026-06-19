@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.URL;
+import java.net.URI;
 import java.nio.charset.StandardCharsets;
 
 import irvine.math.z.Z;
@@ -20,7 +20,7 @@ import irvine.math.z.Z;
  * The input file contains lines with tuples (index, term).
  * "#" and a following comment are stripped, and blank or empty lines are ignored.
  * <code>null</code> is returned after the last term.
- * The file is expected in a directory or at an URI defined by the environment variable <code>BFPATH</code>.
+ * The file is expected in a directory or at a URI defined by the environment variable <code>BFPATH</code>.
  * @author Georg Fischer
  */
 public class PseudoSequence extends AbstractSequence implements Closeable {
@@ -46,9 +46,9 @@ public class PseudoSequence extends AbstractSequence implements Closeable {
     final String fileName = "b" + aNumber.substring(1) + ".txt";
     final String bFilePath = getBaseUri();
     try {
-      if (bFilePath.matches("(https?|ftp|file)\\:\\/\\/.*")) { // URI format
+      if (bFilePath.matches("(https?|ftp|file)://.*")) { // URI format
         final String fullUri = bFilePath + fileName;
-        mLineReader = new BufferedReader(new InputStreamReader(new URL(fullUri).openStream(), StandardCharsets.UTF_8));
+        mLineReader = new BufferedReader(new InputStreamReader(URI.create(fullUri).toURL().openStream(), StandardCharsets.UTF_8));
         // System.err.println("PseudoSequence: read from URI \"" + bFilePath + fileName + "\"");
       } else { // no URI
         final File file = new File(bFilePath, fileName);

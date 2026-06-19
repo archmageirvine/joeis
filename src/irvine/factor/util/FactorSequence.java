@@ -728,6 +728,20 @@ public final class FactorSequence {
   }
 
   /**
+   * Construct a nasty factor sequence where we claim all the unitary
+   * prime powers in fs are actually prime.
+   * @return a FactorSequence of tuples <code>(p^e, 1)</code>
+   */
+  public FactorSequence makeUnitary() {
+    completeOrException();
+    final FactorSequence flatten = new FactorSequence();
+    for (final Z p : mFactors.keySet()) {
+      flatten.add(p.pow(getExponent(p)), getStatus(p));
+    }
+    return flatten;
+  }
+
+  /**
    * Return the sum of the unitary divisors in this factor sequence.
    * @return sum of unitary divisors
    */

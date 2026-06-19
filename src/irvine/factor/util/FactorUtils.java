@@ -34,6 +34,24 @@ public final class FactorUtils {
     Z apply(A x, Z p, Integer e);
   }
 
+  /**
+   * Functional interface for iterator state.
+   * @param <A> accumulator type
+   * @param <Z> prime type
+   * @param <Integer> exponent type
+   */
+  @FunctionalInterface
+  public interface StringFunction<A, Z, Integer> {
+    /**
+     * Apply the function.
+     * @param x accumulated value of the iterator
+     * @param p prime
+     * @param e exponent
+     * @return new <code>value</code>
+     */
+    String apply(A x, Z p, Integer e);
+  }
+
   private FactorUtils() { }
 
   private static final Fast PRIME = new Fast();
@@ -181,18 +199,18 @@ public final class FactorUtils {
    * Iterate over the primes and exponents in the factorization of <code>n</code>.
    * @param n number to be factorized
    * @param start initial value of the accumulator x
-   * @param f maps <code>(x, p, e) -> x</code> 
+   * @param f maps <code>(x, p, e) -> x</code>
    * @return final accumulated value x
    */
   public static Z iterate(final long n, final Z start, final TriFunction<Z, Z, Integer> f) {
     return iterate(Z.valueOf(n), start, f);
   }
-  
+
   /**
    * Iterate over the primes and exponents in the factorization of <code>n</code>.
    * @param n number to be factorized
    * @param start initializes the accumulated value
-   * @param f maps <code>(value, p, e) -> value</code> 
+   * @param f maps <code>(x, p, e) -> x</code> 
    * @return final accumulated value
    */
   public static Z iterate(final Z n, final Z start, final TriFunction<Z, Z, Integer> f) { 
@@ -207,11 +225,40 @@ public final class FactorUtils {
     }
     return x;
   }
+
+  /**
+   * Iterate over the primes and exponents in the factorization of <code>n</code> and accumulate a String.
+   * @param n number to be factorized
+   * @param start initializes the accumulated String
+   * @param f maps <code>(x, p, e) -> x</code> 
+   * @return final accumulated String x
+   */
+  public static String iterate(final long n, final String start, final StringFunction<String, Z, Integer> f) {
+    return iterate(Z.valueOf(n), start, f);
+  }
+  
+  /**
+   * Iterate over the primes and exponents in the factorization of <code>n</code> and accumulate a String.
+   * @param n number to be factorized
+   * @param start initializes the accumulated String
+   * @param f maps <code>(x, p, e) -> x</code> 
+   * @return final accumulated String x
+   */
+  public static String iterate(final Z n, final String start, final StringFunction<String, Z, Integer> f) {
+    String x = start;
+    final FactorSequence fs = Jaguar.factor(n);
+    for (final Z p : fs.toZArray()) {
+      final int e = fs.getExponent(p);
+      x = f.apply(x, p, e);
+    }
+    return x;
+  }
+
   /**
    * Iterate over the primes and exponents in a FactorSequence.
    * @param fs FactorSequence
    * @param start initializes the accumulated value
-   * @param f maps <code>(value, p, e) -> value</code> 
+   * @param f maps <code>(x, p, e) -> x</code> 
    * @return final accumulated value
    */
   public static Z iterate(final FactorSequence fs, final Z start, final TriFunction<Z, Z, Integer> f) { 

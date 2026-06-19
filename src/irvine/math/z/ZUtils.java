@@ -583,4 +583,49 @@ public final class ZUtils {
     }
     return true;
   }
+
+  /**
+   * Return the coordinates of a value in the Ulam spiral.
+   * @param n value
+   * @return coordinates
+   */
+  public static Z[] ulamCoords(final Z n) {
+    final Z k = n.multiply(4).subtract(3).sqrt().subtract(1).divide2();
+    final Z k1 = k.add(1);
+    final Z d = n.subtract(1).subtract(k.multiply(k1));
+    if (k.isOdd()) {
+      return new Z[] {k.add(1).divide2().subtract(d.min(k1)), k.add(1).divide2().subtract(d.subtract(k1).max(Z.ZERO))};
+    } else {
+      return new Z[] {k.negate().divide2().add(d.min(k1)), k.negate().divide2().add(d.subtract(k1).max(Z.ZERO))};
+    }
+  }
+
+  /**
+   * Return the value in the Ulam spiral with the given coordinates.
+   * @param x x-coordinate
+   * @param y y-coordinate
+   * @return value
+   */
+  public static Z ulamValue(final Z x, final Z y) {
+    final Z m = x.abs().max(y.abs());
+    if (m.isZero()) {
+      return Z.ONE;
+    }
+    final Z side = m.multiply2();
+    final Z max = side.add(1).square(); // (2m+1)^2
+    if (y.equals(m.negate())) {
+      // bottom edge (includes lower-right corner)
+      return max.subtract(m.subtract(x));
+    }
+    if (x.equals(m.negate())) {
+      // left edge
+      return max.subtract(side).subtract(m.add(y));
+    }
+    if (y.equals(m)) {
+      // top edge
+      return max.subtract(side.multiply(2)).subtract(m.add(x));
+    }
+    // right edge
+    return max.subtract(side.multiply(3)).subtract(m.subtract(y));
+  }
 }

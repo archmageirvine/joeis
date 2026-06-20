@@ -4,7 +4,7 @@ package irvine.oeis.a183;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A183660 Number of (n+1) X 8 0..5 arrays with every 2 X 2 subblock summing to 10.
+ * A183660 Number of (n+1)X8 0..5 arrays with every 2x2 subblock summing to 10.
  * @author Georg Fischer
  */
 public class A183660 extends HolonomicRecurrence {

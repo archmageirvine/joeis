@@ -12,7 +12,7 @@ public class A396572 extends Combiner {
 
   /** Construct the sequence. */
   public A396572() {
-    super(1, new A006519().skip(2), new A085587().skip(2), ADD);
+    super(1, new A006519(), new A085587(), ADD);
   }
 }
 

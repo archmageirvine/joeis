@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A085470.
+ * A397073 a(n) is the first concatenation of final digits of n consecutive primes that is prime.
  * @author Sean A. Irvine
  */
 public class A397073 extends Sequence1 {

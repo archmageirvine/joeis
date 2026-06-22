@@ -4,7 +4,7 @@ package irvine.oeis.a107;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A107338 224 Pisot cubic substitution with characteristic polynomial:x^3-4*x^2+2*x-2.
+ * A107338 1-limiting word of the morphism 1-&gt;121321, 2-&gt;3, 3-&gt;13.
  * @author Georg Fischer
  */
 public class A107338 extends MorphismFixedPointSequence {

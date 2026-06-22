@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396634 allocated for Daniel \u0160\u00edpek.
+ * A396634 Number of distinct spanning trees of the coprime graph on vertices {1, 2, ..., n}.
  * @author Sean A. Irvine
  */
 public class A396634 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396251 allocated for Yifan Xie.
+ * A396251 a(n) is the number of 4-ary sequences of length n with characteristic value 0.
  * @author Sean A. Irvine
  */
 public class A396251 extends Sequence1 {

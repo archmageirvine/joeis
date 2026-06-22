@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a359.A359280;
 
 /**
- * A395674 allocated for Michael De Vlieger.
+ * A395674 Odd powerful numbers that are not powers of squarefree numbers.
  * @author Sean A. Irvine
  */
 public class A395674 extends FilterSequence {

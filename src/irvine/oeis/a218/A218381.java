@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a211.A211996;
 
 /**
- * A218381 Numbers k such that A211996(k) is not zero.
+ * A218381 Numbers k = i*j such that i+j is a square.
  * @author Georg Fischer
  */
 public class A218381 extends FilterPositionSequence {

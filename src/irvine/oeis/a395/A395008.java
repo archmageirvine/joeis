@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395008 allocated for Nenad Micic.
+ * A395008 Numbers k representable as a sum of three squares at which the minimal three-square spread s3(k) reaches a new record value, where s3(k) is the least value of x-z over all representations k = x^2 + y^2 + z^2 with x &gt;= y &gt;= z &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A395008 extends Sequence1 {

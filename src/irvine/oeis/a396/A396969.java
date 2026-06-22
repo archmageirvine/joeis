@@ -4,7 +4,7 @@ import irvine.oeis.IntersectionSequence;
 import irvine.oeis.a332.A332785;
 
 /**
- * A396969 allocated for Michael De Vlieger.
+ * A396969 Intersection of A332785 and A396324.
  * @author Sean A. Irvine
  */
 public class A396969 extends IntersectionSequence {

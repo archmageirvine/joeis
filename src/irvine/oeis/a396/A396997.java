@@ -4,7 +4,7 @@ package irvine.oeis.a396;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A396997 Expansion of e.g.f. exp(F^3(x)), where F(x) is the e.g.f. of A396996.
+ * A396997 Expansion of e.g.f. exp(F(x)), where F(x) is the e.g.f. of A396996.
  * egf(new A396996())
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A085454 Array defined by T(i,1)=i, T(1,j)=2j, T(i,j)=T(i-1,j)+T(i-1,j-1) read by antidiagonals.
+ * A085454 Array defined by T(i,0) = i, T(0,j) = 2*j, T(i,j) = T(i-1,j) + T(i-1,j-1) read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A085454 extends Sequence0 {

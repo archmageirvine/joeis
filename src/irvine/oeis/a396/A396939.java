@@ -4,7 +4,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a173.A173024;
 
 /**
- * A396939 allocated for Chai Wah Wu.
+ * A396939 Numbers having isolated ones or isolated double ones in their binary representations.
  * @author Sean A. Irvine
  */
 public class A396939 extends ComplementSequence {

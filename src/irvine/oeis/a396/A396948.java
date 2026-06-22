@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.UnionSequence;
 
 /**
- * A396948 allocated for Bernard Schott.
+ * A396948 Numbers m with two or more digits such that if we insert a 0 between the units and tens digits we get a multiple of the original number.
  * @author Sean A. Irvine
  */
 public class A396948 extends UnionSequence {

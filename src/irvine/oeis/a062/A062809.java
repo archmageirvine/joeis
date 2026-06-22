@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062809 a(n) = Sum_{i = 1..n} (n - i)^(1 + i).
+ * A062809 a(n) = Sum_{i=1..n} (n - i)^(1 + i).
  * @author Georg Fischer
  */
 public class A062809 extends Sequence1 {

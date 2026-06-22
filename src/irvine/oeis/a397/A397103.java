@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A085470.
+ * A397103 Smallest integer k&gt;0 such that k*5^n + 1 is a prime.
  * @author Sean A. Irvine
  */
 public class A397103 extends Sequence0 {

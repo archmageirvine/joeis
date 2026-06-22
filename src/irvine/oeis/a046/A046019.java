@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A046019 a(n) gives the number of different powers m^n for which the sum of the digits is equal to m.
+ * A046019 a(n) gives the number of different powers m^n for which the sum of the digits is equal to m &gt; 0.
  * @author Sean A. Irvine
  */
 public class A046019 extends AbstractSequence {

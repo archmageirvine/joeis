@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a305.A305082;
 
 /**
- * A397061 Name?
+ * A397061 Self-convolution of A305082.
  * new A305082()
  * @author Georg Fischer
  */

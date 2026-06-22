@@ -3,7 +3,7 @@ package irvine.oeis.a396;
 import irvine.oeis.InverseSequence;
 
 /**
- * A396950 allocated for Bernard Schott.
+ * A396950 a(n) is the smallest integer m such that A396377(m) = n.
  * @author Sean A. Irvine
  */
 public class A396950 extends InverseSequence {

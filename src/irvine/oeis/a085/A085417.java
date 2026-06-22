@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A085417 Take prime[n] and continue adding n,n+1,..., n+a(n)-1 until one reaches a prime.
+ * A085417 Take prime(n) and continue adding n,n+1,..., n+a(n)-1 until one reaches a prime.
  * @author Sean A. Irvine
  */
 public class A085417 extends A000040 {

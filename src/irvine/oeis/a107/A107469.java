@@ -4,7 +4,7 @@ package irvine.oeis.a107;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A107469 4-symbol substitution made from Cantor matrix by one level matrix self-similarity.
+ * A107469 1-limiting word of the morphism 1-&gt;112343211, 2-&gt;222444222, 3-&gt;333444333, 4-&gt;444444444.
  * @author Georg Fischer
  */
 public class A107469 extends MorphismFixedPointSequence {

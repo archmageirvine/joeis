@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078765.
+ * A395399 Number of unsatisfiable 3-SAT formulas with 3 variables and n clauses in the multiset clause model.
  * @author Sean A. Irvine
  */
 public class A395399 extends Sequence1 {

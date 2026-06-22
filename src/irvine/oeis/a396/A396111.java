@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A396111 allocated for Stanislav Sykora.
+ * A396111 a(n) = n^4 mod (2*n+1).
  * @author Sean A. Irvine
  */
 public class A396111 extends Sequence0 {

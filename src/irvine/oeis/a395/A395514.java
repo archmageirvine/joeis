@@ -4,7 +4,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a394.A394760;
 
 /**
- * A395514 allocated for Michael De Vlieger.
+ * A395514 Partial sums of A394760.
  * @author Sean A. Irvine
  */
 public class A395514 extends PartialSumSequence {

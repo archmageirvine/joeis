@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A395726 allocated for Mikhail Kurkov.
+ * A395726 Array read by ascending antidiagonals: A(n, k) = A(n, k-A002024(k)) + A002024(k) * A(n-1, k) with A(n, 0) = 0^n, A(0, k) = 1.
  * @author Sean A. Irvine
  */
 public class A395726 extends Sequence0 {

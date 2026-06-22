@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a036.A036903;
 
 /**
- * A080597 Number of terms from the decimal expansion of Pi (A000796) which include every combination of n digits as consecutive subsequences.
+ * A080597 Minimum number of initial terms from the decimal expansion of Pi (A000796) to include every combination of n digits as a substring.
  * @author Georg Fischer
  */
 public class A080597 extends AbstractSequence {

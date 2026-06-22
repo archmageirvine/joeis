@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007770;
 
 /**
- * A085470.
+ * A397125 a(n) = smallest happy number h such that n*h is happy.
  * @author Sean A. Irvine
  */
 public class A397125 extends Sequence1 {

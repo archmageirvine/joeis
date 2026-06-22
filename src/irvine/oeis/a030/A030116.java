@@ -4,7 +4,7 @@ package irvine.oeis.a030;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A030116 Number of distributive lattices; also number of paths with n turns when light is reflected from 12 glass plates.
+ * A030116 Number of antichains in the product of a fence poset with n elements and a chain with 11 elements; also number of paths with n turns when light is reflected from 12 glass plates.
  * @author Georg Fischer
  */
 public class A030116 extends GeneratingFunctionSequence {

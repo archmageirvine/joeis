@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A396897 allocated for Eric Fodge.
+ * A396897 a(n) = n divided by the largest ratio of consecutive divisors of n.
  * @author Sean A. Irvine
  */
 public class A396897 extends Sequence2 {

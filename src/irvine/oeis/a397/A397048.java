@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A397048 allocated for Werner Schulte.
+ * A397048 Triangle T(n, k) read by rows: T(n, k) = (Sum_{i=0..k} (-1)^i * binomial(k, i) * (n+i)^n) * (-1)^k / k! for 0 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A397048 extends LambdaTriangle {

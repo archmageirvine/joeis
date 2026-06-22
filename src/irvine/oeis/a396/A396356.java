@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396356 allocated for Alex Stokolos.
+ * A396356 Triangle of convolved numbers of the 3-section of the Fibonacci sequence.
  * @author Sean A. Irvine
  */
 public class A396356 extends Sequence1 {

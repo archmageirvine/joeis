@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A006358 Number of distributive lattices; also number of paths with n turns when light is reflected from 5 glass plates.
+ * A006358 Number of antichains in the product of a fence poset with n elements and a chain with 4 elements; also number of paths with n turns when light is reflected from 5 glass plates.
  * @author Sean A. Irvine
  */
 public class A006358 extends LinearRecurrence {

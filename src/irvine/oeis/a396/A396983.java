@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396983 allocated for Ctibor O. Zizka.
+ * A396983 a(n) = -n * Sum_{i=1..r} (-p_i)^(-e_i) where n = p_1^e_1 *...* p_r^e_r is the prime factorization of n.
  * @author Sean A. Irvine
  */
 public class A396983 extends Sequence1 {

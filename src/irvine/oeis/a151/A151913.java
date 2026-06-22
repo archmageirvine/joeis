@@ -4,7 +4,7 @@ package irvine.oeis.a151;
 import irvine.oeis.a139.A139056;
 
 /**
- * A151913 Numbers n for which (8+n!)/8 is prime.
+ * A151913 Numbers k for which (8+k!)/8 is prime.
  * @author Georg Fischer
  */
 public class A151913 extends A139056 {

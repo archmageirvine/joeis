@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A396934 allocated for Carlo Mitchener.
+ * A396934 Number of pairs (i,j) with 0 &lt;= i,j &lt; 2^n, i AND j = 0, and gcd(i,j) = 1.
  * @author Sean A. Irvine
  */
 public class A396934 extends Sequence0 {

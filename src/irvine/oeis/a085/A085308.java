@@ -7,7 +7,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A085308 Iterate function described in A085308 (= reverse concatenation of prime factors); a(n) is either 1# the fixed point[=prime] if it exists at all: 2# a(2k)=1 labels that no convergence with most even initial values, in contrary mostly rapid divergence is the case; 3# a(n)=0 if n=1 or if the iteration results in nontrivial attractor with cycle length larger than one.
+ * A085308 Iterate function described in A085307 (= reverse concatenation of prime factors); a(n) is either (i) the fixed point [=prime] if it exists, (ii) a(n)=1 if no convergence occurs (most even initial values); (iii) a(n)=0 if n=1 or if the iteration results in a nontrivial cycle.
  * @author Sean A. Irvine
  */
 public class A085308 extends Sequence1 {

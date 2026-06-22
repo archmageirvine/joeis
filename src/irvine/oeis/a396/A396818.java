@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A396818 allocated for Shunya Tamura.
+ * A396818 Total number of separating two-component spanning forests over all unordered pairs of vertices in the wheel graph W_n.
  * @author Sean A. Irvine
  */
 public class A396818 extends AbstractSequence {

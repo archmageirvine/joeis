@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A395640 allocated for Clark Kimberling.
+ * A395640 Triangular array: T(n, k) is the coefficient of x^k in the polynomial - n!*L(n, x), where L(n, x) is the Lagrange interpolating polynomial that passes through (1,0) and (k,1) for k = 2..n+1.
  * @author Sean A. Irvine
  */
 public class A395640 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A396609 allocated for Shreyans Jain.
+ * A396609 Prime numbers whose nearest prime distance in the Ulam spiral exceeds that of every smaller prime number.
  * @author Sean A. Irvine
  */
 public class A396609 extends A000040 {

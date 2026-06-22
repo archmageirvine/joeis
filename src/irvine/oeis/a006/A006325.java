@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A006325 4-dimensional analog of centered polygonal numbers.
+ * A006325 4-dimensional analog of centered polygonal numbers: a(n) = n*(n-1)*(n^2-n+1)/6.
  * @author Sean A. Irvine
  */
 public class A006325 extends Sequence0 {

@@ -5,8 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A128440 Array T(n,k) = floor(k*t^n) where t = golden ratio = (1 + sqrt(5))/2, read by descending antidiagonals.
- *
+ * A128440 Array T(n,k) = floor(k*r^n) where r = golden ratio = (1 + sqrt(5))/2, read by descending antidiagonals.
  * @author Georg Fischer
  */
 public class A128440 extends UpperLeftTriangle {

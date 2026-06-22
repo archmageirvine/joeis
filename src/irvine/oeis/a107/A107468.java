@@ -4,7 +4,7 @@ package irvine.oeis.a107;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A107468 4-symbol substitution made from Fibonacci matrix by one level matrix self-similarity.
+ * A107468 1-limiting word of the morphism 1-&gt;4, 2-&gt;34, 3-&gt;24, 4-&gt;1234.
  * @author Georg Fischer
  */
 public class A107468 extends MorphismFixedPointSequence {

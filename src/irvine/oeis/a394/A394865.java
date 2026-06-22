@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a050.A050292;
 
 /**
- * A394865 allocated for Yifan Xie.
+ * A394865 a(n) is the size of the largest subset A of {1, ..., n} such that x does not divide 2*y for each pair of distinct elements x, y in A.
  * @author Sean A. Irvine
  */
 public class A394865 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A078765.
+ * A397063 a(n) is the smallest integer exceeding 2*Pi*sqrt(n*(n+1)*(2*n+1)/6).
  * @author Sean A. Irvine
  */
 public class A397063 extends Sequence1 {

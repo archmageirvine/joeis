@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396955 allocated for Felix Huber.
+ * A396955 a(n) = n - Omega(|Re((2 + i)^n)|) - Omega(|Im((2 + i)^n)|), where Omega is A001222.
  * @author Sean A. Irvine
  */
 public class A396955 extends Sequence1 {

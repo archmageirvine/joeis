@@ -5,7 +5,7 @@ import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A396976 allocated for Artur Jasinski.
+ * A396976 Decimal expansion of (-1)*Integral_{x=0..1} log(-log(x))/(1 + x^2 + 2*x*cos(1)) dx.
  * @author Sean A. Irvine
  */
 public class A396976 extends DecimalExpansionSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a003.A003557;
 import irvine.oeis.a053.A053669;
 
 /**
- * A393981 allocated for Michael De Vlieger.
+ * A393981 Numbers k such that A003557(k) &lt; A053669(k).
  * @author Sean A. Irvine
  */
 public class A393981 extends Sequence1 {

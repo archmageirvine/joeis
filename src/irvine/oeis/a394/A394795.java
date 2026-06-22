@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A394795 allocated for Juri-Stepan Gerasimov.
+ * A394795 Integers k such that 2^d*3^(k/d) is the average of twin prime pairs for some d.
  * @author Sean A. Irvine
  */
 public class A394795 extends FilterNumberSequence {

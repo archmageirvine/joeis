@@ -6,7 +6,7 @@ import irvine.oeis.a006.A006128;
 import irvine.oeis.a305.A305082;
 
 /**
- * A397077 Name?
+ * A397077 Expansion of g.f. (Sum_{j&gt;=1} x^j/(1-x^j))^2 * Product_{k&gt;=1} (1+x^k)/(1-x^k).
  * new A305082(), new A006128()
  * @author Georg Fischer
  */

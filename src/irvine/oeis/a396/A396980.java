@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a005.A005101;
 
 /**
- * A396980 allocated for Hoang Nguyen.
+ * A396980 Abundant numbers whose preceding five numbers and following five numbers are nonabundant.
  * @author Sean A. Irvine
  */
 public class A396980 extends FilterSequence {

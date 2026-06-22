@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396940 allocated for Matou\u0161 Moravec.
+ * A396940 Lexicographically earliest Latin squares of increasing order, read by rows.
  * @author Sean A. Irvine
  */
 public class A396940 extends Sequence1 {

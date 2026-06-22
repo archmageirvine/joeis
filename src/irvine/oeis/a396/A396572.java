@@ -5,7 +5,7 @@ import irvine.oeis.a006.A006519;
 import irvine.oeis.a085.A085587;
 
 /**
- * A396572 allocated for Gary Sims.
+ * A396572 Number of distinct states before repetition for a circular array of n distinct elements under repeated adjacent XOR operations.
  * @author Sean A. Irvine
  */
 public class A396572 extends Combiner {

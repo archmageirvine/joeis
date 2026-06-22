@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A396888 allocated for Paolo P. Lava.
+ * A396888 Even integers whose ratio of the sum of their nontrivial even divisors to the sum of their nontrivial odd divisors is itself a divisor.
  * @author Sean A. Irvine
  */
 public class A396888 extends FilterNumberSequence {

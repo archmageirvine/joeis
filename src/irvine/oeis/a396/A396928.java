@@ -7,7 +7,7 @@ import irvine.oeis.a087.A087047;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A396928 allocated for Kelvin Voskuijl.
+ * A396928 Decimal expansion of the sum of the reciprocals of tetrahedral factorials A087047.
  * @author Sean A. Irvine
  */
 public class A396928 extends DecimalExpansionSequence {

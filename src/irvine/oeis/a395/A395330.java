@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396469.
+ * A395330 Symmetric array read by antidiagonals: A(n,k) = tau(n*k), where tau = A000005.
  * @author Sean A. Irvine
  */
 public class A395330 extends Sequence1 {

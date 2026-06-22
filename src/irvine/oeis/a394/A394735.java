@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A394735 allocated for Vincenzo Manto.
+ * A394735 Primes prime(k) such that prime(k+1) - prime(k) is a perfect power.
  * @author Sean A. Irvine
  */
 public class A394735 extends A000040 {

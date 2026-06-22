@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A085470.
+ * A397072 a(n) is the first prime p such that the concatenation of the last digits of n consecutive primes starting with p is prime.
  * @author Sean A. Irvine
  */
 public class A397072 extends Sequence1 {

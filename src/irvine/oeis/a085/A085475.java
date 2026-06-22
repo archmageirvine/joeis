@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A085475 Square array of binomial related numbers, read by antidiagonals.
+ * A085475 Square array read by antidiagonals: T(n,k) = binomial(2*n+k, k) - binomial(2*n, k).
  * @author Sean A. Irvine
  */
 public class A085475 extends Sequence0 {

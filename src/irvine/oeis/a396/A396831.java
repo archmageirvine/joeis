@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396831 allocated for Nayanesh Reddy Galiveeti.
+ * A396831 a(n) is the n-th digit after the decimal point in the decimal expansion of the natural logarithm of n.
  * @author Sean A. Irvine
  */
 public class A396831 extends Sequence1 {

@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396826 allocated for Felix Huber.
+ * A396826 a(n) is the number of distinct integer-sided triangles (x, y, z) with sopfr(x) = sopfr(y) = sopfr(z) = n, where sopfr is A001414.
  * @author Sean A. Irvine
  */
 public class A396826 extends Sequence1 {

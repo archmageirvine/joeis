@@ -2752,3 +2752,4 @@ A084965 Number of labeled totally ordered semigroups with n elements.
 A084973 The maximum departure from the x axis, rounded to the nearest integer, in each cycle of the zeta function for increasingly larger negative values.
 A085092 Numerators of constant term in a formal analog of Bernoulli numbers.
 A085430 a(n) is the minimal m such that the group GL(m,2) has an element of order n.
+A085506 Number of {-1,0,1} n X n matrices that have (real and) positive eigenvalues.

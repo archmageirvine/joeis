@@ -4,7 +4,7 @@ package irvine.oeis.a395;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A395241 allocated for Carlo Mitchener.
+ * A395241 a(n) = n^2*(4*n + 3).
  * @author Georg Fischer
  */
 public class A395241 extends HolonomicRecurrence {

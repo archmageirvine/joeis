@@ -7,7 +7,7 @@ import irvine.oeis.a167.A167484;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A396930 allocated for Kelvin Voskuijl.
+ * A396930 Decimal expansion of the sum of the reciprocals of pentagonal pyramidal factorials A167484.
  * @author Sean A. Irvine
  */
 public class A396930 extends DecimalExpansionSequence {

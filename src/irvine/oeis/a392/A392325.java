@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A392325 allocated for Lars Verhaevert.
+ * A392325 Vampire numbers in base 12 (definition 2): decimal values of base-12 integers n for which there exist fangs x and y, where x and y have the same number of base-12 digits, x * y = n, the concatenation of the base-12 digits of x and y is a permutation of the base-12 digits of n, and not both x and y end in 0 (base 12).
  * @author Sean A. Irvine
  */
 public class A392325 extends Sequence1 {

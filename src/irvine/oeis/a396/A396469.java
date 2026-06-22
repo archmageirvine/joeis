@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396469 allocated for Nakul Badjatya.
+ * A396469 Primes not representable as sums of the form q_1^{k_1} + ... + q_r^{k_r}, where q_1,...,q_r are distinct earlier terms of this sequence and k_i &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A396469 extends Sequence1 {

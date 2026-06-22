@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396954 allocated for Noah A Rosenberg.
+ * A396954 Number of rooted binary time-consistent leaf-labeled galled trees with n leaves and exactly 1 gall.
  * @author Sean A. Irvine
  */
 public class A396954 extends Sequence1 {

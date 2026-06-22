@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A173146 sigma(phi(n)) = rad(n), where phi(n)= Euler totient function, sigma(n)= sum of divisors of n, rad(n)= product of primes that divide n.
+ * A173146 Numbers k such that sigma(phi(k)) = rad(k), where phi(k) = Euler totient function, sigma(k) = sum of divisors of k, rad(k) = product of primes that divide k.
  * @author Georg Fischer
  */
 public class A173146 extends FilterNumberSequence {

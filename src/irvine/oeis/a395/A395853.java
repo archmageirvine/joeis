@@ -5,7 +5,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A395853 allocated for Robert Israel.
+ * A395853 Numbers that can be written as the sum of a Fibonacci number and the square of a Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A395853 extends FilterNumberSequence {

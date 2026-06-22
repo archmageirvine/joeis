@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395114 allocated for Charlie Heath.
+ * A395114 Irregular triangle, next row is the previous row with the difference between consecutive numbers inserted between, starting with row 1 1.
  * @author Sean A. Irvine
  */
 public class A395114 extends Sequence1 {

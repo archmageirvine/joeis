@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A395865 allocated for Zhuorui He.
+ * A395865 Decimal expansion of 2^1024 - 2^971.
  * @author Sean A. Irvine
  */
 public class A395865 extends FiniteSequence {

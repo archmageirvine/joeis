@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A085477 Numbers n such that there is at least one k dividing (n-1)!-1 (n&lt;=k&lt;=2n).
+ * A085477 Numbers m such that there is at least one k dividing (m-1)!-1 (m&lt;=k&lt;=2m).
  * @author Sean A. Irvine
  */
 public class A085477 extends FilterNumberSequence {

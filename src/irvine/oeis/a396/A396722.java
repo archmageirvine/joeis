@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A396722 a(n) = (4^n/2) p(n, 5/2), where p(n,x) is the Lagrange interpolating polynomial through (1,0) and (k,1) for k=2..n.
+ * A396722 a(n) = (4^n/2) * p(n, 5/2), where p(n,x) is the Lagrange interpolating polynomial through (1,0) and (k,1) for k=2..n+1.
  * @author Sean A. Irvine
  */
 public class A396722 extends Sequence0 {

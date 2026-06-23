@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A397070 allocated for Karan Sharma.
+ * A397070 Norms of multiplicatively perfect Gaussian integers (Gaussian integers having exactly four divisors up to associates).
  * @author Sean A. Irvine
  */
 public class A397070 extends FilterNumberSequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A038670 Concatenations of two squares in two ways.
+ * A038670 Concatenations of two squares in exactly two ways.
  * @author Sean A. Irvine
  */
 public class A038670 extends Sequence1 {

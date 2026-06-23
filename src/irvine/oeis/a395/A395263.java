@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A395263 allocated for Conner Silverstein.
+ * A395263 Maximum number of sides of the convex hull of an n-cell polyomino.
  * @author Sean A. Irvine
  */
 public class A395263 extends Sequence1 {

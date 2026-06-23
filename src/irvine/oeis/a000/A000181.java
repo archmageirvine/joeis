@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000181 Coefficients of m\u00e9nage hit polynomials.
+ * A000181 a(n) = A058087(n,n-4).
  * @author Sean A. Irvine
  */
 public class A000181 extends A000159 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A153038 Denominators of the fixed point a=(a_1,a_2,...) of the transformation x&apos;= fix(x) where fix(x)_n = Sum_{d|n} d x_d, i.e., fix(a)=a.
+ * A153038 Denominators of the fixed point a=(a_1,a_2,...) of the transformation x'= fix(x) where fix(x)_n = Sum_{d|n} d x_d, i.e., fix(a)=a.
  * @author Georg Fischer
  */
 public class A153038 extends LambdaSequence {

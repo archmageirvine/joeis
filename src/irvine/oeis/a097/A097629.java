@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a038.A038058;
 
 /**
- * A097629 a(n) = 2*(2n)^(n-2).
+ * A097629 a(n) = 2*(2*n)^(n-2).
  * @author Georg Fischer
  */
 public class A097629 extends AbstractSequence {

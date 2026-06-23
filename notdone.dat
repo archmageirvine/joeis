@@ -986,11 +986,6 @@ A028411 Number of types of Boolean functions of n variables under a certain grou
 A028420 Number of monomer-dimer tilings of n X n chessboard, existing b-file unknown algorithm
 A028441 Triangulations of 4-dimensional cyclic polytopes, cf. A007815
 A028446 Number of perfect matchings in graph P_{2n} X P_{2n} X P_{2n}, probably hard
-A028459 Number of perfect matchings in graph P_{2} X C_{7} X P_{n}, long g.f. or recurrence will exist
-A028461 Number of perfect matchings in graph P_{3} X C_{4} X P_{n}, long g.f. or recurrence will exist
-A028462 Number of perfect matchings in graph P_{3} X C_{5} X P_{2n}, long g.f. or recurrence will exist
-A028463 Number of perfect matchings in graph P_{4} X C_{4} X P_{n}, long g.f. or recurrence will exist
-A028466 Number of perfect matchings in graph C_{3} X C_{5} X P_{2n}, long g.f. or recurrence will exist
 A028475 Total number of Hamiltonian cycles avoiding the root-edge in rooted cubic bipartite planar maps with 2n nodes, paper describes algorithm insufficient detail
 A028497 Maximum number of facets of n-dimensional polytope with {0,1}-coordinates, hard
 A028847 Number of composite labeled topologies on n points
@@ -2753,3 +2748,4 @@ A084973 The maximum departure from the x axis, rounded to the nearest integer, i
 A085092 Numerators of constant term in a formal analog of Bernoulli numbers.
 A085430 a(n) is the minimal m such that the group GL(m,2) has an element of order n.
 A085506 Number of {-1,0,1} n X n matrices that have (real and) positive eigenvalues.
+A085514 Integers n representable as the product of the sum of three nonzero integers with the sum of their reciprocals: n=(x+y+z)*(1/x+1/y+1/z).

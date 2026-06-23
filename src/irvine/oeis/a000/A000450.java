@@ -5,7 +5,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a058.A058057;
 
 /**
- * A000450 Coefficients of m\u00e9nage hit polynomials.
+ * A000450 a(n) = A058057(n,n-4).
  * @author Sean A. Irvine
  */
 public class A000450 extends AbstractSequence {

@@ -10,7 +10,7 @@ import irvine.oeis.a131.A131988;
 import irvine.util.Pair;
 
 /**
- * A396911 allocated for Witold Tatkiewicz.
+ * A396911 Shortest path indices during walk over golden ratio phyllotaxis starting at the center.
  * @author Sean A. Irvine
  */
 public class A396911 extends Sequence0 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397099 allocated for Hoang Nguyen.
+ * A397099 Excluding powers of 2 and perfect numbers, numbers whose abundancy is closer to 2 than any smaller number.
  * @author Sean A. Irvine
  */
 public class A397099 extends Sequence1 {

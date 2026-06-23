@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A394240 allocated for Zinuo Cheng.
+ * A394240 Number of regions formed by extending the faces of a regular n-gonal pyramid.
  * @author Sean A. Irvine
  */
 public class A394240 extends Sequence3 {

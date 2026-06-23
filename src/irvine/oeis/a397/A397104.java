@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a275.A275314;
 
 /**
- * A397104 allocated for David De Roure.
+ * A397104 Triangle read by rows: T(n, k) = n + A275314(k) - 1, for 1 &lt;= k &lt;= n and gcd(n, k) = 1.
  * @author Sean A. Irvine
  */
 public class A397104 extends Sequence1 {

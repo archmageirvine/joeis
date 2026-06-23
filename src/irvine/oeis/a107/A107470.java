@@ -4,7 +4,7 @@ package irvine.oeis.a107;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A107470 Bombieri matrix self-similar doubling to 9 symbols in substitution.
+ * A107470 1-limiting word of the morphism 1-&gt;111133779, 2-&gt;113379, 3-&gt;228, 4-&gt;113779, 5-&gt;1379, 6-&gt;28, 7-&gt;446, 8-&gt;46, 9-&gt;5.
  * @author Georg Fischer
  */
 public class A107470 extends MorphismFixedPointSequence {

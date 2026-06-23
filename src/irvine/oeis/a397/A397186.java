@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397186 allocated for Stefano Spezia.
+ * A397186 Array read by ascending antidiagonals: A(n,k) = ((k + 1)^prime(n) - k^prime(n) - 1)/prime(n).
  * @author Sean A. Irvine
  */
 public class A397186 extends Sequence1 {

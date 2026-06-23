@@ -4,7 +4,7 @@ package irvine.oeis.a107;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A107474 4-symbol substitution that a matrix self-similar Fibonacci Matrix isomer.
+ * A107474 1-limiting word of the morphism 1-&gt;2, 2-&gt;1234, 3-&gt;24, 4-&gt;23.
  * @author Georg Fischer
  */
 public class A107474 extends MorphismFixedPointSequence {

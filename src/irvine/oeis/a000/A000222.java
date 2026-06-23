@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A000222 Coefficients of m\u00e9nage hit polynomials.
+ * A000222 a(n) = A058057(n,n-2).
  * @author Sean A. Irvine
  */
 public class A000222 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392341 allocated for Shahin Saadati.
+ * A392341 Number of pairs (x, y) with 1 &lt;= x &lt; y &lt;= n such that gcd(x, y) is a perfect square.
  * @author Sean A. Irvine
  */
 public class A392341 extends Sequence1 {

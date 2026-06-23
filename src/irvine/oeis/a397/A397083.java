@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397083 allocated for Bartlomiej Pawlik.
+ * A397083 Start with a(1) = 2; to get a(n+1) insert in a(n) at the leftmost possible position the smallest possible digit such that the new number is a prime.
  * @author Sean A. Irvine
  */
 public class A397083 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A396630 allocated for Andrea Cutri.
+ * A396630 Number of fixed-content bracelets of length n, summed over all integer partitions of n, that are different from their mirror image and have no nontrivial rotational symmetry.
  * @author Sean A. Irvine
  */
 public class A396630 extends Sequence1 {

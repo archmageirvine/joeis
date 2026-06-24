@@ -1,14 +1,13 @@
 package irvine.oeis.a183;
 // manually 2021-05-25
 
-import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A183641 Number of (n+1)X9 0..3 arrays with every 2x2 subblock summing to 6.
  * @author Georg Fischer
  */
-public class A183641 extends GeneratingFunctionSequence implements Conjectural {
+public class A183641 extends GeneratingFunctionSequence {
 
 
   /** Construct the sequence. */

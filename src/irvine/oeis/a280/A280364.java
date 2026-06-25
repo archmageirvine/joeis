@@ -8,7 +8,7 @@ import irvine.oeis.recur.GeneratingFunctionSequence;
  * @author Georg Fischer
  */
 public class A280364 extends GeneratingFunctionSequence {
-  
+
   /** Construct the sequence. */
   public A280364() {
     super(0, new long[] {0, 12, 23, -3, -3, 3},

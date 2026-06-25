@@ -543,7 +543,6 @@ A006890 Decimal expansion of Feigenbaum bifurcation velocity
 A006891 Decimal expansion of Feigenbaum reduction parameter
 A006901 Number of caskets of order n (French paper, no obvious formula)
 A006910 Theta series of laminated lattice LAMBDA_11^{min}
-A006911 Theta series of laminated lattice LAMBDA_11^{max}
 A006912 Theta series of laminated lattice LAMBDA_12^{min}
 A006913 Theta series of laminated lattice LAMBDA_12^{mid}
 A006914 Theta series of laminated lattice LAMBDA_12^{max}

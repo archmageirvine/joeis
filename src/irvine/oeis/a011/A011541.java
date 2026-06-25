@@ -28,7 +28,7 @@ public class A011541 extends Sequence1 {
       mCubes.add(mCurrentCube);
       for (final Z cube : mCubes) {
         final Z v = mCurrentCube.add(cube);
-        final int c = mCounts.merge(v, 1, (x, y) -> x + y);
+        final int c = mCounts.merge(v, 1, Integer::sum);
         if (mFirst[c] == null || mFirst[c].compareTo(v) > 0) {
           mFirst[c] = v;
         }

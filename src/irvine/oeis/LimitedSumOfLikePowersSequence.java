@@ -41,7 +41,29 @@ public class LimitedSumOfLikePowersSequence extends Sequence1 {
   private final boolean mExactWays;
   private final int mMinWays;
   private final int mAdd;
-  private int mM = 1;
+  private final int mStart;
+  private int mM;
+
+  /**
+   * Construct the sequence.
+   * @param power the power to be used in each term
+   * @param numTerms number of terms in the sum
+   * @param minWays minimum numbers of ways to make the sum
+   * @param exact number of ways must be exact
+   * @param distinct whether all the terms are distinct
+   */
+  public LimitedSumOfLikePowersSequence(final int power, final int numTerms, final int minWays, final int minBase, final boolean exact, final boolean distinct) {
+    mPower = power;
+    mNumTerms = numTerms;
+    mExactWays = exact;
+    mMinWays = minWays;
+    mStart = minBase;
+    mM = minBase;
+    mAdd = distinct ? 1 : 0;
+    if (mNumTerms == 0) {
+      mA.put(Z.ZERO, new MutableInteger(1));
+    }
+  }
 
   /**
    * Construct the sequence.
@@ -52,14 +74,7 @@ public class LimitedSumOfLikePowersSequence extends Sequence1 {
    * @param distinct whether all the terms are distinct
    */
   public LimitedSumOfLikePowersSequence(final int power, final int numTerms, final int minWays, final boolean exact, final boolean distinct) {
-    mPower = power;
-    mNumTerms = numTerms;
-    mExactWays = exact;
-    mMinWays = minWays;
-    mAdd = distinct ? 1 : 0;
-    if (mNumTerms == 0) {
-      mA.put(Z.ZERO, new MutableInteger(1));
-    }
+    this(power, numTerms, minWays, 1, exact, distinct);
   }
 
   /**
@@ -105,7 +120,7 @@ public class LimitedSumOfLikePowersSequence extends Sequence1 {
   public Z next() {
     while (true) {
       while (mA.isEmpty() || mA.firstKey().compareTo(pow(mM)) >= 0) {
-        insertTerms(pow(mM), 1, 1 - mAdd);
+        insertTerms(pow(mM), 1, mStart - mAdd);
         ++mM; // we finished adding all sums of powers up to mM^p
         if (mVerbose && mM % 10 == 0) {
           StringUtils.message("Search done to " + mM + "^" + mPower);

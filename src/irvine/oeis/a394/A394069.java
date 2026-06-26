@@ -12,8 +12,6 @@ public class A394069 extends Sequence1 {
 
   private long mN = 0;
 
-  // a(n) = binomial(n+19,n) - 4*binomial(n+15,n) + 4*binomial(n+12,n) + 2*binomial(n+11,n) - 4*binomial(n+9,n) + binomial(n+7,n).
-
   @Override
   public Z next() {
     ++mN;

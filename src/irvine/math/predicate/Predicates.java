@@ -16,6 +16,8 @@ public final class Predicates {
   public static final Predicate SQUARE = new Square(); // =A000290
   /** Test if a number is a cube. */
   public static final Predicate CUBE = new Cube(); // =A000578
+  /** Test if a number is a 4th power. */
+  public static final Predicate BIQUADRATE = new BiQuadrate(); // =A000583
   /** Test if a number is a non-trivial power. */
   public static final Predicate POWER = new Power(); // =A001597
   /** Test if a number is a prime power. */

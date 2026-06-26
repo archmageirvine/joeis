@@ -10,7 +10,7 @@ import irvine.util.array.LongDynamicLongArray;
  */
 public class A394611 extends CachedSequence {
 
-  private final LongDynamicLongArray mCounts = new LongDynamicLongArray();
+  protected final LongDynamicLongArray mCounts = new LongDynamicLongArray();
 
   /** Construct the sequence. */
   public A394611() {

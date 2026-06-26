@@ -229,6 +229,8 @@ public final class Functions {
   public static final Function2D DIGIT_MIN = new DigitMin();
   /** Maximum digit in a number. */
   public static final Function2D DIGIT_MAX = new DigitMax();
+  /** Rotate left by one digit. */
+  public static final Function2D ROTATE_LEFT = new RotateLeft();
   /** Rotate right by one digit. */
   public static final Function2D ROTATE_RIGHT = new RotateRight();
   /** Multifactorial (including double factorial). */

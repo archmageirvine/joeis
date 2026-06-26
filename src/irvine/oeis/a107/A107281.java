@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A107281 a(0) = 1, a(1) = 1, a(2) = 2 and for n &gt;= 1: a(n+1) = SORT[a(n) + a(n-1) + a(n-2)] where SORT places digits in ascending order and deletes 0&apos;s.
+ * A107281 a(0) = 1, a(1) = 1, a(2) = 2 and for n &gt;= 1: a(n+1) = SORT[a(n) + a(n-1) + a(n-2)] where SORT places digits in ascending order and deletes 0's.
  * @author Georg Fischer
  */
 public class A107281 extends MultiTransformSequence {

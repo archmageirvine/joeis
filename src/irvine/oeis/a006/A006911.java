@@ -25,6 +25,7 @@ public class A006911 extends GfSequence {
     final Series<Q> e1q8 = SQ.pow(e1, 8);
 
     final Series<Q> e2q2 = SQ.pow(e2, 2);
+    final Series<Q> e2q3 = SQ.pow(e2, 3);
     final Series<Q> e2q7 = SQ.pow(e2, 7);
     final Series<Q> e2q8 = SQ.pow(e2, 8);
     final Series<Q> e2q9 = SQ.pow(e2, 9);
@@ -37,6 +38,7 @@ public class A006911 extends GfSequence {
     final Series<Q> e4q12 = SQ.pow(e4, 12);
 
     final Series<Q> e8q2 = SQ.pow(e8, 2);
+    final Series<Q> e8q4 = SQ.pow(e8, 4);
     final Series<Q> e8q5 = SQ.pow(e8, 5);
     final Series<Q> e8q6 = SQ.pow(e8, 6);
     final Series<Q> e8q7 = SQ.pow(e8, 7);
@@ -60,19 +62,17 @@ public class A006911 extends GfSequence {
     final Series<Q> t1 = SQ.divide(SQ.multiply(SQ.multiply(e2q12, SQ.multiply(e4q8, e16)), new Q(169)), SQ.multiply(e1q8, e32q2));
     final Series<Q> t2 = SQ.divide(SQ.multiply(SQ.shift(SQ.multiply(e2q12, SQ.multiply(e4q8, SQ.multiply(e8q2, e32q2))), 2), new Q(130)), SQ.multiply(e1q8, e16q5));
     final Series<Q> t3 = SQ.divide(SQ.multiply(SQ.shift(SQ.multiply(e2q12, SQ.multiply(e4q10, e16q5)), 1), Q.EIGHT), SQ.multiply(e1q8, SQ.multiply(e8q6, e32q2)));
-    final Series<Q> t4 = SQ.divide(SQ.multiply(SQ.shift(SQ.multiply(e2q12, SQ.multiply(e4q10, e32q2)), 3), new Q(16)), SQ.multiply(e1q8, SQ.multiply(SQ.pow(e8, 4), e16)));
+    final Series<Q> t4 = SQ.divide(SQ.multiply(SQ.shift(SQ.multiply(e2q12, SQ.multiply(e4q10, e32q2)), 3), new Q(16)), SQ.multiply(e1q8, SQ.multiply(e8q4, e16)));
     final Series<Q> t5 = SQ.divide(SQ.multiply(SQ.shift(SQ.multiply(e2q12, SQ.multiply(e4q12, e16q9)), 2), Q.FOUR), SQ.multiply(e1q8, SQ.multiply(e8q12, e32q2)));
     final Series<Q> t6 = SQ.divide(SQ.multiply(SQ.shift(SQ.multiply(e2q12, SQ.multiply(e4q12, SQ.multiply(e16q3, e32q2))), 4), Q.EIGHT), SQ.multiply(e1q8, e8q10));
     final Series<Q> t7 = SQ.divide(SQ.multiply(SQ.multiply(e2q7, SQ.multiply(e4q8, e8q5)), new Q(256)), SQ.multiply(e1q6, SQ.multiply(e16, e32q2)));
     final Series<Q> t8 = SQ.divide(SQ.multiply(SQ.shift(SQ.multiply(e2q7, SQ.multiply(e4q8, SQ.multiply(e8q7, e32q2))), 2), new Q(512)), SQ.multiply(e1q6, e16q7));
-    final Series<Q> t9 = SQ.divide(SQ.multiply(SQ.multiply(e2q9, SQ.multiply(e4q3, SQ.multiply(e8q5, e16q4))), new Q(104)),
-      SQ.multiply(e1q6, e32q4));
+    final Series<Q> t9 = SQ.divide(SQ.multiply(SQ.multiply(e2q9, SQ.multiply(e4q3, SQ.multiply(e8q5, e16q4))), new Q(104)), SQ.multiply(e1q6, e32q4));
     final Series<Q> t10 = SQ.divide(SQ.multiply(SQ.shift(SQ.multiply(e2q9, SQ.multiply(e4q5, e16q8)), 1), new Q(208)), SQ.multiply(e1q6, SQ.multiply(e8, e32q4)));
-    final Series<Q> t11 = SQ.divide(SQ.multiply(SQ.multiply(e2q2, SQ.multiply(e4q8, e8q10)), new Q(448)), SQ.multiply(e1q4, SQ.multiply(SQ.pow(e16, 3), e32q2)));
+    final Series<Q> t11 = SQ.divide(SQ.multiply(SQ.multiply(e2q2, SQ.multiply(e4q8, e8q10)), new Q(448)), SQ.multiply(e1q4, SQ.multiply(e16q3, e32q2)));
     final Series<Q> t12 = SQ.divide(SQ.multiply(SQ.shift(SQ.multiply(e2q2, SQ.multiply(e4q8, SQ.multiply(e8q12, e32q2))), 2), new Q(384)), SQ.multiply(e1q4, e16q9));
-    final Series<Q> t13 = SQ.divide(SQ.multiply(SQ.shift(SQ.multiply(e4q10, e8q9), 1), new Q(768)), SQ.multiply(e1q2, SQ.multiply(SQ.pow(e2, 3), SQ.multiply(e16, e32q2))));
-    final Series<Q> t14 = SQ.divide(SQ.multiply(SQ.shift(SQ.multiply(e4q10, SQ.multiply(e8q11, e32q2)), 3), new Q(512)),
-      SQ.multiply(e1q2, SQ.multiply(SQ.pow(e2, 3), e16q7)));
+    final Series<Q> t13 = SQ.divide(SQ.multiply(SQ.shift(SQ.multiply(e4q10, e8q9), 1), new Q(768)), SQ.multiply(e1q2, SQ.multiply(e2q3, SQ.multiply(e16, e32q2))));
+    final Series<Q> t14 = SQ.divide(SQ.multiply(SQ.shift(SQ.multiply(e4q10, SQ.multiply(e8q11, e32q2)), 3), new Q(512)), SQ.multiply(e1q2, SQ.multiply(e2q3, e16q7)));
     final Series<Q> t15 = SQ.divide(SQ.multiply(SQ.multiply(e4q12, SQ.multiply(e8q6, e16q7)), new Q(256)), SQ.multiply(e2q8, e32q6));
     final Series<Q> t16 = SQ.divide(SQ.multiply(SQ.shift(SQ.multiply(e4q12, SQ.multiply(e8q8, e16)), 2), new Q(1536)), SQ.multiply(e2q8, e32q2));
 

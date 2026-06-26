@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A137926 a(n) = the largest divisor of n that is coprime to A000005(n). (A000005(n) = the number of positive divisors of n.)
+ * A137926 a(n) = the largest divisor of n that is coprime to A000005(n). (A000005(n) = the number of positive divisors of n.).
  * @author Georg Fischer
  */
 public class A137926 extends LambdaSequence {

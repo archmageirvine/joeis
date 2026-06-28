@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A394611.
+ * A397221 Numbers m such that rad(m) * omega(m) = m.
  * @author Sean A. Irvine
  */
 public class A397221 extends FilterNumberSequence {

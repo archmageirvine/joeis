@@ -4,7 +4,7 @@ package irvine.oeis.a396;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A396317 Number of n X n binary matrices with exactly 8 1&apos;s such that there are no odd number of 1&apos;s in a row and no odd number of 1&apos;s in a column.
+ * A396317 Number of n X n binary matrices with exactly 8 1's such that there are no odd number of 1's in a row and no odd number of 1's in a column.
  * @author Georg Fischer
  */
 public class A396317 extends HolonomicRecurrence {

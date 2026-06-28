@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A086731 Decimal expansion of sum(1/(6*m+5)^2,m=0..infinity).
+ * A086731 Decimal expansion of Sum_{m&gt;=0} 1/(6*m+5)^2.
  * Formula: 1/36 PolyGamma[1, 5/6], 10, 120 sum(1/(6*m+5)^2, m=0..infinity).
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A397051 allocated for Stefano Spezia.
+ * A397051 a(n) is the number of n-digit terms in A397050.
  * @author Sean A. Irvine
  */
 public class A397051 extends Sequence1 {

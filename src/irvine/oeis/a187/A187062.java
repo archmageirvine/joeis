@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A187062 Expansion of 2*x^2 *(4 +7*x +5*x^2 -x^3 -4*x^4 +6*x^6 +4*x^7 -x^8 -2*x^9) / ((1+x)^2 *(1+x+x^2)^2 *(1-x)^4) .
+ * A187062 Expansion of 2*x^2 *(4 +7*x +5*x^2 -x^3 -4*x^4 +6*x^6 +4*x^7 -x^8 -2*x^9) / ((1+x)^2 *(1+x+x^2)^2 *(1-x)^4).
  * @author Sean A. Irvine
  */
 public class A187062 extends Sequence1 {

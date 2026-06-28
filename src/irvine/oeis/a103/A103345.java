@@ -4,7 +4,7 @@ package irvine.oeis.a103;
 import irvine.oeis.a099.A099828;
 
 /**
- * A103345 Numerator of Sum_{k=1..n} 1/k^6 = Zeta(6,n).
+ * A103345 Numerator of Sum_{k=1..n} 1/k^6 = zeta(6,n).
  * @author Georg Fischer
  */
 public class A103345 extends A099828 {

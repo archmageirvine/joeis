@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397185 allocated for Jose Manuel Briceno Mendoza.
+ * A397185 a(n) is the smallest positive integer m such that every even integer from 2 to 2n can be expressed as a sum of two (not necessarily distinct) 1-bit positions in the binary expansion of m.
  * @author Sean A. Irvine
  */
 public class A397185 extends Sequence1 {

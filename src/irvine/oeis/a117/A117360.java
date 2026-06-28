@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A117360 Numbers m such that m and 2*m+1 have the same number of prime factors.
+ * A117360 Numbers m such that m and 2*m+1 have the same number of prime factors (with repetitions).
  * @author Georg Fischer
  */
 public class A117360 extends FilterNumberSequence {

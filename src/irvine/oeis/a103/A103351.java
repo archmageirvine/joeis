@@ -4,7 +4,7 @@ package irvine.oeis.a103;
 import irvine.oeis.a099.A099828;
 
 /**
- * A103351 Numerators of sum_{k=1..n} 1/k^9 = Zeta(9,n).
+ * A103351 Numerator of Sum_{k=1..n} 1/k^9 = zeta(9,n).
  * @author Georg Fischer
  */
 public class A103351 extends A099828 {

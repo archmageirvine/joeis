@@ -8,7 +8,7 @@ import irvine.oeis.a006.A006450;
 import irvine.oeis.a007.A007821;
 
 /**
- * A168272 Abs(prime(prime(n))-prime(nonprime(n))).
+ * A168272 a(n) = abs(prime(prime(n))-prime(nonprime(n))).
  * @author Georg Fischer
  */
 public class A168272 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A116441 Numbers k which when sandwiched between two 6&apos;s give a multiple of k.
+ * A116441 Numbers k which when sandwiched between two 6's give a multiple of k.
  * @author Georg Fischer
  */
 public class A116441 extends FilterNumberSequence {

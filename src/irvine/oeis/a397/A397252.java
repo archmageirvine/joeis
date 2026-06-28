@@ -4,7 +4,7 @@ import irvine.oeis.a000.A000720;
 import irvine.oeis.transform.GilbreathTransformSequence;
 
 /**
- * A397252 allocated for Jan Pelicon.
+ * A397252 Gilbreath transform of the prime counting function pi(n) (A000720) with pi(0) = 0.
  * @author Sean A. Irvine
  */
 public class A397252 extends GilbreathTransformSequence {

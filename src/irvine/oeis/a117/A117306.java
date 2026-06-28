@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A117306 Numbers k such that the counts of 0&apos;s, 1&apos;s and 2&apos;s are the same in the ternary expansion of 2^k.
+ * A117306 Numbers k such that the counts of 0's, 1's and 2's are the same in the ternary expansion of 2^k.
  * @author Georg Fischer
  */
 public class A117306 extends FilterNumberSequence {

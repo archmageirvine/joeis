@@ -5,7 +5,7 @@ import irvine.oeis.a214.A214550;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A086728 Decimal expansion of sum(1/(6*m+2)^2,m=0..infinity).
+ * A086728 Decimal expansion of Sum_{m&gt;=0} 1/(6*m+2)^2.
  * @author Georg Fischer
  */
 public class A086728 extends DecimalExpansionSequence {

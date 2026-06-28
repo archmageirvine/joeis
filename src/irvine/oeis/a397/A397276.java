@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397276 allocated for Yashmit Vats.
+ * A397276 Triangle read by rows: T(n,k) is the smallest prime p such that p^k in base n contains exactly k distinct digits, for 1 &lt;= k &lt;= n (n &gt;= 2), and T(1,1) = 2.
  * @author Sean A. Irvine
  */
 public class A397276 extends Sequence1 {

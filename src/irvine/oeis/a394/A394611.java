@@ -5,7 +5,7 @@ import irvine.oeis.CachedSequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A394611 allocated for Joshua B. Weinstein.
+ * A394611 a(1) = 0. For n &gt; 1, a(n) is the number of ways to write a(n-1) as the sum of two previous terms with distinct positions in the sequence.
  * @author Sean A. Irvine
  */
 public class A394611 extends CachedSequence {

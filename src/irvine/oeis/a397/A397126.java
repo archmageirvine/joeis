@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001694;
 
 /**
- * A394611.
+ * A397126 Lexicographically earliest sequence of distinct powerful numbers such that for any prime p, any run of consecutive multiples of p has length exactly 2.
  * @author Sean A. Irvine
  */
 public class A397126 extends Sequence1 {

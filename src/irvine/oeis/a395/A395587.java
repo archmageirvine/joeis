@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395587 allocated for Rhys Feltman.
+ * A395587 Smallest prime p such that p^(q^2) = +-1 mod q^5 is true when q is any of the first n primes.
  * @author Sean A. Irvine
  */
 public class A395587 extends Sequence1 {

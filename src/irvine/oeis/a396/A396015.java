@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a018.A018804;
 
 /**
- * A394611.
+ * A396015 Numbers k such that A018804(k) = A018804(k - i) for some 1 &lt;= i &lt; k.
  * @author Sean A. Irvine
  */
 public class A396015 extends Sequence1 {

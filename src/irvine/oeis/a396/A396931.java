@@ -7,7 +7,7 @@ import irvine.oeis.a279.A279662;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A396931 allocated for Kelvin Voskuijl.
+ * A396931 Decimal expansion of the sum of the reciprocals of A279662.
  * @author Sean A. Irvine
  */
 public class A396931 extends DecimalExpansionSequence {

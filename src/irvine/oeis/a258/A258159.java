@@ -6,7 +6,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a004.A004526;
 
 /**
- * A258159 Numbers n such that A053645(n) (n with the most significant binary digit removed) divides A004526(n) (n with the least significant binary digit removed).
+ * A258159 Numbers n such that A053645(n) (n with the most significant binary digit removed) is nonzero and divides A004526(n) (n with the least significant binary digit removed).
  * @author Georg Fischer
  */
 public class A258159 extends FilterNumberSequence {

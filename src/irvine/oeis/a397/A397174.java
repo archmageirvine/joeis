@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a394.A394611;
 
 /**
- * A394611 allocated for Joshua B. Weinstein.
+ * A397174 The rows of A397173 converge to this sequence.
  * @author Sean A. Irvine
  */
 public class A397174 extends A394611 {

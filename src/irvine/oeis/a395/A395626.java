@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A395626 allocated for M. F. Hasler.
+ * A395626 Numbers x*y such that |x-y| is a square, with nonnegative integers x and y.
  * @author Sean A. Irvine
  */
 public class A395626 extends FilterNumberSequence {

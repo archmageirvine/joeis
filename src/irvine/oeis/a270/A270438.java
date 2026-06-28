@@ -7,7 +7,7 @@ import irvine.oeis.a014.A014081;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A270438 a(n) is the number of entries == 1 mod 4 in row n of Pascal&apos;s triangle.
+ * A270438 a(n) is the number of entries == 1 mod 4 in row n of Pascal's triangle.
  * @author Georg Fischer
  */
 public class A270438 extends SingleTransformSequence {

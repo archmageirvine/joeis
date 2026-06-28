@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A085560 a(0) = 1, then (for n&gt;0) a(n) = floor[(e + 1/e)*a(n-1) - a(n-2)].
+ * A085560 a(0) = 1, a(1)=3, a(n) = floor((e + 1/e)*a(n-1) - a(n-2)).
  * @author Sean A. Irvine
  */
 public class A085560 extends Sequence0 {

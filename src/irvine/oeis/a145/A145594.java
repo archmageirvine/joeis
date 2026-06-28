@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
 
 /**
- * A145594 A145593(n) mod 9.
+ * A145594 a(n) = A145593(n) mod 9.
  * @author Georg Fischer
  */
 public class A145594 extends Sequence0 {

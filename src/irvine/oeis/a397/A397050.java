@@ -3,7 +3,7 @@ package irvine.oeis.a397;
 import irvine.oeis.FilterSequence;
 
 /**
- * A397050 allocated for Stefano Spezia.
+ * A397050 Prime numbers in A397046.
  * @author Sean A. Irvine
  */
 public class A397050 extends FilterSequence {

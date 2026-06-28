@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A139729 9^n mod 4^n.
+ * A139729 a(n) = 9^n mod 4^n.
  * @author Georg Fischer
  */
 public class A139729 extends Sequence0 {

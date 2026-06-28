@@ -4,7 +4,7 @@ package irvine.oeis.a397;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A397110 Upper (1,1/2) midsequence of (floor[n/2]^2) and (ceiling[n/2]^2); see Comments.
+ * A397110 Upper (1,1/2) midsequence of (floor[n/2]^2) and (ceiling[n/3]^2); see Comments.
  * @author Georg Fischer
  */
 public class A397110 extends HolonomicRecurrence {

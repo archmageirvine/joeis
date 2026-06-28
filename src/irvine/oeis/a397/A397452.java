@@ -8,7 +8,7 @@ import irvine.util.array.LongDynamicBooleanArray;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A394611.
+ * A397452 allocated for Zhicheng Wei.
  * @author Sean A. Irvine
  */
 public class A397452 extends Sequence1 {

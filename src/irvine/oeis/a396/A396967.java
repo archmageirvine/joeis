@@ -7,7 +7,7 @@ import irvine.oeis.a272.A272619;
 import irvine.oeis.a381.A381801;
 
 /**
- * A396967 allocated for Michael De Vlieger.
+ * A396967 Numbers k that are neither powers of primes nor have residues r (mod k) for which s = r + m*k is such that rad(s) | k but rad(r) does not divide k, and rad(k) does not divide r, where rad = A007947.
  * @author Sean A. Irvine
  */
 public class A396967 extends A024619 {

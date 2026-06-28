@@ -7,7 +7,7 @@ import irvine.oeis.a394.A394611;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A394611.
+ * A397471 Numbers not appearing in A394611.
  * @author Sean A. Irvine
  */
 public class A397471 extends Sequence1 {

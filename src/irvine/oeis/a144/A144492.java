@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A144492 Consider pairs m,n such that 1/(UnitarySigma(m))^(1/2)=1/(UnitarySigma(n))^(1/2)=k^(1/2)*(1/m^(1/2)-1/n^(1/2)), n&lt;m. Sequence gives values of k.
+ * A144492 Consider pairs m,n such that 1/(UnitarySigma(m))^(1/2) = 1/(UnitarySigma(n))^(1/2) = k^(1/2)*(1/m^(1/2)-1/n^(1/2)), n &lt; m. Sequence gives values of k.
  *
  * @author Georg Fischer
  */

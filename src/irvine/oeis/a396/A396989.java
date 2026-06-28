@@ -14,7 +14,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A396989 allocated for Shreyhaan Sarkar.
+ * A396989 Number of labeled trees on n vertices in which the number of vertices of degree 1 equals the graph diameter.
  * @author Sean A. Irvine
  */
 public class A396989 extends Sequence2 {

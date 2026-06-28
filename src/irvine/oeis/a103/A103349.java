@@ -4,7 +4,7 @@ package irvine.oeis.a103;
 import irvine.oeis.a099.A099828;
 
 /**
- * A103349 Numerators of sum_{k=1..n} 1/k^8 = Zeta(8,n).
+ * A103349 Numerator of Sum_{k=1..n} 1/k^8 = zeta(8,n).
  * @author Georg Fischer
  */
 public class A103349 extends A099828 {

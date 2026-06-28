@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A162003 Primes of the form 1+(n+2)^2+(n+4)^4, n&gt;=0.
+ * A162003 Primes of the form 1 + (k+2)^2 + (k+4)^4, k&gt;=0.
  * @author Georg Fischer
  */
 public class A162003 extends FilterSequence {

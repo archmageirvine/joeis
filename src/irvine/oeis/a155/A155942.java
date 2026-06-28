@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A155942 Numbers n such that 16n+1 is a prime.
+ * A155942 Numbers k such that 16k+1 is a prime.
  * @author Georg Fischer
  */
 public class A155942 extends PrimePositionSubsequence {

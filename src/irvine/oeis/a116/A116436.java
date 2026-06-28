@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A116436 Numbers m which when sandwiched between two 1&apos;s give a multiple of m.
+ * A116436 Numbers m which when sandwiched between two 1's give a multiple of m.
  * @author Georg Fischer
  */
 public class A116436 extends FilterNumberSequence {

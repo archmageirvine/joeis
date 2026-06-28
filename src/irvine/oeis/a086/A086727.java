@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A086727 Decimal expansion of sum(1/(6*m+1)^2,m=0..infinity).
+ * A086727 Decimal expansion of Sum_{m&gt;=0} 1/(6*m+1)^2.
  * Formula: RealDigits[N[PolyGamma[1, 1/6]/36, 100]][[1]]
  * @author Georg Fischer
  */

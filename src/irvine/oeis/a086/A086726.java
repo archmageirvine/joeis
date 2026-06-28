@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A086726 Decimal expansion of sum(1/(6*m)^2,m=1..infinity).
+ * A086726 Decimal expansion of Sum_{m&gt;=1} 1/(6*m)^2.
  * Formula: acot(sqrt(3))^2/6
  * @author Georg Fischer
  */

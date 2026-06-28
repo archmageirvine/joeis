@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A385702 Numbers such that when the leftmost digit is moved to the unit&apos;s place the result is divisible by 7.
+ * A385702 Numbers such that when the leftmost digit is moved to the unit's place the result is divisible by 7.
  * @author Georg Fischer
  */
 public class A385702 extends FilterNumberSequence {

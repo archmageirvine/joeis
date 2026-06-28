@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A397068 allocated for James C. McMahon.
+ * A397068 Numbers k such that the sum of the k primes beginning with prime(k) is prime.
  * @author Sean A. Irvine
  */
 public class A397068 extends A000040 {

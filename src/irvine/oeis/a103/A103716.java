@@ -4,7 +4,7 @@ package irvine.oeis.a103;
 import irvine.oeis.a099.A099828;
 
 /**
- * A103716 Numerators of sum_{k=1..n} 1/k^10 =: Zeta(10,n).
+ * A103716 Numerator of Sum_{k=1..n} 1/k^10 = zeta(10,n).
  * @author Georg Fischer
  */
 public class A103716 extends A099828 {

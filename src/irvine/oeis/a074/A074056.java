@@ -5,7 +5,7 @@ import irvine.oeis.PartialProductSequence;
 import irvine.oeis.a057.A057438;
 
 /**
- * A074056 a(n)=a(n-1)^3/a(n-2)^2+a(n-1)*a(n-2) with a(1)=a(2)=1.
+ * A074056 a(n) = a(n-1)^3/a(n-2)^2 + a(n-1)*a(n-2) with a(1) = a(2) = 1.
  * @author Georg Fischer
  */
 public class A074056 extends PartialProductSequence {

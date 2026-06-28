@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A397046 allocated for Stefano Spezia.
+ * A397046 Numbers k with digital sum not divisible by any smaller term of the sequence, with a(1) = 2.
  * @author Sean A. Irvine
  */
 public class A397046 extends CachedSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A394904 allocated for \u017diga Pirc.
+ * A394904 Numbers x*y such that x + y or |x - y| is a square.
  * @author Sean A. Irvine
  */
 public class A394904 extends FilterNumberSequence {

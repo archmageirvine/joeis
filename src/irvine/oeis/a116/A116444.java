@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A116444 Numbers k which when sandwiched between two 9&apos;s give a multiple of k.
+ * A116444 Numbers k which when sandwiched between two 9's give a multiple of k.
  * @author Georg Fischer
  */
 public class A116444 extends FilterNumberSequence {

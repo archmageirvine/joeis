@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A117123 n minus the number of 0&apos;s in binary expansion of n.
+ * A117123 n minus the number of 0's in binary expansion of n.
  * @author Georg Fischer
  */
 public class A117123 extends LambdaSequence {

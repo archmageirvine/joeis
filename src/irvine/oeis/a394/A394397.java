@@ -6,7 +6,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A394397 Decimal expansion of Sum_{k&gt;=1} H(k)*H(k,2)/k^3, where H(k) = A001008(k)/A002805(k) is the k-th harmonic number, and H(k,2) = A007406(k)/A007407(k) is the k-th generalized harmonic number of order 2.
+ * A394397 Decimal expansion of Sum_{k&gt;=1} H(k)*H(k,3)/k^2, where H(k) = A001008(k)/A002805(k) is the k-th harmonic number, and H(k,3) = A007408(k)/A007409(k) is the k-th generalized harmonic number of order 3.
  * Formula:
  * @author Georg Fischer
  */

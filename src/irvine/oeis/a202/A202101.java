@@ -4,7 +4,6 @@ package irvine.oeis.a202;
 
 import irvine.oeis.prime.PrimePositionSubsequence;
 
-
 /**
  * A202101 Numbers k such that 90*k + 59 is prime.
  * @author Georg Fischer

@@ -12,6 +12,6 @@ public class A112581 extends RationalProductTransform {
 
   /** Construct the sequence. */
   public A112581() {
-    super(1, new Builder().h(new A051037()).skip(1));
+    super(0, new Builder().h(new A051037()));
   }
 }

@@ -63,7 +63,7 @@ public class LambdaSequence extends AbstractSequence implements DirectSequence {
     mN = offset - 1;
     mLambda = lambda;
     mInits = initTerms;
-    mLimit = mInits.length + offset;
+    mLimit = mInits.length == 0 ? -0xffffff : mInits.length + offset;
   }
 
   @Override

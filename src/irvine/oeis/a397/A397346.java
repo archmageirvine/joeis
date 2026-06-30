@@ -4,7 +4,7 @@ package irvine.oeis.a397;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A397346 O.g.f. satisfies A(x) = exp( x + Sum_{n&gt;=2} (2*n^2-1) * a(n)*x^n / (2*n^2) ).
+ * A397346 allocated for Paul D. Hanna.
  * @author Georg Fischer
  */
 public class A397346 extends PolynomialFieldSequence {

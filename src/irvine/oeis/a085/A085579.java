@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A389808.
+ * A085579 See comments lines for definition.
  * @author Sean A. Irvine
  */
 public class A085579 extends Sequence1 {
@@ -19,6 +19,6 @@ public class A085579 extends Sequence1 {
     if (++mN == 1) {
       return Z.NINE;
     }
-    return CR.valueOf(Z.valueOf(mN).square().add(8)).sqrt().subtract(2).divide(2).multiply(mT).floor().mod(Z.TEN);
+    return CR.valueOf(Z.valueOf(mN).square().add(8)).sqrt().subtract(mN).divide(2).multiply(mT).floor().mod(Z.TEN);
   }
 }

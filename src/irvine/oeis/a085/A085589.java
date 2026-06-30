@@ -15,8 +15,6 @@ public class A085589 extends Sequence3 {
 
   private byte mod3(final byte a, final byte b) {
     return (byte) ((0b0100100100 >> ((a + b) << 1)) & 3);
-//    final int v = a + b;
-//    return (byte) (v >= 3 ? v - 3 : v);
   }
 
   protected byte[] step(final byte[] state) {

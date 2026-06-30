@@ -2747,3 +2747,4 @@ A085092 Numerators of constant term in a formal analog of Bernoulli numbers.
 A085430 a(n) is the minimal m such that the group GL(m,2) has an element of order n.
 A085506 Number of {-1,0,1} n X n matrices that have (real and) positive eigenvalues.
 A085514 Integers n representable as the product of the sum of three nonzero integers with the sum of their reciprocals: n=(x+y+z)*(1/x+1/y+1/z).
+A085596 Cycle lengths in a certain class of one-dimensional cellular automata.

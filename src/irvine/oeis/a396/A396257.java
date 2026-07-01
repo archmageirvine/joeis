@@ -4,7 +4,7 @@ package irvine.oeis.a396;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A396257 Number of n X 3 arrays over {0,1,2} such that orthogonally adjacent entries are distinct.
+ * A396257 allocated for Adam Reichert.
  * @author Georg Fischer
  */
 public class A396257 extends HolonomicRecurrence {

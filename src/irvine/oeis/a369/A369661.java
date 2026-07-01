@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A369661 Numbers k whose arithmetic derivative k&apos; is of the form 4m+2, and k&apos; has an even number of prime factors.
+ * A369661 Numbers k whose arithmetic derivative k' is of the form 4m+2, and k' has an even number of prime factors.
  * @author Georg Fischer
  */
 public class A369661 extends FilterNumberSequence {

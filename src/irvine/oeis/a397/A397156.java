@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A397156 Decimal expansion of the volume of a canonical (dual-uniform) tetragonal trapezohedron with unit short edge length.
+ * A397156 allocated for Paolo Xausa.
  * Formula:
  * @author Georg Fischer
  */

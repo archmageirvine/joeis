@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A397159 Decimal expansion of the midradius of a canonical (dual-uniform) tetragonal trapezohedron with unit short edge length.
+ * A397159 allocated for Paolo Xausa.
  * Formula:
  * @author Georg Fischer
  */

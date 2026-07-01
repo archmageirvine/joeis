@@ -11,6 +11,6 @@ public class A351992 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
   public A351992() {
-    super(1, "[0,1,0,-3,0,3,0,-1]", "0,1,4,3,14,5,30", 0);
+    super(1, "[0,1,0,-3,0,3,0,-1]", "0,1,5,3,16,5", 0);
   }
 }

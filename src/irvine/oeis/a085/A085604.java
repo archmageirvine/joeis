@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A085589.
+ * A085604 T(n,k) = highest power of prime(k) dividing n!, read by rows.
  * @author Sean A. Irvine
  */
 public class A085604 extends Sequence1 {

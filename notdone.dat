@@ -2748,3 +2748,9 @@ A085430 a(n) is the minimal m such that the group GL(m,2) has an element of orde
 A085506 Number of {-1,0,1} n X n matrices that have (real and) positive eigenvalues.
 A085514 Integers n representable as the product of the sum of three nonzero integers with the sum of their reciprocals: n=(x+y+z)*(1/x+1/y+1/z).
 A085596 Cycle lengths in a certain class of one-dimensional cellular automata.
+A085609 Decimal expansion of Sum{p prime>=2} log(p)/(p^2-p+1).
+A085610 Least m ending in 1 such that m^n ends in a string of n 0's followed by the final 1.
+A085617 Number of nonisomorphic 2-graphs with 2n nodes with first cohomology invariant nonzero, second cohomology invariant 0.
+A085618 Number of self-complementary 2-graphs with n nodes.
+A085619 Number of 2-graphs with n nodes and integral spectrum.
+A085620 Number of 2-graphs with n nodes and transitive automorphism group.

@@ -6,7 +6,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A380206 Decimal expansion of the generalized log-sine integral with k = 0, n = 3, m = 3, from {0 .. 5*Pi/3} (negated).
+ * A380206 Decimal expansion of the generalized log-sine integral with k = 0, n = 3, m = 3, from {0 .. 5 Pi/3} (negated).
  * Formula:
  * @author Georg Fischer
  */

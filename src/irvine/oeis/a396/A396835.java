@@ -4,7 +4,7 @@ package irvine.oeis.a396;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A396835 Upper (2/3,1/3) midsequence of (floor[n/2]^2) and (ceiling[n/2]^2); see Comments.
+ * A396835 allocated for Clark Kimberling.
  * @author Georg Fischer
  */
 public class A396835 extends HolonomicRecurrence {

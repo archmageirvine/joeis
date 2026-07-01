@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A397163 Decimal expansion of the dihedral angle, in radians, between any two adjacent faces in a canonical (dual-uniform) tetragonal trapezohedron.
+ * A397163 allocated for Paolo Xausa.
  * Formula:
  * @author Georg Fischer
  */

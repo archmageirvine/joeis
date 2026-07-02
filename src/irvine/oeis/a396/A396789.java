@@ -10,14 +10,18 @@ import irvine.oeis.Sequence2;
  */
 public class A396789 extends Sequence2 {
 
+  private static final long[] S = {1, -1};
   private long mN = 1;
   private long mM = 0;
 
-  protected long f(final long r, final long p, final long q, final long u) {
+  protected long f(final long b, final long r, final long p, final long q, final long u) {
     long v = r == 0 ? p : r;
     while (v < u) {
       if ((u % q == 0 || v % q == 0) && ((u - v) & 1) == 1 && Functions.GCD.l(u, v) == 1) {
-        return 2 * (u * v / q) * (u * u - v * v) / p;
+        final long m = 2 * (u * v / q) * (u * u - v * v) / p;
+        if (m < b) {
+          return m;
+        }
       }
       v += p;
     }
@@ -27,19 +31,37 @@ public class A396789 extends Sequence2 {
   private Z t(final long n, final long k) {
     final long p = Functions.PRIME.l(n);
     final long q = Functions.PRIME.l(k);
-    long u = 1;
+    if (k == 1) {
+      return Z.valueOf((p * p - 1) / 4);
+    }
+    if (k == 2) {
+      return Z.valueOf((p * p - 1) / 6);
+    }
+    long u = 2;
+    long b = Long.MAX_VALUE;
     while (true) {
       ++u;
-      final long r = u % p;
-      final long f = f(r, p, q, u);
-      if (f != 0) {
-        return Z.valueOf(f);
+      for (final long s : S) {
+        long r = (s * u) % p;
+        if (r < 0) {
+          r += p;
+        }
+        long v = r == 0 ? p : r;
+        while (v < u) {
+          if ((u % q == 0 || v % q == 0) && ((u - v) & 1) == 1 && Functions.GCD.l(u, v) == 1) {
+            final long m = 2 * (u * v / q) * (u * u - v * v) / p;
+            if (m < b) {
+              b = m;
+            }
+          }
+          v += p;
+        }
       }
-      final long s = (p - u) % p;
-      if (s != r) {
-        final long g = f(s, p, q, u);
-        if (g != 0) {
-          return Z.valueOf(g);
+      if (b < Long.MAX_VALUE) {
+        final long c = (2 * (u + 1)) / p;
+        final long d = (2 * (u + 1)) / q;
+        if (c * d > b) {
+          return Z.valueOf(b);
         }
       }
     }

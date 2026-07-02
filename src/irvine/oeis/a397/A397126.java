@@ -6,6 +6,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
+import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001694;
 
@@ -15,17 +16,26 @@ import irvine.oeis.a001.A001694;
  */
 public class A397126 extends Sequence1 {
 
-  private final DirectSequence mPowerful = DirectSequence.create(new A001694());
+  private final DirectSequence mS;
   private final HashSet<Z> mUsed = new HashSet<>();
-  private Z mForbid = Z.TWO;
+  private Z mForbid = Z.ONE;
   private Z mRequired = Z.ONE;
+
+  protected A397126(final Sequence s) {
+    mS = DirectSequence.create(s);
+  }
+
+  /** Construct the sequence. */
+  public A397126() {
+    this(new A001694());
+  }
 
   @Override
   public Z next() {
     //System.out.println("forbid=" + mForbid + " req=" + mRequired);
     long k = 0;
     while (true) {
-      final Z p = mPowerful.a(++k);
+      final Z p = mS.a(++k);
       if (!mUsed.contains(p) && p.mod(mRequired).isZero() && (mForbid.isOne() || p.gcd(mForbid).isOne())) {
         mForbid = mRequired;
         final FactorSequence fs = Jaguar.factor(p);

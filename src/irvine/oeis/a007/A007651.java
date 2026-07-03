@@ -29,6 +29,15 @@ public class A007651 extends Sequence1 {
     return sb.toString();
   }
 
+  /**
+   * Adapter for calls from outside
+   * @param x number to be described
+   * @return look-and-say description
+   **/
+  public static Z lookAndSayMethodB(final Z x) {
+    return new Z(lookAndSayFreqLast(x.toString()));
+  }
+
   private String mA = null;
 
   @Override
@@ -36,4 +45,5 @@ public class A007651 extends Sequence1 {
     mA = mA == null ? "1" : lookAndSayFreqLast(mA);
     return new Z(mA);
   }
+
 }

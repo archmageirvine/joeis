@@ -24,6 +24,24 @@ public final class ZUtils {
 
   private ZUtils() { }
 
+  /**
+   * Functional interface for iterator state.
+   * @param <A> accumulator type
+   * @param <Long> prime type
+   * @param <Integer> exponent type
+   */
+  @FunctionalInterface
+  public interface TriFunction<A, Long, Integer> {
+    /**
+     * Apply the function.
+     * @param x accumulated value of the iterator
+     * @param d digit
+     * @param e exponent (position) of d
+     * @return new <code>value</code>
+     */
+    A apply(A x, Long d, Integer e);
+  }
+
   // Several functions relating to processing the digits of a number in a particular
   // base can be made faster by operating on several digits at a time.  The
   // following tables work out how many digits in a given base safely fit inside a
@@ -173,6 +191,92 @@ public final class ZUtils {
       }
     }
     return true;
+  }
+
+  /**
+   * Iterate over the digits in the number system representation of <code>n</code>.
+   * @param n number that is represented
+   * @param base represent in this number base
+   * @param start initializes the accumulated value
+   * @param f maps <code>(x, d, e) -> x</code>
+   * @param <A> accumulated type
+   * @return final accumulated value
+   */
+  public static <A> A iterate(final Z nz, final long base, final A start, final TriFunction<A, Long, Integer> f) {
+    if (base < 2) {
+      throw new IllegalArgumentException();
+    }
+    final Z b = Z.valueOf(base);
+    A x = start;
+    int e = 0;
+    Z n = nz;
+    while (!n.isZero()) {
+      final Z[] qr = n.divideAndRemainder(b);
+      x = f.apply(x, qr[1].longValue(), e);
+      ++e;
+      n = qr[0];
+    }
+    return x;
+  }
+
+//    if (base < 2) {
+//      throw new IllegalArgumentException();
+//    }
+//    final Z bp = ZUtils.basePower((int) base);
+//    long sum = 0;
+//    while (!n.isZero()) {
+//      final Z[] qr = n.divideAndRemainder(bp);
+//      sum += l(base, qr[1].longValue());
+//      n = qr[0];
+//    }
+//    return sum;
+
+  /**
+   * Iterate over the digits in the number system representation of <code>n</code>.
+   * @param n number that is represented
+   * @param base represent in this number base
+   * @param start initial value of the accumulator x
+   * @param f maps <code>(x, d) -> x</code>
+   * @param <A> accumulated type
+   * @return final accumulated value x
+   */
+  public static <A> A iterate(final long nl, final long base, final A start, final TriFunction<A, Long, Integer> f) {
+    if (base < 2) {
+      throw new IllegalArgumentException();
+    }
+    A x = start;
+    int e = 0;
+    long n = nl;
+    while (n != 0) {
+      x = f.apply(x, n % base, e);
+      ++e;
+      n /= base;
+    }
+    return x;
+  }
+
+  /**
+   * Iterate over the digits in the number system representation of <code>n</code> with default base 10.
+   * @param n number that is represented
+   * @param start initial value of the accumulator x
+   * @param f maps <code>(x, d) -> x</code>
+   * @param <A> accumulated type
+   * @return final accumulated value x
+   */
+  public static <A> A iterate(final long n, final A start, final TriFunction<A, Long, Integer> f) {
+    return iterate(n, 10L, start, f);
+  }
+
+  /**
+   * Iterate over the digits in the number system representation of <code>n</code> with default base 10.
+   * @param n number that is represented
+   * @param start initial value of the accumulator x
+   * @param f maps <code>(x, d) -> x</code>
+   * @param <A> accumulated type
+   * @return final accumulated value x
+   */
+  public static <A> A iterate(final Z n, final A start, final TriFunction<A, Long, Integer> f) {
+    return iterate(n, 10L, start, f);
   }
 
   /**

@@ -13,7 +13,7 @@ import irvine.oeis.a130.A130253;
  */
 public class A105348 extends LambdaSequence {
 
-  private static final DirectSequence A130250 = new A130250();
+  private static final DirectSequence A130250 = DirectSequence.create(new A130250());
   private static final DirectSequence A130253 = new A130253();
 
   /** Construct the sequence. */

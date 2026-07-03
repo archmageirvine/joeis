@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a014.A014551;
 
 /**
- * A397405 allocated for Chai Wah Wu.
+ * A397405 Numbers that are not Jacobsthal-Lucas numbers.
  * @author Sean A. Irvine
  */
 public class A397405 extends ComplementSequence {

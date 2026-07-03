@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395429 allocated for Maju Wu.
+ * A395429 Least k such that {1^n, 2^n, ..., k^n} contains numbers with every leading digit from 1 through 9.
  * @author Sean A. Irvine
  */
 public class A395429 extends Sequence1 {

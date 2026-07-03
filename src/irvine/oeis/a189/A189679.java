@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A189679 n+[nr/t]+[ns/t]; r=1, s=arctan(1/2), t=arctan(2).
+ * A189679 a(n) = n + floor(nr/t) + floor(ns/t) with r=1, s=arctan(1/2), t=arctan(2).
  * @author Georg Fischer
  */
 public class A189679 extends FloorSequence {

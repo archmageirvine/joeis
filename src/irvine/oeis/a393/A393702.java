@@ -7,7 +7,7 @@ import irvine.oeis.a394.A394611;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A397205.
+ * A393702 First number to occur at least n times in Weinstein's W sequence (A394611).
  * @author Sean A. Irvine
  */
 public class A393702 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396966 allocated for Jakob Stemberger.
+ * A396966 a(n) is the number of obstruction residues modulo 2^n for the Collatz-type 3n-1 map T(x) = (3x-1)/2^A007814(3x-1).
  * @author Sean A. Irvine
  */
 public class A396966 extends Sequence1 {

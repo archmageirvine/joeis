@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397205 allocated for Kenta Kitamura.
+ * A397205 Maximum value of |S|*|T| over subsets S,T of {1,...,n} such that the products s*t are pairwise distinct with s in S and t in T.
  * @author Sean A. Irvine
  */
 public class A397205 extends Sequence1 {

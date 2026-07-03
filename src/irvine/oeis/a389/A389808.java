@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A389808 allocated for Felix Huber.
+ * A389808 a(n) is the number of ordered pairs of integer vectors in Z^3 of norm n that span a rhombus with integer area.
  * @author Sean A. Irvine
  */
 public class A389808 extends Sequence0 {

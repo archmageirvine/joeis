@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A152018 Denominator of 1/n^2-1/(3n)^2 or of 8/(9n^2).
+ * A152018 Denominator of 1/n^2 - 1/(3*n)^2 or of 8/(9*n^2).
  * @author Georg Fischer
  */
 public class A152018 extends AbstractSequence {

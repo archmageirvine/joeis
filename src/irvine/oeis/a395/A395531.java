@@ -27,7 +27,7 @@ public class A395531 extends Sequence1 {
         mPositions.set(mPositions.length(), mN);
         return Z.valueOf(mN);
       }
-      // Otherwise place in an earlier row
+      // Otherwise, place in an earlier row
       for (int k = mPositions.length() - 1; k >= 0; --k) {
         if (k == 0 || mPositions.get(k) + mN <= mPositions.get(k - 1)) {
           mPositions.add(k, mN);

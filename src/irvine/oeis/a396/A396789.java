@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A396789 Triangle read by rows: T(n, k) is the smallest positive integer m such that there exists a primitive Pythagorean triple with legs prime(n) and m*prime(k), for 1 &lt;= k &lt; n.
+ * A396789 Triangle read by rows: T(n, k) = minimal product x*y over primitive Pythagorean triples whose legs are p*x and q*y, where p = prime(n), q = prime(k), and 1 &lt;= k &lt; n.
  * @author Sean A. Irvine
  */
 public class A396789 extends Sequence2 {

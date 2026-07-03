@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A093359 Primes of the form 28n + 1.
+ * A093359 Primes of the form 28*k + 1.
  * @author Georg Fischer
  */
 public class A093359 extends PrimeSubsequence {

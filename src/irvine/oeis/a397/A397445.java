@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397445 allocated for Stefano Spezia.
+ * A397445 a(n) is the permanent of the n X n Krawtchouk matrix.
  * @author Sean A. Irvine
  */
 public class A397445 extends Sequence0 {

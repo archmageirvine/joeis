@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A397160 allocated for Paolo Xausa.
+ * A397160 Decimal expansion of the height of a canonical (dual-uniform) tetragonal trapezohedron with unit short edge length.
  * Formula:
  * @author Georg Fischer
  */

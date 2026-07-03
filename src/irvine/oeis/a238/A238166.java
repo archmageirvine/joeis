@@ -6,7 +6,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A238166 Decimal expansion of Sum_{n&gt;=1} H(n,2)/n^4 where H(n,2) = A007406(n)/A007407(n) is the n-th harmonic number of order 2.
+ * A238166 Decimal expansion of Sum_{n&gt;=1} H(n,2)/n^4 where H(n,2) = A007406(n)/A007407(n) is the n-th generalized harmonic number of order 2.
  * Formula: zeta(3)^2-zeta(6)/3
  * @author Georg Fischer
  */

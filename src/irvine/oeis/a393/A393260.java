@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393260 allocated for Axel Prunier.
+ * A393260 Number of distinct results from equations consisting of n copies of the number n and one of the four basic arithmetic operations {+, -, *, /} between each pair with multiplication and division taking precedence over addition and subtraction.
  * @author Sean A. Irvine
  */
 public class A393260 extends Sequence1 {

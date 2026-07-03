@@ -6,7 +6,7 @@ import irvine.oeis.a391.A391952;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A397157 allocated for Paolo Xausa.
+ * A397157 Decimal expansion of the surface area of a canonical (dual-uniform) tetragonal trapezohedron with unit short edge length.
  * Formula:
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397224 allocated for \u017diga Pirc.
+ * A397224 Number of ordered pairs (i,j) such that i*j=n and |i-j| is a perfect square.
  * @author Sean A. Irvine
  */
 public class A397224 extends Sequence1 {

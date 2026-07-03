@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394578 allocated for Clark Kimberling.
+ * A394578 a(n) = 2^(2*n-1) * p(n, n+1/2), where p(n,x) is the Lagrange interpolating polynomial through (1,0) and (k,1) for k=2..n+1.
  * @author Sean A. Irvine
  */
 public class A394578 extends Sequence0 {

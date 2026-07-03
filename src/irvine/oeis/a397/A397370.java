@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397370 allocated for Alexander Willis.
+ * A397370 Numbers k such that the last d digits of k^k are equal to the reverse of k, where d is the number of digits of k, and k is not a palindrome.
  * @author Sean A. Irvine
  */
 public class A397370 extends Sequence1 {

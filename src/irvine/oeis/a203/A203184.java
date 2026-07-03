@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A203184 Number of nX1 0..4 arrays with every nonzero element less than or equal to some horizontal or vertical neighbor.
+ * A203184 Number of n X 1 0..4 arrays with every nonzero element less than or equal to some horizontal or vertical neighbor.
  * @author Georg Fischer
  */
 public class A203184 extends GeneratingFunctionSequence implements Conjectural {

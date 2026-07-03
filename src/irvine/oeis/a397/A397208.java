@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A397208 allocated for Felix Huber.
+ * A397208 a(n) is the number of primes q &lt; p = prime(n) such that (p + q)/4 is prime.
  * @author Sean A. Irvine
  */
 public class A397208 extends A000040 {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a106.A106039;
 
 /**
- * A394690 allocated for Guido Avagliano.
+ * A394690 Smallest k such that k * n is a Belgian-0 number.
  * @author Sean A. Irvine
  */
 public class A394690 extends Sequence1 {

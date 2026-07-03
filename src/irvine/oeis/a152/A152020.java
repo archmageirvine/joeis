@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A152020 Denominator of 8/(9n^2) divided by 9.
+ * A152020 Denominator of 8/(9*n^2) divided by 9.
  * @author Sean A. Irvine
  */
 public class A152020 extends LinearRecurrence {

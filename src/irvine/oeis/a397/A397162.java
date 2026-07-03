@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A397162 allocated for Paolo Xausa.
+ * A397162 Decimal expansion of the large face angle, in radians, of a canonical (dual-uniform) tetragonal trapezohedron.
  * Formula:
  * @author Georg Fischer
  */

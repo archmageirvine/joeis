@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396659 allocated for Arkadeep Dutta.
+ * A396659 Irregular triangle read by rows: T(n,k) is the number of edge-collision walks of length k from a fixed vertex on the complete directed graph with self-loops on n labeled vertices that visit all n vertices; n &gt;= 1, n+1 &lt;= k &lt;= n^2+1.
  * @author Sean A. Irvine
  */
 public class A396659 extends Sequence1 {

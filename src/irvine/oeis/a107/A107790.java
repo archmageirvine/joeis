@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicByteArray;
 
 /**
- * A107790 Ones order in the tribonacci substitution of three symbols.
+ * A107790 Positions of 1's in the 2-limiting word of the morphism 1-&gt;2, 2-&gt;3, 3-&gt;123.
  * @author Sean A. Irvine
  */
 public class A107790 extends Sequence1 {

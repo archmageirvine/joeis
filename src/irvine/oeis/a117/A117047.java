@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A117047 Primes of the form 60*n+11.
+ * A117047 Primes of the form 60*k + 11.
  * @author Georg Fischer
  */
 public class A117047 extends PrimeSubsequence {

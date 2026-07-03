@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397255 allocated for M. F. Hasler.
+ * A397255 Table whose n-th row lists the A001035(n) partial orders, or T_0 topologies, on a set of n elements.
  * @author Sean A. Irvine
  */
 public class A397255 extends Sequence0 {

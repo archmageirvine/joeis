@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a161.A161601;
 
 /**
- * A397430 allocated for Clark Kimberling.
+ * A397430 Primes in A161601 whose binary reversal is composite.
  * @author Sean A. Irvine
  */
 public class A397430 extends FilterSequence {

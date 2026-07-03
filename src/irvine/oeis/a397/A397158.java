@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A397158 allocated for Paolo Xausa.
+ * A397158 Decimal expansion of the inradius of a canonical (dual-uniform) tetragonal trapezohedron with unit short edge length.
  * Formula:
  * @author Georg Fischer
  */

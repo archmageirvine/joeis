@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396382 allocated for Ali Sada.
+ * A396382 A(n,k) read by falling antidiagonals, where A(n,k) is the least positive integer m such that n divides m and k divides m+1; if no such m exists, then A(n,k)=0.
  * @author Sean A. Irvine
  */
 public class A396382 extends Sequence1 {

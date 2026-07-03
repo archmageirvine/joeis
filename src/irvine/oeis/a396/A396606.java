@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396606 allocated for Robert P. P. McKone.
+ * A396606 Number of edge-collision walks on the complete directed graph with self-loops on n labeled vertices that start at a fixed vertex and visit all n vertices.
  * @author Sean A. Irvine
  */
 public class A396606 extends Sequence1 {

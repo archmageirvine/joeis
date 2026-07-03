@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A085578 Array read by antidiagonals: T(m,n) is the number of distinct products ij with 1&lt;=i&lt;=m, i&lt;=j&lt;=n, for m&gt;=1, n&gt;=1.
+ * A085578 Array read by antidiagonals: T(n,m) is the number of distinct products i*j with 1&lt;=i&lt;=n, i&lt;=j&lt;=m, for n&gt;=1, m&gt;=1.
  * @author Sean A. Irvine
  */
 public class A085578 extends Sequence1 {

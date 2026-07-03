@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396457 allocated for Alex Stokolos.
+ * A396457 Triangle T(n, k) of convolved numbers of k-sections of the Fibonacci sequence at the first convolution order, for n &gt;= 1 and 1 &lt;= k &lt;= n, read by rows.
  * @author Sean A. Irvine
  */
 public class A396457 extends Sequence1 {

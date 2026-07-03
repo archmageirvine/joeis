@@ -7,7 +7,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A396427 allocated for Arkadeep Dutta.
+ * A396427 Total number of edge-collision walks on the complete directed graph with self-loops on n labeled vertices.
  * @author Sean A. Irvine
  */
 public class A396427 extends Sequence1 {

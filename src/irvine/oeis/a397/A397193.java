@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a014.A014574;
 
 /**
- * A397193 allocated for Juri-Stepan Gerasimov.
+ * A397193 Average k of twin prime pairs such that d*2^(k/d) is also the average of twin prime pairs for some d.
  * @author Sean A. Irvine
  */
 public class A397193 extends FilterSequence {

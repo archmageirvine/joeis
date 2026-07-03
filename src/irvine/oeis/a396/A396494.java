@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A396494 allocated for John Tyler Rascoe.
+ * A396494 Number of sets S of nonempty strict integer partitions with total sum n such that all elements in S have pairwise disjoint sets of adjacent differences.
  * @author Sean A. Irvine
  */
 public class A396494 extends Sequence0 {

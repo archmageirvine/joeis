@@ -4,7 +4,7 @@ package irvine.oeis.a202;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A202097 Number of (n+2)X7 binary arrays avoiding patterns 001 and 011 in rows and columns.
+ * A202097 Number of (n+2) X 7 binary arrays avoiding patterns 001 and 011 in rows and columns.
  * @author Georg Fischer
  */
 public class A202097 extends HolonomicRecurrence {

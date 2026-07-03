@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397379 allocated for Keanu L. Dean.
+ * A397379 Number of compositions (c_1,...,c_k) of n such that gcd(c_i,i)=1 for all i.
  * @author Sean A. Irvine
  */
 public class A397379 extends Sequence0 {

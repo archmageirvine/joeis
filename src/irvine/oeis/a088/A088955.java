@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A088955 Primes of the form 60*n + 1.
+ * A088955 Primes of the form 60*k + 1.
  * @author Georg Fischer
  */
 public class A088955 extends PrimeSubsequence {

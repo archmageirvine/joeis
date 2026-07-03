@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A396790 Triangle read by rows: T(n, k) is the least hypotenuse of a primitive Pythagorean triple with legs prime(n) and a multiple of prime(k), for 1 &lt;= k &lt; n.
+ * A396790 Triangle read by rows: T(n, k) = least hypotenuse z of a primitive Pythagorean triple whose legs are multiples p*x and q*y, where p = prime(n), q = prime(k), 1 &lt;= k &lt; n.
  * @author Sean A. Irvine
  */
 public class A396790 extends Sequence2 {

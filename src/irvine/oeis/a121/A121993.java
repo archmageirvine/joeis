@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A121993 Numbers k that yield a smaller number a(k) under the &quot;Look and Say&quot; function A045918.
+ * A121993 Numbers k that yield a smaller number a(k) under the "Look and Say" function A045918.
  * @author Georg Fischer
  */
 public class A121993 extends FilterNumberSequence {

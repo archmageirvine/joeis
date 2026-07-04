@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A119384 Ten&apos;s complement of the factorials.
+ * A119384 Ten's complement of the factorials.
  * @author Georg Fischer
  */
 public class A119384 extends LambdaSequence {

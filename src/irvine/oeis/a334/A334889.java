@@ -11,7 +11,7 @@ import irvine.oeis.LambdaSequence;
  */
 public class A334889 extends LambdaSequence {
 
-  private static final int[] F = new int[] {0, 0, 0, 1, 2, 2, 2, 1};
+  private static final int[] F = {0, 0, 0, 1, 2, 2, 2, 1};
 
   /** Construct the sequence. */
   public A334889() {

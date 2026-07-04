@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A130237 The &apos;lower&apos; Fibonacci Inverse A130233(n) multiplied by n.
+ * A130237 The 'lower' Fibonacci Inverse A130233(n) multiplied by n.
  * @author Georg Fischer
  */
 public class A130237 extends SingleTransformSequence {

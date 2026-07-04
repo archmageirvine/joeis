@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a001.A001358;
 
 /**
- * A204541 Semiprimes with semiprime &quot;look and say&quot; descriptions.
+ * A204541 Semiprimes with semiprime "look and say" descriptions.
  * @author Georg Fischer
  */
 public class A204541 extends FilterSequence {

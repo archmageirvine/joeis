@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.a000.A000032;
 
 /**
- * A130242 Minimal index k of a Lucas number such that Lucas(k)&gt;=n (the &apos;upper&apos; Lucas (A000032) Inverse).
+ * A130242 Minimal index k of a Lucas number such that Lucas(k)&gt;=n (the 'upper' Lucas (A000032) Inverse).
  * @author Georg Fischer
  */
 public class A130242 extends A130233 {

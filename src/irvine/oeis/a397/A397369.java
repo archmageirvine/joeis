@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A000523.
+ * A397369 allocated for Alex Shvets.
  * @author Sean A. Irvine
  */
 public class A397369 extends Sequence0 {

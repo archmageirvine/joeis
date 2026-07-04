@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.a001.A001906;
 
 /**
- * A130259 Maximal index k of an even Fibonacci number (A001906) such that A001906(k) = Fib(2k) &lt;= n (the &apos;lower&apos; even Fibonacci Inverse).
+ * A130259 Maximal index k of an even Fibonacci number (A001906) such that A001906(k) = Fib(2k) &lt;= n (the 'lower' even Fibonacci Inverse).
  * @author Georg Fischer
  */
 public class A130259 extends A130233 {

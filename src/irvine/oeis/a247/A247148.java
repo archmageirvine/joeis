@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A247148 Primes p that divide LS(p), where LS is the &quot;Look and Say&quot; function (A045918).
+ * A247148 Primes p that divide LS(p), where LS is the "Look and Say" function (A045918).
  * @author Georg Fischer
  */
 public class A247148 extends FilterSequence {

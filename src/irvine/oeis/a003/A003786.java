@@ -4,7 +4,7 @@ import irvine.oeis.FiniteSequence;
 
 /**
  * A003786 Day-of-month at weekly intervals from Jan 01 of a leap year (a finite sequence with 53 terms).
- * @author GEorg Fischer
+ * @author Georg Fischer
  */
 public class A003786 extends FiniteSequence {
 

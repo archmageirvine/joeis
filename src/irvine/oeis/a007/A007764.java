@@ -6,7 +6,7 @@ import irvine.util.array.LongDynamicArray;
 
 /**
  * A007764 Number of nonintersecting (or self-avoiding) rook paths joining opposite corners of an n X n grid.
- * @author Ruben Spaans (C)
+ * @author Ruben Gr&oslash;nning Spaans (C)
  * @author Sean A. Irvine (Java port)
  */
 public class A007764 extends AbstractSequence {

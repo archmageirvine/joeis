@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.a001.A001906;
 
 /**
- * A130260 Minimal index k of an even Fibonacci number A001906 such that A001906(k) = Fib(2k) &gt;= n (the &apos;upper&apos; even Fibonacci Inverse).
+ * A130260 Minimal index k of an even Fibonacci number A001906 such that A001906(k) = Fib(2k) &gt;= n (the 'upper' even Fibonacci Inverse).
  * @author Georg Fischer
  */
 public class A130260 extends A130233 {

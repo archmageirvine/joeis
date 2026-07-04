@@ -8,7 +8,7 @@ import irvine.oeis.AbstractSequence;
 /**
  * A023847 Sum of exponents in prime-power factorization of binomial(5n, 2n).
  * @author Sean A. Irvine
- * @author Georg FIscher
+ * @author Georg Fischer
  */
 public class A023847 extends AbstractSequence {
 

@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A369092 Numbers which are a substring of their own &quot;Look and Say&quot; description (cf. A045918).
+ * A369092 Numbers which are a substring of their own "Look and Say" description (cf. A045918).
  * @author Georg Fischer
  */
 public class A369092 extends FilterNumberSequence {

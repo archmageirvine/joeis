@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002113;
 
 /**
- * A121233 Palindromes whose ten&apos;s complements are squares.
+ * A121233 Palindromes whose ten's complements are squares.
  * @author Georg Fischer
  */
 public class A121233 extends FilterSequence {

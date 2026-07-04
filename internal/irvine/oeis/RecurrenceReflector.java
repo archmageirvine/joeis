@@ -26,7 +26,7 @@ import irvine.oeis.recur.PeriodicSequence;
 /** 
  * Read a list of A-numbers and appends the parameters of the sequences.
  * The output file is tab-separated: aseqno, callcode, offset, matrix, init, dist, gftype
- * @author Dr. Georg Fischer
+ * @author Georg Fischer
  */
 public class RecurrenceReflector {
   /** CVS identifier. */

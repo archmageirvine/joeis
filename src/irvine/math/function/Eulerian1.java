@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 
 /**
  * Eulerian numbers of the first kind (see A173018).
- * @author Georg FIscher
+ * @author Georg Fischer
  */
 class Eulerian1 extends AbstractFunction2 {
 

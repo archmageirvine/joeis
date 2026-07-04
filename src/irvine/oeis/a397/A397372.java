@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A000523.
+ * A397372 Decimal expansion of Sum_{k&gt;=1} (zeta(2) - H(2*k,2))*H(k)/k, where H(k) = A001008(k)/A002805(k) is the k-th harmonic number, and H(k,2) = A007406(k)/A007407(k) is the k-th generalized harmonic number of order 2.
  * @author Sean A. Irvine
  */
 public class A397372 extends Sequence0 {

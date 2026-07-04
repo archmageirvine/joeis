@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.a001.A001519;
 
 /**
- * A130255 Maximal index k of an odd Fibonacci number (A001519) such that A001519(k) = Fibonacci(2k-1) &lt;= n (the &apos;lower&apos; odd Fibonacci Inverse).
+ * A130255 Maximal index k of an odd Fibonacci number (A001519) such that A001519(k) = Fibonacci(2k-1) &lt;= n (the 'lower' odd Fibonacci Inverse).
  * @author Georg Fischer
  */
 public class A130255 extends A130233 {

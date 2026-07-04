@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A130244 Partial sums of the &apos;upper&apos; Lucas Inverse A130242.
+ * A130244 Partial sums of the 'upper' Lucas Inverse A130242.
  * @author Georg Fischer
  */
 public class A130244 extends PartialSumSequence {

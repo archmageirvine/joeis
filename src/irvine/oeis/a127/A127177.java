@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A127177 Primes whose &quot;Look And Say&quot; descriptions from right to left (in the sense of method A, i.e., frequency followed by digit-indication) are also primes.
+ * A127177 Primes whose "Look And Say" descriptions from right to left (in the sense of method A, i.e., frequency followed by digit-indication) are also primes.
  * @author Georg Fischer
  */
 public class A127177 extends FilterSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.a001.A001045;
 
 /**
- * A130250 Minimal index k of a Jacobsthal number such that A001045(k) &gt;= n (the &apos;upper&apos; Jacobsthal inverse).
+ * A130250 Minimal index k of a Jacobsthal number such that A001045(k) &gt;= n (the 'upper' Jacobsthal inverse).
  * @author Georg Fischer
  */
 public class A130250 extends A130233 {

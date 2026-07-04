@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A334027 &quot;Look and say&quot; the concatenated exponents in the prime factorization of n.
+ * A334027 "Look and say" the concatenated exponents in the prime factorization of n.
  * @author Georg Fischer
  */
 public class A334027 extends LambdaSequence {

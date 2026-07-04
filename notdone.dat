@@ -2754,3 +2754,6 @@ A085617 Number of nonisomorphic 2-graphs with 2n nodes with first cohomology inv
 A085618 Number of self-complementary 2-graphs with n nodes.
 A085619 Number of 2-graphs with n nodes and integral spectrum.
 A085620 Number of 2-graphs with n nodes and transitive automorphism group.
+A085632 Number of connected coin graphs, also known as "penny" graphs.
+A085633 Number of not necessarily connected coin graphs, also known as "penny" graphs.
+A085646 Sum of the entries in the character table of the group GL(2,Z_n).

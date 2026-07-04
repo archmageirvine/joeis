@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.a000.A000045;
 
 /**
- * A130234 Minimal index k of a Fibonacci number such that Fibonacci(k) &gt;= n (the &apos;upper&apos; Fibonacci Inverse).
+ * A130234 Minimal index k of a Fibonacci number such that Fibonacci(k) &gt;= n (the 'upper' Fibonacci Inverse).
  * @author Georg Fischer
  */
 public class A130234 extends A130233 {

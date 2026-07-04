@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.a000.A000032;
 
 /**
- * A130241 Maximal index k of a Lucas number such that Lucas(k) &lt;= n (the &apos;lower&apos; Lucas (A000032) Inverse).
+ * A130241 Maximal index k of a Lucas number such that Lucas(k) &lt;= n (the 'lower' Lucas (A000032) Inverse).
  * @author Georg Fischer
  */
 public class A130241 extends A130233 {

@@ -45,7 +45,7 @@ import java.util.Arrays;
  * result that G is non-planar.
  *
  * @author Hang T. Lau
- * @author Sean A. Irvine (bug fixes, stylistic improvements)
+ * @author Sean A. Irvine
  */
 final class Planarity {
 

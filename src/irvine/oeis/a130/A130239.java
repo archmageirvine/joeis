@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.a007.A007598;
 
 /**
- * A130239 Maximal index k of the square of a Fibonacci number such that Fib(k)^2 &lt;= n (the &apos;lower&apos; squared Fibonacci Inverse).
+ * A130239 Maximal index k of the square of a Fibonacci number such that Fib(k)^2 &lt;= n (the 'lower' squared Fibonacci Inverse).
  * @author Georg Fischer
  */
 public class A130239 extends A130233 {

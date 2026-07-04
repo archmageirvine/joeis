@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.a001.A001519;
 
 /**
- * A130256 Minimal index k of an odd Fibonacci number A001519 such that A001519(k) = Fibonacci(2*k-1) &gt;= n (the &apos;upper&apos; odd Fibonacci Inverse).
+ * A130256 Minimal index k of an odd Fibonacci number A001519 such that A001519(k) = Fibonacci(2*k-1) &gt;= n (the 'upper' odd Fibonacci Inverse).
  * @author Georg Fischer
  */
 public class A130256 extends A130233 {

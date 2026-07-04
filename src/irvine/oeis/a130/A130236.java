@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A130236 Partial sums of the &apos;upper&apos; Fibonacci Inverse A130234.
+ * A130236 Partial sums of the 'upper' Fibonacci Inverse A130234.
  * @author Georg Fischer
  */
 public class A130236 extends PartialSumSequence {

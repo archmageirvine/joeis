@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397342 allocated for Md. Rad Sarar Anando.
+ * A397342 a(1) = 1; for n &gt; 1, a(n) is the smallest prime that concatenated with all previous terms of the sequence forms a prime.
  * @author Sean A. Irvine
  */
 public class A397342 extends Sequence1 {

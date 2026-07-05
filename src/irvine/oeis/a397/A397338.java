@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397338 allocated for G. L. Honaker, Jr.
+ * A397338 In the prime race that counts the 40 mod 100 residues 10k + {1,3,7,9} (k = 0...9), primes at which one of the residues leads for the first time.
  * @author Sean A. Irvine
  */
 public class A397338 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A397411 allocated for Jean-Marc Rebert.
+ * A397411 Smallest number k such that bigomega(k+i) and omega(k+i), for i=0..n, but not for i=n+1, are both prime.
  * @author Sean A. Irvine
  */
 public class A397411 extends Sequence0 {

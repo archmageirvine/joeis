@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397456 allocated for Dieter Renz.
+ * A397456 Number of consecutive n-digit prime pairs with gap 6.
  * @author Sean A. Irvine
  */
 public class A397456 extends Sequence1 {

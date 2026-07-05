@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397490 allocated for Robert Israel.
+ * A397490 a(n) is the first prime p such that the concatenation in reverse order of the last digits of n consecutive primes starting with p is prime.
  * @author Sean A. Irvine
  */
 public class A397490 extends Sequence1 {

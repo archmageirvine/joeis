@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a056.A056809;
 
 /**
- * A115393 Numbers n such that n, n-1 and n-2 are semiprimes.
+ * A115393 Numbers k such that k, k-1 and k-2 are semiprimes.
  * @author Georg Fischer
  */
 public class A115393 extends AbstractSequence {

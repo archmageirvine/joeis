@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397341 allocated for Md. Rad Sarar Anando.
+ * A397341 a(1) = 1; for n &gt; 1, a(n) is the concatenation of a(n-1) and the smallest prime p such that the concatenation a(n-1) | p is prime.
  * @author Sean A. Irvine
  */
 public class A397341 extends Sequence1 {

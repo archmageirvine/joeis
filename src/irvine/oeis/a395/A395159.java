@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A395159 allocated for Daniel Hoyt.
+ * A395159 a(n) = 2*(sum of elements of n-th run)/(length of n-th run)^2 using 1 and 2 starting with 1,1.
  * @author Sean A. Irvine
  */
 public class A395159 extends Sequence1 {

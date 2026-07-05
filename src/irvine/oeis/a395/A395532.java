@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A395532 allocated for Alex Stokolos.
+ * A395532 Square array read by antidiagonals downward: convolved numbers of order n of k-sections of the Fibonacci sequence at the third element position T(n, k) for n &gt;= 0 and k &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A395532 extends Sequence0 {

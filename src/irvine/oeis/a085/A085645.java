@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a331.A331029;
 
 /**
- * A085645 Smallest number having n divisors ending with 1 or 9.
+ * A085645 Smallest number having exactly n divisors ending with 1 or 9.
  * @author Sean A. Irvine
  */
 public class A085645 extends Sequence1 {

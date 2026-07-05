@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397369 allocated for Alex Shvets.
+ * A397369 a(n) = 64^n * [z^n] 2F1(1/4, 1/4; 1; z)^3.
  * @author Sean A. Irvine
  */
 public class A397369 extends Sequence0 {

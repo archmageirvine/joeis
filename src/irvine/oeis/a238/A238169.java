@@ -6,7 +6,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A238169 Decimal expansion of sum_(n&gt;=1) H(n)^3/n^4 where H(n) is the n-th harmonic number.
+ * A238169 Decimal expansion of Sum_{n&gt;=1} H(n)^3/n^4 where H(n) is the n-th harmonic number.
  * Formula: (231/16)*zeta(7)-(51/4)*zeta(3)*zeta(4)+2*zeta(2)*zeta(5)
  * @author Georg Fischer
  */

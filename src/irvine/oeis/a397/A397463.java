@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A397463 allocated for Jean-Marc Rebert.
+ * A397463 Smallest prime greater than or equal to (prime(n)^2 + prime(n+1)^2)/2.
  * @author Sean A. Irvine
  */
 public class A397463 extends A000040 {

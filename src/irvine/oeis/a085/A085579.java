@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A085579 See comments lines for definition.
+ * A085579 a(n) is the n-th digit after the decimal point of the positive real root of x^2+n*x-2.
  * @author Sean A. Irvine
  */
 public class A085579 extends Sequence1 {

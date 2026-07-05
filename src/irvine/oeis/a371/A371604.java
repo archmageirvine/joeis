@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A371604 Decimal expansion of 5 * sqrt(3 - phi) / (2 * Pi).
+ * A371604 Decimal expansion of 5 * sqrt(3 - phi) / (2 * Pi), where phi is the golden ratio.
  * @author Georg Fischer
  */
 public class A371604 extends DecimalExpansionSequence {

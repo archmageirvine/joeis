@@ -7,7 +7,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.util.array.DynamicArray;
 
 /**
- * A395518 allocated for Alejandro Radisic.
+ * A395518 Decimal expansion of lim_{N-&gt;oo} Integral_{x=0..1} Product_{p prime, p &lt;= N} (1 - x^p) dx.
  * @author Sean A. Irvine
  */
 public class A395518 extends DecimalExpansionSequence {

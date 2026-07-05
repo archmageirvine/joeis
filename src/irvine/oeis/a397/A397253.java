@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A397253 allocated for Jose Manuel Briceno Mendoza.
+ * A397253 Decimal expansion of the limit of the area of the sequence of inscribed polygons formed by angular bisection.
  * @author Sean A. Irvine
  */
 public class A397253 extends DecimalExpansionSequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397433 allocated for Hassane Bakkaoui.
+ * A397433 a(n) is the number of integers k &gt;= 0 such that n has a divisor in the interval [2^k, 2^(k+1)).
  * @author Sean A. Irvine
  */
 public class A397433 extends Sequence1 {

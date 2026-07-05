@@ -8,7 +8,7 @@ import irvine.util.array.LongDynamicBooleanArray;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A397452 allocated for Zhicheng Wei.
+ * A397452 Number of partitions of n into two 5-smooth numbers.
  * @author Sean A. Irvine
  */
 public class A397452 extends Sequence1 {

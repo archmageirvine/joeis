@@ -4,7 +4,7 @@ package irvine.oeis.a059;
 import irvine.oeis.a006.A006553;
 
 /**
- * A059671 Numbers n such that n*10^n - 1 is prime.
+ * A059671 Numbers k such that k*10^k - 1 is prime.
  * @author Georg Fischer
  */
 public class A059671 extends A006553 {

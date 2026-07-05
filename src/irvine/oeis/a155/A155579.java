@@ -6,7 +6,7 @@ package irvine.oeis.a155;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A155579 Recursive sequence (n+1)*a(n) = 3*(3*n-2)*a(n-1).
+ * A155579 Recursive sequence (n+1)*a(n) = 3*(3*n-2)*a(n-1), a(0) = 2.
  * @author Georg Fischer
  */
 public class A155579 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Fibonacci;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A221018 Number n such that Fibonacci(n) is divisible by n, n + 1 and n - 1.
+ * A221018 Number k such that Fibonacci(k) is divisible by k, k + 1 and k - 1.
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

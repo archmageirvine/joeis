@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A085681 Integers of the form 2^n*p where p is a prime &gt; 2^n.
+ * A085681 Integers of the form 2^k*p where p is a prime &gt; 2^k.
  * @author Sean A. Irvine
  */
 public class A085681 extends Sequence1 {

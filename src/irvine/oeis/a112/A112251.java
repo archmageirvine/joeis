@@ -4,7 +4,7 @@ import irvine.math.LongUtils;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A112251 Numbers m such that m mod log_2(m) = 1.
+ * A112251 Numbers m such that m mod floor(log_2(m)) = 1.
  * @author Sean A. Irvine
  */
 public class A112251 extends FilterNumberSequence {

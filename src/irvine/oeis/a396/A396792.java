@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A396792 allocated for Tanya Khovanova.
+ * A396792 Maximum number of parts K in a partition of n such that there exists a part size p whose multiplicity is exactly p*K/100.
  * @author Sean A. Irvine
  */
 public class A396792 extends AbstractSequence {

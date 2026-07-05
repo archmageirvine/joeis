@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A108854 Numbers n such that 10*n - 127 is prime.
+ * A108854 Numbers k such that 10*k - 127 is prime.
  * @author Georg Fischer
  */
 public class A108854 extends PrimePositionSubsequence {

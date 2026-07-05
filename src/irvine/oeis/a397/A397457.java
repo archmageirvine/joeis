@@ -8,7 +8,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000040;
 
 /**
- * A397457 allocated for Thomas Scheuerle.
+ * A397457 a(n) = Product_{k=1..n} (prime(n) + 1/k).
  * @author Sean A. Irvine
  */
 public class A397457 extends Sequence0 {

@@ -4,7 +4,7 @@ package irvine.oeis.a397;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A397582 allocated for Greg Dresden.
+ * A397582 Number of ways to tile a 2 X n strip with squares, dominoes, and T-shaped tetrominoes.
  * @author Georg Fischer
  */
 public class A397582 extends HolonomicRecurrence {

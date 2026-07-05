@@ -1,13 +1,15 @@
 package irvine.oeis.a000;
 
+import irvine.math.cr.CR;
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
  * A000195 a(n) = floor(log(n)).
  * @author Sean A. Irvine
  */
-public class A000195 extends Sequence1 {
+public class A000195 extends Sequence1 implements DirectSequence {
 
   private long mN = 0;
 
@@ -15,5 +17,16 @@ public class A000195 extends Sequence1 {
   public Z next() {
     return Z.valueOf((long) Math.log(++mN));
   }
+
+  @Override
+  public Z a(final Z n) {
+    return CR.valueOf(n).log().floor();
+  }
+
+  @Override
+  public Z a(final long n) {
+    return Z.valueOf((long) Math.log(n));
+  }
+
 }
 

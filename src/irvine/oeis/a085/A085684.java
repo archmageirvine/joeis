@@ -57,7 +57,7 @@ public class A085684 extends AbstractSequence {
     return c;
   }
 
-  protected long t(Graph g) {
+  protected long t(final Graph g) {
     // WLOG assume vertex 0 is in the set
     final long[] forbidden = new long[g.order()];
     block(g, forbidden, 0);

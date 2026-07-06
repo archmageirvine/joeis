@@ -7,7 +7,7 @@ import irvine.oeis.a054.A054349;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A111124 Number of 1&apos;s in n-th &quot;Kolakoski&quot; string defined in A054349.
+ * A111124 Number of 1's in n-th "Kolakoski" string defined in A054349.
  * @author Georg Fischer
  */
 public class A111124 extends SingleTransformSequence {

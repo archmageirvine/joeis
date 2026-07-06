@@ -4,7 +4,7 @@ package irvine.oeis.a397;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A397588 G.f. A(x) satisfies A(x) = x + (x*A(x)^2)&apos;.
+ * A397588 G.f. A(x) satisfies A(x) = x + (x*A(x)^2)'.
  * @author Georg Fischer
  */
 public class A397588 extends PolynomialFieldSequence {

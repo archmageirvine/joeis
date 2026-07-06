@@ -1825,5 +1825,14 @@ public final class GraphUtils {
     // assumes graph is already 2-connected (biconnected)
     return ThreeConnected.isThreeConnected(graph);
   }
+
+  /**
+   * Return the burning number for a graph.
+   * @param graph the graph
+   * @return burning number of graph
+   */
+  public static int burningNumber(final Graph graph) {
+    return BurningNumber.burningNumber(graph);
+  }
 }
 

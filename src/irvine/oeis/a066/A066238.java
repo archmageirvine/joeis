@@ -11,7 +11,7 @@ import irvine.oeis.Sequence1;
  */
 public class A066238 extends Sequence1 {
 
-  private long mN = 1;
+  private long mN = 0;
 
   private boolean is(final long n) {
     long s = n / 3;

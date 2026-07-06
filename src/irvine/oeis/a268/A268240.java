@@ -6,7 +6,7 @@ import irvine.oeis.a046.A046816;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A268240 Pascal&apos;s tetrahedron of trinomial coefficients (A046816) read mod 2.
+ * A268240 Pascal's tetrahedron of trinomial coefficients (A046816) read mod 2.
  * @author Georg Fischer
  */
 public class A268240 extends SingleTransformSequence {

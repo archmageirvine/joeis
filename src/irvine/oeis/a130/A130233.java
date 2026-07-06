@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A130233 a(n) is the maximal k such that Fibonacci(k) &lt;= n (the &quot;lower&quot; Fibonacci Inverse).
+ * A130233 a(n) is the maximal k such that Fibonacci(k) &lt;= n (the "lower" Fibonacci Inverse).
  * @author Georg Fischer
  */
 // A130234 a(n) is the minimal k such that Fibonacci(k) &lt;= n (the &quot;upper&quot; Fibonacci Inverse).

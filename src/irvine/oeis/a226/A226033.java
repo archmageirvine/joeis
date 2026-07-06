@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A226033 Round(n * exp(-1 - 1/(2n))), an approximation to the number of daughters to wait before picking in the sultan&apos;s dowry problem (Better that A225593).
+ * A226033 Round(n * exp(-1 - 1/(2n))), an approximation to the number of daughters to wait before picking in the sultan's dowry problem (Better that A225593).
  * @author Georg Fischer
  */
 public class A226033 extends LambdaSequence {

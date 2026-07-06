@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A316832 In A316831, replace 2&apos;s and 3&apos;s with 0&apos;s.
+ * A316832 In A316831, replace 2's and 3's with 0's.
  * @author Georg Fischer
  */
 public class A316832 extends SingleTransformSequence {

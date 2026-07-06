@@ -550,4 +550,18 @@ public final class LongUtils {
     return true;
   }
 
+  /**
+   * Test if the first array is less than the second
+   * @param u first array
+   * @param v second array
+   * @return true if the first is less than the second
+   */
+  public static boolean lt(final long[] u, final long[] v) {
+    for (int k = 0; k < u.length; ++k) {
+      if (u[k] != v[k]) {
+        return u[k] < v[k];
+      }
+    }
+    return false;
+  }
 }

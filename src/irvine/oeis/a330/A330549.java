@@ -6,7 +6,7 @@ import irvine.oeis.a036.A036262;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A330549 Gasket based on primes: take array read by diagonals from Gilbreath conjecture (A036262) and replace all nonzero entries with 0&apos;s and all 0&apos;s with 1&apos;s.
+ * A330549 Gasket based on primes: take array read by diagonals from Gilbreath conjecture (A036262) and replace all nonzero entries with 0's and all 0's with 1's.
  * @author Georg Fischer
  */
 public class A330549 extends SingleTransformSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A369655 a(n) = 1 if n&apos; is odd and also n&apos;&apos; is odd, otherwise 0, where n&apos; stands for the arithmetic derivative, A003415.
+ * A369655 a(n) = 1 if n' is odd and also n'' is odd, otherwise 0, where n' stands for the arithmetic derivative, A003415.
  * @author Georg Fischer
  */
 public class A369655 extends LambdaSequence {

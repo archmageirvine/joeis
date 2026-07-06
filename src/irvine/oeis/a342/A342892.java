@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A342892 a(n) is the complement of the bit two places to the left of the least significant &quot;1&quot; in the binary expansion of n.
+ * A342892 a(n) is the complement of the bit two places to the left of the least significant "1" in the binary expansion of n.
  * @author Georg Fischer
  */
 public class A342892 extends LambdaSequence {

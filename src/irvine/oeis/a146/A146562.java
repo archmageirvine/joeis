@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a064.A064353;
 
 /**
- * A146562 &apos;Erratic&apos; numbers in A064353 [Kolakoski (1,3)].
+ * A146562 'Erratic' numbers in A064353 [Kolakoski (1,3)].
  * @author Georg Fischer
  */
 public class A146562 extends FilterPositionSequence {

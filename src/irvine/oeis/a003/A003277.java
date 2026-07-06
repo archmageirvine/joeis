@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,10 +19,9 @@ public class A003277 extends Sequence1 {
     }
     while (true) {
       mN += 2;
-      if (Functions.GCD.l(mN, Functions.PHI.l(mN)) == 1) {
+      if (Predicates.CYCLIC.is(mN)) {
         return Z.valueOf(mN);
       }
     }
   }
-
 }

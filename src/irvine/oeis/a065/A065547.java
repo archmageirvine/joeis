@@ -14,8 +14,12 @@ import irvine.oeis.memory.MemorySequence;
 public class A065547 extends Sequence0 {
 
   private final MemorySequence mG = MemorySequence.cachedSequence(new A028296());
-  private int mN = -1;
-  private int mM = 0;
+  private int mN = 0;
+  private int mM = -1;
+
+  protected Z t(final int n, final int m) {
+    return Integers.SINGLETON.sum(0, n - m, k -> mG.a(k).multiply(Binomial.binomial(2L * n, 2L * k)).multiply(Binomial.binomial(n - k, n - m - k))).shiftRight(2L * (n - m));
+  }
 
   @Override
   public Z next() {
@@ -23,7 +27,7 @@ public class A065547 extends Sequence0 {
       ++mN;
       mM = 0;
     }
-    return Integers.SINGLETON.sum(0, mN - mM, k -> mG.a(k).multiply(Binomial.binomial(2L * mN, 2L * k)).multiply(Binomial.binomial(mN - k, mN - mM - k))).shiftRight(2L * (mN - mM));
+    return t(mN, mM);
   }
 }
 

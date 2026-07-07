@@ -709,7 +709,6 @@ A009190 2p twin peaks
 A009571 Least m such that if a/b < c/d are Farey fractions of order n then there exists k such that a/b < k/m < c/d, k/m reduced, have attempt, don't understand what is required, mailed David Wilson
 A009589 If i < n, j < n, p/a(i) < q/a(j), then there exists k with p/a(i) < k/a(n) < q/a(j), needs more constraints?, cf. A009571, pos. 1 <= p < a(i), etc., k must exist for every such pair?
 A009997 Number of comparative probability orderings on all subsets of n elements that can arise by assigning a probability distribution to the individual elements, hard
-A010033 A thinks of x in set M; B asks questions: is x in T?; A may lie once but only when true answer is Yes; a(n) is maximal size of M such that B can determine x with <= n questions, see blog2018.tex
 A010039 High-temperature expansion of susceptibility chi_2 for square lattice
 A010040 High-temperature expansion of susceptibility chi_2 for cubic lattice
 A010041 High-temperature expansion of susceptibility chi_2 for 4-d cubic lattice
@@ -2755,3 +2754,7 @@ A085620 Number of 2-graphs with n nodes and transitive automorphism group.
 A085632 Number of connected coin graphs, also known as "penny" graphs.
 A085633 Number of not necessarily connected coin graphs, also known as "penny" graphs.
 A085646 Sum of the entries in the character table of the group GL(2,Z_n).
+A085705 Integers expressible as (x^3 + y^3 + z^3)/(x*y*z) with nonzero integers x, y and z. Alternatively, integers expressible as a/b + b/c + c/a with nonzero integers a, b and c.
+A085714 Degrees for which Gassmann triples do not exist.
+A085715 Squarefree conductors of quintic fields.
+A085716 Class numbers of fields in A085715.

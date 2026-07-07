@@ -3,7 +3,7 @@ package irvine.oeis.a367;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A397306.
+ * A367070 Numbers k such that k = (product of nonzero digits) * (sum of digits) for the digits of k in base 7.
  * @author Sean A. Irvine
  */
 public class A367070 extends FiniteSequence {

@@ -13,9 +13,9 @@ import irvine.util.array.LongDynamicBooleanArray;
  */
 public class A397520 extends Sequence0 {
 
-  // WIP
+  // WIP, todo dead end's at the moment
 
-  private static class Row {
+  private static final class Row {
     long mBits;
     Map<Integer, Byte> mDegree;
 

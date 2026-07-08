@@ -13,7 +13,7 @@ public class A397024 extends Sequence0 {
   private long mN = -1;
   private Z mSum = null;
 
-  private void process(final long n, final long m, int pos) {
+  private void process(final long n, final long m, final int pos) {
     if (1L << pos > n) {
       mSum = mSum.add(Functions.GCD.l(n, m));
       return;

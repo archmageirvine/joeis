@@ -2758,3 +2758,4 @@ A085705 Integers expressible as (x^3 + y^3 + z^3)/(x*y*z) with nonzero integers 
 A085714 Degrees for which Gassmann triples do not exist.
 A085715 Squarefree conductors of quintic fields.
 A085716 Class numbers of fields in A085715.
+A085736 Numbers n such that all groups of order n are solvable.

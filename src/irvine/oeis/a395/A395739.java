@@ -1,17 +1,85 @@
 package irvine.oeis.a395;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.a396.A396491;
+import irvine.oeis.Sequence1;
 
 /**
  * A395739 Number of unsatisfiable 3-SAT formulas with n variables and 6 clauses in the multiset clause model.
  * @author Sean A. Irvine
  */
-public class A395739 extends A396491 {
+public class A395739 extends Sequence1 {
+
+  // After Ramin Mohammadi Masoudi
 
   private int mN = 0;
+
+  private static long pack(final int a, final int b, final int c) {
+    return (a & 0xFFFFL)
+      | ((b & 0xFFFFL) << 16)
+      | ((c & 0xFFFFL) << 32);
+  }
+
+  private static boolean eval(final long clause, final long assignment) {
+    int lit = (short) clause;
+    int v = Math.abs(lit) - 1;
+    boolean val = ((assignment >>> v) & 1) != 0;
+    if ((lit > 0) == val) {
+      return true;
+    }
+
+    lit = (short) (clause >>> 16);
+    v = Math.abs(lit) - 1;
+    val = ((assignment >>> v) & 1) != 0;
+    if ((lit > 0) == val) {
+      return true;
+    }
+
+    lit = (short) (clause >>> 32);
+    v = Math.abs(lit) - 1;
+    val = ((assignment >>> v) & 1) != 0;
+    return (lit > 0) == val;
+  }
+
+  protected static List<Long> clauses(final int n) {
+    final int[] lits = new int[2 * n];
+    int k = 0;
+    for (int j = -n; j < 0; ++j) {
+      lits[k++] = j;
+    }
+    for (int j = 1; j <= n; ++j) {
+      lits[k++] = j;
+    }
+
+    final ArrayList<Long> res = new ArrayList<>();
+    for (int a = 0; a < lits.length; ++a) {
+      for (int b = a; b < lits.length; ++b) {
+        for (int c = b; c < lits.length; ++c) {
+          res.add(pack(lits[a], lits[b], lits[c]));
+        }
+      }
+    }
+    return res;
+  }
+
+  protected static boolean unsat(final int n, final long[] formula) {
+    final long lim = 1L << n;
+    for (long assignment = 0; assignment < lim; ++assignment) {
+      boolean ok = true;
+      for (final long clause : formula) {
+        if (!eval(clause, assignment)) {
+          ok = false;
+          break;
+        }
+      }
+      if (ok) {
+        return false;
+      }
+    }
+    return true;
+  }
 
   @Override
   public Z next() {

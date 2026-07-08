@@ -1,19 +1,22 @@
-package irvine.oeis.a038;
+package irvine.oeis.a085;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
- * A038499 Number of partitions of n into a prime number of parts.
+ * A085756 Number of partitions into a prime number of distinct parts.
  * @author Sean A. Irvine
  */
-public class A038499 extends MemoryFunction2Sequence<Long, Z> {
-
-  // After Alois P. Heinz
+public class A085756 extends MemoryFunction2Sequence<Long, Z> {
 
   private final Fast mPrime = new Fast();
-  private long mN = -1;
+  private long mN = 2;
+
+  /** Construct the sequence. */
+  public A085756() {
+    super(3);
+  }
 
   @Override
   protected Z compute(final Long n, final Long m) {
@@ -29,12 +32,10 @@ public class A038499 extends MemoryFunction2Sequence<Long, Z> {
 
   @Override
   public Z next() {
-    if (++mN == 0) {
-      return Z.ONE;
-    }
+    ++mN;
     Z sum = Z.ZERO;
-    for (long p = 2; p <= mN; p = mPrime.nextPrime(p)) {
-      sum = sum.add(get(mN - p, p));
+    for (long p = 2; p * (p + 1) / 2 <= mN; p = mPrime.nextPrime(p)) {
+      sum = sum.add(get(mN - p * (p + 1) / 2, p));
     }
     return sum;
   }

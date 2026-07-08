@@ -661,7 +661,7 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
         final Polynomial<E> q = divide(p, p.coeff(m));
         return multiply(sqrt(q, n), (E) ((CR) p.coeff(m)).sqrt());
       }
-      throw new UnsupportedOperationException(p.toString());
+      throw new UnsupportedOperationException("Could not form square root of " + p);
     }
     // sqrt(x^m * f(x)) m even is x^(m/2) * sqrt(f(x))
     return sqrt1p(subtract(p.shift(-m), one()), n).shift(m / 2);

@@ -15,14 +15,11 @@ public class A010033 extends Sequence0 {
   private LongDynamicLongArray mW = new LongDynamicLongArray();
   private int mN = -1;
 
-  public A010033() {
-    mW.set(0, 1);
-    mW.set(1, 0);
-  }
-
   @Override
   public Z next() {
     if (++mN == 0) {
+      mW.set(0, 1);
+      mW.set(1, 0);
       return Z.ONE;
     }
     final LongDynamicLongArray newW = new LongDynamicLongArray();

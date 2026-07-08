@@ -15,8 +15,8 @@ public class A083061 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> C1 = Polynomial.create(1, 3, 2);
-  private int mN = 0;
-  private int mM = -1;
+  protected int mN = 0;
+  protected int mM = -1;
   private final MemoryFunction1<Polynomial<Z>> mB = new MemoryFunction1<>() {
     @Override
     protected Polynomial<Z> compute(final int n) {

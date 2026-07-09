@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A253222 Number of n X 7 nonnegative integer arrays with upper left 0 and lower right its king-move distance away minus 2 and every value within 2 of its king move distance from the upper left and every value increasing by 0 or 1 with every step right, diagonally s
+ * A253222 Number of n X 7 nonnegative integer arrays with upper left 0 and lower right its king-move distance away minus 2 and every value within 2 of its king move distance from the upper left and every value increasing by 0 or 1 with every step right, diagonally se or down.
  * @author Georg Fischer
  */
 public class A253222 extends HolonomicRecurrence implements Conjectural {

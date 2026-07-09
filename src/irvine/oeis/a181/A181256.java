@@ -4,7 +4,7 @@ package irvine.oeis.a181;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A181256 Number of (n+2)X4 binary matrices with every 3X3 block having exactly four 1&apos;s.
+ * A181256 Number of (n+2)X4 binary matrices with every 3X3 block having exactly four 1's.
  * @author Georg Fischer
  */
 public class A181256 extends HolonomicRecurrence {

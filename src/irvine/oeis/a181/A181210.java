@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A181210 Number of nX6 binary matrices with no two 1&apos;s adjacent diagonally or antidiagonally.
+ * A181210 Number of nX6 binary matrices with no two 1's adjacent diagonally or antidiagonally.
  * @author Georg Fischer
  */
 public class A181210 extends HolonomicRecurrence implements Conjectural {

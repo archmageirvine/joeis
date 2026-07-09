@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A225315 Number of 8Xn -1,1 arrays such that the sum over i=1..8,j=1..n of i*x(i,j) is zero and rows are nondecreasing (ways to put n thrusters pointing east or west at each of 8 positions 1..n distance from the hinge of a south-pointing gate without turning the ga
+ * A225315 Number of 8Xn -1,1 arrays such that the sum over i=1..8,j=1..n of i*x(i,j) is zero and rows are nondecreasing (ways to put n thrusters pointing east or west at each of 8 positions 1..n distance from the hinge of a south-pointing gate without turning the gate).
  * @author Georg Fischer
  */
 public class A225315 extends HolonomicRecurrence implements Conjectural {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A397474 allocated for R\u00e9my Sigrist.
+ * A397474 a(1) = 0. For n &gt; 1, a(n) is the number of ways to write a(n-1) as the product of two previous terms with distinct positions in the sequence.
  * @author Sean A. Irvine
  */
 public class A397474 extends CachedSequence {

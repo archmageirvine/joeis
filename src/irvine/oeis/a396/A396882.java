@@ -4,7 +4,7 @@ import irvine.oeis.Combiner;
 import irvine.oeis.a006.A006325;
 
 /**
- * A396882 a(n) is the number of distinct triplets of triangles chosen from n^2 unit triangles of a triangular grid, excluding rotationally equivalent configurations and reflections such that all three triangles lie in the same row parallel to a side of the grid.
+ * A396882 a(n) is the number of distinct triplets of triangles chosen from n^2 unit triangles of a triangular grid up to rotation and reflection such that all three triangles lie in the same row parallel to a side of the grid.
  * @author Sean A. Irvine
  */
 public class A396882 extends Combiner {

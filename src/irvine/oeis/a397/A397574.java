@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A397574 allocated for Vincenzo Manto.
+ * A397574 Numbers m such that rad(m)^omega(m) = m.
  * @author Sean A. Irvine
  */
 public class A397574 extends FilterNumberSequence {

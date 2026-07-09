@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a000.A000225;
 
 /**
- * A101342 Fibonacci-Mersenne numbers.
+ * A101342 Fibonacci-Mersenne numbers: a(n) = Fibonacci(2^n-1).
  * @author Georg Fischer
  */
 public class A101342 extends LambdaSequence {

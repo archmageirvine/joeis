@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A225313 Number of 6Xn -1,1 arrays such that the sum over i=1..6,j=1..n of i*x(i,j) is zero and rows are nondecreasing (ways to put n thrusters pointing east or west at each of 6 positions 1..n distance from the hinge of a south-pointing gate without turning the ga
+ * A225313 Number of 6Xn -1,1 arrays such that the sum over i=1..6,j=1..n of i*x(i,j) is zero and rows are nondecreasing (ways to put n thrusters pointing east or west at each of 6 positions 1..n distance from the hinge of a south-pointing gate without turning the gate).
  * @author Georg Fischer
  */
 public class A225313 extends HolonomicRecurrence implements Conjectural {

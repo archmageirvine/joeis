@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A181219 Number of n X 3 binary matrices with no three 1&apos;s adjacent in a line horizontally, vertically, diagonally or antidiagonally.
+ * A181219 Number of n X 3 binary matrices with no three 1's adjacent in a line horizontally, vertically, diagonally or antidiagonally.
  * @author Georg Fischer
  */
 public class A181219 extends HolonomicRecurrence implements Conjectural {

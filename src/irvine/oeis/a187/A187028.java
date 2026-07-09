@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A187028 Number of 3-step one or two collinear space at a time queen&apos;s tours on an n X n board summed over all starting positions.
+ * A187028 Number of 3-step one or two collinear space at a time queen's tours on an n X n board summed over all starting positions.
  * @author Georg Fischer
  */
 public class A187028 extends HolonomicRecurrence implements Conjectural {

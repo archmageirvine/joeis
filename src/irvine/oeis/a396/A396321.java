@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396321 allocated for G. Gordon Thompson.
+ * A396321 Number of n X n binary matrices with exactly 10 1's such that there are no odd number of 1's in a row and no odd number of 1's in a column.
  * @author Sean A. Irvine
  */
 public class A396321 extends Sequence1 {

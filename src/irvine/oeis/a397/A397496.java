@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A397496 Triangle read by rows: T(n, k) is the concatenation of numbers from n down to k, n &gt;= k &gt;= 1.
+ * A397496 Triangle read by rows: T(n, k) is the concatenation of numbers from n down to n + 1 - k, n &gt;= k &gt;= 1.
  * @author Georg Fischer
  */
 public class A397496 extends LambdaTriangle {

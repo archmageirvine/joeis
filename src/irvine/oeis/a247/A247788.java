@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A247788 Primes p such that sigma(2p-1) = 3*(p-1).
+ * A247788 Primes p such that sigma(2*p-1) = 3*(p-1).
  * @author Georg Fischer
  */
 public class A247788 extends FilterSequence {

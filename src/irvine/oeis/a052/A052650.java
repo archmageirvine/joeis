@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A052650 E.g.f. 1/((1-2x)(1-x)^2).
+ * A052650 Expansion of e.g.f. 1/((1-2*x)*(1-x)^2).
  * @author Georg Fischer
  */
 public class A052650 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A187593 Number of 10-step E, S, NW and NE-moving king&apos;s tours on an n X n board summed over all starting positions.
+ * A187593 Number of 10-step E, S, NW and NE-moving king's tours on an n X n board summed over all starting positions.
  * @author Georg Fischer
  */
 public class A187593 extends HolonomicRecurrence implements Conjectural {

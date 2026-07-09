@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395596 allocated for Kyle David Krueger.
+ * A395596 Nearest integer to n*(phi-1) which is coprime with n, where phi is the golden ratio.
  * @author Sean A. Irvine
  */
 public class A395596 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396632 allocated for Andrea Cutri.
+ * A396632 Number of fixed-content bracelets of length 2*n, summed over all integer partitions of 2*n, whose mirror image is a non-identity rotation, with no palindromic rotation and no nontrivial rotational symmetry.
  * @author Sean A. Irvine
  */
 public class A396632 extends Sequence1 {

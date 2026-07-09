@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A187295 Number of 10-step one or two space at a time rook&apos;s tours on an n X n board summed over all starting positions.
+ * A187295 Number of 10-step one or two space at a time rook's tours on an n X n board summed over all starting positions.
  * @author Georg Fischer
  */
 public class A187295 extends HolonomicRecurrence implements Conjectural {

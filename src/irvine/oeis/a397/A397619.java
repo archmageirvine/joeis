@@ -4,7 +4,7 @@ import irvine.factor.prime.Fast;
 import irvine.oeis.ParallelPermutationSequence;
 
 /**
- * A397619 allocated for Ethan Yu.
+ * A397619 Number of permutations p of [n] such that p(i)*p(i+1) + 1 is prime for all 1 &lt;= i &lt;= n-1.
  * @author Sean A. Irvine
  */
 public class A397619 extends ParallelPermutationSequence {

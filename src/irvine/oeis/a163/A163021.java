@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A163021 Number of n X 4 binary arrays with all 1&apos;s connected and a path of 1&apos;s from left column to lower right corner.
+ * A163021 Number of n X 4 binary arrays with all 1's connected and a path of 1's from left column to lower right corner.
  * @author Georg Fischer
  */
 public class A163021 extends HolonomicRecurrence implements Conjectural {

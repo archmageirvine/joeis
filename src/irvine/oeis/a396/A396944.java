@@ -7,7 +7,7 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A396944 allocated for Nishant R. Gautam.
+ * A396944 a(n) is the smallest integer k such that the iterated multiplicative-order chain k -&gt; ord_k(2) -&gt; ord_{ord_k(2)}(2) -&gt; ... reaches an even number in exactly n steps.
  * @author Sean A. Irvine
  */
 public class A396944 extends Sequence0 {

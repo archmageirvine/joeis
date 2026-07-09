@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a067.A067836;
 
 /**
- * A397258 allocated for M. F. Hasler.
+ * A397258 Indices of late birds in Buss's sequence B = A067836: numbers m such that all smaller primes have occurred before B(m).
  * @author Sean A. Irvine
  */
 public class A397258 extends A067836 {

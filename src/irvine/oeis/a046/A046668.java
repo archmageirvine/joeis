@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000041;
 import irvine.oeis.a000.A000142;
 
 /**
- * A046668 Numbers n such that partition function p(n) divides n!.
+ * A046668 Numbers m such that partition function p(m) divides m!.
  * @author Sean A. Irvine
  */
 public class A046668 extends Sequence1 {

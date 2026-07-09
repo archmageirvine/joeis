@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A252966 Number of (5+2)X(n+2) 0..4 arrays with every consecutive three elements in every row and diagonal having exactly two distinct values, and in every column and antidiagonal not having exactly two distinct values, and new values 0 upwards introduced in row ma
+ * A252966 Number of (5+2)X(n+2) 0..4 arrays with every consecutive three elements in every row and diagonal having exactly two distinct values, and in every column and antidiagonal not having exactly two distinct values, and new values 0 upwards introduced in row major order.
  * @author Georg Fischer
  */
 public class A252966 extends HolonomicRecurrence implements Conjectural {

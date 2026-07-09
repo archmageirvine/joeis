@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A223293 4-loop graph coloring a rectangular array: number of nX4 0..8 arrays where 0..8 label nodes of a graph with edges 0,1 1,2 2,0 0,3 3,4 4,0 0,5 5,6 6,0 0,7 7,8 8,0 and every array movement to a horizontal or vertical neighbor moves along an edge of this grap
+ * A223293 4-loop graph coloring a rectangular array: number of nX4 0..8 arrays where 0..8 label nodes of a graph with edges 0,1 1,2 2,0 0,3 3,4 4,0 0,5 5,6 6,0 0,7 7,8 8,0 and every array movement to a horizontal or vertical neighbor moves along an edge of this graph.
  * @author Georg Fischer
  */
 public class A223293 extends HolonomicRecurrence implements Conjectural {

@@ -27,10 +27,7 @@ public class A381617 extends Sequence1 {
     this(new MemoryFunction1<>() {
       @Override
       protected CR compute(final int n) {
-        if (n == 0) {
-          return CR.ZERO;
-        }
-        return Zeta.zeta(2).multiply((long) n * n).inverse();
+        return n == 0 ? CR.ZERO : Zeta.zeta(2).multiply((long) n * n).inverse();
       }
     });
   }

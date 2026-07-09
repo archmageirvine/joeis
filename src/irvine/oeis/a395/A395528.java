@@ -8,7 +8,7 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A395528 allocated for Nevan Torres.
+ * A395528 Triangle read by rows: T(n,k) is the number of unlabeled trees with n vertices and burning number k, for k = 1..ceiling(sqrt(n)).
  * @author Sean A. Irvine
  */
 public class A395528 extends Sequence1 {

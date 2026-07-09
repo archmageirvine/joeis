@@ -10,7 +10,7 @@ import irvine.oeis.cons.ContinuedFractionSequence;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395629 allocated for M. F. Hasler.
+ * A395629 Infinite square array where the n-th row gives the continued fraction of Product_{k=1..n} (sqrt(k+1)-sqrt(k)); listed by falling antidiagonals.
  * @author Sean A. Irvine
  */
 public class A395629 extends Sequence1 {

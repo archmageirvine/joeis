@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A181248 Number of nX5 binary matrices with no 2X2 block having four 1&apos;s.
+ * A181248 Number of nX5 binary matrices with no 2X2 block having four 1's.
  * @author Georg Fischer
  */
 public class A181248 extends HolonomicRecurrence implements Conjectural {

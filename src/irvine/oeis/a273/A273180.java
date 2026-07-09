@@ -3,7 +3,7 @@ package irvine.oeis.a273;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A273180 Numbers n such that ror(n) + rol(n) is a power of 2, where ror(n)=A038572(n) is n rotated one binary place to the right, rol(n)=A006257(n) is n rotated one binary place to the left.
+ * A273180 Numbers k such that ror(k) + rol(k) is a power of 2, where ror(k)=A038572(k) is k rotated one binary place to the right, rol(k)=A006257(k) is k rotated one binary place to the left.
  * @author Sean A. Irvine
  */
 public class A273180 extends LinearRecurrence {

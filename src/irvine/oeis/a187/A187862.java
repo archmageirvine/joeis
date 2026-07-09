@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A187862 Number of 7-step one space for components leftwards or up, two space for components rightwards or down asymmetric quasi-queen&apos;s tours (antidiagonal moves become knight moves) on an n X n board summed over all starting positions.
+ * A187862 Number of 7-step one space for components leftwards or up, two space for components rightwards or down asymmetric quasi-queen's tours (antidiagonal moves become knight moves) on an n X n board summed over all starting positions.
  * @author Georg Fischer
  */
 public class A187862 extends HolonomicRecurrence implements Conjectural {

@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A069448 Half the number of 3 X n binary arrays with no path of adjacent 1&apos;s or adjacent 0&apos;s from top to bottom or side to side.
+ * A069448 Half the number of 3 X n binary arrays with no path of adjacent 1's or adjacent 0's from top to bottom or side to side.
  * @author Georg Fischer
  */
 public class A069448 extends HolonomicRecurrence implements Conjectural {

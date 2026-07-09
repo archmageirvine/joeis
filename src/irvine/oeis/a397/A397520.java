@@ -180,7 +180,7 @@ public class A397520 extends Sequence0 {
     while (mUsed.isSet(mLeastUnused)) {
       ++mLeastUnused;
     }
-    long k = extend(mA, mB, LOOKAHEAD);
+    final long k = extend(mA, mB, LOOKAHEAD);
     if (k == STUCK) {
       throw new RuntimeException();
     }

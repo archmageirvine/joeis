@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395110 allocated for Giedrius Alkauskas.
+ * A395110 Number of functions on the grid [0,n+1]^2 which are zero on the boundary and satisfy f(i,j) = ceiling((f(i-1,j)+f(i,j-1)+f(i+1,j)+f(i,j+1))/4) for 1&lt;=i,j&lt;=n.
  * @author Sean A. Irvine
  */
 public class A395110 extends Sequence1 {

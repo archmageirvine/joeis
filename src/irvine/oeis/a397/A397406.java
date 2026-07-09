@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397406 allocated for Felix Huber.
+ * A397406 a(n) is the number of distinct integer-sided cyclic quadrilaterals with integer diagonals and perimeter n.
  * @author Sean A. Irvine
  */
 public class A397406 extends Sequence1 {

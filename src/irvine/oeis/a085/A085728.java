@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A085728 There are never n semiprimes between any k and 2k; or values which do not occur in the sequence of number of semiprimes between n and 2n (inclusive).
+ * A085728 Numbers m such that there are never m semiprimes between any k and 2k; or values which do not occur in A85727.
  * @author Sean A. Irvine
  */
 public class A085728 extends ComplementSequence {

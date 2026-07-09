@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A225348 Number of 8Xn -1,1 arrays such that the sum over i=1..8,j=1..n of i*x(i,j) is zero, the sum of x(i,j) is zero, and rows are nondecreasing (number of ways to distribute n-across galley oarsmen left-right at 8 fore-aft positions so that there are no turning
+ * A225348 Number of 8Xn -1,1 arrays such that the sum over i=1..8,j=1..n of i*x(i,j) is zero, the sum of x(i,j) is zero, and rows are nondecreasing (number of ways to distribute n-across galley oarsmen left-right at 8 fore-aft positions so that there are no turning moments on the ship).
  * @author Georg Fischer
  */
 public class A225348 extends HolonomicRecurrence implements Conjectural {

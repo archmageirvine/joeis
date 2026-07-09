@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A297080 Number of n X 3 0..1 arrays with no 1 adjacent to 2 king-move neighboring 1&apos;s.
+ * A297080 Number of n X 3 0..1 arrays with no 1 adjacent to 2 king-move neighboring 1's.
  * @author Georg Fischer
  */
 public class A297080 extends HolonomicRecurrence implements Conjectural {

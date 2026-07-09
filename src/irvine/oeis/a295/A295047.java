@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A295047 Number of n X 4 0..1 arrays with each 1 horizontally or vertically adjacent to 0 or 2 1&apos;s.
+ * A295047 Number of n X 4 0..1 arrays with each 1 horizontally or vertically adjacent to 0 or 2 1's.
  * @author Georg Fischer
  */
 public class A295047 extends HolonomicRecurrence implements Conjectural {

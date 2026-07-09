@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000201;
 import irvine.oeis.a001.A001950;
 
 /**
- * A397112 allocated for Clark Kimberling.
+ * A397112 Primes indexed by A397111.
  * @author Sean A. Irvine
  */
 public class A397112 extends Sequence1 {

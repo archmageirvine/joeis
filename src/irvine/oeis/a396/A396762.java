@@ -4,7 +4,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
 /**
- * A396762 a(n) is the number of distinct triplets of triangles chosen from n^2 unit triangles of a triangular grid, excluding rotationally equivalent configurations and reflections without having centers of all three triangles in a same symmetrical axis.
+ * A396762 a(n) is the number of distinct triplets of triangles chosen from n^2 unit triangles of a triangular grid up to rotation and reflection without having centers of all three triangles in a same symmetrical axis.
  * @author Sean A. Irvine
  */
 public class A396762 extends A396761 {

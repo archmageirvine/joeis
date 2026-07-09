@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397506 allocated for Daniyal Kadirbekov.
+ * A397506 Number of fully indecomposable n X n matrices with all entries 0 or 1.
  * @author Sean A. Irvine
  */
 public class A397506 extends Sequence1 {

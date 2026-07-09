@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397216 allocated for Janaka Rodrigo.
+ * A397216 a(n) is the number of distinct triplets of triangles chosen from n^2 unit triangles of a triangular grid with their centers collinear up to rotation.
  * @author Sean A. Irvine
  */
 public class A397216 extends Sequence1 {

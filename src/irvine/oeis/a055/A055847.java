@@ -4,7 +4,7 @@ package irvine.oeis.a055;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A055847 a(0)=1, a(1)=6, a(n)=49*8^(n-2) if n&gt;=2.
+ * A055847 a(n) = 49*8^(n-2) if n&gt;=2; a(0)=1, a(1)=6.
  * @author Georg Fischer
  */
 public class A055847 extends GeneratingFunctionSequence {

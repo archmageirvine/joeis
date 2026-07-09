@@ -10,7 +10,7 @@ import irvine.oeis.a131.A131988;
 import irvine.util.Pair;
 
 /**
- * A397408 allocated for Witold Tatkiewicz.
+ * A397408 Shortest path indices during walk over Archimedean spiral lattice with divergence angle equal to golden angle and starting at the center.
  * @author Sean A. Irvine
  */
 public class A397408 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A187856 Number of 8-step king-knight&apos;s tours (piece capable of both kinds of moves) on an n X n board summed over all starting positions.
+ * A187856 Number of 8-step king-knight's tours (piece capable of both kinds of moves) on an n X n board summed over all starting positions.
  * @author Georg Fischer
  */
 public class A187856 extends HolonomicRecurrence implements Conjectural {

@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A109525 a(n)=the sum of the (1,2)- and (1,3)-entries and twice the (1,4)-entry of the matrix P^n + T^n, where the 4 X 4 matrices P and T are defined by P=[0,1,0,0;0,0,1,0;0,0,0,1;1,0,0,0] and T=[0,1,0,0;0,0,1,0;0,0,0,1;1,1,1,1].
+ * A109525 Expansion of g.f.: x*(2 - 4*x^3 - 5*x^4 - 3*x^5 - 2*x^6)/((1 - x)*(1 + x)*(1 + x^2)*(1 - x - x^2 - x^3 - x^4)).
  * @author Sean A. Irvine
  */
 public class A109525 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397024 allocated for Felix Huber.
+ * A397024 a(n) is the sum of gcd(k,n) over all numbers k obtained by changing any subset of the 1-bits of n to 0-bits in its binary representation.
  * @author Sean A. Irvine
  */
 public class A397024 extends Sequence0 {

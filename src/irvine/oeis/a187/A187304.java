@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A187304 Number of 9-step one space leftwards or up, two space rightwards or down asymmetric rook&apos;s tours on an n X n board summed over all starting positions.
+ * A187304 Number of 9-step one space leftwards or up, two space rightwards or down asymmetric rook's tours on an n X n board summed over all starting positions.
  * @author Georg Fischer
  */
 public class A187304 extends HolonomicRecurrence implements Conjectural {

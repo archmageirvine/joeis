@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A181261 Number of (n+2)X9 binary matrices with every 3X3 block having exactly four 1&apos;s.
+ * A181261 Number of (n+2)X9 binary matrices with every 3X3 block having exactly four 1's.
  * @author Georg Fischer
  */
 public class A181261 extends HolonomicRecurrence implements Conjectural {

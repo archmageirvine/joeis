@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A227439 Number of n X 3 0,1 arrays indicating 2 X 2 subblocks of some larger (n+1) X 4 binary array having two adjacent 1&apos;s and two adjacent 0&apos;s.
+ * A227439 Number of n X 3 0,1 arrays indicating 2 X 2 subblocks of some larger (n+1) X 4 binary array having two adjacent 1's and two adjacent 0's.
  * @author Georg Fischer
  */
 public class A227439 extends HolonomicRecurrence implements Conjectural {

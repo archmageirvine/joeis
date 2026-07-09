@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A112401 1-digit squares with their digits reversed, then 2-digit squares, ...
+ * A112401 1-digit squares with their digits reversed, then 2-digit squares reversed, and so on, including squares zero-padded on the left but excluding squares ending in 0.
  * @author Sean A. Irvine
  */
 public class A112401 extends Sequence1 {

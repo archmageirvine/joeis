@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A187052 Number of 8-step one or two space at a time bishop&apos;s tours on an n X n board summed over all starting positions.
+ * A187052 Number of 8-step one or two space at a time bishop's tours on an n X n board summed over all starting positions.
  * @author Georg Fischer
  */
 public class A187052 extends HolonomicRecurrence implements Conjectural {

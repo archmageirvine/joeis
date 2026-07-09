@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A295208 Number of n X 3 0..1 arrays with each 1 horizontally or vertically adjacent to 2 or 3 1&apos;s.
+ * A295208 Number of n X 3 0..1 arrays with each 1 horizontally or vertically adjacent to 2 or 3 1's.
  * @author Georg Fischer
  */
 public class A295208 extends HolonomicRecurrence {

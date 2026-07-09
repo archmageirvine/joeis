@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A227254 Number of nX4 binary arrays indicating whether each 2X2 subblock of a larger binary array has lexicographically nondecreasing rows and columns, for some larger (n+1)X5 binary array with rows and columns of the latter in lexicographically nondecreasing orde
+ * A227254 Number of nX4 binary arrays indicating whether each 2X2 subblock of a larger binary array has lexicographically nondecreasing rows and columns, for some larger (n+1)X5 binary array with rows and columns of the latter in lexicographically nondecreasing order.
  * @author Georg Fischer
  */
 public class A227254 extends HolonomicRecurrence implements Conjectural {

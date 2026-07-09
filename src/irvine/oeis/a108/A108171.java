@@ -8,7 +8,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.Sequence0;
 
 /**
- * A108171 Tribonacci version of A076662 using beta positive real Pisot root of x^3 - x^2 - x - 1.
+ * A108171 Tribonacci version of A076662 using the positive real Pisot root of x^3 - x^2 - x - 1.
  * @author Sean A. Irvine
  */
 public class A108171 extends DifferenceSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a003.A003277;
 
 /**
- * A397387 allocated for Josu\u00e9 Alexander Ibarra.
+ * A397387 Sophie Germain cyclic numbers: numbers k such that k and 2*k+1 are both cyclic numbers (A003277).
  * @author Sean A. Irvine
  */
 public class A397387 extends FilterSequence {

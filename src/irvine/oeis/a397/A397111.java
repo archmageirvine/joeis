@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000201;
 import irvine.oeis.a001.A001950;
 
 /**
- * A397111 allocated for Clark Kimberling.
+ * A397111 Numbers k such that A000201(k) and A001950(k) are both prime.
  * @author Sean A. Irvine
  */
 public class A397111 extends Sequence1 {

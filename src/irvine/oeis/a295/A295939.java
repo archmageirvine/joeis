@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A295939 Number of n X 4 0..1 arrays with each 1 adjacent to 1 or 3 king-move neighboring 1&apos;s.
+ * A295939 Number of n X 4 0..1 arrays with each 1 adjacent to 1 or 3 king-move neighboring 1's.
  * @author Georg Fischer
  */
 public class A295939 extends HolonomicRecurrence {

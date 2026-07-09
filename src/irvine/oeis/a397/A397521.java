@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A397521 allocated for Thomas Scheuerle.
+ * A397521 Expansion of ordinary generating function A(x) satisfying (A(x)^2-A(x^2))/2 = x/(1-x)^2.
  * @author Sean A. Irvine
  */
 public class A397521 extends CachedSequence {

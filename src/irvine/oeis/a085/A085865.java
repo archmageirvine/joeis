@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A085865 a(1) = 2, a(n+1) = a(n)*{sigma(a(n))}, where sigma(n) is the sum of the divisors function.
+ * A085865 a(1) = 2, a(n+1) = a(n)*sigma(a(n)), where sigma(n) is the sum of the divisors function.
  * @author Georg Fischer
  */
 public class A085865 extends MultiTransformSequence {

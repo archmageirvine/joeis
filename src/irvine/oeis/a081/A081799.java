@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A081799 Decimal expansion of the electric permittivity of vacuum in SI units as defined before 20 May 2019.
+ * A081799 Decimal expansion of the electric permittivity of vacuum in SI units as defined before May 20 2019.
  * @author Sean A. Irvine
  * @author Georg Fischer
  */

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397447 allocated for Felix Huber.
+ * A397447 a(n) is the number of distinct primitive cyclic integer-sided quadrilaterals with integral diagonals and integer area, having semiperimeter n.
  * @author Sean A. Irvine
  */
 public class A397447 extends Sequence1 {

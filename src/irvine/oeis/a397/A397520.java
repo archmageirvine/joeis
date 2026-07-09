@@ -156,7 +156,9 @@ public class A397520 extends Sequence0 {
           }
         }
       }
-      ++k;
+      do {
+        ++k;
+      } while ((k & 0b10101) == 0b10101);
       // Conservative stuck test
       if (k > 8 * mUsed.length()) {
         return STUCK;
@@ -177,7 +179,8 @@ public class A397520 extends Sequence0 {
       return Z.ONE;
     }
     //System.out.println(mA + " " + mB + " blocked=" + isBlocked(mA, mB));
-    while (mUsed.isSet(mLeastUnused)) {
+    // Numbers ending in 10101 can never be matched
+    while (mUsed.isSet(mLeastUnused) || (mLeastUnused & 0b10101) == 0b10101) {
       ++mLeastUnused;
     }
     final long k = extend(mA, mB, LOOKAHEAD);

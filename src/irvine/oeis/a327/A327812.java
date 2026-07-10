@@ -2,7 +2,6 @@ package irvine.oeis.a327;
 // manually 2023-12-26
 
 import irvine.math.function.Functions;
-import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
@@ -41,7 +40,7 @@ public class A327812 extends AbstractSequence implements DirectSequence {
     // a(n) = my(s=n/3^valuation(n, 3)); eulerphi(n)/znorder(Mod(3, s))
     final int e = Functions.VALUATION.i(n, mBase1);
     final Z s = n.divide(mBase1.pow(e));
-    return Functions.PHI.z(n).divide(new IntegersModMul(s).order(mBase2));
+    return Functions.PHI.z(n).divide(Functions.ORDER.z(s.longValueExact(), 3));
   }
 
   @Override

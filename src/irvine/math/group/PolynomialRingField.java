@@ -210,7 +210,7 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
     while (f.degree() >= den.degree()) {
       final int degreeDelta = f.degree() - den.degree();
       final Polynomial<E> t = monomial(mElementField.divide(f.coeff(f.degree()), leadCoeff), degreeDelta);
-      f = subtract(f, multiply(t, den));
+      f = subtract(f, localMultiply(t, den));
     }
     return f;
   }

@@ -1,41 +1,19 @@
 package irvine.oeis.a392;
 
-import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
-
 import irvine.math.z.Z;
-import irvine.oeis.a381.A381847;
+import irvine.oeis.Sequence3;
 
 /**
  * A392884 a(n) is the minimum total surface area of four-element sets of distinct integer-sided cuboids that fill an n X n X n cube.
  * @author Sean A. Irvine
  */
-public class A392884 extends A381847 {
+public class A392884 extends Sequence3 {
 
-  protected A392884(final int offset, final int cuboids) {
-    super(offset, cuboids);
-  }
-
-  /** Construct the sequence. */
-  public A392884() {
-    super(3, 4);
-  }
+  private long mN = 2;
 
   @Override
-  protected Z process(final Set<List<Cuboid>> triples, final int cuboids) {
-    int minSurface = Integer.MAX_VALUE;
-    for (final List<Cuboid> t : triples) {
-      if (new TreeSet<>(t).size() == mCuboids) {
-        int surface = 0;
-        for (final Cuboid cuboid : t) {
-          final int s = cuboid.getSurface();
-          surface += s;
-        }
-        minSurface = Math.min(minSurface, surface);
-      }
-    }
-    return Z.valueOf(minSurface == Integer.MAX_VALUE ? 0 : minSurface);
+  public Z next() {
+    return Z.valueOf(++mN).multiply(8).add(2).multiply(mN).add(2);
   }
 }
 

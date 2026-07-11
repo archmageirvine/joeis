@@ -272,8 +272,7 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
     };
   }
 
-  @Override
-  public Polynomial<E> multiply(final Polynomial<E> a, final Polynomial<E> b) {
+  protected Polynomial<E> localMultiply(final Polynomial<E> a, final Polynomial<E> b) {
     final int d = a.degree();
     final int e = b.degree();
     final Polynomial<E> t = new Polynomial<>(mIndeterminate, mZero, mOne);
@@ -290,6 +289,11 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
     }
     t.fixDegree();
     return t;
+  }
+
+  @Override
+  public Polynomial<E> multiply(final Polynomial<E> a, final Polynomial<E> b) {
+    return localMultiply(a, b);
   }
 
   /**

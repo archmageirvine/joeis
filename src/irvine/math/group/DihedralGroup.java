@@ -9,7 +9,7 @@ import irvine.math.set.FiniteSet;
 import irvine.math.set.Permutation;
 
 /**
- * The dihedral groups.
+ * The dihedral group where <code>D_n</code> has order <code>2n</code>.
  * @author Sean A. Irvine
  */
 public class DihedralGroup extends Generator<Permutation<Integer>> {
@@ -66,16 +66,6 @@ public class DihedralGroup extends Generator<Permutation<Integer>> {
   }
 
   /**
-   * Print cycle index.
-   *
-   * @param args cycle index to print.
-   */
-  public static void main(final String[] args) {
-    System.out.println(cycleIndex(Integer.parseInt(args[0])));
-  }
-
-
-  /**
    * Create the dihedral group of specified index
    * @param n index of group
    */
@@ -91,5 +81,21 @@ public class DihedralGroup extends Generator<Permutation<Integer>> {
   @Override
   public String toString() {
     return "D_{" + size().divide2() + "}";
+  }
+
+  /**
+   * Return the character table of this group.
+   * @return character table.
+   */
+  public DihedralCharacterTable characterTable() {
+    return new DihedralCharacterTable(size().divide2().intValueExact());
+  }
+
+  /**
+   * Print cycle index.
+   * @param args cycle index to print.
+   */
+  public static void main(final String[] args) {
+    System.out.println(cycleIndex(Integer.parseInt(args[0])));
   }
 }

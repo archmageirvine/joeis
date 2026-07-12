@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a074.A074854;
 
 /**
- * A397424 allocated for Ctibor O. Zizka.
+ * A397424 a(n) = A074854(n) mod n.
  * @author Sean A. Irvine
  */
 public class A397424 extends A074854 {

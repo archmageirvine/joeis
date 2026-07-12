@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A135240 Numbers n such that phi(sigma(n))=2n.
+ * A135240 Numbers k such that phi(sigma(k)) = 2*k.
  *
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A241351 Number of n X 3 0..3 arrays with no element equal to zero plus the sum of elements to its left or one plus the sum of elements above it or one plus the sum of the elements diagonally to its northwest or zero plus the sum of the elements antidiagonally to i
+ * A241351 Number of n X 3 0..3 arrays with no element equal to zero plus the sum of elements to its left or one plus the sum of elements above it or one plus the sum of the elements diagonally to its northwest or zero plus the sum of the elements antidiagonally to its northeast, modulo 4.
  * @author Georg Fischer
  */
 public class A241351 extends HolonomicRecurrence implements Conjectural {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A070310 Numbers n such that the sum of its aliquot parts and the number of its divisors are both perfect numbers.
+ * A070310 Numbers m such that the sum of its aliquot parts and the number of its divisors are both perfect numbers.
  *
  * @author Georg Fischer
  */

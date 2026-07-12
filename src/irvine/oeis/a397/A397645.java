@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A085547.
+ * A397645 Multiplicative with a(p^e) = (e+1)*(e+2)*(5*e+3)/6.
  * @author Sean A. Irvine
  */
 public class A397645 extends MultiplicativeSequence {

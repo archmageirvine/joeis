@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A077696 a(0) = 2; a(n) = smallest multiple of a(n-1), not a multiple of 10, that contains all the digits of a(n-1).
+ * A077696 a(0) = 2; a(n) = smallest multiple of a(n-1), greater than a(n-1) and not a multiple of 10, that contains all the digits of a(n-1).
  * @author Sean A. Irvine
  */
 public class A077696 extends AbstractSequence {

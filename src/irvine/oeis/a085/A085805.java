@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A085547.
+ * A085805 Numbers k such that the permanent of the character table of the dihedral group D_k is not zero.
  * @author Sean A. Irvine
  */
 public class A085805 extends Sequence1 {

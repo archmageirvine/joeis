@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A183333 Number of n X 5 binary arrays with each 1 adjacent to exactly two 0&apos;s.
+ * A183333 Number of n X 5 binary arrays with each 1 adjacent to exactly two 0's.
  * @author Georg Fischer
  */
 public class A183333 extends HolonomicRecurrence implements Conjectural {

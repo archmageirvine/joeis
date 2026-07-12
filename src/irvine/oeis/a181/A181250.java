@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A181250 Number of n X 7 binary matrices with no 2 X 2 block having four 1&apos;s.
+ * A181250 Number of n X 7 binary matrices with no 2 X 2 block having four 1's.
  * @author Georg Fischer
  */
 public class A181250 extends HolonomicRecurrence implements Conjectural {

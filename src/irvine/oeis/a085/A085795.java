@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A085794.
+ * A085795 Dimensions k such that the (2,k)-cross lattice-tiles R^k.
  * @author Sean A. Irvine
  */
 public class A085795 extends FilterNumberSequence {

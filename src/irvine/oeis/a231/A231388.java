@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a088.A088137;
 
 /**
- * A231388 Numbers n dividing the Lucas sequence u(n), defined by u(i) = 2*u(i-1) - 3*u(i-2) with initial conditions u(0)=0, u(1)=1.
+ * A231388 Numbers k dividing the Lucas sequence u(k), defined by u(i) = 2*u(i-1) - 3*u(i-2) with initial conditions u(0)=0, u(1)=1.
  * @author Georg Fischer
  */
 public class A231388 extends FilterPositionSequence {

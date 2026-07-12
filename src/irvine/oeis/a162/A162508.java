@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A162508 A binomial sum of powers related to the Bernoulli numbers, triangular array, read by rows.
+ * A162508 A binomial sum of powers related to the Bernoulli numbers, triangular array read by rows.
  * T(n,k) = (k + 1)*T(n-1,k) - k*T(n-1,k-1)
  * @author Georg Fischer
  */

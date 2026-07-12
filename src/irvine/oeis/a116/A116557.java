@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A116557 Backward iterated ( limited ) Fibonacci approximation: A000045.
+ * A116557 a(25)=500000, a(n) = floor(a(n+1) * (sqrt(5)-1) / 2).
  * @author Sean A. Irvine
  */
 public class A116557 extends FiniteSequence {

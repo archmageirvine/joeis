@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A228389 Number of n X 7 binary arrays with top left value 1 and no two 1&apos;s adjacent horizontally or vertically.
+ * A228389 Number of n X 7 binary arrays with top left value 1 and no two 1's adjacent horizontally or vertically.
  * @author Georg Fischer
  */
 public class A228389 extends HolonomicRecurrence implements Conjectural {

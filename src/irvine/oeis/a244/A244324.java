@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A244324 Numbers m such that floor(antisigma(m) / m) = antisigma(m) mod m.
+ * A244324 Numbers m such that sigma(m) == (m+1)/2 (mod m+1).
  * @author Georg Fischer
  */
 public class A244324 extends FilterNumberSequence {

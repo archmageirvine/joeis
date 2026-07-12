@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A204478 Number of (n+2)X5 0..3 arrays with every 3X3 subblock having three equal elements in a row horizontally, vertically or nw-to-se diagonally exactly three ways, and new values 0..3 introduced in row major order.
+ * A204478 Number of (n+2) X 5 0..3 arrays with every 3 X 3 subblock having three equal elements in a row horizontally, vertically or nw-to-se diagonally exactly three ways, and new values 0..3 introduced in row major order.
  * @author Georg Fischer
  */
 public class A204478 extends HolonomicRecurrence implements Conjectural {

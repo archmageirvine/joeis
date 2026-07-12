@@ -7,7 +7,7 @@ import irvine.oeis.recur.HolonomicRecurrence;
 
 
 /**
- * A248646 Expansion of x*(x^3+x^2+x+2)/(1-2*x).
+ * A248646 Expansion of g.f. x*(x^3+x^2+x+2)/(1-2*x).
  * @author Georg Fischer
  */
 public class A248646 extends HolonomicRecurrence {

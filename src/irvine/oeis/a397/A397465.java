@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397465 allocated for James S. DeArmon.
+ * A397465 Smallest prime containing an n-digit prime as a proper substring.
  * @author Sean A. Irvine
  */
 public class A397465 extends Sequence1 {

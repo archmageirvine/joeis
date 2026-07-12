@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A184203 Number of (n+1) X 6 binary arrays with no 2 X 2 subblock containing fewer than two 1&apos;s.
+ * A184203 Number of (n+1) X 6 binary arrays with no 2 X 2 subblock containing fewer than two 1's.
  * @author Georg Fischer
  */
 public class A184203 extends HolonomicRecurrence implements Conjectural {

@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A081322 F(P(n)), where F(n) = Fibonacci numbers A000045, P(n) = Pell numbers A000129.
+ * A081322 a(n) = F(P(n)), where F(n) = Fibonacci numbers A000045, P(n) = Pell numbers A000129.
  * @author Georg Fischer
  */
 public class A081322 extends LambdaSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A085794.
+ * A085794 Lexicographically earliest squarefree infinite ternary word.
  * @author Sean A. Irvine
  */
 public class A085794 extends Sequence0 {

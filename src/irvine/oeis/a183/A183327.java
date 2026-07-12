@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A183327 Number of n X 6 binary arrays with each 1 adjacent to exactly two other 1&apos;s.
+ * A183327 Number of n X 6 binary arrays with each 1 adjacent to exactly two other 1's.
  * @author Georg Fischer
  */
 public class A183327 extends HolonomicRecurrence implements Conjectural {

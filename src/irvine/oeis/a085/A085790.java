@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A085768.
+ * A085790 Integers sorted by the sum of their divisors.
  * @author Sean A. Irvine
  */
 public class A085790 extends Sequence1 {

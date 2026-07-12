@@ -5,7 +5,7 @@ import irvine.oeis.a098.A098210;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A099638 a[n]=A098210[n]/15.
+ * A099638 a(n) = A098210(n)/15.
  * @author Georg Fischer
  */
 public class A099638 extends SingleTransformSequence {

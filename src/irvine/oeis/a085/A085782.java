@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000217;
 import irvine.oeis.closure.MultiplicativeClosureSequence;
 
 /**
- * A085780.
+ * A085782 Numbers that can be written as a product of triangular numbers.
  * @author Sean A. Irvine
  */
 public class A085782 extends PrependSequence {

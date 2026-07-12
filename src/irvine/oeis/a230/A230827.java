@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A230827 Number of nX4 0..3 arrays x(i,j) with each element horizontally, vertically or antidiagonally next to at least one element with value (x(i,j)+1) mod 4 and at least one element with value (x(i,j)-1) mod 4, no adjacent elements equal, and upper left element
+ * A230827 Number of nX4 0..3 arrays x(i,j) with each element horizontally, vertically or antidiagonally next to at least one element with value (x(i,j)+1) mod 4 and at least one element with value (x(i,j)-1) mod 4, no adjacent elements equal, and upper left element zero.
  * @author Georg Fischer
  */
 public class A230827 extends HolonomicRecurrence implements Conjectural {

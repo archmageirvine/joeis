@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a061.A061067;
 
 /**
- * A397334 allocated for Jean-Marc Rebert.
+ * A397334 Least m such that the chain u_0 = m, u_{k+1} = pi(u_k+prime(u_k)), where u_k + prime(u_k) is prime, has length n.
  * @author Sean A. Irvine
  */
 public class A397334 extends Sequence1 {

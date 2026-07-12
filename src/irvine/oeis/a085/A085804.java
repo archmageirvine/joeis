@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A085547.
+ * A085804 Least k such that n^n + k is a palindrome.
  * @author Sean A. Irvine
  */
 public class A085804 extends Sequence1 {

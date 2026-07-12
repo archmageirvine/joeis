@@ -1,51 +1,29 @@
 package irvine.oeis.a396;
 
-import java.util.ArrayList;
-
-import irvine.math.series.Series;
-import irvine.math.series.SeriesRing;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.FilterSequence;
 
 /**
- * A396157 allocated for Michael De Vlieger.
+ * A396157 Composites k not of the form 8*p or 9*q, odd prime p, prime q != 3, such that rad(k)*bigomega(k) = k, with rad = A007947 and bigomega = A001222.
  * @author Sean A. Irvine
  */
-public class A396157 extends Sequence0 {
+public class A396157 extends FilterSequence {
 
-  private static final SeriesRing<Z> SZ = SeriesRing.SZ;
-  private static final Series<Z> S = SZ.create(Z.NEG_ONE, Z.TWO);
-  private int mN = -0;
-  private int mM = -1;
-  private final ArrayList<Series<Z>> mSeries = new ArrayList<>();
-
-  @Override
-  public Z next() {
-    if (++mM > mN) {
-      ++mN;
-      mM = 0;
-    }
-    if (mM >= mSeries.size()) {
-      final Series<Z> a = new Series<>() {
-        private final long mT = mM;
-
-        @Override
-        public Z coeff(final long n) {
-          if (n > mT) {
-            return Z.ZERO;
-          }
-          if (n == 0) {
-            return Z.NEG_ONE;
-          }
-          return Z.ONE;
-        }
-        @Override
-        public long bound() {
-          return mT;
-        }
-      };
-      mSeries.add(SZ.divide(SZ.monomial(mM), SZ.multiply(S, a)));
-    }
-    return mSeries.get(mM).coeff(mN);
+  /** Construct the sequence. */
+  public A396157() {
+    super(1, new A396594(), k -> {
+      if (k.isProbablePrime()) {
+        return false;
+      }
+      final Z[] qr8 = k.divideAndRemainder(8);
+      if (qr8[1].isZero() && qr8[0].isProbablePrime()) {
+        return false;
+      }
+      final Z[] qr9 = k.divideAndRemainder(9);
+      if (qr9[1].isZero() && qr9[0].isProbablePrime()) {
+        return false;
+      }
+      return true;
+    });
   }
 }

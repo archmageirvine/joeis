@@ -6,7 +6,7 @@ import irvine.oeis.a110.A110501;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A117513 Number of ways of arranging 2*n tokens in a row, with 2 copies of each token from 1 through n, such that between every pair of tokens labeled i (i = 1..n-1) there is exactly one taken labeled i+1.
+ * A117513 Number of ways of arranging 2*n tokens in a row, with 2 copies of each token from 1 through n, such that between every pair of tokens labeled i (i = 1..n-1) there is exactly one token labeled i+1.
  * @author Georg Fischer
  */
 public class A117513 extends SingleTransformSequence {

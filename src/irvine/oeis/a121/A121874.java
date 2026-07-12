@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A121874 Numbers n such that Fibonacci(n) == 0 (mod triangular(n)).
+ * A121874 Numbers k such that Fibonacci(k) == 0 (mod triangular(k)).
  * @author Georg Fischer
  */
 public class A121874 extends FilterNumberSequence {

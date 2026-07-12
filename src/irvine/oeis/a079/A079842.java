@@ -11,7 +11,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A079842 Largest square which is a concatenation of partitions of n; or 0 if no such number exists.
+ * A079842 Largest square which is a concatenation of a composition of n; or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A079842 extends Sequence1 {

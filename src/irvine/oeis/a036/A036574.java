@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A036574 a(n) = least number not of form [ (a^2+b^2)/n ].
+ * A036574 a(n) = least number not of form floor((a^2+b^2)/n).
  * @author Sean A. Irvine
  */
 public class A036574 extends Sequence1 {

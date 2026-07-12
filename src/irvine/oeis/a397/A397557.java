@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a381.A381617;
 
 /**
- * A397557 allocated for Jwalin Bhatt.
+ * A397557 A sequence constructed by greedily sampling the zeta distribution for parameter value 3 to minimize discrepancy.
  * @author Sean A. Irvine
  */
 public class A397557 extends A381617 {

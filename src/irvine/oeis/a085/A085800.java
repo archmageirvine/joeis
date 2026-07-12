@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A085547 a(n) is the maximal row sum in the character table of the symmetric group S_n.
+ * A085800 Maximal number of zeros in a row of the character table of the symmetric group S_n.
  * @author Sean A. Irvine
  */
 public class A085800 extends Sequence1 {

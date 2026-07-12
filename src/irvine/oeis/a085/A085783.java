@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.TwoParameterFormSequence;
 
 /**
- * A085780.
+ * A085783 Product of a prime and a triangular number.
  * @author Sean A. Irvine
  */
 public class A085783 extends TwoParameterFormSequence {

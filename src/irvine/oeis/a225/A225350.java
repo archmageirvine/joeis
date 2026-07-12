@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A225350 Number of 10Xn -1,1 arrays such that the sum over i=1..10,j=1..n of i*x(i,j) is zero, the sum of x(i,j) is zero, and rows are nondecreasing (number of ways to distribute n-across galley oarsmen left-right at 10 fore-aft positions so that there are no turni
+ * A225350 Number of 10Xn -1,1 arrays such that the sum over i=1..10,j=1..n of i*x(i,j) is zero, the sum of x(i,j) is zero, and rows are nondecreasing (number of ways to distribute n-across galley oarsmen left-right at 10 fore-aft positions so that there are no turning moments on the ship).
  * @author Georg Fischer
  */
 public class A225350 extends HolonomicRecurrence implements Conjectural {

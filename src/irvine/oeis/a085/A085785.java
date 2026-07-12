@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A085768.
+ * A085785 Start at (2n+1)/4 and iterate the map x -&gt; x*ceiling(x); sequence gives number of steps for denominator to drop to 1 or 2; or -1 if this never happens.
  * @author Sean A. Irvine
  */
 public class A085785 extends Sequence2 {

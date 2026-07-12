@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396285 a(n) is the number of distinct triplets of triangles chosen from the n^2 unit triangles of the triangular grid, excluding rotationally equivalent configurations.
+ * A396285 a(n) is the number of distinct triples of triangles chosen from the n^2 unit triangles of the triangular grid up to rotation.
  * @author Sean A. Irvine
  */
 public class A396285 extends Sequence1 {

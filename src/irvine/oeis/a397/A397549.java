@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A085547.
+ * A397549 Multiplicative with a(p^e) = (e+1)^2*(e+2)/2.
  * @author Sean A. Irvine
  */
 public class A397549 extends MultiplicativeSequence {

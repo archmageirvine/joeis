@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A397462 allocated for Thomas Scheuerle.
+ * A397462 a(n) is the number of pairs 0 &lt;= k,m &lt; n such that a(n-1) = a(k)*a(m), with a(0) = 0.
  * @author Sean A. Irvine
  */
 public class A397462 extends CachedSequence {

@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A085780.
+ * A397710 allocated for Michael De Vlieger.
  * @author Sean A. Irvine
  */
 public class A397710 extends FilterNumberSequence {

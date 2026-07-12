@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A045646 Alternative version of A006050.
+ * A045646 Least integer k &gt; 0 with additive persistence A031286(k) = n.
  * @author Sean A. Irvine
  */
 public class A045646 extends Sequence0 {

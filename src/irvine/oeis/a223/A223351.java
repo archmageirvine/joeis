@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A223351 3X3X3 triangular graph without horizontal edges coloring a rectangular array: number of nX7 0..5 arrays where 0..5 label nodes of a graph with edges 0,1 0,2 1,3 1,4 2,4 2,5 and every array movement to a horizontal or vertical neighbor moves along an edge o
+ * A223351 3X3X3 triangular graph without horizontal edges coloring a rectangular array: number of nX7 0..5 arrays where 0..5 label nodes of a graph with edges 0,1 0,2 1,3 1,4 2,4 2,5 and every array movement to a horizontal or vertical neighbor moves along an edge of this graph.
  * @author Georg Fischer
  */
 public class A223351 extends HolonomicRecurrence implements Conjectural {

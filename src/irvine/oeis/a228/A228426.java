@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A228426 Numerator of Sum(i=1..n-1, 1/i^(2*n-1)).
+ * A228426 Numerator of Sum_{i=1..n-1} 1/i^(2*n-1).
  * @author Georg Fischer
  */
 public class A228426 extends LambdaSequence {

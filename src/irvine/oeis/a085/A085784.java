@@ -5,7 +5,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.TwoParameterFormSequence;
 
 /**
- * A085780.
+ * A085784 Product of a prime and any number of triangular numbers.
  * @author Sean A. Irvine
  */
 public class A085784 extends TwoParameterFormSequence {

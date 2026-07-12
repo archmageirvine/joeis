@@ -8,7 +8,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A397520 allocated for Scott R. Shannon.
+ * A397520 Lexicographically earliest infinite sequence of distinct nonnegative integers such that each 1-bit in the binary plot of the sequence is a knight's move apart from one, and only one, other 1-bit.
  * @author Sean A. Irvine
  */
 public class A397520 extends Sequence0 {

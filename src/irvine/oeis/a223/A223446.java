@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A223446 4-level binary fanout graph coloring a rectangular array: number of nX5 0..14 arrays where 0..14 label nodes of a graph with edges 0,1 1,3 3,5 3,6 1,4 4,7 4,8 0,2 2,9 9,11 9,12 2,10 10,13 10,14 and every array movement to a horizontal or vertical neighbor
+ * A223446 4-level binary fanout graph coloring a rectangular array: number of nX5 0..14 arrays where 0..14 label nodes of a graph with edges 0,1 1,3 3,5 3,6 1,4 4,7 4,8 0,2 2,9 9,11 9,12 2,10 10,13 10,14 and every array movement to a horizontal or vertical neighbor moves along an edge of this graph.
  * @author Georg Fischer
  */
 public class A223446 extends HolonomicRecurrence implements Conjectural {

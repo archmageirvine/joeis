@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a386.A386016;
 
 /**
- * A397556 allocated for Jwalin Bhatt.
+ * A397556 Sequence where k is appended after every k^3 occurrences of 1, with multiple values following a 1 listed in order.
  * @author Sean A. Irvine
  */
 public class A397556 extends A386016 {

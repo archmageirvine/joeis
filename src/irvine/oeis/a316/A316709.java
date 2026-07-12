@@ -4,7 +4,7 @@ package irvine.oeis.a316;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A316709 Bisection of the odd-indexed Pell numbers A001853: part 2.
+ * A316709 Bisection of the odd-indexed Pell numbers A001653: part 2.
  * @author Georg Fischer
  */
 public class A316709 extends GeneratingFunctionSequence {

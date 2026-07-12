@@ -19,7 +19,7 @@ public class A397441 extends CachedSequence {
         return self.a(n / 2);
       }
       Z sum = Z.ZERO;
-      long m = n / 2;
+      final long m = n / 2;
       long k = 1;
       while (m - k + 1 >= 0) {
         sum = sum.add(self.a(m - k + 1));

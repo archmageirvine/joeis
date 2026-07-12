@@ -14,7 +14,7 @@ public class A392947 extends A000040 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if ((Functions.ORDER.l(p.longValueExact(), p.subtract(2)) & 3) == 0) {
+      if ((Functions.ORDER.l(p, p.subtract(2)) & 3) == 0) {
         return p;
       }
     }

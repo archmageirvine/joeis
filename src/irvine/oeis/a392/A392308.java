@@ -16,7 +16,7 @@ public class A392308 extends A000040 {
     }
     if (p.mod(4) == 3) {
       final Z r = p.divide2(); // (p-1)/2
-      final Z z = Functions.ORDER.z(r.longValueExact(), Z.TWO);
+      final Z z = Functions.ORDER.z(r, Z.TWO);
       if (z.mod(4) == 0) {
         return Z.TWO.modPow(z.divide2(), r).equals(r.subtract(1));
       }

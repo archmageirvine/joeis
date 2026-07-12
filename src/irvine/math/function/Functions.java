@@ -191,8 +191,6 @@ public final class Functions {
   public static final Function2D INFINITARY_SIGMA0 = new InfinitarySigma0();
   /** Generalized infinitary sum of divisors function. */
   public static final Function2D INFINITARY_SIGMA1 = new InfinitarySigma1();
-  /** Multiplicative order in <code>Z_base</code>. */
-  public static final Function2D ORDER = new MultiplicativeOrder();
   /** Reverse the digits of a number. */
   public static final Function2D REVERSE = new Reverse(); // =A004086(10, = A305989(2,
   /** Reverse the digits of a number and add the original number. */
@@ -273,6 +271,8 @@ public final class Functions {
   public static final Function2 LOCAL_CATALAN_RANK = new LocalCatalanRank(); // =A057121
   /** Binomial coefficients (possibly negative parameters) */
   public static final Function2 BINOMIAL = new Binomial2(); // =A007318
+  /** Multiplicative order in <code>Z_base</code>. */
+  public static final Function2 ORDER = new MultiplicativeOrder();
 
   // Aggregating functions
 

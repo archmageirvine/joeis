@@ -7,15 +7,15 @@ import irvine.math.z.Z;
  * Multiplicative order of a number in the integers modulo a small number.
  * @author Sean A. Irvine
  */
-class MultiplicativeOrder extends AbstractFunction2D {
-
-  @Override
-  public long getDefault() {
-    return 10;
-  }
+class MultiplicativeOrder extends AbstractFunction2 {
 
   @Override
   public Z z(final long base, final Z n) {
     return base == 1 ? Z.ONE : new IntegersModMul(base).order(n);
+  }
+
+  @Override
+  public Z z(final Z base, final Z n) {
+    return base.isOne() ? Z.ONE : new IntegersModMul(base).order(n);
   }
 }

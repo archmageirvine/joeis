@@ -38,9 +38,11 @@ public class A327812 extends AbstractSequence implements DirectSequence {
   public Z a(final Z n) {
     // Let n = 3^e*s, gcd(3,s) = 1, then a(n) = phi(n)/ord(3,s)
     // a(n) = my(s=n/3^valuation(n, 3)); eulerphi(n)/znorder(Mod(3, s))
-    final int e = Functions.VALUATION.i(n, mBase1);
-    final Z s = n.divide(mBase1.pow(e));
-    return Functions.PHI.z(n).divide(Functions.ORDER.z(s.longValueExact(), 3));
+    Z s = n;
+    while (s.mod(mBase1).isZero()) {
+      s = s.divide(mBase1);
+    }
+    return Functions.PHI.z(n).divide(Functions.ORDER.z(s, mBase2));
   }
 
   @Override

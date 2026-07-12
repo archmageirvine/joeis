@@ -15,7 +15,7 @@ public class A085795 extends FilterNumberSequence {
   public A085795() {
     super(1, k -> {
       for (final Z p : Jaguar.factor(4L * k + 1).toZArray()) {
-        if (Functions.ORDER.z(p.longValueExact(), 4).isOdd()) {
+        if (Functions.ORDER.z(p, 4).isOdd()) {
           return false;
         }
       }

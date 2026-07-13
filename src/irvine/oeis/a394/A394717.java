@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002808;
 
 /**
- * A085830.
+ * A394717 allocated for Barry Smyth.
  * @author Sean A. Irvine
  */
 public class A394717 extends FilterSequence {

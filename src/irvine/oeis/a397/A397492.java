@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a396.A396351;
 
 /**
- * A392308.
+ * A397492 allocated for Ramin Mohammadi Masoudi.
  * @author Sean A. Irvine
  */
 public class A397492 extends A396351 {

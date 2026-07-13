@@ -8,7 +8,7 @@ import irvine.util.array.LongDynamicIntArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A394752 P-positions for the octal game 0.404.
+ * A394752 allocated for Sijie Wu.
  * @author Sean A. Irvine
  */
 public class A394752 extends Sequence1 {

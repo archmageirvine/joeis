@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A085830.
+ * A397640 allocated for Jean-Marc Rebert.
  * @author Sean A. Irvine
  */
 public class A397640 extends Sequence1 {

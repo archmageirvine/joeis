@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000038;
 import irvine.oeis.transform.DelehamDeltaSequence;
 
 /**
- * A321623 The Riordan square of the large Schr√∂der numbers, triangle read by rows, T(n, k) for 0 &lt;= k &lt;= n.
+ * A321623 The Riordan square of the large Schr\u00f6der numbers, triangle read by rows, T(n, k) for 0 &lt;= k &lt;= n.
  * where DELTA is the operator defined in J084938.- _Philippe Del‚ąö¬©ham_, Feb 05 2020
  * @author Georg Fischer
  */

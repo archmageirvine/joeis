@@ -26,10 +26,10 @@ public class A023942 extends Sequence0 {
     final Polynomial<Z> a = RING.pow(t3, 4, mN);
     final Polynomial<Z> b = RING.pow(t4, 4, mN);
     return RING.pow(b, 5, mN).coeff(mN)
-      .add(RING.multiply(a, RING.pow(b, 4)).coeff(mN).multiply(5))
-      .subtract(RING.multiply(RING.pow(a, 2), RING.pow(b, 3)).coeff(mN).multiply(140))
-      .add(RING.multiply(RING.pow(a, 3), RING.pow(b, 2)).coeff(mN).multiply(520))
-      .subtract(RING.multiply(RING.pow(a, 4), b).coeff(mN).multiply(640))
+      .add(RING.multiply(a, RING.pow(b, 4, mN)).coeff(mN).multiply(5))
+      .subtract(RING.multiply(RING.pow(a, 2, mN), RING.pow(b, 3, mN)).coeff(mN).multiply(140))
+      .add(RING.multiply(RING.pow(a, 3, mN), RING.pow(b, 2, mN)).coeff(mN).multiply(520))
+      .subtract(RING.multiply(RING.pow(a, 4, mN), b).coeff(mN).multiply(640))
       .add(RING.pow(a, 5, mN).coeff(mN).multiply(256))
       .divide2();
   }

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
- * A085830.
+ * A121806 a(n) = f(prime(n*2+1) mod 3, prime(n*2+2) mod 3) where f(1,1) = 3, f(1,2) = 1, f(2,1) = 2, f(2,2) = 4.
  * @author Sean A. Irvine
  */
 public class A121806 extends Sequence1 {

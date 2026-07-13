@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000108;
 import irvine.oeis.transform.DelehamDeltaSequence;
 
 /**
- * A085845 Triangle T(n, k) read by rows; given by [0, 1, 0, 1, 0, 1, ...] DELTA [1, 1, 2, 5, 14, 42, 132, 429, 1430, ...] (A000108) where DELTA is Del√©ham&apos;s operator defined in A084938.
+ * A085845 Triangle T(n, k) read by rows; given by [0, 1, 0, 1, 0, 1, ...] DELTA [1, 1, 2, 5, 14, 42, 132, 429, 1430, ...] (A000108) where DELTA is Del\u00e9ham's operator defined in A084938.
  * (F000108) where DELTA is Del‚ąö¬©ham_s operator defined in J084938.
  * @author Georg Fischer
  */

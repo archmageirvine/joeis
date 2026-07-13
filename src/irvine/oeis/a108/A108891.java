@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a104.A104219;
 
 /**
- * A108891 Triangle read by rows: T(n,k) = number of Schroeder (or royal) n-paths (A006318) containing k returns to the diagonal y=x. (A northeast step lying on y=x contributes a return.)
+ * A108891 Triangle read by rows: T(n,k) = number of Schroeder (or royal) n-paths (A006318) containing k returns to the diagonal y=x. (A northeast step lying on y=x contributes a return.).
  * @author Georg Fischer
  */
 public class A108891 extends A104219 {

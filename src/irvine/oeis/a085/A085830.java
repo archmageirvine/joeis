@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A085830 Least k such that (10^n)^k < k!.
+ * A085830 Least number k such that (10^n)^k &lt; k!.
  * @author Sean A. Irvine
  */
 public class A085830 extends Sequence0 {

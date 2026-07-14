@@ -2760,3 +2760,6 @@ A085716 Class numbers of fields in A085715.
 A085736 Numbers n such that all groups of order n are solvable.
 A085798 Dimensions n such that the (5,n)-cross lattice-tiles R^n. [theorem doesn't match table?]
 A085835 Decimal expansion of Grossman's constant.
+A085848 Decimal expansion of Foias' constant.
+A085849 Decimal expansion of the probability that two m X m and n X n matrices (m,n large) have relatively prime determinants.
+A085850 Decimal expansion of hard square entropy constant. [hard with all known terms of A006506]

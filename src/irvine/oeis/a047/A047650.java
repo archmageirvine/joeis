@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A047650 Primes for which golden mean tau is a quadratic residue.
+ * A047650 Primes for which golden mean phi is a quadratic residue.
  * @author Sean A. Irvine
  */
 public class A047650 extends A000040 {

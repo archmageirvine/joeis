@@ -9,7 +9,7 @@ import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
- * A085847 Members of A085844 which are permutations of other members of A085844.
+ * A085847 Members of A085844 which are anagrams of other members of A085844.
  * @author Sean A. Irvine
  */
 public class A085847 extends A085844 {

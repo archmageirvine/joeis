@@ -5,7 +5,7 @@ package irvine.oeis.a107;
 import irvine.oeis.a033.A033235;
 
 /**
- * A107192 Primes of the form x^2 + 80y^2.
+ * A107192 Primes of the form x^2 + 80*y^2.
  * @author Georg Fischer
  */
 public class A107192 extends A033235 {

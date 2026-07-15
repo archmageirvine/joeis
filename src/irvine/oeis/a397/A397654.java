@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A397654 allocated for Robert G. Wilson v.
+ * A397654 Least composite number in base n, that is an anagram of the concatenation of its distinct prime factors in base n, but presented in base 10.
  * @author Sean A. Irvine
  */
 public class A397654 extends Sequence2 {

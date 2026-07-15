@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002808;
 
 /**
- * A394717 allocated for Barry Smyth.
+ * A394717 Composite numbers d such that the period k of the decimal expansion of 1/d is even and divides d-1, and the two halves of the repetend of 1/d sum to 10^(k/2) - 1.
  * @author Sean A. Irvine
  */
 public class A394717 extends FilterSequence {

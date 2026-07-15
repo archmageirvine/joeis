@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A397256 allocated for M. F. Hasler.
+ * A397256 Square array T(n,k) = product of digits of k &gt;= 1 in base n &gt;= 2, read by falling antidiagonals.
  * @author Sean A. Irvine
  */
 public class A397256 extends Sequence2 {

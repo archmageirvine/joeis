@@ -10,7 +10,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007238;
 
 /**
- * A397525 allocated for Thomas Scheuerle.
+ * A397525 a(n) = 2^(A007238(n)) * [x^n] B(x) where B(x) satisfies (B(x)^2-B(x^2))/2 = 1/(1-x)^2 with a(0) = 2.
  * @author Sean A. Irvine
  */
 public class A397525 extends Sequence0 {

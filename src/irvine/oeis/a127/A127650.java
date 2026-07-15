@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A127650 n^n - (2n-1)!!.
+ * A127650 a(n) = n^n - (2n-1)!!.
  * @author Georg Fischer
  */
 public class A127650 extends LambdaSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a055;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A055995 a(n) = 64*9^(n-2), a(0)=1, a(1)=7.
+ * A055995 a(n) = 64*9^(n-2), a(0) = 1, a(1) = 7.
  * @author Georg Fischer
  */
 public class A055995 extends GeneratingFunctionSequence {

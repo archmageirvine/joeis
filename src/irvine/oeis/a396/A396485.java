@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A396485 allocated for Kelvin Voskuijl.
+ * A396485 Decimal expansion of the sum of the reciprocals of doubly triangular numbers (A002817).
  * @author Sean A. Irvine
  */
 public class A396485 extends DecimalExpansionSequence {

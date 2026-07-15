@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 import irvine.math.z.Z;
 
 /**
- * A121849 The spiral parameter epsilon for the icosahedral fullerenes C_n.
+ * A121849 The spiral parameter epsilon for the icosahedral fullerenes.
  * @author Sean A. Irvine
  */
 public class A121849 extends A121847 {

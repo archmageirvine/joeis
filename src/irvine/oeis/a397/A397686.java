@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A397686 allocated for Ridouane Oudra.
+ * A397686 Multiplicative with a(p^e) = (e+1)*(e+2)*(2*e+1)/2.
  * @author Sean A. Irvine
  */
 public class A397686 extends MultiplicativeSequence {

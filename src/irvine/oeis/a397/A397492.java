@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a396.A396351;
 
 /**
- * A397492 allocated for Ramin Mohammadi Masoudi.
+ * A397492 Square array read by antidiagonals: A(n,m) is the number of satisfiable 3-SAT formulas with n variables and m clauses in the multiset clause model, n &gt;= 1, m &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A397492 extends A396351 {

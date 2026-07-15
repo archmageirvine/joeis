@@ -96,6 +96,8 @@ public final class Predicates {
   public static final Predicate DISTINCT_EXPONENTS = new DistinctExponents(); // =A130091
   /** Test if a number is a kangaroo. */
   public static final Predicate KANGAROO = new Kangaroo(); // =A395761
+  /** Test if a number is a Keith number. */
+  public static final Predicate KEITH = new Keith(); // =A007629
   /** Test if a number is cyclic. */
   public static final Predicate CYCLIC = new Cyclic(); // =A003277
   /** Test if a number is a sum of two squares. */

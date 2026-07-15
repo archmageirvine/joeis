@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397711 allocated for Tyler Satchel Orden.
+ * A397711 Number of acyclic digraphs (or DAGs) on n labeled nodes in which every node has in-degree at most 2.
  * @author Sean A. Irvine
  */
 public class A397711 extends Sequence0 {

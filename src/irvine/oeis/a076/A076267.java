@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a027.A027619;
 
 /**
- * A076267 Numbers n such that A005185(n) divides n.
+ * A076267 Numbers k such that A005185(k) divides k.
  * @author Georg Fischer
  */
 public class A076267 extends PrependSequence {

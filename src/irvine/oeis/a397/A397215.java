@@ -55,7 +55,6 @@ public class A397215 extends Sequence1 {
     }
 
     long cnt = 0;
-    long f = 0;
     for (int i = 0; i < xs.length; ++i) {
       final int ax = xs[i];
       final int ay = ys[i];
@@ -68,14 +67,12 @@ public class A397215 extends Sequence1 {
           if (isCollinear(ax, ay, bx, by, cx, cy)) {
             ++cnt;
             if (isReflectionFixed(ax, ay, bx, by, cx, cy)) {
-              ++f;
+              cnt += 3;
             }
           }
         }
       }
     }
-    final long s = cnt + 3 * f;
-    assert s % 6 == 0;
-    return Z.valueOf(s / 6);
+    return Z.valueOf(cnt / 6);
   }
 }

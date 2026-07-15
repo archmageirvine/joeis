@@ -3,7 +3,7 @@ package irvine.oeis.a196;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A196508 a(n) = 2^n*(n^2 - n + 4)-4.
+ * A196508 a(n) = 2^n*(n^2 - n + 4) - 4.
  * @author Sean A. Irvine
  */
 public class A196508 extends LinearRecurrence {

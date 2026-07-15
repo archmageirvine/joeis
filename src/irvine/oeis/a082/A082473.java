@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A082473 Numbers n such that n = phi(x)*core(x) for some x &lt;= n, where phi(x) is the Euler totient function and core(x) the squarefree part of x.
+ * A082473 Numbers k such that k = phi(x)*core(x) for some x &lt;= k, where phi(x) is the Euler totient function and core(x) the squarefree part of x.
  * @author Sean A. Irvine
  */
 public class A082473 extends Sequence1 {

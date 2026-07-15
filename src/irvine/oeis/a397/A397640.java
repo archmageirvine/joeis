@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397640 allocated for Jean-Marc Rebert.
+ * A397640 Least k such that {1^n, 2^n, ..., k^n} contains numbers with every digit from 1 through 9.
  * @author Sean A. Irvine
  */
 public class A397640 extends Sequence1 {

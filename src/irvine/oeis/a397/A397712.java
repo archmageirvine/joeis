@@ -1,7 +1,7 @@
 package irvine.oeis.a397;
 
 /**
- * A397712 allocated for Tyler Satchel Orden.
+ * A397712 Number of acyclic digraphs (or DAGs) on n labeled nodes in which every node has in-degree at most 3.
  * @author Sean A. Irvine
  */
 public class A397712 extends A397711 {

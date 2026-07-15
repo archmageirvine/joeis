@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007179;
 import irvine.oeis.transform.DelehamDeltaSequence;
 
 /**
- * A157963 Triangle T(n,k), 0&lt;=k&lt;=n, read by rows given by [1,q-1,q^2,q^3-q,q^4,q^5-q^2,q^6,q^7-q^3,q^8,...] DELTA [ -1,0,-q,0,-q^2,0,-q^3,0,-q^4,0,-q^5,0,...] (for q=2) = [1,1,4,6,16,28,64,...] DELTA [ -1,0,-2,0,-4,0,-8,0,-16,0,...] where DELTA is the operator defin
+ * A157963 Triangle T(n,k), 0&lt;=k&lt;=n, read by rows given by [1,q-1,q^2,q^3-q,q^4,q^5-q^2,q^6,q^7-q^3,q^8,...] DELTA [ -1,0,-q,0,-q^2,0,-q^3,0,-q^4,0,-q^5,0,...] (for q=2) = [1,1,4,6,16,28,64,...] DELTA [ -1,0,-2,0,-4,0,-8,0,-16,0,...] where DELTA is the operator defined in A084938.
  * @author Georg Fischer
  */
 public class A157963 extends DelehamDeltaSequence {

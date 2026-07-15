@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a104.A104219;
 
 /**
- * A108891 Triangle read by rows: T(n,k) = number of Schroeder (or royal) n-paths (A006318) containing k returns to the diagonal y=x. (A northeast step lying on y=x contributes a return.)
+ * A108891 Triangle read by rows: T(n,k) = number of Schroeder (or royal) n-paths (A006318) containing k returns to the diagonal y=x. (A northeast step lying on y=x contributes a return.).
  * where DELTA is the operator defined in J084938.- _Philippe Del√©ham_, Nov 02 2013
  * @author Georg Fischer
  */

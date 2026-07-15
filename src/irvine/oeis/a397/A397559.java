@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397559 allocated for Felix Huber.
+ * A397559 a(n) is the number of inclusion-minimal balanced supports among binomial(n, 0), ..., binomial(n, floor((n-1)/2)).
  * @author Sean A. Irvine
  */
 public class A397559 extends Sequence1 {

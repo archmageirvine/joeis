@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A121847 The spiral parameter alpha for the icosahedral fullerenes C_n.
+ * A121847 The spiral parameter alpha for the icosahedral fullerenes.
  * @author Sean A. Irvine
  */
 public class A121847 extends Sequence1 {

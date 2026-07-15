@@ -8,7 +8,7 @@ import irvine.util.array.LongDynamicIntArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A394752 allocated for Sijie Wu.
+ * A394752 Indices of zeros (P-positions) in the Sprague-Grundy sequence for the octal game .404.
  * @author Sean A. Irvine
  */
 public class A394752 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396697 allocated for Paul Steendijk.
+ * A396697 Smallest composite of each composite domino orthogonally enclosed by primes in the odds-only Ulam spiral.
  * @author Sean A. Irvine
  */
 public class A396697 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a059;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A059517 The sequence A059515(3,n). Number of ways of placing n identifiable nonnegative intervals with a total of exactly three starting and/or finishing points.
+ * A059517 a(n) = A059515(3,n). Number of ways of placing n identifiable nonnegative intervals with a total of exactly three starting and/or finishing points.
  * @author Georg Fischer
  */
 public class A059517 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397730 allocated for Janaka Rodrigo.
+ * A397730 a(n) is the number of distinct triples of triangles chosen from n^2 unit triangles of a triangular grid up to rotation such that no two triangles share common side.
  * @author Sean A. Irvine
  */
 public class A397730 extends Sequence1 {
@@ -40,8 +40,8 @@ public class A397730 extends Sequence1 {
 //    return s.isEmpty();
 //  }
 
-  // Fater non-object rotational symmetry checking
-  private boolean isSymmetric(final int ax, final int ay, final int bx, final int by, final int cx, final int cy) {
+  // Faster non-object rotational symmetry checking
+  private boolean isRotationFixed(final int ax, final int ay, final int bx, final int by, final int cx, final int cy) {
     final int rax = 3 * mN - ax - ay;
     final int ray = ax;
     final int rbx = 3 * mN - bx - by;
@@ -96,7 +96,7 @@ public class A397730 extends Sequence1 {
           if (forbidden(bx, by, cx, cy) || forbidden(ax, ay, cx, cy)) {
             continue;
           }
-          cnt += isSymmetric(ax, ay, bx, by, cx, cy) ? 3 : 1;
+          cnt += isRotationFixed(ax, ay, bx, by, cx, cy) ? 3 : 1;
         }
       }
     }

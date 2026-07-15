@@ -4,7 +4,7 @@ package irvine.oeis.a087;
 import irvine.oeis.recur.HofstadterSequence;
 
 /**
- * A087817 a(n) = a(a(a(n-1)))+a(n-a(n-1)).
+ * A087817 a(n) = a(a(a(n-1)))+a(n-a(n-1)) with a(1)=a(2)=1.
  * @author Georg Fischer
  */
 public class A087817 extends HofstadterSequence {

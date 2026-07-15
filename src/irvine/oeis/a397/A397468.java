@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397468 allocated for Clark Kimberling.
+ * A397468 a(n) = prime(floor(n*sqrt(3))).
  * @author Sean A. Irvine
  */
 public class A397468 extends Sequence1 {

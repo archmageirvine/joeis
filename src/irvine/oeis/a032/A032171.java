@@ -18,7 +18,13 @@ public class A032171 extends Sequence1 {
   private Polynomial<Q> mA = RING.one();
   private int mN = -1;
 
-  static Polynomial<Q> chk(final Polynomial<Q> p, final int n) {
+  /**
+   * CHK transform on a polynomial over rational.
+   * @param p polynomial
+   * @param n degree
+   * @return transformed sequence
+   */
+  public static Polynomial<Q> chk(final Polynomial<Q> p, final int n) {
     final Polynomial<Q> s = RING.series(RING.one(), RING.subtract(RING.one(), p), n);
     Polynomial<Q> sum = RING.zero();
     for (int d = 1; d <= n; ++d) {

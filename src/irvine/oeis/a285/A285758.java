@@ -4,7 +4,7 @@ package irvine.oeis.a285;
 import irvine.oeis.recur.HofstadterSequence;
 
 /**
- * A285758 A slow relative of Hofstadter&apos;s Q sequence.
+ * A285758 A slow relative of Hofstadter's Q sequence.
  * @author Georg Fischer
  */
 public class A285758 extends HofstadterSequence {

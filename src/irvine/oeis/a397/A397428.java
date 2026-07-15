@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A397428 allocated for Clark Kimberling.
+ * A397428 Numbers k such that k, floor(k*phi), and floor(k^2*phi), where phi = golden ratio (A001622), are all prime.
  * @author Sean A. Irvine
  */
 public class A397428 extends FilterSequence {

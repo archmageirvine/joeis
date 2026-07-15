@@ -20,7 +20,12 @@ public class A064731 extends ParallelGenerateGraphsSequence {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 
-  private static boolean is(final Polynomial<Z> cp) {
+  /**
+   * Verify that a graph given as its characteristic polyonmial is integral.
+   * @param cp characteristic polynomial
+   * @return true if the graph is integral
+   */
+  public static boolean is(final Polynomial<Z> cp) {
     if (cp.degree() == 0) {
       return true;
     }

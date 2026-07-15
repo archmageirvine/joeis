@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A334158 Number of Goldbach partitions (p,q) of 2n such that primes p and q can be written as the sum of two primes.
+ * A334158 Number of Goldbach partitions (p,q) of 2n such that primes p and q can also be written as the sum of two primes.
  * a(n)=sum(i=1, n, (primepi(i-2)-primepi(i-3))*(primepi(2*n-i-2)-primepi(2*n-i-3))*(primepi(i)-primepi(i-1))*(primepi(2*n-i)-primepi(2*n-i-1)))
  * @author Georg Fischer
  */

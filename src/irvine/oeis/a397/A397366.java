@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397366 allocated for Ruud H.G. van Tol.
+ * A397366 Irregular triangle S, related to the Erd\u0151s-Strauss conjecture.
  * @author Sean A. Irvine
  */
 public class A397366 extends Sequence1 {

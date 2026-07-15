@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 /**
- * A062724 a(n) = floor(tau^n) + 1, where tau = (1 + sqrt(5))/2.
+ * A062724 a(n) = floor(phi^n) + 1, where phi = (1 + sqrt(5))/2.
  * @author Georg Fischer
  */
 public class A062724 extends FloorSequence {

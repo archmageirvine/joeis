@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 import irvine.math.z.Z;
 
 /**
- * A121848 The spiral parameter gamma for the icosahedral fullerenes C_n.
+ * A121848 The spiral parameter gamma for the icosahedral fullerenes.
  * @author Sean A. Irvine
  */
 public class A121848 extends A121847 {

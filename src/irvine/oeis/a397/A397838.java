@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A023942.
+ * A397838 Antidiagonal products of the multifactorial array.
  * @author Sean A. Irvine
  */
 public class A397838 extends Sequence0 {

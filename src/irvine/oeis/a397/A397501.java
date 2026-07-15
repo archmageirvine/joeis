@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397501 allocated for Felix Huber.
+ * A397501 a(n) is the number of set partitions of {0, ..., n} in which, for every part P, the sum of binomial(n, k) over k in P is a power of 2.
  * @author Sean A. Irvine
  */
 public class A397501 extends Sequence0 {

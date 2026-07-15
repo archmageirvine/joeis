@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A397464 allocated for Clark Kimberling.
+ * A397464 Primes indexed by A397428.
  * @author Sean A. Irvine
  */
 public class A397464 extends SimpleTransformSequence {

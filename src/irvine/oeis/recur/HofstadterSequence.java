@@ -15,7 +15,7 @@ public abstract class HofstadterSequence extends AbstractSequence {
   private int mN;
   private ArrayList<Integer> mA;
   private int mLen;
-
+  private int mLimit; // set all terms below and including this index to zero
 
   /** Construct the sequence. */
   public HofstadterSequence() {
@@ -30,6 +30,7 @@ public abstract class HofstadterSequence extends AbstractSequence {
   public HofstadterSequence(final int offset, final int... inits) {
     super(offset);
     mN = 0;
+    mLimit = -1;
     mA = new ArrayList<>();
     while (mN < offset) {
       mA.add(0);
@@ -55,7 +56,15 @@ public abstract class HofstadterSequence extends AbstractSequence {
    * @return mA.get(n)
    */
   protected int a(final int n) {
-    return mA.get(n);
+    return n <= mLimit ? 0 : mA.get(n);
+  }
+
+  /**
+   * Set a non-standard limit.
+   * @param lim new limit
+   */
+  protected void setLimit(final int lim) {
+    mLimit = lim;
   }
 
   @Override

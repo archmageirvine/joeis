@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A103847 McCarthy&apos;s 91 Function: a(n) = n-10 if n&gt;100, otherwise a(n) = a(a(n+11)).
+ * A103847 McCarthy's 91 Function: a(n) = n-10 if n&gt;100, otherwise a(n) = a(a(n+11)).
  * @author Georg Fischer
  */
 public class A103847 extends LambdaSequence {

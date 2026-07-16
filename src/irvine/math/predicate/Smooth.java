@@ -17,6 +17,9 @@ public class Smooth extends AbstractPredicate2 {
 
   @Override
   public boolean is(final long base, final Z n) {
+    if (n.isZero()) {
+      return true;
+    }
     if (base <= 1) {
       return n.isOne();
     }

@@ -1,0 +1,44 @@
+package irvine.oeis.a397;
+
+import java.util.ArrayList;
+
+import irvine.math.ContinuedFractionUtils;
+import irvine.math.cr.CR;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
+import irvine.oeis.a391.A391217;
+import irvine.oeis.cons.DecimalExpansionSequence;
+
+/**
+ * A397753 allocated for Jwalin Bhatt.
+ * @author Sean A. Irvine
+ */
+public class A397753 extends Sequence0 {
+
+  private final Sequence mS = new A391217().prepend(0);
+  private final ArrayList<Z> mCf = new ArrayList<>();
+
+  @Override
+  public Z next() {
+    mCf.add(mS.next());
+    if (mCf.size() <= 2) {
+      return Z.ZERO;
+    }
+    final CR zLo = CR.valueOf(ContinuedFractionUtils.toQ(mCf));
+    final Sequence cLo = new DecimalExpansionSequence(1, zLo);
+    mCf.add(Z.ONE);
+    final CR zHi = CR.valueOf(ContinuedFractionUtils.toQ(mCf));
+    final Sequence cHi = new DecimalExpansionSequence(1, zHi);
+    mCf.remove(mCf.size() - 1);
+    long cnt = 1;
+    while (true) {
+      final Z lo = cLo.next();
+      final Z hi = cHi.next();
+      if (!lo.equals(hi)) {
+        return Z.valueOf(cnt);
+      }
+      ++cnt;
+    }
+  }
+}

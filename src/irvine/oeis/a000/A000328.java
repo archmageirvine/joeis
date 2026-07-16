@@ -1,22 +1,32 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence0;
 
 /**
  * A000328 Number of points of norm &lt;= n^2 in square lattice.
  * @author Sean A. Irvine
  */
-public class A000328 extends Sequence0 {
+public class A000328 extends Sequence0 implements DirectSequence {
 
   // Method due to Max Alekseyev
 
-  private int mN = -1;
+  private long mN = -1;
 
   @Override
   public Z next() {
-    ++mN;
-    final long nsq = mN * (long) mN;
+    return a(++mN);
+  }
+
+  @Override
+  public Z a(final Z n) {
+    return a(n.longValueExact());
+  }
+
+  @Override
+  public Z a(final long n) {
+    final long nsq = n * n;
     final long lim = nsq / 4;
     Z s = Z.ZERO;
     for (long k = 0, j = 1, i = 3; k <= lim; ++k, j += 4, i += 4) {
@@ -24,5 +34,6 @@ public class A000328 extends Sequence0 {
     }
     return s.shiftLeft(2).add(1);
   }
+
 }
 

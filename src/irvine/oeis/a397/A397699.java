@@ -3,7 +3,7 @@ package irvine.oeis.a397;
 import irvine.math.z.Z;
 
 /**
- * A397699 allocated for Ali Sada.
+ * A397699 Associated primes of A397698.
  * @author Sean A. Irvine
  */
 public class A397699 extends A397698 {

@@ -7,7 +7,7 @@ import irvine.oeis.a069.A069561;
 import irvine.oeis.a187.A187930;
 
 /**
- * A395046 allocated for Charles L. Hohn.
+ * A395046 Start of a run of n consecutive positive numbers divisible respectively by the first n primes in increasing or decreasing order.
  * @author Sean A. Irvine
  */
 public class A395046 extends Sequence1 {

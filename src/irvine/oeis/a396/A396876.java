@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A396876 allocated for Vincenzo Manto.
+ * A396876 Numbers m whose squarefree core equals the number of duplicated prime factors.
  * @author Sean A. Irvine
  */
 public class A396876 extends FilterNumberSequence {

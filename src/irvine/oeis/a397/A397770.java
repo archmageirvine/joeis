@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007602;
 
 /**
- * A397770 allocated for SiYang Hu.
+ * A397770 Number of n-digit Zuckerman numbers.
  * @author Sean A. Irvine
  */
 public class A397770 extends Sequence1 {

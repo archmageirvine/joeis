@@ -11,7 +11,7 @@ import irvine.oeis.a391.A391217;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A397753 allocated for Jwalin Bhatt.
+ * A397753 Number of decimal places which are known after using n terms of A391217 and treating them as the coefficients of a continued fraction.
  * @author Sean A. Irvine
  */
 public class A397753 extends Sequence0 {

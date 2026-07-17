@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a018.A018805;
 
 /**
- * A122506 A symmetrical triangular array based on A018805 constructed by hand by adding ones between the primes and making the result symmetrical.
+ * A122506 A symmetrical triangular array read by rows based on A018805.
  * @author Sean A. Irvine
  */
 public class A122506 extends Sequence1 {

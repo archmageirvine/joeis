@@ -9,7 +9,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.a000.A000040;
 
 /**
- * A396041 Primes q such that q^2+1 divides p*(p+2)-1 for some prime p.
+ * A396041 Primes q such that each prime factor of (q^2+1)/2 is congruent to 1 modulo 8.
  * @author Sean A. Irvine
  */
 public class A396041 extends A000040 implements Conjectural {

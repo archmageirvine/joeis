@@ -1,0 +1,29 @@
+package irvine.oeis.a396;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
+
+/**
+ * A396769 allocated for Mareike Fischer.
+ * @author Sean A. Irvine
+ */
+public class A396769 extends Sequence1 {
+
+  private long mN = 0;
+
+  private long sackin(final long n) {
+    if (n <= 1) {
+      return 0;
+    }
+    if ((n & (n - 1)) == 0) {
+      return n * Long.numberOfTrailingZeros(n);
+    }
+    final long m = Long.highestOneBit(n);
+    return m * Long.numberOfTrailingZeros(m) + n + sackin(n - m);
+  }
+
+  @Override
+  public Z next() {
+    return Z.valueOf(sackin(++mN));
+  }
+}

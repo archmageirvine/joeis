@@ -5,7 +5,7 @@ import irvine.oeis.a026.A026352;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A397628 allocated for Clark Kimberling.
+ * A397628 a(n) = prime(A026352(n)).
  * @author Sean A. Irvine
  */
 public class A397628 extends SimpleTransformSequence {

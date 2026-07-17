@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397705 allocated for John W. Nicholson.
+ * A397705 Odd numbers m &gt; 5, with no representation m = p + 2q with p, q prime and p &lt;= q.
  * @author Sean A. Irvine
  */
 public class A397705 extends Sequence1 {

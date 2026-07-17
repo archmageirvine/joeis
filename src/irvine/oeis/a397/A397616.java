@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397616 a(n) = prime(floor(n*r)), where r = (5 + srqt(5))/4.
+ * A397616 a(n) = prime(floor(n*r)), where r = (5 + sqrt(5))/4.
  * @author Sean A. Irvine
  */
 public class A397616 extends Sequence1 {

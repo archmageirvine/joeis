@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a084.A084376;
 
 /**
- * A194805 Number of parts that are visible in one of the three views of the section model of partitions version "tree" with n sections.
+ * A194805 Number of parts that are visible in one of the three views of the modular table of partitions version "tree" with n sections.
  * @author Georg Fischer
  */
 public class A194805 extends Sequence0 {

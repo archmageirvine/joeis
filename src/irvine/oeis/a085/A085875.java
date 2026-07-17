@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A085875 Rearrangement of natural numbers as follows: a(1) = 1, a(2) =2, a(n+1) = smallest number not included earlier such that a(n-1)*a(n) + a(n+1) is a prime.
+ * A085875 Rearrangement of natural numbers as follows: a(1) = 1, a(2) = 2, a(n+1) = smallest number not included earlier such that a(n-1)*a(n) + a(n+1) is a prime.
  * @author Sean A. Irvine
  */
 public class A085875 extends Sequence1 {

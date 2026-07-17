@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A007522 Primes of the form 8n+7, that is, primes congruent to -1 mod 8.
+ * A007522 Primes of the form 8*k+7, that is, primes congruent to -1 mod 8.
  * @author Sean A. Irvine
  */
 public class A007522 extends Sequence1 {

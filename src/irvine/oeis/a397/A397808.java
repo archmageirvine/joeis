@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A397808 allocated for David Castellon.
+ * A397808 Decimal representation of the Collatz iteration encoding of n.
  * @author Sean A. Irvine
  */
 public class A397808 extends CachedSequence {

@@ -4,7 +4,7 @@ import irvine.oeis.FixedPointPositionSequence;
 import irvine.oeis.a093.A093811;
 
 /**
- * A397257 allocated for M. F. Hasler.
+ * A397257 Fixed points of A093811, sum of the digital products of the divisors.
  * @author Sean A. Irvine
  */
 public class A397257 extends FixedPointPositionSequence {

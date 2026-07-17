@@ -7,7 +7,7 @@ import irvine.oeis.a066.A066186;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A207380 Total area of the shadows of the three views of a three-dimensional version of the shell model of partitions with n shells.
+ * A207380 Total area of the shadows of the three views of a three-dimensional version of the modular table of partitions with n shells.
  * @author Georg Fischer
  */
 public class A207380 extends MultiTransformSequence {

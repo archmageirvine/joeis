@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397698 allocated for Ali Sada.
+ * A397698 a(n) is obtained by inserting exactly one decimal digit into the decimal expansion of n. Among all resulting integers m, maximize k such that p^k | m. If more than one choice attains the same maximum exponent k, choose the one with the largest prime p.
  * @author Sean A. Irvine
  */
 public class A397698 extends Sequence1 {

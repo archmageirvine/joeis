@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.recur.HofstadterSequence;
 
 /**
- * A143092 a(n) = a(floor(2*n/3)) + a(a(floor(n/3))).
+ * A143092 a(n) = a(n - a(n - 1)) + a(a(floor(2*n/3))) with a(0)=a(1)=1.
  * @author Georg Fischer
  */
 public class A143092 extends HofstadterSequence {

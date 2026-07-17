@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397775 allocated for Stefano Spezia.
+ * A397775 Array read by ascending antidiagonals: A(0, k) = 1 and A(n, k) = n*A(n-1, k) + k, with k &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A397775 extends Sequence0 {

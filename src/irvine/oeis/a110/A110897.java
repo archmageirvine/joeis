@@ -4,7 +4,7 @@ package irvine.oeis.a110;
 import irvine.oeis.recur.HofstadterSequence;
 
 /**
- * A110897 a(n) = 1 + a(n - a(n-1)) (n - a(n-1)) mod 2 + (n - a(n-2)) mod 3, with a(0) = 0, a(1) = 1.
+ * A110897 a(n) = 1 + a(n - a(n-1)) - (n - a(n-1)) mod 2 + (n - a(n-2)) mod 3, with a(0) = 0, a(1) = 1.
  * @author Georg Fischer
  */
 public class A110897 extends HofstadterSequence {

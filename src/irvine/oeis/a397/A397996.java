@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A397996 E.g.f. A(x) satisfies A((exp(2*x) - 1)/2) = 3*A(x) - 2*x.
+ * A397996 allocated for Seiichi Manyama.
  * @author Georg Fischer
  */
 public class A397996 extends MultiTransformSequence {

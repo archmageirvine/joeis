@@ -4,7 +4,7 @@ package irvine.oeis.a393;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A393842 Number of n X n binary matrices with exactly 12 1&apos;s such that there are an even number of 1&apos;s in every row and column.
+ * A393842 Number of n X n binary matrices with exactly 12 1's such that there are an even number of 1's in every row and column.
  * @author Georg Fischer
  */
 public class A393842 extends HolonomicRecurrence {

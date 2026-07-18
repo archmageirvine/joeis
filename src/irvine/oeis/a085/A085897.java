@@ -17,7 +17,7 @@ public class A085897 extends Sequence0 {
   public Z next() {
     ++mN;
     long e = 0;
-    long s = mM + 1;
+    final long s = mM + 1;
     do {
       e += Functions.VALUATION.l(++mM, 2);
     } while (e < mN);

@@ -20,7 +20,7 @@ public class A085927 extends Sequence1 {
   public Z next() {
     final Z p = mPalindromes.next();
     final Z n = mNinesComplement.a(p);
-    String ps = p.toString();
+    final String ps = p.toString();
     String ns = n.toString();
     while (ns.length() < ps.length()) {
       ns = "0" + ns;

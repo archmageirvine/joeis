@@ -1,9 +1,9 @@
 package irvine.oeis.a047;
 
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007306;
-import irvine.oeis.memory.MemorySequence;
 
 /**
  * A047679 Denominators in full Stern-Brocot tree.
@@ -11,7 +11,7 @@ import irvine.oeis.memory.MemorySequence;
  */
 public class A047679 extends Sequence0 {
 
-  private final MemorySequence mA = MemorySequence.cachedSequence(new A007306());
+  private final DirectSequence mA = DirectSequence.create(new A007306());
   private int mN = 1;
   private int mM = 2;
 

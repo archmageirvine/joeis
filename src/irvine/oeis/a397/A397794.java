@@ -24,8 +24,8 @@ public class A397794 extends Sequence0 {
     final ArrayList<Long> digits = new ArrayList<>();
     long prev = 0;
     while (n > 0) {
-      long base = prev + 2;
-      long digit = n % base;
+      final long base = prev + 2;
+      final long digit = n % base;
       n /= base;
       digits.add(digit);
       prev = digit;

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A397994 E.g.f. A(x) satisfies A(-log(1-3*x)/3) = 4*A(x) - 3*x.
+ * A397994 allocated for Seiichi Manyama.
  * @author Georg Fischer
  */
 public class A397994 extends MultiTransformSequence {

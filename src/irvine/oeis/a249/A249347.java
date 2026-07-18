@@ -7,7 +7,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A249347 The exponent of the highest power of 7 dividing the product of the elements on the n-th row of Pascal&apos;s triangle.
+ * A249347 The exponent of the highest power of 7 dividing the product of the elements on the n-th row of Pascal's triangle.
  * @author Georg Fischer
  */
 public class A249347 extends LambdaSequence {

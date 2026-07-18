@@ -4,7 +4,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a394.A394904;
 
 /**
- * A396779 allocated for \u017diga Pirc.
+ * A396779 Distinct x*y, where no pair (x,y) exists such that x + y or |x - y| are squares.
  * @author Sean A. Irvine
  */
 public class A396779 extends ComplementSequence {

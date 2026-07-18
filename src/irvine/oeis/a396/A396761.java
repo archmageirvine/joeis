@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396761 a(n) is the number of distinct triplets of triangles chosen from the n^2 unit triangles of the triangular grid up to rotation and reflection.
+ * A396761 a(n) is the number of distinct triples of triangles chosen from the n^2 unit triangles of the triangular grid up to rotation and reflection.
  * @author Sean A. Irvine
  */
 public class A396761 extends Sequence1 {

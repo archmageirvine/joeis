@@ -4,7 +4,7 @@ package irvine.oeis.a397;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A397117 Size of clusters of star triplets of Family B in the Spectre aperiodic monotile tiling.
+ * A397117 Size of clusters of star triples of Family B in the Spectre aperiodic monotile tiling.
  * @author Georg Fischer
  */
 public class A397117 extends HolonomicRecurrence {

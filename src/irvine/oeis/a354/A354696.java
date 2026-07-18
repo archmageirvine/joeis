@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A354696 G.f. A(x) satisfies: A(x) = 1 + x * A(x^4/(1 - x)^4) / (1 - x)^4.
+ * A354696 G.f. A(x) satisfies A(x) = 1 + x * A(x^4/(1 - x)^4) / (1 - x)^4.
  * @author Georg Fischer
  */
 public class A354696 extends MultiTransformSequence {

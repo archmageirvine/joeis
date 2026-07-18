@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A217385 Numbers n such that 9^n + 8 is prime.
+ * A217385 Numbers k such that 9^k + 8 is prime.
  * @author Georg Fischer
  */
 public class A217385 extends PrimePositionSubsequence {

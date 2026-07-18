@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397828 allocated for Daniel Okwor.
+ * A397828 Reduced Dedekind psi function: a(p1^e1*...*pN^eN) = lcm((p1+1)*p1^(e1-1), ..., (pN+1)*pN^(eN-1)).
  * @author Sean A. Irvine
  */
 public class A397828 extends Sequence1 {

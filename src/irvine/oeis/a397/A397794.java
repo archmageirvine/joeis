@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397794 allocated for Philip Weiss.
+ * A397794 a(n) is the decimal encoding of the unique snowball numeral &lt;d_k...d_1&gt; having value n.
  * @author Sean A. Irvine
  */
 public class A397794 extends Sequence0 {

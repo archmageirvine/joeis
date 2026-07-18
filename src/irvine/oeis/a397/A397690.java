@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
- * A397690 allocated for Paolo P. Lava.
+ * A397690 Number of different ways to form n by concatenation, using the digits of the numbers from 0 to n-1.
  * @author Sean A. Irvine
  */
 public class A397690 extends Sequence0 {

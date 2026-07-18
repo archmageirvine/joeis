@@ -2761,3 +2761,4 @@ A085835 Decimal expansion of Grossman's constant.
 A085848 Decimal expansion of Foias' constant.
 A085849 Decimal expansion of the probability that two m X m and n X n matrices (m,n large) have relatively prime determinants.
 A085850 Decimal expansion of hard square entropy constant. [hard with all known terms of A006506]
+A085919 Number of ways a loop can cross three roads meeting in a Y n times.

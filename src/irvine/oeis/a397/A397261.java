@@ -4,7 +4,7 @@ import irvine.oeis.RecordSequence;
 import irvine.oeis.a093.A093811;
 
 /**
- * A397261 allocated for M. F. Hasler.
+ * A397261 Records in A093811.
  * @author Sean A. Irvine
  */
 public class A397261 extends RecordSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a055.A055932;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A397499 allocated for Michael De Vlieger.
+ * A397499 a(n) = A003557(A055932(n)).
  * @author Sean A. Irvine
  */
 public class A397499 extends SimpleTransformSequence {

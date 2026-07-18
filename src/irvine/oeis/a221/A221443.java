@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A221443 Hilltop maps: number of nX5 binary arrays indicating the locations of corresponding elements not exceeded by any horizontal or antidiagonal neighbor in a random 0..1 nX5 array.
+ * A221443 Number of n X 5 binary arrays with every 0 a horizontal or antidiagonal neighbor to some 1.
  * @author Georg Fischer
  */
 public class A221443 extends HolonomicRecurrence implements Conjectural {

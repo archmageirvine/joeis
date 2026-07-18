@@ -1,24 +1,37 @@
 package irvine.oeis.a067;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.oeis.a005.A005117;
+import irvine.oeis.DirectSequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A067535 Smallest squarefree number &gt;= n.
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A067535 extends A005117 {
+public class A067535 extends Sequence1 implements DirectSequence {
 
-  private Z mS = super.next();
-  private Z mN = Z.ZERO;
+  private long mN = 0;
 
   @Override
   public Z next() {
-    mN = mN.add(1);
-    if (mS.equals(mN)) {
-      mS = super.next();
-      return mN;
-    }
-    return mS;
+    return a(++mN);
   }
+
+  @Override
+  public Z a(Z n) {
+    while (!Predicates.SQUARE_FREE.is(n)) {
+      n = n.add(1);
+    }
+    return n;
+  }
+
+  @Override
+  public Z a(long n) {
+    while (!Predicates.SQUARE_FREE.is(n)) {
+      ++n;
+    }
+    return Z.valueOf(n);
+  }
+
 }

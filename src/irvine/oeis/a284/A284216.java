@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A284216 Number of n X 2 0..1 arrays with the number of 1&apos;s horizontally or antidiagonally adjacent to some 0 equal to the number of 0&apos;s adjacent to some 1, with top left element zero.
+ * A284216 Number of n X 2 0..1 arrays with the number of 1's horizontally or antidiagonally adjacent to some 0 equal to the number of 0's adjacent to some 1, with top left element zero.
  * @author Georg Fischer
  */
 public class A284216 extends HolonomicRecurrence implements Conjectural {

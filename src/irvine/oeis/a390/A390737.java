@@ -16,13 +16,28 @@ import irvine.oeis.cons.DecimalExpansionSequence;
  */
 public class A390737 extends Sequence0 {
 
-  private final Sequence mS = new A084580().prepend(0);
+  private final Sequence mS;
+  private final int mZeros;
   private final ArrayList<Z> mCf = new ArrayList<>();
+
+  protected A390737(final Sequence s, final int zeros) {
+    mS = s;
+    mZeros = zeros;
+  }
+
+  protected A390737(final Sequence s) {
+    this(s, 2);
+  }
+
+  /** Construct the sequence. */
+  public A390737() {
+    this(new A084580().prepend(0));
+  }
 
   @Override
   public Z next() {
     mCf.add(mS.next());
-    if (mCf.size() <= 2) {
+    if (mCf.size() <= mZeros) {
       return Z.ZERO;
     }
     final CR zLo = CR.valueOf(ContinuedFractionUtils.toQ(mCf));

@@ -4,7 +4,7 @@ package irvine.oeis.a214;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A214555 Subsequence of fixed points A099009 of the Kaprekar mapping, with numbers of the form 5{n}49{n+1}4{n}5, where d{n} means n-fold repetition of digit d.
+ * A214555 Subsequence of fixed points A099009 of the Kaprekar mapping with numbers of the form 5(n)//4//9(n+1)//4(n)//5.
  * @author Georg Fischer
  */
 public class A214555 extends HolonomicRecurrence {

@@ -1,4 +1,4 @@
-package irvine.oeis.a000;
+package irvine.oeis.a397;
 
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
@@ -8,15 +8,15 @@ import irvine.math.series.SeriesRing;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A000025 Coefficients of the 3rd-order mock theta function f(q).
+ * A397846 allocated for Joesph Daniel Burke III.
  * @author Sean A. Irvine
  */
-public class A000025 extends GfSequence {
+public class A397846 extends GfSequence {
 
   private static final SeriesRing<Q> SQ = SeriesRing.SQ;
 
   /** Construct the sequence. */
-  public A000025() {
+  public A397846() {
     super(0, new AbstractInfiniteSeries<>() {
       private Series<Q> mS = SQ.one();
       private Series<Q> mP = SQ.one();
@@ -26,7 +26,7 @@ public class A000025 extends GfSequence {
         final long r = Functions.SQRT.l(n);
         while (r > mR) {
           mP = SQ.multiply(mP, SQ.square(SQ.onePlusXToTheN(++mR)));
-          mS = SQ.add(mS, SQ.divide(SQ.monomial(mR * mR), mP));
+          mS = SQ.signedAdd((mR & 1) == 0, mS, SQ.divide(SQ.monomial(mR * mR), mP));
         }
         return mS.coeff(n);
       }

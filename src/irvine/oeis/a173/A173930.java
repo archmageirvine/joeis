@@ -11,9 +11,6 @@ public class A173930 extends DecimalExpansionFromContinuedFractionSequence {
 
   /** Construct the sequence. */
   public A173930() {
-    super(1, new A000001() {{
-      skip(1);
-    }});
+    super(1, new A000001().skip());
   }
-
 }

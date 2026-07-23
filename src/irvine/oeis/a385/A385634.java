@@ -1,4 +1,4 @@
-package irvine.oeis.a383;
+package irvine.oeis.a385;
 
 import irvine.oeis.recur.PeriodicSequence;
 

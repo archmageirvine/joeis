@@ -1,4 +1,4 @@
-package irvine.oeis.a086;
+package irvine.oeis.a152;
 
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Integers;

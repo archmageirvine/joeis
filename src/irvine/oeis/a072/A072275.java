@@ -1,4 +1,4 @@
-package irvine.oeis.a066;
+package irvine.oeis.a072;
 
 import irvine.factor.prime.Fast;
 import irvine.math.function.Functions;
@@ -14,7 +14,7 @@ public class A072275 extends A000040 {
 
   private final Fast mPrime = new Fast();
   private final LongDynamicArray<Long> mFirst = new LongDynamicArray<>();
-  private long mN = 0;
+  private long mN = 1;
   private long mM = 0;
   {
     setOffset(2);

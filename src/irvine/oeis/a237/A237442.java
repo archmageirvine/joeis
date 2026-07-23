@@ -1,4 +1,4 @@
-package irvine.oeis.a273;
+package irvine.oeis.a237;
 
 import irvine.oeis.a003.A003586;
 import irvine.oeis.a395.A395530;

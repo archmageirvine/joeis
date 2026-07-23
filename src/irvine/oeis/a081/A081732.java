@@ -1,4 +1,4 @@
-package irvine.oeis.a080;
+package irvine.oeis.a081;
 
 import java.util.HashSet;
 
@@ -13,6 +13,12 @@ public class A081732 extends Sequence0 {
 
   private long mN = -1;
 
+  private void add(final HashSet<Long> res, final String s) {
+    if (s.length() == 1 || s.charAt(0) != '0') {
+      res.add(Long.parseLong(s, 3));
+    }
+  }
+
   @Override
   public Z next() {
     final String s = Long.toString(++mN, 3);
@@ -20,19 +26,19 @@ public class A081732 extends Sequence0 {
     // Deletions
     if (s.length() > 1) {
       for (int k = 0; k < s.length(); ++k) {
-        res.add(Long.parseLong(s.substring(0, k) + s.substring(k + 1)));
+        add(res, s.substring(0, k) + s.substring(k + 1));
       }
     }
     // Insertions
     for (int k = 0; k <= s.length(); ++k) {
       for (int d = 0; d < 3; ++d) {
-        res.add(Long.parseLong(s.substring(0, k) + d + s.substring(k)));
+        add(res, s.substring(0, k) + d + s.substring(k));
       }
     }
     // Substitutions
     for (int k = 0; k < s.length(); ++k) {
       for (int d = 0; d < 3; ++d) {
-        res.add(Long.parseLong(s.substring(0, k) + d + s.substring(k + 1)));
+        add(res, s.substring(0, k) + d + s.substring(k + 1));
       }
     }
     res.remove(mN);

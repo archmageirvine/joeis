@@ -1,4 +1,4 @@
-package irvine.oeis.a179;
+package irvine.oeis.a191;
 
 import irvine.oeis.a152.A152062;
 import irvine.oeis.cons.DecimalExpansionSequence;

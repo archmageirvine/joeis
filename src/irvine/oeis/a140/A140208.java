@@ -1,4 +1,4 @@
-package irvine.oeis.a392;
+package irvine.oeis.a140;
 
 import irvine.math.z.Z;
 import irvine.oeis.a128.A128913;

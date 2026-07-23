@@ -1,7 +1,7 @@
 package irvine.oeis.a397;
 
 import irvine.math.z.Z;
-import irvine.oeis.a086.A152795;
+import irvine.oeis.a152.A152795;
 
 /**
  * A397907 allocated for Paul D. Hanna.

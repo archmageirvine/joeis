@@ -16,7 +16,7 @@ public class A398031 extends Sequence1 {
   public Z next() {
     final String s = String.valueOf(++mN);
     long k = 8;
-    while (true ){
+    while (true) {
       if (Predicates.PRIME.is(++k)) {
         ++k;
       }

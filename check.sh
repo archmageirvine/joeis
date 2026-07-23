@@ -4,6 +4,9 @@
 
 NOT_DONE=notdone.dat
 
+# This line checks for implementations in the wrong package
+find src/irvine/oeis/a* -type f | grep .java | grep -v '\([0-9][0-9][0-9]\)/A\1'
+
 echo "First unimplemented sequences"
 {
     find src/irvine/oeis -name "A[0-9][0-9][0-9][0-9][0-9][0-9].java" | sed 's%.*/%%;s%.java%%'

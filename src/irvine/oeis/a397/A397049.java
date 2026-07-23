@@ -33,7 +33,7 @@ public class A397049 extends Sequence0 {
     Z sum = Z.ZERO;
     final IntegerPartition ip = new IntegerPartition(k);
     int[] p;
-    int[] cnt = new int[k + 1];
+    final int[] cnt = new int[k + 1];
     while ((p = ip.next()) != null) {
       IntegerPartition.toCountForm(p, cnt);
       Z mult = Functions.FACTORIAL.z(k);

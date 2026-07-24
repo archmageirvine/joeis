@@ -5,7 +5,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A356991 a(n) = b(n) + b(n - b(n)) for n &gt;= 2, where b(n) = A356998(n).
+ * A356991 a(n) = b(n) + b(n - b(n)) for n &gt;= 2, where b(n) = A356988(n).
  * @author Georg Fischer
  */
 public class A356991 extends LambdaSequence {

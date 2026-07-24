@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a152.A152795;
 
 /**
- * A397906 allocated for Paul D. Hanna.
+ * A397906 Row sums of triangle A152795.
  * @author Sean A. Irvine
  */
 public class A397906 extends A152795 {

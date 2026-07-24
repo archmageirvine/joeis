@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397049.
+ * A398031 Least composite k such that the concatenation (k, n, k) is prime.
  * @author Sean A. Irvine
  */
 public class A398031 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396574 allocated for Yifan Xie.
+ * A396574 a(n) is the smallest number k such that n divides binomial(k,m) for 1 &lt;= m &lt;= n-1.
  * @author Sean A. Irvine
  */
 public class A396574 extends Sequence1 {

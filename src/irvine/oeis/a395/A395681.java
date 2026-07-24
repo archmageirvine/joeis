@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A395681 allocated for Tymofii Kasian.
+ * A395681 a(n) is the number of positive integers m &lt;= n such that the set of primes dividing m or dividing an exponent in the prime factorization of m is disjoint from the corresponding set for n.
  * @author Sean A. Irvine
  */
 public class A395681 extends Sequence1 {

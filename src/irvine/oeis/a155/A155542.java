@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A155542 Expansion of (2+2*x)/(1-8*x-25*x^2).
+ * A155542 Expansion of 2*(1 + x)/(1 - 8*x - 25*x^2).
  * @author Sean A. Irvine
  */
 public class A155542 extends LinearRecurrence {

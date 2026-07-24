@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397263 allocated for M. F. Hasler.
+ * A397263 a(n) = min {nextprime(n^2)-n^2, (n+1)^2-prevprime((n+1)^2)}: distance of the primes in the interval [n^2, (n+1)^2] from its border.
  * @author Sean A. Irvine
  */
 public class A397263 extends Sequence0 {

@@ -4,7 +4,7 @@ package irvine.oeis.a028;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A028183 Expansion of 1/((1-5x)(1-7x)(1-8x)(1-12x)).
+ * A028183 Expansion of 1/((1-5*x)*(1-7*x)*(1-8*x)*(1-12*x)).
  * @author Georg Fischer
  */
 public class A028183 extends GeneratingFunctionSequence {

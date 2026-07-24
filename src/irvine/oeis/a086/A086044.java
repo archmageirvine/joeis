@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007376;
 
 /**
- * A086044 Position of first occurrence of n in concatenated numbers (A033307, Champernowne constant).
+ * A086044 Position of the first occurrence of n in concatenated numbers (A007376, Champernowne constant).
  * @author Sean A. Irvine
  */
 public class A086044 extends A007376 {

@@ -4,7 +4,7 @@ package irvine.oeis.a061;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A061441 Denominators in the series for Bessel function J10(x).
+ * A061441 Denominators of coefficients of even powers of x of the expansion of Bessel function J_10(x).
  * @author Georg Fischer
  */
 public class A061441 extends HolonomicRecurrence {

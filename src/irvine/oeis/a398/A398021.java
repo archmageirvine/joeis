@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007504;
 
 /**
- * A397049.
+ * A398021 allocated for Vincenzo Manto.
  * @author Sean A. Irvine
  */
 public class A398021 extends Sequence1 {

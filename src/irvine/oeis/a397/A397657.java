@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397657 allocated for Alex Towell.
+ * A397657 Triangle of triangles T(n,t,c) read by rows: number of functions f:{1..n}-&gt;{1..n} whose functional graph has maximal tail length (rho-height) exactly t and exactly c cyclic (periodic) points; n &gt;= 1, 0 &lt;= t &lt;= n-1, 1 &lt;= c &lt;= n.
  * @author Sean A. Irvine
  */
 public class A397657 extends Sequence1 {

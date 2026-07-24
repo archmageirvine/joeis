@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A397049.
+ * A397207 Composite numbers d such that the period k of the decimal expansion of 1/d is divisible by 3 and divides d-1, and the three blocks of length k/3 of the repetend of 1/d sum to a multiple of 10^(k/3) - 1.
  * @author Sean A. Irvine
  */
 public class A397207 extends FilterNumberSequence {

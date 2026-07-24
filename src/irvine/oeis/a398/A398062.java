@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A397049.
+ * A398062 Array read by ascending antidiagonals: A(n,k) is the n-th nondivisor of k.
  * @author Sean A. Irvine
  */
 public class A398062 extends Sequence1 {

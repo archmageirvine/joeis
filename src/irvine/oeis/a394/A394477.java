@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394477 allocated for Jeffery L. Huckstead.
+ * A394477 Number of integers k in 1..n such that the numerator of the reduced fraction (n*(n-1) + k)/n is prime.
  * @author Sean A. Irvine
  */
 public class A394477 extends Sequence1 {

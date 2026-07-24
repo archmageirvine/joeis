@@ -4,7 +4,7 @@ package irvine.oeis.a370;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A370481 a(0) = 33. a(n) = 3*a(n-1) + 2*n + 1 for n &gt;= 1.
+ * A370481 a(0) = 33, a(n) = 3*a(n-1) + 2*n + 1 for n &gt;= 1.
  * @author Georg Fischer
  */
 public class A370481 extends HolonomicRecurrence {

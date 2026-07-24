@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A173726 Number of reduced, normalized 3x3 semimagic squares with magic sum n.
+ * A173726 Number of reduced, normalized 3 X 3 semimagic squares with magic sum n.
  * @author Georg Fischer
  */
 public class A173726 extends HolonomicRecurrence {

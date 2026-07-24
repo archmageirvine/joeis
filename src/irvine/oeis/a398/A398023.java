@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A086041.
+ * A398023 Number of integer compositions of n such that every initial segment has an integer average.
  * @author Sean A. Irvine
  */
 public class A398023 extends Sequence0 {

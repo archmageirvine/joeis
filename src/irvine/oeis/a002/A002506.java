@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A002506 Denominators of coefficients of expansion of Bessel function J_2(x).
+ * A002506 Denominators of coefficients of even powers of x of the expansion of Bessel function J_2(x).
  * @author Sean A. Irvine
  */
 public class A002506 extends Sequence0 {

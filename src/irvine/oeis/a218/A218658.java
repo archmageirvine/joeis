@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A218658 Hilltop maps: number of n X 3 binary arrays indicating the locations of corresponding elements not exceeded by any king-move neighbor in a random 0..1 n X 3 array.
+ * A218658 Number of n X 3 binary arrays with every 0 a king-move neighbor to some 1.
  * @author Georg Fischer
  */
 public class A218658 extends GeneratingFunctionSequence implements Conjectural {

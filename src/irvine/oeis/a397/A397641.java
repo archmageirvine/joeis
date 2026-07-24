@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397641 allocated for Alex Towell.
+ * A397641 Irregular triangle read by rows: T(m,r) is the number of chemical reaction networks on species A and B that use both species, contain r reactions, and have only complexes i*A+j*B with 1 &lt;= i+j &lt;= m, up to swapping A and B.
  * @author Sean A. Irvine
  */
 public class A397641 extends Sequence1 {

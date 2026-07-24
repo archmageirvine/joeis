@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A006238 Complexity of (or spanning trees in) a 3 X n grid.
+ * A006238 Number of spanning trees in the 3 X n grid graph.
  * @author Sean A. Irvine
  */
 public class A006238 extends LinearRecurrence {

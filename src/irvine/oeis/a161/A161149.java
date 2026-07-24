@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A161149 a(n) = (2*n)!*(2*n+1)!/n! = n!*A000909(n), n=0,1...
+ * A161149 a(n) = (2*n)!*(2*n+1)!/n! = n!*A000909(n).
  * @author Georg Fischer
  */
 public class A161149 extends LambdaSequence {

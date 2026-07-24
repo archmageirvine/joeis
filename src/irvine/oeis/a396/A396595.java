@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396595 allocated for Mario Raso.
+ * A396595 Number of distinct subsets of {2,3,...,n+1} obtainable by choosing exactly one forbidden residue class modulo each k = 2,3,...,n.
  * @author Sean A. Irvine
  */
 public class A396595 extends Sequence1 {

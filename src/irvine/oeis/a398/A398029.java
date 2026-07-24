@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397049.
+ * A398029 a(n) is the number of closed binary operations on n labeled elements such that the set of ordered triples (x, y, xy) contains at least one of each of the 5 kinds of ordered triple: (a,a,a), (a,a,b), (a,b,a), (b,a,a), (a,b,c), for distinct elements a,b,c.
  * @author Sean A. Irvine
  */
 public class A398029 extends Sequence0 {

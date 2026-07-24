@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397672 allocated for Mareike Fischer.
+ * A397672 Value of the Colless index for the rooted binary echelon tree with n leaves.
  * @author Sean A. Irvine
  */
 public class A397672 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.TwoParameterFormSequence;
 import irvine.oeis.a001.A001318;
 
 /**
- * A396909 allocated for Thotsaphon Thongjunthug.
+ * A396909 Numbers that are the sum of two nonzero generalized pentagonal numbers (A001318).
  * @author Sean A. Irvine
  */
 public class A396909 extends TwoParameterFormSequence {

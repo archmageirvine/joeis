@@ -4,7 +4,7 @@ package irvine.oeis.a393;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A393073 allocated for Greg Dresden.
+ * A393073 Convolution of the two tribonacci sequences A000073 and A001590.
  * @author Georg Fischer
  */
 public class A393073 extends HolonomicRecurrence {

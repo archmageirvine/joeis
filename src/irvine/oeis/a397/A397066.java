@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397066 allocated for Mohammad F. Marashdeh.
+ * A397066 Number of partitions of n whose parts admit exactly one superdiagonal arrangement, that is, exactly one ordering (c_1,...,c_k) with c_i &gt;= i.
  * @author Sean A. Irvine
  */
 public class A397066 extends Sequence0 {

@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A006235 Complexity of doubled cycle (regarding case n = 2 as a multigraph).
+ * A006235 Number of spanning trees of the n-prism graph Y_n (regarding case n = 2 as a multigraph).
  * @author Sean A. Irvine
  */
 public class A006235 extends LinearRecurrence {

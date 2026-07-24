@@ -3,7 +3,7 @@ package irvine.oeis.a397;
 import irvine.oeis.InverseSequence;
 
 /**
- * A397209 a(n) is the smallest index k such that A397208(k) = n.
+ * A397209 a(n) is the smallest index k such that A397208(k) = n, or -1 if no such k exists.
  * @author Sean A. Irvine
  */
 public class A397209 extends InverseSequence {

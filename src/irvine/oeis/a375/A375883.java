@@ -4,7 +4,7 @@ package irvine.oeis.a375;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A375883 a(n) = 2^(2n-1) sin(nA)/sqrt(15), where A is the angle opposite side BC in a triangle ABC having sidelengths |BC|=2, |CA| = 3, |AB| = 4; ABC is the smallest integer-sided scalene triangle.
+ * A375883 a(n) = 2^(2n-1)*sin(nA)/sqrt(15), where A is the angle opposite side BC in a triangle ABC having sidelengths |BC|=2, |CA| = 3, |AB| = 4; ABC is the smallest integer-sided scalene triangle.
  * @author Georg Fischer
  */
 public class A375883 extends HolonomicRecurrence {

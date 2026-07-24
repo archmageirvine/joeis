@@ -4,7 +4,7 @@ package irvine.oeis.a081;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A081813 Decimal expansion of atomic mass constant energy equivalent in MeV.
+ * A081813 Decimal expansion of the atomic mass constant energy equivalent in MeV.
  * @author Georg Fischer
  */
 public class A081813 extends NoncomputableSequence {

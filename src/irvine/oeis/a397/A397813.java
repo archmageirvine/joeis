@@ -8,7 +8,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000040;
 
 /**
- * A397813 allocated for Jean Lauro Muller.
+ * A397813 a(0) = 1; for n &gt; 0, with p = the n-th prime, a(n) = a(n-1) - p if that value is positive, previously unused, and not prime, otherwise a(n) is the least unused number &gt;= a(n-1) + p,.
  * @author Sean A. Irvine
  */
 public class A397813 extends Sequence0 {

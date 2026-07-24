@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a397.A397366;
 
 /**
- * A396825 allocated for Ruud H.G. van Tol.
+ * A396825 Positive integers that don't occur in A397366.
  * @author Sean A. Irvine
  */
 public class A396825 extends A397366 {

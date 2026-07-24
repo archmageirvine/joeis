@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A218660 Hilltop maps: number of nX5 binary arrays indicating the locations of corresponding elements not exceeded by any king-move neighbor in a random 0..1 nX5 array.
+ * A218660 Number of n X 5 binary arrays with every 0 a king-move neighbor to some 1.
  * @author Georg Fischer
  */
 public class A218660 extends HolonomicRecurrence implements Conjectural {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.TwoParameterFormSequence;
 
 /**
- * A085949 Smallest multiple of prime(n) of the form r*prime(n-1) + s*prime(n+1). r and s are positive integers.
+ * A085949 Smallest multiple of prime(n) of the form r*prime(n-1) + s*prime(n+1) with r and s positive integers.
  * @author Sean A. Irvine
  */
 public class A085949 extends Sequence2 {

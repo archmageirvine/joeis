@@ -5,7 +5,7 @@ import irvine.oeis.a052.A052171;
 import irvine.oeis.transform.InverseEulerTransform;
 
 /**
- * A137975 Row sums of A139621, number of connected directed multigraphs with loops and no vertex of degree 0, with n arcs.
+ * A137975 Row sums of A139621, number of connected directed multigraphs with loops, with n arcs.
  * @author Georg Fischer
  */
 public class A137975 extends InverseEulerTransform {

@@ -6,7 +6,7 @@ import irvine.oeis.a164.A164937;
 import irvine.util.Permutation;
 
 /**
- * A397848 allocated for Dieter Renz.
+ * A397848 Near-repdigit primes such that no rearrangement of their digits (without leading zeros) results in any other prime number.
  * @author Sean A. Irvine
  */
 public class A397848 extends FilterSequence {

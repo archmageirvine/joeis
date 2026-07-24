@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A397959 allocated for Paolo Xausa.
+ * A397959 Polydivisible numbers in base 9.
  * @author Sean A. Irvine
  */
 public class A397959 extends FiniteSequence {

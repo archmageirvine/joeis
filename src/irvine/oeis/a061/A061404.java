@@ -4,7 +4,7 @@ package irvine.oeis.a061;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A061404 Denominators in the series for Bessel function J5(x).
+ * A061404 Denominators of coefficients of odd powers of x of the expansion of Bessel function J_5(x).
  * @author Georg Fischer
  */
 public class A061404 extends HolonomicRecurrence {

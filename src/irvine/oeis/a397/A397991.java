@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397991 allocated for Stefano Spezia.
+ * A397991 Array read by ascending antidiagonals: A(n,k) = floor(1+k*n/(k-1)) with k &gt;= 2.
  * @author Sean A. Irvine
  */
 public class A397991 extends Sequence0 {

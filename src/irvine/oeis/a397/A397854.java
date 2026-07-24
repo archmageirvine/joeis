@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A397854 allocated for Daniel Okwor.
+ * A397854 Smallest positive integer that is a primitive root modulo p but not modulo p^2, where p = prime(n).
  * @author Sean A. Irvine
  */
 public class A397854 extends A000040 {

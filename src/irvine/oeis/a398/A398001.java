@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A398001 E.g.f. A(x) satisfies A&apos;(x) = 1 + A((exp(2*x) - 1)/2), with A(0) = 0.
+ * A398001 E.g.f. A(x) satisfies A'(x) = 1 + A((exp(2*x) - 1)/2), with A(0) = 0.
  * @author Georg Fischer
  */
 public class A398001 extends MultiTransformSequence {

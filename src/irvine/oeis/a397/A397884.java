@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A397884 allocated for Vincenzo Librandi.
+ * A397884 Irregular triangle of divisors of prime(n)^2 + 1.
  * @author Sean A. Irvine
  */
 public class A397884 extends A000040 {

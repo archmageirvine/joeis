@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a396.A396557;
 
 /**
- * A340474 a(n) = n! [x^n] LW(T(x)), where T(x) = -W(-x) Euler&apos;s tree function, W(x) is the Lambert W function, and LW(x) = W(-W(x))/(-W(x)) (A340473).
+ * A340474 a(n) = n! [x^n] LW(T(x)), where T(x) = -W(-x) Euler's tree function, W(x) is the Lambert W function, and LW(x) = W(-W(x))/(-W(x)) (A340473).
  * egf(new A396557())
  * @author Georg Fischer
  */

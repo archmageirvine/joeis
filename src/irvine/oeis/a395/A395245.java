@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A395245 allocated for Marko Radulovic.
+ * A395245 Sum over all permutations of [n] of the number of doubly shaded squares in a certain graphical representation of the permutations.
  * @author Sean A. Irvine
  */
 public class A395245 extends CachedSequence {

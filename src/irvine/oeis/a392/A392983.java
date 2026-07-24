@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A392983 allocated for R. J. Cintra.
+ * A392983 a(n) is the absolute value of the determinant of the symmetric n X n matrix M defined by M[i,j] = gcd(i,j) for 0 &lt;= i,j &lt;= n-1.
  * @author Sean A. Irvine
  */
 public class A392983 extends Sequence0 {

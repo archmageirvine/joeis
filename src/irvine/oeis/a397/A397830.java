@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397830 allocated for Paolo P. Lava.
+ * A397830 Integers k&gt;9 such that removing the most and the least significant digit from k^2 produces another square.
  * @author Sean A. Irvine
  */
 public class A397830 extends Sequence1 {

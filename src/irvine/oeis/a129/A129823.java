@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A129823 Four consecutive nonprime odd numbers {n-1,n+1,n+3,n+5}.
+ * A129823 Quadruples (k,k+2,k+4,k+6) such that k is odd and k, k+2, k+4, and k+6 are composite.
  * @author Sean A. Irvine
  */
 public class A129823 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a067;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A067630 Denominators in power series for cos(x)*cosh(x).
+ * A067630 a(n) = (4*n)! / 4^n.
  * Recurrence: (n-1)*a(n)-(n^2-n)*a(n-1) = 0
  * @author Georg Fischer
  */

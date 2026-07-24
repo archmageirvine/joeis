@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396938 allocated for Michael De Vlieger.
+ * A396938 a(1) = 1, a(n) = Product_{i=1..omega(n)} prime(i)^(m_i-1), with n = Product_{i=1..omega(n)} p_i^m_i, omega = A001221, and p_i &lt; p_(i+1).
  * @author Sean A. Irvine
  */
 public class A396938 extends Sequence1 {

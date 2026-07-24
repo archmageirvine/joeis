@@ -8,7 +8,7 @@ import irvine.math.series.SeriesRing;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A397846 allocated for Joesph Daniel Burke III.
+ * A397846 Coefficients of Sum_{r&gt;=0} (-1)^r*q^(r^2)/(-q;q)_r^2, the alternating-sign analog of the third-order mock theta function f(q).
  * @author Sean A. Irvine
  */
 public class A397846 extends GfSequence {

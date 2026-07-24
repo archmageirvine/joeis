@@ -4,7 +4,7 @@ package irvine.oeis.a137;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A137529 a(n)=8a(n-4).
+ * A137529 a(n) = 8*a(n-4).
  * @author Georg Fischer
  */
 public class A137529 extends HolonomicRecurrence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395436 allocated for Andrea Cutri.
+ * A395436 Number of aperiodic linear palindromes of length 2*n+1, summed over all integer partitions of 2*n+1, in the strongly normal fixed-content convention.
  * @author Sean A. Irvine
  */
 public class A395436 extends Sequence1 {

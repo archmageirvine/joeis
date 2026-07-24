@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A131517 Jazz chord substitution: A-minor, C-minor, D-major, G-major Uses a start vector based on these: {1, 4, 6, 11}.
+ * A131517 1-limiting word of the morphism 1-&gt; {1, 4, 8, 11}, 2-&gt; {2, 4, 7, 11}, 3-&gt; {3, 6, 10, 11}, 4-&gt;{4, 8, 11, 1}, 5-&gt; {5, 6, 10, 1}, 6-&gt; {6, 10, 1, 5}, 7-&gt; {7, 11, 12, 4}, 8-&gt;{8, 11, 1, 4}, 9-&gt; {9, 1, 4, 8}, 10-&gt; {10, 11, 3, 6}, 11-&gt;{11, 3, 6, 10}, 12-&gt;{12, 4, 7, 11}.
  * @author Georg Fischer
  */
 public class A131517 extends MorphismFixedPointSequence {

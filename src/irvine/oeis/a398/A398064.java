@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A397049.
+ * A398064 Decimal expansion of Hadamard's Gamma function at x = 1/4.
  * @author Sean A. Irvine
  */
 public class A398064 extends DecimalExpansionSequence {

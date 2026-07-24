@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A130673 Smallest m of r=1,2,3,... where the generalized Euler constants (of D. H. Lehmer) E(r,m) change their sign: E(r,m) &gt; 0 and E(r+1,m) &lt; 0.
+ * A130673 Smallest m &gt; 1 such that log m + psi(n/m) is negative, where psi(x) is the digamma function.
  * @author Sean A. Irvine
  */
 public class A130673 extends Sequence1 {

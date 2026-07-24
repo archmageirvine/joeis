@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396769 allocated for Mareike Fischer.
+ * A396769 Value of the Sackin index for the rooted binary echelon tree with n leaves.
  * @author Sean A. Irvine
  */
 public class A396769 extends Sequence1 {

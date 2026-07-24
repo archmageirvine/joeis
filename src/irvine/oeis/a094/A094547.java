@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A094547 A019309(n)/4 for n &gt;= 1.
+ * A094547 a(n) = A019309(n)/4 for n &gt;= 1.
  * @author Georg Fischer
  */
 public class A094547 extends MultiTransformSequence {

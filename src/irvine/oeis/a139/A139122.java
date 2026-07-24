@@ -4,7 +4,7 @@ package irvine.oeis.a139;
 import irvine.oeis.FilterSequence;
 
 /**
- * A139122 Primes whose binary representation shows the distribution of prime numbers up to some prime minus 1, using &quot;0&quot; for primes and &quot;1&quot; for nonprime numbers.
+ * A139122 Primes whose binary representation shows the distribution of prime numbers up to some prime minus 1, using "0" for primes and "1" for nonprime numbers.
  * @author Georg Fischer
  */
 public class A139122 extends FilterSequence {

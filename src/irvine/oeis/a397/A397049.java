@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397049 allocated for John Tyler Rascoe.
+ * A397049 Number of sets S of nonempty words with n total letters such that no words in S share letters and the concatenation of all words in S covers an initial interval.
  * @author Sean A. Irvine
  */
 public class A397049 extends Sequence0 {

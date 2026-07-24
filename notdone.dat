@@ -2764,3 +2764,4 @@ A085850 Decimal expansion of hard square entropy constant. [hard with all known 
 A085919 Number of ways a loop can cross three roads meeting in a Y n times.
 A086031 Number of nonisomorphic ways a loop can cross two parallel roads 2n times.
 A086053 Decimal expansion of Lengyel's constant L.
+A086087 a(n) is the minimal m such that the group GL(m,3) has an element of order n

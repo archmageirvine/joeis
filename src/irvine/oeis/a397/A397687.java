@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397687 allocated for Ctibor O. Zizka.
+ * A397687 a(n) is the least k &gt;= 1 such that Sum_{i = 0..n} A000005(k + i) / (n + 1) is an integer.
  * @author Sean A. Irvine
  */
 public class A397687 extends Sequence0 {

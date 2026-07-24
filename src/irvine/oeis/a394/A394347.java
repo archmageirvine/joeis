@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397049.
+ * A394347 a(n) is the least prime not previously used containing n as a substring.
  * @author Sean A. Irvine
  */
 public class A394347 extends Sequence0 {

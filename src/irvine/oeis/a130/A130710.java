@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A130710 A designed sequence of primes that seems to be chaotic based on the sum of the sequence with a prime and one: a(n+1)-&gt;Abs(a(n)+Prime[n]+1).
+ * A130710 The subsequence of primes in the sequence b(k) defined by b(0)=2, b(1)=7, b(2)=13, and b(k) = abs(b(k) - prime(k-1) + 1).
  * @author Sean A. Irvine
  */
 public class A130710 extends FilterSequence {

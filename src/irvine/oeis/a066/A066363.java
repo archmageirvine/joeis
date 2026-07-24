@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066363 The floor[n^(3/4)]-perfect numbers, where f-perfect numbers for an arithmetical function f is defined in A066218.
+ * A066363 floor(x^(3/4))-perfect numbers, where f-perfect numbers for an arithmetical function f is defined in A066218.
  * @author Sean A. Irvine
  */
 public class A066363 extends Sequence1 {

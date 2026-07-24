@@ -4,7 +4,7 @@ package irvine.oeis.a072;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A072373 Complexity of doubled cycle (regarding case n = 2 as a graph).
+ * A072373 Number of spanning trees of the n-prism graph Y_n (regarding case n = 2 as a simple graph).
  * @author Georg Fischer
  */
 public class A072373 extends GeneratingFunctionSequence {

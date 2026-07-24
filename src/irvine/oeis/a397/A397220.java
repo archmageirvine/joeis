@@ -3,7 +3,7 @@ package irvine.oeis.a397;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A397049.
+ * A397220 Composite numbers with at least three digits such that every proper contiguous substring of length at least 2 is prime.
  * @author Sean A. Irvine
  */
 public class A397220 extends FiniteSequence {

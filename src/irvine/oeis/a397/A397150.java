@@ -4,7 +4,7 @@ import irvine.oeis.a072.A072193;
 import irvine.oeis.a390.A390737;
 
 /**
- * A397150 allocated for Jwalin Bhatt.
+ * A397150 Number of decimal places which are known after using n terms of A072193 and treating them as the coefficients of a continued fraction.
  * @author Sean A. Irvine
  */
 public class A397150 extends A390737 {

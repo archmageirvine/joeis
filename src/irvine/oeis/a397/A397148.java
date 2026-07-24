@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A397148 allocated for Jean-Marc Rebert.
+ * A397148 Numbers k such that k + omega(k) is prime.
  * @author Sean A. Irvine
  */
 public class A397148 extends FilterNumberSequence {

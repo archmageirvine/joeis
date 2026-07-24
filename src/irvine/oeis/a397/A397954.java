@@ -3,7 +3,7 @@ package irvine.oeis.a397;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A397954 allocated for Paolo Xausa.
+ * A397954 Polydivisible numbers in base 4.
  * @author Sean A. Irvine
  */
 public class A397954 extends FiniteSequence {

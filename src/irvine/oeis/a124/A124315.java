@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A124315 a(n) = Sum_{ d divides n } tau(gcd(d,n/d)), where tau = sigma_0 = A000005.
+ * A124315 a(n) = Sum_{d|n} tau(gcd(d,n/d)), where tau = sigma_0 = A000005.
  * @author Georg Fischer
  */
 public class A124315 extends MultiplicativeSequence {

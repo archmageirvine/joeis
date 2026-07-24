@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A396907 allocated for Thomas Scheuerle.
+ * A396907 Triangular array T(n, k) of coefficients of the "Mish" activation function that is used in machine learning. Mish(x) = x*tan(log(1+exp(x))) = x*Sum_{n&gt;=0} x^n*Sum_{k=0..n}t^k*T(n, k)/(k!*2^k), where t = tan(log(2)).
  * @author Sean A. Irvine
  */
 public class A396907 extends Sequence0 {

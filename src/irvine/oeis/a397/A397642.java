@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A397642 allocated for Mareike Fischer.
+ * A397642 Number of rooted binary trees with n leaves and minimal Delta_CS value (Colless value minus Sackin value).
  * @author Sean A. Irvine
  */
 public class A397642 extends CachedSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
- * A397049.
+ * A398063 Antidiagonal sums of the array A398062.
  * @author Sean A. Irvine
  */
 public class A398063 extends A398062 {

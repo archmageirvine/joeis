@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A392714 allocated for Kian Shah.
+ * A392714 a(n) is the positive integer such that Sum_{sigma in S_{2n}} sign(sigma) * w_{sigma(1)}*D^n o w_{sigma(2)}*D^n o ... o w_{sigma(2n)}*D^n = a(n) * Wronskian(w_1,...,w_{2n}) * D^n, where D = d/dx and w_1,...,w_{2n} are smooth functions on the real line.
  * @author Sean A. Irvine
  */
 public class A392714 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A397877 allocated for Daniel Okwor.
+ * A397877 Length of the repeating part of row n of A281001.
  * @author Sean A. Irvine
  */
 public class A397877 extends Sequence2 {

@@ -3,7 +3,7 @@ package irvine.oeis.a344;
 
 import irvine.oeis.recur.HolonomicRecurrence;
 /**
- * A344907 Number of polygon edges formed when every pair of vertices of a regular (2n-1)-gon are joined by an infinite line.
+ * A344907 Number of polygon edges formed when every pair of vertices of a regular (2n-1)-gon is joined by an infinite line.
  * radtorec(3*x^2*(3*x^3+23*x^2+5*x+1)/(1-x)^5)
  * @author Georg Fischer
  */

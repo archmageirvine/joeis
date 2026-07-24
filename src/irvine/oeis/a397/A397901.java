@@ -7,7 +7,7 @@ import irvine.math.zi.Zi;
 import irvine.oeis.Sequence1;
 
 /**
- * A397901 allocated for Fr\u00e9d\u00e9ric D. W. Heidenthal-K\u00f6nig.
+ * A397901 Number of distinct products z*w, where z and w range over the nonzero Gaussian integers a+b*i with 0 &lt;= a, b &lt;= n and i the imaginary unit.
  * @author Sean A. Irvine
  */
 public class A397901 extends Sequence1 {

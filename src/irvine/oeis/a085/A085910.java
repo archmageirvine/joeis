@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A085910 a(n) = smallest prime(k) not equal to prime(n) and not included earlier, such that A001223(k) = A001223(n), i.e., prime(k+1) - prime(k) = prime(n+1) - prime(n).
+ * A085910 a(n) = smallest prime(k) not equal to prime(n) and not included earlier, such that A001223(k) = A001223(n); i.e., prime(k+1) - prime(k) = prime(n+1) - prime(n); or 0 is no such prime exists.
  * @author Sean A. Irvine
  */
 public class A085910 extends A000040 {

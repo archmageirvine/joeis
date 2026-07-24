@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A398002 E.g.f. A(x) satisfies A&apos;(x) = 1 + A((exp(3*x) - 1)/3), with A(0) = 0.
+ * A398002 E.g.f. A(x) satisfies A'(x) = 1 + A((exp(3*x) - 1)/3), with A(0) = 0.
  * @author Georg Fischer
  */
 public class A398002 extends MultiTransformSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a397;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A397752 allocated for Andrew Howroyd.
+ * A397752 Number of unlabeled bridgeless polygonal snake graphs with n vertices.
  * @author Georg Fischer
  */
 public class A397752 extends HolonomicRecurrence {

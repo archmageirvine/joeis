@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A117983 A modified Legendre-binomial transform of 2^n for p=3.
+ * A117983 A modified Legendre-binomial transform of 3^n for p=3.
  * @author Georg Fischer
  */
 public class A117983 extends LambdaSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007376;
 
 /**
- * A086045 Position of second occurrence of n in concatenated numbers (A033307, Champernowne constant).
+ * A086045 Position of the second occurrence of n in concatenated numbers (A007376, Champernowne constant).
  * @author Sean A. Irvine
  */
 public class A086045 extends A007376 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397618 allocated for Clark Kimberling.
+ * A397618 a(n) = prime(floor(n*e/(e-1))).
  * @author Sean A. Irvine
  */
 public class A397618 extends Sequence1 {

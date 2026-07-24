@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A397999 allocated for Seiichi Manyama.
+ * A397999 E.g.f. A(x) satisfies A'(x) = 1 + A(-log(1-2*x)/2), with A(0) = 0.
  * @author Georg Fischer
  */
 public class A397999 extends MultiTransformSequence {

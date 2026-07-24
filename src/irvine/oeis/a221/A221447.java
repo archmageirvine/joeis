@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A221447 Hilltop maps: number of 2 X n binary arrays indicating the locations of corresponding elements not exceeded by any horizontal or antidiagonal neighbor in a random 0..1 2 X n array.
+ * A221447 Number of 2 X n binary arrays with every 0 a horizontal or antidiagonal neighbor to some 1.
  * @author Georg Fischer
  */
 public class A221447 extends GeneratingFunctionSequence implements Conjectural {

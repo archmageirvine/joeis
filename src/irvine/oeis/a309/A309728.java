@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.RationalProductTransform;
 
 /**
- * A309728 G.f. A(x) satisfies: A(x) = A(x^2) / (1 - 2*x).
+ * A309728 G.f. A(x) satisfies A(x) = A(x^2) / (1 - 2*x), with A(0) = 1.
  * @author Georg Fischer
  */
 public class A309728 extends RationalProductTransform {

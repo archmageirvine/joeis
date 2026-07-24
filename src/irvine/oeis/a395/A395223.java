@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395223 allocated for Ali Sidheek.
+ * A395223 Bases b for which there exists a larger base c satisfying A394570(b) = A394570(c).
  * @author Sean A. Irvine
  */
 public class A395223 extends Sequence1 {

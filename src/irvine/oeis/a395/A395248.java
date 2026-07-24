@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A395248 allocated for Tyler Satchel Orden.
+ * A395248 Sprague-Grundy values for the octal game .007.
  * @author Sean A. Irvine
  */
 public class A395248 extends Sequence0 {

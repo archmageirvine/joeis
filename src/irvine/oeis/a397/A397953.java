@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A397953 allocated for Paolo Xausa.
+ * A397953 Polydivisible numbers in base 3.
  * @author Sean A. Irvine
  */
 public class A397953 extends FiniteSequence {

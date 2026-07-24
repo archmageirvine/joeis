@@ -4,7 +4,7 @@ package irvine.oeis.a081;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A081407 4th-order non-linear ("factorial") recursion: a(0)=a(1)=a(2)=a(3)=1, a(n) = (n+1)*a(n-4).
+ * A081407 4th-order non-linear ("factorial") recursion: a(0) = a(1) = a(2) = a(3) = 1, a(n) = (n+1)*a(n-4).
  * @author Georg Fischer
  */
 public class A081407 extends HolonomicRecurrence {

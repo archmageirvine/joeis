@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A196750 Numbers n such that 3, 5, 7 and 11 do not divide swing(n) = A056040(n).
+ * A196750 Numbers k such that 3, 5, 7 and 11 do not divide swing(k) = A056040(k).
  *
  * @author Georg Fischer
  */

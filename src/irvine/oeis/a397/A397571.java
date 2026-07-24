@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a065.A065091;
 
 /**
- * A397571 allocated for Joesph Daniel Burke III.
+ * A397571 Field trace Tr_{Q(zeta_p)/Q}(T_p(zeta_p)) of the p-term truncation of Ramanujan's third-order mock theta function f(q) at a primitive p-th root of unity, where p = prime(n+1).
  * @author Sean A. Irvine
  */
 public class A397571 extends A065091 {

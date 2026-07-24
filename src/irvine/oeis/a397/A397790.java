@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A397790 allocated for James C. McMahon.
+ * A397790 a(n) = prime^2 closest to prime(n)^3.
  * @author Sean A. Irvine
  */
 public class A397790 extends A000040 {

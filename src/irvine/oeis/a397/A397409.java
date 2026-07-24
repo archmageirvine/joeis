@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033677;
 
 /**
- * A397409 allocated for Charles Kusniec.
+ * A397409 Irregular triangle read by rows: row n lists, in increasing order, the products n*k such that A033677(n*k) = n.
  * @author Sean A. Irvine
  */
 public class A397409 extends Sequence1 {

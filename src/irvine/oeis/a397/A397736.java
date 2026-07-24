@@ -3,7 +3,7 @@ package irvine.oeis.a397;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A397736 allocated for Felix Huber.
+ * A397736 a(n) is the number of Motzkin paths of length n in which level steps on even levels come in 2 colors.
  * @author Sean A. Irvine
  */
 public class A397736 extends GfSequence {

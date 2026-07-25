@@ -14,6 +14,6 @@ public class A086102 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A086102() {
-    super(1, 5, k -> Predicates.PRIME.is(new Z(Long.toString(Functions.PRIME.z(k).mod(100)) + Functions.PRIME.z(k + 1).toString().substring(0, 2))));
+    super(1, 5, k -> Predicates.PRIME.is(new Z(Functions.PRIME.z(k).mod(100) + Functions.PRIME.z(k + 1).toString().substring(0, 2))));
   }
 }

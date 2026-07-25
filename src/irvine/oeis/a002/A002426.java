@@ -1,13 +1,16 @@
 package irvine.oeis.a002;
 
+import irvine.math.z.Binomial;
+import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A002426 Central trinomial coefficients: largest coefficient of (1 + x + x^2)^n.
  * @author Sean A. Irvine
  */
-public class A002426 extends AbstractSequence {
+public class A002426 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -35,4 +38,15 @@ public class A002426 extends AbstractSequence {
     }
     return mB;
   }
+
+  @Override
+  public Z a(final Z n) {
+    return a(n.longValueExact());
+  }
+
+  @Override
+  public Z a(final long n) {
+    return Integers.SINGLETON.sum(0, n, k -> Binomial.binomial(n, k).multiply(Binomial.binomial(k, n - k)));
+  }
+
 }

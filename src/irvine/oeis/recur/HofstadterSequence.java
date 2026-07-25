@@ -78,6 +78,9 @@ public abstract class HofstadterSequence extends AbstractSequence implements Dir
     if (mLimit > 0 && n <= 0) {
       return n <= -mLimit ? 0 : mLimit + n;
     }
+    if (mLimit == 0 && n <= 0) {
+      return 0;
+    }
     if (n < mInitLen) {
       return mA.get(n);
     }

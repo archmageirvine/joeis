@@ -4,7 +4,7 @@ package irvine.oeis.a395;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A395269 E.g.f. A(x) satisfies A&apos;(x) = 1 + A^5(x), where A^l(x) denotes the l-th iterate of A, with A(0) = 0.
+ * A395269 E.g.f. A(x) satisfies A'(x) = 1 + A^5(x), where A^l(x) denotes the l-th iterate of A, with A(0) = 0.
  * @author Georg Fischer
  */
 public class A395269 extends PolynomialFieldSequence {

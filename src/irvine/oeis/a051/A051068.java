@@ -6,7 +6,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a014.A014578;
 
 /**
- * A051068 Partial sums of A014578.
+ * A051068 Duplicate of A050294.
  * @author Georg Fischer
  */
 public class A051068 extends PartialSumSequence {

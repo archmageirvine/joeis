@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A397135 allocated for John Tyler Rascoe.
+ * A397135 Number of words of length n in S, such that S is a set containing the word ab and if a word w of the form xy is in S then w* of the form x(k^r)y is in S where k^r is the reversal of some factor k of w with |k| &gt; 1.
  * @author Sean A. Irvine
  */
 public class A397135 extends Sequence2 {

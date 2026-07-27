@@ -4,7 +4,7 @@ package irvine.oeis.a329;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A329471 a(n) = a(n-1)^2 + 3 for n &gt;=2 , where a(0) = 1, a(1) = 3.
+ * A329471 a(n) = a(n-1)^2 + 3 for n &gt;= 2 , where a(0) = 1, a(1) = 3.
  * @author Georg Fischer
  */
 public class A329471 extends MultiTransformSequence {

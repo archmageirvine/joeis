@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a065.A065653;
 
 /**
- * A102847 a(0)=1, a(n) = a(n-1)*a(n-1) + 2.
+ * A102847 a(0) = 1, a(n) = a(n-1)*a(n-1) + 2.
  * @author Georg Fischer
  */
 public class A102847 extends FilterSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A086104 Primes appearing as concatenation of the last digit of Prime[A086101(n)] and the first digit of Prime[A086101(n)+1].
+ * A086104 Primes appearing as concatenation of the last digit of prime(A086101(n)) and the first digit of prime(A086101(n)+1).
  * @author Sean A. Irvine
  */
 public class A086104 extends A000040 {

@@ -1,10 +1,13 @@
 package irvine.oeis.a395;
 
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
+
 import irvine.factor.factor.Jaguar;
-import irvine.math.predicate.Predicates;
+import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A395681 a(n) is the number of positive integers m &lt;= n such that the set of primes dividing m or dividing an exponent in the prime factorization of m is disjoint from the corresponding set for n.
@@ -12,23 +15,40 @@ import irvine.util.array.LongDynamicBooleanArray;
  */
 public class A395681 extends Sequence1 {
 
-  private long mN = 0;
+  private int mN = 0;
+
+  /**
+   * Compute the set of primes dividing n or any exponent in the
+   * prime factorization of n.
+   */
+  private Set<Z> primeSet(final int n) {
+    final Set<Z> s = new HashSet<>();
+    final FactorSequence fs = Jaguar.factor(n);
+    for (final Z p : fs.toZArray()) {
+      s.add(p);
+      final int e = fs.getExponent(p);
+      if (e > 1) {
+        Collections.addAll(s, Jaguar.factor(e).toZArray());
+      }
+    }
+    return s;
+  }
 
   @Override
   public Z next() {
-    if (Predicates.PRIME.is(++mN)) {
-      return Z.valueOf(mN - 1);
-    }
-    final LongDynamicBooleanArray seen = new LongDynamicBooleanArray();
-    for (final Z pp : Jaguar.factor(mN).toZArray()) {
-      final long p = pp.longValue();
-      for (long q = p; q <= mN; q += p) {
-        seen.set(q);
+    ++mN;
+    final Set<Z> pn = primeSet(mN);
+    int cnt = 0;
+    for (int k = 1; k <= mN; ++k) {
+      final Set<Z> pk = primeSet(k);
+      boolean ok = true;
+      for (final Z p : pk) {
+        if (pn.contains(p)) {
+          ok = false;
+          break;
+        }
       }
-    }
-    long cnt = 0;
-    for (long k = 1; k <= mN; ++k) {
-      if (!seen.isSet(k)) {
+      if (ok) {
         ++cnt;
       }
     }

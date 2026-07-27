@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397085 allocated for Tony Hernandez.
+ * A397085 a(n) = (-1)^(n-floor(sqrt(n))^2-1) if n is not a perfect square and 0 otherwise.
  * @author Sean A. Irvine
  */
 public class A397085 extends Sequence0 {

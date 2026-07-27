@@ -4,7 +4,7 @@ package irvine.oeis.a374;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A374722 Number of nonisomorphic spanning trees of the nC_5-snake with constant distance between cutpoints.
+ * A374722 Number of nonisomorphic spanning trees of the nC_5-snake graph with constant distance between cutpoints.
  * @author Georg Fischer
  */
 public class A374722 extends HolonomicRecurrence {

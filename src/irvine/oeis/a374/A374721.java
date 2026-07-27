@@ -4,7 +4,7 @@ package irvine.oeis.a374;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A374721 Number of nonisomorphic spanning trees of the triangular snake nC_3.
+ * A374721 Number of nonisomorphic spanning trees of the triangular snake graph nC_3.
  * @author Georg Fischer
  */
 public class A374721 extends HolonomicRecurrence {

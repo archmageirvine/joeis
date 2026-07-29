@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a007.A007691;
 
 /**
- * A325025 Numbers that are multi-perfect (A007691) and simultaneously harmonic (A001599).
+ * A325025 Numbers that are multiperfect (A007691) and simultaneously harmonic (A001599).
  * @author Georg Fischer
  */
 public class A325025 extends FilterSequence {

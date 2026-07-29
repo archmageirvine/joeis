@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a057.A057547;
 
 /**
- * A395858 allocated for Takayuki Kuriyama.
+ * A395858 Least number of positive primitive Dyck numbers (A057547) that sum to 2n.
  * @author Sean A. Irvine
  */
 public class A395858 extends Sequence1 {

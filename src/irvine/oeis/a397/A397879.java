@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A397879 allocated for Ali Sidheek.
+ * A397879 Largest integer of the form r^k whose base-n alternating digital root is r and whose number of base-n digits is k.
  * @author Sean A. Irvine
  */
 public class A397879 extends Sequence2 {

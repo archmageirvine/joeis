@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A397774 allocated for Bill McEachen.
+ * A397774 Irregular triangle where the n-th row is the sequence b_n(m) defined in comments.
  * @author Sean A. Irvine
  */
 public class A397774 extends Sequence1 {

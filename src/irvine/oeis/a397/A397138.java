@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A397138 allocated for Dillon Ryan.
+ * A397138 Odd numbers k such that 5*F(k)^2 + 5*F(k) + 1 is prime, where F(k) is the k-th Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A397138 extends FilterNumberSequence {

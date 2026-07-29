@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398094 allocated for Felix Huber.
+ * A398094 Irregular triangle read by rows: T(n, k) is the number of ordered difference sequences of graceful permutations of length n having exactly k reconstructions modulo complementation, with trailing zeros omitted.
  * @author Sean A. Irvine
  */
 public class A398094 extends Sequence1 {

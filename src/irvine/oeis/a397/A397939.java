@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000041;
 
 /**
- * A397939 allocated for Damian Vel\u00e1zquez L\u00f3pez.
+ * A397939 Number of partitions of n that can be reduced to a single part by repeatedly replacing two parts x and y with |x - y| &gt;= 2 by their sum x + y.
  * @author Sean A. Irvine
  */
 public class A397939 extends A000041 {

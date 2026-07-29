@@ -5,7 +5,7 @@ import irvine.oeis.a065.A065091;
 import irvine.util.Combination;
 
 /**
- * A398173 allocated for Mark Watson.
+ * A398173 a(n) is the minimum size of a subset of Z/pZ with at least 2 elements and no unique sum, where p is the n-th odd prime.
  * @author Sean A. Irvine
  */
 public class A398173 extends A065091 {

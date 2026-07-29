@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a046.A046471;
 
 /**
- * A398119 allocated for M\u00e1rcio Ven\u00edcio Pilar Alc\u00e2ntara.
+ * A398119 a(n) is the number of distinct cycles under iteration of x -&gt; s(x^n) on the positive integers, where s is the decimal digit sum and fixed points are counted as cycles of length 1.
  * @author Sean A. Irvine
  */
 public class A398119 extends A398120 {

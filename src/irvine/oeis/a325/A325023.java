@@ -9,7 +9,7 @@ import irvine.oeis.a007.A007691;
 import irvine.oeis.a049.A049820;
 
 /**
- * A325023 Multi-perfect numbers m from A007691 such that m*(m-tau(m))/sigma(m) is an integer h, where k-tau(k) is the number of nondivisors of k (A049820) and sigma(k) is the sum of the divisors of k (A000203).
+ * A325023 Multiperfect numbers m from A007691 such that m*(m-tau(m))/sigma(m) is an integer h, where k-tau(k) is the number of nondivisors of k (A049820) and sigma(k) is the sum of the divisors of k (A000203).
  * @author Georg Fischer
  */
 public class A325023 extends FilterSequence {

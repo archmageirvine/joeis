@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A397878 allocated for Ali Sidheek.
+ * A397878 Number of integers of the form r^k (0 &lt; r &lt; n, k &gt; 0) whose base-n alternating digital root is r and whose number of base-n digits is k.
  * @author Sean A. Irvine
  */
 public class A397878 extends Sequence2 {

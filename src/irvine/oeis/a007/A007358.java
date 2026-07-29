@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A007358 Infinitary multi-perfect numbers.
+ * A007358 Infinitary multiperfect numbers.
  * @author Sean A. Irvine
  */
 public class A007358 extends Sequence1 {

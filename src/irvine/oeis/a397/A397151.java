@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397151 allocated for Mohammad F. Marashdeh.
+ * A397151 Number of compositions (c_1,...,c_k) of n with c_i &gt;= 3*k - 2*i.
  * @author Sean A. Irvine
  */
 public class A397151 extends Sequence0 {

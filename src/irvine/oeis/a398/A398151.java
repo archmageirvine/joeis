@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002808;
 
 /**
- * A398151 allocated for Ctibor O. Zizka.
+ * A398151 Composite numbers k such that A000005(k) divides k^2 + 1.
  * @author Sean A. Irvine
  */
 public class A398151 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a007.A007662;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A397801 allocated for Shrey Jha.
+ * A397801 3-adic valuation of the quadruple factorial of n.
  * @author Sean A. Irvine
  */
 public class A397801 extends SimpleTransformSequence {

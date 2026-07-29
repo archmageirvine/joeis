@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395680 allocated for Danylo Ivanov.
+ * A395680 Decimal expansion of the constant d = Product_{n&gt;=0} (1 - 1/(2*n!+1)).
  * @author Sean A. Irvine
  */
 public class A395680 extends DecimalExpansionSequence {

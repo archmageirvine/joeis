@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A071091 Number of tilings by lozenges of hexagon with sides 2n, 2n+3, 2n, 2n+3, 2n, 2n+3 and middle triangle in each edge removed.
+ * A071091 Number of lozenge tilings of a hexagon with side lengths 2n, 2n+3, 2n, 2n+3, 2n, 2n+3, with the middle unit triangle removed from each of the three longer sides.
  * @author Sean A. Irvine
  */
 public class A071091 extends Sequence0 {

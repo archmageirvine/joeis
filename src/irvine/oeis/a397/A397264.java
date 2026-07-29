@@ -3,7 +3,7 @@ package irvine.oeis.a397;
 import irvine.oeis.gf.EgfSequence;
 
 /**
- * A397264 allocated for Noah A Rosenberg.
+ * A397264 Number of rooted binary simplex time-consistent leaf-labeled galled trees with n leaves and exactly 1 gall.
  * @author Sean A. Irvine
  */
 public class A397264 extends EgfSequence {

@@ -5,7 +5,7 @@ import irvine.util.array.DynamicIntArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A398095 allocated for Felix Huber.
+ * A398095 a(n) is the least length of a graceful permutation for which some ordered difference sequence has exactly n reconstructions modulo complementation.
  * @author Sean A. Irvine
  */
 public class A398095 extends A398094 {

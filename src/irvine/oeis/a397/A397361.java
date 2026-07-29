@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397361 allocated for Oliver Navarro.
+ * A397361 Number of compositions of n^2 into n parts such that every initial segment has an integer average.
  * @author Sean A. Irvine
  */
 public class A397361 extends Sequence1 {

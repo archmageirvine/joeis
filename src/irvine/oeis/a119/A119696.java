@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A119696 Fib(n)*n^3*(binomial(2*n, n))^2/(n+1).
+ * A119696 a(n) = Fibonacci(n)*n^3*(binomial(2*n, n))^2/(n+1).
  * a(n)=fibonacci(n)*n^3(binom(2*n,n))^2/(n+1)
  * @author Georg Fischer
  */

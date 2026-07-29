@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398138 allocated for Fr\u00e9d\u00e9ric D. W. Heidenthal-K\u00f6nig.
+ * A398138 Sum of the remainders k mod n over the distinct entries k of the n X n multiplication table.
  * @author Sean A. Irvine
  */
 public class A398138 extends Sequence0 {

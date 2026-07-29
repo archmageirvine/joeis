@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000217;
 
 /**
- * A025559 (1/1 - 1/3 + 1/6 + ... + d/C(n+1,2))*LCM{1,3,6,...,C(n+1,2)}, where d = (-1)^n.
+ * A025559 a(n) = (1/1 - 1/3 + 1/6 + ... + d/C(n+1,2))*LCM{1,3,6,...,C(n+1,2)}, where d = (-1)^n.
  * @author Sean A. Irvine
  */
 public class A025559 extends A000217 {

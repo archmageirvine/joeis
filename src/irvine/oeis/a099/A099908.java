@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A099908 C(2n-1,n-1) mod n^4.
+ * A099908 a(n) = C(2n-1,n-1) mod n^4.
  * a(n)=mod(binom(2*n-1, n-1), n^4)
  * @author Georg Fischer
  */

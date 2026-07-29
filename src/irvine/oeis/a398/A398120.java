@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A398120 allocated for M\u00e1rcio Ven\u00edcio Pilar Alc\u00e2ntara.
+ * A398120 a(n) is the number of distinct cycles of length at least 2 under iteration of x -&gt; s(x^n) on the positive integers, where s is the decimal digit sum.
  * @author Sean A. Irvine
  */
 public class A398120 extends Sequence2 {

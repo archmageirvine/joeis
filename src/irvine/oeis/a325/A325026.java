@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a007.A007691;
 
 /**
- * A325026 Multi-perfect numbers from A007691 that are not harmonic (A001599).
+ * A325026 Multiperfect numbers from A007691 that are not harmonic (A001599).
  * @author Georg Fischer
  */
 public class A325026 extends FilterSequence {

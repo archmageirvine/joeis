@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A397755 allocated for Bill McEachen.
+ * A397755 Number of steps to reach 0 for the sequence b_n(m) defined in the A397774, or 0 if b_n(m) does not terminate.
  * @author Sean A. Irvine
  */
 public class A397755 extends A397774 {

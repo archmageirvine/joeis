@@ -8,7 +8,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a005.A005651;
 
 /**
- * A396229 allocated for Andrea Cutri.
+ * A396229 Number of fixed-content bracelets of length 2*n, summed over all integer partitions of 2*n, whose cyclic orbit contains exactly two linear-palindrome representatives and has full rotational period.
  * @author Sean A. Irvine
  */
 public class A396229 extends Sequence2 {

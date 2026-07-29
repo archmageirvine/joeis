@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397935 allocated for G. Gordon Thompson.
+ * A397935 Number of n X n binary matrices with exactly 14 1's such that there are an even number of 1's in every row and column.
  * @author Sean A. Irvine
  */
 public class A397935 extends Sequence1 {

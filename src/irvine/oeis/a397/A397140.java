@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A397140 allocated for Daniel Okwor.
+ * A397140 a(n) = number of positive g &lt; prime(n) such that g and g+1 are both primitive roots modulo prime(n).
  * @author Sean A. Irvine
  */
 public class A397140 extends A000040 {

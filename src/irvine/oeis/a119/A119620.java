@@ -7,7 +7,7 @@ import irvine.oeis.transform.EulerTransform;
 
 
 /**
- * A119620 Number of partitions of floor(3n/2) into n parts each from {1,2,...,n}.
+ * A119620 Number of partitions of floor(3*n/2) into n parts each from {1,2,...,n}.
  * @author Georg Fischer
  */
 public class A119620 extends EulerTransform {

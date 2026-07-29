@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A398121 allocated for M\u00e1rcio Ven\u00edcio Pilar Alc\u00e2ntara.
+ * A398121 a(n) is the maximum length of a cycle under iteration of x -&gt; s(x^n) on the positive integers, where s is the decimal digit sum; a fixed point counts as a cycle of length 1.
  * @author Sean A. Irvine
  */
 public class A398121 extends Sequence2 {

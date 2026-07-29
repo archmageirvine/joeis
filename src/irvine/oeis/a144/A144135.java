@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A144135 GegenbauerC[n,2,8].
+ * A144135 a(n) = GegenbauerC[n,2,8].
  * @author Georg Fischer
  */
 public class A144135 extends GeneratingFunctionSequence implements Conjectural {

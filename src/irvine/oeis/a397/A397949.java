@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A397949 allocated for Jean-Marc Rebert.
+ * A397949 The least number k such that the n-th iterate of k under x -&gt; x + omega(x) is the first prime encountered in its trajectory.
  * @author Sean A. Irvine
  */
 public class A397949 extends Sequence1 {

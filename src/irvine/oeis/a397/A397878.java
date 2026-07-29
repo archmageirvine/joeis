@@ -20,7 +20,7 @@ public class A397878 extends Sequence2 {
       long k = 1;
       while (true) {
         final Z m = Z.valueOf(r).pow(k);
-        long l = Functions.DIGIT_LENGTH.l(mN, m);
+        final long l = Functions.DIGIT_LENGTH.l(mN, m);
         if (l < k) {
           break;
         }

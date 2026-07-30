@@ -26,10 +26,6 @@ public class A014287 extends Sequence1 {
     if (roman.length() == 0) {
       return Z.ZERO;
     }
-    try {
-      return Z.valueOf(Roman.parse(roman.toString()));
-    } catch (final IllegalArgumentException e) {
-      return Z.ZERO;
-    }
+    return Z.valueOf(Roman.parse(roman.toString()));
   }
 }

@@ -2766,3 +2766,4 @@ A086031 Number of nonisomorphic ways a loop can cross two parallel roads 2n time
 A086053 Decimal expansion of Lengyel's constant L.
 A086087 a(n) is the minimal m such that the group GL(m,3) has an element of order n
 A086141 Permutation of A025487 (least prime signatures) which, when values are factored, exhibit self-similarity (cf. A008687).
+A086153 Special prime numbers arranged in a triangle: n-th row contains m primes p (where m = pi(2n + A020483(n)) - pi(A020483(n))) with following properties.

@@ -27,7 +27,7 @@ public final class Roman {
     for (int k = 0; k < rlen; ++k) {
       final int r = RANK.indexOf(uc.charAt(k));
       if (r == -1) {
-        throw new IllegalArgumentException(roman);
+        return 0; // not a Romand numeral
       }
       final int t = VALUE[r];
       if (k != rlen - 1 && RANK.indexOf(uc.charAt(k + 1)) > r) {

@@ -13,7 +13,7 @@ import irvine.oeis.Sequence1;
  */
 public class A235154 extends Sequence1 {
 
-  private final TreeSet<State> mStates = new TreeSet();
+  private final TreeSet<State> mStates = new TreeSet<>();
 
   private static final class State implements Comparable<State> {
     private final int mA;

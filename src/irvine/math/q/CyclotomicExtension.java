@@ -81,4 +81,13 @@ public final class CyclotomicExtension extends PolynomialRingField<Q> {
   public String toString() {
     return "\\Q[z]/(" + mMod + ")";
   }
+
+  /**
+   * The norm of the polynomial.
+   * @param p polynomial
+   * @return norm
+   */
+  public Q norm(final Polynomial<Q> p) {
+    return resultant(mMod, p);
+  }
 }

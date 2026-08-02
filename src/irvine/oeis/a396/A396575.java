@@ -18,7 +18,7 @@ public class A396575 extends Sequence1 {
   private int mN = 0;
 
   private Z contribution(final int[] q) {
-    int m = Functions.SUM.i(q);
+    final int m = Functions.SUM.i(q);
     final int g = Functions.GCD.i(q);
     Z sum = Z.ZERO;
     for (final Z dz : Jaguar.factor(g).divisors()) {

@@ -4,7 +4,7 @@ package irvine.oeis.a395;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A395195 E.g.f. A(x) satisfies A&apos;(x) = (1 + A(x)*A&apos;(x))^2, with A(0)=0.
+ * A395195 E.g.f. A(x) satisfies A'(x) = (1 + A(x)*A'(x))^2, with A(0)=0.
  * @author Georg Fischer
  */
 public class A395195 extends HolonomicRecurrence {

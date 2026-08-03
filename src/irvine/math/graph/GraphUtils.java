@@ -1834,5 +1834,39 @@ public final class GraphUtils {
   public static int burningNumber(final Graph graph) {
     return BurningNumber.burningNumber(graph);
   }
+
+  private static boolean cycleSearch(final Graph g, final int start, final int current, final int remaining, final boolean[] used) {
+    if (remaining == 0) {
+      return g.isAdjacent(current, start);
+    }
+    for (int u = g.nextVertex(current, -1); u >= 0; u = g.nextVertex(current, u)) {
+      if (!used[u]) {
+        used[u] = true;
+        if (cycleSearch(g, start, u, remaining - 1, used)) {
+          return true;
+        }
+        used[u] = false;
+      }
+    }
+    return false;
+  }
+
+  /**
+   * Test if a graph contains a cycle of the specified length.
+   * @param g graph
+   * @param len cycle length
+   * @return true iff the graph has such a cycle
+   */
+  public static boolean hasCycle(final Graph g, final int len) {
+    final int v = g.order();
+    for (int start = 0; start < v; ++start) {
+      final boolean[] used = new boolean[v];
+      used[start] = true;
+      if (cycleSearch(g, start, start, len - 1, used)) {
+        return true;
+      }
+    }
+    return false;
+  }
 }
 

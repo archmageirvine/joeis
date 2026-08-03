@@ -6,7 +6,7 @@ import irvine.oeis.MultiplicativeSequence;
 import irvine.oeis.a227.A227154;
 
 /**
- * A376887 The number of divisors of n that are products of factors of the form p^(k!) with multiplicities not larger than their multiplicity in n, where p is a prime and k &gt;= 1, when the factorization of n is uniquely done using the factorial-base representation of
+ * A376887 The number of divisors of n that are products of factors of the form p^(k!) with multiplicities not larger than their multiplicity in n, where p is a prime and k &gt;= 1, when the factorization of n is uniquely done using the factorial-base representation of the exponents in the prime factorization of n.
  * Multiplicative with: .
  * @author Georg Fischer
  */

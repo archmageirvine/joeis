@@ -4,7 +4,7 @@ package irvine.oeis.a396;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A396063 E.g.f. A(x) satisfies A&apos;(x) = 1/(1 - A(x)*A&apos;(x))^2, with A(0)=0.
+ * A396063 E.g.f. A(x) satisfies A'(x) = 1/(1 - A(x)*A'(x))^2, with A(0)=0.
  * @author Georg Fischer
  */
 public class A396063 extends PolynomialFieldSequence {

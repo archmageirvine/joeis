@@ -4,7 +4,7 @@ package irvine.oeis.a398;
 import irvine.oeis.a082.A082182;
 
 /**
- * A398418 Numbers k such that (29^k + 5^k)/34 is prime.
+ * A398418 allocated for Robert Price.
  * @author Georg Fischer
  */
 public class A398418 extends A082182 {

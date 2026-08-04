@@ -1,17 +1,17 @@
 package irvine.oeis.a069;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A069788 Number of tilings by lozenges of hexagon with sides n, n+1, n, n+1, n, n+1 and central triangle removed.
  * @author Sean A. Irvine
  */
-public class A069788 extends Sequence1 {
+public class A069788 extends Sequence0 {
 
   // After Theorem 20 of Helfgott and Gessel, 1999.
 
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {

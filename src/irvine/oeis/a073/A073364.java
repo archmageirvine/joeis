@@ -6,16 +6,16 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.MatrixField;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A073364 Number of permutations p of (1,2,3,...,n) such that k+p(k) is prime for 1&lt;=k&lt;=n.
  * @author Sean A. Irvine
  */
-public class A073364 extends Sequence1 {
+public class A073364 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {

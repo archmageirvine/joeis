@@ -18,6 +18,7 @@ public class A397263 extends Sequence0 {
       return Z.ONE;
     }
     final Z n2 = Z.valueOf(mN).square();
-    return n2.subtract(Functions.PREV_PRIME.z(n2)).min(Functions.NEXT_PRIME.z(n2).subtract(n2));
+    final Z np12 = Z.valueOf(mN + 1).square();
+    return np12.subtract(Functions.PREV_PRIME.z(np12)).min(Functions.NEXT_PRIME.z(n2).subtract(n2));
   }
 }

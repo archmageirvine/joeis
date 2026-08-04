@@ -15,7 +15,7 @@ public class A397935 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Binomial.binomial(mN, 7).square().multiply(110940)
+    return Binomial.binomial(mN, 7).square().multiply(3110940)
       .add(Binomial.binomial(mN, 7).multiply(Binomial.binomial(mN, 6)).multiply(4233600))
       .add(Binomial.binomial(mN, 7).multiply(Binomial.binomial(mN, 5)).multiply(911400))
       .add(Binomial.binomial(mN, 7).multiply(Binomial.binomial(mN, 4)).multiply(65520))

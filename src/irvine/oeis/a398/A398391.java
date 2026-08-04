@@ -33,7 +33,7 @@ public class A398391 extends Sequence1 {
     if (s > k) {
       return false;
     }
-    Z sum = Z.ONE.add(k * k); // set must include 1, k
+    final Z sum = Z.ONE.add(k * k); // set must include 1, k
     if (s == 2) {
       return sum.isEven() && Predicates.SQUARE.is(sum.divide2());
     }

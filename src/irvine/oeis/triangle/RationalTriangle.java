@@ -6,6 +6,7 @@ import irvine.math.api.RationalSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.Sequence;
 
 /**
  * Generate the rows of a triangle T(n,k).
@@ -154,5 +155,30 @@ public class RationalTriangle extends AbstractSequence implements RationalSequen
   @Override
   public Z next() {
     return nextQ().num();
+  }
+
+  /**
+   * Convert an arbitrary sequence into a RationalTriangle.
+   * @param seq Sequence to be converted
+   */
+  public static RationalTriangle asRationalTriangle(final Sequence seq) {
+    if (seq instanceof RationalTriangle) {
+      return (RationalTriangle) seq;
+    }
+    if (seq instanceof Triangle) {
+      return new RationalTriangle() {
+
+        protected Q compute(final int n, final int k) {
+          return new Q(((Triangle) seq).compute(n, k));
+        }
+      };
+    }
+    /* else */
+    return new RationalTriangle() {
+
+      protected Q compute(final int n, final int k) {
+        return new Q(seq.next());
+      }
+    };
   }
 }

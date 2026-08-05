@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A398218 allocated for Paolo Xausa.
+ * A398218 Decimal expansion of the dihedral angle, in radians, between any two adjacent faces in a canonical (dual-uniform) octagonal trapezohedron.
  * @author Sean A. Irvine
  */
 public class A398218 extends DecimalExpansionSequence {

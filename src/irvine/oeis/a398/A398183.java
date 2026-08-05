@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A398183 allocated for Soroosh Hemmati.
+ * A398183 a(n) = second-smallest prime p &lt;= n such that 2n - p is also prime, or 0 if fewer than two such primes exist.
  * @author Sean A. Irvine
  */
 public class A398183 extends Sequence3 {

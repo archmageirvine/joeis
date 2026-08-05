@@ -4,7 +4,7 @@ package irvine.oeis.a154;
 import irvine.oeis.triangle.Inverse;
 
 /**
- * A154926 Signed version of Pascal&apos;s triangle. Diagonal positive, rest negative.
+ * A154926 Signed version of Pascal's triangle. Diagonal positive, rest negative.
  * @author Georg Fischer
  */
 public class A154926 extends Inverse {

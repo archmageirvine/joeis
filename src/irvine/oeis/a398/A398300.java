@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398300 allocated for Dimas Saputra.
+ * A398300 a(n) is the minimum possible sum of the numbers on all non-mine cells when n mines are placed on an infinite Minesweeper board (each non-mine cell's number is the count of mines among its up to 8 neighbors).
  * @author Sean A. Irvine
  */
 public class A398300 extends Sequence1 {

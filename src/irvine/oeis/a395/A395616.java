@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395616 allocated for Noah Weninger.
+ * A395616 Number of cyclic permutations sigma of Z/2^n such that sigma(i+1) is in {2*sigma(i), 2*sigma(i)+1} for all i in Z/2^n.
  * @author Sean A. Irvine
  */
 public class A395616 extends Sequence1 {

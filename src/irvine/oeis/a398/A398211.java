@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A398211 allocated for Paolo Xausa.
+ * A398211 Decimal expansion of the surface area of a canonical (dual-uniform) octagonal trapezohedron with unit short edge length.
  * @author Sean A. Irvine
  */
 public class A398211 extends PolynomialRootExpansionSequence {

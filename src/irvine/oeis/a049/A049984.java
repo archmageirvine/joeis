@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000142;
 
 /**
- * A049984 Primes of the form n! - (n-1)! + 1.
+ * A049984 Primes of the form k! - (k-1)! + 1.
  * @author Sean A. Irvine
  */
 public class A049984 extends A000142 {

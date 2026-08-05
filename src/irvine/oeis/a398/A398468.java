@@ -7,7 +7,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.a176.A176135;
 
 /**
- * A396575.
+ * A398468 Primes of the form prime(k+1)^3-prime(k)^3-1.
  * @author Sean A. Irvine
  */
 public class A398468 extends A176135 implements Conjectural {

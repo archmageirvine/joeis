@@ -4,7 +4,7 @@ package irvine.oeis.a308;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A308973 Langton&apos;s ant on a truncated square tiling: number of black cells after n moves of the ant when starting on an octagon and looking towards an edge where the tile meets another octagon.
+ * A308973 Langton's ant on a truncated square tiling: number of black cells after n moves of the ant when starting on an octagon and looking towards an edge where the tile meets another octagon.
  * @author Georg Fischer
  */
 public class A308973 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A133210 A functional 12 tone Musical substitution sequence based on the chord like pattern in: 1-&gt;{1,6,10,11} or Ab,Db,F,Gb 2-&gt;{2,5,9,12} or A,C,E,G 3-&gt;{3,8,11,1} or Bb,Eb,Gb,Ab 4-&gt;{4,7,12,2} or B,D,G,A Characteristic Polynomial: -16 x^2 + 36 x^3 + 36 x^4 - 215 x^5 + 355 x^6 - 368 x^7 + 285 x^8 - 161 x^9 + 59 x^10 - 12 x^11 + x^12.
+ * A133210 Limiting word of the morphism 1-&gt;{1, 6, 10, 12}, 2-&gt; {2, 5, 9, 11}, 3-&gt; {1, 3, 8, 12}, 4-&gt; {2, 4, 7, 11}, 5-&gt; {1, 5, 6, 12}, 6-&gt; {2, 6, 5, 11}, 7-&gt; {1, 7, 4, 12}, 8-&gt; {2, 8, 3, 11}, 9-&gt; {1, 9, 2, 12}, 10-&gt; {2, 10, 5, 11}, 11-&gt; {1, 11, 6, 12}, 12-&gt; {2, 12, 7, 11}.
  * @author Sean A. Irvine
  */
 public class A133210 extends MorphismFixedPointSequence {

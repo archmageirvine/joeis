@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000682;
 
 /**
- * A396991 allocated for Roger Ford.
+ * A396991 allocated for Paolo P. Lava.
  * @author Sean A. Irvine
  */
 public class A396991 extends Sequence1 {

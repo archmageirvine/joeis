@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A397810 allocated for Russ Curry.
+ * A397810 Numbers that are both the sum of two positive cubes and the difference of two nonzero fourth powers.
  * @author Sean A. Irvine
  */
 public class A397810 extends Sequence1 {

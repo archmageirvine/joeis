@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A398216 allocated for Paolo Xausa.
+ * A398216 Decimal expansion of the small face angle, in radians, of a canonical (dual-uniform) octagonal trapezohedron.
  * @author Sean A. Irvine
  */
 public class A398216 extends DecimalExpansionSequence {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068114 Integers of the form phi(n!)/phi(n)!.
+ * A068114 Integers of the form phi(k!)/phi(k)!.
  * @author Sean A. Irvine
  */
 public class A068114 extends Sequence1 {

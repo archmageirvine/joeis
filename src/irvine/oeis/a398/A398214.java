@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A398214 allocated for Paolo Xausa.
+ * A398214 Decimal expansion of the height of a canonical (dual-uniform) octagonal trapezohedron with unit short edge length.
  * @author Sean A. Irvine
  */
 public class A398214 extends PolynomialRootExpansionSequence {

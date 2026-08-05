@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063078 Numbers n such that phi(n)*mu(n) &gt; phi(m)*mu(m) for all m &lt; n.
+ * A063078 Numbers k such that phi(k)*mu(k) &gt; phi(m)*mu(m) for all m &lt; k.
  * @author Sean A. Irvine
  */
 public class A063078 extends Sequence1 {

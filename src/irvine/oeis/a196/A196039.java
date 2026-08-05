@@ -6,7 +6,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a046.A046746;
 
 /**
- * A196039 Total sum of the smallest part of every partition of every shell of n.
+ * A196039 Total sum of the smallest part of every partition of every section of the modular table of partitions of n.
  *
  * @author Georg Fischer
  */

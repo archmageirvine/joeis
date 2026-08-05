@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A072394 Numbers n such that sigma(n)=reversal(n)-n.
+ * A072394 Numbers k such that sigma(k)=reversal(k)-k.
  * @author Sean A. Irvine
  */
 public class A072394 extends Sequence1 {

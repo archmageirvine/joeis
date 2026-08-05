@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398354 allocated for Fr\u00e9d\u00e9ric D. W. Heidenthal-K\u00f6nig.
+ * A398354 Triangle read by rows: T(n,k) is the number of distinct entries q of the n X n multiplication table whose remainder upon division by n is k, for 0 &lt;= k &lt; n.
  * @author Sean A. Irvine
  */
 public class A398354 extends Sequence0 {

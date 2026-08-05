@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396575 allocated for Andrea Cutri.
+ * A396575 Sum, over all distinct partitions q obtained as the sorted multiplicities of equal parts in a partition of n, of the number of fixed-content necklaces with content q.
  * @author Sean A. Irvine
  */
 public class A396575 extends Sequence1 {

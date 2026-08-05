@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.Roman;
 
 /**
- * A398269 allocated for Parsa Ansari.
+ * A398269 Number of ways to partition the standard Roman numeral representation of n into a sequence of one or more substrings, each of which is itself the standard Roman numeral representation of a positive integer.
  * @author Sean A. Irvine
  */
 public class A398269 extends Sequence1 {

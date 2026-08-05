@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398156 allocated for Felix Huber.
+ * A398156 a(n) is the least positive integer m such that (1 + 1/m)^m and e agree in their first n digits after the decimal point, without rounding.
  * @author Sean A. Irvine
  */
 public class A398156 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398348 allocated for Carlo Mitchener.
+ * A398348 Number of toroidal n X n X n binary arrays, allowing rotation and/or reflection of the layers along each axis as well as all permutations of the axes.
  * @author Sean A. Irvine
  */
 public class A398348 extends Sequence1 {

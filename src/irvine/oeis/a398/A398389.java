@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398389 allocated for Bernard Schott.
+ * A398389 Even positive numbers m such that m - 2^k is composite for all k &gt; 0 with 2^k &lt; m.
  * @author Sean A. Irvine
  */
 public class A398389 extends Sequence1 {

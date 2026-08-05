@@ -4,7 +4,7 @@ package irvine.oeis.a397;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A397691 Number of orbits of nonzero binary algebraic forms of degree n with coefficients in the field with two elements, under the action of SL(2, 2).
+ * A397691 Number of orbits of nonzero binary algebraic forms of degree n with coefficients in the field with two elements, under the action of SL(2,2).
  * @author Georg Fischer
  */
 public class A397691 extends HolonomicRecurrence {

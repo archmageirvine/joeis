@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A194450 Vertex number of a rectangular spiral which contains exactly between its edges the successive shells of the partitions of the positive integers.
+ * A194450 Vertex number of a rectangular spiral which contains exactly between its edges the successive sections of the modular table of partitions of the positive integers.
  * @author Sean A. Irvine
  */
 public class A194450 extends PartialSumSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012791 arctanh(sec(x)*arcsin(x))=x+6/3!*x^3+148/5!*x^5+9184/7!*x^7...
+ * A012791 Expansion of e.g.f.: arctanh(sec(x)*arcsin(x)) (odd powers).
  * @author Sean A. Irvine
  */
 public class A012791 extends Sequence0 {

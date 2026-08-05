@@ -8,7 +8,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001190;
 
 /**
- * A395661 allocated for Noah A Rosenberg.
+ * A395661 Number of rooted binary unlabeled general galled trees with n leaves and exactly 1 gall.
  * @author Sean A. Irvine
  */
 public class A395661 extends Sequence0 {

@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398209 allocated for Fr\u00e9d\u00e9ric D. W. Heidenthal-K\u00f6nig.
+ * A398209 Triangle read by rows: For n &gt;= 1, T(n,k) is the number of distinct entries q of the n X n multiplication table such that floor(q/n) = k, for 0 &lt;= k &lt;= n, with T(0,0) = 0.
  * @author Sean A. Irvine
  */
 public class A398209 extends Sequence0 {

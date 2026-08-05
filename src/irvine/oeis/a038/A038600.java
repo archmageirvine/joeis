@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A038600 Primes of the form n^3 - 2.
+ * A038600 Primes of the form k^3 - 2.
  * @author Georg Fischer
  */
 public class A038600 extends PrimeSubsequence {

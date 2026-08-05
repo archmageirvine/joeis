@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A081862 (1/168)*(sigma_7(2n-1)-sigma_1(2n-1)).
+ * A081862 a(n) = (1/168)*(sigma_7(2n-1)-sigma_1(2n-1)).
  * @author Georg Fischer
  */
 public class A081862 extends LambdaSequence {

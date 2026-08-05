@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394614 Irregular triangle read by rows: T(n,k) is the number of rooted binary time-consistent leaf-labeled unlabeled galled trees with n leaves and exactly k galls, 0 &lt;= k &lt;= floor((n-1)/2).
+ * A394614 Irregular triangle read by rows: T(n,k) is the number of rooted binary time-consistent leaf-labeled galled trees with n leaves and exactly k galls, 0 &lt;= k &lt;= floor((n-1)/2).
  * @author Sean A. Irvine
  */
 public class A394614 extends Sequence0 {

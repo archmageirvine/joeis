@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A133302 12 vertex cube torus graph substitution (to produce 12 note sequences).
+ * A133302 Limiting word of the morphism 1-&gt;{2, 4, 5, 9}; 2-&gt;{1, 3, 6, 10}; 3-&gt; {2, 4, 7, 10}; 4-&gt;{1, 3, 8, 12}; 5-&gt; {1, 6, 8, 9}; 6-&gt;{2, 5, 7, 10}; 7-&gt; {3, 6, 8, 11}; 8-&gt; {4, 5, 7, 12}; 9-&gt; {1, 5, 10, 12}; 10-&gt; {2, 6, 9, 11}; 11-&gt; {3, 7, 10, 12}; 12-&gt; {4, 8, 9, 11}.
  * @author Georg Fischer
  */
 public class A133302 extends MorphismFixedPointSequence {

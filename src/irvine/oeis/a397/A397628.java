@@ -12,6 +12,6 @@ public class A397628 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A397628() {
-    super(1, new A026352(), Functions.PRIME::z);
+    super(1, new A026352().skip(), Functions.PRIME::z);
   }
 }

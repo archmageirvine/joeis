@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.RationalProductTransform;
 
 /**
- * A087750 Number of partitions of n into numbers having in binary representation at most trailing zeros.
+ * A087750 Number of partitions of n into numbers of the form 2^i - 2^j with i &gt; j.
  * @author Georg Fischer
  */
 public class A087750 extends RationalProductTransform {

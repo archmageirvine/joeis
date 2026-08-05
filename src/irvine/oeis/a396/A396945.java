@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001093;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A396945 allocated for Rafael Vidal Lykova.
+ * A396945 Number of divisors of n^3 + 1.
  * @author Sean A. Irvine
  */
 public class A396945 extends SimpleTransformSequence {

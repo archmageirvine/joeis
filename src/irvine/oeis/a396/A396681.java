@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A396681 allocated for Jose O. del Toro Barroso.
+ * A396681 Number of iterations for the n-th prime to reach 2 under the function f(p) = smallest odd prime factor of 5*p+1 or 2 if 5*p+1 is a power of 2.
  * @author Sean A. Irvine
  */
 public class A396681 extends A000040 {

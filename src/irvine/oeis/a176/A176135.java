@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A176135 Primes p of the form prime(n+1)^3-prime(n)^3-1.
+ * A176135 Primes p in the sequence prime(k+1)^3-prime(k)^3-1.
  * @author Sean A. Irvine
  */
 public class A176135 extends A000040 {

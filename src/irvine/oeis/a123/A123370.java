@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a086.A086122;
 
 /**
- * A123370 Primes of the form (2^n + 7)/3.
+ * A123370 Primes of the form (2^k + 7)/3.
  * @author Georg Fischer
  */
 public class A123370 extends A086122 {

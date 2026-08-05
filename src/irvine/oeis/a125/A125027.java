@@ -6,7 +6,7 @@ import irvine.oeis.a007.A007318;
 import irvine.oeis.triangle.Product;
 
 /**
- * A125027 Binomial transform of the &quot;1,2,3,...&quot; triangle.
+ * A125027 Binomial transform of the "1,2,3,..." triangle.
  * @author Georg Fischer
  */
 public class A125027 extends Product {

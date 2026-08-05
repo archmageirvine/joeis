@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a235.A235154;
 
 /**
- * A398258 allocated for Robert G. Wilson v.
+ * A398258 Number of terms in A235154 which have n decimal digits.
  * @author Sean A. Irvine
  */
 public class A398258 extends A235154 {

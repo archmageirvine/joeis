@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Inverse;
 
 /**
- * A162313 Triangular array P*(2*I - P^2)^-1, where P is Pascal&apos;s triangle A007318 and I is the identity matrix.
+ * A162313 Triangular array P*(2*I - P^2)^-1, where P is Pascal's triangle A007318 and I is the identity matrix.
  * @author Georg Fischer
  */
 public class A162313 extends Inverse {

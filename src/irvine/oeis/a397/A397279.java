@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.TwoParameterFormSequence;
 
 /**
- * A397279 allocated for Takayuki Kuriyama.
+ * A397279 Numbers whose binary expansion is of the form 1^i 0^j 1^i 0^j with i,j &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A397279 extends TwoParameterFormSequence {

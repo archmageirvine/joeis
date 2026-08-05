@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A087030 n &quot;reflected&quot; in the next prime: a(n)=2p-n, p is smallest prime &gt; n.
+ * A087030 n "reflected" in the next prime: a(n)=2p-n, p is smallest prime &gt; n.
  * @author Georg Fischer
  */
 public class A087030 extends LambdaSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397896 allocated for Ali Sada.
+ * A397896 For each positive integer n, let a(n) be the minimum number of nonnegative integers (suffixes) needed so that, for every positive integer m, at least one of those suffixes can be appended to the decimal representation of m to produce a multiple of n. We must prioritize the smallest suffixes when possible.
  * @author Sean A. Irvine
  */
 public class A397896 extends Sequence1 {

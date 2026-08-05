@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A133329 85 prism graph substitution ( of twelve tone type): a square connected to an octagon to give a figure with a C4 rotational axis.
+ * A133329 1-Limiting word of the morphism 1 -&gt; {2, 4, 5, 12}; 2 -&gt; {1, 3, 6, 7}; 3 -&gt; {2, 4,8, 9}; 4 -&gt; {1, 3, 10, 11}; 5 -&gt; {6, 12, 1}; 6 -&gt; {5, 7, 2}; 7 -&gt; {6, 8, 2}; 8 -&gt; {7, 9, 3}; 9 -&gt; {8, 10, 3}; 10 -&gt; {9, 11, 4}; 11 -&gt; {10, 12, 4}; 12 -&gt; {5, 11, 2}.
  * @author Georg Fischer
  */
 public class A133329 extends MorphismFixedPointSequence {

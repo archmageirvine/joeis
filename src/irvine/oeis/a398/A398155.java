@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398155 allocated for Felix Huber.
+ * A398155 a(n) is the least integer m &gt;= 3 such that m*sin(Pi/m) and m*tan(Pi/m) agree in their first n digits after the decimal point, without rounding.
  * @author Sean A. Irvine
  */
 public class A398155 extends Sequence1 {

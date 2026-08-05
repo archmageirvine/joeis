@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A133303 12 vertex analog of tesseract as connected octahedra graph substitution (to produce 12-note sequences).
+ * A133303 2-Limiting word of the morphism 1 -&gt; {2, 3, 4, 5, 7}; 2 -&gt; {1, 3, 5, 6, 10}; 3 -&gt; {1, 3, 4, 6, 11}; 4 -&gt; {1, 3, 5, 6, 8}; 5 -&gt; {1, 2, 4, 6, 9}; 6 -&gt; {2, 3, 4, 5, 12}; 7 -&gt; {9, 8,10, 11, 1}; 8 -&gt; {7, 9, 11, 12, 4}; 9 -&gt; {7, 8, 10, 12, 5}; 10 -&gt; {7, 9, 11, 12, 2}; 11 -&gt; {7, 8, 10, 12, 3}; 12 -&gt; {9, 8, 10, 11, 6}.
  * @author Georg Fischer
  */
 public class A133303 extends MorphismFixedPointSequence {

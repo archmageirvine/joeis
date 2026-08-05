@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A398212 allocated for Paolo Xausa.
+ * A398212 Decimal expansion of the inradius of a canonical (dual-uniform) octagonal trapezohedron with unit short edge length.
  * @author Sean A. Irvine
  */
 public class A398212 extends PolynomialRootExpansionSequence {

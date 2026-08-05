@@ -5,7 +5,7 @@ package irvine.oeis.a061;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A061164 a(n) = (20*n)!n!/((10*n)!(7*n)!(4*n)!).
+ * A061164 a(n) = (20*n)!*n!/((10*n)!*(7*n)!*(4*n)!).
  * @author Georg Fischer
  */
 public class A061164 extends HolonomicRecurrence {

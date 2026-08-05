@@ -4,7 +4,7 @@ package irvine.oeis.a398;
 import irvine.oeis.a082.A082182;
 
 /**
- * A398420 allocated for Robert Price.
+ * A398420 Numbers k such that (50^k + 3^k)/53 is prime.
  * @author Georg Fischer
  */
 public class A398420 extends A082182 {

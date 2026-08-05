@@ -5,7 +5,7 @@ package irvine.oeis.a274;
 import irvine.oeis.a039.A039832;
 
 /**
- * A274362 Numbers n such that n and n+1 both have 24 divisors.
+ * A274362 Numbers k such that k and k+1 both have 24 divisors.
  * @author Georg Fischer
  */
 public class A274362 extends A039832 {

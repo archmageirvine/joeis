@@ -6,7 +6,7 @@ import irvine.oeis.a046.A046704;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A075177 Indices of additive primes - primes with prime sum-of-digits, see A046704.
+ * A075177 Indices of additive primes, see A046704.
  * @author Georg Fischer
  */
 public class A075177 extends SingleTransformSequence {

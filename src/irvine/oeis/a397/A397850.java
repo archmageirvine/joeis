@@ -3,7 +3,7 @@ package irvine.oeis.a397;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A397850 allocated for Javier Alejandro Cabrera Otten.
+ * A397850 Number of tilings of a 4 X n rectangle using straight trominoes and Z-tetrominoes.
  * @author Sean A. Irvine
  */
 public class A397850 extends GfSequence {

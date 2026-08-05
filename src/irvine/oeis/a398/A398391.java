@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398391 allocated for Ctibor O. Zizka.
+ * A398391 Numbers k such that there exists a subset S of {1,...,k} of size tau(k) = A000005(k) containing 1 and k whose mean of squares is a perfect square.
  * @author Sean A. Irvine
  */
 public class A398391 extends Sequence1 {

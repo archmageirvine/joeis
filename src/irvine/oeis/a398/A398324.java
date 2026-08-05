@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000002;
 
 /**
- * A398324 allocated for Bartlomiej Pawlik.
+ * A398324 Positions k such that the prefix of length k of the Kolakoski sequence contains an even number of 1's and an even number of 2's.
  * @author Sean A. Irvine
  */
 public class A398324 extends Sequence1 {

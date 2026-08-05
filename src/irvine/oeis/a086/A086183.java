@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000796;
 
 /**
- * A086183 In decimal expansion of Pi: greatest number contained as a string in the first n positions, which is also contained in the next n positions.
+ * A086183 a(n) is the largest number appearing as a substring in both d(1)..d(n) and d(n)..d(2n-1), where d(k) is the k-th decimal digit of Pi.
  * @author Sean A. Irvine
  */
 public class A086183 extends Sequence1 {

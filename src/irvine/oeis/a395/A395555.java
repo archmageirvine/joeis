@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A395555 allocated for Alex Ratushnyak.
+ * A395555 a(n) = n for n&lt;=3, then a(n) = smallest number not already used which shares a factor with a(n-1) or a(n-2) or a(n-3).
  * @author Sean A. Irvine
  */
 public class A395555 extends Sequence1 {

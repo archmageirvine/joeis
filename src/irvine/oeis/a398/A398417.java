@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A398417 allocated for Jaan Allikvere.
+ * A398417 Minimum number of cycles whose length is a power of 2 over all connected cubic graphs on 2n vertices.
  * @author Sean A. Irvine
  */
 public class A398417 extends ParallelGenerateGraphsSequence {

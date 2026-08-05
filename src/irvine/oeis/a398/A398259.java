@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A398259 allocated for Bence Bern\u00e1th.
+ * A398259 a(1)=0; for n&gt;=2, let s = digit sum of a(n-1); if s=a(m) for some m &lt; n-1, let m be the greatest such index and set a(n)=n-1-m; otherwise set a(n) = 0.
  * @author Sean A. Irvine
  */
 public class A398259 extends CachedSequence {

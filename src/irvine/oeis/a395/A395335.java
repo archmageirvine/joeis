@@ -4,7 +4,7 @@ package irvine.oeis.a395;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A395335 Number of permutations p of 1..n such that |p(i+1) - p(i)| &lt;&gt; 2 for all 1 &lt;= i &lt; n.
+ * A395335 Number of permutations p of [n] such that |p(i+1) - p(i)| &lt;&gt; 2 for all 1 &lt;= i &lt; n.
  * @author Georg Fischer
  */
 public class A395335 extends HolonomicRecurrence {

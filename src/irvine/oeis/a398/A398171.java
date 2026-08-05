@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A398171 allocated for Eric Hogle.
+ * A398171 a(n) is the number of positive integers that are less than or equal to and relatively prime to exactly one divisor of n.
  * @author Sean A. Irvine
  */
 public class A398171 extends Sequence1 {

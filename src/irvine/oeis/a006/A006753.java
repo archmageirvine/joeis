@@ -18,20 +18,28 @@ public class A006753 extends Sequence1 {
     return 1;
   }
 
+  protected boolean is(final Z n) {
+    if (n.isProbablePrime()) {
+      return false;
+    }
+    final long d = Functions.DIGIT_SUM.l(n);
+    final FactorSequence fs = Jaguar.factor(n);
+    long s = 0;
+    for (final Z p : fs.toZArray()) {
+      s += Functions.DIGIT_SUM.l(p) * fs.getExponent(p);
+      if (s * multiplier() > d) {
+        break;
+      }
+    }
+    return multiplier() * s == d;
+  }
+
   @Override
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (!mN.isProbablePrime()) {
-        final long d = Functions.DIGIT_SUM.l(mN);
-        final FactorSequence fs = Jaguar.factor(mN);
-        long s = 0;
-        for (final Z p : fs.toZArray()) {
-          s += Functions.DIGIT_SUM.l(p) * fs.getExponent(p);
-        }
-        if (multiplier() * s == d) {
-          return mN;
-        }
+      if (is(mN)) {
+        return mN;
       }
     }
   }

@@ -5,6 +5,7 @@ import java.util.Set;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
+import irvine.util.array.DynamicIntArray;
 
 /**
  * A004129 Postage stamp problem: largest m such that there exists an n-subset S of nonnegative integers such that 1,...,m can be expressed as a sum of two distinct elements of S.
@@ -12,7 +13,7 @@ import irvine.oeis.Sequence2;
  */
 public class A004129 extends Sequence2 {
 
-  private final int[] mSeen = new int[1000000];
+  private final DynamicIntArray mSeen = new DynamicIntArray();
   private int mN = 1;
   private int mBest = 0;
 
@@ -25,17 +26,17 @@ public class A004129 extends Sequence2 {
     }
     for (int k = nextValue; k <= leastUnseen; ++k) {
       for (final int j : set) {
-        mSeen[j + k]++;
+        mSeen.increment(j + k);
       }
       set.add(k);
       int lu = leastUnseen;
-      while (mSeen[lu] > 0) {
+      while (mSeen.get(lu) > 0) {
         ++lu;
       }
       search(set, k + 1, remaining - 1, lu);
       set.remove(k);
       for (final int j : set) {
-        mSeen[j + k]--;
+        mSeen.add(j + k, -1);
       }
     }
   }
@@ -47,8 +48,8 @@ public class A004129 extends Sequence2 {
     set.add(0);
     set.add(1);
     mBest = 2;
-    mSeen[0] = 1;
-    mSeen[1] = 1;
+    mSeen.set(0, 1);
+    mSeen.set(1, 1);
     search(set, 2, mN - 2, 2);
     return Z.valueOf(mBest - 1);
   }

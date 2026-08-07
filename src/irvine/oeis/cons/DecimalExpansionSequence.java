@@ -105,44 +105,43 @@ public class DecimalExpansionSequence extends RealConstantSequence implements Se
    * @param offset OEIS offset
    * @param lambda expression for the kth summand
    */
-  public DecimalExpansionSequence(final int offset, final int kStart, final Function<Long, Q> lambda) {
+  public DecimalExpansionSequence(final int offset, final long kStart, final Function<Long, Number> lambda) {
     this(offset, new CR() {
       @Override
       protected Z approximate(final int precision) {
         Z sum = Z.ZERO;
         long k = kStart - 1;
-        while (true) {
-          final Q t = lambda.apply(++k);
-          final Z u = t.num().shiftLeft(-precision).divide(t.den());
-          if (u.isZero()) {
-            return sum;
+        final Number lambdaType = lambda.apply(kStart); // initial application to determine "type" of lambda
+        if (lambdaType instanceof CR) {
+          while (true) {
+            final Z t = ((CR) lambda.apply(++k)).getApprox(precision);
+            if (t.isZero()) {
+              return sum;
+            }
+            sum = sum.add(t);
           }
-          sum = sum.add(u);
+        } else if (lambdaType instanceof Q) {
+          while (true) {
+            final Q u = (Q) lambda.apply(++k);
+            final Z t = u.num().shiftLeft(-precision).divide(u.den());
+            if (t.isZero()) {
+              return sum;
+            }
+            sum = sum.add(t);
+          }
+        } else if (lambdaType instanceof Z) {
+          while (true) {
+            final Z t = (Z) lambda.apply(++k);
+            if (t.isZero()) {
+              return sum;
+            }
+            sum = sum.add(t);
+          }
+        } else {
+          throw new IllegalArgumentException("unexpected lambda type");
         }
       }
     });
-  }
-
-  /**
-   * Construct a new expansion of a computable real number from a sum_{k=kStart, infinity} k -&gt; lambda.
-   * @param offset OEIS offset
-   * @param lambda expression for the kth summand
-   */
-  public DecimalExpansionSequence(final int offset, final int kStart, final int base, final Function<Long, CR> lambda) {
-    this(offset, new CR() {
-      @Override
-      protected Z approximate(final int precision) {
-        Z sum = Z.ZERO;
-        long k = kStart - 1;
-        while (true) {
-          final Z t = lambda.apply(++k).getApprox(precision);
-          if (t.isZero()) {
-            return sum;
-          }
-          sum = sum.add(t);
-        }
-      }
-    }, base);
   }
 
   protected void ensureAccuracy(final int n) {

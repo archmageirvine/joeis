@@ -1,6 +1,7 @@
 package irvine.oeis.cons;
 
 import java.io.Serializable;
+import java.util.function.Function;
 
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
@@ -97,6 +98,31 @@ public class DecimalExpansionSequence extends RealConstantSequence implements Se
    */
   public DecimalExpansionSequence(final CR x) {
     this(1, x);
+  }
+
+  /**
+   * Construct a new expansion of a computable real number from a sum_{k=kStart, infinity} k -&gt; lambda.
+   * @param offset OEIS offset
+   * @param lambda expression for the kth summand
+   */
+  public DecimalExpansionSequence(final int offset, final int kStart, final Function<Long, Q> lambda) {
+    this(offset, new CR() {
+      @Override
+      protected Z approximate(final int precision) {
+        Z sum = Z.ZERO;
+        if (precision < 0) { // from A071815
+          long k = kStart - 1;
+          Q t;
+          Z u;
+          do {
+            t = lambda.apply(++k);
+            u = t.num().shiftLeft(-precision).divide(t.den());
+            sum = sum.add(u);
+          } while (!u.isZero());
+        }
+        return sum;
+      }
+    });
   }
 
   protected void ensureAccuracy(final int n) {

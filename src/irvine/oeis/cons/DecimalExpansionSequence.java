@@ -110,19 +110,39 @@ public class DecimalExpansionSequence extends RealConstantSequence implements Se
       @Override
       protected Z approximate(final int precision) {
         Z sum = Z.ZERO;
-        if (precision < 0) { // from A071815
-          long k = kStart - 1;
-          Q t;
-          Z u;
-          do {
-            t = lambda.apply(++k);
-            u = t.num().shiftLeft(-precision).divide(t.den());
-            sum = sum.add(u);
-          } while (!u.isZero());
+        long k = kStart - 1;
+        while (true) {
+          final Q t = lambda.apply(++k);
+          final Z u = t.num().shiftLeft(-precision).divide(t.den());
+          if (u.isZero()) {
+            return sum;
+          }
+          sum = sum.add(u);
         }
-        return sum;
       }
     });
+  }
+
+  /**
+   * Construct a new expansion of a computable real number from a sum_{k=kStart, infinity} k -&gt; lambda.
+   * @param offset OEIS offset
+   * @param lambda expression for the kth summand
+   */
+  public DecimalExpansionSequence(final int offset, final int kStart, final int base, final Function<Long, CR> lambda) {
+    this(offset, new CR() {
+      @Override
+      protected Z approximate(final int precision) {
+        Z sum = Z.ZERO;
+        long k = kStart - 1;
+        while (true) {
+          final Z t = lambda.apply(++k).getApprox(precision);
+          if (t.isZero()) {
+            return sum;
+          }
+          sum = sum.add(t);
+        }
+      }
+    }, base);
   }
 
   protected void ensureAccuracy(final int n) {

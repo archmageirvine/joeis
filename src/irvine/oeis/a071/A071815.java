@@ -17,17 +17,16 @@ public class A071815 extends DecimalExpansionSequence {
       @Override
       protected Z approximate(final int precision) {
         Z sum = Z.ZERO;
-        if (precision < 0) {
-          int k = 0;
-          Z f = Z.ONE;
-          Z u;
-          do {
-            f = f.multiply(++k);
-            u = Functions.SIGMA0.z(f).shiftLeft(-precision).divide(f);
-            sum = sum.add(u);
-          } while (!u.isZero());
+        int k = 0;
+        Z f = Z.ONE;
+        while (true) {
+          f = f.multiply(++k);
+          final Z u = Functions.SIGMA0.z(f).shiftLeft(-precision).divide(f);
+          if (u.isZero()) {
+            return sum;
+          }
+          sum = sum.add(u);
         }
-        return sum;
       }
     });
   }

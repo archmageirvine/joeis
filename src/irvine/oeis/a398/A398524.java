@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A398524 a(n) = Sum_{k=1..n} mu(floor(n/k))^2, where mu = A008683 is the M√∂bius function.
+ * A398524 a(n) = Sum_{k=1..n} mu(floor(n/k))^2, where mu = A008683 is the M\u00f6bius function.
  * @author Georg Fischer
  */
 public class A398524 extends LambdaSequence {

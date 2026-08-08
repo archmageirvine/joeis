@@ -2763,3 +2763,13 @@ A086141 Permutation of A025487 (least prime signatures) which, when values are f
 A086153 Special prime numbers arranged in a triangle: n-th row contains m primes p (where m = pi(2n + A020483(n)) - pi(A020483(n))) with following properties.
 A086157 Sum of the orders of the elements in the group GL(n,2).
 A086183 In decimal expansion of Pi: greatest number contained as a string in the first n positions, which is also contained in the next n positions.
+A086232 Decimal expansion of probability that a random walk on a 4-d lattice returns to the origin.
+A086233 Decimal expansion of probability that a random walk on a 5-d lattice returns to the origin.
+A086234 Decimal expansion of probability that a random walk on a 6-d lattice returns to the origin.
+A086235 Decimal expansion of probability that a random walk on a 7-d lattice returns to the origin.
+A086236 Decimal expansion of probability that a random walk on a 8-d lattice returns to the origin.
+A086237 Decimal expansion of Porter's constant.
+A086238 Decimal expansion of Omega prime-generating constant.
+A086239 Decimal expansion of Sum_{k>=2} c(k)/prime(k), where c(k) = -1 if p == 1 (mod 4) and c(k) = +1 if p == 3 (mod 4).
+A086240 Decimal expansion of Sum_{k>=2} (p mod 4 - 2)/p^2 where p=prime(k).
+A086241 Decimal expansion of value to which Sum_{k>=2} d(k)/prime(k) appears to converge, where d(k)=-1 if p mod 3 = 1, d(k)=+1 if p mod 3 = 2 and d(k)=0 if p mod 3 = 0.

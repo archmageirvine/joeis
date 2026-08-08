@@ -4,7 +4,7 @@ package irvine.oeis.a398;
 import irvine.oeis.transform.EtaProductSequence;
 
 /**
- * A398620 Expansion of eta(q^2) * eta(q^3) * eta(q^6) / (eta(q)^2 * eta(q^9)) in powers of q.
+ * A398620 allocated for James Sellers.
  * Eta product <code>0..41</code>
  * @author Georg Fischer
  */

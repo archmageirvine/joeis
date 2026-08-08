@@ -4,7 +4,7 @@ package irvine.oeis.a397;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A397936 a(n) = floor(3*7^n/4).
+ * A397936 allocated for Reed L. Rucka.
  * @author Georg Fischer
  */
 public class A397936 extends HolonomicRecurrence {

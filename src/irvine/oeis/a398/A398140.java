@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398140 allocated for Ken Clements.
+ * A398140 Numbers m such that the distinct prime factors of the product m*(m+1)*(m+2)*(m+3) are all consecutive primes beginning with 2 (that is, the product is a term of A055932).
  * @author Sean A. Irvine
  */
 public class A398140 extends Sequence1 {

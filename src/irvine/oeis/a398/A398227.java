@@ -6,7 +6,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.TwoParameterFormSequence;
 
 /**
- * A398227 allocated for Vincenzo Manto.
+ * A398227 Nonnegative numbers that are not the sum of two Lucas numbers.
  * @author Sean A. Irvine
  */
 public class A398227 extends ComplementSequence {

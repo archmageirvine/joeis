@@ -5,7 +5,7 @@ import irvine.oeis.a006.A006752;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A086214 Primes of the form 3^p-2 where p is prime.
+ * A398682 Decimal expansion of the absolute value of Integral_{t=0..Pi/4} log(sin(t)) dt.
  * @author Sean A. Irvine
  */
 public class A398682 extends DecimalExpansionSequence {

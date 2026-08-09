@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a009.A009996;
 
 /**
- * A398453 allocated for Bernard Schott.
+ * A398453 Integers m such that digits in m and m^2 are in nonincreasing order.
  * @author Sean A. Irvine
  */
 public class A398453 extends FilterSequence {

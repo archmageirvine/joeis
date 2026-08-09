@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A082957 Numbers n such that sigma(2n) &lt; sigma(2n+1).
+ * A082957 Numbers k such that sigma(2*k) &lt; sigma(2*k+1).
  * @author Georg Fischer
  */
 public class A082957 extends FilterNumberSequence {

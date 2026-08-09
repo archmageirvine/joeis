@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398555 allocated for S. I. Dimitrov.
+ * A398555 Numbers k such that sigma(k) = psi(k) + Omega(k)^9.
  * @author Sean A. Irvine
  */
 public class A398555 extends Sequence1 {

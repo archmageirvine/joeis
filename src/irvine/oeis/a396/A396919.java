@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396919 allocated for Charles Kusniec.
+ * A396919 Numbers of the form 4*p or 2*p^2, where p is an odd prime.
  * @author Sean A. Irvine
  */
 public class A396919 extends Sequence1 {

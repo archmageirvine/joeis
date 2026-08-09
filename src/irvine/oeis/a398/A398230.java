@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398230 allocated for Felix Huber.
+ * A398230 a(n) is the total collision excess among unordered pairwise sums with repetition of the distinct trinomial coefficient values of order n.
  * @author Sean A. Irvine
  */
 public class A398230 extends Sequence0 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a397.A397600;
 
 /**
- * A398470 allocated for Hiller Alves Fernandes.
+ * A398470 Number of increasing 3-term arithmetic progressions in an n^3 cube.
  * @author Sean A. Irvine
  */
 public class A398470 extends A397600 {

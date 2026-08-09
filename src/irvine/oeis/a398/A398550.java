@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398550 allocated for Keisuke Hidaka.
+ * A398550 Largest value occurring in any n-tuple (x_1, ..., x_n) of distinct positive integers with 1/x_1 + 2/x_2 + ... + n/x_n = n.
  * @author Sean A. Irvine
  */
 public class A398550 extends Sequence1 {

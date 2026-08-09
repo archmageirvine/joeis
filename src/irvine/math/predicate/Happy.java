@@ -9,19 +9,19 @@ import irvine.math.z.Z;
  * Test if a number is happy (see A007770).
  * @author Sean A. Irvine
  */
-public class Happy extends AbstractPredicate {
+public class Happy extends AbstractPredicate2 {
 
   private static final int CACHE_BITS = 20;
   private final long[] mCache = new long[1 << CACHE_BITS]; // Remembers the result for small values
 
-  private long squareDigitSum(final Z n) {
+  private long squareDigitSum(final long base, final Z n) {
     if (n.bitLength() < CACHE_BITS) {
       final long r = mCache[n.intValue()];
       if (r != 0) {
         return r;
       }
     }
-    final long s = Functions.DIGIT_SUM_SQUARES.l(n);
+    final long s = Functions.DIGIT_SUM_SQUARES.l(base, n);
     if (n.bitLength() < CACHE_BITS) {
       mCache[n.intValue()] = s;
     }
@@ -29,7 +29,7 @@ public class Happy extends AbstractPredicate {
   }
 
   @Override
-  public boolean is(Z n) {
+  public boolean is(final long base, Z n) {
     final HashSet<Z> seen = new HashSet<>();
     while (true) {
       if (Z.ONE.equals(n)) {
@@ -38,7 +38,12 @@ public class Happy extends AbstractPredicate {
       if (!seen.add(n)) {
         return false; // cycles
       }
-      n = Z.valueOf(squareDigitSum(n));
+      n = Z.valueOf(squareDigitSum(base, n));
     }
+  }
+
+  @Override
+  public long getDefault() {
+    return 10;
   }
 }

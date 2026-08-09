@@ -5,7 +5,7 @@ import irvine.oeis.a007.A007318;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A397713 allocated for Benjamin N. Noworolski.
+ * A397713 Triangle read by rows: T(n,k) is the number of binary digits in binomial(n,k).
  * @author Sean A. Irvine
  */
 public class A397713 extends SimpleTransformSequence {

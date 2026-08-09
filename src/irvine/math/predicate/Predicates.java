@@ -58,8 +58,6 @@ public final class Predicates {
   public static final Predicate PERRIN = new Perrin(); // =A013998
   /** Test if a number is a harmonic number as defined by Ore. */
   public static final Predicate ORE_HARMONIC = new OreHarmonic(); // =A001599
-  /** Test if a number is happy. */
-  public static final Predicate HAPPY = new Happy(); // =A007770
   /** Test if a number is a Cyclops number. */
   public static final Predicate CYCLOPS = new Cyclops(); // =A134808
   /** Test if a number is a Niven (or Harshad) number. */
@@ -107,6 +105,8 @@ public final class Predicates {
   /** Test if a number is a sum of four squares. */
   public static final Predicate SUM_OF_4_SQUARES = new SumOfFourSquares(); // =A004215
 
+  /** Test if a number is happy. */
+  public static final Predicate2 HAPPY = new Happy(); // =A007770
   /** Test if a number is an emirp (both the number and its reversal is a different prime). */
   public static final Predicate2 EMIRP = new Emirp(); // =A006567
   /** Test if a number is brilliant: semiprime, and both primes with the same decimal length. */

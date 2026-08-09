@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000404;
 
 /**
- * A086214 Primes of the form 3^p-2 where p is prime.
+ * A397450 a(n) is the number of positive integers &lt;= n that are the sum of 2 nonzero squares.
  * @author Sean A. Irvine
  */
 public class A397450 extends A000404 {

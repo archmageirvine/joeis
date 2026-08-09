@@ -6,7 +6,7 @@ import irvine.oeis.a173.A173624;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A398625 allocated for Amiram Eldar.
+ * A398625 Decimal expansion of Sum_{k&gt;=1} 2^(2*k)/(k^3 * binomial(2*k,k)).
  * Formula:
  * @author Georg Fischer
  */

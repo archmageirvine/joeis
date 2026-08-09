@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398491 allocated for Fr\u00e9d\u00e9ric D. W. Heidenthal-K\u00f6nig.
+ * A398491 Number of distinct entries q of the n X n multiplication table such that floor(q/n) &gt; floor(q/(n+1)).
  * @author Sean A. Irvine
  */
 public class A398491 extends Sequence0 {

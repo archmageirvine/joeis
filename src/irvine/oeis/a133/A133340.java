@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A133340 A twelve vertex {3,6,3} prism (hexagon connected to two triangles) graph substitution.
+ * A133340 1-Limiting word of the morphism 1 -&gt; {2, 3, 4, 5}; 2 -&gt; {1, 3, 6, 7}; 3 -&gt; {1, 2, 8, 9}; 4 -&gt; {1, 5, 9, 12}; 5 -&gt; {1, 4, 6, 10}; 6 -&gt; {2, 5, 7, 10}; 7 -&gt; {2, 6, 8, 11}; 8 -&gt; {3, 7, 9, 11}; 9 -&gt; {3, 4, 8, 12}; 10 -&gt; {5, 6, 11, 12}; 11 -&gt; {7, 8, 10, 12}; 12 -&gt; {4, 9, 10, 11}.
  * @author Georg Fischer
  */
 public class A133340 extends MorphismFixedPointSequence {

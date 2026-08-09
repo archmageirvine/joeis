@@ -6,7 +6,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A070226 Numbers n such that the squarefree kernel of n is equal to the number of divisors of n.
+ * A070226 Numbers k such that the squarefree kernel of k is equal to the number of divisors of k.
  * @author Georg Fischer
  */
 public class A070226 extends FilterNumberSequence {

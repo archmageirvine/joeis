@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002808;
 
 /**
- * A398450 allocated for Lark Song.
+ * A398450 Composite numbers k such that phi(k) divides sigma(k) - tau(k).
  * @author Sean A. Irvine
  */
 public class A398450 extends FilterSequence {

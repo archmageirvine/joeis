@@ -6,7 +6,7 @@ import irvine.oeis.a127.A127648;
 import irvine.oeis.triangle.Product;
 
 /**
- * A132813 Triangle read by rows: A001263 * A127648 as infinite lower triangular matrices.
+ * A132813 Triangle read by rows: T(n,k) = binomial(n, k)*binomial(n+1, k).
  * @author Georg Fischer
  */
 public class A132813 extends Product {

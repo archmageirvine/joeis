@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A133339 A twelve vertex {9,3} prism (9-gon (nonagon) connected to a triangle) graph substitution: fourth in the sequence: {6,6}-&gt;{7,5}-&gt;{8,3}-&gt;{9,3}.
+ * A133339 1-Limiting word of the morphism 1 -&gt; {2, 3, 4, 5, 12}; 2 -&gt; {1, 3, 6, 7, 8}; 3 -&gt; {1, 2, 9, 10, 11}; 4 -&gt; {1, 5, 12}; 5 -&gt; {1, 4, 6}; 6 -&gt; {2, 5, 7}; 7 -&gt; {2, 6, 8}; 8 -&gt; {2, 7, 9}; 9 -&gt; {3, 8, 10}; 10 -&gt; {3, 9, 11}; 11 -&gt; {3, 10, 12}; 12 -&gt; {1, 4, 11}.
  * @author Georg Fischer
  */
 public class A133339 extends MorphismFixedPointSequence {

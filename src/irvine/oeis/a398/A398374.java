@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398374 allocated for Alexander Krivilev.
+ * A398374 Number of permutations that give the maximum number of comparisons for sorting n elements by binary insertions.
  * @author Sean A. Irvine
  */
 public class A398374 extends Sequence0 {

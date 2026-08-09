@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A086211 Triangle related to Bell numbers; T(n,k) read by rows, n&gt;=0, 0&lt;=k&lt;=n: T(n,k) = k*T(n-1,k) + Sum(0&lt;=j, T(n-1,k-1+j)); T(0,0)=1, T(0,k)=0 if k&gt;0.
+ * A086211 Triangle related to Bell numbers; T(n,k) read by rows, n&gt;=1, 1&lt;=k&lt;=n: T(n,k) = T(n-1,k-1) + (k-1)*T(n-1,k) + Sum_{j=k..n-2} T(n-1,j)) with T(1,1)=1, T(1,k)=0 if k&gt;1.
  * @author Sean A. Irvine
  */
 public class A086211 extends Sequence0 {

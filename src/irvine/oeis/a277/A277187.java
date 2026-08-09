@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a001.A001158;
 
 /**
- * A277187 Numbers n such that A001158(n) == 1 (mod n).
+ * A277187 Numbers k such that A001158(k) == 1 (mod k).
  * @author Georg Fischer
  */
 public class A277187 extends FilterPositionSequence {

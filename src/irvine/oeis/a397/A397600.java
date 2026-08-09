@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397600 allocated for Hiller Alves Fernandes.
+ * A397600 Number of increasing 3-term arithmetic progressions in an n^d hypercube, array A(n,d) read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A397600 extends Sequence1 {

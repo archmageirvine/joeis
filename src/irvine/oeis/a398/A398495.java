@@ -5,7 +5,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A398495 allocated for \u017diga Pirc.
+ * A398495 Numbers k such that 2*PrimePi(k) = Sum_{d|k} PrimePi(d), where PrimePi = A000720.
  * @author Sean A. Irvine
  */
 public class A398495 extends FilterNumberSequence {

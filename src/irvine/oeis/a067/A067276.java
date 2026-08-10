@@ -1,33 +1,66 @@
 package irvine.oeis.a067;
 
-import irvine.factor.prime.Fast;
 import irvine.math.group.MatrixField;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
+import irvine.oeis.Sequence;
+import irvine.oeis.a000.A000040;
 
 /**
  * A067276 Determinant of n X n matrix containing the first n^2 primes in increasing order.
  * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A067276 extends Sequence1 {
+public class A067276 extends AbstractSequence {
 
-  private final Fast mPrime = new Fast();
   private int mN = 0;
+  private final Sequence mSeq;
+  private final DefaultMatrix<Q> mMat;
+
+  /** Construct the sequence. */
+  public A067276() {
+    this(1, new A000040());
+  }
+
+  /**
+   * Generic constructor with parameters
+   * @param offset first index
+   * @param seq underlying sequence
+   */
+  public A067276(final int offset, final Sequence seq) {
+    super(offset);
+    mN = offset - 1;
+    mSeq = seq;
+    mMat = new DefaultMatrix<>(0, 0, Q.ZERO);
+  }
 
   @Override
   public Z next() {
-    final MatrixField<Q> fld = new MatrixField<>(++mN, Rationals.SINGLETON);
-    final DefaultMatrix<Q> m = new DefaultMatrix<>(mN, mN, Q.ZERO);
-    long p = 1;
-    for (long y = 0; y < mN; ++y) {
-      for (long x = 0; x < mN; ++x) {
-        p = mPrime.nextPrime(p);
-        m.set(y, x, new Q(p));
+    final int no = mN++;
+    mMat.setRows(mN);
+    mMat.setCols(mN);
+    final long limit = no * no; // size of mMat 
+    long ro = 0;
+    long co = 0;
+    long count = 0;
+    for (long rn = 0; rn < mN; ++rn) {
+      for (long cn = 0; cn < mN; ++cn) {
+        if (++count <= limit) { // take elements from previous iteration
+          if (co < no) {
+            mMat.set(rn, cn, mMat.get(ro, co++));
+          } else {
+            ++ro;
+            co = 0;
+            mMat.set(rn, cn, mMat.get(ro, co++));
+          }
+        } else { // get next() elements from mSeq
+          mMat.set(rn, cn, new Q(mSeq.next()));
+        }
       }
     }
-    return fld.det(m).toZ();
+    return new MatrixField<>(mN, Rationals.SINGLETON).det(mMat).toZ();
   }
 }

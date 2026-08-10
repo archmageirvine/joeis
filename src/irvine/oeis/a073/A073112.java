@@ -2,16 +2,16 @@ package irvine.oeis.a073;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
 
 /**
  * A073112 Number of permutations p of (1,2,3,...,n) such that 1/(1+p(1)) + 1/(2+p(2)) + ... + 1/(n+p(n)) is an integer.
  * @author Sean A. Irvine
  */
-public class A073112 extends Sequence1 {
+public class A073112 extends Sequence0 {
 
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {

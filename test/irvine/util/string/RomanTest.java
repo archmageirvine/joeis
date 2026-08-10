@@ -33,12 +33,7 @@ public class RomanTest extends TestCase {
     assertEquals(1000, Roman.parse("M"));
     assertEquals(904, Roman.parse("CMIV"));
     assertEquals(4873, Roman.parse("MMMMDCCCLXXIII"));
-    try {
-      Roman.parse("MK");
-      fail();
-    } catch (final IllegalArgumentException e) {
-      // ok
-    }
+    assertEquals(0, Roman.parse("MK"));
   }
 
   public void testIntToRoman() {

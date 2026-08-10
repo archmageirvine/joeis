@@ -15,6 +15,10 @@ public class Happy extends AbstractPredicate2 {
   private final long[] mCache = new long[1 << CACHE_BITS]; // Remembers the result for small values
 
   private long squareDigitSum(final long base, final Z n) {
+    if (base != 10) {
+      // We only cache base 10
+      return Functions.DIGIT_SUM_SQUARES.l(base, n);
+    }
     if (n.bitLength() < CACHE_BITS) {
       final long r = mCache[n.intValue()];
       if (r != 0) {

@@ -1,5 +1,4 @@
 package irvine.oeis.a006;
-// manually 2025-03-29 direct
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;

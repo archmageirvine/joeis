@@ -13,6 +13,6 @@ public class A118743 extends FilterSequence {
 
   /** Construct the sequence. */
   public A118743() {
-    super(1, new LambdaSequence(1, n -> Functions.MULTIFACTORIAL.z(2, n).add(n + 1)), PRIME);
+    super(0, new LambdaSequence(0, n -> Functions.MULTIFACTORIAL.z(2, n).add(n + 1)), PRIME);
   }
 }

@@ -35,14 +35,14 @@ public class A397621 extends Sequence0 {
           d ^= c[i] & b[k - i];
         }
         if (d == 1) {
-          final int[] T = c.clone();
+          final int[] t = c.clone();
           final int s = k - m;
           for (int i = 0; i + s <= l; ++i) {
             c[i + s] ^= bigB[i];
           }
           if (2 * bigL <= k) {
             bigL = k + 1 - bigL;
-            System.arraycopy(T, 0, bigB, 0, l + 1);
+            System.arraycopy(t, 0, bigB, 0, l + 1);
             m = k;
           }
         }

@@ -76,7 +76,7 @@ public class PowerSeries extends ArrayList<Z> {
     final int len1 = this.size();
     final int len2 = s2.size();
     final int len = Math.min(len1, len2);
-    final ArrayList<Z> result = new ArrayList<Z>(32);
+    final ArrayList<Z> result = new ArrayList<>(32);
     for (int ic = 0; ic < len; ++ic) {
       Z sum = Z.ZERO;
       for (int jc = 0; jc <= ic; ++jc) {

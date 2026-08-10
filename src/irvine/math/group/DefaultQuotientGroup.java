@@ -83,7 +83,7 @@ public class DefaultQuotientGroup<T> extends AbstractGroup<Set<T>> implements Qu
 
   @Override
   public Iterator<Set<T>> iterator() {
-    return new AbstractIterator<Set<T>>() {
+    return new AbstractIterator<>() {
 
       private Z mK = Z.ZERO;
       private final HashSet<Set<T>> mSeen = new HashSet<>();

@@ -13,7 +13,7 @@ public class A074586 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;
-  protected final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<Z>() {
+  protected final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int m) {
       return m == 1 ? Z.ONE : Integers.SINGLETON.sum(1, n - 1, k -> get(k, m - 1).multiply(n / k));

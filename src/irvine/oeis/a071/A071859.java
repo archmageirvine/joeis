@@ -28,6 +28,6 @@ public class A071859 extends Sequence1 {
         mat.set(r, c, Q.valueOf(mA.a(r + c + 2)));
       }
     }
-    return new MatrixField<Q>(mN, Rationals.SINGLETON).det(mat).toZ();
+    return new MatrixField<>(mN, Rationals.SINGLETON).det(mat).toZ();
   }
 }

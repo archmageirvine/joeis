@@ -14,7 +14,7 @@ import irvine.oeis.DirectSequence;
 public class A396136 extends CachedSequence {
 
   private static final DirectSequence A = new A396110();
-  private static final MemoryFunctionInt2<Z> L = new MemoryFunctionInt2<Z>() {
+  private static final MemoryFunctionInt2<Z> L = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int m, final int n) {
       return Z.ONE.shiftLeft(n * (n + m - 1L)).subtract(Integers.SINGLETON.sum(0, n - 1, k -> Binomial.binomial(n, k).multiply(get(m, k)).shiftLeft((n - k) * (n - 1))));

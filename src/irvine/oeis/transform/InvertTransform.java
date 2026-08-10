@@ -48,8 +48,8 @@ public class InvertTransform extends AbstractSequence {
     mN = offset - 1;
     mSeq = seq;
     mKStart = kStart;
-    mTar = new ArrayList<Z>();
-    mSrc = new ArrayList<Z>();
+    mTar = new ArrayList<>();
+    mSrc = new ArrayList<>();
     int srcOffset = mSeq.getOffset();
     while (--srcOffset >= 0) {
       mSrc.add(Z.ZERO);

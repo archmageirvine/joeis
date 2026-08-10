@@ -12,7 +12,7 @@ import irvine.oeis.Sequence1;
 public class A067608 extends Sequence1 {
 
   private int mN = 0;
-  private final MemoryFunction1<Z> mRid = new MemoryFunction1<Z>() {
+  private final MemoryFunction1<Z> mRid = new MemoryFunction1<>() {
     @Override
     protected Z compute(final int n) {
       return n == 0 ? Z.ONE : Binomial.binomial(get(n - 1).add(2), 3).add(1);

@@ -38,7 +38,7 @@ public class A229817 extends AbstractSequence implements DirectSequence {
         end:
     seq(a(n), n=0..100);
   */
-  private final MemoryFunction1<Z> mF = new MemoryFunction1<Z>() {
+  private final MemoryFunction1<Z> mF = new MemoryFunction1<>() {
     @Override
     protected Z compute(final int n) {
       final int m = (n % mR + 1) / 2;

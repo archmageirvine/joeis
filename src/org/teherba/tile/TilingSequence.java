@@ -142,7 +142,7 @@ public class TilingSequence extends AbstractSequence implements Serializable {
     if (mStoreEdges) {
       mEdgeList = new EdgeList();
     }
-    mQueue      = new LinkedList<Integer>();
+    mQueue      = new LinkedList<>();
     int ifocus  = addVertex(new Vertex(mTypeArray.get(baseIndex)));
     mQueue.add(ifocus);
     if (mode > 0) {

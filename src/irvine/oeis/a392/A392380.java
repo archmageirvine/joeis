@@ -15,7 +15,7 @@ public class A392380 extends Sequence1 {
   // After Felix Huber
 
   private int mN = 0;
-  private final MemoryFunction1<Z> mB = new MemoryFunction1<Z>() {
+  private final MemoryFunction1<Z> mB = new MemoryFunction1<>() {
     @Override
     protected Z compute(final int n) {
       if (n <= 1) {

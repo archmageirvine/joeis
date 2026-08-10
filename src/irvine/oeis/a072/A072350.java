@@ -16,7 +16,7 @@ public class A072350 extends Sequence1 {
 
   // After Paul D. Hanna
 
-  private static final PolynomialRingField<Q> RING = new PolynomialRingField<Q>(Rationals.SINGLETON);
+  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;
 
   @Override

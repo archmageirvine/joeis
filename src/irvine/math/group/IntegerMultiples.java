@@ -72,7 +72,7 @@ public class IntegerMultiples extends AbstractGroup<Z> {
 
   @Override
   public Iterator<Z> iterator() {
-    return new AbstractIterator<Z>() {
+    return new AbstractIterator<>() {
       @Override
       public boolean hasNext() {
         return true;

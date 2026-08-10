@@ -64,7 +64,7 @@ public class Singleton<T> extends AbstractGroup<T> {
 
   @Override
   public Iterator<T> iterator() {
-    return new AbstractIterator<T>() {
+    return new AbstractIterator<>() {
 
       private boolean mDone = false;
 

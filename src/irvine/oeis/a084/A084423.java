@@ -14,7 +14,7 @@ import irvine.oeis.Sequence0;
 public class A084423 extends Sequence0 {
 
   private int mN = -1;
-  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<Z>() {
+  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int k, final int j) {
       if (k == 0) {

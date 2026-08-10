@@ -15,7 +15,7 @@ public class A082164 extends Sequence1 {
 
   private int mN = -1;
   private final A082172 mS3 = new A082172();
-  private final MemoryFunction1<Z> mC = new MemoryFunction1<Z>() {
+  private final MemoryFunction1<Z> mC = new MemoryFunction1<>() {
     @Override
     protected Z compute(final int n) {
       return mS3.t(n, 1).subtract(Integers.SINGLETON.sum(1, n - 1, k -> Binomial.binomial(n - 1, k - 1).multiply(mS3.t(n - k.intValue(), k.intValue() + 1)).multiply(get(k))));

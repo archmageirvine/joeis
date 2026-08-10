@@ -22,7 +22,7 @@ public class VertexList {
    * Empty Constructor.
    */
   public VertexList() {
-    mVertices = new ArrayList<Vertex>(1024);
+    mVertices = new ArrayList<>(1024);
   } // Constructor()
 
   /**

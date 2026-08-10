@@ -32,7 +32,7 @@ public class A303260 extends AbstractSequence {
     if (++mN == 0) {
       return Z.ONE;
     }
-    final LambdaMatrix<Q> mat = new LambdaMatrix<Q>(mN, mN, Q.ZERO, mLambda, 1);
+    final LambdaMatrix<Q> mat = new LambdaMatrix<>(mN, mN, Q.ZERO, mLambda, 1);
     return new MatrixField<>(mN, Rationals.SINGLETON).det(mat).toZ();
   }
 }

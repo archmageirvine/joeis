@@ -12,7 +12,7 @@ public class A073134 extends AntidiagonalSequence {
 
   /** Construct the sequence. */
   public A073134() {
-    super(1, new MemoryFunctionInt2<Z>() {
+    super(1, new MemoryFunctionInt2<>() {
       @Override
       protected Z compute(final int n, final int m) {
         if (m == 1) {

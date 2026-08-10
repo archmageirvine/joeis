@@ -23,7 +23,7 @@ public class A080888 extends AbstractSequence implements DirectSequence {
     mN = -1;
   }
 
-  private final MemoryFunction1<Z> mF = new MemoryFunction1<Z>() {
+  private final MemoryFunction1<Z> mF = new MemoryFunction1<>() {
     @Override
     protected Z compute(final int n) {
       if (n == 0) {

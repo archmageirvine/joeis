@@ -22,7 +22,7 @@ public class EdgeList {
    * Empty Constructor.
    */
   public EdgeList() {
-    mEdges = new ArrayList<Edge>(1024);
+    mEdges = new ArrayList<>(1024);
   } // Constructor()
 
   /**

@@ -14,7 +14,7 @@ public class A071202 extends Sequence1 {
   private int mM = 0;
 
   private Z a(final int n, final int k) {
-    final MemoryFunctionInt2<Z> b = new MemoryFunctionInt2<Z>() {
+    final MemoryFunctionInt2<Z> b = new MemoryFunctionInt2<>() {
       @Override
       protected Z compute(final int x, final int y) {
         if (x < 0 || y < 0) {

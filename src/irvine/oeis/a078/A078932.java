@@ -25,7 +25,7 @@ public class A078932 extends AbstractSequence implements DirectSequence {
      end:
      seq(a(n), n=0..50);
   */
-  private final MemoryFunction1<Z> mF = new MemoryFunction1<Z>() {
+  private final MemoryFunction1<Z> mF = new MemoryFunction1<>() {
     @Override
     protected Z compute(final int n) {
       if (n == 0) {

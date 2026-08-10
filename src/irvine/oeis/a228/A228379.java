@@ -30,7 +30,7 @@ public class A228379 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    final LambdaMatrix<Q> mat = new LambdaMatrix<Q>(mN, mN, Q.ZERO, mLambda, 0);
+    final LambdaMatrix<Q> mat = new LambdaMatrix<>(mN, mN, Q.ZERO, mLambda, 0);
     return new MatrixField<>(mN, Rationals.SINGLETON).det(mat).toZ();
   }
 }

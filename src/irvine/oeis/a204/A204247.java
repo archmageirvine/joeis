@@ -11,7 +11,6 @@ import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
-
 /**
  * A204247 Determinant of the n-th principal submatrix of A204246.
  * @author Georg Fischer
@@ -30,7 +29,7 @@ public class A204247 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    final LambdaMatrix<Q> mat = new LambdaMatrix<Q>(mN, mN, Q.ZERO, mLambda, 1);
+    final LambdaMatrix<Q> mat = new LambdaMatrix<>(mN, mN, Q.ZERO, mLambda, 1);
     return new MatrixField<>(mN, Rationals.SINGLETON).det(mat).toZ();
   }
 }

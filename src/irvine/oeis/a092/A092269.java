@@ -19,7 +19,7 @@ public class A092269 extends Sequence1 {
     a:= n-> b(n, n):
     seq(a(n), n=1..60);  # Alois P. Heinz, Jan 16 2013
   */
-  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<Z>() {
+  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int i) {
       if (n == 0 || i == 1) {

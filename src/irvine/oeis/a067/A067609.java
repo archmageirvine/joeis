@@ -17,7 +17,7 @@ public class A067609 extends Sequence1 {
     return Binomial.binomial(n.add(k - 1), k).add(Binomial.binomial(n, k));
   }
 
-  private final MemoryFunction1<Z> mRid = new MemoryFunction1<Z>() {
+  private final MemoryFunction1<Z> mRid = new MemoryFunction1<>() {
     @Override
     protected Z compute(final int n) {
       return n == 0 ? Z.ONE : f(get(n - 1), 3).add(1);

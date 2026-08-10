@@ -25,6 +25,6 @@ public class A085340 extends Sequence1 {
       }
       m.set(k, k, z);
     }
-    return new MatrixField<Z>(mN, IntegerField.SINGLETON).det(m);
+    return new MatrixField<>(mN, IntegerField.SINGLETON).det(m);
   }
 }

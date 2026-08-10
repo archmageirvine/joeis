@@ -27,6 +27,6 @@ public class A075691 extends Sequence0 {
         m.set(k, j, Q.valueOf((k + 1) % (j + 1) - (j + 1) % (k + 1)));
       }
     }
-    return new MatrixField<Q>(mN, Rationals.SINGLETON).det(m).toZ();
+    return new MatrixField<>(mN, Rationals.SINGLETON).det(m).toZ();
   }
 }

@@ -41,8 +41,8 @@ public class A158039 extends AbstractSequence {
     mGamma = gamma;
     mSign = sign;
     mA = new LambdaMatrix<>(mGamma, mGamma, Q.ZERO, (i, j) -> new Q((i == 0) ? 1 : (j % (i + 1) + 1)), 0);
-    mProd = new IdentityMatrix<Q>(mGamma, Q.ZERO, Q.ONE);
-    mSum = new DefaultMatrix<Q>(mGamma, mGamma, Q.ZERO);
+    mProd = new IdentityMatrix<>(mGamma, Q.ZERO, Q.ONE);
+    mSum = new DefaultMatrix<>(mGamma, mGamma, Q.ZERO);
     mF = new MatrixField<>(mGamma, Rationals.SINGLETON);
   }
 

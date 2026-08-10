@@ -39,7 +39,7 @@ public class A258172 extends AbstractSequence implements DirectSequence {
     a:= n-> b(2*n, 0, false):
     seq(a(n), n=0..20);
   */
-  private final MemoryFunctionInt3<Z> mF = new MemoryFunctionInt3<Z>() {
+  private final MemoryFunctionInt3<Z> mF = new MemoryFunctionInt3<>() {
     @Override
     protected Z compute(final int x, final int y, final int t) {
       if (y > x || y < 0) {

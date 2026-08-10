@@ -91,7 +91,7 @@ public class PairTransformSequence extends AbstractSequence {
    * @return [u(n), v(n)]
    */
   public Pair<Z, Z> nextPair() {
-    return new Pair<Z, Z>(mSeqU.next(), mSeqV.next());
+    return new Pair<>(mSeqU.next(), mSeqV.next());
   }
 
   @Override

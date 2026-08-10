@@ -26,7 +26,7 @@ public final class Zeta {
   // Jonathan M. Borwein, David M. Bradley, Richard E. Crandall,
   // J Comp. Applied Math. 121, (2000), 247-296.
 
-  private static final MemoryFunction<Long, CR> EXP_PI_CACHE = new MemoryFunction<Long, CR>() {
+  private static final MemoryFunction<Long, CR> EXP_PI_CACHE = new MemoryFunction<>() {
     @Override
     protected CR compute(final Long key) {
       return EXP_PI.pow(key);

@@ -24,7 +24,7 @@ public class A070051 extends Sequence1 {
     this(3);
   }
 
-  private final MemoryFunctionInt3<Z> mT = new MemoryFunctionInt3<Z>() {
+  private final MemoryFunctionInt3<Z> mT = new MemoryFunctionInt3<>() {
     @Override
     protected Z compute(final int p, final int n, final int k) {
       if (p == 1) {

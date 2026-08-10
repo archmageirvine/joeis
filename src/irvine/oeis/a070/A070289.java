@@ -19,7 +19,7 @@ public class A070289 extends Sequence0 {
 
   private int mN = -1;
 
-  private final MemoryFunctionInt2<Set<Z>> mB = new MemoryFunctionInt2<Set<Z>>() {
+  private final MemoryFunctionInt2<Set<Z>> mB = new MemoryFunctionInt2<>() {
     @Override
     protected Set<Z> compute(final int n, final int m) {
       if (n == 0) {

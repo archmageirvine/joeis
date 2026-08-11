@@ -11,6 +11,6 @@ public class A378727 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
   public A378727() {
-    super(1, "[0,-16,40,-33,10,-1]", "0,1,10,67", 0, 0);
+    super(0, "[0,-16,40,-33,10,-1]", "0,0,1,10", 0, 0);
   }
 }

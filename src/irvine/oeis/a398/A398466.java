@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a250.A250070;
 
 /**
- * A086210.
+ * A398466 allocated for Omar E. Pol.
  * @author Sean A. Irvine
  */
 public class A398466 extends FilterSequence {

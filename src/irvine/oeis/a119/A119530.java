@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000069;
 import irvine.oeis.a067.A067276;
 
 /**
- * A119530 Determinant of n X n matrix of first n^2 odious numbers: odd number of 1&apos;s in binary expansion (A000069).
+ * A119530 Determinant of n X n matrix of first n^2 odious numbers: odd number of 1's in binary expansion (A000069).
  * @author Georg Fischer
  */
 public class A119530 extends A067276 {

@@ -4,7 +4,7 @@ package irvine.oeis.a398;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A398709 a(n) = floor(((5 + sqrt(17))/2)^n).
+ * A398709 allocated for Michel Marcus.
  * @author Georg Fischer
  */
 public class A398709 extends HolonomicRecurrence {

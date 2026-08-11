@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A199918 Expansion of false theta series variation of Euler&apos;s pentagonal number series in powers of x.
+ * A199918 Expansion of false theta series variation of Euler's pentagonal number series in powers of x.
  * @author Georg Fischer
  */
 public class A199918 extends LambdaSequence {

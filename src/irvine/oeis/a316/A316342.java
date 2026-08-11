@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a003.A003849;
 
 /**
- * A316342 Fibonacci word A003849 with first two terms replaced by 2&apos;s.
+ * A316342 Fibonacci word A003849 with first two terms replaced by 2's.
  * @author Georg Fischer
  */
 public class A316342 extends PrependSequence {

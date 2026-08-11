@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A086210.
+ * A086248 Numbers equal to a permutation (or rearrangement) of the digits of the sum of their proper divisors (excluding the proper divisor 1). Rearrangements which cause leading zeros are excluded.
  * @author Sean A. Irvine
  */
 public class A086248 extends FilterNumberSequence {

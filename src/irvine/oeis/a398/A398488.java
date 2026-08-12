@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a046.A046315;
 
 /**
- * A398488 allocated for Michael Shmoish.
+ * A398488 Number of primes between the n-th odd semiprime and the following odd semiprime.
  * @author Sean A. Irvine
  */
 public class A398488 extends A046315 {

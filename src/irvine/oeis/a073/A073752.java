@@ -6,7 +6,7 @@ import irvine.oeis.a052.A052126;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A073752 Greatest common divisor of n/spf(n) and n/gpf(n) where spf(n) is the smallest and gpf(n) is the greatest prime factor of n (see A020639, A006530).
+ * A073752 Greatest common divisor of n/lpf(n) and n/gpf(n) where lpf(n) is the least and gpf(n) is the greatest prime factor of n (see A020639, A006530).
  * @author Georg Fischer
  */
 public class A073752 extends TupleTransformSequence {

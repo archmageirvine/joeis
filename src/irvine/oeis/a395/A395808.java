@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000041;
 import irvine.oeis.a002.A002774;
 
 /**
- * A395808 allocated for Jishnu Babu Ranitha.
+ * A395808 Number of factorizations of (p*q)^n into parts greater than 1 that contain at least one mixed factor (a part divisible by both p and q), where p and q are distinct primes.
  * @author Sean A. Irvine
  */
 public class A395808 extends Combiner {

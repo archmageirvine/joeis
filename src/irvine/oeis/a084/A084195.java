@@ -6,7 +6,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A084195 Even numbers n such that the sum of the digits is prime, n/2 is prime and the sum of the digits of n/2 is also prime.
+ * A084195 Even numbers k such that the sum of the digits is prime, k/2 is prime and the sum of the digits of k/2 is also prime.
  * @author Georg Fischer
  */
 public class A084195 extends FilterNumberSequence {

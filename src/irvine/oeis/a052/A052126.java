@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006530;
 
 /**
- * A052126 a(1) = 1; for n&gt;1, a(n)=n/(largest prime dividing n).
+ * A052126 a(1) = 1; for n&gt;1, a(n)=n/(greatest prime dividing n).
  * @author Georg Fischer
  */
 public class A052126 extends Sequence1 {

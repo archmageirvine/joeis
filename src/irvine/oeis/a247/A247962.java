@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A247962 Numbers n such that 51^n + 2 is prime.
+ * A247962 Numbers k such that 51^k + 2 is prime.
  * @author Georg Fischer
  */
 public class A247962 extends PrimePositionSubsequence {

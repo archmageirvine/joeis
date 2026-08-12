@@ -5,7 +5,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A081303 gpf(m) - 2*spf(m), where gpf(m) is the greatest and spf(m) is the smallest prime factor of m (A006530, A020639).
+ * A081303 a(n) = gpf(n) - 2*lpf(n), where gpf(n) is the greatest and lpf(n) is the least prime factor of n (A006530, A020639).
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

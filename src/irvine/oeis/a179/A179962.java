@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A179962 Number of permutations of 1..2*n+4 with no adjacent elements within n in value.
+ * A179962 Number of permutations p of [2*n+4] such that |p(i)-p(i-1)| &gt; n for i&gt;1.
  * @author Georg Fischer
  */
 public class A179962 extends HolonomicRecurrence implements Conjectural {

@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.a001.A001248;
 
 /**
- * A204918 Least prime p^2 such that n divides p^2-q^2 for some prime q satisfying q&lt;p.
+ * A204918 Square of the least prime p such that n divides p^2-q^2 for some prime q satisfying q&lt;p.
  * @author Georg Fischer
  */
 public class A204918 extends A204892 {

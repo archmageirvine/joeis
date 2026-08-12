@@ -5,7 +5,7 @@ import irvine.oeis.a091.A091236;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A095277 Numbers k such that 4k + 3 is composite.
+ * A095277 Numbers k such that 4*k + 3 is composite.
  * @author Georg Fischer
  */
 public class A095277 extends SimpleTransformSequence {

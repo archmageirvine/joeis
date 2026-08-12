@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398371 allocated for Eric Tr\u00e9buchon.
+ * A398371 Triangle of numerators of coefficients of the polynomials generating the rows in A398004.
  * @author Sean A. Irvine
  */
 public class A398371 extends Sequence1 {

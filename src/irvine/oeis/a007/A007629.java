@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A007629 Keith numbers, or Repfigit (REPlicating FIbonnaci diGIT) numbers.
+ * A007629 Keith numbers, or Repfigit (REPlicating FIbonacci diGIT) numbers.
  * @author Sean A. Irvine
  */
 public class A007629 extends Sequence1 {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398232 allocated for Felix Huber.
+ * A398232 Triangle read by rows: T(n, k) is the total collision excess among unordered pairwise sums with repetition of the distinct coefficient values in the expansion of (x_1 + ... + x_k)^n, 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A398232 extends Sequence1 {

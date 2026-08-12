@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A038749 Coefficients arising in the enumeration of configurations of linear chains.
+ * A038749 Number of equivalence classes under rotations and reflections of n-step self-avoiding walks on the cubic lattice that use all three coordinate axes and have exactly one pair of nonconsecutive vertices adjacent in the lattice.
  * @author Sean A. Irvine
  */
 public class A038749 extends Sequence1 {

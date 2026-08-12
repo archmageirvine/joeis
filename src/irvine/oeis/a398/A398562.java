@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000849;
 import irvine.oeis.a005.A005867;
 
 /**
- * A398562 allocated for V. Barbera.
+ * A398562 Number of composite numbers less than the n-th primorial that are relatively prime to the (n-1)-th primorial.
  * @author Sean A. Irvine
  */
 public class A398562 extends Sequence1 {

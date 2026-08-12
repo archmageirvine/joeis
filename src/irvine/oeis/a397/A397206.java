@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397206 allocated for John Tyler Rascoe.
+ * A397206 Number of words of length n over an infinite alphabet such that all prefixes satisfy c(i) &gt;= c(j) if f(i) &lt; f(j) where c(i) is the number of occurrences of the letter i and f(i) = floor(sqrt(2*i) + 1/2).
  * @author Sean A. Irvine
  */
 public class A397206 extends Sequence0 {

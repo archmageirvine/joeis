@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398553 allocated for Jishnu Babu Ranitha.
+ * A398553 Number of factorizations of (p*q*r)^n into parts &gt; 1 where none of p, q, or r are permitted as factors, for any three distinct primes p, q, and r.
  * @author Sean A. Irvine
  */
 public class A398553 extends Sequence0 {

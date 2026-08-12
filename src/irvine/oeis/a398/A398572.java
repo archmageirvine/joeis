@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000026;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A398572 allocated for Tymofii Kasian.
+ * A398572 a(n) = A001222(A000026(n)).
  * @author Sean A. Irvine
  */
 public class A398572 extends SimpleTransformSequence {

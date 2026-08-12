@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006218;
 
 /**
- * A397071 allocated for Fr\u00e9d\u00e9ric D. W. Heidenthal-K\u00f6nig.
+ * A397071 Number of true statements (x op y) = z, where 0 &lt;= x, y, z &lt;= n, op is in {+,-,*,/}.
  * @author Sean A. Irvine
  */
 public class A397071 extends A006218 {

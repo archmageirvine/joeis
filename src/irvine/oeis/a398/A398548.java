@@ -5,12 +5,10 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A398548 allocated for Shixuan Gao.
+ * A398548 a(n) = Max{Min{a(m/p)+1 | p is a prime factor of m} | n&lt;=m&lt;2n} with a(1)=0.
  * @author Sean A. Irvine
  */
 public class A398548 extends CachedSequence {
-
-  // todo sequence definition does not make sense
 
   /** Construct the sequence. */
   public A398548() {
@@ -25,12 +23,10 @@ public class A398548 extends CachedSequence {
           final Z t = self.a(m / p.longValue());
           min = min.min(t);
         }
-        max = max.max(min);
+        max = max.max(min.add(1));
       }
       return max;
     });
   }
 }
 
-
-// a(n) = Max{Min{a(m/p) | p is a prime factor of m} | n<=m<2n} with a(1)=0.

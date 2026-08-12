@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A398372 allocated for Eric Tr\u00e9buchon.
+ * A398372 Triangle of denominators of coefficients of the polynomials generating the rows in A398004.
  * @author Sean A. Irvine
  */
 public class A398372 extends A398371 {

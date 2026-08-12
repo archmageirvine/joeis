@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.TwoParameterFormSequence;
 
 /**
- * A397410 allocated for Michael Shmoish.
+ * A397410 Primes of the form p^2 + 2*q, where p and q are primes.
  * @author Sean A. Irvine
  */
 public class A397410 extends TwoParameterFormSequence {

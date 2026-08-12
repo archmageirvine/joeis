@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A033155 Configurations of linear chains for a square lattice.
+ * A033155 Number of n-step self-avoiding walks on the square lattice having exactly 1 pair of nonconsecutive vertices that are adjacent in the lattice.
  * @author Sean A. Irvine
  */
 public class A033155 extends Sequence1 {

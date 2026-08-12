@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397362 allocated for John Tyler Rascoe.
+ * A397362 Triangle read by rows: T(n,k) is the number of words of length n over an infinite alphabet with with c(1) = k, such that all prefixes satisfy c(i) &gt;= c(j) if f(i) &lt; f(j) where c(i) is the number of occurrences of the letter i and f(i) = floor(sqrt(2*i) + 1/2).
  * @author Sean A. Irvine
  */
 public class A397362 extends Sequence0 {

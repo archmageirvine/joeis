@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398237 allocated for Felix Huber.
+ * A398237 Triangle read by rows: T(n, k) is the number of distinct unordered pairwise sums with repetition of the distinct coefficient values in the expansion of (x_1 + ... + x_k)^n having more than one representation, 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A398237 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.recur.HolonomicRecurrence;
 
 
 /**
- * A226941 Expansion of 1/((1-x)(1-3x)(1-6x)(1-10x)(1-15x)).
+ * A226941 Expansion of 1/((1-x)*(1-3x)*(1-6x)*(1-10x)*(1-15x)).
  * @author Georg Fischer
  */
 public class A226941 extends HolonomicRecurrence {

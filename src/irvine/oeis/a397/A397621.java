@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397621 allocated for Dar\u00edo Clavijo.
+ * A397621 a(n) is the linear complexity over GF(2) of the binary expansion of n (as computed by the Berlekamp-Massey algorithm).
  * @author Sean A. Irvine
  */
 public class A397621 extends Sequence1 {

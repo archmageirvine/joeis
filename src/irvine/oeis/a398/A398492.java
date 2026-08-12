@@ -3,7 +3,7 @@ package irvine.oeis.a398;
 import irvine.oeis.transform.RunLengthTransform;
 
 /**
- * A398492 allocated for \u017diga Pirc.
+ * A398492 Run length transform of A398297.
  * @author Sean A. Irvine
  */
 public class A398492 extends RunLengthTransform {

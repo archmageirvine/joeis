@@ -4,7 +4,7 @@ package irvine.oeis.a216;
 import irvine.oeis.transform.ConvolutionProduct;
 
 /**
- * A216586 G.f.: exp( Sum_{n&gt;=1} A002426(n)/2 * A002426(n) * x^n/n ), where A002426 is the central binomial coefficients and A002426 is the central trinomial coefficients.
+ * A216586 G.f.: exp( Sum_{n&gt;=1} A000984(n)/2 * A002426(n) * x^n/n ), where A000984 is the central binomial coefficients and A002426 is the central trinomial coefficients.
  * @author Georg Fischer
  */
 public class A216586 extends ConvolutionProduct {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a126.A126241;
 
 /**
- * A398447 allocated for Kazunobu Hikawa.
+ * A398447 Least odd integer between 2^n and 2^(n+1)-1 with maximum dropping time under the Collatz map A014682.
  * @author Sean A. Irvine
  */
 public class A398447 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a120.A120944;
 
 /**
- * A398442 allocated for Michael De Vlieger.
+ * A398442 Numbers k of the form q(k) * rad(k), where rad = A007947 and q(k) is the second smallest distinct prime factor of k.
  * @author Sean A. Irvine
  */
 public class A398442 extends A120944 {

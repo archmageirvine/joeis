@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A247958 Numbers n such that 35^n + 2 is prime.
+ * A247958 Numbers k such that 35^k + 2 is prime.
  * @author Georg Fischer
  */
 public class A247958 extends PrimePositionSubsequence {

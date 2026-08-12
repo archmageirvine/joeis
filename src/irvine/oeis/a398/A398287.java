@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398287 allocated for Ramin Mohammadi Masoudi.
+ * A398287 Number of satisfiable 3-SAT formulas with 4 variables and n clauses in the multiset clause model.
  * @author Sean A. Irvine
  */
 public class A398287 extends Sequence1 {

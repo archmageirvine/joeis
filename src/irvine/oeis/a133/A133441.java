@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A133441 A geometrical graph substitution of a tess-tetrahedron embedded in a cube as an eight "tone" all naturals music such that the connections can be cut to isolate the [some words were lost here].
+ * A133441 2-Limiting word of the morphism 1-&gt;2368, 2-&gt;1457, 3-&gt;1468, 4-&gt;2357, 5-&gt;2467, 6-&gt;1358, 7-&gt;2458, 8-&gt;1367.
  * @author Sean A. Irvine
  */
 public class A133441 extends MorphismFixedPointSequence {

@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A071182 SPF(n+1)-SPF(n), where SPF(n) denotes the smallest prime factor of n.
+ * A071182 a(n) = lpf(n+1) - lpf(n), where lpf = A020639.
  * @author Georg Fischer
  */
 public class A071182 extends LambdaSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397646 allocated for Jishnu Babu Ranitha.
+ * A397646 Number of factorizations of (p*q)^n into parts &gt; 1 where neither p nor q are permitted as factors, for any two distinct primes p and q.
  * @author Sean A. Irvine
  */
 public class A397646 extends Sequence0 {

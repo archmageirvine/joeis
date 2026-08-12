@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a173.A173380;
 
 /**
- * A038746 Coefficients arising in the enumeration of configurations of linear chains.
+ * A038746 Number of equivalence classes under rotations and reflections of non-straight n-step self-avoiding walks on the square lattice having no pair of nonconsecutive vertices that are adjacent in the lattice.
  * @author Sean A. Irvine
  */
 public class A038746 extends A173380 {

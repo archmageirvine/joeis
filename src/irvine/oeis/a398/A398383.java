@@ -11,7 +11,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a096.A096960;
 
 /**
- * A398383 allocated for Alex Shvets.
+ * A398383 a(n) = c_6a(n)/n^2, where c_6a(n) are the Fourier coefficients of the level-2 K3 meromorphic modular form C_6a defined below.
  * @author Sean A. Irvine
  */
 public class A398383 extends Sequence0 {

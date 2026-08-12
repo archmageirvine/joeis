@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005117;
 
 /**
- * A397710 allocated for Michael De Vlieger.
+ * A397710 Composite numbers k such that k = rad(k) * lpf(k), where rad = A007947 and lpf is the least prime factor of k.
  * @author Sean A. Irvine
  */
 public class A397710 extends A005117 {

@@ -217,6 +217,8 @@ public final class Functions {
   public static final Function2D DIGIT_NZ_PRODUCT = new DigitNonzeroProduct(); // =A000012(2, =A117592(3, =A338854(4, =A338803(5, =A338863(6, =A338880(7, =A338881(8, =A338882(9, =A051801(10,
   /** Digit root of nonzero digits. */
   public static final Function2D DIGIT_NZ_PRODUCT_ROOT = new DigitNonzeroProductRoot(); // =A051802(10,
+  /** Weighted sum of digits in a number. */
+  public static final Function2D WEIGHTED_DIGIT_SUM = new WeightedDigitSum();
   /** Count of distinct digits. */
   public static final Function2D DISTINCT_DIGIT_COUNT = new DistinctDigitCount(); // =A043537(10, =A043529(2,
   /** Sort the digits of a number into ascending order. */

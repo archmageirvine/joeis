@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a374.A374591;
 
 /**
- * A398551 allocated for Liu Junhui.
+ * A398551 Even numbers that are not sums of two isolated primes.
  * @author Sean A. Irvine
  */
 public class A398551 extends A374591 {

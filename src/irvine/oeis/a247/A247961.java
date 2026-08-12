@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A247961 Numbers n such that 45^n + 2 is prime.
+ * A247961 Numbers k such that 45^k + 2 is prime.
  * @author Georg Fischer
  */
 public class A247961 extends PrimePositionSubsequence {

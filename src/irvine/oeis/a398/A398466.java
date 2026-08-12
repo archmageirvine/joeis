@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a250.A250070;
 
 /**
- * A398466 allocated for Omar E. Pol.
+ * A398466 Numbers from A250070 with the property that the first three digits are the same as the second three digits.
  * @author Sean A. Irvine
  */
 public class A398466 extends FilterSequence {

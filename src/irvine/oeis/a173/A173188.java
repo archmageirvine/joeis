@@ -5,7 +5,7 @@ package irvine.oeis.a173;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A173188 a(n) = binomial(n + 5, 5)*9^n.
+ * A173188 a(n) = binomial(n+5,5)*9^n.
  * @author Georg Fischer
  */
 public class A173188 extends HolonomicRecurrence {

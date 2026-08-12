@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398004 allocated for Eric Tr\u00e9buchon.
+ * A398004 Recursively defined symmetric multiplication table read by antidiagonals: A(n,k), n&gt;=1, k&gt;=1.
  * @author Sean A. Irvine
  */
 public class A398004 extends Sequence1 {

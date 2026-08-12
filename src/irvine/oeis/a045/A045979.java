@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002445;
 
 /**
- * A045979 Bernoulli number B_{2n} has denominator 6.
+ * A045979 Numbers m such that the Bernoulli number B_{2m} has denominator 6.
  * @author Sean A. Irvine
  */
 public class A045979 extends A002445 {

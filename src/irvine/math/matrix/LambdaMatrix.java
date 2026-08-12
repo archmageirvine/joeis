@@ -26,7 +26,7 @@ public class LambdaMatrix<E> extends DefaultMatrix<E> {
    * @param cols number of columns
    * @param zero zero element
    * @param lambda expression mapping (i, j) to a Q expression
-   * @param base 0-based: <code>0 &lt;= i &lt;= rows - 1</code> and <code>0 &lt;= j &lt;= cols - 1</code>,
+   * @param base 0-based:  <code>0 &lt;= i &lt;= rows - 1</code> and <code>0 &lt;= j &lt;= cols - 1</code>,
    * or 1-based: <code>1 &lt;= i &lt;= rows</code> and <code>1 &lt;= j &lt;= cols</code>.
    */
   public LambdaMatrix(final long rows, final long cols, final E zero, final BiFunction<Long, Long, E> lambda, final int base) {

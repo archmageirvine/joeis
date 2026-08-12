@@ -92,7 +92,7 @@ public class A397362 extends Sequence0 {
     return true;
   }
 
-  private static class State {
+  private static final class State {
     private final byte[][] mP;
     private final int mOnes;
 

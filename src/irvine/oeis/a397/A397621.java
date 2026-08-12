@@ -26,11 +26,11 @@ public class A397621 extends Sequence1 {
       final long bit = (mN >>> (l - 1 - k)) & 1;
       r = (r << 1) | bit;
       if ((Long.bitCount(c & r) & 1) != 0) {
-        final long T = c;
+        final long t = c;
         c ^= b << (k - m);
         if ((s << 1) <= k) {
           s = k + 1 - s;
-          b = T;
+          b = t;
           m = k;
         }
       }

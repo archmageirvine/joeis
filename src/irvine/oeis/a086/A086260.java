@@ -55,11 +55,17 @@ public class A086260 extends Sequence1 {
 
   @Override
   public Z next() {
-    ++mN;
+    if (++mN == 1) {
+      return Z.ONE;
+    }
     mCount = 0;
     final int[][] m = new int[mN][mN];
-    search(m, 0);
-    return Z.valueOf(mCount);
+    for (int k = 1; k < mN; ++k) {
+      m[0][k] = 1;
+      m[k][0] = 1;
+    }
+    search(m, 1);
+    return Z.valueOf(mCount).shiftLeft(mN - 1);
   }
 }
 

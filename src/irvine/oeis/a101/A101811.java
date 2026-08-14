@@ -1,14 +1,14 @@
 package irvine.oeis.a101;
 // manually 2026-08-11/perman01 at 2026-08-11 14:47
 
+import java.util.function.BiFunction;
+
 import irvine.math.group.MatrixField;
 import irvine.math.matrix.LambdaMatrix;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-
-import java.util.function.BiFunction;
 
 
 /**

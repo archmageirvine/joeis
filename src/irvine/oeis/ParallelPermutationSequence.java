@@ -35,10 +35,12 @@ public class ParallelPermutationSequence extends AbstractSequence implements Dir
   /**
    * Construct a new sequence.
    * @param offset sequence offset
+   * @param start starting value
+   * @param step amount to step
    */
-  public ParallelPermutationSequence(final int offset, final int step) {
+  public ParallelPermutationSequence(final int offset, final int start, final int step) {
     super(offset);
-    mN = offset - 1;
+    mN = start - step;
     mStep = step;
   }
 
@@ -47,7 +49,7 @@ public class ParallelPermutationSequence extends AbstractSequence implements Dir
    * @param offset sequence offset
    */
   public ParallelPermutationSequence(final int offset) {
-    this(offset, 1);
+    this(offset, offset, 1);
   }
 
   /**

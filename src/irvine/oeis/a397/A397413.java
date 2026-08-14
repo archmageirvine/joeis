@@ -1,18 +1,18 @@
-package irvine.oeis.a051;
+package irvine.oeis.a397;
 
 import irvine.factor.prime.Fast;
 import irvine.oeis.ParallelPermutationSequence;
 
 /**
- * A051252 Number of essentially different ways of arranging numbers 1 through 2n around a circle so that sum of each pair of adjacent numbers is prime.
+ * A397413 allocated for Patrick X. Reymond.
  * @author Sean A. Irvine
  */
-public class A051252 extends ParallelPermutationSequence {
+public class A397413 extends ParallelPermutationSequence {
 
   private final Fast mPrime = new Fast();
 
   /** Construct the sequence. */
-  public A051252() {
+  public A397413() {
     super(1, 2, 2);
   }
 
@@ -23,6 +23,11 @@ public class A051252 extends ParallelPermutationSequence {
     }
     if (pos <= 1) {
       return true;
+    }
+    // This next condition is the difference from A051252
+    final int n = mN / 2;
+    if (pos > n && Math.abs(p[pos - 1] - p[pos - n - 1]) != n) {
+      return false;
     }
     if (!mPrime.isPrime(Math.abs(p[pos - 1] + p[pos - 2] + 2))) { // +2 since our elements are 0-based
       return false;

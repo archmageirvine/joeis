@@ -12,7 +12,7 @@ public class A318233 extends ParallelPermutationSequence {
 
   /** Construct the sequence. */
   public A318233() {
-    super(1, 2);
+    super(1, 2, 2);
   }
 
   @Override

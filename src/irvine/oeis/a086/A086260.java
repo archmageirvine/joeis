@@ -125,7 +125,6 @@ public class A086260 extends Sequence1 {
         }
 
         final int required = requiredCommon(i, j);
-
         if (common > required || possible < required) {
           return false;
         }
@@ -241,6 +240,13 @@ public class A086260 extends Sequence1 {
     if ((mN & 3) != 2) {
       return Z.ZERO;
     }
+
+//    // Order 18: the unique conference graph is the Paley graph
+//    // of order 17, whose automorphism group has order 17*8.
+//    if (mN == 18) {
+//      return Functions.FACTORIAL.z(17).divide(136).shiftLeft(17);
+//    }
+
     final long normalized = countNormalized();
     // Undo the normalization of N(0)
     // There are C(v-1,k) possible neighborhoods for vertex 0

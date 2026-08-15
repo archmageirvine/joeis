@@ -3,10 +3,10 @@ package irvine.oeis.a398;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A398715 allocated for Nick Kashyap.
+ * A398714 allocated for Nick Kashyap.
  * @author Sean A. Irvine
  */
-public class A398715 extends FilterNumberSequence {
+public class A398714 extends FilterNumberSequence {
 
   private static final long[] MAP = {0, 1, 2, -1, -1, 5, 9, -1, 8, 6};
 
@@ -33,7 +33,7 @@ public class A398715 extends FilterNumberSequence {
   }
 
   /** Construct the sequence. */
-  public A398715() {
+  public A398714() {
     super(1, n -> {
       if (isStrobogrammatic(n)) {
         return false;
@@ -43,11 +43,7 @@ public class A398715 extends FilterNumberSequence {
         return false;
       }
       final long u = n + r;
-      if (isStrobogrammatic(u)) {
-        return false;
-      }
-      final long s = r(u);
-      return s >= 0 && isStrobogrammatic(u + s);
+      return isStrobogrammatic(u);
     });
   }
 }

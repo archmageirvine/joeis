@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.ParallelPermutationSequence;
 
 /**
- * A398618.
+ * A397137 allocated for Marko Radulovic.
  * @author Sean A. Irvine
  */
 public class A397137 extends ParallelPermutationSequence {

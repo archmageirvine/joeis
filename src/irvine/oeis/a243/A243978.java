@@ -8,7 +8,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A243978 Triangle T(n,k), n&gt;>=0, 0&lt;=k&lt;=n, read by rows: T(n,k) is the number of partitions of n where the minimal multiplicity of any part is k.
+ * A243978 Triangle T(n,k), n&gt;=0, 0&lt;=k&lt;=n, read by rows: T(n,k) is the number of partitions of n where the minimal multiplicity of any part is k.
  * @author Georg Fischer
  */
 public class A243978 extends BaseTriangle implements DirectArray {

@@ -9,7 +9,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A256130 Number T(n,k) of partitions of n into parts of exactly k sorts which are introduced in ascending order; triangle T(n,k), n>=0, 0&lt;=k&lt;=n, read by rows.
+ * A256130 Number T(n,k) of partitions of n into parts of exactly k sorts which are introduced in ascending order; triangle T(n,k), n&gt;=0, 0&lt;=k&lt;=n, read by rows.
  * @author Georg Fischer
  */
 public class A256130 extends BaseTriangle implements DirectArray {

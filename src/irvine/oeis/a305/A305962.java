@@ -8,7 +8,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A305962 Number A(n,k) of length-n restricted growth strings (RGS) with growth <= k and fixed first element;
+ * A305962 Number A(n,k) of length-n restricted growth strings (RGS) with growth &lt;= k and fixed first element; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Georg Fischer
  */

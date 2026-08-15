@@ -9,7 +9,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A215771 Number T(n,k) of undirected labeled graphs on n nodes with exactly k cycle graphs as connected components;
+ * A215771 Number T(n,k) of undirected labeled graphs on n nodes with exactly k cycle graphs as connected components; triangle T(n,k), n&gt;=0, 0&lt;=k&lt;=n, read by rows.
  * triangle T(n,k), n&gt;=0, 0&lt;=k&lt;=n, read by rows.
  * @author Georg Fischer
  */

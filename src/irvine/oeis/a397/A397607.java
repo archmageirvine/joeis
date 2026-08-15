@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a065.A065091;
 
 /**
- * A398618.
+ * A397607 allocated for Thomas Ordowski.
  * @author Sean A. Irvine
  */
 public class A397607 extends A065091 {

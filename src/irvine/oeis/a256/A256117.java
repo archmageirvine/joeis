@@ -11,7 +11,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A256117 Number T(n,k) of partitions of n into parts of exactly k sorts which are introduced in ascending order; triangle T(n,k), n>=0, 0&lt;=k&lt;=n, read by rows.
+ * A256117 Number T(n,k) of length 2n words such that all letters of the k-ary alphabet occur at least once and are introduced in ascending order and which can be built by repeatedly inserting doublets into the initially empty word; triangle T(n,k), n&gt;=0, 0&lt;=k&lt;=n, read by rows.
  * @author Georg Fischer
  */
 public class A256117 extends BaseTriangle implements DirectArray {

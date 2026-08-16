@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A070221 a(n)=LPF(n+1)-LPF(n), where LPF(n) denotes the largest prime factor of n.
+ * A070221 a(n) = gpf(n+1) - gpf(n), where gpf = A006530 (greatest prime factor).
  * @author Georg Fischer
  */
 public class A070221 extends LambdaSequence {

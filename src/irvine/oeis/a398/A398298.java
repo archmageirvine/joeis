@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398298 allocated for Stef Bordo.
+ * A398298 Irregular triangle read by rows, where row n lists the numbers whose binary representation forms a valid row/column on a 2*n X 2*n Takuzu board.
  * @author Sean A. Irvine
  */
 public class A398298 extends Sequence1 {

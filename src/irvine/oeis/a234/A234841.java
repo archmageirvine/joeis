@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a028.A028819;
 
 /**
- * A234841 Integers n such that digits in n and n^2 are in nondecreasing order.
+ * A234841 Integers k such that the digits of k and k^2 are in nondecreasing order.
  * @author Georg Fischer
  */
 public class A234841 extends FilterSequence {

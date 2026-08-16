@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A083218 a(n) = n mod (spf(n+1)+1), where spf(n) is the smallest prime factor of n (A020639).
+ * A083218 a(n) = n mod (lpf(n+1)+1), where lpf(n) is the least prime factor of n (A020639).
  * @author Georg Fischer
  */
 public class A083218 extends LambdaSequence {

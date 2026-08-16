@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A398178 allocated for Kelvin Voskuijl.
+ * A398178 Decimal expansion of the sum of reciprocals of repunit numbers base 9, Sum_{k&gt;=1} 8/(9^k - 1).
  * @author Sean A. Irvine
  */
 public class A398178 extends DecimalExpansionSequence {

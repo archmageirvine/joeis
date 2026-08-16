@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A398437 allocated for Jean-Marc Rebert.
+ * A398437 Least value of x+y for 0&lt;x&lt;y such that (x^p+y^p)/(x+y) is prime, where p=prime(n), n&gt;1; -1, if no such pair exists.
  * @author Sean A. Irvine
  */
 public class A398437 extends Sequence2 {

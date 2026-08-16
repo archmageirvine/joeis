@@ -6,7 +6,7 @@ import irvine.oeis.a117.A117366;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A285639 a(n) = n*A117366(n)/spf(n), where A117366(n) is the smallest prime larger than all prime factors of n, and spf is the smallest prime factor of n (or 1 if n = 1).
+ * A285639 a(n) = n*A117366(n)/lpf(n), where A117366(n) is the smallest prime larger than all prime factors of n, and lpf is the least prime factor of n (or 1 if n = 1).
  * @author Georg Fischer
  */
 public class A285639 extends SimpleTransformSequence {

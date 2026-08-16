@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A082650 Number of primes &lt; n of form 1+k*spf(n), where spf(n) is the smallest prime factor of n (A020639).
+ * A082650 Number of primes &lt; n of the form 1 + k*lpf(n), where lpf(n) is the least prime factor of n (A020639).
  * @author Sean A. Irvine
  */
 public class A082650 extends Sequence1 {

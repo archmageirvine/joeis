@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A085718 Numbers n such that sopfr(n)/spf(n) is a semiprime and sopfr(n)/lpf(n) is a semiprime, where sopfr(n) = A001414(n) is sum of primes dividing n (with repetition), spf(n) and lpf(n) are smallest and largest primes dividing n, respectively. Also, spf(n)!=lpf(n).
+ * A085718 Numbers k such that sopfr(k)/lpf(k) is a semiprime and sopfr(k)/gpf(k) is a semiprime and lpf(k) != gpf(k),  where sopfr = A001414, lpf =  A020639, gpf = A006530.
  * @author Sean A. Irvine
  */
 public class A085718 extends FilterNumberSequence {

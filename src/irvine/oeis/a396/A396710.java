@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396710 allocated for Tim Kraus.
+ * A396710 Number of unordered factorizations of n into exactly k squarefree factors, where k is the maximum exponent in the prime factorization of n.
  * @author Sean A. Irvine
  */
 public class A396710 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398644 allocated for Ctibor O. Zizka.
+ * A398644 Number of partitions of n into 3 parts 1 &lt;= x &lt;= y &lt;= z such that x^2 + y^2 + z^2 = 3*m^2 for some integer m.
  * @author Sean A. Irvine
  */
 public class A398644 extends Sequence1 {

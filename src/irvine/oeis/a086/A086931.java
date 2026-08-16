@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A086931 a(0) = 1, a(n) = spf(n)*a(n-spf(n)), where spf=A020639 (smallest prime factor).
+ * A086931 a(0) = 1, a(n) = lpf(n)*a(n-lpf(n)), where lpf=A020639 (least prime factor).
  * @author Georg Fischer
  */
 public class A086931 extends MultiTransformSequence {

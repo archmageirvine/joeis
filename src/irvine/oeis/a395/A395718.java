@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A395718 allocated for Jake Foth.
+ * A395718 Numbers admitted by the golden exclusion sieve.
  * @author Sean A. Irvine
  */
 public class A395718 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.a001.A001248;
 
 /**
- * A204917 Least j such that n divides s(k)-s(j) for some k&gt;j, where s(j)=(prime(j))^2.
+ * A204917 Least j such that n divides s(A204916(n))-s(j), where s(j)=(prime(j))^2.
  * @author Georg Fischer
  */
 public class A204917 extends A204892 {

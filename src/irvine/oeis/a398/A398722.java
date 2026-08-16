@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A398722 allocated for Chittaranjan Pardeshi.
+ * A398722 Expansion of Pi in base sqrt(phi) where phi = (1 + sqrt(5))/2.
  * @author Sean A. Irvine
  */
 public class A398722 extends AbstractSequence {

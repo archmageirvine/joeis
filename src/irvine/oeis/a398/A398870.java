@@ -4,7 +4,7 @@ package irvine.oeis.a398;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A398870 allocated for Nicolas B\u011blohoubek.
+ * A398870 a(n) is the number of tilings of a 6 X 5n rectangle into I-pentominoes.
  * @author Georg Fischer
  */
 public class A398870 extends HolonomicRecurrence {

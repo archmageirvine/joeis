@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398536 allocated for Claude H. R. Dequatre.
+ * A398536 a(n) is the trace of the Hankel n X n matrix M_n whose M_n(i,j) generic element is n^(i+j).
  * @author Sean A. Irvine
  */
 public class A398536 extends Sequence1 {

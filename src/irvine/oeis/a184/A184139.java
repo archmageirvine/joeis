@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A184139 Number of nX4 binary arrays with rows and columns in nondecreasing order.
+ * A184139 Number of n X 4 binary arrays with rows and columns in nondecreasing order.
  * @author Georg Fischer
  */
 public class A184139 extends HolonomicRecurrence implements Conjectural {

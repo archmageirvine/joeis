@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A228140 Numbers n such that n^2 - 2 is not squarefree.
+ * A228140 Numbers k such that k^2 - 2 is not squarefree.
  * @author Georg Fischer
  */
 public class A228140 extends FilterNumberSequence {

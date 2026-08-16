@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A071829 Smallest s &gt; 0 such that Lpf(n) = Lpf(n+s) where Lpf(x) denotes the largest prime factor in x factorization.
+ * A071829 Smallest s &gt; 0 such that gpf(n) = gpf(n+s) where gpf = A006530 (greatest prime factor).
  * @author Sean A. Irvine
  */
 public class A071829 extends Sequence2 {

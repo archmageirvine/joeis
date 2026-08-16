@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A395685 allocated for Alexander Krivilev.
+ * A395685 Triangle read by rows: T(0,0) = 1; for k != 0, T(0,k) = 0; T(n,k) = T(n-1,k-1)*b(n) + T(n-1,k)*(n-b(n)) where b(n) = 2^ceiling(log_2(n)) - n.
  * @author Sean A. Irvine
  */
 public class A395685 extends Sequence0 {

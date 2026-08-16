@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A066161 Let p = n-th prime; sequence gives ((p-2)!-1)/p.
+ * A066161 a(n) = ((p-2)! - 1)/p, where p is the n-th prime.
  * @author Sean A. Irvine
  */
 public class A066161 extends A000040 {

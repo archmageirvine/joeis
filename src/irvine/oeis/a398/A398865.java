@@ -4,7 +4,7 @@ package irvine.oeis.a398;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A398865 allocated for Nicolas B\u011blohoubek.
+ * A398865 a(n) is the number of tilings of a 9 X 10n rectangle into P-pentominoes (no reflections, only rotations).
  * @author Georg Fischer
  */
 public class A398865 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A081304 Number of numbers m &lt;= n with prime factors less than 2*spf(m), where spf(m) is the smallest prime factor of m (A020639).
+ * A081304 Number of numbers m &lt;= n with prime factors less than 2*lpf(m), where lpf(m) is the least prime factor of m (A020639).
  * @author Sean A. Irvine
  */
 public class A081304 extends Sequence1 {

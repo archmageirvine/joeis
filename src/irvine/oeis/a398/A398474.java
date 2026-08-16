@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A398474 allocated for Dimas Saputra.
+ * A398474 a(n) is the number of sets of two or more pairwise coprime integers &gt;= 2 whose product is at least n, but whose product divided by the smallest member is less than n.
  * @author Sean A. Irvine
  */
 public class A398474 extends Sequence2 {

@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A059599 Expansion of (3+x)/(1-x)^6.
+ * A059599 Expansion of g.f. (3+x)/(1-x)^6.
  * @author Sean A. Irvine
  */
 public class A059599 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A173380 Number of n-step walks on square lattice (no points repeated, no adjacent points unless consecutive in path).
+ * A173380 Number of n-step self-avoiding walks on the square lattice having no pair of nonconsecutive vertices that are adjacent in the lattice.
  * @author Sean A. Irvine
  */
 public class A173380 extends AbstractSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398535 allocated for Claude H. R. Dequatre.
+ * A398535 a(n) is the trace of the product of two Hankel n X n matrices M_n and N_n whose M[i,j] generic elements are respectively (i+j)^2 and (i+j)^3.
  * @author Sean A. Irvine
  */
 public class A398535 extends Sequence1 {

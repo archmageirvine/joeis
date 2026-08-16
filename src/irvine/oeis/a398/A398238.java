@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398238 allocated for Felix Huber.
+ * A398238 a(n) is the number of distinct unordered pairwise sums with repetition of the distinct multinomial coefficient values of order n having more than one representation.
  * @author Sean A. Irvine
  */
 public class A398238 extends Sequence1 {

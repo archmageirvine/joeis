@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a254.A254362;
 
 /**
- * A087719 Least number m such that the number of numbers k &lt;= m with k &gt; spf(k)^n exceeds the number of numbers with k &lt;= spf(k)^n.
+ * A087719 Least number m such that the number of numbers k &lt;= m with k &gt; lpf(k)^n exceeds the number of numbers with k &lt;= lpf(k)^n, where lpf = A020639.
  * @author Georg Fischer
  */
 public class A087719 extends AbstractSequence {

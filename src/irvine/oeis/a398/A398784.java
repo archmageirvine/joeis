@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A086265.
+ * A398784 allocated for G\u00f6ktu\u011f Omay.
  * @author Sean A. Irvine
  */
 public class A398784 extends Sequence1 {
@@ -21,7 +21,7 @@ public class A398784 extends Sequence1 {
     final int n = p.length;
     p[0] = -(s + (n > 2 ? (n - 3) * p[n - 1] : 0));
     if (n >= 3) {
-      int q = 2 * p[n - 2] - p[n - 1];
+      final int q = 2 * p[n - 2] - p[n - 1];
       boolean tog = false;
       for (int k = 1; k < n; ++k) {
         tog = !tog;

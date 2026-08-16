@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A398612 allocated for Paolo Xausa.
+ * A398612 Decimal expansion of the inradius of a canonical (dual-uniform) 9-gonal trapezohedron with unit short edge length.
  * @author Sean A. Irvine
  */
 public class A398612 extends PolynomialRootExpansionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a053.A053144;
 
 /**
- * A398650 allocated for V. Barbera.
+ * A398650 Number of composite numbers less than the n-th primorial that have a common factor greater than 1 with the (n-1)-th primorial.
  * @author Sean A. Irvine
  */
 public class A398650 extends A000040 {

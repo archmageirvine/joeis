@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397434 allocated for Tanguy Gautier Lo\u00efc Le Mer.
+ * A397434 Number of monomials in the algebraic normal form (Zhegalkin polynomial over GF(2)) of the Boolean function that is 1 if and only if at least ceiling(n/2) of its n variables are 1.
  * @author Sean A. Irvine
  */
 public class A397434 extends Sequence1 {

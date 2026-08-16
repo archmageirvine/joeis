@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a126.A126241;
 
 /**
- * A398473 allocated for Kazunobu Hikawa.
+ * A398473 Maximum dropping time for numbers between 2^n and 2^(n+1)-1 under the Collatz map A014682.
  * @author Sean A. Irvine
  */
 public class A398473 extends Sequence1 {

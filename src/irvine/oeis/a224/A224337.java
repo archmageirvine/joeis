@@ -3,7 +3,7 @@ package irvine.oeis.a224;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A224337 Number of idempotent 6X6 0..n matrices of rank 5.
+ * A224337 Number of idempotent 6 X 6 0..n matrices of rank 5.
  * @author Sean A. Irvine
  */
 public class A224337 extends LinearRecurrence {

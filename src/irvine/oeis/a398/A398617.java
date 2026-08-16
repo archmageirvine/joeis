@@ -7,7 +7,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A398617 allocated for Paolo Xausa.
+ * A398617 Decimal expansion of the large face angle, in radians, of a canonical (dual-uniform) 9-gonal trapezohedron.
  * @author Sean A. Irvine
  */
 public class A398617 extends DecimalExpansionSequence {

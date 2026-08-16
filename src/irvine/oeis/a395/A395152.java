@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A395152 allocated for Ali Sidheek.
+ * A395152 Exponent k such that the largest alternating-digital-root number in base n (A397879) equals r^k.
  * @author Sean A. Irvine
  */
 public class A395152 extends Sequence2 {

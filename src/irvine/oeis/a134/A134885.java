@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A134885 Triangular sequence from polynomials that gives roots near 137.
+ * A134885 Triangle reads by rows: T(n,k) = [x^k] p(n,x) where p(0,x)=1, p(1,x)=137-x, and p(n,x)=(-1)^(n-1)*(137-n) + (-1)^(n-1)*137*x^(n-1) - (-1)^(n-1)*x^n.
  * @author Sean A. Irvine
  */
 public class A134885 extends Sequence1 {

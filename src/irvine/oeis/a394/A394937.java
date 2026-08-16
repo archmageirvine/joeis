@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A394937 allocated for Fr\u00e9d\u00e9ric D. W. Heidenthal-K\u00f6nig.
+ * A394937 Irregular triangle T(n,k) read by rows: row n lists in increasing order the distinct entries m of the n X n multiplication table that can be written in the form (n-u)*(n-v), where 1 &lt;= u &lt;= v, u+v &lt;= n, and u*v &lt;= n.
  * @author Sean A. Irvine
  */
 public class A394937 extends Sequence2 {

@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A179260 Decimal expansion of the connective constant of the honeycomb lattice.
+ * A179260 Decimal expansion of the connective constant of the honeycomb net.
  * @author Georg Fischer
  */
 public class A179260 extends DecimalExpansionSequence {

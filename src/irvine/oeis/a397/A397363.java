@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397363 allocated for Claude H. R. Dequatre.
+ * A397363 a(n) is the trace of the product of two Hankel n X n matrices M_n and N_n whose M[i,j] and N[i,j] generic elements are respectively (i+j) in base 10 and (i+j) written in base 3 but then read as it were written in base 10.
  * @author Sean A. Irvine
  */
 public class A397363 extends Sequence1 {

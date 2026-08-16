@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A389608 a(n) = (7*n^2-5*n+2)/2.
+ * A389608 a(n) = (7*n^2 - 5*n + 2)/2.
  * @author Georg Fischer
  */
 public class A389608 extends LambdaSequence {

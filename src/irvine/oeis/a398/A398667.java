@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398667 allocated for Allam Assal.
+ * A398667 Initial digit of the decimal expansion of 5^(5^(5^n)).
  * @author Sean A. Irvine
  */
 public class A398667 extends Sequence0 {

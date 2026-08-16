@@ -6,7 +6,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.oeis.FilterLambdaSequence;
 
 /**
- * A251727 Numbers n &gt; 1 for which gpf(n) &gt; spf(n)^2, where spf and gpf (smallest and greatest prime factor of n) are given by A020639(n) and A006530(n).
+ * A251727 Numbers m &gt; 1 such that gpf(m) &gt; lpf(m)^2, where lpf and gpf (least and greatest prime factor of m) are given by A020639(m) and A006530(m).
  * @author Georg Fischer
  */
 public class A251727 extends FilterLambdaSequence {

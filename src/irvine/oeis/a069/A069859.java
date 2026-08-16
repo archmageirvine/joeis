@@ -8,7 +8,7 @@ import irvine.oeis.a006.A006530;
 import irvine.oeis.a020.A020639;
 
 /**
- * A069859 (Largest prime factor of n) modulo (smallest prime factor of n).
+ * A069859 a(n) = (greatest prime factor of n) modulo (least prime factor of n).
  * @author Georg Fischer
  */
 public class A069859 extends Sequence1 {

@@ -5,7 +5,7 @@ package irvine.oeis.a111;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A111802 n^2-n-1 for n&gt;3; a(1)=1; a(2)=2; a(3)=3.
+ * A111802 a(n) = n^2 - n - 1 for n&gt;3; a(1)=1; a(2)=2; a(3)=3.
  * @author Georg Fischer
  */
 public class A111802 extends HolonomicRecurrence {

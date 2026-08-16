@@ -3,7 +3,7 @@ package irvine.oeis.a398;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A398715 allocated for Nick Kashyap.
+ * A398715 Integers that need two iterations of 180-degree Rotate and Add to reach a strobogrammatic number (7-segment calculator-style numerals).
  * @author Sean A. Irvine
  */
 public class A398715 extends FilterNumberSequence {

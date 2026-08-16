@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a065.A065091;
 
 /**
- * A397607 allocated for Thomas Ordowski.
+ * A397607 Bernoulli-primitive primes: p such that denominator(B_{p-1})/p is not the denominator of any Bernoulli number B_k.
  * @author Sean A. Irvine
  */
 public class A397607 extends A065091 {

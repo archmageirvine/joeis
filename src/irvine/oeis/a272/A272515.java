@@ -22,7 +22,7 @@ public class A272515 extends AbstractSequence implements DirectSequence {
   }
 
   /**
-   * Generic cosntructor with parameter.
+   * Generic constructor with parameter.
    * @param offset first index
    * @param colNo column number
    */

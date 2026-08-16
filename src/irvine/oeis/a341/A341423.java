@@ -23,7 +23,7 @@ public class A341423 extends AbstractSequence implements DirectSequence {
   }
 
   /**
-   * Generic cosntructor with parameter.
+   * Generic constructor with parameter.
    * @param offset first index
    * @param colNo column number
    */

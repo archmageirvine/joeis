@@ -39,7 +39,7 @@ public class A086266 extends Sequence1 {
         break;
       }
       futures.add(executor.submit(() -> {
-        long[] total = new long[(n * n + 1) / 2 + 1];
+        final long[] total = new long[(n * n + 1) / 2 + 1];
         for (long mask = start; mask < end; ++mask) {
           final Graph g = GraphFactory.create(order);
           for (int i = 0; i < n; ++i) {
@@ -63,7 +63,7 @@ public class A086266 extends Sequence1 {
       }));
     }
     executor.shutdown();
-    Z[] total = new Z[(n * n + 1) / 2 + 1];
+    final Z[] total = new Z[(n * n + 1) / 2 + 1];
     Arrays.fill(total, Z.ZERO);
     try {
       for (final Future<long[]> future : futures) {
@@ -72,10 +72,10 @@ public class A086266 extends Sequence1 {
           total[k] = total[k].add(t[k]);
         }
       }
-    } catch (InterruptedException e) {
+    } catch (final InterruptedException e) {
       Thread.currentThread().interrupt();
       throw new RuntimeException(e);
-    } catch (ExecutionException e) {
+    } catch (final ExecutionException e) {
       throw new RuntimeException(e.getCause());
     }
     return total;

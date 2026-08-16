@@ -17,8 +17,8 @@ public abstract class LambdaTable extends AbstractSequence implements DirectArra
   private int mColMax; // ending column index
   private int mRow; // current row index
   private int mCol; // current column index
-  private final Function<Integer, Integer[]> mColRange; // expression for { mColMin, mColMax }
-  private final BiFunction<Integer, Integer, Z> mLambda; // expression for T[n, k]
+  protected Function<Integer, Integer[]> mColRange; // expression for { mColMin, mColMax }
+  protected BiFunction<Integer, Integer, Z> mLambda; // expression for T[n, k]
 
   /**
    * Constructor with offset, origin and lambda expression.
@@ -43,6 +43,7 @@ public abstract class LambdaTable extends AbstractSequence implements DirectArra
    * @param k shifted column index
    * @return T[n, k]
    */
+  @Override
   public Z a(final long n, final long k) {
     final Integer[] range = mColRange.apply((int) n);
     if (k < range[0] || k > range[1]) {

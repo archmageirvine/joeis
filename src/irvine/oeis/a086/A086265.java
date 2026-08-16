@@ -65,10 +65,10 @@ public class A086265 extends Sequence1 {
       for (final Future<Z> future : futures) {
         total = total.add(future.get());
       }
-    } catch (InterruptedException e) {
+    } catch (final InterruptedException e) {
       Thread.currentThread().interrupt();
       throw new RuntimeException(e);
-    } catch (ExecutionException e) {
+    } catch (final ExecutionException e) {
       throw new RuntimeException(e.getCause());
     }
     return total;

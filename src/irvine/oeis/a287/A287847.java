@@ -11,7 +11,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A287847 Number A(n,k) of Dyck paths of semilength n such that no level has more than k peaks;
+ * A287847 Number A(n,k) of Dyck paths of semilength n such that no level has more than k peaks; square array A(n,k), n &gt;= 0, k &gt;= 0, read by descending antidiagonals.
  * square array A(n,k), n &gt;= 0, k &gt;= 0, read by descending antidiagonals.
  * @author Georg Fischer
  */

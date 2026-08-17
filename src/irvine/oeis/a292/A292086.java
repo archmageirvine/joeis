@@ -11,7 +11,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A292086 Number T(n,k) of (unlabeled) rooted trees with n leaf nodes and without unary nodes such that k
+ * A292086 Number T(n,k) of (unlabeled) rooted trees with n leaf nodes and without unary nodes such that k is the maximum of 1 and the node outdegrees; triangle T(n,k), n&gt;=1, 1&lt;=k&lt;=n, read by rows.
  * is the maximum of 1 and the node outdegrees; triangle T(n,k), n&gt;=1, 1&lt;=k&lt;=n, read by rows.
  * @author Georg Fischer
  */

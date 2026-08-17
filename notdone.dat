@@ -2769,3 +2769,10 @@ A086239 Decimal expansion of Sum_{k>=2} c(k)/prime(k), where c(k) = -1 if p == 1
 A086240 Decimal expansion of Sum_{k>=2} (p mod 4 - 2)/p^2 where p=prime(k).
 A086241 Decimal expansion of value to which Sum_{k>=2} d(k)/prime(k) appears to converge, where d(k)=-1 if p mod 3 = 1, d(k)=+1 if p mod 3 = 2 and d(k)=0 if p mod 3 = 0.
 A086245 Decimal expansion of Renyi's second parking constant.
+A086268 Decimal expansion of mean s-cluster density for p=1/2.
+A086276 Decimal expansion of Shallit's constant.
+A086279 Decimal expansion of 2nd Stieltjes constant gamma_2 (negated).
+A086280 Decimal expansion of 3rd Stieltjes constant gamma_3.
+A086281 Decimal expansion of 3rd Stieltjes constant gamma_4.
+A086282 Decimal expansion of 3rd Stieltjes constant gamma_5.
+

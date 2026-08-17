@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A287215 Number T(n,k) of set partitions of [n] such that the maximal absolute difference between the least elements of consecutive blocks equals k;
+ * A287215 Number T(n,k) of set partitions of [n] such that the maximal absolute difference between the least elements of consecutive blocks equals k; triangle T(n,k), n&gt;=0, 0&lt;=k&lt;=max(n-1,0), read by rows.
  * triangle T(n,k), n&gt;=0, 0&lt;=k&lt;=max(n-1,0), read by rows.
  * @author Georg Fischer
  */

@@ -13,6 +13,6 @@ public class A260189 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A260189() {
-    super(1, (self, n) -> self.s(0).divide(Z.TWO.pow(n / 4)), "", new A033148());
+    super(0, (self, n) -> self.s(0).divide(Z.TWO.pow(n / 4)), "", new A033148());
   }
 }

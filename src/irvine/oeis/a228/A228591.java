@@ -11,20 +11,18 @@ import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
-
 /**
  * A228591 Determinant of the n X n (0,1)-matrix with (i,j)-entry equal to 1 if and only if i + j is 2 or an odd composite number.
  * @author Georg Fischer
  */
 public class A228591 extends AbstractSequence {
 
-  private long mN = 0;
+  private long mN = -1;
   private final BiFunction<Long, Long, Q> mLambda;
 
   /** Construct the sequence */
   public A228591() {
-    super(1);
-    mN = 0;
+    super(0);
     mLambda = (i, j) -> {
       final long ij = i + j;
       return new Q(ij == 2 || (ij & 1) == 1 && !Predicates.PRIME.is(ij) ? 1 : 0);

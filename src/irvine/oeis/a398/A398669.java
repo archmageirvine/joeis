@@ -125,14 +125,7 @@ public class A398669 extends Sequence0 {
     return result;
   }
 
-  /*
-   * Generate all distinct images of w under permutations of one
-   * triangular group.
-   *
-   * We only have to permute the distinct letters actually occurring
-   * in w. This produces exactly the same set as the Python code,
-   * but avoids generating permutations which have no effect.
-   */
+  // Generate all distinct images of w under permutations of one triangular group.
   private static void permuteGroup(final int[] word, final int[] source, final int pos, final int lo, final int hi, final boolean[] used, final int[] image, final List<int[]> result) {
     if (pos == source.length) {
       result.add(image.clone());

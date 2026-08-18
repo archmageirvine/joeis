@@ -2,6 +2,7 @@ package irvine.oeis.a255;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
@@ -9,7 +10,7 @@ import irvine.oeis.triangle.UpperLeftTriangle;
  * square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Georg Fischer
  */
-public class A255517 extends UpperLeftTriangle {
+public class A255517 extends UpperLeftTriangle implements DirectArray {
 
   /** Construct the sequence. */
   public A255517() {
@@ -41,4 +42,10 @@ public class A255517 extends UpperLeftTriangle {
       return sumj.divide(n - 1);
     }
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return matrixElement((int) n, (int) k);
+  }
+
 }

@@ -6,12 +6,13 @@ import irvine.factor.prime.Fast;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A219180 Number T(n,k) of partitions of n into k distinct prime parts; triangle T(n,k), n&gt;=0, read by rows.
  * @author Sean A. Irvine
  */
-public class A219180 extends MemoryFunction2Sequence<Integer, Z[]> {
+public class A219180 extends MemoryFunction2Sequence<Integer, Z[]> implements DirectArray {
 
   // After Alois P. Heinz
 
@@ -59,6 +60,15 @@ public class A219180 extends MemoryFunction2Sequence<Integer, Z[]> {
     return k != row.length - 1 ? Arrays.copyOf(row, k + 1) : row;
   }
 
+  /**
+   * Get the length of the nth row.
+   * @param nRow number of row
+   * @return length of row <em>nRow</em>
+   */
+  public int rowLength(final int nRow) {
+    return get(nRow, Functions.PRIME_PI.i(nRow)).length;
+  }
+
   @Override
   public Z next() {
     while (mPos >= mRow.length) {
@@ -67,4 +77,11 @@ public class A219180 extends MemoryFunction2Sequence<Integer, Z[]> {
     }
     return mRow[mPos++];
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    final Z[] row = get((int) n, Functions.PRIME_PI.i(n));
+    return k < row.length ? row[(int) k] : Z.ZERO;
+  }
+
 }

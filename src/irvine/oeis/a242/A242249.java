@@ -3,12 +3,13 @@ package irvine.oeis.a242;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A242249 Number A(n,k) of rooted trees with n nodes and k-colored non-root nodes; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Sean A. Irvine
  */
-public class A242249 extends MemoryFunction2Sequence<Integer, Z> {
+public class A242249 extends MemoryFunction2Sequence<Integer, Z> implements DirectArray {
 
   private int mN = -1;
   private int mM = 0;
@@ -33,4 +34,10 @@ public class A242249 extends MemoryFunction2Sequence<Integer, Z> {
     }
     return get(mM, mN - mM);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return get((int) n, (int) k);
+  }
+
 }

@@ -6,13 +6,14 @@ import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
+import irvine.oeis.triangle.DirectArray;
 import irvine.util.Pair;
 
 /**
  * A257493 Number A(n,k) of n X n nonnegative integer matrices with all row and column sums equal to k; square array A(n,k), n &gt;= 0, k &gt;= 0, read by antidiagonals.
  * @author Sean A. Irvine
  */
-public class A257493 extends Sequence0 {
+public class A257493 extends Sequence0 implements DirectArray {
 
   private final HashMap<Pair<String, Integer>, Z> mCache = new HashMap<>();
   private final Fast mPrime = new Fast();
@@ -91,4 +92,10 @@ public class A257493 extends Sequence0 {
     }
     return a(mM, mN - mM);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return a(n, (int) k);
+  }
+
 }

@@ -6,12 +6,13 @@ import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A064315 Triangle of number of permutations by length of shortest ascending run.
  * @author Sean A. Irvine
  */
-public class A064315 extends Sequence1 {
+public class A064315 extends Sequence1 implements DirectArray {
 
   // After Alois P. Heinz
 
@@ -50,4 +51,10 @@ public class A064315 extends Sequence1 {
     }
     return t(mN, mM);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return t((int) n, (int) k);
+  }
+
 }

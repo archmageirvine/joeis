@@ -6,12 +6,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A079025 Triangular array read by rows: column sums of frequency distributions associated with number of divisors of least prime signatures.
  * @author Sean A. Irvine
  */
-public class A079025 extends Sequence0 {
+public class A079025 extends Sequence0 implements DirectArray {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> X1 = Polynomial.create(1, 1);
@@ -38,4 +39,10 @@ public class A079025 extends Sequence0 {
     }
     return mB.get(mN, mN).coeff(mM);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return mB.get((int) n, (int) n).coeff(k);
+  }
+
 }

@@ -9,12 +9,13 @@ import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A309858 Number A(n,k) of k-uniform hypergraphs on n unlabeled nodes; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Sean A. Irvine
  */
-public class A309858 extends MemoryFunction2Sequence<Integer, Z> {
+public class A309858 extends MemoryFunction2Sequence<Integer, Z> implements DirectArray {
 
   // After Alois P. Heinz
 
@@ -116,6 +117,11 @@ public class A309858 extends MemoryFunction2Sequence<Integer, Z> {
       mN = 0;
     }
     return get(mN, mD - mN);
+  }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return get((int) n, (int) k);
   }
 
 }

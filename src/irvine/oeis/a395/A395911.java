@@ -1,8 +1,6 @@
 package irvine.oeis.a395;
 
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
@@ -114,77 +112,148 @@ public class A395911 extends Sequence1 {
    * required subset-sum property.
    */
   private static boolean minimal(final int[] original) {
-    final int r = Functions.SUM.i(original);
-    final int half = r / 2;
+    final int half = Functions.SUM.i(original) / 2;
     final int n = original.length;
 
     /*
-     * States are sorted multisets of parts.
+     * We search directly through set partitions of the original
+     * indices.  A state is represented by the sums of its groups.
      *
-     * We deliberately continue through inadmissible states.  This is
-     * essential: for example
-     *
-     *       1,1,1 -> 1,2,1 -> 3,1
-     *
-     * contains an inadmissible intermediate state, but the final
-     * coarsening is admissible.
+     * The original partition itself is the initial state.
      */
-    final Set<String> seen = new HashSet<>();
-    final Set<String> current = new HashSet<>();
+    final int[] state = original.clone();
 
-    final int[] start = original.clone();
-    Arrays.sort(start);
+    return !hasGoodCoarsening(state, n, half);
+  }
 
-    final String startKey = key(start);
-    seen.add(startKey);
-    current.add(startKey);
+  /**
+   * Search for an admissible proper coarsening having the required
+   * subset-sum property.
+   *
+   * The current array contains the sums of the groups.
+   */
+  private static boolean hasGoodCoarsening(final int[] state,
+                                           final int originalLength,
+                                           final int half) {
 
-    while (!current.isEmpty()) {
-      final Set<String> next = new HashSet<>();
+    final int m = state.length;
 
-      for (final String stateKey : current) {
-        final int[] state = decode(stateKey);
-
-        /*
-         * A state with fewer than n parts is a proper coarsening.
-         * Test it if it is admissible.
-         */
-        if (state.length < n && admissible(state)
-          && subsetProperty(state, half)) {
-          return false;
-        }
-
-        /*
-         * If there is only one part, there is nothing more to merge.
-         */
-        if (state.length <= 1) {
-          continue;
-        }
-
-        /*
-         * Generate every possible pairwise merge.
-         *
-         * Repeated pairwise merging generates every set partition of
-         * the original parts, hence every coarsening.
-         */
-        for (int i = 0; i < state.length; ++i) {
-          for (int j = i + 1; j < state.length; ++j) {
-            final int[] merged = merge(state, i, j);
-            final String k = key(merged);
-
-            if (seen.add(k)) {
-              next.add(k);
-            }
-          }
-        }
-      }
-
-      current.clear();
-      current.addAll(next);
+    /*
+     * We are only interested in proper coarsenings.
+     */
+    if (m < originalLength && admissible(state)
+      && subsetProperty(state, half)) {
+      return true;
     }
 
-    return true;
+    /*
+     * If this state does not have the required subset sums, no further
+     * coarsening can restore them.
+     *
+     * This is the major pruning rule.
+     *
+     * The original state is known to pass, but after the first merge
+     * we can immediately use this test.
+     */
+    if (m < originalLength && !subsetProperty(state, half)) {
+      return false;
+    }
+
+    /*
+     * Try every possible pair of groups to merge.
+     *
+     * We deliberately allow an inadmissible intermediate state:
+     * e.g. 1,1,1 -> 1,2 -> 3.
+     */
+    for (int i = 0; i < m; ++i) {
+      for (int j = i + 1; j < m; ++j) {
+        final int[] next = merge(state, i, j);
+
+        if (hasGoodCoarsening(next, originalLength, half)) {
+          return true;
+        }
+      }
+    }
+
+    return false;
   }
+
+//  /**
+//   * Test that there is no proper admissible coarsening having the
+//   * required subset-sum property.
+//   */
+//  private static boolean minimal(final int[] original) {
+//    final int r = Functions.SUM.i(original);
+//    final int half = r / 2;
+//    final int n = original.length;
+//
+//    /*
+//     * States are sorted multisets of parts.
+//     *
+//     * We deliberately continue through inadmissible states.  This is
+//     * essential: for example
+//     *
+//     *       1,1,1 -> 1,2,1 -> 3,1
+//     *
+//     * contains an inadmissible intermediate state, but the final
+//     * coarsening is admissible.
+//     */
+//    final Set<String> seen = new HashSet<>();
+//    final Set<String> current = new HashSet<>();
+//
+//    final int[] start = original.clone();
+//    Arrays.sort(start);
+//
+//    final String startKey = key(start);
+//    seen.add(startKey);
+//    current.add(startKey);
+//
+//    while (!current.isEmpty()) {
+//      final Set<String> next = new HashSet<>();
+//
+//      for (final String stateKey : current) {
+//        final int[] state = decode(stateKey);
+//
+//        /*
+//         * A state with fewer than n parts is a proper coarsening.
+//         * Test it if it is admissible.
+//         */
+//        if (state.length < n && admissible(state)
+//          && subsetProperty(state, half)) {
+//          return false;
+//        }
+//
+//        /*
+//         * If there is only one part, there is nothing more to merge.
+//         */
+//        if (state.length <= 1) {
+//          continue;
+//        }
+//
+//        /*
+//         * Generate every possible pairwise merge.
+//         *
+//         * Repeated pairwise merging generates every set partition of
+//         * the original parts, hence every coarsening.
+//         */
+//        for (int i = 0; i < state.length; ++i) {
+//          for (int j = i + 1; j < state.length; ++j) {
+//            final int[] merged = merge(state, i, j);
+//            final String k = key(merged);
+//
+//            if (seen.add(k)) {
+//              next.add(k);
+//            }
+//          }
+//        }
+//      }
+//
+//      current.clear();
+//      current.addAll(next);
+//    }
+//
+//    return true;
+//  }
 
   /**
    * A coarsening is admissible iff no resulting part is 2.

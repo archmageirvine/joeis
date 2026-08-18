@@ -5,12 +5,13 @@ import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A047909 Array read by antidiagonals upwards: h(n,k) = number of sequences with n copies each of 1,2,...,k and longest increasing subsequence of length k (n&gt;=1, k&gt;=1).
  * @author Sean A. Irvine
  */
-public class A047909 extends Sequence1 {
+public class A047909 extends Sequence1 implements DirectArray {
 
   private int mN = 0;
   private int mM = 0;
@@ -43,4 +44,10 @@ public class A047909 extends Sequence1 {
     }
     return h(1 + mN - mM, mM);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return h((int) n, (int) k);
+  }
+
 }

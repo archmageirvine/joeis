@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398669.
+ * A398669 allocated for John Tyler Rascoe.
  * @author Sean A. Irvine
  */
 public class A398669 extends Sequence0 {

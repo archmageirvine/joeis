@@ -1,24 +1,33 @@
 package irvine.oeis.a396;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-import irvine.oeis.Sequence1;
-import irvine.oeis.a000.A000682;
+import irvine.oeis.a000.A000040;
 
 /**
  * A396991 allocated for Paolo P. Lava.
  * @author Sean A. Irvine
  */
-public class A396991 extends Sequence1 {
+public class A396991 extends A000040 {
 
-  private final Sequence mS = new A000682();
-  private Z mA = mS.next();
-  private long mN = 0;
+  private boolean is(final Z p) {
+    final String s = p.toString();
+    Z q = p;
+    for (int k = 0; k < s.length(); ++k) {
+      q = mPrime.nextPrime(q);
+      if (s.charAt(k) != '0' && !new Z(s.charAt(k) + q.toString()).isProbablePrime()) {
+        return false;
+      }
+    }
+    return true;
+  }
 
   @Override
   public Z next() {
-    final Z t = mA;
-    mA = mS.next();
-    return mA.multiply(++mN + 2).subtract(t.multiply(2 * mN));
+    while (true) {
+      final Z p = super.next();
+      if (is(p)) {
+        return p;
+      }
+    }
   }
 }

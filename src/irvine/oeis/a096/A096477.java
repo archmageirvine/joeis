@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A096477 Subscripts for &quot;secondary twin-primes&quot;: numbers k such that prime(prime(k)+1) - prime(prime(k)) = A073124(k) = 2.
+ * A096477 Subscripts for "secondary twin-primes": numbers k such that prime(prime(k)+1) - prime(prime(k)) = A073124(k) = 2.
  * @author Georg Fischer
  */
 public class A096477 extends SingleTransformSequence {

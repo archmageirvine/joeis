@@ -4,7 +4,7 @@ package irvine.oeis.a398;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A398393 a(n) is the number of inequivalent placements of 4 nonattacking rooks on an n X n board, up to rotations and reflections.
+ * A398393 allocated for Janaka Rodrigo.
  * @author Georg Fischer
  */
 public class A398393 extends HolonomicRecurrence {

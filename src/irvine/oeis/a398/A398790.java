@@ -4,7 +4,7 @@ package irvine.oeis.a398;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A398790 Number of ways to tile a 1 X n strip using tiles of length 1 or 2, each tile colored red or blue, such that no two red tiles are adjacent.
+ * A398790 allocated for Sajid Khan Hussain.
  * @author Georg Fischer
  */
 public class A398790 extends HolonomicRecurrence {

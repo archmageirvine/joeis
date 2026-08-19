@@ -6,7 +6,7 @@ import irvine.oeis.a342.A342021;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A230165 Numbers k such that k = sigma(k&apos;), where k&apos; is the arithmetic derivative of k.
+ * A230165 Numbers k such that k = sigma(k'), where k' is the arithmetic derivative of k.
  * @author Georg Fischer
  */
 public class A230165 extends SingleTransformSequence {

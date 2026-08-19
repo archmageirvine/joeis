@@ -6,7 +6,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a064.A064547;
 
 /**
- * A366246 The number of infinitary divisors of n that are &quot;Fermi-Dirac primes&quot; (A050376) and terms of A366242.
+ * A366246 The number of infinitary divisors of n that are "Fermi-Dirac primes" (A050376) and terms of A366242.
  * @author Georg Fischer
  */
 public class A366246 extends LambdaSequence {

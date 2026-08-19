@@ -4,7 +4,7 @@ package irvine.oeis.a398;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A398105 Number of minimal dominating sets in the 4 X n king graph.
+ * A398105 allocated for Andrew Howroyd.
  * @author Georg Fischer
  */
 public class A398105 extends HolonomicRecurrence {

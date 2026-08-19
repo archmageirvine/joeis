@@ -4,7 +4,7 @@ package irvine.oeis.a398;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A398978 Expansion of e.g.f. 1/(1 - sin(x) - sin(x)^2).
+ * A398978 allocated for Seiichi Manyama.
  * @author Georg Fischer
  */
 public class A398978 extends PolynomialFieldSequence {

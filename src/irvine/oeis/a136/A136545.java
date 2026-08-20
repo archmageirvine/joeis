@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A136545 Semi-chaotic binary digit sum/product sequence modeled on a Rudin-Shapiro-type sequence like A014081.
+ * A136545 a(n) = Sum_{k=1..floor(n*log(2))} (1 - (n - floor(n/2^k)) * (n - floor(n/2^(k - 1))) mod 2).
  * @author Sean A. Irvine
  */
 public class A136545 extends Sequence1 {

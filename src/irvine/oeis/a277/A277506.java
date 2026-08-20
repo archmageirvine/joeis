@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A277506 E.g.f.: 1/((1+LambertW(-x))*(1-x)).
+ * A277506 Expansion of e.g.f. 1/((1+LambertW(-x))*(1-x)).
  * @author Georg Fischer
  */
 public class A277506 extends TupleTransformSequence {

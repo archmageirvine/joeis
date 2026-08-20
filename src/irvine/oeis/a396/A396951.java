@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A396951 allocated for Hamza Gul Hassan.
+ * A396951 Sprague-Grundy value of the subtraction game on a pile of n counters in which a player subtracts any positive square if n == 1 (mod 4), and otherwise subtracts 3, 8, or 9.
  * @author Sean A. Irvine
  */
 public class A396951 extends CachedSequence {

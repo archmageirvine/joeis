@@ -6,7 +6,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A397275 allocated for Joshua B. Weinstein.
+ * A397275 Irregular triangle read by rows in which row m lists the full period of triangular numbers modulo m.
  * @author Sean A. Irvine
  */
 public class A397275 extends Sequence1 implements DirectSequence {

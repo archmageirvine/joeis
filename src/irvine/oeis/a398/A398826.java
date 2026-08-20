@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398826 allocated for Konstantin Mullahmetov.
+ * A398826 Number of partitions of n where the largest part is equal to the number of divisors of n.
  * @author Sean A. Irvine
  */
 public class A398826 extends Sequence1 {

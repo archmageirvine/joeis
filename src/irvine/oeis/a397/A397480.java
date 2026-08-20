@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002445;
 
 /**
- * A397480 allocated for Thomas Ordowski.
+ * A397480 a(n) = n/m for the smallest m such that denominator(B_{2m}) = denominator(B_{2n}), where B_k is the k-th Bernoulli number.
  * @author Sean A. Irvine
  */
 public class A397480 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.transform.Stirling2TransformSequence;
 
 
 /**
- * A059099 Expansion of exp(exp(x)-1)/(2-exp(x)).
+ * A059099 Expansion of e.g.f. exp(exp(x)-1)/(2-exp(x)).
  *
  * @author Georg Fischer
  */

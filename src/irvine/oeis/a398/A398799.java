@@ -6,7 +6,7 @@ import irvine.util.array.LongDynamicBooleanArray;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A398799 allocated for Ali Sada.
+ * A398799 Start with a list of positive integers, L. At step n, swap L(n) with the least multiple of L(n)+1 that has not previously been used as a swap target. The sequence consists of the successive swap targets divided by 2.
  * @author Sean A. Irvine
  */
 public class A398799 extends Sequence1 {

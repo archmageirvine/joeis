@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a033.A033620;
 
 /**
- * A398568 allocated for Bernard Schott.
+ * A398568 Nonpalindromic composite numbers all of whose proper divisors are palindromic.
  * @author Sean A. Irvine
  */
 public class A398568 extends FilterSequence {

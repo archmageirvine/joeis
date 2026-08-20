@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397756 allocated for Gnouma Jerome Kadouno.
+ * A397756 Numbers i and j both with m digits such that i*j = 10^m*R(i) + j, where R(x) is the digit reversal of x; j may end in 0.
  * @author Sean A. Irvine
  */
 public class A397756 extends Sequence0 {

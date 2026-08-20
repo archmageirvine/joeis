@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398636 allocated for Alper Ferudun.
+ * A398636 Number of construction sequences of the complete 3-uniform hypergraph on n labeled vertices.
  * @author Sean A. Irvine
  */
 public class A398636 extends Sequence0 {

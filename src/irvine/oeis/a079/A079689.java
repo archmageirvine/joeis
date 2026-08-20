@@ -5,15 +5,15 @@ import irvine.math.group.MatrixField;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
- * A079689 Determinant of the n X n matrix m(i,j)=binomial(max(i,j),min(i,j)).
+ * A079689 Determinant of the n X n matrix m(i,j) = binomial(max(i,j),min(i,j)).
  * @author Sean A. Irvine
  */
-public class A079689 extends Sequence1 {
+public class A079689 extends Sequence0 {
 
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {

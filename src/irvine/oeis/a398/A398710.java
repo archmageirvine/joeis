@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A398710 allocated for Bernard Schott.
+ * A398710 Numbers &gt; 100 such that all the substrings of length = 2 are primes and are all distinct.
  * @author Sean A. Irvine
  */
 public class A398710 extends FiniteSequence {

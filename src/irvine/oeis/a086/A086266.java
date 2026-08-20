@@ -11,20 +11,20 @@ import java.util.concurrent.Future;
 import irvine.math.graph.Graph;
 import irvine.math.graph.GraphFactory;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
- * A086266 Triangle of counts of s-clusters in n X n (0,1)-matrices for s=0, 1, ....
+ * A086266 Triangle read by rows: T(n,s) is the number of s-clusters in n X n (0,1)-matrices, s=0..A000982(n).
  * @author Sean A. Irvine
  */
-public class A086266 extends Sequence1 {
+public class A086266 extends Sequence0 {
 
   // This code was used to compute row 6
 
   private static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads", String.valueOf(Runtime.getRuntime().availableProcessors())));
-  private Z[] mRow = {};
+  private Z[] mRow = {Z.ONE};
   private int mN = 0;
-  private int mM = 0;
+  private int mM = -1;
 
   private Z[] compute(final int n, final int threads) {
     final int order = n * n;

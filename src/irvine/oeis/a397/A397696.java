@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397696 allocated for Lark Song.
+ * A397696 Number of adjacent differences less than 1/n in the sorted list with multiplicity of the fractional parts of sqrt(k) for n &lt;= k &lt;= 2n.
  * @author Sean A. Irvine
  */
 public class A397696 extends Sequence1 {

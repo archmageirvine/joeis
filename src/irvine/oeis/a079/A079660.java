@@ -5,15 +5,15 @@ import irvine.math.group.MatrixField;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
- * A079660 Determinant of the n X n matrix m(i,j)=C(i+j,abs(i-j)).
+ * A079660 Determinant of the n X n matrix m(i,j) = C(i+j,abs(i-j)).
  * @author Sean A. Irvine
  */
-public class A079660 extends Sequence1 {
+public class A079660 extends Sequence0 {
 
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {

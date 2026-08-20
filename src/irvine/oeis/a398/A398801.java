@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398801 allocated for Gnouma Jerome Kadouno.
+ * A398801 Numbers of the form i*j, where i and j both have m digits and i*j = 10^m*R(i) + j, R being the digit reversal (A004086); j may end in 0.
  * @author Sean A. Irvine
  */
 public class A398801 extends Sequence0 {

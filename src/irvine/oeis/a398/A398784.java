@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A398784 allocated for G\u00f6ktu\u011f Omay.
+ * A398784 Number of integer partitions whose Bridge-and-Torch optimum crossing time is n.
  * @author Sean A. Irvine
  */
 public class A398784 extends Sequence1 {

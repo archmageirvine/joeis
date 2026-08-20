@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398038 allocated for David Pasino.
+ * A398038 a(n) is the number of closed binary operations * on a set N of n elements such that t*(t*t)=(t*t)*t for every t in N (up to equality of operations as functions on N X N into N; i.e., labeled case of elements).
  * @author Sean A. Irvine
  */
 public class A398038 extends Sequence0 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A055651 Table T(m,k)=m^k-k^m (with 0^0 taken to be 1) as square array read by antidiagonals.
+ * A055651 Table T(m,k) = m^k - k^m (with 0^0 taken to be 1) as square array read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A055651 extends Sequence0 {

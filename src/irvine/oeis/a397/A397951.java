@@ -4,7 +4,7 @@ package irvine.oeis.a397;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A397951 allocated for Nicolas B\u011blohoubek.
+ * A397951 Number of tilings of a 4 X n rectangle using L and T tetrominoes that are indecomposable with respect to the second dimension.
  * @author Georg Fischer
  */
 public class A397951 extends HolonomicRecurrence {

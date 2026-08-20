@@ -4,7 +4,7 @@ package irvine.oeis.a233;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A233391 List of values of d in infinite family of points on Mordell curve x^3-y^2=d over quadratic field Sqrt[13].
+ * A233391 List of values of d in infinite family of points on Mordell curve x^3-y^2=d over quadratic field sqrt(13).
  * @author Georg Fischer
  */
 public class A233391 extends HolonomicRecurrence {

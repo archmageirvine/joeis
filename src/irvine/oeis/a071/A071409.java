@@ -6,15 +6,15 @@ import irvine.math.matrix.DefaultMatrix;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
- * A071409 Determinant of the n X n matrix m(i,j)=i^j+j^i.
+ * A071409 Determinant of the n X n matrix m(i,j) = i^j + j^i.
  * @author Sean A. Irvine
  */
-public class A071409 extends Sequence1 {
+public class A071409 extends Sequence0 {
 
-  private long mN = 0;
+  private long mN = -1;
 
   @Override
   public Z next() {

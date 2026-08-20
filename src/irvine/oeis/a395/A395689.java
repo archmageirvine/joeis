@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395689 allocated for Chris Segroves.
+ * A395689 Number of idempotent Latin squares of order n.
  * @author Sean A. Irvine
  */
 public class A395689 extends Sequence1 {

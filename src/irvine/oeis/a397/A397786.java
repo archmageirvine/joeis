@@ -9,7 +9,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A397786 allocated for Eric Hogle.
+ * A397786 T(n,k) is the number of positive integers x such that there are exactly k divisors d of n with x&lt;=d and gcd(x,d)=1, 1 &lt;= k &lt;= A000005(n), read by rows.
  * @author Sean A. Irvine
  */
 public class A397786 extends Sequence1 {

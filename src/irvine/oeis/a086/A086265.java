@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A086265 Numerators of mean number of s-clusters in an n X n (0,1)-matrix.
+ * A086265 Total number of s-clusters in all n X n (0,1)-matrices.
  * @author Sean A. Irvine
  */
 public class A086265 extends Sequence1 {

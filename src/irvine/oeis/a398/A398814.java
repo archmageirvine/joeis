@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A398814 allocated for Mauro Fiorentini.
+ * A398814 Numbers k such that k!! + k - 1 is prime.
  * @author Sean A. Irvine
  */
 public class A398814 extends FilterNumberSequence {

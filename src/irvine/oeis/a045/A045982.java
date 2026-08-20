@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A045982 Describe all the previous terms!.
+ * A045982 Describe all the previous terms! Version 2: concatenation of terms.
  * @author Sean A. Irvine
  */
 public class A045982 extends Sequence1 {

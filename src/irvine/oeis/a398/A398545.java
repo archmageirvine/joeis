@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A398545 allocated for Soroosh Hemmati.
+ * A398545 Least prime that congruence conditions permit as the n-th smallest prime in a Goldbach partition of an even number.
  * @author Sean A. Irvine
  */
 public class A398545 extends Sequence1 {

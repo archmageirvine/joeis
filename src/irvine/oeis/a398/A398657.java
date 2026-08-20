@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A398657 allocated for Clark Kimberling.
+ * A398657 Lower (1, 3/2) midsequence of triangular numbers (A000217) and tetrahedral numbers (A000330); see Comments.
  * @author Sean A. Irvine
  */
 public class A398657 extends MultiplicativeSequence {

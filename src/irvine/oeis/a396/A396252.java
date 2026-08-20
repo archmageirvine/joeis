@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396252 allocated for Ege \u00d6zt\u00fcrk.
+ * A396252 Conductor of the elliptic curve y^2 = x^3 + 3*n*x + (1 - n^3), the Kraus-Frey curve for x^3 + y^3 = z^k, at (x,y) = (n,1).
  * @author Sean A. Irvine
  */
 public class A396252 extends Sequence1 {

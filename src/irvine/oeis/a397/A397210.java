@@ -8,7 +8,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.transform.EulerTransformUtils;
 
 /**
- * A397210 allocated for Fr\u00e9d\u00e9ric G. Speyser.
+ * A397210 Number of rooted unlabeled 7-gonal cacti having n blocks.
  * @author Sean A. Irvine
  */
 public class A397210 extends Sequence0 {

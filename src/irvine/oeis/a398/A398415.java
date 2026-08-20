@@ -7,7 +7,7 @@ import irvine.oeis.a396.A396781;
 import irvine.oeis.a397.A397879;
 
 /**
- * A398415 allocated for Ali Sidheek.
+ * A398415 Numbers k such that A396781(k) = A397879(k).
  * @author Sean A. Irvine
  */
 public class A398415 extends Sequence1 {

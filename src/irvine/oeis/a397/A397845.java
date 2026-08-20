@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A397845 allocated for Mauro Fiorentini.
+ * A397845 Numbers k such that k! + k!! - 1 is prime, where k!! denotes double factorial (A006882).
  * @author Sean A. Irvine
  */
 public class A397845 extends FilterNumberSequence {

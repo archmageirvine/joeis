@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A100478 Pentanacci pi function: a(1)=a(2)=a(3)=a(4)=a(5)=1; for n&gt;5, a(n) = pi(Sum_{j=1..5} a(n-j)) where pi = A000720.
+ * A100478 a(1)=a(2)=a(3)=a(4)=a(5)=1; for n&gt;5, a(n) = pi(Sum_{j=1..5} a(n-j)) where pi = A000720.
  * @author Georg Fischer
  */
 public class A100478 extends MultiTransformSequence {

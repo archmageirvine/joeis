@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A395912 allocated for William Verreault.
+ * A395912 Numbers of real-algebra involutions of the multicomplex numbers that map each element of its canonical monomial basis to a signed monomial.
  * @author Sean A. Irvine
  */
 public class A395912 extends Sequence0 {

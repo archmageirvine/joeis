@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A398476 allocated for Felix Flicker.
+ * A398476 Number of singular simple connected graphs on n unlabeled nodes.
  * @author Sean A. Irvine
  */
 public class A398476 extends ParallelGenerateGraphsSequence {

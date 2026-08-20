@@ -3,7 +3,7 @@ package irvine.oeis.a398;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A398680 allocated for Ariadne Weber-Madison.
+ * A398680 Number of spanning trees of the 3 X n grid graph up to automorphisms.
  * @author Sean A. Irvine
  */
 public class A398680 extends GfSequence {

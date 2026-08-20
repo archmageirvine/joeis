@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398669 allocated for John Tyler Rascoe.
+ * A398669 Number of equivalence classes of length n words over an infinite alphabet such that all prefixes satisfy c(i) &gt;= c(j) if f(i) &lt; f(j) where c(i) is the number of occurrences of the letter i, f(i) = floor(sqrt(2*i) + 1/2), and words are equivalent under relabeling of letters with equal values of f(i).
  * @author Sean A. Irvine
  */
 public class A398669 extends Sequence0 {

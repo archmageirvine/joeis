@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000010;
 import irvine.oeis.a008.A008472;
 
 /**
- * A396113 allocated for Sajid Khan Hussain.
+ * A396113 a(n) = sopf(n) * phi(n), where sopf = A008472 and phi = A000010.
  * @author Sean A. Irvine
  */
 public class A396113 extends Combiner {

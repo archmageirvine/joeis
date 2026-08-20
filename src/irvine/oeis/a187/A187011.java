@@ -9,24 +9,16 @@ import irvine.math.matrix.LambdaMatrix;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.AbstractSequence;
-
+import irvine.oeis.Sequence0;
 
 /**
  * A187011 Determinant of the n X n matrix with (i,j)-entry equal to |p_i-p_j|, where p_k denotes the k-th prime.
  * @author Georg Fischer
  */
-public class A187011 extends AbstractSequence {
+public class A187011 extends Sequence0 {
 
-  private long mN = 0;
-  private final BiFunction<Long, Long, Q> mLambda;
-
-  /** Construct the sequence */
-  public A187011() {
-    super(1);
-    mN = 0;
-    mLambda = (i, j) -> new Q(Functions.PRIME.z(i).subtract(Functions.PRIME.z(j)).abs());
-  }
+  private long mN = -1;
+  private final BiFunction<Long, Long, Q> mLambda = (i, j) -> new Q(Functions.PRIME.z(i).subtract(Functions.PRIME.z(j)).abs());
 
   @Override
   public Z next() {

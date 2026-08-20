@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A086305 Numbers such that two successive terms have no common digit and have distinct prime signature.
+ * A086305 Lexicographically earliest sequence of distinct numbers such that two successive terms have no common digit and have distinct prime signature.
  * @author Sean A. Irvine
  */
 public class A086305 extends Sequence1 {

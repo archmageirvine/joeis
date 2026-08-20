@@ -5,7 +5,7 @@ import irvine.oeis.a037.A037077;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395921 allocated for Jwalin Bhatt.
+ * A395921 Decimal expansion of Sum_{n&gt;=0} (-1)^n*eta^(n)(n)/n!, where eta^(n) denotes the n-th derivative of the Dirichlet eta function.
  * @author Sean A. Irvine
  */
 public class A395921 extends DecimalExpansionSequence {

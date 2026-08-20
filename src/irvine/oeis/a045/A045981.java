@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A045981 Describe all the previous terms!.
+ * A045981 Describe all the previous terms! Version 1: term by term.
  * @author Sean A. Irvine
  */
 public class A045981 extends MemorySequence {

@@ -1,12 +1,13 @@
 package irvine.oeis.a022;
 
 import irvine.math.z.Z;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A022818 Square array read by antidiagonals: A(n,k) = number of terms in the n-th derivative of a function composed with itself k times (n, k &gt;= 1).
  * @author Sean A. Irvine
  */
-public class A022818 extends A022811 {
+public class A022818 extends A022811 implements DirectArray {
 
   /** Construct the sequence. */
   public A022818() {
@@ -24,4 +25,10 @@ public class A022818 extends A022811 {
     }
     return get(mN, mD - mN);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return get(n, k);
+  }
+
 }

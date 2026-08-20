@@ -5,12 +5,13 @@ import java.util.HashMap;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A211318 Triangle read by rows: number of permutations of 1..n by length l of longest run (n &gt;= 1, 1 &lt;= l &lt;= n).
  * @author Sean A. Irvine
  */
-public class A211318 extends AbstractSequence {
+public class A211318 extends AbstractSequence implements DirectArray {
 
   /**
    * Constructor with offset.
@@ -72,6 +73,11 @@ public class A211318 extends AbstractSequence {
       mP = 0;
     }
     return a(mN, ++mP);
+  }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return a((int) n, (int) k);
   }
 
 }

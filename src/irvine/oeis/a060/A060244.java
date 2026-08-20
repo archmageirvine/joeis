@@ -6,12 +6,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A060244 Triangle a(n,k) of bipartite partitions of n objects into parts &gt;1, k of which are black.
  * @author Sean A. Irvine
  */
-public class A060244 extends Sequence0 {
+public class A060244 extends Sequence0 implements DirectArray {
 
   private int mN = -1;
   private int mM = 0;
@@ -19,7 +20,7 @@ public class A060244 extends Sequence0 {
 
   private Polynomial<Polynomial<Z>> getGf(final int n) {
     final DegreeLimitedPolynomialRingField<Z> inner = new DegreeLimitedPolynomialRingField<>("y", IntegerField.SINGLETON, n);
-    final PolynomialRingField<Polynomial<Z>> ring =  new PolynomialRingField<>(inner);
+    final PolynomialRingField<Polynomial<Z>> ring = new PolynomialRingField<>(inner);
     Polynomial<Polynomial<Z>> den = ring.one();
     for (int k = 2; k <= n; ++k) {
       for (int j = 0; j <= k; ++j) {
@@ -38,4 +39,10 @@ public class A060244 extends Sequence0 {
     }
     return mGf.coeff(mN - mM).coeff(mM);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return getGf((int) n).coeff(n - k).coeff(k);
+  }
+
 }

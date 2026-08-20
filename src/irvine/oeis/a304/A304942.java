@@ -8,12 +8,13 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A304942 Triangle read by rows: T(n,k) is the number of nonisomorphic binary n X n matrices with k 1's per column under row and column permutations.
  * @author Sean A. Irvine
  */
-public class A304942 extends Sequence0 {
+public class A304942 extends Sequence0 implements DirectArray {
 
   // After Andrew Howroyd
 
@@ -68,4 +69,10 @@ public class A304942 extends Sequence0 {
     }
     return blocks(mN, mN, mM);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return blocks((int) n, (int) n, (int) k);
+  }
+
 }

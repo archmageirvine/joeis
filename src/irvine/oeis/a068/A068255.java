@@ -7,12 +7,13 @@ import irvine.math.IntegerUtils;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A068255 1/5 the number of colorings of an n X n square array with 5 colors.
  * @author Sean A. Irvine
  */
-public class A068255 extends Sequence1 {
+public class A068255 extends Sequence1 implements DirectArray {
 
   // Note A068254 is slightly faster implementation style for power of two colors
 
@@ -102,4 +103,10 @@ public class A068255 extends Sequence1 {
   public Z next() {
     return t(++mN, mN);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return t((int) n, (int) k);
+  }
+
 }

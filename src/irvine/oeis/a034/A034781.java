@@ -3,12 +3,13 @@ package irvine.oeis.a034;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunctionInt3Sequence;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A034781 Triangle of number of rooted trees with n &gt;= 2 nodes and height h &gt;= 1.
  * @author Sean A. Irvine
  */
-public class A034781 extends MemoryFunctionInt3Sequence<Z> {
+public class A034781 extends MemoryFunctionInt3Sequence<Z> implements DirectArray {
 
   /**
    * Constructor with offset.
@@ -54,6 +55,12 @@ public class A034781 extends MemoryFunctionInt3Sequence<Z> {
       mD = 1;
     }
     return t(mN, mD);
+  }
+
+
+  @Override
+  public Z a(final long n, final long k) {
+    return t((int) n, (int) k);
   }
 
 }

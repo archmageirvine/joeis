@@ -2,13 +2,14 @@ package irvine.oeis.a215;
 
 import irvine.math.z.Z;
 import irvine.oeis.a147.A147682;
+import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
  * A215561 Number A(n,k) of permutations of k indistinguishable copies of 1..n with every partial sum &lt;= the same partial sum averaged over all permutations; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Georg Fischer
  */
-public class A215561 extends UpperLeftTriangle {
+public class A215561 extends UpperLeftTriangle implements DirectArray {
 
   /** Construct the sequence. */
   public A215561() {
@@ -24,4 +25,10 @@ public class A215561 extends UpperLeftTriangle {
     }
     return A147682.B.get(list);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return matrixElement((int) n, (int) k);
+  }
+
 }

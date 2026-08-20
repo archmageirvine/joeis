@@ -4,12 +4,13 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A077042 Square array read by falling antidiagonals of central polynomial coefficients: largest coefficient in expansion of (1 + x + x^2 + ... + x^(n-1))^k = ((1-x^n)/(1-x))^k, i.e., the coefficient of x^floor(k*(n-1)/2) and of x^ceiling(k*(n-1)/2); also number of compositions of floor(k*(n+1)/2) into exactly k positive integers each no more than n.
  * @author Sean A. Irvine
  */
-public class A077042 extends AbstractSequence {
+public class A077042 extends AbstractSequence implements DirectArray {
 
   private int mN = -1;
   private int mM = 0;
@@ -39,5 +40,11 @@ public class A077042 extends AbstractSequence {
     }
     return t(mN - mM, mM);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return t((int) n, (int) k);
+  }
+
 }
 

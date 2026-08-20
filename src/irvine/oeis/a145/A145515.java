@@ -5,12 +5,13 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A145515 Square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals: A(n,k) is the number of partitions of k^n into powers of k.
  * @author Sean A. Irvine
  */
-public class A145515 extends Sequence0 {
+public class A145515 extends Sequence0 implements DirectArray {
 
   // After Alois P. Heinz
 
@@ -50,4 +51,10 @@ public class A145515 extends Sequence0 {
     }
     return t(mN, mD - mN);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return t((int) n, (int) k);
+  }
+
 }

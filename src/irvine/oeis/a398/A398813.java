@@ -23,7 +23,7 @@ public class A398813 extends Sequence1 {
     return mIterations.get(m);
   }
 
-  private boolean is(long m, final int n) {
+  private boolean is(final long m, final int n) {
     return iterations(m) == n + 1;
   }
 

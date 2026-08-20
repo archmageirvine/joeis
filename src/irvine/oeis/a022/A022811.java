@@ -3,12 +3,13 @@ package irvine.oeis.a022;
 import irvine.math.MemoryFunction3;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A022811 Number of terms in n-th derivative of a function composed with itself 3 times.
  * @author Sean A. Irvine
  */
-public class A022811 extends MemoryFunction2Sequence<Long, Z> {
+public class A022811 extends MemoryFunction2Sequence<Long, Z> implements DirectArray {
 
   /** Construct the sequence. */
   public A022811() {
@@ -63,4 +64,10 @@ public class A022811 extends MemoryFunction2Sequence<Long, Z> {
   public Z next() {
     return get(++mN, 3L);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return get(n, k);
+  }
+
 }

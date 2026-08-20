@@ -4,12 +4,13 @@ import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A133709 Triangle read by rows: T(m,l) = number of labeled covers of size l of a finite set of m unlabeled elements (m &gt;= 1, 1 &lt;= l &lt;= 2^m - 1).
  * @author Sean A. Irvine
  */
-public class A133709 extends MemoryFunction2Sequence<Integer, Z> {
+public class A133709 extends MemoryFunction2Sequence<Integer, Z> implements DirectArray {
 
   /** Construct the sequence. */
   public A133709() {
@@ -42,4 +43,10 @@ public class A133709 extends MemoryFunction2Sequence<Integer, Z> {
     }
     return get(mN, mL);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return get((int) n, (int) k);
+  }
+
 }

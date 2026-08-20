@@ -6,12 +6,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A125183 Triangle read by rows: T(n,k) is the number of permutations p of {1,2,...,n} such that the set {|p(i)-i|, i=1,2,...,n} has exactly k elements (1&lt;=k&lt;=n).
  * @author Sean A. Irvine
  */
-public class A125183 extends Sequence1 {
+public class A125183 extends Sequence1 implements DirectArray {
 
   // After Alois P. Heinz
 
@@ -52,4 +53,10 @@ public class A125183 extends Sequence1 {
     }
     return t(mN, mM);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return t((int) n, (int) k);
+  }
+
 }

@@ -6,13 +6,14 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
+import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.Triangle;
 
 /**
  * A337165 Number T(n,k) of compositions of n into k nonzero squares; triangle T(n,k), n&gt;=0, 0&lt;=k&lt;=n, read by rows.
  * @author Georg Fischer
  */
-public class A337165 extends Triangle {
+public class A337165 extends Triangle implements DirectArray {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 
@@ -51,4 +52,10 @@ public class A337165 extends Triangle {
   public Z compute(final int n, final int k) {
     return mB.get(n).coeff(k);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return mB.get((int) n).coeff(k);
+  }
+
 }

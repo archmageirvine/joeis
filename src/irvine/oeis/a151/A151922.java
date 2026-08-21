@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a079.A079316;
 
 /**
- * A151922 Number of first-quadrant cells (including the two boundaries) that are &quot;ON&quot; after n-th stage of the Holladay-Ulam cellular automaton.
+ * A151922 Number of first-quadrant cells (including the two boundaries) that are "ON" after n-th stage of the Holladay-Ulam cellular automaton.
  * @author Georg Fischer
  */
 public class A151922 extends FilterSequence {

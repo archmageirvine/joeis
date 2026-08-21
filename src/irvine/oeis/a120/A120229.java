@@ -6,7 +6,7 @@ import irvine.oeis.a059.A059897;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A120229 Split-floor-multiplier sequence (SFMS) using multipliers 1/3 and 3. The SFMS using multipliers r and s is here introduced: for every positive integer n and positive real number r, let [rn] abbreviate floor(rn). Then SFMS(r, s), where max {r, s} &gt; 1, is the
+ * A120229 Split-floor-multiplier sequence (SFMS) using multipliers 1/3 and 3. The SFMS using multipliers r and s is here introduced: for every positive integer n and positive real number r, let [rn] abbreviate floor(rn). Then SFMS(r, s), where max {r, s} &gt; 1, is the sequence a defined by a(n)=[rn] if [rn] &gt; 0 and is not already in a and a(n) = [sn] otherwise.
  * @author Georg Fischer
  */
 public class A120229 extends LambdaSequence {

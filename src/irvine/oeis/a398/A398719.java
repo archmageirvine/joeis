@@ -27,7 +27,7 @@ public class A398719 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sum(1, ++mN, k -> mB.get(2 * mN - 1, k, 1));
+    return Integers.SINGLETON.sum(1, ++mN, k -> mB.get(2L * mN - 1, k, 1));
   }
 }
 

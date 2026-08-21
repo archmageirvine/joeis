@@ -6,7 +6,7 @@ import irvine.oeis.a059.A059897;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A120230 Split-floor-multiplier sequence (SFMS) using multipliers 1/4 and 4. (SFMS is defined at A120229.)
+ * A120230 Split-floor-multiplier sequence (SFMS) using multipliers 1/4 and 4. (SFMS is defined at A120229.).
  * @author Georg Fischer
  */
 public class A120230 extends LambdaSequence {

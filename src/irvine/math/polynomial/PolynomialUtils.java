@@ -232,6 +232,7 @@ public final class PolynomialUtils {
     for (final Z v : p) {
       res.add(new Q(v));
     }
+    res.setIndeterminate(p.getIndeterminate());
     return res;
   }
 
@@ -245,6 +246,7 @@ public final class PolynomialUtils {
     for (final Q v : p) {
       res.add(v.toZ());
     }
+    res.setIndeterminate(p.getIndeterminate());
     return res;
   }
 

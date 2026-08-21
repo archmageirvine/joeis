@@ -6,7 +6,7 @@ import irvine.oeis.a304.A304942;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A247597 Number of nonisomorphic binary n X n matrices with four 1&apos;s per column under row and column permutations.
+ * A247597 Number of nonisomorphic binary n X n matrices with four 1's per column under row and column permutations.
  * @author Georg Fischer
  */
 public class A247597 extends LambdaSequence {

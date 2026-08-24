@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001055;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A398813 allocated for Jishnu Babu Ranitha.
+ * A398813 Smallest number requiring n iterations of the multiplicative partition function A001055 to reach 1.
  * @author Sean A. Irvine
  */
 public class A398813 extends Sequence1 {

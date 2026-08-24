@@ -8,7 +8,7 @@ import irvine.oeis.a005.A005316;
 import irvine.oeis.a060.A060206;
 
 /**
- * A077460 Number of nonisomorphic ways a loop can cross a road (running East-West) 2n times.
+ * A077460 Number of closed meanders (loops crossing a road 2n times) that are nonisomorphic under reflection and rotation.
  * @author Sean A. Irvine
  */
 public class A077460 extends Sequence0 {

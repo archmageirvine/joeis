@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398490 allocated for Felix Huber.
+ * A398490 a(n) is the maximum number of sides of a simple polygon with positive integer side lengths inscribed in a circle of radius n.
  * @author Sean A. Irvine
  */
 public class A398490 extends Sequence1 {
@@ -24,7 +24,7 @@ public class A398490 extends Sequence1 {
    * @param m maximum index
    * @return radical array, with entry 0 unused
    */
-  private long[] q(final int m) {
+  static long[] q(final int m) {
     final int[] p = new int[m + 1];
     final long[] a = new long[m + 1];
     a[1] = 1;
@@ -47,7 +47,7 @@ public class A398490 extends Sequence1 {
   }
 
   // Sign of a + b sqrt(d), where the representation used here is determined by the Maple routine s()
-  private int s(final Z a, final Z b, final long d) {
+  static int s(final Z a, final Z b, final long d) {
     if (d == 1) {
       return a.add(b).signum();
     }
@@ -74,7 +74,7 @@ public class A398490 extends Sequence1 {
 
 
   // Canonicalize an element when d = 1.
-  private Z[] c(final Z[] x, final long d) {
+  static Z[] c(final Z[] x, final long d) {
     if (d == 1) {
       return new Z[] {
         x[0].add(x[1]),
@@ -86,7 +86,7 @@ public class A398490 extends Sequence1 {
     return x;
   }
 
-  private Z[] mul(final Z[] x, final Z[] y, final long d) {
+  static Z[] mul(final Z[] x, final Z[] y, final long d) {
     return c(new Z[] {
       x[0].multiply(y[0])
         .add(x[1].multiply(y[1]).multiply(d))
@@ -107,11 +107,11 @@ public class A398490 extends Sequence1 {
     }, d);
   }
 
-  private Z[] h(final Z[] x) {
+  static Z[] h(final Z[] x) {
     return new Z[] {x[0], x[1], x[2].negate(), x[3].negate()};
   }
 
-  private Z[] scale(final Z[] x, final Z a) {
+  static Z[] scale(final Z[] x, final Z a) {
     return new Z[] {
       x[0].multiply(a),
       x[1].multiply(a),
@@ -120,7 +120,7 @@ public class A398490 extends Sequence1 {
     };
   }
 
-  private Z[] b(final long j, final long u, final long d) {
+  static Z[] b(final long j, final long u, final long d) {
     if (d == 1) {
       return new Z[] {Z.valueOf(u), Z.ZERO, Z.valueOf(j), Z.ZERO};
     }
@@ -130,15 +130,15 @@ public class A398490 extends Sequence1 {
   /**
    * Add v to t[k].
    */
-  private void add(final Map<Integer, Z> t, final int k, final Z v) {
+  static void add(final Map<Integer, Z> t, final int k, final Z v) {
     t.merge(k, v, Z::add);
   }
 
-  private boolean equal(final Z[] a, final Z[] b) {
+  static boolean equal(final Z[] a, final Z[] b) {
     return a[0].equals(b[0]) && a[1].equals(b[1]) && a[2].equals(b[2])  && a[3].equals(b[3]);
   }
 
-  private void f(final List<Z[]> v, final long d, final int j, final Z[] a, final int k, final Map<Integer, Z> x, final Map<Integer, Z> y, final Z twoN) {
+  static void f(final List<Z[]> v, final long d, final int j, final Z[] a, final int k, final Map<Integer, Z> x, final Map<Integer, Z> y, final Z twoN) {
     if (a[0].equals(twoN.pow(k).negate()) && a[1].isZero() && a[2].isZero() && a[3].isZero()) {
       if (k >= 3) {
         add(x, k, Z.ONE);
@@ -165,7 +165,7 @@ public class A398490 extends Sequence1 {
     }
   }
 
-  private void g(final List<Z[]> v, final long d, final int j, final Z[] a, final int k, final Z[] w, final Map<Integer, Z> t, final Z twoN) {
+  static void g(final List<Z[]> v, final long d, final int j, final Z[] a, final int k, final Z[] w, final Map<Integer, Z> t, final Z twoN) {
     if (k >= 2 && equal(a, scale(w, twoN.pow(k - 1)))) {
       add(t, k + 1, Z.ONE);
       return;

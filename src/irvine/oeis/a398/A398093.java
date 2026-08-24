@@ -4,10 +4,10 @@ import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
- * A398096 Number of nonisomorphic n X n symmetric nonnegative integer matrices with each row sum nonzero and at most 2, under row and column permutations.
+ * A398093 a(n) is the number of distinct ordered difference sequences of graceful permutations of length n.
  * @author Sean A. Irvine
  */
-public class A398096 extends A398094 {
+public class A398093 extends A398094 {
 
   @Override
   public Z next() {

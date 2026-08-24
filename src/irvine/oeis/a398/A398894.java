@@ -6,7 +6,7 @@ import irvine.oeis.a081.A081528;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A398894 allocated for Nadav Mizrahi.
+ * A398894 Minimum value of k such that there exists a subset S of {1, ..., k} of size n for which the average of every nonempty subset of S is an integer.
  * @author Sean A. Irvine
  */
 public class A398894 extends PrependSequence {

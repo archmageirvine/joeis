@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398370 allocated for Jake Foth.
+ * A398370 a(1)=1; for n&gt;=2, a(n)=a(n-1)+n if a(n-1) mod floor(phi*n)&lt;n, otherwise a(n)=floor(a(n-1)/phi), where phi=(1+sqrt(5))/2.
  * @author Sean A. Irvine
  */
 public class A398370 extends Sequence1 {

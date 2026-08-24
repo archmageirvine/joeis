@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A398936 allocated for Clark Kimberling.
+ * A398936 Nonnegative integers k satisfying sin(k) &gt; sin(k+1) &gt; sin(k+2) &gt; sin(k+2) &gt; sin(k+3) &gt; sin(k+4) &lt; sin(k+5).
  * @author Sean A. Irvine
  */
 public class A398936 extends FilterNumberSequence {

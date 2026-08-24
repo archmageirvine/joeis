@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398263 allocated for Felix Huber.
+ * A398263 a(n) is the maximum number of unordered representations with repetition of an integer as x + y, where x and y are chosen from the set of distinct multinomial coefficient values of order n.
  * @author Sean A. Irvine
  */
 public class A398263 extends Sequence1 {

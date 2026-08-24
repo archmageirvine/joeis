@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A039821 Numerators in Stirling expansion of middle binomial coefficient.
+ * A039821 Numerators in Stirling expansion of central binomial coefficient C(2*n,n).
  * @author Sean A. Irvine
  */
 public class A039821 extends Sequence1 {

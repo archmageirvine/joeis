@@ -3,7 +3,7 @@ package irvine.oeis.a345;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A345833 Numbers that are the sum of eight fourth powers in exactly one ways.
+ * A345833 Numbers that are the sum of eight fourth powers in exactly one way.
  * @author Sean A. Irvine
  */
 public class A345833 extends LimitedSumOfLikePowersSequence {

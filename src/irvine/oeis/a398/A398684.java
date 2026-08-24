@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A398684 allocated for Dylan Poulsen.
+ * A398684 Decimal expansion of two-dimensional minimum-variance onion constant.
  * @author Sean A. Irvine
  */
 public class A398684 extends DecimalExpansionSequence {

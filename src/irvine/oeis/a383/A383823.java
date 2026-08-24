@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A383823 a(n) is the number of secondary GL(4) invariants contructed from n+3 distinct four component vectors.
+ * A383823 a(n) is the number of secondary GL(4) invariants constructed from n+3 distinct four component vectors.
  * @author Georg Fischer
  */
 public class A383823 extends LambdaSequence {

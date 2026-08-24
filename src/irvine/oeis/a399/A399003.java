@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399003 allocated for Zhining Yang.
+ * A399003 a(n) is the least prime p such that p^2 is the concatenation of two primes in exactly n different ways.
  * @author Sean A. Irvine
  */
 public class A399003 extends Sequence0 {

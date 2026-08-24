@@ -4,7 +4,7 @@ import irvine.factor.prime.Fast;
 import irvine.oeis.ParallelPermutationSequence;
 
 /**
- * A397413 allocated for Patrick X. Reymond.
+ * A397413 a(n) is the number of circular arrangements of 1, 2, ..., 2n such that every pair of adjacent numbers sums to a prime and every pair of antipodal (diametrically opposite) numbers differs by n, up to rotations and reflections.
  * @author Sean A. Irvine
  */
 public class A397413 extends ParallelPermutationSequence {

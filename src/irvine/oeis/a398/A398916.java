@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A398916 allocated for Do Thanh Nhan.
+ * A398916 a(n) is the Grundy value of "Bit Deletion" game at state n (see comments).
  * @author Sean A. Irvine
  */
 public class A398916 extends CachedSequence {

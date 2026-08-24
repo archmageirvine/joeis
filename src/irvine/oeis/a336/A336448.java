@@ -7,7 +7,7 @@ import irvine.oeis.a078.A078797;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A336448 Sum of square displacements over all n-step self-avoiding walks on a 2D square lattice.
+ * A336448 Sum of squared end-to-end distances over all n-step self-avoiding walks on the square lattice.
  * @author Georg Fischer
  */
 public class A336448 extends SingleTransformSequence {

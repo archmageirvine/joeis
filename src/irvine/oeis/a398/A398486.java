@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398486 allocated for Chang Sunny Lu.
+ * A398486 Numbers k such that cos(k) &gt; cos(k+1) &gt; cos(k+2) &gt; cos(k+3) &gt; cos(k+4).
  * @author Sean A. Irvine
  */
 public class A398486 extends Sequence1 {

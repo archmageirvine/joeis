@@ -4,7 +4,7 @@ package irvine.oeis.a398;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A398862 allocated for Sathish Kumar.
+ * A398862 Number of points with even coordinate sum in the cube [-n,n]^3 having an odd number of lattice neighbors inside the cube.
  * @author Georg Fischer
  */
 public class A398862 extends GeneratingFunctionSequence {

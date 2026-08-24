@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.TwoParameterFormSequence;
 
 /**
- * A398228 allocated for Vincenzo Manto.
+ * A398228 Numbers that are the sum of two Lucas numbers.
  * @author Sean A. Irvine
  */
 public class A398228 extends TwoParameterFormSequence {

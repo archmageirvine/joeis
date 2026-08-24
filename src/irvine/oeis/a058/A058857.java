@@ -16,7 +16,7 @@ import irvine.oeis.Sequence1;
 public class A058857 extends Sequence1 {
 
   private static final GaloisField GF7 = new GaloisField(7);
-  private static final PolynomialRingField<Z> GF7X = new PolynomialRingField<>(new GaloisField(5));
+  private static final PolynomialRingField<Z> GF7X = new PolynomialRingField<>(GF7);
   private int mN = -1;
 
   @Override

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004154;
 
 /**
- * A398949 allocated for Alexander Willis.
+ * A398949 Numbers k that divide the digit reversal of k!.
  * @author Sean A. Irvine
  */
 public class A398949 extends Sequence1 {

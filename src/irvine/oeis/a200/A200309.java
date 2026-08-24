@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A200309 Expansion of e.g.f.: 1/(cos(x) - x).
+ * A200309 Expansion of e.g.f. 1/(cos(x) - x).
  * E.g.f.: 1/(cos(x) - x)
  * @author Georg Fischer
  */

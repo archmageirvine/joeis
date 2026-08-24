@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.ParallelPermutationSequence;
 
 /**
- * A397137 allocated for Marko Radulovic.
+ * A397137 Sum of excess shadings of all permutations of [n] using a reflected interval shading.
  * @author Sean A. Irvine
  */
 public class A397137 extends ParallelPermutationSequence {

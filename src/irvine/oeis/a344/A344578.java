@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A344578 a(n) = Sum_{d|n} d * sopf(d).
+ * A344578 a(n) = Sum_{d|n} d*sopf(d).
  * @author Georg Fischer
  */
 public class A344578 extends LambdaSequence {

@@ -3,15 +3,15 @@ package irvine.oeis.a398;
 import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
- * A398719 allocated for Bartlomiej Pawlik.
+ * A398719 Number of even words of length 2n over the positive integers such that no proper nonempty prefix is even and the letters first appear in increasing order.
  * @author Sean A. Irvine
  */
-public class A398719 extends Sequence1 {
+public class A398719 extends Sequence0 {
 
-  private int mN = 0;
+  private int mN = -1;
   private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<>() {
     @Override
     protected Z compute(final int t, final int k, final int r) {
@@ -27,7 +27,7 @@ public class A398719 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sum(1, ++mN, k -> mB.get(2L * mN - 1, k, 1));
+    return ++mN == 0 ? Z.ONE : Integers.SINGLETON.sum(1, mN, k -> mB.get(2L * mN - 1, k, 1));
   }
 }
 

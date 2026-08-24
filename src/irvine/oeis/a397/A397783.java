@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001694;
 
 /**
- * A397783 allocated for Lee M. J. Rich.
+ * A397783 allocated for Zoltan Reti.
  * @author Sean A. Irvine
  */
 public class A397783 extends Sequence1 {

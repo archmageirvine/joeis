@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393643 allocated for Marco Rip\u00e0.
+ * A393643 Primes of the form x^^y + w^^z, where x, y, w, z &gt;= 2 and ^^ denotes tetration.
  * @author Sean A. Irvine
  */
 public class A393643 extends Sequence1 {
@@ -28,7 +28,7 @@ public class A393643 extends Sequence1 {
       if (x.compareTo(Z.valueOf(m.bitLength())) >= 0) {
         return m;
       }
-      x = Z.valueOf(a).pow(x.intValue());
+      x = Z.valueOf(a).pow(x.longValueExact());
       if (x.compareTo(m) >= 0) {
         return m;
       }
@@ -37,18 +37,17 @@ public class A393643 extends Sequence1 {
   }
 
   private void extend() {
-    final Set<Z> t = new HashSet<>();
-    for (long r = 2; Z.valueOf(r).square().compareTo(mLimit) < 0; ++r) {
+    final TreeSet<Z> v = new TreeSet<>();
+    for (long r = 2; Z.valueOf(r).pow(r).compareTo(mLimit) < 0; ++r) {
       for (int s = 2; ; ++s) {
         final Z x = tet(r, s, mLimit);
         if (x.compareTo(mLimit) >= 0) {
           break;
         }
-        t.add(x);
+        v.add(x);
       }
     }
 
-    final TreeSet<Z> v = new TreeSet<>(t);
     final Set<Z> sums = new HashSet<>();
     for (final Z x : v) {
       for (final Z y : v) {

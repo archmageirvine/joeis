@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393916 allocated for Duc Ngo.
+ * A393916 a(n) is the least positive integer k such that k times the n-th triangular number is pentagonal.
  * @author Sean A. Irvine
  */
 public class A393916 extends Sequence1 {

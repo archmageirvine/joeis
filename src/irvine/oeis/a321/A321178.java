@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a109.A109723;
 
 /**
- * A321178 One-half the sum of the first 2n + 1 primes.
+ * A321178 One-half the sum of the first 2*n + 1 primes.
  * @author Georg Fischer
  */
 public class A321178 extends AbstractSequence {

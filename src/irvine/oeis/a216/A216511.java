@@ -6,13 +6,12 @@ import irvine.oeis.a000.A000122;
 
 /**
  * A216511 Number of positive integer solutions to the equation a^2 + 7*b^2 = n.
- * new A000122()
  * @author Georg Fischer
  */
 public class A216511 extends PolynomialFieldSequence {
 
   /** Construct the sequence. */
   public A216511() {
-    super(1, "[1]", "x,B,1,-,x,^7,B,1,-,*,4,/", 0, 0, 1, 1, new A000122());
+    super(0, "[1]", "x,B,1,-,x,^7,B,1,-,*,4,/", 0, 0, 1, 1, new A000122());
   }
 }

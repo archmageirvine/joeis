@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398808 allocated for Alex Shvets.
+ * A398808 a(n) = 27^n * [z^n] 2F1(1/3, 1/3; 1; z)^2.
  * @author Sean A. Irvine
  */
 public class A398808 extends Sequence0 {

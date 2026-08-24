@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398928 allocated for Alexander Krivilev.
+ * A398928 a(n) = numerator of Sum_{k = 1..n} 2^ceiling(log_2(k))/k.
  * @author Sean A. Irvine
  */
 public class A398928 extends Sequence1 {

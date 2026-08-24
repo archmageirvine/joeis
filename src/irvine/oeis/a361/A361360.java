@@ -4,7 +4,7 @@ package irvine.oeis.a361;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A361360 Number of nonequivalent noncrossing caterpillars with n edges up to rotation and relection.
+ * A361360 Number of nonequivalent noncrossing caterpillars with n edges up to rotation and reflection.
  * @author Georg Fischer
  */
 public class A361360 extends GeneratingFunctionSequence {

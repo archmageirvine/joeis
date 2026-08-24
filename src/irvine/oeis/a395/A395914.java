@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002321;
 
 /**
- * A395914 allocated for Ankith Burki.
+ * A395914 a(n) is the smallest k such that 2^(n-1) &lt;= k &lt; 2^n at which |M(k)|/sqrt(k) attains its maximum value in that interval, where M is the Mertens function A002321.
  * @author Sean A. Irvine
  */
 public class A395914 extends Sequence1 {

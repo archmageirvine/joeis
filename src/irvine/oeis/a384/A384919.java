@@ -3,7 +3,7 @@ package irvine.oeis.a384;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A384919 Tooth numbering sytem (permanent), FDI and ISO 3950.
+ * A384919 Tooth numbering system (permanent), FDI and ISO 3950.
  * @author Sean A. Irvine
  */
 public class A384919 extends FiniteSequence {

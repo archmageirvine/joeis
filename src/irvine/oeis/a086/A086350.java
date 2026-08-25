@@ -16,7 +16,7 @@ public class A086350 extends Sequence0 {
   private long mN = 0;
   private long mM = -1;
 
-  private Z t(final long n, final long k) {
+  protected Z t(final long n, final long k) {
     return S1.multiply(CR.SQRT2.add(k).pow(n)).subtract(S2.multiply(CR.valueOf(k).subtract(CR.SQRT2).pow(n))).divide(S8).round();
   }
 

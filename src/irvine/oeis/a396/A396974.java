@@ -8,7 +8,7 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
 import irvine.oeis.Sequence0;
 
 /**
- * A399108 allocated for Brian Klemm.
+ * A396974 allocated for Brian Klemm.
  * @author Sean A. Irvine
  */
 public class A396974 extends Sequence0 {

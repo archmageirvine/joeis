@@ -19,7 +19,7 @@ public class A316667 extends Sequence1 {
   private static final int[] DELTA_Y = {0, 1, 0, -1};
   private static final int[] KNIGHT_DELTA_X = {2, 1, -1, -2, -2, -1, 1, 2};
   private static final int[] KNIGHT_DELTA_Y = {1, 2, 2, 1, -1, -2, -2, -1};
-  private final int mJ;
+  private final int mSpecialFirst;
   private Point mPoint = null;
 
   private long mM = 1;
@@ -30,14 +30,18 @@ public class A316667 extends Sequence1 {
   private int mE = 0;
   private final Map<Point, Long> mSpiral = new HashMap<>();
   private final Set<Point> mUsed = new HashSet<>();
+  private final int[] mMoveX;
+  private final int[] mMoveY;
 
-  protected A316667(final int j) {
-    mJ = j;
+  protected A316667(final int[] moveX, final int[] moveY, final int specialFirst) {
+    mMoveX = moveX;
+    mMoveY = moveY;
+    mSpecialFirst = specialFirst;
   }
 
   /** Construct the sequence. */
   public A316667() {
-    this(7);
+    this(KNIGHT_DELTA_X, KNIGHT_DELTA_Y, 7);
   }
 
   private long findPos(final Point wanted) {
@@ -65,15 +69,15 @@ public class A316667 extends Sequence1 {
       mPoint = new Point(0, 0);
       mUsed.add(mPoint);
       return Z.valueOf(findPos(mPoint));
-    } else if (mUsed.size() == 1) {
-      mPoint = new Point(mPoint.left() + KNIGHT_DELTA_X[mJ], mPoint.right() + KNIGHT_DELTA_Y[mJ]);
+    } else if (mSpecialFirst >= 0 && mUsed.size() == 1) {
+      mPoint = new Point(mPoint.left() + mMoveX[mSpecialFirst], mPoint.right() + mMoveY[mSpecialFirst]);
       mUsed.add(mPoint);
       return Z.valueOf(findPos(mPoint));
     } else {
       long bestPos = Long.MAX_VALUE;
       Point bestP = null;
-      for (int k = 0; k < KNIGHT_DELTA_X.length; ++k) {
-        final Point p = new Point(mPoint.left() + KNIGHT_DELTA_X[k], mPoint.right() + KNIGHT_DELTA_Y[k]);
+      for (int k = 0; k < mMoveX.length; ++k) {
+        final Point p = new Point(mPoint.left() + mMoveX[k], mPoint.right() + mMoveY[k]);
         if (!mUsed.contains(p)) {
           final long pos = findPos(p);
           if (pos < bestPos) {

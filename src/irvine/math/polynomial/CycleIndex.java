@@ -539,7 +539,7 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
     return res;
   }
 
-  private CycleIndex scale(final int k) {
+  public CycleIndex scale(final int k) {
     final CycleIndex r = new CycleIndex(getName() + "_" + k);
     for (final MultivariateMonomial m : values()) {
       final MultivariateMonomial scale = new MultivariateMonomial();
@@ -554,7 +554,7 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
 
   /**
    * Replace <code>x_k</code> in this cycle index with <code>g(z_k,...,z_mk,...)</code>.
-   * Also called, plethysym.
+   * Also called, plethsym.
    * @param g a cycle index
    * @return application
    */
@@ -674,6 +674,23 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
     return res;
   }
 
+  /**
+   * Truncate this cycle index according to cycle-index weight.
+   * The weight of x_1^a1 x_2^a2 ... is sum(i * ai).
+   *
+   * @param n maximum weight to retain
+   * @return truncated cycle index
+   */
+  public CycleIndex weightedTruncate(final int n) {
+    final CycleIndex res = new CycleIndex(getName() + "<=" + n);
+    for (final MultivariateMonomial m : values()) {
+      if (m.weight() <= n) {
+        res.add(m);
+      }
+    }
+    return res;
+  }
+
   @Override
   public String toString() {
     final StringBuilder sb = new StringBuilder();
@@ -719,4 +736,84 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
     }
     return res;
   }
+
+  /**
+   * Generate a homogeneous version of this cycle index.
+   * @param n weight of terms to retain
+   * @return cycle index with terms of weight n
+   */
+  public CycleIndex homogeneous(final int n) {
+    final CycleIndex res = new CycleIndex("H(" + n + ")");
+    for (final MultivariateMonomial m : values()) {
+      if (m.weight() == n) {
+        res.add(m);
+      }
+    }
+    return res;
+  }
+
+  /**
+   * Compute the inverse up to weight n
+   * @param n maximum weight
+   * @return inverse
+   */
+  public CycleIndex inverse(final int n) {
+    CycleIndex q = new CycleIndex("Inv", MultivariateMonomial.create(1, 1)); // x
+    for (int k = 2; k <= n; ++k) {
+      final CycleIndex r = wreath(q).homogeneous(k);
+      r.multiply(Q.NEG_ONE); // i.e., negate
+      q.add(r);
+    }
+    return q;
+  }
+
+  /**
+   * Point this cycle index.
+   *
+   * <p>For a monomial c*x_1^a*x_2^b*..., pointing multiplies
+   * the coefficient by a.</p>
+   *
+   * @return pointed cycle index
+   */
+  public CycleIndex pointing() {
+    final CycleIndex res = new CycleIndex(getName() + "^.");
+    for (final MultivariateMonomial m : values()) {
+      final Z a = m.get(new Pair<>(MultivariateMonomial.DEFAULT_VARIABLE, 1));
+      if (a.signum() != 0) {
+        final MultivariateMonomial copy = m.copy();
+        copy.setCoefficient(copy.getCoefficient().multiply(a));
+        res.add(copy);
+      }
+    }
+    return res;
+  }
+
+//  /**
+//   * Pointing operation.
+//   * @return pointed cycle index
+//   */
+//  public CycleIndex pointing() {
+//    return diff(MultivariateMonomial.DEFAULT_VARIABLE, 1).multiply(MultivariateMonomial.create(1, 1));
+//  }
+
+
+  /**
+   * Divide through by x1
+   * @return cycle index
+   */
+  public CycleIndex x1Divide() {
+    final CycleIndex res = new CycleIndex("x1Div(" + getName() + ")");
+    final Pair<String, Integer> x1 = new Pair<>(MultivariateMonomial.DEFAULT_VARIABLE, 1);
+
+    for (final MultivariateMonomial m : values()) {
+      final Z e = m.get(x1);
+      if (e.signum() > 0) {
+        final MultivariateMonomial r = m.copy();
+        r.add(1, -1);
+        res.add(r);
+      }
+    }
+    return res;
+  }
+
 }

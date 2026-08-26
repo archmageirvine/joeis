@@ -268,10 +268,10 @@ public final class Plantri {
 
   final long[] mNOut = new long[6];      /* counts of output graphs, per connectivity */
   final long[] mNOutOp = new long[6];   /* counts of output graphs, per connectivity, OP */
-  final long[] mNOutE = new long[MAX_EDGES / 2 + 1];  /* .. per undirected edge number */
-  final long[] mNOutEOp = new long[MAX_EDGES / 2 + 1];  /* .. per undirected edge number, OP */
-  final long[] mNOutP = new long[MAX_VERTICES + 1];  /* .. per polygon size */
-  final long[] mNOutPOp = new long[MAX_VERTICES + 1];  /* .. per polygon size, OP */
+  final long[] mNOutE = new long[MAX_EDGES / 2 + 1];  /* counts of output graphs, per undirected edge number */
+  final long[] mNOutEOp = new long[MAX_EDGES / 2 + 1];  /* counts of output graphs, per undirected edge number, OP */
+  final long[] mNOutP = new long[MAX_VERTICES + 1];  /* counts of output graphs, per polygon size */
+  final long[] mNOutPOp = new long[MAX_VERTICES + 1];  /* counts of output graphs, per polygon size, OP */
   //static long sNOutV;        /* Deletions due to -V */
   final Marks mVertexMarks = new Marks(Plantri.MAX_VERTICES);
 

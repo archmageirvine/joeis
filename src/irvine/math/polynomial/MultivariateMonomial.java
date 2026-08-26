@@ -425,4 +425,16 @@ public class MultivariateMonomial extends HashMap<Pair<String, Integer>, Z> impl
   public int hashCode() {
     return super.hashCode() ^ getCoefficient().hashCode();
   }
+
+  /**
+   * Return the weight of this monomial.
+   * @return weight
+   */
+  public int weight() {
+    int weight = 0;
+    for (final Map.Entry<Pair<String, Integer>, Z> e : entrySet()) {
+      weight += e.getKey().right() * e.getValue().intValueExact();
+    }
+    return weight;
+  }
 }

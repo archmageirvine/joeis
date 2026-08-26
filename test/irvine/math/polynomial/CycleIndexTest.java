@@ -32,4 +32,20 @@ public class CycleIndexTest extends TestCase {
     final CycleIndex s2 = SymmetricGroup.create(2).cycleIndex();
     assertEquals("Z(S2)[Z(S2)] = (1/4)x_4 + (3/8)x_2^2 + (1/4)x_1^2x_2 + (1/8)x_1^4", s2.wreath(s2).toString());
   }
+
+  public void testInverse() {
+    final CycleIndex p = new CycleIndex(
+      "P",
+      MultivariateMonomial.create(1, 1),
+      MultivariateMonomial.create(1, 2, Q.HALF),
+      MultivariateMonomial.create(2, 1, Q.HALF));
+    for (int n = 1; n <= 6; ++n) {
+      final CycleIndex q = p.inverse(n);
+      final CycleIndex r = p.wreath(q);
+      assertEquals("H(1) = x_1", r.homogeneous(1).toString());
+      for (int k = 2; k <= n; ++k) {
+        assertEquals("H(" + k + ") = 0", r.homogeneous(k).toString());
+      }
+    }
+  }
 }

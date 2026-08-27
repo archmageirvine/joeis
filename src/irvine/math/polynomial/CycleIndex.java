@@ -539,7 +539,7 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
     return res;
   }
 
-  public CycleIndex scale(final int k) {
+  private CycleIndex scale(final int k) {
     final CycleIndex r = new CycleIndex(getName() + "_" + k);
     for (final MultivariateMonomial m : values()) {
       final MultivariateMonomial scale = new MultivariateMonomial();
@@ -758,7 +758,7 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
    * @return inverse
    */
   public CycleIndex inverse(final int n) {
-    CycleIndex q = new CycleIndex("Inv", MultivariateMonomial.create(1, 1)); // x
+    final CycleIndex q = new CycleIndex("Inv", MultivariateMonomial.create(1, 1)); // x
     for (int k = 2; k <= n; ++k) {
       final CycleIndex r = wreath(q).homogeneous(k);
       r.multiply(Q.NEG_ONE); // i.e., negate
@@ -769,10 +769,7 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
 
   /**
    * Point this cycle index.
-   *
-   * <p>For a monomial c*x_1^a*x_2^b*..., pointing multiplies
-   * the coefficient by a.</p>
-   *
+   * <p>For a monomial c*x_1^a*x_2^b*..., pointing multiplies the coefficient by a.</p>
    * @return pointed cycle index
    */
   public CycleIndex pointing() {
@@ -795,7 +792,6 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
 //  public CycleIndex pointing() {
 //    return diff(MultivariateMonomial.DEFAULT_VARIABLE, 1).multiply(MultivariateMonomial.create(1, 1));
 //  }
-
 
   /**
    * Divide through by x1

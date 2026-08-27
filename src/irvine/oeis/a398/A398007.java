@@ -28,7 +28,7 @@ public class A398007 extends Sequence1 {
           final int dx = sx - x;
           if (Math.abs(Functions.GCD.i(dx, dy)) == 1) {
             int cnt = 0;
-            for (int tx = sx - dx, ty = sy - dy; ty >= 0 && tx >= 0 && tx < g.length; tx -= dx, ty -=dy) {
+            for (int tx = sx - dx, ty = sy - dy; ty >= 0 && tx >= 0 && tx < g.length; tx -= dx, ty -= dy) {
               if (g[ty][tx] == c && ++cnt >= 2) {
                 return false;
               }

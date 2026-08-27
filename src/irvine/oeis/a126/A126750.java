@@ -152,7 +152,7 @@ public class A126750 extends Sequence0 {
       final int sizeLambda = sum(lambda);
       for (final int[] mu : partitions) {
         final int weight = sizeLambda + sum(mu);
-        if (weight > n) {
+        if (weight == 0 || weight > n) {
           continue;
         }
 
@@ -187,6 +187,10 @@ public class A126750 extends Sequence0 {
     final CycleIndex res = new CycleIndex("BC[tau]");
 
     for (final int[] lambda : partitions(n / 2)) {
+      if (lambda.length == 0) {
+        continue;
+      }
+
       final int exponent = tauExponent(lambda);
 
       final int[] doubled = new int[lambda.length];
@@ -272,74 +276,30 @@ public class A126750 extends Sequence0 {
 
   @Override
   public Z next() {
-    final CycleIndex bcE = bcE(4);
-
-    final CycleIndex x =
-      new CycleIndex("X", MultivariateMonomial.create(1, 1));
-
-    System.out.println("BC[e]=" + bcE);
-    System.out.println(
-      "X[BC[e]] = "
-        + localWreath(x, bcE).weightedTruncate(4));
-
-    final CycleIndex simple = new CycleIndex(
-      "simple",
-      MultivariateMonomial.create(1, 1),
-      MultivariateMonomial.create(1, 2, Q.HALF.negate()));
-
-    System.out.println("simple = " + simple);
-    System.out.println("simple[BC] = "
-      + localWreath(simple, bcE).weightedTruncate(2));
-
-
-
-    final CycleIndex bcTau = bcTau(4);
-    final CycleIndex om = omega(4);
-
-    final CycleIndex be = bcE(4);
-
     final CycleIndex cbcE =
-      localWreath(om, bcE);
-    System.out.println("CBC[e] raw = " + cbcE);
-    System.out.println("CBC[e] trunc = " + cbcE.weightedTruncate(4));
+      localWreath(omega(4), bcE(4)).weightedTruncate(4);
 
-//    final CycleIndex cbcE =
-//      localWreath(om, bcE).weightedTruncate(4);
     final CycleIndex cbcTau =
-      localWreath(om, bcTau).weightedTruncate(4);
-
-    System.out.println("CBC[e]   = " + cbcE);
-    System.out.println("CBC[tau] = " + cbcTau);
+      localWreath(omega(4), bcTau(4)).weightedTruncate(4);
 
     final CycleIndex cbp = cbcE.copy();
     cbp.add(cbcTau);
     cbp.multiply(Q.HALF);
 
-    System.out.println("CBP      = " + cbp);
-
-    final CycleIndex inv = cbp.pointing().inverse(4);
-
-    System.out.println("Omega       = " + om);
-    System.out.println("BC[e]       = " + bcE);
-    System.out.println("BC[tau]     = " + bcTau);
     System.out.println("CBC[e]      = " + cbcE);
     System.out.println("CBC[tau]    = " + cbcTau);
     System.out.println("CBP         = " + cbp);
     System.out.println("CBP pointed = " + cbp.pointing());
 
-
-    System.out.println("CBC[e]   = " + cbcE);
-    System.out.println("CBC[tau] = " + cbcTau);
-    System.out.println("CBP      = " + cbp);
-    System.out.println("inv      = " + inv);
-    final CycleIndex p =
+    final CycleIndex cbpPointed =
       cbp(4).pointing().weightedTruncate(4);
 
-    final CycleIndex q = p.inverse(4);
+    final CycleIndex inv = cbpPointed.inverse(4);
 
-    System.out.println("p      = " + p);
-    System.out.println("q      = " + q);
-    System.out.println("p[q]   = " + localWreath(p, q).weightedTruncate(4));
+    System.out.println("P   = " + cbpPointed);
+    System.out.println("Inv = " + inv);
+    System.out.println("P[Inv] = "
+      + localWreath(cbpPointed, inv).weightedTruncate(4));
 
     ++mN;
     return Z.ZERO;

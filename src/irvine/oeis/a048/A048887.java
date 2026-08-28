@@ -2,12 +2,13 @@ package irvine.oeis.a048;
 
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A048887 Array T read by antidiagonals, where T(m,n) = number of compositions of n into parts &lt;= m.
  * @author Sean A. Irvine
  */
-public class A048887 extends MemoryFunction2Sequence<Long, Z> {
+public class A048887 extends MemoryFunction2Sequence<Long, Z> implements DirectArray {
 
   /**
    * Constructor with offset.
@@ -47,5 +48,11 @@ public class A048887 extends MemoryFunction2Sequence<Long, Z> {
     }
     return get(mM, 1 + mN - mM);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return k < 1 || k > n ? Z.ZERO : get(k, n - k + 1);
+  }
+
 }
 

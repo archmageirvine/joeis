@@ -5,12 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunctionInt3Sequence;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A008303 Triangle read by rows: T(n,k) (n &gt;= 1, 0 &lt;= k &lt;= ceiling(n/2)-1) = number of permutations of [n] with k peaks.
  * @author Sean A. Irvine
  */
-public class A008303 extends MemoryFunctionInt3Sequence<Polynomial<Z>> {
+public class A008303 extends MemoryFunctionInt3Sequence<Polynomial<Z>> implements DirectArray {
 
   /** Construct the sequence. */
   public A008303() {
@@ -47,4 +48,10 @@ public class A008303 extends MemoryFunctionInt3Sequence<Polynomial<Z>> {
     }
     return get(mN, 0, 1).coeff(mM);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return get((int) n, 0, 1).coeff((int) k);
+  }
+
 }

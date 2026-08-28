@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A047998 Triangle of numbers a(n,k) = number of "fountains" with n coins, k in the bottom row.
- *
  * @author Sean A. Irvine
  */
-public class A047998 extends MemoryFunction2Sequence<Integer, Polynomial<Z>> {
+public class A047998 extends MemoryFunction2Sequence<Integer, Polynomial<Z>> implements DirectArray {
 
   // After Alois P. Heinz
 
@@ -39,4 +39,10 @@ public class A047998 extends MemoryFunction2Sequence<Integer, Polynomial<Z>> {
     }
     return get(mN, 0).coeff(mM);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return get((int) n, 0).coeff(k);
+  }
+
 }

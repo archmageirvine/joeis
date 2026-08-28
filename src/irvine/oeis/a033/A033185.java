@@ -8,12 +8,13 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000081;
 import irvine.oeis.memory.MemoryFunctionInt3Sequence;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A033185 Rooted tree triangle read by rows: a(n,k) = number of forests with n nodes and k rooted trees.
  * @author Sean A. Irvine
  */
-public class A033185 extends MemoryFunctionInt3Sequence<Z> {
+public class A033185 extends MemoryFunctionInt3Sequence<Z> implements DirectArray {
 
   /**
    * Constructor with offset.
@@ -73,4 +74,10 @@ public class A033185 extends MemoryFunctionInt3Sequence<Z> {
     }
     return get(mN, mN, mK);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return get((int) n, (int) n, (int) k);
+  }
+
 }

@@ -9,12 +9,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A047884 Triangle of numbers a(n,k) = number of Young tableaux with n cells and k rows (1 &lt;= k &lt;= n); also number of self-inverse permutations on n letters in which the length of the longest scattered (i.e., not necessarily contiguous) increasing subsequence is k.
  * @author Sean A. Irvine
  */
-public class A047884 extends Sequence1 {
+public class A047884 extends Sequence1 implements DirectArray {
 
   // After Alois P. Heinz
 
@@ -74,5 +75,11 @@ public class A047884 extends Sequence1 {
     }
     return mG.coeff(mM);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return g((int) n, (int) n, new ArrayList<>()).coeff(k);
+  }
+
 }
 

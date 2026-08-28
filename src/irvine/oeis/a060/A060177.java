@@ -6,12 +6,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A060177 Triangle of generalized sum of divisors function, read by rows.
  * @author Sean A. Irvine
  */
-public class A060177 extends Sequence1 {
+public class A060177 extends Sequence1 implements DirectArray {
 
   // After Alois P. Heinz
 
@@ -41,4 +42,11 @@ public class A060177 extends Sequence1 {
     final Polynomial<Z> b = mB.get(mN, mN);
     return b.coeff(b.degree() - mM);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    final Polynomial<Z> b = mB.get((int) n, (int) n);
+    return b.coeff(b.degree() - k);
+  }
+
 }

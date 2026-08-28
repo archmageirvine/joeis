@@ -3,12 +3,13 @@ package irvine.oeis.a008;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A008290 Triangle T(n,k) of rencontres numbers (number of permutations of n elements with k fixed points).
  * @author Sean A. Irvine
  */
-public class A008290 extends MemoryFunction2Sequence<Long, Z> {
+public class A008290 extends MemoryFunction2Sequence<Long, Z> implements DirectArray {
 
   /** Construct the sequence. */
   public A008290() {
@@ -45,4 +46,10 @@ public class A008290 extends MemoryFunction2Sequence<Long, Z> {
     }
     return get(mN, mM);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return get(n, k);
+  }
+
 }

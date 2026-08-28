@@ -3,6 +3,7 @@ package irvine.oeis.a275;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
@@ -10,7 +11,7 @@ import irvine.oeis.triangle.UpperLeftTriangle;
  * from all residue classes modulo k are equal for k&gt;0, A(n, 0)=1; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Georg Fischer
  */
-public class A275043 extends UpperLeftTriangle {
+public class A275043 extends UpperLeftTriangle implements DirectArray {
 
   /** Construct the sequence. */
   public A275043() {
@@ -18,10 +19,10 @@ public class A275043 extends UpperLeftTriangle {
   }
 
   /* Maple:
-    A:= proc(n, k) option remember; `if`(k*n=0, 1, 
+    A:= proc(n, k) option remember; `if`(k*n=0, 1,
       add(binomial(n, j)^k*(n-j)*A(j, k), j=0..n-1)/n)
       end:
-    seq(seq(A(n, d-n), n=0..d), d=0..12);  
+    seq(seq(A(n, d-n), n=0..d), d=0..12);
   */
   @Override
   public Z matrixElement(final int n, final int k) {
@@ -34,4 +35,10 @@ public class A275043 extends UpperLeftTriangle {
     }
     return sum.divide(n);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return matrixElement((int) n, (int) k);
+  }
+
 }

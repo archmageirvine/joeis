@@ -7,12 +7,13 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunctionInt2Sequence;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A057731 Irregular triangle read by rows: T(n,k) = number of elements of order k in symmetric group S_n, for n &gt;= 1, 1 &lt;= k &lt;= g(n), where g(n) = A000793(n) is Landau's function.
  * @author Sean A. Irvine
  */
-public class A057731 extends MemoryFunctionInt2Sequence<Polynomial<Z>> {
+public class A057731 extends MemoryFunctionInt2Sequence<Polynomial<Z>> implements DirectArray {
 
   /** Construct the sequence. */
   public A057731() {
@@ -44,6 +45,12 @@ public class A057731 extends MemoryFunctionInt2Sequence<Polynomial<Z>> {
       mM = 1;
     }
     return mP.coeff(mM);
+  }
+
+
+  @Override
+  public Z a(final long n, final long k) {
+    return get((int) n, 1).coeff(k);
   }
 
 }

@@ -5,12 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunctionInt3Sequence;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A050314 Triangle: a(n,k) = number of partitions of n whose xor-sum is k.
  * @author Sean A. Irvine
  */
-public class A050314 extends MemoryFunctionInt3Sequence<Polynomial<Z>> {
+public class A050314 extends MemoryFunctionInt3Sequence<Polynomial<Z>> implements DirectArray {
 
   // After Alois P. Heinz
 
@@ -41,4 +42,10 @@ public class A050314 extends MemoryFunctionInt3Sequence<Polynomial<Z>> {
     }
     return get(mN, mN, 0).coeff(mM);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return get((int) n, (int) n, 0).coeff(k);
+  }
+
 }

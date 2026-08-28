@@ -14,7 +14,7 @@ import irvine.oeis.Sequence1;
 public class A398683 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
-  private int mN = 4;
+  private int mN = 5;
   private final MemoryFunction1<Z> mB = new MemoryFunction1<>() {
     @Override
     protected Z compute(final int n) {
@@ -29,7 +29,7 @@ public class A398683 extends Sequence1 {
       while (!mA.isEmpty() && mA.first().compareTo(t) < 0) {
         mA.pollFirst();
       }
-      for (int k = 5; k <= mN; ++k) {
+      for (int k = 6; k <= mN; ++k) {
         final Z tu = t.add(mB.get(k));
         for (long j = k; j <= mN; ++j) {
           mA.add(tu.add(mB.get(j)));

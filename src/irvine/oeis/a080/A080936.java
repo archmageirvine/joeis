@@ -16,13 +16,17 @@ public class A080936 extends A080934 {
   private int mN = 0;
   private int mM = 0;
 
+  protected Z t(final int n, final int m) {
+    return mB.get(2 * n, 0, m + 1).subtract(mB.get(2 * n, 0, m));
+  }
+
   @Override
   public Z next() {
     if (++mM >= mN) {
       ++mN;
       mM = 0;
     }
-    return mB.get(2 * mN, 0, mM + 1).subtract(mB.get(2 * mN, 0, mM));
+    return t(mN, mM);
   }
 }
 

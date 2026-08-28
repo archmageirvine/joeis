@@ -16,13 +16,13 @@ import irvine.oeis.a000.A000040;
  */
 public class A067276 extends AbstractSequence {
 
-  private int mN = 0;
+  private int mN;
   private final Sequence mSeq;
   private final DefaultMatrix<Q> mMat;
 
   /** Construct the sequence. */
   public A067276() {
-    this(1, new A000040());
+    this(0, new A000040());
   }
 
   /**

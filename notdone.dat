@@ -19,7 +19,6 @@ A000637 Simple dependency on A000638
 A000638 Number of permutation groups of degree n
 A000663 Insufficient detail, pos. similar to A000662, cf. A000595, cycle index, have paper in German, depends A046858
 A000679 Subset of A000001, hard
-A000758 Related to cumulative height of rooted plane trees (insufficient detail, author no longer knows what it is)
 A000769 No 3 in a line problem, hard
 A000785 Depends on A048142
 A000786 Depends on A000784, A000785
@@ -640,7 +639,6 @@ A007771 Values of Ehrhart polynomial of dilation by 2 of Relaxed Boolean Quadric
 A007772 Values of Ehrhart polynomial of dilation by 2 of Relaxed Boolean Quadric Polytope of order 3, not in paper
 A007783 Mixed Van der Waerden numbers w(n, 3; 2), hard
 A007784 Van der Waerden numbers W(2;3,n-1), hard, better called W(2;4,n-1)?, W(2,4,9)=309, known?
-A007789 From a problem concerning circulant matrices and Gauss sums, insufficient detail, email address out of date
 A007790 From a problem concerning circulant matrices and Gauss sums, insufficient detail
 A007791 From a problem concerning circulant matrices and Gauss sums, insufficient detail
 A007792 From a problem concerning circulant matrices and Gauss sums, insufficient detail
@@ -2776,3 +2774,4 @@ A086281 Decimal expansion of 3rd Stieltjes constant gamma_4.
 A086282 Decimal expansion of 3rd Stieltjes constant gamma_5.
 A086316 Decimal expansion of estimate of the strongly triple-free set constant.
 A086364 Triangle read by rows: S_D(n,k) = "Type D" Stirling numbers of the second kind.
+A086373 Number of ordered triples (a,b,c) of elements of the symmetric group S_n such that a,b,c generate S_n.

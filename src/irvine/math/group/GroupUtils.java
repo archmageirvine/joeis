@@ -10,7 +10,6 @@ import irvine.math.z.Z;
 
 /**
  * Utility functions relating to groups.
- *
  * @author Sean A. Irvine
  */
 public final class GroupUtils {
@@ -222,13 +221,5 @@ public final class GroupUtils {
     default:
       return null;
     }
-  }
-
-  /**
-   * Noddy.
-   * @param args get gnu of this number
-   */
-  public static void main(final String[] args) {
-    System.out.println(gnu(Long.parseLong(args[0])));
   }
 }

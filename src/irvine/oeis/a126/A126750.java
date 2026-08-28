@@ -173,7 +173,7 @@ public class A126750 extends Sequence0 {
   }
 
   /**
-   * Transposition component of the cycle index of bicoloured graphs.
+   * Transposition component of the cycle index of bicolored graphs.
    *
    * BC_tau = sum_lambda
    *   2^tauExponent(lambda) / z_lambda * p_lambda

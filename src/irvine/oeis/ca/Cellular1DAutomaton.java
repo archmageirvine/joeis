@@ -101,7 +101,7 @@ public class Cellular1DAutomaton extends AbstractSequence {
     mCenterMask = 1 << mCenterShift; // in the middle of the center block
     mGen = 0;
     if (seed > 1) {
-      mGen = (Integer.highestOneBit(seed) + 0) / 2;
+      mGen = Integer.highestOneBit(seed) / 2;
     }
     mRule = rule;
     mRowLen = CHUNK_SIZE;

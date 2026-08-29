@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A117158 Number of permutations avoiding the consecutive pattern 1234.
+ * A117158 Number of permutations of [n] avoiding the consecutive pattern 1234.
  * E.g.f.: <code>2/(exp(-x)+cos(x)-sin(x))</code>.
  * @author Georg Fischer
  */

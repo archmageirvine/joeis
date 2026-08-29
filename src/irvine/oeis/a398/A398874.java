@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a062.A062692;
 
 /**
- * A398874 allocated for Dar\u00edo Clavijo.
+ * A398874 Number of recursive calls made by the binary Fredricksen-Kessler-Maiorana (FKM) recursive generator when generating a de Bruijn sequence of order n.
  * @author Sean A. Irvine
  */
 public class A398874 extends PartialSumSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399005 allocated for Firdous Ahmad Mala.
+ * A399005 Number of transitive relations R on an n-set such that each element is involved in at most 3 ordered pairs of R, where a loop (x,x) counts once.
  * element is involved in at most 3 ordered pairs of R, where a loop
  * (x,x) counts once.
  *

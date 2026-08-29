@@ -7,7 +7,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
 
 /**
- * A127067
+ * A127067 Define an array by d(m, 0) = 1, d(m, 1) = m; d(m, k) = (m - k + 1) d(m+1, k-1) - (k-1) (m+1) d(m+2, k-2). Sequence gives d(2,n).
  * @author Georg Fischer
  */
 public class A127067 extends AbstractSequence implements DirectSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a125;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A125650 Numerator of n(n+3)/(4(n+1)(n+2)) = sum(k=1..n, 1/(k(k+1)(k+2)) ).
+ * A125650 Numerator of n*(n+3)/(4*(n+1)*(n+2)) = Sum_{k=1..n} 1/(k*(k+1)*(k+2)).
  * @author Georg Fischer
  */
 public class A125650 extends GeneratingFunctionSequence {

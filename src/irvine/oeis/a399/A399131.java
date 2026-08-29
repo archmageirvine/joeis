@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399131 allocated for Eric Desbiaux.
+ * A399131 Number of moves to solve the Tower of Hanoi whose disks are the prime factors of n.
  * @author Sean A. Irvine
  */
 public class A399131 extends Sequence1 {

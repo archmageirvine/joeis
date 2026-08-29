@@ -9,7 +9,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A381369
+ * A381369 A(n,k) is the sum over all partitions of [n] of k^j for a partition with j inversions; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Georg Fischer
  */
 public class A381369 extends UpperLeftTriangle implements DirectArray {

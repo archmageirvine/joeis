@@ -29,6 +29,12 @@ public class MultivariateMonomial extends HashMap<Pair<String, Integer>, Z> impl
     ZERO.setCoefficient(Q.ZERO);
   }
 
+  /** The one monomial. */
+  public static final MultivariateMonomial ONE = new MultivariateMonomial();
+  static {
+    ONE.setCoefficient(Q.ONE);
+  }
+
   /**
    * Create the monomial <code>coeff * x_index^power</code>.
    * @param index variable index

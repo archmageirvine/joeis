@@ -9,7 +9,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A399142
+ * A399142 Triangle read by rows: T(n,k) counts trees on [n] rooted at 1 together with a level assignment L:[n]-&gt;{0,...,k} that uses every level, has L(1)=0, and strictly increases from parent to child, 0&lt;=k&lt;=n-1.
  * @author Georg Fischer
  */
 public class A399142 extends BaseTriangle implements DirectArray {

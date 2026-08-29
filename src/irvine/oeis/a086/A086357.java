@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002110;
 
 /**
- * A086357 Fixed point if [nonzero-digit-product]-function at initial-value=A002110(n)=n-th primorial is iterated.
+ * A086357 Fixed point if the nonzero-digit-product function is iterating starting from the n-th primorial A002110(n).
  * @author Sean A. Irvine
  */
 public class A086357 extends Sequence1 {

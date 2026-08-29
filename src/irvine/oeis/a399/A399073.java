@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399073 allocated for Firdous Ahmad Mala.
+ * A399073 Number of aperiodic binary bracelets of length n having no three consecutive equal beads.
  * @author Sean A. Irvine
  */
 public class A399073 extends Sequence1 {

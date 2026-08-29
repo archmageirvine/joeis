@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A399021 allocated for Felix Huber.
+ * A399021 a(n) is the minimum absolute difference between the legs of a primitive Pythagorean triangle with larger Euclid parameter n.
  * @author Sean A. Irvine
  */
 public class A399021 extends Sequence2 {

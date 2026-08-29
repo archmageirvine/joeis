@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000262;
 import irvine.oeis.transform.BinomialMatrixTransform;
 
 /**
- * A398989 allocated for Peter Luschny.
+ * A398989 The binomial matrix of the numbers of sets of ordered lists of an n-set (A000262). Square array read by ascending antidiagonals.
  * @author Sean A. Irvine
  */
 public class A398989 extends BinomialMatrixTransform {

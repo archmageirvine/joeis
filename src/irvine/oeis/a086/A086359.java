@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000984;
 
 /**
- * A086359 Fixed point if [decimal-digit-sum]-function at initial-value=A000984(n)=C[2n,n] is iterated.
+ * A086359 Fixed point if the decimal-digit-sum function is iterated starting from A000984(n) = C(2n,n).
  * @author Sean A. Irvine
  */
 public class A086359 extends Sequence1 {

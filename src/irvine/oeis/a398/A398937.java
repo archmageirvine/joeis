@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A398937 allocated for Clark Kimberling.
+ * A398937 Nonnegative integers k satisfying cos(k) &lt; cos(k+1) &lt; cos(k+2) &lt; cos(k+3) &lt; cos(k+4) &gt; cos(k+5).
  * @author Sean A. Irvine
  */
 public class A398937 extends FilterNumberSequence {

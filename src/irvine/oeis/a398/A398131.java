@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001358;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A398131 allocated for Michael Shmoish.
+ * A398131 Next prime after the n-th semiprime.
  * @author Sean A. Irvine
  */
 public class A398131 extends SimpleTransformSequence {

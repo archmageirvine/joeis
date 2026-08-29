@@ -7,7 +7,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A105937
+ * A105937 Infinite square array read by antidiagonals: T(m, 0) = 1, T(m, 1) = m; T(m, k) = (m - k + 1) T(m+1, k-1) - (k-1) (m+1) T(m+2, k-2).
  * @author Georg Fischer
  */
 public class A105937 extends UpperLeftTriangle implements DirectArray {

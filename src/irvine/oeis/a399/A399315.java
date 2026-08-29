@@ -3,7 +3,7 @@ package irvine.oeis.a399;
 import irvine.oeis.a316.A316667;
 
 /**
- * A398717 Squares visited by a "Priest" (Fers + Knight) moving on a spirally numbered board always to the lowest available unvisited square.
+ * A399315 Squares visited by a "Squirrel" (Knight + Dabbaba + Alfil) moving on a spirally numbered board always to the lowest available unvisited square.
  * @author Sean A. Irvine
  */
 public class A399315 extends A316667 {

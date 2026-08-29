@@ -4,7 +4,7 @@ package irvine.oeis.a247;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A247050 Rectangular array read upwards by columns: T = T(n,k) = number of paths from (0,1) to (n,k), where 0 &gt;= k &lt;= 2, consisting of segments given by the vectors (,1,1), (1,2), (1,-1).
+ * A247050 Rectangular array read upwards by columns: T = T(n,k) = number of paths from (0,1) to (n,k), where 0 &lt;= k &lt;= 2, consisting of segments given by the vectors (1,1), (1,2), (1,-1).
  * @author Georg Fischer
  */
 public class A247050 extends GeneratingFunctionSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a068.A068781;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A399092 Name?
+ * A399092 The maximum exponent in the prime factorization of the nonsquarefree numbers k such that k+1 is also nonsquarefree.
  * @author Georg Fischer
  */
 public class A399092 extends SingleTransformSequence {

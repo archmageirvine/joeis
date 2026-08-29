@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001055;
 import irvine.oeis.a002.A002808;
 
 /**
- * A398817 allocated for Jishnu Babu Ranitha.
+ * A398817 Numbers with multiplicative partition persistence 3.
  * @author Sean A. Irvine
  */
 public class A398817 extends FilterSequence {

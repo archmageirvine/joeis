@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A137347 Triangular sequence from coefficients of a polynomial recursion: p(x, n) = x*p(x, n - 1) - 2*x^2*p(x, n - 2) + x^3*p(x, n - 3).
+ * A137347 Triangle of polynomial coefficients read by rows where P(-1,x)=0, P(0,x)=1, P(1,x)=x-1, and P(n,x) = x*P(n-1,x) - 2*x^2*P(n-2,x) + x^3*P(n-3,x).
  * @author Sean A. Irvine
  */
 public class A137347 extends Sequence0 {

@@ -8,7 +8,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
 
 /**
- * A252782
+ * A252782 a(n) = n-th term of Euler transform of n-th powers.
  * @author Georg Fischer
  */
 public class A252782 extends AbstractSequence implements DirectSequence {

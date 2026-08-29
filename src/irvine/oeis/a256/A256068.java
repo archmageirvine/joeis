@@ -9,7 +9,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A256068
+ * A256068 Number T(n,k) of rooted identity trees with n nodes and colored non-root nodes using exactly k colors; triangle T(n,k), n&gt;=1, 0&lt;=k&lt;=n-1, read by rows.
  * @author Georg Fischer
  */
 public class A256068 extends BaseTriangle implements DirectArray {

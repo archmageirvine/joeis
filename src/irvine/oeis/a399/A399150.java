@@ -8,7 +8,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a061.A061704;
 
 /**
- * A399150 Name?
+ * A399150 G.f.: (Sum_{k&gt;=1} x^(k^3)/(1 - x^(k^3))) * Product_{k&gt;=1} (1 + x^k).
  * @author Georg Fischer
  */
 public class A399150 extends LambdaSequence {

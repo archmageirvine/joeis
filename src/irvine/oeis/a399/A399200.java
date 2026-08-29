@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399200 allocated for Jwalin Bhatt.
+ * A399200 Numbers k such that (cos(k))^k sets a new record low.
  * @author Sean A. Irvine
  */
 public class A399200 extends Sequence0 {

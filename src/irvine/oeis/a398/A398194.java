@@ -3,7 +3,7 @@ package irvine.oeis.a398;
 import irvine.oeis.a316.A316667;
 
 /**
- * A316667.
+ * A398194 Squares visited by a "Civet" (Knight + Dabbaba + Fers) moving on a spirally numbered board always to the lowest available unvisited square.
  * @author Sean A. Irvine
  */
 public class A398194 extends A316667 {

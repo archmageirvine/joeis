@@ -5,7 +5,7 @@ import irvine.oeis.a122.A122045;
 import irvine.oeis.transform.BinomialMatrixTransform;
 
 /**
- * A398998 The binomial matrix of the Euler numbers. Square array read by ascending antidiagonals.
+ * A398998 The binomial matrix of the Euler secant numbers. Square array read by ascending antidiagonals.
  * @author Sean A. Irvine
  */
 public class A398998 extends BinomialMatrixTransform {

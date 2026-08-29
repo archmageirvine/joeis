@@ -8,7 +8,7 @@ import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A307431 Triangle: a(n,k) = number of partitions of n whose or-sum is k.
+ * A307431 Number T(n,k) of partitions of n into parts whose bitwise OR equals k; triangle T(n,k), n&gt;=0, 0&lt;=k&lt;=n, read by rows.
  * @author Sean A. Irvine
  */
 public class A307431 extends MemoryFunctionInt3Sequence<Polynomial<Z>> implements DirectArray {

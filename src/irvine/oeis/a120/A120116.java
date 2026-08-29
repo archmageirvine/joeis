@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A120116 Numbers n such that sigma(uphi(n)) = n where uphi is the unitary totient (or unitary phi) function (see A047994).
+ * A120116 Numbers k such that sigma(uphi(k)) = k where uphi is the unitary totient (or unitary phi) function (see A047994).
  * @author Georg Fischer
  */
 public class A120116 extends FilterNumberSequence {

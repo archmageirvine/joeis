@@ -9,7 +9,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A293551
+ * A293551 Square array A(n,k), n &gt;= 0, k &gt;= 0, read by antidiagonals, where column k is the expansion of exp(Sum_{j&gt;=1} x^j/(j*(1 - x^j)^k)).
  * @author Georg Fischer
  */
 public class A293551 extends UpperLeftTriangle implements DirectArray {

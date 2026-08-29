@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000312;
 import irvine.oeis.transform.BinomialMatrixTransform;
 
 /**
- * A398988 allocated for Peter Luschny.
+ * A398988 The binomial matrix of the number of endofunctions n^n, square array read by ascending antidiagonals.
  * @author Sean A. Irvine
  */
 public class A398988 extends BinomialMatrixTransform {

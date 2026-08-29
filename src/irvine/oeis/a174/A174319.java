@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A174319 Number of n-step walks on cubic lattice (no points repeated, no adjacent points unless consecutive in path).
+ * A174319 Number of n-step self-avoiding walks on the simple cubic lattice having no pair of nonconsecutive vertices that are adjacent in the lattice.
  * @author Sean A. Irvine
  */
 public class A174319 extends Sequence0 {

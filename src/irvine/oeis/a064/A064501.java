@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064501 Sum of unitary divisors of n^3 is a square.
+ * A064501 Numbers k such that the sum of unitary divisors of k^3 is a square.
  * @author Sean A. Irvine
  */
 public class A064501 extends Sequence1 {

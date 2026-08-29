@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399068 allocated for Marco Rip\u00e0.
+ * A399068 Numbers of the form x^^y + w^^z, where x, y, w, z are integers greater than 1 and ^^ denotes tetration.
  * @author Sean A. Irvine
  */
 public class A399068 extends Sequence1 {

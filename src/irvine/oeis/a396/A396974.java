@@ -8,7 +8,7 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
 import irvine.oeis.Sequence0;
 
 /**
- * A396974 allocated for Brian Klemm.
+ * A396974 Irregular triangle read by rows: T(n,k) is the number of labeled triangle-free graphs on n nodes with exactly k edges, 0 &lt;= k &lt;= floor(n^2/4).
  * @author Sean A. Irvine
  */
 public class A396974 extends Sequence0 {

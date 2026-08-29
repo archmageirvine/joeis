@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a070.A070826;
 
 /**
- * A399052 allocated for Hossein Sadeghpour.
+ * A399052 a(n) is the least even number c such that (prime(n)#/2) + c is prime.
  * @author Sean A. Irvine
  */
 public class A399052 extends A070826 {

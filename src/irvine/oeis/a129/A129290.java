@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A129290 Base-3 Fermat numbers: 3^(3^n) + 1.
+ * A129290 Base-3 Fermat numbers: a(n) = 3^(3^n) + 1.
  * a(n)=3^(3^n)+1
  * @author Georg Fischer
  */

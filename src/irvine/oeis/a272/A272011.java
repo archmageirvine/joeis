@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A272011 Irregular triangle read by rows: strictly decreasing sequences of positive numbers given in lexicographic order.
+ * A272011 Irregular triangle read by rows: strictly decreasing sequences of nonnegative numbers given in lexicographic order.
  * @author Georg Fischer
  */
 public class A272011 extends AbstractSequence {

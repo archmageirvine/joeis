@@ -8,7 +8,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A262372
+ * A262372 Number T(n,k) of ordered pairs (p,q) of permutations of [n] with equal up-down signatures and p(1)=q(1)=k if n&gt;0; triangle T(n,k), n&gt;=0, 0&lt;=k&lt;=n, read by rows.
  * @author Georg Fischer
  */
 public class A262372 extends BaseTriangle implements DirectArray {

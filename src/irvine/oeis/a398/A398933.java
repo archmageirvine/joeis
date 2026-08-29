@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398933 allocated for Rafael Andres Pastrana Tordecilla.
+ * A398933 Partial sums of A398929.
  * @author Sean A. Irvine
  */
 public class A398933 extends Sequence1 {

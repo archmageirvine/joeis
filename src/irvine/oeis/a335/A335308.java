@@ -6,7 +6,7 @@ import irvine.oeis.a060.A060351;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A335308 Number of permutations p of [n] such that the sequence of ascents and descents of p is encoded by the 0&apos;s and 1&apos;s, respectively, in the binary expansion of n (read from right to left and using leading 0&apos;s if necessary).
+ * A335308 Number of permutations p of [n] such that the sequence of ascents and descents of p is encoded by the 0's and 1's, respectively, in the binary expansion of n (read from right to left and using leading 0's if necessary).
  * @author Georg Fischer
  */
 public class A335308 extends LambdaSequence {

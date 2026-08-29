@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A398876 allocated for Franz Josef Weiper.
+ * A398876 Primes added to a set starting with {2, 3} by considering successive even numbers k and, if k is not the sum of two members of the set, adjoining k - p, where p is the earliest-added member for which k - p is prime.
  * @author Sean A. Irvine
  */
 public class A398876 extends CachedSequence {

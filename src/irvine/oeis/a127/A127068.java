@@ -7,7 +7,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
 
 /**
- * A127068
+ * A127068 Let d(m, 0) = 1, d(m, 1) = m, and d(m, k) = (m - k + 1)*d(m+1, k-1) - (k-1)*(m+1) d(m+2, k-2). Sequence gives d(3,n).
  * @author Georg Fischer
  */
 public class A127068 extends AbstractSequence implements DirectSequence {

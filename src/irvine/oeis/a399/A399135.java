@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A399135 allocated for Jaylen Dilkhush.
+ * A399135 Numbers for which repeatedly subtracting the greatest prime factor (A006530) to reach 0 takes fewer steps than repeatedly subtracting the squarefree kernel (A007947).
  * @author Sean A. Irvine
  */
 public class A399135 extends Sequence2 {

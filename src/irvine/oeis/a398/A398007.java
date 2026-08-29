@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A398007 allocated for Dmitry Kamenetsky.
+ * A398007 a(n) is the largest k such that the vertices of a k X k grid can be painted in n colors without having any 3 collinear vertices of the same color.
  * @author Sean A. Irvine
  */
 public class A398007 extends Sequence1 {

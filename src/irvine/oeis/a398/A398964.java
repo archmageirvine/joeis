@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A398964 allocated for Ege \u00d6zt\u00fcrk.
+ * A398964 Number of solutions of x^3 + y^3 = z^2 in (Z/nZ)^3.
  * @author Sean A. Irvine
  */
 public class A398964 extends MultiplicativeSequence {

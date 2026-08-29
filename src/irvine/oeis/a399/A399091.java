@@ -7,7 +7,7 @@ import irvine.oeis.a340.A340152;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A399091 Name?
+ * A399091 The maximum exponent in the prime factorization of the cubefree numbers k such that k+1 is also cubefree.
  * @author Georg Fischer
  */
 public class A399091 extends SingleTransformSequence {

@@ -9,7 +9,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
 
 /**
- * A239953
+ * A239953 Number of partitions of n such that twice the least part is the number of distinct parts.
  * @author Georg Fischer
  */
 public class A239953 extends AbstractSequence implements DirectSequence {

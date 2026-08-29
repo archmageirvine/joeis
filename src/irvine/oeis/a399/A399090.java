@@ -7,7 +7,7 @@ import irvine.oeis.a335.A335275;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A399090 Name?
+ * A399090 The maximum exponent in the prime factorization of the numbers whose powerful part is a square (A335275).
  * @author Georg Fischer
  */
 public class A399090 extends SingleTransformSequence {

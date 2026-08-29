@@ -8,7 +8,7 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A399108 allocated for Brian Klemm.
+ * A399108 Irregular triangle read by rows: T(n,k) is the number of labeled K_4-free graphs on n nodes with exactly k edges, 0 &lt;= k &lt;= ex(n,K_4), where ex(n,K_4) = floor(n^2/3) is the Turan number.
  * @author Sean A. Irvine
  */
 public class A399108 extends Sequence1 {

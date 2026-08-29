@@ -8,7 +8,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A261430
+ * A261430 Number A(n,k) of permutations p of [n] without fixed points such that p^k = Id; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Georg Fischer
  */
 public class A261430 extends UpperLeftTriangle implements DirectArray {

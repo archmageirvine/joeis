@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000273;
 import irvine.oeis.a051.A051504;
 
 /**
- * A067309 Number of symmetric unlabeled digraphs (unlabeled digraphs with nontrivial automorphism group).
+ * A067309 Number of symmetric unlabeled digraphs with n nodes (unlabeled digraphs with nontrivial automorphism group).
  * @author Georg Fischer
  */
 public class A067309 extends AbstractSequence {

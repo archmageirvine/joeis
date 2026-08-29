@@ -554,7 +554,7 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
 
   /**
    * Replace <code>x_k</code> in this cycle index with <code>g(z_k,...,z_mk,...)</code>.
-   * Also called, plethsym.
+   * Also called, plethysm.
    * @param g a cycle index
    * @return application
    */
@@ -794,22 +794,47 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
 //  }
 
   /**
-   * Divide through by x1
-   * @return cycle index
+   * Divide every term by x_1.
+   * @return this cycle index divided by x_1
+   * @throws IllegalArgumentException if a term is not divisible by x_1
    */
-  public CycleIndex x1Divide() {
-    final CycleIndex res = new CycleIndex("x1Div(" + getName() + ")");
+  public CycleIndex xDiv() {
+    final CycleIndex res = new CycleIndex(getName() + "/x_1");
     final Pair<String, Integer> x1 = new Pair<>(MultivariateMonomial.DEFAULT_VARIABLE, 1);
-
     for (final MultivariateMonomial m : values()) {
-      final Z e = m.get(x1);
-      if (e.signum() > 0) {
-        final MultivariateMonomial r = m.copy();
-        r.add(1, -1);
-        res.add(r);
+      if (m.get(x1).signum() == 0) {
+        throw new IllegalArgumentException("Term is not divisible by x_1: " + m);
       }
+      final MultivariateMonomial q = m.copy();
+      q.add(1, Z.NEG_ONE);
+      res.add(q);
     }
     return res;
   }
 
+  /**
+   * Multiplicative inverse of a cycle index series through the specified weight.
+   *
+   * @param n maximum weight
+   * @return reciprocal cycle index
+   */
+  public CycleIndex reciprocal(final int n) {
+    final CycleIndex res = new CycleIndex("1/" + getName());
+
+    // This implementation assumes constant term 1.
+    //res.add(MultivariateMonomial.create(Q.ONE));
+    res.add(MultivariateMonomial.ONE);
+
+    for (int k = 1; k <= n; ++k) {
+      CycleIndex t = new CycleIndex("t");
+      for (int j = 1; j <= k; ++j) {
+        final CycleIndex a = homogeneous(j);
+        final CycleIndex b = res.homogeneous(k - j);
+        t.add(a.op(StandardMultiply.OP, b));
+      }
+      t.multiply(Q.NEG_ONE);
+      res.add(t);
+    }
+    return res.weightedTruncate(n);
+  }
 }

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000984;
 
 /**
- * A086356 Fixed point if [nonzero-digit product]-function at initial-value=C[2n,n]=central binomial coefficient is iterated.
+ * A086356 Fixed point if the nonzero-digit-product function is iterated starting from the central binomial coefficient C(2n,n).
  * @author Sean A. Irvine
  */
 public class A086356 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a399;
 import irvine.oeis.a316.A316667;
 
 /**
- * A399167 allocated for Jens Ahlstr\u00f6m.
+ * A399167 Squares visited by a "Leopard" (Knight + Fers + Alfil) moving on a spirally numbered board always to the lowest available unvisited square.
  * @author Sean A. Irvine
  */
 public class A399167 extends A316667 {

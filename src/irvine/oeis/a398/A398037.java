@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001055;
 
 /**
- * A398037 allocated for Jishnu Babu Ranitha.
+ * A398037 Multiplicative partition persistence of n: number of iterations of the multiplicative partition function A001055 required to reach 1.
  * @author Sean A. Irvine
  */
 public class A398037 extends Sequence1 {

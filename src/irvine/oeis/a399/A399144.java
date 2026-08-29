@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a395.A395718;
 
 /**
- * A399144 allocated for Jake Foth.
+ * A399144 Complement of A395718.
  * @author Sean A. Irvine
  */
 public class A399144 extends ComplementSequence {

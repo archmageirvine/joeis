@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001055;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A398813 Smallest number requiring n iterations of the multiplicative partition function A001055 to reach 1.
+ * A398813 Smallest number with multiplicative partition persistence n (see A398037).
  * @author Sean A. Irvine
  */
 public class A398813 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398872 allocated for Max Z. Scialabba.
+ * A398872 a(n) is the least x + y + z such that (x*y*z) / (x + y + z) = n, for positive integers x,y,z.
  * @author Sean A. Irvine
  */
 public class A398872 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003418;
 
 /**
- * A399081 allocated for Ekaterina Gavrichenko.
+ * A399081 Triangle read by rows: T(n,k) = Product_{p odd prime, 3 &lt;= p &lt;= n} p^(floor(log(n) /log(p)) - v_p(k)), where v_p(k) - p-adic valuation and T(1,1) = T(2,1) = T(2,2) = 1.
  * @author Sean A. Irvine
  */
 public class A399081 extends Sequence1 {

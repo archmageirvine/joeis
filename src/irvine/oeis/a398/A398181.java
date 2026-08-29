@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A398181 allocated for Mats Granvik.
+ * A398181 Decimal expansion of (Pi/32) * (1 + log(2)).
  * @author Sean A. Irvine
  */
 public class A398181 extends DecimalExpansionSequence {

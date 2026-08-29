@@ -6,7 +6,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A399109 allocated for Vladeta Jovovic.
+ * A399109 Sum of the cubes of the coefficients of (x + y + 2*z)^n.
  * @author Sean A. Irvine
  */
 public class A399109 extends ParallelGenerateGraphsSequence {

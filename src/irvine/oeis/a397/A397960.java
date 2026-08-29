@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A397960 allocated for Wujie Gu.
+ * A397960 a(n) is the maximum number of distinct positive differences of an n-element subset of {0, 1, ..., n*(n-1)/2}.
  * @author Sean A. Irvine
  */
 public class A397960 extends Sequence3 {

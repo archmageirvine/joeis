@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398713 allocated for \u017diga Pirc.
+ * A398713 Table read by descending antidiagonals: T(n, k) = smallest number m such that 2*(n*m+k) = Sum_{d|m} (n*d+k), n&gt;=0, k&gt;=0.
  * @author Sean A. Irvine
  */
 public class A398713 extends Sequence0 {

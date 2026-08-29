@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001190;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A397961 allocated for Noah A Rosenberg.
+ * A397961 Number of rooted binary unlabeled simplex time-consistent galled trees with n leaves and exactly 1 gall.
  * @author Sean A. Irvine
  */
 public class A397961 extends GfSequence {

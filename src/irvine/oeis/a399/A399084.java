@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399084 allocated for Vasilios Mavroudis.
+ * A399084 a(0) = 0; a(1) = 1; thereafter a(n) = a(n-1) - 1 if that is not already in the sequence, otherwise a(n) = a(n-1) + floor(sqrt(a(n-1))).
  * @author Sean A. Irvine
  */
 public class A399084 extends Sequence0 {

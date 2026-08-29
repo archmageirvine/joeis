@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A013620 Triangle of coefficients in expansion of (2+3x)^n.
+ * A013620 Triangle of coefficients in expansion of (2+3*x)^n.
  * @author Sean A. Irvine
  */
 public class A013620 extends Sequence0 {

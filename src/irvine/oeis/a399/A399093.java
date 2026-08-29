@@ -7,7 +7,7 @@ import irvine.oeis.a367.A367695;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A399093 Name?
+ * A399093 The maximum exponent in the prime factorization of the exponentially odd numbers k such that k+1 is also exponentially odd.
  * @author Georg Fischer
  */
 public class A399093 extends SingleTransformSequence {

@@ -8,7 +8,7 @@ import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A307432 Triangle: a(n,k) = number of partitions of n whose and-sum is k.
+ * A307432 Number T(n,k) of partitions of n into parts whose bitwise AND equals k; triangle T(n,k), n&gt;=0, 0&lt;=k&lt;=n, read by rows.
  * @author Georg Fischer
  */
 public class A307432 extends MemoryFunctionInt3Sequence<Polynomial<Z>> implements DirectArray {

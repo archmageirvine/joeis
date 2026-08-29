@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A399024 allocated for Vico Bonfioli.
+ * A399024 Decimal expansion of the exponential growth rate of A396406.
  * @author Sean A. Irvine
  */
 public class A399024 extends DecimalExpansionSequence {

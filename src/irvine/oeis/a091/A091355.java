@@ -9,7 +9,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A091355
+ * A091355 Triangle read by rows: T(n,k) = number of planar partitions of n with k rows.
  * @author Georg Fischer
  */
 public class A091355 extends BaseTriangle implements DirectArray {

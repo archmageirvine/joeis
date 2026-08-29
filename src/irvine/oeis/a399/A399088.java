@@ -7,7 +7,7 @@ import irvine.oeis.a005.A005117;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A399088 Name?
+ * A399088 The maximum exponent in the prime factorization of the number following the n-th squarefree number.
  * @author Georg Fischer
  */
 public class A399088 extends SingleTransformSequence {

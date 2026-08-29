@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A397249 allocated for Thomas Ordowski.
+ * A397249 Numbers m such that lambda(2^m - 1) + 1 is prime, where the Carmichael lambda function is A002322.
  * @author Sean A. Irvine
  */
 public class A397249 extends FilterNumberSequence {

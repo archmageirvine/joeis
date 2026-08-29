@@ -6,7 +6,7 @@ import irvine.oeis.a126.A126258;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A128256 A004736(signed) * A007318.
+ * A128256 Matrix product of (-1)^(n-k) * A004736(n+1,k+1) with A007318 (Pascal's triangle).
  * @author Georg Fischer
  */
 public class A128256 extends PrependColumn {

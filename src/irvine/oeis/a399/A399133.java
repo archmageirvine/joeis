@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002182;
 
 /**
- * A399133 allocated for Hal M. Switkay.
+ * A399133 Superior factor-dense numbers: where records are set for d(k)/exp(log(k)/(1+log(1+log(k)))), where d(k) = A000005(k), the number of divisors of k.
  * @author Sean A. Irvine
  */
 public class A399133 extends A002182 {

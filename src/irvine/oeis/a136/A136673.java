@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A136673 Triangle of coefficients from a polynomial recursion for Galois field GF(2^n) polynomials: p(x,n)=(x+1)*p(x,n-1)-x*p(x,n-2); or f(x,n)=x^n+x+1;.
+ * A136673 Triangle T(n,k) read by rows: T(n,k) = [x^k] x^n+x+1, 0 &lt;= k &lt;= max(n, 1).
  * @author Sean A. Irvine
  */
 public class A136673 extends Sequence1 {

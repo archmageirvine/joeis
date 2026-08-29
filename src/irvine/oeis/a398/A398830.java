@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A398830 allocated for \u017diga Pirc.
+ * A398830 Numbers j, such that there exists no k, k&lt;j, where 2*k-sigma(k) = 2*j-sigma(j) and tau(k) = tau(j).
  * @author Sean A. Irvine
  */
 public class A398830 extends Sequence1 {

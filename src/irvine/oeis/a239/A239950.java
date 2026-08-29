@@ -9,7 +9,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
 
 /**
- * A239950
+ * A239950 Number of partitions of n such that (number of distinct parts) = least part.
  * @author Georg Fischer
  */
 public class A239950 extends AbstractSequence implements DirectSequence {

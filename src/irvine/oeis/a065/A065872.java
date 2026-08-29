@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065872 Numbers k such that usigma(k) - 1 is a prime (cf. A034448).
+ * A065872 Numbers k such that usigma(k) - 1 is a prime.
  * @author Sean A. Irvine
  */
 public class A065872 extends Sequence1 {

@@ -4,9 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.function.Functions;
+import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
+import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
+import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -16,7 +19,8 @@ import irvine.oeis.Sequence0;
  */
 public class A126750 extends Sequence0 {
 
-  private long mN = 0;
+  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
+  private int mN = 0;
 
   /**
    * Combinatorial logarithm
@@ -152,10 +156,9 @@ public class A126750 extends Sequence0 {
       final int sizeLambda = sum(lambda);
       for (final int[] mu : partitions) {
         final int weight = sizeLambda + sum(mu);
-        if (weight == 0 || weight > n) {
+        if (weight > n) {
           continue;
         }
-
         final int exponent = gcdSum(lambda, mu);
         final Z numerator = Z.ONE.shiftLeft(exponent);
         final Z denominator = z(lambda).multiply(z(mu));
@@ -186,11 +189,7 @@ public class A126750 extends Sequence0 {
   private static CycleIndex bcTau(final int n) {
     final CycleIndex res = new CycleIndex("BC[tau]");
 
-    for (final int[] lambda : partitions(n / 2)) {
-      if (lambda.length == 0) {
-        continue;
-      }
-
+    for (final int[] lambda : exactPartitions(n / 2)) {
       final int exponent = tauExponent(lambda);
 
       final int[] doubled = new int[lambda.length];
@@ -198,8 +197,7 @@ public class A126750 extends Sequence0 {
         doubled[k] = 2 * lambda[k];
       }
 
-      final Q coefficient =
-        new Q(Z.ONE.shiftLeft(exponent), z(doubled));
+      final Q coefficient = new Q(Z.ONE.shiftLeft(exponent), z(doubled));
 
       res.add(monomial(doubled, coefficient));
     }
@@ -246,63 +244,88 @@ public class A126750 extends Sequence0 {
     return s;
   }
 
-  /**
-   * Compute CBC_e = Omega o BC_e.
-   */
-  private static CycleIndex cbcE(final int n) {
-    return localWreath(omega(n), bcE(n));
-  }
-
-  /**
-   * Compute CBC_tau = Omega o BC_tau.
-   */
-  private static CycleIndex cbcTau(final int n) {
-    return localWreath(omega(n), bcTau(n));
-  }
-
-  /**
-   * Compute CBP = (CBC_e + CBC_tau) / 2.
-   */
-  private static CycleIndex cbp(final int n) {
-    final CycleIndex res = cbcE(n);
-    res.add(cbcTau(n));
-    res.multiply(Q.HALF);
-    return res;
-  }
-
   private static CycleIndex localWreath(final CycleIndex r, final CycleIndex s) {
     return r.copy().wreath(s.copy());
   }
 
+  private static Q[] counts(final CycleIndex ci, final int n) {
+    final Q[] res = new Q[n + 1];
+    java.util.Arrays.fill(res, Q.ZERO);
+    for (final MultivariateMonomial m : ci.values()) {
+      final int w = m.weight();
+      if (w <= n) {
+        res[w] = res[w].add(m.getCoefficient());
+      }
+    }
+    return res;
+  }
+
+  private static List<int[]> exactPartitions(final int n) {
+    final List<int[]> result = new ArrayList<>();
+    final ArrayList<Integer> current = new ArrayList<>();
+    partition(n, n, current, result);
+    return result;
+  }
+
   @Override
   public Z next() {
-    final CycleIndex cbcE =
-      localWreath(omega(4), bcE(4)).weightedTruncate(4);
+    ++mN;
+    final int n = (int) mN;
+    final int w = n + 0;
 
-    final CycleIndex cbcTau =
-      localWreath(omega(4), bcTau(4)).weightedTruncate(4);
+    System.out.println("bcE[" + mN + "]=" + bcE(n));
+    System.out.println("bcTau[" + mN + "]=" + bcTau(n));
 
+    // CBC = Omega o BC.
+    final CycleIndex cbcE = localWreath(omega(w), bcE(w)).weightedTruncate(w);
+    System.out.println("cbcE[" + mN + "]=" + cbcE);
+
+    final CycleIndex cbcTau = localWreath(omega(w), bcTau(w)).weightedTruncate(w);
+    System.out.println("cbcTau[" + mN + "]=" + cbcTau);
+
+    // CBP = (CBC[e] + CBC[tau]) / 2.
     final CycleIndex cbp = cbcE.copy();
     cbp.add(cbcTau);
     cbp.multiply(Q.HALF);
+    System.out.println("CBP[" + mN + "]=" + cbp);
 
-    System.out.println("CBC[e]      = " + cbcE);
-    System.out.println("CBC[tau]    = " + cbcTau);
-    System.out.println("CBP         = " + cbp);
-    System.out.println("CBP pointed = " + cbp.pointing());
+    // I = compositional inverse of CBP.pointing().
+    final CycleIndex cbpPointed = cbp.pointing().weightedTruncate(w);
+    System.out.println("CBPpointed[" + mN + "]=" + cbpPointed);
+    final CycleIndex inv = cbpPointed.inverse(w);
 
-    final CycleIndex cbpPointed =
-      cbp(4).pointing().weightedTruncate(4);
+    // Check during development.
+    // System.out.println("CBP       = " + cbp);
+    // System.out.println("CBP pointed = " + cbpPointed);
+    // System.out.println("Inv       = " + inv);
+    // System.out.println("CBP[Inv]  = "
+    //   + localWreath(cbpPointed, inv).weightedTruncate(n));
 
-    final CycleIndex inv = cbpPointed.inverse(4);
+    // J = ci_xdiv(I), K = J^(-1), L = K - 1.
+    final CycleIndex k = inv.xDiv().reciprocal(w);
+    k.subtract(CycleIndex.ONE);
+    //k.add(MultivariateMonomial.ONE, Q.NEG_ONE);
 
-    System.out.println("P   = " + cbpPointed);
-    System.out.println("Inv = " + inv);
-    System.out.println("P[Inv] = "
-      + localWreath(cbpPointed, inv).weightedTruncate(4));
+    // NBP =
+    //   CBP o I
+    //   + X * (Omega o (K - 1)).
+    final CycleIndex first =
+      localWreath(cbp, inv).weightedTruncate(w);
 
-    ++mN;
-    return Z.ZERO;
+    final CycleIndex second =
+      localWreath(omega(w), k).weightedTruncate(w);
+
+    // Multiply by X = x_1.
+    second.multiply(MultivariateMonomial.create(1, 1));
+
+    final CycleIndex nbp = first.copy();
+    nbp.add(second);
+    nbp.weightedTruncate(w);
+
+    // Isotype generating series: substitute x_i -> x^i.
+    final Polynomial<Q> series = nbp.apply(RING.x(), w);
+
+    System.out.println("Rational: " + series.coeff(mN));
+    return series.coeff(mN).toZ(); //RING.eval(series, Q.ONE).toZ();
   }
-
 }

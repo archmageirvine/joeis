@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.function.BiFunction;
 
 import irvine.math.function.Functions;
 import irvine.math.set.IntegerPermutation;
@@ -108,6 +109,24 @@ public final class IntegerPartition {
       }
     }
     return v;
+  }
+
+  /**
+   * Iterate over all partitions of a number.
+   * @param n number to be partitioned
+   * @param start initializes the accumulated value
+   * @param f maps <code>(x, a) -> x</code>, where the int array <code>a</code> contains one individual partition
+   * @param <A> accumulated type
+   * @return final accumulated value
+   */
+  public static <A> A iterate(final int n, final A start, final BiFunction<A, int[], A> f) {
+    A x = start;
+    final IntegerPartition ip = new IntegerPartition(n);
+    int[] parts;
+    while ((parts = ip.next()) != null) {
+      x = f.apply(x, parts);
+    }
+    return x;
   }
 
   /**

@@ -297,9 +297,11 @@ public class A126750 extends Sequence0 {
     // Check during development.
     // System.out.println("CBP       = " + cbp);
     // System.out.println("CBP pointed = " + cbpPointed);
-    // System.out.println("Inv       = " + inv);
+    System.out.println("Inv       = " + inv);
     // System.out.println("CBP[Inv]  = "
     //   + localWreath(cbpPointed, inv).weightedTruncate(n));
+
+    System.out.println(localWreath(cbpPointed, inv).weightedTruncate(4));
 
     // J = ci_xdiv(I), K = J^(-1), L = K - 1.
     final CycleIndex k = inv.xDiv().reciprocal(w);
@@ -309,11 +311,9 @@ public class A126750 extends Sequence0 {
     // NBP =
     //   CBP o I
     //   + X * (Omega o (K - 1)).
-    final CycleIndex first =
-      localWreath(cbp, inv).weightedTruncate(w);
+    final CycleIndex first = localWreath(cbp, inv).weightedTruncate(w);
 
-    final CycleIndex second =
-      localWreath(omega(w), k).weightedTruncate(w);
+    final CycleIndex second = localWreath(omega(w), k).weightedTruncate(w);
 
     // Multiply by X = x_1.
     second.multiply(MultivariateMonomial.create(1, 1));

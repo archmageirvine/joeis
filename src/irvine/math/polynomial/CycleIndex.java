@@ -757,6 +757,24 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
    * @param n maximum weight
    * @return inverse
    */
+//  public CycleIndex inverse(final int n) {
+//    final CycleIndex x =
+//      new CycleIndex("X", MultivariateMonomial.create(1, 1));
+//
+//    final CycleIndex f = copy();
+//    f.subtract(x);
+//
+//    CycleIndex q = x.copy();
+//
+//    for (int k = 2; k <= n; ++k) {
+//      final CycleIndex r = f.wreath(q).homogeneous(k);
+//      r.multiply(Q.NEG_ONE);
+//      q.add(r);
+//    }
+//
+//    return q.weightedTruncate(n);
+//  }
+
   public CycleIndex inverse(final int n) {
     final CycleIndex q = new CycleIndex("Inv", MultivariateMonomial.create(1, 1)); // x
     for (int k = 2; k <= n; ++k) {
@@ -822,11 +840,9 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
     final CycleIndex res = new CycleIndex("1/" + getName());
 
     // This implementation assumes constant term 1.
-    //res.add(MultivariateMonomial.create(Q.ONE));
     res.add(MultivariateMonomial.ONE);
-
     for (int k = 1; k <= n; ++k) {
-      CycleIndex t = new CycleIndex("t");
+      final CycleIndex t = new CycleIndex("t");
       for (int j = 1; j <= k; ++j) {
         final CycleIndex a = homogeneous(j);
         final CycleIndex b = res.homogeneous(k - j);

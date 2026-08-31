@@ -6,7 +6,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A398907 Decimal expansion of Sum_{k&gt;=1} H(k-1) * binomial(2*k,k)*((zeta(3) - H(k,3)) - (H(2*k) - H(k) - log(2))*(zeta(2) - H(k,2))) / (k * 4^k), where H(k) = A001008(k)/A002805(k), H(k,2) = A007406(k)/A007407(k), and H(k,3) = A007408(k)/A007409(k) are the k-th har
+ * A398907 Decimal expansion of Sum_{k&gt;=1} H(k-1) * binomial(2*k,k)*((zeta(3) - H(k,3)) - (H(2*k) - H(k) - log(2))*(zeta(2) - H(k,2))) / (k * 4^k), where H(k) = A001008(k)/A002805(k), H(k,2) = A007406(k)/A007407(k), and H(k,3) = A007408(k)/A007409(k) are the k-th harmonic number of order 1, 2, and 3, respectively.
  * @author Georg Fischer
  */
 public class A398907 extends DecimalExpansionSequence {

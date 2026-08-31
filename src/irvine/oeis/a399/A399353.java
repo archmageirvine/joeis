@@ -4,7 +4,7 @@ package irvine.oeis.a399;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A399353 Number of independent vertex sets in the n X 3 projective plane graph.
+ * A399353 allocated for Andrew Howroyd.
  * @author Georg Fischer
  */
 public class A399353 extends HolonomicRecurrence {

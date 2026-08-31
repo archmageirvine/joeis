@@ -195,7 +195,7 @@ public final class ZUtils {
 
   /**
    * Iterate over the digits in the number system representation of <code>n</code>.
-   * @param n number that is represented
+   * @param nz number that is represented
    * @param base represent in this number base
    * @param start initializes the accumulated value
    * @param f maps <code>(x, d, e) -> x</code>
@@ -233,7 +233,7 @@ public final class ZUtils {
 
   /**
    * Iterate over the digits in the number system representation of <code>n</code>.
-   * @param n number that is represented
+   * @param nl number that is represented
    * @param base represent in this number base
    * @param start initial value of the accumulator x
    * @param f maps <code>(x, d) -> x</code>
@@ -731,5 +731,26 @@ public final class ZUtils {
     }
     // right edge
     return max.subtract(side.multiply(3)).subtract(m.subtract(y));
+  }
+
+  /**
+   * Compute the tetration a^^b, aborting the computation is the result is &gt;= m.
+   * @param a base
+   * @param b power
+   * @param m limit
+   * @return tetration (or m if the result is too large)
+   */
+  public static Z tetration(final long a, final long b, final Z m) {
+    Z x = Z.valueOf(a);
+    for (int k = 1; k < b; ++k) {
+      if (x.compareTo(Z.valueOf(m.bitLength())) >= 0) {
+        return m;
+      }
+      x = Z.valueOf(a).pow(x.longValueExact());
+      if (x.compareTo(m) >= 0) {
+        return m;
+      }
+    }
+    return x;
   }
 }

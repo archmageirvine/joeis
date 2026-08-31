@@ -4,7 +4,7 @@ package irvine.oeis.a399;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A399355 Number of independent vertex sets in the 4 X n Moebius strip graph
+ * A399355 allocated for Andrew Howroyd.
  * @author Georg Fischer
  */
 public class A399355 extends HolonomicRecurrence {

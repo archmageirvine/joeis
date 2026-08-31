@@ -8,6 +8,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 import irvine.util.Triple;
 
@@ -23,26 +24,11 @@ public class A396947 extends Sequence1 {
   private Z mLimit = Z.valueOf(32);
   private ArrayList<Z> mA = new ArrayList<>();
 
-  // Compute a tetration, stopping as soon as the result exceeds m.
-  private static Z tet(final long a, final int b, final Z m) {
-    Z x = Z.valueOf(a);
-    for (int k = 1; k < b; ++k) {
-      if (x.compareTo(Z.valueOf(m.bitLength())) >= 0) {
-        return m;
-      }
-      x = Z.valueOf(a).pow(x.longValueExact());
-      if (x.compareTo(m) >= 0) {
-        return m;
-      }
-    }
-    return x;
-  }
-
   private void extend() {
     final TreeSet<Triple<Z>> v = new TreeSet<>(Comparator.comparing(Triple<Z>::left).thenComparing(Triple::mid).thenComparing(Triple::right));
     for (long r = 2; Z.valueOf(r).pow(r).compareTo(mLimit) < 0; ++r) {
       for (int s = 2; ; ++s) {
-        final Z x = tet(r, s, mLimit);
+        final Z x = ZUtils.tetration(r, s, mLimit);
         if (x.compareTo(mLimit) >= 0) {
           break;
         }

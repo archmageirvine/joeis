@@ -1,4 +1,4 @@
-package irvine.oeis.a399;
+package irvine.oeis.a397;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -11,43 +11,41 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A399068 Numbers of the form x^^y + w^^z, where x, y, w, z are integers greater than 1 and ^^ denotes tetration.
+ * A397766 allocated for Marco Rip\u00e0.
  * @author Sean A. Irvine
  */
-public class A399068 extends Sequence1 {
-
-  // After Marco Rip&agrave;
+public class A397766 extends Sequence1 {
 
   private int mN = 0;
   private Z mLimit = Z.valueOf(32);
   private ArrayList<Z> mA = new ArrayList<>();
 
   private void extend() {
-    final TreeSet<Z> v = new TreeSet<>();
-    for (long r = 2; Z.valueOf(r).pow(r).compareTo(mLimit) < 0; ++r) {
-      for (int s = 2; ; ++s) {
+    final Set<Z> sums = new HashSet<>();
+    for (int s = 2; Z.valueOf(s).pow(s).compareTo(mLimit) < 0; ++s) {
+      final TreeSet<Z> v = new TreeSet<>();
+      for (long r = 2; ; ++r) {
         final Z x = ZUtils.tetration(r, s, mLimit);
         if (x.compareTo(mLimit) >= 0) {
           break;
         }
         v.add(x);
       }
-    }
-
-    final Set<Z> sums = new HashSet<>();
-    for (final Z x : v) {
-      for (final Z y : v) {
-        final Z z = x.add(y);
-        if (z.compareTo(mLimit) >= 0) {
-          break;
-        }
-        sums.add(z);
-        if (x.equals(y)) {
-          break;
+      for (final Z x : v) {
+        for (final Z y : v) {
+          final Z z = x.add(y);
+          if (z.compareTo(mLimit) >= 0) {
+            break;
+          }
+          if (z.isProbablePrime()) {
+            sums.add(z);
+          }
+          if (x.equals(y)) {
+            break;
+          }
         }
       }
     }
-
     mA = new ArrayList<>(sums);
     Collections.sort(mA);
   }

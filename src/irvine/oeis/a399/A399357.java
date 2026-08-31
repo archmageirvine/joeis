@@ -4,7 +4,7 @@ package irvine.oeis.a399;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A399357 Number of independent vertex sets in the 4 X n Klein bottle graph.
+ * A399357 allocated for Andrew Howroyd.
  * @author Georg Fischer
  */
 public class A399357 extends HolonomicRecurrence {

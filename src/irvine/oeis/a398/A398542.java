@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398542
+ * A398542 allocated for Charles Cornell Norton.
  * @author Sean A. Irvine
  */
 public class A398542 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000081;
 import irvine.oeis.transform.BinomialMatrixTransform;
 
 /**
- * A399000 The binomial matrix of the Catalan numbers, square array read by ascending antidiagonals.
+ * A399339 allocated for Peter Luschny.
  * @author Sean A. Irvine
  */
 public class A399339 extends BinomialMatrixTransform {

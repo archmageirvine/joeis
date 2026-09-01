@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000111;
 import irvine.oeis.transform.BinomialMatrixTransform;
 
 /**
- * A399332 allocated for Peter Luschny.
+ * A399332 The binomial matrix of the Euler up/down numbers, square array read by ascending antidiagonals.
  * @author Sean A. Irvine
  */
 public class A399332 extends BinomialMatrixTransform {

@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a006.A006446;
 
 /**
- * A066377 Number of numbers m &lt;= n such that floor(sqrt(m)) divides m.
+ * A066377 Sum of the first n numbers k such that floor(sqrt(k)) divides k.
  * @author Sean A. Irvine
  */
 public class A066377 extends PartialSumSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063870 Numbers n such that sigma(n) - usigma(n) = 3n/2.
+ * A063870 Numbers k such that sigma(k) - usigma(k) = 3*k/2.
  * @author Sean A. Irvine
  */
 public class A063870 extends Sequence1 {

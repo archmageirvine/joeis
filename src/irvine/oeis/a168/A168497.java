@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a040.A040040;
 
 /**
- * A168497 The halfs of even single (or even isolated) numbers.
+ * A168497 The halves of even single (or even isolated) numbers.
  * @author Georg Fischer
  */
 public class A168497 extends PrependSequence {

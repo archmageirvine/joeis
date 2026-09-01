@@ -1,4 +1,4 @@
-package irvine.oeis.a399;
+package irvine.oeis.a395;
 
 import irvine.math.function.Functions;
 import irvine.math.graph.GraphUtils;
@@ -6,13 +6,13 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A399109 Sum of the cubes of the coefficients of (x + y + 2*z)^n.
+ * A395158 Number of labeled K_4-free graphs on n nodes.
  * @author Sean A. Irvine
  */
-public class A399109 extends ParallelGenerateGraphsSequence {
+public class A395158 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
-  public A399109() {
+  public A395158() {
     super(0, 0, GenerateGraphs.K4_FREE, () -> g -> Functions.FACTORIAL.z(g.order()).divide(GraphUtils.automorphismSize(g)).longValueExact());
   }
 

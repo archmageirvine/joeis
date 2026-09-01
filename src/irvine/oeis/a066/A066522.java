@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a100.A100484;
 
 /**
- * A066522 Numbers n whose divisors less than or equal to sqrt(n) are consecutive, from 1 up to some number k.
+ * A066522 Numbers m whose divisors less than or equal to sqrt(m) are consecutive, from 1 up to some number k.
  * @author Sean A. Irvine
  */
 public class A066522 extends UnionSequence {

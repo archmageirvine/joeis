@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399094 allocated for Marco Mantovanelli.
+ * A399094 Triangle read by rows formed by the nested recurrences H_m(n) = 1 + max_{1 &lt;= j &lt;= m} H_m(n - H_m(n-j)), with H_m(1) = ... = H_m(m) = 1.
  * @author Sean A. Irvine
  */
 public class A399094 extends Sequence1 {

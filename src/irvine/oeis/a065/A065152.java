@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065152 Cototient(totient(n)) - totient(cototient(n)).
+ * A065152 a(n) = cototient(totient(n)) - totient(cototient(n)).
  * @author Sean A. Irvine
  */
 public class A065152 extends Sequence1 {

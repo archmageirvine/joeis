@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398795 allocated for Omar Said.
+ * A398795 Number of values 0 &lt;= r &lt; 2^n such that the trajectories of r and r+1 under the map f(x) = x/2 for x even, (7*x+1)/2 for x odd, satisfy f^(n)(r) = f^(n)(r+1) and contain the same number of odd terms among the first n iterates.
  * @author Sean A. Irvine
  */
 public class A398795 extends Sequence1 {

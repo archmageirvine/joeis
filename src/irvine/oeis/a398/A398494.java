@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A398494 allocated for A. Lamek.
+ * A398494 Primes p such that 2^p-1 has a divisor d with 1&lt;d&lt;2^p-1 and d == 1-2*p (mod 2*p^2).
  * @author Sean A. Irvine
  */
 public class A398494 extends A000040 {

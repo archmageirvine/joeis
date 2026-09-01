@@ -775,15 +775,37 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
 //    return q.weightedTruncate(n);
 //  }
 
+//  public CycleIndex inverse(final int n) {
+//    final CycleIndex q = new CycleIndex("Inv", MultivariateMonomial.create(1, 1)); // x
+//    for (int k = 2; k <= n; ++k) {
+//      final CycleIndex r = wreath(q).homogeneous(k);
+//      r.multiply(Q.NEG_ONE); // i.e., negate
+//      q.add(r);
+//    }
+//    return q;
+//  }
+
   public CycleIndex inverse(final int n) {
-    final CycleIndex q = new CycleIndex("Inv", MultivariateMonomial.create(1, 1)); // x
+    // P = X + R, where R has weight >= 2.
+    final CycleIndex r = copy();
+    r.subtract(MultivariateMonomial.create(1, 1)); // remove x_1
+
+    // Q starts with X.
+    final CycleIndex q =
+      new CycleIndex("Inv", MultivariateMonomial.create(1, 1));
+
     for (int k = 2; k <= n; ++k) {
-      final CycleIndex r = wreath(q).homogeneous(k);
-      r.multiply(Q.NEG_ONE); // i.e., negate
-      q.add(r);
+      // Compute R[Q], retaining only weight k.
+      final CycleIndex s = r.wreath(q).homogeneous(k);
+
+      // Q_k = -[R[Q]]_k.
+      s.multiply(Q.NEG_ONE);
+      q.add(s);
     }
+
     return q;
   }
+
 
   /**
    * Point this cycle index.

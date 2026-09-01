@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398683 Numbers k such that C(k,3) = C(x,5) + C(y,5) + C(z,5) is solvable, where k &gt; x &gt;= y &gt;= z &gt; 5.
+ * A398683 Numbers k such that C(k,5) = C(x,5) + C(y,5) + C(z,5) is solvable, where k &gt; x &gt;= y &gt;= z &gt; 5.
  * @author Sean A. Irvine
  */
 public class A398683 extends Sequence1 {

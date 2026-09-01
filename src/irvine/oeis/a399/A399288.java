@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399288 allocated for Ilya Gutkovskiy.
+ * A399288 a(n) = tau_{n}(n!) = number of ordered n-factorizations of n!.
  * @author Sean A. Irvine
  */
 public class A399288 extends Sequence1 {

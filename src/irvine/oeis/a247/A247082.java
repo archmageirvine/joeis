@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A247082 E.g.f.: (8 - 7*cosh(x)) / (13 - 12*cosh(x)).
+ * A247082 Expansion of e.g.f. (8 - 7*cosh(x)) / (13 - 12*cosh(x)).
  * E.g.f.: (8 - 7*cosh(x)) / (13 - 12*cosh(x)), even powers
  * @author Georg Fischer
  */

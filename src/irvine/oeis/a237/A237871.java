@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A237871 Number of partitions of n such that (greatest part) + (least part) &gt; number of parts.
+ * A237871 Number of partitions of n such that (greatest part) + (least part) &gt;= number of parts.
  * @author Georg Fischer
  */
 public class A237871 extends LambdaSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A060205 (p^p)^p, where p is prime(n).
+ * A060205 a(n) = (p^p)^p, where p is prime(n).
  * @author Georg Fischer
  */
 public class A060205 extends A000040 {

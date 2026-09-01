@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A124215 E.g.f.: exp(exp(x)/(2-exp(3*x))^(1/3)-1).
+ * A124215 Expansion of e.g.f. exp(exp(x)/(2-exp(3*x))^(1/3)-1).
  * E.g.f.: exp(exp(x)/(2-exp(3*x))^(1/3)-1)
  * @author Georg Fischer
  */

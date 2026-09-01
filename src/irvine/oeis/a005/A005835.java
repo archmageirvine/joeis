@@ -12,7 +12,14 @@ public class A005835 extends Sequence1 {
 
   private long mN = 5;
 
-  private boolean isPseudoperfect(final Z[] d, final int pos, final Z sum) {
+  /**
+   * Test if a set of divisors is pseudoperfect.
+   * @param d divisors
+   * @param pos position
+   * @param sum sum
+   * @return true if pseudoperfect
+   */
+  public static boolean isPseudoperfect(final Z[] d, final int pos, final Z sum) {
     final int c = sum.compareTo(d[d.length - 1]);
     if (c >= 0) {
       return c == 0;

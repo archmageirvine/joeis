@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398966 allocated for Gordon Hamilton.
+ * A398966 Number of regions of an n question Venn diagram that can be filled by multisets of positive integers. Question k of n: Do one or more elements of the multiset sum to k?.
  * @author Sean A. Irvine
  */
 public class A398966 extends Sequence0 {

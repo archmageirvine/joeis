@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a018.A018252;
 
 /**
- * A062312 Nonprime numbers squared.
+ * A062312 Positive nonprime numbers squared.
  * @author Georg Fischer
  */
 public class A062312 extends Sequence1 {

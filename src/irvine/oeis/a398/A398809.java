@@ -14,7 +14,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398809 allocated for Soslan Daurov.
+ * A398809 Number of integer quadruples (w,x,y,z), all &gt; 0, such that w &lt;= s, x &lt;= t, y &lt;= u, z &lt;= v for some factorization n = s*t*u*v.
  * @author Sean A. Irvine
  */
 public class A398809 extends Sequence0 {

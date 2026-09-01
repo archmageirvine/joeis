@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A399264 allocated for Vladeta Jovovic.
+ * A399264 Number of asymmetric connected bipartite graphs with n vertices.
  * @author Sean A. Irvine
  */
 public class A399264 extends ParallelGenerateGraphsSequence {

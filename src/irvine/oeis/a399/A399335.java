@@ -5,7 +5,7 @@ import irvine.oeis.a056.A056040;
 import irvine.oeis.transform.BinomialMatrixTransform;
 
 /**
- * A399335 allocated for Peter Luschny.
+ * A399335 The binomial matrix of the swinging factorial (A056040). Square array read by ascending antidiagonals.
  * @author Sean A. Irvine
  */
 public class A399335 extends BinomialMatrixTransform {

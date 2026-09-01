@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063885 z(sigma(n)) = 2n, where z(n) = A048146.
+ * A063885 Numbers k such that z(sigma(k)) = 2*k, where z(k) = A048146(k).
  * @author Sean A. Irvine
  */
 public class A063885 extends Sequence1 {

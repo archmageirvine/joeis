@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066945 Numbers n such that phi(phi(n)) + sigma(sigma(n)) - phi(sigma(n)) - sigma(phi(n)) = phi(n).
+ * A066945 Numbers k such that phi(phi(k)) + sigma(sigma(k)) - phi(sigma(k)) - sigma(phi(k)) = phi(k).
  * @author Sean A. Irvine
  */
 public class A066945 extends Sequence1 {

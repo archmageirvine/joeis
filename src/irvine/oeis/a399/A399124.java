@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399124 allocated for Alper Ferudun.
+ * A399124 Number of permutations pi of [n] such that LIS(pi)*LDS(pi) = n, where LIS and LDS are the lengths of the longest increasing and decreasing subsequences.
  * @author Sean A. Irvine
  */
 public class A399124 extends Sequence1 {

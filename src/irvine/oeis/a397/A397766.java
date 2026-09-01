@@ -11,7 +11,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A397766 allocated for Marco Rip\u00e0.
+ * A397766 Primes of the form x^^y + w^^y, where x, y, w &gt;= 2 and ^^ denotes tetration.
  * @author Sean A. Irvine
  */
 public class A397766 extends Sequence1 {

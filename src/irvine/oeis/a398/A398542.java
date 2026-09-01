@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398542 allocated for Charles Cornell Norton.
+ * A398542 Number of 1324-avoiding L-griddings with n points.
  * @author Sean A. Irvine
  */
 public class A398542 extends Sequence0 {

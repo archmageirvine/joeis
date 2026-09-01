@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397811
+ * A397811 Number of 4-dimensional vector partitions of (n, n, n, n) into parts with nonnegative components (not all zero).
  * @author Sean A. Irvine
  */
 public class A397811 extends Sequence0 {

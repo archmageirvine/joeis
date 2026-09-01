@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398794 allocated for Omar Said.
+ * A398794 Number of values 0 &lt;= r &lt; 2^n such that the trajectories of r and r+1 under the 5x+1 map f (A185452), satisfy f^(n)(r) = f^(n)(r+1) and contain the same number of odd terms among the first n iterates.
  * @author Sean A. Irvine
  */
 public class A398794 extends Sequence1 {

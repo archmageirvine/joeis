@@ -291,22 +291,19 @@ public class A126750 extends Sequence0 {
 
     // I = compositional inverse of CBP.pointing().
     final CycleIndex cbpPointed = cbp.pointing().weightedTruncate(w);
-    System.out.println("CBPpointed[" + mN + "]=" + cbpPointed);
     final CycleIndex inv = cbpPointed.inverse(w);
 
     // Check during development.
-    // System.out.println("CBP       = " + cbp);
-    // System.out.println("CBP pointed = " + cbpPointed);
-    System.out.println("Inv       = " + inv);
-    // System.out.println("CBP[Inv]  = "
-    //   + localWreath(cbpPointed, inv).weightedTruncate(n));
+    System.out.println("P[" + mN + "]       = " + cbpPointed);
+    System.out.println("Inv[" + mN + "]     = " + inv);
+    System.out.println("P[Inv][" + mN + "]  = "  + localWreath(cbpPointed, inv).weightedTruncate(mN));
 
-    System.out.println(localWreath(cbpPointed, inv).weightedTruncate(4));
 
     // J = ci_xdiv(I), K = J^(-1), L = K - 1.
     final CycleIndex k = inv.xDiv().reciprocal(w);
     k.subtract(CycleIndex.ONE);
     //k.add(MultivariateMonomial.ONE, Q.NEG_ONE);
+    System.out.println("k = " + k);
 
     // NBP =
     //   CBP o I
@@ -325,7 +322,7 @@ public class A126750 extends Sequence0 {
     // Isotype generating series: substitute x_i -> x^i.
     final Polynomial<Q> series = nbp.apply(RING.x(), w);
 
-    System.out.println("Rational: " + series.coeff(mN));
+    System.out.println("Rational: " + series);
     return series.coeff(mN).toZ(); //RING.eval(series, Q.ONE).toZ();
   }
 }

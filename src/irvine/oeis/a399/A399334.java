@@ -4,7 +4,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.transform.BinomialMatrixTransform;
 
 /**
- * A399334 allocated for Peter Luschny.
+ * A399334 The binomial matrix of the middle binomial coefficients, square array read by ascending antidiagonals.
  * @author Sean A. Irvine
  */
 public class A399334 extends BinomialMatrixTransform {

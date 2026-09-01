@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398982 allocated for \u017diga Pirc.
+ * A398982 a(n) is the number k such that 2*(u*n+k) = Sum_{d|n} (u*d+k), where u and k are coprime and not both are 0.
  * @author Sean A. Irvine
  */
 public class A398982 extends Sequence1 {

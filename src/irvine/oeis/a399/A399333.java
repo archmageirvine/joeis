@@ -5,7 +5,7 @@ import irvine.oeis.a008.A008578;
 import irvine.oeis.transform.BinomialMatrixTransform;
 
 /**
- * A399333 allocated for Peter Luschny.
+ * A399333 The binomial matrix of the noncomposite numbers (A008578). Square array read by ascending antidiagonals.
  * @author Sean A. Irvine
  */
 public class A399333 extends BinomialMatrixTransform {

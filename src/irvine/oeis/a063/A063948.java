@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A063948 Unitary untouchable numbers: us(x) = n has no solution where us(x) (A063919) is the sum of the proper unitary divisors of x.
+ * A063948 Unitary untouchable numbers: Numbers k such that us(x) = k has no solution where us(x) (A063919) is the sum of the proper unitary divisors of x.
  * @author Sean A. Irvine
  */
 public class A063948 extends Sequence1 {

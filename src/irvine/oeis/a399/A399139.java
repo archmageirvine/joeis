@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399139 allocated for Hassan Sadeghi.
+ * A399139 Maximum size of a subset of {1,...,n} in which no prime divides more than 3 elements.
  * @author Sean A. Irvine
  */
 public class A399139 extends Sequence1 {

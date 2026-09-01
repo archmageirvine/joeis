@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A180042 The possible orders of cyclic groups that can be realized as holonomy groups of crystallographic groups in dimension 7.
+ * A180042 Possible orders of cyclic groups that can be realized as holonomy groups of crystallographic groups in dimension 7.
  * @author Georg Fischer
  */
 public class A180042 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001045;
 import irvine.oeis.transform.BinomialMatrixTransform;
 
 /**
- * A399336 allocated for Peter Luschny.
+ * A399336 The binomial matrix of the Jacobsthal numbers, square array read by ascending antidiagonals.
  * @author Sean A. Irvine
  */
 public class A399336 extends BinomialMatrixTransform {

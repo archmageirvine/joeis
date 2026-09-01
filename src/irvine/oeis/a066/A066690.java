@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066690 Odd n such that tau(n) = tau(n+2) = 10, where tau(n) = A000005(n) is the number of divisors of n.
+ * A066690 Odd k such that tau(k) = tau(k+2) = 10, where tau(k) = A000005(k) is the number of divisors of k.
  * @author Sean A. Irvine
  */
 public class A066690 extends Sequence1 {

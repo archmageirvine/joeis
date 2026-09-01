@@ -5,7 +5,7 @@ import irvine.oeis.a005.A005043;
 import irvine.oeis.transform.BinomialMatrixTransform;
 
 /**
- * A399330 allocated for Peter Luschny.
+ * A399330 The binomial matrix of the Riordan numbers, square array read by ascending antidiagonals.
  * @author Sean A. Irvine
  */
 public class A399330 extends BinomialMatrixTransform {

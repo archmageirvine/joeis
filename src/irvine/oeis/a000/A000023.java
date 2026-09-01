@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A000023 Expansion of e.g.f. exp(-2*x)/(1-x).
+ * A000023 a(n) is the number of permutations on {1,2,...,n} with an even number of fixed points minus the number of permutations with an odd number of fixed points.
  * @author Sean A. Irvine
  */
 public class A000023 extends Sequence0 {

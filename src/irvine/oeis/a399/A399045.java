@@ -4,7 +4,7 @@ package irvine.oeis.a399;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A399045 allocated for Andrew Howroyd.
+ * A399045 Total number of connected components in all induced subgraphs of the n X 2 rook graph.
  * @author Georg Fischer
  */
 public class A399045 extends HolonomicRecurrence {

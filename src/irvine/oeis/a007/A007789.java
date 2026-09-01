@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A007789 From a problem concerning circulant matrices and Gauss sums.
+ * A007789 a(n) = (1/n) * Sum_{x in (Z/nZ)^d} e^(2*Pi*i*det(circ(x))/n), the normalized Gauss sum of the d X d circulant determinant, where d=3.
  * @author Sean A. Irvine
  */
 public class A007789 extends MultiplicativeSequence {

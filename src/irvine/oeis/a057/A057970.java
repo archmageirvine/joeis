@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.math.z.Z;
 
 /**
- * A057970 5 x n binary matrices with 1 unit column up to row and column permutations.
+ * A057970 Number of 5 X n binary matrices with exactly 1 singleton column up to row and column permutations.
  * @author Sean A. Irvine
  */
 public class A057970 extends A057968 {

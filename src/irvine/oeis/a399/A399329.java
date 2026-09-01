@@ -5,7 +5,7 @@ import irvine.oeis.a003.A003418;
 import irvine.oeis.transform.BinomialMatrixTransform;
 
 /**
- * A399329 allocated for Peter Luschny.
+ * A399329 The binomial matrix of the LCM of {1, 2, ..., n}. Square array read by ascending antidiagonals.
  * @author Sean A. Irvine
  */
 public class A399329 extends BinomialMatrixTransform {

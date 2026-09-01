@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a013.A013929;
 
 /**
- * A065303 Neither n nor sigma(n) is squarefree.
+ * A065303 Neither k nor sigma(k) is squarefree.
  * @author Sean A. Irvine
  */
 public class A065303 extends FilterSequence {

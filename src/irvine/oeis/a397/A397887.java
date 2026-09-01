@@ -11,10 +11,16 @@ import irvine.oeis.a026.A026238;
  */
 public class A397887 extends CachedSequence {
 
-  private static final Sequence S = new A026238();
+  private final Sequence mS = new A026238();
 
   /** Construct the sequence. */
   public A397887() {
-    super(1, Long.class, (self, n) -> n == 1 ? Z.ONE : self.a(S.next()).add(n));
+    super(1);
+  }
+
+  @Override
+  protected Z compute(final Z nn) {
+    final long n = nn.longValueExact();
+    return n <= 1 ? Z.ONE : a(mS.next()).add(n);
   }
 }

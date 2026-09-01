@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397139 allocated for Steven E Landsburg.
+ * A397139 Number of Hotelling protocols in a two-person game where each player has n distinguishable moves (e.g. "announce a price", "announce a location", etc.).
  * @author Sean A. Irvine
  */
 public class A397139 extends Sequence1 {

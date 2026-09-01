@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000081;
 import irvine.oeis.transform.BinomialMatrixTransform;
 
 /**
- * A399339 allocated for Peter Luschny.
+ * A399339 The binomial matrix of the Polya tree numbers, square array read by ascending antidiagonals.
  * @author Sean A. Irvine
  */
 public class A399339 extends BinomialMatrixTransform {

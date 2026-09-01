@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A249939 E.g.f.: 1/(5 - 4*cosh(x)).
+ * A249939 Expansion of e.g.f. 1/(5 - 4*cosh(x)).
  * E.g.f.: 1/(5 - 4*cosh(x)), even powers
  * @author Georg Fischer
  */

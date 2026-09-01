@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062239 Numbers n with property that every digit is a prime factor of n.
+ * A062239 Numbers k such that every digit is a prime factor of k.
  * @author Sean A. Irvine
  */
 public class A062239 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A057969 5 x n binary matrices without unit columns up to row and column permutations.
+ * A057969 Number of 5 X n binary matrices without singleton columns up to row and column permutations.
  * @author Sean A. Irvine
  */
 public class A057969 extends Sequence0 {

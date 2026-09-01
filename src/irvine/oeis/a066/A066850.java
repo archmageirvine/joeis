@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066850 Numbers n such that phi(phi(n)) + sigma(sigma(n)) = phi(sigma(n)) + sigma(phi(n)), where phi=A000010 is Euler's totient function and sigma=A000203 is the sum of divisors function.
+ * A066850 Numbers k such that phi(phi(k)) + sigma(sigma(k)) = phi(sigma(k)) + sigma(phi(k)), where phi=A000010 is Euler's totient function and sigma=A000203 is the sum of divisors function.
  * @author Sean A. Irvine
  */
 public class A066850 extends Sequence1 {

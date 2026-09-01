@@ -7,7 +7,7 @@ import irvine.oeis.a193.A193231;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A365810 Squareferee numbers ordered factorization-wise by Blue code: a(n) = A019565(A193231(n)).
+ * A365810 Squarefree numbers ordered factorization-wise by Blue code: a(n) = A019565(A193231(n)).
  * @author Georg Fischer
  */
 public class A365810 extends SingleTransformSequence {

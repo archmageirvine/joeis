@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399055 allocated for Lux Penet.
+ * A399055 Number of distinct terminal state loops of Rule 30 cellular automaton in a cyclic universe of width n.
  * @author Sean A. Irvine
  */
 public class A399055 extends Sequence1 {

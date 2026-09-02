@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.function.BiFunction;
+import java.util.function.Predicate;
 
 import irvine.math.function.Functions;
 import irvine.math.set.IntegerPermutation;
@@ -127,6 +128,24 @@ public final class IntegerPartition {
       x = f.apply(x, parts);
     }
     return x;
+  }
+
+  /**
+   * Count the partitions of a number that fulfill some condition.
+   * @param n number to be partitioned
+   * @param cond predicate
+   * @return true if the condition is fulfilled and the partition is to be counted, false if it should not be counted
+   */
+  public static Z count(final int n, final Predicate<int[]> cond) {
+    Z count = Z.ZERO;
+    final IntegerPartition ip = new IntegerPartition(n);
+    int[] p;
+    while ((p = ip.next()) != null) {
+      if (cond.test(p)) {
+        count = count.add(1);
+      }
+    }
+    return count;
   }
 
   /**

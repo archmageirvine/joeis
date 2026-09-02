@@ -1,6 +1,10 @@
 package irvine.math.partition;
 
 import java.util.Arrays;
+import java.util.function.BiFunction;
+import java.util.function.Predicate;
+
+import irvine.math.z.Z;
 
 /**
  * Generate partitions into distinct parts.
@@ -36,6 +40,42 @@ public class DistinctPartsPartition {
       res[k] = p[j];
     }
     return res;
+  }
+
+  /**
+   * Iterate over all partitions of a number.
+   * @param n number to be partitioned
+   * @param start initializes the accumulated value
+   * @param f maps <code>(x, a) -> x</code>, where the int array <code>a</code> contains one individual partition
+   * @param <A> accumulated type
+   * @return final accumulated value
+   */
+  public static <A> A iterate(final int n, final A start, final BiFunction<A, int[], A> f) {
+    A x = start;
+    final DistinctPartsPartition ip = new DistinctPartsPartition(n);
+    int[] parts;
+    while ((parts = ip.next()) != null) {
+      x = f.apply(x, parts);
+    }
+    return x;
+  }
+
+  /**
+   * Count the partitions of a number that fulfill some condition.
+   * @param n number to be partitioned
+   * @param cond predicate
+   * @return true if the condition is fulfilled and the partition is to be counted, false if it should not be counted
+   */
+  public static Z count(final int n, final Predicate<int[]> cond) {
+    Z count = Z.ZERO;
+    final DistinctPartsPartition ip = new DistinctPartsPartition(n);
+    int[] p;
+    while ((p = ip.next()) != null) {
+      if (cond.test(p)) {
+        count = count.add(1);
+      }
+    }
+    return count;
   }
 
   /**

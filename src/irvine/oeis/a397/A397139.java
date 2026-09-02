@@ -15,7 +15,7 @@ public class A397139 extends Sequence1 {
 
   private final MemoryFunctionInt2<Z> mT = new MemoryFunctionInt2<>() {
     @Override
-    public Z compute(int i, int j) {
+    public Z compute(final int i, final int j) {
       if (i < 0 || j < 0) {
         return Z.ZERO;
       }

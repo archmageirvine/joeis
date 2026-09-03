@@ -17,7 +17,6 @@ A000617 Number of NP-equivalence classes of threshold functions of n or fewer va
 A000619 NP-equivalence classes of threshold functions of exactly n variable
 A000637 Simple dependency on A000638
 A000638 Number of permutation groups of degree n
-A000663 Insufficient detail, pos. similar to A000662, cf. A000595, cycle index, have paper in German, depends A046858
 A000679 Subset of A000001, hard
 A000769 No 3 in a line problem, hard
 A000785 Depends on A048142
@@ -2776,3 +2775,4 @@ A086316 Decimal expansion of estimate of the strongly triple-free set constant.
 A086364 Triangle read by rows: S_D(n,k) = "Type D" Stirling numbers of the second kind.
 A086373 Number of ordered triples (a,b,c) of elements of the symmetric group S_n such that a,b,c generate S_n.
 A086423 Number of isolated-pentagon fullerenes with 2n vertices (or carbon atoms).
+A086432 Maximum of |det(A)| where A is an n X n circulant (0,1) matrix over the integers

@@ -5,7 +5,7 @@ import irvine.oeis.a307.A307730;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A307720
+ * A348245 If A307730(n) = i, then a(n) = 1 + number of copies of i that have already appeared in A307730.
  * @author Sean A. Irvine
  */
 public class A348245 extends A307730 {

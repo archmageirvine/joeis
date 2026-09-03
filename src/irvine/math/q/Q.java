@@ -257,12 +257,11 @@ public class Q extends Number implements Comparable<Q>, IsInteger, Serializable 
    * @return round function
    */
   public Z bankersRound() {
-    return isInteger() ? toZ() : ceiling().clearBit(0);
+    return isInteger() ? toZ() : den().equals(Z.TWO) ? ceiling().clearBit(0) : round();
   }
 
   /**
    * Add a rational to this rational.
-   *
    * @param n rational to add
    * @return sum
    */
@@ -276,7 +275,6 @@ public class Q extends Number implements Comparable<Q>, IsInteger, Serializable 
 
   /**
    * Add an integer to this rational.
-   *
    * @param n integer to add
    * @return sum
    */
@@ -286,7 +284,6 @@ public class Q extends Number implements Comparable<Q>, IsInteger, Serializable 
 
   /**
    * Add an integer to this rational.
-   *
    * @param n integer to add
    * @return sum
    */
@@ -296,7 +293,6 @@ public class Q extends Number implements Comparable<Q>, IsInteger, Serializable 
 
   /**
    * Subtract a rational from this rational.
-   *
    * @param n rational to subtract
    * @return difference
    */
@@ -310,7 +306,6 @@ public class Q extends Number implements Comparable<Q>, IsInteger, Serializable 
 
   /**
    * Subtract an integer from this rational.
-   *
    * @param n integer to subtract
    * @return difference
    */
@@ -320,7 +315,6 @@ public class Q extends Number implements Comparable<Q>, IsInteger, Serializable 
 
   /**
    * Subtract an integer from this rational.
-   *
    * @param n integer to subtract
    * @return difference
    */
@@ -330,7 +324,6 @@ public class Q extends Number implements Comparable<Q>, IsInteger, Serializable 
 
   /**
    * Multiply this rational by a rational.
-   *
    * @param n multiplicand
    * @return product
    */
@@ -340,7 +333,6 @@ public class Q extends Number implements Comparable<Q>, IsInteger, Serializable 
 
   /**
    * Multiply this rational by an integer.
-   *
    * @param n multiplicand
    * @return product
    */
@@ -350,7 +342,6 @@ public class Q extends Number implements Comparable<Q>, IsInteger, Serializable 
 
   /**
    * Multiply this rational by an integer.
-   *
    * @param n multiplicand
    * @return product
    */
@@ -360,7 +351,6 @@ public class Q extends Number implements Comparable<Q>, IsInteger, Serializable 
 
   /**
    * Divide this rational by a rational.
-   *
    * @param n divisor
    * @return quotient
    * @exception IllegalArgumentException if <code>n</code> is zero.
@@ -371,7 +361,6 @@ public class Q extends Number implements Comparable<Q>, IsInteger, Serializable 
 
   /**
    * Divide this rational by an integer.
-   *
    * @param n divisor
    * @return quotient
    * @exception IllegalArgumentException if <code>n</code> is zero.
@@ -382,7 +371,6 @@ public class Q extends Number implements Comparable<Q>, IsInteger, Serializable 
 
   /**
    * Divide this rational by an integer.
-   *
    * @param n divisor
    * @return quotient
    * @exception IllegalArgumentException if <code>n</code> is zero.
@@ -393,7 +381,6 @@ public class Q extends Number implements Comparable<Q>, IsInteger, Serializable 
 
   /**
    * Return the square of this rational.
-   *
    * @return square
    */
   public Q square() {
@@ -402,7 +389,6 @@ public class Q extends Number implements Comparable<Q>, IsInteger, Serializable 
 
   /**
    * Return an integer power of this rational.
-   *
    * @param exponent exponent
    * @return <code>this^exponent</code>
    */
@@ -421,7 +407,6 @@ public class Q extends Number implements Comparable<Q>, IsInteger, Serializable 
   /**
    * Test if this rational is a proper fraction. That is, test
    * that <code>|p|/q</code> is less than 1.
-   *
    * @return true for a proper fraction
    */
   public boolean isProperFraction() {

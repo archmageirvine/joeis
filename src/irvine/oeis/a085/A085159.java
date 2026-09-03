@@ -14,7 +14,12 @@ import irvine.oeis.a074.A074684;
  */
 public class A085159 extends A014486 {
 
-  static Z s085159(final Z n) {
+  /**
+   * The bijection gma085159.
+   * @param n S-expression as an integer
+   * @return result
+   */
+  public static Z s085159(final Z n) {
     return A074684.s074684(A057501.rotateHandshakesP(A057501.rotateHandshakesP(A074683.s074683(SExpression.binexp2pars(n))))).toZ();
   }
 

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A307720
+ * A307720 Lexicographically earliest sequence of positive integers in which, for all positive k, there are exactly k pairs of consecutive terms whose product is k.
  * @author Sean A. Irvine
  */
 public class A307720 extends Sequence1 {

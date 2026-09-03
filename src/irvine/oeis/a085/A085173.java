@@ -14,8 +14,17 @@ import irvine.oeis.a074.A074684;
  */
 public class A085173 extends A014486 {
 
+  /**
+   * This bijection applied to an S-expression.
+   * @param s S-expression
+   * @return S-expression
+   */
+  public static SExpression s085173(final SExpression s) {
+    return A074684.s074684(A057501.rotateHandshakesP(A074683.s074683(s)));
+  }
+
   @Override
   public Z next() {
-    return Functions.GLOBAL_CATALAN_RANK.z(A074684.s074684(A057501.rotateHandshakesP(A074683.s074683(SExpression.binexp2pars(super.next())))).toZ());
+    return Functions.GLOBAL_CATALAN_RANK.z(s085173(SExpression.binexp2pars(super.next())).toZ());
   }
 }

@@ -21,7 +21,12 @@ public class A085169 extends A014486 {
     return !s.isPair() ? s : SExpression.append(evenLevel(s.car()), SExpression.cons(oddLevel(s.cdr()), new SExpression()));
   }
 
-  private static SExpression s085169(final SExpression s) {
+  /**
+   * Return this bijection on an S-expression.
+   * @param s S-expression
+   * @return S-expression
+   */
+  public static SExpression s085169(final SExpression s) {
     return evenLevel(s);
   }
 

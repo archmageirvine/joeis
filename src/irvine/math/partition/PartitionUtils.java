@@ -14,6 +14,26 @@ public final class PartitionUtils {
   private PartitionUtils() { }
 
   /**
+   * Compute the integer part of a long fraction.
+   * @param num numerator (may be negative)
+   * @param den denominator
+   * @return floor(num/den)
+   */ 
+  public static int floor(final long num, final long den) { 
+    return Math.toIntExact(num < 0 ? (num - 1) / den : num / den);
+  }
+
+  /**
+   * Compute the integer part of a long fraction.
+   * @param num numerator (may be negative)
+   * @param den denominator
+   * @return ceiling(num/den)
+   */ 
+  public static int ceiling(final long num, final long den) { 
+    return Math.toIntExact(num > 0 ? (num + 1) / den : num / den);
+  }
+
+  /**
    * Determine whether a number is a part.
    * @param p partition
    * @param num number to be tested for membership
@@ -25,6 +45,31 @@ public final class PartitionUtils {
       return false;
     }
     if (num == 1) {
+      return p[len - 1] == num;
+    }
+    for (int pi : p) {
+      if (pi < num) {
+        return false;
+      }
+      if (pi == num) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  /**
+   * Determine whether a long number is a part.
+   * @param p partition
+   * @param num number to be tested for membership
+   * @return true for a part, false otherwise
+   */
+  public static boolean isPart(final int[] p, final long num) {
+    final int len = p.length;
+    if (len == 0) {
+      return false;
+    }
+    if (num == 1L) {
       return p[len - 1] == num;
     }
     for (int pi : p) {
@@ -214,6 +259,44 @@ public final class PartitionUtils {
   }
 
   /**
+   * Get the count of parts &gt; 1, without multiplicity.
+   * @param p partition
+   * @return number of distinct parts &gt; 1
+   */
+  public static int gt1Count(final int[] p) {
+    int count = 0;
+    int old = 0;
+    for (int n : p) {
+      if (old != n) {
+        old = n;
+        if (n > 1) {
+           ++count;
+        } else {
+          return count;
+        }
+      } // else old == n: ignore
+    }
+    return count;
+  }
+
+  /**
+   * Get the count of parts &gt; 1, with multiplicity.
+   * @param p partition
+   * @return number of all parts &gt; 1
+   */
+  public static int allGt1Count(final int[] p) {
+    int count = 0;
+    for (int n : p) {
+      if (n > 1) {
+         ++count;
+      } else {
+        return count;
+      }
+    }
+    return count;
+  }
+
+  /**
    * Get the multiplicity of a number.
    * @param p partition
    * @param num number to be counted
@@ -239,20 +322,20 @@ public final class PartitionUtils {
    */
   public static int minDiff(final int[] p) {
     final int len = p.length;
+    int result = p[0];
     if (len <= 1) {
-      return 0;
+      return result;
     }
     int i = 0;
     int old = p[i++];
-    int diff = old - p[i++];
     while (i < len) {
-      final int diff2 = old - p[i];
-      if (diff2 < diff) {
-        diff = diff2;
+      final int diff = old - p[i];
+      if (diff < result) {
+        result = diff;
       }
       old = p[i++];
     }
-    return diff;
+    return result;
   }
 
   /**
@@ -262,20 +345,20 @@ public final class PartitionUtils {
    */
   public static int maxDiff(final int[] p) {
     final int len = p.length;
+    int result = 0;
     if (len <= 1) {
-      return 0;
+      return result;
     }
     int i = 0;
     int old = p[i++];
-    int diff = old - p[i++];
     while (i < len) {
-      final int diff2 = old - p[i];
-      if (diff2 > diff) {
-        diff = diff2;
+      final int diff = old - p[i];
+      if (diff > result) {
+        result = diff;
       }
       old = p[i++];
     }
-    return diff;
+    return result;
   }
 
   /**

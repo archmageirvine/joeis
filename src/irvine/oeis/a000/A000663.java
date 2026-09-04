@@ -23,7 +23,7 @@ public class A000663 extends Sequence0 {
     final int s = Math.max(2 * ++mN, 1);
     final IntegerPartition part = new IntegerPartition(s);
     int[] p;
-    int[] c = new int[s + 1];
+    final int[] c = new int[s + 1];
     Polynomial<Q> total = RING.zero();
     while ((p = part.next()) != null) {
       IntegerPartition.toCountForm(p, c);

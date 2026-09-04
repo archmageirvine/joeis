@@ -275,6 +275,10 @@ public final class Functions {
   public static final Function2 BINOMIAL = new Binomial2(); // =A007318
   /** Multiplicative order in <code>Z_base</code>. */
   public static final Function2 ORDER = new MultiplicativeOrder();
+  /** Ceiling of a quotient. */
+  public static final Function2 QUOTIENT_CEILING = new QuotientCeiling();
+  /** Floor of a quotient. */
+  public static final Function2 QUOTIENT_FLOOR = new QuotientFloor();
 
   // Aggregating functions
 

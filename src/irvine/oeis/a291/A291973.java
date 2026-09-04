@@ -6,15 +6,15 @@ import irvine.oeis.a260.A260876;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A291975 a(n) = (4*n)! * [z^(4*n)] exp((cos(z) + cosh(z))/2 - 1).
+ * A291973 a(n) = (3*n)! * [z^(3*n)] exp(exp(z)/3 + 2*exp(-z/2)*cos(z*sqrt(3)/2)/3 - 1).
  * @author Georg Fischer
  */
-public class A291975 extends LambdaSequence {
+public class A291973 extends LambdaSequence {
 
   private static final DirectArray A260876 = new A260876();
 
   /** Construct the sequence. */
-  public A291975() {
-    super(0, n -> A260876.a(4, n));
+  public A291973() {
+    super(0, n -> A260876.a(3, n));
   }
 }

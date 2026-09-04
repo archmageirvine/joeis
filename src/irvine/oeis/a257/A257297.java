@@ -5,10 +5,10 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence0;
 
 /**
- * A257850 a(n) = floor(n/10) * (n mod 10).
+ * A257297 a(n) = (initial digit of n) * (n with initial digit removed).
  * @author Sean A. Irvine
  */
-public class A257850 extends Sequence0 implements DirectSequence {
+public class A257297 extends Sequence0 implements DirectSequence {
 
   private long mN = -1;
 
@@ -24,7 +24,11 @@ public class A257850 extends Sequence0 implements DirectSequence {
 
   @Override
   public Z a(final long n) {
-    return Z.valueOf((n / 10) * (n % 10));
+    if (n < 11) {
+      return Z.ZERO;
+    }
+    final String s = String.valueOf(n);
+    return new Z(s.substring(1)).multiply(s.charAt(0) - '0');
   }
 }
 

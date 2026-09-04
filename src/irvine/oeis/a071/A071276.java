@@ -2,17 +2,17 @@ package irvine.oeis.a071;
 
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002113;
 
 /**
  * A071276 a(1) = 1; a(n) = smallest palindrome which is a nontrivial product of n distinct palindromes.
  * @author Sean A. Irvine
  */
-public class A071276 extends Sequence1 {
+public class A071276 extends Sequence0 {
 
-  private final DirectSequence mPalindromes = DirectSequence.create(new A002113().skip(2)); // ignore 0 and 1
-  private int mN = 0;
+  private final DirectSequence mPalindromes = DirectSequence.create(new A002113().skip(2));
+  private int mN = -1;
 
   private boolean is(final Z t, final int prev, final int cnt) {
     if (cnt == mN) {
@@ -29,8 +29,11 @@ public class A071276 extends Sequence1 {
 
   @Override
   public Z next() {
-    if (++mN == 1) {
+    if (++mN == 0) {
       return Z.ONE;
+    }
+    if (mN == 1) {
+      return Z.TWO;
     }
     int k = -1;
     while (true) {

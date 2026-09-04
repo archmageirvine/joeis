@@ -875,4 +875,42 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
     }
     return res.weightedTruncate(n);
   }
+
+  /**
+   * Compose two cycle indices as a plethysm.
+   * @param g cycle index to compose with
+   * @param n maximum weight to retain
+   * @return plethysm
+   */
+  public CycleIndex plethysm(final CycleIndex g, final int n) {
+    final CycleIndex res =
+      new CycleIndex("(" + getName() + "," + g.getName() + ")");
+
+    final HashMap<Point, CycleIndex> gCache = new HashMap<>();
+
+    for (final MultivariateMonomial m : values()) {
+      CycleIndex r = CycleIndex.ONE;
+
+      for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
+        final int k = e.getKey().right();
+        final int exponent = e.getValue().intValueExact();
+
+        final Point key = new Point(k, exponent);
+        CycleIndex gkl = gCache.get(key);
+
+        if (gkl == null) {
+          final CycleIndex gk = g.scaleIndex(k).weightedTruncate(n);
+          gkl = gk.pow(exponent, n).weightedTruncate(n); // todo
+          gCache.put(key, gkl);
+        }
+
+        r = r.op(StandardMultiply.OP, gkl, Z.valueOf(n));
+      }
+
+      r.multiply(m.getCoefficient());
+      res.add(r);
+    }
+
+    return res.weightedTruncate(n);
+  }
 }

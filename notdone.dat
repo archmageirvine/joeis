@@ -2776,3 +2776,5 @@ A086364 Triangle read by rows: S_D(n,k) = "Type D" Stirling numbers of the secon
 A086373 Number of ordered triples (a,b,c) of elements of the symmetric group S_n such that a,b,c generate S_n.
 A086423 Number of isolated-pentagon fullerenes with 2n vertices (or carbon atoms).
 A086432 Maximum of |det(A)| where A is an n X n circulant (0,1) matrix over the integers
+A086441 Number of inequivalent ways a semi-infinite curve can cross a straight line n times.
+A086446 Integers representable as the product of the sum of three positive integers with the sum of their reciprocals: n=(x+y+z)*(1/x+1/y+1/z).

@@ -11,23 +11,20 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
  */
 public class A399322 extends ParallelGenerateGraphsSequence {
 
-  // todo apparently does not match definition
-
   private static boolean isTransmissionIrregular(final Graph graph) {
-    if (graph.order() == 1) {
-      return true;
+    if (graph.order() < 7) {
+      return graph.order() == 1;
     }
-//    if (graph.order() < 7) {
-//      return false;
-//    }
-    final int sum = Functions.SUM.i(graph.distanceVector(0));
-    System.out.println(graph + " " + sum);
-    for (int u = 1; u < graph.order(); ++u) {
-      if (Functions.SUM.i(graph.distanceVector(u)) != sum) {
-        return true;
+    final int[] dist = new int[graph.order()];
+    for (int u = 0; u < graph.order(); ++u) {
+      dist[u] = Functions.SUM.i(graph.distanceVector(u));
+      for (int v = 0; v < u; ++v) {
+        if (dist[u] == dist[v]) {
+          return false;
+        }
       }
     }
-    return false;
+    return true;
   }
 
   /** Construct the sequence. */

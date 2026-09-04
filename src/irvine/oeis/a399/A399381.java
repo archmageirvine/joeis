@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399381 allocated for Aidan Markey.
+ * A399381 a(n) is the minimum positive integer k such that k*n-1 is squarefree.
  * @author Sean A. Irvine
  */
 public class A399381 extends Sequence1 {

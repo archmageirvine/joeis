@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.a000.A000170;
 
 /**
- * A051223 Number of ways of placing n nonattacking superqueens on an n X n board.
+ * A051223 Number of ways of placing n nonattacking superqueens (amazons) on an n X n board.
  * @author Sean A. Irvine
  */
 public class A051223 extends A000170 {

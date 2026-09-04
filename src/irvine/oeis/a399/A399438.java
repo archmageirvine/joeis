@@ -4,7 +4,7 @@ import irvine.oeis.a182.A182012;
 import irvine.oeis.transform.InverseEulerTransform;
 
 /**
- * A399438 allocated for Pawe\u0142 Kwaczy\u0144ski.
+ * A399438 Number of connected graphs on 2n unlabeled nodes all having odd degree.
  * @author Sean A. Irvine
  */
 public class A399438 extends InverseEulerTransform {

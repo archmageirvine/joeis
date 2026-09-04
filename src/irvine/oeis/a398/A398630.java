@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A398630 allocated for Neal Gersh Tolunsky.
+ * A398630 Lexicographically earliest sequence such that no four terms at symmetrically-spaced indices are equal.
  * @author Sean A. Irvine
  */
 public class A398630 extends CachedSequence {

@@ -8,7 +8,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A106534
+ * A106534 Sum array of Catalan numbers (A000108) read by upward antidiagonals.
  * @author Georg Fischer
  */
 public class A106534 extends BaseTriangle implements DirectArray {

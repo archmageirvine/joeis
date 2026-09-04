@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A399163 allocated for G\u00f6ktu\u011f Omay.
+ * A399163 Number of roots modulo the n-th prime of x^6+2*x^5+2*x^4+2*x^3+x^2+1.
  * @author Sean A. Irvine
  */
 public class A399163 extends A000040 {

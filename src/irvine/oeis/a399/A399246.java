@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399246 allocated for Clark Kimberling.
+ * A399246 Rectangular array read by descending antidiagonals: r(n, k) = floor(k*x^n), where x = 1+sqrt(2).
  * @author Sean A. Irvine
  */
 public class A399246 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A000544 Number of permutations of length n by rises.
+ * A000544 One-half of the number of permutations p of [n] having exactly two runs of adjacent entries differing by 1.
  * @author Sean A. Irvine
  */
 public class A000544 extends AbstractSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A057142 Occurrences of most frequently occurring number in 1-to-n multiplication table.
+ * A057142 Number of occurrences of the most frequently occurring number in a 1-to-n multiplication table.
  * @author Sean A. Irvine
  */
 public class A057142 extends Sequence1 {

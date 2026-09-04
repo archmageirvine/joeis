@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A396576 allocated for Jonas Eschgf\u00e4ller.
+ * A396576 Number of increasing mobiles with n nodes, refined by the leaf-lineage composition of n-1, read by rows.
  * @author Sean A. Irvine
  */
 public class A396576 extends Sequence2 {

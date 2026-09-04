@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399430 allocated for Jens Ahlstr\u00f6m.
+ * A399430 b * c * d where b &gt;= c &gt;= d &gt;= 0 ordered by b then c then d.
  * @author Sean A. Irvine
  */
 public class A399430 extends Sequence1 {

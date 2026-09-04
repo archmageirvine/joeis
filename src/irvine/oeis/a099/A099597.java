@@ -7,7 +7,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A099597
+ * A099597 Array T(n,k) read by antidiagonals: expansion of exp(x+y)/(1-xy).
  * @author Georg Fischer
  */
 public class A099597 extends UpperLeftTriangle implements DirectArray {

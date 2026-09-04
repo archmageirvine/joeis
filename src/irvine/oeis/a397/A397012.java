@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.TwoParameterFormSequence;
 
 /**
- * A397012 allocated for Mohammad F. Marashdeh.
+ * A397012 Numbers that are a sum of three triangular numbers whose indices are in arithmetic progression; i.e., numbers of the form 3*T(k) + d^2, where T(k) = k*(k+1)/2 and k, d are integers.
  * @author Sean A. Irvine
  */
 public class A397012 extends TwoParameterFormSequence {

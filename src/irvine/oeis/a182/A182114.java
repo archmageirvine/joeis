@@ -8,7 +8,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A182114
+ * A182114 Number of partitions of n with largest inscribed rectangle having area &lt;= k; triangle T(n,k), 0&lt;=n, 0&lt;=k&lt;=n, read by rows.
  * @author Georg Fischer
  */
 public class A182114 extends BaseTriangle implements DirectArray {

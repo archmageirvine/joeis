@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399385 allocated for Christoph Koutschan.
+ * A399385 Number of 2n+1 X 2n+1 off-diagonally symmetric alternating sign matrices.
  * @author Sean A. Irvine
  */
 public class A399385 extends Sequence0 {

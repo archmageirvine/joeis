@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A399440 allocated for Hassane Bakkaoui.
+ * A399440 Number of pairs (d, e) of divisors of n with d &lt; e &lt; 2*d.
  * @author Sean A. Irvine
  */
 public class A399440 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A086461.
+ * A398327 allocated for Daniel Holliday.
  * @author Sean A. Irvine
  */
 public class A398327 extends FilterNumberSequence {

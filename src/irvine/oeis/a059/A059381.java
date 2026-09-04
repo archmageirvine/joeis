@@ -4,7 +4,7 @@ import irvine.oeis.PartialProductSequence;
 import irvine.oeis.a007.A007434;
 
 /**
- * A059381 Product J_2(i), i=1..n.
+ * A059381 a(n) = Product_{i=1..n} J_2(i).
  * @author Sean A. Irvine
  */
 public class A059381 extends PartialProductSequence {

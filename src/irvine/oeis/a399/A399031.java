@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A399031 allocated for Sylvain Geffroy.
+ * A399031 Least positive k such that some nontrivial proper divisor d of n satisfies d+k | n+k; 0 if no such k exists.
  * @author Sean A. Irvine
  */
 public class A399031 extends Sequence1 {

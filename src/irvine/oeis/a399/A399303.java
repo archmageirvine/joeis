@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399303 allocated for Jishnu Babu Ranitha.
+ * A399303 Number of partitions of the 4-dimensional vector (n, n, n, n) into strictly distinct parts with nonnegative components, excluding elementary basis vectors (1,0,0,0), (0,1,0,0), (0,0,1,0), and (0,0,0,1).
  * @author Sean A. Irvine
  */
 public class A399303 extends Sequence0 {

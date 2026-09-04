@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a095.A095048;
 
 /**
- * A243542 Numbers n such that the list of divisors of n contains 9 distinct digits (in base 10).
+ * A243542 Numbers k such that the list of divisors of k contains 9 distinct digits (in base 10).
  * @author Georg Fischer
  */
 public class A243542 extends FilterPositionSequence {

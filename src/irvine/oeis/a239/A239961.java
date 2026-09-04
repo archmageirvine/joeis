@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A239961 Number of partitions of n such that (number of distinct parts) = number of 2&apos;s.
+ * A239961 Number of partitions of n such that (number of distinct parts) = number of 2's.
  * @author Georg Fischer
  */
 public class A239961 extends LambdaSequence {

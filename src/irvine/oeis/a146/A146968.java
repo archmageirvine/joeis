@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A146968 Brocard's problem: positive integers n such that n!+1 = m^2.
+ * A146968 Brocard's problem: positive integers k such that k!+1 is a square.
  * @author Georg Fischer
  */
 public class A146968 extends BriefSequence {

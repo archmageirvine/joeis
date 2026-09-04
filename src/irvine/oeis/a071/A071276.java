@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002113;
 
 /**
- * A071276 a(1) = 1; a(n) = smallest palindrome which is a nontrivial product of n distinct palindromes.
+ * A071276 a(n) = smallest palindrome which is a product of n distinct palindromes &gt; 1.
  * @author Sean A. Irvine
  */
 public class A071276 extends Sequence0 {

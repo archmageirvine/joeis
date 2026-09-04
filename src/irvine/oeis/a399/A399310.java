@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399310 allocated for Eddie Lin Rui.
+ * A399310 Number of distinct entries in a slice of Pascal's square pyramid (A086754).
  * @author Sean A. Irvine
  */
 public class A399310 extends Sequence0 {

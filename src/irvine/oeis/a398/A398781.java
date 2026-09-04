@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398781 allocated for Jan Snellman.
+ * A398781 If k appears, 6*k does not.
  * @author Sean A. Irvine
  */
 public class A398781 extends Sequence1 {

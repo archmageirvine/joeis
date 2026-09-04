@@ -5,7 +5,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A396701 allocated for Ilya Gutkovskiy.
+ * A396701 a(n) = Sum_{d|n} tau_3(d) * sigma(n/d).
  * @author Sean A. Irvine
  */
 public class A396701 extends MultiplicativeSequence {

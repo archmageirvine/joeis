@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a130.A130310;
 
 /**
- * A399305 allocated for Geoffrey Caveney.
+ * A399305 Integers whose minimal Lucas representation (A130310) ends in a 0 which if removed results in a valid minimal Lucas representation of another integer.
  * @author Sean A. Irvine
  */
 public class A399305 extends Sequence1 {

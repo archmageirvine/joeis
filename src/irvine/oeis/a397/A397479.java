@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A397479 allocated for Ansh Aggarwal.
+ * A397479 Triangle read by rows: T(n, k) is the least m such that moving the rightmost digit of m to the left end multiplies m by k, where m is written in base n; n &gt;= 2, 1 &lt;= k &lt;= n-1.
  * @author Sean A. Irvine
  */
 public class A397479 extends Sequence2 {

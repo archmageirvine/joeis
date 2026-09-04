@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A240856 Number of partitions p of n into distinct parts not including 2*(number of parts).
+ * A240856 Number of partitions p of n into distinct parts including 2*(number of parts).
  * @author Georg Fischer
  */
 public class A240856 extends LambdaSequence {

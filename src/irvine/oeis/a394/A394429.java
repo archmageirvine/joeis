@@ -9,7 +9,7 @@ import irvine.oeis.a257.A257297;
 import irvine.oeis.a257.A257850;
 
 /**
- * A394429 allocated for Nicolas B\u011blohoubek.
+ * A394429 Numbers which are the minimum of a cycle in the map x -&gt; A257850(x) + A257297(x).
  * @author Sean A. Irvine
  */
 public class A394429 extends Sequence1 {

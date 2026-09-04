@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a281.A281230;
 
 /**
- * A399298 allocated for Alper Ferudun.
+ * A399298 Number of cycles of the discrete Arnold cat map on an n X n array.
  * @author Sean A. Irvine
  */
 public class A399298 extends A281230 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398376 allocated for Tuomas Laakkonen.
+ * A398376 Number of congruence classes of nonsingular n X n matrices over GF(2).
  * @author Sean A. Irvine
  */
 public class A398376 extends Sequence0 {

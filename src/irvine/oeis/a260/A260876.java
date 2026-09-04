@@ -10,7 +10,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A260876
+ * A260876 Number of m-shape set partitions, square array read by ascending antidiagonals, A(m,n) for m, n &gt;= 0.
  * @author Georg Fischer
  */
 public class A260876 extends UpperLeftTriangle implements DirectArray {

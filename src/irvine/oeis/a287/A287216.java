@@ -8,7 +8,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A287216
+ * A287216 Number A(n,k) of set partitions of [n] such that all absolute differences between least elements of consecutive blocks are &lt;= k; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Georg Fischer
  */
 public class A287216 extends UpperLeftTriangle implements DirectArray {

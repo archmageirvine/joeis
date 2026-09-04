@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a029.A029908;
 
 /**
- * A397678 allocated for Haotong Wang.
+ * A397678 Numbers k which reach the fixed point 5 under iteration of sopfr, where sopfr = A001414 (sum of prime factors with multiplicity).
  * @author Sean A. Irvine
  */
 public class A397678 extends FilterPositionSequence {

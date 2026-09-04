@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A086461 Symmetric version of square array A086460, read by antidiagonals.
+ * A399457 allocated for Nathan Nichols.
  * @author Sean A. Irvine
  */
 public class A399457 extends Sequence1 {

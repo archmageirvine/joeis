@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a055.A055471;
 
 /**
- * A398422 allocated for Bernard Schott.
+ * A398422 Numbers containing at least one zero and divisible by the product of their nonzero digits.
  * @author Sean A. Irvine
  */
 public class A398422 extends FilterSequence {

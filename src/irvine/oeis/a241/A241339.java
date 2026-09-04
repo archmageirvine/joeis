@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A241339 Number of partitions p of n not including round(mean(p)) as a part.  (This is &quot;Mathematica round&quot;; for round(x) defined as floor(x + 1/2), see A241734.)
+ * A241339 Number of partitions p of n not including round(mean(p)) as a part.  (This is "Mathematica round"; for round(x) defined as floor(x + 1/2), see A241734.).
  * @author Georg Fischer
  */
 public class A241339 extends LambdaSequence {

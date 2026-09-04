@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396696 allocated for Anderson Torres.
+ * A396696 a(n) is the smallest prime greater than n^2*a(n-1), with a(1) = 2.
  * @author Sean A. Irvine
  */
 public class A396696 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001615;
 
 /**
- * A253628 Psi(n) mod n, where Psi is the Dedekind psi function (A001615).
+ * A253628 a(n) = psi(n) mod n, where psi is the Dedekind psi function (A001615).
  * @author Georg Fischer
  */
 public class A253628 extends A001615 {

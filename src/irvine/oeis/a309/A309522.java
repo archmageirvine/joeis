@@ -9,7 +9,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A309522
+ * A309522 Generalized Blasius numbers, square array read by ascending antidiagonals, A(n, k) for n, k &gt;= 0.
  * @author Georg Fischer
  */
 public class A309522 extends UpperLeftTriangle implements DirectArray {

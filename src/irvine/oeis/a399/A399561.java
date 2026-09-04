@@ -4,7 +4,7 @@ package irvine.oeis.a399;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A399561 Name?
+ * A399561 G.f. A(x) satisfies: A(x) = (1 - x^2 + x^2 * A(2*x)) / (1 - x - x^3).
  * @author Georg Fischer
  */
 public class A399561 extends PolynomialFieldSequence {

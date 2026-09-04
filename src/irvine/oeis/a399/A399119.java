@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a382.A382397;
 
 /**
- * A399119 allocated for Felix Huber.
+ * A399119 a(n) is the number of distinct cardinalities of inclusion-maximal Sidon subsets of {1, ..., n}.
  * @author Sean A. Irvine
  */
 public class A399119 extends A382397 {

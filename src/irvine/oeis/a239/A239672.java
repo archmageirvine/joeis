@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a069.A069091;
 
 /**
- * A239672 Product_{i=1..n} J_6(i) where J_6(i) = A069091(i).
+ * A239672 a(n) = Product_{i=1..n} J_6(i) where J_6(i) = A069091(i).
  * @author Georg Fischer
  */
 public class A239672 extends LambdaSequence {

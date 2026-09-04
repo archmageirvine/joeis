@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A325344 Number of partitions of n with even minimal part and odd maximal part.
+ * A325344 Number of partitions of n with odd minimal part and even maximal part.
  * @author Georg Fischer
  */
 public class A325344 extends LambdaSequence {

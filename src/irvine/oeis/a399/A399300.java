@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a398.A398545;
 
 /**
- * A399300 allocated for Soroosh Hemmati.
+ * A399300 a(n) is the least even number whose n-th smallest Goldbach prime equals A398545(n).
  * @author Sean A. Irvine
  */
 public class A399300 extends A398545 {

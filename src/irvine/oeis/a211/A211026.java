@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000041;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A211026 Number of segments needed to draw (on the infinite square grid) a diagram of regions and partitions of n.
+ * A211026 Number of segments needed to draw on the infinite square grid a diagram of regions and partitions of n.
  * @author Georg Fischer
  */
 public class A211026 extends SimpleTransformSequence {

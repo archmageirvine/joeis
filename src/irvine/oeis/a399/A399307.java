@@ -3,7 +3,7 @@ package irvine.oeis.a399;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A399307 allocated for Geoffrey Caveney.
+ * A399307 The periodic cycle of 23 in the "Lucas-Collatz" function: a(0)=23; for n&gt;0, if a(n-1) is Lucas-odd (A399306), then a(n)=2*a(n-1); if a(n-1) is Lucas-even (A399305), then a(n) is the integer whose minimal Lucas representation (A130310) results from removing the final 0 of A130310(a(n-1)).
  * @author Sean A. Irvine
  */
 public class A399307 extends FiniteSequence {

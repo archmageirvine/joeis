@@ -3,7 +3,7 @@ package irvine.oeis.a323;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A323383 Proper divisors of 24.
+ * A323383 Aliquot divisors of 24.
  * @author Georg Fischer
  */
 public class A323383 extends FiniteSequence {

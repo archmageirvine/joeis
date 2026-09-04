@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A398876 Primes added to a set starting with {2, 3} by considering successive even numbers k and, if k is not the sum of two members of the set, adjoining k - p, where p is the earliest-added member for which k - p is prime.
+ * A398876 a(1) = 2, a(2) = 3; for n &gt; 2, a(n) is the prime k-p, where k is the smallest even number &gt;=4 that cannot be generated as the sum of two (not necessarily distinct) terms from {a(1), ... ,a(n-1)}, and p is the earliest-added term in {a(1), ... ,a(n-1)} for which k-p is prime.
  * @author Sean A. Irvine
  */
 public class A398876 extends CachedSequence {

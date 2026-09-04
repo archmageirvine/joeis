@@ -4,7 +4,7 @@ import irvine.factor.prime.Fast;
 import irvine.oeis.ParallelPermutationSequence;
 
 /**
- * A398356 allocated for Andre Ruiz Loera.
+ * A398356 Number of ways to arrange 1..2n in a circle, up to rotation and reflection, such that the product of any two adjacent entries plus 1 is prime.
  * @author Sean A. Irvine
  */
 public class A398356 extends ParallelPermutationSequence {

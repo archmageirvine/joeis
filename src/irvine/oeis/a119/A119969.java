@@ -8,7 +8,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a036.A036987;
 
 /**
- * A119969 Sum{k&gt;=0, C(2^k-1,n-2*(2^k-1))}.
+ * A119969 a(n) = Sum_{k&gt;=0} C(2^k-1,n-2*(2^k-1)).
  * @author Georg Fischer
  */
 public class A119969 extends LambdaSequence {

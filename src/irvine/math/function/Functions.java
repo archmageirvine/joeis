@@ -298,6 +298,13 @@ public final class Functions {
   /** Least common multiple. */
   public static final LeastCommonMultiple LCM = new LeastCommonMultiple(); // =A051173
 
+  // Rational functions
+  
+  /** Bernoulli numbers. */
+  public static final FunctionQ1 BERNOULLI = new Bernoulli();
+  /** Harmonic numbers. */
+  public static final FunctionQ1 HARMONIC = new Harmonic();
+
 
   /**
    * Create an arbitrary one argument function over the integers defined by a lambda.

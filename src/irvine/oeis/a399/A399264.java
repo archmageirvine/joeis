@@ -2,7 +2,6 @@ package irvine.oeis.a399;
 
 import irvine.math.graph.GraphUtils;
 import irvine.math.nauty.GenerateGraphs;
-import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
@@ -22,10 +21,5 @@ public class A399264 extends ParallelGenerateGraphsSequence {
     gg.setMinEdges(0);
     gg.setMaxEdges(mN * (mN - 1) / 2);
     gg.setConnectionLevel(1);
-  }
-
-  @Override
-  public Z next() {
-    return super.next();
   }
 }

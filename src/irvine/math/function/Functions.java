@@ -299,7 +299,7 @@ public final class Functions {
   public static final LeastCommonMultiple LCM = new LeastCommonMultiple(); // =A051173
 
   // Rational functions
-  
+
   /** Bernoulli numbers. */
   public static final FunctionQ1 BERNOULLI = new Bernoulli();
   /** Harmonic numbers. */

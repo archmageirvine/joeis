@@ -22,7 +22,7 @@ public class A182114 extends BaseTriangle implements DirectArray {
     @Override
     protected Z compute(final Long n, final Long i, final Long t, final Long k) {
       return
-        n == 0 ? Z.ONE : i == 1 ? Z.valueOf(t + n <= k ? 1 : 0) : (i < 1 ? Z.ZERO : get(n, i - 1, t, k).add(Integers.SINGLETON.sum(1, n / i, j -> (t + j <= k / i ? get(n - i * j, i - 1, t + j, k) : Z.ZERO))));
+        n == 0 ? Z.ONE : i == 1 ? Z.valueOf(t + n <= k ? 1 : 0) : (i < 1 ? Z.ZERO : get(n, i - 1, t, k).add(Integers.SINGLETON.sum(1, n / i, j -> t + j <= k / i ? get(n - i * j, i - 1, t + j, k) : Z.ZERO)));
     }
   };
 

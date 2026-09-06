@@ -34,7 +34,7 @@ public class A007790 extends MultiplicativeSequence {
       if ((e & 1) == 1) {
         return p.square().multiply((e + 1) / 2).add(p).subtract(p.pow(2L * e - 2).multiply((e + 1) / 2));
       } else {
-        return p.pow(2L * e - 2).multiply(p.square().multiply(((e + 2) / 2)).subtract(e / 2));
+        return p.pow(2L * e - 2).multiply(p.square().multiply((e + 2) / 2).subtract(e / 2));
       }
     });
   }

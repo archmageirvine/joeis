@@ -9,7 +9,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A245732
+ * A245732 Number T(n,k) of endofunctions on [n] such that at least one preimage with cardinality &gt;=k exists and a nonempty preimage of j implies that all i&lt;=j have preimages with cardinality &gt;=k; triangle T(n,k), n&gt;=0, 0&lt;=k&lt;=n, read by rows.
  * @author Georg Fischer
  */
 public class A245732 extends BaseTriangle implements DirectArray {

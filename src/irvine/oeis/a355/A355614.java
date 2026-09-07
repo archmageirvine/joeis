@@ -9,7 +9,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A355614
+ * A355614 Number A(n,k) of n-tuples (p_1, p_2, ..., p_n) of positive integers such that p_{i-1} &lt;= p_i &lt;= i^k; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Georg Fischer
  */
 public class A355614 extends UpperLeftTriangle implements DirectArray {

@@ -10,7 +10,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A276921
+ * A276921 Number A(n,k) of ordered set partitions of [n] with at most k elements per block; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Georg Fischer
  */
 public class A276921 extends UpperLeftTriangle implements DirectArray {

@@ -8,7 +8,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A290759
+ * A290759 Square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals, where column k is the expansion of continued fraction 1/(1 - x/(1 - k*x/(1 - k^2*x/(1 - k^3*x/(1 - k^4*x/(1 - ...)))))).
  * @author Georg Fischer
  */
 public class A290759 extends UpperLeftTriangle implements DirectArray {

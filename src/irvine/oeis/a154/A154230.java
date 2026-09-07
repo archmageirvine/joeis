@@ -7,7 +7,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A154230 0..50
+ * A154230 Triangle T(n, k) = T(n-1, k) + T(n-1, k-1) + ((n+1)*(n+2)*(2*n+3)*(3*n^2+9*n+5)/30)*T(n-2, k-1), read by rows.
  * @author Georg Fischer
  */
 public class A154230 extends BaseTriangle implements DirectArray {

@@ -10,7 +10,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A277536
+ * A277536 T(n,k) is the n-th derivative of the difference between the k-th tetration of x (power tower of order k) and its predecessor (or 0 if k=0) at x=1; triangle T(n,k), n&gt;=0, 0&lt;=k&lt;=n, read by rows.
  * @author Georg Fischer
  */
 public class A277536 extends BaseTriangle implements DirectArray {

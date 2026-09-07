@@ -10,7 +10,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A209406
+ * A209406 Triangular array read by rows: T(n,k) is the number of multisets of exactly k nonempty binary words with a total of n letters.
  * @author Georg Fischer
  */
 public class A209406 extends BaseTriangle implements DirectArray {

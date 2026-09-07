@@ -8,7 +8,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A290789
+ * A290789 A(n,k) is the n-th Carlitz-Riordan q-Catalan number (recurrence version) for q = -k; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Georg Fischer
  */
 public class A290789 extends UpperLeftTriangle implements DirectArray {

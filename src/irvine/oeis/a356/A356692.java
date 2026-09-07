@@ -8,7 +8,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A356692
+ * A356692 Pascal-like triangle, where each entry is the sum of the four entries above it starting with 1 at the top.
  * @author Georg Fischer
  */
 public class A356692 extends BaseTriangle implements DirectArray {

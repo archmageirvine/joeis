@@ -8,7 +8,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A347270
+ * A347270 Square array T(n,k) in which row n lists the 3x+1 sequence starting at n, read by antidiagonals upwards, with n &gt;= 1 and k &gt;= 0.
  * @author Georg Fischer
  */
 public class A347270 extends UpperLeftTriangle implements DirectArray {

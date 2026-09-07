@@ -7,7 +7,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A371277
+ * A371277 Triangle read by rows, (3, 2)-Lah numbers.
  * @author Georg Fischer
  */
 public class A371277 extends BaseTriangle implements DirectArray {

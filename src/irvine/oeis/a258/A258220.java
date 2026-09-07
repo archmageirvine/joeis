@@ -11,7 +11,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A258220
+ * A258220 T(n,k) = 1/k! * Sum_{i=0..k} (-1)^(k-i) *C(k,i) * A258219(n,i); triangle T(n,k), n&gt;=0, 0&lt;=k&lt;=n, read by rows.
  * @author Georg Fischer
  */
 public class A258220 extends BaseTriangle implements DirectArray {

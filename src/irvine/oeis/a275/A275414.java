@@ -10,7 +10,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A275414
+ * A275414 Triangle read by rows: T(n,k) is the number of multisets of k ternary words with a total of n letters.
  * @author Georg Fischer
  */
 public class A275414 extends BaseTriangle implements DirectArray {

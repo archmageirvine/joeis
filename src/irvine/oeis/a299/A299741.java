@@ -8,7 +8,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A299741
+ * A299741 Array read by antidiagonals upwards: a(i,0) = 2, i &gt;= 0; a(i,1) = i+2, i &gt;= 0; a(i,j) = (i+2) * a(i,j-1) - a(i,j-2), for i &gt;= 0, j &gt; 1.
  * @author Georg Fischer
  */
 public class A299741 extends UpperLeftTriangle implements DirectArray {

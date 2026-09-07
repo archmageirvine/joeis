@@ -10,7 +10,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A277537
+ * A277537 A(n,k) is the n-th derivative of the k-th tetration of x (power tower of order k) x^^k at x=1; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Georg Fischer
  */
 public class A277537 extends UpperLeftTriangle implements DirectArray {

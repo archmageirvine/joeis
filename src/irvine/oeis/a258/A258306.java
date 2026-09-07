@@ -8,7 +8,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A258306
+ * A258306 A(n,k) is the sum over all Motzkin paths of length n of products over all peaks p of (x_p+k*y_p)/y_p, where x_p and y_p are the coordinates of peak p; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Georg Fischer
  */
 public class A258306 extends UpperLeftTriangle implements DirectArray {

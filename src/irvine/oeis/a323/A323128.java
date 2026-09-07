@@ -10,7 +10,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A323128
+ * A323128 Number T(n,k) of colored set partitions of [n] where elements of subsets have distinct colors and exactly k colors are used; triangle T(n,k), n&gt;=0, 0&lt;=k&lt;=n, read by rows.
  * @author Georg Fischer
  */
 public class A323128 extends BaseTriangle implements DirectArray {

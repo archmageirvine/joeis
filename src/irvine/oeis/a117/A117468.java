@@ -7,7 +7,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A117468
+ * A117468 Triangle read by rows: T(n,k) is the number of partitions of n in which every integer from the smallest part to the largest part k occurs (1&lt;=k&lt;=n).
  * @author Georg Fischer
  */
 public class A117468 extends BaseTriangle implements DirectArray {

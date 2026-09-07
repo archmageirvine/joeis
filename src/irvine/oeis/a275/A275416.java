@@ -10,7 +10,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A275416
+ * A275416 Triangle read by rows: T(n,k) is the number of multisets of k odd numbers with a cap of the total sum set to n.
  * @author Georg Fischer
  */
 public class A275416 extends BaseTriangle implements DirectArray {

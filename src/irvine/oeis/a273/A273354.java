@@ -6,13 +6,12 @@ import irvine.oeis.BriefSequence;
 
 /**
  * A273354 Least number that is the sum of 2 positive cubes in exactly n ways and also the sum of 2 positive squares in exactly n ways.
- *
  * @author Georg Fischer
  */
 public class A273354 extends BriefSequence {
 
   /** Construct the sequence. */
   public A273354() {
-    super(1, BRIEF, Z.TWO, new Z("4624776"));
+    super(1, BRIEF, Z.TWO, new Z("4624776"), new Z("11177126654841000000"));
   }
 }

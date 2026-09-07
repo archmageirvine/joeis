@@ -9,7 +9,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A282988
+ * A282988 Triangle of partitions of an n-set into boxes of size &gt;= m.
  * @author Georg Fischer
  */
 public class A282988 extends BaseTriangle implements DirectArray {

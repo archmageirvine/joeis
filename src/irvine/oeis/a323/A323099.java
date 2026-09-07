@@ -9,7 +9,7 @@ import irvine.oeis.triangle.BaseTriangle;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A323099
+ * A323099 Number T(n,k) of colored set partitions of [n] where exactly k colors are used for the elements; triangle T(n,k), n&gt;=0, 0&lt;=k&lt;=n, read by rows.
  * @author Georg Fischer
  */
 public class A323099 extends BaseTriangle implements DirectArray {

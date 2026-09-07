@@ -16,8 +16,6 @@ public class A399145 extends Sequence3 {
 
   // After Eddie Lin Rui
 
-  // todo ugly floating-point here -- how do we know this is going to be correct
-
   // These should be changed if the Python version uses different values.
   private static final double ANGLE_EPS = 1e-10;
   private static final double PARAM_EPS = 1e-10;
@@ -169,7 +167,9 @@ public class A399145 extends Sequence3 {
 
   @Override
   public Z next() {
-    ++mN;
+    if (++mN > 1000) {
+      throw new UnsupportedOperationException("Floating-point is not known to be safe for larger values");
+    }
 
     final Edge[] current = edges(mN);
     mEdges.put(mN, current);

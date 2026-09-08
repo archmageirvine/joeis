@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394665 allocated for Rafa\u0142 Wiktorowicz.
+ * A394665 a(n) is the number of distinct nonzero eigenvalues of the n X n matrix M with M(i,j) = 1 if |i-j| &lt;= 3 and M(i,j) = 0 otherwise.
  * @author Sean A. Irvine
  */
 public class A394665 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A049230 Configurations of linear chains in a cubic lattice.
+ * A049230 Number of n-step self-avoiding walks on the simple cubic lattice having exactly 2 pairs of nonconsecutive vertices that are adjacent in the lattice.
  * @author Sean A. Irvine
  */
 public class A049230 extends Sequence1 {

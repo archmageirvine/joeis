@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A193995 Maximum number of terms required to determine whether a number is happy or not (A007770 or A031177).
+ * A193995 a(n) = number of (distinct) terms required to determine whether n is a happy number or not (A007770 or A031177).
  * @author Sean A. Irvine
  */
 public class A193995 extends Sequence1 {

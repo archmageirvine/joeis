@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399519 allocated for M. F. Hasler.
+ * A399519 a(n) = n - round(exp(round(log(n)))), where round(x) is the nearest integer to x.
  * @author Sean A. Irvine
  */
 public class A399519 extends Sequence1 {

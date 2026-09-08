@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A398327 allocated for Daniel Holliday.
+ * A398327 Numbers k such that (10*4^k - 1)/3 is prime.
  * @author Sean A. Irvine
  */
 public class A398327 extends FilterNumberSequence {

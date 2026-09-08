@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399457 allocated for Nathan Nichols.
+ * A399457 a(1)=1, a(2)=2; thereafter a(n) is the least unused squarefree positive integer that has a common factor with a(n-1), is coprime to a(n-2), and has a prime factor not dividing a(n-1).
  * @author Sean A. Irvine
  */
 public class A399457 extends Sequence1 {

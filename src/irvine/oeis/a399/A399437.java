@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a398.A398173;
 
 /**
- * A399437 allocated for Pawe\u0142 Kwaczy\u0144ski.
+ * A399437 a(n) is the number of affinely inequivalent subsets of Z/pZ of the minimum size A398173(n) with at least 2 elements and no unique sum, where p is the n-th odd prime.
  * @author Sean A. Irvine
  */
 public class A399437 extends A398173 {

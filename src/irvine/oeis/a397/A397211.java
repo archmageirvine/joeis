@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397211 allocated for Keith F. Lynch.
+ * A397211 Least index of the start of a run of at least n nonnegative values of the Moebius function.
  * @author Sean A. Irvine
  */
 public class A397211 extends Sequence1 {

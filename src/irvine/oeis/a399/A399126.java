@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a008.A008479;
 
 /**
- * A399126 allocated for Michael De Vlieger.
+ * A399126 Numbers k = rad(k) * lpf(k)^3 such that A008479(k) = 4, where rad = A007947 and lpf = least prime factor.
  * @author Sean A. Irvine
  */
 public class A399126 extends FilterPositionSequence {

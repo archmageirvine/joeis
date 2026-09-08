@@ -11,7 +11,7 @@ import irvine.oeis.Sequence0;
  */
 public class A394412 extends Sequence0 {
 
-  // todo way too slow, used only to demonstrate initial terms
+  // Slow, only good to verify a few initial terms.
 
   private int mN = -1;
 

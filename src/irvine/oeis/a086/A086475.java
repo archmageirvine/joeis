@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A086475 a(1) = 1 and then least squarefree number such that every partial concatenation of 2 or more terms is a prime.
+ * A086475 a(1) = 1 and then least squarefree number larger than the pervious term such that the concatenation of all existing terms and the new number is a prime.
  * @author Sean A. Irvine
  */
 public class A086475 extends Sequence1 {

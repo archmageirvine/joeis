@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399312 allocated for Konstantin Mullahmetov.
+ * A399312 Number of partitions of n where the smallest part is equal to the number of divisors of n, d(n) = A000005(n).
  * @author Sean A. Irvine
  */
 public class A399312 extends Sequence1 {

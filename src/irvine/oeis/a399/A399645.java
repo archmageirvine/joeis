@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a002.A002296;
 
 /**
- * A399645 Name?
+ * A399645 Expansion of g^9/(7-6*g)^4, where g = 1+x*g^7 is the g.f. of A002296.
  * new A002296()
  * @author Georg Fischer
  */

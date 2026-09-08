@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A115595 The sequence 11,0,1,3333,2,3,5555,4,5,7777,6,7,9999,9,0,2222,1,2,4444,3,4,6666,5,6,8888,7,9,11 has three subsequences that have interesting patterns inside it. Namely, 11,0,(1),3333,2,(3),5555,4,(5),7777,6,(7),9999,9,(0),2222,1,(2),4444,3,(4),6666,5,(6),8888,7,(9),11.
+ * A115595 The number 991199991199991199991199991199991199991199991199991199 / 9 split into runs of the same digit.
  * @author Sean A. Irvine
  */
 public class A115595 extends FiniteSequence {

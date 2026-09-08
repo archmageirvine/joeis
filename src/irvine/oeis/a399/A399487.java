@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399487 allocated for Allam Assal.
+ * A399487 Initial digit of the decimal expansion of n^(n^(n^8)).
  * @author Sean A. Irvine
  */
 public class A399487 extends Sequence1 {

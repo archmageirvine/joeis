@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a008.A008479;
 
 /**
- * A399127 allocated for Michael De Vlieger.
+ * A399127 Numbers k = rad(k) * q(k) such that A008479(k) = 3, where rad = A007947 and q(k) = second smallest distinct prime factor of k.
  * @author Sean A. Irvine
  */
 public class A399127 extends FilterPositionSequence {

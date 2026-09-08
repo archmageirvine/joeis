@@ -6,7 +6,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A399322 allocated for Ivan Damnjanovi\u0107.
+ * A399322 Number of transmission irregular trees with n unlabeled vertices.
  * @author Sean A. Irvine
  */
 public class A399322 extends ParallelGenerateGraphsSequence {

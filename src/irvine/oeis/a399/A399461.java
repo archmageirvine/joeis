@@ -9,7 +9,7 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
 import irvine.oeis.Sequence2;
 
 /**
- * A399461 allocated for Allan Bickle.
+ * A399461 Number of Chv\u00e1tal-Erd\u0151s graphs with order n.
  * @author Sean A. Irvine
  */
 public class A399461 extends Sequence2 {

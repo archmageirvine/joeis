@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A086474 a(1) = 4 and then least composite such that every partial concatenation of 2 or more terms is a prime.
+ * A086474 a(1) = 4 and then least composite such that the concatenation of all previous terms and the new term is a prime.
  * @author Sean A. Irvine
  */
 public class A086474 extends Sequence1 {

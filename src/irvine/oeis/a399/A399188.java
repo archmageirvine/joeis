@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A399188 allocated for Alex Ratushnyak.
+ * A399188 Numbers x such that recursion {x -&gt; A000005(x)+1} reaches a fixed-point of 4 rather than 3.
  * @author Sean A. Irvine
  */
 public class A399188 extends FilterNumberSequence {

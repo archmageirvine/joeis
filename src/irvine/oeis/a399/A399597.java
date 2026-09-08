@@ -8,7 +8,7 @@ import irvine.oeis.a203.A203144;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A399597 Name?
+ * A399597 Decimal expansion of the integral dx/sqrt(1-x^8), x=0..1.
  * @author Georg Fischer
  */
 public class A399597 extends DecimalExpansionSequence {

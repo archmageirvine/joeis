@@ -5,7 +5,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A396754 allocated for Brock Falfas.
+ * A396754 Number of point-determining (also called mating, or twin-free) diameter-2-critical graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A396754 extends ParallelGenerateGraphsSequence {

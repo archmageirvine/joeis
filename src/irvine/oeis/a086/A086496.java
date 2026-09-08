@@ -13,7 +13,7 @@ public class A086496 extends Sequence1 {
 
   private final HashSet<Long> mUsed = new HashSet<>();
   private long mLeastUnused = 1;
-  private Z mSum = Z.ZERO;
+  protected Z mSum = Z.ZERO;
   private boolean mOdd = false;
 
   @Override

@@ -7,7 +7,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A398476 Number of singular simple connected graphs on n unlabeled nodes.
+ * A398326 allocated for Freddy Barrera.
  * @author Sean A. Irvine
  */
 public class A398326 extends ParallelGenerateGraphsSequence {

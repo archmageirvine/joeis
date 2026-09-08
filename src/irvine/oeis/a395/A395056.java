@@ -2,16 +2,16 @@ package irvine.oeis.a395;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence2;
+import irvine.oeis.Sequence1;
 
 /**
  * A395056 allocated for Ron Gordon.
  * @author Sean A. Irvine
  */
-public class A395056 extends Sequence2 {
+public class A395056 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
-  private long mN = 1;
+  private long mN = 0;
   private long mMin = 0;
 
   private void search(final long n, final long p, final long cnt) {

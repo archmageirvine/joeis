@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034444;
 import irvine.oeis.a048.A048138;
 
 /**
- * A064465 Numbers k such that A048138(k) = A034444(k).
+ * A064465 Numbers k such that A048138(k+1) = A034444(k).
  * @author Sean A. Irvine
  */
 public class A064465 extends Sequence1 {

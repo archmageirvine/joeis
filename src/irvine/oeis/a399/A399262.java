@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399262 allocated for Rafael Andres Pastrana Tordecilla.
+ * A399262 Triangle read by rows: row n gives the n consecutive integers centered at n^2, excluding n^2 if n is even.
  * @author Sean A. Irvine
  */
 public class A399262 extends Sequence1 {

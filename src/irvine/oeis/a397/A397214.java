@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397214 allocated for Keith F. Lynch.
+ * A397214 Smallest start for a run of at least n nonpositive values of the Moebius function.
  * @author Sean A. Irvine
  */
 public class A397214 extends Sequence1 {

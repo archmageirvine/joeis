@@ -4,7 +4,7 @@ package irvine.oeis.a272;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A272637 a(1)=1, a(2)=82; thereafter a(n) = squarefree part of a(n-1)+a(n-2).
+ * A272637 a(1)=1, a(2)=83; thereafter a(n) = squarefree part of a(n-1)+a(n-2).
  * @author Georg Fischer
  */
 public class A272637 extends HolonomicRecurrence {

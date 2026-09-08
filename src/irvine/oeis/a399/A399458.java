@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399458 allocated for Ali Sada.
+ * A399458 a(1) = 1. For n &gt; 1, choose the least k &gt;= 1 such that 2^k*a(n-1) - 1 has a divisor not previously occurring in the sequence; a(n) is the least such unused divisor.
  * @author Sean A. Irvine
  */
 public class A399458 extends Sequence1 {

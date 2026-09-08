@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399520 allocated for M. F. Hasler.
+ * A399520 a(n) = n - A000149(A000195(n)), where A000149 = floor o exp, A000195 = floor o log.
  * @author Sean A. Irvine
  */
 public class A399520 extends Sequence1 {

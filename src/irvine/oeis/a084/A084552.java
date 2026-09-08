@@ -15,7 +15,6 @@ import irvine.oeis.Sequence1;
 public class A084552 extends Sequence1 {
 
   protected int mN = 0;
-  private int mM = 0;
 
   protected boolean is(final DefaultMatrix<Q> m) {
     final MatrixField<Q> fld = new MatrixField<>(mN, Rationals.SINGLETON);

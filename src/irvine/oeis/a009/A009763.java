@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A009763 a(n) is (n+1)!*(n+2)! times coefficient of x^n in (log(1-x))^-1.
+ * A009763 a(n) is (n+1)!*(n+2)! times Gregory's coefficient G_n, the coefficient of x^n in 1/log(1-x).
  * @author Sean A. Irvine
  */
 public class A009763 extends Sequence0 {

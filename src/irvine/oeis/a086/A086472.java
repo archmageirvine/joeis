@@ -6,7 +6,7 @@ import irvine.oeis.TwoParameterFormSequence;
 import irvine.oeis.a002.A002113;
 
 /**
- * A086472 Primes which are sum of two palindromes.
+ * A086472 Primes which are sum of two positive palindromes.
  * @author Sean A. Irvine
  */
 public class A086472 extends TwoParameterFormSequence {

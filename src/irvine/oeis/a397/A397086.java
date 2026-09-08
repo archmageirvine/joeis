@@ -3,7 +3,7 @@ package irvine.oeis.a397;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A397086 allocated for Tony Hernandez.
+ * A397086 Partial sums of A397085.
  * @author Sean A. Irvine
  */
 public class A397086 extends PartialSumSequence {

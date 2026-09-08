@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A057015 Numbers n such that n^2 + 1, n^2 + 3, n^2 + 7 and n^2 + 9 are all primes.
+ * A057015 Numbers k such that k^2 + 1, k^2 + 3, k^2 + 7 and k^2 + 9 are all primes.
  * @author Sean A. Irvine
  */
 public class A057015 extends Sequence1 {

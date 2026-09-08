@@ -3,21 +3,33 @@ package irvine.oeis.a324;
 
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
-import irvine.oeis.LambdaSequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000593;
 import irvine.oeis.a156.A156552;
 
 /**
  * A324118 Sum of odd divisors in A156552(n): a(1) = 0, for n &gt; 1, a(n) = A000593(A156552(n)) = A000203(A322993(n)).
  * @author Georg Fischer
+ * @author Sean A. Irvine
  */
-public class A324118 extends LambdaSequence {
+public class A324118 extends Sequence1 implements DirectSequence {
 
   private static final DirectSequence A000593 = new A000593();
   private static final DirectSequence A156552 = new A156552();
+  private long mN = 0;
 
-  /** Construct the sequence. */
-  public A324118() {
-    super(1, n -> (n <= 1) ? Z.ZERO : A000593.a(A156552.a(n)));
+  @Override
+  public Z a(final Z n) {
+    return n.compareTo(Z.ONE) <= 0 ? Z.ZERO : A000593.a(A156552.a(n));
+  }
+
+  @Override
+  public Z a(final long n) {
+    return a(Z.valueOf(n));
+  }
+
+  @Override
+  public Z next() {
+    return a(++mN);
   }
 }

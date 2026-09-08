@@ -8,7 +8,7 @@ import irvine.oeis.a175.A175379;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A399596 Decimal expansion of the integral dx/sqrt(1-x^6), x=0..1.
+ * A399596 Name?
  * @author Georg Fischer
  */
 public class A399596 extends DecimalExpansionSequence {

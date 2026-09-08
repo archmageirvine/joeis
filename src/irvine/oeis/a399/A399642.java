@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a002.A002293;
 
 /**
- * A399642 Expansion of g^6/(4-3*g)^4, where g = 1+x*g^4 is the g.f. of A002293.
+ * A399642 Name?
  * new A002293()
  * @author Georg Fischer
  */

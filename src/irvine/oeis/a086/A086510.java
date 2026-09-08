@@ -66,7 +66,7 @@ public class A086510 extends Sequence0 {
         continue;
       }
       final Q lc = p.leadingCoeff();
-      int s = lc.signum();
+      final int s = lc.signum();
       if (s != 0) {
         if (prev != 0 && s != prev) {
           ++changes;

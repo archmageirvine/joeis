@@ -7,7 +7,7 @@ import irvine.oeis.a222.A222068;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A399590 Decimal expansion of Sum_{k&gt;=1} (-1)^(k+1) * O(k)/(k+1), where O(k) = A350669(k)/A350670(k) is the k-th odd harmonic number (or harmonic number of the second kind).
+ * A399590 Name?
  * @author Georg Fischer
  */
 public class A399590 extends DecimalExpansionSequence {

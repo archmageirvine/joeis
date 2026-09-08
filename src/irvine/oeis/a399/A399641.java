@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a001.A001764;
 
 /**
- * A399641 Expansion of g^5/(3-2*g)^4, where g = 1+x*g^3 is the g.f. of A001764.
+ * A399641 Name?
  * new A001764()
  * @author Georg Fischer
  */

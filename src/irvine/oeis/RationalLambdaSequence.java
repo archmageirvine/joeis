@@ -76,7 +76,7 @@ public class RationalLambdaSequence extends AbstractSequence implements DirectSe
 
   @Override
   public Z a(final Z n) {
-    return a(n.intValueExact());
+    return a(n.longValueExact());
   }
 
   @Override

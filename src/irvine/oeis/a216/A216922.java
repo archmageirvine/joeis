@@ -7,7 +7,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.RationalLambdaSequence;
 
 /**
- * A216922 The numerators of Zagier&apos;s modification of the Bernoulli numbers.
+ * A216922 The numerators of Zagier's modification of the Bernoulli numbers.
  * @author Georg Fischer
  */
 public class A216922 extends RationalLambdaSequence {

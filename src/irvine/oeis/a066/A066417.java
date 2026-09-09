@@ -12,7 +12,7 @@ import irvine.oeis.Sequence1;
  */
 public class A066417 extends Sequence1 implements DirectSequence {
 
-  private int mN = 0;
+  protected long mN = 0;
 
   @Override
   public Z next() {

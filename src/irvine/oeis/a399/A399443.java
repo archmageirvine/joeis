@@ -5,7 +5,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A399443 a(n) = n * (n^2 + 3*n + 1) * (n + 3)! / 8. (Row 3 of array A399444.)
+ * A399443 a(n) = n * (n^2 + 3*n + 1) * (n + 3)! / 8. (Row 3 of array A399444.).
  * @author Georg Fischer
  */
 public class A399443 extends LambdaSequence {

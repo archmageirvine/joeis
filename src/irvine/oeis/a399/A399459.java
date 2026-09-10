@@ -3,12 +3,14 @@ package irvine.oeis.a399;
 import java.util.LinkedList;
 
 import irvine.math.graph.Graph;
+import irvine.math.graph.Graph6;
 import irvine.math.graph.MaximumIndependentSet;
 import irvine.math.graph.VertexConnectivity;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 import irvine.oeis.Sequence2;
+import irvine.util.string.StringUtils;
 
 /**
  * A399459 allocated for Allan Bickle.
@@ -16,13 +18,14 @@ import irvine.oeis.Sequence2;
  */
 public class A399459 extends Sequence2 {
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mDegree = 1;
   private int mOrder = 1;
   private boolean mNonzero = false;
   private final LinkedList<Z> mA = new LinkedList<>();
 
   private int maxOrder(final int degree) {
-    return 4 * degree; // todo needs refinement
+    return 4 * degree; // todo needs refinement, depends on Ramsay number
   }
 
   private boolean is(final Graph g) {
@@ -33,7 +36,16 @@ public class A399459 extends Sequence2 {
     if (degree == 1) {
       return order == 2 ? Z.ONE : Z.ZERO;
     }
-    final ParallelGenerateGraphsSequence s = new ParallelGenerateGraphsSequence(order - 1, order - 1, GenerateGraphs.TRIANGLE_FREE, () -> g -> is(g) ? 1 : 0) {
+    final ParallelGenerateGraphsSequence s = new ParallelGenerateGraphsSequence(order - 1, order - 1, GenerateGraphs.TRIANGLE_FREE, () -> g -> {
+      if (is(g)) {
+        if (mVerbose) {
+          StringUtils.message(Graph6.toGraph6(g));
+        }
+        return 1;
+      }
+      return 0;
+    }
+    ) {
       @Override
       protected void graphGenInit(final GenerateGraphs gg) {
         gg.setVertices(order);

@@ -16,7 +16,7 @@ public class A399537 extends Sequence1 {
   private int mN = 0;
   private Z mA = Z.ONE;
 
-  private static Z t(int n, int m) {
+  private static Z t(final int n, final int m) {
     final int t = m * n - m - n;
     if (t < 0) {
       return Z.ZERO;

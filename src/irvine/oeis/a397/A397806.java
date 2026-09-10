@@ -20,7 +20,7 @@ public class A397806 extends Sequence0 {
    * A representative value is stored as an exact rational num/den.
    * Only floor(num * i / den) is needed by Gaston's algorithm.
    */
-  private static class Rational implements Comparable<Rational> {
+  private static final class Rational implements Comparable<Rational> {
     private final long mNum;
     private final long mDen;
 
@@ -47,7 +47,7 @@ public class A397806 extends Sequence0 {
   /*
    * An element of a list, together with its original number.
    */
-  private static class Element {
+  private static final class Element {
     private final Rational mValue;
     private final int mId;
 

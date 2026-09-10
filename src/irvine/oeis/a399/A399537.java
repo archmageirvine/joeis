@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A086519.
+ * A399537 allocated for John Watkinson.
  * @author Sean A. Irvine
  */
 public class A399537 extends Sequence1 {

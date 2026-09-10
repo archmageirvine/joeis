@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A086522.
+ * A086520 Number of integers strictly greater than (n-sqrt(n))/2 and strictly less than (n+sqrt(n))/2.
  * @author Sean A. Irvine
  */
 public class A086520 extends Sequence0 {

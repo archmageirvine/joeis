@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397806 Maximum number of permutations giving the same list under Gaston's algorithm.
+ * A397806 allocated for Romain Mal\u00e9cot.
  * @author Sean A. Irvine
  */
 public class A397806 extends Sequence0 {

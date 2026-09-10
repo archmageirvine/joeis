@@ -39,7 +39,7 @@ public class A399459 extends Sequence2 {
     final ParallelGenerateGraphsSequence s = new ParallelGenerateGraphsSequence(order - 1, order - 1, GenerateGraphs.TRIANGLE_FREE, () -> g -> {
       if (is(g)) {
         if (mVerbose) {
-          StringUtils.message(Graph6.toGraph6(g));
+          StringUtils.message(Graph6.toGraph6(g) + " " + g);
         }
         return 1;
       }

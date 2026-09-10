@@ -7,7 +7,7 @@ import irvine.oeis.CachedSequence;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A086522.
+ * A086521 Number of tandem duplication trees on n duplicated gene segments.
  * @author Sean A. Irvine
  */
 public class A086521 extends SimpleTransformSequence {

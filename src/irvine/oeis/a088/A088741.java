@@ -1,0 +1,50 @@
+package irvine.oeis.a088;
+
+import irvine.math.graph.GraphUtils;
+import irvine.math.nauty.GenerateGraphs;
+import irvine.math.nauty.Multigraph;
+import irvine.math.z.Z;
+import irvine.oeis.ParallelGenerateGraphsSequence;
+import irvine.oeis.Sequence1;
+
+/**
+ * A088741 Number of connected strongly regular simple graphs on n nodes.
+ * @author Sean A. Irvine
+ */
+public class A088741 extends Sequence1 {
+
+  private static final class StronglyRegular extends ParallelGenerateGraphsSequence {
+
+    private final int mN;
+    private final int mR;
+
+    private StronglyRegular(final int n, final int r) {
+      super(0, -1, 0, () -> graph -> GraphUtils.isStronglyRegular(graph) ? 1 : 0);
+      mN = n;
+      mR = r;
+    }
+
+    @Override
+    protected void graphGenInit(final GenerateGraphs gg) {
+      gg.setVertices(mN);
+      gg.setMinEdges(0);
+      gg.setMaxEdges(Multigraph.NOLIMIT);
+      gg.setConnectionLevel(1);
+      gg.setMinDeg(mR);
+      gg.setMaxDeg(mR);
+      gg.sanitizeParams();
+    }
+  }
+
+  private int mN = 0;
+
+  @Override
+  public Z next() {
+    ++mN;
+    Z sum = Z.ZERO;
+    for (int r = 0; r < mN; ++r) {
+      sum = sum.add(new StronglyRegular(mN, r).next());
+    }
+    return sum;
+  }
+}

@@ -18,9 +18,7 @@ public class A049336 extends Sequence1 implements GraphProcessor {
 
   @Override
   public void process(final Graph graph) {
-    if (graph.isPlanar()) {
-      ++mPlanarCount;
-    }
+    ++mPlanarCount;
   }
 
   @Override
@@ -38,6 +36,7 @@ public class A049336 extends Sequence1 implements GraphProcessor {
     gg.setMaxEdges(mM);
     gg.setConnectionLevel(2);
     gg.setMaxDeg(mN - 1);
+    gg.setPruner((graph, n) -> !graph.isPlanar());
     gg.setProcessor(this);
     gg.sanitizeParams();
     mPlanarCount = 0;

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A130163 Numbers k such that k^2 divides 2*Fibonacci(k).
+ * A130164 Numbers k such that k^2 divides 3*Fibonacci(k).
  * @author Georg Fischer
  */
 public class A130164 extends FilterNumberSequence {

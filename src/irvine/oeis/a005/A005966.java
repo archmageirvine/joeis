@@ -15,22 +15,17 @@ public class A005966 extends Sequence1 implements GraphProcessor {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 0;
-  private long mGenCount = 0;
 
   private Multigraph mMultigraph = null;
 
   @Override
   public void process(final Graph graph) {
-    ++mGenCount;
-    if (graph.isPlanar()) {
-      final int edges = 3 * mN / 2;
-      mMultigraph.multi(graph, 0, edges, edges, Multigraph.NOLIMIT, 3, false);
-    }
+    final int edges = 3 * mN / 2;
+    mMultigraph.multi(graph, 0, edges, edges, Multigraph.NOLIMIT, 3, false);
   }
 
   @Override
   public Z next() {
-    mGenCount = 0;
     mN += 2;
     final GenerateGraphs gg = new GenerateGraphs(1);
     gg.setVertices(mN);
@@ -38,11 +33,12 @@ public class A005966 extends Sequence1 implements GraphProcessor {
     gg.setConnectionLevel(1);
     gg.setMaxDeg(3);
     gg.setProcessor(this);
+    gg.setPruner((graph, n) -> !graph.isPlanar());
     gg.sanitizeParams();
     mMultigraph = new Multigraph(null);
     gg.run(0, 0, 0);
     if (mVerbose) {
-      System.out.println("Preplanar " + mGenCount + " planar before multiple edges " + mMultigraph.getGraphsInputCount());
+      System.out.println("Planar before multiple edges " + mMultigraph.getGraphsInputCount());
     }
     return Z.valueOf(mMultigraph.getGraphsOutputCount());
   }

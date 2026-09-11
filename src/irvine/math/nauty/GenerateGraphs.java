@@ -80,6 +80,7 @@ public class GenerateGraphs {
   final LevelData[] mLevelData = new LevelData[MAXN];      /* data[n] is data for n -> n+1 */
   final long[] mEdgeCount = new long[1 + MAXN * (MAXN - 1) / 2];  /* counts by number of edges */
   final long[] mNodesByLevel = new long[MAXN];     /* nodes at each level */
+  private Pruner mPruner = Pruner.DEFAULT;
 
   private static final long MSK63C = 0x7FFFFFFFFFFFFFFFL;
   static long bitmask(final int x) {
@@ -98,6 +99,14 @@ public class GenerateGraphs {
     }
   }
 
+  /**
+   * Set the pruner for this generator.
+   * @param pruner the pruner.
+   */
+  public void setPruner(final Pruner pruner) {
+    mPruner = pruner;
+  }
+
   /* make the level data for each level */
   void makeLevelData(final boolean restricted) {
     for (int n = 1; n < mMaxN; ++n) {
@@ -110,10 +119,6 @@ public class GenerateGraphs {
       }
       mLevelData[n].prepareLevelData(restricted, n, nxsets, mMaxDeg);
     }
-  }
-
-  protected boolean prune(final Graph graph, final int maxNodes) {
-    return false;
   }
 
   protected boolean preprune(final Graph graph, final int nodes) {
@@ -545,7 +550,7 @@ public class GenerateGraphs {
       return;
     }
 
-    if (prune(g, mMaxN)) {
+    if (mPruner.apply(g, mMaxN)) {
       return;
     }
 
@@ -563,7 +568,7 @@ public class GenerateGraphs {
         if ((rigid || xorb[ixx] == ixx) && (xc > dmax || (xc == dmax && (x & d) == 0)) && (dlow & ~x) == 0) {
           final Graph gx = accept2(g, x, deg, xc > dmax + 1 || (xc == dmax + 1 && (x & d) == 0));
           if (gx != null && (mConnec == 0 || (mConnec == 1 && gx.isConnected()) || (mConnec > 1 && gx.isBiconnected()))) {
-            if (!prune(gx, mMaxN)) {
+            if (!mPruner.apply(gx, mMaxN)) {
               ++mEdgeCount[ne + xc];
               mOutProc.process(mCanonise ? mGCan : gx);
             }
@@ -635,7 +640,7 @@ public class GenerateGraphs {
       return;
     }
 
-    if (prune(g, mMaxN)) {
+    if (mPruner.apply(g, mMaxN)) {
       return;
     }
 
@@ -663,7 +668,7 @@ public class GenerateGraphs {
         if (gx != null) {
           if (mConnec == 0 || (mConnec == 1 && gx.isConnected())
             || (mConnec > 1 && gx.isBiconnected())) {
-            if (!prune(gx, mMaxN)) {
+            if (!mPruner.apply(gx, mMaxN)) {
               ++mEdgeCount[ne + xc];
               mOutProc.process(mCanonise ? mGCan : gx);
             }

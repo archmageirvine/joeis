@@ -1,5 +1,6 @@
 package irvine.oeis.a021;
 
+import irvine.math.nauty.Counter;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
@@ -11,7 +12,7 @@ public class A021103 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A021103() {
-    super(-1, 3, 0, () -> graph -> graph.isPlanar() ? 1 : 0);
+    super(-1, 3, 0, () -> Counter.ONE);
   }
 
   @Override
@@ -20,6 +21,7 @@ public class A021103 extends ParallelGenerateGraphsSequence {
     gg.setMinEdges(0);
     gg.setMaxEdges(mN * (mN - 1) / 2);
     gg.setConnectionLevel(2);
+    gg.setPruner((graph, n) -> !graph.isPlanar());
     gg.sanitizeParams();
   }
 }

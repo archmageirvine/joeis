@@ -12,18 +12,13 @@ import irvine.oeis.Sequence1;
  */
 public class A039735 extends Sequence1 implements GraphProcessor {
 
-  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = -1;
   private int mM = 0;
-  private long mGenCount = 0;
   private long mPlanarCount = 0;
 
   @Override
   public void process(final Graph graph) {
-    ++mGenCount;
-    if (graph.isPlanar()) {
-      ++mPlanarCount;
-    }
+    ++mPlanarCount;
   }
 
   @Override
@@ -41,13 +36,10 @@ public class A039735 extends Sequence1 implements GraphProcessor {
     gg.setConnectionLevel(0);
     gg.setMaxDeg(mN - 1);
     gg.setProcessor(this);
+    gg.setPruner((graph, n) -> !graph.isPlanar());
     gg.sanitizeParams();
-    mGenCount = 0;
     mPlanarCount = 0;
     gg.run(0, 0, 0);
-    if (mVerbose) {
-      System.out.println("Undirected generated count was " + mGenCount);
-    }
     return Z.valueOf(mPlanarCount);
   }
 }

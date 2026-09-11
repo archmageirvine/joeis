@@ -13,7 +13,7 @@ public class A003094 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A003094() {
-    super(-1, -1, 0, () -> Counter.PLANAR);
+    super(-1, -1, 0, () -> Counter.ONE);
   }
 
   @Override
@@ -24,6 +24,7 @@ public class A003094 extends ParallelGenerateGraphsSequence {
     gg.setMinDeg(0);
     gg.setMaxDeg(mN);
     gg.setConnectionLevel(1);
+    gg.setPruner((graph, n) -> !graph.isPlanar());
   }
 
   @Override

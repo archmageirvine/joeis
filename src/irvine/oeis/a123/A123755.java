@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A123755 a(0) = 1. a(n) = number of earlier terms which are divisible by (the number of 1&apos;s in the binary representation of n).
+ * A123755 a(0) = 1. a(n) = number of earlier terms which are divisible by (the number of 1's in the binary representation of n).
  * @author Georg Fischer
  */
 public class A123755 extends MultiTransformSequence {

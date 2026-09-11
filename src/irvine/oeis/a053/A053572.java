@@ -18,11 +18,9 @@ public class A053572 extends Sequence0 implements GraphProcessor {
 
   @Override
   public void process(final Graph graph) {
-    if (graph.isPlanar()) {
-      final Z trees = GraphUtils.numberOfSpanningTrees(graph);
-      if (trees.compareTo(mMax) > 0) {
-        mMax = trees;
-      }
+    final Z trees = GraphUtils.numberOfSpanningTrees(graph);
+    if (trees.compareTo(mMax) > 0) {
+      mMax = trees;
     }
   }
 
@@ -38,6 +36,7 @@ public class A053572 extends Sequence0 implements GraphProcessor {
     gg.setMaxEdges(Integer.MAX_VALUE);
     gg.setConnectionLevel(1);
     gg.setProcessor(this);
+    gg.setPruner((graph, n) -> !graph.isPlanar());
     gg.sanitizeParams();
     gg.run(0, 0, 0);
     return mMax;

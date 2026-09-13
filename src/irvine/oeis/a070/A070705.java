@@ -13,6 +13,6 @@ public class A070705 extends Combiner {
 
   /** Construct the sequence. */
   public A070705() {
-    super(1, new A051451().skip(), new A000961().skip(2), Z::mod);
+    super(1, new A051451(), new A000961().skip(), Z::mod);
   }
 }

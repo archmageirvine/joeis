@@ -27,7 +27,7 @@ public class A399364 extends Sequence0 {
     for (int k = 0; k < mN; ++k) {
       s *= 3;
     }
-    int full = (1 << mN) - 1;
+    final int full = (1 << mN) - 1;
     // mask[x] = mask[x // 3] << 1 | (x % 3 == 1).
     final LongDynamicIntArray mask = new LongDynamicIntArray();
     for (long x1 = 1; x1 < s; ++x1) {

@@ -9,7 +9,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A399469 allocated for Felix Huber.
+ * A399469 a(n) is the minimum cardinality of an inclusion-maximal Sidon subset of the set of positive divisors of n.
  * @author Sean A. Irvine
  */
 public class A399469 extends Sequence1 {

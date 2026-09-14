@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399491 allocated for Zhining Yang.
+ * A399491 The smallest integer m &gt; n such that (n^2+1)*(m^2+1) is a perfect square.
  * @author Sean A. Irvine
  */
 public class A399491 extends Sequence1 {

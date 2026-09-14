@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063764 Nonprimes k such that largest prime factor of k &gt; k^(2/3).
+ * A063764 Nonprimes k whose largest prime factor &gt; k^(2/3).
  * @author Sean A. Irvine
  */
 public class A063764 extends Sequence1 {

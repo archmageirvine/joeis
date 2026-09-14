@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A201488 Decimal expansion of maximal success probability of the CHSH game.
+ * A201488 Decimal expansion of maximal quantum success probability of the CHSH game.
  * Formula: cos(Pi/8)^2
  * @author Georg Fischer
  */

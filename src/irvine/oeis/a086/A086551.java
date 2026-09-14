@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A086551 a(n) = smallest k such that tau(k)= n*tau(k-1) where tau(k) = number of divisors of k, or 0 if no such number exists.
+ * A086551 a(n) = smallest k such that tau(k) = n*tau(k-1) where tau(k) = number of divisors of k, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A086551 extends Sequence1 {

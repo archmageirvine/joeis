@@ -3,7 +3,7 @@ package irvine.oeis.a399;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A399308 allocated for Geoffrey Caveney.
+ * A399308 The periodic cycle of 70 in the "Lucas-Collatz" function: a(0)=70; for n&gt;0, if a(n-1) is Lucas-odd (A399306), then a(n)=2*a(n-1); if a(n-1) is Lucas-even (A399305), then a(n) is the integer whose minimal Lucas representation (A130310) results from removing the final 0 of A130310(a(n-1)).
  * @author Sean A. Irvine
  */
 public class A399308 extends FiniteSequence {

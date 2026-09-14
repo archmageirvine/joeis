@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000961;
 import irvine.util.Pair;
 
 /**
- * A399600 allocated for Michael De Vlieger.
+ * A399600 a(1) = 1, a(n) = binomial(pi(p)+m, m) for prime power p^m = A000961(n), where pi = A000720.
  * @author Sean A. Irvine
  */
 public class A399600 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399429 allocated for Jwalin Bhatt.
+ * A399429 Indices of record low-water marks of the sequence abs((sin(p))^p) where p is the numerator of the k-th convergent to Pi/2, starting from k = 1.
  * @author Sean A. Irvine
  */
 public class A399429 extends Sequence0 {

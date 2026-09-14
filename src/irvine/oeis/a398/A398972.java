@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398972 allocated for Sebastian Ding.
+ * A398972 Weak Carmichael numbers of the form (6*m+1)*(12*m+1)*(18*m+1) where exactly two linear factors are composite.
  * @author Sean A. Irvine
  */
 public class A398972 extends Sequence1 {

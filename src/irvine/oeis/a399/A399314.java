@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008479;
 
 /**
- * A399314 allocated for Michael De Vlieger.
+ * A399314 Numbers k = rad(k) * q(k)^2 such that A008479(k) = 6, where rad = A007947 and q(k) = second smallest distinct prime factor of k.
  * @author Sean A. Irvine
  */
 public class A399314 extends A008479 {

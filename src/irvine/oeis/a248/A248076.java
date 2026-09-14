@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a001.A001160;
 
 /**
- * A248076 Partial sums of the sum of the 5th powers of the divisors of n: Sum_{i=1..n} sigma_5(i).
+ * A248076 Partial sums of A001160: Sum_{j=1..n} sigma_5(j).
  * @author Sean A. Irvine
  */
 public class A248076 extends PartialSumSequence {

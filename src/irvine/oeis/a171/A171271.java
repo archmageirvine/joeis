@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a050.A050472;
 
 /**
- * A171271 Numbers n such that phi(n)=2*phi(n-1).
+ * A171271 Numbers k such that phi(k) = 2*phi(k-1).
  * @author Georg Fischer
  */
 public class A171271 extends A050472 {

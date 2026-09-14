@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399537 allocated for John Watkinson.
+ * A399537 Number of nonempty subsets S of {1,...,n} such that Sum_{k in S} k = min(S)*max(S).
  * @author Sean A. Irvine
  */
 public class A399537 extends Sequence1 {

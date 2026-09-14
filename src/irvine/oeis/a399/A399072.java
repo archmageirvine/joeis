@@ -8,7 +8,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A399072 allocated for Paolo P. Lava.
+ * A399072 Least positive number which can be expressed as the sum of some of its anti-divisors in exactly n ways.
  * @author Sean A. Irvine
  */
 public class A399072 extends Sequence0 {

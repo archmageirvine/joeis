@@ -9,7 +9,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A399470 allocated for Felix Huber.
+ * A399470 a(n) is the number of inclusion-maximal Sidon subsets of the set of positive divisors of n.
  * @author Sean A. Irvine
  */
 public class A399470 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A002012 Almost trivalent maps.
+ * A002012 Number of rooted planar maps with three trivalent vertices and a root vertex of degree 2*n - 1.
  * @author Sean A. Irvine
  */
 public class A002012 extends Sequence0 {

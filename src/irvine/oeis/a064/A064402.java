@@ -7,7 +7,7 @@ import irvine.oeis.a061.A061067;
 import irvine.oeis.a061.A061068;
 
 /**
- * A064402 Numbers n such that prime(n)+n is a prime, where prime(n) denotes the n-th prime number.
+ * A064402 Numbers k such that prime(k) + k is prime, where prime(k) is the k-th prime.
  * @author Georg Fischer
  */
 public class A064402 extends AbstractSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A398337 allocated for Thomas Ordowski.
+ * A398337 a(n) is the largest k &lt; n such that gpf(2^(k*n) - 1) = gpf(2^n - 1), for n &gt; 1.
  * @author Sean A. Irvine
  */
 public class A398337 extends Sequence2 {

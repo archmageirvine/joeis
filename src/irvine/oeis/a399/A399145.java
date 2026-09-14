@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A399145 allocated for Eddie Lin Rui.
+ * A399145 Number of distinct proper side-crossing points among regular polygons inscribed in a common circle and sharing a common vertex.
  * @author Sean A. Irvine
  */
 public class A399145 extends Sequence3 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a066.A066417;
 
 /**
- * A399231 allocated for Paolo P. Lava.
+ * A399231 2-anti-sigma-balanced numbers: numbers k such that (A066417(k-2) + A066417(k+2))/2 = A066417(k).
  * @author Sean A. Irvine
  */
 public class A399231 extends A066417 {

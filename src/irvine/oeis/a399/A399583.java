@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001359;
 
 /**
- * A399583 allocated for Michael R. Page.
+ * A399583 a(n) = floor((4*p+3)*Product_{q prime, q&lt;=p}(1-1/q)) with p = A001359(n).
  * @author Sean A. Irvine
  */
 public class A399583 extends A001359 {

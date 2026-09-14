@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A075431 Primes of the form n+mu(n), where mu is the Moebius function (A008683).
+ * A075431 Primes of the form k+mu(k), where mu is the Moebius function (A008683).
  * @author Georg Fischer
  */
 public class A075431 extends FilterSequence {

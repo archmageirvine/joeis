@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A399551 allocated for \u017diga Pirc.
+ * A399551 Numbers k, such that Sum_{d|k} gpf(d) is a multiple of gpf(k), where gpf = A006530.
  * @author Sean A. Irvine
  */
 public class A399551 extends FilterNumberSequence {

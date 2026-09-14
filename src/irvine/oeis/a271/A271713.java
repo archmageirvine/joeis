@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A271713 Numbers n such that 3*n - 5 is a square.
+ * A271713 Numbers k such that 3*k - 5 is a square.
  * @author Sean A. Irvine
  */
 public class A271713 extends LinearRecurrence {

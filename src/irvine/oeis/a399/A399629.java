@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399629 allocated for Bernard Schott.
+ * A399629 a(n) is the number of divisors d of n such that the first digit of d is equal to the last digit of n.
  * @author Sean A. Irvine
  */
 public class A399629 extends Sequence1 {

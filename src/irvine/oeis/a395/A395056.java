@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395056 allocated for Ron Gordon.
+ * A395056 a(n) is the minimum, over all k &gt;= 1, of the number of terms omitted from the first k terms of A008578 (1 followed by the primes) so that the remaining terms sum to n.
  * @author Sean A. Irvine
  */
 public class A395056 extends Sequence1 {

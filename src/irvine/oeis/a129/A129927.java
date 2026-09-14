@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000567;
 
 /**
- * A129927 3-almost prime octagonal numbers.
+ * A129927 3-almost-prime octagonal numbers.
  * @author Georg Fischer
  */
 public class A129927 extends FilterSequence {

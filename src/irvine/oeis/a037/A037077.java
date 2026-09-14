@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A037077 Decimal expansion of upper limit of - 1^(1/1) + 2^(1/2) - 3^(1/3) + ... .
+ * A037077 Decimal expansion of the MRB constant: Sum_{k&gt;=1} (-1)^k * (k^(1/k) - 1).
  * @author Sean A. Irvine
  */
 public class A037077 extends DecimalExpansionSequence {

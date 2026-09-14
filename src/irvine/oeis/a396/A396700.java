@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A396700 allocated for \u00d2scar P\u00e9rez Massanet.
+ * A396700 Numbers k &gt;= 2 such that sqrt(k*b + c) = sqrt(b) + c for some integers b &gt;= 1 and 0 &lt;= c &lt; k.
  * @author Sean A. Irvine
  */
 public class A396700 extends FilterNumberSequence {

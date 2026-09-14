@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398341 allocated for Fr\u00e9d\u00e9ric D. W. Heidenthal-K\u00f6nig.
+ * A398341 a(n) is the number of die sizes &lt; n that can produce n as the product of two identical dice.
  * @author Sean A. Irvine
  */
 public class A398341 extends Sequence1 {

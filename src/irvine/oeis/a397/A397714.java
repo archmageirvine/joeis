@@ -5,7 +5,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A397714 allocated for William Alexander Carney.
+ * A397714 Decimal expansion of the unique real solution c &gt; 1 of (c-1)*exp(2*c) = 2*(c+1).
  * @author Sean A. Irvine
  */
 public class A397714 extends DecimalExpansionSequence {

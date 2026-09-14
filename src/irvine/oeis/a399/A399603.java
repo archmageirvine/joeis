@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000290;
 
 /**
- * A399603 allocated for Robert Israel.
+ * A399603 Squares k such that A161351(k) is a square.
  * @author Sean A. Irvine
  */
 public class A399603 extends FilterSequence {

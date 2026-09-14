@@ -14,7 +14,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A399617 allocated for Vladeta Jovovic.
+ * A399617 Number of ordered n-tuples of nonempty subsets of an n-element set (repetitions allowed) such that every two entries have nonempty intersection.
  * @author Sean A. Irvine
  */
 public class A399617 extends ParallelGenerateGraphsSequence {

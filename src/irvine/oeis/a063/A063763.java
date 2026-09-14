@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a064.A064052;
 
 /**
- * A063763 Composite integers k such that largest prime factor of k &gt; sqrt(k).
+ * A063763 Composite integers k whose largest prime factor &gt; sqrt(k).
  * @author Sean A. Irvine
  */
 public class A063763 extends FilterSequence {

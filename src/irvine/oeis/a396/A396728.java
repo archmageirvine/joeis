@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A396728 allocated for Dar\u00edo Clavijo.
+ * A396728 Number of antichains of subsets of an n-element set (Sperner families) that do not contain both a set and its complement.
  * @author Sean A. Irvine
  */
 public class A396728 extends Sequence0 {

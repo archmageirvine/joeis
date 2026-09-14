@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397675 allocated for Alex Weslowski.
+ * A397675 allocated for Yoshio Okita.
  * @author Sean A. Irvine
  */
 public class A397675 extends Sequence1 {

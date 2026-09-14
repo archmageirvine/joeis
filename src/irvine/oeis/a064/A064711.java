@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A064711 Numbers n such that n^2 + prime(n) is a prime.
+ * A064711 Numbers k such that k^2 + prime(k) is a prime.
  * @author Sean A. Irvine
  */
 public class A064711 extends A000040 {

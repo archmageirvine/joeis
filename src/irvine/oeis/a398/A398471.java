@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398471 allocated for Attili Veera Naga Sai Harsha.
+ * A398471 Minimum total search cost of an optimal binary search tree over n keys in sorted order, where key i has access frequency i.
  * @author Sean A. Irvine
  */
 public class A398471 extends Sequence1 {

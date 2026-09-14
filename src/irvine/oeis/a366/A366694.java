@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A366694 G.f. satisfies A(x) = (1 + x)^2 + x*A(x)^2.
+ * A366694 G.f. A(x) satisfies A(x) = (1 + x)^2 + x*A(x)^2.
  * @author Georg Fischer
  */
 public class A366694 extends LambdaSequence {

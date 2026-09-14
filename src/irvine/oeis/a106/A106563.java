@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A106563 Numbers n such that n^2 is not the sum of two primes.
+ * A106563 Numbers k such that k^2 is not the sum of two primes.
  * @author Georg Fischer
  */
 public class A106563 extends SingleTransformSequence {

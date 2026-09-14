@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A366700 G.f. satisfies A(x) = (1 + x)^4 + x*A(x)^4.
+ * A366700 G.f. A(x) satisfies A(x) = (1 + x)^4 + x*A(x)^4.
  * @author Georg Fischer
  */
 public class A366700 extends LambdaSequence {

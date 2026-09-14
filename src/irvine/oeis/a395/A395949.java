@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395949 allocated for Daniel Crespo.
+ * A395949 Primes p that are a concatenation of a number B whose nonzero digits are prime and a prime number C that is the sum of the digits of B.
  * @author Sean A. Irvine
  */
 public class A395949 extends Sequence1 {

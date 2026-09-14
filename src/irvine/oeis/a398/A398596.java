@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A398596 allocated for Dieter Renz.
+ * A398596 Exponents e for which there is a unique integer k &gt; 1 such that S(k^e) = k, where S(n) is the sum of digits of n.
  * @author Sean A. Irvine
  */
 public class A398596 extends FilterNumberSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A398902 allocated for Jason Bard.
+ * A398902 Decimal expansion of 2^(1+1/2)^(1+1/2^2)^(1+1/2^3)^...
  * @author Sean A. Irvine
  */
 public class A398902 extends DecimalExpansionSequence {

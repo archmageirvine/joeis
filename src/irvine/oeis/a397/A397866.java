@@ -5,7 +5,7 @@ import irvine.oeis.a399.A399458;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A397866 allocated for Ali Sada.
+ * A397866 a(n) = the index m where A399458(m) = 2n-1. If 2n-1 doesn't appear in A399458, then a(n) = -1.
  * @author Sean A. Irvine
  */
 public class A397866 extends A399458 {

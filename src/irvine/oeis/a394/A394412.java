@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A394412 allocated for Alper Ferudun.
+ * A394412 Number of homomorphisms from the figure-eight knot group to the symmetric group S_n.
  * @author Sean A. Irvine
  */
 public class A394412 extends Sequence0 {

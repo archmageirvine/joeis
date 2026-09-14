@@ -13,7 +13,7 @@ import irvine.oeis.Sequence2;
 import irvine.util.string.StringUtils;
 
 /**
- * A399459 allocated for Allan Bickle.
+ * A399459 Table read by rows: T(n,k) is the number of Chv\u00e1tal-Erd\u0151s graphs with degree n and order k.
  * @author Sean A. Irvine
  */
 public class A399459 extends Sequence2 {

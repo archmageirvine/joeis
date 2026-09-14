@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A396796 allocated for Duc Ngo.
+ * A396796 Number of ways to place n nonattacking rook-plus-range-2-diagonal pieces on an n X n chessboard with rotations and reflections counted separately.
  * @author Sean A. Irvine
  */
 public class A396796 extends Sequence0 {

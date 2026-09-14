@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006530;
 
 /**
- * A063762 Sqrt(n)-rough nonprimes: largest prime factor of n (A006530) &gt;= sqrt(n).
+ * A063762 Composite integers k whose largest prime factor &gt;= sqrt(k).
  * @author Sean A. Irvine
  */
 public class A063762 extends A006530 {

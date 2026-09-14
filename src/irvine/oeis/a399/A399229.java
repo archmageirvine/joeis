@@ -9,7 +9,7 @@ import irvine.util.array.LongDynamicByteArray;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A399229 allocated for Helmuth Haslacher.
+ * A399229 a(n) is the number of periodic points under iteration of x -&gt; s(x^n) on the positive integers, where s is the decimal digit sum.
  * @author Sean A. Irvine
  */
 public class A399229 extends Sequence2 {

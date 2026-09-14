@@ -7,7 +7,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A398326 allocated for Freddy Barrera.
+ * A398326 Number of connected cubic simple graphs on 2n unlabeled nodes with chromatic index 3.
  * @author Sean A. Irvine
  */
 public class A398326 extends ParallelGenerateGraphsSequence {

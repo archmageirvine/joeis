@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399615 allocated for Ellen Veomett.
+ * A399615 Number of non-isomorphic perfect hierarchical matching (PHM) trees on 2^n vertices.
  * @author Sean A. Irvine
  */
 public class A399615 extends Sequence1 {

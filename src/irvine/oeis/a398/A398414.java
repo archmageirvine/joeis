@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398414 allocated for Ali Sada.
+ * A398414 a(1) = 2. For n &gt; 1, choose the least k &gt;= 1 such that 2^k*a(n-1) - 1 has a prime factor not previously occurring in the sequence; a(n) is the least such unused factor.
  * @author Sean A. Irvine
  */
 public class A398414 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A136671 Recursion based on Exp[Pi/4]: a(n)=Floor[a(n-1)*Exp[Pi/4]] Angular domain {0,Pi/4} is the smallest self-similar piece of a sine wave.
+ * A136671 a(1)=1, a(n) = floor(a(n-1) * exp(Pi/4)).
  * @author Sean A. Irvine
  */
 public class A136671 extends Sequence1 {

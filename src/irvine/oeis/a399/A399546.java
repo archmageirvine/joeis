@@ -14,7 +14,7 @@ import irvine.util.Triple;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A399546 allocated for Iurii Kirpichev.
+ * A399546 Smallest prime that is the sum of n distinct elements from the union of primes and powers of 2.
  * @author Sean A. Irvine
  */
 public class A399546 extends Sequence1 {

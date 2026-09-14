@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398565 allocated for Jos Vromans.
+ * A398565 a(n) = 3^(2^n - 1).
  * @author Sean A. Irvine
  */
 public class A398565 extends Sequence0 {

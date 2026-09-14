@@ -6,7 +6,7 @@ import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A094692 Decimal expansion of 2^(5/4)*sqrt(Pi)*exp(Pi/8)/Gamma(1/4)^2.
+ * A094692 Decimal expansion of the Weierstrass constant, 2^(5/4)*sqrt(Pi)*exp(Pi/8)/Gamma(1/4)^2.
  * Formula: 2^(5/4)*sqrt(Pi)*exp(Pi/8)/Gamma(1/4)^2
  * @author Georg Fischer
  */

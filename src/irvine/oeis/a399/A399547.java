@@ -8,7 +8,7 @@ import irvine.oeis.ParallelPermutationSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A399547 allocated for Benjamin Testart.
+ * A399547 Triangle T(n,k) read by rows: number of permutations of [0,n-1] which become identical to their Lehmer code transform for the first time after exactly k iterations of that transform.
  * @author Sean A. Irvine
  */
 public class A399547 extends Sequence1 {

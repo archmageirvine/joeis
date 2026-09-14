@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A399471 allocated for Felix Huber.
+ * A399471 Irregular array read by rows: T(n, k) is the number of inclusion-maximal Sidon subsets of the set of positive divisors of n having cardinality k, for A399469(n) &lt;= k &lt;= A398434(n).
  * @author Sean A. Irvine
  */
 public class A399471 extends Sequence1 {

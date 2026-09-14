@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A399364 allocated for Carlo Mitchener.
+ * A399364 Number of triples (i,j,k) with 0 &lt;= i,j,k &lt; 3^n such that no two of i, j, k have digit 1 in the same base-3 position, and gcd(i,j,k) = 1.
  * @author Sean A. Irvine
  */
 public class A399364 extends Sequence0 {

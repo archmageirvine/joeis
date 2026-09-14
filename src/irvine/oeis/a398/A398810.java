@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398810 allocated for Soslan Daurov.
+ * A398810 Number of integer 5-tuples, all entries &gt; 0, such that the k-th component is &lt;= q_k for some factorization n = q_1*q_2*q_3*q_4*q_5.
  * @author Sean A. Irvine
  */
 public class A398810 extends Sequence0 {

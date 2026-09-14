@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398442.
+ * A399694 Rank-2 Enots-Wolley sequence: the lexicographically earliest sequence of distinct positive integers beginning 1, 2 such that every later term has exactly two distinct prime factors, shares a prime factor with the previous term but none with the term two places back, and has a prime factor not dividing the previous term.
  * @author Sean A. Irvine
  */
 public class A399694 extends Sequence1 {

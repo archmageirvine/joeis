@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A055471 Divisible by the product of its nonzero digits.
+ * A055471 Numbers that are divisible by the product of their nonzero digits.
  * @author Sean A. Irvine
  */
 public class A055471 extends Sequence1 {

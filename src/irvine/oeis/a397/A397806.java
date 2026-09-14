@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397806 allocated for Romain Mal\u00e9cot.
+ * A397806 Maximum number of lists of n distinct real numbers in [0, 1) that produce the same list when Gaston's algorithm is applied to them.
  * @author Sean A. Irvine
  */
 public class A397806 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002808;
 
 /**
- * A064499 Composite numbers n such that product of aliquot divisors of n is a perfect square.
+ * A064499 Composite numbers whose product of aliquot divisors is a perfect square.
  * @author Sean A. Irvine
  */
 public class A064499 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398340 allocated for Jean-Marc Rebert.
+ * A398340 Triangle read by rows, where T(n,k), n&gt;0, k&lt;=2^(n-1), is the smallest prime factor of (2*k-1)*2^n+1.
  * @author Sean A. Irvine
  */
 public class A398340 extends Sequence1 {

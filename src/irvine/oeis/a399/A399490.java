@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399490 allocated for Rafael Andres Pastrana Tordecilla.
+ * A399490 Sum of squares of the elements of R(n), where R(n) is the set of n consecutive integers centered at n, with the center n omitted when n is even.
  * @author Sean A. Irvine
  */
 public class A399490 extends Sequence1 {

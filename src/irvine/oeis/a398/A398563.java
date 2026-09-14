@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a086.A086120;
 
 /**
- * A398563 allocated for Michael Shmoish.
+ * A398563 Semiprimes of the form p^3 - q^3 where p and q are primes.
  * @author Sean A. Irvine
  */
 public class A398563 extends FilterSequence {

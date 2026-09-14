@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399628 allocated for Patrick Bini.
+ * A399628 Number of finite ordered sequences of nonsingleton subsets of an n-set such that the successive unions strictly increase and the final union is the full set.
  * @author Sean A. Irvine
  */
 public class A399628 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.oeis.InverseSequence;
 import irvine.oeis.a394.A394762;
 
 /**
- * A007789.
+ * A399745 allocated for Felix Huber.
  * @author Sean A. Irvine
  */
 public class A399745 extends InverseSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A094224 Number of digits in the least n-transposable number.
+ * A094224 Number of digits in the least n-parasitic number.
  * @author Georg Fischer
  */
 public class A094224 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A398788 allocated for Harry Richman.
+ * A398788 Minimum number of rainbow spanning trees of K_n, over all JL-colorings.
  * @author Sean A. Irvine
  */
 public class A398788 extends CachedSequence {

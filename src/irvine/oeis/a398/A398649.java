@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.TwoParameterFormSequence;
 
 /**
- * A398649 allocated for Jakub Mr\u00e1\u010dek.
+ * A398649 Numbers that can be obtained by concatenating the decimal representations of x, y, and x+y for x &gt;= 1 and y &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A398649 extends TwoParameterFormSequence {

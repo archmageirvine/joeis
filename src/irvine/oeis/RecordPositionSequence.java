@@ -1,6 +1,7 @@
 package irvine.oeis;
 
 import irvine.math.z.Z;
+import irvine.util.string.StringUtils;
 
 /**
  * A sequence consisting of position of consecutive records in another sequence.
@@ -8,6 +9,8 @@ import irvine.math.z.Z;
  */
 public class RecordPositionSequence extends AbstractSequence {
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+  private final long mVerboseMod = Long.parseLong(System.getProperty("oeis.verbose.mod", "1000000"));
   private static final int DEFOFF = 1;
   private final Sequence mSeq;
   private final boolean mUseAbs;
@@ -66,6 +69,9 @@ public class RecordPositionSequence extends AbstractSequence {
       if (t.compareTo(mMax) > 0) {
         mMax = t;
         return Z.valueOf(mN);
+      }
+      if (mVerbose && mN % mVerboseMod == 0) {
+        StringUtils.message("Search completed to " + mN);
       }
     }
   }

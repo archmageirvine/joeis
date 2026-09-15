@@ -34,22 +34,17 @@ public class A126750 extends Sequence0 {
    */
   private static CycleIndex omega(final int n) {
     final CycleIndex res = new CycleIndex("Omega");
-
     for (int k = 1; k <= n; ++k) {
       final long mu = Functions.MOBIUS.l(k);
       if (mu == 0) {
         continue;
       }
-
       for (int j = 1; k * j <= n; ++j) {
         // (-1)^(j+1) * mu(k) / (k*j)
         final long sign = (j & 1) == 1 ? 1 : -1;
         final Q c = new Q(mu * sign, (long) k * j);
-
         // p_k^j
-        final MultivariateMonomial m =
-          MultivariateMonomial.create(k, j, c);
-
+        final MultivariateMonomial m =  MultivariateMonomial.create(k, j, c);
         res.add(m);
       }
     }
@@ -329,19 +324,17 @@ public class A126750 extends Sequence0 {
 
     ++mN;
     final int n = (int) mN;
-    final int w = n + 0;
 
     //inspect("BC[e]", bcE(n), n);
     //inspect("BC[tau]", bcTau(n), n);
 
     // CBC = Omega o BC.
-    final CycleIndex bcE = bcE(w);
+    final CycleIndex bcE = bcE(n);
     bcE.subtract(CycleIndex.ONE);
     //inspect("BC[e]", bcE, n);
-    final CycleIndex cbcE = plethysm(omega(w), bcE, w);
+    final CycleIndex cbcE = plethysm(omega(n), bcE, n);
     //inspect("CBC[e]", cbcE, n);
-
-    final CycleIndex cbcTau = plethysm(omega(w), bcTau(w), w);
+    final CycleIndex cbcTau = plethysm(omega(n), bcTau(n), n);
     //inspect("CBC[tau]", cbcTau, n);
 
     // CBP = (CBC[e] + CBC[tau]) / 2.
@@ -349,6 +342,16 @@ public class A126750 extends Sequence0 {
     cbp.add(cbcTau);
     cbp.multiply(Q.HALF);
     inspect("CBP", cbp, n);
+
+    // todo the order in which we do this omega() step gives different results, I don't think it should!
+    // todo i.e. (1/2) (omega o bcE + omega o bcTau) != (1/2) omega o (bcE + bcTau)
+    final CycleIndex sum = bcE(n);
+    sum.subtract(CycleIndex.ONE);
+    sum.add(bcTau(n));
+    final CycleIndex q = plethysm(omega(n), sum, n);
+    //q.multiply(Q.HALF);
+    inspect("q", q, n);
+
 
     // Check BP
     final CycleIndex e = setCycleIndex(n);

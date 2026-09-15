@@ -14,7 +14,13 @@ public class A007769 extends Sequence0 {
 
   private int mN = -1;
 
-  private Z alpha(final int p, final Z q) {
+  /**
+   * The function alpha
+   * @param p parameter
+   * @param q parameter
+   * @return alpha
+   */
+  public static Z alpha(final int p, final Z q) {
     if (q.isEven()) {
       Z sum = Z.ZERO;
       for (int k = 0; 2 * k <= p; ++k) {

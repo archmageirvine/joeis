@@ -2,7 +2,9 @@ package irvine.math.partition;
 
 import java.util.Arrays;
 
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
+import irvine.math.z.Z;
 
 /**
  * Static utility methods for small integer arrays with descending values (the parts),
@@ -468,6 +470,34 @@ public final class PartitionUtils {
       ++count; // p2
     }
     return count;
+  }
+
+
+  /**
+   * Compute period of a partition represented in count form.
+   * @param a partition
+   * @return period
+   */
+  public static Z per(final int[] a) {
+    Z c = Z.ONE;
+    for (int i = 1; i < a.length; ++i) {
+      c = c.multiply(Functions.FACTORIAL.z(a[i])).multiply(Z.valueOf(i).pow(a[i]));
+    }
+    return c;
+  }
+
+  /**
+   * Test if every part of the partition is even.
+   * @param p partition
+   * @return true iff every part is even
+   */
+  public static boolean isAllPartsEven(final int[] p) {
+    for (final int q : p) {
+      if ((q & 1) == 1) {
+        return false;
+      }
+    }
+    return true;
   }
 
   /**

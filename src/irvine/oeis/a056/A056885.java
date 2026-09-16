@@ -6,6 +6,7 @@ import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
+import irvine.math.partition.PartitionUtils;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -63,7 +64,7 @@ public class A056885 extends MemoryFunction2Sequence<Integer, Polynomial<Q>> {
       for (int j = 1; j <= n; ++j) {
         c.add(c(j, k));
       }
-      res = RING.add(res, RING.multiply(zn.apply(c, Z.valueOf(n)), new Q(Z.ONE, SymmetricGroup.per(k))));
+      res = RING.add(res, RING.multiply(zn.apply(c, Z.valueOf(n)), new Q(Z.ONE, PartitionUtils.per(k))));
     }
     return res;
   }

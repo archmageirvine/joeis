@@ -1,8 +1,8 @@
 package irvine.oeis.a001;
 
 import irvine.math.function.Functions;
-import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
+import irvine.math.partition.PartitionUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -39,7 +39,7 @@ public class A001174 extends Sequence1 {
     int[] p;
     while ((p = ip.next()) != null) {
       IntegerPartition.toCountForm(p, a);
-      s = s.add(new Q(Z.THREE.pow(t(a)), SymmetricGroup.per(a)));
+      s = s.add(new Q(Z.THREE.pow(t(a)), PartitionUtils.per(a)));
     }
     return s.toZ();
   }

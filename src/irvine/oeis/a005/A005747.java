@@ -1,8 +1,8 @@
 package irvine.oeis.a005;
 
 import irvine.math.function.Functions;
-import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
+import irvine.math.partition.PartitionUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -27,12 +27,12 @@ public class A005747 extends Sequence1 {
     Z sum = Z.ZERO;
     while ((alpha = alphaPartitions.next()) != null) {
       IntegerPartition.toCountForm(alpha, alphaCntForm);
-      final Z ordAlpha = Functions.FACTORIAL.z(n).divide(SymmetricGroup.per(alphaCntForm));
+      final Z ordAlpha = Functions.FACTORIAL.z(n).divide(PartitionUtils.per(alphaCntForm));
       final IntegerPartition betaPartitions = new IntegerPartition(k);
       int[] beta;
       while ((beta = betaPartitions.next()) != null) {
         IntegerPartition.toCountForm(beta, betaCntForm);
-        final Z ordBeta = Functions.FACTORIAL.z(k).divide(SymmetricGroup.per(betaCntForm));
+        final Z ordBeta = Functions.FACTORIAL.z(k).divide(PartitionUtils.per(betaCntForm));
         Z prod = Z.ONE;
         for (int a : alpha) {
           int power = 0;

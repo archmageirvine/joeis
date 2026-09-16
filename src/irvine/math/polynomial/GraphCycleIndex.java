@@ -1,8 +1,8 @@
 package irvine.math.polynomial;
 
 import irvine.math.function.Functions;
-import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
+import irvine.math.partition.PartitionUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 
@@ -63,7 +63,7 @@ public final class GraphCycleIndex {
     while ((p = ip.next()) != null) {
       IntegerPartition.toCountForm(p, v);
       final MultivariateMonomial mm = getMultivariateMonomial(v);
-      mm.setCoefficient(new Q(Z.ONE.shiftLeft(getPowersOfTwo(v)), SymmetricGroup.per(v)));
+      mm.setCoefficient(new Q(Z.ONE.shiftLeft(getPowersOfTwo(v)), PartitionUtils.per(v)));
       ci.add(mm);
     }
     return ci;
@@ -82,7 +82,7 @@ public final class GraphCycleIndex {
     while ((p = ip.next()) != null) {
       IntegerPartition.toCountForm(p, v);
       final MultivariateMonomial mm = getMultivariateMonomial(v);
-      mm.setCoefficient(new Q(Z.valueOf(v[1]).shiftLeft(getPowersOfTwo(v)), SymmetricGroup.per(v)));
+      mm.setCoefficient(new Q(Z.valueOf(v[1]).shiftLeft(getPowersOfTwo(v)), PartitionUtils.per(v)));
       ci.add(mm);
     }
     return ci;

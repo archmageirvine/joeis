@@ -30,7 +30,7 @@ public class A002945 extends Sequence0 {
 
   private Z findMax(final Polynomial<Z> f) {
     // Initial estimate based on properties of polynomial
-    Z a = f.coeff(f.degree() - 1).divide(f.coeff(f.degree())).negate();
+    Z a = f.coeff(f.degree() - 1).divide(f.leadingCoeff()).negate();
     //Z a = Z.ONE;
     while (RING.eval(f, a).signum() < 0) {
       a = a.add(1);

@@ -3,8 +3,8 @@ package irvine.oeis.a002;
 import java.io.Serializable;
 
 import irvine.math.function.Functions;
-import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
+import irvine.math.partition.PartitionUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -57,7 +57,7 @@ public class A002854 extends AbstractSequence implements Serializable {
     Q sum = Q.ZERO;
     while ((p = part.next()) != null) {
       IntegerPartition.toCountForm(p, j);
-      sum = sum.add(m(j).divide(SymmetricGroup.per(j)));
+      sum = sum.add(m(j).divide(PartitionUtils.per(j)));
     }
     return sum.toZ();
   }

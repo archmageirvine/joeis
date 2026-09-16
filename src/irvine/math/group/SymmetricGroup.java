@@ -15,6 +15,7 @@ import irvine.math.api.Set;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.partition.MurnaghanNakayama;
+import irvine.math.partition.PartitionUtils;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.q.Q;
@@ -172,19 +173,6 @@ public class SymmetricGroup<T> extends AbstractGroup<Permutation<T>> {
     return mName;
   }
 
-  /**
-   * Compute period of a partition.
-   * @param a partition
-   * @return period
-   */
-  public static Z per(final int[] a) {
-    Z c = Z.ONE;
-    for (int i = 1; i < a.length; ++i) {
-      c = c.multiply(Functions.FACTORIAL.z(a[i])).multiply(Z.valueOf(i).pow(a[i]));
-    }
-    return c;
-  }
-
   static CycleIndex cycleIndex(final int size) {
     final CycleIndex ci = new CycleIndex("Z(S" + size + ")");
     final IntegerPartition ip = new IntegerPartition(size);
@@ -198,7 +186,7 @@ public class SymmetricGroup<T> extends AbstractGroup<Permutation<T>> {
           mm.add(k, a[k]);
         }
       }
-      mm.setCoefficient(new Q(Z.ONE, per(a)));
+      mm.setCoefficient(new Q(Z.ONE, PartitionUtils.per(a)));
       ci.add(mm);
     }
     return ci;

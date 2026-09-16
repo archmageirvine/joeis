@@ -1,8 +1,8 @@
 package irvine.math.polynomial;
 
 import irvine.math.function.Functions;
-import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
+import irvine.math.partition.PartitionUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 
@@ -50,7 +50,7 @@ public final class DigraphCycleIndex {
     while ((p = ip.next()) != null) {
       IntegerPartition.toCountForm(p, v);
       final MultivariateMonomial mm = getMultivariateMonomial(v);
-      mm.setCoefficient(new Q(Z.ONE, SymmetricGroup.per(v)));
+      mm.setCoefficient(new Q(Z.ONE, PartitionUtils.per(v)));
       ci.add(mm);
     }
     return ci;

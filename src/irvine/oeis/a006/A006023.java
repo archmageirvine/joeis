@@ -2,8 +2,8 @@ package irvine.oeis.a006;
 
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
-import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
+import irvine.math.partition.PartitionUtils;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
@@ -49,7 +49,7 @@ public class A006023 extends Sequence0 {
           prod = RING.multiply(prod, RING.pow(RING.oneMinusXToTheN(k), v[k]));
         }
       }
-      final Q coeff = new Q(Z.ONE.shiftLeft(getPowersOfTwo(v)), SymmetricGroup.per(v));
+      final Q coeff = new Q(Z.ONE.shiftLeft(getPowersOfTwo(v)), PartitionUtils.per(v));
       prod = RING.multiply(prod, coeff);
       sum = RING.add(sum, prod);
     }

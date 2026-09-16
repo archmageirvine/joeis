@@ -1,7 +1,7 @@
 package irvine.oeis.a331;
 
-import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
+import irvine.math.partition.PartitionUtils;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
@@ -35,7 +35,7 @@ public class A331571 extends A188445 {
       w.next();
     }
     final Z t = w.next();
-    return new Q(Binomial.binomial(t.add(k - 1), k), SymmetricGroup.per(c));
+    return new Q(Binomial.binomial(t.add(k - 1), k), PartitionUtils.per(c));
   }
 
   protected Z t(final int n, final int k) {

@@ -1,7 +1,7 @@
 package irvine.oeis.a160;
 
-import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
+import irvine.math.partition.PartitionUtils;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -37,7 +37,7 @@ public class A160449 extends AbstractSequence {
     final int[] c = new int[n + 1];
     while ((p = part.next()) != null) {
       IntegerPartition.toCountForm(p, c);
-      sum = sum.add(SymmetricGroup.per(c).pow(k - 1));
+      sum = sum.add(PartitionUtils.per(c).pow(k - 1));
     }
     return sum;
   }

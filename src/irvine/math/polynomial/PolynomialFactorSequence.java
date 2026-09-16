@@ -66,7 +66,6 @@ public final class PolynomialFactorSequence {
 
   /**
    * Return the rational constant factor.
-   *
    * @return unit
    */
   public Q unit() {
@@ -75,7 +74,6 @@ public final class PolynomialFactorSequence {
 
   /**
    * Return the number of distinct factors.
-   *
    * @return number of factors
    */
   public int size() {
@@ -84,7 +82,6 @@ public final class PolynomialFactorSequence {
 
   /**
    * Return the factor at the specified index.
-   *
    * @param n index
    * @return factor
    */
@@ -94,7 +91,6 @@ public final class PolynomialFactorSequence {
 
   /**
    * Return the exponent of the factor at the specified index.
-   *
    * @param n index
    * @return exponent
    */
@@ -113,7 +109,6 @@ public final class PolynomialFactorSequence {
 
   /**
    * Return true if there are no nonconstant factors.
-   *
    * @return true for a constant polynomial
    */
   public boolean isTrivial() {
@@ -218,7 +213,6 @@ public final class PolynomialFactorSequence {
 
   /**
    * Apply Kronecker's method to find one proper factor.
-   *
    * @param p primitive polynomial
    * @return a proper factor, or null if irreducible
    */
@@ -349,9 +343,7 @@ public final class PolynomialFactorSequence {
 
     for (final Z v : choices[pos]) {
       values[pos] = v;
-      final Polynomial<Q> result =
-        searchKronecker(f, points, fvalues, choices, values,
-          pos + 1, degree);
+      final Polynomial<Q> result = searchKronecker(f, points, fvalues, choices, values, pos + 1, degree);
       if (result != null) {
         return result;
       }

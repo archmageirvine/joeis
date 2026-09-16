@@ -8,6 +8,7 @@ import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
+import irvine.math.partition.PartitionUtils;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Binomial;
@@ -189,7 +190,7 @@ public final class PalmerSymPowerCycleIndex extends MemoryFunction2<Integer, Q> 
       IntegerPartition.toCountForm(p, c);
       //System.out.println("m=" + m + " partition: " + Arrays.toString(p) + " count form: " + Arrays.toString(c) + " k=" + lcm(c));
       final MultivariateMonomial mm = mm(n, lcm(c), c);
-      mm.setCoefficient(new Q(Z.ONE, SymmetricGroup.per(c)));
+      mm.setCoefficient(new Q(Z.ONE, PartitionUtils.per(c)));
       res.add(mm);
     }
     return res;

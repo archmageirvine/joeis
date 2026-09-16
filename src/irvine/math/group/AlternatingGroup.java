@@ -8,6 +8,7 @@ import java.util.NoSuchElementException;
 import irvine.math.api.Set;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
+import irvine.math.partition.PartitionUtils;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.q.Q;
@@ -177,7 +178,7 @@ public class AlternatingGroup<T> extends AbstractGroup<Permutation<T>> {
             mm.add(k, a[k]);
           }
         }
-        mm.setCoefficient(new Q(Z.TWO, SymmetricGroup.per(a)));
+        mm.setCoefficient(new Q(Z.TWO, PartitionUtils.per(a)));
         ci.add(mm);
       }
     }

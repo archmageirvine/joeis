@@ -13,10 +13,6 @@ import irvine.oeis.a130.A130310;
  */
 public class A399721 extends Sequence1 {
 
-  /*
-  The map of the "Lucas-Collatz" function: if n is Lucas-odd (A399306), then a(n)=2*n; if n is Lucas-even (A399305), then a(n) is the integer whose minimal Lucas representation (A130310) results from removing the final 0 of A130310(n).
-   */
-
   private final Sequence mOdd = new A399306();
   private final Sequence mA = new A130310().skip();
   private final Sequence mB = new A130310().skip();

@@ -42,7 +42,7 @@ public class A058944 extends Sequence1 {
   public Z next() {
     while (true) {
       final Polynomial<Z> poly = toPoly(++mN);
-      if (Z.ONE.equals(poly.coeff(poly.degree())) && IrreduciblePolynomials.isIrreducible(mFld, poly)) {
+      if (poly.leadingCoeff().isOne() && IrreduciblePolynomials.isIrreducible(mFld, poly)) {
         return new Z(Long.toString(mN, mMod));
       }
     }

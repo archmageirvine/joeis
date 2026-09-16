@@ -65,7 +65,7 @@ public class A058947 extends Sequence1 {
   public Z next() {
     while (true) {
       final Polynomial<Z> poly = toPoly(++mN);
-      if (Z.ONE.equals(poly.coeff(poly.degree())) && isPrimitive(poly)) {
+      if (poly.leadingCoeff().isOne() && isPrimitive(poly)) {
         return new Z(Long.toString(mN, mMod));
       }
     }

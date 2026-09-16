@@ -1,8 +1,8 @@
 package irvine.oeis.a054;
 
 import irvine.math.function.Functions;
-import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
+import irvine.math.partition.PartitionUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -50,7 +50,7 @@ public class A054747 extends Sequence1 {
     int[] p;
     while ((p = lp.next()) != null) {
       IntegerPartition.toCountForm(p, l);
-      s = s.add(Z.TWO.multiply(outerProduct(j, l)).divide(SymmetricGroup.per(l)));
+      s = s.add(Z.TWO.multiply(outerProduct(j, l)).divide(PartitionUtils.per(l)));
     }
     return s;
   }
@@ -62,7 +62,7 @@ public class A054747 extends Sequence1 {
     int[] p;
     while ((p = jp.next()) != null) {
       IntegerPartition.toCountForm(p, j);
-      s = s.add(Functions.FACTORIAL.z(mN).multiply(innerSum(j)).divide(SymmetricGroup.per(j)));
+      s = s.add(Functions.FACTORIAL.z(mN).multiply(innerSum(j)).divide(PartitionUtils.per(j)));
     }
     return s;
   }

@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 
 import irvine.math.group.PolynomialRing;
-import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
+import irvine.math.partition.PartitionUtils;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.z.Integers;
@@ -80,7 +80,7 @@ public class A006853 extends AbstractSequence {
     while ((p = part.next()) != null) {
       IntegerPartition.toCountForm(p, j);
       final Z nj = bigN(k, j).pow(n);
-      sum = sum.signedAdd(isEvenA(j), new Q(nj, SymmetricGroup.per(j)));
+      sum = sum.signedAdd(isEvenA(j), new Q(nj, PartitionUtils.per(j)));
     }
     //System.out.println("N_" + n + "," + k2 + "=" + sum);
     return sum.toZ();

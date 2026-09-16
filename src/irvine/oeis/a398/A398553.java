@@ -59,5 +59,4 @@ public class A398553 extends Sequence0 {
     ++mN;
     return mF.get(mN, mN, mN);
   }
-
 }

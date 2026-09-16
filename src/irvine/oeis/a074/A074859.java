@@ -1,6 +1,5 @@
 package irvine.oeis.a074;
 
-import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.a057.A057731;
 
@@ -17,7 +16,6 @@ public class A074859 extends A057731 {
 
   @Override
   public Z next() {
-    final Polynomial<Z> p = get(++mN, 1);
-    return p.coeff(p.degree());
+    return get(++mN, 1).leadingCoeff();
   }
 }

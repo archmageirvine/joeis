@@ -1,8 +1,8 @@
 package irvine.oeis.a188;
 
 import irvine.math.group.PolynomialRingField;
-import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
+import irvine.math.partition.PartitionUtils;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
@@ -42,7 +42,7 @@ public class A188445 extends Sequence1 {
       w.next();
     }
     final Z t = w.next().pow(k);
-    return new Q(t, SymmetricGroup.per(c));
+    return new Q(t, PartitionUtils.per(c));
   }
 
   protected Z t(final int n, final int k) {

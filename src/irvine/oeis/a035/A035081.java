@@ -40,6 +40,6 @@ public class A035081 extends Sequence1 {
   @Override
   public Z next() {
     mA.add(mA.degree() < 3 ? Q.ONE : egj(egj(mA)).coeff(mA.degree()));
-    return mA.coeff(mA.degree()).toZ();
+    return mA.leadingCoeff().toZ();
   }
 }

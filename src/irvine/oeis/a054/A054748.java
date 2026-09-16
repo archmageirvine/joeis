@@ -1,7 +1,7 @@
 package irvine.oeis.a054;
 
-import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
+import irvine.math.partition.PartitionUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002854;
@@ -37,7 +37,7 @@ public class A054748 extends A002854 {
         }
         prod = prod.multiply(Z.valueOf(s1).multiply(s2).pow(p[r]));
       }
-      sum = sum.add(new Q(prod, SymmetricGroup.per(qq)));
+      sum = sum.add(new Q(prod, PartitionUtils.per(qq)));
     }
     return sum;
   }

@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
 import irvine.math.function.Functions;
-import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
+import irvine.math.partition.PartitionUtils;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -94,7 +94,7 @@ public class A002499 extends AbstractSequence {
    * @return <code>h(j)</code>
    */
   public static Z h(final int[] j) {
-    return Functions.FACTORIAL.z(j.length - 1).divide(SymmetricGroup.per(j));
+    return Functions.FACTORIAL.z(j.length - 1).divide(PartitionUtils.per(j));
   }
 
   @Override

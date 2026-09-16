@@ -2,6 +2,7 @@ package irvine.oeis.a037;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence;
 
 /**
@@ -10,7 +11,7 @@ import irvine.oeis.Sequence;
  * For example: decimal 30 = 1010 in base 3 (=<code>baseFrom</code>) -&gt; 1010 in base 6 (=<code>baseTo</code>) = 222 in decimal.
  * @author Georg Fischer
  */
-public class A037454 extends AbstractSequence {
+public class A037454 extends AbstractSequence implements DirectSequence {
 
   private Z mN; // current index
   private final int mBaseFrom;
@@ -42,10 +43,15 @@ public class A037454 extends AbstractSequence {
   @Override
   public Z next() {
     mN = mN.add(Z.ONE);
+    return a(mN);
+  }
+
+  @Override
+  public Z a(final Z n) {
     if (mBaseFrom < mBaseTo) {
-      return new Z(mN.toString(mBaseFrom), mBaseTo);
-    }  else {
-      final String nFrom = mN.toString(mBaseFrom);
+      return new Z(n.toString(mBaseFrom), mBaseTo);
+    } else {
+      final String nFrom = n.toString(mBaseFrom);
       Z sum = Z.ZERO;
       Z toPow = Z.ONE;
       for (int pos = nFrom.length() - 1; pos >= 0; --pos) {
@@ -56,12 +62,17 @@ public class A037454 extends AbstractSequence {
     }
   }
 
+  @Override
+  public Z a(final long n) {
+    return a(Z.valueOf(n));
+  }
+
   /**
    * Test method, rebases from args[0] to args[1], prints args[2] terms.
    */
   public static void main(final String[] args) {
     final int[] parms = {3, 6, 48}; // default parameters
-    int iarg     = 0;
+    int iarg = 0;
     while (iarg < args.length && iarg < 3) { // with arguments
       try {
         parms[iarg] = Integer.parseInt(args[iarg]);

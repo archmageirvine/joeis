@@ -127,8 +127,6 @@ public final class Functions {
   public static final Function1 CARMICHAEL_LAMBDA_VARIANT = new CarmichaelLambdaVariant(); // =A011773
   /** Dedekind psi function. */
   public static final Function1 DEDEKIND_PSI = new DedekindPsi(); // =A001615
-  /** Bitset indicating which digits are present in a number. */
-  public static final Function1 SYNDROME = new Syndrome();
   /** Step to the next number with the same number of set bits. */
   public static final Function1 SWIZZLE = new Swizzle(); // =A057168
   /** Least primitive root of a modulus, or 0 if there is no primitive root. */
@@ -233,6 +231,8 @@ public final class Functions {
   public static final Function2D ROTATE_LEFT = new RotateLeft();
   /** Rotate right by one digit. */
   public static final Function2D ROTATE_RIGHT = new RotateRight();
+  /** Bitset indicating which digits of some base are present in a number. */
+  public static final Function2D SYNDROME = new Syndrome();
   /** Multifactorial (including double factorial). */
   public static final Function2D MULTIFACTORIAL = new Multifactorial(); // =A006882(2, =A007661(3, =A007662(4, =A085157(5, =A085158(6,
   /** Number of points in a hypersphere of given radius in a given number of dimensions. */

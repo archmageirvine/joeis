@@ -90,7 +90,7 @@ public class A399611 extends Sequence0 {
               continue;
             }
             final int g = Functions.GCD.i(a, b, c);
-            final long q =((long) (which == 0 ? a : which == 1 ? b : c) / g) * Functions.SIGMA1.l(g);
+            final long q = ((long) (which == 0 ? a : which == 1 ? b : c) / g) * Functions.SIGMA1.l(g);
             if (q != 0) {
               sum = sum.add(mR.get(x - a, y - b, z - c).multiply(q));
             }

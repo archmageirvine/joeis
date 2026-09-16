@@ -3,19 +3,29 @@ package irvine.math.function;
 import irvine.math.z.Z;
 
 /**
- * Return a 10-bit number indicating which digits are present in a number.
+ * Return a <code>base</code>-bit number indicating which digits are present in a number.
  * @author Sean A. Irvine
  */
-class Syndrome extends AbstractFunction1 {
+class Syndrome extends AbstractFunction2D {
 
   @Override
-  public int i(Z n) {
+  public long getDefault() {
+    return 10;
+  }
+
+  @Override
+  public int i(final long base, Z n) {
+    if (base < 2) {
+      throw new IllegalArgumentException();
+    }
     if (n.isZero()) {
       return 1;
     }
     int syndrome = 0;
-    while (!n.isZero() && syndrome != 0b1111111111) {
-      final Z[] qr = n.divideAndRemainder(Z.TEN);
+    final Z zBase = Z.valueOf(base);
+    final int allSeen = (1 << base) - 1;
+    while (!n.isZero() && syndrome != allSeen) {
+      final Z[] qr = n.divideAndRemainder(zBase);
       n = qr[0];
       syndrome |= 1 << qr[1].intValue();
     }
@@ -23,17 +33,20 @@ class Syndrome extends AbstractFunction1 {
   }
 
   @Override
-  public int i(long n) {
+  public int i(final long base, long n) {
+    if (base < 2) {
+      throw new IllegalArgumentException();
+    }
     int s = 0;
     do {
-      s |= 1 << (n % 10);
-      n /= 10;
+      s |= 1 << (n % base);
+      n /= base;
     } while (n != 0);
     return s;
   }
 
   @Override
-  public Z z(final Z n) {
-    return Z.valueOf(i(n.longValueExact()));
+  public Z z(final long base, final Z n) {
+    return Z.valueOf(i(base, n.longValueExact()));
   }
 }

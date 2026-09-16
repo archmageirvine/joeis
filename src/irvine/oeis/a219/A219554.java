@@ -31,7 +31,7 @@ public class A219554 extends Sequence0 {
       // F(0,y) = Product_{j>=1} (1+y^j).
       // This is the distinct-partition generating function.
       // We only use this for the newly required row-zero entries.
-      Z[] p = new Z[b + 1];
+      final Z[] p = new Z[b + 1];
       for (int k = 0; k <= b; ++k) {
         p[k] = Z.ZERO;
       }

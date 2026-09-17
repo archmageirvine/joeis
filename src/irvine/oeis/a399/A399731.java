@@ -18,6 +18,9 @@ public class A399731 extends Sequence0 {
   @Override
   public Z next() {
     mN += 2;
+    if (mN == 0) {
+      return Z.ONE;
+    }
     final IntegerPartition part = new IntegerPartition(mN);
     int[] p;
     final int[] c = new int[mN + 1];

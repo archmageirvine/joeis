@@ -17,5 +17,6 @@ public class A399915 extends RecordPositionSequence {
         return super.next().negate();
       }
     }, 1, false);
+    skip(2);
   }
 }

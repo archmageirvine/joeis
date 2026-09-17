@@ -4,7 +4,7 @@ package irvine.oeis.a222;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A222619 Number of live cells at the n-th generation of &apos;spacefiller 1&apos;, utilizing Conway&apos;s S23/B3 Game of Life rules.
+ * A222619 Number of live cells at the n-th generation of 'spacefiller 1', utilizing Conway's S23/B3 Game of Life rules.
  * @author Georg Fischer
  */
 public class A222619 extends HolonomicRecurrence {

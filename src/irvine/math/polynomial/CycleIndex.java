@@ -479,7 +479,12 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
     return applyOnePlusXToTheN(Integer.MAX_VALUE);
   }
 
-  private CycleIndex scaleIndex(final int k) {
+  /**
+   * Scale the index by a power.
+   * @param k power
+   * @return scaled cycle index
+   */
+  public CycleIndex scaleIndex(final int k) {
     final CycleIndex res = new CycleIndex(getName() + "[" + k + "]");
     for (final MultivariateMonomial m : values()) {
       final MultivariateMonomial copy = m.pow(k);
@@ -883,21 +888,16 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
    * @return plethysm
    */
   public CycleIndex plethysm(final CycleIndex g, final int n) {
-    final CycleIndex res =
-      new CycleIndex("(" + getName() + "," + g.getName() + ")");
-
+    final CycleIndex res = new CycleIndex("(" + getName() + "," + g.getName() + ")");
     final HashMap<Point, CycleIndex> gCache = new HashMap<>();
-
     for (final MultivariateMonomial m : values()) {
       CycleIndex r = CycleIndex.ONE;
-
       for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
         final int k = e.getKey().right();
         final int exponent = e.getValue().intValueExact();
-
         final Point key = new Point(k, exponent);
-        CycleIndex gkl = gCache.get(key);
 
+        CycleIndex gkl = gCache.get(key);
         if (gkl == null) {
           final CycleIndex gk = g.scaleIndex(k).weightedTruncate(n);
           gkl = gk.pow(exponent, n).weightedTruncate(n); // todo
@@ -912,5 +912,32 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
     }
 
     return res.weightedTruncate(n);
+  }
+
+  /**
+   * Apply the k-th Adams operation to a cycle index.
+   *
+   * The Adams operation sends
+   *
+   *   p_j -> p_(j*k).
+   *
+   * @param k Adams operation index
+   * @return cycle index
+   */
+  public CycleIndex adams(final int k) {
+    final CycleIndex res = new CycleIndex("psi_" + k + "(" + getName() + ")");
+
+    for (final MultivariateMonomial m : values()) {
+      final MultivariateMonomial r = new MultivariateMonomial();
+
+      for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
+        final Pair<String, Integer> key = e.getKey();
+        r.add(new Pair<>(key.left(), key.right() * k), e.getValue());
+      }
+
+      r.setCoefficient(m.getCoefficient());
+      res.add(r);
+    }
+    return res;
   }
 }

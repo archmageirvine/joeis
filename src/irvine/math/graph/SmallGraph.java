@@ -339,7 +339,6 @@ public class SmallGraph extends AbstractGraph {
 
   /**
    * Get the edge vector for a vertex
-   *
    * @param k vertex
    * @return edge vector
    */

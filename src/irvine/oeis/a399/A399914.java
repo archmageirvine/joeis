@@ -17,5 +17,6 @@ public class A399914 extends RecordSequence {
         return super.next().negate();
       }
     }, false);
+    skip(2); // go past initial negative terms
   }
 }

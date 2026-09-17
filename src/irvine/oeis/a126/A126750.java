@@ -1,17 +1,21 @@
 package irvine.oeis.a126;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.polynomial.Polynomial;
+import irvine.math.polynomial.StandardMultiply;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
+import irvine.util.Pair;
 
 /**
  * A126750 Number of 2-connected (or biconnected) graphs on n nodes with chromatic number 2.
@@ -243,9 +247,172 @@ public class A126750 extends Sequence0 {
 
   private static CycleIndex plethysm(final CycleIndex r, final CycleIndex s, final int n) {
     return r.plethysm(s, n);
-    //return r.op(StandardMultiply.OP, s);
-    //return r.copy().wreath(s.copy());
   }
+
+//  private static CycleIndex adams(final CycleIndex g,
+//                                  final int k,
+//                                  final int n) {
+//    return g.scaleIndex(k).weightedTruncate(n);
+//  }
+
+  /**
+   * Adams operation psi_k on a cycle index:
+   *
+   *   psi_k(p_lambda) = p_{k lambda}.
+   *
+   * @param g cycle index
+   * @param k Adams operation index
+   * @param n maximum weight
+   * @return psi_k(g)
+   */
+  private static CycleIndex adams(final CycleIndex g,
+                                  final int k,
+                                  final int n) {
+    final CycleIndex result = new CycleIndex("psi_" + k + "(" + g.getName() + ")");
+
+    for (final MultivariateMonomial m : g.values()) {
+      final MultivariateMonomial scaled = new MultivariateMonomial();
+
+      for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
+        final Pair<String, Integer> key = e.getKey();
+        scaled.add(key.left(), key.right() * k, e.getValue());
+      }
+
+      if (scaled.weight() <= n) {
+        scaled.multiply(m.getCoefficient());
+        result.add(scaled);
+      }
+    }
+    return result;
+  }
+
+  private static CycleIndex s2TwistedComposition(final CycleIndex f,
+                                                 final CycleIndex oddG,
+                                                 final CycleIndex evenG,
+                                                 final int n) {
+    final CycleIndex res =
+      new CycleIndex("S2(" + f.getName() + ")");
+
+    final Map<Integer, CycleIndex> cache = new HashMap<>();
+
+    for (final MultivariateMonomial m : f.values()) {
+      CycleIndex r = CycleIndex.ONE;
+
+      for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
+        final int k = e.getKey().right();
+        final int exponent = e.getValue().intValueExact();
+
+        CycleIndex g = cache.get(k);
+        if (g == null) {
+          final CycleIndex source = (k & 1) != 0 ? oddG : evenG;
+          g = source.adams(k);
+          cache.put(k, g);
+        }
+
+        r = r.op(StandardMultiply.OP, g.pow(exponent, n), Z.valueOf(n));
+      }
+
+      r.multiply(m.getCoefficient());
+      res.add(r);
+    }
+
+    return res.weightedTruncate(n);
+  }
+
+//  /**
+//   * S2-twisted composition, returning the transposition component.
+//   *
+//   * If f is an ordinary cycle index and oddG/evenG are the two
+//   * S2-components of a cycle index G, this computes
+//   *
+//   *   (f o G)(tau)
+//   *
+//   * where G(tau^k) is oddG for odd k and evenG for even k.
+//   *
+//   * @param f outer cycle index
+//   * @param oddG G(tau)
+//   * @param evenG G(e)
+//   * @param n maximum weight
+//   * @return the tau component
+//   */
+//  private static CycleIndex s2TwistedComposition(final CycleIndex f,
+//                                                 final CycleIndex oddG,
+//                                                 final CycleIndex evenG,
+//                                                 final int n) {
+//    final CycleIndex result = new CycleIndex("S2(" + f.getName() + ")");
+//
+//    // Cache Adams operations.  The result for a given k is independent
+//    // of the monomial in f in which it occurs.
+//    final Map<Integer, CycleIndex> adamsCache = new HashMap<>();
+//
+//    for (final MultivariateMonomial m : f.values()) {
+//      CycleIndex term = CycleIndex.ONE;
+//
+//      for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
+//        final int k = e.getKey().right();
+//        final int exponent = e.getValue().intValueExact();
+//
+//        CycleIndex adams = adamsCache.get(k);
+//        if (adams == null) {
+//          final CycleIndex g = (k & 1) == 1 ? oddG : evenG;
+//          adams = adams(g, k, n);
+//          adamsCache.put(k, adams);
+//        }
+//
+//        term = term.op(StandardMultiply.OP, adams.pow(exponent, n), Z.valueOf(n));
+//      }
+//
+//      term.multiply(m.getCoefficient());
+//      result.add(term);
+//    }
+//
+//    return result.weightedTruncate(n);
+//  }
+
+//  /**
+//   * S2-twisted composition, returning the transposition component.
+//   *
+//   * For G with components G(e) and G(tau),
+//   *
+//   *   (F o G)(tau)
+//   *
+//   * uses G(tau) under odd Adams operations and G(e) under even
+//   * Adams operations.
+//   */
+//  private static CycleIndex s2TwistedComposition(final CycleIndex f,
+//                                                 final CycleIndex oddG,
+//                                                 final CycleIndex evenG,
+//                                                 final int n) {
+//    final CycleIndex result = new CycleIndex("S2(" + f.getName() + ")");
+//
+//    final Map<Integer, CycleIndex> adamsCache = new HashMap<>();
+//
+//    for (final MultivariateMonomial m : f.values()) {
+//      CycleIndex term = CycleIndex.ONE;
+//
+//      for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
+//        final int k = e.getKey().right();
+//        final int exponent = e.getValue().intValueExact();
+//
+//        CycleIndex adams = adamsCache.get(k);
+//        if (adams == null) {
+//          final CycleIndex g = (k & 1) == 1 ? oddG : evenG;
+//          adams = g.scaleIndex(k).weightedTruncate(n);
+//          adamsCache.put(k, adams);
+//        }
+//
+//        term = term.op(StandardMultiply.OP,
+//          adams.pow(exponent, n),
+//          Z.valueOf(n));
+//      }
+//
+//      term.multiply(m.getCoefficient());
+//      result.add(term);
+//    }
+//
+//    return result.weightedTruncate(n);
+//  }
+
 
   private static void printCoefficients(final String name,
                                         final CycleIndex ci,
@@ -294,80 +461,44 @@ public class A126750 extends Sequence0 {
   // bcE = A049312
   // bcTau = A122082
   // CBC[e] = A318870
-  // CBC[tau] = A318869
+  // CBC[tau] = A123549
 
   @Override
   public Z next() {
-//    final CycleIndex p = new CycleIndex("P",
-//      MultivariateMonomial.create(1, 1),
-//      MultivariateMonomial.create(2, 1));
-//
-//    final CycleIndex q = new CycleIndex("Q",
-//      MultivariateMonomial.create(1, 1),
-//      MultivariateMonomial.create(1, 2, Q.ONE));
-//
-//    System.out.println("P = " + p);
-//    System.out.println("Q = " + q);
-//    System.out.println("P[Q] = " + p.wreath(q));
-
-//    for (int k = 1; k < 20; ++k) {
-//      inspect("BC[tau]", bcTau(k), k);
-//    }
-
-//    for (int k = 1; k < 20; ++k) {
-//      final CycleIndex bcE = bcE(k);
-//      final CycleIndex omega = omega(k);
-//      //final CycleIndex cbcE = compose(omega, bcE).weightedTruncate(k);
-//      final CycleIndex cbcE = omega.op(StandardMultiply.OP, bcE).weightedTruncate(k); // gives cbcE -> A048194
-//      inspect("cbc[E]", cbcE, k);
-//    }
-
     ++mN;
     final int n = (int) mN;
 
-    //inspect("BC[e]", bcE(n), n);
-    //inspect("BC[tau]", bcTau(n), n);
+    final CycleIndex omega = omega(n);
 
     // CBC = Omega o BC.
     final CycleIndex bcE = bcE(n);
     bcE.subtract(CycleIndex.ONE);
     //inspect("BC[e]", bcE, n);
-    final CycleIndex cbcE = plethysm(omega(n), bcE, n);
+    final CycleIndex cbcE = plethysm(omega, bcE, n);
     //inspect("CBC[e]", cbcE, n);
-    final CycleIndex cbcTau = plethysm(omega(n), bcTau(n), n);
+
+    final CycleIndex bcTau = bcTau(n);
+    //inspect("BC[tau]", bcTau(n), n);
+    final CycleIndex cbcTau = s2TwistedComposition(omega, bcTau, bcE, n);
     //inspect("CBC[tau]", cbcTau, n);
 
     // CBP = (CBC[e] + CBC[tau]) / 2.
     final CycleIndex cbp = cbcE.copy();
     cbp.add(cbcTau);
     cbp.multiply(Q.HALF);
-    inspect("CBP", cbp, n);
+    //inspect("CBP", cbp, n);
 
-    // todo the order in which we do this omega() step gives different results, I don't think it should!
-    // todo i.e. (1/2) (omega o bcE + omega o bcTau) != (1/2) omega o (bcE + bcTau)
-    final CycleIndex sum = bcE(n);
-    sum.subtract(CycleIndex.ONE);
-    sum.add(bcTau(n));
-    final CycleIndex q = plethysm(omega(n), sum, n);
-    //q.multiply(Q.HALF);
-    inspect("q", q, n);
+    final CycleIndex bp = plethysm(setCycleIndex(n), cbp, n);
+    //inspect("BP", bp, n);
 
+    // I = compositional inverse of CBP.pointing().
+    final CycleIndex cbpPointed = cbp.pointing().weightedTruncate(n);
+    inspect("CBP_pointed", cbpPointed, n);
+//    final CycleIndex cbpPointedInverse = cbpPointed.inverse(n);
+//    inspect("CBP_pointed_inverse", cbpPointedInverse, n);
 
-    // Check BP
-    final CycleIndex e = setCycleIndex(n);
-    System.out.println(e);
-    final CycleIndex bp = e.plethysm(cbp, n).weightedTruncate(n);
-    inspect("BP", bp, n);
-
-//    System.out.println("BP = " + bp);
-//    System.out.println("BP counts = " + Arrays.toString(counts(bp, n)));
-
-//        // I = compositional inverse of CBP.pointing().
-//    final CycleIndex cbpPointed = cbp.pointing().weightedTruncate(w);
-//    final CycleIndex inv = cbpPointed.inverse(w);
-//
 //    // J = ci_xdiv(I), K = J^(-1), L = K - 1.
-//    final CycleIndex k = inv.xDiv().reciprocal(w);
+//    final CycleIndex k = cbpPointedInverse.xDiv().reciprocal(n);
 //    k.subtract(CycleIndex.ONE);
 //    //k.add(MultivariateMonomial.ONE, Q.NEG_ONE);
 //    System.out.println("k = " + k);
@@ -375,22 +506,30 @@ public class A126750 extends Sequence0 {
 //    // NBP =
 //    //   CBP o I
 //    //   + X * (Omega o (K - 1)).
-//    final CycleIndex first = plethysm(cbp, inv, w);
-//
-//    final CycleIndex second = plethysm(omega(w), k, w);
+//    final CycleIndex first = plethysm(cbp, cbpPointedInverse, n);
+//    final CycleIndex second = plethysm(omega, k, n);
 //
 //    // Multiply by X = x_1.
 //    second.multiply(MultivariateMonomial.create(1, 1));
 //
 //    final CycleIndex nbp = first.copy();
 //    nbp.add(second);
-//    nbp.weightedTruncate(w);
+//    nbp.weightedTruncate(n);
 //
 //    // Isotype generating series: substitute x_i -> x^i.
-//    final Polynomial<Q> series = nbp.apply(RING.x(), w);
+//    final Polynomial<Q> series = nbp.apply(RING.x(), n);
 //
 //    System.out.println("Rational: " + series);
 //    return series.coeff(mN).toZ(); //RING.eval(series, Q.ONE).toZ();
+
+    if (n == 2) {
+      System.out.println("CBCe(2) = " + cbcE);
+      System.out.println("BCt(2)  = " + bcTau);
+      System.out.println("CBCt(2) = " + cbcTau);
+      System.out.println("CBP(2)  = " + cbp);
+      System.out.println("CBP^.2  = " + cbp.pointing());
+    }
+
     return Z.ZERO;
   }
 }

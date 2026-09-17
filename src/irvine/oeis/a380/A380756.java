@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.MexSequence;
 
 /**
- * A380756 a(n) is the smallest number not yet in the sequence which is coprime to n and has the same number of 0&apos;s in its binary expansion as n.
+ * A380756 a(n) is the smallest number not yet in the sequence which is coprime to n and has the same number of 0's in its binary expansion as n.
  * @author Georg Fischer
  */
 public class A380756 extends MexSequence {

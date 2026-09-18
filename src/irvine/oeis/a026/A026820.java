@@ -2,12 +2,13 @@ package irvine.oeis.a026;
 
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A026820 Euler's table: triangular array T read by rows, where T(n,k) = number of partitions in which every part is &lt;= k for 1 &lt;= k &lt;= n. Also number of partitions of n into at most k parts.
  * @author Sean A. Irvine
  */
-public class A026820 extends MemoryFunction2Sequence<Long, Z> {
+public class A026820 extends MemoryFunction2Sequence<Long, Z> implements DirectArray {
 
   /** Construct the sequence. */
   public A026820() {
@@ -33,4 +34,10 @@ public class A026820 extends MemoryFunction2Sequence<Long, Z> {
     }
     return get(mN, mM);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return compute(n, k);
+  }
+
 }

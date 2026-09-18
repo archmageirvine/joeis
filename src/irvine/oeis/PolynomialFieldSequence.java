@@ -731,6 +731,10 @@ public class PolynomialFieldSequence extends AbstractSequence implements Rationa
           --top;
           mStack.set(top, dotPower(mStack.get(top), mStack.get(top + 1)));
           break;
+        case 67:  // "legendreP" - Legendre_P(n, poly)
+          --top;
+          mStack.set(top, SeriesFactory.LEGENDRE_P.s(Long.parseLong(mStack.get(top).toString()), m, mStack.get(top + 1)));
+          break;
         default: // should not occur with proper postfix expressions
           throw new RuntimeException("invalid postfix code " + ix);
 // The following cannot be done exactly over the rationals or are not yet available
@@ -844,6 +848,7 @@ public class PolynomialFieldSequence extends AbstractSequence implements Rationa
     POST_MAP.put("/n", 64);  // divide by exponent for e >= 1
     POST_MAP.put("^n", 65);  // power by exponent
     POST_MAP.put(".^", 66);  // elementwise power
+    POST_MAP.put("legendreP", 67);  // Legendre_P(n, poly)
   } //! fillMap
 
   @Override

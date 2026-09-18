@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.function.BiFunction;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
@@ -226,4 +227,105 @@ public final class FactorUtils {
   public static <A> A iterate(final long n, final A start, final TriFunction<A, Z, Integer> f) {
     return iterate(Z.valueOf(n), start, f);
   }
+
+  /**
+   * Iterate over the (unsorted) divisors in the factorization of <code>n</code>.
+   * @param n number to be factorized
+   * @param start initializes the accumulated value
+   * @param f maps <code>(x, d) -> x</code>
+   * @param <A> accumulated type
+   * @return final accumulated value
+   */
+  public static <A> A iterate(final Z n, final A start, final BiFunction<A, Z, A> f) {
+    A x = start;
+    final FactorSequence fs = Jaguar.factor(n);
+    for (final Z d : fs.divisors()) {
+      x = f.apply(x, d);
+    }
+    return x;
+  }
+
+  /**
+   * Iterate over the (unsorted) divisors in the factorization of <code>n</code>.
+   * @param n number to be factorized
+   * @param start initializes the accumulated value
+   * @param f maps <code>(x, d) -> x</code>
+   * @param <A> accumulated type
+   * @return final accumulated value
+   */
+  public static <A> A iterate(final FactorSequence fs, final A start, final BiFunction<A, Z, A> f) {
+    A x = start;
+    for (final Z d : fs.divisors()) {
+      x = f.apply(x, d);
+    }
+    return x;
+  }
+
+  /**
+   * Iterate over the (unsorted) divisors in the factorization of <code>n</code>.
+   * @param n number to be factorized
+   * @param start initializes the accumulated value
+   * @param f maps <code>(x, d) -> x</code>
+   * @param <A> accumulated type
+   * @return final accumulated value
+   */
+  public static <A> A iterate(final long n, final A start, final BiFunction<A, Z, A> f) {
+    A x = start;
+    final FactorSequence fs = Jaguar.factor(n);
+    for (final Z d : fs.divisors()) {
+      x = f.apply(x, d);
+    }
+    return x;
+  }
+
+  /**
+   * Iterate over the sorted divisors in the factorization of <code>n</code>.
+   * @param n number to be factorized
+   * @param start initializes the accumulated value
+   * @param f maps <code>(x, d) -> x</code>
+   * @param <A> accumulated type
+   * @return final accumulated value
+   */
+  public static <A> A iterateSorted(final Z n, final A start, final BiFunction<A, Z, A> f) {
+    A x = start;
+    final FactorSequence fs = Jaguar.factor(n);
+    for (final Z d : fs.divisorsSorted()) {
+      x = f.apply(x, d);
+    }
+    return x;
+  }
+
+  /**
+   * Iterate over the sorted divisors in the factorization of <code>n</code>.
+   * @param n number to be factorized
+   * @param start initializes the accumulated value
+   * @param f maps <code>(x, d) -> x</code>
+   * @param <A> accumulated type
+   * @return final accumulated value
+   */
+  public static <A> A iterateSorted(final FactorSequence fs, final A start, final BiFunction<A, Z, A> f) {
+    A x = start;
+    for (final Z d : fs.divisorsSorted()) {
+      x = f.apply(x, d);
+    }
+    return x;
+  }
+
+  /**
+   * Iterate over the sorted divisors in the factorization of <code>n</code>.
+   * @param n number to be factorized
+   * @param start initializes the accumulated value
+   * @param f maps <code>(x, d) -> x</code>
+   * @param <A> accumulated type
+   * @return final accumulated value
+   */
+  public static <A> A iterateSorted(final long n, final A start, final BiFunction<A, Z, A> f) {
+    A x = start;
+    final FactorSequence fs = Jaguar.factor(n);
+    for (final Z d : fs.divisorsSorted()) {
+      x = f.apply(x, d);
+    }
+    return x;
+  }
+
 }

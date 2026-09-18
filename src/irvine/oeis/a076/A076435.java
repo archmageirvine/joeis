@@ -36,7 +36,7 @@ public class A076435 extends Sequence1 {
     }
   }
 
-  private int mN = 0;
+  protected int mN = 0;
 
   @Override
   public Z next() {

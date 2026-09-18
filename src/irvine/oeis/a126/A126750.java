@@ -246,7 +246,8 @@ public class A126750 extends Sequence0 {
   }
 
   private static CycleIndex plethysm(final CycleIndex r, final CycleIndex s, final int n) {
-    return r.plethysm(s, n);
+    //return r.plethysm(s, n);
+    return r.wreath(s, n); //.weightedTruncate(n);
   }
 
 //  private static CycleIndex adams(final CycleIndex g,
@@ -467,19 +468,20 @@ public class A126750 extends Sequence0 {
   public Z next() {
     ++mN;
     final int n = (int) mN;
+    final int w = n + 1;
 
-    final CycleIndex omega = omega(n);
+    final CycleIndex omega = omega(w);
 
     // CBC = Omega o BC.
-    final CycleIndex bcE = bcE(n);
+    final CycleIndex bcE = bcE(w);
     bcE.subtract(CycleIndex.ONE);
     //inspect("BC[e]", bcE, n);
-    final CycleIndex cbcE = plethysm(omega, bcE, n);
+    final CycleIndex cbcE = plethysm(omega, bcE, w);
     //inspect("CBC[e]", cbcE, n);
 
-    final CycleIndex bcTau = bcTau(n);
+    final CycleIndex bcTau = bcTau(w);
     //inspect("BC[tau]", bcTau(n), n);
-    final CycleIndex cbcTau = s2TwistedComposition(omega, bcTau, bcE, n);
+    final CycleIndex cbcTau = s2TwistedComposition(omega, bcTau, bcE, w);
     //inspect("CBC[tau]", cbcTau, n);
 
     // CBP = (CBC[e] + CBC[tau]) / 2.
@@ -488,47 +490,54 @@ public class A126750 extends Sequence0 {
     cbp.multiply(Q.HALF);
     //inspect("CBP", cbp, n);
 
-    final CycleIndex bp = plethysm(setCycleIndex(n), cbp, n);
+    // Check BP
+    //final CycleIndex bp = plethysm(setCycleIndex(n), cbp, n);
     //inspect("BP", bp, n);
 
     // I = compositional inverse of CBP.pointing().
-    final CycleIndex cbpPointed = cbp.pointing().weightedTruncate(n);
-    inspect("CBP_pointed", cbpPointed, n);
-//    final CycleIndex cbpPointedInverse = cbpPointed.inverse(n);
-//    inspect("CBP_pointed_inverse", cbpPointedInverse, n);
+    final CycleIndex cbpPointed = cbp.pointing().weightedTruncate(w);
+    //inspect("CBP_pointed", cbpPointed, n);
+    final CycleIndex cbpPointedInverse = cbpPointed.inverse(w);
+    //inspect("CBP_pointed_inverse", cbpPointedInverse, n);
 
-//    // J = ci_xdiv(I), K = J^(-1), L = K - 1.
-//    final CycleIndex k = cbpPointedInverse.xDiv().reciprocal(n);
-//    k.subtract(CycleIndex.ONE);
-//    //k.add(MultivariateMonomial.ONE, Q.NEG_ONE);
-//    System.out.println("k = " + k);
-//
-//    // NBP =
-//    //   CBP o I
-//    //   + X * (Omega o (K - 1)).
-//    final CycleIndex first = plethysm(cbp, cbpPointedInverse, n);
-//    final CycleIndex second = plethysm(omega, k, n);
-//
-//    // Multiply by X = x_1.
-//    second.multiply(MultivariateMonomial.create(1, 1));
-//
-//    final CycleIndex nbp = first.copy();
-//    nbp.add(second);
-//    nbp.weightedTruncate(n);
-//
+    inspect("xdiv", cbpPointedInverse.xDiv(), n);
+
+    final CycleIndex left = plethysm(cbp, cbpPointedInverse, n);
+    inspect("left", left, n);
+
+
+    // xDiv reduces with by 1
+    // J = ci_xdiv(I), K = J^(-1), L = K - 1.
+    final CycleIndex k = cbpPointedInverse.xDiv().reciprocal(n);
+    k.subtract(CycleIndex.ONE);
+    //k.add(MultivariateMonomial.ONE, Q.NEG_ONE);
+    inspect("rxdiv", k, n);
+    final CycleIndex right = plethysm(omega, k, n);
+    // Multiply by X = x_1.
+    right.multiply(MultivariateMonomial.create(1, 1));
+    inspect("right", right, n);
+
+    // NBP = CBP o I + X * (Omega o (K - 1)).
+    final CycleIndex nbps = left.copy();
+    nbps.add(right);
+    final CycleIndex nbp = nbps.weightedTruncate(n); // todo this should be redundant, should already be truncated
+    inspect("NBP", nbp, n);
+
+    //
 //    // Isotype generating series: substitute x_i -> x^i.
 //    final Polynomial<Q> series = nbp.apply(RING.x(), n);
 //
 //    System.out.println("Rational: " + series);
 //    return series.coeff(mN).toZ(); //RING.eval(series, Q.ONE).toZ();
 
-    if (n == 2) {
-      System.out.println("CBCe(2) = " + cbcE);
-      System.out.println("BCt(2)  = " + bcTau);
-      System.out.println("CBCt(2) = " + cbcTau);
-      System.out.println("CBP(2)  = " + cbp);
-      System.out.println("CBP^.2  = " + cbp.pointing());
-    }
+//    if (n == 2) {
+//      System.out.println("BCe(2) = " + bcE);
+//      System.out.println("CBCe(2) = " + cbcE);
+//      System.out.println("BCt(2)  = " + bcTau);
+//      System.out.println("CBCt(2) = " + cbcTau);
+//      System.out.println("CBP(2)  = " + cbp);
+//      System.out.println("CBP^.2  = " + cbp.pointing());
+//    }
 
     return Z.ZERO;
   }

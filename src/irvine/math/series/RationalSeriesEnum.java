@@ -1,6 +1,7 @@
 package irvine.math.series;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -143,6 +144,13 @@ public enum RationalSeriesEnum {
     public Q coeff(final long n) {
       final long m = n + 2;
       return (n & 1) == 0 ? new Q(Functions.FACTORIAL.z(m), Functions.FACTORIAL.z(m / 2).square().shiftLeft(m)).square().multiply(m / 2).divide(m - 1) : Q.ZERO;
+    }
+  }),
+  /** theta3(x). */
+  THETA3(new AbstractInfiniteSeries<>() {
+    @Override
+    public Q coeff(final long n) {
+      return n == 0 ? Q.ONE : Predicates.SQUARE.is(n) ? Q.TWO : Q.ZERO;
     }
   }),
   ;

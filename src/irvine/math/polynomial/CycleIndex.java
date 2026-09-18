@@ -811,32 +811,31 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
     return q;
   }
 
-
-  /**
-   * Point this cycle index.
-   * <p>For a monomial c*x_1^a*x_2^b*..., pointing multiplies the coefficient by a.</p>
-   * @return pointed cycle index
-   */
-  public CycleIndex pointing() {
-    final CycleIndex res = new CycleIndex(getName() + "^.");
-    for (final MultivariateMonomial m : values()) {
-      final Z a = m.get(new Pair<>(MultivariateMonomial.DEFAULT_VARIABLE, 1));
-      if (a.signum() != 0) {
-        final MultivariateMonomial copy = m.copy();
-        copy.setCoefficient(copy.getCoefficient().multiply(a));
-        res.add(copy);
-      }
-    }
-    return res;
-  }
-
 //  /**
-//   * Pointing operation.
+//   * Point this cycle index.
+//   * <p>For a monomial c*x_1^a*x_2^b*..., pointing multiplies the coefficient by a.</p>
 //   * @return pointed cycle index
 //   */
 //  public CycleIndex pointing() {
-//    return diff(MultivariateMonomial.DEFAULT_VARIABLE, 1).multiply(MultivariateMonomial.create(1, 1));
+//    final CycleIndex res = new CycleIndex(getName() + "^.");
+//    for (final MultivariateMonomial m : values()) {
+//      final Z a = m.get(new Pair<>(MultivariateMonomial.DEFAULT_VARIABLE, 1));
+//      if (a.signum() != 0) {
+//        final MultivariateMonomial copy = m.copy();
+//        copy.setCoefficient(copy.getCoefficient().multiply(a));
+//        res.add(copy);
+//      }
+//    }
+//    return res;
 //  }
+
+  /**
+   * Pointing operation.
+   * @return pointed cycle index
+   */
+  public CycleIndex pointing() {
+    return diff(MultivariateMonomial.DEFAULT_VARIABLE, 1).multiply(MultivariateMonomial.create(1, 1));
+  }
 
   /**
    * Divide every term by x_1.
@@ -940,4 +939,27 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
     }
     return res;
   }
+
+  /**
+   * Replace <code>x_k</code> in this cycle index with <code>g(z_k,...,z_mk,...)</code>.
+   * Also called, plethysm.
+   * @param g a cycle index
+   * @return application
+   */
+  public CycleIndex wreath(final CycleIndex g, final int maxWeight) {
+    final CycleIndex res = new CycleIndex(getName() + "[" + g.getName() + "]");
+    final HashMap<Integer, CycleIndex> gCache = new HashMap<>();
+    for (final MultivariateMonomial m : values()) {
+      CycleIndex r = CycleIndex.ONE;
+      for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
+        final int k = e.getKey().right();
+        final CycleIndex gkl = gCache.computeIfAbsent(k, g::scale).weightedTruncate(maxWeight);
+        r = r.op(StandardMultiply.OP, gkl.pow(e.getValue().intValueExact(), Integer.MAX_VALUE));
+      }
+      r.multiply(m.getCoefficient());
+      res.add(r);
+    }
+    return res.weightedTruncate(maxWeight);
+  }
+
 }

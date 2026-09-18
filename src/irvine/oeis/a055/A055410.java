@@ -1,9 +1,9 @@
 package irvine.oeis.a055;
 
-import irvine.math.group.IntegerField;
-import irvine.math.group.PolynomialRingField;
-import irvine.math.polynomial.Polynomial;
-import irvine.math.polynomial.ThetaFunctions;
+import irvine.math.predicate.Predicates;
+import irvine.math.series.AbstractInfiniteSeries;
+import irvine.math.series.Series;
+import irvine.math.series.SeriesRing;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -13,14 +13,19 @@ import irvine.oeis.Sequence0;
  */
 public class A055410 extends Sequence0 {
 
-  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
-  private static final Polynomial<Z> C1 = Polynomial.create(1, -1);
-  private final int mExponent;
   private int mM = -3;
   private int mN = 1;
 
+  private final Series<Z> mS;
+
   protected A055410(final int exponent) {
-    mExponent = exponent;
+    final Series<Z> theta3 = new AbstractInfiniteSeries<>() {
+      @Override
+      public Z coeff(final long n) {
+        return n == 0 ? Z.ONE : Predicates.SQUARE.is(n) ? Z.TWO : Z.ZERO;
+      }
+    };
+    mS = SeriesRing.SZ.divide(SeriesRing.SZ.pow(theta3, exponent), SeriesRing.SZ.create(Z.ONE, Z.NEG_ONE));
   }
 
   /** Construct the sequence. */
@@ -32,6 +37,6 @@ public class A055410 extends Sequence0 {
   public Z next() {
     mM += 2;
     mN += mM;
-    return RING.coeff(RING.pow(ThetaFunctions.theta3z(mN), mExponent, mN), C1, mN);
+    return mS.coeff(mN);
   }
 }

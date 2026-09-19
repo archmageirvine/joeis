@@ -217,10 +217,7 @@ public class A126750 extends Sequence0 {
     return result;
   }
 
-  private static void partition(final int remaining,
-                                final int largest,
-                                final ArrayList<Integer> current,
-                                final List<int[]> result) {
+  private static void partition(final int remaining, final int largest, final ArrayList<Integer> current, final List<int[]> result) {
     if (remaining == 0) {
       final int[] p = new int[current.size()];
       for (int i = 0; i < p.length; ++i) {
@@ -246,15 +243,8 @@ public class A126750 extends Sequence0 {
   }
 
   private static CycleIndex plethysm(final CycleIndex r, final CycleIndex s, final int n) {
-    //return r.plethysm(s, n);
-    return r.wreath(s, n); //.weightedTruncate(n);
+    return r.wreath(s, n);
   }
-
-//  private static CycleIndex adams(final CycleIndex g,
-//                                  final int k,
-//                                  final int n) {
-//    return g.scaleIndex(k).weightedTruncate(n);
-//  }
 
   /**
    * Adams operation psi_k on a cycle index:
@@ -266,9 +256,7 @@ public class A126750 extends Sequence0 {
    * @param n maximum weight
    * @return psi_k(g)
    */
-  private static CycleIndex adams(final CycleIndex g,
-                                  final int k,
-                                  final int n) {
+  private static CycleIndex adams(final CycleIndex g, final int k, final int n) {
     final CycleIndex result = new CycleIndex("psi_" + k + "(" + g.getName() + ")");
 
     for (final MultivariateMonomial m : g.values()) {
@@ -320,110 +308,6 @@ public class A126750 extends Sequence0 {
     return res.weightedTruncate(n);
   }
 
-//  /**
-//   * S2-twisted composition, returning the transposition component.
-//   *
-//   * If f is an ordinary cycle index and oddG/evenG are the two
-//   * S2-components of a cycle index G, this computes
-//   *
-//   *   (f o G)(tau)
-//   *
-//   * where G(tau^k) is oddG for odd k and evenG for even k.
-//   *
-//   * @param f outer cycle index
-//   * @param oddG G(tau)
-//   * @param evenG G(e)
-//   * @param n maximum weight
-//   * @return the tau component
-//   */
-//  private static CycleIndex s2TwistedComposition(final CycleIndex f,
-//                                                 final CycleIndex oddG,
-//                                                 final CycleIndex evenG,
-//                                                 final int n) {
-//    final CycleIndex result = new CycleIndex("S2(" + f.getName() + ")");
-//
-//    // Cache Adams operations.  The result for a given k is independent
-//    // of the monomial in f in which it occurs.
-//    final Map<Integer, CycleIndex> adamsCache = new HashMap<>();
-//
-//    for (final MultivariateMonomial m : f.values()) {
-//      CycleIndex term = CycleIndex.ONE;
-//
-//      for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
-//        final int k = e.getKey().right();
-//        final int exponent = e.getValue().intValueExact();
-//
-//        CycleIndex adams = adamsCache.get(k);
-//        if (adams == null) {
-//          final CycleIndex g = (k & 1) == 1 ? oddG : evenG;
-//          adams = adams(g, k, n);
-//          adamsCache.put(k, adams);
-//        }
-//
-//        term = term.op(StandardMultiply.OP, adams.pow(exponent, n), Z.valueOf(n));
-//      }
-//
-//      term.multiply(m.getCoefficient());
-//      result.add(term);
-//    }
-//
-//    return result.weightedTruncate(n);
-//  }
-
-//  /**
-//   * S2-twisted composition, returning the transposition component.
-//   *
-//   * For G with components G(e) and G(tau),
-//   *
-//   *   (F o G)(tau)
-//   *
-//   * uses G(tau) under odd Adams operations and G(e) under even
-//   * Adams operations.
-//   */
-//  private static CycleIndex s2TwistedComposition(final CycleIndex f,
-//                                                 final CycleIndex oddG,
-//                                                 final CycleIndex evenG,
-//                                                 final int n) {
-//    final CycleIndex result = new CycleIndex("S2(" + f.getName() + ")");
-//
-//    final Map<Integer, CycleIndex> adamsCache = new HashMap<>();
-//
-//    for (final MultivariateMonomial m : f.values()) {
-//      CycleIndex term = CycleIndex.ONE;
-//
-//      for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
-//        final int k = e.getKey().right();
-//        final int exponent = e.getValue().intValueExact();
-//
-//        CycleIndex adams = adamsCache.get(k);
-//        if (adams == null) {
-//          final CycleIndex g = (k & 1) == 1 ? oddG : evenG;
-//          adams = g.scaleIndex(k).weightedTruncate(n);
-//          adamsCache.put(k, adams);
-//        }
-//
-//        term = term.op(StandardMultiply.OP,
-//          adams.pow(exponent, n),
-//          Z.valueOf(n));
-//      }
-//
-//      term.multiply(m.getCoefficient());
-//      result.add(term);
-//    }
-//
-//    return result.weightedTruncate(n);
-//  }
-
-
-  private static void printCoefficients(final String name,
-                                        final CycleIndex ci,
-                                        final int n) {
-    final Polynomial<Q> series = ci.apply(RING.x(), n);
-    System.out.println(name + " = " + series);
-    for (int k = 0; k <= n; ++k) {
-      System.out.println(name + "[" + k + "] = " + series.coeff(k));
-    }
-  }
 
   private static List<int[]> exactPartitions(final int n) {
     final List<int[]> result = new ArrayList<>();
@@ -512,9 +396,9 @@ public class A126750 extends Sequence0 {
     k.subtract(CycleIndex.ONE);
     //k.add(MultivariateMonomial.ONE, Q.NEG_ONE);
     inspect("rxdiv", k, n);
-    final CycleIndex right = plethysm(omega, k, n);
+    final CycleIndex prex = plethysm(omega, k, n);
     // Multiply by X = x_1.
-    right.multiply(MultivariateMonomial.create(1, 1));
+    final CycleIndex right = prex.multiply(MultivariateMonomial.create(1, 1));
     inspect("right", right, n);
 
     // NBP = CBP o I + X * (Omega o (K - 1)).
@@ -530,14 +414,20 @@ public class A126750 extends Sequence0 {
 //    System.out.println("Rational: " + series);
 //    return series.coeff(mN).toZ(); //RING.eval(series, Q.ONE).toZ();
 
-//    if (n == 2) {
-//      System.out.println("BCe(2) = " + bcE);
-//      System.out.println("CBCe(2) = " + cbcE);
-//      System.out.println("BCt(2)  = " + bcTau);
-//      System.out.println("CBCt(2) = " + cbcTau);
-//      System.out.println("CBP(2)  = " + cbp);
-//      System.out.println("CBP^.2  = " + cbp.pointing());
-//    }
+    if (n == 2) {
+      final int r = 2;
+      System.out.println("BCe(2) = " + bcE.toString(r));
+      System.out.println("CBCe(2) = " + cbcE.toString(r));
+      System.out.println("BCt(2)  = " + bcTau.toString(r));
+      System.out.println("CBCt(2) = " + cbcTau.toString(r));
+      System.out.println("CBP(2)  = " + cbp.toString(r));
+      System.out.println("CBP-pointed  = " + cbpPointed.toString(r));
+      System.out.println("CBP-pointed-inverse  = " + cbpPointedInverse.toString(r));
+      System.out.println("left  = " + left.toString(r));
+      System.out.println("xdiv-recip  = " + k.toString(r));
+      System.out.println("prex  = " + prex.toString(r));
+      System.out.println("right  = " + right.toString(r));
+    }
 
     return Z.ZERO;
   }

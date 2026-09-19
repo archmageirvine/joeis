@@ -696,21 +696,32 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
     return res;
   }
 
-  @Override
-  public String toString() {
+  /**
+   * Return a string representation of this cycle index with terms up to specified weight.
+   * @param maxWeight maximum weight of terms
+   * @return string representation
+   */
+  public String toString(final int maxWeight) {
     final StringBuilder sb = new StringBuilder();
     if (isEmpty()) {
       sb.append('0');
     } else {
       // TreeSet below does the sorting
       for (final MultivariateMonomial m : new TreeSet<>(values())) {
-        if (sb.length() != 0) {
-          sb.append(" + ");
+        if (m.weight() <= maxWeight) {
+          if (sb.length() != 0) {
+            sb.append(" + ");
+          }
+          sb.append(m);
         }
-        sb.append(m);
       }
     }
     return getName().isEmpty() ? sb.toString() : getName() + " = " + sb;
+  }
+
+  @Override
+  public String toString() {
+    return toString(Integer.MAX_VALUE);
   }
 
   /**

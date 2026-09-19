@@ -4,7 +4,7 @@ package irvine.oeis.a396;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A396699 a(2) = 1; a(2*m) = m*(2*m^2+1)/3 - 1 for m &gt;= 2, and a(2*m+1) = m*(m+1)*(2*m+1)/3 for m &gt;= 1.
+ * A396699 allocated for Eric Cowan.
  * @author Georg Fischer
  */
 public class A396699 extends HolonomicRecurrence {

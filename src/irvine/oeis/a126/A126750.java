@@ -14,46 +14,17 @@ import irvine.math.polynomial.StandardMultiply;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A126750 Number of 2-connected (or biconnected) graphs on n nodes with chromatic number 2.
  * @author Sean A. Irvine
  */
-public class A126750 extends Sequence0 {
+public class A126750 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;
-
-  /**
-   * Combinatorial logarithm
-   *
-   * Omega = sum_{k>=1} mu(k)/k * log(1 + p_k).
-   *
-   * Only terms of weight at most n are generated.
-   *
-   * @param n maximum weight
-   * @return Omega
-   */
-  private static CycleIndex omega(final int n) {
-    final CycleIndex res = new CycleIndex("Omega");
-    for (int k = 1; k <= n; ++k) {
-      final long mu = Functions.MOBIUS.l(k);
-      if (mu == 0) {
-        continue;
-      }
-      for (int j = 1; k * j <= n; ++j) {
-        // (-1)^(j+1) * mu(k) / (k*j)
-        final long sign = (j & 1) == 1 ? 1 : -1;
-        final Q c = new Q(mu * sign, (long) k * j);
-        // p_k^j
-        final MultivariateMonomial m =  MultivariateMonomial.create(k, j, c);
-        res.add(m);
-      }
-    }
-    return res;
-  }
 
   /**
    * z_lambda = product_i i^m_i m_i!.
@@ -72,8 +43,7 @@ public class A126750 extends Sequence0 {
         ++multiplicity;
         ++i;
       }
-      res = res.multiply(Z.valueOf(part).pow(multiplicity))
-        .multiply(factorial(multiplicity));
+      res = res.multiply(Z.valueOf(part).pow(multiplicity)).multiply(factorial(multiplicity));
     }
     return res;
   }
@@ -246,66 +216,27 @@ public class A126750 extends Sequence0 {
     return r.wreath(s, n);
   }
 
-  /**
-   * Adams operation psi_k on a cycle index:
-   *
-   *   psi_k(p_lambda) = p_{k lambda}.
-   *
-   * @param g cycle index
-   * @param k Adams operation index
-   * @param n maximum weight
-   * @return psi_k(g)
-   */
-  private static CycleIndex adams(final CycleIndex g, final int k, final int n) {
-    final CycleIndex result = new CycleIndex("psi_" + k + "(" + g.getName() + ")");
-
-    for (final MultivariateMonomial m : g.values()) {
-      final MultivariateMonomial scaled = new MultivariateMonomial();
-
-      for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
-        final Pair<String, Integer> key = e.getKey();
-        scaled.add(key.left(), key.right() * k, e.getValue());
-      }
-
-      if (scaled.weight() <= n) {
-        scaled.multiply(m.getCoefficient());
-        result.add(scaled);
-      }
-    }
-    return result;
-  }
-
-  private static CycleIndex s2TwistedComposition(final CycleIndex f,
-                                                 final CycleIndex oddG,
-                                                 final CycleIndex evenG,
-                                                 final int n) {
-    final CycleIndex res =
-      new CycleIndex("S2(" + f.getName() + ")");
-
+  private static CycleIndex s2TwistedComposition(final CycleIndex f, final CycleIndex oddG, final CycleIndex evenG, final int n) {
+    final CycleIndex res = new CycleIndex("S2(" + f.getName() + ")");
     final Map<Integer, CycleIndex> cache = new HashMap<>();
-
+    final Z wt = Z.valueOf(n);
     for (final MultivariateMonomial m : f.values()) {
       CycleIndex r = CycleIndex.ONE;
-
       for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
         final int k = e.getKey().right();
         final int exponent = e.getValue().intValueExact();
-
         CycleIndex g = cache.get(k);
         if (g == null) {
           final CycleIndex source = (k & 1) != 0 ? oddG : evenG;
-          g = source.adams(k);
+          g = source.adams(k).weightedTruncate(n);
           cache.put(k, g);
         }
-
-        r = r.op(StandardMultiply.OP, g.pow(exponent, n), Z.valueOf(n));
+        r = r.op(StandardMultiply.OP, g.pow(exponent, n).weightedTruncate(n), wt).weightedTruncate(n);
       }
-
       r.multiply(m.getCoefficient());
       res.add(r);
     }
-
-    return res.weightedTruncate(n);
+    return res;
   }
 
 
@@ -316,9 +247,7 @@ public class A126750 extends Sequence0 {
     return result;
   }
 
-  private static void inspect(final String name,
-                              final CycleIndex ci,
-                              final int n) {
+  private static void inspect(final String name, final CycleIndex ci, final int n) {
     System.out.println("\n" + name);
     System.out.println("cycle index = " + ci);
 
@@ -354,7 +283,7 @@ public class A126750 extends Sequence0 {
     final int n = (int) mN;
     final int w = n + 1;
 
-    final CycleIndex omega = omega(w);
+    final CycleIndex omega = CycleIndex.omega(w);
 
     // CBC = Omega o BC.
     final CycleIndex bcE = bcE(w);
@@ -384,10 +313,10 @@ public class A126750 extends Sequence0 {
     final CycleIndex cbpPointedInverse = cbpPointed.inverse(w);
     //inspect("CBP_pointed_inverse", cbpPointedInverse, n);
 
-    inspect("xdiv", cbpPointedInverse.xDiv(), n);
+    //inspect("xdiv", cbpPointedInverse.xDiv(), n);
 
     final CycleIndex left = plethysm(cbp, cbpPointedInverse, n);
-    inspect("left", left, n);
+    //inspect("left", left, n);
 
 
     // xDiv reduces with by 1
@@ -395,24 +324,17 @@ public class A126750 extends Sequence0 {
     final CycleIndex k = cbpPointedInverse.xDiv().reciprocal(n);
     k.subtract(CycleIndex.ONE);
     //k.add(MultivariateMonomial.ONE, Q.NEG_ONE);
-    inspect("rxdiv", k, n);
+    //inspect("rxdiv", k, n);
     final CycleIndex prex = plethysm(omega, k, n);
     // Multiply by X = x_1.
     final CycleIndex right = prex.multiply(MultivariateMonomial.create(1, 1));
-    inspect("right", right, n);
+    //inspect("right", right, n);
 
     // NBP = CBP o I + X * (Omega o (K - 1)).
     final CycleIndex nbps = left.copy();
     nbps.add(right);
     final CycleIndex nbp = nbps.weightedTruncate(n); // todo this should be redundant, should already be truncated
-    inspect("NBP", nbp, n);
-
-    //
-//    // Isotype generating series: substitute x_i -> x^i.
-//    final Polynomial<Q> series = nbp.apply(RING.x(), n);
-//
-//    System.out.println("Rational: " + series);
-//    return series.coeff(mN).toZ(); //RING.eval(series, Q.ONE).toZ();
+    //inspect("NBP", nbp, n);
 
     if (n == 2) {
       final int r = 2;
@@ -429,6 +351,6 @@ public class A126750 extends Sequence0 {
       System.out.println("right  = " + right.toString(r));
     }
 
-    return Z.ZERO;
+    return nbp.apply(RING.x(), n).coeff(mN).toZ();
   }
 }

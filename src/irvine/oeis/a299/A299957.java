@@ -4,7 +4,7 @@ package irvine.oeis.a299;
 import irvine.oeis.recur.MexSequence;
 
 /**
- * A299957 The sum a(n) + a(n+1) always has at least one digit &quot;1&quot;. Lexicographically first such sequence of nonnegative integers without duplicate term.
+ * A299957 The sum a(n) + a(n+1) always has at least one digit "1". Lexicographically first such sequence of nonnegative integers without duplicate term.
  * @author Georg Fischer
  */
 public class A299957 extends MexSequence {

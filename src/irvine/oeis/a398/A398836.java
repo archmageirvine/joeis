@@ -4,7 +4,7 @@ package irvine.oeis.a398;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A398836 Lower (1, 2/3)-midsequence of triangular numbers (A000217) and pentagonal numbers (A000326); see Comments.
+ * A398836 allocated for Clark Kimberling.
  * @author Georg Fischer
  */
 public class A398836 extends HolonomicRecurrence {

@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000079;
 import irvine.oeis.a019.A019565;
 
 /**
- * A225546 Tek&apos;s flip: Write n as the product of distinct factors of the form prime(i)^(2^(j-1)) with i and j integers, and replace each such factor with prime(j)^(2^(i-1)).
+ * A225546 Tek's flip: Write n as the product of distinct factors of the form prime(i)^(2^(j-1)) with i and j integers, and replace each such factor with prime(j)^(2^(i-1)).
  * Multiplicative with: a(prime(i)^j) = D019565(j)^D000079(i-1).
  * @author Georg Fischer
  */

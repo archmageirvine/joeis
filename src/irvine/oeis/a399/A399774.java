@@ -12,6 +12,6 @@ public class A399774 extends A076435 {
 
   @Override
   public Z next() {
-    return super.next().add(2).subtract(Functions.SIGMA0.z(mN).multiply2());
+    return super.next().add(mN == 1 ? 1 : 2).subtract(Functions.SIGMA0.z(mN).multiply2());
   }
 }

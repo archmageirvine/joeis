@@ -1,13 +1,14 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
  * A001175 Pisano periods (or Pisano numbers): period of Fibonacci numbers mod n.
  * @author Sean A. Irvine
  */
-public class A001175 extends Sequence1 {
+public class A001175 extends Sequence1 implements DirectSequence {
 
   private int mN = 0;
 
@@ -39,4 +40,15 @@ public class A001175 extends Sequence1 {
   public Z next() {
     return Z.valueOf(pisanoPeriod(++mN));
   }
+
+  @Override
+  public Z a(final Z n) {
+    return a(n.longValueExact());
+  }
+
+  @Override
+  public Z a(final long n) {
+    return Z.valueOf(pisanoPeriod(n));
+  }
+
 }

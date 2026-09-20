@@ -5,13 +5,13 @@ import irvine.oeis.a010.A010057;
 import irvine.oeis.transform.ConvolutionProduct;
 
 /**
- * A173677 Number of ways of writing n as a sum of two nonnegative cubes.
+ * A173681 Number of ways of writing n as a sum of 8 nonnegative cubes.
  * @author Georg Fischer
  */
-public class A173677 extends ConvolutionProduct {
+public class A173681 extends ConvolutionProduct {
 
   /** Construct the sequence. */
-  public A173677() {
-    super(0, "2", new A010057());
+  public A173681() {
+    super(0, "8", new A010057());
   }
 }

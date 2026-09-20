@@ -1,6 +1,8 @@
 package irvine.oeis.a000;
 
+import irvine.math.api.RationalSequence;
 import irvine.math.q.BernoulliSequence;
+import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -8,7 +10,7 @@ import irvine.oeis.AbstractSequence;
  * A000367 Numerators of Bernoulli numbers B_2n.
  * @author Sean A. Irvine
  */
-public class A000367 extends AbstractSequence {
+public class A000367 extends AbstractSequence implements RationalSequence {
 
   /**
    * Constructor with offset.
@@ -27,8 +29,16 @@ public class A000367 extends AbstractSequence {
 
   @Override
   public Z next() {
-    final Z q = mB.nextQ().num();
+    final Z qn = mB.nextQ().num();
+    mB.nextQ();
+    return qn;
+  }
+
+  @Override
+  public Q nextQ() {
+    final Q q = mB.nextQ();
     mB.nextQ();
     return q;
   }
+
 }

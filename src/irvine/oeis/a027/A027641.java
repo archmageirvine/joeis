@@ -1,6 +1,8 @@
 package irvine.oeis.a027;
 
+import irvine.math.api.RationalSequence;
 import irvine.math.q.BernoulliSequence;
+import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -8,7 +10,7 @@ import irvine.oeis.Sequence0;
  * A027641 Numerator of Bernoulli number B_n.
  * @author Sean A. Irvine
  */
-public class A027641 extends Sequence0 {
+public class A027641 extends Sequence0 implements RationalSequence {
 
   private final BernoulliSequence mB = new BernoulliSequence(0);
 
@@ -16,4 +18,10 @@ public class A027641 extends Sequence0 {
   public Z next() {
     return mB.nextQ().num();
   }
+
+  @Override
+  public Q nextQ() {
+    return mB.nextQ();
+  }
+
 }

@@ -15,4 +15,4 @@ public class A399719 extends PolynomialRootExpansionSequence {
     super(1, Polynomial.create(8, 9, -7, -7, 1, 1), CR.TWO, CR.THREE);
   }
 }
-// x^5 + x^4 - 7*x^3 - 7*x^2 + 9*x + 8.
+

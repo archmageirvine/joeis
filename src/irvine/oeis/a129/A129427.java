@@ -22,8 +22,8 @@ public class A129427 extends Sequence0 {
     if (mN == 0) {
       return Z.ONE;
     }
-    final CycleIndex a = SymmetricGroup.create(mN).cycleIndex().wreath(Z3);
-    final CycleIndex b = SymmetricGroup.create(3 * mN / 2).cycleIndex().wreath(Z2);
+    final CycleIndex a = SymmetricGroup.create(mN).cycleIndex().plethysm(Z3);
+    final CycleIndex b = SymmetricGroup.create(3 * mN / 2).cycleIndex().plethysm(Z2);
     return CycleIndexReadBigN.bigN(a, b).toZ();
   }
 }

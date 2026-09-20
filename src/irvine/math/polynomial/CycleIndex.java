@@ -97,16 +97,15 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
    * @param monomial monomial to include
    */
   public void add(final MultivariateMonomial monomial) {
-    if (!monomial.getCoefficient().isZero()) {
-      final String key = monomial.termKey();
-      final MultivariateMonomial z = get(key);
-      //final MultivariateMonomial z = find(monomial);
-      //System.out.println("Looked up " + key + " in " + this.toString() + " found " + z);
-      if (z == null) {
-        put(key, monomial.copy()); // use a copy in case its gets munged elsewhere
-      } else if (z.add(monomial.getCoefficient()).isZero()) {
-        remove(key);
-      }
+    if (monomial.getCoefficient().isZero()) {
+      return;
+    }
+    final String key = monomial.termKey();
+    final MultivariateMonomial z = get(key);
+    if (z == null) {
+      put(key, monomial.copy());
+    } else if (z.add(monomial.getCoefficient()).isZero()) {
+      remove(key);
     }
   }
 
@@ -215,13 +214,40 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
    * cycle index and <code>m</code>.
    * @param op operation
    * @param m other cycle index
+   * @param maxWeight maximum weight of a term to retain
+   * @return result of linearized operation
+   */
+  public CycleIndex wop(final MultivariateMonomialOperation op, final CycleIndex m, final long maxWeight) {
+    final CycleIndex res = new CycleIndex(getName() + "*" + m.getName());
+    for (final MultivariateMonomial a : values()) {
+      final long aw = a.weight();
+      if (aw <= maxWeight) {
+        for (final MultivariateMonomial b : m.values()) {
+          final long bw = b.weight();
+          if (aw + bw <= maxWeight) { // this might not actually be true of all operations!
+            final MultivariateMonomial r = op.op(a, b);
+            if (r.weight() <= maxWeight) {
+              res.add(r);
+            }
+          }
+        }
+      }
+    }
+    return res;
+  }
+
+  /**
+   * Perform a linearized extension of the given monomial operation using this
+   * cycle index and <code>m</code>.
+   * @param op operation
+   * @param m other cycle index
    * @return result of linearized operation
    */
   public CycleIndex op(final MultivariateMonomialOperation op, final CycleIndex m) {
     return op(op, m, null);
   }
 
-  private static CycleIndex pow(final MultivariateMonomialOperation op, final CycleIndex cycleIndex, final int exponent, final int maxDegree) {
+  private static CycleIndex pow(final MultivariateMonomialOperation op, final CycleIndex cycleIndex, final int exponent, final long maxDegree) {
     if (exponent < 0) {
       throw new IllegalArgumentException();
     }
@@ -230,7 +256,7 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
       return CycleIndex.ONE;
     }
     // 0^x
-    if (cycleIndex.size() == 0) {
+    if (cycleIndex.isEmpty()) {
       return cycleIndex;
     }
     // x^1
@@ -248,8 +274,38 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
    * @param maxDegree maximum degree of monomial terms
    * @return powered cycle index
    */
-  public CycleIndex pow(final int n, final int maxDegree) {
+  public CycleIndex pow(final int n, final long maxDegree) {
     return pow(StandardMultiply.OP, this, n, maxDegree);
+  }
+
+  private static CycleIndex wpow(final MultivariateMonomialOperation op, final CycleIndex cycleIndex, final int exponent, final long maxWeight) {
+    if (exponent < 0) {
+      throw new IllegalArgumentException();
+    }
+    // x^0
+    if (exponent == 0) {
+      return CycleIndex.ONE;
+    }
+    // 0^x
+    if (cycleIndex.isEmpty()) {
+      return cycleIndex;
+    }
+    // x^1
+    if (exponent == 1) {
+      return cycleIndex;
+    }
+    final CycleIndex s = wpow(op, cycleIndex.wop(op, cycleIndex, maxWeight), exponent / 2, maxWeight);
+    return (exponent & 1) == 0 ? s : s.wop(op, cycleIndex, maxWeight);
+  }
+
+  /**
+   * Return a power of this cycle index subject to a degree constraint.
+   * @param n power
+   * @param maxWeight maximum weight of monomial terms
+   * @return powered cycle index
+   */
+  public CycleIndex wpow(final int n, final long maxWeight) {
+    return wpow(StandardMultiply.OP, this, n, maxWeight);
   }
 
   /**
@@ -573,26 +629,46 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
     return res;
   }
 
-  private CycleIndex scale(final int k) {
+  /**
+   * Apply the k-th Adams operation to a cycle index:
+   *   x_j -> x_(j*k).
+   * @param k Adams operation index
+   * @param maxWeight maximum weight term to retain
+   * @return cycle index
+   */
+  public CycleIndex scale(final int k, final long maxWeight) {
     final CycleIndex r = new CycleIndex(getName() + "_" + k);
     for (final MultivariateMonomial m : values()) {
       final MultivariateMonomial scale = new MultivariateMonomial();
       scale.setCoefficient(m.getCoefficient());
       for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
-        scale.add(e.getKey().left(), e.getKey().right() * k, e.getValue());
+        final int j = e.getKey().right() * k;
+        scale.add(e.getKey().left(), j, e.getValue());
       }
-      r.add(scale);
+      if (scale.weight() <= maxWeight) {
+        r.add(scale);
+      }
     }
     return r;
   }
 
   /**
+   * Apply the k-th Adams operation to a cycle index:
+   *   x_j -> x_(j*k).
+   * @param k Adams operation index
+   * @return cycle index
+   */
+  public CycleIndex scale(final int k) {
+    return scale(k, Long.MAX_VALUE);
+  }
+
+  /**
    * Replace <code>x_k</code> in this cycle index with <code>g(z_k,...,z_mk,...)</code>.
-   * Also called, plethysm.
+   * Also called, wreath.
    * @param g a cycle index
    * @return application
    */
-  public CycleIndex wreath(final CycleIndex g) {
+  public CycleIndex plethysm(final CycleIndex g) {
     final CycleIndex res = new CycleIndex(getName() + "[" + g.getName() + "]");
     final HashMap<Integer, CycleIndex> gCache = new HashMap<>();
     for (final MultivariateMonomial m : values()) {
@@ -715,7 +791,7 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
    * @param n maximum weight to retain
    * @return truncated cycle index
    */
-  public CycleIndex weightedTruncate(final int n) {
+  public CycleIndex weightedTruncate(final long n) {
     final CycleIndex res = new CycleIndex(getName() + "<=" + n);
     for (final MultivariateMonomial m : values()) {
       if (m.weight() <= n) {
@@ -730,7 +806,7 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
    * @param maxWeight maximum weight of terms
    * @return string representation
    */
-  public String toString(final int maxWeight) {
+  public String toString(final long maxWeight) {
     final StringBuilder sb = new StringBuilder();
     if (isEmpty()) {
       sb.append('0');
@@ -803,22 +879,17 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
    * @return inverse
    */
   public CycleIndex inverse(final int n) {
-    // P = X + R, where R has weight >= 2.
-    final CycleIndex r = copy();
-    r.subtract(MultivariateMonomial.create(1, 1)); // remove x_1
-
-    // Q starts with X.
-    final CycleIndex q = new CycleIndex("Inv", MultivariateMonomial.create(1, 1));
-
+    // P = X + R, where R has weight >= 2
+    // Q starts with X
+    final CycleIndex q = new CycleIndex("inv(" + getName() + ")", MultivariateMonomial.X1);
     for (int k = 2; k <= n; ++k) {
-      // Compute R[Q], retaining only weight k.
-      final CycleIndex s = r.wreath(q, n).homogeneous(k);
-
-      // Q_k = -[R[Q]]_k.
-      s.multiply(Q.NEG_ONE);
-      q.add(s);
+      // Q_k = -[R[Q]]_k
+      for (final MultivariateMonomial m : plethysm(q, n).values()) {
+        if (m.weight() == k) {
+          q.subtract(m);
+        }
+      }
     }
-
     return q;
   }
 
@@ -827,7 +898,7 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
    * @return pointed cycle index
    */
   public CycleIndex pointing() {
-    return diff(MultivariateMonomial.DEFAULT_VARIABLE, 1).multiply(MultivariateMonomial.create(1, 1));
+    return diff(MultivariateMonomial.DEFAULT_VARIABLE, 1).multiply(MultivariateMonomial.X1);
   }
 
   /**
@@ -835,7 +906,7 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
    * @return this cycle index divided by x_1
    * @throws IllegalArgumentException if a term is not divisible by x_1
    */
-  public CycleIndex xDiv() {
+  public CycleIndex x1Div() {
     final CycleIndex res = new CycleIndex(getName() + "/x_1");
     final Pair<String, Integer> x1 = new Pair<>(MultivariateMonomial.DEFAULT_VARIABLE, 1);
     for (final MultivariateMonomial m : values()) {
@@ -851,75 +922,51 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
 
   /**
    * Multiplicative inverse of a cycle index series through the specified weight.
-   *
    * @param n maximum weight
    * @return reciprocal cycle index
    */
   public CycleIndex reciprocal(final int n) {
     final CycleIndex res = new CycleIndex("1/" + getName());
-
     // This implementation assumes constant term 1.
     res.add(MultivariateMonomial.ONE);
     for (int k = 1; k <= n; ++k) {
       final CycleIndex t = new CycleIndex("t");
       for (int j = 1; j <= k; ++j) {
-        final CycleIndex a = homogeneous(j);
-        final CycleIndex b = res.homogeneous(k - j);
-        t.add(a.op(StandardMultiply.OP, b));
+        for (final MultivariateMonomial a : values()) {
+          if (a.weight() == j) {
+            for (final MultivariateMonomial b : res.values()) {
+              if (b.weight() == k - j) {
+                t.add(StandardMultiply.OP.op(a, b));
+              }
+            }
+          }
+        }
       }
-      t.multiply(Q.NEG_ONE);
-      res.add(t);
+      res.subtract(t);
     }
     return res.weightedTruncate(n);
   }
 
   /**
-   * Apply the k-th Adams operation to a cycle index.
-   *
-   * The Adams operation sends
-   *
-   *   p_j -> p_(j*k).
-   *
-   * @param k Adams operation index
-   * @return cycle index
-   */
-  // todo is this the same as scale
-  public CycleIndex adams(final int k) {
-    final CycleIndex res = new CycleIndex("psi_" + k + "(" + getName() + ")");
-    for (final MultivariateMonomial m : values()) {
-      final MultivariateMonomial r = new MultivariateMonomial();
-      for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
-        final Pair<String, Integer> key = e.getKey();
-        r.add(new Pair<>(key.left(), key.right() * k), e.getValue());
-      }
-      r.setCoefficient(m.getCoefficient());
-      res.add(r);
-    }
-    return res;
-  }
-
-  /**
    * Replace <code>x_k</code> in this cycle index with <code>g(z_k,...,z_mk,...)</code>.
-   * Also called, plethysm.
    * @param g a cycle index
    * @param maxWeight maximum weight of terms to retain
    * @return application
    */
-  public CycleIndex wreath(final CycleIndex g, final int maxWeight) {
+  public CycleIndex plethysm(final CycleIndex g, final long maxWeight) {
     final CycleIndex res = new CycleIndex(getName() + "[" + g.getName() + "]");
     final HashMap<Integer, CycleIndex> gCache = new HashMap<>();
-    final Z maxW = Z.valueOf(maxWeight);
     for (final MultivariateMonomial m : values()) {
       CycleIndex r = CycleIndex.ONE;
       for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
         final int k = e.getKey().right();
-        final CycleIndex gkl = gCache.computeIfAbsent(k, g::scale).weightedTruncate(maxWeight);
-        r = r.op(StandardMultiply.OP, gkl.pow(e.getValue().intValueExact(), maxWeight).weightedTruncate(maxWeight), maxW).weightedTruncate(maxWeight);
+        final int p = e.getValue().intValueExact();
+        final CycleIndex gkl = gCache.computeIfAbsent(k, j -> g.scale(j, maxWeight));
+        r = r.wop(StandardMultiply.OP, gkl.wpow(p, maxWeight), maxWeight);
       }
       r.multiply(m.getCoefficient());
       res.add(r);
     }
     return res;
   }
-
 }

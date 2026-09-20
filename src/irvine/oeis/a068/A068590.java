@@ -34,11 +34,11 @@ public class A068590 extends Sequence1 {
       CycleIndex a = CycleIndex.ONE;
       for (int k = 1; k < c.length; ++k) {
         if (c[k] > 0) {
-          final CycleIndex ci = mS.get(c[k]).wreath(mS.get(2 * k));
+          final CycleIndex ci = mS.get(c[k]).plethysm(mS.get(2 * k));
           a = a.op(StandardMultiply.OP, ci);
         }
       }
-      final CycleIndex b = mS.get(mN).wreath(mS.get(2));
+      final CycleIndex b = mS.get(mN).plethysm(mS.get(2));
       sum = sum.add(CycleIndexReadBigN.bigN(a, b).toZ());
     }
     return sum;

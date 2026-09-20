@@ -35,6 +35,9 @@ public class MultivariateMonomial extends HashMap<Pair<String, Integer>, Z> impl
     ONE.setCoefficient(Q.ONE);
   }
 
+  /** The monomial x_1. */
+  public static final MultivariateMonomial X1 = MultivariateMonomial.create(1, 1);
+
   /**
    * Create the monomial <code>coeff * x_index^power</code>.
    * @param index variable index
@@ -436,10 +439,10 @@ public class MultivariateMonomial extends HashMap<Pair<String, Integer>, Z> impl
    * Return the weight of this monomial.
    * @return weight
    */
-  public int weight() {
+  public long weight() {
     int weight = 0;
     for (final Map.Entry<Pair<String, Integer>, Z> e : entrySet()) {
-      weight += e.getKey().right() * e.getValue().intValueExact();
+      weight += e.getKey().right() * e.getValue().longValueExact();
     }
     return weight;
   }

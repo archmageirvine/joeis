@@ -17,7 +17,7 @@ public class A063832 extends A000598 {
 
   private static final CycleIndex S2 = SymmetricGroup.create(2).cycleIndex();
   private static final CycleIndex S3 = SymmetricGroup.create(3).cycleIndex();
-  private static final CycleIndex S3_S2 = S3.wreath(S2);
+  private static final CycleIndex S3_S2 = S3.plethysm(S2);
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private final Polynomial<Q> mB = RING.empty();
   private int mN = -1;

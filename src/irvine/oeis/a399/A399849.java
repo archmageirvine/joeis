@@ -3,7 +3,7 @@ package irvine.oeis.a399;
 import irvine.oeis.gf.EgfSequence;
 
 /**
- * A397121.
+ * A399849 Expansion of e.g.f. log((1 - log(1+x))/(1 - 2*log(1+x)))/(1 - log(1+x)).
  * @author Sean A. Irvine
  */
 public class A399849 extends EgfSequence {

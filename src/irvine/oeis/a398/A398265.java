@@ -12,10 +12,10 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A398238 a(n) is the number of distinct unordered pairwise sums with repetition of the distinct multinomial coefficient values of order n having more than one representation.
+ * A398265 Irregular triangle read by rows: T(n, k) is the number of distinct unordered pairwise sums with repetition of the distinct multinomial coefficient values of order n having at least k representations, 2 &lt;= k &lt;= A398263(n).
  * @author Sean A. Irvine
  */
-public class A398238 extends AbstractSequence {
+public class A398265 extends AbstractSequence {
 
   // After Felix Huber
 
@@ -24,7 +24,7 @@ public class A398238 extends AbstractSequence {
   private Z[] mRow = {};
 
   /** Construct the sequence. */
-  public A398238() {
+  public A398265() {
     super(5);
   }
 

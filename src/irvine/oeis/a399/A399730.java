@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399730 allocated for Vladeta Jovovic.
+ * A399730 Number of labeled Eulerian point-determining (mating) graphs on n vertices.
  * @author Sean A. Irvine
  */
 public class A399730 extends Sequence0 {

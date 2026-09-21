@@ -4,7 +4,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
 /**
- * A059720 Triangle T(n,k), 0&lt;=k&lt;=n, formed from coefficients when formula for n-th diagonal of triangle in A059718 is written as a sum of binomial coefficients.
+ * A059720 Triangle T(n,k) with 0&lt;=k&lt;=n, formed from coefficients when formula for n-th diagonal of triangle in A059718 is written as a sum of binomial coefficients.
  * @author Sean A. Irvine
  */
 public class A059720 extends A059718 {

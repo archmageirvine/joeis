@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A137520 A triangular sequence from an expansion of coefficients of the function: p(x,t)=Exp(x*g*(t))*(1-f(t)^2);f(t)=4/(t^4-1);g(t)=t. (based on the Weierstrass functions of Scherk's minimal surface).
+ * A137520 Triangle read by rows: T(n, k) = [t^n*x^k] (n!/3) * (1-(4/(t^4-1))^2) * exp(t*x).
  * @author Sean A. Irvine
  */
 public class A137520 extends Sequence0 {

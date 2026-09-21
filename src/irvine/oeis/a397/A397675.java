@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a137.A137695;
 
 /**
- * A397675 allocated for Yoshio Okita.
+ * A397675 Table of D(p, n) read by antidiagonals: Difference sequence of the generalized p-peg Tower of Hanoi (Frame-Stewart algorithm).
  * @author Sean A. Irvine
  */
 public class A397675 extends A137695 {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399728 allocated for Vladeta Jovovic.
+ * A399728 Number of labeled point-determining (mating) graphs on n vertices with no vertices of degree 1.
  * @author Sean A. Irvine
  */
 public class A399728 extends Sequence0 {

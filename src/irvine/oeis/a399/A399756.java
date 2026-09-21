@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A399756 allocated for Frank M Jackson.
+ * A399756 Numbers k such that 2^k-2 is a practical number.
  * @author Sean A. Irvine
  */
 public class A399756 extends FilterNumberSequence {

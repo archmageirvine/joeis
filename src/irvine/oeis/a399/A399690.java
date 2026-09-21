@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399690 allocated for Hassane Bakkaoui.
+ * A399690 Numerator of delta(n), the density of the integers that are divisible by some integer in the open interval (n, 2n).
  * @author Sean A. Irvine
  */
 public class A399690 extends Sequence1 {

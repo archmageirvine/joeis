@@ -5,7 +5,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A399322.
+ * A399953 Number of nonisomorphic neighborhood-Hausdorff graphs on n vertices.
  * @author Sean A. Irvine
  */
 public class A399953 extends ParallelGenerateGraphsSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000009;
 import irvine.oeis.a219.A219554;
 
 /**
- * A396961 allocated for Jishnu Babu Ranitha.
+ * A396961 Number of bipartite partitions of (n, n) into distinct parts containing at least one part with both coordinates strictly positive.
  * @author Sean A. Irvine
  */
 public class A396961 extends Combiner {

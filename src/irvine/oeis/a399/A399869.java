@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a048.A048675;
 
 /**
- * A399774.
+ * A399869 allocated for Rakesh Khanna A.
  * @author Sean A. Irvine
  */
 public class A399869 extends Sequence1 {

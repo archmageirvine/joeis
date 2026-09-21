@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399680 allocated for Jaroslav Krizek.
+ * A399680 a(1) = 1, for n &gt;= 2; a(n) = the greatest integer k &lt; n such that all divisors of k are exactly the first divisors of n in increasing order.
  * @author Sean A. Irvine
  */
 public class A399680 extends Sequence1 {

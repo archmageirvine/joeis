@@ -3,7 +3,7 @@ package irvine.oeis.a399;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A397121.
+ * A399836 The sum of divisors d of n such that gcud(d, n/d) is a square, where gcud is the greatest common unitary divisor.
  * @author Sean A. Irvine
  */
 public class A399836 extends MultiplicativeSequence {

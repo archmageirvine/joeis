@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398755 allocated for Giuseppe Ciacco.
+ * A398755 Number of steps to reach 1 starting from n when the function f(x) = x/7 if 7 divides x, and x+ceiling(x/7) otherwise is iterated, or -1 if 1 is never reached.
  * @author Sean A. Irvine
  */
 public class A398755 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A378986 a(n) = 2*phi(2*n) - 2*n, where phi is Euler totient function.
+ * A378986 a(n) = 2*phi(2*n) - 2*n, where phi is the Euler totient function.
  * @author Georg Fischer
  */
 public class A378986 extends LambdaSequence {

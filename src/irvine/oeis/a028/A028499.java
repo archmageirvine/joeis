@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A028499 6-hyperperfect numbers: n = 6*(sigma(n) - n - 1) + 1.
+ * A028499 6-hyperperfect numbers: Integers m such that m = 6*(sigma(m) - m - 1) + 1.
  * @author Sean A. Irvine
  */
 public class A028499 extends Sequence1 {

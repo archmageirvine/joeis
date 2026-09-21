@@ -11,7 +11,7 @@ import irvine.oeis.a014.A014137;
 import irvine.oeis.a074.A074681;
 
 /**
- * A086586 Maximum cycle size in range [A014137(n-1)..A014138(n-1)] of permutations A074681/A074682 &amp; A074683/A074684.
+ * A086586 Maximum cycle size in range [A014137(n-1)..A014138(n-1)] of permutations A074681/A074682 and A074683/A074684.
  * @author Sean A. Irvine
  */
 public class A086586 extends Sequence0 {

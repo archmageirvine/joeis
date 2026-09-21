@@ -4,7 +4,7 @@ package irvine.oeis.a099;
 import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
- * A099093 Riordan array (1, 3+3x).
+ * A099093 Riordan array (1, 3+3*x).
  * @author Georg Fischer
  */
 public class A099093 extends GeneratingFunctionTriangle {

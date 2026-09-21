@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399790 allocated for Alper Ferudun.
+ * A399790 Number of spanning trees in the knight graph on an n X n chessboard.
  * @author Sean A. Irvine
  */
 public class A399790 extends Sequence1 {

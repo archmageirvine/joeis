@@ -12,6 +12,7 @@ public class A171985 extends CentralTermSequence {
 
   /** Construct the sequence. */
   public A171985() {
-    super(1, new A026820());
+    // skip/prepend to get around already a DirectSequence problem
+    super(1, new A026820().skip(1).prepend(1));
   }
 }

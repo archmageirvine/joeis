@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A397895 allocated for G. L. Honaker, Jr.
+ * A397895 allocated for Robert Israel.
  * @author Sean A. Irvine
  */
 public class A397895 extends A000040 {

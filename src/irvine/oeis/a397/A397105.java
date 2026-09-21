@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397105 allocated for Creighton Dement.
+ * A397105 a(n) = 3^(n-1)*(Fibonacci(n+2) - 1).
  * @author Sean A. Irvine
  */
 public class A397105 extends Sequence0 {

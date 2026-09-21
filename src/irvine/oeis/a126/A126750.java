@@ -28,28 +28,6 @@ public class A126750 extends Sequence1 {
   private int mN = 0;
 
   /**
-   * z_lambda = product_i i^m_i m_i!.
-   *
-   * @param lambda partition
-   * @return z_lambda
-   */
-  private static Z z(final int[] lambda) {
-    Z res = Z.ONE;
-    int i = 0;
-    while (i < lambda.length) {
-      final int part = lambda[i];
-      int multiplicity = 1;
-      ++i;
-      while (i < lambda.length && lambda[i] == part) {
-        ++multiplicity;
-        ++i;
-      }
-      res = res.multiply(Z.valueOf(part).pow(multiplicity)).multiply(Functions.FACTORIAL.z(multiplicity));
-    }
-    return res;
-  }
-
-  /**
    * Construct the monomial p_lambda with the supplied coefficient.
    * @param lambda partition
    * @param coefficient coefficient
@@ -224,7 +202,9 @@ public class A126750 extends Sequence1 {
 
   @Override
   public Z next() {
-    ++mN;
+    if (++mN <= 3) {
+      return Z.ZERO;
+    }
     final CycleIndex omega = CycleIndex.omega(mN);
     final CycleIndex bcE = bcE(mN);
     bcE.subtract(CycleIndex.ONE);

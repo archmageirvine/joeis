@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a010.A010060;
 
 /**
- * A397121.
+ * A398975 Lexicographically earliest sequence of positive integers such that a(n) equals the number of fixed points within distance a(n) of n.
  * @author Sean A. Irvine
  */
 public class A398975 extends Sequence1 {

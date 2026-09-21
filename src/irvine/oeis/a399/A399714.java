@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000225;
 import irvine.oeis.a178.A178841;
 
 /**
- * A399714 allocated for Tam\u00e1s Sz\u0171cs.
+ * A399714 a(n) = -1 - A010815(n-1) - Sum_{k=1..n-2} A010815(k)*2^(n-2-k) for n &gt;= 3.
  * @author Sean A. Irvine
  */
 public class A399714 extends Combiner {

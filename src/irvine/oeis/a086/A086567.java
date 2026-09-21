@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Triple;
 
 /**
- * A086567 Length of cycle produced by the function f: (x; y; z) -&gt;(x-y-z; y; 2*y + z) if y + = z &lt;x and (x; y; z) -&gt;(y + z -x; x; 2*x -z) if y +z &gt;x when started at (n,1,1).
+ * A086567 Length of cycle produced by the function f: (x; y; z) -&gt;(x-y-z; y; 2*y + z) if y + = z &lt;x and (x; y; z) -&gt;(y + z -x; x; 2*x -z) if y +z &gt;x when started at (n,1,1); or 0 if no cycle is produced.
  * @author Sean A. Irvine
  */
 public class A086567 extends Sequence1 {

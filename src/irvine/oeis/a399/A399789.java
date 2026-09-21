@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A399789 allocated for Alper Ferudun.
+ * A399789 Number of pairs (x,y) modulo n satisfying y^2 == x^3 - x (mod n).
  * @author Sean A. Irvine
  */
 public class A399789 extends MultiplicativeSequence {

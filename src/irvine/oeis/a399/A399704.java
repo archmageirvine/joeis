@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A399704 allocated for Markus Sigg.
+ * A399704 a(n) is the smallest integer &gt;= n such that (n-1)*n/2 + a(n) divides (n-1)! * a(n).
  * @author Sean A. Irvine
  */
 public class A399704 extends Sequence3 {

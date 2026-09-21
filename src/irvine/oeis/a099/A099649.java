@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A099649 Solutions to A099648(k) &gt; k, i.e., numbers such that the largest term in the iteration of the A003132() function strictly exceeds the initial value.
+ * A099649 Solutions to A099648(k) &gt; k; i.e., numbers such that the largest term in the iteration of the A003132() function strictly exceeds the initial value.
  * @author Sean A. Irvine
  */
 public class A099649 extends FiniteSequence {

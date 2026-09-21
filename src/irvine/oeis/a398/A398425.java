@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007769;
 
 /**
- * A398425 allocated for Paul Sampson.
+ * A398425 Number of regular (rotationally asymmetric) orbits of chord diagrams on 2n vertices under the action of the cyclic group C_(2n).
  * @author Sean A. Irvine
  */
 public class A398425 extends Sequence1 {

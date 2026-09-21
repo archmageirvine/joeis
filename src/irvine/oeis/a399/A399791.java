@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399791 allocated for Bartlomiej Pawlik.
+ * A399791 Number of positive integers k such that the sum of decimal digits of k^n is k+n.
  * @author Sean A. Irvine
  */
 public class A399791 extends Sequence1 {

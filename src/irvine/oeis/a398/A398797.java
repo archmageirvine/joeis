@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398797 allocated for S. I. Dimitrov.
+ * A398797 Numbers k such that psi(k) = phi(k) + tau(k)^8.
  * @author Sean A. Irvine
  */
 public class A398797 extends Sequence1 {

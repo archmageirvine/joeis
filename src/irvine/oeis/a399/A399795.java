@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399795 allocated for Rafael Andres Pastrana Tordecilla.
+ * A399795 a(n) is the sum of indices k such that n belongs to the set R(k), where R(k) is the set of k consecutive integers centered at k, with k omitted when k is even.
  * @author Sean A. Irvine
  */
 public class A399795 extends Sequence1 {

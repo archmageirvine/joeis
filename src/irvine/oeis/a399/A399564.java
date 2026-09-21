@@ -4,7 +4,7 @@ package irvine.oeis.a399;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A399564 allocated for Jean Lauro Muller.
+ * A399564 Number of perfect matchings of the 3 X 2n grid graph embedded on the Klein bottle.
  * @author Georg Fischer
  */
 public class A399564 extends HolonomicRecurrence {

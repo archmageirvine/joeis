@@ -7,7 +7,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A399817 allocated for Vladeta Jovovic.
+ * A399817 Number of labeled simple graphs G on n vertices whose open-neighborhood hypergraph is Hausdorff.
  * @author Sean A. Irvine
  */
 public class A399817 extends ParallelGenerateGraphsSequence {

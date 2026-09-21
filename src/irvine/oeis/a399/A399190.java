@@ -9,7 +9,7 @@ import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
 
 /**
- * A399190 allocated for Guido Avagliano.
+ * A399190 Number of numbers equal to the sum of the swinging factorials (A056040) of their base-n digits.
  * @author Sean A. Irvine
  */
 public class A399190 extends Sequence2 {

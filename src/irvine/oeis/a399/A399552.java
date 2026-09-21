@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
- * A399552 allocated for \u017diga Pirc.
+ * A399552 a(n) = (Sum_{d|k} gpf(d)) / gpf(k), where k = A399551(n) and gpf = A006530.
  * @author Sean A. Irvine
  */
 public class A399552 extends A399551 {

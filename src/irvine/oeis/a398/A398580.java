@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Point;
 
 /**
- * A398580 allocated for Aleksei Kudriashov.
+ * A398580 Triangle read by rows: T(n,k) is the number of k-element subsets of the n X n grid with no three collinear points, 0 &lt;= k &lt;= 2n.
  * @author Sean A. Irvine
  */
 public class A398580 extends Sequence1 {

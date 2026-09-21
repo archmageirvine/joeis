@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a398.A398545;
 
 /**
- * A399301 allocated for Soroosh Hemmati.
+ * A399301 Primes not in A398545.
  * @author Sean A. Irvine
  */
 public class A399301 extends SetDifferenceSequence {

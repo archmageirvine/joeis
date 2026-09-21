@@ -3,7 +3,7 @@ package irvine.oeis.a399;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A137526.
+ * A399837 The sum of divisors d of n such that gcud(d, n/d) is an exponentially odd number (A268335), where gcud is the greatest common unitary divisor.
  * @author Sean A. Irvine
  */
 public class A399837 extends MultiplicativeSequence {

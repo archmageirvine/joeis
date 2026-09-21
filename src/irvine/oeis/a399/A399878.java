@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397121.
+ * A399878 a(n) = Sum_{k = 1..n, k does not divide n} (gcd(n, floor(n/k) + 1) - gcd(n, floor(n/k))).
  * @author Sean A. Irvine
  */
 public class A399878 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
- * A399787 allocated for Jwalin Bhatt.
+ * A399787 Length of the longest palindromic substring of n written in base 10.
  * @author Sean A. Irvine
  */
 public class A399787 extends Sequence0 {

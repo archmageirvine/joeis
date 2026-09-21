@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A399633 allocated for Eric Fox.
+ * A399633 The city-building sequence: a(n) = the height h of the shortest building which can see exactly h earlier buildings.
  * @author Sean A. Irvine
  */
 public class A399633 extends CachedSequence {

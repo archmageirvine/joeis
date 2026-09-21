@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399611 allocated for Jishnu Babu Ranitha.
+ * A399611 Number of factorizations of (p*q*r)^n into parts &gt; 1 containing at least one part divisible by p*q*r, where p, q, and r are distinct primes.
  * @author Sean A. Irvine
  */
 public class A399611 extends Sequence0 {

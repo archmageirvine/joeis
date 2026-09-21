@@ -8,7 +8,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a001.A001175;
 
 /**
- * A088551 Fibonacci winding number: the number of &apos;mod n&apos; operations in one cycle of the Fibonacci sequence modulo n.
+ * A088551 Fibonacci winding number: the number of 'mod n' operations in one cycle of the Fibonacci sequence modulo n.
  * @author Georg Fischer
  */
 public class A088551 extends LambdaSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002110;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A007770.
+ * A399842 Omit zero digits from the product of first n primes (cf. A002110).
  * @author Sean A. Irvine
  */
 public class A399842 extends SimpleTransformSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A398905 allocated for Robert Israel.
+ * A398905 Numbers k &gt; 1 such that k^3 - k has no divisors d with k + 1 &lt; d &lt; 2*k - 2.
  * @author Sean A. Irvine
  */
 public class A398905 extends FilterNumberSequence {

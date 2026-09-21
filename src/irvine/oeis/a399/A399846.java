@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A397121.
+ * A399846 Binary nested sequence: a(0)=0, a(1)=1, a(2n)=a(n), a(2n+1)=1-a(n-a(n-1)) for n&gt;=1.
  * @author Sean A. Irvine
  */
 public class A399846 extends CachedSequence {

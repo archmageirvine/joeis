@@ -5,14 +5,14 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399401 allocated for Zhicheng Wei.
+ * A399401 For x + y = z where x and y are coprime, this sequence lists the z values with the value of min(d(x),d(y),d(z)) setting records high, where d(z) is the number of divisors of z (A000005).
  * @author Sean A. Irvine
  */
 public class A399401 extends Sequence1 {
 
   private long mN = 0;
   private long mMin = 1;
-  private Z mBest = Z.ZERO;
+  private Z mBest = Z.ONE;
 
   @Override
   public Z next() {

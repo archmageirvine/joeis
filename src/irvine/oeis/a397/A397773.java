@@ -18,7 +18,7 @@ public class A397773 extends Sequence2 {
   public Z next() {
     final FactorSequence fs = Jaguar.factor(++mN);
     final long k = (mN & 1) == 0 ? 2 : 1;
-    Z r = (mN & 3) == 0 ? Z.TWO : Z.ONE;
+    Z r = Functions.VALUATION.l(mN, 2) == 2 ? Z.TWO : Z.ONE;
     for (final Z p : fs.toZArray()) {
       final int e = fs.getExponent(p);
       if (p.isOdd() && e == 1) {

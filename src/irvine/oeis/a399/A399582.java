@@ -4,7 +4,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A399582 allocated for Emre Y\u0131lmaz.
+ * A399582 Numbers k not divisible by 3 such that at least one of 3+2k and 3+4k is composite.
  * @author Sean A. Irvine
  */
 public class A399582 extends FilterNumberSequence {

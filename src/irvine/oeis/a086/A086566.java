@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A086566 a(1)=2; for n&gt;1 a(n) is the largest prime number m such that a(n-1)^(1/(n-1))&gt;m^(1/n).
+ * A086566 a(1)=2; for n&gt;1, a(n) is the largest prime number m such that a(n-1)^(1/(n-1)) &gt; m^(1/n).
  * @author Sean A. Irvine
  */
 public class A086566 extends Sequence1 {

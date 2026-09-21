@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399147 allocated for Eddie Lin Rui.
+ * A399147 Number of distinct proper side-crossing points among regular polygons inscribed in a common circle and aligned by their side midpoints.
  * @author Sean A. Irvine
  */
 public class A399147 extends Sequence0 {

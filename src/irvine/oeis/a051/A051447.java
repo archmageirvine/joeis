@@ -4,7 +4,7 @@ package irvine.oeis.a051;
 import irvine.oeis.a033.A033981;
 
 /**
- * A051447 Integers n such that 2^n == 9 (mod n).
+ * A051447 Integers k such that 2^k == 9 (mod k).
  * @author Georg Fischer
  */
 public class A051447 extends A033981 {

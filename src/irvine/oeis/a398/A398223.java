@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398223 allocated for Nicholas Green.
+ * A398223 a(n) is the number of iterations for the map f(k) = k/3 if k == 0 (mod 3), 4k+1 if k == 1 (mod 3), 2k-1 if k == 2 (mod 3), to first reach a previously-visited value, starting from k=n.
  * @author Sean A. Irvine
  */
 public class A398223 extends Sequence1 {

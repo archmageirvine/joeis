@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A399575 allocated for Michael R. Page.
+ * A399575 Minimum difference between two composite numbers whose sum is prime(n).
  * @author Sean A. Irvine
  */
 public class A399575 extends AbstractSequence {

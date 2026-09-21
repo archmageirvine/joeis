@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A399751 Decimal exansion of Sum_{k&gt;=0} 5^k/(5*k)! (reciprocals of A210278).
+ * A399751 Decimal expansion of Sum_{k&gt;=0} 5^k/(5*k)! (reciprocals of A210278).
  * Formula:
  * @author Georg Fischer
  */

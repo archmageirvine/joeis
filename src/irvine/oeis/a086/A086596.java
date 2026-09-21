@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A086596 An invariant of the set {Log(2), Log(3), Log(5),..., Log(Prime(2n)), Log(Prime(2n+1))}.
+ * A086596 An invariant of the set {log(2), log(3), log(5),..., log(prime(2n)), log(prime(2n+1))}.
  * @author Sean A. Irvine
  */
 public class A086596 extends Sequence1 {

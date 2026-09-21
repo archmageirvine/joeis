@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A399623 allocated for Eric Fox.
+ * A399623 For each positive integer value v, place three copies of v at the earliest available positions k, k+v, k+2v; any unoccupied positions are set to 0.
  * @author Sean A. Irvine
  */
 public class A399623 extends Sequence1 {

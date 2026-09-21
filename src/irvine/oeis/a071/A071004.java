@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A071004 Binary expansion of AGM(1,sqrt(2)) where AGM(x,y) denote the arithmetic-geometric mean of (x,y).
+ * A071004 Binary expansion of AGM(1,sqrt(2)) where AGM(x,y) denotes the arithmetic-geometric mean of (x,y).
  * Formula: agm(1,sqrt(2))
  * @author Georg Fischer
  */

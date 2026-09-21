@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a396.A396966;
 
 /**
- * A399627 allocated for Jakob Stemberger.
+ * A399627 a(n) is the number of residues modulo 2^n counted by A396966 that are not lifts of a residue counted by A396966 modulo 2^(n-1).
  * @author Sean A. Irvine
  */
 public class A399627 extends A396966 {

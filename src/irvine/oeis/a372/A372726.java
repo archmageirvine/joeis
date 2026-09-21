@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A372726 Legendre&apos;s triangle read by rows. T(n, k) = L(n / prime(k)) where L(n/p) is the Legendre symbol, for n &gt;= 0 and 2 &lt;= k &lt;= n + 2.
+ * A372726 Legendre's triangle read by rows. T(n, k) = L(n / prime(k)) where L(n/p) is the Legendre symbol, for n &gt;= 0 and 2 &lt;= k &lt;= n + 2.
  * @author Georg Fischer
  */
 public class A372726 extends LambdaTable {

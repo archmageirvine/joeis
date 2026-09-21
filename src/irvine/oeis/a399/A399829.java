@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A137526.
+ * A399829 The number of divisors d of n such that gcud(d, n/d) is a powerful number (A001694), where gcud is the greatest common unitary divisor.
  * @author Sean A. Irvine
  */
 public class A399829 extends MultiplicativeSequence {

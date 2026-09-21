@@ -3,7 +3,7 @@ package irvine.oeis.a398;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A398900 allocated for Martin Michael Musatov.
+ * A398900 Prime numbers that can be written as half the sum of three squares in exactly one unique way.
  * @author Sean A. Irvine
  */
 public class A398900 extends FiniteSequence {

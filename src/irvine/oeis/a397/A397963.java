@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397963 allocated for Ruud H.G. van Tol.
+ * A397963 Value to the left of the rightmost longest series of 0-bits of n in binary.
  * @author Sean A. Irvine
  */
 public class A397963 extends Sequence0 {

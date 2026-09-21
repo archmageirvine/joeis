@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a076.A076435;
 
 /**
- * A399774 allocated for Vladeta Jovovic.
+ * A399774 Number of nonisomorphic primitive strongly regular graphs on n vertices.
  * @author Sean A. Irvine
  */
 public class A399774 extends A076435 {

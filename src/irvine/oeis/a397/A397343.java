@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a007.A007770;
 
 /**
- * A397343 allocated for Harry E. Neel.
+ * A397343 Happy numbers whose trajectories under iteration of the sum of squares of digits map to 100 before going to the value of 1.
  * @author Sean A. Irvine
  */
 public class A397343 extends FilterSequence {

@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398967
+ * A399848 Triangle read by rows: T(n,k) = n! * [x^n] log(x+1)^k/(k*(1 - log(x+1))^(k+1)), with 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A399848 extends Sequence1 {

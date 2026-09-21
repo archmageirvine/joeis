@@ -7,7 +7,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A399822 allocated for Vladeta Jovovic.
+ * A399822 Number of labeled neighborhood-Sperner graphs on n vertices.
  * @author Sean A. Irvine
  */
 public class A399822 extends ParallelGenerateGraphsSequence {

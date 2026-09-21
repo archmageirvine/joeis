@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397578 allocated for Alex Ratushnyak.
+ * A397578 a(n) is the least k such that sigma(k) &gt; sigma(k-1)*n and sigma(k) &gt; sigma(k+1)*n, where sigma(k) = A000203(k) is sum of divisors of k.
  * @author Sean A. Irvine
  */
 public class A397578 extends Sequence1 {

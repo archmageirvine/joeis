@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Point;
 
 /**
- * A398184 allocated for Aleksei Kudriashov.
+ * A398184 Number of maximal subsets of the n X n grid with no three collinear points (subsets to which no further grid point can be added without creating a collinear triple).
  * @author Sean A. Irvine
  */
 public class A398184 extends Sequence1 {

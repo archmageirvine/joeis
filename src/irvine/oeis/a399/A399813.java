@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002113;
 
 /**
- * A399813 allocated for Theodore Bonini.
+ * A399813 Palindromic numbers with exactly one non-palindromic divisor.
  * @author Sean A. Irvine
  */
 public class A399813 extends FilterSequence {

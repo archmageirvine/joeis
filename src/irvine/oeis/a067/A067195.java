@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002321;
 
 /**
- * A067195 Numbers n such that M(n) = Sum_{i=1..n} mu(sigma(i)) where M(n) is the Mertens function A002321(n).
+ * A067195 Numbers k such that M(k) = Sum_{i=1..k} mu(sigma(i)) where M(k) is the Mertens function A002321(k).
  * @author Sean A. Irvine
  */
 public class A067195 extends A002321 {

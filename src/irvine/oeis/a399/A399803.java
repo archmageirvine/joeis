@@ -10,7 +10,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000142;
 
 /**
- * A399803 allocated for Iurii Kirpichev.
+ * A399803 Smallest prime that is the sum of n distinct elements from the union of primes and factorials.
  * @author Sean A. Irvine
  */
 public class A399803 extends Sequence1 {

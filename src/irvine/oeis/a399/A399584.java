@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399584 allocated for Zhenxuan Gui.
+ * A399584 Number of unordered pairs of distinct nonzero integer vectors u,v in R^3 with components bounded by [-n,n] such that u and v are orthogonal.
  * @author Sean A. Irvine
  */
 public class A399584 extends Sequence1 {

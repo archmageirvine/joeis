@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a398.A398414;
 
 /**
- * A399712 allocated for Ali Sada.
+ * A399712 a(n) = the index m such that A398414(m) = prime(n). If prime(n) never occurs in A398414, then a(n) = -1.
  * @author Sean A. Irvine
  */
 public class A399712 extends Sequence1 {

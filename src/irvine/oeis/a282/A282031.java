@@ -5,7 +5,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a006.A006352;
 
 /**
- * A282031 Coefficients in q-expansion of (9*E_2(q^3)-E_2(q))/8.
+ * A282031 Coefficients in q-expansion of (9*E_2(q^3) - E_2(q))/8.
  * new A006352()
  * @author Georg Fischer
  */

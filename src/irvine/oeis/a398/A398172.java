@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Point;
 
 /**
- * A398172 allocated for Aleksei Kudriashov.
+ * A398172 Number of subsets of the n X n grid with no three collinear points (the empty set is counted).
  * @author Sean A. Irvine
  */
 public class A398172 extends Sequence1 {

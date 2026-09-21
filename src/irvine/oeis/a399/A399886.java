@@ -3,7 +3,7 @@ package irvine.oeis.a399;
 import irvine.oeis.RecordSequence;
 
 /**
- * A399623.
+ * A399886 Record high points in A399184.
  * @author Sean A. Irvine
  */
 public class A399886 extends RecordSequence {

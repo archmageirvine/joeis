@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398559 allocated for Hilko Koning.
+ * A398559 a(n) = n^4 - 99*n^3 + 3441*n^2 - 49259*n + 247889, for n &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A398559 extends Sequence0 {

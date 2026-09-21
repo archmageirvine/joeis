@@ -9,7 +9,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.Point;
 
 /**
- * A399796 allocated for Eddie Lin Rui.
+ * A399796 Number of distinct nonzero coefficients of (1+x+x^(-1)+y+y^(-1))^n.
  * @author Sean A. Irvine
  */
 public class A399796 extends Sequence0 {

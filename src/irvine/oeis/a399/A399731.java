@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399731 allocated for Vladeta Jovovic.
+ * A399731 Number of labeled point-determining (mating) graphs on 2n vertices in which every vertex has odd degree.
  * @author Sean A. Irvine
  */
 public class A399731 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
- * A398343 allocated for \u017diga Pirc.
+ * A398343 a(n) = (Sum_{d|k} rad(d)) / rad(k), where k = A398342(n) and rad = A007947.
  * @author Sean A. Irvine
  */
 public class A398343 extends A398342 {

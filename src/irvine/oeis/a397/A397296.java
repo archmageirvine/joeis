@@ -6,7 +6,7 @@ import irvine.oeis.CachedSequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A397296 allocated for G\u00f6ktu\u011f Omay.
+ * A397296 a(n) is the least nonnegative integer which is not equal to F(x,y) for some x,y being earlier terms of the sequence, where F(x,y) = lcm(x,y) + |x-y|.
  * @author Sean A. Irvine
  */
 public class A397296 extends CachedSequence {

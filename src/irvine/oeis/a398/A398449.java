@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397121.
+ * A398449 Triangle read by rows: T(n,k), (1 &lt;= k &lt;= n), equals the largest prime factor of prime(n)^prime(k) + prime(k)^prime(n).
  * @author Sean A. Irvine
  */
 public class A398449 extends Sequence1 {

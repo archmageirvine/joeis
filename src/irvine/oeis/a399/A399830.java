@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A137526.
+ * A399830 The number of divisors d of n such that gcud(d, n/d) is a square, where gcud is the greatest common unitary divisor.
  * @author Sean A. Irvine
  */
 public class A399830 extends MultiplicativeSequence {

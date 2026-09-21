@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399741 allocated for Bartlomiej Pawlik.
+ * A399741 Starting with 2, each term is the sum, over all preceding terms, of the least and greatest prime factors of each term.
  * @author Sean A. Irvine
  */
 public class A399741 extends Sequence1 {

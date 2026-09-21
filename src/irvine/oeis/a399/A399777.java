@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A399777 allocated for Marco Rip\u00e0.
+ * A399777 Positive integers n such that the central-cross sum divides the diagonal product in the (2*n + 1) X (2*n + 1) Ulam spiral.
  * @author Sean A. Irvine
  */
 public class A399777 extends Sequence1 {

@@ -6,7 +6,7 @@ package irvine.oeis.a098;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A098333 Expansion of 1/sqrt(1 - 2x + 13x^2).
+ * A098333 Expansion of 1/sqrt(1 - 2*x + 13*x^2).
  * @author Georg Fischer
  */
 public class A098333 extends HolonomicRecurrence {

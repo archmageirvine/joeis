@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelPermutationSequence;
 
 /**
- * A398967
+ * A398967 Number of Gauss diagrams of meander curves with 2n+1 crossings, counted up to rotation of the circle.
  * @author Sean A. Irvine
  */
 public class A398967 extends ParallelPermutationSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A073665 Rearrangement of even numbers such that a(n) + a(n+1) + 1 and a(n)*a(n+1) + 1 are primes for all n.
+ * A073665 Lexicographically first sequence of even positive numbers such that a(n) + a(n+1) + 1 and a(n)*a(n+1) + 1 are primes for all n.
  * @author Sean A. Irvine
  */
 public class A073665 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a399;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A399602 allocated for Fabio Civolani.
+ * A399602 The first 25 prime numbers (from 2 to 97) arranged row by row into a 5 X 5 balanced quasi-magic square. Every outer row and column sums to 215, while the four lines passing through the central number 2 (central row, central column, and both diagonals) sum exactly to 200.
  * @author Sean A. Irvine
  */
 public class A399602 extends FiniteSequence {

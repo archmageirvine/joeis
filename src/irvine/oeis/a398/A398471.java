@@ -13,15 +13,15 @@ public class A398471 extends Sequence1 {
   private int mN = 0;
   private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
     @Override
-    protected Z compute(final int n, final int m) {
-      if (n == m + 1) {
+    protected Z compute(final int i, final int j) {
+      if (i == j + 1) {
         return Z.ZERO;
       }
-      Z min = get(n, n - 1).add(get(n + 1, m));
-      for (int r = n + 1; r <= m; ++r) {
-        min = min.min(get(n, r - 1)).add(get(r + 1, m));
+      Z min = get(i, i - 1).add(get(i + 1, j));
+      for (int r = i + 1; r <= j; ++r) {
+        min = min.min(get(i, r - 1).add(get(r + 1, j)));
       }
-      return min.add(s(n, m));
+      return min.add(s(i, j));
     }
   };
 

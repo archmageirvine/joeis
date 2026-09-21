@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000372;
 
 /**
- * A399774 allocated for Vladeta Jovovic.
+ * A399865 Number of preclosures on an n-element labeled set; equivalently, number of extensive order-preserving self-maps of the Boolean lattice of rank n.
  * @author Sean A. Irvine
  */
 public class A399865 extends A000372 {

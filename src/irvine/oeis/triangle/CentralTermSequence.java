@@ -15,7 +15,7 @@ import irvine.oeis.Sequence;
  */
 public class CentralTermSequence extends AbstractSequence {
 
-  private final AbstractSequence mSeq;
+  private final Sequence mSeq;
   private final DirectArray mTriangle; // != null iff mSeq instanceof DirectArray
   private int mRow; // current row number
   private int mTrix; // current triangular number
@@ -26,7 +26,7 @@ public class CentralTermSequence extends AbstractSequence {
    * @param offset first index of the target sequence
    * @param seq sequence to compute row sums of
    */
-  public CentralTermSequence(final int offset, final AbstractSequence seq) {
+  public CentralTermSequence(final int offset, final Sequence seq) {
     super(offset);
     mSeq = seq;
     mRow = 0;

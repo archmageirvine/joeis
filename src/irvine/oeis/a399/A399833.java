@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A397121.
+ * A399833 The number of divisors d of n such that gcud(d, n/d) is a power of 2, where gcud is the greatest common unitary divisor.
  * @author Sean A. Irvine
  */
 public class A399833 extends MultiplicativeSequence {

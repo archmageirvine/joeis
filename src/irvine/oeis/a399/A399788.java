@@ -10,7 +10,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a003.A003714;
 
 /**
- * A399788 allocated for Alper Ferudun.
+ * A399788 Number of spanning trees in the n-Fibonacci cube graph.
  * @author Sean A. Irvine
  */
 public class A399788 extends Sequence0 {

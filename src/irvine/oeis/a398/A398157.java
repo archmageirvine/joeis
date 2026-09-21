@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398967
+ * A398157 a(n) = n/3 if n == 0 (mod 3), 4n+1 if n == 1 (mod 3), 2n-1 if n == 2 (mod 3).
  * @author Sean A. Irvine
  */
 public class A398157 extends Sequence1 {

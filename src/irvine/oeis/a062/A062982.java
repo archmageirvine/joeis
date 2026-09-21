@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002321;
 
 /**
- * A062982 Numbers n such that Mertens's function of n (A002321) is divisible by phi(n).
+ * A062982 Numbers k such that Mertens's function of k (A002321) is divisible by phi(k).
  * @author Sean A. Irvine
  */
 public class A062982 extends A002321 {

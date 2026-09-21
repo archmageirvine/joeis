@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002808;
 
 /**
- * A399286 allocated for Andrey Samosyuk.
+ * A399286 Composite numbers whose number of digits and the number of digits in their largest prime factor are the same.
  * @author Sean A. Irvine
  */
 public class A399286 extends FilterSequence {

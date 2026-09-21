@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A399780 allocated for Hugo Pfoertner.
+ * A399780 Decimal expansion of (Pi + 2)^2/(4*Pi).
  * @author Sean A. Irvine
  */
 public class A399780 extends DecimalExpansionSequence {

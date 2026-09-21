@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A399709 allocated for Joshua B. Weinstein.
+ * A399709 Lexicographically earliest sequence where a(1) = 3, allowed integers are &gt;= 3, and each term a(n) is banned for the next a(n) terms.
  * @author Sean A. Irvine
  */
 public class A399709 extends Sequence1 {

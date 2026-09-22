@@ -19,7 +19,7 @@ public class A396796 extends Sequence0 {
     if (++mN >= Integer.SIZE) {
       throw new UnsupportedOperationException();
     }
-    final int full = (1 << ++mN) - 1;
+    final int full = (1 << mN) - 1;
     final MemoryFunctionInt4<Z> f = new MemoryFunctionInt4<>() {
       @Override
       protected Z compute(final int mask, final int prev2, final int prev1, final int depth) {

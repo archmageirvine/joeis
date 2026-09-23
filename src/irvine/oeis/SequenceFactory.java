@@ -155,6 +155,8 @@ public final class SequenceFactory {
           return new DifferenceSequence(1, sequence(inner));
         case "euler":
           return new EulerTransform(1, sequence(inner));
+        case "exp":
+          return new PolynomialFieldSequence(1, "[1]", "x,B,/n!,exp", 0, 1, 1, 1, sequence(inner));
         case "gilbreath":
           return new GilbreathTransformSequence(1, sequence(inner));
         case "gpf":

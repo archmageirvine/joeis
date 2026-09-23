@@ -13,6 +13,6 @@ public class A124105 extends FilterSequence {
 
   /** Construct the sequence. */
   public A124105() {
-    super(1, new A000045().skip(2), v -> Predicates.PRACTICAL.is(v));
+    super(1, new A000045().skip(2), Predicates.PRACTICAL::is);
   }
 }

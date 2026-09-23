@@ -20,7 +20,7 @@ public class A393538 extends Sequence0 {
       if (m == 0 || m == n) {
         return Q.ONE;
       }
-      return get(n - 1, m -1).reciprocal().add(get(n - 1, m).reciprocal());
+      return get(n - 1, m - 1).reciprocal().add(get(n - 1, m).reciprocal());
     }
   };
 

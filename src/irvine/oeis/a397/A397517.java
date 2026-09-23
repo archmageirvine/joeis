@@ -11,6 +11,6 @@ public class A397517 extends PolynomialFieldSequence {
 
   /** Construct the sequence. */
   public A397517() {
-    super(1, "[1]", "x,B,/n!,exp", 0, 1, 1, 1, new A400247());
+    super(0, "", "x,B,/n!,exp", 0, 1, 1, 1, new A400247().skip().prepend(0));
   }
 }
